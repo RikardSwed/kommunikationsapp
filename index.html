@@ -74,6 +74,17 @@
       font-size: 22px;
       font-weight: 700;
       color: #2c2c2e;
+      cursor: pointer;
+      -webkit-user-select: none;
+      user-select: none;
+    }
+    .strategy-label:active { opacity: 0.6; }
+    .strategy-label-hint {
+      font-size: 11px;
+      color: #bbb;
+      font-weight: 400;
+      display: block;
+      margin-top: 2px;
     }
 
     /* CARD AREA */
@@ -259,6 +270,46 @@
       touch-action: manipulation;
     }
 
+    /* INFO OVERLAY ON CARD */
+    .card-info {
+      display: none;
+      position: absolute;
+      inset: 0;
+      background: #fff;
+      border-radius: 20px;
+      padding: 36px 28px 20px 28px;
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
+      z-index: 10;
+    }
+    .card-info.visible { display: block; }
+    .card-info-close {
+      position: absolute;
+      top: 10px;
+      right: 12px;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      border: none;
+      background: #f0f2f5;
+      color: #555;
+      font-size: 14px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      touch-action: manipulation;
+      -webkit-user-select: none;
+      user-select: none;
+      flex-shrink: 0;
+    }
+    .card-info-text {
+      font-size: 15px;
+      line-height: 1.7;
+      color: #2c2c2e;
+      white-space: pre-wrap;
+    }
+
     /* Swipe animations */
     .card.swipe-left  { animation: swipeLeft  0.22s ease forwards; }
     .card.swipe-right { animation: swipeRight 0.22s ease forwards; }
@@ -292,6 +343,11 @@
         <div class="card-face card-back">
           <p class="card-text" id="answerText"></p>
         </div>
+      </div>
+      <!-- INFO OVERLAY -->
+      <div class="card-info" id="cardInfo">
+        <button class="card-info-close" id="cardInfoClose">✕</button>
+        <p class="card-info-text" id="cardInfoText"></p>
       </div>
     </div>
   </div>
@@ -331,17 +387,18 @@
         <span class="toggle-slider"></span>
       </label>
     </div>
-    <div class="settings-version">v0.5</div>
+    <div class="settings-version">v0.6</div>
     <button class="settings-close" id="settingsClose">Done</button>
   </div>
 </div>
 
 <script>
-const VERSION = 'v0.5';
+const VERSION = 'v0.6';
 
 const strategies = [
   {
     name: "Fogging",
+    description: "Fogging means responding to criticism by calmly agreeing with what might be true — without defending yourself, explaining, or getting upset.\n\nYou are like fog: criticism hits nothing solid, it just passes through. This signals confidence and unshakeable calm.\n\nTypical fogging responses:\n• \"You might be right about that.\"\n• \"Yes, that could be.\"\n• \"You may have a point there.\"\n• \"I can see why you'd think that.\"\n\nThree types of fogging:\n1. Agree with what might be true — \"You're probably right.\"\n2. Agree with the possibility — \"It's possible that I…\"\n3. Agree with the logic of the criticism — \"I can see why you think so.\"\n\nMindset: You don't need to defend yourself. Agreeing is not giving up — it's strength.",
     inputs: [
       { q: "Someone criticises your driving",          a: '"You might be right about that."' },
       { q: "Someone says you are too sensitive",       a: '"You could have a point there."' },
@@ -351,6 +408,7 @@ const strategies = [
   },
   {
     name: "Negative Inquiry",
+    description: "Negative inquiry means calmly and genuinely asking for more criticism or clarification when someone criticises you — instead of defending yourself or counter-attacking.\n\nThe technique disarms the other person (it's hard to keep attacking someone who genuinely wants to understand) and gives you information about what the actual problem is.\n\nThis is not false humility — it is genuine curiosity combined with confidence.\n\nTypical phrases:\n• \"What is it specifically I do that bothers you?\"\n• \"What do you mean by that?\"\n• \"How would you prefer I handle it?\"\n• \"Is there anything else you're reacting to?\"\n\nThree purposes:\n1. Disarm — hard to keep attacking someone who is genuinely listening\n2. Clarify — find out what the criticism is actually about\n3. Show confidence — you're not afraid of more criticism\n\nMindset: I'm not afraid of criticism. Asking is control, not weakness.",
     inputs: [
       { q: "Someone says you are being difficult",       a: '"What is it specifically that I\'m doing that feels difficult?"' },
       { q: "Someone seems annoyed by something you did", a: '"Can you tell me more about what\'s bothering you?"' },
@@ -360,6 +418,7 @@ const strategies = [
   },
   {
     name: "Negative Assertion",
+    description: "Negative assertion means actively and calmly agreeing with your own faults or mistakes when someone points them out — without over-apologising, explaining yourself, or getting defensive.\n\nIt signals high self-esteem: you know you have flaws and that's okay.\n\nDifference from fogging: fogging agrees with the possibility that the criticism is true. Negative assertion agrees that it actually is true.\n\nTypical phrases:\n• \"Yes, I was late. That's true.\"\n• \"You're right, that wasn't my best.\"\n• \"Yes, I do that sometimes.\"\n• \"That's true, I could have done it better.\"\n\nThe key principle: acknowledge without shrinking.\n\nNot: \"Oh no, I'm so sorry, I'm terrible at this…\"\nNot: \"Yes but it's because…\" (explanation = defence)\nYes: \"You're right. That's true.\" — short, calm, owned.\n\nMindset: I can be wrong and still be okay. Acknowledging a mistake shows strength.",
     inputs: [
       { q: "Someone points out you were late",               a: '"Yes, I was late. It happens."' },
       { q: "Someone says your joke wasn\'t funny",           a: '"No, that one didn\'t land."' },
@@ -369,6 +428,7 @@ const strategies = [
   },
   {
     name: "Broken Record",
+    description: "Broken record means returning to the same calm, short response over and over again — without being drawn into argument, explanation, or apology. Like a vinyl record that skips and plays the same track.\n\nThe strength of the technique is that you give the other person nothing new to attack. Every time you explain or defend yourself, you hand them a new argument to counter. When you just repeat — there is nothing to respond to.\n\nHow to use it:\n• Choose a short, clear sentence that expresses your position\n• Repeat it calmly every time they push — regardless of what they say\n• You don't need to match their arguments\n• Don't change your wording, don't raise your voice, don't apologise\n\nExample:\n— \"Come on, just this once.\"\n— \"I don't want to.\"\n— \"But why not?\"\n— \"I don't want to.\"\n— \"You're boring.\"\n— \"I understand you see it that way. I don't want to.\"\n\nMindset: I don't need to justify my boundaries. Repeating myself is stable, not strange.",
     inputs: [
       { q: "Someone keeps pressuring you to do something you've already said no to", a: "Choose one calm sentence. Repeat it — without changing the wording, no matter what they say." },
       { q: "A salesperson won't take no for an answer",                              a: '"That doesn\'t work for me." — said calmly, three times if needed. No smile, no apology.' },
@@ -389,11 +449,40 @@ let flipped = false, animating = false;
 // ─── DOM ─────────────────────────────────────────────────────────────────────
 const card         = document.getElementById('card');
 const cardInner    = document.getElementById('cardInner');
+const cardInfo     = document.getElementById('cardInfo');
+const cardInfoText = document.getElementById('cardInfoText');
 const strategyName = document.getElementById('strategyName');
 const inputText    = document.getElementById('inputText');
 const answerText   = document.getElementById('answerText');
 const counter      = document.getElementById('counter');
 const hint         = document.getElementById('hint');
+
+// ─── INFO OVERLAY ────────────────────────────────────────────────────────────
+let infoOpen = false;
+
+function openInfo() {
+  if (infoOpen) { closeInfo(); return; }
+  infoOpen = true;
+  cardInfoText.textContent = currentStrategy().description;
+  cardInfo.classList.add('visible');
+}
+
+function closeInfo() {
+  infoOpen = false;
+  cardInfo.classList.remove('visible');
+  cardInfo.scrollTop = 0;
+}
+
+document.getElementById('strategyName').addEventListener('click', openInfo);
+document.getElementById('cardInfoClose').addEventListener('click', e => {
+  e.stopPropagation();
+  closeInfo();
+});
+
+// Prevent card touch events from firing when info is open
+cardInfo.addEventListener('touchstart', e => e.stopPropagation(), { passive: true });
+cardInfo.addEventListener('touchmove',  e => e.stopPropagation(), { passive: true });
+cardInfo.addEventListener('touchend',   e => e.stopPropagation(), { passive: true });
 
 // ─── HELPERS ─────────────────────────────────────────────────────────────────
 function shuffle(arr) {
@@ -442,8 +531,8 @@ function triggerSwipe(dir, callback) {
 
 function nextInput()    { triggerSwipe('up',    () => { inputIdx = (inputIdx + 1) % inputOrders[stratOrder[stratIdx]].length; render(); }); }
 function prevInput()    { triggerSwipe('down',  () => { inputIdx = (inputIdx - 1 + inputOrders[stratOrder[stratIdx]].length) % inputOrders[stratOrder[stratIdx]].length; render(); }); }
-function nextStrategy() { triggerSwipe('left',  () => { stratIdx = (stratIdx + 1) % strategies.length; inputIdx = 0; render(); }); }
-function prevStrategy() { triggerSwipe('right', () => { stratIdx = (stratIdx - 1 + strategies.length) % strategies.length; inputIdx = 0; render(); }); }
+function nextStrategy() { triggerSwipe('left',  () => { closeInfo(); stratIdx = (stratIdx + 1) % strategies.length; inputIdx = 0; render(); }); }
+function prevStrategy() { triggerSwipe('right', () => { closeInfo(); stratIdx = (stratIdx - 1 + strategies.length) % strategies.length; inputIdx = 0; render(); }); }
 
 // ─── TOUCH ───────────────────────────────────────────────────────────────────
 let tx = 0, ty = 0, tt = 0, moved = false;
