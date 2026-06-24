@@ -6,374 +6,59 @@
   <title>Communication Trainer</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
-
-    html {
-      height: 100%;
-      overflow: hidden;
-    }
-
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-      background: #f0f2f5;
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      height: 100%;
-      overflow: hidden;
-    }
-
-    .app {
-      width: 100%;
-      max-width: 420px;
-      height: 100%;
-      min-height: -webkit-fill-available;
-      background: #f0f2f5;
-      display: flex;
-      flex-direction: column;
-    }
-
-    /* HOME SCREEN */
-    .home-screen {
-      width: 100%;
-      max-width: 420px;
-      height: 100%;
-      min-height: -webkit-fill-available;
-      background: #f0f2f5;
-      display: flex;
-      flex-direction: column;
-      padding: 0 20px;
-      overflow-y: auto;
-    }
-    .home-screen.hidden { display: none; }
-
-    .home-header {
-      padding: 56px 0 8px;
-      text-align: center;
-    }
-    .home-title {
-      font-size: 26px;
-      font-weight: 800;
-      color: #1c1c1e;
-      letter-spacing: -0.3px;
-    }
-    .home-subtitle {
-      font-size: 14px;
-      color: #aaa;
-      margin-top: 6px;
-    }
-    .home-section-label {
-      font-size: 12px;
-      font-weight: 700;
-      color: #999;
-      letter-spacing: 0.8px;
-      text-transform: uppercase;
-      margin: 32px 0 12px;
-    }
-    .collection-card {
-      background: #fff;
-      border-radius: 16px;
-      padding: 20px;
-      margin-bottom: 12px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.07);
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      touch-action: manipulation;
-      -webkit-user-select: none;
-      user-select: none;
-    }
+    html { height: 100%; overflow: hidden; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f0f2f5; display: flex; justify-content: center; align-items: flex-start; height: 100%; overflow: hidden; }
+    .app { width: 100%; max-width: 420px; height: 100%; min-height: -webkit-fill-available; background: #f0f2f5; display: flex; flex-direction: column; }
+    .home-screen { width: 100%; max-width: 420px; height: 100%; min-height: -webkit-fill-available; background: #f0f2f5; display: flex; flex-direction: column; padding: 0 20px; overflow-y: auto; }
+    .home-header { padding: 56px 0 8px; text-align: center; }
+    .home-title { font-size: 26px; font-weight: 800; color: #1c1c1e; letter-spacing: -0.3px; }
+    .home-subtitle { font-size: 14px; color: #aaa; margin-top: 6px; }
+    .home-section-label { font-size: 12px; font-weight: 700; color: #999; letter-spacing: 0.8px; text-transform: uppercase; margin: 32px 0 12px; }
+    .collection-card { background: #fff; border-radius: 16px; padding: 20px; margin-bottom: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.07); cursor: pointer; display: flex; align-items: center; justify-content: space-between; touch-action: manipulation; -webkit-user-select: none; user-select: none; }
     .collection-card:active { transform: scale(0.98); opacity: 0.9; }
-    .collection-name {
-      font-size: 17px;
-      font-weight: 700;
-      color: #1c1c1e;
-    }
-    .collection-meta {
-      font-size: 13px;
-      color: #aaa;
-      margin-top: 3px;
-    }
-    .collection-arrow {
-      font-size: 20px;
-      color: #ccc;
-    }
-
-    /* TOP BAR */
-    .topbar {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 16px 20px 12px;
-    }
-
-    .topbar-btn {
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      border: none;
-      background: #fff;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 18px;
-      color: #555;
-      box-shadow: 0 1px 4px rgba(0,0,0,0.1);
-      touch-action: manipulation;
-    }
-
-    .counter {
-      font-size: 15px;
-      font-weight: 600;
-      color: #444;
-      letter-spacing: 0.5px;
-    }
-
-    .divider {
-      height: 2px;
-      background: #dde0e6;
-    }
-
-    .strategy-label {
-      text-align: center;
-      padding: 18px 20px 10px;
-      font-size: 22px;
-      font-weight: 700;
-      color: #2c2c2e;
-      cursor: pointer;
-      -webkit-user-select: none;
-      user-select: none;
-    }
+    .collection-name { font-size: 17px; font-weight: 700; color: #1c1c1e; }
+    .collection-meta { font-size: 13px; color: #aaa; margin-top: 3px; }
+    .collection-arrow { font-size: 20px; color: #ccc; }
+    .topbar { display: flex; align-items: center; justify-content: space-between; padding: 16px 20px 12px; }
+    .topbar-btn { width: 40px; height: 40px; border-radius: 50%; border: none; background: #fff; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 18px; color: #555; box-shadow: 0 1px 4px rgba(0,0,0,0.1); touch-action: manipulation; }
+    .counter { font-size: 15px; font-weight: 600; color: #444; letter-spacing: 0.5px; }
+    .divider { height: 2px; background: #dde0e6; }
+    .strategy-label { text-align: center; padding: 18px 20px 10px; font-size: 22px; font-weight: 700; color: #2c2c2e; cursor: pointer; -webkit-user-select: none; user-select: none; }
     .strategy-label:active { opacity: 0.6; }
-
-    /* CARD AREA */
-    .card-area {
-      flex: 1;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 10px 20px 20px;
-    }
-
-    .card {
-      width: 100%;
-      min-height: 340px;
-      background: #ffffff;
-      border-radius: 20px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.10);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 40px 32px;
-      cursor: pointer;
-      position: relative;
-      touch-action: none;
-      -webkit-user-select: none;
-      user-select: none;
-      -webkit-touch-callout: none;
-    }
-
-    .card-inner {
-      width: 100%;
-      min-height: 260px;
-      position: relative;
-      transform-style: preserve-3d;
-      transition: transform 0.4s ease;
-    }
+    .card-area { flex: 1; display: flex; align-items: center; justify-content: center; padding: 10px 20px 20px; }
+    .card { width: 100%; min-height: 340px; background: #ffffff; border-radius: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.10); display: flex; align-items: center; justify-content: center; padding: 40px 32px; cursor: pointer; position: relative; touch-action: none; -webkit-user-select: none; user-select: none; -webkit-touch-callout: none; }
+    .card-inner { width: 100%; min-height: 260px; position: relative; transform-style: preserve-3d; transition: transform 0.4s ease; }
     .card-inner.flipped { transform: rotateY(180deg); }
-
-    .card-face {
-      position: absolute;
-      inset: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      backface-visibility: hidden;
-      -webkit-backface-visibility: hidden;
-      padding: 8px;
-    }
+    .card-face { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; backface-visibility: hidden; -webkit-backface-visibility: hidden; padding: 8px; }
     .card-back { transform: rotateY(180deg); }
-
-    .card-text {
-      font-size: 20px;
-      line-height: 1.55;
-      color: #1c1c1e;
-      text-align: center;
-      font-weight: 400;
-      pointer-events: none;
-      -webkit-user-select: none;
-      user-select: none;
-    }
-    .card-back .card-text {
-      color: #3a3a3c;
-      font-size: 18px;
-    }
-
-    .hint {
-      text-align: center;
-      font-size: 12px;
-      color: #aaa;
-      padding: 0 20px 8px;
-      line-height: 1.8;
-      -webkit-user-select: none;
-      user-select: none;
-    }
-
-    /* BOTTOM NAV */
-    .bottombar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 14px 32px 28px;
-    }
-
-    .nav-btn {
-      width: 48px;
-      height: 48px;
-      border-radius: 50%;
-      border: none;
-      background: #fff;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 22px;
-      color: #555;
-      box-shadow: 0 1px 4px rgba(0,0,0,0.1);
-      touch-action: manipulation;
-    }
-
-    /* SETTINGS PANEL */
-    .settings-overlay {
-      display: none;
-      position: fixed;
-      inset: 0;
-      background: rgba(0,0,0,0.35);
-      z-index: 100;
-      justify-content: center;
-      align-items: flex-end;
-    }
+    .card-text { font-size: 20px; line-height: 1.55; color: #1c1c1e; text-align: center; font-weight: 400; pointer-events: none; -webkit-user-select: none; user-select: none; }
+    .card-back .card-text { color: #3a3a3c; font-size: 18px; }
+    .hint { text-align: center; font-size: 12px; color: #aaa; padding: 0 20px 8px; line-height: 1.8; -webkit-user-select: none; user-select: none; }
+    .bottombar { display: flex; justify-content: space-between; align-items: center; padding: 14px 32px 28px; }
+    .nav-btn { width: 48px; height: 48px; border-radius: 50%; border: none; background: #fff; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 22px; color: #555; box-shadow: 0 1px 4px rgba(0,0,0,0.1); touch-action: manipulation; }
+    .settings-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.35); z-index: 100; justify-content: center; align-items: flex-end; }
     .settings-overlay.open { display: flex; }
-
-    .settings-panel {
-      background: #fff;
-      width: 100%;
-      max-width: 420px;
-      border-radius: 20px 20px 0 0;
-      padding: 24px 24px 40px;
-    }
-
-    .settings-title {
-      font-size: 17px;
-      font-weight: 700;
-      color: #1c1c1e;
-      margin-bottom: 20px;
-    }
-
-    .settings-row {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 12px 0;
-      border-bottom: 1px solid #f0f0f0;
-    }
+    .settings-panel { background: #fff; width: 100%; max-width: 420px; border-radius: 20px 20px 0 0; padding: 24px 24px 40px; }
+    .settings-title { font-size: 17px; font-weight: 700; color: #1c1c1e; margin-bottom: 20px; }
+    .settings-row { display: flex; justify-content: space-between; align-items: center; padding: 12px 0; border-bottom: 1px solid #f0f0f0; }
     .settings-row:last-of-type { border-bottom: none; }
     .settings-row label { font-size: 15px; color: #333; }
-
-    .settings-version {
-      margin-top: 16px;
-      font-size: 12px;
-      color: #bbb;
-      text-align: center;
-    }
-
-    .toggle {
-      position: relative;
-      width: 48px;
-      height: 28px;
-    }
+    .settings-version { margin-top: 16px; font-size: 12px; color: #bbb; text-align: center; }
+    .toggle { position: relative; width: 48px; height: 28px; }
     .toggle input { opacity: 0; width: 0; height: 0; }
-    .toggle-slider {
-      position: absolute;
-      inset: 0;
-      background: #ccc;
-      border-radius: 28px;
-      cursor: pointer;
-      transition: background 0.2s;
-    }
-    .toggle-slider::before {
-      content: '';
-      position: absolute;
-      width: 22px; height: 22px;
-      left: 3px; top: 3px;
-      background: #fff;
-      border-radius: 50%;
-      transition: transform 0.2s;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.2);
-    }
+    .toggle-slider { position: absolute; inset: 0; background: #ccc; border-radius: 28px; cursor: pointer; transition: background 0.2s; }
+    .toggle-slider::before { content: ''; position: absolute; width: 22px; height: 22px; left: 3px; top: 3px; background: #fff; border-radius: 50%; transition: transform 0.2s; box-shadow: 0 1px 3px rgba(0,0,0,0.2); }
     .toggle input:checked + .toggle-slider { background: #4f46e5; }
     .toggle input:checked + .toggle-slider::before { transform: translateX(20px); }
-
-    .settings-close {
-      margin-top: 20px;
-      width: 100%;
-      padding: 14px;
-      background: #f0f2f5;
-      border: none;
-      border-radius: 12px;
-      font-size: 15px;
-      font-weight: 600;
-      color: #333;
-      cursor: pointer;
-      touch-action: manipulation;
-    }
-
-    /* INFO OVERLAY ON CARD */
-    .card-info {
-      display: none;
-      position: absolute;
-      inset: 0;
-      background: #fff;
-      border-radius: 20px;
-      padding: 36px 28px 20px 28px;
-      overflow-y: auto;
-      -webkit-overflow-scrolling: touch;
-      z-index: 10;
-    }
+    .settings-close { margin-top: 20px; width: 100%; padding: 14px; background: #f0f2f5; border: none; border-radius: 12px; font-size: 15px; font-weight: 600; color: #333; cursor: pointer; touch-action: manipulation; }
+    .card-info { display: none; position: absolute; inset: 0; background: #fff; border-radius: 20px; padding: 36px 28px 20px 28px; overflow-y: auto; -webkit-overflow-scrolling: touch; z-index: 10; }
     .card-info.visible { display: block; }
-    .card-info-close {
-      position: absolute;
-      top: 10px;
-      right: 12px;
-      width: 28px;
-      height: 28px;
-      border-radius: 50%;
-      border: none;
-      background: #f0f2f5;
-      color: #555;
-      font-size: 14px;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      touch-action: manipulation;
-      -webkit-user-select: none;
-      user-select: none;
-    }
-    .card-info-text {
-      font-size: 15px;
-      line-height: 1.7;
-      color: #2c2c2e;
-      white-space: pre-wrap;
-    }
-
-    /* Swipe animations */
+    .card-info-close { position: absolute; top: 10px; right: 12px; width: 28px; height: 28px; border-radius: 50%; border: none; background: #f0f2f5; color: #555; font-size: 14px; cursor: pointer; display: flex; align-items: center; justify-content: center; touch-action: manipulation; -webkit-user-select: none; user-select: none; }
+    .card-info-text { font-size: 15px; line-height: 1.7; color: #2c2c2e; white-space: pre-wrap; }
     .card.swipe-left  { animation: swipeLeft  0.22s ease forwards; }
     .card.swipe-right { animation: swipeRight 0.22s ease forwards; }
     .card.swipe-up    { animation: swipeUp    0.20s ease forwards; }
     .card.swipe-down  { animation: swipeDown  0.20s ease forwards; }
-
     @keyframes swipeLeft  { to { transform: translateX(-60px) scale(0.95); opacity: 0; } }
     @keyframes swipeRight { to { transform: translateX(60px)  scale(0.95); opacity: 0; } }
     @keyframes swipeUp    { to { transform: translateY(-40px) scale(0.95); opacity: 0; } }
@@ -382,7 +67,6 @@
 </head>
 <body>
 
-<!-- HOME SCREEN -->
 <div class="home-screen" id="homeScreen">
   <div class="home-header">
     <div class="home-title">Communication Trainer</div>
@@ -390,101 +74,72 @@
   </div>
   <div class="home-section-label">Collections</div>
   <div class="collection-card" id="collectionAssertive">
-    <div>
-      <div class="collection-name">Assertive Communication</div>
-      <div class="collection-meta">4 strategies &nbsp;·&nbsp; Flashcard mode</div>
-    </div>
+    <div><div class="collection-name">Assertive Communication</div><div class="collection-meta">4 strategies &nbsp;·&nbsp; Flashcard mode</div></div>
     <div class="collection-arrow">›</div>
   </div>
   <div class="collection-card" id="collectionHumour">
-    <div>
-      <div class="collection-name">Humour Practise</div>
-      <div class="collection-meta">4 strategies &nbsp;·&nbsp; Flashcard mode</div>
-    </div>
+    <div><div class="collection-name">Humour Practise</div><div class="collection-meta">4 strategies &nbsp;·&nbsp; Flashcard mode</div></div>
+    <div class="collection-arrow">›</div>
+  </div>
+  <div class="collection-card" id="collectionTeasing">
+    <div><div class="collection-name">Teasing &amp; Playfulness</div><div class="collection-meta">7 strategies &nbsp;·&nbsp; Flashcard mode</div></div>
+    <div class="collection-arrow">›</div>
+  </div>
+  <div class="collection-card" id="collectionCriticism">
+    <div><div class="collection-name">Criticism &amp; Correction</div><div class="collection-meta">4 strategies &nbsp;·&nbsp; Flashcard mode</div></div>
     <div class="collection-arrow">›</div>
   </div>
 </div>
 
-<!-- TRAINING SCREEN -->
 <div class="app" id="trainingScreen" style="display:none;">
-
   <div class="topbar">
     <button class="topbar-btn" id="closeBtn">✕</button>
     <span class="counter" id="counter">1 / 4</span>
     <button class="topbar-btn" id="settingsBtn">⚙</button>
   </div>
   <div class="divider"></div>
-
   <div class="strategy-label" id="strategyName"></div>
-
   <div class="card-area">
     <div class="card" id="card">
       <div class="card-inner" id="cardInner">
-        <div class="card-face card-front">
-          <p class="card-text" id="inputText"></p>
-        </div>
-        <div class="card-face card-back">
-          <p class="card-text" id="answerText"></p>
-        </div>
+        <div class="card-face card-front"><p class="card-text" id="inputText"></p></div>
+        <div class="card-face card-back"><p class="card-text" id="answerText"></p></div>
       </div>
-      <!-- INFO OVERLAY -->
       <div class="card-info" id="cardInfo">
         <button class="card-info-close" id="cardInfoClose">✕</button>
         <p class="card-info-text" id="cardInfoText"></p>
       </div>
     </div>
   </div>
-
   <div class="hint" id="hint">Tap card to reveal<br>↑ ↓ new input &nbsp;·&nbsp; ← → new strategy</div>
-
   <div class="bottombar">
     <button class="nav-btn" id="prevStratBtn">&#8592;</button>
     <button class="nav-btn" id="prevInputBtn">&#8593;</button>
     <button class="nav-btn" id="nextInputBtn">&#8595;</button>
     <button class="nav-btn" id="nextStratBtn">&#8594;</button>
   </div>
-
 </div>
 
 <div class="settings-overlay" id="settingsOverlay">
   <div class="settings-panel">
     <div class="settings-title">Settings</div>
-    <div class="settings-row">
-      <label>Shuffle strategies</label>
-      <label class="toggle">
-        <input type="checkbox" id="shuffleStrategies" />
-        <span class="toggle-slider"></span>
-      </label>
-    </div>
-    <div class="settings-row">
-      <label>Shuffle inputs</label>
-      <label class="toggle">
-        <input type="checkbox" id="shuffleInputs" />
-        <span class="toggle-slider"></span>
-      </label>
-    </div>
-    <div class="settings-row">
-      <label>Show hints</label>
-      <label class="toggle">
-        <input type="checkbox" id="showHints" checked />
-        <span class="toggle-slider"></span>
-      </label>
-    </div>
-    <div class="settings-version">v0.8</div>
+    <div class="settings-row"><label>Shuffle strategies</label><label class="toggle"><input type="checkbox" id="shuffleStrategies" /><span class="toggle-slider"></span></label></div>
+    <div class="settings-row"><label>Shuffle inputs</label><label class="toggle"><input type="checkbox" id="shuffleInputs" /><span class="toggle-slider"></span></label></div>
+    <div class="settings-row"><label>Show hints</label><label class="toggle"><input type="checkbox" id="showHints" checked /><span class="toggle-slider"></span></label></div>
+    <div class="settings-version">v0.9</div>
     <button class="settings-close" id="settingsClose">Done</button>
   </div>
 </div>
 
 <script>
-const VERSION = 'v0.8';
+const VERSION = 'v0.9';
 
-// ─── ALL COLLECTIONS ─────────────────────────────────────────────────────────
 const collections = {
 
   assertive: [
     {
       name: "Fogging",
-      description: "Fogging means responding to criticism by calmly agreeing with what might be true — without defending yourself, explaining, or getting upset.\n\nYou are like fog: criticism hits nothing solid, it just passes through. This signals confidence and unshakeable calm.\n\nTypical fogging responses:\n• \"You might be right about that.\"\n• \"Yes, that could be.\"\n• \"You may have a point there.\"\n• \"I can see why you'd think that.\"\n\nThree types of fogging:\n1. Agree with what might be true — \"You're probably right.\"\n2. Agree with the possibility — \"It's possible that I…\"\n3. Agree with the logic of the criticism — \"I can see why you think so.\"\n\nMindset: You don't need to defend yourself. Agreeing is not giving up — it's strength.",
+      description: "Fogging means responding to criticism by calmly agreeing with what might be true — without defending yourself, explaining, or getting upset.\n\nYou are like fog: criticism hits nothing solid, it just passes through. This signals confidence and unshakeable calm.\n\nTypical fogging responses:\n• \"You might be right about that.\"\n• \"Yes, that could be.\"\n• \"You may have a point there.\"\n\nThree types of fogging:\n1. Agree with what might be true — \"You're probably right.\"\n2. Agree with the possibility — \"It's possible that I…\"\n3. Agree with the logic — \"I can see why you think so.\"\n\nMindset: You don't need to defend yourself. Agreeing is not giving up — it's strength.",
       inputs: [
         { q: "Someone criticises your driving",          a: '"You might be right about that."' },
         { q: "Someone says you are too sensitive",       a: '"You could have a point there."' },
@@ -494,7 +149,7 @@ const collections = {
     },
     {
       name: "Negative Inquiry",
-      description: "Negative inquiry means calmly and genuinely asking for more criticism or clarification when someone criticises you — instead of defending yourself or counter-attacking.\n\nThe technique disarms the other person (it's hard to keep attacking someone who genuinely wants to understand) and gives you information about what the actual problem is.\n\nThis is not false humility — it is genuine curiosity combined with confidence.\n\nTypical phrases:\n• \"What is it specifically I do that bothers you?\"\n• \"What do you mean by that?\"\n• \"How would you prefer I handle it?\"\n• \"Is there anything else you're reacting to?\"\n\nThree purposes:\n1. Disarm — hard to keep attacking someone who is genuinely listening\n2. Clarify — find out what the criticism is actually about\n3. Show confidence — you're not afraid of more criticism\n\nMindset: I'm not afraid of criticism. Asking is control, not weakness.",
+      description: "Negative inquiry means calmly and genuinely asking for more criticism when someone criticises you — instead of defending yourself.\n\nIt disarms the other person and gives you information about what the actual problem is.\n\nTypical phrases:\n• \"What is it specifically I do that bothers you?\"\n• \"What do you mean by that?\"\n• \"How would you prefer I handle it?\"\n\nThree purposes:\n1. Disarm — hard to keep attacking someone who genuinely listens\n2. Clarify — find out what the criticism is actually about\n3. Show confidence — you're not afraid of more criticism\n\nMindset: I'm not afraid of criticism. Asking is control, not weakness.",
       inputs: [
         { q: "Someone says you are being difficult",       a: '"What is it specifically that I\'m doing that feels difficult?"' },
         { q: "Someone seems annoyed by something you did", a: '"Can you tell me more about what\'s bothering you?"' },
@@ -504,7 +159,7 @@ const collections = {
     },
     {
       name: "Negative Assertion",
-      description: "Negative assertion means actively and calmly agreeing with your own faults or mistakes when someone points them out — without over-apologising, explaining yourself, or getting defensive.\n\nIt signals high self-esteem: you know you have flaws and that's okay.\n\nDifference from fogging: fogging agrees with the possibility that the criticism is true. Negative assertion agrees that it actually is true.\n\nTypical phrases:\n• \"Yes, I was late. That's true.\"\n• \"You're right, that wasn't my best.\"\n• \"Yes, I do that sometimes.\"\n• \"That's true, I could have done it better.\"\n\nThe key principle: acknowledge without shrinking.\n\nNot: \"Oh no, I'm so sorry, I'm terrible at this…\"\nNot: \"Yes but it's because…\" (explanation = defence)\nYes: \"You're right. That's true.\" — short, calm, owned.\n\nMindset: I can be wrong and still be okay. Acknowledging a mistake shows strength.",
+      description: "Negative assertion means actively and calmly agreeing with your own faults when someone points them out — without over-apologising or getting defensive.\n\nIt signals high self-esteem: you know you have flaws and that's okay.\n\nDifference from fogging: fogging agrees with the possibility. Negative assertion agrees it actually is true.\n\nThe key principle: acknowledge without shrinking.\n\nNot: \"Oh no, I'm so sorry…\"\nNot: \"Yes but it's because…\" (explanation = defence)\nYes: \"You're right. That's true.\" — short, calm, owned.\n\nMindset: I can be wrong and still be okay. Acknowledging a mistake shows strength.",
       inputs: [
         { q: "Someone points out you were late",               a: '"Yes, I was late. It happens."' },
         { q: "Someone says your joke wasn\'t funny",           a: '"No, that one didn\'t land."' },
@@ -514,14 +169,14 @@ const collections = {
     },
     {
       name: "Broken Record",
-      description: "Broken record means returning to the same calm, short response over and over again — without being drawn into argument, explanation, or apology. Like a vinyl record that skips and plays the same track.\n\nThe strength of the technique is that you give the other person nothing new to attack. Every time you explain or defend yourself, you hand them a new argument to counter. When you just repeat — there is nothing to respond to.\n\nHow to use it:\n• Choose a short, clear sentence that expresses your position\n• Repeat it calmly every time they push — regardless of what they say\n• You don't need to match their arguments\n• Don't change your wording, don't raise your voice, don't apologise\n\nExample:\n— \"Come on, just this once.\"\n— \"I don't want to.\"\n— \"But why not?\"\n— \"I don't want to.\"\n— \"You're boring.\"\n— \"I understand you see it that way. I don't want to.\"\n\nMindset: I don't need to justify my boundaries. Repeating myself is stable, not strange.",
+      description: "Broken record means returning to the same calm, short response over and over — without being drawn into argument, explanation, or apology.\n\nEvery time you explain yourself you give the other person a new argument to counter. When you just repeat — there is nothing to respond to.\n\nHow to use it:\n• Choose a short, clear sentence\n• Repeat it calmly every time they push\n• Don't change your wording, don't raise your voice, don't apologise\n\nExample:\n— \"Come on, just this once.\"\n— \"I don't want to.\"\n— \"But why not?\"\n— \"I don't want to.\"\n\nMindset: I don't need to justify my boundaries. Repeating myself is stable, not strange.",
       inputs: [
-        { q: "Someone keeps pressuring you to do something you've already said no to", a: "Choose one calm sentence. Repeat it — without changing the wording, no matter what they say." },
-        { q: "A salesperson won't take no for an answer",                              a: '"That doesn\'t work for me." — said calmly, three times if needed. No smile, no apology.' },
-        { q: "A friend repeatedly asks the same favour despite your refusals",         a: '"I can\'t help with that." — unchanged, regardless of how they rephrase the question.' },
-        { q: "Someone tries to argue you out of a decision you've made",               a: '"I\'ve made my decision." — not "I\'ve decided because…" — no explanation.' },
-        { q: "Someone escalates pressure when you decline",                            a: "Hold the same tone as the pressure rises. That's exactly when the technique is being tested." },
-        { q: "A colleague keeps pushing back on a boundary you've set",                a: '"That\'s my boundary." — calm, clear, repeated. Let them run out of new arguments.' },
+        { q: "Someone keeps pressuring you after you said no",  a: "Choose one calm sentence. Repeat it — without changing the wording, no matter what they say." },
+        { q: "A salesperson won't take no for an answer",       a: '"That doesn\'t work for me." — said calmly, three times if needed. No smile, no apology.' },
+        { q: "A friend repeatedly asks the same favour",        a: '"I can\'t help with that." — unchanged, regardless of how they rephrase.' },
+        { q: "Someone tries to argue you out of a decision",    a: '"I\'ve made my decision." — not "I\'ve decided because…" — no explanation.' },
+        { q: "Someone escalates pressure when you decline",     a: "Hold the same tone as the pressure rises. That's exactly when the technique is being tested." },
+        { q: "A colleague keeps pushing back on a boundary",    a: '"That\'s my boundary." — calm, clear, repeated.' },
       ]
     }
   ],
@@ -529,7 +184,7 @@ const collections = {
   humour: [
     {
       name: "Exaggerating",
-      description: "Exaggerating means deliberately overstating something — a value, a quality, an opinion — for humorous or rhetorical effect.\n\nThe key is that the exaggeration is obvious. Nobody believes you; that's the point. The gap between reality and what you're saying is where the humour lives.\n\nFour types of targets:\n1. Value — overstate how valuable or important something is\n2. Looks — overstate someone's appearance (positively or absurdly)\n3. Opinions — present your view as the most obviously correct thing ever\n4. Intent — exaggerate someone's motive or attitude dramatically\n\nWhat makes it land:\n• Commit to it — half-hearted exaggeration is just inaccuracy\n• Keep it short — one exaggerated sentence, then let it breathe\n• The absurdity does the work — don't explain the joke\n\nMindset: Go bigger than feels comfortable. That's usually where the funny is.",
+      description: "Exaggerating means deliberately overstating something for humorous or rhetorical effect.\n\nThe key is that the exaggeration is obvious. Nobody believes you — that's the point. The gap between reality and what you're saying is where the humour lives.\n\nFour types:\n1. Value — overstate how important something is\n2. Looks — overstate someone's appearance\n3. Opinions — present your view as the most obviously correct thing ever\n4. Intent — exaggerate someone's motive dramatically\n\nWhat makes it land:\n• Commit to it — half-hearted exaggeration is just inaccuracy\n• Keep it short — one sentence, then let it breathe\n• The absurdity does the work — don't explain the joke\n\nMindset: Go bigger than feels comfortable. That's usually where the funny is.",
       inputs: [
         { q: "Exaggerate the value of something ordinary",  a: '"This coffee? Probably the single most important thing that\'s happened to me this week."' },
         { q: "Exaggerate someone's looks as a compliment",  a: '"You walked in and the lighting in this room genuinely improved."' },
@@ -539,7 +194,7 @@ const collections = {
     },
     {
       name: "Irony",
-      description: "Irony means saying the opposite of what you mean — in a way that's clear to the listener. It creates humour, distance, and a sense of ease.\n\nFour types:\n1. Verbal irony — say the opposite: \"Yes, that was a brilliant decision.\"\n2. Situational irony — reality is the opposite of what's expected: \"Perfect timing — just as everything falls apart.\"\n3. Socratic irony — pretend ignorance to lead toward a point\n4. Self-irony — irony about yourself: \"Impeccably timed, as always.\"\n\nWhat makes irony work:\n• Tone reveals you mean the opposite — it must be obvious\n• Use it in moderation — too much and people don't know what you actually mean\n• Works best with some shared history or context\n\nIrony vs sarcasm: irony is warm and playful. Sarcasm is sharper and can sting.\n\nMindset: Irony gives you distance from difficult situations without complaining.",
+      description: "Irony means saying the opposite of what you mean — in a way that's clear to the listener.\n\nFour types:\n1. Verbal irony — say the opposite: \"Yes, that was a brilliant decision.\"\n2. Situational irony — reality is opposite of expectation\n3. Socratic irony — pretend ignorance to lead toward a point\n4. Self-irony — irony about yourself: \"Impeccably timed, as always.\"\n\nWhat makes it work:\n• Tone reveals you mean the opposite — it must be obvious\n• Use in moderation\n• Works best with shared context\n\nIrony vs sarcasm: irony is warm and playful. Sarcasm is sharper and can sting.\n\nMindset: Irony gives you distance from difficult situations without complaining.",
       inputs: [
         { q: "Someone says you're always late",    a: '"Yes — impeccably timed, as always."' },
         { q: "Someone complains about the weather", a: '"Absolutely lovely. Couldn\'t ask for more."' },
@@ -550,10 +205,10 @@ const collections = {
     },
     {
       name: "Deliberate Misunderstanding",
-      description: "Deliberate misunderstanding means pretending to misunderstand what someone said — in a way that's obviously a joke. You take something literally that was meant metaphorically, or pick an unexpected interpretation of an ambiguous phrase.\n\nThree variants:\n1. Literal interpretation — take an idiom or metaphor at face value:\n   \"Can you give me a hand?\" → \"Sure — but I'd like it back.\"\n2. Absurd interpretation — choose the most unreasonable reading of a vague instruction\n3. Double meaning pick — when something has an obvious double meaning, choose the unintended one:\n   \"We need to nail this.\" → \"I'll bring the hammer.\"\n\nWhat makes it work:\n• It must be obviously a joke — the reaction is too absurd to be genuine\n• Keep it short — one reaction, then move on. Don't drag it out.\n• Playful tone — a smile, not a confused look\n\nFormula: catch the phrase → pick the wrong interpretation → react briefly → move on\n\nMindset: Listen for phrases that could be read another way — they're everywhere.",
+      description: "Deliberate misunderstanding means pretending to misunderstand what someone said — in a way that's obviously a joke.\n\nThree variants:\n1. Literal interpretation — take an idiom at face value:\n   \"Can you give me a hand?\" → \"Sure — but I'd like it back.\"\n2. Absurd interpretation — choose the most unreasonable reading\n3. Double meaning pick — choose the unintended meaning:\n   \"We need to nail this.\" → \"I'll bring the hammer.\"\n\nWhat makes it work:\n• It must be obviously a joke\n• Keep it short — one reaction, then move on\n• Playful tone — a smile, not a confused look\n\nFormula: catch the phrase → pick the wrong interpretation → react briefly → move on\n\nMindset: Listen for phrases that could be read another way — they're everywhere.",
       inputs: [
         { q: 'Someone says "can you give me a hand?"',   a: '"Sure — but I\'d like it back."' },
-        { q: 'Someone says "I could eat a horse"',       a: 'React with genuine concern: "You really shouldn\'t. They bite."' },
+        { q: 'Someone says "I could eat a horse"',       a: '"You really shouldn\'t. They bite."' },
         { q: 'Someone says "break a leg"',               a: '"That seems excessive. I\'ll just do my best."' },
         { q: 'Someone says they\'re "dying of boredom"', a: '"Should I call someone?"' },
         { q: 'Someone says "we need to nail this"',      a: '"I\'ll get the toolbox."' },
@@ -563,14 +218,143 @@ const collections = {
     },
     {
       name: "Verbal Sparring",
-      description: "Verbal sparring is a playful verbal duel — you either hype yourself up or playfully discredit the other person, in a humorous, non-serious way.\n\nThe tone is everything: this is play, not real conflict. It works best with people you have some rapport with.\n\nSix modes:\n1. Hype your opinions — present your view with confident, boastful energy\n2. Hype your likes — talk about something you enjoy as if it's the greatest thing in the world\n3. Hype your looks — playful bragging about your own appearance\n4. Discredit their behaviour — comment on what they did in a playfully dismissive way\n5. Discredit their looks — tease their appearance with obvious affection\n6. Discredit their opinion — dismiss their view with humour and exaggeration\n\nWhat makes it land:\n• Commit to the bit — half-hearted sparring falls flat\n• Keep it light and obvious — they should be smiling, not wondering\n• Be ready to take it back — good sparring goes both ways\n\nMindset: This is play. Go in with energy and don't take yourself too seriously.",
+      description: "Verbal sparring is a playful verbal duel — you either hype yourself up or playfully discredit the other person.\n\nThe tone is everything: this is play, not real conflict.\n\nSix modes:\n1. Hype your opinions\n2. Hype your likes\n3. Hype your looks\n4. Discredit their behaviour\n5. Discredit their looks\n6. Discredit their opinion\n\nWhat makes it land:\n• Commit to the bit\n• Keep it light and obvious\n• Be ready to take it back\n\nMindset: This is play. Go in with energy.",
       inputs: [
-        { q: "Hype your opinion on something",           a: 'Present your view with total conviction: "This is not an opinion. This is fact."' },
+        { q: "Hype your opinion on something",           a: '"This is not an opinion. This is fact."' },
         { q: "Hype something you like",                  a: '"If you haven\'t tried this, you haven\'t lived."' },
         { q: "Hype your own looks",                      a: '"I woke up like this. Some people are just gifted."' },
         { q: "Discredit something the other person did", a: '"I\'ve seen better. From a child. On their first attempt."' },
         { q: "Discredit the other person's looks",       a: '"I\'m not saying it\'s bad. I\'m saying it\'s... a choice."' },
         { q: "Discredit the other person's opinion",     a: '"I\'m going to pretend you didn\'t say that."' },
+      ]
+    }
+  ],
+
+  teasing: [
+    {
+      name: "Teasing",
+      description: "Teasing means playfully poking fun at someone — in a way that creates warmth and laughter rather than hurt. The key is that it feels like play, not attack.\n\nWhat makes teasing land:\n• Warm tone — it's obvious you like the person\n• Light touch — one tease, then move on\n• Pick something observable and harmless\n• Be ready to laugh at yourself too\n\nWhat to avoid:\n• Teasing about insecurities someone has shared\n• Repeating the same tease until it stops being funny\n• Teasing when someone is already upset\n\nMindset: Teasing is a sign of comfort and affection — not cruelty.",
+      inputs: [
+        { q: "Tease someone about their looks playfully", a: "Pick something observable and comment with a warm smile — keep it light, one line, move on." },
+        { q: "Tease someone about their clothes",         a: "Notice something specific and comment on it in an affectionate, playful way." },
+      ]
+    },
+    {
+      name: "Disqualification",
+      description: "Disqualification means subtly signalling that you're not automatically impressed — that the other person hasn't quite met your criteria yet. It flips the usual dynamic.\n\nMost people are used to being chased or validated. When you don't automatically give that, it creates curiosity.\n\nExamples:\n• \"You're interesting — I'm just not sure we'd get along.\"\n• \"Not bad. Not quite what I expected, but not bad.\"\n• \"That was a good attempt.\"\n\nWhat makes it work:\n• Tone is everything — playful and warm, not cold\n• Use sparingly\n• Combine with pull for best effect\n\nMindset: I have my own criteria — I'm not automatically impressed.",
+      inputs: [
+        { q: "Someone approaches you with confidence",     a: '"You\'re interesting. I\'m just not sure we\'d get along — but interesting."' },
+        { q: "Someone seems very interested in you",       a: "Don't match their intensity — stay calm, show you have your own criteria." },
+        { q: "Someone gives you a lot of attention",       a: "Receive it calmly without becoming overly grateful or immediately reciprocating." },
+        { q: "Someone tries to impress you",              a: '"Good attempt." + small smile.' },
+        { q: "Someone compliments you",                   a: '"Thanks. You\'re not bad yourself."' },
+      ]
+    },
+    {
+      name: "Verbal Sparring",
+      description: "Verbal sparring is a playful verbal duel — you either hype yourself up or playfully discredit the other person.\n\nThe tone is everything: this is play, not real conflict. It works best with people you have rapport with.\n\nSix modes:\n1. Hype your opinions\n2. Hype your likes\n3. Hype your looks\n4. Discredit their behaviour\n5. Discredit their looks\n6. Discredit their opinion\n\nMindset: This is play. Go in with energy and don't take yourself too seriously.",
+      inputs: [
+        { q: "Hype your opinion on something",            a: '"This is not an opinion. This is fact."' },
+        { q: "Hype something you like",                   a: '"If you haven\'t tried this, you haven\'t lived."' },
+        { q: "Hype your own looks",                       a: '"I woke up like this. Some people are just gifted."' },
+        { q: "Discredit something the other person did",  a: '"I\'ve seen better. From a child. On their first attempt."' },
+        { q: "Discredit the other person's looks",        a: '"I\'m not saying it\'s bad. I\'m saying it\'s... a choice."' },
+        { q: "Discredit the other person's opinion",      a: '"I\'m going to pretend you didn\'t say that."' },
+      ]
+    },
+    {
+      name: "Push / Pull",
+      description: "Push/pull means creating a rhythm of closeness and distance — you give something (pull) then take a little back (push). This creates a dynamic more engaging than being consistently positive or consistently negative.\n\nPull: a compliment, genuine curiosity, warmth, laughter\nPush: a playful disqualification, becoming slightly more distant, a tease\n\nEffective variant: give on one dimension, take on another — compliment looks but critique taste in music.\n\nPrinciple: contrast creates engagement. The pendulum should be subtle, not extreme.\n\nMindset: I don't need to be constantly available. Contrast creates engagement.",
+      inputs: [
+        { q: "Compliment looks + critique taste in music",    a: '"You look really good today. Your music taste is a separate problem."' },
+        { q: "Compliment personality + tease their hobby",    a: '"You\'re genuinely fun to talk to. I still don\'t understand how you spend your free time."' },
+        { q: "Compliment style + mock food choices",          a: '"The style is good. But what you eat is an active choice against yourself."' },
+        { q: "Compliment work ethic + tease for being boring",a: '"You work hard — impressive. But you have it a little boring, don\'t you?"' },
+        { q: "Show warm interest then become more neutral",   a: "Be genuinely engaged — then pull back slightly, as if remembering not to be too easily impressed." },
+        { q: "Someone is very eager",                         a: "Don't match their intensity — cool down a little, let them come to you." },
+        { q: "Say something critical then follow with warmth",a: '"But on a serious note — that was actually good."' },
+      ]
+    },
+    {
+      name: "Twist",
+      description: "A twist means breaking against expectations — you say or do something that is the opposite of what the situation seems to call for.\n\nTypes:\n1. Ironic reversal — say the opposite of what's expected\n2. Unexpected interpretation — read something in a completely different way\n3. Break the script — everyone expects reaction A, you give reaction B\n4. Absurd conclusion — take something to its logical but absurd endpoint\n\nExamples:\n• Someone expects an apology → \"I understand you're disappointed. That's brave of you to carry that.\"\n• Someone is very serious about something trivial → take it even more seriously\n\nMindset: Unpredictability creates interest.",
+      inputs: [
+        { q: "Someone says something predictable",             a: "Break from the expected response — go somewhere they didn't anticipate." },
+        { q: "Someone expects you to react a certain way",     a: "Give them the opposite reaction, playfully." },
+        { q: "Someone makes an assumption about you",          a: "Confirm it — but in an unexpected way that reframes it entirely." },
+        { q: "Someone gives a compliment",                     a: "Respond unexpectedly — nonchalant, absurd conclusion, or strangely reflective." },
+        { q: "Someone is very serious about something trivial",a: "Take it even more seriously than they do — escalate to the absurd." },
+      ]
+    },
+    {
+      name: "Convert Criticism to Tease",
+      description: "This means taking a genuine criticism and wrapping it in humour — exaggeration, warmth, or drama — so the message is there, but the tone is playful.\n\nFour techniques:\n1. Exaggerate — make the criticism so extreme it's obviously not serious\n2. Warm admiration mixed with critique — \"It's almost impressive how consistently you do that.\"\n3. Dramatic tone — pretend to be deeply affected by something trivial\n4. Fond complaint — treat it like an established in-joke\n\nWhat's essential:\n• Tone must be warm and playful, not cold or sarcastic\n• Works better with people who know you well\n\nMindset: I can communicate something that bothers me without creating conflict.",
+      inputs: [
+        { q: "Someone always talks too fast",          a: '"You talk so fast I need to pause you like a podcast."' },
+        { q: "Someone always talks about one topic",   a: '"It\'s almost impressive — it\'s like a calling for you."' },
+        { q: "Someone is always late",                 a: '"Fashionably late as always. It\'s your brand at this point."' },
+        { q: "Someone has a quirky recurring habit",   a: "Lift it with fond drama — exaggerate the impact it has on you." },
+        { q: "Someone made a questionable decision",   a: '"That was brave. Not wise, but brave."' },
+      ]
+    },
+    {
+      name: "Convert Criticism to Tease with Irony",
+      description: "The same core idea as Convert Criticism to Tease, but here irony carries the humour. You flip the criticism and present the negative quality as if it were a merit or talent. The absurdity of the reversal is the joke.\n\nExamples:\n• Someone talks too fast → \"It's actually a talent — a full presentation in 40 seconds. Respect.\"\n• Someone is messy → \"That's not disorder — that's a creative system. I see it now.\"\n• Someone made a bad decision → \"Brave. Not wise, but brave.\"\n\nWhat makes it land:\n• Deliver with a completely straight, convinced tone\n• The reversal must be obviously absurd\n\nMindset: I can turn a criticism into something that makes us both laugh.",
+      inputs: [
+        { q: "Someone talks too fast",                      a: '"It\'s a talent — full presentation, 40 seconds. Respect."' },
+        { q: "Someone is always messy",                     a: '"That\'s not disorder. That\'s a creative system. I see it now."' },
+        { q: "Someone is always distracted",                a: '"That\'s advanced-level multitasking."' },
+        { q: "Someone made a questionable decision",        a: '"Brave. Not wise, but brave."' },
+        { q: "Someone has a habit that seems inefficient",  a: "Present it as a sophisticated method — with full conviction and a straight face." },
+      ]
+    }
+  ],
+
+  criticism: [
+    {
+      name: "Critique",
+      description: "Giving good criticism is an art. Bad criticism creates defensiveness. Good criticism creates change and strengthens the relationship.\n\nSix principles:\n1. Specific — not \"you're always late\" but \"you were 20 minutes late today\"\n2. Behaviour, not person — not \"you're careless\" but \"this needs to be redone\"\n3. Right timing — not in the middle of a conflict\n4. Private when possible — criticism in front of others creates shame\n5. One thing at a time\n6. Future focus — what you want to see, not just what went wrong\n\nForms: Direct / Constructive / Via question / Critique sandwich\n\nMindset: Good criticism is a gift — not an attack. Specificity makes it useful.",
+      inputs: [
+        { q: "Criticise someone's work quality",                         a: '"This needs to be redone because... next time, what would help is..."' },
+        { q: "Criticise a repeated behaviour that bothers you",          a: '"I\'ve noticed X happens often — that doesn\'t work for me."' },
+        { q: "Criticise a decision someone made",                        a: '"I understand why you chose that — I think it might have worked better if..."' },
+        { q: "Raise a small issue before it becomes a bigger problem",   a: "Bring it up early and calmly — one specific observation, future focus." },
+        { q: "Criticise someone you care about without damaging things", a: '"I\'m saying this because I care — [specific behaviour], [specific impact]."' },
+        { q: "Criticise a child's behaviour constructively",             a: '"What you did was X, what I need is Y." — address the behaviour, not the person.' },
+      ]
+    },
+    {
+      name: "Feedback Handling",
+      description: "Feedback is one of the most important tools for growth — but only if you can actually receive it.\n\nFour situations:\n1. Positive feedback — receive it genuinely, without minimising\n2. Constructive/critical feedback — listen fully, acknowledge, ask if needed\n3. Harsh or unkind feedback — separate content from form\n4. Feedback you disagree with — listen fully, then share your view\n\nKey principle: feedback is information — not a personal attack. You choose what you do with it, but you listen genuinely first.\n\nMindset: Feedback is information. I listen genuinely and then decide what to do with it.",
+      inputs: [
+        { q: "Someone gives critical feedback on your work",  a: '"Can you tell me more about what didn\'t work?" — listen fully, then acknowledge.' },
+        { q: "Someone gives positive feedback",               a: '"Thank you, that\'s good to hear." — don\'t minimise.' },
+        { q: "Someone gives feedback in a harsh way",         a: "Separate content from form — take in what's relevant, let the tone go." },
+        { q: "Someone gives feedback that surprises you",     a: '"Interesting — I hadn\'t thought of it that way."' },
+        { q: "Someone gives feedback you disagree with",      a: '"I actually see it a bit differently..." — listen fully first.' },
+        { q: "You receive feedback in a group setting",       a: "Stay calm and open — not defensive in front of others." },
+      ]
+    },
+    {
+      name: "Delay Correction",
+      description: "Not all criticism needs to be given immediately. Sometimes the timing is wrong.\n\nVariants:\n• Joke in the moment, address seriously later\n• Change subject and return when things have settled\n• Wait for the right moment — when both people are calm\n• Let it go — sometimes it's so small it doesn't deserve to be raised\n\nWhen to delay:\n• The person is too upset to receive it right now\n• The situation is public\n• The thing is small and the moment is good\n• You're too upset yourself\n\nMindset: Not all criticism needs to be given now. Choosing when is a strength, not avoidance.",
+      inputs: [
+        { q: "Someone made a small mistake that annoyed you",       a: "Let it pass now — decide later whether it's worth raising at all." },
+        { q: "Someone told you what to do in a nasty way",          a: "Let the moment pass — address how they said it later when you're both calm." },
+        { q: "The right moment to correct has already passed",      a: '"I wanted to mention something about what happened earlier — is now a good time?"' },
+        { q: "Timing feels wrong right now",                        a: "Identify why, then actively choose a better moment — don't just avoid it indefinitely." },
+        { q: "Someone forgot to do something minor",                a: "Joke about it lightly if appropriate, then raise it properly if it becomes a pattern." },
+      ]
+    },
+    {
+      name: "Friend Related Critique",
+      description: "It's socially complex when a friend criticises another friend. You want to stand up for the person being criticised, but without escalating conflict.\n\nSix strategies:\n1. Nuance without attacking — \"I understand what you mean — and I think there might be more behind it.\"\n2. Defend with facts — \"That's not quite right — I know that he/she actually...\"\n3. Shift perspective — \"Have you talked to them about it?\"\n4. Take a clear but calm position — \"I see it differently.\"\n5. Redirect — \"That might be something they need to work out between themselves.\"\n6. Support the absent person — say something genuinely positive\n\nMindset: I can stand up for someone without creating a new conflict.",
+      inputs: [
+        { q: "A mutual friend is criticised in front of you",          a: '"I understand what you mean — and I think there might be more behind it."' },
+        { q: "Someone criticises a close friend who isn't there",      a: '"I know that he/she actually... it\'s a bit more complicated than that."' },
+        { q: "Someone makes an unfair generalisation about a friend",  a: '"That\'s not quite right — it\'s more nuanced than that."' },
+        { q: "Two friends are in conflict and one asks for your take", a: '"That might be something you two need to work out between yourselves."' },
+        { q: "Someone has a strong opinion about what a friend did",   a: '"Have you spoken to them about it? There might be a side you haven\'t heard."' },
       ]
     }
   ]
@@ -609,6 +393,8 @@ function addCollectionListener(id, key) {
 
 addCollectionListener('collectionAssertive', 'assertive');
 addCollectionListener('collectionHumour',    'humour');
+addCollectionListener('collectionTeasing',   'teasing');
+addCollectionListener('collectionCriticism', 'criticism');
 
 // ─── DOM ─────────────────────────────────────────────────────────────────────
 const card         = document.getElementById('card');
@@ -638,11 +424,7 @@ function closeInfo() {
 }
 
 document.getElementById('strategyName').addEventListener('click', openInfo);
-document.getElementById('cardInfoClose').addEventListener('click', e => {
-  e.stopPropagation();
-  closeInfo();
-});
-
+document.getElementById('cardInfoClose').addEventListener('click', e => { e.stopPropagation(); closeInfo(); });
 cardInfo.addEventListener('touchstart', e => e.stopPropagation(), { passive: true });
 cardInfo.addEventListener('touchmove',  e => e.stopPropagation(), { passive: true });
 cardInfo.addEventListener('touchend',   e => e.stopPropagation(), { passive: true });
@@ -658,9 +440,7 @@ function shuffle(arr) {
 }
 
 function currentStrategy() { return strategies[stratOrder[stratIdx]]; }
-function currentInput() {
-  return currentStrategy().inputs[inputOrders[stratOrder[stratIdx]][inputIdx]];
-}
+function currentInput() { return currentStrategy().inputs[inputOrders[stratOrder[stratIdx]][inputIdx]]; }
 
 function render() {
   const inp = currentInput();
@@ -681,11 +461,7 @@ function triggerSwipe(dir, callback) {
   if (animating) return;
   animating = true;
   card.classList.add('swipe-' + dir);
-  setTimeout(() => {
-    card.classList.remove('swipe-' + dir);
-    callback();
-    animating = false;
-  }, 220);
+  setTimeout(() => { card.classList.remove('swipe-' + dir); callback(); animating = false; }, 220);
 }
 
 function nextInput()    { triggerSwipe('up',    () => { inputIdx = (inputIdx + 1) % inputOrders[stratOrder[stratIdx]].length; render(); }); }
@@ -696,30 +472,16 @@ function prevStrategy() { triggerSwipe('right', () => { closeInfo(); stratIdx = 
 // ─── TOUCH ───────────────────────────────────────────────────────────────────
 let tx = 0, ty = 0, tt = 0, moved = false;
 
-card.addEventListener('touchstart', e => {
-  tx = e.touches[0].clientX;
-  ty = e.touches[0].clientY;
-  tt = Date.now();
-  moved = false;
-  e.preventDefault();
-}, { passive: false });
-
-card.addEventListener('touchmove', e => {
-  if (Math.abs(e.touches[0].clientX - tx) > 10 ||
-      Math.abs(e.touches[0].clientY - ty) > 10) moved = true;
-  e.preventDefault();
-}, { passive: false });
-
-card.addEventListener('touchend', e => {
+card.addEventListener('touchstart', e => { tx = e.touches[0].clientX; ty = e.touches[0].clientY; tt = Date.now(); moved = false; e.preventDefault(); }, { passive: false });
+card.addEventListener('touchmove',  e => { if (Math.abs(e.touches[0].clientX - tx) > 10 || Math.abs(e.touches[0].clientY - ty) > 10) moved = true; e.preventDefault(); }, { passive: false });
+card.addEventListener('touchend',   e => {
   e.preventDefault();
   const dx = e.changedTouches[0].clientX - tx;
   const dy = e.changedTouches[0].clientY - ty;
   const adx = Math.abs(dx), ady = Math.abs(dy);
-  const elapsed = Date.now() - tt;
-
-  if (!moved && elapsed < 500) { flip(!flipped); return; }
+  if (!moved && Date.now() - tt < 500) { flip(!flipped); return; }
   if (moved && adx > 40 && adx > ady) { dx > 0 ? prevStrategy() : nextStrategy(); return; }
-  if (moved && ady > 40 && ady > adx) { dy > 0 ? prevInput()    : nextInput();    return; }
+  if (moved && ady > 40 && ady > adx) { dy > 0 ? prevInput() : nextInput(); return; }
 }, { passive: false });
 
 // ─── BUTTONS & KEYBOARD ──────────────────────────────────────────────────────
@@ -727,22 +489,11 @@ document.getElementById('nextInputBtn').addEventListener('click',  nextInput);
 document.getElementById('prevInputBtn').addEventListener('click',  prevInput);
 document.getElementById('nextStratBtn').addEventListener('click',  nextStrategy);
 document.getElementById('prevStratBtn').addEventListener('click',  prevStrategy);
-
 document.getElementById('closeBtn').addEventListener('click', showHome);
 
-document.getElementById('settingsBtn').addEventListener('click', () => {
-  document.getElementById('settingsOverlay').classList.add('open');
-});
-document.getElementById('settingsClose').addEventListener('click', () => {
-  document.getElementById('settingsOverlay').classList.remove('open');
-  applySettings();
-});
-document.getElementById('settingsOverlay').addEventListener('click', e => {
-  if (e.target === document.getElementById('settingsOverlay')) {
-    document.getElementById('settingsOverlay').classList.remove('open');
-    applySettings();
-  }
-});
+document.getElementById('settingsBtn').addEventListener('click', () => document.getElementById('settingsOverlay').classList.add('open'));
+document.getElementById('settingsClose').addEventListener('click', () => { document.getElementById('settingsOverlay').classList.remove('open'); applySettings(); });
+document.getElementById('settingsOverlay').addEventListener('click', e => { if (e.target === document.getElementById('settingsOverlay')) { document.getElementById('settingsOverlay').classList.remove('open'); applySettings(); } });
 
 document.addEventListener('keydown', e => {
   if (document.getElementById('settingsOverlay').classList.contains('open')) return;
