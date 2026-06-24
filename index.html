@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
   <title>Communication Trainer</title>
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
+    * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
 
     html {
       height: 100%;
@@ -18,7 +18,6 @@
       display: flex;
       justify-content: center;
       align-items: flex-start;
-      min-height: 100%;
       height: 100%;
       overflow: hidden;
     }
@@ -27,12 +26,10 @@
       width: 100%;
       max-width: 420px;
       height: 100%;
-      min-height: 100vh;
       min-height: -webkit-fill-available;
       background: #f0f2f5;
       display: flex;
       flex-direction: column;
-      position: relative;
     }
 
     /* TOP BAR */
@@ -41,7 +38,6 @@
       align-items: center;
       justify-content: space-between;
       padding: 16px 20px 12px;
-      background: #f0f2f5;
     }
 
     .topbar-btn {
@@ -57,9 +53,8 @@
       font-size: 18px;
       color: #555;
       box-shadow: 0 1px 4px rgba(0,0,0,0.1);
-      transition: background 0.15s;
+      touch-action: manipulation;
     }
-    .topbar-btn:hover { background: #e8e8e8; }
 
     .counter {
       font-size: 15px;
@@ -68,21 +63,17 @@
       letter-spacing: 0.5px;
     }
 
-    /* DIVIDER */
     .divider {
       height: 2px;
       background: #dde0e6;
-      margin: 0 0 4px;
     }
 
-    /* STRATEGY NAME */
     .strategy-label {
       text-align: center;
       padding: 18px 20px 10px;
       font-size: 22px;
       font-weight: 700;
       color: #2c2c2e;
-      letter-spacing: 0.2px;
     }
 
     /* CARD AREA */
@@ -105,19 +96,20 @@
       justify-content: center;
       padding: 40px 32px;
       cursor: pointer;
-      perspective: 1000px;
       position: relative;
-      transition: transform 0.08s ease;
+      touch-action: none;
+      /* prevent text selection */
+      -webkit-user-select: none;
       user-select: none;
+      -webkit-touch-callout: none;
     }
-    .card:active { transform: scale(0.98); }
 
     .card-inner {
       width: 100%;
-      height: 100%;
+      min-height: 260px;
       position: relative;
       transform-style: preserve-3d;
-      transition: transform 0.45s ease;
+      transition: transform 0.4s ease;
     }
     .card-inner.flipped { transform: rotateY(180deg); }
 
@@ -129,9 +121,8 @@
       justify-content: center;
       backface-visibility: hidden;
       -webkit-backface-visibility: hidden;
+      padding: 8px;
     }
-
-    .card-front { }
     .card-back { transform: rotateY(180deg); }
 
     .card-text {
@@ -140,20 +131,23 @@
       color: #1c1c1e;
       text-align: center;
       font-weight: 400;
+      pointer-events: none;
+      -webkit-user-select: none;
+      user-select: none;
     }
-
     .card-back .card-text {
       color: #3a3a3c;
       font-size: 18px;
     }
 
-    /* hint text */
     .hint {
       text-align: center;
       font-size: 12px;
       color: #aaa;
       padding: 0 20px 8px;
-      min-height: 20px;
+      height: 24px;
+      -webkit-user-select: none;
+      user-select: none;
     }
 
     /* BOTTOM NAV */
@@ -177,9 +171,8 @@
       font-size: 22px;
       color: #555;
       box-shadow: 0 1px 4px rgba(0,0,0,0.1);
-      transition: background 0.15s;
+      touch-action: manipulation;
     }
-    .nav-btn:hover { background: #e8e8e8; }
 
     /* SETTINGS PANEL */
     .settings-overlay {
@@ -215,14 +208,16 @@
       padding: 12px 0;
       border-bottom: 1px solid #f0f0f0;
     }
-    .settings-row:last-child { border-bottom: none; }
+    .settings-row:last-of-type { border-bottom: none; }
+    .settings-row label { font-size: 15px; color: #333; }
 
-    .settings-row label {
-      font-size: 15px;
-      color: #333;
+    .settings-version {
+      margin-top: 16px;
+      font-size: 12px;
+      color: #bbb;
+      text-align: center;
     }
 
-    /* Toggle switch */
     .toggle {
       position: relative;
       width: 48px;
@@ -261,14 +256,14 @@
       font-weight: 600;
       color: #333;
       cursor: pointer;
+      touch-action: manipulation;
     }
-    .settings-close:hover { background: #e2e4e8; }
 
-    /* Swipe animation helpers */
-    .card.swipe-left  { animation: swipeLeft  0.25s ease forwards; }
-    .card.swipe-right { animation: swipeRight 0.25s ease forwards; }
-    .card.swipe-up    { animation: swipeUp    0.22s ease forwards; }
-    .card.swipe-down  { animation: swipeDown  0.22s ease forwards; }
+    /* Swipe animations */
+    .card.swipe-left  { animation: swipeLeft  0.22s ease forwards; }
+    .card.swipe-right { animation: swipeRight 0.22s ease forwards; }
+    .card.swipe-up    { animation: swipeUp    0.20s ease forwards; }
+    .card.swipe-down  { animation: swipeDown  0.20s ease forwards; }
 
     @keyframes swipeLeft  { to { transform: translateX(-60px) scale(0.95); opacity: 0; } }
     @keyframes swipeRight { to { transform: translateX(60px)  scale(0.95); opacity: 0; } }
@@ -279,18 +274,15 @@
 <body>
 <div class="app">
 
-  <!-- TOP BAR -->
   <div class="topbar">
-    <button class="topbar-btn" id="closeBtn" title="Close (Esc)">✕</button>
+    <button class="topbar-btn" id="closeBtn">✕</button>
     <span class="counter" id="counter">1 / 4</span>
-    <button class="topbar-btn" id="settingsBtn" title="Settings">⚙</button>
+    <button class="topbar-btn" id="settingsBtn">⚙</button>
   </div>
   <div class="divider"></div>
 
-  <!-- STRATEGY NAME -->
-  <div class="strategy-label" id="strategyName">Fogging</div>
+  <div class="strategy-label" id="strategyName"></div>
 
-  <!-- CARD -->
   <div class="card-area">
     <div class="card" id="card">
       <div class="card-inner" id="cardInner">
@@ -304,20 +296,17 @@
     </div>
   </div>
 
-  <!-- HINT -->
-  <div class="hint" id="hint">Click card or press Space to reveal</div>
+  <div class="hint" id="hint"></div>
 
-  <!-- BOTTOM BAR -->
   <div class="bottombar">
-    <button class="nav-btn" id="prevStratBtn" title="Previous strategy (←)">&#8592;</button>
-    <button class="nav-btn" id="prevInputBtn" title="Previous input (↑)">&#8593;</button>
-    <button class="nav-btn" id="nextInputBtn" title="Next input (↓)">&#8595;</button>
-    <button class="nav-btn" id="nextStratBtn" title="Next strategy (→)">&#8594;</button>
+    <button class="nav-btn" id="prevStratBtn">&#8592;</button>
+    <button class="nav-btn" id="prevInputBtn">&#8593;</button>
+    <button class="nav-btn" id="nextInputBtn">&#8595;</button>
+    <button class="nav-btn" id="nextStratBtn">&#8594;</button>
   </div>
 
 </div>
 
-<!-- SETTINGS PANEL -->
 <div class="settings-overlay" id="settingsOverlay">
   <div class="settings-panel">
     <div class="settings-title">Settings</div>
@@ -335,49 +324,51 @@
         <span class="toggle-slider"></span>
       </label>
     </div>
+    <div class="settings-version">v0.4</div>
     <button class="settings-close" id="settingsClose">Done</button>
   </div>
 </div>
 
 <script>
-// ─── DATA ────────────────────────────────────────────────────────────────────
+const VERSION = 'v0.4';
+
 const strategies = [
   {
     name: "Fogging",
     inputs: [
-      { q: "Someone criticises your driving",           a: "\"You might be right about that.\"" },
-      { q: "Someone says you are too sensitive",        a: "\"You could have a point there.\"" },
-      { q: "Someone calls you selfish for saying no",   a: "\"I understand it might look that way.\"" },
-      { q: "Someone mocks something you made or said",  a: "\"Yeah, that probably wasn't my best.\"" },
+      { q: "Someone criticises your driving",          a: '"You might be right about that."' },
+      { q: "Someone says you are too sensitive",       a: '"You could have a point there."' },
+      { q: "Someone calls you selfish for saying no",  a: '"I understand it might look that way."' },
+      { q: "Someone mocks something you made or said", a: '"Yeah, that probably wasn\'t my best."' },
     ]
   },
   {
     name: "Negative Inquiry",
     inputs: [
-      { q: "Someone says you are being difficult",      a: "\"What is it specifically that I'm doing that feels difficult?\"" },
-      { q: "Someone seems annoyed by something you did",a: "\"Can you tell me more about what's bothering you?\"" },
-      { q: "Someone gives you vague criticism",         a: "\"What do you mean exactly? I'd like to understand.\"" },
-      { q: "Someone says you always do this",           a: "\"What is it I do that you're reacting to?\"" },
+      { q: "Someone says you are being difficult",       a: '"What is it specifically that I\'m doing that feels difficult?"' },
+      { q: "Someone seems annoyed by something you did", a: '"Can you tell me more about what\'s bothering you?"' },
+      { q: "Someone gives you vague criticism",          a: '"What do you mean exactly? I\'d like to understand."' },
+      { q: "Someone says you always do this",            a: '"What is it I do that you\'re reacting to?"' },
     ]
   },
   {
     name: "Negative Assertion",
     inputs: [
-      { q: "Someone points out you were late",              a: "\"Yes, I was late. It happens.\"" },
-      { q: "Someone says your joke wasn't funny",           a: "\"No, that one didn't land.\"" },
-      { q: "Someone criticises how you handled a situation",a: "\"You're right, I could have done that differently.\"" },
-      { q: "Someone points out a mistake you made at work", a: "\"Yes, that was a mistake. I'll fix it.\"" },
+      { q: "Someone points out you were late",               a: '"Yes, I was late. It happens."' },
+      { q: "Someone says your joke wasn\'t funny",           a: '"No, that one didn\'t land."' },
+      { q: "Someone criticises how you handled a situation", a: '"You\'re right, I could have done that differently."' },
+      { q: "Someone points out a mistake you made at work",  a: '"Yes, that was a mistake. I\'ll fix it."' },
     ]
   },
   {
     name: "Broken Record",
     inputs: [
       { q: "Someone keeps pressuring you to do something you've already said no to", a: "Choose one calm sentence. Repeat it — without changing the wording, no matter what they say." },
-      { q: "A salesperson won't take no for an answer",                              a: "\"That doesn't work for me.\" — said calmly, three times if needed. No smile, no apology." },
-      { q: "A friend repeatedly asks the same favour despite your refusals",         a: "\"I can't help with that.\" — unchanged, regardless of how they rephrase the question." },
-      { q: "Someone tries to argue you out of a decision you've made",               a: "\"I've made my decision.\" — not \"I've decided because…\" — no explanation." },
+      { q: "A salesperson won't take no for an answer",                              a: '"That doesn\'t work for me." — said calmly, three times if needed. No smile, no apology.' },
+      { q: "A friend repeatedly asks the same favour despite your refusals",         a: '"I can\'t help with that." — unchanged, regardless of how they rephrase the question.' },
+      { q: "Someone tries to argue you out of a decision you've made",               a: '"I\'ve made my decision." — not "I\'ve decided because…" — no explanation.' },
       { q: "Someone escalates pressure when you decline",                            a: "Hold the same tone as the pressure rises. That's exactly when the technique is being tested." },
-      { q: "A colleague keeps pushing back on a boundary you've set",                a: "\"That's my boundary.\" — calm, clear, repeated. Let them run out of new arguments." },
+      { q: "A colleague keeps pushing back on a boundary you've set",                a: '"That\'s my boundary." — calm, clear, repeated. Let them run out of new arguments.' },
     ]
   }
 ];
@@ -385,17 +376,15 @@ const strategies = [
 // ─── STATE ───────────────────────────────────────────────────────────────────
 let stratOrder  = strategies.map((_, i) => i);
 let inputOrders = strategies.map(s => s.inputs.map((_, i) => i));
-let stratIdx  = 0; // index into stratOrder
-let inputIdx  = 0; // index into current inputOrder
-let flipped   = false;
-let animating = false;
+let stratIdx = 0, inputIdx = 0;
+let flipped = false, animating = false;
 
 // ─── DOM ─────────────────────────────────────────────────────────────────────
+const card         = document.getElementById('card');
+const cardInner    = document.getElementById('cardInner');
 const strategyName = document.getElementById('strategyName');
 const inputText    = document.getElementById('inputText');
 const answerText   = document.getElementById('answerText');
-const cardInner    = document.getElementById('cardInner');
-const card         = document.getElementById('card');
 const counter      = document.getElementById('counter');
 const hint         = document.getElementById('hint');
 
@@ -410,37 +399,30 @@ function shuffle(arr) {
 }
 
 function currentStrategy() { return strategies[stratOrder[stratIdx]]; }
-function currentInput()    {
-  const s = currentStrategy();
-  return s.inputs[inputOrders[stratOrder[stratIdx]][inputIdx]];
+function currentInput() {
+  return currentStrategy().inputs[inputOrders[stratOrder[stratIdx]][inputIdx]];
 }
 
-function render(animate) {
-  const s   = currentStrategy();
+function render() {
   const inp = currentInput();
-  strategyName.textContent = s.name;
+  strategyName.textContent = currentStrategy().name;
   inputText.textContent    = inp.q;
   answerText.textContent   = inp.a;
   counter.textContent      = `${stratIdx + 1} / ${strategies.length}`;
-  setFlipped(false, false);
-  updateHint();
+  flip(false, false);
 }
 
-function setFlipped(val, animate = true) {
+function flip(val, animate = true) {
   flipped = val;
   if (animate) {
-    cardInner.classList.add('flipped-anim');
+    cardInner.style.transition = 'transform 0.4s ease';
+  } else {
+    cardInner.style.transition = 'none';
   }
   cardInner.classList.toggle('flipped', flipped);
-  updateHint();
-}
-
-function updateHint() {
-  if (!flipped) {
-    hint.textContent = 'Click card or press Space to reveal';
-  } else {
-    hint.textContent = '↑ ↓ new input · ← → new strategy';
-  }
+  hint.textContent = flipped
+    ? '↑ ↓ new input  ·  ← → new strategy'
+    : 'Tap card to reveal';
 }
 
 function triggerSwipe(dir, callback) {
@@ -451,53 +433,54 @@ function triggerSwipe(dir, callback) {
     card.classList.remove('swipe-' + dir);
     callback();
     animating = false;
-  }, 250);
+  }, 220);
 }
 
-function nextInput() {
-  const s   = currentStrategy();
-  const ord = inputOrders[stratOrder[stratIdx]];
-  triggerSwipe('up', () => {
-    inputIdx = (inputIdx + 1) % ord.length;
-    render();
-  });
-}
+function nextInput()    { triggerSwipe('up',    () => { inputIdx = (inputIdx + 1) % inputOrders[stratOrder[stratIdx]].length; render(); }); }
+function prevInput()    { triggerSwipe('down',  () => { inputIdx = (inputIdx - 1 + inputOrders[stratOrder[stratIdx]].length) % inputOrders[stratOrder[stratIdx]].length; render(); }); }
+function nextStrategy() { triggerSwipe('left',  () => { stratIdx = (stratIdx + 1) % strategies.length; inputIdx = 0; render(); }); }
+function prevStrategy() { triggerSwipe('right', () => { stratIdx = (stratIdx - 1 + strategies.length) % strategies.length; inputIdx = 0; render(); }); }
 
-function prevInput() {
-  const ord = inputOrders[stratOrder[stratIdx]];
-  triggerSwipe('down', () => {
-    inputIdx = (inputIdx - 1 + ord.length) % ord.length;
-    render();
-  });
-}
+// ─── TOUCH ───────────────────────────────────────────────────────────────────
+let tx = 0, ty = 0, tt = 0, moved = false;
 
-function nextStrategy() {
-  triggerSwipe('left', () => {
-    stratIdx = (stratIdx + 1) % strategies.length;
-    inputIdx = 0;
-    render();
-  });
-}
+card.addEventListener('touchstart', e => {
+  tx = e.touches[0].clientX;
+  ty = e.touches[0].clientY;
+  tt = Date.now();
+  moved = false;
+  e.preventDefault(); // blocks click from firing after touch
+}, { passive: false });
 
-function prevStrategy() {
-  triggerSwipe('right', () => {
-    stratIdx = (stratIdx - 1 + strategies.length) % strategies.length;
-    inputIdx = 0;
-    render();
-  });
-}
+card.addEventListener('touchmove', e => {
+  if (Math.abs(e.touches[0].clientX - tx) > 10 ||
+      Math.abs(e.touches[0].clientY - ty) > 10) moved = true;
+  e.preventDefault();
+}, { passive: false });
 
-// ─── EVENTS ──────────────────────────────────────────────────────────────────
-// Click handles desktop, touch handles mobile
-// We block click on mobile to avoid double-firing
-let blockClick = false;
-card.addEventListener('click', () => {
-  if (blockClick) { blockClick = false; return; }
-  setFlipped(!flipped);
-});
+card.addEventListener('touchend', e => {
+  e.preventDefault();
+  const dx = e.changedTouches[0].clientX - tx;
+  const dy = e.changedTouches[0].clientY - ty;
+  const adx = Math.abs(dx), ady = Math.abs(dy);
+  const elapsed = Date.now() - tt;
+
+  if (!moved && elapsed < 500) {
+    flip(!flipped);
+    return;
+  }
+  if (moved && adx > 40 && adx > ady) { dx > 0 ? prevStrategy() : nextStrategy(); return; }
+  if (moved && ady > 40 && ady > adx) { dy > 0 ? prevInput()    : nextInput();    return; }
+}, { passive: false });
+
+// ─── BUTTONS & KEYBOARD ──────────────────────────────────────────────────────
+document.getElementById('nextInputBtn').addEventListener('click',  nextInput);
+document.getElementById('prevInputBtn').addEventListener('click',  prevInput);
+document.getElementById('nextStratBtn').addEventListener('click',  nextStrategy);
+document.getElementById('prevStratBtn').addEventListener('click',  prevStrategy);
 
 document.getElementById('closeBtn').addEventListener('click', () => {
-  if (confirm('End this session?')) window.close();
+  if (confirm('End this session?')) history.back();
 });
 
 document.getElementById('settingsBtn').addEventListener('click', () => {
@@ -514,74 +497,22 @@ document.getElementById('settingsOverlay').addEventListener('click', e => {
   }
 });
 
-document.getElementById('nextInputBtn').addEventListener('click', nextInput);
-document.getElementById('prevInputBtn').addEventListener('click', prevInput);
-document.getElementById('nextStratBtn').addEventListener('click', nextStrategy);
-document.getElementById('prevStratBtn').addEventListener('click', prevStrategy);
-
-// Keyboard
 document.addEventListener('keydown', e => {
   if (document.getElementById('settingsOverlay').classList.contains('open')) return;
   if (e.key === 'ArrowRight') nextStrategy();
   if (e.key === 'ArrowLeft')  prevStrategy();
   if (e.key === 'ArrowDown')  nextInput();
   if (e.key === 'ArrowUp')    prevInput();
-  if (e.key === ' ')          { e.preventDefault(); setFlipped(!flipped); }
-  if (e.key === 'Escape')     { if (confirm('End this session?')) window.close(); }
+  if (e.key === ' ')          { e.preventDefault(); flip(!flipped); }
+  if (e.key === 'Escape')     { if (confirm('End this session?')) history.back(); }
 });
 
-// Touch / swipe
-let touchStartX = 0, touchStartY = 0;
-let touchStartTime = 0;
-let hasMoved = false;
-
-card.addEventListener('touchstart', e => {
-  touchStartX = e.touches[0].clientX;
-  touchStartY = e.touches[0].clientY;
-  touchStartTime = Date.now();
-  hasMoved = false;
-}, { passive: true });
-
-card.addEventListener('touchmove', e => {
-  const dx = Math.abs(e.touches[0].clientX - touchStartX);
-  const dy = Math.abs(e.touches[0].clientY - touchStartY);
-  if (dx > 12 || dy > 12) hasMoved = true;
-  e.preventDefault();
-}, { passive: false });
-
-card.addEventListener('touchend', e => {
-  const elapsed = Date.now() - touchStartTime;
-  const dx = e.changedTouches[0].clientX - touchStartX;
-  const dy = e.changedTouches[0].clientY - touchStartY;
-  const absDx = Math.abs(dx);
-  const absDy = Math.abs(dy);
-
-  // Short tap — flip card
-  if (!hasMoved && elapsed < 400) {
-    blockClick = true;
-    setFlipped(!flipped);
-    return;
-  }
-
-  // Swipe
-  if (hasMoved) {
-    blockClick = true;
-    if (absDx > absDy && absDx > 40) {
-      dx > 0 ? prevStrategy() : nextStrategy();
-    } else if (absDy > absDx && absDy > 40) {
-      dy > 0 ? prevInput() : nextInput();
-    }
-  }
-}, { passive: true });
-
-// Settings
 function applySettings() {
-  const shStrat  = document.getElementById('shuffleStrategies').checked;
-  const shInputs = document.getElementById('shuffleInputs').checked;
-  stratOrder     = shStrat ? shuffle(strategies.map((_, i) => i)) : strategies.map((_, i) => i);
-  inputOrders    = strategies.map(s => shInputs ? shuffle(s.inputs.map((_, i) => i)) : s.inputs.map((_, i) => i));
-  stratIdx = 0;
-  inputIdx = 0;
+  const shS = document.getElementById('shuffleStrategies').checked;
+  const shI = document.getElementById('shuffleInputs').checked;
+  stratOrder  = shS ? shuffle(strategies.map((_, i) => i)) : strategies.map((_, i) => i);
+  inputOrders = strategies.map(s => shI ? shuffle(s.inputs.map((_, i) => i)) : s.inputs.map((_, i) => i));
+  stratIdx = 0; inputIdx = 0;
   render();
 }
 
