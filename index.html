@@ -146,13 +146,6 @@
       user-select: none;
     }
     .strategy-label:active { opacity: 0.6; }
-    .strategy-label-hint {
-      font-size: 11px;
-      color: #bbb;
-      font-weight: 400;
-      display: block;
-      margin-top: 2px;
-    }
 
     /* CARD AREA */
     .card-area {
@@ -176,7 +169,6 @@
       cursor: pointer;
       position: relative;
       touch-action: none;
-      /* prevent text selection */
       -webkit-user-select: none;
       user-select: none;
       -webkit-touch-callout: none;
@@ -368,7 +360,6 @@
       touch-action: manipulation;
       -webkit-user-select: none;
       user-select: none;
-      flex-shrink: 0;
     }
     .card-info-text {
       font-size: 15px;
@@ -401,6 +392,13 @@
   <div class="collection-card" id="collectionAssertive">
     <div>
       <div class="collection-name">Assertive Communication</div>
+      <div class="collection-meta">4 strategies &nbsp;·&nbsp; Flashcard mode</div>
+    </div>
+    <div class="collection-arrow">›</div>
+  </div>
+  <div class="collection-card" id="collectionHumour">
+    <div>
+      <div class="collection-name">Humour Practise</div>
       <div class="collection-meta">4 strategies &nbsp;·&nbsp; Flashcard mode</div>
     </div>
     <div class="collection-arrow">›</div>
@@ -472,17 +470,122 @@
         <span class="toggle-slider"></span>
       </label>
     </div>
-    <div class="settings-version">v0.7</div>
+    <div class="settings-version">v0.8</div>
     <button class="settings-close" id="settingsClose">Done</button>
   </div>
 </div>
 
 <script>
-const VERSION = 'v0.7';
+const VERSION = 'v0.8';
 
-// ─── NAVIGATION ────────────────────────────────────────────────────────────
+// ─── ALL COLLECTIONS ─────────────────────────────────────────────────────────
+const collections = {
+
+  assertive: [
+    {
+      name: "Fogging",
+      description: "Fogging means responding to criticism by calmly agreeing with what might be true — without defending yourself, explaining, or getting upset.\n\nYou are like fog: criticism hits nothing solid, it just passes through. This signals confidence and unshakeable calm.\n\nTypical fogging responses:\n• \"You might be right about that.\"\n• \"Yes, that could be.\"\n• \"You may have a point there.\"\n• \"I can see why you'd think that.\"\n\nThree types of fogging:\n1. Agree with what might be true — \"You're probably right.\"\n2. Agree with the possibility — \"It's possible that I…\"\n3. Agree with the logic of the criticism — \"I can see why you think so.\"\n\nMindset: You don't need to defend yourself. Agreeing is not giving up — it's strength.",
+      inputs: [
+        { q: "Someone criticises your driving",          a: '"You might be right about that."' },
+        { q: "Someone says you are too sensitive",       a: '"You could have a point there."' },
+        { q: "Someone calls you selfish for saying no",  a: '"I understand it might look that way."' },
+        { q: "Someone mocks something you made or said", a: '"Yeah, that probably wasn\'t my best."' },
+      ]
+    },
+    {
+      name: "Negative Inquiry",
+      description: "Negative inquiry means calmly and genuinely asking for more criticism or clarification when someone criticises you — instead of defending yourself or counter-attacking.\n\nThe technique disarms the other person (it's hard to keep attacking someone who genuinely wants to understand) and gives you information about what the actual problem is.\n\nThis is not false humility — it is genuine curiosity combined with confidence.\n\nTypical phrases:\n• \"What is it specifically I do that bothers you?\"\n• \"What do you mean by that?\"\n• \"How would you prefer I handle it?\"\n• \"Is there anything else you're reacting to?\"\n\nThree purposes:\n1. Disarm — hard to keep attacking someone who is genuinely listening\n2. Clarify — find out what the criticism is actually about\n3. Show confidence — you're not afraid of more criticism\n\nMindset: I'm not afraid of criticism. Asking is control, not weakness.",
+      inputs: [
+        { q: "Someone says you are being difficult",       a: '"What is it specifically that I\'m doing that feels difficult?"' },
+        { q: "Someone seems annoyed by something you did", a: '"Can you tell me more about what\'s bothering you?"' },
+        { q: "Someone gives you vague criticism",          a: '"What do you mean exactly? I\'d like to understand."' },
+        { q: "Someone says you always do this",            a: '"What is it I do that you\'re reacting to?"' },
+      ]
+    },
+    {
+      name: "Negative Assertion",
+      description: "Negative assertion means actively and calmly agreeing with your own faults or mistakes when someone points them out — without over-apologising, explaining yourself, or getting defensive.\n\nIt signals high self-esteem: you know you have flaws and that's okay.\n\nDifference from fogging: fogging agrees with the possibility that the criticism is true. Negative assertion agrees that it actually is true.\n\nTypical phrases:\n• \"Yes, I was late. That's true.\"\n• \"You're right, that wasn't my best.\"\n• \"Yes, I do that sometimes.\"\n• \"That's true, I could have done it better.\"\n\nThe key principle: acknowledge without shrinking.\n\nNot: \"Oh no, I'm so sorry, I'm terrible at this…\"\nNot: \"Yes but it's because…\" (explanation = defence)\nYes: \"You're right. That's true.\" — short, calm, owned.\n\nMindset: I can be wrong and still be okay. Acknowledging a mistake shows strength.",
+      inputs: [
+        { q: "Someone points out you were late",               a: '"Yes, I was late. It happens."' },
+        { q: "Someone says your joke wasn\'t funny",           a: '"No, that one didn\'t land."' },
+        { q: "Someone criticises how you handled a situation", a: '"You\'re right, I could have done that differently."' },
+        { q: "Someone points out a mistake you made at work",  a: '"Yes, that was a mistake. I\'ll fix it."' },
+      ]
+    },
+    {
+      name: "Broken Record",
+      description: "Broken record means returning to the same calm, short response over and over again — without being drawn into argument, explanation, or apology. Like a vinyl record that skips and plays the same track.\n\nThe strength of the technique is that you give the other person nothing new to attack. Every time you explain or defend yourself, you hand them a new argument to counter. When you just repeat — there is nothing to respond to.\n\nHow to use it:\n• Choose a short, clear sentence that expresses your position\n• Repeat it calmly every time they push — regardless of what they say\n• You don't need to match their arguments\n• Don't change your wording, don't raise your voice, don't apologise\n\nExample:\n— \"Come on, just this once.\"\n— \"I don't want to.\"\n— \"But why not?\"\n— \"I don't want to.\"\n— \"You're boring.\"\n— \"I understand you see it that way. I don't want to.\"\n\nMindset: I don't need to justify my boundaries. Repeating myself is stable, not strange.",
+      inputs: [
+        { q: "Someone keeps pressuring you to do something you've already said no to", a: "Choose one calm sentence. Repeat it — without changing the wording, no matter what they say." },
+        { q: "A salesperson won't take no for an answer",                              a: '"That doesn\'t work for me." — said calmly, three times if needed. No smile, no apology.' },
+        { q: "A friend repeatedly asks the same favour despite your refusals",         a: '"I can\'t help with that." — unchanged, regardless of how they rephrase the question.' },
+        { q: "Someone tries to argue you out of a decision you've made",               a: '"I\'ve made my decision." — not "I\'ve decided because…" — no explanation.' },
+        { q: "Someone escalates pressure when you decline",                            a: "Hold the same tone as the pressure rises. That's exactly when the technique is being tested." },
+        { q: "A colleague keeps pushing back on a boundary you've set",                a: '"That\'s my boundary." — calm, clear, repeated. Let them run out of new arguments.' },
+      ]
+    }
+  ],
+
+  humour: [
+    {
+      name: "Exaggerating",
+      description: "Exaggerating means deliberately overstating something — a value, a quality, an opinion — for humorous or rhetorical effect.\n\nThe key is that the exaggeration is obvious. Nobody believes you; that's the point. The gap between reality and what you're saying is where the humour lives.\n\nFour types of targets:\n1. Value — overstate how valuable or important something is\n2. Looks — overstate someone's appearance (positively or absurdly)\n3. Opinions — present your view as the most obviously correct thing ever\n4. Intent — exaggerate someone's motive or attitude dramatically\n\nWhat makes it land:\n• Commit to it — half-hearted exaggeration is just inaccuracy\n• Keep it short — one exaggerated sentence, then let it breathe\n• The absurdity does the work — don't explain the joke\n\nMindset: Go bigger than feels comfortable. That's usually where the funny is.",
+      inputs: [
+        { q: "Exaggerate the value of something ordinary",  a: '"This coffee? Probably the single most important thing that\'s happened to me this week."' },
+        { q: "Exaggerate someone's looks as a compliment",  a: '"You walked in and the lighting in this room genuinely improved."' },
+        { q: "Exaggerate your own opinion to make a point", a: '"This is not a preference. This is objectively, scientifically, historically the correct answer."' },
+        { q: "Exaggerate someone's intent or attitude",     a: '"The way you said that, I assumed you were announcing a hostile takeover."' },
+      ]
+    },
+    {
+      name: "Irony",
+      description: "Irony means saying the opposite of what you mean — in a way that's clear to the listener. It creates humour, distance, and a sense of ease.\n\nFour types:\n1. Verbal irony — say the opposite: \"Yes, that was a brilliant decision.\"\n2. Situational irony — reality is the opposite of what's expected: \"Perfect timing — just as everything falls apart.\"\n3. Socratic irony — pretend ignorance to lead toward a point\n4. Self-irony — irony about yourself: \"Impeccably timed, as always.\"\n\nWhat makes irony work:\n• Tone reveals you mean the opposite — it must be obvious\n• Use it in moderation — too much and people don't know what you actually mean\n• Works best with some shared history or context\n\nIrony vs sarcasm: irony is warm and playful. Sarcasm is sharper and can sting.\n\nMindset: Irony gives you distance from difficult situations without complaining.",
+      inputs: [
+        { q: "Someone says you're always late",    a: '"Yes — impeccably timed, as always."' },
+        { q: "Someone complains about the weather", a: '"Absolutely lovely. Couldn\'t ask for more."' },
+        { q: "Someone says a task is hard",         a: '"Easy. No problem at all."' },
+        { q: "A situation is clearly going wrong",  a: '"Going great. Better couldn\'t be."' },
+        { q: "Someone gives you unwanted advice",   a: '"Thank you. That changes everything."' },
+      ]
+    },
+    {
+      name: "Deliberate Misunderstanding",
+      description: "Deliberate misunderstanding means pretending to misunderstand what someone said — in a way that's obviously a joke. You take something literally that was meant metaphorically, or pick an unexpected interpretation of an ambiguous phrase.\n\nThree variants:\n1. Literal interpretation — take an idiom or metaphor at face value:\n   \"Can you give me a hand?\" → \"Sure — but I'd like it back.\"\n2. Absurd interpretation — choose the most unreasonable reading of a vague instruction\n3. Double meaning pick — when something has an obvious double meaning, choose the unintended one:\n   \"We need to nail this.\" → \"I'll bring the hammer.\"\n\nWhat makes it work:\n• It must be obviously a joke — the reaction is too absurd to be genuine\n• Keep it short — one reaction, then move on. Don't drag it out.\n• Playful tone — a smile, not a confused look\n\nFormula: catch the phrase → pick the wrong interpretation → react briefly → move on\n\nMindset: Listen for phrases that could be read another way — they're everywhere.",
+      inputs: [
+        { q: 'Someone says "can you give me a hand?"',   a: '"Sure — but I\'d like it back."' },
+        { q: 'Someone says "I could eat a horse"',       a: 'React with genuine concern: "You really shouldn\'t. They bite."' },
+        { q: 'Someone says "break a leg"',               a: '"That seems excessive. I\'ll just do my best."' },
+        { q: 'Someone says they\'re "dying of boredom"', a: '"Should I call someone?"' },
+        { q: 'Someone says "we need to nail this"',      a: '"I\'ll get the toolbox."' },
+        { q: "Someone gives a vague instruction",        a: "Choose the most absurd possible interpretation and act on it briefly, then smile." },
+        { q: "Someone uses a common idiom",              a: "Treat it as a factual statement and react accordingly — keep it short and obvious." },
+      ]
+    },
+    {
+      name: "Verbal Sparring",
+      description: "Verbal sparring is a playful verbal duel — you either hype yourself up or playfully discredit the other person, in a humorous, non-serious way.\n\nThe tone is everything: this is play, not real conflict. It works best with people you have some rapport with.\n\nSix modes:\n1. Hype your opinions — present your view with confident, boastful energy\n2. Hype your likes — talk about something you enjoy as if it's the greatest thing in the world\n3. Hype your looks — playful bragging about your own appearance\n4. Discredit their behaviour — comment on what they did in a playfully dismissive way\n5. Discredit their looks — tease their appearance with obvious affection\n6. Discredit their opinion — dismiss their view with humour and exaggeration\n\nWhat makes it land:\n• Commit to the bit — half-hearted sparring falls flat\n• Keep it light and obvious — they should be smiling, not wondering\n• Be ready to take it back — good sparring goes both ways\n\nMindset: This is play. Go in with energy and don't take yourself too seriously.",
+      inputs: [
+        { q: "Hype your opinion on something",           a: 'Present your view with total conviction: "This is not an opinion. This is fact."' },
+        { q: "Hype something you like",                  a: '"If you haven\'t tried this, you haven\'t lived."' },
+        { q: "Hype your own looks",                      a: '"I woke up like this. Some people are just gifted."' },
+        { q: "Discredit something the other person did", a: '"I\'ve seen better. From a child. On their first attempt."' },
+        { q: "Discredit the other person's looks",       a: '"I\'m not saying it\'s bad. I\'m saying it\'s... a choice."' },
+        { q: "Discredit the other person's opinion",     a: '"I\'m going to pretend you didn\'t say that."' },
+      ]
+    }
+  ]
+
+};
+
+// ─── STATE & NAVIGATION ──────────────────────────────────────────────────────
 const homeScreen     = document.getElementById('homeScreen');
 const trainingScreen = document.getElementById('trainingScreen');
+
+let strategies  = [];
+let stratOrder  = [];
+let inputOrders = [];
+let stratIdx = 0, inputIdx = 0;
+let flipped = false, animating = false;
 
 function showHome() {
   homeScreen.style.display     = 'flex';
@@ -490,70 +593,22 @@ function showHome() {
   closeInfo();
 }
 
-function showTraining() {
+function showTraining(collectionKey) {
+  strategies = collections[collectionKey];
   homeScreen.style.display     = 'none';
   trainingScreen.style.display = 'flex';
   stratIdx = 0; inputIdx = 0;
   applySettings();
-  render();
 }
 
-document.getElementById('collectionAssertive').addEventListener('click', showTraining);
-document.getElementById('collectionAssertive').addEventListener('touchend', e => {
-  e.preventDefault();
-  showTraining();
-}, { passive: false });
+function addCollectionListener(id, key) {
+  const el = document.getElementById(id);
+  el.addEventListener('click', () => showTraining(key));
+  el.addEventListener('touchend', e => { e.preventDefault(); showTraining(key); }, { passive: false });
+}
 
-const strategies = [
-  {
-    name: "Fogging",
-    description: "Fogging means responding to criticism by calmly agreeing with what might be true — without defending yourself, explaining, or getting upset.\n\nYou are like fog: criticism hits nothing solid, it just passes through. This signals confidence and unshakeable calm.\n\nTypical fogging responses:\n• \"You might be right about that.\"\n• \"Yes, that could be.\"\n• \"You may have a point there.\"\n• \"I can see why you'd think that.\"\n\nThree types of fogging:\n1. Agree with what might be true — \"You're probably right.\"\n2. Agree with the possibility — \"It's possible that I…\"\n3. Agree with the logic of the criticism — \"I can see why you think so.\"\n\nMindset: You don't need to defend yourself. Agreeing is not giving up — it's strength.",
-    inputs: [
-      { q: "Someone criticises your driving",          a: '"You might be right about that."' },
-      { q: "Someone says you are too sensitive",       a: '"You could have a point there."' },
-      { q: "Someone calls you selfish for saying no",  a: '"I understand it might look that way."' },
-      { q: "Someone mocks something you made or said", a: '"Yeah, that probably wasn\'t my best."' },
-    ]
-  },
-  {
-    name: "Negative Inquiry",
-    description: "Negative inquiry means calmly and genuinely asking for more criticism or clarification when someone criticises you — instead of defending yourself or counter-attacking.\n\nThe technique disarms the other person (it's hard to keep attacking someone who genuinely wants to understand) and gives you information about what the actual problem is.\n\nThis is not false humility — it is genuine curiosity combined with confidence.\n\nTypical phrases:\n• \"What is it specifically I do that bothers you?\"\n• \"What do you mean by that?\"\n• \"How would you prefer I handle it?\"\n• \"Is there anything else you're reacting to?\"\n\nThree purposes:\n1. Disarm — hard to keep attacking someone who is genuinely listening\n2. Clarify — find out what the criticism is actually about\n3. Show confidence — you're not afraid of more criticism\n\nMindset: I'm not afraid of criticism. Asking is control, not weakness.",
-    inputs: [
-      { q: "Someone says you are being difficult",       a: '"What is it specifically that I\'m doing that feels difficult?"' },
-      { q: "Someone seems annoyed by something you did", a: '"Can you tell me more about what\'s bothering you?"' },
-      { q: "Someone gives you vague criticism",          a: '"What do you mean exactly? I\'d like to understand."' },
-      { q: "Someone says you always do this",            a: '"What is it I do that you\'re reacting to?"' },
-    ]
-  },
-  {
-    name: "Negative Assertion",
-    description: "Negative assertion means actively and calmly agreeing with your own faults or mistakes when someone points them out — without over-apologising, explaining yourself, or getting defensive.\n\nIt signals high self-esteem: you know you have flaws and that's okay.\n\nDifference from fogging: fogging agrees with the possibility that the criticism is true. Negative assertion agrees that it actually is true.\n\nTypical phrases:\n• \"Yes, I was late. That's true.\"\n• \"You're right, that wasn't my best.\"\n• \"Yes, I do that sometimes.\"\n• \"That's true, I could have done it better.\"\n\nThe key principle: acknowledge without shrinking.\n\nNot: \"Oh no, I'm so sorry, I'm terrible at this…\"\nNot: \"Yes but it's because…\" (explanation = defence)\nYes: \"You're right. That's true.\" — short, calm, owned.\n\nMindset: I can be wrong and still be okay. Acknowledging a mistake shows strength.",
-    inputs: [
-      { q: "Someone points out you were late",               a: '"Yes, I was late. It happens."' },
-      { q: "Someone says your joke wasn\'t funny",           a: '"No, that one didn\'t land."' },
-      { q: "Someone criticises how you handled a situation", a: '"You\'re right, I could have done that differently."' },
-      { q: "Someone points out a mistake you made at work",  a: '"Yes, that was a mistake. I\'ll fix it."' },
-    ]
-  },
-  {
-    name: "Broken Record",
-    description: "Broken record means returning to the same calm, short response over and over again — without being drawn into argument, explanation, or apology. Like a vinyl record that skips and plays the same track.\n\nThe strength of the technique is that you give the other person nothing new to attack. Every time you explain or defend yourself, you hand them a new argument to counter. When you just repeat — there is nothing to respond to.\n\nHow to use it:\n• Choose a short, clear sentence that expresses your position\n• Repeat it calmly every time they push — regardless of what they say\n• You don't need to match their arguments\n• Don't change your wording, don't raise your voice, don't apologise\n\nExample:\n— \"Come on, just this once.\"\n— \"I don't want to.\"\n— \"But why not?\"\n— \"I don't want to.\"\n— \"You're boring.\"\n— \"I understand you see it that way. I don't want to.\"\n\nMindset: I don't need to justify my boundaries. Repeating myself is stable, not strange.",
-    inputs: [
-      { q: "Someone keeps pressuring you to do something you've already said no to", a: "Choose one calm sentence. Repeat it — without changing the wording, no matter what they say." },
-      { q: "A salesperson won't take no for an answer",                              a: '"That doesn\'t work for me." — said calmly, three times if needed. No smile, no apology.' },
-      { q: "A friend repeatedly asks the same favour despite your refusals",         a: '"I can\'t help with that." — unchanged, regardless of how they rephrase the question.' },
-      { q: "Someone tries to argue you out of a decision you've made",               a: '"I\'ve made my decision." — not "I\'ve decided because…" — no explanation.' },
-      { q: "Someone escalates pressure when you decline",                            a: "Hold the same tone as the pressure rises. That's exactly when the technique is being tested." },
-      { q: "A colleague keeps pushing back on a boundary you've set",                a: '"That\'s my boundary." — calm, clear, repeated. Let them run out of new arguments.' },
-    ]
-  }
-];
-
-// ─── STATE ───────────────────────────────────────────────────────────────────
-let stratOrder  = strategies.map((_, i) => i);
-let inputOrders = strategies.map(s => s.inputs.map((_, i) => i));
-let stratIdx = 0, inputIdx = 0;
-let flipped = false, animating = false;
+addCollectionListener('collectionAssertive', 'assertive');
+addCollectionListener('collectionHumour',    'humour');
 
 // ─── DOM ─────────────────────────────────────────────────────────────────────
 const card         = document.getElementById('card');
@@ -588,7 +643,6 @@ document.getElementById('cardInfoClose').addEventListener('click', e => {
   closeInfo();
 });
 
-// Prevent card touch events from firing when info is open
 cardInfo.addEventListener('touchstart', e => e.stopPropagation(), { passive: true });
 cardInfo.addEventListener('touchmove',  e => e.stopPropagation(), { passive: true });
 cardInfo.addEventListener('touchend',   e => e.stopPropagation(), { passive: true });
@@ -619,11 +673,7 @@ function render() {
 
 function flip(val, animate = true) {
   flipped = val;
-  if (animate) {
-    cardInner.style.transition = 'transform 0.4s ease';
-  } else {
-    cardInner.style.transition = 'none';
-  }
+  cardInner.style.transition = animate ? 'transform 0.4s ease' : 'none';
   cardInner.classList.toggle('flipped', flipped);
 }
 
@@ -651,7 +701,7 @@ card.addEventListener('touchstart', e => {
   ty = e.touches[0].clientY;
   tt = Date.now();
   moved = false;
-  e.preventDefault(); // blocks click from firing after touch
+  e.preventDefault();
 }, { passive: false });
 
 card.addEventListener('touchmove', e => {
@@ -667,10 +717,7 @@ card.addEventListener('touchend', e => {
   const adx = Math.abs(dx), ady = Math.abs(dy);
   const elapsed = Date.now() - tt;
 
-  if (!moved && elapsed < 500) {
-    flip(!flipped);
-    return;
-  }
+  if (!moved && elapsed < 500) { flip(!flipped); return; }
   if (moved && adx > 40 && adx > ady) { dx > 0 ? prevStrategy() : nextStrategy(); return; }
   if (moved && ady > 40 && ady > adx) { dy > 0 ? prevInput()    : nextInput();    return; }
 }, { passive: false });
@@ -708,8 +755,8 @@ document.addEventListener('keydown', e => {
 });
 
 function applySettings() {
-  const shS = document.getElementById('shuffleStrategies').checked;
-  const shI = document.getElementById('shuffleInputs').checked;
+  const shS   = document.getElementById('shuffleStrategies').checked;
+  const shI   = document.getElementById('shuffleInputs').checked;
   const showH = document.getElementById('showHints').checked;
   stratOrder  = shS ? shuffle(strategies.map((_, i) => i)) : strategies.map((_, i) => i);
   inputOrders = strategies.map(s => shI ? shuffle(s.inputs.map((_, i) => i)) : s.inputs.map((_, i) => i));
@@ -719,7 +766,7 @@ function applySettings() {
 }
 
 // ─── INIT ────────────────────────────────────────────────────────────────────
-render();
+// App starts on home screen — render() is called when a collection is chosen
 </script>
 </body>
 </html>
