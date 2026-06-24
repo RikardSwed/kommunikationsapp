@@ -2,18 +2,20 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
   <title>Communication Trainer</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
 
-    body {
+    html, body {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
       background: #f0f2f5;
       display: flex;
       justify-content: center;
       align-items: center;
       min-height: 100vh;
+      overflow: hidden;
+      height: 100%;
     }
 
     .app {
@@ -517,18 +519,30 @@ document.addEventListener('keydown', e => {
 
 // Touch / swipe
 let touchStartX = 0, touchStartY = 0;
+let touchMoved = false;
+
 card.addEventListener('touchstart', e => {
   touchStartX = e.touches[0].clientX;
   touchStartY = e.touches[0].clientY;
+  touchMoved = false;
 }, { passive: true });
+
+card.addEventListener('touchmove', e => {
+  const dx = Math.abs(e.touches[0].clientX - touchStartX);
+  const dy = Math.abs(e.touches[0].clientY - touchStartY);
+  if (dx > 8 || dy > 8) touchMoved = true;
+  // prevent page scroll when swiping on card
+  e.preventDefault();
+}, { passive: false });
 
 card.addEventListener('touchend', e => {
   const dx = e.changedTouches[0].clientX - touchStartX;
   const dy = e.changedTouches[0].clientY - touchStartY;
   const absDx = Math.abs(dx), absDy = Math.abs(dy);
   const threshold = 40;
-  if (absDx < threshold && absDy < threshold) {
-    // tap — flip
+
+  if (!touchMoved || (absDx < threshold && absDy < threshold)) {
+    // short tap — flip
     setFlipped(!flipped);
     return;
   }
