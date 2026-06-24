@@ -488,7 +488,13 @@ function prevStrategy() {
 }
 
 // ─── EVENTS ──────────────────────────────────────────────────────────────────
-card.addEventListener('click', () => setFlipped(!flipped));
+// Click handles desktop, touch handles mobile
+// We block click on mobile to avoid double-firing
+let blockClick = false;
+card.addEventListener('click', () => {
+  if (blockClick) { blockClick = false; return; }
+  setFlipped(!flipped);
+});
 
 document.getElementById('closeBtn').addEventListener('click', () => {
   if (confirm('End this session?')) window.close();
@@ -526,43 +532,45 @@ document.addEventListener('keydown', e => {
 
 // Touch / swipe
 let touchStartX = 0, touchStartY = 0;
-let touchMoved = false;
-let isTap = false;
+let touchStartTime = 0;
+let hasMoved = false;
 
 card.addEventListener('touchstart', e => {
   touchStartX = e.touches[0].clientX;
   touchStartY = e.touches[0].clientY;
-  touchMoved = false;
-  isTap = true;
+  touchStartTime = Date.now();
+  hasMoved = false;
 }, { passive: true });
 
 card.addEventListener('touchmove', e => {
   const dx = Math.abs(e.touches[0].clientX - touchStartX);
   const dy = Math.abs(e.touches[0].clientY - touchStartY);
-  if (dx > 10 || dy > 10) {
-    touchMoved = true;
-    isTap = false;
-  }
+  if (dx > 12 || dy > 12) hasMoved = true;
   e.preventDefault();
 }, { passive: false });
 
 card.addEventListener('touchend', e => {
-  if (isTap) {
-    setFlipped(!flipped);
-    return;
-  }
+  const elapsed = Date.now() - touchStartTime;
   const dx = e.changedTouches[0].clientX - touchStartX;
   const dy = e.changedTouches[0].clientY - touchStartY;
-  const absDx = Math.abs(dx), absDy = Math.abs(dy);
-  const threshold = 40;
-  if (absDx < threshold && absDy < threshold) {
+  const absDx = Math.abs(dx);
+  const absDy = Math.abs(dy);
+
+  // Short tap — flip card
+  if (!hasMoved && elapsed < 400) {
+    blockClick = true;
     setFlipped(!flipped);
     return;
   }
-  if (absDx > absDy) {
-    dx > 0 ? prevStrategy() : nextStrategy();
-  } else {
-    dy > 0 ? prevInput() : nextInput();
+
+  // Swipe
+  if (hasMoved) {
+    blockClick = true;
+    if (absDx > absDy && absDx > 40) {
+      dx > 0 ? prevStrategy() : nextStrategy();
+    } else if (absDy > absDx && absDy > 40) {
+      dy > 0 ? prevInput() : nextInput();
+    }
   }
 }, { passive: true });
 
