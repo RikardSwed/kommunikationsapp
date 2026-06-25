@@ -120,23 +120,32 @@ function showMemorize() {
   memRender();
 }
 
+function addModeListener(id, fn) {
+  const el = document.getElementById(id);
+  let mStartY = 0, mMoved = false;
+  el.addEventListener('touchstart', e => { mStartY = e.touches[0].clientY; mMoved = false; }, { passive: true });
+  el.addEventListener('touchmove',  e => { if (Math.abs(e.touches[0].clientY - mStartY) > 8) mMoved = true; }, { passive: true });
+  el.addEventListener('touchend',   e => { if (!mMoved) fn(); });
+  el.addEventListener('click',      fn);
+}
+
 document.querySelectorAll('.collection-card').forEach(el => {
   const key   = el.dataset.key;
   const label = el.dataset.label;
-  el.addEventListener('click', () => showModeScreen(key, label));
-  el.addEventListener('touchend', e => { e.preventDefault(); showModeScreen(key, label); }, { passive: false });
+  let cStartY = 0, cMoved = false;
+  el.addEventListener('touchstart', e => { cStartY = e.touches[0].clientY; cMoved = false; }, { passive: true });
+  el.addEventListener('touchmove',  e => { if (Math.abs(e.touches[0].clientY - cStartY) > 8) cMoved = true; }, { passive: true });
+  el.addEventListener('touchend',   e => { if (!cMoved) showModeScreen(key, label); });
+  el.addEventListener('click',      () => showModeScreen(key, label));
 });
 
 document.getElementById('modeBackBtn').addEventListener('click', showHome);
 
-document.getElementById('modeFlashcard').addEventListener('click', showTraining);
-document.getElementById('modeFlashcard').addEventListener('touchend', e => { e.preventDefault(); showTraining(); }, { passive: false });
+addModeListener('modeFlashcard', showTraining);
 
-document.getElementById('modeMultiStep').addEventListener('click', showMultiStep);
-document.getElementById('modeMultiStep').addEventListener('touchend', e => { e.preventDefault(); showMultiStep(); }, { passive: false });
+addModeListener('modeMultiStep', showMultiStep);
 
-document.getElementById('modeMemorize').addEventListener('click', showMemorize);
-document.getElementById('modeMemorize').addEventListener('touchend', e => { e.preventDefault(); showMemorize(); }, { passive: false });
+addModeListener('modeMemorize', showMemorize);
 
 // Back buttons
 document.getElementById('closeBtn').addEventListener('click',   () => showModeScreen(activeCollectionKey, activeCollectionLabel));
@@ -520,8 +529,7 @@ document.getElementById('flowNextComboBtn').addEventListener('click', flowNextCo
 document.getElementById('flowPrevComboBtn').addEventListener('click', flowPrevCombo);
 document.getElementById('flowCloseBtn').addEventListener('click', ()=>showModeScreen(activeCollectionKey,activeCollectionLabel));
 document.getElementById('flowSettingsBtn').addEventListener('click', ()=>document.getElementById('settingsOverlay').classList.add('open'));
-document.getElementById('modeFlow').addEventListener('click', showFlow);
-document.getElementById('modeFlow').addEventListener('touchend', e=>{e.preventDefault();showFlow();},{passive:false});
+addModeListener('modeFlow', showFlow);
 
 // ─── GUIDED MODE ─────────────────────────────────────────────────────────────
 const guidedScreen        = document.getElementById('guidedScreen');
@@ -609,156 +617,193 @@ document.getElementById('guidedNextInputBtn').addEventListener('click',    guide
 document.getElementById('guidedPrevInputBtn').addEventListener('click',    guidedPrevInput);
 document.getElementById('guidedCloseBtn').addEventListener('click', ()=>showModeScreen(activeCollectionKey,activeCollectionLabel));
 document.getElementById('guidedSettingsBtn').addEventListener('click', ()=>document.getElementById('settingsOverlay').classList.add('open'));
-document.getElementById('modeGuided').addEventListener('click', showGuided);
-document.getElementById('modeGuided').addEventListener('touchend', e=>{e.preventDefault();showGuided();},{passive:false});
-
+addModeListener('modeGuided', showGuided);
 
 // ─── HANDSFREE MODE ──────────────────────────────────────────────────────────
-// Plays through a collection automatically using Web Speech API.
-// Visual state mirrors Single Strategy screen.
-// Play/Stop buttons flank the hint text.
 
-// ── Settings (read from DOM at play-time) ────────────────────────────────────
 function hfSettings() {
   return {
     explanation : document.getElementById('hfExplanation').checked,
     modelAnswer : document.getElementById('hfModelAnswer').checked,
-    maxInputs   : document.getElementById('hfMaxInputs').value,   // "all" or "1"–"5"
+    maxInputs   : document.getElementById('hfMaxInputs').value,
     thinkPause  : parseInt(document.getElementById('hfThinkPause').value),
     genPause    : parseInt(document.getElementById('hfGenPause').value),
     loopStrategy: document.getElementById('hfLoopStrategy').checked,
+    rate        : parseFloat(document.getElementById('hfRate').value),
+    voiceGender : document.getElementById('hfVoice').value,
   };
 }
 
-// ── State ────────────────────────────────────────────────────────────────────
-let hfPlaying    = false;
-let hfAbort      = false;
-let hfSpeaking   = false;
+// ── State ─────────────────────────────────────────────────────────────────────
+let hfPlaying   = false;
+let hfAbort     = false;
+let hfTimeouts  = [];
 
-// ── Helpers ──────────────────────────────────────────────────────────────────
-function hfSpeak(text) {
+// ── Voice selection ───────────────────────────────────────────────────────────
+function hfPickVoice(gender) {
+  const voices = speechSynthesis.getVoices();
+  const enVoices = voices.filter(v => v.lang.startsWith('en'));
+  if (!enVoices.length) return null;
+
+  if (gender === 'male') {
+    const pref = ['Daniel', 'Aaron', 'Fred', 'Gordon', 'Thomas', 'Arthur'];
+    for (const name of pref) {
+      const v = enVoices.find(v => v.name.includes(name));
+      if (v) return v;
+    }
+    // fallback: pick a non-female-named voice
+    return enVoices.find(v => !v.name.match(/Samantha|Victoria|Karen|Moira|Fiona|Allison|Ava|Susan|Zoe|Emma/i)) || enVoices[0];
+  } else {
+    const pref = ['Samantha', 'Ava', 'Allison', 'Victoria', 'Karen'];
+    for (const name of pref) {
+      const v = enVoices.find(v => v.name.includes(name));
+      if (v) return v;
+    }
+    return enVoices[0];
+  }
+}
+
+// ── Helpers ───────────────────────────────────────────────────────────────────
+function hfSpeak(text, cfg) {
   return new Promise(resolve => {
     if (hfAbort) { resolve(); return; }
-    const utt = new SpeechSynthesisUtterance(text);
-    utt.lang  = 'en-US';
-    utt.rate  = 0.92;
-    utt.onend = () => resolve();
+    const utt  = new SpeechSynthesisUtterance(text);
+    utt.lang   = 'en-US';
+    utt.rate   = cfg.rate;
+    const voice = hfPickVoice(cfg.voiceGender);
+    if (voice) utt.voice = voice;
+    utt.onend   = () => resolve();
     utt.onerror = () => resolve();
-    hfSpeaking = true;
     speechSynthesis.speak(utt);
   });
 }
 
-function hfPause(ms) {
+function hfDelay(ms) {
   return new Promise(resolve => {
     if (hfAbort) { resolve(); return; }
-    setTimeout(resolve, ms);
+    const id = setTimeout(() => resolve(), ms);
+    hfTimeouts.push(id);
   });
+}
+
+function hfClearTimeouts() {
+  hfTimeouts.forEach(id => clearTimeout(id));
+  hfTimeouts = [];
+}
+
+// ── Card display ──────────────────────────────────────────────────────────────
+const hfCardInnerEl = document.getElementById('hfCardInner');
+
+function hfShowCard(q, a, flipped) {
+  document.getElementById('hfStrategyName').textContent = currentStrategy().name;
+  document.getElementById('hfInputText').textContent    = q;
+  document.getElementById('hfAnswerText').textContent   = a;
+  document.getElementById('hfCounter').textContent      = `${stratIdx + 1} / ${strategies.length}`;
+  hfCardInnerEl.style.transition = 'transform 0.4s ease';
+  hfCardInnerEl.classList.toggle('flipped', flipped);
 }
 
 function hfUpdateButtons() {
   const playBtn = document.getElementById('hfPlayBtn');
   const stopBtn = document.getElementById('hfStopBtn');
-  if (hfPlaying) {
-    playBtn.textContent = '⏸';
-    playBtn.title = 'Pause';
-  } else {
-    playBtn.textContent = '▶';
-    playBtn.title = 'Play';
-  }
-  stopBtn.disabled = !hfPlaying;
+  playBtn.textContent = hfPlaying ? '⏸' : '▶';
+  stopBtn.disabled    = !hfPlaying;
   stopBtn.style.opacity = hfPlaying ? '1' : '0.35';
 }
 
 // ── Main playback loop ────────────────────────────────────────────────────────
 async function hfPlay() {
   if (hfPlaying) { hfStop(); return; }
+
+  // Safari requires speech to start from a direct user gesture.
+  // We fire a silent utterance immediately here (still inside the click handler)
+  // to unlock the audio session before the async loop begins.
+  const unlock = new SpeechSynthesisUtterance(' ');
+  unlock.volume = 0;
+  speechSynthesis.speak(unlock);
+
   hfPlaying = true;
   hfAbort   = false;
   hfUpdateButtons();
 
-  const cfg = hfSettings();
+  const cfg    = hfSettings();
   const maxInp = cfg.maxInputs === 'all' ? Infinity : parseInt(cfg.maxInputs);
+  const startSi = stratIdx;
 
-  // Start from current stratIdx/inputIdx so resume works
-  const startStrat = stratIdx;
+  outer:
+  for (let si = startSi; si < strategies.length; si++) {
+    if (hfAbort) break;
+    stratIdx = si;
+    inputIdx = 0;
 
-  for (let si = startStrat; si < strategies.length; si++) {
+    // Show strategy name card (front, unflipped)
+    const strat = currentStrategy();
+    hfShowCard('', '', false);
+    document.getElementById('hfStrategyName').textContent = strat.name;
+    document.getElementById('hfInputText').textContent    = strat.name;
+
+    await hfSpeak(strat.name, cfg);
+    await hfDelay(cfg.genPause * 1000);
     if (hfAbort) break;
 
-    // Navigate to this strategy
-    stratIdx  = si;
-    inputIdx  = 0;
-    flip(false, false);
-    render();
-
-    // 1. Say strategy name
-    await hfSpeak(currentStrategy().name);
-    await hfPause(cfg.genPause * 1000);
-    if (hfAbort) break;
-
-    // 2. Optional explanation
-    if (cfg.explanation && currentStrategy().description) {
-      await hfSpeak(currentStrategy().description);
-      await hfPause(cfg.genPause * 1000);
+    if (cfg.explanation && strat.description) {
+      document.getElementById('hfInputText').textContent = strat.description;
+      await hfSpeak(strat.description, cfg);
+      await hfDelay(cfg.genPause * 1000);
       if (hfAbort) break;
     }
 
-    // 3. Inputs
-    const inputs  = inputOrders[stratOrder[si]];
-    const limit   = Math.min(inputs.length, maxInp);
+    const ord   = inputOrders[stratOrder[si]];
+    const limit = Math.min(ord.length, maxInp);
 
     for (let ii = 0; ii < limit; ii++) {
-      if (hfAbort) break;
+      if (hfAbort) break outer;
       inputIdx = ii;
-      flip(false, false);
-      render();
+      const inp = currentInput();
 
-      // Front — input
-      await hfSpeak(currentInput().q);
-      await hfPause(cfg.thinkPause * 1000);
-      if (hfAbort) break;
+      // Show front of card
+      hfShowCard(inp.q, inp.a, false);
+      await hfSpeak(inp.q, cfg);
+      await hfDelay(cfg.thinkPause * 1000);
+      if (hfAbort) break outer;
 
-      // Back — model answer
       if (cfg.modelAnswer) {
-        flip(true);
-        await hfSpeak(currentInput().a);
-        await hfPause(cfg.genPause * 1000);
-        if (hfAbort) break;
+        // Flip to back
+        hfShowCard(inp.q, inp.a, true);
+        await hfSpeak(inp.a, cfg);
+        await hfDelay(cfg.genPause * 1000);
+        if (hfAbort) break outer;
       }
 
-      // Loop current strategy
       if (cfg.loopStrategy && ii === limit - 1) {
-        ii = -1; // reset, loop will increment to 0
+        ii = -1;
       }
     }
 
-    if (hfAbort) break;
-
-    // If looping a strategy, never advance
-    if (cfg.loopStrategy) { si--; }
+    if (cfg.loopStrategy) si--;
   }
 
   hfPlaying = false;
   hfAbort   = false;
   speechSynthesis.cancel();
+  hfClearTimeouts();
   hfUpdateButtons();
 }
 
 function hfStop() {
-  hfAbort   = true;
+  hfAbort = true;
   hfPlaying = false;
   speechSynthesis.cancel();
+  hfClearTimeouts();
   hfUpdateButtons();
 }
 
-// ── Wire up buttons ───────────────────────────────────────────────────────────
+// ── Buttons ───────────────────────────────────────────────────────────────────
 document.getElementById('hfPlayBtn').addEventListener('click', hfPlay);
 document.getElementById('hfStopBtn').addEventListener('click', hfStop);
-document.getElementById('hfPlayBtn').addEventListener('touchend', e => { e.preventDefault(); hfPlay(); }, { passive: false });
-document.getElementById('hfStopBtn').addEventListener('touchend', e => { e.preventDefault(); hfStop(); }, { passive: false });
+document.getElementById('hfPlayBtn').addEventListener('touchend', e => { e.stopPropagation(); e.preventDefault(); hfPlay(); }, { passive: false });
+document.getElementById('hfStopBtn').addEventListener('touchend', e => { e.stopPropagation(); e.preventDefault(); hfStop(); }, { passive: false });
 
-// Stop playback when leaving the screen
 document.getElementById('hfCloseBtn').addEventListener('click', () => {
   hfStop();
   showModeScreen(activeCollectionKey, activeCollectionLabel);
@@ -766,23 +811,7 @@ document.getElementById('hfCloseBtn').addEventListener('click', () => {
 document.getElementById('hfSettingsBtn').addEventListener('click', () =>
   document.getElementById('settingsOverlay').classList.add('open'));
 
-document.getElementById('modeHandsfree').addEventListener('click', showHandsfree);
-document.getElementById('modeHandsfree').addEventListener('touchend', e => { e.preventDefault(); showHandsfree(); }, { passive: false });
-
-function showHandsfree() {
-  strategies = collections[activeCollectionKey];
-  modeScreen.style.display     = 'none';
-  document.getElementById('hfScreen').style.display = 'flex';
-  stratIdx = 0; inputIdx = 0;
-  applySettings();
-  hfUpdateButtons();
-}
-
-// ─── HANDSFREE — MANUAL NAVIGATION (mirrors Single Strategy) ─────────────────
-// The hf screen uses the same strategies/stratIdx/inputIdx state as
-// Single Strategy, so render() already updates it. We just need nav buttons
-// and touch on the hf card.
-
+// ── Manual navigation on hf screen ───────────────────────────────────────────
 const hfCard      = document.getElementById('hfCard');
 const hfCardInner = document.getElementById('hfCardInner');
 
@@ -792,12 +821,8 @@ function hfRender() {
   document.getElementById('hfInputText').textContent    = currentInput().q;
   document.getElementById('hfAnswerText').textContent   = currentInput().a;
   document.getElementById('hfCounter').textContent      = `${stratIdx + 1} / ${strategies.length}`;
-  hfFlipFn(false, false);
-}
-
-function hfFlipFn(val, animate = true) {
-  hfCardInner.style.transition = animate ? 'transform 0.4s ease' : 'none';
-  hfCardInner.classList.toggle('flipped', val);
+  hfCardInner.style.transition = 'none';
+  hfCardInner.classList.remove('flipped');
 }
 
 let hfTx=0,hfTy=0,hfTt=0,hfMov=false;
@@ -806,35 +831,26 @@ hfCard.addEventListener('touchmove', e=>{if(Math.abs(e.touches[0].clientX-hfTx)>
 hfCard.addEventListener('touchend',  e=>{
   e.preventDefault();
   const dx=e.changedTouches[0].clientX-hfTx,dy=e.changedTouches[0].clientY-hfTy,adx=Math.abs(dx),ady=Math.abs(dy);
-  if(!hfMov&&Date.now()-hfTt<500){hfFlipFn(!hfCardInner.classList.contains('flipped'));return;}
-  if(hfMov&&adx>40&&adx>ady){
-    if(dx>0){stratIdx=(stratIdx-1+strategies.length)%strategies.length;}
-    else    {stratIdx=(stratIdx+1)%strategies.length;}
-    inputIdx=0; hfRender(); return;
-  }
-  if(hfMov&&ady>40&&ady>adx){
-    const ord=inputOrders[stratOrder[stratIdx]];
-    if(dy>0){inputIdx=(inputIdx-1+ord.length)%ord.length;}
-    else    {inputIdx=(inputIdx+1)%ord.length;}
-    hfRender(); return;
-  }
+  if(!hfMov&&Date.now()-hfTt<500){hfCardInner.classList.toggle('flipped');return;}
+  if(hfMov&&adx>40&&adx>ady){stratIdx=dx>0?(stratIdx-1+strategies.length)%strategies.length:(stratIdx+1)%strategies.length;inputIdx=0;hfRender();return;}
+  if(hfMov&&ady>40&&ady>adx){const o=inputOrders[stratOrder[stratIdx]];inputIdx=dy>0?(inputIdx-1+o.length)%o.length:(inputIdx+1)%o.length;hfRender();return;}
 },{passive:false});
 
-document.getElementById('hfPrevStratBtn').addEventListener('click',  ()=>{ stratIdx=(stratIdx-1+strategies.length)%strategies.length; inputIdx=0; hfRender(); });
-document.getElementById('hfNextStratBtn').addEventListener('click',  ()=>{ stratIdx=(stratIdx+1)%strategies.length; inputIdx=0; hfRender(); });
-document.getElementById('hfPrevInputBtn').addEventListener('click',  ()=>{ const o=inputOrders[stratOrder[stratIdx]]; inputIdx=(inputIdx-1+o.length)%o.length; hfRender(); });
-document.getElementById('hfNextInputBtn').addEventListener('click',  ()=>{ const o=inputOrders[stratOrder[stratIdx]]; inputIdx=(inputIdx+1)%o.length; hfRender(); });
+document.getElementById('hfPrevStratBtn').addEventListener('click',()=>{stratIdx=(stratIdx-1+strategies.length)%strategies.length;inputIdx=0;hfRender();});
+document.getElementById('hfNextStratBtn').addEventListener('click',()=>{stratIdx=(stratIdx+1)%strategies.length;inputIdx=0;hfRender();});
+document.getElementById('hfPrevInputBtn').addEventListener('click',()=>{const o=inputOrders[stratOrder[stratIdx]];inputIdx=(inputIdx-1+o.length)%o.length;hfRender();});
+document.getElementById('hfNextInputBtn').addEventListener('click',()=>{const o=inputOrders[stratOrder[stratIdx]];inputIdx=(inputIdx+1)%o.length;hfRender();});
 
-// Override showHandsfree to use hfRender
+// ── showHandsfree ─────────────────────────────────────────────────────────────
 function showHandsfree() {
-  strategies = collections[activeCollectionKey];
+  strategies  = collections[activeCollectionKey];
+  stratOrder  = strategies.map((_,i)=>i);
+  inputOrders = strategies.map(s=>s.inputs.map((_,i)=>i));
   modeScreen.style.display = 'none';
   document.getElementById('hfScreen').style.display = 'flex';
   stratIdx = 0; inputIdx = 0;
-  stratOrder  = strategies.map((_,i)=>i);
-  inputOrders = strategies.map(s=>s.inputs.map((_,i)=>i));
   hfRender();
   hfUpdateButtons();
 }
-// Re-wire mode card now that showHandsfree is redefined
-document.getElementById('modeHandsfree').onclick = showHandsfree;
+
+addModeListener('modeHandsfree', showHandsfree);
