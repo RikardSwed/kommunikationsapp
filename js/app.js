@@ -1,7 +1,7 @@
 // app.js — All application logic for Communication Trainer
 // Depends on: data.js and multiStepData.js (must be loaded first)
 
-const VERSION = 'v1.5.1';
+const VERSION = 'v1.5.2';
 
 // ─── SCREENS ─────────────────────────────────────────────────────────────────
 const homeScreen     = document.getElementById('homeScreen');
@@ -756,8 +756,14 @@ async function hfPlay() {
     if (hfAbort) break;
 
     if (cfg.explanation && strat.description) {
-      document.getElementById('hfInputText').textContent = strat.description;
+      // Show description in the card-info overlay (same as tapping strategy name)
+      document.getElementById('hfInputText').textContent  = '';
+      document.getElementById('hfAnswerText').textContent = '';
+      document.getElementById('hfCardInfoText').textContent = strat.description;
+      document.getElementById('hfCardInfo').classList.add('visible');
       await hfSpeak(strat.description, cfg);
+      document.getElementById('hfCardInfo').classList.remove('visible');
+      document.getElementById('hfCardInfo').scrollTop = 0;
       await hfDelay(cfg.genPause * 1000);
       if (hfAbort) break;
     }
