@@ -1,7 +1,7 @@
 // app.js — All application logic for Communication Trainer
 // Depends on: data.js and multiStepData.js (must be loaded first)
 
-const VERSION = 'v1.6.1';
+const VERSION = 'v1.6.2';
 
 // ─── SCREENS ─────────────────────────────────────────────────────────────────
 const homeScreen     = document.getElementById('homeScreen');
@@ -1012,10 +1012,12 @@ async function hfMemPlay() {
     if (hfMemAbort) break;
 
     // Optional explanation
-    if (cfg.explanation && strat.description) {
-      hfMemCardInfoEl.querySelector('#hfMemCardInfoText').textContent = strat.description;
+    const collStrat = (collections[activeCollectionKey] || []).find(s => s.name === strat.name);
+    const desc = collStrat ? collStrat.description : '';
+    if (cfg.explanation && desc) {
+      document.getElementById('hfMemCardInfoText').textContent = desc;
       hfMemCardInfoEl.classList.add('visible');
-      await hfMemSpeak(strat.description, cfg);
+      await hfMemSpeak(desc, cfg);
       hfMemCardInfoEl.classList.remove('visible');
       hfMemCardInfoEl.scrollTop = 0;
       await hfMemDelay(cfg.genPause * 1000);
