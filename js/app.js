@@ -1,14 +1,15 @@
 // app.js — All application logic for Communication Trainer
-// Depends on: data.js (must be loaded first)
+// Depends on: data.js and multiStepData.js (must be loaded first)
 
-const VERSION = 'v1.1';
+const VERSION = 'v1.2';
 
 // ─── SCREENS ─────────────────────────────────────────────────────────────────
 const homeScreen     = document.getElementById('homeScreen');
 const modeScreen     = document.getElementById('modeScreen');
 const trainingScreen = document.getElementById('trainingScreen');
+const msScreen       = document.getElementById('msScreen');
 
-// ─── DOM ─────────────────────────────────────────────────────────────────────
+// ─── DOM — SINGLE STRATEGY ───────────────────────────────────────────────────
 const card           = document.getElementById('card');
 const cardInner      = document.getElementById('cardInner');
 const cardInfo       = document.getElementById('cardInfo');
@@ -19,20 +20,42 @@ const answerText     = document.getElementById('answerText');
 const counter        = document.getElementById('counter');
 const hint           = document.getElementById('hint');
 
-// ─── STATE ───────────────────────────────────────────────────────────────────
+// ─── DOM — MULTIPLE STEPS ────────────────────────────────────────────────────
+const msCard         = document.getElementById('msCard');
+const msCardInner    = document.getElementById('msCardInner');
+const msStrategyName = document.getElementById('msStrategyName');
+const msSituation    = document.getElementById('msSituation');
+const msStepText     = document.getElementById('msStepText');
+const msAnswerText   = document.getElementById('msAnswerText');
+const msStepCounter  = document.getElementById('msStepCounter');
+const msInputCounter = document.getElementById('msInputCounter');
+const msHint         = document.getElementById('msHint');
+
+// ─── STATE — SHARED ───────────────────────────────────────────────────────────
+let activeCollectionKey   = null;
+let activeCollectionLabel = null;
+
+// ─── STATE — SINGLE STRATEGY ─────────────────────────────────────────────────
 let strategies    = [];
 let stratOrder    = [];
 let inputOrders   = [];
 let stratIdx = 0, inputIdx = 0;
 let flipped = false, animating = false;
-let activeCollectionKey   = null;
-let activeCollectionLabel = null;
+
+// ─── STATE — MULTIPLE STEPS ──────────────────────────────────────────────────
+let msStrategies = [];
+let msStratIdx   = 0;
+let msInputIdx   = 0;
+let msStepIdx    = 0;
+let msFlipped    = false;
+let msAnimating  = false;
 
 // ─── NAVIGATION ──────────────────────────────────────────────────────────────
 function showHome() {
   homeScreen.style.display     = 'flex';
   modeScreen.style.display     = 'none';
   trainingScreen.style.display = 'none';
+  msScreen.style.display       = 'none';
   closeInfo();
 }
 
@@ -43,15 +66,24 @@ function showModeScreen(key, label) {
   homeScreen.style.display     = 'none';
   modeScreen.style.display     = 'flex';
   trainingScreen.style.display = 'none';
+  msScreen.style.display       = 'none';
 }
 
 function showTraining() {
   strategies = collections[activeCollectionKey];
   modeScreen.style.display     = 'none';
   trainingScreen.style.display = 'flex';
-  stratIdx = 0;
-  inputIdx = 0;
+  stratIdx = 0; inputIdx = 0;
   applySettings();
+}
+
+function showMultiStep() {
+  msStrategies = multiStepCollections[activeCollectionKey] || [];
+  if (msStrategies.length === 0) return;
+  modeScreen.style.display = 'none';
+  msScreen.style.display   = 'flex';
+  msStratIdx = 0; msInputIdx = 0; msStepIdx = 0;
+  msRender();
 }
 
 // Collection cards → mode screen
@@ -62,21 +94,21 @@ document.querySelectorAll('.collection-card').forEach(el => {
   el.addEventListener('touchend', e => { e.preventDefault(); showModeScreen(key, label); }, { passive: false });
 });
 
-// Mode screen back button
 document.getElementById('modeBackBtn').addEventListener('click', showHome);
 
-// Mode cards
 document.getElementById('modeFlashcard').addEventListener('click', showTraining);
 document.getElementById('modeFlashcard').addEventListener('touchend', e => { e.preventDefault(); showTraining(); }, { passive: false });
 
-// Coming soon modes — no action
-document.getElementById('modeMemorize').addEventListener('click',   () => {});
-document.getElementById('modeMultiStep').addEventListener('click',  () => {});
+document.getElementById('modeMultiStep').addEventListener('click', showMultiStep);
+document.getElementById('modeMultiStep').addEventListener('touchend', e => { e.preventDefault(); showMultiStep(); }, { passive: false });
 
-// Training back button → mode screen
-document.getElementById('closeBtn').addEventListener('click', () => showModeScreen(activeCollectionKey, activeCollectionLabel));
+document.getElementById('modeMemorize').addEventListener('click', () => {});
 
-// ─── INFO OVERLAY ────────────────────────────────────────────────────────────
+// Back buttons
+document.getElementById('closeBtn').addEventListener('click',   () => showModeScreen(activeCollectionKey, activeCollectionLabel));
+document.getElementById('msCloseBtn').addEventListener('click', () => showModeScreen(activeCollectionKey, activeCollectionLabel));
+
+// ─── SINGLE STRATEGY — INFO OVERLAY ──────────────────────────────────────────
 let infoOpen = false;
 
 function openInfo() {
@@ -111,7 +143,7 @@ function shuffle(arr) {
 function currentStrategy() { return strategies[stratOrder[stratIdx]]; }
 function currentInput()    { return currentStrategy().inputs[inputOrders[stratOrder[stratIdx]][inputIdx]]; }
 
-// ─── RENDER ──────────────────────────────────────────────────────────────────
+// ─── SINGLE STRATEGY — RENDER ────────────────────────────────────────────────
 function render() {
   const inp = currentInput();
   strategyName.textContent = currentStrategy().name;
@@ -139,36 +171,154 @@ function prevInput()    { triggerSwipe('down',  () => { inputIdx = (inputIdx - 1
 function nextStrategy() { triggerSwipe('left',  () => { closeInfo(); stratIdx = (stratIdx + 1) % strategies.length; inputIdx = 0; render(); }); }
 function prevStrategy() { triggerSwipe('right', () => { closeInfo(); stratIdx = (stratIdx - 1 + strategies.length) % strategies.length; inputIdx = 0; render(); }); }
 
-// ─── TOUCH ───────────────────────────────────────────────────────────────────
+// ─── SINGLE STRATEGY — TOUCH ─────────────────────────────────────────────────
 let tx = 0, ty = 0, tt = 0, moved = false;
 
-card.addEventListener('touchstart', e => {
-  tx = e.touches[0].clientX; ty = e.touches[0].clientY;
-  tt = Date.now(); moved = false;
+card.addEventListener('touchstart', e => { tx = e.touches[0].clientX; ty = e.touches[0].clientY; tt = Date.now(); moved = false; e.preventDefault(); }, { passive: false });
+card.addEventListener('touchmove',  e => { if (Math.abs(e.touches[0].clientX - tx) > 10 || Math.abs(e.touches[0].clientY - ty) > 10) moved = true; e.preventDefault(); }, { passive: false });
+card.addEventListener('touchend',   e => {
   e.preventDefault();
-}, { passive: false });
-
-card.addEventListener('touchmove', e => {
-  if (Math.abs(e.touches[0].clientX - tx) > 10 || Math.abs(e.touches[0].clientY - ty) > 10) moved = true;
-  e.preventDefault();
-}, { passive: false });
-
-card.addEventListener('touchend', e => {
-  e.preventDefault();
-  const dx = e.changedTouches[0].clientX - tx;
-  const dy = e.changedTouches[0].clientY - ty;
+  const dx = e.changedTouches[0].clientX - tx, dy = e.changedTouches[0].clientY - ty;
   const adx = Math.abs(dx), ady = Math.abs(dy);
   if (!moved && Date.now() - tt < 500)        { flip(!flipped); return; }
   if (moved && adx > 40 && adx > ady) { dx > 0 ? prevStrategy() : nextStrategy(); return; }
   if (moved && ady > 40 && ady > adx) { dy > 0 ? prevInput()    : nextInput();    return; }
 }, { passive: false });
 
-// ─── BUTTONS & KEYBOARD ──────────────────────────────────────────────────────
+// ─── SINGLE STRATEGY — BUTTONS ───────────────────────────────────────────────
 document.getElementById('nextInputBtn').addEventListener('click',  nextInput);
 document.getElementById('prevInputBtn').addEventListener('click',  prevInput);
 document.getElementById('nextStratBtn').addEventListener('click',  nextStrategy);
 document.getElementById('prevStratBtn').addEventListener('click',  prevStrategy);
 
+// ─── MULTIPLE STEPS — RENDER ─────────────────────────────────────────────────
+function msCurrentStrategy() { return msStrategies[msStratIdx]; }
+function msCurrentInput()    { return msCurrentStrategy().inputs[msInputIdx]; }
+function msCurrentStep()     { return msCurrentInput().steps[msStepIdx]; }
+
+function msRender() {
+  const strat = msCurrentStrategy();
+  const input = msCurrentInput();
+  const step  = msCurrentStep();
+  msStrategyName.textContent = strat.name;
+  msSituation.textContent    = input.situation;
+  msStepText.textContent     = step.front;
+  msAnswerText.textContent   = step.back;
+  msStepCounter.textContent  = `Step ${msStepIdx + 1} / ${input.steps.length}`;
+  msInputCounter.textContent = `${msInputIdx + 1} / ${strat.inputs.length}`;
+  msFlip(false, false);
+}
+
+function msFlip(val, animate = true) {
+  msFlipped = val;
+  msCardInner.style.transition = animate ? 'transform 0.4s ease' : 'none';
+  msCardInner.classList.toggle('flipped', msFlipped);
+}
+
+function msTriggerSwipe(dir, callback) {
+  if (msAnimating) return;
+  msAnimating = true;
+  msCard.classList.add('swipe-' + dir);
+  setTimeout(() => { msCard.classList.remove('swipe-' + dir); callback(); msAnimating = false; }, 220);
+}
+
+function msNextStep() {
+  msTriggerSwipe('left', () => {
+    msStepIdx = (msStepIdx + 1) % msCurrentInput().steps.length;
+    msRender();
+  });
+}
+
+function msPrevStep() {
+  msTriggerSwipe('right', () => {
+    msStepIdx = (msStepIdx - 1 + msCurrentInput().steps.length) % msCurrentInput().steps.length;
+    msRender();
+  });
+}
+
+function msNextInput() {
+  msTriggerSwipe('up', () => {
+    msInputIdx = (msInputIdx + 1) % msCurrentStrategy().inputs.length;
+    msStepIdx  = 0;
+    msRender();
+  });
+}
+
+function msPrevInput() {
+  msTriggerSwipe('down', () => {
+    msInputIdx = (msInputIdx - 1 + msCurrentStrategy().inputs.length) % msCurrentStrategy().inputs.length;
+    msStepIdx  = 0;
+    msRender();
+  });
+}
+
+function msNextStrategy() {
+  msTriggerSwipe('left', () => {
+    msStratIdx = (msStratIdx + 1) % msStrategies.length;
+    msInputIdx = 0; msStepIdx = 0;
+    msRender();
+  });
+}
+
+function msPrevStrategy() {
+  msTriggerSwipe('right', () => {
+    msStratIdx = (msStratIdx - 1 + msStrategies.length) % msStrategies.length;
+    msInputIdx = 0; msStepIdx = 0;
+    msRender();
+  });
+}
+
+// ─── MULTIPLE STEPS — TOUCH ──────────────────────────────────────────────────
+let msTx = 0, msTy = 0, msTt = 0, msMoved = false;
+
+msCard.addEventListener('touchstart', e => { msTx = e.touches[0].clientX; msTy = e.touches[0].clientY; msTt = Date.now(); msMoved = false; e.preventDefault(); }, { passive: false });
+msCard.addEventListener('touchmove',  e => { if (Math.abs(e.touches[0].clientX - msTx) > 10 || Math.abs(e.touches[0].clientY - msTy) > 10) msMoved = true; e.preventDefault(); }, { passive: false });
+msCard.addEventListener('touchend',   e => {
+  e.preventDefault();
+  const dx = e.changedTouches[0].clientX - msTx, dy = e.changedTouches[0].clientY - msTy;
+  const adx = Math.abs(dx), ady = Math.abs(dy);
+  if (!msMoved && Date.now() - msTt < 500)      { msFlip(!msFlipped); return; }
+  if (msMoved && adx > 40 && adx > ady) { dx > 0 ? msPrevStep()  : msNextStep();  return; }
+  if (msMoved && ady > 40 && ady > adx) { dy > 0 ? msPrevInput() : msNextInput(); return; }
+}, { passive: false });
+
+// ─── MULTIPLE STEPS — BUTTONS ────────────────────────────────────────────────
+document.getElementById('msNextStepBtn').addEventListener('click',  msNextStep);
+document.getElementById('msPrevStepBtn').addEventListener('click',  msPrevStep);
+document.getElementById('msNextInputBtn').addEventListener('click', msNextInput);
+document.getElementById('msPrevInputBtn').addEventListener('click', msPrevInput);
+document.getElementById('msNextStrat').addEventListener('click',    msNextStrategy);
+document.getElementById('msPrevStrat').addEventListener('click',    msPrevStrategy);
+
+// ─── KEYBOARD ────────────────────────────────────────────────────────────────
+document.addEventListener('keydown', e => {
+  if (document.getElementById('settingsOverlay').classList.contains('open')) return;
+
+  if (e.key === 'Escape') {
+    if (trainingScreen.style.display !== 'none' || msScreen.style.display !== 'none')
+      showModeScreen(activeCollectionKey, activeCollectionLabel);
+    else if (modeScreen.style.display !== 'none') showHome();
+    return;
+  }
+
+  if (trainingScreen.style.display !== 'none') {
+    if (e.key === 'ArrowRight') nextStrategy();
+    if (e.key === 'ArrowLeft')  prevStrategy();
+    if (e.key === 'ArrowDown')  nextInput();
+    if (e.key === 'ArrowUp')    prevInput();
+    if (e.key === ' ')          { e.preventDefault(); flip(!flipped); }
+  }
+
+  if (msScreen.style.display !== 'none') {
+    if (e.key === 'ArrowRight') msNextStep();
+    if (e.key === 'ArrowLeft')  msPrevStep();
+    if (e.key === 'ArrowDown')  msNextInput();
+    if (e.key === 'ArrowUp')    msPrevInput();
+    if (e.key === ' ')          { e.preventDefault(); msFlip(!msFlipped); }
+  }
+});
+
+// ─── SETTINGS ────────────────────────────────────────────────────────────────
 document.getElementById('settingsBtn').addEventListener('click', () =>
   document.getElementById('settingsOverlay').classList.add('open'));
 
@@ -184,29 +334,16 @@ document.getElementById('settingsOverlay').addEventListener('click', e => {
   }
 });
 
-document.addEventListener('keydown', e => {
-  if (document.getElementById('settingsOverlay').classList.contains('open')) return;
-  if (e.key === 'Escape')     {
-    if (trainingScreen.style.display !== 'none') showModeScreen(activeCollectionKey, activeCollectionLabel);
-    else if (modeScreen.style.display !== 'none') showHome();
-    return;
-  }
-  if (trainingScreen.style.display === 'none') return;
-  if (e.key === 'ArrowRight') nextStrategy();
-  if (e.key === 'ArrowLeft')  prevStrategy();
-  if (e.key === 'ArrowDown')  nextInput();
-  if (e.key === 'ArrowUp')    prevInput();
-  if (e.key === ' ')          { e.preventDefault(); flip(!flipped); }
-});
-
-// ─── SETTINGS ────────────────────────────────────────────────────────────────
 function applySettings() {
   const shS   = document.getElementById('shuffleStrategies').checked;
   const shI   = document.getElementById('shuffleInputs').checked;
   const showH = document.getElementById('showHints').checked;
-  stratOrder  = shS ? shuffle(strategies.map((_, i) => i)) : strategies.map((_, i) => i);
-  inputOrders = strategies.map(s => shI ? shuffle(s.inputs.map((_, i) => i)) : s.inputs.map((_, i) => i));
-  hint.style.visibility = showH ? 'visible' : 'hidden';
-  stratIdx = 0; inputIdx = 0;
-  render();
+  if (strategies.length > 0) {
+    stratOrder  = shS ? shuffle(strategies.map((_, i) => i)) : strategies.map((_, i) => i);
+    inputOrders = strategies.map(s => shI ? shuffle(s.inputs.map((_, i) => i)) : s.inputs.map((_, i) => i));
+    hint.style.visibility   = showH ? 'visible' : 'hidden';
+    msHint.style.visibility = showH ? 'visible' : 'hidden';
+    stratIdx = 0; inputIdx = 0;
+    render();
+  }
 }
