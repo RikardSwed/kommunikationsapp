@@ -1,7 +1,7 @@
 // app.js — All application logic for Communication Trainer
 // Depends on: data.js and multiStepData.js (must be loaded first)
 
-const VERSION = 'v1.5.2';
+const VERSION = 'v1.5.3';
 
 // ─── SCREENS ─────────────────────────────────────────────────────────────────
 const homeScreen     = document.getElementById('homeScreen');
@@ -649,21 +649,31 @@ let hfAbort     = false;
 let hfTimeouts  = [];
 
 // ── Voice selection ───────────────────────────────────────────────────────────
+// Pre-load voices as soon as possible
+let cachedVoices = [];
+function loadVoices() {
+  const v = speechSynthesis.getVoices();
+  if (v.length) cachedVoices = v;
+}
+loadVoices();
+if (typeof speechSynthesis.onvoiceschanged !== 'undefined') {
+  speechSynthesis.onvoiceschanged = loadVoices;
+}
+
 function hfPickVoice(gender) {
-  const voices = speechSynthesis.getVoices();
+  const voices = cachedVoices.length ? cachedVoices : speechSynthesis.getVoices();
   const enVoices = voices.filter(v => v.lang.startsWith('en'));
   if (!enVoices.length) return null;
 
   if (gender === 'male') {
-    const pref = ['Daniel', 'Aaron', 'Fred', 'Gordon', 'Thomas', 'Arthur'];
+    const pref = ['Daniel', 'Aaron', 'Fred', 'Gordon', 'Thomas', 'Arthur', 'Oliver', 'Jamie'];
     for (const name of pref) {
       const v = enVoices.find(v => v.name.includes(name));
       if (v) return v;
     }
-    // fallback: pick a non-female-named voice
     return enVoices.find(v => !v.name.match(/Samantha|Victoria|Karen|Moira|Fiona|Allison|Ava|Susan|Zoe|Emma/i)) || enVoices[0];
   } else {
-    const pref = ['Samantha', 'Ava', 'Allison', 'Victoria', 'Karen'];
+    const pref = ['Samantha', 'Ava', 'Allison', 'Victoria', 'Karen', 'Moira'];
     for (const name of pref) {
       const v = enVoices.find(v => v.name.includes(name));
       if (v) return v;
@@ -823,6 +833,12 @@ document.getElementById('hfCloseBtn').addEventListener('click', () => {
   hfStop();
   showModeScreen(activeCollectionKey, activeCollectionLabel);
 });
+
+// Allow scrolling inside hfCardInfo overlay on iOS
+const hfCardInfoEl = document.getElementById('hfCardInfo');
+hfCardInfoEl.addEventListener('touchstart', e => e.stopPropagation(), { passive: true });
+hfCardInfoEl.addEventListener('touchmove',  e => e.stopPropagation(), { passive: true });
+hfCardInfoEl.addEventListener('touchend',   e => e.stopPropagation(), { passive: true });
 document.getElementById('hfSettingsBtn').addEventListener('click', () =>
   document.getElementById('hfSettingsOverlay').classList.add('open'));
 
