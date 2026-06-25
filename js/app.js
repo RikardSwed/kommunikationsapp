@@ -122,21 +122,21 @@ function showMemorize() {
 
 function addModeListener(id, fn) {
   const el = document.getElementById(id);
-  let mStartY = 0, mMoved = false;
-  el.addEventListener('touchstart', e => { mStartY = e.touches[0].clientY; mMoved = false; }, { passive: true });
+  let mStartY = 0, mMoved = false, didTouch = false;
+  el.addEventListener('touchstart', e => { mStartY = e.touches[0].clientY; mMoved = false; didTouch = true; }, { passive: true });
   el.addEventListener('touchmove',  e => { if (Math.abs(e.touches[0].clientY - mStartY) > 8) mMoved = true; }, { passive: true });
-  el.addEventListener('touchend',   e => { if (!mMoved) fn(); });
-  el.addEventListener('click',      fn);
+  el.addEventListener('touchend',   e => { if (!mMoved) { fn(); } });
+  el.addEventListener('click',      e => { if (didTouch) { didTouch = false; return; } fn(); });
 }
 
 document.querySelectorAll('.collection-card').forEach(el => {
   const key   = el.dataset.key;
   const label = el.dataset.label;
-  let cStartY = 0, cMoved = false;
-  el.addEventListener('touchstart', e => { cStartY = e.touches[0].clientY; cMoved = false; }, { passive: true });
+  let cStartY = 0, cMoved = false, cDidTouch = false;
+  el.addEventListener('touchstart', e => { cStartY = e.touches[0].clientY; cMoved = false; cDidTouch = true; }, { passive: true });
   el.addEventListener('touchmove',  e => { if (Math.abs(e.touches[0].clientY - cStartY) > 8) cMoved = true; }, { passive: true });
   el.addEventListener('touchend',   e => { if (!cMoved) showModeScreen(key, label); });
-  el.addEventListener('click',      () => showModeScreen(key, label));
+  el.addEventListener('click',      () => { if (cDidTouch) { cDidTouch = false; return; } showModeScreen(key, label); });
 });
 
 document.getElementById('modeBackBtn').addEventListener('click', showHome);
