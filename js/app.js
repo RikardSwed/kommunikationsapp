@@ -1,13 +1,14 @@
 // app.js — All application logic for Communication Trainer
 // Depends on: data.js and multiStepData.js (must be loaded first)
 
-const VERSION = 'v1.2';
+const VERSION = 'v1.3';
 
 // ─── SCREENS ─────────────────────────────────────────────────────────────────
 const homeScreen     = document.getElementById('homeScreen');
 const modeScreen     = document.getElementById('modeScreen');
 const trainingScreen = document.getElementById('trainingScreen');
 const msScreen       = document.getElementById('msScreen');
+const memScreen      = document.getElementById('memScreen');
 
 // ─── DOM — SINGLE STRATEGY ───────────────────────────────────────────────────
 const card           = document.getElementById('card');
@@ -31,6 +32,15 @@ const msStepCounter  = document.getElementById('msStepCounter');
 const msInputCounter = document.getElementById('msInputCounter');
 const msHint         = document.getElementById('msHint');
 
+// ─── DOM — MEMORIZE ──────────────────────────────────────────────────────────
+const memCard         = document.getElementById('memCard');
+const memCardInner    = document.getElementById('memCardInner');
+const memStrategyName = document.getElementById('memStrategyName');
+const memQuestionText = document.getElementById('memQuestionText');
+const memAnswerText   = document.getElementById('memAnswerText');
+const memCounter      = document.getElementById('memCounter');
+const memHint         = document.getElementById('memHint');
+
 // ─── STATE — SHARED ───────────────────────────────────────────────────────────
 let activeCollectionKey   = null;
 let activeCollectionLabel = null;
@@ -43,6 +53,12 @@ let stratIdx = 0, inputIdx = 0;
 let flipped = false, animating = false;
 
 // ─── STATE — MULTIPLE STEPS ──────────────────────────────────────────────────
+let memStrategies = [];
+let memStratIdx   = 0;
+let memCardIdx    = 0;
+let memFlipped    = false;
+let memAnimating  = false;
+
 let msStrategies = [];
 let msStratIdx   = 0;
 let msInputIdx   = 0;
@@ -56,6 +72,7 @@ function showHome() {
   modeScreen.style.display     = 'none';
   trainingScreen.style.display = 'none';
   msScreen.style.display       = 'none';
+  memScreen.style.display      = 'none';
   closeInfo();
 }
 
@@ -67,6 +84,7 @@ function showModeScreen(key, label) {
   modeScreen.style.display     = 'flex';
   trainingScreen.style.display = 'none';
   msScreen.style.display       = 'none';
+  memScreen.style.display      = 'none';
 }
 
 function showTraining() {
@@ -87,6 +105,15 @@ function showMultiStep() {
 }
 
 // Collection cards → mode screen
+function showMemorize() {
+  memStrategies = memorizeCollections[activeCollectionKey] || [];
+  if (memStrategies.length === 0) return;
+  modeScreen.style.display = 'none';
+  memScreen.style.display  = 'flex';
+  memStratIdx = 0; memCardIdx = 0;
+  memRender();
+}
+
 document.querySelectorAll('.collection-card').forEach(el => {
   const key   = el.dataset.key;
   const label = el.dataset.label;
@@ -102,11 +129,13 @@ document.getElementById('modeFlashcard').addEventListener('touchend', e => { e.p
 document.getElementById('modeMultiStep').addEventListener('click', showMultiStep);
 document.getElementById('modeMultiStep').addEventListener('touchend', e => { e.preventDefault(); showMultiStep(); }, { passive: false });
 
-document.getElementById('modeMemorize').addEventListener('click', () => {});
+document.getElementById('modeMemorize').addEventListener('click', showMemorize);
+document.getElementById('modeMemorize').addEventListener('touchend', e => { e.preventDefault(); showMemorize(); }, { passive: false });
 
 // Back buttons
 document.getElementById('closeBtn').addEventListener('click',   () => showModeScreen(activeCollectionKey, activeCollectionLabel));
-document.getElementById('msCloseBtn').addEventListener('click', () => showModeScreen(activeCollectionKey, activeCollectionLabel));
+document.getElementById('msCloseBtn').addEventListener('click',  () => showModeScreen(activeCollectionKey, activeCollectionLabel));
+document.getElementById('memCloseBtn').addEventListener('click', () => showModeScreen(activeCollectionKey, activeCollectionLabel));
 
 // ─── SINGLE STRATEGY — INFO OVERLAY ──────────────────────────────────────────
 let infoOpen = false;
@@ -190,6 +219,60 @@ document.getElementById('nextInputBtn').addEventListener('click',  nextInput);
 document.getElementById('prevInputBtn').addEventListener('click',  prevInput);
 document.getElementById('nextStratBtn').addEventListener('click',  nextStrategy);
 document.getElementById('prevStratBtn').addEventListener('click',  prevStrategy);
+
+// ─── MEMORIZE — RENDER ───────────────────────────────────────────────────────
+function memCurrentStrategy() { return memStrategies[memStratIdx]; }
+function memCurrentCard()     { return memCurrentStrategy().cards[memCardIdx]; }
+
+function memRender() {
+  const strat = memCurrentStrategy();
+  const c     = memCurrentCard();
+  memStrategyName.textContent = strat.name;
+  memQuestionText.textContent = c.q;
+  memAnswerText.textContent   = c.a;
+  memCounter.textContent      = `${memStratIdx + 1} / ${memStrategies.length}`;
+  memFlipFn(false, false);
+}
+
+function memFlipFn(val, animate = true) {
+  memFlipped = val;
+  memCardInner.style.transition = animate ? 'transform 0.4s ease' : 'none';
+  memCardInner.classList.toggle('flipped', memFlipped);
+}
+
+function memTriggerSwipe(dir, callback) {
+  if (memAnimating) return;
+  memAnimating = true;
+  memCard.classList.add('swipe-' + dir);
+  setTimeout(() => { memCard.classList.remove('swipe-' + dir); callback(); memAnimating = false; }, 220);
+}
+
+function memNextCard()     { memTriggerSwipe('up',    () => { memCardIdx  = (memCardIdx  + 1) % memCurrentStrategy().cards.length; memRender(); }); }
+function memPrevCard()     { memTriggerSwipe('down',  () => { memCardIdx  = (memCardIdx  - 1 + memCurrentStrategy().cards.length) % memCurrentStrategy().cards.length; memRender(); }); }
+function memNextStrategy() { memTriggerSwipe('left',  () => { memStratIdx = (memStratIdx + 1) % memStrategies.length; memCardIdx = 0; memRender(); }); }
+function memPrevStrategy() { memTriggerSwipe('right', () => { memStratIdx = (memStratIdx - 1 + memStrategies.length) % memStrategies.length; memCardIdx = 0; memRender(); }); }
+
+// ─── MEMORIZE — TOUCH ────────────────────────────────────────────────────────
+let memTx = 0, memTy = 0, memTt = 0, memMoved = false;
+
+memCard.addEventListener('touchstart', e => { memTx = e.touches[0].clientX; memTy = e.touches[0].clientY; memTt = Date.now(); memMoved = false; e.preventDefault(); }, { passive: false });
+memCard.addEventListener('touchmove',  e => { if (Math.abs(e.touches[0].clientX - memTx) > 10 || Math.abs(e.touches[0].clientY - memTy) > 10) memMoved = true; e.preventDefault(); }, { passive: false });
+memCard.addEventListener('touchend',   e => {
+  e.preventDefault();
+  const dx = e.changedTouches[0].clientX - memTx, dy = e.changedTouches[0].clientY - memTy;
+  const adx = Math.abs(dx), ady = Math.abs(dy);
+  if (!memMoved && Date.now() - memTt < 500)      { memFlipFn(!memFlipped); return; }
+  if (memMoved && adx > 40 && adx > ady) { dx > 0 ? memPrevStrategy() : memNextStrategy(); return; }
+  if (memMoved && ady > 40 && ady > adx) { dy > 0 ? memPrevCard()     : memNextCard();     return; }
+}, { passive: false });
+
+// ─── MEMORIZE — BUTTONS ──────────────────────────────────────────────────────
+document.getElementById('memNextCardBtn').addEventListener('click',  memNextCard);
+document.getElementById('memPrevCardBtn').addEventListener('click',  memPrevCard);
+document.getElementById('memNextStratBtn').addEventListener('click', memNextStrategy);
+document.getElementById('memPrevStratBtn').addEventListener('click', memPrevStrategy);
+document.getElementById('memSettingsBtn').addEventListener('click', () =>
+  document.getElementById('settingsOverlay').classList.add('open'));
 
 // ─── MULTIPLE STEPS — RENDER ─────────────────────────────────────────────────
 function msCurrentStrategy() { return msStrategies[msStratIdx]; }
@@ -295,7 +378,7 @@ document.addEventListener('keydown', e => {
   if (document.getElementById('settingsOverlay').classList.contains('open')) return;
 
   if (e.key === 'Escape') {
-    if (trainingScreen.style.display !== 'none' || msScreen.style.display !== 'none')
+    if (trainingScreen.style.display !== 'none' || msScreen.style.display !== 'none' || memScreen.style.display !== 'none')
       showModeScreen(activeCollectionKey, activeCollectionLabel);
     else if (modeScreen.style.display !== 'none') showHome();
     return;
@@ -315,6 +398,14 @@ document.addEventListener('keydown', e => {
     if (e.key === 'ArrowDown')  msNextInput();
     if (e.key === 'ArrowUp')    msPrevInput();
     if (e.key === ' ')          { e.preventDefault(); msFlip(!msFlipped); }
+  }
+
+  if (memScreen.style.display !== 'none') {
+    if (e.key === 'ArrowRight') memNextStrategy();
+    if (e.key === 'ArrowLeft')  memPrevStrategy();
+    if (e.key === 'ArrowDown')  memNextCard();
+    if (e.key === 'ArrowUp')    memPrevCard();
+    if (e.key === ' ')          { e.preventDefault(); memFlipFn(!memFlipped); }
   }
 });
 
