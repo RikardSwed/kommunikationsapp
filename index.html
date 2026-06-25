@@ -67,11 +67,11 @@
       </div>
       <div class="mode-arrow">›</div>
     </div>
-    <div class="mode-card mode-card--soon" id="modeMemorize">
+    <div class="mode-card" id="modeMemorize">
       <div class="mode-icon">◎</div>
       <div class="mode-info">
         <div class="mode-name">Memorize</div>
-        <div class="mode-desc">Coming soon</div>
+        <div class="mode-desc">Test your knowledge of the theory behind each strategy</div>
       </div>
       <div class="mode-arrow">›</div>
     </div>
@@ -121,6 +121,40 @@
     <button class="nav-btn" id="prevInputBtn">&#8593;</button>
     <button class="nav-btn" id="nextInputBtn">&#8595;</button>
     <button class="nav-btn" id="nextStratBtn">&#8594;</button>
+  </div>
+</div>
+
+<!-- MEMORIZE TRAINING SCREEN -->
+<div class="app" id="memScreen" style="display:none;">
+  <div class="topbar">
+    <button class="topbar-btn" id="memCloseBtn">✕</button>
+    <span class="counter" id="memCounter">1 / 4</span>
+    <button class="topbar-btn" id="memSettingsBtn">⚙</button>
+  </div>
+  <div class="divider"></div>
+
+  <div class="strategy-label" id="memStrategyName"></div>
+
+  <div class="card-area">
+    <div class="card" id="memCard">
+      <div class="card-inner" id="memCardInner">
+        <div class="card-face card-front">
+          <p class="card-text" id="memQuestionText"></p>
+        </div>
+        <div class="card-face card-back">
+          <p class="card-text mem-back-text" id="memAnswerText"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hint" id="memHint">Tap card to reveal<br>↑ ↓ next question &nbsp;·&nbsp; ← → new strategy</div>
+
+  <div class="bottombar">
+    <button class="nav-btn" id="memPrevStratBtn">&#8592;</button>
+    <button class="nav-btn" id="memPrevCardBtn">&#8593;</button>
+    <button class="nav-btn" id="memNextCardBtn">&#8595;</button>
+    <button class="nav-btn" id="memNextStratBtn">&#8594;</button>
   </div>
 </div>
 
@@ -182,7 +216,7 @@
       <label>Show hints</label>
       <label class="toggle"><input type="checkbox" id="showHints" checked /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.2</div>
+    <div class="settings-version">v1.3</div>
     <button class="settings-close" id="settingsClose">Done</button>
   </div>
 </div>
@@ -190,6 +224,7 @@
 <!-- Scripts — data must load before app -->
 <script src="js/data.js"></script>
 <script src="js/multiStepData.js"></script>
+<script src="js/memorizeData.js"></script>
 <script src="js/app.js"></script>
 
 </body>
