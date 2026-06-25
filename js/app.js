@@ -444,13 +444,20 @@ function applySettings() {
   const shS   = document.getElementById('shuffleStrategies').checked;
   const shI   = document.getElementById('shuffleInputs').checked;
   const showH = document.getElementById('showHints').checked;
+  const showHVal = showH ? 'visible' : 'hidden';
+
+  // Update hint visibility on all screens safely
+  ['hint','memHint','msHint','flowHint','guidedHint','hfHint'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.style.visibility = showHVal;
+  });
+
+  // Only rebuild order and re-render if strategies are loaded
   if (strategies.length > 0) {
     stratOrder  = shS ? shuffle(strategies.map((_, i) => i)) : strategies.map((_, i) => i);
     inputOrders = strategies.map(s => shI ? shuffle(s.inputs.map((_, i) => i)) : s.inputs.map((_, i) => i));
-    hint.style.visibility   = showH ? 'visible' : 'hidden';
-    msHint.style.visibility = showH ? 'visible' : 'hidden';
-    stratIdx = 0; inputIdx = 0;
-    render();
+    // Re-render whichever training screen is currently visible
+    if (trainingScreen.style.display !== 'none') { stratIdx = 0; inputIdx = 0; render(); }
   }
 }
 
@@ -809,7 +816,10 @@ document.getElementById('hfCloseBtn').addEventListener('click', () => {
   showModeScreen(activeCollectionKey, activeCollectionLabel);
 });
 document.getElementById('hfSettingsBtn').addEventListener('click', () =>
-  document.getElementById('settingsOverlay').classList.add('open'));
+  document.getElementById('hfSettingsOverlay').classList.add('open'));
+
+document.getElementById('hfSettingsClose').addEventListener('click', () =>
+  document.getElementById('hfSettingsOverlay').classList.remove('open'));
 
 // ── Manual navigation on hf screen ───────────────────────────────────────────
 const hfCard      = document.getElementById('hfCard');
