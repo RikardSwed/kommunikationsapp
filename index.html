@@ -15,36 +15,20 @@
     <div class="home-subtitle">Choose a collection to practise</div>
   </div>
   <div class="home-section-label">Collections</div>
-
   <div class="collection-card" id="collectionAssertive" data-key="assertive" data-label="Assertive Communication">
-    <div>
-      <div class="collection-name">Assertive Communication</div>
-      <div class="collection-meta">4 strategies &nbsp;·&nbsp; Flashcard mode</div>
-    </div>
+    <div><div class="collection-name">Assertive Communication</div><div class="collection-meta">4 strategies &nbsp;·&nbsp; Flashcard mode</div></div>
     <div class="collection-arrow">›</div>
   </div>
-
   <div class="collection-card" id="collectionHumour" data-key="humour" data-label="Humour Practise">
-    <div>
-      <div class="collection-name">Humour Practise</div>
-      <div class="collection-meta">4 strategies &nbsp;·&nbsp; Flashcard mode</div>
-    </div>
+    <div><div class="collection-name">Humour Practise</div><div class="collection-meta">4 strategies &nbsp;·&nbsp; Flashcard mode</div></div>
     <div class="collection-arrow">›</div>
   </div>
-
   <div class="collection-card" id="collectionTeasing" data-key="teasing" data-label="Teasing &amp; Playfulness">
-    <div>
-      <div class="collection-name">Teasing &amp; Playfulness</div>
-      <div class="collection-meta">7 strategies &nbsp;·&nbsp; Flashcard mode</div>
-    </div>
+    <div><div class="collection-name">Teasing &amp; Playfulness</div><div class="collection-meta">7 strategies &nbsp;·&nbsp; Flashcard mode</div></div>
     <div class="collection-arrow">›</div>
   </div>
-
   <div class="collection-card" id="collectionCriticism" data-key="criticism" data-label="Criticism &amp; Correction">
-    <div>
-      <div class="collection-name">Criticism &amp; Correction</div>
-      <div class="collection-meta">4 strategies &nbsp;·&nbsp; Flashcard mode</div>
-    </div>
+    <div><div class="collection-name">Criticism &amp; Correction</div><div class="collection-meta">4 strategies &nbsp;·&nbsp; Flashcard mode</div></div>
     <div class="collection-arrow">›</div>
   </div>
 </div>
@@ -61,42 +45,32 @@
   <div class="mode-list">
     <div class="mode-card" id="modeFlashcard">
       <div class="mode-icon">▣</div>
-      <div class="mode-info">
-        <div class="mode-name">Single Strategy</div>
-        <div class="mode-desc">Study one strategy at a time with example inputs</div>
-      </div>
+      <div class="mode-info"><div class="mode-name">Single Strategy</div><div class="mode-desc">Study one strategy at a time with example inputs</div></div>
       <div class="mode-arrow">›</div>
     </div>
     <div class="mode-card" id="modeMemorize">
       <div class="mode-icon">◎</div>
-      <div class="mode-info">
-        <div class="mode-name">Memorize</div>
-        <div class="mode-desc">Test your knowledge of the theory behind each strategy</div>
-      </div>
+      <div class="mode-info"><div class="mode-name">Memorize</div><div class="mode-desc">Test your knowledge of the theory behind each strategy</div></div>
       <div class="mode-arrow">›</div>
     </div>
     <div class="mode-card" id="modeMultiStep">
       <div class="mode-icon">◈</div>
-      <div class="mode-info">
-        <div class="mode-name">Multiple Steps</div>
-        <div class="mode-desc">Step-by-step combinations — free navigation</div>
-      </div>
+      <div class="mode-info"><div class="mode-name">Multiple Steps</div><div class="mode-desc">Step-by-step combinations — free navigation</div></div>
       <div class="mode-arrow">›</div>
     </div>
     <div class="mode-card" id="modeFlow">
       <div class="mode-icon">⇉</div>
-      <div class="mode-info">
-        <div class="mode-name">Flow</div>
-        <div class="mode-desc">Steps and situations in one seamless sequence</div>
-      </div>
+      <div class="mode-info"><div class="mode-name">Flow</div><div class="mode-desc">Steps and situations in one seamless sequence</div></div>
       <div class="mode-arrow">›</div>
     </div>
     <div class="mode-card" id="modeGuided">
       <div class="mode-icon">◉</div>
-      <div class="mode-info">
-        <div class="mode-name">Guided</div>
-        <div class="mode-desc">Step through combinations at your own pace</div>
-      </div>
+      <div class="mode-info"><div class="mode-name">Guided</div><div class="mode-desc">Step through combinations at your own pace</div></div>
+      <div class="mode-arrow">›</div>
+    </div>
+    <div class="mode-card" id="modeHandsfree">
+      <div class="mode-icon">🎧</div>
+      <div class="mode-info"><div class="mode-name">Handsfree</div><div class="mode-desc">Listen and practise with your phone in your pocket</div></div>
       <div class="mode-arrow">›</div>
     </div>
   </div>
@@ -259,6 +233,36 @@
   </div>
 </div>
 
+<!-- HANDSFREE TRAINING SCREEN -->
+<div class="app" id="hfScreen" style="display:none;">
+  <div class="topbar">
+    <button class="topbar-btn" id="hfCloseBtn">✕</button>
+    <span class="counter" id="hfCounter">1 / 4</span>
+    <button class="topbar-btn" id="hfSettingsBtn">⚙</button>
+  </div>
+  <div class="divider"></div>
+  <div class="strategy-label" id="hfStrategyName"></div>
+  <div class="card-area">
+    <div class="card" id="hfCard">
+      <div class="card-inner" id="hfCardInner">
+        <div class="card-face card-front"><p class="card-text" id="hfInputText"></p></div>
+        <div class="card-face card-back"><p class="card-text" id="hfAnswerText"></p></div>
+      </div>
+    </div>
+  </div>
+  <div class="hf-hint-row">
+    <button class="hf-transport-btn" id="hfStopBtn" disabled>■</button>
+    <span class="hint" id="hfHint" style="flex:1; margin:0;">Tap card to reveal<br>↑ ↓ new input &nbsp;·&nbsp; ← → new strategy</span>
+    <button class="hf-transport-btn" id="hfPlayBtn">▶</button>
+  </div>
+  <div class="bottombar">
+    <button class="nav-btn" id="hfPrevStratBtn">&#8592;</button>
+    <button class="nav-btn" id="hfPrevInputBtn">&#8593;</button>
+    <button class="nav-btn" id="hfNextInputBtn">&#8595;</button>
+    <button class="nav-btn" id="hfNextStratBtn">&#8594;</button>
+  </div>
+</div>
+
 <!-- SETTINGS PANEL -->
 <div class="settings-overlay" id="settingsOverlay">
   <div class="settings-panel">
@@ -275,7 +279,53 @@
       <label>Show hints</label>
       <label class="toggle"><input type="checkbox" id="showHints" checked /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.4</div>
+
+    <div class="settings-section-label">Handsfree</div>
+
+    <div class="settings-row">
+      <label>Strategy explanation</label>
+      <label class="toggle"><input type="checkbox" id="hfExplanation" checked /><span class="toggle-slider"></span></label>
+    </div>
+    <div class="settings-row">
+      <label>Model answer</label>
+      <label class="toggle"><input type="checkbox" id="hfModelAnswer" checked /><span class="toggle-slider"></span></label>
+    </div>
+    <div class="settings-row">
+      <label>Max inputs per strategy</label>
+      <select class="settings-select" id="hfMaxInputs">
+        <option value="all">All</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+    </div>
+    <div class="settings-row">
+      <label>Thinking pause</label>
+      <select class="settings-select" id="hfThinkPause">
+        <option value="3">3 s</option>
+        <option value="5" selected>5 s</option>
+        <option value="8">8 s</option>
+        <option value="10">10 s</option>
+        <option value="15">15 s</option>
+      </select>
+    </div>
+    <div class="settings-row">
+      <label>General pause</label>
+      <select class="settings-select" id="hfGenPause">
+        <option value="1">1 s</option>
+        <option value="2" selected>2 s</option>
+        <option value="3">3 s</option>
+        <option value="5">5 s</option>
+      </select>
+    </div>
+    <div class="settings-row settings-row--danger">
+      <label>Loop current strategy</label>
+      <label class="toggle"><input type="checkbox" id="hfLoopStrategy" /><span class="toggle-slider"></span></label>
+    </div>
+
+    <div class="settings-version">v1.5</div>
     <button class="settings-close" id="settingsClose">Done</button>
   </div>
 </div>
