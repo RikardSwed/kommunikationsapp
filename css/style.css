@@ -1,0 +1,333 @@
+/* style.css — All visual styling for Communication Trainer */
+
+* { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+
+html { height: 100%; overflow: hidden; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* ─── HOME SCREEN ─────────────────────────────────────────────────────────── */
+
+.home-screen {
+  width: 100%;
+  max-width: 420px;
+  height: 100%;
+  min-height: -webkit-fill-available;
+  background: #f0f2f5;
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  overflow-y: auto;
+}
+
+.home-header { padding: 56px 0 8px; text-align: center; }
+.home-title { font-size: 26px; font-weight: 800; color: #1c1c1e; letter-spacing: -0.3px; }
+.home-subtitle { font-size: 14px; color: #aaa; margin-top: 6px; }
+
+.home-section-label {
+  font-size: 12px;
+  font-weight: 700;
+  color: #999;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  margin: 32px 0 12px;
+}
+
+.collection-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  touch-action: manipulation;
+  -webkit-user-select: none;
+  user-select: none;
+}
+.collection-card:active { transform: scale(0.98); opacity: 0.9; }
+.collection-name { font-size: 17px; font-weight: 700; color: #1c1c1e; }
+.collection-meta { font-size: 13px; color: #aaa; margin-top: 3px; }
+.collection-arrow { font-size: 20px; color: #ccc; }
+
+/* ─── TRAINING SCREEN ─────────────────────────────────────────────────────── */
+
+.app {
+  width: 100%;
+  max-width: 420px;
+  height: 100%;
+  min-height: -webkit-fill-available;
+  background: #f0f2f5;
+  display: flex;
+  flex-direction: column;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px 12px;
+}
+
+.topbar-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: #555;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  touch-action: manipulation;
+}
+
+.counter { font-size: 15px; font-weight: 600; color: #444; letter-spacing: 0.5px; }
+.divider { height: 2px; background: #dde0e6; }
+
+.strategy-label {
+  text-align: center;
+  padding: 18px 20px 10px;
+  font-size: 22px;
+  font-weight: 700;
+  color: #2c2c2e;
+  cursor: pointer;
+  -webkit-user-select: none;
+  user-select: none;
+}
+.strategy-label:active { opacity: 0.6; }
+
+/* ─── CARD ────────────────────────────────────────────────────────────────── */
+
+.card-area {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px 20px;
+}
+
+.card {
+  width: 100%;
+  min-height: 340px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.10);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 32px;
+  cursor: pointer;
+  position: relative;
+  touch-action: none;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+}
+
+.card-inner {
+  width: 100%;
+  min-height: 260px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.4s ease;
+}
+.card-inner.flipped { transform: rotateY(180deg); }
+
+.card-face {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  padding: 8px;
+}
+.card-back { transform: rotateY(180deg); }
+
+.card-text {
+  font-size: 20px;
+  line-height: 1.55;
+  color: #1c1c1e;
+  text-align: center;
+  font-weight: 400;
+  pointer-events: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+.card-back .card-text { color: #3a3a3c; font-size: 18px; }
+
+/* ─── INFO OVERLAY ────────────────────────────────────────────────────────── */
+
+.card-info {
+  display: none;
+  position: absolute;
+  inset: 0;
+  background: #fff;
+  border-radius: 20px;
+  padding: 36px 28px 20px 28px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  z-index: 10;
+}
+.card-info.visible { display: block; }
+
+.card-info-close {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: none;
+  background: #f0f2f5;
+  color: #555;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  touch-action: manipulation;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.card-info-text {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #2c2c2e;
+  white-space: pre-wrap;
+}
+
+/* ─── HINT & BOTTOM NAV ───────────────────────────────────────────────────── */
+
+.hint {
+  text-align: center;
+  font-size: 12px;
+  color: #aaa;
+  padding: 0 20px 8px;
+  line-height: 1.8;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.bottombar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 32px 28px;
+}
+
+.nav-btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: none;
+  background: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  color: #555;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  touch-action: manipulation;
+}
+
+/* ─── SETTINGS ────────────────────────────────────────────────────────────── */
+
+.settings-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.35);
+  z-index: 100;
+  justify-content: center;
+  align-items: flex-end;
+}
+.settings-overlay.open { display: flex; }
+
+.settings-panel {
+  background: #fff;
+  width: 100%;
+  max-width: 420px;
+  border-radius: 20px 20px 0 0;
+  padding: 24px 24px 40px;
+}
+
+.settings-title { font-size: 17px; font-weight: 700; color: #1c1c1e; margin-bottom: 20px; }
+
+.settings-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+.settings-row:last-of-type { border-bottom: none; }
+.settings-row label { font-size: 15px; color: #333; }
+
+.settings-version { margin-top: 16px; font-size: 12px; color: #bbb; text-align: center; }
+
+.toggle { position: relative; width: 48px; height: 28px; }
+.toggle input { opacity: 0; width: 0; height: 0; }
+.toggle-slider {
+  position: absolute;
+  inset: 0;
+  background: #ccc;
+  border-radius: 28px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.toggle-slider::before {
+  content: '';
+  position: absolute;
+  width: 22px; height: 22px;
+  left: 3px; top: 3px;
+  background: #fff;
+  border-radius: 50%;
+  transition: transform 0.2s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+.toggle input:checked + .toggle-slider { background: #4f46e5; }
+.toggle input:checked + .toggle-slider::before { transform: translateX(20px); }
+
+.settings-close {
+  margin-top: 20px;
+  width: 100%;
+  padding: 14px;
+  background: #f0f2f5;
+  border: none;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #333;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+/* ─── SWIPE ANIMATIONS ────────────────────────────────────────────────────── */
+
+.card.swipe-left  { animation: swipeLeft  0.22s ease forwards; }
+.card.swipe-right { animation: swipeRight 0.22s ease forwards; }
+.card.swipe-up    { animation: swipeUp    0.20s ease forwards; }
+.card.swipe-down  { animation: swipeDown  0.20s ease forwards; }
+
+@keyframes swipeLeft  { to { transform: translateX(-60px) scale(0.95); opacity: 0; } }
+@keyframes swipeRight { to { transform: translateX(60px)  scale(0.95); opacity: 0; } }
+@keyframes swipeUp    { to { transform: translateY(-40px) scale(0.95); opacity: 0; } }
+@keyframes swipeDown  { to { transform: translateY(40px)  scale(0.95); opacity: 0; } }
