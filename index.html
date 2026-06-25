@@ -1,4 +1,4 @@
--<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -263,7 +263,7 @@
   </div>
 </div>
 
-<!-- SETTINGS PANEL -->
+<!-- SETTINGS PANEL (general) -->
 <div class="settings-overlay" id="settingsOverlay">
   <div class="settings-panel">
     <div class="settings-title">Settings</div>
@@ -279,9 +279,15 @@
       <label>Show hints</label>
       <label class="toggle"><input type="checkbox" id="showHints" checked /><span class="toggle-slider"></span></label>
     </div>
+    <div class="settings-version">v1.5</div>
+    <button class="settings-close" id="settingsClose">Done</button>
+  </div>
+</div>
 
-    <div class="settings-section-label">Handsfree</div>
-
+<!-- HANDSFREE SETTINGS PANEL -->
+<div class="settings-overlay" id="hfSettingsOverlay">
+  <div class="settings-panel">
+    <div class="settings-title">Handsfree Settings</div>
     <div class="settings-row">
       <label>Strategy explanation</label>
       <label class="toggle"><input type="checkbox" id="hfExplanation" checked /><span class="toggle-slider"></span></label>
@@ -342,9 +348,7 @@
       <label>Loop current strategy</label>
       <label class="toggle"><input type="checkbox" id="hfLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
-
-    <div class="settings-version">v1.5</div>
-    <button class="settings-close" id="settingsClose">Done</button>
+    <button class="settings-close" id="hfSettingsClose">Done</button>
   </div>
 </div>
 
