@@ -1,7 +1,7 @@
 // app.js — All application logic for Communication Trainer
 // Depends on: data.js and multiStepData.js (must be loaded first)
 
-const VERSION = 'v1.5.3';
+const VERSION = 'v1.6';
 
 // ─── SCREENS ─────────────────────────────────────────────────────────────────
 const homeScreen     = document.getElementById('homeScreen');
@@ -290,6 +290,28 @@ document.getElementById('memNextStratBtn').addEventListener('click', memNextStra
 document.getElementById('memPrevStratBtn').addEventListener('click', memPrevStrategy);
 document.getElementById('memSettingsBtn').addEventListener('click', () =>
   document.getElementById('settingsOverlay').classList.add('open'));
+
+// ── Memorize info overlay ─────────────────────────────────────────────────────
+let memInfoOpen = false;
+
+function memOpenInfo() {
+  if (memInfoOpen) { memCloseInfo(); return; }
+  memInfoOpen = true;
+  document.getElementById('memCardInfoText').textContent = memCurrentStrategy().description;
+  document.getElementById('memCardInfo').classList.add('visible');
+}
+
+function memCloseInfo() {
+  memInfoOpen = false;
+  document.getElementById('memCardInfo').classList.remove('visible');
+  document.getElementById('memCardInfo').scrollTop = 0;
+}
+
+document.getElementById('memStrategyName').addEventListener('click', memOpenInfo);
+document.getElementById('memCardInfoClose').addEventListener('click', e => { e.stopPropagation(); memCloseInfo(); });
+document.getElementById('memCardInfo').addEventListener('touchstart', e => e.stopPropagation(), { passive: true });
+document.getElementById('memCardInfo').addEventListener('touchmove',  e => e.stopPropagation(), { passive: true });
+document.getElementById('memCardInfo').addEventListener('touchend',   e => e.stopPropagation(), { passive: true });
 
 // ─── MULTIPLE STEPS — RENDER ─────────────────────────────────────────────────
 function msCurrentStrategy() { return msStrategies[msStratIdx]; }
@@ -888,3 +910,222 @@ function showHandsfree() {
 }
 
 addModeListener('modeHandsfree', showHandsfree);
+
+// ─── HANDSFREE MEMORIZE MODE ─────────────────────────────────────────────────
+
+function hfMemSettings() {
+  return {
+    explanation : document.getElementById('hfExplanation').checked,
+    cardAnswer  : document.getElementById('hfMemCardAnswer').checked,
+    maxCards    : document.getElementById('hfMemMaxCards').value,
+    thinkPause  : parseInt(document.getElementById('hfThinkPause').value),
+    genPause    : parseInt(document.getElementById('hfGenPause').value),
+    loopStrategy: document.getElementById('hfLoopStrategy').checked,
+    rate        : parseFloat(document.getElementById('hfRate').value),
+    voiceGender : document.getElementById('hfVoice').value,
+  };
+}
+
+let hfMemPlaying   = false;
+let hfMemAbort     = false;
+let hfMemTimeouts  = [];
+
+function hfMemDelay(ms) {
+  return new Promise(resolve => {
+    if (hfMemAbort) { resolve(); return; }
+    const id = setTimeout(() => resolve(), ms);
+    hfMemTimeouts.push(id);
+  });
+}
+
+function hfMemClearTimeouts() {
+  hfMemTimeouts.forEach(id => clearTimeout(id));
+  hfMemTimeouts = [];
+}
+
+function hfMemSpeak(text, cfg) {
+  return new Promise(resolve => {
+    if (hfMemAbort) { resolve(); return; }
+    const utt  = new SpeechSynthesisUtterance(text);
+    utt.lang   = 'en-US';
+    utt.rate   = cfg.rate;
+    const voice = hfPickVoice(cfg.voiceGender);
+    if (voice) utt.voice = voice;
+    utt.onend   = () => resolve();
+    utt.onerror = () => resolve();
+    speechSynthesis.speak(utt);
+  });
+}
+
+const hfMemCardInnerEl = document.getElementById('hfMemCardInner');
+const hfMemCardInfoEl  = document.getElementById('hfMemCardInfo');
+
+function hfMemShowCard(q, a, flipped) {
+  document.getElementById('hfMemStrategyName').textContent = memCurrentStrategy().name;
+  document.getElementById('hfMemQuestionText').textContent = q;
+  document.getElementById('hfMemAnswerText').textContent   = a;
+  document.getElementById('hfMemCounter').textContent      = `${memStratIdx + 1} / ${memStrategies.length}`;
+  hfMemCardInnerEl.style.transition = 'transform 0.4s ease';
+  hfMemCardInnerEl.classList.toggle('flipped', flipped);
+}
+
+function hfMemUpdateButtons() {
+  const playBtn = document.getElementById('hfMemPlayBtn');
+  const stopBtn = document.getElementById('hfMemStopBtn');
+  playBtn.textContent = hfMemPlaying ? '⏸' : '▶';
+  stopBtn.disabled    = !hfMemPlaying;
+  stopBtn.style.opacity = hfMemPlaying ? '1' : '0.35';
+}
+
+async function hfMemPlay() {
+  if (hfMemPlaying) { hfMemStop(); return; }
+
+  const unlock = new SpeechSynthesisUtterance(' ');
+  unlock.volume = 0;
+  speechSynthesis.speak(unlock);
+
+  hfMemPlaying = true;
+  hfMemAbort   = false;
+  hfMemUpdateButtons();
+
+  const cfg     = hfMemSettings();
+  const maxCards = cfg.maxCards === 'all' ? Infinity : parseInt(cfg.maxCards);
+  const startSi  = memStratIdx;
+
+  outer:
+  for (let si = startSi; si < memStrategies.length; si++) {
+    if (hfMemAbort) break;
+    memStratIdx = si;
+    memCardIdx  = 0;
+
+    const strat = memCurrentStrategy();
+
+    // Show strategy name
+    document.getElementById('hfMemStrategyName').textContent = strat.name;
+    document.getElementById('hfMemQuestionText').textContent = strat.name;
+    hfMemCardInnerEl.classList.remove('flipped');
+
+    await hfMemSpeak(strat.name, cfg);
+    await hfMemDelay(cfg.genPause * 1000);
+    if (hfMemAbort) break;
+
+    // Optional explanation
+    if (cfg.explanation && strat.description) {
+      hfMemCardInfoEl.querySelector('#hfMemCardInfoText').textContent = strat.description;
+      hfMemCardInfoEl.classList.add('visible');
+      await hfMemSpeak(strat.description, cfg);
+      hfMemCardInfoEl.classList.remove('visible');
+      hfMemCardInfoEl.scrollTop = 0;
+      await hfMemDelay(cfg.genPause * 1000);
+      if (hfMemAbort) break;
+    }
+
+    const limit = Math.min(strat.cards.length, maxCards);
+
+    for (let ci = 0; ci < limit; ci++) {
+      if (hfMemAbort) break outer;
+      memCardIdx = ci;
+      const card = memCurrentCard();
+
+      // Front — question
+      hfMemShowCard(card.q, card.a, false);
+      await hfMemSpeak(card.q, cfg);
+      await hfMemDelay(cfg.thinkPause * 1000);
+      if (hfMemAbort) break outer;
+
+      // Back — card answer
+      if (cfg.cardAnswer) {
+        hfMemShowCard(card.q, card.a, true);
+        await hfMemSpeak(card.a, cfg);
+        await hfMemDelay(cfg.genPause * 1000);
+        if (hfMemAbort) break outer;
+      }
+
+      if (cfg.loopStrategy && ci === limit - 1) ci = -1;
+    }
+
+    if (cfg.loopStrategy) si--;
+  }
+
+  hfMemPlaying = false;
+  hfMemAbort   = false;
+  speechSynthesis.cancel();
+  hfMemClearTimeouts();
+  hfMemUpdateButtons();
+}
+
+function hfMemStop() {
+  hfMemAbort   = true;
+  hfMemPlaying = false;
+  speechSynthesis.cancel();
+  hfMemClearTimeouts();
+  hfMemUpdateButtons();
+}
+
+// ── Buttons ───────────────────────────────────────────────────────────────────
+document.getElementById('hfMemPlayBtn').addEventListener('click', hfMemPlay);
+document.getElementById('hfMemStopBtn').addEventListener('click', hfMemStop);
+document.getElementById('hfMemPlayBtn').addEventListener('touchend', e => { e.stopPropagation(); e.preventDefault(); hfMemPlay(); }, { passive: false });
+document.getElementById('hfMemStopBtn').addEventListener('touchend', e => { e.stopPropagation(); e.preventDefault(); hfMemStop(); }, { passive: false });
+
+document.getElementById('hfMemCloseBtn').addEventListener('click', () => {
+  hfMemStop();
+  showModeScreen(activeCollectionKey, activeCollectionLabel);
+});
+document.getElementById('hfMemSettingsBtn').addEventListener('click', () =>
+  document.getElementById('hfSettingsOverlay').classList.add('open'));
+
+// Allow scrolling in hfMemCardInfo overlay
+const hfMemCardInfoScrollEl = document.getElementById('hfMemCardInfo');
+hfMemCardInfoScrollEl.addEventListener('touchstart', e => e.stopPropagation(), { passive: true });
+hfMemCardInfoScrollEl.addEventListener('touchmove',  e => e.stopPropagation(), { passive: true });
+hfMemCardInfoScrollEl.addEventListener('touchend',   e => e.stopPropagation(), { passive: true });
+
+// ── Manual nav ────────────────────────────────────────────────────────────────
+const hfMemCard      = document.getElementById('hfMemCard');
+const hfMemCardInner = document.getElementById('hfMemCardInner');
+
+function hfMemRender() {
+  if (!memStrategies.length) return;
+  document.getElementById('hfMemStrategyName').textContent = memCurrentStrategy().name;
+  document.getElementById('hfMemQuestionText').textContent = memCurrentCard().q;
+  document.getElementById('hfMemAnswerText').textContent   = memCurrentCard().a;
+  document.getElementById('hfMemCounter').textContent      = `${memStratIdx + 1} / ${memStrategies.length}`;
+  hfMemCardInner.style.transition = 'none';
+  hfMemCardInner.classList.remove('flipped');
+}
+
+let hfMTx=0,hfMTy=0,hfMTt=0,hfMMov=false;
+hfMemCard.addEventListener('touchstart',e=>{hfMTx=e.touches[0].clientX;hfMTy=e.touches[0].clientY;hfMTt=Date.now();hfMMov=false;e.preventDefault();},{passive:false});
+hfMemCard.addEventListener('touchmove', e=>{if(Math.abs(e.touches[0].clientX-hfMTx)>10||Math.abs(e.touches[0].clientY-hfMTy)>10)hfMMov=true;e.preventDefault();},{passive:false});
+hfMemCard.addEventListener('touchend',  e=>{
+  e.preventDefault();
+  const dx=e.changedTouches[0].clientX-hfMTx,dy=e.changedTouches[0].clientY-hfMTy,adx=Math.abs(dx),ady=Math.abs(dy);
+  if(!hfMMov&&Date.now()-hfMTt<500){hfMemCardInner.classList.toggle('flipped');return;}
+  if(hfMMov&&adx>40&&adx>ady){memStratIdx=dx>0?(memStratIdx-1+memStrategies.length)%memStrategies.length:(memStratIdx+1)%memStrategies.length;memCardIdx=0;hfMemRender();return;}
+  if(hfMMov&&ady>40&&ady>adx){memCardIdx=dy>0?(memCardIdx-1+memCurrentStrategy().cards.length)%memCurrentStrategy().cards.length:(memCardIdx+1)%memCurrentStrategy().cards.length;hfMemRender();return;}
+},{passive:false});
+
+document.getElementById('hfMemPrevStratBtn').addEventListener('click',()=>{memStratIdx=(memStratIdx-1+memStrategies.length)%memStrategies.length;memCardIdx=0;hfMemRender();});
+document.getElementById('hfMemNextStratBtn').addEventListener('click',()=>{memStratIdx=(memStratIdx+1)%memStrategies.length;memCardIdx=0;hfMemRender();});
+document.getElementById('hfMemPrevCardBtn').addEventListener('click', ()=>{memCardIdx=(memCardIdx-1+memCurrentStrategy().cards.length)%memCurrentStrategy().cards.length;hfMemRender();});
+document.getElementById('hfMemNextCardBtn').addEventListener('click', ()=>{memCardIdx=(memCardIdx+1)%memCurrentStrategy().cards.length;hfMemRender();});
+
+function showHandsfreeMemorize() {
+  memStrategies = memorizeCollections[activeCollectionKey] || [];
+  if (!memStrategies.length) return;
+  modeScreen.style.display = 'none';
+  document.getElementById('hfMemScreen').style.display = 'flex';
+  memStratIdx = 0; memCardIdx = 0;
+  hfMemRender();
+  hfMemUpdateButtons();
+}
+
+addModeListener('modeHandsfreeMemorize', showHandsfreeMemorize);
+
+// ── Voice debug helper ────────────────────────────────────────────────────────
+document.getElementById('hfVoiceDebugBtn').addEventListener('click', () => {
+  const voices = speechSynthesis.getVoices();
+  const en = voices.filter(v => v.lang.startsWith('en')).map(v => v.name).join('\n');
+  alert('Available English voices:\n\n' + (en || 'None loaded yet — try again in a moment'));
+});
