@@ -70,7 +70,12 @@
     </div>
     <div class="mode-card" id="modeHandsfree">
       <div class="mode-icon">🎧</div>
-      <div class="mode-info"><div class="mode-name">Handsfree</div><div class="mode-desc">Listen and practise with your phone in your pocket</div></div>
+      <div class="mode-info"><div class="mode-name">Handsfree: Single Strategy</div><div class="mode-desc">Listen and practise with your phone in your pocket</div></div>
+      <div class="mode-arrow">›</div>
+    </div>
+    <div class="mode-card" id="modeHandsfreeMemorize">
+      <div class="mode-icon">🎧</div>
+      <div class="mode-info"><div class="mode-name">Handsfree: Memorize</div><div class="mode-desc">Listen to theory cards with automatic playback</div></div>
       <div class="mode-arrow">›</div>
     </div>
   </div>
@@ -120,6 +125,10 @@
       <div class="card-inner" id="memCardInner">
         <div class="card-face card-front"><p class="card-text" id="memQuestionText"></p></div>
         <div class="card-face card-back"><p class="card-text mem-back-text" id="memAnswerText"></p></div>
+      </div>
+      <div class="card-info" id="memCardInfo">
+        <button class="card-info-close" id="memCardInfoClose">✕</button>
+        <p class="card-info-text" id="memCardInfoText"></p>
       </div>
     </div>
   </div>
@@ -233,7 +242,7 @@
   </div>
 </div>
 
-<!-- HANDSFREE TRAINING SCREEN -->
+<!-- HANDSFREE: SINGLE STRATEGY SCREEN -->
 <div class="app" id="hfScreen" style="display:none;">
   <div class="topbar">
     <button class="topbar-btn" id="hfCloseBtn">✕</button>
@@ -243,12 +252,12 @@
   <div class="divider"></div>
   <div class="strategy-label" id="hfStrategyName"></div>
   <div class="card-area">
-  <div class="card" id="hfCard">
-  <div class="card-inner" id="hfCardInner">
-  <div class="card-face card-front"><p class="card-text" id="hfInputText"></p></div>
-  <div class="card-face card-back"><p class="card-text" id="hfAnswerText"></p></div>
-  </div>
-    <div class="card-info" id="hfCardInfo">
+    <div class="card" id="hfCard">
+      <div class="card-inner" id="hfCardInner">
+        <div class="card-face card-front"><p class="card-text" id="hfInputText"></p></div>
+        <div class="card-face card-back"><p class="card-text" id="hfAnswerText"></p></div>
+      </div>
+      <div class="card-info" id="hfCardInfo">
         <p class="card-info-text" id="hfCardInfoText"></p>
       </div>
     </div>
@@ -263,6 +272,39 @@
     <button class="nav-btn" id="hfPrevInputBtn">&#8593;</button>
     <button class="nav-btn" id="hfNextInputBtn">&#8595;</button>
     <button class="nav-btn" id="hfNextStratBtn">&#8594;</button>
+  </div>
+</div>
+
+<!-- HANDSFREE: MEMORIZE SCREEN -->
+<div class="app" id="hfMemScreen" style="display:none;">
+  <div class="topbar">
+    <button class="topbar-btn" id="hfMemCloseBtn">✕</button>
+    <span class="counter" id="hfMemCounter">1 / 4</span>
+    <button class="topbar-btn" id="hfMemSettingsBtn">⚙</button>
+  </div>
+  <div class="divider"></div>
+  <div class="strategy-label" id="hfMemStrategyName"></div>
+  <div class="card-area">
+    <div class="card" id="hfMemCard">
+      <div class="card-inner" id="hfMemCardInner">
+        <div class="card-face card-front"><p class="card-text" id="hfMemQuestionText"></p></div>
+        <div class="card-face card-back"><p class="card-text mem-back-text" id="hfMemAnswerText"></p></div>
+      </div>
+      <div class="card-info" id="hfMemCardInfo">
+        <p class="card-info-text" id="hfMemCardInfoText"></p>
+      </div>
+    </div>
+  </div>
+  <div class="hf-hint-row">
+    <button class="hf-transport-btn" id="hfMemStopBtn" disabled>■</button>
+    <span class="hint" id="hfMemHint" style="flex:1; margin:0;">Tap card to reveal<br>↑ ↓ next card &nbsp;·&nbsp; ← → new strategy</span>
+    <button class="hf-transport-btn" id="hfMemPlayBtn">▶</button>
+  </div>
+  <div class="bottombar">
+    <button class="nav-btn" id="hfMemPrevStratBtn">&#8592;</button>
+    <button class="nav-btn" id="hfMemPrevCardBtn">&#8593;</button>
+    <button class="nav-btn" id="hfMemNextCardBtn">&#8595;</button>
+    <button class="nav-btn" id="hfMemNextStratBtn">&#8594;</button>
   </div>
 </div>
 
@@ -282,12 +324,12 @@
       <label>Show hints</label>
       <label class="toggle"><input type="checkbox" id="showHints" checked /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.5.3</div>
+    <div class="settings-version">v1.6</div>
     <button class="settings-close" id="settingsClose">Done</button>
   </div>
 </div>
 
-<!-- HANDSFREE SETTINGS PANEL -->
+<!-- HANDSFREE SETTINGS PANEL (shared by both HF modes) -->
 <div class="settings-overlay" id="hfSettingsOverlay">
   <div class="settings-panel">
     <div class="settings-title">Handsfree Settings</div>
@@ -300,8 +342,23 @@
       <label class="toggle"><input type="checkbox" id="hfModelAnswer" checked /><span class="toggle-slider"></span></label>
     </div>
     <div class="settings-row">
-      <label>Max inputs per strategy</label>
+      <label>Card answer (Memorize)</label>
+      <label class="toggle"><input type="checkbox" id="hfMemCardAnswer" checked /><span class="toggle-slider"></span></label>
+    </div>
+    <div class="settings-row">
+      <label>Max inputs / cards</label>
       <select class="settings-select" id="hfMaxInputs">
+        <option value="all">All</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+    </div>
+    <div class="settings-row">
+      <label>Max cards (Memorize)</label>
+      <select class="settings-select" id="hfMemMaxCards">
         <option value="all">All</option>
         <option value="1">1</option>
         <option value="2">2</option>
@@ -332,12 +389,12 @@
     <div class="settings-row">
       <label>Speech rate</label>
       <select class="settings-select" id="hfRate">
-        <option value="0.8">0.8 &mdash; slow</option>
+        <option value="0.8">0.8 — slow</option>
         <option value="0.9">0.9</option>
-        <option value="1.0" selected>1.0 &mdash; normal</option>
+        <option value="1.0" selected>1.0 — normal</option>
         <option value="1.1">1.1</option>
         <option value="1.2">1.2</option>
-        <option value="1.3">1.3 &mdash; fast</option>
+        <option value="1.3">1.3 — fast</option>
       </select>
     </div>
     <div class="settings-row">
@@ -347,6 +404,10 @@
         <option value="male">Male</option>
       </select>
     </div>
+    <div class="settings-row">
+      <label style="font-size:12px; color:#aaa;">List available voices</label>
+      <button id="hfVoiceDebugBtn" style="font-size:12px; color:#aaa; background:none; border:1px solid #ddd; border-radius:8px; padding:4px 10px; cursor:pointer;">Show</button>
+    </div>
     <div class="settings-row settings-row--danger">
       <label>Loop current strategy</label>
       <label class="toggle"><input type="checkbox" id="hfLoopStrategy" /><span class="toggle-slider"></span></label>
@@ -355,10 +416,10 @@
   </div>
 </div>
 
-<script src="js/data.js?v=153"></script>
-<script src="js/multiStepData.js?v=153"></script>
-<script src="js/memorizeData.js?v=153"></script>
-<script src="js/app.js?v=153"></script>
+<script src="js/data.js?v=160"></script>
+<script src="js/multiStepData.js?v=160"></script>
+<script src="js/memorizeData.js?v=160"></script>
+<script src="js/app.js?v=160"></script>
 
 </body>
 </html>
