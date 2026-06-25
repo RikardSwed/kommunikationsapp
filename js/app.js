@@ -1,7 +1,7 @@
 // app.js — All application logic for Communication Trainer
 // Depends on: data.js and multiStepData.js (must be loaded first)
 
-const VERSION = 'v1.4';
+const VERSION = 'v1.5';
 
 // ─── SCREENS ─────────────────────────────────────────────────────────────────
 const homeScreen     = document.getElementById('homeScreen');
@@ -75,6 +75,7 @@ function showHome() {
   memScreen.style.display      = 'none';
   document.getElementById('flowScreen').style.display   = 'none';
   document.getElementById('guidedScreen').style.display = 'none';
+  document.getElementById('hfScreen').style.display = 'none';
   closeInfo();
 }
 
@@ -89,6 +90,7 @@ function showModeScreen(key, label) {
   memScreen.style.display      = 'none';
   document.getElementById('flowScreen').style.display   = 'none';
   document.getElementById('guidedScreen').style.display = 'none';
+  document.getElementById('hfScreen').style.display = 'none';
 }
 
 function showTraining() {
@@ -609,3 +611,230 @@ document.getElementById('guidedCloseBtn').addEventListener('click', ()=>showMode
 document.getElementById('guidedSettingsBtn').addEventListener('click', ()=>document.getElementById('settingsOverlay').classList.add('open'));
 document.getElementById('modeGuided').addEventListener('click', showGuided);
 document.getElementById('modeGuided').addEventListener('touchend', e=>{e.preventDefault();showGuided();},{passive:false});
+
+
+// ─── HANDSFREE MODE ──────────────────────────────────────────────────────────
+// Plays through a collection automatically using Web Speech API.
+// Visual state mirrors Single Strategy screen.
+// Play/Stop buttons flank the hint text.
+
+// ── Settings (read from DOM at play-time) ────────────────────────────────────
+function hfSettings() {
+  return {
+    explanation : document.getElementById('hfExplanation').checked,
+    modelAnswer : document.getElementById('hfModelAnswer').checked,
+    maxInputs   : document.getElementById('hfMaxInputs').value,   // "all" or "1"–"5"
+    thinkPause  : parseInt(document.getElementById('hfThinkPause').value),
+    genPause    : parseInt(document.getElementById('hfGenPause').value),
+    loopStrategy: document.getElementById('hfLoopStrategy').checked,
+  };
+}
+
+// ── State ────────────────────────────────────────────────────────────────────
+let hfPlaying    = false;
+let hfAbort      = false;
+let hfSpeaking   = false;
+
+// ── Helpers ──────────────────────────────────────────────────────────────────
+function hfSpeak(text) {
+  return new Promise(resolve => {
+    if (hfAbort) { resolve(); return; }
+    const utt = new SpeechSynthesisUtterance(text);
+    utt.lang  = 'en-US';
+    utt.rate  = 0.92;
+    utt.onend = () => resolve();
+    utt.onerror = () => resolve();
+    hfSpeaking = true;
+    speechSynthesis.speak(utt);
+  });
+}
+
+function hfPause(ms) {
+  return new Promise(resolve => {
+    if (hfAbort) { resolve(); return; }
+    setTimeout(resolve, ms);
+  });
+}
+
+function hfUpdateButtons() {
+  const playBtn = document.getElementById('hfPlayBtn');
+  const stopBtn = document.getElementById('hfStopBtn');
+  if (hfPlaying) {
+    playBtn.textContent = '⏸';
+    playBtn.title = 'Pause';
+  } else {
+    playBtn.textContent = '▶';
+    playBtn.title = 'Play';
+  }
+  stopBtn.disabled = !hfPlaying;
+  stopBtn.style.opacity = hfPlaying ? '1' : '0.35';
+}
+
+// ── Main playback loop ────────────────────────────────────────────────────────
+async function hfPlay() {
+  if (hfPlaying) { hfStop(); return; }
+  hfPlaying = true;
+  hfAbort   = false;
+  hfUpdateButtons();
+
+  const cfg = hfSettings();
+  const maxInp = cfg.maxInputs === 'all' ? Infinity : parseInt(cfg.maxInputs);
+
+  // Start from current stratIdx/inputIdx so resume works
+  const startStrat = stratIdx;
+
+  for (let si = startStrat; si < strategies.length; si++) {
+    if (hfAbort) break;
+
+    // Navigate to this strategy
+    stratIdx  = si;
+    inputIdx  = 0;
+    flip(false, false);
+    render();
+
+    // 1. Say strategy name
+    await hfSpeak(currentStrategy().name);
+    await hfPause(cfg.genPause * 1000);
+    if (hfAbort) break;
+
+    // 2. Optional explanation
+    if (cfg.explanation && currentStrategy().description) {
+      await hfSpeak(currentStrategy().description);
+      await hfPause(cfg.genPause * 1000);
+      if (hfAbort) break;
+    }
+
+    // 3. Inputs
+    const inputs  = inputOrders[stratOrder[si]];
+    const limit   = Math.min(inputs.length, maxInp);
+
+    for (let ii = 0; ii < limit; ii++) {
+      if (hfAbort) break;
+      inputIdx = ii;
+      flip(false, false);
+      render();
+
+      // Front — input
+      await hfSpeak(currentInput().q);
+      await hfPause(cfg.thinkPause * 1000);
+      if (hfAbort) break;
+
+      // Back — model answer
+      if (cfg.modelAnswer) {
+        flip(true);
+        await hfSpeak(currentInput().a);
+        await hfPause(cfg.genPause * 1000);
+        if (hfAbort) break;
+      }
+
+      // Loop current strategy
+      if (cfg.loopStrategy && ii === limit - 1) {
+        ii = -1; // reset, loop will increment to 0
+      }
+    }
+
+    if (hfAbort) break;
+
+    // If looping a strategy, never advance
+    if (cfg.loopStrategy) { si--; }
+  }
+
+  hfPlaying = false;
+  hfAbort   = false;
+  speechSynthesis.cancel();
+  hfUpdateButtons();
+}
+
+function hfStop() {
+  hfAbort   = true;
+  hfPlaying = false;
+  speechSynthesis.cancel();
+  hfUpdateButtons();
+}
+
+// ── Wire up buttons ───────────────────────────────────────────────────────────
+document.getElementById('hfPlayBtn').addEventListener('click', hfPlay);
+document.getElementById('hfStopBtn').addEventListener('click', hfStop);
+document.getElementById('hfPlayBtn').addEventListener('touchend', e => { e.preventDefault(); hfPlay(); }, { passive: false });
+document.getElementById('hfStopBtn').addEventListener('touchend', e => { e.preventDefault(); hfStop(); }, { passive: false });
+
+// Stop playback when leaving the screen
+document.getElementById('hfCloseBtn').addEventListener('click', () => {
+  hfStop();
+  showModeScreen(activeCollectionKey, activeCollectionLabel);
+});
+document.getElementById('hfSettingsBtn').addEventListener('click', () =>
+  document.getElementById('settingsOverlay').classList.add('open'));
+
+document.getElementById('modeHandsfree').addEventListener('click', showHandsfree);
+document.getElementById('modeHandsfree').addEventListener('touchend', e => { e.preventDefault(); showHandsfree(); }, { passive: false });
+
+function showHandsfree() {
+  strategies = collections[activeCollectionKey];
+  modeScreen.style.display     = 'none';
+  document.getElementById('hfScreen').style.display = 'flex';
+  stratIdx = 0; inputIdx = 0;
+  applySettings();
+  hfUpdateButtons();
+}
+
+// ─── HANDSFREE — MANUAL NAVIGATION (mirrors Single Strategy) ─────────────────
+// The hf screen uses the same strategies/stratIdx/inputIdx state as
+// Single Strategy, so render() already updates it. We just need nav buttons
+// and touch on the hf card.
+
+const hfCard      = document.getElementById('hfCard');
+const hfCardInner = document.getElementById('hfCardInner');
+
+function hfRender() {
+  if (!strategies.length) return;
+  document.getElementById('hfStrategyName').textContent = currentStrategy().name;
+  document.getElementById('hfInputText').textContent    = currentInput().q;
+  document.getElementById('hfAnswerText').textContent   = currentInput().a;
+  document.getElementById('hfCounter').textContent      = `${stratIdx + 1} / ${strategies.length}`;
+  hfFlipFn(false, false);
+}
+
+function hfFlipFn(val, animate = true) {
+  hfCardInner.style.transition = animate ? 'transform 0.4s ease' : 'none';
+  hfCardInner.classList.toggle('flipped', val);
+}
+
+let hfTx=0,hfTy=0,hfTt=0,hfMov=false;
+hfCard.addEventListener('touchstart',e=>{hfTx=e.touches[0].clientX;hfTy=e.touches[0].clientY;hfTt=Date.now();hfMov=false;e.preventDefault();},{passive:false});
+hfCard.addEventListener('touchmove', e=>{if(Math.abs(e.touches[0].clientX-hfTx)>10||Math.abs(e.touches[0].clientY-hfTy)>10)hfMov=true;e.preventDefault();},{passive:false});
+hfCard.addEventListener('touchend',  e=>{
+  e.preventDefault();
+  const dx=e.changedTouches[0].clientX-hfTx,dy=e.changedTouches[0].clientY-hfTy,adx=Math.abs(dx),ady=Math.abs(dy);
+  if(!hfMov&&Date.now()-hfTt<500){hfFlipFn(!hfCardInner.classList.contains('flipped'));return;}
+  if(hfMov&&adx>40&&adx>ady){
+    if(dx>0){stratIdx=(stratIdx-1+strategies.length)%strategies.length;}
+    else    {stratIdx=(stratIdx+1)%strategies.length;}
+    inputIdx=0; hfRender(); return;
+  }
+  if(hfMov&&ady>40&&ady>adx){
+    const ord=inputOrders[stratOrder[stratIdx]];
+    if(dy>0){inputIdx=(inputIdx-1+ord.length)%ord.length;}
+    else    {inputIdx=(inputIdx+1)%ord.length;}
+    hfRender(); return;
+  }
+},{passive:false});
+
+document.getElementById('hfPrevStratBtn').addEventListener('click',  ()=>{ stratIdx=(stratIdx-1+strategies.length)%strategies.length; inputIdx=0; hfRender(); });
+document.getElementById('hfNextStratBtn').addEventListener('click',  ()=>{ stratIdx=(stratIdx+1)%strategies.length; inputIdx=0; hfRender(); });
+document.getElementById('hfPrevInputBtn').addEventListener('click',  ()=>{ const o=inputOrders[stratOrder[stratIdx]]; inputIdx=(inputIdx-1+o.length)%o.length; hfRender(); });
+document.getElementById('hfNextInputBtn').addEventListener('click',  ()=>{ const o=inputOrders[stratOrder[stratIdx]]; inputIdx=(inputIdx+1)%o.length; hfRender(); });
+
+// Override showHandsfree to use hfRender
+function showHandsfree() {
+  strategies = collections[activeCollectionKey];
+  modeScreen.style.display = 'none';
+  document.getElementById('hfScreen').style.display = 'flex';
+  stratIdx = 0; inputIdx = 0;
+  stratOrder  = strategies.map((_,i)=>i);
+  inputOrders = strategies.map(s=>s.inputs.map((_,i)=>i));
+  hfRender();
+  hfUpdateButtons();
+}
+// Re-wire mode card now that showHandsfree is redefined
+document.getElementById('modeHandsfree').onclick = showHandsfree;
