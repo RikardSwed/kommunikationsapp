@@ -1,7 +1,7 @@
 // app.js — All application logic for Communication Trainer
 // Depends on: data.js and multiStepData.js (must be loaded first)
 
-const VERSION = 'v1.5';
+const VERSION = 'v1.5.1';
 
 // ─── SCREENS ─────────────────────────────────────────────────────────────────
 const homeScreen     = document.getElementById('homeScreen');
@@ -94,11 +94,20 @@ function showModeScreen(key, label) {
 }
 
 function showTraining() {
-  strategies = collections[activeCollectionKey];
-  modeScreen.style.display     = 'none';
-  trainingScreen.style.display = 'flex';
-  stratIdx = 0; inputIdx = 0;
-  applySettings();
+  console.log('showTraining called, key:', activeCollectionKey);
+  try {
+    strategies = collections[activeCollectionKey];
+    console.log('strategies loaded:', strategies.length);
+    modeScreen.style.display     = 'none';
+    trainingScreen.style.display = 'flex';
+    stratIdx = 0; inputIdx = 0;
+    stratOrder  = strategies.map((_, i) => i);
+    inputOrders = strategies.map(s => s.inputs.map((_, i) => i));
+    render();
+    console.log('render done');
+  } catch(e) {
+    console.error('showTraining error:', e);
+  }
 }
 
 function showMultiStep() {
@@ -853,14 +862,20 @@ document.getElementById('hfNextInputBtn').addEventListener('click',()=>{const o=
 
 // ── showHandsfree ─────────────────────────────────────────────────────────────
 function showHandsfree() {
-  strategies  = collections[activeCollectionKey];
-  stratOrder  = strategies.map((_,i)=>i);
-  inputOrders = strategies.map(s=>s.inputs.map((_,i)=>i));
-  modeScreen.style.display = 'none';
-  document.getElementById('hfScreen').style.display = 'flex';
-  stratIdx = 0; inputIdx = 0;
-  hfRender();
-  hfUpdateButtons();
+  console.log('showHandsfree called, key:', activeCollectionKey);
+  try {
+    strategies  = collections[activeCollectionKey];
+    stratOrder  = strategies.map((_,i)=>i);
+    inputOrders = strategies.map(s=>s.inputs.map((_,i)=>i));
+    modeScreen.style.display = 'none';
+    document.getElementById('hfScreen').style.display = 'flex';
+    stratIdx = 0; inputIdx = 0;
+    hfRender();
+    hfUpdateButtons();
+    console.log('showHandsfree done');
+  } catch(e) {
+    console.error('showHandsfree error:', e);
+  }
 }
 
 addModeListener('modeHandsfree', showHandsfree);
