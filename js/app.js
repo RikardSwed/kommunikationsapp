@@ -1,7 +1,7 @@
 // app.js — All application logic for Communication Trainer
 // Depends on: data.js and multiStepData.js (must be loaded first)
 
-const VERSION = 'v1.6.2';
+const VERSION = 'v1.6.3';
 
 // ─── SCREENS ─────────────────────────────────────────────────────────────────
 const homeScreen     = document.getElementById('homeScreen');
@@ -299,7 +299,9 @@ let memInfoOpen = false;
 function memOpenInfo() {
   if (memInfoOpen) { memCloseInfo(); return; }
   memInfoOpen = true;
-  document.getElementById('memCardInfoText').textContent = memCurrentStrategy().description;
+  const name = memCurrentStrategy().name;
+  const src  = (collections[activeCollectionKey] || []).find(s => s.name === name);
+  document.getElementById('memCardInfoText').textContent = src ? src.description : 'No description available.';
   document.getElementById('memCardInfo').classList.add('visible');
 }
 
@@ -657,7 +659,7 @@ addModeListener('modeGuided', showGuided);
 function hfSettings() {
   return {
     explanation : document.getElementById('hfExplanation').checked,
-    modelAnswer : document.getElementById('hfModelAnswer').checked,
+    cardBack    : document.getElementById('hfCardBack').checked,
     maxInputs   : document.getElementById('hfMaxInputs').value,
     thinkPause  : parseInt(document.getElementById('hfThinkPause').value),
     genPause    : parseInt(document.getElementById('hfGenPause').value),
@@ -816,7 +818,7 @@ async function hfPlay() {
       await hfDelay(cfg.thinkPause * 1000);
       if (hfAbort) break outer;
 
-      if (cfg.modelAnswer) {
+      if (cfg.cardBack) {
         // Flip to back
         hfShowCard(inp.q, inp.a, true);
         await hfSpeak(inp.a, cfg);
@@ -917,14 +919,14 @@ addModeListener('modeHandsfree', showHandsfree);
 
 function hfMemSettings() {
   return {
-    explanation : document.getElementById('hfExplanation').checked,
-    cardAnswer  : document.getElementById('hfMemCardAnswer').checked,
+    explanation : document.getElementById('hfMemExplanation').checked,
+    cardBack    : document.getElementById('hfMemCardBack').checked,
     maxCards    : document.getElementById('hfMemMaxCards').value,
-    thinkPause  : parseInt(document.getElementById('hfThinkPause').value),
-    genPause    : parseInt(document.getElementById('hfGenPause').value),
-    loopStrategy: document.getElementById('hfLoopStrategy').checked,
-    rate        : parseFloat(document.getElementById('hfRate').value),
-    voiceGender : document.getElementById('hfVoice').value,
+    thinkPause  : parseInt(document.getElementById('hfMemThinkPause').value),
+    genPause    : parseInt(document.getElementById('hfMemGenPause').value),
+    loopStrategy: document.getElementById('hfMemLoopStrategy').checked,
+    rate        : parseFloat(document.getElementById('hfMemRate').value),
+    voiceGender : document.getElementById('hfMemVoice').value,
   };
 }
 
@@ -1038,7 +1040,7 @@ async function hfMemPlay() {
       if (hfMemAbort) break outer;
 
       // Back — card answer
-      if (cfg.cardAnswer) {
+      if (cfg.cardBack) {
         hfMemShowCard(card.q, card.a, true);
         await hfMemSpeak(card.a, cfg);
         await hfMemDelay(cfg.genPause * 1000);
@@ -1077,7 +1079,10 @@ document.getElementById('hfMemCloseBtn').addEventListener('click', () => {
   showModeScreen(activeCollectionKey, activeCollectionLabel);
 });
 document.getElementById('hfMemSettingsBtn').addEventListener('click', () =>
-  document.getElementById('hfSettingsOverlay').classList.add('open'));
+  document.getElementById('hfMemSettingsOverlay').classList.add('open'));
+
+document.getElementById('hfMemSettingsClose').addEventListener('click', () =>
+  document.getElementById('hfMemSettingsOverlay').classList.remove('open'));
 
 // Allow scrolling in hfMemCardInfo overlay
 const hfMemCardInfoScrollEl = document.getElementById('hfMemCardInfo');
