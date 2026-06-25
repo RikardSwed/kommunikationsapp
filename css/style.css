@@ -413,3 +413,70 @@ body {
 @keyframes swipeRight { to { transform: translateX(60px)  scale(0.95); opacity: 0; } }
 @keyframes swipeUp    { to { transform: translateY(-40px) scale(0.95); opacity: 0; } }
 @keyframes swipeDown  { to { transform: translateY(40px)  scale(0.95); opacity: 0; } }
+
+/* ─── MULTIPLE STEPS SCREEN ──────────────────────────────────────────────────── */
+
+.ms-strategy-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 12px 6px;
+  gap: 8px;
+}
+
+.ms-nav-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  background: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: #555;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  touch-action: manipulation;
+  flex-shrink: 0;
+}
+
+.ms-strategy-info {
+  flex: 1;
+  text-align: center;
+  overflow: hidden;
+}
+
+.ms-strategy-name {
+  font-size: 15px;
+  font-weight: 700;
+  color: #2c2c2e;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.ms-situation {
+  font-size: 13px;
+  color: #666;
+  margin-top: 3px;
+  line-height: 1.35;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.ms-back-text {
+  font-size: 17px !important;
+}
+
+#msInputCounter {
+  font-size: 13px;
+  font-weight: 600;
+  color: #888;
+  background: #fff;
+  border: none;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  border-radius: 20px;
+  padding: 6px 12px;
+  cursor: default;
+  touch-action: none;
+}
