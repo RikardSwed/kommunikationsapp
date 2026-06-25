@@ -16,7 +16,7 @@
   </div>
   <div class="home-section-label">Collections</div>
 
-  <div class="collection-card" id="collectionAssertive">
+  <div class="collection-card" id="collectionAssertive" data-key="assertive" data-label="Assertive Communication">
     <div>
       <div class="collection-name">Assertive Communication</div>
       <div class="collection-meta">4 strategies &nbsp;·&nbsp; Flashcard mode</div>
@@ -24,7 +24,7 @@
     <div class="collection-arrow">›</div>
   </div>
 
-  <div class="collection-card" id="collectionHumour">
+  <div class="collection-card" id="collectionHumour" data-key="humour" data-label="Humour Practise">
     <div>
       <div class="collection-name">Humour Practise</div>
       <div class="collection-meta">4 strategies &nbsp;·&nbsp; Flashcard mode</div>
@@ -32,7 +32,7 @@
     <div class="collection-arrow">›</div>
   </div>
 
-  <div class="collection-card" id="collectionTeasing">
+  <div class="collection-card" id="collectionTeasing" data-key="teasing" data-label="Teasing &amp; Playfulness">
     <div>
       <div class="collection-name">Teasing &amp; Playfulness</div>
       <div class="collection-meta">7 strategies &nbsp;·&nbsp; Flashcard mode</div>
@@ -40,12 +40,49 @@
     <div class="collection-arrow">›</div>
   </div>
 
-  <div class="collection-card" id="collectionCriticism">
+  <div class="collection-card" id="collectionCriticism" data-key="criticism" data-label="Criticism &amp; Correction">
     <div>
       <div class="collection-name">Criticism &amp; Correction</div>
       <div class="collection-meta">4 strategies &nbsp;·&nbsp; Flashcard mode</div>
     </div>
     <div class="collection-arrow">›</div>
+  </div>
+</div>
+
+<!-- MODE SELECTION SCREEN -->
+<div class="mode-screen" id="modeScreen" style="display:none;">
+  <div class="mode-topbar">
+    <button class="topbar-btn" id="modeBackBtn">←</button>
+  </div>
+  <div class="mode-header">
+    <div class="mode-collection-name" id="modeCollectionName"></div>
+    <div class="mode-subtitle">Choose a study mode</div>
+  </div>
+  <div class="mode-list">
+    <div class="mode-card" id="modeFlashcard">
+      <div class="mode-icon">▣</div>
+      <div class="mode-info">
+        <div class="mode-name">Single Strategy</div>
+        <div class="mode-desc">Study one strategy at a time with example inputs</div>
+      </div>
+      <div class="mode-arrow">›</div>
+    </div>
+    <div class="mode-card mode-card--soon" id="modeMemorize">
+      <div class="mode-icon">◎</div>
+      <div class="mode-info">
+        <div class="mode-name">Memorize</div>
+        <div class="mode-desc">Coming soon</div>
+      </div>
+      <div class="mode-arrow">›</div>
+    </div>
+    <div class="mode-card mode-card--soon" id="modeMultiStep">
+      <div class="mode-icon">◈</div>
+      <div class="mode-info">
+        <div class="mode-name">Multiple Steps</div>
+        <div class="mode-desc">Coming soon</div>
+      </div>
+      <div class="mode-arrow">›</div>
+    </div>
   </div>
 </div>
 
@@ -103,7 +140,7 @@
       <label>Show hints</label>
       <label class="toggle"><input type="checkbox" id="showHints" checked /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.0</div>
+    <div class="settings-version">v1.1</div>
     <button class="settings-close" id="settingsClose">Done</button>
   </div>
 </div>
