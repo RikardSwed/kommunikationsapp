@@ -73,6 +73,8 @@ function showHome() {
   trainingScreen.style.display = 'none';
   msScreen.style.display       = 'none';
   memScreen.style.display      = 'none';
+  document.getElementById('flowScreen').style.display   = 'none';
+  document.getElementById('guidedScreen').style.display = 'none';
   closeInfo();
 }
 
@@ -85,6 +87,8 @@ function showModeScreen(key, label) {
   trainingScreen.style.display = 'none';
   msScreen.style.display       = 'none';
   memScreen.style.display      = 'none';
+  document.getElementById('flowScreen').style.display   = 'none';
+  document.getElementById('guidedScreen').style.display = 'none';
 }
 
 function showTraining() {
@@ -593,8 +597,10 @@ guidedCard.addEventListener('touchend',  e=>{
   if(gMov&&ady>40&&ady>adx){dy>0?guidedPrevInput():guidedNextInput();return;}
 },{passive:false});
 
-document.getElementById('guidedNextStepBtn').addEventListener('click',     guidedAdvanceStep);
+document.getElementById('guidedNextStepBtn').addEventListener('click', guidedAdvanceStep);
+document.getElementById('guidedNextStepBtn').addEventListener('touchend', e => { e.stopPropagation(); e.preventDefault(); guidedAdvanceStep(); }, { passive: false });
 document.getElementById('guidedNextStepBtnBack').addEventListener('click', guidedAdvanceStep);
+document.getElementById('guidedNextStepBtnBack').addEventListener('touchend', e => { e.stopPropagation(); e.preventDefault(); guidedAdvanceStep(); }, { passive: false });
 document.getElementById('guidedNextComboBtn').addEventListener('click',    guidedNextCombo);
 document.getElementById('guidedPrevComboBtn').addEventListener('click',    guidedPrevCombo);
 document.getElementById('guidedNextInputBtn').addEventListener('click',    guidedNextInput);
