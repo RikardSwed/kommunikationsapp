@@ -94,20 +94,13 @@ function showModeScreen(key, label) {
 }
 
 function showTraining() {
-  console.log('showTraining called, key:', activeCollectionKey);
-  try {
-    strategies = collections[activeCollectionKey];
-    console.log('strategies loaded:', strategies.length);
-    modeScreen.style.display     = 'none';
-    trainingScreen.style.display = 'flex';
-    stratIdx = 0; inputIdx = 0;
-    stratOrder  = strategies.map((_, i) => i);
-    inputOrders = strategies.map(s => s.inputs.map((_, i) => i));
-    render();
-    console.log('render done');
-  } catch(e) {
-    console.error('showTraining error:', e);
-  }
+  strategies  = collections[activeCollectionKey];
+  stratOrder  = strategies.map((_, i) => i);
+  inputOrders = strategies.map(s => s.inputs.map((_, i) => i));
+  modeScreen.style.display     = 'none';
+  trainingScreen.style.display = 'flex';
+  stratIdx = 0; inputIdx = 0;
+  render();
 }
 
 function showMultiStep() {
@@ -862,20 +855,14 @@ document.getElementById('hfNextInputBtn').addEventListener('click',()=>{const o=
 
 // ── showHandsfree ─────────────────────────────────────────────────────────────
 function showHandsfree() {
-  console.log('showHandsfree called, key:', activeCollectionKey);
-  try {
-    strategies  = collections[activeCollectionKey];
-    stratOrder  = strategies.map((_,i)=>i);
-    inputOrders = strategies.map(s=>s.inputs.map((_,i)=>i));
-    modeScreen.style.display = 'none';
-    document.getElementById('hfScreen').style.display = 'flex';
-    stratIdx = 0; inputIdx = 0;
-    hfRender();
-    hfUpdateButtons();
-    console.log('showHandsfree done');
-  } catch(e) {
-    console.error('showHandsfree error:', e);
-  }
+  strategies  = collections[activeCollectionKey];
+  stratOrder  = strategies.map((_,i)=>i);
+  inputOrders = strategies.map(s=>s.inputs.map((_,i)=>i));
+  modeScreen.style.display = 'none';
+  document.getElementById('hfScreen').style.display = 'flex';
+  stratIdx = 0; inputIdx = 0;
+  hfRender();
+  hfUpdateButtons();
 }
 
 addModeListener('modeHandsfree', showHandsfree);
