@@ -1,7 +1,7 @@
 // app.js — All application logic for Communication Trainer
 // Depends on: data.js and multiStepData.js (must be loaded first)
 
-const VERSION = 'v1.6';
+const VERSION = 'v1.6.1';
 
 // ─── SCREENS ─────────────────────────────────────────────────────────────────
 const homeScreen     = document.getElementById('homeScreen');
@@ -75,7 +75,8 @@ function showHome() {
   memScreen.style.display      = 'none';
   document.getElementById('flowScreen').style.display   = 'none';
   document.getElementById('guidedScreen').style.display = 'none';
-  document.getElementById('hfScreen').style.display = 'none';
+  document.getElementById('hfScreen').style.display   = 'none';
+  document.getElementById('hfMemScreen').style.display = 'none';
   closeInfo();
 }
 
@@ -90,7 +91,8 @@ function showModeScreen(key, label) {
   memScreen.style.display      = 'none';
   document.getElementById('flowScreen').style.display   = 'none';
   document.getElementById('guidedScreen').style.display = 'none';
-  document.getElementById('hfScreen').style.display = 'none';
+  document.getElementById('hfScreen').style.display   = 'none';
+  document.getElementById('hfMemScreen').style.display = 'none';
 }
 
 function showTraining() {
