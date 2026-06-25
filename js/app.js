@@ -1,11 +1,14 @@
 // app.js — All application logic for Communication Trainer
 // Depends on: data.js (must be loaded first)
 
-const VERSION = 'v1.0';
+const VERSION = 'v1.1';
 
-// ─── STATE ───────────────────────────────────────────────────────────────────
+// ─── SCREENS ─────────────────────────────────────────────────────────────────
 const homeScreen     = document.getElementById('homeScreen');
+const modeScreen     = document.getElementById('modeScreen');
 const trainingScreen = document.getElementById('trainingScreen');
+
+// ─── DOM ─────────────────────────────────────────────────────────────────────
 const card           = document.getElementById('card');
 const cardInner      = document.getElementById('cardInner');
 const cardInfo       = document.getElementById('cardInfo');
@@ -16,38 +19,62 @@ const answerText     = document.getElementById('answerText');
 const counter        = document.getElementById('counter');
 const hint           = document.getElementById('hint');
 
-let strategies  = [];
-let stratOrder  = [];
-let inputOrders = [];
+// ─── STATE ───────────────────────────────────────────────────────────────────
+let strategies    = [];
+let stratOrder    = [];
+let inputOrders   = [];
 let stratIdx = 0, inputIdx = 0;
 let flipped = false, animating = false;
+let activeCollectionKey   = null;
+let activeCollectionLabel = null;
 
 // ─── NAVIGATION ──────────────────────────────────────────────────────────────
 function showHome() {
   homeScreen.style.display     = 'flex';
+  modeScreen.style.display     = 'none';
   trainingScreen.style.display = 'none';
   closeInfo();
 }
 
-function showTraining(collectionKey) {
-  strategies = collections[collectionKey];
+function showModeScreen(key, label) {
+  activeCollectionKey   = key;
+  activeCollectionLabel = label;
+  document.getElementById('modeCollectionName').textContent = label;
   homeScreen.style.display     = 'none';
+  modeScreen.style.display     = 'flex';
+  trainingScreen.style.display = 'none';
+}
+
+function showTraining() {
+  strategies = collections[activeCollectionKey];
+  modeScreen.style.display     = 'none';
   trainingScreen.style.display = 'flex';
   stratIdx = 0;
   inputIdx = 0;
   applySettings();
 }
 
-function addCollectionListener(id, key) {
-  const el = document.getElementById(id);
-  el.addEventListener('click', () => showTraining(key));
-  el.addEventListener('touchend', e => { e.preventDefault(); showTraining(key); }, { passive: false });
-}
+// Collection cards → mode screen
+document.querySelectorAll('.collection-card').forEach(el => {
+  const key   = el.dataset.key;
+  const label = el.dataset.label;
+  el.addEventListener('click', () => showModeScreen(key, label));
+  el.addEventListener('touchend', e => { e.preventDefault(); showModeScreen(key, label); }, { passive: false });
+});
 
-addCollectionListener('collectionAssertive', 'assertive');
-addCollectionListener('collectionHumour',    'humour');
-addCollectionListener('collectionTeasing',   'teasing');
-addCollectionListener('collectionCriticism', 'criticism');
+// Mode screen back button
+document.getElementById('modeBackBtn').addEventListener('click', showHome);
+
+// Mode cards
+document.getElementById('modeFlashcard').addEventListener('click', showTraining);
+document.getElementById('modeFlashcard').addEventListener('touchend', e => { e.preventDefault(); showTraining(); }, { passive: false });
+
+// Coming soon modes — no action
+document.getElementById('modeMemorize').addEventListener('click',   () => {});
+document.getElementById('modeMultiStep').addEventListener('click',  () => {});
+
+// Training back button → mode screen
+document.getElementById('closeBtn').addEventListener('click', () => showModeScreen(activeCollectionKey, activeCollectionLabel));
 
 // ─── INFO OVERLAY ────────────────────────────────────────────────────────────
 let infoOpen = false;
@@ -141,7 +168,6 @@ document.getElementById('nextInputBtn').addEventListener('click',  nextInput);
 document.getElementById('prevInputBtn').addEventListener('click',  prevInput);
 document.getElementById('nextStratBtn').addEventListener('click',  nextStrategy);
 document.getElementById('prevStratBtn').addEventListener('click',  prevStrategy);
-document.getElementById('closeBtn').addEventListener('click', showHome);
 
 document.getElementById('settingsBtn').addEventListener('click', () =>
   document.getElementById('settingsOverlay').classList.add('open'));
@@ -160,12 +186,17 @@ document.getElementById('settingsOverlay').addEventListener('click', e => {
 
 document.addEventListener('keydown', e => {
   if (document.getElementById('settingsOverlay').classList.contains('open')) return;
+  if (e.key === 'Escape')     {
+    if (trainingScreen.style.display !== 'none') showModeScreen(activeCollectionKey, activeCollectionLabel);
+    else if (modeScreen.style.display !== 'none') showHome();
+    return;
+  }
+  if (trainingScreen.style.display === 'none') return;
   if (e.key === 'ArrowRight') nextStrategy();
   if (e.key === 'ArrowLeft')  prevStrategy();
   if (e.key === 'ArrowDown')  nextInput();
   if (e.key === 'ArrowUp')    prevInput();
   if (e.key === ' ')          { e.preventDefault(); flip(!flipped); }
-  if (e.key === 'Escape')     { showHome(); }
 });
 
 // ─── SETTINGS ────────────────────────────────────────────────────────────────
