@@ -1,7 +1,7 @@
 // app.js — All application logic for Communication Trainer
 // Depends on: data.js and multiStepData.js (must be loaded first)
 
-const VERSION = 'v1.7';
+const VERSION = 'v1.7.1';
 
 // ─── SCREENS ─────────────────────────────────────────────────────────────────
 const homeScreen     = document.getElementById('homeScreen');
@@ -725,7 +725,16 @@ function hfSpeak(text, cfg) {
 function hfDelay(ms) {
   return new Promise(resolve => {
     if (hfAbort || hfSkipStep) { resolve(); return; }
-    const id = setTimeout(() => resolve(), ms);
+    const step = 80;
+    let elapsed = 0;
+    function tick() {
+      if (hfAbort || hfSkipStep) { resolve(); return; }
+      elapsed += step;
+      if (elapsed >= ms) { resolve(); return; }
+      const id = setTimeout(tick, step);
+      hfTimeouts.push(id);
+    }
+    const id = setTimeout(tick, step);
     hfTimeouts.push(id);
   });
 }
@@ -970,7 +979,16 @@ let hfMemTimeouts  = [];
 function hfMemDelay(ms) {
   return new Promise(resolve => {
     if (hfMemAbort || hfMemSkipStep) { resolve(); return; }
-    const id = setTimeout(() => resolve(), ms);
+    const step = 80;
+    let elapsed = 0;
+    function memTick() {
+      if (hfMemAbort || hfMemSkipStep) { resolve(); return; }
+      elapsed += step;
+      if (elapsed >= ms) { resolve(); return; }
+      const id = setTimeout(memTick, step);
+      hfMemTimeouts.push(id);
+    }
+    const id = setTimeout(memTick, step);
     hfMemTimeouts.push(id);
   });
 }
