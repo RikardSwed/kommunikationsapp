@@ -1,7 +1,7 @@
 // app.js — All application logic for Communication Trainer
 // Depends on: data.js and multiStepData.js (must be loaded first)
 
-const VERSION = 'v1.6.3';
+const VERSION = 'v1.7';
 
 // ─── SCREENS ─────────────────────────────────────────────────────────────────
 const homeScreen     = document.getElementById('homeScreen');
@@ -672,10 +672,14 @@ function hfSettings() {
 // ── State ─────────────────────────────────────────────────────────────────────
 let hfPlaying   = false;
 let hfAbort     = false;
+let hfSkipStep  = false;  // true = skip current speech and move to next step
 let hfTimeouts  = [];
 
-// ── Voice selection ───────────────────────────────────────────────────────────
-// Pre-load voices as soon as possible
+// ── Playback sequence step enum ───────────────────────────────────────────────
+// Steps in order: 'stratName' → 'explanation' → 'inputFront' → 'inputBack' → repeat
+let hfSeqStep = 'stratName';  // current position in sequence
+
+// ── Voice ─────────────────────────────────────────────────────────────────────
 let cachedVoices = [];
 function loadVoices() {
   const v = speechSynthesis.getVoices();
@@ -690,20 +694,13 @@ function hfPickVoice(gender) {
   const voices = cachedVoices.length ? cachedVoices : speechSynthesis.getVoices();
   const enVoices = voices.filter(v => v.lang.startsWith('en'));
   if (!enVoices.length) return null;
-
   if (gender === 'male') {
     const pref = ['Daniel', 'Aaron', 'Fred', 'Gordon', 'Thomas', 'Arthur', 'Oliver', 'Jamie'];
-    for (const name of pref) {
-      const v = enVoices.find(v => v.name.includes(name));
-      if (v) return v;
-    }
+    for (const name of pref) { const v = enVoices.find(v => v.name.includes(name)); if (v) return v; }
     return enVoices.find(v => !v.name.match(/Samantha|Victoria|Karen|Moira|Fiona|Allison|Ava|Susan|Zoe|Emma/i)) || enVoices[0];
   } else {
     const pref = ['Samantha', 'Ava', 'Allison', 'Victoria', 'Karen', 'Moira'];
-    for (const name of pref) {
-      const v = enVoices.find(v => v.name.includes(name));
-      if (v) return v;
-    }
+    for (const name of pref) { const v = enVoices.find(v => v.name.includes(name)); if (v) return v; }
     return enVoices[0];
   }
 }
@@ -719,13 +716,15 @@ function hfSpeak(text, cfg) {
     if (voice) utt.voice = voice;
     utt.onend   = () => resolve();
     utt.onerror = () => resolve();
+    // If skip requested, cancel immediately
+    if (hfSkipStep) { hfSkipStep = false; resolve(); return; }
     speechSynthesis.speak(utt);
   });
 }
 
 function hfDelay(ms) {
   return new Promise(resolve => {
-    if (hfAbort) { resolve(); return; }
+    if (hfAbort || hfSkipStep) { resolve(); return; }
     const id = setTimeout(() => resolve(), ms);
     hfTimeouts.push(id);
   });
@@ -750,126 +749,158 @@ function hfShowCard(q, a, flipped) {
 
 function hfUpdateButtons() {
   const playBtn = document.getElementById('hfPlayBtn');
-  const stopBtn = document.getElementById('hfStopBtn');
-  playBtn.textContent = hfPlaying ? '⏸' : '▶';
-  stopBtn.disabled    = !hfPlaying;
-  stopBtn.style.opacity = hfPlaying ? '1' : '0.35';
+  const prevBtn = document.getElementById('hfPrevStepBtn');
+  const nextBtn = document.getElementById('hfNextStepBtn');
+  playBtn.textContent = hfPlaying ? '⏹' : '▶';
+  prevBtn.disabled = !hfPlaying;
+  nextBtn.disabled = !hfPlaying;
+  prevBtn.style.opacity = hfPlaying ? '1' : '0.35';
+  nextBtn.style.opacity = hfPlaying ? '1' : '0.35';
 }
 
 // ── Main playback loop ────────────────────────────────────────────────────────
 async function hfPlay() {
   if (hfPlaying) { hfStop(); return; }
 
-  // Safari requires speech to start from a direct user gesture.
-  // We fire a silent utterance immediately here (still inside the click handler)
-  // to unlock the audio session before the async loop begins.
   const unlock = new SpeechSynthesisUtterance(' ');
   unlock.volume = 0;
   speechSynthesis.speak(unlock);
 
-  hfPlaying = true;
-  hfAbort   = false;
+  hfPlaying   = true;
+  hfAbort     = false;
+  hfSkipStep  = false;
   hfUpdateButtons();
 
   const cfg    = hfSettings();
   const maxInp = cfg.maxInputs === 'all' ? Infinity : parseInt(cfg.maxInputs);
-  const startSi = stratIdx;
+
+  // Determine start position — if inputIdx > 0, skip strategy name + explanation
+  const startSi       = stratIdx;
+  const startInputIdx = inputIdx;
+  const skipIntro     = startInputIdx > 0;
 
   outer:
   for (let si = startSi; si < strategies.length; si++) {
     if (hfAbort) break;
     stratIdx = si;
-    inputIdx = 0;
 
-    // Show strategy name card (front, unflipped)
     const strat = currentStrategy();
-    hfShowCard('', '', false);
-    document.getElementById('hfStrategyName').textContent = strat.name;
-    document.getElementById('hfInputText').textContent    = strat.name;
 
-    await hfSpeak(strat.name, cfg);
-    await hfDelay(cfg.genPause * 1000);
-    if (hfAbort) break;
-
-    if (cfg.explanation && strat.description) {
-      // Show description in the card-info overlay (same as tapping strategy name)
-      document.getElementById('hfInputText').textContent  = '';
-      document.getElementById('hfAnswerText').textContent = '';
-      document.getElementById('hfCardInfoText').textContent = strat.description;
-      document.getElementById('hfCardInfo').classList.add('visible');
-      await hfSpeak(strat.description, cfg);
-      document.getElementById('hfCardInfo').classList.remove('visible');
-      document.getElementById('hfCardInfo').scrollTop = 0;
-      await hfDelay(cfg.genPause * 1000);
+    if (!skipIntro || si > startSi) {
+      // Strategy name
+      hfSeqStep = 'stratName';
+      hfShowCard(strat.name, '', false);
+      document.getElementById('hfInputText').textContent = strat.name;
+      await hfSpeak(strat.name, cfg);
       if (hfAbort) break;
+      if (!hfSkipStep) await hfDelay(cfg.genPause * 1000);
+      hfSkipStep = false;
+
+      // Explanation
+      if (cfg.explanation && strat.description) {
+        hfSeqStep = 'explanation';
+        document.getElementById('hfCardInfoText').textContent = strat.description;
+        document.getElementById('hfCardInfo').classList.add('visible');
+        await hfSpeak(strat.description, cfg);
+        document.getElementById('hfCardInfo').classList.remove('visible');
+        document.getElementById('hfCardInfo').scrollTop = 0;
+        if (hfAbort) break;
+        if (!hfSkipStep) await hfDelay(cfg.genPause * 1000);
+        hfSkipStep = false;
+      }
     }
 
     const ord   = inputOrders[stratOrder[si]];
     const limit = Math.min(ord.length, maxInp);
+    const startIi = (si === startSi) ? startInputIdx : 0;
 
-    for (let ii = 0; ii < limit; ii++) {
+    for (let ii = startIi; ii < limit; ii++) {
       if (hfAbort) break outer;
       inputIdx = ii;
       const inp = currentInput();
 
-      // Show front of card
+      // Input front
+      hfSeqStep = 'inputFront';
       hfShowCard(inp.q, inp.a, false);
       await hfSpeak(inp.q, cfg);
-      await hfDelay(cfg.thinkPause * 1000);
       if (hfAbort) break outer;
+      if (!hfSkipStep) await hfDelay(cfg.thinkPause * 1000);
+      hfSkipStep = false;
 
+      // Input back
       if (cfg.cardBack) {
-        // Flip to back
+        hfSeqStep = 'inputBack';
         hfShowCard(inp.q, inp.a, true);
         await hfSpeak(inp.a, cfg);
-        await hfDelay(cfg.genPause * 1000);
         if (hfAbort) break outer;
+        if (!hfSkipStep) await hfDelay(cfg.genPause * 1000);
+        hfSkipStep = false;
       }
 
-      if (cfg.loopStrategy && ii === limit - 1) {
-        ii = -1;
-      }
+      if (cfg.loopStrategy && ii === limit - 1) ii = -1;
     }
 
     if (cfg.loopStrategy) si--;
   }
 
-  hfPlaying = false;
-  hfAbort   = false;
+  hfPlaying   = false;
+  hfAbort     = false;
+  hfSkipStep  = false;
   speechSynthesis.cancel();
   hfClearTimeouts();
   hfUpdateButtons();
 }
 
 function hfStop() {
-  hfAbort = true;
-  hfPlaying = false;
+  hfAbort     = true;
+  hfPlaying   = false;
+  hfSkipStep  = false;
   speechSynthesis.cancel();
   hfClearTimeouts();
   hfUpdateButtons();
 }
 
+// Skip forward — cancel current speech, next iteration picks up next step
+function hfSkipForward() {
+  if (!hfPlaying) return;
+  hfSkipStep = true;
+  speechSynthesis.cancel();
+  hfClearTimeouts();
+}
+
+// Skip back — go to start of current strategy (stratName step)
+function hfSkipBack() {
+  if (!hfPlaying) return;
+  inputIdx   = 0;
+  hfSkipStep = true;
+  speechSynthesis.cancel();
+  hfClearTimeouts();
+  // Force si loop to re-run current strategy by flagging seqStep
+  hfSeqStep = 'restart';
+}
+
 // ── Buttons ───────────────────────────────────────────────────────────────────
 document.getElementById('hfPlayBtn').addEventListener('click', hfPlay);
-document.getElementById('hfStopBtn').addEventListener('click', hfStop);
 document.getElementById('hfPlayBtn').addEventListener('touchend', e => { e.stopPropagation(); e.preventDefault(); hfPlay(); }, { passive: false });
-document.getElementById('hfStopBtn').addEventListener('touchend', e => { e.stopPropagation(); e.preventDefault(); hfStop(); }, { passive: false });
+
+document.getElementById('hfNextStepBtn').addEventListener('click', hfSkipForward);
+document.getElementById('hfNextStepBtn').addEventListener('touchend', e => { e.stopPropagation(); e.preventDefault(); hfSkipForward(); }, { passive: false });
+
+document.getElementById('hfPrevStepBtn').addEventListener('click', hfSkipBack);
+document.getElementById('hfPrevStepBtn').addEventListener('touchend', e => { e.stopPropagation(); e.preventDefault(); hfSkipBack(); }, { passive: false });
 
 document.getElementById('hfCloseBtn').addEventListener('click', () => {
   hfStop();
   showModeScreen(activeCollectionKey, activeCollectionLabel);
 });
+document.getElementById('hfSettingsBtn').addEventListener('click', () =>
+  document.getElementById('hfSettingsOverlay').classList.add('open'));
 
-// Allow scrolling inside hfCardInfo overlay on iOS
+// Allow scrolling in hfCardInfo overlay
 const hfCardInfoEl = document.getElementById('hfCardInfo');
 hfCardInfoEl.addEventListener('touchstart', e => e.stopPropagation(), { passive: true });
 hfCardInfoEl.addEventListener('touchmove',  e => e.stopPropagation(), { passive: true });
 hfCardInfoEl.addEventListener('touchend',   e => e.stopPropagation(), { passive: true });
-document.getElementById('hfSettingsBtn').addEventListener('click', () =>
-  document.getElementById('hfSettingsOverlay').classList.add('open'));
-
-document.getElementById('hfSettingsClose').addEventListener('click', () =>
-  document.getElementById('hfSettingsOverlay').classList.remove('open'));
 
 // ── Manual navigation on hf screen ───────────────────────────────────────────
 const hfCard      = document.getElementById('hfCard');
@@ -915,6 +946,7 @@ function showHandsfree() {
 
 addModeListener('modeHandsfree', showHandsfree);
 
+
 // ─── HANDSFREE MEMORIZE MODE ─────────────────────────────────────────────────
 
 function hfMemSettings() {
@@ -932,11 +964,12 @@ function hfMemSettings() {
 
 let hfMemPlaying   = false;
 let hfMemAbort     = false;
+let hfMemSkipStep  = false;
 let hfMemTimeouts  = [];
 
 function hfMemDelay(ms) {
   return new Promise(resolve => {
-    if (hfMemAbort) { resolve(); return; }
+    if (hfMemAbort || hfMemSkipStep) { resolve(); return; }
     const id = setTimeout(() => resolve(), ms);
     hfMemTimeouts.push(id);
   });
@@ -957,6 +990,7 @@ function hfMemSpeak(text, cfg) {
     if (voice) utt.voice = voice;
     utt.onend   = () => resolve();
     utt.onerror = () => resolve();
+    if (hfMemSkipStep) { hfMemSkipStep = false; resolve(); return; }
     speechSynthesis.speak(utt);
   });
 }
@@ -975,10 +1009,13 @@ function hfMemShowCard(q, a, flipped) {
 
 function hfMemUpdateButtons() {
   const playBtn = document.getElementById('hfMemPlayBtn');
-  const stopBtn = document.getElementById('hfMemStopBtn');
-  playBtn.textContent = hfMemPlaying ? '⏸' : '▶';
-  stopBtn.disabled    = !hfMemPlaying;
-  stopBtn.style.opacity = hfMemPlaying ? '1' : '0.35';
+  const prevBtn = document.getElementById('hfMemPrevStepBtn');
+  const nextBtn = document.getElementById('hfMemNextStepBtn');
+  playBtn.textContent   = hfMemPlaying ? '⏹' : '▶';
+  prevBtn.disabled      = !hfMemPlaying;
+  nextBtn.disabled      = !hfMemPlaying;
+  prevBtn.style.opacity = hfMemPlaying ? '1' : '0.35';
+  nextBtn.style.opacity = hfMemPlaying ? '1' : '0.35';
 }
 
 async function hfMemPlay() {
@@ -988,63 +1025,70 @@ async function hfMemPlay() {
   unlock.volume = 0;
   speechSynthesis.speak(unlock);
 
-  hfMemPlaying = true;
-  hfMemAbort   = false;
+  hfMemPlaying  = true;
+  hfMemAbort    = false;
+  hfMemSkipStep = false;
   hfMemUpdateButtons();
 
-  const cfg     = hfMemSettings();
+  const cfg      = hfMemSettings();
   const maxCards = cfg.maxCards === 'all' ? Infinity : parseInt(cfg.maxCards);
   const startSi  = memStratIdx;
+  const startCi  = memCardIdx;
+  const skipIntro = startCi > 0;
 
   outer:
   for (let si = startSi; si < memStrategies.length; si++) {
     if (hfMemAbort) break;
     memStratIdx = si;
-    memCardIdx  = 0;
-
     const strat = memCurrentStrategy();
-
-    // Show strategy name
-    document.getElementById('hfMemStrategyName').textContent = strat.name;
-    document.getElementById('hfMemQuestionText').textContent = strat.name;
-    hfMemCardInnerEl.classList.remove('flipped');
-
-    await hfMemSpeak(strat.name, cfg);
-    await hfMemDelay(cfg.genPause * 1000);
-    if (hfMemAbort) break;
-
-    // Optional explanation
     const collStrat = (collections[activeCollectionKey] || []).find(s => s.name === strat.name);
     const desc = collStrat ? collStrat.description : '';
-    if (cfg.explanation && desc) {
-      document.getElementById('hfMemCardInfoText').textContent = desc;
-      hfMemCardInfoEl.classList.add('visible');
-      await hfMemSpeak(desc, cfg);
-      hfMemCardInfoEl.classList.remove('visible');
-      hfMemCardInfoEl.scrollTop = 0;
-      await hfMemDelay(cfg.genPause * 1000);
+
+    if (!skipIntro || si > startSi) {
+      // Strategy name
+      document.getElementById('hfMemStrategyName').textContent = strat.name;
+      document.getElementById('hfMemQuestionText').textContent = strat.name;
+      hfMemCardInnerEl.classList.remove('flipped');
+      await hfMemSpeak(strat.name, cfg);
       if (hfMemAbort) break;
+      if (!hfMemSkipStep) await hfMemDelay(cfg.genPause * 1000);
+      hfMemSkipStep = false;
+
+      // Explanation
+      if (cfg.explanation && desc) {
+        document.getElementById('hfMemCardInfoText').textContent = desc;
+        hfMemCardInfoEl.classList.add('visible');
+        await hfMemSpeak(desc, cfg);
+        hfMemCardInfoEl.classList.remove('visible');
+        hfMemCardInfoEl.scrollTop = 0;
+        if (hfMemAbort) break;
+        if (!hfMemSkipStep) await hfMemDelay(cfg.genPause * 1000);
+        hfMemSkipStep = false;
+      }
     }
 
-    const limit = Math.min(strat.cards.length, maxCards);
+    const limit  = Math.min(strat.cards.length, maxCards);
+    const startCi2 = (si === startSi) ? startCi : 0;
 
-    for (let ci = 0; ci < limit; ci++) {
+    for (let ci = startCi2; ci < limit; ci++) {
       if (hfMemAbort) break outer;
       memCardIdx = ci;
       const card = memCurrentCard();
 
-      // Front — question
+      // Front
       hfMemShowCard(card.q, card.a, false);
       await hfMemSpeak(card.q, cfg);
-      await hfMemDelay(cfg.thinkPause * 1000);
       if (hfMemAbort) break outer;
+      if (!hfMemSkipStep) await hfMemDelay(cfg.thinkPause * 1000);
+      hfMemSkipStep = false;
 
-      // Back — card answer
+      // Back
       if (cfg.cardBack) {
         hfMemShowCard(card.q, card.a, true);
         await hfMemSpeak(card.a, cfg);
-        await hfMemDelay(cfg.genPause * 1000);
         if (hfMemAbort) break outer;
+        if (!hfMemSkipStep) await hfMemDelay(cfg.genPause * 1000);
+        hfMemSkipStep = false;
       }
 
       if (cfg.loopStrategy && ci === limit - 1) ci = -1;
@@ -1053,26 +1097,47 @@ async function hfMemPlay() {
     if (cfg.loopStrategy) si--;
   }
 
-  hfMemPlaying = false;
-  hfMemAbort   = false;
+  hfMemPlaying  = false;
+  hfMemAbort    = false;
+  hfMemSkipStep = false;
   speechSynthesis.cancel();
   hfMemClearTimeouts();
   hfMemUpdateButtons();
 }
 
 function hfMemStop() {
-  hfMemAbort   = true;
-  hfMemPlaying = false;
+  hfMemAbort    = true;
+  hfMemPlaying  = false;
+  hfMemSkipStep = false;
   speechSynthesis.cancel();
   hfMemClearTimeouts();
   hfMemUpdateButtons();
 }
 
+function hfMemSkipForward() {
+  if (!hfMemPlaying) return;
+  hfMemSkipStep = true;
+  speechSynthesis.cancel();
+  hfMemClearTimeouts();
+}
+
+function hfMemSkipBack() {
+  if (!hfMemPlaying) return;
+  memCardIdx    = 0;
+  hfMemSkipStep = true;
+  speechSynthesis.cancel();
+  hfMemClearTimeouts();
+}
+
 // ── Buttons ───────────────────────────────────────────────────────────────────
 document.getElementById('hfMemPlayBtn').addEventListener('click', hfMemPlay);
-document.getElementById('hfMemStopBtn').addEventListener('click', hfMemStop);
 document.getElementById('hfMemPlayBtn').addEventListener('touchend', e => { e.stopPropagation(); e.preventDefault(); hfMemPlay(); }, { passive: false });
-document.getElementById('hfMemStopBtn').addEventListener('touchend', e => { e.stopPropagation(); e.preventDefault(); hfMemStop(); }, { passive: false });
+
+document.getElementById('hfMemNextStepBtn').addEventListener('click', hfMemSkipForward);
+document.getElementById('hfMemNextStepBtn').addEventListener('touchend', e => { e.stopPropagation(); e.preventDefault(); hfMemSkipForward(); }, { passive: false });
+
+document.getElementById('hfMemPrevStepBtn').addEventListener('click', hfMemSkipBack);
+document.getElementById('hfMemPrevStepBtn').addEventListener('touchend', e => { e.stopPropagation(); e.preventDefault(); hfMemSkipBack(); }, { passive: false });
 
 document.getElementById('hfMemCloseBtn').addEventListener('click', () => {
   hfMemStop();
@@ -1085,10 +1150,9 @@ document.getElementById('hfMemSettingsClose').addEventListener('click', () =>
   document.getElementById('hfMemSettingsOverlay').classList.remove('open'));
 
 // Allow scrolling in hfMemCardInfo overlay
-const hfMemCardInfoScrollEl = document.getElementById('hfMemCardInfo');
-hfMemCardInfoScrollEl.addEventListener('touchstart', e => e.stopPropagation(), { passive: true });
-hfMemCardInfoScrollEl.addEventListener('touchmove',  e => e.stopPropagation(), { passive: true });
-hfMemCardInfoScrollEl.addEventListener('touchend',   e => e.stopPropagation(), { passive: true });
+hfMemCardInfoEl.addEventListener('touchstart', e => e.stopPropagation(), { passive: true });
+hfMemCardInfoEl.addEventListener('touchmove',  e => e.stopPropagation(), { passive: true });
+hfMemCardInfoEl.addEventListener('touchend',   e => e.stopPropagation(), { passive: true });
 
 // ── Manual nav ────────────────────────────────────────────────────────────────
 const hfMemCard      = document.getElementById('hfMemCard');
