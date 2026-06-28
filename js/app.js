@@ -722,15 +722,18 @@ function hfSpeak(text, cfg) {
   });
 }
 
+let hfDelayResolve = null;  // holds resolve() of the active hfDelay promise
+
 function hfDelay(ms) {
   return new Promise(resolve => {
-    if (hfAbort || hfSkipStep) { resolve(); return; }
+    hfDelayResolve = resolve;
+    if (hfAbort || hfSkipStep) { hfDelayResolve = null; resolve(); return; }
     const step = 80;
     let elapsed = 0;
     function tick() {
-      if (hfAbort || hfSkipStep) { resolve(); return; }
+      if (hfAbort || hfSkipStep) { hfDelayResolve = null; resolve(); return; }
       elapsed += step;
-      if (elapsed >= ms) { resolve(); return; }
+      if (elapsed >= ms) { hfDelayResolve = null; resolve(); return; }
       const id = setTimeout(tick, step);
       hfTimeouts.push(id);
     }
@@ -875,6 +878,7 @@ function hfSkipForward() {
   hfSkipStep = true;
   speechSynthesis.cancel();
   hfClearTimeouts();
+  if (hfDelayResolve) { hfDelayResolve(); hfDelayResolve = null; }
 }
 
 // Skip back — go to start of current strategy (stratName step)
@@ -976,15 +980,18 @@ let hfMemAbort     = false;
 let hfMemSkipStep  = false;
 let hfMemTimeouts  = [];
 
+let hfMemDelayResolve = null;  // holds resolve() of the active hfMemDelay promise
+
 function hfMemDelay(ms) {
   return new Promise(resolve => {
-    if (hfMemAbort || hfMemSkipStep) { resolve(); return; }
+    hfMemDelayResolve = resolve;
+    if (hfMemAbort || hfMemSkipStep) { hfMemDelayResolve = null; resolve(); return; }
     const step = 80;
     let elapsed = 0;
     function memTick() {
-      if (hfMemAbort || hfMemSkipStep) { resolve(); return; }
+      if (hfMemAbort || hfMemSkipStep) { hfMemDelayResolve = null; resolve(); return; }
       elapsed += step;
-      if (elapsed >= ms) { resolve(); return; }
+      if (elapsed >= ms) { hfMemDelayResolve = null; resolve(); return; }
       const id = setTimeout(memTick, step);
       hfMemTimeouts.push(id);
     }
@@ -1137,6 +1144,7 @@ function hfMemSkipForward() {
   hfMemSkipStep = true;
   speechSynthesis.cancel();
   hfMemClearTimeouts();
+  if (hfMemDelayResolve) { hfMemDelayResolve(); hfMemDelayResolve = null; }
 }
 
 function hfMemSkipBack() {
