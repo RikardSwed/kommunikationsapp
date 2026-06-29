@@ -1,7 +1,7 @@
 // app.js — All application logic for Communication Trainer
 // Depends on: data.js and multiStepData.js (must be loaded first)
 
-const VERSION = 'v1.7.2';
+const VERSION = 'v1.7.3';
 
 // ─── SCREENS ─────────────────────────────────────────────────────────────────
 const homeScreen     = document.getElementById('homeScreen');
@@ -144,6 +144,14 @@ document.querySelectorAll('.collection-card').forEach(el => {
 });
 
 document.getElementById('modeBackBtn').addEventListener('click', showHome);
+
+// Beta section toggle
+document.getElementById('modeBetaToggle').addEventListener('click', () => {
+  const list  = document.getElementById('modeBetaList');
+  const arrow = document.getElementById('modeBetaArrow');
+  const open  = list.classList.toggle('open');
+  arrow.classList.toggle('open', open);
+});
 
 addModeListener('modeFlashcard', showTraining);
 
