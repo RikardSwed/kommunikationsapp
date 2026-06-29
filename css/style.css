@@ -628,11 +628,14 @@ body {
 }
 
 .mode-beta-list {
-  display: none;
+  display: flex;
   flex-direction: column;
-  gap: 0;
+  gap: 12px;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.25s ease;
 }
 
 .mode-beta-list.open {
-  display: flex;
+  max-height: 300px;
 }
