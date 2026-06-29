@@ -1,7 +1,7 @@
 // app.js — All application logic for Communication Trainer
 // Depends on: data.js and multiStepData.js (must be loaded first)
 
-const VERSION = 'v1.7.4';
+const VERSION = 'v1.7.5';
 
 // ─── SCREENS ─────────────────────────────────────────────────────────────────
 const homeScreen     = document.getElementById('homeScreen');
@@ -1254,3 +1254,133 @@ document.getElementById('hfVoiceDebugBtn').addEventListener('click', () => {
   const en = voices.filter(v => v.lang.startsWith('en')).map(v => v.name).join('\n');
   alert('Available English voices:\n\n' + (en || 'None loaded yet — try again in a moment'));
 });
+
+// ── FEEDBACK MODE ─────────────────────────────────────────────────────────────
+
+let feedbackMode = localStorage.getItem('feedbackMode') === 'true';
+
+const homeSettingsBtn     = document.getElementById('homeSettingsBtn');
+const homeSettingsOverlay = document.getElementById('homeSettingsOverlay');
+const homeSettingsClose   = document.getElementById('homeSettingsClose');
+const feedbackModeToggle  = document.getElementById('feedbackModeToggle');
+const feedbackExportBtn   = document.getElementById('feedbackExportBtn');
+
+function applyFeedbackMode() {
+  document.body.classList.toggle('feedback-mode', feedbackMode);
+  feedbackModeToggle.checked = feedbackMode;
+}
+
+// Open/close home settings panel
+homeSettingsBtn.addEventListener('click', () => {
+  feedbackModeToggle.checked = feedbackMode;
+  homeSettingsOverlay.classList.add('open');
+});
+homeSettingsBtn.addEventListener('touchend', e => { e.preventDefault(); homeSettingsBtn.click(); }, { passive: false });
+
+homeSettingsClose.addEventListener('click', () => homeSettingsOverlay.classList.remove('open'));
+homeSettingsOverlay.addEventListener('click', e => { if (e.target === homeSettingsOverlay) homeSettingsOverlay.classList.remove('open'); });
+
+// Feedback toggle
+feedbackModeToggle.addEventListener('change', () => {
+  feedbackMode = feedbackModeToggle.checked;
+  localStorage.setItem('feedbackMode', feedbackMode);
+  applyFeedbackMode();
+});
+
+// Export feedback data as JSON
+feedbackExportBtn.addEventListener('click', () => {
+  const data = {};
+  for (let i = 0; i < localStorage.length; i++) {
+    const key = localStorage.key(i);
+    if (key.startsWith('fb_')) {
+      data[key] = parseInt(localStorage.getItem(key));
+    }
+  }
+  if (!Object.keys(data).length) {
+    alert('No feedback data yet.');
+    return;
+  }
+  const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+  const url  = URL.createObjectURL(blob);
+  const a    = document.createElement('a');
+  a.href     = url;
+  a.download = `feedback_${new Date().toISOString().slice(0,10)}.json`;
+  a.click();
+  URL.revokeObjectURL(url);
+});
+
+applyFeedbackMode();
+
+// ── FEEDBACK STORAGE KEYS ─────────────────────────────────────────────────────
+// Key format: fb_{collection}_{screen}_{comboOrStratId}_{cardId}_{side}
+
+function fbKey(screen, comboId, cardId, side) {
+  return `fb_${activeCollectionKey}_${screen}_${comboId}_${cardId}_${side}`;
+}
+
+function fbGet(key) {
+  return localStorage.getItem(key) ? parseInt(localStorage.getItem(key)) : null;
+}
+
+function fbSet(key, val) {
+  localStorage.setItem(key, val);
+}
+
+// ── FEEDBACK BAR RENDER ───────────────────────────────────────────────────────
+
+function fbRender(barId, key) {
+  const bar = document.getElementById(barId);
+  if (!bar) return;
+  const saved = fbGet(key);
+  bar.querySelectorAll('.fb-btn').forEach(btn => {
+    const v = parseInt(btn.dataset.val);
+    btn.classList.remove('fb-selected', 'fb-dimmed');
+    if (saved === null) return; // all at default opacity
+    if (v === saved) btn.classList.add('fb-selected');
+    else btn.classList.add('fb-dimmed');
+  });
+  // Attach click handlers (idempotent via dataset flag)
+  bar.querySelectorAll('.fb-btn').forEach(btn => {
+    if (btn.dataset.fbBound) return;
+    btn.dataset.fbBound = '1';
+    const handler = e => {
+      e.stopPropagation();
+      fbSet(key, parseInt(btn.dataset.val));
+      fbRender(barId, key);
+    };
+    btn.addEventListener('click', handler);
+    btn.addEventListener('touchend', e => { e.preventDefault(); e.stopPropagation(); handler(e); }, { passive: false });
+  });
+}
+
+// ── HOOK INTO RENDER FUNCTIONS ────────────────────────────────────────────────
+
+// Single Strategy
+const _origRender = render;
+window.render = function() {
+  _origRender();
+  const frontKey = fbKey('single', stratIdx, inputIdx, 'front');
+  const backKey  = fbKey('single', stratIdx, inputIdx, 'back');
+  fbRender('fb-single-front', frontKey);
+  fbRender('fb-single-back',  backKey);
+};
+
+// Memorize
+const _origMemRender = memRender;
+window.memRender = function() {
+  _origMemRender();
+  const frontKey = fbKey('mem', memStratIdx, memCardIdx, 'front');
+  const backKey  = fbKey('mem', memStratIdx, memCardIdx, 'back');
+  fbRender('fb-mem-front', frontKey);
+  fbRender('fb-mem-back',  backKey);
+};
+
+// Flow (Sequences)
+const _origFlowRender = flowRender;
+window.flowRender = function() {
+  _origFlowRender();
+  const frontKey = fbKey('flow', flowComboIdx, flowCardIdx, 'front');
+  const backKey  = fbKey('flow', flowComboIdx, flowCardIdx, 'back');
+  fbRender('fb-flow-front', frontKey);
+  fbRender('fb-flow-back',  backKey);
+};
