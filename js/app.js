@@ -1,7 +1,7 @@
 // app.js — All application logic for Communication Trainer
 // Depends on: data.js and multiStepData.js (must be loaded first)
 
-const VERSION = 'v1.7.5';
+const VERSION = 'v1.7.7';
 
 // ─── SCREENS ─────────────────────────────────────────────────────────────────
 const homeScreen     = document.getElementById('homeScreen');
@@ -1331,20 +1331,27 @@ function fbSet(key, val) {
 function fbRender(barId, key) {
   const bar = document.getElementById(barId);
   if (!bar) return;
+  // Store current key on the bar so click handlers always use the latest
+  bar.dataset.fbKey = key;
   const saved = fbGet(key);
   bar.querySelectorAll('.fb-btn').forEach(btn => {
     const v = parseInt(btn.dataset.val);
     btn.classList.remove('fb-selected', 'fb-dimmed');
-    if (saved === null) return; // all at default opacity
+    if (saved === null) return;
     if (v === saved) btn.classList.add('fb-selected');
     else btn.classList.add('fb-dimmed');
   });
-  // Attach click handlers (idempotent via dataset flag)
+}
+
+// Bind click handlers once per bar at startup
+function fbInitBar(barId) {
+  const bar = document.getElementById(barId);
+  if (!bar) return;
   bar.querySelectorAll('.fb-btn').forEach(btn => {
-    if (btn.dataset.fbBound) return;
-    btn.dataset.fbBound = '1';
     const handler = e => {
       e.stopPropagation();
+      const key = bar.dataset.fbKey;
+      if (!key) return;
       fbSet(key, parseInt(btn.dataset.val));
       fbRender(barId, key);
     };
@@ -1352,6 +1359,13 @@ function fbRender(barId, key) {
     btn.addEventListener('touchend', e => { e.preventDefault(); e.stopPropagation(); handler(e); }, { passive: false });
   });
 }
+
+fbInitBar('fb-single-front');
+fbInitBar('fb-single-back');
+fbInitBar('fb-mem-front');
+fbInitBar('fb-mem-back');
+fbInitBar('fb-flow-front');
+fbInitBar('fb-flow-back');
 
 // ── HOOK INTO RENDER FUNCTIONS ────────────────────────────────────────────────
 
