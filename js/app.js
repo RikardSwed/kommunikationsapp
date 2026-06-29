@@ -1,10 +1,9 @@
 // app.js — All application logic for Communication Trainer
 // Depends on: data.js and multiStepData.js (must be loaded first)
 
-const VERSION = 'v1.8.6';
+const VERSION = 'v1.8.7';
 
-// ─── SCREEN TRANSITION SYSTEM ─────────────────────────────────────────────────
-
+// ─── SCREENS ──────────────────────────────────────────────────────────────────
 const homeScreen     = document.getElementById('homeScreen');
 const modeScreen     = document.getElementById('modeScreen');
 const trainingScreen = document.getElementById('trainingScreen');
@@ -16,79 +15,34 @@ const TRAINING_SCREENS = [
   'hfScreen','hfMemScreen','collScreen'
 ];
 
-// Set a screen's transform state without transition
-function screenSet(el, state) {
-  el.style.transition = 'none';
-  el.style.transform  = state;
-  void el.offsetWidth; // force reflow
-}
-
-// Animate a screen to a transform state
-function screenAnimate(el, toState, onDone) {
-  el.style.transition = 'transform 0.32s cubic-bezier(0.4,0,0.2,1)';
-  el.style.transform  = toState;
-  if (onDone) el.addEventListener('transitionend', onDone, { once: true });
-}
-
-function hideAllTraining() {
-  TRAINING_SCREENS.forEach(id => {
-    const el = document.getElementById(id);
-    el.style.transition = 'none';
-    el.style.transform  = 'translateY(100%)';
-    el.style.pointerEvents = 'none';
-  });
+function hideAll() {
+  [homeScreen, modeScreen,
+   ...TRAINING_SCREENS.map(id => document.getElementById(id))
+  ].forEach(el => { el.style.display = 'none'; });
 }
 
 function navToHome() {
-  // Mode slides right, home comes back
-  screenAnimate(modeScreen, 'translateX(100%)');
-  modeScreen.style.pointerEvents = 'none';
-  screenSet(homeScreen, 'translateX(0)');
-  homeScreen.style.pointerEvents = '';
-  hideAllTraining();
+  hideAll();
+  homeScreen.style.display = 'flex';
 }
 
 function navToMode() {
-  // Home slides left (stays behind), mode slides in from right
-  screenSet(modeScreen, 'translateX(100%)');
-  modeScreen.style.pointerEvents = '';
-  screenAnimate(modeScreen, 'translateX(0)');
-  homeScreen.style.pointerEvents = 'none';
-  hideAllTraining();
+  hideAll();
+  modeScreen.style.display = 'flex';
+  modeScreen.classList.remove('slide-in-right');
+  void modeScreen.offsetWidth;
+  modeScreen.classList.add('slide-in-right');
 }
 
 function navToTraining(id) {
-  hideAllTraining();
+  hideAll();
   const el = document.getElementById(id);
-  screenSet(el, 'translateY(100%)');
-  el.style.pointerEvents = '';
-  screenAnimate(el, 'translateY(0)');
-  modeScreen.style.pointerEvents = 'none';
+  el.style.display = 'flex';
+  el.classList.remove('slide-in-bottom');
+  void el.offsetWidth;
+  el.classList.add('slide-in-bottom');
 }
 
-function navFromTraining(id) {
-  const el = document.getElementById(id);
-  screenAnimate(el, 'translateY(100%)');
-  setTimeout(() => { el.style.pointerEvents = 'none'; }, 340);
-  modeScreen.style.pointerEvents = '';
-  modeScreen.style.transition = 'none';
-  modeScreen.style.transform  = 'translateX(0)';
-}
-
-// Initialise positions — run immediately so nothing flashes on load
-(function initScreenPositions() {
-  modeScreen.style.transition = 'none';
-  modeScreen.style.transform  = 'translateX(100%)';
-  modeScreen.style.pointerEvents = 'none';
-  TRAINING_SCREENS.forEach(id => {
-    const el = document.getElementById(id);
-    el.style.transition  = 'none';
-    el.style.transform   = 'translateY(100%)';
-    el.style.pointerEvents = 'none';
-  });
-})();
-
-// ─── DOM — SINGLE STRATEGY ───────────────────────────────────────────────────
 const card           = document.getElementById('card');
 const cardInner      = document.getElementById('cardInner');
 const cardInfo       = document.getElementById('cardInfo');
