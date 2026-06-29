@@ -1,7 +1,7 @@
 // app.js — All application logic for Communication Trainer
 // Depends on: data.js and multiStepData.js (must be loaded first)
 
-const VERSION = 'v1.8.8';
+const VERSION = 'v1.8.9';
 
 // ─── SCREENS ──────────────────────────────────────────────────────────────────
 const homeScreen     = document.getElementById('homeScreen');
@@ -22,15 +22,20 @@ function hideAll() {
 }
 
 function navToHome() {
-  // Slide mode out to right, then hide
+  // Home is already visible behind — just animate mode out
+  homeScreen.style.display = 'flex';
   modeScreen.classList.remove('slide-in-right', 'slide-out-right');
   void modeScreen.offsetWidth;
   modeScreen.classList.add('slide-out-right');
-  setTimeout(() => { hideAll(); homeScreen.style.display = 'flex'; }, 300);
+  setTimeout(() => {
+    modeScreen.style.display = 'none';
+    modeScreen.classList.remove('slide-out-right');
+  }, 300);
 }
 
 function navToMode() {
-  hideAll();
+  // Home stays visible behind — animate mode in over it
+  homeScreen.style.display = 'flex';
   modeScreen.style.display = 'flex';
   modeScreen.classList.remove('slide-in-right', 'slide-out-right');
   void modeScreen.offsetWidth;
@@ -38,17 +43,20 @@ function navToMode() {
 }
 
 function navToTraining(id) {
-  hideAll();
-  modeScreen.style.display = 'flex'; // keep mode visible behind animation
+  // Mode stays visible behind — animate training in over it
+  modeScreen.style.display = 'flex';
   const el = document.getElementById(id);
   el.style.display = 'flex';
   el.classList.remove('slide-in-bottom', 'slide-out-bottom');
   void el.offsetWidth;
   el.classList.add('slide-in-bottom');
+  // Hide mode after training has fully covered it
+  setTimeout(() => { modeScreen.style.display = 'none'; }, 320);
 }
 
 function navFromTraining(id) {
-  // Slide training screen down, then show mode
+  // Show mode behind before animating training away
+  modeScreen.style.display = 'flex';
   const el = document.getElementById(id);
   el.classList.remove('slide-in-bottom', 'slide-out-bottom');
   void el.offsetWidth;
