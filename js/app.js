@@ -1,7 +1,7 @@
 // app.js — All application logic for Communication Trainer
 // Depends on: data.js and multiStepData.js (must be loaded first)
 
-const VERSION = 'v1.8.0';
+const VERSION = 'v1.8.1';
 
 // ─── SCREENS ─────────────────────────────────────────────────────────────────
 const homeScreen     = document.getElementById('homeScreen');
@@ -93,6 +93,7 @@ function showModeScreen(key, label) {
   document.getElementById('guidedScreen').style.display = 'none';
   document.getElementById('hfScreen').style.display   = 'none';
   document.getElementById('hfMemScreen').style.display = 'none';
+  document.getElementById('collScreen').style.display  = 'none';
 }
 
 function showTraining() {
@@ -1477,11 +1478,12 @@ function collPrev() {
   });
 }
 
-// Info panel
-document.getElementById('collInfoBtn').addEventListener('click', () => {
+// Info panel — tap strategy name to open, like Single Strategy
+document.getElementById('collName').addEventListener('click', () => {
   document.getElementById('collCardInfoText').textContent = collCurrent().description;
   collCardInfo.classList.add('visible');
 });
+document.getElementById('collName').addEventListener('touchend', e => { e.preventDefault(); document.getElementById('collName').click(); }, { passive: false });
 document.getElementById('collCardInfoClose').addEventListener('click', () => {
   collCardInfo.classList.remove('visible');
   collCardInfo.scrollTop = 0;
