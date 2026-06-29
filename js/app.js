@@ -1,7 +1,7 @@
 // app.js — All application logic for Communication Trainer
 // Depends on: data.js and multiStepData.js (must be loaded first)
 
-const VERSION = 'v1.8.5';
+const VERSION = 'v1.8.6';
 
 // ─── SCREEN TRANSITION SYSTEM ─────────────────────────────────────────────────
 
@@ -75,10 +75,18 @@ function navFromTraining(id) {
   modeScreen.style.transform  = 'translateX(0)';
 }
 
-// Initialise positions
-screenSet(modeScreen, 'translateX(100%)');
-modeScreen.style.pointerEvents = 'none';
-hideAllTraining();
+// Initialise positions — run immediately so nothing flashes on load
+(function initScreenPositions() {
+  modeScreen.style.transition = 'none';
+  modeScreen.style.transform  = 'translateX(100%)';
+  modeScreen.style.pointerEvents = 'none';
+  TRAINING_SCREENS.forEach(id => {
+    const el = document.getElementById(id);
+    el.style.transition  = 'none';
+    el.style.transform   = 'translateY(100%)';
+    el.style.pointerEvents = 'none';
+  });
+})();
 
 // ─── DOM — SINGLE STRATEGY ───────────────────────────────────────────────────
 const card           = document.getElementById('card');
