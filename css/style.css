@@ -52,7 +52,13 @@ body {
   to   { transform: translateY(100%); }
 }
 
-/* ─── HOME SCREEN ─────────────────────────────────────────────────────────── */
+.home-screen, .mode-screen, .app {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto;
+}
 
 .home-screen {
   width: 100%;
