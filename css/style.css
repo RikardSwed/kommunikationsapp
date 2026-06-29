@@ -28,6 +28,21 @@ body {
   overflow-y: auto;
 }
 
+.home-topbar {
+  display: flex;
+  justify-content: flex-end;
+  padding: 16px 0 0;
+}
+
+.home-topbar .topbar-btn {
+  font-size: 22px;
+  color: #aaa;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+}
+
 .home-header { padding: 56px 0 8px; text-align: center; }
 .home-title { font-size: 26px; font-weight: 800; color: #1c1c1e; letter-spacing: -0.3px; }
 .home-subtitle { font-size: 14px; color: #aaa; margin-top: 6px; }
@@ -591,6 +606,48 @@ body {
   color: #888;
   font-size: 14px;
 }
+
+/* ─── FEEDBACK BAR ───────────────────────────────────────────────────────── */
+
+.fb-bar {
+  display: none;
+  justify-content: center;
+  gap: 14px;
+  padding: 10px 0 4px;
+  margin-top: auto;
+}
+
+.feedback-mode .fb-bar {
+  display: flex;
+}
+
+.fb-btn {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: opacity 0.15s, transform 0.1s;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.fb-btn:active { transform: scale(0.88); }
+
+/* Colour per value: 1=red 2=orange 3=yellow 4=green */
+.fb-btn[data-val="1"] { background: #e53935; opacity: 0.22; }
+.fb-btn[data-val="2"] { background: #fb8c00; opacity: 0.22; }
+.fb-btn[data-val="3"] { background: #fdd835; opacity: 0.22; }
+.fb-btn[data-val="4"] { background: #43a047; opacity: 0.22; }
+
+/* Selected state */
+.fb-btn[data-val="1"].fb-selected { opacity: 1; }
+.fb-btn[data-val="2"].fb-selected { opacity: 1; }
+.fb-btn[data-val="3"].fb-selected { opacity: 1; }
+.fb-btn[data-val="4"].fb-selected { opacity: 1; }
+
+/* Dimmed (others when one is selected) */
+.fb-btn.fb-dimmed { opacity: 0.12; }
 
 /* ─── BETA SECTION ───────────────────────────────────────────────────────── */
 
