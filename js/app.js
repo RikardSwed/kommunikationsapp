@@ -1,7 +1,7 @@
 // app.js — All application logic for Communication Trainer
 // Depends on: data.js and multiStepData.js (must be loaded first)
 
-const VERSION = 'v1.7.7';
+const VERSION = 'v1.8.0';
 
 // ─── SCREENS ─────────────────────────────────────────────────────────────────
 const homeScreen     = document.getElementById('homeScreen');
@@ -1398,3 +1398,129 @@ window.flowRender = function() {
   fbRender('fb-flow-front', frontKey);
   fbRender('fb-flow-back',  backKey);
 };
+
+
+// ── COLLECTIONS MODE ──────────────────────────────────────────────────────────
+
+let collCollections = [];   // array of collections for active pack
+let collIdx     = 0;        // current collection index
+let collInputIdx = 0;       // current input index
+let collFlipped  = false;
+let collAnimating = false;
+
+const collScreen    = document.getElementById('collScreen');
+const collCardEl    = document.getElementById('collCard');
+const collCardInner = document.getElementById('collCardInner');
+const collCardInfo  = document.getElementById('collCardInfo');
+
+function collCurrent()      { return collCollections[collIdx]; }
+function collCurrentInput() { return collCurrent().inputs[collInputIdx]; }
+
+function collRender() {
+  const col = collCurrent();
+  const inp = collCurrentInput();
+  document.getElementById('collName').textContent      = col.name;
+  document.getElementById('collFrontText').textContent = inp.q;
+  document.getElementById('collBackText').textContent  = inp.a;
+  document.getElementById('collCounter').textContent   = `${collIdx + 1} / ${collCollections.length}`;
+  collFlipFn(false, false);
+  // type badge on front
+  const typeLabels = { direct: 'Direct', situation: 'Situation', choose3: 'Choose 3', identify: 'Identify', free: 'Free', contrast: 'Contrast' };
+  const badge = typeLabels[inp.type] || '';
+  document.getElementById('collName').textContent = `${col.name}${badge ? ' — ' + badge : ''}`;
+  // hints
+  const hints = document.getElementById('collHint');
+  if (hints) hints.style.display = document.getElementById('showHints').checked ? '' : 'none';
+  // feedback
+  const frontKey = fbKey('coll', collIdx, collInputIdx, 'front');
+  const backKey  = fbKey('coll', collIdx, collInputIdx, 'back');
+  fbRender('fb-coll-front', frontKey);
+  fbRender('fb-coll-back',  backKey);
+}
+
+function collFlipFn(val, animate = true) {
+  collFlipped = val;
+  collCardInner.style.transition = animate ? 'transform 0.4s ease' : 'none';
+  collCardInner.classList.toggle('flipped', collFlipped);
+}
+
+function collTrig(dir, cb) {
+  if (collAnimating) return; collAnimating = true;
+  collCardEl.classList.add('swipe-' + dir);
+  setTimeout(() => { collCardEl.classList.remove('swipe-' + dir); cb(); collAnimating = false; }, 220);
+}
+
+function collNextInput() {
+  collTrig('up', () => {
+    collInputIdx = (collInputIdx + 1) % collCurrent().inputs.length;
+    collRender();
+  });
+}
+function collPrevInput() {
+  collTrig('down', () => {
+    collInputIdx = (collInputIdx - 1 + collCurrent().inputs.length) % collCurrent().inputs.length;
+    collRender();
+  });
+}
+function collNext() {
+  collTrig('left', () => {
+    collIdx = (collIdx + 1) % collCollections.length;
+    collInputIdx = 0;
+    collRender();
+  });
+}
+function collPrev() {
+  collTrig('right', () => {
+    collIdx = (collIdx - 1 + collCollections.length) % collCollections.length;
+    collInputIdx = 0;
+    collRender();
+  });
+}
+
+// Info panel
+document.getElementById('collInfoBtn').addEventListener('click', () => {
+  document.getElementById('collCardInfoText').textContent = collCurrent().description;
+  collCardInfo.classList.add('visible');
+});
+document.getElementById('collCardInfoClose').addEventListener('click', () => {
+  collCardInfo.classList.remove('visible');
+  collCardInfo.scrollTop = 0;
+});
+
+// Touch
+let cTx=0,cTy=0,cTt=0,cMov=false;
+collCardEl.addEventListener('touchstart', e => { cTx=e.touches[0].clientX; cTy=e.touches[0].clientY; cTt=Date.now(); cMov=false; e.preventDefault(); }, { passive: false });
+collCardEl.addEventListener('touchmove',  e => { if (Math.abs(e.touches[0].clientX-cTx)>10||Math.abs(e.touches[0].clientY-cTy)>10) cMov=true; e.preventDefault(); }, { passive: false });
+collCardEl.addEventListener('touchend',   e => {
+  e.preventDefault();
+  const dx=e.changedTouches[0].clientX-cTx, dy=e.changedTouches[0].clientY-cTy;
+  const adx=Math.abs(dx), ady=Math.abs(dy);
+  if (!cMov && Date.now()-cTt<500)       { collFlipFn(!collFlipped); return; }
+  if (cMov && adx>40 && adx>ady) { dx>0 ? collPrev() : collNext(); return; }
+  if (cMov && ady>40 && ady>adx) { dy>0 ? collPrevInput() : collNextInput(); return; }
+}, { passive: false });
+
+// Buttons
+document.getElementById('collNextBtn').addEventListener('click', collNext);
+document.getElementById('collPrevBtn').addEventListener('click', collPrev);
+document.getElementById('collNextInputBtn').addEventListener('click', collNextInput);
+document.getElementById('collPrevInputBtn').addEventListener('click', collPrevInput);
+document.getElementById('collCloseBtn').addEventListener('click', () => showModeScreen(activeCollectionKey, activeCollectionLabel));
+
+// Show Collections mode
+function showCollections() {
+  const key = activeCollectionKey;
+  if (!conversationalCollections[key] || !conversationalCollections[key].length) return;
+  collCollections = conversationalCollections[key];
+  collIdx      = 0;
+  collInputIdx = 0;
+  modeScreen.style.display = 'none';
+  collScreen.style.display = 'flex';
+  collRender();
+}
+
+addModeListener('modeCollections', showCollections);
+
+// Init feedback bars for coll screen
+fbInitBar('fb-coll-front');
+fbInitBar('fb-coll-back');
