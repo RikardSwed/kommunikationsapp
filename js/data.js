@@ -28,7 +28,7 @@ const collections = {
       name: "Negative Assertion",
       description: "Negative assertion means actively and calmly agreeing with your own faults when someone points them out — without over-apologising or getting defensive.\n\nThe key principle: acknowledge without shrinking.\n\nNot: \"Oh no, I'm so sorry…\"\nNot: \"Yes but it's because…\" (explanation = defence)\nYes: \"You're right. That's true.\" — short, calm, owned.\n\nMindset: I can be wrong and still be okay. Acknowledging a mistake shows strength.",
       inputs: [
-        { q: "Someone points out you were late",               a: '"Yes, I was late. It happens."' },
+        { q: "Someone points out you were late",               a: '"You\'re right, I was late. That\'s on me."' },
         { q: "Someone says your joke wasn\'t funny",           a: '"No, that one didn\'t land."' },
         { q: "Someone criticises how you handled a situation", a: '"You\'re right, I could have done that differently."' },
         { q: "Someone points out a mistake you made at work",  a: '"Yes, that was a mistake. I\'ll fix it."' },
