@@ -1,14 +1,65 @@
 // app.js — All application logic for Communication Trainer
 // Depends on: data.js and multiStepData.js (must be loaded first)
 
-const VERSION = 'v1.8.3';
+const VERSION = 'v1.8.4';
 
-// ─── SCREENS ─────────────────────────────────────────────────────────────────
+// ─── SCREEN TRANSITION SYSTEM ─────────────────────────────────────────────────
+// Two layers: home↔mode slides right, mode↔training slides up from bottom.
+
 const homeScreen     = document.getElementById('homeScreen');
 const modeScreen     = document.getElementById('modeScreen');
 const trainingScreen = document.getElementById('trainingScreen');
 const msScreen       = document.getElementById('msScreen');
 const memScreen      = document.getElementById('memScreen');
+
+const TRAINING_SCREENS = [
+  'trainingScreen','memScreen','msScreen','flowScreen','guidedScreen',
+  'hfScreen','hfMemScreen','collScreen'
+];
+
+function hideAllTraining() {
+  TRAINING_SCREENS.forEach(id => {
+    const el = document.getElementById(id);
+    el.classList.remove('screen--active');
+    el.classList.add('screen--bottom-enter');
+  });
+}
+
+function navToHome() {
+  // Hide mode screen (slide right), keep home active
+  modeScreen.classList.remove('screen--active');
+  modeScreen.classList.add('screen--right-enter');
+  homeScreen.classList.add('screen--active');
+  hideAllTraining();
+}
+
+function navToMode() {
+  // Slide mode in from right
+  homeScreen.classList.remove('screen--active');
+  modeScreen.classList.remove('screen--right-enter', 'screen--right-exit');
+  // Force reflow so transition fires
+  void modeScreen.offsetWidth;
+  modeScreen.classList.add('screen--active');
+  hideAllTraining();
+}
+
+function navToTraining(id) {
+  // Slide training screen up from bottom
+  hideAllTraining();
+  const el = document.getElementById(id);
+  el.classList.remove('screen--bottom-enter', 'screen--bottom-exit');
+  void el.offsetWidth;
+  el.classList.add('screen--active');
+}
+
+function navFromTraining(id) {
+  // Slide training screen back down
+  const el = document.getElementById(id);
+  el.classList.remove('screen--active');
+  el.classList.add('screen--bottom-exit');
+  setTimeout(() => el.classList.replace('screen--bottom-exit', 'screen--bottom-enter'), 340);
+  modeScreen.classList.add('screen--active');
+}
 
 // ─── DOM — SINGLE STRATEGY ───────────────────────────────────────────────────
 const card           = document.getElementById('card');
@@ -68,15 +119,7 @@ let msAnimating  = false;
 
 // ─── NAVIGATION ──────────────────────────────────────────────────────────────
 function showHome() {
-  homeScreen.style.display     = 'flex';
-  modeScreen.style.display     = 'none';
-  trainingScreen.style.display = 'none';
-  msScreen.style.display       = 'none';
-  memScreen.style.display      = 'none';
-  document.getElementById('flowScreen').style.display   = 'none';
-  document.getElementById('guidedScreen').style.display = 'none';
-  document.getElementById('hfScreen').style.display   = 'none';
-  document.getElementById('hfMemScreen').style.display = 'none';
+  navToHome();
   closeInfo();
 }
 
@@ -84,16 +127,7 @@ function showModeScreen(key, label) {
   activeCollectionKey   = key;
   activeCollectionLabel = label;
   document.getElementById('modeCollectionName').textContent = label;
-  homeScreen.style.display     = 'none';
-  modeScreen.style.display     = 'flex';
-  trainingScreen.style.display = 'none';
-  msScreen.style.display       = 'none';
-  memScreen.style.display      = 'none';
-  document.getElementById('flowScreen').style.display   = 'none';
-  document.getElementById('guidedScreen').style.display = 'none';
-  document.getElementById('hfScreen').style.display   = 'none';
-  document.getElementById('hfMemScreen').style.display = 'none';
-  document.getElementById('collScreen').style.display  = 'none';
+  navToMode();
 }
 
 function showTraining() {
@@ -101,18 +135,16 @@ function showTraining() {
   if (!strategies.length) return;
   stratOrder  = strategies.map((_, i) => i);
   inputOrders = strategies.map(s => s.inputs.map((_, i) => i));
-  modeScreen.style.display     = 'none';
-  trainingScreen.style.display = 'flex';
   stratIdx = 0; inputIdx = 0;
+  navToTraining('trainingScreen');
   render();
 }
 
 function showMultiStep() {
   msStrategies = multiStepCollections[activeCollectionKey] || [];
   if (msStrategies.length === 0) return;
-  modeScreen.style.display = 'none';
-  msScreen.style.display   = 'flex';
   msStratIdx = 0; msInputIdx = 0; msStepIdx = 0;
+  navToTraining('msScreen');
   msRender();
 }
 
@@ -120,11 +152,11 @@ function showMultiStep() {
 function showMemorize() {
   memStrategies = memorizeCollections[activeCollectionKey] || [];
   if (memStrategies.length === 0) return;
-  modeScreen.style.display = 'none';
-  memScreen.style.display  = 'flex';
   memStratIdx = 0; memCardIdx = 0;
+  navToTraining('memScreen');
   memRender();
 }
+
 
 function addModeListener(id, fn) {
   const el = document.getElementById(id);
@@ -432,14 +464,16 @@ document.getElementById('msPrevStrat').addEventListener('click',    msPrevStrate
 document.addEventListener('keydown', e => {
   if (document.getElementById('settingsOverlay').classList.contains('open')) return;
 
+  const isTraining = id => document.getElementById(id).classList.contains('screen--active');
+
   if (e.key === 'Escape') {
-    if (trainingScreen.style.display !== 'none' || msScreen.style.display !== 'none' || memScreen.style.display !== 'none')
+    if (TRAINING_SCREENS.some(isTraining))
       showModeScreen(activeCollectionKey, activeCollectionLabel);
-    else if (modeScreen.style.display !== 'none') showHome();
+    else if (modeScreen.classList.contains('screen--active')) showHome();
     return;
   }
 
-  if (trainingScreen.style.display !== 'none') {
+  if (isTraining('trainingScreen')) {
     if (e.key === 'ArrowRight') nextStrategy();
     if (e.key === 'ArrowLeft')  prevStrategy();
     if (e.key === 'ArrowDown')  nextInput();
@@ -447,7 +481,7 @@ document.addEventListener('keydown', e => {
     if (e.key === ' ')          { e.preventDefault(); flip(!flipped); }
   }
 
-  if (msScreen.style.display !== 'none') {
+  if (isTraining('msScreen')) {
     if (e.key === 'ArrowRight') msNextStep();
     if (e.key === 'ArrowLeft')  msPrevStep();
     if (e.key === 'ArrowDown')  msNextInput();
@@ -455,13 +489,14 @@ document.addEventListener('keydown', e => {
     if (e.key === ' ')          { e.preventDefault(); msFlip(!msFlipped); }
   }
 
-  if (memScreen.style.display !== 'none') {
+  if (isTraining('memScreen')) {
     if (e.key === 'ArrowRight') memNextStrategy();
     if (e.key === 'ArrowLeft')  memPrevStrategy();
     if (e.key === 'ArrowDown')  memNextCard();
     if (e.key === 'ArrowUp')    memPrevCard();
     if (e.key === ' ')          { e.preventDefault(); memFlipFn(!memFlipped); }
   }
+
 });
 
 // ─── SETTINGS ────────────────────────────────────────────────────────────────
@@ -497,7 +532,7 @@ function applySettings() {
     stratOrder  = shS ? shuffle(strategies.map((_, i) => i)) : strategies.map((_, i) => i);
     inputOrders = strategies.map(s => shI ? shuffle(s.inputs.map((_, i) => i)) : s.inputs.map((_, i) => i));
     // Re-render whichever training screen is currently visible
-    if (trainingScreen.style.display !== 'none') { stratIdx = 0; inputIdx = 0; render(); }
+    if (document.getElementById('trainingScreen').classList.contains('screen--active')) { stratIdx = 0; inputIdx = 0; render(); }
   }
 }
 
@@ -525,7 +560,7 @@ function buildFlowSequence(combo) {
 function showFlow() {
   flowStrategies = multiStepCollections[activeCollectionKey] || [];
   if (!flowStrategies.length) return;
-  modeScreen.style.display = 'none'; flowScreen.style.display = 'flex';
+  navToTraining('flowScreen');
   flowComboIdx = 0; flowCardIdx = 0;
   flowSequence = buildFlowSequence(flowStrategies[0]);
   flowRender();
@@ -595,7 +630,7 @@ let guidedFlipped=false, guidedAnimating=false;
 function showGuided() {
   guidedStrategies = multiStepCollections[activeCollectionKey] || [];
   if (!guidedStrategies.length) return;
-  modeScreen.style.display = 'none'; guidedScreen.style.display = 'flex';
+  navToTraining('guidedScreen');
   guidedComboIdx=0; guidedInputIdx=0; guidedStepIdx=0;
   guidedRender();
 }
@@ -970,9 +1005,8 @@ function showHandsfree() {
   if (!strategies.length) return;
   stratOrder  = strategies.map((_,i)=>i);
   inputOrders = strategies.map(s=>s.inputs.map((_,i)=>i));
-  modeScreen.style.display = 'none';
-  document.getElementById('hfScreen').style.display = 'flex';
   stratIdx = 0; inputIdx = 0;
+  navToTraining('hfScreen');
   hfRender();
   hfUpdateButtons();
 }
@@ -1242,9 +1276,8 @@ document.getElementById('hfMemNextCardBtn').addEventListener('click', ()=>{memCa
 function showHandsfreeMemorize() {
   memStrategies = memorizeCollections[activeCollectionKey] || [];
   if (!memStrategies.length) return;
-  modeScreen.style.display = 'none';
-  document.getElementById('hfMemScreen').style.display = 'flex';
   memStratIdx = 0; memCardIdx = 0;
+  navToTraining('hfMemScreen');
   hfMemRender();
   hfMemUpdateButtons();
 }
@@ -1519,8 +1552,7 @@ function showCollections() {
   collCollections = conversationalCollections[key];
   collIdx      = 0;
   collInputIdx = 0;
-  modeScreen.style.display = 'none';
-  collScreen.style.display = 'flex';
+  navToTraining('collScreen');
   collRender();
 }
 
