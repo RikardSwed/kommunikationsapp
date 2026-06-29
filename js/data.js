@@ -242,7 +242,7 @@ const conversationalCollections = {
       description: "17 ways to open a conversation — grouped into four categories:\n\n**Basic:** Simple greeting · Introduce yourself · Situational comment · Polite request\n\n**Question-based:** Ask about the situation · Open question · Curiosity · Genuine curiosity about how they are · Ask about them\n\n**Statement & feeling:** Specific compliment · Statement or guess about the person · Express a feeling\n\n**Relationship-building:** Shared experience · Something that happened · Relevant topic · Framing\n\n**Playful:** Humour (irony or exaggeration)\n\nMindset: Simple openings work best — you don't need to be clever, just natural. Most people want someone to take the initiative.",
       inputs: [
         // Direct — name the strategy, demonstrate it
-        { type: "direct", q: "Use a simple greeting to start a conversation", a: '"Hey — how's it going?" or "Morning!" — short, warm, no pressure.' },
+        { type: "direct", q: "Use a simple greeting to start a conversation", a: "\"Hey \u2014 how's it going?\" or \"Morning!\" \u2014 short, warm, no pressure." },
         { type: "direct", q: "Introduce yourself to someone you haven't met", a: '"I don\'t think we\'ve met — I\'m [name]." — direct and confident.' },
         { type: "direct", q: "Use a specific compliment to open", a: '"That\'s a great jacket." or "I like your notebook." — specific, not generic.' },
         { type: "direct", q: "Open with a question about the situation", a: '"Is this your first time here?" or "Do you know when it starts?" — low stakes, easy to answer.' },
