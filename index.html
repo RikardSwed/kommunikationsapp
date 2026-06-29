@@ -53,14 +53,19 @@
       <div class="mode-info"><div class="mode-name">Single Strategy</div><div class="mode-desc">Study one strategy at a time with example inputs</div></div>
       <div class="mode-arrow">›</div>
     </div>
-    <div class="mode-card" id="modeMemorize">
-      <div class="mode-icon">◎</div>
-      <div class="mode-info"><div class="mode-name">Memorize</div><div class="mode-desc">Test your knowledge of the theory behind each strategy</div></div>
+    <div class="mode-card" id="modeCollections">
+      <div class="mode-icon">⧆</div>
+      <div class="mode-info"><div class="mode-name">Collections</div><div class="mode-desc">Train across a themed collection of strategies</div></div>
       <div class="mode-arrow">›</div>
     </div>
     <div class="mode-card" id="modeFlow">
       <div class="mode-icon">⇉</div>
       <div class="mode-info"><div class="mode-name">Sequences</div><div class="mode-desc">Steps and situations in one seamless sequence</div></div>
+      <div class="mode-arrow">›</div>
+    </div>
+    <div class="mode-card" id="modeMemorize">
+      <div class="mode-icon">◎</div>
+      <div class="mode-info"><div class="mode-name">Memorize</div><div class="mode-desc">Test your knowledge of the theory behind each strategy</div></div>
       <div class="mode-arrow">›</div>
     </div>
     <div class="mode-card" id="modeHandsfree">
@@ -71,11 +76,6 @@
     <div class="mode-card" id="modeHandsfreeMemorize">
       <div class="mode-icon">🎧</div>
       <div class="mode-info"><div class="mode-name">Handsfree: Memorize</div><div class="mode-desc">Listen to theory cards with automatic playback</div></div>
-      <div class="mode-arrow">›</div>
-    </div>
-    <div class="mode-card" id="modeCollections">
-      <div class="mode-icon">⧆</div>
-      <div class="mode-info"><div class="mode-name">Collections</div><div class="mode-desc">Train across a themed collection of strategies</div></div>
       <div class="mode-arrow">›</div>
     </div>
     <!-- BETA SECTION -->
@@ -348,7 +348,7 @@
       <label>Show hints</label>
       <label class="toggle"><input type="checkbox" id="showHints" checked /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.8.0</div>
+    <div class="settings-version">v1.8.1</div>
     <button class="settings-close" id="settingsClose">Done</button>
   </div>
 </div>
@@ -421,7 +421,7 @@
       <label>Loop current strategy</label>
       <label class="toggle"><input type="checkbox" id="hfLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.8.0</div>
+    <div class="settings-version">v1.8.1</div>
     <button class="settings-close" id="hfSettingsClose">Done</button>
   </div>
 </div>
@@ -490,7 +490,7 @@
       <label>Loop current strategy</label>
       <label class="toggle"><input type="checkbox" id="hfMemLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.8.0</div>
+    <div class="settings-version">v1.8.1</div>
     <button class="settings-close" id="hfMemSettingsClose">Done</button>
   </div>
 </div>
@@ -500,7 +500,7 @@
   <div class="topbar">
     <button class="topbar-btn" id="collCloseBtn">✕</button>
     <span class="counter" id="collCounter">1 / 2</span>
-    <button class="topbar-btn" id="collInfoBtn">ⓘ</button>
+    <div class="topbar-btn" style="visibility:hidden;"></div>
   </div>
   <div class="divider"></div>
   <div class="strategy-label" id="collName"></div>
@@ -537,15 +537,15 @@
       <label style="font-size:13px; color:#888;">Export all ratings as JSON</label>
       <button id="feedbackExportBtn" style="font-size:13px; color:#555; background:#f0f0f0; border:1px solid #ddd; border-radius:8px; padding:6px 12px; cursor:pointer;">Export</button>
     </div>
-    <div class="settings-version">v1.8.0</div>
+    <div class="settings-version">v1.8.1</div>
     <button class="settings-close" id="homeSettingsClose">Done</button>
   </div>
 </div>
 
-<script src="js/data.js?v=180"></script>
-<script src="js/multiStepData.js?v=180"></script>
-<script src="js/memorizeData.js?v=180"></script>
-<script src="js/app.js?v=180"></script>
+<script src="js/data.js?v=181"></script>
+<script src="js/multiStepData.js?v=181"></script>
+<script src="js/memorizeData.js?v=181"></script>
+<script src="js/app.js?v=181"></script>
 
 </body>
 </html>
