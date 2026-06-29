@@ -1,7 +1,7 @@
 // app.js — All application logic for Communication Trainer
 // Depends on: data.js and multiStepData.js (must be loaded first)
 
-const VERSION = 'v1.8.2';
+const VERSION = 'v1.8.3';
 
 // ─── SCREENS ─────────────────────────────────────────────────────────────────
 const homeScreen     = document.getElementById('homeScreen');
@@ -1482,6 +1482,7 @@ function collPrev() {
 
 // Info panel — tap strategy name to open, like Single Strategy
 document.getElementById('collName').addEventListener('click', () => {
+  if (!collCollections.length) return;
   document.getElementById('collCardInfoText').textContent = collCurrent().description;
   collCardInfo.classList.add('visible');
 });
