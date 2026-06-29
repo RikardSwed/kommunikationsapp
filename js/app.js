@@ -1,7 +1,7 @@
 // app.js — All application logic for Communication Trainer
 // Depends on: data.js and multiStepData.js (must be loaded first)
 
-const VERSION = 'v1.9.0';
+const VERSION = 'v1.9.1';
 
 // ─── SCREENS ──────────────────────────────────────────────────────────────────
 const homeScreen     = document.getElementById('homeScreen');
@@ -55,8 +55,10 @@ function navToTraining(id) {
 }
 
 function navFromTraining(id) {
-  // Show mode behind before animating training away
+  // Show mode immediately behind (no animation), hide home
+  homeScreen.style.display = 'none';
   modeScreen.style.display = 'flex';
+  modeScreen.classList.remove('slide-in-right', 'slide-out-right');
   const el = document.getElementById(id);
   el.classList.remove('slide-in-bottom', 'slide-out-bottom');
   void el.offsetWidth;
