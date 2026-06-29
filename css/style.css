@@ -18,24 +18,14 @@ body {
 
 .screen {
   position: fixed;
-  inset: 0;
+  top: 0; left: 0; right: 0; bottom: 0;
   display: flex;
   justify-content: center;
   align-items: flex-start;
   will-change: transform;
-  transition: transform 0.32s cubic-bezier(0.4, 0, 0.2, 1);
+  background: #f0f2f5;
+  overflow: hidden;
 }
-
-/* Slide from/to right (home ↔ mode) */
-.screen--right-enter  { transform: translateX(100%); }
-.screen--right-exit   { transform: translateX(100%); }
-
-/* Slide from/to bottom (mode ↔ training) */
-.screen--bottom-enter { transform: translateY(100%); }
-.screen--bottom-exit  { transform: translateY(100%); }
-
-/* Active state — centred, fully visible */
-.screen--active { transform: translate(0, 0); }
 
 /* ─── HOME SCREEN ─────────────────────────────────────────────────────────── */
 
