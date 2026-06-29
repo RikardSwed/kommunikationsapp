@@ -1,7 +1,7 @@
 // app.js — All application logic for Communication Trainer
 // Depends on: data.js and multiStepData.js (must be loaded first)
 
-const VERSION = 'v1.9.3';
+const VERSION = 'v1.9.4';
 
 // ─── SCREENS ──────────────────────────────────────────────────────────────────
 const homeScreen     = document.getElementById('homeScreen');
@@ -1576,3 +1576,106 @@ addModeListener('modeCollections', showCollections);
 // Init feedback bars for coll screen
 fbInitBar('fb-coll-front');
 fbInitBar('fb-coll-back');
+
+
+// ── CHALLENGES MODE ───────────────────────────────────────────────────────────
+
+let challChallenges = [];
+let challIdx        = 0;
+let challInputIdx   = 0;
+let challFlipped    = false;
+let challAnimating  = false;
+
+const challScreen    = document.getElementById('challScreen');
+const challCardEl    = document.getElementById('challCard');
+const challCardInner = document.getElementById('challCardInner');
+const challCardInfo  = document.getElementById('challCardInfo');
+
+function challCurrent()      { return challChallenges[challIdx]; }
+function challCurrentInput() { return challCurrent().inputs[challInputIdx]; }
+
+function challFlipFn(val, animate = true) {
+  challFlipped = val;
+  challCardInner.style.transition = animate ? 'transform 0.4s ease' : 'none';
+  challCardInner.classList.toggle('flipped', challFlipped);
+}
+
+function challRender() {
+  const ch  = challCurrent();
+  const inp = challCurrentInput();
+  document.getElementById('challName').textContent      = ch.name;
+  document.getElementById('challFrontText').textContent = inp.q;
+  document.getElementById('challBackText').textContent  = inp.a;
+  document.getElementById('challCounter').textContent   = `${challIdx + 1} / ${challChallenges.length}`;
+  challFlipFn(false, false);
+  const hints = document.getElementById('challHint');
+  if (hints) hints.style.display = document.getElementById('showHints').checked ? '' : 'none';
+  fbRender('fb-chall-front', fbKey('chall', challIdx, challInputIdx, 'front'));
+  fbRender('fb-chall-back',  fbKey('chall', challIdx, challInputIdx, 'back'));
+}
+
+function challTrig(dir, cb) {
+  if (challAnimating) return; challAnimating = true;
+  challCardEl.classList.add('swipe-' + dir);
+  setTimeout(() => { challCardEl.classList.remove('swipe-' + dir); cb(); challAnimating = false; }, 220);
+}
+
+function challNext()       { challTrig('left',  () => { challIdx = (challIdx + 1) % challChallenges.length; challInputIdx = 0; challRender(); }); }
+function challPrev()       { challTrig('right', () => { challIdx = (challIdx - 1 + challChallenges.length) % challChallenges.length; challInputIdx = 0; challRender(); }); }
+function challNextInput()  { challTrig('up',    () => { challInputIdx = (challInputIdx + 1) % challCurrent().inputs.length; challRender(); }); }
+function challPrevInput()  { challTrig('down',  () => { challInputIdx = (challInputIdx - 1 + challCurrent().inputs.length) % challCurrent().inputs.length; challRender(); }); }
+
+// Info panel
+document.getElementById('challName').addEventListener('click', () => {
+  if (!challChallenges.length) return;
+  document.getElementById('challCardInfoText').textContent = challCurrent().description;
+  challCardInfo.classList.add('visible');
+});
+document.getElementById('challName').addEventListener('touchend', e => { e.preventDefault(); document.getElementById('challName').click(); }, { passive: false });
+document.getElementById('challCardInfoClose').addEventListener('click', e => { e.stopPropagation(); challCardInfo.classList.remove('visible'); challCardInfo.scrollTop = 0; });
+challCardInfo.addEventListener('touchstart', e => e.stopPropagation(), { passive: true });
+challCardInfo.addEventListener('touchmove',  e => e.stopPropagation(), { passive: true });
+challCardInfo.addEventListener('touchend',   e => e.stopPropagation(), { passive: true });
+
+// Settings button reuses main settings overlay
+document.getElementById('challSettingsBtn').addEventListener('click', () => document.getElementById('settingsOverlay').classList.add('open'));
+
+// Touch
+let chTx=0,chTy=0,chTt=0,chMov=false;
+challCardEl.addEventListener('touchstart', e => { chTx=e.touches[0].clientX; chTy=e.touches[0].clientY; chTt=Date.now(); chMov=false; e.preventDefault(); }, { passive: false });
+challCardEl.addEventListener('touchmove',  e => { if (Math.abs(e.touches[0].clientX-chTx)>10||Math.abs(e.touches[0].clientY-chTy)>10) chMov=true; e.preventDefault(); }, { passive: false });
+challCardEl.addEventListener('touchend',   e => {
+  e.preventDefault();
+  const dx=e.changedTouches[0].clientX-chTx, dy=e.changedTouches[0].clientY-chTy;
+  const adx=Math.abs(dx), ady=Math.abs(dy);
+  if (!chMov && Date.now()-chTt<500)       { challFlipFn(!challFlipped); return; }
+  if (chMov && adx>40 && adx>ady) { dx>0 ? challPrev() : challNext(); return; }
+  if (chMov && ady>40 && ady>adx) { dy>0 ? challPrevInput() : challNextInput(); return; }
+}, { passive: false });
+
+// Buttons
+document.getElementById('challNextBtn').addEventListener('click', challNext);
+document.getElementById('challPrevBtn').addEventListener('click', challPrev);
+document.getElementById('challNextInputBtn').addEventListener('click', challNextInput);
+document.getElementById('challPrevInputBtn').addEventListener('click', challPrevInput);
+document.getElementById('challCloseBtn').addEventListener('click', () => closeTraining('challScreen'));
+
+// Show Challenges mode
+function showChallenges() {
+  const key = activeCollectionKey;
+  if (!challengesCollections[key] || !challengesCollections[key].length) return;
+  challChallenges = challengesCollections[key];
+  challIdx      = 0;
+  challInputIdx = 0;
+  navToTraining('challScreen');
+  challRender();
+}
+
+addModeListener('modeChallenges', showChallenges);
+
+// Add challScreen to TRAINING_SCREENS
+TRAINING_SCREENS.push('challScreen');
+
+// Init feedback bars
+fbInitBar('fb-chall-front');
+fbInitBar('fb-chall-back');
