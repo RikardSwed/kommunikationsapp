@@ -1,7 +1,7 @@
 // app.js — All application logic for Communication Trainer
 // Depends on: data.js and multiStepData.js (must be loaded first)
 
-const VERSION = 'v1.8.1';
+const VERSION = 'v1.8.2';
 
 // ─── SCREENS ─────────────────────────────────────────────────────────────────
 const homeScreen     = document.getElementById('homeScreen');
@@ -97,7 +97,8 @@ function showModeScreen(key, label) {
 }
 
 function showTraining() {
-  strategies  = collections[activeCollectionKey];
+  strategies  = collections[activeCollectionKey] || [];
+  if (!strategies.length) return;
   stratOrder  = strategies.map((_, i) => i);
   inputOrders = strategies.map(s => s.inputs.map((_, i) => i));
   modeScreen.style.display     = 'none';
@@ -965,7 +966,8 @@ document.getElementById('hfNextInputBtn').addEventListener('click',()=>{const o=
 
 // ── showHandsfree ─────────────────────────────────────────────────────────────
 function showHandsfree() {
-  strategies  = collections[activeCollectionKey];
+  strategies  = collections[activeCollectionKey] || [];
+  if (!strategies.length) return;
   stratOrder  = strategies.map((_,i)=>i);
   inputOrders = strategies.map(s=>s.inputs.map((_,i)=>i));
   modeScreen.style.display = 'none';
