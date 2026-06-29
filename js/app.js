@@ -1,7 +1,7 @@
 // app.js — All application logic for Communication Trainer
 // Depends on: data.js and multiStepData.js (must be loaded first)
 
-const VERSION = 'v1.8.7';
+const VERSION = 'v1.8.8';
 
 // ─── SCREENS ──────────────────────────────────────────────────────────────────
 const homeScreen     = document.getElementById('homeScreen');
@@ -22,25 +22,41 @@ function hideAll() {
 }
 
 function navToHome() {
-  hideAll();
-  homeScreen.style.display = 'flex';
+  // Slide mode out to right, then hide
+  modeScreen.classList.remove('slide-in-right', 'slide-out-right');
+  void modeScreen.offsetWidth;
+  modeScreen.classList.add('slide-out-right');
+  setTimeout(() => { hideAll(); homeScreen.style.display = 'flex'; }, 300);
 }
 
 function navToMode() {
   hideAll();
   modeScreen.style.display = 'flex';
-  modeScreen.classList.remove('slide-in-right');
+  modeScreen.classList.remove('slide-in-right', 'slide-out-right');
   void modeScreen.offsetWidth;
   modeScreen.classList.add('slide-in-right');
 }
 
 function navToTraining(id) {
   hideAll();
+  modeScreen.style.display = 'flex'; // keep mode visible behind animation
   const el = document.getElementById(id);
   el.style.display = 'flex';
-  el.classList.remove('slide-in-bottom');
+  el.classList.remove('slide-in-bottom', 'slide-out-bottom');
   void el.offsetWidth;
   el.classList.add('slide-in-bottom');
+}
+
+function navFromTraining(id) {
+  // Slide training screen down, then show mode
+  const el = document.getElementById(id);
+  el.classList.remove('slide-in-bottom', 'slide-out-bottom');
+  void el.offsetWidth;
+  el.classList.add('slide-out-bottom');
+  setTimeout(() => {
+    el.style.display = 'none';
+    el.classList.remove('slide-out-bottom');
+  }, 300);
 }
 
 const card           = document.getElementById('card');
@@ -177,9 +193,16 @@ addModeListener('modeMultiStep', showMultiStep);
 addModeListener('modeMemorize', showMemorize);
 
 // Back buttons
-document.getElementById('closeBtn').addEventListener('click',   () => showModeScreen(activeCollectionKey, activeCollectionLabel));
-document.getElementById('msCloseBtn').addEventListener('click',  () => showModeScreen(activeCollectionKey, activeCollectionLabel));
-document.getElementById('memCloseBtn').addEventListener('click', () => showModeScreen(activeCollectionKey, activeCollectionLabel));
+function closeTraining(screenId) {
+  navFromTraining(screenId);
+  // showModeScreen sets activeCollection labels etc but we don't want hideAll
+  // so we call it after the animation starts
+  document.getElementById('modeCollectionName').textContent = activeCollectionLabel;
+}
+
+document.getElementById('closeBtn').addEventListener('click',   () => closeTraining('trainingScreen'));
+document.getElementById('msCloseBtn').addEventListener('click',  () => closeTraining('msScreen'));
+document.getElementById('memCloseBtn').addEventListener('click', () => closeTraining('memScreen'));
 
 // ─── SINGLE STRATEGY — INFO OVERLAY ──────────────────────────────────────────
 let infoOpen = false;
@@ -445,11 +468,11 @@ document.getElementById('msPrevStrat').addEventListener('click',    msPrevStrate
 document.addEventListener('keydown', e => {
   if (document.getElementById('settingsOverlay').classList.contains('open')) return;
 
-  const isTraining = id => document.getElementById(id).classList.contains('screen--active');
+  const isTraining = id => document.getElementById(id).style.display === 'flex';
 
   if (e.key === 'Escape') {
-    if (TRAINING_SCREENS.some(isTraining))
-      showModeScreen(activeCollectionKey, activeCollectionLabel);
+    const activeTraining = TRAINING_SCREENS.find(isTraining);
+    if (activeTraining) closeTraining(activeTraining);
     else if (modeScreen.classList.contains('screen--active')) showHome();
     return;
   }
@@ -590,7 +613,7 @@ document.getElementById('flowNextCardBtn').addEventListener('click',  flowNextCa
 document.getElementById('flowPrevCardBtn').addEventListener('click',  flowPrevCard);
 document.getElementById('flowNextComboBtn').addEventListener('click', flowNextCombo);
 document.getElementById('flowPrevComboBtn').addEventListener('click', flowPrevCombo);
-document.getElementById('flowCloseBtn').addEventListener('click', ()=>showModeScreen(activeCollectionKey,activeCollectionLabel));
+document.getElementById('flowCloseBtn').addEventListener('click', ()=>closeTraining('flowScreen'));
 document.getElementById('flowSettingsBtn').addEventListener('click', ()=>document.getElementById('settingsOverlay').classList.add('open'));
 addModeListener('modeFlow', showFlow);
 
@@ -678,7 +701,7 @@ document.getElementById('guidedNextComboBtn').addEventListener('click',    guide
 document.getElementById('guidedPrevComboBtn').addEventListener('click',    guidedPrevCombo);
 document.getElementById('guidedNextInputBtn').addEventListener('click',    guidedNextInput);
 document.getElementById('guidedPrevInputBtn').addEventListener('click',    guidedPrevInput);
-document.getElementById('guidedCloseBtn').addEventListener('click', ()=>showModeScreen(activeCollectionKey,activeCollectionLabel));
+document.getElementById('guidedCloseBtn').addEventListener('click', ()=>closeTraining('guidedScreen'));
 document.getElementById('guidedSettingsBtn').addEventListener('click', ()=>document.getElementById('settingsOverlay').classList.add('open'));
 addModeListener('modeGuided', showGuided);
 
@@ -939,7 +962,7 @@ document.getElementById('hfPrevStepBtn').addEventListener('touchend', e => { e.s
 
 document.getElementById('hfCloseBtn').addEventListener('click', () => {
   hfStop();
-  showModeScreen(activeCollectionKey, activeCollectionLabel);
+  closeTraining('hfScreen');
 });
 document.getElementById('hfSettingsBtn').addEventListener('click', () =>
   document.getElementById('hfSettingsOverlay').classList.add('open'));
@@ -1211,7 +1234,7 @@ document.getElementById('hfMemPrevStepBtn').addEventListener('touchend', e => { 
 
 document.getElementById('hfMemCloseBtn').addEventListener('click', () => {
   hfMemStop();
-  showModeScreen(activeCollectionKey, activeCollectionLabel);
+  closeTraining('hfMemScreen');
 });
 document.getElementById('hfMemSettingsBtn').addEventListener('click', () =>
   document.getElementById('hfMemSettingsOverlay').classList.add('open'));
@@ -1524,7 +1547,7 @@ document.getElementById('collNextBtn').addEventListener('click', collNext);
 document.getElementById('collPrevBtn').addEventListener('click', collPrev);
 document.getElementById('collNextInputBtn').addEventListener('click', collNextInput);
 document.getElementById('collPrevInputBtn').addEventListener('click', collPrevInput);
-document.getElementById('collCloseBtn').addEventListener('click', () => showModeScreen(activeCollectionKey, activeCollectionLabel));
+document.getElementById('collCloseBtn').addEventListener('click', () => closeTraining('collScreen'));
 
 // Show Collections mode
 function showCollections() {
