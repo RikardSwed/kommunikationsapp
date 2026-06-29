@@ -9,7 +9,7 @@
 <body>
 
 <!-- HOME SCREEN -->
-<div class="home-screen" id="homeScreen">
+<div class="home-screen screen screen--active" id="homeScreen">
   <div class="home-topbar">
     <button class="topbar-btn" id="homeSettingsBtn" title="Settings">⚙️</button>
   </div>
@@ -39,7 +39,7 @@
     <div class="collection-arrow">›</div>
   </div>
 </div>
-<div class="mode-screen" id="modeScreen" style="display:none;">
+<div class="mode-screen screen screen--right-enter" id="modeScreen">
   <div class="mode-topbar">
     <button class="topbar-btn" id="modeBackBtn">←</button>
   </div>
@@ -100,7 +100,7 @@
 </div>
 
 <!-- SINGLE STRATEGY TRAINING SCREEN -->
-<div class="app" id="trainingScreen" style="display:none;">
+<div class="app screen screen--bottom-enter" id="trainingScreen">
   <div class="topbar">
     <button class="topbar-btn" id="closeBtn">✕</button>
     <span class="counter" id="counter">1 / 4</span>
@@ -130,7 +130,7 @@
 </div>
 
 <!-- MEMORIZE TRAINING SCREEN -->
-<div class="app" id="memScreen" style="display:none;">
+<div class="app screen screen--bottom-enter" id="memScreen">
   <div class="topbar">
     <button class="topbar-btn" id="memCloseBtn">✕</button>
     <span class="counter" id="memCounter">1 / 4</span>
@@ -160,7 +160,7 @@
 </div>
 
 <!-- MULTIPLE STEPS TRAINING SCREEN -->
-<div class="app" id="msScreen" style="display:none;">
+<div class="app screen screen--bottom-enter" id="msScreen">
   <div class="topbar">
     <button class="topbar-btn" id="msCloseBtn">✕</button>
     <span class="counter" id="msStepCounter">Step 1 / 3</span>
@@ -193,7 +193,7 @@
 </div>
 
 <!-- SEQUENCES TRAINING SCREEN -->
-<div class="app" id="flowScreen" style="display:none;">
+<div class="app screen screen--bottom-enter" id="flowScreen">
   <div class="topbar">
     <button class="topbar-btn" id="flowCloseBtn">✕</button>
     <span class="counter" id="flowCounter">1 / 2</span>
@@ -219,7 +219,7 @@
 </div>
 
 <!-- GUIDED TRAINING SCREEN -->
-<div class="app" id="guidedScreen" style="display:none;">
+<div class="app screen screen--bottom-enter" id="guidedScreen">
   <div class="topbar">
     <button class="topbar-btn" id="guidedCloseBtn">✕</button>
     <span class="counter" id="guidedCounter">1 / 2</span>
@@ -261,7 +261,7 @@
 </div>
 
 <!-- HANDSFREE: SINGLE STRATEGY SCREEN -->
-<div class="app" id="hfScreen" style="display:none;">
+<div class="app screen screen--bottom-enter" id="hfScreen">
   <div class="topbar">
     <button class="topbar-btn" id="hfCloseBtn">✕</button>
     <span class="counter" id="hfCounter">1 / 4</span>
@@ -297,7 +297,7 @@
 </div>
 
 <!-- HANDSFREE: MEMORIZE SCREEN -->
-<div class="app" id="hfMemScreen" style="display:none;">
+<div class="app screen screen--bottom-enter" id="hfMemScreen">
   <div class="topbar">
     <button class="topbar-btn" id="hfMemCloseBtn">✕</button>
     <span class="counter" id="hfMemCounter">1 / 4</span>
@@ -348,7 +348,7 @@
       <label>Show hints</label>
       <label class="toggle"><input type="checkbox" id="showHints" checked /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.8.3</div>
+    <div class="settings-version">v1.8.4</div>
     <button class="settings-close" id="settingsClose">Done</button>
   </div>
 </div>
@@ -421,7 +421,7 @@
       <label>Loop current strategy</label>
       <label class="toggle"><input type="checkbox" id="hfLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.8.3</div>
+    <div class="settings-version">v1.8.4</div>
     <button class="settings-close" id="hfSettingsClose">Done</button>
   </div>
 </div>
@@ -490,13 +490,13 @@
       <label>Loop current strategy</label>
       <label class="toggle"><input type="checkbox" id="hfMemLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.8.3</div>
+    <div class="settings-version">v1.8.4</div>
     <button class="settings-close" id="hfMemSettingsClose">Done</button>
   </div>
 </div>
 
 <!-- COLLECTIONS TRAINING SCREEN -->
-<div class="app" id="collScreen" style="display:none;">
+<div class="app screen screen--bottom-enter" id="collScreen">
   <div class="topbar">
     <button class="topbar-btn" id="collCloseBtn">✕</button>
     <span class="counter" id="collCounter">1 / 2</span>
@@ -537,15 +537,15 @@
       <label style="font-size:13px; color:#888;">Export all ratings as JSON</label>
       <button id="feedbackExportBtn" style="font-size:13px; color:#555; background:#f0f0f0; border:1px solid #ddd; border-radius:8px; padding:6px 12px; cursor:pointer;">Export</button>
     </div>
-    <div class="settings-version">v1.8.3</div>
+    <div class="settings-version">v1.8.4</div>
     <button class="settings-close" id="homeSettingsClose">Done</button>
   </div>
 </div>
 
-<script src="js/data.js?v=183"></script>
-<script src="js/multiStepData.js?v=183"></script>
-<script src="js/memorizeData.js?v=183"></script>
-<script src="js/app.js?v=183"></script>
+<script src="js/data.js?v=184"></script>
+<script src="js/multiStepData.js?v=184"></script>
+<script src="js/memorizeData.js?v=184"></script>
+<script src="js/app.js?v=184"></script>
 
 </body>
 </html>
