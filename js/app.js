@@ -1,7 +1,7 @@
 // app.js — All application logic for Communication Trainer
 // Depends on: data.js and multiStepData.js (must be loaded first)
 
-const VERSION = 'v1.8.4';
+const VERSION = 'v1.8.5';
 
 // ─── SCREEN TRANSITION SYSTEM ─────────────────────────────────────────────────
 
