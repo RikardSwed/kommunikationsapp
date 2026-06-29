@@ -63,6 +63,11 @@
       <div class="mode-info"><div class="mode-name">Sequences</div><div class="mode-desc">Steps and situations in one seamless sequence</div></div>
       <div class="mode-arrow">›</div>
     </div>
+    <div class="mode-card" id="modeChallenges">
+      <div class="mode-icon">⚡</div>
+      <div class="mode-info"><div class="mode-name">Challenges</div><div class="mode-desc">Train on real situations, comments and feelings</div></div>
+      <div class="mode-arrow">›</div>
+    </div>
     <div class="mode-card" id="modeMemorize">
       <div class="mode-icon">◎</div>
       <div class="mode-info"><div class="mode-name">Memorize</div><div class="mode-desc">Test your knowledge of the theory behind each strategy</div></div>
@@ -348,7 +353,7 @@
       <label>Show hints</label>
       <label class="toggle"><input type="checkbox" id="showHints" checked /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.9.3</div>
+    <div class="settings-version">v1.9.4</div>
     <button class="settings-close" id="settingsClose">Done</button>
   </div>
 </div>
@@ -421,7 +426,7 @@
       <label>Loop current strategy</label>
       <label class="toggle"><input type="checkbox" id="hfLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.9.3</div>
+    <div class="settings-version">v1.9.4</div>
     <button class="settings-close" id="hfSettingsClose">Done</button>
   </div>
 </div>
@@ -490,8 +495,38 @@
       <label>Loop current strategy</label>
       <label class="toggle"><input type="checkbox" id="hfMemLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.9.3</div>
+    <div class="settings-version">v1.9.4</div>
     <button class="settings-close" id="hfMemSettingsClose">Done</button>
+  </div>
+</div>
+
+<!-- CHALLENGES TRAINING SCREEN -->
+<div class="app" id="challScreen" style="display:none;">
+  <div class="topbar">
+    <button class="topbar-btn" id="challCloseBtn">✕</button>
+    <span class="counter" id="challCounter">1 / 7</span>
+    <button class="topbar-btn" id="challSettingsBtn">⚙</button>
+  </div>
+  <div class="divider"></div>
+  <div class="strategy-label" id="challName"></div>
+  <div class="card-area">
+    <div class="card" id="challCard">
+      <div class="card-inner" id="challCardInner">
+        <div class="card-face card-front"><p class="card-text" id="challFrontText"></p><div class="fb-bar" id="fb-chall-front"><button class="fb-btn" data-val="1"></button><button class="fb-btn" data-val="2"></button><button class="fb-btn" data-val="3"></button><button class="fb-btn" data-val="4"></button></div></div>
+        <div class="card-face card-back"><p class="card-text" id="challBackText"></p><div class="fb-bar" id="fb-chall-back"><button class="fb-btn" data-val="1"></button><button class="fb-btn" data-val="2"></button><button class="fb-btn" data-val="3"></button><button class="fb-btn" data-val="4"></button></div></div>
+      </div>
+      <div class="card-info" id="challCardInfo">
+        <button class="card-info-close" id="challCardInfoClose">✕</button>
+        <p class="card-info-text" id="challCardInfoText"></p>
+      </div>
+    </div>
+  </div>
+  <div class="hint" id="challHint">Tap card to reveal · ↑↓ next input · ←→ next challenge</div>
+  <div class="bottombar">
+    <button class="nav-btn" id="challPrevBtn">←</button>
+    <button class="nav-btn" id="challPrevInputBtn">↑</button>
+    <button class="nav-btn" id="challNextInputBtn">↓</button>
+    <button class="nav-btn" id="challNextBtn">→</button>
   </div>
 </div>
 
@@ -537,15 +572,15 @@
       <label style="font-size:13px; color:#888;">Export all ratings as JSON</label>
       <button id="feedbackExportBtn" style="font-size:13px; color:#555; background:#f0f0f0; border:1px solid #ddd; border-radius:8px; padding:6px 12px; cursor:pointer;">Export</button>
     </div>
-    <div class="settings-version">v1.9.3</div>
+    <div class="settings-version">v1.9.4</div>
     <button class="settings-close" id="homeSettingsClose">Done</button>
   </div>
 </div>
 
-<script src="js/data.js?v=193"></script>
-<script src="js/multiStepData.js?v=193"></script>
-<script src="js/memorizeData.js?v=193"></script>
-<script src="js/app.js?v=193"></script>
+<script src="js/data.js?v=194"></script>
+<script src="js/multiStepData.js?v=194"></script>
+<script src="js/memorizeData.js?v=194"></script>
+<script src="js/app.js?v=194"></script>
 
 </body>
 </html>
