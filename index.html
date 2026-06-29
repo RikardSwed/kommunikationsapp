@@ -17,7 +17,7 @@
     <div class="home-title">Communication Trainer</div>
     <div class="home-subtitle">Choose a collection to practise</div>
   </div>
-  <div class="home-section-label">Collections</div>
+  <div class="home-section-label">Packs</div>
   <div class="collection-card" id="collectionAssertive" data-key="assertive" data-label="Assertive Communication">
     <div><div class="collection-name">Assertive Communication</div><div class="collection-meta">4 strategies &nbsp;·&nbsp; Flashcard mode</div></div>
     <div class="collection-arrow">›</div>
@@ -34,9 +34,11 @@
     <div><div class="collection-name">Criticism &amp; Correction</div><div class="collection-meta">4 strategies &nbsp;·&nbsp; Flashcard mode</div></div>
     <div class="collection-arrow">›</div>
   </div>
+  <div class="collection-card" id="collectionConversational" data-key="conversational" data-label="Conversational Skills">
+    <div><div class="collection-name">Conversational Skills</div><div class="collection-meta">2 collections &nbsp;·&nbsp; Collections mode</div></div>
+    <div class="collection-arrow">›</div>
+  </div>
 </div>
-
-<!-- MODE SELECTION SCREEN -->
 <div class="mode-screen" id="modeScreen" style="display:none;">
   <div class="mode-topbar">
     <button class="topbar-btn" id="modeBackBtn">←</button>
@@ -69,6 +71,11 @@
     <div class="mode-card" id="modeHandsfreeMemorize">
       <div class="mode-icon">🎧</div>
       <div class="mode-info"><div class="mode-name">Handsfree: Memorize</div><div class="mode-desc">Listen to theory cards with automatic playback</div></div>
+      <div class="mode-arrow">›</div>
+    </div>
+    <div class="mode-card" id="modeCollections">
+      <div class="mode-icon">⧆</div>
+      <div class="mode-info"><div class="mode-name">Collections</div><div class="mode-desc">Train across a themed collection of strategies</div></div>
       <div class="mode-arrow">›</div>
     </div>
     <!-- BETA SECTION -->
@@ -341,7 +348,7 @@
       <label>Show hints</label>
       <label class="toggle"><input type="checkbox" id="showHints" checked /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.7.7</div>
+    <div class="settings-version">v1.8.0</div>
     <button class="settings-close" id="settingsClose">Done</button>
   </div>
 </div>
@@ -414,7 +421,7 @@
       <label>Loop current strategy</label>
       <label class="toggle"><input type="checkbox" id="hfLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.7.7</div>
+    <div class="settings-version">v1.8.0</div>
     <button class="settings-close" id="hfSettingsClose">Done</button>
   </div>
 </div>
@@ -483,8 +490,38 @@
       <label>Loop current strategy</label>
       <label class="toggle"><input type="checkbox" id="hfMemLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.7.7</div>
+    <div class="settings-version">v1.8.0</div>
     <button class="settings-close" id="hfMemSettingsClose">Done</button>
+  </div>
+</div>
+
+<!-- COLLECTIONS TRAINING SCREEN -->
+<div class="app" id="collScreen" style="display:none;">
+  <div class="topbar">
+    <button class="topbar-btn" id="collCloseBtn">✕</button>
+    <span class="counter" id="collCounter">1 / 2</span>
+    <button class="topbar-btn" id="collInfoBtn">ⓘ</button>
+  </div>
+  <div class="divider"></div>
+  <div class="strategy-label" id="collName"></div>
+  <div class="card-area">
+    <div class="card" id="collCard">
+      <div class="card-inner" id="collCardInner">
+        <div class="card-face card-front"><p class="card-text" id="collFrontText"></p><div class="fb-bar" id="fb-coll-front"><button class="fb-btn" data-val="1"></button><button class="fb-btn" data-val="2"></button><button class="fb-btn" data-val="3"></button><button class="fb-btn" data-val="4"></button></div></div>
+        <div class="card-face card-back"><p class="card-text" id="collBackText"></p><div class="fb-bar" id="fb-coll-back"><button class="fb-btn" data-val="1"></button><button class="fb-btn" data-val="2"></button><button class="fb-btn" data-val="3"></button><button class="fb-btn" data-val="4"></button></div></div>
+      </div>
+      <div class="card-info" id="collCardInfo">
+        <button class="card-info-close" id="collCardInfoClose">✕</button>
+        <p class="card-info-text" id="collCardInfoText"></p>
+      </div>
+    </div>
+  </div>
+  <div class="hint" id="collHint">Tap card to reveal<br>↑ ↓ next input &nbsp;·&nbsp; ← → new collection</div>
+  <div class="bottombar">
+    <button class="nav-btn" id="collPrevBtn">←</button>
+    <button class="nav-btn" id="collPrevInputBtn">↑</button>
+    <button class="nav-btn" id="collNextInputBtn">↓</button>
+    <button class="nav-btn" id="collNextBtn">→</button>
   </div>
 </div>
 
@@ -500,15 +537,15 @@
       <label style="font-size:13px; color:#888;">Export all ratings as JSON</label>
       <button id="feedbackExportBtn" style="font-size:13px; color:#555; background:#f0f0f0; border:1px solid #ddd; border-radius:8px; padding:6px 12px; cursor:pointer;">Export</button>
     </div>
-    <div class="settings-version">v1.7.7</div>
+    <div class="settings-version">v1.8.0</div>
     <button class="settings-close" id="homeSettingsClose">Done</button>
   </div>
 </div>
 
-<script src="js/data.js?v=177"></script>
-<script src="js/multiStepData.js?v=177"></script>
-<script src="js/memorizeData.js?v=177"></script>
-<script src="js/app.js?v=177"></script>
+<script src="js/data.js?v=180"></script>
+<script src="js/multiStepData.js?v=180"></script>
+<script src="js/memorizeData.js?v=180"></script>
+<script src="js/app.js?v=180"></script>
 
 </body>
 </html>
