@@ -591,3 +591,48 @@ body {
   color: #888;
   font-size: 14px;
 }
+
+/* ─── BETA SECTION ───────────────────────────────────────────────────────── */
+
+.mode-beta-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  margin: 4px 0 0;
+  cursor: pointer;
+  border-radius: 12px;
+  user-select: none;
+}
+
+.mode-beta-toggle:active {
+  background: #f0f0f0;
+}
+
+.mode-beta-label {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  color: #aaa;
+}
+
+.mode-beta-arrow {
+  font-size: 18px;
+  color: #aaa;
+  transition: transform 0.25s ease;
+}
+
+.mode-beta-arrow.open {
+  transform: rotate(90deg);
+}
+
+.mode-beta-list {
+  display: none;
+  flex-direction: column;
+  gap: 0;
+}
+
+.mode-beta-list.open {
+  display: flex;
+}
