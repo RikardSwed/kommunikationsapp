@@ -20,8 +20,16 @@ body {
   animation: slideInRight 0.32s cubic-bezier(0.4,0,0.2,1) forwards;
 }
 
+.slide-out-right {
+  animation: slideOutRight 0.32s cubic-bezier(0.4,0,0.2,1) forwards;
+}
+
 .slide-in-bottom {
   animation: slideInBottom 0.32s cubic-bezier(0.4,0,0.2,1) forwards;
+}
+
+.slide-out-bottom {
+  animation: slideOutBottom 0.32s cubic-bezier(0.4,0,0.2,1) forwards;
 }
 
 @keyframes slideInRight {
@@ -29,9 +37,19 @@ body {
   to   { transform: translateX(0); }
 }
 
+@keyframes slideOutRight {
+  from { transform: translateX(0); }
+  to   { transform: translateX(100%); }
+}
+
 @keyframes slideInBottom {
   from { transform: translateY(100%); }
   to   { transform: translateY(0); }
+}
+
+@keyframes slideOutBottom {
+  from { transform: translateY(0); }
+  to   { transform: translateY(100%); }
 }
 
 /* ─── HOME SCREEN ─────────────────────────────────────────────────────────── */
