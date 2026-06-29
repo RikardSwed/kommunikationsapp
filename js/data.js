@@ -227,3 +227,91 @@ const collections = {
   ]
 
 };
+
+// ── CONVERSATIONAL COLLECTIONS ────────────────────────────────────────────────
+// Used by the Collections training mode in the Conversational Skills pack.
+// Each collection has a name, a description (shown as info card), and inputs.
+// Input types: direct, situation, choose3, identify, free, contrast
+
+const conversationalCollections = {
+
+  conversational: [
+
+    {
+      name: "Starting Conversations",
+      description: "17 ways to open a conversation — grouped into four categories:\n\n**Basic:** Simple greeting · Introduce yourself · Situational comment · Polite request\n\n**Question-based:** Ask about the situation · Open question · Curiosity · Genuine curiosity about how they are · Ask about them\n\n**Statement & feeling:** Specific compliment · Statement or guess about the person · Express a feeling\n\n**Relationship-building:** Shared experience · Something that happened · Relevant topic · Framing\n\n**Playful:** Humour (irony or exaggeration)\n\nMindset: Simple openings work best — you don't need to be clever, just natural. Most people want someone to take the initiative.",
+      inputs: [
+        // Direct — name the strategy, demonstrate it
+        { type: "direct", q: "Use a simple greeting to start a conversation", a: '"Hey — how's it going?" or "Morning!" — short, warm, no pressure.' },
+        { type: "direct", q: "Introduce yourself to someone you haven't met", a: '"I don\'t think we\'ve met — I\'m [name]." — direct and confident.' },
+        { type: "direct", q: "Use a specific compliment to open", a: '"That\'s a great jacket." or "I like your notebook." — specific, not generic.' },
+        { type: "direct", q: "Open with a question about the situation", a: '"Is this your first time here?" or "Do you know when it starts?" — low stakes, easy to answer.' },
+        { type: "direct", q: "Use humour to open a conversation", a: 'Irony or exaggeration: "This queue moves like it\'s on strike." — commit to it, keep it short.' },
+        { type: "direct", q: "Make a statement or guess about the person", a: '"You look like someone who\'s done this before." — confident, invites a reaction.' },
+        { type: "direct", q: "Use framing to open", a: '"I\'d regret it if I didn\'t come over and say hi." — honest and disarming.' },
+        { type: "direct", q: "Open with genuine curiosity about how they are", a: '"Are you okay? You seem a little stressed." — warm, attentive, only if it fits.' },
+
+        // Situation — context given, choose and apply an opening
+        { type: "situation", q: "You're at a social event and spot someone standing alone", a: 'Situational comment or direct approach: "Looks like we\'re both doing the \'standing near the snacks\' thing." or simply introduce yourself.' },
+        { type: "situation", q: "You're waiting in a long queue", a: 'Light observation about the situation: "This is moving impressively slowly." — easy, shared experience.' },
+        { type: "situation", q: "You're new at a school or workplace", a: '"I\'m new here — how are you?" or "I\'m [name] — I just started." — direct and honest.' },
+        { type: "situation", q: "You want to re-engage someone you haven't talked to in a while", a: 'Relevant topic: "How did that exam/project/trip go?" — shows you remember something about them.' },
+        { type: "situation", q: "You're at a party where you know no one", a: 'Shared experience: "Do you know many people here?" or introduce yourself directly — most people are waiting for someone to start.' },
+        { type: "situation", q: "You find someone interesting and want to approach them", a: 'Statement + question: "You look like someone who\'s passionate about what they do — what is it?" — bold but genuine.' },
+        { type: "situation", q: "You're sitting next to someone at a lecture or class", a: 'Ask about the situation: "Have you had this teacher before?" or shared experience: "That last part went fast."' },
+
+        // Choose 3 — pick the best from three options
+        { type: "choose3", q: "Which three opening types work best when you know nothing about the person?", a: '1. Situational comment — safe, shared context\n2. Simple greeting + introduce yourself — always appropriate\n3. Curiosity question — "I\'m curious — how did you end up here?"' },
+        { type: "choose3", q: "Which three openings are best for leaving a strong impression?", a: '1. Specific compliment — shows you noticed something real\n2. Statement or guess about the person — confident and engaging\n3. Framing — "I\'d kick myself if I didn\'t come over" — memorable and honest' },
+        { type: "choose3", q: "Which three openings work well when energy is low or the setting is quiet?", a: '1. Polite request — low stakes, practical\n2. Simple greeting — no pressure\n3. Genuine curiosity about how they are — warm and personal' },
+
+        // Identify — given an example, name the type
+        { type: "identify", q: '"I\'m curious — why does everyone always end up in the kitchen at parties?" — which opening type is this?', a: 'Curiosity — you share an observation framed as a genuine question. It invites discussion without requiring a specific answer.' },
+        { type: "identify", q: '"That\'s a really specific tattoo — there\'s a story there." — which opening type is this?', a: 'Statement or guess about the person — you make a confident observation that invites them to share something.' },
+        { type: "identify", q: '"I\'d feel bad if I left without saying hello." — which opening type is this?', a: 'Framing — you give a personal reason for approaching. Honest and disarming.' },
+        { type: "identify", q: '"Toughest lecture of the year, right?" — which opening type is this?', a: 'Shared experience — you reference something you both just went through. Creates instant common ground.' },
+
+        // Free — situation only, no strategy named
+        { type: "free", q: "You're standing next to someone at a museum exhibit you both just looked at", a: 'Any natural opening works: "That one got me thinking." / "What did you make of that?" / "Interesting choice to put it next to the other one." — follow your genuine reaction.' },
+        { type: "free", q: "You're on a long train journey and the person next to you catches your eye", a: 'Start small: a smile, a light comment about the journey, or simply introduce yourself if the moment feels right. No pressure to be clever.' },
+      ]
+    },
+
+    {
+      name: "Ending Conversations",
+      description: "Seven techniques for ending a conversation naturally and warmly:\n\n1. **Exit phrase** — Short standard phrase: \"See you!\" / \"Take care!\"\n2. **Give a reason** — Explain why you need to go: \"I need to catch my bus.\"\n3. **Offer to continue later** — \"We should continue this another time.\"\n4. **Say something positive** — \"It was really good talking to you.\"\n5. **Wish them well** — \"Good luck with the exam.\"\n6. **Curious exit** — \"Before I go — I'm genuinely curious about what you said about X.\"\n7. **Humorous contrast** — \"We'll never see each other again!\" (with a smile)\n\n**The high note principle:** End shortly after a laugh or a positive moment — leave when the mood is good.\n\n**Combine techniques:** Positive comment + Wish them well works naturally together.\n\nMindset: Ending well is as important as starting well. Take the initiative — it's a favour to both of you.",
+      inputs: [
+        // Direct
+        { type: "direct", q: "Use an exit phrase to end a conversation", a: '"See you!" / "Take care!" / "Catch you later!" — short, warm, natural.' },
+        { type: "direct", q: "Give a reason for leaving", a: '"I need to get to class." / "I should catch my bus." — simple and honest, no over-explanation needed.' },
+        { type: "direct", q: "End by offering to continue later", a: '"We should pick this up another time." / "I\'ll tell you the rest next time." — shows genuine interest.' },
+        { type: "direct", q: "End with something positive about the conversation", a: '"It was really good talking to you." / "That was an interesting conversation." — leave them with a warm feeling.' },
+        { type: "direct", q: "Use a curious exit", a: '"Before I go — I\'m genuinely curious about what you said about X. Can you tell me more?" — shows you were listening.' },
+        { type: "direct", q: "End with humour using the humorous contrast technique", a: '"Well, we\'ll never see each other again!" (with a smile) — playful, memorable, lightens the exit.' },
+
+        // Situation
+        { type: "situation", q: "The conversation has run its course but neither of you ends it", a: 'Take the initiative: "I think I\'m going to head off — but it was genuinely good talking to you." — both of you will feel relieved.' },
+        { type: "situation", q: "You're at an event and want to move on to talk to others", a: '"I want to make sure I say hi to a few others — but this was great." — honest, warm, and clean.' },
+        { type: "situation", q: "A phone call needs wrapping up", a: '"I\'ll let you go — but good to hear from you." or "I should get back to it, but let\'s catch up properly soon."' },
+        { type: "situation", q: "You've had a great conversation and want to leave on a high note", a: 'Apply the high note principle: end shortly after the best moment — "I\'ll leave it there — that was a good one." ' },
+        { type: "situation", q: "The conversation is dragging and you want to exit gracefully", a: 'Take the initiative early before it drags further: "I should get going — but it was good to chat." — kind and decisive.' },
+        { type: "situation", q: "You want to end but also signal you want to talk again", a: 'Combine: "It was really good talking to you — we should continue this properly sometime." — positive + offer to continue.' },
+
+        // Choose 3
+        { type: "choose3", q: "Which three techniques work best when you want to leave a strong positive impression?", a: '1. Say something positive — "That was a genuinely good conversation."\n2. Wish them well — personalised, shows you were listening\n3. Curious exit — leaves them feeling interesting and valued' },
+        { type: "choose3", q: "Which three techniques are most useful in a casual social setting?", a: '1. Exit phrase — natural and frictionless\n2. Humorous contrast — memorable and light\n3. High note principle — timing over technique' },
+
+        // Identify
+        { type: "identify", q: '"Before I leave — I\'m still thinking about what you said about your trip. Tell me more." — which technique is this?', a: 'Curious exit — you signal genuine interest before leaving, which makes the other person feel heard and valued.' },
+        { type: "identify", q: '"I\'ll let you get back to it — but this was great." — which technique is this?', a: 'Give a reason + positive comment combined — practical exit softened by genuine warmth.' },
+        { type: "identify", q: '"Goodbye forever!" (with a big smile) — which technique is this?', a: 'Humorous contrast — saying the opposite of what you mean for a playful, memorable exit.' },
+
+        // Free
+        { type: "free", q: "A conversation with a classmate has naturally wound down. End it well.", a: 'Any combination works: "Good talking to you — good luck with everything." — simple, warm, done. The key is taking the initiative rather than letting it trail off.' },
+        { type: "free", q: "You've been talking to someone at a party for a while and want to move on, but you'd like to talk again", a: 'Be honest and warm: "I want to circulate a bit — but I\'d genuinely like to continue this. Find me later?" — direct and flattering.' },
+      ]
+    }
+
+  ]
+
+};
