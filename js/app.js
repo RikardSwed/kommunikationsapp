@@ -1,7 +1,7 @@
 // app.js — All application logic for Communication Trainer
 // Depends on: data.js and multiStepData.js (must be loaded first)
 
-const VERSION = 'v1.9.2';
+const VERSION = 'v1.9.3';
 
 // ─── SCREENS ──────────────────────────────────────────────────────────────────
 const homeScreen     = document.getElementById('homeScreen');
@@ -1474,10 +1474,6 @@ function collRender() {
   document.getElementById('collBackText').textContent  = inp.a;
   document.getElementById('collCounter').textContent   = `${collIdx + 1} / ${collCollections.length}`;
   collFlipFn(false, false);
-  // type badge on front
-  const typeLabels = { direct: 'Direct', situation: 'Situation', choose3: 'Choose 3', identify: 'Identify', free: 'Free', contrast: 'Contrast' };
-  const badge = typeLabels[inp.type] || '';
-  document.getElementById('collName').textContent = `${col.name}${badge ? ' — ' + badge : ''}`;
   // hints
   const hints = document.getElementById('collHint');
   if (hints) hints.style.display = document.getElementById('showHints').checked ? '' : 'none';
@@ -1534,10 +1530,15 @@ document.getElementById('collName').addEventListener('click', () => {
   collCardInfo.classList.add('visible');
 });
 document.getElementById('collName').addEventListener('touchend', e => { e.preventDefault(); document.getElementById('collName').click(); }, { passive: false });
-document.getElementById('collCardInfoClose').addEventListener('click', () => {
+document.getElementById('collCardInfoClose').addEventListener('click', e => {
+  e.stopPropagation();
   collCardInfo.classList.remove('visible');
   collCardInfo.scrollTop = 0;
 });
+collCardInfo.addEventListener('touchstart', e => e.stopPropagation(), { passive: true });
+collCardInfo.addEventListener('touchmove',  e => e.stopPropagation(), { passive: true });
+collCardInfo.addEventListener('touchend',   e => e.stopPropagation(), { passive: true });
+
 
 // Touch
 let cTx=0,cTy=0,cTt=0,cMov=false;
