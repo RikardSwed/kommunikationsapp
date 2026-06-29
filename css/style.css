@@ -617,8 +617,8 @@ body {
 .fb-bar {
   display: none;
   justify-content: center;
-  gap: 14px;
-  padding: 8px 0 4px;
+  gap: 22px;
+  padding: 12px 0 8px;
   width: 100%;
   margin-top: auto;
 }
@@ -628,8 +628,8 @@ body {
 }
 
 .fb-btn {
-  width: 28px;
-  height: 28px;
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
   border: none;
   cursor: pointer;
