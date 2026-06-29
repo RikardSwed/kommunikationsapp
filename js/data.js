@@ -315,3 +315,101 @@ const conversationalCollections = {
   ]
 
 };
+
+// ── CHALLENGES DATA ───────────────────────────────────────────────────────────
+// Used by the Challenges training mode.
+// Each challenge has a name, description (shown as info card), and inputs.
+// Input format: { q: "the challenge", a: '"Example response." (Strategy)' }
+
+const challengesCollections = {
+
+  assertive: [
+    {
+      name: "Direct Criticism",
+      description: "Someone criticises you directly — your behaviour, your work, your choices, or your character.\n\nThis is the most common form of verbal challenge. The criticism may be fair or unfair, but either way your response shapes the dynamic.\n\nWhat makes it hard:\n• The instinct to defend, explain, or counter-attack\n• Shame or embarrassment when others are present\n• Uncertainty about whether the criticism is valid\n\nUseful strategies here:\n• Fogging — agree with what might be true, stay calm\n• Negative Assertion — own the mistake cleanly, without over-apologising\n• Negative Inquiry — ask for more detail to clarify and disarm\n\nMindset: You don't have to defend yourself. Receiving criticism calmly is a strength.",
+      inputs: [
+        { q: '"You\'re always late."', a: '"You might be right — I have been cutting it close lately." (Fogging)' },
+        { q: '"That was a really poor decision."', a: '"Yes, that didn\'t go well. I\'ll handle it differently next time." (Negative Assertion)' },
+        { q: '"You never listen to anyone."', a: '"What is it specifically that I do that gives you that impression?" (Negative Inquiry)' },
+        { q: '"You\'re not good at this."', a: '"You could have a point. What would you suggest I do differently?" (Fogging + Negative Inquiry)' },
+        { q: '"That was embarrassing to watch."', a: '"Yeah, that wasn\'t my best moment." (Negative Assertion)' },
+        { q: '"You handled that really badly."', a: '"I can see why it looked that way." (Fogging)' },
+        { q: '"You were completely wrong about that."', a: '"You\'re right, I was wrong about that." (Negative Assertion)' },
+      ]
+    },
+    {
+      name: "Vague or Indirect Criticism",
+      description: "Someone criticises you in a way that's hard to pin down — through tone, implication, or deliberately vague language.\n\nThis is often more destabilising than direct criticism because there's nothing concrete to respond to. You're left guessing what they actually mean.\n\nWhat makes it hard:\n• You can't defend against something that was never clearly said\n• Pushing back risks sounding oversensitive\n• The ambiguity can make you doubt yourself\n\nUseful strategies here:\n• Negative Inquiry — the most powerful tool here. Ask them to be specific.\n• Fogging — if there's a grain of truth you can acknowledge\n\nMindset: Clarity is your friend. Asking for specifics isn't weakness — it puts the responsibility back on them.",
+      inputs: [
+        { q: '"It\'s just... interesting that you did it that way."', a: '"What do you mean by interesting?" (Negative Inquiry)' },
+        { q: 'A sigh and an eye roll after you speak', a: '"It seems like something\'s bothering you — what is it?" (Negative Inquiry)' },
+        { q: '"Some people just don\'t get it."', a: '"Are you referring to something I\'ve done?" (Negative Inquiry)' },
+        { q: '"I just expected more, I suppose."', a: '"What specifically were you expecting?" (Negative Inquiry)' },
+        { q: '"Never mind, it doesn\'t matter."', a: '"It seems like it does matter to you — I\'d like to understand." (Negative Inquiry)' },
+        { q: '"You know what you did."', a: '"I want to make sure I understand — can you be specific?" (Negative Inquiry)' },
+      ]
+    },
+    {
+      name: "Pressure & Pushback",
+      description: "Someone keeps pushing after you've said no — repeating their request, escalating, or trying to find a new angle to wear you down.\n\nThis is one of the most common forms of social pressure, and one of the hardest to hold firm against without feeling rude.\n\nWhat makes it hard:\n• The discomfort of the ongoing tension\n• Fear of damaging the relationship\n• The sense that you should have a better reason\n\nUseful strategies here:\n• Broken Record — repeat your position calmly without changing the wording or explaining further. Every explanation gives them a new angle to argue.\n\nMindset: You don't owe anyone a reason. Repeating yourself calmly is not aggressive — it's stable.",
+      inputs: [
+        { q: '"Come on, just this once."', a: '"I understand — and no, it doesn\'t work for me." (Broken Record)' },
+        { q: '"But why not? Give me one good reason."', a: '"I\'m not going to do it." (Broken Record — no explanation needed)' },
+        { q: '"Everyone else is fine with it."', a: '"That may be — it still doesn\'t work for me." (Broken Record)' },
+        { q: '"You\'re being really difficult right now."', a: '"I can see it feels that way. My answer is still no." (Fogging + Broken Record)' },
+        { q: '"I thought you were my friend."', a: '"I am. And I\'m still not going to do it." (Broken Record)' },
+        { q: '"Fine, forget it." (said pointedly, expecting you to back down)', a: 'Stay quiet. Let the silence hold. You don\'t need to fill it. (Broken Record — silence is a form of repetition)' },
+        { q: '"You always say no to everything."', a: '"I can see why it feels that way sometimes." (Fogging — without giving in)' },
+      ]
+    },
+    {
+      name: "Manipulation",
+      description: "Someone uses indirect tactics to influence your behaviour — guilt, flattery, false urgency, or appeals to what 'everyone' thinks.\n\nManipulation works by bypassing your rational judgement and targeting emotions instead. Recognising the pattern is the first step.\n\nCommon forms:\n• Guilt tripping — making you feel responsible for their emotions\n• Social proof — 'everyone agrees with me'\n• Flattery before a request\n• Victimhood — making themselves the wronged party\n\nUseful strategies here:\n• Fogging — acknowledge the surface without accepting the implied responsibility\n• Negative Inquiry — ask what they actually want\n• Broken Record — hold your position regardless of the tactic\n\nMindset: You are not responsible for managing other people's emotions. Staying calm is the best counter to manipulation.",
+      inputs: [
+        { q: '"After everything I\'ve done for you..."', a: '"I appreciate what you\'ve done — and I\'m still not going to do this." (Fogging + Broken Record)' },
+        { q: '"Everyone thinks you\'re being unreasonable."', a: '"What is it specifically that you think I should do differently?" (Negative Inquiry)' },
+        { q: '"I just feel so hurt that you would say that."', a: '"I can see this is upsetting for you." (Fogging — without taking responsibility)' },
+        { q: '"You\'re the only one who can help me."', a: '"What exactly do you need?" (Negative Inquiry — get specific before committing)' },
+        { q: '"If you really cared, you\'d do this."', a: '"You might see it that way — I still can\'t do it." (Fogging + Broken Record)' },
+        { q: '"I\'m not angry, I\'m just disappointed."', a: '"What is it I\'ve done that disappoints you?" (Negative Inquiry)' },
+      ]
+    },
+    {
+      name: "Dismissiveness",
+      description: "Someone minimises what you say, feel, or experience — making you feel like your perspective doesn't count.\n\nDismissiveness can be aggressive or casual. It might come from a place of superiority, impatience, or simply not caring. Either way it's a form of invalidation.\n\nCommon forms:\n• 'You're overreacting'\n• Talking over you or ignoring what you said\n• 'That's not a big deal'\n• Laughing at something you said seriously\n\nUseful strategies here:\n• Negative Assertion — own your reaction without shrinking\n• Fogging — agree that your reaction might seem big to them, without apologising for it\n• Negative Inquiry — ask what they think you should do instead\n\nMindset: Your experience is valid. You don't need permission to feel what you feel.",
+      inputs: [
+        { q: '"You\'re overreacting."', a: '"I may be — this is still how it felt to me." (Fogging + Negative Assertion)' },
+        { q: '"That\'s not a big deal, just let it go."', a: '"It is a big deal to me." (Negative Assertion)' },
+        { q: '"You\'re too sensitive."', a: '"You might have a point — this still matters to me." (Fogging)' },
+        { q: 'Your point is ignored and someone else speaks over you', a: 'Wait for a pause, then: "I\'d like to finish what I was saying." (Broken Record tone — calm and clear)' },
+        { q: '"It was just a joke, calm down."', a: '"I heard the joke. It still landed badly for me." (Negative Assertion)' },
+        { q: '"Why do you always make everything into such a drama?"', a: '"What is it I said that felt dramatic to you?" (Negative Inquiry)' },
+      ]
+    },
+    {
+      name: "Situational Pressure",
+      description: "The challenge comes not from what someone says but from the situation itself — a context that creates social pressure to act against your own interests or values.\n\nExamples:\n• A group dynamic where everyone seems to agree except you\n• Being put on the spot in front of others\n• A social situation where saying no feels socially costly\n• Being expected to take sides\n\nUseful strategies here:\n• Broken Record — hold your position despite the social pressure\n• Fogging — acknowledge the awkwardness without changing course\n• Negative Inquiry — ask clarifying questions to slow things down\n\nMindset: Social pressure is real, but it's not an argument. You are allowed to be the only one in the room who disagrees.",
+      inputs: [
+        { q: 'Everyone in the group has agreed to something you\'re uncomfortable with', a: '"I understand everyone\'s on board — I\'m not able to go along with this one." (Broken Record)' },
+        { q: 'You\'re asked for your opinion on the spot in front of others', a: '"I\'d like to think about it before I say anything." (Broken Record — calm deflection)' },
+        { q: 'Someone puts you on the spot to take sides in a conflict', a: '"That\'s something they need to work out between themselves." (Broken Record)' },
+        { q: 'You feel obliged to stay at an event you want to leave', a: 'Give yourself permission to leave: "I\'m going to head off — it was good to see you." No explanation needed.' },
+        { q: 'Someone keeps asking what\'s wrong when you don\'t want to talk about it', a: '"I\'m fine — I just don\'t want to talk about it right now." (Broken Record)' },
+        { q: 'You\'re in a meeting where your idea is dismissed without discussion', a: '"I\'d like to come back to that point." (Broken Record — raise it again calmly)' },
+      ]
+    },
+    {
+      name: "Feeling Overwhelmed",
+      description: "The challenge is internal — you're flooded with emotion and it's hard to respond clearly or calmly.\n\nFeeling overwhelmed in a confrontation is one of the most common reasons assertive behaviour breaks down. You either freeze, over-explain, or react more strongly than you intended.\n\nWhat triggers it:\n• Unexpected criticism\n• Being put on the spot\n• A build-up of smaller incidents\n• Feeling attacked by someone you care about\n\nUseful strategies here:\n• Buy time — it's always acceptable to pause before responding\n• Fogging — a calm, short response reduces emotional escalation\n• Broken Record — a short repeated phrase is easier to deliver when overwhelmed\n\nMindset: You don't have to respond immediately. Pausing is not weakness — it's control.",
+      inputs: [
+        { q: 'You receive unexpected strong criticism and feel your face flush', a: '"Let me think about that for a moment." — pause before responding. (Buy time)' },
+        { q: 'You feel tears coming during a difficult conversation', a: '"I need a moment." — say it and take it. There is no rule that says you have to continue immediately.' },
+        { q: 'You feel the urge to over-explain and justify yourself', a: 'Catch it. One short sentence is enough: "You might be right." (Fogging — resist the urge to add more)' },
+        { q: 'You feel anger rising and worry you\'ll say something you regret', a: '"I\'m going to come back to this." — remove yourself from the situation briefly. (Delay — intentional)' },
+        { q: 'You freeze and can\'t think of anything to say', a: 'Silence is fine. A small nod buys time. You don\'t have to fill every pause.' },
+        { q: 'You feel guilty for setting a boundary, even though you know it\'s right', a: 'The guilt is normal — it doesn\'t mean you\'re wrong. Hold the position. (Broken Record — internal)' },
+      ]
+    }
+  ]
+
+};
