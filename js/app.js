@@ -4,7 +4,6 @@
 const VERSION = 'v1.8.4';
 
 // ─── SCREEN TRANSITION SYSTEM ─────────────────────────────────────────────────
-// Two layers: home↔mode slides right, mode↔training slides up from bottom.
 
 const homeScreen     = document.getElementById('homeScreen');
 const modeScreen     = document.getElementById('modeScreen');
@@ -17,49 +16,69 @@ const TRAINING_SCREENS = [
   'hfScreen','hfMemScreen','collScreen'
 ];
 
+// Set a screen's transform state without transition
+function screenSet(el, state) {
+  el.style.transition = 'none';
+  el.style.transform  = state;
+  void el.offsetWidth; // force reflow
+}
+
+// Animate a screen to a transform state
+function screenAnimate(el, toState, onDone) {
+  el.style.transition = 'transform 0.32s cubic-bezier(0.4,0,0.2,1)';
+  el.style.transform  = toState;
+  if (onDone) el.addEventListener('transitionend', onDone, { once: true });
+}
+
 function hideAllTraining() {
   TRAINING_SCREENS.forEach(id => {
     const el = document.getElementById(id);
-    el.classList.remove('screen--active');
-    el.classList.add('screen--bottom-enter');
+    el.style.transition = 'none';
+    el.style.transform  = 'translateY(100%)';
+    el.style.pointerEvents = 'none';
   });
 }
 
 function navToHome() {
-  // Hide mode screen (slide right), keep home active
-  modeScreen.classList.remove('screen--active');
-  modeScreen.classList.add('screen--right-enter');
-  homeScreen.classList.add('screen--active');
+  // Mode slides right, home comes back
+  screenAnimate(modeScreen, 'translateX(100%)');
+  modeScreen.style.pointerEvents = 'none';
+  screenSet(homeScreen, 'translateX(0)');
+  homeScreen.style.pointerEvents = '';
   hideAllTraining();
 }
 
 function navToMode() {
-  // Slide mode in from right
-  homeScreen.classList.remove('screen--active');
-  modeScreen.classList.remove('screen--right-enter', 'screen--right-exit');
-  // Force reflow so transition fires
-  void modeScreen.offsetWidth;
-  modeScreen.classList.add('screen--active');
+  // Home slides left (stays behind), mode slides in from right
+  screenSet(modeScreen, 'translateX(100%)');
+  modeScreen.style.pointerEvents = '';
+  screenAnimate(modeScreen, 'translateX(0)');
+  homeScreen.style.pointerEvents = 'none';
   hideAllTraining();
 }
 
 function navToTraining(id) {
-  // Slide training screen up from bottom
   hideAllTraining();
   const el = document.getElementById(id);
-  el.classList.remove('screen--bottom-enter', 'screen--bottom-exit');
-  void el.offsetWidth;
-  el.classList.add('screen--active');
+  screenSet(el, 'translateY(100%)');
+  el.style.pointerEvents = '';
+  screenAnimate(el, 'translateY(0)');
+  modeScreen.style.pointerEvents = 'none';
 }
 
 function navFromTraining(id) {
-  // Slide training screen back down
   const el = document.getElementById(id);
-  el.classList.remove('screen--active');
-  el.classList.add('screen--bottom-exit');
-  setTimeout(() => el.classList.replace('screen--bottom-exit', 'screen--bottom-enter'), 340);
-  modeScreen.classList.add('screen--active');
+  screenAnimate(el, 'translateY(100%)');
+  setTimeout(() => { el.style.pointerEvents = 'none'; }, 340);
+  modeScreen.style.pointerEvents = '';
+  modeScreen.style.transition = 'none';
+  modeScreen.style.transform  = 'translateX(0)';
 }
+
+// Initialise positions
+screenSet(modeScreen, 'translateX(100%)');
+modeScreen.style.pointerEvents = 'none';
+hideAllTraining();
 
 // ─── DOM — SINGLE STRATEGY ───────────────────────────────────────────────────
 const card           = document.getElementById('card');
