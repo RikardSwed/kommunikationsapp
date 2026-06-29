@@ -16,15 +16,22 @@ body {
 
 /* ─── SCREEN TRANSITIONS ─────────────────────────────────────────────────── */
 
-.screen {
-  position: fixed;
-  top: 0; left: 0; right: 0; bottom: 0;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  will-change: transform;
-  background: #f0f2f5;
-  overflow: hidden;
+.slide-in-right {
+  animation: slideInRight 0.32s cubic-bezier(0.4,0,0.2,1) forwards;
+}
+
+.slide-in-bottom {
+  animation: slideInBottom 0.32s cubic-bezier(0.4,0,0.2,1) forwards;
+}
+
+@keyframes slideInRight {
+  from { transform: translateX(100%); }
+  to   { transform: translateX(0); }
+}
+
+@keyframes slideInBottom {
+  from { transform: translateY(100%); }
+  to   { transform: translateY(0); }
 }
 
 /* ─── HOME SCREEN ─────────────────────────────────────────────────────────── */
@@ -39,7 +46,6 @@ body {
   flex-direction: column;
   padding: 0 20px;
   overflow-y: auto;
-  margin: 0 auto;
 }
 
 .home-topbar {
@@ -100,7 +106,6 @@ body {
   display: flex;
   flex-direction: column;
   overflow-y: auto;
-  margin: 0 auto;
 }
 
 .mode-topbar {
@@ -182,7 +187,6 @@ body {
   background: #f0f2f5;
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
 }
 
 .topbar {
