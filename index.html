@@ -53,21 +53,29 @@
       <div class="mode-info"><div class="mode-name">Memorize</div><div class="mode-desc">Test your knowledge of the theory behind each strategy</div></div>
       <div class="mode-arrow">›</div>
     </div>
-    <div class="mode-card" id="modeMultiStep">
-      <div class="mode-icon">◈</div>
-      <div class="mode-info"><div class="mode-name">Multiple Steps</div><div class="mode-desc">Step-by-step combinations — free navigation</div></div>
-      <div class="mode-arrow">›</div>
-    </div>
     <div class="mode-card" id="modeFlow">
       <div class="mode-icon">⇉</div>
       <div class="mode-info"><div class="mode-name">Flow</div><div class="mode-desc">Steps and situations in one seamless sequence</div></div>
       <div class="mode-arrow">›</div>
     </div>
-    <div class="mode-card" id="modeGuided">
-      <div class="mode-icon">◉</div>
-      <div class="mode-info"><div class="mode-name">Guided</div><div class="mode-desc">Step through combinations at your own pace</div></div>
-      <div class="mode-arrow">›</div>
+    <!-- BETA SECTION -->
+    <div class="mode-beta-toggle" id="modeBetaToggle">
+      <div class="mode-beta-label">Beta</div>
+      <div class="mode-beta-arrow" id="modeBetaArrow">›</div>
     </div>
+    <div class="mode-beta-list" id="modeBetaList">
+      <div class="mode-card" id="modeMultiStep">
+        <div class="mode-icon">◈</div>
+        <div class="mode-info"><div class="mode-name">Multiple Steps</div><div class="mode-desc">Step-by-step combinations — free navigation</div></div>
+        <div class="mode-arrow">›</div>
+      </div>
+      <div class="mode-card" id="modeGuided">
+        <div class="mode-icon">◉</div>
+        <div class="mode-info"><div class="mode-name">Guided</div><div class="mode-desc">Step through combinations at your own pace</div></div>
+        <div class="mode-arrow">›</div>
+      </div>
+    </div>
+    <!-- END BETA SECTION -->
     <div class="mode-card" id="modeHandsfree">
       <div class="mode-icon">🎧</div>
       <div class="mode-info"><div class="mode-name">Handsfree: Single Strategy</div><div class="mode-desc">Listen and practise with your phone in your pocket</div></div>
@@ -330,7 +338,7 @@
       <label>Show hints</label>
       <label class="toggle"><input type="checkbox" id="showHints" checked /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.7.2</div>
+    <div class="settings-version">v1.7.3</div>
     <button class="settings-close" id="settingsClose">Done</button>
   </div>
 </div>
@@ -403,7 +411,7 @@
       <label>Loop current strategy</label>
       <label class="toggle"><input type="checkbox" id="hfLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.7.2</div>
+    <div class="settings-version">v1.7.3</div>
     <button class="settings-close" id="hfSettingsClose">Done</button>
   </div>
 </div>
@@ -472,15 +480,15 @@
       <label>Loop current strategy</label>
       <label class="toggle"><input type="checkbox" id="hfMemLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.7.2</div>
+    <div class="settings-version">v1.7.3</div>
     <button class="settings-close" id="hfMemSettingsClose">Done</button>
   </div>
 </div>
 
-<script src="js/data.js?v=172"></script>
-<script src="js/multiStepData.js?v=172"></script>
-<script src="js/memorizeData.js?v=172"></script>
-<script src="js/app.js?v=172"></script>
+<script src="js/data.js?v=173"></script>
+<script src="js/multiStepData.js?v=173"></script>
+<script src="js/memorizeData.js?v=173"></script>
+<script src="js/app.js?v=173"></script>
 
 </body>
 </html>
