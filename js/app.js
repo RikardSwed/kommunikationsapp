@@ -1,7 +1,7 @@
 // app.js — All application logic for Communication Trainer
 // Depends on: data.js and multiStepData.js (must be loaded first)
 
-const VERSION = 'v1.7.1';
+const VERSION = 'v1.7.2';
 
 // ─── SCREENS ─────────────────────────────────────────────────────────────────
 const homeScreen     = document.getElementById('homeScreen');
@@ -884,12 +884,19 @@ function hfSkipForward() {
 // Skip back — go to start of current strategy (stratName step)
 function hfSkipBack() {
   if (!hfPlaying) return;
-  inputIdx   = 0;
-  hfSkipStep = true;
+  // If already at first input of current strategy, go to previous strategy
+  if (inputIdx === 0 && stratIdx > 0) stratIdx--;
+  inputIdx = 0;
+  // Abort current loop cleanly, then restart from new position
+  hfAbort  = true;
   speechSynthesis.cancel();
   hfClearTimeouts();
-  // Force si loop to re-run current strategy by flagging seqStep
-  hfSeqStep = 'restart';
+  if (hfDelayResolve) { hfDelayResolve(); hfDelayResolve = null; }
+  setTimeout(() => {
+    hfAbort   = false;
+    hfPlaying = false;
+    hfPlay();
+  }, 50);
 }
 
 // ── Buttons ───────────────────────────────────────────────────────────────────
@@ -1149,10 +1156,19 @@ function hfMemSkipForward() {
 
 function hfMemSkipBack() {
   if (!hfMemPlaying) return;
-  memCardIdx    = 0;
-  hfMemSkipStep = true;
+  // If already at first card of current strategy, go to previous strategy
+  if (memCardIdx === 0 && memStratIdx > 0) memStratIdx--;
+  memCardIdx = 0;
+  // Abort current loop cleanly, then restart from new position
+  hfMemAbort = true;
   speechSynthesis.cancel();
   hfMemClearTimeouts();
+  if (hfMemDelayResolve) { hfMemDelayResolve(); hfMemDelayResolve = null; }
+  setTimeout(() => {
+    hfMemAbort   = false;
+    hfMemPlaying = false;
+    hfMemPlay();
+  }, 50);
 }
 
 // ── Buttons ───────────────────────────────────────────────────────────────────
