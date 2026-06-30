@@ -93,6 +93,11 @@
       <div class="mode-info"><div class="mode-name">Handsfree: Challenges</div><div class="mode-desc">Listen and respond to challenges hands-free</div></div>
       <div class="mode-arrow">›</div>
     </div>
+    <div class="mode-card" id="modeHandsfreeSequences">
+      <div class="mode-icon">🎧</div>
+      <div class="mode-info"><div class="mode-name">Handsfree: Sequences</div><div class="mode-desc">Listen and practise sequences hands-free</div></div>
+      <div class="mode-arrow">›</div>
+    </div>
     <!-- BETA SECTION -->
     <div class="mode-beta-toggle" id="modeBetaToggle">
       <div class="mode-beta-label">Beta</div>
@@ -383,6 +388,39 @@
   </div>
 </div>
 
+<!-- HANDSFREE: SEQUENCES SCREEN -->
+<div class="app" id="hfFlowScreen" style="display:none;">
+  <div class="topbar">
+    <button class="topbar-btn" id="hfFlowCloseBtn">✕</button>
+    <span class="counter" id="hfFlowCounter">1 / 2</span>
+    <button class="topbar-btn" id="hfFlowSettingsBtn">⚙</button>
+  </div>
+  <div class="divider"></div>
+  <div class="strategy-label" id="hfFlowComboName"></div>
+  <div class="card-area">
+    <div class="card" id="hfFlowCard">
+      <div class="card-inner" id="hfFlowCardInner">
+        <div class="card-face card-front"><p class="card-text" id="hfFlowFrontText"></p></div>
+        <div class="card-face card-back"><p class="card-text" id="hfFlowBackText"></p></div>
+      </div>
+    </div>
+  </div>
+  <div class="hf-hint-row">
+    <div class="hf-transport-group">
+      <button class="hf-transport-btn hf-skip-btn" id="hfFlowPrevStepBtn" disabled>⏮</button>
+      <button class="hf-transport-btn hf-skip-btn" id="hfFlowNextStepBtn" disabled>⏭</button>
+    </div>
+    <span class="hint" id="hfFlowHint" style="flex:1; margin:0;">Tap card to reveal<br>↑ ↓ next card &nbsp;·&nbsp; ← → new combo</span>
+    <button class="hf-transport-btn" id="hfFlowPlayBtn">▶</button>
+  </div>
+  <div class="bottombar">
+    <button class="nav-btn" id="hfFlowPrevComboBtn">&#8592;</button>
+    <button class="nav-btn" id="hfFlowPrevCardBtn">&#8593;</button>
+    <button class="nav-btn" id="hfFlowNextCardBtn">&#8595;</button>
+    <button class="nav-btn" id="hfFlowNextComboBtn">&#8594;</button>
+  </div>
+</div>
+
 <!-- SETTINGS: GENERAL -->
 <div class="settings-overlay" id="settingsOverlay">
   <div class="settings-panel">
@@ -399,7 +437,7 @@
       <label>Show hints</label>
       <label class="toggle"><input type="checkbox" id="showHints" checked /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.10.1</div>
+    <div class="settings-version">v1.10.2</div>
     <button class="settings-close" id="settingsClose">Done</button>
   </div>
 </div>
@@ -472,7 +510,7 @@
       <label>Loop current strategy</label>
       <label class="toggle"><input type="checkbox" id="hfLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.10.1</div>
+    <div class="settings-version">v1.10.2</div>
     <button class="settings-close" id="hfSettingsClose">Done</button>
   </div>
 </div>
@@ -541,7 +579,7 @@
       <label>Loop current strategy</label>
       <label class="toggle"><input type="checkbox" id="hfMemLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.10.1</div>
+    <div class="settings-version">v1.10.2</div>
     <button class="settings-close" id="hfMemSettingsClose">Done</button>
   </div>
 </div>
@@ -610,8 +648,62 @@
       <label>Loop current category</label>
       <label class="toggle"><input type="checkbox" id="hfChallLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.10.1</div>
+    <div class="settings-version">v1.10.2</div>
     <button class="settings-close" id="hfChallSettingsClose">Done</button>
+  </div>
+</div>
+
+<!-- SETTINGS: HANDSFREE SEQUENCES -->
+<div class="settings-overlay" id="hfFlowSettingsOverlay">
+  <div class="settings-panel">
+    <div class="settings-title">Handsfree: Sequences</div>
+    <div class="settings-row">
+      <label>Card back</label>
+      <label class="toggle"><input type="checkbox" id="hfFlowCardBack" checked /><span class="toggle-slider"></span></label>
+    </div>
+    <div class="settings-row">
+      <label>Thinking pause</label>
+      <select class="settings-select" id="hfFlowThinkPause">
+        <option value="3">3 s</option>
+        <option value="5" selected>5 s</option>
+        <option value="8">8 s</option>
+        <option value="10">10 s</option>
+        <option value="15">15 s</option>
+      </select>
+    </div>
+    <div class="settings-row">
+      <label>General pause</label>
+      <select class="settings-select" id="hfFlowGenPause">
+        <option value="1">1 s</option>
+        <option value="2" selected>2 s</option>
+        <option value="3">3 s</option>
+        <option value="5">5 s</option>
+      </select>
+    </div>
+    <div class="settings-row">
+      <label>Speech rate</label>
+      <select class="settings-select" id="hfFlowRate">
+        <option value="0.8">0.8 — slow</option>
+        <option value="0.9">0.9</option>
+        <option value="1.0" selected>1.0 — normal</option>
+        <option value="1.1">1.1</option>
+        <option value="1.2">1.2</option>
+        <option value="1.3">1.3 — fast</option>
+      </select>
+    </div>
+    <div class="settings-row">
+      <label>Voice</label>
+      <select class="settings-select" id="hfFlowVoice">
+        <option value="female" selected>Female</option>
+        <option value="male">Male</option>
+      </select>
+    </div>
+    <div class="settings-row settings-row--danger">
+      <label>Loop current combo</label>
+      <label class="toggle"><input type="checkbox" id="hfFlowLoopStrategy" /><span class="toggle-slider"></span></label>
+    </div>
+    <div class="settings-version">v1.10.2</div>
+    <button class="settings-close" id="hfFlowSettingsClose">Done</button>
   </div>
 </div>
 
@@ -717,15 +809,15 @@
       <label style="font-size:13px; color:#888;">Export all ratings as JSON</label>
       <button id="feedbackExportBtn" style="font-size:13px; color:#555; background:#f0f0f0; border:1px solid #ddd; border-radius:8px; padding:6px 12px; cursor:pointer;">Export</button>
     </div>
-    <div class="settings-version">v1.10.1</div>
+    <div class="settings-version">v1.10.2</div>
     <button class="settings-close" id="homeSettingsClose">Done</button>
   </div>
 </div>
 
-<script src="js/data.js?v=1101"></script>
-<script src="js/multiStepData.js?v=1101"></script>
-<script src="js/memorizeData.js?v=1101"></script>
-<script src="js/app.js?v=1101"></script>
+<script src="js/data.js?v=1102"></script>
+<script src="js/multiStepData.js?v=1102"></script>
+<script src="js/memorizeData.js?v=1102"></script>
+<script src="js/app.js?v=1102"></script>
 
 </body>
 </html>
