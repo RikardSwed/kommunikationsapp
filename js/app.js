@@ -1,7 +1,7 @@
 // app.js — All application logic for Communication Trainer
 // Depends on: data.js and multiStepData.js (must be loaded first)
 
-const VERSION = 'v1.10.3';
+const VERSION = 'v1.10.4';
 
 // ─── SCREENS ──────────────────────────────────────────────────────────────────
 const homeScreen     = document.getElementById('homeScreen');
@@ -2306,3 +2306,256 @@ function showHandsfreeSequences() {
 
 addModeListener('modeHandsfreeSequences', showHandsfreeSequences);
 TRAINING_SCREENS.push('hfFlowScreen');
+
+
+// ── HANDSFREE: MINDSET MODE ───────────────────────────────────────────────────
+
+let hfMindPlaying  = false;
+let hfMindAbort    = false;
+let hfMindSkipStep = false;
+let hfMindTimeouts = [];
+let hfMindDelayResolve = null;
+
+function hfMindSettings() {
+  return {
+    explanation : document.getElementById('hfMindExplanation').checked,
+    cardBack    : document.getElementById('hfMindCardBack').checked,
+    maxInputs   : document.getElementById('hfMindMaxInputs').value,
+    thinkPause  : parseFloat(document.getElementById('hfMindThinkPause').value),
+    genPause    : parseFloat(document.getElementById('hfMindGenPause').value),
+    rate        : parseFloat(document.getElementById('hfMindRate').value),
+    voiceGender : document.getElementById('hfMindVoice').value,
+    loopStrategy: document.getElementById('hfMindLoopStrategy').checked
+  };
+}
+
+function hfMindSpeak(text, cfg) {
+  return new Promise(resolve => {
+    if (!text) { resolve(); return; }
+    speechSynthesis.cancel();
+    const utt = new SpeechSynthesisUtterance(text);
+    utt.lang  = 'en-US';
+    utt.rate  = cfg.rate;
+    const voice = hfPickVoice(cfg.voiceGender);
+    if (voice) utt.voice = voice;
+    utt.onend   = () => resolve();
+    utt.onerror = () => resolve();
+    if (hfMindSkipStep) { hfMindSkipStep = false; resolve(); return; }
+    speechSynthesis.speak(utt);
+  });
+}
+
+function hfMindDelay(ms) {
+  return new Promise(resolve => {
+    hfMindDelayResolve = resolve;
+    if (hfMindAbort || hfMindSkipStep) { hfMindDelayResolve = null; resolve(); return; }
+    const step = 80;
+    let elapsed = 0;
+    function tick() {
+      if (hfMindAbort || hfMindSkipStep) { hfMindDelayResolve = null; resolve(); return; }
+      elapsed += step;
+      if (elapsed >= ms) { hfMindDelayResolve = null; resolve(); return; }
+      const id = setTimeout(tick, step);
+      hfMindTimeouts.push(id);
+    }
+    const id = setTimeout(tick, step);
+    hfMindTimeouts.push(id);
+  });
+}
+
+function hfMindClearTimeouts() {
+  hfMindTimeouts.forEach(id => clearTimeout(id));
+  hfMindTimeouts = [];
+}
+
+const hfMindCardInnerEl = document.getElementById('hfMindCardInner');
+
+function hfMindShowCard(q, a, flipped) {
+  document.getElementById('hfMindName').textContent      = mindStrategies[mindIdx].name;
+  document.getElementById('hfMindFrontText').textContent = q;
+  document.getElementById('hfMindBackText').textContent  = a;
+  document.getElementById('hfMindCounter').textContent   = `${mindIdx + 1} / ${mindStrategies.length}`;
+  hfMindCardInnerEl.style.transition = 'transform 0.4s ease';
+  hfMindCardInnerEl.classList.toggle('flipped', flipped);
+}
+
+function hfMindUpdateButtons() {
+  const playBtn = document.getElementById('hfMindPlayBtn');
+  const prevBtn = document.getElementById('hfMindPrevStepBtn');
+  const nextBtn = document.getElementById('hfMindNextStepBtn');
+  playBtn.textContent = hfMindPlaying ? '⏹' : '▶';
+  prevBtn.disabled = !hfMindPlaying;
+  nextBtn.disabled = !hfMindPlaying;
+  prevBtn.style.opacity = hfMindPlaying ? '1' : '0.35';
+  nextBtn.style.opacity = hfMindPlaying ? '1' : '0.35';
+}
+
+async function hfMindPlay() {
+  if (hfMindPlaying) { hfMindStop(); return; }
+  if (!mindStrategies.length) return;
+
+  const unlock = new SpeechSynthesisUtterance(' ');
+  unlock.volume = 0;
+  speechSynthesis.speak(unlock);
+
+  hfMindPlaying  = true;
+  hfMindAbort    = false;
+  hfMindSkipStep = false;
+  hfMindUpdateButtons();
+
+  const cfg    = hfMindSettings();
+  const maxInp = cfg.maxInputs === 'all' ? Infinity : parseInt(cfg.maxInputs);
+
+  const startSi       = mindIdx;
+  const startInputIdx = mindInputIdx;
+  const skipIntro      = startInputIdx > 0;
+
+  outer:
+  for (let si = startSi; si < mindStrategies.length; si++) {
+    if (hfMindAbort) break;
+    mindIdx = si;
+    const m = mindStrategies[si];
+
+    if (!skipIntro || si > startSi) {
+      hfMindShowCard(m.name, '', false);
+      document.getElementById('hfMindFrontText').textContent = m.name;
+      await hfMindSpeak(m.name, cfg);
+      if (hfMindAbort) break;
+      if (!hfMindSkipStep) await hfMindDelay(cfg.genPause * 1000);
+      hfMindSkipStep = false;
+
+      if (cfg.explanation && m.description) {
+        document.getElementById('hfMindCardInfoText').textContent = m.description;
+        document.getElementById('hfMindCardInfo').classList.add('visible');
+        await hfMindSpeak(m.description, cfg);
+        document.getElementById('hfMindCardInfo').classList.remove('visible');
+        document.getElementById('hfMindCardInfo').scrollTop = 0;
+        if (hfMindAbort) break;
+        if (!hfMindSkipStep) await hfMindDelay(cfg.genPause * 1000);
+        hfMindSkipStep = false;
+      }
+    }
+
+    const limit   = Math.min(m.inputs.length, maxInp);
+    const startIi = (si === startSi) ? startInputIdx : 0;
+
+    for (let ii = startIi; ii < limit; ii++) {
+      if (hfMindAbort) break outer;
+      mindInputIdx = ii;
+      const inp = m.inputs[ii];
+
+      hfMindShowCard(inp.q, inp.a, false);
+      await hfMindSpeak(inp.q, cfg);
+      if (hfMindAbort) break outer;
+      if (!hfMindSkipStep) await hfMindDelay(cfg.thinkPause * 1000);
+      hfMindSkipStep = false;
+
+      if (cfg.cardBack) {
+        hfMindShowCard(inp.q, inp.a, true);
+        await hfMindSpeak(inp.a, cfg);
+        if (hfMindAbort) break outer;
+        if (!hfMindSkipStep) await hfMindDelay(cfg.genPause * 1000);
+        hfMindSkipStep = false;
+      }
+
+      if (cfg.loopStrategy && ii === limit - 1) ii = -1;
+    }
+
+    if (cfg.loopStrategy) si--;
+  }
+
+  hfMindPlaying  = false;
+  hfMindAbort    = false;
+  hfMindSkipStep = false;
+  speechSynthesis.cancel();
+  hfMindClearTimeouts();
+  hfMindUpdateButtons();
+}
+
+function hfMindStop() {
+  hfMindAbort    = true;
+  hfMindPlaying  = false;
+  hfMindSkipStep = false;
+  speechSynthesis.cancel();
+  hfMindClearTimeouts();
+  hfMindUpdateButtons();
+}
+
+function hfMindSkipForward() {
+  if (!hfMindPlaying) return;
+  hfMindSkipStep = true;
+  speechSynthesis.cancel();
+  hfMindClearTimeouts();
+  if (hfMindDelayResolve) { hfMindDelayResolve(); hfMindDelayResolve = null; }
+}
+
+function hfMindSkipBack() {
+  if (!hfMindPlaying) return;
+  if (mindInputIdx === 0 && mindIdx > 0) mindIdx--;
+  mindInputIdx = 0;
+  hfMindAbort = true;
+  speechSynthesis.cancel();
+  hfMindClearTimeouts();
+  if (hfMindDelayResolve) { hfMindDelayResolve(); hfMindDelayResolve = null; }
+  setTimeout(() => {
+    hfMindAbort   = false;
+    hfMindPlaying = false;
+    hfMindPlay();
+  }, 50);
+}
+
+document.getElementById('hfMindPlayBtn').addEventListener('click', hfMindPlay);
+document.getElementById('hfMindPlayBtn').addEventListener('touchend', e => { e.stopPropagation(); e.preventDefault(); hfMindPlay(); }, { passive: false });
+document.getElementById('hfMindNextStepBtn').addEventListener('click', hfMindSkipForward);
+document.getElementById('hfMindNextStepBtn').addEventListener('touchend', e => { e.stopPropagation(); e.preventDefault(); hfMindSkipForward(); }, { passive: false });
+document.getElementById('hfMindPrevStepBtn').addEventListener('click', hfMindSkipBack);
+document.getElementById('hfMindPrevStepBtn').addEventListener('touchend', e => { e.stopPropagation(); e.preventDefault(); hfMindSkipBack(); }, { passive: false });
+document.getElementById('hfMindCloseBtn').addEventListener('click', () => {
+  hfMindStop();
+  closeTraining('hfMindScreen');
+});
+document.getElementById('hfMindSettingsBtn').addEventListener('click', () =>
+  document.getElementById('hfMindSettingsOverlay').classList.add('open'));
+document.getElementById('hfMindSettingsClose').addEventListener('click', () =>
+  document.getElementById('hfMindSettingsOverlay').classList.remove('open'));
+
+const hfMindCardInfoEl = document.getElementById('hfMindCardInfo');
+hfMindCardInfoEl.addEventListener('touchstart', e => e.stopPropagation(), { passive: true });
+hfMindCardInfoEl.addEventListener('touchmove',  e => e.stopPropagation(), { passive: true });
+hfMindCardInfoEl.addEventListener('touchend',   e => e.stopPropagation(), { passive: true });
+
+// Manual navigation
+const hfMindCard = document.getElementById('hfMindCard');
+function hfMindRenderManual() {
+  if (!mindStrategies.length) return;
+  hfMindShowCard(mindStrategies[mindIdx].inputs[mindInputIdx].q, mindStrategies[mindIdx].inputs[mindInputIdx].a, false);
+}
+let hmTx=0,hmTy=0,hmTt=0,hmMov=false;
+hfMindCard.addEventListener('touchstart', e => { if (hfMindPlaying) return; hmTx=e.touches[0].clientX; hmTy=e.touches[0].clientY; hmTt=Date.now(); hmMov=false; }, { passive: true });
+hfMindCard.addEventListener('touchmove',  e => { if (hfMindPlaying) return; if (Math.abs(e.touches[0].clientX-hmTx)>10||Math.abs(e.touches[0].clientY-hmTy)>10) hmMov=true; }, { passive: true });
+hfMindCard.addEventListener('touchend',   e => {
+  if (hfMindPlaying) return;
+  const dx=e.changedTouches[0].clientX-hmTx, dy=e.changedTouches[0].clientY-hmTy, adx=Math.abs(dx), ady=Math.abs(dy);
+  if (!hmMov && Date.now()-hmTt<500) { hfMindCardInnerEl.classList.toggle('flipped'); return; }
+  if (hmMov && adx>40 && adx>ady) { mindIdx = dx>0 ? (mindIdx-1+mindStrategies.length)%mindStrategies.length : (mindIdx+1)%mindStrategies.length; mindInputIdx=0; hfMindRenderManual(); return; }
+  if (hmMov && ady>40 && ady>adx) { mindInputIdx = dy>0 ? (mindInputIdx-1+mindStrategies[mindIdx].inputs.length)%mindStrategies[mindIdx].inputs.length : (mindInputIdx+1)%mindStrategies[mindIdx].inputs.length; hfMindRenderManual(); return; }
+});
+
+document.getElementById('hfMindPrevBtn').addEventListener('click', () => { if (hfMindPlaying) return; mindIdx=(mindIdx-1+mindStrategies.length)%mindStrategies.length; mindInputIdx=0; hfMindRenderManual(); });
+document.getElementById('hfMindNextBtn').addEventListener('click', () => { if (hfMindPlaying) return; mindIdx=(mindIdx+1)%mindStrategies.length; mindInputIdx=0; hfMindRenderManual(); });
+document.getElementById('hfMindPrevInputBtn').addEventListener('click', () => { if (hfMindPlaying) return; mindInputIdx=(mindInputIdx-1+mindStrategies[mindIdx].inputs.length)%mindStrategies[mindIdx].inputs.length; hfMindRenderManual(); });
+document.getElementById('hfMindNextInputBtn').addEventListener('click', () => { if (hfMindPlaying) return; mindInputIdx=(mindInputIdx+1)%mindStrategies[mindIdx].inputs.length; hfMindRenderManual(); });
+
+function showHandsfreeMindset() {
+  mindStrategies = mindsetCollections[activeCollectionKey] || [];
+  if (!mindStrategies.length) return;
+  mindIdx = 0; mindInputIdx = 0;
+  navToTraining('hfMindScreen');
+  hfMindRenderManual();
+  document.getElementById('hfMindName').textContent = mindStrategies[0].name;
+  document.getElementById('hfMindCounter').textContent = `1 / ${mindStrategies.length}`;
+  hfMindUpdateButtons();
+}
+
+addModeListener('modeHandsfreeMindset', showHandsfreeMindset);
+TRAINING_SCREENS.push('hfMindScreen');
