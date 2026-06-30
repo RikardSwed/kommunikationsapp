@@ -1,7 +1,7 @@
 // app.js — All application logic for Communication Trainer
 // Depends on: data.js and multiStepData.js (must be loaded first)
 
-const VERSION = 'v1.10.0';
+const VERSION = 'v1.10.1';
 
 // ─── SCREENS ──────────────────────────────────────────────────────────────────
 const homeScreen     = document.getElementById('homeScreen');
@@ -1787,3 +1787,254 @@ TRAINING_SCREENS.push('mindScreen');
 // Init feedback bars
 fbInitBar('fb-mind-front');
 fbInitBar('fb-mind-back');
+
+
+// ── HANDSFREE: CHALLENGES MODE ────────────────────────────────────────────────
+
+let hfChallPlaying  = false;
+let hfChallAbort    = false;
+let hfChallSkipStep = false;
+let hfChallTimeouts = [];
+let hfChallDelayResolve = null;
+
+function hfChallSettings() {
+  return {
+    explanation : document.getElementById('hfChallExplanation').checked,
+    cardBack    : document.getElementById('hfChallCardBack').checked,
+    maxInputs   : document.getElementById('hfChallMaxInputs').value,
+    thinkPause  : parseFloat(document.getElementById('hfChallThinkPause').value),
+    genPause    : parseFloat(document.getElementById('hfChallGenPause').value),
+    rate        : parseFloat(document.getElementById('hfChallRate').value),
+    voiceGender : document.getElementById('hfChallVoice').value,
+    loopStrategy: document.getElementById('hfChallLoopStrategy').checked
+  };
+}
+
+function hfChallSpeak(text, cfg) {
+  return new Promise(resolve => {
+    if (!text) { resolve(); return; }
+    speechSynthesis.cancel();
+    const utt = new SpeechSynthesisUtterance(text);
+    utt.lang  = 'en-US';
+    utt.rate  = cfg.rate;
+    const voice = hfPickVoice(cfg.voiceGender);
+    if (voice) utt.voice = voice;
+    utt.onend   = () => resolve();
+    utt.onerror = () => resolve();
+    if (hfChallSkipStep) { hfChallSkipStep = false; resolve(); return; }
+    speechSynthesis.speak(utt);
+  });
+}
+
+function hfChallDelay(ms) {
+  return new Promise(resolve => {
+    hfChallDelayResolve = resolve;
+    if (hfChallAbort || hfChallSkipStep) { hfChallDelayResolve = null; resolve(); return; }
+    const step = 80;
+    let elapsed = 0;
+    function tick() {
+      if (hfChallAbort || hfChallSkipStep) { hfChallDelayResolve = null; resolve(); return; }
+      elapsed += step;
+      if (elapsed >= ms) { hfChallDelayResolve = null; resolve(); return; }
+      const id = setTimeout(tick, step);
+      hfChallTimeouts.push(id);
+    }
+    const id = setTimeout(tick, step);
+    hfChallTimeouts.push(id);
+  });
+}
+
+function hfChallClearTimeouts() {
+  hfChallTimeouts.forEach(id => clearTimeout(id));
+  hfChallTimeouts = [];
+}
+
+const hfChallCardInnerEl = document.getElementById('hfChallCardInner');
+
+function hfChallShowCard(q, a, flipped) {
+  document.getElementById('hfChallName').textContent      = challChallenges[challIdx].name;
+  document.getElementById('hfChallFrontText').textContent = q;
+  document.getElementById('hfChallBackText').textContent  = a;
+  document.getElementById('hfChallCounter').textContent   = `${challIdx + 1} / ${challChallenges.length}`;
+  hfChallCardInnerEl.style.transition = 'transform 0.4s ease';
+  hfChallCardInnerEl.classList.toggle('flipped', flipped);
+}
+
+function hfChallUpdateButtons() {
+  const playBtn = document.getElementById('hfChallPlayBtn');
+  const prevBtn = document.getElementById('hfChallPrevStepBtn');
+  const nextBtn = document.getElementById('hfChallNextStepBtn');
+  playBtn.textContent = hfChallPlaying ? '⏹' : '▶';
+  prevBtn.disabled = !hfChallPlaying;
+  nextBtn.disabled = !hfChallPlaying;
+  prevBtn.style.opacity = hfChallPlaying ? '1' : '0.35';
+  nextBtn.style.opacity = hfChallPlaying ? '1' : '0.35';
+}
+
+async function hfChallPlay() {
+  if (hfChallPlaying) { hfChallStop(); return; }
+  if (!challChallenges.length) return;
+
+  const unlock = new SpeechSynthesisUtterance(' ');
+  unlock.volume = 0;
+  speechSynthesis.speak(unlock);
+
+  hfChallPlaying  = true;
+  hfChallAbort    = false;
+  hfChallSkipStep = false;
+  hfChallUpdateButtons();
+
+  const cfg    = hfChallSettings();
+  const maxInp = cfg.maxInputs === 'all' ? Infinity : parseInt(cfg.maxInputs);
+
+  const startSi       = challIdx;
+  const startInputIdx = challInputIdx;
+  const skipIntro      = startInputIdx > 0;
+
+  outer:
+  for (let si = startSi; si < challChallenges.length; si++) {
+    if (hfChallAbort) break;
+    challIdx = si;
+    const cat = challChallenges[si];
+
+    if (!skipIntro || si > startSi) {
+      hfChallShowCard(cat.name, '', false);
+      document.getElementById('hfChallFrontText').textContent = cat.name;
+      await hfChallSpeak(cat.name, cfg);
+      if (hfChallAbort) break;
+      if (!hfChallSkipStep) await hfChallDelay(cfg.genPause * 1000);
+      hfChallSkipStep = false;
+
+      if (cfg.explanation && cat.description) {
+        document.getElementById('hfChallCardInfoText').textContent = cat.description;
+        document.getElementById('hfChallCardInfo').classList.add('visible');
+        await hfChallSpeak(cat.description, cfg);
+        document.getElementById('hfChallCardInfo').classList.remove('visible');
+        document.getElementById('hfChallCardInfo').scrollTop = 0;
+        if (hfChallAbort) break;
+        if (!hfChallSkipStep) await hfChallDelay(cfg.genPause * 1000);
+        hfChallSkipStep = false;
+      }
+    }
+
+    const limit   = Math.min(cat.inputs.length, maxInp);
+    const startIi = (si === startSi) ? startInputIdx : 0;
+
+    for (let ii = startIi; ii < limit; ii++) {
+      if (hfChallAbort) break outer;
+      challInputIdx = ii;
+      const inp = cat.inputs[ii];
+
+      hfChallShowCard(inp.q, inp.a, false);
+      await hfChallSpeak(inp.q, cfg);
+      if (hfChallAbort) break outer;
+      if (!hfChallSkipStep) await hfChallDelay(cfg.thinkPause * 1000);
+      hfChallSkipStep = false;
+
+      if (cfg.cardBack) {
+        hfChallShowCard(inp.q, inp.a, true);
+        await hfChallSpeak(inp.a, cfg);
+        if (hfChallAbort) break outer;
+        if (!hfChallSkipStep) await hfChallDelay(cfg.genPause * 1000);
+        hfChallSkipStep = false;
+      }
+
+      if (cfg.loopStrategy && ii === limit - 1) ii = -1;
+    }
+
+    if (cfg.loopStrategy) si--;
+  }
+
+  hfChallPlaying  = false;
+  hfChallAbort    = false;
+  hfChallSkipStep = false;
+  speechSynthesis.cancel();
+  hfChallClearTimeouts();
+  hfChallUpdateButtons();
+}
+
+function hfChallStop() {
+  hfChallAbort    = true;
+  hfChallPlaying  = false;
+  hfChallSkipStep = false;
+  speechSynthesis.cancel();
+  hfChallClearTimeouts();
+  hfChallUpdateButtons();
+}
+
+function hfChallSkipForward() {
+  if (!hfChallPlaying) return;
+  hfChallSkipStep = true;
+  speechSynthesis.cancel();
+  hfChallClearTimeouts();
+  if (hfChallDelayResolve) { hfChallDelayResolve(); hfChallDelayResolve = null; }
+}
+
+function hfChallSkipBack() {
+  if (!hfChallPlaying) return;
+  if (challInputIdx === 0 && challIdx > 0) challIdx--;
+  challInputIdx = 0;
+  hfChallAbort = true;
+  speechSynthesis.cancel();
+  hfChallClearTimeouts();
+  if (hfChallDelayResolve) { hfChallDelayResolve(); hfChallDelayResolve = null; }
+  setTimeout(() => {
+    hfChallAbort   = false;
+    hfChallPlaying = false;
+    hfChallPlay();
+  }, 50);
+}
+
+document.getElementById('hfChallPlayBtn').addEventListener('click', hfChallPlay);
+document.getElementById('hfChallPlayBtn').addEventListener('touchend', e => { e.stopPropagation(); e.preventDefault(); hfChallPlay(); }, { passive: false });
+document.getElementById('hfChallNextStepBtn').addEventListener('click', hfChallSkipForward);
+document.getElementById('hfChallNextStepBtn').addEventListener('touchend', e => { e.stopPropagation(); e.preventDefault(); hfChallSkipForward(); }, { passive: false });
+document.getElementById('hfChallPrevStepBtn').addEventListener('click', hfChallSkipBack);
+document.getElementById('hfChallPrevStepBtn').addEventListener('touchend', e => { e.stopPropagation(); e.preventDefault(); hfChallSkipBack(); }, { passive: false });
+document.getElementById('hfChallCloseBtn').addEventListener('click', () => {
+  hfChallStop();
+  closeTraining('hfChallScreen');
+});
+document.getElementById('hfChallSettingsBtn').addEventListener('click', () =>
+  document.getElementById('hfChallSettingsOverlay').classList.add('open'));
+
+const hfChallCardInfoEl = document.getElementById('hfChallCardInfo');
+hfChallCardInfoEl.addEventListener('touchstart', e => e.stopPropagation(), { passive: true });
+hfChallCardInfoEl.addEventListener('touchmove',  e => e.stopPropagation(), { passive: true });
+hfChallCardInfoEl.addEventListener('touchend',   e => e.stopPropagation(), { passive: true });
+
+// Manual navigation
+const hfChallCard = document.getElementById('hfChallCard');
+function hfChallRenderManual() {
+  if (!challChallenges.length) return;
+  hfChallShowCard(challChallenges[challIdx].inputs[challInputIdx].q, challChallenges[challIdx].inputs[challInputIdx].a, false);
+}
+let hcTx=0,hcTy=0,hcTt=0,hcMov=false;
+hfChallCard.addEventListener('touchstart', e => { if (hfChallPlaying) return; hcTx=e.touches[0].clientX; hcTy=e.touches[0].clientY; hcTt=Date.now(); hcMov=false; }, { passive: true });
+hfChallCard.addEventListener('touchmove',  e => { if (hfChallPlaying) return; if (Math.abs(e.touches[0].clientX-hcTx)>10||Math.abs(e.touches[0].clientY-hcTy)>10) hcMov=true; }, { passive: true });
+hfChallCard.addEventListener('touchend',   e => {
+  if (hfChallPlaying) return;
+  const dx=e.changedTouches[0].clientX-hcTx, dy=e.changedTouches[0].clientY-hcTy, adx=Math.abs(dx), ady=Math.abs(dy);
+  if (!hcMov && Date.now()-hcTt<500) { hfChallCardInnerEl.classList.toggle('flipped'); return; }
+  if (hcMov && adx>40 && adx>ady) { challIdx = dx>0 ? (challIdx-1+challChallenges.length)%challChallenges.length : (challIdx+1)%challChallenges.length; challInputIdx=0; hfChallRenderManual(); return; }
+  if (hcMov && ady>40 && ady>adx) { challInputIdx = dy>0 ? (challInputIdx-1+challChallenges[challIdx].inputs.length)%challChallenges[challIdx].inputs.length : (challInputIdx+1)%challChallenges[challIdx].inputs.length; hfChallRenderManual(); return; }
+});
+
+document.getElementById('hfChallPrevBtn').addEventListener('click', () => { if (hfChallPlaying) return; challIdx=(challIdx-1+challChallenges.length)%challChallenges.length; challInputIdx=0; hfChallRenderManual(); });
+document.getElementById('hfChallNextBtn').addEventListener('click', () => { if (hfChallPlaying) return; challIdx=(challIdx+1)%challChallenges.length; challInputIdx=0; hfChallRenderManual(); });
+document.getElementById('hfChallPrevInputBtn').addEventListener('click', () => { if (hfChallPlaying) return; challInputIdx=(challInputIdx-1+challChallenges[challIdx].inputs.length)%challChallenges[challIdx].inputs.length; hfChallRenderManual(); });
+document.getElementById('hfChallNextInputBtn').addEventListener('click', () => { if (hfChallPlaying) return; challInputIdx=(challInputIdx+1)%challChallenges[challIdx].inputs.length; hfChallRenderManual(); });
+
+function showHandsfreeChallenges() {
+  challChallenges = challengesCollections[activeCollectionKey] || [];
+  if (!challChallenges.length) return;
+  challIdx = 0; challInputIdx = 0;
+  navToTraining('hfChallScreen');
+  hfChallRenderManual();
+  document.getElementById('hfChallName').textContent = challChallenges[0].name;
+  document.getElementById('hfChallCounter').textContent = `1 / ${challChallenges.length}`;
+  hfChallUpdateButtons();
+}
+
+addModeListener('modeHandsfreeChallenges', showHandsfreeChallenges);
+TRAINING_SCREENS.push('hfChallScreen');
