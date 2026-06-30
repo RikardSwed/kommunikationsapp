@@ -227,6 +227,10 @@
         <div class="card-face card-front"><p class="card-text" id="flowFrontText"></p><div class="fb-bar" id="fb-flow-front"><button class="fb-btn" data-val="1"></button><button class="fb-btn" data-val="2"></button><button class="fb-btn" data-val="3"></button><button class="fb-btn" data-val="4"></button></div></div>
         <div class="card-face card-back"><p class="card-text mem-back-text" id="flowBackText"></p><div class="fb-bar" id="fb-flow-back"><button class="fb-btn" data-val="1"></button><button class="fb-btn" data-val="2"></button><button class="fb-btn" data-val="3"></button><button class="fb-btn" data-val="4"></button></div></div>
       </div>
+      <div class="card-info" id="flowCardInfo">
+        <button class="card-info-close" id="flowCardInfoClose">✕</button>
+        <p class="card-info-text" id="flowCardInfoText"></p>
+      </div>
     </div>
   </div>
   <div class="hint" id="flowHint">Tap card to reveal<br>↑ ↓ next card &nbsp;·&nbsp; ← → new combo</div>
@@ -403,6 +407,9 @@
         <div class="card-face card-front"><p class="card-text" id="hfFlowFrontText"></p></div>
         <div class="card-face card-back"><p class="card-text" id="hfFlowBackText"></p></div>
       </div>
+      <div class="card-info" id="hfFlowCardInfo">
+        <p class="card-info-text" id="hfFlowCardInfoText"></p>
+      </div>
     </div>
   </div>
   <div class="hf-hint-row">
@@ -437,7 +444,7 @@
       <label>Show hints</label>
       <label class="toggle"><input type="checkbox" id="showHints" checked /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.10.2</div>
+    <div class="settings-version">v1.10.3</div>
     <button class="settings-close" id="settingsClose">Done</button>
   </div>
 </div>
@@ -510,7 +517,7 @@
       <label>Loop current strategy</label>
       <label class="toggle"><input type="checkbox" id="hfLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.10.2</div>
+    <div class="settings-version">v1.10.3</div>
     <button class="settings-close" id="hfSettingsClose">Done</button>
   </div>
 </div>
@@ -579,7 +586,7 @@
       <label>Loop current strategy</label>
       <label class="toggle"><input type="checkbox" id="hfMemLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.10.2</div>
+    <div class="settings-version">v1.10.3</div>
     <button class="settings-close" id="hfMemSettingsClose">Done</button>
   </div>
 </div>
@@ -648,7 +655,7 @@
       <label>Loop current category</label>
       <label class="toggle"><input type="checkbox" id="hfChallLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.10.2</div>
+    <div class="settings-version">v1.10.3</div>
     <button class="settings-close" id="hfChallSettingsClose">Done</button>
   </div>
 </div>
@@ -657,6 +664,10 @@
 <div class="settings-overlay" id="hfFlowSettingsOverlay">
   <div class="settings-panel">
     <div class="settings-title">Handsfree: Sequences</div>
+    <div class="settings-row">
+      <label>Sequence explanation</label>
+      <label class="toggle"><input type="checkbox" id="hfFlowExplanation" checked /><span class="toggle-slider"></span></label>
+    </div>
     <div class="settings-row">
       <label>Card back</label>
       <label class="toggle"><input type="checkbox" id="hfFlowCardBack" checked /><span class="toggle-slider"></span></label>
@@ -702,7 +713,7 @@
       <label>Loop current combo</label>
       <label class="toggle"><input type="checkbox" id="hfFlowLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.10.2</div>
+    <div class="settings-version">v1.10.3</div>
     <button class="settings-close" id="hfFlowSettingsClose">Done</button>
   </div>
 </div>
@@ -809,15 +820,15 @@
       <label style="font-size:13px; color:#888;">Export all ratings as JSON</label>
       <button id="feedbackExportBtn" style="font-size:13px; color:#555; background:#f0f0f0; border:1px solid #ddd; border-radius:8px; padding:6px 12px; cursor:pointer;">Export</button>
     </div>
-    <div class="settings-version">v1.10.2</div>
+    <div class="settings-version">v1.10.3</div>
     <button class="settings-close" id="homeSettingsClose">Done</button>
   </div>
 </div>
 
-<script src="js/data.js?v=1102"></script>
-<script src="js/multiStepData.js?v=1102"></script>
-<script src="js/memorizeData.js?v=1102"></script>
-<script src="js/app.js?v=1102"></script>
+<script src="js/data.js?v=1103"></script>
+<script src="js/multiStepData.js?v=1103"></script>
+<script src="js/memorizeData.js?v=1103"></script>
+<script src="js/app.js?v=1103"></script>
 
 </body>
 </html>
