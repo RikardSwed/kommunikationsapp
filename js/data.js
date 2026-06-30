@@ -1,526 +1,2265 @@
-// data.js — All collection and strategy content
-// To add a new collection: add a key here and a card in index.html
+// app.js — All application logic for Communication Trainer
+// Depends on: data.js and multiStepData.js (must be loaded first)
 
-const collections = {
+const VERSION = 'v1.10.2';
 
-  assertive: [
-    {
-      name: "Fogging",
-      description: "Fogging means responding to criticism by calmly agreeing with what might be true — without defending yourself, explaining, or getting upset.\n\nYou are like fog: criticism hits nothing solid, it just passes through. This signals confidence and unshakeable calm.\n\nTypical fogging responses:\n• \"You might be right about that.\"\n• \"Yes, that could be.\"\n• \"You may have a point there.\"\n\nThree types of fogging:\n1. Agree with what might be true — \"You're probably right.\"\n2. Agree with the possibility — \"It's possible that I…\"\n3. Agree with the logic — \"I can see why you think so.\"\n\nMindset: You don't need to defend yourself. Agreeing is not giving up — it's strength.",
-      inputs: [
-        { q: "Someone criticises your driving",          a: '"You might be right about that."' },
-        { q: "Someone says you are too sensitive",       a: '"You could have a point there."' },
-        { q: "Someone calls you selfish for saying no",  a: '"I understand it might look that way."' },
-        { q: "Someone mocks something you made or said", a: '"Yeah, that probably wasn\'t my best."' },
-      ]
-    },
-    {
-      name: "Negative Inquiry",
-      description: "Negative inquiry means calmly and genuinely asking for more criticism when someone criticises you — instead of defending yourself.\n\nIt disarms the other person and gives you information about what the actual problem is.\n\nTypical phrases:\n• \"What is it specifically I do that bothers you?\"\n• \"What do you mean by that?\"\n• \"How would you prefer I handle it?\"\n\nThree purposes:\n1. Disarm — hard to keep attacking someone who genuinely listens\n2. Clarify — find out what the criticism is actually about\n3. Show confidence — you're not afraid of more criticism\n\nMindset: I'm not afraid of criticism. Asking is control, not weakness.",
-      inputs: [
-        { q: "Someone says you are being difficult",       a: '"What is it specifically that I\'m doing that feels difficult?"' },
-        { q: "Someone seems annoyed by something you did", a: '"Can you tell me more about what\'s bothering you?"' },
-        { q: "Someone gives you vague criticism",          a: '"What do you mean exactly? I\'d like to understand."' },
-        { q: "Someone says you always do this",            a: '"What is it I do that you\'re reacting to?"' },
-      ]
-    },
-    {
-      name: "Negative Assertion",
-      description: "Negative assertion means actively and calmly agreeing with your own faults when someone points them out — without over-apologising or getting defensive.\n\nThe key principle: acknowledge without shrinking.\n\nNot: \"Oh no, I'm so sorry…\"\nNot: \"Yes but it's because…\" (explanation = defence)\nYes: \"You're right. That's true.\" — short, calm, owned.\n\nMindset: I can be wrong and still be okay. Acknowledging a mistake shows strength.",
-      inputs: [
-        { q: "Someone points out you were late",               a: '"You\'re right, I was late. That\'s on me."' },
-        { q: "Someone says your joke wasn\'t funny",           a: '"No, that one didn\'t land."' },
-        { q: "Someone criticises how you handled a situation", a: '"You\'re right, I could have done that differently."' },
-        { q: "Someone points out a mistake you made at work",  a: '"Yes, that was a mistake. I\'ll fix it."' },
-      ]
-    },
-    {
-      name: "Broken Record",
-      description: "Broken record means returning to the same calm, short response over and over — without being drawn into argument, explanation, or apology.\n\nEvery time you explain yourself you give the other person a new argument to counter. When you just repeat — there is nothing to respond to.\n\nHow to use it:\n• Choose a short, clear sentence\n• Repeat it calmly every time they push\n• Don't change your wording, don't raise your voice, don't apologise\n\nMindset: I don't need to justify my boundaries. Repeating myself is stable, not strange.",
-      inputs: [
-        { q: "Someone keeps pressuring you after you said no", a: "Choose one calm sentence. Repeat it — without changing the wording, no matter what they say." },
-        { q: "A salesperson won't take no for an answer",      a: '"That doesn\'t work for me." — said calmly, three times if needed. No smile, no apology.' },
-        { q: "A friend repeatedly asks the same favour",       a: '"I can\'t help with that." — unchanged, regardless of how they rephrase.' },
-        { q: "Someone tries to argue you out of a decision",   a: '"I\'ve made my decision." — not "I\'ve decided because…" — no explanation.' },
-        { q: "Someone escalates pressure when you decline",    a: "Hold the same tone as the pressure rises. That's exactly when the technique is being tested." },
-        { q: "A colleague keeps pushing back on a boundary",   a: '"That\'s my boundary." — calm, clear, repeated.' },
-      ]
+// ─── SCREENS ──────────────────────────────────────────────────────────────────
+const homeScreen     = document.getElementById('homeScreen');
+const modeScreen     = document.getElementById('modeScreen');
+const trainingScreen = document.getElementById('trainingScreen');
+const msScreen       = document.getElementById('msScreen');
+const memScreen      = document.getElementById('memScreen');
+
+const TRAINING_SCREENS = [
+  'trainingScreen','memScreen','msScreen','flowScreen','guidedScreen',
+  'hfScreen','hfMemScreen','collScreen'
+];
+
+function hideAll() {
+  [homeScreen, modeScreen,
+   ...TRAINING_SCREENS.map(id => document.getElementById(id))
+  ].forEach(el => { el.style.display = 'none'; });
+}
+
+function navToHome() {
+  // Home is already visible behind — just animate mode out
+  homeScreen.style.display = 'flex';
+  modeScreen.classList.remove('slide-in-right', 'slide-out-right');
+  void modeScreen.offsetWidth;
+  modeScreen.classList.add('slide-out-right');
+  setTimeout(() => {
+    modeScreen.style.display = 'none';
+    modeScreen.classList.remove('slide-out-right');
+  }, 300);
+}
+
+function navToMode() {
+  // Home stays visible behind — animate mode in over it
+  homeScreen.style.display = 'flex';
+  modeScreen.style.display = 'flex';
+  modeScreen.classList.remove('slide-in-right', 'slide-out-right');
+  void modeScreen.offsetWidth;
+  modeScreen.classList.add('slide-in-right');
+}
+
+function navToTraining(id) {
+  // Mode stays visible behind — animate training in over it
+  modeScreen.style.display = 'flex';
+  const el = document.getElementById(id);
+  el.style.display = 'flex';
+  el.classList.remove('slide-in-bottom', 'slide-out-bottom');
+  void el.offsetWidth;
+  el.classList.add('slide-in-bottom');
+  // Hide mode after training has fully covered it
+  setTimeout(() => { modeScreen.style.display = 'none'; }, 320);
+}
+
+function navFromTraining(id) {
+  // Show mode immediately behind (no animation), hide home
+  homeScreen.style.display = 'none';
+  modeScreen.style.display = 'flex';
+  modeScreen.classList.remove('slide-in-right', 'slide-out-right');
+  const el = document.getElementById(id);
+  el.classList.remove('slide-in-bottom', 'slide-out-bottom');
+  void el.offsetWidth;
+  el.classList.add('slide-out-bottom');
+  setTimeout(() => {
+    el.style.display = 'none';
+    el.classList.remove('slide-out-bottom');
+  }, 300);
+}
+
+const card           = document.getElementById('card');
+const cardInner      = document.getElementById('cardInner');
+const cardInfo       = document.getElementById('cardInfo');
+const cardInfoText   = document.getElementById('cardInfoText');
+const strategyName   = document.getElementById('strategyName');
+const inputText      = document.getElementById('inputText');
+const answerText     = document.getElementById('answerText');
+const counter        = document.getElementById('counter');
+const hint           = document.getElementById('hint');
+
+// ─── DOM — MULTIPLE STEPS ────────────────────────────────────────────────────
+const msCard         = document.getElementById('msCard');
+const msCardInner    = document.getElementById('msCardInner');
+const msStrategyName = document.getElementById('msStrategyName');
+const msSituation    = document.getElementById('msSituation');
+const msStepText     = document.getElementById('msStepText');
+const msAnswerText   = document.getElementById('msAnswerText');
+const msStepCounter  = document.getElementById('msStepCounter');
+const msInputCounter = document.getElementById('msInputCounter');
+const msHint         = document.getElementById('msHint');
+
+// ─── DOM — MEMORIZE ──────────────────────────────────────────────────────────
+const memCard         = document.getElementById('memCard');
+const memCardInner    = document.getElementById('memCardInner');
+const memStrategyName = document.getElementById('memStrategyName');
+const memQuestionText = document.getElementById('memQuestionText');
+const memAnswerText   = document.getElementById('memAnswerText');
+const memCounter      = document.getElementById('memCounter');
+const memHint         = document.getElementById('memHint');
+
+// ─── STATE — SHARED ───────────────────────────────────────────────────────────
+let activeCollectionKey   = null;
+let activeCollectionLabel = null;
+
+// ─── STATE — SINGLE STRATEGY ─────────────────────────────────────────────────
+let strategies    = [];
+let stratOrder    = [];
+let inputOrders   = [];
+let stratIdx = 0, inputIdx = 0;
+let flipped = false, animating = false;
+
+// ─── STATE — MULTIPLE STEPS ──────────────────────────────────────────────────
+let memStrategies = [];
+let memStratIdx   = 0;
+let memCardIdx    = 0;
+let memFlipped    = false;
+let memAnimating  = false;
+
+let msStrategies = [];
+let msStratIdx   = 0;
+let msInputIdx   = 0;
+let msStepIdx    = 0;
+let msFlipped    = false;
+let msAnimating  = false;
+
+// ─── NAVIGATION ──────────────────────────────────────────────────────────────
+function showHome() {
+  navToHome();
+  closeInfo();
+}
+
+function showModeScreen(key, label) {
+  activeCollectionKey   = key;
+  activeCollectionLabel = label;
+  document.getElementById('modeCollectionName').textContent = label;
+  navToMode();
+}
+
+function showTraining() {
+  strategies  = collections[activeCollectionKey] || [];
+  if (!strategies.length) return;
+  stratOrder  = strategies.map((_, i) => i);
+  inputOrders = strategies.map(s => s.inputs.map((_, i) => i));
+  stratIdx = 0; inputIdx = 0;
+  navToTraining('trainingScreen');
+  render();
+}
+
+function showMultiStep() {
+  msStrategies = multiStepCollections[activeCollectionKey] || [];
+  if (msStrategies.length === 0) return;
+  msStratIdx = 0; msInputIdx = 0; msStepIdx = 0;
+  navToTraining('msScreen');
+  msRender();
+}
+
+// Collection cards → mode screen
+function showMemorize() {
+  memStrategies = memorizeCollections[activeCollectionKey] || [];
+  if (memStrategies.length === 0) return;
+  memStratIdx = 0; memCardIdx = 0;
+  navToTraining('memScreen');
+  memRender();
+}
+
+
+function addModeListener(id, fn) {
+  const el = document.getElementById(id);
+  let mStartY = 0, mMoved = false, didTouch = false;
+  el.addEventListener('touchstart', e => { mStartY = e.touches[0].clientY; mMoved = false; didTouch = true; }, { passive: true });
+  el.addEventListener('touchmove',  e => { if (Math.abs(e.touches[0].clientY - mStartY) > 8) mMoved = true; }, { passive: true });
+  el.addEventListener('touchend',   e => { if (!mMoved) { fn(); } });
+  el.addEventListener('click',      e => { if (didTouch) { didTouch = false; return; } fn(); });
+}
+
+document.querySelectorAll('.collection-card').forEach(el => {
+  const key   = el.dataset.key;
+  const label = el.dataset.label;
+  let cStartY = 0, cMoved = false, cDidTouch = false;
+  el.addEventListener('touchstart', e => { cStartY = e.touches[0].clientY; cMoved = false; cDidTouch = true; }, { passive: true });
+  el.addEventListener('touchmove',  e => { if (Math.abs(e.touches[0].clientY - cStartY) > 8) cMoved = true; }, { passive: true });
+  el.addEventListener('touchend',   e => { if (!cMoved) showModeScreen(key, label); });
+  el.addEventListener('click',      () => { if (cDidTouch) { cDidTouch = false; return; } showModeScreen(key, label); });
+});
+
+document.getElementById('modeBackBtn').addEventListener('click', showHome);
+
+// Beta section toggle
+function toggleBeta() {
+  const list  = document.getElementById('modeBetaList');
+  const arrow = document.getElementById('modeBetaArrow');
+  const open  = list.classList.toggle('open');
+  arrow.classList.toggle('open', open);
+}
+document.getElementById('modeBetaToggle').addEventListener('click', toggleBeta);
+document.getElementById('modeBetaToggle').addEventListener('touchend', e => { e.preventDefault(); toggleBeta(); }, { passive: false });
+
+addModeListener('modeFlashcard', showTraining);
+
+addModeListener('modeMultiStep', showMultiStep);
+
+addModeListener('modeMemorize', showMemorize);
+
+// Back buttons
+function closeTraining(screenId) {
+  navFromTraining(screenId);
+  // showModeScreen sets activeCollection labels etc but we don't want hideAll
+  // so we call it after the animation starts
+  document.getElementById('modeCollectionName').textContent = activeCollectionLabel;
+}
+
+document.getElementById('closeBtn').addEventListener('click',   () => closeTraining('trainingScreen'));
+document.getElementById('msCloseBtn').addEventListener('click',  () => closeTraining('msScreen'));
+document.getElementById('memCloseBtn').addEventListener('click', () => closeTraining('memScreen'));
+
+// ─── SINGLE STRATEGY — INFO OVERLAY ──────────────────────────────────────────
+let infoOpen = false;
+
+function openInfo() {
+  if (infoOpen) { closeInfo(); return; }
+  infoOpen = true;
+  cardInfoText.textContent = currentStrategy().description;
+  cardInfo.classList.add('visible');
+}
+
+function closeInfo() {
+  infoOpen = false;
+  cardInfo.classList.remove('visible');
+  cardInfo.scrollTop = 0;
+}
+
+document.getElementById('strategyName').addEventListener('click', openInfo);
+document.getElementById('cardInfoClose').addEventListener('click', e => { e.stopPropagation(); closeInfo(); });
+cardInfo.addEventListener('touchstart', e => e.stopPropagation(), { passive: true });
+cardInfo.addEventListener('touchmove',  e => e.stopPropagation(), { passive: true });
+cardInfo.addEventListener('touchend',   e => e.stopPropagation(), { passive: true });
+
+// ─── HELPERS ─────────────────────────────────────────────────────────────────
+function shuffle(arr) {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+function currentStrategy() { return strategies[stratOrder[stratIdx]]; }
+function currentInput()    { return currentStrategy().inputs[inputOrders[stratOrder[stratIdx]][inputIdx]]; }
+
+// ─── SINGLE STRATEGY — RENDER ────────────────────────────────────────────────
+function render() {
+  const inp = currentInput();
+  strategyName.textContent = currentStrategy().name;
+  inputText.textContent    = inp.q;
+  answerText.textContent   = inp.a;
+  counter.textContent      = `${stratIdx + 1} / ${strategies.length}`;
+  flip(false, false);
+}
+
+function flip(val, animate = true) {
+  flipped = val;
+  cardInner.style.transition = animate ? 'transform 0.4s ease' : 'none';
+  cardInner.classList.toggle('flipped', flipped);
+}
+
+function triggerSwipe(dir, callback) {
+  if (animating) return;
+  animating = true;
+  card.classList.add('swipe-' + dir);
+  setTimeout(() => { card.classList.remove('swipe-' + dir); callback(); animating = false; }, 220);
+}
+
+function nextInput()    { triggerSwipe('up',    () => { inputIdx = (inputIdx + 1) % inputOrders[stratOrder[stratIdx]].length; render(); }); }
+function prevInput()    { triggerSwipe('down',  () => { inputIdx = (inputIdx - 1 + inputOrders[stratOrder[stratIdx]].length) % inputOrders[stratOrder[stratIdx]].length; render(); }); }
+function nextStrategy() { triggerSwipe('left',  () => { closeInfo(); stratIdx = (stratIdx + 1) % strategies.length; inputIdx = 0; render(); }); }
+function prevStrategy() { triggerSwipe('right', () => { closeInfo(); stratIdx = (stratIdx - 1 + strategies.length) % strategies.length; inputIdx = 0; render(); }); }
+
+// ─── SINGLE STRATEGY — TOUCH ─────────────────────────────────────────────────
+let tx = 0, ty = 0, tt = 0, moved = false;
+
+card.addEventListener('touchstart', e => { tx = e.touches[0].clientX; ty = e.touches[0].clientY; tt = Date.now(); moved = false; e.preventDefault(); }, { passive: false });
+card.addEventListener('touchmove',  e => { if (Math.abs(e.touches[0].clientX - tx) > 10 || Math.abs(e.touches[0].clientY - ty) > 10) moved = true; e.preventDefault(); }, { passive: false });
+card.addEventListener('touchend',   e => {
+  e.preventDefault();
+  const dx = e.changedTouches[0].clientX - tx, dy = e.changedTouches[0].clientY - ty;
+  const adx = Math.abs(dx), ady = Math.abs(dy);
+  if (!moved && Date.now() - tt < 500)        { flip(!flipped); return; }
+  if (moved && adx > 40 && adx > ady) { dx > 0 ? prevStrategy() : nextStrategy(); return; }
+  if (moved && ady > 40 && ady > adx) { dy > 0 ? prevInput()    : nextInput();    return; }
+}, { passive: false });
+
+// ─── SINGLE STRATEGY — BUTTONS ───────────────────────────────────────────────
+document.getElementById('nextInputBtn').addEventListener('click',  nextInput);
+document.getElementById('prevInputBtn').addEventListener('click',  prevInput);
+document.getElementById('nextStratBtn').addEventListener('click',  nextStrategy);
+document.getElementById('prevStratBtn').addEventListener('click',  prevStrategy);
+
+// ─── MEMORIZE — RENDER ───────────────────────────────────────────────────────
+function memCurrentStrategy() { return memStrategies[memStratIdx]; }
+function memCurrentCard()     { return memCurrentStrategy().cards[memCardIdx]; }
+
+function memRender() {
+  const strat = memCurrentStrategy();
+  const c     = memCurrentCard();
+  memStrategyName.textContent = strat.name;
+  memQuestionText.textContent = c.q;
+  memAnswerText.textContent   = c.a;
+  memCounter.textContent      = `${memStratIdx + 1} / ${memStrategies.length}`;
+  memFlipFn(false, false);
+}
+
+function memFlipFn(val, animate = true) {
+  memFlipped = val;
+  memCardInner.style.transition = animate ? 'transform 0.4s ease' : 'none';
+  memCardInner.classList.toggle('flipped', memFlipped);
+}
+
+function memTriggerSwipe(dir, callback) {
+  if (memAnimating) return;
+  memAnimating = true;
+  memCard.classList.add('swipe-' + dir);
+  setTimeout(() => { memCard.classList.remove('swipe-' + dir); callback(); memAnimating = false; }, 220);
+}
+
+function memNextCard()     { memTriggerSwipe('up',    () => { memCardIdx  = (memCardIdx  + 1) % memCurrentStrategy().cards.length; memRender(); }); }
+function memPrevCard()     { memTriggerSwipe('down',  () => { memCardIdx  = (memCardIdx  - 1 + memCurrentStrategy().cards.length) % memCurrentStrategy().cards.length; memRender(); }); }
+function memNextStrategy() { memTriggerSwipe('left',  () => { memStratIdx = (memStratIdx + 1) % memStrategies.length; memCardIdx = 0; memRender(); }); }
+function memPrevStrategy() { memTriggerSwipe('right', () => { memStratIdx = (memStratIdx - 1 + memStrategies.length) % memStrategies.length; memCardIdx = 0; memRender(); }); }
+
+// ─── MEMORIZE — TOUCH ────────────────────────────────────────────────────────
+let memTx = 0, memTy = 0, memTt = 0, memMoved = false;
+
+memCard.addEventListener('touchstart', e => { memTx = e.touches[0].clientX; memTy = e.touches[0].clientY; memTt = Date.now(); memMoved = false; e.preventDefault(); }, { passive: false });
+memCard.addEventListener('touchmove',  e => { if (Math.abs(e.touches[0].clientX - memTx) > 10 || Math.abs(e.touches[0].clientY - memTy) > 10) memMoved = true; e.preventDefault(); }, { passive: false });
+memCard.addEventListener('touchend',   e => {
+  e.preventDefault();
+  const dx = e.changedTouches[0].clientX - memTx, dy = e.changedTouches[0].clientY - memTy;
+  const adx = Math.abs(dx), ady = Math.abs(dy);
+  if (!memMoved && Date.now() - memTt < 500)      { memFlipFn(!memFlipped); return; }
+  if (memMoved && adx > 40 && adx > ady) { dx > 0 ? memPrevStrategy() : memNextStrategy(); return; }
+  if (memMoved && ady > 40 && ady > adx) { dy > 0 ? memPrevCard()     : memNextCard();     return; }
+}, { passive: false });
+
+// ─── MEMORIZE — BUTTONS ──────────────────────────────────────────────────────
+document.getElementById('memNextCardBtn').addEventListener('click',  memNextCard);
+document.getElementById('memPrevCardBtn').addEventListener('click',  memPrevCard);
+document.getElementById('memNextStratBtn').addEventListener('click', memNextStrategy);
+document.getElementById('memPrevStratBtn').addEventListener('click', memPrevStrategy);
+document.getElementById('memSettingsBtn').addEventListener('click', () =>
+  document.getElementById('settingsOverlay').classList.add('open'));
+
+// ── Memorize info overlay ─────────────────────────────────────────────────────
+let memInfoOpen = false;
+
+function memOpenInfo() {
+  if (memInfoOpen) { memCloseInfo(); return; }
+  memInfoOpen = true;
+  const name = memCurrentStrategy().name;
+  let src = (collections[activeCollectionKey] || []).find(s => s.name === name);
+  if (!src && name.startsWith('Challenge: ')) {
+    const challName = name.replace('Challenge: ', '');
+    src = (challengesCollections[activeCollectionKey] || []).find(c =>
+      c.name === challName || c.name.includes(challName) || challName.includes(c.name)
+    );
+  }
+  document.getElementById('memCardInfoText').textContent = src ? src.description : 'No description available.';
+  document.getElementById('memCardInfo').classList.add('visible');
+}
+
+function memCloseInfo() {
+  memInfoOpen = false;
+  document.getElementById('memCardInfo').classList.remove('visible');
+  document.getElementById('memCardInfo').scrollTop = 0;
+}
+
+document.getElementById('memStrategyName').addEventListener('click', memOpenInfo);
+document.getElementById('memCardInfoClose').addEventListener('click', e => { e.stopPropagation(); memCloseInfo(); });
+document.getElementById('memCardInfo').addEventListener('touchstart', e => e.stopPropagation(), { passive: true });
+document.getElementById('memCardInfo').addEventListener('touchmove',  e => e.stopPropagation(), { passive: true });
+document.getElementById('memCardInfo').addEventListener('touchend',   e => e.stopPropagation(), { passive: true });
+
+// ─── MULTIPLE STEPS — RENDER ─────────────────────────────────────────────────
+function msCurrentStrategy() { return msStrategies[msStratIdx]; }
+function msCurrentInput()    { return msCurrentStrategy().inputs[msInputIdx]; }
+function msCurrentStep()     { return msCurrentInput().steps[msStepIdx]; }
+
+function msRender() {
+  const strat = msCurrentStrategy();
+  const input = msCurrentInput();
+  const step  = msCurrentStep();
+  msStrategyName.textContent = strat.name;
+  msSituation.textContent    = input.situation;
+  msStepText.textContent     = step.front;
+  msAnswerText.textContent   = step.back;
+  msStepCounter.textContent  = `Step ${msStepIdx + 1} / ${input.steps.length}`;
+  msInputCounter.textContent = `${msInputIdx + 1} / ${strat.inputs.length}`;
+  msFlip(false, false);
+}
+
+function msFlip(val, animate = true) {
+  msFlipped = val;
+  msCardInner.style.transition = animate ? 'transform 0.4s ease' : 'none';
+  msCardInner.classList.toggle('flipped', msFlipped);
+}
+
+function msTriggerSwipe(dir, callback) {
+  if (msAnimating) return;
+  msAnimating = true;
+  msCard.classList.add('swipe-' + dir);
+  setTimeout(() => { msCard.classList.remove('swipe-' + dir); callback(); msAnimating = false; }, 220);
+}
+
+function msNextStep() {
+  msTriggerSwipe('left', () => {
+    msStepIdx = (msStepIdx + 1) % msCurrentInput().steps.length;
+    msRender();
+  });
+}
+
+function msPrevStep() {
+  msTriggerSwipe('right', () => {
+    msStepIdx = (msStepIdx - 1 + msCurrentInput().steps.length) % msCurrentInput().steps.length;
+    msRender();
+  });
+}
+
+function msNextInput() {
+  msTriggerSwipe('up', () => {
+    msInputIdx = (msInputIdx + 1) % msCurrentStrategy().inputs.length;
+    msStepIdx  = 0;
+    msRender();
+  });
+}
+
+function msPrevInput() {
+  msTriggerSwipe('down', () => {
+    msInputIdx = (msInputIdx - 1 + msCurrentStrategy().inputs.length) % msCurrentStrategy().inputs.length;
+    msStepIdx  = 0;
+    msRender();
+  });
+}
+
+function msNextStrategy() {
+  msTriggerSwipe('left', () => {
+    msStratIdx = (msStratIdx + 1) % msStrategies.length;
+    msInputIdx = 0; msStepIdx = 0;
+    msRender();
+  });
+}
+
+function msPrevStrategy() {
+  msTriggerSwipe('right', () => {
+    msStratIdx = (msStratIdx - 1 + msStrategies.length) % msStrategies.length;
+    msInputIdx = 0; msStepIdx = 0;
+    msRender();
+  });
+}
+
+// ─── MULTIPLE STEPS — TOUCH ──────────────────────────────────────────────────
+let msTx = 0, msTy = 0, msTt = 0, msMoved = false;
+
+msCard.addEventListener('touchstart', e => { msTx = e.touches[0].clientX; msTy = e.touches[0].clientY; msTt = Date.now(); msMoved = false; e.preventDefault(); }, { passive: false });
+msCard.addEventListener('touchmove',  e => { if (Math.abs(e.touches[0].clientX - msTx) > 10 || Math.abs(e.touches[0].clientY - msTy) > 10) msMoved = true; e.preventDefault(); }, { passive: false });
+msCard.addEventListener('touchend',   e => {
+  e.preventDefault();
+  const dx = e.changedTouches[0].clientX - msTx, dy = e.changedTouches[0].clientY - msTy;
+  const adx = Math.abs(dx), ady = Math.abs(dy);
+  if (!msMoved && Date.now() - msTt < 500)      { msFlip(!msFlipped); return; }
+  if (msMoved && adx > 40 && adx > ady) { dx > 0 ? msPrevStep()  : msNextStep();  return; }
+  if (msMoved && ady > 40 && ady > adx) { dy > 0 ? msPrevInput() : msNextInput(); return; }
+}, { passive: false });
+
+// ─── MULTIPLE STEPS — BUTTONS ────────────────────────────────────────────────
+document.getElementById('msNextStepBtn').addEventListener('click',  msNextStep);
+document.getElementById('msPrevStepBtn').addEventListener('click',  msPrevStep);
+document.getElementById('msNextInputBtn').addEventListener('click', msNextInput);
+document.getElementById('msPrevInputBtn').addEventListener('click', msPrevInput);
+document.getElementById('msNextStrat').addEventListener('click',    msNextStrategy);
+document.getElementById('msPrevStrat').addEventListener('click',    msPrevStrategy);
+
+// ─── KEYBOARD ────────────────────────────────────────────────────────────────
+document.addEventListener('keydown', e => {
+  if (document.getElementById('settingsOverlay').classList.contains('open')) return;
+
+  const isTraining = id => document.getElementById(id).style.display === 'flex';
+
+  if (e.key === 'Escape') {
+    const activeTraining = TRAINING_SCREENS.find(isTraining);
+    if (activeTraining) closeTraining(activeTraining);
+    else if (modeScreen.classList.contains('screen--active')) showHome();
+    return;
+  }
+
+  if (isTraining('trainingScreen')) {
+    if (e.key === 'ArrowRight') nextStrategy();
+    if (e.key === 'ArrowLeft')  prevStrategy();
+    if (e.key === 'ArrowDown')  nextInput();
+    if (e.key === 'ArrowUp')    prevInput();
+    if (e.key === ' ')          { e.preventDefault(); flip(!flipped); }
+  }
+
+  if (isTraining('msScreen')) {
+    if (e.key === 'ArrowRight') msNextStep();
+    if (e.key === 'ArrowLeft')  msPrevStep();
+    if (e.key === 'ArrowDown')  msNextInput();
+    if (e.key === 'ArrowUp')    msPrevInput();
+    if (e.key === ' ')          { e.preventDefault(); msFlip(!msFlipped); }
+  }
+
+  if (isTraining('memScreen')) {
+    if (e.key === 'ArrowRight') memNextStrategy();
+    if (e.key === 'ArrowLeft')  memPrevStrategy();
+    if (e.key === 'ArrowDown')  memNextCard();
+    if (e.key === 'ArrowUp')    memPrevCard();
+    if (e.key === ' ')          { e.preventDefault(); memFlipFn(!memFlipped); }
+  }
+
+});
+
+// ─── SETTINGS ────────────────────────────────────────────────────────────────
+document.getElementById('settingsBtn').addEventListener('click', () =>
+  document.getElementById('settingsOverlay').classList.add('open'));
+
+document.getElementById('settingsClose').addEventListener('click', () => {
+  document.getElementById('settingsOverlay').classList.remove('open');
+  applySettings();
+});
+
+document.getElementById('settingsOverlay').addEventListener('click', e => {
+  if (e.target === document.getElementById('settingsOverlay')) {
+    document.getElementById('settingsOverlay').classList.remove('open');
+    applySettings();
+  }
+});
+
+function applySettings() {
+  const shS   = document.getElementById('shuffleStrategies').checked;
+  const shI   = document.getElementById('shuffleInputs').checked;
+  const showH = document.getElementById('showHints').checked;
+  const showHVal = showH ? 'visible' : 'hidden';
+
+  // Update hint visibility on all screens safely
+  ['hint','memHint','msHint','flowHint','guidedHint','hfHint'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.style.visibility = showHVal;
+  });
+
+  // Only rebuild order and re-render if strategies are loaded
+  if (strategies.length > 0) {
+    stratOrder  = shS ? shuffle(strategies.map((_, i) => i)) : strategies.map((_, i) => i);
+    inputOrders = strategies.map(s => shI ? shuffle(s.inputs.map((_, i) => i)) : s.inputs.map((_, i) => i));
+    // Re-render whichever training screen is currently visible
+    if (document.getElementById('trainingScreen').classList.contains('screen--active')) { stratIdx = 0; inputIdx = 0; render(); }
+  }
+}
+
+// ─── FLOW MODE ───────────────────────────────────────────────────────────────
+const flowScreen    = document.getElementById('flowScreen');
+const flowCard      = document.getElementById('flowCard');
+const flowCardInner = document.getElementById('flowCardInner');
+const flowComboName = document.getElementById('flowComboName');
+const flowFrontText = document.getElementById('flowFrontText');
+const flowBackText  = document.getElementById('flowBackText');
+const flowCounter   = document.getElementById('flowCounter');
+
+let flowStrategies = [], flowComboIdx = 0, flowCardIdx = 0;
+let flowFlipped = false, flowAnimating = false, flowSequence = [];
+
+function buildFlowSequence(combo) {
+  const seq = [];
+  combo.inputs.forEach(inp => {
+    seq.push({ type: 'situation', front: '\u{1F4CD} ' + inp.situation, back: inp.situation });
+    inp.steps.forEach(s => seq.push({ type: 'step', front: s.front, back: s.back }));
+  });
+  return seq;
+}
+
+function showFlow() {
+  flowStrategies = multiStepCollections[activeCollectionKey] || [];
+  if (!flowStrategies.length) return;
+  navToTraining('flowScreen');
+  flowComboIdx = 0; flowCardIdx = 0;
+  flowSequence = buildFlowSequence(flowStrategies[0]);
+  flowRender();
+}
+
+function flowRender() {
+  const combo = flowStrategies[flowComboIdx];
+  flowSequence = buildFlowSequence(combo);
+  const item = flowSequence[flowCardIdx];
+  flowComboName.textContent = combo.name;
+  flowFrontText.textContent = item.front;
+  flowBackText.textContent  = item.back;
+  flowCounter.textContent   = `${flowComboIdx + 1} / ${flowStrategies.length}`;
+  flowFlipFn(false, false);
+}
+
+function flowFlipFn(val, animate = true) {
+  flowFlipped = val;
+  flowCardInner.style.transition = animate ? 'transform 0.4s ease' : 'none';
+  flowCardInner.classList.toggle('flipped', flowFlipped);
+}
+
+function flowTrig(dir, cb) {
+  if (flowAnimating) return; flowAnimating = true;
+  flowCard.classList.add('swipe-' + dir);
+  setTimeout(() => { flowCard.classList.remove('swipe-' + dir); cb(); flowAnimating = false; }, 220);
+}
+
+function flowNextCard()  { flowTrig('up',    () => { flowCardIdx = (flowCardIdx + 1) % flowSequence.length; flowRender(); }); }
+function flowPrevCard()  { flowTrig('down',  () => { flowCardIdx = (flowCardIdx - 1 + flowSequence.length) % flowSequence.length; flowRender(); }); }
+function flowNextCombo() { flowTrig('left',  () => { flowComboIdx = (flowComboIdx + 1) % flowStrategies.length; flowCardIdx = 0; flowRender(); }); }
+function flowPrevCombo() { flowTrig('right', () => { flowComboIdx = (flowComboIdx - 1 + flowStrategies.length) % flowStrategies.length; flowCardIdx = 0; flowRender(); }); }
+
+let fTx=0,fTy=0,fTt=0,fMov=false;
+flowCard.addEventListener('touchstart',e=>{fTx=e.touches[0].clientX;fTy=e.touches[0].clientY;fTt=Date.now();fMov=false;e.preventDefault();},{passive:false});
+flowCard.addEventListener('touchmove', e=>{if(Math.abs(e.touches[0].clientX-fTx)>10||Math.abs(e.touches[0].clientY-fTy)>10)fMov=true;e.preventDefault();},{passive:false});
+flowCard.addEventListener('touchend',  e=>{
+  e.preventDefault();
+  const dx=e.changedTouches[0].clientX-fTx,dy=e.changedTouches[0].clientY-fTy,adx=Math.abs(dx),ady=Math.abs(dy);
+  if(!fMov&&Date.now()-fTt<500){flowFlipFn(!flowFlipped);return;}
+  if(fMov&&adx>40&&adx>ady){dx>0?flowPrevCombo():flowNextCombo();return;}
+  if(fMov&&ady>40&&ady>adx){dy>0?flowPrevCard():flowNextCard();return;}
+},{passive:false});
+
+document.getElementById('flowNextCardBtn').addEventListener('click',  flowNextCard);
+document.getElementById('flowPrevCardBtn').addEventListener('click',  flowPrevCard);
+document.getElementById('flowNextComboBtn').addEventListener('click', flowNextCombo);
+document.getElementById('flowPrevComboBtn').addEventListener('click', flowPrevCombo);
+document.getElementById('flowCloseBtn').addEventListener('click', ()=>closeTraining('flowScreen'));
+document.getElementById('flowSettingsBtn').addEventListener('click', ()=>document.getElementById('settingsOverlay').classList.add('open'));
+addModeListener('modeFlow', showFlow);
+
+// ─── GUIDED MODE ─────────────────────────────────────────────────────────────
+const guidedScreen        = document.getElementById('guidedScreen');
+const guidedCard          = document.getElementById('guidedCard');
+const guidedCardInner     = document.getElementById('guidedCardInner');
+const guidedComboName     = document.getElementById('guidedComboName');
+const guidedFrontText     = document.getElementById('guidedFrontText');
+const guidedBackText      = document.getElementById('guidedBackText');
+const guidedCounter       = document.getElementById('guidedCounter');
+const guidedStepLabel     = document.getElementById('guidedStepLabel');
+const guidedStepLabelBack = document.getElementById('guidedStepLabelBack');
+
+let guidedStrategies=[], guidedComboIdx=0, guidedInputIdx=0, guidedStepIdx=0;
+let guidedFlipped=false, guidedAnimating=false;
+
+function showGuided() {
+  guidedStrategies = multiStepCollections[activeCollectionKey] || [];
+  if (!guidedStrategies.length) return;
+  navToTraining('guidedScreen');
+  guidedComboIdx=0; guidedInputIdx=0; guidedStepIdx=0;
+  guidedRender();
+}
+
+function gCombo() { return guidedStrategies[guidedComboIdx]; }
+function gInput() { return gCombo().inputs[guidedInputIdx]; }
+function gStep()  { return gInput().steps[guidedStepIdx]; }
+
+function guidedRender() {
+  const step = gStep(), inp = gInput(), combo = gCombo();
+  const label = `Step ${guidedStepIdx+1} / ${inp.steps.length}`;
+  guidedComboName.textContent     = combo.name;
+  guidedFrontText.textContent     = inp.situation + '\n\n' + step.front;
+  guidedBackText.textContent      = step.back;
+  guidedCounter.textContent       = `${guidedComboIdx+1} / ${guidedStrategies.length}`;
+  guidedStepLabel.textContent     = label;
+  guidedStepLabelBack.textContent = label;
+  const isLast = guidedStepIdx === inp.steps.length - 1;
+  const btnTxt = isLast ? 'done \u2713' : 'next step \u2192';
+  document.getElementById('guidedNextStepBtn').textContent     = btnTxt;
+  document.getElementById('guidedNextStepBtnBack').textContent = btnTxt;
+  guidedFlipFn(false, false);
+}
+
+function guidedFlipFn(val, animate=true) {
+  guidedFlipped=val;
+  guidedCardInner.style.transition = animate?'transform 0.4s ease':'none';
+  guidedCardInner.classList.toggle('flipped', guidedFlipped);
+}
+
+function gTrig(dir,cb) {
+  if(guidedAnimating)return; guidedAnimating=true;
+  guidedCard.classList.add('swipe-'+dir);
+  setTimeout(()=>{guidedCard.classList.remove('swipe-'+dir);cb();guidedAnimating=false;},220);
+}
+
+function guidedAdvanceStep() {
+  if (guidedStepIdx < gInput().steps.length - 1) {
+    gTrig('up', ()=>{ guidedStepIdx++; guidedRender(); });
+  } else { guidedNextInput(); }
+}
+
+function guidedNextInput() { gTrig('up',    ()=>{ guidedInputIdx=(guidedInputIdx+1)%gCombo().inputs.length; guidedStepIdx=0; guidedRender(); }); }
+function guidedPrevInput() { gTrig('down',  ()=>{ guidedInputIdx=(guidedInputIdx-1+gCombo().inputs.length)%gCombo().inputs.length; guidedStepIdx=0; guidedRender(); }); }
+function guidedNextCombo() { gTrig('left',  ()=>{ guidedComboIdx=(guidedComboIdx+1)%guidedStrategies.length; guidedInputIdx=0; guidedStepIdx=0; guidedRender(); }); }
+function guidedPrevCombo() { gTrig('right', ()=>{ guidedComboIdx=(guidedComboIdx-1+guidedStrategies.length)%guidedStrategies.length; guidedInputIdx=0; guidedStepIdx=0; guidedRender(); }); }
+
+let gTx=0,gTy=0,gTt=0,gMov=false;
+guidedCard.addEventListener('touchstart',e=>{gTx=e.touches[0].clientX;gTy=e.touches[0].clientY;gTt=Date.now();gMov=false;e.preventDefault();},{passive:false});
+guidedCard.addEventListener('touchmove', e=>{if(Math.abs(e.touches[0].clientX-gTx)>10||Math.abs(e.touches[0].clientY-gTy)>10)gMov=true;e.preventDefault();},{passive:false});
+guidedCard.addEventListener('touchend',  e=>{
+  e.preventDefault();
+  const dx=e.changedTouches[0].clientX-gTx,dy=e.changedTouches[0].clientY-gTy,adx=Math.abs(dx),ady=Math.abs(dy);
+  if(!gMov&&Date.now()-gTt<500){guidedFlipFn(!guidedFlipped);return;}
+  if(gMov&&adx>40&&adx>ady){dx>0?guidedPrevCombo():guidedNextCombo();return;}
+  if(gMov&&ady>40&&ady>adx){dy>0?guidedPrevInput():guidedNextInput();return;}
+},{passive:false});
+
+document.getElementById('guidedNextStepBtn').addEventListener('click', guidedAdvanceStep);
+document.getElementById('guidedNextStepBtn').addEventListener('touchend', e => { e.stopPropagation(); e.preventDefault(); guidedAdvanceStep(); }, { passive: false });
+document.getElementById('guidedNextStepBtnBack').addEventListener('click', guidedAdvanceStep);
+document.getElementById('guidedNextStepBtnBack').addEventListener('touchend', e => { e.stopPropagation(); e.preventDefault(); guidedAdvanceStep(); }, { passive: false });
+document.getElementById('guidedNextComboBtn').addEventListener('click',    guidedNextCombo);
+document.getElementById('guidedPrevComboBtn').addEventListener('click',    guidedPrevCombo);
+document.getElementById('guidedNextInputBtn').addEventListener('click',    guidedNextInput);
+document.getElementById('guidedPrevInputBtn').addEventListener('click',    guidedPrevInput);
+document.getElementById('guidedCloseBtn').addEventListener('click', ()=>closeTraining('guidedScreen'));
+document.getElementById('guidedSettingsBtn').addEventListener('click', ()=>document.getElementById('settingsOverlay').classList.add('open'));
+addModeListener('modeGuided', showGuided);
+
+// ─── HANDSFREE MODE ──────────────────────────────────────────────────────────
+
+function hfSettings() {
+  return {
+    explanation : document.getElementById('hfExplanation').checked,
+    cardBack    : document.getElementById('hfCardBack').checked,
+    maxInputs   : document.getElementById('hfMaxInputs').value,
+    thinkPause  : parseInt(document.getElementById('hfThinkPause').value),
+    genPause    : parseInt(document.getElementById('hfGenPause').value),
+    loopStrategy: document.getElementById('hfLoopStrategy').checked,
+    rate        : parseFloat(document.getElementById('hfRate').value),
+    voiceGender : document.getElementById('hfVoice').value,
+  };
+}
+
+// ── State ─────────────────────────────────────────────────────────────────────
+let hfPlaying   = false;
+let hfAbort     = false;
+let hfSkipStep  = false;  // true = skip current speech and move to next step
+let hfTimeouts  = [];
+
+// ── Playback sequence step enum ───────────────────────────────────────────────
+// Steps in order: 'stratName' → 'explanation' → 'inputFront' → 'inputBack' → repeat
+let hfSeqStep = 'stratName';  // current position in sequence
+
+// ── Voice ─────────────────────────────────────────────────────────────────────
+let cachedVoices = [];
+function loadVoices() {
+  const v = speechSynthesis.getVoices();
+  if (v.length) cachedVoices = v;
+}
+loadVoices();
+if (typeof speechSynthesis.onvoiceschanged !== 'undefined') {
+  speechSynthesis.onvoiceschanged = loadVoices;
+}
+
+function hfPickVoice(gender) {
+  const voices = cachedVoices.length ? cachedVoices : speechSynthesis.getVoices();
+  const enVoices = voices.filter(v => v.lang.startsWith('en'));
+  if (!enVoices.length) return null;
+  if (gender === 'male') {
+    const pref = ['Daniel', 'Aaron', 'Fred', 'Gordon', 'Thomas', 'Arthur', 'Oliver', 'Jamie'];
+    for (const name of pref) { const v = enVoices.find(v => v.name.includes(name)); if (v) return v; }
+    return enVoices.find(v => !v.name.match(/Samantha|Victoria|Karen|Moira|Fiona|Allison|Ava|Susan|Zoe|Emma/i)) || enVoices[0];
+  } else {
+    const pref = ['Samantha', 'Ava', 'Allison', 'Victoria', 'Karen', 'Moira'];
+    for (const name of pref) { const v = enVoices.find(v => v.name.includes(name)); if (v) return v; }
+    return enVoices[0];
+  }
+}
+
+// ── Helpers ───────────────────────────────────────────────────────────────────
+function hfSpeak(text, cfg) {
+  return new Promise(resolve => {
+    if (hfAbort) { resolve(); return; }
+    const utt  = new SpeechSynthesisUtterance(text);
+    utt.lang   = 'en-US';
+    utt.rate   = cfg.rate;
+    const voice = hfPickVoice(cfg.voiceGender);
+    if (voice) utt.voice = voice;
+    utt.onend   = () => resolve();
+    utt.onerror = () => resolve();
+    // If skip requested, cancel immediately
+    if (hfSkipStep) { hfSkipStep = false; resolve(); return; }
+    speechSynthesis.speak(utt);
+  });
+}
+
+let hfDelayResolve = null;  // holds resolve() of the active hfDelay promise
+
+function hfDelay(ms) {
+  return new Promise(resolve => {
+    hfDelayResolve = resolve;
+    if (hfAbort || hfSkipStep) { hfDelayResolve = null; resolve(); return; }
+    const step = 80;
+    let elapsed = 0;
+    function tick() {
+      if (hfAbort || hfSkipStep) { hfDelayResolve = null; resolve(); return; }
+      elapsed += step;
+      if (elapsed >= ms) { hfDelayResolve = null; resolve(); return; }
+      const id = setTimeout(tick, step);
+      hfTimeouts.push(id);
     }
-  ],
+    const id = setTimeout(tick, step);
+    hfTimeouts.push(id);
+  });
+}
 
-  humour: [
-    {
-      name: "Exaggerating",
-      description: "Exaggerating means deliberately overstating something for humorous or rhetorical effect.\n\nThe key is that the exaggeration is obvious. Nobody believes you — that's the point.\n\nFour types:\n1. Value — overstate how important something is\n2. Looks — overstate someone's appearance\n3. Opinions — present your view as the most obviously correct thing ever\n4. Intent — exaggerate someone's motive dramatically\n\nWhat makes it land:\n• Commit to it — half-hearted exaggeration is just inaccuracy\n• Keep it short — one sentence, then let it breathe\n• The absurdity does the work — don't explain the joke\n\nMindset: Go bigger than feels comfortable. That's usually where the funny is.",
-      inputs: [
-        { q: "Exaggerate the value of something ordinary",  a: '"This coffee? Probably the single most important thing that\'s happened to me this week."' },
-        { q: "Exaggerate someone\'s looks as a compliment", a: '"You walked in and the lighting in this room genuinely improved."' },
-        { q: "Exaggerate your own opinion to make a point", a: '"This is not a preference. This is objectively, scientifically, historically the correct answer."' },
-        { q: "Exaggerate someone\'s intent or attitude",    a: '"The way you said that, I assumed you were announcing a hostile takeover."' },
-      ]
-    },
-    {
-      name: "Irony",
-      description: "Irony means saying the opposite of what you mean — in a way that's clear to the listener.\n\nFour types:\n1. Verbal irony — say the opposite: \"Yes, that was a brilliant decision.\"\n2. Situational irony — reality is opposite of expectation\n3. Socratic irony — pretend ignorance to lead toward a point\n4. Self-irony — \"Impeccably timed, as always.\"\n\nIrony vs sarcasm: irony is warm and playful. Sarcasm is sharper and can sting.\n\nMindset: Irony gives you distance from difficult situations without complaining.",
-      inputs: [
-        { q: "Someone says you're always late",    a: '"Yes — impeccably timed, as always."' },
-        { q: "Someone complains about the weather", a: '"Absolutely lovely. Couldn\'t ask for more."' },
-        { q: "Someone says a task is hard",         a: '"Easy. No problem at all."' },
-        { q: "A situation is clearly going wrong",  a: '"Going great. Better couldn\'t be."' },
-        { q: "Someone gives you unwanted advice",   a: '"Thank you. That changes everything."' },
-      ]
-    },
-    {
-      name: "Deliberate Misunderstanding",
-      description: "Deliberate misunderstanding means pretending to misunderstand what someone said — in a way that's obviously a joke.\n\nThree variants:\n1. Literal interpretation — take an idiom at face value\n2. Absurd interpretation — choose the most unreasonable reading\n3. Double meaning pick — choose the unintended meaning\n\nFormula: catch the phrase → pick the wrong interpretation → react briefly → move on\n\nMindset: Listen for phrases that could be read another way — they're everywhere.",
-      inputs: [
-        { q: 'Someone says "can you give me a hand?"',   a: '"Sure — but I\'d like it back."' },
-        { q: 'Someone says "I could eat a horse"',       a: '"You really shouldn\'t. They bite."' },
-        { q: 'Someone says "break a leg"',               a: '"That seems excessive. I\'ll just do my best."' },
-        { q: 'Someone says they\'re "dying of boredom"', a: '"Should I call someone?"' },
-        { q: 'Someone says "we need to nail this"',      a: '"I\'ll get the toolbox."' },
-        { q: "Someone gives a vague instruction",        a: "Choose the most absurd possible interpretation and act on it briefly, then smile." },
-        { q: "Someone uses a common idiom",              a: "Treat it as a factual statement and react accordingly — keep it short and obvious." },
-      ]
-    },
-    {
-      name: "Verbal Sparring",
-      description: "Verbal sparring is a playful verbal duel — you either hype yourself up or playfully discredit the other person.\n\nThe tone is everything: this is play, not real conflict.\n\nSix modes:\n1. Hype your opinions\n2. Hype your likes\n3. Hype your looks\n4. Discredit their behaviour\n5. Discredit their looks\n6. Discredit their opinion\n\nMindset: This is play. Go in with energy.",
-      inputs: [
-        { q: "Hype your opinion on something",           a: '"This is not an opinion. This is fact."' },
-        { q: "Hype something you like",                  a: '"If you haven\'t tried this, you haven\'t lived."' },
-        { q: "Hype your own looks",                      a: '"I woke up like this. Some people are just gifted."' },
-        { q: "Discredit something the other person did", a: '"I\'ve seen better. From a child. On their first attempt."' },
-        { q: "Discredit the other person\'s looks",      a: '"I\'m not saying it\'s bad. I\'m saying it\'s... a choice."' },
-        { q: "Discredit the other person\'s opinion",    a: '"I\'m going to pretend you didn\'t say that."' },
-      ]
+function hfClearTimeouts() {
+  hfTimeouts.forEach(id => clearTimeout(id));
+  hfTimeouts = [];
+}
+
+// ── Card display ──────────────────────────────────────────────────────────────
+const hfCardInnerEl = document.getElementById('hfCardInner');
+
+function hfShowCard(q, a, flipped) {
+  document.getElementById('hfStrategyName').textContent = currentStrategy().name;
+  document.getElementById('hfInputText').textContent    = q;
+  document.getElementById('hfAnswerText').textContent   = a;
+  document.getElementById('hfCounter').textContent      = `${stratIdx + 1} / ${strategies.length}`;
+  hfCardInnerEl.style.transition = 'transform 0.4s ease';
+  hfCardInnerEl.classList.toggle('flipped', flipped);
+}
+
+function hfUpdateButtons() {
+  const playBtn = document.getElementById('hfPlayBtn');
+  const prevBtn = document.getElementById('hfPrevStepBtn');
+  const nextBtn = document.getElementById('hfNextStepBtn');
+  playBtn.textContent = hfPlaying ? '⏹' : '▶';
+  prevBtn.disabled = !hfPlaying;
+  nextBtn.disabled = !hfPlaying;
+  prevBtn.style.opacity = hfPlaying ? '1' : '0.35';
+  nextBtn.style.opacity = hfPlaying ? '1' : '0.35';
+}
+
+// ── Main playback loop ────────────────────────────────────────────────────────
+async function hfPlay() {
+  if (hfPlaying) { hfStop(); return; }
+
+  const unlock = new SpeechSynthesisUtterance(' ');
+  unlock.volume = 0;
+  speechSynthesis.speak(unlock);
+
+  hfPlaying   = true;
+  hfAbort     = false;
+  hfSkipStep  = false;
+  hfUpdateButtons();
+
+  const cfg    = hfSettings();
+  const maxInp = cfg.maxInputs === 'all' ? Infinity : parseInt(cfg.maxInputs);
+
+  // Determine start position — if inputIdx > 0, skip strategy name + explanation
+  const startSi       = stratIdx;
+  const startInputIdx = inputIdx;
+  const skipIntro     = startInputIdx > 0;
+
+  outer:
+  for (let si = startSi; si < strategies.length; si++) {
+    if (hfAbort) break;
+    stratIdx = si;
+
+    const strat = currentStrategy();
+
+    if (!skipIntro || si > startSi) {
+      // Strategy name
+      hfSeqStep = 'stratName';
+      hfShowCard(strat.name, '', false);
+      document.getElementById('hfInputText').textContent = strat.name;
+      await hfSpeak(strat.name, cfg);
+      if (hfAbort) break;
+      if (!hfSkipStep) await hfDelay(cfg.genPause * 1000);
+      hfSkipStep = false;
+
+      // Explanation
+      if (cfg.explanation && strat.description) {
+        hfSeqStep = 'explanation';
+        document.getElementById('hfCardInfoText').textContent = strat.description;
+        document.getElementById('hfCardInfo').classList.add('visible');
+        await hfSpeak(strat.description, cfg);
+        document.getElementById('hfCardInfo').classList.remove('visible');
+        document.getElementById('hfCardInfo').scrollTop = 0;
+        if (hfAbort) break;
+        if (!hfSkipStep) await hfDelay(cfg.genPause * 1000);
+        hfSkipStep = false;
+      }
     }
-  ],
 
-  teasing: [
-    {
-      name: "Teasing",
-      description: "Teasing means playfully poking fun at someone — in a way that creates warmth and laughter rather than hurt.\n\nWhat makes teasing land:\n• Warm tone — it's obvious you like the person\n• Light touch — one tease, then move on\n• Pick something observable and harmless\n• Be ready to laugh at yourself too\n\nWhat to avoid:\n• Teasing about insecurities someone has shared\n• Repeating the same tease until it stops being funny\n• Teasing when someone is already upset\n\nMindset: Teasing is a sign of comfort and affection — not cruelty.",
-      inputs: [
-        { q: "Tease someone about their looks playfully", a: "Pick something observable and comment with a warm smile — keep it light, one line, move on." },
-        { q: "Tease someone about their clothes",         a: "Notice something specific and comment on it in an affectionate, playful way." },
-      ]
-    },
-    {
-      name: "Disqualification",
-      description: "Disqualification means subtly signalling that you're not automatically impressed — it flips the usual dynamic.\n\nExamples:\n• \"You're interesting — I'm just not sure we'd get along.\"\n• \"Not bad. Not quite what I expected, but not bad.\"\n• \"That was a good attempt.\"\n\nWhat makes it work:\n• Tone is everything — playful and warm, not cold\n• Use sparingly\n• Combine with pull for best effect\n\nMindset: I have my own criteria — I'm not automatically impressed.",
-      inputs: [
-        { q: "Someone approaches you with confidence",    a: '"You\'re interesting. I\'m just not sure we\'d get along — but interesting."' },
-        { q: "Someone seems very interested in you",      a: "Don't match their intensity — stay calm, show you have your own criteria." },
-        { q: "Someone gives you a lot of attention",      a: "Receive it calmly without becoming overly grateful or immediately reciprocating." },
-        { q: "Someone tries to impress you",             a: '"Good attempt." + small smile.' },
-        { q: "Someone compliments you",                  a: '"Thanks. You\'re not bad yourself."' },
-      ]
-    },
-    {
-      name: "Verbal Sparring",
-      description: "Verbal sparring is a playful verbal duel — you either hype yourself up or playfully discredit the other person.\n\nThe tone is everything: this is play, not real conflict.\n\nSix modes:\n1. Hype your opinions\n2. Hype your likes\n3. Hype your looks\n4. Discredit their behaviour\n5. Discredit their looks\n6. Discredit their opinion\n\nMindset: This is play. Go in with energy and don't take yourself too seriously.",
-      inputs: [
-        { q: "Hype your opinion on something",           a: '"This is not an opinion. This is fact."' },
-        { q: "Hype something you like",                  a: '"If you haven\'t tried this, you haven\'t lived."' },
-        { q: "Hype your own looks",                      a: '"I woke up like this. Some people are just gifted."' },
-        { q: "Discredit something the other person did", a: '"I\'ve seen better. From a child. On their first attempt."' },
-        { q: "Discredit the other person\'s looks",      a: '"I\'m not saying it\'s bad. I\'m saying it\'s... a choice."' },
-        { q: "Discredit the other person\'s opinion",    a: '"I\'m going to pretend you didn\'t say that."' },
-      ]
-    },
-    {
-      name: "Push / Pull",
-      description: "Push/pull means creating a rhythm of closeness and distance — you give something (pull) then take a little back (push).\n\nPull: a compliment, genuine curiosity, warmth\nPush: a playful disqualification, becoming slightly more distant, a tease\n\nEffective variant: give on one dimension, take on another — compliment looks but critique taste in music.\n\nPrinciple: contrast creates engagement.\n\nMindset: I don't need to be constantly available. Contrast creates engagement.",
-      inputs: [
-        { q: "Compliment looks + critique taste in music",     a: '"You look really good today. Your music taste is a separate problem."' },
-        { q: "Compliment personality + tease their hobby",     a: '"You\'re genuinely fun to talk to. I still don\'t understand how you spend your free time."' },
-        { q: "Compliment style + mock food choices",           a: '"The style is good. But what you eat is an active choice against yourself."' },
-        { q: "Compliment work ethic + tease for being boring", a: '"You work hard — impressive. But you have it a little boring, don\'t you?"' },
-        { q: "Show warm interest then become more neutral",    a: "Be genuinely engaged — then pull back slightly, as if remembering not to be too easily impressed." },
-        { q: "Someone is very eager",                          a: "Don't match their intensity — cool down a little, let them come to you." },
-        { q: "Say something critical then follow with warmth", a: '"But on a serious note — that was actually good."' },
-      ]
-    },
-    {
-      name: "Twist",
-      description: "A twist means breaking against expectations — you say or do something that is the opposite of what the situation seems to call for.\n\nTypes:\n1. Ironic reversal — say the opposite of what's expected\n2. Unexpected interpretation — read something a completely different way\n3. Break the script — everyone expects reaction A, you give reaction B\n4. Absurd conclusion — take something to its logical but absurd endpoint\n\nMindset: Unpredictability creates interest.",
-      inputs: [
-        { q: "Someone says something predictable",              a: "Break from the expected response — go somewhere they didn't anticipate." },
-        { q: "Someone expects you to react a certain way",      a: "Give them the opposite reaction, playfully." },
-        { q: "Someone makes an assumption about you",           a: "Confirm it — but in an unexpected way that reframes it entirely." },
-        { q: "Someone gives a compliment",                      a: "Respond unexpectedly — nonchalant, absurd conclusion, or strangely reflective." },
-        { q: "Someone is very serious about something trivial", a: "Take it even more seriously than they do — escalate to the absurd." },
-      ]
-    },
-    {
-      name: "Convert Criticism to Tease",
-      description: "Taking a genuine criticism and wrapping it in humour — exaggeration, warmth, or drama — so the message is there, but the tone is playful.\n\nFour techniques:\n1. Exaggerate — make the criticism so extreme it's obviously not serious\n2. Warm admiration mixed with critique\n3. Dramatic tone — pretend to be deeply affected\n4. Fond complaint — treat it like an established in-joke\n\nMindset: I can communicate something that bothers me without creating conflict.",
-      inputs: [
-        { q: "Someone always talks too fast",        a: '"You talk so fast I need to pause you like a podcast."' },
-        { q: "Someone always talks about one topic", a: '"It\'s almost impressive — it\'s like a calling for you."' },
-        { q: "Someone is always late",               a: '"Fashionably late as always. It\'s your brand at this point."' },
-        { q: "Someone has a quirky recurring habit", a: "Lift it with fond drama — exaggerate the impact it has on you." },
-        { q: "Someone made a questionable decision", a: '"That was brave. Not wise, but brave."' },
-      ]
-    },
-    {
-      name: "Convert Criticism to Tease with Irony",
-      description: "Flip the criticism and present the negative quality as if it were a merit or talent. The absurdity of the reversal is the joke.\n\nExamples:\n• Someone talks too fast → \"It's a talent — full presentation, 40 seconds. Respect.\"\n• Someone is messy → \"That's not disorder — that's a creative system.\"\n• Someone made a bad decision → \"Brave. Not wise, but brave.\"\n\nWhat makes it land:\n• Deliver with a completely straight, convinced tone\n• The reversal must be obviously absurd\n\nMindset: I can turn a criticism into something that makes us both laugh.",
-      inputs: [
-        { q: "Someone talks too fast",                     a: '"It\'s a talent — full presentation, 40 seconds. Respect."' },
-        { q: "Someone is always messy",                    a: '"That\'s not disorder. That\'s a creative system. I see it now."' },
-        { q: "Someone is always distracted",               a: '"That\'s advanced-level multitasking."' },
-        { q: "Someone made a questionable decision",       a: '"Brave. Not wise, but brave."' },
-        { q: "Someone has a habit that seems inefficient", a: "Present it as a sophisticated method — with full conviction and a straight face." },
-      ]
+    const ord   = inputOrders[stratOrder[si]];
+    const limit = Math.min(ord.length, maxInp);
+    const startIi = (si === startSi) ? startInputIdx : 0;
+
+    for (let ii = startIi; ii < limit; ii++) {
+      if (hfAbort) break outer;
+      inputIdx = ii;
+      const inp = currentInput();
+
+      // Input front
+      hfSeqStep = 'inputFront';
+      hfShowCard(inp.q, inp.a, false);
+      await hfSpeak(inp.q, cfg);
+      if (hfAbort) break outer;
+      if (!hfSkipStep) await hfDelay(cfg.thinkPause * 1000);
+      hfSkipStep = false;
+
+      // Input back
+      if (cfg.cardBack) {
+        hfSeqStep = 'inputBack';
+        hfShowCard(inp.q, inp.a, true);
+        await hfSpeak(inp.a, cfg);
+        if (hfAbort) break outer;
+        if (!hfSkipStep) await hfDelay(cfg.genPause * 1000);
+        hfSkipStep = false;
+      }
+
+      if (cfg.loopStrategy && ii === limit - 1) ii = -1;
     }
-  ],
 
-  criticism: [
-    {
-      name: "Critique",
-      description: "Giving good criticism is an art. Bad criticism creates defensiveness. Good criticism creates change.\n\nSix principles:\n1. Specific — not \"you're always late\" but \"you were 20 minutes late today\"\n2. Behaviour, not person — not \"you're careless\" but \"this needs to be redone\"\n3. Right timing — not in the middle of a conflict\n4. Private when possible\n5. One thing at a time\n6. Future focus — what you want to see, not just what went wrong\n\nMindset: Good criticism is a gift — not an attack.",
-      inputs: [
-        { q: "Criticise someone's work quality",                         a: '"This needs to be redone because... next time, what would help is..."' },
-        { q: "Criticise a repeated behaviour that bothers you",          a: '"I\'ve noticed X happens often — that doesn\'t work for me."' },
-        { q: "Criticise a decision someone made",                        a: '"I understand why you chose that — I think it might have worked better if..."' },
-        { q: "Raise a small issue before it becomes a bigger problem",   a: "Bring it up early and calmly — one specific observation, future focus." },
-        { q: "Criticise someone you care about without damaging things", a: '"I\'m saying this because I care — [specific behaviour], [specific impact]."' },
-        { q: "Criticise a child's behaviour constructively",             a: '"What you did was X, what I need is Y." — address the behaviour, not the person.' },
-      ]
-    },
-    {
-      name: "Feedback Handling",
-      description: "Feedback is one of the most important tools for growth — but only if you can actually receive it.\n\nFour situations:\n1. Positive feedback — receive it genuinely, without minimising\n2. Constructive feedback — listen fully, acknowledge, ask if needed\n3. Harsh feedback — separate content from form\n4. Feedback you disagree with — listen fully, then share your view\n\nMindset: Feedback is information. I listen genuinely and then decide what to do with it.",
-      inputs: [
-        { q: "Someone gives critical feedback on your work", a: '"Can you tell me more about what didn\'t work?" — listen fully, then acknowledge.' },
-        { q: "Someone gives positive feedback",              a: '"Thank you, that\'s good to hear." — don\'t minimise.' },
-        { q: "Someone gives feedback in a harsh way",        a: "Separate content from form — take in what's relevant, let the tone go." },
-        { q: "Someone gives feedback that surprises you",    a: '"Interesting — I hadn\'t thought of it that way."' },
-        { q: "Someone gives feedback you disagree with",     a: '"I actually see it a bit differently..." — listen fully first.' },
-        { q: "You receive feedback in a group setting",      a: "Stay calm and open — not defensive in front of others." },
-      ]
-    },
-    {
-      name: "Delay Correction",
-      description: "Not all criticism needs to be given immediately. Sometimes the timing is wrong.\n\nVariants:\n• Joke in the moment, address seriously later\n• Change subject and return when things have settled\n• Wait for the right moment\n• Let it go entirely\n\nWhen to delay:\n• The person is too upset to receive it right now\n• The situation is public\n• The thing is small and the moment is good\n• You're too upset yourself\n\nMindset: Choosing when to address something is a strength, not avoidance.",
-      inputs: [
-        { q: "Someone made a small mistake that annoyed you",  a: "Let it pass now — decide later whether it's worth raising at all." },
-        { q: "Someone told you what to do in a nasty way",     a: "Let the moment pass — address how they said it later when you're both calm." },
-        { q: "The right moment to correct has already passed", a: '"I wanted to mention something about what happened earlier — is now a good time?"' },
-        { q: "Timing feels wrong right now",                   a: "Identify why, then actively choose a better moment — don't just avoid it indefinitely." },
-        { q: "Someone forgot to do something minor",           a: "Joke about it lightly if appropriate, then raise it properly if it becomes a pattern." },
-      ]
-    },
-    {
-      name: "Friend Related Critique",
-      description: "It's socially complex when a friend criticises another friend. You want to stand up for the person being criticised, but without escalating conflict.\n\nSix strategies:\n1. Nuance without attacking\n2. Defend with facts\n3. Shift perspective — \"Have you talked to them about it?\"\n4. Take a clear but calm position\n5. Redirect — \"That might be something they need to work out between themselves.\"\n6. Support the absent person\n\nMindset: I can stand up for someone without creating a new conflict.",
-      inputs: [
-        { q: "A mutual friend is criticised in front of you",          a: '"I understand what you mean — and I think there might be more behind it."' },
-        { q: "Someone criticises a close friend who isn't there",      a: '"I know that he/she actually... it\'s a bit more complicated than that."' },
-        { q: "Someone makes an unfair generalisation about a friend",  a: '"That\'s not quite right — it\'s more nuanced than that."' },
-        { q: "Two friends are in conflict and one asks for your take", a: '"That might be something you two need to work out between yourselves."' },
-        { q: "Someone has a strong opinion about what a friend did",   a: '"Have you spoken to them about it? There might be a side you haven\'t heard."' },
-      ]
+    if (cfg.loopStrategy) si--;
+  }
+
+  hfPlaying   = false;
+  hfAbort     = false;
+  hfSkipStep  = false;
+  speechSynthesis.cancel();
+  hfClearTimeouts();
+  hfUpdateButtons();
+}
+
+function hfStop() {
+  hfAbort     = true;
+  hfPlaying   = false;
+  hfSkipStep  = false;
+  speechSynthesis.cancel();
+  hfClearTimeouts();
+  hfUpdateButtons();
+}
+
+// Skip forward — cancel current speech, next iteration picks up next step
+function hfSkipForward() {
+  if (!hfPlaying) return;
+  hfSkipStep = true;
+  speechSynthesis.cancel();
+  hfClearTimeouts();
+  if (hfDelayResolve) { hfDelayResolve(); hfDelayResolve = null; }
+}
+
+// Skip back — go to start of current strategy (stratName step)
+function hfSkipBack() {
+  if (!hfPlaying) return;
+  // If already at first input of current strategy, go to previous strategy
+  if (inputIdx === 0 && stratIdx > 0) stratIdx--;
+  inputIdx = 0;
+  // Abort current loop cleanly, then restart from new position
+  hfAbort  = true;
+  speechSynthesis.cancel();
+  hfClearTimeouts();
+  if (hfDelayResolve) { hfDelayResolve(); hfDelayResolve = null; }
+  setTimeout(() => {
+    hfAbort   = false;
+    hfPlaying = false;
+    hfPlay();
+  }, 50);
+}
+
+// ── Buttons ───────────────────────────────────────────────────────────────────
+document.getElementById('hfPlayBtn').addEventListener('click', hfPlay);
+document.getElementById('hfPlayBtn').addEventListener('touchend', e => { e.stopPropagation(); e.preventDefault(); hfPlay(); }, { passive: false });
+
+document.getElementById('hfNextStepBtn').addEventListener('click', hfSkipForward);
+document.getElementById('hfNextStepBtn').addEventListener('touchend', e => { e.stopPropagation(); e.preventDefault(); hfSkipForward(); }, { passive: false });
+
+document.getElementById('hfPrevStepBtn').addEventListener('click', hfSkipBack);
+document.getElementById('hfPrevStepBtn').addEventListener('touchend', e => { e.stopPropagation(); e.preventDefault(); hfSkipBack(); }, { passive: false });
+
+document.getElementById('hfCloseBtn').addEventListener('click', () => {
+  hfStop();
+  closeTraining('hfScreen');
+});
+document.getElementById('hfSettingsBtn').addEventListener('click', () =>
+  document.getElementById('hfSettingsOverlay').classList.add('open'));
+
+// Allow scrolling in hfCardInfo overlay
+const hfCardInfoEl = document.getElementById('hfCardInfo');
+hfCardInfoEl.addEventListener('touchstart', e => e.stopPropagation(), { passive: true });
+hfCardInfoEl.addEventListener('touchmove',  e => e.stopPropagation(), { passive: true });
+hfCardInfoEl.addEventListener('touchend',   e => e.stopPropagation(), { passive: true });
+
+// ── Manual navigation on hf screen ───────────────────────────────────────────
+const hfCard      = document.getElementById('hfCard');
+const hfCardInner = document.getElementById('hfCardInner');
+
+function hfRender() {
+  if (!strategies.length) return;
+  document.getElementById('hfStrategyName').textContent = currentStrategy().name;
+  document.getElementById('hfInputText').textContent    = currentInput().q;
+  document.getElementById('hfAnswerText').textContent   = currentInput().a;
+  document.getElementById('hfCounter').textContent      = `${stratIdx + 1} / ${strategies.length}`;
+  hfCardInner.style.transition = 'none';
+  hfCardInner.classList.remove('flipped');
+}
+
+let hfTx=0,hfTy=0,hfTt=0,hfMov=false;
+hfCard.addEventListener('touchstart',e=>{hfTx=e.touches[0].clientX;hfTy=e.touches[0].clientY;hfTt=Date.now();hfMov=false;e.preventDefault();},{passive:false});
+hfCard.addEventListener('touchmove', e=>{if(Math.abs(e.touches[0].clientX-hfTx)>10||Math.abs(e.touches[0].clientY-hfTy)>10)hfMov=true;e.preventDefault();},{passive:false});
+hfCard.addEventListener('touchend',  e=>{
+  e.preventDefault();
+  const dx=e.changedTouches[0].clientX-hfTx,dy=e.changedTouches[0].clientY-hfTy,adx=Math.abs(dx),ady=Math.abs(dy);
+  if(!hfMov&&Date.now()-hfTt<500){hfCardInner.classList.toggle('flipped');return;}
+  if(hfMov&&adx>40&&adx>ady){stratIdx=dx>0?(stratIdx-1+strategies.length)%strategies.length:(stratIdx+1)%strategies.length;inputIdx=0;hfRender();return;}
+  if(hfMov&&ady>40&&ady>adx){const o=inputOrders[stratOrder[stratIdx]];inputIdx=dy>0?(inputIdx-1+o.length)%o.length:(inputIdx+1)%o.length;hfRender();return;}
+},{passive:false});
+
+document.getElementById('hfPrevStratBtn').addEventListener('click',()=>{stratIdx=(stratIdx-1+strategies.length)%strategies.length;inputIdx=0;hfRender();});
+document.getElementById('hfNextStratBtn').addEventListener('click',()=>{stratIdx=(stratIdx+1)%strategies.length;inputIdx=0;hfRender();});
+document.getElementById('hfPrevInputBtn').addEventListener('click',()=>{const o=inputOrders[stratOrder[stratIdx]];inputIdx=(inputIdx-1+o.length)%o.length;hfRender();});
+document.getElementById('hfNextInputBtn').addEventListener('click',()=>{const o=inputOrders[stratOrder[stratIdx]];inputIdx=(inputIdx+1)%o.length;hfRender();});
+
+// ── showHandsfree ─────────────────────────────────────────────────────────────
+function showHandsfree() {
+  strategies  = collections[activeCollectionKey] || [];
+  if (!strategies.length) return;
+  stratOrder  = strategies.map((_,i)=>i);
+  inputOrders = strategies.map(s=>s.inputs.map((_,i)=>i));
+  stratIdx = 0; inputIdx = 0;
+  navToTraining('hfScreen');
+  hfRender();
+  hfUpdateButtons();
+}
+
+addModeListener('modeHandsfree', showHandsfree);
+
+
+// ─── HANDSFREE MEMORIZE MODE ─────────────────────────────────────────────────
+
+function hfMemSettings() {
+  return {
+    explanation : document.getElementById('hfMemExplanation').checked,
+    cardBack    : document.getElementById('hfMemCardBack').checked,
+    maxCards    : document.getElementById('hfMemMaxCards').value,
+    thinkPause  : parseInt(document.getElementById('hfMemThinkPause').value),
+    genPause    : parseInt(document.getElementById('hfMemGenPause').value),
+    loopStrategy: document.getElementById('hfMemLoopStrategy').checked,
+    rate        : parseFloat(document.getElementById('hfMemRate').value),
+    voiceGender : document.getElementById('hfMemVoice').value,
+  };
+}
+
+let hfMemPlaying   = false;
+let hfMemAbort     = false;
+let hfMemSkipStep  = false;
+let hfMemTimeouts  = [];
+
+let hfMemDelayResolve = null;  // holds resolve() of the active hfMemDelay promise
+
+function hfMemDelay(ms) {
+  return new Promise(resolve => {
+    hfMemDelayResolve = resolve;
+    if (hfMemAbort || hfMemSkipStep) { hfMemDelayResolve = null; resolve(); return; }
+    const step = 80;
+    let elapsed = 0;
+    function memTick() {
+      if (hfMemAbort || hfMemSkipStep) { hfMemDelayResolve = null; resolve(); return; }
+      elapsed += step;
+      if (elapsed >= ms) { hfMemDelayResolve = null; resolve(); return; }
+      const id = setTimeout(memTick, step);
+      hfMemTimeouts.push(id);
     }
-  ]
+    const id = setTimeout(memTick, step);
+    hfMemTimeouts.push(id);
+  });
+}
 
+function hfMemClearTimeouts() {
+  hfMemTimeouts.forEach(id => clearTimeout(id));
+  hfMemTimeouts = [];
+}
+
+function hfMemSpeak(text, cfg) {
+  return new Promise(resolve => {
+    if (hfMemAbort) { resolve(); return; }
+    const utt  = new SpeechSynthesisUtterance(text);
+    utt.lang   = 'en-US';
+    utt.rate   = cfg.rate;
+    const voice = hfPickVoice(cfg.voiceGender);
+    if (voice) utt.voice = voice;
+    utt.onend   = () => resolve();
+    utt.onerror = () => resolve();
+    if (hfMemSkipStep) { hfMemSkipStep = false; resolve(); return; }
+    speechSynthesis.speak(utt);
+  });
+}
+
+const hfMemCardInnerEl = document.getElementById('hfMemCardInner');
+const hfMemCardInfoEl  = document.getElementById('hfMemCardInfo');
+
+function hfMemShowCard(q, a, flipped) {
+  document.getElementById('hfMemStrategyName').textContent = memCurrentStrategy().name;
+  document.getElementById('hfMemQuestionText').textContent = q;
+  document.getElementById('hfMemAnswerText').textContent   = a;
+  document.getElementById('hfMemCounter').textContent      = `${memStratIdx + 1} / ${memStrategies.length}`;
+  hfMemCardInnerEl.style.transition = 'transform 0.4s ease';
+  hfMemCardInnerEl.classList.toggle('flipped', flipped);
+}
+
+function hfMemUpdateButtons() {
+  const playBtn = document.getElementById('hfMemPlayBtn');
+  const prevBtn = document.getElementById('hfMemPrevStepBtn');
+  const nextBtn = document.getElementById('hfMemNextStepBtn');
+  playBtn.textContent   = hfMemPlaying ? '⏹' : '▶';
+  prevBtn.disabled      = !hfMemPlaying;
+  nextBtn.disabled      = !hfMemPlaying;
+  prevBtn.style.opacity = hfMemPlaying ? '1' : '0.35';
+  nextBtn.style.opacity = hfMemPlaying ? '1' : '0.35';
+}
+
+async function hfMemPlay() {
+  if (hfMemPlaying) { hfMemStop(); return; }
+
+  const unlock = new SpeechSynthesisUtterance(' ');
+  unlock.volume = 0;
+  speechSynthesis.speak(unlock);
+
+  hfMemPlaying  = true;
+  hfMemAbort    = false;
+  hfMemSkipStep = false;
+  hfMemUpdateButtons();
+
+  const cfg      = hfMemSettings();
+  const maxCards = cfg.maxCards === 'all' ? Infinity : parseInt(cfg.maxCards);
+  const startSi  = memStratIdx;
+  const startCi  = memCardIdx;
+  const skipIntro = startCi > 0;
+
+  outer:
+  for (let si = startSi; si < memStrategies.length; si++) {
+    if (hfMemAbort) break;
+    memStratIdx = si;
+    const strat = memCurrentStrategy();
+    const collStrat = (collections[activeCollectionKey] || []).find(s => s.name === strat.name);
+    const desc = collStrat ? collStrat.description : '';
+
+    if (!skipIntro || si > startSi) {
+      // Strategy name
+      document.getElementById('hfMemStrategyName').textContent = strat.name;
+      document.getElementById('hfMemQuestionText').textContent = strat.name;
+      hfMemCardInnerEl.classList.remove('flipped');
+      await hfMemSpeak(strat.name, cfg);
+      if (hfMemAbort) break;
+      if (!hfMemSkipStep) await hfMemDelay(cfg.genPause * 1000);
+      hfMemSkipStep = false;
+
+      // Explanation
+      if (cfg.explanation && desc) {
+        document.getElementById('hfMemCardInfoText').textContent = desc;
+        hfMemCardInfoEl.classList.add('visible');
+        await hfMemSpeak(desc, cfg);
+        hfMemCardInfoEl.classList.remove('visible');
+        hfMemCardInfoEl.scrollTop = 0;
+        if (hfMemAbort) break;
+        if (!hfMemSkipStep) await hfMemDelay(cfg.genPause * 1000);
+        hfMemSkipStep = false;
+      }
+    }
+
+    const limit  = Math.min(strat.cards.length, maxCards);
+    const startCi2 = (si === startSi) ? startCi : 0;
+
+    for (let ci = startCi2; ci < limit; ci++) {
+      if (hfMemAbort) break outer;
+      memCardIdx = ci;
+      const card = memCurrentCard();
+
+      // Front
+      hfMemShowCard(card.q, card.a, false);
+      await hfMemSpeak(card.q, cfg);
+      if (hfMemAbort) break outer;
+      if (!hfMemSkipStep) await hfMemDelay(cfg.thinkPause * 1000);
+      hfMemSkipStep = false;
+
+      // Back
+      if (cfg.cardBack) {
+        hfMemShowCard(card.q, card.a, true);
+        await hfMemSpeak(card.a, cfg);
+        if (hfMemAbort) break outer;
+        if (!hfMemSkipStep) await hfMemDelay(cfg.genPause * 1000);
+        hfMemSkipStep = false;
+      }
+
+      if (cfg.loopStrategy && ci === limit - 1) ci = -1;
+    }
+
+    if (cfg.loopStrategy) si--;
+  }
+
+  hfMemPlaying  = false;
+  hfMemAbort    = false;
+  hfMemSkipStep = false;
+  speechSynthesis.cancel();
+  hfMemClearTimeouts();
+  hfMemUpdateButtons();
+}
+
+function hfMemStop() {
+  hfMemAbort    = true;
+  hfMemPlaying  = false;
+  hfMemSkipStep = false;
+  speechSynthesis.cancel();
+  hfMemClearTimeouts();
+  hfMemUpdateButtons();
+}
+
+function hfMemSkipForward() {
+  if (!hfMemPlaying) return;
+  hfMemSkipStep = true;
+  speechSynthesis.cancel();
+  hfMemClearTimeouts();
+  if (hfMemDelayResolve) { hfMemDelayResolve(); hfMemDelayResolve = null; }
+}
+
+function hfMemSkipBack() {
+  if (!hfMemPlaying) return;
+  // If already at first card of current strategy, go to previous strategy
+  if (memCardIdx === 0 && memStratIdx > 0) memStratIdx--;
+  memCardIdx = 0;
+  // Abort current loop cleanly, then restart from new position
+  hfMemAbort = true;
+  speechSynthesis.cancel();
+  hfMemClearTimeouts();
+  if (hfMemDelayResolve) { hfMemDelayResolve(); hfMemDelayResolve = null; }
+  setTimeout(() => {
+    hfMemAbort   = false;
+    hfMemPlaying = false;
+    hfMemPlay();
+  }, 50);
+}
+
+// ── Buttons ───────────────────────────────────────────────────────────────────
+document.getElementById('hfMemPlayBtn').addEventListener('click', hfMemPlay);
+document.getElementById('hfMemPlayBtn').addEventListener('touchend', e => { e.stopPropagation(); e.preventDefault(); hfMemPlay(); }, { passive: false });
+
+document.getElementById('hfMemNextStepBtn').addEventListener('click', hfMemSkipForward);
+document.getElementById('hfMemNextStepBtn').addEventListener('touchend', e => { e.stopPropagation(); e.preventDefault(); hfMemSkipForward(); }, { passive: false });
+
+document.getElementById('hfMemPrevStepBtn').addEventListener('click', hfMemSkipBack);
+document.getElementById('hfMemPrevStepBtn').addEventListener('touchend', e => { e.stopPropagation(); e.preventDefault(); hfMemSkipBack(); }, { passive: false });
+
+document.getElementById('hfMemCloseBtn').addEventListener('click', () => {
+  hfMemStop();
+  closeTraining('hfMemScreen');
+});
+document.getElementById('hfMemSettingsBtn').addEventListener('click', () =>
+  document.getElementById('hfMemSettingsOverlay').classList.add('open'));
+
+document.getElementById('hfMemSettingsClose').addEventListener('click', () =>
+  document.getElementById('hfMemSettingsOverlay').classList.remove('open'));
+
+// Allow scrolling in hfMemCardInfo overlay
+hfMemCardInfoEl.addEventListener('touchstart', e => e.stopPropagation(), { passive: true });
+hfMemCardInfoEl.addEventListener('touchmove',  e => e.stopPropagation(), { passive: true });
+hfMemCardInfoEl.addEventListener('touchend',   e => e.stopPropagation(), { passive: true });
+
+// ── Manual nav ────────────────────────────────────────────────────────────────
+const hfMemCard      = document.getElementById('hfMemCard');
+const hfMemCardInner = document.getElementById('hfMemCardInner');
+
+function hfMemRender() {
+  if (!memStrategies.length) return;
+  document.getElementById('hfMemStrategyName').textContent = memCurrentStrategy().name;
+  document.getElementById('hfMemQuestionText').textContent = memCurrentCard().q;
+  document.getElementById('hfMemAnswerText').textContent   = memCurrentCard().a;
+  document.getElementById('hfMemCounter').textContent      = `${memStratIdx + 1} / ${memStrategies.length}`;
+  hfMemCardInner.style.transition = 'none';
+  hfMemCardInner.classList.remove('flipped');
+}
+
+let hfMTx=0,hfMTy=0,hfMTt=0,hfMMov=false;
+hfMemCard.addEventListener('touchstart',e=>{hfMTx=e.touches[0].clientX;hfMTy=e.touches[0].clientY;hfMTt=Date.now();hfMMov=false;e.preventDefault();},{passive:false});
+hfMemCard.addEventListener('touchmove', e=>{if(Math.abs(e.touches[0].clientX-hfMTx)>10||Math.abs(e.touches[0].clientY-hfMTy)>10)hfMMov=true;e.preventDefault();},{passive:false});
+hfMemCard.addEventListener('touchend',  e=>{
+  e.preventDefault();
+  const dx=e.changedTouches[0].clientX-hfMTx,dy=e.changedTouches[0].clientY-hfMTy,adx=Math.abs(dx),ady=Math.abs(dy);
+  if(!hfMMov&&Date.now()-hfMTt<500){hfMemCardInner.classList.toggle('flipped');return;}
+  if(hfMMov&&adx>40&&adx>ady){memStratIdx=dx>0?(memStratIdx-1+memStrategies.length)%memStrategies.length:(memStratIdx+1)%memStrategies.length;memCardIdx=0;hfMemRender();return;}
+  if(hfMMov&&ady>40&&ady>adx){memCardIdx=dy>0?(memCardIdx-1+memCurrentStrategy().cards.length)%memCurrentStrategy().cards.length:(memCardIdx+1)%memCurrentStrategy().cards.length;hfMemRender();return;}
+},{passive:false});
+
+document.getElementById('hfMemPrevStratBtn').addEventListener('click',()=>{memStratIdx=(memStratIdx-1+memStrategies.length)%memStrategies.length;memCardIdx=0;hfMemRender();});
+document.getElementById('hfMemNextStratBtn').addEventListener('click',()=>{memStratIdx=(memStratIdx+1)%memStrategies.length;memCardIdx=0;hfMemRender();});
+document.getElementById('hfMemPrevCardBtn').addEventListener('click', ()=>{memCardIdx=(memCardIdx-1+memCurrentStrategy().cards.length)%memCurrentStrategy().cards.length;hfMemRender();});
+document.getElementById('hfMemNextCardBtn').addEventListener('click', ()=>{memCardIdx=(memCardIdx+1)%memCurrentStrategy().cards.length;hfMemRender();});
+
+function showHandsfreeMemorize() {
+  memStrategies = memorizeCollections[activeCollectionKey] || [];
+  if (!memStrategies.length) return;
+  memStratIdx = 0; memCardIdx = 0;
+  navToTraining('hfMemScreen');
+  hfMemRender();
+  hfMemUpdateButtons();
+}
+
+addModeListener('modeHandsfreeMemorize', showHandsfreeMemorize);
+
+// ── Voice debug helper ────────────────────────────────────────────────────────
+document.getElementById('hfVoiceDebugBtn').addEventListener('click', () => {
+  const voices = speechSynthesis.getVoices();
+  const en = voices.filter(v => v.lang.startsWith('en')).map(v => v.name).join('\n');
+  alert('Available English voices:\n\n' + (en || 'None loaded yet — try again in a moment'));
+});
+
+// ── FEEDBACK MODE ─────────────────────────────────────────────────────────────
+
+let feedbackMode = localStorage.getItem('feedbackMode') === 'true';
+
+const homeSettingsBtn     = document.getElementById('homeSettingsBtn');
+const homeSettingsOverlay = document.getElementById('homeSettingsOverlay');
+const homeSettingsClose   = document.getElementById('homeSettingsClose');
+const feedbackModeToggle  = document.getElementById('feedbackModeToggle');
+const feedbackExportBtn   = document.getElementById('feedbackExportBtn');
+
+function applyFeedbackMode() {
+  document.body.classList.toggle('feedback-mode', feedbackMode);
+  feedbackModeToggle.checked = feedbackMode;
+}
+
+// Open/close home settings panel
+homeSettingsBtn.addEventListener('click', () => {
+  feedbackModeToggle.checked = feedbackMode;
+  homeSettingsOverlay.classList.add('open');
+});
+homeSettingsBtn.addEventListener('touchend', e => { e.preventDefault(); homeSettingsBtn.click(); }, { passive: false });
+
+homeSettingsClose.addEventListener('click', () => homeSettingsOverlay.classList.remove('open'));
+homeSettingsOverlay.addEventListener('click', e => { if (e.target === homeSettingsOverlay) homeSettingsOverlay.classList.remove('open'); });
+
+// Feedback toggle
+feedbackModeToggle.addEventListener('change', () => {
+  feedbackMode = feedbackModeToggle.checked;
+  localStorage.setItem('feedbackMode', feedbackMode);
+  applyFeedbackMode();
+});
+
+// Export feedback data as JSON
+feedbackExportBtn.addEventListener('click', () => {
+  const data = {};
+  for (let i = 0; i < localStorage.length; i++) {
+    const key = localStorage.key(i);
+    if (key.startsWith('fb_')) {
+      data[key] = parseInt(localStorage.getItem(key));
+    }
+  }
+  if (!Object.keys(data).length) {
+    alert('No feedback data yet.');
+    return;
+  }
+  const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+  const url  = URL.createObjectURL(blob);
+  const a    = document.createElement('a');
+  a.href     = url;
+  a.download = `feedback_${new Date().toISOString().slice(0,10)}.json`;
+  a.click();
+  URL.revokeObjectURL(url);
+});
+
+applyFeedbackMode();
+
+// ── FEEDBACK STORAGE KEYS ─────────────────────────────────────────────────────
+// Key format: fb_{collection}_{screen}_{comboOrStratId}_{cardId}_{side}
+
+function fbKey(screen, comboId, cardId, side) {
+  return `fb_${activeCollectionKey}_${screen}_${comboId}_${cardId}_${side}`;
+}
+
+function fbGet(key) {
+  return localStorage.getItem(key) ? parseInt(localStorage.getItem(key)) : null;
+}
+
+function fbSet(key, val) {
+  localStorage.setItem(key, val);
+}
+
+// ── FEEDBACK BAR RENDER ───────────────────────────────────────────────────────
+
+function fbRender(barId, key) {
+  const bar = document.getElementById(barId);
+  if (!bar) return;
+  // Store current key on the bar so click handlers always use the latest
+  bar.dataset.fbKey = key;
+  const saved = fbGet(key);
+  bar.querySelectorAll('.fb-btn').forEach(btn => {
+    const v = parseInt(btn.dataset.val);
+    btn.classList.remove('fb-selected', 'fb-dimmed');
+    if (saved === null) return;
+    if (v === saved) btn.classList.add('fb-selected');
+    else btn.classList.add('fb-dimmed');
+  });
+}
+
+// Bind click handlers once per bar at startup
+function fbInitBar(barId) {
+  const bar = document.getElementById(barId);
+  if (!bar) return;
+  bar.querySelectorAll('.fb-btn').forEach(btn => {
+    const handler = e => {
+      e.stopPropagation();
+      const key = bar.dataset.fbKey;
+      if (!key) return;
+      fbSet(key, parseInt(btn.dataset.val));
+      fbRender(barId, key);
+    };
+    btn.addEventListener('click', handler);
+    btn.addEventListener('touchend', e => { e.preventDefault(); e.stopPropagation(); handler(e); }, { passive: false });
+  });
+}
+
+fbInitBar('fb-single-front');
+fbInitBar('fb-single-back');
+fbInitBar('fb-mem-front');
+fbInitBar('fb-mem-back');
+fbInitBar('fb-flow-front');
+fbInitBar('fb-flow-back');
+
+// ── HOOK INTO RENDER FUNCTIONS ────────────────────────────────────────────────
+
+// Single Strategy
+const _origRender = render;
+window.render = function() {
+  _origRender();
+  const frontKey = fbKey('single', stratIdx, inputIdx, 'front');
+  const backKey  = fbKey('single', stratIdx, inputIdx, 'back');
+  fbRender('fb-single-front', frontKey);
+  fbRender('fb-single-back',  backKey);
 };
 
-// ── CONVERSATIONAL COLLECTIONS ────────────────────────────────────────────────
-// Used by the Collections training mode in the Conversational Skills pack.
-// Each collection has a name, a description (shown as info card), and inputs.
-// Input types: direct, situation, choose3, identify, free, contrast
-
-const conversationalCollections = {
-
-  conversational: [
-
-    {
-      name: "Starting Conversations",
-      description: "17 ways to open a conversation — grouped into four categories:\n\n**Basic:** Simple greeting · Introduce yourself · Situational comment · Polite request\n\n**Question-based:** Ask about the situation · Open question · Curiosity · Genuine curiosity about how they are · Ask about them\n\n**Statement & feeling:** Specific compliment · Statement or guess about the person · Express a feeling\n\n**Relationship-building:** Shared experience · Something that happened · Relevant topic · Framing\n\n**Playful:** Humour (irony or exaggeration)\n\nMindset: Simple openings work best — you don't need to be clever, just natural. Most people want someone to take the initiative.",
-      inputs: [
-        // Direct — name the strategy, demonstrate it
-        { type: "direct", q: "Use a simple greeting to start a conversation", a: "\"Hey \u2014 how's it going?\" or \"Morning!\" \u2014 short, warm, no pressure." },
-        { type: "direct", q: "Introduce yourself to someone you haven't met", a: '"I don\'t think we\'ve met — I\'m [name]." — direct and confident.' },
-        { type: "direct", q: "Use a specific compliment to open", a: '"That\'s a great jacket." or "I like your notebook." — specific, not generic.' },
-        { type: "direct", q: "Open with a question about the situation", a: '"Is this your first time here?" or "Do you know when it starts?" — low stakes, easy to answer.' },
-        { type: "direct", q: "Use humour to open a conversation", a: 'Irony or exaggeration: "This queue moves like it\'s on strike." — commit to it, keep it short.' },
-        { type: "direct", q: "Make a statement or guess about the person", a: '"You look like someone who\'s done this before." — confident, invites a reaction.' },
-        { type: "direct", q: "Use framing to open", a: '"I\'d regret it if I didn\'t come over and say hi." — honest and disarming.' },
-        { type: "direct", q: "Open with genuine curiosity about how they are", a: '"Are you okay? You seem a little stressed." — warm, attentive, only if it fits.' },
-
-        // Situation — context given, choose and apply an opening
-        { type: "situation", q: "You're at a social event and spot someone standing alone", a: 'Situational comment or direct approach: "Looks like we\'re both doing the \'standing near the snacks\' thing." or simply introduce yourself.' },
-        { type: "situation", q: "You're waiting in a long queue", a: 'Light observation about the situation: "This is moving impressively slowly." — easy, shared experience.' },
-        { type: "situation", q: "You're new at a school or workplace", a: '"I\'m new here — how are you?" or "I\'m [name] — I just started." — direct and honest.' },
-        { type: "situation", q: "You want to re-engage someone you haven't talked to in a while", a: 'Relevant topic: "How did that exam/project/trip go?" — shows you remember something about them.' },
-        { type: "situation", q: "You're at a party where you know no one", a: 'Shared experience: "Do you know many people here?" or introduce yourself directly — most people are waiting for someone to start.' },
-        { type: "situation", q: "You find someone interesting and want to approach them", a: 'Statement + question: "You look like someone who\'s passionate about what they do — what is it?" — bold but genuine.' },
-        { type: "situation", q: "You're sitting next to someone at a lecture or class", a: 'Ask about the situation: "Have you had this teacher before?" or shared experience: "That last part went fast."' },
-
-        // Choose 3 — pick the best from three options
-        { type: "choose3", q: "Which three opening types work best when you know nothing about the person?", a: '1. Situational comment — safe, shared context\n2. Simple greeting + introduce yourself — always appropriate\n3. Curiosity question — "I\'m curious — how did you end up here?"' },
-        { type: "choose3", q: "Which three openings are best for leaving a strong impression?", a: '1. Specific compliment — shows you noticed something real\n2. Statement or guess about the person — confident and engaging\n3. Framing — "I\'d kick myself if I didn\'t come over" — memorable and honest' },
-        { type: "choose3", q: "Which three openings work well when energy is low or the setting is quiet?", a: '1. Polite request — low stakes, practical\n2. Simple greeting — no pressure\n3. Genuine curiosity about how they are — warm and personal' },
-
-        // Identify — given an example, name the type
-        { type: "identify", q: '"I\'m curious — why does everyone always end up in the kitchen at parties?" — which opening type is this?', a: 'Curiosity — you share an observation framed as a genuine question. It invites discussion without requiring a specific answer.' },
-        { type: "identify", q: '"That\'s a really specific tattoo — there\'s a story there." — which opening type is this?', a: 'Statement or guess about the person — you make a confident observation that invites them to share something.' },
-        { type: "identify", q: '"I\'d feel bad if I left without saying hello." — which opening type is this?', a: 'Framing — you give a personal reason for approaching. Honest and disarming.' },
-        { type: "identify", q: '"Toughest lecture of the year, right?" — which opening type is this?', a: 'Shared experience — you reference something you both just went through. Creates instant common ground.' },
-
-        // Free — situation only, no strategy named
-        { type: "free", q: "You're standing next to someone at a museum exhibit you both just looked at", a: 'Any natural opening works: "That one got me thinking." / "What did you make of that?" / "Interesting choice to put it next to the other one." — follow your genuine reaction.' },
-        { type: "free", q: "You're on a long train journey and the person next to you catches your eye", a: 'Start small: a smile, a light comment about the journey, or simply introduce yourself if the moment feels right. No pressure to be clever.' },
-      ]
-    },
-
-    {
-      name: "Ending Conversations",
-      description: "Seven techniques for ending a conversation naturally and warmly:\n\n1. **Exit phrase** — Short standard phrase: \"See you!\" / \"Take care!\"\n2. **Give a reason** — Explain why you need to go: \"I need to catch my bus.\"\n3. **Offer to continue later** — \"We should continue this another time.\"\n4. **Say something positive** — \"It was really good talking to you.\"\n5. **Wish them well** — \"Good luck with the exam.\"\n6. **Curious exit** — \"Before I go — I'm genuinely curious about what you said about X.\"\n7. **Humorous contrast** — \"We'll never see each other again!\" (with a smile)\n\n**The high note principle:** End shortly after a laugh or a positive moment — leave when the mood is good.\n\n**Combine techniques:** Positive comment + Wish them well works naturally together.\n\nMindset: Ending well is as important as starting well. Take the initiative — it's a favour to both of you.",
-      inputs: [
-        // Direct
-        { type: "direct", q: "Use an exit phrase to end a conversation", a: '"See you!" / "Take care!" / "Catch you later!" — short, warm, natural.' },
-        { type: "direct", q: "Give a reason for leaving", a: '"I need to get to class." / "I should catch my bus." — simple and honest, no over-explanation needed.' },
-        { type: "direct", q: "End by offering to continue later", a: '"We should pick this up another time." / "I\'ll tell you the rest next time." — shows genuine interest.' },
-        { type: "direct", q: "End with something positive about the conversation", a: '"It was really good talking to you." / "That was an interesting conversation." — leave them with a warm feeling.' },
-        { type: "direct", q: "Use a curious exit", a: '"Before I go — I\'m genuinely curious about what you said about X. Can you tell me more?" — shows you were listening.' },
-        { type: "direct", q: "End with humour using the humorous contrast technique", a: '"Well, we\'ll never see each other again!" (with a smile) — playful, memorable, lightens the exit.' },
-
-        // Situation
-        { type: "situation", q: "The conversation has run its course but neither of you ends it", a: 'Take the initiative: "I think I\'m going to head off — but it was genuinely good talking to you." — both of you will feel relieved.' },
-        { type: "situation", q: "You're at an event and want to move on to talk to others", a: '"I want to make sure I say hi to a few others — but this was great." — honest, warm, and clean.' },
-        { type: "situation", q: "A phone call needs wrapping up", a: '"I\'ll let you go — but good to hear from you." or "I should get back to it, but let\'s catch up properly soon."' },
-        { type: "situation", q: "You've had a great conversation and want to leave on a high note", a: 'Apply the high note principle: end shortly after the best moment — "I\'ll leave it there — that was a good one." ' },
-        { type: "situation", q: "The conversation is dragging and you want to exit gracefully", a: 'Take the initiative early before it drags further: "I should get going — but it was good to chat." — kind and decisive.' },
-        { type: "situation", q: "You want to end but also signal you want to talk again", a: 'Combine: "It was really good talking to you — we should continue this properly sometime." — positive + offer to continue.' },
-
-        // Choose 3
-        { type: "choose3", q: "Which three techniques work best when you want to leave a strong positive impression?", a: '1. Say something positive — "That was a genuinely good conversation."\n2. Wish them well — personalised, shows you were listening\n3. Curious exit — leaves them feeling interesting and valued' },
-        { type: "choose3", q: "Which three techniques are most useful in a casual social setting?", a: '1. Exit phrase — natural and frictionless\n2. Humorous contrast — memorable and light\n3. High note principle — timing over technique' },
-
-        // Identify
-        { type: "identify", q: '"Before I leave — I\'m still thinking about what you said about your trip. Tell me more." — which technique is this?', a: 'Curious exit — you signal genuine interest before leaving, which makes the other person feel heard and valued.' },
-        { type: "identify", q: '"I\'ll let you get back to it — but this was great." — which technique is this?', a: 'Give a reason + positive comment combined — practical exit softened by genuine warmth.' },
-        { type: "identify", q: '"Goodbye forever!" (with a big smile) — which technique is this?', a: 'Humorous contrast — saying the opposite of what you mean for a playful, memorable exit.' },
-
-        // Free
-        { type: "free", q: "A conversation with a classmate has naturally wound down. End it well.", a: 'Any combination works: "Good talking to you — good luck with everything." — simple, warm, done. The key is taking the initiative rather than letting it trail off.' },
-        { type: "free", q: "You've been talking to someone at a party for a while and want to move on, but you'd like to talk again", a: 'Be honest and warm: "I want to circulate a bit — but I\'d genuinely like to continue this. Find me later?" — direct and flattering.' },
-      ]
-    }
-
-  ]
-
+// Memorize
+const _origMemRender = memRender;
+window.memRender = function() {
+  _origMemRender();
+  const frontKey = fbKey('mem', memStratIdx, memCardIdx, 'front');
+  const backKey  = fbKey('mem', memStratIdx, memCardIdx, 'back');
+  fbRender('fb-mem-front', frontKey);
+  fbRender('fb-mem-back',  backKey);
 };
 
-// ── CHALLENGES DATA ───────────────────────────────────────────────────────────
-// Used by the Challenges training mode.
-// Each challenge has a name, description (shown as info card), and inputs.
-// Input format: { q: "the challenge", a: '"Example response." (Strategy)' }
-
-const challengesCollections = {
-
-  assertive: [
-    {
-      name: "Direct Criticism",
-      description: "Someone criticises you directly — your behaviour, your work, your choices, or your character.\n\nThis is the most common form of verbal challenge. The criticism may be fair or unfair, but either way your response shapes the dynamic.\n\nWhat makes it hard:\n• The instinct to defend, explain, or counter-attack\n• Shame or embarrassment when others are present\n• Uncertainty about whether the criticism is valid\n\nUseful strategies here:\n• Fogging — agree with what might be true, stay calm\n• Negative Assertion — own the mistake cleanly, without over-apologising\n• Negative Inquiry — ask for more detail to clarify and disarm\n\nMindset: You don't have to defend yourself. Receiving criticism calmly is a strength.",
-      inputs: [
-        { q: '"You\'re always late."', a: '"You might be right — I have been cutting it close lately." (Fogging)' },
-        { q: '"That was a really poor decision."', a: '"Yes, that didn\'t go well. I\'ll handle it differently next time." (Negative Assertion)' },
-        { q: '"You never listen to anyone."', a: '"What is it specifically that I do that gives you that impression?" (Negative Inquiry)' },
-        { q: '"You\'re not good at this."', a: '"You could have a point. What would you suggest I do differently?" (Fogging + Negative Inquiry)' },
-        { q: '"That was embarrassing to watch."', a: '"Yeah, that wasn\'t my best moment." (Negative Assertion)' },
-        { q: '"You handled that really badly."', a: '"I can see why it looked that way." (Fogging)' },
-        { q: '"You were completely wrong about that."', a: '"You\'re right, I was wrong about that." (Negative Assertion)' },
-      ]
-    },
-    {
-      name: "Vague or Indirect Criticism",
-      description: "Someone criticises you in a way that's hard to pin down — through tone, implication, or deliberately vague language.\n\nThis is often more destabilising than direct criticism because there's nothing concrete to respond to. You're left guessing what they actually mean.\n\nWhat makes it hard:\n• You can't defend against something that was never clearly said\n• Pushing back risks sounding oversensitive\n• The ambiguity can make you doubt yourself\n\nUseful strategies here:\n• Negative Inquiry — the most powerful tool here. Ask them to be specific.\n• Fogging — if there's a grain of truth you can acknowledge\n\nMindset: Clarity is your friend. Asking for specifics isn't weakness — it puts the responsibility back on them.",
-      inputs: [
-        { q: '"It\'s just... interesting that you did it that way."', a: '"What do you mean by interesting?" (Negative Inquiry)' },
-        { q: 'A sigh and an eye roll after you speak', a: '"It seems like something\'s bothering you — what is it?" (Negative Inquiry)' },
-        { q: '"Some people just don\'t get it."', a: '"Are you referring to something I\'ve done?" (Negative Inquiry)' },
-        { q: '"I just expected more, I suppose."', a: '"What specifically were you expecting?" (Negative Inquiry)' },
-        { q: '"Never mind, it doesn\'t matter."', a: '"It seems like it does matter to you — I\'d like to understand." (Negative Inquiry)' },
-        { q: '"You know what you did."', a: '"I want to make sure I understand — can you be specific?" (Negative Inquiry)' },
-      ]
-    },
-    {
-      name: "Pressure & Pushback",
-      description: "Someone keeps pushing after you've said no — repeating their request, escalating, or trying to find a new angle to wear you down.\n\nThis is one of the most common forms of social pressure, and one of the hardest to hold firm against without feeling rude.\n\nWhat makes it hard:\n• The discomfort of the ongoing tension\n• Fear of damaging the relationship\n• The sense that you should have a better reason\n\nUseful strategies here:\n• Broken Record — repeat your position calmly without changing the wording or explaining further. Every explanation gives them a new angle to argue.\n\nMindset: You don't owe anyone a reason. Repeating yourself calmly is not aggressive — it's stable.",
-      inputs: [
-        { q: '"Come on, just this once."', a: '"I understand — and no, it doesn\'t work for me." (Broken Record)' },
-        { q: '"But why not? Give me one good reason."', a: '"I\'m not going to do it." (Broken Record — no explanation needed)' },
-        { q: '"Everyone else is fine with it."', a: '"That may be — it still doesn\'t work for me." (Broken Record)' },
-        { q: '"You\'re being really difficult right now."', a: '"I can see it feels that way. My answer is still no." (Fogging + Broken Record)' },
-        { q: '"I thought you were my friend."', a: '"I am. And I\'m still not going to do it." (Broken Record)' },
-        { q: '"Fine, forget it." (said pointedly, expecting you to back down)', a: 'Stay quiet. Let the silence hold. You don\'t need to fill it. (Broken Record — silence is a form of repetition)' },
-        { q: '"You always say no to everything."', a: '"I can see why it feels that way sometimes." (Fogging — without giving in)' },
-      ]
-    },
-    {
-      name: "Manipulation",
-      description: "Someone uses indirect tactics to influence your behaviour — guilt, flattery, false urgency, or appeals to what 'everyone' thinks.\n\nManipulation works by bypassing your rational judgement and targeting emotions instead. Recognising the pattern is the first step.\n\nCommon forms:\n• Guilt tripping — making you feel responsible for their emotions\n• Social proof — 'everyone agrees with me'\n• Flattery before a request\n• Victimhood — making themselves the wronged party\n\nUseful strategies here:\n• Fogging — acknowledge the surface without accepting the implied responsibility\n• Negative Inquiry — ask what they actually want\n• Broken Record — hold your position regardless of the tactic\n\nMindset: You are not responsible for managing other people's emotions. Staying calm is the best counter to manipulation.",
-      inputs: [
-        { q: '"After everything I\'ve done for you..."', a: '"I appreciate what you\'ve done — and I\'m still not going to do this." (Fogging + Broken Record)' },
-        { q: '"Everyone thinks you\'re being unreasonable."', a: '"What is it specifically that you think I should do differently?" (Negative Inquiry)' },
-        { q: '"I just feel so hurt that you would say that."', a: '"I can see this is upsetting for you." (Fogging — without taking responsibility)' },
-        { q: '"You\'re the only one who can help me."', a: '"What exactly do you need?" (Negative Inquiry — get specific before committing)' },
-        { q: '"If you really cared, you\'d do this."', a: '"You might see it that way — I still can\'t do it." (Fogging + Broken Record)' },
-        { q: '"I\'m not angry, I\'m just disappointed."', a: '"What is it I\'ve done that disappoints you?" (Negative Inquiry)' },
-      ]
-    },
-    {
-      name: "Dismissiveness",
-      description: "Someone minimises what you say, feel, or experience — making you feel like your perspective doesn't count.\n\nDismissiveness can be aggressive or casual. It might come from a place of superiority, impatience, or simply not caring. Either way it's a form of invalidation.\n\nCommon forms:\n• 'You're overreacting'\n• Talking over you or ignoring what you said\n• 'That's not a big deal'\n• Laughing at something you said seriously\n\nUseful strategies here:\n• Negative Assertion — own your reaction without shrinking\n• Fogging — agree that your reaction might seem big to them, without apologising for it\n• Negative Inquiry — ask what they think you should do instead\n\nMindset: Your experience is valid. You don't need permission to feel what you feel.",
-      inputs: [
-        { q: '"You\'re overreacting."', a: '"I may be — this is still how it felt to me." (Fogging + Negative Assertion)' },
-        { q: '"That\'s not a big deal, just let it go."', a: '"It is a big deal to me." (Negative Assertion)' },
-        { q: '"You\'re too sensitive."', a: '"You might have a point — this still matters to me." (Fogging)' },
-        { q: 'Your point is ignored and someone else speaks over you', a: 'Wait for a pause, then: "I\'d like to finish what I was saying." (Broken Record tone — calm and clear)' },
-        { q: '"It was just a joke, calm down."', a: '"I heard the joke. It still landed badly for me." (Negative Assertion)' },
-        { q: '"Why do you always make everything into such a drama?"', a: '"What is it I said that felt dramatic to you?" (Negative Inquiry)' },
-      ]
-    },
-    {
-      name: "Situational Pressure",
-      description: "The challenge comes not from what someone says but from the situation itself — a context that creates social pressure to act against your own interests or values.\n\nExamples:\n• A group dynamic where everyone seems to agree except you\n• Being put on the spot in front of others\n• A social situation where saying no feels socially costly\n• Being expected to take sides\n\nUseful strategies here:\n• Broken Record — hold your position despite the social pressure\n• Fogging — acknowledge the awkwardness without changing course\n• Negative Inquiry — ask clarifying questions to slow things down\n\nMindset: Social pressure is real, but it's not an argument. You are allowed to be the only one in the room who disagrees.",
-      inputs: [
-        { q: 'Everyone in the group has agreed to something you\'re uncomfortable with', a: '"I understand everyone\'s on board — I\'m not able to go along with this one." (Broken Record)' },
-        { q: 'You\'re asked for your opinion on the spot in front of others', a: '"I\'d like to think about it before I say anything." (Broken Record — calm deflection)' },
-        { q: 'Someone puts you on the spot to take sides in a conflict', a: '"That\'s something they need to work out between themselves." (Broken Record)' },
-        { q: 'You feel obliged to stay at an event you want to leave', a: 'Give yourself permission to leave: "I\'m going to head off — it was good to see you." No explanation needed.' },
-        { q: 'Someone keeps asking what\'s wrong when you don\'t want to talk about it', a: '"I\'m fine — I just don\'t want to talk about it right now." (Broken Record)' },
-        { q: 'You\'re in a meeting where your idea is dismissed without discussion', a: '"I\'d like to come back to that point." (Broken Record — raise it again calmly)' },
-      ]
-    },
-    {
-      name: "Feeling Overwhelmed",
-      description: "The challenge is internal — you're flooded with emotion and it's hard to respond clearly or calmly.\n\nFeeling overwhelmed in a confrontation is one of the most common reasons assertive behaviour breaks down. You either freeze, over-explain, or react more strongly than you intended.\n\nWhat triggers it:\n• Unexpected criticism\n• Being put on the spot\n• A build-up of smaller incidents\n• Feeling attacked by someone you care about\n\nUseful strategies here:\n• Buy time — it's always acceptable to pause before responding\n• Fogging — a calm, short response reduces emotional escalation\n• Broken Record — a short repeated phrase is easier to deliver when overwhelmed\n\nMindset: You don't have to respond immediately. Pausing is not weakness — it's control.",
-      inputs: [
-        { q: 'You receive unexpected strong criticism and feel your face flush', a: '"Let me think about that for a moment." — pause before responding. (Buy time)' },
-        { q: 'You feel tears coming during a difficult conversation', a: '"I need a moment." — say it and take it. There is no rule that says you have to continue immediately.' },
-        { q: 'You feel the urge to over-explain and justify yourself', a: 'Catch it. One short sentence is enough: "You might be right." (Fogging — resist the urge to add more)' },
-        { q: 'You feel anger rising and worry you\'ll say something you regret', a: '"I\'m going to come back to this." — remove yourself from the situation briefly. (Delay — intentional)' },
-        { q: 'You freeze and can\'t think of anything to say', a: 'Silence is fine. A small nod buys time. You don\'t have to fill every pause.' },
-        { q: 'You feel guilty for setting a boundary, even though you know it\'s right', a: 'The guilt is normal — it doesn\'t mean you\'re wrong. Hold the position. (Broken Record — internal)' },
-      ]
-    }
-  ]
-
+// Flow (Sequences)
+const _origFlowRender = flowRender;
+window.flowRender = function() {
+  _origFlowRender();
+  const frontKey = fbKey('flow', flowComboIdx, flowCardIdx, 'front');
+  const backKey  = fbKey('flow', flowComboIdx, flowCardIdx, 'back');
+  fbRender('fb-flow-front', frontKey);
+  fbRender('fb-flow-back',  backKey);
 };
 
-// ── MINDSET DATA ──────────────────────────────────────────────────────────────
-// Used by the Mindset training mode.
-// Each mindset strategy has a name, description, and inputs.
-// Back of card: self-talk sentence + brief explanation in parentheses.
 
-const mindsetCollections = {
+// ── COLLECTIONS MODE ──────────────────────────────────────────────────────────
 
-  assertive: [
-    {
-      name: "I Am My Own Judge",
-      description: "The foundational right from Manuel Smith's Bill of Assertive Rights: you have the right to judge your own behaviour, thoughts, and emotions — and to take responsibility for them yourself.\n\nThis is the prime assertive right. All other rights flow from it. No one else gets to be the final authority on what you did, thought, or felt — only you.\n\nWhy it matters: People can only manipulate you to the extent that you let them be the judge of you instead of yourself. When you reclaim that role, manipulation loses its grip.\n\nMindset: I decide what my actions mean. Other people can have opinions — but they don't get the final word.",
-      inputs: [
-        { q: "Someone tells you that you're wrong to feel the way you do", a: '"I get to decide what I feel. Their opinion doesn\'t override my own judgment of myself." (You remain the final authority on your own experience — not them.)' },
-        { q: "You want to make a decision that others might disapprove of", a: '"I am allowed to judge this for myself." (Their approval isn\'t required for the decision to be valid.)' },
-        { q: "Someone implies that your choice was objectively the wrong one", a: '"There can be more than one reasonable way to see this — including mine." (Disagreement doesn\'t mean you were wrong; it means you see it differently.)' },
-        { q: "You catch yourself seeking reassurance before trusting your own view", a: '"I don\'t need permission to trust my own judgment." (Outsourcing your judgment to others keeps you dependent on their approval.)' },
-        { q: "You want to build confidence in trusting your own read of a situation", a: '"My read of this is valid simply because it\'s mine." (Confidence grows by practising self-trust, not by waiting for certainty.)' },
-      ]
-    },
-    {
-      name: "I Don't Owe Explanations",
-      description: "The second assertive right: you have the right to offer no reasons or excuses for justifying your behaviour.\n\nThis doesn't mean you should never explain yourself — it means explanations are optional, not owed. Choosing to explain is different from feeling obligated to.\n\nWhy it matters: Every justification you offer can become a new angle for someone to argue against. The compulsion to explain often comes from feeling like your choices need external approval to be valid.\n\nMindset: My reasons are mine. I can share them if I want to — but I don't have to.",
-      inputs: [
-        { q: '"Why not? Just tell me why."', a: '"I don\'t need a reason — it just doesn\'t work for me." (You can decline without converting the decision into a debate.)' },
-        { q: "You want to turn down an invitation without a long justification", a: '"I appreciate the invite — I won\'t be able to make it." (A short answer is complete. No elaboration is owed.)' },
-        { q: "You feel the urge to justify a decision that's already final", a: '"This is decided — I don\'t need to defend it." (Catching the urge to over-explain is the skill itself.)' },
-        { q: "Someone implies you need a 'good enough' reason to say no", a: '"Not wanting to is reason enough." (There is no minimum bar of justification required for a boundary to be valid.)' },
-        { q: "You want to decline a request from someone you respect, without guilt", a: '"I can say no and still respect them — explanations aren\'t what makes that true." (Respect and explanation are not the same thing.)' },
-      ]
-    },
-    {
-      name: "I'm Not Responsible for Others' Problems",
-      description: "The third assertive right: you have the right to judge whether you are responsible for finding solutions to other people's problems.\n\nThis is one of the most liberating rights — and one of the hardest to hold onto, especially with people you care about. Caring about someone is not the same as being responsible for solving what's wrong for them.\n\nWhy it matters: If you don't recognise this right, others can present their problems as if they were automatically yours to fix — and you'll feel obligated to comply.\n\nMindset: I can care without carrying. Their problem can matter to me without becoming my job.",
-      inputs: [
-        { q: "A friend presents their inconvenience as something you need to fix", a: '"I hear that this is hard for you — and it\'s not something I need to solve." (Empathy doesn\'t require ownership of the solution.)' },
-        { q: "Someone implies you're letting them down by not helping", a: '"I can care about this without taking it on myself." (Feeling guilty doesn\'t mean you\'re actually obligated.)' },
-        { q: "You want to support someone without absorbing their problem as your own", a: '"I\'m here for you — and this is still yours to carry." (Support and ownership are two different things.)' },
-        { q: "You're asked to fix a problem you didn't create and don't have the means to solve", a: '"I understand this is difficult — it\'s not mine to fix." (Recognising the limits of your responsibility protects you from unsustainable obligations.)' },
-        { q: "You feel guilty for prioritising your own time over someone else's request", a: '"My time is mine to allocate." (Guilt is a feeling, not evidence that you did something wrong.)' },
-      ]
-    },
-    {
-      name: "I'm Allowed to Change My Mind",
-      description: "The fourth assertive right: you have the right to change your mind.\n\nYou are not bound forever by a past decision, especially if new information or feelings have shifted things. Consistency for its own sake isn't a virtue — it can become a trap.\n\nWhy it matters: People sometimes use your past commitments against you, as if changing your mind were a character flaw. It isn't.\n\nMindset: The person who decided this isn't obligated to be identical to the person I am now.",
-      inputs: [
-        { q: '"But you said you wanted to do this."', a: '"I did — and I\'ve changed my mind since then." (A past decision doesn\'t bind your present judgment.)' },
-        { q: "You agreed to something and now realise it doesn't feel right", a: '"It\'s okay that this isn\'t what I want anymore." (Recognising a shift in feeling is information, not a failure.)' },
-        { q: "Someone uses your earlier agreement to pressure you into following through", a: '"I understand I said yes before — I\'m saying no now." (Consistency isn\'t owed when circumstances or feelings have changed.)' },
-        { q: "You want permission to reconsider a major life decision", a: '"I\'m allowed to reconsider this, even publicly." (Changing your mind in view of others doesn\'t make it less valid.)' },
-        { q: "You feel embarrassed about reversing a stated opinion", a: '"Updating my view is a sign of thinking, not weakness." (Rigid consistency is often mistaken for integrity — it isn\'t the same thing.)' },
-      ]
-    },
-    {
-      name: "I'm Allowed to Make Mistakes",
-      description: "The fifth assertive right, and the mindset underlying Negative Assertion: you have the right to make mistakes — and to be responsible for them, without collapsing into shame.\n\nThis is the belief that makes Negative Assertion possible. If you secretly believe mistakes mean you're fundamentally flawed, owning them calmly will always feel threatening.\n\nWhy it matters: A mistake is a single event, not a verdict on your worth. Acknowledging it cleanly — without spiralling into apology or self-attack — requires believing this first.\n\nMindset: I can be wrong about something and still be okay. Owning a mistake is strength, not damage.",
-      inputs: [
-        { q: "You're pointed out for something you got wrong", a: '"Yes, that was a mistake. I can own that and move on." (Owning it fully, without minimising or spiralling, is what makes Negative Assertion calm rather than defensive.)' },
-        { q: "You feel a wave of shame after making an error", a: '"Being wrong doesn\'t make me bad at this — it makes me human." (Shame treats the mistake as identity; this mindset treats it as an event.)' },
-        { q: "You want to apologise without over-apologising", a: '"One honest acknowledgment is enough." (Excessive apology often comes from believing the mistake needs more defending than it does.)' },
-        { q: "Someone seems to expect you to be devastated by your error", a: '"I\'m not going to perform more guilt than I actually feel." (You don\'t owe anyone a dramatic reaction to validate their criticism.)' },
-        { q: "You're preparing to try something you might not be good at yet", a: '"I\'m allowed to be bad at this while I learn." (Permission to be imperfect is what makes growth possible.)' },
-      ]
-    },
-    {
-      name: "I Don't Need to Know Everything",
-      description: "The sixth assertive right: you have the right to say \"I don't know.\"\n\nThere's social pressure to always have an answer, an opinion, or a plan. This right gives you permission to be genuinely uncertain without faking confidence you don't have.\n\nWhy it matters: Pretending to know things you don't creates pressure and sets you up for being caught out. Honesty about uncertainty is more stable in the long run.\n\nMindset: Not knowing is a legitimate answer. I don't need to perform certainty I don't have.",
-      inputs: [
-        { q: "You're asked a question you genuinely don't have an answer to", a: '"I don\'t know — I haven\'t thought that through yet." (A direct admission is more stable than an improvised guess.)' },
-        { q: "You feel pressure to have an opinion on something you haven't considered", a: '"I don\'t have a view on this yet, and that\'s fine." (You\'re not required to have instant opinions on everything.)' },
-        { q: "Someone expects you to know the outcome of an uncertain situation", a: '"I genuinely don\'t know how this will go." (Certainty you don\'t have isn\'t worth faking.)' },
-        { q: "You're put on the spot in a meeting and don't know the answer", a: '"I\'ll need to look into that before I can answer properly." (This is a complete, professional response — not a failure.)' },
-        { q: "You want to stop pretending to understand something to avoid looking uninformed", a: '"I\'d rather ask than fake understanding." (Asking protects you from bigger problems down the line.)' },
-      ]
-    },
-    {
-      name: "Criticism Can't Threaten Me",
-      description: "The core mindset behind Fogging: criticism is just information — it doesn't have power over you unless you treat it as a verdict that must be fought or fled.\n\nFogging only works if you actually believe this. If you secretly think every criticism is a threat to defend against, your fogging responses will sound hollow or sarcastic instead of calm.\n\nWhy it matters: When you stop treating criticism as an attack, you stop needing to defend. Like fog, it passes through you because there's nothing rigid for it to hit.\n\nMindset: Criticism is just someone's perspective. I don't need to defend against a perspective.",
-      inputs: [
-        { q: "Someone delivers harsh criticism in front of others", a: '"This is their perspective — it doesn\'t require my defence." (Treating it as a perspective rather than a verdict removes the urge to fight back.)' },
-        { q: "You feel your guard going up as soon as someone starts criticising you", a: '"I can let this pass through without needing to block it." (Resistance is what makes criticism feel like an attack — softness lets it pass.)' },
-        { q: "You're criticised by someone whose opinion you respect", a: '"Even their view is just one perspective, not a fact about me." (Respecting someone doesn\'t mean their criticism becomes absolute truth.)' },
-        { q: "You notice yourself rehearsing a defence before someone has even finished speaking", a: '"I don\'t need a defence ready. There\'s nothing to defend against yet." (Preparing to fight assumes the criticism is an attack before it\'s even landed.)' },
-        { q: "You want to stay calm while receiving feedback you disagree with", a: '"I can hear this calmly, whether or not I agree." (Calm listening doesn\'t mean agreement — it just means no defensiveness.)' },
-      ]
-    },
-    {
-      name: "I'm Not Afraid of More Criticism",
-      description: "The core mindset behind Negative Inquiry: you can handle hearing more — even if the criticism gets more specific or more uncomfortable.\n\nNegative Inquiry requires genuinely wanting to know more, not just performing curiosity while secretly hoping the conversation ends. If you're afraid of what more detail might reveal, the technique falls apart.\n\nWhy it matters: People often avoid asking for specifics because they fear what they'll hear. But avoiding the detail doesn't make the underlying issue go away — it just keeps it vague and unresolved.\n\nMindset: I can survive hearing exactly what they mean. More information helps me, it doesn't hurt me.",
-      inputs: [
-        { q: "Someone gives you vague criticism and you feel the urge to let it drop", a: '"I\'d rather know exactly what they mean than guess." (Avoiding detail leaves the criticism vague and unresolved — asking resolves it.)' },
-        { q: "You're nervous about what asking \"what do you mean?\" might reveal", a: '"Whatever they say, I can handle hearing it." (The fear of detail is usually worse than the detail itself.)' },
-        { q: "Someone seems reluctant to be more specific about their criticism", a: '"I genuinely want to understand, not just move past this." (Real curiosity, not performance, is what makes Negative Inquiry land.)' },
-        { q: "You feel your stomach tighten as you ask for more feedback", a: '"This discomfort is temporary, and the clarity is worth it." (The anticipation is usually harder than the actual answer.)' },
-        { q: "You're worried that asking for specifics will make the criticism feel more real", a: '"Specifics make it solvable, not bigger." (Vague criticism feels larger because it\'s undefined — detail actually shrinks it.)' },
-      ]
-    },
-    {
-      name: "I Don't Need to Convince Anyone",
-      description: "The core mindset behind Broken Record: your position doesn't need to win an argument to be valid. You're not trying to convince — you're holding steady.\n\nThe instinct to explain, argue, or persuade comes from believing you need the other person's agreement for your boundary to count. Broken Record only stays calm if you let go of that need.\n\nWhy it matters: The moment you try to convince someone, you've entered a debate — and debates can be lost. Holding a position doesn't require winning anyone over.\n\nMindset: My position doesn't need their agreement to be valid. I'm not trying to win — I'm just staying steady.",
-      inputs: [
-        { q: "Someone keeps presenting new arguments to change your mind", a: '"I don\'t need to win this — I just need to stay where I am." (Engaging each new argument turns this into a debate you don\'t need to have.)' },
-        { q: "You feel the urge to explain your reasoning one more time, hoping it will finally land", a: '"They don\'t have to agree with me for my answer to stand." (One more explanation rarely changes the outcome — it just prolongs the pressure.)' },
-        { q: "Someone seems frustrated that you won't engage with their counterarguments", a: '"Their frustration doesn\'t mean I\'m wrong to hold this." (Frustration is information about their reaction, not about the validity of your position.)' },
-        { q: "You catch yourself preparing a more persuasive version of your answer", a: '"The simple version is enough. I don\'t need a better argument." (Reaching for persuasion means you\'ve started trying to win instead of just holding steady.)' },
-        { q: "You want to end a repetitive disagreement without losing your composure", a: '"I can repeat myself calmly for as long as this takes." (Patience with repetition is the entire technique — there\'s no need to escalate.)' },
-      ]
+let collCollections = [];   // array of collections for active pack
+let collIdx     = 0;        // current collection index
+let collInputIdx = 0;       // current input index
+let collFlipped  = false;
+let collAnimating = false;
+
+const collScreen    = document.getElementById('collScreen');
+const collCardEl    = document.getElementById('collCard');
+const collCardInner = document.getElementById('collCardInner');
+const collCardInfo  = document.getElementById('collCardInfo');
+
+function collCurrent()      { return collCollections[collIdx]; }
+function collCurrentInput() { return collCurrent().inputs[collInputIdx]; }
+
+function collRender() {
+  const col = collCurrent();
+  const inp = collCurrentInput();
+  document.getElementById('collName').textContent      = col.name;
+  document.getElementById('collFrontText').textContent = inp.q;
+  document.getElementById('collBackText').textContent  = inp.a;
+  document.getElementById('collCounter').textContent   = `${collIdx + 1} / ${collCollections.length}`;
+  collFlipFn(false, false);
+  // hints
+  const hints = document.getElementById('collHint');
+  if (hints) hints.style.display = document.getElementById('showHints').checked ? '' : 'none';
+  // feedback
+  const frontKey = fbKey('coll', collIdx, collInputIdx, 'front');
+  const backKey  = fbKey('coll', collIdx, collInputIdx, 'back');
+  fbRender('fb-coll-front', frontKey);
+  fbRender('fb-coll-back',  backKey);
+}
+
+function collFlipFn(val, animate = true) {
+  collFlipped = val;
+  collCardInner.style.transition = animate ? 'transform 0.4s ease' : 'none';
+  collCardInner.classList.toggle('flipped', collFlipped);
+}
+
+function collTrig(dir, cb) {
+  if (collAnimating) return; collAnimating = true;
+  collCardEl.classList.add('swipe-' + dir);
+  setTimeout(() => { collCardEl.classList.remove('swipe-' + dir); cb(); collAnimating = false; }, 220);
+}
+
+function collNextInput() {
+  collTrig('up', () => {
+    collInputIdx = (collInputIdx + 1) % collCurrent().inputs.length;
+    collRender();
+  });
+}
+function collPrevInput() {
+  collTrig('down', () => {
+    collInputIdx = (collInputIdx - 1 + collCurrent().inputs.length) % collCurrent().inputs.length;
+    collRender();
+  });
+}
+function collNext() {
+  collTrig('left', () => {
+    collIdx = (collIdx + 1) % collCollections.length;
+    collInputIdx = 0;
+    collRender();
+  });
+}
+function collPrev() {
+  collTrig('right', () => {
+    collIdx = (collIdx - 1 + collCollections.length) % collCollections.length;
+    collInputIdx = 0;
+    collRender();
+  });
+}
+
+// Info panel — tap strategy name to open, like Single Strategy
+document.getElementById('collName').addEventListener('click', () => {
+  if (!collCollections.length) return;
+  document.getElementById('collCardInfoText').textContent = collCurrent().description;
+  collCardInfo.classList.add('visible');
+});
+document.getElementById('collName').addEventListener('touchend', e => { e.preventDefault(); document.getElementById('collName').click(); }, { passive: false });
+document.getElementById('collCardInfoClose').addEventListener('click', e => {
+  e.stopPropagation();
+  collCardInfo.classList.remove('visible');
+  collCardInfo.scrollTop = 0;
+});
+collCardInfo.addEventListener('touchstart', e => e.stopPropagation(), { passive: true });
+collCardInfo.addEventListener('touchmove',  e => e.stopPropagation(), { passive: true });
+collCardInfo.addEventListener('touchend',   e => e.stopPropagation(), { passive: true });
+
+
+// Touch
+let cTx=0,cTy=0,cTt=0,cMov=false;
+collCardEl.addEventListener('touchstart', e => { cTx=e.touches[0].clientX; cTy=e.touches[0].clientY; cTt=Date.now(); cMov=false; e.preventDefault(); }, { passive: false });
+collCardEl.addEventListener('touchmove',  e => { if (Math.abs(e.touches[0].clientX-cTx)>10||Math.abs(e.touches[0].clientY-cTy)>10) cMov=true; e.preventDefault(); }, { passive: false });
+collCardEl.addEventListener('touchend',   e => {
+  e.preventDefault();
+  const dx=e.changedTouches[0].clientX-cTx, dy=e.changedTouches[0].clientY-cTy;
+  const adx=Math.abs(dx), ady=Math.abs(dy);
+  if (!cMov && Date.now()-cTt<500)       { collFlipFn(!collFlipped); return; }
+  if (cMov && adx>40 && adx>ady) { dx>0 ? collPrev() : collNext(); return; }
+  if (cMov && ady>40 && ady>adx) { dy>0 ? collPrevInput() : collNextInput(); return; }
+}, { passive: false });
+
+// Buttons
+document.getElementById('collNextBtn').addEventListener('click', collNext);
+document.getElementById('collPrevBtn').addEventListener('click', collPrev);
+document.getElementById('collNextInputBtn').addEventListener('click', collNextInput);
+document.getElementById('collPrevInputBtn').addEventListener('click', collPrevInput);
+document.getElementById('collCloseBtn').addEventListener('click', () => closeTraining('collScreen'));
+
+// Show Collections mode
+function showCollections() {
+  const key = activeCollectionKey;
+  if (!conversationalCollections[key] || !conversationalCollections[key].length) return;
+  collCollections = conversationalCollections[key];
+  collIdx      = 0;
+  collInputIdx = 0;
+  navToTraining('collScreen');
+  collRender();
+}
+
+addModeListener('modeCollections', showCollections);
+
+// Init feedback bars for coll screen
+fbInitBar('fb-coll-front');
+fbInitBar('fb-coll-back');
+
+
+// ── CHALLENGES MODE ───────────────────────────────────────────────────────────
+
+let challChallenges = [];
+let challIdx        = 0;
+let challInputIdx   = 0;
+let challFlipped    = false;
+let challAnimating  = false;
+
+const challScreen    = document.getElementById('challScreen');
+const challCardEl    = document.getElementById('challCard');
+const challCardInner = document.getElementById('challCardInner');
+const challCardInfo  = document.getElementById('challCardInfo');
+
+function challCurrent()      { return challChallenges[challIdx]; }
+function challCurrentInput() { return challCurrent().inputs[challInputIdx]; }
+
+function challFlipFn(val, animate = true) {
+  challFlipped = val;
+  challCardInner.style.transition = animate ? 'transform 0.4s ease' : 'none';
+  challCardInner.classList.toggle('flipped', challFlipped);
+}
+
+function challRender() {
+  const ch  = challCurrent();
+  const inp = challCurrentInput();
+  document.getElementById('challName').textContent      = ch.name;
+  document.getElementById('challFrontText').textContent = inp.q;
+  document.getElementById('challBackText').textContent  = inp.a;
+  document.getElementById('challCounter').textContent   = `${challIdx + 1} / ${challChallenges.length}`;
+  challFlipFn(false, false);
+  const hints = document.getElementById('challHint');
+  if (hints) hints.style.display = document.getElementById('showHints').checked ? '' : 'none';
+  fbRender('fb-chall-front', fbKey('chall', challIdx, challInputIdx, 'front'));
+  fbRender('fb-chall-back',  fbKey('chall', challIdx, challInputIdx, 'back'));
+}
+
+function challTrig(dir, cb) {
+  if (challAnimating) return; challAnimating = true;
+  challCardEl.classList.add('swipe-' + dir);
+  setTimeout(() => { challCardEl.classList.remove('swipe-' + dir); cb(); challAnimating = false; }, 220);
+}
+
+function challNext()       { challTrig('left',  () => { challIdx = (challIdx + 1) % challChallenges.length; challInputIdx = 0; challRender(); }); }
+function challPrev()       { challTrig('right', () => { challIdx = (challIdx - 1 + challChallenges.length) % challChallenges.length; challInputIdx = 0; challRender(); }); }
+function challNextInput()  { challTrig('up',    () => { challInputIdx = (challInputIdx + 1) % challCurrent().inputs.length; challRender(); }); }
+function challPrevInput()  { challTrig('down',  () => { challInputIdx = (challInputIdx - 1 + challCurrent().inputs.length) % challCurrent().inputs.length; challRender(); }); }
+
+// Info panel
+document.getElementById('challName').addEventListener('click', () => {
+  if (!challChallenges.length) return;
+  document.getElementById('challCardInfoText').textContent = challCurrent().description;
+  challCardInfo.classList.add('visible');
+});
+document.getElementById('challName').addEventListener('touchend', e => { e.preventDefault(); document.getElementById('challName').click(); }, { passive: false });
+document.getElementById('challCardInfoClose').addEventListener('click', e => { e.stopPropagation(); challCardInfo.classList.remove('visible'); challCardInfo.scrollTop = 0; });
+challCardInfo.addEventListener('touchstart', e => e.stopPropagation(), { passive: true });
+challCardInfo.addEventListener('touchmove',  e => e.stopPropagation(), { passive: true });
+challCardInfo.addEventListener('touchend',   e => e.stopPropagation(), { passive: true });
+
+// Settings button reuses main settings overlay
+document.getElementById('challSettingsBtn').addEventListener('click', () => document.getElementById('settingsOverlay').classList.add('open'));
+
+// Touch
+let chTx=0,chTy=0,chTt=0,chMov=false;
+challCardEl.addEventListener('touchstart', e => { chTx=e.touches[0].clientX; chTy=e.touches[0].clientY; chTt=Date.now(); chMov=false; e.preventDefault(); }, { passive: false });
+challCardEl.addEventListener('touchmove',  e => { if (Math.abs(e.touches[0].clientX-chTx)>10||Math.abs(e.touches[0].clientY-chTy)>10) chMov=true; e.preventDefault(); }, { passive: false });
+challCardEl.addEventListener('touchend',   e => {
+  e.preventDefault();
+  const dx=e.changedTouches[0].clientX-chTx, dy=e.changedTouches[0].clientY-chTy;
+  const adx=Math.abs(dx), ady=Math.abs(dy);
+  if (!chMov && Date.now()-chTt<500)       { challFlipFn(!challFlipped); return; }
+  if (chMov && adx>40 && adx>ady) { dx>0 ? challPrev() : challNext(); return; }
+  if (chMov && ady>40 && ady>adx) { dy>0 ? challPrevInput() : challNextInput(); return; }
+}, { passive: false });
+
+// Buttons
+document.getElementById('challNextBtn').addEventListener('click', challNext);
+document.getElementById('challPrevBtn').addEventListener('click', challPrev);
+document.getElementById('challNextInputBtn').addEventListener('click', challNextInput);
+document.getElementById('challPrevInputBtn').addEventListener('click', challPrevInput);
+document.getElementById('challCloseBtn').addEventListener('click', () => closeTraining('challScreen'));
+
+// Show Challenges mode
+function showChallenges() {
+  const key = activeCollectionKey;
+  if (!challengesCollections[key] || !challengesCollections[key].length) return;
+  challChallenges = challengesCollections[key];
+  challIdx      = 0;
+  challInputIdx = 0;
+  navToTraining('challScreen');
+  challRender();
+}
+
+addModeListener('modeChallenges', showChallenges);
+
+// Add challScreen to TRAINING_SCREENS
+TRAINING_SCREENS.push('challScreen');
+
+// Init feedback bars
+fbInitBar('fb-chall-front');
+fbInitBar('fb-chall-back');
+
+
+// ── MINDSET MODE ──────────────────────────────────────────────────────────────
+
+let mindStrategies = [];
+let mindIdx        = 0;
+let mindInputIdx    = 0;
+let mindFlipped     = false;
+let mindAnimating   = false;
+
+const mindScreen    = document.getElementById('mindScreen');
+const mindCardEl    = document.getElementById('mindCard');
+const mindCardInner = document.getElementById('mindCardInner');
+const mindCardInfo  = document.getElementById('mindCardInfo');
+
+function mindCurrent()      { return mindStrategies[mindIdx]; }
+function mindCurrentInput() { return mindCurrent().inputs[mindInputIdx]; }
+
+function mindFlipFn(val, animate = true) {
+  mindFlipped = val;
+  mindCardInner.style.transition = animate ? 'transform 0.4s ease' : 'none';
+  mindCardInner.classList.toggle('flipped', mindFlipped);
+}
+
+function mindRender() {
+  const m   = mindCurrent();
+  const inp = mindCurrentInput();
+  document.getElementById('mindName').textContent      = m.name;
+  document.getElementById('mindFrontText').textContent = inp.q;
+  document.getElementById('mindBackText').textContent  = inp.a;
+  document.getElementById('mindCounter').textContent   = `${mindIdx + 1} / ${mindStrategies.length}`;
+  mindFlipFn(false, false);
+  const hints = document.getElementById('mindHint');
+  if (hints) hints.style.display = document.getElementById('showHints').checked ? '' : 'none';
+  fbRender('fb-mind-front', fbKey('mind', mindIdx, mindInputIdx, 'front'));
+  fbRender('fb-mind-back',  fbKey('mind', mindIdx, mindInputIdx, 'back'));
+}
+
+function mindTrig(dir, cb) {
+  if (mindAnimating) return; mindAnimating = true;
+  mindCardEl.classList.add('swipe-' + dir);
+  setTimeout(() => { mindCardEl.classList.remove('swipe-' + dir); cb(); mindAnimating = false; }, 220);
+}
+
+function mindNext()       { mindTrig('left',  () => { mindIdx = (mindIdx + 1) % mindStrategies.length; mindInputIdx = 0; mindRender(); }); }
+function mindPrev()       { mindTrig('right', () => { mindIdx = (mindIdx - 1 + mindStrategies.length) % mindStrategies.length; mindInputIdx = 0; mindRender(); }); }
+function mindNextInput()  { mindTrig('up',    () => { mindInputIdx = (mindInputIdx + 1) % mindCurrent().inputs.length; mindRender(); }); }
+function mindPrevInput()  { mindTrig('down',  () => { mindInputIdx = (mindInputIdx - 1 + mindCurrent().inputs.length) % mindCurrent().inputs.length; mindRender(); }); }
+
+// Info panel
+document.getElementById('mindName').addEventListener('click', () => {
+  if (!mindStrategies.length) return;
+  document.getElementById('mindCardInfoText').textContent = mindCurrent().description;
+  mindCardInfo.classList.add('visible');
+});
+document.getElementById('mindName').addEventListener('touchend', e => { e.preventDefault(); document.getElementById('mindName').click(); }, { passive: false });
+document.getElementById('mindCardInfoClose').addEventListener('click', e => { e.stopPropagation(); mindCardInfo.classList.remove('visible'); mindCardInfo.scrollTop = 0; });
+mindCardInfo.addEventListener('touchstart', e => e.stopPropagation(), { passive: true });
+mindCardInfo.addEventListener('touchmove',  e => e.stopPropagation(), { passive: true });
+mindCardInfo.addEventListener('touchend',   e => e.stopPropagation(), { passive: true });
+
+// Settings button reuses main settings overlay
+document.getElementById('mindSettingsBtn').addEventListener('click', () => document.getElementById('settingsOverlay').classList.add('open'));
+
+// Touch
+let mnTx=0,mnTy=0,mnTt=0,mnMov=false;
+mindCardEl.addEventListener('touchstart', e => { mnTx=e.touches[0].clientX; mnTy=e.touches[0].clientY; mnTt=Date.now(); mnMov=false; e.preventDefault(); }, { passive: false });
+mindCardEl.addEventListener('touchmove',  e => { if (Math.abs(e.touches[0].clientX-mnTx)>10||Math.abs(e.touches[0].clientY-mnTy)>10) mnMov=true; e.preventDefault(); }, { passive: false });
+mindCardEl.addEventListener('touchend',   e => {
+  e.preventDefault();
+  const dx=e.changedTouches[0].clientX-mnTx, dy=e.changedTouches[0].clientY-mnTy;
+  const adx=Math.abs(dx), ady=Math.abs(dy);
+  if (!mnMov && Date.now()-mnTt<500)       { mindFlipFn(!mindFlipped); return; }
+  if (mnMov && adx>40 && adx>ady) { dx>0 ? mindPrev() : mindNext(); return; }
+  if (mnMov && ady>40 && ady>adx) { dy>0 ? mindPrevInput() : mindNextInput(); return; }
+}, { passive: false });
+
+// Buttons
+document.getElementById('mindNextBtn').addEventListener('click', mindNext);
+document.getElementById('mindPrevBtn').addEventListener('click', mindPrev);
+document.getElementById('mindNextInputBtn').addEventListener('click', mindNextInput);
+document.getElementById('mindPrevInputBtn').addEventListener('click', mindPrevInput);
+document.getElementById('mindCloseBtn').addEventListener('click', () => closeTraining('mindScreen'));
+
+// Show Mindset mode
+function showMindset() {
+  mindStrategies = mindsetCollections[activeCollectionKey] || [];
+  if (!mindStrategies.length) return;
+  mindIdx      = 0;
+  mindInputIdx = 0;
+  navToTraining('mindScreen');
+  mindRender();
+}
+
+addModeListener('modeMindset', showMindset);
+
+// Add mindScreen to TRAINING_SCREENS
+TRAINING_SCREENS.push('mindScreen');
+
+// Init feedback bars
+fbInitBar('fb-mind-front');
+fbInitBar('fb-mind-back');
+
+
+// ── HANDSFREE: CHALLENGES MODE ────────────────────────────────────────────────
+
+let hfChallPlaying  = false;
+let hfChallAbort    = false;
+let hfChallSkipStep = false;
+let hfChallTimeouts = [];
+let hfChallDelayResolve = null;
+
+function hfChallSettings() {
+  return {
+    explanation : document.getElementById('hfChallExplanation').checked,
+    cardBack    : document.getElementById('hfChallCardBack').checked,
+    maxInputs   : document.getElementById('hfChallMaxInputs').value,
+    thinkPause  : parseFloat(document.getElementById('hfChallThinkPause').value),
+    genPause    : parseFloat(document.getElementById('hfChallGenPause').value),
+    rate        : parseFloat(document.getElementById('hfChallRate').value),
+    voiceGender : document.getElementById('hfChallVoice').value,
+    loopStrategy: document.getElementById('hfChallLoopStrategy').checked
+  };
+}
+
+function hfChallSpeak(text, cfg) {
+  return new Promise(resolve => {
+    if (!text) { resolve(); return; }
+    speechSynthesis.cancel();
+    const utt = new SpeechSynthesisUtterance(text);
+    utt.lang  = 'en-US';
+    utt.rate  = cfg.rate;
+    const voice = hfPickVoice(cfg.voiceGender);
+    if (voice) utt.voice = voice;
+    utt.onend   = () => resolve();
+    utt.onerror = () => resolve();
+    if (hfChallSkipStep) { hfChallSkipStep = false; resolve(); return; }
+    speechSynthesis.speak(utt);
+  });
+}
+
+function hfChallDelay(ms) {
+  return new Promise(resolve => {
+    hfChallDelayResolve = resolve;
+    if (hfChallAbort || hfChallSkipStep) { hfChallDelayResolve = null; resolve(); return; }
+    const step = 80;
+    let elapsed = 0;
+    function tick() {
+      if (hfChallAbort || hfChallSkipStep) { hfChallDelayResolve = null; resolve(); return; }
+      elapsed += step;
+      if (elapsed >= ms) { hfChallDelayResolve = null; resolve(); return; }
+      const id = setTimeout(tick, step);
+      hfChallTimeouts.push(id);
     }
-  ]
+    const id = setTimeout(tick, step);
+    hfChallTimeouts.push(id);
+  });
+}
 
-};
+function hfChallClearTimeouts() {
+  hfChallTimeouts.forEach(id => clearTimeout(id));
+  hfChallTimeouts = [];
+}
+
+const hfChallCardInnerEl = document.getElementById('hfChallCardInner');
+
+function hfChallShowCard(q, a, flipped) {
+  document.getElementById('hfChallName').textContent      = challChallenges[challIdx].name;
+  document.getElementById('hfChallFrontText').textContent = q;
+  document.getElementById('hfChallBackText').textContent  = a;
+  document.getElementById('hfChallCounter').textContent   = `${challIdx + 1} / ${challChallenges.length}`;
+  hfChallCardInnerEl.style.transition = 'transform 0.4s ease';
+  hfChallCardInnerEl.classList.toggle('flipped', flipped);
+}
+
+function hfChallUpdateButtons() {
+  const playBtn = document.getElementById('hfChallPlayBtn');
+  const prevBtn = document.getElementById('hfChallPrevStepBtn');
+  const nextBtn = document.getElementById('hfChallNextStepBtn');
+  playBtn.textContent = hfChallPlaying ? '⏹' : '▶';
+  prevBtn.disabled = !hfChallPlaying;
+  nextBtn.disabled = !hfChallPlaying;
+  prevBtn.style.opacity = hfChallPlaying ? '1' : '0.35';
+  nextBtn.style.opacity = hfChallPlaying ? '1' : '0.35';
+}
+
+async function hfChallPlay() {
+  if (hfChallPlaying) { hfChallStop(); return; }
+  if (!challChallenges.length) return;
+
+  const unlock = new SpeechSynthesisUtterance(' ');
+  unlock.volume = 0;
+  speechSynthesis.speak(unlock);
+
+  hfChallPlaying  = true;
+  hfChallAbort    = false;
+  hfChallSkipStep = false;
+  hfChallUpdateButtons();
+
+  const cfg    = hfChallSettings();
+  const maxInp = cfg.maxInputs === 'all' ? Infinity : parseInt(cfg.maxInputs);
+
+  const startSi       = challIdx;
+  const startInputIdx = challInputIdx;
+  const skipIntro      = startInputIdx > 0;
+
+  outer:
+  for (let si = startSi; si < challChallenges.length; si++) {
+    if (hfChallAbort) break;
+    challIdx = si;
+    const cat = challChallenges[si];
+
+    if (!skipIntro || si > startSi) {
+      hfChallShowCard(cat.name, '', false);
+      document.getElementById('hfChallFrontText').textContent = cat.name;
+      await hfChallSpeak(cat.name, cfg);
+      if (hfChallAbort) break;
+      if (!hfChallSkipStep) await hfChallDelay(cfg.genPause * 1000);
+      hfChallSkipStep = false;
+
+      if (cfg.explanation && cat.description) {
+        document.getElementById('hfChallCardInfoText').textContent = cat.description;
+        document.getElementById('hfChallCardInfo').classList.add('visible');
+        await hfChallSpeak(cat.description, cfg);
+        document.getElementById('hfChallCardInfo').classList.remove('visible');
+        document.getElementById('hfChallCardInfo').scrollTop = 0;
+        if (hfChallAbort) break;
+        if (!hfChallSkipStep) await hfChallDelay(cfg.genPause * 1000);
+        hfChallSkipStep = false;
+      }
+    }
+
+    const limit   = Math.min(cat.inputs.length, maxInp);
+    const startIi = (si === startSi) ? startInputIdx : 0;
+
+    for (let ii = startIi; ii < limit; ii++) {
+      if (hfChallAbort) break outer;
+      challInputIdx = ii;
+      const inp = cat.inputs[ii];
+
+      hfChallShowCard(inp.q, inp.a, false);
+      await hfChallSpeak(inp.q, cfg);
+      if (hfChallAbort) break outer;
+      if (!hfChallSkipStep) await hfChallDelay(cfg.thinkPause * 1000);
+      hfChallSkipStep = false;
+
+      if (cfg.cardBack) {
+        hfChallShowCard(inp.q, inp.a, true);
+        await hfChallSpeak(inp.a, cfg);
+        if (hfChallAbort) break outer;
+        if (!hfChallSkipStep) await hfChallDelay(cfg.genPause * 1000);
+        hfChallSkipStep = false;
+      }
+
+      if (cfg.loopStrategy && ii === limit - 1) ii = -1;
+    }
+
+    if (cfg.loopStrategy) si--;
+  }
+
+  hfChallPlaying  = false;
+  hfChallAbort    = false;
+  hfChallSkipStep = false;
+  speechSynthesis.cancel();
+  hfChallClearTimeouts();
+  hfChallUpdateButtons();
+}
+
+function hfChallStop() {
+  hfChallAbort    = true;
+  hfChallPlaying  = false;
+  hfChallSkipStep = false;
+  speechSynthesis.cancel();
+  hfChallClearTimeouts();
+  hfChallUpdateButtons();
+}
+
+function hfChallSkipForward() {
+  if (!hfChallPlaying) return;
+  hfChallSkipStep = true;
+  speechSynthesis.cancel();
+  hfChallClearTimeouts();
+  if (hfChallDelayResolve) { hfChallDelayResolve(); hfChallDelayResolve = null; }
+}
+
+function hfChallSkipBack() {
+  if (!hfChallPlaying) return;
+  if (challInputIdx === 0 && challIdx > 0) challIdx--;
+  challInputIdx = 0;
+  hfChallAbort = true;
+  speechSynthesis.cancel();
+  hfChallClearTimeouts();
+  if (hfChallDelayResolve) { hfChallDelayResolve(); hfChallDelayResolve = null; }
+  setTimeout(() => {
+    hfChallAbort   = false;
+    hfChallPlaying = false;
+    hfChallPlay();
+  }, 50);
+}
+
+document.getElementById('hfChallPlayBtn').addEventListener('click', hfChallPlay);
+document.getElementById('hfChallPlayBtn').addEventListener('touchend', e => { e.stopPropagation(); e.preventDefault(); hfChallPlay(); }, { passive: false });
+document.getElementById('hfChallNextStepBtn').addEventListener('click', hfChallSkipForward);
+document.getElementById('hfChallNextStepBtn').addEventListener('touchend', e => { e.stopPropagation(); e.preventDefault(); hfChallSkipForward(); }, { passive: false });
+document.getElementById('hfChallPrevStepBtn').addEventListener('click', hfChallSkipBack);
+document.getElementById('hfChallPrevStepBtn').addEventListener('touchend', e => { e.stopPropagation(); e.preventDefault(); hfChallSkipBack(); }, { passive: false });
+document.getElementById('hfChallCloseBtn').addEventListener('click', () => {
+  hfChallStop();
+  closeTraining('hfChallScreen');
+});
+document.getElementById('hfChallSettingsBtn').addEventListener('click', () =>
+  document.getElementById('hfChallSettingsOverlay').classList.add('open'));
+document.getElementById('hfChallSettingsClose').addEventListener('click', () =>
+  document.getElementById('hfChallSettingsOverlay').classList.remove('open'));
+
+const hfChallCardInfoEl = document.getElementById('hfChallCardInfo');
+hfChallCardInfoEl.addEventListener('touchstart', e => e.stopPropagation(), { passive: true });
+hfChallCardInfoEl.addEventListener('touchmove',  e => e.stopPropagation(), { passive: true });
+hfChallCardInfoEl.addEventListener('touchend',   e => e.stopPropagation(), { passive: true });
+
+// Manual navigation
+const hfChallCard = document.getElementById('hfChallCard');
+function hfChallRenderManual() {
+  if (!challChallenges.length) return;
+  hfChallShowCard(challChallenges[challIdx].inputs[challInputIdx].q, challChallenges[challIdx].inputs[challInputIdx].a, false);
+}
+let hcTx=0,hcTy=0,hcTt=0,hcMov=false;
+hfChallCard.addEventListener('touchstart', e => { if (hfChallPlaying) return; hcTx=e.touches[0].clientX; hcTy=e.touches[0].clientY; hcTt=Date.now(); hcMov=false; }, { passive: true });
+hfChallCard.addEventListener('touchmove',  e => { if (hfChallPlaying) return; if (Math.abs(e.touches[0].clientX-hcTx)>10||Math.abs(e.touches[0].clientY-hcTy)>10) hcMov=true; }, { passive: true });
+hfChallCard.addEventListener('touchend',   e => {
+  if (hfChallPlaying) return;
+  const dx=e.changedTouches[0].clientX-hcTx, dy=e.changedTouches[0].clientY-hcTy, adx=Math.abs(dx), ady=Math.abs(dy);
+  if (!hcMov && Date.now()-hcTt<500) { hfChallCardInnerEl.classList.toggle('flipped'); return; }
+  if (hcMov && adx>40 && adx>ady) { challIdx = dx>0 ? (challIdx-1+challChallenges.length)%challChallenges.length : (challIdx+1)%challChallenges.length; challInputIdx=0; hfChallRenderManual(); return; }
+  if (hcMov && ady>40 && ady>adx) { challInputIdx = dy>0 ? (challInputIdx-1+challChallenges[challIdx].inputs.length)%challChallenges[challIdx].inputs.length : (challInputIdx+1)%challChallenges[challIdx].inputs.length; hfChallRenderManual(); return; }
+});
+
+document.getElementById('hfChallPrevBtn').addEventListener('click', () => { if (hfChallPlaying) return; challIdx=(challIdx-1+challChallenges.length)%challChallenges.length; challInputIdx=0; hfChallRenderManual(); });
+document.getElementById('hfChallNextBtn').addEventListener('click', () => { if (hfChallPlaying) return; challIdx=(challIdx+1)%challChallenges.length; challInputIdx=0; hfChallRenderManual(); });
+document.getElementById('hfChallPrevInputBtn').addEventListener('click', () => { if (hfChallPlaying) return; challInputIdx=(challInputIdx-1+challChallenges[challIdx].inputs.length)%challChallenges[challIdx].inputs.length; hfChallRenderManual(); });
+document.getElementById('hfChallNextInputBtn').addEventListener('click', () => { if (hfChallPlaying) return; challInputIdx=(challInputIdx+1)%challChallenges[challIdx].inputs.length; hfChallRenderManual(); });
+
+function showHandsfreeChallenges() {
+  challChallenges = challengesCollections[activeCollectionKey] || [];
+  if (!challChallenges.length) return;
+  challIdx = 0; challInputIdx = 0;
+  navToTraining('hfChallScreen');
+  hfChallRenderManual();
+  document.getElementById('hfChallName').textContent = challChallenges[0].name;
+  document.getElementById('hfChallCounter').textContent = `1 / ${challChallenges.length}`;
+  hfChallUpdateButtons();
+}
+
+addModeListener('modeHandsfreeChallenges', showHandsfreeChallenges);
+TRAINING_SCREENS.push('hfChallScreen');
+
+
+// ── HANDSFREE: SEQUENCES MODE ─────────────────────────────────────────────────
+
+let hfFlowPlaying  = false;
+let hfFlowAbort    = false;
+let hfFlowSkipStep = false;
+let hfFlowTimeouts = [];
+let hfFlowDelayResolve = null;
+let hfFlowSequence = [];
+
+function hfFlowSettings() {
+  return {
+    cardBack    : document.getElementById('hfFlowCardBack').checked,
+    thinkPause  : parseFloat(document.getElementById('hfFlowThinkPause').value),
+    genPause    : parseFloat(document.getElementById('hfFlowGenPause').value),
+    rate        : parseFloat(document.getElementById('hfFlowRate').value),
+    voiceGender : document.getElementById('hfFlowVoice').value,
+    loopStrategy: document.getElementById('hfFlowLoopStrategy').checked
+  };
+}
+
+function hfFlowSpeak(text, cfg) {
+  return new Promise(resolve => {
+    if (!text) { resolve(); return; }
+    speechSynthesis.cancel();
+    const utt = new SpeechSynthesisUtterance(text);
+    utt.lang  = 'en-US';
+    utt.rate  = cfg.rate;
+    const voice = hfPickVoice(cfg.voiceGender);
+    if (voice) utt.voice = voice;
+    utt.onend   = () => resolve();
+    utt.onerror = () => resolve();
+    if (hfFlowSkipStep) { hfFlowSkipStep = false; resolve(); return; }
+    speechSynthesis.speak(utt);
+  });
+}
+
+function hfFlowDelay(ms) {
+  return new Promise(resolve => {
+    hfFlowDelayResolve = resolve;
+    if (hfFlowAbort || hfFlowSkipStep) { hfFlowDelayResolve = null; resolve(); return; }
+    const step = 80;
+    let elapsed = 0;
+    function tick() {
+      if (hfFlowAbort || hfFlowSkipStep) { hfFlowDelayResolve = null; resolve(); return; }
+      elapsed += step;
+      if (elapsed >= ms) { hfFlowDelayResolve = null; resolve(); return; }
+      const id = setTimeout(tick, step);
+      hfFlowTimeouts.push(id);
+    }
+    const id = setTimeout(tick, step);
+    hfFlowTimeouts.push(id);
+  });
+}
+
+function hfFlowClearTimeouts() {
+  hfFlowTimeouts.forEach(id => clearTimeout(id));
+  hfFlowTimeouts = [];
+}
+
+const hfFlowCardInnerEl = document.getElementById('hfFlowCardInner');
+
+function hfFlowShowCard(item, flipped) {
+  document.getElementById('hfFlowComboName').textContent = flowStrategies[flowComboIdx].name;
+  document.getElementById('hfFlowFrontText').textContent = item.front;
+  document.getElementById('hfFlowBackText').textContent  = item.back;
+  document.getElementById('hfFlowCounter').textContent   = `${flowComboIdx + 1} / ${flowStrategies.length}`;
+  hfFlowCardInnerEl.style.transition = 'transform 0.4s ease';
+  hfFlowCardInnerEl.classList.toggle('flipped', flipped);
+}
+
+function hfFlowUpdateButtons() {
+  const playBtn = document.getElementById('hfFlowPlayBtn');
+  const prevBtn = document.getElementById('hfFlowPrevStepBtn');
+  const nextBtn = document.getElementById('hfFlowNextStepBtn');
+  playBtn.textContent = hfFlowPlaying ? '⏹' : '▶';
+  prevBtn.disabled = !hfFlowPlaying;
+  nextBtn.disabled = !hfFlowPlaying;
+  prevBtn.style.opacity = hfFlowPlaying ? '1' : '0.35';
+  nextBtn.style.opacity = hfFlowPlaying ? '1' : '0.35';
+}
+
+async function hfFlowPlay() {
+  if (hfFlowPlaying) { hfFlowStop(); return; }
+  if (!flowStrategies.length) return;
+
+  const unlock = new SpeechSynthesisUtterance(' ');
+  unlock.volume = 0;
+  speechSynthesis.speak(unlock);
+
+  hfFlowPlaying  = true;
+  hfFlowAbort    = false;
+  hfFlowSkipStep = false;
+  hfFlowUpdateButtons();
+
+  const cfg = hfFlowSettings();
+
+  const startCi = flowComboIdx;
+  const startCardIdx = flowCardIdx;
+
+  outer:
+  for (let ci = startCi; ci < flowStrategies.length; ci++) {
+    if (hfFlowAbort) break;
+    flowComboIdx = ci;
+    const seq = buildFlowSequence(flowStrategies[ci]);
+    const startIi = (ci === startCi) ? startCardIdx : 0;
+
+    for (let ii = startIi; ii < seq.length; ii++) {
+      if (hfFlowAbort) break outer;
+      flowCardIdx = ii;
+      const item = seq[ii];
+
+      hfFlowShowCard(item, false);
+      await hfFlowSpeak(item.front, cfg);
+      if (hfFlowAbort) break outer;
+      if (!hfFlowSkipStep) await hfFlowDelay(cfg.thinkPause * 1000);
+      hfFlowSkipStep = false;
+
+      if (cfg.cardBack && item.back !== item.front) {
+        hfFlowShowCard(item, true);
+        await hfFlowSpeak(item.back, cfg);
+        if (hfFlowAbort) break outer;
+        if (!hfFlowSkipStep) await hfFlowDelay(cfg.genPause * 1000);
+        hfFlowSkipStep = false;
+      }
+
+      if (cfg.loopStrategy && ii === seq.length - 1) ii = -1;
+    }
+
+    if (cfg.loopStrategy) ci--;
+  }
+
+  hfFlowPlaying  = false;
+  hfFlowAbort    = false;
+  hfFlowSkipStep = false;
+  speechSynthesis.cancel();
+  hfFlowClearTimeouts();
+  hfFlowUpdateButtons();
+}
+
+function hfFlowStop() {
+  hfFlowAbort    = true;
+  hfFlowPlaying  = false;
+  hfFlowSkipStep = false;
+  speechSynthesis.cancel();
+  hfFlowClearTimeouts();
+  hfFlowUpdateButtons();
+}
+
+function hfFlowSkipForward() {
+  if (!hfFlowPlaying) return;
+  hfFlowSkipStep = true;
+  speechSynthesis.cancel();
+  hfFlowClearTimeouts();
+  if (hfFlowDelayResolve) { hfFlowDelayResolve(); hfFlowDelayResolve = null; }
+}
+
+function hfFlowSkipBack() {
+  if (!hfFlowPlaying) return;
+  if (flowCardIdx === 0 && flowComboIdx > 0) flowComboIdx--;
+  flowCardIdx = 0;
+  hfFlowAbort = true;
+  speechSynthesis.cancel();
+  hfFlowClearTimeouts();
+  if (hfFlowDelayResolve) { hfFlowDelayResolve(); hfFlowDelayResolve = null; }
+  setTimeout(() => {
+    hfFlowAbort   = false;
+    hfFlowPlaying = false;
+    hfFlowPlay();
+  }, 50);
+}
+
+document.getElementById('hfFlowPlayBtn').addEventListener('click', hfFlowPlay);
+document.getElementById('hfFlowPlayBtn').addEventListener('touchend', e => { e.stopPropagation(); e.preventDefault(); hfFlowPlay(); }, { passive: false });
+document.getElementById('hfFlowNextStepBtn').addEventListener('click', hfFlowSkipForward);
+document.getElementById('hfFlowNextStepBtn').addEventListener('touchend', e => { e.stopPropagation(); e.preventDefault(); hfFlowSkipForward(); }, { passive: false });
+document.getElementById('hfFlowPrevStepBtn').addEventListener('click', hfFlowSkipBack);
+document.getElementById('hfFlowPrevStepBtn').addEventListener('touchend', e => { e.stopPropagation(); e.preventDefault(); hfFlowSkipBack(); }, { passive: false });
+document.getElementById('hfFlowCloseBtn').addEventListener('click', () => {
+  hfFlowStop();
+  closeTraining('hfFlowScreen');
+});
+document.getElementById('hfFlowSettingsBtn').addEventListener('click', () =>
+  document.getElementById('hfFlowSettingsOverlay').classList.add('open'));
+document.getElementById('hfFlowSettingsClose').addEventListener('click', () =>
+  document.getElementById('hfFlowSettingsOverlay').classList.remove('open'));
+
+// Manual navigation
+const hfFlowCard = document.getElementById('hfFlowCard');
+function hfFlowRenderManual() {
+  if (!flowStrategies.length) return;
+  const seq = buildFlowSequence(flowStrategies[flowComboIdx]);
+  hfFlowShowCard(seq[flowCardIdx], false);
+}
+let hfTx2=0,hfTy2=0,hfTt2=0,hfMov2=false;
+hfFlowCard.addEventListener('touchstart', e => { if (hfFlowPlaying) return; hfTx2=e.touches[0].clientX; hfTy2=e.touches[0].clientY; hfTt2=Date.now(); hfMov2=false; }, { passive: true });
+hfFlowCard.addEventListener('touchmove',  e => { if (hfFlowPlaying) return; if (Math.abs(e.touches[0].clientX-hfTx2)>10||Math.abs(e.touches[0].clientY-hfTy2)>10) hfMov2=true; }, { passive: true });
+hfFlowCard.addEventListener('touchend',   e => {
+  if (hfFlowPlaying) return;
+  const dx=e.changedTouches[0].clientX-hfTx2, dy=e.changedTouches[0].clientY-hfTy2, adx=Math.abs(dx), ady=Math.abs(dy);
+  const seqLen = buildFlowSequence(flowStrategies[flowComboIdx]).length;
+  if (!hfMov2 && Date.now()-hfTt2<500) { hfFlowCardInnerEl.classList.toggle('flipped'); return; }
+  if (hfMov2 && adx>40 && adx>ady) { flowComboIdx = dx>0 ? (flowComboIdx-1+flowStrategies.length)%flowStrategies.length : (flowComboIdx+1)%flowStrategies.length; flowCardIdx=0; hfFlowRenderManual(); return; }
+  if (hfMov2 && ady>40 && ady>adx) { flowCardIdx = dy>0 ? (flowCardIdx-1+seqLen)%seqLen : (flowCardIdx+1)%seqLen; hfFlowRenderManual(); return; }
+});
+
+document.getElementById('hfFlowPrevComboBtn').addEventListener('click', () => { if (hfFlowPlaying) return; flowComboIdx=(flowComboIdx-1+flowStrategies.length)%flowStrategies.length; flowCardIdx=0; hfFlowRenderManual(); });
+document.getElementById('hfFlowNextComboBtn').addEventListener('click', () => { if (hfFlowPlaying) return; flowComboIdx=(flowComboIdx+1)%flowStrategies.length; flowCardIdx=0; hfFlowRenderManual(); });
+document.getElementById('hfFlowPrevCardBtn').addEventListener('click', () => { if (hfFlowPlaying) return; const len=buildFlowSequence(flowStrategies[flowComboIdx]).length; flowCardIdx=(flowCardIdx-1+len)%len; hfFlowRenderManual(); });
+document.getElementById('hfFlowNextCardBtn').addEventListener('click', () => { if (hfFlowPlaying) return; const len=buildFlowSequence(flowStrategies[flowComboIdx]).length; flowCardIdx=(flowCardIdx+1)%len; hfFlowRenderManual(); });
+
+function showHandsfreeSequences() {
+  flowStrategies = multiStepCollections[activeCollectionKey] || [];
+  if (!flowStrategies.length) return;
+  flowComboIdx = 0; flowCardIdx = 0;
+  navToTraining('hfFlowScreen');
+  hfFlowRenderManual();
+  hfFlowUpdateButtons();
+}
+
+addModeListener('modeHandsfreeSequences', showHandsfreeSequences);
+TRAINING_SCREENS.push('hfFlowScreen');
