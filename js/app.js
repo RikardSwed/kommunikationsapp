@@ -1,7 +1,7 @@
 // app.js — All application logic for Communication Trainer
 // Depends on: data.js and multiStepData.js (must be loaded first)
 
-const VERSION = 'v1.9.6';
+const VERSION = 'v1.10.0';
 
 // ─── SCREENS ──────────────────────────────────────────────────────────────────
 const homeScreen     = document.getElementById('homeScreen');
@@ -1685,3 +1685,105 @@ TRAINING_SCREENS.push('challScreen');
 // Init feedback bars
 fbInitBar('fb-chall-front');
 fbInitBar('fb-chall-back');
+
+
+// ── MINDSET MODE ──────────────────────────────────────────────────────────────
+
+let mindStrategies = [];
+let mindIdx        = 0;
+let mindInputIdx    = 0;
+let mindFlipped     = false;
+let mindAnimating   = false;
+
+const mindScreen    = document.getElementById('mindScreen');
+const mindCardEl    = document.getElementById('mindCard');
+const mindCardInner = document.getElementById('mindCardInner');
+const mindCardInfo  = document.getElementById('mindCardInfo');
+
+function mindCurrent()      { return mindStrategies[mindIdx]; }
+function mindCurrentInput() { return mindCurrent().inputs[mindInputIdx]; }
+
+function mindFlipFn(val, animate = true) {
+  mindFlipped = val;
+  mindCardInner.style.transition = animate ? 'transform 0.4s ease' : 'none';
+  mindCardInner.classList.toggle('flipped', mindFlipped);
+}
+
+function mindRender() {
+  const m   = mindCurrent();
+  const inp = mindCurrentInput();
+  document.getElementById('mindName').textContent      = m.name;
+  document.getElementById('mindFrontText').textContent = inp.q;
+  document.getElementById('mindBackText').textContent  = inp.a;
+  document.getElementById('mindCounter').textContent   = `${mindIdx + 1} / ${mindStrategies.length}`;
+  mindFlipFn(false, false);
+  const hints = document.getElementById('mindHint');
+  if (hints) hints.style.display = document.getElementById('showHints').checked ? '' : 'none';
+  fbRender('fb-mind-front', fbKey('mind', mindIdx, mindInputIdx, 'front'));
+  fbRender('fb-mind-back',  fbKey('mind', mindIdx, mindInputIdx, 'back'));
+}
+
+function mindTrig(dir, cb) {
+  if (mindAnimating) return; mindAnimating = true;
+  mindCardEl.classList.add('swipe-' + dir);
+  setTimeout(() => { mindCardEl.classList.remove('swipe-' + dir); cb(); mindAnimating = false; }, 220);
+}
+
+function mindNext()       { mindTrig('left',  () => { mindIdx = (mindIdx + 1) % mindStrategies.length; mindInputIdx = 0; mindRender(); }); }
+function mindPrev()       { mindTrig('right', () => { mindIdx = (mindIdx - 1 + mindStrategies.length) % mindStrategies.length; mindInputIdx = 0; mindRender(); }); }
+function mindNextInput()  { mindTrig('up',    () => { mindInputIdx = (mindInputIdx + 1) % mindCurrent().inputs.length; mindRender(); }); }
+function mindPrevInput()  { mindTrig('down',  () => { mindInputIdx = (mindInputIdx - 1 + mindCurrent().inputs.length) % mindCurrent().inputs.length; mindRender(); }); }
+
+// Info panel
+document.getElementById('mindName').addEventListener('click', () => {
+  if (!mindStrategies.length) return;
+  document.getElementById('mindCardInfoText').textContent = mindCurrent().description;
+  mindCardInfo.classList.add('visible');
+});
+document.getElementById('mindName').addEventListener('touchend', e => { e.preventDefault(); document.getElementById('mindName').click(); }, { passive: false });
+document.getElementById('mindCardInfoClose').addEventListener('click', e => { e.stopPropagation(); mindCardInfo.classList.remove('visible'); mindCardInfo.scrollTop = 0; });
+mindCardInfo.addEventListener('touchstart', e => e.stopPropagation(), { passive: true });
+mindCardInfo.addEventListener('touchmove',  e => e.stopPropagation(), { passive: true });
+mindCardInfo.addEventListener('touchend',   e => e.stopPropagation(), { passive: true });
+
+// Settings button reuses main settings overlay
+document.getElementById('mindSettingsBtn').addEventListener('click', () => document.getElementById('settingsOverlay').classList.add('open'));
+
+// Touch
+let mnTx=0,mnTy=0,mnTt=0,mnMov=false;
+mindCardEl.addEventListener('touchstart', e => { mnTx=e.touches[0].clientX; mnTy=e.touches[0].clientY; mnTt=Date.now(); mnMov=false; e.preventDefault(); }, { passive: false });
+mindCardEl.addEventListener('touchmove',  e => { if (Math.abs(e.touches[0].clientX-mnTx)>10||Math.abs(e.touches[0].clientY-mnTy)>10) mnMov=true; e.preventDefault(); }, { passive: false });
+mindCardEl.addEventListener('touchend',   e => {
+  e.preventDefault();
+  const dx=e.changedTouches[0].clientX-mnTx, dy=e.changedTouches[0].clientY-mnTy;
+  const adx=Math.abs(dx), ady=Math.abs(dy);
+  if (!mnMov && Date.now()-mnTt<500)       { mindFlipFn(!mindFlipped); return; }
+  if (mnMov && adx>40 && adx>ady) { dx>0 ? mindPrev() : mindNext(); return; }
+  if (mnMov && ady>40 && ady>adx) { dy>0 ? mindPrevInput() : mindNextInput(); return; }
+}, { passive: false });
+
+// Buttons
+document.getElementById('mindNextBtn').addEventListener('click', mindNext);
+document.getElementById('mindPrevBtn').addEventListener('click', mindPrev);
+document.getElementById('mindNextInputBtn').addEventListener('click', mindNextInput);
+document.getElementById('mindPrevInputBtn').addEventListener('click', mindPrevInput);
+document.getElementById('mindCloseBtn').addEventListener('click', () => closeTraining('mindScreen'));
+
+// Show Mindset mode
+function showMindset() {
+  mindStrategies = mindsetCollections[activeCollectionKey] || [];
+  if (!mindStrategies.length) return;
+  mindIdx      = 0;
+  mindInputIdx = 0;
+  navToTraining('mindScreen');
+  mindRender();
+}
+
+addModeListener('modeMindset', showMindset);
+
+// Add mindScreen to TRAINING_SCREENS
+TRAINING_SCREENS.push('mindScreen');
+
+// Init feedback bars
+fbInitBar('fb-mind-front');
+fbInitBar('fb-mind-back');
