@@ -1,7 +1,7 @@
 // app.js — All application logic for Communication Trainer
 // Depends on: data.js and multiStepData.js (must be loaded first)
 
-const VERSION = 'v1.10.4';
+const VERSION = 'v1.10.5';
 
 // ─── SCREENS ──────────────────────────────────────────────────────────────────
 const homeScreen     = document.getElementById('homeScreen');
@@ -2559,3 +2559,257 @@ function showHandsfreeMindset() {
 
 addModeListener('modeHandsfreeMindset', showHandsfreeMindset);
 TRAINING_SCREENS.push('hfMindScreen');
+
+
+// ── HANDSFREE: COLLECTIONS MODE ───────────────────────────────────────────────
+
+let hfCollPlaying  = false;
+let hfCollAbort    = false;
+let hfCollSkipStep = false;
+let hfCollTimeouts = [];
+let hfCollDelayResolve = null;
+
+function hfCollSettings() {
+  return {
+    explanation : document.getElementById('hfCollExplanation').checked,
+    cardBack    : document.getElementById('hfCollCardBack').checked,
+    maxInputs   : document.getElementById('hfCollMaxInputs').value,
+    thinkPause  : parseFloat(document.getElementById('hfCollThinkPause').value),
+    genPause    : parseFloat(document.getElementById('hfCollGenPause').value),
+    rate        : parseFloat(document.getElementById('hfCollRate').value),
+    voiceGender : document.getElementById('hfCollVoice').value,
+    loopStrategy: document.getElementById('hfCollLoopStrategy').checked
+  };
+}
+
+function hfCollSpeak(text, cfg) {
+  return new Promise(resolve => {
+    if (!text) { resolve(); return; }
+    speechSynthesis.cancel();
+    const utt = new SpeechSynthesisUtterance(text);
+    utt.lang  = 'en-US';
+    utt.rate  = cfg.rate;
+    const voice = hfPickVoice(cfg.voiceGender);
+    if (voice) utt.voice = voice;
+    utt.onend   = () => resolve();
+    utt.onerror = () => resolve();
+    if (hfCollSkipStep) { hfCollSkipStep = false; resolve(); return; }
+    speechSynthesis.speak(utt);
+  });
+}
+
+function hfCollDelay(ms) {
+  return new Promise(resolve => {
+    hfCollDelayResolve = resolve;
+    if (hfCollAbort || hfCollSkipStep) { hfCollDelayResolve = null; resolve(); return; }
+    const step = 80;
+    let elapsed = 0;
+    function tick() {
+      if (hfCollAbort || hfCollSkipStep) { hfCollDelayResolve = null; resolve(); return; }
+      elapsed += step;
+      if (elapsed >= ms) { hfCollDelayResolve = null; resolve(); return; }
+      const id = setTimeout(tick, step);
+      hfCollTimeouts.push(id);
+    }
+    const id = setTimeout(tick, step);
+    hfCollTimeouts.push(id);
+  });
+}
+
+function hfCollClearTimeouts() {
+  hfCollTimeouts.forEach(id => clearTimeout(id));
+  hfCollTimeouts = [];
+}
+
+const hfCollCardInnerEl = document.getElementById('hfCollCardInner');
+
+function hfCollShowCard(q, a, flipped) {
+  document.getElementById('hfCollName').textContent      = collCollections[collIdx].name;
+  document.getElementById('hfCollFrontText').textContent = q;
+  document.getElementById('hfCollBackText').textContent  = a;
+  document.getElementById('hfCollCounter').textContent   = `${collIdx + 1} / ${collCollections.length}`;
+  hfCollCardInnerEl.style.transition = 'transform 0.4s ease';
+  hfCollCardInnerEl.classList.toggle('flipped', flipped);
+}
+
+function hfCollUpdateButtons() {
+  const playBtn = document.getElementById('hfCollPlayBtn');
+  const prevBtn = document.getElementById('hfCollPrevStepBtn');
+  const nextBtn = document.getElementById('hfCollNextStepBtn');
+  playBtn.textContent = hfCollPlaying ? '⏹' : '▶';
+  prevBtn.disabled = !hfCollPlaying;
+  nextBtn.disabled = !hfCollPlaying;
+  prevBtn.style.opacity = hfCollPlaying ? '1' : '0.35';
+  nextBtn.style.opacity = hfCollPlaying ? '1' : '0.35';
+}
+
+async function hfCollPlay() {
+  if (hfCollPlaying) { hfCollStop(); return; }
+  if (!collCollections.length) return;
+
+  const unlock = new SpeechSynthesisUtterance(' ');
+  unlock.volume = 0;
+  speechSynthesis.speak(unlock);
+
+  hfCollPlaying  = true;
+  hfCollAbort    = false;
+  hfCollSkipStep = false;
+  hfCollUpdateButtons();
+
+  const cfg    = hfCollSettings();
+  const maxInp = cfg.maxInputs === 'all' ? Infinity : parseInt(cfg.maxInputs);
+
+  const startSi       = collIdx;
+  const startInputIdx = collInputIdx;
+  const skipIntro      = startInputIdx > 0;
+
+  outer:
+  for (let si = startSi; si < collCollections.length; si++) {
+    if (hfCollAbort) break;
+    collIdx = si;
+    const col = collCollections[si];
+
+    if (!skipIntro || si > startSi) {
+      hfCollShowCard(col.name, '', false);
+      document.getElementById('hfCollFrontText').textContent = col.name;
+      await hfCollSpeak(col.name, cfg);
+      if (hfCollAbort) break;
+      if (!hfCollSkipStep) await hfCollDelay(cfg.genPause * 1000);
+      hfCollSkipStep = false;
+
+      if (cfg.explanation && col.description) {
+        document.getElementById('hfCollCardInfoText').textContent = col.description;
+        document.getElementById('hfCollCardInfo').classList.add('visible');
+        await hfCollSpeak(col.description, cfg);
+        document.getElementById('hfCollCardInfo').classList.remove('visible');
+        document.getElementById('hfCollCardInfo').scrollTop = 0;
+        if (hfCollAbort) break;
+        if (!hfCollSkipStep) await hfCollDelay(cfg.genPause * 1000);
+        hfCollSkipStep = false;
+      }
+    }
+
+    const limit   = Math.min(col.inputs.length, maxInp);
+    const startIi = (si === startSi) ? startInputIdx : 0;
+
+    for (let ii = startIi; ii < limit; ii++) {
+      if (hfCollAbort) break outer;
+      collInputIdx = ii;
+      const inp = col.inputs[ii];
+
+      hfCollShowCard(inp.q, inp.a, false);
+      await hfCollSpeak(inp.q, cfg);
+      if (hfCollAbort) break outer;
+      if (!hfCollSkipStep) await hfCollDelay(cfg.thinkPause * 1000);
+      hfCollSkipStep = false;
+
+      if (cfg.cardBack) {
+        hfCollShowCard(inp.q, inp.a, true);
+        await hfCollSpeak(inp.a, cfg);
+        if (hfCollAbort) break outer;
+        if (!hfCollSkipStep) await hfCollDelay(cfg.genPause * 1000);
+        hfCollSkipStep = false;
+      }
+
+      if (cfg.loopStrategy && ii === limit - 1) ii = -1;
+    }
+
+    if (cfg.loopStrategy) si--;
+  }
+
+  hfCollPlaying  = false;
+  hfCollAbort    = false;
+  hfCollSkipStep = false;
+  speechSynthesis.cancel();
+  hfCollClearTimeouts();
+  hfCollUpdateButtons();
+}
+
+function hfCollStop() {
+  hfCollAbort    = true;
+  hfCollPlaying  = false;
+  hfCollSkipStep = false;
+  speechSynthesis.cancel();
+  hfCollClearTimeouts();
+  hfCollUpdateButtons();
+}
+
+function hfCollSkipForward() {
+  if (!hfCollPlaying) return;
+  hfCollSkipStep = true;
+  speechSynthesis.cancel();
+  hfCollClearTimeouts();
+  if (hfCollDelayResolve) { hfCollDelayResolve(); hfCollDelayResolve = null; }
+}
+
+function hfCollSkipBack() {
+  if (!hfCollPlaying) return;
+  if (collInputIdx === 0 && collIdx > 0) collIdx--;
+  collInputIdx = 0;
+  hfCollAbort = true;
+  speechSynthesis.cancel();
+  hfCollClearTimeouts();
+  if (hfCollDelayResolve) { hfCollDelayResolve(); hfCollDelayResolve = null; }
+  setTimeout(() => {
+    hfCollAbort   = false;
+    hfCollPlaying = false;
+    hfCollPlay();
+  }, 50);
+}
+
+document.getElementById('hfCollPlayBtn').addEventListener('click', hfCollPlay);
+document.getElementById('hfCollPlayBtn').addEventListener('touchend', e => { e.stopPropagation(); e.preventDefault(); hfCollPlay(); }, { passive: false });
+document.getElementById('hfCollNextStepBtn').addEventListener('click', hfCollSkipForward);
+document.getElementById('hfCollNextStepBtn').addEventListener('touchend', e => { e.stopPropagation(); e.preventDefault(); hfCollSkipForward(); }, { passive: false });
+document.getElementById('hfCollPrevStepBtn').addEventListener('click', hfCollSkipBack);
+document.getElementById('hfCollPrevStepBtn').addEventListener('touchend', e => { e.stopPropagation(); e.preventDefault(); hfCollSkipBack(); }, { passive: false });
+document.getElementById('hfCollCloseBtn').addEventListener('click', () => {
+  hfCollStop();
+  closeTraining('hfCollScreen');
+});
+document.getElementById('hfCollSettingsBtn').addEventListener('click', () =>
+  document.getElementById('hfCollSettingsOverlay').classList.add('open'));
+document.getElementById('hfCollSettingsClose').addEventListener('click', () =>
+  document.getElementById('hfCollSettingsOverlay').classList.remove('open'));
+
+const hfCollCardInfoEl = document.getElementById('hfCollCardInfo');
+hfCollCardInfoEl.addEventListener('touchstart', e => e.stopPropagation(), { passive: true });
+hfCollCardInfoEl.addEventListener('touchmove',  e => e.stopPropagation(), { passive: true });
+hfCollCardInfoEl.addEventListener('touchend',   e => e.stopPropagation(), { passive: true });
+
+// Manual navigation
+const hfCollCard = document.getElementById('hfCollCard');
+function hfCollRenderManual() {
+  if (!collCollections.length) return;
+  hfCollShowCard(collCollections[collIdx].inputs[collInputIdx].q, collCollections[collIdx].inputs[collInputIdx].a, false);
+}
+let hclTx=0,hclTy=0,hclTt=0,hclMov=false;
+hfCollCard.addEventListener('touchstart', e => { if (hfCollPlaying) return; hclTx=e.touches[0].clientX; hclTy=e.touches[0].clientY; hclTt=Date.now(); hclMov=false; }, { passive: true });
+hfCollCard.addEventListener('touchmove',  e => { if (hfCollPlaying) return; if (Math.abs(e.touches[0].clientX-hclTx)>10||Math.abs(e.touches[0].clientY-hclTy)>10) hclMov=true; }, { passive: true });
+hfCollCard.addEventListener('touchend',   e => {
+  if (hfCollPlaying) return;
+  const dx=e.changedTouches[0].clientX-hclTx, dy=e.changedTouches[0].clientY-hclTy, adx=Math.abs(dx), ady=Math.abs(dy);
+  if (!hclMov && Date.now()-hclTt<500) { hfCollCardInnerEl.classList.toggle('flipped'); return; }
+  if (hclMov && adx>40 && adx>ady) { collIdx = dx>0 ? (collIdx-1+collCollections.length)%collCollections.length : (collIdx+1)%collCollections.length; collInputIdx=0; hfCollRenderManual(); return; }
+  if (hclMov && ady>40 && ady>adx) { collInputIdx = dy>0 ? (collInputIdx-1+collCollections[collIdx].inputs.length)%collCollections[collIdx].inputs.length : (collInputIdx+1)%collCollections[collIdx].inputs.length; hfCollRenderManual(); return; }
+});
+
+document.getElementById('hfCollPrevBtn').addEventListener('click', () => { if (hfCollPlaying) return; collIdx=(collIdx-1+collCollections.length)%collCollections.length; collInputIdx=0; hfCollRenderManual(); });
+document.getElementById('hfCollNextBtn').addEventListener('click', () => { if (hfCollPlaying) return; collIdx=(collIdx+1)%collCollections.length; collInputIdx=0; hfCollRenderManual(); });
+document.getElementById('hfCollPrevInputBtn').addEventListener('click', () => { if (hfCollPlaying) return; collInputIdx=(collInputIdx-1+collCollections[collIdx].inputs.length)%collCollections[collIdx].inputs.length; hfCollRenderManual(); });
+document.getElementById('hfCollNextInputBtn').addEventListener('click', () => { if (hfCollPlaying) return; collInputIdx=(collInputIdx+1)%collCollections[collIdx].inputs.length; hfCollRenderManual(); });
+
+function showHandsfreeCollections() {
+  const key = activeCollectionKey;
+  if (!conversationalCollections[key] || !conversationalCollections[key].length) return;
+  collCollections = conversationalCollections[key];
+  collIdx = 0; collInputIdx = 0;
+  navToTraining('hfCollScreen');
+  hfCollRenderManual();
+  document.getElementById('hfCollName').textContent = collCollections[0].name;
+  document.getElementById('hfCollCounter').textContent = `1 / ${collCollections.length}`;
+  hfCollUpdateButtons();
+}
+
+addModeListener('modeHandsfreeCollections', showHandsfreeCollections);
+TRAINING_SCREENS.push('hfCollScreen');
