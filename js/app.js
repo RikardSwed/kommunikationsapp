@@ -1,7 +1,7 @@
 // app.js — All application logic for Communication Trainer
 // Depends on: data.js and multiStepData.js (must be loaded first)
 
-const VERSION = 'v1.10.1';
+const VERSION = 'v1.10.3';
 
 // ─── SCREENS ──────────────────────────────────────────────────────────────────
 const homeScreen     = document.getElementById('homeScreen');
@@ -564,9 +564,23 @@ const flowComboName = document.getElementById('flowComboName');
 const flowFrontText = document.getElementById('flowFrontText');
 const flowBackText  = document.getElementById('flowBackText');
 const flowCounter   = document.getElementById('flowCounter');
+const flowCardInfo  = document.getElementById('flowCardInfo');
 
 let flowStrategies = [], flowComboIdx = 0, flowCardIdx = 0;
 let flowFlipped = false, flowAnimating = false, flowSequence = [];
+
+// Info panel — tap combo name to open
+flowComboName.addEventListener('click', () => {
+  if (!flowStrategies.length) return;
+  const combo = flowStrategies[flowComboIdx];
+  document.getElementById('flowCardInfoText').textContent = combo.description || 'No description available.';
+  flowCardInfo.classList.add('visible');
+});
+flowComboName.addEventListener('touchend', e => { e.preventDefault(); flowComboName.click(); }, { passive: false });
+document.getElementById('flowCardInfoClose').addEventListener('click', e => { e.stopPropagation(); flowCardInfo.classList.remove('visible'); flowCardInfo.scrollTop = 0; });
+flowCardInfo.addEventListener('touchstart', e => e.stopPropagation(), { passive: true });
+flowCardInfo.addEventListener('touchmove',  e => e.stopPropagation(), { passive: true });
+flowCardInfo.addEventListener('touchend',   e => e.stopPropagation(), { passive: true });
 
 function buildFlowSequence(combo) {
   const seq = [];
@@ -1997,6 +2011,8 @@ document.getElementById('hfChallCloseBtn').addEventListener('click', () => {
 });
 document.getElementById('hfChallSettingsBtn').addEventListener('click', () =>
   document.getElementById('hfChallSettingsOverlay').classList.add('open'));
+document.getElementById('hfChallSettingsClose').addEventListener('click', () =>
+  document.getElementById('hfChallSettingsOverlay').classList.remove('open'));
 
 const hfChallCardInfoEl = document.getElementById('hfChallCardInfo');
 hfChallCardInfoEl.addEventListener('touchstart', e => e.stopPropagation(), { passive: true });
@@ -2038,3 +2054,255 @@ function showHandsfreeChallenges() {
 
 addModeListener('modeHandsfreeChallenges', showHandsfreeChallenges);
 TRAINING_SCREENS.push('hfChallScreen');
+
+
+// ── HANDSFREE: SEQUENCES MODE ─────────────────────────────────────────────────
+
+let hfFlowPlaying  = false;
+let hfFlowAbort    = false;
+let hfFlowSkipStep = false;
+let hfFlowTimeouts = [];
+let hfFlowDelayResolve = null;
+let hfFlowSequence = [];
+
+function hfFlowSettings() {
+  return {
+    explanation : document.getElementById('hfFlowExplanation').checked,
+    cardBack    : document.getElementById('hfFlowCardBack').checked,
+    thinkPause  : parseFloat(document.getElementById('hfFlowThinkPause').value),
+    genPause    : parseFloat(document.getElementById('hfFlowGenPause').value),
+    rate        : parseFloat(document.getElementById('hfFlowRate').value),
+    voiceGender : document.getElementById('hfFlowVoice').value,
+    loopStrategy: document.getElementById('hfFlowLoopStrategy').checked
+  };
+}
+
+function hfFlowSpeak(text, cfg) {
+  return new Promise(resolve => {
+    if (!text) { resolve(); return; }
+    speechSynthesis.cancel();
+    const utt = new SpeechSynthesisUtterance(text);
+    utt.lang  = 'en-US';
+    utt.rate  = cfg.rate;
+    const voice = hfPickVoice(cfg.voiceGender);
+    if (voice) utt.voice = voice;
+    utt.onend   = () => resolve();
+    utt.onerror = () => resolve();
+    if (hfFlowSkipStep) { hfFlowSkipStep = false; resolve(); return; }
+    speechSynthesis.speak(utt);
+  });
+}
+
+function hfFlowDelay(ms) {
+  return new Promise(resolve => {
+    hfFlowDelayResolve = resolve;
+    if (hfFlowAbort || hfFlowSkipStep) { hfFlowDelayResolve = null; resolve(); return; }
+    const step = 80;
+    let elapsed = 0;
+    function tick() {
+      if (hfFlowAbort || hfFlowSkipStep) { hfFlowDelayResolve = null; resolve(); return; }
+      elapsed += step;
+      if (elapsed >= ms) { hfFlowDelayResolve = null; resolve(); return; }
+      const id = setTimeout(tick, step);
+      hfFlowTimeouts.push(id);
+    }
+    const id = setTimeout(tick, step);
+    hfFlowTimeouts.push(id);
+  });
+}
+
+function hfFlowClearTimeouts() {
+  hfFlowTimeouts.forEach(id => clearTimeout(id));
+  hfFlowTimeouts = [];
+}
+
+const hfFlowCardInnerEl = document.getElementById('hfFlowCardInner');
+
+function hfFlowShowCard(item, flipped) {
+  document.getElementById('hfFlowComboName').textContent = flowStrategies[flowComboIdx].name;
+  document.getElementById('hfFlowFrontText').textContent = item.front;
+  document.getElementById('hfFlowBackText').textContent  = item.back;
+  document.getElementById('hfFlowCounter').textContent   = `${flowComboIdx + 1} / ${flowStrategies.length}`;
+  hfFlowCardInnerEl.style.transition = 'transform 0.4s ease';
+  hfFlowCardInnerEl.classList.toggle('flipped', flipped);
+}
+
+function hfFlowUpdateButtons() {
+  const playBtn = document.getElementById('hfFlowPlayBtn');
+  const prevBtn = document.getElementById('hfFlowPrevStepBtn');
+  const nextBtn = document.getElementById('hfFlowNextStepBtn');
+  playBtn.textContent = hfFlowPlaying ? '⏹' : '▶';
+  prevBtn.disabled = !hfFlowPlaying;
+  nextBtn.disabled = !hfFlowPlaying;
+  prevBtn.style.opacity = hfFlowPlaying ? '1' : '0.35';
+  nextBtn.style.opacity = hfFlowPlaying ? '1' : '0.35';
+}
+
+async function hfFlowPlay() {
+  if (hfFlowPlaying) { hfFlowStop(); return; }
+  if (!flowStrategies.length) return;
+
+  const unlock = new SpeechSynthesisUtterance(' ');
+  unlock.volume = 0;
+  speechSynthesis.speak(unlock);
+
+  hfFlowPlaying  = true;
+  hfFlowAbort    = false;
+  hfFlowSkipStep = false;
+  hfFlowUpdateButtons();
+
+  const cfg = hfFlowSettings();
+
+  const startCi = flowComboIdx;
+  const startCardIdx = flowCardIdx;
+
+  outer:
+  for (let ci = startCi; ci < flowStrategies.length; ci++) {
+    if (hfFlowAbort) break;
+    flowComboIdx = ci;
+    const combo = flowStrategies[ci];
+    const seq = buildFlowSequence(combo);
+    const startIi = (ci === startCi) ? startCardIdx : 0;
+    const skipIntro = (ci === startCi) && startCardIdx > 0;
+
+    if (!skipIntro) {
+      document.getElementById('hfFlowComboName').textContent = combo.name;
+      document.getElementById('hfFlowFrontText').textContent = combo.name;
+      document.getElementById('hfFlowBackText').textContent  = '';
+      hfFlowCardInnerEl.classList.remove('flipped');
+      await hfFlowSpeak(combo.name, cfg);
+      if (hfFlowAbort) break;
+      if (!hfFlowSkipStep) await hfFlowDelay(cfg.genPause * 1000);
+      hfFlowSkipStep = false;
+
+      if (cfg.explanation && combo.description) {
+        document.getElementById('hfFlowCardInfoText').textContent = combo.description;
+        document.getElementById('hfFlowCardInfo').classList.add('visible');
+        await hfFlowSpeak(combo.description, cfg);
+        document.getElementById('hfFlowCardInfo').classList.remove('visible');
+        document.getElementById('hfFlowCardInfo').scrollTop = 0;
+        if (hfFlowAbort) break;
+        if (!hfFlowSkipStep) await hfFlowDelay(cfg.genPause * 1000);
+        hfFlowSkipStep = false;
+      }
+    }
+
+    for (let ii = startIi; ii < seq.length; ii++) {
+      if (hfFlowAbort) break outer;
+      flowCardIdx = ii;
+      const item = seq[ii];
+
+      hfFlowShowCard(item, false);
+      await hfFlowSpeak(item.front, cfg);
+      if (hfFlowAbort) break outer;
+      if (!hfFlowSkipStep) await hfFlowDelay(cfg.thinkPause * 1000);
+      hfFlowSkipStep = false;
+
+      if (cfg.cardBack && item.back !== item.front) {
+        hfFlowShowCard(item, true);
+        await hfFlowSpeak(item.back, cfg);
+        if (hfFlowAbort) break outer;
+        if (!hfFlowSkipStep) await hfFlowDelay(cfg.genPause * 1000);
+        hfFlowSkipStep = false;
+      }
+
+      if (cfg.loopStrategy && ii === seq.length - 1) ii = -1;
+    }
+
+    if (cfg.loopStrategy) ci--;
+  }
+
+  hfFlowPlaying  = false;
+  hfFlowAbort    = false;
+  hfFlowSkipStep = false;
+  speechSynthesis.cancel();
+  hfFlowClearTimeouts();
+  hfFlowUpdateButtons();
+}
+
+function hfFlowStop() {
+  hfFlowAbort    = true;
+  hfFlowPlaying  = false;
+  hfFlowSkipStep = false;
+  speechSynthesis.cancel();
+  hfFlowClearTimeouts();
+  hfFlowUpdateButtons();
+}
+
+function hfFlowSkipForward() {
+  if (!hfFlowPlaying) return;
+  hfFlowSkipStep = true;
+  speechSynthesis.cancel();
+  hfFlowClearTimeouts();
+  if (hfFlowDelayResolve) { hfFlowDelayResolve(); hfFlowDelayResolve = null; }
+}
+
+function hfFlowSkipBack() {
+  if (!hfFlowPlaying) return;
+  if (flowCardIdx === 0 && flowComboIdx > 0) flowComboIdx--;
+  flowCardIdx = 0;
+  hfFlowAbort = true;
+  speechSynthesis.cancel();
+  hfFlowClearTimeouts();
+  if (hfFlowDelayResolve) { hfFlowDelayResolve(); hfFlowDelayResolve = null; }
+  setTimeout(() => {
+    hfFlowAbort   = false;
+    hfFlowPlaying = false;
+    hfFlowPlay();
+  }, 50);
+}
+
+document.getElementById('hfFlowPlayBtn').addEventListener('click', hfFlowPlay);
+document.getElementById('hfFlowPlayBtn').addEventListener('touchend', e => { e.stopPropagation(); e.preventDefault(); hfFlowPlay(); }, { passive: false });
+document.getElementById('hfFlowNextStepBtn').addEventListener('click', hfFlowSkipForward);
+document.getElementById('hfFlowNextStepBtn').addEventListener('touchend', e => { e.stopPropagation(); e.preventDefault(); hfFlowSkipForward(); }, { passive: false });
+document.getElementById('hfFlowPrevStepBtn').addEventListener('click', hfFlowSkipBack);
+document.getElementById('hfFlowPrevStepBtn').addEventListener('touchend', e => { e.stopPropagation(); e.preventDefault(); hfFlowSkipBack(); }, { passive: false });
+document.getElementById('hfFlowCloseBtn').addEventListener('click', () => {
+  hfFlowStop();
+  closeTraining('hfFlowScreen');
+});
+document.getElementById('hfFlowSettingsBtn').addEventListener('click', () =>
+  document.getElementById('hfFlowSettingsOverlay').classList.add('open'));
+document.getElementById('hfFlowSettingsClose').addEventListener('click', () =>
+  document.getElementById('hfFlowSettingsOverlay').classList.remove('open'));
+const hfFlowCardInfoEl = document.getElementById('hfFlowCardInfo');
+hfFlowCardInfoEl.addEventListener('touchstart', e => e.stopPropagation(), { passive: true });
+hfFlowCardInfoEl.addEventListener('touchmove',  e => e.stopPropagation(), { passive: true });
+hfFlowCardInfoEl.addEventListener('touchend',   e => e.stopPropagation(), { passive: true });
+
+// Manual navigation
+const hfFlowCard = document.getElementById('hfFlowCard');
+function hfFlowRenderManual() {
+  if (!flowStrategies.length) return;
+  const seq = buildFlowSequence(flowStrategies[flowComboIdx]);
+  hfFlowShowCard(seq[flowCardIdx], false);
+}
+let hfTx2=0,hfTy2=0,hfTt2=0,hfMov2=false;
+hfFlowCard.addEventListener('touchstart', e => { if (hfFlowPlaying) return; hfTx2=e.touches[0].clientX; hfTy2=e.touches[0].clientY; hfTt2=Date.now(); hfMov2=false; }, { passive: true });
+hfFlowCard.addEventListener('touchmove',  e => { if (hfFlowPlaying) return; if (Math.abs(e.touches[0].clientX-hfTx2)>10||Math.abs(e.touches[0].clientY-hfTy2)>10) hfMov2=true; }, { passive: true });
+hfFlowCard.addEventListener('touchend',   e => {
+  if (hfFlowPlaying) return;
+  const dx=e.changedTouches[0].clientX-hfTx2, dy=e.changedTouches[0].clientY-hfTy2, adx=Math.abs(dx), ady=Math.abs(dy);
+  const seqLen = buildFlowSequence(flowStrategies[flowComboIdx]).length;
+  if (!hfMov2 && Date.now()-hfTt2<500) { hfFlowCardInnerEl.classList.toggle('flipped'); return; }
+  if (hfMov2 && adx>40 && adx>ady) { flowComboIdx = dx>0 ? (flowComboIdx-1+flowStrategies.length)%flowStrategies.length : (flowComboIdx+1)%flowStrategies.length; flowCardIdx=0; hfFlowRenderManual(); return; }
+  if (hfMov2 && ady>40 && ady>adx) { flowCardIdx = dy>0 ? (flowCardIdx-1+seqLen)%seqLen : (flowCardIdx+1)%seqLen; hfFlowRenderManual(); return; }
+});
+
+document.getElementById('hfFlowPrevComboBtn').addEventListener('click', () => { if (hfFlowPlaying) return; flowComboIdx=(flowComboIdx-1+flowStrategies.length)%flowStrategies.length; flowCardIdx=0; hfFlowRenderManual(); });
+document.getElementById('hfFlowNextComboBtn').addEventListener('click', () => { if (hfFlowPlaying) return; flowComboIdx=(flowComboIdx+1)%flowStrategies.length; flowCardIdx=0; hfFlowRenderManual(); });
+document.getElementById('hfFlowPrevCardBtn').addEventListener('click', () => { if (hfFlowPlaying) return; const len=buildFlowSequence(flowStrategies[flowComboIdx]).length; flowCardIdx=(flowCardIdx-1+len)%len; hfFlowRenderManual(); });
+document.getElementById('hfFlowNextCardBtn').addEventListener('click', () => { if (hfFlowPlaying) return; const len=buildFlowSequence(flowStrategies[flowComboIdx]).length; flowCardIdx=(flowCardIdx+1)%len; hfFlowRenderManual(); });
+
+function showHandsfreeSequences() {
+  flowStrategies = multiStepCollections[activeCollectionKey] || [];
+  if (!flowStrategies.length) return;
+  flowComboIdx = 0; flowCardIdx = 0;
+  navToTraining('hfFlowScreen');
+  hfFlowRenderManual();
+  hfFlowUpdateButtons();
+}
+
+addModeListener('modeHandsfreeSequences', showHandsfreeSequences);
+TRAINING_SCREENS.push('hfFlowScreen');
