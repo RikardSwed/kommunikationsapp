@@ -413,3 +413,114 @@ const challengesCollections = {
   ]
 
 };
+
+// ── MINDSET DATA ──────────────────────────────────────────────────────────────
+// Used by the Mindset training mode.
+// Each mindset strategy has a name, description, and inputs.
+// Back of card: self-talk sentence + brief explanation in parentheses.
+
+const mindsetCollections = {
+
+  assertive: [
+    {
+      name: "I Am My Own Judge",
+      description: "The foundational right from Manuel Smith's Bill of Assertive Rights: you have the right to judge your own behaviour, thoughts, and emotions — and to take responsibility for them yourself.\n\nThis is the prime assertive right. All other rights flow from it. No one else gets to be the final authority on what you did, thought, or felt — only you.\n\nWhy it matters: People can only manipulate you to the extent that you let them be the judge of you instead of yourself. When you reclaim that role, manipulation loses its grip.\n\nMindset: I decide what my actions mean. Other people can have opinions — but they don't get the final word.",
+      inputs: [
+        { q: "Someone tells you that you're wrong to feel the way you do", a: '"I get to decide what I feel. Their opinion doesn\'t override my own judgment of myself." (You remain the final authority on your own experience — not them.)' },
+        { q: "You want to make a decision that others might disapprove of", a: '"I am allowed to judge this for myself." (Their approval isn\'t required for the decision to be valid.)' },
+        { q: "Someone implies that your choice was objectively the wrong one", a: '"There can be more than one reasonable way to see this — including mine." (Disagreement doesn\'t mean you were wrong; it means you see it differently.)' },
+        { q: "You catch yourself seeking reassurance before trusting your own view", a: '"I don\'t need permission to trust my own judgment." (Outsourcing your judgment to others keeps you dependent on their approval.)' },
+        { q: "You want to build confidence in trusting your own read of a situation", a: '"My read of this is valid simply because it\'s mine." (Confidence grows by practising self-trust, not by waiting for certainty.)' },
+      ]
+    },
+    {
+      name: "I Don't Owe Explanations",
+      description: "The second assertive right: you have the right to offer no reasons or excuses for justifying your behaviour.\n\nThis doesn't mean you should never explain yourself — it means explanations are optional, not owed. Choosing to explain is different from feeling obligated to.\n\nWhy it matters: Every justification you offer can become a new angle for someone to argue against. The compulsion to explain often comes from feeling like your choices need external approval to be valid.\n\nMindset: My reasons are mine. I can share them if I want to — but I don't have to.",
+      inputs: [
+        { q: '"Why not? Just tell me why."', a: '"I don\'t need a reason — it just doesn\'t work for me." (You can decline without converting the decision into a debate.)' },
+        { q: "You want to turn down an invitation without a long justification", a: '"I appreciate the invite — I won\'t be able to make it." (A short answer is complete. No elaboration is owed.)' },
+        { q: "You feel the urge to justify a decision that's already final", a: '"This is decided — I don\'t need to defend it." (Catching the urge to over-explain is the skill itself.)' },
+        { q: "Someone implies you need a 'good enough' reason to say no", a: '"Not wanting to is reason enough." (There is no minimum bar of justification required for a boundary to be valid.)' },
+        { q: "You want to decline a request from someone you respect, without guilt", a: '"I can say no and still respect them — explanations aren\'t what makes that true." (Respect and explanation are not the same thing.)' },
+      ]
+    },
+    {
+      name: "I'm Not Responsible for Others' Problems",
+      description: "The third assertive right: you have the right to judge whether you are responsible for finding solutions to other people's problems.\n\nThis is one of the most liberating rights — and one of the hardest to hold onto, especially with people you care about. Caring about someone is not the same as being responsible for solving what's wrong for them.\n\nWhy it matters: If you don't recognise this right, others can present their problems as if they were automatically yours to fix — and you'll feel obligated to comply.\n\nMindset: I can care without carrying. Their problem can matter to me without becoming my job.",
+      inputs: [
+        { q: "A friend presents their inconvenience as something you need to fix", a: '"I hear that this is hard for you — and it\'s not something I need to solve." (Empathy doesn\'t require ownership of the solution.)' },
+        { q: "Someone implies you're letting them down by not helping", a: '"I can care about this without taking it on myself." (Feeling guilty doesn\'t mean you\'re actually obligated.)' },
+        { q: "You want to support someone without absorbing their problem as your own", a: '"I\'m here for you — and this is still yours to carry." (Support and ownership are two different things.)' },
+        { q: "You're asked to fix a problem you didn't create and don't have the means to solve", a: '"I understand this is difficult — it\'s not mine to fix." (Recognising the limits of your responsibility protects you from unsustainable obligations.)' },
+        { q: "You feel guilty for prioritising your own time over someone else's request", a: '"My time is mine to allocate." (Guilt is a feeling, not evidence that you did something wrong.)' },
+      ]
+    },
+    {
+      name: "I'm Allowed to Change My Mind",
+      description: "The fourth assertive right: you have the right to change your mind.\n\nYou are not bound forever by a past decision, especially if new information or feelings have shifted things. Consistency for its own sake isn't a virtue — it can become a trap.\n\nWhy it matters: People sometimes use your past commitments against you, as if changing your mind were a character flaw. It isn't.\n\nMindset: The person who decided this isn't obligated to be identical to the person I am now.",
+      inputs: [
+        { q: '"But you said you wanted to do this."', a: '"I did — and I\'ve changed my mind since then." (A past decision doesn\'t bind your present judgment.)' },
+        { q: "You agreed to something and now realise it doesn't feel right", a: '"It\'s okay that this isn\'t what I want anymore." (Recognising a shift in feeling is information, not a failure.)' },
+        { q: "Someone uses your earlier agreement to pressure you into following through", a: '"I understand I said yes before — I\'m saying no now." (Consistency isn\'t owed when circumstances or feelings have changed.)' },
+        { q: "You want permission to reconsider a major life decision", a: '"I\'m allowed to reconsider this, even publicly." (Changing your mind in view of others doesn\'t make it less valid.)' },
+        { q: "You feel embarrassed about reversing a stated opinion", a: '"Updating my view is a sign of thinking, not weakness." (Rigid consistency is often mistaken for integrity — it isn\'t the same thing.)' },
+      ]
+    },
+    {
+      name: "I'm Allowed to Make Mistakes",
+      description: "The fifth assertive right, and the mindset underlying Negative Assertion: you have the right to make mistakes — and to be responsible for them, without collapsing into shame.\n\nThis is the belief that makes Negative Assertion possible. If you secretly believe mistakes mean you're fundamentally flawed, owning them calmly will always feel threatening.\n\nWhy it matters: A mistake is a single event, not a verdict on your worth. Acknowledging it cleanly — without spiralling into apology or self-attack — requires believing this first.\n\nMindset: I can be wrong about something and still be okay. Owning a mistake is strength, not damage.",
+      inputs: [
+        { q: "You're pointed out for something you got wrong", a: '"Yes, that was a mistake. I can own that and move on." (Owning it fully, without minimising or spiralling, is what makes Negative Assertion calm rather than defensive.)' },
+        { q: "You feel a wave of shame after making an error", a: '"Being wrong doesn\'t make me bad at this — it makes me human." (Shame treats the mistake as identity; this mindset treats it as an event.)' },
+        { q: "You want to apologise without over-apologising", a: '"One honest acknowledgment is enough." (Excessive apology often comes from believing the mistake needs more defending than it does.)' },
+        { q: "Someone seems to expect you to be devastated by your error", a: '"I\'m not going to perform more guilt than I actually feel." (You don\'t owe anyone a dramatic reaction to validate their criticism.)' },
+        { q: "You're preparing to try something you might not be good at yet", a: '"I\'m allowed to be bad at this while I learn." (Permission to be imperfect is what makes growth possible.)' },
+      ]
+    },
+    {
+      name: "I Don't Need to Know Everything",
+      description: "The sixth assertive right: you have the right to say \"I don't know.\"\n\nThere's social pressure to always have an answer, an opinion, or a plan. This right gives you permission to be genuinely uncertain without faking confidence you don't have.\n\nWhy it matters: Pretending to know things you don't creates pressure and sets you up for being caught out. Honesty about uncertainty is more stable in the long run.\n\nMindset: Not knowing is a legitimate answer. I don't need to perform certainty I don't have.",
+      inputs: [
+        { q: "You're asked a question you genuinely don't have an answer to", a: '"I don\'t know — I haven\'t thought that through yet." (A direct admission is more stable than an improvised guess.)' },
+        { q: "You feel pressure to have an opinion on something you haven't considered", a: '"I don\'t have a view on this yet, and that\'s fine." (You\'re not required to have instant opinions on everything.)' },
+        { q: "Someone expects you to know the outcome of an uncertain situation", a: '"I genuinely don\'t know how this will go." (Certainty you don\'t have isn\'t worth faking.)' },
+        { q: "You're put on the spot in a meeting and don't know the answer", a: '"I\'ll need to look into that before I can answer properly." (This is a complete, professional response — not a failure.)' },
+        { q: "You want to stop pretending to understand something to avoid looking uninformed", a: '"I\'d rather ask than fake understanding." (Asking protects you from bigger problems down the line.)' },
+      ]
+    },
+    {
+      name: "Criticism Can't Threaten Me",
+      description: "The core mindset behind Fogging: criticism is just information — it doesn't have power over you unless you treat it as a verdict that must be fought or fled.\n\nFogging only works if you actually believe this. If you secretly think every criticism is a threat to defend against, your fogging responses will sound hollow or sarcastic instead of calm.\n\nWhy it matters: When you stop treating criticism as an attack, you stop needing to defend. Like fog, it passes through you because there's nothing rigid for it to hit.\n\nMindset: Criticism is just someone's perspective. I don't need to defend against a perspective.",
+      inputs: [
+        { q: "Someone delivers harsh criticism in front of others", a: '"This is their perspective — it doesn\'t require my defence." (Treating it as a perspective rather than a verdict removes the urge to fight back.)' },
+        { q: "You feel your guard going up as soon as someone starts criticising you", a: '"I can let this pass through without needing to block it." (Resistance is what makes criticism feel like an attack — softness lets it pass.)' },
+        { q: "You're criticised by someone whose opinion you respect", a: '"Even their view is just one perspective, not a fact about me." (Respecting someone doesn\'t mean their criticism becomes absolute truth.)' },
+        { q: "You notice yourself rehearsing a defence before someone has even finished speaking", a: '"I don\'t need a defence ready. There\'s nothing to defend against yet." (Preparing to fight assumes the criticism is an attack before it\'s even landed.)' },
+        { q: "You want to stay calm while receiving feedback you disagree with", a: '"I can hear this calmly, whether or not I agree." (Calm listening doesn\'t mean agreement — it just means no defensiveness.)' },
+      ]
+    },
+    {
+      name: "I'm Not Afraid of More Criticism",
+      description: "The core mindset behind Negative Inquiry: you can handle hearing more — even if the criticism gets more specific or more uncomfortable.\n\nNegative Inquiry requires genuinely wanting to know more, not just performing curiosity while secretly hoping the conversation ends. If you're afraid of what more detail might reveal, the technique falls apart.\n\nWhy it matters: People often avoid asking for specifics because they fear what they'll hear. But avoiding the detail doesn't make the underlying issue go away — it just keeps it vague and unresolved.\n\nMindset: I can survive hearing exactly what they mean. More information helps me, it doesn't hurt me.",
+      inputs: [
+        { q: "Someone gives you vague criticism and you feel the urge to let it drop", a: '"I\'d rather know exactly what they mean than guess." (Avoiding detail leaves the criticism vague and unresolved — asking resolves it.)' },
+        { q: "You're nervous about what asking \"what do you mean?\" might reveal", a: '"Whatever they say, I can handle hearing it." (The fear of detail is usually worse than the detail itself.)' },
+        { q: "Someone seems reluctant to be more specific about their criticism", a: '"I genuinely want to understand, not just move past this." (Real curiosity, not performance, is what makes Negative Inquiry land.)' },
+        { q: "You feel your stomach tighten as you ask for more feedback", a: '"This discomfort is temporary, and the clarity is worth it." (The anticipation is usually harder than the actual answer.)' },
+        { q: "You're worried that asking for specifics will make the criticism feel more real", a: '"Specifics make it solvable, not bigger." (Vague criticism feels larger because it\'s undefined — detail actually shrinks it.)' },
+      ]
+    },
+    {
+      name: "I Don't Need to Convince Anyone",
+      description: "The core mindset behind Broken Record: your position doesn't need to win an argument to be valid. You're not trying to convince — you're holding steady.\n\nThe instinct to explain, argue, or persuade comes from believing you need the other person's agreement for your boundary to count. Broken Record only stays calm if you let go of that need.\n\nWhy it matters: The moment you try to convince someone, you've entered a debate — and debates can be lost. Holding a position doesn't require winning anyone over.\n\nMindset: My position doesn't need their agreement to be valid. I'm not trying to win — I'm just staying steady.",
+      inputs: [
+        { q: "Someone keeps presenting new arguments to change your mind", a: '"I don\'t need to win this — I just need to stay where I am." (Engaging each new argument turns this into a debate you don\'t need to have.)' },
+        { q: "You feel the urge to explain your reasoning one more time, hoping it will finally land", a: '"They don\'t have to agree with me for my answer to stand." (One more explanation rarely changes the outcome — it just prolongs the pressure.)' },
+        { q: "Someone seems frustrated that you won't engage with their counterarguments", a: '"Their frustration doesn\'t mean I\'m wrong to hold this." (Frustration is information about their reaction, not about the validity of your position.)' },
+        { q: "You catch yourself preparing a more persuasive version of your answer", a: '"The simple version is enough. I don\'t need a better argument." (Reaching for persuasion means you\'ve started trying to win instead of just holding steady.)' },
+        { q: "You want to end a repetitive disagreement without losing your composure", a: '"I can repeat myself calmly for as long as this takes." (Patience with repetition is the entire technique — there\'s no need to escalate.)' },
+      ]
+    }
+  ]
+
+};
