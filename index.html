@@ -68,6 +68,11 @@
       <div class="mode-info"><div class="mode-name">Challenges</div><div class="mode-desc">Train on real situations, comments and feelings</div></div>
       <div class="mode-arrow">›</div>
     </div>
+    <div class="mode-card" id="modeMindset">
+      <div class="mode-icon">✨</div>
+      <div class="mode-info"><div class="mode-name">Mindset</div><div class="mode-desc">Train the thinking patterns behind each strategy</div></div>
+      <div class="mode-arrow">›</div>
+    </div>
     <div class="mode-card" id="modeMemorize">
       <div class="mode-icon">◎</div>
       <div class="mode-info"><div class="mode-name">Memorize</div><div class="mode-desc">Learn strategies and challenges by heart</div></div>
@@ -353,7 +358,7 @@
       <label>Show hints</label>
       <label class="toggle"><input type="checkbox" id="showHints" checked /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.9.6</div>
+    <div class="settings-version">v1.10.0</div>
     <button class="settings-close" id="settingsClose">Done</button>
   </div>
 </div>
@@ -426,7 +431,7 @@
       <label>Loop current strategy</label>
       <label class="toggle"><input type="checkbox" id="hfLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.9.6</div>
+    <div class="settings-version">v1.10.0</div>
     <button class="settings-close" id="hfSettingsClose">Done</button>
   </div>
 </div>
@@ -495,7 +500,7 @@
       <label>Loop current strategy</label>
       <label class="toggle"><input type="checkbox" id="hfMemLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.9.6</div>
+    <div class="settings-version">v1.10.0</div>
     <button class="settings-close" id="hfMemSettingsClose">Done</button>
   </div>
 </div>
@@ -527,6 +532,36 @@
     <button class="nav-btn" id="challPrevInputBtn">↑</button>
     <button class="nav-btn" id="challNextInputBtn">↓</button>
     <button class="nav-btn" id="challNextBtn">→</button>
+  </div>
+</div>
+
+<!-- MINDSET TRAINING SCREEN -->
+<div class="app" id="mindScreen" style="display:none;">
+  <div class="topbar">
+    <button class="topbar-btn" id="mindCloseBtn">✕</button>
+    <span class="counter" id="mindCounter">1 / 9</span>
+    <button class="topbar-btn" id="mindSettingsBtn">⚙</button>
+  </div>
+  <div class="divider"></div>
+  <div class="strategy-label" id="mindName"></div>
+  <div class="card-area">
+    <div class="card" id="mindCard">
+      <div class="card-inner" id="mindCardInner">
+        <div class="card-face card-front"><p class="card-text" id="mindFrontText"></p><div class="fb-bar" id="fb-mind-front"><button class="fb-btn" data-val="1"></button><button class="fb-btn" data-val="2"></button><button class="fb-btn" data-val="3"></button><button class="fb-btn" data-val="4"></button></div></div>
+        <div class="card-face card-back"><p class="card-text" id="mindBackText"></p><div class="fb-bar" id="fb-mind-back"><button class="fb-btn" data-val="1"></button><button class="fb-btn" data-val="2"></button><button class="fb-btn" data-val="3"></button><button class="fb-btn" data-val="4"></button></div></div>
+      </div>
+      <div class="card-info" id="mindCardInfo">
+        <button class="card-info-close" id="mindCardInfoClose">✕</button>
+        <p class="card-info-text" id="mindCardInfoText"></p>
+      </div>
+    </div>
+  </div>
+  <div class="hint" id="mindHint">Tap card to reveal · ↑↓ next input · ←→ next mindset</div>
+  <div class="bottombar">
+    <button class="nav-btn" id="mindPrevBtn">←</button>
+    <button class="nav-btn" id="mindPrevInputBtn">↑</button>
+    <button class="nav-btn" id="mindNextInputBtn">↓</button>
+    <button class="nav-btn" id="mindNextBtn">→</button>
   </div>
 </div>
 
@@ -572,15 +607,15 @@
       <label style="font-size:13px; color:#888;">Export all ratings as JSON</label>
       <button id="feedbackExportBtn" style="font-size:13px; color:#555; background:#f0f0f0; border:1px solid #ddd; border-radius:8px; padding:6px 12px; cursor:pointer;">Export</button>
     </div>
-    <div class="settings-version">v1.9.6</div>
+    <div class="settings-version">v1.10.0</div>
     <button class="settings-close" id="homeSettingsClose">Done</button>
   </div>
 </div>
 
-<script src="js/data.js?v=196"></script>
-<script src="js/multiStepData.js?v=196"></script>
-<script src="js/memorizeData.js?v=196"></script>
-<script src="js/app.js?v=196"></script>
+<script src="js/data.js?v=1100"></script>
+<script src="js/multiStepData.js?v=1100"></script>
+<script src="js/memorizeData.js?v=1100"></script>
+<script src="js/app.js?v=1100"></script>
 
 </body>
 </html>
