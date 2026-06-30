@@ -123,7 +123,7 @@ const memorizeCollections = {
       ]
     },
     {
-      name: "Challenge: Vague Criticism",
+      name: "Challenge: Vague or Indirect Criticism",
       cards: [
         {
           q: "What is vague or indirect criticism and why is it destabilising?",
