@@ -7,6 +7,7 @@ const multiStepCollections = {
     {
       name: "Assertiveness 1",
       subtitle: "Fogging → Inquiry → Assertion",
+      description: "This sequence combines three assertive techniques in a fixed three-step order, applied to the same situation:\n\nStep 1 — Fogging: agree calmly with what might be true in the criticism, without defending or explaining.\n\nStep 2 — Negative Inquiry: ask a genuine, specific question to understand exactly what the other person means.\n\nStep 3 — Negative Assertion: own what is actually true about yourself, briefly and without over-apologising.\n\nTogether these three steps de-escalate criticism (Fogging), clarify it (Negative Inquiry), and resolve it honestly (Negative Assertion) — moving from defusing tension to full ownership.",
       inputs: [
         {
           situation: "Someone criticises your driving",
@@ -64,6 +65,7 @@ const multiStepCollections = {
     {
       name: "Assertiveness 2",
       subtitle: "Fogging → Assertion → Broken Record",
+      description: "This sequence combines three assertive techniques in a fixed three-step order, applied to the same situation:\n\nStep 1 — Fogging: agree calmly with what might be true in the criticism, without defending or explaining.\n\nStep 2 — Negative Assertion: own what is actually true about yourself, briefly and without over-apologising.\n\nStep 3 — Broken Record: if the other person keeps pushing after that, calmly repeat your position without adding new arguments.\n\nTogether these three steps absorb the criticism (Fogging), resolve it honestly (Negative Assertion), and hold firm if pressure continues (Broken Record).",
       inputs: [
         {
           situation: "A friend wants to borrow money — you have already said no",
