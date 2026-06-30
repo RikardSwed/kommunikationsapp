@@ -1,7 +1,7 @@
 // app.js — All application logic for Communication Trainer
 // Depends on: data.js and multiStepData.js (must be loaded first)
 
-const VERSION = 'v1.9.5';
+const VERSION = 'v1.9.6';
 
 // ─── SCREENS ──────────────────────────────────────────────────────────────────
 const homeScreen     = document.getElementById('homeScreen');
@@ -358,7 +358,13 @@ function memOpenInfo() {
   if (memInfoOpen) { memCloseInfo(); return; }
   memInfoOpen = true;
   const name = memCurrentStrategy().name;
-  const src  = (collections[activeCollectionKey] || []).find(s => s.name === name);
+  let src = (collections[activeCollectionKey] || []).find(s => s.name === name);
+  if (!src && name.startsWith('Challenge: ')) {
+    const challName = name.replace('Challenge: ', '');
+    src = (challengesCollections[activeCollectionKey] || []).find(c =>
+      c.name === challName || c.name.includes(challName) || challName.includes(c.name)
+    );
+  }
   document.getElementById('memCardInfoText').textContent = src ? src.description : 'No description available.';
   document.getElementById('memCardInfo').classList.add('visible');
 }
