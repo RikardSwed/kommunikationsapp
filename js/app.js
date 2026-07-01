@@ -1467,6 +1467,185 @@ feedbackExportBtn.addEventListener('click', () => {
 applyFeedbackMode();
 applyInputCounterVisibility();
 
+// ─── PROGRESS BAR ──────────────────────────────────────────────────────────────
+
+(function initProgressBar() {
+  const PB_KEY = 'showProgressBar';
+  const toggle = document.getElementById('showProgressBar');
+
+  // ─ Apply / read setting ────────────────────────────────────────────
+  function pbEnabled() { return localStorage.getItem(PB_KEY) === 'true'; }
+
+  function applyPb() {
+    document.body.classList.toggle('pb-enabled', pbEnabled());
+    if (toggle) toggle.checked = pbEnabled();
+  }
+
+  if (toggle) {
+    toggle.addEventListener('change', () => {
+      localStorage.setItem(PB_KEY, toggle.checked);
+      applyPb();
+    });
+  }
+
+  applyPb();
+
+  // ─ Update fill on a divider ────────────────────────────────────────
+  // current = 0-based index, total = total items
+  window.pbUpdate = function(dividerEl, current, total) {
+    if (!dividerEl) return;
+    const pct = total > 1 ? (current / (total - 1)) * 100 : 100;
+    dividerEl.style.setProperty('--pb-fill', pct.toFixed(2));
+  };
+
+  // ─ Jump on click/touch ─────────────────────────────────────────────
+  window.pbBindClick = function(dividerEl, total, jumpFn, isPlaying) {
+    if (!dividerEl) return;
+    function handleSeek(clientX) {
+      if (!pbEnabled()) return;
+      if (typeof isPlaying === 'function' && isPlaying()) return;
+      const rect = dividerEl.getBoundingClientRect();
+      const ratio = Math.max(0, Math.min(1, (clientX - rect.left) / rect.width));
+      const idx = Math.round(ratio * (total() - 1));
+      jumpFn(idx);
+    }
+    dividerEl.addEventListener('click', e => handleSeek(e.clientX));
+    dividerEl.addEventListener('touchend', e => {
+      e.preventDefault();
+      handleSeek(e.changedTouches[0].clientX);
+    }, { passive: false });
+  };
+
+})();
+
+// ─ Hook pbUpdate into each render function ─────────────────────────────
+
+// Single Strategy
+const _pbDivSingle = document.querySelector('#trainingScreen .divider');
+const _origRenderSingle = window.render;
+window.render = function() {
+  _origRenderSingle();
+  if (window.pbUpdate) pbUpdate(_pbDivSingle, stratIdx, strategies.length);
+};
+pbBindClick(_pbDivSingle, () => strategies.length, idx => { stratIdx = idx; inputIdx = 0; flip(false, false); render(); });
+
+// Memorize
+const _pbDivMem = document.querySelector('#memScreen .divider');
+const _origMemRenderPb = window.memRender;
+window.memRender = function() {
+  _origMemRenderPb();
+  if (window.pbUpdate) pbUpdate(_pbDivMem, memStratIdx, memStrategies.length);
+};
+pbBindClick(_pbDivMem, () => memStrategies.length, idx => { memStratIdx = idx; memCardIdx = 0; memFlipFn(false, false); memRender(); });
+
+// Multiple Steps
+const _pbDivMs = document.querySelector('#msScreen .divider');
+const _origMsRenderPb = msRender;
+window.msRender = function() {
+  _origMsRenderPb();
+  if (window.pbUpdate) pbUpdate(_pbDivMs, msStratIdx, msStrategies.length);
+};
+pbBindClick(_pbDivMs, () => msStrategies.length, idx => { msStratIdx = idx; msInputIdx = 0; msStepIdx = 0; msFlip(false, false); msRender(); });
+
+// Flow / Sequences
+const _pbDivFlow = document.querySelector('#flowScreen .divider');
+const _origFlowRenderPb = window.flowRender;
+window.flowRender = function() {
+  _origFlowRenderPb();
+  if (window.pbUpdate) pbUpdate(_pbDivFlow, flowComboIdx, flowStrategies.length);
+};
+pbBindClick(_pbDivFlow, () => flowStrategies.length, idx => { flowComboIdx = idx; flowCardIdx = 0; flowFlipFn(false, false); flowRender(); });
+
+// Guided
+const _pbDivGuided = document.querySelector('#guidedScreen .divider');
+const _origGuidedRenderPb = guidedRender;
+window.guidedRender = function() {
+  _origGuidedRenderPb();
+  if (window.pbUpdate) pbUpdate(_pbDivGuided, guidedComboIdx, guidedStrategies.length);
+};
+pbBindClick(_pbDivGuided, () => guidedStrategies.length, idx => { guidedComboIdx = idx; guidedInputIdx = 0; guidedStepIdx = 0; guidedFlipFn(false, false); guidedRender(); });
+
+// Challenges
+const _pbDivChall = document.querySelector('#challScreen .divider');
+const _origChallRenderPb = challRender;
+window.challRender = function() {
+  _origChallRenderPb();
+  if (window.pbUpdate) pbUpdate(_pbDivChall, challIdx, challChallenges.length);
+};
+pbBindClick(_pbDivChall, () => challChallenges.length, idx => { challIdx = idx; challInputIdx = 0; challFlipFn(false, false); challRender(); });
+
+// Mindset
+const _pbDivMind = document.querySelector('#mindScreen .divider');
+const _origMindRenderPb = mindRender;
+window.mindRender = function() {
+  _origMindRenderPb();
+  if (window.pbUpdate) pbUpdate(_pbDivMind, mindIdx, mindStrategies.length);
+};
+pbBindClick(_pbDivMind, () => mindStrategies.length, idx => { mindIdx = idx; mindInputIdx = 0; mindFlipFn(false, false); mindRender(); });
+
+// Collections
+const _pbDivColl = document.querySelector('#collScreen .divider');
+const _origCollRenderPb = collRender;
+window.collRender = function() {
+  _origCollRenderPb();
+  if (window.pbUpdate) pbUpdate(_pbDivColl, collIdx, collCollections.length);
+};
+pbBindClick(_pbDivColl, () => collCollections.length, idx => { collIdx = idx; collInputIdx = 0; collFlipFn(false, false); collRender(); });
+
+// Handsfree: Single Strategy
+const _pbDivHf = document.querySelector('#hfScreen .divider');
+const _origHfRenderPb = hfRender;
+window.hfRender = function() {
+  _origHfRenderPb();
+  if (window.pbUpdate) pbUpdate(_pbDivHf, stratIdx, strategies.length);
+};
+pbBindClick(_pbDivHf, () => strategies.length, idx => { if (hfPlaying) return; stratIdx = idx; inputIdx = 0; hfRender(); }, () => hfPlaying);
+
+// Handsfree: Memorize
+const _pbDivHfMem = document.querySelector('#hfMemScreen .divider');
+const _origHfMemRenderPb = hfMemRender;
+window.hfMemRender = function() {
+  _origHfMemRenderPb();
+  if (window.pbUpdate) pbUpdate(_pbDivHfMem, memStratIdx, memStrategies.length);
+};
+pbBindClick(_pbDivHfMem, () => memStrategies.length, idx => { if (hfMemPlaying) return; memStratIdx = idx; memCardIdx = 0; hfMemRender(); }, () => hfMemPlaying);
+
+// Handsfree: Challenges
+const _pbDivHfChall = document.querySelector('#hfChallScreen .divider');
+const _origHfChallRenderManualPb = hfChallRenderManual;
+window.hfChallRenderManual = function() {
+  _origHfChallRenderManualPb();
+  if (window.pbUpdate) pbUpdate(_pbDivHfChall, challIdx, challChallenges.length);
+};
+pbBindClick(_pbDivHfChall, () => challChallenges.length, idx => { if (hfChallPlaying) return; challIdx = idx; challInputIdx = 0; hfChallRenderManual(); }, () => hfChallPlaying);
+
+// Handsfree: Sequences
+const _pbDivHfFlow = document.querySelector('#hfFlowScreen .divider');
+const _origHfFlowRenderManualPb = hfFlowRenderManual;
+window.hfFlowRenderManual = function() {
+  _origHfFlowRenderManualPb();
+  if (window.pbUpdate) pbUpdate(_pbDivHfFlow, flowComboIdx, flowStrategies.length);
+};
+pbBindClick(_pbDivHfFlow, () => flowStrategies.length, idx => { if (hfFlowPlaying) return; flowComboIdx = idx; flowCardIdx = 0; hfFlowRenderManual(); }, () => hfFlowPlaying);
+
+// Handsfree: Mindset
+const _pbDivHfMind = document.querySelector('#hfMindScreen .divider');
+const _origHfMindRenderManualPb = hfMindRenderManual;
+window.hfMindRenderManual = function() {
+  _origHfMindRenderManualPb();
+  if (window.pbUpdate) pbUpdate(_pbDivHfMind, mindIdx, mindStrategies.length);
+};
+pbBindClick(_pbDivHfMind, () => mindStrategies.length, idx => { if (hfMindPlaying) return; mindIdx = idx; mindInputIdx = 0; hfMindRenderManual(); }, () => hfMindPlaying);
+
+// Handsfree: Collections
+const _pbDivHfColl = document.querySelector('#hfCollScreen .divider');
+const _origHfCollRenderManualPb = hfCollRenderManual;
+window.hfCollRenderManual = function() {
+  _origHfCollRenderManualPb();
+  if (window.pbUpdate) pbUpdate(_pbDivHfColl, collIdx, collCollections.length);
+};
+pbBindClick(_pbDivHfColl, () => collCollections.length, idx => { if (hfCollPlaying) return; collIdx = idx; collInputIdx = 0; hfCollRenderManual(); }, () => hfCollPlaying);
+
 // ── FEEDBACK STORAGE KEYS ─────────────────────────────────────────────────────
 // Key format: fb_{collection}_{screen}_{comboOrStratId}_{cardId}_{side}
 
