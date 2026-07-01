@@ -160,67 +160,105 @@
     <div class="mode-subtitle">Choose a study mode</div>
   </div>
   <div class="mode-list">
-    <div class="mode-card" id="modeFlashcard">
-      <div class="mode-icon">▣</div>
-      <div class="mode-info"><div class="mode-name">Single Strategy</div><div class="mode-desc">Study one strategy at a time with example inputs</div></div>
-      <div class="mode-arrow">›</div>
+
+    <!-- HANDSFREE TOGGLE -->
+    <div class="mode-hf-toggle" id="modeHfToggle">
+      <span class="mode-hf-toggle-icon" id="modeHfToggleIcon">🎧</span>
+      <span class="mode-hf-toggle-label" id="modeHfToggleLabel">Switch to Handsfree</span>
     </div>
-    <div class="mode-card" id="modeCollections">
-      <div class="mode-icon">⧆</div>
-      <div class="mode-info"><div class="mode-name">Collections</div><div class="mode-desc">Train across a themed collection of strategies</div></div>
-      <div class="mode-arrow">›</div>
+
+    <!-- FLIP CARDS (front = standard, back = handsfree) -->
+    <div class="mode-flip-card" id="modeFlip1">
+      <div class="mode-flip-inner">
+        <div class="mode-card mode-flip-front" id="modeFlashcard">
+          <div class="mode-icon">▣</div>
+          <div class="mode-info"><div class="mode-name">Single Strategy</div><div class="mode-desc">Study one strategy at a time with example inputs</div></div>
+          <div class="mode-arrow">›</div>
+        </div>
+        <div class="mode-card mode-flip-back" id="modeHandsfree">
+          <div class="mode-icon">🎧</div>
+          <div class="mode-info"><div class="mode-name">Handsfree: Single Strategy</div><div class="mode-desc">Listen and practise with your phone in your pocket</div></div>
+          <div class="mode-arrow">›</div>
+        </div>
+      </div>
     </div>
-    <div class="mode-card" id="modeFlow">
-      <div class="mode-icon">⇉</div>
-      <div class="mode-info"><div class="mode-name">Sequences</div><div class="mode-desc">Steps and situations in one seamless sequence</div></div>
-      <div class="mode-arrow">›</div>
+
+    <div class="mode-flip-card" id="modeFlip2">
+      <div class="mode-flip-inner">
+        <div class="mode-card mode-flip-front" id="modeCollections">
+          <div class="mode-icon">⧆</div>
+          <div class="mode-info"><div class="mode-name">Collections</div><div class="mode-desc">Train across a themed collection of strategies</div></div>
+          <div class="mode-arrow">›</div>
+        </div>
+        <div class="mode-card mode-flip-back" id="modeHandsfreeCollections">
+          <div class="mode-icon">🎧</div>
+          <div class="mode-info"><div class="mode-name">Handsfree: Collections</div><div class="mode-desc">Listen and train collections hands-free</div></div>
+          <div class="mode-arrow">›</div>
+        </div>
+      </div>
     </div>
-    <div class="mode-card" id="modeChallenges">
-      <div class="mode-icon">⚡</div>
-      <div class="mode-info"><div class="mode-name">Challenges</div><div class="mode-desc">Train on real situations, comments and feelings</div></div>
-      <div class="mode-arrow">›</div>
+
+    <div class="mode-flip-card" id="modeFlip3">
+      <div class="mode-flip-inner">
+        <div class="mode-card mode-flip-front" id="modeFlow">
+          <div class="mode-icon">⇉</div>
+          <div class="mode-info"><div class="mode-name">Sequences</div><div class="mode-desc">Steps and situations in one seamless sequence</div></div>
+          <div class="mode-arrow">›</div>
+        </div>
+        <div class="mode-card mode-flip-back" id="modeHandsfreeSequences">
+          <div class="mode-icon">🎧</div>
+          <div class="mode-info"><div class="mode-name">Handsfree: Sequences</div><div class="mode-desc">Listen and practise sequences hands-free</div></div>
+          <div class="mode-arrow">›</div>
+        </div>
+      </div>
     </div>
-    <div class="mode-card" id="modeMindset">
-      <div class="mode-icon">✨</div>
-      <div class="mode-info"><div class="mode-name">Mindset</div><div class="mode-desc">Train the thinking patterns behind each strategy</div></div>
-      <div class="mode-arrow">›</div>
+
+    <div class="mode-flip-card" id="modeFlip4">
+      <div class="mode-flip-inner">
+        <div class="mode-card mode-flip-front" id="modeChallenges">
+          <div class="mode-icon">⚡</div>
+          <div class="mode-info"><div class="mode-name">Challenges</div><div class="mode-desc">Train on real situations, comments and feelings</div></div>
+          <div class="mode-arrow">›</div>
+        </div>
+        <div class="mode-card mode-flip-back" id="modeHandsfreeChallenges">
+          <div class="mode-icon">🎧</div>
+          <div class="mode-info"><div class="mode-name">Handsfree: Challenges</div><div class="mode-desc">Listen and respond to challenges hands-free</div></div>
+          <div class="mode-arrow">›</div>
+        </div>
+      </div>
     </div>
-    <div class="mode-card" id="modeMemorize">
-      <div class="mode-icon">◎</div>
-      <div class="mode-info"><div class="mode-name">Memorize</div><div class="mode-desc">Learn strategies and challenges by heart</div></div>
-      <div class="mode-arrow">›</div>
+
+    <div class="mode-flip-card" id="modeFlip5">
+      <div class="mode-flip-inner">
+        <div class="mode-card mode-flip-front" id="modeMindset">
+          <div class="mode-icon">✨</div>
+          <div class="mode-info"><div class="mode-name">Mindset</div><div class="mode-desc">Train the thinking patterns behind each strategy</div></div>
+          <div class="mode-arrow">›</div>
+        </div>
+        <div class="mode-card mode-flip-back" id="modeHandsfreeMindset">
+          <div class="mode-icon">🎧</div>
+          <div class="mode-info"><div class="mode-name">Handsfree: Mindset</div><div class="mode-desc">Listen and absorb mindset strategies hands-free</div></div>
+          <div class="mode-arrow">›</div>
+        </div>
+      </div>
     </div>
-    <div class="mode-card" id="modeHandsfree">
-      <div class="mode-icon">🎧</div>
-      <div class="mode-info"><div class="mode-name">Handsfree: Single Strategy</div><div class="mode-desc">Listen and practise with your phone in your pocket</div></div>
-      <div class="mode-arrow">›</div>
+
+    <div class="mode-flip-card" id="modeFlip6">
+      <div class="mode-flip-inner">
+        <div class="mode-card mode-flip-front" id="modeMemorize">
+          <div class="mode-icon">◎</div>
+          <div class="mode-info"><div class="mode-name">Memorize</div><div class="mode-desc">Learn strategies and challenges by heart</div></div>
+          <div class="mode-arrow">›</div>
+        </div>
+        <div class="mode-card mode-flip-back" id="modeHandsfreeMemorize">
+          <div class="mode-icon">🎧</div>
+          <div class="mode-info"><div class="mode-name">Handsfree: Memorize</div><div class="mode-desc">Listen to theory cards with automatic playback</div></div>
+          <div class="mode-arrow">›</div>
+        </div>
+      </div>
     </div>
-    <div class="mode-card" id="modeHandsfreeCollections">
-      <div class="mode-icon">🎧</div>
-      <div class="mode-info"><div class="mode-name">Handsfree: Collections</div><div class="mode-desc">Listen and train collections hands-free</div></div>
-      <div class="mode-arrow">›</div>
-    </div>
-    <div class="mode-card" id="modeHandsfreeSequences">
-      <div class="mode-icon">🎧</div>
-      <div class="mode-info"><div class="mode-name">Handsfree: Sequences</div><div class="mode-desc">Listen and practise sequences hands-free</div></div>
-      <div class="mode-arrow">›</div>
-    </div>
-    <div class="mode-card" id="modeHandsfreeChallenges">
-      <div class="mode-icon">🎧</div>
-      <div class="mode-info"><div class="mode-name">Handsfree: Challenges</div><div class="mode-desc">Listen and respond to challenges hands-free</div></div>
-      <div class="mode-arrow">›</div>
-    </div>
-    <div class="mode-card" id="modeHandsfreeMindset">
-      <div class="mode-icon">🎧</div>
-      <div class="mode-info"><div class="mode-name">Handsfree: Mindset</div><div class="mode-desc">Listen and absorb mindset strategies hands-free</div></div>
-      <div class="mode-arrow">›</div>
-    </div>
-    <div class="mode-card" id="modeHandsfreeMemorize">
-      <div class="mode-icon">🎧</div>
-      <div class="mode-info"><div class="mode-name">Handsfree: Memorize</div><div class="mode-desc">Listen to theory cards with automatic playback</div></div>
-      <div class="mode-arrow">›</div>
-    </div>
-    <!-- BETA SECTION -->
+
+    <!-- BETA SECTION (unchanged) -->
     <div class="mode-beta-toggle" id="modeBetaToggle">
       <div class="mode-beta-label">Beta</div>
       <div class="mode-beta-arrow" id="modeBetaArrow">›</div>
@@ -238,6 +276,7 @@
       </div>
     </div>
     <!-- END BETA SECTION -->
+
   </div>
 </div>
 
