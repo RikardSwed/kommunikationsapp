@@ -1,7 +1,7 @@
 // app.js — All application logic for Communication Trainer
 // Depends on: data.js and multiStepData.js (must be loaded first)
 
-const VERSION = 'v1.11.1';
+const VERSION = 'v1.11.2';
 
 // ─── SCREENS ──────────────────────────────────────────────────────────────────
 const homeScreen     = document.getElementById('homeScreen');
@@ -1368,8 +1368,11 @@ homeSettingsBtn.addEventListener('click', () => {
 });
 homeSettingsBtn.addEventListener('touchend', e => { e.preventDefault(); homeSettingsBtn.click(); }, { passive: false });
 
-document.getElementById('homeSettingsBackBtn').addEventListener('click', navFromSettings);
-document.getElementById('homeSettingsBackBtn').addEventListener('touchend', e => { e.preventDefault(); navFromSettings(); }, { passive: false });
+const homeSettingsBackBtn = document.getElementById('homeSettingsBackBtn');
+if (homeSettingsBackBtn) {
+  homeSettingsBackBtn.addEventListener('click', navFromSettings);
+  homeSettingsBackBtn.addEventListener('touchend', e => { e.preventDefault(); navFromSettings(); }, { passive: false });
+}
 
 // Feedback toggle
 feedbackModeToggle.addEventListener('change', () => {
@@ -2847,12 +2850,13 @@ const TAB_SCREENS = {
 
 const bottomNav = document.getElementById('bottomNav');
 
-function showBottomNav() { bottomNav.style.display = 'flex'; }
-function hideBottomNav() { bottomNav.style.display = 'none'; }
+function showBottomNav() { if (bottomNav) bottomNav.style.display = 'flex'; }
+function hideBottomNav() { if (bottomNav) bottomNav.style.display = 'none'; }
 
 function showTab(tab) {
-  Object.values(TAB_SCREENS).forEach(id => { document.getElementById(id).style.display = 'none'; });
-  document.getElementById(TAB_SCREENS[tab]).style.display = 'flex';
+  Object.values(TAB_SCREENS).forEach(id => { const el = document.getElementById(id); if (el) el.style.display = 'none'; });
+  const target = document.getElementById(TAB_SCREENS[tab]);
+  if (target) target.style.display = 'flex';
   document.querySelectorAll('.nav-tab').forEach(btn => btn.classList.toggle('active', btn.dataset.tab === tab));
   showBottomNav();
   closeInfo();
@@ -2873,4 +2877,4 @@ if (dashboardSettingsBtn) {
 }
 
 // Land on the Home tab by default
-showTab('dashboard');
+if (document.getElementById('dashboardScreen')) showTab('dashboard');
