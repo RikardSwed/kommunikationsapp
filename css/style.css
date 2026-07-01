@@ -894,7 +894,125 @@ body {
   font-weight: 700;
 }
 
-/* ─── LIBRARY SUB-NAV ─────────────────────────────────────────────────────────────── */
+/* ─── DASHBOARD SEARCH ───────────────────────────────────────────────────── */
+
+.dashboard-screen {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto;
+  background: #f0f2f5;
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  overflow-y: auto;
+}
+
+.dash-topbar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 0 0;
+  justify-content: flex-start !important;
+}
+
+.dash-search-bar {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  background: #e4e4e9;
+  border-radius: 12px;
+  padding: 0 10px;
+  height: 40px;
+  gap: 6px;
+}
+
+.dash-search-icon {
+  font-size: 15px;
+  color: #999;
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+.dash-search-input {
+  flex: 1;
+  border: none;
+  background: none;
+  font-size: 16px;
+  color: #1c1c1e;
+  outline: none;
+  padding: 0;
+  min-width: 0;
+}
+
+.dash-search-input::placeholder { color: #aaa; }
+
+.dash-search-clear {
+  flex-shrink: 0;
+  background: #bbb;
+  border: none;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  font-size: 11px;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  line-height: 1;
+}
+
+.dash-cancel-btn {
+  flex-shrink: 0;
+  font-size: 15px !important;
+  font-weight: 600;
+  color: #007aff !important;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0 2px;
+  white-space: nowrap;
+}
+
+.dash-section-label {
+  font-size: 12px;
+  font-weight: 700;
+  color: #999;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  margin: 24px 0 10px;
+}
+
+.dash-recent-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid #e8e8ed;
+  cursor: pointer;
+  color: #1c1c1e;
+  font-size: 15px;
+}
+
+.dash-recent-item:last-child { border-bottom: none; }
+
+.dash-recent-icon {
+  font-size: 14px;
+  color: #bbb;
+  flex-shrink: 0;
+}
+
+.dash-noresults {
+  text-align: center;
+  color: #aaa;
+  font-size: 15px;
+  padding: 40px 0;
+}
+
+
 
 .library-topbar {
   justify-content: space-between !important;
