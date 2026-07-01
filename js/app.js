@@ -22,6 +22,8 @@ function hideAll() {
 }
 
 function navToHome() {
+  // Hide the Library screen immediately so it can't flash during the slide-out
+  homeScreen.style.display = 'none';
   modeScreen.classList.remove('slide-in-right', 'slide-out-right');
   void modeScreen.offsetWidth;
   modeScreen.classList.add('slide-out-right');
