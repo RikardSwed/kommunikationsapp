@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
   <title>Communication Trainer</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style.css?v=1111" />
 </head>
 <body>
 
@@ -567,7 +567,7 @@
       <label>Show hints</label>
       <label class="toggle"><input type="checkbox" id="showHints" checked /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.11.0</div>
+    <div class="settings-version">v1.11.1</div>
     <button class="settings-close" id="settingsClose">Done</button>
   </div>
 </div>
@@ -640,7 +640,7 @@
       <label>Loop current strategy</label>
       <label class="toggle"><input type="checkbox" id="hfLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.11.0</div>
+    <div class="settings-version">v1.11.1</div>
     <button class="settings-close" id="hfSettingsClose">Done</button>
   </div>
 </div>
@@ -709,7 +709,7 @@
       <label>Loop current strategy</label>
       <label class="toggle"><input type="checkbox" id="hfMemLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.11.0</div>
+    <div class="settings-version">v1.11.1</div>
     <button class="settings-close" id="hfMemSettingsClose">Done</button>
   </div>
 </div>
@@ -778,7 +778,7 @@
       <label>Loop current category</label>
       <label class="toggle"><input type="checkbox" id="hfChallLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.11.0</div>
+    <div class="settings-version">v1.11.1</div>
     <button class="settings-close" id="hfChallSettingsClose">Done</button>
   </div>
 </div>
@@ -836,7 +836,7 @@
       <label>Loop current combo</label>
       <label class="toggle"><input type="checkbox" id="hfFlowLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.11.0</div>
+    <div class="settings-version">v1.11.1</div>
     <button class="settings-close" id="hfFlowSettingsClose">Done</button>
   </div>
 </div>
@@ -905,7 +905,7 @@
       <label>Loop current mindset</label>
       <label class="toggle"><input type="checkbox" id="hfMindLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.11.0</div>
+    <div class="settings-version">v1.11.1</div>
     <button class="settings-close" id="hfMindSettingsClose">Done</button>
   </div>
 </div>
@@ -974,7 +974,7 @@
       <label>Loop current collection</label>
       <label class="toggle"><input type="checkbox" id="hfCollLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.11.0</div>
+    <div class="settings-version">v1.11.1</div>
     <button class="settings-close" id="hfCollSettingsClose">Done</button>
   </div>
 </div>
@@ -1069,10 +1069,13 @@
   </div>
 </div>
 
-<!-- SETTINGS: HOME -->
-<div class="settings-overlay" id="homeSettingsOverlay">
-  <div class="settings-panel">
-    <div class="settings-title">Developer Settings</div>
+<!-- SETTINGS: HOME (full-screen, slides in from the right) -->
+<div class="settings-screen" id="homeSettingsScreen" style="display:none;">
+  <div class="settings-screen-topbar">
+    <button class="topbar-btn" id="homeSettingsBackBtn">←</button>
+  </div>
+  <div class="settings-screen-title">Developer Settings</div>
+  <div class="settings-screen-body">
     <div class="settings-row">
       <label>Feedback mode</label>
       <label class="toggle"><input type="checkbox" id="feedbackModeToggle" /><span class="toggle-slider"></span></label>
@@ -1081,8 +1084,7 @@
       <label style="font-size:13px; color:#888;">Export all ratings as JSON</label>
       <button id="feedbackExportBtn" style="font-size:13px; color:#555; background:#f0f0f0; border:1px solid #ddd; border-radius:8px; padding:6px 12px; cursor:pointer;">Export</button>
     </div>
-    <div class="settings-version">v1.11.0</div>
-    <button class="settings-close" id="homeSettingsClose">Done</button>
+    <div class="settings-version">v1.11.1</div>
   </div>
 </div>
 
@@ -1102,10 +1104,10 @@
   </button>
 </div>
 
-<script src="js/data.js?v=1110"></script>
-<script src="js/multiStepData.js?v=1110"></script>
-<script src="js/memorizeData.js?v=1110"></script>
-<script src="js/app.js?v=1110"></script>
+<script src="js/data.js?v=1111"></script>
+<script src="js/multiStepData.js?v=1111"></script>
+<script src="js/memorizeData.js?v=1111"></script>
+<script src="js/app.js?v=1111"></script>
 
 </body>
 </html>
