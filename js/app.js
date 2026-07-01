@@ -3112,3 +3112,13 @@ function showModeScreen(key, label) {
 
 // Land on the Home tab by default
 if (document.getElementById('dashboardScreen')) showTab('dashboard');
+
+// ─── SPLASH SCREEN ────────────────────────────────────────────────────
+(function initSplash() {
+  const splash = document.getElementById('splashScreen');
+  if (!splash) return;
+  setTimeout(() => {
+    splash.classList.add('hidden');
+    setTimeout(() => { splash.style.display = 'none'; }, 500);
+  }, 1500);
+})();
