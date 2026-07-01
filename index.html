@@ -4,23 +4,58 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
   <title>Communication Trainer</title>
-  <link rel="stylesheet" href="css/style.css?v=1130" />
+  <link rel="stylesheet" href="css/style.css?v=1140" />
 </head>
 <body>
 
 <!-- HOME (DASHBOARD) SCREEN -->
 <div class="dashboard-screen" id="dashboardScreen">
-  <div class="home-topbar">
-    <button class="topbar-btn" id="dashboardSettingsBtn" title="Settings">⚙️</button>
+
+  <!-- Topbar: search + gear/cancel -->
+  <div class="home-topbar dash-topbar">
+    <div class="dash-search-bar" id="dashSearchBar">
+      <span class="dash-search-icon">&#x1F50D;</span>
+      <input class="dash-search-input" id="dashSearchInput" type="text" placeholder="Search" autocomplete="off" autocorrect="off" spellcheck="false" />
+      <button class="dash-search-clear" id="dashSearchClear" style="display:none;">&#x2715;</button>
+    </div>
+    <button class="topbar-btn dash-cancel-btn" id="dashboardSettingsBtn" title="Settings">⚙️</button>
   </div>
-  <div class="home-header">
-    <div class="home-title">Welcome back</div>
-    <div class="home-subtitle">Continue where you left off</div>
+
+  <!-- Default view (shown when not searching) -->
+  <div id="dashDefaultView">
+    <div class="home-header">
+      <div class="home-title" id="dashWelcomeTitle">Welcome</div>
+      <div class="home-subtitle" id="dashWelcomeSubtitle">Start training to track your progress</div>
+    </div>
+
+    <!-- Recent searches -->
+    <div id="dashRecentSection" style="display:none;">
+      <div class="dash-section-label">Recent searches</div>
+      <div id="dashRecentList"></div>
+    </div>
+
+    <!-- Last trained pack -->
+    <div id="dashLastPackSection" style="display:none;">
+      <div class="dash-section-label">Continue</div>
+      <div class="collection-card" id="dashLastPackCard">
+        <div>
+          <div class="collection-name" id="dashLastPackName"></div>
+          <div class="collection-meta">Last trained</div>
+        </div>
+        <div class="collection-arrow">›</div>
+      </div>
+    </div>
   </div>
-  <div class="placeholder-block">
-    <div class="placeholder-title">Nothing here yet</div>
-    <div class="placeholder-text">Soon you'll be able to jump straight back into your last session.</div>
+
+  <!-- Search results view (shown when searching) -->
+  <div id="dashSearchView" style="display:none;">
+    <div class="dash-section-label" style="margin-top:16px;">Results</div>
+    <div id="dashSearchResults"></div>
+    <div id="dashNoResults" style="display:none;">
+      <div class="dash-noresults">No packs found</div>
+    </div>
   </div>
+
 </div>
 
 <!-- PROGRESS SCREEN -->
@@ -613,7 +648,7 @@
       <label>Show input counter</label>
       <label class="toggle"><input type="checkbox" id="showInputCounter" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.12.0</div>
+    <div class="settings-version">v1.14.0</div>
     <button class="settings-close" id="settingsClose">Done</button>
   </div>
 </div>
@@ -686,7 +721,7 @@
       <label>Loop current strategy</label>
       <label class="toggle"><input type="checkbox" id="hfLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.12.0</div>
+    <div class="settings-version">v1.14.0</div>
     <button class="settings-close" id="hfSettingsClose">Done</button>
   </div>
 </div>
@@ -755,7 +790,7 @@
       <label>Loop current strategy</label>
       <label class="toggle"><input type="checkbox" id="hfMemLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.12.0</div>
+    <div class="settings-version">v1.14.0</div>
     <button class="settings-close" id="hfMemSettingsClose">Done</button>
   </div>
 </div>
@@ -824,7 +859,7 @@
       <label>Loop current category</label>
       <label class="toggle"><input type="checkbox" id="hfChallLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.12.0</div>
+    <div class="settings-version">v1.14.0</div>
     <button class="settings-close" id="hfChallSettingsClose">Done</button>
   </div>
 </div>
@@ -882,7 +917,7 @@
       <label>Loop current combo</label>
       <label class="toggle"><input type="checkbox" id="hfFlowLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.12.0</div>
+    <div class="settings-version">v1.14.0</div>
     <button class="settings-close" id="hfFlowSettingsClose">Done</button>
   </div>
 </div>
@@ -951,7 +986,7 @@
       <label>Loop current mindset</label>
       <label class="toggle"><input type="checkbox" id="hfMindLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.12.0</div>
+    <div class="settings-version">v1.14.0</div>
     <button class="settings-close" id="hfMindSettingsClose">Done</button>
   </div>
 </div>
@@ -1020,7 +1055,7 @@
       <label>Loop current collection</label>
       <label class="toggle"><input type="checkbox" id="hfCollLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.12.0</div>
+    <div class="settings-version">v1.14.0</div>
     <button class="settings-close" id="hfCollSettingsClose">Done</button>
   </div>
 </div>
@@ -1142,7 +1177,7 @@
       <label style="font-size:13px; color:#888;">Export all ratings as JSON</label>
       <button id="feedbackExportBtn" style="font-size:13px; color:#555; background:#f0f0f0; border:1px solid #ddd; border-radius:8px; padding:6px 12px; cursor:pointer;">Export</button>
     </div>
-    <div class="settings-version">v1.13.0</div>
+    <div class="settings-version">v1.14.0</div>
   </div>
 </div>
 
@@ -1162,10 +1197,10 @@
   </button>
 </div>
 
-<script src="js/data.js?v=1130"></script>
-<script src="js/multiStepData.js?v=1130"></script>
-<script src="js/memorizeData.js?v=1130"></script>
-<script src="js/app.js?v=1130"></script>
+<script src="js/data.js?v=1140"></script>
+<script src="js/multiStepData.js?v=1140"></script>
+<script src="js/memorizeData.js?v=1140"></script>
+<script src="js/app.js?v=1140"></script>
 
 </body>
 </html>
