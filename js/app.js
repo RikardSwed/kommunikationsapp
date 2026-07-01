@@ -210,6 +210,44 @@ function toggleBeta() {
 document.getElementById('modeBetaToggle').addEventListener('click', toggleBeta);
 document.getElementById('modeBetaToggle').addEventListener('touchend', e => { e.preventDefault(); toggleBeta(); }, { passive: false });
 
+// Handsfree flip toggle
+(function initHfToggle() {
+  const toggle = document.getElementById('modeHfToggle');
+  const label  = document.getElementById('modeHfToggleLabel');
+  const inners = document.querySelectorAll('.mode-flip-inner');
+  let hfActive = false;
+
+  function flip() {
+    hfActive = !hfActive;
+    inners.forEach(el => el.classList.toggle('flipped', hfActive));
+    toggle.classList.toggle('active', hfActive);
+    label.textContent = hfActive ? 'Switch to Standard' : 'Switch to Handsfree';
+  }
+
+  toggle.addEventListener('click', flip);
+  toggle.addEventListener('touchend', e => { e.preventDefault(); flip(); }, { passive: false });
+
+  // Reset to standard whenever mode screen is opened
+  const modeBackBtn = document.getElementById('modeBackBtn');
+  const origShowMode = showModeScreen;
+  // Patch showModeScreen to reset flip state on open
+  const _resetHf = () => {
+    if (hfActive) {
+      hfActive = false;
+      inners.forEach(el => el.classList.remove('flipped'));
+      toggle.classList.remove('active');
+      label.textContent = 'Switch to Handsfree';
+    }
+  };
+  // Hook into showModeScreen via event on the screen becoming visible
+  const observer = new MutationObserver(() => {
+    const ms = document.getElementById('modeScreen');
+    if (ms && ms.style.display === 'flex') _resetHf();
+  });
+  const ms = document.getElementById('modeScreen');
+  if (ms) observer.observe(ms, { attributes: true, attributeFilter: ['style'] });
+})();
+
 addModeListener('modeFlashcard', showTraining);
 
 addModeListener('modeMultiStep', showMultiStep);
