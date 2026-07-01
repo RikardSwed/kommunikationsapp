@@ -1,7 +1,7 @@
 // app.js — All application logic for Communication Trainer
 // Depends on: data.js and multiStepData.js (must be loaded first)
 
-const VERSION = 'v1.10.5';
+const VERSION = 'v1.11.0';
 
 // ─── SCREENS ──────────────────────────────────────────────────────────────────
 const homeScreen     = document.getElementById('homeScreen');
@@ -31,6 +31,8 @@ function navToHome() {
     modeScreen.style.display = 'none';
     modeScreen.classList.remove('slide-out-right');
   }, 300);
+  showBottomNav();
+  document.querySelectorAll('.nav-tab').forEach(btn => btn.classList.toggle('active', btn.dataset.tab === 'library'));
 }
 
 function navToMode() {
@@ -40,6 +42,7 @@ function navToMode() {
   modeScreen.classList.remove('slide-in-right', 'slide-out-right');
   void modeScreen.offsetWidth;
   modeScreen.classList.add('slide-in-right');
+  hideBottomNav();
 }
 
 function navToTraining(id) {
@@ -2813,3 +2816,43 @@ function showHandsfreeCollections() {
 
 addModeListener('modeHandsfreeCollections', showHandsfreeCollections);
 TRAINING_SCREENS.push('hfCollScreen');
+
+
+// ─── BOTTOM NAVIGATION ────────────────────────────────────────────────────
+
+const TAB_SCREENS = {
+  dashboard: 'dashboardScreen',
+  library:   'homeScreen',
+  progress:  'progressScreen',
+  upgrade:   'upgradeScreen'
+};
+
+const bottomNav = document.getElementById('bottomNav');
+
+function showBottomNav() { bottomNav.style.display = 'flex'; }
+function hideBottomNav() { bottomNav.style.display = 'none'; }
+
+function showTab(tab) {
+  Object.values(TAB_SCREENS).forEach(id => { document.getElementById(id).style.display = 'none'; });
+  document.getElementById(TAB_SCREENS[tab]).style.display = 'flex';
+  document.querySelectorAll('.nav-tab').forEach(btn => btn.classList.toggle('active', btn.dataset.tab === tab));
+  showBottomNav();
+  closeInfo();
+}
+
+document.querySelectorAll('.nav-tab').forEach(btn => {
+  btn.addEventListener('click', () => showTab(btn.dataset.tab));
+});
+
+// Reuse the Library's Developer Settings overlay for the Home gear icon too
+const dashboardSettingsBtn = document.getElementById('dashboardSettingsBtn');
+if (dashboardSettingsBtn) {
+  dashboardSettingsBtn.addEventListener('click', () => {
+    feedbackModeToggle.checked = feedbackMode;
+    homeSettingsOverlay.classList.add('open');
+  });
+  dashboardSettingsBtn.addEventListener('touchend', e => { e.preventDefault(); dashboardSettingsBtn.click(); }, { passive: false });
+}
+
+// Land on the Home tab by default
+showTab('dashboard');
