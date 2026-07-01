@@ -872,4 +872,27 @@ body {
   flex: 1;
 }
 
+/* ─── SUB-COUNTER (input counter, opt-in) ───────────────────────────── */
+
+.counter-group {
+  display: flex;
+  align-items: center;
+}
+
+.sub-counter,
+.counter-sep {
+  display: none;
+  color: #aaa;
+}
+
+.sub-counter {
+  margin-right: 6px;
+}
+
+.counter-sep {
+  margin-right: 6px;
+  font-weight: 700;
+}
+
+
 
