@@ -237,7 +237,40 @@ body {
 }
 
 .counter { font-size: 15px; font-weight: 600; color: #444; letter-spacing: 0.5px; }
-.divider { height: 2px; background: #dde0e6; }
+.divider {
+  height: 2px;
+  background: #dde0e6;
+}
+
+/* Progress bar mode — activated by .pb-enabled on body */
+body.pb-enabled .divider {
+  height: 4px;
+  background: #e0e0e0;
+  position: relative;
+  cursor: pointer;
+  touch-action: none;
+  border-radius: 2px;
+  margin: 0;
+  transition: height 0.2s;
+}
+
+body.pb-enabled .divider::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: calc(var(--pb-fill, 0) * 1%);
+  background: #888;
+  border-radius: 2px;
+  transition: width 0.2s ease;
+}
+
+/* Larger hit area on touch */
+body.pb-enabled .divider::after {
+  content: '';
+  position: absolute;
+  left: 0; right: 0;
+  top: -10px; bottom: -10px;
+}
 
 .strategy-label {
   text-align: center;
