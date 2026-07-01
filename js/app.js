@@ -3275,6 +3275,8 @@ document.querySelectorAll('.nav-tab').forEach(btn => {
     defaultView.style.display = 'none';
     searchView.style.display  = '';
     searchClear.style.display = searchInput.value ? '' : 'none';
+    renderRecent(); // show recent searches only when entering search mode
+    runSearch(searchInput.value);
   }
 
   function exitSearch(clearInput = true) {
@@ -3285,9 +3287,9 @@ document.querySelectorAll('.nav-tab').forEach(btn => {
     searchClear.style.display = 'none';
     defaultView.style.display = '';
     searchView.style.display  = 'none';
+    if (recentSection) recentSection.style.display = 'none'; // hide recent on exit
     searchInput.blur();
     updateWelcome();
-    renderRecent();
     renderLastPack();
   }
 
@@ -3325,7 +3327,6 @@ document.querySelectorAll('.nav-tab').forEach(btn => {
 
   // ── Init ─────────────────────────────────────────────────────────────────
   updateWelcome();
-  renderRecent();
   renderLastPack();
 
 })();
@@ -3339,6 +3340,8 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
   if (!splash) return;
   setTimeout(() => {
     splash.classList.add('hidden');
+    // Restore app background colour as splash fades
+    document.body.style.background = '#f0f2f5';
     setTimeout(() => { splash.style.display = 'none'; }, 500);
   }, 1500);
 })();
