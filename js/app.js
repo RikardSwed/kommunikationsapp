@@ -1,7 +1,7 @@
 // app.js — All application logic for Communication Trainer
 // Depends on: data.js and multiStepData.js (must be loaded first)
 
-const VERSION = 'v1.12.0';
+const VERSION = 'v1.13.0';
 
 // ─── SCREENS ──────────────────────────────────────────────────────────────────
 const homeScreen     = document.getElementById('homeScreen');
@@ -2855,6 +2855,42 @@ function showHandsfreeCollections() {
 addModeListener('modeHandsfreeCollections', showHandsfreeCollections);
 TRAINING_SCREENS.push('hfCollScreen');
 
+
+// ─── LIBRARY SUB-NAV ────────────────────────────────────────────────────────
+
+const LIB_TABS = {
+  packs:    'libTabPacks',
+  topics:   'libTabTopics',
+  programs: 'libTabPrograms',
+  folders:  'libTabFolders'
+};
+
+let activeLibraryTab = 'packs'; // session default; resets on reload
+
+function showLibraryTab(tab) {
+  if (!LIB_TABS[tab]) return;
+  activeLibraryTab = tab;
+  sessionStorage.setItem('libraryTab', tab);
+  Object.keys(LIB_TABS).forEach(key => {
+    const content = document.getElementById(LIB_TABS[key]);
+    if (content) content.style.display = key === tab ? '' : 'none';
+  });
+  document.querySelectorAll('.library-subnav-btn').forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.libTab === tab);
+  });
+}
+
+document.querySelectorAll('.library-subnav-btn').forEach(btn => {
+  if (btn) btn.addEventListener('click', () => showLibraryTab(btn.dataset.libTab));
+});
+
+// Restore last tab within this session (resets to 'packs' on page reload)
+const _savedLibTab = sessionStorage.getItem('libraryTab');
+if (_savedLibTab && LIB_TABS[_savedLibTab]) {
+  showLibraryTab(_savedLibTab);
+} else {
+  showLibraryTab('packs');
+}
 
 // ─── BOTTOM NAVIGATION ────────────────────────────────────────────────────
 
