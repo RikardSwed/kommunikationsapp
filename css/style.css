@@ -917,10 +917,8 @@ body {
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
   gap: 4px;
-  padding: 4px 0 14px;
+  padding: 12px 20px 14px;
   margin: 0 -20px;
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 .library-subnav::-webkit-scrollbar { display: none; }
