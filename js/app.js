@@ -1,7 +1,7 @@
 // app.js — All application logic for Communication Trainer
 // Depends on: data.js and multiStepData.js (must be loaded first)
 
-const VERSION = 'v1.11.0';
+const VERSION = 'v1.11.1';
 
 // ─── SCREENS ──────────────────────────────────────────────────────────────────
 const homeScreen     = document.getElementById('homeScreen');
@@ -1333,8 +1333,7 @@ document.getElementById('hfVoiceDebugBtn').addEventListener('click', () => {
 let feedbackMode = localStorage.getItem('feedbackMode') === 'true';
 
 const homeSettingsBtn     = document.getElementById('homeSettingsBtn');
-const homeSettingsOverlay = document.getElementById('homeSettingsOverlay');
-const homeSettingsClose   = document.getElementById('homeSettingsClose');
+const homeSettingsScreen  = document.getElementById('homeSettingsScreen');
 const feedbackModeToggle  = document.getElementById('feedbackModeToggle');
 const feedbackExportBtn   = document.getElementById('feedbackExportBtn');
 
@@ -1343,15 +1342,34 @@ function applyFeedbackMode() {
   feedbackModeToggle.checked = feedbackMode;
 }
 
-// Open/close home settings panel
+// Open/close home settings screen (slides in/out from the right, like modeScreen)
+function navToSettings() {
+  homeSettingsScreen.style.display = 'flex';
+  homeSettingsScreen.classList.remove('slide-in-right', 'slide-out-right');
+  void homeSettingsScreen.offsetWidth;
+  homeSettingsScreen.classList.add('slide-in-right');
+  hideBottomNav();
+}
+
+function navFromSettings() {
+  homeSettingsScreen.classList.remove('slide-in-right', 'slide-out-right');
+  void homeSettingsScreen.offsetWidth;
+  homeSettingsScreen.classList.add('slide-out-right');
+  setTimeout(() => {
+    homeSettingsScreen.style.display = 'none';
+    homeSettingsScreen.classList.remove('slide-out-right');
+  }, 320);
+  showBottomNav();
+}
+
 homeSettingsBtn.addEventListener('click', () => {
   feedbackModeToggle.checked = feedbackMode;
-  homeSettingsOverlay.classList.add('open');
+  navToSettings();
 });
 homeSettingsBtn.addEventListener('touchend', e => { e.preventDefault(); homeSettingsBtn.click(); }, { passive: false });
 
-homeSettingsClose.addEventListener('click', () => homeSettingsOverlay.classList.remove('open'));
-homeSettingsOverlay.addEventListener('click', e => { if (e.target === homeSettingsOverlay) homeSettingsOverlay.classList.remove('open'); });
+document.getElementById('homeSettingsBackBtn').addEventListener('click', navFromSettings);
+document.getElementById('homeSettingsBackBtn').addEventListener('touchend', e => { e.preventDefault(); navFromSettings(); }, { passive: false });
 
 // Feedback toggle
 feedbackModeToggle.addEventListener('change', () => {
@@ -2849,7 +2867,7 @@ const dashboardSettingsBtn = document.getElementById('dashboardSettingsBtn');
 if (dashboardSettingsBtn) {
   dashboardSettingsBtn.addEventListener('click', () => {
     feedbackModeToggle.checked = feedbackMode;
-    homeSettingsOverlay.classList.add('open');
+    navToSettings();
   });
   dashboardSettingsBtn.addEventListener('touchend', e => { e.preventDefault(); dashboardSettingsBtn.click(); }, { passive: false });
 }
