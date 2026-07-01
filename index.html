@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
   <title>Communication Trainer</title>
-  <link rel="stylesheet" href="css/style.css?v=1112" />
+  <link rel="stylesheet" href="css/style.css?v=1120" />
 </head>
 <body>
 
@@ -174,7 +174,11 @@
 <div class="app" id="trainingScreen" style="display:none;">
   <div class="topbar">
     <button class="topbar-btn" id="closeBtn">✕</button>
-    <span class="counter" id="counter">1 / 4</span>
+    <span class="counter-group">
+      <span class="counter sub-counter" id="subCounter"></span>
+      <span class="counter-sep" id="counterSep">·</span>
+      <span class="counter" id="counter">1 / 4</span>
+    </span>
     <button class="topbar-btn" id="settingsBtn">⚙</button>
   </div>
   <div class="divider"></div>
@@ -204,7 +208,11 @@
 <div class="app" id="memScreen" style="display:none;">
   <div class="topbar">
     <button class="topbar-btn" id="memCloseBtn">✕</button>
-    <span class="counter" id="memCounter">1 / 4</span>
+    <span class="counter-group">
+      <span class="counter sub-counter" id="memSubCounter"></span>
+      <span class="counter-sep" id="memCounterSep">·</span>
+      <span class="counter" id="memCounter">1 / 4</span>
+    </span>
     <button class="topbar-btn" id="memSettingsBtn">⚙</button>
   </div>
   <div class="divider"></div>
@@ -267,7 +275,11 @@
 <div class="app" id="flowScreen" style="display:none;">
   <div class="topbar">
     <button class="topbar-btn" id="flowCloseBtn">✕</button>
-    <span class="counter" id="flowCounter">1 / 2</span>
+    <span class="counter-group">
+      <span class="counter sub-counter" id="flowSubCounter"></span>
+      <span class="counter-sep" id="flowCounterSep">·</span>
+      <span class="counter" id="flowCounter">1 / 2</span>
+    </span>
     <button class="topbar-btn" id="flowSettingsBtn">⚙</button>
   </div>
   <div class="divider"></div>
@@ -567,7 +579,11 @@
       <label>Show hints</label>
       <label class="toggle"><input type="checkbox" id="showHints" checked /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.11.2</div>
+    <div class="settings-row">
+      <label>Show input counter</label>
+      <label class="toggle"><input type="checkbox" id="showInputCounter" /><span class="toggle-slider"></span></label>
+    </div>
+    <div class="settings-version">v1.12.0</div>
     <button class="settings-close" id="settingsClose">Done</button>
   </div>
 </div>
@@ -640,7 +656,7 @@
       <label>Loop current strategy</label>
       <label class="toggle"><input type="checkbox" id="hfLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.11.2</div>
+    <div class="settings-version">v1.12.0</div>
     <button class="settings-close" id="hfSettingsClose">Done</button>
   </div>
 </div>
@@ -709,7 +725,7 @@
       <label>Loop current strategy</label>
       <label class="toggle"><input type="checkbox" id="hfMemLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.11.2</div>
+    <div class="settings-version">v1.12.0</div>
     <button class="settings-close" id="hfMemSettingsClose">Done</button>
   </div>
 </div>
@@ -778,7 +794,7 @@
       <label>Loop current category</label>
       <label class="toggle"><input type="checkbox" id="hfChallLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.11.2</div>
+    <div class="settings-version">v1.12.0</div>
     <button class="settings-close" id="hfChallSettingsClose">Done</button>
   </div>
 </div>
@@ -836,7 +852,7 @@
       <label>Loop current combo</label>
       <label class="toggle"><input type="checkbox" id="hfFlowLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.11.2</div>
+    <div class="settings-version">v1.12.0</div>
     <button class="settings-close" id="hfFlowSettingsClose">Done</button>
   </div>
 </div>
@@ -905,7 +921,7 @@
       <label>Loop current mindset</label>
       <label class="toggle"><input type="checkbox" id="hfMindLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.11.2</div>
+    <div class="settings-version">v1.12.0</div>
     <button class="settings-close" id="hfMindSettingsClose">Done</button>
   </div>
 </div>
@@ -974,7 +990,7 @@
       <label>Loop current collection</label>
       <label class="toggle"><input type="checkbox" id="hfCollLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.11.2</div>
+    <div class="settings-version">v1.12.0</div>
     <button class="settings-close" id="hfCollSettingsClose">Done</button>
   </div>
 </div>
@@ -983,7 +999,11 @@
 <div class="app" id="challScreen" style="display:none;">
   <div class="topbar">
     <button class="topbar-btn" id="challCloseBtn">✕</button>
-    <span class="counter" id="challCounter">1 / 7</span>
+    <span class="counter-group">
+      <span class="counter sub-counter" id="challSubCounter"></span>
+      <span class="counter-sep" id="challCounterSep">·</span>
+      <span class="counter" id="challCounter">1 / 7</span>
+    </span>
     <button class="topbar-btn" id="challSettingsBtn">⚙</button>
   </div>
   <div class="divider"></div>
@@ -1013,7 +1033,11 @@
 <div class="app" id="mindScreen" style="display:none;">
   <div class="topbar">
     <button class="topbar-btn" id="mindCloseBtn">✕</button>
-    <span class="counter" id="mindCounter">1 / 9</span>
+    <span class="counter-group">
+      <span class="counter sub-counter" id="mindSubCounter"></span>
+      <span class="counter-sep" id="mindCounterSep">·</span>
+      <span class="counter" id="mindCounter">1 / 9</span>
+    </span>
     <button class="topbar-btn" id="mindSettingsBtn">⚙</button>
   </div>
   <div class="divider"></div>
@@ -1043,7 +1067,11 @@
 <div class="app" id="collScreen" style="display:none;">
   <div class="topbar">
     <button class="topbar-btn" id="collCloseBtn">✕</button>
-    <span class="counter" id="collCounter">1 / 2</span>
+    <span class="counter-group">
+      <span class="counter sub-counter" id="collSubCounter"></span>
+      <span class="counter-sep" id="collCounterSep">·</span>
+      <span class="counter" id="collCounter">1 / 2</span>
+    </span>
     <div class="topbar-btn" style="visibility:hidden;"></div>
   </div>
   <div class="divider"></div>
@@ -1084,7 +1112,7 @@
       <label style="font-size:13px; color:#888;">Export all ratings as JSON</label>
       <button id="feedbackExportBtn" style="font-size:13px; color:#555; background:#f0f0f0; border:1px solid #ddd; border-radius:8px; padding:6px 12px; cursor:pointer;">Export</button>
     </div>
-    <div class="settings-version">v1.11.2</div>
+    <div class="settings-version">v1.12.0</div>
   </div>
 </div>
 
@@ -1104,10 +1132,10 @@
   </button>
 </div>
 
-<script src="js/data.js?v=1112"></script>
-<script src="js/multiStepData.js?v=1112"></script>
-<script src="js/memorizeData.js?v=1112"></script>
-<script src="js/app.js?v=1112"></script>
+<script src="js/data.js?v=1120"></script>
+<script src="js/multiStepData.js?v=1120"></script>
+<script src="js/memorizeData.js?v=1120"></script>
+<script src="js/app.js?v=1120"></script>
 
 </body>
 </html>
