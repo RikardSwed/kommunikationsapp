@@ -1,7 +1,7 @@
 // app.js — All application logic for Communication Trainer
 // Depends on: data.js and multiStepData.js (must be loaded first)
 
-const VERSION = 'v1.13.0';
+const VERSION = 'v1.14.0';
 
 // ─── SCREENS ──────────────────────────────────────────────────────────────────
 const homeScreen     = document.getElementById('homeScreen');
@@ -2919,14 +2919,195 @@ document.querySelectorAll('.nav-tab').forEach(btn => {
   btn.addEventListener('click', () => showTab(btn.dataset.tab));
 });
 
-// Reuse the Library's Developer Settings overlay for the Home gear icon too
-const dashboardSettingsBtn = document.getElementById('dashboardSettingsBtn');
-if (dashboardSettingsBtn) {
-  dashboardSettingsBtn.addEventListener('click', () => {
-    feedbackModeToggle.checked = feedbackMode;
-    navToSettings();
-  });
-  dashboardSettingsBtn.addEventListener('touchend', e => { e.preventDefault(); dashboardSettingsBtn.click(); }, { passive: false });
+// ─── DASHBOARD: SEARCH + WELCOME + LAST PACK ───────────────────────────────
+
+(function initDashboard() {
+  // ── All packs available for search ──────────────────────────────────────
+  const ALL_PACKS = [
+    { key: 'assertive',      label: 'Assertive Communication' },
+    { key: 'humour',         label: 'Humour Practise' },
+    { key: 'teasing',        label: 'Teasing & Playfulness' },
+    { key: 'criticism',      label: 'Criticism & Correction' },
+    { key: 'conversational', label: 'Conversational Skills' }
+  ];
+
+  const RECENT_KEY  = 'dash_recent_searches';
+  const LASTPACK_KEY = 'dash_last_pack';
+  const MAX_RECENT  = 5;
+
+  // ── DOM refs ─────────────────────────────────────────────────────────────
+  const searchInput    = document.getElementById('dashSearchInput');
+  const searchClear    = document.getElementById('dashSearchClear');
+  const cancelBtn      = document.getElementById('dashboardSettingsBtn');
+  const defaultView    = document.getElementById('dashDefaultView');
+  const searchView     = document.getElementById('dashSearchView');
+  const recentSection  = document.getElementById('dashRecentSection');
+  const recentList     = document.getElementById('dashRecentList');
+  const searchResults  = document.getElementById('dashSearchResults');
+  const noResults      = document.getElementById('dashNoResults');
+  const lastPackSec    = document.getElementById('dashLastPackSection');
+  const lastPackCard   = document.getElementById('dashLastPackCard');
+  const lastPackName   = document.getElementById('dashLastPackName');
+  const welcomeTitle   = document.getElementById('dashWelcomeTitle');
+  const welcomeSub     = document.getElementById('dashWelcomeSubtitle');
+
+  // ── State ─────────────────────────────────────────────────────────────────
+  let searching = false;
+
+  // ── localStorage helpers ─────────────────────────────────────────────────
+  function getRecent() {
+    try { return JSON.parse(localStorage.getItem(RECENT_KEY)) || []; } catch { return []; }
+  }
+  function saveRecent(arr) {
+    localStorage.setItem(RECENT_KEY, JSON.stringify(arr));
+  }
+  function addRecent(term) {
+    if (!term.trim()) return;
+    let arr = getRecent().filter(t => t.toLowerCase() !== term.toLowerCase());
+    arr.unshift(term.trim());
+    arr = arr.slice(0, MAX_RECENT);
+    saveRecent(arr);
+  }
+  function getLastPack() {
+    try { return JSON.parse(localStorage.getItem(LASTPACK_KEY)); } catch { return null; }
+  }
+  function saveLastPack(key, label) {
+    localStorage.setItem(LASTPACK_KEY, JSON.stringify({ key, label }));
+  }
+
+  // ── Welcome text ─────────────────────────────────────────────────────────
+  function updateWelcome() {
+    const last = getLastPack();
+    if (last) {
+      if (welcomeTitle)  welcomeTitle.textContent  = 'Welcome back';
+      if (welcomeSub)    welcomeSub.textContent    = 'Continue where you left off';
+    }
+  }
+
+  // ── Recent searches render ────────────────────────────────────────────────
+  function renderRecent() {
+    const arr = getRecent();
+    if (!recentSection || !recentList) return;
+    if (!arr.length) { recentSection.style.display = 'none'; return; }
+    recentSection.style.display = '';
+    recentList.innerHTML = arr.map(t =>
+      `<div class="dash-recent-item" data-term="${t.replace(/"/g,'&quot;')}">
+        <span class="dash-recent-icon">🔍</span>${t}
+       </div>`
+    ).join('');
+    recentList.querySelectorAll('.dash-recent-item').forEach(el => {
+      el.addEventListener('click', () => {
+        searchInput.value = el.dataset.term;
+        enterSearch();
+        runSearch(el.dataset.term);
+      });
+    });
+  }
+
+  // ── Last pack render ──────────────────────────────────────────────────────
+  function renderLastPack() {
+    const last = getLastPack();
+    if (!lastPackSec || !last) { if (lastPackSec) lastPackSec.style.display = 'none'; return; }
+    lastPackSec.style.display = '';
+    lastPackName.textContent = last.label;
+    lastPackCard.onclick = () => {
+      saveLastPack(last.key, last.label);
+      showModeScreen(last.key, last.label);
+    };
+  }
+
+  // ── Search results render ─────────────────────────────────────────────────
+  function runSearch(query) {
+    const q = query.trim().toLowerCase();
+    const hits = q ? ALL_PACKS.filter(p => p.label.toLowerCase().includes(q)) : [];
+    searchResults.innerHTML = hits.map(p =>
+      `<div class="collection-card dash-result-card" data-key="${p.key}" data-label="${p.label.replace(/"/g,'&quot;')}">
+        <div><div class="collection-name">${p.label}</div></div>
+        <div class="collection-arrow">›</div>
+       </div>`
+    ).join('');
+    noResults.style.display = (!q || hits.length) ? 'none' : '';
+    searchResults.querySelectorAll('.dash-result-card').forEach(el => {
+      el.addEventListener('click', () => {
+        const key   = el.dataset.key;
+        const label = el.dataset.label;
+        addRecent(query.trim());
+        saveLastPack(key, label);
+        exitSearch(false);
+        showModeScreen(key, label);
+      });
+    });
+  }
+
+  // ── Enter / exit search mode ──────────────────────────────────────────────
+  function enterSearch() {
+    if (searching) return;
+    searching = true;
+    cancelBtn.textContent = 'Cancel';
+    cancelBtn.style.fontSize = '15px';
+    defaultView.style.display = 'none';
+    searchView.style.display  = '';
+    searchClear.style.display = searchInput.value ? '' : 'none';
+  }
+
+  function exitSearch(clearInput = true) {
+    searching = false;
+    cancelBtn.textContent = '⚙️';
+    cancelBtn.style.fontSize = '';
+    if (clearInput) searchInput.value = '';
+    searchClear.style.display = 'none';
+    defaultView.style.display = '';
+    searchView.style.display  = 'none';
+    searchInput.blur();
+    updateWelcome();
+    renderRecent();
+    renderLastPack();
+  }
+
+  // ── Event listeners ───────────────────────────────────────────────────────
+  if (searchInput) {
+    searchInput.addEventListener('focus', enterSearch);
+    searchInput.addEventListener('input', () => {
+      const val = searchInput.value;
+      searchClear.style.display = val ? '' : 'none';
+      runSearch(val);
+    });
+  }
+
+  if (searchClear) {
+    searchClear.addEventListener('click', () => {
+      searchInput.value = '';
+      searchClear.style.display = 'none';
+      runSearch('');
+      searchInput.focus();
+    });
+  }
+
+  if (cancelBtn) {
+    cancelBtn.addEventListener('click', () => {
+      if (searching) {
+        exitSearch();
+      } else {
+        // Original gear behaviour — open developer settings
+        feedbackModeToggle.checked = feedbackMode;
+        navToSettings();
+      }
+    });
+    cancelBtn.addEventListener('touchend', e => { e.preventDefault(); cancelBtn.click(); }, { passive: false });
+  }
+
+  // ── Init ─────────────────────────────────────────────────────────────────
+  updateWelcome();
+  renderRecent();
+  renderLastPack();
+
+})();
+
+// Patch showModeScreen to record last pack
+const _origShowMode = showModeScreen;
+function showModeScreen(key, label) {
+  try { localStorage.setItem('dash_last_pack', JSON.stringify({ key, label })); } catch {}
+  _origShowMode(key, label);
 }
 
 // Land on the Home tab by default
