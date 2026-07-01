@@ -8,8 +8,49 @@
 </head>
 <body>
 
-<!-- HOME SCREEN -->
-<div class="home-screen" id="homeScreen">
+<!-- HOME (DASHBOARD) SCREEN -->
+<div class="dashboard-screen" id="dashboardScreen">
+  <div class="home-topbar">
+    <button class="topbar-btn" id="dashboardSettingsBtn" title="Settings">⚙️</button>
+  </div>
+  <div class="home-header">
+    <div class="home-title">Welcome back</div>
+    <div class="home-subtitle">Continue where you left off</div>
+  </div>
+  <div class="placeholder-block">
+    <div class="placeholder-title">Nothing here yet</div>
+    <div class="placeholder-text">Soon you'll be able to jump straight back into your last session.</div>
+  </div>
+</div>
+
+<!-- PROGRESS SCREEN -->
+<div class="progress-screen" id="progressScreen">
+  <div class="home-topbar"><div class="topbar-btn" style="visibility:hidden;">⚙️</div></div>
+  <div class="home-header">
+    <div class="home-title">Progress</div>
+    <div class="home-subtitle">Your training statistics</div>
+  </div>
+  <div class="placeholder-block">
+    <div class="placeholder-title">Coming soon</div>
+    <div class="placeholder-text">Stats on what and how you've trained will show up here.</div>
+  </div>
+</div>
+
+<!-- UPGRADE SCREEN -->
+<div class="upgrade-screen" id="upgradeScreen">
+  <div class="home-topbar"><div class="topbar-btn" style="visibility:hidden;">⚙️</div></div>
+  <div class="home-header">
+    <div class="home-title">Upgrade</div>
+    <div class="home-subtitle">Unlock the full experience</div>
+  </div>
+  <div class="placeholder-block">
+    <div class="placeholder-title">Pricing coming soon</div>
+    <div class="placeholder-text">We're still designing the plans. Check back soon.</div>
+  </div>
+</div>
+
+<!-- LIBRARY SCREEN (pack list) -->
+<div class="home-screen" id="homeScreen" style="display:none;">
   <div class="home-topbar">
     <button class="topbar-btn" id="homeSettingsBtn" title="Settings">⚙️</button>
   </div>
@@ -526,7 +567,7 @@
       <label>Show hints</label>
       <label class="toggle"><input type="checkbox" id="showHints" checked /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.10.5</div>
+    <div class="settings-version">v1.11.0</div>
     <button class="settings-close" id="settingsClose">Done</button>
   </div>
 </div>
@@ -599,7 +640,7 @@
       <label>Loop current strategy</label>
       <label class="toggle"><input type="checkbox" id="hfLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.10.5</div>
+    <div class="settings-version">v1.11.0</div>
     <button class="settings-close" id="hfSettingsClose">Done</button>
   </div>
 </div>
@@ -668,7 +709,7 @@
       <label>Loop current strategy</label>
       <label class="toggle"><input type="checkbox" id="hfMemLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.10.5</div>
+    <div class="settings-version">v1.11.0</div>
     <button class="settings-close" id="hfMemSettingsClose">Done</button>
   </div>
 </div>
@@ -737,7 +778,7 @@
       <label>Loop current category</label>
       <label class="toggle"><input type="checkbox" id="hfChallLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.10.5</div>
+    <div class="settings-version">v1.11.0</div>
     <button class="settings-close" id="hfChallSettingsClose">Done</button>
   </div>
 </div>
@@ -795,7 +836,7 @@
       <label>Loop current combo</label>
       <label class="toggle"><input type="checkbox" id="hfFlowLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.10.5</div>
+    <div class="settings-version">v1.11.0</div>
     <button class="settings-close" id="hfFlowSettingsClose">Done</button>
   </div>
 </div>
@@ -864,7 +905,7 @@
       <label>Loop current mindset</label>
       <label class="toggle"><input type="checkbox" id="hfMindLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.10.5</div>
+    <div class="settings-version">v1.11.0</div>
     <button class="settings-close" id="hfMindSettingsClose">Done</button>
   </div>
 </div>
@@ -933,7 +974,7 @@
       <label>Loop current collection</label>
       <label class="toggle"><input type="checkbox" id="hfCollLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.10.5</div>
+    <div class="settings-version">v1.11.0</div>
     <button class="settings-close" id="hfCollSettingsClose">Done</button>
   </div>
 </div>
@@ -1040,15 +1081,31 @@
       <label style="font-size:13px; color:#888;">Export all ratings as JSON</label>
       <button id="feedbackExportBtn" style="font-size:13px; color:#555; background:#f0f0f0; border:1px solid #ddd; border-radius:8px; padding:6px 12px; cursor:pointer;">Export</button>
     </div>
-    <div class="settings-version">v1.10.5</div>
+    <div class="settings-version">v1.11.0</div>
     <button class="settings-close" id="homeSettingsClose">Done</button>
   </div>
 </div>
 
-<script src="js/data.js?v=1105"></script>
-<script src="js/multiStepData.js?v=1105"></script>
-<script src="js/memorizeData.js?v=1105"></script>
-<script src="js/app.js?v=1105"></script>
+<!-- BOTTOM NAVIGATION -->
+<div class="bottom-nav" id="bottomNav">
+  <button class="nav-tab active" id="navHomeBtn" data-tab="dashboard">
+    <span class="nav-tab-icon">⌂</span><span class="nav-tab-label">Home</span>
+  </button>
+  <button class="nav-tab" id="navLibraryBtn" data-tab="library">
+    <span class="nav-tab-icon">▦</span><span class="nav-tab-label">Library</span>
+  </button>
+  <button class="nav-tab" id="navProgressBtn" data-tab="progress">
+    <span class="nav-tab-icon">◔</span><span class="nav-tab-label">Progress</span>
+  </button>
+  <button class="nav-tab nav-tab--upgrade" id="navUpgradeBtn" data-tab="upgrade">
+    <span class="nav-tab-icon">✦</span><span class="nav-tab-label">Upgrade</span>
+  </button>
+</div>
+
+<script src="js/data.js?v=1110"></script>
+<script src="js/multiStepData.js?v=1110"></script>
+<script src="js/memorizeData.js?v=1110"></script>
+<script src="js/app.js?v=1110"></script>
 
 </body>
 </html>
