@@ -36,7 +36,10 @@ function navToHome() {
 }
 
 function navToMode() {
-  // Home stays visible behind — animate mode in over it
+  // Hide all tab screens, show Library behind mode screen
+  ['dashboardScreen','homeScreen','progressScreen','upgradeScreen'].forEach(id => {
+    const el = document.getElementById(id); if (el) el.style.display = 'none';
+  });
   homeScreen.style.display = 'flex';
   modeScreen.style.display = 'flex';
   modeScreen.classList.remove('slide-in-right', 'slide-out-right');
@@ -138,6 +141,8 @@ function showModeScreen(key, label) {
   activeCollectionKey   = key;
   activeCollectionLabel = label;
   document.getElementById('modeCollectionName').textContent = label;
+  // Save last pack for dashboard
+  try { localStorage.setItem('dash_last_pack', JSON.stringify({ key, label })); } catch {}
   navToMode();
 }
 
@@ -3102,13 +3107,6 @@ document.querySelectorAll('.nav-tab').forEach(btn => {
   renderLastPack();
 
 })();
-
-// Patch showModeScreen to record last pack
-const _origShowMode = showModeScreen;
-function showModeScreen(key, label) {
-  try { localStorage.setItem('dash_last_pack', JSON.stringify({ key, label })); } catch {}
-  _origShowMode(key, label);
-}
 
 // Land on the Home tab by default
 if (document.getElementById('dashboardScreen')) showTab('dashboard');
