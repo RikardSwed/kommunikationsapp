@@ -748,3 +748,92 @@ body {
 .mode-beta-list.open {
   max-height: 300px;
 }
+
+/* ─── BOTTOM NAVIGATION BAR ──────────────────────────────────────────────── */
+
+.bottom-nav {
+  position: fixed;
+  left: 0; right: 0; bottom: 0;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 420px;
+  display: flex;
+  background: #fff;
+  border-top: 1px solid #eee;
+  padding: 6px 0 calc(6px + env(safe-area-inset-bottom));
+  z-index: 600;
+}
+
+.nav-tab {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  background: none;
+  border: none;
+  padding: 6px 0;
+  cursor: pointer;
+  color: #aaa;
+  -webkit-user-select: none;
+  user-select: none;
+  touch-action: manipulation;
+}
+
+.nav-tab-icon { font-size: 20px; line-height: 1; }
+.nav-tab-label { font-size: 10px; font-weight: 600; letter-spacing: 0.2px; }
+
+.nav-tab.active { color: #1c1c1e; }
+
+.nav-tab.nav-tab--upgrade { color: #c9932e; }
+.nav-tab.nav-tab--upgrade.active { color: #a8781f; }
+
+/* Top-level screens need bottom padding so content clears the nav bar */
+.home-screen,
+.dashboard-screen,
+.progress-screen,
+.upgrade-screen {
+  padding-bottom: 84px;
+}
+
+/* ─── DASHBOARD / PROGRESS / UPGRADE SCREENS ─────────────────────────────── */
+
+.dashboard-screen,
+.progress-screen,
+.upgrade-screen {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 420px;
+  height: 100%;
+  min-height: -webkit-fill-available;
+  background: #f0f2f5;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
+  overflow-y: auto;
+}
+
+.placeholder-block {
+  margin-top: 72px;
+  text-align: center;
+}
+
+.placeholder-title {
+  font-size: 18px;
+  font-weight: 800;
+  color: #1c1c1e;
+  margin-bottom: 8px;
+}
+
+.placeholder-text {
+  font-size: 14px;
+  color: #aaa;
+  line-height: 1.5;
+  max-width: 280px;
+  margin: 0 auto;
+}
+
