@@ -22,20 +22,23 @@ function hideAll() {
 }
 
 function navToHome() {
-  // Home is already visible behind — just animate mode out
-  homeScreen.style.display = 'flex';
   modeScreen.classList.remove('slide-in-right', 'slide-out-right');
   void modeScreen.offsetWidth;
   modeScreen.classList.add('slide-out-right');
   setTimeout(() => {
     modeScreen.style.display = 'none';
     modeScreen.classList.remove('slide-out-right');
+    showTab(_tabBeforeMode || 'library');
   }, 300);
   showBottomNav();
-  document.querySelectorAll('.nav-tab').forEach(btn => btn.classList.toggle('active', btn.dataset.tab === 'library'));
 }
 
+let _tabBeforeMode = 'library'; // track which tab opened the mode screen
+
 function navToMode() {
+  // Remember which tab we came from
+  const activeTab = document.querySelector('.nav-tab.active');
+  _tabBeforeMode = activeTab ? activeTab.dataset.tab : 'library';
   // Hide all tab screens, show Library behind mode screen
   ['dashboardScreen','homeScreen','progressScreen','upgradeScreen'].forEach(id => {
     const el = document.getElementById(id); if (el) el.style.display = 'none';
