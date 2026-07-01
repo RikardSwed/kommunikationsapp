@@ -1,7 +1,7 @@
 // app.js — All application logic for Communication Trainer
 // Depends on: data.js and multiStepData.js (must be loaded first)
 
-const VERSION = 'v1.11.2';
+const VERSION = 'v1.12.0';
 
 // ─── SCREENS ──────────────────────────────────────────────────────────────────
 const homeScreen     = document.getElementById('homeScreen');
@@ -80,6 +80,7 @@ const strategyName   = document.getElementById('strategyName');
 const inputText      = document.getElementById('inputText');
 const answerText     = document.getElementById('answerText');
 const counter        = document.getElementById('counter');
+const subCounter     = document.getElementById('subCounter');
 const hint           = document.getElementById('hint');
 
 // ─── DOM — MULTIPLE STEPS ────────────────────────────────────────────────────
@@ -259,6 +260,7 @@ function render() {
   inputText.textContent    = inp.q;
   answerText.textContent   = inp.a;
   counter.textContent      = `${stratIdx + 1} / ${strategies.length}`;
+  subCounter.textContent   = `${inputIdx + 1} / ${inputOrders[stratOrder[stratIdx]].length}`;
   flip(false, false);
 }
 
@@ -311,6 +313,7 @@ function memRender() {
   memQuestionText.textContent = c.q;
   memAnswerText.textContent   = c.a;
   memCounter.textContent      = `${memStratIdx + 1} / ${memStrategies.length}`;
+  document.getElementById('memSubCounter').textContent = `${memCardIdx + 1} / ${strat.cards.length}`;
   memFlipFn(false, false);
 }
 
@@ -557,6 +560,15 @@ function applySettings() {
     // Re-render whichever training screen is currently visible
     if (document.getElementById('trainingScreen').classList.contains('screen--active')) { stratIdx = 0; inputIdx = 0; render(); }
   }
+
+  applyInputCounterVisibility();
+}
+
+function applyInputCounterVisibility() {
+  const show = document.getElementById('showInputCounter').checked;
+  document.querySelectorAll('.sub-counter, .counter-sep').forEach(el => {
+    el.style.display = show ? 'inline' : 'none';
+  });
 }
 
 // ─── FLOW MODE ───────────────────────────────────────────────────────────────
@@ -611,6 +623,7 @@ function flowRender() {
   flowFrontText.textContent = item.front;
   flowBackText.textContent  = item.back;
   flowCounter.textContent   = `${flowComboIdx + 1} / ${flowStrategies.length}`;
+  document.getElementById('flowSubCounter').textContent = `${flowCardIdx + 1} / ${flowSequence.length}`;
   flowFlipFn(false, false);
 }
 
@@ -1404,6 +1417,7 @@ feedbackExportBtn.addEventListener('click', () => {
 });
 
 applyFeedbackMode();
+applyInputCounterVisibility();
 
 // ── FEEDBACK STORAGE KEYS ─────────────────────────────────────────────────────
 // Key format: fb_{collection}_{screen}_{comboOrStratId}_{cardId}_{side}
@@ -1517,6 +1531,7 @@ function collRender() {
   document.getElementById('collFrontText').textContent = inp.q;
   document.getElementById('collBackText').textContent  = inp.a;
   document.getElementById('collCounter').textContent   = `${collIdx + 1} / ${collCollections.length}`;
+  document.getElementById('collSubCounter').textContent = `${collInputIdx + 1} / ${col.inputs.length}`;
   collFlipFn(false, false);
   // hints
   const hints = document.getElementById('collHint');
@@ -1651,6 +1666,7 @@ function challRender() {
   document.getElementById('challFrontText').textContent = inp.q;
   document.getElementById('challBackText').textContent  = inp.a;
   document.getElementById('challCounter').textContent   = `${challIdx + 1} / ${challChallenges.length}`;
+  document.getElementById('challSubCounter').textContent = `${challInputIdx + 1} / ${ch.inputs.length}`;
   challFlipFn(false, false);
   const hints = document.getElementById('challHint');
   if (hints) hints.style.display = document.getElementById('showHints').checked ? '' : 'none';
@@ -1754,6 +1770,7 @@ function mindRender() {
   document.getElementById('mindFrontText').textContent = inp.q;
   document.getElementById('mindBackText').textContent  = inp.a;
   document.getElementById('mindCounter').textContent   = `${mindIdx + 1} / ${mindStrategies.length}`;
+  document.getElementById('mindSubCounter').textContent = `${mindInputIdx + 1} / ${m.inputs.length}`;
   mindFlipFn(false, false);
   const hints = document.getElementById('mindHint');
   if (hints) hints.style.display = document.getElementById('showHints').checked ? '' : 'none';
