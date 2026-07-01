@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
   <title>Communication Trainer</title>
-  <link rel="stylesheet" href="css/style.css?v=1120" />
+  <link rel="stylesheet" href="css/style.css?v=1130" />
 </head>
 <body>
 
@@ -51,34 +51,64 @@
 
 <!-- LIBRARY SCREEN (pack list) -->
 <div class="home-screen" id="homeScreen" style="display:none;">
-  <div class="home-topbar">
+  <div class="home-topbar library-topbar">
+    <div class="library-title">Library</div>
     <button class="topbar-btn" id="homeSettingsBtn" title="Settings">⚙️</button>
   </div>
-  <div class="home-header">
-    <div class="home-title">Communication Trainer</div>
-    <div class="home-subtitle">Choose a collection to practise</div>
+
+  <!-- Sub-nav -->
+  <div class="library-subnav" id="librarySubnav">
+    <button class="library-subnav-btn active" data-lib-tab="packs">Packs</button>
+    <button class="library-subnav-btn" data-lib-tab="topics">Topics</button>
+    <button class="library-subnav-btn" data-lib-tab="programs">Programs</button>
+    <button class="library-subnav-btn" data-lib-tab="folders">Folders</button>
   </div>
-  <div class="home-section-label">Packs</div>
-  <div class="collection-card" id="collectionAssertive" data-key="assertive" data-label="Assertive Communication">
-    <div><div class="collection-name">Assertive Communication</div><div class="collection-meta">4 strategies &nbsp;·&nbsp; Flashcard mode</div></div>
-    <div class="collection-arrow">›</div>
+
+  <!-- Tab: Packs -->
+  <div class="library-tab-content" id="libTabPacks">
+    <div class="collection-card" id="collectionAssertive" data-key="assertive" data-label="Assertive Communication">
+      <div><div class="collection-name">Assertive Communication</div><div class="collection-meta">4 strategies &nbsp;·&nbsp; Flashcard mode</div></div>
+      <div class="collection-arrow">›</div>
+    </div>
+    <div class="collection-card" id="collectionHumour" data-key="humour" data-label="Humour Practise">
+      <div><div class="collection-name">Humour Practise</div><div class="collection-meta">4 strategies &nbsp;·&nbsp; Flashcard mode</div></div>
+      <div class="collection-arrow">›</div>
+    </div>
+    <div class="collection-card" id="collectionTeasing" data-key="teasing" data-label="Teasing &amp; Playfulness">
+      <div><div class="collection-name">Teasing &amp; Playfulness</div><div class="collection-meta">7 strategies &nbsp;·&nbsp; Flashcard mode</div></div>
+      <div class="collection-arrow">›</div>
+    </div>
+    <div class="collection-card" id="collectionCriticism" data-key="criticism" data-label="Criticism &amp; Correction">
+      <div><div class="collection-name">Criticism &amp; Correction</div><div class="collection-meta">4 strategies &nbsp;·&nbsp; Flashcard mode</div></div>
+      <div class="collection-arrow">›</div>
+    </div>
+    <div class="collection-card" id="collectionConversational" data-key="conversational" data-label="Conversational Skills">
+      <div><div class="collection-name">Conversational Skills</div><div class="collection-meta">2 collections &nbsp;·&nbsp; Collections mode</div></div>
+      <div class="collection-arrow">›</div>
+    </div>
   </div>
-  <div class="collection-card" id="collectionHumour" data-key="humour" data-label="Humour Practise">
-    <div><div class="collection-name">Humour Practise</div><div class="collection-meta">4 strategies &nbsp;·&nbsp; Flashcard mode</div></div>
-    <div class="collection-arrow">›</div>
+
+  <!-- Tab: Topics (placeholder) -->
+  <div class="library-tab-content library-placeholder" id="libTabTopics" style="display:none;">
+    <div class="library-placeholder-icon">◫</div>
+    <div class="library-placeholder-title">Coming soon</div>
+    <div class="library-placeholder-text">Browse packs grouped by topic.</div>
   </div>
-  <div class="collection-card" id="collectionTeasing" data-key="teasing" data-label="Teasing &amp; Playfulness">
-    <div><div class="collection-name">Teasing &amp; Playfulness</div><div class="collection-meta">7 strategies &nbsp;·&nbsp; Flashcard mode</div></div>
-    <div class="collection-arrow">›</div>
+
+  <!-- Tab: Programs (placeholder) -->
+  <div class="library-tab-content library-placeholder" id="libTabPrograms" style="display:none;">
+    <div class="library-placeholder-icon">◈</div>
+    <div class="library-placeholder-title">Coming soon</div>
+    <div class="library-placeholder-text">Structured programs that guide you through a skill step by step.</div>
   </div>
-  <div class="collection-card" id="collectionCriticism" data-key="criticism" data-label="Criticism &amp; Correction">
-    <div><div class="collection-name">Criticism &amp; Correction</div><div class="collection-meta">4 strategies &nbsp;·&nbsp; Flashcard mode</div></div>
-    <div class="collection-arrow">›</div>
+
+  <!-- Tab: Folders (placeholder) -->
+  <div class="library-tab-content library-placeholder" id="libTabFolders" style="display:none;">
+    <div class="library-placeholder-icon">⬡</div>
+    <div class="library-placeholder-title">Coming soon</div>
+    <div class="library-placeholder-text">Organise packs into your own folders.</div>
   </div>
-  <div class="collection-card" id="collectionConversational" data-key="conversational" data-label="Conversational Skills">
-    <div><div class="collection-name">Conversational Skills</div><div class="collection-meta">2 collections &nbsp;·&nbsp; Collections mode</div></div>
-    <div class="collection-arrow">›</div>
-  </div>
+
 </div>
 <div class="mode-screen" id="modeScreen" style="display:none;">
   <div class="mode-topbar">
@@ -1112,7 +1142,7 @@
       <label style="font-size:13px; color:#888;">Export all ratings as JSON</label>
       <button id="feedbackExportBtn" style="font-size:13px; color:#555; background:#f0f0f0; border:1px solid #ddd; border-radius:8px; padding:6px 12px; cursor:pointer;">Export</button>
     </div>
-    <div class="settings-version">v1.12.0</div>
+    <div class="settings-version">v1.13.0</div>
   </div>
 </div>
 
@@ -1132,10 +1162,10 @@
   </button>
 </div>
 
-<script src="js/data.js?v=1120"></script>
-<script src="js/multiStepData.js?v=1120"></script>
-<script src="js/memorizeData.js?v=1120"></script>
-<script src="js/app.js?v=1120"></script>
+<script src="js/data.js?v=1130"></script>
+<script src="js/multiStepData.js?v=1130"></script>
+<script src="js/memorizeData.js?v=1130"></script>
+<script src="js/app.js?v=1130"></script>
 
 </body>
 </html>
