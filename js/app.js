@@ -146,8 +146,12 @@ function showModeScreen(key, label) {
   activeCollectionKey   = key;
   activeCollectionLabel = label;
   document.getElementById('modeCollectionName').textContent = label;
-  // Save last pack for dashboard
-  try { localStorage.setItem('dash_last_pack', JSON.stringify({ key, label })); } catch {}
+  // Save last pack and record training time for favorites sorting
+  try {
+    localStorage.setItem('dash_last_pack', JSON.stringify({ key, label }));
+    if (window.recordPackTrained) recordPackTrained(key);
+    if (window._favRenderDash) _favRenderDash();
+  } catch {}
   navToMode();
 }
 
@@ -3086,10 +3090,11 @@ TRAINING_SCREENS.push('hfCollScreen');
 // ─── LIBRARY SUB-NAV ────────────────────────────────────────────────────────
 
 const LIB_TABS = {
-  packs:    'libTabPacks',
-  topics:   'libTabTopics',
-  programs: 'libTabPrograms',
-  folders:  'libTabFolders'
+  packs:     'libTabPacks',
+  topics:    'libTabTopics',
+  programs:  'libTabPrograms',
+  folders:   'libTabFolders',
+  favorites: 'libTabFavorites'
 };
 
 let activeLibraryTab = 'packs'; // session default; resets on reload
@@ -3333,6 +3338,190 @@ document.querySelectorAll('.nav-tab').forEach(btn => {
 
 // Land on the Home tab by default
 if (document.getElementById('dashboardScreen')) showTab('dashboard');
+
+// ─── FAVORITES ──────────────────────────────────────────────────────────
+
+(function initFavorites() {
+  const FAV_KEY      = 'fav_packs';       // ordered array of {key, label}
+  const TRAINED_KEY  = 'dash_last_pack';  // existing last-pack key
+  const ALL_PACKS = [
+    { key: 'assertive',      label: 'Assertive Communication' },
+    { key: 'humour',         label: 'Humour Practise' },
+    { key: 'teasing',        label: 'Teasing & Playfulness' },
+    { key: 'criticism',      label: 'Criticism & Correction' },
+    { key: 'conversational', label: 'Conversational Skills' }
+  ];
+
+  // ─ Storage helpers ──────────────────────────────────────────────────
+  function getFavs() {
+    try { return JSON.parse(localStorage.getItem(FAV_KEY)) || []; } catch { return []; }
+  }
+  function saveFavs(arr) {
+    localStorage.setItem(FAV_KEY, JSON.stringify(arr));
+  }
+  function isFav(key) {
+    return getFavs().some(f => f.key === key);
+  }
+  function toggleFav(key, label) {
+    let arr = getFavs();
+    if (arr.some(f => f.key === key)) {
+      arr = arr.filter(f => f.key !== key);
+    } else {
+      arr.push({ key, label });
+    }
+    saveFavs(arr);
+    return arr.some(f => f.key === key); // return new pinned state
+  }
+
+  // Record training time per pack for favorites sorting on Home
+  const TRAINED_TIMES_KEY = 'fav_trained_times';
+  function getTrainedTimes() {
+    try { return JSON.parse(localStorage.getItem(TRAINED_TIMES_KEY)) || {}; } catch { return {}; }
+  }
+  window.recordPackTrained = function(key) {
+    const times = getTrainedTimes();
+    times[key] = Date.now();
+    localStorage.setItem(TRAINED_TIMES_KEY, JSON.stringify(times));
+  };
+
+  // ─ Apply pinned state to all pin buttons ──────────────────────────────
+  function refreshPinBtns() {
+    document.querySelectorAll('.pin-btn').forEach(btn => {
+      btn.classList.toggle('pinned', isFav(btn.dataset.key));
+    });
+    const modePinBtn = document.getElementById('modePinBtn');
+    if (modePinBtn && activeCollectionKey) {
+      modePinBtn.classList.toggle('pinned', isFav(activeCollectionKey));
+    }
+  }
+
+  // ─ Library pack-card pin buttons ─────────────────────────────────────
+  document.querySelectorAll('.pin-btn').forEach(btn => {
+    const key   = btn.dataset.key;
+    const pack  = ALL_PACKS.find(p => p.key === key);
+    const label = pack ? pack.label : key;
+    btn.addEventListener('click', e => {
+      e.stopPropagation(); // don't open the pack
+      toggleFav(key, label);
+      refreshPinBtns();
+      renderFavTab();
+      renderDashFavs();
+    });
+    btn.addEventListener('touchend', e => {
+      e.stopPropagation();
+      e.preventDefault();
+      toggleFav(key, label);
+      refreshPinBtns();
+      renderFavTab();
+      renderDashFavs();
+    }, { passive: false });
+  });
+
+  // ─ Mode screen pin button ───────────────────────────────────────────
+  const modePinBtn = document.getElementById('modePinBtn');
+  if (modePinBtn) {
+    const doPinToggle = () => {
+      if (!activeCollectionKey) return;
+      const pack = ALL_PACKS.find(p => p.key === activeCollectionKey);
+      toggleFav(activeCollectionKey, pack ? pack.label : activeCollectionKey);
+      refreshPinBtns();
+      renderFavTab();
+      renderDashFavs();
+    };
+    modePinBtn.addEventListener('click', doPinToggle);
+    modePinBtn.addEventListener('touchend', e => { e.preventDefault(); doPinToggle(); }, { passive: false });
+  }
+
+  // Update mode pin button whenever a pack is opened
+  const _origShowModeForPin = showModeScreen;
+  const _showModeWrapped = showModeScreen; // already defined above
+  // Hook via MutationObserver on modeScreen visibility
+  const modeScreenEl = document.getElementById('modeScreen');
+  if (modeScreenEl) {
+    new MutationObserver(() => {
+      if (modeScreenEl.style.display === 'flex') refreshPinBtns();
+    }).observe(modeScreenEl, { attributes: true, attributeFilter: ['style'] });
+  }
+
+  // ─ Favorites tab render ──────────────────────────────────────────────
+  function renderFavTab() {
+    const favs       = getFavs();
+    const emptyState = document.getElementById('favEmptyState');
+    const favList    = document.getElementById('favList');
+    if (!favList) return;
+    if (!favs.length) {
+      if (emptyState) emptyState.style.display = '';
+      favList.innerHTML = '';
+      return;
+    }
+    if (emptyState) emptyState.style.display = 'none';
+    favList.innerHTML = favs.map(f =>
+      `<div class="collection-card fav-card" data-key="${f.key}" data-label="${f.label.replace(/"/g,'&quot;')}">
+        <div>
+          <div class="collection-name">${f.label}</div>
+        </div>
+        <button class="pin-btn pinned" data-key="${f.key}" aria-label="Unpin">
+          <svg class="pin-icon" viewBox="0 0 24 24"><path d="M16 3L8 11l-5 1 1-5 8-8 4 4zm-1 1l-7 7M9 15l-4 4"/></svg>
+        </button>
+       </div>`
+    ).join('');
+    // Bind fav-card clicks → open pack
+    favList.querySelectorAll('.fav-card').forEach(card => {
+      card.addEventListener('click', () => showModeScreen(card.dataset.key, card.dataset.label));
+      card.addEventListener('touchend', e => { if (e.target.closest('.pin-btn')) return; e.preventDefault(); showModeScreen(card.dataset.key, card.dataset.label); }, { passive: false });
+    });
+    // Bind unpin buttons inside fav tab
+    favList.querySelectorAll('.pin-btn').forEach(btn => {
+      btn.addEventListener('click', e => {
+        e.stopPropagation();
+        toggleFav(btn.dataset.key, getFavs().find(f => f.key === btn.dataset.key)?.label || btn.dataset.key);
+        refreshPinBtns();
+        renderFavTab();
+        renderDashFavs();
+      });
+      btn.addEventListener('touchend', e => {
+        e.stopPropagation(); e.preventDefault();
+        toggleFav(btn.dataset.key, getFavs().find(f => f.key === btn.dataset.key)?.label || btn.dataset.key);
+        refreshPinBtns();
+        renderFavTab();
+        renderDashFavs();
+      }, { passive: false });
+    });
+  }
+
+  // ─ Home screen favorites render (up to 4, sorted by last trained) ───────
+  function renderDashFavs() {
+    const favSec  = document.getElementById('dashFavSection');
+    const favList = document.getElementById('dashFavList');
+    if (!favSec || !favList) return;
+    const favs  = getFavs();
+    if (!favs.length) { favSec.style.display = 'none'; return; }
+    const times = getTrainedTimes();
+    // Sort by last trained (most recent first), untrained go last
+    const sorted = [...favs].sort((a, b) => (times[b.key] || 0) - (times[a.key] || 0));
+    const shown  = sorted.slice(0, 4);
+    favSec.style.display = '';
+    favList.innerHTML = shown.map(f =>
+      `<div class="collection-card" data-key="${f.key}" data-label="${f.label.replace(/"/g,'&quot;')}">
+        <div><div class="collection-name">${f.label}</div></div>
+        <div class="collection-arrow">›</div>
+       </div>`
+    ).join('');
+    favList.querySelectorAll('.collection-card').forEach(card => {
+      card.addEventListener('click', () => showModeScreen(card.dataset.key, card.dataset.label));
+      card.addEventListener('touchend', e => { e.preventDefault(); showModeScreen(card.dataset.key, card.dataset.label); }, { passive: false });
+    });
+  }
+
+  // ─ Init ─────────────────────────────────────────────────────────────────
+  refreshPinBtns();
+  renderFavTab();
+  renderDashFavs();
+
+  // Expose so showModeScreen patch can call recordPackTrained
+  window._favRenderDash = renderDashFavs;
+
+})();
 
 // ─── SPLASH SCREEN ────────────────────────────────────────────────────
 (function initSplash() {
