@@ -1145,3 +1145,73 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 
+/* ─── MODE SCREEN: HANDSFREE FLIP TOGGLE ───────────────────────────────── */
+
+.mode-hf-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 9px 20px;
+  margin: 0 auto 4px;
+  border: 1.5px solid #ddd;
+  border-radius: 20px;
+  cursor: pointer;
+  background: #fff;
+  -webkit-tap-highlight-color: transparent;
+  transition: background 0.18s, border-color 0.18s;
+  width: fit-content;
+  user-select: none;
+}
+
+.mode-hf-toggle.active {
+  background: #1c1c1e;
+  border-color: #1c1c1e;
+}
+
+.mode-hf-toggle-icon {
+  font-size: 15px;
+  line-height: 1;
+}
+
+.mode-hf-toggle-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #555;
+  white-space: nowrap;
+  transition: color 0.18s;
+}
+
+.mode-hf-toggle.active .mode-hf-toggle-label {
+  color: #fff;
+}
+
+.mode-flip-card {
+  perspective: 900px;
+}
+
+.mode-flip-inner {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.42s cubic-bezier(0.4, 0, 0.2, 1);
+  /* height = height of the mode-card so back face lines up */
+}
+
+.mode-flip-inner.flipped {
+  transform: rotateY(180deg);
+}
+
+.mode-flip-front,
+.mode-flip-back {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  width: 100%;
+}
+
+.mode-flip-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotateY(180deg);
+}
+
