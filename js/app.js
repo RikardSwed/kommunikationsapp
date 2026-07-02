@@ -3838,7 +3838,7 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
   const progClose = document.getElementById('progressSettingsClose');
 
   if (progBtn) {
-    const open = () => { loadSettingsUI(); if (progOverlay) progOverlay.style.display = ''; };
+    const open = () => { loadSettingsUI(); if (progOverlay) progOverlay.classList.add('open'); };
     progBtn.addEventListener('click', open);
     progBtn.addEventListener('touchend', e => { e.preventDefault(); open(); }, { passive: false });
   }
@@ -3846,7 +3846,7 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
   if (progClose) {
     const close = () => {
       saveSettingsFromUI();
-      if (progOverlay) progOverlay.style.display = 'none';
+      if (progOverlay) progOverlay.classList.remove('open');
       renderProgress();
     };
     progClose.addEventListener('click', close);
@@ -3896,7 +3896,7 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
     resetBtn.addEventListener('click', () => {
       if (confirm('Reset all progress data? This cannot be undone.')) {
         [K.sessions, K.streakCur, K.streakBest].forEach(k => localStorage.removeItem(k));
-        if (progOverlay) progOverlay.style.display = 'none';
+        if (progOverlay) progOverlay.classList.remove('open');
         renderProgress();
       }
     });
