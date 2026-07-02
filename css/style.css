@@ -1272,13 +1272,14 @@ body.pb-enabled .divider::after {
 
 .mode-flip-card {
   perspective: 900px;
+  /* Explicit height prevents collapse when back face is absolute */
+  min-height: 0;
 }
 
 .mode-flip-inner {
   position: relative;
   transform-style: preserve-3d;
   transition: transform 0.42s cubic-bezier(0.4, 0, 0.2, 1);
-  /* height = height of the mode-card so back face lines up */
 }
 
 .mode-flip-inner.flipped {
@@ -1296,6 +1297,16 @@ body.pb-enabled .divider::after {
   position: absolute;
   top: 0;
   left: 0;
+  /* Prevent touch events on hidden face from interfering */
+  pointer-events: none;
   transform: rotateY(180deg);
+}
+
+.mode-flip-inner.flipped .mode-flip-back {
+  pointer-events: auto;
+}
+
+.mode-flip-inner.flipped .mode-flip-front {
+  pointer-events: none;
 }
 
