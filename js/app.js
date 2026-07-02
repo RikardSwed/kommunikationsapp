@@ -1,7 +1,7 @@
 // app.js — All application logic for Communication Trainer
 // Depends on: data.js and multiStepData.js (must be loaded first)
 
-const VERSION = 'v1.16.0';
+const VERSION = 'v1.17.0';
 
 // ─── SCREENS ──────────────────────────────────────────────────────────────────
 const homeScreen     = document.getElementById('homeScreen');
@@ -327,6 +327,7 @@ function render() {
 }
 
 function flip(val, animate = true) {
+  if (val && !flipped && window.progCardFlipped) progCardFlipped();
   flipped = val;
   cardInner.style.transition = animate ? 'transform 0.4s ease' : 'none';
   cardInner.classList.toggle('flipped', flipped);
@@ -3547,6 +3548,403 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
   window._favRenderDash = renderDashFavs;
 
 })();
+
+// ─── PROGRESS TRACKING ───────────────────────────────────────────────────────────
+
+(function initProgressTracking() {
+
+  // ─ Storage keys ──────────────────────────────────────────────────────
+  const K = {
+    enabled:      'prog_enabled',
+    streakMode:   'prog_streak_mode',    // 'card' | 'time'
+    streakMinMin: 'prog_streak_min',     // minutes threshold for time mode
+    weeklyGoal:   'prog_weekly_goal',    // minutes
+    dailyGoal:    'prog_daily_goal',     // minutes or 0 = none
+    sessions:     'prog_sessions',       // [{date, packKey, packLabel, minutes, cards}]
+    streakCur:    'prog_streak_cur',
+    streakBest:   'prog_streak_best',
+    period:       'prog_period',         // 'week' | 'month'
+  };
+
+  // ─ Helpers ────────────────────────────────────────────────────────────────
+  const get  = k => { try { return JSON.parse(localStorage.getItem(k)); } catch { return null; } };
+  const set  = (k, v) => localStorage.setItem(k, JSON.stringify(v));
+  const bool = k => get(k) === true;
+
+  function todayStr() {
+    const d = new Date();
+    return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
+  }
+
+  function getSessions() { return get(K.sessions) || []; }
+  function saveSessions(s) { set(K.sessions, s); }
+
+  function getSettings() {
+    return {
+      enabled:      bool(K.enabled),
+      streakMode:   get(K.streakMode)   || 'card',
+      streakMinMin: get(K.streakMinMin) || 5,
+      weeklyGoal:   get(K.weeklyGoal)   || 60,
+      dailyGoal:    get(K.dailyGoal)    || 0,
+      period:       get(K.period)       || 'week',
+    };
+  }
+
+  // ─ Session tracking ───────────────────────────────────────────────────
+  let _sessionStart = null;
+  let _sessionPack  = null;
+  let _sessionCards = 0;
+
+  window.progStartSession = function(packKey, packLabel) {
+    if (!bool(K.enabled)) return;
+    _sessionStart = Date.now();
+    _sessionPack  = { key: packKey, label: packLabel };
+    _sessionCards = 0;
+  };
+
+  window.progCardFlipped = function() {
+    if (!bool(K.enabled)) return;
+    _sessionCards++;
+  };
+
+  window.progEndSession = function() {
+    if (!bool(K.enabled) || !_sessionStart || !_sessionPack) return;
+    const minutes = Math.round((Date.now() - _sessionStart) / 60000);
+    if (minutes < 0.1 && _sessionCards === 0) { _sessionStart = null; return; } // ignore trivial
+    const s = getSessions();
+    s.push({
+      date:      todayStr(),
+      packKey:   _sessionPack.key,
+      packLabel: _sessionPack.label,
+      minutes:   Math.max(0, minutes),
+      cards:     _sessionCards,
+    });
+    saveSessions(s);
+    _sessionStart = null;
+    _sessionPack  = null;
+    _sessionCards = 0;
+    updateStreak();
+    if (document.getElementById('progressScreen') &&
+        document.getElementById('progressScreen').style.display !== 'none') {
+      renderProgress();
+    }
+  };
+
+  // ─ Streak ─────────────────────────────────────────────────────────────────
+  function qualifiesForStreak(sessions, dateStr) {
+    const s = getSettings();
+    const daySess = sessions.filter(x => x.date === dateStr);
+    if (!daySess.length) return false;
+    if (s.streakMode === 'card') return daySess.some(x => x.cards > 0);
+    const mins = daySess.reduce((a, x) => a + x.minutes, 0);
+    return mins >= s.streakMinMin;
+  }
+
+  function updateStreak() {
+    const sessions = getSessions();
+    const today = todayStr();
+    let cur = 0;
+    let d = new Date();
+    while (true) {
+      const ds = `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
+      if (!qualifiesForStreak(sessions, ds)) break;
+      cur++;
+      d.setDate(d.getDate() - 1);
+    }
+    const best = Math.max(cur, get(K.streakBest) || 0);
+    set(K.streakCur,  cur);
+    set(K.streakBest, best);
+  }
+
+  // ─ Render ────────────────────────────────────────────────────────────────
+  function renderProgress() {
+    const s = getSettings();
+    const disabled = document.getElementById('progressDisabledMsg');
+    const content  = document.getElementById('progressContent');
+    if (!s.enabled) {
+      if (disabled) disabled.style.display = '';
+      if (content)  content.style.display  = 'none';
+      return;
+    }
+    if (disabled) disabled.style.display = 'none';
+    if (content)  content.style.display  = '';
+
+    const sessions = getSessions();
+    const today = todayStr();
+
+    // Streak
+    updateStreak();
+    const cur  = get(K.streakCur)  || 0;
+    const best = get(K.streakBest) || 0;
+    document.getElementById('progStreakNum').textContent  = cur;
+    document.getElementById('progStreakBest').textContent = best;
+
+    // Calendar — last 14 days
+    const cal = document.getElementById('progCalendar');
+    if (cal) {
+      cal.innerHTML = '';
+      for (let i = 13; i >= 0; i--) {
+        const d = new Date();
+        d.setDate(d.getDate() - i);
+        const ds = `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
+        const dot = document.createElement('div');
+        dot.className = 'prog-cal-dot' +
+          (qualifiesForStreak(sessions, ds) ? ' active' : '') +
+          (ds === today ? ' today' : '');
+        cal.appendChild(dot);
+      }
+    }
+
+    // Period
+    const period = s.period;
+    const cutoff = new Date();
+    if (period === 'week') cutoff.setDate(cutoff.getDate() - 6);
+    else cutoff.setDate(cutoff.getDate() - 29);
+    const cutoffStr = `${cutoff.getFullYear()}-${String(cutoff.getMonth()+1).padStart(2,'0')}-${String(cutoff.getDate()).padStart(2,'0')}`;
+    const periodSess = sessions.filter(x => x.date >= cutoffStr);
+
+    // Weekly goal ring
+    const weekCutoff = new Date(); weekCutoff.setDate(weekCutoff.getDate() - 6);
+    const weekStr = `${weekCutoff.getFullYear()}-${String(weekCutoff.getMonth()+1).padStart(2,'0')}-${String(weekCutoff.getDate()).padStart(2,'0')}`;
+    const weekMins = sessions.filter(x => x.date >= weekStr).reduce((a, x) => a + x.minutes, 0);
+    const wGoal = s.weeklyGoal;
+    const wPct  = Math.min(100, Math.round((weekMins / wGoal) * 100));
+    const circumference = 163.4;
+    const wOffset = circumference - (circumference * wPct / 100);
+    const ringFill = document.getElementById('progRingFill');
+    if (ringFill) ringFill.style.strokeDashoffset = wOffset;
+    const ringLabel = document.getElementById('progRingLabel');
+    if (ringLabel) ringLabel.textContent = wPct + '%';
+    const goalMain = document.getElementById('progGoalMain');
+    if (goalMain) goalMain.textContent = `${Math.round(weekMins)} / ${wGoal} min`;
+
+    // Daily goal ring
+    const dailySection = document.getElementById('progDailySection');
+    if (dailySection) dailySection.style.display = s.dailyGoal > 0 ? '' : 'none';
+    if (s.dailyGoal > 0) {
+      const dayMins = sessions.filter(x => x.date === today).reduce((a, x) => a + x.minutes, 0);
+      const dPct = Math.min(100, Math.round((dayMins / s.dailyGoal) * 100));
+      const dOffset = circumference - (circumference * dPct / 100);
+      const dRing = document.getElementById('progDailyRingFill');
+      if (dRing) dRing.style.strokeDashoffset = dOffset;
+      const dLabel = document.getElementById('progDailyRingLabel');
+      if (dLabel) dLabel.textContent = dPct + '%';
+      const dMain = document.getElementById('progDailyGoalMain');
+      if (dMain) dMain.textContent = `${Math.round(dayMins)} / ${s.dailyGoal} min`;
+    }
+
+    // Bars per pack
+    const packTotals = {};
+    periodSess.forEach(x => {
+      if (!packTotals[x.packKey]) packTotals[x.packKey] = { label: x.packLabel, minutes: 0 };
+      packTotals[x.packKey].minutes += x.minutes;
+    });
+    const sortedPacks = Object.values(packTotals).sort((a, b) => b.minutes - a.minutes);
+    const maxMins = sortedPacks.length ? sortedPacks[0].minutes : 1;
+    const barsEl = document.getElementById('progBars');
+    const emptyEl = document.getElementById('progBarsEmpty');
+    if (barsEl) {
+      if (!sortedPacks.length) {
+        barsEl.innerHTML = '';
+        if (emptyEl) emptyEl.style.display = '';
+      } else {
+        if (emptyEl) emptyEl.style.display = 'none';
+        barsEl.innerHTML = sortedPacks.map(p => {
+          const pct = Math.round((p.minutes / maxMins) * 100);
+          const label = Math.round(p.minutes) + 'm';
+          return `<div class="prog-bar-row">
+            <div class="prog-bar-name" title="${p.label}">${p.label}</div>
+            <div class="prog-bar-track"><div class="prog-bar-fill" style="width:${pct}%"></div></div>
+            <div class="prog-bar-val">${label}</div>
+          </div>`;
+        }).join('');
+      }
+    }
+
+    // Totals
+    const totalMin   = sessions.reduce((a, x) => a + x.minutes, 0);
+    const totalCards = sessions.reduce((a, x) => a + x.cards, 0);
+    const totalSess  = sessions.length;
+    const el = id => document.getElementById(id);
+    if (el('progTotalMin'))     el('progTotalMin').textContent     = Math.round(totalMin);
+    if (el('progTotalCards'))   el('progTotalCards').textContent   = totalCards;
+    if (el('progTotalSessions'))el('progTotalSessions').textContent = totalSess;
+  }
+
+  // ─ Settings overlay ───────────────────────────────────────────────────
+  function loadSettingsUI() {
+    const s = getSettings();
+    const tog = document.getElementById('progTrackingToggle');
+    if (tog) tog.checked = s.enabled;
+    const body = document.getElementById('progSettingsBody');
+    if (body) body.style.opacity = s.enabled ? '1' : '0.4';
+
+    const sm = document.getElementById(s.streakMode === 'time' ? 'streakModeTime' : 'streakModeCard');
+    if (sm) sm.checked = true;
+    const smt = document.getElementById('streakMinThreshold');
+    if (smt) smt.value = s.streakMinMin;
+
+    const wSel = document.getElementById('progWeeklyGoalSelect');
+    const wCustRow = document.getElementById('progWeeklyCustomRow');
+    const wCust = document.getElementById('progWeeklyCustom');
+    const wPresets = ['30','60','90','120'];
+    if (wSel) {
+      if (wPresets.includes(String(s.weeklyGoal))) { wSel.value = String(s.weeklyGoal); }
+      else { wSel.value = 'custom'; if (wCust) wCust.value = s.weeklyGoal; }
+      if (wCustRow) wCustRow.style.display = wSel.value === 'custom' ? '' : 'none';
+    }
+
+    const dSel = document.getElementById('progDailyGoalSelect');
+    const dCustRow = document.getElementById('progDailyCustomRow');
+    const dCust = document.getElementById('progDailyCustom');
+    const dPresets = ['none','5','10','15','20'];
+    if (dSel) {
+      const dv = s.dailyGoal > 0 ? String(s.dailyGoal) : 'none';
+      if (dPresets.includes(dv)) { dSel.value = dv; }
+      else { dSel.value = 'custom'; if (dCust) dCust.value = s.dailyGoal; }
+      if (dCustRow) dCustRow.style.display = dSel.value === 'custom' ? '' : 'none';
+    }
+  }
+
+  function saveSettingsFromUI() {
+    const tog = document.getElementById('progTrackingToggle');
+    set(K.enabled, tog ? tog.checked : false);
+
+    const smTime = document.getElementById('streakModeTime');
+    set(K.streakMode, smTime && smTime.checked ? 'time' : 'card');
+    const smt = document.getElementById('streakMinThreshold');
+    set(K.streakMinMin, smt ? parseInt(smt.value) || 5 : 5);
+
+    const wSel = document.getElementById('progWeeklyGoalSelect');
+    const wCust = document.getElementById('progWeeklyCustom');
+    if (wSel) {
+      set(K.weeklyGoal, wSel.value === 'custom'
+        ? (parseInt(wCust && wCust.value) || 60)
+        : parseInt(wSel.value));
+    }
+
+    const dSel = document.getElementById('progDailyGoalSelect');
+    const dCust = document.getElementById('progDailyCustom');
+    if (dSel) {
+      set(K.dailyGoal, dSel.value === 'none' ? 0
+        : dSel.value === 'custom' ? (parseInt(dCust && dCust.value) || 10)
+        : parseInt(dSel.value));
+    }
+  }
+
+  // Open/close
+  const progBtn = document.getElementById('progressSettingsBtn');
+  const progOverlay = document.getElementById('progressSettingsOverlay');
+  const progClose = document.getElementById('progressSettingsClose');
+
+  if (progBtn) {
+    const open = () => { loadSettingsUI(); if (progOverlay) progOverlay.style.display = ''; };
+    progBtn.addEventListener('click', open);
+    progBtn.addEventListener('touchend', e => { e.preventDefault(); open(); }, { passive: false });
+  }
+
+  if (progClose) {
+    const close = () => {
+      saveSettingsFromUI();
+      if (progOverlay) progOverlay.style.display = 'none';
+      renderProgress();
+    };
+    progClose.addEventListener('click', close);
+    progClose.addEventListener('touchend', e => { e.preventDefault(); close(); }, { passive: false });
+  }
+
+  // Tracking toggle dims settings body
+  const tog = document.getElementById('progTrackingToggle');
+  if (tog) {
+    tog.addEventListener('change', () => {
+      const body = document.getElementById('progSettingsBody');
+      if (body) body.style.opacity = tog.checked ? '1' : '0.4';
+    });
+  }
+
+  // Weekly goal custom row
+  const wSel = document.getElementById('progWeeklyGoalSelect');
+  if (wSel) {
+    wSel.addEventListener('change', () => {
+      const row = document.getElementById('progWeeklyCustomRow');
+      if (row) row.style.display = wSel.value === 'custom' ? '' : 'none';
+    });
+  }
+
+  // Daily goal custom row
+  const dSel = document.getElementById('progDailyGoalSelect');
+  if (dSel) {
+    dSel.addEventListener('change', () => {
+      const row = document.getElementById('progDailyCustomRow');
+      if (row) row.style.display = dSel.value === 'custom' ? '' : 'none';
+    });
+  }
+
+  // Period toggle
+  document.querySelectorAll('.prog-period-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.prog-period-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      set(K.period, btn.dataset.period);
+      renderProgress();
+    });
+  });
+
+  // Reset button
+  const resetBtn = document.getElementById('progResetBtn');
+  if (resetBtn) {
+    resetBtn.addEventListener('click', () => {
+      if (confirm('Reset all progress data? This cannot be undone.')) {
+        [K.sessions, K.streakCur, K.streakBest].forEach(k => localStorage.removeItem(k));
+        if (progOverlay) progOverlay.style.display = 'none';
+        renderProgress();
+      }
+    });
+  }
+
+  // Render when Progress tab is opened
+  const origShowTab = showTab;
+  window.showTab = function(tab) {
+    origShowTab(tab);
+    if (tab === 'progress') {
+      const ps = getSettings();
+      const periodBtn = document.getElementById(ps.period === 'month' ? 'progPeriodMonth' : 'progPeriodWeek');
+      document.querySelectorAll('.prog-period-btn').forEach(b => b.classList.remove('active'));
+      if (periodBtn) periodBtn.classList.add('active');
+      renderProgress();
+    }
+  };
+
+  // Init render
+  renderProgress();
+
+  // Expose endSession so showModeScreen and navFromTraining can call it
+  window._progEndSession = window.progEndSession;
+
+})();
+
+// Hook progress session into mode screen open/close
+const _origShowModeForProg = showModeScreen;
+window.showModeScreen = function(key, label) {
+  if (window.progEndSession) progEndSession(); // end any previous session
+  _origShowModeForProg(key, label);
+  if (window.progStartSession) progStartSession(key, label);
+};
+
+const _origNavFromTrainingForProg = navFromTraining;
+window.navFromTraining = function(id) {
+  if (window.progEndSession) progEndSession();
+  _origNavFromTrainingForProg(id);
+};
+
+// Hook card flip counter into render function
+const _origRenderForProg = window.render;
+window.render = function() {
+  if (_origRenderForProg) _origRenderForProg();
+  if (window.progCardFlipped && typeof inputIdx !== 'undefined') {
+    // Only count when a card is actually being flipped (handled in flip logic)
+  }
+};
 
 // ─── SPLASH SCREEN ────────────────────────────────────────────────────
 (function initSplash() {
