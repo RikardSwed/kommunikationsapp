@@ -1319,3 +1319,102 @@ body.pb-enabled .divider::after {
   transition: none;
 }
 
+/* ─── PROGRESS SCREEN ────────────────────────────────────────────────────────── */
+
+.progress-screen {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  width: 100%; max-width: 420px; margin: 0 auto;
+  background: #f0f2f5;
+  display: flex; flex-direction: column; overflow: hidden;
+}
+
+.progress-scroll {
+  flex: 1; overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: 8px 20px 100px;
+}
+
+.prog-section {
+  background: #fff; border-radius: 16px;
+  padding: 18px 16px; margin-bottom: 12px;
+}
+
+.prog-section-label {
+  font-size: 12px; font-weight: 700; color: #999;
+  letter-spacing: 0.7px; text-transform: uppercase; margin-bottom: 14px;
+}
+
+.prog-streak-row { display: flex; align-items: center; gap: 14px; margin-bottom: 16px; }
+.prog-streak-fire { font-size: 36px; line-height: 1; }
+.prog-streak-num { font-size: 40px; font-weight: 800; color: #1c1c1e; line-height: 1; }
+.prog-streak-sub { font-size: 12px; color: #aaa; margin-top: 2px; }
+.prog-streak-best { margin-left: auto; text-align: center; }
+.prog-streak-best-num { font-size: 24px; font-weight: 700; color: #555; }
+
+.prog-calendar { display: flex; gap: 5px; flex-wrap: wrap; }
+.prog-cal-dot { width: 18px; height: 18px; border-radius: 50%; background: #e8e8ed; }
+.prog-cal-dot.active { background: #FF6B00; }
+.prog-cal-dot.today { outline: 2px solid #FF6B00; outline-offset: 1px; }
+
+.prog-goal-row { display: flex; align-items: center; gap: 20px; }
+.prog-goal-ring-wrap { position: relative; width: 64px; height: 64px; flex-shrink: 0; }
+.prog-goal-ring { width: 64px; height: 64px; transform: rotate(-90deg); }
+.prog-ring-bg { fill: none; stroke: #e8e8ed; stroke-width: 7; }
+.prog-ring-fill {
+  fill: none; stroke: #FF6B00; stroke-width: 7; stroke-linecap: round;
+  transition: stroke-dashoffset 0.4s ease;
+}
+.prog-ring-label {
+  position: absolute; inset: 0;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 11px; font-weight: 700; color: #1c1c1e;
+}
+.prog-goal-main { font-size: 18px; font-weight: 700; color: #1c1c1e; }
+.prog-goal-sub { font-size: 13px; color: #aaa; margin-top: 3px; }
+
+.prog-bar-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 14px; }
+.prog-bar-header .prog-section-label { margin-bottom: 0; }
+.prog-period-toggle { display: flex; background: #f0f0f5; border-radius: 8px; padding: 2px; gap: 2px; }
+.prog-period-btn {
+  border: none; background: none; border-radius: 6px;
+  padding: 4px 12px; font-size: 13px; font-weight: 600; color: #888;
+  cursor: pointer; -webkit-tap-highlight-color: transparent;
+  transition: background 0.15s, color 0.15s;
+}
+.prog-period-btn.active { background: #fff; color: #1c1c1e; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+
+.prog-bars { display: flex; flex-direction: column; gap: 10px; }
+.prog-bar-row { display: flex; align-items: center; gap: 10px; }
+.prog-bar-name {
+  font-size: 13px; font-weight: 600; color: #555;
+  width: 110px; flex-shrink: 0;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.prog-bar-track { flex: 1; height: 8px; background: #e8e8ed; border-radius: 4px; overflow: hidden; }
+.prog-bar-fill { height: 100%; background: #FF6B00; border-radius: 4px; transition: width 0.4s ease; }
+.prog-bar-val { font-size: 12px; color: #aaa; width: 36px; text-align: right; flex-shrink: 0; }
+.prog-no-data { font-size: 14px; color: #bbb; text-align: center; padding: 16px 0; }
+
+.prog-totals { display: flex; justify-content: space-around; }
+.prog-total-item { text-align: center; }
+.prog-total-num { font-size: 28px; font-weight: 800; color: #1c1c1e; }
+.prog-total-label { font-size: 11px; color: #aaa; margin-top: 2px; }
+
+.prog-indent { padding-left: 16px; }
+.settings-radio-label { display: flex; align-items: center; gap: 8px; font-size: 15px; color: #1c1c1e; cursor: pointer; }
+.prog-num-input {
+  width: 52px; border: 1px solid #ddd; border-radius: 8px;
+  padding: 4px 6px; font-size: 14px; text-align: center; color: #1c1c1e;
+}
+.prog-select {
+  border: 1px solid #ddd; border-radius: 8px;
+  padding: 6px 10px; font-size: 14px; color: #1c1c1e;
+  background: #fff; cursor: pointer;
+}
+.prog-reset-btn {
+  background: none; border: none; color: #e53935;
+  font-size: 15px; font-weight: 600; cursor: pointer;
+  padding: 4px 0; -webkit-tap-highlight-color: transparent;
+}
+
