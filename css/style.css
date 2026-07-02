@@ -1275,7 +1275,7 @@ body.pb-enabled .divider::after {
 }
 
 .mode-flip-inner {
-  display: grid;
+  position: relative;
   transform-style: preserve-3d;
   transition: transform 0.42s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1286,13 +1286,15 @@ body.pb-enabled .divider::after {
 
 .mode-flip-front,
 .mode-flip-back {
-  grid-area: 1 / 1;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   width: 100%;
 }
 
 .mode-flip-back {
+  position: absolute;
+  top: 0;
+  left: 0;
   transform: rotateY(180deg);
   pointer-events: none;
 }
@@ -1303,5 +1305,6 @@ body.pb-enabled .divider::after {
 
 .mode-flip-inner.flipped .mode-flip-front {
   pointer-events: none;
+  visibility: hidden;
 }
 
