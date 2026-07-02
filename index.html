@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
   <title>Deckstack</title>
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="stylesheet" href="css/style.css?v=1160" />
+  <link rel="stylesheet" href="css/style.css?v=1170" />
 </head>
 <body>
 
@@ -74,14 +74,174 @@
 
 <!-- PROGRESS SCREEN -->
 <div class="progress-screen" id="progressScreen">
-  <div class="home-topbar"><div class="topbar-btn" style="visibility:hidden;">⚙️</div></div>
-  <div class="home-header">
-    <div class="home-title">Progress</div>
-    <div class="home-subtitle">Your training statistics</div>
+
+  <!-- Topbar -->
+  <div class="home-topbar" style="justify-content:space-between;">
+    <div class="home-title" style="font-size:22px;font-weight:800;">Progress</div>
+    <button class="topbar-btn" id="progressSettingsBtn" title="Progress settings">⚙️</button>
   </div>
-  <div class="placeholder-block">
-    <div class="placeholder-title">Coming soon</div>
-    <div class="placeholder-text">Stats on what and how you've trained will show up here.</div>
+
+  <!-- Scrollable content -->
+  <div class="progress-scroll" id="progressScroll">
+
+    <!-- Disabled state -->
+    <div id="progressDisabledMsg" style="display:none;">
+      <div class="placeholder-block">
+        <div class="placeholder-title">Tracking is off</div>
+        <div class="placeholder-text">Enable progress tracking in ⚙️ to start recording your training.</div>
+      </div>
+    </div>
+
+    <!-- Active state -->
+    <div id="progressContent">
+
+      <!-- Streak -->
+      <div class="prog-section">
+        <div class="prog-section-label">Streak</div>
+        <div class="prog-streak-row">
+          <div class="prog-streak-fire">🔥</div>
+          <div>
+            <div class="prog-streak-num" id="progStreakNum">0</div>
+            <div class="prog-streak-sub">days in a row</div>
+          </div>
+          <div class="prog-streak-best">
+            <div class="prog-streak-best-num" id="progStreakBest">0</div>
+            <div class="prog-streak-sub">best</div>
+          </div>
+        </div>
+        <!-- Mini calendar: last 14 days -->
+        <div class="prog-calendar" id="progCalendar"></div>
+      </div>
+
+      <!-- Goal -->
+      <div class="prog-section">
+        <div class="prog-section-label">Weekly goal</div>
+        <div class="prog-goal-row">
+          <div class="prog-goal-ring-wrap">
+            <svg class="prog-goal-ring" viewBox="0 0 64 64">
+              <circle class="prog-ring-bg" cx="32" cy="32" r="26" />
+              <circle class="prog-ring-fill" id="progRingFill" cx="32" cy="32" r="26"
+                stroke-dasharray="163.4" stroke-dashoffset="163.4" />
+            </svg>
+            <div class="prog-ring-label" id="progRingLabel">0%</div>
+          </div>
+          <div class="prog-goal-text">
+            <div class="prog-goal-main" id="progGoalMain">0 / 0 min</div>
+            <div class="prog-goal-sub" id="progGoalSub">this week</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Daily goal -->
+      <div class="prog-section" id="progDailySection">
+        <div class="prog-section-label">Daily goal</div>
+        <div class="prog-goal-row">
+          <div class="prog-goal-ring-wrap">
+            <svg class="prog-goal-ring" viewBox="0 0 64 64">
+              <circle class="prog-ring-bg" cx="32" cy="32" r="26" />
+              <circle class="prog-ring-fill" id="progDailyRingFill" cx="32" cy="32" r="26"
+                stroke-dasharray="163.4" stroke-dashoffset="163.4" />
+            </svg>
+            <div class="prog-ring-label" id="progDailyRingLabel">0%</div>
+          </div>
+          <div class="prog-goal-text">
+            <div class="prog-goal-main" id="progDailyGoalMain">0 / 0 min</div>
+            <div class="prog-goal-sub">today</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Period toggle + bars -->
+      <div class="prog-section">
+        <div class="prog-bar-header">
+          <div class="prog-section-label">Time per pack</div>
+          <div class="prog-period-toggle">
+            <button class="prog-period-btn active" id="progPeriodWeek" data-period="week">Week</button>
+            <button class="prog-period-btn" id="progPeriodMonth" data-period="month">Month</button>
+          </div>
+        </div>
+        <div class="prog-bars" id="progBars"></div>
+        <div class="prog-no-data" id="progBarsEmpty" style="display:none;">No training recorded yet.</div>
+      </div>
+
+      <!-- Total stats -->
+      <div class="prog-section prog-totals">
+        <div class="prog-total-item">
+          <div class="prog-total-num" id="progTotalMin">0</div>
+          <div class="prog-total-label">total minutes</div>
+        </div>
+        <div class="prog-total-item">
+          <div class="prog-total-num" id="progTotalCards">0</div>
+          <div class="prog-total-label">cards flipped</div>
+        </div>
+        <div class="prog-total-item">
+          <div class="prog-total-num" id="progTotalSessions">0</div>
+          <div class="prog-total-label">sessions</div>
+        </div>
+      </div>
+
+    </div><!-- end progressContent -->
+  </div><!-- end progress-scroll -->
+</div>
+
+<!-- PROGRESS SETTINGS OVERLAY -->
+<div class="settings-overlay" id="progressSettingsOverlay" style="display:none;">
+  <div class="settings-panel">
+    <div class="settings-title">Progress Settings</div>
+    <div class="settings-row">
+      <label>Enable tracking</label>
+      <label class="toggle"><input type="checkbox" id="progTrackingToggle" /><span class="toggle-slider"></span></label>
+    </div>
+    <div id="progSettingsBody">
+      <div class="settings-row">
+        <label>Count streak when</label>
+      </div>
+      <div class="settings-row prog-indent">
+        <label class="settings-radio-label">
+          <input type="radio" name="streakMode" value="card" id="streakModeCard" checked /> Flipped at least 1 card
+        </label>
+      </div>
+      <div class="settings-row prog-indent">
+        <label class="settings-radio-label">
+          <input type="radio" name="streakMode" value="time" id="streakModeTime" /> Trained at least
+          <input type="number" id="streakMinThreshold" class="prog-num-input" value="5" min="1" max="60" /> min
+        </label>
+      </div>
+      <div class="settings-row">
+        <label>Weekly goal</label>
+        <select id="progWeeklyGoalSelect" class="prog-select">
+          <option value="30">30 min</option>
+          <option value="60" selected>60 min</option>
+          <option value="90">90 min</option>
+          <option value="120">120 min</option>
+          <option value="custom">Custom...</option>
+        </select>
+      </div>
+      <div class="settings-row" id="progWeeklyCustomRow" style="display:none;">
+        <label>Custom (minutes)</label>
+        <input type="number" id="progWeeklyCustom" class="prog-num-input" value="60" min="1" max="999" />
+      </div>
+      <div class="settings-row">
+        <label>Daily goal</label>
+        <select id="progDailyGoalSelect" class="prog-select">
+          <option value="none" selected>None</option>
+          <option value="5">5 min</option>
+          <option value="10">10 min</option>
+          <option value="15">15 min</option>
+          <option value="20">20 min</option>
+          <option value="custom">Custom...</option>
+        </select>
+      </div>
+      <div class="settings-row" id="progDailyCustomRow" style="display:none;">
+        <label>Custom (minutes)</label>
+        <input type="number" id="progDailyCustom" class="prog-num-input" value="10" min="1" max="999" />
+      </div>
+      <div class="settings-row">
+        <button id="progResetBtn" class="prog-reset-btn">Reset all progress data…</button>
+      </div>
+    </div>
+    <div class="settings-version">v1.17.0</div>
+    <button class="settings-close" id="progressSettingsClose">Done</button>
   </div>
 </div>
 
@@ -719,7 +879,7 @@
       <label>Progress bar</label>
       <label class="toggle"><input type="checkbox" id="showProgressBar" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.16.0</div>
+    <div class="settings-version">v1.17.0</div>
     <button class="settings-close" id="settingsClose">Done</button>
   </div>
 </div>
@@ -792,7 +952,7 @@
       <label>Loop current strategy</label>
       <label class="toggle"><input type="checkbox" id="hfLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.16.0</div>
+    <div class="settings-version">v1.17.0</div>
     <button class="settings-close" id="hfSettingsClose">Done</button>
   </div>
 </div>
@@ -861,7 +1021,7 @@
       <label>Loop current strategy</label>
       <label class="toggle"><input type="checkbox" id="hfMemLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.16.0</div>
+    <div class="settings-version">v1.17.0</div>
     <button class="settings-close" id="hfMemSettingsClose">Done</button>
   </div>
 </div>
@@ -930,7 +1090,7 @@
       <label>Loop current category</label>
       <label class="toggle"><input type="checkbox" id="hfChallLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.16.0</div>
+    <div class="settings-version">v1.17.0</div>
     <button class="settings-close" id="hfChallSettingsClose">Done</button>
   </div>
 </div>
@@ -988,7 +1148,7 @@
       <label>Loop current combo</label>
       <label class="toggle"><input type="checkbox" id="hfFlowLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.16.0</div>
+    <div class="settings-version">v1.17.0</div>
     <button class="settings-close" id="hfFlowSettingsClose">Done</button>
   </div>
 </div>
@@ -1057,7 +1217,7 @@
       <label>Loop current mindset</label>
       <label class="toggle"><input type="checkbox" id="hfMindLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.16.0</div>
+    <div class="settings-version">v1.17.0</div>
     <button class="settings-close" id="hfMindSettingsClose">Done</button>
   </div>
 </div>
@@ -1126,7 +1286,7 @@
       <label>Loop current collection</label>
       <label class="toggle"><input type="checkbox" id="hfCollLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.16.0</div>
+    <div class="settings-version">v1.17.0</div>
     <button class="settings-close" id="hfCollSettingsClose">Done</button>
   </div>
 </div>
@@ -1248,7 +1408,7 @@
       <label style="font-size:13px; color:#888;">Export all ratings as JSON</label>
       <button id="feedbackExportBtn" style="font-size:13px; color:#555; background:#f0f0f0; border:1px solid #ddd; border-radius:8px; padding:6px 12px; cursor:pointer;">Export</button>
     </div>
-    <div class="settings-version">v1.16.0</div>
+    <div class="settings-version">v1.17.0</div>
   </div>
 </div>
 
@@ -1268,10 +1428,10 @@
   </button>
 </div>
 
-<script src="js/data.js?v=1160"></script>
-<script src="js/multiStepData.js?v=1160"></script>
-<script src="js/memorizeData.js?v=1160"></script>
-<script src="js/app.js?v=1160"></script>
+<script src="js/data.js?v=1170"></script>
+<script src="js/multiStepData.js?v=1170"></script>
+<script src="js/memorizeData.js?v=1170"></script>
+<script src="js/app.js?v=1170"></script>
 
 </body>
 </html>
