@@ -231,25 +231,6 @@ document.getElementById('modeBetaToggle').addEventListener('touchend', e => { e.
   toggle.addEventListener('click', flip);
   toggle.addEventListener('touchend', e => { e.preventDefault(); flip(); }, { passive: false });
 
-  // Reset to standard whenever mode screen is opened
-  const modeBackBtn = document.getElementById('modeBackBtn');
-  const origShowMode = showModeScreen;
-  // Patch showModeScreen to reset flip state on open
-  const _resetHf = () => {
-    if (hfActive) {
-      hfActive = false;
-      inners.forEach(el => el.classList.remove('flipped'));
-      toggle.classList.remove('active');
-      label.textContent = 'Switch to Handsfree';
-    }
-  };
-  // Hook into showModeScreen via event on the screen becoming visible
-  const observer = new MutationObserver(() => {
-    const ms = document.getElementById('modeScreen');
-    if (ms && ms.style.display === 'flex') _resetHf();
-  });
-  const ms = document.getElementById('modeScreen');
-  if (ms) observer.observe(ms, { attributes: true, attributeFilter: ['style'] });
 })();
 
 addModeListener('modeFlashcard', showTraining);
