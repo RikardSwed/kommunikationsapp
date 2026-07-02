@@ -3242,10 +3242,11 @@ document.querySelectorAll('.nav-tab').forEach(btn => {
     if (!lastPackSec || !last) { if (lastPackSec) lastPackSec.style.display = 'none'; return; }
     lastPackSec.style.display = '';
     lastPackName.textContent = last.label;
-    lastPackCard.onclick = () => {
-      saveLastPack(last.key, last.label);
-      showModeScreen(last.key, last.label);
-    };
+    let lpStartY = 0, lpMoved = false;
+    lastPackCard.ontouchstart = e => { lpStartY = e.touches[0].clientY; lpMoved = false; };
+    lastPackCard.ontouchmove  = e => { if (Math.abs(e.touches[0].clientY - lpStartY) > 8) lpMoved = true; };
+    lastPackCard.ontouchend   = e => { if (!lpMoved) { saveLastPack(last.key, last.label); showModeScreen(last.key, last.label); } };
+    lastPackCard.onclick      = () => { saveLastPack(last.key, last.label); showModeScreen(last.key, last.label); };
   }
 
   // ── Search results render ─────────────────────────────────────────────────
@@ -3260,14 +3261,27 @@ document.querySelectorAll('.nav-tab').forEach(btn => {
     ).join('');
     noResults.style.display = (!q || hits.length) ? 'none' : '';
     searchResults.querySelectorAll('.dash-result-card').forEach(el => {
-      el.addEventListener('click', () => {
+      let rStartY = 0, rMoved = false;
+      el.ontouchstart = e => { rStartY = e.touches[0].clientY; rMoved = false; };
+      el.ontouchmove  = e => { if (Math.abs(e.touches[0].clientY - rStartY) > 8) rMoved = true; };
+      el.ontouchend   = () => {
+        if (!rMoved) {
+          const key   = el.dataset.key;
+          const label = el.dataset.label;
+          addRecent(query.trim());
+          saveLastPack(key, label);
+          exitSearch(false);
+          showModeScreen(key, label);
+        }
+      };
+      el.onclick = () => {
         const key   = el.dataset.key;
         const label = el.dataset.label;
         addRecent(query.trim());
         saveLastPack(key, label);
         exitSearch(false);
         showModeScreen(key, label);
-      });
+      };
     });
   }
 
@@ -3506,8 +3520,11 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
        </div>`
     ).join('');
     favList.querySelectorAll('.collection-card').forEach(card => {
-      card.addEventListener('click', () => showModeScreen(card.dataset.key, card.dataset.label));
-      card.addEventListener('touchend', e => { e.preventDefault(); showModeScreen(card.dataset.key, card.dataset.label); }, { passive: false });
+      let fStartY = 0, fMoved = false;
+      card.ontouchstart = e => { fStartY = e.touches[0].clientY; fMoved = false; };
+      card.ontouchmove  = e => { if (Math.abs(e.touches[0].clientY - fStartY) > 8) fMoved = true; };
+      card.ontouchend   = () => { if (!fMoved) showModeScreen(card.dataset.key, card.dataset.label); };
+      card.onclick      = () => showModeScreen(card.dataset.key, card.dataset.label);
     });
   }
 
