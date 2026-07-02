@@ -66,6 +66,7 @@ function navToTraining(id) {
 }
 
 function navFromTraining(id) {
+  window._returningFromTraining = true;
   // Show mode immediately behind (no animation), hide home
   homeScreen.style.display = 'none';
   modeScreen.style.display = 'flex';
@@ -245,14 +246,17 @@ document.getElementById('modeBetaToggle').addEventListener('touchend', e => { e.
   toggle.addEventListener('click', flip);
   toggle.addEventListener('touchend', e => { e.preventDefault(); flip(); }, { passive: false });
 
-  // Reset instantly when mode-screen opens (not when leaving for training)
+  // Reset instantly when mode-screen opens fresh (not when returning from training)
   const modeScreenEl = document.getElementById('modeScreen');
   if (modeScreenEl) {
     let _prevDisplay = 'none';
     new MutationObserver(() => {
       const cur = modeScreenEl.style.display;
-      // Became visible AND was previously hidden (i.e. freshly opened)
-      if (cur === 'flex' && _prevDisplay !== 'flex') resetInstant();
+      if (cur === 'flex' && _prevDisplay !== 'flex') {
+        // Only reset if NOT returning from a training screen
+        if (!window._returningFromTraining) resetInstant();
+        window._returningFromTraining = false;
+      }
       _prevDisplay = cur;
     }).observe(modeScreenEl, { attributes: true, attributeFilter: ['style'] });
   }
@@ -3521,7 +3525,7 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
     favSec.style.display = '';
     favList.innerHTML = shown.map(f =>
       `<div class="collection-card" data-key="${f.key}" data-label="${f.label.replace(/"/g,'&quot;')}">
-        <div><div class="collection-name">${f.label}</div></div>
+        <div><div class="collection-name">${f.label}</div><div class="collection-meta">📌 Favorite</div></div>
         <div class="collection-arrow">›</div>
        </div>`
     ).join('');
