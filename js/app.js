@@ -3460,9 +3460,7 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
         <div>
           <div class="collection-name">${f.label}</div>
         </div>
-        <button class="pin-btn pinned" data-key="${f.key}" aria-label="Unpin">
-          <svg class="pin-icon" viewBox="0 0 24 24"><path d="M16 3L8 11l-5 1 1-5 8-8 4 4zm-1 1l-7 7M9 15l-4 4"/></svg>
-        </button>
+        <button class="pin-btn pinned" data-key="${f.key}" aria-label="Unpin">📌</button>
        </div>`
     ).join('');
     // Bind fav-card clicks → open pack
