@@ -945,7 +945,11 @@ body.pb-enabled .divider::after {
   flex: 1;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
-  padding: 0 20px 100px;
+  padding: 8px 20px 100px;
+}
+
+.dashboard-scroll #dashSearchView {
+  padding: 0;
 }
 
 .dash-topbar {
