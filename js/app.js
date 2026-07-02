@@ -245,11 +245,15 @@ document.getElementById('modeBetaToggle').addEventListener('touchend', e => { e.
   toggle.addEventListener('click', flip);
   toggle.addEventListener('touchend', e => { e.preventDefault(); flip(); }, { passive: false });
 
-  // Reset instantly when navigating away (screen hidden, no animation)
+  // Reset instantly when mode-screen opens (not when leaving for training)
   const modeScreenEl = document.getElementById('modeScreen');
   if (modeScreenEl) {
+    let _prevDisplay = 'none';
     new MutationObserver(() => {
-      if (modeScreenEl.style.display === 'none') resetInstant();
+      const cur = modeScreenEl.style.display;
+      // Became visible AND was previously hidden (i.e. freshly opened)
+      if (cur === 'flex' && _prevDisplay !== 'flex') resetInstant();
+      _prevDisplay = cur;
     }).observe(modeScreenEl, { attributes: true, attributeFilter: ['style'] });
   }
 })();
