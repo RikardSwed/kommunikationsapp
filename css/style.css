@@ -1203,11 +1203,13 @@ body.pb-enabled .divider::after {
   justify-content: center;
   -webkit-tap-highlight-color: transparent;
   border-radius: 8px;
+  font-size: 18px;
+  opacity: 0.3;
+  transition: opacity 0.15s;
 }
 
-.pin-btn.pinned .pin-icon {
-  stroke: #FF6B00;
-  fill: #FF6B00;
+.pin-btn.pinned {
+  opacity: 1;
 }
 
 /* Mode screen topbar: back on left, pin on right */
@@ -1218,15 +1220,14 @@ body.pb-enabled .divider::after {
   padding: 16px 20px 8px;
 }
 
-.mode-pin-btn .pin-icon {
-  width: 22px;
-  height: 22px;
-  stroke: #ccc;
+.mode-pin-btn {
+  font-size: 20px;
+  opacity: 0.3;
+  transition: opacity 0.15s;
 }
 
-.mode-pin-btn.pinned .pin-icon {
-  stroke: #FF6B00;
-  fill: #FF6B00;
+.mode-pin-btn.pinned {
+  opacity: 1;
 }
 
 /* ─── MODE SCREEN: HANDSFREE FLIP TOGGLE ───────────────────────────────── */
