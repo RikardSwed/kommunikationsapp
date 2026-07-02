@@ -228,9 +228,30 @@ document.getElementById('modeBetaToggle').addEventListener('touchend', e => { e.
     label.textContent = hfActive ? 'Switch to Standard' : 'Switch to Handsfree';
   }
 
+  function resetInstant() {
+    if (!hfActive) return;
+    // Disable transition, reset, re-enable — all while screen is hidden
+    inners.forEach(el => el.classList.add('no-transition'));
+    hfActive = false;
+    inners.forEach(el => el.classList.remove('flipped'));
+    toggle.classList.remove('active');
+    label.textContent = 'Switch to Handsfree';
+    // Re-enable transition after a frame
+    requestAnimationFrame(() => {
+      inners.forEach(el => el.classList.remove('no-transition'));
+    });
+  }
+
   toggle.addEventListener('click', flip);
   toggle.addEventListener('touchend', e => { e.preventDefault(); flip(); }, { passive: false });
 
+  // Reset instantly when navigating away (screen hidden, no animation)
+  const modeScreenEl = document.getElementById('modeScreen');
+  if (modeScreenEl) {
+    new MutationObserver(() => {
+      if (modeScreenEl.style.display === 'none') resetInstant();
+    }).observe(modeScreenEl, { attributes: true, attributeFilter: ['style'] });
+  }
 })();
 
 addModeListener('modeFlashcard', showTraining);
