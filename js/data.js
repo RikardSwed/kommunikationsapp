@@ -228,6 +228,302 @@ const collections = {
         { q: "Someone has a strong opinion about what a friend did",   a: '"Have you spoken to them about it? There might be a side you haven\'t heard."' },
       ]
     }
+  ],
+
+  conversationaldepth: [
+    {
+      name: "Storytelling",
+      description: "A good story needs more than a memory — it needs structure, timing, and feeling. Storytelling as a communication skill means being able to pull out relevant stories spontaneously and deliver them in a way that engages the listener.\n\nStructure:\n1. Hook — open with something that sparks curiosity: \"You know what happened to me?\"\n2. Context — set the scene briefly: who, where, when\n3. Conflict / Twist — what makes it interesting — the unexpected or funny part\n4. Resolution — what happened in the end\n5. Point (optional) — sometimes none is needed\n\nWhat makes a story engaging:\n• Specific details — not \"someone\" but \"my colleague Marcus\"\n• Vary the pace — slow down at the dramatic part\n• Show how you felt, not just what happened\n• A clear twist or point\n\nMindset: Tell it to share an experience — not to impress.",
+      inputs: [
+        { q: "Last time you hurt yourself",             a: "Tell it with build-up and humour — hook, context, twist, resolution." },
+        { q: "Last time you had a really good time",    a: "Tell it with energy and warmth — include one specific detail that brings it to life." },
+        { q: "Something funny that happened recently",  a: "Build toward the punchline — time the payoff, don't rush it." },
+        { q: "A time you were embarrassed",             a: "Use self-distance and humour — own it, don't hide it." },
+        { q: "A time you were proud of something",     a: "Tell it with quiet confidence — specific detail, no need to oversell." },
+        { q: "A childhood memory",                     a: "Set the scene with one vivid detail — make the listener see it." },
+        { q: "Something unexpected that happened",     a: "Open with the hook, build the tension — then land it." },
+      ]
+    },
+    {
+      name: "Deep Questions",
+      description: "Deep questions move a conversation from facts to experience, from events to meaning. They show genuine interest and create space for the other person to share more of who they actually are.\n\nFour types:\n• Experience questions — \"How did that feel?\" / \"What were you thinking in that moment?\"\n• Meaning questions — \"What does that mean to you?\" / \"What was the most important part?\"\n• Motivation questions — \"What made you want to do that?\" / \"Why that specifically?\"\n• Hypothetical — \"If you could do it again, what would you do differently?\"\n\nThe technique:\n• Start with a simple question → listen → follow up deeper\n• Use pauses — most people go deeper if you don't fill the silence\n• One question at a time — not an interrogation\n\nMindset: Genuinely curious — not looking for a clever question.",
+      inputs: [
+        { q: "Someone gives a surface answer",                  a: '"What made you choose that?" — go one level deeper.' },
+        { q: "Someone shares something interesting",            a: '"What struck you most about it?" — invite more.' },
+        { q: "You want to move from facts to feelings",         a: "They describe an event → \"How did that actually feel?\"" },
+        { q: "Someone says something surprising",              a: '"Wait — what do you mean by that?" — open it up.' },
+        { q: "You want to understand what drives someone",      a: '"What is it that motivates you in that?"' },
+        { q: "The conversation is staying too surface level",   a: '"Can I ask something a bit more personal?"' },
+      ]
+    },
+    {
+      name: "Sharing Opinions",
+      description: "Sharing opinions creates personality and makes conversations alive. Many avoid it to avoid conflict — but opinions are what make you real to others.\n\nSix ways to share:\n1. Direct and clear — \"I actually think X is better than Y, and here's why.\"\n2. Spontaneous — \"You know what I think? I actually believe that...\"\n3. With humour — \"Controversial opinion: [opinion]. I'm ready for the consequences.\"\n4. Soft and open — \"I'm not sure everyone agrees, but I think...\"\n5. Playfully provocative — \"I actually think [unexpected view] — and I'll defend it.\"\n6. With curiosity — share your view and immediately invite theirs\n\nWhat makes it work:\n• Specificity — not \"it was good\" but \"what I liked most was X because...\"\n• Authenticity — share what you actually think\n• Openness — share without demanding agreement\n\nMindset: My opinions are part of who I am — they're worth sharing.",
+      inputs: [
+        { q: "Share an opinion on a current event",               a: "Direct and clear, without lecturing — state your view and invite theirs." },
+        { q: "Share an opinion on something controversial but light", a: '"Controversial opinion: [opinion]. Fight me." — warm tone, open to pushback.' },
+        { q: "Share an opinion on food, music or film",           a: "Specific and genuine — what do you actually think, and why?" },
+        { q: "Share something you feel strongly about",           a: "Share with conviction, calmly — without shutting the other person down." },
+        { q: "Share a spontaneous opinion mid-conversation",      a: '"You know what, I actually think..." — natural, unplanned.' },
+        { q: "Share an opinion with humour",                     a: '"Controversial opinion: [opinion]. I\'m ready to defend it."' },
+        { q: "Share an opinion seriously and directly",           a: "Calm, clear, no hedging — just say what you think." },
+      ]
+    },
+    {
+      name: "Sharing Emotions",
+      description: "Many people talk about what happens but avoid saying how they actually feel. Sharing emotions creates depth and connection — and it doesn't have to be a big thing.\n\nThree levels:\n• Light — \"I'm actually pretty pleased with how that went.\"\n• Mid — \"This makes me a bit nervous, if I'm honest.\"\n• Deeper — \"That affected me more than I expected it to.\"\n\nWhat makes it authentic:\n• Specificity — not \"I feel fine\" but \"I actually felt proud\"\n• Timing — share it when it's relevant, not forced\n• No need for a reaction — you share, you don't demand a response\n\nMindset: Sharing how I feel is not weakness — it's connection.",
+      inputs: [
+        { q: "Share that you felt proud of something",   a: '"I\'m actually pretty proud of how that went — better than I expected."' },
+        { q: "Share that you felt disappointed",         a: '"That was a bit of a letdown, if I\'m honest."' },
+        { q: "Share that you felt excited",              a: '"I\'m actually really looking forward to it."' },
+        { q: "Share that you felt frustrated",           a: '"It\'s frustrating — I don\'t understand why it keeps happening."' },
+        { q: "Share that you felt grateful for someone", a: '"I\'m actually grateful you said that."' },
+        { q: "Share that you felt nervous",              a: '"I was more nervous going into that than I usually am."' },
+      ]
+    }
+  ],
+
+  compliments: [
+    {
+      name: "Giving Compliments",
+      description: "Giving compliments is one of the most fundamental social strategies. It can happen naturally and genuinely — but the skill also trains the ability to give compliments in situations where it's not obvious: when something has gone wrong, when you want something, or when you want to soften a tense atmosphere.\n\nWhat to compliment:\n• Appearance — clothes, style, expression\n• Competence — work, craft, sport, music\n• Personality — humour, warmth, patience, courage\n• Actions — something they did, a decision they made\n• Way of being — how they handle difficult situations\n\nThree types:\n1. Natural — something positive happens and you express it genuinely\n2. Strategic — you want to achieve something, soften the mood, or open a conversation\n3. Repairing — something has gone wrong; the compliment creates connection before the issue is addressed\n\nMindset: I'm actively looking for something positive to lift up. A genuine compliment opens doors that arguments never can.",
+      inputs: [
+        { q: "Someone does something impressive",           a: "Specific and genuine — name what they did, not just that it was good." },
+        { q: "Someone looks good today",                   a: "Give a specific compliment on their appearance — one detail is more powerful than a general statement." },
+        { q: "Someone handled a difficult situation well",  a: "Name what they did: \"The way you stayed calm when that happened — that was impressive.\"" },
+        { q: "Someone made something — food, art, work",    a: "Be specific — what exactly was good, and why?" },
+        { q: "You want to soften the mood before something difficult", a: "Start with a genuine compliment, then address the issue — the order matters." },
+        { q: "Someone has a quality you genuinely admire",  a: "Name the quality directly: \"I've always admired how you...\"" },
+        { q: "Someone does something bad but also something right", a: "Find something genuine to lift even in a difficult moment — it creates contact." },
+      ]
+    },
+    {
+      name: "Accepting Compliments",
+      description: "Many people don't know how to receive a compliment. Common traps: dismissing it (\"No no, it was nothing\"), overdoing the thanks, or going awkwardly silent. The skill is to receive with confidence and warmth.\n\nThree ways to receive:\n1. Warm and genuine — \"Thank you, that means a lot.\" Simple, sincere.\n2. Playful and confident — \"Thanks — I see you have good taste.\" / \"Good that you noticed.\"\n3. Curious and reciprocal — \"Thank you! What made you think of that?\"\n\nWhat to avoid:\n• Dismissing: \"No but it was nothing special...\"\n• Overdoing: \"Oh my god thank you so much really!!\"\n• Going stiff: silence or a nervous smile without responding\n\nMindset: I deserve to receive this. Receiving well is a gift back to the person giving it.",
+      inputs: [
+        { q: "Someone says you look great today",           a: "Receive with warmth or lightness — not \"no no it's nothing\"." },
+        { q: "Someone compliments your work",              a: "Receive genuinely — maybe add something real about the process." },
+        { q: "Someone says you handled something well",    a: '"Thank you — that was important to me." — confirm without diminishing.' },
+        { q: "Someone compliments your sense of humour",  a: "Receive playfully — it fits the tone." },
+        { q: "Someone says you are talented",             a: "Receive calmly without dismissing or overdoing it." },
+      ]
+    },
+    {
+      name: "Self Disclosure",
+      description: "Self disclosure means sharing your actual emotional reaction to a situation — openly and without blaming the other person. It's not complaining or defending — it's communicating what's actually happening in you.\n\nWhy it works: if you say \"you're being unfair\" the other person can dispute it. If you say \"I feel treated unfairly\" — that's a fact about you. It can't be disputed.\n\nStructure:\n1. Feeling — \"I feel...\" / \"This makes me...\"\n2. Situation — \"...when you say X\" / \"...in situations like this\"\n3. Optional wish — \"I'd like...\"\n\nExamples:\n• \"I feel pressured when you keep asking. I've said what I think.\"\n• \"That makes me sad to hear. I thought we were on the same page.\"\n• \"I feel torn — I want to help but this doesn't work for me right now.\"\n\nMindset: I-statements disarm. You-statements escalate.",
+      inputs: [
+        { q: "Someone criticises you and you feel hurt",       a: '"I feel hurt by what you said." — feeling, not counterattack.' },
+        { q: "Someone is pressuring you",                      a: '"I feel pressured right now and that doesn\'t work for me."' },
+        { q: "You want to de-escalate a conflict",            a: "Share the feeling without accusing — open up instead of closing down." },
+        { q: "You feel defensive but want to stay open",      a: '"I notice I\'m getting defensive — I want to understand what you mean."' },
+        { q: "You feel torn between helping and your own limits", a: '"I want to help, but I feel like this doesn\'t work for me right now."' },
+        { q: "Someone makes a demand you don't want to meet", a: '"I feel conflicted about this — can I explain where I\'m at?"' },
+      ]
+    }
+  ],
+
+  selfhumour: [
+    {
+      name: "Self Humour",
+      description: "Self humour means joking about yourself in a way that shows self-distance — you see your own flaws and don't take them too seriously. It's not self-criticism or self-contempt. It's a sign of security: you don't need to be perfect to be okay.\n\nThe difference:\n• Self-criticism: \"I'm always so stupid, I can't do anything right.\"\n• Self humour: \"Yeah, that wasn't exactly my sharpest moment — but I'm consistent.\"\n\nFour techniques:\n1. Acknowledge with humour — \"Yes, that's true. I'm not exactly an expert on that.\"\n2. Exaggerate the flaw — \"That was classic me — I'm probably the worst person in the world at this.\"\n3. Accept with dignity — \"Yes, it's a fact. I've made peace with it.\"\n4. Turn it into charm — \"It's one of my more interesting qualities.\"\n\nMindset: I don't need to be perfect to be okay. Self-distance is strength, not weakness.",
+      inputs: [
+        { q: "You make a mistake in front of others",          a: "Acknowledge it with a joke, move on — don't dwell." },
+        { q: "You say something awkward",                     a: '"Yeah, that was awkward. You all witnessed that." — own it with humour.' },
+        { q: "You trip or do something clumsy",               a: '"Elegant as always." — brief, warm, move on.' },
+        { q: "You are bad at something someone else is good at", a: '"Yeah, that\'s not exactly my strongest area — we can agree on that."' },
+        { q: "You say something embarrassing",                a: "Accept it with a warm comment about yourself — don't try to erase it." },
+        { q: "Someone teases you about a flaw",               a: "Receive it with humour instead of defending — maybe exaggerate it even more." },
+      ]
+    },
+    {
+      name: "Jokingly Bragging",
+      description: "Jokingly bragging means exaggerating your own qualities or achievements in a way that's obviously a joke — the opposite of self-deprecation, but just as playful.\n\nWhat makes it work:\n• The exaggeration is so obvious it's clearly play\n• Warm tone — not actual arrogance\n• Quick and light — one line, move on\n• Best when combined with self-humour (brag about one thing, joke about another)\n\nExamples:\n• \"I woke up like this. Some people are just gifted.\"\n• \"That was excellent — even by my standards.\"\n• \"I don't want to brag, but... actually, I do.\"\n\nMindset: Play and lightness — not actual superiority.",
+      inputs: [
+        { q: "You do something well",                          a: '"That was excellent — even by my standards."' },
+        { q: "Someone notices something good about you",       a: '"I know. It\'s a gift, really."' },
+        { q: "You want to brag about something minor",         a: '"I don\'t want to brag, but... actually, I do."' },
+        { q: "Something goes unexpectedly right",              a: '"I planned it that way."' },
+        { q: "You look good today",                           a: '"I woke up like this. Some people are just gifted."' },
+      ]
+    },
+    {
+      name: "Push-Pull",
+      description: "Push-pull means alternating between pulling someone in (warmth, interest, compliment) and pushing them back (light challenge, tease, withdrawal of attention). The rhythm creates tension and keeps the interaction alive.\n\nWhy it works:\nConstant approval is predictable. Constant challenge is exhausting. The alternation creates a dynamic where the other person stays engaged and curious.\n\nExamples:\n• \"You're actually really interesting — I wasn't expecting that.\" (pull → implied push)\n• \"That's a good point.\" [pause] \"I'm still not completely convinced.\" (pull → push)\n• \"I like you.\" \"You're a lot to handle sometimes.\" (pull → push)\n\nKey principle:\n• Push and pull in the same sentence or nearby — not hours apart\n• Warm tone throughout — this is play, not real rejection\n• Don't explain the technique\n\nMindset: Genuine reactions create more tension than performed ones.",
+      inputs: [
+        { q: "Someone says something impressive",              a: '"That was actually good." [brief pause] "I\'m still thinking about whether I agree though."' },
+        { q: "Someone seems very interested in you",           a: "Show interest, then pull back slightly — don't match their energy fully." },
+        { q: "You want to create playful tension",            a: '"I like you." — then let a beat pass without filling it.' },
+        { q: "Someone gives you a lot of attention",           a: "Receive it warmly, then redirect — don't become the pursuer." },
+        { q: "Someone makes a good point",                    a: '"Fair point." [pause] "I\'m not totally convinced yet though."' },
+      ]
+    },
+    {
+      name: "Joke About My Flaws",
+      description: "Joking about your own flaws in social situations — a specific application of self humour that works especially well in group settings or when you're first getting to know someone.\n\nThe principle: if you name your flaw first, nobody else can use it against you. And when you frame it with lightness, it becomes a feature rather than a weakness.\n\nExamples:\n• \"I'm the kind of person who [flaw]. You've been warned.\"\n• \"I know, I know — it's a character flaw. I'm working on it.\"\n• \"Classic me.\"\n\nMindset: Naming my own flaws with warmth disarms them. I own it before anyone else can.",
+      inputs: [
+        { q: "You arrive somewhere and you're late",           a: '"Classic me — I\'ve been late to everything since 1994."' },
+        { q: "You forget something obvious",                  a: '"I know, I know. It\'s a character flaw. I\'m working on it."' },
+        { q: "You make the same mistake as usual",            a: '"You\'d think I\'d have learned by now. You\'d be wrong."' },
+        { q: "Someone points out a recurring weakness",       a: '"Yes. I\'m fully aware. I\'ve made peace with it."' },
+        { q: "You do something uncharacteristically well",    a: '"I surprise myself sometimes."' },
+      ]
+    }
+  ],
+
+  startingconnecting: [
+    {
+      name: "Starting Conversations",
+      description: "Most people wait for conversations to start themselves. Taking the initiative is a skill — and it's about having a repertoire of natural openers for different situations.\n\nKey opener types:\n1. Simple greeting — \"Hi, how are you?\"\n2. Introduce yourself — \"I don't think we've met — I'm...\"\n3. Specific compliment — \"I like your jacket.\"\n4. Comment on the situation — \"It's really packed in here today.\"\n5. Question about the situation — \"Is this your first time here?\"\n6. Shared experience — \"That was a tough presentation, wasn't it?\"\n7. Open question — \"What do you do when you're not here?\"\n8. Observation about them — \"You look like someone who's done this before.\"\n9. Humour — \"This queue is probably faster if we walk.\"\n10. Framing — \"I'd kick myself if I didn't come say hi.\"\n\nMindset: Simple openers work best — I don't need to be clever, just natural.",
+      inputs: [
+        { q: "Start a conversation with a stranger at a social event",    a: "Situational opener: comment on something you both notice — then ask a question." },
+        { q: "Start a conversation with someone you've met briefly before", a: '"I think we\'ve met once — I\'m [name]. How do you know [host]?"' },
+        { q: "Start a conversation in a queue or waiting situation",       a: "Light observation about the shared situation — keep it brief and warm." },
+        { q: "Start a conversation with someone interesting",             a: "Observation about them + natural follow-up: \"You look like someone who...\"" },
+        { q: "You're new somewhere and want to connect",                  a: '"I\'m new here — how are you?" / introduce yourself directly.' },
+        { q: "Re-engage someone you haven't spoken to in a while",        a: "Reference something relevant to your history — then update each other." },
+        { q: "You want to start a conversation but feel hesitant",        a: '"I\'d kick myself if I didn\'t come say hi." — frame it honestly, then go.' },
+        { q: "Someone gives a short answer to your opener",               a: "Try a different angle — share something about yourself to invite them in." },
+      ]
+    },
+    {
+      name: "Small Talk Flow",
+      description: "Small talk isn't meaningless — it's the social glue that creates safety and opens the door to deeper conversations. The skill is navigating surface conversations with ease: keeping things flowing, switching topics naturally, and reading when someone is engaged.\n\nCore principles:\n• Build on what they say — every answer contains a new thread\n• Share back — small talk is mutual, not an interview\n• Read the energy — short answers mean try a different topic\n• Switch topics smoothly — use bridges: \"That reminds me of...\" / \"Completely different topic but...\"\n• End well — \"This was great to talk to you\" + a natural close\n\nTopic progression:\nThe situation you're in → Work → Interests → Light opinions and preferences\n\nMindset: Small talk creates safety — I build on what they say, there's always a thread.",
+      inputs: [
+        { q: "You're talking with someone you just met at a party",      a: "Start with the situation, then build on one detail they mention." },
+        { q: "You're in a work break room with a colleague you don't know well", a: "Shared context (work) is the natural starting point — then move somewhere lighter." },
+        { q: "There's an awkward silence",                               a: "Comment on the situation you're both in — it's always available." },
+        { q: "A conversation has stalled",                               a: '"Completely different topic — what do you do when you\'re not working?"' },
+        { q: "Someone gives short answers",                              a: "Try a different topic, or share something about yourself to invite them in." },
+        { q: "You want to move to something more interesting",           a: '"This is a basic question but — what are you actually good at?"' },
+      ]
+    },
+    {
+      name: "Finding Common Ground",
+      description: "Common ground is the fastest way to build rapport. It's not about having the same interests — it's about finding overlaps in experiences, reactions, values or perspectives and making them visible in the conversation.\n\nFive types of common ground:\n1. Experiences — you've been in similar situations\n2. Reactions — you respond the same way to something\n3. Values — you care about similar things\n4. Interests — you like the same things\n5. Resistance — you dislike the same things (powerful, use carefully)\n\nKey techniques:\n• Relate back — \"That's exactly like when I...\"\n• Me too moment — \"Wait, you too? I thought I was the only one.\"\n• Common reaction — \"I know exactly what you mean — it's completely absurd.\"\n• Make it explicit — \"It's funny, we seem to think the same way about that.\"\n\nMindset: There's always something in common — I look for it actively.",
+      inputs: [
+        { q: "Someone mentions their job",                                a: "Find one aspect you can relate to — even tangentially — and lift it." },
+        { q: "Someone has a very different background from you",          a: "Look for a common reaction or value rather than a common experience." },
+        { q: "Someone shares an interest you don't have",                a: '"I don\'t know much about it — but that thing about X sounds familiar actually."' },
+        { q: "You want to build rapport quickly",                         a: "Scan what they say for any overlap, name the first one you find explicitly." },
+        { q: "You notice something you have in common",                  a: '"Wait — you too? I thought I was the only one." — make it explicit.' },
+        { q: "Someone shares an experience similar to yours",            a: '"I know exactly what you mean — I had exactly that feeling when..."' },
+      ]
+    },
+    {
+      name: "Mirroring & Paraphrasing",
+      description: "Mirroring and paraphrasing are techniques for showing you've genuinely listened — and for inviting the other person to say more. Used by therapists and negotiators alike, they're among the most powerful tools for building connection.\n\nThree levels:\n1. Keyword mirroring — repeat the last word or a key word as a question: \"Stressful?\" / \"Three years?\"\n2. Paraphrasing — restate what they said in your own words: \"So if I understand right, you mean...\"\n3. Emotion reflection — reflect the feeling behind the words: \"That sounds really frustrating.\"\n\nWhy it works:\n• Shows you actually listened\n• Invites them to confirm, correct, or go deeper\n• Takes pressure off you to say something clever\n• Creates a space where they feel heard\n\nAvoid: parrot-mirroring (repeating word for word), interrupting mid-sentence, interpreting too far.\n\nMindset: My job right now is to understand — not to respond.",
+      inputs: [
+        { q: "Someone tells you about their weekend",              a: "Pick up a keyword or feeling: \"Sounds like it was a bit chaotic?\"" },
+        { q: "Someone shares something they're excited about",     a: "Match the energy: \"Wait — three years you've been doing this?\"" },
+        { q: "Someone describes a problem they had",               a: '"That sounds really frustrating." — emotion reflection, not advice.' },
+        { q: "You want to deepen a surface conversation",          a: '"So if I get it right, it\'s not X that bothers you, it\'s more Y?"' },
+        { q: "Someone gives a one-word answer",                    a: "Keyword mirror: they say \"fine\" → \"Just fine?\"" },
+        { q: "You want to show you really heard someone",          a: '"If I understand right, what you\'re actually saying is..." — then invite correction.' },
+      ]
+    }
+  ],
+
+  listeningresponding: [
+    {
+      name: "Listening",
+      description: "Active listening is one of the most underrated social skills. Most people listen to respond — not to understand. The skill is to actually hear what the other person is saying, show it, and respond to what they actually meant.\n\nSeven components:\n1. Presence — phone away, eye contact, body toward them\n2. Non-verbal signals — nods, \"mm\", open expression\n3. Don't interrupt — let them finish before responding\n4. Acknowledge — \"I hear you\" / \"That sounds tough\"\n5. Follow-up question — \"What happened then?\" / \"What did you mean by X?\"\n6. Summarise — \"If I understand right, you mean...\"\n7. Listen for the feeling, not just the facts\n\nAvoid: preparing your reply while they talk / interrupting with your own experiences / minimising / giving advice without being asked.\n\nMindset: I listen to understand — not to respond.",
+      inputs: [
+        { q: "Someone is telling a long story",                       a: "Stay in it — nod, follow-up questions at natural pauses, don't rush them." },
+        { q: "Someone is explaining something complicated",           a: '"If I understand right, you mean..." — summarise to confirm.' },
+        { q: "Someone is sharing something emotionally difficult",    a: "Presence and acknowledgement first — not solutions." },
+        { q: "Someone is giving you feedback",                        a: "Listen all the way through without defending — understand first." },
+        { q: "Someone is describing a problem they have",             a: '"Do you want me to listen, or would you like some thoughts?" — ask first.' },
+        { q: "You notice your mind wandering while someone talks",    a: '"Sorry — can you say that again?" — notice it, reconnect honestly.' },
+        { q: "Someone is sharing something you disagree with",        a: "Listen all the way and understand their point fully before responding." },
+      ]
+    },
+    {
+      name: "Agreeing",
+      description: "Agreeing is more than saying \"yes\" or \"exactly\". It's a way to create connection, show you're listening, and build on what the other person said. But reflexive or false agreement loses its power — it has to feel real.\n\nSix ways to agree:\n1. Simple and genuine — \"Yes, that's really true.\"\n2. Enthusiastic — \"Exactly! That's exactly what I think.\"\n3. With recognition — \"Yes, and I felt exactly the same when...\"\n4. With nuance — \"Yes, largely — though I'd add...\"\n5. Build on it — \"Yes, and that makes me think...\"\n6. Validate the feeling — \"I completely understand that — it makes total sense you'd feel that way.\"\n\nAvoid: reflexive agreement without listening / agreeing with things you don't believe / agreeing then immediately changing topic.\n\nMindset: Genuine agreement builds trust. Empty agreement does the opposite.",
+      inputs: [
+        { q: "Someone shares an opinion you genuinely agree with",      a: '"I completely agree — and I\'ve been thinking about that for a while."' },
+        { q: "Someone describes an experience similar to yours",        a: '"Yes, and I felt exactly the same when..." — relate back.' },
+        { q: "Someone makes a point you hadn't considered",             a: '"That\'s a good way to see it — I hadn\'t thought of it that way."' },
+        { q: "You want to build on what someone said",                  a: '"Yes, and that makes me think..." — agree and extend.' },
+        { q: "Someone expresses a feeling you recognise",              a: '"I completely get that — it makes total sense you\'d feel that way."' },
+        { q: "You agree but want to add nuance",                       a: '"Yes, largely — though I\'d add one thing..."' },
+      ]
+    },
+    {
+      name: "Disagree",
+      description: "Disagreeing is often harder than agreeing — fear of conflict makes many people go along with things against their will. The skill is to actually say what you think when it's different — in the right way for the situation.\n\nSix ways to disagree:\n1. Direct and clear — \"I actually don't agree with that. I think...\"\n2. Soft but firm — \"I see it a bit differently — for me it's more about...\"\n3. Via question — \"Are you sure about that? I thought it was more...\"\n4. With respect for their view — \"I understand why you think that — and still I think...\"\n5. Playful — \"No, that's actually completely wrong. And I'll explain why.\" (with a smile)\n6. Strong and direct — \"No, that's not right. Here's why.\"\n\nAvoid: agreeing to avoid discomfort / attacking the person instead of the opinion / backing down without reason.\n\nMindset: Disagreeing is not an attack — it's honesty.",
+      inputs: [
+        { q: "Someone states something you genuinely disagree with",    a: '"I actually don\'t agree with that — I think..."' },
+        { q: "Someone makes a factual claim you know is wrong",         a: '"Are you sure about that? I thought it was more..."' },
+        { q: "Someone expresses a value you don't share",               a: '"I understand why you think that — and I see it differently."' },
+        { q: "You want to push back without creating conflict",         a: "Soft but firm — hold your line warmly, don't fold." },
+        { q: "You disagree but want to keep the relationship warm",     a: '"That\'s an interesting angle — I actually think the opposite though."' },
+        { q: "You disagree strongly and want to be direct",            a: '"No, that\'s not right. Here\'s why." — calm, clear, no hedging.' },
+      ]
+    },
+    {
+      name: "Share Feelings",
+      description: "Most people answer \"how are you?\" with \"fine\" — regardless of how things actually are. The skill is to practise actually answering honestly, and to share feelings spontaneously in the right context.\n\nThis requires both awareness of what you're actually feeling, and the courage to share it.\n\nHow to share authentically:\n• Specific feeling — not \"fine\" but \"actually a bit tired but otherwise okay\"\n• Calibrated depth — not too personal too fast, but not empty either\n• Without demanding a reaction — you share, you don't need comfort\n• With openness — \"I'm not sure exactly why, but it feels like...\"\n\nThree levels:\n• Light — \"I'm actually a bit stressed right now, but it'll sort itself out.\"\n• Mid — \"I'm carrying a feeling I can't quite put my finger on.\"\n• Deep — \"What I actually feel about this is...\"\n\nMindset: Sharing how I feel is not weakness — it's connection.",
+      inputs: [
+        { q: "Someone asks how you are",                               a: '"Actually a bit [X] right now." — answer honestly, not just \"fine\".' },
+        { q: "Share how you feel about something happening in your life", a: "Name the feeling specifically — what is it actually?" },
+        { q: "Share how you feel about something someone did for you",  a: '"I was actually touched by that." — share the feeling, not just a thank you.' },
+        { q: "Share a feeling you've been carrying for a while",       a: "Find the words for it — share it without needing a specific reaction." },
+        { q: "Share a feeling that surprised you",                     a: '"I didn\'t expect to feel this way, but..." — honest and open.' },
+        { q: "You want to go deeper in a conversation",                a: "Share something real about how you feel — invite them to do the same." },
+      ]
+    }
+  ],
+
+  influenceframing: [
+    {
+      name: "Persuasion Framing",
+      description: "Persuasion that works is rarely about having the best arguments — it's about understanding the other person's perspective and presenting your idea in a way that fits their values and needs.\n\nFive principles:\n1. Understand their perspective first — what do they care about? What's their concern?\n2. Find common ground — start with what you agree on, not where you differ\n3. Frame your proposal in their values — \"This would help you achieve X\" (their X, not yours)\n4. Use concrete images and stories — facts rarely persuade; feeling and image do\n5. Give them a choice — \"There are a couple of ways we could do this...\"\n\nHandling resistance:\nInvitation → acknowledge → reframe → offer new perspective\n\"I understand that X feels risky. And you're right that it requires Y. What I'd suggest is...\"\n\nMindset: I'm not persuading against them — I'm helping them see something new.",
+      inputs: [
+        { q: "You want someone to consider a new idea",                a: '"I thought of something I think you\'d actually like — it\'s about X."' },
+        { q: "Someone is hesitant about something",                    a: "Acknowledge the concern, then reframe: \"I understand that. And what I'm proposing actually takes that into account.\"" },
+        { q: "You're making a case for something at work",             a: "Start with shared ground: \"We all want X to work — here's one way.\"" },
+        { q: "You want to change someone's mind without a debate",     a: "Ask their perspective first. Listen. Then share yours." },
+        { q: "Someone is resistant",                                   a: '"That\'s a fair objection." — acknowledge it, then reframe, not argue.' },
+        { q: "You want to pitch an idea persuasively",                 a: "Concrete image + their value + a choice: \"You could either X or Y — which fits better?\"" },
+      ]
+    },
+    {
+      name: "Reframe",
+      description: "Reframing means taking a statement or situation and presenting it from a different angle — so that it either loses its sting, gains a new positive charge, or reveals a different truth.\n\nTypes of reframe:\n1. Positive reframe — find the upside or neutral reading of something negative\n2. Context reframe — the same behaviour means something different in a different context\n3. Meaning reframe — change what the event means, not what it is\n4. Humorous reframe — take something seriously, present it absurdly (or vice versa)\n\nExamples:\n• \"You're always so serious\" → \"I take the things that matter seriously — I think that's a good thing.\"\n• \"That failed\" → \"That's one version of events — here's another way to look at it.\"\n• \"This is too hard\" → \"Hard and impossible aren't the same thing.\"\n\nMindset: Every frame is a choice. I can choose a different one.",
+      inputs: [
+        { q: "Someone says something negative about you",              a: "Find the alternative reading — present it calmly and directly." },
+        { q: "A situation looks like a failure",                       a: '"That\'s one way to see it. Here\'s another."' },
+        { q: "Someone says you have a flaw",                          a: "Reframe the flaw as a feature in a different context." },
+        { q: "Someone presents a limiting belief as a fact",          a: '"Hard and impossible aren\'t the same thing."' },
+        { q: "A situation feels stuck",                               a: "Change the frame: what would this look like if it were actually going well?" },
+        { q: "Someone tries to define you negatively",                a: "Reframe it: \"I'd call it [alternative framing] — and I'm okay with that.\"" },
+      ]
+    },
+    {
+      name: "Grounding",
+      description: "Grounding means being anchored in yourself — knowing what you value and being able to communicate it naturally. It creates authenticity and depth in conversations, and is the foundation for building real rapport.\n\nThis isn't lecturing about your values — it's sharing them as a natural part of a conversation.\n\nWays to ground yourself in conversation:\n• Share what you believe without it feeling like a manifesto\n• Tell about a time your values were tested — or showed themselves\n• Answer a question about yourself with something that's actually true and important to you\n• Say no to something that doesn't fit who you are — and know why\n\nExamples:\n• \"What really grounds me is having time to myself in the morning — without it, the rest of the day is harder.\"\n• \"I believe strongly in honesty even when it's uncomfortable. It's cost me things, but it's worth it.\"\n\nMindset: I know what I stand for — and it's okay to show it.",
+      inputs: [
+        { q: "Share what you value most in friendships",              a: "Share what matters most — specifically, not generally." },
+        { q: "Share what grounds you when things are chaotic",        a: '"What really grounds me is..." — concrete and genuine.' },
+        { q: "Share a core principle you actually live by",           a: "State it clearly and concretely — and maybe when it was tested." },
+        { q: "Share what kind of person you're trying to be",         a: "Honest and unpretentious — not a CV, an actual answer." },
+        { q: "Share what matters most to you right now in life",      a: "Answer genuinely — what are you actually prioritising?" },
+        { q: "Someone asks what you believe in",                      a: "Share one real belief — not a list, just one thing that's actually true." },
+      ]
+    },
+    {
+      name: "Observation",
+      description: "The ability to observe — to really see what's around you and in the person you're talking to — is the foundation for many other strategies. A sharp observer notices things others miss, and that gives them material for humour, curiosity, compliments, and depth.\n\nWhat to observe:\n• The environment — something unusual, a detail that sets the tone, a contrast\n• The person — appearance, expression, energy, way of moving, tone of voice\n• The behaviour — patterns, deviations, reactions\n• The atmosphere — what's in the room but not being said\n\nWhat to do with the observation:\n• Comment on it\n• Exaggerate it for humour\n• Use it as an entry point to a question\n• Keep it and let it inform how you act\n\nMindset: I train myself to actually see — not just look.",
+      inputs: [
+        { q: "Notice something unusual about the environment",        a: "Name it specifically — what does it tell you about this place?" },
+        { q: "Notice something specific about a person's appearance", a: "What's most characteristic about them right now — how would you describe it to someone who couldn't see them?" },
+        { q: "Notice a change in someone's mood or energy",           a: "How are they different now compared to ten minutes ago?" },
+        { q: "Notice something most people would walk past",          a: "A detail that's easy to miss but says something — what is it?" },
+        { q: "Notice a pattern in how someone behaves",               a: "What do they do consistently? What does it tell you?" },
+        { q: "Notice something that creates an interesting contrast", a: "Two things that don't quite fit together — what's the tension there?" },
+      ]
+    }
   ]
 
 };
