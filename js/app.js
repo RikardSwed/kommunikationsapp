@@ -1,7 +1,7 @@
 // app.js — All application logic for Communication Trainer
 // Depends on: data.js and multiStepData.js (must be loaded first)
 
-const VERSION = 'v1.17.9';
+const VERSION = 'v1.18.0';
 
 // ─── SCREENS ──────────────────────────────────────────────────────────────────
 const homeScreen     = document.getElementById('homeScreen');
@@ -3728,6 +3728,15 @@ document.querySelectorAll('.nav-tab').forEach(btn => {
   // ── Init ─────────────────────────────────────────────────────────────────
   updateWelcome();
   renderLastPack();
+
+  // Recommended cards
+  document.querySelectorAll('#dashRecommendedSection .collection-card').forEach(card => {
+    let rSY = 0, rMv = false;
+    card.ontouchstart = e => { rSY = e.touches[0].clientY; rMv = false; };
+    card.ontouchmove  = e => { if (Math.abs(e.touches[0].clientY - rSY) > 8) rMv = true; };
+    card.ontouchend   = () => { if (!rMv) showModeScreen(card.dataset.key, card.dataset.label); };
+    card.onclick      = () => showModeScreen(card.dataset.key, card.dataset.label);
+  });
 
 })();
 
