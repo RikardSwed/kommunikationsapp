@@ -1,7 +1,7 @@
 // app.js — All application logic for Communication Trainer
 // Depends on: data.js and multiStepData.js (must be loaded first)
 
-const VERSION = 'v1.18.1';
+const VERSION = 'v1.19.0';
 
 // ─── SCREENS ──────────────────────────────────────────────────────────────────
 const homeScreen     = document.getElementById('homeScreen');
@@ -4314,14 +4314,40 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
 
 })();
 
+// ─── DARK MODE (THEME) ────────────────────────────────────────────────
+(function initTheme() {
+  const THEME_KEY = 'dev_dark_mode';
+
+  function applyTheme(dark) {
+    if (dark) {
+      document.body.classList.add('theme-ember');
+    } else {
+      document.body.classList.remove('theme-ember');
+    }
+  }
+
+  // Apply saved preference immediately (before any render)
+  const saved = localStorage.getItem(THEME_KEY) === 'true';
+  applyTheme(saved);
+
+  // Wire up the toggle once DOM is ready
+  const toggle = document.getElementById('devDarkModeToggle');
+  if (toggle) {
+    toggle.checked = saved;
+    toggle.addEventListener('change', () => {
+      const dark = toggle.checked;
+      localStorage.setItem(THEME_KEY, dark);
+      applyTheme(dark);
+    });
+  }
+})();
+
 // ─── SPLASH SCREEN ────────────────────────────────────────────────────
 (function initSplash() {
   const splash = document.getElementById('splashScreen');
   if (!splash) return;
   setTimeout(() => {
     splash.classList.add('hidden');
-    // Restore app background colour as splash fades
-    document.body.style.background = '#f0f2f5';
     setTimeout(() => { splash.style.display = 'none'; }, 500);
   }, 1500);
 })();
