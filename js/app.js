@@ -1,7 +1,7 @@
 // app.js — All application logic for Communication Trainer
 // Depends on: data.js and multiStepData.js (must be loaded first)
 
-const VERSION = 'v1.17.0';
+const VERSION = 'v1.17.2';
 
 // ─── SCREENS ──────────────────────────────────────────────────────────────────
 const homeScreen     = document.getElementById('homeScreen');
@@ -1083,6 +1083,12 @@ document.getElementById('hfCloseBtn').addEventListener('click', () => {
 });
 document.getElementById('hfSettingsBtn').addEventListener('click', () =>
   document.getElementById('hfSettingsOverlay').classList.add('open'));
+document.getElementById('hfSettingsClose').addEventListener('click', () =>
+  document.getElementById('hfSettingsOverlay').classList.remove('open'));
+document.getElementById('hfSettingsOverlay').addEventListener('click', e => {
+  if (e.target === document.getElementById('hfSettingsOverlay'))
+    document.getElementById('hfSettingsOverlay').classList.remove('open');
+});
 
 // Allow scrolling in hfCardInfo overlay
 const hfCardInfoEl = document.getElementById('hfCardInfo');
@@ -1358,6 +1364,10 @@ document.getElementById('hfMemSettingsBtn').addEventListener('click', () =>
 
 document.getElementById('hfMemSettingsClose').addEventListener('click', () =>
   document.getElementById('hfMemSettingsOverlay').classList.remove('open'));
+document.getElementById('hfMemSettingsOverlay').addEventListener('click', e => {
+  if (e.target === document.getElementById('hfMemSettingsOverlay'))
+    document.getElementById('hfMemSettingsOverlay').classList.remove('open');
+});
 
 // Allow scrolling in hfMemCardInfo overlay
 hfMemCardInfoEl.addEventListener('touchstart', e => e.stopPropagation(), { passive: true });
@@ -2307,6 +2317,10 @@ document.getElementById('hfChallSettingsBtn').addEventListener('click', () =>
   document.getElementById('hfChallSettingsOverlay').classList.add('open'));
 document.getElementById('hfChallSettingsClose').addEventListener('click', () =>
   document.getElementById('hfChallSettingsOverlay').classList.remove('open'));
+document.getElementById('hfChallSettingsOverlay').addEventListener('click', e => {
+  if (e.target === document.getElementById('hfChallSettingsOverlay'))
+    document.getElementById('hfChallSettingsOverlay').classList.remove('open');
+});
 
 const hfChallCardInfoEl = document.getElementById('hfChallCardInfo');
 hfChallCardInfoEl.addEventListener('touchstart', e => e.stopPropagation(), { passive: true });
@@ -2560,6 +2574,10 @@ document.getElementById('hfFlowSettingsBtn').addEventListener('click', () =>
   document.getElementById('hfFlowSettingsOverlay').classList.add('open'));
 document.getElementById('hfFlowSettingsClose').addEventListener('click', () =>
   document.getElementById('hfFlowSettingsOverlay').classList.remove('open'));
+document.getElementById('hfFlowSettingsOverlay').addEventListener('click', e => {
+  if (e.target === document.getElementById('hfFlowSettingsOverlay'))
+    document.getElementById('hfFlowSettingsOverlay').classList.remove('open');
+});
 const hfFlowCardInfoEl = document.getElementById('hfFlowCardInfo');
 hfFlowCardInfoEl.addEventListener('touchstart', e => e.stopPropagation(), { passive: true });
 hfFlowCardInfoEl.addEventListener('touchmove',  e => e.stopPropagation(), { passive: true });
@@ -2812,6 +2830,10 @@ document.getElementById('hfMindSettingsBtn').addEventListener('click', () =>
   document.getElementById('hfMindSettingsOverlay').classList.add('open'));
 document.getElementById('hfMindSettingsClose').addEventListener('click', () =>
   document.getElementById('hfMindSettingsOverlay').classList.remove('open'));
+document.getElementById('hfMindSettingsOverlay').addEventListener('click', e => {
+  if (e.target === document.getElementById('hfMindSettingsOverlay'))
+    document.getElementById('hfMindSettingsOverlay').classList.remove('open');
+});
 
 const hfMindCardInfoEl = document.getElementById('hfMindCardInfo');
 hfMindCardInfoEl.addEventListener('touchstart', e => e.stopPropagation(), { passive: true });
@@ -3065,6 +3087,10 @@ document.getElementById('hfCollSettingsBtn').addEventListener('click', () =>
   document.getElementById('hfCollSettingsOverlay').classList.add('open'));
 document.getElementById('hfCollSettingsClose').addEventListener('click', () =>
   document.getElementById('hfCollSettingsOverlay').classList.remove('open'));
+document.getElementById('hfCollSettingsOverlay').addEventListener('click', e => {
+  if (e.target === document.getElementById('hfCollSettingsOverlay'))
+    document.getElementById('hfCollSettingsOverlay').classList.remove('open');
+});
 
 const hfCollCardInfoEl = document.getElementById('hfCollCardInfo');
 hfCollCardInfoEl.addEventListener('touchstart', e => e.stopPropagation(), { passive: true });
