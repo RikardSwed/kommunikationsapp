@@ -1,7 +1,7 @@
 // app.js — All application logic for Communication Trainer
 // Depends on: data.js and multiStepData.js (must be loaded first)
 
-const VERSION = 'v1.18.0';
+const VERSION = 'v1.18.1';
 
 // ─── SCREENS ──────────────────────────────────────────────────────────────────
 const homeScreen     = document.getElementById('homeScreen');
@@ -1581,6 +1581,8 @@ applyInputCounterVisibility();
   // Apply to all collection-card elements that have data-key
   function applyAccessLevel() {
     document.querySelectorAll('.collection-card[data-key]').forEach(card => {
+      // Skip cards not in Library (e.g. recommended, dashboard cards)
+      if (!card.closest('#libTabPacks, #libTabTopics, #libTabFavorites')) return;
       const key = card.dataset.key;
       const cfg = PACK_CONFIG[key];
       if (!cfg) return;
