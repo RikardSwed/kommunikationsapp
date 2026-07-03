@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
   <title>Deckstack</title>
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="stylesheet" href="css/style.css?v=1172" />
+  <link rel="stylesheet" href="css/style.css?v=1173" />
 </head>
 <body>
 
@@ -240,7 +240,7 @@
         <button id="progResetBtn" class="prog-reset-btn">Reset all progress data…</button>
       </div>
     </div>
-    <div class="settings-version">v1.17.2</div>
+    <div class="settings-version">v1.17.3</div>
     <button class="settings-close" id="progressSettingsClose">Done</button>
   </div>
 </div>
@@ -298,11 +298,213 @@
     </div>
   </div>
 
-  <!-- Tab: Topics (placeholder) -->
-  <div class="library-tab-content library-placeholder" id="libTabTopics" style="display:none;">
-    <div class="library-placeholder-icon">◫</div>
-    <div class="library-placeholder-title">Coming soon</div>
-    <div class="library-placeholder-text">Browse packs grouped by topic.</div>
+  <!-- Tab: Topics -->
+  <div class="library-tab-content" id="libTabTopics" style="display:none;">
+
+    <div class="topic-group">
+      <div class="topic-header" data-topic="assertiveness">
+        <div class="topic-title">Assertiveness</div>
+        <div class="topic-count">1 pack</div>
+        <div class="topic-chevron">›</div>
+      </div>
+      <div class="topic-packs" id="topicAssertiveness">
+        <div class="collection-card" data-key="assertive" data-label="Assertive Communication">
+          <div><div class="collection-name">Assertive Communication</div><div class="collection-meta">4 strategies · Flashcard mode</div></div>
+          <div class="collection-arrow">›</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="topic-group">
+      <div class="topic-header" data-topic="humour">
+        <div class="topic-title">Humour &amp; Playfulness</div>
+        <div class="topic-count">2 packs</div>
+        <div class="topic-chevron">›</div>
+      </div>
+      <div class="topic-packs" id="topicHumour">
+        <div class="collection-card" data-key="humour" data-label="Humour Practise">
+          <div><div class="collection-name">Humour Practise</div><div class="collection-meta">4 strategies · Flashcard mode</div></div>
+          <div class="collection-arrow">›</div>
+        </div>
+        <div class="collection-card" data-key="teasing" data-label="Teasing &amp; Playfulness">
+          <div><div class="collection-name">Teasing &amp; Playfulness</div><div class="collection-meta">7 strategies · Flashcard mode</div></div>
+          <div class="collection-arrow">›</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="topic-group">
+      <div class="topic-header" data-topic="criticism">
+        <div class="topic-title">Criticism &amp; Correction</div>
+        <div class="topic-count">1 pack</div>
+        <div class="topic-chevron">›</div>
+      </div>
+      <div class="topic-packs" id="topicCriticism">
+        <div class="collection-card" data-key="criticism" data-label="Criticism &amp; Correction">
+          <div><div class="collection-name">Criticism &amp; Correction</div><div class="collection-meta">4 strategies · Flashcard mode</div></div>
+          <div class="collection-arrow">›</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="topic-group">
+      <div class="topic-header" data-topic="conversation">
+        <div class="topic-title">Conversation &amp; Flow</div>
+        <div class="topic-count">1 pack</div>
+        <div class="topic-chevron">›</div>
+      </div>
+      <div class="topic-packs" id="topicConversation">
+        <div class="collection-card" data-key="conversational" data-label="Conversational Skills">
+          <div><div class="collection-name">Conversational Skills</div><div class="collection-meta">2 collections · Collections mode</div></div>
+          <div class="collection-arrow">›</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="topic-group topic-group--empty">
+      <div class="topic-header" data-topic="compliments">
+        <div class="topic-title">Compliments &amp; Validation</div>
+        <div class="topic-count topic-count--empty">No packs yet</div>
+        <div class="topic-chevron topic-chevron--empty">›</div>
+      </div>
+    </div>
+
+    <div class="topic-group topic-group--empty">
+      <div class="topic-header" data-topic="storytelling">
+        <div class="topic-title">Storytelling &amp; Explanation</div>
+        <div class="topic-count topic-count--empty">No packs yet</div>
+        <div class="topic-chevron topic-chevron--empty">›</div>
+      </div>
+    </div>
+
+    <div class="topic-group topic-group--empty">
+      <div class="topic-header" data-topic="questions">
+        <div class="topic-title">Questions &amp; Conversation Starters</div>
+        <div class="topic-count topic-count--empty">No packs yet</div>
+        <div class="topic-chevron topic-chevron--empty">›</div>
+      </div>
+    </div>
+
+    <div class="topic-group topic-group--empty">
+      <div class="topic-header" data-topic="transitions">
+        <div class="topic-title">Transitions &amp; Flow</div>
+        <div class="topic-count topic-count--empty">No packs yet</div>
+        <div class="topic-chevron topic-chevron--empty">›</div>
+      </div>
+    </div>
+
+    <div class="topic-group topic-group--empty">
+      <div class="topic-header" data-topic="emotions">
+        <div class="topic-title">Emotions &amp; Emotional Regulation</div>
+        <div class="topic-count topic-count--empty">No packs yet</div>
+        <div class="topic-chevron topic-chevron--empty">›</div>
+      </div>
+    </div>
+
+    <div class="topic-group topic-group--empty">
+      <div class="topic-header" data-topic="opinions">
+        <div class="topic-title">Opinions &amp; Argumentation</div>
+        <div class="topic-count topic-count--empty">No packs yet</div>
+        <div class="topic-chevron topic-chevron--empty">›</div>
+      </div>
+    </div>
+
+    <div class="topic-group topic-group--empty">
+      <div class="topic-header" data-topic="boundaries">
+        <div class="topic-title">Boundaries &amp; Refusal</div>
+        <div class="topic-count topic-count--empty">No packs yet</div>
+        <div class="topic-chevron topic-chevron--empty">›</div>
+      </div>
+    </div>
+
+    <div class="topic-group topic-group--empty">
+      <div class="topic-header" data-topic="rapport">
+        <div class="topic-title">Rapport &amp; Connection</div>
+        <div class="topic-count topic-count--empty">No packs yet</div>
+        <div class="topic-chevron topic-chevron--empty">›</div>
+      </div>
+    </div>
+
+    <div class="topic-group topic-group--empty">
+      <div class="topic-header" data-topic="bodyvoice">
+        <div class="topic-title">Body Language &amp; Voice</div>
+        <div class="topic-count topic-count--empty">No packs yet</div>
+        <div class="topic-chevron topic-chevron--empty">›</div>
+      </div>
+    </div>
+
+    <div class="topic-group topic-group--empty">
+      <div class="topic-header" data-topic="giving">
+        <div class="topic-title">Giving &amp; Receiving</div>
+        <div class="topic-count topic-count--empty">No packs yet</div>
+        <div class="topic-chevron topic-chevron--empty">›</div>
+      </div>
+    </div>
+
+    <div class="topic-group topic-group--empty">
+      <div class="topic-header" data-topic="observation">
+        <div class="topic-title">Observation &amp; Description</div>
+        <div class="topic-count topic-count--empty">No packs yet</div>
+        <div class="topic-chevron topic-chevron--empty">›</div>
+      </div>
+    </div>
+
+    <div class="topic-group topic-group--empty">
+      <div class="topic-header" data-topic="dynamics">
+        <div class="topic-title">Conversation Dynamics</div>
+        <div class="topic-count topic-count--empty">No packs yet</div>
+        <div class="topic-chevron topic-chevron--empty">›</div>
+      </div>
+    </div>
+
+    <div class="topic-group topic-group--empty">
+      <div class="topic-header" data-topic="selfpresentation">
+        <div class="topic-title">Self-Presentation</div>
+        <div class="topic-count topic-count--empty">No packs yet</div>
+        <div class="topic-chevron topic-chevron--empty">›</div>
+      </div>
+    </div>
+
+    <div class="topic-group topic-group--empty">
+      <div class="topic-header" data-topic="flirt">
+        <div class="topic-title">Flirting</div>
+        <div class="topic-count topic-count--empty">No packs yet</div>
+        <div class="topic-chevron topic-chevron--empty">›</div>
+      </div>
+    </div>
+
+    <div class="topic-group topic-group--empty">
+      <div class="topic-header" data-topic="emotionalboundaries">
+        <div class="topic-title">Emotional Refusal</div>
+        <div class="topic-count topic-count--empty">No packs yet</div>
+        <div class="topic-chevron topic-chevron--empty">›</div>
+      </div>
+    </div>
+
+    <div class="topic-group topic-group--empty">
+      <div class="topic-header" data-topic="leadership">
+        <div class="topic-title">Leadership &amp; Relationship Dynamics</div>
+        <div class="topic-count topic-count--empty">No packs yet</div>
+        <div class="topic-chevron topic-chevron--empty">›</div>
+      </div>
+    </div>
+
+    <div class="topic-group topic-group--empty">
+      <div class="topic-header" data-topic="emotionregulation">
+        <div class="topic-title">Emotional Regulation in Relationships</div>
+        <div class="topic-count topic-count--empty">No packs yet</div>
+        <div class="topic-chevron topic-chevron--empty">›</div>
+      </div>
+    </div>
+
+    <div class="topic-group topic-group--empty">
+      <div class="topic-header" data-topic="relationshipcomm">
+        <div class="topic-title">Communication in Relationships</div>
+        <div class="topic-count topic-count--empty">No packs yet</div>
+        <div class="topic-chevron topic-chevron--empty">›</div>
+      </div>
+    </div>
+
   </div>
 
   <!-- Tab: Programs (placeholder) -->
@@ -879,7 +1081,7 @@
       <label>Progress bar</label>
       <label class="toggle"><input type="checkbox" id="showProgressBar" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.17.2</div>
+    <div class="settings-version">v1.17.3</div>
     <button class="settings-close" id="settingsClose">Done</button>
   </div>
 </div>
@@ -952,7 +1154,7 @@
       <label>Loop current strategy</label>
       <label class="toggle"><input type="checkbox" id="hfLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.17.2</div>
+    <div class="settings-version">v1.17.3</div>
     <button class="settings-close" id="hfSettingsClose">Done</button>
   </div>
 </div>
@@ -1021,7 +1223,7 @@
       <label>Loop current strategy</label>
       <label class="toggle"><input type="checkbox" id="hfMemLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.17.2</div>
+    <div class="settings-version">v1.17.3</div>
     <button class="settings-close" id="hfMemSettingsClose">Done</button>
   </div>
 </div>
@@ -1090,7 +1292,7 @@
       <label>Loop current category</label>
       <label class="toggle"><input type="checkbox" id="hfChallLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.17.2</div>
+    <div class="settings-version">v1.17.3</div>
     <button class="settings-close" id="hfChallSettingsClose">Done</button>
   </div>
 </div>
@@ -1148,7 +1350,7 @@
       <label>Loop current combo</label>
       <label class="toggle"><input type="checkbox" id="hfFlowLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.17.2</div>
+    <div class="settings-version">v1.17.3</div>
     <button class="settings-close" id="hfFlowSettingsClose">Done</button>
   </div>
 </div>
@@ -1217,7 +1419,7 @@
       <label>Loop current mindset</label>
       <label class="toggle"><input type="checkbox" id="hfMindLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.17.2</div>
+    <div class="settings-version">v1.17.3</div>
     <button class="settings-close" id="hfMindSettingsClose">Done</button>
   </div>
 </div>
@@ -1286,7 +1488,7 @@
       <label>Loop current collection</label>
       <label class="toggle"><input type="checkbox" id="hfCollLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.17.2</div>
+    <div class="settings-version">v1.17.3</div>
     <button class="settings-close" id="hfCollSettingsClose">Done</button>
   </div>
 </div>
@@ -1408,7 +1610,7 @@
       <label style="font-size:13px; color:#888;">Export all ratings as JSON</label>
       <button id="feedbackExportBtn" style="font-size:13px; color:#555; background:#f0f0f0; border:1px solid #ddd; border-radius:8px; padding:6px 12px; cursor:pointer;">Export</button>
     </div>
-    <div class="settings-version">v1.17.2</div>
+    <div class="settings-version">v1.17.3</div>
   </div>
 </div>
 
@@ -1428,10 +1630,10 @@
   </button>
 </div>
 
-<script src="js/data.js?v=1172"></script>
-<script src="js/multiStepData.js?v=1172"></script>
-<script src="js/memorizeData.js?v=1172"></script>
-<script src="js/app.js?v=1172"></script>
+<script src="js/data.js?v=1173"></script>
+<script src="js/multiStepData.js?v=1173"></script>
+<script src="js/memorizeData.js?v=1173"></script>
+<script src="js/app.js?v=1173"></script>
 
 </body>
 </html>
