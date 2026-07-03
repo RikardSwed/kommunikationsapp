@@ -67,6 +67,7 @@ function navToTraining(id) {
 
 function navFromTraining(id) {
   window._returningFromTraining = true;
+  if (window.progEndSession) progEndSession();
   // Show mode immediately behind (no animation), hide home
   homeScreen.style.display = 'none';
   modeScreen.style.display = 'flex';
@@ -153,7 +154,10 @@ function showModeScreen(key, label) {
     if (window.recordPackTrained) recordPackTrained(key);
     if (window._favRenderDash) _favRenderDash();
   } catch {}
+  // Progress: end previous session, start new one
+  if (window.progEndSession) progEndSession();
   navToMode();
+  if (window.progStartSession) progStartSession(key, label);
 }
 
 function showTraining() {
@@ -381,6 +385,7 @@ function memRender() {
 }
 
 function memFlipFn(val, animate = true) {
+  if (val && !memFlipped && window.progCardFlipped) progCardFlipped();
   memFlipped = val;
   memCardInner.style.transition = animate ? 'transform 0.4s ease' : 'none';
   memCardInner.classList.toggle('flipped', memFlipped);
@@ -469,6 +474,7 @@ function msRender() {
 }
 
 function msFlip(val, animate = true) {
+  if (val && !msFlipped && window.progCardFlipped) progCardFlipped();
   msFlipped = val;
   msCardInner.style.transition = animate ? 'transform 0.4s ease' : 'none';
   msCardInner.classList.toggle('flipped', msFlipped);
@@ -691,6 +697,7 @@ function flowRender() {
 }
 
 function flowFlipFn(val, animate = true) {
+  if (val && !flowFlipped && window.progCardFlipped) progCardFlipped();
   flowFlipped = val;
   flowCardInner.style.transition = animate ? 'transform 0.4s ease' : 'none';
   flowCardInner.classList.toggle('flipped', flowFlipped);
@@ -769,6 +776,7 @@ function guidedRender() {
 }
 
 function guidedFlipFn(val, animate=true) {
+  if (val && !guidedFlipped && window.progCardFlipped) progCardFlipped();
   guidedFlipped=val;
   guidedCardInner.style.transition = animate?'transform 0.4s ease':'none';
   guidedCardInner.classList.toggle('flipped', guidedFlipped);
@@ -1102,7 +1110,7 @@ hfCard.addEventListener('touchmove', e=>{if(Math.abs(e.touches[0].clientX-hfTx)>
 hfCard.addEventListener('touchend',  e=>{
   e.preventDefault();
   const dx=e.changedTouches[0].clientX-hfTx,dy=e.changedTouches[0].clientY-hfTy,adx=Math.abs(dx),ady=Math.abs(dy);
-  if(!hfMov&&Date.now()-hfTt<500){hfCardInner.classList.toggle('flipped');return;}
+  if(!hfMov&&Date.now()-hfTt<500){if(window.progCardFlipped&&!hfCardInner.classList.contains('flipped'))progCardFlipped();hfCardInner.classList.toggle('flipped');return;}
   if(hfMov&&adx>40&&adx>ady){stratIdx=dx>0?(stratIdx-1+strategies.length)%strategies.length:(stratIdx+1)%strategies.length;inputIdx=0;hfRender();return;}
   if(hfMov&&ady>40&&ady>adx){const o=inputOrders[stratOrder[stratIdx]];inputIdx=dy>0?(inputIdx-1+o.length)%o.length:(inputIdx+1)%o.length;hfRender();return;}
 },{passive:false});
@@ -1376,7 +1384,7 @@ hfMemCard.addEventListener('touchmove', e=>{if(Math.abs(e.touches[0].clientX-hfM
 hfMemCard.addEventListener('touchend',  e=>{
   e.preventDefault();
   const dx=e.changedTouches[0].clientX-hfMTx,dy=e.changedTouches[0].clientY-hfMTy,adx=Math.abs(dx),ady=Math.abs(dy);
-  if(!hfMMov&&Date.now()-hfMTt<500){hfMemCardInner.classList.toggle('flipped');return;}
+  if(!hfMMov&&Date.now()-hfMTt<500){if(window.progCardFlipped&&!hfMemCardInner.classList.contains('flipped'))progCardFlipped();hfMemCardInner.classList.toggle('flipped');return;}
   if(hfMMov&&adx>40&&adx>ady){memStratIdx=dx>0?(memStratIdx-1+memStrategies.length)%memStrategies.length:(memStratIdx+1)%memStrategies.length;memCardIdx=0;hfMemRender();return;}
   if(hfMMov&&ady>40&&ady>adx){memCardIdx=dy>0?(memCardIdx-1+memCurrentStrategy().cards.length)%memCurrentStrategy().cards.length:(memCardIdx+1)%memCurrentStrategy().cards.length;hfMemRender();return;}
 },{passive:false});
@@ -1786,6 +1794,7 @@ function collRender() {
 }
 
 function collFlipFn(val, animate = true) {
+  if (val && !collFlipped && window.progCardFlipped) progCardFlipped();
   collFlipped = val;
   collCardInner.style.transition = animate ? 'transform 0.4s ease' : 'none';
   collCardInner.classList.toggle('flipped', collFlipped);
@@ -1896,6 +1905,7 @@ function challCurrent()      { return challChallenges[challIdx]; }
 function challCurrentInput() { return challCurrent().inputs[challInputIdx]; }
 
 function challFlipFn(val, animate = true) {
+  if (val && !challFlipped && window.progCardFlipped) progCardFlipped();
   challFlipped = val;
   challCardInner.style.transition = animate ? 'transform 0.4s ease' : 'none';
   challCardInner.classList.toggle('flipped', challFlipped);
@@ -2000,6 +2010,7 @@ function mindCurrent()      { return mindStrategies[mindIdx]; }
 function mindCurrentInput() { return mindCurrent().inputs[mindInputIdx]; }
 
 function mindFlipFn(val, animate = true) {
+  if (val && !mindFlipped && window.progCardFlipped) progCardFlipped();
   mindFlipped = val;
   mindCardInner.style.transition = animate ? 'transform 0.4s ease' : 'none';
   mindCardInner.classList.toggle('flipped', mindFlipped);
@@ -2314,7 +2325,7 @@ hfChallCard.addEventListener('touchmove',  e => { if (hfChallPlaying) return; if
 hfChallCard.addEventListener('touchend',   e => {
   if (hfChallPlaying) return;
   const dx=e.changedTouches[0].clientX-hcTx, dy=e.changedTouches[0].clientY-hcTy, adx=Math.abs(dx), ady=Math.abs(dy);
-  if (!hcMov && Date.now()-hcTt<500) { hfChallCardInnerEl.classList.toggle('flipped'); return; }
+  if (!hcMov && Date.now()-hcTt<500) { if(window.progCardFlipped&&!hfChallCardInnerEl.classList.contains('flipped'))progCardFlipped(); hfChallCardInnerEl.classList.toggle('flipped'); return; }
   if (hcMov && adx>40 && adx>ady) { challIdx = dx>0 ? (challIdx-1+challChallenges.length)%challChallenges.length : (challIdx+1)%challChallenges.length; challInputIdx=0; hfChallRenderManual(); return; }
   if (hcMov && ady>40 && ady>adx) { challInputIdx = dy>0 ? (challInputIdx-1+challChallenges[challIdx].inputs.length)%challChallenges[challIdx].inputs.length : (challInputIdx+1)%challChallenges[challIdx].inputs.length; hfChallRenderManual(); return; }
 });
@@ -2568,7 +2579,7 @@ hfFlowCard.addEventListener('touchend',   e => {
   if (hfFlowPlaying) return;
   const dx=e.changedTouches[0].clientX-hfTx2, dy=e.changedTouches[0].clientY-hfTy2, adx=Math.abs(dx), ady=Math.abs(dy);
   const seqLen = buildFlowSequence(flowStrategies[flowComboIdx]).length;
-  if (!hfMov2 && Date.now()-hfTt2<500) { hfFlowCardInnerEl.classList.toggle('flipped'); return; }
+  if (!hfMov2 && Date.now()-hfTt2<500) { if(window.progCardFlipped&&!hfFlowCardInnerEl.classList.contains('flipped'))progCardFlipped(); hfFlowCardInnerEl.classList.toggle('flipped'); return; }
   if (hfMov2 && adx>40 && adx>ady) { flowComboIdx = dx>0 ? (flowComboIdx-1+flowStrategies.length)%flowStrategies.length : (flowComboIdx+1)%flowStrategies.length; flowCardIdx=0; hfFlowRenderManual(); return; }
   if (hfMov2 && ady>40 && ady>adx) { flowCardIdx = dy>0 ? (flowCardIdx-1+seqLen)%seqLen : (flowCardIdx+1)%seqLen; hfFlowRenderManual(); return; }
 });
@@ -2819,7 +2830,7 @@ hfMindCard.addEventListener('touchmove',  e => { if (hfMindPlaying) return; if (
 hfMindCard.addEventListener('touchend',   e => {
   if (hfMindPlaying) return;
   const dx=e.changedTouches[0].clientX-hmTx, dy=e.changedTouches[0].clientY-hmTy, adx=Math.abs(dx), ady=Math.abs(dy);
-  if (!hmMov && Date.now()-hmTt<500) { hfMindCardInnerEl.classList.toggle('flipped'); return; }
+  if (!hmMov && Date.now()-hmTt<500) { if(window.progCardFlipped&&!hfMindCardInnerEl.classList.contains('flipped'))progCardFlipped(); hfMindCardInnerEl.classList.toggle('flipped'); return; }
   if (hmMov && adx>40 && adx>ady) { mindIdx = dx>0 ? (mindIdx-1+mindStrategies.length)%mindStrategies.length : (mindIdx+1)%mindStrategies.length; mindInputIdx=0; hfMindRenderManual(); return; }
   if (hmMov && ady>40 && ady>adx) { mindInputIdx = dy>0 ? (mindInputIdx-1+mindStrategies[mindIdx].inputs.length)%mindStrategies[mindIdx].inputs.length : (mindInputIdx+1)%mindStrategies[mindIdx].inputs.length; hfMindRenderManual(); return; }
 });
@@ -3072,7 +3083,7 @@ hfCollCard.addEventListener('touchmove',  e => { if (hfCollPlaying) return; if (
 hfCollCard.addEventListener('touchend',   e => {
   if (hfCollPlaying) return;
   const dx=e.changedTouches[0].clientX-hclTx, dy=e.changedTouches[0].clientY-hclTy, adx=Math.abs(dx), ady=Math.abs(dy);
-  if (!hclMov && Date.now()-hclTt<500) { hfCollCardInnerEl.classList.toggle('flipped'); return; }
+  if (!hclMov && Date.now()-hclTt<500) { if(window.progCardFlipped&&!hfCollCardInnerEl.classList.contains('flipped'))progCardFlipped(); hfCollCardInnerEl.classList.toggle('flipped'); return; }
   if (hclMov && adx>40 && adx>ady) { collIdx = dx>0 ? (collIdx-1+collCollections.length)%collCollections.length : (collIdx+1)%collCollections.length; collInputIdx=0; hfCollRenderManual(); return; }
   if (hclMov && ady>40 && ady>adx) { collInputIdx = dy>0 ? (collInputIdx-1+collCollections[collIdx].inputs.length)%collCollections[collIdx].inputs.length : (collInputIdx+1)%collCollections[collIdx].inputs.length; hfCollRenderManual(); return; }
 });
@@ -3853,6 +3864,16 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
     progClose.addEventListener('touchend', e => { e.preventDefault(); close(); }, { passive: false });
   }
 
+  if (progOverlay) {
+    progOverlay.addEventListener('click', e => {
+      if (e.target === progOverlay) {
+        saveSettingsFromUI();
+        progOverlay.classList.remove('open');
+        renderProgress();
+      }
+    });
+  }
+
   // Tracking toggle dims settings body
   const tog = document.getElementById('progTrackingToggle');
   if (tog) {
@@ -3922,29 +3943,6 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
   window._progEndSession = window.progEndSession;
 
 })();
-
-// Hook progress session into mode screen open/close
-const _origShowModeForProg = showModeScreen;
-window.showModeScreen = function(key, label) {
-  if (window.progEndSession) progEndSession(); // end any previous session
-  _origShowModeForProg(key, label);
-  if (window.progStartSession) progStartSession(key, label);
-};
-
-const _origNavFromTrainingForProg = navFromTraining;
-window.navFromTraining = function(id) {
-  if (window.progEndSession) progEndSession();
-  _origNavFromTrainingForProg(id);
-};
-
-// Hook card flip counter into render function
-const _origRenderForProg = window.render;
-window.render = function() {
-  if (_origRenderForProg) _origRenderForProg();
-  if (window.progCardFlipped && typeof inputIdx !== 'undefined') {
-    // Only count when a card is actually being flipped (handled in flip logic)
-  }
-};
 
 // ─── SPLASH SCREEN ────────────────────────────────────────────────────
 (function initSplash() {
