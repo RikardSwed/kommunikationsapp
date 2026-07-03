@@ -1,7 +1,7 @@
 // app.js — All application logic for Communication Trainer
 // Depends on: data.js and multiStepData.js (must be loaded first)
 
-const VERSION = 'v1.17.8';
+const VERSION = 'v1.17.9';
 
 // ─── SCREENS ──────────────────────────────────────────────────────────────────
 const homeScreen     = document.getElementById('homeScreen');
@@ -54,14 +54,18 @@ function navToMode() {
 }
 
 function navToTraining(id) {
-  // Mode stays visible behind — animate training in over it
   modeScreen.style.display = 'flex';
   const el = document.getElementById(id);
   el.style.display = 'flex';
+  if (window._noTrainingAnim) {
+    window._noTrainingAnim = false;
+    el.classList.remove('slide-in-bottom', 'slide-out-bottom');
+    modeScreen.style.display = 'none';
+    return;
+  }
   el.classList.remove('slide-in-bottom', 'slide-out-bottom');
   void el.offsetWidth;
   el.classList.add('slide-in-bottom');
-  // Hide mode after training has fully covered it
   setTimeout(() => { modeScreen.style.display = 'none'; }, 320);
 }
 
@@ -163,7 +167,7 @@ function showModeScreen(key, label) {
 function showTraining() {
   strategies  = (collections[activeCollectionKey] || []).map(strat => {
     if (!window.filterInputsByBundle) return strat;
-    const filtered = window.filterInputsByBundle(strat.inputs, activeCollectionKey, strat.name);
+    const filtered = window.filterInputsByBundle(strat.inputs, activeCollectionKey);
     return Object.assign({}, strat, { inputs: filtered.length ? filtered : strat.inputs });
   });
   if (!strategies.length) return;
@@ -602,8 +606,7 @@ document.addEventListener('keydown', e => {
 function openTrainingSettings() {
   const panel = document.querySelector('#settingsOverlay .settings-panel');
   if (panel && window.renderBundleSection && activeCollectionKey) {
-    const strat = strategies && strategies[stratOrder && stratOrder[stratIdx] != null ? stratOrder[stratIdx] : 0];
-    if (strat) renderBundleSection(panel, activeCollectionKey, strat.name);
+    renderBundleSection(panel, activeCollectionKey);
   }
   document.getElementById('settingsOverlay').classList.add('open');
 }
@@ -614,15 +617,14 @@ document.getElementById('settingsBtn').addEventListener('touchend', e => { e.pre
 document.getElementById('settingsClose').addEventListener('click', () => {
   document.getElementById('settingsOverlay').classList.remove('open');
   applySettings();
-  // Re-run showTraining to pick up any bundle changes
-  if (typeof showTraining === 'function') showTraining();
+  if (typeof showTraining === 'function') { window._noTrainingAnim = true; showTraining(); }
 });
 
 document.getElementById('settingsOverlay').addEventListener('click', e => {
   if (e.target === document.getElementById('settingsOverlay')) {
     document.getElementById('settingsOverlay').classList.remove('open');
     applySettings();
-    if (typeof showTraining === 'function') showTraining();
+    if (typeof showTraining === 'function') { window._noTrainingAnim = true; showTraining(); }
   }
 });
 
@@ -1689,60 +1691,56 @@ applyInputCounterVisibility();
 
 // ─── INPUT BUNDLES ──────────────────────────────────────────────────────────────
 
-// Bundle definitions — keyed by packKey, then strategyName
+// Bundle definitions — keyed by packKey only (applies to whole pack in a mode)
 const BUNDLE_DEFS = {
-  assertive: {
-    Fogging: [
-      {
-        id: 'default',
-        name: 'Default Bundle',
-        description: 'The core Fogging inputs — everyday situations where staying calm and acknowledging criticism is the key skill.',
-        default: true,
-      },
-      {
-        id: 'test',
-        name: 'Workplace & Social Bundle',
-        description: 'Additional inputs focused on professional and social contexts — colleagues, work situations and social judgement.',
-        default: false,
-      },
-    ]
-  }
+  assertive: [
+    {
+      id: 'default',
+      name: 'Default Bundle',
+      description: 'The core inputs — everyday situations covering all strategies in this pack.',
+      default: true,
+    },
+    {
+      id: 'test',
+      name: 'Workplace & Social Bundle',
+      description: 'Additional inputs focused on professional and social contexts — colleagues, work situations and social judgement.',
+      default: false,
+    },
+  ]
 };
 
-// Bundle state storage: key = 'bundles:{packKey}:{strategyName}'
-function getBundleState(packKey, stratName) {
-  const k = `bundles:${packKey}:${stratName}`;
+// Bundle state storage: key = 'bundles:{packKey}'
+function getBundleState(packKey) {
+  const k = `bundles:${packKey}`;
   try { return JSON.parse(localStorage.getItem(k)); } catch { return null; }
 }
 
-function setBundleState(packKey, stratName, state) {
-  const k = `bundles:${packKey}:${stratName}`;
+function setBundleState(packKey, state) {
+  const k = `bundles:${packKey}`;
   localStorage.setItem(k, JSON.stringify(state));
 }
 
-// Get active bundle IDs for a pack+strategy
-function getActiveBundles(packKey, stratName) {
-  const defs = (BUNDLE_DEFS[packKey] || {})[stratName];
-  if (!defs) return null; // no bundles defined — use all inputs
-  const saved = getBundleState(packKey, stratName);
+// Get active bundle IDs for a pack
+function getActiveBundles(packKey) {
+  const defs = BUNDLE_DEFS[packKey];
+  if (!defs) return null;
+  const saved = getBundleState(packKey);
   if (saved) return saved;
-  // Default: only bundles with default:true
   const defaults = defs.filter(b => b.default).map(b => b.id);
   return defaults.length ? defaults : [defs[0].id];
 }
 
-// Filter inputs based on active bundles
-window.filterInputsByBundle = function(inputs, packKey, stratName) {
-  const defs = (BUNDLE_DEFS[packKey] || {})[stratName];
-  if (!defs) return inputs; // no bundles for this strategy
-  const active = getActiveBundles(packKey, stratName);
+// Filter inputs based on active bundles (applies to all strategies in pack)
+window.filterInputsByBundle = function(inputs, packKey) {
+  const defs = BUNDLE_DEFS[packKey];
+  if (!defs) return inputs;
+  const active = getActiveBundles(packKey);
   return inputs.filter(inp => !inp.bundle || active.includes(inp.bundle));
 };
 
-// Render Input Bundles section into a settings overlay
-window.renderBundleSection = function(containerEl, packKey, stratName) {
-  const defs = (BUNDLE_DEFS[packKey] || {})[stratName];
-  // Remove old bundle section if present
+// Render Input Bundles section into a settings panel
+window.renderBundleSection = function(containerEl, packKey) {
+  const defs = BUNDLE_DEFS[packKey];
   const old = containerEl.querySelector('.bundle-section');
   if (old) old.remove();
 
@@ -1756,7 +1754,7 @@ window.renderBundleSection = function(containerEl, packKey, stratName) {
     return;
   }
 
-  const active = getActiveBundles(packKey, stratName);
+  const active = getActiveBundles(packKey);
 
   defs.forEach(bundle => {
     const isOn = active.includes(bundle.id);
@@ -1774,18 +1772,15 @@ window.renderBundleSection = function(containerEl, packKey, stratName) {
     `;
     section.appendChild(row);
 
-    // Toggle
     row.querySelector('.bundle-toggle').addEventListener('change', function() {
-      const cur = getActiveBundles(packKey, stratName);
+      const cur = getActiveBundles(packKey);
       const newState = this.checked
         ? [...new Set([...cur, bundle.id])]
         : cur.filter(id => id !== bundle.id);
-      // Always keep at least one active
       if (newState.length === 0) { this.checked = true; return; }
-      setBundleState(packKey, stratName, newState);
+      setBundleState(packKey, newState);
     });
 
-    // Expand detail
     row.querySelector('.bundle-expand').addEventListener('click', () => {
       const detail = document.getElementById(`bundle-detail-${bundle.id}`);
       if (detail) detail.classList.toggle('open');
