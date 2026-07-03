@@ -1421,3 +1421,65 @@ body.pb-enabled .divider::after {
   padding: 4px 0; -webkit-tap-highlight-color: transparent;
 }
 
+/* ─── TOPICS ──────────────────────────────────────────────────────────────────── */
+
+.topic-group {
+  margin-bottom: 4px;
+}
+
+.topic-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 16px;
+  background: #fff;
+  border-radius: 14px;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+  transition: background 0.15s;
+}
+
+.topic-header:active { background: #f5f5f5; }
+
+.topic-group--empty .topic-header { opacity: 0.5; cursor: default; }
+
+.topic-title {
+  flex: 1;
+  font-size: 16px;
+  font-weight: 700;
+  color: #1c1c1e;
+}
+
+.topic-count {
+  font-size: 13px;
+  color: #FF6B00;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.topic-count--empty {
+  color: #bbb;
+  font-weight: 400;
+}
+
+.topic-chevron {
+  font-size: 20px;
+  color: #ccc;
+  transition: transform 0.2s ease;
+  line-height: 1;
+}
+
+.topic-chevron--empty { opacity: 0.3; }
+
+.topic-header.open .topic-chevron {
+  transform: rotate(90deg);
+}
+
+.topic-packs {
+  display: none;
+  padding: 4px 0 8px;
+}
+
+.topic-packs.open { display: block; }
+
