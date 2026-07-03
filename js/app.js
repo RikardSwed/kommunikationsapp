@@ -1,7 +1,7 @@
 // app.js — All application logic for Communication Trainer
 // Depends on: data.js and multiStepData.js (must be loaded first)
 
-const VERSION = 'v1.17.4';
+const VERSION = 'v1.17.5';
 
 // ─── SCREENS ──────────────────────────────────────────────────────────────────
 const homeScreen     = document.getElementById('homeScreen');
@@ -1528,6 +1528,22 @@ applyInputCounterVisibility();
     teasing:        { label: 'Teasing & Playfulness',    minLevel: 'complete' },
   };
 
+  // Mode definitions per level
+  const MODE_CONFIG = {
+    modeFlashcard:          { minLevel: 'freemium' },
+    modeMemorize:           { minLevel: 'freemium' },
+    modeCollections:        { minLevel: 'pro'      },
+    modeFlow:               { minLevel: 'pro'      },
+    modeChallenges:         { minLevel: 'pro'      },
+    modeMindset:            { minLevel: 'pro'      },
+    modeHandsfree:          { minLevel: 'pro'      },
+    modeHandsfreeCollections: { minLevel: 'pro'    },
+    modeHandsfreeSequences: { minLevel: 'pro'      },
+    modeHandsfreeChallenges:{ minLevel: 'pro'      },
+    modeHandsfreeMindset:   { minLevel: 'pro'      },
+    modeHandsfreeMemorize:  { minLevel: 'pro'      },
+  };
+
   const LEVEL_ORDER = ['freemium', 'pro', 'complete'];
 
   function getLevel() {
@@ -1559,12 +1575,20 @@ applyInputCounterVisibility();
 
   // Apply to all collection-card elements that have data-key
   function applyAccessLevel() {
-    const level = getLevel();
     document.querySelectorAll('.collection-card[data-key]').forEach(card => {
       const key = card.dataset.key;
-      const accessible = canAccess(key);
+      const cfg = PACK_CONFIG[key];
+      if (!cfg) return;
+      const curLevel = getLevel();
+      const accessible = levelIndex(curLevel) >= levelIndex(cfg.minLevel);
+      // Complete-level packs: hide entirely when not accessible
+      if (cfg.minLevel === 'complete') {
+        card.style.display = accessible ? '' : 'none';
+        return;
+      }
+      // Pro-level packs: show but locked
+      card.style.display = '';
       card.classList.toggle('collection-card--locked', !accessible);
-      // Remove old badge if present
       const old = card.querySelector('.pack-lock-badge');
       if (old) old.remove();
       if (!accessible) {
@@ -1575,7 +1599,6 @@ applyInputCounterVisibility();
           el.textContent = badge.text;
           card.appendChild(el);
         }
-        // Prevent click
         card.onclick = null;
         card.ontouchend = null;
       }
@@ -1588,6 +1611,34 @@ applyInputCounterVisibility();
       card.ontouchstart = e => { cSY = e.touches[0].clientY; cMv = false; };
       card.ontouchmove  = e => { if (Math.abs(e.touches[0].clientY - cSY) > 8) cMv = true; };
       card.ontouchend   = () => { if (!cMv) showModeScreen(card.dataset.key, card.dataset.label); };
+    });
+    // Apply mode locks
+    applyModeLocks();
+  }
+
+  function applyModeLocks() {
+    const curLevel = getLevel();
+    Object.entries(MODE_CONFIG).forEach(([id, cfg]) => {
+      const el = document.getElementById(id);
+      if (!el) return;
+      const accessible = levelIndex(curLevel) >= levelIndex(cfg.minLevel);
+      el.classList.toggle('mode-card--locked', !accessible);
+      // Remove old badge
+      const old = el.querySelector('.mode-lock-badge');
+      if (old) old.remove();
+      if (!accessible) {
+        const badge = document.createElement('div');
+        badge.className = 'mode-lock-badge pack-lock-badge pack-lock-badge--pro';
+        badge.textContent = 'Pro';
+        el.appendChild(badge);
+        el.style.opacity = '0.45';
+        el.style.cursor  = 'default';
+        el.style.pointerEvents = 'none';
+      } else {
+        el.style.opacity = '';
+        el.style.cursor  = '';
+        el.style.pointerEvents = '';
+      }
     });
   }
 
@@ -1617,11 +1668,19 @@ applyInputCounterVisibility();
   };
 
   // Expose for other modules
-  window.accessLevel = { getLevel, canAccess };
+  window.accessLevel = { getLevel, canAccess, applyModeLocks };
 
   // Init
   loadDevLevelUI();
   applyAccessLevel();
+
+  // Re-apply mode locks whenever mode screen becomes visible
+  const _modeScreenEl = document.getElementById('modeScreen');
+  if (_modeScreenEl) {
+    new MutationObserver(() => {
+      if (_modeScreenEl.style.display === 'flex') applyModeLocks();
+    }).observe(_modeScreenEl, { attributes: true, attributeFilter: ['style'] });
+  }
 
 })();
 
