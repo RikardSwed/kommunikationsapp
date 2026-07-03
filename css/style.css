@@ -1421,7 +1421,7 @@ body.pb-enabled .divider::after {
   padding: 4px 0; -webkit-tap-highlight-color: transparent;
 }
 
-/* ─── TOPICS ──────────────────────────────────────────────────────────────────── */
+/* ─── TOPICS ──────────────────────────────────────────────────────────────────── */───────────────────────────────────────────────────────────────── */
 
 .topic-group {
   margin-bottom: 4px;
@@ -1482,4 +1482,96 @@ body.pb-enabled .divider::after {
 }
 
 .topic-packs.open { display: block; }
+
+/* ─── ACCESS LEVELS & LOCKED PACKS ────────────────────────────────────────── */
+
+.collection-card--locked {
+  opacity: 0.45;
+  cursor: default;
+}
+
+.collection-card--locked:active {
+  transform: none;
+  opacity: 0.45;
+}
+
+.collection-card--locked .collection-arrow { display: none; }
+
+.pack-lock-badge {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+  font-weight: 700;
+  color: #fff;
+  background: #888;
+  border-radius: 6px;
+  padding: 2px 7px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.pack-lock-badge--pro   { background: #5856d6; }
+.pack-lock-badge--complete { background: #FF6B00; }
+
+/* ─── INPUT BUNDLES ─────────────────────────────────────────────────────────── */
+
+.bundle-section-title {
+  font-size: 12px;
+  font-weight: 700;
+  color: #999;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  padding: 16px 0 8px;
+  border-top: 1px solid #f0f0f0;
+  margin-top: 8px;
+}
+
+.bundle-row {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #f5f5f5;
+  gap: 10px;
+}
+
+.bundle-row:last-child { border-bottom: none; }
+
+.bundle-info {
+  flex: 1;
+  cursor: pointer;
+}
+
+.bundle-name {
+  font-size: 15px;
+  font-weight: 600;
+  color: #1c1c1e;
+}
+
+.bundle-desc-preview {
+  font-size: 12px;
+  color: #aaa;
+  margin-top: 2px;
+}
+
+.bundle-expand {
+  background: none;
+  border: none;
+  font-size: 14px;
+  color: #aaa;
+  cursor: pointer;
+  padding: 4px;
+  flex-shrink: 0;
+}
+
+.bundle-detail {
+  display: none;
+  font-size: 13px;
+  color: #555;
+  line-height: 1.5;
+  padding: 6px 0 10px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.bundle-detail.open { display: block; }
 
