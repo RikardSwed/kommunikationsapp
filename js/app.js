@@ -1,7 +1,7 @@
 // app.js — All application logic for Communication Trainer
 // Depends on: data.js and multiStepData.js (must be loaded first)
 
-const VERSION = 'v1.17.7';
+const VERSION = 'v1.17.8';
 
 // ─── SCREENS ──────────────────────────────────────────────────────────────────
 const homeScreen     = document.getElementById('homeScreen');
@@ -614,12 +614,15 @@ document.getElementById('settingsBtn').addEventListener('touchend', e => { e.pre
 document.getElementById('settingsClose').addEventListener('click', () => {
   document.getElementById('settingsOverlay').classList.remove('open');
   applySettings();
+  // Re-run showTraining to pick up any bundle changes
+  if (typeof showTraining === 'function') showTraining();
 });
 
 document.getElementById('settingsOverlay').addEventListener('click', e => {
   if (e.target === document.getElementById('settingsOverlay')) {
     document.getElementById('settingsOverlay').classList.remove('open');
     applySettings();
+    if (typeof showTraining === 'function') showTraining();
   }
 });
 
