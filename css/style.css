@@ -880,7 +880,7 @@ body.pb-enabled .divider::after {
   touch-action: manipulation;
 }
 
-.nav-tab-icon { font-size: 20px; line-height: 1; }
+.nav-tab-icon { font-size: 22px; line-height: 1; display: flex; align-items: center; justify-content: center; }
 .nav-tab-label { font-size: 10px; font-weight: 600; letter-spacing: 0.2px; }
 
 .nav-tab.active { color: var(--ds-txt); }
