@@ -104,123 +104,484 @@ const memorizeCollections = {
         }
       ]
     }
-    ,
+  ],
+
+  conversationaldepth: [
     {
-      name: "Challenge: Direct Criticism",
+      name: "Storytelling",
       cards: [
         {
-          q: "What is direct criticism and what makes it hard to handle?",
-          a: "Someone criticises your behaviour, work, choices, or character openly. The instinct to defend, explain, or counter-attack makes it hard — as does shame when others are present."
+          q: "What is the structure of a good story?",
+          a: "1. Hook — open with something that sparks curiosity\n2. Context — set the scene briefly: who, where, when\n3. Conflict / Twist — what makes it interesting\n4. Resolution — what happened in the end\n5. Point (optional) — sometimes none is needed"
         },
         {
-          q: "Which strategies work best against direct criticism?",
-          a: "Fogging — agree with what might be true and stay calm.\nNegative Assertion — own the mistake cleanly without over-apologising.\nNegative Inquiry — ask for specifics to clarify and disarm."
+          q: "What are the five things that make a story engaging?",
+          a: "1. Specific details — not 'someone' but 'my colleague Marcus'\n2. Varied pace — slow down at the dramatic part\n3. Feeling — show how you felt, not just what happened\n4. Eye contact and body language while telling it\n5. A clear twist or point"
         },
         {
-          q: "What is the key mindset for receiving direct criticism?",
-          a: "You don't have to defend yourself. Receiving criticism calmly is a strength, not a weakness. You can acknowledge without collapsing."
+          q: "What is the function of the hook in a story?",
+          a: "To open with something that makes the listener want to hear what comes next. It creates curiosity before the context is established. Example: 'You know what happened to me yesterday?'"
+        },
+        {
+          q: "What is the mindset behind good storytelling?",
+          a: "Tell it to share an experience — not to impress. Specific details make the story alive. It's okay to pause and build tension."
+        },
+        {
+          q: "What is the difference between telling a story and just describing what happened?",
+          a: "A story has structure, feeling, and a twist or point. Describing what happened is just a sequence of facts. The story makes the listener feel something."
         }
       ]
     },
     {
-      name: "Challenge: Vague or Indirect Criticism",
+      name: "Deep Questions",
       cards: [
         {
-          q: "What is vague or indirect criticism and why is it destabilising?",
-          a: "Criticism delivered through tone, implication, or deliberately unclear language. You can't defend against something never clearly said — and the ambiguity can make you doubt yourself."
+          q: "What are the four types of deep questions?",
+          a: "1. Experience questions — 'How did that feel?'\n2. Meaning questions — 'What does that mean to you?'\n3. Motivation questions — 'What made you want to do that?'\n4. Hypothetical — 'If you could do it again, what would you do differently?'"
         },
         {
-          q: "What is the most powerful strategy against vague criticism — and why?",
-          a: "Negative Inquiry. Ask for specifics: 'What do you mean exactly?' It forces clarity and puts responsibility back on the critic. Clarity is your friend."
+          q: "What is the technique for using deep questions in a conversation?",
+          a: "Start with a simple question → listen → follow up with a deeper one. Use pauses — most people go deeper if you don't fill the silence. One question at a time."
         },
         {
-          q: "Give an example of vague criticism and a response.",
-          a: "Vague: 'It's just interesting that you did it that way.'\nResponse: 'What do you mean by interesting?' (Negative Inquiry)"
+          q: "What three things should you avoid when asking deep questions?",
+          a: "1. Stacking questions — asking several at once\n2. Leading questions — 'That was pretty hard, wasn't it?'\n3. Analysing too early — wait until they've opened up"
+        },
+        {
+          q: "What is the mindset behind deep questions?",
+          a: "Genuinely curious — not looking for a clever question. Pauses are okay. One question at a time — not an interrogation."
+        },
+        {
+          q: "How do you move a conversation from facts to feelings?",
+          a: "When someone describes an event, follow up with: 'How did that actually feel?' or 'What were you thinking in that moment?' — you shift from what happened to how it was experienced."
         }
       ]
     },
     {
-      name: "Challenge: Pressure & Pushback",
+      name: "Sharing Opinions",
       cards: [
         {
-          q: "What is pressure and pushback, and what makes it hard to resist?",
-          a: "Someone keeps pushing after you've said no — repeating, escalating, or finding new angles. The discomfort of ongoing tension and fear of damaging the relationship make it hard to hold firm."
+          q: "What are the six ways to share an opinion?",
+          a: "1. Direct and clear\n2. Spontaneous\n3. With humour\n4. Soft and open\n5. Playfully provocative\n6. With curiosity — share and immediately invite their view"
         },
         {
-          q: "Why should you avoid explaining yourself when using broken record?",
-          a: "Every explanation gives the other person a new argument to counter. When you just repeat your position calmly — there is nothing to respond to. No fuel, no escalation."
+          q: "What three things make sharing an opinion work well?",
+          a: "1. Specificity — not 'it was good' but 'what I liked most was X because...'\n2. Authenticity — share what you actually think\n3. Openness — share without demanding agreement"
         },
         {
-          q: "What is the key mindset for handling pressure and pushback?",
-          a: "You don't owe anyone a reason. Repeating yourself calmly is not aggressive — it's stable. The discomfort of the tension is theirs to manage, not yours."
+          q: "What is the mindset behind sharing opinions?",
+          a: "My opinions are part of who I am — they're worth sharing. I share without demanding that others agree. Specific opinions are more interesting than general ones."
+        },
+        {
+          q: "How does humour work when sharing a controversial opinion?",
+          a: "You frame it as obviously provocative: 'Controversial opinion: [opinion]. I'm ready for the consequences.' The humour signals that you're open to pushback while still stating your view."
         }
       ]
     },
     {
-      name: "Challenge: Manipulation",
+      name: "Sharing Emotions",
       cards: [
         {
-          q: "What is manipulation and how does it work?",
-          a: "Indirect tactics — guilt, flattery, false urgency, social proof — that bypass rational judgement and target emotions instead. Recognising the pattern is the first step."
+          q: "What are the three levels of sharing emotions?",
+          a: "Light: 'I'm actually pretty pleased with how that went.'\nMid: 'This makes me a bit nervous, if I'm honest.'\nDeep: 'That affected me more than I expected it to.'"
         },
         {
-          q: "Name four common forms of manipulation.",
-          a: "1. Guilt tripping — making you feel responsible for their emotions.\n2. Social proof — 'everyone agrees with me'.\n3. Flattery before a request.\n4. Victimhood — making themselves the wronged party."
+          q: "What makes emotional sharing authentic?",
+          a: "1. Specificity — not 'I feel fine' but 'I actually felt proud'\n2. Timing — share when it's relevant, not forced\n3. No demand for a reaction — you share, you don't need comfort"
         },
         {
-          q: "What is the key mindset for handling manipulation?",
-          a: "You are not responsible for managing other people's emotions. Staying calm and clear is the best counter — manipulation loses power when it doesn't produce the intended emotional reaction."
+          q: "What are the common obstacles to sharing emotions?",
+          a: "1. Fear of appearing weak or vulnerable\n2. Unfamiliarity with putting feelings into words\n3. Belief that others won't find it interesting"
+        },
+        {
+          q: "What is the mindset behind sharing emotions?",
+          a: "Sharing how I feel is not weakness — it's connection. Specificity makes the feeling believable and human."
+        }
+      ]
+    }
+  ],
+
+  compliments: [
+    {
+      name: "Giving Compliments",
+      cards: [
+        {
+          q: "What are the three types of compliment situations?",
+          a: "1. Natural — something positive happens and you express it genuinely\n2. Strategic — you want to achieve something, soften the mood, or open a conversation\n3. Repairing — something has gone wrong; the compliment creates connection before the issue"
+        },
+        {
+          q: "What are the five things you can give compliments about?",
+          a: "1. Appearance — clothes, style, expression\n2. Competence — work, craft, sport, music\n3. Personality — humour, warmth, patience, courage\n4. Actions — something they did or decided\n5. Way of being — how they handle difficult situations"
+        },
+        {
+          q: "What makes a compliment land?",
+          a: "Specificity. Not 'that was great' but 'the way you stayed calm when that happened — that was impressive.' A specific compliment shows you actually paid attention."
+        },
+        {
+          q: "What is the mindset behind giving compliments?",
+          a: "I'm actively looking for something positive to lift up. A genuine compliment opens doors that arguments never can. It costs me nothing to lift someone else up."
         }
       ]
     },
     {
-      name: "Challenge: Dismissiveness",
+      name: "Accepting Compliments",
       cards: [
         {
-          q: "What is dismissiveness and what forms does it take?",
-          a: "Someone minimises what you say, feel, or experience. Forms include: 'You're overreacting', talking over you, 'That's not a big deal', or laughing at something you said seriously."
+          q: "What are the three ways to receive a compliment well?",
+          a: "1. Warm and genuine — 'Thank you, that means a lot.'\n2. Playful and confident — 'Thanks — I see you have good taste.'\n3. Curious and reciprocal — 'Thank you! What made you think of that?'"
         },
         {
-          q: "Which strategies work best against dismissiveness?",
-          a: "Negative Assertion — own your reaction without shrinking: 'It is a big deal to me.'\nFogging — 'I may be — this is still how it felt.'\nNegative Inquiry — 'What do you think I should have done instead?'"
+          q: "What are the three things to avoid when receiving a compliment?",
+          a: "1. Dismissing — 'No no, it was nothing special...'\n2. Overdoing — 'Oh my god thank you so much really!!'\n3. Going stiff — silence or a nervous smile without responding"
         },
         {
-          q: "What is the key mindset for handling dismissiveness?",
-          a: "Your experience is valid. You don't need permission to feel what you feel. You can acknowledge their perspective without abandoning your own."
+          q: "What is the mindset behind accepting compliments?",
+          a: "I deserve to receive this. Receiving well is a gift back to the person giving it. I can be secure enough to just say thank you."
+        },
+        {
+          q: "Why is dismissing a compliment a problem?",
+          a: "It rejects the other person's observation and makes them feel their positive gesture was unwelcome. It also signals low self-esteem — that you don't believe you deserve it."
         }
       ]
     },
     {
-      name: "Challenge: Situational Pressure",
+      name: "Self Disclosure",
       cards: [
         {
-          q: "What is situational pressure?",
-          a: "The challenge comes from the situation itself — not what someone says. A group dynamic where everyone agrees except you, being put on the spot, or a social context where disagreeing feels costly."
+          q: "What is self disclosure in communication?",
+          a: "Sharing your actual emotional reaction to a situation — openly and without blaming the other person. Not complaining or defending — communicating what's actually happening in you."
         },
         {
-          q: "What is the key mindset for handling situational pressure?",
-          a: "Social pressure is real, but it's not an argument. You are allowed to be the only one in the room who disagrees. Calmly holding your position is not obstruction — it's integrity."
+          q: "What is the structure of a self disclosure statement?",
+          a: "1. Feeling — 'I feel...' / 'This makes me...'\n2. Situation — '...when you say X' / '...in situations like this'\n3. Optional wish — 'I'd like...'"
         },
         {
-          q: "Give an example of situational pressure and a response.",
-          a: "Situation: Everyone in the group has agreed to something you're uncomfortable with.\nResponse: 'I understand everyone's on board — I'm not able to go along with this one.' (Broken Record)"
+          q: "Why does self disclosure work as a communication tool?",
+          a: "If you say 'you're being unfair' the other person can dispute it. If you say 'I feel treated unfairly' — that's a fact about you. It can't be disputed. I-statements disarm. You-statements escalate."
+        },
+        {
+          q: "What is self disclosure NOT?",
+          a: "Not a You-statement disguised as an I-statement: 'I feel that you are wrong' is still an accusation. Not an apology: 'Sorry for reacting this way' gives up your position. Not an exaggeration: 'I'm totally destroyed' loses credibility."
+        },
+        {
+          q: "What is the mindset behind self disclosure?",
+          a: "My feelings are legitimate information — not weaknesses. Sharing how I feel is not giving up — it's communicating. I-statements disarm. You-statements escalate."
+        }
+      ]
+    }
+  ],
+
+  selfhumour: [
+    {
+      name: "Self Humour",
+      cards: [
+        {
+          q: "What are the four techniques of self humour?",
+          a: "1. Acknowledge with humour — 'Yes, that's true. I'm not exactly an expert on that.'\n2. Exaggerate the flaw — 'That was classic me — probably the worst person in the world at this.'\n3. Accept with dignity — 'Yes, it's a fact. I've made peace with it.'\n4. Turn it into charm — 'It's one of my more interesting qualities.'"
+        },
+        {
+          q: "What is the difference between self humour and self-criticism?",
+          a: "Self-criticism: 'I'm always so stupid, I can't do anything right.' — this shrinks you.\nSelf humour: 'Yeah, that wasn't exactly my sharpest moment — but I'm consistent.' — this shows security and distance."
+        },
+        {
+          q: "What does self humour signal to others?",
+          a: "Security. You see your own flaws and don't take them too seriously. You don't need to be perfect to be okay. Self-distance is a sign of maturity, not weakness."
+        },
+        {
+          q: "What is the mindset behind self humour?",
+          a: "I don't need to be perfect to be okay. Self-distance is strength, not weakness. Joking about myself shows I'm secure — not that I'm lesser."
         }
       ]
     },
     {
-      name: "Challenge: Feeling Overwhelmed",
+      name: "Jokingly Bragging",
       cards: [
         {
-          q: "Why does feeling overwhelmed break down assertive behaviour?",
-          a: "When flooded with emotion you tend to freeze, over-explain, or react more strongly than intended. The emotional response hijacks the calm, clear communication that assertiveness requires."
+          q: "What makes jokingly bragging work?",
+          a: "1. The exaggeration is so obvious it's clearly play\n2. Warm tone — not actual arrogance\n3. Quick and light — one line, move on\n4. Best combined with self-humour — brag about one thing, joke about another"
         },
         {
-          q: "What are common triggers for feeling overwhelmed in a confrontation?",
-          a: "Unexpected criticism, being put on the spot, a build-up of smaller incidents, or being attacked by someone you care about."
+          q: "What is the difference between jokingly bragging and actual bragging?",
+          a: "Actual bragging seeks to impress and establish superiority. Jokingly bragging is play — the exaggeration is so obvious nobody believes it. The tone is warm and light, not competitive."
         },
         {
-          q: "What is the most important thing to remember when you feel overwhelmed?",
-          a: "You don't have to respond immediately. 'Let me think about that' or simply pausing is not weakness — it's control. Buying time is a legitimate and powerful tool."
+          q: "Give three example phrases for jokingly bragging.",
+          a: "• 'I woke up like this. Some people are just gifted.'\n• 'That was excellent — even by my standards.'\n• 'I don't want to brag, but... actually, I do.'"
+        }
+      ]
+    },
+    {
+      name: "Push-Pull",
+      cards: [
+        {
+          q: "What is push-pull?",
+          a: "Alternating between pulling someone in (warmth, interest, compliment) and pushing them back (light challenge, tease, withdrawal of attention). The rhythm creates tension and keeps the interaction alive."
+        },
+        {
+          q: "Why does push-pull work?",
+          a: "Constant approval is predictable and loses value. Constant challenge is exhausting. The alternation creates a dynamic where the other person stays engaged and curious — they can't settle into a fixed role."
+        },
+        {
+          q: "What are the key principles of push-pull?",
+          a: "1. Push and pull in the same sentence or nearby — not hours apart\n2. Warm tone throughout — this is play, not real rejection\n3. Don't explain the technique\n4. Genuine reactions create more tension than performed ones"
+        },
+        {
+          q: "Give two examples of push-pull in practice.",
+          a: "• 'You're actually really interesting — I wasn't expecting that.' (pull → implied push)\n• 'That's a good point.' [pause] 'I'm still not completely convinced.' (pull → push)"
+        }
+      ]
+    },
+    {
+      name: "Joke About My Flaws",
+      cards: [
+        {
+          q: "What is the core principle of joking about your own flaws?",
+          a: "If you name your flaw first, nobody else can use it against you. And when you frame it with lightness, it becomes a feature rather than a weakness."
+        },
+        {
+          q: "What are three ways to frame a flaw as a joke?",
+          a: "• 'I'm the kind of person who [flaw]. You've been warned.'\n• 'I know, I know — it's a character flaw. I'm working on it.'\n• 'Classic me.'"
+        },
+        {
+          q: "What is the mindset behind joking about your flaws?",
+          a: "Naming my own flaws with warmth disarms them. I own it before anyone else can. This is confidence — not self-deprecation."
+        }
+      ]
+    }
+  ],
+
+  startingconnecting: [
+    {
+      name: "Starting Conversations",
+      cards: [
+        {
+          q: "What are the ten key opener types for starting conversations?",
+          a: "1. Simple greeting\n2. Introduce yourself\n3. Specific compliment\n4. Comment on the situation\n5. Question about the situation\n6. Shared experience\n7. Open question\n8. Observation about them\n9. Humour\n10. Framing ('I'd kick myself if I didn't come say hi')"
+        },
+        {
+          q: "What is the mindset for starting conversations?",
+          a: "Simple openers work best — I don't need to be clever, just natural. Most people want someone to take the initiative. I'm genuinely curious — not desperate for contact."
+        },
+        {
+          q: "What do you do if someone gives a short answer to your opener?",
+          a: "Try a different angle. Share something about yourself to invite them in. Short answers usually mean the topic isn't engaging — not that they don't want to talk."
+        },
+        {
+          q: "What makes 'framing' work as a conversation opener?",
+          a: "It's honest: 'I'd kick myself if I didn't come say hi.' This signals directness and a bit of courage, which is more attractive than a rehearsed line. It also puts the reason on you, not them."
+        }
+      ]
+    },
+    {
+      name: "Small Talk Flow",
+      cards: [
+        {
+          q: "What are the five core principles of small talk flow?",
+          a: "1. Build on what they say — every answer has a new thread\n2. Share back — small talk is mutual, not an interview\n3. Read the energy — short answers mean try a different topic\n4. Switch topics smoothly using bridges\n5. End well — 'This was great to talk to you' + a natural close"
+        },
+        {
+          q: "What is the natural topic progression in small talk?",
+          a: "The situation you're in → Work / what you do → Interests and free time → Light opinions and preferences"
+        },
+        {
+          q: "How do you switch topics smoothly in small talk?",
+          a: "Use bridges: 'That reminds me of...' / 'Completely different topic but...' / 'Apropos of nothing — what do you do when you're not working?' These signal a natural shift rather than an abrupt cut."
+        },
+        {
+          q: "What is the mindset behind small talk?",
+          a: "Small talk is not meaningless — it creates safety for deeper conversations. I build on what they say. Short answers mean try a different topic, not that the conversation is failing."
+        }
+      ]
+    },
+    {
+      name: "Finding Common Ground",
+      cards: [
+        {
+          q: "What are the five types of common ground?",
+          a: "1. Experiences — you've been in similar situations\n2. Reactions — you respond the same way to something\n3. Values — you care about similar things\n4. Interests — you like the same things\n5. Resistance — you dislike the same things (powerful, use carefully)"
+        },
+        {
+          q: "What are the three key techniques for finding common ground?",
+          a: "1. Relate back — 'That's exactly like when I...'\n2. Me too moment — 'Wait, you too? I thought I was the only one.'\n3. Common reaction — 'I know exactly what you mean — it's completely absurd.'"
+        },
+        {
+          q: "Do you need the exact same experience to find common ground?",
+          a: "No. A similar feeling or reaction is enough. You don't need to have done the same thing — you need to have felt something similar. Shared reactions build rapport just as well as shared experiences."
+        },
+        {
+          q: "What is the mindset behind finding common ground?",
+          a: "There's always something in common — I look for it actively. Make it explicit when you find it. Genuine overlaps feel more connecting than performed ones."
+        }
+      ]
+    },
+    {
+      name: "Mirroring & Paraphrasing",
+      cards: [
+        {
+          q: "What are the three levels of mirroring and paraphrasing?",
+          a: "1. Keyword mirroring — repeat the last word or a key word as a question: 'Stressful?' / 'Three years?'\n2. Paraphrasing — restate in your own words: 'So if I understand right, you mean...'\n3. Emotion reflection — reflect the feeling: 'That sounds really frustrating.'"
+        },
+        {
+          q: "Why does mirroring and paraphrasing work?",
+          a: "It shows you actually listened. It invites them to confirm, correct, or go deeper. It takes pressure off you to say something clever. It creates a space where they feel heard."
+        },
+        {
+          q: "What are three things to avoid when mirroring?",
+          a: "1. Parrot-mirroring — repeating word for word everything they say\n2. Interrupting mid-sentence to paraphrase\n3. Interpreting too far: 'So you mean you actually hate her?' — that's your interpretation"
+        },
+        {
+          q: "What is the mindset behind mirroring and paraphrasing?",
+          a: "My job right now is to understand — not to respond. Mirroring back is a gift — it shows they are heard. I don't need to say something clever — I need to show I listened."
+        }
+      ]
+    }
+  ],
+
+  listeningresponding: [
+    {
+      name: "Listening",
+      cards: [
+        {
+          q: "What are the seven components of active listening?",
+          a: "1. Presence — phone away, eye contact, body toward them\n2. Non-verbal signals — nods, 'mm', open expression\n3. Don't interrupt — let them finish\n4. Acknowledge — 'I hear you' / 'That sounds tough'\n5. Follow-up question — 'What happened then?'\n6. Summarise — 'If I understand right, you mean...'\n7. Listen for the feeling, not just the facts"
+        },
+        {
+          q: "What four things does active listening avoid?",
+          a: "1. Preparing your reply while they talk\n2. Interrupting with your own experiences\n3. Minimising: 'It'll be fine' / 'It's not that bad'\n4. Giving advice without being asked"
+        },
+        {
+          q: "What is the difference between listening to respond and listening to understand?",
+          a: "Listening to respond means you're half-listening while preparing what you'll say next. Listening to understand means you're fully present — you might not know what you'll say until they've finished."
+        },
+        {
+          q: "What is the mindset behind active listening?",
+          a: "I listen to understand — not to respond. The most important thing being said is often what isn't said directly."
+        }
+      ]
+    },
+    {
+      name: "Agreeing",
+      cards: [
+        {
+          q: "What are the six ways to agree?",
+          a: "1. Simple and genuine — 'Yes, that's really true.'\n2. Enthusiastic — 'Exactly! That's exactly what I think.'\n3. With recognition — 'Yes, and I felt exactly the same when...'\n4. With nuance — 'Yes, largely — though I'd add...'\n5. Build on it — 'Yes, and that makes me think...'\n6. Validate the feeling — 'I completely understand that — it makes total sense.'"
+        },
+        {
+          q: "What three things should you avoid when agreeing?",
+          a: "1. Reflexive agreement without listening\n2. Agreeing with things you don't actually believe\n3. Agreeing and then immediately changing topic without building on it"
+        },
+        {
+          q: "What is the mindset behind agreeing?",
+          a: "Genuine agreement builds trust. Empty agreement does the opposite. I agree when I mean it — and I show it."
+        }
+      ]
+    },
+    {
+      name: "Disagree",
+      cards: [
+        {
+          q: "What are the six ways to disagree?",
+          a: "1. Direct and clear — 'I actually don't agree with that. I think...'\n2. Soft but firm — 'I see it a bit differently — for me it's more about...'\n3. Via question — 'Are you sure about that?'\n4. With respect — 'I understand why you think that — and still I think...'\n5. Playful — 'No, that's completely wrong. Let me explain.' (with a smile)\n6. Strong and direct — 'No, that's not right. Here's why.'"
+        },
+        {
+          q: "What three things should you avoid when disagreeing?",
+          a: "1. Agreeing to avoid discomfort\n2. Attacking the person instead of the opinion\n3. Backing down without a real reason — giving up your position just because they push"
+        },
+        {
+          q: "What is the mindset behind disagreeing?",
+          a: "My opinions are worth holding on to. I can disagree and still keep the relationship warm. Disagreeing is not an attack — it's honesty."
+        }
+      ]
+    },
+    {
+      name: "Share Feelings",
+      cards: [
+        {
+          q: "What are the three levels of sharing feelings?",
+          a: "Light: 'I'm actually a bit stressed right now, but it'll sort itself out.'\nMid: 'I'm carrying a feeling I can't quite put my finger on.'\nDeep: 'What I actually feel about this is...'"
+        },
+        {
+          q: "What makes sharing feelings authentic?",
+          a: "1. Specific feeling — not 'fine' but 'actually a bit tired but otherwise okay'\n2. Calibrated depth — not too personal too fast, but not empty either\n3. Without demanding a reaction — you share, you don't need comfort\n4. With openness — 'I'm not sure exactly why, but it feels like...'"
+        },
+        {
+          q: "What is the mindset behind sharing feelings?",
+          a: "Sharing how I feel is not weakness — it's connection. Specificity makes the feeling believable and human. I share without needing a specific reaction."
+        }
+      ]
+    }
+  ],
+
+  influenceframing: [
+    {
+      name: "Persuasion Framing",
+      cards: [
+        {
+          q: "What are the five principles of persuasion framing?",
+          a: "1. Understand their perspective first\n2. Find common ground — start with agreement\n3. Frame your proposal in their values\n4. Use concrete images and stories\n5. Give them a choice — people resist feeling forced"
+        },
+        {
+          q: "What is the formula for handling resistance?",
+          a: "Acknowledge → reframe → offer new perspective.\n'I understand that X feels risky. And you're right that it requires Y. What I'd suggest is...' — never argue against the objection directly."
+        },
+        {
+          q: "What are the four common mistakes in persuasion?",
+          a: "1. Starting with your point, not their perspective\n2. Using logic against emotional resistance\n3. Pressing when they hesitate — it increases resistance\n4. Arguing against their objection directly — acknowledge it instead"
+        },
+        {
+          q: "What is the mindset behind persuasion framing?",
+          a: "I'm not persuading against them — I'm helping them see something new. Their objection is information, not an obstacle. The right argument in the wrong frame doesn't work."
+        }
+      ]
+    },
+    {
+      name: "Reframe",
+      cards: [
+        {
+          q: "What are the four types of reframe?",
+          a: "1. Positive reframe — find the upside or neutral reading of something negative\n2. Context reframe — the same behaviour means something different in a different context\n3. Meaning reframe — change what the event means, not what it is\n4. Humorous reframe — present something absurdly (or take something absurd seriously)"
+        },
+        {
+          q: "Give two examples of reframing in practice.",
+          a: "• 'You're always so serious' → 'I take the things that matter seriously — I think that's a good thing.'\n• 'That failed' → 'That's one version of events — here's another way to look at it.'"
+        },
+        {
+          q: "What is the mindset behind reframing?",
+          a: "Every frame is a choice. I can choose a different one. The frame determines the experience — changing the frame changes the reality of the situation."
+        }
+      ]
+    },
+    {
+      name: "Grounding",
+      cards: [
+        {
+          q: "What does grounding mean as a communication skill?",
+          a: "Being anchored in yourself — knowing what you value and being able to communicate it naturally. It creates authenticity and depth in conversations. Not lecturing about values — sharing them as a natural part of conversation."
+        },
+        {
+          q: "What are four ways to ground yourself in a conversation?",
+          a: "1. Share what you believe without it feeling like a manifesto\n2. Tell about a time your values were tested — or showed themselves\n3. Answer honestly when asked about yourself\n4. Say no to something that doesn't fit who you are — and know why"
+        },
+        {
+          q: "What is the mindset behind grounding?",
+          a: "I know what I stand for — and it's okay to show it. Authenticity creates deeper connection than trying to impress."
+        }
+      ]
+    },
+    {
+      name: "Observation",
+      cards: [
+        {
+          q: "What four things can you observe in any social situation?",
+          a: "1. The environment — something unusual, a detail, a contrast\n2. The person — appearance, expression, energy, tone of voice\n3. The behaviour — patterns, deviations, reactions\n4. The atmosphere — what's in the room but not being said"
+        },
+        {
+          q: "What can you do with an observation once you've made it?",
+          a: "1. Comment on it\n2. Exaggerate it for humour\n3. Use it as an entry point to a question\n4. Keep it and let it inform how you act — you don't always have to voice it"
+        },
+        {
+          q: "What is the mindset behind observation?",
+          a: "I train myself to actually see — not just look. A sharp observer has material for humour, curiosity, compliments, and depth that others miss."
         }
       ]
     }
