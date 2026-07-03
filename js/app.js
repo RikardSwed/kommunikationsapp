@@ -1,7 +1,7 @@
 // app.js — All application logic for Communication Trainer
 // Depends on: data.js and multiStepData.js (must be loaded first)
 
-const VERSION = 'v1.17.3';
+const VERSION = 'v1.17.4';
 
 // ─── SCREENS ──────────────────────────────────────────────────────────────────
 const homeScreen     = document.getElementById('homeScreen');
@@ -161,7 +161,11 @@ function showModeScreen(key, label) {
 }
 
 function showTraining() {
-  strategies  = collections[activeCollectionKey] || [];
+  strategies  = (collections[activeCollectionKey] || []).map(strat => {
+    if (!window.filterInputsByBundle) return strat;
+    const filtered = window.filterInputsByBundle(strat.inputs, activeCollectionKey, strat.name);
+    return Object.assign({}, strat, { inputs: filtered.length ? filtered : strat.inputs });
+  });
   if (!strategies.length) return;
   stratOrder  = strategies.map((_, i) => i);
   inputOrders = strategies.map(s => s.inputs.map((_, i) => i));
@@ -595,8 +599,17 @@ document.addEventListener('keydown', e => {
 });
 
 // ─── SETTINGS ────────────────────────────────────────────────────────────────
-document.getElementById('settingsBtn').addEventListener('click', () =>
-  document.getElementById('settingsOverlay').classList.add('open'));
+function openTrainingSettings() {
+  const panel = document.querySelector('#settingsOverlay .settings-panel');
+  if (panel && window.renderBundleSection && activeCollectionKey) {
+    const strat = strategies && strategies[stratOrder && stratOrder[stratIdx] != null ? stratOrder[stratIdx] : 0];
+    if (strat) renderBundleSection(panel, activeCollectionKey, strat.name);
+  }
+  document.getElementById('settingsOverlay').classList.add('open');
+}
+
+document.getElementById('settingsBtn').addEventListener('click', openTrainingSettings);
+document.getElementById('settingsBtn').addEventListener('touchend', e => { e.preventDefault(); openTrainingSettings(); }, { passive: false });
 
 document.getElementById('settingsClose').addEventListener('click', () => {
   document.getElementById('settingsOverlay').classList.remove('open');
@@ -1499,6 +1512,226 @@ feedbackExportBtn.addEventListener('click', () => {
 
 applyFeedbackMode();
 applyInputCounterVisibility();
+
+// ─── ACCESS LEVEL SYSTEM ───────────────────────────────────────────────────────────
+
+(function initAccessLevel() {
+
+  const LEVEL_KEY = 'dev_access_level';
+
+  // Pack definitions per level
+  const PACK_CONFIG = {
+    assertive:      { label: 'Assertive Communication', minLevel: 'freemium' },
+    conversational: { label: 'Conversational Skills',   minLevel: 'freemium' },
+    humour:         { label: 'Humour Practise',          minLevel: 'pro'      },
+    criticism:      { label: 'Criticism & Correction',   minLevel: 'pro'      },
+    teasing:        { label: 'Teasing & Playfulness',    minLevel: 'complete' },
+  };
+
+  const LEVEL_ORDER = ['freemium', 'pro', 'complete'];
+
+  function getLevel() {
+    return localStorage.getItem(LEVEL_KEY) || 'complete';
+  }
+
+  function setLevel(level) {
+    localStorage.setItem(LEVEL_KEY, level);
+  }
+
+  function levelIndex(level) {
+    return LEVEL_ORDER.indexOf(level);
+  }
+
+  function canAccess(packKey) {
+    const cfg = PACK_CONFIG[packKey];
+    if (!cfg) return true;
+    return levelIndex(getLevel()) >= levelIndex(cfg.minLevel);
+  }
+
+  function badgeLabel(packKey) {
+    const cfg = PACK_CONFIG[packKey];
+    if (!cfg) return null;
+    const min = cfg.minLevel;
+    if (min === 'pro')      return { text: 'Pro',      cls: 'pack-lock-badge--pro' };
+    if (min === 'complete') return { text: 'Complete', cls: 'pack-lock-badge--complete' };
+    return null;
+  }
+
+  // Apply to all collection-card elements that have data-key
+  function applyAccessLevel() {
+    const level = getLevel();
+    document.querySelectorAll('.collection-card[data-key]').forEach(card => {
+      const key = card.dataset.key;
+      const accessible = canAccess(key);
+      card.classList.toggle('collection-card--locked', !accessible);
+      // Remove old badge if present
+      const old = card.querySelector('.pack-lock-badge');
+      if (old) old.remove();
+      if (!accessible) {
+        const badge = badgeLabel(key);
+        if (badge) {
+          const el = document.createElement('div');
+          el.className = `pack-lock-badge ${badge.cls}`;
+          el.textContent = badge.text;
+          card.appendChild(el);
+        }
+        // Prevent click
+        card.onclick = null;
+        card.ontouchend = null;
+      }
+    });
+    // Re-bind clicks on accessible cards in Library Packs tab
+    document.querySelectorAll('#libTabPacks .collection-card[data-key]').forEach(card => {
+      if (!canAccess(card.dataset.key)) return;
+      card.onclick = () => showModeScreen(card.dataset.key, card.dataset.label);
+      let cSY = 0, cMv = false;
+      card.ontouchstart = e => { cSY = e.touches[0].clientY; cMv = false; };
+      card.ontouchmove  = e => { if (Math.abs(e.touches[0].clientY - cSY) > 8) cMv = true; };
+      card.ontouchend   = () => { if (!cMv) showModeScreen(card.dataset.key, card.dataset.label); };
+    });
+  }
+
+  // Load radio in developer settings
+  function loadDevLevelUI() {
+    const level = getLevel();
+    const radio = document.getElementById(
+      level === 'pro' ? 'devLevelPro' :
+      level === 'freemium' ? 'devLevelFreemium' : 'devLevelComplete'
+    );
+    if (radio) radio.checked = true;
+  }
+
+  // Listen to radio changes
+  ['devLevelComplete', 'devLevelPro', 'devLevelFreemium'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.addEventListener('change', () => {
+      if (el.checked) { setLevel(el.value); applyAccessLevel(); }
+    });
+  });
+
+  // Hook into navToSettings so radio is always current
+  const _origNavToSettings = navToSettings;
+  window.navToSettings = function() {
+    _origNavToSettings();
+    loadDevLevelUI();
+  };
+
+  // Expose for other modules
+  window.accessLevel = { getLevel, canAccess };
+
+  // Init
+  loadDevLevelUI();
+  applyAccessLevel();
+
+})();
+
+// ─── INPUT BUNDLES ──────────────────────────────────────────────────────────────
+
+// Bundle definitions — keyed by packKey, then strategyName
+const BUNDLE_DEFS = {
+  assertive: {
+    Fogging: [
+      {
+        id: 'default',
+        name: 'Default Bundle',
+        description: 'The core Fogging inputs — everyday situations where staying calm and acknowledging criticism is the key skill.',
+        default: true,
+      },
+      {
+        id: 'test',
+        name: 'Workplace & Social Bundle',
+        description: 'Additional inputs focused on professional and social contexts — colleagues, work situations and social judgement.',
+        default: false,
+      },
+    ]
+  }
+};
+
+// Bundle state storage: key = 'bundles:{packKey}:{strategyName}'
+function getBundleState(packKey, stratName) {
+  const k = `bundles:${packKey}:${stratName}`;
+  try { return JSON.parse(localStorage.getItem(k)); } catch { return null; }
+}
+
+function setBundleState(packKey, stratName, state) {
+  const k = `bundles:${packKey}:${stratName}`;
+  localStorage.setItem(k, JSON.stringify(state));
+}
+
+// Get active bundle IDs for a pack+strategy
+function getActiveBundles(packKey, stratName) {
+  const defs = (BUNDLE_DEFS[packKey] || {})[stratName];
+  if (!defs) return null; // no bundles defined — use all inputs
+  const saved = getBundleState(packKey, stratName);
+  if (saved) return saved;
+  // Default: only bundles with default:true
+  const defaults = defs.filter(b => b.default).map(b => b.id);
+  return defaults.length ? defaults : [defs[0].id];
+}
+
+// Filter inputs based on active bundles
+window.filterInputsByBundle = function(inputs, packKey, stratName) {
+  const defs = (BUNDLE_DEFS[packKey] || {})[stratName];
+  if (!defs) return inputs; // no bundles for this strategy
+  const active = getActiveBundles(packKey, stratName);
+  return inputs.filter(inp => !inp.bundle || active.includes(inp.bundle));
+};
+
+// Render Input Bundles section into a settings overlay
+window.renderBundleSection = function(containerEl, packKey, stratName) {
+  const defs = (BUNDLE_DEFS[packKey] || {})[stratName];
+  // Remove old bundle section if present
+  const old = containerEl.querySelector('.bundle-section');
+  if (old) old.remove();
+
+  const section = document.createElement('div');
+  section.className = 'bundle-section';
+  section.innerHTML = `<div class="bundle-section-title">Input Bundles</div>`;
+
+  if (!defs || !defs.length) {
+    section.innerHTML += `<div style="font-size:13px;color:#bbb;padding:8px 0;">No extra bundles available for this pack yet.</div>`;
+    containerEl.appendChild(section);
+    return;
+  }
+
+  const active = getActiveBundles(packKey, stratName);
+
+  defs.forEach(bundle => {
+    const isOn = active.includes(bundle.id);
+    const row = document.createElement('div');
+    row.innerHTML = `
+      <div class="bundle-row">
+        <div class="bundle-info">
+          <div class="bundle-name">${bundle.name}</div>
+          <div class="bundle-desc-preview">Tap ⓘ for details</div>
+        </div>
+        <button class="bundle-expand" data-bundle="${bundle.id}" title="About this bundle">ⓘ</button>
+        <label class="toggle"><input type="checkbox" class="bundle-toggle" data-bundle="${bundle.id}" ${isOn ? 'checked' : ''} /><span class="toggle-slider"></span></label>
+      </div>
+      <div class="bundle-detail" id="bundle-detail-${bundle.id}">${bundle.description}</div>
+    `;
+    section.appendChild(row);
+
+    // Toggle
+    row.querySelector('.bundle-toggle').addEventListener('change', function() {
+      const cur = getActiveBundles(packKey, stratName);
+      const newState = this.checked
+        ? [...new Set([...cur, bundle.id])]
+        : cur.filter(id => id !== bundle.id);
+      // Always keep at least one active
+      if (newState.length === 0) { this.checked = true; return; }
+      setBundleState(packKey, stratName, newState);
+    });
+
+    // Expand detail
+    row.querySelector('.bundle-expand').addEventListener('click', () => {
+      const detail = document.getElementById(`bundle-detail-${bundle.id}`);
+      if (detail) detail.classList.toggle('open');
+    });
+  });
+
+  containerEl.appendChild(section);
+};
 
 // ─── PROGRESS BAR ──────────────────────────────────────────────────────────────
 
