@@ -1,7 +1,7 @@
 // app.js — All application logic for Communication Trainer
 // Depends on: data.js and multiStepData.js (must be loaded first)
 
-const VERSION = 'v1.17.6';
+const VERSION = 'v1.17.7';
 
 // ─── SCREENS ──────────────────────────────────────────────────────────────────
 const homeScreen     = document.getElementById('homeScreen');
@@ -3455,16 +3455,8 @@ TRAINING_SCREENS.push('hfCollScreen');
 
     function toggle() {
       const isOpen = header.classList.contains('open');
-      // Close all others
-      document.querySelectorAll('#libTabTopics .topic-header.open').forEach(h => {
-        h.classList.remove('open');
-        const p = h.parentElement.querySelector('.topic-packs');
-        if (p) p.classList.remove('open');
-      });
-      if (!isOpen) {
-        header.classList.add('open');
-        packs.classList.add('open');
-      }
+      header.classList.toggle('open', !isOpen);
+      packs.classList.toggle('open', !isOpen);
     }
   });
 
