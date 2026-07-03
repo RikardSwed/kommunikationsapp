@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
   <title>Deckstack</title>
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="stylesheet" href="css/style.css?v=1175" />
+  <link rel="stylesheet" href="css/style.css?v=1180" />
 </head>
 <body>
 
@@ -57,6 +57,19 @@
     <div id="dashFavSection" style="display:none;">
       <div class="dash-section-label">Favorites</div>
       <div id="dashFavList"></div>
+    </div>
+
+    <!-- Recommended packs -->
+    <div id="dashRecommendedSection">
+      <div class="dash-section-label">Recommended</div>
+      <div class="collection-card" data-key="assertive" data-label="Assertive Communication" id="dashRecAssertive">
+        <div><div class="collection-name">Assertive Communication</div><div class="collection-meta">Start here · Core social skill</div></div>
+        <div class="collection-arrow">›</div>
+      </div>
+      <div class="collection-card" data-key="conversational" data-label="Conversational Skills" id="dashRecConversational">
+        <div><div class="collection-name">Conversational Skills</div><div class="collection-meta">Recommended · Everyday use</div></div>
+        <div class="collection-arrow">›</div>
+      </div>
     </div>
   </div>
 
@@ -240,7 +253,7 @@
         <button id="progResetBtn" class="prog-reset-btn">Reset all progress data…</button>
       </div>
     </div>
-    <div class="settings-version">v1.17.5</div>
+    <div class="settings-version">v1.18.0</div>
     <button class="settings-close" id="progressSettingsClose">Done</button>
   </div>
 </div>
@@ -1081,7 +1094,7 @@
       <label>Progress bar</label>
       <label class="toggle"><input type="checkbox" id="showProgressBar" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.17.5</div>
+    <div class="settings-version">v1.18.0</div>
     <button class="settings-close" id="settingsClose">Done</button>
   </div>
 </div>
@@ -1154,7 +1167,7 @@
       <label>Loop current strategy</label>
       <label class="toggle"><input type="checkbox" id="hfLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.17.5</div>
+    <div class="settings-version">v1.18.0</div>
     <button class="settings-close" id="hfSettingsClose">Done</button>
   </div>
 </div>
@@ -1223,7 +1236,7 @@
       <label>Loop current strategy</label>
       <label class="toggle"><input type="checkbox" id="hfMemLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.17.5</div>
+    <div class="settings-version">v1.18.0</div>
     <button class="settings-close" id="hfMemSettingsClose">Done</button>
   </div>
 </div>
@@ -1292,7 +1305,7 @@
       <label>Loop current category</label>
       <label class="toggle"><input type="checkbox" id="hfChallLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.17.5</div>
+    <div class="settings-version">v1.18.0</div>
     <button class="settings-close" id="hfChallSettingsClose">Done</button>
   </div>
 </div>
@@ -1350,7 +1363,7 @@
       <label>Loop current combo</label>
       <label class="toggle"><input type="checkbox" id="hfFlowLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.17.5</div>
+    <div class="settings-version">v1.18.0</div>
     <button class="settings-close" id="hfFlowSettingsClose">Done</button>
   </div>
 </div>
@@ -1419,7 +1432,7 @@
       <label>Loop current mindset</label>
       <label class="toggle"><input type="checkbox" id="hfMindLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.17.5</div>
+    <div class="settings-version">v1.18.0</div>
     <button class="settings-close" id="hfMindSettingsClose">Done</button>
   </div>
 </div>
@@ -1488,7 +1501,7 @@
       <label>Loop current collection</label>
       <label class="toggle"><input type="checkbox" id="hfCollLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.17.5</div>
+    <div class="settings-version">v1.18.0</div>
     <button class="settings-close" id="hfCollSettingsClose">Done</button>
   </div>
 </div>
@@ -1618,7 +1631,7 @@
         <label class="settings-radio-label"><input type="radio" name="devLevel" value="freemium" id="devLevelFreemium" /> Freemium <span style="font-size:12px;color:#aaa;margin-left:4px;">Assertive &amp; Conversational only</span></label>
       </div>
     </div>
-    <div class="settings-version">v1.17.5</div>
+    <div class="settings-version">v1.18.0</div>
   </div>
 </div>
 
@@ -1638,10 +1651,10 @@
   </button>
 </div>
 
-<script src="js/data.js?v=1175"></script>
-<script src="js/multiStepData.js?v=1175"></script>
-<script src="js/memorizeData.js?v=1175"></script>
-<script src="js/app.js?v=1175"></script>
+<script src="js/data.js?v=1180"></script>
+<script src="js/multiStepData.js?v=1180"></script>
+<script src="js/memorizeData.js?v=1180"></script>
+<script src="js/app.js?v=1180"></script>
 
 </body>
 </html>
