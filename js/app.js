@@ -1,7 +1,7 @@
 // app.js — All application logic for Communication Trainer
 // Depends on: data.js and multiStepData.js (must be loaded first)
 
-const VERSION = 'v1.17.2';
+const VERSION = 'v1.17.3';
 
 // ─── SCREENS ──────────────────────────────────────────────────────────────────
 const homeScreen     = document.getElementById('homeScreen');
@@ -3134,6 +3134,56 @@ function showHandsfreeCollections() {
 addModeListener('modeHandsfreeCollections', showHandsfreeCollections);
 TRAINING_SCREENS.push('hfCollScreen');
 
+
+// ─── TOPICS ACCORDION ───────────────────────────────────────────────────────
+
+(function initTopics() {
+  // Accordion toggle
+  document.querySelectorAll('#libTabTopics .topic-header').forEach(header => {
+    const group = header.parentElement;
+    if (group.classList.contains('topic-group--empty')) return;
+    const packs = group.querySelector('.topic-packs');
+    if (!packs) return;
+    let tStartY = 0, tMoved = false;
+    header.addEventListener('touchstart', e => { tStartY = e.touches[0].clientY; tMoved = false; }, { passive: true });
+    header.addEventListener('touchmove',  e => { if (Math.abs(e.touches[0].clientY - tStartY) > 8) tMoved = true; }, { passive: true });
+    header.addEventListener('touchend', () => {
+      if (tMoved) return;
+      const isOpen = header.classList.contains('open');
+      // Close all others
+      document.querySelectorAll('#libTabTopics .topic-header.open').forEach(h => {
+        h.classList.remove('open');
+        const p = h.parentElement.querySelector('.topic-packs');
+        if (p) p.classList.remove('open');
+      });
+      if (!isOpen) {
+        header.classList.add('open');
+        packs.classList.add('open');
+      }
+    });
+    header.addEventListener('click', () => {
+      const isOpen = header.classList.contains('open');
+      document.querySelectorAll('#libTabTopics .topic-header.open').forEach(h => {
+        h.classList.remove('open');
+        const p = h.parentElement.querySelector('.topic-packs');
+        if (p) p.classList.remove('open');
+      });
+      if (!isOpen) {
+        header.classList.add('open');
+        packs.classList.add('open');
+      }
+    });
+  });
+
+  // Pack cards inside topics
+  document.querySelectorAll('#libTabTopics .collection-card').forEach(card => {
+    let cStartY = 0, cMoved = false;
+    card.addEventListener('touchstart', e => { cStartY = e.touches[0].clientY; cMoved = false; }, { passive: true });
+    card.addEventListener('touchmove',  e => { if (Math.abs(e.touches[0].clientY - cStartY) > 8) cMoved = true; }, { passive: true });
+    card.addEventListener('touchend', () => { if (!cMoved) showModeScreen(card.dataset.key, card.dataset.label); });
+    card.addEventListener('click', () => showModeScreen(card.dataset.key, card.dataset.label));
+  });
+})();
 
 // ─── LIBRARY SUB-NAV ────────────────────────────────────────────────────────
 
