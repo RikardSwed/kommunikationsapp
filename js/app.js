@@ -3645,11 +3645,16 @@ document.querySelectorAll('.nav-tab').forEach(btn => {
     lastPackSec.style.display = '';
     lastPackCard.className = 'dash-continue-card';
     lastPackCard.innerHTML = `
-      <div>
-        <div class="dash-continue-name">${last.label}</div>
-        <div class="dash-continue-meta">Last trained &middot; Continue</div>
+      <div class="dash-continue-inner">
+        <div>
+          <div class="dash-continue-name">${last.label}</div>
+          <div class="dash-continue-meta">Last trained &middot; Continue</div>
+        </div>
+        <div class="dash-continue-arrow">›</div>
       </div>
-      <div class="dash-continue-arrow">›</div>`;
+      <div class="dash-continue-progress">
+        <div class="dash-continue-progress-fill" style="width:0%"></div>
+      </div>`;
     let lpStartY = 0, lpMoved = false;
     lastPackCard.ontouchstart = e => { lpStartY = e.touches[0].clientY; lpMoved = false; };
     lastPackCard.ontouchmove  = e => { if (Math.abs(e.touches[0].clientY - lpStartY) > 8) lpMoved = true; };
