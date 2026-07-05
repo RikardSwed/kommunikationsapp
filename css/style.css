@@ -1649,7 +1649,7 @@ body.pb-enabled .divider::after {
 .dash-continue-card {
   background: var(--ds-card);
   border-radius: 16px;
-  padding: 18px 20px 0;
+  padding: 18px 20px 14px;
   margin-bottom: 12px;
   box-shadow: 0 2px 12px var(--ds-shadow);
   cursor: pointer;
@@ -1659,14 +1659,13 @@ body.pb-enabled .divider::after {
   display: flex;
   flex-direction: column;
   border: 1.5px solid var(--ds-acc);
-  overflow: hidden;
 }
 .dash-continue-card:active { opacity: 0.88; transform: scale(0.98); }
 .dash-continue-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-bottom: 14px;
+  margin-bottom: 12px;
 }
 .dash-continue-name {
   font-size: 17px;
@@ -1686,12 +1685,12 @@ body.pb-enabled .divider::after {
 .dash-continue-progress {
   height: 3px;
   background: var(--ds-border);
-  margin: 0 -1.5px;
+  border-radius: 2px;
 }
 .dash-continue-progress-fill {
   height: 3px;
   background: var(--ds-acc);
-  border-radius: 0;
+  border-radius: 2px;
   transition: width 0.3s ease;
 }
 
@@ -1707,6 +1706,7 @@ body.pb-enabled .divider::after {
   border-radius: 14px;
   padding: 14px 12px;
   box-shadow: 0 2px 8px var(--ds-shadow);
+  border: 0.5px solid var(--ds-border);
   cursor: pointer;
   touch-action: manipulation;
   -webkit-user-select: none;
