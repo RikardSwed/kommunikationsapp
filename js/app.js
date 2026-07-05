@@ -3,6 +3,25 @@
 
 const VERSION = 'v1.19.0';
 
+// Pack icon map — global so both dashboard and favorites can use it
+const PACK_ICONS = {
+  assertive:          'ti-messages',
+  conversational:     'ti-mood-happy',
+  humour:             'ti-mood-smile',
+  teasing:            'ti-mood-wink',
+  criticism:          'ti-message-2',
+  conversationaldepth:'ti-book',
+  compliments:        'ti-heart',
+  selfhumour:         'ti-mood-laugh',
+  startingconnecting: 'ti-users',
+  listeningresponding:'ti-ear',
+  influenceframing:   'ti-bulb',
+};
+function packIcon(key) {
+  const name = PACK_ICONS[key] || 'ti-cards';
+  return `<i class="ti ${name}" aria-hidden="true"></i>`;
+}
+
 // ─── SCREENS ──────────────────────────────────────────────────────────────────
 const homeScreen     = document.getElementById('homeScreen');
 const modeScreen     = document.getElementById('modeScreen');
@@ -3620,25 +3639,6 @@ document.querySelectorAll('.nav-tab').forEach(btn => {
   }
 
   // ── Last pack render ──────────────────────────────────────────────────────
-  // Pack icon map
-  const PACK_ICONS = {
-    assertive:          'ti-messages',
-    conversational:     'ti-mood-happy',
-    humour:             'ti-mood-smile',
-    teasing:            'ti-mood-wink',
-    criticism:          'ti-message-2',
-    conversationaldepth:'ti-book',
-    compliments:        'ti-heart',
-    selfhumour:         'ti-mood-laugh',
-    startingconnecting: 'ti-users',
-    listeningresponding:'ti-ear',
-    influenceframing:   'ti-bulb',
-  };
-  function packIcon(key) {
-    const name = PACK_ICONS[key] || 'ti-cards';
-    return `<i class="ti ${name}" aria-hidden="true"></i>`;
-  }
-
   function renderLastPack() {
     const last = getLastPack();
     if (!lastPackSec || !last) { if (lastPackSec) lastPackSec.style.display = 'none'; return; }
