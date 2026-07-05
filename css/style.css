@@ -1645,7 +1645,7 @@ body.pb-enabled .divider::after {
 
 /* Continue card — filled accent background */
 .dash-continue-card {
-  background: var(--ds-acc);
+  background: var(--ds-card);
   border-radius: 16px;
   padding: 18px 20px;
   margin-bottom: 12px;
@@ -1657,21 +1657,22 @@ body.pb-enabled .divider::after {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border: 1.5px solid var(--ds-acc);
 }
 .dash-continue-card:active { opacity: 0.88; transform: scale(0.98); }
 .dash-continue-name {
   font-size: 17px;
   font-weight: 700;
-  color: var(--ds-acc-text);
+  color: var(--ds-txt);
   margin-bottom: 3px;
 }
 .dash-continue-meta {
   font-size: 13px;
-  color: rgba(255,255,255,0.72);
+  color: var(--ds-txt2);
 }
 .dash-continue-arrow {
   font-size: 22px;
-  color: rgba(255,255,255,0.8);
+  color: var(--ds-txt3);
   flex-shrink: 0;
 }
 
