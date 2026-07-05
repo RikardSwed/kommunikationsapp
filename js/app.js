@@ -3620,11 +3620,36 @@ document.querySelectorAll('.nav-tab').forEach(btn => {
   }
 
   // ── Last pack render ──────────────────────────────────────────────────────
+  // Pack icon map
+  const PACK_ICONS = {
+    assertive:          'ti-messages',
+    conversational:     'ti-mood-happy',
+    humour:             'ti-mood-smile',
+    teasing:            'ti-mood-wink',
+    criticism:          'ti-message-2',
+    conversationaldepth:'ti-book',
+    compliments:        'ti-heart',
+    selfhumour:         'ti-mood-laugh',
+    startingconnecting: 'ti-users',
+    listeningresponding:'ti-ear',
+    influenceframing:   'ti-bulb',
+  };
+  function packIcon(key) {
+    const name = PACK_ICONS[key] || 'ti-cards';
+    return `<i class="ti ${name}" aria-hidden="true"></i>`;
+  }
+
   function renderLastPack() {
     const last = getLastPack();
     if (!lastPackSec || !last) { if (lastPackSec) lastPackSec.style.display = 'none'; return; }
     lastPackSec.style.display = '';
-    lastPackName.textContent = last.label;
+    lastPackCard.className = 'dash-continue-card';
+    lastPackCard.innerHTML = `
+      <div>
+        <div class="dash-continue-name">${last.label}</div>
+        <div class="dash-continue-meta">Last trained &middot; Continue</div>
+      </div>
+      <div class="dash-continue-arrow">›</div>`;
     let lpStartY = 0, lpMoved = false;
     lastPackCard.ontouchstart = e => { lpStartY = e.touches[0].clientY; lpMoved = false; };
     lastPackCard.ontouchmove  = e => { if (Math.abs(e.touches[0].clientY - lpStartY) > 8) lpMoved = true; };
@@ -3901,17 +3926,18 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
     const favs  = getFavs();
     if (!favs.length) { favSec.style.display = 'none'; return; }
     const times = getTrainedTimes();
-    // Sort by last trained (most recent first), untrained go last
     const sorted = [...favs].sort((a, b) => (times[b.key] || 0) - (times[a.key] || 0));
     const shown  = sorted.slice(0, 4);
     favSec.style.display = '';
-    favList.innerHTML = shown.map(f =>
-      `<div class="collection-card" data-key="${f.key}" data-label="${f.label.replace(/"/g,'&quot;')}">
-        <div><div class="collection-name">${f.label}</div><div class="collection-meta">📌 Favorite</div></div>
-        <div class="collection-arrow">›</div>
-       </div>`
-    ).join('');
-    favList.querySelectorAll('.collection-card').forEach(card => {
+    favList.innerHTML = `<div class="dash-fav-grid">${
+      shown.map(f =>
+        `<div class="dash-fav-card" data-key="${f.key}" data-label="${f.label.replace(/"/g,'&quot;')}">
+          <div class="dash-fav-icon">${packIcon(f.key)}</div>
+          <div class="dash-fav-name">${f.label}</div>
+        </div>`
+      ).join('')
+    }</div>`;
+    favList.querySelectorAll('.dash-fav-card').forEach(card => {
       let fStartY = 0, fMoved = false;
       card.ontouchstart = e => { fStartY = e.touches[0].clientY; fMoved = false; };
       card.ontouchmove  = e => { if (Math.abs(e.touches[0].clientY - fStartY) > 8) fMoved = true; };
