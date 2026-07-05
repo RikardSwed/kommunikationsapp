@@ -3972,38 +3972,84 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
   }
 
   // ─ Session tracking ───────────────────────────────────────────────────
-  let _sessionStart = null;
-  let _sessionPack  = null;
-  let _sessionCards = 0;
+  // Time tracking: activity-based only.
+  // - Visibility API: pause timer when app goes to background
+  // - Inactivity timeout: stop counting if no card flip for 90 seconds
+  // Only time with actual card flips within 90s counts.
+
+  const INACTIVITY_LIMIT = 90; // seconds without a flip = inactive
+
+  let _sessionPack       = null;
+  let _sessionCards      = 0;
+  let _activeSeconds     = 0;   // accumulated active seconds
+  let _lastFlipTime      = null; // timestamp of last flip
+  let _tickInterval      = null; // 1-second interval
+  let _sessionActive     = false;
+
+  function _startTick() {
+    if (_tickInterval) return;
+    _tickInterval = setInterval(() => {
+      if (!_sessionActive || !_lastFlipTime) return;
+      const secondsSinceFlip = (Date.now() - _lastFlipTime) / 1000;
+      if (secondsSinceFlip < INACTIVITY_LIMIT) {
+        _activeSeconds++;
+      }
+    }, 1000);
+  }
+
+  function _stopTick() {
+    if (_tickInterval) { clearInterval(_tickInterval); _tickInterval = null; }
+  }
+
+  // Pause/resume on visibility change
+  document.addEventListener('visibilitychange', () => {
+    if (!_sessionActive) return;
+    if (document.hidden) {
+      _stopTick();
+    } else {
+      // Reset lastFlipTime so inactivity gap while hidden doesn't count
+      _lastFlipTime = null;
+      _startTick();
+    }
+  });
 
   window.progStartSession = function(packKey, packLabel) {
     if (!bool(K.enabled)) return;
-    _sessionStart = Date.now();
-    _sessionPack  = { key: packKey, label: packLabel };
-    _sessionCards = 0;
+    _sessionPack   = { key: packKey, label: packLabel };
+    _sessionCards  = 0;
+    _activeSeconds = 0;
+    _lastFlipTime  = null;
+    _sessionActive = true;
+    _startTick();
   };
 
   window.progCardFlipped = function() {
-    if (!bool(K.enabled)) return;
+    if (!bool(K.enabled) || !_sessionActive) return;
     _sessionCards++;
+    _lastFlipTime = Date.now();
   };
 
   window.progEndSession = function() {
-    if (!bool(K.enabled) || !_sessionStart || !_sessionPack) return;
-    const minutes = Math.round((Date.now() - _sessionStart) / 60000);
-    if (minutes < 0.1 && _sessionCards === 0) { _sessionStart = null; return; } // ignore trivial
+    if (!bool(K.enabled) || !_sessionPack) return;
+    _stopTick();
+    _sessionActive = false;
+    const minutes = _activeSeconds / 60;
+    if (minutes < 0.05 && _sessionCards === 0) {
+      _sessionPack = null; _activeSeconds = 0; return;
+    }
     const s = getSessions();
     s.push({
       date:      todayStr(),
       packKey:   _sessionPack.key,
       packLabel: _sessionPack.label,
-      minutes:   Math.max(0, minutes),
+      minutes:   Math.max(0, Math.round(minutes * 10) / 10),
       cards:     _sessionCards,
     });
     saveSessions(s);
-    _sessionStart = null;
-    _sessionPack  = null;
-    _sessionCards = 0;
+    _sessionPack   = null;
+    _activeSeconds = 0;
+    _lastFlipTime  = null;
+    _sessionCards  = 0;
     updateStreak();
     if (document.getElementById('progressScreen') &&
         document.getElementById('progressScreen').style.display !== 'none') {
