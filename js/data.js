@@ -527,3 +527,179 @@ const collections = {
   ]
 
 };
+
+// ─── CHALLENGES COLLECTIONS ───────────────────────────────────────────────────
+
+const challengesCollections = {
+
+  assertive: [
+    { name: "Assertive Communication", description: "Harder situations — pushback, pressure, edge cases where it's tempting to back down.", inputs: [
+      { q: "Someone keeps pushing after you've said no clearly", a: "Don't explain or apologise more. Repeat calmly: \"My answer is still no.\" Persistence is not a reason to change your position." },
+      { q: "Someone raises their voice to get their way", a: "Stay calm and lower your own voice if anything. \"I'll talk when the tone comes down.\" Don't match the aggression." },
+      { q: "You're in a group and someone steamrolls your point", a: "Re-enter clearly: \"I wasn't finished — \" then complete your thought. Don't ask for the floor, take it." },
+      { q: "Someone makes you feel guilty for having a need", a: "Acknowledge their feeling, hold your position: \"I hear that's frustrating for you. I still need X.\"" },
+      { q: "Someone agrees in the moment but doesn't follow through", a: "Name it directly: \"You said X last time, and it didn't happen. I need to know this is going to change.\"" },
+    ]}
+  ],
+
+  compliments: [
+    { name: "Compliments & Appreciation", description: "Harder compliment situations — when it feels awkward or doesn't land.", inputs: [
+      { q: "You give a compliment and the person dismisses it immediately", a: "Don't withdraw it. \"I mean it — I noticed it specifically.\" Let it stand." },
+      { q: "You want to compliment someone but you've never done it before", a: "Specific and brief: name exactly what you noticed. Specificity cuts through the awkwardness." },
+      { q: "Someone gives you a compliment you genuinely don't believe", a: "Receive it without arguing: \"Thank you — I'll take that.\" You don't have to agree to accept it graciously." },
+      { q: "The group dynamic makes giving a sincere compliment feel weird", a: "Say it anyway, briefly and directly. Groups follow whoever acts with the most ease." },
+      { q: "You want to express appreciation for something that mattered", a: "Be specific about what and why: \"What you did when [X] — it actually made a difference to me.\"" },
+    ]}
+  ],
+
+  influenceframing: [
+    { name: "Influence & Framing", description: "Harder influence situations — when resistance is high, under pressure, or the stakes are real.", inputs: [
+      { q: "Someone keeps returning to their original objection even after you've addressed it", a: "Name the loop: \"I think we keep coming back to X. What would actually need to change for you to feel differently about it?\"" },
+      { q: "You're trying to persuade someone who has already decided", a: "Don't argue the decision — question the frame: \"What would it take for you to reconsider?\" Then listen." },
+      { q: "Someone reframes what you said to mean something you didn't intend", a: "Correct it directly: \"That's not what I said — what I actually mean is...\" Don't let the distorted version stand." },
+      { q: "You need to change the direction of a meeting or conversation", a: "Name the shift: \"I want to take this in a slightly different direction — \" and then do it. You don't need permission." },
+      { q: "Someone is catastrophising and won't hear alternatives", a: "Don't contradict the feeling — reframe the scale: \"That's a real concern. Is it definitely that, or could it be [smaller version]?\"" },
+    ]}
+  ],
+
+  humour: [
+    { name: "Humour Practise", description: "Harder humour situations — when it doesn't land, when the moment is tense, or when someone reacts unexpectedly.", inputs: [
+      { q: "Someone is visibly offended by something you meant as a joke", a: "Don't over-explain. Acknowledge briefly: \"That came out wrong — not what I meant.\" Then move on. Over-apologising makes it bigger." },
+      { q: "You make a joke and no one laughs", a: "\"And that's why I don't do stand-up.\" — own it with self-irony and continue. Don't explain the joke." },
+      { q: "Someone misreads your humour as serious", a: "Clarify lightly: \"That was me being ridiculous — I probably should have added a sign.\" Brief, then move on." },
+      { q: "A group conversation turns heavy unexpectedly and you want to lighten it", a: "One well-timed observation — name something everyone has noticed. Give people permission to breathe without forcing it." },
+      { q: "Someone uses humour aggressively at your expense", a: "Respond with self-irony rather than defence: \"Fair. I had that coming.\" It's harder to attack someone who agrees." },
+    ]}
+  ],
+
+  teasing: [
+    { name: "Teasing & Playfulness", description: "Harder teasing situations — when it misfires, escalates, or lands on something unintentionally sensitive.", inputs: [
+      { q: "Someone doesn't take the tease well and goes quiet", a: "Soften immediately: \"That was me being silly — I'm just messing with you.\" Brief, warm, no lecture." },
+      { q: "You misjudge the tone and the tease lands wrong", a: "Own it without over-apologising: \"Okay, that came out wrong. Let me try that again.\"" },
+      { q: "Someone tries to tease you back aggressively", a: "Receive it with self-irony: \"Fair. Completely fair.\" Don't match the aggression — that ends the play." },
+      { q: "You're in a group and want to tease without it feeling targeted", a: "Tease something situational that includes everyone, not one person alone." },
+      { q: "Someone is sensitive about the exact thing you just teased", a: "\"Sorry — that was thoughtless. I didn't mean it.\" Clean and direct. Don't qualify." },
+    ]}
+  ],
+
+  selfhumour: [
+    { name: "Self-Humour", description: "Harder self-humour situations — when it risks reading as deflection, or when someone uses it against you.", inputs: [
+      { q: "Someone criticises something real about you and expects a serious response", a: "Acknowledge what's true with humour, then engage directly: \"You're not wrong — and that's the worst part.\" Then address it." },
+      { q: "You're in a situation where self humour might seem like deflection", a: "Use it lightly once, then engage genuinely: \"Okay, self-irony aside — here's what I actually think.\"" },
+      { q: "Someone keeps making the same joke about your flaw", a: "\"I appreciate the consistency. Truly.\" — then let it land without more reaction. Once is enough." },
+      { q: "You genuinely feel bad about something you did", a: "Self humour is not the right tool here. Acknowledge it directly first. Don't use humour to avoid the thing." },
+      { q: "Someone uses your self-deprecating joke against you seriously", a: "\"That was me being ridiculous — I don't actually think that.\" Name the difference clearly." },
+    ]}
+  ],
+
+  conversationaldepth: [
+    { name: "Conversational Depth", description: "Harder depth situations — short answers, going too deep too fast, or one-sided conversations.", inputs: [
+      { q: "Someone gives a short answer to a deep question", a: "Don't push — reflect back and leave space: \"Interesting.\" [pause] Often they'll continue. Silence is an invitation." },
+      { q: "You ask a deep question and they deflect with humour", a: "Let it go this time. Come back to it later from a different angle. You can't force depth." },
+      { q: "You go too deep too fast and the person becomes uncomfortable", a: "Pull back to lighter territory and let them set the pace from there. Don't explain why you're backing off." },
+      { q: "The conversation has turned one-sided — you're asking, they're not", a: "Share something yourself first: \"I ask because I've been thinking about this a lot myself — [brief share]. What about you?\"" },
+      { q: "Someone shares something deeply personal and you don't know how to respond", a: "You don't need to match it immediately. Acknowledge it: \"Thank you for saying that — that's not something people usually share.\"" },
+    ]}
+  ],
+
+  startingconnecting: [
+    { name: "Starting & Connecting", description: "Harder starting situations — when the opener doesn't land, when you go blank, or when the conversation stalls.", inputs: [
+      { q: "You approach someone and they respond very briefly and turn away", a: "Read it as a no and move on. Not every opener lands — that's situational, not personal." },
+      { q: "You start a conversation and then go completely blank on what to say next", a: "Ask one simple question about them or the situation. \"What brings you here?\" is always available." },
+      { q: "You want to approach someone you find interesting but feel conspicuous", a: "The framing opener: \"I'd regret not coming over — I'm [name].\" It names the dynamic, which removes some of the awkwardness." },
+      { q: "You've run through three topics and everything keeps dying", a: "That's okay. Not every conversation takes off. \"It was nice talking to you — enjoy the rest of the evening.\"" },
+      { q: "Someone starts a conversation with you and you'd rather not engage", a: "Brief and kind: \"I'm actually a bit in my head right now — but enjoy the evening.\"" },
+    ]}
+  ],
+
+  listeningresponding: [
+    { name: "Listening & Responding", description: "Harder listening situations — uncomfortable content, lost thread, or someone who needs more than you know how to give.", inputs: [
+      { q: "Someone shares something emotionally heavy and you don't know what to say", a: "\"That sounds really hard. I'm glad you told me.\" You don't need to say anything clever. Presence is enough." },
+      { q: "Someone gives you sharp or unexpected criticism", a: "Breathe. Listen to the end. Don't defend mid-sentence. \"Can I think about that for a second?\"" },
+      { q: "Someone keeps talking and you've genuinely lost the thread", a: "\"I want to make sure I'm following — can you tell me the main thing you want me to understand?\"" },
+      { q: "Someone shares something you find hard to take seriously", a: "Your job is to understand why it matters to them, not to evaluate whether it should." },
+      { q: "Someone is telling you something that's clearly bothering them but framing it as fine", a: "\"That sounds like it might have been harder than you're letting on — how are you actually doing with it?\"" },
+    ]}
+  ],
+
+};
+
+// ─── MINDSET COLLECTIONS ──────────────────────────────────────────────────────
+
+const mindsetCollections = {
+
+  assertive: [
+    { name: "Assertive Communication", description: "The thinking patterns behind assertive communication — what gets in the way, and what to replace it with.", inputs: [
+      { q: "Why does assertiveness feel like aggression to many people?", a: "Because they've only seen two models: doormat or bulldozer. Assertiveness is a third thing — clear and calm. It takes practice to feel the difference." },
+      { q: "What is the difference between a need and a demand?", a: "A need is something you state clearly and own. A demand requires the other person to comply or be wrong. You can be firm about a need without making it a demand." },
+      { q: "Why do people back down when they're pushed back on?", a: "Usually because they confuse persistence with reason. Someone pushing harder is not a counter-argument. You only update when given a real reason, not just more pressure." },
+      { q: "What does it mean to hold your position without being rigid?", a: "You stay with your view until you've heard a genuine reason to update it. New argument or fact = update. Emotion or repetition = hold." },
+    ]}
+  ],
+
+  compliments: [
+    { name: "Compliments & Appreciation", description: "The mindset behind giving and receiving compliments — why it feels uncomfortable, and what changes when you do it well.", inputs: [
+      { q: "Why do compliments often fall flat even when sincere?", a: "Because they're too general. \"You're great\" is hard to receive. \"The way you handled that conversation\" lands — there's something specific to hold on to." },
+      { q: "Why is receiving a compliment without deflecting hard for many people?", a: "Because deflecting feels humble. But it actually rejects the other person's observation. Receiving graciously is the more generous move." },
+      { q: "What is the difference between a compliment and flattery?", a: "A compliment names something specific and real. Flattery is designed to get something. The difference is in the intent — and people can usually feel it." },
+    ]}
+  ],
+
+  influenceframing: [
+    { name: "Influence & Framing", description: "The mindset behind influence — what persuasion actually is, and the internal posture that makes it work.", inputs: [
+      { q: "What is the difference between persuasion and manipulation?", a: "Persuasion helps someone see something new — their choice remains free. Manipulation removes or distorts that choice. The difference is whether you respect their autonomy." },
+      { q: "Why do good arguments often fail to persuade?", a: "Because people don't change their minds based on logic alone — they change when they feel understood first. Acknowledging their view before presenting yours is not weakness; it's the method." },
+      { q: "What does it mean to frame something in their values, not yours?", a: "You understand what matters to them — then show how your proposal serves that. \"This would help you get X\" where X is their X, not yours." },
+    ]}
+  ],
+
+  humour: [
+    { name: "Humour Practise", description: "The mindset behind humour — what it actually is, why trying hard kills it, and the right internal posture.", inputs: [
+      { q: "What is the right internal posture for humour?", a: "Noticing, not performing. Humour arises when expectations are broken in a safe way — your job is to notice when that's happening, not to manufacture it." },
+      { q: "Why does trying too hard to be funny usually fail?", a: "Because it signals that you need the laugh. Humour that lands comes from a place of not needing it to. The lighter your investment in the outcome, the better it works." },
+      { q: "What do you do when a joke falls flat?", a: "Move on without explanation or apology. Self-irony works: \"And that's why I don't do stand-up.\" Then continue. Never explain the joke." },
+    ]}
+  ],
+
+  teasing: [
+    { name: "Teasing & Playfulness", description: "The mindset behind teasing — what makes it connect rather than cut, and what to check internally before doing it.", inputs: [
+      { q: "What is the right internal posture for teasing?", a: "Warmth with a light edge. You're playing with the person, not at their expense. If you feel contempt or frustration underneath the tease, it will come through — don't tease when you're actually annoyed." },
+      { q: "What does it mean when someone can't be teased?", a: "Either they're not yet comfortable with you, the topic is too close to something real, or the tone was off. None of these are permanent — calibrate and try a different angle, or wait." },
+      { q: "Why does teasing build connection?", a: "Because it signals social comfort. You don't playfully tease people you're trying to impress. Teasing someone says: I'm relaxed around you, and I think you can handle a little friction." },
+    ]}
+  ],
+
+  selfhumour: [
+    { name: "Self-Humour", description: "The mindset behind self humour — the difference between healthy distance and self-diminishment, and what it signals.", inputs: [
+      { q: "Why is self humour a sign of strength rather than weakness?", a: "Because it requires you to see yourself clearly and not need others to see you as perfect. Needing to protect your image is the weakness — not the flaws themselves." },
+      { q: "What is the internal posture that makes self humour work?", a: "Genuine ease. Not performed humility, not fishing for reassurance. You're not saying \"please tell me I'm not that bad\" — you're saying \"yes, and I find this funny too.\"" },
+      { q: "How do you know if self humour is healthy vs harmful?", a: "Healthy: you say it once, laugh, and move on. Harmful: you repeat it, wait for others to contradict you, or feel worse after saying it." },
+    ]}
+  ],
+
+  conversationaldepth: [
+    { name: "Conversational Depth", description: "The mindset behind depth in conversations — genuine curiosity vs technique, and what makes people open up.", inputs: [
+      { q: "What is the right internal posture for asking deep questions?", a: "Genuine curiosity, not technique. If you're asking to appear interesting or to perform depth, it reads as hollow. If you're actually curious about the answer, the question lands differently." },
+      { q: "Why do pauses make deep questions work better?", a: "Because the first answer is often the surface answer. The pause gives the person room to go further — to say the thing they wouldn't say if you'd already moved on." },
+      { q: "What is the difference between sharing and performing in conversation?", a: "Sharing invites the other person in. Performing keeps the focus on you. A story that ends in a question is sharing. A story that ends in a pause waiting for applause is performing." },
+      { q: "Why does depth in conversation require vulnerability from both sides?", a: "Because depth is reciprocal — if only one person goes deep, it becomes an interrogation or a therapy session. You have to give to receive." },
+    ]}
+  ],
+
+  startingconnecting: [
+    { name: "Starting & Connecting", description: "The mindset behind initiating — what gets in the way, and what replaces performance pressure with something that actually works.", inputs: [
+      { q: "What is the right internal posture for starting conversations?", a: "Curiosity, not agenda. You're not trying to impress them — you're interested in them. The pressure drops when the goal shifts from \"make this work\" to \"find out something about this person.\"" },
+      { q: "Why does a simple opener work better than a clever one?", a: "Because a clever opener signals that you've been preparing, which creates slight performance pressure. A simple opener signals ease — and ease is attractive." },
+      { q: "What do you do when an opener doesn't land?", a: "Move on without interpreting it as failure. Most openers that don't land are situational, not personal. Try a different angle or walk away gracefully." },
+    ]}
+  ],
+
+  listeningresponding: [
+    { name: "Listening & Responding", description: "The mindset behind real listening — what gets in the way, and what listening to understand actually feels like.", inputs: [
+      { q: "What is the difference between listening to reply and listening to understand?", a: "When you listen to reply, the other person is talking but your focus is already on what you'll say next. When you listen to understand, your only job is to follow what they mean — the response comes after." },
+      { q: "Why is silence a form of listening?", a: "Because most people fill silence too quickly. A pause after someone speaks gives them room to go deeper. The thing they say into the silence is often the most important thing." },
+      { q: "What does it mean to listen for feeling, not just fact?", a: "People rarely say the most important thing directly. They describe events and let the feelings hang in the background. Listening for feeling means tracking what's underneath the narrative." },
+    ]}
+  ],
+
+};
