@@ -21,7 +21,7 @@
   --ds-splash-acc:  #F2622A;
   --ds-toggle-on:   #B05A28;
   --ds-subnav-btn:  #E0D8CA;
-  --ds-subnav-act:  #2C1F10;
+  --ds-subnav-act:  var(--ds-acc);
   --ds-subnav-actT: #FFFFFF;
   --ds-search-bg:   #E4DDD2;
   --ds-divider:     #D8CFBF;
@@ -50,8 +50,8 @@ body.theme-ember {
   --ds-splash-acc:  #FF7800;
   --ds-toggle-on:   #F2622A;
   --ds-subnav-btn:  #2A1C0A;
-  --ds-subnav-act:  #E8D5C0;
-  --ds-subnav-actT: #211809;
+  --ds-subnav-act:  var(--ds-acc);
+  --ds-subnav-actT: #FFFFFF;
   --ds-search-bg:   #2A1C0A;
   --ds-divider:     #2A1C0A;
   --ds-prog-acc:    #F2622A;
