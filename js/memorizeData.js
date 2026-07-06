@@ -106,6 +106,34 @@ const memorizeCollections = {
     }
   ],
 
+
+  humour: [
+    {
+      name: "Humour",
+      description: "Understanding humour as a communication tool — the mechanisms, the timing, and the mindset.",
+      cards: [
+        { q: "What are the seven humour mechanisms?", a: "Misreading / Unexpected interpretation\nExaggeration\nIrony\nAbsurdity\nTiming\nSelf-irony\nObservation" },
+        { q: "What is the timing rule for delivering humour?", a: "Pause before the punchline. Deliver calmly. Move on.\nNever laugh at your own joke before it lands." },
+        { q: "What is the difference between irony and sarcasm in social humour?", a: "Irony says the opposite of what you mean in a light, shared way — both parties are in on it.\nSarcasm can carry an edge of contempt. Irony connects; sarcasm can cut." },
+        { q: "What makes an observation funny rather than just awkward?", a: "It names something everyone has already noticed but no one has said. The recognition is the punchline — you're not explaining why it's funny." },
+        { q: "When does humour fail, even when the mechanism is correct?", a: "When it lacks relevance to the situation, when the timing is off, or when the tone signals nervousness rather than ease." }
+      ]
+    }
+  ],
+
+  teasing: [
+    {
+      name: "Teasing",
+      description: "What makes teasing connect rather than cut — the principles, the types, and how to recover.",
+      cards: [
+        { q: "What is the core difference between teasing and mocking?", a: "Teasing is warm underneath — both people are in on it and no one is diminished.\nMocking carries contempt and uses laughter as a weapon. The tone and intent separate them." },
+        { q: "What does good teasing leave room for?", a: "The other person to fire back, deflect with humour, or laugh.\nIt doesn't corner them or require them to defend themselves seriously." },
+        { q: "What are the four types of teasing?", a: "Observation tease\nPlayful exaggeration\nMock disbelief\nGentle role reversal" },
+        { q: "How do you recover when a tease lands wrong?", a: "Soften or own it without over-apologising.\n\"That came out wrong — let me try that again.\" or \"I'm just messing with you.\"\nBrief acknowledgement, then move on." }
+      ]
+    }
+  ],
+
   conversationaldepth: [
     {
       name: "Storytelling",
