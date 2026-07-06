@@ -249,10 +249,20 @@ function registerMode(id, fn) {
 }
 
 function launchLastMode(packKey, packLabel) {
-  showModeScreen(packKey, packLabel);
   const lastMode = getLastMode(packKey);
   if (lastMode && MODE_LAUNCHERS[lastMode]) {
-    setTimeout(() => { saveLastMode(packKey, lastMode); MODE_LAUNCHERS[lastMode](); }, 80);
+    // Go to mode screen silently (no animation), then immediately launch training
+    showModeScreen(packKey, packLabel);
+    const modeEl = document.getElementById('modeScreen');
+    if (modeEl) modeEl.style.transition = 'none';
+    setTimeout(() => {
+      saveLastMode(packKey, lastMode);
+      MODE_LAUNCHERS[lastMode]();
+      // Restore transition after training screen is shown
+      setTimeout(() => { if (modeEl) modeEl.style.transition = ''; }, 50);
+    }, 30);
+  } else {
+    showModeScreen(packKey, packLabel);
   }
 }
 
@@ -390,7 +400,11 @@ function render() {
 }
 
 function flip(val, animate = true) {
-  if (val && !flipped && window.progCardFlipped) progCardFlipped();
+  if (val && !flipped && window.progCardFlipped) {
+    const totalCards = strategies.reduce((sum, s) => sum + s.inputs.length, 0);
+    const cardsSoFar = stratOrder.slice(0, stratIdx).reduce((sum, si) => sum + inputOrders[si].length, 0) + inputIdx + 1;
+    progCardFlipped(cardsSoFar, totalCards);
+  }
   flipped = val;
   cardInner.style.transition = animate ? 'transform 0.4s ease' : 'none';
   cardInner.classList.toggle('flipped', flipped);
@@ -4069,16 +4083,19 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
     _startTick();
   };
 
-  window.progCardFlipped = function(cardIndex, cardTotal, packKey, packLabel) {
+  window.progCardFlipped = function(cardIndex, cardTotal) {
     if (!bool(K.enabled) || !_sessionActive) return;
     _sessionCards++;
     _lastFlipTime = Date.now();
-    // Save progress to last pack
-    if (packKey && packLabel && cardTotal > 0) {
+    // Update progress on the last pack using the session's pack info
+    if (_sessionPack && cardTotal > 0 && cardIndex >= 0) {
       const pct = Math.round((cardIndex / cardTotal) * 100);
       try {
-        const existing = JSON.parse(localStorage.getItem('ds_lastpack')) || {};
-        localStorage.setItem('ds_lastpack', JSON.stringify({ key: packKey, label: packLabel, progressPct: pct }));
+        localStorage.setItem('dash_last_pack', JSON.stringify({
+          key: _sessionPack.key,
+          label: _sessionPack.label,
+          progressPct: pct
+        }));
       } catch {}
     }
   };
