@@ -1273,6 +1273,23 @@ body.pb-enabled .divider::after {
   transition: stroke 0.15s;
 }
 
+/* Hide scrollbars on scrollable screens */
+.dashboard-scroll,
+.home-screen,
+.mode-screen,
+.mode-list,
+.library-tab-content,
+.progress-scroll {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.dashboard-scroll::-webkit-scrollbar,
+.home-screen::-webkit-scrollbar,
+.mode-screen::-webkit-scrollbar,
+.mode-list::-webkit-scrollbar,
+.library-tab-content::-webkit-scrollbar,
+.progress-scroll::-webkit-scrollbar { display: none; }
+
 .pin-btn {
   background: none;
   border: none;
@@ -1302,13 +1319,14 @@ body.pb-enabled .divider::after {
 }
 
 .mode-pin-btn {
-  font-size: 20px;
-  opacity: 0.3;
-  transition: opacity 0.15s;
+  font-size: 18px;
+  color: var(--ds-txt3);
+  opacity: 1;
+  transition: color 0.15s;
 }
 
 .mode-pin-btn.pinned {
-  opacity: 1;
+  color: var(--ds-acc);
 }
 
 /* ─── MODE SCREEN: HANDSFREE FLIP TOGGLE ───────────────────────────────── */
