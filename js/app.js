@@ -3605,8 +3605,8 @@ document.querySelectorAll('.nav-tab').forEach(btn => {
   function getLastPack() {
     try { return JSON.parse(localStorage.getItem(LASTPACK_KEY)); } catch { return null; }
   }
-  function saveLastPack(key, label) {
-    localStorage.setItem(LASTPACK_KEY, JSON.stringify({ key, label }));
+  function saveLastPack(key, label, progressPct) {
+    localStorage.setItem(LASTPACK_KEY, JSON.stringify({ key, label, progressPct: progressPct || 0 }));
   }
 
   // ── Welcome text ─────────────────────────────────────────────────────────
@@ -3653,7 +3653,7 @@ document.querySelectorAll('.nav-tab').forEach(btn => {
         <div class="dash-continue-arrow">›</div>
       </div>
       <div class="dash-continue-progress">
-        <div class="dash-continue-progress-fill" style="width:0%"></div>
+        <div class="dash-continue-progress-fill" style="width:${last.progressPct || 0}%"></div>
       </div>`;
     let lpStartY = 0, lpMoved = false;
     lastPackCard.ontouchstart = e => { lpStartY = e.touches[0].clientY; lpMoved = false; };
@@ -3932,7 +3932,7 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
     if (!favs.length) { favSec.style.display = 'none'; return; }
     const times = getTrainedTimes();
     const sorted = [...favs].sort((a, b) => (times[b.key] || 0) - (times[a.key] || 0));
-    const shown  = sorted.slice(0, 4);
+    const shown  = sorted.slice(0, 2);
     favSec.style.display = '';
     favList.innerHTML = `<div class="dash-fav-grid">${
       shown.map(f =>
@@ -4054,10 +4054,18 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
     _startTick();
   };
 
-  window.progCardFlipped = function() {
+  window.progCardFlipped = function(cardIndex, cardTotal, packKey, packLabel) {
     if (!bool(K.enabled) || !_sessionActive) return;
     _sessionCards++;
     _lastFlipTime = Date.now();
+    // Save progress to last pack
+    if (packKey && packLabel && cardTotal > 0) {
+      const pct = Math.round((cardIndex / cardTotal) * 100);
+      try {
+        const existing = JSON.parse(localStorage.getItem('ds_lastpack')) || {};
+        localStorage.setItem('ds_lastpack', JSON.stringify({ key: packKey, label: packLabel, progressPct: pct }));
+      } catch {}
+    }
   };
 
   window.progEndSession = function() {
