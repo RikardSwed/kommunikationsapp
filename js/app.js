@@ -183,6 +183,21 @@ function showModeScreen(key, label) {
   if (window.progStartSession) progStartSession(key, label);
 }
 
+// Save which training mode was last used for a pack
+function saveLastMode(packKey, modeName) {
+  try {
+    const modes = JSON.parse(localStorage.getItem('ds_last_modes') || '{}');
+    modes[packKey] = modeName;
+    localStorage.setItem('ds_last_modes', JSON.stringify(modes));
+  } catch {}
+}
+function getLastMode(packKey) {
+  try {
+    const modes = JSON.parse(localStorage.getItem('ds_last_modes') || '{}');
+    return modes[packKey] || null;
+  } catch { return null; }
+}
+
 function showTraining() {
   strategies  = (collections[activeCollectionKey] || []).map(strat => {
     if (!window.filterInputsByBundle) return strat;
@@ -217,11 +232,28 @@ function showMemorize() {
 
 function addModeListener(id, fn) {
   const el = document.getElementById(id);
+  if (!el) return;
   let mStartY = 0, mMoved = false, didTouch = false;
+  const launch = () => { saveLastMode(activeCollectionKey, id); fn(); };
   el.addEventListener('touchstart', e => { mStartY = e.touches[0].clientY; mMoved = false; didTouch = true; }, { passive: true });
   el.addEventListener('touchmove',  e => { if (Math.abs(e.touches[0].clientY - mStartY) > 8) mMoved = true; }, { passive: true });
-  el.addEventListener('touchend',   e => { if (!mMoved) { fn(); } });
-  el.addEventListener('click',      e => { if (didTouch) { didTouch = false; return; } fn(); });
+  el.addEventListener('touchend',   e => { if (!mMoved) { launch(); } });
+  el.addEventListener('click',      e => { if (didTouch) { didTouch = false; return; } launch(); });
+}
+
+// Map mode id to launch function — used by Continue card to jump straight in
+const MODE_LAUNCHERS = {};
+function registerMode(id, fn) {
+  MODE_LAUNCHERS[id] = fn;
+  addModeListener(id, fn);
+}
+
+function launchLastMode(packKey, packLabel) {
+  showModeScreen(packKey, packLabel);
+  const lastMode = getLastMode(packKey);
+  if (lastMode && MODE_LAUNCHERS[lastMode]) {
+    setTimeout(() => { saveLastMode(packKey, lastMode); MODE_LAUNCHERS[lastMode](); }, 80);
+  }
 }
 
 document.querySelectorAll('.collection-card').forEach(el => {
@@ -293,11 +325,11 @@ document.getElementById('modeBetaToggle').addEventListener('touchend', e => { e.
   }
 })();
 
-addModeListener('modeFlashcard', showTraining);
+registerMode('modeFlashcard', showTraining);
 
-addModeListener('modeMultiStep', showMultiStep);
+registerMode('modeMultiStep', showMultiStep);
 
-addModeListener('modeMemorize', showMemorize);
+registerMode('modeMemorize', showMemorize);
 
 // Back buttons
 function closeTraining(screenId) {
@@ -768,7 +800,7 @@ document.getElementById('flowNextComboBtn').addEventListener('click', flowNextCo
 document.getElementById('flowPrevComboBtn').addEventListener('click', flowPrevCombo);
 document.getElementById('flowCloseBtn').addEventListener('click', ()=>closeTraining('flowScreen'));
 document.getElementById('flowSettingsBtn').addEventListener('click', ()=>document.getElementById('settingsOverlay').classList.add('open'));
-addModeListener('modeFlow', showFlow);
+registerMode('modeFlow', showFlow);
 
 // ─── GUIDED MODE ─────────────────────────────────────────────────────────────
 const guidedScreen        = document.getElementById('guidedScreen');
@@ -857,7 +889,7 @@ document.getElementById('guidedNextInputBtn').addEventListener('click',    guide
 document.getElementById('guidedPrevInputBtn').addEventListener('click',    guidedPrevInput);
 document.getElementById('guidedCloseBtn').addEventListener('click', ()=>closeTraining('guidedScreen'));
 document.getElementById('guidedSettingsBtn').addEventListener('click', ()=>document.getElementById('settingsOverlay').classList.add('open'));
-addModeListener('modeGuided', showGuided);
+registerMode('modeGuided', showGuided);
 
 // ─── HANDSFREE MODE ──────────────────────────────────────────────────────────
 
@@ -1175,7 +1207,7 @@ function showHandsfree() {
   hfUpdateButtons();
 }
 
-addModeListener('modeHandsfree', showHandsfree);
+registerMode('modeHandsfree', showHandsfree);
 
 
 // ─── HANDSFREE MEMORIZE MODE ─────────────────────────────────────────────────
@@ -1450,7 +1482,7 @@ function showHandsfreeMemorize() {
   hfMemUpdateButtons();
 }
 
-addModeListener('modeHandsfreeMemorize', showHandsfreeMemorize);
+registerMode('modeHandsfreeMemorize', showHandsfreeMemorize);
 
 // ── Voice debug helper ────────────────────────────────────────────────────────
 document.getElementById('hfVoiceDebugBtn').addEventListener('click', () => {
@@ -2202,7 +2234,7 @@ function showCollections() {
   collRender();
 }
 
-addModeListener('modeCollections', showCollections);
+registerMode('modeCollections', showCollections);
 
 // Init feedback bars for coll screen
 fbInitBar('fb-coll-front');
@@ -2304,7 +2336,7 @@ function showChallenges() {
   challRender();
 }
 
-addModeListener('modeChallenges', showChallenges);
+registerMode('modeChallenges', showChallenges);
 
 // Add challScreen to TRAINING_SCREENS
 TRAINING_SCREENS.push('challScreen');
@@ -2408,7 +2440,7 @@ function showMindset() {
   mindRender();
 }
 
-addModeListener('modeMindset', showMindset);
+registerMode('modeMindset', showMindset);
 
 // Add mindScreen to TRAINING_SCREENS
 TRAINING_SCREENS.push('mindScreen');
@@ -2671,7 +2703,7 @@ function showHandsfreeChallenges() {
   hfChallUpdateButtons();
 }
 
-addModeListener('modeHandsfreeChallenges', showHandsfreeChallenges);
+registerMode('modeHandsfreeChallenges', showHandsfreeChallenges);
 TRAINING_SCREENS.push('hfChallScreen');
 
 
@@ -2927,7 +2959,7 @@ function showHandsfreeSequences() {
   hfFlowUpdateButtons();
 }
 
-addModeListener('modeHandsfreeSequences', showHandsfreeSequences);
+registerMode('modeHandsfreeSequences', showHandsfreeSequences);
 TRAINING_SCREENS.push('hfFlowScreen');
 
 
@@ -3184,7 +3216,7 @@ function showHandsfreeMindset() {
   hfMindUpdateButtons();
 }
 
-addModeListener('modeHandsfreeMindset', showHandsfreeMindset);
+registerMode('modeHandsfreeMindset', showHandsfreeMindset);
 TRAINING_SCREENS.push('hfMindScreen');
 
 
@@ -3442,7 +3474,7 @@ function showHandsfreeCollections() {
   hfCollUpdateButtons();
 }
 
-addModeListener('modeHandsfreeCollections', showHandsfreeCollections);
+registerMode('modeHandsfreeCollections', showHandsfreeCollections);
 TRAINING_SCREENS.push('hfCollScreen');
 
 
@@ -3648,7 +3680,7 @@ document.querySelectorAll('.nav-tab').forEach(btn => {
       <div class="dash-continue-inner">
         <div>
           <div class="dash-continue-name">${last.label}</div>
-          <div class="dash-continue-meta">Last trained &middot; Continue</div>
+          <div class="dash-continue-meta">${(()=>{const m=getLastMode&&getLastMode(last.key);const l={modeFlashcard:'Single Strategy',modeMemorize:'Memorize',modeFlow:'Sequences',modeCollections:'Collections',modeChallenges:'Challenges',modeMindset:'Mindset',modeHandsfree:'Handsfree',modeGuided:'Guided'};return m&&l[m]?l[m]:'Continue';})()}</div>
         </div>
         <div class="dash-continue-arrow">›</div>
       </div>
@@ -3658,8 +3690,8 @@ document.querySelectorAll('.nav-tab').forEach(btn => {
     let lpStartY = 0, lpMoved = false;
     lastPackCard.ontouchstart = e => { lpStartY = e.touches[0].clientY; lpMoved = false; };
     lastPackCard.ontouchmove  = e => { if (Math.abs(e.touches[0].clientY - lpStartY) > 8) lpMoved = true; };
-    lastPackCard.ontouchend   = e => { if (!lpMoved) { saveLastPack(last.key, last.label); showModeScreen(last.key, last.label); } };
-    lastPackCard.onclick      = () => { saveLastPack(last.key, last.label); showModeScreen(last.key, last.label); };
+    lastPackCard.ontouchend   = e => { if (!lpMoved) { launchLastMode(last.key, last.label); } };
+    lastPackCard.onclick      = () => { launchLastMode(last.key, last.label); };
   }
 
   // ── Search results render ─────────────────────────────────────────────────
@@ -3896,30 +3928,13 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
         <div>
           <div class="collection-name">${f.label}</div>
         </div>
-        <button class="pin-btn pinned" data-key="${f.key}" aria-label="Unpin">📌</button>
+        <div class="collection-arrow">›</div>
        </div>`
     ).join('');
     // Bind fav-card clicks → open pack
     favList.querySelectorAll('.fav-card').forEach(card => {
       card.addEventListener('click', () => showModeScreen(card.dataset.key, card.dataset.label));
-      card.addEventListener('touchend', e => { if (e.target.closest('.pin-btn')) return; e.preventDefault(); showModeScreen(card.dataset.key, card.dataset.label); }, { passive: false });
-    });
-    // Bind unpin buttons inside fav tab
-    favList.querySelectorAll('.pin-btn').forEach(btn => {
-      btn.addEventListener('click', e => {
-        e.stopPropagation();
-        toggleFav(btn.dataset.key, getFavs().find(f => f.key === btn.dataset.key)?.label || btn.dataset.key);
-        refreshPinBtns();
-        renderFavTab();
-        renderDashFavs();
-      });
-      btn.addEventListener('touchend', e => {
-        e.stopPropagation(); e.preventDefault();
-        toggleFav(btn.dataset.key, getFavs().find(f => f.key === btn.dataset.key)?.label || btn.dataset.key);
-        refreshPinBtns();
-        renderFavTab();
-        renderDashFavs();
-      }, { passive: false });
+      card.addEventListener('touchend', e => { e.preventDefault(); showModeScreen(card.dataset.key, card.dataset.label); }, { passive: false });
     });
   }
 
