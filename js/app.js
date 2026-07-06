@@ -3947,8 +3947,11 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
     ).join('');
     // Bind fav-card clicks → open pack
     favList.querySelectorAll('.fav-card').forEach(card => {
-      card.addEventListener('click', () => showModeScreen(card.dataset.key, card.dataset.label));
-      card.addEventListener('touchend', e => { e.preventDefault(); showModeScreen(card.dataset.key, card.dataset.label); }, { passive: false });
+      let fStartY = 0, fMoved = false;
+      card.addEventListener('touchstart', e => { fStartY = e.touches[0].clientY; fMoved = false; }, { passive: true });
+      card.addEventListener('touchmove',  e => { if (Math.abs(e.touches[0].clientY - fStartY) > 8) fMoved = true; }, { passive: true });
+      card.addEventListener('touchend',   e => { if (!fMoved) { e.preventDefault(); showModeScreen(card.dataset.key, card.dataset.label); } }, { passive: false });
+      card.addEventListener('click',      () => showModeScreen(card.dataset.key, card.dataset.label));
     });
   }
 
