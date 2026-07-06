@@ -1319,10 +1319,13 @@ body.pb-enabled .divider::after {
 }
 
 .mode-pin-btn {
-  font-size: 18px;
+  font-size: 20px;
   color: var(--ds-txt3);
   opacity: 1;
   transition: color 0.15s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .mode-pin-btn.pinned {
