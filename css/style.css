@@ -21,7 +21,7 @@
   --ds-splash-acc:  #F2622A;
   --ds-toggle-on:   #B05A28;
   --ds-subnav-btn:  #E0D8CA;
-  --ds-subnav-act:  var(--ds-acc);
+  --ds-subnav-act:  #E8550A;
   --ds-subnav-actT: #FFFFFF;
   --ds-search-bg:   #E4DDD2;
   --ds-divider:     #D8CFBF;
@@ -1513,7 +1513,7 @@ body.pb-enabled .divider::after {
   padding: 4px 0; -webkit-tap-highlight-color: transparent;
 }
 
-/* ─── TOPICS ──────────────────────────────────────────────────────────────────── */───────────────────────────────────────────────────────────────── */
+/* ─── TOPICS ──────────────────────────────────────────────────────────────────── */
 
 .topic-group {
   margin-bottom: 4px;
@@ -1952,4 +1952,3 @@ body.pb-enabled .divider::after {
   text-align: center;
   padding-bottom: 8px;
 }
-
