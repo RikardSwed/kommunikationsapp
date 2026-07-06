@@ -1,7 +1,7 @@
 // app.js — All application logic for Communication Trainer
 // Depends on: data.js and multiStepData.js (must be loaded first)
 
-const VERSION = 'v1.19.0';
+const VERSION = 'v1.19.1';
 
 // Pack icon map — global so both dashboard and favorites can use it
 const PACK_ICONS = {
@@ -251,16 +251,30 @@ function registerMode(id, fn) {
 function launchLastMode(packKey, packLabel) {
   const lastMode = getLastMode(packKey);
   if (lastMode && MODE_LAUNCHERS[lastMode]) {
-    // Go to mode screen silently (no animation), then immediately launch training
-    showModeScreen(packKey, packLabel);
+    // Set up state without showing Library (homeScreen) at all
+    activeCollectionKey   = packKey;
+    activeCollectionLabel = packLabel;
+    document.getElementById('modeCollectionName').textContent = packLabel;
+    try {
+      const existing = JSON.parse(localStorage.getItem('dash_last_pack') || 'null');
+      const progressPct = (existing && existing.key === packKey) ? (existing.progressPct || 0) : 0;
+      localStorage.setItem('dash_last_pack', JSON.stringify({ key: packKey, label: packLabel, progressPct }));
+      if (window.recordPackTrained) recordPackTrained(packKey);
+      if (window._favRenderDash) _favRenderDash();
+    } catch {}
+    if (window.progEndSession) progEndSession();
+    if (window.progStartSession) progStartSession(packKey, packLabel);
+    // Show modeScreen behind training without showing Library
+    ['dashboardScreen','homeScreen','progressScreen','upgradeScreen'].forEach(id => {
+      const el = document.getElementById(id); if (el) el.style.display = 'none';
+    });
     const modeEl = document.getElementById('modeScreen');
-    if (modeEl) modeEl.style.transition = 'none';
-    setTimeout(() => {
-      saveLastMode(packKey, lastMode);
-      MODE_LAUNCHERS[lastMode]();
-      // Restore transition after training screen is shown
-      setTimeout(() => { if (modeEl) modeEl.style.transition = ''; }, 50);
-    }, 30);
+    if (modeEl) { modeEl.style.display = 'flex'; modeEl.style.transition = 'none'; }
+    hideBottomNav();
+    window._noTrainingAnim = true;
+    saveLastMode(packKey, lastMode);
+    MODE_LAUNCHERS[lastMode]();
+    setTimeout(() => { if (modeEl) modeEl.style.transition = ''; }, 50);
   } else {
     showModeScreen(packKey, packLabel);
   }
@@ -458,7 +472,11 @@ function memRender() {
 }
 
 function memFlipFn(val, animate = true) {
-  if (val && !memFlipped && window.progCardFlipped) progCardFlipped();
+  if (val && !memFlipped && window.progCardFlipped) {
+    const totalCards = memStrategies.reduce((s, st) => s + st.cards.length, 0);
+    const cardsSoFar = memStrategies.slice(0, memStratIdx).reduce((s, st) => s + st.cards.length, 0) + memCardIdx + 1;
+    progCardFlipped(cardsSoFar, totalCards);
+  }
   memFlipped = val;
   memCardInner.style.transition = animate ? 'transform 0.4s ease' : 'none';
   memCardInner.classList.toggle('flipped', memFlipped);
@@ -547,7 +565,12 @@ function msRender() {
 }
 
 function msFlip(val, animate = true) {
-  if (val && !msFlipped && window.progCardFlipped) progCardFlipped();
+  if (val && !msFlipped && window.progCardFlipped) {
+    const totalSteps = msStrategies.reduce((s, st) => s + st.inputs.reduce((ss, inp) => ss + inp.steps.length, 0), 0);
+    const stepsSoFar = msStrategies.slice(0, msStratIdx).reduce((s, st) => s + st.inputs.reduce((ss, inp) => ss + inp.steps.length, 0), 0)
+      + msStrategies[msStratIdx].inputs.slice(0, msInputIdx).reduce((s, inp) => s + inp.steps.length, 0) + msStepIdx + 1;
+    progCardFlipped(stepsSoFar, totalSteps);
+  }
   msFlipped = val;
   msCardInner.style.transition = animate ? 'transform 0.4s ease' : 'none';
   msCardInner.classList.toggle('flipped', msFlipped);
@@ -4101,6 +4124,18 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
         }));
       } catch {}
     }
+  };
+
+  // Lightweight helper for modes that track position differently
+  window.progSetProgress = function(pct) {
+    if (!_sessionPack) return;
+    try {
+      localStorage.setItem('dash_last_pack', JSON.stringify({
+        key: _sessionPack.key,
+        label: _sessionPack.label,
+        progressPct: Math.max(0, Math.min(100, Math.round(pct)))
+      }));
+    } catch {}
   };
 
   window.progEndSession = function() {
