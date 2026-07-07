@@ -49,6 +49,76 @@ const multiStepCollections = {
     }
   ],
 
+
+  criticism: [
+    {
+      name: "Receive, Clarify, Own",
+      subtitle: "Receiving Criticism → Negative Inquiry → Negative Assertion",
+      inputs: [
+        {
+          situation: "A colleague gives you feedback on your work",
+          steps: [
+            { front: "Step 1 — Receive without defending or over-apologising", back: "Listen to the end. Don't interrupt with explanations or justifications. Just hear it." },
+            { front: "Step 2 — Ask for specifics", back: "\"What specifically is it that didn't work?\" / \"Can you tell me more about what you mean?\" — shows you're taking it seriously, not deflecting." },
+            { front: "Step 3 — Own what's actually true", back: "\"You're right — that part was rushed.\" — short, calm, owned. No over-apologising, no explaining. Acknowledge what's valid." }
+          ]
+        },
+        {
+          situation: "Someone points out a mistake you made",
+          steps: [
+            { front: "Step 1 — Don't defend mid-sentence", back: "Breathe. Let them finish. The urge to explain or defend is almost always counterproductive — it shifts the conversation from the content to your ego." },
+            { front: "Step 2 — Ask what they'd have wanted instead", back: "\"How would you have preferred I handled it?\" — moves toward the future. Shows you want to understand, not argue." },
+            { front: "Step 3 — Acknowledge specifically what you can own", back: "Separate what's accurate from what isn't. Own the accurate part clearly. \"You're right that I should have flagged it earlier.\"" }
+          ]
+        }
+      ]
+    },
+    {
+      name: "Give, Handle Pushback, Hold",
+      subtitle: "Giving Criticism → Responding to Defensive Reaction",
+      inputs: [
+        {
+          situation: "You give feedback and they get defensive",
+          steps: [
+            { front: "Step 1 — Give the criticism specifically and without accusation", back: "Name the specific behaviour or outcome. Calm tone. \"The report's section headers made it hard to navigate.\" Not: \"You're always unclear.\"" },
+            { front: "Step 2 — They respond defensively — don't escalate", back: "Don't repeat the criticism. Don't soften it either. Stay with the content: \"I'm not attacking you — I'm pointing out something specific.\"" },
+            { front: "Step 3 — Hold the line calmly", back: "\"The [specific thing] didn't work — that's the part I'm raising.\" Calm, specific, no new arguments." }
+          ]
+        },
+        {
+          situation: "You correct someone's behaviour and they turn it around on you",
+          steps: [
+            { front: "Step 1 — State the correction specifically and calmly", back: "Name the behaviour, not the person. Keep it brief and factual." },
+            { front: "Step 2 — They bring up something you did — hear it genuinely", back: "Don't dismiss it as deflection. Listen. They might have a point. Receiving it doesn't mean giving up your correction." },
+            { front: "Step 3 — Separate the two things", back: "\"You might be right about that — that's worth discussing separately. The specific thing I raised still stands.\"" }
+          ]
+        }
+      ]
+    },
+    {
+      name: "Correct, Receive, Adjust or Hold",
+      subtitle: "Correcting Behaviour → Listening → Negative Assertion or Fogging",
+      inputs: [
+        {
+          situation: "You correct someone and they respond with their version of events",
+          steps: [
+            { front: "Step 1 — State the correction specifically and calmly", back: "Name the behaviour, not the person. Not \"you always...\" but \"last time when you...\"" },
+            { front: "Step 2 — Listen to their response genuinely", back: "Not to find counter-arguments — to actually understand their side. They might have information you don't." },
+            { front: "Step 3 — If they have a point: own it clearly", back: "\"You're right — I could have raised it earlier.\" Changing your position when given good reason is not losing." }
+          ]
+        },
+        {
+          situation: "You correct someone and they don't have a valid counter",
+          steps: [
+            { front: "Step 1 — State the correction specifically", back: "Brief, factual, no accusations." },
+            { front: "Step 2 — Listen to their response", back: "Let them finish. Don't interrupt." },
+            { front: "Step 3 — Fog and hold", back: "\"You might have a point about [X].\" (if anything is worth acknowledging) \"The specific behaviour I raised still stands.\"" }
+          ]
+        }
+      ]
+    }
+  ],
+
   compliments: [
     {
       name: "Specific Compliment",
@@ -226,6 +296,54 @@ const multiStepCollections = {
             { front: "Step 1 — You notice the tease landed harder than intended", back: "Don't double down. Don't minimise. Acknowledge it briefly and directly." },
             { front: "Step 2 — Use self humour to soften without over-apologising", back: "\"That came out wrong — not quite what I meant.\" Brief and clean." },
             { front: "Step 3 — Joke about your own calibration with ease", back: "\"I'm a work in progress on the timing.\" — then move on. The faster you redirect, the smaller the miss becomes." }
+          ]
+        }
+      ]
+    }
+  ],
+
+
+  conversational: [
+    {
+      name: "Open, Flow, Mirror",
+      subtitle: "Starting Conversations → Small Talk Flow → Mirroring & Paraphrasing",
+      inputs: [
+        {
+          situation: "You approach someone you don't know at a social event",
+          steps: [
+            { front: "Step 1 — Choose an opener that fits the context", back: "Situational, direct, or a question. Simple works better than clever. You're curious about them — not performing." },
+            { front: "Step 2 — Build on whatever they respond with", back: "Their answer always contains at least one new thread. Follow it — don't pivot to a prepared topic. Short answers = try a different angle or share something yourself." },
+            { front: "Step 3 — Reflect back a keyword or feeling from what they said", back: "Pick up something specific: \"So it sounds like [X] is the part you actually enjoy?\" — shows you were following them, not just waiting for your turn." }
+          ]
+        },
+        {
+          situation: "You're in a work setting with a new colleague",
+          steps: [
+            { front: "Step 1 — Start with the shared context", back: "The situation you're both in is always available. Specific beats generic: comment on something both of you have just experienced." },
+            { front: "Step 2 — Read the energy and keep it going", back: "Ask → share → ask. Mutual, not an interview. Short answers mean try a different topic." },
+            { front: "Step 3 — Mirror something they said to show you heard it", back: "Feeling mirror or paraphrase: \"That sounds like it's been a lot.\" / \"So the main thing is [X]?\" — no need to say anything clever." }
+          ]
+        }
+      ]
+    },
+    {
+      name: "Flow, Find, Go Deeper",
+      subtitle: "Small Talk Flow → Finding Common Ground → Mirroring & Paraphrasing",
+      inputs: [
+        {
+          situation: "A conversation that's been on surface topics for a while",
+          steps: [
+            { front: "Step 1 — Keep the conversation going — build on their responses", back: "Ask → share → ask. Every answer contains at least one new thread. Follow it." },
+            { front: "Step 2 — Listen for a genuine overlap and name it", back: "\"Wait — you too? I thought that was just me.\" — name the common ground explicitly. That's the moment of connection." },
+            { front: "Step 3 — Mirror their version of the shared thing", back: "\"So for you it's more about [X] than [Y]?\" — shows you heard their side specifically, not just the topic." }
+          ]
+        },
+        {
+          situation: "You notice something you have in common and want to build on it",
+          steps: [
+            { front: "Step 1 — Name the overlap before it passes", back: "Common ground that isn't named is just coincidence. \"That's interesting — I've had exactly that experience with...\"" },
+            { front: "Step 2 — Explore it briefly without lecturing", back: "One or two sentences about your side. Then ask about theirs: \"How did that go for you?\"" },
+            { front: "Step 3 — Paraphrase what they share back", back: "\"If I understand right, for you the hardest part was...\" — shows you followed. Invites more." }
           ]
         }
       ]
@@ -496,15 +614,71 @@ const multiStepCollections = {
 
   influenceframing: [
     {
+      name: "Observe, Frame, Invite",
+      subtitle: "Observation → Persuasion Framing → Invite",
+      inputs: [
+        {
+          situation: "You want to pitch an idea to someone resistant",
+          steps: [
+            { front: "Step 1 — Observe what they care about before you speak", back: "Listen actively for what they keep returning to, what energises them, what they protect. Don't start framing before you've done this." },
+            { front: "Step 2 — Frame your proposal in what you observed — not what you assumed", back: "\"Given that [what you care about], what I'd suggest is [proposal] because it would help you with [their value].\"" },
+            { front: "Step 3 — Invite rather than close", back: "\"Does that address what you care about, or is there something I'm missing?\" — genuine question, not a trap." }
+          ]
+        },
+        {
+          situation: "You're making a case at work",
+          steps: [
+            { front: "Step 1 — Ask their perspective first — actually listen", back: "\"Before I say anything — what's your current thinking on this?\" People are more open to being influenced after they've been heard." },
+            { front: "Step 2 — Frame in their values with a choice", back: "Start with common ground. Then: \"Given that, there are a couple of ways — [option A] or [option B]. What fits better for you?\"" },
+            { front: "Step 3 — If they raise an objection — acknowledge, don't argue", back: "\"That's a fair concern — and you're right that [valid part]. The way I'd think about it is [reframe].\"" }
+          ]
+        }
+      ]
+    },
+    {
+      name: "Ground, Frame, Handle Objection",
+      subtitle: "Grounding → Persuasion Framing → Reframe",
+      inputs: [
+        {
+          situation: "A situation where your motives might be questioned",
+          steps: [
+            { front: "Step 1 — Establish credibility by sharing what you actually care about", back: "\"What I care about here is [value] — that's what's driving this suggestion.\" Grounding signals your framing is genuine, not tactical." },
+            { front: "Step 2 — Frame the proposal in their values with a choice", back: "Now from a position of authenticity: \"Given that, the way I'd suggest thinking about it is...\"" },
+            { front: "Step 3 — When they raise a concern, reframe rather than argue", back: "\"I can see why it looks like that. Another way to hold it might be [reframe].\" Acknowledge first. Then offer the alternative." }
+          ]
+        }
+      ]
+    },
+    {
+      name: "Notice, Name, Reframe",
+      subtitle: "Observation → Reframe",
+      inputs: [
+        {
+          situation: "A group is stuck on a problem",
+          steps: [
+            { front: "Step 1 — Name the pattern you've observed", back: "\"I notice we keep coming back to [X] — that might be the frame we're all working inside.\" Specific, not critical." },
+            { front: "Step 2 — Offer a different frame as a question", back: "\"What if the question isn't [current frame] but [different frame]?\" Leave it open. Don't insist." }
+          ]
+        },
+        {
+          situation: "Someone is interpreting a situation in a way that limits them",
+          steps: [
+            { front: "Step 1 — Name what you've observed in their framing", back: "\"I notice you keep coming back to [X] as the problem — is that how you're seeing it?\" Confirm you've understood their frame before offering an alternative." },
+            { front: "Step 2 — Acknowledge it first, then offer the reframe", back: "\"I can see why that's the frame — it makes sense given [X]. Another way to look at it might be [alternative].\" Then leave space." }
+          ]
+        }
+      ]
+    },
+    {
       name: "Understand, Reframe, Offer",
       subtitle: "Persuasion Framing → Reframe",
       inputs: [
         {
           situation: "Someone is hesitant about an idea you want them to consider",
           steps: [
-            { front: "Step 1 — Understand their perspective before presenting yours", back: "'What's your main concern with it?' — ask genuinely, listen to the answer. Don't start with your pitch." },
-            { front: "Step 2 — Acknowledge what's valid in their hesitation", back: "'That's a fair concern — and you're right that it requires [X].' Acknowledging doesn't mean conceding." },
-            { front: "Step 3 — Offer the reframe", back: "'What I'd suggest is looking at it as [alternative frame].' — present a different angle, not a counter-argument." }
+            { front: "Step 1 — Understand their perspective before presenting yours", back: "\"What's your main concern with it?\" — ask genuinely, listen to the answer. Don't start with your pitch." },
+            { front: "Step 2 — Acknowledge what's valid in their hesitation", back: "\"That's a fair concern — and you're right that it requires [X].\" Acknowledging doesn't mean conceding." },
+            { front: "Step 3 — Offer the reframe", back: "\"What I'd suggest is looking at it as [alternative frame].\" — present a different angle, not a counter-argument." }
           ]
         },
         {
@@ -512,11 +686,9 @@ const multiStepCollections = {
           steps: [
             { front: "Step 1 — Ask their view first — and actually listen", back: "People are more open to being influenced after they've been heard. Don't skip this step." },
             { front: "Step 2 — Find something genuine to agree with", back: "Even if you disagree overall — there's usually something valid. Start there." },
-            { front: "Step 3 — Present your view as an addition, not a correction", back: "'I think there's also this...' lands differently than 'but actually...' — same content, different frame." }
+            { front: "Step 3 — Present your view as an addition, not a correction", back: "\"I think there's also this...\" lands differently than \"but actually...\" — same content, different frame." }
           ]
         }
       ]
     }
   ]
-
-};
