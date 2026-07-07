@@ -134,6 +134,30 @@ const memorizeCollections = {
     }
   ],
 
+
+  conversational: [
+    {
+      name: "Finding Common Ground",
+      description: "Actively finding and naming shared experiences, reactions or values to create genuine rapport.",
+      cards: [
+        { q: "What are the five types of common ground?", a: "Experiences\nReactions\nValues\nInterests\nResistance" },
+        { q: "What are the three techniques for finding common ground?", a: "Relate back — \"That's exactly like when I...\"\nMe too moment — \"Wait — you too?\"\nShared reaction — \"I know exactly what you mean.\"" },
+        { q: "Why is lifting common ground explicitly important?", a: "Because it only creates connection if the other person knows you've noticed it. Recognising something internally doesn't count — naming it does." },
+        { q: "What do you do when there's no obvious common ground?", a: "Ask a question that might surface it. Listen for the emotional logic rather than the surface detail. Shared reactions to the immediate situation are always available." }
+      ]
+    },
+    {
+      name: "Mirroring & Paraphrasing",
+      description: "Reflecting back what someone said — through a keyword, paraphrase, or feeling — to show you've heard and invite them to go further.",
+      cards: [
+        { q: "What are the three levels of mirroring?", a: "Keyword mirroring — repeat the last or key word as a question: \"Stressful?\"\nParaphrasing — restate in your own words\nFeeling mirroring — reflect the emotion: \"That sounds really frustrating.\"" },
+        { q: "What is the function of keyword mirroring?", a: "Repeating a single word as a question. It keeps the focus on them, shows you heard the specific word, and invites them to go deeper without asking a new question." },
+        { q: "What is the difference between paraphrasing and interpreting?", a: "Paraphrasing restates what they said in your words, staying close to their meaning.\nInterpreting adds your own conclusion. Paraphrase: \"So the issue is the timing.\" Interpret: \"So you don't trust them.\"" },
+        { q: "What do you do when silence follows a mirror?", a: "Let it sit. The silence is doing the work — it gives them room to continue. Filling it immediately wastes what the mirror created." }
+      ]
+    }
+  ],
+
   conversationaldepth: [
     {
       name: "Storytelling",
@@ -543,76 +567,41 @@ const memorizeCollections = {
   influenceframing: [
     {
       name: "Persuasion Framing",
+      description: "Influencing someone's view by understanding their perspective first and framing in their values.",
       cards: [
-        {
-          q: "What are the five principles of persuasion framing?",
-          a: "1. Understand their perspective first\n2. Find common ground — start with agreement\n3. Frame your proposal in their values\n4. Use concrete images and stories\n5. Give them a choice — people resist feeling forced"
-        },
-        {
-          q: "What is the formula for handling resistance?",
-          a: "Acknowledge → reframe → offer new perspective.\n'I understand that X feels risky. And you're right that it requires Y. What I'd suggest is...' — never argue against the objection directly."
-        },
-        {
-          q: "What are the four common mistakes in persuasion?",
-          a: "1. Starting with your point, not their perspective\n2. Using logic against emotional resistance\n3. Pressing when they hesitate — it increases resistance\n4. Arguing against their objection directly — acknowledge it instead"
-        },
-        {
-          q: "What is the mindset behind persuasion framing?",
-          a: "I'm not persuading against them — I'm helping them see something new. Their objection is information, not an obstacle. The right argument in the wrong frame doesn't work."
-        }
+        { q: "What are the five principles of persuasion framing?", a: "Understand their perspective / Find common ground / Frame in their values / Use images and stories / Give a choice" },
+        { q: "What is the objection-handling formula?", a: "Acknowledge → reframe → offer new perspective.\nNever argue against the objection directly — acknowledge the valid part first." },
+        { q: "What is the most common mistake in persuasion?", a: "Starting with your argument instead of their perspective. People are more open to a proposal that seems to understand their situation first." },
+        { q: "Why do facts alone rarely persuade?", a: "Because most decisions are emotional, not logical. Facts can support a decision that's already emotionally made — they rarely create it." }
       ]
     },
     {
       name: "Reframe",
+      description: "Restating a situation in a way that changes its meaning — the four types and the structure.",
       cards: [
-        {
-          q: "What are the four types of reframe?",
-          a: "1. Positive reframe — find the upside or neutral reading of something negative\n2. Context reframe — the same behaviour means something different in a different context\n3. Meaning reframe — change what the event means, not what it is\n4. Humorous reframe — present something absurdly (or take something absurd seriously)"
-        },
-        {
-          q: "Give two examples of reframing in practice.",
-          a: "• 'You're always so serious' → 'I take the things that matter seriously — I think that's a good thing.'\n• 'That failed' → 'That's one version of events — here's another way to look at it.'"
-        },
-        {
-          q: "What is the mindset behind reframing?",
-          a: "Every frame is a choice. I can choose a different one. The frame determines the experience — changing the frame changes the reality of the situation."
-        }
+        { q: "What are the four types of reframe?", a: "Meaning reframe — change what it means\nContext reframe — change the context\nPerspective reframe — offer a different vantage point\nDefinition reframe — change how the problem itself is defined" },
+        { q: "What is the structure of offering a reframe?", a: "Acknowledge their frame → offer the alternative → don't insist.\n\"I can see why it feels like that. Another way to look at it might be...\"" },
+        { q: "What is the difference between reframing and dismissing?", a: "A reframe acknowledges the original frame as understandable and offers an equally honest alternative. Dismissing denies the original frame: \"No, it's actually fine.\"" },
+        { q: "When is a reframe not appropriate?", a: "When someone needs to feel heard before they can hear a new perspective. Offer the reframe only after acknowledging their experience — not instead of it." }
       ]
     },
     {
       name: "Grounding",
+      description: "Being rooted in your values and communicating them naturally — as a foundation for authentic influence.",
       cards: [
-        {
-          q: "What does grounding mean as a communication skill?",
-          a: "Being anchored in yourself — knowing what you value and being able to communicate it naturally. It creates authenticity and depth in conversations. Not lecturing about values — sharing them as a natural part of conversation."
-        },
-        {
-          q: "What are four ways to ground yourself in a conversation?",
-          a: "1. Share what you believe without it feeling like a manifesto\n2. Tell about a time your values were tested — or showed themselves\n3. Answer honestly when asked about yourself\n4. Say no to something that doesn't fit who you are — and know why"
-        },
-        {
-          q: "What is the mindset behind grounding?",
-          a: "I know what I stand for — and it's okay to show it. Authenticity creates deeper connection than trying to impress."
-        }
+        { q: "What are the four ways to ground yourself in conversation?", a: "Share a value directly\nShow a value through a story\nRespond to a question with something real\nSay no to something that doesn't fit — and know why" },
+        { q: "What is the difference between grounding and moralising?", a: "Grounding is sharing — offering your value as part of who you are.\nMoralising is prescribing — implying others should share your value.\nOne creates connection; the other creates distance." },
+        { q: "What makes a stated value feel authentic rather than performed?", a: "Specificity and honesty about the cost or uncertainty. \"I believe in honesty — even when it's uncomfortable. It's cost me things, but it's worth it.\" is more credible than \"I believe in honesty.\"" }
       ]
     },
     {
       name: "Observation",
+      description: "Actively noticing details in the environment and the person you're talking with — and choosing what to do with what you see.",
       cards: [
-        {
-          q: "What four things can you observe in any social situation?",
-          a: "1. The environment — something unusual, a detail, a contrast\n2. The person — appearance, expression, energy, tone of voice\n3. The behaviour — patterns, deviations, reactions\n4. The atmosphere — what's in the room but not being said"
-        },
-        {
-          q: "What can you do with an observation once you've made it?",
-          a: "1. Comment on it\n2. Exaggerate it for humour\n3. Use it as an entry point to a question\n4. Keep it and let it inform how you act — you don't always have to voice it"
-        },
-        {
-          q: "What is the mindset behind observation?",
-          a: "I train myself to actually see — not just look. A sharp observer has material for humour, curiosity, compliments, and depth that others miss."
-        }
+        { q: "What are the five things to observe in a conversation?", a: "Environment / The person / Behaviour patterns / The conversation (what they return to) / The atmosphere (what's not being said)" },
+        { q: "What are the five things you can do with an observation?", a: "Name it / Use it for humour / Use it for empathy / Use it for persuasion / Keep it" },
+        { q: "When should you name an observation vs keep it?", a: "Name it when it serves the other person or the conversation. Keep it when it's primarily useful to you — for how you engage, not for saying out loud." },
+        { q: "What is the relationship between observation and influence?", a: "You can't frame something in someone else's values if you haven't observed what those values are. Observation is the first step of all influence work." }
       ]
     }
   ]
-
-};
