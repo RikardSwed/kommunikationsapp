@@ -543,23 +543,75 @@ const challengesCollections = {
   ],
 
   compliments: [
-    { name: "Compliments & Appreciation", description: "Harder compliment situations — when it feels awkward or doesn't land.", inputs: [
-      { q: "You give a compliment and the person dismisses it immediately", a: "Don't withdraw it. \"I mean it — I noticed it specifically.\" Let it stand." },
-      { q: "You want to compliment someone but you've never done it before", a: "Specific and brief: name exactly what you noticed. Specificity cuts through the awkwardness." },
-      { q: "Someone gives you a compliment you genuinely don't believe", a: "Receive it without arguing: \"Thank you — I'll take that.\" You don't have to agree to accept it graciously." },
-      { q: "The group dynamic makes giving a sincere compliment feel weird", a: "Say it anyway, briefly and directly. Groups follow whoever acts with the most ease." },
-      { q: "You want to express appreciation for something that mattered", a: "Be specific about what and why: \"What you did when [X] — it actually made a difference to me.\"" },
-    ]}
+    {
+      name: "Giving Compliments",
+      description: "Harder compliment situations — when it lands wrong, feels like flattery, or you're unsure whether to say it.",
+      inputs: [
+        { q: "You give a compliment and they deflect it immediately", a: "Let it go — don't insist. The compliment was given; they'll sit with it. Adding \"I mean it\" can work once, but don't chase." },
+        { q: "You want to compliment someone but are worried it'll seem like flattery", a: "The specificity is what separates them. \"You're great\" is flattery. \"The section on X was the clearest explanation I've read\" is a compliment." },
+        { q: "You want to acknowledge someone who often goes unnoticed", a: "\"I don't know if anyone's said this, but [specific thing] — it makes everyone else's job easier.\"" },
+        { q: "You give a compliment and they immediately give one back awkwardly", a: "Receive it gracefully — your compliment was yours; their response is theirs." },
+        { q: "You're in a group and want to acknowledge someone specifically", a: "Direct it clearly at them: \"[Name] — that was really good.\" Brief, warm, then continue." },
+      ]
+    },
+    {
+      name: "Accepting Compliments",
+      description: "Harder receiving situations — when you don't believe it, when it comes at the wrong moment, or when you want to deflect.",
+      inputs: [
+        { q: "You receive a compliment you genuinely don't believe", a: "Receive it anyway: \"Thank you — I'll take that.\" You don't have to agree to accept it gracefully." },
+        { q: "Someone gives you a compliment in front of a group", a: "Same as one-on-one — brief, warm, move on. Don't make it a speech." },
+        { q: "Someone gives you a backhanded compliment", a: "Receive the compliment part only: \"Thanks.\" Then decide whether to address the rest separately." },
+        { q: "You feel the urge to immediately compliment them back", a: "Only do it if you mean it and it's specific. Reflexive reciprocation sounds hollow." },
+        { q: "The same person compliments you repeatedly", a: "Receive it each time the same way — briefly and warmly. It doesn't need to get bigger." },
+      ]
+    },
+    {
+      name: "Self Disclosure",
+      description: "Harder self-disclosure situations — when you overshare, when they don't reciprocate, or when a disclosure prompts something heavier.",
+      inputs: [
+        { q: "You share something and they don't reciprocate", a: "That's okay. The share wasn't conditional — don't withdraw or over-explain. Move on naturally." },
+        { q: "You accidentally share more than you meant to", a: "Don't apologise for it. If the share was genuine, let it stand and continue naturally." },
+        { q: "Someone shares something vulnerable after you disclosed — heavier than expected", a: "Stay present, receive it. Your disclosure opened the door — it's okay that they walked through it." },
+        { q: "You feel pressure to match someone's disclosure with something equally deep", a: "You don't have to. \"Thank you for sharing that\" is valid. Genuine interest is enough." },
+        { q: "You want to disclose but the moment has passed", a: "Let it go. Better to miss the moment than to insert a disclosure artificially." },
+      ]
+    }
   ],
 
   influenceframing: [
-    { name: "Influence & Framing", description: "Harder influence situations — when resistance is high, under pressure, or the stakes are real.", inputs: [
-      { q: "Someone keeps returning to their original objection even after you've addressed it", a: "Name the loop: \"I think we keep coming back to X. What would actually need to change for you to feel differently about it?\"" },
-      { q: "You're trying to persuade someone who has already decided", a: "Don't argue the decision — question the frame: \"What would it take for you to reconsider?\" Then listen." },
-      { q: "Someone reframes what you said to mean something you didn't intend", a: "Correct it directly: \"That's not what I said — what I actually mean is...\" Don't let the distorted version stand." },
-      { q: "You need to change the direction of a meeting or conversation", a: "Name the shift: \"I want to take this in a slightly different direction — \" and then do it. You don't need permission." },
-      { q: "Someone is catastrophising and won't hear alternatives", a: "Don't contradict the feeling — reframe the scale: \"That's a real concern. Is it definitely that, or could it be [smaller version]?\"" },
-    ]}
+    {
+      name: "Persuasion Framing",
+      description: "Harder persuasion situations — when someone has already decided, when they dismiss you early, or when you feel yourself pushing too hard.",
+      inputs: [
+        { q: "Someone dismisses your proposal before you finish", a: "\"Fair — I haven't explained it well yet. Can I try again in one sentence?\"" },
+        { q: "Someone keeps returning to the same objection", a: "Don't repeat your counter. \"I think we see this part differently. Can I ask what would need to be true for you to consider it?\"" },
+        { q: "You're pushing too hard and can feel resistance rising", a: "Pull back: \"I don't need you to agree right now — I just wanted to share how I see it.\"" },
+        { q: "Someone agrees to your face but you sense they haven't actually shifted", a: "\"I want to check — does this actually make sense to you, or are you being generous?\"" },
+        { q: "Someone uses your own argument against you", a: "\"That's a fair use of my own point. Let me think about that.\" Acknowledge, don't deflect." },
+      ]
+    },
+    {
+      name: "Reframe",
+      description: "Harder reframing situations — when the reframe is rejected, when it sounds dismissive, or when a group is stuck.",
+      inputs: [
+        { q: "Someone rejects your reframe immediately", a: "\"Fair enough — not saying I'm right. Just worth considering.\" Don't insist." },
+        { q: "Your reframe sounds dismissive of their pain", a: "Acknowledge the feeling first: \"I'm not saying it doesn't hurt — it does. What I'm offering is a way to hold it differently.\"" },
+        { q: "Someone uses a reframe on you that feels like deflection", a: "\"I hear the reframe — I want to stay with the harder version for a moment.\"" },
+        { q: "A group is stuck and your reframe isn't landing", a: "Try redefining the question: \"What if we're asking the wrong question here?\"" },
+        { q: "Your reframe is too clever and the person can see through it", a: "Drop it. \"Okay, that was too neat. The harder version is...\"" },
+      ]
+    },
+    {
+      name: "Observation",
+      description: "Harder observation situations — when you're unsure whether to name what you see, or when naming it creates discomfort.",
+      inputs: [
+        { q: "You notice something but aren't sure whether to name it", a: "Default: only name it if it serves the other person or the conversation, not just your curiosity." },
+        { q: "You name something and the person becomes uncomfortable", a: "\"I may have read that wrong — forget I said it.\"" },
+        { q: "You observe something that could be used to tease but feels too personal", a: "Leave it. Not every observation is for the other person." },
+        { q: "You notice a pattern in someone's behaviour that might be painful for them", a: "Only name it if you have the relationship for it — and even then, gently: \"I'm not sure if I should say this...\"" },
+        { q: "You're trying to be more observant but feel self-conscious", a: "Observation is an internal practice first. You don't have to share every observation — just notice more." },
+      ]
+    }
   ],
 
   humour: [
@@ -622,6 +674,31 @@ const challengesCollections = {
     ]}
   ],
 
+  conversational: [
+    {
+      name: "Finding Common Ground",
+      description: "Harder situations — when there's no obvious overlap, or when a me-too moment doesn't land.",
+      inputs: [
+        { q: "You can't find any genuine common ground with someone", a: "Don't force it. Ask a question that might surface something: \"What made you get into that?\" — and listen." },
+        { q: "Someone shares an experience completely alien to you", a: "Find the emotional logic: \"I've never been in that situation — but I can imagine the feeling of [underlying emotion].\"" },
+        { q: "You try a me-too moment and they don't pick it up", a: "Let it go. Common ground is discovered, not insisted on." },
+        { q: "You realise you claimed false common ground mid-conversation", a: "Correct it lightly: \"Actually, I spoke too fast — I don't know it as well as I implied. Tell me more.\"" },
+        { q: "Someone seems very different from you and you feel the gap", a: "Shared reactions to something in the immediate environment are always available — the situation you're both in." },
+      ]
+    },
+    {
+      name: "Mirroring & Paraphrasing",
+      description: "Harder mirroring situations — when you get the paraphrase wrong, when silence follows, or when they stop after saying exactly.",
+      inputs: [
+        { q: "Someone gives a long answer and you want to show you followed all of it", a: "Pick the most important thread: \"The part that stands out to me is [X] — is that the core of it?\"" },
+        { q: "You paraphrase and get it wrong", a: "\"Okay, I missed something — what did I get wrong?\" Getting corrected is fine; it shows you were trying to understand." },
+        { q: "Someone seems reluctant to say more", a: "One keyword mirror, then silence. Don't stack questions. Let the pause work." },
+        { q: "You mirror and the person says exactly and stops", a: "Follow up with one open question: \"And how did that sit with you?\"" },
+        { q: "You want to mirror but can't find the right words", a: "A feeling mirror is always available: \"That sounds like a lot.\" / \"That must have been strange.\"" },
+      ]
+    }
+  ],
+
 };
 
 // ─── MINDSET COLLECTIONS ──────────────────────────────────────────────────────
@@ -638,19 +715,72 @@ const mindsetCollections = {
   ],
 
   compliments: [
-    { name: "Compliments & Appreciation", description: "The mindset behind giving and receiving compliments — why it feels uncomfortable, and what changes when you do it well.", inputs: [
-      { q: "Why do compliments often fall flat even when sincere?", a: "Because they're too general. \"You're great\" is hard to receive. \"The way you handled that conversation\" lands — there's something specific to hold on to." },
-      { q: "Why is receiving a compliment without deflecting hard for many people?", a: "Because deflecting feels humble. But it actually rejects the other person's observation. Receiving graciously is the more generous move." },
-      { q: "What is the difference between a compliment and flattery?", a: "A compliment names something specific and real. Flattery is designed to get something. The difference is in the intent — and people can usually feel it." },
-    ]}
+    {
+      name: "Giving Compliments",
+      description: "The mindset behind giving compliments — why people hold back, what makes them land, and the right internal posture.",
+      inputs: [
+        { q: "Why do people hold back compliments they genuinely feel?", a: "Usually awkwardness, fear of seeming sycophantic, or not being in the habit of saying things out loud that they think internally. The thought \"that was impressive\" goes through people's heads all the time — few say it." },
+        { q: "What does giving a specific compliment signal?", a: "That you were paying attention. That you see the person specifically — not just generically. This is the deeper gift beneath the compliment itself." },
+        { q: "What is the right internal posture when giving a compliment?", a: "Generosity without agenda. You're giving something — not opening a transaction. The moment you want something in return (approval, reciprocation, a reaction), it stops being a compliment." },
+      ]
+    },
+    {
+      name: "Accepting Compliments",
+      description: "The mindset behind receiving compliments — why deflecting is the default, and why receiving gracefully is more generous.",
+      inputs: [
+        { q: "Why do people deflect compliments?", a: "Usually a combination of genuine modesty, discomfort with positive attention, or the belief that accepting a compliment is arrogant. In reality, deflecting is often more awkward than receiving — it makes the other person regret saying it." },
+        { q: "What does it mean to deserve a compliment?", a: "Nothing. Whether you deserve it is irrelevant to how you receive it. A compliment is something someone chose to give — your job is to receive it, not to adjudicate whether they were right." },
+        { q: "Why is receiving compliments well a form of generosity?", a: "Because when you receive gracefully, you validate the giver's instinct to notice and say something. When you deflect, you make them feel they misjudged. Receiving well is a gift back." },
+      ]
+    },
+    {
+      name: "Self Disclosure",
+      description: "The mindset behind self disclosure — why sharing invites sharing, and the difference between genuine disclosure and oversharing.",
+      inputs: [
+        { q: "Why is self disclosure more powerful than asking questions?", a: "Because questions put the other person on the spot. Disclosure opens a space they can enter if they want to. It's an invitation rather than a demand." },
+        { q: "What does genuine self disclosure communicate beyond its content?", a: "Trust. When you share something real, you signal that you trust the other person with it. That signal — regardless of the content — creates connection." },
+        { q: "What is the right level of self disclosure for a new relationship?", a: "Stay mostly at facts and opinions early, move to experiences occasionally when it feels natural. Feelings and uncertainties should follow rapport, not precede it. Match and slightly exceed their level." },
+      ]
+    }
   ],
 
   influenceframing: [
-    { name: "Influence & Framing", description: "The mindset behind influence — what persuasion actually is, and the internal posture that makes it work.", inputs: [
-      { q: "What is the difference between persuasion and manipulation?", a: "Persuasion helps someone see something new — their choice remains free. Manipulation removes or distorts that choice. The difference is whether you respect their autonomy." },
-      { q: "Why do good arguments often fail to persuade?", a: "Because people don't change their minds based on logic alone — they change when they feel understood first. Acknowledging their view before presenting yours is not weakness; it's the method." },
-      { q: "What does it mean to frame something in their values, not yours?", a: "You understand what matters to them — then show how your proposal serves that. \"This would help you get X\" where X is their X, not yours." },
-    ]}
+    {
+      name: "Persuasion Framing",
+      description: "The mindset behind persuasion — the right internal posture, and when persuasion becomes manipulation.",
+      inputs: [
+        { q: "What is the right internal posture for persuasion?", a: "Curiosity about their perspective, not conviction in your position. If you start persuasion already certain you're right, the dynamic is wrong before you open your mouth." },
+        { q: "What does it mean to persuade without pressure?", a: "Offering a perspective and genuinely leaving them free to disagree. The paradox is that removing pressure often makes people more open — not less." },
+        { q: "When does persuasion become manipulation?", a: "When you stop caring whether the outcome is genuinely good for them. Persuasion framing works because you're helping them see something real. When the goal is only your outcome, the same techniques become manipulation." },
+      ]
+    },
+    {
+      name: "Reframe",
+      description: "The mindset behind reframing — an offering not a correction, and why not insisting is as important as the reframe itself.",
+      inputs: [
+        { q: "What is the right internal posture when offering a reframe?", a: "Genuine curiosity about whether this alternative view is actually useful — not cleverness or the need to fix their thinking. A reframe offered to be smart rather than helpful usually lands that way." },
+        { q: "Why is it important not to insist on your reframe?", a: "Because a reframe is an offering, not a correction. If they don't take it up, the original frame might be the right one for now. Your job was to offer it — not to make them adopt it." },
+        { q: "What does a good reframe have in common with a good question?", a: "Neither demands a particular answer. Both open space for a different kind of thinking. The best reframes are almost invisible — they shift something without feeling like an intervention." },
+      ]
+    },
+    {
+      name: "Grounding",
+      description: "The mindset behind grounding — why being genuinely known is worth the friction, and the relationship between grounding and credible influence.",
+      inputs: [
+        { q: "What does it mean to be grounded in a conversation?", a: "To know what you think, what you value, and what you won't compromise — and to communicate that calmly without needing others to agree. You can hear challenge without losing your footing." },
+        { q: "Why is grounding important for influence and persuasion?", a: "Because you can't frame things credibly from a position you don't hold yourself. Grounding is the prerequisite for persuasion — it's what makes your framing trustworthy rather than tactical." },
+        { q: "What is the risk of showing your values in conversation?", a: "That someone disagrees. The alternative — hiding your values to avoid conflict — creates a kind of rootlessness that makes real connection impossible. Being genuinely known is worth the occasional friction." },
+      ]
+    },
+    {
+      name: "Observation",
+      description: "The mindset behind observation — genuine curiosity outward, and why naming what you see is one of the most powerful social tools.",
+      inputs: [
+        { q: "What is the right internal posture for observation?", a: "Genuine curiosity rather than analysis. You're interested in what's actually there — not looking for something that confirms what you already think." },
+        { q: "Why do most people miss most of what's observable?", a: "Because attention is usually inward — on what to say next, on how they're coming across, on their own thoughts. Active observation requires redirecting that attention outward." },
+        { q: "What does naming an observation do socially?", a: "It signals that you're paying real attention — not just following the surface of the conversation. Most people feel seen when something they've done or said is specifically noticed." },
+      ]
+    }
   ],
 
   humour: [
@@ -701,5 +831,48 @@ const mindsetCollections = {
       { q: "What does it mean to listen for feeling, not just fact?", a: "People rarely say the most important thing directly. They describe events and let the feelings hang in the background. Listening for feeling means tracking what's underneath the narrative." },
     ]}
   ],
+
+  conversational: [
+    {
+      name: "Finding Common Ground",
+      description: "The mindset behind finding common ground — active listening with intention, and why genuine overlap matters.",
+      inputs: [
+        { q: "What is the right internal posture for finding common ground?", a: "Active listening with intention. You're not performing similarity — you're genuinely curious about what overlaps. The curiosity has to be real for the recognition to feel genuine." },
+        { q: "Why does false common ground backfire?", a: "Because people can feel the gap between claimed and genuine connection. It registers as social performance rather than contact, which is worse than finding no common ground at all." },
+        { q: "Why is a similar feeling enough even without the identical experience?", a: "Because what creates connection is the sense of \"you get it\" — and that can come from emotional recognition even when the external facts are different." },
+      ]
+    },
+    {
+      name: "Mirroring & Paraphrasing",
+      description: "The mindset behind mirroring — your only job is to understand, and why staying with what they brought is more powerful than leading.",
+      inputs: [
+        { q: "What is the right internal posture for mirroring?", a: "Your only job is to understand — not to respond, advise or connect it to your own experience. When you're mirroring well, you're not thinking about what to say next; you're following what they mean." },
+        { q: "Why is mirroring more powerful than asking questions?", a: "Because a question redirects the conversation toward what you find interesting. A mirror stays with what they brought. It signals: I'm following you, not leading you somewhere." },
+        { q: "What does it mean to mirror the feeling rather than the words?", a: "It means reflecting the emotional content underneath the facts. \"That sounds really hard\" is a feeling mirror. \"So your colleague was late\" is a content mirror. Feeling mirrors create a sense of being deeply heard." },
+      ]
+    }
+  ],
+
+  criticism: [
+    {
+      name: "Receiving Criticism",
+      description: "The thinking patterns behind receiving criticism well — what makes it so hard, and what shifts when you stop taking it personally.",
+      inputs: [
+        { q: "Why is the urge to defend yourself when receiving criticism almost always counterproductive?", a: "Because defending yourself signals that the criticism has threatened your identity, not just described a behaviour. The moment you defend, the conversation shifts from the content to your ego — and you lose the useful information." },
+        { q: "What is the difference between taking criticism seriously and taking it personally?", a: "Taking it seriously means extracting what's useful and acting on it. Taking it personally means treating it as a verdict on who you are. The same criticism can be both a useful signal and not a threat to your worth." },
+        { q: "How do you know when criticism is useful information vs when it's just someone's frustration?", a: "Ask: is it specific? Does it describe something observable? Can you do something about it? Frustration is usually vague and general. Useful criticism is usually specific and behavioural." },
+      ]
+    },
+    {
+      name: "Giving Criticism",
+      description: "The thinking patterns behind giving criticism well — what makes it land as information rather than attack.",
+      inputs: [
+        { q: "What makes criticism land as information rather than attack?", a: "Specificity and tone. Specific + calm = information. Vague + loaded = attack. \"That report had unclear section headers\" is information. \"You're always unclear\" is an attack." },
+        { q: "Why is specificity so important when giving criticism?", a: "Because vague criticism gives the person nothing to work with — they can only defend themselves or feel bad. Specific criticism gives them something concrete to change. The specificity is the respect." },
+        { q: "What do you do when you know someone won't receive criticism well but it needs to be said?", a: "Say it anyway, calmly and specifically. Your job is to communicate it clearly — not to manage their reaction. Don't delay, don't soften it into meaninglessness, and don't apologise for the content." },
+      ]
+    }
+  ],
+
 
 };
