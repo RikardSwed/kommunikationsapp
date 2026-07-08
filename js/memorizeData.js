@@ -604,5 +604,18 @@ const memorizeCollections = {
         { q: "What is the relationship between observation and influence?", a: "You can't frame something in someone else's values if you haven't observed what those values are. Observation is the first step of all influence work." }
       ]
     }
+  ],
+
+  storytelling: [
+    {
+      name: "Storytelling",
+      description: "The key concepts and structures behind effective storytelling.",
+      cards: [
+        { q: "What is the five-part structure of a good story?",                       a: "Hook / Context / Conflict or Twist / Resolution / Point (optional)" },
+        { q: "What is the single most important thing that makes a story engaging?",   a: "Specific details. Not \"a colleague\" but \"Marcus from accounting.\" Specificity makes it real." },
+        { q: "What is the timing rule for the punchline or twist?",                    a: "Slow down before it. Pause. Deliver at a natural speed. Then move on — don't explain it or laugh first." },
+        { q: "What do you do when a story runs long and people start drifting?",       a: "Fast-forward: \"The short version: [resolution].\" Better to land it briefly than trail off." },
+      ]
+    }
   ]
 };

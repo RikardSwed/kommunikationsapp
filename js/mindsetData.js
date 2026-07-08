@@ -171,5 +171,17 @@ const mindsetCollections = {
     }
   ],
 
+,
 
+  storytelling: [
+    {
+      name: "Sharing not performing",
+      description: "The most common mistake in storytelling is treating it as a performance. This mindset shift is about returning to sharing as the intention.",
+      inputs: [
+        { q: "You feel pressure to be entertaining when telling a story.",    a: "Sharing, not performing. If you feel pressure to entertain, it reads as effort. If you feel like you're genuinely sharing, it reads as warmth." },
+        { q: "You wonder if your story is interesting enough to tell.",       a: "The event can be minor — if the detail is vivid, the story lands. Specificity creates the feeling that the listener was there." },
+        { q: "You tell a story and it lands flat — no one reacts as expected.", a: "Move on without retreating. Not every story lands with every audience. Your job was to share, not to perform.", bundle: "pro" },
+      ]
+    }
+  ]
 };

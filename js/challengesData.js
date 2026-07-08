@@ -168,5 +168,19 @@ const challengesCollections = {
       ]
     }
   ],
+,
 
+  storytelling: [
+    {
+      name: "Difficult storytelling situations",
+      description: "Situations where storytelling becomes harder — interruptions, stories without a point, losing the room.",
+      inputs: [
+        { q: "You start telling a story and halfway through realise it has no point.",           a: "Name it: \"I'm not sure where that was going — but it happened.\" Owning it is funnier than trailing off." },
+        { q: "Someone interrupts your story repeatedly.",                                         a: "Hold your thread: \"Let me finish this bit and then —\" calmly, then land the story." },
+        { q: "The story is going longer than expected and you can feel the energy dropping.",     a: "Fast-forward: \"The short version: it went badly, I survived, and I learned my lesson.\"", bundle: "pro" },
+        { q: "You tell a story about an awkward experience and someone tries to top it.",         a: "Let them — don't fight for the floor. The story was a gift to the conversation, not a competition.", bundle: "pro" },
+        { q: "The story involves someone who is also present.",                                   a: "Check in first: \"Is it okay if I tell this?\" or adjust on the fly so they come off well.", bundle: "pro" },
+      ]
+    }
+  ]
 };

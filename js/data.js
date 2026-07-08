@@ -526,4 +526,21 @@ const collections = {
     }
   ]
 
+,
+
+  storytelling: [
+    {
+      name: "Storytelling",
+      description: "A good story requires more than a memory — it requires structure, timing and feeling. Storytelling as a communication strategy is about being able to retrieve relevant stories spontaneously in conversation and deliver them in a way that engages the listener.\n\nFive-part structure:\n1. Hook — Open with something that creates curiosity: \"You know what happened to me yesterday?\"\n2. Context — Set the scene briefly: who, where, when\n3. Conflict / Twist — What makes the story interesting — the unexpected, funny or dramatic\n4. Resolution — What happened in the end\n5. Point (optional) — Sometimes a final insight closes it\n\nWhat makes a story engaging: specific details, varied pacing, feeling, a clear twist or point.",
+      inputs: [
+        { q: "Last time I hurt myself",                  a: "Build with drama and humour — hook, context, twist, resolution." },
+        { q: "Last time I had a really good time",       a: "Tell with energy and joy. Include one specific detail that makes it real." },
+        { q: "Something funny that happened recently",   a: "Build to the punchline, time it — slow down before it, pause, then deliver." },
+        { q: "A time I was embarrassed",                 a: "Use self-distance and humour. Own it, don't dwell." },
+        { q: "A time I was proud of something",          a: "Tell with pride, without becoming a brag. Let the story speak.", bundle: "pro" },
+        { q: "A childhood memory",                       a: "Set the scene, include one detail that makes it vivid.", bundle: "pro" },
+        { q: "Something unexpected that happened",       a: "Start with the hook, build the tension, land the twist cleanly.", bundle: "pro" },
+      ]
+    }
+  ]
 };

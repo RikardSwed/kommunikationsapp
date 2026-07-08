@@ -691,5 +691,27 @@ const multiStepCollections = {
         }
       ]
     }
+  ],
+
+  storytelling: [
+    {
+      name: "Hook → Build → Twist → Invite",
+      description: "The full storytelling arc for a story with a clear unexpected moment.",
+      steps: [
+        { q: "Step 1 — Hook",             a: "\"You know what happened to me on the way here?\" — create forward pull." },
+        { q: "Step 2 — Build",            a: "Set the context briefly, build the tension, slow down near the twist." },
+        { q: "Step 3 — Twist + Resolution", a: "Land it cleanly and move on quickly. Don't over-explain." },
+        { q: "Step 4 — Invite",           a: "\"Has anything like that happened to you?\" — hand the floor back." },
+      ]
+    },
+    {
+      name: "Self-deprecating story → Laugh → Move on",
+      description: "For sharing an embarrassing or clumsy moment with warmth and self-distance.",
+      steps: [
+        { q: "Step 1 — Tell it",     a: "Tell with self-distance — you're laughing at yourself, not seeking sympathy." },
+        { q: "Step 2 — Let it land", a: "Let the reaction land without explaining the joke or repeating the punchline." },
+        { q: "Step 3 — Move on",     a: "Continue naturally — don't keep referencing the moment." },
+      ]
+    }
   ]
 };
