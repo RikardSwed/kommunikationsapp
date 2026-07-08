@@ -429,6 +429,13 @@
       cursor:     default;
     }
     /* ── MODAL ── */
+    .modal--wide { max-width: 780px; }
+    .syntax-section { margin-bottom: 20px; }
+    .syntax-section h3 { font-size: 14px; font-weight: 700; margin-bottom: 10px; color: var(--txt); }
+    .syntax-rules { padding-left: 20px; font-size: 13px; color: var(--txt2); line-height: 2; }
+    .syntax-rules code { background: var(--bg); border: 1px solid var(--border); border-radius: 4px; padding: 1px 5px; font-family: monospace; font-size: 12px; color: var(--txt); }
+    .syntax-pre { background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px; font-size: 12px; font-family: monospace; white-space: pre; overflow-x: auto; line-height: 1.7; color: var(--txt); }
+    /* ── MODAL ── */
     .modal-overlay {
       display:         none;
       position:        fixed; inset: 0;
@@ -489,6 +496,7 @@
       <h1>Pack Editor</h1>
       <div class="home-actions">
         <input type="file" id="json-file-input" accept=".json" style="display:none">
+        <button class="btn btn--ghost btn--sm" onclick="showSyntaxGuide()">Syntax guide</button>
         <button class="btn btn--ghost btn--sm" id="import-text-btn">Paste from AI</button>
         <button class="btn btn--ghost btn--sm" id="import-json-btn">Import JSON</button>
         <button class="btn btn--primary" onclick="createNewPack()">+ New pack</button>
@@ -557,8 +565,8 @@
   });
 </script>
 <!-- Editor logic -->
-<script src="js/editor-core.js?v=100"></script>
-<script src="js/editor-ui.js?v=100"></script>
+<script src="js/editor-core.js?v=110"></script>
+<script src="js/editor-ui.js?v=110"></script>
 
 </body>
 </html>
