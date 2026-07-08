@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
   <title>Deckstack</title>
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="stylesheet" href="css/style.css?v=1197" />
+  <link rel="stylesheet" href="css/style.css?v=1198" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
 </head>
 <body>
@@ -252,7 +252,7 @@
         <button id="progResetBtn" class="prog-reset-btn">Reset all progress data…</button>
       </div>
     </div>
-    <div class="settings-version">v1.19.7</div>
+    <div class="settings-version">v1.19.8</div>
     <button class="settings-close" id="progressSettingsClose">Done</button>
   </div>
 </div>
@@ -1206,7 +1206,7 @@
       <label>Progress bar</label>
       <label class="toggle"><input type="checkbox" id="showProgressBar" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.19.7</div>
+    <div class="settings-version">v1.19.8</div>
     <button class="settings-close" id="settingsClose">Done</button>
   </div>
 </div>
@@ -1275,11 +1275,16 @@
       <label style="font-size:12px; color:#aaa;">List available voices</label>
       <button id="hfVoiceDebugBtn" style="font-size:12px; color:#aaa; background:none; border:1px solid #ddd; border-radius:8px; padding:4px 10px; cursor:pointer;">Show</button>
     </div>
+    <div class="settings-row">
+      <label>Show input counter</label>
+      <label class="toggle"><input type="checkbox" id="hfShowInputCounter" checked /><span class="toggle-slider"></span></label>
+    </div>
     <div class="settings-row settings-row--danger">
       <label>Loop current strategy</label>
       <label class="toggle"><input type="checkbox" id="hfLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.19.7</div>
+    <div class="bundle-section-placeholder" id="hfBundlePlaceholder"></div>
+    <div class="settings-version">v1.19.8</div>
     <button class="settings-close" id="hfSettingsClose">Done</button>
   </div>
 </div>
@@ -1344,11 +1349,16 @@
         <option value="male">Male</option>
       </select>
     </div>
+    <div class="settings-row">
+      <label>Show input counter</label>
+      <label class="toggle"><input type="checkbox" id="hfMemShowInputCounter" checked /><span class="toggle-slider"></span></label>
+    </div>
     <div class="settings-row settings-row--danger">
       <label>Loop current strategy</label>
       <label class="toggle"><input type="checkbox" id="hfMemLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.19.7</div>
+    <div class="bundle-section-placeholder" id="hfMemBundlePlaceholder"></div>
+    <div class="settings-version">v1.19.8</div>
     <button class="settings-close" id="hfMemSettingsClose">Done</button>
   </div>
 </div>
@@ -1413,11 +1423,16 @@
         <option value="male">Male</option>
       </select>
     </div>
+    <div class="settings-row">
+      <label>Show input counter</label>
+      <label class="toggle"><input type="checkbox" id="hfChallShowInputCounter" checked /><span class="toggle-slider"></span></label>
+    </div>
     <div class="settings-row settings-row--danger">
       <label>Loop current category</label>
       <label class="toggle"><input type="checkbox" id="hfChallLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.19.7</div>
+    <div class="bundle-section-placeholder" id="hfChallBundlePlaceholder"></div>
+    <div class="settings-version">v1.19.8</div>
     <button class="settings-close" id="hfChallSettingsClose">Done</button>
   </div>
 </div>
@@ -1471,11 +1486,16 @@
         <option value="male">Male</option>
       </select>
     </div>
+    <div class="settings-row">
+      <label>Show input counter</label>
+      <label class="toggle"><input type="checkbox" id="hfFlowShowInputCounter" checked /><span class="toggle-slider"></span></label>
+    </div>
     <div class="settings-row settings-row--danger">
       <label>Loop current combo</label>
       <label class="toggle"><input type="checkbox" id="hfFlowLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.19.7</div>
+    <div class="bundle-section-placeholder" id="hfFlowBundlePlaceholder"></div>
+    <div class="settings-version">v1.19.8</div>
     <button class="settings-close" id="hfFlowSettingsClose">Done</button>
   </div>
 </div>
@@ -1540,11 +1560,16 @@
         <option value="male">Male</option>
       </select>
     </div>
+    <div class="settings-row">
+      <label>Show input counter</label>
+      <label class="toggle"><input type="checkbox" id="hfMindShowInputCounter" checked /><span class="toggle-slider"></span></label>
+    </div>
     <div class="settings-row settings-row--danger">
       <label>Loop current mindset</label>
       <label class="toggle"><input type="checkbox" id="hfMindLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.19.7</div>
+    <div class="bundle-section-placeholder" id="hfMindBundlePlaceholder"></div>
+    <div class="settings-version">v1.19.8</div>
     <button class="settings-close" id="hfMindSettingsClose">Done</button>
   </div>
 </div>
@@ -1609,11 +1634,16 @@
         <option value="male">Male</option>
       </select>
     </div>
+    <div class="settings-row">
+      <label>Show input counter</label>
+      <label class="toggle"><input type="checkbox" id="hfCollShowInputCounter" checked /><span class="toggle-slider"></span></label>
+    </div>
     <div class="settings-row settings-row--danger">
       <label>Loop current collection</label>
       <label class="toggle"><input type="checkbox" id="hfCollLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.19.7</div>
+    <div class="bundle-section-placeholder" id="hfCollBundlePlaceholder"></div>
+    <div class="settings-version">v1.19.8</div>
     <button class="settings-close" id="hfCollSettingsClose">Done</button>
   </div>
 </div>
@@ -1747,7 +1777,7 @@
         <label class="settings-radio-label"><input type="radio" name="devLevel" value="freemium" id="devLevelFreemium" /> Freemium <span style="font-size:12px;color:#aaa;margin-left:4px;">Assertive &amp; Conversational only</span></label>
       </div>
     </div>
-    <div class="settings-version">v1.19.7</div>
+    <div class="settings-version">v1.19.8</div>
   </div>
 </div>
 
@@ -1767,16 +1797,16 @@
   </button>
 </div>
 
-<script src="js/data.js?v=1197"></script>
-<script src="js/challengesData.js?v=1197"></script>
-<script src="js/mindsetData.js?v=1197"></script>
-<script src="js/multiStepData.js?v=1197"></script>
-<script src="js/memorizeData.js?v=1197"></script>
-<script src="js/app-core.js?v=1197"></script>
-<script src="js/app-modes.js?v=1197"></script>
-<script src="js/app-handsfree.js?v=1197"></script>
-<script src="js/app-system.js?v=1197"></script>
-<script src="js/app-ui.js?v=1197"></script>
+<script src="js/data.js?v=1198"></script>
+<script src="js/challengesData.js?v=1198"></script>
+<script src="js/mindsetData.js?v=1198"></script>
+<script src="js/multiStepData.js?v=1198"></script>
+<script src="js/memorizeData.js?v=1198"></script>
+<script src="js/app-core.js?v=1198"></script>
+<script src="js/app-modes.js?v=1198"></script>
+<script src="js/app-handsfree.js?v=1198"></script>
+<script src="js/app-system.js?v=1198"></script>
+<script src="js/app-ui.js?v=1198"></script>
 
 </body>
 </html>
