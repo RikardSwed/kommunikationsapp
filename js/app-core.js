@@ -4,7 +4,7 @@
 // app.js — All application logic for Communication Trainer
 // Depends on: data.js and multiStepData.js (must be loaded first)
 
-const VERSION = 'v1.19.5';
+const VERSION = 'v1.19.6';
 
 // Pack icon map — global so both dashboard and favorites can use it
 const PACK_ICONS = {
@@ -43,8 +43,10 @@ function hideAll() {
   ].forEach(el => { el.style.display = 'none'; });
 }
 
+// Track whether mode screen was opened from dashboard or library
+let _modeOrigin = 'library';
+
 function navToHome() {
-  // Hide the Library screen immediately so it can't flash during the slide-out
   homeScreen.style.display = 'none';
   modeScreen.classList.remove('slide-in-right', 'slide-out-right');
   void modeScreen.offsetWidth;
@@ -52,22 +54,23 @@ function navToHome() {
   setTimeout(() => {
     modeScreen.style.display = 'none';
     modeScreen.classList.remove('slide-out-right');
-    showTab(_tabBeforeMode || 'library');
+    if (_modeOrigin === 'dashboard') {
+      showTab('dashboard');
+    } else {
+      showTab('library');
+    }
   }, 300);
   showBottomNav();
 }
 
-let _tabBeforeMode = 'library'; // track which tab opened the mode screen
-
 function navToMode() {
-  // Remember which tab we came from
   const activeTab = document.querySelector('.nav-tab.active');
-  _tabBeforeMode = activeTab ? activeTab.dataset.tab : 'library';
-  // Hide all tab screens, show Library behind mode screen
+  const activeTabName = activeTab ? activeTab.dataset.tab : 'library';
+  _modeOrigin = (activeTabName === 'dashboard') ? 'dashboard' : 'library';
   ['dashboardScreen','homeScreen','progressScreen','upgradeScreen'].forEach(id => {
     const el = document.getElementById(id); if (el) el.style.display = 'none';
   });
-  homeScreen.style.display = 'flex';
+  if (_modeOrigin === 'library') homeScreen.style.display = 'flex';
   modeScreen.style.display = 'flex';
   modeScreen.classList.remove('slide-in-right', 'slide-out-right');
   void modeScreen.offsetWidth;
@@ -267,17 +270,18 @@ function launchLastMode(packKey, packLabel) {
     } catch {}
     if (window.progEndSession) progEndSession();
     if (window.progStartSession) progStartSession(packKey, packLabel);
-    // Show modeScreen behind training without showing Library
+    // Mark origin as dashboard so closing modeScreen returns there
+    _modeOrigin = 'dashboard';
+    // Hide all tab screens, do NOT show Library behind
     ['dashboardScreen','homeScreen','progressScreen','upgradeScreen'].forEach(id => {
       const el = document.getElementById(id); if (el) el.style.display = 'none';
     });
     const modeEl = document.getElementById('modeScreen');
-    if (modeEl) { modeEl.style.display = 'flex'; modeEl.style.transition = 'none'; }
+    if (modeEl) modeEl.style.display = 'flex';
     hideBottomNav();
-    window._noTrainingAnim = true;
+    // Launch with normal slide-up animation
     saveLastMode(packKey, lastMode);
     MODE_LAUNCHERS[lastMode]();
-    setTimeout(() => { if (modeEl) modeEl.style.transition = ''; }, 50);
   } else {
     showModeScreen(packKey, packLabel);
   }
