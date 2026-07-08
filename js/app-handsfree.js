@@ -1616,8 +1616,8 @@ document.getElementById('hfCollNextInputBtn').addEventListener('click', () => { 
 
 function showHandsfreeCollections() {
   const key = activeCollectionKey;
-  if (!conversationalCollections[key] || !conversationalCollections[key].length) return;
-  collCollections = conversationalCollections[key];
+  if (!collections[key] || !collections[key].length) return;
+  collCollections = collections[key];
   collIdx = 0; collInputIdx = 0;
   navToTraining('hfCollScreen');
   hfCollRenderManual();
