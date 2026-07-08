@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
   <title>Deckstack</title>
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="stylesheet" href="css/style.css?v=1200" />
+  <link rel="stylesheet" href="css/style.css?v=1201" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
 </head>
 <body>
@@ -252,7 +252,7 @@
         <button id="progResetBtn" class="prog-reset-btn">Reset all progress data…</button>
       </div>
     </div>
-    <div class="settings-version">v1.20.0</div>
+    <div class="settings-version">v1.20.1</div>
     <button class="settings-close" id="progressSettingsClose">Done</button>
   </div>
 </div>
@@ -970,7 +970,7 @@
 <div class="app" id="hfScreen" style="display:none;">
   <div class="topbar">
     <button class="topbar-btn" id="hfCloseBtn">✕</button>
-    <span class="counter sub-counter" id="hfSubCounter"></span><span class="counter-sep" id="hfCounterSep">·</span><span class="counter" id="hfCounter">1 / 4</span>
+    <span class="counter-group"><span class="counter sub-counter" id="hfSubCounter"></span><span class="counter-sep" id="hfCounterSep">·</span><span class="counter" id="hfCounter">1 / 4</span></span>
     <button class="topbar-btn" id="hfSettingsBtn">⚙</button>
   </div>
   <div class="divider"></div>
@@ -1006,7 +1006,7 @@
 <div class="app" id="hfMemScreen" style="display:none;">
   <div class="topbar">
     <button class="topbar-btn" id="hfMemCloseBtn">✕</button>
-    <span class="counter sub-counter" id="hfMemSubCounter"></span><span class="counter-sep" id="hfMemCounterSep">·</span><span class="counter" id="hfMemCounter">1 / 4</span>
+    <span class="counter-group"><span class="counter sub-counter" id="hfMemSubCounter"></span><span class="counter-sep" id="hfMemCounterSep">·</span><span class="counter" id="hfMemCounter">1 / 4</span></span>
     <button class="topbar-btn" id="hfMemSettingsBtn">⚙</button>
   </div>
   <div class="divider"></div>
@@ -1042,7 +1042,7 @@
 <div class="app" id="hfChallScreen" style="display:none;">
   <div class="topbar">
     <button class="topbar-btn" id="hfChallCloseBtn">✕</button>
-    <span class="counter sub-counter" id="hfChallSubCounter"></span><span class="counter-sep" id="hfChallCounterSep">·</span><span class="counter" id="hfChallCounter">1 / 7</span>
+    <span class="counter-group"><span class="counter sub-counter" id="hfChallSubCounter"></span><span class="counter-sep" id="hfChallCounterSep">·</span><span class="counter" id="hfChallCounter">1 / 7</span></span>
     <button class="topbar-btn" id="hfChallSettingsBtn">⚙</button>
   </div>
   <div class="divider"></div>
@@ -1078,7 +1078,7 @@
 <div class="app" id="hfFlowScreen" style="display:none;">
   <div class="topbar">
     <button class="topbar-btn" id="hfFlowCloseBtn">✕</button>
-    <span class="counter sub-counter" id="hfFlowSubCounter"></span><span class="counter-sep" id="hfFlowCounterSep">·</span><span class="counter" id="hfFlowCounter">1 / 2</span>
+    <span class="counter-group"><span class="counter sub-counter" id="hfFlowSubCounter"></span><span class="counter-sep" id="hfFlowCounterSep">·</span><span class="counter" id="hfFlowCounter">1 / 2</span></span>
     <button class="topbar-btn" id="hfFlowSettingsBtn">⚙</button>
   </div>
   <div class="divider"></div>
@@ -1114,7 +1114,7 @@
 <div class="app" id="hfMindScreen" style="display:none;">
   <div class="topbar">
     <button class="topbar-btn" id="hfMindCloseBtn">✕</button>
-    <span class="counter sub-counter" id="hfMindSubCounter"></span><span class="counter-sep" id="hfMindCounterSep">·</span><span class="counter" id="hfMindCounter">1 / 9</span>
+    <span class="counter-group"><span class="counter sub-counter" id="hfMindSubCounter"></span><span class="counter-sep" id="hfMindCounterSep">·</span><span class="counter" id="hfMindCounter">1 / 9</span></span>
     <button class="topbar-btn" id="hfMindSettingsBtn">⚙</button>
   </div>
   <div class="divider"></div>
@@ -1150,7 +1150,7 @@
 <div class="app" id="hfCollScreen" style="display:none;">
   <div class="topbar">
     <button class="topbar-btn" id="hfCollCloseBtn">✕</button>
-    <span class="counter sub-counter" id="hfCollSubCounter"></span><span class="counter-sep" id="hfCollCounterSep">·</span><span class="counter" id="hfCollCounter">1 / 2</span>
+    <span class="counter-group"><span class="counter sub-counter" id="hfCollSubCounter"></span><span class="counter-sep" id="hfCollCounterSep">·</span><span class="counter" id="hfCollCounter">1 / 2</span></span>
     <button class="topbar-btn" id="hfCollSettingsBtn">⚙</button>
   </div>
   <div class="divider"></div>
@@ -1206,7 +1206,7 @@
       <label>Progress bar</label>
       <label class="toggle"><input type="checkbox" id="showProgressBar" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.20.0</div>
+    <div class="settings-version">v1.20.1</div>
     <button class="settings-close" id="settingsClose">Done</button>
   </div>
 </div>
@@ -1279,12 +1279,7 @@
       <label>Loop current strategy</label>
       <label class="toggle"><input type="checkbox" id="hfLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-row">
-      <label>Show input counter</label>
-      <label class="toggle"><input type="checkbox" id="hfShowInputCounter" checked /><span class="toggle-slider"></span></label>
-    </div>
-    <div class="bundle-section-placeholder" id="hfBundlePlaceholder"></div>
-    <div class="settings-version">v1.20.0</div>
+    <div class="settings-version">v1.20.1</div>
     <button class="settings-close" id="hfSettingsClose">Done</button>
   </div>
 </div>
@@ -1353,12 +1348,7 @@
       <label>Loop current strategy</label>
       <label class="toggle"><input type="checkbox" id="hfMemLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-row">
-      <label>Show input counter</label>
-      <label class="toggle"><input type="checkbox" id="hfMemShowInputCounter" checked /><span class="toggle-slider"></span></label>
-    </div>
-    <div class="bundle-section-placeholder" id="hfMemBundlePlaceholder"></div>
-    <div class="settings-version">v1.20.0</div>
+    <div class="settings-version">v1.20.1</div>
     <button class="settings-close" id="hfMemSettingsClose">Done</button>
   </div>
 </div>
@@ -1427,12 +1417,7 @@
       <label>Loop current category</label>
       <label class="toggle"><input type="checkbox" id="hfChallLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-row">
-      <label>Show input counter</label>
-      <label class="toggle"><input type="checkbox" id="hfChallShowInputCounter" checked /><span class="toggle-slider"></span></label>
-    </div>
-    <div class="bundle-section-placeholder" id="hfChallBundlePlaceholder"></div>
-    <div class="settings-version">v1.20.0</div>
+    <div class="settings-version">v1.20.1</div>
     <button class="settings-close" id="hfChallSettingsClose">Done</button>
   </div>
 </div>
@@ -1490,12 +1475,7 @@
       <label>Loop current combo</label>
       <label class="toggle"><input type="checkbox" id="hfFlowLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-row">
-      <label>Show input counter</label>
-      <label class="toggle"><input type="checkbox" id="hfFlowShowInputCounter" checked /><span class="toggle-slider"></span></label>
-    </div>
-    <div class="bundle-section-placeholder" id="hfFlowBundlePlaceholder"></div>
-    <div class="settings-version">v1.20.0</div>
+    <div class="settings-version">v1.20.1</div>
     <button class="settings-close" id="hfFlowSettingsClose">Done</button>
   </div>
 </div>
@@ -1564,12 +1544,7 @@
       <label>Loop current mindset</label>
       <label class="toggle"><input type="checkbox" id="hfMindLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-row">
-      <label>Show input counter</label>
-      <label class="toggle"><input type="checkbox" id="hfMindShowInputCounter" checked /><span class="toggle-slider"></span></label>
-    </div>
-    <div class="bundle-section-placeholder" id="hfMindBundlePlaceholder"></div>
-    <div class="settings-version">v1.20.0</div>
+    <div class="settings-version">v1.20.1</div>
     <button class="settings-close" id="hfMindSettingsClose">Done</button>
   </div>
 </div>
@@ -1638,12 +1613,7 @@
       <label>Loop current collection</label>
       <label class="toggle"><input type="checkbox" id="hfCollLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-row">
-      <label>Show input counter</label>
-      <label class="toggle"><input type="checkbox" id="hfCollShowInputCounter" checked /><span class="toggle-slider"></span></label>
-    </div>
-    <div class="bundle-section-placeholder" id="hfCollBundlePlaceholder"></div>
-    <div class="settings-version">v1.20.0</div>
+    <div class="settings-version">v1.20.1</div>
     <button class="settings-close" id="hfCollSettingsClose">Done</button>
   </div>
 </div>
@@ -1777,7 +1747,7 @@
         <label class="settings-radio-label"><input type="radio" name="devLevel" value="freemium" id="devLevelFreemium" /> Freemium <span style="font-size:12px;color:#aaa;margin-left:4px;">Assertive &amp; Conversational only</span></label>
       </div>
     </div>
-    <div class="settings-version">v1.20.0</div>
+    <div class="settings-version">v1.20.1</div>
   </div>
 </div>
 
@@ -1797,16 +1767,16 @@
   </button>
 </div>
 
-<script src="js/data.js?v=1200"></script>
-<script src="js/challengesData.js?v=1200"></script>
-<script src="js/mindsetData.js?v=1200"></script>
-<script src="js/multiStepData.js?v=1200"></script>
-<script src="js/memorizeData.js?v=1200"></script>
-<script src="js/app-core.js?v=1200"></script>
-<script src="js/app-modes.js?v=1200"></script>
-<script src="js/app-handsfree.js?v=1200"></script>
-<script src="js/app-system.js?v=1200"></script>
-<script src="js/app-ui.js?v=1200"></script>
+<script src="js/data.js?v=1201"></script>
+<script src="js/challengesData.js?v=1201"></script>
+<script src="js/mindsetData.js?v=1201"></script>
+<script src="js/multiStepData.js?v=1201"></script>
+<script src="js/memorizeData.js?v=1201"></script>
+<script src="js/app-core.js?v=1201"></script>
+<script src="js/app-modes.js?v=1201"></script>
+<script src="js/app-handsfree.js?v=1201"></script>
+<script src="js/app-system.js?v=1201"></script>
+<script src="js/app-ui.js?v=1201"></script>
 
 </body>
 </html>
