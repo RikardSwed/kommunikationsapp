@@ -1,4 +1,4 @@
-// editor-ui.js — Deckstack Pack Editor UI
+// editor-ui.js &mdash; Deckstack Pack Editor UI
 
 let currentPack   = null;
 let currentMode   = MODES[0].id;
@@ -107,7 +107,7 @@ function renderPackList() {
 
 function packRow(name, key, type) {
   const delBtn = (type === 'my')
-    ? `<button class="icon-btn pack-del" data-key="${key}" data-name="${name}" title="Delete">✕</button>`
+    ? `<button class="icon-btn pack-del" data-key="${key}" data-name="${name}" title="Delete">&#x2715;</button>`
     : '';
   return `
     <div class="pack-row" data-key="${key}" data-source="${type}">
@@ -150,7 +150,7 @@ function showPasteDialog() {
       <div class="modal">
         <div class="modal-header">
           <h2>Import from text</h2>
-          <button class="icon-btn" id="paste-modal-close">✕</button>
+          <button class="icon-btn" id="paste-modal-close">&#x2715;</button>
         </div>
         <p class="modal-desc">Paste AI-generated text using the Deckstack format. <a href="#" id="show-syntax-btn">Show syntax guide</a></p>
         <div class="syntax-guide" id="syntax-guide" style="display:none">
@@ -212,7 +212,7 @@ function openPack(key, source) {
     currentPack = drafts[key];
     currentPack._fromApp = false;
   } else {
-    // Load from app data — never save to localStorage
+    // Load from app data &mdash; never save to localStorage
     currentPack = packFromAppData(key);
     currentPack._fromApp = true;
   }
@@ -253,12 +253,12 @@ function showEditor() {
 function renderPackHeader() {
   const isApp = !!currentPack._fromApp;
   const titleExtra  = isApp
-    ? '<span class="app-pack-badge">App pack — read only</span>'
-    : '<button class="icon-btn" id="rename-btn" title="Rename">✎</button>';
+    ? '<span class="app-pack-badge">App pack &mdash; read only</span>'
+    : '<button class="icon-btn" id="rename-btn" title="Rename">&#9998;</button>';
   const resetBtn    = isApp
-    ? '<button class="btn btn--ghost btn--sm" id="reset-btn">↺ Reset to original</button>'
+    ? '<button class="btn btn--ghost btn--sm" id="reset-btn">&#8634; Reset to original</button>'
     : '';
-  const versionLabel = isApp ? 'Save as new…' : 'Save version…';
+  const versionLabel = isApp ? 'Save as new&hellip;' : 'Save version&hellip;';
 
   setHTML('pack-header',
     '<div class="pack-title-row">' +
@@ -267,7 +267,7 @@ function renderPackHeader() {
       '<span id="save-indicator" style="font-size:12px;color:#8A6040;margin-left:8px;opacity:0;transition:opacity .3s;"></span>' +
     '</div>' +
     '<div class="pack-actions">' +
-      '<button class="btn btn--ghost btn--sm" id="back-btn">← All packs</button>' +
+      '<button class="btn btn--ghost btn--sm" id="back-btn">&larr; All packs</button>' +
       resetBtn +
       '<button class="btn btn--secondary btn--sm" id="version-btn">' + versionLabel + '</button>' +
       '<button class="btn btn--primary btn--sm" id="export-btn">Export JSON</button>' +
@@ -362,9 +362,9 @@ function renderModeContent() {
           ${strats.map((s,i) => `<option value="${i}" ${i===currentStrat?'selected':''}>${escHtml(s.name||'(unnamed)')}</option>`).join('')}
         </select>
         ${!readOnly ? `
-        <button class="icon-btn" id="strat-rename-btn" title="Rename ${mode.stratLabel}">✎</button>
+        <button class="icon-btn" id="strat-rename-btn" title="Rename ${mode.stratLabel}">&#9998;</button>
         <button class="btn btn--ghost btn--sm" id="add-strat-btn">+ Add</button>
-        <button class="icon-btn danger" id="del-strat-btn" title="Delete">✕</button>` : ''}
+        <button class="icon-btn danger" id="del-strat-btn" title="Delete">&#x2715;</button>` : ''}
       </div>
     </div>`;
 
@@ -374,7 +374,7 @@ function renderModeContent() {
       <details class="expandable">
         <summary class="expandable-summary">
           Explanation
-          <span class="hint-text">${strat.description ? '— has content' : '— empty'}</span>
+          <span class="hint-text">${strat.description ? '&mdash; has content' : '&mdash; empty'}</span>
         </summary>
         <textarea class="textarea" id="desc-ta" rows="7" ${readOnly ? 'readonly' : ''} placeholder="Explain this ${mode.stratLabel.toLowerCase()}...">${escHtml(strat.description||'')}</textarea>
       </details>
@@ -391,7 +391,7 @@ function renderModeContent() {
             ${allBundles.map(b => `<option value="${b.id}" ${b.id===currentBundle?'selected':''}>${escHtml(b.name)}</option>`).join('')}
           </select>
           <button class="btn btn--ghost btn--sm" id="add-bundle-btn">+ Add bundle</button>
-          ${currentBundle !== 'default' ? `<button class="icon-btn danger" id="del-bundle-btn" title="Delete bundle">✕</button>` : ''}
+          ${currentBundle !== 'default' ? `<button class="icon-btn danger" id="del-bundle-btn" title="Delete bundle">&#x2715;</button>` : ''}
         </div>
       </div>`;
   }
@@ -416,7 +416,7 @@ function renderModeContent() {
         <div class="card-row" data-index="${i}">
           <textarea class="card-ta" data-field="q" rows="2" ${readOnly ? 'readonly' : ''} placeholder="${frontLabel}...">${escHtml(item.q||item.front||'')}</textarea>
           <textarea class="card-ta" data-field="a" rows="2" ${readOnly ? 'readonly' : ''} placeholder="${backLabel}...">${escHtml(item.a||item.back||'')}</textarea>
-          ${!readOnly ? `<button class="icon-btn danger card-del" data-index="${i}" title="Remove">✕</button>` : '<span></span>'}
+          ${!readOnly ? `<button class="icon-btn danger card-del" data-index="${i}" title="Remove">&#x2715;</button>` : '<span></span>'}
         </div>`).join('')}
       ${!readOnly ? `<button class="btn btn--ghost add-card-btn" style="width:100%;margin-top:8px;">+ Add ${mode.cardLabel.toLowerCase()}</button>` : ''}
     </div>`;
