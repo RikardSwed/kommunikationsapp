@@ -343,7 +343,11 @@ document.getElementById('hfNextInputBtn').addEventListener('click',()=>{const o=
 
 // ── showHandsfree ─────────────────────────────────────────────────────────────
 function showHandsfree() {
-  strategies  = collections[activeCollectionKey] || [];
+  strategies  = (collections[activeCollectionKey] || []).map(strat => {
+    if (!window.filterInputsByBundle) return strat;
+    const filtered = window.filterInputsByBundle(strat.inputs, activeCollectionKey);
+    return Object.assign({}, strat, { inputs: filtered.length ? filtered : strat.inputs });
+  });
   if (!strategies.length) return;
   stratOrder  = strategies.map((_,i)=>i);
   inputOrders = strategies.map(s=>s.inputs.map((_,i)=>i));
@@ -889,7 +893,12 @@ document.getElementById('hfChallPrevInputBtn').addEventListener('click', () => {
 document.getElementById('hfChallNextInputBtn').addEventListener('click', () => { if (hfChallPlaying) return; challInputIdx=(challInputIdx+1)%challChallenges[challIdx].inputs.length; hfChallRenderManual(); });
 
 function showHandsfreeChallenges() {
-  challChallenges = challengesCollections[activeCollectionKey] || [];
+  const _rawChall = challengesCollections[activeCollectionKey] || [];
+  challChallenges = _rawChall.map(cat => {
+    if (!window.filterInputsByBundle) return cat;
+    const filtered = window.filterInputsByBundle(cat.inputs, activeCollectionKey);
+    return Object.assign({}, cat, { inputs: filtered.length ? filtered : cat.inputs });
+  });
   if (!challChallenges.length) return;
   challIdx = 0; challInputIdx = 0;
   navToTraining('hfChallScreen');
@@ -1409,7 +1418,12 @@ document.getElementById('hfMindPrevInputBtn').addEventListener('click', () => { 
 document.getElementById('hfMindNextInputBtn').addEventListener('click', () => { if (hfMindPlaying) return; mindInputIdx=(mindInputIdx+1)%mindStrategies[mindIdx].inputs.length; hfMindRenderManual(); });
 
 function showHandsfreeMindset() {
-  mindStrategies = mindsetCollections[activeCollectionKey] || [];
+  const _rawMind = mindsetCollections[activeCollectionKey] || [];
+  mindStrategies = _rawMind.map(m => {
+    if (!window.filterInputsByBundle) return m;
+    const filtered = window.filterInputsByBundle(m.inputs, activeCollectionKey);
+    return Object.assign({}, m, { inputs: filtered.length ? filtered : m.inputs });
+  });
   if (!mindStrategies.length) return;
   mindIdx = 0; mindInputIdx = 0;
   navToTraining('hfMindScreen');
