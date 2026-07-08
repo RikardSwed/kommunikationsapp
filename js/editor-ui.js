@@ -7,7 +7,8 @@ let currentBundle = 'default';
 
 // ── INIT ──────────────────────────────────────────────────────────────────────
 document.addEventListener('DOMContentLoaded', () => {
-  showHome();
+  // Small delay ensures bridge script and all data are fully ready
+  setTimeout(showHome, 50);
 });
 
 // ── AUTO-SAVE ─────────────────────────────────────────────────────────────────
