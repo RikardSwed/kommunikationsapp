@@ -15,9 +15,8 @@ document.addEventListener('DOMContentLoaded', () => {
 function markDirty() {
   if (!currentPack) return;
   if (currentPack._fromApp) {
-    // Must save as new before changes are persisted
-    showSaveIndicator(null); // show prompt
-    return;
+    showSaveIndicator(null);
+    return; // never persist app pack changes
   }
   const ok = saveEditorPack(currentPack);
   showSaveIndicator(ok);
@@ -206,19 +205,26 @@ MODE: challenges
 // ── OPEN / CREATE ─────────────────────────────────────────────────────────────
 function openPack(key, source) {
   const drafts = getAllEditorPacks();
-  if (drafts[key]) {
+  if (source === 'my' && drafts[key]) {
     currentPack = drafts[key];
     currentPack._fromApp = false;
   } else {
-    // Load from app data but do NOT save to localStorage yet
+    // Load from app data — never save to localStorage
     currentPack = packFromAppData(key);
-    currentPack._fromApp = true; // flag: require Save as new before persisting
+    currentPack._fromApp = true;
   }
   setActivePack(key);
   currentMode   = MODES[0].id;
   currentStrat  = 0;
   currentBundle = 'default';
   showEditor();
+}
+
+// Reset an app pack to its original data (clears any accidental localStorage copy)
+function resetPackFromApp(key) {
+  const all = getAllEditorPacks();
+  delete all[key];
+  localStorage.setItem('ds_editor_packs', JSON.stringify(all));
 }
 
 function createNewPack() {
@@ -242,15 +248,17 @@ function showEditor() {
 }
 
 function renderPackHeader() {
+  const isApp = !!currentPack._fromApp;
   setHTML('pack-header', `
     <div class="pack-title-row">
       <span class="pack-title">${escHtml(currentPack.name)}</span>
-      <button class="icon-btn" id="rename-btn" title="Rename">✎</button>
+      ${isApp ? '<span class="app-pack-badge">App pack — read only</span>' : `<button class="icon-btn" id="rename-btn" title="Rename">✎</button>`}
       <span id="save-indicator" style="font-size:12px;color:#8A6040;margin-left:8px;opacity:0;transition:opacity .3s;"></span>
     </div>
     <div class="pack-actions">
       <button class="btn btn--ghost btn--sm" id="back-btn">← All packs</button>
-      <button class="btn btn--secondary btn--sm" id="version-btn">Save version…</button>
+      ${isApp ? `<button class="btn btn--ghost btn--sm" id="reset-btn">↺ Reset to original</button>` : ''}
+      <button class="btn btn--secondary btn--sm" id="version-btn">${isApp ? 'Save as new…' : 'Save version…'}</button>
       <button class="btn btn--primary btn--sm" id="export-btn">Export JSON</button>
     </div>`);
 
@@ -262,6 +270,12 @@ function renderPackHeader() {
     renderPackHeader();
   });
   document.getElementById('back-btn').onclick = showHome;
+  const resetBtn = document.getElementById('reset-btn');
+  if (resetBtn) resetBtn.onclick = () => {
+    if (!confirm('Reset to original app data? This removes any changes you made here.')) return;
+    resetPackFromApp(currentPack.key);
+    openPack(currentPack.key, 'app');
+  };
   document.getElementById('version-btn').onclick = () => {
     if (currentPack._fromApp) {
       const name = prompt('Save as new pack name:', currentPack.name + ' (copy)');
@@ -313,7 +327,7 @@ function renderModeTabs() {
 function renderModeContent() {
   const mode     = MODES.find(m => m.id === currentMode);
   const modeData = currentPack[currentMode] || emptyModeData(currentMode);
-  if (!currentPack[currentMode]) { currentPack[currentMode] = modeData; markDirty(); }
+  if (!currentPack[currentMode]) { currentPack[currentMode] = modeData; if (!currentPack._fromApp) saveEditorPack(currentPack); }
 
   const strats  = modeData.strategies || [];
   const bundles = modeData.bundles    || [];
@@ -326,16 +340,18 @@ function renderModeContent() {
   let html = `<div class="mode-body">`;
 
   // ── Strategy / category selector
+  const readOnly = !!currentPack._fromApp;
   html += `
     <div class="field-block">
       <label class="field-label">${mode.stratLabel}</label>
       <div class="selector-row">
-        <select class="select" id="strat-select">
+        <select class="select" id="strat-select" ${readOnly ? 'disabled' : ''}>
           ${strats.map((s,i) => `<option value="${i}" ${i===currentStrat?'selected':''}>${escHtml(s.name||'(unnamed)')}</option>`).join('')}
         </select>
-        <button class="icon-btn" id="strat-rename-btn" title="Rename">✎</button>
+        ${!readOnly ? `
+        <button class="icon-btn" id="strat-rename-btn" title="Rename ${mode.stratLabel}">✎</button>
         <button class="btn btn--ghost btn--sm" id="add-strat-btn">+ Add</button>
-        <button class="icon-btn danger" id="del-strat-btn" title="Delete">✕</button>
+        <button class="icon-btn danger" id="del-strat-btn" title="Delete">✕</button>` : ''}
       </div>
     </div>`;
 
@@ -347,7 +363,7 @@ function renderModeContent() {
           Explanation
           <span class="hint-text">${strat.description ? '— has content' : '— empty'}</span>
         </summary>
-        <textarea class="textarea" id="desc-ta" rows="7" placeholder="Explain this ${mode.stratLabel.toLowerCase()}...">${escHtml(strat.description||'')}</textarea>
+        <textarea class="textarea" id="desc-ta" rows="7" ${readOnly ? 'readonly' : ''} placeholder="Explain this ${mode.stratLabel.toLowerCase()}...">${escHtml(strat.description||'')}</textarea>
       </details>
     </div>`;
 
@@ -385,11 +401,11 @@ function renderModeContent() {
       </div>
       ${items.map((item, i) => `
         <div class="card-row" data-index="${i}">
-          <textarea class="card-ta" data-field="q" rows="2" placeholder="${frontLabel}...">${escHtml(item.q||item.front||'')}</textarea>
-          <textarea class="card-ta" data-field="a" rows="2" placeholder="${backLabel}...">${escHtml(item.a||item.back||'')}</textarea>
-          <button class="icon-btn danger card-del" data-index="${i}" title="Remove">✕</button>
+          <textarea class="card-ta" data-field="q" rows="2" ${readOnly ? 'readonly' : ''} placeholder="${frontLabel}...">${escHtml(item.q||item.front||'')}</textarea>
+          <textarea class="card-ta" data-field="a" rows="2" ${readOnly ? 'readonly' : ''} placeholder="${backLabel}...">${escHtml(item.a||item.back||'')}</textarea>
+          ${!readOnly ? `<button class="icon-btn danger card-del" data-index="${i}" title="Remove">✕</button>` : '<span></span>'}
         </div>`).join('')}
-      <button class="btn btn--ghost add-card-btn" style="width:100%;margin-top:8px;">+ Add ${mode.cardLabel.toLowerCase()}</button>
+      ${!readOnly ? `<button class="btn btn--ghost add-card-btn" style="width:100%;margin-top:8px;">+ Add ${mode.cardLabel.toLowerCase()}</button>` : ''}
     </div>`;
 
   html += `</div>`; // mode-body
