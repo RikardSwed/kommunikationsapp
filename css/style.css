@@ -1952,3 +1952,57 @@ body.pb-enabled .divider::after {
   text-align: center;
   padding-bottom: 8px;
 }
+
+/* ── FOLDERS ────────────────────────────────────────────────────────────── */
+.folders-header {
+  display: flex; align-items: center; justify-content: space-between;
+  margin-bottom: 20px;
+}
+.folders-title { font-size: 18px; font-weight: 700; }
+.btn-add-folder {
+  background: var(--acc); color: #fff; border: none;
+  border-radius: 20px; padding: 12px 22px; font-size: 16px; font-weight: 600; cursor: pointer;
+}
+.folders-empty { color: #999; font-size: 16px; padding: 40px 0; text-align: center; }
+.folder-item { margin-bottom: 14px; }
+.folder-header-row {
+  display: flex; align-items: center; justify-content: space-between;
+  background: var(--ds-card); border: 1px solid var(--ds-border);
+  border-radius: 12px; padding: 16px 18px;
+}
+.folder-toggle-btn {
+  display: flex; align-items: center; gap: 14px;
+  background: none; border: none; cursor: pointer; flex: 1; text-align: left;
+  min-height: 44px;
+}
+.folder-chevron { font-size: 13px; color: #999; width: 16px; display: inline-block; }
+.folder-name { font-size: 17px; font-weight: 600; }
+.folder-count { font-size: 15px; color: #999; margin-left: 4px; }
+.folder-actions { display: flex; gap: 10px; flex-shrink: 0; }
+.folder-btn {
+  width: 44px; height: 44px; border: 1px solid var(--ds-border);
+  border-radius: 8px; background: none; cursor: pointer; font-size: 20px;
+  color: #888; display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.folder-btn.danger:hover { border-color: #C0392B; color: #C0392B; }
+.folder-body {
+  padding: 12px 0 6px 16px; border-left: 3px solid var(--ds-border);
+  margin-left: 18px; margin-top: 6px;
+}
+.folder-empty-msg { font-size: 15px; color: #bbb; padding: 12px 0; }
+.folder-pack-row { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+.folder-pack-card { flex: 1; margin-bottom: 0 !important; }
+.folder-remove-pack {
+  width: 44px; height: 44px; flex-shrink: 0;
+  border: 1px solid var(--ds-border); border-radius: 8px;
+  background: none; cursor: pointer; font-size: 20px; color: #aaa;
+  display: flex; align-items: center; justify-content: center;
+}
+.folder-remove-pack:hover { border-color: #C0392B; color: #C0392B; }
+.folder-add-pack-btn {
+  margin-top: 10px; background: none; border: 1px dashed var(--ds-border);
+  border-radius: 10px; padding: 14px 18px; font-size: 16px; color: #999;
+  cursor: pointer; width: 100%;
+}
+.folder-add-pack-btn:hover { border-color: var(--acc); color: var(--acc); }
