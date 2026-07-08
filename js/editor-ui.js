@@ -58,47 +58,43 @@ function renderPackList() {
   const appPacks    = loadAppPacks();
   const editorPacks = getAllEditorPacks();
   const appKeys     = new Set(appPacks.map(p => p.key));
-  const draftKeys   = Object.keys(editorPacks).filter(k => !appKeys.has(k));
+  const myKeys      = Object.keys(editorPacks).filter(k => !appKeys.has(k));
 
-  let html = '';
-
-  if (draftKeys.length) {
-    html += `<div class="list-label">In progress</div>`;
-    draftKeys.forEach(key => {
-      html += packRow(editorPacks[key].name, key, 'draft');
-    });
-  }
+  let appHtml = '';
+  let myHtml  = '';
 
   if (appPacks.length) {
-    html += `<div class="list-label">App packs</div>`;
-    appPacks.forEach(p => {
-      const hasDraft = !!editorPacks[p.key];
-      html += packRow(editorPacks[p.key]?.name || p.name, p.key, hasDraft ? 'modified' : 'app');
-    });
+    appPacks.forEach(p => { appHtml += packRow(p.name, p.key, 'app'); });
   } else {
-    const debug = Object.keys(window._dsCollections||{});
-    html += `<div class="empty-state">
-      No app packs found.<br>
-      <small style="color:#bbb">_dsCollections keys: ${debug.length ? debug.join(', ') : 'none'}</small>
-    </div>`;
+    const debug = Object.keys(window._dsCollections || {});
+    appHtml = `<div class="empty-state">No app packs found.<br>
+      <small style="color:#aaa">_dsCollections: ${debug.length ? debug.join(', ') : 'none'}</small></div>`;
   }
 
-  setHTML('pack-list', html);
-  // Import buttons in home header
-  const importJsonBtn  = document.getElementById('import-json-btn');
-  const importTextBtn  = document.getElementById('import-text-btn');
-  const jsonFileInput  = document.getElementById('json-file-input');
-  if (importJsonBtn)  importJsonBtn.addEventListener('click',  () => jsonFileInput && jsonFileInput.click());
-  if (jsonFileInput)  jsonFileInput.addEventListener('change', handleJsonFileImport);
-  if (importTextBtn)  importTextBtn.addEventListener('click',  showPasteDialog);
+  if (myKeys.length) {
+    myKeys.forEach(key => { myHtml += packRow(editorPacks[key].name, key, 'my'); });
+  } else {
+    myHtml = `<div class="empty-state-small">No packs yet. Create one or import from AI.</div>`;
+  }
+
+  setHTML('pack-list-app', appHtml);
+  setHTML('pack-list-my',  myHtml);
+
+  // Import buttons
+  const importJsonBtn = document.getElementById('import-json-btn');
+  const importTextBtn = document.getElementById('import-text-btn');
+  const jsonFileInput = document.getElementById('json-file-input');
+  if (importJsonBtn) importJsonBtn.onclick = () => jsonFileInput && jsonFileInput.click();
+  if (jsonFileInput) jsonFileInput.addEventListener('change', handleJsonFileImport);
+  if (importTextBtn) importTextBtn.onclick = showPasteDialog;
 
   document.querySelectorAll('.pack-row').forEach(el => {
-    el.addEventListener('click', () => openPack(el.dataset.key));
+    el.addEventListener('click', () => openPack(el.dataset.key, el.dataset.source));
   });
   document.querySelectorAll('.pack-del').forEach(btn => {
     btn.addEventListener('click', e => {
       e.stopPropagation();
-      if (confirm(`Delete draft "${btn.dataset.name}"? This cannot be undone.`)) {
+      if (confirm(`Delete "${btn.dataset.name}"? This cannot be undone.`)) {
         deleteEditorPack(btn.dataset.key);
         renderPackList();
       }
