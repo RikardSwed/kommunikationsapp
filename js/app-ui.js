@@ -992,3 +992,226 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
     setTimeout(() => { splash.style.display = 'none'; }, 500);
   }, 1500);
 })();
+
+// ─── FOLDERS ──────────────────────────────────────────────────────────────────
+(function initFolders() {
+  const FOLDERS_KEY = 'ds_folders';
+
+  // ── Storage ─────────────────────────────────────────────────────────────────
+  function getFolders() {
+    try { return JSON.parse(localStorage.getItem(FOLDERS_KEY) || '[]'); } catch { return []; }
+  }
+  function saveFolders(folders) {
+    localStorage.setItem(FOLDERS_KEY, JSON.stringify(folders));
+  }
+  function newFolder(name) {
+    return { id: Date.now().toString(36), name, packs: [] };
+  }
+
+  // ── All available packs (from collection-cards in Packs tab) ──────────────
+  function getAllPacks() {
+    const cards = document.querySelectorAll('#libTabPacks .collection-card');
+    const packs = [];
+    cards.forEach(c => {
+      if (c.dataset.key && c.dataset.label) {
+        packs.push({ key: c.dataset.key, label: c.dataset.label });
+      }
+    });
+    return packs;
+  }
+
+  // ── Render ──────────────────────────────────────────────────────────────────
+  function render() {
+    const container = document.getElementById('libTabFolders');
+    if (!container) return;
+    const folders = getFolders();
+
+    let html = '<div class="folders-header">'
+      + '<span class="folders-title">My Folders</span>'
+      + '<button class="btn-add-folder" id="btn-new-folder">+ New folder</button>'
+      + '</div>';
+
+    if (!folders.length) {
+      html += '<div class="folders-empty">No folders yet. Create one to organise your packs.</div>';
+    } else {
+      folders.forEach((folder, fi) => {
+        html += '<div class="folder-item" data-fi="' + fi + '">'
+          + '<div class="folder-header-row">'
+          + '<button class="folder-toggle-btn" data-fi="' + fi + '">'
+          + '<span class="folder-chevron" id="chev-' + fi + '">&#9654;</span>'
+          + '<span class="folder-name">' + escHtml(folder.name) + '</span>'
+          + '<span class="folder-count">(' + folder.packs.length + ')</span>'
+          + '</button>'
+          + '<div class="folder-actions">'
+          + '<button class="folder-btn" data-fi="' + fi + '" data-action="rename" title="Rename">&#9998;</button>'
+          + '<button class="folder-btn danger" data-fi="' + fi + '" data-action="delete" title="Delete folder">&#x2715;</button>'
+          + '</div>'
+          + '</div>'
+          + '<div class="folder-body" id="folder-body-' + fi + '" style="display:none;">';
+
+        if (!folder.packs.length) {
+          html += '<div class="folder-empty-msg">No packs in this folder yet.</div>';
+        } else {
+          folder.packs.forEach((pack, pi) => {
+            html += '<div class="folder-pack-row">'
+              + '<div class="collection-card folder-pack-card" data-key="' + pack.key + '" data-label="' + escHtml(pack.label) + '">'
+              + '<div><div class="collection-name">' + escHtml(pack.label) + '</div></div>'
+              + '<div class="collection-arrow">&#x203a;</div>'
+              + '</div>'
+              + '<button class="folder-remove-pack" data-fi="' + fi + '" data-pi="' + pi + '" title="Remove from folder">&#x2715;</button>'
+              + '</div>';
+          });
+        }
+
+        html += '<button class="folder-add-pack-btn" data-fi="' + fi + '">+ Add pack</button>'
+          + '</div>'
+          + '</div>';
+      });
+    }
+
+    container.className = 'library-tab-content';
+    container.innerHTML = html;
+    bindEvents(folders);
+  }
+
+  function escHtml(s) {
+    return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  }
+
+  // ── Bind events ─────────────────────────────────────────────────────────────
+  function bindEvents(folders) {
+    // New folder
+    const newBtn = document.getElementById('btn-new-folder');
+    if (newBtn) newBtn.addEventListener('click', () => {
+      const name = prompt('Folder name:');
+      if (!name || !name.trim()) return;
+      folders.push(newFolder(name.trim()));
+      saveFolders(folders);
+      render();
+    });
+
+    // Toggle open/close
+    document.querySelectorAll('.folder-toggle-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const fi   = btn.dataset.fi;
+        const body = document.getElementById('folder-body-' + fi);
+        const chev = document.getElementById('chev-' + fi);
+        if (!body) return;
+        const open = body.style.display === 'none';
+        body.style.display = open ? 'block' : 'none';
+        chev.innerHTML = open ? '&#9660;' : '&#9654;';
+      });
+    });
+
+    // Folder actions (rename, delete)
+    document.querySelectorAll('.folder-btn').forEach(btn => {
+      btn.addEventListener('click', e => {
+        e.stopPropagation();
+        const fi     = parseInt(btn.dataset.fi);
+        const action = btn.dataset.action;
+        if (action === 'rename') {
+          const name = prompt('New name:', folders[fi].name);
+          if (!name || !name.trim()) return;
+          folders[fi].name = name.trim();
+          saveFolders(folders);
+          render();
+        } else if (action === 'delete') {
+          if (!confirm('Delete folder "' + folders[fi].name + '"? Packs will not be removed from the app.')) return;
+          folders.splice(fi, 1);
+          saveFolders(folders);
+          render();
+        }
+      });
+    });
+
+    // Remove pack from folder
+    document.querySelectorAll('.folder-remove-pack').forEach(btn => {
+      btn.addEventListener('click', e => {
+        e.stopPropagation();
+        const fi = parseInt(btn.dataset.fi);
+        const pi = parseInt(btn.dataset.pi);
+        folders[fi].packs.splice(pi, 1);
+        saveFolders(folders);
+        render();
+        // Re-open the folder
+        const body = document.getElementById('folder-body-' + fi);
+        const chev = document.getElementById('chev-' + fi);
+        if (body) { body.style.display = 'block'; if (chev) chev.innerHTML = '&#9660;'; }
+      });
+    });
+
+    // Pack card click — open mode screen
+    document.querySelectorAll('.folder-pack-card').forEach(card => {
+      card.addEventListener('click', () => showModeScreen(card.dataset.key, card.dataset.label));
+    });
+
+    // Add pack to folder
+    document.querySelectorAll('.folder-add-pack-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const fi      = parseInt(btn.dataset.fi);
+        const folder  = folders[fi];
+        const allPacks = getAllPacks();
+        const existing = new Set(folder.packs.map(p => p.key));
+
+        // Build picker modal
+        let modal = document.getElementById('folder-pack-modal');
+        if (!modal) {
+          modal = document.createElement('div');
+          modal.id = 'folder-pack-modal';
+          modal.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,.45);display:flex;align-items:center;justify-content:center;z-index:300;padding:24px;';
+          document.body.appendChild(modal);
+        }
+
+        const available = allPacks.filter(p => !existing.has(p.key));
+        let pickerHtml = '<div style="background:#fff;border-radius:12px;padding:24px;max-width:480px;width:100%;max-height:70vh;overflow-y:auto;">'
+          + '<div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;">'
+          + '<strong style="font-size:16px;">Add pack to \u201c' + escHtml(folder.name) + '\u201d</strong>'
+          + '<button id="folder-modal-close" style="background:none;border:none;font-size:20px;cursor:pointer;">&#x2715;</button>'
+          + '</div>';
+
+        if (!available.length) {
+          pickerHtml += '<p style="color:#888;font-size:14px;">All available packs are already in this folder.</p>';
+        } else {
+          available.forEach(pack => {
+            pickerHtml += '<div class="folder-picker-item" data-key="' + pack.key + '" data-label="' + escHtml(pack.label) + '" '
+              + 'style="padding:12px 16px;border:1px solid #e0d8cc;border-radius:8px;margin-bottom:8px;cursor:pointer;font-size:14px;font-weight:500;">'
+              + escHtml(pack.label)
+              + '</div>';
+          });
+        }
+        pickerHtml += '</div>';
+        modal.innerHTML = pickerHtml;
+        modal.style.display = 'flex';
+
+        document.getElementById('folder-modal-close').addEventListener('click', () => { modal.style.display = 'none'; });
+        modal.addEventListener('click', e => { if (e.target === modal) modal.style.display = 'none'; });
+
+        modal.querySelectorAll('.folder-picker-item').forEach(item => {
+          item.addEventListener('mouseenter', () => { item.style.borderColor = '#B05A28'; });
+          item.addEventListener('mouseleave', () => { item.style.borderColor = '#e0d8cc'; });
+          item.addEventListener('click', () => {
+            folders[fi].packs.push({ key: item.dataset.key, label: item.dataset.label });
+            saveFolders(folders);
+            modal.style.display = 'none';
+            render();
+            const body = document.getElementById('folder-body-' + fi);
+            const chev = document.getElementById('chev-' + fi);
+            if (body) { body.style.display = 'block'; if (chev) chev.innerHTML = '&#9660;'; }
+          });
+        });
+      });
+    });
+  }
+
+  // ── Init — render when Folders tab is shown ──────────────────────────────
+  // Re-render each time tab becomes visible
+  const observer = new MutationObserver(() => {
+    const el = document.getElementById('libTabFolders');
+    if (el && el.style.display !== 'none') render();
+  });
+  const tabEl = document.getElementById('libTabFolders');
+  if (tabEl) observer.observe(tabEl, { attributes: true, attributeFilter: ['style'] });
+
+  // Also render immediately if already visible
+  render();
+})();

@@ -296,17 +296,27 @@ function setBundleState(packKey, state) {
 function getActiveBundles(packKey) {
   const defs = BUNDLE_DEFS[packKey];
   if (!defs) return null;
-  const saved = getBundleState(packKey);
-  if (saved) return saved;
-  // Auto-activate based on access level
-  const level = window.accessLevel ? window.accessLevel.getLevel() : 'freemium';
-  const isPro = (level === 'pro' || level === 'complete');
-  if (isPro) {
-    // Pro: activate free + pro bundles by default
-    return defs.filter(b => b.tier === 'free' || b.tier === 'pro').map(b => b.id);
-  }
-  // Free: only activate free-tier bundles
-  return defs.filter(b => b.tier === 'free' && b.default).map(b => b.id);
+
+  const level  = window.accessLevel ? window.accessLevel.getLevel() : 'freemium';
+  const isPro  = (level === 'pro' || level === 'complete');
+
+  // Tier bundles (free/pro) are always determined by access level — never from saved state
+  // Optional bundles (no tier, e.g. workplace) respect saved state
+  const tierBundles     = defs.filter(b => b.tier);
+  const optionalBundles = defs.filter(b => !b.tier);
+
+  // Determine active tier bundle
+  const activeTier = tierBundles
+    .filter(b => isPro ? (b.tier === 'free' || b.tier === 'pro') : b.tier === 'free')
+    .map(b => b.id);
+
+  // Determine active optional bundles from saved state
+  const saved   = getBundleState(packKey) || [];
+  const activeOptional = optionalBundles
+    .filter(b => saved.includes(b.id))
+    .map(b => b.id);
+
+  return [...activeTier, ...activeOptional];
 }
 
 // Filter inputs based on active bundles (applies to all strategies in pack)
@@ -358,11 +368,11 @@ window.renderBundleSection = function(containerEl, packKey) {
     section.appendChild(row);
 
     row.querySelector('.bundle-toggle').addEventListener('change', function() {
-      const cur = getActiveBundles(packKey);
+      // Only persist optional (non-tier) bundles — tier bundles are driven by access level
+      const saved    = getBundleState(packKey) || [];
       const newState = this.checked
-        ? [...new Set([...cur, bundle.id])]
-        : cur.filter(id => id !== bundle.id);
-      if (newState.length === 0) { this.checked = true; return; }
+        ? [...new Set([...saved, bundle.id])]
+        : saved.filter(id => id !== bundle.id);
       setBundleState(packKey, newState);
     });
 
