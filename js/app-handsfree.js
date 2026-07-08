@@ -102,6 +102,8 @@ function hfShowCard(q, a, flipped) {
   document.getElementById('hfInputText').textContent    = q;
   document.getElementById('hfAnswerText').textContent   = a;
   document.getElementById('hfCounter').textContent      = `${stratIdx + 1} / ${strategies.length}`;
+  const _hfStrat = strategies[stratOrder[stratIdx]];
+  if (_hfStrat) document.getElementById('hfSubCounter').textContent = `${inputIdx + 1} / ${_hfStrat.inputs.length}`;
   hfCardInnerEl.style.transition = 'transform 0.4s ease';
   hfCardInnerEl.classList.toggle('flipped', flipped);
 }
@@ -317,6 +319,8 @@ function hfRender() {
   document.getElementById('hfInputText').textContent    = currentInput().q;
   document.getElementById('hfAnswerText').textContent   = currentInput().a;
   document.getElementById('hfCounter').textContent      = `${stratIdx + 1} / ${strategies.length}`;
+  const _hfSt2 = strategies[stratOrder ? stratOrder[stratIdx] : stratIdx];
+  if (_hfSt2) document.getElementById('hfSubCounter').textContent = `${inputIdx + 1} / ${_hfSt2.inputs.length}`;
   hfCardInner.style.transition = 'none';
   hfCardInner.classList.remove('flipped');
 }
@@ -420,6 +424,8 @@ function hfMemShowCard(q, a, flipped) {
   document.getElementById('hfMemQuestionText').textContent = q;
   document.getElementById('hfMemAnswerText').textContent   = a;
   document.getElementById('hfMemCounter').textContent      = `${memStratIdx + 1} / ${memStrategies.length}`;
+  const _hfMemStrat = memStrategies[memStratIdx];
+  if (_hfMemStrat) document.getElementById('hfMemSubCounter').textContent = `${memCardIdx + 1} / ${_hfMemStrat.cards.length}`;
   hfMemCardInnerEl.style.transition = 'transform 0.4s ease';
   hfMemCardInnerEl.classList.toggle('flipped', flipped);
 }
@@ -596,6 +602,8 @@ function hfMemRender() {
   document.getElementById('hfMemQuestionText').textContent = memCurrentCard().q;
   document.getElementById('hfMemAnswerText').textContent   = memCurrentCard().a;
   document.getElementById('hfMemCounter').textContent      = `${memStratIdx + 1} / ${memStrategies.length}`;
+  const _hfMemSt2 = memStrategies[memStratIdx];
+  if (_hfMemSt2) document.getElementById('hfMemSubCounter').textContent = `${memCardIdx + 1} / ${_hfMemSt2.cards.length}`;
   hfMemCardInner.style.transition = 'none';
   hfMemCardInner.classList.remove('flipped');
 }
@@ -702,6 +710,8 @@ function hfChallShowCard(q, a, flipped) {
   document.getElementById('hfChallFrontText').textContent = q;
   document.getElementById('hfChallBackText').textContent  = a;
   document.getElementById('hfChallCounter').textContent   = `${challIdx + 1} / ${challChallenges.length}`;
+  const _hfCh = challChallenges[challIdx];
+  if (_hfCh) document.getElementById('hfChallSubCounter').textContent = `${challInputIdx + 1} / ${_hfCh.inputs.length}`;
   hfChallCardInnerEl.style.transition = 'transform 0.4s ease';
   hfChallCardInnerEl.classList.toggle('flipped', flipped);
 }
@@ -886,6 +896,8 @@ function showHandsfreeChallenges() {
   hfChallRenderManual();
   document.getElementById('hfChallName').textContent = challChallenges[0].name;
   document.getElementById('hfChallCounter').textContent = `1 / ${challChallenges.length}`;
+  const _hfChI = challChallenges[0];
+  if (_hfChI) document.getElementById('hfChallSubCounter').textContent = `1 / ${_hfChI.inputs.length}`;
   hfChallUpdateButtons();
 }
 
@@ -960,6 +972,7 @@ function hfFlowShowCard(item, flipped) {
   document.getElementById('hfFlowFrontText').textContent = item.front;
   document.getElementById('hfFlowBackText').textContent  = item.back;
   document.getElementById('hfFlowCounter').textContent   = `${flowComboIdx + 1} / ${flowStrategies.length}`;
+  document.getElementById('hfFlowSubCounter').textContent = `${flowCardIdx + 1} / ${flowSequence.length}`;
   hfFlowCardInnerEl.style.transition = 'transform 0.4s ease';
   hfFlowCardInnerEl.classList.toggle('flipped', flipped);
 }
@@ -1217,6 +1230,8 @@ function hfMindShowCard(q, a, flipped) {
   document.getElementById('hfMindFrontText').textContent = q;
   document.getElementById('hfMindBackText').textContent  = a;
   document.getElementById('hfMindCounter').textContent   = `${mindIdx + 1} / ${mindStrategies.length}`;
+  const _hfMind = mindStrategies[mindIdx];
+  if (_hfMind) document.getElementById('hfMindSubCounter').textContent = `${mindInputIdx + 1} / ${_hfMind.inputs.length}`;
   hfMindCardInnerEl.style.transition = 'transform 0.4s ease';
   hfMindCardInnerEl.classList.toggle('flipped', flipped);
 }
@@ -1401,6 +1416,8 @@ function showHandsfreeMindset() {
   hfMindRenderManual();
   document.getElementById('hfMindName').textContent = mindStrategies[0].name;
   document.getElementById('hfMindCounter').textContent = `1 / ${mindStrategies.length}`;
+  const _hfMindI = mindStrategies[0];
+  if (_hfMindI) document.getElementById('hfMindSubCounter').textContent = `1 / ${_hfMindI.inputs.length}`;
   hfMindUpdateButtons();
 }
 
@@ -1475,6 +1492,8 @@ function hfCollShowCard(q, a, flipped) {
   document.getElementById('hfCollFrontText').textContent = q;
   document.getElementById('hfCollBackText').textContent  = a;
   document.getElementById('hfCollCounter').textContent   = `${collIdx + 1} / ${collCollections.length}`;
+  const _hfCol = collCollections[collIdx];
+  if (_hfCol) document.getElementById('hfCollSubCounter').textContent = `${collInputIdx + 1} / ${_hfCol.inputs.length}`;
   hfCollCardInnerEl.style.transition = 'transform 0.4s ease';
   hfCollCardInnerEl.classList.toggle('flipped', flipped);
 }
@@ -1660,6 +1679,8 @@ function showHandsfreeCollections() {
   hfCollRenderManual();
   document.getElementById('hfCollName').textContent = collCollections[0].name;
   document.getElementById('hfCollCounter').textContent = `1 / ${collCollections.length}`;
+  const _hfColI = collCollections[0];
+  if (_hfColI) document.getElementById('hfCollSubCounter').textContent = `1 / ${_hfColI.inputs.length}`;
   hfCollUpdateButtons();
 }
 
