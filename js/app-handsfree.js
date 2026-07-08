@@ -260,8 +260,40 @@ document.getElementById('hfCloseBtn').addEventListener('click', () => {
   hfStop();
   closeTraining('hfScreen');
 });
+
+// Open a handsfree settings panel — renders bundle section dynamically
+function openHfSettings(overlayId, placeholderId, counterCheckboxId) {
+  if (window.renderBundleSection && activeCollectionKey) {
+    const placeholder = document.getElementById(placeholderId);
+    if (placeholder) renderBundleSection(placeholder, activeCollectionKey);
+  }
+  document.getElementById(overlayId).classList.add('open');
+}
+
+// Apply input counter visibility for all HF screens
+function applyHfInputCounterVisibility() {
+  const prefixes = ['hf','hfMem','hfChall','hfFlow','hfMind','hfColl'];
+  prefixes.forEach(prefix => {
+    const cb = document.getElementById(prefix + 'ShowInputCounter');
+    if (!cb) return;
+    const show = cb.checked;
+    // Each HF screen has sub-counter and counter-sep elements
+    const screen = document.getElementById(
+      prefix === 'hf' ? 'hfScreen' :
+      prefix === 'hfMem' ? 'hfMemScreen' :
+      prefix === 'hfChall' ? 'hfChallScreen' :
+      prefix === 'hfFlow' ? 'hfFlowScreen' :
+      prefix === 'hfMind' ? 'hfMindScreen' : 'hfCollScreen'
+    );
+    if (!screen) return;
+    screen.querySelectorAll('.sub-counter, .counter-sep').forEach(el => {
+      el.style.display = show ? 'inline' : 'none';
+    });
+  });
+}
 document.getElementById('hfSettingsBtn').addEventListener('click', () =>
-  document.getElementById('hfSettingsOverlay').classList.add('open'));
+  openHfSettings('hfSettingsOverlay', 'hfBundlePlaceholder', 'hfShowInputCounter'));
+document.getElementById('hfShowInputCounter') && document.getElementById('hfShowInputCounter').addEventListener('change', applyHfInputCounterVisibility);
 document.getElementById('hfSettingsClose').addEventListener('click', () =>
   document.getElementById('hfSettingsOverlay').classList.remove('open'));
 document.getElementById('hfSettingsOverlay').addEventListener('click', e => {
@@ -539,7 +571,8 @@ document.getElementById('hfMemCloseBtn').addEventListener('click', () => {
   closeTraining('hfMemScreen');
 });
 document.getElementById('hfMemSettingsBtn').addEventListener('click', () =>
-  document.getElementById('hfMemSettingsOverlay').classList.add('open'));
+  openHfSettings('hfMemSettingsOverlay', 'hfMemBundlePlaceholder', 'hfMemShowInputCounter'));
+document.getElementById('hfMemShowInputCounter') && document.getElementById('hfMemShowInputCounter').addEventListener('change', applyHfInputCounterVisibility);
 
 document.getElementById('hfMemSettingsClose').addEventListener('click', () =>
   document.getElementById('hfMemSettingsOverlay').classList.remove('open'));
@@ -809,7 +842,8 @@ document.getElementById('hfChallCloseBtn').addEventListener('click', () => {
   closeTraining('hfChallScreen');
 });
 document.getElementById('hfChallSettingsBtn').addEventListener('click', () =>
-  document.getElementById('hfChallSettingsOverlay').classList.add('open'));
+  openHfSettings('hfChallSettingsOverlay', 'hfChallBundlePlaceholder', 'hfChallShowInputCounter'));
+document.getElementById('hfChallShowInputCounter') && document.getElementById('hfChallShowInputCounter').addEventListener('change', applyHfInputCounterVisibility);
 document.getElementById('hfChallSettingsClose').addEventListener('click', () =>
   document.getElementById('hfChallSettingsOverlay').classList.remove('open'));
 document.getElementById('hfChallSettingsOverlay').addEventListener('click', e => {
@@ -1066,7 +1100,8 @@ document.getElementById('hfFlowCloseBtn').addEventListener('click', () => {
   closeTraining('hfFlowScreen');
 });
 document.getElementById('hfFlowSettingsBtn').addEventListener('click', () =>
-  document.getElementById('hfFlowSettingsOverlay').classList.add('open'));
+  openHfSettings('hfFlowSettingsOverlay', 'hfFlowBundlePlaceholder', 'hfFlowShowInputCounter'));
+document.getElementById('hfFlowShowInputCounter') && document.getElementById('hfFlowShowInputCounter').addEventListener('change', applyHfInputCounterVisibility);
 document.getElementById('hfFlowSettingsClose').addEventListener('click', () =>
   document.getElementById('hfFlowSettingsOverlay').classList.remove('open'));
 document.getElementById('hfFlowSettingsOverlay').addEventListener('click', e => {
@@ -1322,7 +1357,8 @@ document.getElementById('hfMindCloseBtn').addEventListener('click', () => {
   closeTraining('hfMindScreen');
 });
 document.getElementById('hfMindSettingsBtn').addEventListener('click', () =>
-  document.getElementById('hfMindSettingsOverlay').classList.add('open'));
+  openHfSettings('hfMindSettingsOverlay', 'hfMindBundlePlaceholder', 'hfMindShowInputCounter'));
+document.getElementById('hfMindShowInputCounter') && document.getElementById('hfMindShowInputCounter').addEventListener('change', applyHfInputCounterVisibility);
 document.getElementById('hfMindSettingsClose').addEventListener('click', () =>
   document.getElementById('hfMindSettingsOverlay').classList.remove('open'));
 document.getElementById('hfMindSettingsOverlay').addEventListener('click', e => {
@@ -1579,7 +1615,8 @@ document.getElementById('hfCollCloseBtn').addEventListener('click', () => {
   closeTraining('hfCollScreen');
 });
 document.getElementById('hfCollSettingsBtn').addEventListener('click', () =>
-  document.getElementById('hfCollSettingsOverlay').classList.add('open'));
+  openHfSettings('hfCollSettingsOverlay', 'hfCollBundlePlaceholder', 'hfCollShowInputCounter'));
+document.getElementById('hfCollShowInputCounter') && document.getElementById('hfCollShowInputCounter').addEventListener('change', applyHfInputCounterVisibility);
 document.getElementById('hfCollSettingsClose').addEventListener('click', () =>
   document.getElementById('hfCollSettingsOverlay').classList.remove('open'));
 document.getElementById('hfCollSettingsOverlay').addEventListener('click', e => {
@@ -1616,8 +1653,8 @@ document.getElementById('hfCollNextInputBtn').addEventListener('click', () => { 
 
 function showHandsfreeCollections() {
   const key = activeCollectionKey;
-  if (!collections[key] || !collections[key].length) return;
-  collCollections = collections[key];
+  if (!conversationalCollections[key] || !conversationalCollections[key].length) return;
+  collCollections = conversationalCollections[key];
   collIdx = 0; collInputIdx = 0;
   navToTraining('hfCollScreen');
   hfCollRenderManual();
