@@ -19,6 +19,7 @@ const PACK_ICONS = {
   startingconnecting: 'ti-users',
   listeningresponding:'ti-ear',
   influenceframing:   'ti-bulb',
+  storytelling:       'ti-book',
 };
 function packIcon(key) {
   const name = PACK_ICONS[key] || 'ti-cards';
