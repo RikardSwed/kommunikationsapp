@@ -4,7 +4,7 @@
 // app.js — All application logic for Communication Trainer
 // Depends on: data.js and multiStepData.js (must be loaded first)
 
-const VERSION = 'v1.19.6';
+const VERSION = 'v1.19.7';
 
 // Pack icon map — global so both dashboard and favorites can use it
 const PACK_ICONS = {
@@ -277,11 +277,12 @@ function launchLastMode(packKey, packLabel) {
       const el = document.getElementById(id); if (el) el.style.display = 'none';
     });
     const modeEl = document.getElementById('modeScreen');
-    if (modeEl) modeEl.style.display = 'flex';
+    if (modeEl) modeEl.style.display = 'none';
     hideBottomNav();
-    // Launch with normal slide-up animation
+    // Launch with normal slide-up animation; reveal modeScreen underneath once training has landed
     saveLastMode(packKey, lastMode);
     MODE_LAUNCHERS[lastMode]();
+    setTimeout(() => { if (modeEl) modeEl.style.display = 'flex'; }, 350);
   } else {
     showModeScreen(packKey, packLabel);
   }
