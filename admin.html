@@ -513,6 +513,12 @@
   // Debug: log what was found
   console.log('[DS Bridge] collections keys:', Object.keys(window._dsCollections));
   console.log('[DS Bridge] challenges keys:',  Object.keys(window._dsChallenges));
+  // Extra: check DOM elements exist
+  document.addEventListener('DOMContentLoaded', () => {
+    console.log('[DS] pack-list-app el:', document.getElementById('pack-list-app'));
+    console.log('[DS] pack-list-my el:',  document.getElementById('pack-list-my'));
+    console.log('[DS] loadAppPacks():', typeof loadAppPacks !== 'undefined' ? loadAppPacks() : 'not loaded yet');
+  });
 </script>
 <!-- Editor logic -->
 <script src="js/editor-core.js?v=100"></script>
