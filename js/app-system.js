@@ -258,16 +258,25 @@ applyInputCounterVisibility();
 const BUNDLE_DEFS = {
   assertive: [
     {
-      id: 'default',
-      name: 'Default Bundle',
+      id: 'free',
+      name: 'Free Bundle',
       description: 'The core inputs — everyday situations covering all strategies in this pack.',
       default: true,
+      tier: 'free',
     },
     {
-      id: 'test',
+      id: 'pro',
+      name: 'Pro Bundle',
+      description: 'Extended inputs with additional situations — included with Pro access.',
+      default: false,
+      tier: 'pro',
+    },
+    {
+      id: 'workplace',
       name: 'Workplace & Social Bundle',
       description: 'Additional inputs focused on professional and social contexts — colleagues, work situations and social judgement.',
       default: false,
+      tier: 'free',
     },
   ]
 };
@@ -289,8 +298,15 @@ function getActiveBundles(packKey) {
   if (!defs) return null;
   const saved = getBundleState(packKey);
   if (saved) return saved;
-  const defaults = defs.filter(b => b.default).map(b => b.id);
-  return defaults.length ? defaults : [defs[0].id];
+  // Auto-activate based on access level
+  const level = window.accessLevel ? window.accessLevel.getLevel() : 'freemium';
+  const isPro = (level === 'pro' || level === 'complete');
+  if (isPro) {
+    // Pro: activate free + pro bundles by default
+    return defs.filter(b => b.tier === 'free' || b.tier === 'pro').map(b => b.id);
+  }
+  // Free: only activate free-tier bundles
+  return defs.filter(b => b.tier === 'free' && b.default).map(b => b.id);
 }
 
 // Filter inputs based on active bundles (applies to all strategies in pack)
@@ -319,7 +335,13 @@ window.renderBundleSection = function(containerEl, packKey) {
 
   const active = getActiveBundles(packKey);
 
+  const level = window.accessLevel ? window.accessLevel.getLevel() : 'freemium';
+  const isPro = (level === 'pro' || level === 'complete');
   defs.forEach(bundle => {
+    // Hide free bundle for pro users (it's included automatically)
+    // Hide pro bundle for free users (not accessible)
+    if (bundle.tier === 'free' && bundle.id === 'free' && isPro) return;
+    if (bundle.tier === 'pro' && !isPro) return;
     const isOn = active.includes(bundle.id);
     const row = document.createElement('div');
     row.innerHTML = `
