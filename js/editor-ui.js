@@ -7,8 +7,11 @@ let currentBundle = 'default';
 
 // ── INIT ──────────────────────────────────────────────────────────────────────
 document.addEventListener('DOMContentLoaded', () => {
-  // Small delay ensures bridge script and all data are fully ready
-  setTimeout(showHome, 50);
+  setTimeout(() => {
+    console.log('[Editor] showHome called, appPacks:', loadAppPacks().length);
+    console.log('[Editor] pack-list-app:', document.getElementById('pack-list-app'));
+    showHome();
+  }, 200);
 });
 
 // ── AUTO-SAVE ─────────────────────────────────────────────────────────────────
