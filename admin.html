@@ -217,11 +217,13 @@
       display:     flex;
       align-items: center;
       gap:         8px;
-      flex-wrap:   nowrap;
+      flex-wrap:   wrap;
     }
-    .selector-row .select {
-      flex:      1;
-      min-width: 0;
+    .selector-row .select,
+    .selector-row select {
+      flex:      0 1 260px;
+      min-width: 120px;
+      max-width: 100%;
     }
     .field-block {
       margin-bottom: 16px;
