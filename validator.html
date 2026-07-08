@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deckstack — Datavalidator</title>
+<style>
+  body { font-family: -apple-system, Segoe UI, sans-serif; background:#F0EBE3; color:#2a2118; max-width:860px; margin:2rem auto; padding:0 1rem; }
+  h1 { font-size:1.4rem; } h2 { font-size:1.05rem; margin-top:1.6rem; }
+  .file { background:#FAF7F2; border:1px solid #d8d0c4; border-radius:10px; padding:.8rem 1rem; margin:.6rem 0; }
+  .file h3 { margin:.1rem 0 .4rem; font-size:1rem; }
+  .ok { color:#2e7d32; } .fail { color:#b3261e; } .warn { color:#a05a00; }
+  .badge { font-weight:700; }
+  ul { margin:.3rem 0 .2rem 1.2rem; padding:0; font-size:.9rem; }
+  li { margin:.15rem 0; }
+  #drop { border:2px dashed #b0a493; border-radius:10px; padding:1.4rem; text-align:center; color:#7a6f5f; margin:1rem 0; }
+  #drop.over { background:#efe6d8; border-color:#B05A28; }
+  #summary { font-size:1.05rem; font-weight:700; margin:1rem 0; }
+  code { background:#eee4d6; padding:.05rem .3rem; border-radius:4px; }
+  small { color:#7a6f5f; }
+  table { border-collapse:collapse; font-size:.85rem; margin-top:.5rem; }
+  td, th { border:1px solid #d8d0c4; padding:.25rem .55rem; text-align:center; }
+  th:first-child, td:first-child { text-align:left; }
+</style>
+</head>
+<body>
+<h1>Deckstack — Datavalidator</h1>
+<p><small>Kontrollerar att datafilerna är hela och rätt strukturerade, och att alla app-filer är syntaktiskt giltiga. Kör den här sidan från GitHub Pages (eller en lokal server) för automatisk kontroll — eller dra och släpp js-filer nedan.</small></p>
+<div id="drop">Släpp js-filer här för att validera lokalt (utan server)</div>
+<div id="summary"></div>
+<div id="results"></div>
+<h2 id="matrixHead" style="display:none">Pack-täckning per datafil</h2>
+<div id="matrix"></div>
+
+<script>
+const DATA_SPECS = {
+  'data.js':           { constName:'collections',           entry: entryCollections },
+  'challengesData.js': { constName:'challengesCollections', entry: entryCollections },
+  'mindsetData.js':    { constName:'mindsetCollections',    entry: entryCollections },
+  'multiStepData.js':  { constName:'multiStepCollections',  entry: entryMultiStep },
+  'memorizeData.js':   { constName:'memorizeCollections',   entry: entryMemorize },
+};
+const APP_FILES = ['app-core.js','app-modes.js','app-handsfree.js','app-system.js','app-ui.js'];
+const packData = {}; // constName -> Set of pack keys
+
+function isStr(x){ return typeof x === 'string' && x.length > 0; }
+
+function entryCollections(e, path, errs){
+  if (!isStr(e.name)) errs.push(path + ': saknar name');
+  if (!Array.isArray(e.inputs) || !e.inputs.length) { errs.push(path + ': saknar inputs[]'); return; }
+  e.inputs.forEach((inp, i) => {
+    if (!isStr(inp.q)) errs.push(path + '.inputs[' + i + ']: saknar q');
+    if (!isStr(inp.a)) errs.push(path + '.inputs[' + i + ']: saknar a');
+  });
+}
+function entryMultiStep(e, path, errs){
+  if (!isStr(e.name)) errs.push(path + ': saknar name');
+  if (!Array.isArray(e.inputs) || !e.inputs.length) { errs.push(path + ': saknar inputs[]'); return; }
+  e.inputs.forEach((inp, i) => {
+    const p = path + '.inputs[' + i + ']';
+    if (!isStr(inp.situation)) errs.push(p + ': saknar situation');
+    if (!Array.isArray(inp.steps) || !inp.steps.length) { errs.push(p + ': saknar steps[]'); return; }
+    inp.steps.forEach((s, j) => {
+      if (!isStr(s.front)) errs.push(p + '.steps[' + j + ']: saknar front');
+      if (!isStr(s.back))  errs.push(p + '.steps[' + j + ']: saknar back');
+    });
+  });
+}
+function entryMemorize(e, path, errs){
+  if (!isStr(e.name)) errs.push(path + ': saknar name');
+  if (!Array.isArray(e.cards) || !e.cards.length) { errs.push(path + ': saknar cards[]'); return; }
+  e.cards.forEach((c, i) => {
+    if (!isStr(c.q)) errs.push(path + '.cards[' + i + ']: saknar q');
+    if (!isStr(c.a)) errs.push(path + '.cards[' + i + ']: saknar a');
+  });
+}
+
+function validateDataFile(name, code){
+  const spec = DATA_SPECS[name];
+  const errs = [], warns = [], info = [];
+  const trimmed = code.replace(/\s+$/, '');
+  if (!trimmed.endsWith('};')) warns.push('Filen slutar inte med "};" — kontrollera att den inte är trunkerad');
+  if (!code.includes('const ' + spec.constName)) errs.push('Hittar inte "const ' + spec.constName + '"');
+  let obj = null;
+  try {
+    // Parse + execute in sandbox, return the constant
+    obj = new Function(code + '\n;return ' + spec.constName + ';')();
+  } catch (e) {
+    errs.push('Syntaxfel eller körfel: ' + e.message);
+  }
+  if (obj) {
+    const keys = Object.keys(obj);
+    if (!keys.length) errs.push(spec.constName + ' är tomt');
+    info.push(keys.length + ' packs: ' + keys.join(', '));
+    packData[spec.constName] = new Set(keys);
+    let entries = 0;
+    for (const k of keys) {
+      if (!Array.isArray(obj[k])) { errs.push('Pack "' + k + '" är inte en array'); continue; }
+      obj[k].forEach((e, i) => { entries++; spec.entry(e, k + '[' + i + ']', errs); });
+    }
+    info.push(entries + ' poster totalt');
+  }
+  return { errs, warns, info };
+}
+
+function validateAppFile(name, code){
+  const errs = [], warns = [], info = [];
+  try { new Function(code); info.push('Syntax OK (' + code.split('\n').length + ' rader)'); }
+  catch (e) { errs.push('Syntaxfel: ' + e.message); }
+  const rm = (code.match(/^registerMode\(/gm) || []).length;
+  if (rm) info.push(rm + ' registerMode-anrop');
+  return { errs, warns, info };
+}
+
+function render(name, r){
+  const div = document.createElement('div');
+  div.className = 'file';
+  const status = r.errs.length ? '<span class="badge fail">✖ FEL</span>'
+               : r.warns.length ? '<span class="badge warn">⚠ VARNING</span>'
+               : '<span class="badge ok">✔ OK</span>';
+  let html = '<h3>' + name + ' ' + status + '</h3><ul>';
+  r.errs.slice(0, 25).forEach(e => html += '<li class="fail">' + e + '</li>');
+  if (r.errs.length > 25) html += '<li class="fail">… och ' + (r.errs.length - 25) + ' fel till</li>';
+  r.warns.forEach(w => html += '<li class="warn">' + w + '</li>');
+  r.info.forEach(i => html += '<li>' + i + '</li>');
+  html += '</ul>';
+  div.innerHTML = html;
+  document.getElementById('results').appendChild(div);
+  return r.errs.length === 0;
+}
+
+function renderMatrix(){
+  const names = Object.keys(packData);
+  if (names.length < 2) return;
+  const all = new Set();
+  names.forEach(n => packData[n].forEach(k => all.add(k)));
+  let html = '<table><tr><th>Pack</th>' + names.map(n => '<th>' + n.replace('Collections','') + '</th>').join('') + '</tr>';
+  [...all].sort().forEach(k => {
+    html += '<tr><td>' + k + '</td>' + names.map(n => '<td>' + (packData[n].has(k) ? '✔' : '—') + '</td>').join('') + '</tr>';
+  });
+  html += '</table><p><small>— betyder att packet saknar data för det läget (kan vara avsiktligt).</small></p>';
+  document.getElementById('matrixHead').style.display = '';
+  document.getElementById('matrix').innerHTML = html;
+}
+
+function setSummary(pass, total){
+  const s = document.getElementById('summary');
+  s.className = pass === total ? 'ok' : 'fail';
+  s.textContent = pass === total
+    ? '✔ Alla ' + total + ' filer OK — säkert att publicera.'
+    : '✖ ' + (total - pass) + ' av ' + total + ' filer har problem — publicera INTE förrän de är lösta.';
+}
+
+function classify(name, code){
+  if (DATA_SPECS[name]) return validateDataFile(name, code);
+  return validateAppFile(name, code);
+}
+
+async function autoFetch(){
+  if (location.protocol === 'file:') {
+    document.getElementById('summary').innerHTML = '<small>Öppnad lokalt utan server — använd dra-och-släpp ovan, eller öppna validatorn via GitHub Pages.</small>';
+    return;
+  }
+  const files = [...Object.keys(DATA_SPECS), ...APP_FILES];
+  let pass = 0, total = 0;
+  for (const f of files) {
+    try {
+      const res = await fetch('js/' + f + '?nocache=' + Date.now());
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+      const code = await res.text();
+      total++;
+      if (render(f, classify(f, code))) pass++;
+    } catch (e) {
+      total++;
+      render(f, { errs:['Kunde inte hämta js/' + f + ': ' + e.message], warns:[], info:[] });
+    }
+  }
+  setSummary(pass, total);
+  renderMatrix();
+}
+
+const drop = document.getElementById('drop');
+drop.addEventListener('dragover', e => { e.preventDefault(); drop.classList.add('over'); });
+drop.addEventListener('dragleave', () => drop.classList.remove('over'));
+drop.addEventListener('drop', async e => {
+  e.preventDefault(); drop.classList.remove('over');
+  document.getElementById('results').innerHTML = '';
+  document.getElementById('matrix').innerHTML = '';
+  let pass = 0, total = 0;
+  for (const file of e.dataTransfer.files) {
+    if (!file.name.endsWith('.js')) continue;
+    const code = await file.text();
+    total++;
+    if (render(file.name, classify(file.name, code))) pass++;
+  }
+  if (total) { setSummary(pass, total); renderMatrix(); }
+});
+
+autoFetch();
+</script>
+</body>
+</html>
