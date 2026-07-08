@@ -65,10 +65,21 @@ function renderPackList() {
       html += packRow(editorPacks[p.key]?.name || p.name, p.key, hasDraft ? 'modified' : 'app');
     });
   } else {
-    html += `<div class="empty-state">No app packs found. Make sure the data files are loaded correctly.</div>`;
+    const debug = Object.keys(window._dsCollections||{});
+    html += `<div class="empty-state">
+      No app packs found.<br>
+      <small style="color:#bbb">_dsCollections keys: ${debug.length ? debug.join(', ') : 'none'}</small>
+    </div>`;
   }
 
   setHTML('pack-list', html);
+  // Import buttons in home header
+  const importJsonBtn  = document.getElementById('import-json-btn');
+  const importTextBtn  = document.getElementById('import-text-btn');
+  const jsonFileInput  = document.getElementById('json-file-input');
+  if (importJsonBtn)  importJsonBtn.addEventListener('click',  () => jsonFileInput && jsonFileInput.click());
+  if (jsonFileInput)  jsonFileInput.addEventListener('change', handleJsonFileImport);
+  if (importTextBtn)  importTextBtn.addEventListener('click',  showPasteDialog);
 
   document.querySelectorAll('.pack-row').forEach(el => {
     el.addEventListener('click', () => openPack(el.dataset.key));
@@ -96,6 +107,95 @@ function packRow(name, key, type) {
       <span class="pack-row-name">${name}${badge}</span>
       ${delBtn}
     </div>`;
+}
+
+// ── IMPORT HANDLERS ──────────────────────────────────────────────────────────
+
+function handleJsonFileImport(e) {
+  const file = e.target.files[0];
+  if (!file) return;
+  const reader = new FileReader();
+  reader.onload = ev => {
+    try {
+      const pack = importFromJSON(ev.target.result);
+      // If key exists, make unique
+      const all = getAllEditorPacks();
+      if (all[pack.key]) pack.key = pack.key + '_' + Date.now().toString(36);
+      saveEditorPack(pack);
+      showToast(`Imported "${pack.name}"`);
+      renderPackList();
+    } catch (err) {
+      alert('Import failed: ' + err.message);
+    }
+    e.target.value = '';
+  };
+  reader.readAsText(file);
+}
+
+function showPasteDialog() {
+  // Build modal
+  let modal = document.getElementById('paste-modal');
+  if (!modal) {
+    modal = document.createElement('div');
+    modal.id = 'paste-modal';
+    modal.className = 'modal-overlay';
+    modal.innerHTML = `
+      <div class="modal">
+        <div class="modal-header">
+          <h2>Import from text</h2>
+          <button class="icon-btn" id="paste-modal-close">✕</button>
+        </div>
+        <p class="modal-desc">Paste AI-generated text using the Deckstack format. <a href="#" id="show-syntax-btn">Show syntax guide</a></p>
+        <div class="syntax-guide" id="syntax-guide" style="display:none">
+<pre>PACK: Pack Name
+MODE: single
+
+## Strategy: Strategy Name
+**Explanation:** Explanation text here.
+
+- Situation: Someone says X | Response: "You say Y."
+- Situation: Another trigger | Response: "Another answer."
+
+## Strategy: Next Strategy Name
+...
+
+MODE: challenges
+## Category: Category Name
+...</pre>
+          <p style="margin-top:8px;font-size:12px;color:#8A6040;">Copy this format and give it to NotebookLM, Claude, or any AI tool. Supported modes: single, collections, memorize, sequences, challenges, mindset.</p>
+        </div>
+        <textarea class="textarea" id="paste-ta" rows="14" placeholder="Paste AI-generated text here..."></textarea>
+        <div class="modal-actions">
+          <button class="btn btn--ghost" id="paste-cancel-btn">Cancel</button>
+          <button class="btn btn--primary" id="paste-import-btn">Import</button>
+        </div>
+      </div>`;
+    document.body.appendChild(modal);
+  }
+  modal.style.display = 'flex';
+
+  document.getElementById('paste-modal-close').onclick = () => { modal.style.display = 'none'; };
+  document.getElementById('paste-cancel-btn').onclick  = () => { modal.style.display = 'none'; };
+  document.getElementById('show-syntax-btn').onclick   = e => {
+    e.preventDefault();
+    const g = document.getElementById('syntax-guide');
+    g.style.display = g.style.display === 'none' ? 'block' : 'none';
+  };
+  document.getElementById('paste-import-btn').onclick = () => {
+    const text = document.getElementById('paste-ta').value.trim();
+    if (!text) { showToast('Nothing to import'); return; }
+    try {
+      const pack = importFromText(text);
+      const all  = getAllEditorPacks();
+      if (all[pack.key]) pack.key = pack.key + '_' + Date.now().toString(36);
+      saveEditorPack(pack);
+      modal.style.display = 'none';
+      showToast(`Imported "${pack.name}"`);
+      renderPackList();
+    } catch (err) {
+      alert('Import failed: ' + err.message);
+    }
+  };
 }
 
 // ── OPEN / CREATE ─────────────────────────────────────────────────────────────
