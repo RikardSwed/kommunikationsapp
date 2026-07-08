@@ -13,6 +13,11 @@ document.addEventListener('DOMContentLoaded', () => {
 // ── AUTO-SAVE ─────────────────────────────────────────────────────────────────
 function markDirty() {
   if (!currentPack) return;
+  if (currentPack._fromApp) {
+    // Must save as new before changes are persisted
+    showSaveIndicator(null); // show prompt
+    return;
+  }
   const ok = saveEditorPack(currentPack);
   showSaveIndicator(ok);
 }
@@ -20,10 +25,16 @@ function markDirty() {
 function showSaveIndicator(ok) {
   const el = document.getElementById('save-indicator');
   if (!el) return;
-  el.textContent = ok ? '✓ Saved' : '⚠ Save failed';
+  if (ok === null) {
+    el.textContent = '⚠ Save as new to keep changes';
+    el.style.color = 'var(--acc)';
+  } else {
+    el.textContent = ok ? '✓ Saved' : '⚠ Save failed';
+    el.style.color = ok ? 'var(--txt2)' : 'var(--danger)';
+  }
   el.style.opacity = '1';
   clearTimeout(el._t);
-  el._t = setTimeout(() => { el.style.opacity = '0'; }, 1800);
+  el._t = setTimeout(() => { el.style.opacity = '0'; }, 3000);
 }
 
 // ── SCREENS ───────────────────────────────────────────────────────────────────
@@ -96,15 +107,12 @@ function renderPackList() {
 }
 
 function packRow(name, key, type) {
-  const badge = type === 'modified' ? `<span class="badge badge--mod">Unsaved changes</span>`
-              : type === 'draft'    ? `<span class="badge badge--draft">Draft</span>`
-              : '';
-  const delBtn = (type !== 'app')
-    ? `<button class="icon-btn pack-del" data-key="${key}" data-name="${name}" title="Delete draft">✕</button>`
+  const delBtn = (type === 'my')
+    ? `<button class="icon-btn pack-del" data-key="${key}" data-name="${name}" title="Delete">✕</button>`
     : '';
   return `
-    <div class="pack-row" data-key="${key}">
-      <span class="pack-row-name">${name}${badge}</span>
+    <div class="pack-row" data-key="${key}" data-source="${type}">
+      <span class="pack-row-name">${name}</span>
       ${delBtn}
     </div>`;
 }
@@ -199,10 +207,16 @@ MODE: challenges
 }
 
 // ── OPEN / CREATE ─────────────────────────────────────────────────────────────
-function openPack(key) {
+function openPack(key, source) {
   const drafts = getAllEditorPacks();
-  currentPack  = drafts[key] || packFromAppData(key);
-  if (!drafts[key]) saveEditorPack(currentPack);
+  if (drafts[key]) {
+    currentPack = drafts[key];
+    currentPack._fromApp = false;
+  } else {
+    // Load from app data but do NOT save to localStorage yet
+    currentPack = packFromAppData(key);
+    currentPack._fromApp = true; // flag: require Save as new before persisting
+  }
   setActivePack(key);
   currentMode   = MODES[0].id;
   currentStrat  = 0;
@@ -252,10 +266,28 @@ function renderPackHeader() {
   });
   document.getElementById('back-btn').addEventListener('click', showHome);
   document.getElementById('version-btn').addEventListener('click', () => {
-    const name = prompt('Version name (e.g. "Added workplace bundle"):');
-    if (!name?.trim()) return;
-    saveVersion(currentPack, name.trim());
-    showToast('Version saved');
+    if (currentPack._fromApp) {
+      // Must save as new name — will move to My packs
+      const name = prompt('Save as new pack name:', currentPack.name + ' (copy)');
+      if (!name?.trim()) return;
+      const newKey = slugify(name.trim()) + '_' + Date.now().toString(36);
+      currentPack = JSON.parse(JSON.stringify(currentPack));
+      currentPack.name    = name.trim();
+      currentPack.key     = newKey;
+      currentPack._fromApp = false;
+      currentPack.isNew   = true;
+      currentPack.createdAt = Date.now();
+      currentPack.versions  = [];
+      saveEditorPack(currentPack);
+      setActivePack(newKey);
+      renderPackHeader();
+      showToast('Saved as "' + name.trim() + '" in My packs');
+    } else {
+      const name = prompt('Version name (e.g. "Added workplace bundle"):');
+      if (!name?.trim()) return;
+      saveVersion(currentPack, name.trim());
+      showToast('Version saved');
+    }
   });
   document.getElementById('export-btn').addEventListener('click', () => downloadExport(currentPack));
 }
