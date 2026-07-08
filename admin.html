@@ -489,20 +489,30 @@
 <div id="editor-toast"></div>
 
 <!-- Load app data files so editor can read existing packs -->
-<script src="js/data.js?v=1201"></script>
-<script src="js/challengesData.js?v=1201"></script>
-<script src="js/mindsetData.js?v=1201"></script>
-<script src="js/multiStepData.js?v=1201"></script>
-<script src="js/memorizeData.js?v=1201"></script>
+<script src="js/data.js"></script>
+<script src="js/challengesData.js"></script>
+<script src="js/mindsetData.js"></script>
+<script src="js/multiStepData.js"></script>
+<script src="js/memorizeData.js"></script>
 
 
 <!-- Bridge: expose data variables on window so editor-core can read them -->
 <script>
-  window._dsCollections         = typeof collections         !== 'undefined' ? collections         : {};
-  window._dsChallenges          = typeof challengesCollections !== 'undefined' ? challengesCollections : {};
-  window._dsMindset             = typeof mindsetCollections  !== 'undefined' ? mindsetCollections  : {};
-  window._dsMultiStep           = typeof multiStepCollections !== 'undefined' ? multiStepCollections : {};
-  window._dsMemorize            = typeof memorizeCollections !== 'undefined' ? memorizeCollections : {};
+  // const declarations at top level in classic scripts ARE on window in browsers,
+  // but to be safe we try direct access first, then fall back gracefully.
+  function _dsGet(name) {
+    try { return window[name] !== undefined ? window[name] : eval(name); }
+    catch(e) { return {}; }
+  }
+  window._dsCollections = _dsGet('collections');
+  window._dsChallenges  = _dsGet('challengesCollections');
+  window._dsMindset     = _dsGet('mindsetCollections');
+  window._dsMultiStep   = _dsGet('multiStepCollections');
+  window._dsMemorize    = _dsGet('memorizeCollections');
+
+  // Debug: log what was found
+  console.log('[DS Bridge] collections keys:', Object.keys(window._dsCollections));
+  console.log('[DS Bridge] challenges keys:',  Object.keys(window._dsChallenges));
 </script>
 <!-- Editor logic -->
 <script src="js/editor-core.js?v=100"></script>
