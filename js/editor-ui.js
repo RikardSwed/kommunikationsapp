@@ -254,29 +254,31 @@ function renderPackHeader() {
       <button class="btn btn--primary btn--sm" id="export-btn">Export JSON</button>
     </div>`);
 
-  document.getElementById('rename-btn').addEventListener('click', () => {
+  document.getElementById('rename-btn').onclick = () => {
     const name = prompt('New name:', currentPack.name);
     if (!name?.trim()) return;
     currentPack.name = name.trim();
     markDirty();
     renderPackHeader();
   });
-  document.getElementById('back-btn').addEventListener('click', showHome);
-  document.getElementById('version-btn').addEventListener('click', () => {
+  document.getElementById('back-btn').onclick = showHome;
+  document.getElementById('version-btn').onclick = () => {
     if (currentPack._fromApp) {
-      // Must save as new name — will move to My packs
       const name = prompt('Save as new pack name:', currentPack.name + ' (copy)');
       if (!name?.trim()) return;
-      const newKey = slugify(name.trim()) + '_' + Date.now().toString(36);
-      currentPack = JSON.parse(JSON.stringify(currentPack));
-      currentPack.name    = name.trim();
-      currentPack.key     = newKey;
+      // Create a new independent copy in My packs
+      const slug   = name.trim().toLowerCase().replace(/[^a-z0-9]+/g,'').slice(0,28);
+      const newKey = slug + '_' + Date.now().toString(36);
+      currentPack          = JSON.parse(JSON.stringify(currentPack));
+      currentPack.name     = name.trim();
+      currentPack.key      = newKey;
       currentPack._fromApp = false;
-      currentPack.isNew   = true;
+      currentPack.isNew    = true;
       currentPack.createdAt = Date.now();
       currentPack.versions  = [];
       saveEditorPack(currentPack);
       setActivePack(newKey);
+      // Re-render header so title and indicator update
       renderPackHeader();
       showToast('Saved as "' + name.trim() + '" in My packs');
     } else {
@@ -285,8 +287,8 @@ function renderPackHeader() {
       saveVersion(currentPack, name.trim());
       showToast('Version saved');
     }
-  });
-  document.getElementById('export-btn').addEventListener('click', () => downloadExport(currentPack));
+  };
+  document.getElementById('export-btn').onclick = () => downloadExport(currentPack);
 }
 
 // ── MODE TABS ─────────────────────────────────────────────────────────────────
