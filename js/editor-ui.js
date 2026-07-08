@@ -139,6 +139,80 @@ function handleJsonFileImport(e) {
   reader.readAsText(file);
 }
 
+function showSyntaxGuide() {
+  var lines = [
+    'PACK: Pack Name Here','',
+    '# -- SINGLE STRATEGY -----------------------------------',
+    'MODE: single','',
+    '## Strategy: Strategy Name',
+    '**Explanation:** Explain the strategy. What is it, when and why?','',
+    'BUNDLE: default',
+    '- Situation: Describe the trigger | Response: The response here.',
+    '- Situation: Another situation | Response: Another response.','',
+    'BUNDLE: Workplace & Social',
+    '- Situation: A workplace situation | Response: A workplace response.','',
+    '## Strategy: Next Strategy Name',
+    '**Explanation:** Explanation here.','',
+    'BUNDLE: default',
+    '- Situation: Situation | Response: Response.','',
+    '# -- COLLECTIONS ---------------------------------------',
+    'MODE: collections','',
+    '## Collection: Collection Name',
+    '**Explanation:** What does this collection cover?','',
+    'BUNDLE: default',
+    '- Situation: Situation | Response: Response.','',
+    '# -- MEMORIZE ------------------------------------------',
+    'MODE: memorize','',
+    '## Strategy: Strategy Name',
+    '**Explanation:** What should the user memorize?','',
+    '- Front: Term or concept | Back: Definition or explanation.',
+    '- Front: Another term | Back: Its explanation.','',
+    '# -- SEQUENCES -----------------------------------------',
+    'MODE: sequences','',
+    '## Combo: Combo Name',
+    '**Explanation:** Describe this combination and when to use it.','',
+    '- Prompt: Step 1 | Response: What to say or do.',
+    '- Prompt: Step 2 | Response: What to say or do.','',
+    '# -- CHALLENGES ----------------------------------------',
+    'MODE: challenges','',
+    '## Category: Category Name',
+    '**Explanation:** What kind of challenge is this?','',
+    'BUNDLE: default',
+    '- Situation: Challenge description | Response: Ideal response.','',
+    '# -- MINDSET -------------------------------------------',
+    'MODE: mindset','',
+    '## Mindset: Mindset Name',
+    '**Explanation:** What mindset shift does this represent?','',
+    'BUNDLE: default',
+    '- Situation: Situation or thought | Response: Reframed response.'
+  ];
+  var tmpl = lines.join('\n');
+  var rules = [
+    '<li><code>PACK:</code> - Pack name, one line at the top</li>',
+    '<li><code>MODE:</code> - one of: <code>single, collections, memorize, sequences, challenges, mindset</code></li>',
+    '<li><code>##</code> - new strategy / category / combo heading</li>',
+    '<li><code>**Explanation:**</code> - descriptive text, can be several sentences</li>',
+    '<li><code>BUNDLE:</code> - bundle name. <code>default</code> is always included. Add extras with any name.</li>',
+    '<li><code>-</code> - one card: <code>Situation: X | Response: Y</code> (or Front/Back for Memorize, Prompt/Response for Sequences)</li>',
+    '<li>You do not need all modes - only include the ones relevant to your pack</li>'
+  ].join('');
+  var modal = document.getElementById('syntax-modal');
+  if (!modal) { modal = document.createElement('div'); modal.id = 'syntax-modal'; modal.className = 'modal-overlay'; document.body.appendChild(modal); }
+  modal.innerHTML =
+    '<div class="modal modal--wide">' +
+      '<div class="modal-header"><h2>Import Syntax Guide</h2><button class="icon-btn" id="sg-close">&#x2715;</button></div>' +
+      '<p class="modal-desc">Give this format to any AI tool (Claude, NotebookLM, ChatGPT) to generate importable packs.</p>' +
+      '<button class="btn btn--primary btn--sm" id="sg-copy" style="margin-bottom:16px;">Copy full template</button>' +
+      '<div class="syntax-section"><h3>Rules</h3><ul class="syntax-rules">' + rules + '</ul></div>' +
+      '<div class="syntax-section"><h3>Full template</h3><pre class="syntax-pre" id="sg-tmpl"></pre></div>' +
+      '<div class="modal-actions"><button class="btn btn--ghost" id="sg-done">Close</button></div>' +
+    '</div>';
+  modal.style.display = 'flex';
+  document.getElementById('sg-tmpl').textContent = tmpl;
+  document.getElementById('sg-close').onclick = function() { modal.style.display = 'none'; };
+  document.getElementById('sg-done').onclick  = function() { modal.style.display = 'none'; };
+  document.getElementById('sg-copy').onclick  = function() { navigator.clipboard.writeText(tmpl).then(function() { showToast('Template copied!'); }); };
+}
 function showPasteDialog() {
   // Build modal
   let modal = document.getElementById('paste-modal');
