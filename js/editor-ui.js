@@ -252,29 +252,39 @@ function showEditor() {
 
 function renderPackHeader() {
   const isApp = !!currentPack._fromApp;
-  setHTML('pack-header', `
-    <div class="pack-title-row">
-      <span class="pack-title">${escHtml(currentPack.name)}</span>
-      ${isApp ? '<span class="app-pack-badge">App pack — read only</span>' : `<button class="icon-btn" id="rename-btn" title="Rename">✎</button>`}
-      <span id="save-indicator" style="font-size:12px;color:#8A6040;margin-left:8px;opacity:0;transition:opacity .3s;"></span>
-    </div>
-    <div class="pack-actions">
-      <button class="btn btn--ghost btn--sm" id="back-btn">← All packs</button>
-      ${isApp ? `<button class="btn btn--ghost btn--sm" id="reset-btn">↺ Reset to original</button>` : ''}
-      <button class="btn btn--secondary btn--sm" id="version-btn">${isApp ? 'Save as new…' : 'Save version…'}</button>
-      <button class="btn btn--primary btn--sm" id="export-btn">Export JSON</button>
-    </div>`);
+  const titleExtra  = isApp
+    ? '<span class="app-pack-badge">App pack — read only</span>'
+    : '<button class="icon-btn" id="rename-btn" title="Rename">✎</button>';
+  const resetBtn    = isApp
+    ? '<button class="btn btn--ghost btn--sm" id="reset-btn">↺ Reset to original</button>'
+    : '';
+  const versionLabel = isApp ? 'Save as new…' : 'Save version…';
 
-  document.getElementById('rename-btn').onclick = () => {
+  setHTML('pack-header',
+    '<div class="pack-title-row">' +
+      '<span class="pack-title">' + escHtml(currentPack.name) + '</span>' +
+      titleExtra +
+      '<span id="save-indicator" style="font-size:12px;color:#8A6040;margin-left:8px;opacity:0;transition:opacity .3s;"></span>' +
+    '</div>' +
+    '<div class="pack-actions">' +
+      '<button class="btn btn--ghost btn--sm" id="back-btn">← All packs</button>' +
+      resetBtn +
+      '<button class="btn btn--secondary btn--sm" id="version-btn">' + versionLabel + '</button>' +
+      '<button class="btn btn--primary btn--sm" id="export-btn">Export JSON</button>' +
+    '</div>'
+  );
+
+  const renameBtn = document.getElementById('rename-btn');
+  if (renameBtn) renameBtn.onclick = () => {
     const name = prompt('New name:', currentPack.name);
     if (!name?.trim()) return;
     currentPack.name = name.trim();
     markDirty();
     renderPackHeader();
-  });
+  };
   document.getElementById('back-btn').onclick = showHome;
-  const resetBtn = document.getElementById('reset-btn');
-  if (resetBtn) resetBtn.onclick = () => {
+  const resetBtnEl = document.getElementById('reset-btn');
+  if (resetBtnEl) resetBtnEl.onclick = () => {
     if (!confirm('Reset to original app data? This removes any changes you made here.')) return;
     resetPackFromApp(currentPack.key);
     openPack(currentPack.key, 'app');
