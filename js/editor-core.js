@@ -1,35 +1,30 @@
 // editor-core.js — Deckstack Pack Editor
-// Handles data structures, localStorage persistence, and JSON export
+// Depends on: data.js, challengesData.js, mindsetData.js, multiStepData.js, memorizeData.js
 
 const EDITOR_VERSION = 'v1.0.0';
-const STORAGE_KEY    = 'ds_editor_packs';   // all editor drafts
-const ACTIVE_KEY     = 'ds_editor_active';  // key of currently open pack
+const STORAGE_KEY    = 'ds_editor_packs';
+const ACTIVE_KEY     = 'ds_editor_active';
 
 // ── MODE DEFINITIONS ──────────────────────────────────────────────────────────
 
 const MODES = [
-  { id: 'single',      label: 'Single Strategy',  dataKey: 'collections'          },
-  { id: 'collections', label: 'Collections',       dataKey: 'collectionsData'      },
-  { id: 'memorize',    label: 'Memorize',          dataKey: 'memorizeCollections'  },
-  { id: 'sequences',   label: 'Sequences',         dataKey: 'multiStepCollections' },
-  { id: 'challenges',  label: 'Challenges',        dataKey: 'challengesCollections'},
-  { id: 'mindset',     label: 'Mindset',           dataKey: 'mindsetCollections'   },
+  { id: 'single',      label: 'Single Strategy',  stratLabel: 'Strategy', cardLabel: 'Card'  },
+  { id: 'collections', label: 'Collections',       stratLabel: 'Collection', cardLabel: 'Card' },
+  { id: 'memorize',    label: 'Memorize',          stratLabel: 'Strategy', cardLabel: 'Card'  },
+  { id: 'sequences',   label: 'Sequences',         stratLabel: 'Combo',    cardLabel: 'Step'  },
+  { id: 'challenges',  label: 'Challenges',        stratLabel: 'Category', cardLabel: 'Card'  },
+  { id: 'mindset',     label: 'Mindset',           stratLabel: 'Mindset',  cardLabel: 'Card'  },
 ];
 
 // ── DEFAULT STRUCTURES ────────────────────────────────────────────────────────
 
-function emptyInput()    { return { q: '', a: '', bundle: 'default' }; }
-function emptyCard()     { return { q: '', a: '' }; }
-function emptyStrategy(modeId) {
-  const base = { name: '', description: '', inputs: [emptyInput()] };
-  if (modeId === 'memorize')    return { name: '', description: '', cards: [emptyCard()] };
-  if (modeId === 'sequences')   return { name: '', description: '', steps: [emptyInput()] };
-  if (modeId === 'collections') return { name: '', description: '', inputs: [emptyInput()] };
-  return base;
-}
+function emptyInput()  { return { q: '', a: '', bundle: 'default' }; }
+function emptyCard()   { return { q: '', a: '' }; }
 
-function emptyBundle(name) {
-  return { id: slugify(name), name, inputs: [emptyInput()] };
+function emptyStrategy(modeId) {
+  if (modeId === 'memorize')  return { name: '', description: '', cards:  [emptyCard()]  };
+  if (modeId === 'sequences') return { name: '', description: '', steps:  [emptyInput()] };
+  return                             { name: '', description: '', inputs: [emptyInput()] };
 }
 
 function emptyModeData(modeId) {
@@ -49,95 +44,81 @@ function slugify(str) {
   return str.toLowerCase().replace(/[^a-z0-9]+/g, '').slice(0, 32) || 'pack';
 }
 
-// ── LOAD APP PACKS (read-only source) ────────────────────────────────────────
+// ── LOAD APP PACKS ────────────────────────────────────────────────────────────
 // Reads from the global data objects loaded by the app's own data files.
-// Returns an array of pack descriptors with live data references.
+// Uses direct variable references (not window.*) since const at top-level
+// may not be enumerable on window in all environments.
 
-function loadAppPacks() {
-  const packs = [];
-  const keys  = Object.keys(window.collections || {});
-  keys.forEach(key => {
-    packs.push({
-      key,
-      name:   key.charAt(0).toUpperCase() + key.slice(1).replace(/([A-Z])/g, ' $1'),
-      source: 'app',
-    });
-  });
-  return packs;
+function getAppData(varName) {
+  // Try window first, then eval as fallback
+  try { return window[varName] || eval(varName); } catch { return null; }
 }
 
-// Build a full editor pack from live app data for a given key
+function loadAppPacks() {
+  const src = getAppData('collections');
+  if (!src) return [];
+  return Object.keys(src).map(key => ({ key, name: packDisplayName(key), source: 'app' }));
+}
+
+function packDisplayName(key) {
+  // Convert camelCase/lowercase key to readable name
+  return key.replace(/([A-Z])/g, ' $1')
+            .replace(/^./, c => c.toUpperCase())
+            .trim();
+}
+
+// Build a full editor pack from live app data
 function packFromAppData(key) {
-  const name = key.charAt(0).toUpperCase() + key.slice(1).replace(/([A-Z])/g, ' $1');
-  const pack = { key, name, isNew: false, source: 'app', createdAt: Date.now(), versions: [] };
+  const pack = {
+    key,
+    name:      packDisplayName(key),
+    isNew:     false,
+    source:    'app',
+    createdAt: Date.now(),
+    versions:  [],
+  };
+
+  function mapInputs(arr) {
+    return (arr || []).map(i => ({ q: i.q || '', a: i.a || '', bundle: i.bundle || 'default' }));
+  }
+  function mapCards(arr) {
+    return (arr || []).map(c => ({ q: c.q || '', a: c.a || '' }));
+  }
+  function deriveBundles(strategies) {
+    const ids = new Set();
+    strategies.forEach(s => (s.inputs || []).forEach(i => { if (i.bundle && i.bundle !== 'default') ids.add(i.bundle); }));
+    return [...ids].map(id => ({ id, name: id.charAt(0).toUpperCase() + id.slice(1).replace(/-/g, ' ') }));
+  }
 
   // Single Strategy
-  const raw = (window.collections || {})[key] || [];
-  pack.single = {
-    strategies: raw.map(s => ({
-      name:        s.name        || '',
-      description: s.description || '',
-      inputs:      (s.inputs || []).map(i => ({ q: i.q || '', a: i.a || '', bundle: i.bundle || 'default' })),
-    })),
-    bundles: [],
-  };
-  // Derive extra bundles from input bundle tags
-  const bundleIds = new Set();
-  pack.single.strategies.forEach(s => s.inputs.forEach(i => { if (i.bundle && i.bundle !== 'default') bundleIds.add(i.bundle); }));
-  bundleIds.forEach(id => { pack.single.bundles.push({ id, name: id.charAt(0).toUpperCase() + id.slice(1).replace(/-/g,' '), inputs: [] }); });
+  const rawSingle = (getAppData('collections') || {})[key] || [];
+  const singleStrats = rawSingle.map(s => ({ name: s.name || '', description: s.description || '', inputs: mapInputs(s.inputs) }));
+  pack.single = { strategies: singleStrats, bundles: deriveBundles(singleStrats) };
+
+  // Collections (same source as single for now)
+  pack.collections = { strategies: singleStrats.map(s => ({...s, inputs: [...s.inputs]})), bundles: [] };
 
   // Challenges
-  const chall = (window.challengesCollections || {})[key] || [];
-  pack.challenges = {
-    strategies: chall.map(c => ({
-      name:        c.name        || '',
-      description: c.description || '',
-      inputs:      (c.inputs || []).map(i => ({ q: i.q || '', a: i.a || '', bundle: i.bundle || 'default' })),
-    })),
-    bundles: [],
-  };
+  const rawChall = (getAppData('challengesCollections') || {})[key] || [];
+  const challStrats = rawChall.map(s => ({ name: s.name || '', description: s.description || '', inputs: mapInputs(s.inputs) }));
+  pack.challenges = { strategies: challStrats, bundles: deriveBundles(challStrats) };
 
   // Mindset
-  const mind = (window.mindsetCollections || {})[key] || [];
-  pack.mindset = {
-    strategies: mind.map(m => ({
-      name:        m.name        || '',
-      description: m.description || '',
-      inputs:      (m.inputs || []).map(i => ({ q: i.q || '', a: i.a || '', bundle: i.bundle || 'default' })),
-    })),
-    bundles: [],
-  };
+  const rawMind = (getAppData('mindsetCollections') || {})[key] || [];
+  const mindStrats = rawMind.map(s => ({ name: s.name || '', description: s.description || '', inputs: mapInputs(s.inputs) }));
+  pack.mindset = { strategies: mindStrats, bundles: deriveBundles(mindStrats) };
 
   // Memorize
-  const mem = (window.memorizeCollections || {})[key] || [];
+  const rawMem = (getAppData('memorizeCollections') || {})[key] || [];
   pack.memorize = {
-    strategies: mem.map(s => ({
-      name:        s.name        || '',
-      description: s.description || '',
-      cards:       (s.cards || []).map(c => ({ q: c.q || '', a: c.a || '' })),
-    })),
+    strategies: rawMem.map(s => ({ name: s.name || '', description: s.description || '', cards: mapCards(s.cards) })),
     bundles: [],
   };
 
   // Sequences
-  const seq = (window.multiStepCollections || {})[key] || [];
+  const rawSeq = (getAppData('multiStepCollections') || {})[key] || [];
   pack.sequences = {
-    strategies: seq.map(s => ({
-      name:        s.name        || '',
-      description: s.description || '',
-      steps:       (s.steps || s.inputs || []).map(i => ({ q: i.q || '', a: i.a || '' })),
-    })),
-    bundles: [],
-  };
-
-  // Collections (conversational)
-  const coll = (window.collections || {})[key] || [];
-  pack.collections = {
-    strategies: coll.map(s => ({
-      name:        s.name        || '',
-      description: s.description || '',
-      inputs:      (s.inputs || []).map(i => ({ q: i.q || '', a: i.a || '', bundle: i.bundle || 'default' })),
-    })),
+    strategies: rawSeq.map(s => ({ name: s.name || '', description: s.description || '', steps: mapInputs(s.steps || s.inputs) })),
     bundles: [],
   };
 
@@ -153,7 +134,8 @@ function getAllEditorPacks() {
 function saveEditorPack(pack) {
   const all = getAllEditorPacks();
   all[pack.key] = pack;
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(all));
+  try { localStorage.setItem(STORAGE_KEY, JSON.stringify(all)); } catch { return false; }
+  return true;
 }
 
 function deleteEditorPack(key) {
@@ -165,12 +147,11 @@ function deleteEditorPack(key) {
 function setActivePack(key) { localStorage.setItem(ACTIVE_KEY, key); }
 function getActivePack()    { return localStorage.getItem(ACTIVE_KEY) || null; }
 
-// Save a named version snapshot
 function saveVersion(pack, versionName) {
-  const snapshot = JSON.parse(JSON.stringify(pack));
+  const snapshot      = JSON.parse(JSON.stringify(pack));
   snapshot.versionName = versionName;
   snapshot.savedAt     = Date.now();
-  pack.versions = pack.versions || [];
+  pack.versions        = pack.versions || [];
   pack.versions.push(snapshot);
   saveEditorPack(pack);
 }
@@ -179,12 +160,7 @@ function saveVersion(pack, versionName) {
 
 function exportPack(pack) {
   const out = {
-    meta: {
-      key:       pack.key,
-      name:      pack.name,
-      exportedAt: new Date().toISOString(),
-      editorVersion: EDITOR_VERSION,
-    },
+    meta: { key: pack.key, name: pack.name, exportedAt: new Date().toISOString(), editorVersion: EDITOR_VERSION },
     data: {},
   };
   MODES.forEach(m => { if (pack[m.id]) out.data[m.id] = pack[m.id]; });
@@ -192,12 +168,9 @@ function exportPack(pack) {
 }
 
 function downloadExport(pack) {
-  const json = exportPack(pack);
-  const blob = new Blob([json], { type: 'application/json' });
+  const blob = new Blob([exportPack(pack)], { type: 'application/json' });
   const url  = URL.createObjectURL(blob);
   const a    = document.createElement('a');
-  a.href     = url;
-  a.download = `deckstack-pack-${pack.key}-${Date.now()}.json`;
-  a.click();
-  URL.revokeObjectURL(url);
+  a.href = url; a.download = `deckstack-pack-${pack.key}-${Date.now()}.json`;
+  a.click(); URL.revokeObjectURL(url);
 }
