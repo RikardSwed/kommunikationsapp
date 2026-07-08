@@ -356,6 +356,43 @@
     /* ── BUNDLE ROW ── */
     .bundle-row { padding: 14px 16px; background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); }
 
+
+    /* ── TWO-COLUMN HOME ── */
+    #screen-home { max-width: 1100px; margin: 0 auto; }
+    .pack-columns {
+      display:   grid;
+      grid-template-columns: 1fr 1fr;
+      gap:       32px;
+      margin-top: 8px;
+    }
+    .column-header {
+      display:       flex;
+      align-items:   baseline;
+      gap:           10px;
+      margin-bottom: 12px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border);
+    }
+    .column-title  { font-size: 14px; font-weight: 700; color: var(--txt); }
+    .column-hint   { font-size: 12px; color: var(--txt3); }
+    .pack-row {
+      display:       flex;
+      align-items:   center;
+      background:    var(--card);
+      border:        1px solid var(--border);
+      border-radius: var(--radius);
+      padding:       13px 16px;
+      cursor:        pointer;
+      margin-bottom: 6px;
+      transition:    border-color .15s, background .15s;
+      user-select:   none;
+    }
+    .pack-row:hover {
+      border-color:  var(--acc);
+      background:    var(--acc-light);
+    }
+    .pack-row-name { flex: 1; font-weight: 500; font-size: 14px; pointer-events: none; }
+    .empty-state-small { font-size: 13px; color: var(--txt3); padding: 16px 0; }
     /* ── MODAL ── */
     .modal-overlay {
       display:         none;
@@ -406,14 +443,14 @@
 
   <!-- Topbar -->
   <div class="topbar">
-    <span class="topbar-title">Deckstack — Pack Editor</span>
+    <span class="topbar-title" onclick="showHome()" style="cursor:pointer;" title="Back to home">Deckstack — Pack Editor</span>
     <span class="topbar-version">Editor v1.0.0 · Changes saved automatically</span>
   </div>
 
   <!-- Home screen -->
   <div class="screen" id="screen-home">
     <div class="home-header">
-      <h1>Packs</h1>
+      <h1>Pack Editor</h1>
       <div class="home-actions">
         <input type="file" id="json-file-input" accept=".json" style="display:none">
         <button class="btn btn--ghost btn--sm" id="import-text-btn">Paste from AI</button>
@@ -421,7 +458,22 @@
         <button class="btn btn--primary" onclick="createNewPack()">+ New pack</button>
       </div>
     </div>
-    <div id="pack-list"></div>
+    <div class="pack-columns">
+      <div class="pack-column">
+        <div class="column-header">
+          <span class="column-title">App packs</span>
+          <span class="column-hint">Click to open and edit</span>
+        </div>
+        <div id="pack-list-app"></div>
+      </div>
+      <div class="pack-column">
+        <div class="column-header">
+          <span class="column-title">My packs</span>
+          <span class="column-hint">Drafts and saved edits</span>
+        </div>
+        <div id="pack-list-my"></div>
+      </div>
+    </div>
   </div>
 
   <!-- Editor screen -->
