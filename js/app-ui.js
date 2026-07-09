@@ -112,13 +112,70 @@ document.querySelectorAll('.nav-tab').forEach(btn => {
 
 (function initDashboard() {
   // ── All packs available for search ──────────────────────────────────────
-  const ALL_PACKS = [
-    { key: 'assertive',      label: 'Assertive Communication' },
-    { key: 'humour',         label: 'Humour Practise' },
-    { key: 'teasing',        label: 'Teasing & Playfulness' },
-    { key: 'criticism',      label: 'Criticism & Correction' },
-    { key: 'conversational', label: 'Conversational Skills' }
-  ];
+  // Built dynamically from collection-cards so new packs are included automatically
+  function buildPackList() {
+    const cards = document.querySelectorAll('#libTabPacks .collection-card');
+    const packs = [];
+    cards.forEach(c => {
+      if (c.dataset.key && c.dataset.label) packs.push({ key: c.dataset.key, label: c.dataset.label });
+    });
+    return packs;
+  }
+
+  // Build a search index from live app data — strategy names, descriptions, inputs
+  function buildSearchIndex(packs) {
+    return packs.map(pack => {
+      const key    = pack.key;
+      const label  = pack.label;
+      const strats = [];
+      const terms  = [label.toLowerCase()];
+
+      // Single strategy / collections data
+      const src = (typeof collections !== 'undefined' ? collections[key] : null) || [];
+      src.forEach(s => {
+        if (s.name)        { terms.push(s.name.toLowerCase()); strats.push(s.name); }
+        if (s.description) terms.push(s.description.toLowerCase());
+        (s.inputs || []).forEach(i => {
+          if (i.q) terms.push(i.q.toLowerCase());
+          if (i.a) terms.push(i.a.toLowerCase());
+        });
+      });
+
+      // Challenges
+      const chall = (typeof challengesCollections !== 'undefined' ? challengesCollections[key] : null) || [];
+      chall.forEach(c => {
+        if (c.name) { terms.push(c.name.toLowerCase()); if (!strats.includes(c.name)) strats.push(c.name); }
+        if (c.description) terms.push(c.description.toLowerCase());
+        (c.inputs || []).forEach(i => { if (i.q) terms.push(i.q.toLowerCase()); });
+      });
+
+      // Mindset
+      const mind = (typeof mindsetCollections !== 'undefined' ? mindsetCollections[key] : null) || [];
+      mind.forEach(m => {
+        if (m.name) { terms.push(m.name.toLowerCase()); if (!strats.includes(m.name)) strats.push(m.name); }
+        if (m.description) terms.push(m.description.toLowerCase());
+      });
+
+      // Memorize
+      const mem = (typeof memorizeCollections !== 'undefined' ? memorizeCollections[key] : null) || [];
+      mem.forEach(s => {
+        if (s.name) { terms.push(s.name.toLowerCase()); }
+        (s.cards || []).forEach(c => { if (c.q) terms.push(c.q.toLowerCase()); });
+      });
+
+      // Tags from packTags
+      const tags = (typeof packTags !== 'undefined' && packTags[key]) ? packTags[key] : [];
+      tags.forEach(t => terms.push(t.toLowerCase()));
+
+      return { key, label, terms, strats, tags };
+    });
+  }
+
+  let _searchIndex = null;
+  function getSearchIndex() {
+    if (!_searchIndex) _searchIndex = buildSearchIndex(buildPackList());
+    return _searchIndex;
+  }
 
   const RECENT_KEY  = 'dash_recent_searches';
   const LASTPACK_KEY = 'dash_last_pack';
@@ -220,10 +277,37 @@ document.querySelectorAll('.nav-tab').forEach(btn => {
   // ── Search results render ─────────────────────────────────────────────────
   function runSearch(query) {
     const q = query.trim().toLowerCase();
-    const hits = q ? ALL_PACKS.filter(p => p.label.toLowerCase().includes(q)) : [];
+    if (!q) { searchResults.innerHTML = ''; noResults.style.display = 'none'; return; }
+
+    const index = getSearchIndex();
+    const hits  = [];
+
+    index.forEach(pack => {
+      // Find which terms matched
+      const matchedStrats = pack.strats.filter(s => s.toLowerCase().includes(q));
+      const termMatch     = pack.terms.some(t => t.includes(q));
+      if (!termMatch && !matchedStrats.length) return;
+
+      // Build subtitle showing what matched
+      let subtitle = '';
+      const matchedTags = (pack.tags || []).filter(t => t.toLowerCase().includes(q));
+      if (matchedStrats.length) {
+        const shown = matchedStrats.slice(0, 3).join(', ');
+        subtitle = shown + (matchedStrats.length > 3 ? ' +' + (matchedStrats.length - 3) + ' more' : '');
+      } else if (matchedTags.length) {
+        subtitle = 'Tag: ' + matchedTags.slice(0, 3).join(', ');
+      } else if (!pack.label.toLowerCase().includes(q)) {
+        subtitle = 'Match in content';
+      }
+      hits.push({ key: pack.key, label: pack.label, subtitle });
+    });
+
     searchResults.innerHTML = hits.map(p =>
       `<div class="collection-card dash-result-card" data-key="${p.key}" data-label="${p.label.replace(/"/g,'&quot;')}">
-        <div><div class="collection-name">${p.label}</div></div>
+        <div>
+          <div class="collection-name">${p.label}</div>
+          ${p.subtitle ? `<div class="collection-meta" style="margin-top:2px;">${p.subtitle}</div>` : ''}
+        </div>
         <div class="collection-arrow">›</div>
        </div>`
     ).join('');
