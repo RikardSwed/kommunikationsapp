@@ -4,7 +4,7 @@
 // app.js — All application logic for Communication Trainer
 // Depends on: data.js and multiStepData.js (must be loaded first)
 
-const VERSION = 'v1.21.6';
+const VERSION = 'v1.21.7';
 
 // Pack icon map — global so both dashboard and favorites can use it
 const PACK_ICONS = {
@@ -191,6 +191,8 @@ function showModeScreen(key, label) {
   if (window.progEndSession) progEndSession();
   navToMode();
   if (window.progStartSession) progStartSession(key, label);
+  // Update next-pack arrow visibility now that screen is shown
+  updateNextBtn();
 }
 
 // Set the navigation context (called by Library, Folders, Programs)
