@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
   <title>Deckstack</title>
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="stylesheet" href="css/style.css?v=1218" />
+  <link rel="stylesheet" href="css/style.css?v=1219" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
 </head>
 <body>
@@ -252,7 +252,7 @@
         <button id="progResetBtn" class="prog-reset-btn">Reset all progress data…</button>
       </div>
     </div>
-    <div class="settings-version">v1.21.8</div>
+    <div class="settings-version">v1.21.9</div>
     <button class="settings-close" id="progressSettingsClose">Done</button>
   </div>
 </div>
@@ -651,16 +651,11 @@
 </div>
 <div class="mode-screen" id="modeScreen" style="display:none;">
   <div class="mode-topbar">
-    <button class="topbar-btn" id="modeBackBtn" aria-label="Back">&#8592;</button>
-    <div class="mode-topbar-center">
-      <button class="topbar-btn mode-pin-btn" id="modePinBtn" aria-label="Pin this pack">
-        <i class="ti ti-pin"></i>
-      </button>
-      <button class="topbar-btn" id="modePackSettingsBtn" aria-label="Pack settings">
-        <i class="ti ti-settings"></i>
-      </button>
-    </div>
-    <button class="topbar-btn" id="modeNextBtn" aria-label="Next pack" style="visibility:hidden;">&#8594;</button>
+    <button class="topbar-btn" id="modeBackBtn">←</button>
+    <button class="topbar-btn mode-pin-btn" id="modePinBtn" aria-label="Pin this pack">
+      <i class="ti ti-pin"></i>
+    </button>
+    <button class="topbar-btn" id="modeNextBtn" aria-label="Next pack" style="display:none;">&#8594;</button>
   </div>
   <div class="mode-header">
     <div class="mode-collection-name" id="modeCollectionName"></div>
@@ -803,8 +798,8 @@
   <div class="card-area">
     <div class="card" id="card">
       <div class="card-inner" id="cardInner">
-        <div class="card-face card-front"><p class="card-text" id="inputText"></p><div class="fb-bar" id="fb-single-front"><button class="fb-btn" data-val="1"></button><button class="fb-btn" data-val="2"></button><button class="fb-btn" data-val="3"></button><button class="fb-btn" data-val="4"></button></div></div>
-        <div class="card-face card-back"><p class="card-text" id="answerText"></p><div class="fb-bar" id="fb-single-back"><button class="fb-btn" data-val="1"></button><button class="fb-btn" data-val="2"></button><button class="fb-btn" data-val="3"></button><button class="fb-btn" data-val="4"></button></div></div>
+        <div class="card-face card-front"><p class="card-text" id="inputText"></p><div class="fb-bar" id="fb-single-front"><button class="fb-btn" data-val="1"></button><button class="fb-btn" data-val="2"></button><button class="fb-btn" data-val="3"></button><button class="fb-btn" data-val="4"></button></div><div class="al-bar" id="al-single-front"><button class="al-btn" data-val="1">Free</button><button class="al-btn" data-val="2">Pro</button><button class="al-btn" data-val="3">Ext</button></div></div>
+        <div class="card-face card-back"><p class="card-text" id="answerText"></p><div class="fb-bar" id="fb-single-back"><button class="fb-btn" data-val="1"></button><button class="fb-btn" data-val="2"></button><button class="fb-btn" data-val="3"></button><button class="fb-btn" data-val="4"></button></div><div class="al-bar" id="al-single-back"><button class="al-btn" data-val="1">Free</button><button class="al-btn" data-val="2">Pro</button><button class="al-btn" data-val="3">Ext</button></div></div>
       </div>
       <div class="card-info" id="cardInfo">
         <button class="card-info-close" id="cardInfoClose">✕</button>
@@ -837,8 +832,8 @@
   <div class="card-area">
     <div class="card" id="memCard">
       <div class="card-inner" id="memCardInner">
-        <div class="card-face card-front"><p class="card-text" id="memQuestionText"></p><div class="fb-bar" id="fb-mem-front"><button class="fb-btn" data-val="1"></button><button class="fb-btn" data-val="2"></button><button class="fb-btn" data-val="3"></button><button class="fb-btn" data-val="4"></button></div></div>
-        <div class="card-face card-back"><p class="card-text mem-back-text" id="memAnswerText"></p><div class="fb-bar" id="fb-mem-back"><button class="fb-btn" data-val="1"></button><button class="fb-btn" data-val="2"></button><button class="fb-btn" data-val="3"></button><button class="fb-btn" data-val="4"></button></div></div>
+        <div class="card-face card-front"><p class="card-text" id="memQuestionText"></p><div class="fb-bar" id="fb-mem-front"><button class="fb-btn" data-val="1"></button><button class="fb-btn" data-val="2"></button><button class="fb-btn" data-val="3"></button><button class="fb-btn" data-val="4"></button></div><div class="al-bar" id="al-mem-front"><button class="al-btn" data-val="1">Free</button><button class="al-btn" data-val="2">Pro</button><button class="al-btn" data-val="3">Ext</button></div></div>
+        <div class="card-face card-back"><p class="card-text mem-back-text" id="memAnswerText"></p><div class="fb-bar" id="fb-mem-back"><button class="fb-btn" data-val="1"></button><button class="fb-btn" data-val="2"></button><button class="fb-btn" data-val="3"></button><button class="fb-btn" data-val="4"></button></div><div class="al-bar" id="al-mem-back"><button class="al-btn" data-val="1">Free</button><button class="al-btn" data-val="2">Pro</button><button class="al-btn" data-val="3">Ext</button></div></div>
       </div>
       <div class="card-info" id="memCardInfo">
         <button class="card-info-close" id="memCardInfoClose">✕</button>
@@ -904,8 +899,8 @@
   <div class="card-area">
     <div class="card" id="flowCard">
       <div class="card-inner" id="flowCardInner">
-        <div class="card-face card-front"><p class="card-text" id="flowFrontText"></p><div class="fb-bar" id="fb-flow-front"><button class="fb-btn" data-val="1"></button><button class="fb-btn" data-val="2"></button><button class="fb-btn" data-val="3"></button><button class="fb-btn" data-val="4"></button></div></div>
-        <div class="card-face card-back"><p class="card-text mem-back-text" id="flowBackText"></p><div class="fb-bar" id="fb-flow-back"><button class="fb-btn" data-val="1"></button><button class="fb-btn" data-val="2"></button><button class="fb-btn" data-val="3"></button><button class="fb-btn" data-val="4"></button></div></div>
+        <div class="card-face card-front"><p class="card-text" id="flowFrontText"></p><div class="fb-bar" id="fb-flow-front"><button class="fb-btn" data-val="1"></button><button class="fb-btn" data-val="2"></button><button class="fb-btn" data-val="3"></button><button class="fb-btn" data-val="4"></button></div><div class="al-bar" id="al-flow-front"><button class="al-btn" data-val="1">Free</button><button class="al-btn" data-val="2">Pro</button><button class="al-btn" data-val="3">Ext</button></div></div>
+        <div class="card-face card-back"><p class="card-text mem-back-text" id="flowBackText"></p><div class="fb-bar" id="fb-flow-back"><button class="fb-btn" data-val="1"></button><button class="fb-btn" data-val="2"></button><button class="fb-btn" data-val="3"></button><button class="fb-btn" data-val="4"></button></div><div class="al-bar" id="al-flow-back"><button class="al-btn" data-val="1">Free</button><button class="al-btn" data-val="2">Pro</button><button class="al-btn" data-val="3">Ext</button></div></div>
       </div>
       <div class="card-info" id="flowCardInfo">
         <button class="card-info-close" id="flowCardInfoClose">✕</button>
@@ -1204,7 +1199,7 @@
       <label>Progress bar</label>
       <label class="toggle"><input type="checkbox" id="showProgressBar" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.21.8</div>
+    <div class="settings-version">v1.21.9</div>
     <button class="settings-close" id="settingsClose">Done</button>
   </div>
 </div>
@@ -1277,7 +1272,7 @@
       <label>Loop current strategy</label>
       <label class="toggle"><input type="checkbox" id="hfLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.21.8</div>
+    <div class="settings-version">v1.21.9</div>
     <button class="settings-close" id="hfSettingsClose">Done</button>
   </div>
 </div>
@@ -1346,7 +1341,7 @@
       <label>Loop current strategy</label>
       <label class="toggle"><input type="checkbox" id="hfMemLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.21.8</div>
+    <div class="settings-version">v1.21.9</div>
     <button class="settings-close" id="hfMemSettingsClose">Done</button>
   </div>
 </div>
@@ -1415,7 +1410,7 @@
       <label>Loop current category</label>
       <label class="toggle"><input type="checkbox" id="hfChallLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.21.8</div>
+    <div class="settings-version">v1.21.9</div>
     <button class="settings-close" id="hfChallSettingsClose">Done</button>
   </div>
 </div>
@@ -1473,7 +1468,7 @@
       <label>Loop current combo</label>
       <label class="toggle"><input type="checkbox" id="hfFlowLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.21.8</div>
+    <div class="settings-version">v1.21.9</div>
     <button class="settings-close" id="hfFlowSettingsClose">Done</button>
   </div>
 </div>
@@ -1542,7 +1537,7 @@
       <label>Loop current mindset</label>
       <label class="toggle"><input type="checkbox" id="hfMindLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.21.8</div>
+    <div class="settings-version">v1.21.9</div>
     <button class="settings-close" id="hfMindSettingsClose">Done</button>
   </div>
 </div>
@@ -1611,7 +1606,7 @@
       <label>Loop current collection</label>
       <label class="toggle"><input type="checkbox" id="hfCollLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.21.8</div>
+    <div class="settings-version">v1.21.9</div>
     <button class="settings-close" id="hfCollSettingsClose">Done</button>
   </div>
 </div>
@@ -1632,8 +1627,8 @@
   <div class="card-area">
     <div class="card" id="challCard">
       <div class="card-inner" id="challCardInner">
-        <div class="card-face card-front"><p class="card-text" id="challFrontText"></p><div class="fb-bar" id="fb-chall-front"><button class="fb-btn" data-val="1"></button><button class="fb-btn" data-val="2"></button><button class="fb-btn" data-val="3"></button><button class="fb-btn" data-val="4"></button></div></div>
-        <div class="card-face card-back"><p class="card-text" id="challBackText"></p><div class="fb-bar" id="fb-chall-back"><button class="fb-btn" data-val="1"></button><button class="fb-btn" data-val="2"></button><button class="fb-btn" data-val="3"></button><button class="fb-btn" data-val="4"></button></div></div>
+        <div class="card-face card-front"><p class="card-text" id="challFrontText"></p><div class="fb-bar" id="fb-chall-front"><button class="fb-btn" data-val="1"></button><button class="fb-btn" data-val="2"></button><button class="fb-btn" data-val="3"></button><button class="fb-btn" data-val="4"></button></div><div class="al-bar" id="al-chall-front"><button class="al-btn" data-val="1">Free</button><button class="al-btn" data-val="2">Pro</button><button class="al-btn" data-val="3">Ext</button></div></div>
+        <div class="card-face card-back"><p class="card-text" id="challBackText"></p><div class="fb-bar" id="fb-chall-back"><button class="fb-btn" data-val="1"></button><button class="fb-btn" data-val="2"></button><button class="fb-btn" data-val="3"></button><button class="fb-btn" data-val="4"></button></div><div class="al-bar" id="al-chall-back"><button class="al-btn" data-val="1">Free</button><button class="al-btn" data-val="2">Pro</button><button class="al-btn" data-val="3">Ext</button></div></div>
       </div>
       <div class="card-info" id="challCardInfo">
         <button class="card-info-close" id="challCardInfoClose">✕</button>
@@ -1666,8 +1661,8 @@
   <div class="card-area">
     <div class="card" id="mindCard">
       <div class="card-inner" id="mindCardInner">
-        <div class="card-face card-front"><p class="card-text" id="mindFrontText"></p><div class="fb-bar" id="fb-mind-front"><button class="fb-btn" data-val="1"></button><button class="fb-btn" data-val="2"></button><button class="fb-btn" data-val="3"></button><button class="fb-btn" data-val="4"></button></div></div>
-        <div class="card-face card-back"><p class="card-text" id="mindBackText"></p><div class="fb-bar" id="fb-mind-back"><button class="fb-btn" data-val="1"></button><button class="fb-btn" data-val="2"></button><button class="fb-btn" data-val="3"></button><button class="fb-btn" data-val="4"></button></div></div>
+        <div class="card-face card-front"><p class="card-text" id="mindFrontText"></p><div class="fb-bar" id="fb-mind-front"><button class="fb-btn" data-val="1"></button><button class="fb-btn" data-val="2"></button><button class="fb-btn" data-val="3"></button><button class="fb-btn" data-val="4"></button></div><div class="al-bar" id="al-mind-front"><button class="al-btn" data-val="1">Free</button><button class="al-btn" data-val="2">Pro</button><button class="al-btn" data-val="3">Ext</button></div></div>
+        <div class="card-face card-back"><p class="card-text" id="mindBackText"></p><div class="fb-bar" id="fb-mind-back"><button class="fb-btn" data-val="1"></button><button class="fb-btn" data-val="2"></button><button class="fb-btn" data-val="3"></button><button class="fb-btn" data-val="4"></button></div><div class="al-bar" id="al-mind-back"><button class="al-btn" data-val="1">Free</button><button class="al-btn" data-val="2">Pro</button><button class="al-btn" data-val="3">Ext</button></div></div>
       </div>
       <div class="card-info" id="mindCardInfo">
         <button class="card-info-close" id="mindCardInfoClose">✕</button>
@@ -1700,8 +1695,8 @@
   <div class="card-area">
     <div class="card" id="collCard">
       <div class="card-inner" id="collCardInner">
-        <div class="card-face card-front"><p class="card-text" id="collFrontText"></p><div class="fb-bar" id="fb-coll-front"><button class="fb-btn" data-val="1"></button><button class="fb-btn" data-val="2"></button><button class="fb-btn" data-val="3"></button><button class="fb-btn" data-val="4"></button></div></div>
-        <div class="card-face card-back"><p class="card-text" id="collBackText"></p><div class="fb-bar" id="fb-coll-back"><button class="fb-btn" data-val="1"></button><button class="fb-btn" data-val="2"></button><button class="fb-btn" data-val="3"></button><button class="fb-btn" data-val="4"></button></div></div>
+        <div class="card-face card-front"><p class="card-text" id="collFrontText"></p><div class="fb-bar" id="fb-coll-front"><button class="fb-btn" data-val="1"></button><button class="fb-btn" data-val="2"></button><button class="fb-btn" data-val="3"></button><button class="fb-btn" data-val="4"></button></div><div class="al-bar" id="al-coll-front"><button class="al-btn" data-val="1">Free</button><button class="al-btn" data-val="2">Pro</button><button class="al-btn" data-val="3">Ext</button></div></div>
+        <div class="card-face card-back"><p class="card-text" id="collBackText"></p><div class="fb-bar" id="fb-coll-back"><button class="fb-btn" data-val="1"></button><button class="fb-btn" data-val="2"></button><button class="fb-btn" data-val="3"></button><button class="fb-btn" data-val="4"></button></div><div class="al-bar" id="al-coll-back"><button class="al-btn" data-val="1">Free</button><button class="al-btn" data-val="2">Pro</button><button class="al-btn" data-val="3">Ext</button></div></div>
       </div>
       <div class="card-info" id="collCardInfo">
         <button class="card-info-close" id="collCardInfoClose">✕</button>
@@ -1730,6 +1725,14 @@
       <label class="toggle"><input type="checkbox" id="feedbackModeToggle" /><span class="toggle-slider"></span></label>
     </div>
     <div class="settings-row">
+      <label>Suggest access level</label>
+      <label class="toggle"><input type="checkbox" id="accessLevelSuggestToggle" /><span class="toggle-slider"></span></label>
+    </div>
+    <div class="settings-row">
+      <label style="font-size:13px; color:#888;">Export access level suggestions</label>
+      <button id="alExportBtn" style="font-size:13px; color:#555; background:#f0f0f0; border:1px solid #ddd; border-radius:8px; padding:6px 12px; cursor:pointer;">Export</button>
+    </div>
+    <div class="settings-row">
       <label style="font-size:13px; color:#888;">Export all ratings as JSON</label>
       <button id="feedbackExportBtn" style="font-size:13px; color:#555; background:#f0f0f0; border:1px solid #ddd; border-radius:8px; padding:6px 12px; cursor:pointer;">Export</button>
     </div>
@@ -1749,7 +1752,25 @@
       <label>Pack Editor</label>
       <button onclick="window.open('admin.html','_blank')" style="font-size:13px; color:#555; background:#f0f0f0; border:1px solid #ddd; border-radius:8px; padding:6px 12px; cursor:pointer;">Open &#8599;</button>
     </div>
-    <div class="settings-version">v1.21.8</div>
+    <div class="settings-version">v1.21.9</div>
+  </div>
+</div>
+
+
+<!-- PACK SETTINGS OVERLAY -->
+<div class="settings-overlay" id="packSettingsOverlay">
+  <div class="settings-panel">
+    <div class="settings-title" id="packSettingsTitle">Pack Settings</div>
+    <div class="settings-row">
+      <label>Suggested access level for this pack</label>
+    </div>
+    <div class="al-bar al-bar--pack" id="al-pack-bar">
+      <button class="al-btn" data-val="1">Free</button>
+      <button class="al-btn" data-val="2">Pro</button>
+      <button class="al-btn" data-val="3">Extended</button>
+    </div>
+    <div class="settings-version" id="packSettingsVersion"></div>
+    <button class="settings-close" id="packSettingsClose">Done</button>
   </div>
 </div>
 
@@ -1769,29 +1790,19 @@
   </button>
 </div>
 
-<script src="js/data.js?v=1218"></script>
-<script src="js/tagsData.js?v=1218"></script>
-<script src="js/programsData.js?v=1218"></script>
-<script src="js/challengesData.js?v=1218"></script>
-<script src="js/mindsetData.js?v=1218"></script>
-<script src="js/multiStepData.js?v=1218"></script>
-<script src="js/memorizeData.js?v=1218"></script>
-<script src="js/app-core.js?v=1218"></script>
-<script src="js/app-modes.js?v=1218"></script>
-<script src="js/app-handsfree.js?v=1218"></script>
-<script src="js/app-system.js?v=1218"></script>
-<script src="js/app-ui.js?v=1218"></script>
+<script src="js/data.js?v=1219"></script>
+<script src="js/tagsData.js?v=1219"></script>
+<script src="js/programsData.js?v=1219"></script>
+<script src="js/challengesData.js?v=1219"></script>
+<script src="js/mindsetData.js?v=1219"></script>
+<script src="js/multiStepData.js?v=1219"></script>
+<script src="js/memorizeData.js?v=1219"></script>
+<script src="js/app-core.js?v=1219"></script>
+<script src="js/app-modes.js?v=1219"></script>
+<script src="js/app-handsfree.js?v=1219"></script>
+<script src="js/app-system.js?v=1219"></script>
+<script src="js/app-ui.js?v=1219"></script>
 
-
-
-<!-- PACK SETTINGS OVERLAY (mode screen) -->
-<div class="settings-overlay" id="packSettingsOverlay">
-  <div class="settings-panel">
-    <div class="settings-title">Pack Settings</div>
-    <div class="settings-version" id="packSettingsVersion"></div>
-    <button class="settings-close" id="packSettingsClose">Done</button>
-  </div>
-</div>
 
 <!-- CHECKPOINT SCREEN -->
 <div id="checkpointScreen" style="display:none; position:fixed; inset:0; background:var(--bg,#F0EBE3); flex-direction:column; z-index:200; padding:0;">
