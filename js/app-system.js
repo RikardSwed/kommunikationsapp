@@ -51,6 +51,12 @@ if (homeSettingsBackBtn) {
 feedbackModeToggle.addEventListener('change', () => {
   feedbackMode = feedbackModeToggle.checked;
   localStorage.setItem('feedbackMode', feedbackMode);
+  if (feedbackMode && alSuggestMode) {
+    alSuggestMode = false;
+    localStorage.setItem('alSuggestMode', 'false');
+    if (alSuggestToggle) alSuggestToggle.checked = false;
+    document.body.classList.remove('al-suggest-mode');
+  }
   applyFeedbackMode();
 });
 
@@ -258,25 +264,16 @@ applyInputCounterVisibility();
 const BUNDLE_DEFS = {
   assertive: [
     {
-      id: 'free',
-      name: 'Free Bundle',
+      id: 'default',
+      name: 'Default Bundle',
       description: 'The core inputs — everyday situations covering all strategies in this pack.',
       default: true,
-      tier: 'free',
     },
     {
-      id: 'pro',
-      name: 'Pro Bundle',
-      description: 'Extended inputs with additional situations — included with Pro access.',
-      default: false,
-      tier: 'pro',
-    },
-    {
-      id: 'workplace',
+      id: 'test',
       name: 'Workplace & Social Bundle',
       description: 'Additional inputs focused on professional and social contexts — colleagues, work situations and social judgement.',
       default: false,
-      tier: 'free',
     },
   ]
 };
@@ -296,27 +293,10 @@ function setBundleState(packKey, state) {
 function getActiveBundles(packKey) {
   const defs = BUNDLE_DEFS[packKey];
   if (!defs) return null;
-
-  const level  = window.accessLevel ? window.accessLevel.getLevel() : 'freemium';
-  const isPro  = (level === 'pro' || level === 'complete');
-
-  // Tier bundles (free/pro) are always determined by access level — never from saved state
-  // Optional bundles (no tier, e.g. workplace) respect saved state
-  const tierBundles     = defs.filter(b => b.tier);
-  const optionalBundles = defs.filter(b => !b.tier);
-
-  // Determine active tier bundle
-  const activeTier = tierBundles
-    .filter(b => isPro ? (b.tier === 'free' || b.tier === 'pro') : b.tier === 'free')
-    .map(b => b.id);
-
-  // Determine active optional bundles from saved state
-  const saved   = getBundleState(packKey) || [];
-  const activeOptional = optionalBundles
-    .filter(b => saved.includes(b.id))
-    .map(b => b.id);
-
-  return [...activeTier, ...activeOptional];
+  const saved = getBundleState(packKey);
+  if (saved) return saved;
+  const defaults = defs.filter(b => b.default).map(b => b.id);
+  return defaults.length ? defaults : [defs[0].id];
 }
 
 // Filter inputs based on active bundles (applies to all strategies in pack)
@@ -345,13 +325,7 @@ window.renderBundleSection = function(containerEl, packKey) {
 
   const active = getActiveBundles(packKey);
 
-  const level = window.accessLevel ? window.accessLevel.getLevel() : 'freemium';
-  const isPro = (level === 'pro' || level === 'complete');
   defs.forEach(bundle => {
-    // Hide free bundle for pro users (it's included automatically)
-    // Hide pro bundle for free users (not accessible)
-    if (bundle.tier === 'free' && bundle.id === 'free' && isPro) return;
-    if (bundle.tier === 'pro' && !isPro) return;
     const isOn = active.includes(bundle.id);
     const row = document.createElement('div');
     row.innerHTML = `
@@ -368,11 +342,11 @@ window.renderBundleSection = function(containerEl, packKey) {
     section.appendChild(row);
 
     row.querySelector('.bundle-toggle').addEventListener('change', function() {
-      // Only persist optional (non-tier) bundles — tier bundles are driven by access level
-      const saved    = getBundleState(packKey) || [];
+      const cur = getActiveBundles(packKey);
       const newState = this.checked
-        ? [...new Set([...saved, bundle.id])]
-        : saved.filter(id => id !== bundle.id);
+        ? [...new Set([...cur, bundle.id])]
+        : cur.filter(id => id !== bundle.id);
+      if (newState.length === 0) { this.checked = true; return; }
       setBundleState(packKey, newState);
     });
 
@@ -595,3 +569,152 @@ window.flowRender = function() {
   fbRender('fb-flow-front', frontKey);
   fbRender('fb-flow-back',  backKey);
 };
+
+
+// ── ACCESS LEVEL SUGGEST MODE ────────────────────────────────────────────────
+let alSuggestMode = localStorage.getItem('alSuggestMode') === 'true';
+const alSuggestToggle = document.getElementById('accessLevelSuggestToggle');
+
+function applyAlSuggestMode() {
+  document.body.classList.toggle('al-suggest-mode', alSuggestMode);
+  if (alSuggestToggle) alSuggestToggle.checked = alSuggestMode;
+}
+applyAlSuggestMode();
+
+if (alSuggestToggle) {
+  alSuggestToggle.addEventListener('change', () => {
+    alSuggestMode = alSuggestToggle.checked;
+    localStorage.setItem('alSuggestMode', alSuggestMode);
+    // Exclusive with feedback mode
+    if (alSuggestMode && feedbackMode) {
+      feedbackMode = false;
+      localStorage.setItem('feedbackMode', 'false');
+      if (feedbackModeToggle) feedbackModeToggle.checked = false;
+      document.body.classList.remove('feedback-mode');
+    }
+    applyAlSuggestMode();
+  });
+}
+
+// ── AL KEY HELPERS ───────────────────────────────────────────────────────────
+// Key: al_{packKey}_{screen}_{stratId}_{cardId}_{side}
+// Pack-level key: al_pack_{packKey}
+function alKey(screen, stratId, cardId, side) {
+  return `al_${window.activeCollectionKey}_${screen}_${stratId}_${cardId}_${side}`;
+}
+function alGet(key) {
+  try { const v = localStorage.getItem(key); return v !== null ? parseInt(v) : null; } catch { return null; }
+}
+function alSet(key, val) {
+  try { localStorage.setItem(key, val); } catch {}
+}
+function alPackKey(packKey) { return `al_pack_${packKey}`; }
+
+// ── AL BAR RENDER & INIT ─────────────────────────────────────────────────────
+const AL_LABELS = { 1: 'Free', 2: 'Pro', 3: 'Extended' };
+
+function alRender(barId, key) {
+  const bar = document.getElementById(barId);
+  if (!bar) return;
+  bar.dataset.alKey = key;
+  const saved = alGet(key);
+  bar.querySelectorAll('.al-btn').forEach(btn => {
+    const v = parseInt(btn.dataset.val);
+    btn.classList.remove('al-selected', 'al-dimmed');
+    if (saved === null) return;
+    if (v === saved) btn.classList.add('al-selected');
+    else btn.classList.add('al-dimmed');
+  });
+}
+window.alRender = alRender;
+
+function alInitBar(barId) {
+  const bar = document.getElementById(barId);
+  if (!bar) return;
+  bar.querySelectorAll('.al-btn').forEach(btn => {
+    const handler = e => {
+      e.stopPropagation();
+      const key = bar.dataset.alKey;
+      if (!key) return;
+      alSet(key, parseInt(btn.dataset.val));
+      alRender(barId, key);
+    };
+    btn.addEventListener('click', handler);
+    btn.addEventListener('touchend', e => { e.preventDefault(); e.stopPropagation(); handler(e); }, { passive: false });
+  });
+}
+window.alInitBar  = alInitBar;
+window.alKey      = alKey;
+window.alPackKey  = alPackKey;
+
+// Init all al-bars on cards
+['al-single-front','al-single-back','al-mem-front','al-mem-back',
+ 'al-flow-front','al-flow-back','al-chall-front','al-chall-back',
+ 'al-mind-front','al-mind-back','al-coll-front','al-coll-back'].forEach(alInitBar);
+
+// Pack-level al-bar
+const alPackBar = document.getElementById('al-pack-bar');
+if (alPackBar) {
+  alPackBar.querySelectorAll('.al-btn').forEach(btn => {
+    const handler = e => {
+      e.stopPropagation();
+      const packKey = window.activeCollectionKey;
+      if (!packKey) return;
+      alSet(alPackKey(packKey), parseInt(btn.dataset.val));
+      alRender('al-pack-bar', alPackKey(packKey));
+    };
+    btn.addEventListener('click', handler);
+    btn.addEventListener('touchend', e => { e.preventDefault(); e.stopPropagation(); handler(e); }, { passive: false });
+  });
+}
+
+// Pack settings overlay
+(function() {
+  const btn     = document.getElementById('modePackSettingsBtn');
+  const overlay = document.getElementById('packSettingsOverlay');
+  const close   = document.getElementById('packSettingsClose');
+  const title   = document.getElementById('packSettingsTitle');
+  const ver     = document.getElementById('packSettingsVersion');
+  if (!btn || !overlay) return;
+  btn.addEventListener('click', () => {
+    const packKey = window.activeCollectionKey;
+    const label   = window.activeCollectionLabel || packKey;
+    if (title) title.textContent = label;
+    if (ver)   ver.textContent   = window.VERSION || '';
+    alRender('al-pack-bar', alPackKey(packKey));
+    overlay.classList.add('open');
+  });
+  if (close) close.addEventListener('click', () => overlay.classList.remove('open'));
+})();
+
+// ── AL EXPORT ────────────────────────────────────────────────────────────────
+function exportAlSuggestions() {
+  const data = { exportedAt: new Date().toISOString(), packSuggestions: {}, cardSuggestions: [] };
+  const AL_NAMES = { 1: 'free', 2: 'pro', 3: 'extended' };
+
+  for (let i = 0; i < localStorage.length; i++) {
+    const k = localStorage.key(i);
+    if (!k.startsWith('al_')) continue;
+    const v = parseInt(localStorage.getItem(k));
+    const levelName = AL_NAMES[v] || String(v);
+
+    if (k.startsWith('al_pack_')) {
+      const packKey = k.replace('al_pack_', '');
+      data.packSuggestions[packKey] = levelName;
+    } else {
+      // al_{pack}_{screen}_{stratId}_{cardId}_{side}
+      const parts = k.split('_');
+      // parts: ['al', pack, screen, stratId, cardId, side]
+      data.cardSuggestions.push({ key: k, pack: parts[1], screen: parts[2], suggested: levelName });
+    }
+  }
+
+  const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+  const url  = URL.createObjectURL(blob);
+  const a    = document.createElement('a');
+  a.href = url; a.download = `deckstack-al-suggestions-${Date.now()}.json`;
+  a.click(); URL.revokeObjectURL(url);
+}
+
+const alExportBtn = document.getElementById('alExportBtn');
+if (alExportBtn) alExportBtn.addEventListener('click', exportAlSuggestions);

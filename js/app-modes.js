@@ -678,8 +678,8 @@ document.getElementById('collCloseBtn').addEventListener('click', () => closeTra
 // Show Collections mode
 function showCollections() {
   const key = activeCollectionKey;
-  if (!collections[key] || !collections[key].length) return;
-  collCollections = collections[key];
+  if (!conversationalCollections[key] || !conversationalCollections[key].length) return;
+  collCollections = conversationalCollections[key];
   collIdx      = 0;
   collInputIdx = 0;
   navToTraining('collScreen');
@@ -728,7 +728,9 @@ function challRender() {
   const hints = document.getElementById('challHint');
   if (hints) hints.style.display = document.getElementById('showHints').checked ? '' : 'none';
   fbRender('fb-chall-front', fbKey('chall', challIdx, challInputIdx, 'front'));
+  if (window.alRender) alRender('al-chall-front', alKey('chall', challIdx, challInputIdx, 'front'));
   fbRender('fb-chall-back',  fbKey('chall', challIdx, challInputIdx, 'back'));
+  if (window.alRender) alRender('al-chall-back', alKey('chall', challIdx, challInputIdx, 'back'));
 }
 
 function challTrig(dir, cb) {
@@ -833,7 +835,9 @@ function mindRender() {
   const hints = document.getElementById('mindHint');
   if (hints) hints.style.display = document.getElementById('showHints').checked ? '' : 'none';
   fbRender('fb-mind-front', fbKey('mind', mindIdx, mindInputIdx, 'front'));
+  if (window.alRender) alRender('al-mind-front', alKey('mind', mindIdx, mindInputIdx, 'front'));
   fbRender('fb-mind-back',  fbKey('mind', mindIdx, mindInputIdx, 'back'));
+  if (window.alRender) alRender('al-mind-back', alKey('mind', mindIdx, mindInputIdx, 'back'));
 }
 
 function mindTrig(dir, cb) {
