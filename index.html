@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
   <title>Deckstack</title>
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="stylesheet" href="css/style.css?v=1210" />
+  <link rel="stylesheet" href="css/style.css?v=1211" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
 </head>
 <body>
@@ -252,7 +252,7 @@
         <button id="progResetBtn" class="prog-reset-btn">Reset all progress data…</button>
       </div>
     </div>
-    <div class="settings-version">v1.21.0</div>
+    <div class="settings-version">v1.21.1</div>
     <button class="settings-close" id="progressSettingsClose">Done</button>
   </div>
 </div>
@@ -632,12 +632,8 @@
 
   </div>
 
-  <!-- Tab: Programs (placeholder) -->
-  <div class="library-tab-content library-placeholder" id="libTabPrograms" style="display:none;">
-    <div class="library-placeholder-icon">◈</div>
-    <div class="library-placeholder-title">Coming soon</div>
-    <div class="library-placeholder-text">Structured programs that guide you through a skill step by step.</div>
-  </div>
+  <!-- Tab: Programs -->
+  <div class="library-tab-content" id="libTabPrograms" style="display:none;"></div>
 
   <!-- Tab: Folders -->
   <div class="library-tab-content" id="libTabFolders" style="display:none;"></div>
@@ -1202,7 +1198,7 @@
       <label>Progress bar</label>
       <label class="toggle"><input type="checkbox" id="showProgressBar" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.21.0</div>
+    <div class="settings-version">v1.21.1</div>
     <button class="settings-close" id="settingsClose">Done</button>
   </div>
 </div>
@@ -1275,7 +1271,7 @@
       <label>Loop current strategy</label>
       <label class="toggle"><input type="checkbox" id="hfLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.21.0</div>
+    <div class="settings-version">v1.21.1</div>
     <button class="settings-close" id="hfSettingsClose">Done</button>
   </div>
 </div>
@@ -1344,7 +1340,7 @@
       <label>Loop current strategy</label>
       <label class="toggle"><input type="checkbox" id="hfMemLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.21.0</div>
+    <div class="settings-version">v1.21.1</div>
     <button class="settings-close" id="hfMemSettingsClose">Done</button>
   </div>
 </div>
@@ -1413,7 +1409,7 @@
       <label>Loop current category</label>
       <label class="toggle"><input type="checkbox" id="hfChallLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.21.0</div>
+    <div class="settings-version">v1.21.1</div>
     <button class="settings-close" id="hfChallSettingsClose">Done</button>
   </div>
 </div>
@@ -1471,7 +1467,7 @@
       <label>Loop current combo</label>
       <label class="toggle"><input type="checkbox" id="hfFlowLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.21.0</div>
+    <div class="settings-version">v1.21.1</div>
     <button class="settings-close" id="hfFlowSettingsClose">Done</button>
   </div>
 </div>
@@ -1540,7 +1536,7 @@
       <label>Loop current mindset</label>
       <label class="toggle"><input type="checkbox" id="hfMindLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.21.0</div>
+    <div class="settings-version">v1.21.1</div>
     <button class="settings-close" id="hfMindSettingsClose">Done</button>
   </div>
 </div>
@@ -1609,7 +1605,7 @@
       <label>Loop current collection</label>
       <label class="toggle"><input type="checkbox" id="hfCollLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.21.0</div>
+    <div class="settings-version">v1.21.1</div>
     <button class="settings-close" id="hfCollSettingsClose">Done</button>
   </div>
 </div>
@@ -1747,7 +1743,7 @@
       <label>Pack Editor</label>
       <button onclick="window.open('admin.html','_blank')" style="font-size:13px; color:#555; background:#f0f0f0; border:1px solid #ddd; border-radius:8px; padding:6px 12px; cursor:pointer;">Open &#8599;</button>
     </div>
-    <div class="settings-version">v1.21.0</div>
+    <div class="settings-version">v1.21.1</div>
   </div>
 </div>
 
@@ -1767,17 +1763,32 @@
   </button>
 </div>
 
-<script src="js/data.js?v=1210"></script>
-<script src="js/tagsData.js?v=1210"></script>
-<script src="js/challengesData.js?v=1210"></script>
-<script src="js/mindsetData.js?v=1210"></script>
-<script src="js/multiStepData.js?v=1210"></script>
-<script src="js/memorizeData.js?v=1210"></script>
-<script src="js/app-core.js?v=1210"></script>
-<script src="js/app-modes.js?v=1210"></script>
-<script src="js/app-handsfree.js?v=1210"></script>
-<script src="js/app-system.js?v=1210"></script>
-<script src="js/app-ui.js?v=1210"></script>
+<script src="js/data.js?v=1211"></script>
+<script src="js/tagsData.js?v=1211"></script>
+<script src="js/programsData.js?v=1211"></script>
+<script src="js/challengesData.js?v=1211"></script>
+<script src="js/mindsetData.js?v=1211"></script>
+<script src="js/multiStepData.js?v=1211"></script>
+<script src="js/memorizeData.js?v=1211"></script>
+<script src="js/app-core.js?v=1211"></script>
+<script src="js/app-modes.js?v=1211"></script>
+<script src="js/app-handsfree.js?v=1211"></script>
+<script src="js/app-system.js?v=1211"></script>
+<script src="js/app-ui.js?v=1211"></script>
+
+
+<!-- CHECKPOINT SCREEN -->
+<div id="checkpointScreen" style="display:none; position:fixed; inset:0; background:var(--bg,#F0EBE3); flex-direction:column; z-index:200; padding:0;">
+  <div class="cp-topbar">
+    <span id="checkpointTitle" class="cp-title"></span>
+    <span id="checkpointProgress" class="cp-progress"></span>
+    <span id="checkpointTimer" class="cp-timer"></span>
+  </div>
+  <div class="cp-body">
+    <div id="checkpointQuestion" class="cp-question"></div>
+    <div id="checkpointOptions" class="cp-options"></div>
+  </div>
+</div>
 
 </body>
 </html>
