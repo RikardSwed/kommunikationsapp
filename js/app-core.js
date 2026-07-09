@@ -4,7 +4,7 @@
 // app.js — All application logic for Communication Trainer
 // Depends on: data.js and multiStepData.js (must be loaded first)
 
-const VERSION = 'v1.21.4';
+const VERSION = 'v1.21.5';
 
 // Pack icon map — global so both dashboard and favorites can use it
 const PACK_ICONS = {
@@ -205,7 +205,7 @@ function updateNextBtn() {
   const btn = document.getElementById('modeNextBtn');
   if (!btn) return;
   const hasNext = _packContext && _packContext.index < _packContext.packs.length - 1;
-  btn.style.display = hasNext ? '' : 'none';
+  btn.style.visibility = hasNext ? 'visible' : 'hidden';
 }
 
 // Navigate to next pack in context
@@ -350,6 +350,17 @@ document.querySelectorAll('.collection-card').forEach(el => {
 
 document.getElementById('modeBackBtn').addEventListener('click', showHome);
 document.getElementById('modeNextBtn') && document.getElementById('modeNextBtn').addEventListener('click', goNextPack);
+
+// Pack settings button
+(function() {
+  const btn     = document.getElementById('modePackSettingsBtn');
+  const overlay = document.getElementById('packSettingsOverlay');
+  const close   = document.getElementById('packSettingsClose');
+  if (btn && overlay) {
+    btn.addEventListener('click', () => overlay.classList.add('open'));
+    if (close) close.addEventListener('click', () => overlay.classList.remove('open'));
+  }
+})();
 
 // Beta section toggle
 function toggleBeta() {
