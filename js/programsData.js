@@ -1,362 +1,108 @@
 // programsData.js — Learning programs for Deckstack
-// Structure: programs is an array of program objects.
-// Each program has sections, each section has packs and ends with a checkpoint.
-// Checkpoints contain questions (pool of ~50, 20 drawn randomly per attempt).
 
 const programsData = [
   {
-    id: 'assertive-foundations',
-    title: 'Assertive Communication Foundations',
-    description: 'Build the core toolkit for confident, calm communication — from handling criticism to holding your ground under pressure.',
+    id: 'social-confidence',
+    title: 'Social Confidence Foundations',
+    description: 'Build the core skills for confident, calm communication — from handling criticism and pressure to starting conversations and connecting with people.',
     icon: 'ti-messages',
     sections: [
       {
         id: 'section-1',
-        title: 'Section 1 — Core Techniques',
+        title: 'Section 1 — Holding Your Ground',
         packs: [
           { key: 'assertive', label: 'Assertive Communication' },
         ],
         checkpoint: {
-          id: 'assertive-foundations-cp1',
+          id: 'social-confidence-cp1',
           title: 'Checkpoint — Section 1',
-          timeLimit: 90, // seconds per question
-          drawCount: 20, // questions drawn per attempt
+          timeLimit: 90,
+          drawCount: 20,
           questions: [
-            // ── FOGGING ──────────────────────────────────────────────────
-            {
-              id: 'f1',
-              q: 'What is the core idea behind Fogging?',
-              options: [
-                'Agreeing with what might be true in criticism, without defending yourself',
-                'Deflecting criticism with a counter-argument',
-                'Apologising quickly to end the conflict',
-                'Asking the critic to prove their point',
-              ],
-              correct: 0,
-            },
-            {
-              id: 'f2',
-              q: 'Someone says you are too sensitive. A good Fogging response is:',
-              options: [
-                '"I am not sensitive at all."',
-                '"You could have a point there."',
-                '"Why would you say something like that?"',
-                '"That is really hurtful."',
-              ],
-              correct: 1,
-            },
-            {
-              id: 'f3',
-              q: 'Why does Fogging work as a technique?',
-              options: [
-                'It makes the critic feel guilty',
-                'It shows you agree with everything they say',
-                'Criticism has nothing solid to grip onto — it passes through like fog',
-                'It forces the other person to explain themselves',
-              ],
-              correct: 2,
-            },
-            {
-              id: 'f4',
-              q: 'Which of these is a Fogging response?',
-              options: [
-                '"I completely disagree with that."',
-                '"You might be right about that."',
-                '"Let me explain why I did it."',
-                '"That is not fair."',
-              ],
-              correct: 1,
-            },
-            {
-              id: 'f5',
-              q: 'Fogging is described as agreeing with:',
-              options: [
-                'Everything the critic says, regardless of truth',
-                'Nothing — the goal is to stay silent',
-                'What might be true, the possibility, or the logic of the criticism',
-                'Only facts, never opinions',
-              ],
-              correct: 2,
-            },
-            {
-              id: 'f6',
-              q: 'Someone criticises your driving. The best Fogging response is:',
-              options: [
-                '"I am a perfectly good driver."',
-                '"You might be right about that."',
-                '"Maybe you should drive next time."',
-                '"Why are you always criticising me?"',
-              ],
-              correct: 1,
-            },
-            {
-              id: 'f7',
-              q: 'What does Fogging signal to the other person?',
-              options: [
-                'That you are angry but staying calm',
-                'That you agree with everything they said',
-                'Confidence and unshakeable calm',
-                'That you want to end the conversation',
-              ],
-              correct: 2,
-            },
-            {
-              id: 'f8',
-              q: 'Which phrase best demonstrates Fogging?',
-              options: [
-                '"I can see why you think so."',
-                '"You are wrong about that."',
-                '"I will try harder next time."',
-                '"Stop criticising me."',
-              ],
-              correct: 0,
-            },
-            // ── NEGATIVE INQUIRY ─────────────────────────────────────────
-            {
-              id: 'ni1',
-              q: 'What is the goal of Negative Inquiry?',
-              options: [
-                'To make the other person feel bad about criticising you',
-                'To calmly ask for more criticism to disarm and clarify',
-                'To end the conversation as quickly as possible',
-                'To agree with everything the critic says',
-              ],
-              correct: 1,
-            },
-            {
-              id: 'ni2',
-              q: 'Someone says you are being difficult. A Negative Inquiry response is:',
-              options: [
-                '"I am not being difficult."',
-                '"Fine, I will do it your way."',
-                '"What is it specifically that I am doing that feels difficult?"',
-                '"You are the one being difficult."',
-              ],
-              correct: 2,
-            },
-            {
-              id: 'ni3',
-              q: 'Negative Inquiry works because:',
-              options: [
-                'It is hard to keep attacking someone who is genuinely listening',
-                'It shows the critic that you are right',
-                'It forces the critic to apologise',
-                'It gives you time to think of a counter-argument',
-              ],
-              correct: 0,
-            },
-            {
-              id: 'ni4',
-              q: 'What does using Negative Inquiry show?',
-              options: [
-                'That you are afraid of the critic',
-                'That you are not afraid of more criticism',
-                'That you agree with the criticism',
-                'That you want to change the subject',
-              ],
-              correct: 1,
-            },
-            {
-              id: 'ni5',
-              q: 'Someone gives you vague criticism. The best Negative Inquiry response is:',
-              options: [
-                '"That is not a fair criticism."',
-                '"What do you mean exactly? I would like to understand."',
-                '"Why do you always criticise me?"',
-                '"I will think about it."',
-              ],
-              correct: 1,
-            },
-            // ── NEGATIVE ASSERTION ───────────────────────────────────────
-            {
-              id: 'na1',
-              q: 'Negative Assertion means:',
-              options: [
-                'Denying your faults calmly and confidently',
-                'Actively and calmly agreeing with your own faults when pointed out',
-                'Apologising extensively when you make a mistake',
-                'Explaining why you made a mistake',
-              ],
-              correct: 1,
-            },
-            {
-              id: 'na2',
-              q: 'Someone says your joke was not funny. The best Negative Assertion response is:',
-              options: [
-                '"I thought it was funny."',
-                '"Sorry, I did not mean to offend you."',
-                '"No, that one did not land."',
-                '"You just do not have a sense of humour."',
-              ],
-              correct: 2,
-            },
-            {
-              id: 'na3',
-              q: 'The key principle behind Negative Assertion is:',
-              options: [
-                'Explain your mistakes fully so people understand',
-                'Acknowledge without shrinking',
-                'Apologise quickly and move on',
-                'Deny minor faults to maintain confidence',
-              ],
-              correct: 1,
-            },
-            {
-              id: 'na4',
-              q: 'Someone points out you were late. A good Negative Assertion response is:',
-              options: [
-                '"The traffic was terrible."',
-                '"I am so sorry, it will never happen again."',
-                '"You are right, I was late. That is on me."',
-                '"I was only five minutes late."',
-              ],
-              correct: 2,
-            },
-            {
-              id: 'na5',
-              q: 'Which of these is NOT a Negative Assertion response?',
-              options: [
-                '"You are right, I could have done that differently."',
-                '"Yes, that was a mistake. I will fix it."',
-                '"No, that one did not land."',
-                '"I did not do anything wrong."',
-              ],
-              correct: 3,
-            },
-            {
-              id: 'na6',
-              q: 'What does Negative Assertion communicate?',
-              options: [
-                'That you are weak and accept all criticism',
-                'That you can be wrong and still be okay — acknowledging shows strength',
-                'That you are trying to end the conversation',
-                'That you are angry but hiding it',
-              ],
-              correct: 1,
-            },
-            // ── BROKEN RECORD ────────────────────────────────────────────
-            {
-              id: 'br1',
-              q: 'Broken Record means:',
-              options: [
-                'Repeating a long explanation until the other person understands',
-                'Returning to the same calm, short response every time the other person pushes',
-                'Raising your voice gradually to show you are serious',
-                'Listing all the reasons behind your decision',
-              ],
-              correct: 1,
-            },
-            {
-              id: 'br2',
-              q: 'Why should you avoid explaining yourself when using Broken Record?',
-              options: [
-                'Explanations make you sound uncertain',
-                'Every explanation gives the other person a new argument to counter',
-                'Explanations take too long',
-                'The other person will not listen anyway',
-              ],
-              correct: 1,
-            },
-            {
-              id: 'br3',
-              q: 'A salesperson will not take no for an answer. The best Broken Record response is:',
-              options: [
-                '"I already said no, please stop."',
-                '"Let me think about it."',
-                '"That does not work for me." — repeated calmly each time.',
-                '"I need to speak to my partner first."',
-              ],
-              correct: 2,
-            },
-            {
-              id: 'br4',
-              q: 'When someone escalates pressure, you should:',
-              options: [
-                'Match their energy to show you are serious',
-                'Apologise and reconsider',
-                'Hold the same calm tone — that is exactly when the technique is being tested',
-                'Change your wording to try a different approach',
-              ],
-              correct: 2,
-            },
-            {
-              id: 'br5',
-              q: 'Which of these correctly uses Broken Record?',
-              options: [
-                'Repeating different reasons for your decision each time',
-                'Repeating the same calm sentence without changing the wording',
-                'Gradually giving in to reduce conflict',
-                'Asking the other person why they keep pushing',
-              ],
-              correct: 1,
-            },
-            {
-              id: 'br6',
-              q: 'What mindset supports the Broken Record technique?',
-              options: [
-                '"I need to justify my boundaries."',
-                '"I do not need to justify my boundaries. Repeating myself is stable, not strange."',
-                '"If I repeat myself, people will think I am not listening."',
-                '"I should only say no once, then give in gracefully."',
-              ],
-              correct: 1,
-            },
-            // ── GENERAL ──────────────────────────────────────────────────
-            {
-              id: 'g1',
-              q: 'Which technique is best when someone keeps pushing after you said no?',
-              options: [
-                'Fogging',
-                'Negative Assertion',
-                'Broken Record',
-                'Negative Inquiry',
-              ],
-              correct: 2,
-            },
-            {
-              id: 'g2',
-              q: 'Which technique is best when someone gives you vague or unclear criticism?',
-              options: [
-                'Broken Record',
-                'Negative Inquiry',
-                'Fogging',
-                'Negative Assertion',
-              ],
-              correct: 1,
-            },
-            {
-              id: 'g3',
-              q: 'Which technique is best when someone points out a mistake you genuinely made?',
-              options: [
-                'Fogging',
-                'Negative Inquiry',
-                'Broken Record',
-                'Negative Assertion',
-              ],
-              correct: 3,
-            },
-            {
-              id: 'g4',
-              q: 'Which technique is best when someone criticises you and you want to stay calm without engaging?',
-              options: [
-                'Broken Record',
-                'Negative Assertion',
-                'Fogging',
-                'Negative Inquiry',
-              ],
-              correct: 2,
-            },
-            {
-              id: 'g5',
-              q: 'All four techniques in this pack share one thing. What is it?',
-              options: [
-                'They all involve apologising',
-                'They all involve staying calm and not getting defensive',
-                'They all require the other person to back down',
-                'They all involve explaining your reasoning',
-              ],
-              correct: 1,
-            },
+            // FOGGING (8 questions)
+            { id: 'f1', q: 'What is the core idea behind Fogging?', options: ['Agreeing with what might be true in criticism, without defending yourself','Deflecting criticism with a counter-argument','Apologising quickly to end the conflict','Asking the critic to prove their point'], correct: 0 },
+            { id: 'f2', q: 'Someone says you are too sensitive. A good Fogging response is:', options: ['"I am not sensitive at all."','"You could have a point there."','"Why would you say something like that?"','"That is really hurtful."'], correct: 1 },
+            { id: 'f3', q: 'Why does Fogging work as a technique?', options: ['It makes the critic feel guilty','It shows you agree with everything they say','Criticism has nothing solid to grip onto — it passes through like fog','It forces the other person to explain themselves'], correct: 2 },
+            { id: 'f4', q: 'Which of these is a Fogging response?', options: ['"I completely disagree with that."','"You might be right about that."','"Let me explain why I did it."','"That is not fair."'], correct: 1 },
+            { id: 'f5', q: 'Fogging involves agreeing with:', options: ['Everything the critic says','Nothing — the goal is silence','What might be true, the possibility, or the logic of the criticism','Only facts, never opinions'], correct: 2 },
+            { id: 'f6', q: 'Someone criticises your driving. The best Fogging response is:', options: ['"I am a perfectly good driver."','"You might be right about that."','"Maybe you should drive then."','"Why are you always criticising me?"'], correct: 1 },
+            { id: 'f7', q: 'What does Fogging signal to the other person?', options: ['That you are angry but staying calm','That you agree with everything they said','Confidence and unshakeable calm','That you want to end the conversation'], correct: 2 },
+            { id: 'f8', q: 'Which phrase best demonstrates Fogging?', options: ['"I can see why you think so."','"You are wrong about that."','"I will try harder."','"Stop criticising me."'], correct: 0 },
+            // NEGATIVE INQUIRY (5 questions)
+            { id: 'ni1', q: 'What is the goal of Negative Inquiry?', options: ['To make the other person feel bad','To calmly ask for more criticism to disarm and clarify','To end the conversation quickly','To agree with everything said'], correct: 1 },
+            { id: 'ni2', q: 'Someone says you are being difficult. A Negative Inquiry response is:', options: ['"I am not being difficult."','"Fine, I will do it your way."','"What is it specifically that I am doing that feels difficult?"','"You are the one being difficult."'], correct: 2 },
+            { id: 'ni3', q: 'Negative Inquiry works because:', options: ['It is hard to keep attacking someone who is genuinely listening','It shows the critic that you are right','It forces the critic to apologise','It gives you time to think of a counter-argument'], correct: 0 },
+            { id: 'ni4', q: 'Someone gives you vague criticism. The best Negative Inquiry response is:', options: ['"That is not a fair criticism."','"What do you mean exactly? I would like to understand."','"Why do you always criticise me?"','"I will think about it."'], correct: 1 },
+            { id: 'ni5', q: 'What does using Negative Inquiry demonstrate?', options: ['That you are afraid of the critic','That you are not afraid of more criticism','That you agree with the criticism','That you want to change the subject'], correct: 1 },
+            // NEGATIVE ASSERTION (6 questions)
+            { id: 'na1', q: 'Negative Assertion means:', options: ['Denying your faults calmly','Actively and calmly agreeing with your own faults when pointed out','Apologising extensively when you make a mistake','Explaining why you made a mistake'], correct: 1 },
+            { id: 'na2', q: 'Someone says your joke was not funny. The best Negative Assertion response is:', options: ['"I thought it was funny."','"Sorry, I did not mean to offend."','"No, that one did not land."','"You just do not have a sense of humour."'], correct: 2 },
+            { id: 'na3', q: 'The key principle behind Negative Assertion is:', options: ['Explain your mistakes fully','Acknowledge without shrinking','Apologise quickly and move on','Deny minor faults to maintain confidence'], correct: 1 },
+            { id: 'na4', q: 'Someone points out you were late. A good Negative Assertion response is:', options: ['"The traffic was terrible."','"I am so sorry, it will never happen again."','"You are right, I was late. That is on me."','"I was only five minutes late."'], correct: 2 },
+            { id: 'na5', q: 'Which of these is NOT a Negative Assertion response?', options: ['"You are right, I could have done that differently."','"Yes, that was a mistake. I will fix it."','"No, that one did not land."','"I did not do anything wrong."'], correct: 3 },
+            { id: 'na6', q: 'Negative Assertion communicates:', options: ['That you are weak','That you can be wrong and still be okay — acknowledging shows strength','That you are trying to end the conversation','That you are hiding anger'], correct: 1 },
+            // BROKEN RECORD (6 questions)
+            { id: 'br1', q: 'Broken Record means:', options: ['Repeating a long explanation until understood','Returning to the same calm, short response every time the other person pushes','Raising your voice gradually to show seriousness','Listing all the reasons behind your decision'], correct: 1 },
+            { id: 'br2', q: 'Why should you avoid explaining yourself when using Broken Record?', options: ['Explanations make you sound uncertain','Every explanation gives the other person a new argument to counter','Explanations take too long','The other person will not listen anyway'], correct: 1 },
+            { id: 'br3', q: 'A salesperson will not take no for an answer. The best Broken Record response is:', options: ['"I already said no, please stop."','"Let me think about it."','"That does not work for me." — repeated calmly.','"I need to speak to my partner first."'], correct: 2 },
+            { id: 'br4', q: 'When someone escalates pressure, you should:', options: ['Match their energy','Apologise and reconsider','Hold the same calm tone — that is exactly when the technique is tested','Change your wording to try a different approach'], correct: 2 },
+            { id: 'br5', q: 'Which correctly uses Broken Record?', options: ['Repeating different reasons each time','Repeating the same calm sentence without changing the wording','Gradually giving in to reduce conflict','Asking why they keep pushing'], correct: 1 },
+            { id: 'br6', q: 'The mindset behind Broken Record is:', options: ['"I need to justify my boundaries."','"I do not need to justify my boundaries. Repeating myself is stable, not strange."','"If I repeat myself, people think I am not listening."','"I should only say no once, then give in gracefully."'], correct: 1 },
+            // GENERAL (6 questions)
+            { id: 'g1', q: 'Which technique is best when someone keeps pushing after you said no?', options: ['Fogging','Negative Assertion','Broken Record','Negative Inquiry'], correct: 2 },
+            { id: 'g2', q: 'Which technique is best for vague or unclear criticism?', options: ['Broken Record','Negative Inquiry','Fogging','Negative Assertion'], correct: 1 },
+            { id: 'g3', q: 'Which technique is best when someone points out a mistake you genuinely made?', options: ['Fogging','Negative Inquiry','Broken Record','Negative Assertion'], correct: 3 },
+            { id: 'g4', q: 'Which technique is best when someone criticises you and you want to stay calm without engaging?', options: ['Broken Record','Negative Assertion','Fogging','Negative Inquiry'], correct: 2 },
+            { id: 'g5', q: 'All four techniques share one thing. What is it?', options: ['They all involve apologising','They all involve staying calm and not getting defensive','They all require the other person to back down','They all involve explaining your reasoning'], correct: 1 },
+            { id: 'g6', q: 'Someone says "you never listen." Which technique lets you acknowledge without defending?', options: ['Broken Record','Negative Assertion','Fogging','Negative Inquiry'], correct: 2 },
+          ],
+        },
+      },
+      {
+        id: 'section-2',
+        title: 'Section 2 — Starting & Deepening Conversations',
+        packs: [
+          { key: 'startingconnecting', label: 'Starting & Connecting' },
+          { key: 'conversationaldepth', label: 'Conversational Depth' },
+        ],
+        checkpoint: {
+          id: 'social-confidence-cp2',
+          title: 'Checkpoint — Section 2',
+          timeLimit: 90,
+          drawCount: 20,
+          questions: [
+            // STARTING & CONNECTING (15 questions)
+            { id: 'sc1', q: 'What is the most effective opener when meeting someone new?', options: ['A clever or witty line','An observation about the shared situation or environment','A question about their job or status','A compliment about their appearance'], correct: 1 },
+            { id: 'sc2', q: 'Small talk serves what purpose?', options: ['Wasting time before the real conversation','Building a bridge of comfort that allows deeper conversation','Showing that you are interesting','Testing whether someone is worth talking to'], correct: 1 },
+            { id: 'sc3', q: 'Someone looks uncomfortable in a group setting. A good opening is:', options: ['"You look like you are not enjoying yourself."','"Do you know many people here?"','"Why are you standing alone?"','"This is a great party, right?"'], correct: 1 },
+            { id: 'sc4', q: 'What does a good follow-up question do?', options: ['Changes the subject to something more interesting','Shows you heard and are curious about what they just said','Demonstrates your own knowledge on the topic','Returns the conversation to you'], correct: 1 },
+            { id: 'sc5', q: 'When a conversation stalls, the best move is:', options: ['End the conversation politely','Add an observation or share something briefly about yourself that links to their topic','Ask them what they want to talk about','Wait for them to restart it'], correct: 1 },
+            { id: 'sc6', q: 'The "free information" principle means:', options: ['You should only share information when asked','People offer extra detail in their answers — follow those threads','Small talk should be kept impersonal','Information is currency and should be rationed'], correct: 1 },
+            { id: 'sc7', q: 'You are at an event and want to approach someone standing alone. The best approach is:', options: ['Wait until they approach you','Walk over, make eye contact, and comment on something in the shared context','Send a message via a mutual friend','Open with a direct question about them'], correct: 1 },
+            { id: 'sc8', q: 'Which of these is the weakest conversation opener?', options: ['"Have you been here before?"','"How do you know the host?"','"So, what do you do?"','"What brought you to this event?"'], correct: 2 },
+            { id: 'sc9', q: 'Active listening in conversation means:', options: ['Staying quiet until it is your turn to speak','Nodding while thinking about what to say next','Showing through questions and responses that you are genuinely tracking what they say','Repeating back exactly what someone said'], correct: 2 },
+            { id: 'sc10', q: 'A conversation is going well when:', options: ['You are doing most of the talking','Both people are sharing and building on what the other says','The other person keeps asking you questions','You avoid any silences'], correct: 1 },
+            { id: 'sc11', q: 'What is the risk of filling every silence in a conversation?', options: ['The other person thinks you are boring','You prevent the natural rhythm that allows the other person to open up','Silences are never appropriate in conversation','The conversation becomes too slow'], correct: 1 },
+            { id: 'sc12', q: 'Self-disclosure in conversation means:', options: ['Sharing your opinion on controversial topics','Sharing something personal to create reciprocity and depth','Telling people about your achievements','Disclosing information the other person asked for'], correct: 1 },
+            { id: 'sc13', q: 'When you share something personal, what often happens?', options: ['The other person feels uncomfortable','The other person is more likely to share something personal in return','The conversation becomes too serious','The other person loses interest'], correct: 1 },
+            { id: 'sc14', q: 'Ending a conversation well means:', options: ['Excusing yourself as soon as you want to leave','Leaving the other person feeling good about the interaction — a warm close','Waiting for them to end it','Summarising everything you discussed'], correct: 1 },
+            { id: 'sc15', q: 'What separates a forgettable conversation from a memorable one?', options: ['The topics covered','The amount of information exchanged','Whether both people felt genuinely seen and heard','How long the conversation lasted'], correct: 2 },
+            // CONVERSATIONAL DEPTH (15 questions)
+            { id: 'cd1', q: 'Conversational depth means:', options: ['Talking about intellectual or academic subjects','Moving from surface topics to what genuinely matters to the other person','Asking many questions in a row','Keeping the conversation going as long as possible'], correct: 1 },
+            { id: 'cd2', q: 'A good deep question has which quality?', options: ['It has a clear right or wrong answer','It invites reflection and a personal response — not just facts','It is unexpected and unusual','It makes the other person think for a long time'], correct: 1 },
+            { id: 'cd3', q: 'Someone says they have been travelling. A surface response is "where did you go?" A deeper response might be:', options: ['"How long were you away?"','"What surprised you most about being there?"','"Was it expensive?"','"Did you go alone?"'], correct: 1 },
+            { id: 'cd4', q: 'What is the purpose of vulnerability in conversation?', options: ['To make the other person feel sorry for you','To signal that the conversation is a safe space for honesty','To demonstrate emotional intelligence','To move the conversation onto personal topics quickly'], correct: 1 },
+            { id: 'cd5', q: 'You share something honest and slightly vulnerable. What often happens next?', options: ['The other person becomes uncomfortable','The other person is more likely to share something honest in return','The conversation shifts to advice-giving','The other person takes over the conversation'], correct: 1 },
+            { id: 'cd6', q: 'The best moment to move a conversation deeper is:', options: ['At the very start, before small talk','When there is a natural pause and both people seem comfortable','After 20 minutes of conversation regardless of feel','When the other person asks a deep question'], correct: 1 },
+            { id: 'cd7', q: 'Someone says "I have been pretty stressed lately." A depth-building response is:', options: ['"That sounds tough."','"Have you tried meditation?"','"What is it that has been weighing on you most?"','"Stress is so common these days."'], correct: 2 },
+            { id: 'cd8', q: 'What kills conversational depth most quickly?', options: ['Talking about yourself too much','Giving advice before the person feels fully heard','Asking too many questions','Sharing your own opinion'], correct: 1 },
+            { id: 'cd9', q: 'The phrase "tell me more about that" works because:', options: ['It shows you have a large vocabulary','It is open-ended and gives the person space to go wherever matters most to them','It makes the other person feel intelligent','It buys you time to think of a better question'], correct: 1 },
+            { id: 'cd10', q: 'Which is the deeper version of the same question?', options: ['"What is your job?" vs "What do you do for fun?"','"Where are you from?" vs "What was it like growing up there?"','"How long have you been friends?" vs "When did you meet?"','"Do you like your job?" vs "What do you do?"'], correct: 1 },
+            { id: 'cd11', q: 'Emotional attunement in conversation means:', options: ['Matching the energy and emotional tone of what the other person is experiencing','Sharing your own emotions whenever relevant','Staying calm regardless of the topic','Asking how someone is feeling directly'], correct: 0 },
+            { id: 'cd12', q: 'Someone shares something painful. Before offering a reframe or advice, you should:', options: ['Ask clarifying questions','Make sure they feel fully heard and acknowledged','Share a similar experience of your own','Offer a solution'], correct: 1 },
+            { id: 'cd13', q: 'What is the difference between sympathy and empathy in conversation?', options: ['Sympathy is stronger than empathy','Empathy joins someone in their experience; sympathy looks at it from the outside','Sympathy requires physical presence; empathy does not','There is no meaningful difference'], correct: 1 },
+            { id: 'cd14', q: 'A good question for building depth does NOT:', options: ['Invite personal reflection','Have a yes or no answer','Relate to what the person just shared','Give the person room to decide how much to share'], correct: 1 },
+            { id: 'cd15', q: 'The best conversations tend to end with both people feeling:', options: ['Informed about each other','Tired from thinking deeply','Seen, heard, and genuinely curious about talking again','Satisfied that they covered all the important topics'], correct: 2 },
           ],
         },
       },

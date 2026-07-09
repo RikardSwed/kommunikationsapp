@@ -1226,7 +1226,15 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
 
     // Pack card click — open mode screen
     document.querySelectorAll('.folder-pack-card').forEach(card => {
-      card.addEventListener('click', () => showModeScreen(card.dataset.key, card.dataset.label));
+      card.addEventListener('click', () => {
+        // Build context from all packs in this folder
+        const fi = card.closest('.folder-body') && card.closest('.folder-item');
+        const folderPacks = fi
+          ? Array.from(fi.querySelectorAll('.folder-pack-card')).map(c => ({ key: c.dataset.key, label: c.dataset.label }))
+          : [];
+        if (window.setPackContext && folderPacks.length > 1) setPackContext(folderPacks, card.dataset.key);
+        showModeScreen(card.dataset.key, card.dataset.label);
+      });
     });
 
     // Add pack to folder
@@ -1434,7 +1442,15 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
     // Pack clicks
     container.querySelectorAll('.prog-pack-card').forEach(card => {
       if (!card.classList.contains('prog-card--locked')) {
-        card.addEventListener('click', () => showModeScreen(card.dataset.key, card.dataset.label));
+        card.addEventListener('click', () => {
+          // Build context from all unlocked packs in this section
+          const section = card.closest('.prog-section');
+          const sectionPacks = section
+            ? Array.from(section.querySelectorAll('.prog-pack-card:not(.prog-card--locked)')).map(c => ({ key: c.dataset.key, label: c.dataset.label }))
+            : [];
+          if (window.setPackContext && sectionPacks.length > 1) setPackContext(sectionPacks, card.dataset.key);
+          showModeScreen(card.dataset.key, card.dataset.label);
+        });
       }
     });
 
@@ -1565,6 +1581,12 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
         screen.style.display = 'none';
         if (passed) {
           renderProgramDetail(program);
+          // Scroll to next section after render
+          setTimeout(() => {
+            const sections = document.querySelectorAll('.prog-section');
+            const next = sections[sectionIndex + 1];
+            if (next) next.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }, 100);
         } else {
           startCheckpoint(program, checkpoint, sectionIndex);
         }
