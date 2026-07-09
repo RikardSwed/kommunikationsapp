@@ -4,7 +4,7 @@
 // app.js — All application logic for Communication Trainer
 // Depends on: data.js and multiStepData.js (must be loaded first)
 
-const VERSION = 'v1.21.7';
+const VERSION = 'v1.21.6';
 
 // Pack icon map — global so both dashboard and favorites can use it
 const PACK_ICONS = {
@@ -191,8 +191,6 @@ function showModeScreen(key, label) {
   if (window.progEndSession) progEndSession();
   navToMode();
   if (window.progStartSession) progStartSession(key, label);
-  // Update next-pack arrow visibility now that screen is shown
-  updateNextBtn();
 }
 
 // Set the navigation context (called by Library, Folders, Programs)
@@ -216,8 +214,26 @@ function goNextPack() {
   const next = _packContext.packs[_packContext.index + 1];
   if (!next) return;
   _packContext.index++;
-  showModeScreen(next.key, next.label);
+  // Update state without triggering navToMode (avoids Library flash)
+  activeCollectionKey   = next.key;
+  activeCollectionLabel = next.label;
+  document.getElementById('modeCollectionName').textContent = next.label;
+  try {
+    localStorage.setItem('dash_last_pack', JSON.stringify({ key: next.key, label: next.label }));
+    if (window.recordPackTrained) recordPackTrained(next.key);
+    if (window._favRenderDash) _favRenderDash();
+  } catch {}
+  if (window.progEndSession) progEndSession();
+  if (window.progStartSession) progStartSession(next.key, next.label);
+  // Animate modeScreen sliding in from right, no Library behind
+  const ms = document.getElementById('modeScreen');
+  if (ms) {
+    ms.classList.remove('slide-in-right', 'slide-out-right');
+    void ms.offsetWidth;
+    ms.classList.add('slide-in-right');
+  }
   updateNextBtn();
+  if (window.showModeCards) showModeCards();
 }
 
 // Save which training mode was last used for a pack
