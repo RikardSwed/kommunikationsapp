@@ -2006,3 +2006,97 @@ body.pb-enabled .divider::after {
   cursor: pointer; width: 100%;
 }
 .folder-add-pack-btn:hover { border-color: var(--acc); color: var(--acc); }
+
+/* ── PROGRAMS ────────────────────────────────────────────────────────────── */
+.programs-list { display: flex; flex-direction: column; gap: 14px; }
+.program-card {
+  display: flex; gap: 16px; align-items: flex-start;
+  background: var(--ds-card); border: 1px solid var(--ds-border);
+  border-radius: 14px; padding: 18px; cursor: pointer;
+  transition: border-color .15s;
+}
+.program-card:hover { border-color: var(--acc); }
+.program-card-icon {
+  width: 48px; height: 48px; border-radius: 12px;
+  background: var(--acc); color: #fff;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 22px; flex-shrink: 0;
+}
+.program-card-body { flex: 1; }
+.program-card-title { font-size: 16px; font-weight: 700; margin-bottom: 4px; }
+.program-card-desc  { font-size: 13px; color: #888; margin-bottom: 12px; line-height: 1.5; }
+.program-progress-bar-wrap {
+  height: 6px; background: var(--ds-border); border-radius: 99px; overflow: hidden; margin-bottom: 6px;
+}
+.program-progress-bar { height: 100%; background: var(--acc); border-radius: 99px; transition: width .4s; }
+.program-progress-label { font-size: 12px; color: #999; }
+
+/* Program detail */
+.program-detail { padding-bottom: 40px; }
+.program-back-btn {
+  background: none; border: none; color: var(--acc); font-size: 14px;
+  font-weight: 600; cursor: pointer; padding: 0; margin-bottom: 16px;
+  display: flex; align-items: center; gap: 6px;
+}
+.program-detail-title { font-size: 20px; font-weight: 700; margin-bottom: 8px; }
+.program-detail-desc  { font-size: 14px; color: #888; margin-bottom: 24px; line-height: 1.6; }
+
+/* Sections */
+.prog-section { margin-bottom: 24px; }
+.prog-section-label {
+  font-size: 12px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: .06em; color: #999; margin-bottom: 10px;
+}
+.prog-section--locked .prog-section-label { color: #ccc; }
+
+/* Pack cards in program */
+.prog-pack-card { margin-bottom: 8px; cursor: pointer; }
+.prog-card--locked { opacity: .5; cursor: default; }
+.prog-lock-icon { font-size: 18px; color: #bbb; padding-right: 4px; }
+
+/* Checkpoint card */
+.prog-checkpoint-card {
+  display: flex; align-items: center; gap: 14px;
+  background: linear-gradient(135deg, #2C1F10 0%, #4a3520 100%);
+  border: 1px solid #6b4c2a; border-radius: 14px;
+  padding: 16px 18px; margin-top: 8px; cursor: pointer;
+  transition: opacity .15s;
+}
+.prog-checkpoint-card.prog-card--locked { opacity: .4; cursor: default; }
+.prog-checkpoint-icon { font-size: 24px; color: #F0A860; flex-shrink: 0; }
+.prog-checkpoint-body { flex: 1; }
+.prog-checkpoint-title { font-size: 15px; font-weight: 700; color: #fff; }
+.prog-checkpoint-meta  { font-size: 12px; color: #C0A880; margin-top: 2px; }
+.prog-checkpoint-card .collection-arrow { color: #C0A880; font-size: 22px; }
+
+/* ── CHECKPOINT QUIZ ─────────────────────────────────────────────────────── */
+.cp-topbar {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 14px 20px; background: var(--ds-card);
+  border-bottom: 1px solid var(--ds-border);
+}
+.cp-title    { font-size: 15px; font-weight: 700; flex: 1; }
+.cp-progress { font-size: 13px; color: #999; margin: 0 12px; }
+.cp-timer    { font-size: 15px; font-weight: 700; min-width: 40px; text-align: right; }
+.cp-body     { flex: 1; overflow-y: auto; padding: 24px 20px; max-width: 640px; margin: 0 auto; width: 100%; }
+.cp-question { font-size: 18px; font-weight: 600; line-height: 1.5; margin-bottom: 24px; }
+.cp-options  { display: flex; flex-direction: column; gap: 12px; }
+.cp-option {
+  padding: 16px 18px; border: 2px solid var(--ds-border); border-radius: 12px;
+  background: var(--ds-card); font-size: 15px; text-align: left;
+  cursor: pointer; transition: border-color .15s; line-height: 1.4;
+}
+.cp-option:hover          { border-color: var(--acc); }
+.cp-option--correct       { border-color: #4CAF50; background: #E8F5E9; }
+.cp-option--wrong         { border-color: #C0392B; background: #FDEDEC; }
+
+/* Result screen */
+.cp-result      { text-align: center; padding: 40px 20px; }
+.cp-result-score { font-size: 56px; font-weight: 800; line-height: 1; margin-bottom: 8px; }
+.cp-result-pct   { font-size: 24px; font-weight: 700; color: #888; margin-bottom: 16px; }
+.cp-result-label { font-size: 20px; font-weight: 700; margin-bottom: 10px; }
+.cp-result-hint  { font-size: 14px; color: #888; margin-bottom: 32px; line-height: 1.6; }
+.cp-result-btn   {
+  background: var(--acc); color: #fff; border: none; border-radius: 99px;
+  padding: 16px 40px; font-size: 16px; font-weight: 700; cursor: pointer;
+}
