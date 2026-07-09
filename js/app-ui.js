@@ -1299,3 +1299,287 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
   // Also render immediately if already visible
   render();
 })();
+
+// ─── PROGRAMS ─────────────────────────────────────────────────────────────────
+(function initPrograms() {
+  const PROG_KEY = 'ds_program_progress'; // { programId: { checkpointId: passed, unlockedPacks: [] } }
+
+  // ── Storage ──────────────────────────────────────────────────────────────────
+  function getProgress() {
+    try { return JSON.parse(localStorage.getItem(PROG_KEY) || '{}'); } catch { return {}; }
+  }
+  function saveProgress(p) { localStorage.setItem(PROG_KEY, JSON.stringify(p)); }
+
+  function isCheckpointPassed(programId, checkpointId) {
+    const p = getProgress();
+    return !!(p[programId] && p[programId][checkpointId]);
+  }
+  function passCheckpoint(programId, checkpointId) {
+    const p = getProgress();
+    if (!p[programId]) p[programId] = {};
+    p[programId][checkpointId] = true;
+    saveProgress(p);
+  }
+
+  // ── Section lock logic ───────────────────────────────────────────────────────
+  // Section N is unlocked if all previous sections' checkpoints are passed
+  function isSectionUnlocked(program, sectionIndex) {
+    if (sectionIndex === 0) return true;
+    for (let i = 0; i < sectionIndex; i++) {
+      const cp = program.sections[i].checkpoint;
+      if (cp && !isCheckpointPassed(program.id, cp.id)) return false;
+    }
+    return true;
+  }
+
+  // ── Render program list ──────────────────────────────────────────────────────
+  function renderProgramList() {
+    const container = document.getElementById('libTabPrograms');
+    if (!container) return;
+    if (typeof programsData === 'undefined' || !programsData.length) {
+      container.className = 'library-tab-content library-placeholder';
+      container.innerHTML = '<div class="library-placeholder-icon">\u25c8</div>'
+        + '<div class="library-placeholder-title">No programs yet</div>'
+        + '<div class="library-placeholder-text">Programs are structured learning paths through multiple packs.</div>';
+      return;
+    }
+
+    container.className = 'library-tab-content';
+    let html = '<div class="programs-list">';
+    programsData.forEach(prog => {
+      // Count progress
+      const totalCPs  = prog.sections.filter(s => s.checkpoint).length;
+      const passedCPs = prog.sections.filter(s => s.checkpoint && isCheckpointPassed(prog.id, s.checkpoint.id)).length;
+      const pct       = totalCPs ? Math.round((passedCPs / totalCPs) * 100) : 0;
+
+      html += '<div class="program-card" data-prog-id="' + prog.id + '">'
+        + '<div class="program-card-icon"><i class="ti ' + (prog.icon || 'ti-stack') + '"></i></div>'
+        + '<div class="program-card-body">'
+        + '<div class="program-card-title">' + prog.title + '</div>'
+        + '<div class="program-card-desc">' + prog.description + '</div>'
+        + '<div class="program-progress-bar-wrap">'
+        + '<div class="program-progress-bar" style="width:' + pct + '%"></div>'
+        + '</div>'
+        + '<div class="program-progress-label">' + passedCPs + ' / ' + totalCPs + ' checkpoints passed</div>'
+        + '</div>'
+        + '</div>';
+    });
+    html += '</div>';
+    container.innerHTML = html;
+
+    container.querySelectorAll('.program-card').forEach(card => {
+      card.addEventListener('click', () => {
+        const prog = programsData.find(p => p.id === card.dataset.progId);
+        if (prog) renderProgramDetail(prog);
+      });
+    });
+  }
+
+  // ── Render program detail ─────────────────────────────────────────────────────
+  function renderProgramDetail(program) {
+    const container = document.getElementById('libTabPrograms');
+    let html = '<div class="program-detail">'
+      + '<button class="program-back-btn" id="prog-back-btn">\u2190 Programs</button>'
+      + '<h2 class="program-detail-title">' + program.title + '</h2>'
+      + '<p class="program-detail-desc">' + program.description + '</p>';
+
+    program.sections.forEach((section, si) => {
+      const unlocked = isSectionUnlocked(program, si);
+      html += '<div class="prog-section' + (unlocked ? '' : ' prog-section--locked') + '">'
+        + '<div class="prog-section-label">' + section.title + '</div>';
+
+      // Pack cards
+      section.packs.forEach(pack => {
+        html += '<div class="collection-card prog-pack-card' + (unlocked ? '' : ' prog-card--locked') + '" '
+          + 'data-key="' + pack.key + '" data-label="' + pack.label + '">'
+          + '<div><div class="collection-name">' + pack.label + '</div></div>'
+          + (unlocked
+            ? '<div class="collection-arrow">\u203a</div>'
+            : '<div class="prog-lock-icon"><i class="ti ti-lock"></i></div>')
+          + '</div>';
+      });
+
+      // Checkpoint card
+      if (section.checkpoint) {
+        const cp     = section.checkpoint;
+        const passed = isCheckpointPassed(program.id, cp.id);
+        html += '<div class="prog-checkpoint-card' + (!unlocked ? ' prog-card--locked' : '') + '" '
+          + 'data-prog-id="' + program.id + '" data-cp-id="' + cp.id + '" data-section="' + si + '">'
+          + '<div class="prog-checkpoint-icon">'
+          + (passed ? '<i class="ti ti-circle-check" style="color:#4CAF50"></i>'
+            : unlocked ? '<i class="ti ti-flag"></i>'
+            : '<i class="ti ti-lock"></i>')
+          + '</div>'
+          + '<div class="prog-checkpoint-body">'
+          + '<div class="prog-checkpoint-title">' + cp.title + '</div>'
+          + '<div class="prog-checkpoint-meta">'
+          + (passed ? 'Passed \u2713'
+            : unlocked ? cp.drawCount + ' questions \u00b7 ' + cp.timeLimit + 's per question'
+            : 'Complete previous section to unlock')
+          + '</div>'
+          + '</div>'
+          + (unlocked && !passed ? '<div class="collection-arrow">\u203a</div>' : '')
+          + '</div>';
+      }
+
+      html += '</div>'; // prog-section
+    });
+
+    html += '</div>'; // program-detail
+    container.innerHTML = html;
+
+    // Back button
+    document.getElementById('prog-back-btn').addEventListener('click', renderProgramList);
+
+    // Pack clicks
+    container.querySelectorAll('.prog-pack-card').forEach(card => {
+      if (!card.classList.contains('prog-card--locked')) {
+        card.addEventListener('click', () => showModeScreen(card.dataset.key, card.dataset.label));
+      }
+    });
+
+    // Checkpoint clicks
+    container.querySelectorAll('.prog-checkpoint-card').forEach(card => {
+      const si = parseInt(card.dataset.section);
+      if (!isSectionUnlocked(program, si)) return;
+      if (isCheckpointPassed(program.id, card.dataset.cpId)) return;
+      card.addEventListener('click', () => {
+        const cp = program.sections[si].checkpoint;
+        startCheckpoint(program, cp, si);
+      });
+    });
+  }
+
+  // ── Checkpoint (quiz) ─────────────────────────────────────────────────────────
+  function startCheckpoint(program, checkpoint, sectionIndex) {
+    // Draw random questions
+    const pool     = [...checkpoint.questions];
+    const shuffled = pool.sort(() => Math.random() - 0.5);
+    const drawn    = shuffled.slice(0, Math.min(checkpoint.drawCount, pool.length));
+
+    let current   = 0;
+    let correct   = 0;
+    let timeLeft  = checkpoint.timeLimit;
+    let timer     = null;
+    let answered  = false;
+
+    const screen = document.getElementById('checkpointScreen');
+    const prog   = document.getElementById('checkpointProgress');
+    const qText  = document.getElementById('checkpointQuestion');
+    const opts   = document.getElementById('checkpointOptions');
+    const timEl  = document.getElementById('checkpointTimer');
+    const titleEl = document.getElementById('checkpointTitle');
+
+    if (!screen) return;
+    titleEl.textContent  = checkpoint.title;
+    screen.style.display = 'flex';
+
+    function showQuestion() {
+      answered = false;
+      clearInterval(timer);
+      timeLeft = checkpoint.timeLimit;
+
+      const q = drawn[current];
+      prog.textContent  = (current + 1) + ' / ' + drawn.length;
+      qText.textContent = q.q;
+      timEl.textContent = timeLeft + 's';
+      timEl.style.color = '';
+
+      // Shuffle options for display
+      const order = q.options.map((o, i) => i).sort(() => Math.random() - 0.5);
+      opts.innerHTML = order.map(i =>
+        '<button class="cp-option" data-idx="' + i + '">' + q.options[i] + '</button>'
+      ).join('');
+
+      opts.querySelectorAll('.cp-option').forEach(btn => {
+        btn.addEventListener('click', () => {
+          if (answered) return;
+          answered = true;
+          clearInterval(timer);
+          const chosen = parseInt(btn.dataset.idx);
+          if (chosen === q.correct) {
+            correct++;
+            btn.classList.add('cp-option--correct');
+          } else {
+            btn.classList.add('cp-option--wrong');
+            opts.querySelectorAll('.cp-option').forEach(b => {
+              if (parseInt(b.dataset.idx) === q.correct) b.classList.add('cp-option--correct');
+            });
+          }
+          setTimeout(nextQuestion, 1000);
+        });
+      });
+
+      // Timer
+      timer = setInterval(() => {
+        timeLeft--;
+        timEl.textContent = timeLeft + 's';
+        if (timeLeft <= 10) timEl.style.color = '#C0392B';
+        if (timeLeft <= 0) {
+          clearInterval(timer);
+          if (!answered) {
+            answered = true;
+            // Highlight correct answer
+            opts.querySelectorAll('.cp-option').forEach(b => {
+              if (parseInt(b.dataset.idx) === q.correct) b.classList.add('cp-option--correct');
+              else b.classList.add('cp-option--wrong');
+            });
+            setTimeout(nextQuestion, 1000);
+          }
+        }
+      }, 1000);
+    }
+
+    function nextQuestion() {
+      current++;
+      if (current >= drawn.length) {
+        showResult();
+      } else {
+        showQuestion();
+      }
+    }
+
+    function showResult() {
+      clearInterval(timer);
+      const pct     = Math.round((correct / drawn.length) * 100);
+      const passed  = pct >= 70;
+
+      if (passed) {
+        passCheckpoint(program.id, checkpoint.id);
+      }
+
+      titleEl.textContent = checkpoint.title;
+      qText.textContent   = '';
+      timEl.textContent   = '';
+      prog.textContent    = '';
+      opts.innerHTML      = '<div class="cp-result">'
+        + '<div class="cp-result-score" style="color:' + (passed ? '#4CAF50' : '#C0392B') + '">'
+        + correct + ' / ' + drawn.length + '</div>'
+        + '<div class="cp-result-pct">' + pct + '%</div>'
+        + '<div class="cp-result-label">' + (passed ? 'Checkpoint passed! \u2713' : 'Not passed — try again') + '</div>'
+        + '<div class="cp-result-hint">' + (passed ? 'The next section is now unlocked.' : 'You need 70% to pass. Questions are drawn randomly each attempt.') + '</div>'
+        + '<button class="btn-primary cp-result-btn" id="cp-done-btn">' + (passed ? 'Continue' : 'Try again') + '</button>'
+        + '</div>';
+
+      document.getElementById('cp-done-btn').addEventListener('click', () => {
+        screen.style.display = 'none';
+        if (passed) {
+          renderProgramDetail(program);
+        } else {
+          startCheckpoint(program, checkpoint, sectionIndex);
+        }
+      });
+    }
+
+    showQuestion();
+  }
+
+  // ── Init ─────────────────────────────────────────────────────────────────────
+  const observer = new MutationObserver(() => {
+    const el = document.getElementById('libTabPrograms');
+    if (el && el.style.display !== 'none') renderProgramList();
+  });
+  const tabEl = document.getElementById('libTabPrograms');
+  if (tabEl) observer.observe(tabEl, { attributes: true, attributeFilter: ['style'] });
+  renderProgramList();
+})();
