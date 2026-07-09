@@ -4,7 +4,7 @@
 // app.js — All application logic for Communication Trainer
 // Depends on: data.js and multiStepData.js (must be loaded first)
 
-const VERSION = 'v1.21.3';
+const VERSION = 'v1.21.4';
 
 // Pack icon map — global so both dashboard and favorites can use it
 const PACK_ICONS = {
@@ -46,6 +46,9 @@ function hideAll() {
 
 // Track whether mode screen was opened from dashboard or library
 let _modeOrigin = 'library';
+
+// Pack navigation context
+let _packContext = null; // { packs: [{key,label}], index: N } | null
 
 function navToHome() {
   homeScreen.style.display = 'none';
@@ -190,6 +193,31 @@ function showModeScreen(key, label) {
   if (window.progStartSession) progStartSession(key, label);
 }
 
+// Set the navigation context (called by Library, Folders, Programs)
+function setPackContext(packs, currentKey) {
+  const index = packs.findIndex(p => p.key === currentKey);
+  _packContext = (index >= 0 && packs.length > 1) ? { packs, index } : null;
+  updateNextBtn();
+}
+
+// Show/hide the next-pack arrow based on context
+function updateNextBtn() {
+  const btn = document.getElementById('modeNextBtn');
+  if (!btn) return;
+  const hasNext = _packContext && _packContext.index < _packContext.packs.length - 1;
+  btn.style.display = hasNext ? '' : 'none';
+}
+
+// Navigate to next pack in context
+function goNextPack() {
+  if (!_packContext) return;
+  const next = _packContext.packs[_packContext.index + 1];
+  if (!next) return;
+  _packContext.index++;
+  showModeScreen(next.key, next.label);
+  updateNextBtn();
+}
+
 // Save which training mode was last used for a pack
 function saveLastMode(packKey, modeName) {
   try {
@@ -289,17 +317,39 @@ function launchLastMode(packKey, packLabel) {
   }
 }
 
+// Build ordered pack list from #libTabPacks for next/prev navigation
+function _buildLibPackList() {
+  return Array.from(document.querySelectorAll('#libTabPacks .collection-card'))
+    .map(c => ({ key: c.dataset.key, label: c.dataset.label }))
+    .filter(p => p.key && p.label);
+}
+
 document.querySelectorAll('.collection-card').forEach(el => {
   const key   = el.dataset.key;
   const label = el.dataset.label;
   let cStartY = 0, cMoved = false, cDidTouch = false;
   el.addEventListener('touchstart', e => { cStartY = e.touches[0].clientY; cMoved = false; cDidTouch = true; }, { passive: true });
   el.addEventListener('touchmove',  e => { if (Math.abs(e.touches[0].clientY - cStartY) > 8) cMoved = true; }, { passive: true });
-  el.addEventListener('touchend',   e => { if (!cMoved) showModeScreen(key, label); });
-  el.addEventListener('click',      () => { if (cDidTouch) { cDidTouch = false; return; } showModeScreen(key, label); });
+  el.addEventListener('touchend',   e => {
+    if (!cMoved) {
+      // Set context only if clicked from Packs tab (not folders/programs which set their own)
+      if (el.closest('#libTabPacks') || el.closest('#libTabTopics')) {
+        setPackContext(_buildLibPackList(), key);
+      }
+      showModeScreen(key, label);
+    }
+  });
+  el.addEventListener('click', () => {
+    if (cDidTouch) { cDidTouch = false; return; }
+    if (el.closest('#libTabPacks') || el.closest('#libTabTopics')) {
+      setPackContext(_buildLibPackList(), key);
+    }
+    showModeScreen(key, label);
+  });
 });
 
 document.getElementById('modeBackBtn').addEventListener('click', showHome);
+document.getElementById('modeNextBtn') && document.getElementById('modeNextBtn').addEventListener('click', goNextPack);
 
 // Beta section toggle
 function toggleBeta() {
