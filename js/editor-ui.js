@@ -1020,7 +1020,7 @@ function renderModeContent() {
     <div class="field-block">
       <label class="field-label">${mode.stratLabel}</label>
       <div class="selector-row">
-        <select class="select" id="strat-select" ${readOnly ? 'disabled' : ''}>
+        <select class="select" id="strat-select" ${strats.length <= 1 && !isApp ? 'disabled' : ''}>
           ${strats.map((s,i) => `<option value="${i}" ${i===currentStrat?'selected':''}>${escHtml(s.name||'(unnamed)')}</option>`).join('')}
         </select>
         ${!readOnly ? `
@@ -1074,11 +1074,25 @@ function renderModeContent() {
   // ── Cards table
   const frontLabel = isMem ? 'Front' : (isSeq ? 'Prompt' : 'Situation');
   const backLabel  = isMem ? 'Back'  : 'Response';
-  const items      = isMem
-    ? (strat.cards || []).filter(c => !c.bundle || c.bundle === currentBundle || currentBundle === 'free')
-    : isSeq
-      ? (strat.steps || []).filter(s => !s.bundle || s.bundle === currentBundle || currentBundle === 'free')
-      : (strat.inputs || []).filter(i => !i.bundle || i.bundle === currentBundle);
+  // Build items list — for 'pro' bundle, include free cards (shown locked) + pro cards
+  const isPro = currentBundle === 'pro';
+  const getItems = () => {
+    if (isMem) {
+      const all = strat.cards || [];
+      if (isPro) return all.filter(c => !c.bundle || c.bundle === 'free' || c.bundle === 'pro');
+      return all.filter(c => !c.bundle || c.bundle === currentBundle || currentBundle === 'free');
+    }
+    if (isSeq) {
+      const all = strat.steps || [];
+      if (isPro) return all.filter(s => !s.bundle || s.bundle === 'free' || s.bundle === 'pro');
+      return all.filter(s => !s.bundle || s.bundle === currentBundle || currentBundle === 'free');
+    }
+    // single, challenges, mindset, collections
+    const all = strat.inputs || [];
+    if (isPro) return all.filter(i => !i.bundle || i.bundle === 'free' || i.bundle === 'pro');
+    return all.filter(i => !i.bundle || i.bundle === currentBundle);
+  };
+  const items = getItems();
 
   html += `
     <div class="cards-section">
@@ -1087,12 +1101,19 @@ function renderModeContent() {
         <span class="col-label">${backLabel}</span>
         <span></span>
       </div>
-      ${items.map((item, i) => `
-        <div class="card-row" data-index="${i}">
-          <textarea class="card-ta" data-field="q" rows="2" ${readOnly ? 'readonly' : ''} placeholder="${frontLabel}...">${escHtml(item.q||item.front||'')}</textarea>
-          <textarea class="card-ta" data-field="a" rows="2" ${readOnly ? 'readonly' : ''} placeholder="${backLabel}...">${escHtml(item.a||item.back||'')}</textarea>
-          ${!readOnly ? `<button class="icon-btn danger card-del" data-index="${i}" title="Remove">&#x2715;</button>` : '<span></span>'}
-        </div>`).join('')}
+      ${items.map((item, i) => {
+        const isFreeInPro = isPro && (item.bundle === 'free' || !item.bundle);
+        const isLocked = readOnly || isFreeInPro;
+        const rowClass = isFreeInPro ? 'card-row card-row--inherited' : 'card-row';
+        const lockBadge = isFreeInPro ? `<span class="card-inherited-badge" title="From Free bundle — edit in Free view">Free</span>` : '';
+        return `
+        <div class="${rowClass}" data-index="${i}">
+          ${lockBadge}
+          <textarea class="card-ta" data-field="q" rows="2" ${isLocked ? 'readonly' : ''} placeholder="${frontLabel}...">${escHtml(item.q||item.front||'')}</textarea>
+          <textarea class="card-ta" data-field="a" rows="2" ${isLocked ? 'readonly' : ''} placeholder="${backLabel}...">${escHtml(item.a||item.back||'')}</textarea>
+          ${!isLocked ? `<button class="icon-btn danger card-del" data-index="${i}" title="Remove">&#x2715;</button>` : '<span></span>'}
+        </div>`;
+      }).join('')}
       ${!readOnly ? `<button class="btn btn--ghost add-card-btn" style="width:100%;margin-top:8px;">+ Add ${mode.cardLabel.toLowerCase()}</button>` : ''}
     </div>`;
 

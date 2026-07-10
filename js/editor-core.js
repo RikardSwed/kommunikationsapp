@@ -1,7 +1,7 @@
 // editor-core.js — Deckstack Pack Editor
 // Depends on: data.js, challengesData.js, mindsetData.js, multiStepData.js, memorizeData.js
 
-const EDITOR_VERSION = 'v1.3.5';
+const EDITOR_VERSION = 'v1.3.6';
 const STORAGE_KEY    = 'ds_editor_packs';
 const ACTIVE_KEY     = 'ds_editor_active';
 
@@ -95,6 +95,11 @@ function packFromAppData(key) {
     strategies: rawSeq.map(s => ({ name: s.name||'', description: s.description||'', steps: mapInputs(s.steps||s.inputs) })),
     bundles: deriveBundles(rawSeq.map(s => ({ inputs: s.steps||s.inputs||[] }))),
   };
+
+  // Load tags from tagsData.js if available
+  if (typeof packTags !== 'undefined' && packTags[key]) {
+    pack.tags = [...packTags[key]];
+  }
 
   return pack;
 }
