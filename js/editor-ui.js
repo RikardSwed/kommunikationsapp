@@ -55,7 +55,83 @@ function showHome() {
   currentPack = null;
   showScreen('screen-home');
   renderPackList();
+  renderProgramList();
 }
+
+function renderProgramList() {
+  const appPrograms    = loadAppPrograms();
+  const editorPrograms = getAllEditorPrograms();
+  const myIds          = Object.keys(editorPrograms);
+
+  // App programs
+  let appHtml = '';
+  if (appPrograms.length) {
+    appPrograms.forEach(p => { appHtml += programRow(p.title, p.id, 'app', p.icon); });
+  } else {
+    appHtml = `<div class="empty-state-small">No app programs found.</div>`;
+  }
+  setHTML('program-list-app', appHtml);
+
+  // App checkpoints (tests) — flat list of all checkpoints from app programs
+  let testHtml = '';
+  const allCPs = [];
+  appPrograms.forEach(prog => {
+    (prog.sections || []).forEach(s => {
+      if (s.checkpoint) allCPs.push({ progTitle: prog.title, cp: s.checkpoint });
+    });
+  });
+  if (allCPs.length) {
+    allCPs.forEach(({ progTitle, cp }) => {
+      testHtml += `<div class="pack-row pack-row--test">
+        <span class="pack-row-name">${escHtml(cp.title)}</span>
+        <span class="pack-row-meta">${escHtml(progTitle)} · ${cp.questions ? cp.questions.length : 0} Q</span>
+      </div>`;
+    });
+  } else {
+    testHtml = `<div class="empty-state-small">No tests found in app programs.</div>`;
+  }
+  setHTML('program-list-tests', testHtml);
+
+  // My programs
+  let myHtml = '';
+  if (myIds.length) {
+    myIds.forEach(id => { myHtml += programRow(editorPrograms[id].title, id, 'my', editorPrograms[id].icon); });
+  } else {
+    myHtml = `<div class="empty-state-small">No programs yet. Import from AI to create one.</div>`;
+  }
+  setHTML('program-list-my', myHtml);
+
+  document.querySelectorAll('.program-row .prog-del').forEach(btn => {
+    btn.addEventListener('click', e => {
+      e.stopPropagation();
+      if (confirm(`Delete "${btn.dataset.title}"?`)) {
+        deleteEditorProgram(btn.dataset.id);
+        renderProgramList();
+      }
+    });
+  });
+  document.querySelectorAll('.program-row .prog-export').forEach(btn => {
+    btn.addEventListener('click', e => {
+      e.stopPropagation();
+      const prog = getAllEditorPrograms()[btn.dataset.id];
+      if (prog) exportProgram(prog);
+    });
+  });
+}
+
+function programRow(title, id, type, icon) {
+  const ico = icon || 'ti-stack';
+  const actions = type === 'my'
+    ? `<button class="icon-btn prog-export" data-id="${id}" title="Export JSON" style="font-size:13px;">↓</button>
+       <button class="icon-btn pack-del prog-del" data-id="${id}" data-title="${escHtml(title)}" title="Delete">&#x2715;</button>`
+    : '';
+  return `<div class="pack-row program-row" data-id="${id}" data-type="${type}">
+    <span class="pack-row-icon"><i class="ti ${ico}"></i></span>
+    <span class="pack-row-name">${escHtml(title)}</span>
+    ${actions}
+  </div>`;
+}
+
 
 function renderPackList() {
   const appPacks    = loadAppPacks();
@@ -140,7 +216,7 @@ function handleJsonFileImport(e) {
 }
 
 function showSyntaxGuide() {
-  var lines = [
+  var packTmpl = [
     'PACK: Pack Name Here',
     '',
     '# -- SINGLE STRATEGY -----------------------------------',
@@ -156,105 +232,121 @@ function showSyntaxGuide() {
     'BUNDLE: pro',
     '- Situation: Describe the situation or trigger | Response: The response here.',
     '- Situation: Another situation | Response: Another response.',
-    '- Situation: Extra pro situation 1 | Response: Pro response.',
-    '- Situation: Extra pro situation 2 | Response: Pro response.',
-    '',
-    'BUNDLE: Workplace & Social',
-    '- Situation: A workplace-specific situation | Response: A workplace response.',
-    '- Situation: Another workplace situation | Response: Another response.',
-    '',
-    '## Strategy: Next Strategy Name',
-    '**Explanation:** Explanation here.',
-    '',
-    'BUNDLE: free',
-    '- Situation: Situation | Response: Response.',
-    '',
-    'BUNDLE: pro',
-    '- Situation: Situation | Response: Response.',
-    '- Situation: Extra pro situation | Response: Pro response.',
-    '',
-    '# -- COLLECTIONS ---------------------------------------',
-    'MODE: collections',
-    '',
-    '## Collection: Collection Name',
-    '**Explanation:** What does this collection cover?',
-    '',
-    'BUNDLE: free',
-    '- Situation: Situation | Response: Response.',
-    '',
-    'BUNDLE: pro',
-    '- Situation: Situation | Response: Response.',
     '- Situation: Extra pro situation | Response: Pro response.',
     '',
     '# -- MEMORIZE ------------------------------------------',
     'MODE: memorize',
     '',
     '## Strategy: Strategy Name',
-    '**Explanation:** What should the user memorize about this strategy?',
+    '**Explanation:** What should the user memorize?',
     '',
     '- Front: Term or concept | Back: Definition or explanation.',
     '- Front: Another term | Back: Its explanation.',
-    '- Front: A third term | Back: Its explanation.',
     '',
     '# -- SEQUENCES -----------------------------------------',
     'MODE: sequences',
     '',
     '## Combo: Combo Name',
-    '**Explanation:** Describe this combination of strategies and when to use it.',
+    '**Explanation:** Describe this combination and when to use it.',
     '',
-    '- Prompt: Step 1 description | Response: What to say or do in step 1.',
-    '- Prompt: Step 2 description | Response: What to say or do in step 2.',
-    '- Prompt: Step 3 description | Response: What to say or do in step 3.',
+    '- Prompt: Step 1 description | Response: What to say or do.',
+    '- Prompt: Step 2 description | Response: What to say or do.',
     '',
     '# -- CHALLENGES ----------------------------------------',
     'MODE: challenges',
     '',
     '## Category: Category Name',
-    '**Explanation:** What kind of challenge does this category represent?',
+    '**Explanation:** What kind of challenge?',
     '',
     'BUNDLE: free',
-    '- Situation: Challenge description | Response: Ideal response.',
-    '- Situation: Another challenge | Response: Ideal response.',
+    '- Situation: Challenge | Response: Ideal response.',
     '',
     'BUNDLE: pro',
-    '- Situation: Challenge description | Response: Ideal response.',
-    '- Situation: Another challenge | Response: Ideal response.',
+    '- Situation: Challenge | Response: Ideal response.',
     '- Situation: Extra pro challenge | Response: Pro response.',
     '',
     '# -- MINDSET -------------------------------------------',
     'MODE: mindset',
     '',
     '## Mindset: Mindset Name',
-    '**Explanation:** What mindset shift does this represent? When is it useful?',
+    '**Explanation:** What mindset shift does this represent?',
     '',
     'BUNDLE: free',
-    '- Situation: Situation or unhelpful thought | Response: Reframed mindset or response.',
-    '- Situation: Another situation | Response: Reframed response.',
+    '- Situation: Situation or unhelpful thought | Response: Reframed response.',
     '',
     'BUNDLE: pro',
-    '- Situation: Situation or unhelpful thought | Response: Reframed mindset or response.',
-    '- Situation: Another situation | Response: Reframed response.',
-    '- Situation: Extra pro situation | Response: Pro reframe.'
-  ];
-  var tmpl = lines.join('\n');
+    '- Situation: Situation or unhelpful thought | Response: Reframed response.',
+    '- Situation: Extra pro situation | Response: Pro reframe.',
+  ].join('\n');
 
-  var rules = [
-    '<h3>Rules for AI tools</h3>',
+  var programTmpl = [
+    'PROGRAM: Program Title',
+    'DESCRIPTION: Short description of what this program covers.',
+    'ICON: ti-book',
+    '',
+    'SECTION: Chapter 1 — First Topic',
+    'PACK: First Topic',
+    'MODE: single',
+    '',
+    '## Strategy: Strategy Name',
+    '**Explanation:** Explanation here.',
+    '',
+    'BUNDLE: free',
+    '- Situation: X | Response: Y.',
+    '',
+    'BUNDLE: pro',
+    '- Situation: X | Response: Y.',
+    '- Situation: Extra | Response: Y.',
+    '',
+    'CHECKPOINT: Chapter 1 Test',
+    'TIME: 90',
+    'DRAW: 10',
+    '- Q: What is the key idea here? | Correct: B | A: Option A | B: Correct option | C: Option C | D: Option D',
+    '- Q: Another question? | Correct: A | A: Right answer | B: Wrong | C: Wrong | D: Wrong',
+    '',
+    'SECTION: Chapter 2 — Second Topic',
+    'PACK: Second Topic',
+    'MODE: single',
+    '',
+    '## Strategy: Another Strategy',
+    '**Explanation:** Explanation here.',
+    '',
+    'BUNDLE: free',
+    '- Situation: X | Response: Y.',
+    '',
+    'BUNDLE: pro',
+    '- Situation: X | Response: Y.',
+    '- Situation: Extra | Response: Y.',
+  ].join('\n');
+
+  var packRules = [
+    '<h3>Pack rules</h3>',
     '<ul class="syntax-rules">',
-    '<li><code>PACK:</code> &mdash; Pack name, one line at the very top.</li>',
-    '<li><code>MODE:</code> &mdash; one of: <code>single</code>, <code>collections</code>, <code>memorize</code>, <code>sequences</code>, <code>challenges</code>, <code>mindset</code>. You do not need all modes &mdash; only include the ones relevant to your pack.</li>',
-    '<li><code>##</code> &mdash; heading for a new strategy, category, collection, combo, or mindset within a mode.</li>',
-    '<li><code>**Explanation:**</code> &mdash; descriptive text explaining the strategy. Can be several sentences.</li>',
-    '<li><code>BUNDLE: free</code> &mdash; the default free-tier input cards. Always include this.</li>',
-    '<li><code>BUNDLE: pro</code> &mdash; pro-tier cards. Must include all free cards PLUS additional ones. Pro users see this bundle automatically; free users see the free bundle.</li>',
-    '<li><code>BUNDLE: Name</code> &mdash; optional extra thematic bundle, e.g. "Workplace &amp; Social". Users can activate these manually.</li>',
-    '<li><code>-</code> &mdash; one card per line. Format depends on mode:</li>',
-    '<li style="list-style:none; padding-left:20px;"><code>Situation: X | Response: Y</code> &mdash; for single, collections, challenges, mindset</li>',
-    '<li style="list-style:none; padding-left:20px;"><code>Front: X | Back: Y</code> &mdash; for memorize</li>',
-    '<li style="list-style:none; padding-left:20px;"><code>Prompt: X | Response: Y</code> &mdash; for sequences</li>',
-    '<li>Each pack can have as many strategies and cards as needed.</li>',
-    '<li>Memorize mode does not use bundles &mdash; skip BUNDLE lines there.</li>',
-    '</ul>'
+    '<li><code>PACK:</code> &mdash; Pack name, one line. Use multiple PACK: blocks to import several packs at once.</li>',
+    '<li><code>MODE:</code> &mdash; one of: <code>single</code>, <code>collections</code>, <code>memorize</code>, <code>sequences</code>, <code>challenges</code>, <code>mindset</code>. Only include relevant modes.</li>',
+    '<li><code>##</code> &mdash; new strategy, category, combo, collection, or mindset within a mode.</li>',
+    '<li><code>**Explanation:**</code> &mdash; descriptive text. Can be several sentences.</li>',
+    '<li><code>BUNDLE: free</code> &mdash; free-tier cards. Always include this.</li>',
+    '<li><code>BUNDLE: pro</code> &mdash; pro-tier cards. Include all free cards PLUS extras. Pro users see this bundle automatically.</li>',
+    '<li><code>BUNDLE: Name</code> &mdash; optional extra thematic bundle, e.g. "Workplace &amp; Social".</li>',
+    '<li><code>-</code> &mdash; one card per line: <code>Situation: X | Response: Y</code> / <code>Front: X | Back: Y</code> / <code>Prompt: X | Response: Y</code></li>',
+    '<li>Memorize mode does not use bundles.</li>',
+    '</ul>',
+  ].join('');
+
+  var programRules = [
+    '<h3>Program rules</h3>',
+    '<ul class="syntax-rules">',
+    '<li><code>PROGRAM:</code> &mdash; Program title. Triggers program mode — packs become sections, not standalone packs.</li>',
+    '<li><code>DESCRIPTION:</code> &mdash; Short description shown in the programs list.</li>',
+    '<li><code>ICON:</code> &mdash; Tabler icon name, e.g. <code>ti-book</code>, <code>ti-brain</code>, <code>ti-message-circle</code>.</li>',
+    '<li><code>SECTION:</code> &mdash; Starts a new section. Everything that follows belongs to this section until the next SECTION:.</li>',
+    '<li><code>PACK:</code> inside a section &mdash; defines the pack for that section using normal pack syntax.</li>',
+    '<li><code>CHECKPOINT:</code> &mdash; Optional. Defines a test for the section.</li>',
+    '<li><code>TIME:</code> &mdash; Seconds per question (default 90).</li>',
+    '<li><code>DRAW:</code> &mdash; Number of questions to draw from the pool (default 20).</li>',
+    '<li><code>- Q: Question? | Correct: B | A: Option | B: Option | C: Option | D: Option</code> &mdash; one question per line. Correct is the letter of the right answer.</li>',
+    '</ul>',
   ].join('');
 
   var modal = document.getElementById('syntax-modal');
@@ -262,20 +354,38 @@ function showSyntaxGuide() {
   modal.innerHTML =
     '<div class="modal modal--wide">' +
       '<div class="modal-header"><h2>Import Syntax Guide</h2><button class="icon-btn" id="sg-close">&#x2715;</button></div>' +
-      '<p class="modal-desc">Give this format and rules to any AI tool (Claude, NotebookLM, ChatGPT) to generate importable packs.</p>' +
-      '<div class="syntax-section">' + rules + '</div>' +
-      '<div class="syntax-section">' +
-        '<h3>Full template &mdash; copy and give to AI</h3>' +
-        '<button class="btn btn--primary btn--sm" id="sg-copy" style="margin-bottom:12px;">Copy full template</button>' +
-        '<pre class="syntax-pre" id="sg-tmpl"></pre>' +
+      '<p class="modal-desc">Give this format and rules to any AI tool (Claude, NotebookLM, ChatGPT) to generate importable content.</p>' +
+      '<div class="syntax-tabs">' +
+        '<button class="syntax-tab syntax-tab--active" data-stab="pack">Packs</button>' +
+        '<button class="syntax-tab" data-stab="program">Programs</button>' +
+      '</div>' +
+      '<div class="syntax-section" id="stab-pack">' + packRules +
+        '<h3>Pack template</h3>' +
+        '<button class="btn btn--primary btn--sm" id="sg-copy-pack" style="margin-bottom:12px;">Copy pack template</button>' +
+        '<pre class="syntax-pre" id="sg-pack-tmpl"></pre>' +
+      '</div>' +
+      '<div class="syntax-section" id="stab-program" style="display:none">' + programRules +
+        '<h3>Program template</h3>' +
+        '<button class="btn btn--primary btn--sm" id="sg-copy-prog" style="margin-bottom:12px;">Copy program template</button>' +
+        '<pre class="syntax-pre" id="sg-prog-tmpl"></pre>' +
       '</div>' +
       '<div class="modal-actions"><button class="btn btn--ghost" id="sg-done">Close</button></div>' +
     '</div>';
   modal.style.display = 'flex';
-  document.getElementById('sg-tmpl').textContent = tmpl;
+  document.getElementById('sg-pack-tmpl').textContent = packTmpl;
+  document.getElementById('sg-prog-tmpl').textContent = programTmpl;
   document.getElementById('sg-close').onclick = function() { modal.style.display = 'none'; };
   document.getElementById('sg-done').onclick  = function() { modal.style.display = 'none'; };
-  document.getElementById('sg-copy').onclick  = function() { navigator.clipboard.writeText(tmpl).then(function() { showToast('Template copied!'); }); };
+  document.getElementById('sg-copy-pack').onclick = function() { navigator.clipboard.writeText(packTmpl).then(function() { showToast('Pack template copied!'); }); };
+  document.getElementById('sg-copy-prog').onclick = function() { navigator.clipboard.writeText(programTmpl).then(function() { showToast('Program template copied!'); }); };
+  document.querySelectorAll('.syntax-tab').forEach(function(tab) {
+    tab.addEventListener('click', function() {
+      document.querySelectorAll('.syntax-tab').forEach(function(t) { t.classList.remove('syntax-tab--active'); });
+      tab.classList.add('syntax-tab--active');
+      document.getElementById('stab-pack').style.display    = tab.dataset.stab === 'pack'    ? '' : 'none';
+      document.getElementById('stab-program').style.display = tab.dataset.stab === 'program' ? '' : 'none';
+    });
+  });
 }
 function showPasteDialog() {
   // Build modal
@@ -330,12 +440,46 @@ MODE: challenges
     const text = document.getElementById('paste-ta').value.trim();
     if (!text) { showToast('Nothing to import'); return; }
     try {
-      const pack = importFromText(text);
-      const all  = getAllEditorPacks();
-      if (all[pack.key]) pack.key = pack.key + '_' + Date.now().toString(36);
-      saveEditorPack(pack);
+      const result = importFromText(text);
+
+      // Program import
+      if (result && result.type === 'program') {
+        // Save all embedded packs
+        result.packs.forEach(pack => {
+          const all = getAllEditorPacks();
+          if (all[pack.key]) pack.key = pack.key + '_' + Date.now().toString(36);
+          saveEditorPack(pack);
+        });
+        // Save program
+        const all = getAllEditorPrograms();
+        if (all[result.program.id]) result.program.id = result.program.id + '_' + Date.now().toString(36);
+        saveEditorProgram(result.program);
+        modal.style.display = 'none';
+        showToast(`Imported program "${result.program.title}" with ${result.packs.length} pack${result.packs.length !== 1 ? 's' : ''}`);
+        renderPackList();
+        renderProgramList();
+        return;
+      }
+
+      // Multi-pack import
+      if (Array.isArray(result)) {
+        const all = getAllEditorPacks();
+        result.forEach(pack => {
+          if (all[pack.key]) pack.key = pack.key + '_' + Date.now().toString(36);
+          saveEditorPack(pack);
+        });
+        modal.style.display = 'none';
+        showToast(`Imported ${result.length} packs`);
+        renderPackList();
+        return;
+      }
+
+      // Single pack import
+      const all = getAllEditorPacks();
+      if (all[result.key]) result.key = result.key + '_' + Date.now().toString(36);
+      saveEditorPack(result);
       modal.style.display = 'none';
-      showToast(`Imported "${pack.name}"`);
+      showToast(`Imported "${result.name}"`);
       renderPackList();
     } catch (err) {
       alert('Import failed: ' + err.message);

@@ -122,6 +122,40 @@ function saveVersion(pack, versionName) {
   saveEditorPack(pack);
 }
 
+// ── PROGRAM STORAGE ───────────────────────────────────────────────────────────
+
+const PROGRAM_KEY = 'ds_editor_programs';
+
+function getAllEditorPrograms() {
+  try { return JSON.parse(localStorage.getItem(PROGRAM_KEY) || '{}'); } catch { return {}; }
+}
+function saveEditorProgram(program) {
+  const all = getAllEditorPrograms();
+  all[program.id] = program;
+  try { localStorage.setItem(PROGRAM_KEY, JSON.stringify(all)); return true; } catch { return false; }
+}
+function deleteEditorProgram(id) {
+  const all = getAllEditorPrograms(); delete all[id];
+  localStorage.setItem(PROGRAM_KEY, JSON.stringify(all));
+}
+
+function loadAppPrograms() {
+  const src = window._dsPrograms || [];
+  return src.map(p => ({ id: p.id, title: p.title, icon: p.icon || 'ti-stack', source: 'app', sections: p.sections || [] }));
+}
+
+function exportProgram(program) {
+  const out = {
+    meta: { id: program.id, title: program.title, exportedAt: new Date().toISOString(), editorVersion: EDITOR_VERSION },
+    data: program,
+  };
+  const blob = new Blob([JSON.stringify(out, null, 2)], { type: 'application/json' });
+  const url  = URL.createObjectURL(blob);
+  const a    = document.createElement('a');
+  a.href = url; a.download = `deckstack-program-${program.id}-${Date.now()}.json`;
+  a.click(); URL.revokeObjectURL(url);
+}
+
 // ── EXPORT ────────────────────────────────────────────────────────────────────
 
 function exportPack(pack) {
@@ -159,44 +193,75 @@ function importFromJSON(jsonString) {
 }
 
 // ── IMPORT: AI TEXT (paste syntax) ───────────────────────────────────────────
-// Expected syntax (produced by AI tools like NotebookLM or Claude):
+// Supports three modes:
 //
-// PACK: Pack Name
-// MODE: single
+// 1. Single pack:
+//    PACK: Pack Name
+//    MODE: single
+//    ## Strategy: ...
+//    BUNDLE: free
+//    - Situation: X | Response: Y
+//    BUNDLE: pro
+//    - Situation: X | Response: Y
 //
-// ## Strategy: Strategy Name
-// **Explanation:** Explanation text here...
+// 2. Multiple packs (no PROGRAM line) — returns array of packs:
+//    PACK: Pack A
+//    ...
+//    PACK: Pack B
+//    ...
 //
-// - Situation: Someone says X | Response: "You say Y."
-// - Situation: Another trigger | Response: "Another answer."
+// 3. Program with embedded packs:
+//    PROGRAM: Title
+//    DESCRIPTION: ...
+//    ICON: ti-book
+//    SECTION: Chapter 1
+//    PACK: Pack Name
+//    ...
+//    CHECKPOINT: Chapter 1 Test
+//    TIME: 90
+//    DRAW: 10
+//    - Q: Question? | Correct: B | A: Opt A | B: Opt B | C: Opt C | D: Opt D
 //
-// ## Strategy: Next Strategy Name
-// ...
-//
-// MODE: challenges
-// ## Category: Category Name
-// ...
+// Returns: single pack object, array of pack objects, or {type:'program', program, packs[]}
 
 function importFromText(text) {
   const lines = text.split('\n');
-  let packName   = 'Imported pack';
+
+  // Detect mode
+  const hasProgram = lines.some(l => /^PROGRAM:/i.test(l.trim()));
+  const packStarts = lines.reduce((a, l, i) => { if (/^PACK:/i.test(l.trim())) a.push(i); return a; }, []);
+
+  if (hasProgram) return _parseProgram(lines);
+  if (packStarts.length > 1) return _parseMultiplePacks(lines, packStarts);
+  return _parseSinglePack(lines);
+}
+
+// ── SHARED: parse a block of lines into a pack object ────────────────────────
+
+function _parsePack(lines) {
+  let packName = 'Imported pack';
   let currentModeId = 'single';
-  const modeBuffers = {}; // modeId -> [{name, description, inputs/cards/steps}]
+  const modeBuffers = {};
   MODES.forEach(m => { modeBuffers[m.id] = []; });
 
   let currentStrat = null;
+  let currentBundle = 'default';
   let inExplanation = false;
   let explanationLines = [];
 
   function pushStrat() {
     if (!currentStrat) return;
-    if (inExplanation) { currentStrat.description = explanationLines.join('\n').trim(); inExplanation = false; explanationLines = []; }
+    if (inExplanation) {
+      currentStrat.description = explanationLines.join('\n').trim();
+      inExplanation = false; explanationLines = [];
+    }
     modeBuffers[currentModeId].push(currentStrat);
     currentStrat = null;
   }
 
   function newStrat(name) {
     pushStrat();
+    currentBundle = 'default';
     const isMem = currentModeId === 'memorize';
     const isSeq = currentModeId === 'sequences';
     currentStrat = { name, description: '', ...(isMem ? { cards: [] } : isSeq ? { steps: [] } : { inputs: [] }) };
@@ -204,59 +269,189 @@ function importFromText(text) {
 
   for (const raw of lines) {
     const line = raw.trim();
+    if (!line) { if (inExplanation) { inExplanation = false; currentStrat && (currentStrat.description = explanationLines.join('\n').trim()); } continue; }
 
-    // Pack name
-    if (/^PACK:/i.test(line)) { packName = line.replace(/^PACK:/i, '').trim(); continue; }
+    if (/^PACK:/i.test(line)) { packName = line.replace(/^PACK:/i,'').trim(); continue; }
 
-    // Mode switch
     if (/^MODE:/i.test(line)) {
       pushStrat();
       const mId = line.replace(/^MODE:/i,'').trim().toLowerCase();
       const found = MODES.find(m => m.id === mId || m.label.toLowerCase() === mId);
       if (found) currentModeId = found.id;
+      currentBundle = 'default';
       continue;
     }
 
-    // Strategy / category heading
+    // BUNDLE line — sets current bundle for subsequent cards
+    if (/^BUNDLE:/i.test(line)) {
+      const bName = line.replace(/^BUNDLE:/i,'').trim();
+      currentBundle = bName.toLowerCase() === 'default' ? 'default' : slugify(bName) || bName.toLowerCase();
+      continue;
+    }
+
     const stratMatch = line.match(/^##\s+(?:Strategy|Category|Combo|Collection|Mindset):\s*(.+)/i);
-    if (stratMatch) { newStrat(stratMatch[1].trim()); inExplanation = false; continue; }
+    if (stratMatch) { newStrat(stratMatch[1].trim()); continue; }
 
-    // Explanation start
     if (/^\*\*Explanation:\*\*/i.test(line)) {
-      if (currentStrat) {
-        inExplanation = true;
-        explanationLines = [line.replace(/^\*\*Explanation:\*\*\s*/i, '')];
-      }
+      if (currentStrat) { inExplanation = true; explanationLines = [line.replace(/^\*\*Explanation:\*\*\s*/i,'')]; }
       continue;
     }
 
-    // Continued explanation (non-empty, non-card line)
     if (inExplanation && currentStrat && !line.startsWith('-')) {
-      if (line === '') { inExplanation = false; currentStrat.description = explanationLines.join('\n').trim(); }
-      else { explanationLines.push(line); }
-      continue;
+      explanationLines.push(line); continue;
     }
 
-    // Card / input line:  - Situation: X | Response: Y
-    //                     - Front: X | Back: Y
-    //                     - Prompt: X | Response: Y
     const cardMatch = line.match(/^-\s+(?:Situation|Front|Prompt|Q):\s*(.+?)\s*\|\s*(?:Response|Back|A):\s*(.+)/i);
     if (cardMatch && currentStrat) {
       const q = cardMatch[1].trim();
       const a = cardMatch[2].trim();
       if (currentModeId === 'memorize')       currentStrat.cards.push({ q, a });
-      else if (currentModeId === 'sequences') currentStrat.steps.push({ q, a, bundle: 'default' });
-      else                                    currentStrat.inputs.push({ q, a, bundle: 'default' });
-      continue;
+      else if (currentModeId === 'sequences') currentStrat.steps.push({ q, a, bundle: currentBundle });
+      else                                    currentStrat.inputs.push({ q, a, bundle: currentBundle });
     }
   }
-  pushStrat(); // flush last strategy
+  pushStrat();
 
   const pack = emptyPack(packName);
   MODES.forEach(m => {
     if (modeBuffers[m.id].length) {
-      pack[m.id] = { strategies: modeBuffers[m.id], bundles: [] };
+      // Derive bundles from inputs
+      const bundleIds = new Set();
+      modeBuffers[m.id].forEach(s => {
+        (s.inputs || s.steps || []).forEach(i => { if (i.bundle && i.bundle !== 'default') bundleIds.add(i.bundle); });
+      });
+      pack[m.id] = {
+        strategies: modeBuffers[m.id],
+        bundles: [...bundleIds].map(id => ({ id, name: id.charAt(0).toUpperCase() + id.slice(1) })),
+      };
     }
   });
   return pack;
 }
+
+// ── PARSE: single pack ────────────────────────────────────────────────────────
+
+function _parseSinglePack(lines) {
+  return _parsePack(lines);
+}
+
+// ── PARSE: multiple packs ─────────────────────────────────────────────────────
+
+function _parseMultiplePacks(lines, starts) {
+  return starts.map((start, i) => {
+    const end = starts[i + 1] || lines.length;
+    return _parsePack(lines.slice(start, end));
+  });
+}
+
+// ── PARSE: program ────────────────────────────────────────────────────────────
+
+function _parseCheckpointQuestion(line) {
+  // - Q: Question text? | Correct: B | A: Option A | B: Option B | C: Option C | D: Option D
+  const qMatch = line.match(/^-\s+Q:\s*(.+?)\s*\|/i);
+  if (!qMatch) return null;
+  const q = qMatch[1].trim();
+  const correctMatch = line.match(/\|\s*Correct:\s*([A-D])/i);
+  const correct = correctMatch ? 'ABCD'.indexOf(correctMatch[1].toUpperCase()) : 0;
+  const opts = [];
+  ['A','B','C','D'].forEach(letter => {
+    const m = line.match(new RegExp('\\|\\s*' + letter + ':\\s*([^|]+)', 'i'));
+    opts.push(m ? m[1].trim() : '');
+  });
+  return { id: 'q_' + Math.random().toString(36).slice(2,8), q, options: opts, correct };
+}
+
+function _parseProgram(lines) {
+  let programTitle = 'Imported Program';
+  let programDesc  = '';
+  let programIcon  = 'ti-stack';
+  const sections   = [];
+  const packs      = [];
+
+  let currentSection    = null;
+  let currentCheckpoint = null;
+  let inPackLines       = [];
+  let inPack            = false;
+
+  function flushPack() {
+    if (!inPack || !inPackLines.length) return;
+    const pack = _parsePack(inPackLines);
+    packs.push(pack);
+    if (currentSection) currentSection.packKey = pack.key;
+    inPackLines = [];
+    inPack = false;
+  }
+
+  function flushSection() {
+    flushPack();
+    if (currentSection) {
+      if (currentCheckpoint) { currentSection.checkpoint = currentCheckpoint; currentCheckpoint = null; }
+      sections.push(currentSection);
+    }
+    currentSection = null;
+  }
+
+  for (const raw of lines) {
+    const line = raw.trim();
+
+    if (/^PROGRAM:/i.test(line)) { programTitle = line.replace(/^PROGRAM:/i,'').trim(); inPack = false; continue; }
+    if (/^DESCRIPTION:/i.test(line)) { programDesc = line.replace(/^DESCRIPTION:/i,'').trim(); continue; }
+    if (/^ICON:/i.test(line)) { programIcon = line.replace(/^ICON:/i,'').trim(); continue; }
+
+    if (/^SECTION:/i.test(line)) {
+      flushSection();
+      currentSection = { id: 'section-' + (sections.length + 1), title: line.replace(/^SECTION:/i,'').trim(), packKey: null, checkpoint: null };
+      continue;
+    }
+
+    if (/^PACK:/i.test(line)) {
+      flushPack();
+      inPack = true;
+      inPackLines = [raw];
+      continue;
+    }
+
+    if (inPack && !/^SECTION:/i.test(line) && !/^CHECKPOINT:/i.test(line)) {
+      inPackLines.push(raw);
+      continue;
+    }
+
+    if (/^CHECKPOINT:/i.test(line)) {
+      flushPack();
+      currentCheckpoint = {
+        id: 'cp_' + slugify(line.replace(/^CHECKPOINT:/i,'').trim()).slice(0,12) + '_' + Date.now().toString(36).slice(-4),
+        title: line.replace(/^CHECKPOINT:/i,'').trim(),
+        timeLimit: 90,
+        drawCount: 20,
+        questions: [],
+      };
+      continue;
+    }
+
+    if (/^TIME:/i.test(line) && currentCheckpoint) { currentCheckpoint.timeLimit = parseInt(line.replace(/^TIME:/i,'').trim()) || 90; continue; }
+    if (/^DRAW:/i.test(line) && currentCheckpoint) { currentCheckpoint.drawCount = parseInt(line.replace(/^DRAW:/i,'').trim()) || 20; continue; }
+
+    if (currentCheckpoint && /^-\s+Q:/i.test(line)) {
+      const q = _parseCheckpointQuestion(line);
+      if (q) currentCheckpoint.questions.push(q);
+      continue;
+    }
+  }
+  flushSection();
+
+  const program = {
+    id: slugify(programTitle) + '_' + Date.now().toString(36).slice(-4),
+    title: programTitle,
+    description: programDesc,
+    icon: programIcon,
+    sections: sections.map((s, i) => ({
+      id: s.id,
+      title: s.title,
+      packs: s.packKey ? [{ key: s.packKey, label: packs.find(p => p.key === s.packKey)?.name || s.packKey }] : [],
+      ...(s.checkpoint ? { checkpoint: s.checkpoint } : {}),
+    })),
+  };
+
+  return { type: 'program', program, packs };
+}
+
