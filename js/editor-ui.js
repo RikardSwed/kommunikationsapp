@@ -1005,12 +1005,29 @@ function renderModeContent() {
   if (!currentPack[currentMode]) { currentPack[currentMode] = modeData; if (!currentPack._fromApp) saveEditorPack(currentPack); }
 
   const strats  = modeData.strategies || [];
-  const bundles = modeData.bundles    || [];
+  let   bundles = modeData.bundles    || [];
   const strat   = strats[currentStrat] || emptyStrategy(currentMode);
+
+  // If bundles array is empty but cards/inputs have bundle fields, derive them on the fly
+  if (!bundles.length) {
+    const ids = new Set();
+    strats.forEach(s => {
+      (s.inputs || s.cards || s.steps || []).forEach(i => { if (i.bundle && i.bundle !== 'default') ids.add(i.bundle); });
+    });
+    if (ids.size) {
+      const TIER_MAP = { free: 'free', pro: 'pro' };
+      bundles = [...ids].map(id => ({
+        id,
+        name: id === 'free' ? 'Free Bundle' : id === 'pro' ? 'Pro Bundle' : id.charAt(0).toUpperCase() + id.slice(1).replace(/-/g,' '),
+        tier: TIER_MAP[id] || 'pro-opt',
+      }));
+      modeData.bundles = bundles; // cache it
+    }
+  }
 
   const isMem  = currentMode === 'memorize';
   const isSeq  = currentMode === 'sequences';
-  const hasBundles = !isMem;
+  const hasBundles = bundles.length > 0;
 
   let html = `<div class="mode-body">`;
 
@@ -1020,7 +1037,7 @@ function renderModeContent() {
     <div class="field-block">
       <label class="field-label">${mode.stratLabel}</label>
       <div class="selector-row">
-        <select class="select" id="strat-select" ${strats.length <= 1 && !isApp ? 'disabled' : ''}>
+        <select class="select" id="strat-select" ${strats.length <= 1 && !readOnly ? 'disabled' : ''}>
           ${strats.map((s,i) => `<option value="${i}" ${i===currentStrat?'selected':''}>${escHtml(s.name||'(unnamed)')}</option>`).join('')}
         </select>
         ${!readOnly ? `
