@@ -1375,12 +1375,13 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
     html += '</div>';
     container.innerHTML = html;
 
-    container.querySelectorAll('.program-card').forEach(card => {
-      card.addEventListener('click', () => {
-        const prog = programsData.find(p => p.id === card.dataset.progId);
-        if (prog) renderProgramDetail(prog);
-      });
-    });
+    // Use event delegation to avoid duplicate listeners on re-render
+    container.onclick = e => {
+      const card = e.target.closest('.program-card');
+      if (!card) return;
+      const prog = programsData.find(p => p.id === card.dataset.progId);
+      if (prog) renderProgramDetail(prog);
+    };
   }
 
   // ── Render program detail ─────────────────────────────────────────────────────
