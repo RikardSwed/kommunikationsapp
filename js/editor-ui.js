@@ -262,51 +262,22 @@ function packRow(name, key, type) {
   const delBtn = (type === 'my')
     ? `<button class="icon-btn pack-del" data-key="${key}" data-name="${name}" title="Delete">&#x2715;</button>`
     : '';
-  // Show tags from tagsData (app) or editor pack (my)
-  let tags = [];
-  if (type === 'app' && typeof packTags !== 'undefined' && packTags[key]) {
-    tags = packTags[key];
-  } else if (type === 'my') {
-    const p = getAllEditorPacks()[key];
-    if (p && p.tags) tags = p.tags;
-  }
-  const tagHtml = tags.length
-    ? `<div class="pack-row-tags">${tags.slice(0,5).map(t => `<span class="editor-tag-chip">${escHtml(t)}</span>`).join('')}${tags.length > 5 ? `<span class="editor-tag-chip editor-tag-chip--more">+${tags.length - 5}</span>` : ''}</div>`
-    : '';
   return `
     <div class="pack-row" data-key="${key}" data-source="${type}">
-      <div class="pack-row-main">
-        <span class="pack-row-name">${escHtml(name)}</span>
-        ${tagHtml}
-      </div>
+      <span class="pack-row-name">${escHtml(name)}</span>
       ${delBtn}
     </div>`;
 }
 
 function programRow(title, id, type, icon) {
   const ico = icon || 'ti-stack';
-  // Show tags
-  let tags = [];
-  if (type === 'app') {
-    const src = (window._dsPrograms || []).find(p => p.id === id);
-    if (src && src.tags) tags = src.tags;
-  } else if (type === 'my') {
-    const p = getAllEditorPrograms()[id];
-    if (p && p.tags) tags = p.tags;
-  }
-  const tagHtml = tags.length
-    ? `<div class="pack-row-tags">${tags.slice(0,4).map(t => `<span class="editor-tag-chip">${escHtml(t)}</span>`).join('')}${tags.length > 4 ? `<span class="editor-tag-chip editor-tag-chip--more">+${tags.length - 4}</span>` : ''}</div>`
-    : '';
   const actions = type === 'my'
     ? `<button class="icon-btn prog-export" data-id="${id}" title="Export JSON" style="font-size:13px;">↓</button>
        <button class="icon-btn pack-del prog-del" data-id="${id}" data-title="${escHtml(title)}" title="Delete">&#x2715;</button>`
     : '';
   return `<div class="pack-row program-row" data-id="${id}" data-type="${type}">
     <span class="pack-row-icon"><i class="ti ${ico}"></i></span>
-    <div class="pack-row-main">
-      <span class="pack-row-name">${escHtml(title)}</span>
-      ${tagHtml}
-    </div>
+    <span class="pack-row-name">${escHtml(title)}</span>
     ${actions}
   </div>`;
 }

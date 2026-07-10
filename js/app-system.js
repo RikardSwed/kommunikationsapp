@@ -398,7 +398,13 @@ window.filterInputsByBundle = function(inputs, packKey) {
   const defs = BUNDLE_DEFS[packKey];
   if (!defs) return inputs;
   const active = getActiveBundles(packKey);
-  return inputs.filter(inp => !inp.bundle || active.includes(inp.bundle));
+  const hasProActive = active.includes('pro');
+  return inputs.filter(inp => {
+    if (!inp.bundle) return true;
+    if (active.includes(inp.bundle)) return true;
+    if (hasProActive && inp.bundle === 'free') return true;
+    return false;
+  });
 };
 
 // Generic version for memorize cards and sequences steps
@@ -406,9 +412,16 @@ window.filterCardsByBundle = function(cards, packKey) {
   const defs = BUNDLE_DEFS[packKey];
   if (!defs) return cards;
   const active = getActiveBundles(packKey);
-  return cards.filter(c => !c.bundle || active.includes(c.bundle));
+  const hasProActive = active.includes('pro');
+  return cards.filter(c => {
+    if (!c.bundle) return true;
+    if (active.includes(c.bundle)) return true;
+    if (hasProActive && c.bundle === 'free') return true;
+    return false;
+  });
 };
 
+// Render Input Bundles section into a settings panel
 // Render Input Bundles section into a settings panel
 window.renderBundleSection = function(containerEl, packKey) {
   const defs = BUNDLE_DEFS[packKey];
@@ -438,6 +451,7 @@ window.renderBundleSection = function(containerEl, packKey) {
     return false;
   };
 
+  const isPro = level === 'pro' || level === 'complete';
   const hasProBundle = defs.some(b => b.tier === 'pro');
   const saved = getBundleState(packKey) || [];
   const active = getActiveBundles(packKey);
@@ -447,8 +461,7 @@ window.renderBundleSection = function(containerEl, packKey) {
     const row = document.createElement('div');
 
     if (bundle.tier === 'free') {
-      // Free bundle — always on, show as locked info row if pro bundle exists
-      if (hasProBundle && (level === 'pro' || level === 'complete')) return; // hidden when pro replaces it
+      if (hasProBundle && isPro) return; // hidden for pro — filter includes free cards automatically
       row.innerHTML = `
         <div class="bundle-row bundle-row--auto">
           <div class="bundle-info">
@@ -459,25 +472,50 @@ window.renderBundleSection = function(containerEl, packKey) {
         </div>`;
 
     } else if (bundle.tier === 'pro') {
-      // Pro bundle — auto-on for pro+, show as locked for freemium
-      row.innerHTML = accessible ? `
-        <div class="bundle-row bundle-row--auto">
-          <div class="bundle-info">
-            <div class="bundle-name">${bundle.name}</div>
-            <div class="bundle-desc-preview">${bundle.description}</div>
-          </div>
-          <span class="bundle-status">Active</span>
-        </div>` : `
-        <div class="bundle-row bundle-row--locked">
-          <div class="bundle-info">
-            <div class="bundle-name">${bundle.name}</div>
-            <div class="bundle-desc-preview">${bundle.description}</div>
-          </div>
-          <span class="bundle-status bundle-status--locked">Pro</span>
-        </div>`;
+      if (!accessible) {
+        // Freemium: locked with Pro badge
+        row.innerHTML = `
+          <div class="bundle-row bundle-row--locked">
+            <div class="bundle-info">
+              <div class="bundle-name">${bundle.name}</div>
+              <div class="bundle-desc-preview">${bundle.description}</div>
+            </div>
+            <span class="bundle-status bundle-status--locked">Pro</span>
+          </div>`;
+      } else {
+        // Pro users: toggleable — can switch off if another bundle is on
+        const isOn = active.includes(bundle.id);
+        row.innerHTML = `
+          <div class="bundle-row">
+            <div class="bundle-info">
+              <div class="bundle-name">${bundle.name}</div>
+              <div class="bundle-desc-preview">${bundle.description}</div>
+            </div>
+            <label class="toggle"><input type="checkbox" class="bundle-toggle" data-bundle="${bundle.id}" ${isOn ? 'checked' : ''} /><span class="toggle-slider"></span></label>
+          </div>`;
+        const toggle = row.querySelector('.bundle-toggle');
+        if (toggle) {
+          toggle.addEventListener('change', function() {
+            const cur = getBundleState(packKey) || [];
+            if (!this.checked) {
+              // Must have at least one other bundle active
+              const otherActive = defs.some(b =>
+                b.id !== bundle.id &&
+                (b.tier === 'pro-opt' || b.tier === 'extended') &&
+                canUseTier(b.tier) &&
+                cur.includes(b.id)
+              );
+              if (!otherActive) { this.checked = true; return; }
+            }
+            const newState = this.checked
+              ? [...new Set([...cur, bundle.id])]
+              : cur.filter(id => id !== bundle.id);
+            setBundleState(packKey, newState);
+          });
+        }
+      }
 
     } else if (bundle.tier === 'pro-opt' || bundle.tier === 'extended') {
-      // Toggleable — only shown if accessible
       if (!accessible) return;
       const isOn = active.includes(bundle.id);
       row.innerHTML = `
@@ -488,11 +526,20 @@ window.renderBundleSection = function(containerEl, packKey) {
           </div>
           <label class="toggle"><input type="checkbox" class="bundle-toggle" data-bundle="${bundle.id}" ${isOn ? 'checked' : ''} /><span class="toggle-slider"></span></label>
         </div>`;
-
       const toggle = row.querySelector('.bundle-toggle');
       if (toggle) {
         toggle.addEventListener('change', function() {
           const cur = getBundleState(packKey) || [];
+          if (!this.checked) {
+            // Must have at least one bundle active (pro or another opt)
+            const otherActive = defs.some(b =>
+              b.id !== bundle.id &&
+              (b.tier === 'pro' || b.tier === 'pro-opt' || b.tier === 'extended') &&
+              canUseTier(b.tier) &&
+              (b.tier === 'pro' ? active.includes(b.id) : cur.includes(b.id))
+            );
+            if (!otherActive) { this.checked = true; return; }
+          }
           const newState = this.checked
             ? [...new Set([...cur, bundle.id])]
             : cur.filter(id => id !== bundle.id);
