@@ -3,7 +3,7 @@
 let currentPack   = null;
 let currentMode   = MODES[0].id;
 let currentStrat  = 0;
-let currentBundle = 'default';
+let currentBundle = 'free';
 
 // ── INIT ──────────────────────────────────────────────────────────────────────
 document.addEventListener('DOMContentLoaded', () => {
@@ -868,7 +868,7 @@ function openPack(key, source) {
   setActivePack(key);
   currentMode   = MODES[0].id;
   currentStrat  = 0;
-  currentBundle = 'default';
+  currentBundle = 'free';
   showEditor();
 }
 
@@ -887,7 +887,7 @@ function createNewPack() {
   setActivePack(currentPack.key);
   currentMode   = MODES[0].id;
   currentStrat  = 0;
-  currentBundle = 'default';
+  currentBundle = 'free';
   showEditor();
 }
 
@@ -991,7 +991,7 @@ function renderModeTabs() {
     btn.addEventListener('click', () => {
       currentMode   = btn.dataset.mode;
       currentStrat  = 0;
-      currentBundle = 'default';
+      currentBundle = 'free';
       renderModeTabs();
       renderModeContent();
     });
@@ -1044,16 +1044,29 @@ function renderModeContent() {
 
   // ── Bundle picker
   if (hasBundles) {
-    const allBundles = [{ id: 'default', name: 'Default bundle' }, ...bundles];
+    // Filter out 'default' — not a real bundle
+    const validBundles = bundles.filter(b => b.id !== 'default');
+    // If currentBundle is 'default', switch to first valid bundle
+    if (currentBundle === 'default' && validBundles.length) {
+      currentBundle = validBundles[0].id;
+    }
+    const tierLabel = (b) => {
+      if (b.tier === 'free') return '<span class="bundle-tier-badge tier-free">Free</span>';
+      if (b.tier === 'pro')  return '<span class="bundle-tier-badge tier-pro">Pro</span>';
+      if (b.tier === 'pro-opt') return '<span class="bundle-tier-badge tier-pro">Pro opt-in</span>';
+      if (b.tier === 'extended') return '<span class="bundle-tier-badge tier-ext">Extended</span>';
+      return '';
+    };
     html += `
       <div class="field-block bundle-block">
         <label class="field-label">Input bundle</label>
         <div class="selector-row">
           <select class="select" id="bundle-select">
-            ${allBundles.map(b => `<option value="${b.id}" ${b.id===currentBundle?'selected':''}>${escHtml(b.name)}</option>`).join('')}
+            ${validBundles.map(b => `<option value="${b.id}" ${b.id===currentBundle?'selected':''}>${escHtml(b.name)}</option>`).join('')}
           </select>
+          ${validBundles.map(b => b.id === currentBundle ? tierLabel(b) : '').join('')}
           <button class="btn btn--ghost btn--sm" id="add-bundle-btn">+ Add bundle</button>
-          ${currentBundle !== 'default' ? `<button class="icon-btn danger" id="del-bundle-btn" title="Delete bundle">&#x2715;</button>` : ''}
+          ${currentBundle !== 'free' ? `<button class="icon-btn danger" id="del-bundle-btn" title="Delete bundle">&#x2715;</button>` : ''}
         </div>
       </div>`;
   }
@@ -1062,9 +1075,9 @@ function renderModeContent() {
   const frontLabel = isMem ? 'Front' : (isSeq ? 'Prompt' : 'Situation');
   const backLabel  = isMem ? 'Back'  : 'Response';
   const items      = isMem
-    ? (strat.cards || [])
+    ? (strat.cards || []).filter(c => !c.bundle || c.bundle === currentBundle || currentBundle === 'free')
     : isSeq
-      ? (strat.steps || [])
+      ? (strat.steps || []).filter(s => !s.bundle || s.bundle === currentBundle || currentBundle === 'free')
       : (strat.inputs || []).filter(i => !i.bundle || i.bundle === currentBundle);
 
   html += `
@@ -1094,7 +1107,7 @@ function bindEvents(modeData, strats, strat, bundles, isMem, isSeq) {
   // Strategy select
   document.getElementById('strat-select').addEventListener('change', e => {
     currentStrat = parseInt(e.target.value);
-    currentBundle = 'default';
+    currentBundle = 'free';
     renderModeContent();
   });
 
@@ -1145,7 +1158,9 @@ function bindEvents(modeData, strats, strat, bundles, isMem, isSeq) {
       if (!name?.trim()) return;
       const id = slugify(name.trim());
       if (modeData.bundles.find(b => b.id === id)) { showToast('Bundle already exists'); return; }
-      modeData.bundles.push({ id, name: name.trim() });
+      const tierChoice = prompt('Bundle tier:\n1 = Pro opt-in (included with Pro, user can toggle on/off)\n2 = Extended (requires separate purchase)\n\nEnter 1 or 2:', '1');
+      const tier = tierChoice === '2' ? 'extended' : 'pro-opt';
+      modeData.bundles.push({ id, name: name.trim(), tier });
       currentBundle = id;
       markDirty(); renderModeContent();
     });
@@ -1159,7 +1174,7 @@ function bindEvents(modeData, strats, strat, bundles, isMem, isSeq) {
       if (strat.inputs) strat.inputs = strat.inputs.filter(i => i.bundle !== currentBundle);
       const idx = modeData.bundles.findIndex(b => b.id === currentBundle);
       if (idx >= 0) modeData.bundles.splice(idx, 1);
-      currentBundle = 'default';
+      currentBundle = 'free';
       markDirty(); renderModeContent();
     });
   }

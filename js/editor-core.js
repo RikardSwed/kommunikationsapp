@@ -1,7 +1,7 @@
 // editor-core.js — Deckstack Pack Editor
 // Depends on: data.js, challengesData.js, mindsetData.js, multiStepData.js, memorizeData.js
 
-const EDITOR_VERSION = 'v1.3.4';
+const EDITOR_VERSION = 'v1.3.5';
 const STORAGE_KEY    = 'ds_editor_packs';
 const ACTIVE_KEY     = 'ds_editor_active';
 
@@ -28,23 +28,47 @@ function loadAppPacks() {
   return Object.keys(src).map(key => ({ key, name: packDisplayName(key), source: 'app' }));
 }
 
+const PACK_DISPLAY_NAMES = {
+  assertive:          'Assertive Communication',
+  conversational:     'Conversational Skills',
+  humour:             'Humour Practise',
+  criticism:          'Criticism & Correction',
+  teasing:            'Teasing & Playfulness',
+  conversationaldepth:'Conversational Depth',
+  compliments:        'Compliments & Appreciation',
+  selfhumour:         'Self Humour & Playfulness',
+  startingconnecting: 'Starting & Connecting',
+  listeningresponding:'Listening & Responding',
+  influenceframing:   'Influence & Framing',
+  storytelling:       'Storytelling',
+};
+
 function packDisplayName(key) {
-  return key.replace(/([A-Z])/g, ' $1').replace(/^./, c => c.toUpperCase()).trim();
+  return PACK_DISPLAY_NAMES[key] || key.replace(/([A-Z])/g, ' $1').replace(/^./, c => c.toUpperCase()).trim();
 }
 
 function packFromAppData(key) {
   const pack = { key, name: packDisplayName(key), isNew: false, source: 'app', createdAt: Date.now(), versions: [] };
 
   function mapInputs(arr) {
-    return (arr||[]).map(i => ({ q: i.q||'', a: i.a||'', bundle: i.bundle||'default' }));
+    return (arr||[]).map(i => ({ q: i.q||'', a: i.a||'', bundle: i.bundle || 'free' }));
   }
   function mapCards(arr) {
-    return (arr||[]).map(c => ({ q: c.q||'', a: c.a||'' }));
+    return (arr||[]).map(c => ({ q: c.q||'', a: c.a||'', bundle: c.bundle || 'free' }));
   }
   function deriveBundles(strategies) {
     const ids = new Set();
-    strategies.forEach(s => (s.inputs||[]).forEach(i => { if (i.bundle && i.bundle !== 'default') ids.add(i.bundle); }));
-    return [...ids].map(id => ({ id, name: id.charAt(0).toUpperCase() + id.slice(1).replace(/-/g,' ') }));
+    strategies.forEach(s => (s.inputs || s.cards || s.steps || []).forEach(i => {
+      if (i.bundle) ids.add(i.bundle);
+    }));
+    // Remove 'default' — not a real bundle tier
+    ids.delete('default');
+    const TIER_MAP = { free: 'free', pro: 'pro' };
+    return [...ids].map(id => ({
+      id,
+      name: id === 'free' ? 'Free Bundle' : id === 'pro' ? 'Pro Bundle' : id.charAt(0).toUpperCase() + id.slice(1).replace(/-/g,' '),
+      tier: TIER_MAP[id] || 'pro-opt',
+    }));
   }
 
   const rawSingle = (getDS('_dsCollections'))[key] || [];
@@ -63,13 +87,13 @@ function packFromAppData(key) {
   const rawMem = (getDS('_dsMemorize'))[key] || [];
   pack.memorize = {
     strategies: rawMem.map(s => ({ name: s.name||'', description: s.description||'', cards: mapCards(s.cards) })),
-    bundles: [],
+    bundles: deriveBundles(rawMem.map(s => ({ cards: s.cards||[] }))),
   };
 
   const rawSeq = (getDS('_dsMultiStep'))[key] || [];
   pack.sequences = {
     strategies: rawSeq.map(s => ({ name: s.name||'', description: s.description||'', steps: mapInputs(s.steps||s.inputs) })),
-    bundles: [],
+    bundles: deriveBundles(rawSeq.map(s => ({ inputs: s.steps||s.inputs||[] }))),
   };
 
   return pack;
