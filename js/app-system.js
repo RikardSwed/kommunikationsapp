@@ -873,6 +873,8 @@ if (alPackBar) {
     if (_fbBar) _fbBar.dataset.fbKey = _fbPK;
     alRender('al-pack-bar', _alPK);
     if (_fbBar && typeof fbRender === 'function') fbRender('fb-pack-bar', _fbPK);
+    // Render tag section if tag mode is on
+    if (window.renderPackTagSection) window.renderPackTagSection(packKey || '');
     overlay.classList.add('open');
   });
   if (close) close.addEventListener('click', () => overlay.classList.remove('open'));
@@ -916,3 +918,206 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
   if (window._applyAccessLevel) window._applyAccessLevel();
   if (window.renderExtendedStore) window.renderExtendedStore();
 });
+
+// ── TAG MODE ──────────────────────────────────────────────────────────────────
+
+(function initTagMode() {
+  const TAG_EDITS_KEY = 'ds_tag_edits'; // {packKey: [tags], 'prog:programId': [tags]}
+
+  let tagMode = localStorage.getItem('tagMode') === 'true';
+
+  function getTagEdits() {
+    try { return JSON.parse(localStorage.getItem(TAG_EDITS_KEY)) || {}; }
+    catch { return {}; }
+  }
+  function saveTagEdits(edits) {
+    localStorage.setItem(TAG_EDITS_KEY, JSON.stringify(edits));
+  }
+
+  // Get current tags for a key (pack key or 'prog:id')
+  // Merges tagsData.js base tags with any edits
+  window.getTagsForKey = function(key) {
+    const edits = getTagEdits();
+    if (edits[key] !== undefined) return [...edits[key]];
+    // Fall back to packTags base data
+    if (typeof packTags !== 'undefined' && packTags[key]) return [...packTags[key]];
+    return [];
+  };
+
+  // Set tags for a key and mark as edited
+  window.setTagsForKey = function(key, tags) {
+    const edits = getTagEdits();
+    edits[key] = tags;
+    saveTagEdits(edits);
+  };
+
+  // Apply tag mode state
+  function applyTagMode() {
+    document.body.classList.toggle('tag-mode', tagMode);
+    const toggle = document.getElementById('tagModeToggle');
+    if (toggle) toggle.checked = tagMode;
+    const exportRow = document.getElementById('tagExportRow');
+    if (exportRow) exportRow.style.display = tagMode ? '' : 'none';
+    // Show/hide tag section in pack settings
+    const tagSection = document.getElementById('packSettingsTagSection');
+    if (tagSection) tagSection.style.display = tagMode ? '' : 'none';
+  }
+
+  // Toggle listener
+  const tagModeToggle = document.getElementById('tagModeToggle');
+  if (tagModeToggle) {
+    tagModeToggle.addEventListener('change', () => {
+      tagMode = tagModeToggle.checked;
+      localStorage.setItem('tagMode', tagMode);
+      // Exclusive with feedbackMode and alSuggestMode
+      if (tagMode) {
+        if (feedbackMode) {
+          feedbackMode = false;
+          localStorage.setItem('feedbackMode', 'false');
+          const fm = document.getElementById('feedbackModeToggle');
+          if (fm) fm.checked = false;
+          document.body.classList.remove('feedback-mode');
+        }
+        if (alSuggestMode) {
+          alSuggestMode = false;
+          localStorage.setItem('alSuggestMode', 'false');
+          const al = document.getElementById('accessLevelSuggestToggle');
+          if (al) al.checked = false;
+          document.body.classList.remove('al-suggest-mode');
+        }
+      }
+      applyTagMode();
+    });
+  }
+
+  // Export tag changes
+  const tagExportBtn = document.getElementById('tagExportBtn');
+  if (tagExportBtn) {
+    tagExportBtn.addEventListener('click', () => {
+      const edits = getTagEdits();
+      if (!Object.keys(edits).length) {
+        alert('No tag changes to export yet.');
+        return;
+      }
+      const out = {
+        meta: { exportedAt: new Date().toISOString(), version: typeof VERSION !== 'undefined' ? VERSION : '' },
+        tagEdits: edits,
+      };
+      const blob = new Blob([JSON.stringify(out, null, 2)], { type: 'application/json' });
+      const url  = URL.createObjectURL(blob);
+      const a    = document.createElement('a');
+      a.href = url; a.download = 'deckstack-tag-edits-' + Date.now() + '.json';
+      a.click(); URL.revokeObjectURL(url);
+    });
+  }
+
+  // ── Pack tag UI in packSettingsOverlay ───────────────────────────────────────
+
+  window.renderPackTagSection = function(packKey) {
+    const section = document.getElementById('packSettingsTagSection');
+    if (!section) return;
+    section.style.display = tagMode ? '' : 'none';
+    if (!tagMode) return;
+
+    const listEl  = document.getElementById('packTagsList');
+    const input   = document.getElementById('packTagInput');
+    const addBtn  = document.getElementById('packTagAddBtn');
+
+    function renderTags() {
+      const tags = window.getTagsForKey(packKey);
+      listEl.innerHTML = tags.length
+        ? tags.map((t, i) => `<span class="tag-chip">${t}<button class="tag-chip-del" data-i="${i}">×</button></span>`).join('')
+        : '<span class="tag-empty">No tags yet</span>';
+      listEl.querySelectorAll('.tag-chip-del').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const cur = window.getTagsForKey(packKey);
+          cur.splice(parseInt(btn.dataset.i), 1);
+          window.setTagsForKey(packKey, cur);
+          renderTags();
+        });
+      });
+    }
+
+    renderTags();
+    input.value = '';
+
+    // Remove old listeners by cloning
+    const newAdd = addBtn.cloneNode(true);
+    addBtn.parentNode.replaceChild(newAdd, addBtn);
+    newAdd.addEventListener('click', () => {
+      const val = document.getElementById('packTagInput').value.trim().toLowerCase();
+      if (!val) return;
+      const cur = window.getTagsForKey(packKey);
+      if (!cur.includes(val)) { cur.push(val); window.setTagsForKey(packKey, cur); }
+      document.getElementById('packTagInput').value = '';
+      renderTags();
+    });
+    document.getElementById('packTagInput').addEventListener('keydown', e => {
+      if (e.key === 'Enter') { e.preventDefault(); document.getElementById('packTagAddBtn').click(); }
+    });
+  };
+
+  // ── Program Settings overlay ─────────────────────────────────────────────────
+
+  const progSettingsOverlay = document.getElementById('programSettingsOverlay');
+  const progSettingsClose   = document.getElementById('programSettingsClose');
+  if (progSettingsClose) {
+    progSettingsClose.addEventListener('click', () => {
+      if (progSettingsOverlay) progSettingsOverlay.style.display = 'none';
+    });
+  }
+
+  window.openProgramSettings = function(programId, programTitle) {
+    if (!progSettingsOverlay) return;
+    const titleEl = document.getElementById('programSettingsTitle');
+    if (titleEl) titleEl.textContent = programTitle || 'Program Settings';
+
+    const listEl  = document.getElementById('programTagsList');
+    const input   = document.getElementById('programTagInput');
+    const addBtn  = document.getElementById('programTagAddBtn');
+    const tagKey  = 'prog:' + programId;
+
+    // Only show tag section if tag mode is on
+    const tagSection = document.getElementById('programSettingsTagSection');
+    if (tagSection) tagSection.style.display = tagMode ? '' : 'none';
+
+    if (tagMode && listEl) {
+      function renderProgTags() {
+        const tags = window.getTagsForKey(tagKey);
+        listEl.innerHTML = tags.length
+          ? tags.map((t, i) => `<span class="tag-chip">${t}<button class="tag-chip-del" data-i="${i}">×</button></span>`).join('')
+          : '<span class="tag-empty">No tags yet</span>';
+        listEl.querySelectorAll('.tag-chip-del').forEach(btn => {
+          btn.addEventListener('click', () => {
+            const cur = window.getTagsForKey(tagKey);
+            cur.splice(parseInt(btn.dataset.i), 1);
+            window.setTagsForKey(tagKey, cur);
+            renderProgTags();
+          });
+        });
+      }
+      renderProgTags();
+      if (input) input.value = '';
+
+      const newAdd = addBtn.cloneNode(true);
+      addBtn.parentNode.replaceChild(newAdd, addBtn);
+      newAdd.addEventListener('click', () => {
+        const val = document.getElementById('programTagInput').value.trim().toLowerCase();
+        if (!val) return;
+        const cur = window.getTagsForKey(tagKey);
+        if (!cur.includes(val)) { cur.push(val); window.setTagsForKey(tagKey, cur); }
+        document.getElementById('programTagInput').value = '';
+        renderProgTags();
+      });
+      document.getElementById('programTagInput').addEventListener('keydown', e => {
+        if (e.key === 'Enter') { e.preventDefault(); document.getElementById('programTagAddBtn').click(); }
+      });
+    }
+
+    progSettingsOverlay.style.display = 'flex';
+  };
+
+  // Init
+  tagMode = localStorage.getItem('tagMode') === 'true';
+  applyTagMode();
+})();

@@ -1404,7 +1404,10 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
   function renderProgramDetail(program) {
     const container = document.getElementById('libTabPrograms');
     let html = '<div class="program-detail">'
+      + '<div class="program-detail-topbar">'
       + '<button class="program-back-btn" id="prog-back-btn">\u2190 Programs</button>'
+      + '<button class="program-settings-btn" id="prog-settings-btn" title="Program settings"><i class="ti ti-settings"></i></button>'
+      + '</div>'
       + '<h2 class="program-detail-title">' + program.title + '</h2>'
       + '<p class="program-detail-desc">' + program.description + '</p>';
 
@@ -1455,6 +1458,12 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
 
     // Back button
     document.getElementById('prog-back-btn').addEventListener('click', renderProgramList);
+    const progSettingsBtn = document.getElementById('prog-settings-btn');
+    if (progSettingsBtn) {
+      progSettingsBtn.addEventListener('click', () => {
+        if (window.openProgramSettings) window.openProgramSettings(program.id, program.title);
+      });
+    }
 
     // Pack clicks
     container.querySelectorAll('.prog-pack-card').forEach(card => {

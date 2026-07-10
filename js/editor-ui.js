@@ -119,19 +119,6 @@ function renderProgramList() {
   });
 }
 
-function programRow(title, id, type, icon) {
-  const ico = icon || 'ti-stack';
-  const actions = type === 'my'
-    ? `<button class="icon-btn prog-export" data-id="${id}" title="Export JSON" style="font-size:13px;">↓</button>
-       <button class="icon-btn pack-del prog-del" data-id="${id}" data-title="${escHtml(title)}" title="Delete">&#x2715;</button>`
-    : '';
-  return `<div class="pack-row program-row" data-id="${id}" data-type="${type}">
-    <span class="pack-row-icon"><i class="ti ${ico}"></i></span>
-    <span class="pack-row-name">${escHtml(title)}</span>
-    ${actions}
-  </div>`;
-}
-
 
 function renderPackList() {
   const appPacks    = loadAppPacks();
@@ -185,14 +172,116 @@ function packRow(name, key, type) {
   const delBtn = (type === 'my')
     ? `<button class="icon-btn pack-del" data-key="${key}" data-name="${name}" title="Delete">&#x2715;</button>`
     : '';
+  // Show tags from tagsData (app) or editor pack (my)
+  let tags = [];
+  if (type === 'app' && typeof packTags !== 'undefined' && packTags[key]) {
+    tags = packTags[key];
+  } else if (type === 'my') {
+    const p = getAllEditorPacks()[key];
+    if (p && p.tags) tags = p.tags;
+  }
+  const tagHtml = tags.length
+    ? `<div class="pack-row-tags">${tags.slice(0,5).map(t => `<span class="editor-tag-chip">${escHtml(t)}</span>`).join('')}${tags.length > 5 ? `<span class="editor-tag-chip editor-tag-chip--more">+${tags.length - 5}</span>` : ''}</div>`
+    : '';
   return `
     <div class="pack-row" data-key="${key}" data-source="${type}">
-      <span class="pack-row-name">${name}</span>
+      <div class="pack-row-main">
+        <span class="pack-row-name">${escHtml(name)}</span>
+        ${tagHtml}
+      </div>
       ${delBtn}
     </div>`;
 }
 
-// ── IMPORT HANDLERS ──────────────────────────────────────────────────────────
+function programRow(title, id, type, icon) {
+  const ico = icon || 'ti-stack';
+  // Show tags
+  let tags = [];
+  if (type === 'app') {
+    const src = (window._dsPrograms || []).find(p => p.id === id);
+    if (src && src.tags) tags = src.tags;
+  } else if (type === 'my') {
+    const p = getAllEditorPrograms()[id];
+    if (p && p.tags) tags = p.tags;
+  }
+  const tagHtml = tags.length
+    ? `<div class="pack-row-tags">${tags.slice(0,4).map(t => `<span class="editor-tag-chip">${escHtml(t)}</span>`).join('')}${tags.length > 4 ? `<span class="editor-tag-chip editor-tag-chip--more">+${tags.length - 4}</span>` : ''}</div>`
+    : '';
+  const actions = type === 'my'
+    ? `<button class="icon-btn prog-export" data-id="${id}" title="Export JSON" style="font-size:13px;">↓</button>
+       <button class="icon-btn pack-del prog-del" data-id="${id}" data-title="${escHtml(title)}" title="Delete">&#x2715;</button>`
+    : '';
+  return `<div class="pack-row program-row" data-id="${id}" data-type="${type}">
+    <span class="pack-row-icon"><i class="ti ${ico}"></i></span>
+    <div class="pack-row-main">
+      <span class="pack-row-name">${escHtml(title)}</span>
+      ${tagHtml}
+    </div>
+    ${actions}
+  </div>`;
+}
+
+// ── TAG HELPERS ───────────────────────────────────────────────────────────────
+
+function renderEditorTagSection(obj, editable) {
+  const tags = obj.tags || [];
+  const chips = tags.map((t, i) =>
+    editable
+      ? `<span class="editor-tag-chip">${escHtml(t)}<button class="editor-tag-del" data-i="${i}">×</button></span>`
+      : `<span class="editor-tag-chip">${escHtml(t)}</span>`
+  ).join('');
+  const inputRow = editable
+    ? `<div class="editor-tag-input-row">
+         <input type="text" class="editor-tag-input" id="editorTagInput" placeholder="Add tag…" />
+         <button class="editor-tag-add-btn" id="editorTagAddBtn">+</button>
+       </div>`
+    : '';
+  return `<div class="editor-tag-section">
+    <div class="editor-tag-label">Tags</div>
+    <div class="editor-tag-list" id="editorTagList">${chips || '<span class="tag-empty">No tags</span>'}</div>
+    ${inputRow}
+  </div>`;
+}
+
+function bindEditorTagSection(obj, onSave) {
+  const list   = document.getElementById('editorTagList');
+  const input  = document.getElementById('editorTagInput');
+  const addBtn = document.getElementById('editorTagAddBtn');
+  if (!list) return;
+
+  function rebind() {
+    document.querySelectorAll('.editor-tag-del').forEach(btn => {
+      btn.addEventListener('click', e => {
+        e.stopPropagation();
+        if (!obj.tags) obj.tags = [];
+        obj.tags.splice(parseInt(btn.dataset.i), 1);
+        onSave();
+        const tags = obj.tags;
+        list.innerHTML = tags.map((t, i) =>
+          `<span class="editor-tag-chip">${escHtml(t)}<button class="editor-tag-del" data-i="${i}">×</button></span>`
+        ).join('') || '<span class="tag-empty">No tags</span>';
+        rebind();
+      });
+    });
+  }
+  rebind();
+
+  if (addBtn && input) {
+    const doAdd = () => {
+      const val = input.value.trim().toLowerCase();
+      if (!val) return;
+      if (!obj.tags) obj.tags = [];
+      if (!obj.tags.includes(val)) { obj.tags.push(val); onSave(); }
+      input.value = '';
+      list.innerHTML = obj.tags.map((t, i) =>
+        `<span class="editor-tag-chip">${escHtml(t)}<button class="editor-tag-del" data-i="${i}">×</button></span>`
+      ).join('') || '<span class="tag-empty">No tags</span>';
+      rebind();
+    };
+    addBtn.addEventListener('click', doAdd);
+    input.addEventListener('keydown', e => { if (e.key === 'Enter') { e.preventDefault(); doAdd(); } });
+  }
+}
 
 function handleJsonFileImport(e) {
   const file = e.target.files[0];
@@ -223,6 +312,7 @@ function showSyntaxGuide() {
     '<h3>Pack syntax — rules</h3>' +
     '<ul class="syntax-rules">' +
     '<li><code>PACK:</code> — Pack name, one line. To import several packs in one paste, just use multiple <code>PACK:</code> blocks one after another.</li>' +
+    '<li><code>TAGS: tag one, tag two, tag three</code> — optional comma-separated list of search tags, placed directly after the <code>PACK:</code> line. Tags are used by the in-app search to surface packs for related concepts and synonyms.</li>' +
     '<li><code>MODE:</code> — one of: <code>single</code>, <code>collections</code>, <code>memorize</code>, <code>sequences</code>, <code>challenges</code>, <code>mindset</code>. Only include modes relevant to the pack — you do not need all of them.</li>' +
     '<li><code>## Strategy: Name</code> — starts a new strategy within a mode. Use <code>## Category:</code> for challenges, <code>## Combo:</code> for sequences, <code>## Collection:</code> for collections, <code>## Mindset:</code> for mindset.</li>' +
     '<li><code>**Explanation:**</code> — descriptive text explaining the strategy. Can be several sentences on the same line or continued on the next non-empty line.</li>' +
@@ -240,6 +330,7 @@ function showSyntaxGuide() {
     '<h3>Program syntax — rules</h3>' +
     '<ul class="syntax-rules">' +
     '<li><code>PROGRAM:</code> — Program title. This line triggers program mode: packs defined inside become sections of the program, not standalone packs in the library.</li>' +
+    '<li><code>TAGS: tag one, tag two</code> — optional comma-separated search tags for the program, placed directly after <code>PROGRAM:</code>.</li>' +
     '<li><code>DESCRIPTION:</code> — Short description shown in the programs list in the app.</li>' +
     '<li><code>ICON:</code> — A Tabler icon name, e.g. <code>ti-book</code>, <code>ti-brain</code>, <code>ti-message-circle</code>, <code>ti-award</code>. See tabler.io/icons for the full list.</li>' +
     '<li><code>SECTION:</code> — Starts a new section. Everything between this and the next <code>SECTION:</code> belongs to it — the pack definition and optionally a checkpoint.</li>' +
@@ -696,6 +787,12 @@ function createNewPack() {
 function showEditor() {
   showScreen('screen-editor');
   renderPackHeader();
+  // Bind tag editing for my packs
+  if (currentPack && !currentPack._fromApp) {
+    bindEditorTagSection(currentPack, () => {
+      if (!currentPack._fromApp) saveEditorPack(currentPack);
+    });
+  }
   renderModeTabs();
   renderModeContent();
 }
@@ -721,7 +818,8 @@ function renderPackHeader() {
       resetBtn +
       '<button class="btn btn--secondary btn--sm" id="version-btn">' + versionLabel + '</button>' +
       '<button class="btn btn--primary btn--sm" id="export-btn">Export JSON</button>' +
-    '</div>'
+    '</div>' +
+    renderEditorTagSection(currentPack, !isApp)
   );
 
   const renameBtn = document.getElementById('rename-btn');

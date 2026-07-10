@@ -1,7 +1,7 @@
 // editor-core.js — Deckstack Pack Editor
 // Depends on: data.js, challengesData.js, mindsetData.js, multiStepData.js, memorizeData.js
 
-const EDITOR_VERSION = 'v1.2.0';
+const EDITOR_VERSION = 'v1.3.0';
 const STORAGE_KEY    = 'ds_editor_packs';
 const ACTIVE_KEY     = 'ds_editor_active';
 
@@ -240,6 +240,7 @@ function importFromText(text) {
 
 function _parsePack(lines) {
   let packName = 'Imported pack';
+  let packTagsArr = [];
   let currentModeId = 'single';
   const modeBuffers = {};
   MODES.forEach(m => { modeBuffers[m.id] = []; });
@@ -272,6 +273,7 @@ function _parsePack(lines) {
     if (!line) { if (inExplanation) { inExplanation = false; currentStrat && (currentStrat.description = explanationLines.join('\n').trim()); } continue; }
 
     if (/^PACK:/i.test(line)) { packName = line.replace(/^PACK:/i,'').trim(); continue; }
+    if (/^TAGS:/i.test(line)) { packTagsArr = line.replace(/^TAGS:/i,'').split(',').map(t => t.trim().toLowerCase()).filter(Boolean); continue; }
 
     if (/^MODE:/i.test(line)) {
       pushStrat();
@@ -326,10 +328,9 @@ function _parsePack(lines) {
       };
     }
   });
+  if (packTagsArr.length) pack.tags = packTagsArr;
   return pack;
 }
-
-// ── PARSE: single pack ────────────────────────────────────────────────────────
 
 function _parseSinglePack(lines) {
   return _parsePack(lines);
@@ -365,6 +366,7 @@ function _parseProgram(lines) {
   let programTitle = 'Imported Program';
   let programDesc  = '';
   let programIcon  = 'ti-stack';
+  let programTags  = [];
   const sections   = [];
   const packs      = [];
 
@@ -397,6 +399,7 @@ function _parseProgram(lines) {
     if (/^PROGRAM:/i.test(line)) { programTitle = line.replace(/^PROGRAM:/i,'').trim(); inPack = false; continue; }
     if (/^DESCRIPTION:/i.test(line)) { programDesc = line.replace(/^DESCRIPTION:/i,'').trim(); continue; }
     if (/^ICON:/i.test(line)) { programIcon = line.replace(/^ICON:/i,'').trim(); continue; }
+    if (/^TAGS:/i.test(line) && !inPack) { programTags = line.replace(/^TAGS:/i,'').split(',').map(t => t.trim().toLowerCase()).filter(Boolean); continue; }
 
     if (/^SECTION:/i.test(line)) {
       flushSection();
@@ -444,6 +447,7 @@ function _parseProgram(lines) {
     title: programTitle,
     description: programDesc,
     icon: programIcon,
+    ...(programTags.length ? { tags: programTags } : {}),
     sections: sections.map((s, i) => ({
       id: s.id,
       title: s.title,
