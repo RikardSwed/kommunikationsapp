@@ -175,6 +175,17 @@
       scrollbar-width: none;
     }
     #mode-tabs::-webkit-scrollbar { display: none; }
+    #pack-tags {
+      padding: 8px 28px 0;
+      background: var(--bg);
+    }
+    #pack-tags .editor-tag-section {
+      border-top: none;
+      margin-top: 0;
+      padding-top: 0;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--border);
+    }
     .mode-tab {
       padding:       8px 16px;
       border:        1px solid var(--border);
@@ -496,7 +507,7 @@
   <div class="topbar">
     <button class="btn btn--ghost btn--sm" onclick="window.location.href='index.html'" style="margin-right:8px;" title="Back to app">&larr; App</button>
     <span class="topbar-title" onclick="showHome()" style="cursor:pointer;" title="Back to home">Deckstack — Pack Editor</span>
-    <span class="topbar-version">Editor v1.3.0 · Changes saved automatically</span>
+    <span class="topbar-version">Editor v1.3.1 · Changes saved automatically</span>
   </div>
 
   <!-- Home screen -->
@@ -553,6 +564,7 @@
   <!-- Editor screen -->
   <div id="screen-editor" style="display:none;">
     <div id="pack-header"></div>
+    <div id="pack-tags"></div>
     <div id="mode-tabs"></div>
     <div id="mode-content"></div>
   </div>
@@ -597,8 +609,8 @@
   });
 </script>
 <!-- Editor logic -->
-<script src="js/editor-core.js?v=130"></script>
-<script src="js/editor-ui.js?v=130"></script>
+<script src="js/editor-core.js?v=131"></script>
+<script src="js/editor-ui.js?v=131"></script>
 
 </body>
 </html>
