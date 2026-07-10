@@ -787,12 +787,13 @@ function createNewPack() {
 function showEditor() {
   showScreen('screen-editor');
   renderPackHeader();
-  // Bind tag editing for my packs
+  // Bind tag editing — editable for my packs, read-only view for app packs
   if (currentPack && !currentPack._fromApp) {
     bindEditorTagSection(currentPack, () => {
-      if (!currentPack._fromApp) saveEditorPack(currentPack);
+      saveEditorPack(currentPack);
     });
   }
+  // App packs: tags shown read-only, no binding needed
   renderModeTabs();
   renderModeContent();
 }
@@ -818,9 +819,14 @@ function renderPackHeader() {
       resetBtn +
       '<button class="btn btn--secondary btn--sm" id="version-btn">' + versionLabel + '</button>' +
       '<button class="btn btn--primary btn--sm" id="export-btn">Export JSON</button>' +
-    '</div>' +
-    renderEditorTagSection(currentPack, !isApp)
+    '</div>'
   );
+
+  // Render tag section in its own container (between header and mode tabs)
+  const packTagsEl = document.getElementById('pack-tags');
+  if (packTagsEl) {
+    packTagsEl.innerHTML = renderEditorTagSection(currentPack, !isApp);
+  }
 
   const renameBtn = document.getElementById('rename-btn');
   if (renameBtn) renameBtn.onclick = () => {

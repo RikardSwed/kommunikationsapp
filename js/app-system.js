@@ -969,23 +969,6 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
     tagModeToggle.addEventListener('change', () => {
       tagMode = tagModeToggle.checked;
       localStorage.setItem('tagMode', tagMode);
-      // Exclusive with feedbackMode and alSuggestMode
-      if (tagMode) {
-        if (feedbackMode) {
-          feedbackMode = false;
-          localStorage.setItem('feedbackMode', 'false');
-          const fm = document.getElementById('feedbackModeToggle');
-          if (fm) fm.checked = false;
-          document.body.classList.remove('feedback-mode');
-        }
-        if (alSuggestMode) {
-          alSuggestMode = false;
-          localStorage.setItem('alSuggestMode', 'false');
-          const al = document.getElementById('accessLevelSuggestToggle');
-          if (al) al.checked = false;
-          document.body.classList.remove('al-suggest-mode');
-        }
-      }
       applyTagMode();
     });
   }
