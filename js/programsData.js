@@ -189,4 +189,3 @@ const programsData = [
     ],
   },
 ];
-JSEOF

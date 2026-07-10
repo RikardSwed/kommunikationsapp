@@ -716,11 +716,15 @@ if (alPackBar) {
     if (fbSection) fbSection.style.display = feedbackMode ? '' : 'none';
     if (alSection) alSection.style.display = alSuggestMode ? '' : 'none';
     // Render bars
-    alRender('al-pack-bar', alPackKey(packKey || ''));
-    if (typeof fbRender === 'function') {
-      const packFbKey = 'fb_pack_' + (packKey || '');
-      fbRender('fb-pack-bar', packFbKey);
-    }
+    const _alPK = alPackKey(packKey || '');
+    const _fbPK = 'fb_pack_' + (packKey || '');
+    // Set keys on bars before rendering so click handlers can read them
+    const _alBar = document.getElementById('al-pack-bar');
+    const _fbBar = document.getElementById('fb-pack-bar');
+    if (_alBar) _alBar.dataset.alKey = _alPK;
+    if (_fbBar) _fbBar.dataset.fbKey = _fbPK;
+    alRender('al-pack-bar', _alPK);
+    if (_fbBar && typeof fbRender === 'function') fbRender('fb-pack-bar', _fbPK);
     overlay.classList.add('open');
   });
   if (close) close.addEventListener('click', () => overlay.classList.remove('open'));
