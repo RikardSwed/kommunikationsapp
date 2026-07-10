@@ -1093,6 +1093,7 @@ function renderModeContent() {
   const backLabel  = isMem ? 'Back'  : 'Response';
   // Build items list — for 'pro' bundle, include free cards (shown locked) + pro cards
   const isPro = currentBundle === 'pro';
+  console.log('[Bundle debug] currentBundle:', currentBundle, 'isPro:', isPro, 'strat:', strat.name, 'inputs:', (strat.inputs||strat.cards||strat.steps||[]).map(i=>i.bundle||'no-bundle'));
   const getItems = () => {
     if (isMem) {
       const all = strat.cards || [];
