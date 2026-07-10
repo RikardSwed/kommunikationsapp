@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
   <title>Deckstack</title>
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="stylesheet" href="css/style.css?v=1223" />
+  <link rel="stylesheet" href="css/style.css?v=1224" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
 </head>
 <body>
@@ -252,7 +252,7 @@
         <button id="progResetBtn" class="prog-reset-btn">Reset all progress data…</button>
       </div>
     </div>
-    <div class="settings-version">v1.22.3</div>
+    <div class="settings-version">v1.22.4</div>
     <button class="settings-close" id="progressSettingsClose">Done</button>
   </div>
 </div>
@@ -652,15 +652,10 @@
 <div class="mode-screen" id="modeScreen" style="display:none;">
   <div class="mode-topbar">
     <button class="topbar-btn" id="modeBackBtn">←</button>
-    <div class="mode-topbar-center">
-      <button class="topbar-btn mode-pin-btn" id="modePinBtn" aria-label="Pin this pack">
-        <i class="ti ti-pin"></i>
-      </button>
-      <button class="topbar-btn" id="modePackSettingsBtn" aria-label="Pack settings">
-        <i class="ti ti-settings"></i>
-      </button>
-    </div>
-    <button class="topbar-btn" id="modeNextBtn" aria-label="Next pack" style="visibility:hidden;">&#8594;</button>
+    <button class="topbar-btn mode-pin-btn" id="modePinBtn" aria-label="Pin this pack">
+      <i class="ti ti-pin"></i>
+    </button>
+    <button class="topbar-btn" id="modeNextBtn" aria-label="Next pack" style="display:none;">&#8594;</button>
   </div>
   <div class="mode-header">
     <div class="mode-collection-name" id="modeCollectionName"></div>
@@ -1204,7 +1199,7 @@
       <label>Progress bar</label>
       <label class="toggle"><input type="checkbox" id="showProgressBar" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.22.3</div>
+    <div class="settings-version">v1.22.4</div>
     <button class="settings-close" id="settingsClose">Done</button>
   </div>
 </div>
@@ -1277,7 +1272,7 @@
       <label>Loop current strategy</label>
       <label class="toggle"><input type="checkbox" id="hfLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.22.3</div>
+    <div class="settings-version">v1.22.4</div>
     <button class="settings-close" id="hfSettingsClose">Done</button>
   </div>
 </div>
@@ -1346,7 +1341,7 @@
       <label>Loop current strategy</label>
       <label class="toggle"><input type="checkbox" id="hfMemLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.22.3</div>
+    <div class="settings-version">v1.22.4</div>
     <button class="settings-close" id="hfMemSettingsClose">Done</button>
   </div>
 </div>
@@ -1415,7 +1410,7 @@
       <label>Loop current category</label>
       <label class="toggle"><input type="checkbox" id="hfChallLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.22.3</div>
+    <div class="settings-version">v1.22.4</div>
     <button class="settings-close" id="hfChallSettingsClose">Done</button>
   </div>
 </div>
@@ -1473,7 +1468,7 @@
       <label>Loop current combo</label>
       <label class="toggle"><input type="checkbox" id="hfFlowLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.22.3</div>
+    <div class="settings-version">v1.22.4</div>
     <button class="settings-close" id="hfFlowSettingsClose">Done</button>
   </div>
 </div>
@@ -1542,7 +1537,7 @@
       <label>Loop current mindset</label>
       <label class="toggle"><input type="checkbox" id="hfMindLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.22.3</div>
+    <div class="settings-version">v1.22.4</div>
     <button class="settings-close" id="hfMindSettingsClose">Done</button>
   </div>
 </div>
@@ -1611,7 +1606,7 @@
       <label>Loop current collection</label>
       <label class="toggle"><input type="checkbox" id="hfCollLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.22.3</div>
+    <div class="settings-version">v1.22.4</div>
     <button class="settings-close" id="hfCollSettingsClose">Done</button>
   </div>
 </div>
@@ -1757,7 +1752,7 @@
       <label>Pack Editor</label>
       <button onclick="window.open('admin.html','_blank')" style="font-size:13px; color:#555; background:#f0f0f0; border:1px solid #ddd; border-radius:8px; padding:6px 12px; cursor:pointer;">Open &#8599;</button>
     </div>
-    <div class="settings-version">v1.22.3</div>
+    <div class="settings-version">v1.22.4</div>
   </div>
 </div>
 
@@ -1766,8 +1761,8 @@
 <div class="settings-overlay" id="packSettingsOverlay">
   <div class="settings-panel">
     <div class="settings-title" id="packSettingsTitle">Pack Settings</div>
-    <div id="packSettingsFbSection" style="display:none;">
-      <div class="settings-row"><label>Overall quality rating for this pack</label></div>
+    <div id="packSettingsFbSection">
+      <div class="settings-row"><label>Overall quality rating</label></div>
       <div class="fb-bar fb-bar--pack" id="fb-pack-bar">
         <button class="fb-btn" data-val="1"></button>
         <button class="fb-btn" data-val="2"></button>
@@ -1775,8 +1770,8 @@
         <button class="fb-btn" data-val="4"></button>
       </div>
     </div>
-    <div id="packSettingsAlSection" style="display:none;">
-      <div class="settings-row"><label>Suggested access level for this pack</label></div>
+    <div id="packSettingsAlSection">
+      <div class="settings-row"><label>Suggested access level</label></div>
       <div class="al-bar al-bar--pack" id="al-pack-bar">
         <button class="al-btn" data-val="1">Free</button>
         <button class="al-btn" data-val="2">Pro</button>
@@ -1804,18 +1799,18 @@
   </button>
 </div>
 
-<script src="js/data.js?v=1223"></script>
-<script src="js/tagsData.js?v=1223"></script>
-<script src="js/programsData.js?v=1223"></script>
-<script src="js/challengesData.js?v=1223"></script>
-<script src="js/mindsetData.js?v=1223"></script>
-<script src="js/multiStepData.js?v=1223"></script>
-<script src="js/memorizeData.js?v=1223"></script>
-<script src="js/app-core.js?v=1223"></script>
-<script src="js/app-modes.js?v=1223"></script>
-<script src="js/app-handsfree.js?v=1223"></script>
-<script src="js/app-system.js?v=1223"></script>
-<script src="js/app-ui.js?v=1223"></script>
+<script src="js/data.js?v=1224"></script>
+<script src="js/tagsData.js?v=1224"></script>
+<script src="js/programsData.js?v=1224"></script>
+<script src="js/challengesData.js?v=1224"></script>
+<script src="js/mindsetData.js?v=1224"></script>
+<script src="js/multiStepData.js?v=1224"></script>
+<script src="js/memorizeData.js?v=1224"></script>
+<script src="js/app-core.js?v=1224"></script>
+<script src="js/app-modes.js?v=1224"></script>
+<script src="js/app-handsfree.js?v=1224"></script>
+<script src="js/app-system.js?v=1224"></script>
+<script src="js/app-ui.js?v=1224"></script>
 
 
 <!-- CHECKPOINT SCREEN -->
