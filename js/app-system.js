@@ -308,15 +308,15 @@ applyInputCounterVisibility();
 const BUNDLE_DEFS = {
   assertive: [
     {
-      id: 'default',
-      name: 'Default Bundle',
-      description: 'The core inputs — everyday situations covering all strategies in this pack.',
+      id: 'free',
+      name: 'Free Bundle',
+      description: 'Core inputs and memorize cards for all strategies — available to all users.',
       default: true,
     },
     {
-      id: 'test',
-      name: 'Workplace & Social Bundle',
-      description: 'Additional inputs focused on professional and social contexts — colleagues, work situations and social judgement.',
+      id: 'pro',
+      name: 'Pro Bundle',
+      description: 'Extended inputs and extra memorize cards per strategy — unlocked with Pro.',
       default: false,
     },
   ]
@@ -344,11 +344,20 @@ function getActiveBundles(packKey) {
 }
 
 // Filter inputs based on active bundles (applies to all strategies in pack)
+// Bakåtkompatibelt: kort utan bundle-fält visas alltid
 window.filterInputsByBundle = function(inputs, packKey) {
   const defs = BUNDLE_DEFS[packKey];
   if (!defs) return inputs;
   const active = getActiveBundles(packKey);
   return inputs.filter(inp => !inp.bundle || active.includes(inp.bundle));
+};
+
+// Generic version for memorize cards and sequences steps
+window.filterCardsByBundle = function(cards, packKey) {
+  const defs = BUNDLE_DEFS[packKey];
+  if (!defs) return cards;
+  const active = getActiveBundles(packKey);
+  return cards.filter(c => !c.bundle || active.includes(c.bundle));
 };
 
 // Render Input Bundles section into a settings panel

@@ -4,7 +4,7 @@
 // app.js — All application logic for Communication Trainer
 // Depends on: data.js and multiStepData.js (must be loaded first)
 
-const VERSION = 'v1.23.2';
+const VERSION = 'v1.23.3';
 
 // Pack icon map — global so both dashboard and favorites can use it
 const PACK_ICONS = {
@@ -266,7 +266,13 @@ function showTraining() {
 }
 
 function showMultiStep() {
-  msStrategies = multiStepCollections[activeCollectionKey] || [];
+  const raw = multiStepCollections[activeCollectionKey] || [];
+  // Filter inputs via bundle system (bakåtkompatibelt — inputs utan bundle visas alltid)
+  msStrategies = raw.map(strat => {
+    if (!window.filterCardsByBundle) return strat;
+    const filteredInputs = window.filterCardsByBundle(strat.inputs, activeCollectionKey);
+    return filteredInputs.length ? { ...strat, inputs: filteredInputs } : null;
+  }).filter(Boolean);
   if (msStrategies.length === 0) return;
   msStratIdx = 0; msInputIdx = 0; msStepIdx = 0;
   navToTraining('msScreen');
@@ -275,7 +281,13 @@ function showMultiStep() {
 
 // Collection cards → mode screen
 function showMemorize() {
-  memStrategies = memorizeCollections[activeCollectionKey] || [];
+  const raw = memorizeCollections[activeCollectionKey] || [];
+  // Filter cards per strategy via bundle system (bakåtkompatibelt — kort utan bundle visas alltid)
+  memStrategies = raw.map(strat => {
+    if (!window.filterCardsByBundle) return strat;
+    const filteredCards = window.filterCardsByBundle(strat.cards, activeCollectionKey);
+    return filteredCards.length ? { ...strat, cards: filteredCards } : null;
+  }).filter(Boolean);
   if (memStrategies.length === 0) return;
   memStratIdx = 0; memCardIdx = 0;
   navToTraining('memScreen');

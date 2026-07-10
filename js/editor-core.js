@@ -305,7 +305,7 @@ function _parsePack(lines) {
     if (cardMatch && currentStrat) {
       const q = cardMatch[1].trim();
       const a = cardMatch[2].trim();
-      if (currentModeId === 'memorize')       currentStrat.cards.push({ q, a });
+      if (currentModeId === 'memorize')       currentStrat.cards.push({ q, a, bundle: currentBundle });
       else if (currentModeId === 'sequences') currentStrat.steps.push({ q, a, bundle: currentBundle });
       else                                    currentStrat.inputs.push({ q, a, bundle: currentBundle });
     }
