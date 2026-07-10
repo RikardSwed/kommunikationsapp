@@ -1076,7 +1076,7 @@ function renderModeContent() {
     };
     html += `
       <div class="field-block bundle-block">
-        <label class="field-label">Input bundle</label>
+        <label class="field-label">Input bundle <span id="debug-bundle" style="color:var(--acc);font-size:11px;">[${currentBundle}]</span></label>
         <div class="selector-row">
           <select class="select" id="bundle-select">
             ${validBundles.map(b => `<option value="${b.id}" ${b.id===currentBundle?'selected':''}>${escHtml(b.name)}</option>`).join('')}

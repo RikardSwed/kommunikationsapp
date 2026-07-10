@@ -4,7 +4,7 @@
 // app.js — All application logic for Communication Trainer
 // Depends on: data.js and multiStepData.js (must be loaded first)
 
-const VERSION = 'v1.23.7';
+const VERSION = 'v1.23.8';
 
 // Pack icon map — global so both dashboard and favorites can use it
 const PACK_ICONS = {
@@ -30,11 +30,10 @@ function packIcon(key) {
 const homeScreen     = document.getElementById('homeScreen');
 const modeScreen     = document.getElementById('modeScreen');
 const trainingScreen = document.getElementById('trainingScreen');
-const msScreen       = document.getElementById('msScreen');
 const memScreen      = document.getElementById('memScreen');
 
 const TRAINING_SCREENS = [
-  'trainingScreen','memScreen','msScreen','flowScreen','guidedScreen',
+  'trainingScreen','memScreen','flowScreen',
   'hfScreen','hfMemScreen','collScreen'
 ];
 
@@ -265,20 +264,6 @@ function showTraining() {
   render();
 }
 
-function showMultiStep() {
-  const raw = multiStepCollections[activeCollectionKey] || [];
-  // Filter inputs via bundle system (bakåtkompatibelt — inputs utan bundle visas alltid)
-  msStrategies = raw.map(strat => {
-    if (!window.filterCardsByBundle) return strat;
-    const filteredInputs = window.filterCardsByBundle(strat.inputs, activeCollectionKey);
-    return filteredInputs.length ? { ...strat, inputs: filteredInputs } : null;
-  }).filter(Boolean);
-  if (msStrategies.length === 0) return;
-  msStratIdx = 0; msInputIdx = 0; msStepIdx = 0;
-  navToTraining('msScreen');
-  msRender();
-}
-
 // Collection cards → mode screen
 function showMemorize() {
   const raw = memorizeCollections[activeCollectionKey] || [];
@@ -451,7 +436,6 @@ document.getElementById('modeBetaToggle').addEventListener('touchend', e => { e.
 
 registerMode('modeFlashcard', showTraining);
 
-registerMode('modeMultiStep', showMultiStep);
 
 registerMode('modeMemorize', showMemorize);
 
@@ -464,7 +448,6 @@ function closeTraining(screenId) {
 }
 
 document.getElementById('closeBtn').addEventListener('click',   () => closeTraining('trainingScreen'));
-document.getElementById('msCloseBtn').addEventListener('click',  () => closeTraining('msScreen'));
 document.getElementById('memCloseBtn').addEventListener('click', () => closeTraining('memScreen'));
 
 
