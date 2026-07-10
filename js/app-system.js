@@ -548,6 +548,8 @@ window.render = function() {
   const backKey  = fbKey('single', stratIdx, inputIdx, 'back');
   fbRender('fb-single-front', frontKey);
   fbRender('fb-single-back',  backKey);
+  alRender('al-single-front', alKey('single', stratIdx, inputIdx, 'front'));
+  alRender('al-single-back',  alKey('single', stratIdx, inputIdx, 'back'));
 };
 
 // Memorize
@@ -558,6 +560,8 @@ window.memRender = function() {
   const backKey  = fbKey('mem', memStratIdx, memCardIdx, 'back');
   fbRender('fb-mem-front', frontKey);
   fbRender('fb-mem-back',  backKey);
+  alRender('al-mem-front', alKey('mem', memStratIdx, memCardIdx, 'front'));
+  alRender('al-mem-back',  alKey('mem', memStratIdx, memCardIdx, 'back'));
 };
 
 // Flow (Sequences)
@@ -568,6 +572,8 @@ window.flowRender = function() {
   const backKey  = fbKey('flow', flowComboIdx, flowCardIdx, 'back');
   fbRender('fb-flow-front', frontKey);
   fbRender('fb-flow-back',  backKey);
+  alRender('al-flow-front', alKey('flow', flowComboIdx, flowCardIdx, 'front'));
+  alRender('al-flow-back',  alKey('flow', flowComboIdx, flowCardIdx, 'back'));
 };
 
 
@@ -636,7 +642,12 @@ function alInitBar(barId) {
     const handler = e => {
       e.stopPropagation();
       const key = bar.dataset.alKey;
-      if (!key) return;
+      if (!key) {
+        // Key not set yet — bar hasn't been rendered with current card.
+        // Force a render using current app state if possible.
+        const screenId = barId.replace('al-','').replace('-front','').replace('-back','');
+return;
+      }
       alSet(key, parseInt(btn.dataset.val));
       alRender(barId, key);
     };
@@ -655,6 +666,23 @@ window.alPackKey  = alPackKey;
 
 // Pack-level al-bar
 const alPackBar = document.getElementById('al-pack-bar');
+// Init feedback pack bar
+const fbPackBar = document.getElementById('fb-pack-bar');
+if (fbPackBar) {
+  fbPackBar.querySelectorAll('.fb-btn').forEach(btn => {
+    const handler = e => {
+      e.stopPropagation();
+      const key = fbPackBar.dataset.fbKey;
+      if (!key) return;
+      fbSet(key, parseInt(btn.dataset.val));
+      fbRender('fb-pack-bar', key);
+    };
+    btn.addEventListener('click', handler);
+    btn.addEventListener('touchend', e => { e.preventDefault(); e.stopPropagation(); handler(e); }, { passive: false });
+  });
+  fbPackBar.dataset.fbKey = '';
+}
+
 if (alPackBar) {
   alPackBar.querySelectorAll('.al-btn').forEach(btn => {
     const handler = e => {
@@ -682,7 +710,17 @@ if (alPackBar) {
     const label   = window.activeCollectionLabel || packKey;
     if (title) title.textContent = label + ' — Settings';
     if (ver)   ver.textContent   = typeof VERSION !== 'undefined' ? VERSION : '';
+    // Show/hide sections based on active mode
+    const fbSection = document.getElementById('packSettingsFbSection');
+    const alSection = document.getElementById('packSettingsAlSection');
+    if (fbSection) fbSection.style.display = feedbackMode ? '' : 'none';
+    if (alSection) alSection.style.display = alSuggestMode ? '' : 'none';
+    // Render bars
     alRender('al-pack-bar', alPackKey(packKey || ''));
+    if (typeof fbRender === 'function') {
+      const packFbKey = 'fb_pack_' + (packKey || '');
+      fbRender('fb-pack-bar', packFbKey);
+    }
     overlay.classList.add('open');
   });
   if (close) close.addEventListener('click', () => overlay.classList.remove('open'));

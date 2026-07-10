@@ -596,6 +596,10 @@ function collRender() {
   const backKey  = fbKey('coll', collIdx, collInputIdx, 'back');
   fbRender('fb-coll-front', frontKey);
   fbRender('fb-coll-back',  backKey);
+  if (window.alRender && window.alKey) {
+    window.alRender('al-coll-front', window.alKey('coll', collIdx, collInputIdx, 'front'));
+    window.alRender('al-coll-back',  window.alKey('coll', collIdx, collInputIdx, 'back'));
+  }
 }
 
 function collFlipFn(val, animate = true) {
@@ -728,11 +732,9 @@ function challRender() {
   const hints = document.getElementById('challHint');
   if (hints) hints.style.display = document.getElementById('showHints').checked ? '' : 'none';
   fbRender('fb-chall-front', fbKey('chall', challIdx, challInputIdx, 'front'));
-  if (window.alRender && window.alKey) alRender('al-chall-front', alKey('chall', challIdx, challInputIdx, 'front'));
-  if (window.alRender) alRender('al-chall-front', alKey('chall', challIdx, challInputIdx, 'front'));
+  if (window.alRender && window.alKey) window.alRender('al-chall-front', window.alKey('chall', challIdx, challInputIdx, 'front'));
   fbRender('fb-chall-back',  fbKey('chall', challIdx, challInputIdx, 'back'));
-  if (window.alRender && window.alKey) alRender('al-chall-back', alKey('chall', challIdx, challInputIdx, 'back'));
-  if (window.alRender) alRender('al-chall-back', alKey('chall', challIdx, challInputIdx, 'back'));
+  if (window.alRender && window.alKey) window.alRender('al-chall-back', window.alKey('chall', challIdx, challInputIdx, 'back'));
 }
 
 function challTrig(dir, cb) {
@@ -837,11 +839,9 @@ function mindRender() {
   const hints = document.getElementById('mindHint');
   if (hints) hints.style.display = document.getElementById('showHints').checked ? '' : 'none';
   fbRender('fb-mind-front', fbKey('mind', mindIdx, mindInputIdx, 'front'));
-  if (window.alRender && window.alKey) alRender('al-mind-front', alKey('mind', mindIdx, mindInputIdx, 'front'));
-  if (window.alRender) alRender('al-mind-front', alKey('mind', mindIdx, mindInputIdx, 'front'));
+  if (window.alRender && window.alKey) window.alRender('al-mind-front', window.alKey('mind', mindIdx, mindInputIdx, 'front'));
   fbRender('fb-mind-back',  fbKey('mind', mindIdx, mindInputIdx, 'back'));
-  if (window.alRender && window.alKey) alRender('al-mind-back', alKey('mind', mindIdx, mindInputIdx, 'back'));
-  if (window.alRender) alRender('al-mind-back', alKey('mind', mindIdx, mindInputIdx, 'back'));
+  if (window.alRender && window.alKey) window.alRender('al-mind-back', window.alKey('mind', mindIdx, mindInputIdx, 'back'));
 }
 
 function mindTrig(dir, cb) {
