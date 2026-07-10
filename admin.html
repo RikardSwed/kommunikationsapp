@@ -186,12 +186,12 @@
     }
     #mode-tabs::-webkit-scrollbar { display: none; }
     .mode-tab {
-      padding:       8px 16px;
+      padding:       6px 12px;
       border:        1px solid var(--border);
       border-radius: 99px;
       background:    var(--card);
       color:         var(--txt2);
-      font-size:     13px;
+      font-size:     12px;
       font-weight:   500;
       cursor:        pointer;
       white-space:   nowrap;
@@ -199,6 +199,10 @@
     }
     .mode-tab:hover     { border-color: var(--acc); color: var(--acc); }
     .mode-tab--active   { background: var(--acc); border-color: var(--acc); color: #fff; }
+    .bundle-tier-badge  { font-size: 11px; font-weight: 700; border-radius: 6px; padding: 2px 7px; }
+    .tier-free          { background: #e8f5e9; color: #2e7d32; }
+    .tier-pro           { background: #fff8e1; color: #f57f17; }
+    .tier-ext           { background: #ede7f6; color: #4527a0; }
 
     /* Mode content */
     #mode-content {
@@ -506,7 +510,7 @@
   <div class="topbar">
     <button class="btn btn--ghost btn--sm" onclick="window.location.href='index.html'" style="margin-right:8px;" title="Back to app">&larr; App</button>
     <span class="topbar-title" onclick="showHome()" style="cursor:pointer;" title="Back to home">Deckstack — Pack Editor</span>
-    <span class="topbar-version">Editor v1.3.4 · Changes saved automatically</span>
+    <span class="topbar-version">Editor v1.3.5 · Changes saved automatically</span>
   </div>
 
   <!-- Home screen -->
@@ -608,8 +612,8 @@
   });
 </script>
 <!-- Editor logic -->
-<script src="js/editor-core.js?v=134"></script>
-<script src="js/editor-ui.js?v=134"></script>
+<script src="js/editor-core.js?v=135"></script>
+<script src="js/editor-ui.js?v=135"></script>
 
 </body>
 </html>
