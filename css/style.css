@@ -199,7 +199,20 @@ body {
 .mode-topbar {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 16px 20px 8px;
+}
+
+/* Ensure back and next buttons have equal fixed width so center group is truly centered */
+#modeBackBtn, #modeNextBtn {
+  flex: 0 0 40px;
+}
+.mode-topbar-center {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex: 1;
+  justify-content: center;
 }
 
 .mode-header {
