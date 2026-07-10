@@ -374,8 +374,8 @@
     #screen-home { max-width: 1100px; margin: 0 auto; }
     .pack-columns {
       display:   grid;
-      grid-template-columns: 1fr 1fr;
-      gap:       32px;
+      grid-template-columns: repeat(5, 1fr);
+      gap:       20px;
       margin-top: 8px;
     }
     .column-header {
@@ -388,6 +388,13 @@
     }
     .column-title  { font-size: 14px; font-weight: 700; color: var(--txt); }
     .column-hint   { font-size: 12px; color: var(--txt3); }
+    .pack-row-icon { margin-right: 6px; color: var(--txt3); font-size: 14px; }
+    .pack-row-meta { font-size: 11px; color: var(--txt3); margin-left: auto; white-space: nowrap; }
+    .pack-row--test { cursor: default; }
+    .pack-row--test:hover { background: var(--card); }
+    .syntax-tabs { display: flex; gap: 8px; margin-bottom: 16px; border-bottom: 1px solid var(--border); padding-bottom: 0; }
+    .syntax-tab { background: none; border: none; border-bottom: 2px solid transparent; padding: 6px 14px; font-size: 13px; font-weight: 600; color: var(--txt3); cursor: pointer; margin-bottom: -1px; }
+    .syntax-tab--active { color: var(--acc); border-bottom-color: var(--acc); }
     .pack-row {
       display:       flex;
       align-items:   center;
@@ -517,6 +524,27 @@
         </div>
         <div id="pack-list-my"></div>
       </div>
+      <div class="pack-column">
+        <div class="column-header">
+          <span class="column-title">App programs</span>
+          <span class="column-hint">Structured learning paths</span>
+        </div>
+        <div id="program-list-app"></div>
+      </div>
+      <div class="pack-column">
+        <div class="column-header">
+          <span class="column-title">App tests</span>
+          <span class="column-hint">Checkpoints in programs</span>
+        </div>
+        <div id="program-list-tests"></div>
+      </div>
+      <div class="pack-column">
+        <div class="column-header">
+          <span class="column-title">My programs</span>
+          <span class="column-hint">Imported or created</span>
+        </div>
+        <div id="program-list-my"></div>
+      </div>
     </div>
   </div>
 
@@ -538,6 +566,7 @@
 <script src="js/mindsetData.js"></script>
 <script src="js/multiStepData.js"></script>
 <script src="js/memorizeData.js"></script>
+<script src="js/programsData.js"></script>
 
 
 <!-- Bridge: expose data variables on window so editor-core can read them -->
@@ -553,6 +582,7 @@
   window._dsMindset     = _dsGet('mindsetCollections');
   window._dsMultiStep   = _dsGet('multiStepCollections');
   window._dsMemorize    = _dsGet('memorizeCollections');
+  window._dsPrograms    = _dsGet('programsData');
 
   // Debug: log what was found
   console.log('[DS Bridge] collections keys:', Object.keys(window._dsCollections));
