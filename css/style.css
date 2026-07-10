@@ -2095,44 +2095,70 @@ body.pb-enabled .divider::after {
 }
 .folder-add-pack-btn:hover { border-color: var(--ds-acc); color: var(--ds-acc); }
 
-/* ── ACCESS LEVEL SUGGEST BARS ───────────────────────────────────────────── */
+/* ── ACCESS LEVEL SUGGEST BARS ─────────────────────────────────────── */
 .al-bar {
-  display: none; /* shown only in al-suggest-mode */
-  gap: 8px;
-  justify-content: center;
-  padding: 8px 0 4px;
+  display: none;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 12px 16px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  gap: 0;
 }
 body.al-suggest-mode .al-bar { display: flex; }
-/* Hide feedback bars when al mode active, and vice versa */
-body.al-suggest-mode .fb-bar { display: none; }
-body.feedback-mode    .al-bar { display: none; }
+body.al-suggest-mode .fb-bar { display: none !important; }
+body.feedback-mode    .al-bar { display: none !important; }
 
 .al-btn {
   flex: 1;
-  padding: 8px 4px;
-  border: 1.5px solid var(--ds-border);
-  border-radius: 8px;
-  background: var(--ds-card);
-  font-size: 13px;
-  font-weight: 600;
-  color: var(--ds-txt2);
+  height: 36px;
+  max-width: 80px;
+  border-radius: 18px;
+  border: 1.5px solid transparent;
   cursor: pointer;
-  transition: all .15s;
-  max-width: 90px;
+  padding: 0 6px;
+  font-size: 12px;
+  font-weight: 700;
+  transition: opacity 0.15s, transform 0.1s;
+  -webkit-tap-highlight-color: transparent;
 }
-.al-btn:hover               { border-color: var(--ds-acc); color: var(--ds-acc); }
-.al-btn[data-val="1"].al-selected { background: #E8F5E9; border-color: #4CAF50; color: #2E7D32; }
-.al-btn[data-val="2"].al-selected { background: #E3F2FD; border-color: #1976D2; color: #1565C0; }
-.al-btn[data-val="3"].al-selected { background: #F3E5F5; border-color: #7B1FA2; color: #6A1B9A; }
-.al-btn.al-dimmed           { opacity: .35; }
+.al-btn:active { transform: scale(0.88); }
 
+/* Free=green, Pro=blue, Extended=purple — dimmed by default */
+.al-btn[data-val="1"] { background: #4CAF50; color: #fff; opacity: 0.22; }
+.al-btn[data-val="2"] { background: #1976D2; color: #fff; opacity: 0.22; }
+.al-btn[data-val="3"] { background: #7B1FA2; color: #fff; opacity: 0.22; }
+
+.al-btn.al-selected { opacity: 1; }
+.al-btn.al-dimmed   { opacity: 0.12; }
+
+/* Pack-level bar in settings overlay */
 .al-bar--pack {
+  position: static;
   display: flex;
   gap: 10px;
   padding: 12px 0;
+  width: 100%;
 }
 .al-bar--pack .al-btn {
   flex: 1;
-  padding: 12px 8px;
+  max-width: none;
+  height: 48px;
   font-size: 15px;
+  border-radius: 12px;
+  border: 2px solid transparent;
+}
+.al-bar--pack .al-btn[data-val="1"] { background: #4CAF50; opacity: 0.25; }
+.al-bar--pack .al-btn[data-val="2"] { background: #1976D2; opacity: 0.25; }
+.al-bar--pack .al-btn[data-val="3"] { background: #7B1FA2; opacity: 0.25; }
+.al-bar--pack .al-btn.al-selected   { opacity: 1; }
+.al-bar--pack .al-btn.al-dimmed     { opacity: 0.1; }
+
+/* Mode topbar center group */
+.mode-topbar-center {
+  display: flex;
+  gap: 12px;
+  align-items: center;
 }
