@@ -91,6 +91,9 @@ const TAB_SCREENS = {
   extended:  'extendedScreen'
 };
 
+// Program IDs that require Extended purchase
+const EXTENDED_PROGRAM_IDS = ['conversation-skills'];
+
 const bottomNav = document.getElementById('bottomNav');
 
 function showBottomNav() { if (bottomNav) bottomNav.style.display = 'flex'; }
@@ -1355,7 +1358,19 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
 
     container.className = 'library-tab-content';
     let html = '<div class="programs-list">';
-    programsData.forEach(prog => {
+
+    // Filter: hide Extended programs unless owned or complete
+    const extOwned = (() => {
+      try { return JSON.parse(localStorage.getItem('ds_extended_owned')) || []; }
+      catch { return []; }
+    })();
+    const curLevel = localStorage.getItem('dev_access_level') || 'complete';
+    const visiblePrograms = programsData.filter(prog => {
+      if (!EXTENDED_PROGRAM_IDS.includes(prog.id)) return true;
+      return curLevel === 'complete' || extOwned.includes(prog.id);
+    });
+
+    visiblePrograms.forEach(prog => {
       // Count progress
       const totalCPs  = prog.sections.filter(s => s.checkpoint).length;
       const passedCPs = prog.sections.filter(s => s.checkpoint && isCheckpointPassed(prog.id, s.checkpoint.id)).length;
@@ -1714,20 +1729,44 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
         if (!owned.includes(id)) owned.push(id);
         setOwned(owned);
         renderExtendedStore();
-        // If unlocking a pack in pro mode, mark it accessible (visual only — full unlock needs applyAccessLevel patch)
-        if (type === 'pack' && window.accessLevel) {
-          // Re-render library packs so storytelling unlocks
-          const card = document.querySelector(`#libTabPacks .collection-card[data-key="${id}"]`);
-          if (card) {
-            card.classList.remove('collection-card--locked');
-            const badge = card.querySelector('.pack-lock-badge');
-            if (badge) badge.remove();
-            card.onclick = () => showModeScreen(id, card.dataset.label);
-            let cSY = 0, cMv = false;
-            card.ontouchstart = e => { cSY = e.touches[0].clientY; cMv = false; };
-            card.ontouchmove  = e => { if (Math.abs(e.touches[0].clientY - cSY) > 8) cMv = true; };
-            card.ontouchend   = () => { if (!cMv) showModeScreen(id, card.dataset.label); };
+        // Re-apply access level so Library pack card appears and programs filter updates
+        if (window.accessLevel && window.accessLevel.applyModeLocks) {
+          // Full applyAccessLevel re-run via the exposed hook
+          const alApply = window._applyAccessLevel;
+          if (alApply) alApply();
+        }
+      });
+    });
+
+    // Bind owned items — tap to navigate directly
+    document.querySelectorAll('.ext-store-card').forEach(card => {
+      const ownedEl = card.querySelector('.ext-store-owned');
+      if (!ownedEl) return;
+      const titleEl = card.querySelector('.ext-store-title');
+      if (!titleEl) return;
+      const title = titleEl.textContent.trim();
+      // Find matching pack or program
+      const packMatch = EXTENDED_PACKS.find(p => p.title === title);
+      const progMatch = EXTENDED_PROGRAMS.find(p => p.title === title);
+      card.style.cursor = 'pointer';
+      card.addEventListener('click', () => {
+        if (packMatch) {
+          const libCard = document.querySelector(`#libTabPacks .collection-card[data-key="${packMatch.id}"]`);
+          if (libCard) {
+            showTab('library');
+            // Switch to Packs sub-tab
+            document.querySelectorAll('.library-subnav-btn').forEach(b => b.classList.toggle('active', b.dataset.libTab === 'packs'));
+            document.querySelectorAll('.library-tab-content').forEach(t => t.style.display = 'none');
+            const pt = document.getElementById('libTabPacks');
+            if (pt) pt.style.display = '';
+            showModeScreen(packMatch.id, packMatch.title);
           }
+        } else if (progMatch) {
+          showTab('library');
+          document.querySelectorAll('.library-subnav-btn').forEach(b => b.classList.toggle('active', b.dataset.libTab === 'programs'));
+          document.querySelectorAll('.library-tab-content').forEach(t => t.style.display = 'none');
+          const pt = document.getElementById('libTabPrograms');
+          if (pt) { pt.style.display = ''; }
         }
       });
     });

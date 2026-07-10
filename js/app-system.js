@@ -93,11 +93,12 @@ applyInputCounterVisibility();
 
   // Pack definitions per level
   const PACK_CONFIG = {
-    assertive:      { label: 'Assertive Communication', minLevel: 'freemium' },
-    conversational: { label: 'Conversational Skills',   minLevel: 'freemium' },
-    humour:         { label: 'Humour Practise',          minLevel: 'pro'      },
-    criticism:      { label: 'Criticism & Correction',   minLevel: 'pro'      },
-    teasing:        { label: 'Teasing & Playfulness',    minLevel: 'complete' },
+    assertive:      { label: 'Assertive Communication', minLevel: 'freemium'  },
+    conversational: { label: 'Conversational Skills',   minLevel: 'freemium'  },
+    humour:         { label: 'Humour Practise',          minLevel: 'pro'       },
+    criticism:      { label: 'Criticism & Correction',   minLevel: 'pro'       },
+    teasing:        { label: 'Teasing & Playfulness',    minLevel: 'complete'  },
+    storytelling:   { label: 'Storytelling',             minLevel: 'extended'  },
   };
 
   // Mode definitions per level
@@ -130,9 +131,17 @@ applyInputCounterVisibility();
     return LEVEL_ORDER.indexOf(level);
   }
 
+  function getExtendedOwned() {
+    try { return JSON.parse(localStorage.getItem('ds_extended_owned')) || []; }
+    catch { return []; }
+  }
+
   function canAccess(packKey) {
     const cfg = PACK_CONFIG[packKey];
     if (!cfg) return true;
+    if (cfg.minLevel === 'extended') {
+      return getLevel() === 'complete' || getExtendedOwned().includes(packKey);
+    }
     return levelIndex(getLevel()) >= levelIndex(cfg.minLevel);
   }
 
@@ -142,6 +151,7 @@ applyInputCounterVisibility();
     const min = cfg.minLevel;
     if (min === 'pro')      return { text: 'Pro',      cls: 'pack-lock-badge--pro' };
     if (min === 'complete') return { text: 'Complete', cls: 'pack-lock-badge--complete' };
+    if (min === 'extended') return { text: 'Extended', cls: 'pack-lock-badge--extended' };
     return null;
   }
 
@@ -154,7 +164,17 @@ applyInputCounterVisibility();
       const cfg = PACK_CONFIG[key];
       if (!cfg) return;
       const curLevel = getLevel();
-      const accessible = levelIndex(curLevel) >= levelIndex(cfg.minLevel);
+      const accessible = canAccess(key);
+      // Extended-level packs: show only when owned or complete
+      if (cfg.minLevel === 'extended') {
+        card.style.display = accessible ? '' : 'none';
+        if (accessible) {
+          card.classList.remove('collection-card--locked');
+          const old = card.querySelector('.pack-lock-badge');
+          if (old) old.remove();
+        }
+        return;
+      }
       // Complete-level packs: hide entirely when not accessible
       if (cfg.minLevel === 'complete') {
         card.style.display = accessible ? '' : 'none';
@@ -265,6 +285,7 @@ applyInputCounterVisibility();
 
   // Expose for other modules
   window.accessLevel = { getLevel, canAccess, applyModeLocks, updateNavUpgradeBtn };
+  window._applyAccessLevel = applyAccessLevel;
 
   // Init
   loadDevLevelUI();

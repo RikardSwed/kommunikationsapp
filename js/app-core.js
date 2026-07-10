@@ -4,7 +4,7 @@
 // app.js — All application logic for Communication Trainer
 // Depends on: data.js and multiStepData.js (must be loaded first)
 
-const VERSION = 'v1.23.0';
+const VERSION = 'v1.23.1';
 
 // Pack icon map — global so both dashboard and favorites can use it
 const PACK_ICONS = {
@@ -71,7 +71,7 @@ function navToMode() {
   const activeTab = document.querySelector('.nav-tab.active');
   const activeTabName = activeTab ? activeTab.dataset.tab : 'library';
   _modeOrigin = (activeTabName === 'dashboard') ? 'dashboard' : 'library';
-  ['dashboardScreen','homeScreen','progressScreen','upgradeScreen','extendedScreen'].forEach(id => {
+  ['dashboardScreen','homeScreen','progressScreen','upgradeScreen'].forEach(id => {
     const el = document.getElementById(id); if (el) el.style.display = 'none';
   });
   if (_modeOrigin === 'library') homeScreen.style.display = 'flex';
@@ -320,7 +320,7 @@ function launchLastMode(packKey, packLabel) {
     // Mark origin as dashboard so closing modeScreen returns there
     _modeOrigin = 'dashboard';
     // Hide all tab screens, do NOT show Library behind
-    ['dashboardScreen','homeScreen','progressScreen','upgradeScreen','extendedScreen'].forEach(id => {
+    ['dashboardScreen','homeScreen','progressScreen','upgradeScreen'].forEach(id => {
       const el = document.getElementById(id); if (el) el.style.display = 'none';
     });
     const modeEl = document.getElementById('modeScreen');
