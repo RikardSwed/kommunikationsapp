@@ -168,7 +168,6 @@ const challengesCollections = {
       ]
     }
   ],
-,
 
   storytelling: [
     {

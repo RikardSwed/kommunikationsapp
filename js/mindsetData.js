@@ -171,8 +171,6 @@ const mindsetCollections = {
     }
   ],
 
-,
-
   storytelling: [
     {
       name: "Sharing not performing",

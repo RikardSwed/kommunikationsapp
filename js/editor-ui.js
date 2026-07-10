@@ -1093,7 +1093,6 @@ function renderModeContent() {
   const backLabel  = isMem ? 'Back'  : 'Response';
   // Build items list — for 'pro' bundle, include free cards (shown locked) + pro cards
   const isPro = currentBundle === 'pro';
-  console.log('[Bundle debug] currentBundle:', currentBundle, 'isPro:', isPro, 'strat:', strat.name, 'inputs:', (strat.inputs||strat.cards||strat.steps||[]).map(i=>i.bundle||'no-bundle'));
   const getItems = () => {
     if (isMem) {
       const all = strat.cards || [];
@@ -1144,14 +1143,16 @@ function renderModeContent() {
 function bindEvents(modeData, strats, strat, bundles, isMem, isSeq) {
 
   // Strategy select
-  document.getElementById('strat-select').addEventListener('change', e => {
+  const stratSel = document.getElementById('strat-select');
+  if (stratSel) stratSel.addEventListener('change', e => {
     currentStrat = parseInt(e.target.value);
     currentBundle = 'free';
     renderModeContent();
   });
 
   // Rename strategy
-  document.getElementById('strat-rename-btn').addEventListener('click', () => {
+  const renameStratBtn = document.getElementById('strat-rename-btn');
+  if (renameStratBtn) renameStratBtn.addEventListener('click', () => {
     const name = prompt('Name:', strat.name || '');
     if (name === null) return;
     strat.name = name.trim();
@@ -1159,7 +1160,8 @@ function bindEvents(modeData, strats, strat, bundles, isMem, isSeq) {
   });
 
   // Add strategy
-  document.getElementById('add-strat-btn').addEventListener('click', () => {
+  const addStratBtn = document.getElementById('add-strat-btn');
+  if (addStratBtn) addStratBtn.addEventListener('click', () => {
     const name = prompt('Name for new entry:');
     if (!name?.trim()) return;
     const s = emptyStrategy(currentMode); s.name = name.trim();
@@ -1169,7 +1171,8 @@ function bindEvents(modeData, strats, strat, bundles, isMem, isSeq) {
   });
 
   // Delete strategy
-  document.getElementById('del-strat-btn').addEventListener('click', () => {
+  const delStratBtn = document.getElementById('del-strat-btn');
+  if (delStratBtn) delStratBtn.addEventListener('click', () => {
     if (modeData.strategies.length <= 1) { showToast('Need at least one entry'); return; }
     if (!confirm(`Delete "${strat.name || 'this entry'}"?`)) return;
     modeData.strategies.splice(currentStrat, 1);
