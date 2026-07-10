@@ -305,24 +305,36 @@ applyInputCounterVisibility();
 // ─── INPUT BUNDLES ──────────────────────────────────────────────────────────────
 
 // Bundle definitions — keyed by packKey only (applies to whole pack in a mode)
+// Bundle definitions per pack.
+// tier: 'free'     — alltid aktivt för alla, ingen toggle
+// tier: 'pro'      — aktivt för pro+, ingen toggle (free+pro bundles ersätter free-only)
+// tier: 'pro-opt'  — valbar toggle för pro+-användare
+// tier: 'extended' — valbar toggle om köpt via Extended store
 const BUNDLE_DEFS = {
   assertive: [
     {
       id: 'free',
+      tier: 'free',
       name: 'Free Bundle',
-      description: 'Core inputs and memorize cards for all strategies — available to all users.',
-      default: true,
+      description: 'Core inputs — 5 situations per strategy, available to all users.',
     },
     {
       id: 'pro',
+      tier: 'pro',
       name: 'Pro Bundle',
-      description: 'Extended inputs and extra memorize cards per strategy — unlocked with Pro.',
-      default: false,
+      description: 'Expanded inputs — 8 situations per strategy, unlocked with Pro. Replaces the Free Bundle.',
+    },
+    {
+      id: 'workplace',
+      tier: 'pro-opt',
+      name: 'Workplace & Social',
+      description: 'Extra situations focused on professional and social contexts — colleagues, meetings, and social judgement.',
     },
   ]
 };
 
 // Bundle state storage: key = 'bundles:{packKey}'
+// Only stores user-toggled pro-opt and extended bundles
 function getBundleState(packKey) {
   const k = `bundles:${packKey}`;
   try { return JSON.parse(localStorage.getItem(k)); } catch { return null; }
@@ -333,17 +345,54 @@ function setBundleState(packKey, state) {
   localStorage.setItem(k, JSON.stringify(state));
 }
 
-// Get active bundle IDs for a pack
+// Get active bundle IDs for a pack, based on access level
 function getActiveBundles(packKey) {
   const defs = BUNDLE_DEFS[packKey];
   if (!defs) return null;
-  const saved = getBundleState(packKey);
-  if (saved) return saved;
-  const defaults = defs.filter(b => b.default).map(b => b.id);
-  return defaults.length ? defaults : [defs[0].id];
+
+  const level = (window.accessLevel && window.accessLevel.getLevel())
+              || localStorage.getItem('dev_access_level') || 'complete';
+  const extOwned = (() => {
+    try { return JSON.parse(localStorage.getItem('ds_extended_owned')) || []; }
+    catch { return []; }
+  })();
+
+  // Tiers accessible at each level
+  const canUseTier = (tier) => {
+    if (tier === 'free') return true;
+    if (tier === 'pro' || tier === 'pro-opt') return level === 'pro' || level === 'complete';
+    if (tier === 'extended') return level === 'complete' || extOwned.includes(packKey);
+    return false;
+  };
+
+  // Always-on bundles (free + pro — not user-toggleable)
+  const autoActive = defs
+    .filter(b => (b.tier === 'free' || b.tier === 'pro') && canUseTier(b.tier))
+    .map(b => b.id);
+
+  // For pro: pro bundle replaces free bundle
+  // So if pro is active, remove free
+  const hasProAuto = autoActive.includes('pro') || defs.some(b => b.tier === 'pro' && canUseTier(b.tier));
+  const hasFree    = defs.some(b => b.tier === 'free');
+  const base = hasProAuto && hasFree
+    ? autoActive.filter(id => {
+        const def = defs.find(b => b.id === id);
+        return def && def.tier !== 'free';
+      })
+    : autoActive;
+
+  // User-toggleable bundles (pro-opt and owned extended)
+  const saved = getBundleState(packKey) || [];
+  const toggleable = defs.filter(b =>
+    (b.tier === 'pro-opt' || b.tier === 'extended') &&
+    canUseTier(b.tier) &&
+    saved.includes(b.id)
+  ).map(b => b.id);
+
+  return [...new Set([...base, ...toggleable])];
 }
 
-// Filter inputs based on active bundles (applies to all strategies in pack)
+// Filter inputs based on active bundles
 // Bakåtkompatibelt: kort utan bundle-fält visas alltid
 window.filterInputsByBundle = function(inputs, packKey) {
   const defs = BUNDLE_DEFS[packKey];
@@ -376,37 +425,83 @@ window.renderBundleSection = function(containerEl, packKey) {
     return;
   }
 
+  const level = (window.accessLevel && window.accessLevel.getLevel())
+              || localStorage.getItem('dev_access_level') || 'complete';
+  const extOwned = (() => {
+    try { return JSON.parse(localStorage.getItem('ds_extended_owned')) || []; }
+    catch { return []; }
+  })();
+  const canUseTier = (tier) => {
+    if (tier === 'free') return true;
+    if (tier === 'pro' || tier === 'pro-opt') return level === 'pro' || level === 'complete';
+    if (tier === 'extended') return level === 'complete' || extOwned.includes(packKey);
+    return false;
+  };
+
+  const hasProBundle = defs.some(b => b.tier === 'pro');
+  const saved = getBundleState(packKey) || [];
   const active = getActiveBundles(packKey);
 
   defs.forEach(bundle => {
-    const isOn = active.includes(bundle.id);
+    const accessible = canUseTier(bundle.tier);
     const row = document.createElement('div');
-    row.innerHTML = `
-      <div class="bundle-row">
-        <div class="bundle-info">
-          <div class="bundle-name">${bundle.name}</div>
-          <div class="bundle-desc-preview">Tap ⓘ for details</div>
-        </div>
-        <button class="bundle-expand" data-bundle="${bundle.id}" title="About this bundle">ⓘ</button>
-        <label class="toggle"><input type="checkbox" class="bundle-toggle" data-bundle="${bundle.id}" ${isOn ? 'checked' : ''} /><span class="toggle-slider"></span></label>
-      </div>
-      <div class="bundle-detail" id="bundle-detail-${bundle.id}">${bundle.description}</div>
-    `;
-    section.appendChild(row);
 
-    row.querySelector('.bundle-toggle').addEventListener('change', function() {
-      const cur = getActiveBundles(packKey);
-      const newState = this.checked
-        ? [...new Set([...cur, bundle.id])]
-        : cur.filter(id => id !== bundle.id);
-      if (newState.length === 0) { this.checked = true; return; }
-      setBundleState(packKey, newState);
-    });
+    if (bundle.tier === 'free') {
+      // Free bundle — always on, show as locked info row if pro bundle exists
+      if (hasProBundle && (level === 'pro' || level === 'complete')) return; // hidden when pro replaces it
+      row.innerHTML = `
+        <div class="bundle-row bundle-row--auto">
+          <div class="bundle-info">
+            <div class="bundle-name">${bundle.name}</div>
+            <div class="bundle-desc-preview">${bundle.description}</div>
+          </div>
+          <span class="bundle-status">Active</span>
+        </div>`;
 
-    row.querySelector('.bundle-expand').addEventListener('click', () => {
-      const detail = document.getElementById(`bundle-detail-${bundle.id}`);
-      if (detail) detail.classList.toggle('open');
-    });
+    } else if (bundle.tier === 'pro') {
+      // Pro bundle — auto-on for pro+, show as locked for freemium
+      row.innerHTML = accessible ? `
+        <div class="bundle-row bundle-row--auto">
+          <div class="bundle-info">
+            <div class="bundle-name">${bundle.name}</div>
+            <div class="bundle-desc-preview">${bundle.description}</div>
+          </div>
+          <span class="bundle-status">Active</span>
+        </div>` : `
+        <div class="bundle-row bundle-row--locked">
+          <div class="bundle-info">
+            <div class="bundle-name">${bundle.name}</div>
+            <div class="bundle-desc-preview">${bundle.description}</div>
+          </div>
+          <span class="bundle-status bundle-status--locked">Pro</span>
+        </div>`;
+
+    } else if (bundle.tier === 'pro-opt' || bundle.tier === 'extended') {
+      // Toggleable — only shown if accessible
+      if (!accessible) return;
+      const isOn = active.includes(bundle.id);
+      row.innerHTML = `
+        <div class="bundle-row">
+          <div class="bundle-info">
+            <div class="bundle-name">${bundle.name}</div>
+            <div class="bundle-desc-preview">${bundle.description}</div>
+          </div>
+          <label class="toggle"><input type="checkbox" class="bundle-toggle" data-bundle="${bundle.id}" ${isOn ? 'checked' : ''} /><span class="toggle-slider"></span></label>
+        </div>`;
+
+      const toggle = row.querySelector('.bundle-toggle');
+      if (toggle) {
+        toggle.addEventListener('change', function() {
+          const cur = getBundleState(packKey) || [];
+          const newState = this.checked
+            ? [...new Set([...cur, bundle.id])]
+            : cur.filter(id => id !== bundle.id);
+          setBundleState(packKey, newState);
+        });
+      }
+    }
+
+    if (row.innerHTML) section.appendChild(row);
   });
 
   containerEl.appendChild(section);
