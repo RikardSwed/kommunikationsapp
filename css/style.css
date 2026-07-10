@@ -2156,3 +2156,16 @@ body.feedback-mode    .al-bar { display: none !important; }
   gap: 12px;
   align-items: center;
 }
+
+/* ── PACK-LEVEL FEEDBACK BAR IN SETTINGS ─────────────────────────────────── */
+.fb-bar--pack {
+  position: static;
+  display: flex;
+  justify-content: space-around;
+  padding: 12px 0;
+  width: 100%;
+}
+.fb-bar--pack .fb-btn {
+  width: 52px;
+  height: 52px;
+}
