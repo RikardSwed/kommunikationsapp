@@ -494,7 +494,7 @@
   <div class="topbar">
     <button class="btn btn--ghost btn--sm" onclick="window.location.href='index.html'" style="margin-right:8px;" title="Back to app">&larr; App</button>
     <span class="topbar-title" onclick="showHome()" style="cursor:pointer;" title="Back to home">Deckstack — Pack Editor</span>
-    <span class="topbar-version">Editor v1.0.0 · Changes saved automatically</span>
+    <span class="topbar-version">Editor v1.2.0 · Changes saved automatically</span>
   </div>
 
   <!-- Home screen -->
@@ -575,14 +575,14 @@
   // but to be safe we try direct access first, then fall back gracefully.
   function _dsGet(name) {
     try { return window[name] !== undefined ? window[name] : eval(name); }
-    catch(e) { return {}; }
+    catch(e) { return undefined; }
   }
-  window._dsCollections = _dsGet('collections');
-  window._dsChallenges  = _dsGet('challengesCollections');
-  window._dsMindset     = _dsGet('mindsetCollections');
-  window._dsMultiStep   = _dsGet('multiStepCollections');
-  window._dsMemorize    = _dsGet('memorizeCollections');
-  window._dsPrograms    = _dsGet('programsData');
+  window._dsCollections = _dsGet('collections')      || {};
+  window._dsChallenges  = _dsGet('challengesCollections') || {};
+  window._dsMindset     = _dsGet('mindsetCollections')    || {};
+  window._dsMultiStep   = _dsGet('multiStepCollections')  || {};
+  window._dsMemorize    = _dsGet('memorizeCollections')   || {};
+  window._dsPrograms    = _dsGet('programsData')          || [];
 
   // Debug: log what was found
   console.log('[DS Bridge] collections keys:', Object.keys(window._dsCollections));
@@ -595,8 +595,8 @@
   });
 </script>
 <!-- Editor logic -->
-<script src="js/editor-core.js?v=110"></script>
-<script src="js/editor-ui.js?v=110"></script>
+<script src="js/editor-core.js?v=120"></script>
+<script src="js/editor-ui.js?v=120"></script>
 
 </body>
 </html>
