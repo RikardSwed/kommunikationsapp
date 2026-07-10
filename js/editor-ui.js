@@ -216,174 +216,342 @@ function handleJsonFileImport(e) {
 }
 
 function showSyntaxGuide() {
-  var packTmpl = [
-    'PACK: Pack Name Here',
+
+  // ── REGLER ──────────────────────────────────────────────────────────────────
+
+  var packRules =
+    '<h3>Pack syntax — rules</h3>' +
+    '<ul class="syntax-rules">' +
+    '<li><code>PACK:</code> — Pack name, one line. To import several packs in one paste, just use multiple <code>PACK:</code> blocks one after another.</li>' +
+    '<li><code>MODE:</code> — one of: <code>single</code>, <code>collections</code>, <code>memorize</code>, <code>sequences</code>, <code>challenges</code>, <code>mindset</code>. Only include modes relevant to the pack — you do not need all of them.</li>' +
+    '<li><code>## Strategy: Name</code> — starts a new strategy within a mode. Use <code>## Category:</code> for challenges, <code>## Combo:</code> for sequences, <code>## Collection:</code> for collections, <code>## Mindset:</code> for mindset.</li>' +
+    '<li><code>**Explanation:**</code> — descriptive text explaining the strategy. Can be several sentences on the same line or continued on the next non-empty line.</li>' +
+    '<li><code>BUNDLE: free</code> — the free-tier input cards. Always include this for modes that use bundles (single, collections, challenges, mindset).</li>' +
+    '<li><code>BUNDLE: pro</code> — pro-tier cards. Must include <em>all</em> free cards first, then additional ones. Pro users see this bundle automatically; free users see the free bundle.</li>' +
+    '<li><code>BUNDLE: Name</code> — optional thematic bundle, e.g. "Workplace &amp; Social". Users activate these manually in the app.</li>' +
+    '<li>Card format depends on mode:<br>' +
+    '&nbsp;&nbsp;<code>- Situation: X | Response: Y</code> — single, collections, challenges, mindset<br>' +
+    '&nbsp;&nbsp;<code>- Front: X | Back: Y</code> — memorize<br>' +
+    '&nbsp;&nbsp;<code>- Prompt: X | Response: Y</code> — sequences</li>' +
+    '<li>Memorize and sequences modes do not use bundles — omit <code>BUNDLE:</code> lines there.</li>' +
+    '</ul>';
+
+  var programRules =
+    '<h3>Program syntax — rules</h3>' +
+    '<ul class="syntax-rules">' +
+    '<li><code>PROGRAM:</code> — Program title. This line triggers program mode: packs defined inside become sections of the program, not standalone packs in the library.</li>' +
+    '<li><code>DESCRIPTION:</code> — Short description shown in the programs list in the app.</li>' +
+    '<li><code>ICON:</code> — A Tabler icon name, e.g. <code>ti-book</code>, <code>ti-brain</code>, <code>ti-message-circle</code>, <code>ti-award</code>. See tabler.io/icons for the full list.</li>' +
+    '<li><code>SECTION:</code> — Starts a new section. Everything between this and the next <code>SECTION:</code> belongs to it — the pack definition and optionally a checkpoint.</li>' +
+    '<li><code>PACK:</code> inside a section — defines the pack for that section using normal pack syntax. The pack is also saved individually in My packs.</li>' +
+    '<li><code>CHECKPOINT:</code> — Optional. A test at the end of a section. If omitted, the section has no test.</li>' +
+    '<li><code>TIME:</code> — Seconds allowed per question (default: 90).</li>' +
+    '<li><code>DRAW:</code> — How many questions to draw from the pool per session (default: 20). Make the pool larger than the draw count for variety.</li>' +
+    '<li><code>- Q: Question? | Correct: B | A: Option A | B: Option B | C: Option C | D: Option D</code> — one question per line. <code>Correct:</code> is the letter of the right answer (A, B, C, or D).</li>' +
+    '<li>You can mix sections with and without checkpoints in the same program.</li>' +
+    '</ul>';
+
+  // ── EXEMPEL ─────────────────────────────────────────────────────────────────
+
+  var exSinglePack = [
+    'PACK: Assertive Communication',
     '',
-    '# -- SINGLE STRATEGY -----------------------------------',
+    '# ── SINGLE STRATEGY ──────────────────────────────────────────────────────',
     'MODE: single',
     '',
-    '## Strategy: Strategy Name',
-    '**Explanation:** Explain the strategy. What is it, when is it used, why does it work?',
+    '## Strategy: The Broken Record',
+    '**Explanation:** Calmly repeat your position without escalating. Useful when someone keeps pushing back or trying to wear you down. The key is to stay neutral and consistent — not louder or more emotional.',
     '',
     'BUNDLE: free',
-    '- Situation: Describe the situation or trigger | Response: The response here.',
-    '- Situation: Another situation | Response: Another response.',
+    '- Situation: Someone keeps asking you to do something you already said no to. | Response: Acknowledge them and restate: "I understand, but my answer is still no."',
+    '- Situation: A colleague dismisses your concern for the third time. | Response: "I hear you — and I do want to come back to this. It matters to me."',
     '',
     'BUNDLE: pro',
-    '- Situation: Describe the situation or trigger | Response: The response here.',
-    '- Situation: Another situation | Response: Another response.',
-    '- Situation: Extra pro situation | Response: Pro response.',
+    '- Situation: Someone keeps asking you to do something you already said no to. | Response: Acknowledge them and restate: "I understand, but my answer is still no."',
+    '- Situation: A colleague dismisses your concern for the third time. | Response: "I hear you — and I do want to come back to this. It matters to me."',
+    '- Situation: A salesperson keeps pushing after you said you are not interested. | Response: "I appreciate your time — I am not interested. Thank you."',
+    '- Situation: Someone in a group keeps talking over your point. | Response: "Let me finish this thought — " and continue at your normal pace.',
     '',
-    '# -- MEMORIZE ------------------------------------------',
+    '## Strategy: The Soft No',
+    '**Explanation:** Decline without over-explaining or apologising. Works well in social and professional situations where you want to stay warm but firm.',
+    '',
+    'BUNDLE: free',
+    '- Situation: A friend asks you to help with something you do not have capacity for. | Response: "I can not make that work right now — I hope it goes well."',
+    '- Situation: You are invited to something you do not want to attend. | Response: "I will have to skip this one — thanks for thinking of me."',
+    '',
+    'BUNDLE: pro',
+    '- Situation: A friend asks you to help with something you do not have capacity for. | Response: "I can not make that work right now — I hope it goes well."',
+    '- Situation: You are invited to something you do not want to attend. | Response: "I will have to skip this one — thanks for thinking of me."',
+    '- Situation: A manager adds something to your plate when you are already at capacity. | Response: "I want to do this well — can we talk about what moves down the list?"',
+    '',
+    '# ── MEMORIZE ──────────────────────────────────────────────────────────────',
     'MODE: memorize',
     '',
-    '## Strategy: Strategy Name',
-    '**Explanation:** What should the user memorize?',
+    '## Strategy: Assertiveness principles',
+    '**Explanation:** Key concepts behind assertive communication.',
     '',
-    '- Front: Term or concept | Back: Definition or explanation.',
-    '- Front: Another term | Back: Its explanation.',
-    '',
-    '# -- SEQUENCES -----------------------------------------',
-    'MODE: sequences',
-    '',
-    '## Combo: Combo Name',
-    '**Explanation:** Describe this combination and when to use it.',
-    '',
-    '- Prompt: Step 1 description | Response: What to say or do.',
-    '- Prompt: Step 2 description | Response: What to say or do.',
-    '',
-    '# -- CHALLENGES ----------------------------------------',
-    'MODE: challenges',
-    '',
-    '## Category: Category Name',
-    '**Explanation:** What kind of challenge?',
-    '',
-    'BUNDLE: free',
-    '- Situation: Challenge | Response: Ideal response.',
-    '',
-    'BUNDLE: pro',
-    '- Situation: Challenge | Response: Ideal response.',
-    '- Situation: Extra pro challenge | Response: Pro response.',
-    '',
-    '# -- MINDSET -------------------------------------------',
-    'MODE: mindset',
-    '',
-    '## Mindset: Mindset Name',
-    '**Explanation:** What mindset shift does this represent?',
-    '',
-    'BUNDLE: free',
-    '- Situation: Situation or unhelpful thought | Response: Reframed response.',
-    '',
-    'BUNDLE: pro',
-    '- Situation: Situation or unhelpful thought | Response: Reframed response.',
-    '- Situation: Extra pro situation | Response: Pro reframe.',
+    '- Front: What is the broken record technique? | Back: Calmly repeating your position without escalating — same words, same tone, regardless of pushback.',
+    '- Front: What is the difference between assertive and aggressive? | Back: Assertive respects both your needs and theirs. Aggressive prioritises your needs at the expense of theirs.',
+    '- Front: What does a soft no sound like? | Back: Warm but clear. No apology, no long explanation — just a brief, kind decline.',
   ].join('\n');
 
-  var programTmpl = [
-    'PROGRAM: Program Title',
-    'DESCRIPTION: Short description of what this program covers.',
-    'ICON: ti-book',
+  var exMultiPack = [
+    'PACK: Starting Conversations',
     '',
-    'SECTION: Chapter 1 — First Topic',
-    'PACK: First Topic',
     'MODE: single',
     '',
-    '## Strategy: Strategy Name',
-    '**Explanation:** Explanation here.',
+    '## Strategy: The Situational Opener',
+    '**Explanation:** Comment on something real and shared in the immediate environment. This is the most natural way to start a conversation with a stranger — it requires no preparation and creates instant common ground.',
     '',
     'BUNDLE: free',
-    '- Situation: X | Response: Y.',
+    '- Situation: Waiting in line with someone. | Response: Comment on the wait or the place: "Have you been here before?"',
+    '- Situation: At a social event where you know no one. | Response: "How do you know [host]?" — almost always opens a conversation.',
     '',
     'BUNDLE: pro',
-    '- Situation: X | Response: Y.',
-    '- Situation: Extra | Response: Y.',
+    '- Situation: Waiting in line with someone. | Response: Comment on the wait or the place: "Have you been here before?"',
+    '- Situation: At a social event where you know no one. | Response: "How do you know [host]?" — almost always opens a conversation.',
+    '- Situation: Someone nearby is reading or doing something interesting. | Response: "What are you reading / working on?" with genuine curiosity.',
+    '- Situation: You are at a professional event. | Response: "What brings you here today?" — professional but open.',
     '',
-    'CHECKPOINT: Chapter 1 Test',
+    'PACK: Conversational Depth',
+    '',
+    'MODE: single',
+    '',
+    '## Strategy: The Follow-Up Question',
+    '**Explanation:** Instead of moving to a new topic after someone answers, go deeper on what they just said. This signals genuine interest and almost always leads to more meaningful conversation.',
+    '',
+    'BUNDLE: free',
+    '- Situation: Someone mentions they just came back from a trip. | Response: "What was the best part?" rather than moving on.',
+    '- Situation: Someone says they have been busy with work lately. | Response: "What kind of work are you in?" or "What has been keeping you busiest?"',
+    '',
+    'BUNDLE: pro',
+    '- Situation: Someone mentions they just came back from a trip. | Response: "What was the best part?" rather than moving on.',
+    '- Situation: Someone says they have been busy with work lately. | Response: "What kind of work are you in?" or "What has been keeping you busiest?"',
+    '- Situation: Someone gives a one-word answer to a question. | Response: "Tell me more about that." — simple and almost always works.',
+    '- Situation: You want to move from small talk to something more interesting. | Response: "What is something you have been thinking about lately?" — unusual enough to be interesting.',
+    '',
+    'MODE: memorize',
+    '',
+    '## Strategy: Depth principles',
+    '**Explanation:** What to remember about creating conversational depth.',
+    '',
+    '- Front: What is the single best way to deepen a conversation? | Back: Ask a follow-up question about what was just said — go deeper rather than wider.',
+    '- Front: What does "follow the energy" mean in conversation? | Back: Notice what the other person seems most engaged or animated by, and ask more about that.',
+  ].join('\n');
+
+  var exProgramNoCP = [
+    'PROGRAM: Conversation Skills Foundations',
+    'DESCRIPTION: Build confidence starting conversations, keeping them going, and creating genuine connection.',
+    'ICON: ti-message-circle',
+    '',
+    'SECTION: Part 1 — Starting Conversations',
+    'PACK: Starting Conversations',
+    '',
+    'MODE: single',
+    '',
+    '## Strategy: The Situational Opener',
+    '**Explanation:** Comment on something real and shared in the immediate environment.',
+    '',
+    'BUNDLE: free',
+    '- Situation: Waiting in line with someone. | Response: "Have you been here before?"',
+    '- Situation: At a social event where you know no one. | Response: "How do you know [host]?"',
+    '',
+    'BUNDLE: pro',
+    '- Situation: Waiting in line with someone. | Response: "Have you been here before?"',
+    '- Situation: At a social event where you know no one. | Response: "How do you know [host]?"',
+    '- Situation: You are at a professional event. | Response: "What brings you here today?"',
+    '',
+    'SECTION: Part 2 — Conversational Depth',
+    'PACK: Conversational Depth',
+    '',
+    'MODE: single',
+    '',
+    '## Strategy: The Follow-Up Question',
+    '**Explanation:** Go deeper on what someone just said rather than moving to a new topic.',
+    '',
+    'BUNDLE: free',
+    '- Situation: Someone mentions they just came back from a trip. | Response: "What was the best part?"',
+    '- Situation: Someone says they have been busy with work. | Response: "What kind of work are you in?"',
+    '',
+    'BUNDLE: pro',
+    '- Situation: Someone mentions they just came back from a trip. | Response: "What was the best part?"',
+    '- Situation: Someone says they have been busy with work. | Response: "What kind of work are you in?"',
+    '- Situation: Someone gives a one-word answer. | Response: "Tell me more about that."',
+  ].join('\n');
+
+  var exProgramWithCP = [
+    'PROGRAM: Assertive Communication Course',
+    'DESCRIPTION: A structured course in standing your ground, setting limits, and expressing yourself clearly.',
+    'ICON: ti-shield',
+    '',
+    'SECTION: Module 1 — Core Techniques',
+    'PACK: Assertive Core',
+    '',
+    'MODE: single',
+    '',
+    '## Strategy: The Broken Record',
+    '**Explanation:** Calmly repeat your position without escalating.',
+    '',
+    'BUNDLE: free',
+    '- Situation: Someone keeps pushing after you said no. | Response: "I understand — and my answer is still no."',
+    '- Situation: A colleague dismisses your concern. | Response: "I hear you — and I do want to come back to this."',
+    '',
+    'BUNDLE: pro',
+    '- Situation: Someone keeps pushing after you said no. | Response: "I understand — and my answer is still no."',
+    '- Situation: A colleague dismisses your concern. | Response: "I hear you — and I do want to come back to this."',
+    '- Situation: A salesperson keeps pushing. | Response: "I appreciate your time — I am not interested."',
+    '',
+    'CHECKPOINT: Module 1 Test',
     'TIME: 90',
-    'DRAW: 10',
-    '- Q: What is the key idea here? | Correct: B | A: Option A | B: Correct option | C: Option C | D: Option D',
-    '- Q: Another question? | Correct: A | A: Right answer | B: Wrong | C: Wrong | D: Wrong',
+    'DRAW: 5',
+    '- Q: What is the broken record technique? | Correct: C | A: Repeating yourself loudly until heard | B: Changing your argument each time | C: Calmly restating your position with the same tone | D: Agreeing to end the conflict',
+    '- Q: A soft no should include what? | Correct: B | A: A long explanation of your reasons | B: A brief warm decline with no apology | C: A counteroffer | D: An apology followed by the refusal',
+    '- Q: When someone keeps pushing back, what should you avoid? | Correct: D | A: Repeating your position | B: Staying calm | C: Acknowledging them | D: Escalating emotionally or getting louder',
     '',
-    'SECTION: Chapter 2 — Second Topic',
-    'PACK: Second Topic',
+    'SECTION: Module 2 — Saying No',
+    'PACK: Saying No',
+    '',
     'MODE: single',
     '',
-    '## Strategy: Another Strategy',
-    '**Explanation:** Explanation here.',
+    '## Strategy: The Soft No',
+    '**Explanation:** Decline without over-explaining or apologising.',
     '',
     'BUNDLE: free',
-    '- Situation: X | Response: Y.',
+    '- Situation: A friend asks for help you do not have capacity for. | Response: "I can not make that work right now — I hope it goes well."',
+    '- Situation: You are invited somewhere you do not want to go. | Response: "I will have to skip this one — thanks for thinking of me."',
     '',
     'BUNDLE: pro',
-    '- Situation: X | Response: Y.',
-    '- Situation: Extra | Response: Y.',
+    '- Situation: A friend asks for help you do not have capacity for. | Response: "I can not make that work right now — I hope it goes well."',
+    '- Situation: You are invited somewhere you do not want to go. | Response: "I will have to skip this one — thanks for thinking of me."',
+    '- Situation: A manager adds to your plate when you are at capacity. | Response: "I want to do this well — can we talk about what moves down the list?"',
+    '',
+    'CHECKPOINT: Module 2 Test',
+    'TIME: 90',
+    'DRAW: 5',
+    '- Q: A soft no avoids what? | Correct: A | A: Over-explaining and apologising | B: Warmth | C: Clarity | D: Eye contact',
+    '- Q: Which response is an example of a soft no? | Correct: B | A: "No, absolutely not, that is not going to happen." | B: "I will have to skip this one — thanks for thinking of me." | C: "I guess I could try..." | D: "Sorry, sorry, I am just so busy right now."',
   ].join('\n');
 
-  var packRules = [
-    '<h3>Pack rules</h3>',
-    '<ul class="syntax-rules">',
-    '<li><code>PACK:</code> &mdash; Pack name, one line. Use multiple PACK: blocks to import several packs at once.</li>',
-    '<li><code>MODE:</code> &mdash; one of: <code>single</code>, <code>collections</code>, <code>memorize</code>, <code>sequences</code>, <code>challenges</code>, <code>mindset</code>. Only include relevant modes.</li>',
-    '<li><code>##</code> &mdash; new strategy, category, combo, collection, or mindset within a mode.</li>',
-    '<li><code>**Explanation:**</code> &mdash; descriptive text. Can be several sentences.</li>',
-    '<li><code>BUNDLE: free</code> &mdash; free-tier cards. Always include this.</li>',
-    '<li><code>BUNDLE: pro</code> &mdash; pro-tier cards. Include all free cards PLUS extras. Pro users see this bundle automatically.</li>',
-    '<li><code>BUNDLE: Name</code> &mdash; optional extra thematic bundle, e.g. "Workplace &amp; Social".</li>',
-    '<li><code>-</code> &mdash; one card per line: <code>Situation: X | Response: Y</code> / <code>Front: X | Back: Y</code> / <code>Prompt: X | Response: Y</code></li>',
-    '<li>Memorize mode does not use bundles.</li>',
-    '</ul>',
-  ].join('');
-
-  var programRules = [
-    '<h3>Program rules</h3>',
-    '<ul class="syntax-rules">',
-    '<li><code>PROGRAM:</code> &mdash; Program title. Triggers program mode — packs become sections, not standalone packs.</li>',
-    '<li><code>DESCRIPTION:</code> &mdash; Short description shown in the programs list.</li>',
-    '<li><code>ICON:</code> &mdash; Tabler icon name, e.g. <code>ti-book</code>, <code>ti-brain</code>, <code>ti-message-circle</code>.</li>',
-    '<li><code>SECTION:</code> &mdash; Starts a new section. Everything that follows belongs to this section until the next SECTION:.</li>',
-    '<li><code>PACK:</code> inside a section &mdash; defines the pack for that section using normal pack syntax.</li>',
-    '<li><code>CHECKPOINT:</code> &mdash; Optional. Defines a test for the section.</li>',
-    '<li><code>TIME:</code> &mdash; Seconds per question (default 90).</li>',
-    '<li><code>DRAW:</code> &mdash; Number of questions to draw from the pool (default 20).</li>',
-    '<li><code>- Q: Question? | Correct: B | A: Option | B: Option | C: Option | D: Option</code> &mdash; one question per line. Correct is the letter of the right answer.</li>',
-    '</ul>',
-  ].join('');
+  // ── MODAL ───────────────────────────────────────────────────────────────────
 
   var modal = document.getElementById('syntax-modal');
-  if (!modal) { modal = document.createElement('div'); modal.id = 'syntax-modal'; modal.className = 'modal-overlay'; document.body.appendChild(modal); }
+  if (!modal) {
+    modal = document.createElement('div');
+    modal.id = 'syntax-modal';
+    modal.className = 'modal-overlay';
+    document.body.appendChild(modal);
+  }
+
   modal.innerHTML =
     '<div class="modal modal--wide">' +
-      '<div class="modal-header"><h2>Import Syntax Guide</h2><button class="icon-btn" id="sg-close">&#x2715;</button></div>' +
-      '<p class="modal-desc">Give this format and rules to any AI tool (Claude, NotebookLM, ChatGPT) to generate importable content.</p>' +
-      '<div class="syntax-tabs">' +
+      '<div class="modal-header">' +
+        '<h2>Import Syntax Guide</h2>' +
+        '<button class="icon-btn" id="sg-close">&#x2715;</button>' +
+      '</div>' +
+      '<p class="modal-desc">Give the rules and a template to any AI tool — Claude, NotebookLM, ChatGPT — to generate importable packs or programs. Use the tabs below to switch between pack and program syntax, and see working examples you can copy directly.</p>' +
+
+      // Top-level tabs
+      '<div class="syntax-tabs" id="sg-top-tabs">' +
         '<button class="syntax-tab syntax-tab--active" data-stab="pack">Packs</button>' +
         '<button class="syntax-tab" data-stab="program">Programs</button>' +
       '</div>' +
-      '<div class="syntax-section" id="stab-pack">' + packRules +
-        '<h3>Pack template</h3>' +
-        '<button class="btn btn--primary btn--sm" id="sg-copy-pack" style="margin-bottom:12px;">Copy pack template</button>' +
-        '<pre class="syntax-pre" id="sg-pack-tmpl"></pre>' +
+
+      // ── PACKS TAB
+      '<div class="syntax-section" id="stab-pack">' +
+        packRules +
+        '<h3 style="margin-top:20px;">Examples</h3>' +
+        '<div class="syntax-tabs" id="sg-pack-ex-tabs">' +
+          '<button class="syntax-ex-tab syntax-ex-tab--active" data-ex="single">Single pack</button>' +
+          '<button class="syntax-ex-tab" data-ex="multi">Multiple packs</button>' +
+        '</div>' +
+        '<div id="sg-ex-single">' +
+          '<p class="modal-desc" style="margin:8px 0;">A single pack with two strategies, two modes (single + memorize), and free/pro bundles.</p>' +
+          '<button class="btn btn--primary btn--sm sg-copy-ex" data-ex="single" style="margin-bottom:8px;">Copy this example</button>' +
+          '<pre class="syntax-pre" id="sg-tmpl-single"></pre>' +
+        '</div>' +
+        '<div id="sg-ex-multi" style="display:none">' +
+          '<p class="modal-desc" style="margin:8px 0;">Two separate packs in one paste — each gets its own entry in My packs.</p>' +
+          '<button class="btn btn--primary btn--sm sg-copy-ex" data-ex="multi" style="margin-bottom:8px;">Copy this example</button>' +
+          '<pre class="syntax-pre" id="sg-tmpl-multi"></pre>' +
+        '</div>' +
       '</div>' +
-      '<div class="syntax-section" id="stab-program" style="display:none">' + programRules +
-        '<h3>Program template</h3>' +
-        '<button class="btn btn--primary btn--sm" id="sg-copy-prog" style="margin-bottom:12px;">Copy program template</button>' +
-        '<pre class="syntax-pre" id="sg-prog-tmpl"></pre>' +
+
+      // ── PROGRAMS TAB
+      '<div class="syntax-section" id="stab-program" style="display:none">' +
+        programRules +
+        '<h3 style="margin-top:20px;">Examples</h3>' +
+        '<div class="syntax-tabs" id="sg-prog-ex-tabs">' +
+          '<button class="syntax-ex-tab syntax-ex-tab--active" data-ex="prog-nocp">Program without checkpoints</button>' +
+          '<button class="syntax-ex-tab" data-ex="prog-cp">Program with checkpoints</button>' +
+        '</div>' +
+        '<div id="sg-ex-prog-nocp">' +
+          '<p class="modal-desc" style="margin:8px 0;">Two sections, each with a pack. No tests — useful when the focus is on practice rather than assessment.</p>' +
+          '<button class="btn btn--primary btn--sm sg-copy-ex" data-ex="prog-nocp" style="margin-bottom:8px;">Copy this example</button>' +
+          '<pre class="syntax-pre" id="sg-tmpl-prog-nocp"></pre>' +
+        '</div>' +
+        '<div id="sg-ex-prog-cp" style="display:none">' +
+          '<p class="modal-desc" style="margin:8px 0;">Two sections, each with a pack and a checkpoint test. Questions use A–D multiple choice.</p>' +
+          '<button class="btn btn--primary btn--sm sg-copy-ex" data-ex="prog-cp" style="margin-bottom:8px;">Copy this example</button>' +
+          '<pre class="syntax-pre" id="sg-tmpl-prog-cp"></pre>' +
+        '</div>' +
       '</div>' +
+
       '<div class="modal-actions"><button class="btn btn--ghost" id="sg-done">Close</button></div>' +
     '</div>';
+
   modal.style.display = 'flex';
-  document.getElementById('sg-pack-tmpl').textContent = packTmpl;
-  document.getElementById('sg-prog-tmpl').textContent = programTmpl;
+
+  // Inject template content
+  document.getElementById('sg-tmpl-single').textContent    = exSinglePack;
+  document.getElementById('sg-tmpl-multi').textContent     = exMultiPack;
+  document.getElementById('sg-tmpl-prog-nocp').textContent = exProgramNoCP;
+  document.getElementById('sg-tmpl-prog-cp').textContent   = exProgramWithCP;
+
+  // Close buttons
   document.getElementById('sg-close').onclick = function() { modal.style.display = 'none'; };
   document.getElementById('sg-done').onclick  = function() { modal.style.display = 'none'; };
-  document.getElementById('sg-copy-pack').onclick = function() { navigator.clipboard.writeText(packTmpl).then(function() { showToast('Pack template copied!'); }); };
-  document.getElementById('sg-copy-prog').onclick = function() { navigator.clipboard.writeText(programTmpl).then(function() { showToast('Program template copied!'); }); };
-  document.querySelectorAll('.syntax-tab').forEach(function(tab) {
+
+  // Top tabs (Packs / Programs)
+  document.querySelectorAll('#sg-top-tabs .syntax-tab').forEach(function(tab) {
     tab.addEventListener('click', function() {
-      document.querySelectorAll('.syntax-tab').forEach(function(t) { t.classList.remove('syntax-tab--active'); });
+      document.querySelectorAll('#sg-top-tabs .syntax-tab').forEach(function(t) { t.classList.remove('syntax-tab--active'); });
       tab.classList.add('syntax-tab--active');
       document.getElementById('stab-pack').style.display    = tab.dataset.stab === 'pack'    ? '' : 'none';
       document.getElementById('stab-program').style.display = tab.dataset.stab === 'program' ? '' : 'none';
+    });
+  });
+
+  // Pack example sub-tabs
+  document.querySelectorAll('#sg-pack-ex-tabs .syntax-ex-tab').forEach(function(tab) {
+    tab.addEventListener('click', function() {
+      document.querySelectorAll('#sg-pack-ex-tabs .syntax-ex-tab').forEach(function(t) { t.classList.remove('syntax-ex-tab--active'); });
+      tab.classList.add('syntax-ex-tab--active');
+      document.getElementById('sg-ex-single').style.display = tab.dataset.ex === 'single' ? '' : 'none';
+      document.getElementById('sg-ex-multi').style.display  = tab.dataset.ex === 'multi'  ? '' : 'none';
+    });
+  });
+
+  // Program example sub-tabs
+  document.querySelectorAll('#sg-prog-ex-tabs .syntax-ex-tab').forEach(function(tab) {
+    tab.addEventListener('click', function() {
+      document.querySelectorAll('#sg-prog-ex-tabs .syntax-ex-tab').forEach(function(t) { t.classList.remove('syntax-ex-tab--active'); });
+      tab.classList.add('syntax-ex-tab--active');
+      document.getElementById('sg-ex-prog-nocp').style.display = tab.dataset.ex === 'prog-nocp' ? '' : 'none';
+      document.getElementById('sg-ex-prog-cp').style.display   = tab.dataset.ex === 'prog-cp'   ? '' : 'none';
+    });
+  });
+
+  // Copy buttons
+  var exMap = {
+    'single':    exSinglePack,
+    'multi':     exMultiPack,
+    'prog-nocp': exProgramNoCP,
+    'prog-cp':   exProgramWithCP,
+  };
+  document.querySelectorAll('.sg-copy-ex').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var text = exMap[btn.dataset.ex] || '';
+      navigator.clipboard.writeText(text).then(function() { showToast('Example copied!'); });
     });
   });
 }
