@@ -203,6 +203,17 @@
     .tier-free          { background: #e8f5e9; color: #2e7d32; }
     .tier-pro           { background: #fff8e1; color: #f57f17; }
     .tier-ext           { background: #ede7f6; color: #4527a0; }
+    .editor-tag-section { padding: 8px 0 4px; }
+    .editor-tag-label   { font-size: 11px; font-weight: 700; letter-spacing: .5px; text-transform: uppercase; color: var(--txt3); margin-bottom: 6px; }
+    .editor-tag-list    { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 6px; min-height: 24px; }
+    .editor-tag-chip    { display: inline-flex; align-items: center; gap: 3px; background: var(--acc); color: #fff; border-radius: 12px; padding: 3px 10px; font-size: 12px; font-weight: 600; }
+    .editor-tag-del     { background: none; border: none; color: #fff; cursor: pointer; font-size: 14px; padding: 0; opacity: .7; }
+    .editor-tag-del:hover { opacity: 1; }
+    .editor-tag-input-row { display: flex; gap: 6px; align-items: center; margin-top: 4px; }
+    .editor-tag-input   { flex: 1; border: 1px solid var(--border); border-radius: 6px; padding: 5px 9px; font-size: 12px; background: var(--bg); color: var(--txt); outline: none; }
+    .editor-tag-input:focus { border-color: var(--acc); }
+    .editor-tag-add-btn { background: var(--acc); color: #fff; border: none; border-radius: 6px; width: 28px; height: 28px; font-size: 18px; line-height: 1; cursor: pointer; }
+    .tag-empty          { font-size: 12px; color: var(--txt3); }
 
     /* Mode content */
     #mode-content {
@@ -510,7 +521,7 @@
   <div class="topbar">
     <button class="btn btn--ghost btn--sm" onclick="window.location.href='index.html'" style="margin-right:8px;" title="Back to app">&larr; App</button>
     <span class="topbar-title" onclick="showHome()" style="cursor:pointer;" title="Back to home">Deckstack — Pack Editor</span>
-    <span class="topbar-version">Editor v1.4.0 · Changes saved automatically</span>
+    <span class="topbar-version">Editor v1.4.1 · Changes saved automatically</span>
   </div>
 
   <!-- Home screen -->
@@ -613,8 +624,8 @@
   });
 </script>
 <!-- Editor logic -->
-<script src="js/editor-core.js?v=140"></script>
-<script src="js/editor-ui.js?v=140"></script>
+<script src="js/editor-core.js?v=141"></script>
+<script src="js/editor-ui.js?v=141"></script>
 
 </body>
 </html>
