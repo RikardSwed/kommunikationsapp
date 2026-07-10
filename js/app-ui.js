@@ -1361,8 +1361,8 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
       const pct       = totalCPs ? Math.round((passedCPs / totalCPs) * 100) : 0;
 
       html += '<div class="program-card" data-prog-id="' + prog.id + '">'
-        + '<div class="program-card-icon"><i class="ti ' + (prog.icon || 'ti-stack') + '"></i></div>'
-        + '<div class="program-card-body">'
+        + '<div class="program-card-icon" style="pointer-events:none"><i class="ti ' + (prog.icon || 'ti-stack') + '"></i></div>'
+        + '<div class="program-card-body" style="pointer-events:none">'
         + '<div class="program-card-title">' + prog.title + '</div>'
         + '<div class="program-card-desc">' + prog.description + '</div>'
         + '<div class="program-progress-bar-wrap">'

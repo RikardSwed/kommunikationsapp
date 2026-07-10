@@ -600,8 +600,9 @@ if (alSuggestToggle) {
 // Key: al_{packKey}_{screen}_{stratId}_{cardId}_{side}
 // Pack-level key: al_pack_{packKey}
 function alKey(screen, stratId, cardId, side) {
-  return `al_${window.activeCollectionKey}_${screen}_${stratId}_${cardId}_${side}`;
+  return 'al_' + (window.activeCollectionKey||'') + '_' + screen + '_' + stratId + '_' + cardId + '_' + side;
 }
+window.alKey = alKey;
 function alGet(key) {
   try { const v = localStorage.getItem(key); return v !== null ? parseInt(v) : null; } catch { return null; }
 }
@@ -679,9 +680,9 @@ if (alPackBar) {
   btn.addEventListener('click', () => {
     const packKey = window.activeCollectionKey;
     const label   = window.activeCollectionLabel || packKey;
-    if (title) title.textContent = label;
-    if (ver)   ver.textContent   = window.VERSION || '';
-    alRender('al-pack-bar', alPackKey(packKey));
+    if (title) title.textContent = label + ' — Settings';
+    if (ver)   ver.textContent   = typeof VERSION !== 'undefined' ? VERSION : '';
+    alRender('al-pack-bar', alPackKey(packKey || ''));
     overlay.classList.add('open');
   });
   if (close) close.addEventListener('click', () => overlay.classList.remove('open'));

@@ -728,8 +728,10 @@ function challRender() {
   const hints = document.getElementById('challHint');
   if (hints) hints.style.display = document.getElementById('showHints').checked ? '' : 'none';
   fbRender('fb-chall-front', fbKey('chall', challIdx, challInputIdx, 'front'));
+  if (window.alRender && window.alKey) alRender('al-chall-front', alKey('chall', challIdx, challInputIdx, 'front'));
   if (window.alRender) alRender('al-chall-front', alKey('chall', challIdx, challInputIdx, 'front'));
   fbRender('fb-chall-back',  fbKey('chall', challIdx, challInputIdx, 'back'));
+  if (window.alRender && window.alKey) alRender('al-chall-back', alKey('chall', challIdx, challInputIdx, 'back'));
   if (window.alRender) alRender('al-chall-back', alKey('chall', challIdx, challInputIdx, 'back'));
 }
 
@@ -835,8 +837,10 @@ function mindRender() {
   const hints = document.getElementById('mindHint');
   if (hints) hints.style.display = document.getElementById('showHints').checked ? '' : 'none';
   fbRender('fb-mind-front', fbKey('mind', mindIdx, mindInputIdx, 'front'));
+  if (window.alRender && window.alKey) alRender('al-mind-front', alKey('mind', mindIdx, mindInputIdx, 'front'));
   if (window.alRender) alRender('al-mind-front', alKey('mind', mindIdx, mindInputIdx, 'front'));
   fbRender('fb-mind-back',  fbKey('mind', mindIdx, mindInputIdx, 'back'));
+  if (window.alRender && window.alKey) alRender('al-mind-back', alKey('mind', mindIdx, mindInputIdx, 'back'));
   if (window.alRender) alRender('al-mind-back', alKey('mind', mindIdx, mindInputIdx, 'back'));
 }
 
