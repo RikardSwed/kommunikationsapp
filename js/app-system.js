@@ -188,6 +188,8 @@ applyInputCounterVisibility();
     });
     // Apply mode locks
     applyModeLocks();
+    // Update nav button label (Upgrade ↔ Extended)
+    updateNavUpgradeBtn();
   }
 
   function applyModeLocks() {
@@ -241,12 +243,33 @@ applyInputCounterVisibility();
     loadDevLevelUI();
   };
 
+  // ── Nav upgrade/extended button ──────────────────────────────────────────────
+  function updateNavUpgradeBtn() {
+    const btn   = document.getElementById('navUpgradeBtn');
+    const icon  = btn && btn.querySelector('.nav-tab-icon i');
+    const label = btn && btn.querySelector('.nav-tab-label');
+    if (!btn) return;
+    const level = getLevel();
+    if (level === 'freemium') {
+      btn.dataset.tab      = 'upgrade';
+      btn.className        = 'nav-tab nav-tab--upgrade';
+      if (icon)  icon.className  = 'ti ti-crown';
+      if (label) label.textContent = 'Upgrade';
+    } else {
+      btn.dataset.tab      = 'extended';
+      btn.className        = 'nav-tab nav-tab--extended';
+      if (icon)  icon.className  = 'ti ti-sparkles';
+      if (label) label.textContent = 'Extended';
+    }
+  }
+
   // Expose for other modules
-  window.accessLevel = { getLevel, canAccess, applyModeLocks };
+  window.accessLevel = { getLevel, canAccess, applyModeLocks, updateNavUpgradeBtn };
 
   // Init
   loadDevLevelUI();
   applyAccessLevel();
+  updateNavUpgradeBtn();
 
   // Re-apply mode locks whenever mode screen becomes visible
   const _modeScreenEl = document.getElementById('modeScreen');

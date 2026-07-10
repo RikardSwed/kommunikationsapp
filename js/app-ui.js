@@ -87,7 +87,8 @@ const TAB_SCREENS = {
   dashboard: 'dashboardScreen',
   library:   'homeScreen',
   progress:  'progressScreen',
-  upgrade:   'upgradeScreen'
+  upgrade:   'upgradeScreen',
+  extended:  'extendedScreen'
 };
 
 const bottomNav = document.getElementById('bottomNav');
@@ -1605,4 +1606,149 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
   const tabEl = document.getElementById('libTabPrograms');
   if (tabEl) observer.observe(tabEl, { attributes: true, attributeFilter: ['style'] });
   renderProgramList();
+})();
+
+// ─── EXTENDED STORE ───────────────────────────────────────────────────────────
+
+(function initExtendedStore() {
+
+  const OWNED_KEY = 'ds_extended_owned';
+
+  const EXTENDED_PACKS = [
+    {
+      id: 'storytelling',
+      title: 'Storytelling',
+      icon: 'ti-book',
+      description: 'Learn to structure and deliver stories that hold attention, create emotion, and make you memorable in any conversation.',
+      price: '29 kr',
+    }
+  ];
+
+  const EXTENDED_PROGRAMS = [
+    {
+      id: 'conversation-skills',
+      title: 'Conversation Skills Foundations',
+      icon: 'ti-message-circle',
+      description: 'Start conversations with confidence, keep them going, and create genuine connection — from small talk to meaningful depth.',
+      price: '49 kr',
+    }
+  ];
+
+  function getOwned() {
+    try { return JSON.parse(localStorage.getItem(OWNED_KEY)) || []; }
+    catch { return []; }
+  }
+
+  function setOwned(arr) {
+    localStorage.setItem(OWNED_KEY, JSON.stringify(arr));
+  }
+
+  function isOwned(id) {
+    return getOwned().includes(id);
+  }
+
+  function getAccessLevel() {
+    return (window.accessLevel && window.accessLevel.getLevel()) ||
+           localStorage.getItem('dev_access_level') || 'complete';
+  }
+
+  function renderExtendedStore() {
+    const packList    = document.getElementById('extPackList');
+    const programList = document.getElementById('extProgramList');
+    if (!packList || !programList) return;
+
+    const level = getAccessLevel();
+
+    packList.innerHTML = '';
+    EXTENDED_PACKS.forEach(item => {
+      const owned    = isOwned(item.id) || level === 'complete';
+      const card     = document.createElement('div');
+      card.className = 'ext-store-card';
+      card.innerHTML = `
+        <div class="ext-store-card-top">
+          <div class="ext-store-icon"><i class="ti ${item.icon}" aria-hidden="true"></i></div>
+          <div class="ext-store-info">
+            <div class="ext-store-title">${item.title}</div>
+            <div class="ext-store-desc">${item.description}</div>
+          </div>
+        </div>
+        <div class="ext-store-card-bottom">
+          ${owned
+            ? `<div class="ext-store-owned"><i class="ti ti-check" aria-hidden="true"></i> Added to Library</div>`
+            : `<div class="ext-store-price">${item.price}</div>
+               <button class="ext-store-btn" data-id="${item.id}" data-type="pack">Add to Library</button>`
+          }
+        </div>`;
+      packList.appendChild(card);
+    });
+
+    programList.innerHTML = '';
+    EXTENDED_PROGRAMS.forEach(item => {
+      const owned    = isOwned(item.id) || level === 'complete';
+      const card     = document.createElement('div');
+      card.className = 'ext-store-card';
+      card.innerHTML = `
+        <div class="ext-store-card-top">
+          <div class="ext-store-icon"><i class="ti ${item.icon}" aria-hidden="true"></i></div>
+          <div class="ext-store-info">
+            <div class="ext-store-title">${item.title}</div>
+            <div class="ext-store-desc">${item.description}</div>
+          </div>
+        </div>
+        <div class="ext-store-card-bottom">
+          ${owned
+            ? `<div class="ext-store-owned"><i class="ti ti-check" aria-hidden="true"></i> Added to Library</div>`
+            : `<div class="ext-store-price">${item.price}</div>
+               <button class="ext-store-btn" data-id="${item.id}" data-type="program">Add to Library</button>`
+          }
+        </div>`;
+      programList.appendChild(card);
+    });
+
+    // Bind buy buttons
+    document.querySelectorAll('.ext-store-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const id   = btn.dataset.id;
+        const type = btn.dataset.type;
+        const owned = getOwned();
+        if (!owned.includes(id)) owned.push(id);
+        setOwned(owned);
+        renderExtendedStore();
+        // If unlocking a pack in pro mode, mark it accessible (visual only — full unlock needs applyAccessLevel patch)
+        if (type === 'pack' && window.accessLevel) {
+          // Re-render library packs so storytelling unlocks
+          const card = document.querySelector(`#libTabPacks .collection-card[data-key="${id}"]`);
+          if (card) {
+            card.classList.remove('collection-card--locked');
+            const badge = card.querySelector('.pack-lock-badge');
+            if (badge) badge.remove();
+            card.onclick = () => showModeScreen(id, card.dataset.label);
+            let cSY = 0, cMv = false;
+            card.ontouchstart = e => { cSY = e.touches[0].clientY; cMv = false; };
+            card.ontouchmove  = e => { if (Math.abs(e.touches[0].clientY - cSY) > 8) cMv = true; };
+            card.ontouchend   = () => { if (!cMv) showModeScreen(id, card.dataset.label); };
+          }
+        }
+      });
+    });
+  }
+
+  // Expose so showTab can trigger re-render
+  window.renderExtendedStore = renderExtendedStore;
+
+  // Re-render when Extended tab is shown
+  const origShowTab2 = window.showTab || showTab;
+  window.showTab = function(tab) {
+    origShowTab2(tab);
+    if (tab === 'extended') renderExtendedStore();
+  };
+
+  // Also re-apply when access level changes (so Owned state updates)
+  const extScreen = document.getElementById('extendedScreen');
+  if (extScreen) {
+    new MutationObserver(() => {
+      if (extScreen.style.display === 'flex') renderExtendedStore();
+    }).observe(extScreen, { attributes: true, attributeFilter: ['style'] });
+  }
+
 })();
