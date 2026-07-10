@@ -2121,6 +2121,41 @@ body.pb-enabled .divider::after {
 .nav-tab.nav-tab--extended { color: var(--ds-acc); }
 .nav-tab.nav-tab--extended.active { color: var(--ds-acc); }
 
+/* ── TAG SYSTEM ──────────────────────────────────────────────────────────── */
+
+/* In-app pack settings overlay */
+.tag-list { display: flex; flex-wrap: wrap; gap: 6px; padding: 4px 0 8px; min-height: 28px; }
+.tag-chip { display: inline-flex; align-items: center; gap: 4px; background: var(--ds-acc); color: #fff; border-radius: 20px; padding: 3px 10px; font-size: 12px; font-weight: 600; }
+.tag-chip-del { background: none; border: none; color: #fff; cursor: pointer; font-size: 14px; line-height: 1; padding: 0 0 0 2px; opacity: 0.7; }
+.tag-chip-del:hover { opacity: 1; }
+.tag-empty { font-size: 12px; color: var(--ds-txt3); }
+.tag-input-row { display: flex; gap: 8px; align-items: center; margin-top: 4px; }
+.tag-input { flex: 1; border: 1px solid var(--ds-border); border-radius: 8px; padding: 6px 10px; font-size: 13px; background: var(--ds-bg); color: var(--ds-txt); outline: none; }
+.tag-input:focus { border-color: var(--ds-acc); }
+.tag-add-btn { background: var(--ds-acc); color: #fff; border: none; border-radius: 8px; width: 32px; height: 32px; font-size: 20px; line-height: 1; cursor: pointer; flex-shrink: 0; }
+
+/* Program detail topbar */
+.program-detail-topbar { display: flex; align-items: center; justify-content: space-between; margin-bottom: 4px; }
+.program-settings-btn { background: none; border: none; color: var(--ds-txt3); font-size: 20px; cursor: pointer; padding: 4px 8px; border-radius: 8px; }
+.program-settings-btn:hover { color: var(--ds-txt); background: var(--ds-card); }
+
+/* Editor tag section (inside pack editor header) */
+.editor-tag-section { padding: 8px 0 4px; border-top: 1px solid var(--ds-border); margin-top: 8px; }
+.editor-tag-label { font-size: 11px; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase; color: var(--ds-txt3); margin-bottom: 6px; }
+.editor-tag-list { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 6px; min-height: 24px; }
+.editor-tag-chip { display: inline-flex; align-items: center; gap: 3px; background: var(--acc); color: #fff; border-radius: 12px; padding: 2px 8px; font-size: 11px; font-weight: 600; }
+.editor-tag-chip--more { background: var(--txt3); }
+.editor-tag-del { background: none; border: none; color: #fff; cursor: pointer; font-size: 13px; padding: 0; opacity: 0.7; }
+.editor-tag-del:hover { opacity: 1; }
+.editor-tag-input-row { display: flex; gap: 6px; align-items: center; }
+.editor-tag-input { flex: 1; border: 1px solid var(--border); border-radius: 6px; padding: 4px 8px; font-size: 12px; background: var(--bg); color: var(--txt); outline: none; }
+.editor-tag-input:focus { border-color: var(--acc); }
+.editor-tag-add-btn { background: var(--acc); color: #fff; border: none; border-radius: 6px; width: 26px; height: 26px; font-size: 18px; line-height: 1; cursor: pointer; }
+
+/* Pack row tags in editor columns */
+.pack-row-main { display: flex; flex-direction: column; gap: 3px; flex: 1; min-width: 0; }
+.pack-row-tags { display: flex; flex-wrap: wrap; gap: 3px; }
+
 /* ── MODE TOPBAR CENTER GROUP ─────────────────────────────────────────────── */
 .mode-topbar-center {
   display: flex;
