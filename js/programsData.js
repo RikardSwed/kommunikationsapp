@@ -107,7 +107,7 @@ const programsData = [
         },
       },
     ],
-  },,
+  },
 
   {
     id: 'conversation-skills',

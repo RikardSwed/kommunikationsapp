@@ -687,10 +687,10 @@ if (alPackBar) {
   alPackBar.querySelectorAll('.al-btn').forEach(btn => {
     const handler = e => {
       e.stopPropagation();
-      const packKey = window.activeCollectionKey;
-      if (!packKey) return;
-      alSet(alPackKey(packKey), parseInt(btn.dataset.val));
-      alRender('al-pack-bar', alPackKey(packKey));
+      const key = alPackBar.dataset.alKey;
+      if (!key) return;
+      alSet(key, parseInt(btn.dataset.val));
+      alRender('al-pack-bar', key);
     };
     btn.addEventListener('click', handler);
     btn.addEventListener('touchend', e => { e.preventDefault(); e.stopPropagation(); handler(e); }, { passive: false });
