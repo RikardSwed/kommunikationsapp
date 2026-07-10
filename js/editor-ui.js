@@ -117,6 +117,96 @@ function renderProgramList() {
       if (prog) exportProgram(prog);
     });
   });
+
+  // App programs — click shows program detail modal
+  document.querySelectorAll('#program-list-app .program-row').forEach(row => {
+    row.style.cursor = 'pointer';
+    row.addEventListener('click', () => {
+      const prog = (window._dsPrograms || []).find(p => p.id === row.dataset.id);
+      if (!prog) return;
+      const sections = (prog.sections || []).map(s => {
+        const cps = s.checkpoint ? ` · <span style="color:var(--acc)">Checkpoint</span>` : '';
+        const packs = (s.packs || []).map(p => p.label || p.key).join(', ');
+        return `<div style="padding:6px 0; border-bottom:1px solid var(--border);">
+          <div style="font-weight:600;font-size:13px;">${escHtml(s.title)}</div>
+          <div style="font-size:12px;color:var(--txt3);">${escHtml(packs)}${cps}</div>
+        </div>`;
+      }).join('');
+      showInfoModal(prog.title, `
+        <p style="color:var(--txt2);font-size:13px;margin:0 0 12px;">${escHtml(prog.description || '')}</p>
+        <div style="font-size:11px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:var(--txt3);margin-bottom:8px;">Sections</div>
+        ${sections || '<div style="color:var(--txt3);font-size:13px;">No sections</div>'}
+      `);
+    });
+  });
+
+  // App tests — click shows questions list
+  document.querySelectorAll('#program-list-tests .pack-row--test').forEach((row, idx) => {
+    row.style.cursor = 'pointer';
+    const item = allCPs[idx];
+    if (!item) return;
+    row.addEventListener('click', () => {
+      const qs = (item.cp.questions || []).map((q, i) =>
+        `<div style="padding:8px 0;border-bottom:1px solid var(--border);">
+          <div style="font-size:13px;font-weight:600;margin-bottom:4px;">${i+1}. ${escHtml(q.q)}</div>
+          ${['A','B','C','D'].map((l, li) => q.options[li]
+            ? `<div style="font-size:12px;color:${li === q.correct ? 'var(--acc)' : 'var(--txt3)'};">${l}: ${escHtml(q.options[li])}</div>`
+            : '').join('')}
+        </div>`
+      ).join('');
+      showInfoModal(item.cp.title,
+        `<div style="font-size:12px;color:var(--txt3);margin-bottom:12px;">${item.progTitle} · ${item.cp.questions ? item.cp.questions.length : 0} questions · ${item.cp.timeLimit}s per question</div>` +
+        (qs || '<div style="color:var(--txt3);font-size:13px;">No questions yet</div>')
+      );
+    });
+  });
+
+  // My programs — click shows detail
+  document.querySelectorAll('#program-list-my .program-row').forEach(row => {
+    row.style.cursor = 'pointer';
+    row.addEventListener('click', e => {
+      if (e.target.closest('.prog-del, .prog-export')) return;
+      const prog = getAllEditorPrograms()[row.dataset.id];
+      if (!prog) return;
+      const sections = (prog.sections || []).map(s => {
+        const packs = (s.packs || []).map(p => p.label || p.key).join(', ');
+        const cps = s.checkpoint ? ` · <span style="color:var(--acc)">Checkpoint (${s.checkpoint.questions ? s.checkpoint.questions.length : 0} Q)</span>` : '';
+        return `<div style="padding:6px 0;border-bottom:1px solid var(--border);">
+          <div style="font-weight:600;font-size:13px;">${escHtml(s.title)}</div>
+          <div style="font-size:12px;color:var(--txt3);">${escHtml(packs)}${cps}</div>
+        </div>`;
+      }).join('');
+      showInfoModal(prog.title, `
+        <p style="color:var(--txt2);font-size:13px;margin:0 0 12px;">${escHtml(prog.description || '')}</p>
+        ${sections || '<div style="color:var(--txt3);font-size:13px;">No sections yet</div>'}
+      `);
+    });
+  });
+}
+
+// Simple info modal for read-only program/test details
+function showInfoModal(title, bodyHtml) {
+  let modal = document.getElementById('editor-info-modal');
+  if (!modal) {
+    modal = document.createElement('div');
+    modal.id = 'editor-info-modal';
+    modal.className = 'modal-overlay';
+    document.body.appendChild(modal);
+  }
+  modal.innerHTML = `
+    <div class="modal" style="max-height:80vh;overflow-y:auto;">
+      <div class="modal-header">
+        <h2>${escHtml(title)}</h2>
+        <button class="icon-btn" id="info-modal-close">&#x2715;</button>
+      </div>
+      <div style="padding:0 4px 8px;">${bodyHtml}</div>
+      <div class="modal-actions">
+        <button class="btn btn--ghost" id="info-modal-done">Close</button>
+      </div>
+    </div>`;
+  modal.style.display = 'flex';
+  document.getElementById('info-modal-close').onclick = () => { modal.style.display = 'none'; };
+  document.getElementById('info-modal-done').onclick  = () => { modal.style.display = 'none'; };
 }
 
 
