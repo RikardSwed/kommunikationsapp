@@ -805,3 +805,10 @@ function exportAlSuggestions() {
 
 const alExportBtn = document.getElementById('alExportBtn');
 if (alExportBtn) alExportBtn.addEventListener('click', exportAlSuggestions);
+
+const clearExtendedBtn = document.getElementById('clearExtendedBtn');
+if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
+  localStorage.removeItem('ds_extended_owned');
+  if (window._applyAccessLevel) window._applyAccessLevel();
+  if (window.renderExtendedStore) window.renderExtendedStore();
+});
