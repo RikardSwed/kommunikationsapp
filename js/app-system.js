@@ -363,35 +363,50 @@ function getActiveBundles(packKey) {
     catch { return []; }
   })();
 
+  // Check if a specific extended bundle is owned
+  // Extended bundles are stored as '{packKey}::{bundleId}' in ds_extended_owned
+  const isExtendedBundleOwned = (bundleId) =>
+    level === 'complete' || extOwned.includes(`${packKey}::${bundleId}`);
+
   // Tiers accessible at each level
-  const canUseTier = (tier) => {
+  const canUseTier = (tier, bundleId) => {
     if (tier === 'free') return true;
     if (tier === 'pro' || tier === 'pro-opt') return level === 'pro' || level === 'complete';
-    if (tier === 'extended') return level === 'complete' || extOwned.includes(packKey);
+    if (tier === 'extended') return isExtendedBundleOwned(bundleId);
     return false;
   };
 
-  // Always-on bundles (free + pro — not user-toggleable)
+  // User-saved bundle state (toggleable bundles)
+  const saved = getBundleState(packKey) || [];
+
+  // Always-on: free and pro (auto, not toggleable)
   const autoActive = defs
-    .filter(b => (b.tier === 'free' || b.tier === 'pro') && canUseTier(b.tier))
+    .filter(b => (b.tier === 'free' || b.tier === 'pro') && canUseTier(b.tier, b.id))
     .map(b => b.id);
 
-  // For pro: pro bundle replaces free bundle
-  // So if pro is active, remove free
-  const hasProAuto = autoActive.includes('pro') || defs.some(b => b.tier === 'pro' && canUseTier(b.tier));
+  // Pro replaces free — if pro is auto-active, remove free from base
+  const hasProAuto = defs.some(b => b.tier === 'pro' && canUseTier(b.tier, b.id));
   const hasFree    = defs.some(b => b.tier === 'free');
-  const base = hasProAuto && hasFree
-    ? autoActive.filter(id => {
-        const def = defs.find(b => b.id === id);
-        return def && def.tier !== 'free';
-      })
+  let base = hasProAuto && hasFree
+    ? autoActive.filter(id => { const def = defs.find(b => b.id === id); return def && def.tier !== 'free'; })
     : autoActive;
 
-  // User-toggleable bundles (pro-opt and owned extended)
-  const saved = getBundleState(packKey) || [];
+  // BUT if user has toggled pro OFF (saved does NOT include 'pro'), respect that
+  // only if at least one other toggleable bundle is active
+  if (hasProAuto && saved.length > 0 && !saved.includes('pro')) {
+    const otherActive = defs.some(b =>
+      b.id !== 'pro' && (b.tier === 'pro-opt' || b.tier === 'extended') &&
+      canUseTier(b.tier, b.id) && saved.includes(b.id)
+    );
+    if (otherActive) {
+      base = base.filter(id => id !== 'pro');
+    }
+  }
+
+  // Toggleable: pro-opt and owned extended, if saved
   const toggleable = defs.filter(b =>
     (b.tier === 'pro-opt' || b.tier === 'extended') &&
-    canUseTier(b.tier) &&
+    canUseTier(b.tier, b.id) &&
     saved.includes(b.id)
   ).map(b => b.id);
 
@@ -457,10 +472,10 @@ window.renderBundleSection = function(containerEl, packKey) {
     try { return JSON.parse(localStorage.getItem('ds_extended_owned')) || []; }
     catch { return []; }
   })();
-  const canUseTier = (tier) => {
+  const canUseTier = (tier, bundleId) => {
     if (tier === 'free') return true;
     if (tier === 'pro' || tier === 'pro-opt') return level === 'pro' || level === 'complete';
-    if (tier === 'extended') return level === 'complete' || extOwned.includes(packKey);
+    if (tier === 'extended') return level === 'complete' || extOwned.includes(`${packKey}::${bundleId}`);
     return false;
   };
 
@@ -470,7 +485,7 @@ window.renderBundleSection = function(containerEl, packKey) {
   const active = getActiveBundles(packKey);
 
   defs.forEach(bundle => {
-    const accessible = canUseTier(bundle.tier);
+    const accessible = canUseTier(bundle.tier, bundle.id);
     const row = document.createElement('div');
 
     if (bundle.tier === 'free') {
@@ -515,7 +530,7 @@ window.renderBundleSection = function(containerEl, packKey) {
               const otherActive = defs.some(b =>
                 b.id !== bundle.id &&
                 (b.tier === 'pro-opt' || b.tier === 'extended') &&
-                canUseTier(b.tier) &&
+                canUseTier(b.tier, b.id) &&
                 cur.includes(b.id)
               );
               if (!otherActive) { this.checked = true; return; }
@@ -548,7 +563,7 @@ window.renderBundleSection = function(containerEl, packKey) {
             const otherActive = defs.some(b =>
               b.id !== bundle.id &&
               (b.tier === 'pro' || b.tier === 'pro-opt' || b.tier === 'extended') &&
-              canUseTier(b.tier) &&
+              canUseTier(b.tier, b.id) &&
               (b.tier === 'pro' ? active.includes(b.id) : cur.includes(b.id))
             );
             if (!otherActive) { this.checked = true; return; }
@@ -974,7 +989,31 @@ if (alExportBtn) alExportBtn.addEventListener('click', exportAlSuggestions);
 
 const clearExtendedBtn = document.getElementById('clearExtendedBtn');
 if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
+  // Rensa purchases
   localStorage.removeItem('ds_extended_owned');
+  // Rensa aktiverade extended bundles per pack
+  Object.keys(localStorage).filter(k => k.startsWith('bundles:')).forEach(k => {
+    try {
+      const cur = JSON.parse(localStorage.getItem(k)) || [];
+      const filtered = cur.filter(id => {
+        // Behåll bara pro-opt bundles (t.ex. workplace), ta bort extended
+        return id !== 'domestic';
+      });
+      if (filtered.length) localStorage.setItem(k, JSON.stringify(filtered));
+      else localStorage.removeItem(k);
+    } catch(e) {}
+  });
+  // Visuell feedback
+  clearExtendedBtn.textContent = 'Cleared';
+  clearExtendedBtn.style.color = '#1a7a3a';
+  clearExtendedBtn.style.background = '#eafaf1';
+  clearExtendedBtn.style.borderColor = '#a8d5ba';
+  setTimeout(() => {
+    clearExtendedBtn.textContent = 'Clear';
+    clearExtendedBtn.style.color = '#c0392b';
+    clearExtendedBtn.style.background = '#fdf0ee';
+    clearExtendedBtn.style.borderColor = '#f5c6c2';
+  }, 2500);
   if (window._applyAccessLevel) window._applyAccessLevel();
   if (window.renderExtendedStore) window.renderExtendedStore();
 });

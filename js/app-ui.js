@@ -1763,11 +1763,28 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
       bundleList.innerHTML = '';
       EXTENDED_BUNDLES.forEach(item => {
         const owned = isOwned(item.id) || level === 'complete';
-        bundleList.appendChild(makeCard(item, owned, () => {
-          if (!owned) {
-            // Purchase: save to ds_extended_owned AND activate the bundle via setBundleState
+        const card = document.createElement('div');
+        card.className = 'ext-store-card';
+        card.innerHTML = `
+          <div class="ext-store-card-top">
+            <div class="ext-store-icon"><i class="ti ${item.icon}" aria-hidden="true"></i></div>
+            <div class="ext-store-info">
+              <div class="ext-store-title">${item.title}</div>
+              <div class="ext-store-pack-label">for ${item.packTitle}</div>
+              <div class="ext-store-desc">${item.description}</div>
+            </div>
+          </div>
+          <div class="ext-store-card-bottom">
+            ${owned
+              ? `<div class="ext-store-owned"><i class="ti ti-check" aria-hidden="true"></i> Added</div>`
+              : `<div class="ext-store-price">${item.price}</div>
+                 <button class="ext-store-btn">Add</button>`
+            }
+          </div>`;
+        if (!owned) {
+          card.querySelector('.ext-store-btn').addEventListener('click', () => {
             const o = getOwned(); if (!o.includes(item.id)) o.push(item.id); setOwned(o);
-            // Also activate the bundle in the pack's bundle state
+            // Activate the bundle in pack's bundle state
             const bKey = `bundles:${item.packKey}`;
             try {
               const cur = JSON.parse(localStorage.getItem(bKey)) || [];
@@ -1775,9 +1792,9 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
             } catch(e) { localStorage.setItem(bKey, JSON.stringify([item.bundleId])); }
             renderExtendedStore();
             if (window._applyAccessLevel) window._applyAccessLevel();
-          }
-          // Owned: no navigation needed — the bundle is now active in the pack
-        }));
+          });
+        }
+        bundleList.appendChild(card);
       });
     }
   }  // end renderExtendedStore
