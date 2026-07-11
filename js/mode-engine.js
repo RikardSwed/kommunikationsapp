@@ -1,0 +1,740 @@
+// mode-engine.js — Deckstack mode engine
+// Part of Deckstack v1.25.0
+//
+// A single shared foundation for all training modes.
+// Standard modes are created with DS.createCardMode(config),
+// handsfree modes with DS.createHandsfreeMode(config).
+//
+// The engine owns: state, rendering, flip, swipe, buttons, keyboard,
+// feedback/access-level bars, progress bar hooks, progress tracking,
+// and bundle-aware reload. Mode files only declare *what* a mode shows,
+// never *how* cards behave.
+//
+// Load order: after all data files, BEFORE app-core.js.
+// No ES modules — classic global script (GitHub Pages).
+
+const DS = (function () {
+  'use strict';
+
+  // ── Registry ────────────────────────────────────────────────────────────
+  // All created modes, keyed by screenId. Used for reload + keyboard dispatch.
+  const modesByScreen = {};
+  const cardModes = [];   // standard card modes (keyboard-enabled)
+
+  const $ = id => document.getElementById(id);
+
+  // ── Shared helpers ──────────────────────────────────────────────────────
+
+  function shuffle(arr) {
+    const a = [...arr];
+    for (let i = a.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
+  }
+
+  // Bundle-aware group loader.
+  // source: e.g. collections / challengesCollections / memorizeCollections
+  // itemsProp: 'inputs' or 'cards'
+  // Groups whose items are all filtered away are dropped; if *everything*
+  // is filtered away we fall back to the unfiltered data (never a blank screen).
+  function loadGroups(source, packKey, itemsProp) {
+    const raw = (source && source[packKey]) || [];
+    if (!raw.length || !window.filterInputsByBundle) return raw;
+    const filtered = raw
+      .map(g => Object.assign({}, g, {
+        [itemsProp]: window.filterInputsByBundle(g[itemsProp] || [], packKey)
+      }))
+      .filter(g => g[itemsProp].length);
+    return filtered.length ? filtered : raw;
+  }
+
+  // Attach the standard tap/swipe gesture set to a card element.
+  // handlers: { tap, left, right, up, down, enabled? }
+  function attachSwipe(el, handlers, opts) {
+    if (!el) return;
+    const passive = !!(opts && opts.passive);
+    let sx = 0, sy = 0, st = 0, moved = false;
+    const on = () => !handlers.enabled || handlers.enabled();
+
+    el.addEventListener('touchstart', e => {
+      if (!on()) return;
+      sx = e.touches[0].clientX; sy = e.touches[0].clientY;
+      st = Date.now(); moved = false;
+      if (!passive) e.preventDefault();
+    }, { passive });
+
+    el.addEventListener('touchmove', e => {
+      if (!on()) return;
+      if (Math.abs(e.touches[0].clientX - sx) > 10 ||
+          Math.abs(e.touches[0].clientY - sy) > 10) moved = true;
+      if (!passive) e.preventDefault();
+    }, { passive });
+
+    el.addEventListener('touchend', e => {
+      if (!on()) return;
+      if (!passive) e.preventDefault();
+      const dx = e.changedTouches[0].clientX - sx;
+      const dy = e.changedTouches[0].clientY - sy;
+      const adx = Math.abs(dx), ady = Math.abs(dy);
+      if (!moved && Date.now() - st < 500) { handlers.tap && handlers.tap(); return; }
+      if (moved && adx > 40 && adx > ady) { (dx > 0 ? handlers.right : handlers.left)(); return; }
+      if (moved && ady > 40 && ady > adx) { (dy > 0 ? handlers.down : handlers.up)(); return; }
+    }, { passive });
+  }
+
+  function bindTapButton(el, fn, stop) {
+    if (!el) return;
+    el.addEventListener('click', fn);
+    el.addEventListener('touchend', e => {
+      if (stop) e.stopPropagation();
+      e.preventDefault();
+      fn();
+    }, { passive: false });
+  }
+
+  // ── Info overlay (tap the title to read the strategy description) ───────
+  function setupInfoOverlay(cfg, getText) {
+    if (!cfg) return { open() {}, close() {} };
+    const panel = $(cfg.panel), text = $(cfg.text);
+    const trigger = $(cfg.trigger), closeBtn = $(cfg.close);
+    if (!panel || !text) return { open() {}, close() {} };
+
+    let open = false;
+    function doOpen() {
+      if (open) { doClose(); return; }
+      open = true;
+      text.textContent = getText() || 'No description available.';
+      panel.classList.add('visible');
+    }
+    function doClose() {
+      open = false;
+      panel.classList.remove('visible');
+      panel.scrollTop = 0;
+    }
+    if (trigger) trigger.addEventListener('click', doOpen);
+    if (closeBtn) closeBtn.addEventListener('click', e => { e.stopPropagation(); doClose(); });
+    // Let the panel scroll without triggering card gestures
+    ['touchstart', 'touchmove', 'touchend'].forEach(ev =>
+      panel.addEventListener(ev, e => e.stopPropagation(), { passive: true }));
+    return { open: doOpen, close: doClose };
+  }
+
+  // ═════════════════════════════════════════════════════════════════════════
+  // STANDARD CARD MODE
+  // ═════════════════════════════════════════════════════════════════════════
+  //
+  // config = {
+  //   id:            'modeChallenges'          — mode-card button id (registerMode)
+  //   screenId:      'challScreen'
+  //   els: { card, inner, title, front, back, counter, subCounter,
+  //          prevGroupBtn, nextGroupBtn, prevItemBtn, nextItemBtn,
+  //          closeBtn, settingsBtn }            — all element IDs (strings)
+  //   getGroups():   array of groups (already bundle-filtered)
+  //   getItems(g):   items in a group
+  //   groupTitle(g), itemFront(item, g), itemBack(item, g)
+  //   info:          { panel, text, trigger, close, getText(group) } | null
+  //   shuffle:       true  — obey shuffleStrategies/shuffleInputs checkboxes
+  //   fb:            { id, groupKey(g, gi) }   — feedback-bar key parts | null
+  //   al:            { id, groupKey(g, gi) }   — access-level bar key parts | null
+  //   barPrefix:     'chall'                    — fb-chall-front / al-chall-front etc.
+  //   keyboard:      true
+  // }
+  function createCardMode(cfg) {
+    const els = {};
+    for (const k in cfg.els) els[k] = $(cfg.els[k]);
+
+    const mode = {
+      id: cfg.id,
+      screenId: cfg.screenId,
+      kind: 'card',
+      groups: [], groupOrder: [], itemOrders: [],
+      gi: 0, ii: 0,
+      flipped: false, animating: false,
+      _pbBound: false,
+    };
+
+    const group = () => mode.groups[mode.groupOrder[mode.gi]];
+    const items = g => cfg.getItems(g) || [];
+    const item  = () => items(group())[mode.itemOrders[mode.groupOrder[mode.gi]][mode.ii]];
+
+    const info = setupInfoOverlay(cfg.info, () =>
+      cfg.info && cfg.info.getText ? cfg.info.getText(group()) : (group() && group().description));
+
+    // ── Orders (shuffle) ───────────────────────────────────────────────────
+    function buildOrders() {
+      const shG = cfg.shuffle && $('shuffleStrategies') && $('shuffleStrategies').checked;
+      const shI = cfg.shuffle && $('shuffleInputs') && $('shuffleInputs').checked;
+      const base = mode.groups.map((_, i) => i);
+      mode.groupOrder = shG ? shuffle(base) : base;
+      mode.itemOrders = mode.groups.map(g => {
+        const idx = items(g).map((_, i) => i);
+        return shI ? shuffle(idx) : idx;
+      });
+    }
+
+    // ── Render ─────────────────────────────────────────────────────────────
+    function render() {
+      const g = group();
+      if (!g) return;
+      const it = item();
+      if (els.title)      els.title.textContent = cfg.groupTitle(g);
+      if (els.front)      els.front.textContent = cfg.itemFront(it, g);
+      if (els.back)       els.back.textContent  = cfg.itemBack(it, g);
+      if (els.counter)    els.counter.textContent = `${mode.gi + 1} / ${mode.groups.length}`;
+      if (els.subCounter) els.subCounter.textContent =
+        `${mode.ii + 1} / ${mode.itemOrders[mode.groupOrder[mode.gi]].length}`;
+      flip(false, false);
+      renderBars();
+      renderPb();
+    }
+
+    // ── Feedback / access-level bars ───────────────────────────────────────
+    function renderBars() {
+      const g = group();
+      if (cfg.fb && window.fbRender && window.fbKey) {
+        const gk = cfg.fb.groupKey(g, mode.gi);
+        fbRender(`fb-${cfg.barPrefix}-front`, fbKey(cfg.fb.id, gk, mode.ii, 'front'));
+        fbRender(`fb-${cfg.barPrefix}-back`,  fbKey(cfg.fb.id, gk, mode.ii, 'back'));
+      }
+      if (cfg.al && window.alRender && window.alKey) {
+        const gk = cfg.al.groupKey(g, mode.gi);
+        alRender(`al-${cfg.barPrefix}-front`, alKey(cfg.al.id, gk, mode.ii, 'front'));
+        alRender(`al-${cfg.barPrefix}-back`,  alKey(cfg.al.id, gk, mode.ii, 'back'));
+      }
+    }
+
+    // ── Progress bar (divider) ─────────────────────────────────────────────
+    const pbDivider = document.querySelector(`#${cfg.screenId} .divider`);
+    function renderPb() {
+      if (window.pbUpdate) pbUpdate(pbDivider, mode.gi, mode.groups.length);
+      if (!mode._pbBound && window.pbBindClick) {
+        mode._pbBound = true;
+        pbBindClick(pbDivider, () => mode.groups.length, idx => {
+          mode.gi = idx; mode.ii = 0; render();
+        });
+      }
+    }
+
+    // ── Flip / swipe ───────────────────────────────────────────────────────
+    function flip(val, animate = true) {
+      if (val && !mode.flipped && window.progCardFlipped) {
+        const total = mode.groups.reduce((s, g) => s + items(g).length, 0);
+        const soFar = mode.groupOrder.slice(0, mode.gi)
+          .reduce((s, oi) => s + mode.itemOrders[oi].length, 0) + mode.ii + 1;
+        progCardFlipped(soFar, total);
+      }
+      mode.flipped = val;
+      if (els.inner) {
+        els.inner.style.transition = animate ? 'transform 0.4s ease' : 'none';
+        els.inner.classList.toggle('flipped', mode.flipped);
+      }
+    }
+
+    function trig(dir, cb) {
+      if (mode.animating) return;
+      mode.animating = true;
+      els.card.classList.add('swipe-' + dir);
+      setTimeout(() => {
+        els.card.classList.remove('swipe-' + dir);
+        cb(); mode.animating = false;
+      }, 220);
+    }
+
+    const itemCount = () => mode.itemOrders[mode.groupOrder[mode.gi]].length;
+    function nextItem()  { trig('up',    () => { mode.ii = (mode.ii + 1) % itemCount(); render(); }); }
+    function prevItem()  { trig('down',  () => { mode.ii = (mode.ii - 1 + itemCount()) % itemCount(); render(); }); }
+    function nextGroup() { trig('left',  () => { info.close(); mode.gi = (mode.gi + 1) % mode.groups.length; mode.ii = 0; render(); }); }
+    function prevGroup() { trig('right', () => { info.close(); mode.gi = (mode.gi - 1 + mode.groups.length) % mode.groups.length; mode.ii = 0; render(); }); }
+
+    attachSwipe(els.card, {
+      tap: () => flip(!mode.flipped),
+      left: nextGroup, right: prevGroup, up: nextItem, down: prevItem,
+    });
+    if (els.card) els.card.addEventListener('click', () => flip(!mode.flipped));
+
+    // ── Buttons ────────────────────────────────────────────────────────────
+    if (els.nextItemBtn)  els.nextItemBtn.addEventListener('click', nextItem);
+    if (els.prevItemBtn)  els.prevItemBtn.addEventListener('click', prevItem);
+    if (els.nextGroupBtn) els.nextGroupBtn.addEventListener('click', nextGroup);
+    if (els.prevGroupBtn) els.prevGroupBtn.addEventListener('click', prevGroup);
+    if (els.closeBtn)     els.closeBtn.addEventListener('click', () => closeTraining(cfg.screenId));
+    if (els.settingsBtn)  bindTapButton(els.settingsBtn, () => DS.openTrainingSettings(), true);
+
+    // ── Show / reload ──────────────────────────────────────────────────────
+    mode.show = function () {
+      mode.groups = cfg.getGroups() || [];
+      if (!mode.groups.length) return;
+      info.close();
+      buildOrders();
+      mode.gi = 0; mode.ii = 0;
+      navToTraining(cfg.screenId);
+      render();
+    };
+
+    // Re-render in place after settings/bundle changes (keeps screen open).
+    // Position is preserved where possible (clamped if the data shrank).
+    mode.reload = function () {
+      mode.groups = cfg.getGroups() || [];
+      if (!mode.groups.length) return;
+      buildOrders();
+      mode.gi = Math.min(mode.gi, mode.groups.length - 1);
+      mode.ii = Math.min(mode.ii, mode.itemOrders[mode.groupOrder[mode.gi]].length - 1);
+      render();
+    };
+
+    mode.applyOrders = buildOrders;
+    mode.flip = flip;
+    mode.render = render;
+    mode.keys = cfg.keyboard === false ? null : {
+      ArrowRight: nextGroup, ArrowLeft: prevGroup,
+      ArrowDown: nextItem,   ArrowUp: prevItem,
+      ' ': () => flip(!mode.flipped),
+    };
+
+    modesByScreen[cfg.screenId] = mode;
+    cardModes.push(mode);
+    if (typeof TRAINING_SCREENS !== 'undefined' && !TRAINING_SCREENS.includes(cfg.screenId)) {
+      TRAINING_SCREENS.push(cfg.screenId);
+    }
+    registerMode(cfg.id, mode.show);
+    return mode;
+  }
+
+  // ═════════════════════════════════════════════════════════════════════════
+  // HANDSFREE MODE (TTS playback)
+  // ═════════════════════════════════════════════════════════════════════════
+
+  // ── Shared voice cache ───────────────────────────────────────────────────
+  let cachedVoices = [];
+  function loadVoices() {
+    const v = window.speechSynthesis ? speechSynthesis.getVoices() : [];
+    if (v.length) cachedVoices = v;
+  }
+  if (window.speechSynthesis) {
+    loadVoices();
+    if (typeof speechSynthesis.onvoiceschanged !== 'undefined') {
+      speechSynthesis.onvoiceschanged = loadVoices;
+    }
+  }
+
+  function pickVoice(gender) {
+    const voices = cachedVoices.length ? cachedVoices : speechSynthesis.getVoices();
+    const en = voices.filter(v => v.lang && v.lang.startsWith('en'));
+    if (!en.length) return null;
+    if (gender === 'male') {
+      const pref = ['Daniel', 'Aaron', 'Fred', 'Gordon', 'Thomas', 'Arthur', 'Oliver', 'Jamie'];
+      for (const name of pref) { const v = en.find(v => v.name.includes(name)); if (v) return v; }
+      return en.find(v => !v.name.match(/Samantha|Victoria|Karen|Moira|Fiona|Allison|Ava|Susan|Zoe|Emma/i)) || en[0];
+    }
+    const pref = ['Samantha', 'Ava', 'Allison', 'Victoria', 'Karen', 'Moira'];
+    for (const name of pref) { const v = en.find(v => v.name.includes(name)); if (v) return v; }
+    return en[0];
+  }
+
+  // config = {
+  //   id, screenId, prefix ('hfChall'),
+  //   els: { title, front, back, prevGroupBtn, nextGroupBtn,
+  //          prevItemBtn, nextItemBtn }         — the non-derivable IDs
+  //   maxItemsId:  'hfChallMaxInputs' | null     — max-items <select>, if any
+  //   getGroups(), getItems(g), groupTitle(g), groupDescription(g),
+  //   itemFront(item, g), itemBack(item, g),
+  //   speakBack(item):  bool                     — default true
+  // }
+  //
+  // Derived from prefix: Card, CardInner, Counter, SubCounter, PlayBtn,
+  // PrevStepBtn, NextStepBtn, CloseBtn, SettingsBtn, SettingsClose,
+  // SettingsOverlay, BundlePlaceholder, ShowInputCounter, CardInfo,
+  // CardInfoText, Explanation, CardBack, ThinkPause, GenPause,
+  // LoopStrategy, Rate, Voice.
+  function createHandsfreeMode(cfg) {
+    const p = cfg.prefix;
+    const els = {
+      card:      $(p + 'Card'),
+      inner:     $(p + 'CardInner'),
+      counter:   $(p + 'Counter'),
+      subCounter:$(p + 'SubCounter'),
+      playBtn:   $(p + 'PlayBtn'),
+      prevStep:  $(p + 'PrevStepBtn'),
+      nextStep:  $(p + 'NextStepBtn'),
+      closeBtn:  $(p + 'CloseBtn'),
+      settings:  $(p + 'SettingsBtn'),
+      info:      $(p + 'CardInfo'),
+      infoText:  $(p + 'CardInfoText'),
+    };
+    for (const k in cfg.els) els[k] = $(cfg.els[k]);
+
+    const mode = {
+      id: cfg.id, screenId: cfg.screenId, kind: 'handsfree',
+      groups: [], gi: 0, ii: 0,
+      playing: false, abort: false, skipStep: false,
+      timeouts: [], delayResolve: null,
+      _pbBound: false,
+    };
+
+    const group = () => mode.groups[mode.gi];
+    const items = g => cfg.getItems(g) || [];
+    const speakBack = cfg.speakBack || (() => true);
+
+    function settings() {
+      const v = id => $(id);
+      return {
+        explanation : v(p + 'Explanation') ? v(p + 'Explanation').checked : true,
+        cardBack    : v(p + 'CardBack')    ? v(p + 'CardBack').checked    : true,
+        maxItems    : cfg.maxItemsId && v(cfg.maxItemsId) ? v(cfg.maxItemsId).value : 'all',
+        thinkPause  : v(p + 'ThinkPause') ? parseFloat(v(p + 'ThinkPause').value) : 3,
+        genPause    : v(p + 'GenPause')   ? parseFloat(v(p + 'GenPause').value)   : 1,
+        loop        : v(p + 'LoopStrategy') ? v(p + 'LoopStrategy').checked : false,
+        rate        : v(p + 'Rate')  ? parseFloat(v(p + 'Rate').value) : 1,
+        voiceGender : v(p + 'Voice') ? v(p + 'Voice').value : 'female',
+      };
+    }
+
+    // ── TTS primitives (per-instance state, shared implementation) ────────
+    function speak(text, cfg2) {
+      return new Promise(resolve => {
+        if (mode.abort || !text) { resolve(); return; }
+        if (mode.skipStep) { mode.skipStep = false; resolve(); return; }
+        const utt = new SpeechSynthesisUtterance(text);
+        utt.lang = 'en-US';
+        utt.rate = cfg2.rate;
+        const voice = pickVoice(cfg2.voiceGender);
+        if (voice) utt.voice = voice;
+        utt.onend = () => resolve();
+        utt.onerror = () => resolve();
+        speechSynthesis.speak(utt);
+      });
+    }
+
+    function delay(ms) {
+      return new Promise(resolve => {
+        mode.delayResolve = resolve;
+        if (mode.abort || mode.skipStep) { mode.delayResolve = null; resolve(); return; }
+        const step = 80;
+        let elapsed = 0;
+        function tick() {
+          if (mode.abort || mode.skipStep) { mode.delayResolve = null; resolve(); return; }
+          elapsed += step;
+          if (elapsed >= ms) { mode.delayResolve = null; resolve(); return; }
+          mode.timeouts.push(setTimeout(tick, step));
+        }
+        mode.timeouts.push(setTimeout(tick, step));
+      });
+    }
+
+    function clearTimeouts() {
+      mode.timeouts.forEach(id => clearTimeout(id));
+      mode.timeouts = [];
+    }
+
+    // ── Display ────────────────────────────────────────────────────────────
+    function showCard(front, back, flipped) {
+      const g = group();
+      if (els.title) els.title.textContent = cfg.groupTitle(g);
+      if (els.front) els.front.textContent = front;
+      if (els.back)  els.back.textContent  = back;
+      if (els.counter) els.counter.textContent = `${mode.gi + 1} / ${mode.groups.length}`;
+      if (els.subCounter && g) els.subCounter.textContent = `${mode.ii + 1} / ${items(g).length}`;
+      if (els.inner) {
+        els.inner.style.transition = 'transform 0.4s ease';
+        els.inner.classList.toggle('flipped', !!flipped);
+      }
+      renderPb();
+    }
+
+    function updateButtons() {
+      if (!els.playBtn) return;
+      els.playBtn.textContent = mode.playing ? '\u23F9' : '\u25B6';
+      [els.prevStep, els.nextStep].forEach(b => {
+        if (!b) return;
+        b.disabled = !mode.playing;
+        b.style.opacity = mode.playing ? '1' : '0.35';
+      });
+    }
+
+    const pbDivider = document.querySelector(`#${cfg.screenId} .divider`);
+    function renderPb() {
+      if (window.pbUpdate) pbUpdate(pbDivider, mode.gi, mode.groups.length);
+      if (!mode._pbBound && window.pbBindClick) {
+        mode._pbBound = true;
+        pbBindClick(pbDivider, () => mode.groups.length, idx => {
+          mode.gi = idx; mode.ii = 0; renderManual();
+        }, () => mode.playing);
+      }
+    }
+
+    function showInfo(text) {
+      if (!els.info || !els.infoText) return;
+      els.infoText.textContent = text;
+      els.info.classList.add('visible');
+    }
+    function hideInfo() {
+      if (!els.info) return;
+      els.info.classList.remove('visible');
+      els.info.scrollTop = 0;
+    }
+
+    // ── Playback loop ──────────────────────────────────────────────────────
+    async function play() {
+      if (mode.playing) { stop(); return; }
+      if (!mode.groups.length) return;
+
+      // iOS unlock
+      const unlock = new SpeechSynthesisUtterance(' ');
+      unlock.volume = 0;
+      speechSynthesis.speak(unlock);
+
+      mode.playing = true; mode.abort = false; mode.skipStep = false;
+      updateButtons();
+
+      const s = settings();
+      const maxItems = s.maxItems === 'all' ? Infinity : parseInt(s.maxItems);
+      const startGi = mode.gi, startIi = mode.ii;
+      const skipIntro = startIi > 0;
+
+      outer:
+      for (let gi2 = startGi; gi2 < mode.groups.length; gi2++) {
+        if (mode.abort) break;
+        mode.gi = gi2;
+        const g = group();
+        const list = items(g);
+
+        // Intro: group name + optional description
+        if (!skipIntro || gi2 > startGi) {
+          showCard(cfg.groupTitle(g), '', false);
+          await speak(cfg.groupTitle(g), s);
+          if (mode.abort) break;
+          if (!mode.skipStep) await delay(s.genPause * 1000);
+          mode.skipStep = false;
+
+          const desc = cfg.groupDescription ? cfg.groupDescription(g) : g.description;
+          if (s.explanation && desc) {
+            showInfo(desc);
+            await speak(desc, s);
+            hideInfo();
+            if (mode.abort) break;
+            if (!mode.skipStep) await delay(s.genPause * 1000);
+            mode.skipStep = false;
+          }
+        }
+
+        const limit = Math.min(list.length, maxItems);
+        const from = (gi2 === startGi) ? startIi : 0;
+
+        for (let ii2 = from; ii2 < limit; ii2++) {
+          if (mode.abort) break outer;
+          mode.ii = ii2;
+          const it = list[ii2];
+          const front = cfg.itemFront(it, g);
+          const back  = cfg.itemBack(it, g);
+
+          showCard(front, back, false);
+          await speak(front, s);
+          if (mode.abort) break outer;
+          if (!mode.skipStep) await delay(s.thinkPause * 1000);
+          mode.skipStep = false;
+
+          if (s.cardBack && speakBack(it)) {
+            showCard(front, back, true);
+            await speak(back, s);
+            if (mode.abort) break outer;
+            if (!mode.skipStep) await delay(s.genPause * 1000);
+            mode.skipStep = false;
+          }
+
+          if (s.loop && ii2 === limit - 1) ii2 = -1;
+        }
+
+        if (s.loop) gi2--;
+      }
+
+      mode.playing = false; mode.abort = false; mode.skipStep = false;
+      speechSynthesis.cancel();
+      clearTimeouts();
+      updateButtons();
+    }
+
+    function stop() {
+      mode.abort = true; mode.playing = false; mode.skipStep = false;
+      speechSynthesis.cancel();
+      clearTimeouts();
+      updateButtons();
+    }
+
+    function skipForward() {
+      if (!mode.playing) return;
+      mode.skipStep = true;
+      speechSynthesis.cancel();
+      clearTimeouts();
+      if (mode.delayResolve) { mode.delayResolve(); mode.delayResolve = null; }
+    }
+
+    function skipBack() {
+      if (!mode.playing) return;
+      if (mode.ii === 0 && mode.gi > 0) mode.gi--;
+      mode.ii = 0;
+      mode.abort = true;
+      speechSynthesis.cancel();
+      clearTimeouts();
+      if (mode.delayResolve) { mode.delayResolve(); mode.delayResolve = null; }
+      setTimeout(() => {
+        mode.abort = false; mode.playing = false;
+        play();
+      }, 50);
+    }
+
+    // ── Manual navigation (when not playing) ──────────────────────────────
+    function renderManual() {
+      const g = group();
+      if (!g) return;
+      const it = items(g)[mode.ii];
+      showCard(cfg.itemFront(it, g), cfg.itemBack(it, g), false);
+      if (els.inner) els.inner.style.transition = 'none';
+    }
+
+    const itemCount = () => items(group()).length;
+    const manNextGroup = () => { if (mode.playing) return; mode.gi = (mode.gi + 1) % mode.groups.length; mode.ii = 0; renderManual(); };
+    const manPrevGroup = () => { if (mode.playing) return; mode.gi = (mode.gi - 1 + mode.groups.length) % mode.groups.length; mode.ii = 0; renderManual(); };
+    const manNextItem  = () => { if (mode.playing) return; mode.ii = (mode.ii + 1) % itemCount(); renderManual(); };
+    const manPrevItem  = () => { if (mode.playing) return; mode.ii = (mode.ii - 1 + itemCount()) % itemCount(); renderManual(); };
+
+    attachSwipe(els.card, {
+      enabled: () => !mode.playing,
+      tap: () => {
+        if (window.progCardFlipped && els.inner && !els.inner.classList.contains('flipped')) progCardFlipped();
+        if (els.inner) {
+          els.inner.style.transition = 'transform 0.4s ease';
+          els.inner.classList.toggle('flipped');
+        }
+      },
+      left: manNextGroup, right: manPrevGroup, up: manNextItem, down: manPrevItem,
+    }, { passive: true });
+
+    if (els.nextGroupBtn) els.nextGroupBtn.addEventListener('click', manNextGroup);
+    if (els.prevGroupBtn) els.prevGroupBtn.addEventListener('click', manPrevGroup);
+    if (els.nextItemBtn)  els.nextItemBtn.addEventListener('click', manNextItem);
+    if (els.prevItemBtn)  els.prevItemBtn.addEventListener('click', manPrevItem);
+
+    bindTapButton(els.playBtn, play, true);
+    bindTapButton(els.nextStep, skipForward, true);
+    bindTapButton(els.prevStep, skipBack, true);
+
+    if (els.closeBtn) els.closeBtn.addEventListener('click', () => {
+      stop();
+      closeTraining(cfg.screenId);
+    });
+
+    if (els.settings) els.settings.addEventListener('click', () =>
+      openHfSettings(p + 'SettingsOverlay', p + 'BundlePlaceholder', p + 'ShowInputCounter'));
+
+    const showCounterCb = $(p + 'ShowInputCounter');
+    if (showCounterCb) showCounterCb.addEventListener('change', () => applyHfInputCounterVisibility());
+
+    const settingsClose = $(p + 'SettingsClose');
+    const settingsOverlay = $(p + 'SettingsOverlay');
+    if (settingsClose && settingsOverlay) {
+      settingsClose.addEventListener('click', () => {
+        settingsOverlay.classList.remove('open');
+        DS.reloadActive();
+      });
+      settingsOverlay.addEventListener('click', e => {
+        if (e.target === settingsOverlay) {
+          settingsOverlay.classList.remove('open');
+          DS.reloadActive();
+        }
+      });
+    }
+
+    if (els.info) {
+      ['touchstart', 'touchmove', 'touchend'].forEach(ev =>
+        els.info.addEventListener(ev, e => e.stopPropagation(), { passive: true }));
+    }
+
+    // ── Show / reload ──────────────────────────────────────────────────────
+    mode.show = function () {
+      mode.groups = cfg.getGroups() || [];
+      if (!mode.groups.length) return;
+      mode.gi = 0; mode.ii = 0;
+      navToTraining(cfg.screenId);
+      renderManual();
+      updateButtons();
+    };
+
+    // Never interrupts active playback — settings are read fresh on the next
+    // play() anyway, and bundle changes apply on the next reload/show.
+    mode.reload = function () {
+      if (mode.playing) return;
+      mode.groups = cfg.getGroups() || [];
+      if (!mode.groups.length) return;
+      mode.gi = Math.min(mode.gi, mode.groups.length - 1);
+      mode.ii = Math.min(mode.ii, items(group()).length - 1);
+      renderManual();
+      updateButtons();
+    };
+
+    mode.stop = stop;
+
+    modesByScreen[cfg.screenId] = mode;
+    if (typeof TRAINING_SCREENS !== 'undefined' && !TRAINING_SCREENS.includes(cfg.screenId)) {
+      TRAINING_SCREENS.push(cfg.screenId);
+    }
+    registerMode(cfg.id, mode.show);
+    return mode;
+  }
+
+  // ── Active mode helpers ───────────────────────────────────────────────────
+  function activeMode() {
+    for (const screenId in modesByScreen) {
+      const el = $(screenId);
+      if (el && el.style.display !== 'none' && el.style.display !== '') {
+        return modesByScreen[screenId];
+      }
+    }
+    return null;
+  }
+
+  // Re-render the currently open training mode with fresh data
+  // (called when a settings/bundle overlay closes).
+  function reloadActive() {
+    const m = activeMode();
+    if (m && m.reload) m.reload();
+  }
+
+  // ── Global keyboard dispatch (one listener for all card modes) ───────────
+  document.addEventListener('keydown', e => {
+    const anyOverlayOpen = document.querySelector('.settings-overlay.open, #settingsOverlay.open, #packSettingsOverlay.open');
+    if (anyOverlayOpen) return;
+
+    if (e.key === 'Escape') {
+      const m = activeMode();
+      if (m) { if (m.stop) m.stop(); closeTraining(m.screenId); return; }
+      if (typeof modeScreen !== 'undefined' && modeScreen.classList.contains('screen--active')) showHome();
+      return;
+    }
+
+    const m = activeMode();
+    if (!m || !m.keys || !m.keys[e.key]) return;
+    if (e.key === ' ') e.preventDefault();
+    m.keys[e.key]();
+  });
+
+  return {
+    createCardMode,
+    createHandsfreeMode,
+    reloadActive,
+    activeMode,
+    loadGroups,
+    shuffle,
+    pickVoice,
+    attachSwipe,
+    // Set by app-modes.js — opens the shared training settings overlay
+    openTrainingSettings: function () {
+      const overlay = $('settingsOverlay');
+      if (overlay) overlay.classList.add('open');
+    },
+    modesByScreen,
+  };
+})();
+
+window.DS = DS;

@@ -1,10 +1,11 @@
-// app-core.js — globals, DOM refs, shared state, navigation, mode registry, feedback bar helpers
-// Part of Deckstack v1.19.4 — split from app.js
+// app-core.js — globals, navigation, mode registry, feedback storage
+// Part of Deckstack v1.25.0
+//
+// Per-mode state, rendering, and gestures now live in mode-engine.js
+// (DS.createCardMode / DS.createHandsfreeMode) and are declared in
+// app-modes.js and app-handsfree.js.
 
-// app.js — All application logic for Communication Trainer
-// Depends on: data.js and multiStepData.js (must be loaded first)
-
-const VERSION = 'v1.24.5';
+const VERSION = 'v1.25.0';
 
 // Pack icon map — global so both dashboard and favorites can use it
 const PACK_ICONS = {
@@ -27,20 +28,16 @@ function packIcon(key) {
 }
 
 // ─── SCREENS ──────────────────────────────────────────────────────────────────
-const homeScreen     = document.getElementById('homeScreen');
-const modeScreen     = document.getElementById('modeScreen');
-const trainingScreen = document.getElementById('trainingScreen');
-const memScreen      = document.getElementById('memScreen');
+const homeScreen = document.getElementById('homeScreen');
+const modeScreen = document.getElementById('modeScreen');
 
-const TRAINING_SCREENS = [
-  'trainingScreen','memScreen','flowScreen',
-  'hfScreen','hfMemScreen','collScreen'
-];
+// Filled in by the mode engine as modes are created (all 12 training screens).
+const TRAINING_SCREENS = [];
 
 function hideAll() {
   [homeScreen, modeScreen,
    ...TRAINING_SCREENS.map(id => document.getElementById(id))
-  ].forEach(el => { el.style.display = 'none'; });
+  ].forEach(el => { if (el) el.style.display = 'none'; });
 }
 
 // Track whether mode screen was opened from dashboard or library
@@ -114,66 +111,13 @@ function navFromTraining(id) {
   }, 300);
 }
 
-const card           = document.getElementById('card');
-const cardInner      = document.getElementById('cardInner');
-const cardInfo       = document.getElementById('cardInfo');
-const cardInfoText   = document.getElementById('cardInfoText');
-const strategyName   = document.getElementById('strategyName');
-const inputText      = document.getElementById('inputText');
-const answerText     = document.getElementById('answerText');
-const counter        = document.getElementById('counter');
-const subCounter     = document.getElementById('subCounter');
-const hint           = document.getElementById('hint');
-
-// ─── DOM — MULTIPLE STEPS ────────────────────────────────────────────────────
-const msCard         = document.getElementById('msCard');
-const msCardInner    = document.getElementById('msCardInner');
-const msStrategyName = document.getElementById('msStrategyName');
-const msSituation    = document.getElementById('msSituation');
-const msStepText     = document.getElementById('msStepText');
-const msAnswerText   = document.getElementById('msAnswerText');
-const msStepCounter  = document.getElementById('msStepCounter');
-const msInputCounter = document.getElementById('msInputCounter');
-const msHint         = document.getElementById('msHint');
-
-// ─── DOM — MEMORIZE ──────────────────────────────────────────────────────────
-const memCard         = document.getElementById('memCard');
-const memCardInner    = document.getElementById('memCardInner');
-const memStrategyName = document.getElementById('memStrategyName');
-const memQuestionText = document.getElementById('memQuestionText');
-const memAnswerText   = document.getElementById('memAnswerText');
-const memCounter      = document.getElementById('memCounter');
-const memHint         = document.getElementById('memHint');
-
 // ─── STATE — SHARED ───────────────────────────────────────────────────────────
 let activeCollectionKey   = null;
 let activeCollectionLabel = null;
 
-// ─── STATE — SINGLE STRATEGY ─────────────────────────────────────────────────
-let strategies    = [];
-let stratOrder    = [];
-let inputOrders   = [];
-let stratIdx = 0, inputIdx = 0;
-let flipped = false, animating = false;
-
-// ─── STATE — MULTIPLE STEPS ──────────────────────────────────────────────────
-let memStrategies = [];
-let memStratIdx   = 0;
-let memCardIdx    = 0;
-let memFlipped    = false;
-let memAnimating  = false;
-
-let msStrategies = [];
-let msStratIdx   = 0;
-let msInputIdx   = 0;
-let msStepIdx    = 0;
-let msFlipped    = false;
-let msAnimating  = false;
-
 // ─── NAVIGATION ──────────────────────────────────────────────────────────────
 function showHome() {
   navToHome();
-  closeInfo();
 }
 
 function showModeScreen(key, label) {
@@ -232,7 +176,8 @@ function goNextPack() {
     ms.classList.add('slide-in-right');
   }
   updateNextBtn();
-  if (window.showModeCards) showModeCards();
+  // Refresh mode-card locks for the new pack
+  if (window.accessLevel && window.accessLevel.applyModeLocks) accessLevel.applyModeLocks();
 }
 
 // Save which training mode was last used for a pack
@@ -250,36 +195,7 @@ function getLastMode(packKey) {
   } catch { return null; }
 }
 
-function showTraining() {
-  strategies  = (collections[activeCollectionKey] || []).map(strat => {
-    if (!window.filterInputsByBundle) return strat;
-    const filtered = window.filterInputsByBundle(strat.inputs, activeCollectionKey);
-    return Object.assign({}, strat, { inputs: filtered.length ? filtered : strat.inputs });
-  });
-  if (!strategies.length) return;
-  stratOrder  = strategies.map((_, i) => i);
-  inputOrders = strategies.map(s => s.inputs.map((_, i) => i));
-  stratIdx = 0; inputIdx = 0;
-  navToTraining('trainingScreen');
-  render();
-}
-
-// Collection cards → mode screen
-function showMemorize() {
-  const raw = memorizeCollections[activeCollectionKey] || [];
-  // Filter cards per strategy via bundle system (bakåtkompatibelt — kort utan bundle visas alltid)
-  memStrategies = raw.map(strat => {
-    if (!window.filterCardsByBundle) return strat;
-    const filteredCards = window.filterCardsByBundle(strat.cards, activeCollectionKey);
-    return filteredCards.length ? { ...strat, cards: filteredCards } : null;
-  }).filter(Boolean);
-  if (memStrategies.length === 0) return;
-  memStratIdx = 0; memCardIdx = 0;
-  navToTraining('memScreen');
-  memRender();
-}
-
-
+// ─── MODE REGISTRY ────────────────────────────────────────────────────────────
 function addModeListener(id, fn) {
   const el = document.getElementById(id);
   if (!el) return;
@@ -376,33 +292,14 @@ document.getElementById('modeNextBtn') && document.getElementById('modeNextBtn')
     if (close) close.addEventListener('click', () => {
       overlay.classList.remove('open');
       // Re-run the current training mode so bundle changes take effect immediately
-      _reloadCurrentTraining();
+      DS.reloadActive();
     });
     // Also catch Done tap via MutationObserver in case closed another way
     new MutationObserver(() => {
-      if (!overlay.classList.contains('open')) _reloadCurrentTraining();
+      if (!overlay.classList.contains('open')) DS.reloadActive();
     }).observe(overlay, { attributes: true, attributeFilter: ['class'] });
   }
 })();
-
-// Re-launch current training screen with fresh bundle filter
-function _reloadCurrentTraining() {
-  const screens = {
-    trainingScreen: showTraining,
-    memScreen:      showMemorize,
-    challScreen:    showChallenges,
-    mindScreen:     showMindset,
-    collScreen:     showCollection,
-    flowScreen:     showFlow,
-  };
-  for (const [id, fn] of Object.entries(screens)) {
-    const el = document.getElementById(id);
-    if (el && el.style.display !== 'none' && typeof fn === 'function') {
-      fn();
-      break;
-    }
-  }
-}
 
 // Beta section toggle
 function toggleBeta() {
@@ -461,22 +358,11 @@ document.getElementById('modeBetaToggle').addEventListener('touchend', e => { e.
   }
 })();
 
-registerMode('modeFlashcard', showTraining);
-
-
-registerMode('modeMemorize', showMemorize);
-
-// Back buttons
+// Back from a training screen to the mode screen
 function closeTraining(screenId) {
   navFromTraining(screenId);
-  // showModeScreen sets activeCollection labels etc but we don't want hideAll
-  // so we call it after the animation starts
   document.getElementById('modeCollectionName').textContent = activeCollectionLabel;
 }
-
-document.getElementById('closeBtn').addEventListener('click',   () => closeTraining('trainingScreen'));
-document.getElementById('memCloseBtn').addEventListener('click', () => closeTraining('memScreen'));
-
 
 // ── FEEDBACK STORAGE KEYS ─────────────────────────────────────────────────────
 // Key format: fb_{collection}_{screen}_{comboOrStratId}_{cardId}_{side}
@@ -484,6 +370,7 @@ document.getElementById('memCloseBtn').addEventListener('click', () => closeTrai
 function fbKey(screen, comboId, cardId, side) {
   return `fb_${activeCollectionKey}_${screen}_${comboId}_${cardId}_${side}`;
 }
+window.fbKey = fbKey;
 
 function fbGet(key) {
   return localStorage.getItem(key) ? parseInt(localStorage.getItem(key)) : null;
@@ -509,6 +396,7 @@ function fbRender(barId, key) {
     else btn.classList.add('fb-dimmed');
   });
 }
+window.fbRender = fbRender;
 
 // Bind click handlers once per bar at startup
 function fbInitBar(barId) {
@@ -533,3 +421,9 @@ fbInitBar('fb-mem-front');
 fbInitBar('fb-mem-back');
 fbInitBar('fb-flow-front');
 fbInitBar('fb-flow-back');
+fbInitBar('fb-chall-front');
+fbInitBar('fb-chall-back');
+fbInitBar('fb-mind-front');
+fbInitBar('fb-mind-back');
+fbInitBar('fb-coll-front');
+fbInitBar('fb-coll-back');

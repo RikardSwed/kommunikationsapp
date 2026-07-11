@@ -1,5 +1,5 @@
-// app-system.js — feedback mode settings, access levels, input bundles, progress bar + render patches
-// Part of Deckstack v1.19.4 — split from app.js
+// app-system.js — feedback mode settings, access levels, input bundles, progress bar
+// Part of Deckstack v1.25.0
 
 // ── FEEDBACK MODE ─────────────────────────────────────────────────────────────
 
@@ -608,172 +608,12 @@ window.renderBundleSection = function(containerEl, packKey) {
 
 })();
 
-// ─ Hook pbUpdate into each render function ─────────────────────────────
-
-// Single Strategy
-const _pbDivSingle = document.querySelector('#trainingScreen .divider');
-const _origRenderSingle = window.render;
-window.render = function() {
-  _origRenderSingle();
-  if (window.pbUpdate) pbUpdate(_pbDivSingle, stratIdx, strategies.length);
-};
-pbBindClick(_pbDivSingle, () => strategies.length, idx => { stratIdx = idx; inputIdx = 0; flip(false, false); render(); });
-
-// Memorize
-const _pbDivMem = document.querySelector('#memScreen .divider');
-const _origMemRenderPb = window.memRender;
-window.memRender = function() {
-  _origMemRenderPb();
-  if (window.pbUpdate) pbUpdate(_pbDivMem, memStratIdx, memStrategies.length);
-};
-pbBindClick(_pbDivMem, () => memStrategies.length, idx => { memStratIdx = idx; memCardIdx = 0; memFlipFn(false, false); memRender(); });
-
-// Multiple Steps
-const _pbDivMs = document.querySelector('#msScreen .divider');
-const _origMsRenderPb = msRender;
-window.msRender = function() {
-  _origMsRenderPb();
-  if (window.pbUpdate) pbUpdate(_pbDivMs, msStratIdx, msStrategies.length);
-};
-pbBindClick(_pbDivMs, () => msStrategies.length, idx => { msStratIdx = idx; msInputIdx = 0; msStepIdx = 0; msFlip(false, false); msRender(); });
-
-// Flow / Sequences
-const _pbDivFlow = document.querySelector('#flowScreen .divider');
-const _origFlowRenderPb = window.flowRender;
-window.flowRender = function() {
-  _origFlowRenderPb();
-  if (window.pbUpdate) pbUpdate(_pbDivFlow, flowComboIdx, flowStrategies.length);
-};
-pbBindClick(_pbDivFlow, () => flowStrategies.length, idx => { flowComboIdx = idx; flowCardIdx = 0; flowFlipFn(false, false); flowRender(); });
-
-// Guided
-const _pbDivGuided = document.querySelector('#guidedScreen .divider');
-const _origGuidedRenderPb = guidedRender;
-window.guidedRender = function() {
-  _origGuidedRenderPb();
-  if (window.pbUpdate) pbUpdate(_pbDivGuided, guidedComboIdx, guidedStrategies.length);
-};
-pbBindClick(_pbDivGuided, () => guidedStrategies.length, idx => { guidedComboIdx = idx; guidedInputIdx = 0; guidedStepIdx = 0; guidedFlipFn(false, false); guidedRender(); });
-
-// Challenges
-const _pbDivChall = document.querySelector('#challScreen .divider');
-const _origChallRenderPb = challRender;
-window.challRender = function() {
-  _origChallRenderPb();
-  if (window.pbUpdate) pbUpdate(_pbDivChall, challIdx, challChallenges.length);
-};
-pbBindClick(_pbDivChall, () => challChallenges.length, idx => { challIdx = idx; challInputIdx = 0; challFlipFn(false, false); challRender(); });
-
-// Mindset
-const _pbDivMind = document.querySelector('#mindScreen .divider');
-const _origMindRenderPb = mindRender;
-window.mindRender = function() {
-  _origMindRenderPb();
-  if (window.pbUpdate) pbUpdate(_pbDivMind, mindIdx, mindStrategies.length);
-};
-pbBindClick(_pbDivMind, () => mindStrategies.length, idx => { mindIdx = idx; mindInputIdx = 0; mindFlipFn(false, false); mindRender(); });
-
-// Collections
-const _pbDivColl = document.querySelector('#collScreen .divider');
-const _origCollRenderPb = collRender;
-window.collRender = function() {
-  _origCollRenderPb();
-  if (window.pbUpdate) pbUpdate(_pbDivColl, collIdx, collCollections.length);
-};
-pbBindClick(_pbDivColl, () => collCollections.length, idx => { collIdx = idx; collInputIdx = 0; collFlipFn(false, false); collRender(); });
-
-// Handsfree: Single Strategy
-const _pbDivHf = document.querySelector('#hfScreen .divider');
-const _origHfRenderPb = hfRender;
-window.hfRender = function() {
-  _origHfRenderPb();
-  if (window.pbUpdate) pbUpdate(_pbDivHf, stratIdx, strategies.length);
-};
-pbBindClick(_pbDivHf, () => strategies.length, idx => { if (hfPlaying) return; stratIdx = idx; inputIdx = 0; hfRender(); }, () => hfPlaying);
-
-// Handsfree: Memorize
-const _pbDivHfMem = document.querySelector('#hfMemScreen .divider');
-const _origHfMemRenderPb = hfMemRender;
-window.hfMemRender = function() {
-  _origHfMemRenderPb();
-  if (window.pbUpdate) pbUpdate(_pbDivHfMem, memStratIdx, memStrategies.length);
-};
-pbBindClick(_pbDivHfMem, () => memStrategies.length, idx => { if (hfMemPlaying) return; memStratIdx = idx; memCardIdx = 0; hfMemRender(); }, () => hfMemPlaying);
-
-// Handsfree: Challenges
-const _pbDivHfChall = document.querySelector('#hfChallScreen .divider');
-const _origHfChallRenderManualPb = hfChallRenderManual;
-window.hfChallRenderManual = function() {
-  _origHfChallRenderManualPb();
-  if (window.pbUpdate) pbUpdate(_pbDivHfChall, challIdx, challChallenges.length);
-};
-pbBindClick(_pbDivHfChall, () => challChallenges.length, idx => { if (hfChallPlaying) return; challIdx = idx; challInputIdx = 0; hfChallRenderManual(); }, () => hfChallPlaying);
-
-// Handsfree: Sequences
-const _pbDivHfFlow = document.querySelector('#hfFlowScreen .divider');
-const _origHfFlowRenderManualPb = hfFlowRenderManual;
-window.hfFlowRenderManual = function() {
-  _origHfFlowRenderManualPb();
-  if (window.pbUpdate) pbUpdate(_pbDivHfFlow, flowComboIdx, flowStrategies.length);
-};
-pbBindClick(_pbDivHfFlow, () => flowStrategies.length, idx => { if (hfFlowPlaying) return; flowComboIdx = idx; flowCardIdx = 0; hfFlowRenderManual(); }, () => hfFlowPlaying);
-
-// Handsfree: Mindset
-const _pbDivHfMind = document.querySelector('#hfMindScreen .divider');
-const _origHfMindRenderManualPb = hfMindRenderManual;
-window.hfMindRenderManual = function() {
-  _origHfMindRenderManualPb();
-  if (window.pbUpdate) pbUpdate(_pbDivHfMind, mindIdx, mindStrategies.length);
-};
-pbBindClick(_pbDivHfMind, () => mindStrategies.length, idx => { if (hfMindPlaying) return; mindIdx = idx; mindInputIdx = 0; hfMindRenderManual(); }, () => hfMindPlaying);
-
-// Handsfree: Collections
-const _pbDivHfColl = document.querySelector('#hfCollScreen .divider');
-const _origHfCollRenderManualPb = hfCollRenderManual;
-window.hfCollRenderManual = function() {
-  _origHfCollRenderManualPb();
-  if (window.pbUpdate) pbUpdate(_pbDivHfColl, collIdx, collCollections.length);
-};
-pbBindClick(_pbDivHfColl, () => collCollections.length, idx => { if (hfCollPlaying) return; collIdx = idx; collInputIdx = 0; hfCollRenderManual(); }, () => hfCollPlaying);
-
-// ── HOOK INTO RENDER FUNCTIONS ────────────────────────────────────────────────
-
-// Single Strategy
-const _origRender = render;
-window.render = function() {
-  _origRender();
-  const frontKey = fbKey('single', stratIdx, inputIdx, 'front');
-  const backKey  = fbKey('single', stratIdx, inputIdx, 'back');
-  fbRender('fb-single-front', frontKey);
-  fbRender('fb-single-back',  backKey);
-  alRender('al-single-front', alKey('single', stratIdx, inputIdx, 'front'));
-  alRender('al-single-back',  alKey('single', stratIdx, inputIdx, 'back'));
-};
-
-// Memorize
-const _origMemRender = memRender;
-window.memRender = function() {
-  _origMemRender();
-  const frontKey = fbKey('mem', memStratIdx, memCardIdx, 'front');
-  const backKey  = fbKey('mem', memStratIdx, memCardIdx, 'back');
-  fbRender('fb-mem-front', frontKey);
-  fbRender('fb-mem-back',  backKey);
-  alRender('al-mem-front', alKey('mem', memStratIdx, memCardIdx, 'front'));
-  alRender('al-mem-back',  alKey('mem', memStratIdx, memCardIdx, 'back'));
-};
-
-// Flow (Sequences)
-const _origFlowRender = flowRender;
-window.flowRender = function() {
-  _origFlowRender();
-  const frontKey = fbKey('flow', flowComboIdx, flowCardIdx, 'front');
-  const backKey  = fbKey('flow', flowComboIdx, flowCardIdx, 'back');
-  fbRender('fb-flow-front', frontKey);
-  fbRender('fb-flow-back',  backKey);
-  alRender('al-flow-front', alKey('flow', flowComboIdx, flowCardIdx, 'front'));
-  alRender('al-flow-back',  alKey('flow', flowComboIdx, flowCardIdx, 'back'));
-};
-
+// NOTE (v1.25.0): The render/progress-bar monkey-patch block that used to
+// live here has been removed. It referenced functions from the deleted beta
+// modes (msRender, guidedRender) which threw a ReferenceError at load time
+// and silently killed everything below this point (feedback hooks, tag mode,
+// Clear Extended Purchases, al-suggest mode). Feedback bars, access-level
+// bars and progress-bar updates are now built into mode-engine.js.
 
 // ── ACCESS LEVEL SUGGEST MODE ────────────────────────────────────────────────
 let alSuggestMode = localStorage.getItem('alSuggestMode') === 'true';
