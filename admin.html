@@ -203,6 +203,45 @@
     .tier-free          { background: #e8f5e9; color: #2e7d32; }
     .tier-pro           { background: #fff8e1; color: #f57f17; }
     .tier-ext           { background: #ede7f6; color: #4527a0; }
+
+    /* ── PROGRAM EDITOR ───────────────────────────────────────────────── */
+    #screen-program { display: flex; flex-direction: column; height: 100%; overflow-y: auto; }
+    #prog-header {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 16px 28px 12px; background: var(--card);
+      border-bottom: 1px solid var(--border); gap: 16px; flex-wrap: wrap;
+    }
+    #prog-meta { border-bottom: 1px solid var(--border); }
+    .prog-section-card {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: var(--radius); margin-bottom: 12px; overflow: hidden;
+    }
+    .prog-section-header {
+      display: flex; align-items: center; gap: 10px;
+      padding: 12px 16px; cursor: pointer; user-select: none;
+    }
+    .prog-section-header:hover { background: var(--bg); }
+    .prog-section-num  { font-size: 11px; font-weight: 700; color: var(--txt3); min-width: 24px; }
+    .prog-section-title-display { font-weight: 700; font-size: 14px; flex: 1; }
+    .prog-section-pack-label { font-size: 12px; color: var(--txt3); }
+    .prog-section-cp-badge {
+      font-size: 10px; font-weight: 700; background: var(--acc); color: #fff;
+      border-radius: 4px; padding: 2px 6px;
+    }
+    .prog-section-body { padding: 14px 16px; border-top: 1px solid var(--border); background: var(--bg); }
+    .prog-section-body .field-block { margin-bottom: 10px; }
+    .prog-section-actions { display: flex; gap: 8px; margin-top: 10px; align-items: center; }
+    .cp-questions-area { margin-top: 12px; }
+    .cp-question-row {
+      display: grid; grid-template-columns: 1fr 1fr 60px 32px;
+      gap: 6px; margin-bottom: 6px; align-items: start;
+    }
+    .cp-opts-row {
+      display: grid; grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 4px; margin-bottom: 6px;
+    }
+    .cp-correct-select { font-size: 12px; padding: 4px 6px; border: 1px solid var(--border); border-radius: 4px; background: var(--card); color: var(--txt); }
+    .prog-section-move { display: flex; gap: 4px; margin-left: auto; }
     .editor-tag-section { padding: 8px 0 4px; }
     .editor-tag-label   { font-size: 11px; font-weight: 700; letter-spacing: .5px; text-transform: uppercase; color: var(--txt3); margin-bottom: 6px; }
     .editor-tag-list    { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 6px; min-height: 24px; }
@@ -521,7 +560,7 @@
   <div class="topbar">
     <button class="btn btn--ghost btn--sm" onclick="window.location.href='index.html'" style="margin-right:8px;" title="Back to app">&larr; App</button>
     <span class="topbar-title" onclick="showHome()" style="cursor:pointer;" title="Back to home">Deckstack — Pack Editor</span>
-    <span class="topbar-version">Editor v1.4.2 · Changes saved automatically</span>
+    <span class="topbar-version">Editor v1.5.0 · Changes saved automatically</span>
   </div>
 
   <!-- Home screen -->
@@ -571,7 +610,42 @@
           <span class="column-hint">Imported or created</span>
         </div>
         <div id="program-list-my"></div>
+        <button class="btn btn--ghost btn--sm" id="new-program-btn" style="margin-top:10px;width:100%;">+ New Program</button>
       </div>
+    </div>
+  </div>
+
+  <!-- ── PROGRAM EDITOR SCREEN ─────────────────────────────────────────────── -->
+  <div id="screen-program" style="display:none;">
+    <div id="prog-header">
+      <div class="pack-title-row">
+        <span class="pack-title" id="prog-title-display">Program</span>
+        <button class="icon-btn" id="prog-rename-btn" title="Rename">&#9998;</button>
+      </div>
+      <div class="pack-actions">
+        <button class="btn btn--ghost btn--sm" id="prog-back-btn">← All programs</button>
+        <button class="btn btn--primary btn--sm" id="prog-export-btn">Export JSON</button>
+      </div>
+    </div>
+
+    <div id="prog-meta" style="padding:0 28px 12px;">
+      <div class="field-block">
+        <label class="field-label">Description</label>
+        <textarea class="textarea" id="prog-desc-ta" rows="2" placeholder="Short description shown in the programs list..."></textarea>
+      </div>
+      <div class="field-block" style="display:flex;gap:16px;align-items:center;">
+        <div>
+          <label class="field-label">Icon</label>
+          <input type="text" class="select" id="prog-icon-input" placeholder="ti-stack" style="width:140px;" />
+        </div>
+        <div style="font-size:24px;padding-top:18px;" id="prog-icon-preview"><i class="ti ti-stack"></i></div>
+      </div>
+    </div>
+
+    <div id="prog-sections-area" style="padding:0 28px 80px;"></div>
+
+    <div style="padding:0 28px 20px;">
+      <button class="btn btn--ghost" id="prog-add-section-btn" style="width:100%;">+ Add Section</button>
     </div>
   </div>
 
@@ -624,8 +698,8 @@
   });
 </script>
 <!-- Editor logic -->
-<script src="js/editor-core.js?v=142"></script>
-<script src="js/editor-ui.js?v=142"></script>
+<script src="js/editor-core.js?v=150"></script>
+<script src="js/editor-ui.js?v=150"></script>
 
 </body>
 </html>
