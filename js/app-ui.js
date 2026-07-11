@@ -1658,6 +1658,19 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
     }
   ];
 
+  const EXTENDED_BUNDLES = [
+    {
+      id: 'assertive::domestic',
+      packKey: 'assertive',
+      bundleId: 'domestic',
+      packTitle: 'Assertive Communication',
+      title: 'Domestic Situations',
+      icon: 'ti-home',
+      description: 'Extra inputs for home and close relationships — partners, family, neighbours, friends. Covers all four assertive strategies.',
+      price: '19 kr',
+    }
+  ];
+
   function getOwned() {
     try { return JSON.parse(localStorage.getItem(OWNED_KEY)) || []; }
     catch { return []; }
@@ -1679,14 +1692,13 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
   function renderExtendedStore() {
     const packList    = document.getElementById('extPackList');
     const programList = document.getElementById('extProgramList');
+    const bundleList  = document.getElementById('extBundleList');
     if (!packList || !programList) return;
 
     const level = getAccessLevel();
 
-    packList.innerHTML = '';
-    EXTENDED_PACKS.forEach(item => {
-      const owned    = isOwned(item.id) || level === 'complete';
-      const card     = document.createElement('div');
+    function makeCard(item, owned, onBuy) {
+      const card = document.createElement('div');
       card.className = 'ext-store-card';
       card.innerHTML = `
         <div class="ext-store-card-top">
@@ -1698,89 +1710,77 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
         </div>
         <div class="ext-store-card-bottom">
           ${owned
-            ? `<div class="ext-store-owned"><i class="ti ti-check" aria-hidden="true"></i> Added to Library</div>`
+            ? `<div class="ext-store-owned"><i class="ti ti-check" aria-hidden="true"></i> Added</div>`
             : `<div class="ext-store-price">${item.price}</div>
-               <button class="ext-store-btn" data-id="${item.id}" data-type="pack">Add to Library</button>`
+               <button class="ext-store-btn">Add</button>`
           }
         </div>`;
-      packList.appendChild(card);
+      if (!owned) {
+        card.querySelector('.ext-store-btn').addEventListener('click', onBuy);
+      } else {
+        card.style.cursor = 'pointer';
+        card.addEventListener('click', onBuy);
+      }
+      return card;
+    }
+
+    packList.innerHTML = '';
+    EXTENDED_PACKS.forEach(item => {
+      const owned = isOwned(item.id) || level === 'complete';
+      packList.appendChild(makeCard(item, owned, () => {
+        if (!owned) {
+          const o = getOwned(); if (!o.includes(item.id)) o.push(item.id); setOwned(o);
+          renderExtendedStore();
+          if (window._applyAccessLevel) window._applyAccessLevel();
+        } else {
+          showTab('library');
+          document.querySelectorAll('.library-subnav-btn').forEach(b => b.classList.toggle('active', b.dataset.libTab === 'packs'));
+          document.querySelectorAll('.library-tab-content').forEach(t => t.style.display = 'none');
+          const pt = document.getElementById('libTabPacks'); if (pt) pt.style.display = '';
+          showModeScreen(item.id, item.title);
+        }
+      }));
     });
 
     programList.innerHTML = '';
     EXTENDED_PROGRAMS.forEach(item => {
-      const owned    = isOwned(item.id) || level === 'complete';
-      const card     = document.createElement('div');
-      card.className = 'ext-store-card';
-      card.innerHTML = `
-        <div class="ext-store-card-top">
-          <div class="ext-store-icon"><i class="ti ${item.icon}" aria-hidden="true"></i></div>
-          <div class="ext-store-info">
-            <div class="ext-store-title">${item.title}</div>
-            <div class="ext-store-desc">${item.description}</div>
-          </div>
-        </div>
-        <div class="ext-store-card-bottom">
-          ${owned
-            ? `<div class="ext-store-owned"><i class="ti ti-check" aria-hidden="true"></i> Added to Library</div>`
-            : `<div class="ext-store-price">${item.price}</div>
-               <button class="ext-store-btn" data-id="${item.id}" data-type="program">Add to Library</button>`
-          }
-        </div>`;
-      programList.appendChild(card);
-    });
-
-    // Bind buy buttons
-    document.querySelectorAll('.ext-store-btn').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const id   = btn.dataset.id;
-        const type = btn.dataset.type;
-        const owned = getOwned();
-        if (!owned.includes(id)) owned.push(id);
-        setOwned(owned);
-        renderExtendedStore();
-        // Re-apply access level so Library pack card appears and programs filter updates
-        if (window.accessLevel && window.accessLevel.applyModeLocks) {
-          // Full applyAccessLevel re-run via the exposed hook
-          const alApply = window._applyAccessLevel;
-          if (alApply) alApply();
-        }
-      });
-    });
-
-    // Bind owned items — tap to navigate directly
-    document.querySelectorAll('.ext-store-card').forEach(card => {
-      const ownedEl = card.querySelector('.ext-store-owned');
-      if (!ownedEl) return;
-      const titleEl = card.querySelector('.ext-store-title');
-      if (!titleEl) return;
-      const title = titleEl.textContent.trim();
-      // Find matching pack or program
-      const packMatch = EXTENDED_PACKS.find(p => p.title === title);
-      const progMatch = EXTENDED_PROGRAMS.find(p => p.title === title);
-      card.style.cursor = 'pointer';
-      card.addEventListener('click', () => {
-        if (packMatch) {
-          const libCard = document.querySelector(`#libTabPacks .collection-card[data-key="${packMatch.id}"]`);
-          if (libCard) {
-            showTab('library');
-            // Switch to Packs sub-tab
-            document.querySelectorAll('.library-subnav-btn').forEach(b => b.classList.toggle('active', b.dataset.libTab === 'packs'));
-            document.querySelectorAll('.library-tab-content').forEach(t => t.style.display = 'none');
-            const pt = document.getElementById('libTabPacks');
-            if (pt) pt.style.display = '';
-            showModeScreen(packMatch.id, packMatch.title);
-          }
-        } else if (progMatch) {
+      const owned = isOwned(item.id) || level === 'complete';
+      programList.appendChild(makeCard(item, owned, () => {
+        if (!owned) {
+          const o = getOwned(); if (!o.includes(item.id)) o.push(item.id); setOwned(o);
+          renderExtendedStore();
+          if (window.renderExtendedStore) window.renderExtendedStore();
+        } else {
           showTab('library');
           document.querySelectorAll('.library-subnav-btn').forEach(b => b.classList.toggle('active', b.dataset.libTab === 'programs'));
           document.querySelectorAll('.library-tab-content').forEach(t => t.style.display = 'none');
-          const pt = document.getElementById('libTabPrograms');
-          if (pt) { pt.style.display = ''; }
+          const pt = document.getElementById('libTabPrograms'); if (pt) pt.style.display = '';
         }
-      });
+      }));
     });
-  }
 
+    if (bundleList) {
+      bundleList.innerHTML = '';
+      EXTENDED_BUNDLES.forEach(item => {
+        const owned = isOwned(item.id) || level === 'complete';
+        bundleList.appendChild(makeCard(item, owned, () => {
+          if (!owned) {
+            // Purchase: save to ds_extended_owned AND activate the bundle via setBundleState
+            const o = getOwned(); if (!o.includes(item.id)) o.push(item.id); setOwned(o);
+            // Also activate the bundle in the pack's bundle state
+            const bKey = `bundles:${item.packKey}`;
+            try {
+              const cur = JSON.parse(localStorage.getItem(bKey)) || [];
+              if (!cur.includes(item.bundleId)) { cur.push(item.bundleId); localStorage.setItem(bKey, JSON.stringify(cur)); }
+            } catch(e) { localStorage.setItem(bKey, JSON.stringify([item.bundleId])); }
+            renderExtendedStore();
+            if (window._applyAccessLevel) window._applyAccessLevel();
+          }
+          // Owned: no navigation needed — the bundle is now active in the pack
+        }));
+      });
+    }
+  }  // end renderExtendedStore
   // Expose so showTab can trigger re-render
   window.renderExtendedStore = renderExtendedStore;
 

@@ -330,6 +330,12 @@ const BUNDLE_DEFS = {
       name: 'Workplace & Social',
       description: 'Extra situations focused on professional and social contexts — colleagues, meetings, and social judgement.',
     },
+    {
+      id: 'domestic',
+      tier: 'extended',
+      name: 'Domestic Situations',
+      description: 'Situations at home and in close relationships — partners, family, neighbours, friends.',
+    },
   ]
 };
 
@@ -393,6 +399,10 @@ function getActiveBundles(packKey) {
 }
 
 // Filter inputs based on active bundles
+// Filter inputs based on active bundles
+// - free: always shown
+// - pro: shown when pro is active (also shows free automatically)
+// - pro-opt / extended: shown when that bundle is toggled on (additive)
 // Bakåtkompatibelt: kort utan bundle-fält visas alltid
 window.filterInputsByBundle = function(inputs, packKey) {
   const defs = BUNDLE_DEFS[packKey];
@@ -401,8 +411,9 @@ window.filterInputsByBundle = function(inputs, packKey) {
   const hasProActive = active.includes('pro');
   return inputs.filter(inp => {
     if (!inp.bundle) return true;
+    if (inp.bundle === 'free') return true;
+    if (inp.bundle === 'pro' && hasProActive) return true;
     if (active.includes(inp.bundle)) return true;
-    if (hasProActive && inp.bundle === 'free') return true;
     return false;
   });
 };
@@ -415,11 +426,13 @@ window.filterCardsByBundle = function(cards, packKey) {
   const hasProActive = active.includes('pro');
   return cards.filter(c => {
     if (!c.bundle) return true;
+    if (c.bundle === 'free') return true;
+    if (c.bundle === 'pro' && hasProActive) return true;
     if (active.includes(c.bundle)) return true;
-    if (hasProActive && c.bundle === 'free') return true;
     return false;
   });
 };
+
 
 // Render Input Bundles section into a settings panel
 // Render Input Bundles section into a settings panel

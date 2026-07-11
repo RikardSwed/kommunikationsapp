@@ -16,6 +16,12 @@ const collections = {
         { q: "A colleague says your idea won\'t work",   a: '"You might be right — what would you suggest instead?"', bundle: 'pro' },
         { q: "Someone says you\'re not experienced enough", a: '"That could be fair. I\'m still learning."', bundle: 'pro' },
         { q: "Someone implies you\'re being naive",      a: '"It\'s possible I\'m missing something. What do you see?"', bundle: 'pro' },
+        { q: "A manager dismisses your input in a meeting", a: '"You might be right. Can I follow up with you after?"', bundle: 'workplace' },
+        { q: "A colleague takes credit for your idea",   a: '"I can see why that reading is there. I did want to add some context about where it came from."', bundle: 'workplace' },
+        { q: "A client implies your work isn\'t professional enough", a: '"You may have a point. What specifically would you like to see done differently?"', bundle: 'workplace' },
+        { q: "A neighbour complains about something you do regularly", a: '"You might be right that it\'s been more than usual."', bundle: 'domestic' },
+        { q: "A family member says you\'re being selfish", a: '"I understand it looks that way. I see it differently, but I hear you."', bundle: 'domestic' },
+        { q: "A partner criticises how you handled something at home", a: '"You could have a point. What would have worked better for you?"', bundle: 'domestic' },
       ]
     },
     {
@@ -30,6 +36,12 @@ const collections = {
         { q: "Someone gives you feedback that feels unfair", a: '"Can you help me understand what you\'re reacting to?"', bundle: 'pro' },
         { q: "A manager implies your work isn\'t good enough", a: '"What would good look like to you?"', bundle: 'pro' },
         { q: "Someone says you have a bad attitude",       a: '"What have you noticed that gives you that impression?"', bundle: 'pro' },
+        { q: "A colleague says you\'re not a team player", a: '"That\'s useful to hear. What specifically have you noticed?"', bundle: 'workplace' },
+        { q: "HR gives you vague feedback in a review",    a: '"I want to take this seriously — can you give me a concrete example?"', bundle: 'workplace' },
+        { q: "A client says your communication isn\'t clear", a: '"What specifically would clearer communication look like for you?"', bundle: 'workplace' },
+        { q: "A partner says you\'re not listening",       a: '"What is it I do that feels like not listening to you?"', bundle: 'domestic' },
+        { q: "A family member says you\'re never available", a: '"What would being more available look like to you?"', bundle: 'domestic' },
+        { q: "A friend says you\'ve changed",              a: '"What have you noticed that makes you say that?"', bundle: 'domestic' },
       ]
     },
     {
@@ -44,6 +56,12 @@ const collections = {
         { q: "Someone points out you forgot something important", a: '"You\'re right, I dropped the ball on that."', bundle: 'pro' },
         { q: "Someone says you were dismissive in a conversation", a: '"That\'s fair — I wasn\'t fully present."', bundle: 'pro' },
         { q: "Someone says you interrupted them repeatedly",   a: '"You\'re right, I did. I\'ll work on that."', bundle: 'pro' },
+        { q: "A manager says your report was below standard", a: '"You\'re right, it wasn\'t my best work. I\'ll redo it."', bundle: 'workplace' },
+        { q: "A colleague says you took too long on a task",  a: '"You\'re right, that took longer than it should have."', bundle: 'workplace' },
+        { q: "A client says your response was slow",          a: '"You\'re right. I should have been faster. I\'ll prioritise this."', bundle: 'workplace' },
+        { q: "A partner says you forgot a commitment",        a: '"You\'re right. I forgot. That was careless of me."', bundle: 'domestic' },
+        { q: "A family member says you were short with them", a: '"You\'re right, I was. That\'s on me."', bundle: 'domestic' },
+        { q: "A friend says you\'ve been flaky lately",       a: '"Yeah, I have been. I\'m going to fix that."', bundle: 'domestic' },
       ]
     },
     {
@@ -58,6 +76,12 @@ const collections = {
         { q: "A colleague keeps pushing back on a boundary",   a: '"That\'s my boundary." — calm, clear, repeated.', bundle: 'pro' },
         { q: "A family member pressures you about a life choice", a: '"I\'ve made my choice." — said warmly but without wavering.', bundle: 'pro' },
         { q: "Someone tries to negotiate after you said no",   a: '"No is still my answer." — no softening, no new reasons.', bundle: 'pro' },
+        { q: "A manager keeps pushing for more than you agreed to", a: '"That\'s outside what we agreed." — each time, same wording.', bundle: 'workplace' },
+        { q: "A client repeatedly requests changes beyond scope", a: '"That\'s beyond the scope we agreed. Happy to discuss it separately."', bundle: 'workplace' },
+        { q: "A colleague keeps asking you to cover their work", a: '"I\'m not able to take that on." — repeated as needed.', bundle: 'workplace' },
+        { q: "A partner keeps bringing up a resolved argument", a: '"We\'ve talked about this and I\'d like to move forward."', bundle: 'domestic' },
+        { q: "A family member pressures you about your choices", a: '"This is my decision." — warmly but without wavering.', bundle: 'domestic' },
+        { q: "A neighbour repeatedly makes the same complaint", a: '"I\'ve heard your concern." — calm, same tone each time.', bundle: 'domestic' },
       ]
     }
   ],
