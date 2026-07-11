@@ -117,25 +117,16 @@ function renderProgramList() {
     });
   });
 
-  // App programs — click shows program detail modal
+  // App programs — click opens read-only program editor with Save as Mine option
   document.querySelectorAll('#program-list-app .program-row').forEach(row => {
     row.style.cursor = 'pointer';
     row.addEventListener('click', () => {
       const prog = (window._dsPrograms || []).find(p => p.id === row.dataset.id);
       if (!prog) return;
-      const sections = (prog.sections || []).map(s => {
-        const cps = s.checkpoint ? ` · <span style="color:var(--acc)">Checkpoint</span>` : '';
-        const packs = (s.packs || []).map(p => p.label || p.key).join(', ');
-        return `<div style="padding:6px 0; border-bottom:1px solid var(--border);">
-          <div style="font-weight:600;font-size:13px;">${escHtml(s.title)}</div>
-          <div style="font-size:12px;color:var(--txt3);">${escHtml(packs)}${cps}</div>
-        </div>`;
-      }).join('');
-      showInfoModal(prog.title, `
-        <p style="color:var(--txt2);font-size:13px;margin:0 0 12px;">${escHtml(prog.description || '')}</p>
-        <div style="font-size:11px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:var(--txt3);margin-bottom:8px;">Sections</div>
-        ${sections || '<div style="color:var(--txt3);font-size:13px;">No sections</div>'}
-      `);
+      // Show in editor as read-only, with Save as Mine button
+      const copy = JSON.parse(JSON.stringify(prog));
+      copy._readOnly = true;
+      showProgramEditor(copy);
     });
   });
 
@@ -208,32 +199,74 @@ function showProgramEditor(program) {
 
 function renderProgramEditor() {
   const p = currentProgram;
-  // Header
+  const ro = !!p._readOnly;
+
   const titleEl = document.getElementById('prog-title-display');
   if (titleEl) titleEl.textContent = p.title || 'Untitled Program';
+
+  const renameBtn = document.getElementById('prog-rename-btn');
+  if (renameBtn) renameBtn.style.display = ro ? 'none' : '';
+
+  // Show/hide Save as Mine button
+  let saveAsMineBtn = document.getElementById('prog-save-as-mine-btn');
+  if (ro && !saveAsMineBtn) {
+    saveAsMineBtn = document.createElement('button');
+    saveAsMineBtn.id = 'prog-save-as-mine-btn';
+    saveAsMineBtn.className = 'btn btn--secondary btn--sm';
+    saveAsMineBtn.textContent = 'Save as Mine';
+    document.querySelector('.pack-actions')?.appendChild(saveAsMineBtn);
+    saveAsMineBtn.onclick = () => {
+      const name = prompt('Save as (new name):', p.title + ' (copy)');
+      if (!name?.trim()) return;
+      const copy = JSON.parse(JSON.stringify(p));
+      delete copy._readOnly;
+      copy.id = slugify(name.trim()) + '_' + Date.now().toString(36).slice(-4);
+      copy.title = name.trim();
+      const all = getAllEditorPrograms();
+      all[copy.id] = copy;
+      try { localStorage.setItem('ds_editor_programs', JSON.stringify(all)); } catch(e) {}
+      showToast(`Saved as "${copy.title}"`);
+      currentProgram = copy;
+      renderProgramEditor();
+    };
+  } else if (!ro && saveAsMineBtn) {
+    saveAsMineBtn.remove();
+  }
+
+  const exportBtn = document.getElementById('prog-export-btn');
+  if (exportBtn) exportBtn.style.display = ro ? 'none' : '';
+
   const descTa = document.getElementById('prog-desc-ta');
-  if (descTa) { descTa.value = p.description || ''; descTa.oninput = () => { p.description = descTa.value; }; }
+  if (descTa) {
+    descTa.value = p.description || '';
+    descTa.readOnly = ro;
+    descTa.oninput = ro ? null : () => { p.description = descTa.value; };
+  }
   const iconInput = document.getElementById('prog-icon-input');
   const iconPreview = document.getElementById('prog-icon-preview');
   if (iconInput) {
     iconInput.value = p.icon || 'ti-stack';
-    iconInput.oninput = () => {
+    iconInput.readOnly = ro;
+    iconInput.oninput = ro ? null : () => {
       p.icon = iconInput.value.trim();
       if (iconPreview) iconPreview.innerHTML = `<i class="ti ${p.icon}"></i>`;
     };
     if (iconPreview) iconPreview.innerHTML = `<i class="ti ${p.icon || 'ti-stack'}"></i>`;
   }
 
-  // Sections
+  const addSecBtn = document.getElementById('prog-add-section-btn');
+  if (addSecBtn) addSecBtn.style.display = ro ? 'none' : '';
+
   const area = document.getElementById('prog-sections-area');
   if (!area) return;
   area.innerHTML = '';
   (p.sections || []).forEach((sec, si) => {
-    area.appendChild(buildSectionCard(sec, si));
+    area.appendChild(buildSectionCard(sec, si, ro));
   });
 }
 
-function buildSectionCard(sec, si) {
+function buildSectionCard(sec, si, ro) {
+  ro = !!ro;
   const p = currentProgram;
   const hasCp  = !!sec.checkpoint;
   const packLabel = sec.packs && sec.packs.length ? sec.packs.map(pk => pk.label || pk.key).join(', ') : '— no pack —';
@@ -250,32 +283,34 @@ function buildSectionCard(sec, si) {
         <div class="prog-section-pack-label">${escHtml(packLabel)}</div>
       </div>
       ${hasCp ? `<span class="prog-section-cp-badge">Test</span>` : ''}
+      ${!ro ? `
       <div class="prog-section-move">
         ${si > 0 ? `<button class="icon-btn prog-sec-up" data-si="${si}" title="Move up">↑</button>` : ''}
         ${si < (p.sections.length - 1) ? `<button class="icon-btn prog-sec-down" data-si="${si}" title="Move down">↓</button>` : ''}
       </div>
       <button class="icon-btn danger prog-sec-del" data-si="${si}" title="Delete section">&#x2715;</button>
+      ` : ''}
     </div>
     <div class="prog-section-body" id="prog-sec-body-${si}" style="display:none;">
       <div class="field-block">
         <label class="field-label">Section title</label>
-        <input type="text" class="input" id="sec-title-${si}" value="${escHtml(sec.title || '')}" placeholder="e.g. Chapter 1 — Starting Conversations" />
+        <input type="text" class="input" id="sec-title-${si}" value="${escHtml(sec.title || '')}" placeholder="e.g. Chapter 1 — Starting Conversations" ${ro ? 'readonly' : ''} />
       </div>
       <div class="field-block">
         <label class="field-label">Pack</label>
-        <select class="select" id="sec-pack-${si}">
+        <select class="select" id="sec-pack-${si}" ${ro ? 'disabled' : ''}>
           <option value="">— None —</option>
           ${buildPackOptions(sec.packs && sec.packs[0] ? sec.packs[0].key : '')}
         </select>
       </div>
-      <div class="prog-section-actions">
+      ${!ro ? `<div class="prog-section-actions">
         <label style="display:flex;align-items:center;gap:6px;font-size:13px;cursor:pointer;">
           <input type="checkbox" id="sec-cp-toggle-${si}" ${hasCp ? 'checked' : ''} />
           Include checkpoint test
         </label>
-      </div>
+      </div>` : ''}
       <div class="cp-editor" id="cp-editor-${si}" style="${hasCp ? '' : 'display:none;'}">
-        ${buildCpEditor(sec, si)}
+        ${buildCpEditor(sec, si, ro)}
       </div>
     </div>`;
 
@@ -333,7 +368,7 @@ function buildSectionCard(sec, si) {
     }
   });
 
-  if (hasCp) bindCpEditor(sec, si, card);
+  if (hasCp) bindCpEditor(sec, si, card, ro);
 
   // Move up/down
   card.querySelectorAll('.prog-sec-up').forEach(btn => {
@@ -380,54 +415,55 @@ function buildPackOptions(selectedKey) {
   return opts;
 }
 
-function buildCpEditor(sec, si) {
+function buildCpEditor(sec, si, ro) {
+  ro = !!ro;
   const cp = sec.checkpoint;
   if (!cp) return '';
   let html = `
     <div style="display:flex;gap:12px;margin-bottom:10px;flex-wrap:wrap;">
       <div class="field-block" style="flex:1;min-width:120px;">
         <label class="field-label">Test title</label>
-        <input type="text" class="input" id="cp-title-${si}" value="${escHtml(cp.title || '')}" placeholder="e.g. Chapter 1 Test" />
+        <input type="text" class="input" id="cp-title-${si}" value="${escHtml(cp.title || '')}" placeholder="e.g. Chapter 1 Test" ${ro ? 'readonly' : ''} />
       </div>
       <div class="field-block" style="width:80px;">
         <label class="field-label">Time (s)</label>
-        <input type="number" class="input" id="cp-time-${si}" value="${cp.timeLimit || 90}" min="10" max="300" />
+        <input type="number" class="input" id="cp-time-${si}" value="${cp.timeLimit || 90}" min="10" max="300" ${ro ? 'readonly' : ''} />
       </div>
       <div class="field-block" style="width:80px;">
         <label class="field-label">Draw</label>
-        <input type="number" class="input" id="cp-draw-${si}" value="${cp.drawCount || 10}" min="1" max="50" />
+        <input type="number" class="input" id="cp-draw-${si}" value="${cp.drawCount || 10}" min="1" max="50" ${ro ? 'readonly' : ''} />
       </div>
     </div>
     <div class="cp-questions-area" id="cp-qs-${si}">
-      ${(cp.questions || []).map((q, qi) => buildQuestionRow(q, qi, si)).join('')}
+      ${(cp.questions || []).map((q, qi) => buildQuestionRow(q, qi, si, ro)).join('')}
     </div>
-    <button class="btn btn--ghost btn--sm cp-add-q" data-si="${si}" style="width:100%;margin-top:6px;">+ Add question</button>`;
+    ${!ro ? `<button class="btn btn--ghost btn--sm cp-add-q" data-si="${si}" style="width:100%;margin-top:6px;">+ Add question</button>` : ''}`;
   return html;
 }
 
-function buildQuestionRow(q, qi, si) {
+function buildQuestionRow(q, qi, si, ro) {
+  ro = !!ro;
   return `
     <div class="cp-question-row" data-qi="${qi}">
-      <textarea class="card-ta cp-q-text" data-qi="${qi}" data-si="${si}" rows="2" placeholder="Question...">${escHtml(q.q || '')}</textarea>
+      <textarea class="card-ta cp-q-text" data-qi="${qi}" data-si="${si}" rows="2" placeholder="Question..." ${ro ? 'readonly' : ''}>${escHtml(q.q || '')}</textarea>
       <div class="cp-opts-row" style="display:contents;">
-        ${['A','B','C','D'].map((l, li) => `<input type="text" class="input cp-opt" data-qi="${qi}" data-si="${si}" data-li="${li}" value="${escHtml((q.options||[])[li]||'')}" placeholder="${l}..." />`).join('')}
+        ${['A','B','C','D'].map((l, li) => `<input type="text" class="input cp-opt" data-qi="${qi}" data-si="${si}" data-li="${li}" value="${escHtml((q.options||[])[li]||'')}" placeholder="${l}..." ${ro ? 'readonly' : ''} />`).join('')}
       </div>
-      <select class="cp-correct-select" data-qi="${qi}" data-si="${si}">
+      <select class="cp-correct-select" data-qi="${qi}" data-si="${si}" ${ro ? 'disabled' : ''}>
         ${['A','B','C','D'].map((l,li) => `<option value="${li}" ${q.correct===li?'selected':''}>${l}</option>`).join('')}
       </select>
-      <button class="icon-btn danger cp-del-q" data-qi="${qi}" data-si="${si}" title="Remove">&#x2715;</button>
+      ${!ro ? `<button class="icon-btn danger cp-del-q" data-qi="${qi}" data-si="${si}" title="Remove">&#x2715;</button>` : '<span></span>'}
     </div>`;
 }
 
-function bindCpEditor(sec, si, card) {
+function bindCpEditor(sec, si, card, ro) {
   const cp = sec.checkpoint;
-  if (!cp) return;
+  if (!cp || ro) return;  // read-only: no bindings needed
 
   const cpArea = card.querySelector(`#cp-editor-${si}`);
   if (!cpArea) return;
 
   function rebind() {
-    // Title / time / draw
     const tIn = cpArea.querySelector(`#cp-title-${si}`);
     const tmIn = cpArea.querySelector(`#cp-time-${si}`);
     const drIn = cpArea.querySelector(`#cp-draw-${si}`);
@@ -435,11 +471,9 @@ function bindCpEditor(sec, si, card) {
     if (tmIn) tmIn.oninput = () => { cp.timeLimit  = parseInt(tmIn.value) || 90; };
     if (drIn) drIn.oninput = () => { cp.drawCount  = parseInt(drIn.value) || 10; };
 
-    // Question texts
     cpArea.querySelectorAll('.cp-q-text').forEach(ta => {
       ta.oninput = () => { const qi = parseInt(ta.dataset.qi); if (cp.questions[qi]) cp.questions[qi].q = ta.value; };
     });
-    // Options
     cpArea.querySelectorAll('.cp-opt').forEach(inp => {
       inp.oninput = () => {
         const qi = parseInt(inp.dataset.qi), li = parseInt(inp.dataset.li);
@@ -449,24 +483,21 @@ function bindCpEditor(sec, si, card) {
         }
       };
     });
-    // Correct answer
     cpArea.querySelectorAll('.cp-correct-select').forEach(sel => {
       sel.onchange = () => { const qi = parseInt(sel.dataset.qi); if (cp.questions[qi]) cp.questions[qi].correct = parseInt(sel.value); };
     });
-    // Delete question
     cpArea.querySelectorAll('.cp-del-q').forEach(btn => {
       btn.onclick = () => {
         cp.questions.splice(parseInt(btn.dataset.qi), 1);
         const qsArea = cpArea.querySelector(`#cp-qs-${si}`);
-        if (qsArea) { qsArea.innerHTML = cp.questions.map((q, qi) => buildQuestionRow(q, qi, si)).join(''); rebind(); }
+        if (qsArea) { qsArea.innerHTML = cp.questions.map((q, qi) => buildQuestionRow(q, qi, si, false)).join(''); rebind(); }
       };
     });
-    // Add question
     const addQ = cpArea.querySelector('.cp-add-q');
     if (addQ) addQ.onclick = () => {
       cp.questions.push({ id: 'q_' + Date.now().toString(36), q: '', options: ['','','',''], correct: 0 });
       const qsArea = cpArea.querySelector(`#cp-qs-${si}`);
-      if (qsArea) { qsArea.innerHTML = cp.questions.map((q, qi) => buildQuestionRow(q, qi, si)).join(''); rebind(); }
+      if (qsArea) { qsArea.innerHTML = cp.questions.map((q, qi) => buildQuestionRow(q, qi, si, false)).join(''); rebind(); }
     };
   }
   rebind();
@@ -476,7 +507,8 @@ function bindCpEditor(sec, si, card) {
 function bindProgramEditorControls() {
   const backBtn = document.getElementById('prog-back-btn');
   if (backBtn) backBtn.onclick = () => {
-    if (currentProgram && confirm('Save changes?')) saveProgramAndClose();
+    const ro = currentProgram && currentProgram._readOnly;
+    if (!ro && currentProgram && confirm('Save changes?')) saveProgramAndClose();
     else { currentProgram = null; showScreen('screen-home'); renderProgramList(); }
   };
 
@@ -528,9 +560,11 @@ function bindProgramEditorControls() {
 
 function saveProgramAndClose(goHome = true) {
   if (!currentProgram) return;
-  const all = getAllEditorPrograms();
-  all[currentProgram.id] = currentProgram;
-  try { localStorage.setItem('ds_editor_programs', JSON.stringify(all)); } catch(e) {}
+  if (!currentProgram._readOnly) {
+    const all = getAllEditorPrograms();
+    all[currentProgram.id] = currentProgram;
+    try { localStorage.setItem('ds_editor_programs', JSON.stringify(all)); } catch(e) {}
+  }
   if (goHome) {
     showScreen('screen-home');
     renderProgramList();

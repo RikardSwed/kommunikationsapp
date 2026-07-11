@@ -967,28 +967,22 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
   // Rensa purchases
   localStorage.removeItem('ds_extended_owned');
   // Rensa bundle states explicit per känd pack
-  // (Object.keys kan vara opålitlig — vi rensar known packs direkt)
   const knownPacks = Object.keys(BUNDLE_DEFS);
   knownPacks.forEach(packKey => {
     const k = `bundles:${packKey}`;
     try {
       const cur = JSON.parse(localStorage.getItem(k)) || [];
-      // Ta bort extended bundles och pro:off, behåll pro-opt som workplace
       const filtered = cur.filter(id => id !== 'domestic' && id !== 'pro:off');
       if (filtered.length) localStorage.setItem(k, JSON.stringify(filtered));
       else localStorage.removeItem(k);
     } catch(e) { localStorage.removeItem(`bundles:${packKey}`); }
   });
-  // Visuell feedback
+  // Visuell feedback — grön "Cleared ✓" i 2.5 sek
   clearExtendedBtn.textContent = 'Cleared ✓';
-  clearExtendedBtn.style.color = '#1a7a3a';
-  clearExtendedBtn.style.background = '#eafaf1';
-  clearExtendedBtn.style.borderColor = '#a8d5ba';
+  clearExtendedBtn.style.cssText = 'font-size:13px;color:#1a7a3a;background:#eafaf1;border:1px solid #a8d5ba;border-radius:8px;padding:6px 12px;cursor:pointer;';
   setTimeout(() => {
     clearExtendedBtn.textContent = 'Clear';
-    clearExtendedBtn.style.color = '#c0392b';
-    clearExtendedBtn.style.background = '#fdf0ee';
-    clearExtendedBtn.style.borderColor = '#f5c6c2';
+    clearExtendedBtn.style.cssText = 'font-size:13px;color:#c0392b;background:#fdf0ee;border:1px solid #f5c6c2;border-radius:8px;padding:6px 12px;cursor:pointer;';
   }, 2500);
   if (window._applyAccessLevel) window._applyAccessLevel();
   if (window.renderExtendedStore) window.renderExtendedStore();
