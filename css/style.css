@@ -2065,6 +2065,15 @@ body.pb-enabled .divider::after {
   font-size: 15px;
   font-weight: 700;
   color: var(--ds-txt);
+  margin-bottom: 2px;
+}
+
+.ext-store-pack-label {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--ds-acc);
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
   margin-bottom: 4px;
 }
 
