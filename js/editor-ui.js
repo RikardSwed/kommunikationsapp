@@ -1122,13 +1122,14 @@ function renderModeContent() {
         const isFreeInPro = isPro && (item.bundle === 'free' || !item.bundle);
         const isLocked = readOnly || isFreeInPro;
         const rowClass = isFreeInPro ? 'card-row card-row--inherited' : 'card-row';
-        const lockBadge = isFreeInPro ? `<span class="card-inherited-badge" title="From Free bundle — edit in Free view">Free</span>` : '';
         return `
         <div class="${rowClass}" data-index="${i}">
-          ${lockBadge}
           <textarea class="card-ta" data-field="q" rows="2" ${isLocked ? 'readonly' : ''} placeholder="${frontLabel}...">${escHtml(item.q||item.front||'')}</textarea>
           <textarea class="card-ta" data-field="a" rows="2" ${isLocked ? 'readonly' : ''} placeholder="${backLabel}...">${escHtml(item.a||item.back||'')}</textarea>
-          ${!isLocked ? `<button class="icon-btn danger card-del" data-index="${i}" title="Remove">&#x2715;</button>` : '<span></span>'}
+          ${isFreeInPro
+            ? `<span class="card-inherited-badge" title="From Free bundle — edit in Free view">Free</span>`
+            : !readOnly ? `<button class="icon-btn danger card-del" data-index="${i}" title="Remove">&#x2715;</button>` : '<span></span>'
+          }
         </div>`;
       }).join('')}
       ${!readOnly ? `<button class="btn btn--ghost add-card-btn" style="width:100%;margin-top:8px;">+ Add ${mode.cardLabel.toLowerCase()}</button>` : ''}

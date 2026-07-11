@@ -360,3 +360,211 @@ document.getElementById('flowCloseBtn').addEventListener('click', ()=>closeTrain
 document.getElementById('flowSettingsBtn').addEventListener('click', ()=>document.getElementById('settingsOverlay').classList.add('open'));
 registerMode('modeFlow', showFlow);
 
+
+// ─── CHALLENGES MODE ──────────────────────────────────────────────────────────
+
+let challStrategies = [], challStratIdx = 0, challInputIdx = 0;
+let challFlipped = false, challAnimating = false;
+
+function showChallenges() {
+  const raw = challengesCollections[activeCollectionKey] || [];
+  challStrategies = window.filterInputsByBundle
+    ? raw.map(s => ({ ...s, inputs: window.filterInputsByBundle(s.inputs, activeCollectionKey) })).filter(s => s.inputs.length)
+    : raw;
+  if (!challStrategies.length) return;
+  challStratIdx = 0; challInputIdx = 0;
+  navToTraining('challScreen');
+  challRender();
+}
+
+function challRender() {
+  const s = challStrategies[challStratIdx];
+  const inp = s.inputs[challInputIdx];
+  document.getElementById('challName').textContent    = s.name;
+  document.getElementById('challFrontText').textContent = inp.q;
+  document.getElementById('challBackText').textContent  = inp.a;
+  document.getElementById('challCounter').textContent  = `${challStratIdx + 1} / ${challStrategies.length}`;
+  document.getElementById('challSubCounter').textContent = `${challInputIdx + 1} / ${s.inputs.length}`;
+  challFlipFn(false, false);
+  if (window.alRender) { window.alRender('al-chall-front', window.alKey('challScreen', s.name, challInputIdx, 'front')); window.alRender('al-chall-back', window.alKey('challScreen', s.name, challInputIdx, 'back')); }
+  if (window.fbRender) { window.fbRender('fb-chall-front', fbKey('challScreen', s.name, challInputIdx, 'front')); window.fbRender('fb-chall-back', fbKey('challScreen', s.name, challInputIdx, 'back')); }
+}
+
+function challFlipFn(val, animate = true) {
+  if (val && !challFlipped && window.progCardFlipped) progCardFlipped();
+  challFlipped = val;
+  const ci = document.getElementById('challCardInner');
+  ci.style.transition = animate ? 'transform 0.4s ease' : 'none';
+  ci.classList.toggle('flipped', challFlipped);
+}
+
+function challTrig(dir, cb) {
+  if (challAnimating) return; challAnimating = true;
+  const card = document.getElementById('challCard');
+  card.classList.add('swipe-' + dir);
+  setTimeout(() => { card.classList.remove('swipe-' + dir); cb(); challAnimating = false; }, 220);
+}
+
+function challNext()       { challTrig('left',  () => { challStratIdx = (challStratIdx + 1) % challStrategies.length; challInputIdx = 0; challRender(); }); }
+function challPrev()       { challTrig('right', () => { challStratIdx = (challStratIdx - 1 + challStrategies.length) % challStrategies.length; challInputIdx = 0; challRender(); }); }
+function challNextInput()  { challTrig('up',    () => { const s = challStrategies[challStratIdx]; challInputIdx = (challInputIdx + 1) % s.inputs.length; challRender(); }); }
+function challPrevInput()  { challTrig('down',  () => { const s = challStrategies[challStratIdx]; challInputIdx = (challInputIdx - 1 + s.inputs.length) % s.inputs.length; challRender(); }); }
+
+const challCard = document.getElementById('challCard');
+if (challCard) {
+  let cTx=0,cTy=0,cTt=0,cMov=false;
+  challCard.addEventListener('touchstart',e=>{cTx=e.touches[0].clientX;cTy=e.touches[0].clientY;cTt=Date.now();cMov=false;e.preventDefault();},{passive:false});
+  challCard.addEventListener('touchmove', e=>{if(Math.abs(e.touches[0].clientX-cTx)>10||Math.abs(e.touches[0].clientY-cTy)>10)cMov=true;e.preventDefault();},{passive:false});
+  challCard.addEventListener('touchend',  e=>{
+    e.preventDefault();
+    const dx=e.changedTouches[0].clientX-cTx,dy=e.changedTouches[0].clientY-cTy,adx=Math.abs(dx),ady=Math.abs(dy);
+    if(!cMov&&Date.now()-cTt<500){challFlipFn(!challFlipped);return;}
+    if(cMov&&adx>40&&adx>ady){dx>0?challPrev():challNext();return;}
+    if(cMov&&ady>40&&ady>adx){dy>0?challPrevInput():challNextInput();return;}
+  },{passive:false});
+  challCard.addEventListener('click', ()=>challFlipFn(!challFlipped));
+}
+document.getElementById('challPrevBtn')      ?.addEventListener('click', challPrev);
+document.getElementById('challNextBtn')      ?.addEventListener('click', challNext);
+document.getElementById('challPrevInputBtn') ?.addEventListener('click', challPrevInput);
+document.getElementById('challNextInputBtn') ?.addEventListener('click', challNextInput);
+document.getElementById('challCloseBtn')     ?.addEventListener('click', ()=>closeTraining('challScreen'));
+document.getElementById('challSettingsBtn')  ?.addEventListener('click', ()=>document.getElementById('settingsOverlay').classList.add('open'));
+registerMode('modeChallenges', showChallenges);
+
+// ─── MINDSET MODE ─────────────────────────────────────────────────────────────
+
+let mindStrategies = [], mindStratIdx = 0, mindInputIdx = 0;
+let mindFlipped = false, mindAnimating = false;
+
+function showMindset() {
+  const raw = mindsetCollections[activeCollectionKey] || [];
+  mindStrategies = window.filterInputsByBundle
+    ? raw.map(s => ({ ...s, inputs: window.filterInputsByBundle(s.inputs, activeCollectionKey) })).filter(s => s.inputs.length)
+    : raw;
+  if (!mindStrategies.length) return;
+  mindStratIdx = 0; mindInputIdx = 0;
+  navToTraining('mindScreen');
+  mindRender();
+}
+
+function mindRender() {
+  const s = mindStrategies[mindStratIdx];
+  const inp = s.inputs[mindInputIdx];
+  document.getElementById('mindName').textContent      = s.name;
+  document.getElementById('mindFrontText').textContent = inp.q;
+  document.getElementById('mindBackText').textContent  = inp.a;
+  document.getElementById('mindCounter').textContent   = `${mindStratIdx + 1} / ${mindStrategies.length}`;
+  document.getElementById('mindSubCounter').textContent = `${mindInputIdx + 1} / ${s.inputs.length}`;
+  mindFlipFn(false, false);
+  if (window.alRender) { window.alRender('al-mind-front', window.alKey('mindScreen', s.name, mindInputIdx, 'front')); window.alRender('al-mind-back', window.alKey('mindScreen', s.name, mindInputIdx, 'back')); }
+  if (window.fbRender) { window.fbRender('fb-mind-front', fbKey('mindScreen', s.name, mindInputIdx, 'front')); window.fbRender('fb-mind-back', fbKey('mindScreen', s.name, mindInputIdx, 'back')); }
+}
+
+function mindFlipFn(val, animate = true) {
+  if (val && !mindFlipped && window.progCardFlipped) progCardFlipped();
+  mindFlipped = val;
+  const ci = document.getElementById('mindCardInner');
+  ci.style.transition = animate ? 'transform 0.4s ease' : 'none';
+  ci.classList.toggle('flipped', mindFlipped);
+}
+
+function mindTrig(dir, cb) {
+  if (mindAnimating) return; mindAnimating = true;
+  const card = document.getElementById('mindCard');
+  card.classList.add('swipe-' + dir);
+  setTimeout(() => { card.classList.remove('swipe-' + dir); cb(); mindAnimating = false; }, 220);
+}
+
+function mindNext()       { mindTrig('left',  () => { mindStratIdx = (mindStratIdx + 1) % mindStrategies.length; mindInputIdx = 0; mindRender(); }); }
+function mindPrev()       { mindTrig('right', () => { mindStratIdx = (mindStratIdx - 1 + mindStrategies.length) % mindStrategies.length; mindInputIdx = 0; mindRender(); }); }
+function mindNextInput()  { mindTrig('up',    () => { const s = mindStrategies[mindStratIdx]; mindInputIdx = (mindInputIdx + 1) % s.inputs.length; mindRender(); }); }
+function mindPrevInput()  { mindTrig('down',  () => { const s = mindStrategies[mindStratIdx]; mindInputIdx = (mindInputIdx - 1 + s.inputs.length) % s.inputs.length; mindRender(); }); }
+
+const mindCard = document.getElementById('mindCard');
+if (mindCard) {
+  let mTx=0,mTy=0,mTt=0,mMov=false;
+  mindCard.addEventListener('touchstart',e=>{mTx=e.touches[0].clientX;mTy=e.touches[0].clientY;mTt=Date.now();mMov=false;e.preventDefault();},{passive:false});
+  mindCard.addEventListener('touchmove', e=>{if(Math.abs(e.touches[0].clientX-mTx)>10||Math.abs(e.touches[0].clientY-mTy)>10)mMov=true;e.preventDefault();},{passive:false});
+  mindCard.addEventListener('touchend',  e=>{
+    e.preventDefault();
+    const dx=e.changedTouches[0].clientX-mTx,dy=e.changedTouches[0].clientY-mTy,adx=Math.abs(dx),ady=Math.abs(dy);
+    if(!mMov&&Date.now()-mTt<500){mindFlipFn(!mindFlipped);return;}
+    if(mMov&&adx>40&&adx>ady){dx>0?mindPrev():mindNext();return;}
+    if(mMov&&ady>40&&ady>adx){dy>0?mindPrevInput():mindNextInput();return;}
+  },{passive:false});
+  mindCard.addEventListener('click', ()=>mindFlipFn(!mindFlipped));
+}
+document.getElementById('mindPrevBtn')      ?.addEventListener('click', mindPrev);
+document.getElementById('mindNextBtn')      ?.addEventListener('click', mindNext);
+document.getElementById('mindPrevInputBtn') ?.addEventListener('click', mindPrevInput);
+document.getElementById('mindNextInputBtn') ?.addEventListener('click', mindNextInput);
+document.getElementById('mindCloseBtn')     ?.addEventListener('click', ()=>closeTraining('mindScreen'));
+document.getElementById('mindSettingsBtn')  ?.addEventListener('click', ()=>document.getElementById('settingsOverlay').classList.add('open'));
+registerMode('modeMindset', showMindset);
+
+// ─── COLLECTIONS MODE ─────────────────────────────────────────────────────────
+
+let collStrategies = [], collStratIdx = 0, collInputIdx = 0;
+let collFlipped = false, collAnimating = false;
+
+function showCollection() {
+  const raw = collections[activeCollectionKey] || [];
+  collStrategies = window.filterInputsByBundle
+    ? raw.map(s => ({ ...s, inputs: window.filterInputsByBundle(s.inputs, activeCollectionKey) })).filter(s => s.inputs.length)
+    : raw;
+  if (!collStrategies.length) return;
+  collStratIdx = 0; collInputIdx = 0;
+  navToTraining('collScreen');
+  collRender();
+}
+
+function collRender() {
+  const s = collStrategies[collStratIdx];
+  const inp = s.inputs[collInputIdx];
+  document.getElementById('collName').textContent      = s.name;
+  document.getElementById('collFrontText').textContent = inp.q;
+  document.getElementById('collBackText').textContent  = inp.a;
+  document.getElementById('collCounter').textContent   = `${collStratIdx + 1} / ${collStrategies.length}`;
+  document.getElementById('collSubCounter').textContent = `${collInputIdx + 1} / ${s.inputs.length}`;
+  collFlipFn(false, false);
+  if (window.alRender) { window.alRender('al-coll-front', window.alKey('collScreen', s.name, collInputIdx, 'front')); window.alRender('al-coll-back', window.alKey('collScreen', s.name, collInputIdx, 'back')); }
+  if (window.fbRender) { window.fbRender('fb-coll-front', fbKey('collScreen', s.name, collInputIdx, 'front')); window.fbRender('fb-coll-back', fbKey('collScreen', s.name, collInputIdx, 'back')); }
+}
+
+function collFlipFn(val, animate = true) {
+  if (val && !collFlipped && window.progCardFlipped) progCardFlipped();
+  collFlipped = val;
+  const ci = document.getElementById('collCardInner');
+  ci.style.transition = animate ? 'transform 0.4s ease' : 'none';
+  ci.classList.toggle('flipped', collFlipped);
+}
+
+function collTrig(dir, cb) {
+  if (collAnimating) return; collAnimating = true;
+  const card = document.getElementById('collCard');
+  card.classList.add('swipe-' + dir);
+  setTimeout(() => { card.classList.remove('swipe-' + dir); cb(); collAnimating = false; }, 220);
+}
+
+function collNext()       { collTrig('left',  () => { collStratIdx = (collStratIdx + 1) % collStrategies.length; collInputIdx = 0; collRender(); }); }
+function collPrev()       { collTrig('right', () => { collStratIdx = (collStratIdx - 1 + collStrategies.length) % collStrategies.length; collInputIdx = 0; collRender(); }); }
+function collNextInput()  { collTrig('up',    () => { const s = collStrategies[collStratIdx]; collInputIdx = (collInputIdx + 1) % s.inputs.length; collRender(); }); }
+function collPrevInput()  { collTrig('down',  () => { const s = collStrategies[collStratIdx]; collInputIdx = (collInputIdx - 1 + s.inputs.length) % s.inputs.length; collRender(); }); }
+
+const collCard = document.getElementById('collCard');
+if (collCard) {
+  let coTx=0,coTy=0,coTt=0,coMov=false;
+  collCard.addEventListener('touchstart',e=>{coTx=e.touches[0].clientX;coTy=e.touches[0].clientY;coTt=Date.now();coMov=false;e.preventDefault();},{passive:false});
+  collCard.addEventListener('touchmove', e=>{if(Math.abs(e.touches[0].clientX-coTx)>10||Math.abs(e.touches[0].clientY-coTy)>10)coMov=true;e.preventDefault();},{passive:false});
+  collCard.addEventListener('touchend',  e=>{
+    e.preventDefault();
+    const dx=e.changedTouches[0].clientX-coTx,dy=e.changedTouches[0].clientY-coTy,adx=Math.abs(dx),ady=Math.abs(dy);
+    if(!coMov&&Date.now()-coTt<500){collFlipFn(!collFlipped);return;}
+    if(coMov&&adx>40&&adx>ady){dx>0?collPrev():collNext();return;}
+    if(coMov&&ady>40&&ady>adx){dy>0?collPrevInput():collNextInput();return;}
+  },{passive:false});
+  collCard.addEventListener('click', ()=>collFlipFn(!collFlipped));
+}
+document.getElementById('collCloseBtn')     ?.addEventListener('click', ()=>closeTraining('collScreen'));
+registerMode('modeCollections', showCollection);
