@@ -4,7 +4,7 @@
 // app.js — All application logic for Communication Trainer
 // Depends on: data.js and multiStepData.js (must be loaded first)
 
-const VERSION = 'v1.24.1';
+const VERSION = 'v1.24.2';
 
 // Pack icon map — global so both dashboard and favorites can use it
 const PACK_ICONS = {

@@ -22,6 +22,15 @@ const collections = {
         { q: "A neighbour complains about something you do regularly", a: '"You might be right that it\'s been more than usual."', bundle: 'domestic' },
         { q: "A family member says you\'re being selfish", a: '"I understand it looks that way. I see it differently, but I hear you."', bundle: 'domestic' },
         { q: "A partner criticises how you handled something at home", a: '"You could have a point. What would have worked better for you?"', bundle: 'domestic' },
+        { q: "A client questions your professional judgement", a: '"You may have a point — I\'d like to hear more about your concern."', bundle: 'workplace' },
+        { q: "A colleague says you\'re overcomplicating things", a: '"That\'s possible. What would a simpler approach look like?\'', bundle: 'workplace' },
+        { q: "A partner says you\'re always distracted", a: '"You might be right — I haven\'t been fully present."', bundle: 'domestic' },
+        { q: "A parent says you\'re not visiting enough", a: '"You could have a point. I know it\'s felt like a long time."', bundle: 'domestic' },
+        { q: "A sibling says you\'re the favourite", a: '"I can see why it might look that way from where you are."', bundle: 'domestic' },
+        { q: "A friend says you\'ve been distant", a: '"You might be right. I\'ve had a lot on."', bundle: 'domestic' },
+        { q: "A partner says you don\'t appreciate them", a: '"It\'s possible I haven\'t been showing it enough."', bundle: 'domestic' },
+        { q: "A family member says you\'re too private", a: '"That\'s fair — I do tend to keep things in."', bundle: 'domestic' },
+        { q: "A friend says you\'re hard to make plans with", a: '"You might be right. My schedule has been unpredictable."', bundle: 'domestic' },
       ]
     },
     {
@@ -42,6 +51,15 @@ const collections = {
         { q: "A partner says you\'re not listening",       a: '"What is it I do that feels like not listening to you?"', bundle: 'domestic' },
         { q: "A family member says you\'re never available", a: '"What would being more available look like to you?"', bundle: 'domestic' },
         { q: "A friend says you\'ve changed",              a: '"What have you noticed that makes you say that?"', bundle: 'domestic' },
+        { q: "A senior colleague criticises your approach without details", a: '"I want to understand your concern — what specifically would you change?"', bundle: 'workplace' },
+        { q: "A client says they expected more", a: '"What would \'more\' have looked like to you?"', bundle: 'workplace' },
+        { q: "A partner says you\'re not making an effort", a: '"What would making an effort look like to you?"', bundle: 'domestic' },
+        { q: "A parent says you\'ve changed", a: '"In what way have you noticed I\'ve changed?"', bundle: 'domestic' },
+        { q: "A friend says you\'re not supportive", a: '"What would feeling supported by me look like?"', bundle: 'domestic' },
+        { q: "A sibling says you always take their parents\' side", a: '"Can you give me an example of when I did that?"', bundle: 'domestic' },
+        { q: "A partner says you never initiate", a: '"What kind of initiating would feel meaningful to you?"', bundle: 'domestic' },
+        { q: "A family member says you don\'t take things seriously", a: '"What have you noticed that makes you feel that way?"', bundle: 'domestic' },
+        { q: "A friend says you always cancel", a: '"How many times have you felt I\'ve let you down recently?"', bundle: 'domestic' },
       ]
     },
     {
@@ -62,6 +80,15 @@ const collections = {
         { q: "A partner says you forgot a commitment",        a: '"You\'re right. I forgot. That was careless of me."', bundle: 'domestic' },
         { q: "A family member says you were short with them", a: '"You\'re right, I was. That\'s on me."', bundle: 'domestic' },
         { q: "A friend says you\'ve been flaky lately",       a: '"Yeah, I have been. I\'m going to fix that."', bundle: 'domestic' },
+        { q: "A colleague says you\'ve been less engaged lately", a: '"You\'re right, I have been distracted. I\'ll address that."', bundle: 'workplace' },
+        { q: "A manager says your presentation wasn\'t well-prepared", a: '"You\'re right. I should have put in more time."', bundle: 'workplace' },
+        { q: "A partner says you left the kitchen messy again", a: '"You\'re right, I did. I\'ll clean it now."', bundle: 'domestic' },
+        { q: "A friend says you never call first", a: '"You\'re right — I\'ve been bad at that."', bundle: 'domestic' },
+        { q: "A partner says you forgot their birthday", a: '"I did. That was thoughtless. I\'m sorry."', bundle: 'domestic' },
+        { q: "A sibling says you always make it about yourself", a: '"I can do that. You\'re right."', bundle: 'domestic' },
+        { q: "A parent says you were rude on the phone", a: '"I was short with you. That wasn\'t fair."', bundle: 'domestic' },
+        { q: "A partner says you snapped at them", a: '"I did. That was out of order."', bundle: 'domestic' },
+        { q: "A friend says you dominated the conversation", a: '"You\'re right — I didn\'t let you talk. I\'ll be more conscious of that."', bundle: 'domestic' },
       ]
     },
     {
@@ -82,6 +109,15 @@ const collections = {
         { q: "A partner keeps bringing up a resolved argument", a: '"We\'ve talked about this and I\'d like to move forward."', bundle: 'domestic' },
         { q: "A family member pressures you about your choices", a: '"This is my decision." — warmly but without wavering.', bundle: 'domestic' },
         { q: "A neighbour repeatedly makes the same complaint", a: '"I\'ve heard your concern." — calm, same tone each time.', bundle: 'domestic' },
+        { q: "A client keeps asking for extras not in the contract", a: '"That\'s not in our agreement." — same sentence, each request.', bundle: 'workplace' },
+        { q: "A manager keeps reassigning your tasks to others", a: '"I\'d like to stay on this." — calmly each time it happens.', bundle: 'workplace' },
+        { q: "A partner keeps bringing up the same old argument", a: '"I\'ve said what I have to say about this. I\'d like to move forward."', bundle: 'domestic' },
+        { q: "A parent keeps pushing their opinion on a life choice", a: '"I\'ve heard you. This is my decision to make."', bundle: 'domestic' },
+        { q: "A sibling keeps asking you to take their side in a dispute", a: '"I\'m not going to take sides. I care about both of you."', bundle: 'domestic' },
+        { q: "A friend keeps asking why you won\'t do something", a: '"It\'s not something I want to do." — same answer each time.', bundle: 'domestic' },
+        { q: "A partner pressures you to agree when you\'re not ready", a: '"I\'m not ready to decide yet." — calmly, as many times as needed.', bundle: 'domestic' },
+        { q: "A family member insists you were wrong in a situation", a: '"I see it differently." — repeated calmly without elaboration.', bundle: 'domestic' },
+        { q: "A neighbour keeps asking you to do them favours", a: '"That doesn\'t work for me." — consistent, no apology.', bundle: 'domestic' },
       ]
     }
   ],

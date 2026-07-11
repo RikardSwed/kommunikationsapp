@@ -363,12 +363,9 @@ function getActiveBundles(packKey) {
     catch { return []; }
   })();
 
-  // Check if a specific extended bundle is owned
-  // Extended bundles are stored as '{packKey}::{bundleId}' in ds_extended_owned
   const isExtendedBundleOwned = (bundleId) =>
     level === 'complete' || extOwned.includes(`${packKey}::${bundleId}`);
 
-  // Tiers accessible at each level
   const canUseTier = (tier, bundleId) => {
     if (tier === 'free') return true;
     if (tier === 'pro' || tier === 'pro-opt') return level === 'pro' || level === 'complete';
@@ -376,41 +373,41 @@ function getActiveBundles(packKey) {
     return false;
   };
 
-  // User-saved bundle state (toggleable bundles)
+  // saved is an array of active opt-in bundle IDs
+  // 'pro:off' is a special marker meaning the user has explicitly turned pro off
   const saved = getBundleState(packKey) || [];
+  const proOffMarker = saved.includes('pro:off');
 
-  // Always-on: free and pro (auto, not toggleable)
-  const autoActive = defs
-    .filter(b => (b.tier === 'free' || b.tier === 'pro') && canUseTier(b.tier, b.id))
-    .map(b => b.id);
+  // Build base: free and/or pro (auto)
+  const hasProBundle = defs.some(b => b.tier === 'pro');
+  const hasFreeBundle = defs.some(b => b.tier === 'free');
+  const isPro = canUseTier('pro', 'pro');
 
-  // Pro replaces free — if pro is auto-active, remove free from base
-  const hasProAuto = defs.some(b => b.tier === 'pro' && canUseTier(b.tier, b.id));
-  const hasFree    = defs.some(b => b.tier === 'free');
-  let base = hasProAuto && hasFree
-    ? autoActive.filter(id => { const def = defs.find(b => b.id === id); return def && def.tier !== 'free'; })
-    : autoActive;
-
-  // BUT if user has toggled pro OFF (saved does NOT include 'pro'), respect that
-  // only if at least one other toggleable bundle is active
-  if (hasProAuto && saved.length > 0 && !saved.includes('pro')) {
-    const otherActive = defs.some(b =>
-      b.id !== 'pro' && (b.tier === 'pro-opt' || b.tier === 'extended') &&
-      canUseTier(b.tier, b.id) && saved.includes(b.id)
-    );
-    if (otherActive) {
-      base = base.filter(id => id !== 'pro');
-    }
+  let base = [];
+  if (isPro && hasProBundle) {
+    // Pro is available — include pro unless explicitly turned off
+    if (!proOffMarker) base.push('pro');
+    // Free is excluded when pro is on (pro includes free via filter)
+  } else if (hasFreeBundle) {
+    base.push('free');
   }
 
-  // Toggleable: pro-opt and owned extended, if saved
+  // If pro was turned off, we need at least one other bundle active
+  // (enforced in renderBundleSection toggle handler)
+
+  // Toggleable: pro-opt and owned extended, if in saved
   const toggleable = defs.filter(b =>
     (b.tier === 'pro-opt' || b.tier === 'extended') &&
     canUseTier(b.tier, b.id) &&
     saved.includes(b.id)
   ).map(b => b.id);
 
-  return [...new Set([...base, ...toggleable])];
+  const result = [...new Set([...base, ...toggleable])];
+  // Fallback: om listan är tom (ska inte hända normalt), visa free eller pro
+  if (result.length === 0) {
+    return defs.some(b => b.tier === 'pro' && canUseTier(b.tier, b.id)) ? ['pro'] : ['free'];
+  }
+  return result;
 }
 
 // Filter inputs based on active bundles
@@ -526,19 +523,20 @@ window.renderBundleSection = function(containerEl, packKey) {
           toggle.addEventListener('change', function() {
             const cur = getBundleState(packKey) || [];
             if (!this.checked) {
-              // Must have at least one other bundle active
+              // Can only turn pro off if at least one opt-in or extended bundle is active
               const otherActive = defs.some(b =>
-                b.id !== bundle.id &&
                 (b.tier === 'pro-opt' || b.tier === 'extended') &&
                 canUseTier(b.tier, b.id) &&
                 cur.includes(b.id)
               );
               if (!otherActive) { this.checked = true; return; }
+              // Add pro:off marker, remove any previous pro:off
+              const newState = [...cur.filter(id => id !== 'pro:off'), 'pro:off'];
+              setBundleState(packKey, newState);
+            } else {
+              // Remove pro:off marker to re-enable pro
+              setBundleState(packKey, cur.filter(id => id !== 'pro:off'));
             }
-            const newState = this.checked
-              ? [...new Set([...cur, bundle.id])]
-              : cur.filter(id => id !== bundle.id);
-            setBundleState(packKey, newState);
           });
         }
       }
@@ -559,22 +557,22 @@ window.renderBundleSection = function(containerEl, packKey) {
         toggle.addEventListener('change', function() {
           const cur = getBundleState(packKey) || [];
           if (!this.checked) {
-            // Must have at least one bundle active (pro or another opt)
-            const otherActive = defs.some(b =>
+            // Must have at least one bundle still active (pro unless turned off, or another opt-in)
+            const proIsOn = !cur.includes('pro:off') && defs.some(b => b.tier === 'pro' && canUseTier(b.tier, b.id));
+            const otherOptActive = defs.some(b =>
               b.id !== bundle.id &&
-              (b.tier === 'pro' || b.tier === 'pro-opt' || b.tier === 'extended') &&
+              (b.tier === 'pro-opt' || b.tier === 'extended') &&
               canUseTier(b.tier, b.id) &&
-              (b.tier === 'pro' ? active.includes(b.id) : cur.includes(b.id))
+              cur.includes(b.id)
             );
-            if (!otherActive) { this.checked = true; return; }
+            if (!proIsOn && !otherOptActive) { this.checked = true; return; }
+            setBundleState(packKey, cur.filter(id => id !== bundle.id));
+          } else {
+            setBundleState(packKey, [...new Set([...cur, bundle.id])]);
           }
-          const newState = this.checked
-            ? [...new Set([...cur, bundle.id])]
-            : cur.filter(id => id !== bundle.id);
-          setBundleState(packKey, newState);
         });
       }
-    }
+    }  // end else if pro-opt/extended
 
     if (row.innerHTML) section.appendChild(row);
   });
@@ -991,20 +989,18 @@ const clearExtendedBtn = document.getElementById('clearExtendedBtn');
 if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
   // Rensa purchases
   localStorage.removeItem('ds_extended_owned');
-  // Rensa aktiverade extended bundles per pack
+  // Rensa ALLA bundle states (pro:off markör och aktiverade extended bundles)
   Object.keys(localStorage).filter(k => k.startsWith('bundles:')).forEach(k => {
     try {
       const cur = JSON.parse(localStorage.getItem(k)) || [];
-      const filtered = cur.filter(id => {
-        // Behåll bara pro-opt bundles (t.ex. workplace), ta bort extended
-        return id !== 'domestic';
-      });
+      // Ta bort extended bundles och pro:off markör, behåll workplace och liknande pro-opt
+      const filtered = cur.filter(id => id !== 'domestic' && id !== 'pro:off');
       if (filtered.length) localStorage.setItem(k, JSON.stringify(filtered));
       else localStorage.removeItem(k);
-    } catch(e) {}
+    } catch(e) { localStorage.removeItem(k); }
   });
   // Visuell feedback
-  clearExtendedBtn.textContent = 'Cleared';
+  clearExtendedBtn.textContent = 'Cleared ✓';
   clearExtendedBtn.style.color = '#1a7a3a';
   clearExtendedBtn.style.background = '#eafaf1';
   clearExtendedBtn.style.borderColor = '#a8d5ba';
