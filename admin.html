@@ -560,7 +560,7 @@
   <div class="topbar">
     <button class="btn btn--ghost btn--sm" onclick="window.location.href='index.html'" style="margin-right:8px;" title="Back to app">&larr; App</button>
     <span class="topbar-title" onclick="showHome()" style="cursor:pointer;" title="Back to home">Deckstack — Pack Editor</span>
-    <span class="topbar-version">Editor v1.5.0 · Changes saved automatically</span>
+    <span class="topbar-version">Editor v1.5.1 · Changes saved automatically</span>
   </div>
 
   <!-- Home screen -->
@@ -573,6 +573,7 @@
         <button class="btn btn--ghost btn--sm" id="import-text-btn">Paste from AI</button>
         <button class="btn btn--ghost btn--sm" id="import-json-btn">Import JSON</button>
         <button class="btn btn--primary" onclick="createNewPack()">+ New pack</button>
+        <button class="btn btn--primary" id="new-program-btn">+ New program</button>
       </div>
     </div>
     <div class="pack-columns">
@@ -610,7 +611,6 @@
           <span class="column-hint">Imported or created</span>
         </div>
         <div id="program-list-my"></div>
-        <button class="btn btn--ghost btn--sm" id="new-program-btn" style="margin-top:10px;width:100%;">+ New Program</button>
       </div>
     </div>
   </div>
@@ -698,8 +698,8 @@
   });
 </script>
 <!-- Editor logic -->
-<script src="js/editor-core.js?v=150"></script>
-<script src="js/editor-ui.js?v=150"></script>
+<script src="js/editor-core.js?v=151"></script>
+<script src="js/editor-ui.js?v=151"></script>
 
 </body>
 </html>
