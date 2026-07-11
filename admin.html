@@ -132,7 +132,11 @@
     /* ── EDITOR ── */
     #screen-editor {
       display:               grid;
-      grid-template-rows:    auto auto 1fr;
+      /* 4 rows: pack-header, pack-tags, mode-tabs, mode-content.
+         Was 'auto auto 1fr' with FOUR children, which pushed mode-content
+         into an implicit row and made the whole page scroll — hiding the
+         mode tabs. Now only #mode-content scrolls. */
+      grid-template-rows:    auto auto auto 1fr;
       height:                100%;
       padding:               0;
       overflow:              hidden;
@@ -560,7 +564,7 @@
   <div class="topbar">
     <button class="btn btn--ghost btn--sm" onclick="window.location.href='index.html'" style="margin-right:8px;" title="Back to app">&larr; App</button>
     <span class="topbar-title" onclick="showHome()" style="cursor:pointer;" title="Back to home">Deckstack — Pack Editor</span>
-    <span class="topbar-version">Editor v1.5.1 · Changes saved automatically</span>
+    <span class="topbar-version">Editor v1.5.2 · Changes saved automatically</span>
   </div>
 
   <!-- Home screen -->
