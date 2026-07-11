@@ -412,7 +412,11 @@ window.filterInputsByBundle = function(inputs, packKey) {
   if (!defs) return inputs;
   const active = getActiveBundles(packKey);
   if (!active) return inputs;
-  return inputs.filter(inp => !inp.bundle || active.includes(inp.bundle));
+  // Stable sort by bundle order in BUNDLE_DEFS (untagged cards count as free)
+  const order = id => defs.findIndex(b => b.id === id);
+  return inputs
+    .filter(inp => !inp.bundle || active.includes(inp.bundle))
+    .sort((a, b) => order(a.bundle) - order(b.bundle));
 };
 
 window.filterCardsByBundle = function(cards, packKey) {
@@ -420,7 +424,10 @@ window.filterCardsByBundle = function(cards, packKey) {
   if (!defs) return cards;
   const active = getActiveBundles(packKey);
   if (!active) return cards;
-  return cards.filter(c => !c.bundle || active.includes(c.bundle));
+  const order = id => defs.findIndex(b => b.id === id);
+  return cards
+    .filter(c => !c.bundle || active.includes(c.bundle))
+    .sort((a, b) => order(a.bundle) - order(b.bundle));
 };
 
 // Render Input Bundles section into a settings panel
@@ -500,16 +507,8 @@ window.renderBundleSection = function(containerEl, packKey) {
           toggle.addEventListener('change', function() {
             const cur = getBundleState(packKey) || [];
             if (!this.checked) {
-              // Can only turn pro off if at least one opt-in or extended bundle is active
-              const otherActive = defs.some(b =>
-                (b.tier === 'pro-opt' || b.tier === 'extended') &&
-                canUseTier(b.tier, b.id) &&
-                cur.includes(b.id)
-              );
-              if (!otherActive) { this.checked = true; return; }
-              // Add pro:off marker, remove any previous pro:off
-              const newState = [...cur.filter(id => id !== 'pro:off'), 'pro:off'];
-              setBundleState(packKey, newState);
+              // Pro can always be turned off — the free bundle remains as base
+              setBundleState(packKey, [...cur.filter(id => id !== 'pro:off'), 'pro:off']);
             } else {
               // Remove pro:off marker to re-enable pro
               setBundleState(packKey, cur.filter(id => id !== 'pro:off'));
@@ -534,15 +533,7 @@ window.renderBundleSection = function(containerEl, packKey) {
         toggle.addEventListener('change', function() {
           const cur = getBundleState(packKey) || [];
           if (!this.checked) {
-            // Must have at least one bundle still active (pro unless turned off, or another opt-in)
-            const proIsOn = !cur.includes('pro:off') && defs.some(b => b.tier === 'pro' && canUseTier(b.tier, b.id));
-            const otherOptActive = defs.some(b =>
-              b.id !== bundle.id &&
-              (b.tier === 'pro-opt' || b.tier === 'extended') &&
-              canUseTier(b.tier, b.id) &&
-              cur.includes(b.id)
-            );
-            if (!proIsOn && !otherOptActive) { this.checked = true; return; }
+            // Any bundle can be turned off — the free bundle remains as base
             setBundleState(packKey, cur.filter(id => id !== bundle.id));
           } else {
             setBundleState(packKey, [...new Set([...cur, bundle.id])]);
