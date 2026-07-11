@@ -373,29 +373,24 @@ function getActiveBundles(packKey) {
     return false;
   };
 
-  // saved is an array of active opt-in bundle IDs
-  // 'pro:off' is a special marker meaning the user has explicitly turned pro off
   const saved = getBundleState(packKey) || [];
   const proOffMarker = saved.includes('pro:off');
-
-  // Build base: free and/or pro (auto)
   const hasProBundle = defs.some(b => b.tier === 'pro');
   const hasFreeBundle = defs.some(b => b.tier === 'free');
   const isPro = canUseTier('pro', 'pro');
 
+  // Base bundles (auto, not toggleable)
   let base = [];
-  if (isPro && hasProBundle) {
-    // Pro is available — include pro unless explicitly turned off
-    if (!proOffMarker) base.push('pro');
-    // Free is excluded when pro is on (pro includes free via filter)
-  } else if (hasFreeBundle) {
-    base.push('free');
+  if (isPro && hasProBundle && !proOffMarker) {
+    // Pro active: include both free and pro so filter matches both
+    if (hasFreeBundle) base.push('free');
+    base.push('pro');
+  } else {
+    // Freemium or pro turned off: only free
+    if (hasFreeBundle) base.push('free');
   }
 
-  // If pro was turned off, we need at least one other bundle active
-  // (enforced in renderBundleSection toggle handler)
-
-  // Toggleable: pro-opt and owned extended, if in saved
+  // Opt-in bundles (pro-opt and owned extended) if saved
   const toggleable = defs.filter(b =>
     (b.tier === 'pro-opt' || b.tier === 'extended') &&
     canUseTier(b.tier, b.id) &&
@@ -403,48 +398,30 @@ function getActiveBundles(packKey) {
   ).map(b => b.id);
 
   const result = [...new Set([...base, ...toggleable])];
-  // Fallback: om listan är tom (ska inte hända normalt), visa free eller pro
   if (result.length === 0) {
-    return defs.some(b => b.tier === 'pro' && canUseTier(b.tier, b.id)) ? ['pro'] : ['free'];
+    return isPro && hasProBundle ? ['free', 'pro'] : ['free'];
   }
   return result;
 }
 
-// Filter inputs based on active bundles
-// Filter inputs based on active bundles
-// - free: always shown
-// - pro: shown when pro is active (also shows free automatically)
-// - pro-opt / extended: shown when that bundle is toggled on (additive)
-// Bakåtkompatibelt: kort utan bundle-fält visas alltid
+// Filter inputs/cards by active bundle IDs.
+// Only shows cards whose bundle is in the active list.
+// Cards without a bundle field are always shown (backwards compatible).
 window.filterInputsByBundle = function(inputs, packKey) {
   const defs = BUNDLE_DEFS[packKey];
   if (!defs) return inputs;
   const active = getActiveBundles(packKey);
-  const hasProActive = active.includes('pro');
-  return inputs.filter(inp => {
-    if (!inp.bundle) return true;
-    if (inp.bundle === 'free') return true;
-    if (inp.bundle === 'pro' && hasProActive) return true;
-    if (active.includes(inp.bundle)) return true;
-    return false;
-  });
+  if (!active) return inputs;
+  return inputs.filter(inp => !inp.bundle || active.includes(inp.bundle));
 };
 
-// Generic version for memorize cards and sequences steps
 window.filterCardsByBundle = function(cards, packKey) {
   const defs = BUNDLE_DEFS[packKey];
   if (!defs) return cards;
   const active = getActiveBundles(packKey);
-  const hasProActive = active.includes('pro');
-  return cards.filter(c => {
-    if (!c.bundle) return true;
-    if (c.bundle === 'free') return true;
-    if (c.bundle === 'pro' && hasProActive) return true;
-    if (active.includes(c.bundle)) return true;
-    return false;
-  });
+  if (!active) return cards;
+  return cards.filter(c => !c.bundle || active.includes(c.bundle));
 };
-
 
 // Render Input Bundles section into a settings panel
 // Render Input Bundles section into a settings panel
@@ -989,15 +966,18 @@ const clearExtendedBtn = document.getElementById('clearExtendedBtn');
 if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
   // Rensa purchases
   localStorage.removeItem('ds_extended_owned');
-  // Rensa ALLA bundle states (pro:off markör och aktiverade extended bundles)
-  Object.keys(localStorage).filter(k => k.startsWith('bundles:')).forEach(k => {
+  // Rensa bundle states explicit per känd pack
+  // (Object.keys kan vara opålitlig — vi rensar known packs direkt)
+  const knownPacks = Object.keys(BUNDLE_DEFS);
+  knownPacks.forEach(packKey => {
+    const k = `bundles:${packKey}`;
     try {
       const cur = JSON.parse(localStorage.getItem(k)) || [];
-      // Ta bort extended bundles och pro:off markör, behåll workplace och liknande pro-opt
+      // Ta bort extended bundles och pro:off, behåll pro-opt som workplace
       const filtered = cur.filter(id => id !== 'domestic' && id !== 'pro:off');
       if (filtered.length) localStorage.setItem(k, JSON.stringify(filtered));
       else localStorage.removeItem(k);
-    } catch(e) { localStorage.removeItem(k); }
+    } catch(e) { localStorage.removeItem(`bundles:${packKey}`); }
   });
   // Visuell feedback
   clearExtendedBtn.textContent = 'Cleared ✓';
