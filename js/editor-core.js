@@ -1,7 +1,7 @@
 // editor-core.js — Deckstack Pack Editor
 // Depends on: data.js, challengesData.js, mindsetData.js, multiStepData.js, memorizeData.js
 
-const EDITOR_VERSION = 'v1.4.2';
+const EDITOR_VERSION = 'v1.5.0';
 const STORAGE_KEY    = 'ds_editor_packs';
 const ACTIVE_KEY     = 'ds_editor_active';
 

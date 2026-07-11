@@ -8,9 +8,8 @@ let currentBundle = 'free';
 // ── INIT ──────────────────────────────────────────────────────────────────────
 document.addEventListener('DOMContentLoaded', () => {
   setTimeout(() => {
-    console.log('[Editor] showHome called, appPacks:', loadAppPacks().length);
-    console.log('[Editor] pack-list-app:', document.getElementById('pack-list-app'));
     showHome();
+    bindProgramEditorControls();
   }, 200);
 });
 
@@ -46,7 +45,7 @@ function hideEl(id)  { const e = document.getElementById(id); if (e) e.style.dis
 function setHTML(id, html) { const e = document.getElementById(id); if (e) e.innerHTML = html; }
 
 function showScreen(id) {
-  ['screen-home','screen-editor'].forEach(s => hideEl(s));
+  ['screen-home','screen-editor','screen-program'].forEach(s => hideEl(s));
   showEl(id);
 }
 
@@ -161,25 +160,13 @@ function renderProgramList() {
     });
   });
 
-  // My programs — click shows detail
+  // My programs — click opens editor
   document.querySelectorAll('#program-list-my .program-row').forEach(row => {
     row.style.cursor = 'pointer';
     row.addEventListener('click', e => {
       if (e.target.closest('.prog-del, .prog-export')) return;
       const prog = getAllEditorPrograms()[row.dataset.id];
-      if (!prog) return;
-      const sections = (prog.sections || []).map(s => {
-        const packs = (s.packs || []).map(p => p.label || p.key).join(', ');
-        const cps = s.checkpoint ? ` · <span style="color:var(--acc)">Checkpoint (${s.checkpoint.questions ? s.checkpoint.questions.length : 0} Q)</span>` : '';
-        return `<div style="padding:6px 0;border-bottom:1px solid var(--border);">
-          <div style="font-weight:600;font-size:13px;">${escHtml(s.title)}</div>
-          <div style="font-size:12px;color:var(--txt3);">${escHtml(packs)}${cps}</div>
-        </div>`;
-      }).join('');
-      showInfoModal(prog.title, `
-        <p style="color:var(--txt2);font-size:13px;margin:0 0 12px;">${escHtml(prog.description || '')}</p>
-        ${sections || '<div style="color:var(--txt3);font-size:13px;">No sections yet</div>'}
-      `);
+      if (prog) showProgramEditor(prog);
     });
   });
 }
@@ -208,6 +195,354 @@ function showInfoModal(title, bodyHtml) {
   document.getElementById('info-modal-close').onclick = () => { modal.style.display = 'none'; };
   document.getElementById('info-modal-done').onclick  = () => { modal.style.display = 'none'; };
 }
+
+// ── PROGRAM EDITOR ────────────────────────────────────────────────────────────
+
+let currentProgram = null;
+
+function showProgramEditor(program) {
+  currentProgram = JSON.parse(JSON.stringify(program)); // deep copy
+  showScreen('screen-program');
+  renderProgramEditor();
+}
+
+function renderProgramEditor() {
+  const p = currentProgram;
+  // Header
+  const titleEl = document.getElementById('prog-title-display');
+  if (titleEl) titleEl.textContent = p.title || 'Untitled Program';
+  const descTa = document.getElementById('prog-desc-ta');
+  if (descTa) { descTa.value = p.description || ''; descTa.oninput = () => { p.description = descTa.value; }; }
+  const iconInput = document.getElementById('prog-icon-input');
+  const iconPreview = document.getElementById('prog-icon-preview');
+  if (iconInput) {
+    iconInput.value = p.icon || 'ti-stack';
+    iconInput.oninput = () => {
+      p.icon = iconInput.value.trim();
+      if (iconPreview) iconPreview.innerHTML = `<i class="ti ${p.icon}"></i>`;
+    };
+    if (iconPreview) iconPreview.innerHTML = `<i class="ti ${p.icon || 'ti-stack'}"></i>`;
+  }
+
+  // Sections
+  const area = document.getElementById('prog-sections-area');
+  if (!area) return;
+  area.innerHTML = '';
+  (p.sections || []).forEach((sec, si) => {
+    area.appendChild(buildSectionCard(sec, si));
+  });
+}
+
+function buildSectionCard(sec, si) {
+  const p = currentProgram;
+  const hasCp  = !!sec.checkpoint;
+  const packLabel = sec.packs && sec.packs.length ? sec.packs.map(pk => pk.label || pk.key).join(', ') : '— no pack —';
+
+  const card = document.createElement('div');
+  card.className = 'prog-section-card';
+  card.dataset.si = si;
+
+  card.innerHTML = `
+    <div class="prog-section-header" id="prog-sec-hdr-${si}">
+      <span class="prog-section-num">§${si + 1}</span>
+      <div style="flex:1;min-width:0;">
+        <div class="prog-section-title-display">${escHtml(sec.title || 'Untitled section')}</div>
+        <div class="prog-section-pack-label">${escHtml(packLabel)}</div>
+      </div>
+      ${hasCp ? `<span class="prog-section-cp-badge">Test</span>` : ''}
+      <div class="prog-section-move">
+        ${si > 0 ? `<button class="icon-btn prog-sec-up" data-si="${si}" title="Move up">↑</button>` : ''}
+        ${si < (p.sections.length - 1) ? `<button class="icon-btn prog-sec-down" data-si="${si}" title="Move down">↓</button>` : ''}
+      </div>
+      <button class="icon-btn danger prog-sec-del" data-si="${si}" title="Delete section">&#x2715;</button>
+    </div>
+    <div class="prog-section-body" id="prog-sec-body-${si}" style="display:none;">
+      <div class="field-block">
+        <label class="field-label">Section title</label>
+        <input type="text" class="input" id="sec-title-${si}" value="${escHtml(sec.title || '')}" placeholder="e.g. Chapter 1 — Starting Conversations" />
+      </div>
+      <div class="field-block">
+        <label class="field-label">Pack</label>
+        <select class="select" id="sec-pack-${si}">
+          <option value="">— None —</option>
+          ${buildPackOptions(sec.packs && sec.packs[0] ? sec.packs[0].key : '')}
+        </select>
+      </div>
+      <div class="prog-section-actions">
+        <label style="display:flex;align-items:center;gap:6px;font-size:13px;cursor:pointer;">
+          <input type="checkbox" id="sec-cp-toggle-${si}" ${hasCp ? 'checked' : ''} />
+          Include checkpoint test
+        </label>
+      </div>
+      <div class="cp-editor" id="cp-editor-${si}" style="${hasCp ? '' : 'display:none;'}">
+        ${buildCpEditor(sec, si)}
+      </div>
+    </div>`;
+
+  // Toggle body
+  card.querySelector(`#prog-sec-hdr-${si}`).addEventListener('click', e => {
+    if (e.target.closest('.prog-sec-up,.prog-sec-down,.prog-sec-del')) return;
+    const body = document.getElementById(`prog-sec-body-${si}`);
+    if (body) body.style.display = body.style.display === 'none' ? '' : 'none';
+  });
+
+  // Title input
+  const titleIn = card.querySelector(`#sec-title-${si}`);
+  if (titleIn) titleIn.addEventListener('input', () => {
+    sec.title = titleIn.value;
+    const disp = card.querySelector('.prog-section-title-display');
+    if (disp) disp.textContent = sec.title || 'Untitled section';
+  });
+
+  // Pack select
+  const packSel = card.querySelector(`#sec-pack-${si}`);
+  if (packSel) packSel.addEventListener('change', () => {
+    const key = packSel.value;
+    const allPacks = [...loadAppPacks(), ...Object.values(getAllEditorPacks())];
+    const found = allPacks.find(pk => pk.key === key);
+    sec.packs = key ? [{ key, label: found ? found.name : key }] : [];
+    const lbl = card.querySelector('.prog-section-pack-label');
+    if (lbl) lbl.textContent = sec.packs.length ? sec.packs[0].label : '— no pack —';
+  });
+
+  // Checkpoint toggle
+  const cpToggle = card.querySelector(`#sec-cp-toggle-${si}`);
+  const cpEditor = card.querySelector(`#cp-editor-${si}`);
+  if (cpToggle) cpToggle.addEventListener('change', () => {
+    if (cpToggle.checked) {
+      if (!sec.checkpoint) {
+        sec.checkpoint = {
+          id: 'cp_' + Date.now().toString(36),
+          title: (sec.title || 'Section') + ' — Test',
+          timeLimit: 90, drawCount: 10, questions: []
+        };
+      }
+      if (cpEditor) { cpEditor.innerHTML = buildCpEditor(sec, si); bindCpEditor(sec, si, card); cpEditor.style.display = ''; }
+      const badge = card.querySelector('.prog-section-cp-badge');
+      if (!badge) {
+        const span = document.createElement('span');
+        span.className = 'prog-section-cp-badge';
+        span.textContent = 'Test';
+        card.querySelector('.prog-section-title-display').after(span);
+      }
+    } else {
+      sec.checkpoint = null;
+      if (cpEditor) cpEditor.style.display = 'none';
+      const badge = card.querySelector('.prog-section-cp-badge');
+      if (badge) badge.remove();
+    }
+  });
+
+  if (hasCp) bindCpEditor(sec, si, card);
+
+  // Move up/down
+  card.querySelectorAll('.prog-sec-up').forEach(btn => {
+    btn.addEventListener('click', e => { e.stopPropagation();
+      const i = parseInt(btn.dataset.si);
+      [p.sections[i-1], p.sections[i]] = [p.sections[i], p.sections[i-1]];
+      renderProgramEditor();
+    });
+  });
+  card.querySelectorAll('.prog-sec-down').forEach(btn => {
+    btn.addEventListener('click', e => { e.stopPropagation();
+      const i = parseInt(btn.dataset.si);
+      [p.sections[i], p.sections[i+1]] = [p.sections[i+1], p.sections[i]];
+      renderProgramEditor();
+    });
+  });
+
+  // Delete section
+  card.querySelectorAll('.prog-sec-del').forEach(btn => {
+    btn.addEventListener('click', e => { e.stopPropagation();
+      if (!confirm('Delete this section?')) return;
+      p.sections.splice(parseInt(btn.dataset.si), 1);
+      renderProgramEditor();
+    });
+  });
+
+  return card;
+}
+
+function buildPackOptions(selectedKey) {
+  const appPacks = loadAppPacks();
+  const myPacks  = Object.values(getAllEditorPacks());
+  let opts = '';
+  if (appPacks.length) {
+    opts += `<optgroup label="App packs">`;
+    appPacks.forEach(pk => { opts += `<option value="${pk.key}" ${pk.key === selectedKey ? 'selected' : ''}>${escHtml(pk.name)}</option>`; });
+    opts += `</optgroup>`;
+  }
+  if (myPacks.length) {
+    opts += `<optgroup label="My packs">`;
+    myPacks.forEach(pk => { opts += `<option value="${pk.key}" ${pk.key === selectedKey ? 'selected' : ''}>${escHtml(pk.name)}</option>`; });
+    opts += `</optgroup>`;
+  }
+  return opts;
+}
+
+function buildCpEditor(sec, si) {
+  const cp = sec.checkpoint;
+  if (!cp) return '';
+  let html = `
+    <div style="display:flex;gap:12px;margin-bottom:10px;flex-wrap:wrap;">
+      <div class="field-block" style="flex:1;min-width:120px;">
+        <label class="field-label">Test title</label>
+        <input type="text" class="input" id="cp-title-${si}" value="${escHtml(cp.title || '')}" placeholder="e.g. Chapter 1 Test" />
+      </div>
+      <div class="field-block" style="width:80px;">
+        <label class="field-label">Time (s)</label>
+        <input type="number" class="input" id="cp-time-${si}" value="${cp.timeLimit || 90}" min="10" max="300" />
+      </div>
+      <div class="field-block" style="width:80px;">
+        <label class="field-label">Draw</label>
+        <input type="number" class="input" id="cp-draw-${si}" value="${cp.drawCount || 10}" min="1" max="50" />
+      </div>
+    </div>
+    <div class="cp-questions-area" id="cp-qs-${si}">
+      ${(cp.questions || []).map((q, qi) => buildQuestionRow(q, qi, si)).join('')}
+    </div>
+    <button class="btn btn--ghost btn--sm cp-add-q" data-si="${si}" style="width:100%;margin-top:6px;">+ Add question</button>`;
+  return html;
+}
+
+function buildQuestionRow(q, qi, si) {
+  return `
+    <div class="cp-question-row" data-qi="${qi}">
+      <textarea class="card-ta cp-q-text" data-qi="${qi}" data-si="${si}" rows="2" placeholder="Question...">${escHtml(q.q || '')}</textarea>
+      <div class="cp-opts-row" style="display:contents;">
+        ${['A','B','C','D'].map((l, li) => `<input type="text" class="input cp-opt" data-qi="${qi}" data-si="${si}" data-li="${li}" value="${escHtml((q.options||[])[li]||'')}" placeholder="${l}..." />`).join('')}
+      </div>
+      <select class="cp-correct-select" data-qi="${qi}" data-si="${si}">
+        ${['A','B','C','D'].map((l,li) => `<option value="${li}" ${q.correct===li?'selected':''}>${l}</option>`).join('')}
+      </select>
+      <button class="icon-btn danger cp-del-q" data-qi="${qi}" data-si="${si}" title="Remove">&#x2715;</button>
+    </div>`;
+}
+
+function bindCpEditor(sec, si, card) {
+  const cp = sec.checkpoint;
+  if (!cp) return;
+
+  const cpArea = card.querySelector(`#cp-editor-${si}`);
+  if (!cpArea) return;
+
+  function rebind() {
+    // Title / time / draw
+    const tIn = cpArea.querySelector(`#cp-title-${si}`);
+    const tmIn = cpArea.querySelector(`#cp-time-${si}`);
+    const drIn = cpArea.querySelector(`#cp-draw-${si}`);
+    if (tIn)  tIn.oninput  = () => { cp.title     = tIn.value; };
+    if (tmIn) tmIn.oninput = () => { cp.timeLimit  = parseInt(tmIn.value) || 90; };
+    if (drIn) drIn.oninput = () => { cp.drawCount  = parseInt(drIn.value) || 10; };
+
+    // Question texts
+    cpArea.querySelectorAll('.cp-q-text').forEach(ta => {
+      ta.oninput = () => { const qi = parseInt(ta.dataset.qi); if (cp.questions[qi]) cp.questions[qi].q = ta.value; };
+    });
+    // Options
+    cpArea.querySelectorAll('.cp-opt').forEach(inp => {
+      inp.oninput = () => {
+        const qi = parseInt(inp.dataset.qi), li = parseInt(inp.dataset.li);
+        if (cp.questions[qi]) {
+          if (!cp.questions[qi].options) cp.questions[qi].options = ['','','',''];
+          cp.questions[qi].options[li] = inp.value;
+        }
+      };
+    });
+    // Correct answer
+    cpArea.querySelectorAll('.cp-correct-select').forEach(sel => {
+      sel.onchange = () => { const qi = parseInt(sel.dataset.qi); if (cp.questions[qi]) cp.questions[qi].correct = parseInt(sel.value); };
+    });
+    // Delete question
+    cpArea.querySelectorAll('.cp-del-q').forEach(btn => {
+      btn.onclick = () => {
+        cp.questions.splice(parseInt(btn.dataset.qi), 1);
+        const qsArea = cpArea.querySelector(`#cp-qs-${si}`);
+        if (qsArea) { qsArea.innerHTML = cp.questions.map((q, qi) => buildQuestionRow(q, qi, si)).join(''); rebind(); }
+      };
+    });
+    // Add question
+    const addQ = cpArea.querySelector('.cp-add-q');
+    if (addQ) addQ.onclick = () => {
+      cp.questions.push({ id: 'q_' + Date.now().toString(36), q: '', options: ['','','',''], correct: 0 });
+      const qsArea = cpArea.querySelector(`#cp-qs-${si}`);
+      if (qsArea) { qsArea.innerHTML = cp.questions.map((q, qi) => buildQuestionRow(q, qi, si)).join(''); rebind(); }
+    };
+  }
+  rebind();
+}
+
+// Bind top-level program editor controls
+function bindProgramEditorControls() {
+  const backBtn = document.getElementById('prog-back-btn');
+  if (backBtn) backBtn.onclick = () => {
+    if (currentProgram && confirm('Save changes?')) saveProgramAndClose();
+    else { currentProgram = null; showScreen('screen-home'); renderProgramList(); }
+  };
+
+  const renameBtn = document.getElementById('prog-rename-btn');
+  if (renameBtn) renameBtn.onclick = () => {
+    const name = prompt('Program title:', currentProgram.title || '');
+    if (name === null) return;
+    currentProgram.title = name.trim() || currentProgram.title;
+    renderProgramEditor();
+  };
+
+  const exportBtn = document.getElementById('prog-export-btn');
+  if (exportBtn) exportBtn.onclick = () => {
+    saveProgramAndClose(false);
+    exportProgram(currentProgram);
+  };
+
+  const addSecBtn = document.getElementById('prog-add-section-btn');
+  if (addSecBtn) addSecBtn.onclick = () => {
+    if (!currentProgram.sections) currentProgram.sections = [];
+    const idx = currentProgram.sections.length;
+    currentProgram.sections.push({
+      id: 'section-' + (idx + 1),
+      title: 'Section ' + (idx + 1),
+      packs: [],
+    });
+    renderProgramEditor();
+    // Auto-scroll to new section
+    setTimeout(() => {
+      const area = document.getElementById('prog-sections-area');
+      if (area) area.lastElementChild?.scrollIntoView({ behavior: 'smooth' });
+    }, 100);
+  };
+
+  const newProg = document.getElementById('new-program-btn');
+  if (newProg) newProg.onclick = () => {
+    const title = prompt('Program title:');
+    if (!title?.trim()) return;
+    const prog = {
+      id: slugify(title.trim()) + '_' + Date.now().toString(36).slice(-4),
+      title: title.trim(),
+      description: '',
+      icon: 'ti-stack',
+      sections: [],
+    };
+    showProgramEditor(prog);
+  };
+}
+
+function saveProgramAndClose(goHome = true) {
+  if (!currentProgram) return;
+  const all = getAllEditorPrograms();
+  all[currentProgram.id] = currentProgram;
+  try { localStorage.setItem('ds_editor_programs', JSON.stringify(all)); } catch(e) {}
+  if (goHome) {
+    showScreen('screen-home');
+    renderProgramList();
+    currentProgram = null;
+  }
+}
+
+// Auto-save on unload
+window.addEventListener('beforeunload', () => {
+  if (currentProgram) saveProgramAndClose(false);
+});
+
 
 
 function renderPackList() {
