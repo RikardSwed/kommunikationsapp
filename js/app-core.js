@@ -4,7 +4,7 @@
 // app.js — All application logic for Communication Trainer
 // Depends on: data.js and multiStepData.js (must be loaded first)
 
-const VERSION = 'v1.24.4';
+const VERSION = 'v1.24.5';
 
 // Pack icon map — global so both dashboard and favorites can use it
 const PACK_ICONS = {
@@ -366,16 +366,43 @@ document.querySelectorAll('.collection-card').forEach(el => {
 document.getElementById('modeBackBtn').addEventListener('click', showHome);
 document.getElementById('modeNextBtn') && document.getElementById('modeNextBtn').addEventListener('click', goNextPack);
 
-// Pack settings button
+// Pack settings button — re-render training when overlay closes (bundle may have changed)
 (function() {
   const btn     = document.getElementById('modePackSettingsBtn');
   const overlay = document.getElementById('packSettingsOverlay');
   const close   = document.getElementById('packSettingsClose');
   if (btn && overlay) {
     btn.addEventListener('click', () => overlay.classList.add('open'));
-    if (close) close.addEventListener('click', () => overlay.classList.remove('open'));
+    if (close) close.addEventListener('click', () => {
+      overlay.classList.remove('open');
+      // Re-run the current training mode so bundle changes take effect immediately
+      _reloadCurrentTraining();
+    });
+    // Also catch Done tap via MutationObserver in case closed another way
+    new MutationObserver(() => {
+      if (!overlay.classList.contains('open')) _reloadCurrentTraining();
+    }).observe(overlay, { attributes: true, attributeFilter: ['class'] });
   }
 })();
+
+// Re-launch current training screen with fresh bundle filter
+function _reloadCurrentTraining() {
+  const screens = {
+    trainingScreen: showTraining,
+    memScreen:      showMemorize,
+    challScreen:    showChallenges,
+    mindScreen:     showMindset,
+    collScreen:     showCollection,
+    flowScreen:     showFlow,
+  };
+  for (const [id, fn] of Object.entries(screens)) {
+    const el = document.getElementById(id);
+    if (el && el.style.display !== 'none' && typeof fn === 'function') {
+      fn();
+      break;
+    }
+  }
+}
 
 // Beta section toggle
 function toggleBeta() {
