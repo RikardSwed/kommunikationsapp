@@ -1141,10 +1141,137 @@ body.pb-enabled .divider::after {
 
 
 
-.library-topbar {
-  justify-content: space-between !important;
+/* ── LIBRARY BANNER (orange header, replaces white topbar) ──────────────── */
+.lib-banner {
+  background: linear-gradient(135deg, var(--ds-acc), #F2622A);
+  padding: 18px 20px 16px;
+  display: flex;
   align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
 }
+.lib-banner-title {
+  font-size: 22px;
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: -0.3px;
+}
+.lib-banner-btn {
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.22);
+  border: none;
+  color: #fff;
+  font-size: 22px;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-tap-highlight-color: transparent;
+}
+.lib-banner-btn:active { background: rgba(255,255,255,0.35); }
+
+/* ── HOME WELCOME BANNER ────────────────────────────────────────────────── */
+.dash-welcome-banner {
+  background: linear-gradient(135deg, var(--ds-acc), #F2622A);
+  border-radius: 18px;
+  padding: 18px 20px;
+  margin: 4px 0 16px;
+}
+.dash-welcome-text {
+  font-size: 18px;
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: -0.2px;
+  margin-bottom: 3px;
+}
+.dash-welcome-sub {
+  font-size: 13px;
+  color: rgba(255,255,255,0.8);
+}
+
+/* ── FAVORITES SORT ROW ─────────────────────────────────────────────────── */
+.fav-sort-row {
+  display: flex;
+  gap: 6px;
+  padding: 0 0 12px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.fav-sort-row::-webkit-scrollbar { display: none; }
+.fav-sort-btn {
+  padding: 5px 13px;
+  border-radius: 20px;
+  border: 1px solid var(--ds-border);
+  background: var(--ds-card);
+  color: var(--ds-txt2);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  white-space: nowrap;
+  flex-shrink: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+.fav-sort-btn.active {
+  background: var(--ds-acc);
+  border-color: var(--ds-acc);
+  color: #fff;
+  font-weight: 600;
+}
+
+/* ── FOLDER CARD — orange header style ──────────────────────────────────── */
+.folder-header-card {
+  background: linear-gradient(135deg, var(--ds-acc), #F2622A);
+  border-radius: 16px;
+  padding: 16px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0;
+}
+.folder-header-card-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+  min-width: 0;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+.folder-header-card-icon {
+  font-size: 22px;
+  flex-shrink: 0;
+}
+.folder-header-card-name {
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.folder-header-card-count {
+  font-size: 12px;
+  color: rgba(255,255,255,0.75);
+  margin-top: 1px;
+}
+.folder-edit-btn {
+  padding: 6px 13px;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.2);
+  border: none;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  flex-shrink: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+.folder-edit-btn:active { background: rgba(255,255,255,0.35); }
+
+.library-topbar { justify-content: space-between !important; align-items: center; }
 
 .library-title {
   font-size: 24px;
@@ -1528,64 +1655,64 @@ body.pb-enabled .divider::after {
 
 /* ─── TOPICS ──────────────────────────────────────────────────────────────────── */
 
-.topic-group {
-  margin-bottom: 4px;
+/* ── TOPICS — compact accordion card ── */
+.topic-accordion {
+  background: var(--ds-card);
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid var(--ds-border);
 }
+
+.topic-group {
+  border-bottom: 1px solid var(--ds-border);
+}
+.topic-group:last-child { border-bottom: none; }
 
 .topic-header {
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 14px 16px;
-  background: var(--ds-card);
-  border-radius: 14px;
+  padding: 13px 16px;
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
   user-select: none;
-  transition: background 0.15s;
+  transition: background 0.12s;
 }
-
 .topic-header:active { background: var(--ds-card-alt); }
-
 .topic-group--empty .topic-header { opacity: 0.5; cursor: default; }
+.topic-header.open { background: #FBE9E0; }
 
 .topic-title {
   flex: 1;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 700;
   color: var(--ds-txt);
 }
+.topic-header.open .topic-title { color: var(--ds-acc); }
 
 .topic-count {
-  font-size: 13px;
+  font-size: 12px;
   color: var(--ds-acc);
   font-weight: 600;
   white-space: nowrap;
 }
-
-.topic-count--empty {
-  color: var(--ds-txt3);
-  font-weight: 400;
-}
+.topic-count--empty { color: var(--ds-txt3); font-weight: 400; }
 
 .topic-chevron {
-  font-size: 20px;
+  font-size: 16px;
   color: var(--ds-txt3);
   transition: transform 0.2s ease;
   line-height: 1;
 }
-
 .topic-chevron--empty { opacity: 0.3; }
-
-.topic-header.open .topic-chevron {
-  transform: rotate(90deg);
-}
+.topic-header.open .topic-chevron { transform: rotate(90deg); color: var(--ds-acc); }
 
 .topic-packs {
   display: none;
-  padding: 4px 0 8px;
+  padding: 6px 12px 10px;
+  background: var(--ds-bg);
+  border-top: 1px solid var(--ds-border);
 }
-
 .topic-packs.open { display: block; }
 
 /* ─── ACCESS LEVELS & LOCKED PACKS ────────────────────────────────────────── */
