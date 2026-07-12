@@ -22,6 +22,24 @@ const multiStepCollections = {
             { front: "Step 2 — Hear their concern without absorbing it", back: "\"I hear that you're concerned about Y.\" Acknowledge — don't defend or explain yet." },
             { front: "Step 3 — Return to your position", back: "\"I've considered that — I'm still going with X.\" Calm, no escalation, no new arguments." }
           ]
+        },
+        {
+          bundle: "workplace",
+          situation: "Your manager asks you to take on extra work when you're already at capacity",
+          steps: [
+            { front: "Step 1 — State your current situation clearly", back: "\"I'm currently at full capacity with [X, Y, Z].\" Factual, not defensive. Make the workload visible." },
+            { front: "Step 2 — Acknowledge the request without immediately agreeing", back: "\"I understand this needs to get done — I want to help you figure out how.\" Shows goodwill without absorbing the problem." },
+            { front: "Step 3 — Hold your position and offer a real alternative", back: "\"If this takes priority, something else needs to move. Which of my current tasks should I deprioritise?\" Puts the decision back where it belongs." }
+          ]
+        },
+        {
+          bundle: "workplace",
+          situation: "A colleague repeatedly redirects your work tasks without authority to do so",
+          steps: [
+            { front: "Step 1 — Name what's happening specifically", back: "\"I've noticed that you've been reassigning tasks that come through me — I want to address that.\" Calm, specific, no accusation." },
+            { front: "Step 2 — State your position clearly", back: "\"Those decisions go through me. I'm happy to collaborate, but I need to be the one making the call.\"" },
+            { front: "Step 3 — Hold it if they push back", back: "\"I hear you — and I'm still going to need this to go through me from now on.\" Brief, no anger, no negotiation on the principle." }
+          ]
         }
       ]
     },
@@ -43,6 +61,24 @@ const multiStepCollections = {
             { front: "Step 1 — Observe the pattern specifically", back: "\"I've raised X a few times now and it hasn't been included in the discussion.\"" },
             { front: "Step 2 — Say what you want, not what's wrong", back: "\"I'd like my input to be considered, even if the final decision goes another way.\"" },
             { front: "Step 3 — Check for understanding", back: "\"Does that make sense?\" — brief, not demanding. You've said it clearly. That's enough." }
+          ]
+        },
+        {
+          bundle: "workplace",
+          situation: "A colleague takes credit for your idea in a team meeting",
+          steps: [
+            { front: "Step 1 — Reclaim ownership calmly and immediately", back: "\"I'm glad that landed — that was actually the approach I outlined last week.\" Factual, no drama, said at the moment — not later." },
+            { front: "Step 2 — State the impact without attacking", back: "\"When my contributions aren't attributed, it becomes harder for my work to be visible.\" Your experience — not their character." },
+            { front: "Step 3 — Make a clear request for the future", back: "\"I'd like us to be clear about who brought what to the table.\" Specific and professional." }
+          ]
+        },
+        {
+          bundle: "workplace",
+          situation: "Your manager gives positive feedback on a project but attributes it to the wrong person",
+          steps: [
+            { front: "Step 1 — Correct the record immediately and matter-of-factly", back: "\"Just to clarify — I led that piece of the project.\" No hedging, no apology for correcting." },
+            { front: "Step 2 — Acknowledge the mix-up briefly", back: "\"Easy to lose track with a big team — I just wanted to make sure it was clear.\" Gives them a face-saving out without dropping your point." },
+            { front: "Step 3 — Don't over-explain or follow up excessively", back: "You've said it once, clearly. Let it land and move on. Following up repeatedly undermines the assertion." }
           ]
         }
       ]
