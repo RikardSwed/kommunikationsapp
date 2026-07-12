@@ -740,95 +740,95 @@ function handleJsonFileImport(e) {
 function bindEventsSeq(modeData, strats, strat, bundleScenarios, scenario, bundles) {
   const allScenarios = strat.inputs || [];
   const scenarioAbsIdx = allScenarios.indexOf(scenario);
-  // Strategy switcher (shared with bindEvents)
+
+  // Use .onchange/.onclick (not addEventListener) to prevent listener stacking on re-render
   const stratSel = document.getElementById('strat-select');
-  if (stratSel) stratSel.addEventListener('change', e => {
+  if (stratSel) stratSel.onchange = e => {
     currentStrat = parseInt(e.target.value); currentScenarioIdx = 0; renderModeContent();
-  });
+  };
   const renameBtn = document.getElementById('strat-rename-btn');
-  if (renameBtn) renameBtn.addEventListener('click', () => {
+  if (renameBtn) renameBtn.onclick = () => {
     const name = prompt('Name:', strat.name || ''); if (name === null) return;
     strat.name = name.trim(); markDirty(); renderModeContent();
-  });
+  };
   const addStratBtn = document.getElementById('add-strat-btn');
-  if (addStratBtn) addStratBtn.addEventListener('click', () => {
+  if (addStratBtn) addStratBtn.onclick = () => {
     const name = prompt('Name for new combo:'); if (!name?.trim()) return;
     const s = emptyStrategy('sequences'); s.name = name.trim();
     modeData.strategies.push(s); currentStrat = modeData.strategies.length - 1;
     currentScenarioIdx = 0; markDirty(); renderModeContent();
-  });
+  };
   const delStratBtn = document.getElementById('del-strat-btn');
-  if (delStratBtn) delStratBtn.addEventListener('click', () => {
+  if (delStratBtn) delStratBtn.onclick = () => {
     if (modeData.strategies.length <= 1) { showToast('Need at least one combo'); return; }
     if (!confirm(`Delete "${strat.name || 'this combo'}"?`)) return;
     modeData.strategies.splice(currentStrat, 1);
     currentStrat = Math.max(0, currentStrat - 1); currentScenarioIdx = 0;
     markDirty(); renderModeContent();
-  });
+  };
   const descTa = document.getElementById('desc-ta');
-  if (descTa) descTa.addEventListener('input', () => { strat.description = descTa.value; markDirty(); });
+  if (descTa) descTa.oninput = () => { strat.description = descTa.value; markDirty(); };
 
-  // Scenario tabs
+  // Bundle select — onchange prevents listener stacking
+  const bundleSelSeq = document.getElementById('bundle-select');
+  if (bundleSelSeq) bundleSelSeq.onchange = e => {
+    currentBundle = e.target.value;
+    currentScenarioIdx = 0;
+    renderModeContent();
+  };
+
+  // Scenario tabs — onclick prevents stacking
   document.querySelectorAll('.scenario-tab[data-sc]').forEach(btn => {
-    btn.addEventListener('click', () => { currentScenarioIdx = parseInt(btn.dataset.sc); renderModeContent(); });
+    btn.onclick = () => { currentScenarioIdx = parseInt(btn.dataset.sc); renderModeContent(); };
   });
   const addScBtn = document.getElementById('add-scenario-btn');
-  if (addScBtn) addScBtn.addEventListener('click', () => {
+  if (addScBtn) addScBtn.onclick = () => {
     strat.inputs = strat.inputs || [];
     const bundle = currentBundle === 'default' ? 'free' : currentBundle;
     strat.inputs.push(emptyScenario(bundle));
-    // Count how many scenarios now exist for this bundle and go to last
     const bundleCount = strat.inputs.filter(sc => (sc.bundle||'free') === bundle).length;
     currentScenarioIdx = bundleCount - 1; markDirty(); renderModeContent();
-  });
+  };
   const delScBtn = document.getElementById('del-scenario-btn');
-  if (delScBtn) delScBtn.addEventListener('click', () => {
+  if (delScBtn) delScBtn.onclick = () => {
     if (bundleScenarios.length <= 1) { showToast('Need at least one scenario in this bundle'); return; }
     if (!confirm('Delete this scenario?')) return;
     if (scenarioAbsIdx >= 0) strat.inputs.splice(scenarioAbsIdx, 1);
     currentScenarioIdx = Math.max(0, currentScenarioIdx - 1); markDirty(); renderModeContent();
-  });
+  };
 
   // Situation textarea
   const sitTa = document.querySelector('[data-sc-field="situation"]');
-  if (sitTa) sitTa.addEventListener('input', () => { scenario.situation = sitTa.value; markDirty(); });
+  if (sitTa) sitTa.oninput = () => { scenario.situation = sitTa.value; markDirty(); };
 
   // Step textareas
   document.querySelectorAll('.card-ta[data-step]').forEach(ta => {
-    ta.addEventListener('input', () => {
+    ta.oninput = () => {
       const idx = parseInt(ta.dataset.step);
       const field = ta.dataset.field;
       if (!scenario.steps[idx]) scenario.steps[idx] = { front: '', back: '' };
       scenario.steps[idx][field] = ta.value; markDirty();
-    });
+    };
   });
 
   // Add step
   const addStepBtn = document.querySelector('.add-step-btn');
-  if (addStepBtn) addStepBtn.addEventListener('click', () => {
+  if (addStepBtn) addStepBtn.onclick = () => {
     scenario.steps = scenario.steps || [];
     scenario.steps.push(emptyStep()); markDirty(); renderModeContent();
-  });
+  };
 
   // Delete step
   document.querySelectorAll('.step-del').forEach(btn => {
-    btn.addEventListener('click', () => {
+    btn.onclick = () => {
       const idx = parseInt(btn.dataset.step);
       scenario.steps.splice(idx, 1); markDirty(); renderModeContent();
-    });
+    };
   });
 
-  // Bundle select — must be bound here too (bindEvents not called for sequences)
-  const bundleSelSeq = document.getElementById('bundle-select');
-  if (bundleSelSeq) bundleSelSeq.addEventListener('change', e => {
-    currentBundle = e.target.value;
-    currentScenarioIdx = 0;
-    renderModeContent();
-  });
-
-  // Add bundle (shared)
+  // Add bundle
   const addBundleBtn = document.getElementById('add-bundle-btn');
-  if (addBundleBtn) addBundleBtn.addEventListener('click', () => {
+  if (addBundleBtn) addBundleBtn.onclick = () => {
     const name = prompt('Bundle name (e.g. "Workplace & Social"):'); if (!name?.trim()) return;
     const id = slugify(name.trim());
     if (modeData.bundles.find(b => b.id === id)) { showToast('Bundle already exists'); return; }
@@ -836,7 +836,7 @@ function bindEventsSeq(modeData, strats, strat, bundleScenarios, scenario, bundl
     const tier = tierChoice === '2' ? 'extended' : 'pro-opt';
     modeData.bundles.push({ id, name: name.trim(), tier });
     markDirty(); renderModeContent();
-  });
+  };
 }
 
 function showSyntaxGuide() {

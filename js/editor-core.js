@@ -1,7 +1,7 @@
 // editor-core.js — Deckstack Pack Editor
 // Depends on: data.js, challengesData.js, mindsetData.js, multiStepData.js, memorizeData.js
 
-const EDITOR_VERSION = 'v1.6.2';
+const EDITOR_VERSION = 'v1.6.3';
 const STORAGE_KEY    = 'ds_editor_packs';
 const ACTIVE_KEY     = 'ds_editor_active';
 
@@ -63,12 +63,17 @@ function packFromAppData(key) {
     }));
     // Remove 'default' — not a real bundle tier
     ids.delete('default');
-    const TIER_MAP = { free: 'free', pro: 'pro' };
-    return [...ids].map(id => ({
-      id,
-      name: id === 'free' ? 'Free Bundle' : id === 'pro' ? 'Pro Bundle' : id.charAt(0).toUpperCase() + id.slice(1).replace(/-/g,' '),
-      tier: TIER_MAP[id] || 'pro-opt',
-    }));
+    const TIER_MAP = { free: 'free', pro: 'pro', workplace: 'pro-opt', domestic: 'extended' };
+    // Also check app BUNDLE_DEFS if available (runtime)
+    const appDefs = (window.BUNDLE_DEFS && window.BUNDLE_DEFS[key]) || [];
+    return [...ids].map(id => {
+      const appDef = appDefs.find(d => d.id === id);
+      return {
+        id,
+        name: appDef ? appDef.name : (id === 'free' ? 'Free Bundle' : id === 'pro' ? 'Pro Bundle' : id.charAt(0).toUpperCase() + id.slice(1).replace(/-/g,' ')),
+        tier: appDef ? appDef.tier : (TIER_MAP[id] || 'pro-opt'),
+      };
+    });
   }
 
   const rawSingle = (getDS('_dsCollections'))[key] || [];
