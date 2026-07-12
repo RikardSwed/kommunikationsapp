@@ -376,7 +376,27 @@
       width:        100%;
     }
 
-    /* ── BUTTONS ── */
+    /* ── SCENARIO TABS (Sequences mode) ── */
+    .scenario-tabs {
+      display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px;
+    }
+    .scenario-tab {
+      padding: 5px 12px; border-radius: 20px; border: 1px solid var(--border);
+      background: var(--surface2); color: var(--text); font-size: 13px;
+      cursor: pointer; white-space: nowrap;
+    }
+    .scenario-tab--active {
+      background: var(--acc); color: #fff; border-color: var(--acc);
+    }
+    .scenario-tab--add {
+      background: none; border-style: dashed; color: var(--acc);
+    }
+    .scenario-bundle-row {
+      display: flex; align-items: center; gap: 8px; margin-bottom: 12px;
+    }
+    .select--sm { font-size: 13px; padding: 4px 8px; }
+    .card-row--situation { opacity: 0.85; }
+    .card-ta--placeholder { min-height: 52px; border-radius: 6px; }
     .btn {
       padding:       9px 18px;
       border-radius: var(--radius);
