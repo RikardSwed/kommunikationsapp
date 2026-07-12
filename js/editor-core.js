@@ -1,7 +1,7 @@
 // editor-core.js — Deckstack Pack Editor
 // Depends on: data.js, challengesData.js, mindsetData.js, multiStepData.js, memorizeData.js
 
-const EDITOR_VERSION = 'v1.6.4';
+const EDITOR_VERSION = 'v1.6.5';
 const STORAGE_KEY    = 'ds_editor_packs';
 const ACTIVE_KEY     = 'ds_editor_active';
 
@@ -63,14 +63,17 @@ function packFromAppData(key) {
     }));
     // Remove 'default' — not a real bundle tier
     ids.delete('default');
+    // TIER_MAP: fallback when pack not in window.BUNDLE_DEFS
     const TIER_MAP = { free: 'free', pro: 'pro', workplace: 'pro-opt', domestic: 'extended' };
-    // Also check app BUNDLE_DEFS if available (runtime)
+    // Use window.BUNDLE_DEFS as single source of truth if available
     const appDefs = (window.BUNDLE_DEFS && window.BUNDLE_DEFS[key]) || [];
     return [...ids].map(id => {
       const appDef = appDefs.find(d => d.id === id);
       return {
         id,
-        name: appDef ? appDef.name : (id === 'free' ? 'Free Bundle' : id === 'pro' ? 'Pro Bundle' : id.charAt(0).toUpperCase() + id.slice(1).replace(/-/g,' ')),
+        name: appDef ? appDef.name
+          : (id === 'free' ? 'Free Bundle' : id === 'pro' ? 'Pro Bundle'
+            : id.charAt(0).toUpperCase() + id.slice(1).replace(/-/g,' ')),
         tier: appDef ? appDef.tier : (TIER_MAP[id] || 'pro-opt'),
       };
     });

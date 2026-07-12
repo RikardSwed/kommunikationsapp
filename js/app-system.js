@@ -343,6 +343,7 @@ const BUNDLE_DEFS = {
     },
   ]
 };
+window.BUNDLE_DEFS = BUNDLE_DEFS;
 
 // Bundle state storage: key = 'bundles:{packKey}'
 // Only stores user-toggled pro-opt and extended bundles
