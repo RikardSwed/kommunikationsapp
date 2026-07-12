@@ -523,25 +523,67 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
   }
 
   // ─ Favorites tab render ──────────────────────────────────────────────
+  let favSortMode = 'pinned'; // 'pinned' | 'az' | 'used'
+
   function renderFavTab() {
-    const favs       = getFavs();
+    const allFavs    = getFavs();
     const emptyState = document.getElementById('favEmptyState');
     const favList    = document.getElementById('favList');
+    const sortRow    = document.getElementById('favSortRow');
+    const plusBtn    = document.getElementById('libBannerPlusBtn');
     if (!favList) return;
-    if (!favs.length) {
+
+    // Wire plus button to pin picker when on favorites tab
+    if (plusBtn && activeLibraryTab === 'favorites') {
+      plusBtn.onclick = () => {
+        // Show all packs as a pin-picker
+        const allCards = document.querySelectorAll('#libTabPacks .collection-card');
+        const opts = Array.from(allCards).map(c => c.dataset.key + '||' + c.dataset.label).filter(Boolean);
+        const alreadyPinned = new Set(getFavs().map(f => f.key));
+        const unpinned = opts.filter(o => !alreadyPinned.has(o.split('||')[0]));
+        if (!unpinned.length) { alert('All packs are already pinned.'); return; }
+        const chosen = prompt('Pin a pack (enter number):\n' + unpinned.map((o,i) => (i+1) + '. ' + o.split('||')[1]).join('\n'));
+        const idx = parseInt(chosen) - 1;
+        if (isNaN(idx) || idx < 0 || idx >= unpinned.length) return;
+        const [key, label] = unpinned[idx].split('||');
+        const favs = getFavs(); favs.push({ key, label }); saveFavs(favs);
+        renderFavTab(); renderDashFavs();
+      };
+    }
+
+    if (!allFavs.length) {
       if (emptyState) emptyState.style.display = '';
+      if (sortRow) sortRow.style.display = 'none';
       favList.innerHTML = '';
       return;
     }
+
     if (emptyState) emptyState.style.display = 'none';
+    if (sortRow) sortRow.style.display = '';
+
+    // Sort
+    let favs = [...allFavs];
+    if (favSortMode === 'az') {
+      favs.sort((a, b) => a.label.localeCompare(b.label));
+    } else if (favSortMode === 'used') {
+      const trained = JSON.parse(localStorage.getItem('ds_pack_trained') || '{}');
+      favs.sort((a, b) => (trained[b.key] || 0) - (trained[a.key] || 0));
+    }
+    // 'pinned' = insertion order (default)
+
     favList.innerHTML = favs.map(f =>
       `<div class="collection-card fav-card" data-key="${f.key}" data-label="${f.label.replace(/"/g,'&quot;')}">
-        <div>
-          <div class="collection-name">${f.label}</div>
-        </div>
+        <div><div class="collection-name">${f.label}</div></div>
         <div class="collection-arrow">›</div>
        </div>`
     ).join('');
+
+    // Sort button listeners
+    document.querySelectorAll('.fav-sort-btn').forEach(btn => {
+      btn.classList.toggle('active', btn.dataset.sort === favSortMode);
+      btn.onclick = () => { favSortMode = btn.dataset.sort; renderFavTab(); };
+    });
+
     // Bind fav-card clicks → open pack
     favList.querySelectorAll('.fav-card').forEach(card => {
       let fStartY = 0, fMoved = false;
@@ -1114,48 +1156,53 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
     if (!container) return;
     const folders = getFolders();
 
-    let html = '<div class="folders-header">'
-      + '<span class="folders-title">My Folders</span>'
-      + '<button class="btn-add-folder" id="btn-new-folder">+ New folder</button>'
-      + '</div>';
+    // Wire library banner plus button to add folder
+    const plusBtn = document.getElementById('libBannerPlusBtn');
+    if (plusBtn) {
+      plusBtn.onclick = () => {
+        const name = prompt('Folder name:');
+        if (!name?.trim()) return;
+        const fols = getFolders(); fols.push(newFolder(name.trim())); saveFolders(fols); render();
+      };
+    }
 
     if (!folders.length) {
-      html += '<div class="folders-empty">No folders yet. Create one to organise your packs.</div>';
-    } else {
-      folders.forEach((folder, fi) => {
-        html += '<div class="folder-item" data-fi="' + fi + '">'
-          + '<div class="folder-header-row">'
-          + '<button class="folder-toggle-btn" data-fi="' + fi + '">'
-          + '<span class="folder-chevron" id="chev-' + fi + '">&#9654;</span>'
-          + '<span class="folder-name">' + escHtml(folder.name) + '</span>'
-          + '<span class="folder-count">(' + folder.packs.length + ')</span>'
-          + '</button>'
-          + '<div class="folder-actions">'
-          + '<button class="folder-btn" data-fi="' + fi + '" data-action="rename" title="Rename">&#9998;</button>'
-          + '<button class="folder-btn danger" data-fi="' + fi + '" data-action="delete" title="Delete folder">&#x2715;</button>'
-          + '</div>'
-          + '</div>'
-          + '<div class="folder-body" id="folder-body-' + fi + '" style="display:none;">';
-
-        if (!folder.packs.length) {
-          html += '<div class="folder-empty-msg">No packs in this folder yet.</div>';
-        } else {
-          folder.packs.forEach((pack, pi) => {
-            html += '<div class="folder-pack-row">'
-              + '<div class="collection-card folder-pack-card" data-key="' + pack.key + '" data-label="' + escHtml(pack.label) + '">'
-              + '<div><div class="collection-name">' + escHtml(pack.label) + '</div></div>'
-              + '<div class="collection-arrow">&#x203a;</div>'
-              + '</div>'
-              + '<button class="folder-remove-pack" data-fi="' + fi + '" data-pi="' + pi + '" title="Remove from folder">&#x2715;</button>'
-              + '</div>';
-          });
-        }
-
-        html += '<button class="folder-add-pack-btn" data-fi="' + fi + '">+ Add pack</button>'
-          + '</div>'
-          + '</div>';
-      });
+      container.className = 'library-tab-content library-placeholder';
+      container.innerHTML = '<div class="library-placeholder-icon">📂</div>'
+        + '<div class="library-placeholder-title">No folders yet</div>'
+        + '<div class="library-placeholder-text">Tap + to create a folder and organise your packs.</div>';
+      return;
     }
+
+    let html = '';
+    folders.forEach((folder, fi) => {
+      const isOpen = folder._open;
+      html += '<div class="folder-item" data-fi="' + fi + '">'
+        + '<div class="folder-header-card">'
+        + '<div class="folder-header-card-left" data-fi="' + fi + '" data-action="toggle">'
+        + '<span class="folder-header-card-icon">📁</span>'
+        + '<div><div class="folder-header-card-name">' + escHtml(folder.name) + '</div>'
+        + '<div class="folder-header-card-count">' + folder.packs.length + (folder.packs.length === 1 ? ' pack' : ' packs') + '</div></div>'
+        + '</div>'
+        + '<button class="folder-edit-btn" data-fi="' + fi + '" data-action="edit">Edit</button>'
+        + '</div>'
+        + '<div class="folder-body" id="folder-body-' + fi + '" style="' + (isOpen ? '' : 'display:none;') + '">';
+      if (!folder.packs.length) {
+        html += '<div class="folder-empty-msg">No packs in this folder yet.</div>';
+      } else {
+        folder.packs.forEach((pack, pi) => {
+          html += '<div class="folder-pack-row">'
+            + '<div class="collection-card folder-pack-card" data-key="' + pack.key + '" data-label="' + escHtml(pack.label) + '">'
+            + '<div><div class="collection-name">' + escHtml(pack.label) + '</div></div>'
+            + '<div class="collection-arrow">&#x203a;</div>'
+            + '</div>'
+            + '<button class="folder-remove-pack" data-fi="' + fi + '" data-pi="' + pi + '" title="Remove">&#x2715;</button>'
+            + '</div>';
+        });
+      }
+      html += '<button class="folder-add-pack-btn" data-fi="' + fi + '">+ Add pack</button>'
+        + '</div></div>';
+    });
 
     container.className = 'library-tab-content';
     container.innerHTML = html;
@@ -1168,46 +1215,35 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
 
   // ── Bind events ─────────────────────────────────────────────────────────────
   function bindEvents(folders) {
-    // New folder
-    const newBtn = document.getElementById('btn-new-folder');
-    if (newBtn) newBtn.addEventListener('click', () => {
-      const name = prompt('Folder name:');
-      if (!name || !name.trim()) return;
-      folders.push(newFolder(name.trim()));
-      saveFolders(folders);
-      render();
-    });
-
-    // Toggle open/close
-    document.querySelectorAll('.folder-toggle-btn').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const fi   = btn.dataset.fi;
+    // Toggle open/close — left side of header card
+    document.querySelectorAll('.folder-header-card-left[data-action="toggle"]').forEach(el => {
+      el.addEventListener('click', () => {
+        const fi   = el.dataset.fi;
         const body = document.getElementById('folder-body-' + fi);
-        const chev = document.getElementById('chev-' + fi);
         if (!body) return;
         const open = body.style.display === 'none';
         body.style.display = open ? 'block' : 'none';
-        chev.innerHTML = open ? '&#9660;' : '&#9654;';
+        const idx = parseInt(fi);
+        folders[idx]._open = open;
       });
     });
 
-    // Folder actions (rename, delete)
-    document.querySelectorAll('.folder-btn').forEach(btn => {
+    // Edit button — rename or delete dialog
+    document.querySelectorAll('.folder-edit-btn').forEach(btn => {
       btn.addEventListener('click', e => {
         e.stopPropagation();
-        const fi     = parseInt(btn.dataset.fi);
-        const action = btn.dataset.action;
-        if (action === 'rename') {
+        const fi = parseInt(btn.dataset.fi);
+        const choice = confirm('Rename folder "' + folders[fi].name + '"?\n\nOK = Rename  \u00b7  Cancel = show delete option');
+        if (choice) {
           const name = prompt('New name:', folders[fi].name);
-          if (!name || !name.trim()) return;
+          if (!name?.trim()) return;
           folders[fi].name = name.trim();
-          saveFolders(folders);
-          render();
-        } else if (action === 'delete') {
-          if (!confirm('Delete folder "' + folders[fi].name + '"? Packs will not be removed from the app.')) return;
-          folders.splice(fi, 1);
-          saveFolders(folders);
-          render();
+          saveFolders(folders); render();
+        } else {
+          if (confirm('Delete folder "' + folders[fi].name + '"? Packs will not be removed from the app.')) {
+            folders.splice(fi, 1);
+            saveFolders(folders); render();
+          }
         }
       });
     });
