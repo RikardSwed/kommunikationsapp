@@ -2199,7 +2199,7 @@ body.pb-enabled .divider::after {
 /* Program detail */
 .program-detail { padding-bottom: 40px; }
 .program-back-btn {
-  background: none; border: none; color: var(--ds-acc); font-size: 17px;
+  background: none; border: none; color: var(--ds-acc); font-size: 19px;
   font-weight: 600; cursor: pointer; padding: 0 0 16px 0;
   display: flex; align-items: center; gap: 6px;
 }
