@@ -818,6 +818,14 @@ function bindEventsSeq(modeData, strats, strat, bundleScenarios, scenario, bundl
     });
   });
 
+  // Bundle select — must be bound here too (bindEvents not called for sequences)
+  const bundleSelSeq = document.getElementById('bundle-select');
+  if (bundleSelSeq) bundleSelSeq.addEventListener('change', e => {
+    currentBundle = e.target.value;
+    currentScenarioIdx = 0;
+    renderModeContent();
+  });
+
   // Add bundle (shared)
   const addBundleBtn = document.getElementById('add-bundle-btn');
   if (addBundleBtn) addBundleBtn.addEventListener('click', () => {
@@ -1630,14 +1638,21 @@ function renderModeContent() {
       return all.filter(c => !c.bundle || c.bundle === currentBundle || currentBundle === 'free');
     }
     if (isSeq) {
-      const all = strat.steps || [];
-      if (isPro) return all.filter(s => !s.bundle || s.bundle === 'free' || s.bundle === 'pro');
-      return all.filter(s => !s.bundle || s.bundle === currentBundle || currentBundle === 'free');
+      // sequences handled separately above — should not reach here
+      return [];
     }
     // single, challenges, mindset, collections
     const all = strat.inputs || [];
     if (isPro) return all.filter(i => !i.bundle || i.bundle === 'free' || i.bundle === 'pro');
-    return all.filter(i => !i.bundle || i.bundle === currentBundle);
+    let result = all.filter(i => !i.bundle || i.bundle === currentBundle);
+    // Defensive: if nothing matched, fall back to free or untagged
+    if (!result.length && currentBundle !== 'free') {
+      result = all.filter(i => !i.bundle || i.bundle === 'free');
+      if (result.length) currentBundle = 'free';
+    }
+    // Final fallback: show all if still empty (handles packs with no bundle tags)
+    if (!result.length) result = all;
+    return result;
   };
   const items = getItems();
 
