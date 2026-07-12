@@ -1,9 +1,10 @@
 // editor-ui.js &mdash; Deckstack Pack Editor UI
 
-let currentPack   = null;
-let currentMode   = MODES[0].id;
-let currentStrat  = 0;
-let currentBundle = 'free';
+let currentPack        = null;
+let currentMode        = MODES[0].id;
+let currentStrat       = 0;
+let currentBundle      = 'free';
+let currentScenarioIdx = 0;
 
 // ── INIT ──────────────────────────────────────────────────────────────────────
 document.addEventListener('DOMContentLoaded', () => {
@@ -734,6 +735,103 @@ function handleJsonFileImport(e) {
   reader.readAsText(file);
 }
 
+// ── SEQUENCES EVENT BINDING ───────────────────────────────────────────────────
+
+function bindEventsSeq(modeData, strats, strat, scenarios, scenario, bundles) {
+  // Strategy switcher (shared with bindEvents)
+  const stratSel = document.getElementById('strat-select');
+  if (stratSel) stratSel.addEventListener('change', e => {
+    currentStrat = parseInt(e.target.value); currentScenarioIdx = 0; renderModeContent();
+  });
+  const renameBtn = document.getElementById('strat-rename-btn');
+  if (renameBtn) renameBtn.addEventListener('click', () => {
+    const name = prompt('Name:', strat.name || ''); if (name === null) return;
+    strat.name = name.trim(); markDirty(); renderModeContent();
+  });
+  const addStratBtn = document.getElementById('add-strat-btn');
+  if (addStratBtn) addStratBtn.addEventListener('click', () => {
+    const name = prompt('Name for new combo:'); if (!name?.trim()) return;
+    const s = emptyStrategy('sequences'); s.name = name.trim();
+    modeData.strategies.push(s); currentStrat = modeData.strategies.length - 1;
+    currentScenarioIdx = 0; markDirty(); renderModeContent();
+  });
+  const delStratBtn = document.getElementById('del-strat-btn');
+  if (delStratBtn) delStratBtn.addEventListener('click', () => {
+    if (modeData.strategies.length <= 1) { showToast('Need at least one combo'); return; }
+    if (!confirm(`Delete "${strat.name || 'this combo'}"?`)) return;
+    modeData.strategies.splice(currentStrat, 1);
+    currentStrat = Math.max(0, currentStrat - 1); currentScenarioIdx = 0;
+    markDirty(); renderModeContent();
+  });
+  const descTa = document.getElementById('desc-ta');
+  if (descTa) descTa.addEventListener('input', () => { strat.description = descTa.value; markDirty(); });
+
+  // Scenario tabs
+  document.querySelectorAll('.scenario-tab[data-sc]').forEach(btn => {
+    btn.addEventListener('click', () => { currentScenarioIdx = parseInt(btn.dataset.sc); renderModeContent(); });
+  });
+  const addScBtn = document.getElementById('add-scenario-btn');
+  if (addScBtn) addScBtn.addEventListener('click', () => {
+    strat.inputs = strat.inputs || [];
+    strat.inputs.push(emptyScenario(currentBundle === 'default' ? 'free' : currentBundle));
+    currentScenarioIdx = strat.inputs.length - 1; markDirty(); renderModeContent();
+  });
+  const delScBtn = document.getElementById('del-scenario-btn');
+  if (delScBtn) delScBtn.addEventListener('click', () => {
+    if (scenarios.length <= 1) { showToast('Need at least one scenario'); return; }
+    if (!confirm('Delete this scenario?')) return;
+    strat.inputs.splice(currentScenarioIdx, 1);
+    currentScenarioIdx = Math.max(0, currentScenarioIdx - 1); markDirty(); renderModeContent();
+  });
+
+  // Scenario bundle select
+  const scBundleSel = document.getElementById('scenario-bundle-sel');
+  if (scBundleSel) scBundleSel.addEventListener('change', e => {
+    scenario.bundle = e.target.value; markDirty(); renderModeContent();
+  });
+
+  // Situation textarea
+  const sitTa = document.querySelector('[data-sc-field="situation"]');
+  if (sitTa) sitTa.addEventListener('input', () => { scenario.situation = sitTa.value; markDirty(); });
+
+  // Step textareas
+  document.querySelectorAll('.card-ta[data-step]').forEach(ta => {
+    ta.addEventListener('input', () => {
+      const idx = parseInt(ta.dataset.step);
+      const field = ta.dataset.field;
+      if (!scenario.steps[idx]) scenario.steps[idx] = { front: '', back: '' };
+      scenario.steps[idx][field] = ta.value; markDirty();
+    });
+  });
+
+  // Add step
+  const addStepBtn = document.querySelector('.add-step-btn');
+  if (addStepBtn) addStepBtn.addEventListener('click', () => {
+    scenario.steps = scenario.steps || [];
+    scenario.steps.push(emptyStep()); markDirty(); renderModeContent();
+  });
+
+  // Delete step
+  document.querySelectorAll('.step-del').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const idx = parseInt(btn.dataset.step);
+      scenario.steps.splice(idx, 1); markDirty(); renderModeContent();
+    });
+  });
+
+  // Add bundle (shared)
+  const addBundleBtn = document.getElementById('add-bundle-btn');
+  if (addBundleBtn) addBundleBtn.addEventListener('click', () => {
+    const name = prompt('Bundle name (e.g. "Workplace & Social"):'); if (!name?.trim()) return;
+    const id = slugify(name.trim());
+    if (modeData.bundles.find(b => b.id === id)) { showToast('Bundle already exists'); return; }
+    const tierChoice = prompt('Bundle tier:\n1 = Pro opt-in\n2 = Extended\n\nEnter 1 or 2:', '1');
+    const tier = tierChoice === '2' ? 'extended' : 'pro-opt';
+    modeData.bundles.push({ id, name: name.trim(), tier });
+    markDirty(); renderModeContent();
+  });
+}
+
 function showSyntaxGuide() {
 
   // ── REGLER ──────────────────────────────────────────────────────────────────
@@ -741,19 +839,26 @@ function showSyntaxGuide() {
   var packRules =
     '<h3>Pack syntax — rules</h3>' +
     '<ul class="syntax-rules">' +
-    '<li><code>PACK:</code> — Pack name, one line. To import several packs in one paste, just use multiple <code>PACK:</code> blocks one after another.</li>' +
-    '<li><code>TAGS: tag one, tag two, tag three</code> — optional comma-separated list of search tags, placed directly after the <code>PACK:</code> line. Tags are used by the in-app search to surface packs for related concepts and synonyms.</li>' +
-    '<li><code>MODE:</code> — one of: <code>single</code>, <code>collections</code>, <code>memorize</code>, <code>sequences</code>, <code>challenges</code>, <code>mindset</code>. Only include modes relevant to the pack — you do not need all of them.</li>' +
-    '<li><code>## Strategy: Name</code> — starts a new strategy within a mode. Use <code>## Category:</code> for challenges, <code>## Combo:</code> for sequences, <code>## Collection:</code> for collections, <code>## Mindset:</code> for mindset.</li>' +
-    '<li><code>**Explanation:**</code> — descriptive text explaining the strategy. Can be several sentences on the same line or continued on the next non-empty line.</li>' +
-    '<li><code>BUNDLE: free</code> — the free-tier input cards (typically 5 per strategy). Always include this.</li>' +
-    '<li><code>BUNDLE: pro</code> — the <em>extra</em> pro-tier cards only (typically 3 per strategy). Do NOT repeat the free cards here — the app automatically includes free cards when pro is active. Pro users see all 8 (5 free + 3 pro); free users see the 5 free cards.</li>' +
-    '<li><code>BUNDLE: Name</code> — optional thematic bundle, e.g. "Workplace &amp; Social". Users activate these manually in the app.</li>' +
-    '<li>Card format depends on mode:<br>' +
-    '&nbsp;&nbsp;<code>- Situation: X | Response: Y</code> — single, collections, challenges, mindset<br>' +
-    '&nbsp;&nbsp;<code>- Front: X | Back: Y</code> — memorize<br>' +
-    '&nbsp;&nbsp;<code>- Prompt: X | Response: Y</code> — sequences</li>' +
-    '<li>Memorize and sequences modes do not use bundles — omit <code>BUNDLE:</code> lines there.</li>' +
+    '<li><code>PACK: Pack Name</code> — pack name, one line. Multiple <code>PACK:</code> blocks in one paste = multiple packs.</li>' +
+    '<li><code>BUNDLE IMPORT: pack-key</code> — use instead of <code>PACK:</code> to add a bundle to an existing pack (e.g. <code>BUNDLE IMPORT: assertive</code>). Only include the mode and bundle you are adding.</li>' +
+    '<li><code>TAGS: tag one, tag two</code> — optional comma-separated tags placed after the <code>PACK:</code> line.</li>' +
+    '<li><code>MODE:</code> — one of: <code>single</code>, <code>collections</code>, <code>memorize</code>, <code>sequences</code>, <code>challenges</code>, <code>mindset</code>. Only include modes you need.</li>' +
+    '<li><code>## Strategy: Name</code> — starts a new strategy. Use <code>## Category:</code> for challenges, <code>## Combo:</code> for sequences, <code>## Collection:</code> for collections, <code>## Mindset:</code> for mindset.</li>' +
+    '<li><code>**Explanation:**</code> — descriptive text explaining the strategy.</li>' +
+    '<li><code>BUNDLE: free</code> — base tier, seen by all users. Convention: 2 inputs per strategy.</li>' +
+    '<li><code>BUNDLE: pro</code> — extra pro tier, shown together with free for Pro users. Convention: 2 more per strategy (4 total).</li>' +
+    '<li><code>BUNDLE: workplace</code> or <code>BUNDLE: domestic</code> — opt-in bundles activated manually. Convention: 3 inputs per strategy each.</li>' +
+    '<li>Card format for single / collections / challenges / mindset:<br>' +
+    '&nbsp;&nbsp;<code>- Situation: X | Response: Y</code></li>' +
+    '<li>Memorize card format:<br>' +
+    '&nbsp;&nbsp;<code>- Front: X | Back: Y</code></li>' +
+    '<li>Sequences format — each scenario starts with <code>### Scenario:</code>:<br>' +
+    '&nbsp;&nbsp;<code>BUNDLE: free</code><br>' +
+    '&nbsp;&nbsp;<code>### Scenario:</code><br>' +
+    '&nbsp;&nbsp;<code>- Situation: Describe the situation</code><br>' +
+    '&nbsp;&nbsp;<code>- Step: Step 1 label | Step 1 explanation</code><br>' +
+    '&nbsp;&nbsp;<code>- Step: Step 2 label | Step 2 explanation</code><br>' +
+    'Change <code>BUNDLE:</code> between scenarios to assign each to a different bundle. Convention: 2 free, 2 pro, 3 workplace, 3 domestic per combo.</li>' +
     '</ul>';
 
   var programRules =
@@ -1457,9 +1562,71 @@ function renderModeContent() {
       </div>`;
   }
 
-  // ── Cards table
-  const frontLabel = isMem ? 'Front' : (isSeq ? 'Prompt' : 'Situation');
-  const backLabel  = isMem ? 'Back'  : 'Response';
+  // ── Sequences: scenario tab UI ───────────────────────────────────────────────
+  if (isSeq) {
+    const scenarios = strat.inputs || [];
+    // Clamp currentScenario index
+    if (typeof currentScenarioIdx === 'undefined' || currentScenarioIdx >= scenarios.length) currentScenarioIdx = 0;
+    const scenario = scenarios[currentScenarioIdx] || { bundle: currentBundle, situation: '', steps: [] };
+
+    html += `
+      <div class="field-block">
+        <label class="field-label">Scenarios
+          <span class="hint-text">— swipe vertically in the app</span>
+        </label>
+        <div class="scenario-tabs" id="scenario-tabs">
+          ${scenarios.map((sc, i) => `
+            <button class="scenario-tab${i === currentScenarioIdx ? ' scenario-tab--active' : ''}" data-sc="${i}">
+              Scenario ${i + 1}
+            </button>`).join('')}
+          ${!readOnly ? `<button class="scenario-tab scenario-tab--add" id="add-scenario-btn">+ Add</button>` : ''}
+        </div>
+      </div>
+
+      <div class="field-block scenario-bundle-row">
+        <label class="field-label">Bundle for this scenario</label>
+        <select class="select select--sm" id="scenario-bundle-sel">
+          <option value="free" ${scenario.bundle==='free'?'selected':''}>Free</option>
+          <option value="pro" ${scenario.bundle==='pro'?'selected':''}>Pro</option>
+          ${bundles.filter(b => b.id !== 'free' && b.id !== 'pro').map(b =>
+            `<option value="${b.id}" ${scenario.bundle===b.id?'selected':''}>${escHtml(b.name)}</option>`
+          ).join('')}
+        </select>
+        ${!readOnly ? `<button class="icon-btn danger" id="del-scenario-btn" title="Delete scenario">&#x2715;</button>` : ''}
+      </div>
+
+      <div class="cards-section">
+        <p class="hint-text" style="margin:0 0 10px 0;">
+          Card 1 describes the situation. Cards 2+ are the steps, one per card.
+        </p>
+        <div class="cards-header">
+          <span class="col-label">Front</span>
+          <span class="col-label">Back</span>
+          <span></span>
+        </div>
+
+        <div class="card-row card-row--situation" data-sc-field="situation">
+          <textarea class="card-ta" data-sc-field="situation" rows="2" ${readOnly?'readonly':''} placeholder="Describe the situation...">${escHtml(scenario.situation||'')}</textarea>
+          <div class="card-ta card-ta--placeholder" style="background:transparent;border:1px dashed var(--ds-border,#ccc);display:flex;align-items:center;justify-content:center;color:#aaa;font-size:12px;">auto-filled on back</div>
+          <span class="card-inherited-badge">Situation</span>
+        </div>
+
+        ${(scenario.steps||[]).map((st, i) => `
+        <div class="card-row" data-step="${i}">
+          <textarea class="card-ta" data-step="${i}" data-field="front" rows="2" ${readOnly?'readonly':''} placeholder="Step ${i+1} — label…">${escHtml(st.front||'')}</textarea>
+          <textarea class="card-ta" data-step="${i}" data-field="back" rows="2" ${readOnly?'readonly':''} placeholder="Step ${i+1} — explanation…">${escHtml(st.back||'')}</textarea>
+          ${!readOnly ? `<button class="icon-btn danger step-del" data-step="${i}" title="Remove step">&#x2715;</button>` : '<span></span>'}
+        </div>`).join('')}
+
+        ${!readOnly ? `<button class="btn btn--ghost add-step-btn" style="width:100%;margin-top:8px;">+ Add step</button>` : ''}
+      </div>`;
+
+    html += `</div>`; // mode-body
+    setHTML('mode-content', html);
+    bindEventsSeq(modeData, strats, strat, scenarios, scenario, bundles);
+    return;
+  }
+  // ── End sequences UI ─────────────────────────────────────────────────────────
   // Build items list — for 'pro' bundle, include free cards (shown locked) + pro cards
   const isPro = currentBundle === 'pro';
   const getItems = () => {
@@ -1517,6 +1684,7 @@ function bindEvents(modeData, strats, strat, bundles, isMem, isSeq) {
   if (stratSel) stratSel.addEventListener('change', e => {
     currentStrat = parseInt(e.target.value);
     currentBundle = 'free';
+    currentScenarioIdx = 0;
     renderModeContent();
   });
 

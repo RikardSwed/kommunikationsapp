@@ -1,7 +1,7 @@
 // editor-core.js — Deckstack Pack Editor
 // Depends on: data.js, challengesData.js, mindsetData.js, multiStepData.js, memorizeData.js
 
-const EDITOR_VERSION = 'v1.5.0';
+const EDITOR_VERSION = 'v1.6.0';
 const STORAGE_KEY    = 'ds_editor_packs';
 const ACTIVE_KEY     = 'ds_editor_active';
 
@@ -92,8 +92,16 @@ function packFromAppData(key) {
 
   const rawSeq = (getDS('_dsMultiStep'))[key] || [];
   pack.sequences = {
-    strategies: rawSeq.map(s => ({ name: s.name||'', description: s.description||'', steps: mapInputs(s.steps||s.inputs) })),
-    bundles: deriveBundles(rawSeq.map(s => ({ inputs: s.steps||s.inputs||[] }))),
+    strategies: rawSeq.map(s => ({
+      name: s.name || '',
+      description: s.subtitle || s.description || '',
+      inputs: (s.inputs || []).map(inp => ({
+        bundle: inp.bundle || 'free',
+        situation: inp.situation || '',
+        steps: (inp.steps || []).map(st => ({ front: st.front || '', back: st.back || '' })),
+      })),
+    })),
+    bundles: deriveBundles(rawSeq.map(s => ({ inputs: s.inputs || [] }))),
   };
 
   // Load tags from tagsData.js if available
@@ -106,11 +114,13 @@ function packFromAppData(key) {
 
 // ── DEFAULT STRUCTURES ────────────────────────────────────────────────────────
 
+function emptyScenario(bundle) { return { bundle: bundle || 'free', situation: '', steps: [{ front: '', back: '' }, { front: '', back: '' }, { front: '', back: '' }] }; }
 function emptyInput()  { return { q: '', a: '', bundle: 'default' }; }
 function emptyCard()   { return { q: '', a: '' }; }
+function emptyStep()   { return { front: '', back: '' }; }
 function emptyStrategy(modeId) {
   if (modeId === 'memorize')  return { name: '', description: '', cards:  [emptyCard()]  };
-  if (modeId === 'sequences') return { name: '', description: '', steps:  [emptyInput()] };
+  if (modeId === 'sequences') return { name: '', description: '', inputs: [emptyScenario('free')] };
   return                             { name: '', description: '', inputs: [emptyInput()] };
 }
 function emptyModeData(modeId) { return { strategies: [emptyStrategy(modeId)], bundles: [] }; }
@@ -271,20 +281,28 @@ function _parsePack(lines) {
   let packName = 'Imported pack';
   let packTagsArr = [];
   let currentModeId = 'single';
+  let currentBundle = 'default';
+  let isBundleImport = false;
+  let bundleImportTarget = null;
   const modeBuffers = {};
   MODES.forEach(m => { modeBuffers[m.id] = []; });
 
-  let currentStrat = null;
-  let currentBundle = 'default';
-  let inExplanation = false;
+  let currentStrat    = null;
+  let currentScenario = null; // sequences only
+  let inExplanation   = false;
   let explanationLines = [];
 
-  function pushStrat() {
-    if (!currentStrat) return;
-    if (inExplanation) {
-      currentStrat.description = explanationLines.join('\n').trim();
-      inExplanation = false; explanationLines = [];
+  function pushScenario() {
+    if (currentScenario && currentStrat && currentModeId === 'sequences') {
+      currentStrat.inputs.push(currentScenario);
     }
+    currentScenario = null;
+  }
+
+  function pushStrat() {
+    pushScenario();
+    if (!currentStrat) return;
+    if (inExplanation) { currentStrat.description = explanationLines.join('\n').trim(); inExplanation = false; explanationLines = []; }
     modeBuffers[currentModeId].push(currentStrat);
     currentStrat = null;
   }
@@ -294,13 +312,19 @@ function _parsePack(lines) {
     currentBundle = 'default';
     const isMem = currentModeId === 'memorize';
     const isSeq = currentModeId === 'sequences';
-    currentStrat = { name, description: '', ...(isMem ? { cards: [] } : isSeq ? { steps: [] } : { inputs: [] }) };
+    currentStrat = { name, description: '', ...(isMem ? { cards: [] } : isSeq ? { inputs: [] } : { inputs: [] }) };
+  }
+
+  function newScenario() {
+    pushScenario();
+    currentScenario = { bundle: currentBundle === 'default' ? 'free' : currentBundle, situation: '', steps: [] };
   }
 
   for (const raw of lines) {
     const line = raw.trim();
     if (!line) { if (inExplanation) { inExplanation = false; currentStrat && (currentStrat.description = explanationLines.join('\n').trim()); } continue; }
 
+    if (/^BUNDLE IMPORT:/i.test(line)) { isBundleImport = true; bundleImportTarget = line.replace(/^BUNDLE IMPORT:/i,'').trim().toLowerCase(); continue; }
     if (/^PACK:/i.test(line)) { packName = line.replace(/^PACK:/i,'').trim(); continue; }
     if (/^TAGS:/i.test(line)) { packTagsArr = line.replace(/^TAGS:/i,'').split(',').map(t => t.trim().toLowerCase()).filter(Boolean); continue; }
 
@@ -313,53 +337,81 @@ function _parsePack(lines) {
       continue;
     }
 
-    // BUNDLE line — sets current bundle for subsequent cards
     if (/^BUNDLE:/i.test(line)) {
       const bName = line.replace(/^BUNDLE:/i,'').trim();
       currentBundle = bName.toLowerCase() === 'default' ? 'default' : slugify(bName) || bName.toLowerCase();
+      if (currentScenario && currentModeId === 'sequences') currentScenario.bundle = currentBundle;
       continue;
     }
 
     const stratMatch = line.match(/^##\s+(?:Strategy|Category|Combo|Collection|Mindset):\s*(.+)/i);
     if (stratMatch) { newStrat(stratMatch[1].trim()); continue; }
 
+    // ### Scenario: — starts a new scenario within a sequences combo
+    if (/^###\s+Scenario:/i.test(line) && currentModeId === 'sequences') {
+      newScenario(); continue;
+    }
+
+    // - Situation: text — sets situation for current scenario (sequences)
+    if (/^-\s+Situation:\s*/i.test(line) && currentModeId === 'sequences' && currentStrat) {
+      if (!currentScenario) newScenario();
+      currentScenario.situation = line.replace(/^-\s+Situation:\s*/i,'').trim();
+      continue;
+    }
+
+    // - Step: Front | Back — adds a step to current scenario (sequences)
+    if (/^-\s+Step:\s*/i.test(line) && currentModeId === 'sequences' && currentStrat) {
+      if (!currentScenario) newScenario();
+      const rest  = line.replace(/^-\s+Step:\s*/i,'');
+      const parts = rest.split(/\s*\|\s*/);
+      currentScenario.steps.push({ front: parts[0]?.trim() || '', back: parts[1]?.trim() || '' });
+      continue;
+    }
+
     if (/^\*\*Explanation:\*\*/i.test(line)) {
       if (currentStrat) { inExplanation = true; explanationLines = [line.replace(/^\*\*Explanation:\*\*\s*/i,'')]; }
       continue;
     }
 
-    if (inExplanation && currentStrat && !line.startsWith('-')) {
-      explanationLines.push(line); continue;
-    }
+    if (inExplanation && currentStrat && !line.startsWith('-')) { explanationLines.push(line); continue; }
 
-    const cardMatch = line.match(/^-\s+(?:Situation|Front|Prompt|Q):\s*(.+?)\s*\|\s*(?:Response|Back|A):\s*(.+)/i);
-    if (cardMatch && currentStrat) {
-      const q = cardMatch[1].trim();
-      const a = cardMatch[2].trim();
-      if (currentModeId === 'memorize')       currentStrat.cards.push({ q, a, bundle: currentBundle });
-      else if (currentModeId === 'sequences') currentStrat.steps.push({ q, a, bundle: currentBundle });
-      else                                    currentStrat.inputs.push({ q, a, bundle: currentBundle });
+    // Standard card (non-sequences modes)
+    const cardMatch = line.match(/^-\s+(?:Front|Prompt|Q):\s*(.+?)\s*\|\s*(?:Response|Back|A):\s*(.+)/i);
+    if (cardMatch && currentStrat && currentModeId !== 'sequences') {
+      const q = cardMatch[1].trim(), a = cardMatch[2].trim();
+      if (currentModeId === 'memorize') currentStrat.cards.push({ q, a, bundle: currentBundle });
+      else                              currentStrat.inputs.push({ q, a, bundle: currentBundle });
     }
   }
   pushStrat();
 
   const pack = emptyPack(packName);
+  pack._isBundleImport  = isBundleImport;
+  pack._bundleImportTarget = bundleImportTarget;
+
   MODES.forEach(m => {
     if (modeBuffers[m.id].length) {
-      // Derive bundles from inputs
       const bundleIds = new Set();
       modeBuffers[m.id].forEach(s => {
-        (s.inputs || s.steps || []).forEach(i => { if (i.bundle && i.bundle !== 'default') bundleIds.add(i.bundle); });
+        (s.inputs || s.cards || []).forEach(i => {
+          const b = i.bundle;
+          if (b && b !== 'default') bundleIds.add(b);
+        });
       });
       pack[m.id] = {
         strategies: modeBuffers[m.id],
-        bundles: [...bundleIds].map(id => ({ id, name: id.charAt(0).toUpperCase() + id.slice(1) })),
+        bundles: [...bundleIds].map(id => ({
+          id,
+          name: id === 'free' ? 'Free Bundle' : id === 'pro' ? 'Pro Bundle' : id.charAt(0).toUpperCase() + id.slice(1).replace(/-/g,' '),
+          tier: id === 'free' ? 'free' : id === 'pro' ? 'pro' : 'pro-opt',
+        })),
       };
     }
   });
   if (packTagsArr.length) pack.tags = packTagsArr;
   return pack;
 }
+
 
 function _parseSinglePack(lines) {
   return _parsePack(lines);
