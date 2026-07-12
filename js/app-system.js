@@ -369,7 +369,9 @@ function getActiveBundles(packKey) {
   const canUseTier = (tier, bundleId) => {
     if (tier === 'free') return true;
     if (tier === 'pro' || tier === 'pro-opt') return level === 'pro' || level === 'complete';
-    if (tier === 'extended') return isExtendedBundleOwned(bundleId);
+    // Extended bundles require pro/complete level AND ownership —
+    // freemium always sees only the free bundle
+    if (tier === 'extended') return (level === 'pro' || level === 'complete') && isExtendedBundleOwned(bundleId);
     return false;
   };
 
@@ -379,16 +381,22 @@ function getActiveBundles(packKey) {
   const hasFreeBundle = defs.some(b => b.tier === 'free');
   const isPro = canUseTier('pro', 'pro');
 
-  // Base bundles (auto, not toggleable)
+  // Base bundles (auto, not toggleable).
+  // The free bundle is tied to the pro bundle: pro's cards are the EXTRAS on
+  // top of free, so together they form the "pro experience". When a pro user
+  // turns the pro bundle off, free goes with it — only explicitly enabled
+  // bundles (workplace/domestic etc.) remain. Free stands alone only for
+  // freemium users, or in packs that have no pro bundle at all.
   let base = [];
-  if (isPro && hasProBundle && !proOffMarker) {
-    // Pro active: include both free and pro so filter matches both
+  const proOn = isPro && hasProBundle && !proOffMarker;
+  if (proOn) {
     if (hasFreeBundle) base.push('free');
     base.push('pro');
-  } else {
-    // Freemium or pro turned off: only free
+  } else if (!isPro || !hasProBundle) {
+    // Freemium, or pack without a pro bundle: free is the standalone base
     if (hasFreeBundle) base.push('free');
   }
+  // (isPro && hasProBundle && proOffMarker => no base; only toggled bundles show)
 
   // Opt-in bundles (pro-opt and owned extended) if saved
   const toggleable = defs.filter(b =>
@@ -399,6 +407,10 @@ function getActiveBundles(packKey) {
 
   const result = [...new Set([...base, ...toggleable])];
   if (result.length === 0) {
+    // Safety net — the UI enforces "at least one bundle active", but if state
+    // ends up empty anyway (e.g. Clear Extended Purchases removed the only
+    // active bundle while pro:off lingered) fall back to the default view
+    // rather than an empty screen.
     return isPro && hasProBundle ? ['free', 'pro'] : ['free'];
   }
   return result;
@@ -456,7 +468,8 @@ window.renderBundleSection = function(containerEl, packKey) {
   const canUseTier = (tier, bundleId) => {
     if (tier === 'free') return true;
     if (tier === 'pro' || tier === 'pro-opt') return level === 'pro' || level === 'complete';
-    if (tier === 'extended') return level === 'complete' || extOwned.includes(`${packKey}::${bundleId}`);
+    if (tier === 'extended') return level === 'complete' ||
+      (level === 'pro' && extOwned.includes(`${packKey}::${bundleId}`));
     return false;
   };
 
@@ -464,6 +477,21 @@ window.renderBundleSection = function(containerEl, packKey) {
   const hasProBundle = defs.some(b => b.tier === 'pro');
   const saved = getBundleState(packKey) || [];
   const active = getActiveBundles(packKey);
+
+  // Brief inline hint when a toggle is blocked ("at least one bundle")
+  function showBundleHint() {
+    let hint = section.querySelector('.bundle-hint');
+    if (!hint) {
+      hint = document.createElement('div');
+      hint.className = 'bundle-hint';
+      hint.style.cssText = 'font-size:12px;color:var(--ds-acc,#B05A28);padding:6px 2px 0;transition:opacity 0.4s;';
+      section.appendChild(hint);
+    }
+    hint.textContent = 'At least one bundle must be active.';
+    hint.style.opacity = '1';
+    clearTimeout(hint._t);
+    hint._t = setTimeout(() => { hint.style.opacity = '0'; }, 2200);
+  }
 
   defs.forEach(bundle => {
     const accessible = canUseTier(bundle.tier, bundle.id);
@@ -507,10 +535,17 @@ window.renderBundleSection = function(containerEl, packKey) {
           toggle.addEventListener('change', function() {
             const cur = getBundleState(packKey) || [];
             if (!this.checked) {
-              // Pro can always be turned off — the free bundle remains as base
+              // Turning pro off also removes free (they belong together), so
+              // at least one other bundle must be active to take over.
+              const otherActive = defs.some(b =>
+                (b.tier === 'pro-opt' || b.tier === 'extended') &&
+                canUseTier(b.tier, b.id) &&
+                cur.includes(b.id)
+              );
+              if (!otherActive) { this.checked = true; showBundleHint(); return; }
               setBundleState(packKey, [...cur.filter(id => id !== 'pro:off'), 'pro:off']);
             } else {
-              // Remove pro:off marker to re-enable pro
+              // Remove pro:off marker to re-enable pro (free follows along)
               setBundleState(packKey, cur.filter(id => id !== 'pro:off'));
             }
           });
@@ -533,7 +568,20 @@ window.renderBundleSection = function(containerEl, packKey) {
         toggle.addEventListener('change', function() {
           const cur = getBundleState(packKey) || [];
           if (!this.checked) {
-            // Any bundle can be turned off — the free bundle remains as base
+            // At least one bundle must stay active: pro (which carries free),
+            // another opt-in/extended bundle — or, in packs without a pro
+            // bundle, the standalone free base.
+            const proIsOn = hasProBundle && isPro && !cur.includes('pro:off');
+            const otherOptActive = defs.some(b =>
+              b.id !== bundle.id &&
+              (b.tier === 'pro-opt' || b.tier === 'extended') &&
+              canUseTier(b.tier, b.id) &&
+              cur.includes(b.id)
+            );
+            const freeStandsAlone = !hasProBundle && defs.some(b => b.tier === 'free');
+            if (!proIsOn && !otherOptActive && !freeStandsAlone) {
+              this.checked = true; showBundleHint(); return;
+            }
             setBundleState(packKey, cur.filter(id => id !== bundle.id));
           } else {
             setBundleState(packKey, [...new Set([...cur, bundle.id])]);
