@@ -1561,6 +1561,10 @@ function renderModeContent() {
       </div>`;
   }
 
+  // ── Labels for card columns (used by non-sequences modes below)
+  const frontLabel = isMem ? 'Front' : 'Situation';
+  const backLabel  = isMem ? 'Back'  : 'Response';
+
   // ── Sequences: scenario tab UI ───────────────────────────────────────────────
   if (isSeq) {
     const allScenarios = strat.inputs || [];
