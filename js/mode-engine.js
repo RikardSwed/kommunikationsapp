@@ -371,6 +371,7 @@ const DS = (function () {
       playing: false, abort: false, skipStep: false,
       timeouts: [], delayResolve: null,
       _pbBound: false,
+      animating: false,
     };
 
     const group = () => mode.groups[mode.gi];
@@ -593,11 +594,21 @@ const DS = (function () {
       if (els.inner) els.inner.style.transition = 'none';
     }
 
+    function trig(dir, cb) {
+      if (mode.animating || mode.playing) return;
+      mode.animating = true;
+      if (els.card) els.card.classList.add('swipe-' + dir);
+      setTimeout(() => {
+        if (els.card) els.card.classList.remove('swipe-' + dir);
+        cb(); mode.animating = false;
+      }, 220);
+    }
+
     const itemCount = () => items(group()).length;
-    const manNextGroup = () => { if (mode.playing) return; mode.gi = (mode.gi + 1) % mode.groups.length; mode.ii = 0; renderManual(); };
-    const manPrevGroup = () => { if (mode.playing) return; mode.gi = (mode.gi - 1 + mode.groups.length) % mode.groups.length; mode.ii = 0; renderManual(); };
-    const manNextItem  = () => { if (mode.playing) return; mode.ii = (mode.ii + 1) % itemCount(); renderManual(); };
-    const manPrevItem  = () => { if (mode.playing) return; mode.ii = (mode.ii - 1 + itemCount()) % itemCount(); renderManual(); };
+    const manNextGroup = () => { trig('left',  () => { mode.gi = (mode.gi + 1) % mode.groups.length; mode.ii = 0; renderManual(); }); };
+    const manPrevGroup = () => { trig('right', () => { mode.gi = (mode.gi - 1 + mode.groups.length) % mode.groups.length; mode.ii = 0; renderManual(); }); };
+    const manNextItem  = () => { trig('up',    () => { mode.ii = (mode.ii + 1) % itemCount(); renderManual(); }); };
+    const manPrevItem  = () => { trig('down',  () => { mode.ii = (mode.ii - 1 + itemCount()) % itemCount(); renderManual(); }); };
 
     attachSwipe(els.card, {
       enabled: () => !mode.playing,
