@@ -7,7 +7,7 @@ const multiStepCollections = {
       name: "Hold Your Ground",
       subtitle: "State → Hold → Broken Record",
       inputs: [
-        // ── Free ─────────────────────────────────────────────────────────────
+        // ── Free (2) ─────────────────────────────────────────────────────────
         {
           bundle: "free",
           situation: "Someone keeps arguing after you've said no",
@@ -17,17 +17,35 @@ const multiStepCollections = {
             { front: "Step 3 — Broken record if they push again", back: "Same calm sentence. No new arguments. \"My answer is still no.\" The repetition is the technique — it removes fuel." }
           ]
         },
-        // ── Pro ──────────────────────────────────────────────────────────────
+        {
+          bundle: "free",
+          situation: "A friend guilt-trips you after you've declined an invitation",
+          steps: [
+            { front: "Step 1 — Hold your original answer", back: "\"I'm not going to make it.\" Don't reopen the negotiation. The answer was given — it doesn't need justifying again." },
+            { front: "Step 2 — Acknowledge their feeling without absorbing it", back: "\"I hear that you're disappointed.\" That's it. You're not agreeing that you owe them a different answer." },
+            { front: "Step 3 — Broken record if needed", back: "\"My answer is still no.\" Same tone, same brevity. Guilt needs silence or explanation to work — give it neither." }
+          ]
+        },
+        // ── Pro (2) ──────────────────────────────────────────────────────────
         {
           bundle: "pro",
           situation: "Someone pressures you to change a decision you've already made",
           steps: [
             { front: "Step 1 — Restate your decision calmly", back: "\"I've thought about this and I'm going ahead with X.\" State it as decided, not debatable." },
             { front: "Step 2 — Hear their concern without absorbing it", back: "\"I hear that you're concerned about Y.\" Acknowledge — don't defend or explain yet." },
-            { front: "Step 3 — Return to your position", back: "\"I've considered that — I'm still going with X.\" Calm, no escalation, no new arguments." }
+            { front: "Step 3 — Return to your position", back: "\"I've considered that — I'm still going with X.\" Calm, no escalation, no new arguments from you." }
           ]
         },
-        // ── Workplace ─────────────────────────────────────────────────────────
+        {
+          bundle: "pro",
+          situation: "Someone uses emotional escalation to make you back down",
+          steps: [
+            { front: "Step 1 — Don't match their energy", back: "Their escalation is designed to pull you off balance. The more they raise the temperature, the more you lower yours. Silence is an option." },
+            { front: "Step 2 — Restate your position briefly", back: "\"My position hasn't changed.\" You don't need to explain why the escalation isn't working on you. Just don't move." },
+            { front: "Step 3 — Offer to continue when the temperature drops", back: "\"I'm happy to talk about this when things are calmer.\" Then hold that. It's not an exit — it's a condition." }
+          ]
+        },
+        // ── Workplace (3) ─────────────────────────────────────────────────────
         {
           bundle: "workplace",
           situation: "Your manager asks you to take on extra work when you're already at capacity",
@@ -39,14 +57,23 @@ const multiStepCollections = {
         },
         {
           bundle: "workplace",
-          situation: "A colleague repeatedly redirects your work tasks without authority to do so",
+          situation: "A client keeps pushing for a lower price after you've given your final number",
           steps: [
-            { front: "Step 1 — Name what's happening specifically", back: "\"I've noticed that you've been reassigning tasks that come through me — I want to address that.\" Calm, specific, no accusation." },
-            { front: "Step 2 — State your position clearly", back: "\"Those decisions go through me. I'm happy to collaborate, but I need to be the one making the call.\"" },
-            { front: "Step 3 — Hold it if they push back", back: "\"I hear you — and I'm still going to need this to go through me from now on.\" Brief, no anger, no negotiation on the principle." }
+            { front: "Step 1 — Hold the number without apologising for it", back: "\"That's my price for this scope.\" No hedging, no \"unfortunately\", no pre-emptive justification. The number is the number." },
+            { front: "Step 2 — Acknowledge and hold", back: "\"I understand you were hoping for something lower — this is what I can offer.\" You've heard them. You're not moving." },
+            { front: "Step 3 — Broken record if they push further", back: "\"I'm not able to go lower on this one.\" Same calm sentence. If the price genuinely isn't negotiable — don't negotiate." }
           ]
         },
-        // ── Domestic ──────────────────────────────────────────────────────────
+        {
+          bundle: "workplace",
+          situation: "A colleague pushes back hard on a decision you've made in your area of responsibility",
+          steps: [
+            { front: "Step 1 — Hear them out fully before responding", back: "Don't cut them off. Let them make their case. You're not agreeing by listening — you're gathering information." },
+            { front: "Step 2 — Acknowledge and clarify your authority", back: "\"I've heard your concern — this one sits with me.\" Calm, factual. Not defensive." },
+            { front: "Step 3 — Hold the decision", back: "\"I'm going to go ahead with [X]. If that changes, I'll let you know.\" The door isn't completely closed — but the decision isn't moving today." }
+          ]
+        },
+        // ── Domestic (3) ─────────────────────────────────────────────────────
         {
           bundle: "domestic",
           situation: "A family member keeps pushing you to attend an event you've already declined",
@@ -64,6 +91,15 @@ const multiStepCollections = {
             { front: "Step 2 — Hold your position despite the pressure", back: "Don't be drawn into deciding when you're not in the right state. The urgency they're creating isn't necessarily real." },
             { front: "Step 3 — Offer a real alternative — and mean it", back: "\"Let's come back to this when we've both had time to settle.\" Then actually do it. Following through is what makes this assertive rather than avoidant." }
           ]
+        },
+        {
+          bundle: "domestic",
+          situation: "A parent repeatedly questions a life choice you've already made and explained",
+          steps: [
+            { front: "Step 1 — Don't re-explain", back: "You've already given your reasons. Giving them again signals that the right argument will change your mind. It invites more questioning." },
+            { front: "Step 2 — Acknowledge and close", back: "\"I know you see it differently — I've made my decision.\" Brief, warm if possible, final." },
+            { front: "Step 3 — Broken record if it comes up again", back: "\"This isn't something I'm going to keep discussing.\" You're not angry — you're done. That's different." }
+          ]
         }
       ]
     },
@@ -72,7 +108,7 @@ const multiStepCollections = {
       name: "Name the Pattern",
       subtitle: "Observe → State → Request",
       inputs: [
-        // ── Free ─────────────────────────────────────────────────────────────
+        // ── Free (2) ─────────────────────────────────────────────────────────
         {
           bundle: "free",
           situation: "Someone repeatedly interrupts you in meetings",
@@ -82,17 +118,35 @@ const multiStepCollections = {
             { front: "Step 3 — Make a clear request", back: "\"I'd like to be able to finish before we respond.\" Specific and actionable — not a complaint, a request." }
           ]
         },
-        // ── Pro ──────────────────────────────────────────────────────────────
         {
-          bundle: "pro",
-          situation: "Someone consistently speaks over you in social settings",
+          bundle: "free",
+          situation: "Someone consistently makes plans and then cancels at the last minute",
           steps: [
-            { front: "Step 1 — Address it in the moment, calmly", back: "\"I wasn't finished.\" Said quietly and clearly, without apology. In the moment, not after." },
-            { front: "Step 2 — Finish your sentence even if the conversation has moved on", back: "\"What I was saying was [X].\" Don't trail off. Don't apologise for bringing it back. You had a point — finish it." },
-            { front: "Step 3 — If it's a pattern, name it separately", back: "Away from the group: \"I've noticed that I often get cut off when we're together — can we talk about that?\" Naming it privately is different from confronting it publicly." }
+            { front: "Step 1 — Observe the pattern specifically", back: "\"This is the third time in a row that plans have been cancelled last minute.\" Specific — not \"you always do this\"." },
+            { front: "Step 2 — State the effect", back: "\"It's making it hard for me to plan around, and I end up feeling like it's not a priority.\" How it lands — not a character judgement." },
+            { front: "Step 3 — Make a clear request", back: "\"Can we either commit properly when we plan, or not plan until we're sure?\" Specific and actionable." }
           ]
         },
-        // ── Workplace ─────────────────────────────────────────────────────────
+        // ── Pro (2) ──────────────────────────────────────────────────────────
+        {
+          bundle: "pro",
+          situation: "Someone consistently ignores your input in group decisions",
+          steps: [
+            { front: "Step 1 — Observe the pattern specifically", back: "\"I've raised X a few times now and it hasn't been included in the discussion.\" Specific — not a general complaint." },
+            { front: "Step 2 — Say what you want, not what's wrong", back: "\"I'd like my input to be considered, even if the final decision goes another way.\"" },
+            { front: "Step 3 — Check for understanding", back: "\"Does that make sense?\" Brief, not demanding. You've said it clearly. That's enough." }
+          ]
+        },
+        {
+          bundle: "pro",
+          situation: "Someone makes jokes at your expense repeatedly, framed as 'just joking'",
+          steps: [
+            { front: "Step 1 — Name the pattern, not the intention", back: "\"I've noticed you often make jokes about [X] — I want to address that.\" The 'just joking' frame doesn't change the effect. Don't argue about intent." },
+            { front: "Step 2 — State the effect without drama", back: "\"It's not something I find funny, and I'd like it to stop.\" Simple. You're not asking for an apology or an explanation." },
+            { front: "Step 3 — Hold if they push back", back: "\"Maybe — this specific thing isn't one I'm going to laugh off.\" You don't need to defend your reaction. You've made your request clearly." }
+          ]
+        },
+        // ── Workplace (3) ─────────────────────────────────────────────────────
         {
           bundle: "workplace",
           situation: "A colleague takes credit for your idea in a team meeting",
@@ -102,20 +156,55 @@ const multiStepCollections = {
             { front: "Step 3 — Make a clear request for the future", back: "\"I'd like us to be clear about who brought what to the table.\" Specific and professional." }
           ]
         },
-        // ── Domestic ──────────────────────────────────────────────────────────
+        {
+          bundle: "workplace",
+          situation: "Your manager gives you feedback in front of others in a way that feels undermining",
+          steps: [
+            { front: "Step 1 — Don't react in the moment — note it", back: "In the room: hold it. Your response is more powerful when it's calm and private, not reactive and public." },
+            { front: "Step 2 — Raise it directly afterwards", back: "\"I want to talk about the feedback you gave me in the meeting. I'd prefer that kind of feedback to come privately.\" Specific and direct." },
+            { front: "Step 3 — Make your request clear", back: "\"Going forward, can we keep performance conversations between us?\" One clear ask. No lecture." }
+          ]
+        },
+        {
+          bundle: "workplace",
+          situation: "A colleague repeatedly dismisses your contributions with 'we already tried that'",
+          steps: [
+            { front: "Step 1 — Name the pattern specifically", back: "\"I've noticed that when I raise ideas, the response is often that they've been tried before.\" Observed behaviour — not an attack on their character." },
+            { front: "Step 2 — State what you need", back: "\"I'd like to understand what was tried and what the outcome was — rather than the idea being closed down immediately.\"" },
+            { front: "Step 3 — Make a concrete request", back: "\"Can we agree to give new ideas a proper hearing before we rule them out?\" Specific enough to be actionable." }
+          ]
+        },
+        // ── Domestic (3) ─────────────────────────────────────────────────────
         {
           bundle: "domestic",
           situation: "A housemate or partner consistently leaves shared responsibilities to you without acknowledgement",
           steps: [
-            { front: "Step 1 — Name the pattern specifically, not the character", back: "\"I've noticed that [specific thing — dishes, bills, errands] keeps falling to me.\" Not: \"you never do anything.\"" },
+            { front: "Step 1 — Name the pattern specifically, not the character", back: "\"I've noticed that [specific task] keeps falling to me.\" Not: \"you never do anything.\"" },
             { front: "Step 2 — State the effect on you", back: "\"It's starting to feel unbalanced, and I'd like us to talk about it.\" How it lands for you — not what it says about them." },
             { front: "Step 3 — Make a concrete request", back: "\"Can we agree on how we're splitting [specific task] going forward?\" Specific, actionable — something you can actually track." }
+          ]
+        },
+        {
+          bundle: "domestic",
+          situation: "A family member repeatedly comments on your eating, weight, or lifestyle choices",
+          steps: [
+            { front: "Step 1 — Name the pattern directly", back: "\"I've noticed that my [eating/weight/choices] come up a lot when we're together — I'd like to address that.\" Calm, specific, no accusations." },
+            { front: "Step 2 — State what you need", back: "\"I'm not looking for feedback on this. I'd like it to not be a topic.\" Clear — not a debate opener." },
+            { front: "Step 3 — Hold if they push back or reframe it as concern", back: "\"I know it comes from a good place — I still need it to stop.\" You can acknowledge their intention without accepting the behaviour." }
+          ]
+        },
+        {
+          bundle: "domestic",
+          situation: "Your partner frequently shuts down or goes silent when you try to raise a concern",
+          steps: [
+            { front: "Step 1 — Name the pattern without attacking", back: "\"I've noticed that when I bring something up, the conversation tends to close down quickly — I'd like to talk about that.\"" },
+            { front: "Step 2 — State what it costs you", back: "\"It means things don't get resolved, and I end up feeling like I can't raise things.\" Your experience — not a verdict on them." },
+            { front: "Step 3 — Make a request and leave it open", back: "\"I'd like us to find a way to talk about difficult things — even if we need a pause first. Can we try that?\" Specific enough to act on, open enough to work with together." }
           ]
         }
       ]
     }
   ],
-
 
   criticism: [
     {

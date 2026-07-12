@@ -737,7 +737,9 @@ function handleJsonFileImport(e) {
 
 // ── SEQUENCES EVENT BINDING ───────────────────────────────────────────────────
 
-function bindEventsSeq(modeData, strats, strat, scenarios, scenario, bundles) {
+function bindEventsSeq(modeData, strats, strat, bundleScenarios, scenario, bundles) {
+  const allScenarios = strat.inputs || [];
+  const scenarioAbsIdx = allScenarios.indexOf(scenario);
   // Strategy switcher (shared with bindEvents)
   const stratSel = document.getElementById('strat-select');
   if (stratSel) stratSel.addEventListener('change', e => {
@@ -773,21 +775,18 @@ function bindEventsSeq(modeData, strats, strat, scenarios, scenario, bundles) {
   const addScBtn = document.getElementById('add-scenario-btn');
   if (addScBtn) addScBtn.addEventListener('click', () => {
     strat.inputs = strat.inputs || [];
-    strat.inputs.push(emptyScenario(currentBundle === 'default' ? 'free' : currentBundle));
-    currentScenarioIdx = strat.inputs.length - 1; markDirty(); renderModeContent();
+    const bundle = currentBundle === 'default' ? 'free' : currentBundle;
+    strat.inputs.push(emptyScenario(bundle));
+    // Count how many scenarios now exist for this bundle and go to last
+    const bundleCount = strat.inputs.filter(sc => (sc.bundle||'free') === bundle).length;
+    currentScenarioIdx = bundleCount - 1; markDirty(); renderModeContent();
   });
   const delScBtn = document.getElementById('del-scenario-btn');
   if (delScBtn) delScBtn.addEventListener('click', () => {
-    if (scenarios.length <= 1) { showToast('Need at least one scenario'); return; }
+    if (bundleScenarios.length <= 1) { showToast('Need at least one scenario in this bundle'); return; }
     if (!confirm('Delete this scenario?')) return;
-    strat.inputs.splice(currentScenarioIdx, 1);
+    if (scenarioAbsIdx >= 0) strat.inputs.splice(scenarioAbsIdx, 1);
     currentScenarioIdx = Math.max(0, currentScenarioIdx - 1); markDirty(); renderModeContent();
-  });
-
-  // Scenario bundle select
-  const scBundleSel = document.getElementById('scenario-bundle-sel');
-  if (scBundleSel) scBundleSel.addEventListener('change', e => {
-    scenario.bundle = e.target.value; markDirty(); renderModeContent();
   });
 
   // Situation textarea
@@ -1564,18 +1563,20 @@ function renderModeContent() {
 
   // ── Sequences: scenario tab UI ───────────────────────────────────────────────
   if (isSeq) {
-    const scenarios = strat.inputs || [];
-    // Clamp currentScenario index
-    if (typeof currentScenarioIdx === 'undefined' || currentScenarioIdx >= scenarios.length) currentScenarioIdx = 0;
-    const scenario = scenarios[currentScenarioIdx] || { bundle: currentBundle, situation: '', steps: [] };
+    const allScenarios = strat.inputs || [];
+    // Show only scenarios matching the current bundle
+    const bundleScenarios = allScenarios.filter(sc => (sc.bundle || 'free') === currentBundle);
+    if (currentScenarioIdx >= bundleScenarios.length) currentScenarioIdx = 0;
+    const scenario = bundleScenarios[currentScenarioIdx] || { bundle: currentBundle, situation: '', steps: [] };
+    const scenarioAbsIdx = allScenarios.indexOf(scenario);
 
     html += `
       <div class="field-block">
-        <label class="field-label">Scenarios
-          <span class="hint-text">— swipe vertically in the app</span>
+        <label class="field-label">Scenarios for <strong>${escHtml(currentBundle)}</strong>
+          <span class="hint-text"> — swipe vertically in the app</span>
         </label>
         <div class="scenario-tabs" id="scenario-tabs">
-          ${scenarios.map((sc, i) => `
+          ${bundleScenarios.map((sc, i) => `
             <button class="scenario-tab${i === currentScenarioIdx ? ' scenario-tab--active' : ''}" data-sc="${i}">
               Scenario ${i + 1}
             </button>`).join('')}
@@ -1583,22 +1584,11 @@ function renderModeContent() {
         </div>
       </div>
 
-      <div class="field-block scenario-bundle-row">
-        <label class="field-label">Bundle for this scenario</label>
-        <select class="select select--sm" id="scenario-bundle-sel">
-          <option value="free" ${scenario.bundle==='free'?'selected':''}>Free</option>
-          <option value="pro" ${scenario.bundle==='pro'?'selected':''}>Pro</option>
-          ${bundles.filter(b => b.id !== 'free' && b.id !== 'pro').map(b =>
-            `<option value="${b.id}" ${scenario.bundle===b.id?'selected':''}>${escHtml(b.name)}</option>`
-          ).join('')}
-        </select>
-        ${!readOnly ? `<button class="icon-btn danger" id="del-scenario-btn" title="Delete scenario">&#x2715;</button>` : ''}
-      </div>
-
       <div class="cards-section">
         <p class="hint-text" style="margin:0 0 10px 0;">
           Card 1 describes the situation. Cards 2+ are the steps, one per card.
         </p>
+        ${!readOnly ? `<button class="icon-btn danger" id="del-scenario-btn" title="Delete this scenario" style="margin-bottom:8px;">&#x2715; Delete scenario</button>` : ''}
         <div class="cards-header">
           <span class="col-label">Front</span>
           <span class="col-label">Back</span>
@@ -1623,7 +1613,7 @@ function renderModeContent() {
 
     html += `</div>`; // mode-body
     setHTML('mode-content', html);
-    bindEventsSeq(modeData, strats, strat, scenarios, scenario, bundles);
+    bindEventsSeq(modeData, strats, strat, bundleScenarios, scenario, bundles);
     return;
   }
   // ── End sequences UI ─────────────────────────────────────────────────────────
