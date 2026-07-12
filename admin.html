@@ -584,7 +584,7 @@
   <div class="topbar">
     <button class="btn btn--ghost btn--sm" onclick="window.location.href='index.html'" style="margin-right:8px;" title="Back to app">&larr; App</button>
     <span class="topbar-title" onclick="showHome()" style="cursor:pointer;" title="Back to home">Deckstack — Pack Editor</span>
-    <span class="topbar-version" id="editorVersionLabel">Editor v1.6.4 · Changes saved automatically</span>
+    <span class="topbar-version" id="editorVersionLabel">Editor v1.6.5 · Changes saved automatically</span>
   </div>
 
   <!-- Home screen -->
@@ -726,8 +726,20 @@
   });
 </script>
 <!-- Editor logic -->
-<script src="js/editor-core.js?v=151"></script>
-<script src="js/editor-ui.js?v=151"></script>
+  <!-- Bundle definitions — single source of truth for tier/name per bundle id.
+       Mirrors BUNDLE_DEFS in app-system.js. Update both when adding new bundles. -->
+  <script>
+  window.BUNDLE_DEFS = {
+    assertive: [
+      { id: 'free',      tier: 'free',     name: 'Free Bundle',         description: '2 sequences available to all users.' },
+      { id: 'pro',       tier: 'pro',      name: 'Pro Bundle',           description: '2 additional sequences — 4 total with Free. Unlocked with Pro.' },
+      { id: 'workplace', tier: 'pro-opt',  name: 'Workplace & Social',   description: '3 sequences for professional situations.' },
+      { id: 'domestic',  tier: 'extended', name: 'Domestic Situations',  description: '3 sequences for home and close relationships.' },
+    ],
+  };
+  </script>
+<script src="js/editor-core.js?v=165"></script>
+<script src="js/editor-ui.js?v=165"></script>
 
 </body>
 </html>
