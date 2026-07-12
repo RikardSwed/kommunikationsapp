@@ -289,7 +289,7 @@ applyInputCounterVisibility();
   }
 
   // Expose for other modules
-  window.accessLevel = { getLevel, canAccess, applyModeLocks, updateNavUpgradeBtn };
+  window.accessLevel = { getLevel, canAccess, badgeLabel, applyModeLocks, updateNavUpgradeBtn };
   window._applyAccessLevel = applyAccessLevel;
 
   // Init
@@ -321,25 +321,25 @@ const BUNDLE_DEFS = {
       id: 'free',
       tier: 'free',
       name: 'Free Bundle',
-      description: 'Core inputs — 5 situations per strategy, available to all users.',
+      description: '2 sequences available to all users.',
     },
     {
       id: 'pro',
       tier: 'pro',
       name: 'Pro Bundle',
-      description: 'Expanded inputs — 8 situations per strategy, unlocked with Pro. Replaces the Free Bundle.',
+      description: '2 additional sequences — 4 total with Free. Unlocked with Pro.',
     },
     {
       id: 'workplace',
       tier: 'pro-opt',
       name: 'Workplace & Social',
-      description: 'Extra situations focused on professional and social contexts — colleagues, meetings, and social judgement.',
+      description: '3 sequences for professional situations — colleagues, managers, and meetings.',
     },
     {
       id: 'domestic',
       tier: 'extended',
       name: 'Domestic Situations',
-      description: 'Situations at home and in close relationships — partners, family, neighbours, friends.',
+      description: '3 sequences for home and close relationships — partners, family, and housemates.',
     },
   ]
 };

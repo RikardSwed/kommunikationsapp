@@ -5,7 +5,7 @@
 // (DS.createCardMode / DS.createHandsfreeMode) and are declared in
 // app-modes.js and app-handsfree.js.
 
-const VERSION = 'v1.26.1';
+const VERSION = 'v1.26.2';
 
 // Pack icon map — global so both dashboard and favorites can use it
 const PACK_ICONS = {
@@ -120,7 +120,30 @@ function showHome() {
   navToHome();
 }
 
+// Simple toast for in-app notifications
+function showToast(msg, duration) {
+  let el = document.getElementById('ds-toast');
+  if (!el) {
+    el = document.createElement('div');
+    el.id = 'ds-toast';
+    el.style.cssText = 'position:fixed;bottom:90px;left:50%;transform:translateX(-50%);background:#333;color:#fff;padding:10px 18px;border-radius:20px;font-size:14px;z-index:9999;pointer-events:none;transition:opacity .3s;white-space:nowrap;max-width:85vw;text-align:center;';
+    document.body.appendChild(el);
+  }
+  el.textContent = msg;
+  el.style.opacity = '1';
+  clearTimeout(el._t);
+  el._t = setTimeout(() => { el.style.opacity = '0'; }, duration || 2800);
+}
+window.showToast = showToast;
+
 function showModeScreen(key, label) {
+  // Block if pack is locked for current access level
+  if (window.accessLevel && !window.accessLevel.canAccess(key)) {
+    const badge = window.accessLevel.badgeLabel ? window.accessLevel.badgeLabel(key) : null;
+    const tier  = badge ? badge.text : 'Pro';
+    showToast('This pack requires ' + tier + '. Upgrade to unlock it.');
+    return;
+  }
   activeCollectionKey   = key;
   activeCollectionLabel = label;
   document.getElementById('modeCollectionName').textContent = label;
