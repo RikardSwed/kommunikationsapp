@@ -2199,9 +2199,14 @@ body.pb-enabled .divider::after {
 /* Program detail */
 .program-detail { padding-bottom: 40px; }
 .program-back-btn {
-  background: none; border: none; color: var(--ds-acc); font-size: 14px;
+  background: none; border: none; color: var(--ds-acc); font-size: 17px;
   font-weight: 600; cursor: pointer; padding: 0 0 16px 0;
   display: flex; align-items: center; gap: 6px;
+}
+.cp-result-back-btn {
+  margin-top: 10px; width: 100%; padding: 12px; border-radius: 12px;
+  background: none; border: 2px solid var(--ds-acc); color: var(--ds-acc);
+  font-size: 16px; font-weight: 600; cursor: pointer;
 }
 .program-detail-title { font-size: 20px; font-weight: 700; margin-bottom: 8px; }
 .program-detail-desc  { font-size: 14px; color: var(--ds-txt2); margin-bottom: 24px; line-height: 1.6; }
