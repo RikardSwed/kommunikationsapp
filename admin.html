@@ -584,7 +584,7 @@
   <div class="topbar">
     <button class="btn btn--ghost btn--sm" onclick="window.location.href='index.html'" style="margin-right:8px;" title="Back to app">&larr; App</button>
     <span class="topbar-title" onclick="showHome()" style="cursor:pointer;" title="Back to home">Deckstack — Pack Editor</span>
-    <span class="topbar-version">Editor v1.5.2 · Changes saved automatically</span>
+    <span class="topbar-version" id="editorVersionLabel">Editor v1.6.1 · Changes saved automatically</span>
   </div>
 
   <!-- Home screen -->
@@ -716,6 +716,10 @@
   console.log('[DS Bridge] challenges keys:',  Object.keys(window._dsChallenges));
   // Extra: check DOM elements exist
   document.addEventListener('DOMContentLoaded', () => {
+    const _vLabel = document.getElementById('editorVersionLabel');
+    if (_vLabel && typeof EDITOR_VERSION !== 'undefined') {
+      _vLabel.textContent = 'Editor ' + EDITOR_VERSION + ' \u00b7 Changes saved automatically';
+    }
     console.log('[DS] pack-list-app el:', document.getElementById('pack-list-app'));
     console.log('[DS] pack-list-my el:',  document.getElementById('pack-list-my'));
     console.log('[DS] loadAppPacks():', typeof loadAppPacks !== 'undefined' ? loadAppPacks() : 'not loaded yet');
