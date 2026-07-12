@@ -1631,6 +1631,8 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
   }
 
   // ── Init ─────────────────────────────────────────────────────────────────────
+  window.renderProgramList = renderProgramList;
+
   const observer = new MutationObserver(() => {
     const el = document.getElementById('libTabPrograms');
     if (el && el.style.display !== 'none') renderProgramList();
@@ -1757,7 +1759,7 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
         if (!owned) {
           const o = getOwned(); if (!o.includes(item.id)) o.push(item.id); setOwned(o);
           renderExtendedStore();
-          if (typeof renderProgramList === 'function') renderProgramList();
+          if (window.renderProgramList) window.renderProgramList();
         } else {
           showTab('library');
           document.querySelectorAll('.library-subnav-btn').forEach(b => b.classList.toggle('active', b.dataset.libTab === 'programs'));

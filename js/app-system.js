@@ -46,6 +46,11 @@ if (homeSettingsBackBtn) {
   homeSettingsBackBtn.addEventListener('click', navFromSettings);
   homeSettingsBackBtn.addEventListener('touchend', e => { e.preventDefault(); navFromSettings(); }, { passive: false });
 }
+const devSettingsDoneBtn = document.getElementById('devSettingsDoneBtn');
+if (devSettingsDoneBtn) {
+  devSettingsDoneBtn.addEventListener('click', navFromSettings);
+  devSettingsDoneBtn.addEventListener('touchend', e => { e.preventDefault(); navFromSettings(); }, { passive: false });
+}
 
 // Feedback toggle
 feedbackModeToggle.addEventListener('change', () => {
@@ -865,6 +870,7 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
   }, 2500);
   if (window._applyAccessLevel) window._applyAccessLevel();
   if (window.renderExtendedStore) window.renderExtendedStore();
+  if (window.renderProgramList) window.renderProgramList();
 });
 
 // ── TAG MODE ──────────────────────────────────────────────────────────────────
