@@ -1601,6 +1601,7 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
         + '<div class="cp-result-label">' + (passed ? 'Checkpoint passed! \u2713' : 'Not passed — try again') + '</div>'
         + '<div class="cp-result-hint">' + (passed ? 'The next section is now unlocked.' : 'You need 70% to pass. Questions are drawn randomly each attempt.') + '</div>'
         + '<button class="btn-primary cp-result-btn" id="cp-done-btn">' + (passed ? 'Continue' : 'Try again') + '</button>'
+        + (!passed ? '<button class="btn-secondary cp-result-back-btn" id="cp-back-btn">Back to program</button>' : '')
         + '</div>';
 
       document.getElementById('cp-done-btn').addEventListener('click', () => {
@@ -1617,6 +1618,13 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
           startCheckpoint(program, checkpoint, sectionIndex);
         }
       });
+      const backBtn = document.getElementById('cp-back-btn');
+      if (backBtn) {
+        backBtn.addEventListener('click', () => {
+          screen.style.display = 'none';
+          renderProgramDetail(program);
+        });
+      }
     }
 
     showQuestion();
@@ -1749,7 +1757,7 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
         if (!owned) {
           const o = getOwned(); if (!o.includes(item.id)) o.push(item.id); setOwned(o);
           renderExtendedStore();
-          if (window.renderExtendedStore) window.renderExtendedStore();
+          if (typeof renderProgramList === 'function') renderProgramList();
         } else {
           showTab('library');
           document.querySelectorAll('.library-subnav-btn').forEach(b => b.classList.toggle('active', b.dataset.libTab === 'programs'));

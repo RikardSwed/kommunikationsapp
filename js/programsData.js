@@ -16,7 +16,7 @@ const programsData = [
         checkpoint: {
           id: 'social-confidence-cp1',
           title: 'Checkpoint — Section 1',
-          timeLimit: 90,
+          timeLimit: 25,
           drawCount: 20,
           questions: [
             // FOGGING (8 questions)
@@ -68,7 +68,7 @@ const programsData = [
         checkpoint: {
           id: 'social-confidence-cp2',
           title: 'Checkpoint — Section 2',
-          timeLimit: 90,
+          timeLimit: 25,
           drawCount: 20,
           questions: [
             // STARTING & CONNECTING (15 questions)
@@ -124,7 +124,7 @@ const programsData = [
         checkpoint: {
           id: 'conversation-skills-cp1',
           title: 'Checkpoint — Section 1',
-          timeLimit: 90,
+          timeLimit: 25,
           drawCount: 20,
           questions: [
             { id: 'cs1', q: 'What is the most effective opener when meeting someone new?', options: ['A clever or witty line','An observation about the shared situation or environment','A question about their job','A compliment about their appearance'], correct: 1 },
@@ -160,7 +160,7 @@ const programsData = [
         checkpoint: {
           id: 'conversation-skills-cp2',
           title: 'Checkpoint — Section 2',
-          timeLimit: 90,
+          timeLimit: 25,
           drawCount: 20,
           questions: [
             { id: 'cd1', q: 'Conversational depth means:', options: ['Talking about intellectual subjects','Moving from surface topics to what genuinely matters to the other person','Asking many questions in a row','Keeping conversation going as long as possible'], correct: 1 },
