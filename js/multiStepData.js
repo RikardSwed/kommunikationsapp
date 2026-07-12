@@ -7,7 +7,9 @@ const multiStepCollections = {
       name: "Hold Your Ground",
       subtitle: "State → Hold → Broken Record",
       inputs: [
+        // ── Free ─────────────────────────────────────────────────────────────
         {
+          bundle: "free",
           situation: "Someone keeps arguing after you've said no",
           steps: [
             { front: "Step 1 — State your position clearly", back: "Short and direct. \"I've decided not to do that.\" No padding, no apology, no explanation yet." },
@@ -15,21 +17,24 @@ const multiStepCollections = {
             { front: "Step 3 — Broken record if they push again", back: "Same calm sentence. No new arguments. \"My answer is still no.\" The repetition is the technique — it removes fuel." }
           ]
         },
+        // ── Pro ──────────────────────────────────────────────────────────────
         {
-          situation: "Someone pressures you to change a decision you've made",
+          bundle: "pro",
+          situation: "Someone pressures you to change a decision you've already made",
           steps: [
             { front: "Step 1 — Restate your decision calmly", back: "\"I've thought about this and I'm going ahead with X.\" State it as decided, not debatable." },
             { front: "Step 2 — Hear their concern without absorbing it", back: "\"I hear that you're concerned about Y.\" Acknowledge — don't defend or explain yet." },
             { front: "Step 3 — Return to your position", back: "\"I've considered that — I'm still going with X.\" Calm, no escalation, no new arguments." }
           ]
         },
+        // ── Workplace ─────────────────────────────────────────────────────────
         {
           bundle: "workplace",
           situation: "Your manager asks you to take on extra work when you're already at capacity",
           steps: [
-            { front: "Step 1 — State your current situation clearly", back: "\"I'm currently at full capacity with [X, Y, Z].\" Factual, not defensive. Make the workload visible." },
-            { front: "Step 2 — Acknowledge the request without immediately agreeing", back: "\"I understand this needs to get done — I want to help you figure out how.\" Shows goodwill without absorbing the problem." },
-            { front: "Step 3 — Hold your position and offer a real alternative", back: "\"If this takes priority, something else needs to move. Which of my current tasks should I deprioritise?\" Puts the decision back where it belongs." }
+            { front: "Step 1 — Make your current workload visible", back: "\"I'm currently at full capacity with [X, Y, Z].\" Factual, not defensive. Be specific — \"I'm busy\" is too easy to dismiss." },
+            { front: "Step 2 — Acknowledge without absorbing", back: "\"I understand this needs to get done — I want to help figure out how.\" Shows goodwill without immediately agreeing." },
+            { front: "Step 3 — Hold your position and return the decision", back: "\"If this takes priority, something else needs to move. Which of my current tasks should I deprioritise?\" The decision goes back where it belongs." }
           ]
         },
         {
@@ -40,14 +45,36 @@ const multiStepCollections = {
             { front: "Step 2 — State your position clearly", back: "\"Those decisions go through me. I'm happy to collaborate, but I need to be the one making the call.\"" },
             { front: "Step 3 — Hold it if they push back", back: "\"I hear you — and I'm still going to need this to go through me from now on.\" Brief, no anger, no negotiation on the principle." }
           ]
+        },
+        // ── Domestic ──────────────────────────────────────────────────────────
+        {
+          bundle: "domestic",
+          situation: "A family member keeps pushing you to attend an event you've already declined",
+          steps: [
+            { front: "Step 1 — Restate your decision simply", back: "\"I'm not going to make it.\" Not \"I can't\" — that invites problem-solving. \"I'm not going to\" is cleaner and harder to argue with." },
+            { front: "Step 2 — Acknowledge their disappointment without taking it on", back: "\"I know you'd like me to be there.\" That's enough. You don't need to fix their feeling or justify yourself further." },
+            { front: "Step 3 — Hold if they keep pushing", back: "\"My answer isn't going to change on this one.\" Same calm tone. No new arguments from you — no new arguments from them will move you." }
+          ]
+        },
+        {
+          bundle: "domestic",
+          situation: "Your partner pressures you to agree to something in the middle of an argument",
+          steps: [
+            { front: "Step 1 — Name that this isn't the right moment", back: "\"I'm not going to make this decision in the middle of an argument.\" Calm statement, not a deflection." },
+            { front: "Step 2 — Hold your position despite the pressure", back: "Don't be drawn into deciding when you're not in the right state. The urgency they're creating isn't necessarily real." },
+            { front: "Step 3 — Offer a real alternative — and mean it", back: "\"Let's come back to this when we've both had time to settle.\" Then actually do it. Following through is what makes this assertive rather than avoidant." }
+          ]
         }
       ]
     },
+
     {
       name: "Name the Pattern",
       subtitle: "Observe → State → Request",
       inputs: [
+        // ── Free ─────────────────────────────────────────────────────────────
         {
+          bundle: "free",
           situation: "Someone repeatedly interrupts you in meetings",
           steps: [
             { front: "Step 1 — Name what's happening without accusation", back: "\"I've noticed I often get cut off before I've finished.\" Specific behaviour, neutral tone — not an attack." },
@@ -55,30 +82,34 @@ const multiStepCollections = {
             { front: "Step 3 — Make a clear request", back: "\"I'd like to be able to finish before we respond.\" Specific and actionable — not a complaint, a request." }
           ]
         },
+        // ── Pro ──────────────────────────────────────────────────────────────
         {
-          situation: "Someone consistently ignores your input in group decisions",
+          bundle: "pro",
+          situation: "Someone consistently speaks over you in social settings",
           steps: [
-            { front: "Step 1 — Observe the pattern specifically", back: "\"I've raised X a few times now and it hasn't been included in the discussion.\"" },
-            { front: "Step 2 — Say what you want, not what's wrong", back: "\"I'd like my input to be considered, even if the final decision goes another way.\"" },
-            { front: "Step 3 — Check for understanding", back: "\"Does that make sense?\" — brief, not demanding. You've said it clearly. That's enough." }
+            { front: "Step 1 — Address it in the moment, calmly", back: "\"I wasn't finished.\" Said quietly and clearly, without apology. In the moment, not after." },
+            { front: "Step 2 — Finish your sentence even if the conversation has moved on", back: "\"What I was saying was [X].\" Don't trail off. Don't apologise for bringing it back. You had a point — finish it." },
+            { front: "Step 3 — If it's a pattern, name it separately", back: "Away from the group: \"I've noticed that I often get cut off when we're together — can we talk about that?\" Naming it privately is different from confronting it publicly." }
           ]
         },
+        // ── Workplace ─────────────────────────────────────────────────────────
         {
           bundle: "workplace",
           situation: "A colleague takes credit for your idea in a team meeting",
           steps: [
-            { front: "Step 1 — Reclaim ownership calmly and immediately", back: "\"I'm glad that landed — that was actually the approach I outlined last week.\" Factual, no drama, said at the moment — not later." },
+            { front: "Step 1 — Reclaim ownership calmly and immediately", back: "\"I'm glad that landed — that was actually the approach I outlined last week.\" Factual, no drama. At the moment — not later." },
             { front: "Step 2 — State the impact without attacking", back: "\"When my contributions aren't attributed, it becomes harder for my work to be visible.\" Your experience — not their character." },
             { front: "Step 3 — Make a clear request for the future", back: "\"I'd like us to be clear about who brought what to the table.\" Specific and professional." }
           ]
         },
+        // ── Domestic ──────────────────────────────────────────────────────────
         {
-          bundle: "workplace",
-          situation: "Your manager gives positive feedback on a project but attributes it to the wrong person",
+          bundle: "domestic",
+          situation: "A housemate or partner consistently leaves shared responsibilities to you without acknowledgement",
           steps: [
-            { front: "Step 1 — Correct the record immediately and matter-of-factly", back: "\"Just to clarify — I led that piece of the project.\" No hedging, no apology for correcting." },
-            { front: "Step 2 — Acknowledge the mix-up briefly", back: "\"Easy to lose track with a big team — I just wanted to make sure it was clear.\" Gives them a face-saving out without dropping your point." },
-            { front: "Step 3 — Don't over-explain or follow up excessively", back: "You've said it once, clearly. Let it land and move on. Following up repeatedly undermines the assertion." }
+            { front: "Step 1 — Name the pattern specifically, not the character", back: "\"I've noticed that [specific thing — dishes, bills, errands] keeps falling to me.\" Not: \"you never do anything.\"" },
+            { front: "Step 2 — State the effect on you", back: "\"It's starting to feel unbalanced, and I'd like us to talk about it.\" How it lands for you — not what it says about them." },
+            { front: "Step 3 — Make a concrete request", back: "\"Can we agree on how we're splitting [specific task] going forward?\" Specific, actionable — something you can actually track." }
           ]
         }
       ]

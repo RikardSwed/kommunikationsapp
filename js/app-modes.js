@@ -73,7 +73,9 @@ DS.createCardMode({
 // A combo's items are its flattened sequence: situation card + step cards.
 function buildFlowSequence(combo) {
   const seq = [];
-  // Filter inputs by active bundle before flattening to cards
+  // Filter inputs by active bundle before flattening to cards.
+  // Each input is one scenario (situation + steps) — filtering here
+  // keeps only the scenarios that belong to the active bundles.
   const filtered = window.filterInputsByBundle
     ? window.filterInputsByBundle(combo.inputs || [], activeCollectionKey)
     : (combo.inputs || []);
@@ -96,7 +98,7 @@ DS.createCardMode({
     closeBtn: 'flowCloseBtn', settingsBtn: 'flowSettingsBtn',
   },
   info: { panel: 'flowCardInfo', text: 'flowCardInfoText', trigger: 'flowComboName', close: 'flowCardInfoClose' },
-  getGroups: () => DS.loadGroups(multiStepCollections, activeCollectionKey, 'inputs'),
+  getGroups: () => multiStepCollections[activeCollectionKey] || [],
   getItems: buildFlowSequence,
   groupTitle: g => g.name,
   itemFront: it => it.front,
