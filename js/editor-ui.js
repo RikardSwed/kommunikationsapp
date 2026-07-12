@@ -1557,14 +1557,14 @@ function renderModeContent() {
     };
     html += `
       <div class="field-block bundle-block">
-        <label class="field-label">Input bundle <span id="debug-bundle" style="color:var(--acc);font-size:11px;">[${currentBundle}]</span></label>
-        <div class="selector-row">
-          <select class="select" id="bundle-select">
+        <label class="field-label">Input bundle</label>
+        <div class="selector-row" style="align-items:center;gap:8px;">
+          <select class="select" id="bundle-select" style="flex:1;min-width:0;">
             ${validBundles.map(b => `<option value="${b.id}" ${b.id===currentBundle?'selected':''}>${escHtml(b.name)}</option>`).join('')}
           </select>
-          ${validBundles.map(b => b.id === currentBundle ? tierLabel(b) : '').join('')}
-          <button class="btn btn--ghost btn--sm" id="add-bundle-btn">+ Add bundle</button>
-          ${currentBundle !== 'free' ? `<button class="icon-btn danger" id="del-bundle-btn" title="Delete bundle">&#x2715;</button>` : ''}
+          <span style="min-width:80px;text-align:left;">${validBundles.map(b => b.id === currentBundle ? tierLabel(b) : '').join('')}</span>
+          <button class="btn btn--ghost btn--sm" id="add-bundle-btn" style="white-space:nowrap;flex-shrink:0;">+ Add bundle</button>
+          <button class="icon-btn danger" id="del-bundle-btn" title="Delete bundle" style="flex-shrink:0;visibility:${currentBundle !== 'free' ? 'visible' : 'hidden'};">&#x2715;</button>
         </div>
       </div>`;
   }
