@@ -574,7 +574,7 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
         }
 
         const pinned = new Set(getFavs().map(f => f.key));
-        let html = '<div style="background:var(--ds-card,#fff);border-radius:20px 20px 0 0;padding:20px;width:100%;max-width:420px;max-height:70vh;overflow-y:auto;">'
+        let html = '<div style="background:var(--ds-card,#fff);border-radius:20px 20px 0 0;padding:20px 20px 100px;width:100%;max-width:420px;max-height:70vh;overflow-y:auto;">'
           + '<div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;">'
           + '<strong style="font-size:16px;color:var(--ds-txt)">Pin packs to Favorites</strong>'
           + '<button id="fav-modal-close" style="background:none;border:none;font-size:22px;cursor:pointer;color:var(--ds-txt2)">&#x2715;</button>'
