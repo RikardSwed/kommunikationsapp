@@ -196,7 +196,7 @@ document.querySelectorAll('.nav-tab').forEach(btn => {
   // ── DOM refs ─────────────────────────────────────────────────────────────
   const searchInput    = document.getElementById('dashSearchInput');
   const searchClear    = document.getElementById('dashSearchClear');
-  const cancelBtn      = document.getElementById('dashboardSettingsBtn');
+  const cancelBtn      = document.getElementById('homeSettingsBtn');
   const defaultView    = document.getElementById('dashDefaultView');
   const searchView     = document.getElementById('dashSearchView');
   const recentSection  = document.getElementById('dashRecentSection');

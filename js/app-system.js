@@ -35,11 +35,13 @@ function navFromSettings() {
   showBottomNav();
 }
 
-homeSettingsBtn.addEventListener('click', () => {
-  feedbackModeToggle.checked = feedbackMode;
-  navToSettings();
-});
-homeSettingsBtn.addEventListener('touchend', e => { e.preventDefault(); homeSettingsBtn.click(); }, { passive: false });
+if (homeSettingsBtn) {
+  homeSettingsBtn.addEventListener('click', () => {
+    feedbackModeToggle.checked = feedbackMode;
+    navToSettings();
+  });
+  homeSettingsBtn.addEventListener('touchend', e => { e.preventDefault(); homeSettingsBtn.click(); }, { passive: false });
+}
 
 const homeSettingsBackBtn = document.getElementById('homeSettingsBackBtn');
 if (homeSettingsBackBtn) {
