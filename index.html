@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
   <title>Deckstack</title>
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="stylesheet" href="css/style.css?v=12612" />
+  <link rel="stylesheet" href="css/style.css?v=12613" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
 </head>
 <body>
@@ -95,6 +95,9 @@
 
   <!-- Scrollable content -->
   <div class="progress-scroll" id="progressScroll">
+
+    <!-- Intro text -->
+    <p class="prog-intro">Track your training and see how your consistency builds over time.</p>
 
     <!-- Disabled state -->
     <div id="progressDisabledMsg" style="display:none;">
@@ -252,7 +255,7 @@
         <button id="progResetBtn" class="prog-reset-btn">Reset all progress data…</button>
       </div>
     </div>
-    <div class="settings-version">v1.26.12</div>
+    <div class="settings-version">v1.26.13</div>
     <button class="settings-close" id="progressSettingsClose">Done</button>
   </div>
 </div>
@@ -831,24 +834,7 @@
       </div>
     </div>
 
-    <!-- BETA SECTION (unchanged) -->
-    <div class="mode-beta-toggle" id="modeBetaToggle">
-      <div class="mode-beta-label">Beta</div>
-      <div class="mode-beta-arrow" id="modeBetaArrow">›</div>
-    </div>
-    <div class="mode-beta-list" id="modeBetaList">
-      <div class="mode-card" id="modeMultiStep">
-        <div class="mode-icon">◈</div>
-        <div class="mode-info"><div class="mode-name">Multiple Steps</div><div class="mode-desc">Step-by-step combinations — free navigation</div></div>
-        <div class="mode-arrow">›</div>
-      </div>
-      <div class="mode-card" id="modeGuided">
-        <div class="mode-icon">◉</div>
-        <div class="mode-info"><div class="mode-name">Guided</div><div class="mode-desc">Step through combinations at your own pace</div></div>
-        <div class="mode-arrow">›</div>
-      </div>
-    </div>
-    <!-- END BETA SECTION -->
+    <div style="height: 24px;"></div>
 
   </div>
 </div>
@@ -1270,7 +1256,7 @@
       <label>Progress bar</label>
       <label class="toggle"><input type="checkbox" id="showProgressBar" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.26.12</div>
+    <div class="settings-version">v1.26.13</div>
     <button class="settings-close" id="settingsClose">Done</button>
   </div>
 </div>
@@ -1344,7 +1330,7 @@
       <label class="toggle"><input type="checkbox" id="hfLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
     <div id="hfBundlePlaceholder"></div>
-    <div class="settings-version">v1.26.12</div>
+    <div class="settings-version">v1.26.13</div>
     <button class="settings-close" id="hfSettingsClose">Done</button>
   </div>
 </div>
@@ -1414,7 +1400,7 @@
       <label class="toggle"><input type="checkbox" id="hfMemLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
     <div id="hfMemBundlePlaceholder"></div>
-    <div class="settings-version">v1.26.12</div>
+    <div class="settings-version">v1.26.13</div>
     <button class="settings-close" id="hfMemSettingsClose">Done</button>
   </div>
 </div>
@@ -1484,7 +1470,7 @@
       <label class="toggle"><input type="checkbox" id="hfChallLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
     <div id="hfChallBundlePlaceholder"></div>
-    <div class="settings-version">v1.26.12</div>
+    <div class="settings-version">v1.26.13</div>
     <button class="settings-close" id="hfChallSettingsClose">Done</button>
   </div>
 </div>
@@ -1543,7 +1529,7 @@
       <label class="toggle"><input type="checkbox" id="hfFlowLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
     <div id="hfFlowBundlePlaceholder"></div>
-    <div class="settings-version">v1.26.12</div>
+    <div class="settings-version">v1.26.13</div>
     <button class="settings-close" id="hfFlowSettingsClose">Done</button>
   </div>
 </div>
@@ -1613,7 +1599,7 @@
       <label class="toggle"><input type="checkbox" id="hfMindLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
     <div id="hfMindBundlePlaceholder"></div>
-    <div class="settings-version">v1.26.12</div>
+    <div class="settings-version">v1.26.13</div>
     <button class="settings-close" id="hfMindSettingsClose">Done</button>
   </div>
 </div>
@@ -1683,7 +1669,7 @@
       <label class="toggle"><input type="checkbox" id="hfCollLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
     <div id="hfCollBundlePlaceholder"></div>
-    <div class="settings-version">v1.26.12</div>
+    <div class="settings-version">v1.26.13</div>
     <button class="settings-close" id="hfCollSettingsClose">Done</button>
   </div>
 </div>
@@ -1841,7 +1827,7 @@
       <label>Extended purchases</label>
       <button id="clearExtendedBtn" style="font-size:13px; color:#c0392b; background:#fdf0ee; border:1px solid #f5c6c2; border-radius:8px; padding:6px 12px; cursor:pointer;">Clear</button>
     </div>
-    <div class="settings-version">v1.26.12</div>
+    <div class="settings-version">v1.26.13</div>
     <button class="settings-close" id="devSettingsDoneBtn">Done</button>
   </div>
 </div>
@@ -1913,19 +1899,19 @@
   </button>
 </div>
 
-<script src="js/data.js?v=12612"></script>
-<script src="js/tagsData.js?v=12612"></script>
-<script src="js/programsData.js?v=12612"></script>
-<script src="js/challengesData.js?v=12612"></script>
-<script src="js/mindsetData.js?v=12612"></script>
-<script src="js/multiStepData.js?v=12612"></script>
-<script src="js/memorizeData.js?v=12612"></script>
-<script src="js/mode-engine.js?v=12612"></script>
-<script src="js/app-core.js?v=12612"></script>
-<script src="js/app-modes.js?v=12612"></script>
-<script src="js/app-handsfree.js?v=12612"></script>
-<script src="js/app-system.js?v=12612"></script>
-<script src="js/app-ui.js?v=12612"></script>
+<script src="js/data.js?v=12613"></script>
+<script src="js/tagsData.js?v=12613"></script>
+<script src="js/programsData.js?v=12613"></script>
+<script src="js/challengesData.js?v=12613"></script>
+<script src="js/mindsetData.js?v=12613"></script>
+<script src="js/multiStepData.js?v=12613"></script>
+<script src="js/memorizeData.js?v=12613"></script>
+<script src="js/mode-engine.js?v=12613"></script>
+<script src="js/app-core.js?v=12613"></script>
+<script src="js/app-modes.js?v=12613"></script>
+<script src="js/app-handsfree.js?v=12613"></script>
+<script src="js/app-system.js?v=12613"></script>
+<script src="js/app-ui.js?v=12613"></script>
 
 
 <!-- CHECKPOINT SCREEN -->
