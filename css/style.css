@@ -901,7 +901,8 @@ body.pb-enabled .divider::after {
 
 .nav-tab.active { color: var(--ds-txt); }
 
-/* nav-tab--upgrade removed v1.26.15 — use nav-tab--extended */
+.nav-tab.nav-tab--upgrade { color: var(--ds-acc); }
+.nav-tab.nav-tab--upgrade.active { color: var(--ds-acc); }
 
 /* Top-level screens need bottom padding so content clears the nav bar */
 .home-screen,
@@ -2598,118 +2599,6 @@ body.feedback-mode    .al-bar { display: none !important; }
   color: var(--ds-txt2);
   margin: 14px 20px 4px;
   line-height: 1.45;
-}
-
-/* ── FOLDER SCREEN (v1.26.15) ───────────────────────────────── */
-.folder-screen {
-  position: fixed;
-  inset: 0;
-  background: var(--ds-bg);
-  display: flex;
-  flex-direction: column;
-  z-index: 50;
-}
-.folder-screen-scroll {
-  flex: 1;
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: none;
-  padding: 12px 20px 80px;
-}
-.folder-screen-scroll::-webkit-scrollbar { display: none; }
-.folder-screen .collection-card { margin-bottom: 8px; }
-.folder-edit-section-label {
-  font-size: 11px;
-  font-weight: 700;
-  color: var(--ds-txt2);
-  letter-spacing: 0.6px;
-  text-transform: uppercase;
-  margin: 12px 0 6px;
-}
-.folder-in-pack {
-  background: var(--ds-card);
-  border-radius: 14px;
-  padding: 12px 14px;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-bottom: 8px;
-  box-shadow: 0 1px 5px var(--ds-shadow);
-}
-.folder-in-pack-name {
-  flex: 1;
-  font-size: 14px;
-  font-weight: 600;
-  color: var(--ds-txt);
-}
-.folder-remove-btn {
-  width: 28px;
-  height: 28px;
-  border-radius: 14px;
-  background: var(--ds-border);
-  border: none;
-  color: var(--ds-txt2);
-  font-size: 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  flex-shrink: 0;
-}
-.folder-add-row {
-  background: var(--ds-card);
-  border-radius: 14px;
-  padding: 12px 14px;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-bottom: 8px;
-  cursor: pointer;
-  box-shadow: 0 1px 5px var(--ds-shadow);
-}
-.folder-add-row:active { opacity: 0.7; }
-.folder-add-row-name {
-  flex: 1;
-  font-size: 14px;
-  font-weight: 600;
-  color: var(--ds-txt);
-}
-.folder-add-btn-plus {
-  width: 28px;
-  height: 28px;
-  border-radius: 14px;
-  background: var(--ds-acc);
-  border: none;
-  color: #fff;
-  font-size: 18px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  flex-shrink: 0;
-  line-height: 1;
-}
-.folder-edit-done-btn {
-  position: fixed;
-  bottom: 80px;
-  left: 20px;
-  right: 20px;
-  background: linear-gradient(135deg, var(--ds-acc), #F2622A);
-  color: #fff;
-  border: none;
-  border-radius: 14px;
-  padding: 14px;
-  font-size: 15px;
-  font-weight: 700;
-  cursor: pointer;
-  z-index: 10;
-  box-shadow: 0 3px 12px rgba(176,90,40,.4);
-}
-.folder-train-hint {
-  font-size: 12px;
-  color: var(--ds-txt2);
-  text-align: center;
-  margin: 8px 0 4px;
 }
 
 /* ── FULL-BLEED FIXES (v1.26.12) ────────────────────────────── */
