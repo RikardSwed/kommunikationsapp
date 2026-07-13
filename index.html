@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
   <title>Deckstack</title>
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="stylesheet" href="css/style.css?v=12610" />
+  <link rel="stylesheet" href="css/style.css?v=12611" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
 </head>
 <body>
@@ -18,23 +18,23 @@
 
 <div class="dashboard-screen" id="dashboardScreen">
 
-  <!-- Topbar: search + gear/cancel -->
-  <div class="home-topbar dash-topbar">
-    <div class="dash-search-bar" id="dashSearchBar">
-      <span class="dash-search-icon"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#aaa" stroke-width="1.8" stroke-linecap="round"><circle cx="6.5" cy="6.5" r="4.5"/><line x1="10" y1="10" x2="14" y2="14"/></svg></span>
-      <input class="dash-search-input" id="dashSearchInput" type="text" placeholder="Search" autocomplete="off" autocorrect="off" spellcheck="false" />
-      <button class="dash-search-clear" id="dashSearchClear" style="display:none;">&#x2715;</button>
+  <!-- Hero banner: welcome + search + settings -->
+  <div class="dash-hero" id="dashHero">
+    <div class="dash-welcome-text" id="dashWelcomeTitle">Welcome back</div>
+    <div class="dash-welcome-sub" id="dashWelcomeSubtitle">Ready to train?</div>
+    <div class="home-topbar dash-topbar">
+      <div class="dash-search-bar" id="dashSearchBar">
+        <span class="dash-search-icon"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#aaa" stroke-width="1.8" stroke-linecap="round"><circle cx="6.5" cy="6.5" r="4.5"/><line x1="10" y1="10" x2="14" y2="14"/></svg></span>
+        <input class="dash-search-input" id="dashSearchInput" type="text" placeholder="Search" autocomplete="off" autocorrect="off" spellcheck="false" />
+        <button class="dash-search-clear" id="dashSearchClear" style="display:none;">&#x2715;</button>
+      </div>
+      <button class="topbar-btn dash-cancel-btn" id="homeSettingsBtn" title="Settings">⚙️</button>
     </div>
-    <button class="topbar-btn dash-cancel-btn" id="homeSettingsBtn" title="Settings">⚙️</button>
   </div>
 
   <!-- Default view (shown when not searching) -->
   <div class="dashboard-scroll" id="dashScrollWrapper">
   <div id="dashDefaultView">
-    <div class="dash-welcome-banner">
-      <div class="dash-welcome-text" id="dashWelcomeTitle">Welcome back</div>
-      <div class="dash-welcome-sub" id="dashWelcomeSubtitle">Ready to train?</div>
-    </div>
 
     <!-- Recent searches -->
     <div id="dashRecentSection" style="display:none;">
@@ -87,10 +87,10 @@
 <!-- PROGRESS SCREEN -->
 <div class="progress-screen" id="progressScreen">
 
-  <!-- Topbar -->
-  <div class="home-topbar" style="justify-content:space-between;">
-    <div class="home-title" style="font-size:22px;font-weight:800;">Progress</div>
-    <button class="topbar-btn" id="progressSettingsBtn" title="Progress settings">⚙️</button>
+  <!-- Banner -->
+  <div class="lib-banner prog-banner">
+    <div class="lib-banner-title">Progress</div>
+    <button class="lib-banner-btn" id="progressSettingsBtn" title="Progress settings">⚙️</button>
   </div>
 
   <!-- Scrollable content -->
@@ -252,7 +252,7 @@
         <button id="progResetBtn" class="prog-reset-btn">Reset all progress data…</button>
       </div>
     </div>
-    <div class="settings-version">v1.26.10</div>
+    <div class="settings-version">v1.26.11</div>
     <button class="settings-close" id="progressSettingsClose">Done</button>
   </div>
 </div>
@@ -471,7 +471,7 @@
     <div class="topic-group">
       <div class="topic-header" data-topic="humour">
         <div class="topic-title">Humour &amp; Playfulness</div>
-        <div class="topic-count">2 packs</div>
+        <div class="topic-count">3 packs</div>
         <div class="topic-chevron">›</div>
       </div>
       <div class="topic-packs" id="topicHumour">
@@ -481,6 +481,10 @@
         </div>
         <div class="collection-card" data-key="teasing" data-label="Teasing &amp; Playfulness">
           <div><div class="collection-name">Teasing &amp; Playfulness</div><div class="collection-meta">7 strategies · Flashcard mode</div></div>
+          <div class="collection-arrow">›</div>
+        </div>
+        <div class="collection-card" data-key="selfhumour" data-label="Self Humour &amp; Playfulness">
+          <div><div class="collection-name">Self Humour &amp; Playfulness</div><div class="collection-meta">4 strategies · Flashcard mode</div></div>
           <div class="collection-arrow">›</div>
         </div>
       </div>
@@ -503,7 +507,7 @@
     <div class="topic-group">
       <div class="topic-header" data-topic="conversation">
         <div class="topic-title">Conversation &amp; Flow</div>
-        <div class="topic-count">1 pack</div>
+        <div class="topic-count">2 packs</div>
         <div class="topic-chevron">›</div>
       </div>
       <div class="topic-packs" id="topicConversation">
@@ -511,14 +515,24 @@
           <div><div class="collection-name">Conversational Skills</div><div class="collection-meta">2 collections · Collections mode</div></div>
           <div class="collection-arrow">›</div>
         </div>
+        <div class="collection-card" data-key="conversationaldepth" data-label="Conversational Depth">
+          <div><div class="collection-name">Conversational Depth</div><div class="collection-meta">4 strategies · Flashcard mode</div></div>
+          <div class="collection-arrow">›</div>
+        </div>
       </div>
     </div>
 
-    <div class="topic-group topic-group--empty">
+    <div class="topic-group">
       <div class="topic-header" data-topic="compliments">
         <div class="topic-title">Compliments &amp; Validation</div>
-        <div class="topic-count topic-count--empty">No packs yet</div>
-        <div class="topic-chevron topic-chevron--empty">›</div>
+        <div class="topic-count">1 pack</div>
+        <div class="topic-chevron">›</div>
+      </div>
+      <div class="topic-packs" id="topicCompliments">
+        <div class="collection-card" data-key="compliments" data-label="Compliments &amp; Appreciation">
+          <div><div class="collection-name">Compliments &amp; Appreciation</div><div class="collection-meta">3 strategies · Flashcard mode</div></div>
+          <div class="collection-arrow">›</div>
+        </div>
       </div>
     </div>
 
@@ -530,11 +544,17 @@
       </div>
     </div>
 
-    <div class="topic-group topic-group--empty">
+    <div class="topic-group">
       <div class="topic-header" data-topic="questions">
         <div class="topic-title">Questions &amp; Conversation Starters</div>
-        <div class="topic-count topic-count--empty">No packs yet</div>
-        <div class="topic-chevron topic-chevron--empty">›</div>
+        <div class="topic-count">1 pack</div>
+        <div class="topic-chevron">›</div>
+      </div>
+      <div class="topic-packs" id="topicQuestions">
+        <div class="collection-card" data-key="startingconnecting" data-label="Starting &amp; Connecting">
+          <div><div class="collection-name">Starting &amp; Connecting</div><div class="collection-meta">4 strategies · Flashcard mode</div></div>
+          <div class="collection-arrow">›</div>
+        </div>
       </div>
     </div>
 
@@ -554,11 +574,17 @@
       </div>
     </div>
 
-    <div class="topic-group topic-group--empty">
+    <div class="topic-group">
       <div class="topic-header" data-topic="opinions">
         <div class="topic-title">Opinions &amp; Argumentation</div>
-        <div class="topic-count topic-count--empty">No packs yet</div>
-        <div class="topic-chevron topic-chevron--empty">›</div>
+        <div class="topic-count">1 pack</div>
+        <div class="topic-chevron">›</div>
+      </div>
+      <div class="topic-packs" id="topicOpinions">
+        <div class="collection-card" data-key="influenceframing" data-label="Influence &amp; Framing">
+          <div><div class="collection-name">Influence &amp; Framing</div><div class="collection-meta">4 strategies · Flashcard mode</div></div>
+          <div class="collection-arrow">›</div>
+        </div>
       </div>
     </div>
 
@@ -570,11 +596,17 @@
       </div>
     </div>
 
-    <div class="topic-group topic-group--empty">
+    <div class="topic-group">
       <div class="topic-header" data-topic="rapport">
         <div class="topic-title">Rapport &amp; Connection</div>
-        <div class="topic-count topic-count--empty">No packs yet</div>
-        <div class="topic-chevron topic-chevron--empty">›</div>
+        <div class="topic-count">1 pack</div>
+        <div class="topic-chevron">›</div>
+      </div>
+      <div class="topic-packs" id="topicRapport">
+        <div class="collection-card" data-key="listeningresponding" data-label="Listening &amp; Responding">
+          <div><div class="collection-name">Listening &amp; Responding</div><div class="collection-meta">4 strategies · Flashcard mode</div></div>
+          <div class="collection-arrow">›</div>
+        </div>
       </div>
     </div>
 
@@ -1238,7 +1270,7 @@
       <label>Progress bar</label>
       <label class="toggle"><input type="checkbox" id="showProgressBar" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.26.10</div>
+    <div class="settings-version">v1.26.11</div>
     <button class="settings-close" id="settingsClose">Done</button>
   </div>
 </div>
@@ -1312,7 +1344,7 @@
       <label class="toggle"><input type="checkbox" id="hfLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
     <div id="hfBundlePlaceholder"></div>
-    <div class="settings-version">v1.26.10</div>
+    <div class="settings-version">v1.26.11</div>
     <button class="settings-close" id="hfSettingsClose">Done</button>
   </div>
 </div>
@@ -1382,7 +1414,7 @@
       <label class="toggle"><input type="checkbox" id="hfMemLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
     <div id="hfMemBundlePlaceholder"></div>
-    <div class="settings-version">v1.26.10</div>
+    <div class="settings-version">v1.26.11</div>
     <button class="settings-close" id="hfMemSettingsClose">Done</button>
   </div>
 </div>
@@ -1452,7 +1484,7 @@
       <label class="toggle"><input type="checkbox" id="hfChallLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
     <div id="hfChallBundlePlaceholder"></div>
-    <div class="settings-version">v1.26.10</div>
+    <div class="settings-version">v1.26.11</div>
     <button class="settings-close" id="hfChallSettingsClose">Done</button>
   </div>
 </div>
@@ -1511,7 +1543,7 @@
       <label class="toggle"><input type="checkbox" id="hfFlowLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
     <div id="hfFlowBundlePlaceholder"></div>
-    <div class="settings-version">v1.26.10</div>
+    <div class="settings-version">v1.26.11</div>
     <button class="settings-close" id="hfFlowSettingsClose">Done</button>
   </div>
 </div>
@@ -1581,7 +1613,7 @@
       <label class="toggle"><input type="checkbox" id="hfMindLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
     <div id="hfMindBundlePlaceholder"></div>
-    <div class="settings-version">v1.26.10</div>
+    <div class="settings-version">v1.26.11</div>
     <button class="settings-close" id="hfMindSettingsClose">Done</button>
   </div>
 </div>
@@ -1651,7 +1683,7 @@
       <label class="toggle"><input type="checkbox" id="hfCollLoopStrategy" /><span class="toggle-slider"></span></label>
     </div>
     <div id="hfCollBundlePlaceholder"></div>
-    <div class="settings-version">v1.26.10</div>
+    <div class="settings-version">v1.26.11</div>
     <button class="settings-close" id="hfCollSettingsClose">Done</button>
   </div>
 </div>
@@ -1809,7 +1841,7 @@
       <label>Extended purchases</label>
       <button id="clearExtendedBtn" style="font-size:13px; color:#c0392b; background:#fdf0ee; border:1px solid #f5c6c2; border-radius:8px; padding:6px 12px; cursor:pointer;">Clear</button>
     </div>
-    <div class="settings-version">v1.26.10</div>
+    <div class="settings-version">v1.26.11</div>
     <button class="settings-close" id="devSettingsDoneBtn">Done</button>
   </div>
 </div>
@@ -1881,19 +1913,19 @@
   </button>
 </div>
 
-<script src="js/data.js?v=12610"></script>
-<script src="js/tagsData.js?v=12610"></script>
-<script src="js/programsData.js?v=12610"></script>
-<script src="js/challengesData.js?v=12610"></script>
-<script src="js/mindsetData.js?v=12610"></script>
-<script src="js/multiStepData.js?v=12610"></script>
-<script src="js/memorizeData.js?v=12610"></script>
-<script src="js/mode-engine.js?v=12610"></script>
-<script src="js/app-core.js?v=12610"></script>
-<script src="js/app-modes.js?v=12610"></script>
-<script src="js/app-handsfree.js?v=12610"></script>
-<script src="js/app-system.js?v=12610"></script>
-<script src="js/app-ui.js?v=12610"></script>
+<script src="js/data.js?v=12611"></script>
+<script src="js/tagsData.js?v=12611"></script>
+<script src="js/programsData.js?v=12611"></script>
+<script src="js/challengesData.js?v=12611"></script>
+<script src="js/mindsetData.js?v=12611"></script>
+<script src="js/multiStepData.js?v=12611"></script>
+<script src="js/memorizeData.js?v=12611"></script>
+<script src="js/mode-engine.js?v=12611"></script>
+<script src="js/app-core.js?v=12611"></script>
+<script src="js/app-modes.js?v=12611"></script>
+<script src="js/app-handsfree.js?v=12611"></script>
+<script src="js/app-system.js?v=12611"></script>
+<script src="js/app-ui.js?v=12611"></script>
 
 
 <!-- CHECKPOINT SCREEN -->
