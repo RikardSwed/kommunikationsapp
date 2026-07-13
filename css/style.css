@@ -1048,8 +1048,8 @@ body.pb-enabled .divider::after {
   display: flex;
   align-items: center;
   background: var(--ds-search-bg);
-  border-radius: 12px;
-  padding: 0 10px;
+  border-radius: 24px;
+  padding: 0 14px;
   height: 40px;
   gap: 6px;
   border: 0.5px solid var(--ds-border);
@@ -2593,6 +2593,13 @@ body.feedback-mode    .al-bar { display: none !important; }
 /* ── PROGRESS BANNER (v1.26.11) ────────────────────────────────── */
 .prog-banner {
   margin: 0;
+}
+
+.prog-intro {
+  font-size: 14px;
+  color: var(--ds-txt2);
+  margin: 14px 20px 4px;
+  line-height: 1.45;
 }
 
 /* ── FULL-BLEED FIXES (v1.26.12) ────────────────────────────── */
