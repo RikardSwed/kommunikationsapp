@@ -75,6 +75,9 @@ function showLibraryTab(tab) {
   // Show plus button only on Folders and Favorites
   const plus = document.getElementById('libBannerPlusBtn');
   if (plus) plus.style.display = (tab === 'folders' || tab === 'favorites') ? '' : 'none';
+  // Re-wire plus button for the active tab (modules expose these)
+  if (tab === 'favorites' && window._favWirePlus) window._favWirePlus();
+  if (tab === 'folders' && window._folderWirePlus) window._folderWirePlus();
 }
 
 document.querySelectorAll('.library-subnav-btn').forEach(btn => {
@@ -230,7 +233,14 @@ document.querySelectorAll('.nav-tab').forEach(btn => {
     try { return JSON.parse(localStorage.getItem(LASTPACK_KEY)); } catch { return null; }
   }
   function saveLastPack(key, label, progressPct) {
-    localStorage.setItem(LASTPACK_KEY, JSON.stringify({ key, label, progressPct: progressPct || 0 }));
+    let pct = progressPct || 0;
+    if (!progressPct) {
+      try {
+        const ex = JSON.parse(localStorage.getItem(LASTPACK_KEY));
+        if (ex && ex.key === key) pct = ex.progressPct || 0;
+      } catch {}
+    }
+    localStorage.setItem(LASTPACK_KEY, JSON.stringify({ key, label, progressPct: pct }));
   }
 
   // ── Welcome text ─────────────────────────────────────────────────────────
@@ -532,6 +542,13 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
 
   // ─ Favorites tab render ──────────────────────────────────────────────
   let favSortMode = 'pinned'; // 'pinned' | 'az' | 'used'
+  let _favPlusHandler = null;
+  window._favWirePlus = function() {
+    const b = document.getElementById('libBannerPlusBtn');
+    if (!b) return;
+    if (!_favPlusHandler) renderFavTab(); // builds the handler
+    if (_favPlusHandler) b.onclick = _favPlusHandler;
+  };
 
   function renderFavTab() {
     const allFavs    = getFavs();
@@ -541,9 +558,8 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
     const plusBtn    = document.getElementById('libBannerPlusBtn');
     if (!favList) return;
 
-    // Wire plus button to pin picker when on favorites tab
-    if (plusBtn && activeLibraryTab === 'favorites') {
-      plusBtn.onclick = () => {
+    // Build (or rebuild) the pin-picker handler; wired below and by _favWirePlus
+    _favPlusHandler = () => {
         const allCards = document.querySelectorAll('#libTabPacks .collection-card');
         const allPacks = Array.from(allCards).map(c => ({ key: c.dataset.key, label: c.dataset.label })).filter(p => p.key);
         const alreadyPinned = new Set(getFavs().map(f => f.key));
@@ -608,8 +624,8 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
             renderDashFavs();
           };
         });
-      };
-    }
+    };
+    if (plusBtn && activeLibraryTab === 'favorites') plusBtn.onclick = _favPlusHandler;
 
     if (!allFavs.length) {
       if (emptyState) emptyState.style.display = '';
@@ -786,20 +802,19 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
   };
 
   window.progCardFlipped = function(cardIndex, cardTotal) {
+    // Always update continue-card progress, independent of progress-tracking setting
+    if (cardTotal > 0 && cardIndex >= 0) {
+      try {
+        const existing = JSON.parse(localStorage.getItem('dash_last_pack') || 'null');
+        if (existing && existing.key) {
+          existing.progressPct = Math.round((cardIndex / cardTotal) * 100);
+          localStorage.setItem('dash_last_pack', JSON.stringify(existing));
+        }
+      } catch {}
+    }
     if (!bool(K.enabled) || !_sessionActive) return;
     _sessionCards++;
     _lastFlipTime = Date.now();
-    // Update progress on the last pack using the session's pack info
-    if (_sessionPack && cardTotal > 0 && cardIndex >= 0) {
-      const pct = Math.round((cardIndex / cardTotal) * 100);
-      try {
-        localStorage.setItem('dash_last_pack', JSON.stringify({
-          key: _sessionPack.key,
-          label: _sessionPack.label,
-          progressPct: pct
-        }));
-      } catch {}
-    }
   };
 
   // Lightweight helper for modes that track position differently
@@ -1211,20 +1226,24 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
   }
 
   // ── Render ──────────────────────────────────────────────────────────────────
+  function wireFolderPlus() {
+    const plusBtn = document.getElementById('libBannerPlusBtn');
+    if (!plusBtn) return;
+    plusBtn.onclick = () => {
+      const name = prompt('Folder name:');
+      if (!name?.trim()) return;
+      const fols = getFolders(); fols.push(newFolder(name.trim())); saveFolders(fols); render();
+    };
+  }
+  window._folderWirePlus = wireFolderPlus;
+
   function render() {
     const container = document.getElementById('libTabFolders');
     if (!container) return;
     const folders = getFolders();
 
-    // Wire library banner plus button to add folder
-    const plusBtn = document.getElementById('libBannerPlusBtn');
-    if (plusBtn) {
-      plusBtn.onclick = () => {
-        const name = prompt('Folder name:');
-        if (!name?.trim()) return;
-        const fols = getFolders(); fols.push(newFolder(name.trim())); saveFolders(fols); render();
-      };
-    }
+    // Wire library banner plus button to add folder (only when Folders tab is active)
+    if (activeLibraryTab === 'folders') wireFolderPlus();
 
     if (!folders.length) {
       container.className = 'library-tab-content library-placeholder';

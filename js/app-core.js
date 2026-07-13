@@ -5,7 +5,7 @@
 // (DS.createCardMode / DS.createHandsfreeMode) and are declared in
 // app-modes.js and app-handsfree.js.
 
-const VERSION = 'v1.26.10';
+const VERSION = 'v1.26.11';
 
 // Pack icon map — global so both dashboard and favorites can use it
 const PACK_ICONS = {
@@ -149,7 +149,9 @@ function showModeScreen(key, label) {
   document.getElementById('modeCollectionName').textContent = label;
   // Save last pack and record training time for favorites sorting
   try {
-    localStorage.setItem('dash_last_pack', JSON.stringify({ key, label }));
+    const _lpExisting = JSON.parse(localStorage.getItem('dash_last_pack') || 'null');
+    const _lpPct = (_lpExisting && _lpExisting.key === key) ? (_lpExisting.progressPct || 0) : 0;
+    localStorage.setItem('dash_last_pack', JSON.stringify({ key, label, progressPct: _lpPct }));
     if (window.recordPackTrained) recordPackTrained(key);
     if (window._favRenderDash) _favRenderDash();
   } catch {}
@@ -185,7 +187,9 @@ function goNextPack() {
   activeCollectionLabel = next.label;
   document.getElementById('modeCollectionName').textContent = next.label;
   try {
-    localStorage.setItem('dash_last_pack', JSON.stringify({ key: next.key, label: next.label }));
+    const _lpExisting = JSON.parse(localStorage.getItem('dash_last_pack') || 'null');
+    const _lpPct = (_lpExisting && _lpExisting.key === next.key) ? (_lpExisting.progressPct || 0) : 0;
+    localStorage.setItem('dash_last_pack', JSON.stringify({ key: next.key, label: next.label, progressPct: _lpPct }));
     if (window.recordPackTrained) recordPackTrained(next.key);
     if (window._favRenderDash) _favRenderDash();
   } catch {}
