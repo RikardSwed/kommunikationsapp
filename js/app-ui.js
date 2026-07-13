@@ -544,18 +544,70 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
     // Wire plus button to pin picker when on favorites tab
     if (plusBtn && activeLibraryTab === 'favorites') {
       plusBtn.onclick = () => {
-        // Show all packs as a pin-picker
         const allCards = document.querySelectorAll('#libTabPacks .collection-card');
-        const opts = Array.from(allCards).map(c => c.dataset.key + '||' + c.dataset.label).filter(Boolean);
+        const allPacks = Array.from(allCards).map(c => ({ key: c.dataset.key, label: c.dataset.label })).filter(p => p.key);
         const alreadyPinned = new Set(getFavs().map(f => f.key));
-        const unpinned = opts.filter(o => !alreadyPinned.has(o.split('||')[0]));
-        if (!unpinned.length) { alert('All packs are already pinned.'); return; }
-        const chosen = prompt('Pin a pack (enter number):\n' + unpinned.map((o,i) => (i+1) + '. ' + o.split('||')[1]).join('\n'));
-        const idx = parseInt(chosen) - 1;
-        if (isNaN(idx) || idx < 0 || idx >= unpinned.length) return;
-        const [key, label] = unpinned[idx].split('||');
-        const favs = getFavs(); favs.push({ key, label }); saveFavs(favs);
-        renderFavTab(); renderDashFavs();
+
+        // Build tag-style picker modal
+        let modal = document.getElementById('fav-pin-modal');
+        if (!modal) {
+          modal = document.createElement('div');
+          modal.id = 'fav-pin-modal';
+          modal.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,.45);display:flex;align-items:flex-end;justify-content:center;z-index:400;padding:0;';
+          document.body.appendChild(modal);
+        }
+
+        const pinned = new Set(getFavs().map(f => f.key));
+        let html = '<div style="background:var(--ds-card,#fff);border-radius:20px 20px 0 0;padding:20px;width:100%;max-width:420px;max-height:70vh;overflow-y:auto;">'
+          + '<div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;">'
+          + '<strong style="font-size:16px;color:var(--ds-txt)">Pin packs to Favorites</strong>'
+          + '<button id="fav-modal-close" style="background:none;border:none;font-size:22px;cursor:pointer;color:var(--ds-txt2)">&#x2715;</button>'
+          + '</div>'
+          + '<div style="display:flex;flex-wrap:wrap;gap:8px;">';
+
+        allPacks.forEach(pack => {
+          const isPinned = pinned.has(pack.key);
+          html += '<button class="fav-tag-btn" data-key="' + pack.key + '" data-label="' + pack.label.replace(/"/g,'&quot;') + '" '
+            + 'style="padding:8px 16px;border-radius:20px;font-size:14px;font-weight:600;cursor:pointer;border:2px solid '
+            + (isPinned ? 'var(--ds-acc,#B05A28);background:var(--ds-acc,#B05A28);color:#fff' : 'var(--ds-border,#ccc);background:var(--ds-card,#fff);color:var(--ds-txt)')
+            + ';">' + pack.label + '</button>';
+        });
+
+        html += '</div>'
+          + '<button id="fav-modal-done" style="margin-top:20px;width:100%;padding:14px;border-radius:12px;background:var(--ds-acc,#B05A28);border:none;color:#fff;font-size:15px;font-weight:700;cursor:pointer;">Done</button>'
+          + '</div>';
+
+        modal.innerHTML = html;
+        modal.style.display = 'flex';
+
+        modal.querySelector('#fav-modal-close').onclick = () => { modal.style.display = 'none'; };
+        modal.querySelector('#fav-modal-done').onclick  = () => { modal.style.display = 'none'; };
+        modal.onclick = e => { if (e.target === modal) modal.style.display = 'none'; };
+
+        modal.querySelectorAll('.fav-tag-btn').forEach(btn => {
+          btn.onclick = () => {
+            const key   = btn.dataset.key;
+            const label = btn.dataset.label;
+            const favs  = getFavs();
+            const idx   = favs.findIndex(f => f.key === key);
+            if (idx >= 0) {
+              // Already pinned — unpin
+              favs.splice(idx, 1);
+              btn.style.background = 'var(--ds-card,#fff)';
+              btn.style.color = 'var(--ds-txt)';
+              btn.style.borderColor = 'var(--ds-border,#ccc)';
+            } else {
+              // Pin it
+              favs.push({ key, label });
+              btn.style.background = 'var(--ds-acc,#B05A28)';
+              btn.style.color = '#fff';
+              btn.style.borderColor = 'var(--ds-acc,#B05A28)';
+            }
+            saveFavs(favs);
+            renderFavTab();
+            renderDashFavs();
+          };
+        });
       };
     }
 
@@ -1224,17 +1276,19 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
 
   // ── Bind events ─────────────────────────────────────────────────────────────
   function bindEvents(folders) {
-    // Toggle open/close — left side of header card
-    document.querySelectorAll('.folder-header-card-left[data-action="toggle"]').forEach(el => {
-      el.addEventListener('click', () => {
+    // Toggle open/close — click on folder card header
+    document.querySelectorAll('.folder-card-header[data-action="toggle"]').forEach(el => {
+      el.onclick = () => {
         const fi   = el.dataset.fi;
         const body = document.getElementById('folder-body-' + fi);
         if (!body) return;
         const open = body.style.display === 'none';
         body.style.display = open ? 'block' : 'none';
+        const chevron = el.querySelector('.folder-chevron');
+        if (chevron) chevron.innerHTML = open ? '&#8964;' : '&#8250;';
         const idx = parseInt(fi);
-        folders[idx]._open = open;
-      });
+        if (folders[idx]) folders[idx]._open = open;
+      };
     });
 
     // Edit button — rename or delete dialog
