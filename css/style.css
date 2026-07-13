@@ -2570,12 +2570,13 @@ body.feedback-mode    .al-bar { display: none !important; }
 .dash-hero .dash-welcome-sub {
   font-size: 15px;
   color: rgba(255,255,255,0.9);
-  margin-bottom: 18px;
+  margin-bottom: 0;
   position: relative;
   z-index: 1;
 }
 .dash-hero .dash-topbar {
   padding: 0;
+  margin-bottom: 20px;
   position: relative;
   z-index: 1;
 }
@@ -2592,4 +2593,21 @@ body.feedback-mode    .al-bar { display: none !important; }
 /* ── PROGRESS BANNER (v1.26.11) ────────────────────────────────── */
 .prog-banner {
   margin: 0;
+}
+
+/* ── FULL-BLEED FIXES (v1.26.12) ────────────────────────────── */
+/* Screen-level horizontal padding removed: scroll containers own their 20px,
+   so banners reach the edges and content is not double-inset. */
+.dashboard-screen,
+.progress-screen {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* ── UNIFORM BANNER HEIGHT (v1.26.12) ────────────────────────── */
+/* Match the taller Folders/Favorites banner (34px plus-button row)
+   so Packs/Topics/Programs/Progress banners are the same height. */
+.lib-banner {
+  min-height: 68px;
+  box-sizing: border-box;
 }
