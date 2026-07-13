@@ -54,6 +54,8 @@ const LIB_TABS = {
   favorites: 'libTabFavorites'
 };
 
+const TAB_LABELS = { packs: 'Packs', topics: 'Topics', programs: 'Programs', folders: 'Folders', favorites: 'Favorites' };
+
 let activeLibraryTab = 'packs'; // session default; resets on reload
 
 function showLibraryTab(tab) {
@@ -67,6 +69,12 @@ function showLibraryTab(tab) {
   document.querySelectorAll('.library-subnav-btn').forEach(btn => {
     btn.classList.toggle('active', btn.dataset.libTab === tab);
   });
+  // Update banner title
+  const title = document.getElementById('libBannerTitle');
+  if (title) title.textContent = TAB_LABELS[tab] || tab;
+  // Show plus button only on Folders and Favorites
+  const plus = document.getElementById('libBannerPlusBtn');
+  if (plus) plus.style.display = (tab === 'folders' || tab === 'favorites') ? '' : 'none';
 }
 
 document.querySelectorAll('.library-subnav-btn').forEach(btn => {
@@ -1178,29 +1186,30 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
     folders.forEach((folder, fi) => {
       const isOpen = folder._open;
       html += '<div class="folder-item" data-fi="' + fi + '">'
-        + '<div class="folder-header-card">'
-        + '<div class="folder-header-card-left" data-fi="' + fi + '" data-action="toggle">'
-        + '<span class="folder-header-card-icon">📁</span>'
-        + '<div><div class="folder-header-card-name">' + escHtml(folder.name) + '</div>'
-        + '<div class="folder-header-card-count">' + folder.packs.length + (folder.packs.length === 1 ? ' pack' : ' packs') + '</div></div>'
+        + '<div class="folder-card">'
+        + '<div class="folder-card-header" data-fi="' + fi + '" data-action="toggle">'
+        + '<div class="folder-card-info">'
+        + '<div class="folder-card-name">' + escHtml(folder.name) + '</div>'
+        + '<div class="folder-card-count">' + folder.packs.length + (folder.packs.length === 1 ? ' pack' : ' packs') + '</div>'
         + '</div>'
+        + '<div class="folder-card-actions">'
         + '<button class="folder-edit-btn" data-fi="' + fi + '" data-action="edit">Edit</button>'
+        + '<span class="folder-chevron">' + (isOpen ? '&#8964;' : '&#8250;') + '</span>'
+        + '</div>'
         + '</div>'
         + '<div class="folder-body" id="folder-body-' + fi + '" style="' + (isOpen ? '' : 'display:none;') + '">';
       if (!folder.packs.length) {
-        html += '<div class="folder-empty-msg">No packs in this folder yet.</div>';
+        html += '<div class="folder-empty-msg">No packs yet.</div>';
       } else {
         folder.packs.forEach((pack, pi) => {
-          html += '<div class="folder-pack-row">'
-            + '<div class="collection-card folder-pack-card" data-key="' + pack.key + '" data-label="' + escHtml(pack.label) + '">'
-            + '<div><div class="collection-name">' + escHtml(pack.label) + '</div></div>'
+          html += '<div class="folder-pack-card" data-key="' + pack.key + '" data-label="' + escHtml(pack.label) + '">'
+            + '<div class="collection-name">' + escHtml(pack.label) + '</div>'
             + '<div class="collection-arrow">&#x203a;</div>'
-            + '</div>'
-            + '<button class="folder-remove-pack" data-fi="' + fi + '" data-pi="' + pi + '" title="Remove">&#x2715;</button>'
             + '</div>';
         });
       }
       html += '<button class="folder-add-pack-btn" data-fi="' + fi + '">+ Add pack</button>'
+        + '</div>'
         + '</div></div>';
     });
 
@@ -1265,16 +1274,12 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
     });
 
     // Pack card click — open mode screen
-    document.querySelectorAll('.folder-pack-card').forEach(card => {
-      card.addEventListener('click', () => {
-        // Build context from all packs in this folder
-        const fi = card.closest('.folder-body') && card.closest('.folder-item');
-        const folderPacks = fi
-          ? Array.from(fi.querySelectorAll('.folder-pack-card')).map(c => ({ key: c.dataset.key, label: c.dataset.label }))
-          : [];
-        if (window.setPackContext && folderPacks.length > 1) setPackContext(folderPacks, card.dataset.key);
-        showModeScreen(card.dataset.key, card.dataset.label);
-      });
+    document.querySelectorAll('.folder-pack-card[data-key]').forEach(card => {
+      let cY = 0, cMv = false;
+      card.addEventListener('touchstart', e => { cY = e.touches[0].clientY; cMv = false; }, { passive: true });
+      card.addEventListener('touchmove',  e => { if (Math.abs(e.touches[0].clientY - cY) > 8) cMv = true; }, { passive: true });
+      card.addEventListener('touchend',   e => { if (!cMv) { e.preventDefault(); showModeScreen(card.dataset.key, card.dataset.label); } }, { passive: false });
+      card.addEventListener('click', () => showModeScreen(card.dataset.key, card.dataset.label));
     });
 
     // Add pack to folder
