@@ -5,7 +5,7 @@
 // (DS.createCardMode / DS.createHandsfreeMode) and are declared in
 // app-modes.js and app-handsfree.js.
 
-const VERSION = 'v1.26.12';
+const VERSION = 'v1.26.13';
 
 // Pack icon map — global so both dashboard and favorites can use it
 const PACK_ICONS = {
@@ -328,15 +328,7 @@ document.getElementById('modeNextBtn') && document.getElementById('modeNextBtn')
   }
 })();
 
-// Beta section toggle
-function toggleBeta() {
-  const list  = document.getElementById('modeBetaList');
-  const arrow = document.getElementById('modeBetaArrow');
-  const open  = list.classList.toggle('open');
-  arrow.classList.toggle('open', open);
-}
-document.getElementById('modeBetaToggle').addEventListener('click', toggleBeta);
-document.getElementById('modeBetaToggle').addEventListener('touchend', e => { e.preventDefault(); toggleBeta(); }, { passive: false });
+// Beta section removed in v1.26.13
 
 // Handsfree flip toggle
 (function initHfToggle() {
