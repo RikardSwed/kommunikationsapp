@@ -106,6 +106,7 @@ const TAB_SCREENS = {
 
 // Program IDs that require Extended purchase
 const EXTENDED_PROGRAM_IDS = ['conversation-skills'];
+window.EXTENDED_PROGRAM_IDS = EXTENDED_PROGRAM_IDS;
 
 const bottomNav = document.getElementById('bottomNav');
 
@@ -313,6 +314,9 @@ document.querySelectorAll('.nav-tab').forEach(btn => {
       const matchedStrats = pack.strats.filter(s => s.toLowerCase().includes(q));
       const termMatch     = pack.terms.some(t => t.includes(q));
       if (!termMatch && !matchedStrats.length) return;
+      // Hidden packs (unowned extended, checkpoint-locked) never surface in search
+      if (window.accessLevel && window.accessLevel.packVisibility
+          && window.accessLevel.packVisibility(pack.key) === 'hidden') return;
 
       // Build subtitle showing what matched
       let subtitle = '';
@@ -574,7 +578,10 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
   };
 
   function renderFavTab() {
-    const allFavs    = getFavs();
+    const _vis = k => (window.accessLevel && window.accessLevel.packVisibility) ? window.accessLevel.packVisibility(k) : 'available';
+    // Hidden packs (extended not owned, checkpoint-locked) drop out of the
+    // list; locked ones stay visible with a Pro badge (19).
+    const allFavs    = getFavs().filter(f => _vis(f.key) !== 'hidden');
     const emptyState = document.getElementById('favEmptyState');
     const favList    = document.getElementById('favList');
     const sortRow    = document.getElementById('favSortRow');
@@ -584,7 +591,10 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
     // Build (or rebuild) the pin-picker handler; wired below and by _favWirePlus
     _favPlusHandler = () => {
         const allCards = document.querySelectorAll('#libTabPacks .collection-card');
-        const allPacks = Array.from(allCards).map(c => ({ key: c.dataset.key, label: c.dataset.label })).filter(p => p.key);
+        const _vis = k => (window.accessLevel && window.accessLevel.packVisibility) ? window.accessLevel.packVisibility(k) : 'available';
+        const allPacks = Array.from(allCards).map(c => ({ key: c.dataset.key, label: c.dataset.label }))
+          .filter(p => p.key)
+          .filter(p => _vis(p.key) === 'available');   // hidden & locked packs can't be pinned
         const alreadyPinned = new Set(getFavs().map(f => f.key));
 
         // Build tag-style picker modal
@@ -670,12 +680,14 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
     }
     // 'pinned' = insertion order (default)
 
-    favList.innerHTML = favs.map(f =>
-      `<div class="collection-card fav-card" data-key="${f.key}" data-label="${f.label.replace(/"/g,'&quot;')}">
-        <div><div class="collection-name">${f.label}</div></div>
+    favList.innerHTML = favs.map(f => {
+      const locked = _vis(f.key) === 'locked';
+      const badge  = locked ? '<div class="pack-lock-badge pack-lock-badge--pro" style="position:relative;display:inline-block;margin-left:6px;vertical-align:middle;">Pro</div>' : '';
+      return `<div class="collection-card fav-card${locked ? ' collection-card--locked' : ''}" data-key="${f.key}" data-label="${f.label.replace(/"/g,'&quot;')}">
+        <div><div class="collection-name" style="display:inline;">${f.label}</div>${badge}</div>
         <div class="collection-arrow">›</div>
-       </div>`
-    ).join('');
+       </div>`;
+    }).join('');
 
     // Sort button listeners
     document.querySelectorAll('.fav-sort-btn').forEach(btn => {
@@ -698,7 +710,8 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
     const favSec  = document.getElementById('dashFavSection');
     const favList = document.getElementById('dashFavList');
     if (!favSec || !favList) return;
-    const favs  = getFavs();
+    const _vis = k => (window.accessLevel && window.accessLevel.packVisibility) ? window.accessLevel.packVisibility(k) : 'available';
+    const favs  = getFavs().filter(f => _vis(f.key) !== 'hidden');
     if (!favs.length) { favSec.style.display = 'none'; return; }
     const times = getTrainedTimes();
     const sorted = [...favs].sort((a, b) => (times[b.key] || 0) - (times[a.key] || 0));
@@ -726,6 +739,9 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
 
   // Expose so showModeScreen patch can call recordPackTrained
   window._favRenderDash = renderDashFavs;
+  // Exposed so applyAccessLevel can refresh the favorites list when
+  // visibility changes (level switch, purchases, checkpoint unlocks)
+  window._favRenderTab = renderFavTab;
 
 })();
 
@@ -1244,10 +1260,11 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
 
   // ── All available packs (from collection-cards in Packs tab) ────────
   function getAllPacks() {
+    const _vis = k => (window.accessLevel && window.accessLevel.packVisibility) ? window.accessLevel.packVisibility(k) : 'available';
     const cards = document.querySelectorAll('#libTabPacks .collection-card');
     const packs = [];
     cards.forEach(c => {
-      if (c.dataset.key && c.dataset.label) {
+      if (c.dataset.key && c.dataset.label && _vis(c.dataset.key) === 'available') {
         packs.push({ key: c.dataset.key, label: c.dataset.label });
       }
     });
@@ -1497,16 +1514,24 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
 
   // Browse mode — packs listed like the Favorites screen
   function renderFolderView(container, folder) {
-    if (!folder.packs.length) {
-      container.innerHTML = '<div class="fol-view-empty">This folder is empty.<br>Tap Edit to add packs.</div>';
+    const _vis = k => (window.accessLevel && window.accessLevel.packVisibility) ? window.accessLevel.packVisibility(k) : 'available';
+    // Hidden packs (checkpoint-locked, unowned extended) drop out of the
+    // view but stay in the folder's data, so they return when unlocked.
+    const visPacks = folder.packs.filter(p => _vis(p.key) !== 'hidden');
+    if (!visPacks.length) {
+      container.innerHTML = '<div class="fol-view-empty">' + (folder.packs.length
+        ? 'The packs in this folder are not available right now.'
+        : 'This folder is empty.<br>Tap Edit to add packs.') + '</div>';
       return;
     }
-    container.innerHTML = folder.packs.map(p =>
-      '<div class="collection-card fol-pack-card" data-key="' + p.key + '" data-label="' + escHtml(p.label) + '">'
-      + '<div><div class="collection-name">' + escHtml(p.label) + '</div></div>'
+    container.innerHTML = visPacks.map(p => {
+      const locked = _vis(p.key) === 'locked';
+      const badge  = locked ? '<div class="pack-lock-badge pack-lock-badge--pro" style="position:relative;display:inline-block;margin-left:6px;vertical-align:middle;">Pro</div>' : '';
+      return '<div class="collection-card fol-pack-card' + (locked ? ' collection-card--locked' : '') + '" data-key="' + p.key + '" data-label="' + escHtml(p.label) + '">'
+      + '<div><div class="collection-name" style="display:inline;">' + escHtml(p.label) + '</div>' + badge + '</div>'
       + '<div class="collection-arrow">&#x203a;</div>'
-      + '</div>'
-    ).join('');
+      + '</div>';
+    }).join('');
 
     container.querySelectorAll('.fol-pack-card').forEach(card => {
       // Next-arrow context: the folder's own pack list, in folder order
@@ -1666,13 +1691,20 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
       return curLevel === 'complete' || extOwned.includes(prog.id);
     });
 
+    // Owned extended programs still require Pro (yearly Pro model) — in
+    // freemium they stay listed with a Pro badge and an upgrade toast (19).
+    const progLocked = prog =>
+      EXTENDED_PROGRAM_IDS.includes(prog.id) && curLevel === 'freemium';
+
     visiblePrograms.forEach(prog => {
       // Count progress
       const totalCPs  = prog.sections.filter(s => s.checkpoint).length;
       const passedCPs = prog.sections.filter(s => s.checkpoint && isCheckpointPassed(prog.id, s.checkpoint.id)).length;
       const pct       = totalCPs ? Math.round((passedCPs / totalCPs) * 100) : 0;
 
-      html += '<div class="program-card" data-prog-id="' + prog.id + '">'
+      const locked = progLocked(prog);
+      html += '<div class="program-card' + (locked ? ' collection-card--locked' : '') + '" data-prog-id="' + prog.id + '" data-locked="' + locked + '">'
+        + (locked ? '<div class="pack-lock-badge pack-lock-badge--pro">Pro</div>' : '')
         + '<div class="program-card-icon" style="pointer-events:none"><i class="ti ' + (prog.icon || 'ti-stack') + '"></i></div>'
         + '<div class="program-card-body" style="pointer-events:none">'
         + '<div class="program-card-title">' + prog.title + '</div>'
@@ -1691,6 +1723,10 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
     container.onclick = e => {
       const card = e.target.closest('.program-card');
       if (!card) return;
+      if (card.dataset.locked === 'true') {
+        if (window.showToast) showToast('This program requires Pro. Upgrade to unlock it.');
+        return;
+      }
       const prog = programsData.find(p => p.id === card.dataset.progId);
       if (prog) renderProgramDetail(prog);
     };
@@ -1884,6 +1920,10 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
 
       if (passed) {
         passCheckpoint(program.id, checkpoint.id);
+        // Newly unlocked packs become visible everywhere (packs, topics,
+        // search, favorites, folders) — re-apply the visibility layer.
+        if (window.accessLevel && window.accessLevel.applyAccessLevel) window.accessLevel.applyAccessLevel();
+        if (window._favRenderDash) _favRenderDash();
       }
 
       titleEl.textContent = checkpoint.title;
@@ -1984,6 +2024,8 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
 
   function setOwned(arr) {
     localStorage.setItem(OWNED_KEY, JSON.stringify(arr));
+    // Purchases change pack/program visibility across the whole app
+    if (window.accessLevel && window.accessLevel.applyAccessLevel) window.accessLevel.applyAccessLevel();
   }
 
   function isOwned(id) {

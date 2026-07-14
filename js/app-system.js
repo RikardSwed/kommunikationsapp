@@ -144,56 +144,97 @@ applyInputCounterVisibility();
     catch { return []; }
   }
 
-  function canAccess(packKey) {
+  // ── Program routes: is this pack delivered via a Program, and if so is
+  //    any of its sections unlocked (all previous checkpoints passed)? ──────
+  function _programState(packKey) {
+    const state = { inAnyProgram: false, availableRoute: false, lockedRoute: false };
+    if (typeof programsData === 'undefined' || !Array.isArray(programsData)) return state;
+    let progress = {};
+    try { progress = JSON.parse(localStorage.getItem('ds_program_progress')) || {}; } catch {}
+    const cpPassed = (progId, cpId) => !!(progress[progId] && progress[progId][cpId]);
+    const level   = getLevel();
+    const isProUp = level === 'pro' || level === 'complete';
+    const extIds  = window.EXTENDED_PROGRAM_IDS || ['conversation-skills'];
+    const owned   = getExtendedOwned();
+    programsData.forEach(prog => {
+      const isExt     = extIds.includes(prog.id);
+      const progOwned = !isExt || level === 'complete' || owned.includes(prog.id);
+      prog.sections.forEach((sec, si) => {
+        if (!sec.packs || !sec.packs.some(p => p.key === packKey)) return;
+        state.inAnyProgram = true;
+        if (!progOwned) return;
+        // Section unlocked = every previous checkpoint passed
+        for (let i = 0; i < si; i++) {
+          const cp = prog.sections[i].checkpoint;
+          if (cp && !cpPassed(prog.id, cp.id)) return;
+        }
+        // Extended programs require Pro even when owned (yearly Pro model)
+        if (isExt && !isProUp) state.lockedRoute = true;
+        else state.availableRoute = true;
+      });
+    });
+    return state;
+  }
+
+  // ── Pack visibility — the single source of truth for every surface ──────
+  // 'available' — fully usable
+  // 'locked'    — shown with a Pro badge; tapping shows the upgrade toast
+  // 'hidden'    — not shown anywhere (packs, topics, search, favorites, folders)
+  function packVisibility(packKey) {
+    const level = getLevel();
+    if (level === 'complete') return 'available';
     const cfg = PACK_CONFIG[packKey];
-    if (!cfg) return true;
-    if (cfg.minLevel === 'extended') {
-      return getLevel() === 'complete' || getExtendedOwned().includes(packKey);
+    const isProUp = level === 'pro';
+    let standalone = 'none';
+    if (cfg) {
+      if (cfg.minLevel === 'extended') {
+        // Extended packs require BOTH purchase and an active Pro plan
+        if (!getExtendedOwned().includes(packKey)) standalone = 'hidden';
+        else standalone = isProUp ? 'available' : 'locked';
+      } else if (cfg.minLevel === 'complete') {
+        standalone = 'hidden';
+      } else if (levelIndex(level) >= levelIndex(cfg.minLevel)) {
+        standalone = 'available';
+      } else {
+        standalone = 'locked';
+      }
     }
-    return levelIndex(getLevel()) >= levelIndex(cfg.minLevel);
+    const prog = _programState(packKey);
+    if (standalone === 'available' || prog.availableRoute) return 'available';
+    if (standalone === 'locked'    || prog.lockedRoute)    return 'locked';
+    if (cfg || prog.inAnyProgram) return 'hidden';
+    return 'available';   // unknown pack: no config, not in any program
+  }
+
+  function canAccess(packKey) {
+    return packVisibility(packKey) === 'available';
   }
 
   function badgeLabel(packKey) {
+    // Locked packs always upsell Pro (extended purchases also require Pro)
+    if (packVisibility(packKey) === 'locked') {
+      return { text: 'Pro', cls: 'pack-lock-badge--pro' };
+    }
     const cfg = PACK_CONFIG[packKey];
-    if (!cfg) return null;
-    const min = cfg.minLevel;
-    if (min === 'pro')      return { text: 'Pro',      cls: 'pack-lock-badge--pro' };
-    if (min === 'complete') return { text: 'Complete', cls: 'pack-lock-badge--complete' };
-    if (min === 'extended') return { text: 'Extended', cls: 'pack-lock-badge--extended' };
+    if (cfg && cfg.minLevel === 'extended') {
+      return { text: 'Extended', cls: 'pack-lock-badge--extended' };
+    }
     return null;
   }
 
   // Apply to all collection-card elements that have data-key
   function applyAccessLevel() {
+    const curLevel = getLevel();
     document.querySelectorAll('.collection-card[data-key]').forEach(card => {
       // Skip cards not in Library (e.g. recommended, dashboard cards)
       if (!card.closest('#libTabPacks, #libTabTopics, #libTabFavorites')) return;
       const key = card.dataset.key;
-      const cfg = PACK_CONFIG[key];
-      if (!cfg) return;
-      const curLevel = getLevel();
-      const accessible = canAccess(key);
-      // Extended-level packs: show only when owned or complete
-      if (cfg.minLevel === 'extended') {
-        card.style.display = accessible ? '' : 'none';
-        if (accessible) {
-          card.classList.remove('collection-card--locked');
-          const old = card.querySelector('.pack-lock-badge');
-          if (old) old.remove();
-        }
-        return;
-      }
-      // Complete-level packs: hide entirely when not accessible
-      if (cfg.minLevel === 'complete') {
-        card.style.display = accessible ? '' : 'none';
-        return;
-      }
-      // Pro-level packs: show but locked
-      card.style.display = '';
-      card.classList.toggle('collection-card--locked', !accessible);
-      const old = card.querySelector('.pack-lock-badge');
-      if (old) old.remove();
-      if (!accessible) {
+      const vis = packVisibility(key);
+      const oldBadge = card.querySelector('.pack-lock-badge');
+      if (oldBadge) oldBadge.remove();
+      card.style.display = (vis === 'hidden') ? 'none' : '';
+      card.classList.toggle('collection-card--locked', vis === 'locked');
+      if (vis === 'locked') {
         const badge = badgeLabel(key);
         if (badge) {
           const el = document.createElement('div');
@@ -201,9 +242,19 @@ applyInputCounterVisibility();
           el.textContent = badge.text;
           card.appendChild(el);
         }
+        // Static listeners from app-core still fire, but showModeScreen's
+        // access gate turns the tap into the upgrade toast.
         card.onclick = null;
         card.ontouchend = null;
       }
+    });
+    // Topics (13): hide topic groups with no visible pack. Complete shows
+    // every topic, including empty ones.
+    document.querySelectorAll('#libTabTopics .topic-group').forEach(group => {
+      if (curLevel === 'complete') { group.style.display = ''; return; }
+      const anyVisible = Array.from(group.querySelectorAll('.collection-card[data-key]'))
+        .some(c => c.style.display !== 'none');
+      group.style.display = anyVisible ? '' : 'none';
     });
     // Re-bind clicks on accessible cards in Library Packs tab
     document.querySelectorAll('#libTabPacks .collection-card[data-key]').forEach(card => {
@@ -218,6 +269,10 @@ applyInputCounterVisibility();
     applyModeLocks();
     // Update nav button label (Upgrade ↔ Extended)
     updateNavUpgradeBtn();
+    // Favorites lists are rendered from data, not static cards — refresh
+    // them so visibility changes take effect there too.
+    if (window._favRenderTab)  window._favRenderTab();
+    if (window._favRenderDash) window._favRenderDash();
   }
 
   function applyModeLocks() {
@@ -296,7 +351,7 @@ applyInputCounterVisibility();
   }
 
   // Expose for other modules
-  window.accessLevel = { getLevel, canAccess, badgeLabel, applyModeLocks, updateNavUpgradeBtn };
+  window.accessLevel = { getLevel, canAccess, badgeLabel, applyModeLocks, updateNavUpgradeBtn, packVisibility, applyAccessLevel };
   window._applyAccessLevel = applyAccessLevel;
 
   // Init
@@ -566,7 +621,25 @@ window.renderBundleSection = function(containerEl, packKey) {
       }
 
     } else if (bundle.tier === 'pro-opt' || bundle.tier === 'extended') {
-      if (!accessible) return;
+      if (!accessible) {
+        // Extended bundles the user bought stay listed when Pro lapses,
+        // with a Pro badge and an upgrade toast (yearly Pro model).
+        const ownedExt = bundle.tier === 'extended' && extOwned.includes(`${packKey}::${bundle.id}`);
+        if (!ownedExt) return;
+        row.innerHTML = `
+          <div class="bundle-row bundle-row--locked">
+            <div class="bundle-info">
+              <div class="bundle-name">${bundle.name}</div>
+              <div class="bundle-desc-preview">${bundle.description}</div>
+            </div>
+            <span class="bundle-status bundle-status--locked">Pro</span>
+          </div>`;
+        row.addEventListener('click', () => {
+          if (window.showToast) showToast('This bundle requires Pro. Upgrade to unlock it.');
+        });
+        section.appendChild(row);
+        return;
+      }
       const isOn = active.includes(bundle.id);
       row.innerHTML = `
         <div class="bundle-row">
@@ -877,6 +950,7 @@ const clearExtendedBtn = document.getElementById('clearExtendedBtn');
 if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
   // Rensa purchases
   localStorage.removeItem('ds_extended_owned');
+  if (window.accessLevel && window.accessLevel.applyAccessLevel) window.accessLevel.applyAccessLevel();
   // Rensa bundle states explicit per känd pack
   const knownPacks = Object.keys(BUNDLE_DEFS);
   knownPacks.forEach(packKey => {
