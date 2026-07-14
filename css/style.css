@@ -143,12 +143,14 @@ body {
 
 .home-topbar .topbar-btn {
   font-size: 22px;
-  color: #aaa;
+  color: rgba(60, 25, 5, 0.85);
   background: none;
   border: none;
   cursor: pointer;
   padding: 4px;
 }
+/* Uppgift 7 — home topbar SVG slightly larger */
+.home-topbar .topbar-btn svg { width: 26px; height: 26px; }
 
 .home-header { padding: 56px 0 8px; text-align: center; }
 .home-title { font-size: 26px; font-weight: 800; color: var(--ds-txt); letter-spacing: -0.3px; }
@@ -314,6 +316,9 @@ body {
   color: var(--ds-topbar-btnT);
   touch-action: manipulation;
 }
+
+/* Uppgift 6 — larger gear/close icons in topbar buttons */
+.topbar-btn svg { width: 26px; height: 26px; }
 
 .counter { font-size: 15px; font-weight: 600; color: var(--ds-txt2); letter-spacing: 0.5px; }
 .divider {
@@ -1095,7 +1100,7 @@ body.pb-enabled .divider::after {
   flex-shrink: 0;
   font-size: 15px !important;
   font-weight: 600;
-  color: var(--ds-acc) !important;
+  color: rgba(60, 25, 5, 0.85) !important;
   background: none;
   border: none;
   cursor: pointer;
@@ -1496,6 +1501,9 @@ body.pb-enabled .divider::after {
   border-radius: 50%;
 }
 
+/* Uppgift 8 — center pin btn when gear is hidden */
+.mode-pin-centered { margin: 0 auto; }
+
 .mode-pin-btn.pinned {
   color: var(--ds-acc);
   border-color: var(--ds-acc);
@@ -1885,6 +1893,17 @@ body.pb-enabled .divider::after {
 }
 
 /* Favorites grid — two per row */
+/* Uppgift 11 — horizontal carousel, up to 8 favs, 2 visible at a time */
+#dashFavList {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  gap: 10px;
+  padding-bottom: 4px;
+  scrollbar-width: none;
+}
+#dashFavList::-webkit-scrollbar { display: none; }
 .dash-fav-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1904,6 +1923,8 @@ body.pb-enabled .divider::after {
   display: flex;
   flex-direction: column;
   gap: 8px;
+  flex: 0 0 calc(50% - 5px);
+  scroll-snap-align: start;
 }
 .dash-fav-card:active { opacity: 0.88; transform: scale(0.97); }
 .dash-fav-icon {
@@ -2151,7 +2172,7 @@ body.pb-enabled .divider::after {
 }
 
 .extended-hero-icon {
-  font-size: 36px;
+  font-size: 46px;
   color: var(--ds-acc);
   margin-bottom: 10px;
   line-height: 1;
@@ -2597,7 +2618,7 @@ body.feedback-mode    .al-bar { display: none !important; }
 .prog-intro {
   font-size: 14px;
   color: var(--ds-txt2);
-  margin: 14px 20px 4px;
+  margin: 14px 20px 16px;
   line-height: 1.45;
 }
 
@@ -2647,8 +2668,16 @@ body.feedback-mode    .al-bar { display: none !important; }
   -webkit-user-select: none;
   user-select: none;
   -webkit-tap-highlight-color: transparent;
+  transition: transform 0.25s ease;
 }
 .fol-card:active { opacity: 0.85; }
+/* Uppgift 15 — swipe hint */
+.fol-swipe-hint {
+  text-align: center;
+  font-size: 12px;
+  color: var(--ds-txt3);
+  margin: 4px 0 16px;
+}
 .fol-card-icon { font-size: 20px; color: var(--ds-acc); flex-shrink: 0; display: flex; }
 .fol-card-name {
   flex: 1;
@@ -2689,6 +2718,10 @@ body.feedback-mode    .al-bar { display: none !important; }
 
 /* Open folder — view mode hint when empty */
 .fol-view-empty { font-size: 14px; color: var(--ds-txt2); text-align: center; padding: 32px 20px; line-height: 1.5; }
+
+/* Uppgift 1a — padding between folder banner and first pack card */
+#libTabFolders .fol-pack-card:first-child { margin-top: 14px; }
+#libTabFolders .fol-section-label:first-child { padding-top: 14px; }
 
 /* Edit mode */
 .fol-section-label {
