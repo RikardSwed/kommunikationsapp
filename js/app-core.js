@@ -5,7 +5,7 @@
 // (DS.createCardMode / DS.createHandsfreeMode) and are declared in
 // app-modes.js and app-handsfree.js.
 
-const VERSION = 'v1.26.14';
+const VERSION = 'v1.26.16';
 
 // Pack icon map — global so both dashboard and favorites can use it
 const PACK_ICONS = {

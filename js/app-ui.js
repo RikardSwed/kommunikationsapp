@@ -61,6 +61,8 @@ let activeLibraryTab = 'packs'; // session default; resets on reload
 function showLibraryTab(tab) {
   if (!LIB_TABS[tab]) return;
   activeLibraryTab = tab;
+  // Leaving/entering tabs always exits an open folder (restores sub-nav & banner)
+  if (window._folderResetView) window._folderResetView();
   sessionStorage.setItem('libraryTab', tab);
   Object.keys(LIB_TABS).forEach(key => {
     const content = document.getElementById(LIB_TABS[key]);
@@ -1202,7 +1204,12 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
 (function initFolders() {
   const FOLDERS_KEY = 'ds_folders';
 
-  // ── Storage ─────────────────────────────────────────────────────────────────
+  // ── View state (list of folders vs one open folder, browse vs edit) ────
+  let view = 'list';      // 'list' | 'folder'
+  let openId = null;      // id of the open folder
+  let editMode = false;   // inside a folder: edit (add/remove packs) or browse
+
+  // ── Storage ────────────────────────────────────────────────
   function getFolders() {
     try { return JSON.parse(localStorage.getItem(FOLDERS_KEY) || '[]'); } catch { return []; }
   }
@@ -1212,8 +1219,11 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
   function newFolder(name) {
     return { id: Date.now().toString(36), name, packs: [] };
   }
+  function findFolder(folders, id) {
+    return folders.find(f => f.id === id) || null;
+  }
 
-  // ── All available packs (from collection-cards in Packs tab) ──────────────
+  // ── All available packs (from collection-cards in Packs tab) ────────
   function getAllPacks() {
     const cards = document.querySelectorAll('#libTabPacks .collection-card');
     const packs = [];
@@ -1225,190 +1235,292 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
     return packs;
   }
 
-  // ── Render ──────────────────────────────────────────────────────────────────
+  // ── Bottom sheet (create / rename / delete) — no native prompt/confirm ──
+  // opts: { title, text?, input? (string shows an input), confirmLabel,
+  //         danger?, onConfirm(value) }
+  function openSheet(opts) {
+    let backdrop = document.getElementById('folSheetBackdrop');
+    if (backdrop) backdrop.remove();
+    backdrop = document.createElement('div');
+    backdrop.id = 'folSheetBackdrop';
+    backdrop.className = 'fol-sheet-backdrop';
+
+    const hasInput = typeof opts.input === 'string';
+    backdrop.innerHTML =
+      '<div class="fol-sheet">'
+      + '<div class="fol-sheet-title">' + escHtml(opts.title) + '</div>'
+      + (opts.text ? '<div class="fol-sheet-text">' + escHtml(opts.text) + '</div>' : '')
+      + (hasInput ? '<input class="fol-sheet-input" id="folSheetInput" type="text" maxlength="40" placeholder="Folder name" autocomplete="off">' : '')
+      + '<button class="fol-sheet-btn ' + (opts.danger ? 'fol-danger-btn' : 'fol-primary') + '" id="folSheetConfirm">' + escHtml(opts.confirmLabel) + '</button>'
+      + '<button class="fol-sheet-btn fol-cancel" id="folSheetCancel">Cancel</button>'
+      + '</div>';
+    document.body.appendChild(backdrop);
+
+    const close = () => backdrop.remove();
+    const input = backdrop.querySelector('#folSheetInput');
+    if (input) {
+      input.value = opts.input;
+      setTimeout(() => { input.focus(); input.select(); }, 50);
+      input.addEventListener('keydown', e => { if (e.key === 'Enter') confirmBtn.click(); });
+    }
+    const confirmBtn = backdrop.querySelector('#folSheetConfirm');
+    confirmBtn.addEventListener('click', () => {
+      if (hasInput) {
+        const val = input.value.trim();
+        if (!val) { input.focus(); return; }
+        close(); opts.onConfirm(val);
+      } else {
+        close(); opts.onConfirm();
+      }
+    });
+    backdrop.querySelector('#folSheetCancel').addEventListener('click', close);
+    backdrop.addEventListener('click', e => { if (e.target === backdrop) close(); });
+  }
+
+  function promptNewFolder() {
+    openSheet({
+      title: 'New folder',
+      input: '',
+      confirmLabel: 'Create folder',
+      onConfirm: name => {
+        const fols = getFolders();
+        fols.push(newFolder(name));
+        saveFolders(fols);
+        render();
+      }
+    });
+  }
+
+  // ── Banner wiring (shared lib-banner) ──────────────────────────
   function wireFolderPlus() {
     const plusBtn = document.getElementById('libBannerPlusBtn');
     if (!plusBtn) return;
-    plusBtn.onclick = () => {
-      const name = prompt('Folder name:');
-      if (!name?.trim()) return;
-      const fols = getFolders(); fols.push(newFolder(name.trim())); saveFolders(fols); render();
-    };
+    plusBtn.onclick = promptNewFolder;
+    updateBanner();
   }
   window._folderWirePlus = wireFolderPlus;
 
+  // Called by showLibraryTab on every tab switch: leave folder view and
+  // restore the sub-nav so other tabs are never left without it.
+  window._folderResetView = function () {
+    view = 'list'; openId = null; editMode = false;
+    const subnav = document.getElementById('librarySubnav');
+    if (subnav) subnav.style.display = '';
+    const back = document.getElementById('libBannerBackBtn');
+    if (back) back.style.display = 'none';
+    const edit = document.getElementById('libBannerEditBtn');
+    if (edit) edit.style.display = 'none';
+  };
+
+  function updateBanner() {
+    const title  = document.getElementById('libBannerTitle');
+    const plus   = document.getElementById('libBannerPlusBtn');
+    const back   = document.getElementById('libBannerBackBtn');
+    const edit   = document.getElementById('libBannerEditBtn');
+    const subnav = document.getElementById('librarySubnav');
+    const inFolder = view === 'folder';
+
+    if (inFolder) {
+      const f = findFolder(getFolders(), openId);
+      if (title)  title.textContent = f ? f.name : 'Folder';
+      if (plus)   plus.style.display = 'none';
+      if (back)   { back.style.display = ''; back.onclick = onBannerBack; }
+      if (edit)   {
+        edit.style.display = '';
+        edit.textContent = editMode ? 'Done' : 'Edit';
+        edit.onclick = onBannerEdit;
+      }
+      if (subnav) subnav.style.display = 'none';
+    } else {
+      if (title)  title.textContent = 'Folders';
+      if (plus)   plus.style.display = '';
+      if (back)   back.style.display = 'none';
+      if (edit)   edit.style.display = 'none';
+      if (subnav) subnav.style.display = '';
+    }
+  }
+
+  function onBannerBack() {
+    if (editMode) { editMode = false; render(); }   // leave edit mode first
+    else { view = 'list'; openId = null; render(); }
+  }
+  function onBannerEdit() {
+    editMode = !editMode;
+    render();
+  }
+
+  // ── Render ──────────────────────────────────────────────────
   function render() {
     const container = document.getElementById('libTabFolders');
     if (!container) return;
     const folders = getFolders();
 
-    // Wire library banner plus button to add folder (only when Folders tab is active)
-    if (activeLibraryTab === 'folders') wireFolderPlus();
-
-    if (!folders.length) {
-      container.className = 'library-tab-content library-placeholder';
-      container.innerHTML = '<div class="library-placeholder-icon">📂</div>'
-        + '<div class="library-placeholder-title">No folders yet</div>'
-        + '<div class="library-placeholder-text">Tap + to create a folder and organise your packs.</div>';
-      return;
+    // If the open folder was deleted elsewhere, fall back to the list
+    if (view === 'folder' && !findFolder(folders, openId)) {
+      view = 'list'; openId = null; editMode = false;
     }
 
-    let html = '';
-    folders.forEach((folder, fi) => {
-      const isOpen = folder._open;
-      html += '<div class="folder-item" data-fi="' + fi + '">'
-        + '<div class="folder-card">'
-        + '<div class="folder-card-header" data-fi="' + fi + '" data-action="toggle">'
-        + '<div class="folder-card-info">'
-        + '<div class="folder-card-name">' + escHtml(folder.name) + '</div>'
-        + '<div class="folder-card-count">' + folder.packs.length + (folder.packs.length === 1 ? ' pack' : ' packs') + '</div>'
-        + '</div>'
-        + '<div class="folder-card-actions">'
-        + '<button class="folder-edit-btn" data-fi="' + fi + '" data-action="edit">Edit</button>'
-        + '<span class="folder-chevron">' + (isOpen ? '&#8964;' : '&#8250;') + '</span>'
-        + '</div>'
-        + '</div>'
-        + '<div class="folder-body" id="folder-body-' + fi + '" style="' + (isOpen ? '' : 'display:none;') + '">';
-      if (!folder.packs.length) {
-        html += '<div class="folder-empty-msg">No packs yet.</div>';
-      } else {
-        folder.packs.forEach((pack, pi) => {
-          html += '<div class="folder-pack-card" data-key="' + pack.key + '" data-label="' + escHtml(pack.label) + '">'
-            + '<div class="collection-name">' + escHtml(pack.label) + '</div>'
-            + '<div class="collection-arrow">&#x203a;</div>'
-            + '</div>';
-        });
-      }
-      html += '<button class="folder-add-pack-btn" data-fi="' + fi + '">+ Add pack</button>'
-        + '</div>'
-        + '</div></div>';
-    });
+    // Only touch the shared banner when the Folders tab is actually visible —
+    // render() also runs at script init while another tab may be active.
+    const visible = activeLibraryTab === 'folders' && container.style.display !== 'none';
+    if (visible) { wireFolderPlus(); }
 
     container.className = 'library-tab-content';
-    container.innerHTML = html;
-    bindEvents(folders);
+    if (view === 'folder') renderFolder(container, folders);
+    else renderList(container, folders);
   }
 
   function escHtml(s) {
     return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
   }
 
-  // ── Bind events ─────────────────────────────────────────────────────────────
-  function bindEvents(folders) {
-    // Toggle open/close — click on folder card header
-    document.querySelectorAll('.folder-card-header[data-action="toggle"]').forEach(el => {
-      el.onclick = () => {
-        const fi   = el.dataset.fi;
-        const body = document.getElementById('folder-body-' + fi);
-        if (!body) return;
-        const open = body.style.display === 'none';
-        body.style.display = open ? 'block' : 'none';
-        const chevron = el.querySelector('.folder-chevron');
-        if (chevron) chevron.innerHTML = open ? '&#8964;' : '&#8250;';
-        const idx = parseInt(fi);
-        if (folders[idx]) folders[idx]._open = open;
-      };
-    });
-
-    // Edit button — rename or delete dialog
-    document.querySelectorAll('.folder-edit-btn').forEach(btn => {
-      btn.addEventListener('click', e => {
-        e.stopPropagation();
-        const fi = parseInt(btn.dataset.fi);
-        const choice = confirm('Rename folder "' + folders[fi].name + '"?\n\nOK = Rename  \u00b7  Cancel = show delete option');
-        if (choice) {
-          const name = prompt('New name:', folders[fi].name);
-          if (!name?.trim()) return;
-          folders[fi].name = name.trim();
-          saveFolders(folders); render();
-        } else {
-          if (confirm('Delete folder "' + folders[fi].name + '"? Packs will not be removed from the app.')) {
-            folders.splice(fi, 1);
-            saveFolders(folders); render();
-          }
-        }
+  // ── List view (variant A) ────────────────────────────────────
+  function renderList(container, folders) {
+    let html = '';
+    if (!folders.length) {
+      html += '<div class="fol-empty">'
+        + '<div class="fol-empty-icon">&#x1F4C1;</div>'
+        + '<div class="fol-empty-title">No folders yet</div>'
+        + '<div class="fol-empty-text">Group your packs into folders to build your own training structure.</div>'
+        + '</div>';
+    } else {
+      folders.forEach(folder => {
+        const n = folder.packs.length;
+        html += '<div class="fol-card" data-id="' + folder.id + '">'
+          + '<span class="fol-card-icon"><i class="ti ti-folder" aria-hidden="true"></i></span>'
+          + '<span class="fol-card-name">' + escHtml(folder.name) + '</span>'
+          + '<span class="fol-card-count">' + n + (n === 1 ? ' pack' : ' packs') + '</span>'
+          + '<span class="fol-card-chevron">&#x203a;</span>'
+          + '</div>';
       });
-    });
+    }
+    html += '<div class="fol-new-btn" id="folNewBtn">'
+      + '<span class="fol-new-plus">+</span><span>New folder</span></div>';
 
-    // Remove pack from folder
-    document.querySelectorAll('.folder-remove-pack').forEach(btn => {
-      btn.addEventListener('click', e => {
-        e.stopPropagation();
-        const fi = parseInt(btn.dataset.fi);
-        const pi = parseInt(btn.dataset.pi);
-        folders[fi].packs.splice(pi, 1);
-        saveFolders(folders);
+    container.innerHTML = html;
+
+    container.querySelectorAll('.fol-card[data-id]').forEach(card => {
+      card.addEventListener('click', () => {
+        const f = findFolder(getFolders(), card.dataset.id);
+        if (!f) return;
+        view = 'folder';
+        openId = f.id;
+        editMode = f.packs.length === 0;   // empty folder opens straight in edit mode
         render();
-        // Re-open the folder
-        const body = document.getElementById('folder-body-' + fi);
-        const chev = document.getElementById('chev-' + fi);
-        if (body) { body.style.display = 'block'; if (chev) chev.innerHTML = '&#9660;'; }
       });
     });
+    const newBtn = container.querySelector('#folNewBtn');
+    if (newBtn) newBtn.addEventListener('click', promptNewFolder);
+  }
 
-    // Pack card click — open mode screen
-    document.querySelectorAll('.folder-pack-card[data-key]').forEach(card => {
+  // ── Open folder view ─────────────────────────────────────────
+  function renderFolder(container, folders) {
+    const folder = findFolder(folders, openId);
+    if (!folder) return;
+    if (editMode) renderFolderEdit(container, folders, folder);
+    else renderFolderView(container, folder);
+  }
+
+  // Browse mode — packs listed like the Favorites screen
+  function renderFolderView(container, folder) {
+    if (!folder.packs.length) {
+      container.innerHTML = '<div class="fol-view-empty">This folder is empty.<br>Tap Edit to add packs.</div>';
+      return;
+    }
+    container.innerHTML = folder.packs.map(p =>
+      '<div class="collection-card fol-pack-card" data-key="' + p.key + '" data-label="' + escHtml(p.label) + '">'
+      + '<div><div class="collection-name">' + escHtml(p.label) + '</div></div>'
+      + '<div class="collection-arrow">&#x203a;</div>'
+      + '</div>'
+    ).join('');
+
+    container.querySelectorAll('.fol-pack-card').forEach(card => {
       let cY = 0, cMv = false;
       card.addEventListener('touchstart', e => { cY = e.touches[0].clientY; cMv = false; }, { passive: true });
       card.addEventListener('touchmove',  e => { if (Math.abs(e.touches[0].clientY - cY) > 8) cMv = true; }, { passive: true });
       card.addEventListener('touchend',   e => { if (!cMv) { e.preventDefault(); showModeScreen(card.dataset.key, card.dataset.label); } }, { passive: false });
-      card.addEventListener('click', () => showModeScreen(card.dataset.key, card.dataset.label));
+      card.addEventListener('click',      () => showModeScreen(card.dataset.key, card.dataset.label));
+    });
+  }
+
+  // Edit mode — split view: current packs (−) + add from library (+)
+  function renderFolderEdit(container, folders, folder) {
+    const inFolder  = folder.packs;
+    const existing  = new Set(inFolder.map(p => p.key));
+    const available = getAllPacks().filter(p => !existing.has(p.key));
+
+    let html = '<div class="fol-section-label">In this folder (' + inFolder.length + ')</div>';
+    if (!inFolder.length) {
+      html += '<div class="fol-edit-msg">No packs yet &mdash; add some below.</div>';
+    } else {
+      inFolder.forEach(p => {
+        html += '<div class="fol-edit-row">'
+          + '<span class="fol-row-name">' + escHtml(p.label) + '</span>'
+          + '<button class="fol-row-btn fol-row-rem" data-key="' + p.key + '" aria-label="Remove">&minus;</button>'
+          + '</div>';
+      });
+    }
+
+    html += '<div class="fol-section-label">Add from library</div>';
+    if (!available.length) {
+      html += '<div class="fol-edit-msg">All packs are already in this folder.</div>';
+    } else {
+      available.forEach(p => {
+        html += '<div class="fol-edit-row">'
+          + '<span class="fol-row-name">' + escHtml(p.label) + '</span>'
+          + '<button class="fol-row-btn fol-row-add" data-key="' + p.key + '" data-label="' + escHtml(p.label) + '" aria-label="Add">+</button>'
+          + '</div>';
+      });
+    }
+
+    html += '<div class="fol-manage-row">'
+      + '<button class="fol-manage-btn" id="folRenameBtn">Rename folder</button>'
+      + '<button class="fol-manage-btn fol-danger" id="folDeleteBtn">Delete folder</button>'
+      + '</div>';
+
+    container.innerHTML = html;
+
+    // Remove pack
+    container.querySelectorAll('.fol-row-rem').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const idx = folder.packs.findIndex(p => p.key === btn.dataset.key);
+        if (idx >= 0) { folder.packs.splice(idx, 1); saveFolders(folders); render(); }
+      });
     });
 
-    // Add pack to folder
-    document.querySelectorAll('.folder-add-pack-btn').forEach(btn => {
+    // Add pack
+    container.querySelectorAll('.fol-row-add').forEach(btn => {
       btn.addEventListener('click', () => {
-        const fi      = parseInt(btn.dataset.fi);
-        const folder  = folders[fi];
-        const allPacks = getAllPacks();
-        const existing = new Set(folder.packs.map(p => p.key));
+        folder.packs.push({ key: btn.dataset.key, label: btn.dataset.label });
+        saveFolders(folders); render();
+      });
+    });
 
-        // Build picker modal
-        let modal = document.getElementById('folder-pack-modal');
-        if (!modal) {
-          modal = document.createElement('div');
-          modal.id = 'folder-pack-modal';
-          modal.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,.45);display:flex;align-items:center;justify-content:center;z-index:300;padding:24px;';
-          document.body.appendChild(modal);
+    // Rename
+    const renameBtn = container.querySelector('#folRenameBtn');
+    if (renameBtn) renameBtn.addEventListener('click', () => {
+      openSheet({
+        title: 'Rename folder',
+        input: folder.name,
+        confirmLabel: 'Save',
+        onConfirm: name => { folder.name = name; saveFolders(folders); render(); }
+      });
+    });
+
+    // Delete
+    const deleteBtn = container.querySelector('#folDeleteBtn');
+    if (deleteBtn) deleteBtn.addEventListener('click', () => {
+      openSheet({
+        title: 'Delete folder',
+        text: 'Delete \u201c' + folder.name + '\u201d? Your packs will not be removed from the app.',
+        confirmLabel: 'Delete folder',
+        danger: true,
+        onConfirm: () => {
+          const idx = folders.findIndex(f => f.id === folder.id);
+          if (idx >= 0) { folders.splice(idx, 1); saveFolders(folders); }
+          view = 'list'; openId = null; editMode = false;
+          render();
         }
-
-        const available = allPacks.filter(p => !existing.has(p.key));
-        let pickerHtml = '<div style="background:#fff;border-radius:12px;padding:24px;max-width:480px;width:100%;max-height:70vh;overflow-y:auto;">'
-          + '<div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;">'
-          + '<strong style="font-size:16px;">Add pack to \u201c' + escHtml(folder.name) + '\u201d</strong>'
-          + '<button id="folder-modal-close" style="background:none;border:none;font-size:20px;cursor:pointer;">&#x2715;</button>'
-          + '</div>';
-
-        if (!available.length) {
-          pickerHtml += '<p style="color:#888;font-size:14px;">All available packs are already in this folder.</p>';
-        } else {
-          available.forEach(pack => {
-            pickerHtml += '<div class="folder-picker-item" data-key="' + pack.key + '" data-label="' + escHtml(pack.label) + '" '
-              + 'style="padding:12px 16px;border:1px solid #e0d8cc;border-radius:8px;margin-bottom:8px;cursor:pointer;font-size:14px;font-weight:500;">'
-              + escHtml(pack.label)
-              + '</div>';
-          });
-        }
-        pickerHtml += '</div>';
-        modal.innerHTML = pickerHtml;
-        modal.style.display = 'flex';
-
-        document.getElementById('folder-modal-close').addEventListener('click', () => { modal.style.display = 'none'; });
-        modal.addEventListener('click', e => { if (e.target === modal) modal.style.display = 'none'; });
-
-        modal.querySelectorAll('.folder-picker-item').forEach(item => {
-          item.addEventListener('mouseenter', () => { item.style.borderColor = '#B05A28'; });
-          item.addEventListener('mouseleave', () => { item.style.borderColor = '#e0d8cc'; });
-          item.addEventListener('click', () => {
-            folders[fi].packs.push({ key: item.dataset.key, label: item.dataset.label });
-            saveFolders(folders);
-            modal.style.display = 'none';
-            render();
-            const body = document.getElementById('folder-body-' + fi);
-            const chev = document.getElementById('chev-' + fi);
-            if (body) { body.style.display = 'block'; if (chev) chev.innerHTML = '&#9660;'; }
-          });
-        });
       });
     });
   }

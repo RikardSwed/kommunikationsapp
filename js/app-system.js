@@ -285,7 +285,7 @@ applyInputCounterVisibility();
     } else {
       btn.dataset.tab      = 'extended';
       btn.className        = 'nav-tab nav-tab--extended';
-      if (icon)  icon.className  = 'ti ti-sparkles';
+      if (icon)  icon.className  = 'ti ti-diamond';
       if (label) label.textContent = 'Extended';
     }
   }
