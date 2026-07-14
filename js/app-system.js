@@ -65,6 +65,7 @@ feedbackModeToggle.addEventListener('change', () => {
     document.body.classList.remove('al-suggest-mode');
   }
   applyFeedbackMode();
+  if (window.updateModeGearVisibility) window.updateModeGearVisibility();
 });
 
 // Export feedback data as JSON
@@ -236,7 +237,18 @@ applyInputCounterVisibility();
         el.appendChild(badge);
         el.style.opacity = '0.45';
         el.style.cursor  = 'default';
-        el.style.pointerEvents = 'none';
+        // Uppgift 20a — remove pointerEvents:none so click can fire toast
+        el.style.pointerEvents = '';
+        // Bind locked-click toast (idempotent via dataset flag)
+        if (!el.dataset.lockToastBound) {
+          el.dataset.lockToastBound = '1';
+          el.addEventListener('click', e => {
+            if (el.classList.contains('mode-card--locked')) {
+              e.stopImmediatePropagation();
+              if (window.showToast) showToast('This mode requires Pro. Upgrade to unlock it.');
+            }
+          }, true); // capture so it fires before mode-launch handlers
+        }
       } else {
         el.style.opacity = '';
         el.style.cursor  = '';
@@ -684,6 +696,7 @@ if (alSuggestToggle) {
       document.body.classList.remove('feedback-mode');
     }
     applyAlSuggestMode();
+    if (window.updateModeGearVisibility) window.updateModeGearVisibility();
   });
 }
 
@@ -815,6 +828,24 @@ if (alPackBar) {
     overlay.classList.add('open');
   });
   if (close) close.addEventListener('click', () => overlay.classList.remove('open'));
+  // Uppgift 9 — close on backdrop click
+  overlay.addEventListener('click', e => { if (e.target === overlay) overlay.classList.remove('open'); });
+
+  // Uppgift 8 — show gear only when at least one feedback mode is active
+  function updateModeGearVisibility() {
+    const gearBtn = document.getElementById('modePackSettingsBtn');
+    const pinBtn  = document.getElementById('modePinBtn');
+    if (!gearBtn) return;
+    const anyActive = feedbackMode || alSuggestMode ||
+      (localStorage.getItem('tagMode') === 'true');
+    gearBtn.style.display = anyActive ? '' : 'none';
+    if (pinBtn) {
+      pinBtn.classList.toggle('mode-pin-centered', !anyActive);
+    }
+  }
+  // Expose so settings toggles can trigger a refresh
+  window.updateModeGearVisibility = updateModeGearVisibility;
+  updateModeGearVisibility();
 })();
 
 // ── AL EXPORT ────────────────────────────────────────────────────────────────
@@ -927,6 +958,7 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
       tagMode = tagModeToggle.checked;
       localStorage.setItem('tagMode', tagMode);
       applyTagMode();
+      if (window.updateModeGearVisibility) window.updateModeGearVisibility();
     });
   }
 
@@ -1004,6 +1036,12 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
   if (progSettingsClose) {
     progSettingsClose.addEventListener('click', () => {
       if (progSettingsOverlay) progSettingsOverlay.style.display = 'none';
+    });
+  }
+  // Uppgift 9 — close on backdrop click
+  if (progSettingsOverlay) {
+    progSettingsOverlay.addEventListener('click', e => {
+      if (e.target === progSettingsOverlay) progSettingsOverlay.style.display = 'none';
     });
   }
 

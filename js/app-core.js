@@ -5,7 +5,7 @@
 // (DS.createCardMode / DS.createHandsfreeMode) and are declared in
 // app-modes.js and app-handsfree.js.
 
-const VERSION = 'v1.26.16';
+const VERSION = 'v1.26.18';
 
 // Pack icon map — global so both dashboard and favorites can use it
 const PACK_ICONS = {
@@ -92,6 +92,39 @@ function navToTraining(id) {
   void el.offsetWidth;
   el.classList.add('slide-in-bottom');
   setTimeout(() => { modeScreen.style.display = 'none'; }, 320);
+
+  // Uppgift 17 — "Tap to learn" hint for first 10 training screen openings
+  try {
+    const TAP_HINT_KEY = 'ds_tap_hint_count';
+    const count = parseInt(localStorage.getItem(TAP_HINT_KEY) || '0');
+    if (count < 10) {
+      localStorage.setItem(TAP_HINT_KEY, count + 1);
+      setTimeout(() => {
+        const screen = document.getElementById(id);
+        if (!screen) return;
+        const titleEl = screen.querySelector('[id$="StrategyName"],[id="strategyName"],[id="memStrategyName"]')
+          || screen.querySelector('.card-title, .strat-title');
+        if (!titleEl) return;
+        let hint = document.getElementById('ds-tap-hint');
+        if (!hint) {
+          hint = document.createElement('div');
+          hint.id = 'ds-tap-hint';
+          hint.style.cssText = [
+            'position:fixed','left:0','right:0','text-align:center',
+            'font-size:12px','color:var(--ds-txt3)','pointer-events:none',
+            'opacity:0','transition:opacity 0.4s ease','z-index:500',
+            'padding:4px 0'
+          ].join(';');
+          hint.textContent = 'Tap the name to learn more';
+          document.body.appendChild(hint);
+        }
+        const rect = titleEl.getBoundingClientRect();
+        hint.style.top = (rect.bottom + 6) + 'px';
+        hint.style.opacity = '1';
+        setTimeout(() => { hint.style.opacity = '0'; }, 2500);
+      }, 450); // wait for slide-in to finish
+    }
+  } catch (e) {}
 }
 
 function navFromTraining(id) {

@@ -216,6 +216,8 @@ document.querySelectorAll('.nav-tab').forEach(btn => {
 
   // ── State ─────────────────────────────────────────────────────────────────
   let searching = false;
+  // Save SVG innerHTML of the settings/cancel button so we can restore it after search
+  const cancelBtnOriginalHTML = cancelBtn ? cancelBtn.innerHTML : '';
 
   // ── localStorage helpers ─────────────────────────────────────────────────
   function getRecent() {
@@ -326,22 +328,34 @@ document.querySelectorAll('.nav-tab').forEach(btn => {
       hits.push({ key: pack.key, label: pack.label, subtitle });
     });
 
-    searchResults.innerHTML = hits.map(p =>
-      `<div class="collection-card dash-result-card" data-key="${p.key}" data-label="${p.label.replace(/"/g,'&quot;')}">
-        <div>
-          <div class="collection-name">${p.label}</div>
-          ${p.subtitle ? `<div class="collection-meta" style="margin-top:2px;">${p.subtitle}</div>` : ''}
-        </div>
-        <div class="collection-arrow">›</div>
-       </div>`
-    ).join('');
+    searchResults.innerHTML = hits.map(p => {
+      const accessible = !window.accessLevel || window.accessLevel.canAccess(p.key);
+      const badge = (!accessible && window.accessLevel) ? window.accessLevel.badgeLabel(p.key) : null;
+      const badgeHtml = badge
+        ? `<div class="pack-lock-badge ${badge.cls}" style="position:relative;display:inline-block;margin-left:6px;vertical-align:middle;">${badge.text}</div>`
+        : '';
+      return `<div class="collection-card dash-result-card${!accessible ? ' collection-card--locked' : ''}" data-key="${p.key}" data-label="${p.label.replace(/"/g,'&quot;')}" data-locked="${!accessible}">`+
+        `<div style="display:flex;align-items:center;flex-wrap:wrap;">`+
+          `<div class="collection-name" style="display:inline;">${p.label}</div>${badgeHtml}`+
+          (p.subtitle ? `<div class="collection-meta" style="margin-top:2px;width:100%;">${p.subtitle}</div>` : '')+
+        `</div>`+
+        `<div class="collection-arrow">›</div>`+
+      `</div>`;
+    }).join('');
     noResults.style.display = (!q || hits.length) ? 'none' : '';
     searchResults.querySelectorAll('.dash-result-card').forEach(el => {
+      const locked = el.dataset.locked === 'true';
       let rStartY = 0, rMoved = false;
       el.ontouchstart = e => { rStartY = e.touches[0].clientY; rMoved = false; };
       el.ontouchmove  = e => { if (Math.abs(e.touches[0].clientY - rStartY) > 8) rMoved = true; };
       el.ontouchend   = () => {
         if (!rMoved) {
+          if (locked) {
+            const cfg = window.PACK_CONFIG && window.PACK_CONFIG[el.dataset.key];
+            const tier = cfg ? cfg.minLevel : 'Pro';
+            if (window.showToast) showToast('This pack requires ' + tier[0].toUpperCase() + tier.slice(1) + '. Upgrade to unlock it.');
+            return;
+          }
           const key   = el.dataset.key;
           const label = el.dataset.label;
           addRecent(query.trim());
@@ -351,6 +365,12 @@ document.querySelectorAll('.nav-tab').forEach(btn => {
         }
       };
       el.onclick = () => {
+        if (locked) {
+          const cfg = window.PACK_CONFIG && window.PACK_CONFIG[el.dataset.key];
+          const tier = cfg ? cfg.minLevel : 'Pro';
+          if (window.showToast) showToast('This pack requires ' + tier[0].toUpperCase() + tier.slice(1) + '. Upgrade to unlock it.');
+          return;
+        }
         const key   = el.dataset.key;
         const label = el.dataset.label;
         addRecent(query.trim());
@@ -365,6 +385,7 @@ document.querySelectorAll('.nav-tab').forEach(btn => {
   function enterSearch() {
     if (searching) return;
     searching = true;
+    cancelBtn.innerHTML = '';
     cancelBtn.textContent = 'Cancel';
     cancelBtn.style.fontSize = '15px';
     defaultView.style.display = 'none';
@@ -376,7 +397,7 @@ document.querySelectorAll('.nav-tab').forEach(btn => {
 
   function exitSearch(clearInput = true) {
     searching = false;
-    cancelBtn.textContent = '⚙️';
+    cancelBtn.innerHTML = cancelBtnOriginalHTML;
     cancelBtn.style.fontSize = '';
     if (clearInput) searchInput.value = '';
     searchClear.style.display = 'none';
@@ -672,7 +693,7 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
     });
   }
 
-  // ─ Home screen favorites render (up to 4, sorted by last trained) ───────
+  // ─ Home screen favorites render (up to 8, horizontal carousel) ──────────
   function renderDashFavs() {
     const favSec  = document.getElementById('dashFavSection');
     const favList = document.getElementById('dashFavList');
@@ -681,16 +702,14 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
     if (!favs.length) { favSec.style.display = 'none'; return; }
     const times = getTrainedTimes();
     const sorted = [...favs].sort((a, b) => (times[b.key] || 0) - (times[a.key] || 0));
-    const shown  = sorted.slice(0, 2);
+    const shown  = sorted.slice(0, 8);
     favSec.style.display = '';
-    favList.innerHTML = `<div class="dash-fav-grid">${
-      shown.map(f =>
-        `<div class="dash-fav-card" data-key="${f.key}" data-label="${f.label.replace(/"/g,'&quot;')}">
-          <div class="dash-fav-icon">${packIcon(f.key)}</div>
-          <div class="dash-fav-name">${f.label}</div>
-        </div>`
-      ).join('')
-    }</div>`;
+    favList.innerHTML = shown.map(f =>
+        `<div class="dash-fav-card" data-key="${f.key}" data-label="${f.label.replace(/"/g,'&quot;')}">`+
+          `<div class="dash-fav-icon">${packIcon(f.key)}</div>`+
+          `<div class="dash-fav-name">${f.label}</div>`+
+        `</div>`
+      ).join('');
     favList.querySelectorAll('.dash-fav-card').forEach(card => {
       let fStartY = 0, fMoved = false;
       card.ontouchstart = e => { fStartY = e.touches[0].clientY; fMoved = false; };
@@ -1374,6 +1393,25 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
     return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
   }
 
+  // ── Uppgift 15 — shared delete-folder confirmation ──────────────────────────
+  function confirmDeleteFolder(folders, folder) {
+    openSheet({
+      title: 'Delete folder',
+      text: 'Delete \u201c' + folder.name + '\u201d? Your packs will not be removed from the app.',
+      confirmLabel: 'Delete folder',
+      danger: true,
+      onConfirm: () => {
+        const idx = folders.findIndex(f => f.id === folder.id);
+        if (idx >= 0) { folders.splice(idx, 1); saveFolders(folders); }
+        // If we're inside the deleted folder, fall back to list
+        if (view === 'folder' && openId === folder.id) {
+          view = 'list'; openId = null; editMode = false;
+        }
+        render();
+      }
+    });
+  }
+
   // ── List view (variant A) ────────────────────────────────────
   function renderList(container, folders) {
     let html = '';
@@ -1396,11 +1434,47 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
     }
     html += '<div class="fol-new-btn" id="folNewBtn">'
       + '<span class="fol-new-plus">+</span><span>New folder</span></div>';
+    if (folders.length) {
+      html += '<div class="fol-swipe-hint">Swipe left on a folder to delete</div>';
+    }
 
     container.innerHTML = html;
 
     container.querySelectorAll('.fol-card[data-id]').forEach(card => {
+      let swipeStartX = 0, swipeStartY = 0, swiped = false;
+
+      card.addEventListener('touchstart', e => {
+        swipeStartX = e.touches[0].clientX;
+        swipeStartY = e.touches[0].clientY;
+        swiped = false;
+      }, { passive: true });
+
+      card.addEventListener('touchmove', e => {
+        const dx = e.touches[0].clientX - swipeStartX;
+        const dy = e.touches[0].clientY - swipeStartY;
+        if (Math.abs(dy) > 30) return; // vertical scroll, ignore
+        if (dx < -60 && Math.abs(dy) < 30) {
+          swiped = true;
+        }
+        // Visual feedback: follow finger up to -80px
+        if (dx < 0 && Math.abs(dy) < 30) {
+          card.style.transform = 'translateX(' + Math.max(dx, -80) + 'px)';
+          card.style.transition = 'none';
+        }
+      }, { passive: true });
+
+      card.addEventListener('touchend', () => {
+        // Spring back
+        card.style.transition = 'transform 0.25s ease';
+        card.style.transform = '';
+        if (swiped) {
+          const f = findFolder(getFolders(), card.dataset.id);
+          if (f) confirmDeleteFolder(getFolders(), f);
+        }
+      }, { passive: true });
+
       card.addEventListener('click', () => {
+        if (swiped) return; // swipe fired — ignore tap
         const f = findFolder(getFolders(), card.dataset.id);
         if (!f) return;
         view = 'folder';
@@ -1510,18 +1584,7 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
     // Delete
     const deleteBtn = container.querySelector('#folDeleteBtn');
     if (deleteBtn) deleteBtn.addEventListener('click', () => {
-      openSheet({
-        title: 'Delete folder',
-        text: 'Delete \u201c' + folder.name + '\u201d? Your packs will not be removed from the app.',
-        confirmLabel: 'Delete folder',
-        danger: true,
-        onConfirm: () => {
-          const idx = folders.findIndex(f => f.id === folder.id);
-          if (idx >= 0) { folders.splice(idx, 1); saveFolders(folders); }
-          view = 'list'; openId = null; editMode = false;
-          render();
-        }
-      });
+      confirmDeleteFolder(folders, folder);
     });
   }
 

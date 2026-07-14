@@ -389,6 +389,9 @@ const DS = (function () {
         loop        : v(p + 'LoopStrategy') ? v(p + 'LoopStrategy').checked : false,
         rate        : v(p + 'Rate')  ? parseFloat(v(p + 'Rate').value) : 1,
         voiceGender : v(p + 'Voice') ? v(p + 'Voice').value : 'female',
+        // Uppgift 10 — shuffle toggles (same naming convention as regular modes)
+        shuffleGroups : v(p + 'ShuffleStrategies') ? v(p + 'ShuffleStrategies').checked : false,
+        shuffleItems  : v(p + 'ShuffleInputs')     ? v(p + 'ShuffleInputs').checked     : false,
       };
     }
 
@@ -494,10 +497,17 @@ const DS = (function () {
       const startGi = mode.gi, startIi = mode.ii;
       const skipIntro = startIi > 0;
 
+      // Uppgift 10 — build shuffled play order
+      const groupOrder = s.shuffleGroups ? shuffle(mode.groups.map((_, i) => i)) : mode.groups.map((_, i) => i);
+      const itemOrders = mode.groups.map(g => {
+        const idx = items(g).map((_, i) => i);
+        return s.shuffleItems ? shuffle(idx) : idx;
+      });
+
       outer:
-      for (let gi2 = startGi; gi2 < mode.groups.length; gi2++) {
+      for (let gi2 = startGi; gi2 < groupOrder.length; gi2++) {
         if (mode.abort) break;
-        mode.gi = gi2;
+        mode.gi = groupOrder[gi2];
         const g = group();
         const list = items(g);
 
@@ -522,11 +532,12 @@ const DS = (function () {
 
         const limit = Math.min(list.length, maxItems);
         const from = (gi2 === startGi) ? startIi : 0;
+        const iOrder = itemOrders[mode.gi];
 
         for (let ii2 = from; ii2 < limit; ii2++) {
           if (mode.abort) break outer;
           mode.ii = ii2;
-          const it = list[ii2];
+          const it = list[iOrder[ii2]];
           const front = cfg.itemFront(it, g);
           const back  = cfg.itemBack(it, g);
 
