@@ -1509,11 +1509,18 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
     ).join('');
 
     container.querySelectorAll('.fol-pack-card').forEach(card => {
+      // Next-arrow context: the folder's own pack list, in folder order
+      const openPack = () => {
+        if (window.setPackContext) {
+          setPackContext(folder.packs.map(pp => ({ key: pp.key, label: pp.label })), card.dataset.key);
+        }
+        showModeScreen(card.dataset.key, card.dataset.label);
+      };
       let cY = 0, cMv = false;
       card.addEventListener('touchstart', e => { cY = e.touches[0].clientY; cMv = false; }, { passive: true });
       card.addEventListener('touchmove',  e => { if (Math.abs(e.touches[0].clientY - cY) > 8) cMv = true; }, { passive: true });
-      card.addEventListener('touchend',   e => { if (!cMv) { e.preventDefault(); showModeScreen(card.dataset.key, card.dataset.label); } }, { passive: false });
-      card.addEventListener('click',      () => showModeScreen(card.dataset.key, card.dataset.label));
+      card.addEventListener('touchend',   e => { if (!cMv) { e.preventDefault(); openPack(); } }, { passive: false });
+      card.addEventListener('click',      openPack);
     });
   }
 

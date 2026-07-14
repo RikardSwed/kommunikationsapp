@@ -5,7 +5,7 @@
 // (DS.createCardMode / DS.createHandsfreeMode) and are declared in
 // app-modes.js and app-handsfree.js.
 
-const VERSION = 'v1.26.18';
+const VERSION = 'v1.26.19';
 
 // Pack icon map — global so both dashboard and favorites can use it
 const PACK_ICONS = {
@@ -47,30 +47,25 @@ let _modeOrigin = 'library';
 let _packContext = null; // { packs: [{key,label}], index: N } | null
 
 function navToHome() {
-  homeScreen.style.display = 'none';
+  // Layered stack: make the origin tab active/visible BEFORE the slide-out,
+  // so it is already sitting behind the departing mode screen (no blank flash).
+  const origin = (typeof TAB_SCREENS !== 'undefined' && TAB_SCREENS[_modeOrigin]) ? _modeOrigin : 'library';
+  if (typeof showTab === 'function') showTab(origin);
   modeScreen.classList.remove('slide-in-right', 'slide-out-right');
   void modeScreen.offsetWidth;
   modeScreen.classList.add('slide-out-right');
   setTimeout(() => {
     modeScreen.style.display = 'none';
     modeScreen.classList.remove('slide-out-right');
-    if (_modeOrigin === 'dashboard') {
-      showTab('dashboard');
-    } else {
-      showTab('library');
-    }
-  }, 300);
-  showBottomNav();
+  }, 320);
 }
 
 function navToMode() {
   const activeTab = document.querySelector('.nav-tab.active');
-  const activeTabName = activeTab ? activeTab.dataset.tab : 'library';
-  _modeOrigin = (activeTabName === 'dashboard') ? 'dashboard' : 'library';
-  ['dashboardScreen','homeScreen','progressScreen','upgradeScreen'].forEach(id => {
-    const el = document.getElementById(id); if (el) el.style.display = 'none';
-  });
-  if (_modeOrigin === 'library') homeScreen.style.display = 'flex';
+  _modeOrigin = activeTab ? activeTab.dataset.tab : 'library';
+  // Layered stack: the origin tab screen stays visible underneath.
+  // modeScreen is opaque and later in the DOM, so it covers the origin
+  // while sliding in and reveals it again while sliding out.
   modeScreen.style.display = 'flex';
   modeScreen.classList.remove('slide-in-right', 'slide-out-right');
   void modeScreen.offsetWidth;
@@ -79,19 +74,20 @@ function navToMode() {
 }
 
 function navToTraining(id) {
-  modeScreen.style.display = 'flex';
+  // Layered stack: do NOT touch modeScreen here. Whatever is underneath
+  // (mode screen, or the dashboard for Continue-card launches) stays put,
+  // and the opaque training screen simply slides in over it.
   const el = document.getElementById(id);
+  if (!el) return;
   el.style.display = 'flex';
   if (window._noTrainingAnim) {
     window._noTrainingAnim = false;
     el.classList.remove('slide-in-bottom', 'slide-out-bottom');
-    modeScreen.style.display = 'none';
     return;
   }
   el.classList.remove('slide-in-bottom', 'slide-out-bottom');
   void el.offsetWidth;
   el.classList.add('slide-in-bottom');
-  setTimeout(() => { modeScreen.style.display = 'none'; }, 320);
 
   // Uppgift 17 — "Tap to learn" hint for first 10 training screen openings
   try {
@@ -130,8 +126,8 @@ function navToTraining(id) {
 function navFromTraining(id) {
   window._returningFromTraining = true;
   if (window.progEndSession) progEndSession();
-  // Show mode immediately behind (no animation), hide home
-  homeScreen.style.display = 'none';
+  // Reveal the mode screen underneath (no animation). The origin tab
+  // screen below it is left untouched so the whole stack stays intact.
   modeScreen.style.display = 'flex';
   modeScreen.classList.remove('slide-in-right', 'slide-out-right');
   const el = document.getElementById(id);
@@ -188,6 +184,12 @@ function showModeScreen(key, label) {
     if (window.recordPackTrained) recordPackTrained(key);
     if (window._favRenderDash) _favRenderDash();
   } catch {}
+  // Navigation context: callers (Library, Folders, Programs) set their own
+  // just before this call. Anyone else (dashboard favorites, recommended,
+  // search) falls back to the library pack list, so the next-arrow always
+  // has a sensible, fresh context instead of a stale one.
+  if (!_contextJustSet) setPackContext(_buildLibPackList(), key);
+  _contextJustSet = false;
   // Progress: end previous session, start new one
   if (window.progEndSession) progEndSession();
   navToMode();
@@ -195,9 +197,11 @@ function showModeScreen(key, label) {
 }
 
 // Set the navigation context (called by Library, Folders, Programs)
+let _contextJustSet = false;
 function setPackContext(packs, currentKey) {
   const index = packs.findIndex(p => p.key === currentKey);
   _packContext = (index >= 0 && packs.length > 1) ? { packs, index } : null;
+  _contextJustSet = true;
   updateNextBtn();
 }
 
@@ -214,6 +218,25 @@ function goNextPack() {
   if (!_packContext) return;
   const next = _packContext.packs[_packContext.index + 1];
   if (!next) return;
+  // Never navigate into a locked pack via the arrow
+  if (window.accessLevel && !accessLevel.canAccess(next.key)) {
+    const b = accessLevel.badgeLabel ? accessLevel.badgeLabel(next.key) : null;
+    showToast('This pack requires ' + (b ? b.text : 'Pro') + '. Upgrade to unlock it.');
+    return;
+  }
+  // Snapshot the current mode screen as a static ghost underneath, so the
+  // incoming mode screen slides in OVER it instead of revealing the tab
+  // screen behind. IDs are stripped so getElementById never hits the ghost.
+  const _ms = document.getElementById('modeScreen');
+  if (_ms && _ms.parentNode) {
+    const ghost = _ms.cloneNode(true);
+    ghost.removeAttribute('id');
+    ghost.querySelectorAll('[id]').forEach(n => n.removeAttribute('id'));
+    ghost.classList.remove('slide-in-right', 'slide-out-right');
+    ghost.style.display = 'flex';
+    _ms.parentNode.insertBefore(ghost, _ms);
+    setTimeout(() => { if (ghost.parentNode) ghost.parentNode.removeChild(ghost); }, 360);
+  }
   _packContext.index++;
   // Update state without triggering navToMode (avoids Library flash)
   activeCollectionKey   = next.key;
@@ -260,7 +283,13 @@ function addModeListener(id, fn) {
   const el = document.getElementById(id);
   if (!el) return;
   let mStartY = 0, mMoved = false, didTouch = false;
-  const launch = () => { saveLastMode(activeCollectionKey, id); fn(); };
+  const launch = () => {
+    if (el.classList.contains('mode-card--locked')) {
+      if (window.showToast) showToast('This mode requires Pro. Upgrade to unlock it.');
+      return;
+    }
+    saveLastMode(activeCollectionKey, id); fn();
+  };
   el.addEventListener('touchstart', e => { mStartY = e.touches[0].clientY; mMoved = false; didTouch = true; }, { passive: true });
   el.addEventListener('touchmove',  e => { if (Math.abs(e.touches[0].clientY - mStartY) > 8) mMoved = true; }, { passive: true });
   el.addEventListener('touchend',   e => { if (!mMoved) { launch(); } });
@@ -276,7 +305,9 @@ function registerMode(id, fn) {
 
 function launchLastMode(packKey, packLabel) {
   const lastMode = getLastMode(packKey);
-  if (lastMode && MODE_LAUNCHERS[lastMode]) {
+  const _lastModeEl = lastMode ? document.getElementById(lastMode) : null;
+  const _lastModeLocked = _lastModeEl && _lastModeEl.classList.contains('mode-card--locked');
+  if (lastMode && MODE_LAUNCHERS[lastMode] && !_lastModeLocked) {
     // Set up state without showing Library (homeScreen) at all
     activeCollectionKey   = packKey;
     activeCollectionLabel = packLabel;
@@ -292,17 +323,20 @@ function launchLastMode(packKey, packLabel) {
     if (window.progStartSession) progStartSession(packKey, packLabel);
     // Mark origin as dashboard so closing modeScreen returns there
     _modeOrigin = 'dashboard';
-    // Hide all tab screens, do NOT show Library behind
-    ['dashboardScreen','homeScreen','progressScreen','upgradeScreen'].forEach(id => {
-      const el = document.getElementById(id); if (el) el.style.display = 'none';
-    });
+    // Layered stack: keep the dashboard visible underneath. Hide the mode
+    // screen during the slide-up so only the training screen animates, then
+    // activate the mode screen silently behind it once it has landed.
     const modeEl = document.getElementById('modeScreen');
-    if (modeEl) modeEl.style.display = 'none';
+    if (modeEl) {
+      modeEl.style.display = 'none';
+      modeEl.classList.remove('slide-in-right', 'slide-out-right');
+    }
     hideBottomNav();
-    // Launch with normal slide-up animation; reveal modeScreen underneath once training has landed
+    setPackContext(_buildLibPackList(), packKey);
+    _contextJustSet = false;
     saveLastMode(packKey, lastMode);
     MODE_LAUNCHERS[lastMode]();
-    setTimeout(() => { if (modeEl) modeEl.style.display = 'flex'; }, 350);
+    setTimeout(() => { if (modeEl) modeEl.style.display = 'flex'; }, 380);
   } else {
     showModeScreen(packKey, packLabel);
   }

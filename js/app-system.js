@@ -240,15 +240,8 @@ applyInputCounterVisibility();
         // Uppgift 20a — remove pointerEvents:none so click can fire toast
         el.style.pointerEvents = '';
         // Bind locked-click toast (idempotent via dataset flag)
-        if (!el.dataset.lockToastBound) {
-          el.dataset.lockToastBound = '1';
-          el.addEventListener('click', e => {
-            if (el.classList.contains('mode-card--locked')) {
-              e.stopImmediatePropagation();
-              if (window.showToast) showToast('This mode requires Pro. Upgrade to unlock it.');
-            }
-          }, true); // capture so it fires before mode-launch handlers
-        }
+        // Locked-mode taps are gated centrally in addModeListener's launch()
+        // (app-core.js) — that path covers both touchend and click.
       } else {
         el.style.opacity = '';
         el.style.cursor  = '';
