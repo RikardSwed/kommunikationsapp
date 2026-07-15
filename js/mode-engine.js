@@ -426,6 +426,40 @@ const DS = (function () {
     const items = g => cfg.getItems(g) || [];
     const speakBack = cfg.speakBack || (() => true);
 
+    // ── Guide text (v1.26.25) — shown on the card AND read aloud ────────
+    // Same per-pack + per-mode persistence as the card modes: the key's
+    // absence means ON, 'off' means the user disabled it for this pack.
+    const guideKey = () => 'guideText:' + cfg.id + ':' +
+      (typeof activeCollectionKey !== 'undefined' ? activeCollectionKey : '');
+    const guideEnabled = () => localStorage.getItem(guideKey()) !== 'off';
+    function guideElFor(anchor) {
+      if (!anchor || !anchor.parentNode) return null;
+      const prev = anchor.previousElementSibling;
+      if (prev && prev.classList && prev.classList.contains('card-guide')) return prev;
+      const el = document.createElement('div');
+      el.className = 'card-guide';
+      anchor.parentNode.insertBefore(el, anchor);
+      return el;
+    }
+    function renderGuide(g) {
+      const on = guideEnabled();
+      const gf = guideElFor(els.front), gb = guideElFor(els.back);
+      if (gf) {
+        const t = (on && g && g.guideFront) ? g.guideFront : '';
+        gf.textContent = t; gf.style.display = t ? '' : 'none';
+      }
+      if (gb) {
+        const t = (on && g && g.guideBack) ? g.guideBack : '';
+        gb.textContent = t; gb.style.display = t ? '' : 'none';
+      }
+    }
+    const guideToggleHf = $(p + 'GuideText');
+    if (guideToggleHf) guideToggleHf.addEventListener('change', () => {
+      if (guideToggleHf.checked) localStorage.removeItem(guideKey());
+      else localStorage.setItem(guideKey(), 'off');
+      renderGuide(group());
+    });
+
     function settings() {
       const v = id => $(id);
       return {
@@ -440,6 +474,7 @@ const DS = (function () {
         // Uppgift 10 — shuffle toggles (same naming convention as regular modes)
         shuffleGroups : v(p + 'ShuffleStrategies') ? v(p + 'ShuffleStrategies').checked : false,
         shuffleItems  : v(p + 'ShuffleInputs')     ? v(p + 'ShuffleInputs').checked     : false,
+        guideText     : guideEnabled(),
       };
     }
 
@@ -486,6 +521,7 @@ const DS = (function () {
       if (els.title) els.title.textContent = cfg.groupTitle(g);
       if (els.front) els.front.textContent = front;
       if (els.back)  els.back.textContent  = back;
+      renderGuide(g);
       if (els.counter) els.counter.textContent = `${mode.gi + 1} / ${mode.groups.length}`;
       if (els.subCounter && g) els.subCounter.textContent = `${mode.ii + 1} / ${items(g).length}`;
       if (els.inner) {
@@ -588,16 +624,19 @@ const DS = (function () {
           const it = list[iOrder[ii2]];
           const front = cfg.itemFront(it, g);
           const back  = cfg.itemBack(it, g);
+          // Guide text is spoken as a lead-in to each side when enabled
+          const gFront = (s.guideText && g.guideFront) ? g.guideFront + ' ' : '';
+          const gBack  = (s.guideText && g.guideBack)  ? g.guideBack + ' '  : '';
 
           showCard(front, back, false);
-          await speak(front, s);
+          await speak(gFront + front, s);
           if (mode.abort) break outer;
           if (!mode.skipStep) await delay(s.thinkPause * 1000);
           mode.skipStep = false;
 
           if (s.cardBack && speakBack(it)) {
             showCard(front, back, true);
-            await speak(back, s);
+            await speak(gBack + back, s);
             if (mode.abort) break outer;
             if (!mode.skipStep) await delay(s.genPause * 1000);
             mode.skipStep = false;
@@ -726,6 +765,8 @@ const DS = (function () {
       mode.groups = cfg.getGroups() || [];
       if (!mode.groups.length) return;
       mode.gi = 0; mode.ii = 0;
+      // Guide toggle reflects the persisted choice for THIS pack + mode
+      if (guideToggleHf) guideToggleHf.checked = guideEnabled();
       navToTraining(cfg.screenId);
       renderManual();
       updateButtons();
