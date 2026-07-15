@@ -35,6 +35,19 @@
     }
 
     /* ── MOBILE GATE ── */
+    .input {
+      width: 100%;
+      box-sizing: border-box;
+      background: var(--card, #fff);
+      border: 1px solid var(--border, #d8d0c4);
+      border-radius: 8px;
+      padding: 9px 12px;
+      font-size: 14px;
+      font-family: inherit;
+      color: var(--txt, #2b2b2b);
+    }
+    .input[readonly] { opacity: 0.6; }
+
     #mobile-gate {
       display: none;
       position: fixed; inset: 0;
@@ -49,7 +62,8 @@
     #mobile-gate .gate-icon  { font-size: 48px; }
     #mobile-gate h2          { font-size: 20px; color: var(--txt); }
     #mobile-gate p           { color: var(--txt2); font-size: 14px; }
-    @media (max-width: 767px) { #mobile-gate { display: flex; } }
+    /* v1.7.0: iPads (≥600 px) pass the gate — only phones are blocked */
+    @media (max-width: 599px) { #mobile-gate { display: flex; } }
 
     /* ── LAYOUT ── */
     #app-shell {
@@ -573,8 +587,8 @@
 <!-- Mobile gate -->
 <div id="mobile-gate">
   <div class="gate-icon">🖥</div>
-  <h2>Desktop only</h2>
-  <p>The Pack Editor is designed for desktop use.<br>Please open on a larger screen.</p>
+  <h2>Desktop &amp; tablet only</h2>
+  <p>The Pack Editor is designed for desktop and tablet use.<br>Please open on a larger screen.</p>
 </div>
 
 <!-- App shell -->
@@ -584,7 +598,7 @@
   <div class="topbar">
     <button class="btn btn--ghost btn--sm" onclick="window.location.href='index.html'" style="margin-right:8px;" title="Back to app">&larr; App</button>
     <span class="topbar-title" onclick="showHome()" style="cursor:pointer;" title="Back to home">Deckstack — Pack Editor</span>
-    <span class="topbar-version" id="editorVersionLabel">Editor v1.6.5 · Changes saved automatically</span>
+    <span class="topbar-version" id="editorVersionLabel">Editor v1.7.0 · Changes saved automatically</span>
   </div>
 
   <!-- Home screen -->
@@ -738,8 +752,8 @@
     ],
   };
   </script>
-<script src="js/editor-core.js?v=165"></script>
-<script src="js/editor-ui.js?v=165"></script>
+<script src="js/editor-core.js?v=170"></script>
+<script src="js/editor-ui.js?v=170"></script>
 
 </body>
 </html>
