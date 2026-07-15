@@ -2922,7 +2922,14 @@ body.feedback-mode    .al-bar { display: none !important; }
 
 
 /* ── FOLDER ROW DRAG + PULL-PIN (v1.26.23) ─────────────────────── */
-.fol-edit-row.fol-row-in { transition: transform 0.15s ease; touch-action: pan-y; }
+.fol-edit-row.fol-row-in {
+  transition: transform 0.15s ease;
+  touch-action: pan-y;
+  /* Long-press must never select text or trigger the iOS callout */
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+}
 .fol-row-dragging {
   transition: none !important;
   position: relative;
