@@ -1,7 +1,7 @@
 // editor-core.js — Deckstack Pack Editor
 // Depends on: data.js, challengesData.js, mindsetData.js, multiStepData.js, memorizeData.js
 
-const EDITOR_VERSION = 'v1.7.0';
+const EDITOR_VERSION = 'v1.7.1';
 const STORAGE_KEY    = 'ds_editor_packs';
 const ACTIVE_KEY     = 'ds_editor_active';
 
@@ -83,7 +83,10 @@ function packFromAppData(key) {
   const rawSingle = (getDS('_dsCollections'))[key] || [];
   const singleStrats = rawSingle.map(s => ({ name: s.name||'', description: s.description||'', ...mapGuides(s), inputs: mapInputs(s.inputs) }));
   pack.single      = { strategies: singleStrats, bundles: deriveBundles(singleStrats) };
-  pack.collections = { strategies: singleStrats.map(s => ({...s, inputs: [...s.inputs]})), bundles: [] };
+  // v1.7.1: Collections has its own data source in the app (strategy combos)
+  const rawCollMode = (getDS('_dsCollectionsMode'))[key] || [];
+  const collModeStrats = rawCollMode.map(s => ({ name: s.name||'', description: s.description||'', ...mapGuides(s), inputs: mapInputs(s.inputs) }));
+  pack.collections = { strategies: collModeStrats, bundles: deriveBundles(collModeStrats) };
 
   const rawChall = (getDS('_dsChallenges'))[key] || [];
   const challStrats = rawChall.map(s => ({ name: s.name||'', description: s.description||'', ...mapGuides(s), inputs: mapInputs(s.inputs) }));

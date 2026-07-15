@@ -622,3 +622,52 @@ const collections = {
     }
   ]
 };
+
+// ─── COLLECTIONS MODE DATA ───────────────────────────────────────────────────
+// Own data source for the Collections training mode (separate from Single
+// Strategy since v1.26.26). Each collection combines 2+ of the pack's
+// strategies: the description explains every included strategy, and each
+// situation can be solved with more than one of them — the answer shows
+// the alternatives side by side.
+const collectionsModeData = {
+
+  assertive: [
+    {
+      name: "Deflect & Explore",
+      guideFront: "Fogging or Negative Inquiry both work here — pick your angle...",
+      guideBack: "Two possible responses...",
+      description: "Two strategies for handling criticism — and both work in every situation below.\n\nFogging: calmly agree with whatever truth there might be in the criticism, without defending yourself or counter-attacking. It takes the wind out of the attack.\n\nNegative Inquiry: instead of deflecting, lean in — calmly ask for more specifics about the criticism. It signals confidence and quickly shows whether the critique is genuine or just a jab.",
+      inputs: [
+        { q: "\"You're always so quiet in meetings.\"", a: "Fogging: \"That's true, I don't say much in meetings.\" — or Negative Inquiry: \"What is it about my being quiet that bothers you?\"", bundle: "free" },
+        { q: "\"That report was pretty sloppy.\"", a: "Fogging: \"You're right, parts of it could be tighter.\" — or Negative Inquiry: \"Which parts felt sloppy to you?\"", bundle: "free" },
+        { q: "\"You've been really distracted lately.\"", a: "Fogging: \"That's probably true, I've had a lot going on.\" — or Negative Inquiry: \"What have you noticed that seems distracted?\"", bundle: "pro" },
+        { q: "\"Your emails are way too long.\"", a: "Fogging: \"Fair point — I do write long emails.\" — or Negative Inquiry: \"What would make them more useful for you?\"", bundle: "pro" },
+      ],
+    },
+    {
+      name: "Own It Calmly",
+      guideFront: "Negative Assertion or Fogging both work here — pick one...",
+      guideBack: "Two possible responses...",
+      description: "Two strategies for when someone points out a real mistake or flaw.\n\nNegative Assertion: openly and calmly accept the true part — own it without excessive apology or self-criticism. A mistake doesn't make you less worthy.\n\nFogging: acknowledge the possible truth without going into defence. Useful when you want to defuse rather than dwell on it.",
+      inputs: [
+        { q: "\"You completely forgot to send the invitation.\"", a: "Negative Assertion: \"You're right, I forgot it. I'll send it today.\" — or Fogging: \"True — that one slipped past me.\"", bundle: "free" },
+        { q: "\"You're late. Again.\"", a: "Negative Assertion: \"Yes, I'm late, and that's on me.\" — or Fogging: \"You're right, it's become a pattern lately.\"", bundle: "free" },
+        { q: "\"You mixed up the numbers in the budget.\"", a: "Negative Assertion: \"Correct — I switched two figures. I'll fix it now.\" — or Fogging: \"That's true, the numbers don't add up.\"", bundle: "pro" },
+        { q: "\"Honestly, that joke landed badly.\"", a: "Negative Assertion: \"Yeah, that was a miss on my part.\" — or Fogging: \"You might be right, it didn't land.\"", bundle: "pro" },
+      ],
+    },
+    {
+      name: "Hold the Line",
+      guideFront: "Broken Record or Negative Assertion both work here — choose...",
+      guideBack: "Two possible responses...",
+      description: "Two strategies for pressure — when someone keeps pushing after you've already answered.\n\nBroken Record: calmly repeat your position in the same neutral tone, as many times as needed. No new arguments, no escalation.\n\nNegative Assertion: accept the negative label they attach to your 'no' (\"maybe I am being rigid\") while keeping your position unchanged.",
+      inputs: [
+        { q: "\"Come on, just this once — cover my shift?\"", a: "Broken Record: \"I understand, but I can't take the shift.\" — or Negative Assertion: \"Maybe I am being inflexible, and I still can't take it.\"", bundle: "free" },
+        { q: "\"Everyone else already said yes...\"", a: "Broken Record: \"I hear you, and my answer is still no.\" — or Negative Assertion: \"Maybe I'm the difficult one here — my answer is still no.\"", bundle: "free" },
+        { q: "\"You'd do it if you really cared about the team.\"", a: "Broken Record: \"I do care, and I still can't do it.\" — or Negative Assertion: \"Maybe that's how it looks — and my answer stays the same.\"", bundle: "pro" },
+        { q: "\"Can't you make an exception, just for me?\"", a: "Broken Record: \"I understand it's important to you, and I can't make an exception.\" — or Negative Assertion: \"Maybe I am strict about this — the answer is still no.\"", bundle: "pro" },
+      ],
+    },
+  ],
+
+};

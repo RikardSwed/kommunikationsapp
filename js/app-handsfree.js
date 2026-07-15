@@ -148,7 +148,8 @@ DS.createHandsfreeMode({
     prevItemBtn: 'hfCollPrevInputBtn', nextItemBtn: 'hfCollNextInputBtn',
   },
   maxItemsId: 'hfCollMaxInputs',
-  getGroups: () => DS.loadGroups(collections, activeCollectionKey, 'inputs'),
+  // v1.26.26: Collections has its OWN data source (strategy combinations)
+  getGroups: () => DS.loadGroups(collectionsModeData, activeCollectionKey, 'inputs'),
   getItems: g => g.inputs,
   groupTitle: g => g.name,
   itemFront: it => it.q,

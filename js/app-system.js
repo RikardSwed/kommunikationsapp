@@ -954,6 +954,24 @@ function exportAlSuggestions() {
 const alExportBtn = document.getElementById('alExportBtn');
 if (alExportBtn) alExportBtn.addEventListener('click', exportAlSuggestions);
 
+// v1.26.26 dev tools: clear redeemed store codes (list 7 #2) and reset the
+// first-run state — favorites, continue card, tap hint counter (list 7 #5)
+const clearCodesBtn = document.getElementById('clearCodesBtn');
+if (clearCodesBtn) clearCodesBtn.addEventListener('click', () => {
+  localStorage.removeItem('ds_redeemed_codes');
+  if (window.renderExtendedStore) renderExtendedStore();
+  if (window.showToast) showToast('Redeemed codes cleared.');
+});
+
+const resetFirstRunBtn = document.getElementById('resetFirstRunBtn');
+if (resetFirstRunBtn) resetFirstRunBtn.addEventListener('click', () => {
+  ['fav_packs', 'dash_last_pack', 'ds_last_modes', 'ds_tap_hint_count'].forEach(k => localStorage.removeItem(k));
+  if (window._favRenderTab)  window._favRenderTab();
+  if (window._favRenderDash) window._favRenderDash();
+  if (window.renderContinueCard) window.renderContinueCard();
+  if (window.showToast) showToast('Favorites, continue and tap hint reset.');
+});
+
 const clearExtendedBtn = document.getElementById('clearExtendedBtn');
 if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
   // Rensa purchases

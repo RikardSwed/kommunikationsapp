@@ -163,7 +163,9 @@ DS.createCardMode({
     counter: 'collCounter', subCounter: 'collSubCounter',
     closeBtn: 'collCloseBtn',
   },
-  getGroups: () => DS.loadGroups(collections, activeCollectionKey, 'inputs'),
+  // v1.26.26: Collections has its OWN data source (strategy combinations),
+  // no longer shared with Single Strategy.
+  getGroups: () => DS.loadGroups(collectionsModeData, activeCollectionKey, 'inputs'),
   getItems: g => g.inputs,
   groupTitle: g => g.name,
   itemFront: it => it.q,

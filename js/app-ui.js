@@ -448,6 +448,8 @@ document.querySelectorAll('.nav-tab').forEach(btn => {
   // ── Init ─────────────────────────────────────────────────────────────────
   updateWelcome();
   renderLastPack();
+  // Exposed so dev tools (first-run reset) can refresh the continue card
+  window.renderContinueCard = renderLastPack;
 
   // Recommended cards
   document.querySelectorAll('#dashRecommendedSection .collection-card').forEach(card => {
@@ -1559,7 +1561,7 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
         : 'This folder is empty.<br>Tap Edit to add packs.') + '</div>';
       return;
     }
-    container.innerHTML = visPacks.map(p => {
+    container.innerHTML = '<div class="tab-info">Practise your chosen packs.</div>' + visPacks.map(p => {
       const locked = _vis(p.key) === 'locked';
       const badge  = locked ? '<div class="pack-lock-badge pack-lock-badge--pro" style="position:relative;display:inline-block;margin-left:6px;vertical-align:middle;">Pro</div>' : '';
       return '<div class="collection-card fol-pack-card' + (locked ? ' collection-card--locked' : '') + '" data-key="' + p.key + '" data-label="' + escHtml(p.label) + '">'
@@ -1779,7 +1781,8 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
     }
 
     container.className = 'library-tab-content';
-    let html = '<div class="programs-list">';
+    let html = '<div class="tab-info">Programs are guided journeys — train through each section and pass its checkpoint to unlock the next.</div>'
+      + '<div class="programs-list">';
 
     // Filter: hide Extended programs unless owned or complete
     const extOwned = (() => {
