@@ -1983,39 +1983,87 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
 (function initExtendedStore() {
 
   const OWNED_KEY = 'ds_extended_owned';
+  const CODES_KEY = 'ds_redeemed_codes';
 
-  const EXTENDED_PACKS = [
-    {
-      id: 'storytelling',
-      title: 'Storytelling',
-      icon: 'ti-book',
-      description: 'Learn to structure and deliver stories that hold attention, create emotion, and make you memorable in any conversation.',
-      price: '29 kr',
-    }
-  ];
+  // ── Catalog ────────────────────────────────────────────────────────
+  // Items may carry an optional `code`: they stay hidden from browsing and
+  // search until the code is entered in the search field (case-insensitive).
+  // Kits bundle other items: contents = [{ type: 'pack'|'program'|'bundle', id }].
+  const CATALOG = {
+    packs: [
+      {
+        id: 'storytelling',
+        title: 'Storytelling',
+        icon: 'ti-book',
+        description: 'Learn to structure and deliver stories that hold attention, create emotion, and make you memorable in any conversation.',
+        price: '29 kr',
+      },
+    ],
+    programs: [
+      {
+        id: 'conversation-skills',
+        title: 'Conversation Skills Foundations',
+        icon: 'ti-message-circle',
+        description: 'Start conversations with confidence, keep them going, and create genuine connection — from small talk to meaningful depth.',
+        price: '49 kr',
+      },
+    ],
+    bundles: [
+      {
+        id: 'assertive::domestic',
+        packKey: 'assertive',
+        bundleId: 'domestic',
+        packTitle: 'Assertive Communication',
+        title: 'Domestic Situations',
+        icon: 'ti-home',
+        description: 'Extra inputs for home and close relationships — partners, family, neighbours, friends. Covers all four assertive strategies.',
+        price: '19 kr',
+      },
+    ],
+    kits: [
+      {
+        id: 'kit-communicator',
+        title: 'The Communicator Kit',
+        icon: 'ti-packages',
+        description: 'Everything in Extended at a discount — the Storytelling pack, the Conversation Skills program, and the Domestic Situations bundle.',
+        price: '79 kr',
+        contents: [
+          { type: 'pack',    id: 'storytelling' },
+          { type: 'program', id: 'conversation-skills' },
+          { type: 'bundle',  id: 'assertive::domestic' },
+        ],
+      },
+      {
+        id: 'kit-classroom',
+        title: 'Classroom Kit',
+        icon: 'ti-school',
+        description: 'The full Extended catalog for classroom use. Available with an access code.',
+        price: '59 kr',
+        code: 'DEMO2026',
+        contents: [
+          { type: 'pack',    id: 'storytelling' },
+          { type: 'program', id: 'conversation-skills' },
+          { type: 'bundle',  id: 'assertive::domestic' },
+        ],
+      },
+    ],
+  };
 
-  const EXTENDED_PROGRAMS = [
-    {
-      id: 'conversation-skills',
-      title: 'Conversation Skills Foundations',
-      icon: 'ti-message-circle',
-      description: 'Start conversations with confidence, keep them going, and create genuine connection — from small talk to meaningful depth.',
-      price: '49 kr',
-    }
-  ];
+  const LIFETIME = {
+    id: 'lifetime-pro',
+    title: 'Lifetime Pro',
+    price: '499 kr',
+    description: 'One payment, Pro forever. All Pro packs and every Extended purchase stay available — nothing ever expires.',
+  };
 
-  const EXTENDED_BUNDLES = [
-    {
-      id: 'assertive::domestic',
-      packKey: 'assertive',
-      bundleId: 'domestic',
-      packTitle: 'Assertive Communication',
-      title: 'Domestic Situations',
-      icon: 'ti-home',
-      description: 'Extra inputs for home and close relationships — partners, family, neighbours, friends. Covers all four assertive strategies.',
-      price: '19 kr',
-    }
-  ];
+  const CAT_ORDER = ['packs', 'programs', 'bundles', 'kits'];
+  const CAT_LISTS = { packs: 'extPackList', programs: 'extProgramList', bundles: 'extBundleList', kits: 'extKitList' };
+  const CAT_MORE  = { packs: 'extMorePacks', programs: 'extMorePrograms', bundles: 'extMoreBundles', kits: 'extMoreKits' };
+  const CAT_LABEL = { packs: 'packs', programs: 'programs', bundles: 'bundles', kits: 'kits' };
+
+  // "Load more" expansion state — kept for the session so a purchase
+  // re-render doesn't collapse the section the user just expanded.
+  const expanded = { packs: false, programs: false, bundles: false, kits: false };
 
   function getOwned() {
     try { return JSON.parse(localStorage.getItem(OWNED_KEY)) || []; }
@@ -2032,122 +2080,214 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
     return getOwned().includes(id);
   }
 
+  function getRedeemed() {
+    try { return JSON.parse(localStorage.getItem(CODES_KEY)) || []; }
+    catch { return []; }
+  }
+  function redeem(code) {
+    const arr = getRedeemed();
+    if (!arr.includes(code)) { arr.push(code); localStorage.setItem(CODES_KEY, JSON.stringify(arr)); }
+  }
+
   function getAccessLevel() {
     return (window.accessLevel && window.accessLevel.getLevel()) ||
            localStorage.getItem('dev_access_level') || 'complete';
   }
 
-  function renderExtendedStore() {
-    const packList    = document.getElementById('extPackList');
-    const programList = document.getElementById('extProgramList');
-    const bundleList  = document.getElementById('extBundleList');
-    if (!packList || !programList) return;
+  // An item is browsable when it has no code, or its code has been redeemed
+  function isRevealed(item) {
+    return !item.code || getRedeemed().includes(item.code.toUpperCase());
+  }
+  function visibleItems(cat) {
+    return CATALOG[cat].filter(isRevealed);
+  }
 
-    const level = getAccessLevel();
+  // ── Purchasing ─────────────────────────────────────────────────
+  function activateBundle(item) {
+    const bKey = `bundles:${item.packKey}`;
+    try {
+      const cur = JSON.parse(localStorage.getItem(bKey)) || [];
+      if (!cur.includes(item.bundleId)) { cur.push(item.bundleId); localStorage.setItem(bKey, JSON.stringify(cur)); }
+    } catch (e) { localStorage.setItem(bKey, JSON.stringify([item.bundleId])); }
+  }
 
-    function makeCard(item, owned, onBuy) {
-      const card = document.createElement('div');
-      card.className = 'ext-store-card';
-      card.innerHTML = `
-        <div class="ext-store-card-top">
-          <div class="ext-store-icon"><i class="ti ${item.icon}" aria-hidden="true"></i></div>
-          <div class="ext-store-info">
-            <div class="ext-store-title">${item.title}</div>
-            <div class="ext-store-desc">${item.description}</div>
-          </div>
-        </div>
-        <div class="ext-store-card-bottom">
-          ${owned
-            ? `<div class="ext-store-owned"><i class="ti ti-check" aria-hidden="true"></i> Added</div>`
-            : `<div class="ext-store-price">${item.price}</div>
-               <button class="ext-store-btn">Add</button>`
-          }
-        </div>`;
-      if (!owned) {
-        card.querySelector('.ext-store-btn').addEventListener('click', onBuy);
-      } else {
-        card.style.cursor = 'pointer';
-        card.addEventListener('click', onBuy);
-      }
-      return card;
-    }
-
-    packList.innerHTML = '';
-    EXTENDED_PACKS.forEach(item => {
-      const owned = isOwned(item.id) || level === 'complete';
-      packList.appendChild(makeCard(item, owned, () => {
-        if (!owned) {
-          const o = getOwned(); if (!o.includes(item.id)) o.push(item.id); setOwned(o);
-          renderExtendedStore();
-          if (window._applyAccessLevel) window._applyAccessLevel();
-        } else {
-          showTab('library');
-          document.querySelectorAll('.library-subnav-btn').forEach(b => b.classList.toggle('active', b.dataset.libTab === 'packs'));
-          document.querySelectorAll('.library-tab-content').forEach(t => t.style.display = 'none');
-          const pt = document.getElementById('libTabPacks'); if (pt) pt.style.display = '';
-          showModeScreen(item.id, item.title);
+  function buy(type, item) {
+    const o = getOwned();
+    const add = id => { if (!o.includes(id)) o.push(id); };
+    add(item.id);
+    if (type === 'bundles') activateBundle(item);
+    if (type === 'kits') {
+      // A kit grants every item it contains
+      (item.contents || []).forEach(c => {
+        add(c.id);
+        if (c.type === 'bundle') {
+          const b = CATALOG.bundles.find(x => x.id === c.id);
+          if (b) activateBundle(b);
         }
-      }));
-    });
-
-    programList.innerHTML = '';
-    EXTENDED_PROGRAMS.forEach(item => {
-      const owned = isOwned(item.id) || level === 'complete';
-      programList.appendChild(makeCard(item, owned, () => {
-        if (!owned) {
-          const o = getOwned(); if (!o.includes(item.id)) o.push(item.id); setOwned(o);
-          renderExtendedStore();
-          if (window.renderProgramList) window.renderProgramList();
-        } else {
-          showTab('library');
-          document.querySelectorAll('.library-subnav-btn').forEach(b => b.classList.toggle('active', b.dataset.libTab === 'programs'));
-          document.querySelectorAll('.library-tab-content').forEach(t => t.style.display = 'none');
-          const pt = document.getElementById('libTabPrograms'); if (pt) pt.style.display = '';
-        }
-      }));
-    });
-
-    if (bundleList) {
-      bundleList.innerHTML = '';
-      EXTENDED_BUNDLES.forEach(item => {
-        const owned = isOwned(item.id) || level === 'complete';
-        const card = document.createElement('div');
-        card.className = 'ext-store-card';
-        card.innerHTML = `
-          <div class="ext-store-card-top">
-            <div class="ext-store-icon"><i class="ti ${item.icon}" aria-hidden="true"></i></div>
-            <div class="ext-store-info">
-              <div class="ext-store-title">${item.title}</div>
-              <div class="ext-store-pack-label">for ${item.packTitle}</div>
-              <div class="ext-store-desc">${item.description}</div>
-            </div>
-          </div>
-          <div class="ext-store-card-bottom">
-            ${owned
-              ? `<div class="ext-store-owned"><i class="ti ti-check" aria-hidden="true"></i> Added</div>`
-              : `<div class="ext-store-price">${item.price}</div>
-                 <button class="ext-store-btn">Add</button>`
-            }
-          </div>`;
-        if (!owned) {
-          card.querySelector('.ext-store-btn').addEventListener('click', () => {
-            const o = getOwned(); if (!o.includes(item.id)) o.push(item.id); setOwned(o);
-            // Activate the bundle in pack's bundle state
-            const bKey = `bundles:${item.packKey}`;
-            try {
-              const cur = JSON.parse(localStorage.getItem(bKey)) || [];
-              if (!cur.includes(item.bundleId)) { cur.push(item.bundleId); localStorage.setItem(bKey, JSON.stringify(cur)); }
-            } catch(e) { localStorage.setItem(bKey, JSON.stringify([item.bundleId])); }
-            renderExtendedStore();
-            if (window._applyAccessLevel) window._applyAccessLevel();
-          });
-        }
-        bundleList.appendChild(card);
       });
     }
-  }  // end renderExtendedStore
+    setOwned(o);
+    if (window.renderProgramList) window.renderProgramList();
+    renderExtendedStore();
+  }
+
+  // Owned items navigate to their home surface
+  function goToOwned(type, item) {
+    if (type === 'packs') {
+      showTab('library');
+      document.querySelectorAll('.library-subnav-btn').forEach(b => b.classList.toggle('active', b.dataset.libTab === 'packs'));
+      document.querySelectorAll('.library-tab-content').forEach(t => t.style.display = 'none');
+      const pt = document.getElementById('libTabPacks'); if (pt) pt.style.display = '';
+      showModeScreen(item.id, item.title);
+    } else if (type === 'programs') {
+      showTab('library');
+      document.querySelectorAll('.library-subnav-btn').forEach(b => b.classList.toggle('active', b.dataset.libTab === 'programs'));
+      document.querySelectorAll('.library-tab-content').forEach(t => t.style.display = 'none');
+      const pt = document.getElementById('libTabPrograms'); if (pt) pt.style.display = '';
+    }
+  }
+
+  // ── Card factory (shared by browsing and search results) ──────────────
+  function makeCard(type, item) {
+    const owned = isOwned(item.id) || getAccessLevel() === 'complete';
+    const card = document.createElement('div');
+    card.className = 'ext-store-card';
+    const packLabel = item.packTitle ? `<div class="ext-store-pack-label">for ${item.packTitle}</div>` : '';
+    const includes = (type === 'kits' && item.contents)
+      ? `<div class="ext-store-includes">Includes: ` + item.contents.map(c => {
+          const src = c.type === 'pack' ? CATALOG.packs : c.type === 'program' ? CATALOG.programs : CATALOG.bundles;
+          const it = src.find(x => x.id === c.id);
+          return it ? it.title : c.id;
+        }).join(', ') + `</div>`
+      : '';
+    card.innerHTML = `
+      <div class="ext-store-card-top">
+        <div class="ext-store-icon"><i class="ti ${item.icon}" aria-hidden="true"></i></div>
+        <div class="ext-store-info">
+          <div class="ext-store-title">${item.title}</div>
+          ${packLabel}
+          <div class="ext-store-desc">${item.description}</div>
+          ${includes}
+        </div>
+      </div>
+      <div class="ext-store-card-bottom">
+        ${owned
+          ? `<div class="ext-store-owned"><i class="ti ti-check" aria-hidden="true"></i> Added</div>`
+          : `<div class="ext-store-price">${item.price}</div>
+             <button class="ext-store-btn">Add</button>`
+        }
+      </div>`;
+    if (!owned) {
+      card.querySelector('.ext-store-btn').addEventListener('click', () => buy(type, item));
+    } else if (type === 'packs' || type === 'programs') {
+      card.style.cursor = 'pointer';
+      card.addEventListener('click', () => goToOwned(type, item));
+    }
+    return card;
+  }
+
+  // ── Lifetime Pro offer ───────────────────────────────────────────
+  function renderLifetime() {
+    const host = document.getElementById('extLifetimeCard');
+    if (!host) return;
+    const owned = isOwned(LIFETIME.id);
+    host.innerHTML = `
+      <div class="ext-lifetime-title"><i class="ti ti-infinity" aria-hidden="true"></i> ${LIFETIME.title}</div>
+      <div class="ext-lifetime-desc">${LIFETIME.description}</div>
+      <div class="ext-lifetime-bottom">
+        ${owned
+          ? `<div class="ext-lifetime-owned"><i class="ti ti-check" aria-hidden="true"></i> Lifetime Pro active</div>`
+          : `<div class="ext-lifetime-price">${LIFETIME.price}</div>
+             <button class="ext-lifetime-btn" id="extLifetimeBuy">Get Lifetime Pro</button>`
+        }
+      </div>`;
+    const btn = host.querySelector('#extLifetimeBuy');
+    if (btn) btn.addEventListener('click', () => {
+      const o = getOwned();
+      if (!o.includes(LIFETIME.id)) o.push(LIFETIME.id);
+      setOwned(o);
+      if (window.showToast) showToast('Lifetime Pro activated.');
+      renderExtendedStore();
+    });
+  }
+
+  // ── Browsing sections: 1 item per category, "Load more" reveals the rest ──
+  function renderBrowse() {
+    CAT_ORDER.forEach(cat => {
+      const listEl = document.getElementById(CAT_LISTS[cat]);
+      const moreEl = document.getElementById(CAT_MORE[cat]);
+      if (!listEl) return;
+      const items = visibleItems(cat);
+      const shown = expanded[cat] ? items : items.slice(0, 1);
+      listEl.innerHTML = '';
+      shown.forEach(item => listEl.appendChild(makeCard(cat, item)));
+      if (moreEl) {
+        const hiddenCount = items.length - shown.length;
+        moreEl.style.display = hiddenCount > 0 ? '' : 'none';
+        moreEl.textContent = 'Load more ' + CAT_LABEL[cat] + ' (' + hiddenCount + ')';
+        moreEl.onclick = () => { expanded[cat] = true; renderBrowse(); };
+      }
+    });
+  }
+
+  // ── Search + code redemption ───────────────────────────────────────
+  function runExtSearch() {
+    const input   = document.getElementById('extSearchInput');
+    const results = document.getElementById('extSearchResults');
+    const browse  = document.getElementById('extBrowse');
+    if (!input || !results || !browse) return;
+    const q = input.value.trim().toLowerCase();
+
+    if (!q) {
+      results.innerHTML = '';
+      browse.style.display = '';
+      return;
+    }
+
+    // Code redemption: an exact match against an unredeemed code unlocks it
+    const codeQ = input.value.trim().toUpperCase();
+    let redeemedNow = null;
+    CAT_ORDER.forEach(cat => {
+      CATALOG[cat].forEach(item => {
+        if (item.code && item.code.toUpperCase() === codeQ && !getRedeemed().includes(item.code.toUpperCase())) {
+          redeem(item.code.toUpperCase());
+          redeemedNow = item;
+        }
+      });
+    });
+    if (redeemedNow) {
+      input.value = '';
+      results.innerHTML = '<div class="ext-code-msg">Code accepted \u2014 \u201c' + redeemedNow.title + '\u201d unlocked.</div>';
+      browse.style.display = '';
+      renderBrowse();
+      return;
+    }
+
+    // Plain search across all revealed items
+    browse.style.display = 'none';
+    results.innerHTML = '';
+    let hits = 0;
+    CAT_ORDER.forEach(cat => {
+      visibleItems(cat).forEach(item => {
+        const hay = (item.title + ' ' + item.description + ' ' + (item.packTitle || '')).toLowerCase();
+        if (hay.includes(q)) { results.appendChild(makeCard(cat, item)); hits++; }
+      });
+    });
+    if (!hits) {
+      results.innerHTML = '<div class="ext-search-empty">No matches. If you have an access code, enter the full code.</div>';
+    }
+  }
+
+  function renderExtendedStore() {
+    renderLifetime();
+    renderBrowse();
+    runExtSearch();   // keeps active search results in sync after purchases
+  }
   // Expose so showTab can trigger re-render
   window.renderExtendedStore = renderExtendedStore;
+
+  const searchInput = document.getElementById('extSearchInput');
+  if (searchInput) searchInput.addEventListener('input', runExtSearch);
 
   // Re-render when Extended tab is shown
   const origShowTab2 = window.showTab || showTab;

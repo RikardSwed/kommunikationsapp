@@ -128,7 +128,15 @@ applyInputCounterVisibility();
   const LEVEL_ORDER = ['freemium', 'pro', 'complete'];
 
   function getLevel() {
-    return localStorage.getItem(LEVEL_KEY) || 'complete';
+    const stored = localStorage.getItem(LEVEL_KEY) || 'complete';
+    // Lifetime Pro (one-time purchase): the level never drops below pro
+    if (stored === 'freemium') {
+      try {
+        const owned = JSON.parse(localStorage.getItem('ds_extended_owned')) || [];
+        if (owned.includes('lifetime-pro')) return 'pro';
+      } catch {}
+    }
+    return stored;
   }
 
   function setLevel(level) {

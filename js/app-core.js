@@ -5,7 +5,7 @@
 // (DS.createCardMode / DS.createHandsfreeMode) and are declared in
 // app-modes.js and app-handsfree.js.
 
-const VERSION = 'v1.26.20';
+const VERSION = 'v1.26.21';
 
 // Pack icon map — global so both dashboard and favorites can use it
 const PACK_ICONS = {
@@ -205,25 +205,31 @@ function setPackContext(packs, currentKey) {
   updateNextBtn();
 }
 
+// Find the next ACCESSIBLE pack in the context (locked packs are skipped,
+// so the arrow never runs into an upgrade toast — list 3 #1)
+function _nextAccessibleIndex() {
+  if (!_packContext) return -1;
+  for (let i = _packContext.index + 1; i < _packContext.packs.length; i++) {
+    const p = _packContext.packs[i];
+    if (!window.accessLevel || accessLevel.canAccess(p.key)) return i;
+  }
+  return -1;
+}
+
 // Show/hide the next-pack arrow based on context
 function updateNextBtn() {
   const btn = document.getElementById('modeNextBtn');
   if (!btn) return;
-  const hasNext = _packContext && _packContext.index < _packContext.packs.length - 1;
-  btn.style.visibility = hasNext ? 'visible' : 'hidden';
+  btn.style.visibility = (_nextAccessibleIndex() >= 0) ? 'visible' : 'hidden';
 }
 
 // Navigate to next pack in context
 function goNextPack() {
   if (!_packContext) return;
-  const next = _packContext.packs[_packContext.index + 1];
-  if (!next) return;
-  // Never navigate into a locked pack via the arrow
-  if (window.accessLevel && !accessLevel.canAccess(next.key)) {
-    const b = accessLevel.badgeLabel ? accessLevel.badgeLabel(next.key) : null;
-    showToast('This pack requires ' + (b ? b.text : 'Pro') + '. Upgrade to unlock it.');
-    return;
-  }
+  // Skip locked packs entirely — jump to the next accessible one
+  const nextIdx = _nextAccessibleIndex();
+  if (nextIdx < 0) return;
+  const next = _packContext.packs[nextIdx];
   // Snapshot the current mode screen as a static ghost underneath, so the
   // incoming mode screen slides in OVER it instead of revealing the tab
   // screen behind. IDs are stripped so getElementById never hits the ghost.
@@ -237,7 +243,7 @@ function goNextPack() {
     _ms.parentNode.insertBefore(ghost, _ms);
     setTimeout(() => { if (ghost.parentNode) ghost.parentNode.removeChild(ghost); }, 360);
   }
-  _packContext.index++;
+  _packContext.index = nextIdx;
   // Update state without triggering navToMode (avoids Library flash)
   activeCollectionKey   = next.key;
   activeCollectionLabel = next.label;
