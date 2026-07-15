@@ -1,7 +1,7 @@
 // editor-core.js — Deckstack Pack Editor
 // Depends on: data.js, challengesData.js, mindsetData.js, multiStepData.js, memorizeData.js
 
-const EDITOR_VERSION = 'v1.6.5';
+const EDITOR_VERSION = 'v1.7.0';
 const STORAGE_KEY    = 'ds_editor_packs';
 const ACTIVE_KEY     = 'ds_editor_active';
 
@@ -79,22 +79,23 @@ function packFromAppData(key) {
     });
   }
 
+  const mapGuides = s => ({ guideFront: s.guideFront || '', guideBack: s.guideBack || '' });
   const rawSingle = (getDS('_dsCollections'))[key] || [];
-  const singleStrats = rawSingle.map(s => ({ name: s.name||'', description: s.description||'', inputs: mapInputs(s.inputs) }));
+  const singleStrats = rawSingle.map(s => ({ name: s.name||'', description: s.description||'', ...mapGuides(s), inputs: mapInputs(s.inputs) }));
   pack.single      = { strategies: singleStrats, bundles: deriveBundles(singleStrats) };
   pack.collections = { strategies: singleStrats.map(s => ({...s, inputs: [...s.inputs]})), bundles: [] };
 
   const rawChall = (getDS('_dsChallenges'))[key] || [];
-  const challStrats = rawChall.map(s => ({ name: s.name||'', description: s.description||'', inputs: mapInputs(s.inputs) }));
+  const challStrats = rawChall.map(s => ({ name: s.name||'', description: s.description||'', ...mapGuides(s), inputs: mapInputs(s.inputs) }));
   pack.challenges = { strategies: challStrats, bundles: deriveBundles(challStrats) };
 
   const rawMind = (getDS('_dsMindset'))[key] || [];
-  const mindStrats = rawMind.map(s => ({ name: s.name||'', description: s.description||'', inputs: mapInputs(s.inputs) }));
+  const mindStrats = rawMind.map(s => ({ name: s.name||'', description: s.description||'', ...mapGuides(s), inputs: mapInputs(s.inputs) }));
   pack.mindset = { strategies: mindStrats, bundles: deriveBundles(mindStrats) };
 
   const rawMem = (getDS('_dsMemorize'))[key] || [];
   pack.memorize = {
-    strategies: rawMem.map(s => ({ name: s.name||'', description: s.description||'', cards: mapCards(s.cards) })),
+    strategies: rawMem.map(s => ({ name: s.name||'', description: s.description||'', ...mapGuides(s), cards: mapCards(s.cards) })),
     bundles: deriveBundles(rawMem.map(s => ({ cards: s.cards||[] }))),
   };
 
@@ -103,6 +104,7 @@ function packFromAppData(key) {
     strategies: rawSeq.map(s => ({
       name: s.name || '',
       description: s.subtitle || s.description || '',
+      guideFront: s.guideFront || '', guideBack: s.guideBack || '',
       inputs: (s.inputs || []).map(inp => ({
         bundle: inp.bundle || 'free',
         situation: inp.situation || '',
@@ -127,11 +129,11 @@ function emptyInput()  { return { q: '', a: '', bundle: 'default' }; }
 function emptyCard()   { return { q: '', a: '' }; }
 function emptyStep()   { return { front: '', back: '' }; }
 function emptyStrategy(modeId) {
-  if (modeId === 'memorize')  return { name: '', description: '', cards:  [emptyCard()]  };
-  if (modeId === 'sequences') return { name: '', description: '', inputs: [emptyScenario('free')] };
-  return                             { name: '', description: '', inputs: [emptyInput()] };
+  if (modeId === 'memorize')  return { name: '', description: '', guideFront: '', guideBack: '', cards:  [emptyCard()]  };
+  if (modeId === 'sequences') return { name: '', description: '', guideFront: '', guideBack: '', inputs: [emptyScenario('free')] };
+  return                             { name: '', description: '', guideFront: '', guideBack: '', inputs: [emptyInput()] };
 }
-function emptyModeData(modeId) { return { strategies: [emptyStrategy(modeId)], bundles: [] }; }
+function emptyModeData(modeId) { return { strategies: [emptyStrategy(modeId)], bundles: [], guideFront: '', guideBack: '' }; }
 function emptyPack(name) {
   const key  = slugify(name);
   const pack = { key, name, isNew: true, createdAt: Date.now(), versions: [] };
@@ -210,9 +212,29 @@ function exportPack(pack) {
     meta: { key: pack.key, name: pack.name, exportedAt: new Date().toISOString(), editorVersion: EDITOR_VERSION },
     data: {},
   };
-  MODES.forEach(m => { if (pack[m.id]) out.data[m.id] = pack[m.id]; });
+  MODES.forEach(m => { if (pack[m.id]) out.data[m.id] = resolveGuides(pack[m.id]); });
   return JSON.stringify(out, null, 2);
 }
+// Materialise the effective guide text onto every strategy: the strategy's
+// own value wins (exception), otherwise the mode-level default applies.
+// The app only reads strategy-level guideFront/guideBack, so exports always
+// carry the resolved values.
+function resolveGuides(modeData) {
+  const gf = (modeData.guideFront || '').trim();
+  const gb = (modeData.guideBack  || '').trim();
+  return {
+    ...modeData,
+    strategies: (modeData.strategies || []).map(s => {
+      const eff = { ...s };
+      const f = (s.guideFront || '').trim() || gf;
+      const b = (s.guideBack  || '').trim() || gb;
+      if (f) eff.guideFront = f; else delete eff.guideFront;
+      if (b) eff.guideBack  = b; else delete eff.guideBack;
+      return eff;
+    }),
+  };
+}
+
 function downloadExport(pack) {
   const blob = new Blob([exportPack(pack)], { type: 'application/json' });
   const url  = URL.createObjectURL(blob);
@@ -299,6 +321,7 @@ function _parsePack(lines) {
   let currentScenario = null; // sequences only
   let inExplanation   = false;
   let explanationLines = [];
+  const modeGuides = {};   // per-mode guide defaults, applied to pack[mode] at the end
 
   function pushScenario() {
     if (currentScenario && currentStrat && currentModeId === 'sequences') {
@@ -352,8 +375,25 @@ function _parsePack(lines) {
       continue;
     }
 
+    // GUIDE FRONT/BACK: — mode-level default (applies to every strategy in the mode)
+    const modeGuideMatch = line.match(/^GUIDE\s+(FRONT|BACK):\s*(.*)$/i);
+    if (modeGuideMatch) {
+      const side = modeGuideMatch[1].toLowerCase() === 'front' ? 'guideFront' : 'guideBack';
+      modeGuides[currentModeId] = modeGuides[currentModeId] || {};
+      modeGuides[currentModeId][side] = modeGuideMatch[2].trim();
+      continue;
+    }
+
     const stratMatch = line.match(/^##\s+(?:Strategy|Category|Combo|Collection|Mindset):\s*(.+)/i);
     if (stratMatch) { newStrat(stratMatch[1].trim()); continue; }
+
+    // - Guide Front/Back: — per-strategy exception, overrides the mode default
+    const stratGuideMatch = line.match(/^-\s+Guide\s+(Front|Back):\s*(.*)$/i);
+    if (stratGuideMatch && currentStrat) {
+      const side = stratGuideMatch[1].toLowerCase() === 'front' ? 'guideFront' : 'guideBack';
+      currentStrat[side] = stratGuideMatch[2].trim();
+      continue;
+    }
 
     // ### Scenario: — starts a new scenario within a sequences combo
     if (/^###\s+Scenario:/i.test(line) && currentModeId === 'sequences') {
@@ -384,7 +424,7 @@ function _parsePack(lines) {
     if (inExplanation && currentStrat && !line.startsWith('-')) { explanationLines.push(line); continue; }
 
     // Standard card (non-sequences modes)
-    const cardMatch = line.match(/^-\s+(?:Front|Prompt|Q):\s*(.+?)\s*\|\s*(?:Response|Back|A):\s*(.+)/i);
+    const cardMatch = line.match(/^-\s+(?:Situation|Front|Prompt|Q):\s*(.+?)\s*\|\s*(?:Response|Back|A):\s*(.+)/i);
     if (cardMatch && currentStrat && currentModeId !== 'sequences') {
       const q = cardMatch[1].trim(), a = cardMatch[2].trim();
       if (currentModeId === 'memorize') currentStrat.cards.push({ q, a, bundle: currentBundle });
@@ -408,6 +448,7 @@ function _parsePack(lines) {
       });
       pack[m.id] = {
         strategies: modeBuffers[m.id],
+        ...(modeGuides[m.id] || {}),
         bundles: [...bundleIds].map(id => ({
           id,
           name: id === 'free' ? 'Free Bundle' : id === 'pro' ? 'Pro Bundle' : id.charAt(0).toUpperCase() + id.slice(1).replace(/-/g,' '),

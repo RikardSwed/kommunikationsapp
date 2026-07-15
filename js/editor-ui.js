@@ -852,6 +852,8 @@ function showSyntaxGuide() {
     '<li><code>MODE:</code> — one of: <code>single</code>, <code>collections</code>, <code>memorize</code>, <code>sequences</code>, <code>challenges</code>, <code>mindset</code>. Only include modes you need.</li>' +
     '<li><code>## Strategy: Name</code> — starts a new strategy. Use <code>## Category:</code> for challenges, <code>## Combo:</code> for sequences, <code>## Collection:</code> for collections, <code>## Mindset:</code> for mindset.</li>' +
     '<li><code>**Explanation:**</code> — descriptive text explaining the strategy.</li>' +
+    '<li><code>GUIDE FRONT: text</code> / <code>GUIDE BACK: text</code> — mode-level guide text, placed after the <code>MODE:</code> line. Shown above every card front/back in that mode (and read aloud in handsfree).</li>' +
+    '<li><code>- Guide Front: text</code> / <code>- Guide Back: text</code> — exception for one strategy, placed after its <code>## Strategy:</code> line. Overrides the mode default for that strategy only.</li>' +
     '<li><code>BUNDLE: free</code> — base tier, seen by all users. Convention: 2 inputs per strategy.</li>' +
     '<li><code>BUNDLE: pro</code> — extra pro tier, shown together with free for Pro users. Convention: 2 more per strategy (4 total).</li>' +
     '<li><code>BUNDLE: workplace</code> or <code>BUNDLE: domestic</code> — opt-in bundles activated manually. Convention: 3 inputs per strategy each.</li>' +
@@ -892,9 +894,12 @@ function showSyntaxGuide() {
     '',
     '# ── SINGLE STRATEGY ──────────────────────────────────────────────────────',
     'MODE: single',
+    'GUIDE FRONT: Use this strategy when...',
+    'GUIDE BACK: A possible response...',
     '',
     '## Strategy: The Broken Record',
     '**Explanation:** Calmly repeat your position without escalating. Useful when someone keeps pushing back. Stay neutral and consistent — not louder or more emotional.',
+    '- Guide Front: Use Broken Record when someone keeps pushing.',
     '',
     'BUNDLE: free',
     '- Situation: Someone keeps asking after you already said no. | Response: \"I understand, but my answer is still no.\"',
@@ -1252,9 +1257,12 @@ function showPasteDialog() {
         <div class="syntax-guide" id="syntax-guide" style="display:none">
 <pre>PACK: Pack Name
 MODE: single
+GUIDE FRONT: Use this strategy when...
+GUIDE BACK: A possible response...
 
 ## Strategy: Strategy Name
 **Explanation:** Explanation text here.
+- Guide Front: Exception shown for this strategy only.
 
 - Situation: Someone says X | Response: "You say Y."
 - Situation: Another trigger | Response: "Another answer."
@@ -1528,6 +1536,20 @@ function renderModeContent() {
       </div>
     </div>`;
 
+  // ── Guide text — mode-level default for every entry in this mode
+  html += `
+    <div class="field-block">
+      <details class="expandable">
+        <summary class="expandable-summary">
+          Guide text (all ${mode.stratLabel.toLowerCase()}s)
+          <span class="hint-text">${(modeData.guideFront || modeData.guideBack) ? '&mdash; has content' : '&mdash; empty'}</span>
+        </summary>
+        <p class="hint-text" style="margin:6px 0 8px;">Short framing lines shown above the card text — front and back — for every ${mode.stratLabel.toLowerCase()} in this mode. Read aloud in handsfree. Set exceptions per ${mode.stratLabel.toLowerCase()} below.</p>
+        <input class="input" id="mode-guide-front" ${readOnly ? 'readonly' : ''} placeholder="Guide front — e.g. Use this strategy when..." value="${escHtml(modeData.guideFront || '')}" />
+        <input class="input" id="mode-guide-back" ${readOnly ? 'readonly' : ''} placeholder="Guide back — e.g. A possible response..." value="${escHtml(modeData.guideBack || '')}" style="margin-top:6px;" />
+      </details>
+    </div>`;
+
   // ── Explanation
   html += `
     <div class="field-block">
@@ -1537,6 +1559,19 @@ function renderModeContent() {
           <span class="hint-text">${strat.description ? '&mdash; has content' : '&mdash; empty'}</span>
         </summary>
         <textarea class="textarea" id="desc-ta" rows="7" ${readOnly ? 'readonly' : ''} placeholder="Explain this ${mode.stratLabel.toLowerCase()}...">${escHtml(strat.description||'')}</textarea>
+      </details>
+    </div>`;
+
+  // ── Guide text — exception for this specific entry
+  html += `
+    <div class="field-block">
+      <details class="expandable">
+        <summary class="expandable-summary">
+          Guide text (this ${mode.stratLabel.toLowerCase()} only)
+          <span class="hint-text">${(strat.guideFront || strat.guideBack) ? '&mdash; has exception' : '&mdash; uses mode default'}</span>
+        </summary>
+        <input class="input" id="strat-guide-front" ${readOnly ? 'readonly' : ''} placeholder="${escHtml(modeData.guideFront ? 'Default: ' + modeData.guideFront : 'Guide front for this ' + mode.stratLabel.toLowerCase() + ' only')}" value="${escHtml(strat.guideFront || '')}" />
+        <input class="input" id="strat-guide-back" ${readOnly ? 'readonly' : ''} placeholder="${escHtml(modeData.guideBack ? 'Default: ' + modeData.guideBack : 'Guide back for this ' + mode.stratLabel.toLowerCase() + ' only')}" value="${escHtml(strat.guideBack || '')}" style="margin-top:6px;" />
       </details>
     </div>`;
 
@@ -1626,6 +1661,7 @@ function renderModeContent() {
     html += `</div>`; // mode-body
     setHTML('mode-content', html);
     bindEventsSeq(modeData, strats, strat, bundleScenarios, scenario, bundles);
+    bindGuideFields(modeData, strat);
     return;
   }
   // ── End sequences UI ─────────────────────────────────────────────────────────
@@ -1683,9 +1719,23 @@ function renderModeContent() {
   html += `</div>`; // mode-body
   setHTML('mode-content', html);
   bindEvents(modeData, strats, strat, bundles, isMem, isSeq);
+  bindGuideFields(modeData, strat);
 }
 
 // ── EVENT BINDING ─────────────────────────────────────────────────────────────
+// Guide text inputs (mode default + per-entry exception) — shared by all modes
+function bindGuideFields(modeData, strat) {
+  const wire = (id, obj, key) => {
+    const el = document.getElementById(id);
+    if (el && !el.readOnly) el.addEventListener('input', () => { obj[key] = el.value; markDirty(); });
+  };
+  wire('mode-guide-front',  modeData, 'guideFront');
+  wire('mode-guide-back',   modeData, 'guideBack');
+  wire('strat-guide-front', strat,    'guideFront');
+  wire('strat-guide-back',  strat,    'guideBack');
+}
+
+
 function bindEvents(modeData, strats, strat, bundles, isMem, isSeq) {
 
   // Strategy select
@@ -1780,7 +1830,8 @@ function bindEvents(modeData, strats, strat, bundles, isMem, isSeq) {
   });
 
   // Add card
-  document.querySelector('.add-card-btn').addEventListener('click', () => {
+  const _addCardBtn = document.querySelector('.add-card-btn');   // absent for read-only app packs
+  if (_addCardBtn) _addCardBtn.addEventListener('click', () => {
     if (isMem) {
       (strat.cards = strat.cards || []).push(emptyCard());
     } else if (isSeq) {
