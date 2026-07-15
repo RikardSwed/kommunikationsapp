@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
   <title>Deckstack</title>
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="stylesheet" href="css/style.css?v=12623" />
+  <link rel="stylesheet" href="css/style.css?v=12624" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
 </head>
 <body>
@@ -255,7 +255,7 @@
         <button id="progResetBtn" class="prog-reset-btn">Reset all progress data…</button>
       </div>
     </div>
-    <div class="settings-version">v1.26.23</div>
+    <div class="settings-version">v1.26.24</div>
     <button class="settings-close" id="progressSettingsClose">Done</button>
   </div>
 </div>
@@ -557,11 +557,17 @@
       </div>
     </div>
 
-    <div class="topic-group topic-group--empty">
+    <div class="topic-group">
       <div class="topic-header" data-topic="storytelling">
         <div class="topic-title">Storytelling &amp; Explanation</div>
-        <div class="topic-count topic-count--empty">No packs yet</div>
-        <div class="topic-chevron topic-chevron--empty">›</div>
+        <div class="topic-count">1 pack</div>
+        <div class="topic-chevron">›</div>
+      </div>
+      <div class="topic-packs" id="topicStorytelling">
+        <div class="collection-card collection-card--extended" data-key="storytelling" data-label="Storytelling">
+          <div><div class="collection-name">Storytelling</div><div class="collection-meta">4 strategies · Flashcard mode</div></div>
+          <div class="collection-arrow">›</div>
+        </div>
       </div>
     </div>
 
@@ -1275,7 +1281,7 @@
       <label>Progress bar</label>
       <label class="toggle"><input type="checkbox" id="showProgressBar" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.26.23</div>
+    <div class="settings-version">v1.26.24</div>
     <button class="settings-close" id="settingsClose">Done</button>
   </div>
 </div>
@@ -1357,7 +1363,7 @@
       <label class="toggle"><input type="checkbox" id="hfShuffleInputs" /><span class="toggle-slider"></span></label>
     </div>
     <div id="hfBundlePlaceholder"></div>
-    <div class="settings-version">v1.26.23</div>
+    <div class="settings-version">v1.26.24</div>
     <button class="settings-close" id="hfSettingsClose">Done</button>
   </div>
 </div>
@@ -1435,7 +1441,7 @@
       <label class="toggle"><input type="checkbox" id="hfMemShuffleInputs" /><span class="toggle-slider"></span></label>
     </div>
     <div id="hfMemBundlePlaceholder"></div>
-    <div class="settings-version">v1.26.23</div>
+    <div class="settings-version">v1.26.24</div>
     <button class="settings-close" id="hfMemSettingsClose">Done</button>
   </div>
 </div>
@@ -1513,7 +1519,7 @@
       <label class="toggle"><input type="checkbox" id="hfChallShuffleInputs" /><span class="toggle-slider"></span></label>
     </div>
     <div id="hfChallBundlePlaceholder"></div>
-    <div class="settings-version">v1.26.23</div>
+    <div class="settings-version">v1.26.24</div>
     <button class="settings-close" id="hfChallSettingsClose">Done</button>
   </div>
 </div>
@@ -1580,7 +1586,7 @@
       <label class="toggle"><input type="checkbox" id="hfFlowShuffleInputs" /><span class="toggle-slider"></span></label>
     </div>
     <div id="hfFlowBundlePlaceholder"></div>
-    <div class="settings-version">v1.26.23</div>
+    <div class="settings-version">v1.26.24</div>
     <button class="settings-close" id="hfFlowSettingsClose">Done</button>
   </div>
 </div>
@@ -1658,7 +1664,7 @@
       <label class="toggle"><input type="checkbox" id="hfMindShuffleInputs" /><span class="toggle-slider"></span></label>
     </div>
     <div id="hfMindBundlePlaceholder"></div>
-    <div class="settings-version">v1.26.23</div>
+    <div class="settings-version">v1.26.24</div>
     <button class="settings-close" id="hfMindSettingsClose">Done</button>
   </div>
 </div>
@@ -1736,7 +1742,7 @@
       <label class="toggle"><input type="checkbox" id="hfCollShuffleInputs" /><span class="toggle-slider"></span></label>
     </div>
     <div id="hfCollBundlePlaceholder"></div>
-    <div class="settings-version">v1.26.23</div>
+    <div class="settings-version">v1.26.24</div>
     <button class="settings-close" id="hfCollSettingsClose">Done</button>
   </div>
 </div>
@@ -1894,7 +1900,7 @@
       <label>Extended purchases</label>
       <button id="clearExtendedBtn" style="font-size:13px; color:#c0392b; background:#fdf0ee; border:1px solid #f5c6c2; border-radius:8px; padding:6px 12px; cursor:pointer;">Clear</button>
     </div>
-    <div class="settings-version">v1.26.23</div>
+    <div class="settings-version">v1.26.24</div>
     <button class="settings-close" id="devSettingsDoneBtn">Done</button>
   </div>
 </div>
@@ -1966,19 +1972,19 @@
   </button>
 </div>
 
-<script src="js/data.js?v=12623"></script>
-<script src="js/tagsData.js?v=12623"></script>
-<script src="js/programsData.js?v=12623"></script>
-<script src="js/challengesData.js?v=12623"></script>
-<script src="js/mindsetData.js?v=12623"></script>
-<script src="js/multiStepData.js?v=12623"></script>
-<script src="js/memorizeData.js?v=12623"></script>
-<script src="js/mode-engine.js?v=12623"></script>
-<script src="js/app-core.js?v=12623"></script>
-<script src="js/app-modes.js?v=12623"></script>
-<script src="js/app-handsfree.js?v=12623"></script>
-<script src="js/app-system.js?v=12623"></script>
-<script src="js/app-ui.js?v=12623"></script>
+<script src="js/data.js?v=12624"></script>
+<script src="js/tagsData.js?v=12624"></script>
+<script src="js/programsData.js?v=12624"></script>
+<script src="js/challengesData.js?v=12624"></script>
+<script src="js/mindsetData.js?v=12624"></script>
+<script src="js/multiStepData.js?v=12624"></script>
+<script src="js/memorizeData.js?v=12624"></script>
+<script src="js/mode-engine.js?v=12624"></script>
+<script src="js/app-core.js?v=12624"></script>
+<script src="js/app-modes.js?v=12624"></script>
+<script src="js/app-handsfree.js?v=12624"></script>
+<script src="js/app-system.js?v=12624"></script>
+<script src="js/app-ui.js?v=12624"></script>
 
 
 <!-- CHECKPOINT SCREEN -->
