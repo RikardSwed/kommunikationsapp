@@ -3,13 +3,57 @@
 const challengesCollections = {
 
   assertive: [
-    { name: "Assertive Communication", guideFront: "A tougher situation — how do you respond?", guideBack: "One way to handle it...", description: "Harder situations — pushback, pressure, edge cases where it's tempting to back down.", inputs: [
-      { q: "Someone keeps pushing after you've said no clearly", a: "Don't explain or apologise more. Repeat calmly: \"My answer is still no.\" Persistence is not a reason to change your position." },
-      { q: "Someone raises their voice to get their way", a: "Stay calm and lower your own voice if anything. \"I'll talk when the tone comes down.\" Don't match the aggression." },
-      { q: "You're in a group and someone steamrolls your point", a: "Re-enter clearly: \"I wasn't finished — \" then complete your thought. Don't ask for the floor, take it." },
-      { q: "Someone makes you feel guilty for having a need", a: "Acknowledge their feeling, hold your position: \"I hear that's frustrating for you. I still need X.\"" },
-      { q: "Someone agrees in the moment but doesn't follow through", a: "Name it directly: \"You said X last time, and it didn't happen. I need to know this is going to change.\"" },
-    ]}
+    // v1.26.29 (list 6): challenges are organised by CHALLENGE TYPE — swipe
+    // right for a new type. The answers point back to the pack’s four
+    // strategies, with a hint about which one fits.
+    {
+      name: "Criticism",
+      guideFront: "You’re being criticised — how do you respond?",
+      guideBack: "One way to respond...",
+      description: "Someone criticises you — fairly or not. Fogging and Negative Inquiry are your main tools here: absorb what might be true, or lean in and ask for specifics.",
+      inputs: [
+        { q: "\"You always make everything so complicated.\"", a: "Hint: Fogging. \"You might be right — I do like to be thorough.\" Or Negative Inquiry: \"What did I make complicated this time?\"" },
+        { q: "\"That presentation was way too long.\"", a: "Hint: Fogging. \"Fair — it probably could have been shorter.\" No defence, no counter-attack." },
+        { q: "\"You never take anything seriously.\"", a: "Hint: Negative Inquiry. \"What have I not taken seriously that mattered to you?\" Specifics separate real concern from a jab." },
+        { q: "\"Honestly, your taste in music is terrible.\"", a: "Hint: Fogging with a smile. \"You could be right — it’s not for everyone.\" Low-stakes criticism deserves a light touch." },
+      ]
+    },
+    {
+      name: "Pressure",
+      guideFront: "They keep pushing — how do you hold your position?",
+      guideBack: "One way to respond...",
+      description: "Someone keeps pushing after you’ve already answered. Broken Record is built for exactly this: the same calm sentence, repeated, with no new arguments to attack.",
+      inputs: [
+        { q: "Someone keeps pushing after you've said no clearly", a: "Hint: Broken Record. Repeat calmly: \"My answer is still no.\" Persistence is not a counter-argument — don’t treat it as one." },
+        { q: "Someone raises their voice to get their way", a: "Hint: Broken Record, lower volume. Same sentence, calmer tone: \"I’ll talk when the tone comes down.\" Don’t match the energy." },
+        { q: "\"Just this once — you can make an exception, right?\"", a: "Hint: Fog, then Broken Record. \"You’re right that it’s a small thing — and my answer is still no.\"" },
+        { q: "Someone agrees in the moment but never follows through", a: "Hint: Broken Record on the agreement. \"You said X — I’m going to hold us to that.\" Same calm reminder each time it slips." },
+      ]
+    },
+    {
+      name: "Guilt-Tripping",
+      guideFront: "They make you feel guilty — how do you stay steady?",
+      guideBack: "One way to respond...",
+      description: "Someone uses guilt to move you — disappointment, obligation, \"after all I’ve done\". Fog the feeling, hold the position: guilt needs your explanation or your surrender to work.",
+      inputs: [
+        { q: "Someone makes you feel guilty for having a need", a: "Hint: Fog + hold. \"I hear that it’s frustrating for you — I still need this.\" Acknowledge the feeling without trading away the need." },
+        { q: "\"After everything I've done for you...\"", a: "Hint: Fogging. \"You’re right — you’ve done a lot for me.\" Then Broken Record: \"And my answer is still no.\" Gratitude and boundaries can coexist." },
+        { q: "\"Fine. I'll just do it all myself then.\"", a: "Hint: Fog the martyrdom, don’t take the bait. \"That’s one option.\" Calm, brief — the silence does the rest." },
+        { q: "\"I guess I just care more about this family than you do.\"", a: "Hint: Negative Assertion won’t fit — the accusation isn’t true. Fog the shape of it: \"Maybe it looks that way to you — and I’m still not coming.\"" },
+      ]
+    },
+    {
+      name: "Being Called Out",
+      guideFront: "You actually made the mistake — how do you own it?",
+      guideBack: "One way to respond...",
+      description: "The criticism is TRUE this time. Negative Assertion is the tool: own the mistake openly and calmly, without excessive apology — an error doesn’t make you less worthy.",
+      inputs: [
+        { q: "\"You forgot my birthday.\"", a: "Hint: Negative Assertion. \"You’re right, I forgot it — that’s on me.\" Own it cleanly. One real acknowledgement beats five excuses." },
+        { q: "\"This is the second deadline you've missed.\"", a: "Hint: Negative Assertion + a plan. \"Correct — I missed both. Here’s what I’m changing.\" No spiral of self-criticism, just ownership." },
+        { q: "\"You said you'd handle it, and you didn't.\"", a: "Hint: Negative Assertion. \"True. I said I would and I didn’t.\" Resist the urge to explain first — own first, explain only if asked." },
+        { q: "\"That comment you made hurt her feelings.\"", a: "Hint: Negative Assertion. \"You’re right — that came out wrong and it’s on me.\" Owning impact doesn’t require agreeing you’re a bad person." },
+      ]
+    },
   ],
 
   compliments: [

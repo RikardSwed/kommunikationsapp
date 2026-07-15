@@ -3,12 +3,52 @@
 const mindsetCollections = {
 
   assertive: [
-    { name: "Assertive Communication", guideFront: "Reflect on this question...", guideBack: "A way to think about it...", description: "The thinking patterns behind assertive communication — what gets in the way, and what to replace it with.", inputs: [
-      { q: "Why does assertiveness feel like aggression to many people?", a: "Because they've only seen two models: doormat or bulldozer. Assertiveness is a third thing — clear and calm. It takes practice to feel the difference." },
-      { q: "What is the difference between a need and a demand?", a: "A need is something you state clearly and own. A demand requires the other person to comply or be wrong. You can be firm about a need without making it a demand." },
-      { q: "Why do people back down when they're pushed back on?", a: "Usually because they confuse persistence with reason. Someone pushing harder is not a counter-argument. You only update when given a real reason, not just more pressure." },
-      { q: "What does it mean to hold your position without being rigid?", a: "You stay with your view until you've heard a genuine reason to update it. New argument or fact = update. Emotion or repetition = hold." },
-    ]}
+    // v1.26.29 (list 6): one mindset group PER STRATEGY — swipe right for
+    // the thinking patterns behind the next strategy.
+    {
+      name: "Fogging Mindset",
+      guideFront: "Reflect on this question...",
+      guideBack: "A way to think about it...",
+      description: "The thinking that makes Fogging work: criticism is information about the critic as much as about you, and agreeing with what MIGHT be true costs you nothing.",
+      inputs: [
+        { q: "Why does agreeing with criticism feel like losing?", a: "Because we treat every criticism as a verdict to appeal. It isn’t — it’s one person’s view. Agreeing that it MIGHT be true concedes nothing about who you are." },
+        { q: "What makes fogging strength rather than surrender?", a: "Surrender is changing your behaviour to make the criticism stop. Fogging changes nothing — you stay exactly where you are, you just stop feeding the attack." },
+        { q: "Why does a calm \"you might be right\" unsettle a critic?", a: "Because criticism is usually a lever, and levers need resistance. When you don’t push back, there is nothing to pry against — the critic has to either get specific or stop." },
+      ]
+    },
+    {
+      name: "Negative Inquiry Mindset",
+      guideFront: "Reflect on this question...",
+      guideBack: "A way to think about it...",
+      description: "The thinking that makes Negative Inquiry work: curiosity about criticism is the deepest form of confidence — you can afford to hear more.",
+      inputs: [
+        { q: "Why is asking for MORE criticism a position of strength?", a: "Because only someone unafraid of the answer asks the question. Defensiveness says the criticism might destroy you. Curiosity says it can’t." },
+        { q: "What does the request for specifics actually test?", a: "Whether the criticism is real. Genuine concerns survive the question \"what exactly do you mean?\" — jabs and moods usually don’t." },
+        { q: "How do you stay genuinely curious instead of sarcastic?", a: "By actually wanting the answer. If you ask \"what bothers you about it?\" as a trap, it lands as a trap. Decide first that the answer might be useful — then ask." },
+      ]
+    },
+    {
+      name: "Negative Assertion Mindset",
+      guideFront: "Reflect on this question...",
+      guideBack: "A way to think about it...",
+      description: "The thinking that makes Negative Assertion work: a mistake is something you DID, not something you ARE — so you can own it at full volume without shrinking.",
+      inputs: [
+        { q: "Why is calmly owning a mistake so disarming?", a: "Because most people expect defence or collapse. Clean ownership — \"you’re right, that’s on me\" — ends the argument before it starts. There’s nothing left to prove." },
+        { q: "What is the difference between owning a mistake and apologising excessively?", a: "Owning is about the mistake; excessive apology is about you. \"I was wrong, I’ll fix it\" closes the matter. \"I’m so terrible, I always do this\" reopens it as a referendum on your worth." },
+        { q: "Why does separating deed from worth make honesty easier?", a: "If every error is evidence against you as a person, you’ll defend everything. If an error is just an event, you can look at it — and correct it — without flinching." },
+      ]
+    },
+    {
+      name: "Broken Record Mindset",
+      guideFront: "Reflect on this question...",
+      guideBack: "A way to think about it...",
+      description: "The thinking that makes Broken Record work: repetition is not rudeness, and pressure is not an argument — you only update for reasons, not for volume.",
+      inputs: [
+        { q: "Why do people back down when they're pushed back on?", a: "Usually because they confuse persistence with reason. Someone pushing harder is not a counter-argument. You only update when given a real reason, not just more pressure." },
+        { q: "What does it mean to hold your position without being rigid?", a: "You stay with your view until you've heard a genuine reason to update it. New argument or fact = update. Emotion or repetition = hold." },
+        { q: "Why does repeating the same sentence feel wrong — and why is it right?", a: "We’re trained to answer every point with a new point. But new points are new targets. The same calm sentence signals: the decision is made, and it’s not being renegotiated." },
+      ]
+    },
   ],
 
   compliments: [

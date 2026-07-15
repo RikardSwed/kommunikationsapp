@@ -59,7 +59,22 @@ const memorizeCollections = {
         { bundle: 'pro', q: "How do you combine broken record with acknowledging the other person?", a: "\"I hear that you're frustrated — and my answer is still no.\" The acknowledgement shows you are listening; the return to your position shows you are not moving. Both matter." },
         { bundle: 'pro', q: "When should you stop using broken record?", a: "When the other person has genuinely heard you and the dynamic has shifted. Broken record is for resistance, not for normal conversation. Once they stop pushing, stop repeating — move forward." },
       ]
-    }
+    },
+    {
+      name: "Beyond the Strategies",
+      guideFront: "Answer from memory...",
+      guideBack: "The answer...",
+      // v1.26.29 (list 6): Pro-only theory deck covering the REST of the pack
+      // — combinations, sequences, challenge types and the shared mindset.
+      cards: [
+        { bundle: 'pro', q: "Why combine strategies instead of always using one?", a: "Because real situations rarely fit one tool. A collection gives you options — Fogging OR Negative Inquiry can both defuse criticism — and choosing in the moment is itself a skill worth training." },
+        { bundle: 'pro', q: "What is the idea behind a sequence like Broken Record → Fogging → Broken Record?", a: "Each strategy covers the other's weak spot: Broken Record states the position, Fogging absorbs the pushback without arguing, and returning to the exact same sentence shows the pressure changed nothing." },
+        { bundle: 'pro', q: "What are the four challenge types this pack trains for?", a: "Criticism (fair or unfair), Pressure (pushing after your answer), Guilt-tripping (obligation as a lever), and Being Called Out (when the criticism is actually true)." },
+        { bundle: 'pro', q: "Which strategies fit which challenge?", a: "Criticism → Fogging or Negative Inquiry. Pressure → Broken Record. Guilt → Fogging plus a held position. A real mistake → Negative Assertion — own it cleanly." },
+        { bundle: 'pro', q: "What is the shared mindset behind all four strategies?", a: "You don't need to defend yourself to hold your ground. Criticism, pressure and guilt only steer you if you argue with them — calm acknowledgement plus an unmoved position beats both." },
+        { bundle: 'pro', q: "When should you NOT use these techniques?", a: "When the other person raises a genuine concern that deserves real engagement. Fogging a legitimate worry feels dismissive — switch to actually listening, or to Negative Assertion if you were wrong." },
+      ]
+    },
   ],
 
 
