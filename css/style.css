@@ -2918,3 +2918,38 @@ body.feedback-mode    .al-bar { display: none !important; }
   margin-bottom: 10px;
   line-height: 1.4;
 }
+
+
+/* ── FOLDER ROW DRAG + PULL-PIN (v1.26.23) ─────────────────────── */
+.fol-edit-row.fol-row-in { transition: transform 0.15s ease; touch-action: pan-y; }
+.fol-row-dragging {
+  transition: none !important;
+  position: relative;
+  z-index: 5;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.18);
+  opacity: 0.96;
+}
+
+.mode-pin-toast {
+  position: absolute;
+  top: 14px;
+  left: 50%;
+  transform: translateX(-50%) translateY(-8px);
+  background: var(--ds-card);
+  border: 0.5px solid var(--ds-border);
+  border-radius: 18px;
+  padding: 8px 16px;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--ds-txt);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  z-index: 20;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+}
+.mode-pin-toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+.mode-pin-toast i { color: var(--ds-acc); }
