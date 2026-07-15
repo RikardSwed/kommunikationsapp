@@ -226,6 +226,13 @@ const DS = (function () {
       if (els.front)      els.front.textContent = cfg.itemFront(it, g);
       if (els.back)       els.back.textContent  = cfg.itemBack(it, g);
       renderGuide(g);
+      // Continue card mirrors the training progress bar (same formula as
+      // pbUpdate: position / (total - 1)) — list 7 #1
+      if (window.progSetPosition && typeof activeCollectionKey !== 'undefined') {
+        progSetPosition(activeCollectionKey,
+          (typeof activeCollectionLabel !== 'undefined' && activeCollectionLabel) || activeCollectionKey,
+          mode.gi, mode.groups.length);
+      }
       if (els.counter)    els.counter.textContent = `${mode.gi + 1} / ${mode.groups.length}`;
       if (els.subCounter) els.subCounter.textContent =
         `${mode.ii + 1} / ${mode.itemOrders[mode.groupOrder[mode.gi]].length}`;
@@ -522,6 +529,12 @@ const DS = (function () {
       if (els.front) els.front.textContent = front;
       if (els.back)  els.back.textContent  = back;
       renderGuide(g);
+      // Continue card mirrors the position in handsfree too (list 7 #1)
+      if (window.progSetPosition && typeof activeCollectionKey !== 'undefined') {
+        progSetPosition(activeCollectionKey,
+          (typeof activeCollectionLabel !== 'undefined' && activeCollectionLabel) || activeCollectionKey,
+          mode.gi, mode.groups.length);
+      }
       if (els.counter) els.counter.textContent = `${mode.gi + 1} / ${mode.groups.length}`;
       if (els.subCounter && g) els.subCounter.textContent = `${mode.ii + 1} / ${items(g).length}`;
       if (els.inner) {

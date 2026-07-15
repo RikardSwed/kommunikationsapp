@@ -161,7 +161,7 @@ DS.createCardMode({
     card: 'collCard', inner: 'collCardInner', title: 'collName',
     front: 'collFrontText', back: 'collBackText',
     counter: 'collCounter', subCounter: 'collSubCounter',
-    closeBtn: 'collCloseBtn',
+    closeBtn: 'collCloseBtn', settingsBtn: 'collSettingsBtn',
   },
   // v1.26.26: Collections has its OWN data source (strategy combinations),
   // no longer shared with Single Strategy.

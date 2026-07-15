@@ -120,6 +120,9 @@ function showTab(tab) {
   document.querySelectorAll('.nav-tab').forEach(btn => btn.classList.toggle('active', btn.dataset.tab === tab));
   showBottomNav();
   closeInfo();
+  // Continue card mirrors the training position (list 7 #1) — re-render it
+  // with fresh data every time the dashboard becomes visible.
+  if (tab === 'dashboard' && window.renderContinueCard) window.renderContinueCard();
 }
 
 document.querySelectorAll('.nav-tab').forEach(btn => {
@@ -889,6 +892,20 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
     if (!bool(K.enabled) || !_sessionActive) return;
     _sessionCards++;
     _lastFlipTime = Date.now();
+  };
+
+  // Continue-card position sync (list 7 #1): called by the mode engine on
+  // every card render. Mirrors the training progress bar exactly
+  // (position/(total-1)) and works regardless of the progress-tracking
+  // setting — it also CREATES the entry, so every launch path counts.
+  window.progSetPosition = function(key, label, idx, total) {
+    if (!key || !total) return;
+    try {
+      const pct = total > 1 ? Math.round((idx / (total - 1)) * 100) : 100;
+      localStorage.setItem('dash_last_pack', JSON.stringify({
+        key, label, progressPct: Math.max(0, Math.min(100, pct))
+      }));
+    } catch {}
   };
 
   // Lightweight helper for modes that track position differently
