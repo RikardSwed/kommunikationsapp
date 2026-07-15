@@ -2844,3 +2844,65 @@ body.feedback-mode    .al-bar { display: none !important; }
   margin-bottom: 10px;
 }
 .fol-sheet-btn.fol-cancel { background: transparent; color: var(--ds-txt2); padding: 10px; }
+
+
+/* ── EXTENDED STORE v2 (v1.26.21) — search, code redemption, kits ─────── */
+.ext-lifetime-card {
+  background: linear-gradient(135deg, #2C1A08, #5A2E10);
+  border-radius: 16px;
+  padding: 16px 18px;
+  margin: 0 0 18px;
+  color: #fff;
+}
+.ext-lifetime-title { font-size: 16px; font-weight: 800; display: flex; align-items: center; gap: 8px; }
+.ext-lifetime-title i { color: #F2A25C; }
+.ext-lifetime-desc { font-size: 13px; line-height: 1.5; opacity: 0.85; margin: 6px 0 12px; }
+.ext-lifetime-bottom { display: flex; align-items: center; justify-content: space-between; }
+.ext-lifetime-price { font-size: 18px; font-weight: 800; color: #F2A25C; }
+.ext-lifetime-btn {
+  background: linear-gradient(135deg, var(--ds-acc), #F2622A);
+  color: #fff; border: none; border-radius: 10px;
+  padding: 10px 20px; font-size: 14px; font-weight: 700;
+  font-family: inherit; cursor: pointer;
+}
+.ext-lifetime-owned { font-size: 14px; font-weight: 700; color: #7BC47F; display: flex; align-items: center; gap: 6px; }
+
+.ext-search-wrap { margin: 0 0 16px; }
+.ext-search-input {
+  width: 100%;
+  box-sizing: border-box;
+  background: var(--ds-card);
+  border: 1px solid var(--ds-border);
+  border-radius: 24px;
+  padding: 12px 18px;
+  font-size: 15px;
+  font-family: inherit;
+  color: var(--ds-txt);
+  outline: none;
+}
+.ext-search-input:focus { border-color: var(--ds-acc); }
+.ext-search-empty { font-size: 14px; color: var(--ds-txt2); text-align: center; padding: 18px 0; }
+.ext-code-msg {
+  font-size: 13px; font-weight: 600; color: #2E7D32;
+  background: #E8F5E9; border-radius: 10px;
+  padding: 10px 14px; margin: 0 0 14px; text-align: center;
+}
+
+.ext-load-more {
+  display: block;
+  width: 100%;
+  background: transparent;
+  border: 1.5px dashed var(--ds-border);
+  border-radius: 12px;
+  padding: 11px;
+  margin: 2px 0 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--ds-acc);
+  font-family: inherit;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+.ext-load-more:active { background: var(--ds-card-alt); }
+
+.ext-store-includes { font-size: 12px; color: var(--ds-txt2); margin-top: 4px; line-height: 1.4; }
