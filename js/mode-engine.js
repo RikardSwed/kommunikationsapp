@@ -174,6 +174,49 @@ const DS = (function () {
       });
     }
 
+    // ── Guide text (v1.26.22) ──────────────────────────────────────────────────
+    // Short framing lines shown above the card text, authored per strategy
+    // and mode (guideFront / guideBack on the group object). The toggle is
+    // remembered per pack AND per mode: absence of the key means ON.
+    const guideKey = () => 'guideText:' + cfg.id + ':' +
+      (typeof activeCollectionKey !== 'undefined' ? activeCollectionKey : '');
+    function guideEnabled() { return localStorage.getItem(guideKey()) !== 'off'; }
+    function guideElFor(anchor) {
+      if (!anchor || !anchor.parentNode) return null;
+      const prev = anchor.previousElementSibling;
+      if (prev && prev.classList && prev.classList.contains('card-guide')) return prev;
+      const el = document.createElement('div');
+      el.className = 'card-guide';
+      anchor.parentNode.insertBefore(el, anchor);
+      return el;
+    }
+    function renderGuide(g) {
+      const on = guideEnabled();
+      const gf = guideElFor(els.front), gb = guideElFor(els.back);
+      if (gf) {
+        const t = (on && g && g.guideFront) ? g.guideFront : '';
+        gf.textContent = t; gf.style.display = t ? '' : 'none';
+      }
+      if (gb) {
+        const t = (on && g && g.guideBack) ? g.guideBack : '';
+        gb.textContent = t; gb.style.display = t ? '' : 'none';
+      }
+    }
+    mode._setGuide = function (on) {
+      if (on) localStorage.removeItem(guideKey());
+      else localStorage.setItem(guideKey(), 'off');
+      render();
+    };
+    // One shared toggle in #settingsOverlay dispatches to the active mode
+    const guideToggle = $('showGuideText');
+    if (guideToggle && !guideToggle._guideBound) {
+      guideToggle._guideBound = true;
+      guideToggle.addEventListener('change', function () {
+        const m = window._guideActiveMode;
+        if (m && m._setGuide) m._setGuide(this.checked);
+      });
+    }
+
     // ── Render ─────────────────────────────────────────────────────────────
     function render() {
       const g = group();
@@ -182,6 +225,7 @@ const DS = (function () {
       if (els.title)      els.title.textContent = cfg.groupTitle(g);
       if (els.front)      els.front.textContent = cfg.itemFront(it, g);
       if (els.back)       els.back.textContent  = cfg.itemBack(it, g);
+      renderGuide(g);
       if (els.counter)    els.counter.textContent = `${mode.gi + 1} / ${mode.groups.length}`;
       if (els.subCounter) els.subCounter.textContent =
         `${mode.ii + 1} / ${mode.itemOrders[mode.groupOrder[mode.gi]].length}`;
@@ -269,6 +313,10 @@ const DS = (function () {
       info.close();
       buildOrders();
       mode.gi = 0; mode.ii = 0;
+      // Guide toggle reflects the persisted choice for THIS pack + mode
+      window._guideActiveMode = mode;
+      const gt = $('showGuideText');
+      if (gt) gt.checked = guideEnabled();
       navToTraining(cfg.screenId);
       render();
     };

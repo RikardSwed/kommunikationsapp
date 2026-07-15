@@ -6,6 +6,8 @@ const collections = {
   assertive: [
     {
       name: "Fogging",
+      guideFront: "Use Fogging to respond when...",
+      guideBack: "A possible response...",
       description: "Fogging means responding to criticism by calmly agreeing with what might be true — without defending yourself, explaining, or getting upset.\n\nYou are like fog: criticism hits nothing solid, it just passes through. This signals confidence and unshakeable calm.\n\nTypical fogging responses:\n• \"You might be right about that.\"\n• \"Yes, that could be.\"\n• \"You may have a point there.\"\n\nThree types of fogging:\n1. Agree with what might be true — \"You're probably right.\"\n2. Agree with the possibility — \"It's possible that I…\"\n3. Agree with the logic — \"I can see why you think so.\"\n\nMindset: You don't need to defend yourself. Agreeing is not giving up — it's strength.",
       inputs: [
         { q: "Someone criticises your driving",          a: '"You might be right about that."',      bundle: 'free' },
@@ -35,6 +37,8 @@ const collections = {
     },
     {
       name: "Negative Inquiry",
+      guideFront: "Use Negative Inquiry to respond when...",
+      guideBack: "A possible response...",
       description: "Negative inquiry means calmly and genuinely asking for more criticism when someone criticises you — instead of defending yourself.\n\nIt disarms the other person and gives you information about what the actual problem is.\n\nTypical phrases:\n• \"What is it specifically I do that bothers you?\"\n• \"What do you mean by that?\"\n• \"How would you prefer I handle it?\"\n\nThree purposes:\n1. Disarm — hard to keep attacking someone who genuinely listens\n2. Clarify — find out what the criticism is actually about\n3. Show confidence — you're not afraid of more criticism\n\nMindset: I'm not afraid of criticism. Asking is control, not weakness.",
       inputs: [
         { q: "Someone says you are being difficult",       a: '"What is it specifically that I\'m doing that feels difficult?"', bundle: 'free' },
@@ -64,6 +68,8 @@ const collections = {
     },
     {
       name: "Negative Assertion",
+      guideFront: "Use Negative Assertion to respond when...",
+      guideBack: "A possible response...",
       description: "Negative assertion means actively and calmly agreeing with your own faults when someone points them out — without over-apologising or getting defensive.\n\nThe key principle: acknowledge without shrinking.\n\nNot: \"Oh no, I'm so sorry…\"\nNot: \"Yes but it's because…\" (explanation = defence)\nYes: \"You're right. That's true.\" — short, calm, owned.\n\nMindset: I can be wrong and still be okay. Acknowledging a mistake shows strength.",
       inputs: [
         { q: "Someone points out you were late",               a: '"You\'re right, I was late. That\'s on me."', bundle: 'free' },
@@ -93,6 +99,8 @@ const collections = {
     },
     {
       name: "Broken Record",
+      guideFront: "Use Broken Record to respond when...",
+      guideBack: "A possible response...",
       description: "Broken record means returning to the same calm, short response over and over — without being drawn into argument, explanation, or apology.\n\nEvery time you explain yourself you give the other person a new argument to counter. When you just repeat — there is nothing to respond to.\n\nHow to use it:\n• Choose a short, clear sentence\n• Repeat it calmly every time they push\n• Don't change your wording, don't raise your voice, don't apologise\n\nMindset: I don't need to justify my boundaries. Repeating myself is stable, not strange.",
       inputs: [
         { q: "Someone keeps pressuring you after you said no", a: "Choose one calm sentence. Repeat it — without changing the wording, no matter what they say.", bundle: 'free' },
