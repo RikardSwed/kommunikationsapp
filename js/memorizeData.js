@@ -6,6 +6,8 @@ const memorizeCollections = {
   assertive: [
     {
       name: "Fogging",
+      guideFront: "Answer from memory...",
+      guideBack: "The answer...",
       cards: [
         { bundle: 'free', q: "What is the core idea behind fogging?", a: "You agree with what might be true in a criticism — without defending yourself, explaining, or getting upset. Criticism passes through you like fog: nothing solid to hit." },
         { bundle: 'free', q: "What are the three types of fogging?", a: "1. Agree with what might be true — \"You're probably right.\"\n2. Agree with the possibility — \"It's possible that I…\"\n3. Agree with the logic — \"I can see why you think so.\"" },
@@ -18,6 +20,8 @@ const memorizeCollections = {
     },
     {
       name: "Negative Inquiry",
+      guideFront: "Answer from memory...",
+      guideBack: "The answer...",
       cards: [
         { bundle: 'free', q: "What is the core idea behind negative inquiry?", a: "When someone criticises you, you ask calmly for more — more detail, more specifics. Instead of defending yourself, you show genuine curiosity about the criticism." },
         { bundle: 'free', q: "What are the three main purposes of negative inquiry?", a: "1. Disarm — it's hard to keep attacking someone who is genuinely listening.\n2. Clarify — find out what the criticism is actually about.\n3. Show confidence — you're not afraid of more criticism." },
@@ -30,6 +34,8 @@ const memorizeCollections = {
     },
     {
       name: "Negative Assertion",
+      guideFront: "Answer from memory...",
+      guideBack: "The answer...",
       cards: [
         { bundle: 'free', q: "What is the core idea behind negative assertion?", a: "You actively and calmly agree with your own faults when someone points them out — without over-apologising, explaining, or getting defensive." },
         { bundle: 'free', q: "What does negative assertion signal about self-esteem?", a: "High self-esteem. You know you have flaws and that's okay. You don't need to minimise, justify, or collapse when a fault is pointed out." },
@@ -42,6 +48,8 @@ const memorizeCollections = {
     },
     {
       name: "Broken Record",
+      guideFront: "Answer from memory...",
+      guideBack: "The answer...",
       cards: [
         { bundle: 'free', q: "What is the core idea behind broken record?", a: "You return to the same calm, short response every time someone pushes — without being drawn into argument, explanation, or apology. Like a vinyl record that skips." },
         { bundle: 'free', q: "Why does broken record work?", a: "Every time you explain or justify yourself, you give the other person new material to argue against. When you just repeat — there is nothing to respond to. The technique removes the fuel." },

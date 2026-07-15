@@ -5,6 +5,8 @@ const multiStepCollections = {
   assertive: [
     {
       name: "Hold Your Ground",
+      guideFront: "Follow the sequence — what comes next?",
+      guideBack: "The next step...",
       subtitle: "State → Hold → Broken Record",
       inputs: [
         // ── Free (2) ─────────────────────────────────────────────────────────
@@ -106,6 +108,8 @@ const multiStepCollections = {
 
     {
       name: "Name the Pattern",
+      guideFront: "Follow the sequence — what comes next?",
+      guideBack: "The next step...",
       subtitle: "Observe → State → Request",
       inputs: [
         // ── Free (2) ─────────────────────────────────────────────────────────

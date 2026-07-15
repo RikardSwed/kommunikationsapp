@@ -3,7 +3,7 @@
 const challengesCollections = {
 
   assertive: [
-    { name: "Assertive Communication", description: "Harder situations — pushback, pressure, edge cases where it's tempting to back down.", inputs: [
+    { name: "Assertive Communication", guideFront: "A tougher situation — how do you respond?", guideBack: "One way to handle it...", description: "Harder situations — pushback, pressure, edge cases where it's tempting to back down.", inputs: [
       { q: "Someone keeps pushing after you've said no clearly", a: "Don't explain or apologise more. Repeat calmly: \"My answer is still no.\" Persistence is not a reason to change your position." },
       { q: "Someone raises their voice to get their way", a: "Stay calm and lower your own voice if anything. \"I'll talk when the tone comes down.\" Don't match the aggression." },
       { q: "You're in a group and someone steamrolls your point", a: "Re-enter clearly: \"I wasn't finished — \" then complete your thought. Don't ask for the floor, take it." },

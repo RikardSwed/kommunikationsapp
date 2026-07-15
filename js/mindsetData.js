@@ -3,7 +3,7 @@
 const mindsetCollections = {
 
   assertive: [
-    { name: "Assertive Communication", description: "The thinking patterns behind assertive communication — what gets in the way, and what to replace it with.", inputs: [
+    { name: "Assertive Communication", guideFront: "Reflect on this question...", guideBack: "A way to think about it...", description: "The thinking patterns behind assertive communication — what gets in the way, and what to replace it with.", inputs: [
       { q: "Why does assertiveness feel like aggression to many people?", a: "Because they've only seen two models: doormat or bulldozer. Assertiveness is a third thing — clear and calm. It takes practice to feel the difference." },
       { q: "What is the difference between a need and a demand?", a: "A need is something you state clearly and own. A demand requires the other person to comply or be wrong. You can be firm about a need without making it a demand." },
       { q: "Why do people back down when they're pushed back on?", a: "Usually because they confuse persistence with reason. Someone pushing harder is not a counter-argument. You only update when given a real reason, not just more pressure." },
