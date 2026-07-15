@@ -542,19 +542,54 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
   });
 
   // ─ Mode screen pin button ───────────────────────────────────────────
-  const modePinBtn = document.getElementById('modePinBtn');
-  if (modePinBtn) {
-    const doPinToggle = () => {
-      if (!activeCollectionKey) return;
-      const pack = ALL_PACKS.find(p => p.key === activeCollectionKey);
-      toggleFav(activeCollectionKey, pack ? pack.label : activeCollectionKey);
-      refreshPinBtns();
-      renderFavTab();
-      renderDashFavs();
-    };
-    modePinBtn.addEventListener('click', doPinToggle);
-    modePinBtn.addEventListener('touchend', e => { e.preventDefault(); doPinToggle(); }, { passive: false });
-  }
+  // Mode-screen pin button is gone (list 3 #6). Pinning is now a pull-down
+  // gesture on the mode screen: drag down from the top past the threshold to
+  // toggle the pin; a small confirmation fades in at the top and out after 1 s.
+  (function initPullPin() {
+    const screen = document.getElementById('modeScreen');
+    if (!screen) return;
+    const THRESHOLD = 70;
+    let startY = 0, tracking = false, fired = false;
+
+    const scroller = () => screen.querySelector('.mode-list') || screen;
+
+    function showPinToast(pinned) {
+      let t = document.getElementById('modePinToast');
+      if (!t) {
+        t = document.createElement('div');
+        t.id = 'modePinToast';
+        t.className = 'mode-pin-toast';
+        screen.appendChild(t);
+      }
+      t.innerHTML = '<i class="ti ' + (pinned ? 'ti-pin-filled' : 'ti-pin') + '" aria-hidden="true"></i>'
+        + '<span>' + (pinned ? 'Pack pinned' : 'Pin removed') + '</span>';
+      t.classList.add('show');
+      clearTimeout(t._t);
+      t._t = setTimeout(() => t.classList.remove('show'), 1000);
+    }
+
+    screen.addEventListener('touchstart', e => {
+      tracking = scroller().scrollTop <= 0;
+      fired = false;
+      startY = e.touches[0].clientY;
+    }, { passive: true });
+
+    screen.addEventListener('touchmove', e => {
+      if (!tracking || fired) return;
+      const dy = e.touches[0].clientY - startY;
+      if (dy > THRESHOLD) {
+        fired = true;                       // one toggle per gesture
+        if (!activeCollectionKey) return;
+        const pack = ALL_PACKS.find(p => p.key === activeCollectionKey);
+        toggleFav(activeCollectionKey, pack ? pack.label : activeCollectionKey);
+        refreshPinBtns();
+        renderFavTab();
+        renderDashFavs();
+        if (navigator.vibrate) navigator.vibrate(10);
+        showPinToast(isFav(activeCollectionKey));
+      }
+    }, { passive: true });
+  })();
 
   // Update mode pin button whenever a pack is opened
   const _origShowModeForPin = showModeScreen;
@@ -1559,8 +1594,8 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
     if (!inFolder.length) {
       html += '<div class="fol-edit-msg">No packs yet &mdash; add some below.</div>';
     } else {
-      inFolder.forEach(p => {
-        html += '<div class="fol-edit-row">'
+      inFolder.forEach((p, i) => {
+        html += '<div class="fol-edit-row fol-row-in" data-idx="' + i + '">'
           + '<span class="fol-row-name">' + escHtml(p.label) + '</span>'
           + '<button class="fol-row-btn fol-row-rem" data-key="' + p.key + '" aria-label="Remove">&minus;</button>'
           + '</div>';
@@ -1617,6 +1652,72 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
     const deleteBtn = container.querySelector('#folDeleteBtn');
     if (deleteBtn) deleteBtn.addEventListener('click', () => {
       confirmDeleteFolder(folders, folder);
+    });
+
+    enableRowDrag(container, folders, folder);
+  }
+
+  // ── Long-press drag to reorder packs inside a folder (list 3 #2) ───────
+  // Hold a pack row ~350 ms, then drag: the row follows the finger, siblings
+  // shift out of the way, and releasing saves the new order.
+  function enableRowDrag(container, folders, folder) {
+    const rows = Array.from(container.querySelectorAll('.fol-edit-row.fol-row-in'));
+    if (rows.length < 2) return;
+    rows.forEach(row => {
+      const idx = parseInt(row.dataset.idx, 10);
+      let timer = null, dragging = false, startY = 0, targetIdx = idx;
+      const step = () => row.offsetHeight + 8;   // row height + margin gap
+
+      const reset = () => {
+        clearTimeout(timer); timer = null;
+        dragging = false;
+        rows.forEach(r => { r.style.transform = ''; r.classList.remove('fol-row-dragging'); });
+      };
+
+      row.addEventListener('touchstart', e => {
+        if (e.target.closest('.fol-row-btn')) return;   // the − button is not a handle
+        startY = e.touches[0].clientY;
+        targetIdx = idx;
+        timer = setTimeout(() => {
+          dragging = true;
+          row.classList.add('fol-row-dragging');
+          if (navigator.vibrate) navigator.vibrate(10);
+        }, 350);
+      }, { passive: true });
+
+      row.addEventListener('touchmove', e => {
+        const dy = e.touches[0].clientY - startY;
+        if (!dragging) {
+          // Movement before the long-press fires means scrolling, not dragging
+          if (Math.abs(dy) > 10) { clearTimeout(timer); timer = null; }
+          return;
+        }
+        e.preventDefault();                              // lock page scroll
+        row.style.transform = 'translateY(' + dy + 'px)';
+        const h = step();
+        targetIdx = Math.max(0, Math.min(rows.length - 1, idx + Math.round(dy / h)));
+        rows.forEach(r => {
+          if (r === row) return;
+          const ri = parseInt(r.dataset.idx, 10);
+          let t = 0;
+          if (ri > idx && ri <= targetIdx) t = -h;
+          else if (ri < idx && ri >= targetIdx) t = h;
+          r.style.transform = t ? 'translateY(' + t + 'px)' : '';
+        });
+      }, { passive: false });
+
+      row.addEventListener('touchend', () => {
+        const wasDragging = dragging;
+        const to = targetIdx;
+        reset();
+        if (wasDragging && to !== idx) {
+          const moved = folder.packs.splice(idx, 1)[0];
+          folder.packs.splice(to, 0, moved);
+          saveFolders(folders);
+          render();
+        }
+      });
+      row.addEventListener('touchcancel', reset);
     });
   }
 
