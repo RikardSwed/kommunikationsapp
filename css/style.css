@@ -32,6 +32,10 @@
   --ds-lock-pro:    #5856d6;
   --ds-lock-comp:   #B05A28;
   --ds-pro-badge:   #5856d6;
+  /* Hero/banner gradient (v1.26.35) — separate vars so dark mode can use a
+     calmer, deeper ember instead of the full-saturation orange. */
+  --ds-hero-a:      var(--ds-acc);
+  --ds-hero-b:      #F2622A;
 }
 
 body.theme-ember {
@@ -48,6 +52,9 @@ body.theme-ember {
   --ds-nav-bg:      #120E07;
   --ds-splash-bg:   #0D0D0D;
   --ds-splash-acc:  #FF7800;
+  /* Muted ember banner gradient for dark mode (v1.26.35) */
+  --ds-hero-a:      #6E3316;
+  --ds-hero-b:      #9A481E;
   --ds-toggle-on:   #F2622A;
   --ds-subnav-btn:  #2A1C0A;
   --ds-subnav-act:  var(--ds-acc);
@@ -1167,7 +1174,7 @@ body.pb-enabled .divider::after {
 
 /* ── LIBRARY BANNER (orange header, replaces white topbar) ──────────────── */
 .lib-banner {
-  background: linear-gradient(135deg, var(--ds-acc), #F2622A);
+  background: linear-gradient(135deg, var(--ds-hero-a), var(--ds-hero-b));
   padding: 18px 20px 16px;
   margin: 0 -20px 0;          /* break out of home-screen padding */
   display: flex;
@@ -1200,7 +1207,7 @@ body.pb-enabled .divider::after {
 
 /* ── HOME WELCOME BANNER ────────────────────────────────────────────────── */
 .dash-welcome-banner {
-  background: linear-gradient(135deg, var(--ds-acc), #F2622A);
+  background: linear-gradient(135deg, var(--ds-hero-a), var(--ds-hero-b));
   border-radius: 18px;
   padding: 28px 22px 26px;
   margin: 4px 0 18px;
@@ -2583,7 +2590,7 @@ body.feedback-mode    .al-bar { display: none !important; }
 
 /* ── DASHBOARD HERO BANNER (v1.26.11) ───────────────────────────── */
 .dash-hero {
-  background: linear-gradient(135deg, var(--ds-acc), #F2622A);
+  background: linear-gradient(135deg, var(--ds-hero-a), var(--ds-hero-b));
   padding: 34px 20px 22px;
   flex-shrink: 0;
   position: relative;
@@ -2888,7 +2895,7 @@ body.feedback-mode    .al-bar { display: none !important; }
   -webkit-tap-highlight-color: transparent;
 }
 .fol-sheet-btn.fol-primary {
-  background: linear-gradient(135deg, var(--ds-acc), #F2622A);
+  background: linear-gradient(135deg, var(--ds-hero-a), var(--ds-hero-b));
   color: #fff;
   margin-bottom: 10px;
 }
@@ -2915,7 +2922,7 @@ body.feedback-mode    .al-bar { display: none !important; }
 .ext-lifetime-bottom { display: flex; align-items: center; justify-content: space-between; }
 .ext-lifetime-price { font-size: 18px; font-weight: 800; color: #F2A25C; }
 .ext-lifetime-btn {
-  background: linear-gradient(135deg, var(--ds-acc), #F2622A);
+  background: linear-gradient(135deg, var(--ds-hero-a), var(--ds-hero-b));
   color: #fff; border: none; border-radius: 10px;
   padding: 10px 20px; font-size: 14px; font-weight: 700;
   font-family: inherit; cursor: pointer;
@@ -3028,6 +3035,27 @@ body.feedback-mode    .al-bar { display: none !important; }
 
 /* Uppgift 8 — extra top margin for tab-info when immediately below a folder banner */
 #libTabFolders .tab-info:first-child { margin-top: 14px; }
+
+/* ─── DASHBOARD STREAK CHIP (v1.26.35) ─────────────────────────────────
+   Shows the current daily-goal streak from the Progress system on the home
+   hero. Hidden when progress tracking is off or the streak is 0. */
+.dash-streak-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 10px;
+  padding: 5px 12px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.22);
+  color: rgba(60, 25, 5, 0.85);
+  font-size: 13px;
+  font-weight: 700;
+  width: fit-content;
+}
+body.theme-ember .dash-streak-chip {
+  background: rgba(0, 0, 0, 0.25);
+  color: #FFD9B8;
+}
 
 /* ─── TABLET / IPAD LAYOUT (v1.26.31) ─────────────────────────────────────────
    On phones nothing changes (the query never matches). On iPad the app shell
