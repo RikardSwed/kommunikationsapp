@@ -3057,6 +3057,20 @@ body.theme-ember .dash-streak-chip {
   color: #FFD9B8;
 }
 
+/* ─── ABOUT & PRIVACY (v1.26.36) ───────────────────────────────────────
+   Simple readable text panel reusing the settings overlay pattern. */
+.about-body p {
+  font-size: 14px;
+  line-height: 1.55;
+  color: var(--ds-txt2);
+  margin: 0 0 12px;
+}
+.about-body p strong { color: var(--ds-txt); }
+.about-body .about-meta {
+  font-size: 12px;
+  color: var(--ds-txt3);
+}
+
 /* ─── TABLET / IPAD LAYOUT (v1.26.31) ─────────────────────────────────────────
    On phones nothing changes (the query never matches). On iPad the app shell
    widens from the phone column to a roomier centered column, Quizlet-style:
