@@ -1064,18 +1064,14 @@
   </div>
   <div class="hf-hint-row">
     <div class="hf-transport-group">
-      <button class="hf-transport-btn hf-skip-btn" id="hfPrevStepBtn" disabled>⏮</button>
-      <button class="hf-transport-btn hf-skip-btn" id="hfNextStepBtn" disabled>⏭</button>
+      <button class="hf-transport-btn hf-skip-btn" id="hfPrevStepBtn" aria-label="Previous strategy" disabled><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="19 20 9 12 19 4 19 20"/><line x1="5" y1="19" x2="5" y2="5"/></svg></button>
+      <button class="hf-transport-btn" id="hfPrevInputBtn" aria-label="Previous input"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg></button>
+      <button class="hf-transport-btn hf-play-btn" id="hfPlayBtn" aria-label="Play"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg></button>
+      <button class="hf-transport-btn" id="hfNextInputBtn" aria-label="Next input"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg></button>
+      <button class="hf-transport-btn hf-skip-btn" id="hfNextStepBtn" aria-label="Next strategy" disabled><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="5 4 15 12 5 20 5 4"/><line x1="19" y1="5" x2="19" y2="19"/></svg></button>
     </div>
-    <span class="hint" id="hfHint" style="flex:1; margin:0;">Tap card to reveal<br>↑ ↓ new input &nbsp;·&nbsp; ← → new strategy</span>
-    <button class="hf-transport-btn" id="hfPlayBtn">▶</button>
   </div>
-  <div class="bottombar">
-    <button class="nav-btn" id="hfPrevStratBtn">&#8592;</button>
-    <button class="nav-btn" id="hfPrevInputBtn">&#8593;</button>
-    <button class="nav-btn" id="hfNextInputBtn">&#8595;</button>
-    <button class="nav-btn" id="hfNextStratBtn">&#8594;</button>
-  </div>
+
 </div>
 
 <!-- HANDSFREE: MEMORIZE SCREEN -->
@@ -1100,18 +1096,14 @@
   </div>
   <div class="hf-hint-row">
     <div class="hf-transport-group">
-      <button class="hf-transport-btn hf-skip-btn" id="hfMemPrevStepBtn" disabled>⏮</button>
-      <button class="hf-transport-btn hf-skip-btn" id="hfMemNextStepBtn" disabled>⏭</button>
+      <button class="hf-transport-btn hf-skip-btn" id="hfMemPrevStepBtn" aria-label="Previous strategy" disabled><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="19 20 9 12 19 4 19 20"/><line x1="5" y1="19" x2="5" y2="5"/></svg></button>
+      <button class="hf-transport-btn" id="hfMemPrevCardBtn" aria-label="Previous input"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg></button>
+      <button class="hf-transport-btn hf-play-btn" id="hfMemPlayBtn" aria-label="Play"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg></button>
+      <button class="hf-transport-btn" id="hfMemNextCardBtn" aria-label="Next input"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg></button>
+      <button class="hf-transport-btn hf-skip-btn" id="hfMemNextStepBtn" aria-label="Next strategy" disabled><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="5 4 15 12 5 20 5 4"/><line x1="19" y1="5" x2="19" y2="19"/></svg></button>
     </div>
-    <span class="hint" id="hfMemHint" style="flex:1; margin:0;">Tap card to reveal<br>↑ ↓ next card &nbsp;·&nbsp; ← → new strategy</span>
-    <button class="hf-transport-btn" id="hfMemPlayBtn">▶</button>
   </div>
-  <div class="bottombar">
-    <button class="nav-btn" id="hfMemPrevStratBtn">&#8592;</button>
-    <button class="nav-btn" id="hfMemPrevCardBtn">&#8593;</button>
-    <button class="nav-btn" id="hfMemNextCardBtn">&#8595;</button>
-    <button class="nav-btn" id="hfMemNextStratBtn">&#8594;</button>
-  </div>
+
 </div>
 
 <!-- HANDSFREE: CHALLENGES SCREEN -->
@@ -1136,18 +1128,14 @@
   </div>
   <div class="hf-hint-row">
     <div class="hf-transport-group">
-      <button class="hf-transport-btn hf-skip-btn" id="hfChallPrevStepBtn" disabled>⏮</button>
-      <button class="hf-transport-btn hf-skip-btn" id="hfChallNextStepBtn" disabled>⏭</button>
+      <button class="hf-transport-btn hf-skip-btn" id="hfChallPrevStepBtn" aria-label="Previous strategy" disabled><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="19 20 9 12 19 4 19 20"/><line x1="5" y1="19" x2="5" y2="5"/></svg></button>
+      <button class="hf-transport-btn" id="hfChallPrevInputBtn" aria-label="Previous input"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg></button>
+      <button class="hf-transport-btn hf-play-btn" id="hfChallPlayBtn" aria-label="Play"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg></button>
+      <button class="hf-transport-btn" id="hfChallNextInputBtn" aria-label="Next input"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg></button>
+      <button class="hf-transport-btn hf-skip-btn" id="hfChallNextStepBtn" aria-label="Next strategy" disabled><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="5 4 15 12 5 20 5 4"/><line x1="19" y1="5" x2="19" y2="19"/></svg></button>
     </div>
-    <span class="hint" id="hfChallHint" style="flex:1; margin:0;">Tap card to reveal<br>↑ ↓ new input &nbsp;·&nbsp; ← → new challenge</span>
-    <button class="hf-transport-btn" id="hfChallPlayBtn">▶</button>
   </div>
-  <div class="bottombar">
-    <button class="nav-btn" id="hfChallPrevBtn">&#8592;</button>
-    <button class="nav-btn" id="hfChallPrevInputBtn">&#8593;</button>
-    <button class="nav-btn" id="hfChallNextInputBtn">&#8595;</button>
-    <button class="nav-btn" id="hfChallNextBtn">&#8594;</button>
-  </div>
+
 </div>
 
 <!-- HANDSFREE: SEQUENCES SCREEN -->
@@ -1172,18 +1160,14 @@
   </div>
   <div class="hf-hint-row">
     <div class="hf-transport-group">
-      <button class="hf-transport-btn hf-skip-btn" id="hfFlowPrevStepBtn" disabled>⏮</button>
-      <button class="hf-transport-btn hf-skip-btn" id="hfFlowNextStepBtn" disabled>⏭</button>
+      <button class="hf-transport-btn hf-skip-btn" id="hfFlowPrevStepBtn" aria-label="Previous strategy" disabled><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="19 20 9 12 19 4 19 20"/><line x1="5" y1="19" x2="5" y2="5"/></svg></button>
+      <button class="hf-transport-btn" id="hfFlowPrevCardBtn" aria-label="Previous input"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg></button>
+      <button class="hf-transport-btn hf-play-btn" id="hfFlowPlayBtn" aria-label="Play"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg></button>
+      <button class="hf-transport-btn" id="hfFlowNextCardBtn" aria-label="Next input"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg></button>
+      <button class="hf-transport-btn hf-skip-btn" id="hfFlowNextStepBtn" aria-label="Next strategy" disabled><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="5 4 15 12 5 20 5 4"/><line x1="19" y1="5" x2="19" y2="19"/></svg></button>
     </div>
-    <span class="hint" id="hfFlowHint" style="flex:1; margin:0;">Tap card to reveal<br>↑ ↓ next card &nbsp;·&nbsp; ← → new combo</span>
-    <button class="hf-transport-btn" id="hfFlowPlayBtn">▶</button>
   </div>
-  <div class="bottombar">
-    <button class="nav-btn" id="hfFlowPrevComboBtn">&#8592;</button>
-    <button class="nav-btn" id="hfFlowPrevCardBtn">&#8593;</button>
-    <button class="nav-btn" id="hfFlowNextCardBtn">&#8595;</button>
-    <button class="nav-btn" id="hfFlowNextComboBtn">&#8594;</button>
-  </div>
+
 </div>
 
 <!-- HANDSFREE: MINDSET SCREEN -->
@@ -1208,18 +1192,14 @@
   </div>
   <div class="hf-hint-row">
     <div class="hf-transport-group">
-      <button class="hf-transport-btn hf-skip-btn" id="hfMindPrevStepBtn" disabled>⏮</button>
-      <button class="hf-transport-btn hf-skip-btn" id="hfMindNextStepBtn" disabled>⏭</button>
+      <button class="hf-transport-btn hf-skip-btn" id="hfMindPrevStepBtn" aria-label="Previous strategy" disabled><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="19 20 9 12 19 4 19 20"/><line x1="5" y1="19" x2="5" y2="5"/></svg></button>
+      <button class="hf-transport-btn" id="hfMindPrevInputBtn" aria-label="Previous input"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg></button>
+      <button class="hf-transport-btn hf-play-btn" id="hfMindPlayBtn" aria-label="Play"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg></button>
+      <button class="hf-transport-btn" id="hfMindNextInputBtn" aria-label="Next input"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg></button>
+      <button class="hf-transport-btn hf-skip-btn" id="hfMindNextStepBtn" aria-label="Next strategy" disabled><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="5 4 15 12 5 20 5 4"/><line x1="19" y1="5" x2="19" y2="19"/></svg></button>
     </div>
-    <span class="hint" id="hfMindHint" style="flex:1; margin:0;">Tap card to reveal<br>↑ ↓ new input &nbsp;·&nbsp; ← → new mindset</span>
-    <button class="hf-transport-btn" id="hfMindPlayBtn">▶</button>
   </div>
-  <div class="bottombar">
-    <button class="nav-btn" id="hfMindPrevBtn">&#8592;</button>
-    <button class="nav-btn" id="hfMindPrevInputBtn">&#8593;</button>
-    <button class="nav-btn" id="hfMindNextInputBtn">&#8595;</button>
-    <button class="nav-btn" id="hfMindNextBtn">&#8594;</button>
-  </div>
+
 </div>
 
 <!-- HANDSFREE: COLLECTIONS SCREEN -->
@@ -1244,18 +1224,14 @@
   </div>
   <div class="hf-hint-row">
     <div class="hf-transport-group">
-      <button class="hf-transport-btn hf-skip-btn" id="hfCollPrevStepBtn" disabled>⏮</button>
-      <button class="hf-transport-btn hf-skip-btn" id="hfCollNextStepBtn" disabled>⏭</button>
+      <button class="hf-transport-btn hf-skip-btn" id="hfCollPrevStepBtn" aria-label="Previous strategy" disabled><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="19 20 9 12 19 4 19 20"/><line x1="5" y1="19" x2="5" y2="5"/></svg></button>
+      <button class="hf-transport-btn" id="hfCollPrevInputBtn" aria-label="Previous input"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg></button>
+      <button class="hf-transport-btn hf-play-btn" id="hfCollPlayBtn" aria-label="Play"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg></button>
+      <button class="hf-transport-btn" id="hfCollNextInputBtn" aria-label="Next input"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg></button>
+      <button class="hf-transport-btn hf-skip-btn" id="hfCollNextStepBtn" aria-label="Next strategy" disabled><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="5 4 15 12 5 20 5 4"/><line x1="19" y1="5" x2="19" y2="19"/></svg></button>
     </div>
-    <span class="hint" id="hfCollHint" style="flex:1; margin:0;">Tap card to reveal<br>↑ ↓ new input &nbsp;·&nbsp; ← → new collection</span>
-    <button class="hf-transport-btn" id="hfCollPlayBtn">▶</button>
   </div>
-  <div class="bottombar">
-    <button class="nav-btn" id="hfCollPrevBtn">&#8592;</button>
-    <button class="nav-btn" id="hfCollPrevInputBtn">&#8593;</button>
-    <button class="nav-btn" id="hfCollNextInputBtn">&#8595;</button>
-    <button class="nav-btn" id="hfCollNextBtn">&#8594;</button>
-  </div>
+
 </div>
 
 <!-- SETTINGS: GENERAL -->
