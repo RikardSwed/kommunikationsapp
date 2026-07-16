@@ -7,10 +7,10 @@
   <meta name="mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="default" />
   <meta name="apple-mobile-web-app-title" content="Deckstack" />
-  <link rel="manifest" href="manifest.json?v=12634" />
+  <link rel="manifest" href="manifest.json?v=12635" />
   <title>Deckstack</title>
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="stylesheet" href="css/style.css?v=12634" />
+  <link rel="stylesheet" href="css/style.css?v=12635" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
 </head>
 <body>
@@ -105,6 +105,7 @@
     </div>
     <div class="dash-welcome-text" id="dashWelcomeTitle">Welcome back</div>
     <div class="dash-welcome-sub" id="dashWelcomeSubtitle">Ready to train?</div>
+    <div class="dash-streak-chip" id="dashStreakChip" style="display:none;"></div>
   </div>
 
   <!-- Default view (shown when not searching) -->
@@ -330,7 +331,7 @@
         <button id="progResetBtn" class="prog-reset-btn">Reset all progress data…</button>
       </div>
     </div>
-    <div class="settings-version">v1.26.34</div>
+    <div class="settings-version">v1.26.35</div>
     <button class="settings-close" id="progressSettingsClose">Done</button>
   </div>
 </div>
@@ -1328,7 +1329,7 @@
       <label>Progress bar</label>
       <label class="toggle"><input type="checkbox" id="showProgressBar" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.26.34</div>
+    <div class="settings-version">v1.26.35</div>
     <button class="settings-close" id="settingsClose">Done</button>
   </div>
 </div>
@@ -1418,7 +1419,7 @@
       <label class="toggle"><input type="checkbox" id="hfShuffleInputs" /><span class="toggle-slider"></span></label>
     </div>
     <div id="hfBundlePlaceholder"></div>
-    <div class="settings-version">v1.26.34</div>
+    <div class="settings-version">v1.26.35</div>
     <button class="settings-close" id="hfSettingsClose">Done</button>
   </div>
 </div>
@@ -1504,7 +1505,7 @@
       <label class="toggle"><input type="checkbox" id="hfMemShuffleInputs" /><span class="toggle-slider"></span></label>
     </div>
     <div id="hfMemBundlePlaceholder"></div>
-    <div class="settings-version">v1.26.34</div>
+    <div class="settings-version">v1.26.35</div>
     <button class="settings-close" id="hfMemSettingsClose">Done</button>
   </div>
 </div>
@@ -1590,7 +1591,7 @@
       <label class="toggle"><input type="checkbox" id="hfChallShuffleInputs" /><span class="toggle-slider"></span></label>
     </div>
     <div id="hfChallBundlePlaceholder"></div>
-    <div class="settings-version">v1.26.34</div>
+    <div class="settings-version">v1.26.35</div>
     <button class="settings-close" id="hfChallSettingsClose">Done</button>
   </div>
 </div>
@@ -1665,7 +1666,7 @@
       <label class="toggle"><input type="checkbox" id="hfFlowShuffleInputs" /><span class="toggle-slider"></span></label>
     </div>
     <div id="hfFlowBundlePlaceholder"></div>
-    <div class="settings-version">v1.26.34</div>
+    <div class="settings-version">v1.26.35</div>
     <button class="settings-close" id="hfFlowSettingsClose">Done</button>
   </div>
 </div>
@@ -1751,7 +1752,7 @@
       <label class="toggle"><input type="checkbox" id="hfMindShuffleInputs" /><span class="toggle-slider"></span></label>
     </div>
     <div id="hfMindBundlePlaceholder"></div>
-    <div class="settings-version">v1.26.34</div>
+    <div class="settings-version">v1.26.35</div>
     <button class="settings-close" id="hfMindSettingsClose">Done</button>
   </div>
 </div>
@@ -1837,7 +1838,7 @@
       <label class="toggle"><input type="checkbox" id="hfCollShuffleInputs" /><span class="toggle-slider"></span></label>
     </div>
     <div id="hfCollBundlePlaceholder"></div>
-    <div class="settings-version">v1.26.34</div>
+    <div class="settings-version">v1.26.35</div>
     <button class="settings-close" id="hfCollSettingsClose">Done</button>
   </div>
 </div>
@@ -1949,8 +1950,12 @@
   <div class="settings-screen-topbar">
     <button class="topbar-btn" id="homeSettingsBackBtn">←</button>
   </div>
-  <div class="settings-screen-title">Developer Settings</div>
+  <div class="settings-screen-title">Settings</div>
   <div class="settings-screen-body">
+    <div class="settings-row">
+      <label>Dark mode (Ember)</label>
+      <label class="toggle"><input type="checkbox" id="devDarkModeToggle" /><span class="toggle-slider"></span></label>
+    </div>
     <div class="settings-row">
       <label>Your data — backup</label>
       <button id="exportDataBtn" style="font-size:13px; color:#2c7a4b; background:#edf7f1; border:1px solid #b2dfcc; border-radius:8px; padding:6px 12px; cursor:pointer;">Export</button>
@@ -1958,6 +1963,15 @@
     <div class="settings-row">
       <label>Your data — restore</label>
       <button id="importDataBtn" style="font-size:13px; color:#2c5a7a; background:#eef4f9; border:1px solid #b8d2e6; border-radius:8px; padding:6px 12px; cursor:pointer;">Import</button>
+    </div>
+    <div class="settings-row">
+      <label>Intro tour</label>
+      <button id="replayOnboardingBtn" style="font-size:13px; color:#2c5a7a; background:#eef4f9; border:1px solid #b8d2e6; border-radius:8px; padding:6px 12px; cursor:pointer;">Replay</button>
+    </div>
+
+    <div id="devSection" style="display:none;">
+    <div class="settings-row" style="margin-top:10px;">
+      <label style="font-weight:700;">Developer</label>
     </div>
     <div class="settings-row">
       <label>Feedback mode</label>
@@ -1982,10 +1996,6 @@
     <div class="settings-row">
       <label style="font-size:13px; color:#888;">Export all ratings as JSON</label>
       <button id="feedbackExportBtn" style="font-size:13px; color:#555; background:#f0f0f0; border:1px solid #ddd; border-radius:8px; padding:6px 12px; cursor:pointer;">Export</button>
-    </div>
-    <div class="settings-row">
-      <label>Dark mode (Ember)</label>
-      <label class="toggle"><input type="checkbox" id="devDarkModeToggle" /><span class="toggle-slider"></span></label>
     </div>
     <div class="settings-row" style="flex-direction:column; align-items:flex-start; gap:10px;">
       <label style="font-weight:700; font-size:15px;">Simulate access level</label>
@@ -2012,14 +2022,15 @@
       <button id="resetFirstRunBtn" style="font-size:13px; color:#c0392b; background:#fdf0ee; border:1px solid #f5c6c2; border-radius:8px; padding:6px 12px; cursor:pointer;">Reset</button>
     </div>
     <div class="settings-row">
-      <label>Onboarding</label>
-      <button id="replayOnboardingBtn" style="font-size:13px; color:#2c5a7a; background:#eef4f9; border:1px solid #b8d2e6; border-radius:8px; padding:6px 12px; cursor:pointer;">Replay now</button>
-    </div>
-    <div class="settings-row">
       <label>Pack tags</label>
       <button id="exportTagsBtn" style="font-size:13px; color:#2c7a4b; background:#edf7f1; border:1px solid #b2dfcc; border-radius:8px; padding:6px 12px; cursor:pointer;">Export JSON</button>
     </div>
-    <div class="settings-version">v1.26.34</div>
+    <div class="settings-row">
+      <label>Hide developer settings</label>
+      <button id="hideDevBtn" style="font-size:13px; color:#555; background:#f0f0f0; border:1px solid #ddd; border-radius:8px; padding:6px 12px; cursor:pointer;">Hide</button>
+    </div>
+    </div><!-- /devSection -->
+    <div class="settings-version" id="homeSettingsVersion">v1.26.35</div>
     <button class="settings-close" id="devSettingsDoneBtn">Done</button>
   </div>
 </div>
@@ -2091,19 +2102,19 @@
   </button>
 </div>
 
-<script src="js/data.js?v=12634"></script>
-<script src="js/tagsData.js?v=12634"></script>
-<script src="js/programsData.js?v=12634"></script>
-<script src="js/challengesData.js?v=12634"></script>
-<script src="js/mindsetData.js?v=12634"></script>
-<script src="js/multiStepData.js?v=12634"></script>
-<script src="js/memorizeData.js?v=12634"></script>
-<script src="js/mode-engine.js?v=12634"></script>
-<script src="js/app-core.js?v=12634"></script>
-<script src="js/app-modes.js?v=12634"></script>
-<script src="js/app-handsfree.js?v=12634"></script>
-<script src="js/app-system.js?v=12634"></script>
-<script src="js/app-ui.js?v=12634"></script>
+<script src="js/data.js?v=12635"></script>
+<script src="js/tagsData.js?v=12635"></script>
+<script src="js/programsData.js?v=12635"></script>
+<script src="js/challengesData.js?v=12635"></script>
+<script src="js/mindsetData.js?v=12635"></script>
+<script src="js/multiStepData.js?v=12635"></script>
+<script src="js/memorizeData.js?v=12635"></script>
+<script src="js/mode-engine.js?v=12635"></script>
+<script src="js/app-core.js?v=12635"></script>
+<script src="js/app-modes.js?v=12635"></script>
+<script src="js/app-handsfree.js?v=12635"></script>
+<script src="js/app-system.js?v=12635"></script>
+<script src="js/app-ui.js?v=12635"></script>
 
 
 <!-- CHECKPOINT SCREEN -->
