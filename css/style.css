@@ -3154,8 +3154,10 @@ body.feedback-mode    .al-bar { display: none !important; }
 .ob-option--selected {
   border-color: var(--ds-acc, #F2622A);
   background: var(--ds-acc-soft, rgba(242, 98, 42, 0.10));
-  font-weight: 600;
 }
+/* Bold only on full-width (vertical) options — on wrapping chips a weight
+   change alters the chip width and reflows the whole row. */
+.ob-options:not(.ob-options--chips) .ob-option--selected { font-weight: 600; }
 
 .ob-how { display: flex; flex-direction: column; gap: 14px; text-align: left; margin: 4px 0; }
 .ob-how-row { display: flex; gap: 12px; align-items: flex-start; }
