@@ -1045,16 +1045,23 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
     renderDashStreak();
   }
 
-  // Home-screen streak chip (v1.26.35): shows the current streak from the
-  // existing Progress streak system. Hidden when tracking is off or streak 0.
+  // Home-screen streak card (v1.26.37): sits at the bottom of the dashboard,
+  // after Recommended. Shows the current streak from the existing Progress
+  // streak system; hidden when tracking is off or the streak is 0.
   function renderDashStreak() {
-    const chip = document.getElementById('dashStreakChip');
-    if (!chip) return;
+    const sec = document.getElementById('dashStreakSection');
+    if (!sec) return;
     const s = getSettings();
     const cur = get(K.streakCur) || 0;
-    if (!s.enabled || cur < 1) { chip.style.display = 'none'; return; }
-    chip.style.display = '';
-    chip.textContent = '\u{1F525} ' + cur + ' day streak';
+    if (!s.enabled || cur < 1) { sec.style.display = 'none'; return; }
+    sec.style.display = '';
+    const cnt = document.getElementById('dashStreakCount');
+    const sub = document.getElementById('dashStreakSub');
+    if (cnt) cnt.textContent = cur + ' day streak';
+    const best = get(K.streakBest) || 0;
+    if (sub) sub.textContent = best > cur
+      ? 'Best: ' + best + ' days'
+      : 'Your best so far \u2014 keep it going!';
   }
   window._renderDashStreak = renderDashStreak;
   renderDashStreak();
