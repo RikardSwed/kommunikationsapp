@@ -7,10 +7,10 @@
   <meta name="mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="default" />
   <meta name="apple-mobile-web-app-title" content="Deckstack" />
-  <link rel="manifest" href="manifest.json?v=12632" />
+  <link rel="manifest" href="manifest.json?v=12633" />
   <title>Deckstack</title>
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="stylesheet" href="css/style.css?v=12632" />
+  <link rel="stylesheet" href="css/style.css?v=12633" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
 </head>
 <body>
@@ -19,6 +19,75 @@
 <div id="splashScreen">
   <div id="splashLogo">D</div>
   <div id="splashName">Deckstack</div>
+</div>
+
+<!-- ONBOARDING (first run only) -->
+<div id="onboardingScreen" style="display:none;">
+  <div class="ob-top">
+    <div class="ob-dots" id="obDots"></div>
+    <button class="ob-skip" id="obSkipBtn">Skip</button>
+  </div>
+
+  <!-- Step 1 — Welcome -->
+  <div class="ob-step" data-step="0">
+    <div class="ob-logo">D</div>
+    <h1 class="ob-title">Welcome to Deckstack</h1>
+    <p class="ob-text">You've read the books. You know the advice.<br><strong>Deckstack is where you practice it.</strong></p>
+    <p class="ob-text ob-text--dim">Communication strategies you rehearse like flashcards — so they're actually there when a real conversation needs them.</p>
+  </div>
+
+  <!-- Step 2 — Habit question -->
+  <div class="ob-step" data-step="1" style="display:none;">
+    <h2 class="ob-title">Be honest —</h2>
+    <p class="ob-text">How often do you read great advice&hellip; and then never get to use it?</p>
+    <div class="ob-options" data-key="habit" data-type="single">
+      <button class="ob-option" data-val="always">All the time</button>
+      <button class="ob-option" data-val="sometimes">Sometimes</button>
+      <button class="ob-option" data-val="new">I'm new to this</button>
+    </div>
+    <p class="ob-text ob-text--dim ob-reassure" style="visibility:hidden;">That's exactly the gap Deckstack closes: knowing &rarr; doing.</p>
+  </div>
+
+  <!-- Step 3 — Interests -->
+  <div class="ob-step" data-step="2" style="display:none;">
+    <h2 class="ob-title">What would you like to get better at?</h2>
+    <p class="ob-text ob-text--dim">Pick as many as you like.</p>
+    <div class="ob-options ob-options--chips" data-key="interests" data-type="multi">
+      <button class="ob-option" data-val="boundaries">Setting boundaries</button>
+      <button class="ob-option" data-val="difficult">Difficult conversations</button>
+      <button class="ob-option" data-val="humour">Humour &amp; banter</button>
+      <button class="ob-option" data-val="feedback">Giving &amp; receiving feedback</button>
+      <button class="ob-option" data-val="depth">Deeper conversations</button>
+      <button class="ob-option" data-val="listening">Really listening</button>
+      <button class="ob-option" data-val="influence">Influence &amp; leadership</button>
+      <button class="ob-option" data-val="storytelling">Storytelling &amp; presenting</button>
+    </div>
+  </div>
+
+  <!-- Step 4 — Training style -->
+  <div class="ob-step" data-step="3" style="display:none;">
+    <h2 class="ob-title">How do you like to train?</h2>
+    <div class="ob-options" data-key="style" data-type="single">
+      <button class="ob-option" data-val="cards">Short, focused card sessions</button>
+      <button class="ob-option" data-val="handsfree">Handsfree — while walking or doing chores</button>
+      <button class="ob-option" data-val="both">Both</button>
+    </div>
+  </div>
+
+  <!-- Step 5 — How it works -->
+  <div class="ob-step" data-step="4" style="display:none;">
+    <h2 class="ob-title">Here's the idea</h2>
+    <div class="ob-how">
+      <div class="ob-how-row"><span class="ob-how-num">1</span><p>Pick a strategy &mdash; like <em>The Broken Record</em> or <em>Negative Inquiry</em>.</p></div>
+      <div class="ob-how-row"><span class="ob-how-num">2</span><p>A card shows you a real situation. Pause. <strong>Visualize how you'd respond.</strong></p></div>
+      <div class="ob-how-row"><span class="ob-how-num">3</span><p>Flip the card for a strong example &mdash; then make it your own.</p></div>
+    </div>
+    <p class="ob-text ob-text--dim">A few cards a day, and the strategies start showing up in real conversations.</p>
+  </div>
+
+  <div class="ob-bottom">
+    <button class="ob-next" id="obNextBtn">Continue</button>
+  </div>
 </div>
 
 <div class="dashboard-screen" id="dashboardScreen">
@@ -260,7 +329,7 @@
         <button id="progResetBtn" class="prog-reset-btn">Reset all progress data…</button>
       </div>
     </div>
-    <div class="settings-version">v1.26.32</div>
+    <div class="settings-version">v1.26.33</div>
     <button class="settings-close" id="progressSettingsClose">Done</button>
   </div>
 </div>
@@ -1258,7 +1327,7 @@
       <label>Progress bar</label>
       <label class="toggle"><input type="checkbox" id="showProgressBar" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.26.32</div>
+    <div class="settings-version">v1.26.33</div>
     <button class="settings-close" id="settingsClose">Done</button>
   </div>
 </div>
@@ -1348,7 +1417,7 @@
       <label class="toggle"><input type="checkbox" id="hfShuffleInputs" /><span class="toggle-slider"></span></label>
     </div>
     <div id="hfBundlePlaceholder"></div>
-    <div class="settings-version">v1.26.32</div>
+    <div class="settings-version">v1.26.33</div>
     <button class="settings-close" id="hfSettingsClose">Done</button>
   </div>
 </div>
@@ -1434,7 +1503,7 @@
       <label class="toggle"><input type="checkbox" id="hfMemShuffleInputs" /><span class="toggle-slider"></span></label>
     </div>
     <div id="hfMemBundlePlaceholder"></div>
-    <div class="settings-version">v1.26.32</div>
+    <div class="settings-version">v1.26.33</div>
     <button class="settings-close" id="hfMemSettingsClose">Done</button>
   </div>
 </div>
@@ -1520,7 +1589,7 @@
       <label class="toggle"><input type="checkbox" id="hfChallShuffleInputs" /><span class="toggle-slider"></span></label>
     </div>
     <div id="hfChallBundlePlaceholder"></div>
-    <div class="settings-version">v1.26.32</div>
+    <div class="settings-version">v1.26.33</div>
     <button class="settings-close" id="hfChallSettingsClose">Done</button>
   </div>
 </div>
@@ -1595,7 +1664,7 @@
       <label class="toggle"><input type="checkbox" id="hfFlowShuffleInputs" /><span class="toggle-slider"></span></label>
     </div>
     <div id="hfFlowBundlePlaceholder"></div>
-    <div class="settings-version">v1.26.32</div>
+    <div class="settings-version">v1.26.33</div>
     <button class="settings-close" id="hfFlowSettingsClose">Done</button>
   </div>
 </div>
@@ -1681,7 +1750,7 @@
       <label class="toggle"><input type="checkbox" id="hfMindShuffleInputs" /><span class="toggle-slider"></span></label>
     </div>
     <div id="hfMindBundlePlaceholder"></div>
-    <div class="settings-version">v1.26.32</div>
+    <div class="settings-version">v1.26.33</div>
     <button class="settings-close" id="hfMindSettingsClose">Done</button>
   </div>
 </div>
@@ -1767,7 +1836,7 @@
       <label class="toggle"><input type="checkbox" id="hfCollShuffleInputs" /><span class="toggle-slider"></span></label>
     </div>
     <div id="hfCollBundlePlaceholder"></div>
-    <div class="settings-version">v1.26.32</div>
+    <div class="settings-version">v1.26.33</div>
     <button class="settings-close" id="hfCollSettingsClose">Done</button>
   </div>
 </div>
@@ -1930,14 +1999,18 @@
       <button id="clearCodesBtn" style="font-size:13px; color:#c0392b; background:#fdf0ee; border:1px solid #f5c6c2; border-radius:8px; padding:6px 12px; cursor:pointer;">Clear</button>
     </div>
     <div class="settings-row">
-      <label>First-run state (favorites, continue, tap hint)</label>
+      <label>First-run state (favorites, continue, tap hint, onboarding)</label>
       <button id="resetFirstRunBtn" style="font-size:13px; color:#c0392b; background:#fdf0ee; border:1px solid #f5c6c2; border-radius:8px; padding:6px 12px; cursor:pointer;">Reset</button>
+    </div>
+    <div class="settings-row">
+      <label>Onboarding</label>
+      <button id="replayOnboardingBtn" style="font-size:13px; color:#2c5a7a; background:#eef4f9; border:1px solid #b8d2e6; border-radius:8px; padding:6px 12px; cursor:pointer;">Replay now</button>
     </div>
     <div class="settings-row">
       <label>Pack tags</label>
       <button id="exportTagsBtn" style="font-size:13px; color:#2c7a4b; background:#edf7f1; border:1px solid #b2dfcc; border-radius:8px; padding:6px 12px; cursor:pointer;">Export JSON</button>
     </div>
-    <div class="settings-version">v1.26.32</div>
+    <div class="settings-version">v1.26.33</div>
     <button class="settings-close" id="devSettingsDoneBtn">Done</button>
   </div>
 </div>
@@ -2009,19 +2082,19 @@
   </button>
 </div>
 
-<script src="js/data.js?v=12632"></script>
-<script src="js/tagsData.js?v=12632"></script>
-<script src="js/programsData.js?v=12632"></script>
-<script src="js/challengesData.js?v=12632"></script>
-<script src="js/mindsetData.js?v=12632"></script>
-<script src="js/multiStepData.js?v=12632"></script>
-<script src="js/memorizeData.js?v=12632"></script>
-<script src="js/mode-engine.js?v=12632"></script>
-<script src="js/app-core.js?v=12632"></script>
-<script src="js/app-modes.js?v=12632"></script>
-<script src="js/app-handsfree.js?v=12632"></script>
-<script src="js/app-system.js?v=12632"></script>
-<script src="js/app-ui.js?v=12632"></script>
+<script src="js/data.js?v=12633"></script>
+<script src="js/tagsData.js?v=12633"></script>
+<script src="js/programsData.js?v=12633"></script>
+<script src="js/challengesData.js?v=12633"></script>
+<script src="js/mindsetData.js?v=12633"></script>
+<script src="js/multiStepData.js?v=12633"></script>
+<script src="js/memorizeData.js?v=12633"></script>
+<script src="js/mode-engine.js?v=12633"></script>
+<script src="js/app-core.js?v=12633"></script>
+<script src="js/app-modes.js?v=12633"></script>
+<script src="js/app-handsfree.js?v=12633"></script>
+<script src="js/app-system.js?v=12633"></script>
+<script src="js/app-ui.js?v=12633"></script>
 
 
 <!-- CHECKPOINT SCREEN -->
