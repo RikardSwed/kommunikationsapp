@@ -965,11 +965,21 @@ if (clearCodesBtn) clearCodesBtn.addEventListener('click', () => {
 
 const resetFirstRunBtn = document.getElementById('resetFirstRunBtn');
 if (resetFirstRunBtn) resetFirstRunBtn.addEventListener('click', () => {
-  ['fav_packs', 'dash_last_pack', 'ds_last_modes', 'ds_tap_hint_count'].forEach(k => localStorage.removeItem(k));
+  ['fav_packs', 'dash_last_pack', 'ds_last_modes', 'ds_tap_hint_count',
+   'ds_onboarding_done', 'ds_onboarding'].forEach(k => localStorage.removeItem(k));
   if (window._favRenderTab)  window._favRenderTab();
   if (window._favRenderDash) window._favRenderDash();
   if (window.renderContinueCard) window.renderContinueCard();
-  if (window.showToast) showToast('Favorites, continue and tap hint reset.');
+  if (window.showToast) showToast('Favorites, continue, tap hint and onboarding reset.');
+});
+
+// Replay onboarding immediately: clear the flag and restart the app so the
+// full first-run experience (splash -> onboarding) runs again.
+const replayOnboardingBtn = document.getElementById('replayOnboardingBtn');
+if (replayOnboardingBtn) replayOnboardingBtn.addEventListener('click', () => {
+  localStorage.removeItem('ds_onboarding_done');
+  localStorage.removeItem('ds_onboarding');
+  location.reload();
 });
 
 // Export pack tags as JSON. Shown in a copyable modal rather than as a
@@ -1253,4 +1263,97 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
   // Init
   tagMode = localStorage.getItem('tagMode') === 'true';
   applyTagMode();
+})();
+
+// ─── ONBOARDING (v1.26.33) ────────────────────────────────────────────────
+// First-run intro shown once, revealed as the splash fades. Steps: welcome,
+// three quick questions (habit / interests / training style) and a short
+// how-it-works. Answers are stored in ds_onboarding for future
+// personalisation; ds_onboarding_done gates the whole flow.
+(function initOnboarding() {
+  const DONE_KEY = 'ds_onboarding_done';
+  const DATA_KEY = 'ds_onboarding';
+  const screen = document.getElementById('onboardingScreen');
+  if (!screen) return;
+  if (localStorage.getItem(DONE_KEY)) return;   // already seen
+
+  const steps   = Array.from(screen.querySelectorAll('.ob-step'));
+  const dotsEl  = document.getElementById('obDots');
+  const nextBtn = document.getElementById('obNextBtn');
+  const skipBtn = document.getElementById('obSkipBtn');
+  let step = 0;
+  const answers = {};
+
+  // Build progress dots
+  dotsEl.innerHTML = steps.map((_, i) =>
+    '<span class="ob-dot' + (i === 0 ? ' ob-dot--active' : '') + '"></span>').join('');
+  const dots = Array.from(dotsEl.children);
+
+  // A step is "answerable" if it contains an .ob-options block. Single-select
+  // steps require a pick before Continue; multi-select can be skipped (0 picks
+  // is a valid answer).
+  function stepOptions(i) { return steps[i].querySelector('.ob-options'); }
+  function requiresPick(i) {
+    const opts = stepOptions(i);
+    return opts && opts.dataset.type === 'single';
+  }
+  function hasPick(i) {
+    const opts = stepOptions(i);
+    return opts && !!opts.querySelector('.ob-option--selected');
+  }
+
+  function updateNext() {
+    nextBtn.disabled = requiresPick(step) && !hasPick(step);
+    nextBtn.textContent = (step === steps.length - 1) ? 'Start training' : 'Continue';
+  }
+
+  function showStep(i) {
+    steps.forEach((s, j) => { s.style.display = j === i ? 'flex' : 'none'; });
+    dots.forEach((d, j) => d.classList.toggle('ob-dot--active', j === i));
+    step = i;
+    updateNext();
+  }
+
+  // Option selection (event delegation per options block)
+  screen.querySelectorAll('.ob-options').forEach(opts => {
+    const multi = opts.dataset.type === 'multi';
+    opts.addEventListener('click', e => {
+      const btn = e.target.closest('.ob-option');
+      if (!btn) return;
+      if (multi) {
+        btn.classList.toggle('ob-option--selected');
+        answers[opts.dataset.key] = Array.from(opts.querySelectorAll('.ob-option--selected'))
+          .map(b => b.dataset.val);
+      } else {
+        opts.querySelectorAll('.ob-option').forEach(b => b.classList.remove('ob-option--selected'));
+        btn.classList.add('ob-option--selected');
+        answers[opts.dataset.key] = btn.dataset.val;
+        // Habit step: reveal the reassurance line once a choice is made
+        const reassure = opts.parentNode.querySelector('.ob-reassure');
+        if (reassure) reassure.style.visibility = 'visible';
+      }
+      updateNext();
+    });
+  });
+
+  function finish(skipped) {
+    answers.skipped = !!skipped;
+    answers.completedAt = new Date().toISOString();
+    try { localStorage.setItem(DATA_KEY, JSON.stringify(answers)); } catch (e) {}
+    localStorage.setItem(DONE_KEY, 'true');
+    screen.classList.add('ob-leaving');
+    setTimeout(() => { screen.style.display = 'none'; }, 450);
+  }
+
+  nextBtn.addEventListener('click', () => {
+    if (nextBtn.disabled) return;
+    if (step < steps.length - 1) showStep(step + 1);
+    else finish(false);
+  });
+  skipBtn.addEventListener('click', () => finish(true));
+
+  // Reveal under the splash: the splash (z 9999) fades out on its own
+  // schedule; the onboarding simply sits beneath it from the start.
+  screen.style.display = 'flex';
+  showStep(0);
 })();
