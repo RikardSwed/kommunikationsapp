@@ -719,19 +719,20 @@ body.pb-enabled .divider::after {
 .hf-hint-row {
   display: flex;
   align-items: center;
-  padding: 0 20px 8px;
-  gap: 8px;
+  justify-content: center;
+  padding: 4px 20px 10px;
+  gap: 10px;
 }
 
 .hf-transport-group {
   display: flex;
-  gap: 4px;
-  flex-shrink: 0;
+  gap: 10px;
+  align-items: center;
 }
 
 .hf-transport-btn {
-  width: 38px;
-  height: 38px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   border: none;
   background: var(--ds-topbar-btn);
@@ -739,7 +740,6 @@ body.pb-enabled .divider::after {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 16px;
   color: var(--ds-acc);
   box-shadow: 0 1px 4px var(--ds-shadow);
   touch-action: manipulation;
@@ -748,9 +748,20 @@ body.pb-enabled .divider::after {
 }
 .hf-transport-btn:active { transform: scale(0.93); }
 
+/* Uppgift 9 — play/pause button slightly larger */
+.hf-play-btn {
+  width: 48px;
+  height: 48px;
+  box-shadow: 0 2px 6px var(--ds-shadow);
+}
+
+/* Outer skip buttons (prev/next group) slightly smaller/subtler */
 .hf-skip-btn {
-  font-size: 14px;
-  color: #888;
+  width: 36px;
+  height: 36px;
+  color: var(--ds-txt2);
+  box-shadow: none;
+  background: none;
 }
 
 /* ─── SETTINGS EXTRAS ────────────────────────────────────────────────────── */
@@ -2602,11 +2613,12 @@ body.feedback-mode    .al-bar { display: none !important; }
 }
 .dash-welcome-row .dash-welcome-text { margin-bottom: 0; }
 .dash-welcome-logo {
-  width: 30px;
-  height: 30px;
-  border-radius: 7px;
+  width: 54px;
+  height: 54px;
+  border-radius: 12px;
   opacity: 0.42;
   flex-shrink: 0;
+  margin-left: auto;
 }
 .dash-hero .dash-welcome-sub {
   font-size: 15px;
