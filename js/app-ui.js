@@ -123,6 +123,7 @@ function showTab(tab) {
   // Continue card mirrors the training position (list 7 #1) — re-render it
   // with fresh data every time the dashboard becomes visible.
   if (tab === 'dashboard' && window.renderContinueCard) window.renderContinueCard();
+  if (tab === 'dashboard' && window._renderDashStreak) window._renderDashStreak();
 }
 
 document.querySelectorAll('.nav-tab').forEach(btn => {
@@ -1041,7 +1042,22 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
     const best = Math.max(cur, get(K.streakBest) || 0);
     set(K.streakCur,  cur);
     set(K.streakBest, best);
+    renderDashStreak();
   }
+
+  // Home-screen streak chip (v1.26.35): shows the current streak from the
+  // existing Progress streak system. Hidden when tracking is off or streak 0.
+  function renderDashStreak() {
+    const chip = document.getElementById('dashStreakChip');
+    if (!chip) return;
+    const s = getSettings();
+    const cur = get(K.streakCur) || 0;
+    if (!s.enabled || cur < 1) { chip.style.display = 'none'; return; }
+    chip.style.display = '';
+    chip.textContent = '\u{1F525} ' + cur + ' day streak';
+  }
+  window._renderDashStreak = renderDashStreak;
+  renderDashStreak();
 
   // ─ Render ────────────────────────────────────────────────────────────────
   function renderProgress() {

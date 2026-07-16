@@ -973,6 +973,42 @@ if (resetFirstRunBtn) resetFirstRunBtn.addEventListener('click', () => {
   if (window.showToast) showToast('Favorites, continue, tap hint and onboarding reset.');
 });
 
+// ─── DEVELOPER SETTINGS UNLOCK (v1.26.35) ──────────────────────────────
+// The gear menu is the USER settings screen. Developer rows live in
+// #devSection, hidden until the version number is tapped 7 times (the classic
+// Android build-number gesture). Persisted in ds_dev_unlocked; the "Hide
+// developer settings" row inside the section reverses it.
+(function initDevUnlock() {
+  const KEY = 'ds_dev_unlocked';
+  const sec = document.getElementById('devSection');
+  const ver = document.getElementById('homeSettingsVersion');
+  if (!sec || !ver) return;
+  const apply = on => { sec.style.display = on ? '' : 'none'; };
+  apply(localStorage.getItem(KEY) === 'true');
+  let taps = 0, timer = null;
+  const onTap = () => {
+    if (localStorage.getItem(KEY) === 'true') return;
+    taps++;
+    clearTimeout(timer);
+    timer = setTimeout(() => { taps = 0; }, 1500);
+    if (taps >= 7) {
+      localStorage.setItem(KEY, 'true');
+      apply(true);
+      taps = 0;
+      if (window.showToast) showToast('Developer settings unlocked.');
+    } else if (taps >= 4 && window.showToast) {
+      showToast((7 - taps) + ' taps from developer settings\u2026');
+    }
+  };
+  ver.addEventListener('click', onTap);
+  const hideBtn = document.getElementById('hideDevBtn');
+  if (hideBtn) hideBtn.addEventListener('click', () => {
+    localStorage.removeItem(KEY);
+    apply(false);
+    if (window.showToast) showToast('Developer settings hidden.');
+  });
+})();
+
 // Replay onboarding immediately: clear the flag and restart the app so the
 // full first-run experience (splash -> onboarding) runs again.
 const replayOnboardingBtn = document.getElementById('replayOnboardingBtn');

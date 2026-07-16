@@ -629,7 +629,11 @@ const DS = (function () {
       const s = settings();
       const maxItems = s.maxItems === 'all' ? Infinity : parseInt(s.maxItems);
       const startGi = mode.gi, startIi = mode.ii;
-      const skipIntro = startIi > 0;
+      // Skip the strategy intro when mid-strategy OR when resuming a pause
+      // in the same strategy (v1.26.35) — pausing on the first card used to
+      // replay the whole intro, which felt like restarting from the top.
+      const skipIntro = startIi > 0 || mode.pausedInGroup === mode.gi;
+      mode.pausedInGroup = null;
 
       // Uppgift 10 — build shuffled play order
       const groupOrder = s.shuffleGroups ? shuffle(mode.groups.map((_, i) => i)) : mode.groups.map((_, i) => i);
@@ -709,6 +713,13 @@ const DS = (function () {
 
     function stop() {
       mode.abort = true; mode.playing = false; mode.skipStep = false;
+      // Resume marker (v1.26.35): remember which strategy we paused in so
+      // the next play() skips the intro and continues where we left off.
+      mode.pausedInGroup = mode.gi;
+      // Release a pending pause-delay BEFORE clearing timeouts — otherwise
+      // the play coroutine stays suspended on that promise forever and its
+      // cleanup tail never runs.
+      if (mode.delayResolve) { mode.delayResolve(); mode.delayResolve = null; }
       speechSynthesis.cancel();
       clearTimeouts();
       updateButtons();
@@ -833,6 +844,7 @@ const DS = (function () {
       // Guide toggle reflects the persisted choice for THIS pack + mode
       if (guideToggleHf) guideToggleHf.checked = guideEnabled();
       hfInfoOpen = false; hideInfo();
+      mode.pausedInGroup = null;
       navToTraining(cfg.screenId);
       renderManual();
       updateButtons();
