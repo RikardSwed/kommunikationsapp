@@ -966,7 +966,7 @@ if (clearCodesBtn) clearCodesBtn.addEventListener('click', () => {
 const resetFirstRunBtn = document.getElementById('resetFirstRunBtn');
 if (resetFirstRunBtn) resetFirstRunBtn.addEventListener('click', () => {
   ['fav_packs', 'dash_last_pack', 'ds_last_modes', 'ds_tap_hint_count',
-   'ds_onboarding_done', 'ds_onboarding'].forEach(k => localStorage.removeItem(k));
+   'ds_onboarding_done', 'ds_onboarding', 'ds_reco_packs'].forEach(k => localStorage.removeItem(k));
   if (window._favRenderTab)  window._favRenderTab();
   if (window._favRenderDash) window._favRenderDash();
   if (window.renderContinueCard) window.renderContinueCard();
@@ -979,8 +979,87 @@ const replayOnboardingBtn = document.getElementById('replayOnboardingBtn');
 if (replayOnboardingBtn) replayOnboardingBtn.addEventListener('click', () => {
   localStorage.removeItem('ds_onboarding_done');
   localStorage.removeItem('ds_onboarding');
+  localStorage.removeItem('ds_reco_packs');
   location.reload();
 });
+
+// ─── DATA BACKUP: EXPORT / IMPORT (v1.26.34) ─────────────────────────────
+// Everything the app knows lives in localStorage (progress, favorites,
+// redeemed codes, settings, editor packs). Export shows it all as copyable
+// JSON; import overwrites from pasted JSON and reloads. Modal + clipboard is
+// used instead of file download, which installed iOS web apps don't support.
+(function initDataBackup() {
+  function buildModal(id, title, buttonLabel, readonly) {
+    let ov = document.getElementById(id);
+    if (ov) return ov;
+    ov = document.createElement('div');
+    ov.id = id;
+    ov.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,0.45);z-index:10000;display:none;align-items:center;justify-content:center;padding:20px;';
+    ov.innerHTML =
+      '<div style="background:var(--ds-card,#fff);border-radius:16px;max-width:520px;width:100%;max-height:80vh;display:flex;flex-direction:column;padding:16px;box-shadow:0 8px 32px rgba(0,0,0,0.25);">' +
+        '<div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;">' +
+          '<strong style="font-size:15px;">' + title + '</strong>' +
+          '<button data-close style="border:none;background:none;font-size:18px;cursor:pointer;padding:4px 8px;">\u2715</button>' +
+        '</div>' +
+        '<textarea data-ta ' + (readonly ? 'readonly ' : '') + 'spellcheck="false" placeholder="' + (readonly ? '' : 'Paste your exported Deckstack data here...') + '" style="flex:1;min-height:220px;font-family:ui-monospace,Menlo,monospace;font-size:12px;border:1px solid var(--ds-border,#ddd);border-radius:10px;padding:10px;resize:none;-webkit-user-select:text;user-select:text;"></textarea>' +
+        '<button data-action style="margin-top:12px;font-size:14px;font-weight:600;color:#fff;background:#2c7a4b;border:none;border-radius:10px;padding:10px;cursor:pointer;">' + buttonLabel + '</button>' +
+      '</div>';
+    document.body.appendChild(ov);
+    ov.addEventListener('click', e => { if (e.target === ov) ov.style.display = 'none'; });
+    ov.querySelector('[data-close]').addEventListener('click', () => { ov.style.display = 'none'; });
+    return ov;
+  }
+
+  const exportBtn = document.getElementById('exportDataBtn');
+  if (exportBtn) exportBtn.addEventListener('click', () => {
+    const ov = buildModal('dataExportOverlay', 'Your Deckstack data', 'Copy to clipboard', true);
+    const dump = { _deckstack: true, version: typeof VERSION !== 'undefined' ? VERSION : '', exportedAt: new Date().toISOString(), data: {} };
+    for (let i = 0; i < localStorage.length; i++) {
+      const k = localStorage.key(i);
+      dump.data[k] = localStorage.getItem(k);
+    }
+    const ta = ov.querySelector('[data-ta]');
+    ta.value = JSON.stringify(dump, null, 2);
+    const copyBtn = ov.querySelector('[data-action]');
+    copyBtn.onclick = () => {
+      const done = () => { if (window.showToast) showToast('Copied - save it somewhere safe.'); };
+      const fallback = () => {
+        ta.focus(); ta.select();
+        try { document.execCommand('copy'); done(); }
+        catch (e) { if (window.showToast) showToast('Copy failed - select the text manually.'); }
+      };
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(ta.value).then(done).catch(fallback);
+      } else fallback();
+    };
+    ov.style.display = 'flex';
+  });
+
+  const importBtn = document.getElementById('importDataBtn');
+  if (importBtn) importBtn.addEventListener('click', () => {
+    const ov = buildModal('dataImportOverlay', 'Restore Deckstack data', 'Restore & reload', false);
+    const ta = ov.querySelector('[data-ta]');
+    ta.value = '';
+    const applyBtn = ov.querySelector('[data-action]');
+    applyBtn.onclick = () => {
+      let dump;
+      try { dump = JSON.parse(ta.value); } catch (e) {
+        if (window.showToast) showToast('Not valid JSON - paste the whole export.');
+        return;
+      }
+      if (!dump || dump._deckstack !== true || typeof dump.data !== 'object') {
+        if (window.showToast) showToast('This does not look like a Deckstack export.');
+        return;
+      }
+      if (!confirm('Restore this backup? Current data in the app will be overwritten.')) return;
+      Object.keys(dump.data).forEach(k => {
+        try { localStorage.setItem(k, dump.data[k]); } catch (e) {}
+      });
+      location.reload();
+    };
+    ov.style.display = 'flex';
+  });
+})();
 
 // Export pack tags as JSON. Shown in a copyable modal rather than as a
 // blob download — installed iOS/iPadOS web apps can't download files, which
@@ -1321,9 +1400,15 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
       const btn = e.target.closest('.ob-option');
       if (!btn) return;
       if (multi) {
-        btn.classList.toggle('ob-option--selected');
-        answers[opts.dataset.key] = Array.from(opts.querySelectorAll('.ob-option--selected'))
-          .map(b => b.dataset.val);
+        // Keep PICK order (not DOM order) — the first thing the user taps
+        // is treated as their top priority for favorites/recommendations.
+        const key = opts.dataset.key;
+        answers[key] = answers[key] || [];
+        if (btn.classList.toggle('ob-option--selected')) {
+          answers[key].push(btn.dataset.val);
+        } else {
+          answers[key] = answers[key].filter(v => v !== btn.dataset.val);
+        }
       } else {
         opts.querySelectorAll('.ob-option').forEach(b => b.classList.remove('ob-option--selected'));
         btn.classList.add('ob-option--selected');
@@ -1336,11 +1421,57 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
     });
   });
 
+  // Interest chip -> pack keys. Order inside each entry = priority.
+  const OB_PACK_MAP = {
+    starting:     ['startingconnecting'],
+    conversation: ['conversational'],
+    depth:        ['conversationaldepth'],
+    storytelling: ['storytelling'],
+    humour:       ['humour', 'teasing'],
+    listening:    ['listeningresponding'],
+    feedback:     ['criticism'],
+    boundaries:   ['assertive'],
+    influence:    ['influenceframing'],
+  };
+
+  // Turn the picked interests into an ordered list of {key, label} packs
+  // (labels resolved from the library DOM so they always match the data),
+  // then: store them for the Recommended list + Start-here card, and seed
+  // favorites if the user has none yet.
+  function personalize() {
+    const interests = answers.interests || [];
+    if (!interests.length) return;
+    const labelOf = {};
+    document.querySelectorAll('#libTabPacks .collection-card').forEach(c => {
+      if (c.dataset.key) labelOf[c.dataset.key] = c.dataset.label;
+    });
+    const packs = [];
+    interests.forEach(val => (OB_PACK_MAP[val] || []).forEach(key => {
+      if (labelOf[key] && !packs.some(p => p.key === key)) {
+        packs.push({ key, label: labelOf[key] });
+      }
+    }));
+    if (!packs.length) return;
+    try { localStorage.setItem('ds_reco_packs', JSON.stringify(packs)); } catch (e) {}
+    // Seed favorites (max 4) only if the user has none
+    try {
+      const fav = JSON.parse(localStorage.getItem('fav_packs') || '[]');
+      if (!fav.length) {
+        localStorage.setItem('fav_packs', JSON.stringify(packs.slice(0, 4)));
+        if (window._favRenderTab)  window._favRenderTab();
+        if (window._favRenderDash) window._favRenderDash();
+      }
+    } catch (e) {}
+    if (window._personalizeRecommended) window._personalizeRecommended();
+    if (window.renderContinueCard) window.renderContinueCard();
+  }
+
   function finish(skipped) {
     answers.skipped = !!skipped;
     answers.completedAt = new Date().toISOString();
     try { localStorage.setItem(DATA_KEY, JSON.stringify(answers)); } catch (e) {}
     localStorage.setItem(DONE_KEY, 'true');
+    if (!skipped) personalize();
     screen.classList.add('ob-leaving');
     setTimeout(() => { screen.style.display = 'none'; }, 450);
   }

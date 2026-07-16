@@ -283,8 +283,34 @@ document.querySelectorAll('.nav-tab').forEach(btn => {
   // ── Last pack render ──────────────────────────────────────────────────────
   function renderLastPack() {
     const last = getLastPack();
-    if (!lastPackSec || !last) { if (lastPackSec) lastPackSec.style.display = 'none'; return; }
+    if (!lastPackSec) return;
+    const secLabel = lastPackSec.querySelector('.dash-section-label');
+    if (!last) {
+      // Start here (v1.26.34): before any training has happened, point new
+      // users to ONE concrete pack picked from their onboarding interests.
+      // The moment they train anything, the Continue card takes over.
+      const sh = window._getStartHerePack ? window._getStartHerePack() : null;
+      if (!sh) { lastPackSec.style.display = 'none'; return; }
+      lastPackSec.style.display = '';
+      if (secLabel) secLabel.textContent = 'Start here';
+      lastPackCard.className = 'dash-continue-card';
+      lastPackCard.innerHTML = `
+        <div class="dash-continue-inner">
+          <div>
+            <div class="dash-continue-name">${sh.label}</div>
+            <div class="dash-continue-meta">Based on your goals \u2014 tap to begin</div>
+          </div>
+          <div class="dash-continue-arrow">\u203A</div>
+        </div>`;
+      let shSY = 0, shMv = false;
+      lastPackCard.ontouchstart = e => { shSY = e.touches[0].clientY; shMv = false; };
+      lastPackCard.ontouchmove  = e => { if (Math.abs(e.touches[0].clientY - shSY) > 8) shMv = true; };
+      lastPackCard.ontouchend   = () => { if (!shMv) showModeScreen(sh.key, sh.label); };
+      lastPackCard.onclick      = () => showModeScreen(sh.key, sh.label);
+      return;
+    }
     lastPackSec.style.display = '';
+    if (secLabel) secLabel.textContent = 'Continue';
     lastPackCard.className = 'dash-continue-card';
     lastPackCard.innerHTML = `
       <div class="dash-continue-inner">
@@ -453,6 +479,49 @@ document.querySelectorAll('.nav-tab').forEach(btn => {
   renderLastPack();
   // Exposed so dev tools (first-run reset) can refresh the continue card
   window.renderContinueCard = renderLastPack;
+
+  // ── Personalization from onboarding (v1.26.34) ───────────────────────
+  // ds_reco_packs (written when onboarding finishes) is an ordered list of
+  // {key, label}. The Recommended section shows the top 3 the user can
+  // access; the Start-here card uses the first accessible one.
+  function _recoPacks() {
+    try {
+      const packs = JSON.parse(localStorage.getItem('ds_reco_packs') || '[]');
+      return packs.filter(p => p && p.key && p.label &&
+        (!window.accessLevel || accessLevel.canAccess(p.key)));
+    } catch { return []; }
+  }
+  window._getStartHerePack = function () {
+    const packs = _recoPacks();
+    return packs.length ? packs[0] : null;
+  };
+  function personalizeRecommended() {
+    const sec = document.getElementById('dashRecommendedSection');
+    if (!sec) return;
+    const packs = _recoPacks().slice(0, 3);
+    if (!packs.length) return;   // no onboarding picks -> keep static defaults
+    const label = sec.querySelector('.dash-section-label');
+    sec.innerHTML = '';
+    if (label) { label.textContent = 'Picked for you'; sec.appendChild(label); }
+    packs.forEach(p => {
+      const card = document.createElement('div');
+      card.className = 'collection-card';
+      card.dataset.key = p.key;
+      card.dataset.label = p.label;
+      card.innerHTML = '<div><div class="collection-name">' + p.label + '</div>' +
+        '<div class="collection-meta">From your onboarding picks</div></div>' +
+        '<div class="collection-arrow">\u203A</div>';
+      let rSY = 0, rMv = false;
+      card.ontouchstart = e => { rSY = e.touches[0].clientY; rMv = false; };
+      card.ontouchmove  = e => { if (Math.abs(e.touches[0].clientY - rSY) > 8) rMv = true; };
+      card.ontouchend   = () => { if (!rMv) showModeScreen(p.key, p.label); };
+      card.onclick      = () => showModeScreen(p.key, p.label);
+      sec.appendChild(card);
+    });
+    renderLastPack();   // refresh the Start-here card alongside
+  }
+  window._personalizeRecommended = personalizeRecommended;
+  personalizeRecommended();
 
   // Recommended cards
   document.querySelectorAll('#dashRecommendedSection .collection-card').forEach(card => {
