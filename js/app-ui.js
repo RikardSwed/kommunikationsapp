@@ -1485,7 +1485,7 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
 
   // ── List view (variant A) ────────────────────────────────────
   function renderList(container, folders) {
-    let html = '<div class="tab-info">Your own training structure</div>';
+    let html = folders.length ? '<div class="tab-info">Your own training structure</div>' : '';
     if (!folders.length) {
       html += '<div class="fol-empty">'
         + '<div class="fol-empty-icon">&#x1F4C1;</div>'
