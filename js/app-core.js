@@ -114,9 +114,9 @@ function navToTraining(id) {
           hint.textContent = '\u2191  Tap the name to learn more  \u2191';
           document.body.appendChild(hint);
         }
-        // Place hint below the title element
+        // Place hint well below the title element
         const rect = titleEl.getBoundingClientRect();
-        hint.style.top = (rect.bottom + 18) + 'px';
+        hint.style.top = (rect.bottom + 32) + 'px';
 
         // Arrows flanking the title element itself
         const arrowId = 'ds-tap-arrows';
@@ -127,17 +127,17 @@ function navToTraining(id) {
           arrows.style.cssText = [
             'position:fixed','pointer-events:none',
             'opacity:0','transition:opacity 0.4s ease','z-index:500',
-            'display:flex','align-items:center','gap:6px',
             'font-size:13px','color:var(--ds-txt3)'
           ].join(';');
           document.body.appendChild(arrows);
         }
         const titleRect = titleEl.getBoundingClientRect();
-        arrows.innerHTML = '\u2192 \u2190'; // \u2192 \u2190
-        arrows.style.top  = (titleRect.top + titleRect.height / 2 - 10) + 'px';
-        arrows.style.left = titleRect.left + 'px';
-        arrows.style.width = titleRect.width + 'px';
-        arrows.style.justifyContent = 'space-between';
+        const midY = titleRect.top + titleRect.height / 2;
+        // Left arrow: just to the left of the title
+        // Right arrow: just to the right
+        arrows.innerHTML =
+          '<span style="position:fixed;top:' + (midY - 9) + 'px;left:' + (titleRect.left - 18) + 'px;">\u2192</span>' +
+          '<span style="position:fixed;top:' + (midY - 9) + 'px;left:' + (titleRect.right + 4) + 'px;">\u2190</span>';
 
         hint.style.opacity = '1';
         arrows.style.opacity = '1';
