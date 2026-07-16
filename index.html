@@ -2,10 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="Deckstack" />
+  <link rel="manifest" href="manifest.json?v=12631" />
   <title>Deckstack</title>
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="stylesheet" href="css/style.css?v=12630" />
+  <link rel="stylesheet" href="css/style.css?v=12631" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
 </head>
 <body>
@@ -255,7 +260,7 @@
         <button id="progResetBtn" class="prog-reset-btn">Reset all progress data…</button>
       </div>
     </div>
-    <div class="settings-version">v1.26.30</div>
+    <div class="settings-version">v1.26.31</div>
     <button class="settings-close" id="progressSettingsClose">Done</button>
   </div>
 </div>
@@ -1062,9 +1067,9 @@
   </div>
   <div class="hf-hint-row">
     <div class="hf-transport-group">
-      <button class="hf-transport-btn hf-skip-btn" id="hfPrevStepBtn" aria-label="Previous strategy" disabled><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="19 20 9 12 19 4 19 20"/><line x1="5" y1="19" x2="5" y2="5"/></svg></button>
+      <button class="hf-transport-btn hf-skip-btn" id="hfPrevStepBtn" aria-label="Previous strategy"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="19 20 9 12 19 4 19 20"/><line x1="5" y1="19" x2="5" y2="5"/></svg></button>
       <button class="hf-transport-btn hf-play-btn" id="hfPlayBtn" aria-label="Play"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg></button>
-      <button class="hf-transport-btn hf-skip-btn" id="hfNextStepBtn" aria-label="Next strategy" disabled><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="5 4 15 12 5 20 5 4"/><line x1="19" y1="5" x2="19" y2="19"/></svg></button>
+      <button class="hf-transport-btn hf-skip-btn" id="hfNextStepBtn" aria-label="Next strategy"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="5 4 15 12 5 20 5 4"/><line x1="19" y1="5" x2="19" y2="19"/></svg></button>
     </div>
   </div>
 
@@ -1093,9 +1098,9 @@
   </div>
   <div class="hf-hint-row">
     <div class="hf-transport-group">
-      <button class="hf-transport-btn hf-skip-btn" id="hfMemPrevStepBtn" aria-label="Previous strategy" disabled><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="19 20 9 12 19 4 19 20"/><line x1="5" y1="19" x2="5" y2="5"/></svg></button>
+      <button class="hf-transport-btn hf-skip-btn" id="hfMemPrevStepBtn" aria-label="Previous strategy"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="19 20 9 12 19 4 19 20"/><line x1="5" y1="19" x2="5" y2="5"/></svg></button>
       <button class="hf-transport-btn hf-play-btn" id="hfMemPlayBtn" aria-label="Play"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg></button>
-      <button class="hf-transport-btn hf-skip-btn" id="hfMemNextStepBtn" aria-label="Next strategy" disabled><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="5 4 15 12 5 20 5 4"/><line x1="19" y1="5" x2="19" y2="19"/></svg></button>
+      <button class="hf-transport-btn hf-skip-btn" id="hfMemNextStepBtn" aria-label="Next strategy"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="5 4 15 12 5 20 5 4"/><line x1="19" y1="5" x2="19" y2="19"/></svg></button>
     </div>
   </div>
 
@@ -1124,9 +1129,9 @@
   </div>
   <div class="hf-hint-row">
     <div class="hf-transport-group">
-      <button class="hf-transport-btn hf-skip-btn" id="hfChallPrevStepBtn" aria-label="Previous strategy" disabled><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="19 20 9 12 19 4 19 20"/><line x1="5" y1="19" x2="5" y2="5"/></svg></button>
+      <button class="hf-transport-btn hf-skip-btn" id="hfChallPrevStepBtn" aria-label="Previous strategy"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="19 20 9 12 19 4 19 20"/><line x1="5" y1="19" x2="5" y2="5"/></svg></button>
       <button class="hf-transport-btn hf-play-btn" id="hfChallPlayBtn" aria-label="Play"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg></button>
-      <button class="hf-transport-btn hf-skip-btn" id="hfChallNextStepBtn" aria-label="Next strategy" disabled><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="5 4 15 12 5 20 5 4"/><line x1="19" y1="5" x2="19" y2="19"/></svg></button>
+      <button class="hf-transport-btn hf-skip-btn" id="hfChallNextStepBtn" aria-label="Next strategy"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="5 4 15 12 5 20 5 4"/><line x1="19" y1="5" x2="19" y2="19"/></svg></button>
     </div>
   </div>
 
@@ -1155,9 +1160,9 @@
   </div>
   <div class="hf-hint-row">
     <div class="hf-transport-group">
-      <button class="hf-transport-btn hf-skip-btn" id="hfFlowPrevStepBtn" aria-label="Previous strategy" disabled><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="19 20 9 12 19 4 19 20"/><line x1="5" y1="19" x2="5" y2="5"/></svg></button>
+      <button class="hf-transport-btn hf-skip-btn" id="hfFlowPrevStepBtn" aria-label="Previous strategy"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="19 20 9 12 19 4 19 20"/><line x1="5" y1="19" x2="5" y2="5"/></svg></button>
       <button class="hf-transport-btn hf-play-btn" id="hfFlowPlayBtn" aria-label="Play"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg></button>
-      <button class="hf-transport-btn hf-skip-btn" id="hfFlowNextStepBtn" aria-label="Next strategy" disabled><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="5 4 15 12 5 20 5 4"/><line x1="19" y1="5" x2="19" y2="19"/></svg></button>
+      <button class="hf-transport-btn hf-skip-btn" id="hfFlowNextStepBtn" aria-label="Next strategy"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="5 4 15 12 5 20 5 4"/><line x1="19" y1="5" x2="19" y2="19"/></svg></button>
     </div>
   </div>
 
@@ -1186,9 +1191,9 @@
   </div>
   <div class="hf-hint-row">
     <div class="hf-transport-group">
-      <button class="hf-transport-btn hf-skip-btn" id="hfMindPrevStepBtn" aria-label="Previous strategy" disabled><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="19 20 9 12 19 4 19 20"/><line x1="5" y1="19" x2="5" y2="5"/></svg></button>
+      <button class="hf-transport-btn hf-skip-btn" id="hfMindPrevStepBtn" aria-label="Previous strategy"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="19 20 9 12 19 4 19 20"/><line x1="5" y1="19" x2="5" y2="5"/></svg></button>
       <button class="hf-transport-btn hf-play-btn" id="hfMindPlayBtn" aria-label="Play"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg></button>
-      <button class="hf-transport-btn hf-skip-btn" id="hfMindNextStepBtn" aria-label="Next strategy" disabled><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="5 4 15 12 5 20 5 4"/><line x1="19" y1="5" x2="19" y2="19"/></svg></button>
+      <button class="hf-transport-btn hf-skip-btn" id="hfMindNextStepBtn" aria-label="Next strategy"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="5 4 15 12 5 20 5 4"/><line x1="19" y1="5" x2="19" y2="19"/></svg></button>
     </div>
   </div>
 
@@ -1217,9 +1222,9 @@
   </div>
   <div class="hf-hint-row">
     <div class="hf-transport-group">
-      <button class="hf-transport-btn hf-skip-btn" id="hfCollPrevStepBtn" aria-label="Previous strategy" disabled><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="19 20 9 12 19 4 19 20"/><line x1="5" y1="19" x2="5" y2="5"/></svg></button>
+      <button class="hf-transport-btn hf-skip-btn" id="hfCollPrevStepBtn" aria-label="Previous strategy"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="19 20 9 12 19 4 19 20"/><line x1="5" y1="19" x2="5" y2="5"/></svg></button>
       <button class="hf-transport-btn hf-play-btn" id="hfCollPlayBtn" aria-label="Play"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg></button>
-      <button class="hf-transport-btn hf-skip-btn" id="hfCollNextStepBtn" aria-label="Next strategy" disabled><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="5 4 15 12 5 20 5 4"/><line x1="19" y1="5" x2="19" y2="19"/></svg></button>
+      <button class="hf-transport-btn hf-skip-btn" id="hfCollNextStepBtn" aria-label="Next strategy"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="5 4 15 12 5 20 5 4"/><line x1="19" y1="5" x2="19" y2="19"/></svg></button>
     </div>
   </div>
 
@@ -1253,7 +1258,7 @@
       <label>Progress bar</label>
       <label class="toggle"><input type="checkbox" id="showProgressBar" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.26.30</div>
+    <div class="settings-version">v1.26.31</div>
     <button class="settings-close" id="settingsClose">Done</button>
   </div>
 </div>
@@ -1343,7 +1348,7 @@
       <label class="toggle"><input type="checkbox" id="hfShuffleInputs" /><span class="toggle-slider"></span></label>
     </div>
     <div id="hfBundlePlaceholder"></div>
-    <div class="settings-version">v1.26.30</div>
+    <div class="settings-version">v1.26.31</div>
     <button class="settings-close" id="hfSettingsClose">Done</button>
   </div>
 </div>
@@ -1429,7 +1434,7 @@
       <label class="toggle"><input type="checkbox" id="hfMemShuffleInputs" /><span class="toggle-slider"></span></label>
     </div>
     <div id="hfMemBundlePlaceholder"></div>
-    <div class="settings-version">v1.26.30</div>
+    <div class="settings-version">v1.26.31</div>
     <button class="settings-close" id="hfMemSettingsClose">Done</button>
   </div>
 </div>
@@ -1515,7 +1520,7 @@
       <label class="toggle"><input type="checkbox" id="hfChallShuffleInputs" /><span class="toggle-slider"></span></label>
     </div>
     <div id="hfChallBundlePlaceholder"></div>
-    <div class="settings-version">v1.26.30</div>
+    <div class="settings-version">v1.26.31</div>
     <button class="settings-close" id="hfChallSettingsClose">Done</button>
   </div>
 </div>
@@ -1590,7 +1595,7 @@
       <label class="toggle"><input type="checkbox" id="hfFlowShuffleInputs" /><span class="toggle-slider"></span></label>
     </div>
     <div id="hfFlowBundlePlaceholder"></div>
-    <div class="settings-version">v1.26.30</div>
+    <div class="settings-version">v1.26.31</div>
     <button class="settings-close" id="hfFlowSettingsClose">Done</button>
   </div>
 </div>
@@ -1676,7 +1681,7 @@
       <label class="toggle"><input type="checkbox" id="hfMindShuffleInputs" /><span class="toggle-slider"></span></label>
     </div>
     <div id="hfMindBundlePlaceholder"></div>
-    <div class="settings-version">v1.26.30</div>
+    <div class="settings-version">v1.26.31</div>
     <button class="settings-close" id="hfMindSettingsClose">Done</button>
   </div>
 </div>
@@ -1762,7 +1767,7 @@
       <label class="toggle"><input type="checkbox" id="hfCollShuffleInputs" /><span class="toggle-slider"></span></label>
     </div>
     <div id="hfCollBundlePlaceholder"></div>
-    <div class="settings-version">v1.26.30</div>
+    <div class="settings-version">v1.26.31</div>
     <button class="settings-close" id="hfCollSettingsClose">Done</button>
   </div>
 </div>
@@ -1932,7 +1937,7 @@
       <label>Pack tags</label>
       <button id="exportTagsBtn" style="font-size:13px; color:#2c7a4b; background:#edf7f1; border:1px solid #b2dfcc; border-radius:8px; padding:6px 12px; cursor:pointer;">Export JSON</button>
     </div>
-    <div class="settings-version">v1.26.30</div>
+    <div class="settings-version">v1.26.31</div>
     <button class="settings-close" id="devSettingsDoneBtn">Done</button>
   </div>
 </div>
@@ -2004,19 +2009,19 @@
   </button>
 </div>
 
-<script src="js/data.js?v=12630"></script>
-<script src="js/tagsData.js?v=12630"></script>
-<script src="js/programsData.js?v=12630"></script>
-<script src="js/challengesData.js?v=12630"></script>
-<script src="js/mindsetData.js?v=12630"></script>
-<script src="js/multiStepData.js?v=12630"></script>
-<script src="js/memorizeData.js?v=12630"></script>
-<script src="js/mode-engine.js?v=12630"></script>
-<script src="js/app-core.js?v=12630"></script>
-<script src="js/app-modes.js?v=12630"></script>
-<script src="js/app-handsfree.js?v=12630"></script>
-<script src="js/app-system.js?v=12630"></script>
-<script src="js/app-ui.js?v=12630"></script>
+<script src="js/data.js?v=12631"></script>
+<script src="js/tagsData.js?v=12631"></script>
+<script src="js/programsData.js?v=12631"></script>
+<script src="js/challengesData.js?v=12631"></script>
+<script src="js/mindsetData.js?v=12631"></script>
+<script src="js/multiStepData.js?v=12631"></script>
+<script src="js/memorizeData.js?v=12631"></script>
+<script src="js/mode-engine.js?v=12631"></script>
+<script src="js/app-core.js?v=12631"></script>
+<script src="js/app-modes.js?v=12631"></script>
+<script src="js/app-handsfree.js?v=12631"></script>
+<script src="js/app-system.js?v=12631"></script>
+<script src="js/app-ui.js?v=12631"></script>
 
 
 <!-- CHECKPOINT SCREEN -->
