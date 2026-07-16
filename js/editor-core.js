@@ -1,7 +1,7 @@
 // editor-core.js — Deckstack Pack Editor
 // Depends on: data.js, challengesData.js, mindsetData.js, multiStepData.js, memorizeData.js
 
-const EDITOR_VERSION = 'v1.7.1';
+const EDITOR_VERSION = 'v1.8.0';
 const STORAGE_KEY    = 'ds_editor_packs';
 const ACTIVE_KEY     = 'ds_editor_active';
 
@@ -225,6 +225,17 @@ function exportPack(pack) {
 function resolveGuides(modeData) {
   const gf = (modeData.guideFront || '').trim();
   const gb = (modeData.guideBack  || '').trim();
+  // Per-card guides (editor v1.8.0): a card keeps its own guideFront/guideBack
+  // only when non-empty — empty means "inherit the strategy default", so we
+  // strip empties from exports and the app falls back at render time.
+  const cleanItem = it => {
+    const eff = { ...it };
+    const f = (it.guideFront || '').trim();
+    const b = (it.guideBack  || '').trim();
+    if (f) eff.guideFront = f; else delete eff.guideFront;
+    if (b) eff.guideBack  = b; else delete eff.guideBack;
+    return eff;
+  };
   return {
     ...modeData,
     strategies: (modeData.strategies || []).map(s => {
@@ -233,6 +244,9 @@ function resolveGuides(modeData) {
       const b = (s.guideBack  || '').trim() || gb;
       if (f) eff.guideFront = f; else delete eff.guideFront;
       if (b) eff.guideBack  = b; else delete eff.guideBack;
+      if (eff.cards)  eff.cards  = eff.cards.map(cleanItem);
+      if (eff.inputs) eff.inputs = eff.inputs.map(inp =>
+        inp.steps ? { ...inp, steps: inp.steps.map(cleanItem) } : cleanItem(inp));
       return eff;
     }),
   };
@@ -309,6 +323,19 @@ function importFromText(text) {
 }
 
 // ── SHARED: parse a block of lines into a pack object ────────────────────────
+
+// Strip trailing "| Guide Front: ..." / "| Guide Back: ..." segments (either
+// order) from a card/step line and return {text, guideFront, guideBack}.
+function _extractCardGuides(line) {
+  let text = line, guideFront = '', guideBack = '';
+  let m;
+  while ((m = text.match(/\s*\|\s*Guide\s+(Front|Back):\s*([^|]*)\s*$/i))) {
+    if (m[1].toLowerCase() === 'front') guideFront = m[2].trim();
+    else                                guideBack  = m[2].trim();
+    text = text.slice(0, m.index);
+  }
+  return { text, guideFront, guideBack };
+}
 
 function _parsePack(lines) {
   let packName = 'Imported pack';
@@ -410,12 +437,16 @@ function _parsePack(lines) {
       continue;
     }
 
-    // - Step: Front | Back — adds a step to current scenario (sequences)
+    // - Step: Front | Back — adds a step to current scenario (sequences).
+    // Optional per-card guides: append | Guide Front: ... and/or | Guide Back: ...
     if (/^-\s+Step:\s*/i.test(line) && currentModeId === 'sequences' && currentStrat) {
       if (!currentScenario) newScenario();
-      const rest  = line.replace(/^-\s+Step:\s*/i,'');
-      const parts = rest.split(/\s*\|\s*/);
-      currentScenario.steps.push({ front: parts[0]?.trim() || '', back: parts[1]?.trim() || '' });
+      const gExt  = _extractCardGuides(line.replace(/^-\s+Step:\s*/i,''));
+      const parts = gExt.text.split(/\s*\|\s*/);
+      const step  = { front: parts[0]?.trim() || '', back: parts[1]?.trim() || '' };
+      if (gExt.guideFront) step.guideFront = gExt.guideFront;
+      if (gExt.guideBack)  step.guideBack  = gExt.guideBack;
+      currentScenario.steps.push(step);
       continue;
     }
 
@@ -426,12 +457,17 @@ function _parsePack(lines) {
 
     if (inExplanation && currentStrat && !line.startsWith('-')) { explanationLines.push(line); continue; }
 
-    // Standard card (non-sequences modes)
-    const cardMatch = line.match(/^-\s+(?:Situation|Front|Prompt|Q):\s*(.+?)\s*\|\s*(?:Response|Back|A):\s*(.+)/i);
+    // Standard card (non-sequences modes).
+    // Optional per-card guides: append | Guide Front: ... and/or | Guide Back: ...
+    const cardExt = _extractCardGuides(line);
+    const cardMatch = cardExt.text.match(/^-\s+(?:Situation|Front|Prompt|Q):\s*(.+?)\s*\|\s*(?:Response|Back|A):\s*(.+)/i);
     if (cardMatch && currentStrat && currentModeId !== 'sequences') {
       const q = cardMatch[1].trim(), a = cardMatch[2].trim();
-      if (currentModeId === 'memorize') currentStrat.cards.push({ q, a, bundle: currentBundle });
-      else                              currentStrat.inputs.push({ q, a, bundle: currentBundle });
+      const card = { q, a, bundle: currentBundle };
+      if (cardExt.guideFront) card.guideFront = cardExt.guideFront;
+      if (cardExt.guideBack)  card.guideBack  = cardExt.guideBack;
+      if (currentModeId === 'memorize') currentStrat.cards.push(card);
+      else                              currentStrat.inputs.push(card);
     }
   }
   pushStrat();

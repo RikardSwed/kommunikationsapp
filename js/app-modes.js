@@ -81,7 +81,12 @@ function buildFlowSequence(combo) {
     : (combo.inputs || []);
   filtered.forEach(inp => {
     seq.push({ type: 'situation', front: '\u{1F4CD} ' + inp.situation, back: inp.situation });
-    (inp.steps || []).forEach(s => seq.push({ type: 'step', front: s.front, back: s.back }));
+    (inp.steps || []).forEach(s => seq.push({
+      type: 'step', front: s.front, back: s.back,
+      // Per-card guide text (v1.26.32) — carried through so the engine
+      // can override the strategy default for individual steps.
+      guideFront: s.guideFront, guideBack: s.guideBack,
+    }));
   });
   return seq;
 }

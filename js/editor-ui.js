@@ -5,6 +5,7 @@ let currentMode        = MODES[0].id;
 let currentStrat       = 0;
 let currentBundle      = 'free';
 let currentScenarioIdx = 0;
+let showCardGuides     = false;   // reveal per-card guide fields (v1.8.0)
 
 // ── INIT ──────────────────────────────────────────────────────────────────────
 document.addEventListener('DOMContentLoaded', () => {
@@ -854,6 +855,10 @@ function showSyntaxGuide() {
     '<li><code>**Explanation:**</code> — descriptive text explaining the strategy.</li>' +
     '<li><code>GUIDE FRONT: text</code> / <code>GUIDE BACK: text</code> — mode-level guide text, placed after the <code>MODE:</code> line. Shown above every card front/back in that mode (and read aloud in handsfree).</li>' +
     '<li><code>- Guide Front: text</code> / <code>- Guide Back: text</code> — exception for one strategy, placed after its <code>## Strategy:</code> line. Overrides the mode default for that strategy only.</li>' +
+    '<li>Per-card exception — append to any card or step line (either or both, any order):<br>' +
+    '&nbsp;&nbsp;<code>- Situation: X | Response: Y | Guide Front: text | Guide Back: text</code><br>' +
+    '&nbsp;&nbsp;<code>- Step: label | explanation | Guide Front: text</code><br>' +
+    'Overrides the strategy guide for that single card. Cards without it inherit the strategy default.</li>' +
     '<li><code>BUNDLE: free</code> — base tier, seen by all users. Convention: 2 inputs per strategy.</li>' +
     '<li><code>BUNDLE: pro</code> — extra pro tier, shown together with free for Pro users. Convention: 2 more per strategy (4 total).</li>' +
     '<li><code>BUNDLE: workplace</code> or <code>BUNDLE: domestic</code> — opt-in bundles activated manually. Convention: 3 inputs per strategy each.</li>' +
@@ -903,7 +908,7 @@ function showSyntaxGuide() {
     '',
     'BUNDLE: free',
     '- Situation: Someone keeps asking after you already said no. | Response: \"I understand, but my answer is still no.\"',
-    '- Situation: A colleague dismisses your concern again. | Response: \"I hear you — and I do want to come back to this.\"',
+    '- Situation: A colleague dismisses your concern again. | Response: \"I hear you — and I do want to come back to this.\" | Guide Front: This one is about staying calm under repetition.',
     '- Situation: A salesperson pushes after you declined. | Response: \"That does not work for me.\" — calm, no smile, no apology.',
     '- Situation: Someone tries to argue you out of a decision. | Response: \"I have made my decision.\" — no explanation, no new arguments.',
     '- Situation: Someone escalates pressure when you decline. | Response: Hold the same tone as the pressure rises. That is exactly when the technique is being tested.',
@@ -1265,7 +1270,7 @@ GUIDE BACK: A possible response...
 - Guide Front: Exception shown for this strategy only.
 
 - Situation: Someone says X | Response: "You say Y."
-- Situation: Another trigger | Response: "Another answer."
+- Situation: Another trigger | Response: "Another answer." | Guide Front: Per-card exception (optional)
 
 ## Strategy: Next Strategy Name
 ...
@@ -1648,12 +1653,25 @@ function renderModeContent() {
           <span class="card-inherited-badge">Situation</span>
         </div>
 
-        ${(scenario.steps||[]).map((st, i) => `
+        <label class="hint-text" style="display:flex;align-items:center;gap:6px;margin:0 0 8px 0;cursor:pointer;user-select:none;">
+          <input type="checkbox" id="card-guides-toggle" ${showCardGuides ? 'checked' : ''} />
+          Card guides — per-step guide text; empty fields inherit the combo default
+        </label>
+        ${(scenario.steps||[]).map((st, i) => {
+          const seqInhF = (strat.guideFront || '').trim() || (modeData.guideFront || '').trim();
+          const seqInhB = (strat.guideBack  || '').trim() || (modeData.guideBack  || '').trim();
+          return `
         <div class="card-row" data-step="${i}">
           <textarea class="card-ta" data-step="${i}" data-field="front" rows="2" ${readOnly?'readonly':''} placeholder="Step ${i+1} — label…">${escHtml(st.front||'')}</textarea>
           <textarea class="card-ta" data-step="${i}" data-field="back" rows="2" ${readOnly?'readonly':''} placeholder="Step ${i+1} — explanation…">${escHtml(st.back||'')}</textarea>
           ${!readOnly ? `<button class="icon-btn danger step-del" data-step="${i}" title="Remove step">&#x2715;</button>` : '<span></span>'}
-        </div>`).join('')}
+        </div>${showCardGuides ? `
+        <div class="card-row card-row--guide" data-step="${i}">
+          <textarea class="card-ta card-ta--guide" data-step="${i}" data-field="guideFront" rows="1" ${readOnly?'readonly':''} placeholder="${escHtml(seqInhF ? 'Guide front — default: ' + seqInhF : 'Guide front (no default set)')}">${escHtml(st.guideFront||'')}</textarea>
+          <textarea class="card-ta card-ta--guide" data-step="${i}" data-field="guideBack" rows="1" ${readOnly?'readonly':''} placeholder="${escHtml(seqInhB ? 'Guide back — default: ' + seqInhB : 'Guide back (no default set)')}">${escHtml(st.guideBack||'')}</textarea>
+          <span></span>
+        </div>` : ''}`;
+        }).join('')}
 
         ${!readOnly ? `<button class="btn btn--ghost add-step-btn" style="width:100%;margin-top:8px;">+ Add step</button>` : ''}
       </div>`;
@@ -1692,6 +1710,11 @@ function renderModeContent() {
   };
   const items = getItems();
 
+  // Effective strategy-level guide defaults (what a card inherits when its
+  // own guide fields are left empty) — used as placeholders in the guide rows.
+  const inhF = (strat.guideFront || '').trim() || (modeData.guideFront || '').trim();
+  const inhB = (strat.guideBack  || '').trim() || (modeData.guideBack  || '').trim();
+
   html += `
     <div class="cards-section">
       <div class="cards-header">
@@ -1699,6 +1722,10 @@ function renderModeContent() {
         <span class="col-label">${backLabel}</span>
         <span></span>
       </div>
+      <label class="hint-text" style="display:flex;align-items:center;gap:6px;margin:0 0 8px 0;cursor:pointer;user-select:none;">
+        <input type="checkbox" id="card-guides-toggle" ${showCardGuides ? 'checked' : ''} />
+        Card guides — per-card guide text; empty fields inherit the ${mode.stratLabel.toLowerCase()} default
+      </label>
       ${items.map((item, i) => {
         const isFreeInPro = isPro && (item.bundle === 'free' || !item.bundle);
         const isLocked = readOnly || isFreeInPro;
@@ -1711,7 +1738,12 @@ function renderModeContent() {
             ? `<span class="card-inherited-badge" title="From Free bundle — edit in Free view">Free</span>`
             : !readOnly ? `<button class="icon-btn danger card-del" data-index="${i}" title="Remove">&#x2715;</button>` : '<span></span>'
           }
-        </div>`;
+        </div>${showCardGuides ? `
+        <div class="card-row card-row--guide" data-index="${i}">
+          <textarea class="card-ta card-ta--guide" data-field="guideFront" rows="1" ${isLocked ? 'readonly' : ''} placeholder="${escHtml(inhF ? 'Guide front — default: ' + inhF : 'Guide front (no default set)')}">${escHtml(item.guideFront||'')}</textarea>
+          <textarea class="card-ta card-ta--guide" data-field="guideBack" rows="1" ${isLocked ? 'readonly' : ''} placeholder="${escHtml(inhB ? 'Guide back — default: ' + inhB : 'Guide back (no default set)')}">${escHtml(item.guideBack||'')}</textarea>
+          <span></span>
+        </div>` : ''}`;
       }).join('')}
       ${!readOnly ? `<button class="btn btn--ghost add-card-btn" style="width:100%;margin-top:8px;">+ Add ${mode.cardLabel.toLowerCase()}</button>` : ''}
     </div>`;
@@ -1733,6 +1765,12 @@ function bindGuideFields(modeData, strat) {
   wire('mode-guide-back',   modeData, 'guideBack');
   wire('strat-guide-front', strat,    'guideFront');
   wire('strat-guide-back',  strat,    'guideBack');
+  // Per-card guides visibility toggle (v1.8.0) — onchange avoids stacking
+  const cgToggle = document.getElementById('card-guides-toggle');
+  if (cgToggle) cgToggle.onchange = () => {
+    showCardGuides = cgToggle.checked;
+    renderModeContent();
+  };
 }
 
 

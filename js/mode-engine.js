@@ -190,15 +190,18 @@ const DS = (function () {
       anchor.parentNode.insertBefore(el, anchor);
       return el;
     }
-    function renderGuide(g) {
+    function renderGuide(g, it) {
+      // Per-card guide text (v1.26.32): the card's own guideFront/guideBack
+      // wins when present; otherwise the strategy-level value applies
+      // (which the editor has already resolved against the mode default).
       const on = guideEnabled();
       const gf = guideElFor(els.front), gb = guideElFor(els.back);
       if (gf) {
-        const t = (on && g && g.guideFront) ? g.guideFront : '';
+        const t = on ? ((it && it.guideFront) || (g && g.guideFront) || '') : '';
         gf.textContent = t; gf.style.display = t ? '' : 'none';
       }
       if (gb) {
-        const t = (on && g && g.guideBack) ? g.guideBack : '';
+        const t = on ? ((it && it.guideBack) || (g && g.guideBack) || '') : '';
         gb.textContent = t; gb.style.display = t ? '' : 'none';
       }
     }
@@ -225,7 +228,7 @@ const DS = (function () {
       if (els.title)      els.title.textContent = cfg.groupTitle(g);
       if (els.front)      els.front.textContent = cfg.itemFront(it, g);
       if (els.back)       els.back.textContent  = cfg.itemBack(it, g);
-      renderGuide(g);
+      renderGuide(g, it);
       // Continue card mirrors the training progress bar (same formula as
       // pbUpdate: position / (total - 1)) — list 7 #1
       if (window.progSetPosition && typeof activeCollectionKey !== 'undefined') {
@@ -448,15 +451,16 @@ const DS = (function () {
       anchor.parentNode.insertBefore(el, anchor);
       return el;
     }
-    function renderGuide(g) {
+    function renderGuide(g, it) {
+      // Per-card guide text (v1.26.32) — same resolution as card modes.
       const on = guideEnabled();
       const gf = guideElFor(els.front), gb = guideElFor(els.back);
       if (gf) {
-        const t = (on && g && g.guideFront) ? g.guideFront : '';
+        const t = on ? ((it && it.guideFront) || (g && g.guideFront) || '') : '';
         gf.textContent = t; gf.style.display = t ? '' : 'none';
       }
       if (gb) {
-        const t = (on && g && g.guideBack) ? g.guideBack : '';
+        const t = on ? ((it && it.guideBack) || (g && g.guideBack) || '') : '';
         gb.textContent = t; gb.style.display = t ? '' : 'none';
       }
     }
@@ -464,7 +468,7 @@ const DS = (function () {
     if (guideToggleHf) guideToggleHf.addEventListener('change', () => {
       if (guideToggleHf.checked) localStorage.removeItem(guideKey());
       else localStorage.setItem(guideKey(), 'off');
-      renderGuide(group());
+      renderGuide(group(), mode._lastItem);
     });
 
     function settings() {
@@ -523,12 +527,13 @@ const DS = (function () {
     }
 
     // ── Display ────────────────────────────────────────────────────────────
-    function showCard(front, back, flipped) {
+    function showCard(front, back, flipped, it) {
       const g = group();
+      mode._lastItem = it || null;
       if (els.title) els.title.textContent = cfg.groupTitle(g);
       if (els.front) els.front.textContent = front;
       if (els.back)  els.back.textContent  = back;
-      renderGuide(g);
+      renderGuide(g, it);
       // Continue card mirrors the position in handsfree too (list 7 #1)
       if (window.progSetPosition && typeof activeCollectionKey !== 'undefined') {
         progSetPosition(activeCollectionKey,
@@ -669,18 +674,21 @@ const DS = (function () {
           const it = list[iOrder[ii2]];
           const front = cfg.itemFront(it, g);
           const back  = cfg.itemBack(it, g);
-          // Guide text is spoken as a lead-in to each side when enabled
-          const gFront = (s.guideText && g.guideFront) ? g.guideFront + ' ' : '';
-          const gBack  = (s.guideText && g.guideBack)  ? g.guideBack + ' '  : '';
+          // Guide text is spoken as a lead-in to each side when enabled.
+          // Per-card guide (v1.26.32) overrides the strategy default.
+          const effGF = (it && it.guideFront) || g.guideFront;
+          const effGB = (it && it.guideBack)  || g.guideBack;
+          const gFront = (s.guideText && effGF) ? effGF + ' ' : '';
+          const gBack  = (s.guideText && effGB) ? effGB + ' '  : '';
 
-          showCard(front, back, false);
+          showCard(front, back, false, it);
           await speak(gFront + front, s);
           if (mode.abort) break outer;
           if (!mode.skipStep) await delay(s.thinkPause * 1000);
           mode.skipStep = false;
 
           if (s.cardBack && speakBack(it)) {
-            showCard(front, back, true);
+            showCard(front, back, true, it);
             await speak(gBack + back, s);
             if (mode.abort) break outer;
             if (!mode.skipStep) await delay(s.genPause * 1000);
@@ -745,7 +753,7 @@ const DS = (function () {
       const g = group();
       if (!g) return;
       const it = items(g)[mode.ii];
-      showCard(cfg.itemFront(it, g), cfg.itemBack(it, g), false);
+      showCard(cfg.itemFront(it, g), cfg.itemBack(it, g), false, it);
       if (els.inner) els.inner.style.transition = 'none';
     }
 
