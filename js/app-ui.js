@@ -1485,7 +1485,7 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
 
   // ── List view (variant A) ────────────────────────────────────
   function renderList(container, folders) {
-    let html = '';
+    let html = '<div class="tab-info">Folders for your own training structure</div>';
     if (!folders.length) {
       html += '<div class="fol-empty">'
         + '<div class="fol-empty-icon">&#x1F4C1;</div>'
@@ -1798,7 +1798,7 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
     }
 
     container.className = 'library-tab-content';
-    let html = '<div class="tab-info">Programs are guided journeys — train through each section and pass its checkpoint to unlock the next.</div>'
+    let html = '<div class="tab-info">A program takes you through several packs in a set order. Train each section and pass its checkpoint to unlock the next.</div>'
       + '<div class="programs-list">';
 
     // Filter: hide Extended programs unless owned or complete

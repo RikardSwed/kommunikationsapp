@@ -5,7 +5,7 @@
 // (DS.createCardMode / DS.createHandsfreeMode) and are declared in
 // app-modes.js and app-handsfree.js.
 
-const VERSION = 'v1.26.29';
+const VERSION = 'v1.26.30';
 
 // Pack icon map — global so both dashboard and favorites can use it
 const PACK_ICONS = {
@@ -111,11 +111,11 @@ function navToTraining(id) {
             'opacity:0','transition:opacity 0.4s ease','z-index:500',
             'padding:4px 0'
           ].join(';');
-          hint.textContent = 'Tap the name to learn more';
+          hint.textContent = '\u2191  Tap the \u2192 name \u2190 to learn more  \u2191';
           document.body.appendChild(hint);
         }
         const rect = titleEl.getBoundingClientRect();
-        hint.style.top = (rect.bottom + 6) + 'px';
+        hint.style.top = (rect.bottom + 18) + 'px';
         hint.style.opacity = '1';
         setTimeout(() => { hint.style.opacity = '0'; }, 2500);
       }, 450); // wait for slide-in to finish

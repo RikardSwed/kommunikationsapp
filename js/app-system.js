@@ -972,6 +972,29 @@ if (resetFirstRunBtn) resetFirstRunBtn.addEventListener('click', () => {
   if (window.showToast) showToast('Favorites, continue and tap hint reset.');
 });
 
+// Uppgift 4 — Export pack tags to JSON
+const exportTagsBtn = document.getElementById('exportTagsBtn');
+if (exportTagsBtn) exportTagsBtn.addEventListener('click', () => {
+  try {
+    const allKeys = typeof packTags !== 'undefined' ? Object.keys(packTags) : [];
+    const result = {};
+    allKeys.forEach(key => {
+      result[key] = window.getTagsForKey ? window.getTagsForKey(key) : (packTags[key] || []);
+    });
+    const json = JSON.stringify(result, null, 2);
+    const blob = new Blob([json], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'deckstack-tags.json';
+    a.click();
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
+    if (window.showToast) showToast('Tags exported.');
+  } catch (e) {
+    if (window.showToast) showToast('Export failed: ' + e.message);
+  }
+});
+
 const clearExtendedBtn = document.getElementById('clearExtendedBtn');
 if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
   // Rensa purchases

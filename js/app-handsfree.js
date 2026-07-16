@@ -49,6 +49,7 @@ DS.createHandsfreeMode({
     title: 'hfStrategyName', front: 'hfInputText', back: 'hfAnswerText',
     prevGroupBtn: 'hfPrevStratBtn', nextGroupBtn: 'hfNextStratBtn',
     prevItemBtn: 'hfPrevInputBtn',  nextItemBtn: 'hfNextInputBtn',
+    counter: 'hfCounter', subCounter: 'hfSubCounter',
   },
   maxItemsId: 'hfMaxInputs',
   getGroups: () => DS.loadGroups(collections, activeCollectionKey, 'inputs'),
@@ -67,6 +68,7 @@ DS.createHandsfreeMode({
     title: 'hfMemStrategyName', front: 'hfMemQuestionText', back: 'hfMemAnswerText',
     prevGroupBtn: 'hfMemPrevStratBtn', nextGroupBtn: 'hfMemNextStratBtn',
     prevItemBtn: 'hfMemPrevCardBtn',   nextItemBtn: 'hfMemNextCardBtn',
+    counter: 'hfMemCounter', subCounter: 'hfMemSubCounter',
   },
   maxItemsId: 'hfMemMaxCards',
   getGroups: () => DS.loadGroups(memorizeCollections, activeCollectionKey, 'cards'),
@@ -90,6 +92,7 @@ DS.createHandsfreeMode({
     title: 'hfChallName', front: 'hfChallFrontText', back: 'hfChallBackText',
     prevGroupBtn: 'hfChallPrevBtn', nextGroupBtn: 'hfChallNextBtn',
     prevItemBtn: 'hfChallPrevInputBtn', nextItemBtn: 'hfChallNextInputBtn',
+    counter: 'hfChallCounter', subCounter: 'hfChallSubCounter',
   },
   maxItemsId: 'hfChallMaxInputs',
   getGroups: () => DS.loadGroups(challengesCollections, activeCollectionKey, 'inputs'),
@@ -108,6 +111,7 @@ DS.createHandsfreeMode({
     title: 'hfFlowComboName', front: 'hfFlowFrontText', back: 'hfFlowBackText',
     prevGroupBtn: 'hfFlowPrevComboBtn', nextGroupBtn: 'hfFlowNextComboBtn',
     prevItemBtn: 'hfFlowPrevCardBtn',   nextItemBtn: 'hfFlowNextCardBtn',
+    counter: 'hfFlowCounter', subCounter: 'hfFlowSubCounter',
   },
   maxItemsId: null,
   getGroups: () => multiStepCollections[activeCollectionKey] || [],
@@ -128,6 +132,7 @@ DS.createHandsfreeMode({
     title: 'hfMindName', front: 'hfMindFrontText', back: 'hfMindBackText',
     prevGroupBtn: 'hfMindPrevBtn', nextGroupBtn: 'hfMindNextBtn',
     prevItemBtn: 'hfMindPrevInputBtn', nextItemBtn: 'hfMindNextInputBtn',
+    counter: 'hfMindCounter', subCounter: 'hfMindSubCounter',
   },
   maxItemsId: 'hfMindMaxInputs',
   getGroups: () => DS.loadGroups(mindsetCollections, activeCollectionKey, 'inputs'),
@@ -146,6 +151,7 @@ DS.createHandsfreeMode({
     title: 'hfCollName', front: 'hfCollFrontText', back: 'hfCollBackText',
     prevGroupBtn: 'hfCollPrevBtn', nextGroupBtn: 'hfCollNextBtn',
     prevItemBtn: 'hfCollPrevInputBtn', nextItemBtn: 'hfCollNextInputBtn',
+    counter: 'hfCollCounter', subCounter: 'hfCollSubCounter',
   },
   maxItemsId: 'hfCollMaxInputs',
   // v1.26.26: Collections has its OWN data source (strategy combinations)
@@ -158,3 +164,22 @@ DS.createHandsfreeMode({
 
 // Apply saved counter visibility once at startup
 applyHfInputCounterVisibility();
+
+// ─── UPPGIFT 7 — Persist HF shuffle toggles ───────────────────────────────────
+(function persistHfShuffle() {
+  const prefixes = ['hf', 'hfMem', 'hfChall', 'hfFlow', 'hfMind', 'hfColl'];
+  const suffixes = ['ShuffleStrategies', 'ShuffleInputs'];
+  prefixes.forEach(p => {
+    suffixes.forEach(s => {
+      const id = p + s;
+      const el = document.getElementById(id);
+      if (!el) return;
+      const key = 'hfShuffle:' + id;
+      // Restore saved state
+      const saved = localStorage.getItem(key);
+      if (saved !== null) el.checked = saved === 'true';
+      // Save on change
+      el.addEventListener('change', () => localStorage.setItem(key, el.checked));
+    });
+  });
+})();
