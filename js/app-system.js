@@ -973,6 +973,19 @@ if (resetFirstRunBtn) resetFirstRunBtn.addEventListener('click', () => {
   if (window.showToast) showToast('Favorites, continue, tap hint and onboarding reset.');
 });
 
+// ─── ABOUT & PRIVACY (v1.26.36) ────────────────────────────────────────────
+(function initAbout() {
+  const btn     = document.getElementById('aboutBtn');
+  const overlay = document.getElementById('aboutOverlay');
+  const close   = document.getElementById('aboutClose');
+  const verEl   = document.getElementById('aboutVersion');
+  if (!btn || !overlay) return;
+  if (verEl && typeof VERSION !== 'undefined') verEl.textContent = VERSION;
+  btn.addEventListener('click', () => overlay.classList.add('open'));
+  if (close) close.addEventListener('click', () => overlay.classList.remove('open'));
+  overlay.addEventListener('click', e => { if (e.target === overlay) overlay.classList.remove('open'); });
+})();
+
 // ─── DEVELOPER SETTINGS UNLOCK (v1.26.35) ──────────────────────────────
 // The gear menu is the USER settings screen. Developer rows live in
 // #devSection, hidden until the version number is tapped 7 times (the classic
