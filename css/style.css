@@ -3060,3 +3060,132 @@ body.feedback-mode    .al-bar { display: none !important; }
 @media (min-width: 1024px) and (min-height: 500px) {
   :root { --ds-shell-w: 760px; }
 }
+
+/* ─── ONBOARDING (v1.26.33) ─────────────────────────────────────────────
+   First-run intro. Sits under the splash (z 9999) so it is revealed as the
+   splash fades. Uses the app's own palette vars for light/dark themes. */
+
+#onboardingScreen {
+  position: fixed;
+  inset: 0;
+  z-index: 9000;
+  background: var(--ds-bg);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 18px 24px calc(24px + env(safe-area-inset-bottom, 0px));
+}
+@media (min-width: 700px) and (min-height: 500px) {
+  #onboardingScreen { max-width: var(--ds-shell-w); }
+}
+
+.ob-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 32px;
+}
+.ob-dots { display: flex; gap: 6px; }
+.ob-dot {
+  width: 7px; height: 7px; border-radius: 50%;
+  background: var(--ds-border, #d8cfc4);
+  transition: background 0.25s ease, transform 0.25s ease;
+}
+.ob-dot--active { background: var(--ds-acc, #F2622A); transform: scale(1.25); }
+.ob-skip {
+  border: none; background: none; cursor: pointer;
+  font-size: 14px; color: var(--ds-txt3);
+  padding: 6px 4px;
+}
+
+.ob-step {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 14px;
+  animation: obFadeIn 0.35s ease;
+}
+@keyframes obFadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.ob-logo {
+  width: 72px; height: 72px;
+  margin: 0 auto 4px;
+  border-radius: 20px;
+  background: var(--ds-splash-bg, #1E1008);
+  color: var(--ds-splash-acc, #F2622A);
+  font-size: 40px; font-weight: 800;
+  display: flex; align-items: center; justify-content: center;
+}
+.ob-title { font-size: 24px; font-weight: 800; color: var(--ds-txt); margin: 0; }
+.ob-text  { font-size: 16px; line-height: 1.5; color: var(--ds-txt2); margin: 0; }
+.ob-text--dim { font-size: 14px; color: var(--ds-txt3); }
+
+.ob-options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 6px;
+}
+.ob-options--chips {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+.ob-option {
+  border: 1.5px solid var(--ds-border, #d8cfc4);
+  background: var(--ds-card, #fff);
+  color: var(--ds-txt);
+  border-radius: 14px;
+  padding: 13px 16px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: border-color 0.15s ease, background 0.15s ease, transform 0.1s ease;
+}
+.ob-option:active { transform: scale(0.98); }
+.ob-options--chips .ob-option { padding: 9px 14px; font-size: 14px; border-radius: 20px; }
+.ob-option--selected {
+  border-color: var(--ds-acc, #F2622A);
+  background: var(--ds-acc-soft, rgba(242, 98, 42, 0.10));
+  font-weight: 600;
+}
+
+.ob-how { display: flex; flex-direction: column; gap: 14px; text-align: left; margin: 4px 0; }
+.ob-how-row { display: flex; gap: 12px; align-items: flex-start; }
+.ob-how-row p { margin: 0; font-size: 15px; line-height: 1.45; color: var(--ds-txt2); }
+.ob-how-num {
+  flex-shrink: 0;
+  width: 26px; height: 26px; border-radius: 50%;
+  background: var(--ds-acc, #F2622A); color: #fff;
+  font-size: 14px; font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  margin-top: 1px;
+}
+
+.ob-bottom { padding-top: 12px; }
+.ob-next {
+  width: 100%;
+  border: none;
+  border-radius: 16px;
+  background: var(--ds-acc, #F2622A);
+  color: #fff;
+  font-size: 16px; font-weight: 700;
+  padding: 15px;
+  cursor: pointer;
+  transition: opacity 0.2s ease, transform 0.1s ease;
+}
+.ob-next:active { transform: scale(0.99); }
+.ob-next:disabled { opacity: 0.4; cursor: default; }
+
+#onboardingScreen.ob-leaving {
+  transition: opacity 0.4s ease;
+  opacity: 0;
+  pointer-events: none;
+}
