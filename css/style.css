@@ -3055,6 +3055,10 @@ body.feedback-mode    .al-bar { display: none !important; }
 
 /* ─── ABOUT & PRIVACY (v1.26.36) ───────────────────────────────────────
    Simple readable text panel reusing the settings overlay pattern. */
+/* The overlay must stack ABOVE the full-screen settings panel (z-index 700),
+   since it is opened from inside it — the shared .settings-overlay class only
+   has z-index 100 (v1.26.38 fix). */
+#aboutOverlay { z-index: 800; }
 .about-body p {
   font-size: 14px;
   line-height: 1.55;
