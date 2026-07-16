@@ -544,13 +544,16 @@ const DS = (function () {
       renderPb();
     }
 
+    const HF_PLAY_SVG  = '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>';
+    const HF_PAUSE_SVG = '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="8" y1="5" x2="8" y2="19"/><line x1="16" y1="5" x2="16" y2="19"/></svg>';
+
     function updateButtons() {
       if (!els.playBtn) return;
-      els.playBtn.textContent = mode.playing ? '\u23F9' : '\u25B6';
+      els.playBtn.innerHTML = mode.playing ? HF_PAUSE_SVG : HF_PLAY_SVG;
+      // PrevStep/NextStep are now also group nav buttons — keep enabled but dim when not playing
       [els.prevStep, els.nextStep].forEach(b => {
         if (!b) return;
-        b.disabled = !mode.playing;
-        b.style.opacity = mode.playing ? '1' : '0.35';
+        b.style.opacity = mode.playing ? '1' : '0.55';
       });
     }
 

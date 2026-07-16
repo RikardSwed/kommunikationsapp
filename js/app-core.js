@@ -111,13 +111,37 @@ function navToTraining(id) {
             'opacity:0','transition:opacity 0.4s ease','z-index:500',
             'padding:4px 0'
           ].join(';');
-          hint.textContent = '\u2191  Tap the \u2192 name \u2190 to learn more  \u2191';
+          hint.textContent = '\u2191  Tap the name to learn more  \u2191';
           document.body.appendChild(hint);
         }
+        // Place hint below the title element
         const rect = titleEl.getBoundingClientRect();
         hint.style.top = (rect.bottom + 18) + 'px';
+
+        // Arrows flanking the title element itself
+        const arrowId = 'ds-tap-arrows';
+        let arrows = document.getElementById(arrowId);
+        if (!arrows) {
+          arrows = document.createElement('div');
+          arrows.id = arrowId;
+          arrows.style.cssText = [
+            'position:fixed','pointer-events:none',
+            'opacity:0','transition:opacity 0.4s ease','z-index:500',
+            'display:flex','align-items:center','gap:6px',
+            'font-size:13px','color:var(--ds-txt3)'
+          ].join(';');
+          document.body.appendChild(arrows);
+        }
+        const titleRect = titleEl.getBoundingClientRect();
+        arrows.innerHTML = '\u2192 \u2190'; // \u2192 \u2190
+        arrows.style.top  = (titleRect.top + titleRect.height / 2 - 10) + 'px';
+        arrows.style.left = titleRect.left + 'px';
+        arrows.style.width = titleRect.width + 'px';
+        arrows.style.justifyContent = 'space-between';
+
         hint.style.opacity = '1';
-        setTimeout(() => { hint.style.opacity = '0'; }, 2500);
+        arrows.style.opacity = '1';
+        setTimeout(() => { hint.style.opacity = '0'; arrows.style.opacity = '0'; }, 2500);
       }, 450); // wait for slide-in to finish
     }
   } catch (e) {}

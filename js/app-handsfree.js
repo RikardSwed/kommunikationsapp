@@ -47,7 +47,7 @@ DS.createHandsfreeMode({
   prefix: 'hf',
   els: {
     title: 'hfStrategyName', front: 'hfInputText', back: 'hfAnswerText',
-    prevGroupBtn: 'hfPrevStratBtn', nextGroupBtn: 'hfNextStratBtn',
+    prevGroupBtn: 'hfPrevStepBtn', nextGroupBtn: 'hfNextStepBtn',
     prevItemBtn: 'hfPrevInputBtn',  nextItemBtn: 'hfNextInputBtn',
     counter: 'hfCounter', subCounter: 'hfSubCounter',
   },
@@ -66,7 +66,7 @@ DS.createHandsfreeMode({
   prefix: 'hfMem',
   els: {
     title: 'hfMemStrategyName', front: 'hfMemQuestionText', back: 'hfMemAnswerText',
-    prevGroupBtn: 'hfMemPrevStratBtn', nextGroupBtn: 'hfMemNextStratBtn',
+    prevGroupBtn: 'hfMemPrevStepBtn', nextGroupBtn: 'hfMemNextStepBtn',
     prevItemBtn: 'hfMemPrevCardBtn',   nextItemBtn: 'hfMemNextCardBtn',
     counter: 'hfMemCounter', subCounter: 'hfMemSubCounter',
   },
@@ -90,7 +90,7 @@ DS.createHandsfreeMode({
   prefix: 'hfChall',
   els: {
     title: 'hfChallName', front: 'hfChallFrontText', back: 'hfChallBackText',
-    prevGroupBtn: 'hfChallPrevBtn', nextGroupBtn: 'hfChallNextBtn',
+    prevGroupBtn: 'hfChallPrevStepBtn', nextGroupBtn: 'hfChallNextStepBtn',
     prevItemBtn: 'hfChallPrevInputBtn', nextItemBtn: 'hfChallNextInputBtn',
     counter: 'hfChallCounter', subCounter: 'hfChallSubCounter',
   },
@@ -109,7 +109,7 @@ DS.createHandsfreeMode({
   prefix: 'hfFlow',
   els: {
     title: 'hfFlowComboName', front: 'hfFlowFrontText', back: 'hfFlowBackText',
-    prevGroupBtn: 'hfFlowPrevComboBtn', nextGroupBtn: 'hfFlowNextComboBtn',
+    prevGroupBtn: 'hfFlowPrevStepBtn', nextGroupBtn: 'hfFlowNextStepBtn',
     prevItemBtn: 'hfFlowPrevCardBtn',   nextItemBtn: 'hfFlowNextCardBtn',
     counter: 'hfFlowCounter', subCounter: 'hfFlowSubCounter',
   },
@@ -130,7 +130,7 @@ DS.createHandsfreeMode({
   prefix: 'hfMind',
   els: {
     title: 'hfMindName', front: 'hfMindFrontText', back: 'hfMindBackText',
-    prevGroupBtn: 'hfMindPrevBtn', nextGroupBtn: 'hfMindNextBtn',
+    prevGroupBtn: 'hfMindPrevStepBtn', nextGroupBtn: 'hfMindNextStepBtn',
     prevItemBtn: 'hfMindPrevInputBtn', nextItemBtn: 'hfMindNextInputBtn',
     counter: 'hfMindCounter', subCounter: 'hfMindSubCounter',
   },
@@ -149,7 +149,7 @@ DS.createHandsfreeMode({
   prefix: 'hfColl',
   els: {
     title: 'hfCollName', front: 'hfCollFrontText', back: 'hfCollBackText',
-    prevGroupBtn: 'hfCollPrevBtn', nextGroupBtn: 'hfCollNextBtn',
+    prevGroupBtn: 'hfCollPrevStepBtn', nextGroupBtn: 'hfCollNextStepBtn',
     prevItemBtn: 'hfCollPrevInputBtn', nextItemBtn: 'hfCollNextInputBtn',
     counter: 'hfCollCounter', subCounter: 'hfCollSubCounter',
   },
