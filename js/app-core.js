@@ -5,7 +5,7 @@
 // (DS.createCardMode / DS.createHandsfreeMode) and are declared in
 // app-modes.js and app-handsfree.js.
 
-const VERSION = 'v1.26.30';
+const VERSION = 'v1.26.31';
 
 // Pack icon map — global so both dashboard and favorites can use it
 const PACK_ICONS = {
@@ -97,10 +97,10 @@ function navToTraining(id) {
       localStorage.setItem(TAP_HINT_KEY, count + 1);
       setTimeout(() => {
         const screen = document.getElementById(id);
-        if (!screen) return;
+        if (!screen || screen.style.display === 'none') return;
         const titleEl = screen.querySelector('[id$="StrategyName"],[id="strategyName"],[id="memStrategyName"]')
           || screen.querySelector('.card-title, .strat-title');
-        if (!titleEl) return;
+        if (!titleEl || !titleEl.textContent.trim()) return;
         let hint = document.getElementById('ds-tap-hint');
         if (!hint) {
           hint = document.createElement('div');
@@ -118,7 +118,9 @@ function navToTraining(id) {
         const rect = titleEl.getBoundingClientRect();
         hint.style.top = (rect.bottom + 32) + 'px';
 
-        // Arrows flanking the title element itself
+        // Arrows flanking the title TEXT (not the element, which is a
+        // full-width block — measuring it puts the arrows at the screen
+        // edges). A Range around the text nodes gives the real text box.
         const arrowId = 'ds-tap-arrows';
         let arrows = document.getElementById(arrowId);
         if (!arrows) {
@@ -127,27 +129,48 @@ function navToTraining(id) {
           arrows.style.cssText = [
             'position:fixed','pointer-events:none',
             'opacity:0','transition:opacity 0.4s ease','z-index:500',
-            'font-size:13px','color:var(--ds-txt3)'
+            'font-size:14px','color:var(--ds-txt3)','top:0','left:0'
           ].join(';');
           document.body.appendChild(arrows);
         }
-        const titleRect = titleEl.getBoundingClientRect();
-        const midY = titleRect.top + titleRect.height / 2;
-        // Left arrow: just to the left of the title
-        // Right arrow: just to the right
+        let textRect;
+        try {
+          const range = document.createRange();
+          range.selectNodeContents(titleEl);
+          textRect = range.getBoundingClientRect();
+        } catch (err) { textRect = titleEl.getBoundingClientRect(); }
+        const midY = textRect.top + textRect.height / 2;
         arrows.innerHTML =
-          '<span style="position:fixed;top:' + (midY - 9) + 'px;left:' + (titleRect.left - 18) + 'px;">\u2192</span>' +
-          '<span style="position:fixed;top:' + (midY - 9) + 'px;left:' + (titleRect.right + 4) + 'px;">\u2190</span>';
+          '<span style="position:fixed;top:' + (midY - 10) + 'px;left:' + (textRect.left - 22) + 'px;">\u2192</span>' +
+          '<span style="position:fixed;top:' + (midY - 10) + 'px;left:' + (textRect.right + 8) + 'px;">\u2190</span>';
 
+        // Restore fade transition in case hideTapHint(true) disabled it
+        hint.style.transition = 'opacity 0.4s ease';
+        arrows.style.transition = 'opacity 0.4s ease';
         hint.style.opacity = '1';
         arrows.style.opacity = '1';
-        setTimeout(() => { hint.style.opacity = '0'; arrows.style.opacity = '0'; }, 2500);
+        clearTimeout(hint._t);
+        hint._t = setTimeout(() => { hint.style.opacity = '0'; arrows.style.opacity = '0'; }, 2500);
       }, 450); // wait for slide-in to finish
     }
   } catch (e) {}
 }
 
+// Instantly remove the tap hint + arrows (used when leaving a training
+// screen so they never linger over the mode screen).
+function hideTapHint() {
+  ['ds-tap-hint', 'ds-tap-arrows'].forEach(hid => {
+    const el = document.getElementById(hid);
+    if (!el) return;
+    if (el._t) { clearTimeout(el._t); el._t = null; }
+    el.style.transition = 'none';
+    el.style.opacity = '0';
+  });
+}
+window.hideTapHint = hideTapHint;
+
 function navFromTraining(id) {
+  hideTapHint();
   window._returningFromTraining = true;
   if (window.progEndSession) progEndSession();
   // Reveal the mode screen underneath (no animation). The origin tab

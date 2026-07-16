@@ -972,24 +972,63 @@ if (resetFirstRunBtn) resetFirstRunBtn.addEventListener('click', () => {
   if (window.showToast) showToast('Favorites, continue and tap hint reset.');
 });
 
-// Uppgift 4 — Export pack tags to JSON
+// Export pack tags as JSON. Shown in a copyable modal rather than as a
+// blob download — installed iOS/iPadOS web apps can't download files, which
+// is why the previous <a download> approach silently did nothing there.
 const exportTagsBtn = document.getElementById('exportTagsBtn');
 if (exportTagsBtn) exportTagsBtn.addEventListener('click', () => {
   try {
-    const allKeys = typeof packTags !== 'undefined' ? Object.keys(packTags) : [];
+    // Union of base packTags keys and any user-edited keys (ds_tag_edits
+    // can hold keys that don't exist in tagsData.js, e.g. 'prog:...').
+    const keys = new Set(typeof packTags !== 'undefined' ? Object.keys(packTags) : []);
+    try {
+      const edits = JSON.parse(localStorage.getItem('ds_tag_edits')) || {};
+      Object.keys(edits).forEach(k => keys.add(k));
+    } catch (e2) {}
     const result = {};
-    allKeys.forEach(key => {
-      result[key] = window.getTagsForKey ? window.getTagsForKey(key) : (packTags[key] || []);
+    [...keys].sort().forEach(key => {
+      result[key] = window.getTagsForKey
+        ? window.getTagsForKey(key)
+        : ((typeof packTags !== 'undefined' && packTags[key]) || []);
     });
     const json = JSON.stringify(result, null, 2);
-    const blob = new Blob([json], { type: 'application/json' });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = 'deckstack-tags.json';
-    a.click();
-    setTimeout(() => URL.revokeObjectURL(url), 1000);
-    if (window.showToast) showToast('Tags exported.');
+
+    // Build (or reuse) the export modal
+    let ov = document.getElementById('tagExportOverlay');
+    if (!ov) {
+      ov = document.createElement('div');
+      ov.id = 'tagExportOverlay';
+      ov.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,0.45);z-index:10000;display:flex;align-items:center;justify-content:center;padding:20px;';
+      ov.innerHTML =
+        '<div style="background:var(--ds-card,#fff);border-radius:16px;max-width:520px;width:100%;max-height:80vh;display:flex;flex-direction:column;padding:16px;box-shadow:0 8px 32px rgba(0,0,0,0.25);">' +
+          '<div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;">' +
+            '<strong style="font-size:15px;">Pack tags — JSON</strong>' +
+            '<button id="tagExportClose" style="border:none;background:none;font-size:18px;cursor:pointer;padding:4px 8px;">\u2715</button>' +
+          '</div>' +
+          '<textarea id="tagExportText" readonly spellcheck="false" style="flex:1;min-height:220px;font-family:ui-monospace,Menlo,monospace;font-size:12px;border:1px solid var(--ds-border,#ddd);border-radius:10px;padding:10px;resize:none;-webkit-user-select:text;user-select:text;"></textarea>' +
+          '<button id="tagExportCopy" style="margin-top:12px;font-size:14px;font-weight:600;color:#fff;background:#2c7a4b;border:none;border-radius:10px;padding:10px;cursor:pointer;">Copy to clipboard</button>' +
+        '</div>';
+      document.body.appendChild(ov);
+      ov.addEventListener('click', e => { if (e.target === ov) ov.style.display = 'none'; });
+      ov.querySelector('#tagExportClose').addEventListener('click', () => { ov.style.display = 'none'; });
+      ov.querySelector('#tagExportCopy').addEventListener('click', () => {
+        const ta = ov.querySelector('#tagExportText');
+        const done = () => { if (window.showToast) showToast('Copied to clipboard.'); };
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(ta.value).then(done).catch(() => {
+            ta.focus(); ta.select();
+            try { document.execCommand('copy'); done(); }
+            catch (e3) { if (window.showToast) showToast('Copy failed — select the text manually.'); }
+          });
+        } else {
+          ta.focus(); ta.select();
+          try { document.execCommand('copy'); done(); }
+          catch (e3) { if (window.showToast) showToast('Copy failed — select the text manually.'); }
+        }
+      });
+    }
+    ov.querySelector('#tagExportText').value = json;
+    ov.style.display = 'flex';
   } catch (e) {
     if (window.showToast) showToast('Export failed: ' + e.message);
   }

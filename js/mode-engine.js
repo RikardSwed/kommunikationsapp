@@ -550,11 +550,16 @@ const DS = (function () {
     function updateButtons() {
       if (!els.playBtn) return;
       els.playBtn.innerHTML = mode.playing ? HF_PAUSE_SVG : HF_PLAY_SVG;
-      // PrevStep/NextStep are now also group nav buttons — keep enabled but dim when not playing
+      // PrevStep/NextStep work both during playback and as manual nav —
+      // always enabled, always full opacity.
       [els.prevStep, els.nextStep].forEach(b => {
         if (!b) return;
-        b.style.opacity = mode.playing ? '1' : '0.55';
+        b.disabled = false;
+        b.style.opacity = '1';
       });
+      // The info overlay's close button only exists outside playback;
+      // during playback the panel is read-along-scrollable but closes itself.
+      if (hfInfoClose) hfInfoClose.style.display = mode.playing ? 'none' : '';
     }
 
     const pbDivider = document.querySelector(`#${cfg.screenId} .divider`);
@@ -579,6 +584,29 @@ const DS = (function () {
       els.info.scrollTop = 0;
     }
 
+    // ── Manual info overlay (tap the strategy name, like card modes) ──────
+    const hfInfoClose = $(p + 'CardInfoClose');
+    let hfInfoOpen = false;
+    function openHfInfo() {
+      if (mode.playing) return;             // playback owns the panel
+      if (!els.info || !els.infoText) return;
+      if (hfInfoOpen) { closeHfInfo(); return; }
+      const g = group();
+      const desc = cfg.groupDescription ? cfg.groupDescription(g)
+                                        : (g && g.description);
+      hfInfoOpen = true;
+      showInfo(desc || 'No description available.');
+    }
+    function closeHfInfo() {
+      hfInfoOpen = false;
+      hideInfo();
+    }
+    if (els.title) els.title.addEventListener('click', openHfInfo);
+    if (hfInfoClose) hfInfoClose.addEventListener('click', e => {
+      e.stopPropagation();
+      closeHfInfo();
+    });
+
     // ── Playback loop ──────────────────────────────────────────────────────
     async function play() {
       if (mode.playing) { stop(); return; }
@@ -590,6 +618,7 @@ const DS = (function () {
       speechSynthesis.speak(unlock);
 
       mode.playing = true; mode.abort = false; mode.skipStep = false;
+      hfInfoOpen = false; hideInfo();   // manual overlay yields to playback
       updateButtons();
 
       const s = settings();
@@ -678,7 +707,12 @@ const DS = (function () {
     }
 
     function skipForward() {
-      if (!mode.playing) return;
+      if (!mode.playing) {
+        // Not playing: step forward to the next input (same direction as
+        // playback). Wraps within the strategy via manNextItem's modulo.
+        manNextItem();
+        return;
+      }
       mode.skipStep = true;
       speechSynthesis.cancel();
       clearTimeouts();
@@ -686,7 +720,14 @@ const DS = (function () {
     }
 
     function skipBack() {
-      if (!mode.playing) return;
+      if (!mode.playing) {
+        // Not playing: jump to the start of the current strategy, or to the
+        // previous strategy if already at its first input (mirrors playback).
+        if (mode.ii === 0 && mode.gi > 0) mode.gi--;
+        mode.ii = 0;
+        renderManual();
+        return;
+      }
       if (mode.ii === 0 && mode.gi > 0) mode.gi--;
       mode.ii = 0;
       mode.abort = true;
@@ -783,6 +824,7 @@ const DS = (function () {
       mode.gi = 0; mode.ii = 0;
       // Guide toggle reflects the persisted choice for THIS pack + mode
       if (guideToggleHf) guideToggleHf.checked = guideEnabled();
+      hfInfoOpen = false; hideInfo();
       navToTraining(cfg.screenId);
       renderManual();
       updateButtons();
