@@ -7,10 +7,10 @@
   <meta name="mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="default" />
   <meta name="apple-mobile-web-app-title" content="Deckstack" />
-  <link rel="manifest" href="manifest.json?v=12635" />
+  <link rel="manifest" href="manifest.json?v=12636" />
   <title>Deckstack</title>
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="stylesheet" href="css/style.css?v=12635" />
+  <link rel="stylesheet" href="css/style.css?v=12636" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
 </head>
 <body>
@@ -331,7 +331,7 @@
         <button id="progResetBtn" class="prog-reset-btn">Reset all progress data…</button>
       </div>
     </div>
-    <div class="settings-version">v1.26.35</div>
+    <div class="settings-version">v1.26.36</div>
     <button class="settings-close" id="progressSettingsClose">Done</button>
   </div>
 </div>
@@ -1329,7 +1329,7 @@
       <label>Progress bar</label>
       <label class="toggle"><input type="checkbox" id="showProgressBar" /><span class="toggle-slider"></span></label>
     </div>
-    <div class="settings-version">v1.26.35</div>
+    <div class="settings-version">v1.26.36</div>
     <button class="settings-close" id="settingsClose">Done</button>
   </div>
 </div>
@@ -1419,7 +1419,7 @@
       <label class="toggle"><input type="checkbox" id="hfShuffleInputs" /><span class="toggle-slider"></span></label>
     </div>
     <div id="hfBundlePlaceholder"></div>
-    <div class="settings-version">v1.26.35</div>
+    <div class="settings-version">v1.26.36</div>
     <button class="settings-close" id="hfSettingsClose">Done</button>
   </div>
 </div>
@@ -1505,7 +1505,7 @@
       <label class="toggle"><input type="checkbox" id="hfMemShuffleInputs" /><span class="toggle-slider"></span></label>
     </div>
     <div id="hfMemBundlePlaceholder"></div>
-    <div class="settings-version">v1.26.35</div>
+    <div class="settings-version">v1.26.36</div>
     <button class="settings-close" id="hfMemSettingsClose">Done</button>
   </div>
 </div>
@@ -1591,7 +1591,7 @@
       <label class="toggle"><input type="checkbox" id="hfChallShuffleInputs" /><span class="toggle-slider"></span></label>
     </div>
     <div id="hfChallBundlePlaceholder"></div>
-    <div class="settings-version">v1.26.35</div>
+    <div class="settings-version">v1.26.36</div>
     <button class="settings-close" id="hfChallSettingsClose">Done</button>
   </div>
 </div>
@@ -1666,7 +1666,7 @@
       <label class="toggle"><input type="checkbox" id="hfFlowShuffleInputs" /><span class="toggle-slider"></span></label>
     </div>
     <div id="hfFlowBundlePlaceholder"></div>
-    <div class="settings-version">v1.26.35</div>
+    <div class="settings-version">v1.26.36</div>
     <button class="settings-close" id="hfFlowSettingsClose">Done</button>
   </div>
 </div>
@@ -1752,7 +1752,7 @@
       <label class="toggle"><input type="checkbox" id="hfMindShuffleInputs" /><span class="toggle-slider"></span></label>
     </div>
     <div id="hfMindBundlePlaceholder"></div>
-    <div class="settings-version">v1.26.35</div>
+    <div class="settings-version">v1.26.36</div>
     <button class="settings-close" id="hfMindSettingsClose">Done</button>
   </div>
 </div>
@@ -1838,7 +1838,7 @@
       <label class="toggle"><input type="checkbox" id="hfCollShuffleInputs" /><span class="toggle-slider"></span></label>
     </div>
     <div id="hfCollBundlePlaceholder"></div>
-    <div class="settings-version">v1.26.35</div>
+    <div class="settings-version">v1.26.36</div>
     <button class="settings-close" id="hfCollSettingsClose">Done</button>
   </div>
 </div>
@@ -1968,6 +1968,10 @@
       <label>Intro tour</label>
       <button id="replayOnboardingBtn" style="font-size:13px; color:#2c5a7a; background:#eef4f9; border:1px solid #b8d2e6; border-radius:8px; padding:6px 12px; cursor:pointer;">Replay</button>
     </div>
+    <div class="settings-row">
+      <label>About &amp; privacy</label>
+      <button id="aboutBtn" style="font-size:13px; color:#555; background:#f0f0f0; border:1px solid #ddd; border-radius:8px; padding:6px 12px; cursor:pointer;">View</button>
+    </div>
 
     <div id="devSection" style="display:none;">
     <div class="settings-row" style="margin-top:10px;">
@@ -2030,13 +2034,34 @@
       <button id="hideDevBtn" style="font-size:13px; color:#555; background:#f0f0f0; border:1px solid #ddd; border-radius:8px; padding:6px 12px; cursor:pointer;">Hide</button>
     </div>
     </div><!-- /devSection -->
-    <div class="settings-version" id="homeSettingsVersion">v1.26.35</div>
+    <div class="settings-version" id="homeSettingsVersion">v1.26.36</div>
     <button class="settings-close" id="devSettingsDoneBtn">Done</button>
   </div>
 </div>
 
 
 <!-- PACK SETTINGS OVERLAY -->
+<!-- ABOUT & PRIVACY -->
+<div class="settings-overlay" id="aboutOverlay">
+  <div class="settings-panel" style="max-height:82vh; overflow-y:auto;">
+    <div class="settings-title">About Deckstack</div>
+    <div class="about-body">
+      <p><strong>Deckstack</strong> is a communication training app. You've read the books &mdash; Deckstack is where you practice: rehearse communication strategies like flashcards until they show up in real conversations.</p>
+      <p class="about-meta">Version <span id="aboutVersion"></span></p>
+
+      <div class="settings-title" style="margin-top:18px;">Privacy policy</div>
+      <p><strong>Your data stays on your device.</strong> Deckstack has no accounts and no server. Everything the app knows &mdash; your progress, favorites, settings, and unlocked content &mdash; is stored locally on this device and never sent anywhere.</p>
+      <p><strong>No tracking.</strong> Deckstack contains no analytics, no advertising, and no tracking of any kind.</p>
+      <p><strong>Speech.</strong> Handsfree audio uses your device's built-in text-to-speech. No audio or text is sent to external services.</p>
+      <p><strong>Third-party resources.</strong> The app loads its icon font from a content delivery network (jsDelivr). Like any web request, that transfer includes your IP address; no other information is shared.</p>
+      <p><strong>Backups.</strong> The Export function in Settings creates a copy of your data that only you hold. Deckstack never uploads it.</p>
+      <p><strong>Deleting your data.</strong> Since everything is local, removing the app (or clearing its website data) permanently deletes all your Deckstack data.</p>
+      <p class="about-meta">Questions about privacy? Contact the developer.</p>
+    </div>
+    <button class="settings-close" id="aboutClose">Done</button>
+  </div>
+</div>
+
 <div class="settings-overlay" id="packSettingsOverlay">
   <div class="settings-panel">
     <div class="settings-title" id="packSettingsTitle">Pack Settings</div>
@@ -2102,19 +2127,19 @@
   </button>
 </div>
 
-<script src="js/data.js?v=12635"></script>
-<script src="js/tagsData.js?v=12635"></script>
-<script src="js/programsData.js?v=12635"></script>
-<script src="js/challengesData.js?v=12635"></script>
-<script src="js/mindsetData.js?v=12635"></script>
-<script src="js/multiStepData.js?v=12635"></script>
-<script src="js/memorizeData.js?v=12635"></script>
-<script src="js/mode-engine.js?v=12635"></script>
-<script src="js/app-core.js?v=12635"></script>
-<script src="js/app-modes.js?v=12635"></script>
-<script src="js/app-handsfree.js?v=12635"></script>
-<script src="js/app-system.js?v=12635"></script>
-<script src="js/app-ui.js?v=12635"></script>
+<script src="js/data.js?v=12636"></script>
+<script src="js/tagsData.js?v=12636"></script>
+<script src="js/programsData.js?v=12636"></script>
+<script src="js/challengesData.js?v=12636"></script>
+<script src="js/mindsetData.js?v=12636"></script>
+<script src="js/multiStepData.js?v=12636"></script>
+<script src="js/memorizeData.js?v=12636"></script>
+<script src="js/mode-engine.js?v=12636"></script>
+<script src="js/app-core.js?v=12636"></script>
+<script src="js/app-modes.js?v=12636"></script>
+<script src="js/app-handsfree.js?v=12636"></script>
+<script src="js/app-system.js?v=12636"></script>
+<script src="js/app-ui.js?v=12636"></script>
 
 
 <!-- CHECKPOINT SCREEN -->
