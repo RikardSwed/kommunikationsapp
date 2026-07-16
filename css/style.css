@@ -720,16 +720,21 @@ body.pb-enabled .divider::after {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 8px 12px 72px;
+  padding: 12px 12px 72px;
   gap: 10px;
 }
 
 .hf-transport-group {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
   align-items: center;
-  justify-content: space-between;
   width: 100%;
 }
+
+/* Left skip btn: centered in left third */
+.hf-transport-group .hf-skip-btn:first-child { justify-self: center; }
+/* Right skip btn: centered in right third */
+.hf-transport-group .hf-skip-btn:last-child  { justify-self: center; }
 
 .hf-transport-btn {
   width: 40px;
