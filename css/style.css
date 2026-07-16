@@ -3028,3 +3028,35 @@ body.feedback-mode    .al-bar { display: none !important; }
 
 /* Uppgift 8 — extra top margin for tab-info when immediately below a folder banner */
 #libTabFolders .tab-info:first-child { margin-top: 14px; }
+
+/* ─── TABLET / IPAD LAYOUT (v1.26.31) ─────────────────────────────────────────
+   On phones nothing changes (the query never matches). On iPad the app shell
+   widens from the phone column to a roomier centered column, Quizlet-style:
+   bigger card, larger card text, same navigation. All screens share the same
+   shell width so layered transitions still line up perfectly. */
+
+@media (min-width: 700px) and (min-height: 500px) {
+  :root { --ds-shell-w: 680px; }
+
+  .home-screen, .mode-screen, .app,
+  .dashboard-screen, .progress-screen, .upgrade-screen,
+  .settings-screen, .extended-screen,
+  .bottom-nav, .settings-panel {
+    max-width: var(--ds-shell-w);
+  }
+
+  /* Training card: taller and roomier, like Quizlet's tablet flashcards */
+  .card { min-height: 420px; padding: 48px 48px; }
+  .card-area { padding: 16px 32px 28px; }
+  .card-text { font-size: 25px; }
+  .card-back .card-text { font-size: 22px; }
+  .strategy-label { font-size: 19px; }
+
+  /* Slightly larger transport controls in handsfree */
+  .hf-transport-btn svg { width: 26px; height: 26px; }
+}
+
+/* Larger iPads in landscape get a touch more width */
+@media (min-width: 1024px) and (min-height: 500px) {
+  :root { --ds-shell-w: 760px; }
+}
