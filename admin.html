@@ -410,6 +410,16 @@
     }
     .select--sm { font-size: 13px; padding: 4px 8px; }
     .card-row--situation { opacity: 0.85; }
+    /* Per-card guide rows (editor v1.8.0) — visually attached to the card above */
+    .card-row--guide { margin-top: -4px; }
+    .card-ta--guide {
+      font-size:  12px;
+      min-height: 34px;
+      background: #FBF7F0;
+      border-style: dashed;
+      color: #7A5A3A;
+    }
+    .card-ta--guide::placeholder { color: #C4A886; font-style: italic; }
     .card-ta--placeholder { min-height: 52px; border-radius: 6px; }
     .btn {
       padding:       9px 18px;
@@ -753,8 +763,8 @@
     ],
   };
   </script>
-<script src="js/editor-core.js?v=171"></script>
-<script src="js/editor-ui.js?v=171"></script>
+<script src="js/editor-core.js?v=180"></script>
+<script src="js/editor-ui.js?v=180"></script>
 
 </body>
 </html>
