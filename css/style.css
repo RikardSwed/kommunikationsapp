@@ -3071,6 +3071,84 @@ body.feedback-mode    .al-bar { display: none !important; }
   color: var(--ds-txt3);
 }
 
+/* ─── EXTENDED: INFO BUTTON + INFO OVERLAY (v1.26.39) ───────────────────────
+   Every purchasable item gets an Info button beside Add that opens a selling
+   detail panel. Overlay stacks above tab screens and bottom nav. */
+.ext-store-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.ext-info-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: none;
+  border: 1.5px solid var(--ds-border, #d8cfc4);
+  color: var(--ds-txt2);
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: opacity 0.15s;
+}
+.ext-info-btn:active { opacity: 0.7; }
+.ext-info-btn--light {
+  border-color: rgba(255, 255, 255, 0.55);
+  color: #fff;
+}
+
+#extInfoOverlay { z-index: 800; }
+.ext-info-panel {
+  max-height: 82vh;
+  overflow-y: auto;
+}
+.ext-info-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+.ext-info-title {
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--ds-txt);
+}
+.ext-info-body p {
+  font-size: 14px;
+  line-height: 1.55;
+  color: var(--ds-txt2);
+  margin: 0 0 12px;
+}
+.ext-info-includes {
+  border-top: 1px solid var(--ds-border, #e5ddd2);
+  padding-top: 12px;
+  margin-bottom: 12px;
+}
+.ext-info-includes-label {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--ds-txt3);
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  margin-bottom: 8px;
+}
+.ext-info-include-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: var(--ds-txt);
+  padding: 4px 0;
+}
+.ext-info-bottom {
+  border-top: 1px solid var(--ds-border, #e5ddd2);
+  padding-top: 14px;
+  margin-bottom: 4px;
+}
+
 /* ─── TABLET / IPAD LAYOUT (v1.26.31) ─────────────────────────────────────────
    On phones nothing changes (the query never matches). On iPad the app shell
    widens from the phone column to a roomier centered column, Quizlet-style:
