@@ -2210,6 +2210,12 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
         icon: 'ti-book',
         description: 'Learn to structure and deliver stories that hold attention, create emotion, and make you memorable in any conversation.',
         price: '29 kr',
+        details: [
+          'Most people tell stories the way they happened. Great storytellers tell them the way they land. This pack teaches the difference.',
+          'You get a full training pack with proven storytelling strategies \u2014 story selection, suspense & buildup, transitions, and delivery \u2014 each with real situations to visualize and strong example responses to make your own.',
+          'Works in every training mode you own, including handsfree, so you can rehearse your stories while walking or doing chores.',
+          'What you\u2019ll get better at: choosing the right story for the moment, hooking listeners in the first sentence, building tension instead of rambling, and landing endings that people remember.',
+        ],
       },
     ],
     programs: [
@@ -2219,6 +2225,12 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
         icon: 'ti-message-circle',
         description: 'Start conversations with confidence, keep them going, and create genuine connection — from small talk to meaningful depth.',
         price: '49 kr',
+        details: [
+          'A guided program \u2014 not just a pack. It takes you step by step from opening a conversation with a stranger to creating the kind of depth that turns acquaintances into friends.',
+          'The program is organised in sections with checkpoints: you train a set of strategies, prove you\u2019ve got them, and unlock the next stage. Structure keeps you moving where loose browsing stalls.',
+          'Covers starting conversations naturally, keeping them alive without interrogating, transitioning to personal topics, and really listening \u2014 the skill everyone thinks they have.',
+          'If you only get one thing from Extended, this is the foundation everything else builds on.',
+        ],
       },
     ],
     bundles: [
@@ -2231,6 +2243,12 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
         icon: 'ti-home',
         description: 'Extra inputs for home and close relationships — partners, family, neighbours, friends. Covers all four assertive strategies.',
         price: '19 kr',
+        details: [
+          'The hardest place to stay assertive isn\u2019t the office \u2014 it\u2019s home. The stakes are personal, the patterns are old, and the other person knows exactly which buttons to push.',
+          'This bundle adds a full set of home-and-close-relationship situations to your Assertive Communication pack: partners, parents, siblings, neighbours and old friends.',
+          'Every card plugs straight into the strategies you already train \u2014 Fogging, Broken Record, Negative Inquiry and Negative Assertion \u2014 so the extra material appears right inside your normal sessions.',
+          'Small price, big blind spot covered.',
+        ],
       },
     ],
     kits: [
@@ -2240,6 +2258,11 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
         icon: 'ti-packages',
         description: 'Everything in Extended at a discount — the Storytelling pack, the Conversation Skills program, and the Domestic Situations bundle.',
         price: '79 kr',
+        details: [
+          'The complete Extended collection in one purchase \u2014 and cheaper than buying the parts separately (97 kr bought one by one).',
+          'You get the Storytelling pack, the Conversation Skills Foundations program, and the Domestic Situations bundle. Together they cover the full arc: open a conversation, keep it alive, tell stories that land, and hold your ground with the people closest to you.',
+          'Everything is unlocked immediately and works in all your training modes, including handsfree.',
+        ],
         contents: [
           { type: 'pack',    id: 'storytelling' },
           { type: 'program', id: 'conversation-skills' },
@@ -2253,6 +2276,10 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
         description: 'The full Extended catalog for classroom use. Available with an access code.',
         price: '59 kr',
         code: 'DEMO2026',
+        details: [
+          'The full Extended catalog at a special rate for classroom and group use \u2014 unlocked with an access code from your teacher or course leader.',
+          'Includes the Storytelling pack, the Conversation Skills Foundations program, and the Domestic Situations bundle, all available in every training mode.',
+        ],
         contents: [
           { type: 'pack',    id: 'storytelling' },
           { type: 'program', id: 'conversation-skills' },
@@ -2265,8 +2292,14 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
   const LIFETIME = {
     id: 'lifetime-pro',
     title: 'Lifetime Pro',
+    icon: 'ti-infinity',
     price: '499 kr',
     description: 'One payment, Pro forever. All Pro packs and every Extended purchase stay available — nothing ever expires.',
+    details: [
+      'Pay once, own it forever. No subscription, no renewal date, no losing your training library the month money is tight.',
+      'Lifetime Pro unlocks every Pro pack \u2014 current and future \u2014 plus the Pro-only features like handsfree training. Everything you buy in Extended stays yours on top of it.',
+      'If you plan to train for more than a year, this pays for itself. If you plan to train for life, it\u2019s the obvious choice.',
+    ],
   };
 
   const CAT_ORDER = ['packs', 'programs', 'bundles', 'kits'];
@@ -2360,6 +2393,89 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
     }
   }
 
+  // ── Info overlay (v1.26.39): selling copy for every purchasable item ──
+  function ensureInfoOverlay() {
+    let ov = document.getElementById('extInfoOverlay');
+    if (ov) return ov;
+    ov = document.createElement('div');
+    ov.id = 'extInfoOverlay';
+    ov.className = 'settings-overlay';
+    ov.innerHTML = `
+      <div class="settings-panel ext-info-panel">
+        <div class="ext-info-head">
+          <div class="ext-store-icon" id="extInfoIcon"></div>
+          <div>
+            <div class="ext-info-title" id="extInfoTitle"></div>
+            <div class="ext-store-pack-label" id="extInfoPackLabel" style="display:none;"></div>
+          </div>
+        </div>
+        <div class="ext-info-body" id="extInfoBody"></div>
+        <div class="ext-info-includes" id="extInfoIncludes" style="display:none;"></div>
+        <div class="ext-store-card-bottom ext-info-bottom">
+          <div class="ext-store-price" id="extInfoPrice"></div>
+          <button class="ext-store-btn" id="extInfoBuy">Add</button>
+          <div class="ext-store-owned" id="extInfoOwned" style="display:none;"><i class="ti ti-check" aria-hidden="true"></i> Added</div>
+        </div>
+        <button class="settings-close" id="extInfoClose">Close</button>
+      </div>`;
+    document.body.appendChild(ov);
+    ov.addEventListener('click', e => { if (e.target === ov) ov.classList.remove('open'); });
+    ov.querySelector('#extInfoClose').addEventListener('click', () => ov.classList.remove('open'));
+    return ov;
+  }
+
+  function openExtInfo(type, item) {
+    const ov = ensureInfoOverlay();
+    ov.querySelector('#extInfoIcon').innerHTML = `<i class="ti ${item.icon || 'ti-sparkles'}" aria-hidden="true"></i>`;
+    ov.querySelector('#extInfoTitle').textContent = item.title;
+    const pl = ov.querySelector('#extInfoPackLabel');
+    pl.style.display = item.packTitle ? '' : 'none';
+    pl.textContent = item.packTitle ? 'for ' + item.packTitle : '';
+    // Selling copy: `details` paragraphs, falling back to the short description
+    const body = ov.querySelector('#extInfoBody');
+    const paras = (item.details && item.details.length) ? item.details : [item.description];
+    body.innerHTML = paras.map(p => '<p>' + p + '</p>').join('');
+    // Kit contents
+    const inc = ov.querySelector('#extInfoIncludes');
+    if (type === 'kits' && item.contents) {
+      inc.style.display = '';
+      inc.innerHTML = '<div class="ext-info-includes-label">Included in this kit</div>' +
+        item.contents.map(c => {
+          const srcList = c.type === 'pack' ? CATALOG.packs : c.type === 'program' ? CATALOG.programs : CATALOG.bundles;
+          const it = srcList.find(x => x.id === c.id);
+          if (!it) return '';
+          return `<div class="ext-info-include-row"><i class="ti ${it.icon}" aria-hidden="true"></i> ${it.title}</div>`;
+        }).join('');
+    } else {
+      inc.style.display = 'none';
+    }
+    // Price / buy / owned
+    const owned = type === 'lifetime'
+      ? isOwned(item.id)
+      : (isOwned(item.id) || getAccessLevel() === 'complete');
+    ov.querySelector('#extInfoPrice').style.display = owned ? 'none' : '';
+    ov.querySelector('#extInfoPrice').textContent = item.price;
+    const buyBtn = ov.querySelector('#extInfoBuy');
+    const ownedEl = ov.querySelector('#extInfoOwned');
+    buyBtn.style.display = owned ? 'none' : '';
+    ownedEl.style.display = owned ? '' : 'none';
+    buyBtn.textContent = type === 'lifetime' ? 'Get Lifetime Pro' : 'Add';
+    buyBtn.onclick = () => {
+      if (type === 'lifetime') {
+        const o = getOwned();
+        if (!o.includes(item.id)) o.push(item.id);
+        setOwned(o);
+        if (window.showToast) showToast('Lifetime Pro activated.');
+        renderExtendedStore();
+      } else {
+        buy(type, item);
+      }
+      ov.classList.remove('open');
+    };
+    ov.classList.add('open');
+    ov.querySelector('.ext-info-panel').scrollTop = 0;
+  }
+
   // ── Card factory (shared by browsing and search results) ──────────────
   function makeCard(type, item) {
     const owned = isOwned(item.id) || getAccessLevel() === 'complete';
@@ -2385,11 +2501,19 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
       </div>
       <div class="ext-store-card-bottom">
         ${owned
-          ? `<div class="ext-store-owned"><i class="ti ti-check" aria-hidden="true"></i> Added</div>`
+          ? `<div class="ext-store-owned"><i class="ti ti-check" aria-hidden="true"></i> Added</div>
+             <button class="ext-info-btn" aria-label="More about ${item.title}"><i class="ti ti-info-circle" aria-hidden="true"></i> Info</button>`
           : `<div class="ext-store-price">${item.price}</div>
-             <button class="ext-store-btn">Add</button>`
+             <div class="ext-store-actions">
+               <button class="ext-info-btn" aria-label="More about ${item.title}"><i class="ti ti-info-circle" aria-hidden="true"></i> Info</button>
+               <button class="ext-store-btn">Add</button>
+             </div>`
         }
       </div>`;
+    card.querySelector('.ext-info-btn').addEventListener('click', e => {
+      e.stopPropagation();
+      openExtInfo(type, item);
+    });
     if (!owned) {
       card.querySelector('.ext-store-btn').addEventListener('click', () => buy(type, item));
     } else if (type === 'packs' || type === 'programs') {
@@ -2409,11 +2533,17 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
       <div class="ext-lifetime-desc">${LIFETIME.description}</div>
       <div class="ext-lifetime-bottom">
         ${owned
-          ? `<div class="ext-lifetime-owned"><i class="ti ti-check" aria-hidden="true"></i> Lifetime Pro active</div>`
+          ? `<div class="ext-lifetime-owned"><i class="ti ti-check" aria-hidden="true"></i> Lifetime Pro active</div>
+             <button class="ext-info-btn ext-info-btn--light" id="extLifetimeInfo"><i class="ti ti-info-circle" aria-hidden="true"></i> Info</button>`
           : `<div class="ext-lifetime-price">${LIFETIME.price}</div>
-             <button class="ext-lifetime-btn" id="extLifetimeBuy">Get Lifetime Pro</button>`
+             <div class="ext-store-actions">
+               <button class="ext-info-btn ext-info-btn--light" id="extLifetimeInfo"><i class="ti ti-info-circle" aria-hidden="true"></i> Info</button>
+               <button class="ext-lifetime-btn" id="extLifetimeBuy">Get Lifetime Pro</button>
+             </div>`
         }
       </div>`;
+    const infoBtn = host.querySelector('#extLifetimeInfo');
+    if (infoBtn) infoBtn.addEventListener('click', () => openExtInfo('lifetime', LIFETIME));
     const btn = host.querySelector('#extLifetimeBuy');
     if (btn) btn.addEventListener('click', () => {
       const o = getOwned();
@@ -2424,21 +2554,32 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
     });
   }
 
-  // ── Browsing sections: 1 item per category, "Load more" reveals the rest ──
+  // ── Browsing sections (v1.26.39): max 3 items per category, then a
+  //    "View more" button that expands the rest; expanded sections get a
+  //    "Show fewer" button that collapses back to 3. State is per-session
+  //    so a purchase re-render keeps whatever the user expanded.
+  const CAT_PREVIEW = 3;
   function renderBrowse() {
     CAT_ORDER.forEach(cat => {
       const listEl = document.getElementById(CAT_LISTS[cat]);
       const moreEl = document.getElementById(CAT_MORE[cat]);
       if (!listEl) return;
       const items = visibleItems(cat);
-      const shown = expanded[cat] ? items : items.slice(0, 1);
+      const shown = expanded[cat] ? items : items.slice(0, CAT_PREVIEW);
       listEl.innerHTML = '';
       shown.forEach(item => listEl.appendChild(makeCard(cat, item)));
       if (moreEl) {
-        const hiddenCount = items.length - shown.length;
-        moreEl.style.display = hiddenCount > 0 ? '' : 'none';
-        moreEl.textContent = 'Load more ' + CAT_LABEL[cat] + ' (' + hiddenCount + ')';
-        moreEl.onclick = () => { expanded[cat] = true; renderBrowse(); };
+        if (items.length <= CAT_PREVIEW) {
+          moreEl.style.display = 'none';
+        } else if (!expanded[cat]) {
+          moreEl.style.display = '';
+          moreEl.textContent = 'View more ' + CAT_LABEL[cat] + ' (' + (items.length - shown.length) + ')';
+          moreEl.onclick = () => { expanded[cat] = true; renderBrowse(); };
+        } else {
+          moreEl.style.display = '';
+          moreEl.textContent = 'Show fewer ' + CAT_LABEL[cat];
+          moreEl.onclick = () => { expanded[cat] = false; renderBrowse(); };
+        }
       }
     });
   }
