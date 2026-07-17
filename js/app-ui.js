@@ -2501,8 +2501,10 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
       </div>
       <div class="ext-store-card-bottom">
         ${owned
-          ? `<div class="ext-store-owned"><i class="ti ti-check" aria-hidden="true"></i> Added</div>
-             <button class="ext-info-btn" aria-label="More about ${item.title}"><i class="ti ti-info-circle" aria-hidden="true"></i> Info</button>`
+          ? `<div class="ext-store-actions">
+               <button class="ext-info-btn" aria-label="More about ${item.title}"><i class="ti ti-info-circle" aria-hidden="true"></i> Info</button>
+               <div class="ext-store-owned"><i class="ti ti-check" aria-hidden="true"></i> Added</div>
+             </div>`
           : `<div class="ext-store-price">${item.price}</div>
              <div class="ext-store-actions">
                <button class="ext-info-btn" aria-label="More about ${item.title}"><i class="ti ti-info-circle" aria-hidden="true"></i> Info</button>
@@ -2533,8 +2535,10 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
       <div class="ext-lifetime-desc">${LIFETIME.description}</div>
       <div class="ext-lifetime-bottom">
         ${owned
-          ? `<div class="ext-lifetime-owned"><i class="ti ti-check" aria-hidden="true"></i> Lifetime Pro active</div>
-             <button class="ext-info-btn ext-info-btn--light" id="extLifetimeInfo"><i class="ti ti-info-circle" aria-hidden="true"></i> Info</button>`
+          ? `<div class="ext-store-actions">
+               <button class="ext-info-btn ext-info-btn--light" id="extLifetimeInfo"><i class="ti ti-info-circle" aria-hidden="true"></i> Info</button>
+               <div class="ext-lifetime-owned"><i class="ti ti-check" aria-hidden="true"></i> Lifetime Pro active</div>
+             </div>`
           : `<div class="ext-lifetime-price">${LIFETIME.price}</div>
              <div class="ext-store-actions">
                <button class="ext-info-btn ext-info-btn--light" id="extLifetimeInfo"><i class="ti ti-info-circle" aria-hidden="true"></i> Info</button>
