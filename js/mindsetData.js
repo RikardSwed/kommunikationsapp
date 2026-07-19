@@ -246,6 +246,62 @@ const mindsetCollections = {
         { q: "Why does trying too hard usually kill the joke?", a: "It signals you need the laugh. What lands comes from not needing it — the lighter your investment, the better it works.", bundle: 'free' },
         { q: "What do you do when a joke falls flat?", a: "Move on without explaining or apologising. Self-irony saves it — 'and that's why I don't do stand-up' — then continue.", bundle: 'free' },
       ]
+    },
+    {
+      name: "Observation Humour Mindset",
+      description: "The stance behind observation humour: the funny thing is usually already in the room — your job is to notice it, not to be clever.",
+      inputs: [
+        { q: "Where does the best observation humour come from?", a: "From paying attention, not from being witty. The material is already there — you just have to catch it.", bundle: 'free' },
+        { q: "Why does noticing beat performing?", a: "A noticed joke feels shared and effortless; a performed one feels like you're working for a laugh, which is what makes it not land.", bundle: 'free' },
+        { q: "What if you don't feel funny in the moment?", a: "You don't need to be — you just need to be watching. Describe what's actually happening and the absurdity does the work.", bundle: 'free' },
+        { q: "Why keep it about the situation, not a person?", a: "The shared situation is safe ground — everyone can laugh without anyone being the target.", bundle: 'free' },
+        { q: "What's the cost of forcing an observation?", a: "Forcing it turns noticing into performing. If nothing's absurd, say nothing — the next moment will hand you something.", bundle: 'free' },
+        { q: "How does staying relaxed help you notice more?", a: "Tension narrows your attention to yourself; ease widens it to the room, where the funny things actually are.", bundle: 'pro' },
+        { q: "Why is a small true observation better than a big invented joke?", a: "Truth is instantly recognisable — everyone confirms it at once. An invented joke has to earn belief first.", bundle: 'pro' },
+        { q: "What does finding the funny in a dull moment signal?", a: "That you're present and at ease — which puts everyone else at ease too.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Teasing Mindset",
+      description: "The stance behind teasing: it's a sign of comfort and affection, not cruelty — you tease people you like, and the warmth has to be the loudest thing in it.",
+      inputs: [
+        { q: "Why do we tease the people we like?", a: "Because teasing is a way of saying 'I'm comfortable with you' — it's a marker of closeness, not distance.", bundle: 'free' },
+        { q: "What feeling should be underneath a tease?", a: "Fondness. If the warmth isn't there, it's not a tease — it's a dig wearing a smile.", bundle: 'free' },
+        { q: "How do you know a tease has gone too far?", a: "Watch the person, not the joke. If they tighten instead of laugh, you've found an edge — back off warmly.", bundle: 'free' },
+        { q: "Why keep the target small?", a: "Small, obvious quirks are safe to laugh at together. The bigger or more personal the target, the closer it gets to a wound.", bundle: 'free' },
+        { q: "What makes you safe to be teased by?", a: "That you take it as well as you give it. If you can laugh at yourself, your teasing reads as play, not superiority.", bundle: 'free' },
+        { q: "Why isn't teasing about being the funniest in the room?", a: "It's about connection, not performance. A good tease makes the other person feel liked, not out-done.", bundle: 'pro' },
+        { q: "What does needing the tease to land say?", a: "That you're performing. The best teasing is offered lightly — if it doesn't land, you let it go without a flicker.", bundle: 'pro' },
+        { q: "How does teasing build trust over time?", a: "Light teasing that never wounds tells someone you can play near their edges and still be safe — that's intimacy.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Joke About My Flaws Mindset",
+      description: "The stance behind it: a flaw you've named and laughed at can't be used against you — owning it first is control, not surrender.",
+      inputs: [
+        { q: "Why name your own flaw before anyone else can?", a: "Because a flaw you've already joked about has no power as a weapon — you've taken it off the table.", bundle: 'free' },
+        { q: "What does joking about a flaw signal?", a: "Security. Someone comfortable enough to laugh at their weak spots clearly isn't threatened by them.", bundle: 'free' },
+        { q: "Why is agreeing with the flaw stronger than denying it?", a: "Denial invites a fight; agreement ends it. You can't argue with someone who cheerfully got there first.", bundle: 'free' },
+        { q: "How do you keep it from becoming self-criticism?", a: "Keep the tone light and the exaggeration obvious — you're playing with the flaw, not confirming a verdict on yourself.", bundle: 'free' },
+        { q: "Why doesn't the flaw being real threaten you?", a: "Being okay doesn't depend on being flawless. A real, named, laughed-at flaw is just a fact you're at ease with.", bundle: 'free' },
+        { q: "What's the difference between owning a flaw and apologising for it?", a: "Owning it is light and final; apologising invites reassurance. One closes the subject, the other reopens it.", bundle: 'pro' },
+        { q: "Why does this put a group at ease?", a: "When you show your flaws don't scare you, everyone relaxes about their own — you lower the whole room's guard.", bundle: 'pro' },
+        { q: "When should you not joke about a flaw?", a: "When it's a genuine, sensitive wound — not everything is material. Save it for the harmless, chosen quirks.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Jokingly Brag Mindset",
+      description: "The stance behind it: playing with self-praise, not actually claiming it — you can only joke about being great if you're relaxed enough not to need it to be true.",
+      inputs: [
+        { q: "What are you actually doing when you jokingly brag?", a: "Playing with confidence, not claiming it. The joke is the gap between the tiny achievement and the huge announcement.", bundle: 'free' },
+        { q: "Why does it read as playful, not arrogant?", a: "Because you're obviously in on it. Real arrogance believes itself; a jokingly brag winks at everyone.", bundle: 'free' },
+        { q: "Why can only relaxed people pull this off?", a: "You're toying with the exact thing insecure people protect — you can only play with self-praise if you don't need it.", bundle: 'free' },
+        { q: "What keeps it warm?", a: "Aim it at something trivial and let everyone share the joke — you're the punchline as much as the hero.", bundle: 'free' },
+        { q: "Why pair it with self humour?", a: "Bragging about one small thing and mocking another shows you don't take either seriously — it's balance, not ego.", bundle: 'free' },
+        { q: "What does a well-placed jokingly brag do for the mood?", a: "It lifts it — a bit of cheerful, obvious swagger about nothing gives everyone permission to be light.", bundle: 'pro' },
+        { q: "Why isn't needing people to agree part of it?", a: "The joke is complete on its own. If you need them to confirm you're great, it stops being a joke and becomes a bid.", bundle: 'pro' },
+        { q: "How is this different from actually being proud of something?", a: "Real pride is sincere and can be quiet; a jokingly brag is deliberately over-the-top about something that doesn't warrant it.", bundle: 'pro' },
+      ]
     }
   ]
 };

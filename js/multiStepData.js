@@ -867,5 +867,80 @@ const multiStepCollections = {
         { q: "Step 3 — Move on",     a: "Continue naturally — don't keep referencing the moment." },
       ]
     }
+  ],
+
+  humourpractise: [
+    {
+      name: "Tease and Recover",
+      guideFront: "Two moves in sequence — jab, then soften...",
+      guideBack: "The next move...",
+      subtitle: "Teasing → Self Humour",
+      inputs: [
+        {
+          bundle: "free",
+          situation: "A friend proudly shows off a bold new haircut.",
+          steps: [
+            { front: "Step 1 — Tease", back: '"Bold. Very bold. Statement, or lost bet?"' },
+            { front: "Step 2 — Recover with self humour", back: '"Kidding — it suits you. I could never; I\'d look like a startled hedgehog."' },
+          ]
+        },
+        {
+          bundle: "free",
+          situation: "You gently rib your cousin about their terrible parking.",
+          steps: [
+            { front: "Step 1 — Tease", back: '"Was the goal to park, or to headbutt the kerb?"' },
+            { front: "Step 2 — Recover with self humour", back: '"I\'m one to talk — I once took three tries to leave an empty car park."' },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Notice and Riff",
+      guideFront: "Two moves in sequence — observe, then tease...",
+      guideBack: "The next move...",
+      subtitle: "Observation → Teasing",
+      inputs: [
+        {
+          bundle: "free",
+          situation: "You and a friend watch the 'quick' meeting hit its 45th minute.",
+          steps: [
+            { front: "Step 1 — Observe", back: '"The quick sync has now outlived several real meetings."' },
+            { front: "Step 2 — Tease your friend", back: '"You\'ve asked four questions. This is on you, honestly."' },
+          ]
+        },
+        {
+          bundle: "pro",
+          situation: "The café is dead silent while upbeat music plays.",
+          steps: [
+            { front: "Step 1 — Observe", back: '"Great energy in here. Really feeding off the crowd."' },
+            { front: "Step 2 — Tease your friend", back: '"You fit right in — you\'ve said three words since we sat down."' },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Brag and Deflate",
+      guideFront: "Two moves in sequence — swagger, then undercut...",
+      guideBack: "The next move...",
+      subtitle: "Jokingly Brag → Self Humour",
+      inputs: [
+        {
+          bundle: "free",
+          situation: "You nail a parallel park on the first go, with your friend watching.",
+          steps: [
+            { front: "Step 1 — Jokingly brag", back: '"Everyone can stop and acknowledge that. Reflexes of a champion."' },
+            { front: "Step 2 — Deflate with self humour", back: '"Don\'t ask me to reverse out, though. That\'s a different, darker story."' },
+          ]
+        },
+        {
+          bundle: "pro",
+          situation: "You win a tiny trivia point at a pub quiz.",
+          steps: [
+            { front: "Step 1 — Jokingly brag", back: '"And that\'s why they\'ll put me on the money one day."' },
+            { front: "Step 2 — Deflate with self humour", back: '"That was my one fact. The rest of this quiz will humble me quickly."' },
+          ]
+        },
+      ]
+    }
   ]
 };

@@ -641,6 +641,70 @@ const collections = {
         { q: "A relative brings up an embarrassing story from when you were ten.", a: '"Ah yes, my villain origin story. Bold of you to summon it at the table."', bundle: 'family' },
         { q: "You mix up everyone's kids' names at the reunion.", a: '"In my defence, there are forty of you and one of me."', bundle: 'family' },
       ]
+    },
+    {
+      name: "Observation Humour",
+      guideFront: "Name the absurd thing you both already see.",
+      guideBack: "One way to play it.",
+      description: "Observation humour is pointing out something that's already a little absurd in the situation you're both in — you're not making a joke up, you're noticing one. It works because you both see it; naming it out loud is what makes it funny.\n\nOne easy way in: watch for the gap between what's expected and what's actually happening, then say it plainly.",
+      inputs: [
+        { q: "The meeting's ten minutes in and no one can share their screen.", a: '"We\'ve achieved nothing, but we\'ve achieved it together."', bundle: 'free' },
+        { q: "You and a stranger keep reaching for the same door, then both backing off.", a: '"We could be here all day. Very polite standoff."', bundle: 'free' },
+        { q: "The 'quick' team sync has entered its fortieth minute.", a: '"At this point the quick sync has outlived some actual meetings."', bundle: 'free' },
+        { q: "The café is playing upbeat music while everyone sits in silence.", a: '"Great energy in here. Really feeding off the crowd."', bundle: 'free' },
+        { q: "Everyone's casual except one person in a full three-piece suit.", a: '"Someone in here knows something we don\'t. I\'m nervous."', bundle: 'free' },
+        { q: "The 'urgent' email chain is now twenty replies of 'thanks' and 'no problem'.", a: '"We\'re so close to the record for longest conversation about nothing."', bundle: 'pro' },
+        { q: "The lift stops on every single floor on the way up.", a: '"This lift is really committed to the scenic route."', bundle: 'pro' },
+        { q: "A long queue forms next to a second, completely empty till.", a: '"There\'s a whole other till living its best, loneliest life over there."', bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Teasing",
+      guideFront: "A warm, light jab — keep it small and obvious.",
+      guideBack: "One way to play it.",
+      description: "Teasing is a warm, playful jab at someone — light enough that it's obviously affection, not a dig. It works when the target is small and obvious (a harmless quirk, not an insecurity) and your warmth is clear.\n\nOne easy way in: pick something small and visible, exaggerate it a touch, and keep it to one line.",
+      inputs: [
+        { q: "Your friend has an enormous, elaborate coffee order.", a: '"A small black coffee for me — and whatever architectural project you\'re building."', bundle: 'free' },
+        { q: "Someone proudly shows you their extremely tidy, colour-coded desk.", a: '"This is lovely. Slightly concerning, but lovely."', bundle: 'free' },
+        { q: "Your friend is, once again, five minutes late.", a: '"Right on time — for you. I\'ve started setting your invites an hour early."', bundle: 'free' },
+        { q: "Someone tells a very long story to make a very small point.", a: '"Beautiful journey. I\'d forgotten where we started, but beautiful."', bundle: 'free' },
+        { q: "Your friend insists their favourite obscure band is a masterpiece.", a: '"Truly ahead of their time. So far ahead no one else has heard them."', bundle: 'free' },
+        { q: "Someone parks badly and is very pleased with it.", a: '"Bold interpretation of the lines. Very jazz."', bundle: 'pro' },
+        { q: "Your friend re-tells a shared story, making themselves the hero.", a: '"Fascinating — I remember that day completely differently, but do go on."', bundle: 'pro' },
+        { q: "Someone claims to be an expert on a place they visited once.", a: '"Ah yes, your two days there. A local, really."', bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Joke About My Flaws",
+      guideFront: "They named a flaw — beat them to the joke.",
+      guideBack: "One way to play it.",
+      description: "Joke About My Flaws is disarming a dig at one of your flaws by getting there first — you agree with the flaw and make the joke yourself, so there's nothing left to attack.\n\nOne easy way in: take the flaw they named, own it plainly, then exaggerate it a touch or give it a fond label.",
+      inputs: [
+        { q: "A friend laughs: \"You are the slowest walker I have ever met.\"", a: '"I am. I prefer to think of it as fully experiencing the journey."', bundle: 'free' },
+        { q: "\"Do you ever finish a project before starting three new ones?\"", a: '"Rarely. Collecting unfinished projects is basically my hobby."', bundle: 'free' },
+        { q: "\"You're always losing your keys.\"", a: '"A gift, really. I get the little thrill of finding them every single day."', bundle: 'free' },
+        { q: "\"You have no sense of direction at all.\"", a: '"None. I\'ve turned getting lost into a reliable form of sightseeing."', bundle: 'free' },
+        { q: "\"You reply to texts, like, a week late.\"", a: '"I like to let a message mature. Really sit with it."', bundle: 'free' },
+        { q: "\"You're so bad at remembering names.\"", a: '"Terrible. If we\'ve met, assume I\'ve filed you under \'friend\' and given up."', bundle: 'pro' },
+        { q: "\"You cannot cook to save your life.\"", a: '"Correct. My smoke alarm and I have a very active relationship."', bundle: 'pro' },
+        { q: "\"You're weirdly competitive about everything.\"", a: '"I am. I will now try to win at admitting that."', bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Jokingly Brag",
+      guideFront: "Inflate something tiny like it's a huge triumph.",
+      guideBack: "One way to play it.",
+      description: "Jokingly bragging is exaggerating your own qualities or achievements so obviously that it's clearly a joke — the opposite of self-deprecation, and just as playful. The bigger and more trivial the thing you're 'bragging' about, the funnier it is.\n\nOne easy way in: take something tiny you just did and announce it like a historic triumph.",
+      inputs: [
+        { q: "You parallel-park perfectly on the first try.", a: '"Everyone can stop what they\'re doing and acknowledge that."', bundle: 'free' },
+        { q: "You guess the film's plot twist before it happens.", a: '"I\'d like to thank my extraordinary mind. This is what it does."', bundle: 'free' },
+        { q: "You reach the last slice of pizza first.", a: '"Reflexes of a much younger, much hungrier man."', bundle: 'free' },
+        { q: "You finally reply to all your emails.", a: '"Historians will note today as the day the inbox reached zero."', bundle: 'free' },
+        { q: "You cook something and it actually turns out well.", a: '"You are looking at a chef. A once-in-a-decade talent, clearly."', bundle: 'free' },
+        { q: "You win a tiny board-game round.", a: '"Please, hold your applause. Actually — no, don\'t, I\'ve earned it."', bundle: 'pro' },
+        { q: "You remember one obscure fact in a quiz.", a: '"And that\'s why they\'ll eventually put me on the money."', bundle: 'pro' },
+        { q: "You fix a minor tech problem for someone.", a: '"Yes, I\'m basically an engineer now. No, I won\'t be taking questions."', bundle: 'pro' },
+      ]
     }
   ]
 };
@@ -689,6 +753,45 @@ const collectionsModeData = {
         { q: "\"You'd do it if you really cared about the team.\"", a: "Broken Record: \"I do care, and I still can't do it.\" — or Negative Assertion: \"Maybe that's how it looks — and my answer stays the same.\"", bundle: "pro" },
         { q: "\"Can't you make an exception, just for me?\"", a: "Broken Record: \"I understand it's important to you, and I can't make an exception.\" — or Negative Assertion: \"Maybe I am strict about this — the answer is still no.\"", bundle: "pro" },
       ],
+    },
+  ],
+
+  humourpractise: [
+    {
+      name: "Pick Your Move",
+      guideFront: "Observation, self humour or a tease — which fits?",
+      guideBack: "Two possible responses...",
+      description: "Three humour moves for everyday moments — observation (name the absurd thing you both see), self humour (own your own slip), or a warm tease (a light jab at someone else). Each situation below fits more than one.",
+      inputs: [
+        { q: "The whole team stares at a frozen screen in silence.", a: "Observation: \"Most focused we've been all week.\" — or Self humour (if it's your screen): \"This is my fault and I stand by it.\"", bundle: 'free' },
+        { q: "You walk into a glass door in front of your friend.", a: "Self humour: \"Flawless. I've been practising.\" — or just let them Tease you and laugh along.", bundle: 'free' },
+        { q: "Your friend proudly shows off a slightly wonky DIY shelf.", a: "Teasing: \"Bold angles. Very modern.\" — or Observation: \"Gravity's going to have opinions about that.\"", bundle: 'pro' },
+        { q: "You both watch someone reverse into a bin in the car park.", a: "Observation: \"A confident three-point disaster.\" — or Teasing your friend: \"Reminds me of your parking, actually.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Owning the Moment",
+      guideFront: "The spotlight's on your flaw — own it two ways...",
+      guideBack: "Two possible responses...",
+      description: "Two moves for when the spotlight's on your own flaw — self humour (laugh at your own slip) and joke about my flaws (disarm a dig by getting there first). Both turn an awkward moment into an easy one.",
+      inputs: [
+        { q: "You forget someone's name mid-introduction.", a: "Self humour: \"...and this is — someone I definitely know.\" — or if teased, Joke about my flaws: \"Names and I are not on speaking terms.\"", bundle: 'free' },
+        { q: "\"You're late again.\"", a: "Joke about my flaws: \"I am. Punctuality gave up on me years ago.\" — or Self humour: \"On brand, sadly.\"", bundle: 'free' },
+        { q: "You send a message to the wrong chat.", a: "Self humour: \"A masterclass in how not to use a phone.\" — or if teased, Joke about my flaws: \"Technology and I are still negotiating.\"", bundle: 'pro' },
+        { q: "\"You always overthink everything.\"", a: "Joke about my flaws: \"I do. I've already overthought this reply.\" — or Self humour: \"Guilty. It's a whole hobby.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Keeping It Light",
+      guideFront: "Banter mode — tease or jokingly brag?",
+      guideBack: "Two possible responses...",
+      description: "Two playful moves for banter — a warm tease (a light jab at them) and a jokingly brag (over-the-top swagger about something tiny). Both keep the mood up without any real edge.",
+      inputs: [
+        { q: "Your friend brags about beating you at a game once, months ago.", a: "Teasing: \"Still living off that one win, I see.\" — or Jokingly brag: \"Enjoy it. My comeback will be studied for generations.\"", bundle: 'free' },
+        { q: "Someone shows off a small kitchen success.", a: "Teasing: \"A whole chef now, are we?\" — or Jokingly brag: \"Meanwhile I made toast that didn't burn. We're both winning.\"", bundle: 'free' },
+        { q: "Your friend claims they're the funny one in the group.", a: "Teasing: \"Is that what you tell yourself?\" — or Jokingly brag: \"Bold claim to make while standing next to me.\"", bundle: 'pro' },
+        { q: "Someone challenges you to a pointless contest.", a: "Jokingly brag: \"You're very brave. I've never lost at anything that didn't matter.\" — or Teasing: \"You sure? Last time didn't go well for you.\"", bundle: 'pro' },
+      ]
     },
   ],
 

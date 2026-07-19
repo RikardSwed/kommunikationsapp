@@ -239,6 +239,45 @@ const challengesCollections = {
         { q: "Your pun makes the whole table groan.", a: "Hint: Self humour. \"I'll take that. Standing ovation, really.\"", bundle: 'free' },
         { q: "You explain a joke and it dies further in the explaining.", a: "Hint: Self humour. \"Nothing funnier than a joke with a footnote. I'll stop.\"", bundle: 'pro' },
       ]
+    },
+    {
+      name: "Getting Teased",
+      guideFront: "Someone jabs at you — how do you volley back?",
+      guideBack: "One way to play it...",
+      description: "Someone gives you a light jab. The move isn't to get defensive — it's to volley back warmly (teasing), own it (joke about my flaws), or laugh at yourself (self humour).",
+      inputs: [
+        { q: "A friend, grinning: \"Nice of you to finally show up.\"", a: "Hint: Joke about my flaws. \"I know — punctuality and I have never been close.\"", bundle: 'free' },
+        { q: "\"Is that seriously your third coffee today?\"", a: "Hint: Self humour. \"It is. I'm basically powered by it at this point.\"", bundle: 'free' },
+        { q: "\"Wow, you actually dressed up for once.\"", a: "Hint: Tease back. \"I did. Someone in this friendship has to.\"", bundle: 'free' },
+        { q: "\"You're such a grandpa, in bed by ten.\"", a: "Hint: Joke about my flaws. \"Proudly. My sleep schedule is my greatest achievement.\"", bundle: 'pro' },
+        { q: "\"Did you get lost on the way here again?\"", a: "Hint: Self humour. \"Obviously. I consider a direct route a personal failure.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Breaking a Silence",
+      guideFront: "It's gone quiet — how do you ease back in?",
+      guideBack: "One way to play it...",
+      description: "A conversation stalls or a room goes quiet. A light observation about the shared moment is the easiest way back in — name what's happening, warmly.",
+      inputs: [
+        { q: "A group chat goes completely silent after your message.", a: "Hint: Observation. \"Well, I've cleared the room. A gift, really.\"", bundle: 'free' },
+        { q: "You and a colleague run out of things to say in the lift.", a: "Hint: Observation. \"Lifts really are the longest ten seconds known to man.\"", bundle: 'free' },
+        { q: "A dinner table falls into an awkward pause.", a: "Hint: Observation. \"I love how we all decided to be mysterious at the same time.\"", bundle: 'free' },
+        { q: "A first date hits a lull.", a: "Hint: Observation. \"This is the part where we both pretend to check our phones.\"", bundle: 'pro' },
+        { q: "The meeting goes quiet when the host asks for questions.", a: "Hint: Observation. \"The silence of twelve people all hoping someone else speaks.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "When Someone's Showing Off",
+      guideFront: "They're laying it on thick — how do you keep it light?",
+      guideBack: "One way to play it...",
+      description: "Someone's laying it on a bit thick. You don't need to deflate them — a warm tease or a jokingly-bragged counter keeps it light without a real contest.",
+      inputs: [
+        { q: "A friend won't stop talking about their new car.", a: "Hint: Teasing. \"It's magnificent. Does it also do your talking for you?\"", bundle: 'free' },
+        { q: "Someone humble-brags about how busy and important they are.", a: "Hint: Teasing. \"Truly, we're lucky you found a gap in the schedule for us.\"", bundle: 'free' },
+        { q: "A colleague keeps mentioning their fancy holiday.", a: "Hint: Jokingly brag. \"Meanwhile I conquered my laundry pile. We've both had big weeks.\"", bundle: 'free' },
+        { q: "Someone one-ups every story you tell.", a: "Hint: Jokingly brag. \"You win. I'll just sit here being quietly, devastatingly humble.\"", bundle: 'pro' },
+        { q: "A friend shows off a bit of trivia to look clever.", a: "Hint: Teasing. \"Look at you, absolutely full of facts today.\"", bundle: 'pro' },
+      ]
     }
   ]
 };

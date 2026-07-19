@@ -603,6 +603,58 @@ const memorizeCollections = {
         { q: "Why is exaggerating a flaw funny rather than sad?", a: "The exaggeration signals you don't believe the worst version — the gap between claim and reality is the joke.", bundle: 'pro' },
         { q: "How do you use self humour when the criticism is real and expects a serious answer?", a: "Acknowledge the true part lightly first, then engage: \"You're not wrong — and that's the worst part.\" Once, then answer for real.", bundle: 'pro' },
       ]
+    },
+    {
+      name: "Observation Humour",
+      cards: [
+        { q: "What is observation humour?", a: "Pointing out something already a little absurd in the shared situation — noticing a joke rather than inventing one.", bundle: 'free' },
+        { q: "Why does observation humour land so reliably?", a: "Because you're both already seeing it — naming it out loud gives everyone permission to laugh at what they noticed.", bundle: 'free' },
+        { q: "What do you look for to find an observation?", a: "The gap between what's expected and what's actually happening — the queue by the empty till, the silence in a lively café.", bundle: 'free' },
+        { q: "How long should an observation be?", a: "One line. Say the thing, let it land, move on — explaining it kills it.", bundle: 'free' },
+        { q: "Why is observation humour low-risk socially?", a: "It targets the situation, not a person, so nobody's the butt of the joke — it bonds people over a shared moment.", bundle: 'free' },
+        { q: "What's the difference between an observation and a complaint?", a: "Same fact, different framing — a complaint says 'this is annoying,' an observation finds the absurd angle and invites a laugh.", bundle: 'pro' },
+        { q: "When does observation humour fall flat?", a: "When only you can see it. If the absurdity isn't shared, it reads as a private joke or a criticism.", bundle: 'pro' },
+        { q: "How does observation set up other humour moves?", a: "Noticing is the raw material — once you spot the absurd thing you can exaggerate it, tease around it, or just name it.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Teasing",
+      cards: [
+        { q: "What makes teasing land as warm rather than mean?", a: "The target is small and obvious, and your affection is clear — it's obvious you like the person.", bundle: 'free' },
+        { q: "What should you never tease about?", a: "An insecurity someone has shared, or something they can't change. Teasing works on harmless, chosen quirks.", bundle: 'free' },
+        { q: "How long should a tease be?", a: "One line, then move on. Repeating the same tease until it stops being funny turns warmth into nagging.", bundle: 'free' },
+        { q: "When should you not tease at all?", a: "When the person is already upset. Teasing needs a baseline of ease to read as play.", bundle: 'free' },
+        { q: "What keeps teasing balanced?", a: "Being ready to laugh at yourself too — teasing is a two-way game, not a one-way jab.", bundle: 'free' },
+        { q: "What's the difference between teasing and mocking?", a: "Teasing pulls someone closer with a shared laugh; mocking pushes them down. Warmth is the dividing line.", bundle: 'pro' },
+        { q: "Why does exaggeration make teasing safer?", a: "An obvious exaggeration signals play — no one thinks you mean it literally, so the sting is gone.", bundle: 'pro' },
+        { q: "How do you recover a tease that landed wrong?", a: "Drop the joke immediately, warm up, and if needed turn it on yourself — never double down.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Joke About My Flaws",
+      cards: [
+        { q: "What is the core idea behind joking about your flaws?", a: "Naming your own flaw first, with lightness — if you've made the joke, there's nothing left for anyone to use against you.", bundle: 'free' },
+        { q: "How is it different from self humour?", a: "Self humour is about your own awkward moment; joke about my flaws is a response to someone pointing at a flaw — you disarm the dig.", bundle: 'free' },
+        { q: "What's the technique when someone names a flaw?", a: "Own it plainly, then exaggerate it a touch or give it a fond label — agree so hard it becomes funny.", bundle: 'free' },
+        { q: "Why does owning the flaw disarm the other person?", a: "There's nothing to push against. Once you've agreed and joked, any further dig just repeats what you already said.", bundle: 'free' },
+        { q: "What should you avoid when joking about a flaw?", a: "Actually running yourself down. It's ownership with lightness, not agreeing that you're worthless.", bundle: 'free' },
+        { q: "Why does this work especially well in groups?", a: "It signals security and takes the ammunition off the table — the group laughs with you, not at you.", bundle: 'pro' },
+        { q: "When does it tip into self-deprecation?", a: "When the lightness drops and it reads as genuine self-criticism, or when you're clearly fishing to be contradicted.", bundle: 'pro' },
+        { q: "What if the flaw they name actually matters?", a: "Own the light version first to defuse, then address the real thing seriously if it needs it — one, then the other.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Jokingly Brag",
+      cards: [
+        { q: "What makes jokingly bragging funny rather than arrogant?", a: "The exaggeration is so obvious it's clearly play, and the thing you're 'bragging' about is trivial.", bundle: 'free' },
+        { q: "What's the ideal thing to jokingly brag about?", a: "Something small and mundane — parallel parking, the last slice — announced like a monumental achievement.", bundle: 'free' },
+        { q: "What tone keeps it from tipping into real arrogance?", a: "Warmth and self-awareness. You're in on the joke; you don't actually believe you're a genius.", bundle: 'free' },
+        { q: "How long should a jokingly brag be?", a: "One line, then move on. Explaining or milking it drains the fun.", bundle: 'free' },
+        { q: "What does jokingly bragging pair well with?", a: "Self humour — brag about one tiny thing, then joke about something you're hopeless at. The contrast is the fun.", bundle: 'free' },
+        { q: "Why is jokingly bragging the flip side of self-deprecation?", a: "Both are playful exaggeration about yourself — one inflates, one deflates — and both signal you don't take yourself too seriously.", bundle: 'pro' },
+        { q: "When does a jokingly brag fall flat?", a: "When the thing is too big to be obviously a joke, or the tone is too dry for people to tell you're playing.", bundle: 'pro' },
+        { q: "How does jokingly bragging show confidence?", a: "Only someone at ease can 'boast' as a joke — it plays with the very thing insecure people guard.", bundle: 'pro' },
+      ]
     }
   ]
 };
