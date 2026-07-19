@@ -588,5 +588,21 @@ const memorizeCollections = {
         { q: "What do you do when a story runs long and people start drifting?",       a: "Fast-forward: \"The short version: [resolution].\" Better to land it briefly than trail off." },
       ]
     }
+  ],
+
+  humourpractise: [
+    {
+      name: "Self Humour",
+      cards: [
+        { q: "What is the core idea behind self humour?", a: "Joking about yourself in a way that shows distance and ease — you see the flaw and don't take it too seriously. Not self-criticism; a sign of security.", bundle: 'free' },
+        { q: "What are the four techniques of self humour?", a: "Acknowledge with humour, exaggerate the flaw, accept with dignity, turn it into charm.", bundle: 'free' },
+        { q: "What's the difference between self humour and self-deprecation?", a: "Self humour shows distance — you find the flaw funny too. Self-deprecation diminishes you and invites others to confirm a negative view.", bundle: 'free' },
+        { q: "What does self humour signal to others?", a: "Security and self-awareness — you don't need to protect your image, and someone who can laugh at themselves is easier to be around.", bundle: 'free' },
+        { q: "When does self humour NOT work?", a: "When you genuinely feel bad or hurt. From real insecurity it reads as painful, not charming.", bundle: 'free' },
+        { q: "How can you tell healthy self humour from harmful?", a: "Healthy: you say it once, laugh, move on. Harmful: you repeat it, wait to be contradicted, or feel worse after.", bundle: 'pro' },
+        { q: "Why is exaggerating a flaw funny rather than sad?", a: "The exaggeration signals you don't believe the worst version — the gap between claim and reality is the joke.", bundle: 'pro' },
+        { q: "How do you use self humour when the criticism is real and expects a serious answer?", a: "Acknowledge the true part lightly first, then engage: \"You're not wrong — and that's the worst part.\" Once, then answer for real.", bundle: 'pro' },
+      ]
+    }
   ]
 };

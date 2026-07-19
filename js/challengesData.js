@@ -225,5 +225,20 @@ const challengesCollections = {
         { q: "The story involves someone who is also present.",                                   a: "Check in first: \"Is it okay if I tell this?\" or adjust on the fly so they come off well.", bundle: "pro" },
       ]
     }
+  ],
+
+  humourpractise: [
+    {
+      name: "When It Doesn't Land",
+      guideFront: "Your humour missed — how do you recover?",
+      guideBack: "One way to play it...",
+      description: "Your humour missed — a joke meets silence, gets taken seriously, or leaves an awkward pause. The skill is recovering lightly instead of explaining or apologising. Self humour is your main tool here: own the miss and move on.",
+      inputs: [
+        { q: "You crack a joke in a meeting and it's met with total silence.", a: "Hint: Self humour. \"Right — and that's why I kept my day job.\"", bundle: 'free' },
+        { q: "You say something clearly over-the-top and someone takes it seriously.", a: "Hint: Self humour. \"Oh — that was me being ridiculous, I should've flagged it.\"", bundle: 'free' },
+        { q: "Your pun makes the whole table groan.", a: "Hint: Self humour. \"I'll take that. Standing ovation, really.\"", bundle: 'free' },
+        { q: "You explain a joke and it dies further in the explaining.", a: "Hint: Self humour. \"Nothing funnier than a joke with a footnote. I'll stop.\"", bundle: 'pro' },
+      ]
+    }
   ]
 };

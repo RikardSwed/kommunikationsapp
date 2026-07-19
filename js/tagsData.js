@@ -50,5 +50,9 @@ const packTags = {
     'stories', 'anecdotes', 'narrative', 'engaging', 'hook',
     'punchline', 'structure', 'timing', 'sharing', 'performing'
   ],
+  humourpractise: [
+    'humour', 'self humour', 'wit', 'social confidence', 'lightness',
+    'awkward moments', 'laughing at yourself'
+  ],
   conversational: [],
 };

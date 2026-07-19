@@ -5,7 +5,7 @@
 // (DS.createCardMode / DS.createHandsfreeMode) and are declared in
 // app-modes.js and app-handsfree.js.
 
-const VERSION = 'v1.26.40';
+const VERSION = 'v1.26.41';
 
 // Pack icon map — global so both dashboard and favorites can use it
 const PACK_ICONS = {
@@ -21,6 +21,7 @@ const PACK_ICONS = {
   listeningresponding:'ti-ear',
   influenceframing:   'ti-bulb',
   storytelling:       'ti-book',
+  humourpractise:     'ti-mood-smile',
 };
 function packIcon(key) {
   const name = PACK_ICONS[key] || 'ti-cards';

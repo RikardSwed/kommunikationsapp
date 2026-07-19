@@ -107,6 +107,7 @@ applyInputCounterVisibility();
     criticism:      { label: 'Criticism & Correction',   minLevel: 'pro'       },
     teasing:        { label: 'Teasing & Playfulness',    minLevel: 'complete'  },
     storytelling:   { label: 'Storytelling',             minLevel: 'extended'  },
+    humourpractise: { label: 'Humour Practise (new)',    minLevel: 'freemium'  },
   };
 
   // Mode definitions per level
@@ -410,6 +411,26 @@ const BUNDLE_DEFS = {
       tier: 'extended',
       name: 'Domestic Situations',
       description: '3 sequences for home and close relationships — partners, family, and housemates.',
+    },
+  ],
+  humourpractise: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: 'Core self-humour situations, free for everyone.',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: 'Extra situations for each move — unlocked with Pro.',
+    },
+    {
+      id: 'family',
+      tier: 'pro-opt',
+      name: 'Family & Get-Togethers',
+      description: 'Humour for family dinners, reunions and holidays — same moves, home context.',
     },
   ]
 };

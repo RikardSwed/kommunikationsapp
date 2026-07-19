@@ -221,5 +221,31 @@ const mindsetCollections = {
         { q: "You tell a story and it lands flat — no one reacts as expected.", a: "Move on without retreating. Not every story lands with every audience. Your job was to share, not to perform.", bundle: "pro" },
       ]
     }
+  ],
+
+  humourpractise: [
+    {
+      name: "Self Humour Mindset",
+      description: "The thinking that makes self humour work: a flaw you can laugh at loses its power over you, and needing to look perfect is the real weakness — not the flaw itself.",
+      inputs: [
+        { q: "Why is laughing at your own flaw strength, not weakness?", a: "Seeing yourself clearly and not needing to look perfect is the strength. Protecting the image is the weak part — the flaw is just a fact.", bundle: 'free' },
+        { q: "What's the internal difference between self humour and fishing for reassurance?", a: "Self humour says 'yes, and I find this funny too.' Fishing says 'tell me I'm not that bad.' The tell is whether you need a response back.", bundle: 'free' },
+        { q: "Why does owning a flaw first take the sting out of it?", a: "If you've already named it lightly, there's nothing left to attack — anyone pointing it out is just agreeing with you.", bundle: 'free' },
+        { q: "What tips self humour into self-diminishment?", a: "Repeating it, waiting to be contradicted, or feeling worse after. Once is ease; three times is a bid for reassurance.", bundle: 'free' },
+        { q: "Why does the room relax when you laugh at yourself?", a: "It tells them the stakes are low. If you're not defending your image, they don't have to be careful around it.", bundle: 'free' },
+        { q: "Why doesn't a secure person need the flaw to be untrue?", a: "Their okay-ness doesn't rest on being flawless — the flaw can be completely real and still threaten nothing.", bundle: 'pro' },
+        { q: "How do you keep self humour from becoming the label people use?", a: "Aim it at small, obvious things and vary it. Named once with warmth it's charming; on repeat it becomes your headline.", bundle: 'pro' },
+        { q: "What's the link between self humour and letting others be imperfect?", a: "When you're relaxed about your own flaws, everyone else gets permission to be human — it lowers the room's need to perform.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Humour Mindset",
+      description: "The stance underneath every humour move: you're noticing what's already a little absurd, not performing to get a laugh — and you don't need it to land.",
+      inputs: [
+        { q: "What is the right internal posture for humour?", a: "Noticing, not performing. Humour comes from spotting when expectations break in a safe way — your job is to notice it, not manufacture it.", bundle: 'free' },
+        { q: "Why does trying too hard usually kill the joke?", a: "It signals you need the laugh. What lands comes from not needing it — the lighter your investment, the better it works.", bundle: 'free' },
+        { q: "What do you do when a joke falls flat?", a: "Move on without explaining or apologising. Self-irony saves it — 'and that's why I don't do stand-up' — then continue.", bundle: 'free' },
+      ]
+    }
   ]
 };

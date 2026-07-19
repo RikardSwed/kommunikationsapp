@@ -620,6 +620,28 @@ const collections = {
         { q: "Something unexpected that happened",       a: "Start with the hook, build the tension, land the twist cleanly.", bundle: "pro" },
       ]
     }
+  ],
+
+  humourpractise: [
+    {
+      name: "Self Humour",
+      guideFront: "Own the awkward moment lightly — don't put yourself down.",
+      guideBack: "One way to play it.",
+      description: "Self humour is joking about your own flaw or awkward moment to show you're at ease with it — the opposite of self-criticism.\n\nOne easy way in: name what just happened plainly, then add a light line that owns it without fishing for reassurance.\n\nThe trick is the difference from self-criticism — you're saying \"yes, and I find this funny too,\" not \"please tell me I'm not that bad.\"",
+      inputs: [
+        { q: "You call a colleague by the wrong name in a meeting — twice.", a: '"Okay, that\'s two wrong names in one meeting. I\'m going to stop while I\'m behind."', bundle: 'free' },
+        { q: "You show up in a full suit; everyone else is in jeans.", a: '"I see we all read very different emails this morning. I stand by mine."', bundle: 'free' },
+        { q: "You trip walking into the office in front of everyone.", a: '"Perfect entrance. I\'ve been practising that one all week."', bundle: 'free' },
+        { q: "You send a text complaining about someone — to that exact someone.", a: '"Well. I\'ve just given a masterclass in how not to use a phone."', bundle: 'free' },
+        { q: "You forget what you were saying halfway through your own point.", a: '"...and that brilliant thought is gone forever. It was going to change everything."', bundle: 'free' },
+        { q: "You confidently explain something, then realise you had it backwards.", a: '"Ignore all of that. I was very sure and very wrong — a specialty of mine."', bundle: 'pro' },
+        { q: "You wave back at someone who was waving at the person behind you.", a: '"Great, now we\'re friends. They just don\'t know it yet."', bundle: 'pro' },
+        { q: "You realise you've had spinach in your teeth through a whole lunch.", a: '"Everyone was too polite to say. I respect the commitment to my dignity."', bundle: 'pro' },
+        { q: "At a family dinner you knock over a full glass reaching for the bread.", a: '"And that\'s my contribution to the meal. You\'re all welcome."', bundle: 'family' },
+        { q: "A relative brings up an embarrassing story from when you were ten.", a: '"Ah yes, my villain origin story. Bold of you to summon it at the table."', bundle: 'family' },
+        { q: "You mix up everyone's kids' names at the reunion.", a: '"In my defence, there are forty of you and one of me."', bundle: 'family' },
+      ]
+    }
   ]
 };
 
