@@ -875,6 +875,7 @@ const multiStepCollections = {
       guideFront: "Two moves in sequence — jab, then soften...",
       guideBack: "The next move...",
       subtitle: "Teasing → Self Humour",
+      description: "A two-step combo: land a warm tease, then immediately soften it with self humour so the jab stays affectionate. Step 1 is the playful jab; step 2 turns it on yourself so no one's left stung — the recovery is what keeps it kind.",
       inputs: [
         {
           bundle: "free",
@@ -899,6 +900,7 @@ const multiStepCollections = {
       guideFront: "Two moves in sequence — observe, then tease...",
       guideBack: "The next move...",
       subtitle: "Observation → Teasing",
+      description: "A two-step combo: first name the absurd thing you both see (observation), then turn it into a warm tease of the person you're with. The observation opens the door and gets everyone laughing; the tease makes it personal and playful.",
       inputs: [
         {
           bundle: "free",
@@ -923,6 +925,7 @@ const multiStepCollections = {
       guideFront: "Two moves in sequence — swagger, then undercut...",
       guideBack: "The next move...",
       subtitle: "Jokingly Brag → Self Humour",
+      description: "A two-step combo: make an over-the-top, jokingly-proud claim about something tiny, then immediately undercut it with self humour. The swagger sets up the joke; the deflation lands it and keeps you likeable.",
       inputs: [
         {
           bundle: "free",

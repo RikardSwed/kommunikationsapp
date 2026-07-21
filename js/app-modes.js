@@ -125,6 +125,7 @@ DS.createCardMode({
     prevItemBtn: 'challPrevInputBtn', nextItemBtn: 'challNextInputBtn',
     closeBtn: 'challCloseBtn', settingsBtn: 'challSettingsBtn',
   },
+  info: { panel: 'challCardInfo', text: 'challCardInfoText', trigger: 'challName', close: 'challCardInfoClose' },
   getGroups: () => DS.loadGroups(challengesCollections, activeCollectionKey, 'inputs'),
   getItems: g => g.inputs,
   groupTitle: g => g.name,
@@ -148,6 +149,7 @@ DS.createCardMode({
     prevItemBtn: 'mindPrevInputBtn', nextItemBtn: 'mindNextInputBtn',
     closeBtn: 'mindCloseBtn', settingsBtn: 'mindSettingsBtn',
   },
+  info: { panel: 'mindCardInfo', text: 'mindCardInfoText', trigger: 'mindName', close: 'mindCardInfoClose' },
   getGroups: () => DS.loadGroups(mindsetCollections, activeCollectionKey, 'inputs'),
   getItems: g => g.inputs,
   groupTitle: g => g.name,
@@ -168,6 +170,7 @@ DS.createCardMode({
     counter: 'collCounter', subCounter: 'collSubCounter',
     closeBtn: 'collCloseBtn', settingsBtn: 'collSettingsBtn',
   },
+  info: { panel: 'collCardInfo', text: 'collCardInfoText', trigger: 'collName', close: 'collCardInfoClose' },
   // v1.26.26: Collections has its OWN data source (strategy combinations),
   // no longer shared with Single Strategy.
   getGroups: () => DS.loadGroups(collectionsModeData, activeCollectionKey, 'inputs'),
