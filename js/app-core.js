@@ -5,7 +5,7 @@
 // (DS.createCardMode / DS.createHandsfreeMode) and are declared in
 // app-modes.js and app-handsfree.js.
 
-const VERSION = 'v1.26.44';
+const VERSION = 'v1.26.45';
 
 // Keep every version label in the UI in sync with VERSION (v1.26.44).
 // The hardcoded strings in index.html are only fallbacks — this runs at
@@ -414,6 +414,59 @@ function _buildLibPackList() {
     .map(c => ({ key: c.dataset.key, label: c.dataset.label }))
     .filter(p => p.key && p.label);
 }
+
+// ─── TOPICS TAB (data-driven, v1.26.45) ───────────────────────────────
+// Render #libTabTopics from the TOPICS array (tagsData.js). Each pack
+// card mirrors its canonical card in #libTabPacks (single source of truth
+// for name/meta/label), so the two tabs can never drift. This MUST run
+// before the .collection-card binding loop below, before app-system's
+// applyAccessLevel, and before app-ui's initTopics — all three then pick
+// up the rendered cards exactly as they did the old static markup.
+function renderTopics() {
+  if (typeof TOPICS === 'undefined' || !Array.isArray(TOPICS)) return;
+  const host = document.querySelector('#libTabTopics .topic-accordion');
+  if (!host) return;
+  const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  const cap = s => s.charAt(0).toUpperCase() + s.slice(1);
+  host.innerHTML = TOPICS.map(topic => {
+    const keys = Array.isArray(topic.packs) ? topic.packs : [];
+    if (!keys.length) {
+      return `
+    <div class="topic-group topic-group--empty">
+      <div class="topic-header" data-topic="${esc(topic.id)}">
+        <div class="topic-title">${esc(topic.title)}</div>
+        <div class="topic-count topic-count--empty">No packs yet</div>
+        <div class="topic-chevron topic-chevron--empty">›</div>
+      </div>
+    </div>`;
+    }
+    const cards = keys.map(key => {
+      const src = document.querySelector(`#libTabPacks .collection-card[data-key="${key}"]`);
+      if (!src) { console.warn('[topics] no pack card in #libTabPacks for key:', key); return ''; }
+      const name = src.querySelector('.collection-name');
+      const meta = src.querySelector('.collection-meta');
+      const label = esc(src.getAttribute('data-label') || '');
+      const ext = src.classList.contains('collection-card--extended') ? ' collection-card--extended' : '';
+      return `
+        <div class="collection-card${ext}" data-key="${key}" data-label="${label}">
+          <div><div class="collection-name">${name ? name.innerHTML : key}</div><div class="collection-meta">${meta ? meta.innerHTML : ''}</div></div>
+          <div class="collection-arrow">›</div>
+        </div>`;
+    }).join('');
+    const n = keys.length;
+    return `
+    <div class="topic-group">
+      <div class="topic-header" data-topic="${esc(topic.id)}">
+        <div class="topic-title">${esc(topic.title)}</div>
+        <div class="topic-count">${n} pack${n === 1 ? '' : 's'}</div>
+        <div class="topic-chevron">›</div>
+      </div>
+      <div class="topic-packs" id="topic${cap(topic.id)}">${cards}
+      </div>
+    </div>`;
+  }).join('\n');
+}
+renderTopics();
 
 document.querySelectorAll('.collection-card').forEach(el => {
   const key   = el.dataset.key;

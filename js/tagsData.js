@@ -56,3 +56,37 @@ const packTags = {
   ],
   conversational: [],
 };
+
+// ─── TOPICS ──────────────────────────────────────────────────────────
+// Data source for the Library "Topics" tab (rendered by renderTopics in
+// app-core.js). Each topic groups one or more packs by theme; a pack may
+// appear under several topics (recommendation: max 2). `packs` holds pack
+// keys only — each card's name/meta/label is mirrored from its canonical
+// card in #libTabPacks, so the Packs and Topics tabs can never drift.
+// An empty `packs: []` renders as a "No packs yet" placeholder group.
+// Order here = display order in the tab. Edit via the Pack Editor's topic
+// field (export regenerates this array) or by hand.
+const TOPICS = [
+  { id: 'assertiveness',      title: 'Assertiveness',                             packs: ['assertive'] },
+  { id: 'humour',             title: 'Humour & Playfulness',                      packs: ['humour', 'teasing', 'selfhumour'] },
+  { id: 'criticism',          title: 'Criticism & Correction',                    packs: ['criticism'] },
+  { id: 'conversation',       title: 'Conversation & Flow',                       packs: ['conversational', 'conversationaldepth'] },
+  { id: 'compliments',        title: 'Compliments & Validation',                  packs: ['compliments'] },
+  { id: 'storytelling',       title: 'Storytelling & Explanation',                packs: ['storytelling'] },
+  { id: 'questions',          title: 'Questions & Conversation Starters',         packs: ['startingconnecting'] },
+  { id: 'transitions',        title: 'Transitions & Flow',                        packs: [] },
+  { id: 'emotions',           title: 'Emotions & Emotional Regulation',           packs: [] },
+  { id: 'opinions',           title: 'Opinions & Argumentation',                  packs: ['influenceframing'] },
+  { id: 'boundaries',         title: 'Boundaries & Refusal',                      packs: [] },
+  { id: 'rapport',            title: 'Rapport & Connection',                      packs: ['listeningresponding'] },
+  { id: 'bodyvoice',          title: 'Body Language & Voice',                     packs: [] },
+  { id: 'giving',             title: 'Giving & Receiving',                        packs: [] },
+  { id: 'observation',        title: 'Observation & Description',                 packs: [] },
+  { id: 'dynamics',           title: 'Conversation Dynamics',                     packs: [] },
+  { id: 'selfpresentation',   title: 'Self-Presentation',                         packs: [] },
+  { id: 'flirt',              title: 'Flirting',                                  packs: [] },
+  { id: 'emotionalboundaries',title: 'Emotional Refusal',                         packs: [] },
+  { id: 'leadership',         title: 'Leadership & Relationship Dynamics',        packs: [] },
+  { id: 'emotionregulation',  title: 'Emotional Regulation in Relationships',     packs: [] },
+  { id: 'relationshipcomm',   title: 'Communication in Relationships',            packs: [] },
+];
