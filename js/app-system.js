@@ -1670,6 +1670,69 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
             '&hellip;and again, just as calmly: &ldquo;I understand, but I\u2019m not able to help this weekend.&rdquo;</p>'
         }
       ]
+    },
+    humourpractise: {
+      pages: [
+        {
+          title: 'Humour Practise',
+          html:
+            '<p class="ob-text">This pack trains you to bring lightness into a conversation on purpose &mdash; ' +
+            'to play, tease and not take yourself too seriously, instead of waiting for a joke to happen.</p>' +
+            '<div class="ob-how">' +
+            '<div class="ob-how-row"><span class="ob-how-num">1</span><p><strong>Observation Humour</strong> &mdash; find something funny in the moment you\u2019re both in.</p></div>' +
+            '<div class="ob-how-row"><span class="ob-how-num">2</span><p><strong>Teasing</strong> &mdash; poke fun at the other person, warmly and lightly.</p></div>' +
+            '<div class="ob-how-row"><span class="ob-how-num">3</span><p><strong>Self Humour</strong> &mdash; laugh at yourself before anyone else has to.</p></div>' +
+            '<div class="ob-how-row"><span class="ob-how-num">4</span><p><strong>Joke About My Flaws</strong> &mdash; when someone points at a flaw, disarm it with a joke.</p></div>' +
+            '<div class="ob-how-row"><span class="ob-how-num">5</span><p><strong>Jokingly Brag</strong> &mdash; brag so big it&rsquo;s obviously a joke.</p></div>' +
+            '</div>' +
+            '<p class="ob-text ob-text--dim">There\u2019s rarely one right line here. Each page shows one way to play it &mdash; aim for a version that sounds like you.</p>'
+        },
+        {
+          title: 'Observation Humour',
+          html:
+            '<p class="ob-text">When there\u2019s nothing to react to, look at what\u2019s around you &mdash; the wait, the room, ' +
+            'the situation you\u2019re both stuck in &mdash; and point out something funny in it.</p>' +
+            '<p class="ob-text">It works because you\u2019re sharing the moment, not performing. The other person is already ' +
+            'in on it, because they can see exactly what you mean.</p>' +
+            '<p class="ob-text ob-text--dim">A long, silent lift ride&hellip;<br>&rarr; &ldquo;This is the most eye contact I\u2019ve avoided all day.&rdquo;</p>'
+        },
+        {
+          title: 'Teasing',
+          html:
+            '<p class="ob-text">Playfully poke fun at the other person about something small &mdash; always warm, never a real dig. ' +
+            'The affection has to show through.</p>' +
+            '<p class="ob-text">Good teasing says &ldquo;I notice you, and I\u2019m comfortable enough to play.&rdquo; It builds closeness &mdash; ' +
+            'as long as they can tell you\u2019re on their side.</p>' +
+            '<p class="ob-text ob-text--dim">&ldquo;You\u2019ve reorganised your desk again?&rdquo;<br>&rarr; &ldquo;At this point the desk should pay you rent.&rdquo;</p>'
+        },
+        {
+          title: 'Self Humour',
+          html:
+            '<p class="ob-text">Laugh at your own small mistakes and awkward moments before anyone else does. ' +
+            'You bring it up yourself, lightly.</p>' +
+            '<p class="ob-text">It shows you don\u2019t take yourself too seriously &mdash; which puts everyone at ease ' +
+            'and takes the sting out of the moment.</p>' +
+            '<p class="ob-text ob-text--dim">You walk straight into the glass door&hellip;<br>&rarr; &ldquo;Smooth. Meant to do that, obviously.&rdquo;</p>'
+        },
+        {
+          title: 'Joke About My Flaws',
+          html:
+            '<p class="ob-text">When someone points at a real flaw of yours, don\u2019t defend it &mdash; agree, and make it funny. ' +
+            'You take the criticism and turn it into a joke you\u2019re both in on.</p>' +
+            '<p class="ob-text">Because you got there first, there\u2019s nothing left to attack. Owning it lightly ' +
+            'is far stronger than denying it.</p>' +
+            '<p class="ob-text ob-text--dim">&ldquo;You\u2019re always late.&rdquo;<br>&rarr; &ldquo;Punctuality just isn\u2019t one of my three skills.&rdquo;</p>'
+        },
+        {
+          title: 'Jokingly Brag',
+          html:
+            '<p class="ob-text">Brag about yourself so wildly and obviously over-the-top that it can\u2019t be taken seriously. ' +
+            'The joke is that no one could.</p>' +
+            '<p class="ob-text">It\u2019s confidence played for laughs &mdash; you look secure enough to poke fun ' +
+            'at your own ego.</p>' +
+            '<p class="ob-text ob-text--dim">&ldquo;Nice parking.&rdquo;<br>&rarr; &ldquo;Thank you. They\u2019re thinking of putting my name on the spot.&rdquo;</p>'
+        }
+      ]
     }
   };
 
