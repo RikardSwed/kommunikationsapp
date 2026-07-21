@@ -5,7 +5,15 @@
 // (DS.createCardMode / DS.createHandsfreeMode) and are declared in
 // app-modes.js and app-handsfree.js.
 
-const VERSION = 'v1.26.43';
+const VERSION = 'v1.26.44';
+
+// Keep every version label in the UI in sync with VERSION (v1.26.44).
+// The hardcoded strings in index.html are only fallbacks — this runs at
+// startup so version bumps never need manual edits of those divs again.
+document.querySelectorAll('.settings-version').forEach(el => {
+  const t = el.textContent.trim();
+  if (!t || /^v\d/.test(t)) el.textContent = VERSION;
+});
 
 // Pack icon map — global so both dashboard and favorites can use it
 const PACK_ICONS = {
@@ -242,6 +250,8 @@ function showModeScreen(key, label) {
   if (window.progEndSession) progEndSession();
   navToMode();
   if (window.progStartSession) progStartSession(key, label);
+  // Pack intro (v1.26.44): first 3 opens of a pack with an intro defined
+  if (window.maybeShowPackIntro) maybeShowPackIntro(key);
 }
 
 // Set the navigation context (called by Library, Folders, Programs)
@@ -315,6 +325,8 @@ function goNextPack() {
   updateNextBtn();
   // Refresh mode-card locks for the new pack
   if (window.accessLevel && window.accessLevel.applyModeLocks) accessLevel.applyModeLocks();
+  // Pack intro (v1.26.44): arrow-navigation counts as opening the pack too
+  if (window.maybeShowPackIntro) maybeShowPackIntro(next.key);
 }
 
 // Save which training mode was last used for a pack

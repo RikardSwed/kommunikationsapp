@@ -105,6 +105,8 @@ const DS = (function () {
     function doOpen() {
       if (open) { doClose(); return; }
       open = true;
+      // The user found the name — remove the "tap to learn" hint instantly
+      if (window.hideTapHint) hideTapHint();
       text.textContent = getText() || 'No description available.';
       panel.classList.add('visible');
     }
@@ -600,6 +602,7 @@ const DS = (function () {
       const desc = cfg.groupDescription ? cfg.groupDescription(g)
                                         : (g && g.description);
       hfInfoOpen = true;
+      if (window.hideTapHint) hideTapHint();
       showInfo(desc || 'No description available.');
     }
     function closeHfInfo() {

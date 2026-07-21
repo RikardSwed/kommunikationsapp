@@ -130,8 +130,11 @@ applyInputCounterVisibility();
 
   function getLevel() {
     const stored = localStorage.getItem(LEVEL_KEY) || 'complete';
-    // Lifetime Pro (one-time purchase): the level never drops below pro
-    if (stored === 'freemium') {
+    // Lifetime Pro (one-time purchase): the level never drops below pro —
+    // UNLESS the level was set explicitly via the developer radio (v1.26.44).
+    // Picking "Freemium" there is a deliberate simulation and must win, so
+    // devs don't have to clear their purchases just to preview freemium.
+    if (stored === 'freemium' && localStorage.getItem('dev_level_forced') !== 'true') {
       try {
         const owned = JSON.parse(localStorage.getItem('ds_extended_owned')) || [];
         if (owned.includes('lifetime-pro')) return 'pro';
@@ -328,7 +331,13 @@ applyInputCounterVisibility();
   ['devLevelComplete', 'devLevelPro', 'devLevelFreemium'].forEach(id => {
     const el = document.getElementById(id);
     if (el) el.addEventListener('change', () => {
-      if (el.checked) { setLevel(el.value); applyAccessLevel(); }
+      if (el.checked) {
+        setLevel(el.value);
+        // Mark the level as explicitly chosen so it overrides the
+        // lifetime-pro auto-promotion in getLevel() (v1.26.44)
+        localStorage.setItem('dev_level_forced', 'true');
+        applyAccessLevel();
+      }
     });
   });
 
@@ -711,6 +720,41 @@ window.renderBundleSection = function(containerEl, packKey) {
   containerEl.appendChild(section);
 };
 
+// ─── INPUT COUNTER DEFAULT (v1.26.44) ─────────────────────────────────────
+// Global user setting: whether the input counter starts ON in every training
+// mode. Applied to all mode checkboxes at startup; the per-mode toggles still
+// work as session overrides, exactly as before.
+(function initInputCounterDefault() {
+  const IC_KEY  = 'ds_input_counter_default';
+  const toggle  = document.getElementById('inputCounterDefaultToggle');
+  const MODE_CBS = ['showInputCounter', 'hfShowInputCounter', 'hfMemShowInputCounter',
+                    'hfChallShowInputCounter', 'hfFlowShowInputCounter',
+                    'hfMindShowInputCounter', 'hfCollShowInputCounter'];
+
+  // Default is ON unless the user has turned the global setting off
+  function icDefault() { return localStorage.getItem(IC_KEY) !== 'false'; }
+
+  function applyDefaults() {
+    const on = icDefault();
+    MODE_CBS.forEach(id => {
+      const cb = document.getElementById(id);
+      if (cb) cb.checked = on;
+    });
+    if (typeof applyInputCounterVisibility === 'function') applyInputCounterVisibility();
+    if (typeof applyHfInputCounterVisibility === 'function') applyHfInputCounterVisibility();
+    if (toggle) toggle.checked = on;
+  }
+
+  if (toggle) {
+    toggle.addEventListener('change', () => {
+      localStorage.setItem(IC_KEY, toggle.checked ? 'true' : 'false');
+      applyDefaults();
+    });
+  }
+
+  applyDefaults();
+})();
+
 // ─── PROGRESS BAR ──────────────────────────────────────────────────────────────
 
 (function initProgressBar() {
@@ -988,6 +1032,9 @@ const resetFirstRunBtn = document.getElementById('resetFirstRunBtn');
 if (resetFirstRunBtn) resetFirstRunBtn.addEventListener('click', () => {
   ['fav_packs', 'dash_last_pack', 'ds_last_modes', 'ds_tap_hint_count',
    'ds_onboarding_done', 'ds_onboarding', 'ds_reco_packs'].forEach(k => localStorage.removeItem(k));
+  // Pack intro counters (v1.26.44) — dynamic keys, one per pack
+  Object.keys(localStorage).filter(k => k.indexOf('ds_packintro_') === 0)
+    .forEach(k => localStorage.removeItem(k));
   if (window._favRenderTab)  window._favRenderTab();
   if (window._favRenderDash) window._favRenderDash();
   if (window.renderContinueCard) window.renderContinueCard();
@@ -1557,4 +1604,136 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
   // schedule; the onboarding simply sits beneath it from the start.
   screen.style.display = 'flex';
   showStep(0);
+})();
+
+// ─── PACK INTROS (v1.26.44) ────────────────────────────────────────────
+// Informational per-pack intro in the onboarding style (Continue at the
+// bottom, Skip top right, progress dots). Shown automatically the first
+// 3 times a pack is opened; after that, tapping the pack NAME on the mode
+// screen replays it. Add a new pack intro by adding an entry to PACK_INTROS.
+(function initPackIntros() {
+  const screen = document.getElementById('packIntroScreen');
+  if (!screen) return;
+
+  const SHOW_TIMES = 3;
+
+  // page: { title, html } — html is the body below the title.
+  const PACK_INTROS = {
+    assertive: {
+      pages: [
+        {
+          title: 'Assertive Communication',
+          html:
+            '<p class="ob-text">This pack trains you to stand your ground calmly &mdash; ' +
+            'without getting defensive, without attacking back, and without giving in.</p>' +
+            '<div class="ob-how">' +
+            '<div class="ob-how-row"><span class="ob-how-num">1</span><p><strong>Fogging</strong> &mdash; calmly agree with the truth in a criticism.</p></div>' +
+            '<div class="ob-how-row"><span class="ob-how-num">2</span><p><strong>Negative Inquiry</strong> &mdash; ask for more about the criticism.</p></div>' +
+            '<div class="ob-how-row"><span class="ob-how-num">3</span><p><strong>Negative Assertion</strong> &mdash; own your mistakes without excuses.</p></div>' +
+            '<div class="ob-how-row"><span class="ob-how-num">4</span><p><strong>Broken Record</strong> &mdash; repeat your point, calmly, as needed.</p></div>' +
+            '</div>' +
+            '<p class="ob-text ob-text--dim">The next pages explain each strategy.</p>'
+        },
+        {
+          title: 'Fogging',
+          html:
+            '<p class="ob-text">When someone criticises you, calmly agree with whatever is true in it &mdash; ' +
+            'without defending yourself and without agreeing to change.</p>' +
+            '<p class="ob-text">Like fog, you give the critic nothing solid to push against. ' +
+            'The attack loses its power because you refuse to fight it.</p>' +
+            '<p class="ob-text ob-text--dim">&ldquo;You\u2019re late again.&rdquo;<br>&rarr; &ldquo;You\u2019re right, I am late.&rdquo;</p>'
+        },
+        {
+          title: 'Negative Inquiry',
+          html:
+            '<p class="ob-text">Instead of defending yourself, calmly ask for more: what exactly is the problem?</p>' +
+            '<p class="ob-text">It shows you are not afraid of the criticism &mdash; and it turns a vague attack ' +
+            'into concrete information you can actually use.</p>' +
+            '<p class="ob-text ob-text--dim">&ldquo;I don\u2019t like your attitude.&rdquo;<br>&rarr; &ldquo;What is it about my attitude that bothers you?&rdquo;</p>'
+        },
+        {
+          title: 'Negative Assertion',
+          html:
+            '<p class="ob-text">When you really have made a mistake, own it openly &mdash; ' +
+            'without excuses, and without beating yourself up.</p>' +
+            '<p class="ob-text">A mistake is a fact, not a verdict on who you are. ' +
+            'Accepting it calmly leaves the critic nothing more to add.</p>' +
+            '<p class="ob-text ob-text--dim">&ldquo;You forgot the report.&rdquo;<br>&rarr; &ldquo;Yes, I did &mdash; that was careless of me.&rdquo;</p>'
+        },
+        {
+          title: 'Broken Record',
+          html:
+            '<p class="ob-text">Repeat your point calmly, in the same even tone, as many times as it takes.</p>' +
+            '<p class="ob-text">You don\u2019t need new arguments, and you don\u2019t need to raise your voice. ' +
+            'Steady repetition shows that pressure will not move you.</p>' +
+            '<p class="ob-text ob-text--dim">&ldquo;I understand, but I\u2019m not able to help this weekend.&rdquo;<br>' +
+            '&hellip;and again, just as calmly: &ldquo;I understand, but I\u2019m not able to help this weekend.&rdquo;</p>'
+        }
+      ]
+    }
+  };
+
+  function show(key, forced) {
+    const intro = PACK_INTROS[key];
+    if (!intro) return;
+    const cKey = 'ds_packintro_' + key;
+    if (!forced) {
+      const n = parseInt(localStorage.getItem(cKey) || '0');
+      if (n >= SHOW_TIMES) return;
+      try { localStorage.setItem(cKey, n + 1); } catch (e) {}
+    }
+    screen.innerHTML =
+      '<div class="ob-top"><div class="ob-dots" id="piDots"></div>' +
+      '<button class="ob-skip" id="piSkipBtn">Skip</button></div>' +
+      intro.pages.map((p, i) =>
+        '<div class="ob-step" style="display:' + (i === 0 ? 'flex' : 'none') + ';">' +
+        '<h2 class="ob-title">' + p.title + '</h2>' + p.html + '</div>').join('') +
+      '<div class="ob-bottom"><button class="ob-next" id="piNextBtn">Continue</button></div>';
+
+    const steps   = Array.from(screen.querySelectorAll('.ob-step'));
+    const dotsEl  = screen.querySelector('#piDots');
+    const nextBtn = screen.querySelector('#piNextBtn');
+    dotsEl.innerHTML = steps.map((_, i) =>
+      '<span class="ob-dot' + (i === 0 ? ' ob-dot--active' : '') + '"></span>').join('');
+    const dots = Array.from(dotsEl.children);
+    let step = 0;
+
+    function showStep(i) {
+      steps.forEach((st, j) => { st.style.display = j === i ? 'flex' : 'none'; });
+      dots.forEach((d, j) => d.classList.toggle('ob-dot--active', j === i));
+      step = i;
+      nextBtn.textContent = (i === steps.length - 1) ? 'Got it' : 'Continue';
+    }
+    function finish() {
+      screen.classList.add('ob-leaving');
+      setTimeout(() => {
+        screen.style.display = 'none';
+        screen.classList.remove('ob-leaving');
+        screen.innerHTML = '';
+      }, 450);
+    }
+    nextBtn.addEventListener('click', () => {
+      if (step < steps.length - 1) showStep(step + 1);
+      else finish();
+    });
+    screen.querySelector('#piSkipBtn').addEventListener('click', finish);
+
+    screen.classList.remove('ob-leaving');
+    screen.style.display = 'flex';
+    showStep(0);
+  }
+
+  // Called by showModeScreen / goNextPack (app-core.js)
+  window.maybeShowPackIntro = key => show(key, false);
+  window.replayPackIntro    = key => show(key, true);
+
+  // Replay: tap the pack name on the mode screen
+  const nameEl = document.getElementById('modeCollectionName');
+  if (nameEl) {
+    nameEl.style.cursor = 'pointer';
+    nameEl.addEventListener('click', () => {
+      const k = window.activeCollectionKey;
+      if (k && PACK_INTROS[k]) show(k, true);
+    });
+  }
 })();
