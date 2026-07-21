@@ -3311,3 +3311,35 @@ body.feedback-mode    .al-bar { display: none !important; }
   opacity: 0;
   pointer-events: none;
 }
+
+/* ─── PACK INTRO (v1.26.44) ────────────────────────────────────────────
+   Per-pack informational intro shown the first 3 times a pack is opened
+   (and replayable by tapping the pack name on the mode screen). Reuses the
+   onboarding ob-* components; sits above the mode screen, below the splash. */
+#packIntroScreen {
+  position: fixed;
+  inset: 0;
+  z-index: 8500;
+  background: var(--ds-bg);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 18px 24px calc(24px + env(safe-area-inset-bottom, 0px));
+}
+@media (min-width: 700px) and (min-height: 500px) {
+  #packIntroScreen { max-width: var(--ds-shell-w); }
+}
+#packIntroScreen.ob-leaving {
+  transition: opacity 0.4s ease;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* ─── EXTENDED STORE: keep owned actions right-aligned (v1.26.44) ────────────
+   .ext-store-card-bottom uses space-between; once an item is bought the price
+   disappears, leaving .ext-store-actions as the only child — which
+   space-between then parks on the LEFT. Push it back to the right so
+   Info + Added sit exactly where Info + Add sat before the purchase. */
+.ext-store-card-bottom > .ext-store-actions:only-child { margin-left: auto; }
