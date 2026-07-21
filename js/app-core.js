@@ -5,7 +5,7 @@
 // (DS.createCardMode / DS.createHandsfreeMode) and are declared in
 // app-modes.js and app-handsfree.js.
 
-const VERSION = 'v1.26.46';
+const VERSION = 'v1.26.47';
 
 // Keep every version label in the UI in sync with VERSION (v1.26.44).
 // The hardcoded strings in index.html are only fallbacks — this runs at
@@ -199,6 +199,15 @@ function navFromTraining(id) {
 // ─── STATE — SHARED ───────────────────────────────────────────────────────────
 let activeCollectionKey   = null;
 let activeCollectionLabel = null;
+
+// v1.26.47: mirror these onto window so the window.* readers in app-system.js
+// (pack-intro replay on tapping the pack name, alKey autolog keys, and the
+// pack-settings header) see the live value. They are script-scoped `let`s, so
+// window.activeCollectionKey/Label were previously always undefined. The
+// getter/setter keeps the lexical binding (read bare elsewhere, e.g.
+// app-modes.js) and the window view in sync in both directions.
+Object.defineProperty(window, 'activeCollectionKey',   { get: () => activeCollectionKey,   set: v => { activeCollectionKey   = v; } });
+Object.defineProperty(window, 'activeCollectionLabel', { get: () => activeCollectionLabel, set: v => { activeCollectionLabel = v; } });
 
 // ─── NAVIGATION ──────────────────────────────────────────────────────────────
 function showHome() {
