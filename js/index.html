@@ -1,0 +1,2193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="Deckstack" />
+  <link rel="manifest" href="manifest.json?v=12646" />
+  <title>Deckstack</title>
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="stylesheet" href="css/style.css?v=12646" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
+</head>
+<body>
+
+<!-- SPLASH SCREEN -->
+<div id="splashScreen">
+  <div id="splashLogo">D</div>
+  <div id="splashName">Deckstack</div>
+</div>
+
+<!-- ONBOARDING (first run only) -->
+<div id="onboardingScreen" style="display:none;">
+  <div class="ob-top">
+    <div class="ob-dots" id="obDots"></div>
+    <button class="ob-skip" id="obSkipBtn">Skip</button>
+  </div>
+
+  <!-- Step 1 — Welcome -->
+  <div class="ob-step" data-step="0">
+    <div class="ob-logo">D</div>
+    <h1 class="ob-title">Welcome to Deckstack</h1>
+    <p class="ob-text">You've read the books. You know the advice.<br><strong>Deckstack is where you practice it.</strong></p>
+    <p class="ob-text ob-text--dim">Communication strategies you rehearse like flashcards — so they're actually there when a real conversation needs them.</p>
+  </div>
+
+  <!-- Step 2 — Habit question -->
+  <div class="ob-step" data-step="1" style="display:none;">
+    <h2 class="ob-title">Be honest —</h2>
+    <p class="ob-text">How often do you read great advice&hellip; and then never get to use it?</p>
+    <div class="ob-options" data-key="habit" data-type="single">
+      <button class="ob-option" data-val="always">All the time</button>
+      <button class="ob-option" data-val="sometimes">Sometimes</button>
+      <button class="ob-option" data-val="new">I'm new to this</button>
+    </div>
+    <p class="ob-text ob-text--dim ob-reassure" style="visibility:hidden;">That's exactly the gap Deckstack closes: knowing &rarr; doing.</p>
+  </div>
+
+  <!-- Step 3 — Interests -->
+  <div class="ob-step" data-step="2" style="display:none;">
+    <h2 class="ob-title">What would you like to get better at?</h2>
+    <p class="ob-text ob-text--dim">Pick as many as you like.</p>
+    <div class="ob-options ob-options--chips" data-key="interests" data-type="multi">
+      <button class="ob-option" data-val="starting">Starting conversations</button>
+      <button class="ob-option" data-val="conversation">Keeping conversations going</button>
+      <button class="ob-option" data-val="depth">Deeper conversations</button>
+      <button class="ob-option" data-val="storytelling">Storytelling &amp; presenting</button>
+      <button class="ob-option" data-val="humour">Humour &amp; banter</button>
+      <button class="ob-option" data-val="listening">Really listening</button>
+      <button class="ob-option" data-val="feedback">Giving &amp; receiving feedback</button>
+      <button class="ob-option" data-val="boundaries">Setting boundaries</button>
+      <button class="ob-option" data-val="influence">Influence &amp; leadership</button>
+    </div>
+  </div>
+
+  <!-- Step 4 — Training style -->
+  <div class="ob-step" data-step="3" style="display:none;">
+    <h2 class="ob-title">How do you like to train?</h2>
+    <div class="ob-options" data-key="style" data-type="single">
+      <button class="ob-option" data-val="cards">Short, focused card sessions</button>
+      <button class="ob-option" data-val="handsfree">Handsfree — while walking or doing chores</button>
+      <button class="ob-option" data-val="both">Both</button>
+    </div>
+  </div>
+
+  <!-- Step 5 — How it works -->
+  <div class="ob-step" data-step="4" style="display:none;">
+    <h2 class="ob-title">Here's the idea</h2>
+    <div class="ob-how">
+      <div class="ob-how-row"><span class="ob-how-num">1</span><p>Pick a strategy &mdash; like <em>The Broken Record</em> or <em>Negative Inquiry</em>.</p></div>
+      <div class="ob-how-row"><span class="ob-how-num">2</span><p>A card shows you a real situation. Pause. <strong>Visualize how you'd respond.</strong></p></div>
+      <div class="ob-how-row"><span class="ob-how-num">3</span><p>Flip the card for a strong example &mdash; then make it your own.</p></div>
+    </div>
+    <p class="ob-text ob-text--dim">A few cards a day, and the strategies start showing up in real conversations.</p>
+  </div>
+
+  <!-- Step 6 — Handsfree explainer (v1.26.40) -->
+  <div class="ob-step" data-step="5" style="display:none;">
+    <h2 class="ob-title">Or go handsfree</h2>
+    <p class="ob-text">Train with your ears &mdash; while walking, doing dishes, or commuting.</p>
+    <div class="ob-how">
+      <div class="ob-how-row"><span class="ob-how-num">1</span><p>The situation on the card is <strong>read aloud</strong> to you.</p></div>
+      <div class="ob-how-row"><span class="ob-how-num">2</span><p>You get <strong>thinking time</strong> to form your own response in your head.</p></div>
+      <div class="ob-how-row"><span class="ob-how-num">3</span><p>Then a strong suggested response is read aloud &mdash; compare it with yours.</p></div>
+    </div>
+    <p class="ob-text ob-text--dim">Everything is adjustable in the handsfree settings &mdash; like how much thinking time you get, the voice, and the pace.</p>
+  </div>
+
+  <div class="ob-bottom">
+    <button class="ob-next" id="obNextBtn">Continue</button>
+  </div>
+</div>
+
+<!-- PACK INTRO (v1.26.44) — filled and shown by initPackIntros in app-system.js -->
+<div id="packIntroScreen" style="display:none;"></div>
+
+<div class="dashboard-screen" id="dashboardScreen">
+
+  <!-- Hero banner: search + settings + welcome -->
+  <div class="dash-hero" id="dashHero">
+    <div class="home-topbar dash-topbar">
+      <div class="dash-search-bar" id="dashSearchBar">
+        <span class="dash-search-icon"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#aaa" stroke-width="1.8" stroke-linecap="round"><circle cx="6.5" cy="6.5" r="4.5"/><line x1="10" y1="10" x2="14" y2="14"/></svg></span>
+        <input class="dash-search-input" id="dashSearchInput" type="text" placeholder="Search" autocomplete="off" autocorrect="off" spellcheck="false" />
+        <button class="dash-search-clear" id="dashSearchClear" style="display:none;">&#x2715;</button>
+      </div>
+      <button class="topbar-btn dash-cancel-btn" id="homeSettingsBtn" title="Settings"><svg width="22" height="22" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 4.5h6l.7 3a7.5 7.5 0 0 1 2.3 1.35l2.9-.9 3 5.2-2.3 1.8a7.5 7.5 0 0 1 0 2.1l2.3 1.8-3 5.2-2.9-.9a7.5 7.5 0 0 1-2.3 1.35l-.7 3H13l-.7-3a7.5 7.5 0 0 1-2.3-1.35l-2.9.9-3-5.2 2.3-1.8a7.5 7.5 0 0 1 0-2.1L4.1 14.1l3-5.2 2.9.9A7.5 7.5 0 0 1 12.3 8Z"/><circle cx="16" cy="16" r="4.5"/></svg></button>
+    </div>
+    <div class="dash-welcome-text" id="dashWelcomeTitle">Welcome back</div>
+    <div class="dash-welcome-sub" id="dashWelcomeSubtitle">Ready to train?</div>
+  </div>
+
+  <!-- Default view (shown when not searching) -->
+  <div class="dashboard-scroll" id="dashScrollWrapper">
+  <div id="dashDefaultView">
+
+    <!-- Recent searches -->
+    <div id="dashRecentSection" style="display:none;">
+      <div class="dash-section-label">Recent searches</div>
+      <div id="dashRecentList"></div>
+    </div>
+
+    <!-- Last trained pack -->
+    <div id="dashLastPackSection" style="display:none;">
+      <div class="dash-section-label">Continue</div>
+      <div id="dashLastPackCard"></div>
+    </div>
+
+    <!-- Favorite packs -->
+    <div id="dashFavSection" style="display:none;">
+      <div class="dash-section-label">Favorites</div>
+      <div id="dashFavList"></div>
+    </div>
+
+    <!-- Recommended packs -->
+    <div id="dashRecommendedSection">
+      <div class="dash-section-label">Recommended</div>
+      <div class="collection-card" data-key="assertive" data-label="Assertive Communication" id="dashRecAssertive">
+        <div><div class="collection-name">Assertive Communication</div><div class="collection-meta">Start here · Core social skill</div></div>
+        <div class="collection-arrow">›</div>
+      </div>
+      <div class="collection-card" data-key="conversational" data-label="Conversational Skills" id="dashRecConversational">
+        <div><div class="collection-name">Conversational Skills</div><div class="collection-meta">Recommended · Everyday use</div></div>
+        <div class="collection-arrow">›</div>
+      </div>
+      <div class="collection-card" data-key="humour" data-label="Humour Practise" id="dashRecHumour">
+        <div><div class="collection-name">Humour Practise</div><div class="collection-meta">Popular · Build social ease</div></div>
+        <div class="collection-arrow">›</div>
+      </div>
+    </div>
+
+    <!-- Streak card (v1.26.37) — shown when progress tracking is on and streak >= 1 -->
+    <div id="dashStreakSection" style="display:none;">
+      <div class="dash-section-label">Your streak</div>
+      <div class="dash-streak-card">
+        <div class="dash-streak-flame">&#x1F525;</div>
+        <div>
+          <div class="dash-streak-count" id="dashStreakCount"></div>
+          <div class="dash-streak-sub" id="dashStreakSub"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Search results view (shown when searching) -->
+  <div id="dashSearchView" style="display:none;">
+    <div class="dash-section-label" style="margin-top:16px;">Results</div>
+    <div id="dashSearchResults"></div>
+    <div id="dashNoResults" style="display:none;">
+      <div class="dash-noresults">No packs found</div>
+    </div>
+  </div>
+  </div><!-- end dashboard-scroll -->
+
+</div>
+
+<!-- PROGRESS SCREEN -->
+<div class="progress-screen" id="progressScreen">
+
+  <!-- Banner -->
+  <div class="lib-banner prog-banner">
+    <div class="lib-banner-title">Progress</div>
+    <button class="lib-banner-btn" id="progressSettingsBtn" title="Progress settings"><svg width="22" height="22" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 4.5h6l.7 3a7.5 7.5 0 0 1 2.3 1.35l2.9-.9 3 5.2-2.3 1.8a7.5 7.5 0 0 1 0 2.1l2.3 1.8-3 5.2-2.9-.9a7.5 7.5 0 0 1-2.3 1.35l-.7 3H13l-.7-3a7.5 7.5 0 0 1-2.3-1.35l-2.9.9-3-5.2 2.3-1.8a7.5 7.5 0 0 1 0-2.1L4.1 14.1l3-5.2 2.9.9A7.5 7.5 0 0 1 12.3 8Z"/><circle cx="16" cy="16" r="4.5"/></svg></button>
+  </div>
+
+  <!-- Scrollable content -->
+  <div class="progress-scroll" id="progressScroll">
+
+    <!-- Intro text -->
+    <p class="prog-intro">Track your training and see how your consistency builds over time.</p>
+
+    <!-- Disabled state -->
+    <div id="progressDisabledMsg" style="display:none;">
+      <div class="placeholder-block">
+        <div class="placeholder-title">Tracking is off</div>
+        <div class="placeholder-text">Enable progress tracking in ⚙️ to start recording your training.</div>
+      </div>
+    </div>
+
+    <!-- Active state -->
+    <div id="progressContent">
+
+      <!-- Streak -->
+      <div class="prog-section">
+        <div class="prog-section-label">Streak</div>
+        <div class="prog-streak-row">
+          <div class="prog-streak-fire">🔥</div>
+          <div>
+            <div class="prog-streak-num" id="progStreakNum">0</div>
+            <div class="prog-streak-sub">days in a row</div>
+          </div>
+          <div class="prog-streak-best">
+            <div class="prog-streak-best-num" id="progStreakBest">0</div>
+            <div class="prog-streak-sub">best</div>
+          </div>
+        </div>
+        <!-- Mini calendar: last 14 days -->
+        <div class="prog-calendar" id="progCalendar"></div>
+      </div>
+
+      <!-- Goal -->
+      <div class="prog-section">
+        <div class="prog-section-label">Weekly goal</div>
+        <div class="prog-goal-row">
+          <div class="prog-goal-ring-wrap">
+            <svg class="prog-goal-ring" viewBox="0 0 64 64">
+              <circle class="prog-ring-bg" cx="32" cy="32" r="26" />
+              <circle class="prog-ring-fill" id="progRingFill" cx="32" cy="32" r="26"
+                stroke-dasharray="163.4" stroke-dashoffset="163.4" />
+            </svg>
+            <div class="prog-ring-label" id="progRingLabel">0%</div>
+          </div>
+          <div class="prog-goal-text">
+            <div class="prog-goal-main" id="progGoalMain">0 / 0 min</div>
+            <div class="prog-goal-sub" id="progGoalSub">this week</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Daily goal -->
+      <div class="prog-section" id="progDailySection">
+        <div class="prog-section-label">Daily goal</div>
+        <div class="prog-goal-row">
+          <div class="prog-goal-ring-wrap">
+            <svg class="prog-goal-ring" viewBox="0 0 64 64">
+              <circle class="prog-ring-bg" cx="32" cy="32" r="26" />
+              <circle class="prog-ring-fill" id="progDailyRingFill" cx="32" cy="32" r="26"
+                stroke-dasharray="163.4" stroke-dashoffset="163.4" />
+            </svg>
+            <div class="prog-ring-label" id="progDailyRingLabel">0%</div>
+          </div>
+          <div class="prog-goal-text">
+            <div class="prog-goal-main" id="progDailyGoalMain">0 / 0 min</div>
+            <div class="prog-goal-sub">today</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Period toggle + bars -->
+      <div class="prog-section">
+        <div class="prog-bar-header">
+          <div class="prog-section-label">Time per pack</div>
+          <div class="prog-period-toggle">
+            <button class="prog-period-btn active" id="progPeriodWeek" data-period="week">Week</button>
+            <button class="prog-period-btn" id="progPeriodMonth" data-period="month">Month</button>
+          </div>
+        </div>
+        <div class="prog-bars" id="progBars"></div>
+        <div class="prog-no-data" id="progBarsEmpty" style="display:none;">No training recorded yet.</div>
+      </div>
+
+      <!-- Total stats -->
+      <div class="prog-section prog-totals">
+        <div class="prog-total-item">
+          <div class="prog-total-num" id="progTotalMin">0</div>
+          <div class="prog-total-label">total minutes</div>
+        </div>
+        <div class="prog-total-item">
+          <div class="prog-total-num" id="progTotalCards">0</div>
+          <div class="prog-total-label">cards flipped</div>
+        </div>
+        <div class="prog-total-item">
+          <div class="prog-total-num" id="progTotalSessions">0</div>
+          <div class="prog-total-label">sessions</div>
+        </div>
+      </div>
+
+    </div><!-- end progressContent -->
+  </div><!-- end progress-scroll -->
+</div>
+
+<!-- PROGRESS SETTINGS OVERLAY -->
+<div class="settings-overlay" id="progressSettingsOverlay">
+  <div class="settings-panel">
+    <div class="settings-title">Progress Settings</div>
+    <div class="settings-row">
+      <label>Enable tracking</label>
+      <label class="toggle"><input type="checkbox" id="progTrackingToggle" /><span class="toggle-slider"></span></label>
+    </div>
+    <div id="progSettingsBody">
+      <div class="settings-row">
+        <label>Count streak when</label>
+      </div>
+      <div class="settings-row prog-indent">
+        <label class="settings-radio-label">
+          <input type="radio" name="streakMode" value="card" id="streakModeCard" checked /> Flipped at least 1 card
+        </label>
+      </div>
+      <div class="settings-row prog-indent">
+        <label class="settings-radio-label">
+          <input type="radio" name="streakMode" value="time" id="streakModeTime" /> Trained at least
+          <input type="number" id="streakMinThreshold" class="prog-num-input" value="5" min="1" max="60" /> min
+        </label>
+      </div>
+      <div class="settings-row">
+        <label>Weekly goal</label>
+        <select id="progWeeklyGoalSelect" class="prog-select">
+          <option value="30">30 min</option>
+          <option value="60" selected>60 min</option>
+          <option value="90">90 min</option>
+          <option value="120">120 min</option>
+          <option value="custom">Custom...</option>
+        </select>
+      </div>
+      <div class="settings-row" id="progWeeklyCustomRow" style="display:none;">
+        <label>Custom (minutes)</label>
+        <input type="number" id="progWeeklyCustom" class="prog-num-input" value="60" min="1" max="999" />
+      </div>
+      <div class="settings-row">
+        <label>Daily goal</label>
+        <select id="progDailyGoalSelect" class="prog-select">
+          <option value="none" selected>None</option>
+          <option value="5">5 min</option>
+          <option value="10">10 min</option>
+          <option value="15">15 min</option>
+          <option value="20">20 min</option>
+          <option value="custom">Custom...</option>
+        </select>
+      </div>
+      <div class="settings-row" id="progDailyCustomRow" style="display:none;">
+        <label>Custom (minutes)</label>
+        <input type="number" id="progDailyCustom" class="prog-num-input" value="10" min="1" max="999" />
+      </div>
+      <div class="settings-row">
+        <button id="progResetBtn" class="prog-reset-btn">Reset all progress data…</button>
+      </div>
+    </div>
+    <div class="settings-version">v1.26.44</div>
+    <button class="settings-close" id="progressSettingsClose">Done</button>
+  </div>
+</div>
+
+<!-- UPGRADE SCREEN -->
+<div class="upgrade-screen" id="upgradeScreen">
+
+  <div class="upgrade-scroll">
+
+    <div class="upgrade-hero">
+      <div class="upgrade-hero-title">Deckstack Pro</div>
+      <div class="upgrade-hero-sub">Everything in one unlock</div>
+    </div>
+
+    <!-- PRICE CARD -->
+    <div class="upgrade-price-card">
+      <div class="upgrade-price-row">
+        <span class="upgrade-price">149 kr</span>
+        <span class="upgrade-price-note">one-time purchase</span>
+      </div>
+      <button class="upgrade-cta-btn" id="upgradeCtaBtn">
+        Get Pro
+      </button>
+      <div class="upgrade-cta-sub">Payment not yet available · coming soon</div>
+    </div>
+
+    <!-- WHAT YOU GET -->
+    <div class="upgrade-section-label">What you get</div>
+
+    <div class="upgrade-feature-card">
+      <div class="upgrade-feature-row">
+        <div class="upgrade-feature-icon"><i class="ti ti-cards" aria-hidden="true"></i></div>
+        <div class="upgrade-feature-text">
+          <div class="upgrade-feature-name">All packs</div>
+          <div class="upgrade-feature-desc">Humour, Teasing &amp; Playfulness, Criticism &amp; Correction — plus all future packs</div>
+        </div>
+      </div>
+      <div class="upgrade-feature-row">
+        <div class="upgrade-feature-icon"><i class="ti ti-trophy" aria-hidden="true"></i></div>
+        <div class="upgrade-feature-text">
+          <div class="upgrade-feature-name">All training modes</div>
+          <div class="upgrade-feature-desc">Challenges, Mindset, Collections and all Handsfree variants</div>
+        </div>
+      </div>
+      <div class="upgrade-feature-row">
+        <div class="upgrade-feature-icon"><i class="ti ti-layout-grid" aria-hidden="true"></i></div>
+        <div class="upgrade-feature-text">
+          <div class="upgrade-feature-name">Programs</div>
+          <div class="upgrade-feature-desc">Structured learning paths — coming later this year</div>
+        </div>
+      </div>
+      <div class="upgrade-feature-row upgrade-feature-row--last">
+        <div class="upgrade-feature-icon"><i class="ti ti-refresh" aria-hidden="true"></i></div>
+        <div class="upgrade-feature-text">
+          <div class="upgrade-feature-name">All future content</div>
+          <div class="upgrade-feature-desc">New packs and updates included, no extra cost</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- COMPARISON -->
+    <div class="upgrade-section-label">Free vs Pro</div>
+
+    <div class="upgrade-compare-card">
+      <div class="upgrade-compare-header">
+        <div class="upgrade-compare-col-label"></div>
+        <div class="upgrade-compare-col-label">Free</div>
+        <div class="upgrade-compare-col-label upgrade-compare-col-label--pro">Pro</div>
+      </div>
+      <div class="upgrade-compare-row">
+        <div class="upgrade-compare-item">Assertive Communication</div>
+        <div class="upgrade-compare-check"><i class="ti ti-check" aria-hidden="true"></i></div>
+        <div class="upgrade-compare-check upgrade-compare-check--pro"><i class="ti ti-check" aria-hidden="true"></i></div>
+      </div>
+      <div class="upgrade-compare-row">
+        <div class="upgrade-compare-item">Conversational Skills</div>
+        <div class="upgrade-compare-check"><i class="ti ti-check" aria-hidden="true"></i></div>
+        <div class="upgrade-compare-check upgrade-compare-check--pro"><i class="ti ti-check" aria-hidden="true"></i></div>
+      </div>
+      <div class="upgrade-compare-row">
+        <div class="upgrade-compare-item">Humour, Teasing, Criticism</div>
+        <div class="upgrade-compare-check upgrade-compare-check--no"><i class="ti ti-x" aria-hidden="true"></i></div>
+        <div class="upgrade-compare-check upgrade-compare-check--pro"><i class="ti ti-check" aria-hidden="true"></i></div>
+      </div>
+      <div class="upgrade-compare-row">
+        <div class="upgrade-compare-item">Single Strategy &amp; Memorize</div>
+        <div class="upgrade-compare-check"><i class="ti ti-check" aria-hidden="true"></i></div>
+        <div class="upgrade-compare-check upgrade-compare-check--pro"><i class="ti ti-check" aria-hidden="true"></i></div>
+      </div>
+      <div class="upgrade-compare-row">
+        <div class="upgrade-compare-item">Challenges, Mindset, Collections</div>
+        <div class="upgrade-compare-check upgrade-compare-check--no"><i class="ti ti-x" aria-hidden="true"></i></div>
+        <div class="upgrade-compare-check upgrade-compare-check--pro"><i class="ti ti-check" aria-hidden="true"></i></div>
+      </div>
+      <div class="upgrade-compare-row upgrade-compare-row--last">
+        <div class="upgrade-compare-item">All Handsfree modes</div>
+        <div class="upgrade-compare-check upgrade-compare-check--no"><i class="ti ti-x" aria-hidden="true"></i></div>
+        <div class="upgrade-compare-check upgrade-compare-check--pro"><i class="ti ti-check" aria-hidden="true"></i></div>
+      </div>
+    </div>
+
+    <div class="upgrade-footer">Pricing and availability subject to change before launch.</div>
+
+  </div>
+</div>
+
+<!-- EXTENDED STORE SCREEN -->
+<div class="extended-screen" id="extendedScreen" style="display:none;">
+  <div class="extended-scroll">
+
+    <div class="extended-hero">
+      <div class="extended-hero-icon"><i class="ti ti-diamond" aria-hidden="true"></i></div>
+      <div class="extended-hero-title">Extended</div>
+      <div class="extended-hero-sub">Extra packs and programs, available individually</div>
+    </div>
+
+    <div class="ext-lifetime-card" id="extLifetimeCard"></div>
+
+    <div class="ext-search-wrap">
+      <input type="text" id="extSearchInput" class="ext-search-input" placeholder="Search — or enter a code" autocomplete="off" />
+    </div>
+    <div id="extSearchResults"></div>
+
+    <div id="extBrowse">
+      <div class="extended-section-label">Extra Packs</div>
+      <div id="extPackList"></div>
+      <button class="ext-load-more" id="extMorePacks" style="display:none;">Load more packs</button>
+
+      <div class="extended-section-label">Extra Programs</div>
+      <div id="extProgramList"></div>
+      <button class="ext-load-more" id="extMorePrograms" style="display:none;">Load more programs</button>
+
+      <div class="extended-section-label">Extra Input Bundles</div>
+      <div id="extBundleList"></div>
+      <button class="ext-load-more" id="extMoreBundles" style="display:none;">Load more bundles</button>
+
+      <div class="extended-section-label">Kits</div>
+      <div id="extKitList"></div>
+      <button class="ext-load-more" id="extMoreKits" style="display:none;">Load more kits</button>
+    </div>
+
+    <div class="extended-footer">Content added regularly. Purchases are permanent, but you need an active Pro plan to access Extended material.</div>
+
+  </div>
+</div>
+
+<!-- LIBRARY SCREEN (pack list) -->
+<div class="home-screen" id="homeScreen" style="display:none;">
+  <div class="lib-banner">
+    <button class="lib-banner-btn lib-banner-back" id="libBannerBackBtn" style="display:none;" title="Back">&#8592;</button>
+    <div class="lib-banner-title" id="libBannerTitle">Packs</div>
+    <button class="lib-banner-btn" id="libBannerPlusBtn" style="display:none;" title="Add">+</button>
+    <button class="lib-banner-btn lib-banner-edit" id="libBannerEditBtn" style="display:none;">Edit</button>
+  </div>
+
+  <!-- Sub-nav -->
+  <div class="library-subnav" id="librarySubnav">
+    <button class="library-subnav-btn active" data-lib-tab="packs">Packs</button>
+    <button class="library-subnav-btn" data-lib-tab="topics">Topics</button>
+    <button class="library-subnav-btn" data-lib-tab="programs">Programs</button>
+    <button class="library-subnav-btn" data-lib-tab="folders">Folders</button>
+    <button class="library-subnav-btn" data-lib-tab="favorites">Favorites</button>
+  </div>
+
+  <!-- Tab: Packs -->
+  <div class="library-tab-content" id="libTabPacks">
+    <div class="tab-info">Available packs</div>
+    <div class="collection-card" id="collectionAssertive" data-key="assertive" data-label="Assertive Communication">
+      <div><div class="collection-name">Assertive Communication</div><div class="collection-meta">4 strategies &nbsp;·&nbsp; Flashcard mode</div></div>
+      <div class="collection-arrow">›</div>
+    </div>
+    <div class="collection-card" id="collectionHumour" data-key="humour" data-label="Humour Practise">
+      <div><div class="collection-name">Humour Practise</div><div class="collection-meta">4 strategies &nbsp;·&nbsp; Flashcard mode</div></div>
+      <div class="collection-arrow">›</div>
+    </div>
+    <div class="collection-card" id="collectionTeasing" data-key="teasing" data-label="Teasing &amp; Playfulness">
+      <div><div class="collection-name">Teasing &amp; Playfulness</div><div class="collection-meta">7 strategies &nbsp;·&nbsp; Flashcard mode</div></div>
+      <div class="collection-arrow">›</div>
+    </div>
+    <div class="collection-card" id="collectionCriticism" data-key="criticism" data-label="Criticism &amp; Correction">
+      <div><div class="collection-name">Criticism &amp; Correction</div><div class="collection-meta">4 strategies &nbsp;·&nbsp; Flashcard mode</div></div>
+      <div class="collection-arrow">›</div>
+    </div>
+    <div class="collection-card" id="collectionConversational" data-key="conversational" data-label="Conversational Skills">
+      <div><div class="collection-name">Conversational Skills</div><div class="collection-meta">2 collections &nbsp;·&nbsp; Collections mode</div></div>
+      <div class="collection-arrow">›</div>
+    </div>
+    <div class="collection-card" id="collectionConversationalDepth" data-key="conversationaldepth" data-label="Conversational Depth">
+      <div><div class="collection-name">Conversational Depth</div><div class="collection-meta">4 strategies &nbsp;·&nbsp; Flashcard mode</div></div>
+      <div class="collection-arrow">›</div>
+    </div>
+    <div class="collection-card" id="collectionCompliments" data-key="compliments" data-label="Compliments &amp; Appreciation">
+      <div><div class="collection-name">Compliments &amp; Appreciation</div><div class="collection-meta">3 strategies &nbsp;·&nbsp; Flashcard mode</div></div>
+      <div class="collection-arrow">›</div>
+    </div>
+    <div class="collection-card" id="collectionSelfHumour" data-key="selfhumour" data-label="Self Humour &amp; Playfulness">
+      <div><div class="collection-name">Self Humour &amp; Playfulness</div><div class="collection-meta">4 strategies &nbsp;·&nbsp; Flashcard mode</div></div>
+      <div class="collection-arrow">›</div>
+    </div>
+    <div class="collection-card" id="collectionStartingConnecting" data-key="startingconnecting" data-label="Starting &amp; Connecting">
+      <div><div class="collection-name">Starting &amp; Connecting</div><div class="collection-meta">4 strategies &nbsp;·&nbsp; Flashcard mode</div></div>
+      <div class="collection-arrow">›</div>
+    </div>
+    <div class="collection-card" id="collectionListeningResponding" data-key="listeningresponding" data-label="Listening &amp; Responding">
+      <div><div class="collection-name">Listening &amp; Responding</div><div class="collection-meta">4 strategies &nbsp;·&nbsp; Flashcard mode</div></div>
+      <div class="collection-arrow">›</div>
+    </div>
+    <div class="collection-card" id="collectionInfluenceFraming" data-key="influenceframing" data-label="Influence &amp; Framing">
+      <div><div class="collection-name">Influence &amp; Framing</div><div class="collection-meta">4 strategies &nbsp;·&nbsp; Flashcard mode</div></div>
+      <div class="collection-arrow">›</div>
+    </div>
+    <div class="collection-card collection-card--extended" id="collectionStorytelling" data-key="storytelling" data-label="Storytelling" style="display:none;">
+      <div><div class="collection-name">Storytelling</div><div class="collection-meta">1 strategy &nbsp;·&nbsp; Flashcard mode</div></div>
+      <div class="collection-arrow">›</div>
+    </div>
+    <div class="collection-card" id="collectionHumourPractise" data-key="humourpractise" data-label="Humour Practise (new)">
+      <div><div class="collection-name">Humour Practise (new)</div><div class="collection-meta">5 strategies &nbsp;·&nbsp; Flashcard mode</div></div>
+      <div class="collection-arrow">›</div>
+    </div>
+  </div>
+
+  <!-- Tab: Topics -->
+  <div class="library-tab-content" id="libTabTopics" style="display:none;">
+    <div class="tab-info">Available packs organised by topics</div>
+    <div class="topic-accordion"><!-- v1.26.45: rendered dynamically from the TOPICS array (tagsData.js) by renderTopics() in app-core.js. The static groups below are a no-JS fallback and are REPLACED at runtime — edit TOPICS, not this block. -->
+      <div class="topic-group">
+        <div class="topic-header" data-topic="assertiveness">
+          <div class="topic-title">Assertiveness</div>
+          <div class="topic-count">1 pack</div>
+          <div class="topic-chevron">›</div>
+        </div>
+        <div class="topic-packs" id="topicAssertiveness">
+        <div class="collection-card" data-key="assertive" data-label="Assertive Communication">
+          <div><div class="collection-name">Assertive Communication</div><div class="collection-meta">4 strategies · Flashcard mode</div></div>
+          <div class="collection-arrow">›</div>
+        </div>
+        </div>
+      </div><!-- /topic-group assertiveness -->
+
+    <div class="topic-group">
+      <div class="topic-header" data-topic="humour">
+        <div class="topic-title">Humour &amp; Playfulness</div>
+        <div class="topic-count">3 packs</div>
+        <div class="topic-chevron">›</div>
+      </div>
+      <div class="topic-packs" id="topicHumour">
+        <div class="collection-card" data-key="humour" data-label="Humour Practise">
+          <div><div class="collection-name">Humour Practise</div><div class="collection-meta">4 strategies · Flashcard mode</div></div>
+          <div class="collection-arrow">›</div>
+        </div>
+        <div class="collection-card" data-key="teasing" data-label="Teasing &amp; Playfulness">
+          <div><div class="collection-name">Teasing &amp; Playfulness</div><div class="collection-meta">7 strategies · Flashcard mode</div></div>
+          <div class="collection-arrow">›</div>
+        </div>
+        <div class="collection-card" data-key="selfhumour" data-label="Self Humour &amp; Playfulness">
+          <div><div class="collection-name">Self Humour &amp; Playfulness</div><div class="collection-meta">4 strategies · Flashcard mode</div></div>
+          <div class="collection-arrow">›</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="topic-group">
+      <div class="topic-header" data-topic="criticism">
+        <div class="topic-title">Criticism &amp; Correction</div>
+        <div class="topic-count">1 pack</div>
+        <div class="topic-chevron">›</div>
+      </div>
+      <div class="topic-packs" id="topicCriticism">
+        <div class="collection-card" data-key="criticism" data-label="Criticism &amp; Correction">
+          <div><div class="collection-name">Criticism &amp; Correction</div><div class="collection-meta">4 strategies · Flashcard mode</div></div>
+          <div class="collection-arrow">›</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="topic-group">
+      <div class="topic-header" data-topic="conversation">
+        <div class="topic-title">Conversation &amp; Flow</div>
+        <div class="topic-count">2 packs</div>
+        <div class="topic-chevron">›</div>
+      </div>
+      <div class="topic-packs" id="topicConversation">
+        <div class="collection-card" data-key="conversational" data-label="Conversational Skills">
+          <div><div class="collection-name">Conversational Skills</div><div class="collection-meta">2 collections · Collections mode</div></div>
+          <div class="collection-arrow">›</div>
+        </div>
+        <div class="collection-card" data-key="conversationaldepth" data-label="Conversational Depth">
+          <div><div class="collection-name">Conversational Depth</div><div class="collection-meta">4 strategies · Flashcard mode</div></div>
+          <div class="collection-arrow">›</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="topic-group">
+      <div class="topic-header" data-topic="compliments">
+        <div class="topic-title">Compliments &amp; Validation</div>
+        <div class="topic-count">1 pack</div>
+        <div class="topic-chevron">›</div>
+      </div>
+      <div class="topic-packs" id="topicCompliments">
+        <div class="collection-card" data-key="compliments" data-label="Compliments &amp; Appreciation">
+          <div><div class="collection-name">Compliments &amp; Appreciation</div><div class="collection-meta">3 strategies · Flashcard mode</div></div>
+          <div class="collection-arrow">›</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="topic-group">
+      <div class="topic-header" data-topic="storytelling">
+        <div class="topic-title">Storytelling &amp; Explanation</div>
+        <div class="topic-count">1 pack</div>
+        <div class="topic-chevron">›</div>
+      </div>
+      <div class="topic-packs" id="topicStorytelling">
+        <div class="collection-card collection-card--extended" data-key="storytelling" data-label="Storytelling">
+          <div><div class="collection-name">Storytelling</div><div class="collection-meta">4 strategies · Flashcard mode</div></div>
+          <div class="collection-arrow">›</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="topic-group">
+      <div class="topic-header" data-topic="questions">
+        <div class="topic-title">Questions &amp; Conversation Starters</div>
+        <div class="topic-count">1 pack</div>
+        <div class="topic-chevron">›</div>
+      </div>
+      <div class="topic-packs" id="topicQuestions">
+        <div class="collection-card" data-key="startingconnecting" data-label="Starting &amp; Connecting">
+          <div><div class="collection-name">Starting &amp; Connecting</div><div class="collection-meta">4 strategies · Flashcard mode</div></div>
+          <div class="collection-arrow">›</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="topic-group topic-group--empty">
+      <div class="topic-header" data-topic="transitions">
+        <div class="topic-title">Transitions &amp; Flow</div>
+        <div class="topic-count topic-count--empty">No packs yet</div>
+        <div class="topic-chevron topic-chevron--empty">›</div>
+      </div>
+    </div>
+
+    <div class="topic-group topic-group--empty">
+      <div class="topic-header" data-topic="emotions">
+        <div class="topic-title">Emotions &amp; Emotional Regulation</div>
+        <div class="topic-count topic-count--empty">No packs yet</div>
+        <div class="topic-chevron topic-chevron--empty">›</div>
+      </div>
+    </div>
+
+    <div class="topic-group">
+      <div class="topic-header" data-topic="opinions">
+        <div class="topic-title">Opinions &amp; Argumentation</div>
+        <div class="topic-count">1 pack</div>
+        <div class="topic-chevron">›</div>
+      </div>
+      <div class="topic-packs" id="topicOpinions">
+        <div class="collection-card" data-key="influenceframing" data-label="Influence &amp; Framing">
+          <div><div class="collection-name">Influence &amp; Framing</div><div class="collection-meta">4 strategies · Flashcard mode</div></div>
+          <div class="collection-arrow">›</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="topic-group topic-group--empty">
+      <div class="topic-header" data-topic="boundaries">
+        <div class="topic-title">Boundaries &amp; Refusal</div>
+        <div class="topic-count topic-count--empty">No packs yet</div>
+        <div class="topic-chevron topic-chevron--empty">›</div>
+      </div>
+    </div>
+
+    <div class="topic-group">
+      <div class="topic-header" data-topic="rapport">
+        <div class="topic-title">Rapport &amp; Connection</div>
+        <div class="topic-count">1 pack</div>
+        <div class="topic-chevron">›</div>
+      </div>
+      <div class="topic-packs" id="topicRapport">
+        <div class="collection-card" data-key="listeningresponding" data-label="Listening &amp; Responding">
+          <div><div class="collection-name">Listening &amp; Responding</div><div class="collection-meta">4 strategies · Flashcard mode</div></div>
+          <div class="collection-arrow">›</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="topic-group topic-group--empty">
+      <div class="topic-header" data-topic="bodyvoice">
+        <div class="topic-title">Body Language &amp; Voice</div>
+        <div class="topic-count topic-count--empty">No packs yet</div>
+        <div class="topic-chevron topic-chevron--empty">›</div>
+      </div>
+    </div>
+
+    <div class="topic-group topic-group--empty">
+      <div class="topic-header" data-topic="giving">
+        <div class="topic-title">Giving &amp; Receiving</div>
+        <div class="topic-count topic-count--empty">No packs yet</div>
+        <div class="topic-chevron topic-chevron--empty">›</div>
+      </div>
+    </div>
+
+    <div class="topic-group topic-group--empty">
+      <div class="topic-header" data-topic="observation">
+        <div class="topic-title">Observation &amp; Description</div>
+        <div class="topic-count topic-count--empty">No packs yet</div>
+        <div class="topic-chevron topic-chevron--empty">›</div>
+      </div>
+    </div>
+
+    <div class="topic-group topic-group--empty">
+      <div class="topic-header" data-topic="dynamics">
+        <div class="topic-title">Conversation Dynamics</div>
+        <div class="topic-count topic-count--empty">No packs yet</div>
+        <div class="topic-chevron topic-chevron--empty">›</div>
+      </div>
+    </div>
+
+    <div class="topic-group topic-group--empty">
+      <div class="topic-header" data-topic="selfpresentation">
+        <div class="topic-title">Self-Presentation</div>
+        <div class="topic-count topic-count--empty">No packs yet</div>
+        <div class="topic-chevron topic-chevron--empty">›</div>
+      </div>
+    </div>
+
+    <div class="topic-group topic-group--empty">
+      <div class="topic-header" data-topic="flirt">
+        <div class="topic-title">Flirting</div>
+        <div class="topic-count topic-count--empty">No packs yet</div>
+        <div class="topic-chevron topic-chevron--empty">›</div>
+      </div>
+    </div>
+
+    <div class="topic-group topic-group--empty">
+      <div class="topic-header" data-topic="emotionalboundaries">
+        <div class="topic-title">Emotional Refusal</div>
+        <div class="topic-count topic-count--empty">No packs yet</div>
+        <div class="topic-chevron topic-chevron--empty">›</div>
+      </div>
+    </div>
+
+    <div class="topic-group topic-group--empty">
+      <div class="topic-header" data-topic="leadership">
+        <div class="topic-title">Leadership &amp; Relationship Dynamics</div>
+        <div class="topic-count topic-count--empty">No packs yet</div>
+        <div class="topic-chevron topic-chevron--empty">›</div>
+      </div>
+    </div>
+
+    <div class="topic-group topic-group--empty">
+      <div class="topic-header" data-topic="emotionregulation">
+        <div class="topic-title">Emotional Regulation in Relationships</div>
+        <div class="topic-count topic-count--empty">No packs yet</div>
+        <div class="topic-chevron topic-chevron--empty">›</div>
+      </div>
+    </div>
+
+    <div class="topic-group topic-group--empty">
+      <div class="topic-header" data-topic="relationshipcomm">
+        <div class="topic-title">Communication in Relationships</div>
+        <div class="topic-count topic-count--empty">No packs yet</div>
+        <div class="topic-chevron topic-chevron--empty">›</div>
+      </div>
+    </div>
+
+    </div><!-- /topic-accordion -->
+  </div><!-- /libTabTopics -->
+
+  <!-- Tab: Programs -->
+  <div class="library-tab-content" id="libTabPrograms" style="display:none;"></div>
+
+  <!-- Tab: Folders -->
+  <div class="library-tab-content" id="libTabFolders" style="display:none;"></div>
+
+  <!-- Tab: Favorites -->
+  <div class="library-tab-content" id="libTabFavorites" style="display:none;">
+    <div class="fav-sort-row" id="favSortRow" style="display:none;">
+      <button class="fav-sort-btn active" data-sort="pinned">Recently pinned</button>
+      <button class="fav-sort-btn" data-sort="az">A–Z</button>
+      <button class="fav-sort-btn" data-sort="used">Most used</button>
+    </div>
+    <div id="favEmptyState" class="library-placeholder">
+      <div class="library-placeholder-icon">&#x1F4CC;</div>
+      <div class="library-placeholder-title">No favorites yet</div>
+      <div class="library-placeholder-text">Open any pack and tap the pin icon to add it to your favorites.</div>
+    </div>
+    <div id="favList"></div>
+  </div>
+
+</div>
+<div class="mode-screen" id="modeScreen" style="display:none;">
+  <div class="mode-topbar">
+    <button class="topbar-btn" id="modeBackBtn">←</button>
+    <div class="mode-topbar-center">
+      <button class="topbar-btn" id="modePackSettingsBtn" aria-label="Pack settings">
+        <i class="ti ti-settings"></i>
+      </button>
+    </div>
+    <button class="topbar-btn" id="modeNextBtn" aria-label="Next pack" style="visibility:hidden;">&#8594;</button>
+  </div>
+  <div class="mode-header">
+    <div class="mode-collection-name" id="modeCollectionName"></div>
+    <div class="mode-subtitle">Choose a study mode</div>
+  </div>
+  <div class="mode-list">
+
+    <!-- HANDSFREE TOGGLE -->
+    <div class="mode-hf-toggle" id="modeHfToggle">
+      <span class="mode-hf-toggle-icon" id="modeHfToggleIcon">🎧</span>
+      <span class="mode-hf-toggle-label" id="modeHfToggleLabel">Switch to Handsfree</span>
+    </div>
+
+    <!-- FLIP CARDS (front = standard, back = handsfree) -->
+    <div class="mode-flip-card" id="modeFlip1">
+      <div class="mode-flip-inner">
+        <div class="mode-card mode-flip-front" id="modeFlashcard">
+          <div class="mode-icon"><i class="ti ti-cards" aria-hidden="true"></i></div>
+          <div class="mode-info"><div class="mode-name">Single Strategy</div><div class="mode-desc">Study one strategy at a time with example inputs</div></div>
+          <div class="mode-arrow">›</div>
+        </div>
+        <div class="mode-card mode-flip-back" id="modeHandsfree">
+          <div class="mode-icon"><i class="ti ti-headphones" aria-hidden="true"></i></div>
+          <div class="mode-info"><div class="mode-name">Handsfree: Single Strategy</div><div class="mode-desc">Listen and practise with your phone in your pocket</div></div>
+          <div class="mode-arrow">›</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mode-flip-card" id="modeFlip2">
+      <div class="mode-flip-inner">
+        <div class="mode-card mode-flip-front" id="modeCollections">
+          <div class="mode-icon"><i class="ti ti-layout-grid" aria-hidden="true"></i></div>
+          <div class="mode-info"><div class="mode-name">Collections</div><div class="mode-desc">Train across a themed collection of strategies</div></div>
+          <div class="mode-arrow">›</div>
+        </div>
+        <div class="mode-card mode-flip-back" id="modeHandsfreeCollections">
+          <div class="mode-icon"><i class="ti ti-headphones" aria-hidden="true"></i></div>
+          <div class="mode-info"><div class="mode-name">Handsfree: Collections</div><div class="mode-desc">Listen and train collections hands-free</div></div>
+          <div class="mode-arrow">›</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mode-flip-card" id="modeFlip3">
+      <div class="mode-flip-inner">
+        <div class="mode-card mode-flip-front" id="modeFlow">
+          <div class="mode-icon"><i class="ti ti-list-numbers" aria-hidden="true"></i></div>
+          <div class="mode-info"><div class="mode-name">Sequences</div><div class="mode-desc">Steps and situations in one seamless sequence</div></div>
+          <div class="mode-arrow">›</div>
+        </div>
+        <div class="mode-card mode-flip-back" id="modeHandsfreeSequences">
+          <div class="mode-icon"><i class="ti ti-headphones" aria-hidden="true"></i></div>
+          <div class="mode-info"><div class="mode-name">Handsfree: Sequences</div><div class="mode-desc">Listen and practise sequences hands-free</div></div>
+          <div class="mode-arrow">›</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mode-flip-card" id="modeFlip4">
+      <div class="mode-flip-inner">
+        <div class="mode-card mode-flip-front" id="modeChallenges">
+          <div class="mode-icon"><i class="ti ti-trophy" aria-hidden="true"></i></div>
+          <div class="mode-info"><div class="mode-name">Challenges</div><div class="mode-desc">Train on real situations, comments and feelings</div></div>
+          <div class="mode-arrow">›</div>
+        </div>
+        <div class="mode-card mode-flip-back" id="modeHandsfreeChallenges">
+          <div class="mode-icon"><i class="ti ti-headphones" aria-hidden="true"></i></div>
+          <div class="mode-info"><div class="mode-name">Handsfree: Challenges</div><div class="mode-desc">Listen and respond to challenges hands-free</div></div>
+          <div class="mode-arrow">›</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mode-flip-card" id="modeFlip5">
+      <div class="mode-flip-inner">
+        <div class="mode-card mode-flip-front" id="modeMindset">
+          <div class="mode-icon"><i class="ti ti-sparkles" aria-hidden="true"></i></div>
+          <div class="mode-info"><div class="mode-name">Mindset</div><div class="mode-desc">Train the thinking patterns behind each strategy</div></div>
+          <div class="mode-arrow">›</div>
+        </div>
+        <div class="mode-card mode-flip-back" id="modeHandsfreeMindset">
+          <div class="mode-icon"><i class="ti ti-headphones" aria-hidden="true"></i></div>
+          <div class="mode-info"><div class="mode-name">Handsfree: Mindset</div><div class="mode-desc">Listen and absorb mindset strategies hands-free</div></div>
+          <div class="mode-arrow">›</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mode-flip-card" id="modeFlip6">
+      <div class="mode-flip-inner">
+        <div class="mode-card mode-flip-front" id="modeMemorize">
+          <div class="mode-icon"><i class="ti ti-brain" aria-hidden="true"></i></div>
+          <div class="mode-info"><div class="mode-name">Memorize</div><div class="mode-desc">Learn strategies and challenges by heart</div></div>
+          <div class="mode-arrow">›</div>
+        </div>
+        <div class="mode-card mode-flip-back" id="modeHandsfreeMemorize">
+          <div class="mode-icon"><i class="ti ti-headphones" aria-hidden="true"></i></div>
+          <div class="mode-info"><div class="mode-name">Handsfree: Memorize</div><div class="mode-desc">Listen to theory cards with automatic playback</div></div>
+          <div class="mode-arrow">›</div>
+        </div>
+      </div>
+    </div>
+
+    <div style="height: 24px;"></div>
+
+  </div>
+</div>
+
+<!-- SINGLE STRATEGY TRAINING SCREEN -->
+<div class="app" id="trainingScreen" style="display:none;">
+  <div class="topbar">
+    <button class="topbar-btn" id="closeBtn">✕</button>
+    <span class="counter-group">
+      <span class="counter sub-counter" id="subCounter"></span>
+      <span class="counter-sep" id="counterSep">·</span>
+      <span class="counter" id="counter">1 / 4</span>
+    </span>
+    <button class="topbar-btn" id="settingsBtn"><svg width="22" height="22" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 4.5h6l.7 3a7.5 7.5 0 0 1 2.3 1.35l2.9-.9 3 5.2-2.3 1.8a7.5 7.5 0 0 1 0 2.1l2.3 1.8-3 5.2-2.9-.9a7.5 7.5 0 0 1-2.3 1.35l-.7 3H13l-.7-3a7.5 7.5 0 0 1-2.3-1.35l-2.9.9-3-5.2 2.3-1.8a7.5 7.5 0 0 1 0-2.1L4.1 14.1l3-5.2 2.9.9A7.5 7.5 0 0 1 12.3 8Z"/><circle cx="16" cy="16" r="4.5"/></svg></button>
+  </div>
+  <div class="divider"></div>
+  <div class="strategy-label" id="strategyName"></div>
+  <div class="card-area">
+    <div class="card" id="card">
+      <div class="card-inner" id="cardInner">
+        <div class="card-face card-front"><p class="card-text" id="inputText"></p><div class="fb-bar" id="fb-single-front"><button class="fb-btn" data-val="1"></button><button class="fb-btn" data-val="2"></button><button class="fb-btn" data-val="3"></button><button class="fb-btn" data-val="4"></button></div><div class="al-bar" id="al-single-front"><button class="al-btn" data-val="1">Free</button><button class="al-btn" data-val="2">Pro</button><button class="al-btn" data-val="3">Ext</button></div></div>
+        <div class="card-face card-back"><p class="card-text" id="answerText"></p><div class="fb-bar" id="fb-single-back"><button class="fb-btn" data-val="1"></button><button class="fb-btn" data-val="2"></button><button class="fb-btn" data-val="3"></button><button class="fb-btn" data-val="4"></button></div><div class="al-bar" id="al-single-back"><button class="al-btn" data-val="1">Free</button><button class="al-btn" data-val="2">Pro</button><button class="al-btn" data-val="3">Ext</button></div></div>
+      </div>
+      <div class="card-info" id="cardInfo">
+        <button class="card-info-close" id="cardInfoClose">✕</button>
+        <p class="card-info-text" id="cardInfoText"></p>
+      </div>
+    </div>
+  </div>
+  <div class="hint" id="hint">Tap card to reveal<br>↑ ↓ new input &nbsp;·&nbsp; ← → new strategy</div>
+  <div class="bottombar">
+    <button class="nav-btn" id="prevStratBtn">&#8592;</button>
+    <button class="nav-btn" id="prevInputBtn">&#8593;</button>
+    <button class="nav-btn" id="nextInputBtn">&#8595;</button>
+    <button class="nav-btn" id="nextStratBtn">&#8594;</button>
+  </div>
+</div>
+
+<!-- MEMORIZE TRAINING SCREEN -->
+<div class="app" id="memScreen" style="display:none;">
+  <div class="topbar">
+    <button class="topbar-btn" id="memCloseBtn">✕</button>
+    <span class="counter-group">
+      <span class="counter sub-counter" id="memSubCounter"></span>
+      <span class="counter-sep" id="memCounterSep">·</span>
+      <span class="counter" id="memCounter">1 / 4</span>
+    </span>
+    <button class="topbar-btn" id="memSettingsBtn"><svg width="22" height="22" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 4.5h6l.7 3a7.5 7.5 0 0 1 2.3 1.35l2.9-.9 3 5.2-2.3 1.8a7.5 7.5 0 0 1 0 2.1l2.3 1.8-3 5.2-2.9-.9a7.5 7.5 0 0 1-2.3 1.35l-.7 3H13l-.7-3a7.5 7.5 0 0 1-2.3-1.35l-2.9.9-3-5.2 2.3-1.8a7.5 7.5 0 0 1 0-2.1L4.1 14.1l3-5.2 2.9.9A7.5 7.5 0 0 1 12.3 8Z"/><circle cx="16" cy="16" r="4.5"/></svg></button>
+  </div>
+  <div class="divider"></div>
+  <div class="strategy-label" id="memStrategyName"></div>
+  <div class="card-area">
+    <div class="card" id="memCard">
+      <div class="card-inner" id="memCardInner">
+        <div class="card-face card-front"><p class="card-text" id="memQuestionText"></p><div class="fb-bar" id="fb-mem-front"><button class="fb-btn" data-val="1"></button><button class="fb-btn" data-val="2"></button><button class="fb-btn" data-val="3"></button><button class="fb-btn" data-val="4"></button></div><div class="al-bar" id="al-mem-front"><button class="al-btn" data-val="1">Free</button><button class="al-btn" data-val="2">Pro</button><button class="al-btn" data-val="3">Ext</button></div></div>
+        <div class="card-face card-back"><p class="card-text mem-back-text" id="memAnswerText"></p><div class="fb-bar" id="fb-mem-back"><button class="fb-btn" data-val="1"></button><button class="fb-btn" data-val="2"></button><button class="fb-btn" data-val="3"></button><button class="fb-btn" data-val="4"></button></div><div class="al-bar" id="al-mem-back"><button class="al-btn" data-val="1">Free</button><button class="al-btn" data-val="2">Pro</button><button class="al-btn" data-val="3">Ext</button></div></div>
+      </div>
+      <div class="card-info" id="memCardInfo">
+        <button class="card-info-close" id="memCardInfoClose">✕</button>
+        <p class="card-info-text" id="memCardInfoText"></p>
+      </div>
+    </div>
+  </div>
+  <div class="hint" id="memHint">Tap card to reveal<br>↑ ↓ next question &nbsp;·&nbsp; ← → new strategy</div>
+  <div class="bottombar">
+    <button class="nav-btn" id="memPrevStratBtn">&#8592;</button>
+    <button class="nav-btn" id="memPrevCardBtn">&#8593;</button>
+    <button class="nav-btn" id="memNextCardBtn">&#8595;</button>
+    <button class="nav-btn" id="memNextStratBtn">&#8594;</button>
+  </div>
+</div>
+
+<!-- MULTIPLE STEPS TRAINING SCREEN -->
+<div class="app" id="msScreen" style="display:none;">
+  <div class="topbar">
+    <button class="topbar-btn" id="msCloseBtn">✕</button>
+    <span class="counter" id="msStepCounter">Step 1 / 3</span>
+    <button class="topbar-btn" id="msInputCounter">1 / 3</button>
+  </div>
+  <div class="divider"></div>
+  <div class="ms-strategy-row">
+    <button class="ms-nav-btn" id="msPrevStrat">&#8592;</button>
+    <div class="ms-strategy-info">
+      <div class="ms-strategy-name" id="msStrategyName"></div>
+      <div class="ms-situation" id="msSituation"></div>
+    </div>
+    <button class="ms-nav-btn" id="msNextStrat">&#8594;</button>
+  </div>
+  <div class="card-area">
+    <div class="card" id="msCard">
+      <div class="card-inner" id="msCardInner">
+        <div class="card-face card-front"><p class="card-text" id="msStepText"></p></div>
+        <div class="card-face card-back"><p class="card-text ms-back-text" id="msAnswerText"></p></div>
+      </div>
+    </div>
+  </div>
+  <div class="hint" id="msHint">Tap card to reveal<br>← → change step &nbsp;·&nbsp; ↑ ↓ new situation</div>
+  <div class="bottombar">
+    <button class="nav-btn" id="msPrevStepBtn">&#8592;</button>
+    <button class="nav-btn" id="msPrevInputBtn">&#8593;</button>
+    <button class="nav-btn" id="msNextInputBtn">&#8595;</button>
+    <button class="nav-btn" id="msNextStepBtn">&#8594;</button>
+  </div>
+</div>
+
+<!-- SEQUENCES TRAINING SCREEN -->
+<div class="app" id="flowScreen" style="display:none;">
+  <div class="topbar">
+    <button class="topbar-btn" id="flowCloseBtn">✕</button>
+    <span class="counter-group">
+      <span class="counter sub-counter" id="flowSubCounter"></span>
+      <span class="counter-sep" id="flowCounterSep">·</span>
+      <span class="counter" id="flowCounter">1 / 2</span>
+    </span>
+    <button class="topbar-btn" id="flowSettingsBtn"><svg width="22" height="22" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 4.5h6l.7 3a7.5 7.5 0 0 1 2.3 1.35l2.9-.9 3 5.2-2.3 1.8a7.5 7.5 0 0 1 0 2.1l2.3 1.8-3 5.2-2.9-.9a7.5 7.5 0 0 1-2.3 1.35l-.7 3H13l-.7-3a7.5 7.5 0 0 1-2.3-1.35l-2.9.9-3-5.2 2.3-1.8a7.5 7.5 0 0 1 0-2.1L4.1 14.1l3-5.2 2.9.9A7.5 7.5 0 0 1 12.3 8Z"/><circle cx="16" cy="16" r="4.5"/></svg></button>
+  </div>
+  <div class="divider"></div>
+  <div class="strategy-label" id="flowComboName"></div>
+  <div class="card-area">
+    <div class="card" id="flowCard">
+      <div class="card-inner" id="flowCardInner">
+        <div class="card-face card-front"><p class="card-text" id="flowFrontText"></p><div class="fb-bar" id="fb-flow-front"><button class="fb-btn" data-val="1"></button><button class="fb-btn" data-val="2"></button><button class="fb-btn" data-val="3"></button><button class="fb-btn" data-val="4"></button></div><div class="al-bar" id="al-flow-front"><button class="al-btn" data-val="1">Free</button><button class="al-btn" data-val="2">Pro</button><button class="al-btn" data-val="3">Ext</button></div></div>
+        <div class="card-face card-back"><p class="card-text mem-back-text" id="flowBackText"></p><div class="fb-bar" id="fb-flow-back"><button class="fb-btn" data-val="1"></button><button class="fb-btn" data-val="2"></button><button class="fb-btn" data-val="3"></button><button class="fb-btn" data-val="4"></button></div><div class="al-bar" id="al-flow-back"><button class="al-btn" data-val="1">Free</button><button class="al-btn" data-val="2">Pro</button><button class="al-btn" data-val="3">Ext</button></div></div>
+      </div>
+      <div class="card-info" id="flowCardInfo">
+        <button class="card-info-close" id="flowCardInfoClose">✕</button>
+        <p class="card-info-text" id="flowCardInfoText"></p>
+      </div>
+    </div>
+  </div>
+  <div class="hint" id="flowHint">Tap card to reveal<br>↑ ↓ next card &nbsp;·&nbsp; ← → new combo</div>
+  <div class="bottombar">
+    <button class="nav-btn" id="flowPrevComboBtn">&#8592;</button>
+    <button class="nav-btn" id="flowPrevCardBtn">&#8593;</button>
+    <button class="nav-btn" id="flowNextCardBtn">&#8595;</button>
+    <button class="nav-btn" id="flowNextComboBtn">&#8594;</button>
+  </div>
+</div>
+
+<!-- GUIDED TRAINING SCREEN -->
+<div class="app" id="guidedScreen" style="display:none;">
+  <div class="topbar">
+    <button class="topbar-btn" id="guidedCloseBtn">✕</button>
+    <span class="counter" id="guidedCounter">1 / 2</span>
+    <button class="topbar-btn" id="guidedSettingsBtn"><svg width="22" height="22" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 4.5h6l.7 3a7.5 7.5 0 0 1 2.3 1.35l2.9-.9 3 5.2-2.3 1.8a7.5 7.5 0 0 1 0 2.1l2.3 1.8-3 5.2-2.9-.9a7.5 7.5 0 0 1-2.3 1.35l-.7 3H13l-.7-3a7.5 7.5 0 0 1-2.3-1.35l-2.9.9-3-5.2 2.3-1.8a7.5 7.5 0 0 1 0-2.1L4.1 14.1l3-5.2 2.9.9A7.5 7.5 0 0 1 12.3 8Z"/><circle cx="16" cy="16" r="4.5"/></svg></button>
+  </div>
+  <div class="divider"></div>
+  <div class="strategy-label" id="guidedComboName"></div>
+  <div class="card-area">
+    <div class="card" id="guidedCard">
+      <div class="card-inner" id="guidedCardInner">
+        <div class="card-face card-front">
+          <div class="guided-front-content">
+            <p class="card-text" id="guidedFrontText"></p>
+            <div class="guided-step-row">
+              <span class="guided-step-label" id="guidedStepLabel">Step 1 / 3</span>
+              <button class="guided-next-btn" id="guidedNextStepBtn">next step →</button>
+            </div>
+          </div>
+        </div>
+        <div class="card-face card-back">
+          <div class="guided-front-content">
+            <p class="card-text mem-back-text" id="guidedBackText"></p>
+            <div class="guided-step-row">
+              <span class="guided-step-label" id="guidedStepLabelBack">Step 1 / 3</span>
+              <button class="guided-next-btn" id="guidedNextStepBtnBack">next step →</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hint" id="guidedHint">Tap card to reveal<br>↑ ↓ new situation &nbsp;·&nbsp; ← → new combo</div>
+  <div class="bottombar">
+    <button class="nav-btn" id="guidedPrevComboBtn">&#8592;</button>
+    <button class="nav-btn" id="guidedPrevInputBtn">&#8593;</button>
+    <button class="nav-btn" id="guidedNextInputBtn">&#8595;</button>
+    <button class="nav-btn" id="guidedNextComboBtn">&#8594;</button>
+  </div>
+</div>
+
+<!-- HANDSFREE: SINGLE STRATEGY SCREEN -->
+<div class="app" id="hfScreen" style="display:none;">
+  <div class="topbar">
+    <button class="topbar-btn" id="hfCloseBtn">✕</button>
+    <span class="counter-group"><span class="counter sub-counter" id="hfSubCounter"></span><span class="counter-sep" id="hfCounterSep">·</span><span class="counter" id="hfCounter">1 / 4</span></span>
+    <button class="topbar-btn" id="hfSettingsBtn"><svg width="22" height="22" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 4.5h6l.7 3a7.5 7.5 0 0 1 2.3 1.35l2.9-.9 3 5.2-2.3 1.8a7.5 7.5 0 0 1 0 2.1l2.3 1.8-3 5.2-2.9-.9a7.5 7.5 0 0 1-2.3 1.35l-.7 3H13l-.7-3a7.5 7.5 0 0 1-2.3-1.35l-2.9.9-3-5.2 2.3-1.8a7.5 7.5 0 0 1 0-2.1L4.1 14.1l3-5.2 2.9.9A7.5 7.5 0 0 1 12.3 8Z"/><circle cx="16" cy="16" r="4.5"/></svg></button>
+  </div>
+  <div class="divider"></div>
+  <div class="strategy-label" id="hfStrategyName"></div>
+  <div class="card-area">
+    <div class="card" id="hfCard">
+      <div class="card-inner" id="hfCardInner">
+        <div class="card-face card-front"><p class="card-text" id="hfInputText"></p></div>
+        <div class="card-face card-back"><p class="card-text" id="hfAnswerText"></p></div>
+      </div>
+      <div class="card-info" id="hfCardInfo">
+        <button class="card-info-close" id="hfCardInfoClose">✕</button>
+        <p class="card-info-text" id="hfCardInfoText"></p>
+      </div>
+    </div>
+  </div>
+  <div class="hf-hint-row">
+    <div class="hf-transport-group">
+      <button class="hf-transport-btn hf-skip-btn" id="hfPrevStepBtn" aria-label="Previous strategy"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="19 20 9 12 19 4 19 20"/><line x1="5" y1="19" x2="5" y2="5"/></svg></button>
+      <button class="hf-transport-btn hf-play-btn" id="hfPlayBtn" aria-label="Play"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg></button>
+      <button class="hf-transport-btn hf-skip-btn" id="hfNextStepBtn" aria-label="Next strategy"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="5 4 15 12 5 20 5 4"/><line x1="19" y1="5" x2="19" y2="19"/></svg></button>
+    </div>
+  </div>
+
+</div>
+
+<!-- HANDSFREE: MEMORIZE SCREEN -->
+<div class="app" id="hfMemScreen" style="display:none;">
+  <div class="topbar">
+    <button class="topbar-btn" id="hfMemCloseBtn">✕</button>
+    <span class="counter-group"><span class="counter sub-counter" id="hfMemSubCounter"></span><span class="counter-sep" id="hfMemCounterSep">·</span><span class="counter" id="hfMemCounter">1 / 4</span></span>
+    <button class="topbar-btn" id="hfMemSettingsBtn"><svg width="22" height="22" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 4.5h6l.7 3a7.5 7.5 0 0 1 2.3 1.35l2.9-.9 3 5.2-2.3 1.8a7.5 7.5 0 0 1 0 2.1l2.3 1.8-3 5.2-2.9-.9a7.5 7.5 0 0 1-2.3 1.35l-.7 3H13l-.7-3a7.5 7.5 0 0 1-2.3-1.35l-2.9.9-3-5.2 2.3-1.8a7.5 7.5 0 0 1 0-2.1L4.1 14.1l3-5.2 2.9.9A7.5 7.5 0 0 1 12.3 8Z"/><circle cx="16" cy="16" r="4.5"/></svg></button>
+  </div>
+  <div class="divider"></div>
+  <div class="strategy-label" id="hfMemStrategyName"></div>
+  <div class="card-area">
+    <div class="card" id="hfMemCard">
+      <div class="card-inner" id="hfMemCardInner">
+        <div class="card-face card-front"><p class="card-text" id="hfMemQuestionText"></p></div>
+        <div class="card-face card-back"><p class="card-text mem-back-text" id="hfMemAnswerText"></p></div>
+      </div>
+      <div class="card-info" id="hfMemCardInfo">
+        <button class="card-info-close" id="hfMemCardInfoClose">✕</button>
+        <p class="card-info-text" id="hfMemCardInfoText"></p>
+      </div>
+    </div>
+  </div>
+  <div class="hf-hint-row">
+    <div class="hf-transport-group">
+      <button class="hf-transport-btn hf-skip-btn" id="hfMemPrevStepBtn" aria-label="Previous strategy"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="19 20 9 12 19 4 19 20"/><line x1="5" y1="19" x2="5" y2="5"/></svg></button>
+      <button class="hf-transport-btn hf-play-btn" id="hfMemPlayBtn" aria-label="Play"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg></button>
+      <button class="hf-transport-btn hf-skip-btn" id="hfMemNextStepBtn" aria-label="Next strategy"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="5 4 15 12 5 20 5 4"/><line x1="19" y1="5" x2="19" y2="19"/></svg></button>
+    </div>
+  </div>
+
+</div>
+
+<!-- HANDSFREE: CHALLENGES SCREEN -->
+<div class="app" id="hfChallScreen" style="display:none;">
+  <div class="topbar">
+    <button class="topbar-btn" id="hfChallCloseBtn">✕</button>
+    <span class="counter-group"><span class="counter sub-counter" id="hfChallSubCounter"></span><span class="counter-sep" id="hfChallCounterSep">·</span><span class="counter" id="hfChallCounter">1 / 7</span></span>
+    <button class="topbar-btn" id="hfChallSettingsBtn"><svg width="22" height="22" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 4.5h6l.7 3a7.5 7.5 0 0 1 2.3 1.35l2.9-.9 3 5.2-2.3 1.8a7.5 7.5 0 0 1 0 2.1l2.3 1.8-3 5.2-2.9-.9a7.5 7.5 0 0 1-2.3 1.35l-.7 3H13l-.7-3a7.5 7.5 0 0 1-2.3-1.35l-2.9.9-3-5.2 2.3-1.8a7.5 7.5 0 0 1 0-2.1L4.1 14.1l3-5.2 2.9.9A7.5 7.5 0 0 1 12.3 8Z"/><circle cx="16" cy="16" r="4.5"/></svg></button>
+  </div>
+  <div class="divider"></div>
+  <div class="strategy-label" id="hfChallName"></div>
+  <div class="card-area">
+    <div class="card" id="hfChallCard">
+      <div class="card-inner" id="hfChallCardInner">
+        <div class="card-face card-front"><p class="card-text" id="hfChallFrontText"></p></div>
+        <div class="card-face card-back"><p class="card-text" id="hfChallBackText"></p></div>
+      </div>
+      <div class="card-info" id="hfChallCardInfo">
+        <button class="card-info-close" id="hfChallCardInfoClose">✕</button>
+        <p class="card-info-text" id="hfChallCardInfoText"></p>
+      </div>
+    </div>
+  </div>
+  <div class="hf-hint-row">
+    <div class="hf-transport-group">
+      <button class="hf-transport-btn hf-skip-btn" id="hfChallPrevStepBtn" aria-label="Previous strategy"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="19 20 9 12 19 4 19 20"/><line x1="5" y1="19" x2="5" y2="5"/></svg></button>
+      <button class="hf-transport-btn hf-play-btn" id="hfChallPlayBtn" aria-label="Play"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg></button>
+      <button class="hf-transport-btn hf-skip-btn" id="hfChallNextStepBtn" aria-label="Next strategy"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="5 4 15 12 5 20 5 4"/><line x1="19" y1="5" x2="19" y2="19"/></svg></button>
+    </div>
+  </div>
+
+</div>
+
+<!-- HANDSFREE: SEQUENCES SCREEN -->
+<div class="app" id="hfFlowScreen" style="display:none;">
+  <div class="topbar">
+    <button class="topbar-btn" id="hfFlowCloseBtn">✕</button>
+    <span class="counter-group"><span class="counter sub-counter" id="hfFlowSubCounter"></span><span class="counter-sep" id="hfFlowCounterSep">·</span><span class="counter" id="hfFlowCounter">1 / 2</span></span>
+    <button class="topbar-btn" id="hfFlowSettingsBtn"><svg width="22" height="22" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 4.5h6l.7 3a7.5 7.5 0 0 1 2.3 1.35l2.9-.9 3 5.2-2.3 1.8a7.5 7.5 0 0 1 0 2.1l2.3 1.8-3 5.2-2.9-.9a7.5 7.5 0 0 1-2.3 1.35l-.7 3H13l-.7-3a7.5 7.5 0 0 1-2.3-1.35l-2.9.9-3-5.2 2.3-1.8a7.5 7.5 0 0 1 0-2.1L4.1 14.1l3-5.2 2.9.9A7.5 7.5 0 0 1 12.3 8Z"/><circle cx="16" cy="16" r="4.5"/></svg></button>
+  </div>
+  <div class="divider"></div>
+  <div class="strategy-label" id="hfFlowComboName"></div>
+  <div class="card-area">
+    <div class="card" id="hfFlowCard">
+      <div class="card-inner" id="hfFlowCardInner">
+        <div class="card-face card-front"><p class="card-text" id="hfFlowFrontText"></p></div>
+        <div class="card-face card-back"><p class="card-text" id="hfFlowBackText"></p></div>
+      </div>
+      <div class="card-info" id="hfFlowCardInfo">
+        <button class="card-info-close" id="hfFlowCardInfoClose">✕</button>
+        <p class="card-info-text" id="hfFlowCardInfoText"></p>
+      </div>
+    </div>
+  </div>
+  <div class="hf-hint-row">
+    <div class="hf-transport-group">
+      <button class="hf-transport-btn hf-skip-btn" id="hfFlowPrevStepBtn" aria-label="Previous strategy"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="19 20 9 12 19 4 19 20"/><line x1="5" y1="19" x2="5" y2="5"/></svg></button>
+      <button class="hf-transport-btn hf-play-btn" id="hfFlowPlayBtn" aria-label="Play"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg></button>
+      <button class="hf-transport-btn hf-skip-btn" id="hfFlowNextStepBtn" aria-label="Next strategy"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="5 4 15 12 5 20 5 4"/><line x1="19" y1="5" x2="19" y2="19"/></svg></button>
+    </div>
+  </div>
+
+</div>
+
+<!-- HANDSFREE: MINDSET SCREEN -->
+<div class="app" id="hfMindScreen" style="display:none;">
+  <div class="topbar">
+    <button class="topbar-btn" id="hfMindCloseBtn">✕</button>
+    <span class="counter-group"><span class="counter sub-counter" id="hfMindSubCounter"></span><span class="counter-sep" id="hfMindCounterSep">·</span><span class="counter" id="hfMindCounter">1 / 9</span></span>
+    <button class="topbar-btn" id="hfMindSettingsBtn"><svg width="22" height="22" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 4.5h6l.7 3a7.5 7.5 0 0 1 2.3 1.35l2.9-.9 3 5.2-2.3 1.8a7.5 7.5 0 0 1 0 2.1l2.3 1.8-3 5.2-2.9-.9a7.5 7.5 0 0 1-2.3 1.35l-.7 3H13l-.7-3a7.5 7.5 0 0 1-2.3-1.35l-2.9.9-3-5.2 2.3-1.8a7.5 7.5 0 0 1 0-2.1L4.1 14.1l3-5.2 2.9.9A7.5 7.5 0 0 1 12.3 8Z"/><circle cx="16" cy="16" r="4.5"/></svg></button>
+  </div>
+  <div class="divider"></div>
+  <div class="strategy-label" id="hfMindName"></div>
+  <div class="card-area">
+    <div class="card" id="hfMindCard">
+      <div class="card-inner" id="hfMindCardInner">
+        <div class="card-face card-front"><p class="card-text" id="hfMindFrontText"></p></div>
+        <div class="card-face card-back"><p class="card-text" id="hfMindBackText"></p></div>
+      </div>
+      <div class="card-info" id="hfMindCardInfo">
+        <button class="card-info-close" id="hfMindCardInfoClose">✕</button>
+        <p class="card-info-text" id="hfMindCardInfoText"></p>
+      </div>
+    </div>
+  </div>
+  <div class="hf-hint-row">
+    <div class="hf-transport-group">
+      <button class="hf-transport-btn hf-skip-btn" id="hfMindPrevStepBtn" aria-label="Previous strategy"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="19 20 9 12 19 4 19 20"/><line x1="5" y1="19" x2="5" y2="5"/></svg></button>
+      <button class="hf-transport-btn hf-play-btn" id="hfMindPlayBtn" aria-label="Play"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg></button>
+      <button class="hf-transport-btn hf-skip-btn" id="hfMindNextStepBtn" aria-label="Next strategy"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="5 4 15 12 5 20 5 4"/><line x1="19" y1="5" x2="19" y2="19"/></svg></button>
+    </div>
+  </div>
+
+</div>
+
+<!-- HANDSFREE: COLLECTIONS SCREEN -->
+<div class="app" id="hfCollScreen" style="display:none;">
+  <div class="topbar">
+    <button class="topbar-btn" id="hfCollCloseBtn">✕</button>
+    <span class="counter-group"><span class="counter sub-counter" id="hfCollSubCounter"></span><span class="counter-sep" id="hfCollCounterSep">·</span><span class="counter" id="hfCollCounter">1 / 2</span></span>
+    <button class="topbar-btn" id="hfCollSettingsBtn"><svg width="22" height="22" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 4.5h6l.7 3a7.5 7.5 0 0 1 2.3 1.35l2.9-.9 3 5.2-2.3 1.8a7.5 7.5 0 0 1 0 2.1l2.3 1.8-3 5.2-2.9-.9a7.5 7.5 0 0 1-2.3 1.35l-.7 3H13l-.7-3a7.5 7.5 0 0 1-2.3-1.35l-2.9.9-3-5.2 2.3-1.8a7.5 7.5 0 0 1 0-2.1L4.1 14.1l3-5.2 2.9.9A7.5 7.5 0 0 1 12.3 8Z"/><circle cx="16" cy="16" r="4.5"/></svg></button>
+  </div>
+  <div class="divider"></div>
+  <div class="strategy-label" id="hfCollName"></div>
+  <div class="card-area">
+    <div class="card" id="hfCollCard">
+      <div class="card-inner" id="hfCollCardInner">
+        <div class="card-face card-front"><p class="card-text" id="hfCollFrontText"></p></div>
+        <div class="card-face card-back"><p class="card-text" id="hfCollBackText"></p></div>
+      </div>
+      <div class="card-info" id="hfCollCardInfo">
+        <button class="card-info-close" id="hfCollCardInfoClose">✕</button>
+        <p class="card-info-text" id="hfCollCardInfoText"></p>
+      </div>
+    </div>
+  </div>
+  <div class="hf-hint-row">
+    <div class="hf-transport-group">
+      <button class="hf-transport-btn hf-skip-btn" id="hfCollPrevStepBtn" aria-label="Previous strategy"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="19 20 9 12 19 4 19 20"/><line x1="5" y1="19" x2="5" y2="5"/></svg></button>
+      <button class="hf-transport-btn hf-play-btn" id="hfCollPlayBtn" aria-label="Play"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg></button>
+      <button class="hf-transport-btn hf-skip-btn" id="hfCollNextStepBtn" aria-label="Next strategy"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="5 4 15 12 5 20 5 4"/><line x1="19" y1="5" x2="19" y2="19"/></svg></button>
+    </div>
+  </div>
+
+</div>
+
+<!-- SETTINGS: GENERAL -->
+<div class="settings-overlay" id="settingsOverlay">
+  <div class="settings-panel">
+    <div class="settings-title">Settings</div>
+    <div class="settings-row">
+      <label>Shuffle strategies</label>
+      <label class="toggle"><input type="checkbox" id="shuffleStrategies" /><span class="toggle-slider"></span></label>
+    </div>
+    <div class="settings-row">
+      <label>Shuffle inputs</label>
+      <label class="toggle"><input type="checkbox" id="shuffleInputs" /><span class="toggle-slider"></span></label>
+    </div>
+    <div class="settings-row">
+      <label>Show guide text</label>
+      <label class="toggle"><input type="checkbox" id="showGuideText" checked /><span class="toggle-slider"></span></label>
+    </div>
+    <div class="settings-row">
+      <label>Show hints</label>
+      <label class="toggle"><input type="checkbox" id="showHints" checked /><span class="toggle-slider"></span></label>
+    </div>
+    <div class="settings-row">
+      <label>Show input counter</label>
+      <label class="toggle"><input type="checkbox" id="showInputCounter" /><span class="toggle-slider"></span></label>
+    </div>
+    <div class="settings-row">
+      <label>Progress bar</label>
+      <label class="toggle"><input type="checkbox" id="showProgressBar" /><span class="toggle-slider"></span></label>
+    </div>
+    <div class="settings-version">v1.26.44</div>
+    <button class="settings-close" id="settingsClose">Done</button>
+  </div>
+</div>
+
+<!-- SETTINGS: HANDSFREE SINGLE STRATEGY -->
+<div class="settings-overlay" id="hfSettingsOverlay">
+  <div class="settings-panel">
+    <div class="settings-title">Handsfree: Single Strategy</div>
+    <div class="settings-row">
+      <label>Strategy explanation</label>
+      <label class="toggle"><input type="checkbox" id="hfExplanation" checked /><span class="toggle-slider"></span></label>
+    </div>
+    <div class="settings-row">
+      <label>Card back</label>
+      <label class="toggle"><input type="checkbox" id="hfCardBack" checked /><span class="toggle-slider"></span></label>
+    </div>
+    <div class="settings-row">
+      <label>Show guide text</label>
+      <label class="toggle"><input type="checkbox" id="hfGuideText" checked /><span class="toggle-slider"></span></label>
+    </div>
+    <div class="settings-row">
+      <label>Show input counter</label>
+      <label class="toggle"><input type="checkbox" id="hfShowInputCounter" /><span class="toggle-slider"></span></label>
+    </div>
+    <div class="settings-row">
+      <label>Max inputs per strategy</label>
+      <select class="settings-select" id="hfMaxInputs">
+        <option value="all">All</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+    </div>
+    <div class="settings-row">
+      <label>Thinking pause</label>
+      <select class="settings-select" id="hfThinkPause">
+        <option value="3">3 s</option>
+        <option value="5" selected>5 s</option>
+        <option value="8">8 s</option>
+        <option value="10">10 s</option>
+        <option value="15">15 s</option>
+      </select>
+    </div>
+    <div class="settings-row">
+      <label>General pause</label>
+      <select class="settings-select" id="hfGenPause">
+        <option value="1">1 s</option>
+        <option value="2" selected>2 s</option>
+        <option value="3">3 s</option>
+        <option value="5">5 s</option>
+      </select>
+    </div>
+    <div class="settings-row">
+      <label>Speech rate</label>
+      <select class="settings-select" id="hfRate">
+        <option value="0.8">0.8 — slow</option>
+        <option value="0.9">0.9</option>
+        <option value="1.0" selected>1.0 — normal</option>
+        <option value="1.1">1.1</option>
+        <option value="1.2">1.2</option>
+        <option value="1.3">1.3 — fast</option>
+      </select>
+    </div>
+    <div class="settings-row">
+      <label>Voice</label>
+      <select class="settings-select" id="hfVoice">
+        <option value="female" selected>Female</option>
+        <option value="male">Male</option>
+      </select>
+    </div>
+    <div class="settings-row">
+      <label style="font-size:12px; color:#aaa;">List available voices</label>
+      <button id="hfVoiceDebugBtn" style="font-size:12px; color:#aaa; background:none; border:1px solid #ddd; border-radius:8px; padding:4px 10px; cursor:pointer;">Show</button>
+    </div>
+    <div class="settings-row settings-row--danger">
+      <label>Loop current strategy</label>
+      <label class="toggle"><input type="checkbox" id="hfLoopStrategy" /><span class="toggle-slider"></span></label>
+    </div>
+    <div class="settings-row">
+      <label>Shuffle strategies</label>
+      <label class="toggle"><input type="checkbox" id="hfShuffleStrategies" /><span class="toggle-slider"></span></label>
+    </div>
+    <div class="settings-row">
+      <label>Shuffle inputs</label>
+      <label class="toggle"><input type="checkbox" id="hfShuffleInputs" /><span class="toggle-slider"></span></label>
+    </div>
+    <div id="hfBundlePlaceholder"></div>
+    <div class="settings-version">v1.26.44</div>
+    <button class="settings-close" id="hfSettingsClose">Done</button>
+  </div>
+</div>
+
+<!-- SETTINGS: HANDSFREE MEMORIZE -->
+<div class="settings-overlay" id="hfMemSettingsOverlay">
+  <div class="settings-panel">
+    <div class="settings-title">Handsfree: Memorize</div>
+    <div class="settings-row">
+      <label>Strategy explanation</label>
+      <label class="toggle"><input type="checkbox" id="hfMemExplanation" checked /><span class="toggle-slider"></span></label>
+    </div>
+    <div class="settings-row">
+      <label>Card back</label>
+      <label class="toggle"><input type="checkbox" id="hfMemCardBack" checked /><span class="toggle-slider"></span></label>
+    </div>
+    <div class="settings-row">
+      <label>Show guide text</label>
+      <label class="toggle"><input type="checkbox" id="hfMemGuideText" checked /><span class="toggle-slider"></span></label>
+    </div>
+    <div class="settings-row">
+      <label>Show input counter</label>
+      <label class="toggle"><input type="checkbox" id="hfMemShowInputCounter" /><span class="toggle-slider"></span></label>
+    </div>
+    <div class="settings-row">
+      <label>Max cards per strategy</label>
+      <select class="settings-select" id="hfMemMaxCards">
+        <option value="all">All</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+    </div>
+    <div class="settings-row">
+      <label>Thinking pause</label>
+      <select class="settings-select" id="hfMemThinkPause">
+        <option value="3">3 s</option>
+        <option value="5" selected>5 s</option>
+        <option value="8">8 s</option>
+        <option value="10">10 s</option>
+        <option value="15">15 s</option>
+      </select>
+    </div>
+    <div class="settings-row">
+      <label>General pause</label>
+      <select class="settings-select" id="hfMemGenPause">
+        <option value="1">1 s</option>
+        <option value="2" selected>2 s</option>
+        <option value="3">3 s</option>
+        <option value="5">5 s</option>
+      </select>
+    </div>
+    <div class="settings-row">
+      <label>Speech rate</label>
+      <select class="settings-select" id="hfMemRate">
+        <option value="0.8">0.8 — slow</option>
+        <option value="0.9">0.9</option>
+        <option value="1.0" selected>1.0 — normal</option>
+        <option value="1.1">1.1</option>
+        <option value="1.2">1.2</option>
+        <option value="1.3">1.3 — fast</option>
+      </select>
+    </div>
+    <div class="settings-row">
+      <label>Voice</label>
+      <select class="settings-select" id="hfMemVoice">
+        <option value="female" selected>Female</option>
+        <option value="male">Male</option>
+      </select>
+    </div>
+    <div class="settings-row settings-row--danger">
+      <label>Loop current strategy</label>
+      <label class="toggle"><input type="checkbox" id="hfMemLoopStrategy" /><span class="toggle-slider"></span></label>
+    </div>
+    <div class="settings-row">
+      <label>Shuffle strategies</label>
+      <label class="toggle"><input type="checkbox" id="hfMemShuffleStrategies" /><span class="toggle-slider"></span></label>
+    </div>
+    <div class="settings-row">
+      <label>Shuffle inputs</label>
+      <label class="toggle"><input type="checkbox" id="hfMemShuffleInputs" /><span class="toggle-slider"></span></label>
+    </div>
+    <div id="hfMemBundlePlaceholder"></div>
+    <div class="settings-version">v1.26.44</div>
+    <button class="settings-close" id="hfMemSettingsClose">Done</button>
+  </div>
+</div>
+
+<!-- SETTINGS: HANDSFREE CHALLENGES -->
+<div class="settings-overlay" id="hfChallSettingsOverlay">
+  <div class="settings-panel">
+    <div class="settings-title">Handsfree: Challenges</div>
+    <div class="settings-row">
+      <label>Category explanation</label>
+      <label class="toggle"><input type="checkbox" id="hfChallExplanation" checked /><span class="toggle-slider"></span></label>
+    </div>
+    <div class="settings-row">
+      <label>Card back</label>
+      <label class="toggle"><input type="checkbox" id="hfChallCardBack" checked /><span class="toggle-slider"></span></label>
+    </div>
+    <div class="settings-row">
+      <label>Show guide text</label>
+      <label class="toggle"><input type="checkbox" id="hfChallGuideText" checked /><span class="toggle-slider"></span></label>
+    </div>
+    <div class="settings-row">
+      <label>Show input counter</label>
+      <label class="toggle"><input type="checkbox" id="hfChallShowInputCounter" /><span class="toggle-slider"></span></label>
+    </div>
+    <div class="settings-row">
+      <label>Max inputs per category</label>
+      <select class="settings-select" id="hfChallMaxInputs">
+        <option value="all">All</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+    </div>
+    <div class="settings-row">
+      <label>Thinking pause</label>
+      <select class="settings-select" id="hfChallThinkPause">
+        <option value="3">3 s</option>
+        <option value="5" selected>5 s</option>
+        <option value="8">8 s</option>
+        <option value="10">10 s</option>
+        <option value="15">15 s</option>
+      </select>
+    </div>
+    <div class="settings-row">
+      <label>General pause</label>
+      <select class="settings-select" id="hfChallGenPause">
+        <option value="1">1 s</option>
+        <option value="2" selected>2 s</option>
+        <option value="3">3 s</option>
+        <option value="5">5 s</option>
+      </select>
+    </div>
+    <div class="settings-row">
+      <label>Speech rate</label>
+      <select class="settings-select" id="hfChallRate">
+        <option value="0.8">0.8 — slow</option>
+        <option value="0.9">0.9</option>
+        <option value="1.0" selected>1.0 — normal</option>
+        <option value="1.1">1.1</option>
+        <option value="1.2">1.2</option>
+        <option value="1.3">1.3 — fast</option>
+      </select>
+    </div>
+    <div class="settings-row">
+      <label>Voice</label>
+      <select class="settings-select" id="hfChallVoice">
+        <option value="female" selected>Female</option>
+        <option value="male">Male</option>
+      </select>
+    </div>
+    <div class="settings-row settings-row--danger">
+      <label>Loop current category</label>
+      <label class="toggle"><input type="checkbox" id="hfChallLoopStrategy" /><span class="toggle-slider"></span></label>
+    </div>
+    <div class="settings-row">
+      <label>Shuffle strategies</label>
+      <label class="toggle"><input type="checkbox" id="hfChallShuffleStrategies" /><span class="toggle-slider"></span></label>
+    </div>
+    <div class="settings-row">
+      <label>Shuffle inputs</label>
+      <label class="toggle"><input type="checkbox" id="hfChallShuffleInputs" /><span class="toggle-slider"></span></label>
+    </div>
+    <div id="hfChallBundlePlaceholder"></div>
+    <div class="settings-version">v1.26.44</div>
+    <button class="settings-close" id="hfChallSettingsClose">Done</button>
+  </div>
+</div>
+
+<!-- SETTINGS: HANDSFREE SEQUENCES -->
+<div class="settings-overlay" id="hfFlowSettingsOverlay">
+  <div class="settings-panel">
+    <div class="settings-title">Handsfree: Sequences</div>
+    <div class="settings-row">
+      <label>Sequence explanation</label>
+      <label class="toggle"><input type="checkbox" id="hfFlowExplanation" checked /><span class="toggle-slider"></span></label>
+    </div>
+    <div class="settings-row">
+      <label>Card back</label>
+      <label class="toggle"><input type="checkbox" id="hfFlowCardBack" checked /><span class="toggle-slider"></span></label>
+    </div>
+    <div class="settings-row">
+      <label>Show guide text</label>
+      <label class="toggle"><input type="checkbox" id="hfFlowGuideText" checked /><span class="toggle-slider"></span></label>
+    </div>
+    <div class="settings-row">
+      <label>Show input counter</label>
+      <label class="toggle"><input type="checkbox" id="hfFlowShowInputCounter" /><span class="toggle-slider"></span></label>
+    </div>
+    <div class="settings-row">
+      <label>Thinking pause</label>
+      <select class="settings-select" id="hfFlowThinkPause">
+        <option value="3">3 s</option>
+        <option value="5" selected>5 s</option>
+        <option value="8">8 s</option>
+        <option value="10">10 s</option>
+        <option value="15">15 s</option>
+      </select>
+    </div>
+    <div class="settings-row">
+      <label>General pause</label>
+      <select class="settings-select" id="hfFlowGenPause">
+        <option value="1">1 s</option>
+        <option value="2" selected>2 s</option>
+        <option value="3">3 s</option>
+        <option value="5">5 s</option>
+      </select>
+    </div>
+    <div class="settings-row">
+      <label>Speech rate</label>
+      <select class="settings-select" id="hfFlowRate">
+        <option value="0.8">0.8 — slow</option>
+        <option value="0.9">0.9</option>
+        <option value="1.0" selected>1.0 — normal</option>
+        <option value="1.1">1.1</option>
+        <option value="1.2">1.2</option>
+        <option value="1.3">1.3 — fast</option>
+      </select>
+    </div>
+    <div class="settings-row">
+      <label>Voice</label>
+      <select class="settings-select" id="hfFlowVoice">
+        <option value="female" selected>Female</option>
+        <option value="male">Male</option>
+      </select>
+    </div>
+    <div class="settings-row settings-row--danger">
+      <label>Loop current combo</label>
+      <label class="toggle"><input type="checkbox" id="hfFlowLoopStrategy" /><span class="toggle-slider"></span></label>
+    </div>
+    <div class="settings-row">
+      <label>Shuffle strategies</label>
+      <label class="toggle"><input type="checkbox" id="hfFlowShuffleStrategies" /><span class="toggle-slider"></span></label>
+    </div>
+    <div class="settings-row">
+      <label>Shuffle inputs</label>
+      <label class="toggle"><input type="checkbox" id="hfFlowShuffleInputs" /><span class="toggle-slider"></span></label>
+    </div>
+    <div id="hfFlowBundlePlaceholder"></div>
+    <div class="settings-version">v1.26.44</div>
+    <button class="settings-close" id="hfFlowSettingsClose">Done</button>
+  </div>
+</div>
+
+<!-- SETTINGS: HANDSFREE MINDSET -->
+<div class="settings-overlay" id="hfMindSettingsOverlay">
+  <div class="settings-panel">
+    <div class="settings-title">Handsfree: Mindset</div>
+    <div class="settings-row">
+      <label>Mindset explanation</label>
+      <label class="toggle"><input type="checkbox" id="hfMindExplanation" checked /><span class="toggle-slider"></span></label>
+    </div>
+    <div class="settings-row">
+      <label>Card back</label>
+      <label class="toggle"><input type="checkbox" id="hfMindCardBack" checked /><span class="toggle-slider"></span></label>
+    </div>
+    <div class="settings-row">
+      <label>Show guide text</label>
+      <label class="toggle"><input type="checkbox" id="hfMindGuideText" checked /><span class="toggle-slider"></span></label>
+    </div>
+    <div class="settings-row">
+      <label>Show input counter</label>
+      <label class="toggle"><input type="checkbox" id="hfMindShowInputCounter" /><span class="toggle-slider"></span></label>
+    </div>
+    <div class="settings-row">
+      <label>Max inputs per mindset</label>
+      <select class="settings-select" id="hfMindMaxInputs">
+        <option value="all">All</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+    </div>
+    <div class="settings-row">
+      <label>Thinking pause</label>
+      <select class="settings-select" id="hfMindThinkPause">
+        <option value="3">3 s</option>
+        <option value="5" selected>5 s</option>
+        <option value="8">8 s</option>
+        <option value="10">10 s</option>
+        <option value="15">15 s</option>
+      </select>
+    </div>
+    <div class="settings-row">
+      <label>General pause</label>
+      <select class="settings-select" id="hfMindGenPause">
+        <option value="1">1 s</option>
+        <option value="2" selected>2 s</option>
+        <option value="3">3 s</option>
+        <option value="5">5 s</option>
+      </select>
+    </div>
+    <div class="settings-row">
+      <label>Speech rate</label>
+      <select class="settings-select" id="hfMindRate">
+        <option value="0.8">0.8 — slow</option>
+        <option value="0.9">0.9</option>
+        <option value="1.0" selected>1.0 — normal</option>
+        <option value="1.1">1.1</option>
+        <option value="1.2">1.2</option>
+        <option value="1.3">1.3 — fast</option>
+      </select>
+    </div>
+    <div class="settings-row">
+      <label>Voice</label>
+      <select class="settings-select" id="hfMindVoice">
+        <option value="female" selected>Female</option>
+        <option value="male">Male</option>
+      </select>
+    </div>
+    <div class="settings-row settings-row--danger">
+      <label>Loop current mindset</label>
+      <label class="toggle"><input type="checkbox" id="hfMindLoopStrategy" /><span class="toggle-slider"></span></label>
+    </div>
+    <div class="settings-row">
+      <label>Shuffle strategies</label>
+      <label class="toggle"><input type="checkbox" id="hfMindShuffleStrategies" /><span class="toggle-slider"></span></label>
+    </div>
+    <div class="settings-row">
+      <label>Shuffle inputs</label>
+      <label class="toggle"><input type="checkbox" id="hfMindShuffleInputs" /><span class="toggle-slider"></span></label>
+    </div>
+    <div id="hfMindBundlePlaceholder"></div>
+    <div class="settings-version">v1.26.44</div>
+    <button class="settings-close" id="hfMindSettingsClose">Done</button>
+  </div>
+</div>
+
+<!-- SETTINGS: HANDSFREE COLLECTIONS -->
+<div class="settings-overlay" id="hfCollSettingsOverlay">
+  <div class="settings-panel">
+    <div class="settings-title">Handsfree: Collections</div>
+    <div class="settings-row">
+      <label>Collection explanation</label>
+      <label class="toggle"><input type="checkbox" id="hfCollExplanation" checked /><span class="toggle-slider"></span></label>
+    </div>
+    <div class="settings-row">
+      <label>Card back</label>
+      <label class="toggle"><input type="checkbox" id="hfCollCardBack" checked /><span class="toggle-slider"></span></label>
+    </div>
+    <div class="settings-row">
+      <label>Show guide text</label>
+      <label class="toggle"><input type="checkbox" id="hfCollGuideText" checked /><span class="toggle-slider"></span></label>
+    </div>
+    <div class="settings-row">
+      <label>Show input counter</label>
+      <label class="toggle"><input type="checkbox" id="hfCollShowInputCounter" /><span class="toggle-slider"></span></label>
+    </div>
+    <div class="settings-row">
+      <label>Max inputs per collection</label>
+      <select class="settings-select" id="hfCollMaxInputs">
+        <option value="all">All</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+    </div>
+    <div class="settings-row">
+      <label>Thinking pause</label>
+      <select class="settings-select" id="hfCollThinkPause">
+        <option value="3">3 s</option>
+        <option value="5" selected>5 s</option>
+        <option value="8">8 s</option>
+        <option value="10">10 s</option>
+        <option value="15">15 s</option>
+      </select>
+    </div>
+    <div class="settings-row">
+      <label>General pause</label>
+      <select class="settings-select" id="hfCollGenPause">
+        <option value="1">1 s</option>
+        <option value="2" selected>2 s</option>
+        <option value="3">3 s</option>
+        <option value="5">5 s</option>
+      </select>
+    </div>
+    <div class="settings-row">
+      <label>Speech rate</label>
+      <select class="settings-select" id="hfCollRate">
+        <option value="0.8">0.8 — slow</option>
+        <option value="0.9">0.9</option>
+        <option value="1.0" selected>1.0 — normal</option>
+        <option value="1.1">1.1</option>
+        <option value="1.2">1.2</option>
+        <option value="1.3">1.3 — fast</option>
+      </select>
+    </div>
+    <div class="settings-row">
+      <label>Voice</label>
+      <select class="settings-select" id="hfCollVoice">
+        <option value="female" selected>Female</option>
+        <option value="male">Male</option>
+      </select>
+    </div>
+    <div class="settings-row settings-row--danger">
+      <label>Loop current collection</label>
+      <label class="toggle"><input type="checkbox" id="hfCollLoopStrategy" /><span class="toggle-slider"></span></label>
+    </div>
+    <div class="settings-row">
+      <label>Shuffle strategies</label>
+      <label class="toggle"><input type="checkbox" id="hfCollShuffleStrategies" /><span class="toggle-slider"></span></label>
+    </div>
+    <div class="settings-row">
+      <label>Shuffle inputs</label>
+      <label class="toggle"><input type="checkbox" id="hfCollShuffleInputs" /><span class="toggle-slider"></span></label>
+    </div>
+    <div id="hfCollBundlePlaceholder"></div>
+    <div class="settings-version">v1.26.44</div>
+    <button class="settings-close" id="hfCollSettingsClose">Done</button>
+  </div>
+</div>
+
+<!-- CHALLENGES TRAINING SCREEN -->
+<div class="app" id="challScreen" style="display:none;">
+  <div class="topbar">
+    <button class="topbar-btn" id="challCloseBtn">✕</button>
+    <span class="counter-group">
+      <span class="counter sub-counter" id="challSubCounter"></span>
+      <span class="counter-sep" id="challCounterSep">·</span>
+      <span class="counter" id="challCounter">1 / 7</span>
+    </span>
+    <button class="topbar-btn" id="challSettingsBtn"><svg width="22" height="22" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 4.5h6l.7 3a7.5 7.5 0 0 1 2.3 1.35l2.9-.9 3 5.2-2.3 1.8a7.5 7.5 0 0 1 0 2.1l2.3 1.8-3 5.2-2.9-.9a7.5 7.5 0 0 1-2.3 1.35l-.7 3H13l-.7-3a7.5 7.5 0 0 1-2.3-1.35l-2.9.9-3-5.2 2.3-1.8a7.5 7.5 0 0 1 0-2.1L4.1 14.1l3-5.2 2.9.9A7.5 7.5 0 0 1 12.3 8Z"/><circle cx="16" cy="16" r="4.5"/></svg></button>
+  </div>
+  <div class="divider"></div>
+  <div class="strategy-label" id="challName"></div>
+  <div class="card-area">
+    <div class="card" id="challCard">
+      <div class="card-inner" id="challCardInner">
+        <div class="card-face card-front"><p class="card-text" id="challFrontText"></p><div class="fb-bar" id="fb-chall-front"><button class="fb-btn" data-val="1"></button><button class="fb-btn" data-val="2"></button><button class="fb-btn" data-val="3"></button><button class="fb-btn" data-val="4"></button></div><div class="al-bar" id="al-chall-front"><button class="al-btn" data-val="1">Free</button><button class="al-btn" data-val="2">Pro</button><button class="al-btn" data-val="3">Ext</button></div></div>
+        <div class="card-face card-back"><p class="card-text" id="challBackText"></p><div class="fb-bar" id="fb-chall-back"><button class="fb-btn" data-val="1"></button><button class="fb-btn" data-val="2"></button><button class="fb-btn" data-val="3"></button><button class="fb-btn" data-val="4"></button></div><div class="al-bar" id="al-chall-back"><button class="al-btn" data-val="1">Free</button><button class="al-btn" data-val="2">Pro</button><button class="al-btn" data-val="3">Ext</button></div></div>
+      </div>
+      <div class="card-info" id="challCardInfo">
+        <button class="card-info-close" id="challCardInfoClose">✕</button>
+        <p class="card-info-text" id="challCardInfoText"></p>
+      </div>
+    </div>
+  </div>
+  <div class="hint" id="challHint">Tap card to reveal · ↑↓ next input · ←→ next challenge</div>
+  <div class="bottombar">
+    <button class="nav-btn" id="challPrevBtn">←</button>
+    <button class="nav-btn" id="challPrevInputBtn">↑</button>
+    <button class="nav-btn" id="challNextInputBtn">↓</button>
+    <button class="nav-btn" id="challNextBtn">→</button>
+  </div>
+</div>
+
+<!-- MINDSET TRAINING SCREEN -->
+<div class="app" id="mindScreen" style="display:none;">
+  <div class="topbar">
+    <button class="topbar-btn" id="mindCloseBtn">✕</button>
+    <span class="counter-group">
+      <span class="counter sub-counter" id="mindSubCounter"></span>
+      <span class="counter-sep" id="mindCounterSep">·</span>
+      <span class="counter" id="mindCounter">1 / 9</span>
+    </span>
+    <button class="topbar-btn" id="mindSettingsBtn"><svg width="22" height="22" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 4.5h6l.7 3a7.5 7.5 0 0 1 2.3 1.35l2.9-.9 3 5.2-2.3 1.8a7.5 7.5 0 0 1 0 2.1l2.3 1.8-3 5.2-2.9-.9a7.5 7.5 0 0 1-2.3 1.35l-.7 3H13l-.7-3a7.5 7.5 0 0 1-2.3-1.35l-2.9.9-3-5.2 2.3-1.8a7.5 7.5 0 0 1 0-2.1L4.1 14.1l3-5.2 2.9.9A7.5 7.5 0 0 1 12.3 8Z"/><circle cx="16" cy="16" r="4.5"/></svg></button>
+  </div>
+  <div class="divider"></div>
+  <div class="strategy-label" id="mindName"></div>
+  <div class="card-area">
+    <div class="card" id="mindCard">
+      <div class="card-inner" id="mindCardInner">
+        <div class="card-face card-front"><p class="card-text" id="mindFrontText"></p><div class="fb-bar" id="fb-mind-front"><button class="fb-btn" data-val="1"></button><button class="fb-btn" data-val="2"></button><button class="fb-btn" data-val="3"></button><button class="fb-btn" data-val="4"></button></div><div class="al-bar" id="al-mind-front"><button class="al-btn" data-val="1">Free</button><button class="al-btn" data-val="2">Pro</button><button class="al-btn" data-val="3">Ext</button></div></div>
+        <div class="card-face card-back"><p class="card-text" id="mindBackText"></p><div class="fb-bar" id="fb-mind-back"><button class="fb-btn" data-val="1"></button><button class="fb-btn" data-val="2"></button><button class="fb-btn" data-val="3"></button><button class="fb-btn" data-val="4"></button></div><div class="al-bar" id="al-mind-back"><button class="al-btn" data-val="1">Free</button><button class="al-btn" data-val="2">Pro</button><button class="al-btn" data-val="3">Ext</button></div></div>
+      </div>
+      <div class="card-info" id="mindCardInfo">
+        <button class="card-info-close" id="mindCardInfoClose">✕</button>
+        <p class="card-info-text" id="mindCardInfoText"></p>
+      </div>
+    </div>
+  </div>
+  <div class="hint" id="mindHint">Tap card to reveal · ↑↓ next input · ←→ next mindset</div>
+  <div class="bottombar">
+    <button class="nav-btn" id="mindPrevBtn">←</button>
+    <button class="nav-btn" id="mindPrevInputBtn">↑</button>
+    <button class="nav-btn" id="mindNextInputBtn">↓</button>
+    <button class="nav-btn" id="mindNextBtn">→</button>
+  </div>
+</div>
+
+<!-- COLLECTIONS TRAINING SCREEN -->
+<div class="app" id="collScreen" style="display:none;">
+  <div class="topbar">
+    <button class="topbar-btn" id="collCloseBtn">✕</button>
+    <span class="counter-group">
+      <span class="counter sub-counter" id="collSubCounter"></span>
+      <span class="counter-sep" id="collCounterSep">·</span>
+      <span class="counter" id="collCounter">1 / 2</span>
+    </span>
+    <button class="topbar-btn" id="collSettingsBtn"><svg width="22" height="22" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 4.5h6l.7 3a7.5 7.5 0 0 1 2.3 1.35l2.9-.9 3 5.2-2.3 1.8a7.5 7.5 0 0 1 0 2.1l2.3 1.8-3 5.2-2.9-.9a7.5 7.5 0 0 1-2.3 1.35l-.7 3H13l-.7-3a7.5 7.5 0 0 1-2.3-1.35l-2.9.9-3-5.2 2.3-1.8a7.5 7.5 0 0 1 0-2.1L4.1 14.1l3-5.2 2.9.9A7.5 7.5 0 0 1 12.3 8Z"/><circle cx="16" cy="16" r="4.5"/></svg></button>
+  </div>
+  <div class="divider"></div>
+  <div class="strategy-label" id="collName"></div>
+  <div class="card-area">
+    <div class="card" id="collCard">
+      <div class="card-inner" id="collCardInner">
+        <div class="card-face card-front"><p class="card-text" id="collFrontText"></p><div class="fb-bar" id="fb-coll-front"><button class="fb-btn" data-val="1"></button><button class="fb-btn" data-val="2"></button><button class="fb-btn" data-val="3"></button><button class="fb-btn" data-val="4"></button></div><div class="al-bar" id="al-coll-front"><button class="al-btn" data-val="1">Free</button><button class="al-btn" data-val="2">Pro</button><button class="al-btn" data-val="3">Ext</button></div></div>
+        <div class="card-face card-back"><p class="card-text" id="collBackText"></p><div class="fb-bar" id="fb-coll-back"><button class="fb-btn" data-val="1"></button><button class="fb-btn" data-val="2"></button><button class="fb-btn" data-val="3"></button><button class="fb-btn" data-val="4"></button></div><div class="al-bar" id="al-coll-back"><button class="al-btn" data-val="1">Free</button><button class="al-btn" data-val="2">Pro</button><button class="al-btn" data-val="3">Ext</button></div></div>
+      </div>
+      <div class="card-info" id="collCardInfo">
+        <button class="card-info-close" id="collCardInfoClose">✕</button>
+        <p class="card-info-text" id="collCardInfoText"></p>
+      </div>
+    </div>
+  </div>
+  <div class="hint" id="collHint">Tap card to reveal<br>↑ ↓ next input &nbsp;·&nbsp; ← → new collection</div>
+  <div class="bottombar">
+    <button class="nav-btn" id="collPrevBtn">←</button>
+    <button class="nav-btn" id="collPrevInputBtn">↑</button>
+    <button class="nav-btn" id="collNextInputBtn">↓</button>
+    <button class="nav-btn" id="collNextBtn">→</button>
+  </div>
+</div>
+
+<!-- SETTINGS: HOME (full-screen, slides in from the right) -->
+<div class="settings-screen" id="homeSettingsScreen" style="display:none;">
+  <div class="settings-screen-topbar">
+    <button class="topbar-btn" id="homeSettingsBackBtn">←</button>
+  </div>
+  <div class="settings-screen-title">Settings</div>
+  <div class="settings-screen-body">
+    <div class="settings-row">
+      <label>Dark mode (Ember)</label>
+      <label class="toggle"><input type="checkbox" id="devDarkModeToggle" /><span class="toggle-slider"></span></label>
+    </div>
+    <div class="settings-row">
+      <label>Input counter on as default</label>
+      <label class="toggle"><input type="checkbox" id="inputCounterDefaultToggle" checked /><span class="toggle-slider"></span></label>
+    </div>
+    <div class="settings-row">
+      <label>Your data — backup</label>
+      <button id="exportDataBtn" style="font-size:13px; color:#2c7a4b; background:#edf7f1; border:1px solid #b2dfcc; border-radius:8px; padding:6px 12px; cursor:pointer;">Export</button>
+    </div>
+    <div class="settings-row">
+      <label>Your data — restore</label>
+      <button id="importDataBtn" style="font-size:13px; color:#2c5a7a; background:#eef4f9; border:1px solid #b8d2e6; border-radius:8px; padding:6px 12px; cursor:pointer;">Import</button>
+    </div>
+    <div class="settings-row">
+      <label>Intro tour</label>
+      <button id="replayOnboardingBtn" style="font-size:13px; color:#2c5a7a; background:#eef4f9; border:1px solid #b8d2e6; border-radius:8px; padding:6px 12px; cursor:pointer;">Replay</button>
+    </div>
+    <div class="settings-row">
+      <label>About &amp; privacy</label>
+      <button id="aboutBtn" style="font-size:13px; color:#555; background:#f0f0f0; border:1px solid #ddd; border-radius:8px; padding:6px 12px; cursor:pointer;">View</button>
+    </div>
+
+    <div id="devSection" style="display:none;">
+    <div class="settings-row" style="margin-top:10px;">
+      <label style="font-weight:700;">Developer</label>
+    </div>
+    <div class="settings-row">
+      <label>Feedback mode</label>
+      <label class="toggle"><input type="checkbox" id="feedbackModeToggle" /><span class="toggle-slider"></span></label>
+    </div>
+    <div class="settings-row">
+      <label>Suggest access level</label>
+      <label class="toggle"><input type="checkbox" id="accessLevelSuggestToggle" /><span class="toggle-slider"></span></label>
+    </div>
+    <div class="settings-row">
+      <label>Tag mode</label>
+      <label class="toggle"><input type="checkbox" id="tagModeToggle" /><span class="toggle-slider"></span></label>
+    </div>
+    <div class="settings-row" id="tagExportRow" style="display:none;">
+      <label style="font-size:13px; color:#888;">Export tag changes</label>
+      <button id="tagExportBtn" style="font-size:13px; color:#555; background:#f0f0f0; border:1px solid #ddd; border-radius:8px; padding:6px 12px; cursor:pointer;">Export</button>
+    </div>
+    <div class="settings-row">
+      <label style="font-size:13px; color:#888;">Export access level suggestions</label>
+      <button id="alExportBtn" style="font-size:13px; color:#555; background:#f0f0f0; border:1px solid #ddd; border-radius:8px; padding:6px 12px; cursor:pointer;">Export</button>
+    </div>
+    <div class="settings-row">
+      <label style="font-size:13px; color:#888;">Export all ratings as JSON</label>
+      <button id="feedbackExportBtn" style="font-size:13px; color:#555; background:#f0f0f0; border:1px solid #ddd; border-radius:8px; padding:6px 12px; cursor:pointer;">Export</button>
+    </div>
+    <div class="settings-row" style="flex-direction:column; align-items:flex-start; gap:10px;">
+      <label style="font-weight:700; font-size:15px;">Simulate access level</label>
+      <div style="display:flex; flex-direction:column; gap:10px; width:100%;">
+        <label class="settings-radio-label"><input type="radio" name="devLevel" value="complete" id="devLevelComplete" /> Complete <span style="font-size:12px;color:#aaa;margin-left:4px;">all packs &amp; modes</span></label>
+        <label class="settings-radio-label"><input type="radio" name="devLevel" value="pro" id="devLevelPro" /> Pro <span style="font-size:12px;color:#aaa;margin-left:4px;">Assertive, Conversational, Humour, Criticism</span></label>
+        <label class="settings-radio-label"><input type="radio" name="devLevel" value="freemium" id="devLevelFreemium" /> Freemium <span style="font-size:12px;color:#aaa;margin-left:4px;">Assertive &amp; Conversational only</span></label>
+      </div>
+    </div>
+    <div class="settings-row">
+      <label>Pack Editor</label>
+      <button onclick="window.open('admin.html','_blank')" style="font-size:13px; color:#555; background:#f0f0f0; border:1px solid #ddd; border-radius:8px; padding:6px 12px; cursor:pointer;">Open &#8599;</button>
+    </div>
+    <div class="settings-row">
+      <label>Extended purchases</label>
+      <button id="clearExtendedBtn" style="font-size:13px; color:#c0392b; background:#fdf0ee; border:1px solid #f5c6c2; border-radius:8px; padding:6px 12px; cursor:pointer;">Clear</button>
+    </div>
+    <div class="settings-row">
+      <label>Redeemed codes</label>
+      <button id="clearCodesBtn" style="font-size:13px; color:#c0392b; background:#fdf0ee; border:1px solid #f5c6c2; border-radius:8px; padding:6px 12px; cursor:pointer;">Clear</button>
+    </div>
+    <div class="settings-row">
+      <label>First-run state (favorites, continue, tap hint, onboarding)</label>
+      <button id="resetFirstRunBtn" style="font-size:13px; color:#c0392b; background:#fdf0ee; border:1px solid #f5c6c2; border-radius:8px; padding:6px 12px; cursor:pointer;">Reset</button>
+    </div>
+    <div class="settings-row">
+      <label>Pack tags</label>
+      <button id="exportTagsBtn" style="font-size:13px; color:#2c7a4b; background:#edf7f1; border:1px solid #b2dfcc; border-radius:8px; padding:6px 12px; cursor:pointer;">Export JSON</button>
+    </div>
+    <div class="settings-row">
+      <label>Hide developer settings</label>
+      <button id="hideDevBtn" style="font-size:13px; color:#555; background:#f0f0f0; border:1px solid #ddd; border-radius:8px; padding:6px 12px; cursor:pointer;">Hide</button>
+    </div>
+    </div><!-- /devSection -->
+    <div class="settings-version" id="homeSettingsVersion">v1.26.44</div>
+    <button class="settings-close" id="devSettingsDoneBtn">Done</button>
+  </div>
+</div>
+
+
+<!-- PACK SETTINGS OVERLAY -->
+<!-- ABOUT & PRIVACY -->
+<div class="settings-overlay" id="aboutOverlay">
+  <div class="settings-panel" style="max-height:82vh; overflow-y:auto;">
+    <div class="settings-title">About Deckstack</div>
+    <div class="about-body">
+      <p><strong>Deckstack</strong> is a communication training app. You've read the books &mdash; Deckstack is where you practice: rehearse communication strategies like flashcards until they show up in real conversations.</p>
+      <p class="about-meta">Version <span id="aboutVersion"></span></p>
+
+      <div class="settings-title" style="margin-top:18px;">Privacy policy</div>
+      <p><strong>Your data stays on your device.</strong> Deckstack has no accounts and no server. Everything the app knows &mdash; your progress, favorites, settings, and unlocked content &mdash; is stored locally on this device and never sent anywhere.</p>
+      <p><strong>No tracking.</strong> Deckstack contains no analytics, no advertising, and no tracking of any kind.</p>
+      <p><strong>Speech.</strong> Handsfree audio uses your device's built-in text-to-speech. No audio or text is sent to external services.</p>
+      <p><strong>Third-party resources.</strong> The app loads its icon font from a content delivery network (jsDelivr). Like any web request, that transfer includes your IP address; no other information is shared.</p>
+      <p><strong>Backups.</strong> The Export function in Settings creates a copy of your data that only you hold. Deckstack never uploads it.</p>
+      <p><strong>Deleting your data.</strong> Since everything is local, removing the app (or clearing its website data) permanently deletes all your Deckstack data.</p>
+      <p class="about-meta">Questions about privacy? Contact the developer.</p>
+    </div>
+    <button class="settings-close" id="aboutClose">Done</button>
+  </div>
+</div>
+
+<div class="settings-overlay" id="packSettingsOverlay">
+  <div class="settings-panel">
+    <div class="settings-title" id="packSettingsTitle">Pack Settings</div>
+    <div id="packSettingsFbSection">
+      <div class="settings-row"><label>Overall quality rating</label></div>
+      <div class="fb-bar fb-bar--pack" id="fb-pack-bar">
+        <button class="fb-btn" data-val="1"></button>
+        <button class="fb-btn" data-val="2"></button>
+        <button class="fb-btn" data-val="3"></button>
+        <button class="fb-btn" data-val="4"></button>
+      </div>
+    </div>
+    <div id="packSettingsAlSection">
+      <div class="settings-row"><label>Suggested access level</label></div>
+      <div class="al-bar al-bar--pack" id="al-pack-bar">
+        <button class="al-btn" data-val="1">Free</button>
+        <button class="al-btn" data-val="2">Pro</button>
+        <button class="al-btn" data-val="3">Extended</button>
+      </div>
+    </div>
+    <div id="packSettingsTagSection" style="display:none;">
+      <div class="settings-row" style="margin-top:12px;"><label style="font-weight:700;">Tags</label></div>
+      <div id="packTagsList" class="tag-list"></div>
+      <div class="tag-input-row">
+        <input type="text" id="packTagInput" class="tag-input" placeholder="Add a tag..." />
+        <button id="packTagAddBtn" class="tag-add-btn">+</button>
+      </div>
+    </div>
+    <div class="settings-version" id="packSettingsVersion"></div>
+    <button class="settings-close" id="packSettingsClose">Done</button>
+  </div>
+</div>
+
+<!-- PROGRAM SETTINGS OVERLAY -->
+<div class="settings-overlay" id="programSettingsOverlay" style="display:none;">
+  <div class="settings-panel">
+    <div class="settings-title" id="programSettingsTitle">Program Settings</div>
+    <div id="programSettingsTagSection">
+      <div class="settings-row"><label style="font-weight:700;">Tags</label></div>
+      <div id="programTagsList" class="tag-list"></div>
+      <div class="tag-input-row">
+        <input type="text" id="programTagInput" class="tag-input" placeholder="Add a tag..." />
+        <button id="programTagAddBtn" class="tag-add-btn">+</button>
+      </div>
+    </div>
+    <button class="settings-close" id="programSettingsClose">Done</button>
+  </div>
+</div>
+
+<!-- BOTTOM NAVIGATION -->
+<div class="bottom-nav" id="bottomNav">
+  <button class="nav-tab active" id="navHomeBtn" data-tab="dashboard">
+    <span class="nav-tab-icon"><i class="ti ti-home" aria-hidden="true"></i></span><span class="nav-tab-label">Home</span>
+  </button>
+  <button class="nav-tab" id="navLibraryBtn" data-tab="library">
+    <span class="nav-tab-icon"><i class="ti ti-book" aria-hidden="true"></i></span><span class="nav-tab-label">Library</span>
+  </button>
+  <button class="nav-tab" id="navProgressBtn" data-tab="progress">
+    <span class="nav-tab-icon"><i class="ti ti-chart-bar" aria-hidden="true"></i></span><span class="nav-tab-label">Progress</span>
+  </button>
+  <button class="nav-tab nav-tab--extended" id="navUpgradeBtn" data-tab="upgrade">
+    <span class="nav-tab-icon"><i class="ti ti-diamond" aria-hidden="true"></i></span><span class="nav-tab-label">Extended</span>
+  </button>
+</div>
+
+<script src="js/data.js?v=12646"></script>
+<script src="js/tagsData.js?v=12646"></script>
+<script src="js/programsData.js?v=12646"></script>
+<script src="js/challengesData.js?v=12646"></script>
+<script src="js/mindsetData.js?v=12646"></script>
+<script src="js/multiStepData.js?v=12646"></script>
+<script src="js/memorizeData.js?v=12646"></script>
+<script src="js/mode-engine.js?v=12646"></script>
+<script src="js/app-core.js?v=12646"></script>
+<script src="js/app-modes.js?v=12646"></script>
+<script src="js/app-handsfree.js?v=12646"></script>
+<script src="js/app-system.js?v=12646"></script>
+<script src="js/app-ui.js?v=12646"></script>
+
+
+<!-- CHECKPOINT SCREEN -->
+<div id="checkpointScreen" style="display:none; position:fixed; inset:0; background:var(--bg,#F0EBE3); flex-direction:column; z-index:200; padding:0;">
+  <div class="cp-topbar">
+    <span id="checkpointTitle" class="cp-title"></span>
+    <span id="checkpointProgress" class="cp-progress"></span>
+    <span id="checkpointTimer" class="cp-timer"></span>
+  </div>
+  <div class="cp-body">
+    <div id="checkpointQuestion" class="cp-question"></div>
+    <div id="checkpointOptions" class="cp-options"></div>
+  </div>
+</div>
+
+</body>
+</html>
