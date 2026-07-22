@@ -7,10 +7,10 @@
   <meta name="mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="default" />
   <meta name="apple-mobile-web-app-title" content="Deckstack" />
-  <link rel="manifest" href="manifest.json?v=12648" />
+  <link rel="manifest" href="manifest.json?v=12649" />
   <title>Deckstack</title>
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="stylesheet" href="css/style.css?v=12648" />
+  <link rel="stylesheet" href="css/style.css?v=12649" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
 </head>
 <body>
@@ -226,8 +226,31 @@
             <div class="prog-streak-sub">best</div>
           </div>
         </div>
-        <!-- Mini calendar: last 14 days -->
-        <div class="prog-calendar" id="progCalendar"></div>
+        <!-- Calendar (v1.26.49) — week / 2 weeks / month. Tap a day, a week
+             number or the title to see what was trained. Rendered by
+             renderCalendar() in app-ui.js from the existing session data. -->
+        <div class="prog-cal">
+          <div class="prog-cal-head">
+            <button type="button" class="prog-cal-nav" id="progCalPrev" aria-label="Previous period">&#8249;</button>
+            <button type="button" class="prog-cal-title" id="progCalTitle">&nbsp;</button>
+            <button type="button" class="prog-cal-nav" id="progCalNext" aria-label="Next period">&#8250;</button>
+          </div>
+          <div class="prog-cal-toggle">
+            <button type="button" class="prog-cal-view active" data-view="week">Week</button>
+            <button type="button" class="prog-cal-view" data-view="2weeks">2 weeks</button>
+            <button type="button" class="prog-cal-view" data-view="month">Month</button>
+          </div>
+          <div class="prog-cal-grid" id="progCalGrid"></div>
+          <div class="prog-cal-legend">
+            <span>Less</span>
+            <span class="prog-cal-key"></span>
+            <span class="prog-cal-key l1"></span>
+            <span class="prog-cal-key l2"></span>
+            <span class="prog-cal-key l3"></span>
+            <span class="prog-cal-key l4"></span>
+            <span>More</span>
+          </div>
+        </div>
       </div>
 
       <!-- Goal -->
@@ -282,18 +305,21 @@
       </div>
 
       <!-- Total stats -->
-      <div class="prog-section prog-totals">
-        <div class="prog-total-item">
-          <div class="prog-total-num" id="progTotalMin">0</div>
-          <div class="prog-total-label">total minutes</div>
-        </div>
-        <div class="prog-total-item">
-          <div class="prog-total-num" id="progTotalCards">0</div>
-          <div class="prog-total-label">cards flipped</div>
-        </div>
-        <div class="prog-total-item">
-          <div class="prog-total-num" id="progTotalSessions">0</div>
-          <div class="prog-total-label">sessions</div>
+      <div class="prog-section">
+        <div class="prog-section-label">All time</div>
+        <div class="prog-totals">
+          <div class="prog-total-item">
+            <div class="prog-total-num" id="progTotalMin">0</div>
+            <div class="prog-total-label">total minutes</div>
+          </div>
+          <div class="prog-total-item">
+            <div class="prog-total-num" id="progTotalCards">0</div>
+            <div class="prog-total-label">cards flipped</div>
+          </div>
+          <div class="prog-total-item">
+            <div class="prog-total-num" id="progTotalSessions">0</div>
+            <div class="prog-total-label">sessions</div>
+          </div>
         </div>
       </div>
 
@@ -359,6 +385,15 @@
     </div>
     <div class="settings-version">v1.26.44</div>
     <button class="settings-close" id="progressSettingsClose">Done</button>
+  </div>
+</div>
+
+<!-- PROGRESS DETAIL OVERLAY (v1.26.49) — day / week / month breakdown -->
+<div class="settings-overlay" id="progDetailOverlay">
+  <div class="settings-panel">
+    <div class="settings-title" id="progDetailTitle">&nbsp;</div>
+    <div id="progDetailBody"></div>
+    <button class="settings-close" id="progDetailClose">Close</button>
   </div>
 </div>
 
@@ -2161,19 +2196,19 @@
   </button>
 </div>
 
-<script src="js/data.js?v=12648"></script>
-<script src="js/tagsData.js?v=12648"></script>
-<script src="js/programsData.js?v=12648"></script>
-<script src="js/challengesData.js?v=12648"></script>
-<script src="js/mindsetData.js?v=12648"></script>
-<script src="js/multiStepData.js?v=12648"></script>
-<script src="js/memorizeData.js?v=12648"></script>
-<script src="js/mode-engine.js?v=12648"></script>
-<script src="js/app-core.js?v=12648"></script>
-<script src="js/app-modes.js?v=12648"></script>
-<script src="js/app-handsfree.js?v=12648"></script>
-<script src="js/app-system.js?v=12648"></script>
-<script src="js/app-ui.js?v=12648"></script>
+<script src="js/data.js?v=12649"></script>
+<script src="js/tagsData.js?v=12649"></script>
+<script src="js/programsData.js?v=12649"></script>
+<script src="js/challengesData.js?v=12649"></script>
+<script src="js/mindsetData.js?v=12649"></script>
+<script src="js/multiStepData.js?v=12649"></script>
+<script src="js/memorizeData.js?v=12649"></script>
+<script src="js/mode-engine.js?v=12649"></script>
+<script src="js/app-core.js?v=12649"></script>
+<script src="js/app-modes.js?v=12649"></script>
+<script src="js/app-handsfree.js?v=12649"></script>
+<script src="js/app-system.js?v=12649"></script>
+<script src="js/app-ui.js?v=12649"></script>
 
 
 <!-- CHECKPOINT SCREEN -->
