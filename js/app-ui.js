@@ -1092,21 +1092,8 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
     document.getElementById('progStreakNum').textContent  = cur;
     document.getElementById('progStreakBest').textContent = best;
 
-    // Calendar — last 14 days
-    const cal = document.getElementById('progCalendar');
-    if (cal) {
-      cal.innerHTML = '';
-      for (let i = 13; i >= 0; i--) {
-        const d = new Date();
-        d.setDate(d.getDate() - i);
-        const ds = `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
-        const dot = document.createElement('div');
-        dot.className = 'prog-cal-dot' +
-          (qualifiesForStreak(sessions, ds) ? ' active' : '') +
-          (ds === today ? ' today' : '');
-        cal.appendChild(dot);
-      }
-    }
+    // Calendar (v1.26.49) — real calendar, rendered from the same sessions
+    renderCalendar(sessions);
 
     // Period
     const period = s.period;
@@ -1338,7 +1325,242 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
     }
   };
 
+  // Calendar (v1.26.49)
+  // Real calendar replacing the old 14-dot strip. Week / 2 weeks / month
+  // views, back-and-forward navigation, ISO week numbers, and intensity
+  // shading by minutes trained (not binary). Everything is rendered from the
+  // existing prog_sessions data — no new storage, no new fields.
+  // Tap a day, a week number, or the title to see what was trained then.
+  const CAL_VIEW_KEY = 'prog_cal_view';
+  let _calView   = null;   // 'week' | '2weeks' | 'month'
+  let _calAnchor = null;   // a Date inside the period being shown; null = today
+
+  const CAL_MONTHS = ['January','February','March','April','May','June',
+                      'July','August','September','October','November','December'];
+  const CAL_MON_SH = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  const CAL_DOW    = ['Mon','Tue','Wed','Thu','Fri','Sat','Sun'];
+
+  const calEsc = s => String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+
+  function dayOnly(d) { return new Date(d.getFullYear(), d.getMonth(), d.getDate()); }
+  function dstr(d) {
+    return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
+  }
+  function addDays(d, n) { const x = dayOnly(d); x.setDate(x.getDate() + n); return x; }
+  function startOfWeek(d) { const x = dayOnly(d); x.setDate(x.getDate() - ((x.getDay() + 6) % 7)); return x; }
+  function parseDstr(s) { const p = s.split('-'); return new Date(+p[0], +p[1] - 1, +p[2]); }
+
+  // ISO-8601 week number (weeks start Monday; week 1 holds the first Thursday)
+  function isoWeek(d) {
+    const t = dayOnly(d);
+    t.setDate(t.getDate() - ((t.getDay() + 6) % 7) + 3);
+    const firstThu = new Date(t.getFullYear(), 0, 4);
+    firstThu.setDate(firstThu.getDate() - ((firstThu.getDay() + 6) % 7) + 3);
+    return 1 + Math.round((t - firstThu) / 604800000);
+  }
+
+  function calView() {
+    if (_calView) return _calView;
+    const v = get(CAL_VIEW_KEY);
+    _calView = (v === '2weeks' || v === 'month') ? v : 'week';
+    return _calView;
+  }
+
+  // Shading steps by minutes trained that day. Level 1 also covers days that
+  // only have card flips logged (streak mode 'card' with almost no time).
+  function calLevel(minutes, hasCards) {
+    if (minutes <= 0 && !hasCards) return 0;
+    if (minutes < 5)  return 1;
+    if (minutes < 15) return 2;
+    if (minutes < 30) return 3;
+    return 4;
+  }
+
+  function calDayMap(sessions) {
+    const m = {};
+    sessions.forEach(x => {
+      const e = m[x.date] || (m[x.date] = { minutes: 0, cards: 0 });
+      e.minutes += x.minutes;
+      e.cards   += x.cards;
+    });
+    return m;
+  }
+
+  // The visible period. gridFrom is the Monday the grid starts on, which for
+  // the month view can sit in the previous month.
+  function calRange() {
+    const view = calView();
+    const a    = _calAnchor || dayOnly(new Date());
+    if (view === 'month') {
+      const from = new Date(a.getFullYear(), a.getMonth(), 1);
+      const to   = new Date(a.getFullYear(), a.getMonth() + 1, 0);
+      return { view, from, to, gridFrom: startOfWeek(from) };
+    }
+    const wk = startOfWeek(a);
+    if (view === '2weeks') {
+      const from = addDays(wk, -7);
+      return { view, from, to: addDays(wk, 6), gridFrom: from };
+    }
+    return { view, from: wk, to: addDays(wk, 6), gridFrom: wk };
+  }
+
+  function calFmtRange(from, to) {
+    const sameMonth = from.getMonth() === to.getMonth() && from.getFullYear() === to.getFullYear();
+    if (sameMonth) return `${from.getDate()}\u2013${to.getDate()} ${CAL_MON_SH[to.getMonth()]} ${to.getFullYear()}`;
+    return `${from.getDate()} ${CAL_MON_SH[from.getMonth()]} \u2013 ${to.getDate()} ${CAL_MON_SH[to.getMonth()]} ${to.getFullYear()}`;
+  }
+
+  function calTitleText(r) {
+    return r.view === 'month'
+      ? `${CAL_MONTHS[r.from.getMonth()]} ${r.from.getFullYear()}`
+      : calFmtRange(r.from, r.to);
+  }
+
+  function renderCalendar(sessions) {
+    const grid = document.getElementById('progCalGrid');
+    if (!grid) return;
+    const r     = calRange();
+    const map   = calDayMap(sessions);
+    const today = dayOnly(new Date());
+    const todayS = dstr(today);
+
+    const titleEl = document.getElementById('progCalTitle');
+    if (titleEl) titleEl.textContent = calTitleText(r);
+
+    document.querySelectorAll('.prog-cal-view').forEach(b => {
+      b.classList.toggle('active', b.dataset.view === r.view);
+    });
+
+    const nextBtn = document.getElementById('progCalNext');
+    if (nextBtn) nextBtn.disabled = r.to >= today;
+
+    let rows;
+    if (r.view === 'month') {
+      rows = Math.ceil((Math.round((r.to - r.gridFrom) / 86400000) + 1) / 7);
+    } else {
+      rows = r.view === '2weeks' ? 2 : 1;
+    }
+
+    let html = '<div class="prog-cal-dow"></div>' +
+      ['M','T','W','T','F','S','S'].map(d => `<div class="prog-cal-dow">${d}</div>`).join('');
+
+    for (let w = 0; w < rows; w++) {
+      const wkStart = addDays(r.gridFrom, w * 7);
+      const wkNum   = isoWeek(wkStart);
+      html += `<button type="button" class="prog-cal-wk" data-week="${dstr(wkStart)}" aria-label="Week ${wkNum}">${wkNum}</button>`;
+      for (let i = 0; i < 7; i++) {
+        const d   = addDays(wkStart, i);
+        const ds  = dstr(d);
+        const e   = map[ds];
+        const lvl = e ? calLevel(e.minutes, e.cards > 0) : 0;
+        const cls = ['prog-cal-day', 'l' + lvl];
+        if (r.view === 'month' && d.getMonth() !== r.from.getMonth()) cls.push('out');
+        if (d > today) cls.push('future');
+        if (ds === todayS) cls.push('today');
+        html += `<button type="button" class="${cls.join(' ')}" data-day="${ds}">${d.getDate()}</button>`;
+      }
+    }
+    grid.innerHTML = html;
+  }
+
+  // Day / week / month detail
+  function calSummarise(fromStr, toStr) {
+    const inRange = getSessions().filter(x => x.date >= fromStr && x.date <= toStr);
+    const packs = {};
+    let minutes = 0, cards = 0;
+    inRange.forEach(x => {
+      minutes += x.minutes;
+      cards   += x.cards;
+      const p = packs[x.packKey] || (packs[x.packKey] = { label: x.packLabel, minutes: 0, cards: 0 });
+      p.minutes += x.minutes;
+      p.cards   += x.cards;
+    });
+    return {
+      minutes, cards,
+      count: inRange.length,
+      packs: Object.values(packs).sort((a, b) => b.minutes - a.minutes),
+    };
+  }
+
+  function showCalDetail(title, fromStr, toStr) {
+    const ov = document.getElementById('progDetailOverlay');
+    if (!ov) return;
+    const t = document.getElementById('progDetailTitle');
+    const b = document.getElementById('progDetailBody');
+    const s = calSummarise(fromStr, toStr);
+    if (t) t.textContent = title;
+    if (b) {
+      b.innerHTML = !s.count
+        ? '<div class="prog-detail-empty">No training recorded.</div>'
+        : `<div class="prog-detail-sum">${Math.round(s.minutes)} min \u00b7 ${s.cards} cards \u00b7 ${s.count} session${s.count === 1 ? '' : 's'}</div>` +
+          s.packs.map(p =>
+            `<div class="prog-detail-row"><span>${calEsc(p.label)}</span>` +
+            `<span class="prog-detail-val">${Math.round(p.minutes)} min \u00b7 ${p.cards} cards</span></div>`
+          ).join('');
+    }
+    ov.classList.add('open');
+  }
+
+  function calDayTitle(ds) {
+    const d = parseDstr(ds);
+    return `${CAL_DOW[(d.getDay() + 6) % 7]} ${d.getDate()} ${CAL_MON_SH[d.getMonth()]} ${d.getFullYear()}`;
+  }
+
+  function calStep(dir) {
+    const r = calRange();
+    const a = _calAnchor || dayOnly(new Date());
+    if (r.view === 'month')      _calAnchor = new Date(a.getFullYear(), a.getMonth() + dir, 1);
+    else if (r.view === '2weeks') _calAnchor = addDays(a, dir * 14);
+    else                          _calAnchor = addDays(a, dir * 7);
+    renderProgress();
+  }
+
+  function initCalendarUI() {
+    const grid = document.getElementById('progCalGrid');
+    if (grid) {
+      grid.addEventListener('click', e => {
+        const day = e.target.closest('.prog-cal-day');
+        if (day) {
+          if (day.classList.contains('future')) return;
+          showCalDetail(calDayTitle(day.dataset.day), day.dataset.day, day.dataset.day);
+          return;
+        }
+        const wk = e.target.closest('.prog-cal-wk');
+        if (wk) {
+          const start = wk.dataset.week;
+          const sd    = parseDstr(start);
+          showCalDetail('Week ' + isoWeek(sd), start, dstr(addDays(sd, 6)));
+        }
+      });
+    }
+    const prev = document.getElementById('progCalPrev');
+    if (prev) prev.addEventListener('click', () => calStep(-1));
+    const next = document.getElementById('progCalNext');
+    if (next) next.addEventListener('click', () => { if (!next.disabled) calStep(1); });
+
+    const title = document.getElementById('progCalTitle');
+    if (title) title.addEventListener('click', () => {
+      const r = calRange();
+      showCalDetail(calTitleText(r), dstr(r.from), dstr(r.to));
+    });
+
+    document.querySelectorAll('.prog-cal-view').forEach(btn => {
+      btn.addEventListener('click', () => {
+        _calView = btn.dataset.view;
+        set(CAL_VIEW_KEY, _calView);
+        renderProgress();
+      });
+    });
+
+    const ov = document.getElementById('progDetailOverlay');
+    const cl = document.getElementById('progDetailClose');
+    const close = () => { if (ov) ov.classList.remove('open'); };
+    if (cl) cl.addEventListener('click', close);
+    if (ov) ov.addEventListener('click', e => { if (e.target === ov) close(); });
+  }
+
   // Init render
+  initCalendarUI();
   renderProgress();
 
   // Expose endSession so showModeScreen and navFromTraining can call it
