@@ -608,7 +608,7 @@
   <div class="topbar">
     <button class="btn btn--ghost btn--sm" onclick="window.location.href='index.html'" style="margin-right:8px;" title="Back to app">&larr; App</button>
     <span class="topbar-title" onclick="showHome()" style="cursor:pointer;" title="Back to home">Deckstack — Pack Editor</span>
-    <span class="topbar-version" id="editorVersionLabel">Editor v1.7.1 · Changes saved automatically</span>
+    <span class="topbar-version" id="editorVersionLabel">Editor v1.9.0 · Changes saved automatically</span>
   </div>
 
   <!-- Home screen -->
@@ -751,20 +751,23 @@
   });
 </script>
 <!-- Editor logic -->
-  <!-- Bundle definitions — single source of truth for tier/name per bundle id.
-       Mirrors BUNDLE_DEFS in app-system.js. Update both when adding new bundles. -->
+  <!-- Bundle definitions — tier/name per bundle id, mirroring BUNDLE_DEFS in
+       app-system.js. Descriptions are mode-neutral FLAVOUR TEXT only: since
+       v1.26.50 the app computes the counts ("5 inputs per strategy — free for
+       everyone") from the real data for whichever training mode is open, so
+       never write counts or a mode name here. Update both files together. -->
   <script>
   window.BUNDLE_DEFS = {
     assertive: [
-      { id: 'free',      tier: 'free',     name: 'Free Bundle',         description: '2 sequences available to all users.' },
-      { id: 'pro',       tier: 'pro',      name: 'Pro Bundle',           description: '2 additional sequences — 4 total with Free. Unlocked with Pro.' },
-      { id: 'workplace', tier: 'pro-opt',  name: 'Workplace & Social',   description: '3 sequences for professional situations.' },
-      { id: 'domestic',  tier: 'extended', name: 'Domestic Situations',  description: '3 sequences for home and close relationships.' },
+      { id: 'free',      tier: 'free',     name: 'Free Bundle',         description: '' },
+      { id: 'pro',       tier: 'pro',      name: 'Pro Bundle',           description: '' },
+      { id: 'workplace', tier: 'pro-opt',  name: 'Workplace & Social',   description: 'Professional situations — colleagues, managers and meetings.' },
+      { id: 'domestic',  tier: 'extended', name: 'Domestic Situations',  description: 'Home and close relationships — partners, family and housemates.' },
     ],
   };
   </script>
-<script src="js/editor-core.js?v=180"></script>
-<script src="js/editor-ui.js?v=180"></script>
+<script src="js/editor-core.js?v=190"></script>
+<script src="js/editor-ui.js?v=190"></script>
 
 </body>
 </html>
