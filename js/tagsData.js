@@ -68,7 +68,7 @@ const packTags = {
 // field (export regenerates this array) or by hand.
 const TOPICS = [
   { id: 'assertiveness',      title: 'Assertiveness',                             packs: ['assertive'] },
-  { id: 'humour',             title: 'Humour & Playfulness',                      packs: ['humour', 'teasing', 'selfhumour'] },
+  { id: 'humour',             title: 'Humour & Playfulness',                      packs: ['humour', 'teasing', 'selfhumour', 'humourpractise'] },
   { id: 'criticism',          title: 'Criticism & Correction',                    packs: ['criticism'] },
   { id: 'conversation',       title: 'Conversation & Flow',                       packs: ['conversational', 'conversationaldepth'] },
   { id: 'compliments',        title: 'Compliments & Validation',                  packs: ['compliments'] },

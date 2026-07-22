@@ -626,7 +626,10 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
     const THRESHOLD = 70;
     let startY = 0, tracking = false, fired = false;
 
-    const scroller = () => screen.querySelector('.mode-list') || screen;
+    // The scrolling element is #modeScreen itself (overflow-y:auto); .mode-list
+    // has no overflow, so its scrollTop was always 0 and the pull-pin gesture
+    // fired from any position. Read the real scroller so it only arms at the top.
+    const scroller = () => screen;
 
     function showPinToast(pinned) {
       let t = document.getElementById('modePinToast');
