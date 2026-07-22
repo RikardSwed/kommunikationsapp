@@ -1546,6 +1546,10 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
 
     document.querySelectorAll('.prog-cal-view').forEach(btn => {
       btn.addEventListener('click', () => {
+        // Tapping the view you are already in jumps back to the period that
+        // holds today, keeping the view type. So after browsing back to April
+        // in month view, a second tap on "Month" returns you to this month.
+        if (calView() === btn.dataset.view) _calAnchor = null;
         _calView = btn.dataset.view;
         set(CAL_VIEW_KEY, _calView);
         renderProgress();

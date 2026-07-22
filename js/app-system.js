@@ -262,11 +262,18 @@ applyInputCounterVisibility();
     });
     // Topics (13): hide topic groups with no visible pack. Complete shows
     // every topic, including empty ones.
+    // v1.26.52: the counter is recomputed here rather than baked in by
+    // renderTopics, so it always matches what the user can actually SEE.
+    // Locked packs still show (keyhole badge) and therefore still count;
+    // packs hidden entirely at this level do not. Empty topics keep their
+    // "No packs yet" placeholder untouched.
     document.querySelectorAll('#libTabTopics .topic-group').forEach(group => {
+      const visible = Array.from(group.querySelectorAll('.collection-card[data-key]'))
+        .filter(c => c.style.display !== 'none').length;
+      const countEl = group.querySelector('.topic-count:not(.topic-count--empty)');
+      if (countEl) countEl.textContent = `${visible} pack${visible === 1 ? '' : 's'}`;
       if (curLevel === 'complete') { group.style.display = ''; return; }
-      const anyVisible = Array.from(group.querySelectorAll('.collection-card[data-key]'))
-        .some(c => c.style.display !== 'none');
-      group.style.display = anyVisible ? '' : 'none';
+      group.style.display = visible ? '' : 'none';
     });
     // Re-bind clicks on accessible cards in Library Packs tab
     document.querySelectorAll('#libTabPacks .collection-card[data-key]').forEach(card => {

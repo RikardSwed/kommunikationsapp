@@ -849,7 +849,8 @@ function showSyntaxGuide() {
     '<ul class="syntax-rules">' +
     '<li><code>PACK: Pack Name</code> — pack name, one line. Multiple <code>PACK:</code> blocks in one paste = multiple packs.</li>' +
     '<li><code>BUNDLE IMPORT: pack-key</code> — use instead of <code>PACK:</code> to add a bundle to an existing pack (e.g. <code>BUNDLE IMPORT: assertive</code>). Only include the mode and bundle you are adding.</li>' +
-    '<li><code>TAGS: tag one, tag two</code> — optional comma-separated tags placed after the <code>PACK:</code> line.</li>' +
+    '<li><code>TAGS: tag one, tag two</code> — optional comma-separated tags placed after the <code>PACK:</code> line. Tags feed search.</li>' +
+    '<li><code>TOPICS: Topic One, Topic Two</code> — optional, and separate from <code>TAGS:</code>. Topics decide which group the pack appears under in the Library&rsquo;s Topics tab. Names are matched against the existing topics ignoring case, by title or by id, so <code>Humour &amp; Playfulness</code> and <code>humour</code> both find the same one. A name that matches nothing creates a NEW topic, and the import tells you it did. Works inside a program section too. Singular <code>TOPIC:</code> is also accepted.</li>' +
     '<li><code>MODE:</code> — one of: <code>single</code>, <code>collections</code>, <code>memorize</code>, <code>sequences</code>, <code>challenges</code>, <code>mindset</code>. Only include modes you need.</li>' +
     '<li><code>## Strategy: Name</code> — starts a new strategy. Use <code>## Category:</code> for challenges, <code>## Combo:</code> for sequences, <code>## Collection:</code> for collections, <code>## Mindset:</code> for mindset.</li>' +
     '<li><code>**Explanation:**</code> — descriptive text explaining the strategy.</li>' +
@@ -859,8 +860,9 @@ function showSyntaxGuide() {
     '&nbsp;&nbsp;<code>- Situation: X | Response: Y | Guide Front: text | Guide Back: text</code><br>' +
     '&nbsp;&nbsp;<code>- Step: label | explanation | Guide Front: text</code><br>' +
     'Overrides the strategy guide for that single card. Cards without it inherit the strategy default.</li>' +
-    '<li><code>BUNDLE: free</code> — base tier, seen by all users. Convention: 2 inputs per strategy.</li>' +
-    '<li><code>BUNDLE: pro</code> — extra pro tier, shown together with free for Pro users. Convention: 2 more per strategy (4 total).</li>' +
+    '<li><code>BUNDLE: free</code> — base tier, seen by everyone. Convention: 5 inputs per strategy.</li>' +
+    '<li><code>BUNDLE: pro</code> — extra pro tier, shown together with free for Pro users. Convention: 3 more per strategy, so 8 in total.</li>' +
+    '<li>Only <code>single</code> and <code>memorize</code> are open to free users. <code>collections</code>, <code>sequences</code>, <code>challenges</code> and <code>mindset</code> all need Pro, so a free bundle there would never be seen — put everything in <code>BUNDLE: pro</code>. Convention: 8 per unit.</li>' +
     '<li><code>BUNDLE: workplace</code> or <code>BUNDLE: domestic</code> — opt-in bundles activated manually. Convention: 3 inputs per strategy each.</li>' +
     '<li>Card format for single / collections / challenges / mindset:<br>' +
     '&nbsp;&nbsp;<code>- Situation: X | Response: Y</code></li>' +
@@ -872,7 +874,7 @@ function showSyntaxGuide() {
     '&nbsp;&nbsp;<code>- Situation: Describe the situation</code><br>' +
     '&nbsp;&nbsp;<code>- Step: Step 1 label | Step 1 explanation</code><br>' +
     '&nbsp;&nbsp;<code>- Step: Step 2 label | Step 2 explanation</code><br>' +
-    'Change <code>BUNDLE:</code> between scenarios to assign each to a different bundle. Convention: 2 free, 2 pro, 3 workplace, 3 domestic per combo.</li>' +
+    'Change <code>BUNDLE:</code> between scenarios to assign each to a different bundle. Sequences need Pro, so the convention is about 3 scenarios per combo, all in <code>BUNDLE: pro</code>.</li>' +
     '</ul>';
 
   var programRules =
@@ -896,6 +898,7 @@ function showSyntaxGuide() {
   var exSinglePack = [
     'PACK: Assertive Communication',
     'TAGS: assertiveness, boundaries, saying no, confidence, pushback',
+    'TOPICS: Assertiveness',
     '',
     '# ── SINGLE STRATEGY ──────────────────────────────────────────────────────',
     'MODE: single',
@@ -956,6 +959,7 @@ function showSyntaxGuide() {
   var exMultiPack = [
     'PACK: Starting Conversations',
     'TAGS: small talk, starting conversations, social anxiety, meeting people',
+    'TOPICS: Questions & Conversation Starters',
     '',
     'MODE: single',
     '',
@@ -976,6 +980,7 @@ function showSyntaxGuide() {
     '',
     'PACK: Conversational Depth',
     'TAGS: deep conversation, connection, follow-up questions, meaningful talk',
+    'TOPICS: Conversation & Flow, Rapport & Connection',
     '',
     'MODE: single',
     '',
@@ -1020,6 +1025,7 @@ function showSyntaxGuide() {
     '',
     'SECTION: Part 1 — Starting Conversations',
     'PACK: Starting Conversations',
+    'TOPICS: Questions & Conversation Starters',
     '',
     'MODE: single',
     '',
@@ -1068,6 +1074,7 @@ function showSyntaxGuide() {
     '',
     'SECTION: Module 1 — Core Techniques',
     'PACK: Assertive Core',
+    'TOPICS: Assertiveness',
     '',
     'MODE: single',
     '',
@@ -1261,6 +1268,8 @@ function showPasteDialog() {
         <p class="modal-desc">Paste AI-generated text using the Deckstack format. <a href="#" id="show-syntax-btn">Show syntax guide</a></p>
         <div class="syntax-guide" id="syntax-guide" style="display:none">
 <pre>PACK: Pack Name
+TAGS: tag one, tag two
+TOPICS: Topic Name
 MODE: single
 GUIDE FRONT: Use this strategy when...
 GUIDE BACK: A possible response...
