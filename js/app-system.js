@@ -401,25 +401,25 @@ const BUNDLE_DEFS = {
       id: 'free',
       tier: 'free',
       name: 'Free Bundle',
-      description: '2 sequences available to all users.',
+      description: '',
     },
     {
       id: 'pro',
       tier: 'pro',
       name: 'Pro Bundle',
-      description: '2 additional sequences — 4 total with Free. Unlocked with Pro.',
+      description: '',
     },
     {
       id: 'workplace',
       tier: 'pro-opt',
       name: 'Workplace & Social',
-      description: '3 sequences for professional situations — colleagues, managers, and meetings.',
+      description: 'Professional situations — colleagues, managers and meetings.',
     },
     {
       id: 'domestic',
       tier: 'extended',
       name: 'Domestic Situations',
-      description: '3 sequences for home and close relationships — partners, family, and housemates.',
+      description: 'Home and close relationships — partners, family and housemates.',
     },
   ],
   humourpractise: [
@@ -427,19 +427,19 @@ const BUNDLE_DEFS = {
       id: 'free',
       tier: 'free',
       name: 'Free Bundle',
-      description: 'Core self-humour situations, free for everyone.',
+      description: '',
     },
     {
       id: 'pro',
       tier: 'pro',
       name: 'Pro Bundle',
-      description: 'Extra situations for each move — unlocked with Pro.',
+      description: '',
     },
     {
       id: 'family',
       tier: 'pro-opt',
       name: 'Family & Get-Togethers',
-      description: 'Humour for family dinners, reunions and holidays — same moves, home context.',
+      description: 'Family dinners, reunions and holidays — same moves, home context.',
     },
   ]
 };
@@ -550,6 +550,89 @@ window.filterCardsByBundle = function(cards, packKey) {
 
 // Render Input Bundles section into a settings panel
 // Render Input Bundles section into a settings panel
+// Bundle description text (v1.26.50)
+// BUNDLE_DEFS carries only mode-neutral flavour text. The counts shown in a
+// settings screen are computed here from the real data for whichever mode is
+// open, so a bundle can never claim "2 sequences" while you are standing in
+// Single Strategy. Freemium can only reach Single Strategy and Memorize (see
+// MODE_CONFIG), so only those two modes say "free for everyone"; every other
+// mode — and all handsfree modes — needs Pro, so the text there just states
+// the amount.
+const BUNDLE_MODES = {
+  trainingScreen: { src: () => (typeof collections          !== 'undefined' ? collections          : null), items: 'inputs', unit: ['input','inputs'],       per: 'per strategy', freeMode: true  },
+  memScreen:      { src: () => (typeof memorizeCollections   !== 'undefined' ? memorizeCollections   : null), items: 'cards',  unit: ['card','cards'],         per: 'per unit',     freeMode: true  },
+  flowScreen:     { src: () => (typeof multiStepCollections  !== 'undefined' ? multiStepCollections  : null), items: 'inputs', unit: ['scenario','scenarios'], per: 'per sequence', freeMode: false },
+  challScreen:    { src: () => (typeof challengesCollections !== 'undefined' ? challengesCollections : null), items: 'inputs', unit: ['input','inputs'],       per: 'per category', freeMode: false },
+  mindScreen:     { src: () => (typeof mindsetCollections    !== 'undefined' ? mindsetCollections    : null), items: 'inputs', unit: ['card','cards'],         per: 'per unit',     freeMode: false },
+  collScreen:     { src: () => (typeof collectionsModeData   !== 'undefined' ? collectionsModeData   : null), items: 'inputs', unit: ['input','inputs'],       per: 'per set',      freeMode: false },
+};
+// Handsfree screens read the same data, but none of them are free.
+const BUNDLE_MODE_ALIASES = {
+  hfScreen: 'trainingScreen', hfMemScreen: 'memScreen', hfFlowScreen: 'flowScreen',
+  hfChallScreen: 'challScreen', hfMindScreen: 'mindScreen', hfCollScreen: 'collScreen',
+};
+
+function activeBundleMode() {
+  const shown = id => {
+    const el = document.getElementById(id);
+    return !!(el && el.style.display && el.style.display !== 'none');
+  };
+  for (const id of Object.keys(BUNDLE_MODES)) {
+    if (shown(id)) return BUNDLE_MODES[id];
+  }
+  for (const hf of Object.keys(BUNDLE_MODE_ALIASES)) {
+    if (shown(hf)) {
+      const base = BUNDLE_MODES[BUNDLE_MODE_ALIASES[hf]];
+      return base ? Object.assign({}, base, { freeMode: false }) : null;
+    }
+  }
+  return null;
+}
+
+// How many cards/inputs a bundle contributes in the open mode. `per` is set
+// only when every group carries the same number (the normal case: 5 free +
+// 3 pro per strategy); otherwise fall back to the total. Untagged cards count
+// as free, matching filterInputsByBundle.
+function countBundleItems(packKey, mode, bundleId) {
+  const src = mode && mode.src();
+  const groups = src && src[packKey];
+  if (!Array.isArray(groups) || !groups.length) return null;
+  const counts = groups.map(g => {
+    const items = g && g[mode.items];
+    if (!Array.isArray(items)) return 0;
+    return items.filter(it => (it && it.bundle ? it.bundle : 'free') === bundleId).length;
+  });
+  const total = counts.reduce((a, n) => a + n, 0);
+  if (!total) return null;
+  const uniform = new Set(counts).size === 1;
+  return { per: uniform ? counts[0] : null, total, groups: counts.length };
+}
+
+function bundleDescFor(packKey, bundle) {
+  const flavour = (bundle.description || '').trim();
+  const mode = activeBundleMode();
+  const c = mode ? countBundleItems(packKey, mode, bundle.id) : null;
+  if (!c) return flavour;
+
+  const amount = c.per !== null ? c.per : c.total;
+  const unit   = amount === 1 ? mode.unit[0] : mode.unit[1];
+  const scope  = (c.per !== null && c.groups > 1) ? ' ' + mode.per : '';
+  let line;
+
+  if (bundle.tier === 'free') {
+    line = `${amount} ${unit}${scope}` + (mode.freeMode ? ' \u2014 free for everyone.' : '.');
+  } else if (bundle.tier === 'pro') {
+    const free = countBundleItems(packKey, mode, 'free');
+    const freeAmount = free ? (free.per !== null ? free.per : free.total) : 0;
+    line = freeAmount
+      ? `${amount} more ${unit}${scope} \u2014 ${freeAmount + amount} in total` + (mode.freeMode ? ' with Pro.' : '.')
+      : `${amount} ${unit}${scope}` + (mode.freeMode ? ' \u2014 unlocked with Pro.' : '.');
+  } else {
+    line = `${amount} ${unit}${scope}.`;
+  }
+  return flavour ? `${line} ${flavour}` : line;
+}
+
 window.renderBundleSection = function(containerEl, packKey) {
   const defs = BUNDLE_DEFS[packKey];
   const old = containerEl.querySelector('.bundle-section');
@@ -600,6 +683,9 @@ window.renderBundleSection = function(containerEl, packKey) {
   }
 
   defs.forEach(bundle => {
+    // Swap in the mode-aware description before any row is built, so all
+    // five row templates below show counts that match the open mode.
+    bundle = Object.assign({}, bundle, { description: bundleDescFor(packKey, bundle) });
     const accessible = canUseTier(bundle.tier, bundle.id);
     const row = document.createElement('div');
 
