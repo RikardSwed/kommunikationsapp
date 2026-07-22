@@ -1,7 +1,7 @@
 // editor-core.js — Deckstack Pack Editor
 // Depends on: data.js, challengesData.js, mindsetData.js, multiStepData.js, memorizeData.js
 
-const EDITOR_VERSION = 'v1.8.0';
+const EDITOR_VERSION = 'v1.9.0';
 const STORAGE_KEY    = 'ds_editor_packs';
 const ACTIVE_KEY     = 'ds_editor_active';
 
@@ -122,6 +122,12 @@ function packFromAppData(key) {
     pack.tags = [...packTags[key]];
   }
 
+  // Load topics from the TOPICS registry in tagsData.js if available
+  if (typeof TOPICS !== 'undefined' && Array.isArray(TOPICS)) {
+    const inTopics = TOPICS.filter(t => (t.packs || []).includes(key)).map(t => t.id);
+    if (inTopics.length) pack.topics = inTopics;
+  }
+
   return pack;
 }
 
@@ -148,6 +154,49 @@ function emptyPack(name) {
 
 function slugify(str) {
   return str.toLowerCase().replace(/[^a-z0-9]+/g, '').slice(0, 32) || 'pack';
+}
+
+// TOPICS
+// Topics are the Library "Topics" tab groupings (the TOPICS array in
+// tagsData.js, which admin.html already loads). They are deliberately SEPARATE
+// from tags: tags feed search, topics decide which group a pack is filed under.
+// Names are matched case-insensitively against both the topic title and its id,
+// so "Humour & Playfulness", "humour & playfulness" and "humour" all hit the
+// same topic. A name that matches nothing is treated as a NEW topic: an id is
+// slugified from it and it is reported back so the import summary can say so.
+function resolveTopics(names) {
+  const reg = (typeof TOPICS !== 'undefined' && Array.isArray(TOPICS)) ? TOPICS : [];
+  const norm = v => String(v || '').trim().toLowerCase().replace(/\s+/g, ' ');
+  const topics = [], created = [];
+  (names || []).forEach(raw => {
+    const name = String(raw || '').trim();
+    if (!name) return;
+    const n = norm(name);
+    const hit = reg.find(t => norm(t.title) === n || norm(t.id) === n);
+    if (hit) {
+      if (!topics.includes(hit.id)) topics.push(hit.id);
+      return;
+    }
+    const id = slugify(name);
+    if (!topics.includes(id)) {
+      topics.push(id);
+      created.push({ id, title: name });
+    }
+  });
+  return { topics, created };
+}
+
+// The TOPICS row this pack should end up in, ready to paste into tagsData.js.
+// The editor cannot write app data files, so this is how a topic assignment
+// travels from an import back into the app.
+function topicsRegistryHint(pack) {
+  const reg = (typeof TOPICS !== 'undefined' && Array.isArray(TOPICS)) ? TOPICS : [];
+  return (pack.topics || []).map(id => {
+    const hit = reg.find(t => t.id === id);
+    const title = hit ? hit.title : ((pack._newTopics || []).find(t => t.id === id) || {}).title || id;
+    const packs = hit ? [...hit.packs, pack.key] : [pack.key];
+    return { id, title, packs, isNew: !hit };
+  });
 }
 
 // ── STORAGE ───────────────────────────────────────────────────────────────────
@@ -212,7 +261,15 @@ function exportProgram(program) {
 
 function exportPack(pack) {
   const out = {
-    meta: { key: pack.key, name: pack.name, exportedAt: new Date().toISOString(), editorVersion: EDITOR_VERSION },
+    meta: {
+      key: pack.key,
+      name: pack.name,
+      tags: pack.tags || [],
+      topics: pack.topics || [],
+      newTopics: pack._newTopics || [],
+      exportedAt: new Date().toISOString(),
+      editorVersion: EDITOR_VERSION,
+    },
     data: {},
   };
   MODES.forEach(m => { if (pack[m.id]) out.data[m.id] = resolveGuides(pack[m.id]); });
@@ -270,6 +327,9 @@ function importFromJSON(jsonString) {
     const pack = emptyPack(data.meta.name || 'Imported pack');
     pack.key   = data.meta.key || pack.key;
     pack.name  = data.meta.name || pack.name;
+    if (Array.isArray(data.meta.tags)   && data.meta.tags.length)   pack.tags   = [...data.meta.tags];
+    if (Array.isArray(data.meta.topics) && data.meta.topics.length) pack.topics = [...data.meta.topics];
+    if (Array.isArray(data.meta.newTopics) && data.meta.newTopics.length) pack._newTopics = [...data.meta.newTopics];
     MODES.forEach(m => { if (data.data[m.id]) pack[m.id] = data.data[m.id]; });
     return pack;
   }
@@ -340,6 +400,7 @@ function _extractCardGuides(line) {
 function _parsePack(lines) {
   let packName = 'Imported pack';
   let packTagsArr = [];
+  let packTopicsArr = [];
   let currentModeId = 'single';
   let currentBundle = 'default';
   let isBundleImport = false;
@@ -388,6 +449,7 @@ function _parsePack(lines) {
     if (/^BUNDLE IMPORT:/i.test(line)) { isBundleImport = true; bundleImportTarget = line.replace(/^BUNDLE IMPORT:/i,'').trim().toLowerCase(); continue; }
     if (/^PACK:/i.test(line)) { packName = line.replace(/^PACK:/i,'').trim(); continue; }
     if (/^TAGS:/i.test(line)) { packTagsArr = line.replace(/^TAGS:/i,'').split(',').map(t => t.trim().toLowerCase()).filter(Boolean); continue; }
+    if (/^TOPICS?:/i.test(line)) { packTopicsArr = line.replace(/^TOPICS?:/i,'').split(',').map(t => t.trim()).filter(Boolean); continue; }
 
     if (/^MODE:/i.test(line)) {
       pushStrat();
@@ -497,6 +559,11 @@ function _parsePack(lines) {
     }
   });
   if (packTagsArr.length) pack.tags = packTagsArr;
+  if (packTopicsArr.length) {
+    const resolved = resolveTopics(packTopicsArr);
+    pack.topics = resolved.topics;
+    if (resolved.created.length) pack._newTopics = resolved.created;
+  }
   return pack;
 }
 
