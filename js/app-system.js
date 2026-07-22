@@ -560,7 +560,7 @@ window.filterCardsByBundle = function(cards, packKey) {
 // the amount.
 const BUNDLE_MODES = {
   trainingScreen: { src: () => (typeof collections          !== 'undefined' ? collections          : null), items: 'inputs', unit: ['input','inputs'],       per: 'per strategy', freeMode: true  },
-  memScreen:      { src: () => (typeof memorizeCollections   !== 'undefined' ? memorizeCollections   : null), items: 'cards',  unit: ['card','cards'],         per: 'per unit',     freeMode: true  },
+  memScreen:      { src: () => (typeof memorizeCollections   !== 'undefined' ? memorizeCollections   : null), items: 'cards',  unit: ['card','cards'],         per: 'per strategy', freeMode: true  },
   flowScreen:     { src: () => (typeof multiStepCollections  !== 'undefined' ? multiStepCollections  : null), items: 'inputs', unit: ['scenario','scenarios'], per: 'per sequence', freeMode: false },
   challScreen:    { src: () => (typeof challengesCollections !== 'undefined' ? challengesCollections : null), items: 'inputs', unit: ['input','inputs'],       per: 'per category', freeMode: false },
   mindScreen:     { src: () => (typeof mindsetCollections    !== 'undefined' ? mindsetCollections    : null), items: 'inputs', unit: ['card','cards'],         per: 'per unit',     freeMode: false },
@@ -589,10 +589,27 @@ function activeBundleMode() {
   return null;
 }
 
-// How many cards/inputs a bundle contributes in the open mode. `per` is set
-// only when every group carries the same number (the normal case: 5 free +
-// 3 pro per strategy); otherwise fall back to the total. Untagged cards count
-// as free, matching filterInputsByBundle.
+// How many cards/inputs a bundle contributes PER GROUP in the open mode.
+// Bundles are always described per strategy/sequence/etc., never as a grand
+// total: 5 strategies with 5 free inputs each is "5 per strategy", not 25.
+// Groups that don't carry the bundle at all are ignored, so a bonus group
+// (e.g. Memorize's pro-only "Beyond the Strategies") can't drag the figure
+// off. If the remaining groups still disagree, use the most common value.
+// Untagged cards count as free, matching filterInputsByBundle.
+function typicalCount(counts) {
+  const nz = counts.filter(n => n > 0);
+  if (!nz.length) return 0;
+  if (new Set(nz).size === 1) return nz[0];
+  const freq = {};
+  nz.forEach(n => { freq[n] = (freq[n] || 0) + 1; });
+  let best = nz[0], bestFreq = 0;
+  Object.keys(freq).forEach(k => {
+    const n = Number(k), f = freq[k];
+    if (f > bestFreq || (f === bestFreq && n > best)) { best = n; bestFreq = f; }
+  });
+  return best;
+}
+
 function countBundleItems(packKey, mode, bundleId) {
   const src = mode && mode.src();
   const groups = src && src[packKey];
@@ -602,10 +619,9 @@ function countBundleItems(packKey, mode, bundleId) {
     if (!Array.isArray(items)) return 0;
     return items.filter(it => (it && it.bundle ? it.bundle : 'free') === bundleId).length;
   });
-  const total = counts.reduce((a, n) => a + n, 0);
-  if (!total) return null;
-  const uniform = new Set(counts).size === 1;
-  return { per: uniform ? counts[0] : null, total, groups: counts.length };
+  const per = typicalCount(counts);
+  if (!per) return null;
+  return { per, groups: counts.length, carrying: counts.filter(n => n > 0).length };
 }
 
 function bundleDescFor(packKey, bundle) {
@@ -614,16 +630,16 @@ function bundleDescFor(packKey, bundle) {
   const c = mode ? countBundleItems(packKey, mode, bundle.id) : null;
   if (!c) return flavour;
 
-  const amount = c.per !== null ? c.per : c.total;
+  const amount = c.per;
   const unit   = amount === 1 ? mode.unit[0] : mode.unit[1];
-  const scope  = (c.per !== null && c.groups > 1) ? ' ' + mode.per : '';
+  const scope  = c.groups > 1 ? ' ' + mode.per : '';
   let line;
 
   if (bundle.tier === 'free') {
     line = `${amount} ${unit}${scope}` + (mode.freeMode ? ' \u2014 free for everyone.' : '.');
   } else if (bundle.tier === 'pro') {
     const free = countBundleItems(packKey, mode, 'free');
-    const freeAmount = free ? (free.per !== null ? free.per : free.total) : 0;
+    const freeAmount = free ? free.per : 0;
     line = freeAmount
       ? `${amount} more ${unit}${scope} \u2014 ${freeAmount + amount} in total` + (mode.freeMode ? ' with Pro.' : '.')
       : `${amount} ${unit}${scope}` + (mode.freeMode ? ' \u2014 unlocked with Pro.' : '.');
