@@ -7,10 +7,10 @@
   <meta name="mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="default" />
   <meta name="apple-mobile-web-app-title" content="Deckstack" />
-  <link rel="manifest" href="manifest.json?v=12655" />
+  <link rel="manifest" href="manifest.json?v=12656" />
   <title>Deckstack</title>
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="stylesheet" href="css/style.css?v=12655" />
+  <link rel="stylesheet" href="css/style.css?v=12656" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
 </head>
 <body>
@@ -622,6 +622,17 @@
     </div>
     <div class="collection-card" id="collectionPlayfulRefusals" data-key="playfulrefusals" data-label="Playful Refusals">
       <div><div class="collection-name">Playful Refusals</div><div class="collection-meta">2 strategies &nbsp;·&nbsp; Flashcard mode</div></div>
+      <div class="collection-arrow">›</div>
+    </div>
+    <!-- Program-delivered packs. No PACK_CONFIG entry, so they stay hidden
+         everywhere outside the program until that section's checkpoint is
+         passed — see the discovery rule in app-system.js _programState. -->
+    <div class="collection-card" id="collectionTheHappyNo" data-key="thehappyno" data-label="The Happy No" style="display:none;">
+      <div><div class="collection-name">The Happy No</div><div class="collection-meta">1 strategy &nbsp;·&nbsp; Flashcard mode</div></div>
+      <div class="collection-arrow">›</div>
+    </div>
+    <div class="collection-card" id="collectionTheRegretfulNo" data-key="theregretfulno" data-label="The Regretful No" style="display:none;">
+      <div><div class="collection-name">The Regretful No</div><div class="collection-meta">1 strategy &nbsp;·&nbsp; Flashcard mode</div></div>
       <div class="collection-arrow">›</div>
     </div>
   </div>
@@ -2208,19 +2219,19 @@
   </button>
 </div>
 
-<script src="js/data.js?v=12655"></script>
-<script src="js/tagsData.js?v=12655"></script>
-<script src="js/programsData.js?v=12655"></script>
-<script src="js/challengesData.js?v=12655"></script>
-<script src="js/mindsetData.js?v=12655"></script>
-<script src="js/multiStepData.js?v=12655"></script>
-<script src="js/memorizeData.js?v=12655"></script>
-<script src="js/mode-engine.js?v=12655"></script>
-<script src="js/app-core.js?v=12655"></script>
-<script src="js/app-modes.js?v=12655"></script>
-<script src="js/app-handsfree.js?v=12655"></script>
-<script src="js/app-system.js?v=12655"></script>
-<script src="js/app-ui.js?v=12655"></script>
+<script src="js/data.js?v=12656"></script>
+<script src="js/tagsData.js?v=12656"></script>
+<script src="js/programsData.js?v=12656"></script>
+<script src="js/challengesData.js?v=12656"></script>
+<script src="js/mindsetData.js?v=12656"></script>
+<script src="js/multiStepData.js?v=12656"></script>
+<script src="js/memorizeData.js?v=12656"></script>
+<script src="js/mode-engine.js?v=12656"></script>
+<script src="js/app-core.js?v=12656"></script>
+<script src="js/app-modes.js?v=12656"></script>
+<script src="js/app-handsfree.js?v=12656"></script>
+<script src="js/app-system.js?v=12656"></script>
+<script src="js/app-ui.js?v=12656"></script>
 
 
 <!-- CHECKPOINT SCREEN -->
