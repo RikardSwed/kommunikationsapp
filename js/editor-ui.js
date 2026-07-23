@@ -681,29 +681,57 @@ function selectedItems() {
 }
 
 function updateExportSelectedBtn() {
-  const btn = document.getElementById('export-selected-btn');
-  if (!btn) return;
-  const n = selectedItems().length;
-  btn.disabled = n === 0;
-  btn.textContent = n ? `Export selected (${n})` : 'Export selected';
+  // Kept as a no-op hook: the button is always enabled in export mode and
+  // reports an error when nothing is ticked, rather than sitting disabled.
+}
+
+// EXPORT MODE (v1.11.1)
+// Exporting is a mode you enter, not a permanent row of tick boxes. Pressing
+// Export swaps the action row for Cancel / Export selected and reveals a
+// checkbox on every pack and program; Cancel restores the normal screen and
+// clears the selection.
+function setExportMode(on) {
+  document.body.classList.toggle('export-mode', !!on);
+  const normal = document.getElementById('home-actions-normal');
+  const exp    = document.getElementById('home-actions-export');
+  if (normal) normal.style.display = on ? 'none' : '';
+  if (exp)    exp.style.display    = on ? '' : 'none';
+  if (!on) clearSelection();
+}
+
+function bindExportMode() {
+  const enter = document.getElementById('export-mode-btn');
+  if (enter && !enter._bound) {
+    enter._bound = true;
+    enter.addEventListener('click', () => setExportMode(true));
+  }
+  const cancel = document.getElementById('export-cancel-btn');
+  if (cancel && !cancel._bound) {
+    cancel._bound = true;
+    cancel.addEventListener('click', () => setExportMode(false));
+  }
 }
 
 function bindSelectionBoxes() {
   document.querySelectorAll('.sel-box').forEach(box => {
+    if (box._bound) return;
+    box._bound = true;
     box.addEventListener('click', e => e.stopPropagation());
-    box.addEventListener('change', updateExportSelectedBtn);
   });
   const btn = document.getElementById('export-selected-btn');
   if (btn && !btn._bound) {
     btn._bound = true;
     btn.addEventListener('click', exportSelected);
   }
-  updateExportSelectedBtn();
+  bindExportMode();
 }
 
 function exportSelected() {
   const items = selectedItems();
-  if (!items.length) return;
+  if (!items.length) {
+    showToast('Select at least one pack or program to export');
+    return;
+  }
 
   const editorPacks    = getAllEditorPacks();
   const editorPrograms = getAllEditorPrograms();
@@ -728,11 +756,11 @@ function exportSelected() {
   if (meta.packs)    bits.push(`${meta.packs} pack${meta.packs === 1 ? '' : 's'}`);
   if (meta.programs) bits.push(`${meta.programs} program${meta.programs === 1 ? '' : 's'}`);
   showToast(`Exported ${bits.join(' and ')}`);
+  setExportMode(false);
 }
 
 function clearSelection() {
   document.querySelectorAll('.sel-box:checked').forEach(b => { b.checked = false; });
-  updateExportSelectedBtn();
 }
 
 // ── TAG HELPERS ───────────────────────────────────────────────────────────────
