@@ -473,8 +473,12 @@
     }
     .btn--danger:hover { border-color: var(--danger); background: rgba(192,57,43,0.06); }
 
-    /* Export-selection checkboxes on the home screen (v1.10.0). */
-    .sel-box {
+    /* Export selection (v1.11.1). The checkboxes only exist while the home
+       screen is in export mode, so the normal list looks exactly as it did
+       before — tick boxes appearing on everything by default was noise. */
+    .sel-box { display: none; }
+    body.export-mode .sel-box {
+      display:      inline-block;
       width:        15px;
       height:       15px;
       margin:       0 10px 0 0;
@@ -482,8 +486,7 @@
       accent-color: var(--acc);
       cursor:       pointer;
     }
-    #export-selected-btn:disabled { opacity: .45; cursor: default; }
-    #export-selected-btn:disabled:hover { border-color: var(--border); color: var(--txt2); }
+    body.export-mode .pack-row { outline: 1px dashed var(--border); }
 
     /* ── TOAST ── */
     #editor-toast {
@@ -636,21 +639,25 @@
   <div class="topbar">
     <button class="btn btn--ghost btn--sm" onclick="window.location.href='index.html'" style="margin-right:8px;" title="Back to app">&larr; App</button>
     <span class="topbar-title" onclick="showHome()" style="cursor:pointer;" title="Back to home">Deckstack — Pack Editor</span>
-    <span class="topbar-version" id="editorVersionLabel">Editor v1.11.0 · Changes saved automatically</span>
+    <span class="topbar-version" id="editorVersionLabel">Editor v1.11.1 · Changes saved automatically</span>
   </div>
 
   <!-- Home screen -->
   <div class="screen" id="screen-home">
     <div class="home-header">
       <h1>Pack Editor</h1>
-      <div class="home-actions">
+      <div class="home-actions" id="home-actions-normal">
         <input type="file" id="json-file-input" accept=".json" style="display:none">
         <button class="btn btn--ghost btn--sm" onclick="showSyntaxGuide()">Syntax guide</button>
         <button class="btn btn--ghost btn--sm" id="import-text-btn">Paste from AI</button>
         <button class="btn btn--ghost btn--sm" id="import-json-btn">Import JSON</button>
-        <button class="btn btn--ghost btn--sm" id="export-selected-btn" disabled title="Tick the boxes beside packs and programs, then export them together as one file">Export selected</button>
+        <button class="btn btn--ghost btn--sm" id="export-mode-btn" title="Choose packs and programs to export together">Export</button>
         <button class="btn btn--primary" onclick="createNewPack()">+ New pack</button>
         <button class="btn btn--primary" id="new-program-btn">+ New program</button>
+      </div>
+      <div class="home-actions" id="home-actions-export" style="display:none;">
+        <button class="btn btn--ghost btn--sm" id="export-cancel-btn">Cancel</button>
+        <button class="btn btn--primary btn--sm" id="export-selected-btn">Export selected</button>
       </div>
     </div>
     <div class="pack-columns">
@@ -795,8 +802,8 @@
     ],
   };
   </script>
-<script src="js/editor-core.js?v=1110"></script>
-<script src="js/editor-ui.js?v=1110"></script>
+<script src="js/editor-core.js?v=1111"></script>
+<script src="js/editor-ui.js?v=1111"></script>
 
 </body>
 </html>
