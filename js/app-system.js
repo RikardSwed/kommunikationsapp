@@ -109,6 +109,8 @@ applyInputCounterVisibility();
     storytelling:   { label: 'Storytelling',             minLevel: 'extended'  },
     humourpractise: { label: 'Humour Practise (new)',    minLevel: 'freemium'  },
     transitions:    { label: 'Transitions',              minLevel: 'freemium'  },
+    speakingupingroups: { label: 'Speaking Up in Groups', minLevel: 'freemium' },
+    playfulrefusals:    { label: 'Playful Refusals',      minLevel: 'freemium' },
   };
 
   // Mode definitions per level

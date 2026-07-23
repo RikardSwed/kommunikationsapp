@@ -1,7 +1,7 @@
 // editor-core.js — Deckstack Pack Editor
 // Depends on: data.js, challengesData.js, mindsetData.js, multiStepData.js, memorizeData.js
 
-const EDITOR_VERSION = 'v1.9.3';
+const EDITOR_VERSION = 'v1.10.0';
 const STORAGE_KEY    = 'ds_editor_packs';
 const ACTIVE_KEY     = 'ds_editor_active';
 
@@ -317,10 +317,55 @@ function downloadExport(pack) {
   a.click(); URL.revokeObjectURL(url);
 }
 
+// BUNDLE EXPORT (v1.10.0)
+// Export several packs and/or programs at once, as ONE file rather than a
+// burst of downloads: browsers throttle or block multiple simultaneous
+// downloads, and a single file is far easier to hand on to someone else.
+// Each entry keeps exactly the shape of a normal single export, so nothing
+// new has to be understood to read one — a bundle is just a list of them.
+function buildBundle(packs, programs) {
+  return {
+    meta: {
+      type: 'deckstack-bundle',
+      packs: packs.length,
+      programs: programs.length,
+      exportedAt: new Date().toISOString(),
+      editorVersion: EDITOR_VERSION,
+    },
+    packs: packs.map(p => JSON.parse(exportPack(p))),
+    programs: programs.map(pr => ({
+      meta: { id: pr.id, title: pr.title },
+      data: pr,
+    })),
+  };
+}
+
+function downloadBundle(packs, programs) {
+  const bundle = buildBundle(packs, programs);
+  const blob = new Blob([JSON.stringify(bundle, null, 2)], { type: 'application/json' });
+  const url  = URL.createObjectURL(blob);
+  const a    = document.createElement('a');
+  a.href = url;
+  a.download = `deckstack-bundle-${bundle.meta.packs}p${bundle.meta.programs}g-${Date.now()}.json`;
+  a.click(); URL.revokeObjectURL(url);
+  return bundle.meta;
+}
+
 // ── IMPORT: JSON FILE ─────────────────────────────────────────────────────────
 
 function importFromJSON(jsonString) {
   const data = JSON.parse(jsonString);
+
+  // A bundle holds several packs and programs. Return them together so the
+  // caller can save each one and report how many arrived.
+  if (data.meta && data.meta.type === 'deckstack-bundle') {
+    return {
+      bundle: true,
+      packs: (data.packs || []).map(p => importFromJSON(JSON.stringify(p))),
+      programs: (data.programs || []).map(pr => pr.data || pr),
+    };
+  }
+
   // Accept both raw pack objects and our export format {meta, data}
   if (data.meta && data.data) {
     // Our own export format

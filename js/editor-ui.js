@@ -102,6 +102,8 @@ function renderProgramList() {
   }
   setHTML('program-list-my', myHtml);
 
+  bindSelectionBoxes();
+
   document.querySelectorAll('.program-row .prog-del').forEach(btn => {
     btn.addEventListener('click', e => {
       e.stopPropagation();
@@ -627,6 +629,8 @@ function renderPackList() {
       }
     });
   });
+
+  bindSelectionBoxes();
 }
 
 function packRow(name, key, type) {
@@ -635,6 +639,7 @@ function packRow(name, key, type) {
     : '';
   return `
     <div class="pack-row" data-key="${key}" data-source="${type}">
+      <input type="checkbox" class="sel-box" data-kind="pack" data-key="${key}" data-source="${type}" title="Select for export">
       <span class="pack-row-name">${escHtml(name)}</span>
       ${delBtn}
     </div>`;
@@ -647,10 +652,76 @@ function programRow(title, id, type, icon) {
        <button class="icon-btn pack-del prog-del" data-id="${id}" data-title="${escHtml(title)}" title="Delete">&#x2715;</button>`
     : '';
   return `<div class="pack-row program-row" data-id="${id}" data-type="${type}">
+    <input type="checkbox" class="sel-box" data-kind="program" data-key="${id}" data-source="${type}" title="Select for export">
     <span class="pack-row-icon"><i class="ti ${ico}"></i></span>
     <span class="pack-row-name">${escHtml(title)}</span>
     ${actions}
   </div>`;
+}
+
+// SELECTION + BUNDLE EXPORT (v1.10.0)
+// Checkboxes on the home screen let several packs and programs be exported
+// together. The boxes sit inside rows that are themselves clickable, so every
+// box stops its click from reaching the row and opening the item.
+function selectedItems() {
+  return Array.from(document.querySelectorAll('.sel-box:checked')).map(b => ({
+    kind: b.dataset.kind, key: b.dataset.key, source: b.dataset.source,
+  }));
+}
+
+function updateExportSelectedBtn() {
+  const btn = document.getElementById('export-selected-btn');
+  if (!btn) return;
+  const n = selectedItems().length;
+  btn.disabled = n === 0;
+  btn.textContent = n ? `Export selected (${n})` : 'Export selected';
+}
+
+function bindSelectionBoxes() {
+  document.querySelectorAll('.sel-box').forEach(box => {
+    box.addEventListener('click', e => e.stopPropagation());
+    box.addEventListener('change', updateExportSelectedBtn);
+  });
+  const btn = document.getElementById('export-selected-btn');
+  if (btn && !btn._bound) {
+    btn._bound = true;
+    btn.addEventListener('click', exportSelected);
+  }
+  updateExportSelectedBtn();
+}
+
+function exportSelected() {
+  const items = selectedItems();
+  if (!items.length) return;
+
+  const editorPacks    = getAllEditorPacks();
+  const editorPrograms = getAllEditorPrograms();
+  const appPrograms    = loadAppPrograms();
+
+  const packs = [], programs = [];
+  items.forEach(it => {
+    if (it.kind === 'pack') {
+      // "My" packs live in editor storage; app packs are read out of the app data.
+      const p = (it.source === 'my' && editorPacks[it.key]) ? editorPacks[it.key] : packFromAppData(it.key);
+      if (p) packs.push(p);
+    } else {
+      const pr = editorPrograms[it.key] || appPrograms.find(x => x.id === it.key);
+      if (pr) programs.push(pr);
+    }
+  });
+
+  if (!packs.length && !programs.length) { showToast('Nothing could be exported'); return; }
+
+  const meta = downloadBundle(packs, programs);
+  const bits = [];
+  if (meta.packs)    bits.push(`${meta.packs} pack${meta.packs === 1 ? '' : 's'}`);
+  if (meta.programs) bits.push(`${meta.programs} program${meta.programs === 1 ? '' : 's'}`);
+  showToast(`Exported ${bits.join(' and ')}`);
+}
+
+function clearSelection() {
+  document.querySelectorAll('.sel-box:checked').forEach(b => { b.checked = false; });
+  updateExportSelectedBtn();
 }
 
 // ── TAG HELPERS ───────────────────────────────────────────────────────────────
@@ -721,7 +792,31 @@ function handleJsonFileImport(e) {
   const reader = new FileReader();
   reader.onload = ev => {
     try {
-      const pack = importFromJSON(ev.target.result);
+      const result = importFromJSON(ev.target.result);
+
+      // A bundle brings several packs and programs at once.
+      if (result && result.bundle) {
+        const allPacks = getAllEditorPacks();
+        result.packs.forEach(pack => {
+          if (allPacks[pack.key]) pack.key = pack.key + '_' + Date.now().toString(36);
+          allPacks[pack.key] = pack;
+          saveEditorPack(pack);
+        });
+        result.programs.forEach(prog => {
+          if (!prog.id) prog.id = 'prog_' + Date.now().toString(36);
+          saveEditorProgram(prog);
+        });
+        const bits = [];
+        if (result.packs.length)    bits.push(`${result.packs.length} pack${result.packs.length === 1 ? '' : 's'}`);
+        if (result.programs.length) bits.push(`${result.programs.length} program${result.programs.length === 1 ? '' : 's'}`);
+        showToast(`Imported ${bits.join(' and ')}`);
+        renderPackList();
+        renderProgramList();
+        e.target.value = '';
+        return;
+      }
+
+      const pack = result;
       // If key exists, make unique
       const all = getAllEditorPacks();
       if (all[pack.key]) pack.key = pack.key + '_' + Date.now().toString(36);

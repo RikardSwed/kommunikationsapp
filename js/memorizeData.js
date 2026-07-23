@@ -3,6 +3,24 @@
 
 const memorizeCollections = {
 
+  speakingupingroups: [
+    {
+      name: "Speaking Up in Groups",
+      guideFront: "Answer from memory, then flip.",
+      description: "The concepts behind holding your place in a group: the five meeting situations, what makes a contribution land, and the sequence for handling an interruption.",
+      cards: [
+        { q: "What are the five meeting situations worth having a move for?", a: "Taking the floor, interrupting constructively, redirecting, summarising, and closing towards a decision.", bundle: 'free' },
+        { q: "What makes a contribution land in a group?", a: "It is shorter than you think, it uses one concrete example rather than three, and it ends on a clear point or question.", bundle: 'free' },
+        { q: "What is the sequence for handling an interruption?", a: "Stay calm, acknowledge it briefly, mark that you are finishing, finish the point, then give them the floor.", bundle: 'free' },
+        { q: "Why does an open ending lose the group?", a: "With nothing to react to, the next person simply starts a new thread and your point disappears.", bundle: 'free' },
+        { q: "What is the easiest way to take the floor?", a: "Start the sentence. \"What I'm thinking is…\" with eye contact holds the room while the rest of the thought arrives.", bundle: 'free' },
+        { q: "How do you interrupt someone else without it landing badly?", a: "Bridge into it — \"if I can add something, it connects to what you said\" — so it reads as building rather than taking over.", bundle: 'pro' },
+        { q: "How do you redirect a meeting that has drifted?", a: "Name the drift without blaming anyone and point back: \"can we go back to X? I think that's the core.\"", bundle: 'pro' },
+        { q: "When is it better to let an interruption stand?", a: "When fighting for the turn would cost more than the point is worth. Return to it later with \"coming back to what I was saying\".", bundle: 'pro' },
+      ]
+    },
+  ],
+
   transitions: [
     {
       name: "Topic Shift",

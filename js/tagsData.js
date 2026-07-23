@@ -4,6 +4,14 @@
 // Add or edit tags here, or via Developer Tools in the app.
 
 const packTags = {
+  speakingupingroups: [
+    'meetings', 'groups', 'taking the floor', 'interruptions',
+    'being talked over', 'speaking up'
+  ],
+  playfulrefusals: [
+    'saying no', 'refusing', 'humour', 'playful',
+    'declining requests', 'boundaries'
+  ],
   transitions: [
     'transitions', 'changing topic', 'conversation flow', 'small talk',
     'steering the conversation', 'awkward silence', 'changing subject', 'handing over'
@@ -72,7 +80,7 @@ const packTags = {
 // field (export regenerates this array) or by hand.
 const TOPICS = [
   { id: 'assertiveness',      title: 'Assertiveness',                             packs: ['assertive'] },
-  { id: 'humour',             title: 'Humour & Playfulness',                      packs: ['humour', 'teasing', 'selfhumour', 'humourpractise'] },
+  { id: 'humour',             title: 'Humour & Playfulness',                      packs: ['humour', 'teasing', 'selfhumour', 'humourpractise', 'playfulrefusals'] },
   { id: 'criticism',          title: 'Criticism & Correction',                    packs: ['criticism'] },
   { id: 'conversation',       title: 'Conversation & Flow',                       packs: ['conversational', 'conversationaldepth'] },
   { id: 'compliments',        title: 'Compliments & Validation',                  packs: ['compliments'] },
@@ -81,12 +89,13 @@ const TOPICS = [
   { id: 'transitions',        title: 'Transitions & Flow',                        packs: ['transitions'] },
   { id: 'emotions',           title: 'Emotions & Emotional Regulation',           packs: [] },
   { id: 'opinions',           title: 'Opinions & Argumentation',                  packs: ['influenceframing'] },
-  { id: 'boundaries',         title: 'Boundaries & Refusal',                      packs: [] },
+  { id: 'boundaries',         title: 'Boundaries & Refusal',                      packs: ['playfulrefusals'] },
   { id: 'rapport',            title: 'Rapport & Connection',                      packs: ['listeningresponding'] },
   { id: 'bodyvoice',          title: 'Body Language & Voice',                     packs: [] },
   { id: 'giving',             title: 'Giving & Receiving',                        packs: [] },
   { id: 'observation',        title: 'Observation & Description',                 packs: [] },
-  { id: 'dynamics',           title: 'Conversation Dynamics',                     packs: [] },
+  { id: 'dynamics',           title: 'Conversation Dynamics',                     packs: ['speakingupingroups'] },
+  { id: 'meetingsgroups',     title: 'Meetings & Groups',                         packs: ['speakingupingroups'] },
   { id: 'selfpresentation',   title: 'Self-Presentation',                         packs: [] },
   { id: 'flirt',              title: 'Flirting',                                  packs: [] },
   { id: 'emotionalboundaries',title: 'Emotional Refusal',                         packs: [] },

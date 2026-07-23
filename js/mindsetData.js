@@ -2,6 +2,25 @@
 
 const mindsetCollections = {
 
+  playfulrefusals: [
+    {
+      name: "The Playful No Mindset",
+      guideFront: "Reflect on this.",
+      guideBack: "A way to think about it.",
+      description: "The stance behind refusing without tension: that a no does not have to be heavy, apologetic or justified. Playful refusals only work if you are genuinely relaxed about saying no — the humour is a way of showing that the request has not put you under pressure, not a way of hiding that it has. This trains the underlying comfort, so the joke has something real behind it.",
+      inputs: [
+        { q: "You are about to say no and you can feel yourself starting to explain why.", a: "\"The explanation is for me, not for them. I can just say no and let it sit.\"", bundle: 'pro' },
+        { q: "Someone asks you for something and you say yes before you have thought.", a: "\"I'm allowed a second. Nobody has ever been hurt by me thinking before answering.\"", bundle: 'pro' },
+        { q: "You said no and the other person went quiet.", a: "\"Their reaction is theirs. My no was reasonable, and the silence will pass.\"", bundle: 'pro' },
+        { q: "You worry that joking about a request will seem like you don't care.", a: "\"The joke shows I'm relaxed, not that I'm dismissive. Warmth is in the tone, not the words.\"", bundle: 'pro' },
+        { q: "You feel guilty about declining something small.", a: "\"Small requests deserve small answers. I don't owe a paragraph for a two-second favour.\"", bundle: 'pro' },
+        { q: "Someone keeps asking after you have already declined.", a: "\"Repeating myself isn't rude. I can say the same thing again in the same tone.\"", bundle: 'pro' },
+        { q: "You said yes to something you did not want to do.", a: "\"I can notice that without punishing myself. Next time I'll take the second I need.\"", bundle: 'pro' },
+        { q: "You are worried a playful no will land badly with someone sensitive.", a: "\"Then I'll use a plain one. The point is comfort with saying no, not the joke.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+
   transitions: [
     {
       name: "The Transitions Mindset",

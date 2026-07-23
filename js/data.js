@@ -3,6 +3,76 @@
 
 const collections = {
 
+  speakingupingroups: [
+    {
+      name: "Taking the Floor",
+      guideFront: "Start the sentence — the rest arrives once you have the room.",
+      guideBack: "A possible response.",
+      description: "Claiming your turn in a group without waiting to be invited. The move is to start the sentence rather than wait for a gap big enough to feel safe — a short opening phrase said with eye contact is usually enough to hold the room while the rest of your point arrives. Keep the contribution shorter than feels natural: one point, one concrete example, and a clear ending, because an open ending loses the group.",
+      inputs: [
+        { q: "A meeting where three people have spoken and you have not. A short pause opens.", a: "\"What I'm thinking is — we're solving the wrong half of this.\"", bundle: 'free' },
+        { q: "Two colleagues are going back and forth and you can see a third option.", a: "\"Can I offer a third way? Both of those assume we ship in March.\"", bundle: 'free' },
+        { q: "The group is agreeing quickly and you are not convinced.", a: "\"Before we lock this in — I want to name one risk.\"", bundle: 'free' },
+        { q: "You have been asked for input and everyone is looking at you.", a: "\"Two things. First the deadline, then the budget. The deadline is the real problem.\"", bundle: 'free' },
+        { q: "A discussion has drifted well away from the point of the meeting.", a: "\"Can we go back to the pricing question? I think that's the core of it.\"", bundle: 'free' },
+        { q: "A senior colleague has held the floor for several minutes.", a: "\"That's useful — and it connects to something I've been sitting on.\"", bundle: 'pro' },
+        { q: "The meeting is nearly over and your point has not been raised.", a: "\"One thing before we close, and I'll be quick.\"", bundle: 'pro' },
+        { q: "You are on a call and cannot use eye contact to claim your turn.", a: "\"Sorry — jumping in. I have one thing on the timeline.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Handling Interruptions",
+      guideFront: "Acknowledge, mark that you're finishing, then finish.",
+      guideBack: "A possible response.",
+      description: "Keeping your place in the conversation when someone cuts across you, without escalating and without giving it up. The sequence is short: stay calm, acknowledge the interruption briefly, mark that you intend to finish, finish the point, and then hand it to them. The tone does the work — light and unbothered rather than defensive, because staying calm under pressure is what reads as confidence.",
+      inputs: [
+        { q: "Someone cuts you off mid-sentence while you are explaining something.", a: "\"One second — let me finish this thought.\"", bundle: 'free' },
+        { q: "A friend jumps in with their own story before you reach the end of yours.", a: "\"Hold on — I'm almost at the good bit.\"", bundle: 'free' },
+        { q: "A colleague interrupts while you are presenting an idea.", a: "\"I'd like to finish this part before we go on.\"", bundle: 'free' },
+        { q: "The same person has interrupted you three times in one conversation.", a: "\"I like that you want to add things — but let me get to the end of this one.\"", bundle: 'free' },
+        { q: "You have finished your point and the person who interrupted is waiting.", a: "\"Right, I'm done. What were you going to say?\"", bundle: 'free' },
+        { q: "Someone interrupts out of pure enthusiasm rather than rudeness.", a: "\"Wait — you'll get to say it in about ten seconds, I promise.\"", bundle: 'pro' },
+        { q: "You let an interruption stand and now want to get back to your point.", a: "\"Coming back to what I was saying — the timeline is the part that worries me.\"", bundle: 'pro' },
+        { q: "You need to interrupt someone else respectfully.", a: "\"If I can add something here — it connects to what you just said.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+
+  playfulrefusals: [
+    {
+      name: "Playful Protest",
+      guideFront: "Make the protest far too big for the request.",
+      guideBack: "A possible response.",
+      description: "Meeting a request with theatrical, obviously over-the-top resistance before you answer it. The protest is the joke: you act as though a small favour is an enormous sacrifice, deliver it with a straight face, and let your expression give the game away. It works because everyone can hear that the size of the reaction does not match the size of the request — and it usually ends with you agreeing anyway.",
+      inputs: [
+        { q: "Someone asks you to pass them the remote from two metres away.", a: "\"No. Absolutely not. That is too much to ask of one person.\" …then hand it over.", bundle: 'free' },
+        { q: "A friend asks you to help them move a bookshelf on Saturday.", a: "\"A bookshelf? On a Saturday? You know you're asking for a miracle here.\"", bundle: 'free' },
+        { q: "Your partner asks you to take the bins out in the rain.", a: "\"So this is how it ends. Remember me fondly.\"", bundle: 'free' },
+        { q: "A colleague asks you to sit in on one more meeting.", a: "\"That is the worst thing you have ever asked me.\" Long sigh. \"Fine.\"", bundle: 'free' },
+        { q: "Someone asks you to change plans at the last minute.", a: "\"Unbelievable. I had emotionally prepared for the original plan.\"", bundle: 'free' },
+        { q: "A friend asks you for a lift at an inconvenient hour.", a: "\"At that hour? I'll need to be paid in breakfast.\"", bundle: 'pro' },
+        { q: "Someone asks you to do a tedious task you have done many times.", a: "\"Ah yes. My life's work. Let me get my equipment.\"", bundle: 'pro' },
+        { q: "Someone asks for a favour that really is a bit much.", a: "\"I want it on record that I know exactly how big this is.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Faked Incompetence",
+      guideFront: "Deliver an unbelievable excuse completely straight.",
+      guideBack: "A possible response.",
+      description: "Declining by pretending the task is far beyond your abilities — you are too weak, too clumsy, too uneducated in the field. The exaggeration is the whole joke, so it needs a convinced, serious delivery: a small sigh, a regretful tone, and a claim nobody could possibly believe. It softens a no because it makes you, rather than the other person, the target of the joke.",
+      inputs: [
+        { q: "Someone asks you to help with a small piece of technical setup.", a: "\"I'd love to, but it would end in disaster. For everyone's sake.\"", bundle: 'free' },
+        { q: "Someone asks you to carry something heavy.", a: "\"My body doesn't allow it. The doctors were very clear.\"", bundle: 'free' },
+        { q: "A child asks you to do up a row of small buttons.", a: "\"Those buttons are beyond me. I've never worked out the system.\"", bundle: 'free' },
+        { q: "Someone asks you to give them a shoulder massage.", a: "\"My hands have no strength at all. I've tried. It always ends badly.\"", bundle: 'free' },
+        { q: "Someone asks you to assemble a piece of flat-pack furniture.", a: "\"I'm afraid I'm entirely untrained in this area.\"", bundle: 'free' },
+        { q: "Someone asks you to drive their car, which is a manual.", a: "\"I only understand two of the three pedals. It felt dishonest not to say.\"", bundle: 'pro' },
+        { q: "A friend asks you to help them paint a wall.", a: "\"I have no spatial ability whatsoever. The wall would end up worse.\"", bundle: 'pro' },
+        { q: "Someone asks you to make a phone call on their behalf.", a: "\"I lose the power of speech on phones. It's been documented.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+
   transitions: [
     {
       name: "Topic Shift",
