@@ -4,6 +4,10 @@
 // Add or edit tags here, or via Developer Tools in the app.
 
 const packTags = {
+  transitions: [
+    'transitions', 'changing topic', 'conversation flow', 'small talk',
+    'steering the conversation', 'awkward silence', 'changing subject', 'handing over'
+  ],
   assertive: [
     'boundaries', 'criticism', 'confidence', 'saying no', 'self-esteem',
     'conflict', 'pressure', 'confrontation', 'defending yourself',
@@ -74,7 +78,7 @@ const TOPICS = [
   { id: 'compliments',        title: 'Compliments & Validation',                  packs: ['compliments'] },
   { id: 'storytelling',       title: 'Storytelling & Explanation',                packs: ['storytelling'] },
   { id: 'questions',          title: 'Questions & Conversation Starters',         packs: ['startingconnecting'] },
-  { id: 'transitions',        title: 'Transitions & Flow',                        packs: [] },
+  { id: 'transitions',        title: 'Transitions & Flow',                        packs: ['transitions'] },
   { id: 'emotions',           title: 'Emotions & Emotional Regulation',           packs: [] },
   { id: 'opinions',           title: 'Opinions & Argumentation',                  packs: ['influenceframing'] },
   { id: 'boundaries',         title: 'Boundaries & Refusal',                      packs: [] },

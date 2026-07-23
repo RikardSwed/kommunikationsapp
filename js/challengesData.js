@@ -2,6 +2,25 @@
 
 const challengesCollections = {
 
+  transitions: [
+    {
+      name: "Stuck Conversations",
+      guideFront: "Name the problem, then pick the move.",
+      guideBack: "A possible response, with the strategy in brackets.",
+      description: "Conversations that have stalled, drifted, or tipped out of balance — the flat patch after a topic ends, the technical thread you cannot follow, the moment you realise you have been talking for five minutes. The point is to recognise which kind of stuck you are in and reach for the move that fits. Topic Shift handles drift and flat patches, Story to Question fixes an unbalanced floor, and Question to Story opens up a conversation that has gone one-word.",
+      inputs: [
+        { q: "The conversation has been about the weather for three exchanges.", a: "\"I've decided weather talk is the warm-up. So what's actually been going on with you?\" (topic shift)", bundle: 'pro' },
+        { q: "A topic ends and nobody starts a new one.", a: "\"Right — new subject. What's the best thing that's happened to you this week?\" (topic shift)", bundle: 'pro' },
+        { q: "You realise you have been talking about yourself for several minutes.", a: "\"…and that's the short version. Your turn — what have you been up to?\" (story to question)", bundle: 'pro' },
+        { q: "A group is deep in a technical topic you cannot follow.", a: "\"I'm lost on the details — but what got you into this in the first place?\" (topic shift)", bundle: 'pro' },
+        { q: "They are giving one-word answers to everything you ask.", a: "\"I'll go first, then. My week has been completely ridiculous.\" (question to story)", bundle: 'pro' },
+        { q: "The conversation has drifted into gossip you would rather not take part in.", a: "\"I'm the wrong person for this one. Tell me how the house move is going instead.\" (topic shift)", bundle: 'pro' },
+        { q: "You asked a question, they answered in one sentence, and then nothing.", a: "\"That reminds me — same thing happened to me last year, and it went badly.\" (question to story)", bundle: 'pro' },
+        { q: "The conversation is pleasant but completely on the surface.", a: "\"Can I skip ahead? I'd rather hear what you're actually excited about.\" (topic shift)", bundle: 'pro' },
+      ]
+    },
+  ],
+
   assertive: [
     // v1.26.29 (list 6): challenges are organised by CHALLENGE TYPE — swipe
     // right for a new type. The answers point back to the pack’s four

@@ -2,6 +2,79 @@
 
 const multiStepCollections = {
 
+  transitions: [
+    {
+      name: "Their Answer, Your Story, Back to Them",
+      guideFront: "Three steps — react and link, keep it short, then hand it back.",
+      guideBack: "A possible line for this step.",
+      description: "The full exchange in three steps, in order. Step one reacts to their answer and links into a story of your own (Question to Story). Step two keeps that story short, so it stays a reply rather than a turn. Step three hands the floor back with a question that grows out of it (Story to Question). Together the three steps turn a single question into a conversation that runs both ways.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "Coffee with a new colleague. You have just asked where they grew up, and they say a small town up north.",
+          steps: [
+            { front: "Step 1 — React and link", back: "\"A small town? I spent a summer working somewhere like that.\"" },
+            { front: "Step 2 — Keep the story short", back: "\"Locked myself out twice in the first week, and by Friday the whole street knew my name.\"" },
+            { front: "Step 3 — Hand it back", back: "\"Did everyone know everyone where you grew up as well?\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "At a dinner you asked what they did at the weekend, and they say they went hiking.",
+          steps: [
+            { front: "Step 1 — React and link", back: "\"Hiking? We tried that last spring.\"" },
+            { front: "Step 2 — Keep the story short", back: "\"Packed for a day trip, got back after dark, with one torch between four people.\"" },
+            { front: "Step 3 — Hand it back", back: "\"Do you go often, or was this a one-off?\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A friend mentions in passing that they nearly quit their studies last year.",
+          steps: [
+            { front: "Step 1 — React and link", back: "\"I nearly did too, in my second year.\"" },
+            { front: "Step 2 — Keep the story short", back: "\"What kept me there was one very stubborn teacher who refused to let me drop it.\"" },
+            { front: "Step 3 — Hand it back", back: "\"What made you stay?\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Light, Serious, Light Again",
+      guideFront: "Three steps — signal the shift, say it plainly, then reopen.",
+      guideBack: "A possible line for this step.",
+      description: "How to take a conversation down into a serious register and bring it back out, in three steps. Step one signals the shift before it happens (Casual to Serious), so the drop in tone does not read as an alarm. Step two says the thing plainly, without softening it into nothing. Step three closes the serious part out loud and opens something easy (Topic Shift), so it does not hang over the rest of the evening.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You have been joking with a friend all evening and you need to tell them you are moving away.",
+          steps: [
+            { front: "Step 1 — Signal the shift", back: "\"Can I switch gear for a second?\"" },
+            { front: "Step 2 — Say it plainly", back: "\"I've taken a job in another city. I'm moving in August.\"" },
+            { front: "Step 3 — Close it and open something easy", back: "\"Okay, that's the heavy bit done. Are you helping me carry boxes or not?\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Banter with a colleague, and you need to raise a real problem with the project deadline.",
+          steps: [
+            { front: "Step 1 — Signal the shift", back: "\"Before we go back to jokes — one real thing.\"" },
+            { front: "Step 2 — Say it plainly", back: "\"The deadline doesn't work. If we keep this scope we will miss it.\"" },
+            { front: "Step 3 — Close it and open something easy", back: "\"Good, that's said. Right — whose turn is it to get coffee?\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A joke of yours lands badly and you can see that it hurt.",
+          steps: [
+            { front: "Step 1 — Signal the shift", back: "\"That came out wrong.\"" },
+            { front: "Step 2 — Say it plainly", back: "\"Genuinely, I didn't mean it like that, and I'm sorry.\"" },
+            { front: "Step 3 — Close it and open something easy", back: "\"Anyway — tell me about the thing you were saying before I ruined it.\"" },
+          ]
+        },
+      ]
+    },
+  ],
+
   assertive: [
     // v1.26.28 (list 6): sequences are explicit multi-step processes built
     // from the pack’s four strategies — each step names the strategy in play.

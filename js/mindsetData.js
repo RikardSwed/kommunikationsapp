@@ -2,6 +2,25 @@
 
 const mindsetCollections = {
 
+  transitions: [
+    {
+      name: "The Transitions Mindset",
+      guideFront: "Reflect on this.",
+      guideBack: "A way to think about it.",
+      description: "The stance behind steering a conversation: that moving it is allowed, and that someone has to do it. Most people wait for the conversation to change by itself and then feel stuck when it does not. This mindset trains the opposite reflex — that a flat patch is simply the point where someone opens the next thing, that you do not need a clever link to change subject, and that handing the floor over is generosity rather than retreat.",
+      inputs: [
+        { q: "You want to change the subject but it feels rude.", a: "\"Changing the subject isn't rude. Someone has to steer this, and it might as well be me.\"", bundle: 'pro' },
+        { q: "You have gone quiet because you cannot find a natural link.", a: "\"I don't need a clever link. I can just say I want to talk about something else.\"", bundle: 'pro' },
+        { q: "You realise you have been talking for a long time.", a: "\"I don't have to finish everything I started. I can hand it over now, and they'll be glad I did.\"", bundle: 'pro' },
+        { q: "The conversation is stuck and it feels like your fault.", a: "\"A flat patch isn't a failure. It's just the point where someone opens the next thing.\"", bundle: 'pro' },
+        { q: "You want to bring up something serious but the mood is light.", a: "\"I'm allowed to change the temperature. I just have to say that I'm about to.\"", bundle: 'pro' },
+        { q: "You worry that changing topic will look like you were not listening.", a: "\"If I close the old topic properly, moving on reads as interest, not impatience.\"", bundle: 'pro' },
+        { q: "Your story did not get the reaction you expected.", a: "\"That story was a gift to the conversation, not a performance. I can hand over and keep going.\"", bundle: 'pro' },
+        { q: "A silence appears and you feel pressure to fill it immediately.", a: "\"A pause isn't an emergency. I can let it sit a second and then open something worth talking about.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+
   assertive: [
     // v1.26.29 (list 6): one mindset group PER STRATEGY — swipe right for
     // the thinking patterns behind the next strategy.

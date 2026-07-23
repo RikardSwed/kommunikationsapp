@@ -1654,7 +1654,7 @@ function renderModeContent() {
         <p class="hint-text" style="margin:0 0 10px 0;">
           Card 1 describes the situation. Cards 2+ are the steps, one per card.
         </p>
-        ${!readOnly ? `<button class="icon-btn danger" id="del-scenario-btn" title="Delete this scenario" style="margin-bottom:8px;">&#x2715; Delete scenario</button>` : ''}
+        ${!readOnly ? `<button class="btn btn--danger btn--sm" id="del-scenario-btn" title="Delete this scenario" style="margin-bottom:8px;">&#x2715; Delete scenario</button>` : ''}
         <div class="cards-header">
           <span class="col-label">Front</span>
           <span class="col-label">Back</span>

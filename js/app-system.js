@@ -108,6 +108,7 @@ applyInputCounterVisibility();
     teasing:        { label: 'Teasing & Playfulness',    minLevel: 'complete'  },
     storytelling:   { label: 'Storytelling',             minLevel: 'extended'  },
     humourpractise: { label: 'Humour Practise (new)',    minLevel: 'freemium'  },
+    transitions:    { label: 'Transitions',              minLevel: 'freemium'  },
   };
 
   // Mode definitions per level

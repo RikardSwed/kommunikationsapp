@@ -3,6 +3,73 @@
 
 const collections = {
 
+  transitions: [
+    {
+      name: "Topic Shift",
+      guideFront: "Find a thread the two topics share — then say it out loud.",
+      guideBack: "A possible response.",
+      description: "Moving the conversation from one subject to another without it feeling like a jump. There are three ways to do it. A natural link uses something the two topics share. An associative link picks up a word or a feeling in what they just said. A direct switch simply says out loud that you are changing subject — which is the honest choice when no real link exists. Whichever you use, close the old topic with a short reaction first, so it sounds finished rather than dropped.",
+      inputs: [
+        { q: "Ten minutes on football. You want to get to music.", a: "\"You train more than most musicians I know — do you play anything yourself?\"", bundle: 'free' },
+        { q: "You have both been complaining about work. You would rather talk about travel.", a: "\"This is exactly why people book flights they can't afford. Where would you go right now?\"", bundle: 'free' },
+        { q: "The conversation has been about the weather for three exchanges.", a: "\"I've decided weather talk is the warm-up. So what's actually been going on with you?\"", bundle: 'free' },
+        { q: "They have been telling you about their new phone. You want to hear about their family.", a: "\"Sounds like that camera is for something — who's usually in the pictures?\"", bundle: 'free' },
+        { q: "Small talk at a party. You want to get to something real.", a: "\"Can I skip ahead? I'd rather hear what you're actually excited about right now.\"", bundle: 'free' },
+        { q: "A technical work topic you cannot follow. You want to reach the person behind it.", a: "\"I'm losing the technical thread — but what got you into this in the first place?\"", bundle: 'pro' },
+        { q: "A group is discussing the news. You want to move to personal stories.", a: "\"Has anything like that ever happened to any of you? That's the part I always wonder about.\"", bundle: 'pro' },
+        { q: "They mention they are tired. You want to open something lighter.", a: "\"Then let's talk about something that costs nothing. What's the best thing you've watched lately?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Question to Story",
+      guideFront: "React first, then link — and keep your story short.",
+      guideBack: "A possible response.",
+      description: "Using their answer as the doorway into a story of your own, so the conversation stops being an interview. It runs in three beats: you ask and they answer, you react to what they said, then you link into your own story. The link is a short bridge — \"that reminds me\", \"same thing happened to me\". Keep the story you tell short and make sure it matches the feeling of their answer rather than outdoing it.",
+      inputs: [
+        { q: "You asked where they grew up. They say a small town up north.", a: "\"A small town? I spent a summer working somewhere like that. Locked myself out twice in the first week.\"", bundle: 'free' },
+        { q: "You asked about their job. They mention they travel a lot for it.", a: "\"That explains how calm you look at airports. I once ran through Heathrow wearing one shoe.\"", bundle: 'free' },
+        { q: "You asked what they did at the weekend. They went hiking.", a: "\"We tried that last spring. Packed for a day trip and got back after dark.\"", bundle: 'free' },
+        { q: "You asked if they cook. They say only pasta.", a: "\"Honestly the safest choice. I tried to impress someone with risotto once and served them soup.\"", bundle: 'free' },
+        { q: "You asked about their dog. They say he is badly behaved.", a: "\"Mine too. He once ate a passport — not mine, which somehow made it worse.\"", bundle: 'free' },
+        { q: "You asked what they are reading. They say they have stopped reading lately.", a: "\"Same for a while. Then I got stuck on a train with no signal and finished a whole book by accident.\"", bundle: 'pro' },
+        { q: "You asked how the move went. They say it was chaos.", a: "\"Chaos is the only way it goes. Ours ended with a sofa on the pavement and a very unhappy neighbour.\"", bundle: 'pro' },
+        { q: "You asked about their studies. They mention they nearly quit.", a: "\"I nearly did too, in my second year. What kept me there was one very stubborn teacher.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Story to Question",
+      guideFront: "Let the question grow out of the story — don't staple one on.",
+      guideBack: "A possible response.",
+      description: "Ending a story with a question that grows out of it, so your turn becomes an exchange instead of a monologue. The question should ask about the same thing you just talked about — a question stapled on for politeness is obvious. Watch for the moment where you are still talking and they have stopped adding anything: that is the point to close and hand over.",
+      inputs: [
+        { q: "You just told them about a trip where everything went wrong.", a: "\"…so that's my disaster story. Have you had a trip go completely sideways?\"", bundle: 'free' },
+        { q: "You just shared something personal about your family.", a: "\"…anyway, that's how it is with us. How is it in your family?\"", bundle: 'free' },
+        { q: "You told a funny story about your first job.", a: "\"…I lasted three weeks. What was your first job?\"", bundle: 'free' },
+        { q: "You told them about a decision you found hard.", a: "\"…I still think about it. What would you have done there?\"", bundle: 'free' },
+        { q: "You told a story about moving to a city where you knew no one.", a: "\"…took me a year to feel at home. Have you ever moved somewhere cold like that?\"", bundle: 'free' },
+        { q: "You told a story that revealed an opinion you hold.", a: "\"…that's where I landed, anyway. Do you see it differently?\"", bundle: 'pro' },
+        { q: "You told a long story and can feel you have had the floor a while.", a: "\"…and that's the short version. Your turn — what have you been up to?\"", bundle: 'pro' },
+        { q: "You shared something a bit vulnerable and they went quiet.", a: "\"…I don't say that to many people. Is there anything like that for you?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Casual to Serious",
+      guideFront: "Slow down first, signal the shift, then say the thing.",
+      guideBack: "A possible response.",
+      description: "Lowering the register on purpose, without it landing as an alarm. Four tools do the work: a pause to mark the break, a slower and quieter voice, a spoken signal that announces the shift, and a soft entry that starts near the subject before you reach the middle of it. The signal matters most — people brace for bad news when the tone drops without warning, so saying what this is not (\"nothing bad, but…\") removes the threat.",
+      inputs: [
+        { q: "You have been joking with a friend. You need to bring up something that has worried you.", a: "\"Can I switch gear for a second? There's something I've been meaning to say.\"", bundle: 'free' },
+        { q: "Light chat with a colleague. You need to raise a real problem with the project.", a: "\"Before we go back to jokes — one real thing, and I mean it properly.\"", bundle: 'free' },
+        { q: "You are teasing each other and you notice they seem genuinely down.", a: "\"Okay, joking aside. How are you actually doing?\"", bundle: 'free' },
+        { q: "A fun dinner. You want to tell them something that matters to you.", a: "\"I'm going to be serious for one minute, and then we can go straight back to this.\"", bundle: 'free' },
+        { q: "You have been laughing about work. You need to tell them you are leaving.", a: "\"Right — real thing now. I've handed in my notice.\"", bundle: 'free' },
+        { q: "Banter in a group. You need to raise something sensitive with one person.", a: "\"Can I grab you separately later? Nothing bad, I'd just rather say it properly.\"", bundle: 'pro' },
+        { q: "You have been light all evening. You want to tell them you appreciate them.", a: "\"I'll be sincere for a second, and I do mean it — I'm really glad you came.\"", bundle: 'pro' },
+        { q: "A joke of yours lands badly and you can see it hurt.", a: "\"That came out wrong. Genuinely, I didn't mean it like that.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+
   assertive: [
     {
       name: "Fogging",
@@ -716,6 +783,25 @@ const collections = {
 // situation can be solved with more than one of them — the answer shows
 // the alternatives side by side.
 const collectionsModeData = {
+
+  transitions: [
+    {
+      name: "Moving the Conversation",
+      guideFront: "Which move fits here?",
+      guideBack: "A possible response, with the strategy in brackets.",
+      description: "Trains the choice between the pack's four moves rather than any one of them. Each situation could be handled several ways, but one usually fits best: Question to Story when their answer opens a door, Story to Question when you have had the floor, Topic Shift when the subject itself needs to change, and Casual to Serious when the register is wrong for what you need to say.",
+      inputs: [
+        { q: "They just answered your question with something you can relate to.", a: "\"That reminds me — the same thing happened to me last summer.\" (question to story)", bundle: 'pro' },
+        { q: "You have finished a story and they have gone quiet.", a: "\"…have you had anything like that happen?\" (story to question)", bundle: 'pro' },
+        { q: "Ten minutes on one topic and you want to move.", a: "\"On that note — completely different question. What are you doing this summer?\" (topic shift)", bundle: 'pro' },
+        { q: "The joking has gone on and you need to say something real.", a: "\"Can I switch gear for a second? There's something I want to say properly.\" (casual to serious)", bundle: 'pro' },
+        { q: "They mention a detail you happen to have a story about.", a: "\"You said passport — I have to tell you what my dog once did to mine.\" (question to story)", bundle: 'pro' },
+        { q: "You have taken up a lot of airtime and want to balance it.", a: "\"…that's the short version. What about you — how's the new place?\" (story to question)", bundle: 'pro' },
+        { q: "The conversation is polite but shallow and you want more from it.", a: "\"Can I skip ahead? I'd rather hear what you're actually excited about.\" (topic shift)", bundle: 'pro' },
+        { q: "You asked something and their answer opened a door you want to walk through.", a: "\"You nearly quit? I nearly did too, in my second year.\" (question to story)", bundle: 'pro' },
+      ]
+    },
+  ],
 
   assertive: [
     {

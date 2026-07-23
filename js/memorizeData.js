@@ -3,6 +3,69 @@
 
 const memorizeCollections = {
 
+  transitions: [
+    {
+      name: "Topic Shift",
+      guideFront: "Answer from memory, then flip.",
+      description: "The concepts behind moving a conversation from one subject to another: the three kinds of shift, where the material for a link comes from, and why closing the old topic matters.",
+      cards: [
+        { q: "What are the three ways to move from one topic to another?", a: "A natural link, using something the two topics share. An associative link, picking up a word or feeling in what they just said. Or a direct switch, where you say out loud that you are changing subject.", bundle: 'free' },
+        { q: "What makes a topic change feel smooth rather than abrupt?", a: "It feels motivated. The other person can see why you moved — either through a link, or because you told them you were moving.", bundle: 'free' },
+        { q: "When is a direct switch better than a clever link?", a: "When no honest link exists. Forcing one sounds strange, while \"I want to ask you about something else\" is clean and confident.", bundle: 'free' },
+        { q: "Where do you find the material for a natural link?", a: "In what they just said. A word, a feeling or a small detail in their last answer is usually enough to build a bridge from.", bundle: 'free' },
+        { q: "What is the risk of changing topic with no signal at all?", a: "It reads as not listening. Their topic feels dropped rather than finished, even if you had a good reason to move.", bundle: 'free' },
+        { q: "How do you close a topic before opening a new one?", a: "Give it a short ending — a reaction, a summary or a small verdict — so it sounds finished. One sentence is enough.", bundle: 'pro' },
+        { q: "What can you do when a group is deep in a topic you cannot follow?", a: "Move from the subject to the person. Ask what got them into it, and the thread continues while the topic changes.", bundle: 'pro' },
+        { q: "Why is a topic change an opportunity rather than an interruption?", a: "Whoever moves the conversation is steering it. Choosing the next topic is how you take it somewhere you both find interesting.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Question to Story",
+      guideFront: "Answer from memory, then flip.",
+      description: "The concepts behind turning an answer into a story of your own: the three beats, the role of the reaction, and how to keep the story a reply rather than a competing turn.",
+      cards: [
+        { q: "What are the three beats from a question to your story?", a: "Ask and let them answer. React to what they said. Then link into your story.", bundle: 'free' },
+        { q: "Why react before linking into your story?", a: "Without the reaction it sounds like you were only waiting for your turn. Reacting shows the answer actually landed.", bundle: 'free' },
+        { q: "What kind of phrase links their answer to your story?", a: "A short bridge, such as \"that reminds me\", \"that's funny, because\" or \"the same thing happened to me\".", bundle: 'free' },
+        { q: "What goes wrong if you only ask questions?", a: "It turns into an interview. Trading a story back makes it an exchange instead.", bundle: 'free' },
+        { q: "How long should the story you link into be?", a: "Short. You are answering their answer, not taking the floor. A few sentences is usually enough.", bundle: 'free' },
+        { q: "What should your story share with their answer?", a: "The feeling or the situation, not the details. It should feel like a reply rather than a separate story.", bundle: 'pro' },
+        { q: "What do you do when your story is much bigger than theirs?", a: "Shrink it, or save it. A story that outshines theirs turns the exchange into a contest.", bundle: 'pro' },
+        { q: "How do you avoid sounding like you are one-upping them?", a: "Stay the person who struggled in your story, not the person who handled it better.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Story to Question",
+      guideFront: "Answer from memory, then flip.",
+      description: "The concepts behind closing a story with an invitation: why the question is needed, what makes it feel natural, and how to spot the moment to hand over.",
+      cards: [
+        { q: "Why end a story with a question?", a: "A story with no follow-up becomes a monologue. The question hands the floor back and turns your turn into a conversation.", bundle: 'free' },
+        { q: "What makes a closing question feel natural?", a: "It grows out of the story. It asks about the same thing you just talked about, rather than opening something unrelated.", bundle: 'free' },
+        { q: "Name three closing questions that work after most stories.", a: "\"Have you had anything like that happen?\" \"What would you have done?\" \"What do you think about that?\"", bundle: 'free' },
+        { q: "What is the sign that you have had the floor too long?", a: "You are still talking and they have stopped adding anything. That is the moment to close and ask.", bundle: 'free' },
+        { q: "What should you avoid when closing a story?", a: "A question stapled on that has nothing to do with the story. It sounds like politeness rather than interest.", bundle: 'free' },
+        { q: "How do you close a story that revealed an opinion?", a: "Invite disagreement: \"that's where I landed — do you see it differently?\" It signals you want a conversation, not agreement.", bundle: 'pro' },
+        { q: "How do you close a story you feel went on too long?", a: "Name it briefly and hand over: \"that's the short version — your turn.\"", bundle: 'pro' },
+        { q: "What does closing with a question do for the other person?", a: "It gives them a clear place to enter. Most people wait for an opening instead of taking one.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Casual to Serious",
+      guideFront: "Answer from memory, then flip.",
+      description: "The concepts behind lowering the register on purpose: the four tools, why an unannounced shift alarms people, and how to come back out of the serious part afterwards.",
+      cards: [
+        { q: "What are the four tools for shifting from light to serious?", a: "A pause, a lower and slower voice, a spoken signal, and a soft entry before the main point.", bundle: 'free' },
+        { q: "Why is an abrupt shift into a serious tone a problem?", a: "It alarms people. With no warning, the other person braces for bad news before they know what it is about.", bundle: 'free' },
+        { q: "What does a spoken signal sound like?", a: "A short sentence announcing the change, such as \"can I switch gear for a second?\" or \"on a more serious note\".", bundle: 'free' },
+        { q: "What is a soft entry?", a: "Starting with something related but less loaded, so the other person can adjust before you reach the middle of it.", bundle: 'free' },
+        { q: "What does the pause do?", a: "It marks the break. A short silence tells the other person that what comes next belongs to a different register.", bundle: 'free' },
+        { q: "How do you shift register without it feeling like an attack?", a: "Signal the change and say what it is not: \"nothing bad, but I want to say this properly.\" The warning removes the threat.", bundle: 'pro' },
+        { q: "When should you move a serious conversation somewhere else?", a: "When other people are present, or the setting cannot hold it. Ask for the moment rather than taking it there and then.", bundle: 'pro' },
+        { q: "How do you get back to lightness afterwards?", a: "Close the serious part out loud — \"good that we said that\" — and then open something easy. Without a closing signal it hangs over the rest.", bundle: 'pro' },
+      ]
+    },
+  ],
+
   assertive: [
     {
       name: "Fogging",
