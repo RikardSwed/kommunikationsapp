@@ -892,6 +892,79 @@ const collections = {
 // the alternatives side by side.
 const collectionsModeData = {
 
+  speakingupingroups: [
+    {
+      name: "Holding Your Place",
+      guideFront: "Which move fits here?",
+      guideBack: "A possible response, with the strategy in brackets.",
+      description: "Trains the choice between the pack's two moves rather than either one alone. Taking the Floor is for when nobody has given you a turn and you have to start one; Handling Interruptions is for when you had a turn and someone took it. Most group situations are clearly one or the other once you ask which of those two just happened.",
+      inputs: [
+        { q: "Three people have spoken and you have not. A pause opens.", a: "\"What I'm thinking is — we're solving the wrong half of this.\" (taking the floor)", bundle: 'pro' },
+        { q: "You are mid-sentence and someone talks over you.", a: "\"One second — let me finish this thought.\" (handling interruptions)", bundle: 'pro' },
+        { q: "The group is about to agree on something you think is wrong.", a: "\"Before we lock this in — I want to name one risk.\" (taking the floor)", bundle: 'pro' },
+        { q: "A colleague cuts in while you are presenting.", a: "\"I'd like to finish this part before we go on.\" (handling interruptions)", bundle: 'pro' },
+        { q: "The discussion has drifted and nobody is steering it back.", a: "\"Can we go back to the pricing question? I think that's the core.\" (taking the floor)", bundle: 'pro' },
+        { q: "You have finished your point and the person who cut in is waiting.", a: "\"Right, I'm done. What were you going to say?\" (handling interruptions)", bundle: 'pro' },
+        { q: "The meeting is nearly over and your point has not been raised.", a: "\"One thing before we close, and I'll be quick.\" (taking the floor)", bundle: 'pro' },
+        { q: "You let an interruption stand and now want your point back.", a: "\"Coming back to what I was saying — the timeline worries me.\" (handling interruptions)", bundle: 'pro' },
+      ]
+    },
+  ],
+  playfulrefusals: [
+    {
+      name: "Which No Fits",
+      guideFront: "Which move fits here?",
+      guideBack: "A possible response, with the strategy in brackets.",
+      description: "Trains the choice between the pack's two moves. Playful Protest works when you are going to say yes anyway and want to make a joke of the effort; Faked Incompetence works when you actually mean no and want to take the sting out by making yourself the target. Picking the wrong one is what makes a joke land badly: protesting and then refusing feels like a bait, and faking incompetence about something you then do looks odd.",
+      inputs: [
+        { q: "A friend asks you to help move a bookshelf, and you will help.", a: "\"A bookshelf? On a Saturday? You're asking for a miracle here.\" (playful protest)", bundle: 'pro' },
+        { q: "Someone asks you to set up their new router, and you genuinely won't.", a: "\"I'd love to, but it would end in disaster. For everyone's sake.\" (faked incompetence)", bundle: 'pro' },
+        { q: "Your partner asks you to take the bins out in the rain.", a: "\"So this is how it ends. Remember me fondly.\" (playful protest)", bundle: 'pro' },
+        { q: "Someone asks you to carry something heavy and you would rather not.", a: "\"My body doesn't allow it. The doctors were very clear.\" (faked incompetence)", bundle: 'pro' },
+        { q: "A colleague asks you to sit in on one more meeting, and you will.", a: "\"That is the worst thing you have ever asked me.\" Long sigh. \"Fine.\" (playful protest)", bundle: 'pro' },
+        { q: "A friend asks you to drive their manual car and you are not comfortable.", a: "\"I only understand two of the three pedals. It felt dishonest not to say.\" (faked incompetence)", bundle: 'pro' },
+        { q: "Someone changes the plan at the last minute and you go along with it.", a: "\"Unbelievable. I had emotionally prepared for the original plan.\" (playful protest)", bundle: 'pro' },
+        { q: "Someone asks you to make a phone call for them and you would rather not.", a: "\"I lose the power of speech on phones. It's been documented.\" (faked incompetence)", bundle: 'pro' },
+      ]
+    },
+  ],
+  thehappyno: [
+    {
+      name: "Is a Happy No Right Here?",
+      guideFront: "Does the warm version fit, or does this one need something else?",
+      guideBack: "A possible response, with the judgement in brackets.",
+      description: "A happy no is the right tool most of the time and the wrong tool some of the time, and telling the difference is the skill. It fits when the request is small and the asking was casual. It misfires when the request mattered to the person, because cheerfulness then reads as not having noticed. This set mixes both so the judgement gets trained rather than the phrasing.",
+      inputs: [
+        { q: "Your child asks you to put their pyjamas on when they can do it themselves.", a: "\"Nope — but you're brilliant at it.\" (happy no)", bundle: 'pro' },
+        { q: "A friend nervously asks you to come to something that clearly matters to them.", a: "\"I really wish I could. I can't this time, and I'm sorry.\" (not a happy no — this one needs sincerity)", bundle: 'pro' },
+        { q: "Someone asks for a shoulder massage out of the blue.", a: "\"Absolutely not. But thank you for the confidence.\" (happy no)", bundle: 'pro' },
+        { q: "A colleague asks you to swap shifts for the third time this month.", a: "\"Not this one, I'm afraid. Hope you find someone.\" (happy no)", bundle: 'pro' },
+        { q: "Someone asks you for help with something they are visibly struggling with.", a: "\"I can't take that on — but let's work out who can.\" (not a happy no — the request is serious)", bundle: 'pro' },
+        { q: "A friend asks you to look after their plants again.", a: "\"I'm going to pass this time. Your plants deserve better than me anyway.\" (happy no)", bundle: 'pro' },
+        { q: "Someone invites you to a thing you have no interest in whatsoever.", a: "\"That's a no from me — but have a great time.\" (happy no)", bundle: 'pro' },
+        { q: "Someone asks for something small while you are visibly busy.", a: "\"Not right now — but nice of you to ask.\" (happy no)", bundle: 'pro' },
+      ]
+    },
+  ],
+  theregretfulno: [
+    {
+      name: "How Much Regret Belongs Here?",
+      guideFront: "Does this one need the regret shown, or kept short?",
+      guideBack: "A possible response, with the judgement in brackets.",
+      description: "Regret is the right register when you genuinely wish you could say yes, and the wrong one when you do not — a performed regret is worse than a plain no, because the other person can hear it. This set mixes requests you would have loved with requests you are relieved to decline, so the judgement gets trained rather than the phrasing.",
+      inputs: [
+        { q: "You are invited to something you genuinely wanted to attend.", a: "\"I really wish I could — I'd have loved that. But it doesn't work this time.\" (regretful no)", bundle: 'pro' },
+        { q: "Someone invites you to a thing you have no interest in.", a: "\"That's a no from me — but have a great time.\" (not regretful — don't perform it)", bundle: 'pro' },
+        { q: "A friend asks for help you honestly cannot give.", a: "\"It actually makes me a bit sad to say no to this one.\" (regretful no)", bundle: 'pro' },
+        { q: "Someone asks you to do a chore you were hoping to avoid.", a: "\"I'm going to say no to that one. Cheerfully.\" (not regretful — keep it light)", bundle: 'pro' },
+        { q: "You have to turn down a project you find genuinely interesting.", a: "\"This is the kind of thing I'd normally jump at. I just can't take it on now.\" (regretful no)", bundle: 'pro' },
+        { q: "Someone close asks you to be somewhere and you are already committed.", a: "\"I'd really have wanted to be there. I'm already committed that day.\" (regretful no)", bundle: 'pro' },
+        { q: "You are declining and can feel yourself about to over-explain.", a: "\"I wish I could. I can't this time.\" Then stop talking. (regretful no, kept short)", bundle: 'pro' },
+        { q: "Someone makes a generous offer you have to refuse.", a: "\"That's a genuinely kind offer, and I'm sorry to be turning it down.\" (regretful no)", bundle: 'pro' },
+      ]
+    },
+  ],
+
   transitions: [
     {
       name: "Moving the Conversation",

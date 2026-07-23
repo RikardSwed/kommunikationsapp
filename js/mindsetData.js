@@ -2,6 +2,61 @@
 
 const mindsetCollections = {
 
+  speakingupingroups: [
+    {
+      name: "The Speaking Up Mindset",
+      guideFront: "Reflect on this.",
+      guideBack: "A way to think about it.",
+      description: "The stance behind claiming a turn: that the room is not waiting to be convinced you deserve one. Most people who stay quiet in groups are not short of ideas — they are waiting for a gap that feels safe enough, and it never comes. This trains the opposite reflex: that starting the sentence is what creates the turn, that a half-formed point is still worth saying, and that being interrupted is a normal event rather than a verdict on you.",
+      inputs: [
+        { q: "You have something to say but the moment never feels right.", a: "\"The moment is made by starting, not by waiting. I can begin and the room will follow.\"", bundle: 'pro' },
+        { q: "Your point is not fully formed and you almost stay quiet.", a: "\"Half a good thought said out loud beats a whole one nobody hears.\"", bundle: 'pro' },
+        { q: "Someone interrupts you and you feel yourself shrinking.", a: "\"Being interrupted says nothing about me. I can simply finish.\"", bundle: 'pro' },
+        { q: "You worry your contribution is not important enough.", a: "\"I don't have to be the most useful voice in the room to be a useful one.\"", bundle: 'pro' },
+        { q: "The meeting ends and you never said your thing.", a: "\"That's information, not failure. Next time I open my mouth earlier.\"", bundle: 'pro' },
+        { q: "You are the most junior person in the room.", a: "\"Being new is exactly why my question is worth asking out loud.\"", bundle: 'pro' },
+        { q: "You spoke and nobody responded to your point.", a: "\"Silence isn't rejection. Ideas often land three minutes after they're said.\"", bundle: 'pro' },
+        { q: "You are about to interrupt someone and it feels rude.", a: "\"Adding to what they said isn't taking the room from them.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  thehappyno: [
+    {
+      name: "The Guilt-Free No Mindset",
+      guideFront: "Reflect on this.",
+      guideBack: "A way to think about it.",
+      description: "The stance underneath a warm refusal: that saying no is an ordinary thing rather than a small betrayal. A happy no only sounds relaxed if you actually are — the tone is not a technique laid over guilt, it comes from believing the refusal is reasonable. This trains that belief, so the warmth in the voice has something real behind it.",
+      inputs: [
+        { q: "You are about to say no and you can feel an explanation coming.", a: "\"The explanation is for me, not for them. No is a complete answer.\"", bundle: 'pro' },
+        { q: "You said no and they went quiet.", a: "\"Their reaction belongs to them. Mine was reasonable and kind.\"", bundle: 'pro' },
+        { q: "You feel guilty about refusing something small.", a: "\"Small requests deserve small answers. I don't owe a paragraph for a two-second favour.\"", bundle: 'pro' },
+        { q: "You notice you say yes before you have thought.", a: "\"I'm allowed a second. Nobody was ever harmed by me thinking first.\"", bundle: 'pro' },
+        { q: "You worry that refusing will make you seem unhelpful.", a: "\"The people who matter to me have never counted.\"", bundle: 'pro' },
+        { q: "They ask a second time and you feel yourself softening.", a: "\"If I change my answer under pressure, I've taught them pressure works.\"", bundle: 'pro' },
+        { q: "You said yes to something you did not want to do.", a: "\"I can notice that without punishing myself. Next time I take the second I need.\"", bundle: 'pro' },
+        { q: "Saying no cheerfully feels almost rude.", a: "\"Warmth and a no fit in the same sentence. The tone is what carries the care.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  theregretfulno: [
+    {
+      name: "The Honest Regret Mindset",
+      guideFront: "Reflect on this.",
+      guideBack: "A way to think about it.",
+      description: "The stance behind refusing something you actually wanted: that disappointment on both sides is a normal cost of having limits, not evidence of a failure. The difficulty with a regretful no is that the feeling is real, which makes it tempting to keep talking. This trains the opposite — that saying it once and stopping is what keeps it honest.",
+      inputs: [
+        { q: "You are refusing something you genuinely wanted.", a: "\"Wanting it and doing it are different questions. I can be sorry and still be sure.\"", bundle: 'pro' },
+        { q: "You have said the regret and want to keep explaining.", a: "\"Saying it once is honest. Saying it three times is asking to be forgiven.\"", bundle: 'pro' },
+        { q: "They look disappointed and you want to fix it.", a: "\"Their disappointment is allowed to exist. I don't have to remove it.\"", bundle: 'pro' },
+        { q: "You are turning the same person down twice.", a: "\"Two nos in a row isn't a pattern of not caring. It's a pattern of being busy.\"", bundle: 'pro' },
+        { q: "You feel you should apologise more than you have.", a: "\"I'm not sorry for having limits. I'm sorry about the timing, and I've said so.\"", bundle: 'pro' },
+        { q: "You almost say yes because refusing feels unkind.", a: "\"A yes I resent is a worse gift than a no I mean.\"", bundle: 'pro' },
+        { q: "You are tempted to offer a substitute you don't want to give.", a: "\"An offer I don't mean will cost me more later. I can just say no.\"", bundle: 'pro' },
+        { q: "The refusal is still on your mind hours later.", a: "\"Thinking about it means I cared. It doesn't mean I chose wrong.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+
   playfulrefusals: [
     {
       name: "The Playful No Mindset",

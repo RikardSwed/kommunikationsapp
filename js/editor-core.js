@@ -1,7 +1,7 @@
 // editor-core.js — Deckstack Pack Editor
 // Depends on: data.js, challengesData.js, mindsetData.js, multiStepData.js, memorizeData.js
 
-const EDITOR_VERSION = 'v1.10.0';
+const EDITOR_VERSION = 'v1.11.0';
 const STORAGE_KEY    = 'ds_editor_packs';
 const ACTIVE_KEY     = 'ds_editor_active';
 
@@ -245,16 +245,60 @@ function loadAppPrograms() {
   return src.map(p => ({ id: p.id, title: p.title, icon: p.icon || 'ti-stack', source: 'app', sections: p.sections || [] }));
 }
 
+// A program references its packs by key only. On its own that is enough to
+// rebuild the structure but not the content, so an exported program used to
+// arrive without the material it teaches. These helpers resolve the keys to
+// real packs — editor storage first, then the app's own data — so a program
+// can travel complete, exactly the way importing one from text produces both
+// the program and its packs.
+function programPackKeys(program) {
+  const keys = [];
+  (program.sections || []).forEach(sec => {
+    (sec.packs || []).forEach(p => {
+      const k = p.key || p;
+      if (k && !keys.includes(k)) keys.push(k);
+    });
+  });
+  return keys;
+}
+
+function resolveProgramPacks(program) {
+  const stored = getAllEditorPacks();
+  const packs = [], missing = [];
+  programPackKeys(program).forEach(key => {
+    let pack = stored[key];
+    if (!pack) {
+      try { pack = packFromAppData(key); } catch { pack = null; }
+      // packFromAppData invents an empty shell for an unknown key, so only
+      // keep it if it actually carries content.
+      if (pack && !MODES.some(m => pack[m.id] && pack[m.id].strategies
+            && pack[m.id].strategies.some(s => (s.name || '').trim()))) pack = null;
+    }
+    if (pack) packs.push(pack); else missing.push(key);
+  });
+  return { packs, missing };
+}
+
 function exportProgram(program) {
+  const resolved = resolveProgramPacks(program);
   const out = {
-    meta: { id: program.id, title: program.title, exportedAt: new Date().toISOString(), editorVersion: EDITOR_VERSION },
+    meta: {
+      id: program.id,
+      title: program.title,
+      packs: resolved.packs.length,
+      missingPacks: resolved.missing,
+      exportedAt: new Date().toISOString(),
+      editorVersion: EDITOR_VERSION,
+    },
     data: program,
+    packs: resolved.packs.map(p => JSON.parse(exportPack(p))),
   };
   const blob = new Blob([JSON.stringify(out, null, 2)], { type: 'application/json' });
   const url  = URL.createObjectURL(blob);
   const a    = document.createElement('a');
   a.href = url; a.download = `deckstack-program-${program.id}-${Date.now()}.json`;
   a.click(); URL.revokeObjectURL(url);
+  return { packs: resolved.packs.length, missing: resolved.missing };
 }
 
 // ── EXPORT ────────────────────────────────────────────────────────────────────
@@ -324,17 +368,27 @@ function downloadExport(pack) {
 // Each entry keeps exactly the shape of a normal single export, so nothing
 // new has to be understood to read one — a bundle is just a list of them.
 function buildBundle(packs, programs) {
+  // A selected program drags its own packs along, so a bundle is never a
+  // program without the material it teaches. Packs already picked explicitly
+  // are not duplicated.
+  const all = packs.slice();
+  const seen = new Set(all.map(p => p.key));
+  programs.forEach(pr => {
+    resolveProgramPacks(pr).packs.forEach(p => {
+      if (!seen.has(p.key)) { seen.add(p.key); all.push(p); }
+    });
+  });
   return {
     meta: {
       type: 'deckstack-bundle',
-      packs: packs.length,
+      packs: all.length,
       programs: programs.length,
       exportedAt: new Date().toISOString(),
       editorVersion: EDITOR_VERSION,
     },
-    packs: packs.map(p => JSON.parse(exportPack(p))),
+    packs: all.map(p => JSON.parse(exportPack(p))),
     programs: programs.map(pr => ({
-      meta: { id: pr.id, title: pr.title },
+      meta: { id: pr.id, title: pr.title, packs: programPackKeys(pr) },
       data: pr,
     })),
   };
@@ -363,6 +417,17 @@ function importFromJSON(jsonString) {
       bundle: true,
       packs: (data.packs || []).map(p => importFromJSON(JSON.stringify(p))),
       programs: (data.programs || []).map(pr => pr.data || pr),
+    };
+  }
+
+  // A program export now carries its packs too. Recognise it before the pack
+  // branch below, since both use the {meta, data} shape — a program is the one
+  // whose data has sections.
+  if (data.meta && data.data && Array.isArray(data.data.sections)) {
+    return {
+      bundle: true,
+      packs: (data.packs || []).map(p => importFromJSON(JSON.stringify(p))),
+      programs: [data.data],
     };
   }
 

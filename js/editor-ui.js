@@ -117,7 +117,7 @@ function renderProgramList() {
     btn.addEventListener('click', e => {
       e.stopPropagation();
       const prog = getAllEditorPrograms()[btn.dataset.id];
-      if (prog) exportProgram(prog);
+      if (prog) reportProgramExport(exportProgram(prog));
     });
   });
 
@@ -527,7 +527,7 @@ function bindProgramEditorControls() {
   const exportBtn = document.getElementById('prog-export-btn');
   if (exportBtn) exportBtn.onclick = () => {
     saveProgramAndClose(false);
-    exportProgram(currentProgram);
+    reportProgramExport(exportProgram(currentProgram));
   };
 
   const addSecBtn = document.getElementById('prog-add-section-btn');
@@ -660,6 +660,17 @@ function programRow(title, id, type, icon) {
 }
 
 // SELECTION + BUNDLE EXPORT (v1.10.0)
+// Tell the user how much travelled with an exported program, and name anything
+// whose pack could not be found, so a half-empty file is never a silent
+// surprise.
+function reportProgramExport(res) {
+  if (!res) return;
+  const n = res.packs;
+  let msg = `Exported program with ${n} pack${n === 1 ? '' : 's'}`;
+  if (res.missing && res.missing.length) msg += ` — not found: ${res.missing.join(', ')}`;
+  showToast(msg);
+}
+
 // Checkboxes on the home screen let several packs and programs be exported
 // together. The boxes sit inside rows that are themselves clickable, so every
 // box stops its click from reaching the row and opening the item.

@@ -2,6 +2,261 @@
 
 const multiStepCollections = {
 
+  speakingupingroups: [
+    {
+      name: "Take It, Hold It, Hand It Back",
+      guideFront: "Three steps — claim it, hold it, then give it away.",
+      guideBack: "A possible line for this step.",
+      description: "The full arc of a turn in a group, in three steps. Step one claims the floor rather than waiting to be offered it (Taking the Floor). Step two holds it when someone cuts across, without escalating (Handling Interruptions). Step three ends the turn deliberately, handing it to the person who tried to take it — which is what stops the exchange becoming a contest.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "A project meeting. Three people have spoken, you have not, and a short pause opens.",
+          steps: [
+            { front: "Step 1 — Claim the turn", back: "\"What I'm thinking is — we're solving the wrong half of this.\"" },
+            { front: "Step 2 — Hold it when cut off", back: "\"One second, let me land this — the wrong half is the pricing.\"" },
+            { front: "Step 3 — Hand it over", back: "\"That's my point. Go on, you were saying?\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A team call where you have finally been given a moment to raise the deadline.",
+          steps: [
+            { front: "Step 1 — Claim the turn", back: "\"Sorry — jumping in. I have one thing on the timeline.\"" },
+            { front: "Step 2 — Hold it when cut off", back: "\"Almost done — the timeline only works if scope drops.\"" },
+            { front: "Step 3 — Hand it over", back: "\"That's it from me. What were you going to add?\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A discussion where the group is agreeing quickly and you are not convinced.",
+          steps: [
+            { front: "Step 1 — Claim the turn", back: "\"Before we lock this in — I want to name one risk.\"" },
+            { front: "Step 2 — Hold it when cut off", back: "\"Let me finish the risk, then argue with me.\"" },
+            { front: "Step 3 — Hand it over", back: "\"Right, that's the worry. What do you all think?\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Interrupted, Finished, Even",
+      guideFront: "Three steps — acknowledge, finish, then give it away.",
+      guideBack: "A possible line for this step.",
+      description: "What to do in the moment someone cuts across you, in three steps. Step one acknowledges the interruption instead of pretending it did not happen (Handling Interruptions). Step two finishes the point you were making, briefly. Step three gives them the floor on purpose, which turns the whole thing from a small clash into an ordinary exchange.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You are explaining a decision when a colleague talks over you.",
+          steps: [
+            { front: "Step 1 — Acknowledge it", back: "\"Hold on —\"" },
+            { front: "Step 2 — Finish the point", back: "\"— I want to finish this bit: we chose it because the other option costs a week.\"" },
+            { front: "Step 3 — Give them the floor", back: "\"Okay, now yours.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A friend jumps in with their own story before you reach the end of yours.",
+          steps: [
+            { front: "Step 1 — Acknowledge it", back: "\"Wait, I'm almost at the good bit.\"" },
+            { front: "Step 2 — Finish the point", back: "\"So he opens the door — and the dog is already in the car.\"" },
+            { front: "Step 3 — Give them the floor", back: "\"Right, go on. Yours sounded better anyway.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "The same person has interrupted you repeatedly and you are losing patience.",
+          steps: [
+            { front: "Step 1 — Acknowledge it", back: "\"I like that you want to add things —\"" },
+            { front: "Step 2 — Finish the point", back: "\"— but let me get to the end of this one first.\"" },
+            { front: "Step 3 — Give them the floor", back: "\"Done. What did you want to say?\"" },
+          ]
+        },
+      ]
+    },
+  ],
+
+  playfulrefusals: [
+    {
+      name: "Protest, Then Do It Anyway",
+      guideFront: "Three steps — protest, escalate, then agree.",
+      guideBack: "A possible line for this step.",
+      description: "The complete playful protest, in three steps. Step one reacts far too big for the request (Playful Protest). Step two adds one absurd detail that makes the exaggeration unmistakable. Step three agrees anyway, which is what turns the whole thing into warmth rather than reluctance.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "Someone on the sofa asks you to pass the remote, which is just out of their reach.",
+          steps: [
+            { front: "Step 1 — Protest", back: "\"No. Absolutely not. That is too much to ask of one person.\"" },
+            { front: "Step 2 — Escalate once", back: "\"I have carried this family for years and now this.\"" },
+            { front: "Step 3 — Do it anyway", back: "\"…here.\" Hands it over." },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A friend asks you to help them move a bookshelf on Saturday morning.",
+          steps: [
+            { front: "Step 1 — Protest", back: "\"A bookshelf? On a Saturday?\"" },
+            { front: "Step 2 — Escalate once", back: "\"You know Saturdays are when I do nothing. Professionally.\"" },
+            { front: "Step 3 — Do it anyway", back: "\"What time do you need me?\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A colleague asks you to join one more meeting at the end of a long day.",
+          steps: [
+            { front: "Step 1 — Protest", back: "\"That is the worst thing you have ever asked me.\"" },
+            { front: "Step 2 — Escalate once", back: "\"And you asked me to present at eight in the morning once.\"" },
+            { front: "Step 3 — Do it anyway", back: "\"Fine. Send the invite.\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Claim Incompetence, Then Hold It",
+      guideFront: "Three steps — claim it, hold it, then offer something.",
+      guideBack: "A possible line for this step.",
+      description: "How a joking refusal survives being challenged, in three steps. Step one declines with an unbelievable excuse (Faked Incompetence). Step two holds the excuse when they push, because dropping it turns the joke into an apology. Step three offers something small you genuinely can do, which keeps the no warm.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "Someone asks you to set up their new wifi router.",
+          steps: [
+            { front: "Step 1 — Claim incompetence", back: "\"I'd love to, but it would end in disaster. For everyone's sake.\"" },
+            { front: "Step 2 — Hold it when pushed", back: "\"No, genuinely — I once turned a printer into a paperweight.\"" },
+            { front: "Step 3 — Offer something small", back: "\"I'll hold the torch and say encouraging things, though.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A friend asks you to help paint a room next weekend.",
+          steps: [
+            { front: "Step 1 — Claim incompetence", back: "\"I have no spatial ability whatsoever. The wall would end up worse.\"" },
+            { front: "Step 2 — Hold it when pushed", back: "\"You say it's easy. My last straight line was in 2009.\"" },
+            { front: "Step 3 — Offer something small", back: "\"I'll bring lunch and supervise badly.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Someone asks you to make an awkward phone call on their behalf.",
+          steps: [
+            { front: "Step 1 — Claim incompetence", back: "\"I lose the power of speech on phones. It's been documented.\"" },
+            { front: "Step 2 — Hold it when pushed", back: "\"Ask anyone. I once said 'you too' to a waiter.\"" },
+            { front: "Step 3 — Offer something small", back: "\"I'll sit next to you while you do it.\"" },
+          ]
+        },
+      ]
+    },
+  ],
+  thehappyno: [
+    {
+      name: "No, Warmth, Move On",
+      guideFront: "Three steps — say it, warm it, then move on.",
+      guideBack: "A possible line for this step.",
+      description: "The complete happy no in three steps, which is where most of the difficulty actually lives. Step one is the refusal itself, said early and plainly. Step two adds the light touch that keeps it warm without reopening the question. Step three changes the subject, because lingering is what turns a clean no into an apology.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "Your child asks you to put their pyjamas on, and they are perfectly able to do it themselves.",
+          steps: [
+            { front: "Step 1 — Say the no", back: "\"Nope.\"" },
+            { front: "Step 2 — Add the warmth", back: "\"— but you're brilliant at it.\"" },
+            { front: "Step 3 — Move on", back: "\"Right. Which book tonight?\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A colleague asks you to swap shifts for the third time this month.",
+          steps: [
+            { front: "Step 1 — Say the no", back: "\"Not this one, I'm afraid.\"" },
+            { front: "Step 2 — Add the warmth", back: "\"Hope you find someone — ask Sam, he owes you.\"" },
+            { front: "Step 3 — Move on", back: "\"Did you see they moved the deadline?\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A friend asks you to look after their plants while they are away, again.",
+          steps: [
+            { front: "Step 1 — Say the no", back: "\"I'm going to pass this time.\"" },
+            { front: "Step 2 — Add the warmth", back: "\"Your plants deserve better than me anyway.\"" },
+            { front: "Step 3 — Move on", back: "\"Where are you off to, though?\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "When They Ask Again",
+      guideFront: "Three steps — repeat it, hold it, then close it.",
+      guideBack: "A possible line for this step.",
+      description: "What to do when a warm no is tested, in three steps. Step one repeats the refusal in exactly the same tone, because changing tone is what signals that pressure works. Step two declines the invitation to justify it. Step three closes the subject warmly, so the second no costs the relationship nothing.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You have said a cheerful no and they immediately ask again.",
+          steps: [
+            { front: "Step 1 — Repeat, same tone", back: "\"Still no — and still cheerfully.\"" },
+            { front: "Step 2 — Don't justify", back: "\"There isn't a better reason coming, I'm afraid.\"" },
+            { front: "Step 3 — Close it warmly", back: "\"Ask me about something else and watch me say yes.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "They respond to your no with a reason designed to make refusing hard.",
+          steps: [
+            { front: "Step 1 — Repeat, same tone", back: "\"That's a good reason. It's still a no.\"" },
+            { front: "Step 2 — Don't justify", back: "\"I'm not going to argue you out of it — I just can't.\"" },
+            { front: "Step 3 — Close it warmly", back: "\"Tell me how it goes, though. I mean that.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "They laugh and say you never agree to anything.",
+          steps: [
+            { front: "Step 1 — Repeat, same tone", back: "\"This one's a no.\"" },
+            { front: "Step 2 — Don't justify", back: "\"I know, I'm a disappointment. Consistent, though.\"" },
+            { front: "Step 3 — Close it warmly", back: "\"Next round's on me to make up for it.\"" },
+          ]
+        },
+      ]
+    },
+  ],
+  theregretfulno: [
+    {
+      name: "Say It, Mean It, Stop",
+      guideFront: "Three steps — name it, refuse plainly, then stop.",
+      guideBack: "A possible line for this step.",
+      description: "The complete regretful no in three steps, and the third is where it usually goes wrong. Step one names the regret honestly, once. Step two gives the refusal plainly, so it cannot be mistaken for a maybe. Step three closes without adding another reason — because every extra sentence after a sincere no turns it into a request to be forgiven.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "A friend invites you to a weekend away that you genuinely wanted to join.",
+          steps: [
+            { front: "Step 1 — Name the regret", back: "\"I really wish I could — I'd have loved that.\"" },
+            { front: "Step 2 — Refuse plainly", back: "\"It doesn't work this time.\"" },
+            { front: "Step 3 — Stop", back: "\"Send me photos, though.\" Then change the subject." },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You are offered an interesting project you have no capacity for.",
+          steps: [
+            { front: "Step 1 — Name the regret", back: "\"This is the kind of thing I'd normally jump at.\"" },
+            { front: "Step 2 — Refuse plainly", back: "\"I can't take it on now.\"" },
+            { front: "Step 3 — Stop", back: "\"Ask me again in the autumn.\" Nothing further." },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Someone close asks you to be somewhere and you already have a commitment.",
+          steps: [
+            { front: "Step 1 — Name the regret", back: "\"I'd really have wanted to be there.\"" },
+            { front: "Step 2 — Refuse plainly", back: "\"I'm already committed that day.\"" },
+            { front: "Step 3 — Stop", back: "\"Tell me how it goes.\" No third reason." },
+          ]
+        },
+      ]
+    },
+  ],
+
   transitions: [
     {
       name: "Their Answer, Your Story, Back to Them",

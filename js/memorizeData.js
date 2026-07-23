@@ -3,6 +3,56 @@
 
 const memorizeCollections = {
 
+  playfulrefusals: [
+    {
+      name: "Playful Protest",
+      guideFront: "Answer from memory, then flip.",
+      description: "The concepts behind theatrical resistance: what the joke actually is, why the size mismatch carries it, and when protesting stops being funny.",
+      cards: [
+        { q: "What is the joke in a playful protest?", a: "The mismatch. You react to a two-second favour as though it were an enormous sacrifice, and everyone can hear that the size does not match.", bundle: 'free' },
+        { q: "How should a playful protest be delivered?", a: "With a straight face, as though you mean it. Letting your expression give it away a moment later is what makes it land.", bundle: 'free' },
+        { q: "What usually happens at the end of a playful protest?", a: "You agree anyway. The protest is decoration on a yes, not a refusal.", bundle: 'free' },
+        { q: "Why does a playful protest make a request easier to accept?", a: "It lets you register that something is a bother without actually complaining, so nobody has to feel guilty for asking.", bundle: 'free' },
+        { q: "When does a playful protest fall flat?", a: "When the request was genuinely difficult for the person to make. Then the joke reads as though you are weighing their need.", bundle: 'free' },
+        { q: "How big should the protest be?", a: "Far too big. A mild grumble is just a grumble — the exaggeration is the whole signal that you are playing.", bundle: 'pro' },
+        { q: "What is the risk of protesting and then refusing?", a: "It feels like a bait. The protest promises a yes, so a no after it lands worse than a plain no would have.", bundle: 'pro' },
+        { q: "What does a playful protest say about the relationship?", a: "That it is relaxed enough to be teased in. You only protest theatrically with people you are comfortable with.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Faked Incompetence",
+      guideFront: "Answer from memory, then flip.",
+      description: "The concepts behind declining by claiming inability: why an unbelievable excuse works better than a believable one, and who the joke is aimed at.",
+      cards: [
+        { q: "What is the move in faked incompetence?", a: "Declining by claiming the task is far beyond your abilities — too weak, too clumsy, too untrained — with an excuse nobody could believe.", bundle: 'free' },
+        { q: "Why should the excuse be unbelievable?", a: "A believable excuse invites argument or sympathy. An absurd one signals that this is a no wrapped in a joke, not a negotiation.", bundle: 'free' },
+        { q: "How is it delivered?", a: "Completely straight. A small sigh, a regretful tone, and no wink — the seriousness is what makes the absurdity funny.", bundle: 'free' },
+        { q: "Who is the target of the joke?", a: "You are. That is why it softens a refusal: the other person is not being mocked for asking.", bundle: 'free' },
+        { q: "What does faked incompetence let you avoid?", a: "Explaining your real reason. You decline without opening a discussion about whether the reason is good enough.", bundle: 'free' },
+        { q: "When is faked incompetence the wrong tool?", a: "When you actually are the obvious person for the job and both of you know it. Then it reads as dodging rather than joking.", bundle: 'pro' },
+        { q: "How does it differ from a plain excuse?", a: "A plain excuse asks to be believed. This one asks to be enjoyed — the point is the shared joke, not the reason.", bundle: 'pro' },
+        { q: "What happens if you use it too often with the same person?", a: "It stops being a joke and starts being a pattern, and they hear it as an unwillingness to be asked at all.", bundle: 'pro' },
+      ]
+    },
+  ],
+  theregretfulno: [
+    {
+      name: "The Regretful No",
+      guideFront: "Answer from memory, then flip.",
+      description: "The concepts behind a sincere refusal: when regret is the right register, why brevity protects it, and how it differs from apology.",
+      cards: [
+        { q: "When is a regretful no the right register?", a: "When you genuinely wish you could say yes. If you do not, the regret is performed and the other person can usually hear it.", bundle: 'free' },
+        { q: "Why must the regret be brief?", a: "Lingering in it turns honesty into a bid for sympathy, and the other person ends up comforting you about your own refusal.", bundle: 'free' },
+        { q: "How many times should you say the regret?", a: "Once, clearly. Repeating it makes the refusal sound negotiable and puts the other person in the position of reassuring you.", bundle: 'free' },
+        { q: "What is the difference between regret and apology?", a: "Regret says the situation is a shame. Apology says you did something wrong. Refusing is not usually wrong.", bundle: 'free' },
+        { q: "What weakens a regretful no?", a: "Over-explaining. Every extra reason gives the other person something to solve, and turns a closed answer into a negotiation.", bundle: 'free' },
+        { q: "What do you do when they offer to accommodate you?", a: "Name the real obstacle briefly. If it is not the date but the month, saying so prevents a series of alternatives.", bundle: 'pro' },
+        { q: "How do you acknowledge their disappointment without reopening it?", a: "Say it once and leave it — \"I know, I'd have liked it too\" — without following it with another reason.", bundle: 'pro' },
+        { q: "What can you offer instead of a yes?", a: "Help finding another route, when you mean it. An offer you do not mean is worse than a plain no.", bundle: 'pro' },
+      ]
+    },
+  ],
+
   thehappyno: [
     {
       name: "The Happy No",

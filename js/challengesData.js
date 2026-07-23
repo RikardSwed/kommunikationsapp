@@ -2,6 +2,79 @@
 
 const challengesCollections = {
 
+  speakingupingroups: [
+    {
+      name: "Rooms That Are Hard to Enter",
+      guideFront: "Name the problem, then pick the move.",
+      guideBack: "A possible response, with the strategy in brackets.",
+      description: "Group situations where getting or keeping a turn is genuinely difficult — the fast meeting with no gaps, the senior voice nobody interrupts, the call where you cannot catch anyone's eye, the person who talks over you every single time. The point is to notice which obstacle you are actually facing, because the fix differs: a room with no gaps needs you to start anyway, while a room that keeps taking your turn needs you to hold it.",
+      inputs: [
+        { q: "The conversation moves so fast there is never a gap.", a: "\"Can I jump in on that —\" said at normal volume, starting mid-flow. (taking the floor)", bundle: 'pro' },
+        { q: "A senior colleague has held the floor for several minutes.", a: "\"That's useful — and it connects to something I've been sitting on.\" (taking the floor)", bundle: 'pro' },
+        { q: "You are on a call and cannot use eye contact to claim a turn.", a: "\"Sorry — jumping in. I have one thing on the timeline.\" (taking the floor)", bundle: 'pro' },
+        { q: "The same person has cut you off three times in one meeting.", a: "\"I like that you want to add things — but let me get to the end of this one.\" (handling interruptions)", bundle: 'pro' },
+        { q: "You start speaking and someone starts at the same moment.", a: "\"Go ahead — then I've got one.\" (handling interruptions)", bundle: 'pro' },
+        { q: "You are asked for input and everyone turns to look at you.", a: "\"Two things. First the deadline, then the budget. The deadline is the real problem.\" (taking the floor)", bundle: 'pro' },
+        { q: "Someone interrupts out of enthusiasm rather than rudeness.", a: "\"Wait — you'll get to say it in about ten seconds, I promise.\" (handling interruptions)", bundle: 'pro' },
+        { q: "Two colleagues are going back and forth and you see a third option.", a: "\"Can I offer a third way? Both of those assume we ship in March.\" (taking the floor)", bundle: 'pro' },
+      ]
+    },
+  ],
+  playfulrefusals: [
+    {
+      name: "Requests That Are Awkward to Refuse",
+      guideFront: "Name the problem, then pick the move.",
+      guideBack: "A possible response, with the strategy in brackets.",
+      description: "The requests where a plain no feels too blunt but a yes would cost you something — the favour asked in front of other people, the third ask this month, the one from someone who never says no to you. The point is to notice what makes each one awkward, because humour only helps when the awkwardness is about tone. When the request is serious to the person asking, neither move is the right tool and a plain answer is kinder.",
+      inputs: [
+        { q: "A friend asks for a lift at an hour that ruins your evening.", a: "\"At that hour? I'll need to be paid in breakfast.\" (playful protest)", bundle: 'pro' },
+        { q: "Someone asks you to do a tedious task you have done many times.", a: "\"Ah yes. My life's work. Let me get my equipment.\" (playful protest)", bundle: 'pro' },
+        { q: "You are asked for a favour in front of other people.", a: "\"You're doing this with witnesses? Bold.\" (playful protest)", bundle: 'pro' },
+        { q: "Someone asks for something you genuinely have no skill for.", a: "\"I have no spatial ability whatsoever. The wall would end up worse.\" (faked incompetence)", bundle: 'pro' },
+        { q: "A child asks you to do something fiddly for the fourth time.", a: "\"Those buttons are beyond me. I've never worked out the system.\" (faked incompetence)", bundle: 'pro' },
+        { q: "Someone asks for a favour that really is a bit much.", a: "\"I want it on record that I know exactly how big this is.\" (playful protest)", bundle: 'pro' },
+        { q: "A friend who never refuses you asks for something inconvenient.", a: "\"For you? Fine. Under protest, but fine.\" (playful protest)", bundle: 'pro' },
+        { q: "Someone asks for help with something where you would genuinely make it worse.", a: "\"I'm afraid I'm entirely untrained in this area.\" (faked incompetence)", bundle: 'pro' },
+      ]
+    },
+  ],
+  thehappyno: [
+    {
+      name: "Nos That Are Hard to Keep Light",
+      guideFront: "Name what makes it hard, then answer.",
+      guideBack: "A possible response.",
+      description: "The situations where warmth is difficult to hold: the second ask after you already said no, the request from someone who will be disappointed, the one that arrives when you are tired enough to snap. What they have in common is pressure to either give in or harden. The move is the same in all of them — say no in the same friendly tone as the first time, and let the tone rather than the words do the work.",
+      inputs: [
+        { q: "They ask again, straight after your first no.", a: "\"Still no — but nice try.\" Same tone as before.", bundle: 'pro' },
+        { q: "You are tired and can feel yourself about to be sharp.", a: "\"Not tonight. Ask me tomorrow and you'll get a better version of me.\"", bundle: 'pro' },
+        { q: "Someone looks disappointed the moment you decline.", a: "\"I know. Still no — but I'm glad you asked me.\"", bundle: 'pro' },
+        { q: "You said yes to this person last time and they expect the same.", a: "\"Last time was a one-off. This time it's a no.\"", bundle: 'pro' },
+        { q: "The request comes with a reason designed to make refusing hard.", a: "\"That's a good reason. It's still a no from me.\"", bundle: 'pro' },
+        { q: "You are asked in front of other people.", a: "\"Not me this time — but someone here is about to volunteer.\"", bundle: 'pro' },
+        { q: "You catch yourself starting to explain why.", a: "\"No — and that's the whole answer.\" Then stop.", bundle: 'pro' },
+        { q: "They laugh and say you never say yes to anything.", a: "\"Not true. I said yes to breakfast.\" Still no.", bundle: 'pro' },
+      ]
+    },
+  ],
+  theregretfulno: [
+    {
+      name: "The Ones You Actually Mind Refusing",
+      guideFront: "Name what makes it hard, then answer.",
+      guideBack: "A possible response.",
+      description: "Refusals where the regret is real and therefore hard to hold at the right size — the invitation you wanted, the person who will be hurt, the second time you have let the same person down. The failure mode in all of them is the same: staying in the regret too long, until an honest feeling turns into a request for reassurance. Say it once, clearly, and stop.",
+      inputs: [
+        { q: "You are declining something you genuinely wanted to do.", a: "\"I'd have loved this. I can't make it work.\"", bundle: 'pro' },
+        { q: "You are turning down the same person for the second time.", a: "\"Twice now — and I'm sorry about that. I still can't.\"", bundle: 'pro' },
+        { q: "The other person looks visibly disappointed.", a: "\"I know. I'd have liked it too.\" Then leave it there.", bundle: 'pro' },
+        { q: "You can feel yourself over-explaining out of guilt.", a: "\"I wish I could. I can't this time.\" Stop talking.", bundle: 'pro' },
+        { q: "They offer to change the date to accommodate you.", a: "\"That's kind — but it isn't the date, it's the month I'm in.\"", bundle: 'pro' },
+        { q: "You are declining something a friend clearly needs help with.", a: "\"I can't take this one on, and I hate that. Can I help you find someone who can?\"", bundle: 'pro' },
+        { q: "You catch yourself apologising for the third time in one refusal.", a: "\"I've said sorry enough. The answer's still no, and I do mean the sorry.\"", bundle: 'pro' },
+        { q: "You are refusing a genuinely generous offer.", a: "\"That's a really kind thing to offer. I'm still going to say no.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+
   transitions: [
     {
       name: "Stuck Conversations",
