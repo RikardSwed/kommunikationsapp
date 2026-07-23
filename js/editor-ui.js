@@ -1593,8 +1593,13 @@ function renderModeContent() {
   if (hasBundles) {
     // Filter out 'default' — not a real bundle
     const validBundles = bundles.filter(b => b.id !== 'default');
-    // If currentBundle is 'default', switch to first valid bundle
-    if (currentBundle === 'default' && validBundles.length) {
+    // If the selected bundle does not exist in this pack, fall back to the
+    // first real one. 'default' is one case; the important one is a pro-only
+    // mode (sequences, challenges, mindset, collections) where no free bundle
+    // exists at all — currentBundle starts as 'free', so without this the
+    // scenario list filters down to nothing and the mode looks empty even
+    // though the data is there.
+    if (validBundles.length && !validBundles.some(b => b.id === currentBundle)) {
       currentBundle = validBundles[0].id;
     }
     const tierLabel = (b) => {
