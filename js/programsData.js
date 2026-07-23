@@ -2,6 +2,41 @@
 
 const programsData = [
   {
+    id: 'saying-no',
+    title: "Saying No With Confidence",
+    description: "A short course in declining requests without guilt, apology or long explanations — first the easy no, then the one you actually regret.",
+    icon: "ti-hand-stop",
+    sections: [
+      {
+        id: 'section-1',
+        title: "Part 1 — The Happy No",
+        packs: [
+          { key: "thehappyno", label: "The Happy No" },
+        ],
+        checkpoint: {
+          id: 'saying-no-cp1',
+          title: "The Happy No — check",
+          timeLimit: 90,
+          drawCount: 4,
+          questions: [
+            { id: 'sn1-1', q: "What carries a happy no more than anything else?", options: ["The reason you give", "How quickly you answer", "The tone you say it in", "How the other person reacts"], correct: 2 },
+            { id: 'sn1-2', q: "Why does a long explanation weaken a refusal?", options: ["It takes too much time", "Every reason gives the other person something to argue with", "It sounds unfriendly", "It confuses them"], correct: 1 },
+            { id: 'sn1-3', q: "Which of these is a soft no rather than a warm no?", options: ["\"Maybe later, we'll see\"", "\"Not this time — but thanks for asking\"", "\"No, but you're great at it\"", "\"That's a no from me\""], correct: 0 },
+            { id: 'sn1-4', q: "When is a happy no the wrong tool?", options: ["When you are busy", "When you barely know the person", "When you have said no before", "When the request is serious to them"], correct: 3 },
+            { id: 'sn1-5', q: "If someone asks again after your no, what should you do?", options: ["Give a longer reason", "Repeat it in the same tone", "Change to a firmer voice", "Offer a compromise"], correct: 1 },
+          ],
+        },
+      },
+      {
+        id: 'section-2',
+        title: "Part 2 — The Regretful No",
+        packs: [
+          { key: "theregretfulno", label: "The Regretful No" },
+        ],
+      },
+    ],
+  },
+  {
     id: 'social-confidence',
     title: 'Social Confidence Foundations',
     description: 'Build the core skills for confident, calm communication — from handling criticism and pressure to starting conversations and connecting with people.',

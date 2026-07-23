@@ -162,7 +162,7 @@ applyInputCounterVisibility();
   // ── Program routes: is this pack delivered via a Program, and if so is
   //    any of its sections unlocked (all previous checkpoints passed)? ──────
   function _programState(packKey) {
-    const state = { inAnyProgram: false, availableRoute: false, lockedRoute: false };
+    const state = { inAnyProgram: false, availableRoute: false, lockedRoute: false, pendingRoute: false };
     if (typeof programsData === 'undefined' || !Array.isArray(programsData)) return state;
     let progress = {};
     try { progress = JSON.parse(localStorage.getItem('ds_program_progress')) || {}; } catch {}
@@ -183,6 +183,17 @@ applyInputCounterVisibility();
           const cp = prog.sections[i].checkpoint;
           if (cp && !cpPassed(prog.id, cp.id)) return;
         }
+        // v1.26.56 — discovery rule. A pack in an unlocked section is trainable
+        // inside the PROGRAM straight away; you need it to prepare for that
+        // section's test. It only spreads to the rest of the app — the Packs
+        // tab, Topics, search, favourites, folders — once that section's OWN
+        // checkpoint is passed, so working through a program keeps revealing
+        // new material. The program screen is unaffected: it has its own
+        // isSectionUnlocked in app-ui.js and never calls packVisibility.
+        // A section with no checkpoint has nothing to wait for, so it releases
+        // as soon as it unlocks.
+        const ownCp = sec.checkpoint;
+        if (ownCp && !cpPassed(prog.id, ownCp.id)) { state.pendingRoute = true; return; }
         // Extended programs require Pro even when owned (yearly Pro model)
         if (isExt && !isProUp) state.lockedRoute = true;
         else state.availableRoute = true;

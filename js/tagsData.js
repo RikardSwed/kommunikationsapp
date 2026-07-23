@@ -4,6 +4,12 @@
 // Add or edit tags here, or via Developer Tools in the app.
 
 const packTags = {
+  thehappyno: [
+    'saying no', 'declining requests', 'warmth', 'boundaries', 'guilt free'
+  ],
+  theregretfulno: [
+    'saying no', 'regret', 'sincerity', 'declining invitations', 'boundaries'
+  ],
   speakingupingroups: [
     'meetings', 'groups', 'taking the floor', 'interruptions',
     'being talked over', 'speaking up'
@@ -89,7 +95,7 @@ const TOPICS = [
   { id: 'transitions',        title: 'Transitions & Flow',                        packs: ['transitions'] },
   { id: 'emotions',           title: 'Emotions & Emotional Regulation',           packs: [] },
   { id: 'opinions',           title: 'Opinions & Argumentation',                  packs: ['influenceframing'] },
-  { id: 'boundaries',         title: 'Boundaries & Refusal',                      packs: ['playfulrefusals'] },
+  { id: 'boundaries',         title: 'Boundaries & Refusal',                      packs: ['playfulrefusals', 'thehappyno', 'theregretfulno'] },
   { id: 'rapport',            title: 'Rapport & Connection',                      packs: ['listeningresponding'] },
   { id: 'bodyvoice',          title: 'Body Language & Voice',                     packs: [] },
   { id: 'giving',             title: 'Giving & Receiving',                        packs: [] },

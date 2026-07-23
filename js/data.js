@@ -3,6 +3,44 @@
 
 const collections = {
 
+  thehappyno: [
+    {
+      name: "The Happy No",
+      guideFront: "Warm, brief, and no explanation.",
+      guideBack: "A possible response.",
+      description: "Declining with warmth and energy rather than apology. The whole move is tone: you are genuinely relaxed, you say no, and you move on — no long reason, no over-apologising, no defensiveness. A light addition after the no softens it without weakening it, and because you sound untroubled, the other person usually is too.",
+      inputs: [
+        { q: "Your child asks you to put their pyjamas on when they can do it themselves.", a: "\"Nope — but you're brilliant at it.\"", bundle: 'free' },
+        { q: "Someone asks you for a shoulder massage out of the blue.", a: "\"Absolutely not. But thank you for the confidence.\"", bundle: 'free' },
+        { q: "A friend asks you to help with something trivial while you are busy.", a: "\"Not right now — but nice of you to ask.\"", bundle: 'free' },
+        { q: "Someone asks you to do a chore you would rather not do.", a: "\"I'm going to say no to that one. Cheerfully.\"", bundle: 'free' },
+        { q: "Someone asks for something inconvenient right this second.", a: "\"No — maybe later though!\"", bundle: 'free' },
+        { q: "A colleague asks you to swap shifts for the third time this month.", a: "\"Not this one, I'm afraid. Hope you find someone.\"", bundle: 'pro' },
+        { q: "Someone asks you to join something you have no interest in.", a: "\"That's a no from me — but have a great time.\"", bundle: 'pro' },
+        { q: "A friend asks you to look after their plants again.", a: "\"I'm going to pass this time. Your plants deserve better than me anyway.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+
+  theregretfulno: [
+    {
+      name: "The Regretful No",
+      guideFront: "Say the regret once, then stop.",
+      guideBack: "A possible response.",
+      description: "Saying no to something you genuinely wish you could say yes to, and letting that show without turning it into a performance. The difficulty is staying on the right side of two lines: the regret has to be real rather than added to soften the blow, and it has to be brief, because lingering in it turns honesty into a bid for sympathy. State it once, clearly, and stop.",
+      inputs: [
+        { q: "You are invited to something you genuinely wanted to attend.", a: "\"I really wish I could — I'd have loved that. But it doesn't work this time.\"", bundle: 'free' },
+        { q: "A friend asks for help and you honestly cannot give it.", a: "\"It actually makes me a bit sad to say no to this one.\"", bundle: 'free' },
+        { q: "You have to turn down a project you find interesting.", a: "\"This is the kind of thing I'd normally jump at. I just can't take it on now.\"", bundle: 'free' },
+        { q: "Someone close asks you to be somewhere and you already have a commitment.", a: "\"I'd really have wanted to be there. I'm already committed that day.\"", bundle: 'free' },
+        { q: "You must decline something you have said yes to before.", a: "\"I'm sorry — this one I can't do, and I mean that.\"", bundle: 'free' },
+        { q: "You are turning something down and can feel yourself over-explaining out of guilt.", a: "\"I wish I could. I can't this time.\" — and then stop talking.", bundle: 'pro' },
+        { q: "Someone offers you something generous that you have to refuse.", a: "\"That's a genuinely kind offer, and I'm sorry to be turning it down.\"", bundle: 'pro' },
+        { q: "You are declining and the other person looks disappointed.", a: "\"I know. I'd have liked it too.\" — acknowledge it once, without reopening the decision.", bundle: 'pro' },
+      ]
+    },
+  ],
+
   speakingupingroups: [
     {
       name: "Taking the Floor",

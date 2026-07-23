@@ -3,6 +3,24 @@
 
 const memorizeCollections = {
 
+  thehappyno: [
+    {
+      name: "The Happy No",
+      guideFront: "Answer from memory, then flip.",
+      description: "The concepts behind a warm, guilt-free refusal: what carries it, what weakens it, and why the tone matters more than the words.",
+      cards: [
+        { q: "What carries a happy no?", a: "The tone. Warm and relaxed, with no defensiveness — the words matter far less than sounding untroubled.", bundle: 'free' },
+        { q: "What weakens a no?", a: "Over-apologising, a long explanation, or softening it with \"maybe later\" when you mean no. All three invite more pressure.", bundle: 'free' },
+        { q: "Why does a long explanation make a no weaker?", a: "Every reason you give is something the other person can argue with. A short no has nothing to attack.", bundle: 'free' },
+        { q: "What can you add after the no to soften it?", a: "Something light and genuine — a compliment, a thank-you, or a small joke — as long as it does not reopen the question.", bundle: 'free' },
+        { q: "What is the difference between a warm no and a soft no?", a: "A warm no is friendly but final. A soft no leaves the door open, which is only fair if you actually mean to.", bundle: 'free' },
+        { q: "When is a happy no the wrong choice?", a: "When the request is serious and the person is not. Cheerfulness then reads as dismissive, and a plain or regretful no fits better.", bundle: 'pro' },
+        { q: "How do you say no happily without sounding sarcastic?", a: "Keep the warmth genuine and aimed at the person, not the request. Sarcasm appears when the tone mocks the asking.", bundle: 'pro' },
+        { q: "What do you do if they ask again after a happy no?", a: "Repeat it in the same tone. Changing tone on the second no signals that pressure works.", bundle: 'pro' },
+      ]
+    },
+  ],
+
   speakingupingroups: [
     {
       name: "Speaking Up in Groups",
