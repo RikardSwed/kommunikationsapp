@@ -215,7 +215,10 @@
       white-space:   nowrap;
       transition:    all .15s;
     }
-    .mode-tab:hover     { border-color: var(--acc); color: var(--acc); }
+    /* The hover rule must not apply to the active tab: it would paint the
+       label in the accent colour on top of the accent background, making the
+       text vanish while the pointer rests on it. */
+    .mode-tab:not(.mode-tab--active):hover { border-color: var(--acc); color: var(--acc); }
     .mode-tab--active   { background: var(--acc); border-color: var(--acc); color: #fff; }
     .bundle-tier-badge  { font-size: 11px; font-weight: 700; border-radius: 6px; padding: 2px 7px; }
     .tier-free          { background: #e8f5e9; color: #2e7d32; }
@@ -457,6 +460,19 @@
     .icon-btn:hover      { border-color: var(--acc); color: var(--acc); }
     .icon-btn.danger:hover { border-color: var(--danger); color: var(--danger); }
 
+    /* Text button for destructive actions that need a label rather than a bare
+       icon (e.g. "Delete scenario"). .icon-btn is a fixed 32x32 box, so a label
+       placed in one overflows it and the glyph ends up outside the frame. */
+    .btn--danger {
+      background:    transparent;
+      color:         var(--danger);
+      border:        1px solid var(--border);
+      display:       inline-flex;
+      align-items:   center;
+      gap:           6px;
+    }
+    .btn--danger:hover { border-color: var(--danger); background: rgba(192,57,43,0.06); }
+
     /* ── TOAST ── */
     #editor-toast {
       position:      fixed;
@@ -608,7 +624,7 @@
   <div class="topbar">
     <button class="btn btn--ghost btn--sm" onclick="window.location.href='index.html'" style="margin-right:8px;" title="Back to app">&larr; App</button>
     <span class="topbar-title" onclick="showHome()" style="cursor:pointer;" title="Back to home">Deckstack — Pack Editor</span>
-    <span class="topbar-version" id="editorVersionLabel">Editor v1.9.2 · Changes saved automatically</span>
+    <span class="topbar-version" id="editorVersionLabel">Editor v1.9.3 · Changes saved automatically</span>
   </div>
 
   <!-- Home screen -->
@@ -766,8 +782,8 @@
     ],
   };
   </script>
-<script src="js/editor-core.js?v=192"></script>
-<script src="js/editor-ui.js?v=192"></script>
+<script src="js/editor-core.js?v=193"></script>
+<script src="js/editor-ui.js?v=193"></script>
 
 </body>
 </html>
