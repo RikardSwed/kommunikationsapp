@@ -5,7 +5,7 @@
 // (DS.createCardMode / DS.createHandsfreeMode) and are declared in
 // app-modes.js and app-handsfree.js.
 
-const VERSION = 'v1.26.61';
+const VERSION = 'v1.26.62';
 
 // Keep every version label in the UI in sync with VERSION (v1.26.44).
 // The hardcoded strings in index.html are only fallbacks — this runs at
@@ -431,14 +431,45 @@ function _buildLibPackList() {
 // before the .collection-card binding loop below, before app-system's
 // applyAccessLevel, and before app-ui's initTopics — all three then pick
 // up the rendered cards exactly as they did the old static markup.
+// Alphabetical order everywhere in the Library (v1.26.62).
+// Both tabs used to show whatever order things were added in, which put every
+// new pack at the bottom. Sorting happens at RENDER time rather than in the
+// data files, so a pack added later lands in the right place by itself.
+// localeCompare with 'en' keeps &, punctuation and case out of the way.
+function dsAlpha(a, b) { return String(a).localeCompare(String(b), 'en', { sensitivity: 'base' }); }
+
+function sortPackCards() {
+  const host = document.querySelector('#libTabPacks');
+  if (!host) return;
+  // Sort within each container, so any grouping in the markup survives.
+  const groups = new Set();
+  host.querySelectorAll('.collection-card[data-key]').forEach(c => groups.add(c.parentElement));
+  groups.forEach(parent => {
+    const cards = Array.from(parent.querySelectorAll(':scope > .collection-card[data-key]'));
+    if (cards.length < 2) return;
+    const name = c => (c.querySelector('.collection-name') || {}).textContent || c.dataset.label || c.dataset.key;
+    cards.sort((a, b) => dsAlpha(name(a), name(b))).forEach(c => parent.appendChild(c));
+  });
+}
+sortPackCards();
+
 function renderTopics() {
   if (typeof TOPICS === 'undefined' || !Array.isArray(TOPICS)) return;
   const host = document.querySelector('#libTabTopics .topic-accordion');
   if (!host) return;
   const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
   const cap = s => s.charAt(0).toUpperCase() + s.slice(1);
-  host.innerHTML = TOPICS.map(topic => {
-    const keys = Array.isArray(topic.packs) ? topic.packs : [];
+  // Look up a pack's display name so topics sort by what the user actually
+  // reads, not by the internal key.
+  const packName = key => {
+    const src = document.querySelector(`#libTabPacks .collection-card[data-key="${key}"]`);
+    const n = src && src.querySelector('.collection-name');
+    return (n && n.textContent) || key;
+  };
+  const ordered = TOPICS.slice().sort((a, b) => dsAlpha(a.title, b.title));
+  host.innerHTML = ordered.map(topic => {
+    const keys = (Array.isArray(topic.packs) ? topic.packs.slice() : [])
+      .sort((a, b) => dsAlpha(packName(a), packName(b)));
     if (!keys.length) {
       return `
     <div class="topic-group topic-group--empty">
