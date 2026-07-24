@@ -395,14 +395,29 @@ const DS = (function () {
   // The web path is kept as the fallback, so the PWA and the desktop browser
   // behave exactly as before.
   const TTS = (function () {
-    function plugin() {
-      return (window.Capacitor && window.Capacitor.Plugins && window.Capacitor.Plugins.TextToSpeech) || null;
-    }
-    function isNative() {
-      return !!(window.Capacitor
-        && typeof window.Capacitor.isNativePlatform === 'function'
-        && window.Capacitor.isNativePlatform()
-        && plugin());
+    let plugin = null;
+    let ready  = false;   // true only once the plugin has actually answered us
+    let lastError = '';
+
+    // Reaching the native plugin without a bundler.
+    // www/ is plain script tags — the plugin's own npm JS is never loaded — so
+    // Capacitor.Plugins.TextToSpeech may not exist even when the native side is
+    // installed. Capacitor.registerPlugin() asks the native bridge directly and
+    // is the route that works for a build like ours.
+    function bridge() {
+      const C = window.Capacitor;
+      if (!C) { lastError = 'no Capacitor bridge (running in a browser)'; return null; }
+      if (typeof C.isNativePlatform === 'function' && !C.isNativePlatform()) {
+        lastError = 'Capacitor present but not a native platform';
+        return null;
+      }
+      if (plugin) return plugin;
+      if (typeof C.registerPlugin === 'function') {
+        try { plugin = C.registerPlugin('TextToSpeech'); } catch (e) { plugin = null; }
+      }
+      if (!plugin && C.Plugins) plugin = C.Plugins.TextToSpeech || null;
+      if (!plugin) lastError = 'TextToSpeech plugin not registered — run npm install + npx cap sync ios';
+      return plugin;
     }
 
     let nativeVoices = [];   // [{ index, name, lang }] — index is what speak() wants
@@ -413,29 +428,49 @@ const DS = (function () {
     const NOVELTY = /^(albert|bad news|bahh|bells|boing|bubbles|cellos|good news|jester|junior|organ|superstar|trinoids|whisper|wobble|zarvox|deranged|hysterical|pipe organ|princess)$/i;
     function isRealVoice(name) { return !NOVELTY.test(String(name || '').trim()); }
 
+    // Probe the plugin for real. registerPlugin() hands back a proxy whether or
+    // not the native half exists, so we only trust it once it has actually
+    // returned a voice list — otherwise we would silently speak into nothing.
     async function loadNativeVoices() {
-      const p = plugin();
-      if (!p) return [];
+      const p = bridge();
+      if (!p || typeof p.getSupportedVoices !== 'function') { ready = false; return []; }
       try {
         const res = await p.getSupportedVoices();
         const all = (res && res.voices) || [];
         nativeVoices = all
           .map((v, index) => ({ index, name: v.name || '', lang: v.lang || '' }))
           .filter(v => /^en/i.test(v.lang) && isRealVoice(v.name));
+        ready = all.length > 0;
+        if (!ready) lastError = 'plugin answered but returned no voices';
       } catch (e) {
+        ready = false;
         nativeVoices = [];
+        lastError = 'plugin call failed: ' + (e && e.message ? e.message : e);
       }
       return nativeVoices;
     }
 
+    function isNative() { return ready; }
     function voices() { return nativeVoices; }
+
+    // Plain-language report for the in-app voice list, so a failure says WHY.
+    function diagnostics() {
+      const C = window.Capacitor;
+      return {
+        capacitor: !!C,
+        nativePlatform: !!(C && typeof C.isNativePlatform === 'function' && C.isNativePlatform()),
+        pluginFound: !!plugin,
+        ready,
+        voices: nativeVoices.length,
+        note: ready ? '' : lastError,
+      };
+    }
 
     function speak(text, opts) {
       const rate = (opts && opts.rate) || 1;
       const pick = opts ? opts.voice : null;
-      const p = plugin();
 
-      if (isNative() && p) {
+      if (ready && plugin) {
         const req = {
           text,
           lang: 'en-US',
@@ -448,10 +483,9 @@ const DS = (function () {
         };
         const chosen = nativeVoices.find(v => String(v.index) === String(pick));
         if (chosen) req.voice = chosen.index;
-        // The plugin resolves when the utterance finishes, which is exactly
-        // what the caller awaits. Never reject — a failed line must not stall
-        // the playback loop.
-        return p.speak(req).catch(() => {});
+        // Resolves when the utterance finishes, which is what the caller awaits.
+        // Never reject — a failed line must not stall the playback loop.
+        return plugin.speak(req).catch(() => {});
       }
 
       return new Promise(resolve => {
@@ -467,15 +501,14 @@ const DS = (function () {
     }
 
     function stop() {
-      const p = plugin();
-      if (isNative() && p) { try { p.stop(); } catch (e) {} return; }
+      if (ready && plugin) { try { plugin.stop(); } catch (e) {} return; }
       try { speechSynthesis.cancel(); } catch (e) {}
     }
 
     // Browsers need a user-gesture-time utterance before audio will play.
     // The native path has no such restriction.
     function unlock() {
-      if (isNative()) return;
+      if (ready) return;
       try {
         const u = new SpeechSynthesisUtterance(' ');
         u.volume = 0;
@@ -483,7 +516,7 @@ const DS = (function () {
       } catch (e) {}
     }
 
-    return { isNative, loadNativeVoices, voices, speak, stop, unlock, isRealVoice };
+    return { isNative, loadNativeVoices, voices, speak, stop, unlock, isRealVoice, diagnostics };
   })();
   // NOTE: do NOT write `DS.tts = TTS` here. Everything in this file runs inside
   // the IIFE that produces DS, so DS is still in its temporal dead zone at this

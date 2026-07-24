@@ -34,18 +34,29 @@ function applyHfInputCounterVisibility() {
 
 // Voice debug helper
 const _hfVoiceDebugBtn = document.getElementById('hfVoiceDebugBtn');
-if (_hfVoiceDebugBtn) _hfVoiceDebugBtn.addEventListener('click', () => {
-  const native = DS.tts && DS.tts.isNative() ? DS.tts.voices() : null;
-  if (native && native.length) {
-    alert('Available English voices (native engine):\n\n'
-      + native.map(v => v.name + '  —  ' + v.lang).join('\n'));
+if (_hfVoiceDebugBtn) _hfVoiceDebugBtn.addEventListener('click', async () => {
+  // Report WHICH engine is live and, when it is not the native one, why.
+  // Guessing at this from the outside cost us a whole build.
+  if (DS.tts) { try { await DS.tts.loadNativeVoices(); } catch (e) {} }
+  const d = DS.tts ? DS.tts.diagnostics() : null;
+
+  if (d && d.ready) {
+    alert('ENGINE: native (iOS speech)\n\n'
+      + DS.tts.voices().map(v => v.name + '  —  ' + v.lang).join('\n'));
     return;
   }
   const voices = speechSynthesis.getVoices();
   const en = voices.filter(v => v.lang.startsWith('en'))
                    .filter(v => !DS.tts || DS.tts.isRealVoice(v.name))
                    .map(v => v.name).join('\n');
-  alert('Available English voices (browser engine):\n\n' + (en || 'None loaded yet — try again in a moment'));
+  const why = d
+    ? ('Capacitor: ' + (d.capacitor ? 'yes' : 'no')
+       + '\nNative platform: ' + (d.nativePlatform ? 'yes' : 'no')
+       + '\nPlugin found: ' + (d.pluginFound ? 'yes' : 'no')
+       + (d.note ? '\n→ ' + d.note : ''))
+    : '';
+  alert('ENGINE: browser (Web Speech)\n' + (why ? why + '\n' : '')
+    + '\n' + (en || 'No voices loaded yet — try again in a moment'));
 });
 
 // ── Voice pickers (v1.26.58) ────────────────────────────────────────────
@@ -59,9 +70,11 @@ const HF_VOICE_SELECTS = ['hfVoice', 'hfMemVoice', 'hfChallVoice', 'hfFlowVoice'
 const HF_VOICE_KEY = 'ds_hf_voice';
 
 async function initHandsfreeVoicePickers() {
-  if (!DS.tts || !DS.tts.isNative()) return;
+  if (!DS.tts) return;
+  // Probe FIRST — isNative() only reports true once the plugin has answered,
+  // so checking it before loading would always be false and skip the picker.
   const voices = await DS.tts.loadNativeVoices();
-  if (!voices.length) return;
+  if (!DS.tts.isNative() || !voices.length) return;
 
   const saved = localStorage.getItem(HF_VOICE_KEY);
   HF_VOICE_SELECTS.forEach(id => {
