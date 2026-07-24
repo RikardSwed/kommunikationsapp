@@ -2115,6 +2115,56 @@ body.pb-enabled .divider::after {
   margin-top: 10px;
 }
 
+/* Trial-first plan card (v1.26.62). The free week is the offer; the two paid
+   plans sit underneath as information rather than competing buttons. */
+.upgrade-trial { margin-bottom: 16px; }
+.upgrade-trial-title {
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--ds-txt);
+  letter-spacing: -0.3px;
+}
+.upgrade-trial-sub {
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--ds-txt2);
+  margin-top: 6px;
+}
+.upgrade-plans {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 18px;
+}
+.upgrade-plan {
+  background: var(--ds-border-sub);
+  border-radius: 12px;
+  padding: 12px 10px;
+}
+.upgrade-plan-name {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--ds-txt2);
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+.upgrade-plan-price {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--ds-txt);
+  margin: 4px 0 2px;
+  letter-spacing: -0.3px;
+}
+.upgrade-plan-note {
+  font-size: 11px;
+  color: var(--ds-txt3);
+}
+.upgrade-plan-foot {
+  font-size: 12px;
+  color: var(--ds-txt3);
+  margin-top: 12px;
+}
+
 .upgrade-section-label {
   font-size: 12px;
   font-weight: 700;
@@ -2990,6 +3040,11 @@ body.feedback-mode    .al-bar { display: none !important; }
 .ext-lifetime-title i { color: #F2A25C; }
 .ext-lifetime-desc { font-size: 13px; line-height: 1.5; opacity: 0.85; margin: 6px 0 12px; }
 .ext-lifetime-bottom { display: flex; align-items: center; justify-content: space-between; }
+/* Once Lifetime Pro is owned the price disappears, leaving the actions as the
+   only child — and space-between then pushes them flush left. Keeping them
+   right-aligned regardless means the row looks the same before and after the
+   purchase, and matches how a bought pack or program renders. (v1.26.62) */
+.ext-lifetime-bottom .ext-store-actions { margin-left: auto; }
 .ext-lifetime-price { font-size: 18px; font-weight: 800; color: #F2A25C; }
 .ext-lifetime-btn {
   background: linear-gradient(135deg, var(--ds-hero-a), var(--ds-hero-b));
