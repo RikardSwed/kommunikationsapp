@@ -90,6 +90,8 @@ async function initHandsfreeVoicePickers() {
       ? saved
       : String((fallback || voices[0]).index);
     sel.value = want;
+    if (sel._voiceBound) return;   // re-running must not stack listeners
+    sel._voiceBound = true;
     sel.addEventListener('change', () => {
       localStorage.setItem(HF_VOICE_KEY, sel.value);
       // Keep every handsfree mode on the same voice.
@@ -101,6 +103,13 @@ async function initHandsfreeVoicePickers() {
   });
 }
 initHandsfreeVoicePickers();
+
+// Refresh the list every time a handsfree settings panel is opened, so a voice
+// downloaded in iOS Settings shows up without restarting the app.
+['hf', 'hfMem', 'hfChall', 'hfFlow', 'hfMind', 'hfColl'].forEach(prefix => {
+  const btn = document.getElementById(prefix + 'SettingsBtn');
+  if (btn) btn.addEventListener('click', () => { initHandsfreeVoicePickers(); });
+});
 
 // ─── HANDSFREE: SINGLE STRATEGY ───────────────────────────────────────────────
 DS.createHandsfreeMode({

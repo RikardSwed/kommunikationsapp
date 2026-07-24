@@ -516,7 +516,54 @@ const DS = (function () {
       } catch (e) {}
     }
 
-    return { isNative, loadNativeVoices, voices, speak, stop, unlock, isRealVoice, diagnostics };
+    // Keeping the app awake between utterances.
+    // "Background Modes: Audio" only keeps an app running while audio is
+    // ACTUALLY playing. Our handsfree loop has deliberate silent gaps — the
+    // think pause and the pause between cards — and during those iOS sees an
+    // idle app and suspends the web view. Suspending freezes setTimeout, and
+    // since delay() is a chain of timers the loop never reaches the next card:
+    // the speech simply stops partway through, which is exactly the symptom.
+    // Looping a silent clip for the whole session keeps the audio session busy
+    // so the gaps no longer look like idleness.
+    let keepAliveEl = null;
+
+    function silentWavUrl(seconds) {
+      const rate = 8000, n = Math.floor(rate * seconds);
+      const bytes = new Uint8Array(44 + n);
+      const dv = new DataView(bytes.buffer);
+      const put = (o, s) => { for (let i = 0; i < s.length; i++) bytes[o + i] = s.charCodeAt(i); };
+      put(0, 'RIFF');  dv.setUint32(4, 36 + n, true);  put(8, 'WAVE');
+      put(12, 'fmt '); dv.setUint32(16, 16, true);
+      dv.setUint16(20, 1, true);  dv.setUint16(22, 1, true);
+      dv.setUint32(24, rate, true); dv.setUint32(28, rate, true);
+      dv.setUint16(32, 1, true);  dv.setUint16(34, 8, true);
+      put(36, 'data'); dv.setUint32(40, n, true);
+      bytes.fill(128, 44);          // 8-bit PCM silence is 128, not 0
+      let bin = '';
+      for (let i = 0; i < bytes.length; i++) bin += String.fromCharCode(bytes[i]);
+      return 'data:audio/wav;base64,' + btoa(bin);
+    }
+
+    function keepAlive(on) {
+      // Browsers do not need this, and starting stray audio there would be rude.
+      if (!ready) return;
+      try {
+        if (on) {
+          if (!keepAliveEl) {
+            keepAliveEl = new Audio(silentWavUrl(0.25));
+            keepAliveEl.loop = true;
+          }
+          // Called from the play button, so we are inside a user gesture.
+          const pr = keepAliveEl.play();
+          if (pr && pr.catch) pr.catch(() => {});
+        } else if (keepAliveEl) {
+          keepAliveEl.pause();
+          keepAliveEl.currentTime = 0;
+        }
+      } catch (e) {}
+    }
+
+    return { isNative, loadNativeVoices, voices, speak, stop, unlock, isRealVoice, diagnostics, keepAlive };
   })();
   // NOTE: do NOT write `DS.tts = TTS` here. Everything in this file runs inside
   // the IIFE that produces DS, so DS is still in its temporal dead zone at this
@@ -762,6 +809,9 @@ const DS = (function () {
 
       // iOS unlock (browser only — the native engine needs no gesture)
       TTS.unlock();
+      // Hold the audio session open for the whole session so iOS cannot
+      // suspend us during the silent pauses between cards.
+      TTS.keepAlive(true);
 
       mode.playing = true; mode.abort = false; mode.skipStep = false;
       hfInfoOpen = false; hideInfo();   // manual overlay yields to playback
@@ -848,6 +898,7 @@ const DS = (function () {
 
       mode.playing = false; mode.abort = false; mode.skipStep = false;
       TTS.stop();
+      TTS.keepAlive(false);
       clearTimeouts();
       updateButtons();
     }
@@ -862,6 +913,7 @@ const DS = (function () {
       // cleanup tail never runs.
       if (mode.delayResolve) { mode.delayResolve(); mode.delayResolve = null; }
       TTS.stop();
+      TTS.keepAlive(false);
       clearTimeouts();
       updateButtons();
     }
