@@ -379,14 +379,125 @@ const DS = (function () {
     }
   }
 
+  // ── Speech engine ──────────────────────────────────────────────
+  // Two backends behind one interface (v1.26.58).
+  //
+  // In a browser we use the Web Speech API. On iOS that API only ever exposes
+  // the pre-installed "compact" voices — Apple deliberately hides the Enhanced
+  // and Premium voices a user has downloaded — and it cannot keep talking with
+  // the screen off.
+  //
+  // In the native app we therefore hand the job to the Capacitor TextToSpeech
+  // plugin, which drives AVSpeechSynthesizer directly. That reaches every voice
+  // installed on the device, and asking for the 'playback' audio category is
+  // what lets handsfree continue when the screen locks.
+  //
+  // The web path is kept as the fallback, so the PWA and the desktop browser
+  // behave exactly as before.
+  const TTS = (function () {
+    function plugin() {
+      return (window.Capacitor && window.Capacitor.Plugins && window.Capacitor.Plugins.TextToSpeech) || null;
+    }
+    function isNative() {
+      return !!(window.Capacitor
+        && typeof window.Capacitor.isNativePlatform === 'function'
+        && window.Capacitor.isNativePlatform()
+        && plugin());
+    }
+
+    let nativeVoices = [];   // [{ index, name, lang }] — index is what speak() wants
+
+    // Apple ships a set of novelty "voices" (Bells, Boing, Bubbles, Jester,
+    // Trinoids, Whisper…) that sing or gargle rather than speak. They are
+    // useless for reading cards aloud and must never be picked by a fallback.
+    const NOVELTY = /^(albert|bad news|bahh|bells|boing|bubbles|cellos|good news|jester|junior|organ|superstar|trinoids|whisper|wobble|zarvox|deranged|hysterical|pipe organ|princess)$/i;
+    function isRealVoice(name) { return !NOVELTY.test(String(name || '').trim()); }
+
+    async function loadNativeVoices() {
+      const p = plugin();
+      if (!p) return [];
+      try {
+        const res = await p.getSupportedVoices();
+        const all = (res && res.voices) || [];
+        nativeVoices = all
+          .map((v, index) => ({ index, name: v.name || '', lang: v.lang || '' }))
+          .filter(v => /^en/i.test(v.lang) && isRealVoice(v.name));
+      } catch (e) {
+        nativeVoices = [];
+      }
+      return nativeVoices;
+    }
+
+    function voices() { return nativeVoices; }
+
+    function speak(text, opts) {
+      const rate = (opts && opts.rate) || 1;
+      const pick = opts ? opts.voice : null;
+      const p = plugin();
+
+      if (isNative() && p) {
+        const req = {
+          text,
+          lang: 'en-US',
+          rate,
+          pitch: 1.0,
+          volume: 1.0,
+          // 'playback' keeps audio alive when the screen locks; 'ambient'
+          // would be silenced. This is the background-audio switch.
+          category: 'playback',
+        };
+        const chosen = nativeVoices.find(v => String(v.index) === String(pick));
+        if (chosen) req.voice = chosen.index;
+        // The plugin resolves when the utterance finishes, which is exactly
+        // what the caller awaits. Never reject — a failed line must not stall
+        // the playback loop.
+        return p.speak(req).catch(() => {});
+      }
+
+      return new Promise(resolve => {
+        const utt = new SpeechSynthesisUtterance(text);
+        utt.lang = 'en-US';
+        utt.rate = rate;
+        const voice = pickVoice(pick);
+        if (voice) utt.voice = voice;
+        utt.onend = () => resolve();
+        utt.onerror = () => resolve();
+        speechSynthesis.speak(utt);
+      });
+    }
+
+    function stop() {
+      const p = plugin();
+      if (isNative() && p) { try { p.stop(); } catch (e) {} return; }
+      try { speechSynthesis.cancel(); } catch (e) {}
+    }
+
+    // Browsers need a user-gesture-time utterance before audio will play.
+    // The native path has no such restriction.
+    function unlock() {
+      if (isNative()) return;
+      try {
+        const u = new SpeechSynthesisUtterance(' ');
+        u.volume = 0;
+        speechSynthesis.speak(u);
+      } catch (e) {}
+    }
+
+    return { isNative, loadNativeVoices, voices, speak, stop, unlock, isRealVoice };
+  })();
+  DS.tts = TTS;
+
   function pickVoice(gender) {
     const voices = cachedVoices.length ? cachedVoices : speechSynthesis.getVoices();
-    const en = voices.filter(v => v.lang && v.lang.startsWith('en'));
+    // Only ever consider real speaking voices — without this filter a missing
+    // preferred name could fall through to Albert or Bad News and read the
+    // cards in a novelty voice.
+    const en = voices.filter(v => v.lang && v.lang.startsWith('en') && TTS.isRealVoice(v.name));
     if (!en.length) return null;
     if (gender === 'male') {
       const pref = ['Daniel', 'Aaron', 'Fred', 'Gordon', 'Thomas', 'Arthur', 'Oliver', 'Jamie'];
       for (const name of pref) { const v = en.find(v => v.name.includes(name)); if (v) return v; }
-      return en.find(v => !v.name.match(/Samantha|Victoria|Karen|Moira|Fiona|Allison|Ava|Susan|Zoe|Emma/i)) || en[0];
+      return en.find(v => !v.name.match(/Samantha|Victoria|Karen|Moira|Fiona|Allison|Ava|Susan|Zoe|Emma|Tessa|Kathy|Serena/i)) || en[0];
     }
     const pref = ['Samantha', 'Ava', 'Allison', 'Victoria', 'Karen', 'Moira'];
     for (const name of pref) { const v = en.find(v => v.name.includes(name)); if (v) return v; }
@@ -493,18 +604,9 @@ const DS = (function () {
 
     // ── TTS primitives (per-instance state, shared implementation) ────────
     function speak(text, cfg2) {
-      return new Promise(resolve => {
-        if (mode.abort || !text) { resolve(); return; }
-        if (mode.skipStep) { mode.skipStep = false; resolve(); return; }
-        const utt = new SpeechSynthesisUtterance(text);
-        utt.lang = 'en-US';
-        utt.rate = cfg2.rate;
-        const voice = pickVoice(cfg2.voiceGender);
-        if (voice) utt.voice = voice;
-        utt.onend = () => resolve();
-        utt.onerror = () => resolve();
-        speechSynthesis.speak(utt);
-      });
+      if (mode.abort || !text) return Promise.resolve();
+      if (mode.skipStep) { mode.skipStep = false; return Promise.resolve(); }
+      return TTS.speak(text, { rate: cfg2.rate, voice: cfg2.voiceGender });
     }
 
     function delay(ms) {
@@ -620,10 +722,8 @@ const DS = (function () {
       if (mode.playing) { stop(); return; }
       if (!mode.groups.length) return;
 
-      // iOS unlock
-      const unlock = new SpeechSynthesisUtterance(' ');
-      unlock.volume = 0;
-      speechSynthesis.speak(unlock);
+      // iOS unlock (browser only — the native engine needs no gesture)
+      TTS.unlock();
 
       mode.playing = true; mode.abort = false; mode.skipStep = false;
       hfInfoOpen = false; hideInfo();   // manual overlay yields to playback
@@ -709,7 +809,7 @@ const DS = (function () {
       }
 
       mode.playing = false; mode.abort = false; mode.skipStep = false;
-      speechSynthesis.cancel();
+      TTS.stop();
       clearTimeouts();
       updateButtons();
     }
@@ -723,7 +823,7 @@ const DS = (function () {
       // the play coroutine stays suspended on that promise forever and its
       // cleanup tail never runs.
       if (mode.delayResolve) { mode.delayResolve(); mode.delayResolve = null; }
-      speechSynthesis.cancel();
+      TTS.stop();
       clearTimeouts();
       updateButtons();
     }
@@ -736,7 +836,7 @@ const DS = (function () {
         return;
       }
       mode.skipStep = true;
-      speechSynthesis.cancel();
+      TTS.stop();
       clearTimeouts();
       if (mode.delayResolve) { mode.delayResolve(); mode.delayResolve = null; }
     }
@@ -753,7 +853,7 @@ const DS = (function () {
       if (mode.ii === 0 && mode.gi > 0) mode.gi--;
       mode.ii = 0;
       mode.abort = true;
-      speechSynthesis.cancel();
+      TTS.stop();
       clearTimeouts();
       if (mode.delayResolve) { mode.delayResolve(); mode.delayResolve = null; }
       setTimeout(() => {

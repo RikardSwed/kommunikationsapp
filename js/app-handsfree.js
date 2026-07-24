@@ -35,10 +35,59 @@ function applyHfInputCounterVisibility() {
 // Voice debug helper
 const _hfVoiceDebugBtn = document.getElementById('hfVoiceDebugBtn');
 if (_hfVoiceDebugBtn) _hfVoiceDebugBtn.addEventListener('click', () => {
+  const native = DS.tts && DS.tts.isNative() ? DS.tts.voices() : null;
+  if (native && native.length) {
+    alert('Available English voices (native engine):\n\n'
+      + native.map(v => v.name + '  —  ' + v.lang).join('\n'));
+    return;
+  }
   const voices = speechSynthesis.getVoices();
-  const en = voices.filter(v => v.lang.startsWith('en')).map(v => v.name).join('\n');
-  alert('Available English voices:\n\n' + (en || 'None loaded yet — try again in a moment'));
+  const en = voices.filter(v => v.lang.startsWith('en'))
+                   .filter(v => !DS.tts || DS.tts.isRealVoice(v.name))
+                   .map(v => v.name).join('\n');
+  alert('Available English voices (browser engine):\n\n' + (en || 'None loaded yet — try again in a moment'));
 });
+
+// ── Voice pickers (v1.26.58) ────────────────────────────────────────────
+// In the browser the Voice setting stays a plain Female / Male choice, because
+// the Web Speech API on iOS only offers a couple of usable voices anyway.
+// In the native app we can list every English voice actually installed on the
+// device — including the Enhanced and Premium ones downloaded under Settings →
+// Accessibility → Spoken Content → Voices — so the same control becomes a real
+// picker. The choice is stored so it survives leaving the screen.
+const HF_VOICE_SELECTS = ['hfVoice', 'hfMemVoice', 'hfChallVoice', 'hfFlowVoice', 'hfMindVoice', 'hfCollVoice'];
+const HF_VOICE_KEY = 'ds_hf_voice';
+
+async function initHandsfreeVoicePickers() {
+  if (!DS.tts || !DS.tts.isNative()) return;
+  const voices = await DS.tts.loadNativeVoices();
+  if (!voices.length) return;
+
+  const saved = localStorage.getItem(HF_VOICE_KEY);
+  HF_VOICE_SELECTS.forEach(id => {
+    const sel = document.getElementById(id);
+    if (!sel) return;
+    sel.innerHTML = voices
+      .map(v => `<option value="${v.index}">${v.name} (${v.lang})</option>`)
+      .join('');
+    // Restore the saved voice, else prefer a female-sounding default so the
+    // app still sounds the way it did before.
+    const fallback = voices.find(v => /samantha|ava|allison|karen|serena|moira|tessa/i.test(v.name));
+    const want = (saved !== null && voices.some(v => String(v.index) === saved))
+      ? saved
+      : String((fallback || voices[0]).index);
+    sel.value = want;
+    sel.addEventListener('change', () => {
+      localStorage.setItem(HF_VOICE_KEY, sel.value);
+      // Keep every handsfree mode on the same voice.
+      HF_VOICE_SELECTS.forEach(other => {
+        const o = document.getElementById(other);
+        if (o && o !== sel) o.value = sel.value;
+      });
+    });
+  });
+}
+initHandsfreeVoicePickers();
 
 // ─── HANDSFREE: SINGLE STRATEGY ───────────────────────────────────────────────
 DS.createHandsfreeMode({
