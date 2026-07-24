@@ -7,10 +7,10 @@
   <meta name="mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="default" />
   <meta name="apple-mobile-web-app-title" content="Deckstack" />
-  <link rel="manifest" href="manifest.json?v=12661" />
+  <link rel="manifest" href="manifest.json?v=12662" />
   <title>Deckstack</title>
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="stylesheet" href="css/style.css?v=12661" />
+  <link rel="stylesheet" href="css/style.css?v=12662" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
 </head>
 <body>
@@ -404,19 +404,31 @@
 
     <div class="upgrade-hero">
       <div class="upgrade-hero-title">Deckstack Pro</div>
-      <div class="upgrade-hero-sub">Everything in one unlock</div>
+      <div class="upgrade-hero-sub">More to train with, and every training mode</div>
     </div>
 
-    <!-- PRICE CARD -->
+    <!-- PLANS -->
     <div class="upgrade-price-card">
-      <div class="upgrade-price-row">
-        <span class="upgrade-price">149 kr</span>
-        <span class="upgrade-price-note">one-time purchase</span>
+      <div class="upgrade-trial">
+        <div class="upgrade-trial-title">Start with a free week</div>
+        <div class="upgrade-trial-sub">Full Pro access for 7 days. Cancel any time before it ends.</div>
       </div>
-      <button class="upgrade-cta-btn" id="upgradeCtaBtn">
-        Get Pro
-      </button>
+      <button class="upgrade-cta-btn" id="upgradeCtaBtn">Start 1 week free trial</button>
       <div class="upgrade-cta-sub">Payment not yet available · coming soon</div>
+
+      <div class="upgrade-plans">
+        <div class="upgrade-plan">
+          <div class="upgrade-plan-name">One year</div>
+          <div class="upgrade-plan-price">149 kr</div>
+          <div class="upgrade-plan-note">Renews yearly</div>
+        </div>
+        <div class="upgrade-plan upgrade-plan--alt">
+          <div class="upgrade-plan-name">Lifetime</div>
+          <div class="upgrade-plan-price">499 kr</div>
+          <div class="upgrade-plan-note">Pay once</div>
+        </div>
+      </div>
+      <div class="upgrade-plan-foot">After the trial, choose the plan that suits you.</div>
     </div>
 
     <!-- WHAT YOU GET -->
@@ -426,29 +438,29 @@
       <div class="upgrade-feature-row">
         <div class="upgrade-feature-icon"><i class="ti ti-cards" aria-hidden="true"></i></div>
         <div class="upgrade-feature-text">
-          <div class="upgrade-feature-name">All packs</div>
-          <div class="upgrade-feature-desc">Humour, Teasing &amp; Playfulness, Criticism &amp; Correction — plus all future packs</div>
+          <div class="upgrade-feature-name">More packs</div>
+          <div class="upgrade-feature-desc">Humour, Teasing &amp; Playfulness, Criticism &amp; Correction and more open up alongside the free ones</div>
         </div>
       </div>
       <div class="upgrade-feature-row">
         <div class="upgrade-feature-icon"><i class="ti ti-trophy" aria-hidden="true"></i></div>
         <div class="upgrade-feature-text">
-          <div class="upgrade-feature-name">All training modes</div>
-          <div class="upgrade-feature-desc">Challenges, Mindset, Collections and all Handsfree variants</div>
+          <div class="upgrade-feature-name">Every training mode</div>
+          <div class="upgrade-feature-desc">Sequences, Challenges, Mindset and Collections, plus the Handsfree version of all six</div>
         </div>
       </div>
       <div class="upgrade-feature-row">
-        <div class="upgrade-feature-icon"><i class="ti ti-layout-grid" aria-hidden="true"></i></div>
+        <div class="upgrade-feature-icon"><i class="ti ti-layers-intersect" aria-hidden="true"></i></div>
         <div class="upgrade-feature-text">
-          <div class="upgrade-feature-name">Programs</div>
-          <div class="upgrade-feature-desc">Structured learning paths — coming later this year</div>
+          <div class="upgrade-feature-name">More to practise per strategy</div>
+          <div class="upgrade-feature-desc">The Pro input bundle adds further situations to each strategy, so you keep meeting new material</div>
         </div>
       </div>
       <div class="upgrade-feature-row upgrade-feature-row--last">
-        <div class="upgrade-feature-icon"><i class="ti ti-refresh" aria-hidden="true"></i></div>
+        <div class="upgrade-feature-icon"><i class="ti ti-layout-grid" aria-hidden="true"></i></div>
         <div class="upgrade-feature-text">
-          <div class="upgrade-feature-name">All future content</div>
-          <div class="upgrade-feature-desc">New packs and updates included, no extra cost</div>
+          <div class="upgrade-feature-name">More programs</div>
+          <div class="upgrade-feature-desc">Structured paths that unlock a step at a time as you pass each checkpoint</div>
         </div>
       </div>
     </div>
@@ -473,7 +485,7 @@
         <div class="upgrade-compare-check upgrade-compare-check--pro"><i class="ti ti-check" aria-hidden="true"></i></div>
       </div>
       <div class="upgrade-compare-row">
-        <div class="upgrade-compare-item">Humour, Teasing, Criticism</div>
+        <div class="upgrade-compare-item">Humour, Teasing, Criticism and more</div>
         <div class="upgrade-compare-check upgrade-compare-check--no"><i class="ti ti-x" aria-hidden="true"></i></div>
         <div class="upgrade-compare-check upgrade-compare-check--pro"><i class="ti ti-check" aria-hidden="true"></i></div>
       </div>
@@ -483,7 +495,12 @@
         <div class="upgrade-compare-check upgrade-compare-check--pro"><i class="ti ti-check" aria-hidden="true"></i></div>
       </div>
       <div class="upgrade-compare-row">
-        <div class="upgrade-compare-item">Challenges, Mindset, Collections</div>
+        <div class="upgrade-compare-item">Challenges, Mindset, Collections, Sequences</div>
+        <div class="upgrade-compare-check upgrade-compare-check--no"><i class="ti ti-x" aria-hidden="true"></i></div>
+        <div class="upgrade-compare-check upgrade-compare-check--pro"><i class="ti ti-check" aria-hidden="true"></i></div>
+      </div>
+      <div class="upgrade-compare-row">
+        <div class="upgrade-compare-item">Pro input bundle on every strategy</div>
         <div class="upgrade-compare-check upgrade-compare-check--no"><i class="ti ti-x" aria-hidden="true"></i></div>
         <div class="upgrade-compare-check upgrade-compare-check--pro"><i class="ti ti-check" aria-hidden="true"></i></div>
       </div>
@@ -494,7 +511,7 @@
       </div>
     </div>
 
-    <div class="upgrade-footer">Pricing and availability subject to change before launch.</div>
+    <div class="upgrade-footer">Some packs and programs sit outside Pro and are bought separately. Pricing and availability subject to change before launch.</div>
 
   </div>
 </div>
@@ -2219,19 +2236,19 @@
   </button>
 </div>
 
-<script src="js/data.js?v=12661"></script>
-<script src="js/tagsData.js?v=12661"></script>
-<script src="js/programsData.js?v=12661"></script>
-<script src="js/challengesData.js?v=12661"></script>
-<script src="js/mindsetData.js?v=12661"></script>
-<script src="js/multiStepData.js?v=12661"></script>
-<script src="js/memorizeData.js?v=12661"></script>
-<script src="js/mode-engine.js?v=12661"></script>
-<script src="js/app-core.js?v=12661"></script>
-<script src="js/app-modes.js?v=12661"></script>
-<script src="js/app-handsfree.js?v=12661"></script>
-<script src="js/app-system.js?v=12661"></script>
-<script src="js/app-ui.js?v=12661"></script>
+<script src="js/data.js?v=12662"></script>
+<script src="js/tagsData.js?v=12662"></script>
+<script src="js/programsData.js?v=12662"></script>
+<script src="js/challengesData.js?v=12662"></script>
+<script src="js/mindsetData.js?v=12662"></script>
+<script src="js/multiStepData.js?v=12662"></script>
+<script src="js/memorizeData.js?v=12662"></script>
+<script src="js/mode-engine.js?v=12662"></script>
+<script src="js/app-core.js?v=12662"></script>
+<script src="js/app-modes.js?v=12662"></script>
+<script src="js/app-handsfree.js?v=12662"></script>
+<script src="js/app-system.js?v=12662"></script>
+<script src="js/app-ui.js?v=12662"></script>
 
 
 <!-- CHECKPOINT SCREEN -->
