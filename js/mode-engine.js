@@ -485,7 +485,12 @@ const DS = (function () {
 
     return { isNative, loadNativeVoices, voices, speak, stop, unlock, isRealVoice };
   })();
-  DS.tts = TTS;
+  // NOTE: do NOT write `DS.tts = TTS` here. Everything in this file runs inside
+  // the IIFE that produces DS, so DS is still in its temporal dead zone at this
+  // point and touching it throws "Cannot access 'DS' before initialization",
+  // which aborts the whole module and leaves the app with no training modes at
+  // all. The engine is exported on the returned object instead — see `tts:`
+  // near the bottom.
 
   function pickVoice(gender) {
     const voices = cachedVoices.length ? cachedVoices : speechSynthesis.getVoices();
@@ -1019,6 +1024,7 @@ const DS = (function () {
     loadGroups,
     shuffle,
     pickVoice,
+    tts: TTS,
     attachSwipe,
     // Set by app-modes.js — opens the shared training settings overlay
     openTrainingSettings: function () {
