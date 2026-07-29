@@ -1,7 +1,7 @@
 // editor-core.js — Deckstack Pack Editor
 // Depends on: data.js, challengesData.js, mindsetData.js, multiStepData.js, memorizeData.js
 
-const EDITOR_VERSION = 'v1.11.0';
+const EDITOR_VERSION = 'v1.12.0';
 const STORAGE_KEY    = 'ds_editor_packs';
 const ACTIVE_KEY     = 'ds_editor_active';
 
@@ -534,7 +534,7 @@ function _parsePack(lines) {
   function pushStrat() {
     pushScenario();
     if (!currentStrat) return;
-    if (inExplanation) { currentStrat.description = explanationLines.join('\n').trim(); inExplanation = false; explanationLines = []; }
+    flushExplanation();
     modeBuffers[currentModeId].push(currentStrat);
     currentStrat = null;
   }
@@ -552,9 +552,39 @@ function _parsePack(lines) {
     currentScenario = { bundle: currentBundle === 'default' ? 'free' : currentBundle, situation: '', steps: [] };
   }
 
+  // ── Multi-paragraph descriptions (v1.26.63) ────────────────────────────────
+  // An **Explanation:** block now ends only at a STRUCTURAL line. Blank lines
+  // are kept, so a description can carry real paragraphs, bullet lists and
+  // numbered sub-categories — the same shape the hand-written Fogging
+  // description has in data.js. (.card-info-text is white-space: pre-wrap,
+  // so the blank lines render exactly as written.)
+  const EXPLANATION_ENDERS = [
+    /^BUNDLE IMPORT:/i, /^PACK:/i, /^TAGS:/i, /^TOPICS?:/i, /^MODE:/i,
+    /^BUNDLE:/i, /^GUIDE\s+(FRONT|BACK):/i,
+    /^##\s+(?:Strategy|Category|Combo|Collection|Mindset):/i,
+    /^###\s+Scenario:/i, /^-\s/, /^<!--/,
+    /^PROGRAM:/i, /^DESCRIPTION:/i, /^ICON:/i, /^SECTION:/i,
+    /^CHECKPOINT:/i, /^TIME:/i, /^DRAW:/i,
+  ];
+  const endsExplanation = l => EXPLANATION_ENDERS.some(re => re.test(l));
+
+  function flushExplanation() {
+    if (!inExplanation) return;
+    inExplanation = false;
+    if (currentStrat) {
+      currentStrat.description = explanationLines.join('\n')
+        .replace(/\n{3,}/g, '\n\n')   // collapse accidental double blank lines
+        .trim();
+    }
+    explanationLines = [];
+  }
+
   for (const raw of lines) {
     const line = raw.trim();
-    if (!line) { if (inExplanation) { inExplanation = false; currentStrat && (currentStrat.description = explanationLines.join('\n').trim()); } continue; }
+    // Blank line: keep it as a paragraph break instead of ending the block.
+    if (!line) { if (inExplanation) explanationLines.push(''); continue; }
+    // Any structural line closes an open explanation before it is handled.
+    if (inExplanation && endsExplanation(line)) flushExplanation();
 
     if (/^BUNDLE IMPORT:/i.test(line)) { isBundleImport = true; bundleImportTarget = line.replace(/^BUNDLE IMPORT:/i,'').trim().toLowerCase(); continue; }
     if (/^PACK:/i.test(line)) { packName = line.replace(/^PACK:/i,'').trim(); continue; }
@@ -627,7 +657,7 @@ function _parsePack(lines) {
       continue;
     }
 
-    if (inExplanation && currentStrat && !line.startsWith('-')) { explanationLines.push(line); continue; }
+    if (inExplanation && currentStrat) { explanationLines.push(line); continue; }
 
     // Standard card (non-sequences modes).
     // Optional per-card guides: append | Guide Front: ... and/or | Guide Back: ...

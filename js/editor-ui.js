@@ -987,7 +987,7 @@ function showSyntaxGuide() {
     '<li><code>TOPICS: Topic One, Topic Two</code> — optional, and separate from <code>TAGS:</code>. Topics decide which group the pack appears under in the Library&rsquo;s Topics tab. Names are matched against the existing topics ignoring case, by title or by id, so <code>Humour &amp; Playfulness</code> and <code>humour</code> both find the same one. A name that matches nothing creates a NEW topic, and the import tells you it did. Works inside a program section too. Singular <code>TOPIC:</code> is also accepted.</li>' +
     '<li><code>MODE:</code> — one of: <code>single</code>, <code>collections</code>, <code>memorize</code>, <code>sequences</code>, <code>challenges</code>, <code>mindset</code>. Only include modes you need.</li>' +
     '<li><code>## Strategy: Name</code> — starts a new strategy. Use <code>## Category:</code> for challenges, <code>## Combo:</code> for sequences, <code>## Collection:</code> for collections, <code>## Mindset:</code> for mindset.</li>' +
-    '<li><code>**Explanation:**</code> — descriptive text explaining the strategy.</li>' +
+    '<li><code>**Explanation:**</code> — descriptive text explaining the strategy. It can run over <strong>several paragraphs</strong>: every following line belongs to the description until a structural line (<code>##</code>, <code>###</code>, <code>MODE:</code>, <code>BUNDLE:</code>, <code>GUIDE</code>, or a <code>-</code> card line). <strong>Blank lines are kept</strong>, so you can use paragraphs, bullet lists and numbered sub-types. Use <code>&bull;</code> for bullets — a line starting with <code>-</code> is read as a card. A good description follows this shape: one-line definition (say what it is NOT too) &rarr; why it works &rarr; typical phrases &rarr; numbered sub-types <strong>each with its own example</strong> &rarr; a closing <code>Mindset:</code> line.</li>' +
     '<li><code>GUIDE FRONT: text</code> / <code>GUIDE BACK: text</code> — mode-level guide text, placed after the <code>MODE:</code> line. Shown above every card front/back in that mode (and read aloud in handsfree).</li>' +
     '<li><code>- Guide Front: text</code> / <code>- Guide Back: text</code> — exception for one strategy, placed after its <code>## Strategy:</code> line. Overrides the mode default for that strategy only.</li>' +
     '<li>Per-card exception — append to any card or step line (either or both, any order):<br>' +
@@ -1040,7 +1040,21 @@ function showSyntaxGuide() {
     'GUIDE BACK: A possible response...',
     '',
     '## Strategy: The Broken Record',
-    '**Explanation:** Calmly repeat your position without escalating. Useful when someone keeps pushing back. Stay neutral and consistent — not louder or more emotional.',
+    '**Explanation:** Calmly repeat your position without escalating — without arguing the details, raising your voice, or offering new reasons.',
+    '',
+    'You are a broken record: there is nothing new to push against, so the pressure runs out of road.',
+    '',
+    'Typical broken record lines:',
+    '• \"I understand, but my answer is still no.\"',
+    '• \"That does not work for me.\"',
+    '• \"I have made my decision.\"',
+    '',
+    'Three ways to repeat:',
+    '1. Repeat it plainly — \"My answer is still no.\"',
+    '2. Validate first, then repeat — \"I hear you, and it is still no.\"',
+    '3. Repeat and close — \"I have decided. Let us leave it there.\"',
+    '',
+    'Mindset: you do not owe anyone a new reason. Repeating is not rude — it is what keeps you calm.',
     '- Guide Front: Use Broken Record when someone keeps pushing.',
     '',
     'BUNDLE: free',

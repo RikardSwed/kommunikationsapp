@@ -5,7 +5,7 @@
 // (DS.createCardMode / DS.createHandsfreeMode) and are declared in
 // app-modes.js and app-handsfree.js.
 
-const VERSION = 'v1.26.62';
+const VERSION = 'v1.26.63';
 
 // Keep every version label in the UI in sync with VERSION (v1.26.44).
 // The hardcoded strings in index.html are only fallbacks — this runs at
@@ -584,6 +584,22 @@ document.getElementById('modeNextBtn') && document.getElementById('modeNextBtn')
     });
   }
 
+  // Set the toggle to a specific variant WITHOUT animation. Used when
+  // returning from a training screen so the mode screen shows the same
+  // variant you were just in (handsfree stays handsfree). v1.26.63
+  function setState(on) {
+    if (on === hfActive) return;
+    inners.forEach(el => el.classList.add('no-transition'));
+    hfActive = on;
+    inners.forEach(el => el.classList.toggle('flipped', on));
+    toggle.classList.toggle('active', on);
+    label.textContent = on ? 'Switch to Standard' : 'Switch to Handsfree';
+    requestAnimationFrame(() => {
+      inners.forEach(el => el.classList.remove('no-transition'));
+    });
+  }
+  window._setHfToggle = setState;
+
   toggle.addEventListener('click', flip);
   toggle.addEventListener('touchend', e => { e.preventDefault(); flip(); }, { passive: false });
 
@@ -607,6 +623,11 @@ document.getElementById('modeNextBtn') && document.getElementById('modeNextBtn')
 function closeTraining(screenId) {
   navFromTraining(screenId);
   document.getElementById('modeCollectionName').textContent = activeCollectionLabel;
+  // Leave the mode screen on the same variant you were just in, so closing a
+  // handsfree mode keeps handsfree selected and you can pick another handsfree
+  // mode straight away (and standard likewise). v1.26.63
+  const m = window.DS && DS.modesByScreen && DS.modesByScreen[screenId];
+  if (m && window._setHfToggle) window._setHfToggle(m.kind === 'handsfree');
 }
 
 // ── FEEDBACK STORAGE KEYS ─────────────────────────────────────────────────────
