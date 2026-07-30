@@ -78,34 +78,64 @@ const packTags = {
 // ─── TOPICS ──────────────────────────────────────────────────────────
 // Data source for the Library "Topics" tab (rendered by renderTopics in
 // app-core.js). Each topic groups one or more packs by theme; a pack may
-// appear under several topics (recommendation: max 2). `packs` holds pack
+// appear under several topics (recommendation: max 3 — a pack that needs
+// more than three is usually defined too broadly). `packs` holds pack
 // keys only — each card's name/meta/label is mirrored from its canonical
 // card in #libTabPacks, so the Packs and Topics tabs can never drift.
-// An empty `packs: []` renders as a "No packs yet" placeholder group.
-// Order here = display order in the tab. Edit via the Pack Editor's topic
-// field (export regenerates this array) or by hand.
+// An empty `packs: []` renders as a "No packs yet" placeholder group, and
+// is hidden entirely below the Complete level — so an empty topic is a
+// free placeholder for material that is planned but not written yet.
+//
+// DISPLAY ORDER: renderTopics() currently sorts alphabetically by `title`,
+// so array order does NOT affect what the user sees. The array below is
+// nevertheless kept in a deliberate beginner-to-advanced sequence, so a
+// future "suggested order" sort can use the index without a data migration.
+// Other sorts worth preparing for: difficulty, and time spent per pack
+// (least-practised first). Both would need a per-topic or per-pack field
+// that does not exist yet.
+//
+// Restructured v1.26.64 to absorb the Speaking Strategies Handbook material
+// (8 chapters, 46 parts). Retired: conversation, transitions and dynamics
+// merged into flowtransitions/interruptions; rapport split into listening
+// and depth; observation folded into explaining; emotionregulation and
+// emotionalboundaries merged into emotions and boundaries.
 const TOPICS = [
-  { id: 'assertiveness',      title: 'Assertiveness',                             packs: ['assertive'] },
-  { id: 'humour',             title: 'Humour & Playfulness',                      packs: ['humour', 'teasing', 'selfhumour', 'humourpractise', 'playfulrefusals'] },
-  { id: 'criticism',          title: 'Criticism & Correction',                    packs: ['criticism'] },
-  { id: 'conversation',       title: 'Conversation & Flow',                       packs: ['conversational', 'conversationaldepth'] },
-  { id: 'compliments',        title: 'Compliments & Validation',                  packs: ['compliments'] },
-  { id: 'storytelling',       title: 'Storytelling & Explanation',                packs: ['storytelling'] },
-  { id: 'questions',          title: 'Questions & Conversation Starters',         packs: ['startingconnecting'] },
-  { id: 'transitions',        title: 'Transitions & Flow',                        packs: ['transitions'] },
-  { id: 'emotions',           title: 'Emotions & Emotional Regulation',           packs: [] },
-  { id: 'opinions',           title: 'Opinions & Argumentation',                  packs: ['influenceframing'] },
-  { id: 'boundaries',         title: 'Boundaries & Refusal',                      packs: ['playfulrefusals', 'thehappyno', 'theregretfulno'] },
-  { id: 'rapport',            title: 'Rapport & Connection',                      packs: ['listeningresponding'] },
-  { id: 'bodyvoice',          title: 'Body Language & Voice',                     packs: [] },
-  { id: 'giving',             title: 'Giving & Receiving',                        packs: [] },
-  { id: 'observation',        title: 'Observation & Description',                 packs: [] },
-  { id: 'dynamics',           title: 'Conversation Dynamics',                     packs: ['speakingupingroups'] },
-  { id: 'meetingsgroups',     title: 'Meetings & Groups',                         packs: ['speakingupingroups'] },
-  { id: 'selfpresentation',   title: 'Self-Presentation',                         packs: [] },
-  { id: 'flirt',              title: 'Flirting',                                  packs: [] },
-  { id: 'emotionalboundaries',title: 'Emotional Refusal',                         packs: [] },
-  { id: 'leadership',         title: 'Leadership & Relationship Dynamics',        packs: [] },
-  { id: 'emotionregulation',  title: 'Emotional Regulation in Relationships',     packs: [] },
-  { id: 'relationshipcomm',   title: 'Communication in Relationships',            packs: [] },
+  // ── Getting a conversation going ──────────────────────────────────
+  { id: 'startingconversations', title: 'Starting Conversations',        packs: ['startingconnecting'] },
+  { id: 'questions',             title: 'Questions & Curiosity',         packs: [] },
+  { id: 'flowtransitions',       title: 'Flow & Transitions',            packs: ['conversational', 'transitions'] },
+  { id: 'endingconversations',   title: 'Ending Conversations',          packs: [] },
+
+  // ── Being with the other person ───────────────────────────────────
+  { id: 'listening',             title: 'Listening & Understanding',     packs: ['listeningresponding'] },
+  { id: 'depth',                 title: 'Depth & Connection',            packs: ['conversationaldepth'] },
+
+  // ── Holding the floor ─────────────────────────────────────────────
+  { id: 'storytelling',          title: 'Storytelling',                  packs: ['storytelling'] },
+  { id: 'explaining',            title: 'Explaining & Describing',       packs: [] },
+  { id: 'interruptions',         title: 'Interruptions & Speaking Up',   packs: ['speakingupingroups'] },
+
+  // ── Giving and taking it ──────────────────────────────────────────
+  { id: 'praise',                title: 'Praise & Compliments',          packs: ['compliments'] },
+  { id: 'feedback',              title: 'Feedback & Criticism',          packs: ['criticism'] },
+
+  // ── Standing your ground ──────────────────────────────────────────
+  { id: 'opinions',              title: 'Opinions & Argumentation',      packs: ['influenceframing'] },
+  { id: 'persuasion',            title: 'Persuasion & Negotiation',      packs: ['influenceframing'] },
+  { id: 'assertiveness',         title: 'Assertiveness & Pressure',      packs: ['assertive'] },
+  { id: 'boundaries',            title: 'Boundaries & Saying No',        packs: ['playfulrefusals', 'thehappyno', 'theregretfulno'] },
+
+  // ── The hard end ──────────────────────────────────────────────────
+  { id: 'emotions',              title: 'Emotions & Regulation',         packs: [] },
+
+  // ── Lightness ─────────────────────────────────────────────────────
+  { id: 'humour',                title: 'Humour & Banter',               packs: ['humour', 'teasing', 'selfhumour', 'humourpractise', 'playfulrefusals'] },
+
+  // ── Placeholders: no material yet, hidden below Complete ──────────
+  { id: 'bodyvoice',             title: 'Body Language & Voice',         packs: [] },
+  { id: 'giving',                title: 'Giving & Receiving',            packs: [] },
+  { id: 'selfpresentation',      title: 'Self-Presentation',             packs: [] },
+  { id: 'flirt',                 title: 'Flirting',                      packs: [] },
+  { id: 'leadership',            title: 'Leadership',                    packs: [] },
+  { id: 'relationshipcomm',      title: 'Communication in Relationships',packs: [] },
 ];
