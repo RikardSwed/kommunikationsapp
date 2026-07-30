@@ -881,7 +881,89 @@ const collections = {
         { q: "You fix a minor tech problem for someone.", a: '"Yes, I\'m basically an engineer now. No, I won\'t be taking questions."', bundle: 'pro' },
       ]
     }
-  ]
+  ],
+  setupstatement: [
+    {
+      name: "Opinion Setup",
+      guideFront: "You want to join in and invite them too. Say your bit, then ask.",
+      guideBack: "One way to say it — a short statement, then a question on the same thing.",
+      description: "Say what you think about something, then ask what they think. Sharing a small opinion first gives the other person something to react to, so they don't have to start from nothing. Example: \"I think this playlist is great — what about you?\"\n\nThree strengths of opinion, from safest to boldest:\n1. Mild and easy to agree with — \"This coffee is better than it has any right to be.\"\n2. A clear preference — \"I think the second half was much stronger.\"\n3. Mildly contrary — \"I seem to be the only person who liked the ending.\"\n\nKeep it about something present and low stakes. The opinion is a door, not a position you have to defend.\n\nMindset: you are not being judged on the opinion. Its only job is to give them something to push against instead of a blank page.",
+      inputs: [
+        { q: "You're both standing near the snacks at a party and no one has spoken.", a: "\"These little sausage rolls are the best thing here. What have you tried?\"", bundle: 'free' },
+        { q: "Waiting for a class to start next to someone you don't know.", a: "\"I actually think this course is better than people say. Are you enjoying it?\"", bundle: 'free' },
+        { q: "A film just finished and the room is quiet.", a: "\"I liked that more than I expected to. What did you think?\"", bundle: 'free' },
+        { q: "You're in a queue next to someone, both looking at the menu.", a: "\"The coffee here is underrated, honestly. Do you have a usual?\"", bundle: 'free' },
+        { q: "Someone sits down next to you at a meetup.", a: "\"I think these evenings are actually worth coming to. Is this your first?\"", bundle: 'free' },
+        { q: "A colleague mentions a show everyone's watching.", a: "\"I'm the one person who found it a bit slow. Are you into it?\"", bundle: 'pro' },
+        { q: "You're at a gig waiting for the support act.", a: "\"Support bands are half the reason I come, honestly. Do you know them?\"", bundle: 'pro' },
+        { q: "Small talk stalls at a work lunch.", a: "\"I think remote Fridays are the best thing we changed. How do you find them?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Purpose Setup",
+      guideFront: "You want to join in and invite them too. Say your bit, then ask.",
+      guideBack: "One way to say it — a short statement, then a question on the same thing.",
+      description: "Say why you're here or what you're after, then ask them the same. It's an easy opener because everyone in the room has a reason to be there. Example: \"I came to meet a few new people — what brought you?\"\n\nThree kinds of purpose you can name:\n1. The practical reason — \"I signed up to get better at presenting.\"\n2. The social reason — \"I came to meet a few new people.\"\n3. The honest half-reason — \"A friend dragged me, if I'm honest.\"\n\nThe honest half-reason is often the warmest, because it gives them permission to be equally unpolished about theirs.\n\nMindset: everyone in the room has a reason to be there, which makes this the setup that never fails to have a matching answer.",
+      inputs: [
+        { q: "First time at a language exchange evening.", a: "\"I'm here to practise my English. What about you?\"", bundle: 'free' },
+        { q: "You arrive at a hobby club you've never been to.", a: "\"I came to finally learn this properly. What got you into it?\"", bundle: 'free' },
+        { q: "A networking event where people are milling around.", a: "\"I mostly came to meet people outside my own team. Why are you here?\"", bundle: 'free' },
+        { q: "You joined a group class at the gym.", a: "\"I'm here to be forced to actually stretch. What brings you to this one?\"", bundle: 'free' },
+        { q: "You sit down at a shared table in a co-working space.", a: "\"I came here to get out of my flat, mostly. What about you?\"", bundle: 'free' },
+        { q: "A conference mixer where everyone has a badge.", a: "\"I came for one talk and stayed for the coffee. What pulled you in?\"", bundle: 'pro' },
+        { q: "You show up to a volunteering day.", a: "\"I signed up to do something with my Saturday for once. How did you end up here?\"", bundle: 'pro' },
+        { q: "A book club meeting you were invited to.", a: "\"I joined mainly to read things I wouldn't pick myself. What made you come?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Status Setup",
+      guideFront: "You want to join in and invite them too. Say your bit, then ask.",
+      guideBack: "One way to say it — a short statement, then a question on the same thing.",
+      description: "Say how you're feeling right now, then ask how they are. Naming your own state first makes it easy and natural for them to say more than \"fine.\" Example: \"I'm wiped out today — how are you doing?\"\n\nThree kinds of state you can name:\n1. Physical — \"I'm wiped out today.\"\n2. Emotional — \"I'm a bit nervous about this, actually.\"\n3. Situational — \"I've been looking forward to this all week.\"\n\nName it plainly and briefly. A long account of your day is a monologue, not a setup.\n\nMindset: saying something true about your own state is what makes \"how are you?\" answerable with more than \"fine.\" You go first so they do not have to.",
+      inputs: [
+        { q: "You meet a friend of a friend at the start of a long day.", a: "\"I'm running on very little sleep today. How are you holding up?\"", bundle: 'free' },
+        { q: "Bumping into a classmate before a big test.", a: "\"I'm honestly a bit nervous about this one. How are you feeling?\"", bundle: 'free' },
+        { q: "You join a table where people are settling in.", a: "\"I'm in a weirdly good mood today, no idea why. How's your day been?\"", bundle: 'free' },
+        { q: "Meeting someone new at a slow morning event.", a: "\"I need about three more coffees to be a person. How are you doing?\"", bundle: 'free' },
+        { q: "You sit next to someone at the end of a long week.", a: "\"I'm so ready for the weekend it's embarrassing. How about you?\"", bundle: 'free' },
+        { q: "A teammate joins a call looking as tired as you feel.", a: "\"I'll be honest, my brain clocked out an hour ago. How are you doing?\"", bundle: 'pro' },
+        { q: "You run into a neighbour during a stressful week.", a: "\"I'm a bit frazzled this week, not going to lie. How've you been?\"", bundle: 'pro' },
+        { q: "Meeting someone at a party after a rough day.", a: "\"I nearly stayed home tonight, if I'm honest. How's your evening going?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Action Setup",
+      guideFront: "You want to join in and invite them too. Say your bit, then ask.",
+      guideBack: "One way to say it — a short statement, then a question on the same thing.",
+      description: "Say what you're doing or working on, then ask what they're up to. It gives them a concrete thing to latch onto instead of a blank \"what's new?\" Example: \"I'm trying to learn the guitar — are you working on anything?\"\n\nThree kinds of action you can offer:\n1. Something you are learning — \"I'm trying to learn the guitar.\"\n2. Something you are in the middle of — \"I'm halfway through redoing the kitchen.\"\n3. Something small and current — \"I'm reading a book I can't decide if I like.\"\n\nThe more specific it is, the easier it is to react to. \"Learning guitar badly\" gives them more to work with than \"keeping busy.\"\n\nMindset: a concrete thing beats an interesting thing. You are handing them something to latch onto, not auditioning.",
+      inputs: [
+        { q: "Catching up with someone you haven't seen in a while.", a: "\"I've started running in the mornings, which is new for me. What have you been up to?\"", bundle: 'free' },
+        { q: "A friend asks the vague \"so what's going on with you?\"", a: "\"I'm deep in repainting my flat right now. Are you working on anything?\"", bundle: 'free' },
+        { q: "You meet someone at a class and want to keep talking after.", a: "\"I'm trying to actually finish a book this month. Are you reading anything?\"", bundle: 'free' },
+        { q: "Standing around at a family gathering.", a: "\"I've been learning to cook properly this year. Have you picked up anything new?\"", bundle: 'free' },
+        { q: "Chatting with a coworker in the break room.", a: "\"I'm knee-deep in redoing our filing system, thrilling stuff. What are you working on?\"", bundle: 'free' },
+        { q: "An old friend messages out of the blue.", a: "\"I'm training for a half marathon, which was a terrible idea. What are you up to these days?\"", bundle: 'pro' },
+        { q: "You meet someone at a craft fair.", a: "\"I've just started doing pottery and I'm gloriously bad at it. Do you make anything?\"", bundle: 'pro' },
+        { q: "Reconnecting with a former classmate.", a: "\"I'm halfway through switching careers, it's chaos. What are you doing now?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Background Setup",
+      guideFront: "You want to join in and invite them too. Say your bit, then ask.",
+      guideBack: "One way to say it — a short statement, then a question on the same thing.",
+      description: "Say a bit about what led you here — where you were, what happened before — then ask them. A little story is warmer than a bare question and gives them a thread to pull. Example: \"I came straight from work and I'm starving — where are you coming from?\"\n\nThree lengths of background, depending on the room:\n1. One clause — \"I came straight from work.\"\n2. One sentence with a detail — \"I came straight from work and I'm starving.\"\n3. A short scene — \"I got the wrong bus, walked twenty minutes, and here I am.\"\n\nThe detail is what does the work. A bare fact is a statement; a fact with a small complaint or joke in it is a thread.\n\nMindset: a little story is warmer than a bare question. It costs you nothing and it tells them you are not just making conversation at them.",
+      inputs: [
+        { q: "You arrive at an evening event a little flustered.", a: "\"I came straight from the office and I'm still catching my breath. Where are you coming from?\"", bundle: 'free' },
+        { q: "Meeting someone at a weekend brunch.", a: "\"I was at the market before this and completely overspent. What did you get up to today?\"", bundle: 'free' },
+        { q: "You sit down next to someone at a wedding.", a: "\"I've driven three hours for this and I'd do it again. How do you know the couple?\"", bundle: 'free' },
+        { q: "Arriving at a party where you only know the host.", a: "\"A friend talked me into coming tonight. How did you end up here?\"", bundle: 'free' },
+        { q: "You meet someone at a class after your holiday.", a: "\"I just got back from a week away and my brain's still on a beach. Have you been anywhere?\"", bundle: 'free' },
+        { q: "You show up to a reunion after a long journey.", a: "\"I've been on trains since six this morning to get here. How far did you come?\"", bundle: 'pro' },
+        { q: "Meeting a new colleague on your first day.", a: "\"I moved cities last month for this job, so everything's a bit new. Have you been here long?\"", bundle: 'pro' },
+        { q: "Arriving at a dinner straight from something else.", a: "\"I came from my nephew's birthday, so I'm running on cake and chaos. What's your day been like?\"", bundle: 'pro' },
+      ]
+    },
+  ],
 };
 
 // ─── COLLECTIONS MODE DATA ───────────────────────────────────────────────────
@@ -1058,6 +1140,52 @@ const collectionsModeData = {
         { q: "Someone shows off a small kitchen success.", a: "Teasing: \"A whole chef now, are we?\" — or Jokingly brag: \"Meanwhile I made toast that didn't burn. We're both winning.\"", bundle: 'free' },
         { q: "Your friend claims they're the funny one in the group.", a: "Teasing: \"Is that what you tell yourself?\" — or Jokingly brag: \"Bold claim to make while standing next to me.\"", bundle: 'pro' },
         { q: "Someone challenges you to a pointless contest.", a: "Jokingly brag: \"You're very brave. I've never lost at anything that didn't matter.\" — or Teasing: \"You sure? Last time didn't go well for you.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  setupstatement: [
+    {
+      name: "Read the Moment",
+      guideFront: "Which type fits this moment?",
+      guideBack: "A possible response, with the type in brackets.",
+      description: "A choice between the two setups that respond to what's already in front of you: Opinion (react to something present — the food, the film, the venue) and Status (name the mood — tired, nervous, upbeat). Opinion fits when there's a thing to have a view on; Status fits when the feeling in the room is the most natural thing to name. Example: by a painting, an Opinion setup lands; at the end of a rough day, a Status one does.\n\nThe two options:\n1. Opinion Setup — there is something present to have a view on. \"This playlist is great — what about you?\"\n2. Status Setup — the mood in the room is the obvious thing. \"I'm wiped out today — how are you doing?\"\n\nLook around before you choose. If there is a thing in front of you both, react to the thing; if the room itself has a feeling, name that instead.\n\nMindset: both of these read the moment rather than importing a topic. That is what makes them feel natural instead of rehearsed.",
+      inputs: [
+        { q: "You're both looking at the same painting in a gallery.", a: "\"I can't decide if I love this or hate it. What do you make of it?\" (opinion)", bundle: 'pro' },
+        { q: "You meet someone at the end of a clearly rough day for both of you.", a: "\"I am completely done in today. How are you holding up?\" (status)", bundle: 'pro' },
+        { q: "A film just finished and the room's gone quiet.", a: "\"I liked that more than I expected. What did you think?\" (opinion)", bundle: 'pro' },
+        { q: "The mood in the room is low and everyone's flagging.", a: "\"I'm running on fumes today, honestly. How are you doing?\" (status)", bundle: 'pro' },
+        { q: "Someone sits next to you at a talk that hasn't started.", a: "\"I heard good things about this speaker. Seen them before?\" (opinion)", bundle: 'pro' },
+        { q: "You're both waiting, clearly tired, early in the morning.", a: "\"I need three coffees to be a person right now. You surviving?\" (status)", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Share About You",
+      guideFront: "Which type fits this moment?",
+      guideBack: "A possible response, with the type in brackets.",
+      description: "A choice between the three setups where you supply your own content: Purpose (why you're here), Action (what you're doing or working on), and Background (where you came from). All three give the other person a thread when there's nothing present to react to — pick whichever is true and easy in the moment. Example: at a new class you might open with Purpose (\"here to get better\") or Action (\"just started this\") — either works.\n\nThe three options:\n1. Purpose Setup — why you are here. \"I came to meet a few new people.\"\n2. Action Setup — what you are doing. \"I'm trying to learn the guitar.\"\n3. Background Setup — where you came from. \"I came straight from work and I'm starving.\"\n\nThese are for when there is nothing present to react to. Pick whichever is true and requires no thinking — the effort should go into the question, not the setup.\n\nMindset: you always have all three available. That is the point of this group: you are never actually stuck for an opener.",
+      inputs: [
+        { q: "First evening of a course where nobody knows anybody.", a: "\"I'm here to finally get better at this. What brings you?\" (purpose)", bundle: 'pro' },
+        { q: "An old friend asks what's new and you've got nothing rehearsed.", a: "\"I've started learning to sail, of all things. What are you up to?\" (action)", bundle: 'pro' },
+        { q: "You arrive somewhere late and slightly out of breath.", a: "\"I sprinted from the bus, give me a second. Where are you coming from?\" (background)", bundle: 'pro' },
+        { q: "You join a networking event and someone turns to you.", a: "\"I mostly came to meet people outside my own team. Why are you here?\" (purpose)", bundle: 'pro' },
+        { q: "Catching up with someone after a long time.", a: "\"I've been training for a half marathon — terrible idea. What have you been up to?\" (action)", bundle: 'pro' },
+        { q: "You sit down at a dinner having come straight from something else.", a: "\"I've come straight from work, still in that mindset. What's your day been?\" (background)", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Choosing Your Setup",
+      guideFront: "Which type fits this moment?",
+      guideBack: "A possible response, with the type in brackets.",
+      description: "The full choice between all five setup types. Each moment could be opened several ways, but one usually fits best: Opinion when there's something to react to, Purpose when you're both new to a place, Status when the mood is worth naming, Action when you want a concrete thread, and Background when a little story fits. Example: at a quiet party near the food, an Opinion setup (\"these are great — what have you tried?\") lands more easily than asking why they came.\n\nThe five, with the cue for each:\n1. Opinion — there is something to react to. \"This playlist is great — what about you?\"\n2. Purpose — you are both new here. \"I came to meet people — what brought you?\"\n3. Status — the mood is worth naming. \"I'm wiped out — how are you doing?\"\n4. Action — you want a concrete thread. \"I'm learning guitar — you working on anything?\"\n5. Background — a little story fits. \"I came straight from work — where are you coming from?\"\n\nMindset: there is no wrong one, only a more natural one. What matters far more than the choice is that you go first at all.",
+      inputs: [
+        { q: "You're both looking at the same painting in a gallery.", a: "\"I can't decide if I love this or hate it. What do you make of it?\" (opinion)", bundle: 'pro' },
+        { q: "First evening of a course where nobody knows anybody.", a: "\"I'm here to finally get better at this. What brings you?\" (purpose)", bundle: 'pro' },
+        { q: "You meet someone at the end of a clearly rough day for both of you.", a: "\"I am completely done in today. How are you holding up?\" (status)", bundle: 'pro' },
+        { q: "An old friend asks what's new and you've got nothing rehearsed.", a: "\"I've started learning to sail, of all things. What are you up to?\" (action)", bundle: 'pro' },
+        { q: "You arrive somewhere late and slightly out of breath.", a: "\"I sprinted from the bus, give me a second. Where are you coming from?\" (background)", bundle: 'pro' },
+        { q: "Standing by the coffee at a work event, silence settling in.", a: "\"This coffee is doing heavy lifting today. How's it going?\" (status)", bundle: 'pro' },
+        { q: "Someone sits next to you at a talk that hasn't started.", a: "\"I heard good things about this speaker. Have you seen them before?\" (opinion)", bundle: 'pro' },
+        { q: "You join a table of strangers at a shared dinner.", a: "\"A friend dragged me along tonight, happily. How do you all know each other?\" (background)", bundle: 'pro' },
       ]
     },
   ],

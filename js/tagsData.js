@@ -73,6 +73,9 @@ const packTags = {
     'awkward moments', 'laughing at yourself'
   ],
   conversational: [],
+  setupstatement: [
+    'conversation', 'starting', 'connecting'
+  ],
 };
 
 // ─── TOPICS ──────────────────────────────────────────────────────────
@@ -101,7 +104,7 @@ const packTags = {
 // emotionalboundaries merged into emotions and boundaries.
 const TOPICS = [
   // ── Getting a conversation going ──────────────────────────────────
-  { id: 'startingconversations', title: 'Starting Conversations',        packs: ['startingconnecting'] },
+  { id: 'startingconversations', title: 'Starting Conversations',        packs: ['startingconnecting', 'setupstatement'] },
   { id: 'questions',             title: 'Questions & Curiosity',         packs: [] },
   { id: 'flowtransitions',       title: 'Flow & Transitions',            packs: ['conversational', 'transitions'] },
   { id: 'endingconversations',   title: 'Ending Conversations',          packs: [] },

@@ -371,5 +371,52 @@ const challengesCollections = {
         { q: "A friend shows off a bit of trivia to look clever.", a: "Hint: Teasing. \"Look at you, absolutely full of facts today.\"", bundle: 'pro' },
       ]
     }
-  ]
+  ],
+  setupstatement: [
+    {
+      name: "The One-Word Answerer",
+      guideFront: "What kind of hard opener is this?",
+      guideBack: "A possible response, with the type in brackets.",
+      description: "They give you almost nothing back — short, closed replies, then silence. The training is to notice you need a warmer, easier setup that hands them a concrete thread, rather than repeating the same opener. Best handled with an Action or Background setup.\n\nWhat it usually looks like:\n• \"Fine, thanks.\" and nothing after it.\n• Closed replies to everything you try.\n• You have asked twice and got two words back.\n\nTwo ways through:\n1. Action Setup — hand them something concrete to react to. \"I'm learning guitar — are you working on anything?\"\n2. Background Setup — give them a thread with a detail in it. \"I got the wrong bus and walked — how did you get here?\"\n\nMindset: repeating the same kind of opener louder will not help. Change what you are handing them, not how hard you are handing it.",
+      inputs: [
+        { q: "Your first setup got a one-word answer and then silence.", a: "\"Fair enough — I'll go first properly. I'm getting back into reading. Are you into books at all?\" (action)", bundle: 'pro' },
+        { q: "They keep giving short, closed replies.", a: "\"No pressure to chat, I'm bad at this too. I've just started running — do you do anything to unwind?\" (action)", bundle: 'pro' },
+        { q: "You opened, they answered, and it's gone quiet again.", a: "\"I came from work and my brain's fried. Where are you coming from?\" (background)", bundle: 'pro' },
+        { q: "Every question gets a \"yeah\" and nothing more.", a: "\"I'll make it easy — I'm here for the free coffee, honestly. What about you?\" (purpose)", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Flat Room",
+      guideFront: "What kind of hard opener is this?",
+      guideBack: "A possible response, with the type in brackets.",
+      description: "The mood is low and the energy's gone — nobody's really talking. The training is to notice the mood is the most honest thing to name, and open with a Status setup that invites them to say how they are. Best handled with a Status setup.\n\nWhat it usually looks like:\n• A long silence nobody wants to be the one to break.\n• Everyone on their phone or looking at the door.\n• Small talk that keeps dying after one exchange.\n\nTwo ways through:\n1. Status Setup — name the mood honestly. \"Quiet one tonight, isn't it — how's your week been?\"\n2. Opinion Setup — react to something present. \"This music is doing nothing for the room, is it?\"\n\nMindset: in a flat room the mood is the most honest thing available. Naming it is a relief to everyone, because they were all thinking it.",
+      inputs: [
+        { q: "The whole room feels flat and low-energy.", a: "\"Everyone looks how I feel right now, honestly. Long week for you too?\" (status)", bundle: 'pro' },
+        { q: "Nobody's talking and the mood is heavy.", a: "\"I'm running on empty today, not going to lie. How's your day been?\" (status)", bundle: 'pro' },
+        { q: "It's early and everyone's half-asleep.", a: "\"I need three more coffees to be a person. You holding up?\" (status)", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Frozen Moment",
+      guideFront: "What kind of hard opener is this?",
+      guideBack: "A possible response, with the type in brackets.",
+      description: "You've blanked — the pressure to say something clever has locked you up. The training is to drop the need to impress and open with a simple, honest Purpose setup. Best handled with a Purpose setup.\n\nWhat it usually feels like:\n• You have gone blank standing right next to someone.\n• Everything you think of sounds stupid in your head.\n• The pause has gone on long enough to be its own problem.\n\nTwo ways through:\n1. Purpose Setup — the lowest-effort honest opener there is. \"I came to meet a few people — what brought you?\"\n2. Status Setup — name the awkwardness itself. \"I never know how to start these — how's it going?\"\n\nMindset: the block is the need to be clever, not a lack of things to say. Drop the requirement and an ordinary sentence is enough.",
+      inputs: [
+        { q: "You've frozen and can't think of anything clever.", a: "\"I've got nothing smart to open with, so — I'm here for the free food. You?\" (purpose)", bundle: 'pro' },
+        { q: "Your mind goes blank the second you should speak.", a: "\"Okay, no clever line — I just came to meet a few people. What brings you?\" (purpose)", bundle: 'pro' },
+        { q: "You feel pressure to say something impressive.", a: "\"I'll skip the small talk — I'm honestly just here to enjoy this. Are you?\" (opinion)", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Distracted Person",
+      guideFront: "What kind of hard opener is this?",
+      guideBack: "A possible response, with the type in brackets.",
+      description: "They're only half there — on their phone, glancing around, not really tuned in. The training is to offer a small, vivid hook that's easy to react to rather than a flat opener. Best handled with a Background or Action setup.\n\nWhat it usually looks like:\n• They are on their phone or scanning the room.\n• They answer without really turning towards you.\n• You get agreement but no actual attention.\n\nTwo ways through:\n1. Background Setup — offer something vivid enough to look up for. \"I got the wrong bus and walked twenty minutes.\"\n2. Action Setup — give them something specific to react to. \"I'm halfway through redoing a kitchen and regretting it.\"\n\nMindset: a flat opener gets flat attention. Something small and vivid is easier to react to than something polite.",
+      inputs: [
+        { q: "The person is clearly distracted by their phone.", a: "\"I'll compete with the phone — I just got back from Portugal. Been anywhere good lately?\" (background)", bundle: 'pro' },
+        { q: "They keep glancing around the room.", a: "\"Busy in here, right? I nearly didn't find a seat. Where did you come in from?\" (background)", bundle: 'pro' },
+        { q: "They seem only half in the conversation.", a: "\"I'll be quick and interesting, promise — I've just started climbing. Do you do anything like that?\" (action)", bundle: 'pro' },
+      ]
+    },
+  ],
 };

@@ -396,5 +396,39 @@ const mindsetCollections = {
         { q: "How is this different from actually being proud of something?", a: "Real pride is sincere and can be quiet; a jokingly brag is deliberately over-the-top about something that doesn't warrant it.", bundle: 'pro' },
       ]
     }
-  ]
+  ],
+  setupstatement: [
+    {
+      name: "The Setup Statement Mindset",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The pack-wide stance: you don't have to be interesting to open a conversation, you just have to go first. Giving a little of yourself before you ask lowers the pressure on the other person, so the setup statement works precisely because it isn't clever. Example of the shift — instead of hunting for the perfect question, you say your small true thing and pass it over.\n\nThe three thoughts that cause the trouble:\n1. \"I need something interesting to say\" — you need something true and easy.\n2. \"They'll think I'm intruding\" — most people are relieved someone opened.\n3. \"I should wait for a natural moment\" — the natural moment is the one you make.\n\nMindset: giving a little of yourself before you ask lowers the pressure on them. The setup statement works precisely because it is not clever.",
+      inputs: [
+        { q: "You feel you need a clever line before you can say anything.", a: "\"I don't need to be interesting. I need to go first. A small true thing is enough.\"", bundle: 'pro' },
+        { q: "You worry that sharing your opinion first is self-centred.", a: "\"Going first is a gift, not a spotlight — it gives them something easy to answer.\"", bundle: 'pro' },
+        { q: "You freeze because nothing you'd say feels important enough.", a: "\"It doesn't have to matter. 'I'm tired today' is a perfectly good place to start.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Going-First Mindset",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The stance about being the one who speaks first: the right moment is the one you make, and most people are relieved someone else opened. Example of the shift — instead of waiting to be approached, you take the small risk of going first.\n\nWhere the hesitation shows up:\n1. You wait to be approached and then leave having spoken to nobody.\n2. You rehearse an opener until the moment has passed.\n3. You assume everyone else finds this easy.\n\nMindset: the right moment is the one you make. Going first is a small risk that almost always gets met with relief rather than rejection.",
+      inputs: [
+        { q: "You keep waiting for the 'right moment' to speak.", a: "\"The right moment is the one I make by saying my bit. Waiting is just avoiding.\"", bundle: 'pro' },
+        { q: "You feel you're bothering them by starting a conversation.", a: "\"Most people are relieved someone else went first. I'm doing us both a favour.\"", bundle: 'pro' },
+        { q: "You compare yourself to people who seem effortlessly social.", a: "\"They're not cleverer, they just go first more often. That part I can copy.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Reciprocity Mindset",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The stance about what happens after you open: your job is to hold out the invitation, not to control whether they take it. Example of the shift — instead of reading a flat reply as failure, you offer the door and let them decide.\n\nWhere it goes wrong:\n1. You read a short reply as proof you should not have spoken.\n2. You keep pushing when they have clearly not got the energy.\n3. You judge the opener by their mood rather than by your own move.\n\nMindset: your job is to hold out the invitation, not to control whether they take it. A flat answer is information about their evening, not a verdict on you.",
+      inputs: [
+        { q: "You're scared the other person won't reciprocate.", a: "\"My job is to open the door. Whether they walk through is not on me.\"", bundle: 'pro' },
+        { q: "You asked a question and it landed flat and you feel silly.", a: "\"One flat opener isn't a verdict on me. I'll try a different type and move on.\"", bundle: 'pro' },
+      ]
+    },
+  ],
 };

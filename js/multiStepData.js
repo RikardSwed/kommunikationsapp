@@ -1273,5 +1273,50 @@ const multiStepCollections = {
         },
       ]
     }
-  ]
+  ],
+  setupstatement: [
+    {
+      name: "Setup, Ask, Stay",
+      guideFront: "Say your part, then open it up — and stay with their answer.",
+      guideBack: "A line you could say at this step.",
+      description: "The full opening move: make your statement, hand over the question, and then actually follow their answer instead of jumping to your next line. The third step is where most openers fail — people ask, then don't listen. Steps: 1) Setup — say your bit, 2) Ask — question on the same thing, 3) Stay — react to what they actually said.\n\nThe shape of the whole thing:\n1. \"I'm trying to learn the guitar at the moment.\"\n2. \"Are you working on anything like that?\"\n3. \"Six months on the piano — what made you pick it up?\"\n\nWhy this order: the statement lowers the pressure, the question hands over the turn, and staying with their answer is what turns an opener into a conversation.\n\nMindset: step 3 is where most openers die. People ask, then stop listening because they are already hunting for the next line.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You've just sat down next to someone before a workshop starts.",
+          steps: [
+            { front: "Step 1 · Setup — you decide to open", back: "\"I came to this mostly to steal ideas, honestly.\"" },
+            { front: "Step 2 · Ask — you've said your bit, now turn it to them", back: "\"What made you sign up?\"" },
+            { front: "Step 3 · Stay — they say \"my manager sent me, for a project\"", back: "\"Oh, a project — what are you actually building?\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A friend of a friend at a party, both of you a bit tired.",
+          steps: [
+            { front: "Step 1 · Setup — you decide to open", back: "\"I nearly bailed on tonight, low-energy day.\"" },
+            { front: "Step 2 · Ask — you've shared it, turn it to them", back: "\"How's your evening going?\"" },
+            { front: "Step 3 · Stay — they say \"honestly, I came straight from a night shift\"", back: "\"A night shift, then straight here? That's real commitment.\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Statement into Story",
+      guideFront: "Say your part, then open it up — and stay with their answer.",
+      guideBack: "A line you could say at this step.",
+      description: "Start with a background setup, hand over the question, and then build on the thread they give you rather than resetting. Good when you want the conversation to deepen rather than ping-pong. Steps: 1) Background — where you're coming from, 2) Ask — turn it to them, 3) Build — pick up a detail and go further.\n\nThe shape of the whole thing:\n1. \"I came straight from work and I'm starving.\"\n2. \"Where have you come from?\"\n3. \"Two trains? That's a long way to come for a Tuesday.\"\n\nWhy this order: a background setup gives them a thread rather than a yes or no, and picking up one detail from their answer is what stops the conversation resetting after every exchange.\n\nMindset: aim for depth, not ping-pong. One detail followed properly beats four questions answered briefly.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "Arriving at a dinner where you only know the host.",
+          steps: [
+            { front: "Step 1 · Background — you want to open warmly", back: "\"I've come straight from a football match, still buzzing.\"" },
+            { front: "Step 2 · Ask — turn it to them", back: "\"How do you know everyone here?\"" },
+            { front: "Step 3 · Build — they say \"oh, I grew up with the host\"", back: "\"Grew up together? Okay, I need one embarrassing story.\"" },
+          ]
+        },
+      ]
+    },
+  ],
 };

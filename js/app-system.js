@@ -111,6 +111,7 @@ applyInputCounterVisibility();
     transitions:    { label: 'Transitions',              minLevel: 'freemium'  },
     speakingupingroups: { label: 'Speaking Up in Groups', minLevel: 'freemium' },
     playfulrefusals:    { label: 'Playful Refusals',      minLevel: 'freemium' },
+    setupstatement: { label: 'Setup Statement', minLevel: 'pro' },
   };
 
   // Mode definitions per level
@@ -462,7 +463,21 @@ const BUNDLE_DEFS = {
       name: 'Family & Get-Togethers',
       description: 'Family dinners, reunions and holidays — same moves, home context.',
     },
-  ]
+  ],
+  setupstatement: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
 };
 window.BUNDLE_DEFS = BUNDLE_DEFS;
 
