@@ -252,13 +252,21 @@ document.querySelectorAll('.nav-tab').forEach(btn => {
     localStorage.setItem(LASTPACK_KEY, JSON.stringify({ key, label, progressPct: pct }));
   }
 
-  // ── Welcome text ─────────────────────────────────────────────────────────
+  // ── Welcome text (v1.26.66) ──────────────────────────────────────────────
+  // The FIRST time the home screen is ever shown it says "Welcome"; every
+  // launch after that says "Welcome back". Before v1.26.66 the markup said
+  // "Welcome back" by default, so brand-new users were welcomed back too.
+  // ds_seen_home is set on the first render, so it does not depend on any
+  // training having happened; reset-first-run clears it.
+  const SEENHOME_KEY = 'ds_seen_home';
   function updateWelcome() {
-    const last = getLastPack();
-    if (last) {
+    const last      = getLastPack();
+    const returning = !!localStorage.getItem(SEENHOME_KEY);
+    if (returning || last) {
       if (welcomeTitle)  welcomeTitle.textContent  = 'Welcome back';
-      if (welcomeSub)    welcomeSub.textContent    = 'Continue where you left off';
+      if (welcomeSub)    welcomeSub.textContent    = last ? 'Continue where you left off' : 'Ready to train?';
     }
+    try { localStorage.setItem(SEENHOME_KEY, '1'); } catch {}
   }
 
   // ── Recent searches render ────────────────────────────────────────────────
@@ -1366,6 +1374,16 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
     return _calView;
   }
 
+  // Week view only (v1.26.66): squares or a bar chart of minutes per day.
+  // Stored separately from the view so switching to Month and back keeps it.
+  const CAL_WEEKMODE_KEY = 'prog_cal_weekmode';
+  let _calWeekMode = null;   // 'grid' | 'bars'
+  function calWeekMode() {
+    if (_calWeekMode) return _calWeekMode;
+    _calWeekMode = get(CAL_WEEKMODE_KEY) === 'bars' ? 'bars' : 'grid';
+    return _calWeekMode;
+  }
+
   // Shading steps by minutes trained that day. Level 1 also covers days that
   // only have card flips logged (streak mode 'card' with almost no time).
   function calLevel(minutes, hasCards) {
@@ -1416,6 +1434,32 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
       : calFmtRange(r.from, r.to);
   }
 
+  // Week-as-bars markup (v1.26.66). Same session data as the squares, drawn
+  // by height instead of shading. Bars are scaled to the busiest day in the
+  // week shown, so the tallest bar is always full height; a day with any time
+  // at all gets a visible stub so it never reads as zero.
+  function calBarsHtml(r, map, today, todayS) {
+    const days = [];
+    for (let i = 0; i < 7; i++) {
+      const d  = addDays(r.from, i);
+      const ds = dstr(d);
+      const e  = map[ds];
+      days.push({ d, ds, minutes: e ? Math.round(e.minutes) : 0 });
+    }
+    const peak = Math.max.apply(null, days.map(x => x.minutes).concat([1]));
+    return days.map((x, i) => {
+      const cls = ['prog-cal-barcol'];
+      if (x.d > today)      cls.push('future');
+      if (x.ds === todayS)  cls.push('today');
+      const pct = x.minutes > 0 ? Math.max(6, Math.round((x.minutes / peak) * 100)) : 0;
+      return `<button type="button" class="${cls.join(' ')}" data-day="${x.ds}">`
+        + `<div class="prog-cal-barval">${x.minutes || ''}</div>`
+        + `<div class="prog-cal-bartrack"><div class="prog-cal-bar" style="height:${pct}%"></div></div>`
+        + `<div class="prog-cal-barday">${CAL_DOW[i][0]}</div>`
+        + `</button>`;
+    }).join('');
+  }
+
   function renderCalendar(sessions) {
     const grid = document.getElementById('progCalGrid');
     if (!grid) return;
@@ -1433,6 +1477,18 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
 
     const nextBtn = document.getElementById('progCalNext');
     if (nextBtn) nextBtn.disabled = r.to >= today;
+
+    // Squares / Bars switch — only meaningful in the week view (v1.26.66)
+    const modeRow = document.getElementById('progCalWeekMode');
+    const asBars  = r.view === 'week' && calWeekMode() === 'bars';
+    if (modeRow) modeRow.style.display = r.view === 'week' ? '' : 'none';
+    document.querySelectorAll('.prog-cal-mode').forEach(b => {
+      b.classList.toggle('active', b.dataset.mode === calWeekMode());
+    });
+    const legend = document.querySelector('.prog-cal-legend');
+    if (legend) legend.style.display = asBars ? 'none' : '';
+    grid.classList.toggle('prog-cal-grid--bars', asBars);
+    if (asBars) { grid.innerHTML = calBarsHtml(r, map, today, todayS); return; }
 
     let rows;
     if (r.view === 'month') {
@@ -1519,6 +1575,12 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
     const grid = document.getElementById('progCalGrid');
     if (grid) {
       grid.addEventListener('click', e => {
+        const bar = e.target.closest('.prog-cal-barcol');
+        if (bar) {
+          if (bar.classList.contains('future')) return;
+          showCalDetail(calDayTitle(bar.dataset.day), bar.dataset.day, bar.dataset.day);
+          return;
+        }
         const day = e.target.closest('.prog-cal-day');
         if (day) {
           if (day.classList.contains('future')) return;
@@ -1552,6 +1614,14 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
         if (calView() === btn.dataset.view) _calAnchor = null;
         _calView = btn.dataset.view;
         set(CAL_VIEW_KEY, _calView);
+        renderProgress();
+      });
+    });
+
+    document.querySelectorAll('.prog-cal-mode').forEach(btn => {
+      btn.addEventListener('click', () => {
+        _calWeekMode = btn.dataset.mode;
+        set(CAL_WEEKMODE_KEY, _calWeekMode);
         renderProgress();
       });
     });
@@ -2368,6 +2438,40 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
         if (window._favRenderDash) _favRenderDash();
       }
 
+      // What passing this checkpoint actually opened up (v1.26.66).
+      // Per the program discovery rule (v1.26.56) passing a section's OWN
+      // checkpoint does two things: it releases that section's packs into the
+      // rest of the app (Packs, Topics, search, favorites, folders), and it
+      // unlocks the next section for training. Both are named here, since
+      // neither was visible to the user before.
+      const cpEsc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+      const packNamesAt = si => {
+        const s = program.sections[si];
+        return (s && s.packs ? s.packs : []).map(p => cpEsc(p.label));
+      };
+      const released  = passed ? packNamesAt(sectionIndex) : [];
+      const nextSec   = passed ? program.sections[sectionIndex + 1] : null;
+      const nextPacks = nextSec ? packNamesAt(sectionIndex + 1) : [];
+
+      const unlockHtml = !passed ? '' : '<div class="cp-unlock">'
+        + (released.length
+            ? '<div class="cp-unlock-row"><i class="ti ti-books"></i><div class="cp-unlock-body">'
+              + '<div class="cp-unlock-head">Added to your library</div>'
+              + '<div class="cp-unlock-packs">' + released.join(' \u00b7 ') + '</div>'
+              + '<div class="cp-unlock-note">You can now find these under Packs, Topics and search.</div>'
+              + '</div></div>'
+            : '')
+        + (nextSec
+            ? '<div class="cp-unlock-row"><i class="ti ti-lock-open"></i><div class="cp-unlock-body">'
+              + '<div class="cp-unlock-head">Next up \u2014 ' + cpEsc(nextSec.title) + '</div>'
+              + (nextPacks.length ? '<div class="cp-unlock-packs">' + nextPacks.join(' \u00b7 ') + '</div>' : '')
+              + '</div></div>'
+            : '<div class="cp-unlock-row"><i class="ti ti-flag-check"></i><div class="cp-unlock-body">'
+              + '<div class="cp-unlock-head">That was the last checkpoint</div>'
+              + '<div class="cp-unlock-note">You have finished this program.</div>'
+              + '</div></div>')
+        + '</div>';
+
       titleEl.textContent = checkpoint.title;
       qText.textContent   = '';
       timEl.textContent   = '';
@@ -2377,7 +2481,8 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
         + correct + ' / ' + drawn.length + '</div>'
         + '<div class="cp-result-pct">' + pct + '%</div>'
         + '<div class="cp-result-label">' + (passed ? 'Checkpoint passed! \u2713' : 'Not passed — try again') + '</div>'
-        + '<div class="cp-result-hint">' + (passed ? 'The next section is now unlocked.' : 'You need 70% to pass. Questions are drawn randomly each attempt.') + '</div>'
+        + (passed ? '' : '<div class="cp-result-hint">You need 70% to pass. Questions are drawn randomly each attempt.</div>')
+        + unlockHtml
         + '<button class="btn-primary cp-result-btn" id="cp-done-btn">' + (passed ? 'Continue' : 'Try again') + '</button>'
         + (!passed ? '<button class="btn-secondary cp-result-back-btn" id="cp-back-btn">Back to program</button>' : '')
         + '</div>';

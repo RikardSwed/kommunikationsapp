@@ -1169,7 +1169,8 @@ if (clearCodesBtn) clearCodesBtn.addEventListener('click', () => {
 const resetFirstRunBtn = document.getElementById('resetFirstRunBtn');
 if (resetFirstRunBtn) resetFirstRunBtn.addEventListener('click', () => {
   ['fav_packs', 'dash_last_pack', 'ds_last_modes', 'ds_tap_hint_count',
-   'ds_onboarding_done', 'ds_onboarding', 'ds_reco_packs'].forEach(k => localStorage.removeItem(k));
+   'ds_onboarding_done', 'ds_onboarding', 'ds_reco_packs',
+   'ds_seen_home'].forEach(k => localStorage.removeItem(k));
   // Pack intro counters (v1.26.44) — dynamic keys, one per pack
   Object.keys(localStorage).filter(k => k.indexOf('ds_packintro_') === 0)
     .forEach(k => localStorage.removeItem(k));
@@ -1187,6 +1188,88 @@ if (resetFirstRunBtn) resetFirstRunBtn.addEventListener('click', () => {
   const verEl   = document.getElementById('aboutVersion');
   if (!btn || !overlay) return;
   if (verEl && typeof VERSION !== 'undefined') verEl.textContent = VERSION;
+  btn.addEventListener('click', () => overlay.classList.add('open'));
+  if (close) close.addEventListener('click', () => overlay.classList.remove('open'));
+  overlay.addEventListener('click', e => { if (e.target === overlay) overlay.classList.remove('open'); });
+})();
+
+// ─── WHAT'S NEW (v1.26.66) ──────────────────────────────────────────
+// A user-facing release list, reached from its own row in Settings — the
+// version number keeps opening developer settings after 7 taps.
+// EDITING RULE: this list is NOT updated every release. Add an entry only
+// for a NEW PACK or a real feature; bugfixes and internal work stay out.
+// Newest first. Keep each line in the user's language, not the changelog's.
+const WHATS_NEW = [
+  {
+    version: 'v1.26.66', date: 'August 2026', title: 'Progress and programs',
+    items: [
+      'The Progress calendar can now show your week as a <strong>bar chart</strong> of minutes per day \u2014 tap Bars above the calendar.',
+      'Passing a checkpoint in a program now tells you exactly <strong>which packs it added to your library</strong>, and what comes next.',
+    ],
+  },
+  {
+    version: 'v1.26.65', date: 'July 2026', title: 'New pack',
+    items: [
+      '<strong>Setup Statement</strong> \u2014 open a conversation by giving the other person something to react to.',
+    ],
+  },
+  {
+    version: 'v1.26.62', date: 'July 2026', title: 'Finding things faster',
+    items: [
+      'Packs and topics are now listed <strong>alphabetically</strong> everywhere in the Library.',
+      'The Pro screen shows the free trial and both plans clearly.',
+    ],
+  },
+  {
+    version: 'v1.26.56', date: 'July 2026', title: 'Programs, and a new one to try',
+    items: [
+      'New program: <strong>Saying No With Confidence</strong>, with the packs <strong>The Happy No</strong> and <strong>The Regretful No</strong>.',
+      'Packs you earn in a program now stay yours \u2014 once you pass that part\u2019s checkpoint they appear in the Library, Topics and search.',
+    ],
+  },
+  {
+    version: 'v1.26.55', date: 'July 2026', title: 'Two new packs',
+    items: [
+      '<strong>Speaking Up in Groups</strong> \u2014 taking the floor, and handling interruptions.',
+      '<strong>Playful Refusals</strong> \u2014 saying no with a light touch.',
+    ],
+  },
+  {
+    version: 'v1.26.53', date: 'July 2026', title: 'New pack',
+    items: [
+      '<strong>Transitions</strong> \u2014 moving a conversation from one thing to another without it feeling abrupt.',
+    ],
+  },
+  {
+    version: 'v1.26.49', date: 'July 2026', title: 'A real training calendar',
+    items: [
+      'Progress now shows a calendar over week, two weeks or a month, shaded by how much you trained. Tap any day, week or the title to see what you practised.',
+    ],
+  },
+  {
+    version: 'v1.26.44', date: 'July 2026', title: 'Pack introductions',
+    items: [
+      'Packs can now open with a short introduction to their strategies. Tap the pack name above the training modes to see it again.',
+    ],
+  },
+];
+
+(function initWhatsNew() {
+  const btn     = document.getElementById('whatsNewBtn');
+  const overlay = document.getElementById('whatsNewOverlay');
+  const close   = document.getElementById('whatsNewClose');
+  const body    = document.getElementById('whatsNewBody');
+  if (!btn || !overlay || !body) return;
+
+  body.innerHTML = WHATS_NEW.map(e =>
+    '<div class="whatsnew-entry">'
+    + '<div class="whatsnew-title">' + e.title + '</div>'
+    + '<div class="whatsnew-meta">' + e.date + ' \u00b7 ' + e.version + '</div>'
+    + '<ul class="whatsnew-list">'
+    + e.items.map(i => '<li>' + i + '</li>').join('')
+    + '</ul></div>'
+  ).join('');
+
   btn.addEventListener('click', () => overlay.classList.add('open'));
   if (close) close.addEventListener('click', () => overlay.classList.remove('open'));
   overlay.addEventListener('click', e => { if (e.target === overlay) overlay.classList.remove('open'); });
