@@ -7,10 +7,10 @@
   <meta name="mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="default" />
   <meta name="apple-mobile-web-app-title" content="Deckstack" />
-  <link rel="manifest" href="manifest.json?v=12665" />
+  <link rel="manifest" href="manifest.json?v=12666" />
   <title>Deckstack</title>
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="stylesheet" href="css/style.css?v=12665" />
+  <link rel="stylesheet" href="css/style.css?v=12666" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
 </head>
 <body>
@@ -118,7 +118,9 @@
       </div>
       <button class="topbar-btn dash-cancel-btn" id="homeSettingsBtn" title="Settings"><svg width="22" height="22" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 4.5h6l.7 3a7.5 7.5 0 0 1 2.3 1.35l2.9-.9 3 5.2-2.3 1.8a7.5 7.5 0 0 1 0 2.1l2.3 1.8-3 5.2-2.9-.9a7.5 7.5 0 0 1-2.3 1.35l-.7 3H13l-.7-3a7.5 7.5 0 0 1-2.3-1.35l-2.9.9-3-5.2 2.3-1.8a7.5 7.5 0 0 1 0-2.1L4.1 14.1l3-5.2 2.9.9A7.5 7.5 0 0 1 12.3 8Z"/><circle cx="16" cy="16" r="4.5"/></svg></button>
     </div>
-    <div class="dash-welcome-text" id="dashWelcomeTitle">Welcome back</div>
+    <!-- v1.26.66: default is the FIRST-RUN text; updateWelcome() in app-ui.js
+         switches it to "Welcome back" on every later launch. -->
+    <div class="dash-welcome-text" id="dashWelcomeTitle">Welcome</div>
     <div class="dash-welcome-sub" id="dashWelcomeSubtitle">Ready to train?</div>
   </div>
 
@@ -239,6 +241,12 @@
             <button type="button" class="prog-cal-view active" data-view="week">Week</button>
             <button type="button" class="prog-cal-view" data-view="2weeks">2 weeks</button>
             <button type="button" class="prog-cal-view" data-view="month">Month</button>
+          </div>
+          <!-- Week view only (v1.26.66): squares or minutes-per-day bars.
+               Shown/hidden by renderCalendar(). -->
+          <div class="prog-cal-modes" id="progCalWeekMode" style="display:none;">
+            <button type="button" class="prog-cal-mode active" data-mode="grid">Squares</button>
+            <button type="button" class="prog-cal-mode" data-mode="bars">Bars</button>
           </div>
           <div class="prog-cal-grid" id="progCalGrid"></div>
           <div class="prog-cal-legend">
@@ -2082,6 +2090,10 @@
       <button id="replayOnboardingBtn" style="font-size:13px; color:#2c5a7a; background:#eef4f9; border:1px solid #b8d2e6; border-radius:8px; padding:6px 12px; cursor:pointer;">Replay</button>
     </div>
     <div class="settings-row">
+      <label>What&rsquo;s new</label>
+      <button id="whatsNewBtn" style="font-size:13px; color:#2c5a7a; background:#eef4f9; border:1px solid #b8d2e6; border-radius:8px; padding:6px 12px; cursor:pointer;">View</button>
+    </div>
+    <div class="settings-row">
       <label>About &amp; privacy</label>
       <button id="aboutBtn" style="font-size:13px; color:#555; background:#f0f0f0; border:1px solid #ddd; border-radius:8px; padding:6px 12px; cursor:pointer;">View</button>
     </div>
@@ -2175,6 +2187,17 @@
   </div>
 </div>
 
+<!-- WHAT'S NEW (v1.26.66) — a plain-language release list for users. The
+     entries live in WHATS_NEW in app-system.js; only new packs and real
+     features go in, never bugfixes. -->
+<div class="settings-overlay" id="whatsNewOverlay">
+  <div class="settings-panel" style="max-height:82vh; overflow-y:auto;">
+    <div class="settings-title">What&rsquo;s new</div>
+    <div class="whatsnew-body" id="whatsNewBody"></div>
+    <button class="settings-close" id="whatsNewClose">Done</button>
+  </div>
+</div>
+
 <div class="settings-overlay" id="packSettingsOverlay">
   <div class="settings-panel">
     <div class="settings-title" id="packSettingsTitle">Pack Settings</div>
@@ -2240,19 +2263,19 @@
   </button>
 </div>
 
-<script src="js/data.js?v=12665"></script>
-<script src="js/tagsData.js?v=12665"></script>
-<script src="js/programsData.js?v=12665"></script>
-<script src="js/challengesData.js?v=12665"></script>
-<script src="js/mindsetData.js?v=12665"></script>
-<script src="js/multiStepData.js?v=12665"></script>
-<script src="js/memorizeData.js?v=12665"></script>
-<script src="js/mode-engine.js?v=12665"></script>
-<script src="js/app-core.js?v=12665"></script>
-<script src="js/app-modes.js?v=12665"></script>
-<script src="js/app-handsfree.js?v=12665"></script>
-<script src="js/app-system.js?v=12665"></script>
-<script src="js/app-ui.js?v=12665"></script>
+<script src="js/data.js?v=12666"></script>
+<script src="js/tagsData.js?v=12666"></script>
+<script src="js/programsData.js?v=12666"></script>
+<script src="js/challengesData.js?v=12666"></script>
+<script src="js/mindsetData.js?v=12666"></script>
+<script src="js/multiStepData.js?v=12666"></script>
+<script src="js/memorizeData.js?v=12666"></script>
+<script src="js/mode-engine.js?v=12666"></script>
+<script src="js/app-core.js?v=12666"></script>
+<script src="js/app-modes.js?v=12666"></script>
+<script src="js/app-handsfree.js?v=12666"></script>
+<script src="js/app-system.js?v=12666"></script>
+<script src="js/app-ui.js?v=12666"></script>
 
 
 <!-- CHECKPOINT SCREEN -->
