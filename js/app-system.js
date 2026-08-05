@@ -1170,7 +1170,7 @@ const resetFirstRunBtn = document.getElementById('resetFirstRunBtn');
 if (resetFirstRunBtn) resetFirstRunBtn.addEventListener('click', () => {
   ['fav_packs', 'dash_last_pack', 'ds_last_modes', 'ds_tap_hint_count',
    'ds_onboarding_done', 'ds_onboarding', 'ds_reco_packs',
-   'ds_seen_home'].forEach(k => localStorage.removeItem(k));
+   'ds_seen_home', 'ds_pro_nudge'].forEach(k => localStorage.removeItem(k));
   // Pack intro counters (v1.26.44) — dynamic keys, one per pack
   Object.keys(localStorage).filter(k => k.indexOf('ds_packintro_') === 0)
     .forEach(k => localStorage.removeItem(k));
@@ -1273,6 +1273,123 @@ const WHATS_NEW = [
   btn.addEventListener('click', () => overlay.classList.add('open'));
   if (close) close.addEventListener('click', () => overlay.classList.remove('open'));
   overlay.addEventListener('click', e => { if (e.target === overlay) overlay.classList.remove('open'); });
+})();
+
+// ─── PRO NUDGE (v1.26.66) ────────────────────────────────────────
+// Freemium users get an occasional reminder that Pro exists. All the pacing
+// sits in PRO_NUDGE_RULES so it can be tuned in one place. The intent: it
+// turns up now and then, never twice within a few days, never during
+// onboarding, and only every few times you touch a locked pack.
+const PRO_NUDGE_RULES = {
+  graceDays:          3,  // nothing at all in the first days after install
+  firstMinSessions:   3,  // and not before the app has actually been used
+  dayInterval:        7,  // eligible again this many days after the last one
+  sessionInterval:    8,  // or after this many pack openings — whichever first
+  cooldownDays:       4,  // hard floor between two nudges, whatever triggered
+  lockedEvery:        4,  // only every Nth tap on a locked pack
+  lockedCooldownDays: 2,  // and not if one turned up very recently
+  slowAfter:          4,  // once shown this many times, every interval doubles
+};
+
+(function initProNudge() {
+  const KEY     = 'ds_pro_nudge';
+  const DAY     = 86400000;
+  const R       = PRO_NUDGE_RULES;
+  const overlay = document.getElementById('proNudgeOverlay');
+  if (!overlay) return;
+
+  const load = () => { try { return JSON.parse(localStorage.getItem(KEY)) || {}; } catch { return {}; } };
+  const save = s => { try { localStorage.setItem(KEY, JSON.stringify(s)); } catch {} };
+
+  function state() {
+    const s = load();
+    if (!s.installed) { s.installed = Date.now(); save(s); }
+    s.sessions   = s.sessions   || 0;   // pack openings that were NOT locked
+    s.shown      = s.shown      || 0;
+    s.lockedTaps = s.lockedTaps || 0;
+    return s;
+  }
+
+  const isFreemium = () => !!(window.accessLevel && window.accessLevel.getLevel() === 'freemium');
+  const daysSince  = ts => (Date.now() - ts) / DAY;
+  const mult       = s  => (s.shown >= R.slowAfter ? 2 : 1);
+  const cooledDown = (s, days) => !s.lastShown || daysSince(s.lastShown) >= days;
+
+  // Never land on top of something else the user is in the middle of.
+  function busy() {
+    if (!localStorage.getItem('ds_onboarding_done')) return true;
+    const intro = document.getElementById('packIntroScreen');
+    if (intro && intro.style.display !== 'none') return true;
+    return !!document.querySelector('.settings-overlay.open');
+  }
+
+  function show(reason) {
+    if (!isFreemium() || busy()) return false;
+    const s = state();
+    s.shown         += 1;
+    s.lastShown      = Date.now();
+    s.sessionsAtLast = s.sessions;
+    s.lastReason     = reason;
+    save(s);
+    overlay.classList.add('open');
+    return true;
+  }
+
+  // Time- and usage-based check. Runs at startup and when the user comes back
+  // to the dashboard, so the session rule can fire without waiting a restart.
+  function maybeShowPeriodic() {
+    if (!isFreemium()) return false;
+    const s = state();
+    const m = mult(s);
+    if (daysSince(s.installed) < R.graceDays) return false;
+    if (!s.shown && s.sessions < R.firstMinSessions) return false;
+    if (!cooledDown(s, R.cooldownDays * m)) return false;
+    const since      = s.lastShown || s.installed;
+    const byDays     = daysSince(since) >= R.dayInterval * m;
+    const bySessions = (s.sessions - (s.sessionsAtLast || 0)) >= R.sessionInterval * m;
+    return (byDays || bySessions) ? show('periodic') : false;
+  }
+
+  // Count pack openings, and catch taps on locked packs. showModeScreen is a
+  // global function declaration in app-core.js, so every caller goes through
+  // this wrapper; the original still owns the "requires Pro" toast.
+  const origShowMode = window.showModeScreen;
+  if (typeof origShowMode === 'function') {
+    window.showModeScreen = function (key) {
+      const locked = !!(window.accessLevel && !window.accessLevel.canAccess(key));
+      const s = state();
+      if (locked) {
+        if (isFreemium()) {
+          s.lockedTaps += 1;
+          save(s);
+          if (s.lockedTaps % R.lockedEvery === 0 && cooledDown(s, R.lockedCooldownDays * mult(s))) {
+            setTimeout(() => show('locked'), 900);   // let the toast be read first
+          }
+        }
+      } else {
+        s.sessions += 1;
+        save(s);
+      }
+      return origShowMode.apply(this, arguments);
+    };
+  }
+
+  const closeIt = () => overlay.classList.remove('open');
+  const seeBtn  = document.getElementById('proNudgeSee');
+  const laterBtn = document.getElementById('proNudgeLater');
+  if (seeBtn)   seeBtn.addEventListener('click', () => { closeIt(); if (window.showTab) window.showTab('upgrade'); });
+  if (laterBtn) laterBtn.addEventListener('click', closeIt);
+  overlay.addEventListener('click', e => { if (e.target === overlay) closeIt(); });
+
+  document.addEventListener('click', e => {
+    const tab = e.target.closest && e.target.closest('.nav-tab[data-tab="dashboard"]');
+    if (tab) setTimeout(maybeShowPeriodic, 700);
+  });
+
+  setTimeout(maybeShowPeriodic, 2500);
+
+  // Exposed for the developer settings and for tests
+  window._proNudge = { state, show, maybeShowPeriodic, rules: R };
 })();
 
 // ─── DEVELOPER SETTINGS UNLOCK (v1.26.35) ──────────────────────────────
