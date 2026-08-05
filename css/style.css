@@ -2610,6 +2610,17 @@ body.pb-enabled .divider::after {
 .cp-result-label        { font-size: 20px; font-weight: 700; margin-bottom: 10px; }
 .cp-result-hint         { font-size: 14px; color: var(--ds-txt2); margin-bottom: 32px; line-height: 1.6; }
 
+/* Rating gate (v1.26.66) */
+.rating-icon { text-align: center; font-size: 30px; color: var(--ds-acc); margin-bottom: 6px; }
+.rating-lead { font-size: 14px; color: var(--ds-txt2); text-align: center; line-height: 1.6; margin: 6px 0 16px; }
+.rating-textarea {
+  width: 100%; box-sizing: border-box; resize: vertical;
+  font-family: inherit; font-size: 15px; line-height: 1.5; color: var(--ds-txt);
+  background: var(--ds-card); border: 1px solid var(--ds-border-sub);
+  border-radius: 10px; padding: 10px 12px; margin-bottom: 14px;
+}
+.rating-textarea:focus { outline: none; border-color: var(--ds-prog-acc); }
+
 /* Pro nudge (v1.26.66) */
 .pronudge-crown { text-align: center; font-size: 30px; color: var(--ds-acc); margin-bottom: 6px; }
 .pronudge-lead  { font-size: 14px; color: var(--ds-txt2); text-align: center; line-height: 1.6; margin: 6px 0 14px; }
