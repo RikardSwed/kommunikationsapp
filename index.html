@@ -2186,6 +2186,10 @@
       <button id="devShowPackIntro" style="font-size:13px; color:#2c5a7a; background:#eef4f9; border:1px solid #b8d2e6; border-radius:8px; padding:6px 12px; cursor:pointer;">Show</button>
     </div>
     <div class="settings-row">
+      <label style="font-size:13px; color:#888;">Next-pack suggestion</label>
+      <button id="devShowReco" style="font-size:13px; color:#2c5a7a; background:#eef4f9; border:1px solid #b8d2e6; border-radius:8px; padding:6px 12px; cursor:pointer;">Show</button>
+    </div>
+    <div class="settings-row">
       <label style="font-size:13px; color:#888;">Prompt timers (Pro nudge &amp; rating)</label>
       <button id="devResetPrompts" style="font-size:13px; color:#c0392b; background:#fdf0ee; border:1px solid #f5c6c2; border-radius:8px; padding:6px 12px; cursor:pointer;">Reset</button>
     </div>
@@ -2279,6 +2283,21 @@
       <button class="settings-close" id="ratingSend">Send</button>
       <button class="pronudge-later" id="ratingSkip">Not now</button>
     </div>
+  </div>
+</div>
+
+<!-- NEXT-PACK SUGGESTION (v1.26.66) — the interruptive half of the
+     recommendation system. The dashboard row is the quiet half.
+     Pacing lives in RECO_RULES in app-system.js. -->
+<div class="settings-overlay" id="recoOverlay">
+  <div class="settings-panel">
+    <div class="reco-icon"><i class="ti ti-compass"></i></div>
+    <div class="settings-title" style="text-align:center;">Try this next</div>
+    <p class="reco-reason" id="recoReason"></p>
+    <div class="reco-pack" id="recoPack"></div>
+    <button class="settings-close" id="recoOpen">Open it</button>
+    <button class="pronudge-later" id="recoLater">Not now</button>
+    <button class="reco-never" id="recoNever">Not interested in this one</button>
   </div>
 </div>
 
