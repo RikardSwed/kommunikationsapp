@@ -2610,6 +2610,19 @@ body.pb-enabled .divider::after {
 .cp-result-label        { font-size: 20px; font-weight: 700; margin-bottom: 10px; }
 .cp-result-hint         { font-size: 14px; color: var(--ds-txt2); margin-bottom: 32px; line-height: 1.6; }
 
+/* Pro nudge (v1.26.66) */
+.pronudge-crown { text-align: center; font-size: 30px; color: var(--ds-acc); margin-bottom: 6px; }
+.pronudge-lead  { font-size: 14px; color: var(--ds-txt2); text-align: center; line-height: 1.6; margin: 6px 0 14px; }
+.pronudge-list  { margin: 0 0 14px; padding-left: 20px; }
+.pronudge-list li { font-size: 14px; color: var(--ds-txt); line-height: 1.6; margin-bottom: 6px; }
+.pronudge-trial { font-size: 13px; font-weight: 700; color: var(--ds-txt2); text-align: center; margin: 0 0 14px; }
+.pronudge-later {
+  display: block; width: 100%; margin-top: 8px; padding: 10px;
+  border: none; background: none; font-family: inherit;
+  font-size: 14px; font-weight: 600; color: var(--ds-txt3);
+  cursor: pointer; -webkit-tap-highlight-color: transparent;
+}
+
 /* What's new list (v1.26.66) */
 .whatsnew-body  { max-height: 60vh; overflow-y: auto; padding-right: 2px; }
 .whatsnew-entry { padding: 14px 0; border-bottom: 1px solid var(--ds-border-sub); }
