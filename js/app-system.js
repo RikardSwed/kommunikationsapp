@@ -102,16 +102,68 @@ applyInputCounterVisibility();
   // Pack definitions per level
   const PACK_CONFIG = {
     assertive:      { label: 'Assertive Communication', minLevel: 'freemium'  },
-    conversational: { label: 'Conversational Skills',   minLevel: 'freemium'  },
-    humour:         { label: 'Humour Practise',          minLevel: 'pro'       },
-    criticism:      { label: 'Criticism & Correction',   minLevel: 'pro'       },
+    // v1.26.67 — the pre-handbook packs are put AWAY, not deleted: minLevel
+    // 'complete' hides them from every real user while leaving them intact
+    // for Rikard to review at the developer level. Assertive Communication is
+    // the deliberate exception and stays as the fourth freemium pack.
+    // compliments, influenceframing and selfhumour had NO entry at all, which
+    // meant the last line of packVisibility() returned 'available' and they
+    // were free for everyone by accident — they get entries here.
+    // NOT listed: startingconnecting, conversationaldepth, listeningresponding,
+    // thehappyno and theregretfulno. They are program-delivered and already
+    // hidden without an entry; the program route wins over the standalone lock
+    // either way, so they stay reachable through their programs by design.
+    conversational: { label: 'Conversational Skills',   minLevel: 'complete'  },
+    humour:         { label: 'Humour Practise',          minLevel: 'complete'  },
+    criticism:      { label: 'Criticism & Correction',   minLevel: 'complete'  },
     teasing:        { label: 'Teasing & Playfulness',    minLevel: 'complete'  },
-    storytelling:   { label: 'Storytelling',             minLevel: 'extended'  },
-    humourpractise: { label: 'Humour Practise (new)',    minLevel: 'freemium'  },
-    transitions:    { label: 'Transitions',              minLevel: 'freemium'  },
-    speakingupingroups: { label: 'Speaking Up in Groups', minLevel: 'freemium' },
-    playfulrefusals:    { label: 'Playful Refusals',      minLevel: 'freemium' },
+    storytelling:   { label: 'Storytelling',             minLevel: 'complete'  },
+    humourpractise: { label: 'Humour Practise (new)',    minLevel: 'complete'  },
+    transitions:    { label: 'Transitions',              minLevel: 'complete'  },
+    speakingupingroups: { label: 'Speaking Up in Groups', minLevel: 'complete' },
+    playfulrefusals:    { label: 'Playful Refusals',      minLevel: 'complete' },
+    compliments:        { label: 'Compliments & Self-Disclosure', minLevel: 'complete' },
+    influenceframing:   { label: 'Influence & Framing',   minLevel: 'complete' },
+    selfhumour:         { label: 'Self-Humour',           minLevel: 'complete' },
     setupstatement: { label: 'Setup Statement', minLevel: 'pro' },
+    firststrategies: { label: 'First Strategies', minLevel: 'freemium' },
+    startingconversations1: { label: 'Starting Conversations 1', minLevel: 'freemium' },
+    showunderstanding: { label: 'Show Understanding', minLevel: 'freemium' },
+    startingconversations4: { label: 'Starting Conversations 4', minLevel: 'extended' },
+    apologizing2: { label: 'Apologizing 2', minLevel: 'extended' },
+    startingconversations2: { label: 'Starting Conversations 2', minLevel: 'pro' },
+    startingconversations3: { label: 'Starting Conversations 3', minLevel: 'pro' },
+    endingconversations: { label: 'Ending Conversations', minLevel: 'pro' },
+    changingtopics: { label: 'Changing Topics', minLevel: 'pro' },
+    reactingtounexpectedstatements: { label: 'Reacting to Unexpected Statements', minLevel: 'pro' },
+    exploringatopic: { label: 'Exploring a Topic', minLevel: 'pro' },
+    deepquestions: { label: 'Deep Questions', minLevel: 'pro' },
+    howtointerrupt: { label: 'How to Interrupt', minLevel: 'pro' },
+    handleinterruptions: { label: 'Handle Interruptions', minLevel: 'pro' },
+    validation: { label: 'Validation', minLevel: 'pro' },
+    supportingconversations: { label: 'Supporting Conversations', minLevel: 'pro' },
+    talkingaboutyourself: { label: 'Talking About Yourself', minLevel: 'pro' },
+    describethings: { label: 'Describe Things', minLevel: 'pro' },
+    explainthings: { label: 'Explain Things', minLevel: 'pro' },
+    givingexamples: { label: 'Giving Examples', minLevel: 'pro' },
+    storytellingwiththesixws: { label: 'Storytelling with the Six W\'s', minLevel: 'pro' },
+    storiesinconversation: { label: 'Stories in Conversation', minLevel: 'pro' },
+    praiseandencouragement: { label: 'Praise and Encouragement', minLevel: 'pro' },
+    givingcriticism: { label: 'Giving Criticism', minLevel: 'pro' },
+    receivingfeedbackandcriticism: { label: 'Receiving Feedback and Criticism', minLevel: 'pro' },
+    apologizing1: { label: 'Apologizing 1', minLevel: 'pro' },
+    agreeing: { label: 'Agreeing', minLevel: 'pro' },
+    disagreeing: { label: 'Disagreeing', minLevel: 'pro' },
+    persuasionandinfluence1: { label: 'Persuasion and Influence 1', minLevel: 'pro' },
+    persuasionandinfluence2: { label: 'Persuasion and Influence 2', minLevel: 'pro' },
+    negotiationandcompromise: { label: 'Negotiation and Compromise', minLevel: 'pro' },
+    brokenrecord: { label: 'Broken Record', minLevel: 'pro' },
+    respondingtopassiveaggression: { label: 'Responding to Passive Aggression', minLevel: 'pro' },
+    makingrequests: { label: 'Making Requests', minLevel: 'pro' },
+    sayingno: { label: 'Saying No', minLevel: 'pro' },
+    emotionlabellingandregulation: { label: 'Emotion Labelling and Regulation', minLevel: 'pro' },
+    conflictemotions: { label: 'Conflict Emotions', minLevel: 'pro' },
+    rolebasedhumour: { label: 'Role Based Humour', minLevel: 'pro' },
   };
 
   // Mode definitions per level
@@ -128,6 +180,22 @@ applyInputCounterVisibility();
     modeHandsfreeChallenges:{ minLevel: 'pro'      },
     modeHandsfreeMindset:   { minLevel: 'pro'      },
     modeHandsfreeMemorize:  { minLevel: 'pro'      },
+  };
+
+  // v1.26.67 — PER-PACK MODE EXCEPTIONS.
+  // First Strategies is the introduction pack and the only place a freemium
+  // user can see what the other modes actually ARE. A hidden lock icon sells
+  // Pro far worse than five minutes of using Challenges does.
+  // THIS IS ONLY SAFE FOR A PACK WHOSE CARDS ARE TAGGED free IN EVERY MODE.
+  // In every other pack only Single Strategy and Memorize carry free cards, so
+  // unlocking a mode there would open onto an empty screen. Check the bundles
+  // before adding a pack to this table.
+  const MODE_FREE_FOR = {
+    firststrategies: [
+      'modeCollections', 'modeFlow', 'modeChallenges', 'modeMindset',
+      'modeHandsfree', 'modeHandsfreeCollections', 'modeHandsfreeSequences',
+      'modeHandsfreeChallenges', 'modeHandsfreeMindset', 'modeHandsfreeMemorize',
+    ],
   };
 
   const LEVEL_ORDER = ['freemium', 'pro', 'complete'];
@@ -311,10 +379,16 @@ applyInputCounterVisibility();
 
   function applyModeLocks() {
     const curLevel = getLevel();
+    // applyModeLocks runs on every pack opening, and activeCollectionKey is
+    // set by then — so the exception table can be read per pack. Both gates
+    // (this one and launch() in app-core.js) read the same CSS class, so
+    // toggling it here is enough to open the mode for real.
+    const freeHere = MODE_FREE_FOR[window.activeCollectionKey] || [];
     Object.entries(MODE_CONFIG).forEach(([id, cfg]) => {
       const el = document.getElementById(id);
       if (!el) return;
-      const accessible = levelIndex(curLevel) >= levelIndex(cfg.minLevel);
+      const accessible = levelIndex(curLevel) >= levelIndex(cfg.minLevel)
+                      || freeHere.indexOf(id) > -1;
       el.classList.toggle('mode-card--locked', !accessible);
       // Remove old badge
       const old = el.querySelector('.mode-lock-badge');
@@ -465,6 +539,550 @@ const BUNDLE_DEFS = {
     },
   ],
   setupstatement: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  firststrategies: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  startingconversations1: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  showunderstanding: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  startingconversations4: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  apologizing2: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  startingconversations2: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  startingconversations3: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  endingconversations: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  changingtopics: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  reactingtounexpectedstatements: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  exploringatopic: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  deepquestions: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  howtointerrupt: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  handleinterruptions: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  validation: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  supportingconversations: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  talkingaboutyourself: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  describethings: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  explainthings: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  givingexamples: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  storytellingwiththesixws: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  storiesinconversation: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  praiseandencouragement: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  givingcriticism: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  receivingfeedbackandcriticism: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  apologizing1: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  agreeing: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  disagreeing: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  persuasionandinfluence1: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  persuasionandinfluence2: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  negotiationandcompromise: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  brokenrecord: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+    {
+      id: 'services',
+      tier: 'pro-opt',
+      name: 'Services',
+      description: '',
+    },
+    {
+      id: 'family',
+      tier: 'extended',
+      name: 'Family',
+      description: '',
+    },
+  ],
+  respondingtopassiveaggression: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  makingrequests: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  sayingno: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  emotionlabellingandregulation: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  conflictemotions: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  rolebasedhumour: [
     {
       id: 'free',
       tier: 'free',
@@ -1745,19 +2363,29 @@ const RECO_RULES = {
     const all       = scored(null);
     const similar   = all.filter(p => p.kind === 'similar');
     const different = all.filter(p => p.kind === 'different');
-    let row = similar.slice(0, R.rowSize - 1).concat(different.slice(0, 1));
-    if (row.length < R.rowSize) {
-      row = row.concat(all.filter(p => row.indexOf(p) === -1).slice(0, R.rowSize - row.length));
-    }
+    const wanted    = similar.slice(0, R.rowSize - 1).concat(different.slice(0, 1));
+    const pool      = wanted.concat(all.filter(p => wanted.indexOf(p) === -1));
+
     // At most one locked pack, and never as the first card — the row should
-    // read as a suggestion, not as a shop window.
-    const unlocked = row.filter(p => !p.locked);
-    const locked   = row.filter(p => p.locked).slice(0, R.maxLocked);
-    row = unlocked.concat(locked).slice(0, R.rowSize);
-    if (row.length && row[0].locked) {
-      const i = row.findIndex(p => !p.locked);
-      if (i > 0) { const t = row[0]; row[0] = row[i]; row[i] = t; }
-    }
+    // read as a suggestion, not as a shop window. v1.26.67: this is applied
+    // across the WHOLE candidate list, not just the three picked first. After
+    // the library import almost every pack is Pro, so filtering a pre-picked
+    // row left a freemium user looking at a row of padlocks.
+    const firstFree = pool.find(p => !p.locked);
+    const row       = firstFree ? [firstFree] : [];
+    let lockedUsed  = 0;
+    pool.forEach(p => {
+      if (p === firstFree || row.length >= R.rowSize) return;
+      if (p.locked) {
+        if (lockedUsed >= R.maxLocked) return;
+        lockedUsed += 1;
+      }
+      row.push(p);
+    });
+    // Only if literally nothing unlocked is left: one locked suggestion still
+    // beats an empty row.
+    if (!row.length && pool.length) row.push(pool[0]);
+
     return row.map(p => Object.assign({}, p, { reason: p.reason + (p.locked ? ' \u00b7 Pro' : '') }));
   }
 

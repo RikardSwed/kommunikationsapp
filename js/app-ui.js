@@ -2552,6 +2552,35 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
   // Kits bundle other items: contents = [{ type: 'pack'|'program'|'bundle', id }].
   const CATALOG = {
     packs: [
+      // v1.26.67 — the two extended packs from the handbook import. Without an
+      // entry here a pack with tier 'extended' is unreachable for EVERYONE,
+      // so these are load-bearing, not decoration.
+      {
+        id: 'startingconversations4',
+        title: 'Starting Conversations 4',
+        icon: 'ti-flame',
+        description: 'The openers that take nerve — approaching a group, saying the thing first, and starting something with no excuse to hide behind.',
+        price: '29 kr',
+        details: [
+          'The fourth and last step of the Starting Conversations ladder. The first three give you the moves; this one is where you use them with nothing to hide behind.',
+          'Every situation here has real risk in it \u2014 walking up to people who are already talking, opening without a reason to be there, saying something personal before you know how it will land.',
+          'Built as a full pack: strategies with worked examples, collections that mix them, challenges, sequences and mindset cards for the part that is actually hard, which is not the words.',
+          'What you\u2019ll get better at: starting things you would normally walk past.',
+        ],
+      },
+      {
+        id: 'apologizing2',
+        title: 'Apologizing 2',
+        icon: 'ti-heart-handshake',
+        description: 'Beyond the correct apology — what to do when sorry is not enough, when it lands badly, and when the damage is older than the conversation.',
+        price: '29 kr',
+        details: [
+          'Apologizing 1 gives you a complete, working apology. This is the depth on top of it: the apology that has to carry real weight.',
+          'Covers what to do when an apology is rejected, when the other person needs to say more before they can accept it, when you have apologised for this before, and when the honest answer is that you cannot undo it.',
+          'The hardest material in the repair topic, and the reason it sits separately \u2014 you can finish the skill without it, and go much further with it.',
+          'What you\u2019ll get better at: staying in the conversation after sorry.',
+        ],
+      },
       {
         id: 'storytelling',
         title: 'Storytelling',
@@ -2582,6 +2611,24 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
       },
     ],
     bundles: [
+      // v1.26.67 — Broken Record's family bundle was already written and only
+      // needed a tier and a shop entry to exist as something buyable.
+      {
+        id: 'brokenrecord::family',
+        packKey: 'brokenrecord',
+        bundleId: 'family',
+        packTitle: 'Broken Record',
+        title: 'Family & Close Relationships',
+        icon: 'ti-home-heart',
+        description: 'Extra inputs for holding a line with the people who know you best — parents, partners, siblings, adult children.',
+        price: '19 kr',
+        details: [
+          'Repeating yourself calmly is easy with a salesman and very hard with your mother. The pressure is older, the pattern is practised, and giving in has thirty years of history behind it.',
+          'This bundle adds a full set of family and close-relationship situations to your Broken Record pack \u2014 the requests that come back every Christmas, the ones dressed up as concern, and the ones that arrive through somebody else.',
+          'The cards plug straight into the strategies you already train, so the extra material turns up inside your normal sessions rather than in a separate place.',
+          'The smallest purchase in Extended, aimed at the situations people actually lose.',
+        ],
+      },
       {
         id: 'assertive::domestic',
         packKey: 'assertive',

@@ -5,7 +5,7 @@
 // (DS.createCardMode / DS.createHandsfreeMode) and are declared in
 // app-modes.js and app-handsfree.js.
 
-const VERSION = 'v1.26.66';
+const VERSION = 'v1.26.67';
 
 // Keep every version label in the UI in sync with VERSION (v1.26.44).
 // The hardcoded strings in index.html are only fallbacks — this runs at
@@ -31,6 +31,44 @@ const PACK_ICONS = {
   storytelling:       'ti-book',
   humourpractise:     'ti-mood-smile',
   setupstatement: 'ti-message-circle',
+  firststrategies: 'ti-compass',
+  startingconversations1: 'ti-message',
+  showunderstanding: 'ti-ear',
+  startingconversations4: 'ti-flame',
+  apologizing2: 'ti-heart-handshake',
+  startingconversations2: 'ti-message',
+  startingconversations3: 'ti-message',
+  endingconversations: 'ti-door',
+  changingtopics: 'ti-arrows-shuffle',
+  reactingtounexpectedstatements: 'ti-alert-triangle',
+  exploringatopic: 'ti-search',
+  deepquestions: 'ti-question-mark',
+  howtointerrupt: 'ti-microphone',
+  handleinterruptions: 'ti-shield',
+  validation: 'ti-heart',
+  supportingconversations: 'ti-friends',
+  talkingaboutyourself: 'ti-user',
+  describethings: 'ti-eye',
+  explainthings: 'ti-bulb',
+  givingexamples: 'ti-puzzle',
+  storytellingwiththesixws: 'ti-book',
+  storiesinconversation: 'ti-quote',
+  praiseandencouragement: 'ti-star',
+  givingcriticism: 'ti-thumb-down',
+  receivingfeedbackandcriticism: 'ti-thumb-up',
+  apologizing1: 'ti-refresh',
+  agreeing: 'ti-check',
+  disagreeing: 'ti-x',
+  persuasionandinfluence1: 'ti-target',
+  persuasionandinfluence2: 'ti-target',
+  negotiationandcompromise: 'ti-scale',
+  brokenrecord: 'ti-repeat',
+  respondingtopassiveaggression: 'ti-mask',
+  makingrequests: 'ti-hand-move',
+  sayingno: 'ti-hand-stop',
+  emotionlabellingandregulation: 'ti-mood-smile',
+  conflictemotions: 'ti-flame',
+  rolebasedhumour: 'ti-mood-happy',
 };
 function packIcon(key) {
   const name = PACK_ICONS[key] || 'ti-cards';

@@ -76,6 +76,120 @@ const packTags = {
   setupstatement: [
     'conversation', 'starting', 'connecting'
   ],
+  firststrategies: [
+    'getting started', 'first conversations', 'beginner', 'everyday talk', 'the basic moves'
+  ],
+  startingconversations1: [
+    'starting conversations', 'openers', 'small talk', 'strangers', 'first words'
+  ],
+  showunderstanding: [
+    'listening', 'understanding', 'empathy', 'conversation'
+  ],
+  startingconversations4: [
+    'starting conversations', 'openers', 'humour', 'saying what you feel', 'approaching people'
+  ],
+  apologizing2: [
+    'apologizing', 'repair', 'when someone is hurt', 'making amends', 'difficult conversations'
+  ],
+  startingconversations2: [
+    'starting conversations', 'openers', 'common ground', 'asking for help', 'small talk'
+  ],
+  startingconversations3: [
+    'starting conversations', 'openers', 'compliments', 'curiosity about people', 'small talk'
+  ],
+  endingconversations: [
+    'ending conversations', 'leaving', 'goodbyes', 'closing a conversation', 'exits'
+  ],
+  changingtopics: [
+    'conversation', 'transitions', 'managing'
+  ],
+  reactingtounexpectedstatements: [
+    'caught off guard', 'not knowing what to say', 'buying time', 'surprising remarks', 'thinking before answering'
+  ],
+  exploringatopic: [
+    'conversation', 'group conversation', 'topics'
+  ],
+  deepquestions: [
+    'conversation', 'curiosity', 'connection'
+  ],
+  howtointerrupt: [
+    'interrupting', 'groups', 'speaking up', 'conversation'
+  ],
+  handleinterruptions: [
+    'conversation', 'interruptions', 'assertiveness'
+  ],
+  validation: [
+    'validation', 'listening', 'empathy', 'support'
+  ],
+  supportingconversations: [
+    'supporting someone', 'listening', 'what they need', 'comforting', 'being there'
+  ],
+  talkingaboutyourself: [
+    'answering questions', 'small talk', 'self-disclosure', 'opening up', 'what do you do', 'being asked about yourself'
+  ],
+  describethings: [
+    'describing', 'detail', 'vocabulary', 'painting a picture', 'being specific'
+  ],
+  explainthings: [
+    'explaining', 'clarity', 'instructions', 'describing', 'making yourself understood'
+  ],
+  givingexamples: [
+    'examples', 'being concrete', 'making a point land', 'evidence', 'illustrating'
+  ],
+  storytellingwiththesixws: [
+    'storytelling', 'structure', 'clarity', 'conversation'
+  ],
+  storiesinconversation: [
+    'telling a story', 'anecdotes', 'taking the floor', 'group conversation', 'when a story lands', 'holding attention'
+  ],
+  praiseandencouragement: [
+    'praise', 'encouragement', 'appreciation', 'positive feedback', 'building confidence'
+  ],
+  givingcriticism: [
+    'giving criticism', 'feedback', 'correcting someone', 'constructive criticism', 'difficult conversations'
+  ],
+  receivingfeedbackandcriticism: [
+    'feedback', 'criticism', 'composure'
+  ],
+  apologizing1: [
+    'apologizing', 'saying sorry', 'owning a mistake', 'everyday apologies', 'putting it right'
+  ],
+  agreeing: [
+    'agreeing', 'opinions', 'support', 'conversation'
+  ],
+  disagreeing: [
+    'disagreeing', 'different opinion', 'pushing back', 'discussion', 'standing your ground'
+  ],
+  persuasionandinfluence1: [
+    'persuasion', 'influence', 'making a case', 'changing minds', 'getting agreement'
+  ],
+  persuasionandinfluence2: [
+    'persuasion', 'influence', 'lowering resistance', 'getting agreement', 'guiding not pushing'
+  ],
+  negotiationandcompromise: [
+    'negotiation', 'compromise', 'finding a solution', 'meeting halfway', 'agreeing on a plan'
+  ],
+  brokenrecord: [
+    'broken record', 'standing your ground', 'pressure', 'holding a position', 'assertiveness'
+  ],
+  respondingtopassiveaggression: [
+    'passive aggression', 'sarcasm', 'digs', 'indirect criticism', 'staying calm'
+  ],
+  makingrequests: [
+    'asking for things', 'favours', 'asking for help', 'being direct', 'hinting', 'requests at work'
+  ],
+  sayingno: [
+    'saying no', 'declining', 'boundaries', 'turning down requests', 'refusing politely'
+  ],
+  emotionlabellingandregulation: [
+    'emotions', 'self-awareness', 'composure', 'listening'
+  ],
+  conflictemotions: [
+    'conflict', 'expressing feelings', 'needs', 'difficult conversations', 'saying what bothers you'
+  ],
+  rolebasedhumour: [
+    'humour', 'banter', 'playfulness', 'characters'
+  ],
 };
 
 // ─── TOPICS ──────────────────────────────────────────────────────────
@@ -104,35 +218,36 @@ const packTags = {
 // emotionalboundaries merged into emotions and boundaries.
 const TOPICS = [
   // ── Getting a conversation going ──────────────────────────────────
-  { id: 'startingconversations', title: 'Starting Conversations',        packs: ['startingconnecting', 'setupstatement'] },
-  { id: 'questions',             title: 'Questions & Curiosity',         packs: [] },
-  { id: 'flowtransitions',       title: 'Flow & Transitions',            packs: ['conversational', 'transitions'] },
-  { id: 'endingconversations',   title: 'Ending Conversations',          packs: [] },
+  { id: 'startingconversations', title: 'Starting Conversations',        packs: ['startingconnecting', 'setupstatement', 'firststrategies', 'startingconversations1', 'startingconversations4', 'startingconversations2', 'startingconversations3'] },
+  { id: 'questions',             title: 'Questions & Curiosity',         packs: ['exploringatopic', 'deepquestions'] },
+  { id: 'flowtransitions',       title: 'Flow & Transitions',            packs: ['conversational', 'transitions', 'changingtopics', 'reactingtounexpectedstatements'] },
+  { id: 'endingconversations',   title: 'Ending Conversations',          packs: ['endingconversations'] },
 
   // ── Being with the other person ───────────────────────────────────
-  { id: 'listening',             title: 'Listening & Understanding',     packs: ['listeningresponding'] },
-  { id: 'depth',                 title: 'Depth & Connection',            packs: ['conversationaldepth'] },
+  { id: 'listening',             title: 'Listening & Understanding',     packs: ['listeningresponding', 'showunderstanding', 'validation'] },
+  { id: 'depth',                 title: 'Depth & Connection',            packs: ['conversationaldepth', 'supportingconversations', 'talkingaboutyourself'] },
 
   // ── Holding the floor ─────────────────────────────────────────────
-  { id: 'storytelling',          title: 'Storytelling',                  packs: ['storytelling'] },
-  { id: 'explaining',            title: 'Explaining & Describing',       packs: [] },
-  { id: 'interruptions',         title: 'Interruptions & Speaking Up',   packs: ['speakingupingroups'] },
+  { id: 'storytelling',          title: 'Storytelling',                  packs: ['storytelling', 'storytellingwiththesixws', 'storiesinconversation'] },
+  { id: 'explaining',            title: 'Explaining & Describing',       packs: ['describethings', 'explainthings', 'givingexamples'] },
+  { id: 'interruptions',         title: 'Interruptions & Speaking Up',   packs: ['speakingupingroups', 'howtointerrupt', 'handleinterruptions'] },
 
   // ── Giving and taking it ──────────────────────────────────────────
-  { id: 'praise',                title: 'Praise & Compliments',          packs: ['compliments'] },
-  { id: 'feedback',              title: 'Feedback & Criticism',          packs: ['criticism'] },
+  { id: 'praise',                title: 'Praise & Compliments',          packs: ['compliments', 'praiseandencouragement'] },
+  { id: 'feedback',              title: 'Feedback & Criticism',          packs: ['criticism', 'givingcriticism', 'receivingfeedbackandcriticism'] },
+  { id: 'repair',                title: 'Repair & Apology',              packs: ['apologizing2', 'apologizing1'] },
 
   // ── Standing your ground ──────────────────────────────────────────
-  { id: 'opinions',              title: 'Opinions & Argumentation',      packs: ['influenceframing'] },
-  { id: 'persuasion',            title: 'Persuasion & Negotiation',      packs: ['influenceframing'] },
-  { id: 'assertiveness',         title: 'Assertiveness & Pressure',      packs: ['assertive'] },
-  { id: 'boundaries',            title: 'Boundaries & Saying No',        packs: ['playfulrefusals', 'thehappyno', 'theregretfulno'] },
+  { id: 'opinions',              title: 'Opinions & Argumentation',      packs: ['influenceframing', 'agreeing', 'disagreeing'] },
+  { id: 'persuasion',            title: 'Persuasion & Negotiation',      packs: ['influenceframing', 'persuasionandinfluence1', 'persuasionandinfluence2', 'negotiationandcompromise'] },
+  { id: 'assertiveness',         title: 'Assertiveness & Pressure',      packs: ['assertive', 'brokenrecord', 'respondingtopassiveaggression'] },
+  { id: 'boundaries',            title: 'Asking & Saying No',            packs: ['playfulrefusals', 'thehappyno', 'theregretfulno', 'makingrequests', 'sayingno'] },
 
   // ── The hard end ──────────────────────────────────────────────────
-  { id: 'emotions',              title: 'Emotions & Regulation',         packs: [] },
+  { id: 'emotions',              title: 'Emotions & Regulation',         packs: ['emotionlabellingandregulation', 'conflictemotions'] },
 
   // ── Lightness ─────────────────────────────────────────────────────
-  { id: 'humour',                title: 'Humour & Banter',               packs: ['humour', 'teasing', 'selfhumour', 'humourpractise', 'playfulrefusals'] },
+  { id: 'humour',                title: 'Humour & Banter',               packs: ['humour', 'teasing', 'selfhumour', 'humourpractise', 'playfulrefusals', 'rolebasedhumour'] },
 
   // ── Placeholders: no material yet, hidden below Complete ──────────
   { id: 'bodyvoice',             title: 'Body Language & Voice',         packs: [] },
