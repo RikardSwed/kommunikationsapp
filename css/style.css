@@ -3267,6 +3267,37 @@ body.feedback-mode    .al-bar { display: none !important; }
    since it is opened from inside it — the shared .settings-overlay class only
    has z-index 100 (v1.26.38 fix). */
 #aboutOverlay { z-index: 800; }
+
+/* Same rule, same reason (v1.26.66): these four are all reachable from inside
+   the full-screen settings panel — What's new from its own row, and the other
+   three from the developer preview buttons. At the shared z-index 100 they
+   open BEHIND the settings screen and look like a dead button. Anything new
+   that can be opened from Settings needs this line too. */
+#whatsNewOverlay,
+#proNudgeOverlay,
+#recoOverlay,
+#ratingOverlay { z-index: 800; }
+
+/* Next-pack suggestion (v1.26.66) */
+.reco-icon   { text-align: center; font-size: 30px; color: var(--ds-acc); margin-bottom: 6px; }
+.reco-reason { font-size: 14px; color: var(--ds-txt2); text-align: center; line-height: 1.6; margin: 6px 0 14px; }
+.reco-pack {
+  display: flex; align-items: center; justify-content: center; gap: 8px;
+  background: var(--ds-card); border: 1px solid var(--ds-border-sub);
+  border-radius: 12px; padding: 14px 16px; margin-bottom: 16px;
+}
+.reco-pack-name { font-size: 16px; font-weight: 700; color: var(--ds-txt); }
+.reco-pack-tag {
+  font-size: 10px; font-weight: 800; letter-spacing: 0.04em;
+  color: var(--ds-acc); border: 1px solid var(--ds-acc);
+  border-radius: 5px; padding: 2px 5px;
+}
+.reco-never {
+  display: block; width: 100%; margin-top: 2px; padding: 8px;
+  border: none; background: none; font-family: inherit;
+  font-size: 13px; color: var(--ds-txt3); cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
 .about-body p {
   font-size: 14px;
   line-height: 1.55;
