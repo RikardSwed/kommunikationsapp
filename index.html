@@ -98,6 +98,14 @@
     <p class="ob-text ob-text--dim">Everything is adjustable in the handsfree settings &mdash; like how much thinking time you get, the voice, and the pace.</p>
   </div>
 
+  <!-- Step 7 — Settling tip (v1.26.66) -->
+  <div class="ob-step" data-step="6" style="display:none;">
+    <h2 class="ob-title">One tip before you start</h2>
+    <p class="ob-text">Don&rsquo;t use tomorrow what you only learned yesterday.</p>
+    <p class="ob-text">A strategy you&rsquo;ve just met still sounds like a strategy. Let it sit, rehearse it a few times, and it starts coming out in <strong>your own voice</strong>.</p>
+    <p class="ob-text ob-text--dim">Rehearse now. Use it when it stops feeling new.</p>
+  </div>
+
   <div class="ob-bottom">
     <button class="ob-next" id="obNextBtn">Continue</button>
   </div>
@@ -2195,6 +2203,25 @@
     <div class="settings-title">What&rsquo;s new</div>
     <div class="whatsnew-body" id="whatsNewBody"></div>
     <button class="settings-close" id="whatsNewClose">Done</button>
+  </div>
+</div>
+
+<!-- PRO NUDGE (v1.26.66) — occasional upgrade prompt for freemium users.
+     Timing and the interval rules live in initProNudge() in app-system.js. -->
+<div class="settings-overlay" id="proNudgeOverlay">
+  <div class="settings-panel">
+    <div class="pronudge-crown"><i class="ti ti-crown"></i></div>
+    <div class="settings-title" style="text-align:center;">Deckstack Pro</div>
+    <p class="pronudge-lead">You&rsquo;re training with a small part of Deckstack. Pro opens the rest.</p>
+    <ul class="pronudge-list">
+      <li>More packs to train with</li>
+      <li>Every training mode, not just Flashcards and Memorize</li>
+      <li>More to practise per strategy</li>
+      <li>More programs to work through</li>
+    </ul>
+    <p class="pronudge-trial">Starts with a free week.</p>
+    <button class="settings-close" id="proNudgeSee">See plans</button>
+    <button class="pronudge-later" id="proNudgeLater">Not now</button>
   </div>
 </div>
 
