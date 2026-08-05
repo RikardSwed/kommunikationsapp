@@ -1275,6 +1275,19 @@ const WHATS_NEW = [
   overlay.addEventListener('click', e => { if (e.target === overlay) overlay.classList.remove('open'); });
 })();
 
+// ─── SHARED PROMPT SPACING (v1.26.66) ──────────────────────────────
+// Every prompt the app raises on its own — the Pro nudge, the rating gate —
+// writes its timestamp here, and none of them may appear within a few days of
+// another. Without this the two can stack on the same afternoon and the app
+// starts to feel like it wants something from you.
+const DS_PROMPT_KEY      = 'ds_last_prompt';
+const DS_PROMPT_GAP_DAYS = 3;
+function dsPromptRecently(days) {
+  const t = parseInt(localStorage.getItem(DS_PROMPT_KEY) || '0', 10);
+  return t > 0 && (Date.now() - t) / 86400000 < (days || DS_PROMPT_GAP_DAYS);
+}
+function dsMarkPrompt() { try { localStorage.setItem(DS_PROMPT_KEY, String(Date.now())); } catch {} }
+
 // ─── PRO NUDGE (v1.26.66) ────────────────────────────────────────
 // Freemium users get an occasional reminder that Pro exists. All the pacing
 // sits in PRO_NUDGE_RULES so it can be tuned in one place. The intent: it
@@ -1324,16 +1337,21 @@ const PRO_NUDGE_RULES = {
   }
 
   function show(reason) {
-    if (!isFreemium() || busy()) return false;
+    if (!isFreemium() || busy() || dsPromptRecently()) return false;
     const s = state();
     s.shown         += 1;
     s.lastShown      = Date.now();
     s.sessionsAtLast = s.sessions;
     s.lastReason     = reason;
     save(s);
+    dsMarkPrompt();
     overlay.classList.add('open');
     return true;
   }
+
+  // Developer preview: opens the screen without touching any of the timers,
+  // so looking at it does not push the real one further away.
+  function preview() { overlay.classList.add('open'); }
 
   // Time- and usage-based check. Runs at startup and when the user comes back
   // to the dashboard, so the session rule can fire without waiting a restart.
@@ -1389,7 +1407,249 @@ const PRO_NUDGE_RULES = {
   setTimeout(maybeShowPeriodic, 2500);
 
   // Exposed for the developer settings and for tests
-  window._proNudge = { state, show, maybeShowPeriodic, rules: R };
+  window._proNudge = { state, show, preview, maybeShowPeriodic, rules: R };
+})();
+
+// ─── RATING GATE (v1.26.66) ────────────────────────────────────
+// Ask how it is going BEFORE asking for a review: a happy answer goes to
+// Apple's own rating dialog, an unhappy one goes to a private message to the
+// developer instead of a one-star review. Nothing about the user is collected
+// either way — the only thing that ever leaves the device is text they typed.
+//
+// TO FINISH BEFORE RELEASE:
+//   1. FEEDBACK_ENDPOINT — paste the Formspree form URL. Until it is set,
+//      messages are kept in a local queue and sent once it is.
+//   2. APP_STORE_ID — the numeric id, once the app exists in the store. Used
+//      only as a fallback when the native plugin is not available.
+//   3. In DeckstackApp: npm i @capacitor-community/in-app-review (8.x for
+//      Capacitor 8 — the major tracks Capacitor's, same trap as the TTS
+//      plugin), then npx cap sync on the Mac.
+const FEEDBACK_ENDPOINT = '';   // e.g. 'https://formspree.io/f/xxxxxxxx'
+const APP_STORE_ID      = '';   // e.g. '1234567890'
+
+const RATING_RULES = {
+  minSessionMinutes: 3,      // a pack session at least this long can trigger it
+  streakDays:      [7, 14],  // each of these streaks may trigger it once, ever
+  graceDays:         4,      // never in the first days after install
+  askAgainDays:     60,      // after an ask that was ignored or dismissed
+  answeredQuietDays: 240,    // after the user actually answered, leave them be
+};
+
+(function initRatingGate() {
+  const KEY     = 'ds_rating';
+  const QKEY    = 'ds_feedback_queue';
+  const DAY     = 86400000;
+  const R       = RATING_RULES;
+  const overlay = document.getElementById('ratingOverlay');
+  if (!overlay) return;
+
+  const panels = {
+    ask:    document.getElementById('ratingAsk'),
+    thanks: document.getElementById('ratingThanks'),
+    form:   document.getElementById('ratingForm'),
+  };
+
+  const load = () => { try { return JSON.parse(localStorage.getItem(KEY)) || {}; } catch { return {}; } };
+  const save = s => { try { localStorage.setItem(KEY, JSON.stringify(s)); } catch {} };
+  const daysSince = ts => (Date.now() - ts) / DAY;
+
+  function state() {
+    const s = load();
+    if (!s.installed) { s.installed = Date.now(); save(s); }
+    s.asks        = s.asks        || 0;
+    s.usedStreaks = s.usedStreaks || [];
+    return s;
+  }
+
+  // Native discovery follows the lesson from the TTS plugin: www/ is plain
+  // script tags with no bundler, so the plugin's own JS is never loaded and
+  // Capacitor.Plugins can be empty even when the native half is installed.
+  // Ask the bridge directly instead.
+  function reviewPlugin() {
+    try {
+      const C = window.Capacitor;
+      if (!C || !C.isNativePlatform || !C.isNativePlatform()) return null;
+      if (C.registerPlugin) return C.registerPlugin('InAppReview');
+      return (C.Plugins && C.Plugins.InAppReview) || null;
+    } catch { return null; }
+  }
+
+  function panel(name) {
+    Object.keys(panels).forEach(k => { if (panels[k]) panels[k].style.display = (k === name ? '' : 'none'); });
+  }
+  function open(which) { panel(which || 'ask'); overlay.classList.add('open'); }
+  function closeIt() { overlay.classList.remove('open'); }
+
+  function busy() {
+    if (!localStorage.getItem('ds_onboarding_done')) return true;
+    const intro = document.getElementById('packIntroScreen');
+    if (intro && intro.style.display !== 'none') return true;
+    return !!document.querySelector('.settings-overlay.open');
+  }
+
+  function eligible() {
+    const s = state();
+    if (daysSince(s.installed) < R.graceDays) return false;
+    if (s.answered && daysSince(s.answeredAt || 0) < R.answeredQuietDays) return false;
+    if (s.lastAsk && daysSince(s.lastAsk) < R.askAgainDays) return false;
+    if (dsPromptRecently()) return false;
+    return !busy();
+  }
+
+  function ask(reason) {
+    if (!eligible()) return false;
+    const s = state();
+    s.lastAsk    = Date.now();
+    s.asks      += 1;
+    s.lastReason = reason;
+    save(s);
+    dsMarkPrompt();
+    open('ask');
+    return true;
+  }
+
+  // ─ Sending ─────────────────────────────────────────────────
+  // A failed send is queued and retried at the next launch, so a message
+  // written on a train is not lost. The queue holds only what the user wrote.
+  const readQ  = () => { try { return JSON.parse(localStorage.getItem(QKEY)) || []; } catch { return []; } };
+  const writeQ = q => { try { localStorage.setItem(QKEY, JSON.stringify(q)); } catch {} };
+
+  function post(item) {
+    if (!FEEDBACK_ENDPOINT) return Promise.resolve(false);
+    return fetch(FEEDBACK_ENDPOINT, {
+      method:  'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body:    JSON.stringify({ message: item.message, version: item.version }),
+    }).then(res => !!res.ok).catch(() => false);
+  }
+
+  function flushQueue() {
+    const q = readQ();
+    if (!q.length || !FEEDBACK_ENDPOINT) return Promise.resolve();
+    return q.reduce((chain, item) =>
+      chain.then(left => post(item).then(sent => (sent ? left : left.concat([item])))),
+      Promise.resolve([])
+    ).then(writeQ);
+  }
+
+  // ─ Answers ────────────────────────────────────────────────
+  const yesBtn    = document.getElementById('ratingYes');
+  const noBtn     = document.getElementById('ratingNo');
+  const sendBtn   = document.getElementById('ratingSend');
+  const skipBtn   = document.getElementById('ratingSkip');
+  const doneBtn   = document.getElementById('ratingThanksClose');
+  const textEl    = document.getElementById('ratingFormText');
+  const thanksTxt = document.getElementById('ratingThanksText');
+
+  function markAnswered(kind) {
+    const s = state();
+    s.answered   = kind;
+    s.answeredAt = Date.now();
+    save(s);
+  }
+
+  if (yesBtn) yesBtn.addEventListener('click', () => {
+    markAnswered('yes');
+    const plugin = reviewPlugin();
+    panel('thanks');
+    if (plugin && plugin.requestReview) {
+      if (thanksTxt) thanksTxt.textContent = 'That means a lot.';
+      try { Promise.resolve(plugin.requestReview()).catch(() => {}); } catch {}
+    } else if (APP_STORE_ID) {
+      if (thanksTxt) thanksTxt.textContent = 'A rating in the App Store helps other people find Deckstack.';
+      try { window.open('https://apps.apple.com/app/id' + APP_STORE_ID + '?action=write-review', '_blank'); } catch {}
+    } else if (thanksTxt) {
+      thanksTxt.textContent = 'That means a lot. If you have a moment, a rating in the App Store helps other people find Deckstack.';
+    }
+  });
+
+  if (noBtn) noBtn.addEventListener('click', () => panel('form'));
+
+  if (sendBtn) sendBtn.addEventListener('click', () => {
+    const msg = ((textEl && textEl.value) || '').trim();
+    markAnswered('feedback');
+    if (!msg) { closeIt(); return; }          // writing nothing sends nothing
+    const item = {
+      message: msg,
+      version: (typeof VERSION !== 'undefined' ? VERSION : ''),
+      at:      new Date().toISOString(),
+    };
+    if (textEl) textEl.value = '';
+    if (thanksTxt) thanksTxt.textContent = 'Thank you \u2014 your message is on its way to the developer.';
+    panel('thanks');
+    post(item).then(sent => { if (!sent) writeQ(readQ().concat([item])); });
+  });
+
+  if (skipBtn) skipBtn.addEventListener('click', closeIt);
+  if (doneBtn) doneBtn.addEventListener('click', closeIt);
+  overlay.addEventListener('click', e => { if (e.target === overlay) closeIt(); });
+
+  // ─ Triggers ───────────────────────────────────────────────
+  // 1. A pack session of a few minutes. Timed here rather than read from
+  //    Progress, because progress tracking is off unless the user enables it.
+  let startedAt = 0;
+  const origShowMode = window.showModeScreen;
+  if (typeof origShowMode === 'function') {
+    window.showModeScreen = function () {
+      startedAt = Date.now();
+      return origShowMode.apply(this, arguments);
+    };
+  }
+  const origCloseTraining = window.closeTraining;
+  if (typeof origCloseTraining === 'function') {
+    window.closeTraining = function () {
+      const minutes = startedAt ? (Date.now() - startedAt) / 60000 : 0;
+      startedAt = 0;
+      const out = origCloseTraining.apply(this, arguments);
+      if (minutes >= R.minSessionMinutes) setTimeout(() => ask('session'), 900);
+      return out;
+    };
+  }
+
+  // 2. A streak worth noticing. Each length fires at most once, ever.
+  function checkStreak() {
+    let cur = 0;
+    try { cur = JSON.parse(localStorage.getItem('prog_streak_cur')) || 0; } catch {}
+    const s   = state();
+    const hit = R.streakDays.filter(d => cur >= d && s.usedStreaks.indexOf(d) === -1).pop();
+    if (!hit) return false;
+    if (!ask('streak' + hit)) return false;
+    const after = state();
+    after.usedStreaks = after.usedStreaks.concat([hit]);
+    save(after);
+    return true;
+  }
+
+  setTimeout(checkStreak, 3500);
+  setTimeout(flushQueue, 5000);
+
+  window._rating = { state, ask, open, close: closeIt, checkStreak, flushQueue, queue: readQ, rules: R };
+})();
+
+// ─── DEVELOPER PREVIEWS (v1.26.66) ────────────────────────────────
+// Screens that normally take days of real use to appear. Every preview opens
+// the screen WITHOUT touching its timers, so looking at one does not change
+// when the real one turns up.
+(function initDevPreviews() {
+  const on = (id, fn) => { const el = document.getElementById(id); if (el) el.addEventListener('click', fn); };
+
+  on('devShowProNudge', () => { if (window._proNudge) window._proNudge.preview(); });
+  on('devShowRating',   () => { if (window._rating) window._rating.open('ask'); });
+  on('devShowFeedback', () => { if (window._rating) window._rating.open('form'); });
+  on('devShowWhatsNew', () => {
+    const o = document.getElementById('whatsNewOverlay');
+    if (o) o.classList.add('open');
+  });
+  on('devShowPackIntro', () => {
+    let k = window.activeCollectionKey;
+    if (!k) { try { k = (JSON.parse(localStorage.getItem('dash_last_pack') || 'null') || {}).key; } catch {} }
+    if (k && window.replayPackIntro) window.replayPackIntro(k);
+    else if (window.showToast) showToast('Open a pack once first.');
+  });
+  on('devResetPrompts', () => {
+    ['ds_pro_nudge', 'ds_rating', 'ds_last_prompt'].forEach(k => localStorage.removeItem(k));
+    if (window.showToast) showToast('Prompt timers cleared \u2014 both screens can appear again.');
+  });
 })();
 
 // ─── DEVELOPER SETTINGS UNLOCK (v1.26.35) ──────────────────────────────
