@@ -1170,7 +1170,7 @@ const resetFirstRunBtn = document.getElementById('resetFirstRunBtn');
 if (resetFirstRunBtn) resetFirstRunBtn.addEventListener('click', () => {
   ['fav_packs', 'dash_last_pack', 'ds_last_modes', 'ds_tap_hint_count',
    'ds_onboarding_done', 'ds_onboarding', 'ds_reco_packs',
-   'ds_seen_home', 'ds_pro_nudge'].forEach(k => localStorage.removeItem(k));
+   'ds_seen_home', 'ds_pro_nudge', 'ds_reco'].forEach(k => localStorage.removeItem(k));
   // Pack intro counters (v1.26.44) — dynamic keys, one per pack
   Object.keys(localStorage).filter(k => k.indexOf('ds_packintro_') === 0)
     .forEach(k => localStorage.removeItem(k));
@@ -1626,6 +1626,247 @@ const RATING_RULES = {
   window._rating = { state, ask, open, close: closeIt, checkStreak, flushQueue, queue: readQ, rules: R };
 })();
 
+// ─── RECOMMENDATIONS (v1.26.66) ──────────────────────────────────
+// Two surfaces, deliberately unequal:
+//   THE ROW on the dashboard is the primary one. It updates silently, costs
+//   the user nothing, and is always there.
+//   THE SCREEN after a session is the exception. It interrupts, so it is
+//   rationed hard and shares `ds_last_prompt` with the Pro nudge and the
+//   rating gate — no two self-raised prompts within a few days of each other.
+//
+// The signal is minutes per TOPIC, summed from this module's own per-pack
+// timer rather than from prog_sessions, because progress tracking is off
+// unless the user turns it on and the recommendation would then never learn
+// anything. Onboarding picks seed it until there is real data.
+//
+// Two kinds of suggestion only — "more like this" and "something different".
+// A third category would need a hand-written map of which topics are far
+// apart from each other, which is a content decision, not a code one.
+const RECO_RULES = {
+  minSessionMinutes: 5,    // a session at least this long may trigger the screen
+  everyDays:         5,    // and the screen appears at most this often
+  dismissDays:      90,    // "not interested" hides a pack for this long, not forever
+  maxLocked:         1,    // at most one locked pack in the row
+  rowSize:           3,
+};
+
+(function initRecommendations() {
+  const KEY = 'ds_reco';
+  const DAY = 86400000;
+  const R   = RECO_RULES;
+
+  const load = () => { try { return JSON.parse(localStorage.getItem(KEY)) || {}; } catch { return {}; } };
+  const save = s => { try { localStorage.setItem(KEY, JSON.stringify(s)); } catch {} };
+  const daysSince = ts => (Date.now() - ts) / DAY;
+
+  function state() {
+    const s = load();
+    s.minutes   = s.minutes   || {};   // packKey -> minutes trained
+    s.dismissed = s.dismissed || {};   // packKey -> timestamp of "not interested"
+    s.shown     = s.shown     || 0;
+    return s;
+  }
+
+  // The pack cards in index.html are the app's master register (search,
+  // favorites, folders and Topics all read them), so the library is the right
+  // place to ask what packs exist — imported packs appear here automatically.
+  function libraryPacks() {
+    return Array.from(document.querySelectorAll('#libTabPacks .collection-card'))
+      .map(c => ({ key: c.dataset.key, label: c.dataset.label }))
+      .filter(p => p.key && p.label);
+  }
+  const topicsFor = key =>
+    (typeof TOPICS !== 'undefined' ? TOPICS : []).filter(t => (t.packs || []).indexOf(key) > -1);
+  const isLocked = key => !!(window.accessLevel && !window.accessLevel.canAccess(key));
+
+  // Minutes per topic. Falls back to the onboarding picks so a new user still
+  // gets something better than a static list on day one.
+  function topicWeights() {
+    const s = state();
+    const w = {};
+    let any = false;
+    Object.keys(s.minutes).forEach(k => {
+      topicsFor(k).forEach(t => { w[t.id] = (w[t.id] || 0) + s.minutes[k]; any = true; });
+    });
+    if (any) return { weights: w, seeded: false };
+    try {
+      (JSON.parse(localStorage.getItem('ds_reco_packs') || '[]') || []).forEach(p => {
+        if (p && p.key) topicsFor(p.key).forEach(t => { w[t.id] = (w[t.id] || 0) + 1; });
+      });
+    } catch {}
+    return { weights: w, seeded: true };
+  }
+
+  const topicTitle = id => {
+    const t = (typeof TOPICS !== 'undefined' ? TOPICS : []).find(x => x.id === id);
+    return t ? t.title : '';
+  };
+
+  // Everything the user has not trained, is not currently in, and has not
+  // waved away in the last dismissDays.
+  function candidates(excludeKey) {
+    const s = state();
+    const last = (function () {
+      try { return (JSON.parse(localStorage.getItem('dash_last_pack') || 'null') || {}).key; } catch { return null; }
+    })();
+    return libraryPacks().filter(p =>
+      !s.minutes[p.key] &&
+      p.key !== excludeKey &&
+      p.key !== last &&
+      !(s.dismissed[p.key] && daysSince(s.dismissed[p.key]) < R.dismissDays)
+    );
+  }
+
+  // Score a pack by how much time the user has spent in its topics, and say
+  // which topic earned it the score — that sentence is the whole point of the
+  // suggestion, since a recommendation without a reason reads as an advert.
+  function scored(excludeKey) {
+    const { weights, seeded } = topicWeights();
+    return candidates(excludeKey).map(p => {
+      let best = null, score = 0;
+      topicsFor(p.key).forEach(t => {
+        const v = weights[t.id] || 0;
+        score += v;
+        if (v > 0 && (!best || v > (weights[best] || 0))) best = t.id;
+      });
+      return {
+        key: p.key, label: p.label, score, locked: isLocked(p.key),
+        kind:   score > 0 ? 'similar' : 'different',
+        reason: score > 0
+          ? (seeded ? 'From your onboarding picks' : 'Close to ' + topicTitle(best))
+          : 'A new area to try',
+      };
+    }).sort((a, b) => b.score - a.score);
+  }
+
+  // The dashboard row: mostly what they already like, with one deliberate
+  // step sideways so the library does not shrink to three packs.
+  function forDashboard() {
+    const all       = scored(null);
+    const similar   = all.filter(p => p.kind === 'similar');
+    const different = all.filter(p => p.kind === 'different');
+    let row = similar.slice(0, R.rowSize - 1).concat(different.slice(0, 1));
+    if (row.length < R.rowSize) {
+      row = row.concat(all.filter(p => row.indexOf(p) === -1).slice(0, R.rowSize - row.length));
+    }
+    // At most one locked pack, and never as the first card — the row should
+    // read as a suggestion, not as a shop window.
+    const unlocked = row.filter(p => !p.locked);
+    const locked   = row.filter(p => p.locked).slice(0, R.maxLocked);
+    row = unlocked.concat(locked).slice(0, R.rowSize);
+    if (row.length && row[0].locked) {
+      const i = row.findIndex(p => !p.locked);
+      if (i > 0) { const t = row[0]; row[0] = row[i]; row[i] = t; }
+    }
+    return row.map(p => Object.assign({}, p, { reason: p.reason + (p.locked ? ' \u00b7 Pro' : '') }));
+  }
+
+  // ─ The screen ───────────────────────────────────────────────
+  const overlay = document.getElementById('recoOverlay');
+  let current = null;
+
+  function busy() {
+    if (!localStorage.getItem('ds_onboarding_done')) return true;
+    const intro = document.getElementById('packIntroScreen');
+    if (intro && intro.style.display !== 'none') return true;
+    return !!document.querySelector('.settings-overlay.open');
+  }
+
+  function render(pick) {
+    current = pick;
+    const reason = document.getElementById('recoReason');
+    const pack   = document.getElementById('recoPack');
+    if (reason) reason.textContent = pick.kind === 'different'
+      ? 'Something a bit different from what you have been training.'
+      : pick.reason.replace(/^Close to /, 'Because you have been training ') + '.';
+    if (pack) pack.innerHTML = '<div class="reco-pack-name">' + pick.label + '</div>'
+      + (pick.locked ? '<div class="reco-pack-tag">Pro</div>' : '');
+  }
+
+  // Alternates between the two kinds, so a run of suggestions does not narrow
+  // the user into one corner of the library.
+  function suggest(afterKey) {
+    if (!overlay || busy()) return false;
+    const s    = state();
+    const all  = scored(afterKey);
+    if (!all.length) return false;
+    const wantDifferent = (s.shown % 2) === 1;
+    const pool = all.filter(p => (p.kind === 'different') === wantDifferent);
+    const pick = (pool.length ? pool : all)[0];
+    s.shown += 1;
+    s.lastSuggest = Date.now();
+    save(s);
+    dsMarkPrompt();
+    render(pick);
+    overlay.classList.add('open');
+    return true;
+  }
+
+  function maybeSuggest(afterKey, minutes) {
+    if (minutes < R.minSessionMinutes) return false;
+    const s = state();
+    if (s.lastSuggest && daysSince(s.lastSuggest) < R.everyDays) return false;
+    if (dsPromptRecently()) return false;
+    return suggest(afterKey);
+  }
+
+  // Developer preview: opens the screen without spending the interval.
+  function preview() {
+    const all = scored(null);
+    if (!all.length) { if (window.showToast) showToast('Nothing left to suggest.'); return false; }
+    render(all[0]);
+    overlay.classList.add('open');
+    return true;
+  }
+
+  const closeIt = () => overlay && overlay.classList.remove('open');
+  if (overlay) {
+    const openBtn  = document.getElementById('recoOpen');
+    const laterBtn = document.getElementById('recoLater');
+    const neverBtn = document.getElementById('recoNever');
+    if (openBtn)  openBtn.addEventListener('click', () => {
+      const p = current; closeIt();
+      if (p && window.showModeScreen) showModeScreen(p.key, p.label);
+    });
+    if (laterBtn) laterBtn.addEventListener('click', closeIt);
+    if (neverBtn) neverBtn.addEventListener('click', () => {
+      if (current) { const s = state(); s.dismissed[current.key] = Date.now(); save(s); }
+      closeIt();
+      if (window._personalizeRecommended) window._personalizeRecommended();
+    });
+    overlay.addEventListener('click', e => { if (e.target === overlay) closeIt(); });
+  }
+
+  // ─ Learning ───────────────────────────────────────────────
+  let openedKey = null, openedAt = 0;
+  const origShowMode = window.showModeScreen;
+  if (typeof origShowMode === 'function') {
+    window.showModeScreen = function (key) {
+      if (!isLocked(key)) { openedKey = key; openedAt = Date.now(); }
+      return origShowMode.apply(this, arguments);
+    };
+  }
+  const origCloseTraining = window.closeTraining;
+  if (typeof origCloseTraining === 'function') {
+    window.closeTraining = function () {
+      const key     = openedKey;
+      const minutes = openedAt ? (Date.now() - openedAt) / 60000 : 0;
+      openedKey = null; openedAt = 0;
+      const out = origCloseTraining.apply(this, arguments);
+      if (key && minutes > 0.5) {
+        const s = state();
+        s.minutes[key] = (s.minutes[key] || 0) + minutes;
+        save(s);
+        if (window._personalizeRecommended) window._personalizeRecommended();
+        setTimeout(() => maybeSuggest(key, minutes), 1200);
+      }
+      return out;
+    };
+  }
+
+  window._reco = { state, forDashboard, suggest, maybeSuggest, preview, close: closeIt, rules: R };
+})();
+
 // ─── DEVELOPER PREVIEWS (v1.26.66) ────────────────────────────────
 // Screens that normally take days of real use to appear. Every preview opens
 // the screen WITHOUT touching its timers, so looking at one does not change
@@ -1646,8 +1887,9 @@ const RATING_RULES = {
     if (k && window.replayPackIntro) window.replayPackIntro(k);
     else if (window.showToast) showToast('Open a pack once first.');
   });
+  on('devShowReco',     () => { if (window._reco) window._reco.preview(); });
   on('devResetPrompts', () => {
-    ['ds_pro_nudge', 'ds_rating', 'ds_last_prompt'].forEach(k => localStorage.removeItem(k));
+    ['ds_pro_nudge', 'ds_rating', 'ds_last_prompt', 'ds_reco'].forEach(k => localStorage.removeItem(k));
     if (window.showToast) showToast('Prompt timers cleared \u2014 both screens can appear again.');
   });
 })();

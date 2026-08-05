@@ -507,18 +507,32 @@ document.querySelectorAll('.nav-tab').forEach(btn => {
   function personalizeRecommended() {
     const sec = document.getElementById('dashRecommendedSection');
     if (!sec) return;
-    const packs = _recoPacks().slice(0, 3);
-    if (!packs.length) return;   // no onboarding picks -> keep static defaults
+    // v1.26.66: the recommendation engine owns this row whenever it has
+    // something to say. It learns from minutes per topic and re-runs after
+    // every session, so the row changes on its own. The onboarding picks are
+    // the fallback for a brand-new install, and the static markup is the
+    // fallback for that.
+    let packs = [], heading = 'Picked for you';
+    if (window._reco && window._reco.forDashboard) {
+      const fromEngine = window._reco.forDashboard();
+      if (fromEngine && fromEngine.length) { packs = fromEngine; heading = 'Recommended'; }
+    }
+    if (!packs.length) {
+      packs = _recoPacks().slice(0, 3).map(p => ({
+        key: p.key, label: p.label, reason: 'From your onboarding picks',
+      }));
+    }
+    if (!packs.length) return;   // no picks and no data -> keep static defaults
     const label = sec.querySelector('.dash-section-label');
     sec.innerHTML = '';
-    if (label) { label.textContent = 'Picked for you'; sec.appendChild(label); }
+    if (label) { label.textContent = heading; sec.appendChild(label); }
     packs.forEach(p => {
       const card = document.createElement('div');
       card.className = 'collection-card';
       card.dataset.key = p.key;
       card.dataset.label = p.label;
       card.innerHTML = '<div><div class="collection-name">' + p.label + '</div>' +
-        '<div class="collection-meta">From your onboarding picks</div></div>' +
+        '<div class="collection-meta">' + (p.reason || 'Recommended') + '</div></div>' +
         '<div class="collection-arrow">\u203A</div>';
       let rSY = 0, rMv = false;
       card.ontouchstart = e => { rSY = e.touches[0].clientY; rMv = false; };
