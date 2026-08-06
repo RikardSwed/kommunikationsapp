@@ -127,12 +127,12 @@ applyInputCounterVisibility();
     selfhumour:         { label: 'Self-Humour',           minLevel: 'complete' },
     setupstatement: { label: 'Setup Statement', minLevel: 'pro' },
     firststrategies: { label: 'First Strategies', minLevel: 'freemium' },
-    startingconversations1: { label: 'Starting Conversations 1', minLevel: 'freemium' },
+    startingconversations1: { label: 'Starting Conversations — Pt. 1', minLevel: 'freemium' },
     showunderstanding: { label: 'Show Understanding', minLevel: 'freemium' },
-    startingconversations4: { label: 'Starting Conversations 4', minLevel: 'extended' },
-    apologizing2: { label: 'Apologizing 2', minLevel: 'extended' },
-    startingconversations2: { label: 'Starting Conversations 2', minLevel: 'pro' },
-    startingconversations3: { label: 'Starting Conversations 3', minLevel: 'pro' },
+    startingconversations4: { label: 'Starting Conversations — Pt. 4', minLevel: 'extended' },
+    apologizing2: { label: 'Apologizing — Pt. 2', minLevel: 'extended' },
+    startingconversations2: { label: 'Starting Conversations — Pt. 2', minLevel: 'pro' },
+    startingconversations3: { label: 'Starting Conversations — Pt. 3', minLevel: 'pro' },
     endingconversations: { label: 'Ending Conversations', minLevel: 'pro' },
     changingtopics: { label: 'Changing Topics', minLevel: 'pro' },
     reactingtounexpectedstatements: { label: 'Reacting to Unexpected Statements', minLevel: 'pro' },
@@ -151,11 +151,11 @@ applyInputCounterVisibility();
     praiseandencouragement: { label: 'Praise and Encouragement', minLevel: 'pro' },
     givingcriticism: { label: 'Giving Criticism', minLevel: 'pro' },
     receivingfeedbackandcriticism: { label: 'Receiving Feedback and Criticism', minLevel: 'pro' },
-    apologizing1: { label: 'Apologizing 1', minLevel: 'pro' },
+    apologizing1: { label: 'Apologizing — Pt. 1', minLevel: 'pro' },
     agreeing: { label: 'Agreeing', minLevel: 'pro' },
     disagreeing: { label: 'Disagreeing', minLevel: 'pro' },
-    persuasionandinfluence1: { label: 'Persuasion and Influence 1', minLevel: 'pro' },
-    persuasionandinfluence2: { label: 'Persuasion and Influence 2', minLevel: 'pro' },
+    persuasionandinfluence1: { label: 'Persuasion and Influence — Pt. 1', minLevel: 'pro' },
+    persuasionandinfluence2: { label: 'Persuasion and Influence — Pt. 2', minLevel: 'pro' },
     negotiationandcompromise: { label: 'Negotiation and Compromise', minLevel: 'pro' },
     brokenrecord: { label: 'Broken Record', minLevel: 'pro' },
     respondingtopassiveaggression: { label: 'Responding to Passive Aggression', minLevel: 'pro' },
@@ -367,6 +367,8 @@ applyInputCounterVisibility();
       card.ontouchmove  = e => { if (Math.abs(e.touches[0].clientY - cSY) > 8) cMv = true; };
       card.ontouchend   = () => { if (!cMv) showModeScreen(card.dataset.key, card.dataset.label); };
     });
+    // Group the Packs tab for freemium users (v1.26.71)
+    applyLibraryGrouping();
     // Apply mode locks
     applyModeLocks();
     // Update nav button label (Upgrade ↔ Extended)
@@ -375,6 +377,56 @@ applyInputCounterVisibility();
     // them so visibility changes take effect there too.
     if (window._favRenderTab)  window._favRenderTab();
     if (window._favRenderDash) window._favRenderDash();
+  }
+
+  // ── Library grouping (v1.26.71) ───────────────────────────────────
+  // "Available packs" over a list where most items wear a padlock reads as a
+  // small lie. For freemium the list is split in two: what you can actually
+  // train with, then what Pro adds — each alphabetical. Pro and Complete are
+  // untouched, since there the heading is simply true.
+  // Runs on every access-level change and is idempotent: it recomputes the
+  // groups from scratch and reuses the same heading element.
+  function applyLibraryGrouping() {
+    const host = document.getElementById('libTabPacks');
+    if (!host) return;
+    const info       = host.querySelector('.tab-info');
+    const topicsInfo = document.querySelector('#libTabTopics .tab-info');
+    let heading      = document.getElementById('libProHeading');
+
+    if (getLevel() !== 'freemium') {
+      if (info)       info.textContent       = 'Available packs';
+      if (topicsInfo) topicsInfo.textContent = 'Available packs organised by topics';
+      if (heading) heading.remove();
+      if (typeof sortPackCards === 'function') sortPackCards();   // back to one flat list
+      return;
+    }
+
+    if (info)       info.textContent       = 'Available free packs';
+    if (topicsInfo) topicsInfo.textContent = 'Packs organised by topics';
+
+    const name = c => (c.querySelector('.collection-name') || {}).textContent || c.dataset.label || c.dataset.key;
+    const free = [], pro = [], hidden = [];
+    Array.from(host.querySelectorAll(':scope > .collection-card[data-key]')).forEach(c => {
+      if (c.style.display === 'none')   hidden.push(c);   // extended/complete: not for this level
+      else if (canAccess(c.dataset.key)) free.push(c);
+      else                               pro.push(c);
+    });
+    const alpha = (a, b) => (typeof dsAlpha === 'function' ? dsAlpha(name(a), name(b)) : 0);
+    free.sort(alpha);
+    pro.sort(alpha);
+
+    if (!pro.length) { if (heading) heading.remove(); }
+    else if (!heading) {
+      heading = document.createElement('div');
+      heading.className = 'tab-info';
+      heading.id = 'libProHeading';
+      heading.textContent = 'Pro packs';
+    }
+
+    free.forEach(c => host.appendChild(c));
+    if (pro.length && heading) host.appendChild(heading);
+    pro.forEach(c => host.appendChild(c));
+    hidden.forEach(c => host.appendChild(c));
   }
 
   function applyModeLocks() {
