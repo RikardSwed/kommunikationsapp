@@ -1,6 +1,103 @@
 // programsData.js — Learning programs for Deckstack
 
 const programsData = [
+  // v1.26.75 — the free onboarding program. Built on NEW packs only, so the
+  // app stands on its own content. The route matters more than the packs:
+  // a program path beats the standalone lock, so the four Pro packs below
+  // show a Pro badge AND can be earned by a free user, one checkpoint at a
+  // time. Keep this id OUT of EXTENDED_PROGRAM_IDS or it turns into a
+  // purchase. Every section has its own checkpoint, because passing a
+  // section's OWN checkpoint is what releases its packs into the Library.
+  {
+    id: 'conversation-foundations',
+    title: "Conversation Foundations",
+    description: "Start here. Four steps from your first sentence to a conversation that actually goes somewhere — and four packs you keep as you pass them.",
+    icon: "ti-compass",
+    sections: [
+      {
+        id: 'section-1',
+        title: "Part 1 — First moves",
+        packs: [
+          { key: "firststrategies", label: "First Strategies" },
+        ],
+        checkpoint: {
+          id: 'cf-cp1',
+          title: "First moves — check",
+          timeLimit: 90,
+          drawCount: 4,
+          questions: [
+            { id: 'cf1-1', q: "Why does opening with a statement work better than opening with a question?", options: ["It sounds more confident", "A question hands the other person a job; a statement hands them material", "Questions are impolite with strangers", "It gives you more to say afterwards"], correct: 1 },
+            { id: 'cf1-2', q: "What is the point of following the thread?", options: ["To change the subject smoothly", "To prove you were listening carefully", "You do not need something new — they already gave you three things", "To keep the conversation short"], correct: 2 },
+            { id: 'cf1-3', q: "Why say it back in your own words rather than theirs?", options: ["It is faster", "Repeating their sentence sounds like a technique; rewording it proves you understood", "It avoids interrupting", "It makes you sound more certain"], correct: 1 },
+            { id: 'cf1-4', q: "What actually makes a request awkward?", options: ["The request itself", "Asking the wrong person", "The long run-up before it", "Not giving enough reasons"], correct: 2 },
+            { id: 'cf1-5', q: "What is wrong with answering \"fine\" and stopping?", options: ["It sounds rude", "It leaves them with nothing, so they have to invent another question", "It is dishonest", "It ends the conversation politely"], correct: 1 },
+          ],
+        },
+      },
+      {
+        id: 'section-2',
+        title: "Part 2 — Keeping it going",
+        packs: [
+          { key: "exploringatopic", label: "Exploring a Topic" },
+          { key: "changingtopics", label: "Changing Topics" },
+        ],
+        checkpoint: {
+          id: 'cf-cp2',
+          title: "Keeping it going — check",
+          timeLimit: 90,
+          drawCount: 4,
+          questions: [
+            { id: 'cf2-1', q: "What makes a question open rather than closed?", options: ["It is longer", "It cannot be answered with yes or no", "It is about feelings", "It comes after a statement"], correct: 1 },
+            { id: 'cf2-2', q: "What does building on their point do that starting something new does not?", options: ["It saves time", "It goes one step further into what they said instead of leaving it", "It sounds more intelligent", "It stops them talking too long"], correct: 1 },
+            { id: 'cf2-3', q: "What is linking, when you change the subject?", options: ["Announcing the change openly", "Catching a word from what they just said and using it as a bridge", "Waiting for a pause", "Asking permission first"], correct: 1 },
+            { id: 'cf2-4', q: "Why does acknowledging the old topic help before opening a new one?", options: ["It fills the silence", "It makes the switch feel like a choice rather than a dismissal", "It is more formal", "It gives you time to think"], correct: 1 },
+            { id: 'cf2-5', q: "What is the point of sharing and then inviting?", options: ["To make the conversation about you", "One part you, one part them — you contribute without holding the floor", "To avoid asking questions", "To change the subject quietly"], correct: 1 },
+          ],
+        },
+      },
+      {
+        id: 'section-3',
+        title: "Part 3 — Really listening",
+        packs: [
+          { key: "showunderstanding", label: "Show Understanding" },
+          { key: "validation", label: "Validation" },
+        ],
+        checkpoint: {
+          id: 'cf-cp3',
+          title: "Really listening — check",
+          timeLimit: 90,
+          drawCount: 4,
+          questions: [
+            { id: 'cf3-1', q: "Understanding someone is not enough on its own. Why not?", options: ["You might have understood wrongly", "They have to be able to tell that you did — that is a separate skill", "It takes too long", "They may not want to be understood"], correct: 1 },
+            { id: 'cf3-2', q: "What makes a follow-up question prove you were listening?", options: ["Its length", "Its tone", "The specific detail you picked up — a general question could have come from anyone", "Asking it immediately"], correct: 2 },
+            { id: 'cf3-3', q: "What is reflecting the feeling?", options: ["Agreeing with them", "Naming the emotion they are expressing, so it is signalled as belonging there", "Sharing a feeling of your own", "Asking how they feel"], correct: 1 },
+            { id: 'cf3-4', q: "What does normalising a reaction say?", options: ["That the reaction is unusual and interesting", "That most people would have reacted the same way in that position", "That they should feel differently", "That you have felt it too"], correct: 1 },
+            { id: 'cf3-5', q: "When you relate through sharing, why keep it short?", options: ["Long stories are boring", "Done at length it quietly takes the conversation away from them", "You may be wrong about the comparison", "It saves them having to answer"], correct: 1 },
+          ],
+        },
+      },
+      {
+        id: 'section-4',
+        title: "Part 4 — Going deeper",
+        packs: [
+          { key: "deepquestions", label: "Deep Questions" },
+        ],
+        checkpoint: {
+          id: 'cf-cp4',
+          title: "Going deeper — check",
+          timeLimit: 90,
+          drawCount: 4,
+          questions: [
+            { id: 'cf4-1', q: "Why start with simple, factual questions?", options: ["To test whether they want to talk", "So they relax and give you material to work with", "Because deep questions are rude early on", "To keep the conversation short if it goes badly"], correct: 1 },
+            { id: 'cf4-2', q: "What is linking and going deeper?", options: ["Asking two questions at once", "Repeating a detail they gave you, then asking about what sits behind it", "Moving to a more serious subject", "Sharing something personal first"], correct: 1 },
+            { id: 'cf4-3', q: "A values question asks about...", options: ["What they think is true", "What happened to them", "What matters to them, and why", "What they plan to do next"], correct: 2 },
+            { id: 'cf4-4', q: "What separates a belief question from a values question?", options: ["Beliefs are about what they think is true; values are about what matters", "Beliefs are more personal", "Values questions are always harder", "There is no real difference"], correct: 0 },
+            { id: 'cf4-5', q: "An experience question asks about something that happened — and what else?", options: ["Whether they would do it again", "Who else was there", "What it was actually like", "How long ago it was"], correct: 2 },
+          ],
+        },
+      },
+    ],
+  },
   {
     id: 'saying-no',
     title: "Saying No With Confidence",

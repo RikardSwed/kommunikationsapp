@@ -35,13 +35,12 @@ function navFromSettings() {
   showBottomNav();
 }
 
-if (homeSettingsBtn) {
-  homeSettingsBtn.addEventListener('click', () => {
-    feedbackModeToggle.checked = feedbackMode;
-    navToSettings();
-  });
-  homeSettingsBtn.addEventListener('touchend', e => { e.preventDefault(); homeSettingsBtn.click(); }, { passive: false });
-}
+// v1.26.75 — the settings button has ONE owner, and it is app-ui.js.
+// It used to be bound here as well, so during a search BOTH handlers fired:
+// app-ui's exited the search and this one opened settings on top of it.
+// app-ui's version does exactly what this did when no search is running, and
+// checks the search state first — see the `cancelBtn` block there. Do not
+// re-add a listener here.
 
 const homeSettingsBackBtn = document.getElementById('homeSettingsBackBtn');
 if (homeSettingsBackBtn) {
@@ -201,7 +200,12 @@ applyInputCounterVisibility();
   const LEVEL_ORDER = ['freemium', 'pro', 'complete'];
 
   function getLevel() {
-    const stored = localStorage.getItem(LEVEL_KEY) || 'complete';
+    // v1.26.75 — DEFAULT IS NOW freemium, not complete. A fresh install used
+    // to see the entire library, which would have made the beta test say
+    // nothing at all about the paid model. This is the primary of five sites;
+    // the other four are fallbacks used before window.accessLevel is up, and
+    // they were changed with it.
+    const stored = localStorage.getItem(LEVEL_KEY) || 'freemium';
     // Lifetime Pro (one-time purchase): the level never drops below pro —
     // UNLESS the level was set explicitly via the developer radio (v1.26.44).
     // Picking "Freemium" there is a deliberate simulation and must win, so
@@ -1169,7 +1173,7 @@ function getActiveBundles(packKey) {
   if (!defs) return null;
 
   const level = (window.accessLevel && window.accessLevel.getLevel())
-              || localStorage.getItem('dev_access_level') || 'complete';
+              || localStorage.getItem('dev_access_level') || 'freemium';
   const extOwned = (() => {
     try { return JSON.parse(localStorage.getItem('ds_extended_owned')) || []; }
     catch { return []; }
@@ -1371,7 +1375,7 @@ window.renderBundleSection = function(containerEl, packKey) {
   }
 
   const level = (window.accessLevel && window.accessLevel.getLevel())
-              || localStorage.getItem('dev_access_level') || 'complete';
+              || localStorage.getItem('dev_access_level') || 'freemium';
   const extOwned = (() => {
     try { return JSON.parse(localStorage.getItem('ds_extended_owned')) || []; }
     catch { return []; }

@@ -2268,7 +2268,7 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
       try { return JSON.parse(localStorage.getItem('ds_extended_owned')) || []; }
       catch { return []; }
     })();
-    const curLevel = localStorage.getItem('dev_access_level') || 'complete';
+    const curLevel = localStorage.getItem('dev_access_level') || 'freemium';
     const visiblePrograms = programsData.filter(prog => {
       if (!EXTENDED_PROGRAM_IDS.includes(prog.id)) return true;
       return curLevel === 'complete' || extOwned.includes(prog.id);
@@ -2789,7 +2789,7 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
 
   function getAccessLevel() {
     return (window.accessLevel && window.accessLevel.getLevel()) ||
-           localStorage.getItem('dev_access_level') || 'complete';
+           localStorage.getItem('dev_access_level') || 'freemium';
   }
 
   // An item is browsable when it has no code, or its code has been redeemed
