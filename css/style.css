@@ -2643,6 +2643,19 @@ body.pb-enabled .divider::after {
 .cp-result-label        { font-size: 20px; font-weight: 700; margin-bottom: 10px; }
 .cp-result-hint         { font-size: 14px; color: var(--ds-txt2); margin-bottom: 32px; line-height: 1.6; }
 
+/* Primary action inside the small overlays (v1.26.72). The Pro screen, the
+   rating gate and the next-pack suggestion all used the neutral settings
+   button, which made them look like system dialogs rather than part of the
+   app. Same accent and weight as .upgrade-cta-btn, so the marked button reads
+   the same everywhere. */
+.settings-close--primary {
+  background: var(--ds-acc);
+  color: var(--ds-acc-text);
+  font-weight: 700;
+  transition: opacity 0.15s;
+}
+.settings-close--primary:active { opacity: 0.85; }
+
 /* Pro-gruppens rubrik i biblioteket (v1.26.71) — samma stil som "Available
    free packs", men med luft ovanför så att den läser som en ny sektion och
    inte som en bildtext till kortet ovanför. */
