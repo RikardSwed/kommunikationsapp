@@ -1506,7 +1506,15 @@ body.pb-enabled .divider::after {
 .mode-screen,
 .mode-list,
 .library-tab-content,
-.progress-scroll {
+.progress-scroll,
+/* v1.26.69 — these three scroll themselves rather than through an inner
+   container, and were simply missing from this list. That is why the black
+   scrollbar only ever appeared on Upgrade, Extended and Settings, and why the
+   content there looked slightly narrow: a classic scrollbar takes real layout
+   width, so it was eating a strip off the right-hand side. */
+.upgrade-screen,
+.extended-screen,
+.settings-screen {
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
@@ -1515,7 +1523,10 @@ body.pb-enabled .divider::after {
 .mode-screen::-webkit-scrollbar,
 .mode-list::-webkit-scrollbar,
 .library-tab-content::-webkit-scrollbar,
-.progress-scroll::-webkit-scrollbar { display: none; }
+.progress-scroll::-webkit-scrollbar,
+.upgrade-screen::-webkit-scrollbar,
+.extended-screen::-webkit-scrollbar,
+.settings-screen::-webkit-scrollbar { display: none; }
 
 .pin-btn {
   background: none;
