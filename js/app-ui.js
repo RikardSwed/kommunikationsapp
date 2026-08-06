@@ -344,39 +344,80 @@ document.querySelectorAll('.nav-tab').forEach(btn => {
     const q = query.trim().toLowerCase();
     if (!q) { searchResults.innerHTML = ''; noResults.style.display = 'none'; return; }
 
-    const index = getSearchIndex();
-    const hits  = [];
+    // v1.26.73 — RANKED. With 38 packs the old behaviour broke down: a match
+    // anywhere in a pack's card text counted exactly as much as a match in its
+    // title, and the list came back alphabetically. Searching "no" returned
+    // most of the library, led by Agreeing.
+    // Two changes carry most of the fix. (1) WORD BOUNDARIES — `includes` made
+    // "no" match know, not, notice, nothing, which is where the noise came
+    // from; a query now has to start a word. (2) RANK BY WHERE IT MATCHED —
+    // title beats strategy name beats tag or topic beats a mention somewhere
+    // in the cards. Content-only hits still appear, but under their own
+    // heading at the bottom and capped: they are the long tail, not the
+    // answer. Ties break accessible-before-locked, then alphabetically, so a
+    // freemium user does not scroll past padlocks to reach what they can open.
+    const RANK = { labelStart: 120, label: 100, stratStart: 70, strat: 60, tag: 40, topic: 35, content: 5 };
+    const safe   = q.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    const wordRe = new RegExp('\\b' + safe);
+    // Topic titles are searchable now too, so "repair" or "humour" finds the
+    // packs filed under that heading even when the word is in no card.
+    const topicsFor = key => (typeof TOPICS === 'undefined' ? []
+      : TOPICS.filter(t => (t.packs || []).indexOf(key) > -1).map(t => t.title));
 
-    index.forEach(pack => {
-      // Find which terms matched
-      const matchedStrats = pack.strats.filter(s => s.toLowerCase().includes(q));
-      const termMatch     = pack.terms.some(t => t.includes(q));
-      if (!termMatch && !matchedStrats.length) return;
-      // Hidden packs (unowned extended, checkpoint-locked) never surface in search
+    const hits = [];
+    getSearchIndex().forEach(pack => {
+      // Hidden packs (unowned extended, checkpoint-locked) never surface
       if (window.accessLevel && window.accessLevel.packVisibility
           && window.accessLevel.packVisibility(pack.key) === 'hidden') return;
 
-      // Build subtitle showing what matched
+      const label         = pack.label.toLowerCase();
+      const matchedStrats = pack.strats.filter(s => wordRe.test(s.toLowerCase()));
+      const matchedTags   = (pack.tags || []).filter(t => wordRe.test(t.toLowerCase()));
+      const matchedTopics = topicsFor(pack.key).filter(t => wordRe.test(t.toLowerCase()));
+
+      let score = 0;
+      if (label.indexOf(q) === 0)       score = RANK.labelStart;
+      else if (wordRe.test(label))      score = RANK.label;
+      else if (matchedStrats.some(s => s.toLowerCase().indexOf(q) === 0)) score = RANK.stratStart;
+      else if (matchedStrats.length)    score = RANK.strat;
+      else if (matchedTags.length)      score = RANK.tag;
+      else if (matchedTopics.length)    score = RANK.topic;
+      else if (pack.terms.some(t => wordRe.test(t))) score = RANK.content;
+      else return;
+
+      // The subtitle says WHY this turned up. In a long list that is more
+      // useful than the pack name on its own.
       let subtitle = '';
-      const matchedTags = (pack.tags || []).filter(t => t.toLowerCase().includes(q));
       if (matchedStrats.length) {
         const shown = matchedStrats.slice(0, 3).join(', ');
         subtitle = shown + (matchedStrats.length > 3 ? ' +' + (matchedStrats.length - 3) + ' more' : '');
-      } else if (matchedTags.length) {
-        subtitle = 'Tag: ' + matchedTags.slice(0, 3).join(', ');
-      } else if (!pack.label.toLowerCase().includes(q)) {
-        subtitle = 'Match in content';
-      }
-      hits.push({ key: pack.key, label: pack.label, subtitle });
+      } else if (matchedTags.length)    subtitle = 'Tag: ' + matchedTags.slice(0, 3).join(', ');
+      else if (matchedTopics.length)    subtitle = 'Topic: ' + matchedTopics[0];
+      else if (score === RANK.content)  subtitle = 'Mentioned in the cards';
+
+      hits.push({
+        key: pack.key, label: pack.label, subtitle, score,
+        accessible: !window.accessLevel || window.accessLevel.canAccess(pack.key),
+      });
     });
 
-    searchResults.innerHTML = hits.map(p => {
-      const accessible = !window.accessLevel || window.accessLevel.canAccess(p.key);
+    hits.sort((a, b) =>
+      (b.score - a.score) ||
+      (Number(b.accessible) - Number(a.accessible)) ||
+      a.label.localeCompare(b.label, 'en', { sensitivity: 'base' })
+    );
+    const strongCount = hits.filter(h => h.score > RANK.content).length;
+    const ordered     = hits.slice(0, strongCount).concat(hits.slice(strongCount, strongCount + 6));
+
+    searchResults.innerHTML = ordered.map((p, i) => {
+      const heading = (i === strongCount && strongCount < ordered.length)
+        ? '<div class="tab-info search-weak-heading">Also mentioned in</div>' : '';
+      const accessible = p.accessible;
       const badge = (!accessible && window.accessLevel) ? window.accessLevel.badgeLabel(p.key) : null;
       const badgeHtml = badge
         ? `<div class="pack-lock-badge ${badge.cls}" style="position:relative;display:inline-block;margin-left:6px;vertical-align:middle;">${badge.text}</div>`
         : '';
-      return `<div class="collection-card dash-result-card${!accessible ? ' collection-card--locked' : ''}" data-key="${p.key}" data-label="${p.label.replace(/"/g,'&quot;')}" data-locked="${!accessible}">`+
+      return heading + `<div class="collection-card dash-result-card${!accessible ? ' collection-card--locked' : ''}" data-key="${p.key}" data-label="${p.label.replace(/"/g,'&quot;')}" data-locked="${!accessible}">`+
         `<div style="display:flex;align-items:center;flex-wrap:wrap;">`+
           `<div class="collection-name" style="display:inline;">${p.label}</div>${badgeHtml}`+
           (p.subtitle ? `<div class="collection-meta" style="margin-top:2px;width:100%;">${p.subtitle}</div>` : '')+
@@ -1469,7 +1510,15 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
     try { goal = Number(getSettings().dailyGoal) || 0; } catch {}
     const ref  = Math.max(goal, 30);
     const peak = Math.max.apply(null, days.map(x => x.minutes).concat([ref]));
-    return days.map((x, i) => {
+    // v1.26.73 — a scale down the left. Without it a bar is only comparable to
+    // the other bars in the same week, so a light week and a heavy one look
+    // identical. Three marks is enough: the top of the scale, the middle, zero.
+    const axis = '<div class="prog-cal-baraxis">'
+      + '<span>' + Math.round(peak) + 'm</span>'
+      + '<span>' + Math.round(peak / 2) + '</span>'
+      + '<span>0</span>'
+      + '</div>';
+    return axis + days.map((x, i) => {
       const cls = ['prog-cal-barcol'];
       if (x.d > today)      cls.push('future');
       if (x.ds === todayS)  cls.push('today');
@@ -2565,7 +2614,7 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
       // so these are load-bearing, not decoration.
       {
         id: 'startingconversations4',
-        title: 'Starting Conversations 4',
+        title: 'Starting Conversations — Pt. 4',
         icon: 'ti-flame',
         description: 'The openers that take nerve — approaching a group, saying the thing first, and starting something with no excuse to hide behind.',
         price: '29 kr',
@@ -2578,12 +2627,12 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
       },
       {
         id: 'apologizing2',
-        title: 'Apologizing 2',
+        title: 'Apologizing — Pt. 2',
         icon: 'ti-heart-handshake',
         description: 'Beyond the correct apology — what to do when sorry is not enough, when it lands badly, and when the damage is older than the conversation.',
         price: '29 kr',
         details: [
-          'Apologizing 1 gives you a complete, working apology. This is the depth on top of it: the apology that has to carry real weight.',
+          'Apologizing — Pt. 1 gives you a complete, working apology. This is the depth on top of it: the apology that has to carry real weight.',
           'Covers what to do when an apology is rejected, when the other person needs to say more before they can accept it, when you have apologised for this before, and when the honest answer is that you cannot undo it.',
           'The hardest material in the repair topic, and the reason it sits separately \u2014 you can finish the skill without it, and go much further with it.',
           'What you\u2019ll get better at: staying in the conversation after sorry.',
