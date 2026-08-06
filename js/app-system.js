@@ -2065,7 +2065,16 @@ const PRO_NUDGE_RULES = {
   const closeIt = () => overlay.classList.remove('open');
   const seeBtn  = document.getElementById('proNudgeSee');
   const laterBtn = document.getElementById('proNudgeLater');
-  if (seeBtn)   seeBtn.addEventListener('click', () => { closeIt(); if (window.showTab) window.showTab('upgrade'); });
+  // v1.26.72 — leaving the settings screen first. Pressing this from the
+  // developer preview looked like a dead button: showTab() DID switch to the
+  // Upgrade screen, but the full-screen settings panel (z-index 700) was
+  // still covering it. Same family as the overlay z-index bug.
+  const leaveSettingsIfOpen = () => {
+    const s = document.getElementById('homeSettingsScreen');
+    if (s && s.style.display !== 'none' && typeof navFromSettings === 'function') navFromSettings();
+  };
+
+  if (seeBtn)   seeBtn.addEventListener('click', () => { closeIt(); leaveSettingsIfOpen(); if (window.showTab) window.showTab('upgrade'); });
   if (laterBtn) laterBtn.addEventListener('click', closeIt);
   overlay.addEventListener('click', e => { if (e.target === overlay) closeIt(); });
 
@@ -2506,6 +2515,10 @@ const RECO_RULES = {
     const neverBtn = document.getElementById('recoNever');
     if (openBtn)  openBtn.addEventListener('click', () => {
       const p = current; closeIt();
+      // Same reason as the Pro screen's "See plans": the settings panel would
+      // otherwise stay on top of the pack you just opened.
+      const s = document.getElementById('homeSettingsScreen');
+      if (s && s.style.display !== 'none' && typeof navFromSettings === 'function') navFromSettings();
       if (p && window.showModeScreen) showModeScreen(p.key, p.label);
     });
     if (laterBtn) laterBtn.addEventListener('click', closeIt);
