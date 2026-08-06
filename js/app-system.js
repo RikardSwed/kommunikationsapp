@@ -3076,16 +3076,23 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
   });
 
   // Interest chip -> pack keys. Order inside each entry = priority.
+  // v1.26.76 — rewritten for the imported library. Every entry here used to
+  // point at a pre-handbook pack, and those are all at minLevel 'complete'
+  // now, so a new user's answers produced recommendations for packs they
+  // could not even see. Where a free pack fits an interest it is listed
+  // FIRST, so the first suggestion is something they can open today.
+  // Keep in sync with the chips in index.html step 3.
   const OB_PACK_MAP = {
-    starting:     ['startingconnecting'],
-    conversation: ['conversational'],
-    depth:        ['conversationaldepth'],
-    storytelling: ['storytelling'],
-    humour:       ['humour', 'teasing'],
-    listening:    ['listeningresponding'],
-    feedback:     ['criticism'],
-    boundaries:   ['assertive'],
-    influence:    ['influenceframing'],
+    starting:     ['firststrategies', 'startingconversations1', 'setupstatement'],
+    conversation: ['exploringatopic', 'changingtopics', 'reactingtounexpectedstatements'],
+    listening:    ['showunderstanding', 'validation', 'supportingconversations'],
+    depth:        ['deepquestions', 'talkingaboutyourself', 'supportingconversations'],
+    boundaries:   ['assertive', 'sayingno', 'makingrequests', 'brokenrecord'],
+    conflict:     ['conflictemotions', 'respondingtopassiveaggression', 'emotionlabellingandregulation'],
+    feedback:     ['givingcriticism', 'receivingfeedbackandcriticism', 'praiseandencouragement'],
+    repair:       ['apologizing1'],
+    persuasion:   ['persuasionandinfluence1', 'disagreeing', 'negotiationandcompromise'],
+    storytelling: ['storiesinconversation', 'explainthings', 'storytellingwiththesixws', 'describethings'],
   };
 
   // Turn the picked interests into an ordered list of {key, label} packs
