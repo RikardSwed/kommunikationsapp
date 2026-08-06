@@ -3152,6 +3152,181 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
 
   // page: { title, html } — html is the body below the title.
   const PACK_INTROS = {
+    // First Strategies is the first pack a new user ever opens, so its first
+    // page does one extra job the others do not: it says what the app is for.
+    // Every other intro goes straight to preparing the training.
+    firststrategies: {
+      pages: [
+        {
+          title: 'First Strategies',
+          html:
+            '<p class="ob-text">Deckstack is a rehearsal room. You practise things to say ' +
+            'here, on your own, so they are already yours when a real conversation arrives.</p>' +
+            '<p class="ob-text">This pack is the place to start. Six strategies that between ' +
+            'them make a whole small conversation.</p>' +
+            '<div class="ob-how">' +
+            '<div class="ob-how-row"><span class="ob-how-num">1</span><p><strong>Opening Statement</strong> &mdash; open with a remark, not a question.</p></div>' +
+            '<div class="ob-how-row"><span class="ob-how-num">2</span><p><strong>Follow the Thread</strong> &mdash; use what they just said.</p></div>' +
+            '<div class="ob-how-row"><span class="ob-how-num">3</span><p><strong>Say It Back</strong> &mdash; show you understood before you answer.</p></div>' +
+            '<div class="ob-how-row"><span class="ob-how-num">4</span><p><strong>Ask Plainly</strong> &mdash; say what you want, in one sentence.</p></div>' +
+            '<div class="ob-how-row"><span class="ob-how-num">5</span><p><strong>A Friendly No</strong> &mdash; decline warmly and clearly.</p></div>' +
+            '<div class="ob-how-row"><span class="ob-how-num">6</span><p><strong>Answer With a Hook</strong> &mdash; leave them somewhere to go.</p></div>' +
+            '</div>' +
+            '<p class="ob-text ob-text--dim">The next pages explain each one.</p>'
+        },
+        {
+          title: 'Opening Statement',
+          html:
+            '<p class="ob-text">Say something instead of asking something. A question hands ' +
+            'the other person a job; a statement hands them material.</p>' +
+            '<p class="ob-text">It also lets them out politely. An unanswered question is ' +
+            'awkward &mdash; an unanswered remark is not.</p>' +
+            '<p class="ob-text ob-text--dim">Standing in a long queue<br>&rarr; &ldquo;This queue has not moved in five minutes.&rdquo;</p>'
+        },
+        {
+          title: 'Follow the Thread',
+          html:
+            '<p class="ob-text">Take one word out of what they just said and go into it. ' +
+            'People put more into a sentence than they expect anyone to notice.</p>' +
+            '<p class="ob-text">It solves the real problem in conversation, which is not ' +
+            'shyness but having nothing to say next. You do not need something new.</p>' +
+            '<p class="ob-text ob-text--dim">&ldquo;We drove back from Malm\u00f6 on Sunday.&rdquo;<br>&rarr; &ldquo;Malm\u00f6 &mdash; what took you down there?&rdquo;</p>'
+        },
+        {
+          title: 'Say It Back',
+          html:
+            '<p class="ob-text">Repeat what you understood before you answer. It proves you ' +
+            'were listening, and it buys you a few seconds to think.</p>' +
+            '<p class="ob-text">Say it in your own words. Repeating their exact sentence ' +
+            'sounds like a technique; rewording it proves you understood.</p>' +
+            '<p class="ob-text ob-text--dim">A tangled complaint about work<br>&rarr; &ldquo;So the deadline moved and nobody told you.&rdquo;</p>'
+        },
+        {
+          title: 'Ask Plainly',
+          html:
+            '<p class="ob-text">Say what you want, in one sentence, without building up to ' +
+            'it. Then stop talking.</p>' +
+            '<p class="ob-text">The long run-up is what makes a request awkward, not the ' +
+            'request. And every reason you add afterwards is something to argue with.</p>' +
+            '<p class="ob-text ob-text--dim">You need Thursday covered<br>&rarr; &ldquo;Could you take the Thursday meeting? I\u2019m away.&rdquo;</p>'
+        },
+        {
+          title: 'A Friendly No',
+          html:
+            '<p class="ob-text">Say no clearly, warmly, and without a pile of reasons.</p>' +
+            '<p class="ob-text">Soften the delivery, never the answer. &ldquo;Maybe&rdquo; feels ' +
+            'kinder and costs the other person a week of waiting.</p>' +
+            '<p class="ob-text ob-text--dim">Asked to take on more this month<br>&rarr; &ldquo;I can\u2019t take anything else on, sorry.&rdquo;</p>'
+        },
+        {
+          title: 'Answer With a Hook',
+          html:
+            '<p class="ob-text">When someone asks about you, answer with something they can ' +
+            'ask about. One extra detail is the whole technique.</p>' +
+            '<p class="ob-text">A closed answer leaves them with nothing, so they have to ' +
+            'invent a new question. Two of those and most people give up.</p>' +
+            '<p class="ob-text ob-text--dim">&ldquo;How was your week?&rdquo;<br>&rarr; &ldquo;Good &mdash; long, though. I\u2019ve spent it arguing with a printer.&rdquo;</p>'
+        }
+      ]
+    },
+
+    startingconversations1: {
+      pages: [
+        {
+          title: 'Starting Conversations \u2014 Pt. 1',
+          html:
+            '<p class="ob-text">The four safest ways to start a conversation with someone ' +
+            'you do not know. None of them requires you to be interesting.</p>' +
+            '<div class="ob-how">' +
+            '<div class="ob-how-row"><span class="ob-how-num">1</span><p><strong>Simple Greeting</strong> &mdash; say hello, and nothing more.</p></div>' +
+            '<div class="ob-how-row"><span class="ob-how-num">2</span><p><strong>Introduce Yourself</strong> &mdash; give them a reason to say their name.</p></div>' +
+            '<div class="ob-how-row"><span class="ob-how-num">3</span><p><strong>Comment on the Situation</strong> &mdash; say something about where you both are.</p></div>' +
+            '<div class="ob-how-row"><span class="ob-how-num">4</span><p><strong>Ask About the Situation</strong> &mdash; ask something about it instead.</p></div>' +
+            '</div>' +
+            '<p class="ob-text ob-text--dim">This is the first of four parts. The later ones ask more of you.</p>'
+        },
+        {
+          title: 'Simple Greeting',
+          html:
+            '<p class="ob-text">Say hello. That is the whole strategy.</p>' +
+            '<p class="ob-text">A greeting asks for nothing and risks nothing, which is ' +
+            'exactly why it works. It opens a door without insisting anyone walks through it.</p>' +
+            '<p class="ob-text ob-text--dim">Someone sits down beside you<br>&rarr; &ldquo;Morning.&rdquo;</p>'
+        },
+        {
+          title: 'Introduce Yourself',
+          html:
+            '<p class="ob-text">Say your name and give them a reason to say theirs.</p>' +
+            '<p class="ob-text">This is the opener that turns a stranger into someone you ' +
+            'have met. Most people are relieved that you went first.</p>' +
+            '<p class="ob-text ob-text--dim">Waiting for the same meeting<br>&rarr; &ldquo;I don\u2019t think we\u2019ve met &mdash; I\u2019m Rikard.&rdquo;</p>'
+        },
+        {
+          title: 'Comment on the Situation',
+          html:
+            '<p class="ob-text">Say something about the thing you are both in. The room, the ' +
+            'queue, the weather, the delay.</p>' +
+            '<p class="ob-text">It is the safest remark there is, because it is already true ' +
+            'for both of you. Nobody has to know anything to answer it.</p>' +
+            '<p class="ob-text ob-text--dim">A room that is far too warm<br>&rarr; &ldquo;Whoever booked this room did not think about the sun.&rdquo;</p>'
+        },
+        {
+          title: 'Ask About the Situation',
+          html:
+            '<p class="ob-text">Ask them something about where you both are &mdash; when it ' +
+            'starts, where the room is, whether they have been before.</p>' +
+            '<p class="ob-text">A question about the situation is easy to answer, and it ' +
+            'gives them the small pleasure of knowing something you do not.</p>' +
+            '<p class="ob-text ob-text--dim">First time at a regular event<br>&rarr; &ldquo;Do you know if this usually runs over?&rdquo;</p>'
+        }
+      ]
+    },
+
+    showunderstanding: {
+      pages: [
+        {
+          title: 'Show Understanding',
+          html:
+            '<p class="ob-text">Understanding someone is not enough on its own. They have to ' +
+            'be able to tell that you did &mdash; and that is a separate skill.</p>' +
+            '<p class="ob-text">Three ways to make it visible.</p>' +
+            '<div class="ob-how">' +
+            '<div class="ob-how-row"><span class="ob-how-num">1</span><p><strong>Ask Follow-up Questions</strong> &mdash; ask what only a listener could ask.</p></div>' +
+            '<div class="ob-how-row"><span class="ob-how-num">2</span><p><strong>Loop Back or Rephrase</strong> &mdash; say their point back in your own words.</p></div>' +
+            '<div class="ob-how-row"><span class="ob-how-num">3</span><p><strong>Relate Through Sharing</strong> &mdash; offer something of your own.</p></div>' +
+            '</div>' +
+            '<p class="ob-text ob-text--dim">The next pages explain each one.</p>'
+        },
+        {
+          title: 'Ask Follow-up Questions',
+          html:
+            '<p class="ob-text">Ask for more &mdash; a question that could only come from ' +
+            'someone who was actually listening.</p>' +
+            '<p class="ob-text">The proof is in the detail you pick up. A general question ' +
+            'could have been asked by anyone; a specific one could not.</p>' +
+            '<p class="ob-text ob-text--dim">&ldquo;It\u2019s been a lot since the move.&rdquo;<br>&rarr; &ldquo;A lot how &mdash; the flat, or everything at once?&rdquo;</p>'
+        },
+        {
+          title: 'Loop Back or Rephrase',
+          html:
+            '<p class="ob-text">Say their point back in your own words, so they can hear that ' +
+            'it arrived intact &mdash; or correct you before it costs anyone anything.</p>' +
+            '<p class="ob-text">Your own words matter. Repeating their sentence sounds like a ' +
+            'technique; rewording it proves the meaning got through.</p>' +
+            '<p class="ob-text ob-text--dim">A long, tangled story<br>&rarr; &ldquo;So she said yes, then changed her mind on the day.&rdquo;</p>'
+        },
+        {
+          title: 'Relate Through Sharing',
+          html:
+            '<p class="ob-text">Offer something of your own &mdash; a time you felt the same, ' +
+            'kept small enough that the subject stays theirs.</p>' +
+            '<p class="ob-text">Done briefly it says: I recognise this, you are not strange. ' +
+            'Done at length it quietly takes the conversation away from them.</p>' +
+            '<p class="ob-text ob-text--dim">&ldquo;I felt completely out of my depth.&rdquo;<br>&rarr; &ldquo;I know that one. My first week I hid in the stairwell.&rdquo;</p>'
+        }
+      ]
+    },
+
     assertive: {
       pages: [
         {
