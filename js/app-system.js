@@ -42,6 +42,33 @@ function navFromSettings() {
 // checks the search state first — see the `cancelBtn` block there. Do not
 // re-add a listener here.
 
+// ─── PACK CARD META (v1.26.77) ───────────────────────────────────
+// Every library card said "N strategies · Flashcard mode". That is both
+// uninformative and slightly untrue: every pack has all six modes, Flashcard
+// is just the one a free user sees. The topic is the single word that
+// actually says what the pack is about, so it goes there instead.
+// Done at startup rather than in the markup because import-pack.js writes the
+// old wording into every card it creates — fixing the HTML would last exactly
+// until the next import.
+function relabelPackCards() {
+  if (typeof collections === 'undefined') return;
+  const topicOf = {};
+  (typeof TOPICS !== 'undefined' ? TOPICS : []).forEach(t => {
+    (t.packs || []).forEach(k => { if (!topicOf[k]) topicOf[k] = t.title; });
+  });
+  document.querySelectorAll('#libTabPacks .collection-card').forEach(card => {
+    const key  = card.dataset.key;
+    const meta = card.querySelector('.collection-meta');
+    if (!key || !meta) return;
+    const n    = (collections[key] || []).length;
+    const bits = [];
+    if (n) bits.push(n + (n === 1 ? ' strategy' : ' strategies'));
+    if (topicOf[key]) bits.push(topicOf[key]);
+    if (bits.length) meta.innerHTML = bits.join(' &nbsp;\u00b7&nbsp; ');
+  });
+}
+relabelPackCards();
+
 const homeSettingsBackBtn = document.getElementById('homeSettingsBackBtn');
 if (homeSettingsBackBtn) {
   homeSettingsBackBtn.addEventListener('click', navFromSettings);
