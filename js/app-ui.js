@@ -1460,12 +1460,20 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
       const e  = map[ds];
       days.push({ d, ds, minutes: e ? Math.round(e.minutes) : 0 });
     }
-    const peak = Math.max.apply(null, days.map(x => x.minutes).concat([1]));
+    // v1.26.68 — scale against a real reference, not just the week's own peak.
+    // Scaling to the peak alone meant a week with two one-minute sessions drew
+    // two full-height bars, which reads as a great week. The reference is the
+    // daily goal when one is set, otherwise 30 minutes — and a genuinely
+    // bigger day still wins, so a heavy week is never clipped.
+    let goal = 0;
+    try { goal = Number(getSettings().dailyGoal) || 0; } catch {}
+    const ref  = Math.max(goal, 30);
+    const peak = Math.max.apply(null, days.map(x => x.minutes).concat([ref]));
     return days.map((x, i) => {
       const cls = ['prog-cal-barcol'];
       if (x.d > today)      cls.push('future');
       if (x.ds === todayS)  cls.push('today');
-      const pct = x.minutes > 0 ? Math.max(6, Math.round((x.minutes / peak) * 100)) : 0;
+      const pct = x.minutes > 0 ? Math.max(4, Math.round((x.minutes / peak) * 100)) : 0;
       return `<button type="button" class="${cls.join(' ')}" data-day="${x.ds}">`
         + `<div class="prog-cal-barval">${x.minutes || ''}</div>`
         + `<div class="prog-cal-bartrack"><div class="prog-cal-bar" style="height:${pct}%"></div></div>`
