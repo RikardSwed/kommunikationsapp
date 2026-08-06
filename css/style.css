@@ -3521,13 +3521,27 @@ body.feedback-mode    .al-bar { display: none !important; }
 
 .ob-step {
   flex: 1;
+  /* v1.26.77 — a page with many lines (the First Strategies overview lists
+     six strategies) used to push the Continue button off the screen, so the
+     only way on was Skip. min-height:0 lets the step shrink inside the fixed
+     flex column, overflow-y makes the extra content reachable, and `safe
+     center` keeps short pages centred while switching to top-aligned as soon
+     as the content is taller than the space — plain `center` would put the
+     first lines above the scrollable area, out of reach. */
+  min-height: 0;
+  overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  justify-content: safe center;
   text-align: center;
   gap: 14px;
   animation: obFadeIn 0.35s ease;
 }
+.ob-step::-webkit-scrollbar { display: none; }
+.ob-top, .ob-bottom { flex-shrink: 0; }
 @keyframes obFadeIn {
   from { opacity: 0; transform: translateY(10px); }
   to   { opacity: 1; transform: translateY(0); }
