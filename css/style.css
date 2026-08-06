@@ -42,6 +42,14 @@
      calmer, deeper ember instead of the full-saturation orange. */
   --ds-hero-a:      var(--ds-acc);
   --ds-hero-b:      #F2622A;
+  /* Bottom nav height WITHOUT the safe-area inset (v1.26.68). One number in
+     one place: the nav sets its own height from it, and every full-screen
+     container uses it as padding-bottom, so the scroll area ends exactly at
+     the nav's top line. Before this they were two independent magic numbers
+     (84px vs a nav that measured about 62px), which left a dead band where
+     content vanished before reaching the line. 6px top + 6px bottom padding
+     + a 49px tab (22px icon, 2px gap, 10px label, 6px padding) + 1px border. */
+  --ds-nav-h:       62px;
 }
 
 body.theme-ember {
@@ -83,7 +91,7 @@ body.theme-ember {
 
 * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
 
-html { height: 100%; overflow: hidden; }
+html { height: 100%; overflow: hidden; overscroll-behavior: none; }
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
@@ -93,6 +101,7 @@ body {
   align-items: flex-start;
   height: 100%;
   overflow: hidden;
+  overscroll-behavior: none;
 }
 
 /* ─── SCREEN TRANSITIONS ─────────────────────────────────────────────────── */
@@ -144,8 +153,14 @@ body {
 .home-screen {
   width: 100%;
   max-width: 420px;
-  height: 100%;
-  min-height: -webkit-fill-available;
+  /* v1.26.68 — was height:100% + min-height:-webkit-fill-available.
+     -webkit-fill-available resolves to the LARGE viewport on iOS Safari (URL
+     bar collapsed), so with the URL bar showing the screen was forced taller
+     than the visible area — which is what produced the few pixels of drag and
+     the scrollbar on locked parts of every screen. 100dvh is the supported
+     replacement (iOS 15.4+); the 100vh line above it is the old fallback. */
+  height: 100vh;
+  height: 100dvh;
   background: var(--ds-bg);
   display: flex;
   flex-direction: column;
@@ -208,8 +223,8 @@ body {
 .mode-screen {
   width: 100%;
   max-width: 420px;
-  height: 100%;
-  min-height: -webkit-fill-available;
+  height: 100vh;
+  height: 100dvh;   /* v1.26.68 — see .home-screen */
   background: var(--ds-bg);
   display: flex;
   flex-direction: column;
@@ -306,8 +321,8 @@ body {
 .app {
   width: 100%;
   max-width: 420px;
-  height: 100%;
-  min-height: -webkit-fill-available;
+  height: 100vh;
+  height: 100dvh;   /* v1.26.68 — see .home-screen */
   background: var(--ds-bg);
   display: flex;
   flex-direction: column;
@@ -915,6 +930,7 @@ body.pb-enabled .divider::after {
   margin: 0 auto;
   width: 100%;
   max-width: 420px;
+  height: calc(var(--ds-nav-h) + env(safe-area-inset-bottom));
   display: flex;
   background: var(--ds-nav-bg);
   border-top: 1px solid var(--ds-border);
@@ -947,12 +963,14 @@ body.pb-enabled .divider::after {
 .nav-tab.nav-tab--upgrade { color: var(--ds-acc); }
 .nav-tab.nav-tab--upgrade.active { color: var(--ds-acc); }
 
-/* Top-level screens need bottom padding so content clears the nav bar */
+/* Top-level screens need bottom padding so content clears the nav bar.
+   v1.26.68 — derived from --ds-nav-h instead of a hardcoded 84px, so the
+   scrollable area ends exactly where the nav's top border is. */
 .home-screen,
 .dashboard-screen,
 .progress-screen,
 .upgrade-screen {
-  padding-bottom: 84px;
+  padding-bottom: calc(var(--ds-nav-h) + env(safe-area-inset-bottom));
 }
 
 /* ─── DASHBOARD / PROGRESS / UPGRADE SCREENS ─────────────────────────────── */
@@ -965,8 +983,8 @@ body.pb-enabled .divider::after {
   margin: 0 auto;
   width: 100%;
   max-width: 420px;
-  height: 100%;
-  min-height: -webkit-fill-available;
+  height: 100vh;
+  height: 100dvh;   /* v1.26.68 — see .home-screen */
   background: var(--ds-bg);
   display: flex;
   flex-direction: column;
@@ -1003,8 +1021,8 @@ body.pb-enabled .divider::after {
   margin: 0 auto;
   width: 100%;
   max-width: 420px;
-  height: 100%;
-  min-height: -webkit-fill-available;
+  height: 100vh;
+  height: 100dvh;   /* v1.26.68 — see .home-screen */
   background: var(--ds-bg);
   display: flex;
   flex-direction: column;
@@ -2325,14 +2343,14 @@ body.pb-enabled .divider::after {
   margin: 0 auto;
   width: 100%;
   max-width: 420px;
-  height: 100%;
-  min-height: -webkit-fill-available;
+  height: 100vh;
+  height: 100dvh;   /* v1.26.68 — see .home-screen */
   background: var(--ds-bg);
   display: flex;
   flex-direction: column;
   padding-left: 20px;
   padding-right: 20px;
-  padding-bottom: 84px;
+  padding-bottom: calc(var(--ds-nav-h) + env(safe-area-inset-bottom));
   overflow-y: auto;
 }
 
