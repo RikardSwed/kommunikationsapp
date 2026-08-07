@@ -2409,4 +2409,112 @@ const mindsetCollections = {
       ]
     },
   ],
+  complimenting: [
+    {
+      name: "They Cannot See Themselves From Outside",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The assumption that they already know — that a person who is good at something must be aware of it, so saying so adds nothing.\n\nAlmost nobody knows. People know what they intended and what went wrong; what they cannot see is the effect, and that is exactly the part only you can report.\n\nMindset: you are not confirming something. You are telling them something they have no way of knowing.",
+      inputs: [
+        { q: "They must know they're good at this.", a: "They know they tried. They don't know what it did to the room.", bundle: 'pro' },
+        { q: "Someone will have told them already.", a: "Ask anyone how often they get told. The answer is usually \"almost never\".", bundle: 'pro' },
+        { q: "It'll sound like I'm stating the obvious.", a: "Obvious to you, from the outside. That's the whole reason it's worth saying.", bundle: 'pro' },
+        { q: "They'd be embarrassed.", a: "For four seconds. Then it stays with them for years.", bundle: 'pro' },
+        { q: "I'll say it when it's a bigger occasion.", a: "The Tuesday ones are the ones people remember. Nobody expects those.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Deflecting Refuses a Gift",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The reflex to correct a compliment — \"it's old\", \"it was nothing\", \"I got lucky\". It feels like modesty from the inside. From the outside it is being told you were wrong to say something kind.\n\nAnd it teaches. Someone who is corrected twice stops offering, and then you have fewer compliments and no idea why.\n\nMindset: taking it is the generous move. Two words, then stop.",
+      inputs: [
+        { q: "Agreeing would be arrogant.", a: "\"Thank you\" isn't agreement. It's acknowledgement, and it's all that's needed.", bundle: 'pro' },
+        { q: "But it really wasn't that good.", a: "They weren't asking for your assessment. They were telling you theirs.", bundle: 'pro' },
+        { q: "I have to say something back.", a: "You don't. Theirs gets its own moment, and yours keeps.", bundle: 'pro' },
+        { q: "It's easier to laugh it off.", a: "Easier for you. It costs them the thing they were trying to give.", bundle: 'pro' },
+        { q: "I never know what to say.", a: "\"Thank you.\" Then close your mouth. That's the whole skill.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Specific Is Believable",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The belief that a bigger compliment is a better one — so \"you're amazing\" ought to beat \"the ending was good\".\n\nIt does not. Large general praise is the shape politeness takes, and everyone knows it; small specific praise cannot be produced without having paid attention, so it proves itself as it is said.\n\nMindset: the detail is the evidence. Without it you are only being nice.",
+      inputs: [
+        { q: "\"That was great\" is enough.", a: "It's pleasant and it evaporates. Add the one detail and it stays.", bundle: 'pro' },
+        { q: "I can't remember anything specific.", a: "Then say that. \"Something about the middle worked and I'm still working out what.\"", bundle: 'pro' },
+        { q: "The detail I noticed is too small.", a: "Small is the point. Nobody says the small ones, which is why they land.", bundle: 'pro' },
+        { q: "I don't want to sound like I was analysing them.", a: "Being noticed is not the same as being analysed. One sentence isn't a report.", bundle: 'pro' },
+        { q: "A big compliment feels more generous.", a: "More generous to give, less useful to receive. Aim at useful.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "It Costs You Nothing",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The quiet arithmetic that stops most compliments — the fear that it will be strange, misread, unwelcome, or that the moment has passed.\n\nWeigh it honestly. The downside is a few seconds of mild awkwardness, usually yours. The upside is something the other person may still be carrying in ten years. Very few things in a conversation have that ratio.\n\nMindset: the risk is small and it is mostly yours. Say it.",
+      inputs: [
+        { q: "It might come across wrong.", a: "Praise the choice, keep it short, and it won't. That's the whole safety rule.", bundle: 'pro' },
+        { q: "The moment has passed.", a: "\"This is overdue\" fixes that in three words.", bundle: 'pro' },
+        { q: "We're not close enough for me to say it.", a: "\"We barely know each other, so take this as an outside opinion…\" — and now you are.", bundle: 'pro' },
+        { q: "They'll think I want something.", a: "Then don't ask for anything today. That's what separates the two.", bundle: 'pro' },
+        { q: "I'd feel awkward.", a: "You would, for about four seconds. They'd have it for years.", bundle: 'pro' },
+      ]
+    },
+  ],
+  responsivehumour: [
+    {
+      name: "You Do Not Need Material",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The belief that funny people arrive with something — stories,\nlines, a stock of jokes — and that having none of that is why you are quiet.\n\nAlmost none of the humour in ordinary conversation works that way. It is\nbuilt out of the sentence that was just said, in the second after it was said,\nby someone doing one of about five things to it.\n\nMindset: you are not supposed to bring anything. Their sentence is the\nmaterial.",
+      inputs: [
+        { q: "I'm just not a funny person.", a: "You've never had to be. You've had to notice a sentence and bend it.", bundle: 'pro' },
+        { q: "I can never think of anything.", a: "Because you're looking for something new. Look at what they just said instead.", bundle: 'pro' },
+        { q: "Funny people have better lives to talk about.", a: "This pack is built on white walls and rain. That's the point.", bundle: 'pro' },
+        { q: "I think of the good line ten minutes later.", a: "Everyone does. The five moves are for the first ten seconds instead.", bundle: 'pro' },
+        { q: "I'd need to be quicker.", a: "You'd need one move. Exaggeration works on almost anything and nobody minds a slow one.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Short Is Funnier",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The instinct to keep going — to add the second half, the\nexplanation, the bit that makes sure they got it.\n\nEvery one of those is a subtraction. The response works because it is quick\nenough to feel effortless; a long one announces that you are performing, and\nnow it has to be worth the wait.\n\nMindset: four words beats fourteen. Stop before you want to.",
+      inputs: [
+        { q: "They might not get it.", a: "If they don't, it costs four seconds. If you explain, it costs more.", bundle: 'pro' },
+        { q: "It needs a bit more setup.", a: "Then it's a story, not a response. Save it and answer them instead.", bundle: 'pro' },
+        { q: "I'll add one more thing to make it land.", a: "The one more thing is what stops it landing.", bundle: 'pro' },
+        { q: "A longer joke is a better joke.", a: "On a stage, sometimes. In a kitchen, never.", bundle: 'pro' },
+        { q: "I trailed off at the end.", a: "Land on the last word and stop. The silence afterwards is theirs.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Never Explain It",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The urge to rescue a joke that did not land — to say it again,\nto point out the pun, to describe why it was funny.\n\nThe rescue is what people remember, not the miss. A joke nobody noticed is\nforgotten within seconds; a joke that was explained is a small awkwardness\neveryone in the room now shares.\n\nMindset: let it go. The next opening is a minute away.",
+      inputs: [
+        { q: "They didn't get it.", a: "Fine. Answer what they said and carry on.", bundle: 'pro' },
+        { q: "If I explain it they'll laugh.", a: "They'll do something. It won't be laughing.", bundle: 'pro' },
+        { q: "I want them to know I was joking.", a: "One flat line: \"that was me agreeing, badly.\" Then stop.", bundle: 'pro' },
+        { q: "I'll try the same joke again with better timing.", a: "The second run is always worse. Wait for a new sentence.", bundle: 'pro' },
+        { q: "It's embarrassing to be ignored.", a: "For you, for four seconds. Nobody else has noticed.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Aim at the Situation, Not the Person",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The line between this pack and being unkind, and it is not a\nvague one. Humour aimed at the weather, the queue, the timetable or at\nyourself is free. Humour aimed at a person costs them something.\n\nThe test is whether the joke needs them to be a good sport. If it does, it is\nat their expense, and that is a different skill with different rules — it needs\nan established friendship, not a technique.\n\nMindset: the situation, their sentence, or yourself. Those three are safe with\nanyone.",
+      inputs: [
+        { q: "They can take a joke.", a: "Maybe. But needing them to is the tell.", bundle: 'pro' },
+        { q: "It's obviously affectionate.", a: "To you. Warmth doesn't always survive the trip.", bundle: 'pro' },
+        { q: "Everyone else is doing it.", a: "To each other, with years behind it. You've had four minutes.", bundle: 'pro' },
+        { q: "Self-deprecation is boring.", a: "It's also the only target that can't complain, which makes it useful.", bundle: 'pro' },
+        { q: "The joke's about their thing, not them.", a: "Then shrink the thing and leave them out of it entirely.", bundle: 'pro' },
+      ]
+    },
+  ],
 };

@@ -190,6 +190,12 @@ const packTags = {
   rolebasedhumour: [
     'humour', 'banter', 'playfulness', 'characters'
   ],
+  complimenting: [
+    'compliments', 'appreciation', 'praise', 'receiving praise', 'saying nice things', 'noticing people'
+  ],
+  responsivehumour: [
+    'humour', 'being funny', 'quick replies', 'banter', 'playfulness', 'reacting'
+  ],
 };
 
 // ─── TOPICS ──────────────────────────────────────────────────────────
@@ -233,7 +239,7 @@ const TOPICS = [
   { id: 'interruptions',         title: 'Interruptions & Speaking Up',   packs: ['speakingupingroups', 'howtointerrupt', 'handleinterruptions'] },
 
   // ── Giving and taking it ──────────────────────────────────────────
-  { id: 'praise',                title: 'Praise & Compliments',          packs: ['compliments', 'praiseandencouragement'] },
+  { id: 'praise',                title: 'Praise & Compliments',          packs: ['compliments', 'praiseandencouragement', 'complimenting'] },
   { id: 'feedback',              title: 'Feedback & Criticism',          packs: ['criticism', 'givingcriticism', 'receivingfeedbackandcriticism'] },
   { id: 'repair',                title: 'Repair & Apology',              packs: ['apologizing2', 'apologizing1'] },
 
@@ -247,7 +253,7 @@ const TOPICS = [
   { id: 'emotions',              title: 'Emotions & Regulation',         packs: ['emotionlabellingandregulation', 'conflictemotions'] },
 
   // ── Lightness ─────────────────────────────────────────────────────
-  { id: 'humour',                title: 'Humour & Banter',               packs: ['humour', 'teasing', 'selfhumour', 'humourpractise', 'playfulrefusals', 'rolebasedhumour'] },
+  { id: 'humour',                title: 'Humour & Banter',               packs: ['humour', 'teasing', 'selfhumour', 'humourpractise', 'playfulrefusals', 'rolebasedhumour', 'responsivehumour'] },
 
   // ── Placeholders: no material yet, hidden below Complete ──────────
   { id: 'bodyvoice',             title: 'Body Language & Voice',         packs: [] },

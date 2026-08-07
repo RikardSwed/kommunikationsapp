@@ -190,6 +190,8 @@ applyInputCounterVisibility();
     emotionlabellingandregulation: { label: 'Emotion Labelling and Regulation', minLevel: 'pro' },
     conflictemotions: { label: 'Conflict Emotions', minLevel: 'pro' },
     rolebasedhumour: { label: 'Role Based Humour', minLevel: 'pro' },
+    complimenting: { label: 'Compliments', minLevel: 'pro' },
+    responsivehumour: { label: 'Responsive Humour', minLevel: 'pro' },
   };
 
   // Mode definitions per level
@@ -1179,6 +1181,34 @@ const BUNDLE_DEFS = {
       description: '',
     },
   ],
+  complimenting: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  responsivehumour: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
 };
 window.BUNDLE_DEFS = BUNDLE_DEFS;
 
@@ -1901,6 +1931,42 @@ if (resetFirstRunBtn) resetFirstRunBtn.addEventListener('click', () => {
 // for a NEW PACK or a real feature; bugfixes and internal work stay out.
 // Newest first. Keep each line in the user's language, not the changelog's.
 const WHATS_NEW = [
+  {
+    version: 'v1.26.78', date: 'August 2026', title: 'Two new packs',
+    items: [
+      '<strong>Compliments</strong> \u2014 saying the specific thing, praising a choice rather than luck, and the half nobody practises: taking one without deflecting it.',
+      '<strong>Responsive Humour</strong> \u2014 five ways to answer an ordinary sentence: exaggeration, understatement, misdirection, deliberate misunderstanding and irony.',
+    ],
+  },
+  {
+    version: 'v1.26.75', date: 'August 2026', title: 'A programme to start with',
+    items: [
+      'New programme: <strong>Conversation Foundations</strong>. Four parts, from your first sentence to a conversation that goes somewhere \u2014 and the packs you pass stay yours.',
+    ],
+  },
+  {
+    version: 'v1.26.74', date: 'August 2026', title: 'Introductions and suggestions',
+    items: [
+      'Every free pack now opens with a short introduction to its strategies. Tap the pack name above the training modes to read it again.',
+      'The Recommended row on the home screen updates itself, based on the topics you have actually been training.',
+    ],
+  },
+  {
+    version: 'v1.26.73', date: 'August 2026', title: 'Finding things in a bigger library',
+    items: [
+      'Search is <strong>ranked</strong> now. A match in a pack\u2019s name comes before a match in a strategy, which comes before a mention somewhere in the cards \u2014 and each result tells you why it turned up.',
+      'Topics are searchable too, so &ldquo;repair&rdquo; finds the Apologizing packs even where the word is on no card.',
+      'The Library separates what you can train with today from what Pro adds.',
+    ],
+  },
+  {
+    version: 'v1.26.67', date: 'August 2026', title: 'The library, many times over',
+    items: [
+      '<strong>38 new packs</strong> across every topic \u2014 Saying No, Making Requests, Giving Criticism, Deep Questions, Handling Conflict, Persuasion, Storytelling and thirty more.',
+      'New in the free version: <strong>First Strategies</strong>, six strategies that make a whole small conversation \u2014 with <em>every</em> training mode unlocked, so you can see what the others are.',
+      'Also free: <strong>Show Understanding</strong> and <strong>Starting Conversations \u2014 Pt. 1</strong>.',
+    ],
+  },
   {
     version: 'v1.26.66', date: 'August 2026', title: 'Progress and programs',
     items: [

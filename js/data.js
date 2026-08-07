@@ -4262,6 +4262,202 @@ const collections = {
       ]
     },
   ],
+  complimenting: [
+    {
+      name: "Name What You Noticed",
+      guideFront: "Name what you noticed when...",
+      guideBack: "A possible compliment.",
+      description: "Say the specific thing, not the category. Not \"that was a good talk\" — \"the bit where you stopped and let the silence sit.\"\n\nIt works because specific praise proves you were paying attention, and general praise does not. \"You're so good at this\" could have been said by someone who arrived late and left early. The detail is what makes it believable, and believable is the whole job — an unbelieved compliment does nothing at all.\n\nIt is also easier to say. Naming one thing you noticed is a small, factual sentence. \"You're amazing\" is a claim you then have to defend.\n\nTypical phrases: \"The bit where you stopped and let the silence sit \\u2014 that was good.\", \"You asked her three questions before you said anything about yourself. I noticed.\", \"That colour is doing something.\"\n\nThree things worth naming:\n\n1. A moment \\u2014 the smallest and safest. \"When you cut in and moved us on, that saved twenty minutes.\"\n\n2. A choice \\u2014 something they decided rather than something that happened. \"You went with the boring option and you were right.\"\n\n3. A pattern \\u2014 for people you know well, and the strongest of the three. \"You always ask the question everyone else is thinking.\"\n\nMindset: one specific sentence beats three generous ones. You are reporting something you saw, not handing out a grade.",
+      inputs: [
+        { q: "A colleague gave a talk that went well.", a: "\"The bit where you stopped and let the silence sit \\u2014 that landed.\"", bundle: 'free' },
+        { q: "You are about to say \"that was great\" and leave it there.", a: "\"That was great, and specifically the ending. You didn't oversell it.\"", bundle: 'free' },
+        { q: "A friend handled a difficult conversation you watched.", a: "\"You let him finish. I would not have managed that.\"", bundle: 'free' },
+        { q: "You notice something about how someone looks today.", a: "\"That jacket is a very good decision.\"", bundle: 'free' },
+        { q: "You want to name a pattern rather than a moment.", a: "\"You always ask the question everyone else is thinking.\"", bundle: 'free' },
+        { q: "The thing you noticed feels too small to mention.", a: "(say it anyway \\u2014 small and specific is what makes it land)", bundle: 'pro' },
+        { q: "They did something well weeks ago and you never said so.", a: "\"I never said it at the time: the way you handled that meeting in March was good.\"", bundle: 'pro' },
+        { q: "You want to praise the work without praising the person.", a: "\"The second draft is much better than the first. The cuts did it.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Compliment the Choice, Not the Luck",
+      guideFront: "Compliment the choice when...",
+      guideBack: "A possible compliment.",
+      description: "Praise what they did, not what they were handed. \"That jacket suits you\" is about a decision. \"You're so tall\" is about genetics.\n\nIt works because a compliment about a choice is about them; a compliment about luck is about their circumstances, and there is nothing to be proud of and nothing to say back. It is why \"you have nice eyes\" produces an awkward thank-you and \"you always know what to wear\" produces a conversation.\n\nIt also solves most of the awkwardness people feel about complimenting appearance. The choice is fair game \\u2014 the clothes, the haircut, the way someone puts things together. The body underneath is not, unless you know each other very well.\n\nTypical phrases: \"That's a good jacket.\", \"Whoever cut your hair knew what they were doing.\", \"You always know what to put with what.\"\n\nThree kinds of choice, and one to avoid:\n\n1. What they picked \\u2014 clothes, a book, a route, a wine. Easy and safe with anyone.\n\n2. What they practised \\u2014 anything that took work. Strongest, because they know what it cost.\n\n3. What they decided \\u2014 a judgement call, especially an unpopular one. \"You said no to that and you were right.\"\n\nAnd the one to avoid: what they were born with. It is not a compliment, it is an observation about their body, and at work or with a stranger it lands as something else entirely.\n\nMindset: praise the part they can take credit for. That is the part they can enjoy hearing.",
+      inputs: [
+        { q: "You like what someone is wearing.", a: "\"That's a good jacket. It's very you.\"", bundle: 'free' },
+        { q: "You are about to compliment something they were born with.", a: "\"Your hair always looks deliberate. Whoever cuts it is good.\"", bundle: 'free' },
+        { q: "They have clearly practised something.", a: "\"You've got much better at this. I can hear the difference.\"", bundle: 'free' },
+        { q: "They made an unpopular call that turned out right.", a: "\"You said no to that when nobody else would. That was the right call.\"", bundle: 'free' },
+        { q: "A colleague's presentation was well put together.", a: "\"The order you put it in was the clever part.\"", bundle: 'free' },
+        { q: "You want to compliment appearance at work without it being strange.", a: "\"Good jacket. That's all, carry on.\"", bundle: 'pro' },
+        { q: "They dismiss it as nothing.", a: "\"You still chose it. That counts.\"", bundle: 'pro' },
+        { q: "The thing you admire is how they are, not what they did.", a: "\"You're the calmest person in every room I've seen you in. That isn't luck.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Say Why It Landed",
+      guideFront: "Say why it landed when...",
+      guideBack: "A possible compliment.",
+      description: "Add what it did to you. Not just \"that was good\" \\u2014 \"that was good, and I have been thinking about it since.\"\n\nIt works because the effect is the part they cannot see. They know what they did; they do not know that it changed your afternoon, or that you repeated it to someone else, or that you have used it twice since. That is genuinely new information, and it is the difference between a polite remark and something a person remembers for years.\n\nIt is also unarguable. Someone can wave away \"that was brilliant\" \\u2014 they cannot wave away \"I went home and told my partner about it.\"\n\nTypical phrases: \"I've been thinking about it since.\", \"I told two people about that.\", \"I've started doing it your way.\", \"It made the whole day easier.\"\n\nThree effects worth reporting:\n\n1. What you did differently \\u2014 the strongest, because it is proof. \"I've copied that.\"\n\n2. What you felt \\u2014 simple and true. \"I was relieved when you said it.\"\n\n3. What you told someone else \\u2014 flattering without being flattery, because it happened.\n\nMindset: they know what they did. What they cannot know is what it did.",
+      inputs: [
+        { q: "A colleague's idea changed how you work.", a: "\"I've started doing it your way. It's better.\"", bundle: 'free' },
+        { q: "Someone said something in a meeting that helped.", a: "\"When you said that, I stopped worrying about the whole thing.\"", bundle: 'free' },
+        { q: "You told someone else about what they did.", a: "\"I told my partner about it that evening. It was that good.\"", bundle: 'free' },
+        { q: "A friend's advice actually worked.", a: "\"I did the thing you said. You were right and it worked.\"", bundle: 'free' },
+        { q: "Their calm made a hard day easier.", a: "\"You being unbothered made the whole afternoon easier for everyone.\"", bundle: 'free' },
+        { q: "You want to say it without making it heavy.", a: "\"Small thing, but I've thought about that three times this week.\"", bundle: 'pro' },
+        { q: "It changed your mind about something.", a: "\"You changed my mind on that, which does not happen often.\"", bundle: 'pro' },
+        { q: "You are giving the compliment months late.", a: "\"This is very overdue: what you said in March is still with me.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Say the Bigger One",
+      guideFront: "Say the bigger one when...",
+      guideBack: "A possible compliment.",
+      description: "Sometimes the compliment is not about what they did but about who they are \\u2014 and that one is worth saying out loud, rarely and properly.\n\nIt works because almost nobody hears it. People are told their work is good and their jacket is nice; they are hardly ever told that they are kind, or brave, or that being around them is easy. Those sentences are remembered for decades, and the reason they are remembered is that they are so rarely said.\n\nRarely is the discipline. Said often it becomes wallpaper, and said in passing it sounds like a line. This one wants a quiet moment and a plain voice.\n\nTypical phrases: \"You're one of the kinder people I know.\", \"You are very easy to be around, and that is not a small thing.\", \"I don't think you know how much people rely on you.\"\n\nThree ways to do it without it being strange:\n\n1. Attach it to evidence \\u2014 the safest by far. \"You drove two hours for someone who would not have done it for you. That is who you are.\"\n\n2. Say it is overdue \\u2014 removes the pressure of the moment. \"I should have said this years ago.\"\n\n3. Say it and stop \\u2014 no question afterwards, no expectation of a reply. Let it sit.\n\nMindset: this one is not a nicety, it is a piece of information about their life. Give it once and mean it.",
+      inputs: [
+        { q: "A friend has quietly done something generous, again.", a: "\"You're one of the kinder people I know. I don't think I've said that.\"", bundle: 'free' },
+        { q: "You want to attach it to something they actually did.", a: "\"You drove two hours for someone who wouldn't have done it for you. That's who you are.\"", bundle: 'free' },
+        { q: "Saying it feels overdue and slightly awkward.", a: "\"I should have said this years ago, and here it is anyway.\"", bundle: 'free' },
+        { q: "They keep things steady for everyone around them.", a: "\"I don't think you know how much people lean on you.\"", bundle: 'free' },
+        { q: "You have said it and they have gone quiet.", a: "(let it sit \\u2014 do not fill the pause)", bundle: 'free' },
+        { q: "You want to say it to someone you do not know well.", a: "\"We barely know each other, so take this as an outside opinion: you are very easy to talk to.\"", bundle: 'pro' },
+        { q: "You worry it will sound like a line.", a: "\"This is going to sound like a line. I mean it plainly: you are good at this and you are good to people.\"", bundle: 'pro' },
+        { q: "It is a family member and you never say things like this.", a: "\"We don't say this sort of thing. I'm going to anyway.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Say It Where It Counts",
+      guideFront: "Say it where it counts when...",
+      guideBack: "A possible compliment.",
+      description: "Decide who else hears it. The same sentence weighs differently said quietly at a desk and said in a room with eleven other people.\n\nIt works because public praise does something private praise cannot: it changes what everyone else thinks, not just what they think. Saying \"that was Sara's idea\" in a meeting is worth more to Sara than saying it to Sara.\n\nBut it cuts both ways. Public praise puts someone on the spot, and for a shy person or a private one it can be a cost rather than a gift. Praise about appearance almost always belongs in private. So does anything they might not want the room to know they needed.\n\nTypical phrases: \"Before we move on \\u2014 that was Sara's idea.\", \"Can I say this in front of everyone or would you rather I didn't?\", \"I wanted to say this without an audience.\"\n\nThree calls to make:\n\n1. Public, for work and credit. Say the name, say what they did, and move on before it becomes a speech.\n\n2. Private, for anything personal \\u2014 appearance, character, anything they might rather not have discussed.\n\n3. In writing, when it should outlast the moment. A message can be read again on a bad day; a remark cannot.\n\nMindset: ask who the compliment is for. If it is for them, it goes where they will be comfortable, not where you will be seen giving it.",
+      inputs: [
+        { q: "A colleague's idea is about to be adopted without credit.", a: "\"Before we move on \\u2014 that was Sara's idea, not mine.\"", bundle: 'free' },
+        { q: "You want to compliment how someone looks, at work.", a: "(say it quietly, or not at all \\u2014 that one is not for the room)", bundle: 'free' },
+        { q: "You want it to last longer than the moment.", a: "(send it as a message so they can read it again on a bad day)", bundle: 'free' },
+        { q: "They are shy and you are in a large group.", a: "\"I'll tell you properly afterwards rather than doing it here.\"", bundle: 'free' },
+        { q: "Someone junior did the actual work.", a: "\"The whole second half is his. I just held the pen.\"", bundle: 'free' },
+        { q: "You are not sure whether they would want it said publicly.", a: "\"Would you rather I said this in the meeting or just to you?\"", bundle: 'pro' },
+        { q: "You praised someone publicly and it clearly embarrassed them.", a: "\"I put you on the spot. I meant it, though \\u2014 and I'll stop now.\"", bundle: 'pro' },
+        { q: "The person who deserves credit is not in the room.", a: "\"She's not here, so I'll say it anyway: that was her work.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Take a Compliment",
+      guideFront: "Take a compliment when...",
+      guideBack: "A possible compliment.",
+      description: "Say thank you and stop. Do not correct it, do not explain it away, do not immediately hand one back.\n\nIt works because a compliment is a gift, and deflecting it is refusing one. \"Oh, it's old\", \"it was nothing\", \"I got lucky\" all tell the other person that they were wrong to say it \\u2014 and people who are told that twice stop saying things.\n\nThe reflex is modesty, and it is well meant. But the effect is that you correct someone who was being kind to you, and that they leave the exchange slightly worse off than before they spoke.\n\nTypical phrases: \"Thank you.\", \"That's a nice thing to hear.\", \"Thanks \\u2014 I worked hard on it, so that's good to know.\"\n\nThree ways, from smallest to warmest:\n\n1. Just thank you. Two words, then stop talking. Harder than it sounds and always enough.\n\n2. Thank you plus agreement \\u2014 for when it is true and you know it. \"Thanks. I was pleased with that bit too.\"\n\n3. Thank you plus what it means \\u2014 the warmest. \"That's good to hear, actually. I wasn't sure about it.\"\n\nMindset: they are not asking you to prove it. They are telling you something. Take it.",
+      inputs: [
+        { q: "Someone praises your work and you are about to explain why it was not that good.", a: "\"Thank you. That's good to hear.\"", bundle: 'free' },
+        { q: "Someone compliments your clothes.", a: "\"Thanks \\u2014 I like it too, which is why I wear it too often.\"", bundle: 'free' },
+        { q: "You are about to say \"it was nothing\".", a: "\"It did take a while, actually. Thank you.\"", bundle: 'free' },
+        { q: "You genuinely agree with them.", a: "\"Thanks. I was pleased with that part too.\"", bundle: 'free' },
+        { q: "You were unsure about the thing they just praised.", a: "\"That's good to hear \\u2014 I wasn't sure about it.\"", bundle: 'free' },
+        { q: "The compliment is bigger than you feel comfortable with.", a: "\"That's a lot. Thank you \\u2014 I'm going to sit with it rather than argue.\"", bundle: 'pro' },
+        { q: "You do not agree with it at all.", a: "\"I don't quite see it, but thank you for saying so.\"", bundle: 'pro' },
+        { q: "You have deflected the last three.", a: "(this time just say thank you, and let the sentence end)", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Answer It, Don't Return It",
+      guideFront: "Answer it rather than return it when...",
+      guideBack: "A possible compliment.",
+      description: "When someone compliments you, resist firing one straight back. Take theirs first. If you have a real one for them, it will keep.\n\nIt works because the instant return cancels both. \"That was a great presentation\" \\u2014 \"yours was better!\" reads as a transaction rather than a response, and now neither person has actually been told anything. It is the compliment equivalent of handing the conversation back before you have answered.\n\nThe reflex comes from discomfort, not generosity. Returning it gets the attention off you fast, which is exactly why it feels like relief \\u2014 and exactly why it undoes what they were trying to do.\n\nTypical phrases: \"Thank you. Genuinely.\", \"I'll take that. And separately \\u2014 you were good too, but I'm not just saying it back.\", \"Stop \\u2014 you first.\"\n\nThree ways to answer instead:\n\n1. Just take it and let the moment end. Their compliment gets its own space.\n\n2. Take it, then say something true and different \\u2014 not a mirror. \"Thanks. How did you find the whole thing?\"\n\n3. If you do want to praise them back, name it as separate. \"This isn't me returning yours: the bit about the numbers was the best part.\"\n\nMindset: theirs first. Yours keeps.",
+      inputs: [
+        { q: "They compliment you and you are already forming one back.", a: "\"Thank you. Genuinely.\" (and stop)", bundle: 'free' },
+        { q: "You want to say something back and mean it.", a: "\"I'm not just returning this \\u2014 the bit about the numbers was the best part of yours.\"", bundle: 'free' },
+        { q: "You both did the same thing and they praised you first.", a: "\"Thanks. I'll say mine later so it counts.\"", bundle: 'free' },
+        { q: "The reflex is to say \"no, you were better\".", a: "\"I'll take it. Thank you.\"", bundle: 'free' },
+        { q: "You want to move on without deflecting.", a: "\"That's kind. How did the rest of it feel to you?\"", bundle: 'free' },
+        { q: "They compliment you in a group and everyone is watching.", a: "\"Thank you \\u2014 that's a nice thing to hear in front of people.\"", bundle: 'pro' },
+        { q: "You returned it instantly and you can hear that it sounded hollow.", a: "\"That came out as a reflex. Let me say it properly: you were good.\"", bundle: 'pro' },
+        { q: "They are the sort who deflects everything you say.", a: "\"You never take these. I'm going to keep saying them anyway.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  responsivehumour: [
+    {
+      name: "Exaggeration",
+      guideFront: "Exaggerate when...",
+      guideBack: "A possible response.",
+      description: "Take what they said and make it enormous. \"I'm hungry.\" — \"I haven't eaten since the dinosaurs went extinct.\"\n\nIt works because everyone can hear that the size is wrong, and the gap between the real thing and the enormous version is the joke. Nobody has to decode anything. It is the most forgiving of the five, which is why it is the one to start with.\n\nThe scale is the whole technique. A small exaggeration sounds like a complaint; a ridiculous one is obviously play. If you are worried it is too much, it is probably not enough.\n\nTypical phrases: \"I haven't eaten since the dinosaurs went extinct.\", \"This is the single greatest thing that has ever happened to anyone.\", \"I've been waiting here so long I have grandchildren.\"\n\nThree things worth exaggerating:\n\n1. Your own state — hunger, tiredness, panic. Safest, because the target is you.\n\n2. The situation you are both in — the queue, the weather, the meeting. Also safe, because you are both in it.\n\n3. Their claim, agreed with too enthusiastically — \"three tests? That's basically a war crime.\" Careful here: it is warm only if you are clearly on their side.\n\nMindset: go bigger than feels sensible. The size is the signal that you are playing.",
+      inputs: [
+        { q: "\"I'm so hungry.\"", a: "\"I haven't eaten since the dinosaurs went extinct.\"", bundle: 'free' },
+        { q: "\"We have three tests next week.\"", a: "\"Three? That's not a week, that's a sentence.\"", bundle: 'free' },
+        { q: "\"I'm running out of time.\"", a: "\"Same. I've started scheduling my panicking.\"", bundle: 'free' },
+        { q: "\"I couldn't sleep, my neighbour was making noise.\"", a: "\"Is your neighbour a marching band? It sounds like a marching band.\"", bundle: 'free' },
+        { q: "\"It's lunch in five minutes.\"", a: "\"Five minutes. I can survive that. Probably. Tell my family I tried.\"", bundle: 'free' },
+        { q: "\"I read books all the time.\"", a: "\"All the time? When do you eat? Do you read while eating?\"", bundle: 'pro' },
+        { q: "You want the target to be yourself.", a: "\"I once waited so long for a bus that I aged out of the fare bracket.\"", bundle: 'pro' },
+        { q: "A small exaggeration is coming out and sounding like a complaint.", a: "(go further — halfway sounds like moaning, all the way sounds like a joke)", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Understatement",
+      guideFront: "Understate when...",
+      guideBack: "A possible response.",
+      description: "Take what they said and make it tiny. \"I ran a marathon.\" — \"That's a bit of a walk.\"\n\nIt works for the same reason exaggeration does, in reverse: the size is obviously wrong, and everyone can hear it. But it lands differently. Exaggeration is loud and warm; understatement is dry, and it flatters the other person, because treating their achievement as ordinary is a way of saying it is not.\n\nIt is the most useful of the five with people you do not know well, because it is quiet. Nobody has to perform anything and it is over in four words.\n\nTypical phrases: \"That's a bit of a walk.\", \"So, a mild inconvenience then.\", \"I imagine that was mildly annoying.\", \"Not the worst week you've had.\"\n\nThree places it works best:\n\n1. On something impressive — the classic, and the most flattering. \"You built the whole thing? Bit of a project.\"\n\n2. On something disastrous — sympathy in dry clothing. \"So the week has been going well, then.\"\n\n3. On something obvious — see also Deliberate Misunderstanding. \"It's raining.\" — \"I did notice a bit of moisture.\"\n\nMindset: say it flat. Understatement is entirely in the delivery — the words do almost none of the work.",
+      inputs: [
+        { q: "\"I ran a marathon on Sunday.\"", a: "\"That's a bit of a walk.\"", bundle: 'free' },
+        { q: "\"The car broke down, then I lost my keys, then it rained.\"", a: "\"So the day has been going well.\"", bundle: 'free' },
+        { q: "\"We have three tests next week.\"", a: "\"A light schedule, then.\"", bundle: 'free' },
+        { q: "\"My computer is super fast.\"", a: "\"Steady on. It's a laptop, not a rocket.\"", bundle: 'free' },
+        { q: "\"I've been up since four.\"", a: "\"Bit of an early start.\"", bundle: 'free' },
+        { q: "They have done something genuinely impressive.", a: "\"You built the whole thing yourself? Bit of a project.\"", bundle: 'pro' },
+        { q: "You want to be sympathetic without being solemn.", a: "\"That does sound mildly annoying.\"", bundle: 'pro' },
+        { q: "You are about to add a laugh or an explanation.", a: "(say it flat and stop — the flatness is the joke)", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Misdirection",
+      guideFront: "Use misdirection when...",
+      guideBack: "A possible response.",
+      description: "Start out agreeing, then twist the ending. \"My computer is so fast.\" — \"Yes, I saw it running down the street yesterday.\"\n\nIt works because the first half sets up an expectation and the second half breaks it. The listener follows you into a normal sentence, and the last few words go somewhere else entirely. It is the closest of the five to a joke in the traditional sense.\n\nThe order is the whole thing. The twist has to be last, and everything before it has to sound completely ordinary. Signal it early and there is nothing to break.\n\nTypical phrases: \"Yes, and…\", \"Absolutely. Which is why…\", \"I know exactly what you mean. Last week I…\"\n\nThree ways to set up the turn:\n\n1. Agree, then take the word literally in another sense — the easiest. \"Fast? I saw it running down the street.\"\n\n2. Agree, then reveal a ridiculous reason. \"Of course you're tired. You've been awake since Tuesday, allegedly.\"\n\n3. Agree, then land somewhere unrelated. \"That's a great point, and it reminds me that I have no idea what we're talking about.\"\n\nMindset: ordinary, ordinary, then sideways. Keep a straight face until after the last word.",
+      inputs: [
+        { q: "\"My computer is super fast.\"", a: "\"I know. I saw it running down the street yesterday.\"", bundle: 'free' },
+        { q: "\"This room is too dark.\"", a: "\"It is. I think it's saving the light for the afternoon shift.\"", bundle: 'free' },
+        { q: "\"The room has white walls.\"", a: "\"It does. Someone in this building has made exactly one decision.\"", bundle: 'free' },
+        { q: "\"I love eating pizza.\"", a: "\"Same. It's the only food that's also a plate.\"", bundle: 'free' },
+        { q: "\"It's lunch in five minutes.\"", a: "\"Perfect. I've been preparing for this since breakfast, emotionally.\"", bundle: 'free' },
+        { q: "You want to agree first and turn at the very end.", a: "\"Completely agree. Which is exactly why I've done nothing about it.\"", bundle: 'pro' },
+        { q: "You signalled the joke too early and it died.", a: "(next time keep the first half completely flat — that half is the setup)", bundle: 'pro' },
+        { q: "They say something that could be taken two ways.", a: "\"Yes — and I'm choosing to hear the second one.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Deliberate Misunderstanding",
+      guideFront: "Misunderstand deliberately when...",
+      guideBack: "A possible response.",
+      description: "Pretend you took it the wrong way. \"It's raining outside.\" — \"Really? Inside my house it's completely dry.\"\n\nIt works because both of you know exactly what was meant, and the pretending is the joke. It is not confusion, it is a performance of confusion, and it only lands if it is obviously deliberate.\n\nThat is also the risk. Done with a straight face and no warmth it reads as pedantry, or as not listening. The delivery has to say *I am playing* while the words say something else.\n\nTypical phrases: \"Really? Not where I'm standing.\", \"Wait — you meant the other one?\", \"Oh, I thought you meant…\"\n\nThree kinds of misunderstanding:\n\n1. Take the literal sense — the standard. \"It's raining outside.\" — \"Inside it's fine.\"\n\n2. Take the other meaning of a word — the sharpest, when a word offers two. \"I'm reading a lot at the moment.\" — \"Out loud? To strangers?\"\n\n3. Take the whole statement as being about something else. \"This room is too dark.\" — \"The room is fine, it's your outlook.\"\n\nMindset: the point is not to seem confused. It is to be obviously, cheerfully wrong on purpose.",
+      inputs: [
+        { q: "\"It's raining outside.\"", a: "\"Really? Inside it's completely dry.\"", bundle: 'free' },
+        { q: "\"This room is too dark.\"", a: "\"The room is fine. It's your outlook that needs work.\"", bundle: 'free' },
+        { q: "\"I read books all the time.\"", a: "\"All of them? At once? That's a lot of arms.\"", bundle: 'free' },
+        { q: "\"Playing soccer is boring.\"", a: "\"Depends where you stand, I suppose. Try the middle.\"", bundle: 'free' },
+        { q: "\"I'm running out of time.\"", a: "\"Where does it go? Have you checked the sofa?\"", bundle: 'free' },
+        { q: "A word they used has two meanings.", a: "\"You're reading a lot? Out loud? To strangers?\"", bundle: 'pro' },
+        { q: "Your delivery is landing as pedantic rather than playful.", a: "(warm the tone — the words are the same, the smile does the work)", bundle: 'pro' },
+        { q: "They start explaining what they actually meant.", a: "\"I know what you meant. I just liked mine better.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Irony",
+      guideFront: "Use irony when...",
+      guideBack: "A possible response.",
+      description: "Say the opposite of what you mean, and let your tone carry it. \"It's raining again.\" — \"Excellent. My favourite.\"\n\nIt works because the words and the delivery disagree, and the listener enjoys resolving the gap. It is the most economical of the five — often three words — and the most adult, which is why it is everywhere in ordinary conversation without anyone calling it humour.\n\nIt is also the one that needs the most care. Irony delivered flat to someone who does not know you can be taken at face value, and irony aimed at something they are proud of stops being funny immediately.\n\nTypical phrases: \"Oh, wonderful.\", \"Yes, that's exactly what I was hoping for.\", \"Can't wait.\", \"Perfect timing.\"\n\nFour things worth being ironic about, from Rikard's notes:\n\n1. Your own failures — the safest by a wide margin. \"I've handled that beautifully.\"\n\n2. Your own successes, played down — self-irony rather than self-praise. \"Yes, I'm basically an expert now. Two attempts.\"\n\n3. A shared inconvenience — the weather, the queue, the timetable. \"Three tests. Lovely.\"\n\n4. Something obviously good, called bad — the lightest form, and the one that reads as warmth. \"A whole week off. How will I cope.\"\n\nAnd the rule from the same notes: aim for exaggeration or contrast, keep it short, and never at someone's expense. Irony about a person, delivered dry, is sarcasm — a different thing, and not what this pack teaches.\n\nMindset: the words say one thing, you say another. Keep it short enough that nobody has to work.",
+      inputs: [
+        { q: "\"We have three tests next week.\"", a: "\"Lovely. I was hoping for a quiet week.\"", bundle: 'free' },
+        { q: "\"It's raining outside.\"", a: "\"Excellent. My favourite.\"", bundle: 'free' },
+        { q: "\"Playing soccer is boring.\"", a: "\"Yes, terrible sport. Only about four billion fans.\"", bundle: 'free' },
+        { q: "You have just made the same mistake twice.", a: "\"I've handled this beautifully so far.\"", bundle: 'free' },
+        { q: "\"It will be nice with a holiday.\"", a: "\"Will it? I hate holidays. So restful. Awful.\"", bundle: 'free' },
+        { q: "You want to play down your own success.", a: "\"Yes, I'm basically an expert. Took two attempts and a video.\"", bundle: 'pro' },
+        { q: "You are about to be ironic about something they are proud of.", a: "(leave it — that one lands as sarcasm, not humour)", bundle: 'pro' },
+        { q: "They may not know you well enough to hear the tone.", a: "\"That was sarcasm, for the record. I'm delighted for you.\"", bundle: 'pro' },
+      ]
+    },
+  ],
 };
 
 // ─── COLLECTIONS MODE DATA ───────────────────────────────────────────────────
@@ -6274,6 +6470,100 @@ const collectionsModeData = {
         { q: "They say: \"It's raining outside.\"", a: "\"Take my coat, my umbrella, my shoes. I'll manage.\" (the super generous one)", bundle: 'pro' },
         { q: "They say: \"The meeting's been moved to Friday.\"", a: "\"Is it though? I never saw an invite. I see no invite.\" (the rule breaker)", bundle: 'pro' },
         { q: "They say: \"My laptop died.\"", a: "\"Yours died and mine is fine, and now I live with that guilt.\" (the mock-offended one)", bundle: 'pro' },
+      ]
+    },
+  ],
+  complimenting: [
+    {
+      name: "Saying It",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible compliment, with the strategy in brackets.",
+      description: "Name What You Noticed, Compliment the Choice Not the Luck, Say Why It Landed, Say the Bigger One and Say It Where It Counts \\u2014 everything on the giving side.\n\nThey answer different questions. What do I praise? Something specific, and something they chose. What do I add? What it did to you. How far do I go? Usually not far, occasionally all the way. And who else hears it?\n\nThe commonest failure in this collection is vagueness. Generous but general praise reads as politeness, and politeness is not remembered.\n\nMindset: specific, about a choice, and honest about the effect.",
+      inputs: [
+        { q: "A colleague gave a talk that went well.", a: "\"The bit where you stopped and let the silence sit \\u2014 that landed.\" [Name What You Noticed]", bundle: 'pro' },
+        { q: "You like what someone is wearing.", a: "\"That's a good jacket. It's very you.\" [Compliment the Choice, Not the Luck]", bundle: 'pro' },
+        { q: "Their idea changed how you work.", a: "\"I've started doing it your way. It's better.\" [Say Why It Landed]", bundle: 'pro' },
+        { q: "A friend has quietly been generous again.", a: "\"You're one of the kinder people I know. I don't think I've said that.\" [Say the Bigger One]", bundle: 'pro' },
+        { q: "A colleague's idea is about to be adopted without credit.", a: "\"Before we move on \\u2014 that was Sara's idea.\" [Say It Where It Counts]", bundle: 'pro' },
+        { q: "You are about to compliment something they were born with.", a: "\"Whoever cuts your hair is good.\" [Compliment the Choice, Not the Luck]", bundle: 'pro' },
+        { q: "You want to compliment appearance at work without it being strange.", a: "\"Good jacket. That's all, carry on.\" [Say It Where It Counts]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Taking It",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible compliment, with the strategy in brackets.",
+      description: "Take a Compliment and Answer It Don't Return It \\u2014 the two on the receiving side, and the half almost nobody practises.\n\nThey fix the two reflexes. Deflecting corrects someone who was being kind to you, and after twice most people stop saying things. Returning it instantly cancels both compliments and turns a moment into a transaction.\n\nWhat replaces them is very small: two words and a full stop. The difficulty is not knowing what to say, it is stopping afterwards.\n\nMindset: they are telling you something, not asking you to prove it.",
+      inputs: [
+        { q: "Someone praises your work and you start explaining why it was not that good.", a: "\"Thank you. That's good to hear.\" [Take a Compliment]", bundle: 'pro' },
+        { q: "They compliment you and you are already forming one back.", a: "\"Thank you. Genuinely.\" [Answer It, Don't Return It]", bundle: 'pro' },
+        { q: "You are about to say \"oh, it was nothing\".", a: "\"It did take a while, actually. Thank you.\" [Take a Compliment]", bundle: 'pro' },
+        { q: "You do want to praise them back and mean it.", a: "\"I'm not just returning yours \\u2014 the numbers bit was the best part.\" [Answer It, Don't Return It]", bundle: 'pro' },
+        { q: "You genuinely agree with what they said.", a: "\"Thanks. I was pleased with that part too.\" [Take a Compliment]", bundle: 'pro' },
+        { q: "The reflex is to say \"no, you were better\".", a: "\"I'll take it. Thank you.\" [Answer It, Don't Return It]", bundle: 'pro' },
+        { q: "The compliment is bigger than you are comfortable with.", a: "\"That's a lot. Thank you \\u2014 I'll sit with it rather than argue.\" [Take a Compliment]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "All Seven",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible compliment, with the strategy in brackets.",
+      description: "Every strategy in the pack, mixed \\u2014 giving and receiving in the order real days produce them.\n\nFive are about saying it and two about taking it, and the two are the ones worth practising most, because they happen to you whether you prepared or not.\n\nIf you are unsure which you need, ask what is missing. No detail means name what you noticed. No effect means say why it landed. An audience question means say it where it counts. And if the compliment is coming at you, the answer is nearly always to stop talking sooner than feels natural.\n\nMindset: a compliment is information the other person does not have. Nobody sees themselves from outside.",
+      inputs: [
+        { q: "You are about to say \"that was great\" and leave it there.", a: "\"That was great, and specifically the ending. You didn't oversell it.\" [Name What You Noticed]", bundle: 'pro' },
+        { q: "Someone compliments your clothes.", a: "\"Thanks \\u2014 I like it too, which is why I wear it too often.\" [Take a Compliment]", bundle: 'pro' },
+        { q: "They made an unpopular call that turned out right.", a: "\"You said no when nobody else would. That was right.\" [Compliment the Choice, Not the Luck]", bundle: 'pro' },
+        { q: "You told someone else about what they did.", a: "\"I told my partner about it that evening. It was that good.\" [Say Why It Landed]", bundle: 'pro' },
+        { q: "They compliment you in front of a group.", a: "\"Thank you \\u2014 that's a nice thing to hear in front of people.\" [Answer It, Don't Return It]", bundle: 'pro' },
+        { q: "You never say things like this to family.", a: "\"We don't say this sort of thing. I'm going to anyway.\" [Say the Bigger One]", bundle: 'pro' },
+        { q: "They are shy and you are in a large group.", a: "\"I'll tell you properly afterwards rather than doing it here.\" [Say It Where It Counts]", bundle: 'pro' },
+      ]
+    },
+  ],
+  responsivehumour: [
+    {
+      name: "Bigger and Smaller",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible response, with the strategy in brackets.",
+      description: "Exaggeration and Understatement — the same move in opposite directions, and the two to learn first.\n\nBoth work by getting the size obviously wrong. What differs is the temperature. Exaggeration is loud and generous and works best on your own state or on something you are both stuck in. Understatement is dry, takes four words, and quietly flatters whatever it shrinks.\n\nIf you are unsure which fits, ask whether the moment wants warmth or wants dryness. A friend describing a disaster usually wants the first. A colleague describing an achievement usually enjoys the second.\n\nMindset: get the size wrong on purpose. That is the whole mechanism.",
+      inputs: [
+        { q: "\"I'm so hungry.\"", a: "\"I haven't eaten since the dinosaurs went extinct.\" [Exaggeration]", bundle: 'pro' },
+        { q: "\"I ran a marathon on Sunday.\"", a: "\"That's a bit of a walk.\" [Understatement]", bundle: 'pro' },
+        { q: "\"The car broke down, then I lost my keys, then it rained.\"", a: "\"So the day has been going well.\" [Understatement]", bundle: 'pro' },
+        { q: "\"I couldn't sleep, my neighbour was making noise.\"", a: "\"Is your neighbour a marching band?\" [Exaggeration]", bundle: 'pro' },
+        { q: "\"I've been up since four.\"", a: "\"Bit of an early start.\" [Understatement]", bundle: 'pro' },
+        { q: "\"We have three tests next week.\"", a: "\"Three? That's not a week, that's a sentence.\" [Exaggeration]", bundle: 'pro' },
+        { q: "They built something genuinely impressive.", a: "\"You did the whole thing yourself? Bit of a project.\" [Understatement]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Twisting It",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible response, with the strategy in brackets.",
+      description: "Misdirection, Deliberate Misunderstanding and Irony — the three that change the meaning rather than the size.\n\nMisdirection turns at the end of your own sentence. Deliberate Misunderstanding turns their sentence, by taking it the wrong way on purpose. Irony turns your own words against themselves and leaves the tone to explain.\n\nThese three ask more of the listener than the first two, and they are correspondingly better when they land. All three depend on delivery: the twist is in how it is said at least as much as in what.\n\nMindset: same sentence, different direction. Keep a straight face and stop early.",
+      inputs: [
+        { q: "\"My computer is super fast.\"", a: "\"I know. I saw it running down the street yesterday.\" [Misdirection]", bundle: 'pro' },
+        { q: "\"It's raining outside.\"", a: "\"Really? Inside it's completely dry.\" [Deliberate Misunderstanding]", bundle: 'pro' },
+        { q: "\"We have three tests next week.\"", a: "\"Lovely. I was hoping for a quiet week.\" [Irony]", bundle: 'pro' },
+        { q: "\"This room is too dark.\"", a: "\"The room is fine. It's your outlook.\" [Deliberate Misunderstanding]", bundle: 'pro' },
+        { q: "\"I love eating pizza.\"", a: "\"Same. It's the only food that's also a plate.\" [Misdirection]", bundle: 'pro' },
+        { q: "\"It will be nice with a holiday.\"", a: "\"Will it? So restful. Awful.\" [Irony]", bundle: 'pro' },
+        { q: "\"I read books all the time.\"", a: "\"All of them? At once? That's a lot of arms.\" [Deliberate Misunderstanding]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "All Five",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible response, with the strategy in brackets.",
+      description: "Every strategy in the pack, mixed, on the kind of ordinary sentence people actually say.\n\nNotice how little the input matters. \"It's raining outside\" can be met with any of the five, and none of them requires you to have thought of anything in advance. That is the argument of the whole pack: you do not need material, you need their sentence.\n\nIf you are stuck, exaggeration is the default. It is the most forgiving, it works on almost anything, and nobody has ever had to explain one.\n\nMindset: take what they said and do something to it. Bigger, smaller, sideways, literal, or backwards.",
+      inputs: [
+        { q: "\"It's lunch in five minutes.\"", a: "\"Five minutes. I can survive that. Probably.\" [Exaggeration]", bundle: 'pro' },
+        { q: "\"The room has white walls.\"", a: "\"It does. Someone here has made exactly one decision.\" [Misdirection]", bundle: 'pro' },
+        { q: "\"Playing soccer is boring.\"", a: "\"Yes, terrible sport. Only about four billion fans.\" [Irony]", bundle: 'pro' },
+        { q: "\"I'm running out of time.\"", a: "\"Where does it go? Have you checked the sofa?\" [Deliberate Misunderstanding]", bundle: 'pro' },
+        { q: "\"My computer is super fast.\"", a: "\"Steady on. It's a laptop, not a rocket.\" [Understatement]", bundle: 'pro' },
+        { q: "\"I'm so hungry.\"", a: "\"Same. I've started eyeing up the stationery.\" [Exaggeration]", bundle: 'pro' },
+        { q: "\"I couldn't sleep last night.\"", a: "\"Bit of a shame.\" [Understatement]", bundle: 'pro' },
       ]
     },
   ],

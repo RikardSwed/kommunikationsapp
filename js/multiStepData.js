@@ -4433,4 +4433,176 @@ const multiStepCollections = {
       ]
     },
   ],
+  complimenting: [
+    {
+      name: "A Compliment That Lands",
+      guideFront: "What they said, and the strategy to answer it with.",
+      guideBack: "One way it could sound.",
+      description: "Name What You Noticed, then Say Why It Landed, then Say the Bigger One — with Take a Compliment at the end, because a good compliment usually comes back at you.\n\nThe order builds. A detail proves you were paying attention, the effect gives them something they could not know, and only then does the larger sentence sound earned rather than like a line.\n\nMindset: specific first. The big one only works on top of a small one.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "A colleague cut in during a meeting that was going nowhere, moved everyone on, and nobody said anything about it afterwards.",
+          steps: [
+            { front: "Name What You Noticed — you catch them in the corridor.", back: "\"When you cut in and moved us on — that saved twenty minutes.\"" },
+            { front: "Say Why It Landed — they say, \"I wasn't sure I should.\"", back: "\"I'd have sat there for the whole hour. I've been thinking about how you did it.\"" },
+            { front: "Say the Bigger One — they say, \"That's kind of you.\"", back: "\"You do that a lot, actually. Meetings are better when you're in them.\"" },
+            { front: "Take a Compliment — they say, \"Well — so are yours.\"", back: "\"Thank you. I'll take that.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A friend has been holding a lot together and you have not said anything about it.",
+          steps: [
+            { front: "Name What You Noticed — you are walking back from somewhere.", back: "\"You rang your mum every single day this month. I noticed.\"" },
+            { front: "Say Why It Landed — they say, \"Someone had to.\"", back: "\"It made me ring mine. That's not a small thing to have done to me.\"" },
+            { front: "Say the Bigger One — they shrug.", back: "\"I should have said this years ago: you're one of the kinder people I know.\"" },
+            { front: "Take a Compliment — they say, \"You'd have done the same.\"", back: "\"Maybe. Take the compliment anyway.\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "When One Comes At You",
+      guideFront: "What they said, and the strategy to answer it with.",
+      guideBack: "One way it could sound.",
+      description: "Take a Compliment, then Answer It Don't Return It, then — later, and separately — Name What You Noticed and Say Why It Landed.\n\nThe whole point is the gap. Praising them back in the same breath cancels both; praising them ten minutes later, about something specific, counts. Same words, completely different effect.\n\nMindset: theirs first. Yours keeps.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You have both just presented, and they get to you first.",
+          steps: [
+            { front: "Take a Compliment — they say, \"That was really good.\"", back: "\"Thank you. That's good to hear — I wasn't sure about the middle.\"" },
+            { front: "Answer It, Don't Return It — you feel the urge to say yours was better.", back: "\"How did the whole thing feel from where you were sitting?\"" },
+            { front: "Name What You Noticed — later, over coffee.", back: "\"Separately: the bit where you put the numbers last was the clever part.\"" },
+            { front: "Say Why It Landed — they say, \"You think so?\"", back: "\"I'm going to steal it for mine next month.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A friend says something warm about you, out of nowhere, in the middle of an ordinary evening.",
+          steps: [
+            { front: "Take a Compliment — they say, \"You're very easy to be around, you know.\"", back: "\"That's a lot. Thank you — I'm going to sit with it rather than argue.\"" },
+            { front: "Answer It, Don't Return It — the reflex is to fire one straight back.", back: "(let the pause happen — theirs gets its own space)" },
+            { front: "Say the Bigger One — later the same evening.", back: "\"This isn't me returning yours. I've thought it for years: you're the person I ring first.\"" },
+            { front: "Take a Compliment — they say, \"Now we're both being strange.\"", back: "\"We are. Worth it.\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Giving Credit in a Room",
+      guideFront: "What they said, and the strategy to answer it with.",
+      guideBack: "One way it could sound.",
+      description: "Say It Where It Counts, then Name What You Noticed, then Compliment the Choice — and Take a Compliment when it comes back.\n\nPublic praise has to be quick and precise or it turns into a speech and embarrasses everyone. Name, thing, done. The detail goes in afterwards, quietly, where it can be longer.\n\nMindset: in the room it is about credit. Outside the room it can be about them.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You are presenting something in a meeting and most of the actual work was done by someone junior who is in the room.",
+          steps: [
+            { front: "Say It Where It Counts — you reach the second half of the slides.", back: "\"The whole of this half is Jonas's work. I held the pen.\"" },
+            { front: "Name What You Noticed — afterwards, at his desk.", back: "\"The order you put the sections in is what made it work.\"" },
+            { front: "Compliment the Choice, Not the Luck — he says, \"It just came out that way.\"", back: "\"You chose to cut the first version. That was the decision.\"" },
+            { front: "Take a Compliment — he says, \"You gave me the whole slot, though.\"", back: "\"Thank you. It was yours to have.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Someone has organised a family gathering that everyone is enjoying and nobody has mentioned.",
+          steps: [
+            { front: "Say It Where It Counts — there is a natural pause at the table.", back: "\"Before anyone starts eating: none of this happens without Karin.\"" },
+            { front: "Name What You Noticed — later, in the kitchen.", back: "\"You seated people so that nobody was stuck. I saw you do it.\"" },
+            { front: "Compliment the Choice, Not the Luck — she says, \"It's just what you do.\"", back: "\"It's what you do. Most people don't think about it at all.\"" },
+            { front: "Answer It, Don't Return It — she says, \"You brought the wine, that helped.\"", back: "\"Thanks — but this one's yours. Take it.\"" },
+          ]
+        },
+      ]
+    },
+  ],
+  responsivehumour: [
+    {
+      name: "Setup and Response",
+      guideFront: "What they said, and the strategy to answer it with.",
+      guideBack: "One way it could sound.",
+      description: "The book's own drill, in four steps. One person makes a plain\ninformational statement; the other answers with one of the five. Then it comes\nback, and you answer again.\n\nThe setup is deliberately dull — the weather, the timetable, the room. That is\nthe point of the exercise: if you can be funny about white walls, you never\nneed to wait for good material.\n\nMindset: their sentence is the raw material. You are not starting anything.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "Two of you are in a classroom before anyone else arrives, with nothing much to talk about.",
+          steps: [
+            { front: "Understatement — they say, \"This room is too dark.\"", back: "\"Mildly cave-like, yes.\"" },
+            { front: "Exaggeration — they say, \"And we have three tests next week.\"", back: "\"Three? That's not a week, that's a sentence.\"" },
+            { front: "Irony — they say, \"I'm really looking forward to it.\"", back: "\"Obviously. Best week of the year.\"" },
+            { front: "Deliberate Misunderstanding — they say, \"At least it's lunch in five minutes.\"", back: "\"Five minutes? I'll never last. Tell my family I tried.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A colleague is listing small annoyances and clearly wants company rather than solutions.",
+          steps: [
+            { front: "Exaggeration — they say, \"I couldn't sleep, my neighbour was making noise.\"", back: "\"Is your neighbour a marching band? It sounds like a marching band.\"" },
+            { front: "Understatement — they say, \"And then the car wouldn't start.\"", back: "\"So the morning has been going well.\"" },
+            { front: "Misdirection — they say, \"At least my computer's fast.\"", back: "\"I know. I saw it running down the street yesterday.\"" },
+            { front: "Irony — they say, \"You're a great help.\"", back: "\"I'm known for it. People come from miles.\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Keeping It Going",
+      guideFront: "What they said, and the strategy to answer it with.",
+      guideBack: "One way it could sound.",
+      description: "Two exchanges rather than one. The first joke is easy; what\nmost people miss is that the second one should build on the first rather than\nstart again.\n\nBuilding means staying inside the world the first joke created. If you made\ntheir computer a runner, keep it running — do not open a second joke about\nsomething else. The staying is what makes it feel like play instead of two\npeople taking turns being funny.\n\nMindset: stay in the same world. The second joke lives inside the first.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "A friend is very pleased with a new laptop and keeps mentioning how quick it is.",
+          steps: [
+            { front: "Misdirection — they say, \"This thing is so fast.\"", back: "\"I know. I saw it running down the street yesterday.\"" },
+            { front: "Exaggeration — they say, \"You're an idiot.\"", back: "\"It overtook a bus. I waved. It didn't wave back — too busy.\"" },
+            { front: "Understatement — they say, \"It's just a laptop.\"", back: "\"Sure. A modest little machine with Olympic ambitions.\"" },
+            { front: "Irony — they say, \"I'm never telling you anything again.\"", back: "\"Very wise. I've been nothing but unsupportive.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You and someone you barely know are in a queue that has not moved for several minutes.",
+          steps: [
+            { front: "Exaggeration — the queue does not move.", back: "\"I've been here so long I have grandchildren.\"" },
+            { front: "Understatement — they say, \"It is quite slow.\"", back: "\"Bit sluggish, yes.\"" },
+            { front: "Misdirection — they say, \"I have somewhere to be at two.\"", back: "\"So did I. It was last Tuesday.\"" },
+            { front: "Irony — the queue moves one step.", back: "\"Ah. Progress. I'll write to someone.\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "When It Does Not Land",
+      guideFront: "What they said, and the strategy to answer it with.",
+      guideBack: "One way it could sound.",
+      description: "Understatement, then a plain answer, then back in later. The\nrecovery, which is the part nobody practises.\n\nThe rule is simple and hard: do not explain it. An explained joke is worse\nthan an unnoticed one, and a second attempt at the same joke is worse still.\nAcknowledge it lightly if at all, answer the thing they actually said, and let\nthe next opening come on its own.\n\nMindset: a joke that misses costs four seconds. Explaining it costs the\nconversation.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You make an ironic reply and the other person takes it completely at face value.",
+          steps: [
+            { front: "Irony — they say, \"We have three tests next week.\"", back: "\"Lovely. I was hoping for a quiet week.\"" },
+            { front: "Understatement — they say, \"Really? I think it's awful.\"", back: "\"That was me agreeing with you, badly.\"" },
+            { front: "Exaggeration — they say, \"Oh — right.\"", back: "\"To be clear, I'd rather do anything else. Anything.\"" },
+            { front: "Misdirection — they say, \"Same, honestly.\"", back: "\"Good. I've already planned my entire week around avoiding it.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You reach for a joke and realise mid-sentence that they are genuinely upset about it.",
+          steps: [
+            { front: "Understatement — they say, \"My week has been a disaster.\"", back: "\"Sounds mildly inconvenient.\"" },
+            { front: "Deliberate Misunderstanding — they say, \"No, it's actually been really bad.\"", back: "(drop it — answer the sentence, not the setup)" },
+            { front: "Exaggeration — later, once they have finished.", back: "\"For what it's worth, that is the worst week I've heard about this year.\"" },
+            { front: "Irony — they say, \"Thanks, that helps.\"", back: "\"I'm here to help. Famously.\"" },
+          ]
+        },
+      ]
+    },
+  ],
 };

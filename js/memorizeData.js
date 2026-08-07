@@ -3987,4 +3987,190 @@ const memorizeCollections = {
       ]
     },
   ],
+  complimenting: [
+    {
+      name: "Core Idea",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "The shape of the pack: what a compliment is for, and the two ways it fails.",
+      cards: [
+        { q: "What are the seven strategies in this pack?", a: "Name What You Noticed, Compliment the Choice Not the Luck, Say Why It Landed, Say the Bigger One, Say It Where It Counts, Take a Compliment, Answer It Don't Return It.", bundle: 'free' },
+        { q: "What is a compliment, in one line?", a: "Information the other person does not have — nobody sees themselves from outside.", bundle: 'free' },
+        { q: "What are the two ways a compliment fails?", a: "Too vague to be believed, or too much to be received.", bundle: 'free' },
+        { q: "Which two strategies are about receiving?", a: "Take a Compliment, and Answer It Don't Return It.", bundle: 'pro' },
+        { q: "What does this pack own that Praise and Encouragement does not?", a: "That one is performance feedback at work. This is about the person, in ordinary life, with no agenda underneath.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Name What You Noticed",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "Specific rather than general.",
+      cards: [
+        { q: "What is the move?", a: "Say the specific thing you saw, not the category it belongs to.", bundle: 'free' },
+        { q: "Why does specific beat general?", a: "General praise could have been said by someone who wasn't paying attention. The detail proves you were.", bundle: 'free' },
+        { q: "What are the three things worth naming?", a: "A moment, a choice, or a pattern.", bundle: 'free' },
+        { q: "Why is a specific compliment easier to say?", a: "It's a small factual sentence. \"You're amazing\" is a claim you then have to defend.", bundle: 'pro' },
+        { q: "What if the detail feels too small to mention?", a: "Say it anyway. Small and specific is exactly what lands.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Compliment the Choice, Not the Luck",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "Praising what they can take credit for.",
+      cards: [
+        { q: "What is the rule?", a: "Praise what they did or chose, not what they were handed.", bundle: 'free' },
+        { q: "Why does a compliment about luck land badly?", a: "There's nothing to be proud of and nothing to say back.", bundle: 'free' },
+        { q: "What are the three kinds of choice?", a: "What they picked, what they practised, and what they decided.", bundle: 'free' },
+        { q: "How does this solve complimenting appearance?", a: "The clothes and the haircut are decisions and are fair game. The body underneath is not.", bundle: 'pro' },
+        { q: "They say it was nothing, they just threw it on.", a: "\"You still chose it. That counts.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Say Why It Landed",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "Reporting the effect.",
+      cards: [
+        { q: "What do you add?", a: "What it did to you — the part they cannot see.", bundle: 'free' },
+        { q: "Why is the effect unarguable?", a: "They can wave away \"that was brilliant\". They cannot wave away what you told someone else that evening.", bundle: 'free' },
+        { q: "What are the three effects worth reporting?", a: "What you did differently, what you felt, and what you told someone else.", bundle: 'free' },
+        { q: "Which of the three is strongest?", a: "What you did differently — it is proof rather than opinion.", bundle: 'pro' },
+        { q: "Can it be said months late?", a: "Yes. \"This is very overdue\" is the whole fix.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Say the Bigger One",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "The compliment about who they are.",
+      cards: [
+        { q: "What makes this one different?", a: "It is about who they are, not what they did — and almost nobody ever hears it.", bundle: 'free' },
+        { q: "Why say it rarely?", a: "Said often it becomes wallpaper; said in passing it sounds like a line.", bundle: 'free' },
+        { q: "What are the three ways to do it without it being strange?", a: "Attach it to evidence, say it is overdue, or say it and stop.", bundle: 'free' },
+        { q: "Why are these remembered for decades?", a: "Because they are so rarely said.", bundle: 'pro' },
+        { q: "What comes after it?", a: "Nothing. No question, no expectation of a reply — let it sit.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Say It Where It Counts",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "Choosing the audience.",
+      cards: [
+        { q: "What does public praise do that private praise cannot?", a: "It changes what everyone else thinks, not only what they think.", bundle: 'free' },
+        { q: "What belongs in private?", a: "Anything personal — appearance, character, anything they might rather the room did not know.", bundle: 'free' },
+        { q: "What are the three options?", a: "Public for credit, private for anything personal, in writing when it should outlast the moment.", bundle: 'free' },
+        { q: "What is the test for which to choose?", a: "Ask who the compliment is for. If it is for them, it goes where they will be comfortable.", bundle: 'pro' },
+        { q: "Why send it as a message sometimes?", a: "A message can be read again on a bad day. A remark cannot.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Take a Compliment",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "Accepting one cleanly.",
+      cards: [
+        { q: "What is the move?", a: "Say thank you and stop. No correcting, no explaining it away.", bundle: 'free' },
+        { q: "What does deflecting actually do?", a: "Tells the person they were wrong to say it — and after twice, people stop saying things.", bundle: 'free' },
+        { q: "What are the three ways to take one?", a: "Just thank you; thank you plus agreement; thank you plus what it means to hear it.", bundle: 'free' },
+        { q: "What is the hardest part?", a: "Stopping. Two words and then silence is harder than it sounds.", bundle: 'pro' },
+        { q: "What if you do not agree with it?", a: "\"I don't quite see it, but thank you for saying so.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Answer It, Don't Return It",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "Not firing one straight back.",
+      cards: [
+        { q: "What is wrong with returning it immediately?", a: "It cancels both — it reads as a transaction, and neither person has been told anything.", bundle: 'free' },
+        { q: "Where does the reflex come from?", a: "Discomfort, not generosity. It gets the attention off you fast.", bundle: 'free' },
+        { q: "What are the three ways to answer instead?", a: "Take it and let the moment end; take it then say something true and different; or praise them back later, named as separate.", bundle: 'free' },
+        { q: "If you do want to praise them back, how?", a: "Later, about something specific, and say plainly that it is not a return.", bundle: 'pro' },
+        { q: "What is the rule in four words?", a: "Theirs first. Yours keeps.", bundle: 'pro' },
+      ]
+    },
+  ],
+  responsivehumour: [
+    {
+      name: "Core Idea",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "The shape of the pack: five ways to do something to the sentence you were just given.",
+      cards: [
+        { q: "What are the five strategies in this pack?", a: "Exaggeration, Understatement, Misdirection, Deliberate Misunderstanding, Irony.", bundle: 'free' },
+        { q: "Where does humour in conversation usually come from?", a: "How you respond, not what you bring.", bundle: 'free' },
+        { q: "What do all five have in common?", a: "Each takes their sentence and changes it — bigger, smaller, sideways, literal, or backwards.", bundle: 'free' },
+        { q: "What are the two ways it goes wrong?", a: "Aiming at something they actually care about, and explaining it afterwards.", bundle: 'pro' },
+        { q: "Which one should you reach for when stuck?", a: "Exaggeration. It works on almost anything and nobody has ever had to explain one.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Exaggeration",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "Making it enormous.",
+      cards: [
+        { q: "What is the move?", a: "Take what they said and make it far too big.", bundle: 'free' },
+        { q: "Why does the scale matter?", a: "A small exaggeration sounds like a complaint. A ridiculous one is obviously play.", bundle: 'free' },
+        { q: "What are the three safest targets?", a: "Your own state, the situation you are both in, and their claim agreed with too enthusiastically.", bundle: 'free' },
+        { q: "How do you know you have not gone far enough?", a: "If you are worried it is too much, it is probably not enough.", bundle: 'pro' },
+        { q: "Why is it the one to learn first?", a: "It is the most forgiving of the five — nobody has to decode anything.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Understatement",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "Making it tiny.",
+      cards: [
+        { q: "What is the move?", a: "Treat something large as though it were small — \"you ran a marathon? That's a bit of a walk.\"", bundle: 'free' },
+        { q: "How does it differ from exaggeration in feel?", a: "Exaggeration is loud and warm. Understatement is dry, and it flatters what it shrinks.", bundle: 'free' },
+        { q: "Where does the humour actually live?", a: "In the delivery. Say it flat — the words do almost none of the work.", bundle: 'free' },
+        { q: "Why is it good with people you do not know well?", a: "It is quiet, nobody has to perform, and it is over in four words.", bundle: 'pro' },
+        { q: "Why is shrinking an achievement a compliment?", a: "Treating it as ordinary is a way of saying it is not.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Misdirection",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "Turning at the end.",
+      cards: [
+        { q: "What is the shape?", a: "Start out agreeing, then twist the ending.", bundle: 'free' },
+        { q: "Why must the twist come last?", a: "The first half sets the expectation. Signal it early and there is nothing left to break.", bundle: 'free' },
+        { q: "What are the three ways to set up the turn?", a: "Agree then take a word literally, agree then reveal a ridiculous reason, or agree then land somewhere unrelated.", bundle: 'free' },
+        { q: "What should the first half sound like?", a: "Completely ordinary. That half is the setup, not the joke.", bundle: 'pro' },
+        { q: "Which of the five is closest to a traditional joke?", a: "This one — it has a setup and a punchline.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Deliberate Misunderstanding",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "Taking it the wrong way on purpose.",
+      cards: [
+        { q: "What is the move?", a: "Pretend you took it the wrong way — both of you know what was meant, and the pretending is the joke.", bundle: 'free' },
+        { q: "What are the three kinds?", a: "Take the literal sense, take the other meaning of a word, or take the statement as being about something else.", bundle: 'free' },
+        { q: "What makes it fail?", a: "A straight face with no warmth. Then it reads as pedantry or as not listening.", bundle: 'free' },
+        { q: "What is the point, if it is not seeming confused?", a: "Being obviously, cheerfully wrong on purpose.", bundle: 'pro' },
+        { q: "They start explaining what they really meant.", a: "\"I know what you meant. I just liked mine better.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Irony",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "Saying the opposite and letting the tone carry it.",
+      cards: [
+        { q: "What is the move?", a: "Say the opposite of what you mean, and let the delivery explain.", bundle: 'free' },
+        { q: "What are the four things worth being ironic about?", a: "Your own failures, your own successes played down, a shared inconvenience, and something obviously good called bad.", bundle: 'free' },
+        { q: "Which target is safest by a wide margin?", a: "Your own failures.", bundle: 'free' },
+        { q: "When does irony stop being humour?", a: "When it is aimed at a person, or at something they are proud of. Then it is sarcasm, which is a different thing.", bundle: 'pro' },
+        { q: "What is the risk with someone who does not know you?", a: "Delivered flat, it can be taken at face value — so keep it short and let the warmth show.", bundle: 'pro' },
+      ]
+    },
+  ],
 };

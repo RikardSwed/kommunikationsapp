@@ -2948,4 +2948,138 @@ const challengesCollections = {
       ]
     },
   ],
+  complimenting: [
+    {
+      name: "They Deflect It",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible compliment, with the strategy in brackets.",
+      description: "You say something kind and it bounces straight off — \"oh, it's old\", \"anyone could have done it\", \"I got lucky\". The compliment has not landed, and the usual response is to give up and change the subject.\n\nThe fix is to make it harder to wave away. A specific detail cannot be dismissed as politeness, and an effect on you cannot be dismissed at all — they can argue about whether they were good, but not about what you went home and told your partner.\n\nOne repetition is enough. Saying it a third time turns a compliment into a negotiation, and that is not a nicer thing to be on the receiving end of.\n\nMindset: say it once more with evidence, then let them have their answer.",
+      inputs: [
+        { q: "They say \"oh, it was nothing\".", a: "\"It wasn't. The ending specifically — you didn't oversell it.\" [Name What You Noticed]", bundle: 'pro' },
+        { q: "They put it down to luck.", a: "\"You chose to cut the first version. That's not luck.\" [Compliment the Choice, Not the Luck]", bundle: 'pro' },
+        { q: "They cannot argue with what it did to you.", a: "\"Whether it was good or not, I've started doing it your way.\" [Say Why It Landed]", bundle: 'pro' },
+        { q: "You have now said it twice and they still will not take it.", a: "\"You never take these. I'm going to keep saying them anyway.\" [Answer It, Don't Return It]", bundle: 'pro' },
+        { q: "They deflect by complimenting you back immediately.", a: "\"Nice try. This one's about you.\" [Answer It, Don't Return It]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "There Is a Difference in Rank",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible compliment, with the strategy in brackets.",
+      description: "Praise from a manager is not the same object as praise from a peer. It carries weight, it can be heard as an evaluation, and it can make everyone else in the room recalculate.\n\nGoing downwards: be specific and be public about credit, but keep character compliments private — \"you're so reliable\" from a boss sounds like a performance review, not a kindness.\n\nGoing upwards: the risk is that it sounds like flattery, and the cure is the same as everywhere else. Praise something specific that you could only know by paying attention, and say what it did rather than how good they are.\n\nMindset: the more power in the room, the more specific the compliment has to be to be believed.",
+      inputs: [
+        { q: "You manage them and want to praise the work.", a: "\"The order you put the sections in is what made it work.\" [Name What You Noticed]", bundle: 'pro' },
+        { q: "You manage them and want the room to know.", a: "\"The whole second half is Jonas's work.\" [Say It Where It Counts]", bundle: 'pro' },
+        { q: "You want to praise your manager without it sounding like flattery.", a: "\"When you took the blame for that in the meeting, it changed how I saw the team.\" [Say Why It Landed]", bundle: 'pro' },
+        { q: "The character compliment would sound like an appraisal.", a: "(say it privately, not in the room) [Say It Where It Counts]", bundle: 'pro' },
+        { q: "Someone senior praises you in front of the team.", a: "\"Thank you — that's a nice thing to hear in front of people.\" [Answer It, Don't Return It]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "It Is About How They Look",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible compliment, with the strategy in brackets.",
+      description: "The category people worry about most, and the one with the clearest rule: praise the choice, not the body.\n\nThe jacket, the haircut, the way someone puts colours together — those are decisions, and decisions are fair game with almost anyone. What they were born with is not a decision, and saying so is an observation about their body rather than a compliment.\n\nContext does the rest. At work, keep it short and move on: a sentence, no lingering, no follow-up questions. With people who cannot easily leave the conversation — a colleague, someone serving you — shorter still.\n\nMindset: if it took a decision, it is a compliment. If it took genetics, it is a remark.",
+      inputs: [
+        { q: "You like what a colleague is wearing.", a: "\"Good jacket. That's all, carry on.\" [Say It Where It Counts]", bundle: 'pro' },
+        { q: "You are about to compliment their face or their body.", a: "\"Whoever cuts your hair knows what they're doing.\" [Compliment the Choice, Not the Luck]", bundle: 'pro' },
+        { q: "A friend has clearly made an effort tonight.", a: "\"You've put that together properly. It's very you.\" [Name What You Noticed]", bundle: 'pro' },
+        { q: "They wave it off as an old thing they threw on.", a: "\"You still chose it. That counts.\" [Compliment the Choice, Not the Luck]", bundle: 'pro' },
+        { q: "Someone compliments how you look and you go straight to explaining.", a: "\"Thanks — I like it too, which is why I wear it too often.\" [Take a Compliment]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "You Have Not Said It in Years",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible compliment, with the strategy in brackets.",
+      description: "Someone close — a parent, a sibling, an old friend — and a thing you have thought for a decade and never said. The longer it goes unsaid, the stranger it feels to start, and the more it would mean.\n\nThe awkwardness is real and it is worth naming out loud rather than working around. \"We don't say this sort of thing\" is a perfectly good first sentence, and it does most of the work: it tells them something unusual is coming and gives you both permission.\n\nAttach it to something concrete if you can. Evidence keeps a large sentence from floating.\n\nMindset: say it late rather than not at all. Late still counts.",
+      inputs: [
+        { q: "You never say things like this to your family.", a: "\"We don't say this sort of thing. I'm going to anyway.\" [Say the Bigger One]", bundle: 'pro' },
+        { q: "It is years overdue and that is the awkward part.", a: "\"I should have said this a long time ago, and here it is anyway.\" [Say the Bigger One]", bundle: 'pro' },
+        { q: "You want to anchor it in something real.", a: "\"You drove two hours for someone who wouldn't have done it for you.\" [Say the Bigger One]", bundle: 'pro' },
+        { q: "They did something good years ago that you never acknowledged.", a: "\"I never said it at the time: what you did that summer mattered.\" [Say Why It Landed]", bundle: 'pro' },
+        { q: "You have said it and they have gone quiet.", a: "(let it sit — do not fill the pause) [Say the Bigger One]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "It Is Not Really a Compliment",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible compliment, with the strategy in brackets.",
+      description: "Where this pack stops. Some sentences look like praise and are doing something else, and using the strategies here to polish them makes them worse, not better.\n\nPraise with a request attached is a lever — \"you're so good at this, could you…\" tells them the kindness was payment in advance. Praise as the front half of a criticism is the compliment sandwich, and everyone can hear the \"but\" coming, so the praise is spent before it lands. Praise aimed at someone who cannot easily leave, about their body, is not a gift no matter how it is phrased.\n\nAnd the last one: praise you do not mean. A compliment is information about how you actually see them, and an untrue one quietly devalues every true one you have given.\n\nMindset: if it is doing a job for you, it is not a compliment. Say the thing you want instead.",
+      inputs: [
+        { q: "You are about to praise them and then ask for a favour.", a: "(ask plainly first, and save the compliment for a day when you want nothing) [Say It Where It Counts]", bundle: 'pro' },
+        { q: "You are about to open a criticism with something nice.", a: "(give the criticism plainly — praise spent as padding has no effect left to report) [Say Why It Landed]", bundle: 'pro' },
+        { q: "You want to say something warm to soften bad news.", a: "(the news first, warmth after, and mean it when it comes) [Say the Bigger One]", bundle: 'pro' },
+        { q: "You do not actually believe the compliment you are about to give.", a: "(leave it — if you noticed nothing there is nothing to name, and an untrue one costs you the true ones) [Name What You Noticed]", bundle: 'pro' },
+        { q: "There is something you genuinely admire and no agenda at all.", a: "\"No reason for saying this: you're very good at what you do.\" [Say the Bigger One]", bundle: 'pro' },
+      ]
+    },
+  ],
+  responsivehumour: [
+    {
+      name: "A Small Complaint",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible response, with the strategy in brackets.",
+      description: "The most common opening there is. Someone mentions a minor\nannoyance — the weather, the timetable, the neighbour, the queue — and what\nthey want is company, not a solution.\n\nExaggeration is the natural fit, because it says *I am on your side and this is\nnot serious*. Understatement does the same job in the opposite register and is\nbetter with people you do not know well.\n\nThe thing to avoid is the earnest reply. Answering a small complaint with real\nadvice makes it a bigger thing than they meant it to be.\n\nMindset: they are not asking for help. They are handing you a sentence.",
+      inputs: [
+        { q: "\"I couldn't sleep, my neighbour was making noise.\"", a: "\"Is your neighbour a marching band?\" [Exaggeration]", bundle: 'pro' },
+        { q: "\"The car broke down, then it rained.\"", a: "\"So the day has been going well.\" [Understatement]", bundle: 'pro' },
+        { q: "\"This room is too dark.\"", a: "\"It's saving the light for the afternoon shift.\" [Misdirection]", bundle: 'pro' },
+        { q: "\"I'm running out of time.\"", a: "\"Where does it go? Have you checked the sofa?\" [Deliberate Misunderstanding]", bundle: 'pro' },
+        { q: "\"It's raining again.\"", a: "\"Excellent. My favourite.\" [Irony]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "They Are Pleased With Themselves",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible response, with the strategy in brackets.",
+      description: "Someone is mildly showing off — the fast computer, the\nmarathon, the reading habit. Handled well this is warm; handled badly it is a\nput-down.\n\nUnderstatement is the safest, because shrinking an achievement in an obviously\nabsurd way is a compliment wearing a disguise. Misdirection works too, as long\nas the twist is about the thing rather than about them.\n\nWhat does not work is irony aimed at the achievement itself. \"Oh, very\nimpressive\" said flat is sarcasm, and it takes something from them rather than\ngiving it.\n\nMindset: shrink the thing, never the person.",
+      inputs: [
+        { q: "\"I ran a marathon on Sunday.\"", a: "\"That's a bit of a walk.\" [Understatement]", bundle: 'pro' },
+        { q: "\"My computer is super fast.\"", a: "\"I saw it running down the street yesterday.\" [Misdirection]", bundle: 'pro' },
+        { q: "\"I read books all the time.\"", a: "\"All of them? At once? That's a lot of arms.\" [Deliberate Misunderstanding]", bundle: 'pro' },
+        { q: "You are about to be ironic about the achievement itself.", a: "(leave it — that one lands as sarcasm) [Irony]", bundle: 'pro' },
+        { q: "They built the whole thing themselves.", a: "\"Bit of a project, then.\" [Understatement]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Someone States the Obvious",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible response, with the strategy in brackets.",
+      description: "\"It's raining outside.\" \"The room has white walls.\" \"It's\nlunch in five minutes.\" Sentences with no content, said to fill a silence — and\ntherefore an open invitation.\n\nDeliberate Misunderstanding is made for these. So is Misdirection, because an\nobvious statement gives you a very flat first half to build on.\n\nThese are also the best sentences to practise on, precisely because they are\nempty. Anyone can be funny about a good story. The skill is being funny about\nwhite walls.\n\nMindset: the emptier the sentence, the more room there is in it.",
+      inputs: [
+        { q: "\"It's raining outside.\"", a: "\"Really? Inside it's completely dry.\" [Deliberate Misunderstanding]", bundle: 'pro' },
+        { q: "\"The room has white walls.\"", a: "\"Someone in this building has made exactly one decision.\" [Misdirection]", bundle: 'pro' },
+        { q: "\"It's lunch in five minutes.\"", a: "\"Five minutes. I can survive that. Probably.\" [Exaggeration]", bundle: 'pro' },
+        { q: "\"I love eating pizza.\"", a: "\"Same. It's the only food that's also a plate.\" [Misdirection]", bundle: 'pro' },
+        { q: "\"It's quite cold today.\"", a: "\"Bit brisk, yes.\" [Understatement]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "It Did Not Land",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible response, with the strategy in brackets.",
+      description: "You said something you thought was funny and nothing happened\n— or worse, they took it seriously. Every practised joker has this several\ntimes a week, and the difference between them and everyone else is entirely in\nwhat happens next.\n\nThe rule: do not explain it. An explained joke is worse than an unnoticed one,\nand a second run at the same joke is worse again. Answer the thing they\nactually said and move on; the next opening arrives within a minute.\n\nIf they took it at face value, one flat clarification is fine — \"that was me\nagreeing with you, badly\" — and then it is over.\n\nMindset: a miss costs four seconds. Explaining it costs the conversation.",
+      inputs: [
+        { q: "They take your irony completely at face value.", a: "\"That was me agreeing with you, badly.\" [Understatement]", bundle: 'pro' },
+        { q: "You are about to explain why it was funny.", a: "(do not — answer what they actually said instead) [Irony]", bundle: 'pro' },
+        { q: "Nobody reacted at all.", a: "(say the plain version and carry on — the next opening is a minute away) [Understatement]", bundle: 'pro' },
+        { q: "You want one more go without repeating yourself.", a: "\"Ignore me. What happened after the car broke down?\" [Deliberate Misunderstanding]", bundle: 'pro' },
+        { q: "They laughed a beat late.", a: "(let it be — do not point out that it worked) [Irony]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Now Is Not the Time",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible response, with the strategy in brackets.",
+      description: "Where this pack stops. Not every sentence is an invitation,\nand the five strategies are quick enough to arrive before you have decided\nwhether they should.\n\nThree situations to keep out of: something they are genuinely upset about,\nsomething they are proud of and vulnerable about, and any moment where you have\npower over them — humour from a manager about someone's work is not read the\nsame way as humour from a peer.\n\nThe tell is easy to feel and easy to ignore: if the joke needs them to be a\ngood sport, it is aimed at them, and this pack is not aimed at people.\n\nMindset: aim at the situation, the sentence, or yourself. Never at the person\nwho is holding something heavy.",
+      inputs: [
+        { q: "They are genuinely upset and you reached for a joke by reflex.", a: "(drop it — answer the sentence, not the setup) [Understatement]", bundle: 'pro' },
+        { q: "They said something they are proud and slightly nervous about.", a: "\"That's a bit of a project.\" (warm, and then say it plainly) [Understatement]", bundle: 'pro' },
+        { q: "You are their manager and the joke is about their work.", a: "(not yours to make — the room hears it differently from you) [Irony]", bundle: 'pro' },
+        { q: "The joke needs them to be a good sport to work.", a: "(that means it is aimed at them — leave it) [Exaggeration]", bundle: 'pro' },
+        { q: "You want to be light about something heavy, later.", a: "\"For what it's worth, that is the worst week I've heard about this year.\" [Exaggeration]", bundle: 'pro' },
+      ]
+    },
+  ],
 };
