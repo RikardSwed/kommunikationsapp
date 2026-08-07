@@ -471,6 +471,8 @@ document.querySelectorAll('.nav-tab').forEach(btn => {
     cancelBtn.innerHTML = '';
     cancelBtn.textContent = 'Cancel';
     cancelBtn.style.fontSize = '15px';
+    // v1.26.79 — lets the white plate grow to fit the word (see style.css).
+    cancelBtn.classList.add('is-cancel');
     defaultView.style.display = 'none';
     searchView.style.display  = '';
     searchClear.style.display = searchInput.value ? '' : 'none';
@@ -482,6 +484,7 @@ document.querySelectorAll('.nav-tab').forEach(btn => {
     searching = false;
     cancelBtn.innerHTML = cancelBtnOriginalHTML;
     cancelBtn.style.fontSize = '';
+    cancelBtn.classList.remove('is-cancel');
     if (clearInput) searchInput.value = '';
     searchClear.style.display = 'none';
     defaultView.style.display = '';

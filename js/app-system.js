@@ -3264,19 +3264,21 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
         {
           title: 'First Strategies',
           html:
+            // v1.26.79: the intro text above the list was cut to one short
+            // paragraph — the six rows plus a long lead-in pushed the page into
+            // scrolling, which made the first pack look like a lot of work.
             '<p class="ob-text">Deckstack is a rehearsal room. You practise things to say ' +
-            'here, on your own, so they are already yours when a real conversation arrives.</p>' +
-            '<p class="ob-text">This pack is the place to start. Six strategies that between ' +
-            'them make a whole small conversation.</p>' +
+            'here, so they are already yours when a real conversation arrives.</p>' +
             '<div class="ob-how">' +
-            '<div class="ob-how-row"><span class="ob-how-num">1</span><p><strong>Opening Statement</strong> &mdash; open with a remark, not a question.</p></div>' +
+            '<div class="ob-how-row"><span class="ob-how-num">1</span><p><strong>Opening Statement</strong> &mdash; a remark, not a question.</p></div>' +
             '<div class="ob-how-row"><span class="ob-how-num">2</span><p><strong>Follow the Thread</strong> &mdash; use what they just said.</p></div>' +
-            '<div class="ob-how-row"><span class="ob-how-num">3</span><p><strong>Say It Back</strong> &mdash; show you understood before you answer.</p></div>' +
+            '<div class="ob-how-row"><span class="ob-how-num">3</span><p><strong>Say It Back</strong> &mdash; show you understood.</p></div>' +
             '<div class="ob-how-row"><span class="ob-how-num">4</span><p><strong>Ask Plainly</strong> &mdash; say what you want, in one sentence.</p></div>' +
             '<div class="ob-how-row"><span class="ob-how-num">5</span><p><strong>A Friendly No</strong> &mdash; decline warmly and clearly.</p></div>' +
             '<div class="ob-how-row"><span class="ob-how-num">6</span><p><strong>Answer With a Hook</strong> &mdash; leave them somewhere to go.</p></div>' +
             '</div>' +
-            '<p class="ob-text ob-text--dim">The next pages explain each one.</p>'
+            '<p class="ob-text ob-text--dim">Six strategies that make one small conversation. ' +
+            'The next pages explain each one.</p>'
         },
         {
           title: 'Opening Statement',
