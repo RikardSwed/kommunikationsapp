@@ -2266,21 +2266,15 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
     let html = '<div class="tab-info">Available programs</div>'
       + '<div class="programs-list">';
 
-    // Filter: hide Extended programs unless owned or complete
-    const extOwned = (() => {
-      try { return JSON.parse(localStorage.getItem('ds_extended_owned')) || []; }
-      catch { return []; }
-    })();
-    const curLevel = localStorage.getItem('dev_access_level') || 'freemium';
-    const visiblePrograms = programsData.filter(prog => {
-      if (!EXTENDED_PROGRAM_IDS.includes(prog.id)) return true;
-      return curLevel === 'complete' || extOwned.includes(prog.id);
-    });
-
-    // Owned extended programs still require Pro (yearly Pro model) — in
-    // freemium they stay listed with a Pro badge and an upgrade toast (19).
-    const progLocked = prog =>
-      EXTENDED_PROGRAM_IDS.includes(prog.id) && curLevel === 'freemium';
+    // v1.26.81 — visibility comes from PROGRAM_CONFIG via programVisibility()
+    // instead of the old EXTENDED_PROGRAM_IDS check, so a program can be
+    // freemium, Pro, Extended or put away, the same four levels as a pack.
+    const progVis = prog =>
+      (window.accessLevel && window.accessLevel.programVisibility)
+        ? window.accessLevel.programVisibility(prog.id)
+        : 'available';
+    const visiblePrograms = programsData.filter(prog => progVis(prog) !== 'hidden');
+    const progLocked = prog => progVis(prog) === 'locked';
 
     visiblePrograms.forEach(prog => {
       // Count progress

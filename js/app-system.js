@@ -135,10 +135,18 @@ applyInputCounterVisibility();
     // compliments, influenceframing and selfhumour had NO entry at all, which
     // meant the last line of packVisibility() returned 'available' and they
     // were free for everyone by accident — they get entries here.
-    // NOT listed: startingconnecting, conversationaldepth, listeningresponding,
-    // thehappyno and theregretfulno. They are program-delivered and already
-    // hidden without an entry; the program route wins over the standalone lock
-    // either way, so they stay reachable through their programs by design.
+    // NOT listed until v1.26.81: startingconnecting, conversationaldepth,
+    // listeningresponding, thehappyno and theregretfulno. They were left out
+    // because their programs kept them reachable, but that made them depend
+    // on a program existing — delete the program and the last line of
+    // packVisibility() would hand them to everyone for free. They are now
+    // 'complete' like the rest of the old library, and their programs are
+    // 'complete' too (see PROGRAM_CONFIG).
+    startingconnecting:  { label: 'Starting & Connecting',  minLevel: 'complete' },
+    conversationaldepth: { label: 'Conversational Depth',   minLevel: 'complete' },
+    listeningresponding: { label: 'Listening & Responding',  minLevel: 'complete' },
+    thehappyno:          { label: 'The Happy No',            minLevel: 'complete' },
+    theregretfulno:      { label: 'The Regretful No',        minLevel: 'complete' },
     conversational: { label: 'Conversational Skills',   minLevel: 'complete'  },
     humour:         { label: 'Humour Practise',          minLevel: 'complete'  },
     criticism:      { label: 'Criticism & Correction',   minLevel: 'complete'  },
@@ -193,6 +201,53 @@ applyInputCounterVisibility();
     complimenting: { label: 'Compliments', minLevel: 'pro' },
     responsivehumour: { label: 'Responsive Humour', minLevel: 'pro' },
   };
+
+  // ── PROGRAM_CONFIG (v1.26.81) ─────────────────────────────────────────
+  // Programs had no tier of their own. Visibility was decided by one array,
+  // EXTENDED_PROGRAM_IDS, so a program was either buyable-in-Extended or
+  // free for absolutely everyone — there was no way to say "Pro" or "put
+  // this one away", which is what the old programs needed.
+  //
+  // Levels mean the same as in PACK_CONFIG:
+  //   freemium  — open to everyone
+  //   pro       — listed for freemium with a Pro badge, opens on upgrade
+  //   extended  — must be bought AND requires an active Pro plan
+  //   complete  — hidden from every real user, still there for Rikard
+  //
+  // A program that is missing here is treated as 'pro' and warned about, so
+  // a new one can never leak out free by accident the way three packs did.
+  const PROGRAM_CONFIG = {
+    'conversation-foundations': { minLevel: 'freemium' },
+    // The three pre-handbook programs, put away in v1.26.81 together with the
+    // packs they deliver. conversation-skills was already unbuyable after the
+    // v1.26.80 store cleanup; this makes it invisible rather than merely
+    // unsellable, and puts all three in the same place.
+    'saying-no':           { minLevel: 'complete' },
+    'social-confidence':   { minLevel: 'complete' },
+    'conversation-skills': { minLevel: 'complete' },
+  };
+  const _warnedPrograms = {};
+
+  // 'available' — open | 'locked' — shown with a Pro badge | 'hidden'
+  function programVisibility(progId) {
+    const level = getLevel();
+    if (level === 'complete') return 'available';
+    let cfg = PROGRAM_CONFIG[progId];
+    if (!cfg) {
+      if (!_warnedPrograms[progId]) {
+        _warnedPrograms[progId] = true;
+        console.warn('[Deckstack] Program "' + progId + '" has no PROGRAM_CONFIG entry — treating it as Pro.');
+      }
+      cfg = { minLevel: 'pro' };
+    }
+    if (cfg.minLevel === 'complete') return 'hidden';
+    if (cfg.minLevel === 'extended') {
+      if (!getExtendedOwned().includes(progId)) return 'hidden';
+      // Extended purchases still need an active Pro plan (yearly Pro model)
+      return level === 'pro' ? 'available' : 'locked';
+    }
+    return levelIndex(level) >= levelIndex(cfg.minLevel) ? 'available' : 'locked';
+  }
 
   // Mode definitions per level
   const MODE_CONFIG = {
@@ -271,15 +326,15 @@ applyInputCounterVisibility();
     const cpPassed = (progId, cpId) => !!(progress[progId] && progress[progId][cpId]);
     const level   = getLevel();
     const isProUp = level === 'pro' || level === 'complete';
-    const extIds  = window.EXTENDED_PROGRAM_IDS || ['conversation-skills'];
-    const owned   = getExtendedOwned();
     programsData.forEach(prog => {
-      const isExt     = extIds.includes(prog.id);
-      const progOwned = !isExt || level === 'complete' || owned.includes(prog.id);
+      // v1.26.81 — the program's own tier decides the route. Previously only
+      // Extended programs could gate anything; a 'complete' or Pro program
+      // handed its packs to everyone through the program route.
+      const progVis = programVisibility(prog.id);
       prog.sections.forEach((sec, si) => {
         if (!sec.packs || !sec.packs.some(p => p.key === packKey)) return;
         state.inAnyProgram = true;
-        if (!progOwned) return;
+        if (progVis === 'hidden') return;
         // Section unlocked = every previous checkpoint passed
         for (let i = 0; i < si; i++) {
           const cp = prog.sections[i].checkpoint;
@@ -296,8 +351,9 @@ applyInputCounterVisibility();
         // as soon as it unlocks.
         const ownCp = sec.checkpoint;
         if (ownCp && !cpPassed(prog.id, ownCp.id)) { state.pendingRoute = true; return; }
-        // Extended programs require Pro even when owned (yearly Pro model)
-        if (isExt && !isProUp) state.lockedRoute = true;
+        // A locked program (Pro badge, or Extended owned without Pro) offers a
+        // locked route, not an open one.
+        if (progVis === 'locked') state.lockedRoute = true;
         else state.availableRoute = true;
       });
     });
@@ -550,7 +606,7 @@ applyInputCounterVisibility();
   }
 
   // Expose for other modules
-  window.accessLevel = { getLevel, canAccess, badgeLabel, applyModeLocks, updateNavUpgradeBtn, packVisibility, applyAccessLevel };
+  window.accessLevel = { getLevel, canAccess, badgeLabel, applyModeLocks, updateNavUpgradeBtn, packVisibility, programVisibility, applyAccessLevel };
   window._applyAccessLevel = applyAccessLevel;
 
   // Init
