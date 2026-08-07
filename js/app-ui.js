@@ -2641,34 +2641,25 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
           'What you\u2019ll get better at: staying in the conversation after sorry.',
         ],
       },
-      {
-        id: 'storytelling',
-        title: 'Storytelling',
-        icon: 'ti-book',
-        description: 'Learn to structure and deliver stories that hold attention, create emotion, and make you memorable in any conversation.',
-        price: '29 kr',
-        details: [
-          'Most people tell stories the way they happened. Great storytellers tell them the way they land. This pack teaches the difference.',
-          'You get a full training pack with proven storytelling strategies \u2014 story selection, suspense & buildup, transitions, and delivery \u2014 each with real situations to visualize and strong example responses to make your own.',
-          'Works in every training mode you own, including handsfree, so you can rehearse your stories while walking or doing chores.',
-          'What you\u2019ll get better at: choosing the right story for the moment, hooking listeners in the first sentence, building tension instead of rambling, and landing endings that people remember.',
-        ],
-      },
+      // v1.26.80 — the old `storytelling` pack was REMOVED from the store.
+      // It sits at minLevel 'complete' since the library import, and
+      // packVisibility() returns 'hidden' for that regardless of purchase,
+      // so the entry sold a pack the buyer could never open. If it is ever
+      // rewritten as a new pack, add it back with the new key.
     ],
     programs: [
-      {
-        id: 'conversation-skills',
-        title: 'Conversation Skills Foundations',
-        icon: 'ti-message-circle',
-        description: 'Start conversations with confidence, keep them going, and create genuine connection — from small talk to meaningful depth.',
-        price: '49 kr',
-        details: [
-          'A guided program \u2014 not just a pack. It takes you step by step from opening a conversation with a stranger to creating the kind of depth that turns acquaintances into friends.',
-          'The program is organised in sections with checkpoints: you train a set of strategies, prove you\u2019ve got them, and unlock the next stage. Structure keeps you moving where loose browsing stalls.',
-          'Covers starting conversations naturally, keeping them alive without interrogating, transitioning to personal topics, and really listening \u2014 the skill everyone thinks they have.',
-          'If you only get one thing from Extended, this is the foundation everything else builds on.',
-        ],
-      },
+      // v1.26.80 — EMPTY ON PURPOSE. 'conversation-skills' (Conversation Skills
+      // Foundations, 49 kr) was taken out of the store. Three reasons, in
+      // order: it is built entirely on the pre-handbook packs
+      // (startingconnecting, conversationaldepth, listeningresponding) that
+      // Rikard intends to scrap, so it would have sold material due for
+      // deletion; its title is one word away from the FREE 'Conversation
+      // Foundations' programme added in v1.26.75; and it covers the same
+      // ground that programme now covers for nothing.
+      //
+      // The programme itself is still in programsData.js and its id is still
+      // in EXTENDED_PROGRAM_IDS, so it stays hidden from every user — exactly
+      // how the old packs were retired. Restoring it is one object here.
     ],
     bundles: [
       // v1.26.67 — Broken Record's family bundle was already written and only
@@ -2707,21 +2698,28 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
       },
     ],
     kits: [
+      // v1.26.80 — both kits now list the WHOLE current catalog. Their copy
+      // used to name the three legacy items by hand and quote a hardcoded
+      // "97 kr bought one by one", which went stale the moment the catalog
+      // changed. The {separately} token below is filled in at render time
+      // from the contents, so the maths can never drift again, and the
+      // item names come from the Includes row rather than the prose.
       {
         id: 'kit-communicator',
         title: 'The Communicator Kit',
         icon: 'ti-packages',
-        description: 'Everything in Extended at a discount — the Storytelling pack, the Conversation Skills program, and the Domestic Situations bundle.',
+        description: 'Everything in Extended in one purchase, for less than the parts cost separately.',
         price: '79 kr',
         details: [
-          'The complete Extended collection in one purchase \u2014 and cheaper than buying the parts separately (97 kr bought one by one).',
-          'You get the Storytelling pack, the Conversation Skills Foundations program, and the Domestic Situations bundle. Together they cover the full arc: open a conversation, keep it alive, tell stories that land, and hold your ground with the people closest to you.',
+          'The complete Extended collection in one purchase \u2014 {separately} if you buy the parts one by one.',
+          'You get the two hardest packs in the library: the last step of the Starting Conversations ladder, where you open with nothing to hide behind, and the deep half of Apologizing, for when sorry is not enough. On top of that, extra situations for two packs you already train \u2014 family pressure for Broken Record, and home and close relationships for Assertive Communication.',
           'Everything is unlocked immediately and works in all your training modes, including handsfree.',
         ],
         contents: [
-          { type: 'pack',    id: 'storytelling' },
-          { type: 'program', id: 'conversation-skills' },
-          { type: 'bundle',  id: 'assertive::domestic' },
+          { type: 'pack',   id: 'startingconversations4' },
+          { type: 'pack',   id: 'apologizing2' },
+          { type: 'bundle', id: 'brokenrecord::family' },
+          { type: 'bundle', id: 'assertive::domestic' },
         ],
       },
       {
@@ -2733,12 +2731,13 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
         code: 'DEMO2026',
         details: [
           'The full Extended catalog at a special rate for classroom and group use \u2014 unlocked with an access code from your teacher or course leader.',
-          'Includes the Storytelling pack, the Conversation Skills Foundations program, and the Domestic Situations bundle, all available in every training mode.',
+          'The same material as The Communicator Kit, which costs {separately} bought separately: two extra packs and two sets of extra situations, all available in every training mode.',
         ],
         contents: [
-          { type: 'pack',    id: 'storytelling' },
-          { type: 'program', id: 'conversation-skills' },
-          { type: 'bundle',  id: 'assertive::domestic' },
+          { type: 'pack',   id: 'startingconversations4' },
+          { type: 'pack',   id: 'apologizing2' },
+          { type: 'bundle', id: 'brokenrecord::family' },
+          { type: 'bundle', id: 'assertive::domestic' },
         ],
       },
     ],
@@ -2761,6 +2760,10 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
   const CAT_LISTS = { packs: 'extPackList', programs: 'extProgramList', bundles: 'extBundleList', kits: 'extKitList' };
   const CAT_MORE  = { packs: 'extMorePacks', programs: 'extMorePrograms', bundles: 'extMoreBundles', kits: 'extMoreKits' };
   const CAT_LABEL = { packs: 'packs', programs: 'programs', bundles: 'bundles', kits: 'kits' };
+  // v1.26.80 — a category can now be empty (Extra Programs is), and a bare
+  // heading over nothing reads as a loading failure. The heading and its
+  // "View more" button are hidden with the list.
+  const CAT_HEAD  = { packs: 'extSecPacks', programs: 'extSecPrograms', bundles: 'extSecBundles', kits: 'extSecKits' };
 
   // "Load more" expansion state — kept for the session so a purchase
   // re-render doesn't collapse the section the user just expanded.
@@ -2801,6 +2804,29 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
   }
   function visibleItems(cat) {
     return CATALOG[cat].filter(isRevealed);
+  }
+
+  // ── Kit contents and price maths (v1.26.80) ───────────────────────
+  // The kits used to name their contents and their "bought separately"
+  // total in hand-written prose, so both went stale as soon as the catalog
+  // changed. Everything is derived from `contents` now.
+  const CONTENT_LIST = { pack: 'packs', program: 'programs', bundle: 'bundles' };
+  function itemFor(ref) {
+    const list = CATALOG[CONTENT_LIST[ref.type]] || [];
+    return list.find(x => x.id === ref.id) || null;
+  }
+  function priceOf(item) {
+    const n = parseInt(String(item && item.price || '').replace(/[^0-9]/g, ''), 10);
+    return isNaN(n) ? 0 : n;
+  }
+  function separatelyTotal(item) {
+    return (item.contents || []).reduce((sum, ref) => sum + priceOf(itemFor(ref)), 0);
+  }
+  // Replaces {separately} in selling copy with the summed price of the
+  // contents. Any item without contents leaves the text untouched.
+  function expandCopy(text, item) {
+    if (!text || text.indexOf('{separately}') === -1) return text;
+    return text.split('{separately}').join(separatelyTotal(item) + ' kr');
   }
 
   // ── Purchasing ─────────────────────────────────────────────────
@@ -2889,15 +2915,14 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
     // Selling copy: `details` paragraphs, falling back to the short description
     const body = ov.querySelector('#extInfoBody');
     const paras = (item.details && item.details.length) ? item.details : [item.description];
-    body.innerHTML = paras.map(p => '<p>' + p + '</p>').join('');
+    body.innerHTML = paras.map(p => '<p>' + expandCopy(p, item) + '</p>').join('');
     // Kit contents
     const inc = ov.querySelector('#extInfoIncludes');
     if (type === 'kits' && item.contents) {
       inc.style.display = '';
       inc.innerHTML = '<div class="ext-info-includes-label">Included in this kit</div>' +
         item.contents.map(c => {
-          const srcList = c.type === 'pack' ? CATALOG.packs : c.type === 'program' ? CATALOG.programs : CATALOG.bundles;
-          const it = srcList.find(x => x.id === c.id);
+          const it = itemFor(c);
           if (!it) return '';
           return `<div class="ext-info-include-row"><i class="ti ${it.icon}" aria-hidden="true"></i> ${it.title}</div>`;
         }).join('');
@@ -2939,8 +2964,7 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
     const packLabel = item.packTitle ? `<div class="ext-store-pack-label">for ${item.packTitle}</div>` : '';
     const includes = (type === 'kits' && item.contents)
       ? `<div class="ext-store-includes">Includes: ` + item.contents.map(c => {
-          const src = c.type === 'pack' ? CATALOG.packs : c.type === 'program' ? CATALOG.programs : CATALOG.bundles;
-          const it = src.find(x => x.id === c.id);
+          const it = itemFor(c);
           return it ? it.title : c.id;
         }).join(', ') + `</div>`
       : '';
@@ -2950,7 +2974,7 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
         <div class="ext-store-info">
           <div class="ext-store-title">${item.title}</div>
           ${packLabel}
-          <div class="ext-store-desc">${item.description}</div>
+          <div class="ext-store-desc">${expandCopy(item.description, item)}</div>
           ${includes}
         </div>
       </div>
@@ -3024,6 +3048,9 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
       const moreEl = document.getElementById(CAT_MORE[cat]);
       if (!listEl) return;
       const items = visibleItems(cat);
+      const headEl = document.getElementById(CAT_HEAD[cat]);
+      if (headEl) headEl.style.display = items.length ? '' : 'none';
+      listEl.style.display = items.length ? '' : 'none';
       const shown = expanded[cat] ? items : items.slice(0, CAT_PREVIEW);
       listEl.innerHTML = '';
       shown.forEach(item => listEl.appendChild(makeCard(cat, item)));
