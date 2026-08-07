@@ -2932,6 +2932,18 @@ body.feedback-mode    .al-bar { display: none !important; }
   flex-shrink: 0;
 }
 
+/* v1.26.79 — in search mode the gear is replaced by the WORD "Cancel", which
+   is wider than the 34px square, so the white plate stopped short of the text.
+   Width becomes auto with side padding; .dash-search-bar is flex:1 and gives
+   up exactly the extra width by itself, so the field shrinks instead of the
+   row overflowing. The class is added/removed by enterSearch/exitSearch in
+   app-ui.js. */
+#homeSettingsBtn.is-cancel {
+  width: auto;
+  min-width: 34px;
+  padding: 0 12px;
+}
+
 /* ── PROGRESS BANNER (v1.26.11) ────────────────────────────────── */
 .prog-banner {
   margin: 0;
