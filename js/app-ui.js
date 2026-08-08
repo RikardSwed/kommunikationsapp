@@ -2285,9 +2285,15 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
       const passedCPs = prog.sections.filter(s => s.checkpoint && isCheckpointPassed(prog.id, s.checkpoint.id)).length;
       const pct       = totalCPs ? Math.round((passedCPs / totalCPs) * 100) : 0;
       const locked    = progLocked(prog);
-      return '<div class="program-card' + (locked ? ' collection-card--locked' : '') + '" data-prog-id="' + prog.id + '" data-locked="' + locked + '">'
-        + (locked ? '<div class="pack-lock-badge pack-lock-badge--pro">Pro</div>' : '')
-        + '<div class="program-card-icon" style="pointer-events:none"><i class="ti ' + (prog.icon || 'ti-stack') + '"></i></div>'
+      // v1.26.83 — the Pro badge sits UNDER the icon, in its own column, so a
+      // badged card lines up with an unbadged one. As a first flex child it
+      // pushed the icon and the whole text block sideways. The card is not
+      // greyed either: it opens, and greying it out said otherwise.
+      return '<div class="program-card" data-prog-id="' + prog.id + '" data-locked="' + locked + '">'
+        + '<div class="program-card-side">'
+        + '<div class="program-card-icon"><i class="ti ' + (prog.icon || 'ti-stack') + '"></i></div>'
+        + (locked ? '<div class="pack-lock-badge pack-lock-badge--pro program-card-badge">Pro</div>' : '')
+        + '</div>'
         + '<div class="program-card-body" style="pointer-events:none">'
         + '<div class="program-card-title">' + prog.title + '</div>'
         + '<div class="program-card-desc">' + prog.description + '</div>'
@@ -2333,7 +2339,7 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
     const progVis = A.programVisibility ? A.programVisibility(program.id) : 'available';
     const secVis  = sec => (A.sectionVisibility ? A.sectionVisibility(program, sec) : progVis);
     const banner  = progVis === 'locked'
-      ? '<div class="prog-tier-banner"><i class="ti ti-lock"></i> Only available with Pro \u2014 have a look at what is inside.</div>'
+      ? '<div class="prog-tier-banner"><i class="ti ti-lock"></i> Only available with Pro</div>'
       : (program.sections.some(s => secVis(s) === 'locked')
           ? '<div class="prog-tier-banner prog-tier-banner--partial"><i class="ti ti-diamond"></i> Free through ' +
             (program.sections.filter(s => secVis(s) === 'available').slice(-1)[0] || {}).title +
@@ -2354,9 +2360,7 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
       const tierOpen = secVis(section) === 'available';
       const unlocked = tierOpen && isSectionUnlocked(program, si);
       html += '<div class="prog-section' + (unlocked ? '' : ' prog-section--locked') + '">'
-        + '<div class="prog-section-label">' + section.title
-        + (tierOpen ? '' : ' <span class="pack-lock-badge pack-lock-badge--pro prog-section-badge">Pro</span>')
-        + '</div>';
+        + '<div class="prog-section-label">' + section.title + '</div>';
 
       // Pack cards
       section.packs.forEach(pack => {
@@ -2773,10 +2777,10 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
         id: 'kit-communicator',
         title: 'The Communicator Kit',
         icon: 'ti-packages',
-        description: 'Everything in Extended in one purchase, for less than the parts cost separately.',
+        description: 'Every extra pack and input bundle in one purchase, for less than the parts cost separately.',
         price: '79 kr',
         details: [
-          'The complete Extended collection in one purchase \u2014 {separately} if you buy the parts one by one.',
+          'The two extra packs and both input bundles in one purchase \u2014 {separately} if you buy the parts one by one.',
           'You get the two hardest packs in the library: the last step of the Starting Conversations ladder, where you open with nothing to hide behind, and the deep half of Apologizing, for when sorry is not enough. On top of that, extra situations for two packs you already train \u2014 family pressure for Broken Record, and home and close relationships for Assertive Communication.',
           'Everything is unlocked immediately and works in all your training modes, including handsfree.',
         ],
@@ -2788,15 +2792,35 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
         ],
       },
       {
+        id: 'kit-everything',
+        title: 'The Complete Kit',
+        icon: 'ti-diamond',
+        description: 'Everything in Extended, including the Difficult Conversations program — nothing left to buy.',
+        price: '119 kr',
+        details: [
+          'Every single thing in Extended in one purchase: both extra packs, both input bundles, and the Difficult Conversations program. Bought one by one it comes to {separately}.',
+          'The program is what makes this different from The Communicator Kit. Three Parts with a test at the end of each, and three packs \u2014 Conflict Emotions, Giving Criticism and Receiving Feedback and Criticism \u2014 that exist nowhere else in the app.',
+          'Around it sit the two hardest packs in the library: the last step of the Starting Conversations ladder, and the deep half of Apologizing. Plus family pressure for Broken Record and home situations for Assertive Communication.',
+          'Everything unlocks immediately and works in all your training modes, including handsfree. After this there is nothing else in Extended to buy.',
+        ],
+        contents: [
+          { type: 'pack',    id: 'startingconversations4' },
+          { type: 'pack',    id: 'apologizing2' },
+          { type: 'bundle',  id: 'brokenrecord::family' },
+          { type: 'bundle',  id: 'assertive::domestic' },
+          { type: 'program', id: 'difficult-conversations' },
+        ],
+      },
+      {
         id: 'kit-classroom',
         title: 'Classroom Kit',
         icon: 'ti-school',
-        description: 'The full Extended catalog for classroom use. Available with an access code.',
+        description: 'The same material as The Communicator Kit, at a special rate for classroom and group use.',
         price: '59 kr',
         code: 'DEMO2026',
         details: [
-          'The full Extended catalog at a special rate for classroom and group use \u2014 unlocked with an access code from your teacher or course leader.',
-          'The same material as The Communicator Kit, which costs {separately} bought separately: two extra packs and two sets of extra situations, all available in every training mode.',
+          'The same packs and bundles as The Communicator Kit, at a special rate for classroom and group use \u2014 unlocked with an access code from your teacher or course leader.',
+          'Two extra packs and two sets of extra situations, {separately} bought separately, all available in every training mode. The Difficult Conversations program is not included; that one is in The Complete Kit.',
         ],
         contents: [
           { type: 'pack',   id: 'startingconversations4' },
