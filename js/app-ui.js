@@ -2273,6 +2273,13 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
         : 'available';
     const visiblePrograms = programsData.filter(prog => progVis(prog) !== 'hidden');
     const progLocked = prog => progVis(prog) === 'locked';
+    // v1.26.84 — the free/Pro split is only mentioned to someone it applies to.
+    const descFor = prog => {
+      const A = window.accessLevel || {};
+      if (!prog.descriptionPartial || !A.sectionVisibility) return prog.description;
+      const anyLocked = prog.sections.some(s => A.sectionVisibility(prog, s) !== 'available');
+      return anyLocked ? prog.descriptionPartial : prog.description;
+    };
 
     // v1.26.82 — grouped the way the packs list is grouped: what you can use
     // now, then what Pro would give you. A locked program is still openable
@@ -2296,7 +2303,7 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
         + '</div>'
         + '<div class="program-card-body" style="pointer-events:none">'
         + '<div class="program-card-title">' + prog.title + '</div>'
-        + '<div class="program-card-desc">' + prog.description + '</div>'
+        + '<div class="program-card-desc">' + descFor(prog) + '</div>'
         + (locked ? '' :
             '<div class="program-progress-bar-wrap">'
           + '<div class="program-progress-bar" style="width:' + pct + '%"></div>'
@@ -2338,20 +2345,23 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
     const A = window.accessLevel || {};
     const progVis = A.programVisibility ? A.programVisibility(program.id) : 'available';
     const secVis  = sec => (A.sectionVisibility ? A.sectionVisibility(program, sec) : progVis);
-    const banner  = progVis === 'locked'
-      ? '<div class="prog-tier-banner"><i class="ti ti-lock"></i> Only available with Pro</div>'
-      : (program.sections.some(s => secVis(s) === 'locked')
-          ? '<div class="prog-tier-banner prog-tier-banner--partial"><i class="ti ti-diamond"></i> Free through ' +
-            (program.sections.filter(s => secVis(s) === 'available').slice(-1)[0] || {}).title +
-            '. The rest opens with Pro.</div>'
-          : '');
+    // v1.26.84 — a wholly locked program says so once at the top. A partly
+    // free one says nothing at the top: the same lock card is dropped INTO the
+    // list at the point where the free part ends, which is where the question
+    // actually comes up.
+    const anyLocked = program.sections.some(s => secVis(s) !== 'available');
+    const lockCard = '<div class="prog-tier-banner"><i class="ti ti-lock"></i> Only available with Pro</div>';
+    const banner  = progVis === 'locked' ? lockCard : '';
+    let lockCardShown = false;
     let html = '<div class="program-detail">'
       + '<div class="program-detail-topbar">'
       + '<button class="program-back-btn" id="prog-back-btn">\u2190 Programs</button>'
       + '<button class="program-settings-btn" id="prog-settings-btn" title="Program settings"><i class="ti ti-settings"></i></button>'
       + '</div>'
       + '<h2 class="program-detail-title">' + program.title + '</h2>'
-      + '<p class="program-detail-desc">' + program.description + '</p>'
+      + '<p class="program-detail-desc">'
+      + ((program.descriptionPartial && anyLocked) ? program.descriptionPartial : program.description)
+      + '</p>'
       + banner;
 
     program.sections.forEach((section, si) => {
@@ -2359,6 +2369,11 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
       // yet, or your plan does not include it.
       const tierOpen = secVis(section) === 'available';
       const unlocked = tierOpen && isSectionUnlocked(program, si);
+      // The first Part your plan does not cover gets the lock card above it.
+      if (!tierOpen && !lockCardShown && progVis !== 'locked') {
+        html += lockCard;
+        lockCardShown = true;
+      }
       html += '<div class="prog-section' + (unlocked ? '' : ' prog-section--locked') + '">'
         + '<div class="prog-section-label">' + section.title + '</div>';
 
