@@ -2263,8 +2263,6 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
     }
 
     container.className = 'library-tab-content';
-    let html = '<div class="tab-info">Available programs</div>'
-      + '<div class="programs-list">';
 
     // v1.26.81 — visibility comes from PROGRAM_CONFIG via programVisibility()
     // instead of the old EXTENDED_PROGRAM_IDS check, so a program can be
@@ -2276,37 +2274,50 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
     const visiblePrograms = programsData.filter(prog => progVis(prog) !== 'hidden');
     const progLocked = prog => progVis(prog) === 'locked';
 
-    visiblePrograms.forEach(prog => {
-      // Count progress
+    // v1.26.82 — grouped the way the packs list is grouped: what you can use
+    // now, then what Pro would give you. A locked program is still openable
+    // (see the click handler) so the Pro group is a shop window, not a wall.
+    const openPrograms   = visiblePrograms.filter(p => !progLocked(p));
+    const lockedPrograms = visiblePrograms.filter(progLocked);
+
+    const cardFor = prog => {
       const totalCPs  = prog.sections.filter(s => s.checkpoint).length;
       const passedCPs = prog.sections.filter(s => s.checkpoint && isCheckpointPassed(prog.id, s.checkpoint.id)).length;
       const pct       = totalCPs ? Math.round((passedCPs / totalCPs) * 100) : 0;
-
-      const locked = progLocked(prog);
-      html += '<div class="program-card' + (locked ? ' collection-card--locked' : '') + '" data-prog-id="' + prog.id + '" data-locked="' + locked + '">'
+      const locked    = progLocked(prog);
+      return '<div class="program-card' + (locked ? ' collection-card--locked' : '') + '" data-prog-id="' + prog.id + '" data-locked="' + locked + '">'
         + (locked ? '<div class="pack-lock-badge pack-lock-badge--pro">Pro</div>' : '')
         + '<div class="program-card-icon" style="pointer-events:none"><i class="ti ' + (prog.icon || 'ti-stack') + '"></i></div>'
         + '<div class="program-card-body" style="pointer-events:none">'
         + '<div class="program-card-title">' + prog.title + '</div>'
         + '<div class="program-card-desc">' + prog.description + '</div>'
-        + '<div class="program-progress-bar-wrap">'
-        + '<div class="program-progress-bar" style="width:' + pct + '%"></div>'
-        + '</div>'
-        + '<div class="program-progress-label">' + passedCPs + ' / ' + totalCPs + ' checkpoints passed</div>'
+        + (locked ? '' :
+            '<div class="program-progress-bar-wrap">'
+          + '<div class="program-progress-bar" style="width:' + pct + '%"></div>'
+          + '</div>'
+          + '<div class="program-progress-label">' + passedCPs + ' / ' + totalCPs + ' checkpoints passed</div>')
         + '</div>'
         + '</div>';
-    });
-    html += '</div>';
+    };
+
+    let html = '';
+    if (openPrograms.length) {
+      html += '<div class="tab-info">' + (lockedPrograms.length ? 'Available programs' : 'Available programs') + '</div>'
+        + '<div class="programs-list">' + openPrograms.map(cardFor).join('') + '</div>';
+    }
+    if (lockedPrograms.length) {
+      html += '<div class="home-section-label">Pro programs</div>'
+        + '<div class="programs-list">' + lockedPrograms.map(cardFor).join('') + '</div>';
+    }
     container.innerHTML = html;
 
     // Use event delegation to avoid duplicate listeners on re-render
     container.onclick = e => {
       const card = e.target.closest('.program-card');
       if (!card) return;
-      if (card.dataset.locked === 'true') {
-        if (window.showToast) showToast('This program requires Pro. Upgrade to unlock it.');
-        return;
-      }
+      // v1.26.82 — a locked program opens too. Everything inside is greyed and
+      // a banner says what it costs; being able to look at the contents is the
+      // whole reason to list it.
       const prog = programsData.find(p => p.id === card.dataset.progId);
       if (prog) renderProgramDetail(prog);
     };
@@ -2315,18 +2326,37 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
   // ── Render program detail ─────────────────────────────────────────────────────
   function renderProgramDetail(program) {
     const container = document.getElementById('libTabPrograms');
+    // v1.26.82 — a section can be gated by its own minLevel, and the whole
+    // program can be Pro-locked while still being browsable. Both are asked
+    // for here rather than assumed from checkpoint progress alone.
+    const A = window.accessLevel || {};
+    const progVis = A.programVisibility ? A.programVisibility(program.id) : 'available';
+    const secVis  = sec => (A.sectionVisibility ? A.sectionVisibility(program, sec) : progVis);
+    const banner  = progVis === 'locked'
+      ? '<div class="prog-tier-banner"><i class="ti ti-lock"></i> Only available with Pro \u2014 have a look at what is inside.</div>'
+      : (program.sections.some(s => secVis(s) === 'locked')
+          ? '<div class="prog-tier-banner prog-tier-banner--partial"><i class="ti ti-diamond"></i> Free through ' +
+            (program.sections.filter(s => secVis(s) === 'available').slice(-1)[0] || {}).title +
+            '. The rest opens with Pro.</div>'
+          : '');
     let html = '<div class="program-detail">'
       + '<div class="program-detail-topbar">'
       + '<button class="program-back-btn" id="prog-back-btn">\u2190 Programs</button>'
       + '<button class="program-settings-btn" id="prog-settings-btn" title="Program settings"><i class="ti ti-settings"></i></button>'
       + '</div>'
       + '<h2 class="program-detail-title">' + program.title + '</h2>'
-      + '<p class="program-detail-desc">' + program.description + '</p>';
+      + '<p class="program-detail-desc">' + program.description + '</p>'
+      + banner;
 
     program.sections.forEach((section, si) => {
-      const unlocked = isSectionUnlocked(program, si);
+      // Two independent reasons a Part can be shut: you have not earned it
+      // yet, or your plan does not include it.
+      const tierOpen = secVis(section) === 'available';
+      const unlocked = tierOpen && isSectionUnlocked(program, si);
       html += '<div class="prog-section' + (unlocked ? '' : ' prog-section--locked') + '">'
-        + '<div class="prog-section-label">' + section.title + '</div>';
+        + '<div class="prog-section-label">' + section.title
+        + (tierOpen ? '' : ' <span class="pack-lock-badge pack-lock-badge--pro prog-section-badge">Pro</span>')
+        + '</div>';
 
       // Pack cards
       section.packs.forEach(pack => {
@@ -2355,6 +2385,7 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
           + '<div class="prog-checkpoint-meta">'
           + (passed ? 'Passed \u2713'
             : unlocked ? cp.drawCount + ' questions \u00b7 ' + cp.timeLimit + 's per question'
+            : !tierOpen ? 'Requires Pro'
             : 'Complete previous section to unlock')
           + '</div>'
           + '</div>'
@@ -2395,6 +2426,7 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
     // Checkpoint clicks
     container.querySelectorAll('.prog-checkpoint-card').forEach(card => {
       const si = parseInt(card.dataset.section);
+      if (secVis(program.sections[si]) !== 'available') return;
       if (!isSectionUnlocked(program, si)) return;
       if (isCheckpointPassed(program.id, card.dataset.cpId)) return;
       card.addEventListener('click', () => {
@@ -2498,6 +2530,17 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
       const pct     = Math.round((correct / drawn.length) * 100);
       const passed  = pct >= 70;
 
+      // v1.26.82 — measure BEFORE passing. The old code listed every pack in
+      // the section under "Added to your library", which was wrong the moment
+      // one of them was already there — open by default, or released earlier
+      // by another program. Only the packs that actually change state are
+      // named, so the message never claims a gift that was already given.
+      const visOf = k => (window.accessLevel && window.accessLevel.packVisibility)
+        ? window.accessLevel.packVisibility(k) : 'available';
+      const sectionPackList = (program.sections[sectionIndex] || {}).packs || [];
+      const before = {};
+      sectionPackList.forEach(p => { before[p.key] = visOf(p.key); });
+
       if (passed) {
         passCheckpoint(program.id, checkpoint.id);
         // Newly unlocked packs become visible everywhere (packs, topics,
@@ -2517,9 +2560,14 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
         const s = program.sections[si];
         return (s && s.packs ? s.packs : []).map(p => cpEsc(p.label));
       };
-      const released  = passed ? packNamesAt(sectionIndex) : [];
+      const released  = !passed ? [] : sectionPackList
+        .filter(p => before[p.key] !== 'available' && visOf(p.key) === 'available')
+        .map(p => cpEsc(p.label));
       const nextSec   = passed ? program.sections[sectionIndex + 1] : null;
       const nextPacks = nextSec ? packNamesAt(sectionIndex + 1) : [];
+      // The next Part may exist but sit behind Pro (the freemium wall).
+      const nextSecLocked = !!nextSec && window.accessLevel && window.accessLevel.sectionVisibility
+        && window.accessLevel.sectionVisibility(program, nextSec) !== 'available';
 
       const unlockHtml = !passed ? '' : '<div class="cp-unlock">'
         + (released.length
@@ -2530,10 +2578,15 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
               + '</div></div>'
             : '')
         + (nextSec
-            ? '<div class="cp-unlock-row"><i class="ti ti-lock-open"></i><div class="cp-unlock-body">'
-              + '<div class="cp-unlock-head">Next up \u2014 ' + cpEsc(nextSec.title) + '</div>'
-              + (nextPacks.length ? '<div class="cp-unlock-packs">' + nextPacks.join(' \u00b7 ') + '</div>' : '')
-              + '</div></div>'
+            ? (nextSecLocked
+                ? '<div class="cp-unlock-row"><i class="ti ti-diamond"></i><div class="cp-unlock-body">'
+                  + '<div class="cp-unlock-head">Next up \u2014 ' + cpEsc(nextSec.title) + '</div>'
+                  + '<div class="cp-unlock-note">That part of the program needs Pro. Everything you have earned so far stays yours.</div>'
+                  + '</div></div>'
+                : '<div class="cp-unlock-row"><i class="ti ti-lock-open"></i><div class="cp-unlock-body">'
+                  + '<div class="cp-unlock-head">Next up \u2014 ' + cpEsc(nextSec.title) + '</div>'
+                  + (nextPacks.length ? '<div class="cp-unlock-packs">' + nextPacks.join(' \u00b7 ') + '</div>' : '')
+                  + '</div></div>')
             : '<div class="cp-unlock-row"><i class="ti ti-flag-check"></i><div class="cp-unlock-body">'
               + '<div class="cp-unlock-head">That was the last checkpoint</div>'
               + '<div class="cp-unlock-note">You have finished this program.</div>'
@@ -2642,7 +2695,25 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
       // rewritten as a new pack, add it back with the new key.
     ],
     programs: [
-      // v1.26.80 — EMPTY ON PURPOSE. 'conversation-skills' (Conversation Skills
+      // v1.26.82 — the first Extended program built on the handbook library.
+      // Its Parts 2 and 3 hold three packs at minLevel 'program', so this
+      // purchase is the only route to them. Part 1 uses two packs a Pro user
+      // already has, on purpose: the way in should feel familiar.
+      {
+        id: 'difficult-conversations',
+        title: 'Difficult Conversations',
+        icon: 'ti-shield-bolt',
+        description: 'Three steps through the conversations people avoid — asking and refusing, staying steady when they push back, and saying the hard thing.',
+        price: '59 kr',
+        details: [
+          'A guided program, not a pack. Three Parts, each ending in a test you have to pass before the next one opens — and passing releases that Part\u2019s packs into your library for good.',
+          'Part 1 starts on ground you know: asking for something without the awkward run-up, and refusing without handing over reasons to argue with. Part 2 is the one people need most — what to do when the answer is a dig rather than a reply, and how to stay usable when a conversation turns hot. Part 3 is criticism in both directions, giving it and taking it.',
+          'Three of its packs — Conflict Emotions, Giving Criticism and Receiving Feedback and Criticism — exist nowhere else in the app. This program is the only way to reach them.',
+          'Everything works in all your training modes, including handsfree.',
+        ],
+      },
+      // 'conversation-skills' was removed in v1.26.80 — see the note below.
+      // EMPTY BEFORE THAT (v1.26.80): 'conversation-skills' (Conversation Skills
       // Foundations, 49 kr) was taken out of the store. Three reasons, in
       // order: it is built entirely on the pre-handbook packs
       // (startingconnecting, conversationaldepth, listeningresponding) that

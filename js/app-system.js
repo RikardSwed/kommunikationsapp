@@ -159,6 +159,30 @@ applyInputCounterVisibility();
     compliments:        { label: 'Compliments & Self-Disclosure', minLevel: 'complete' },
     influenceframing:   { label: 'Influence & Framing',   minLevel: 'complete' },
     selfhumour:         { label: 'Self-Humour',           minLevel: 'complete' },
+    // ── minLevel: 'program' (v1.26.82) ─────────────────────────────
+    // These packs exist ONLY inside a program. They are not in the Packs
+    // list, not in Topics, not in search — not even greyed with a badge —
+    // until the checkpoint on their Part is passed, and then they appear
+    // everywhere at once. That arrival is the reward the programs are built
+    // around. The Part each one sits on is named so the link is findable
+    // from this end too.
+    changingtopics: { label: 'Changing Topics', minLevel: 'program' },          // Conversation Foundations, Part 2
+    exploringatopic: { label: 'Exploring a Topic', minLevel: 'program' },       // Conversation Foundations, Part 2
+    validation: { label: 'Validation', minLevel: 'program' },                   // Conversation Foundations, Part 3
+    deepquestions: { label: 'Deep Questions', minLevel: 'program' },            // Conversation Foundations, Part 4
+    talkingaboutyourself: { label: 'Talking About Yourself', minLevel: 'program' },  // Say It Well, Part 1
+    givingexamples: { label: 'Giving Examples', minLevel: 'program' },          // Say It Well, Part 2
+    storiesinconversation: { label: 'Stories in Conversation', minLevel: 'program' },// Say It Well, Part 3
+    complimenting: { label: 'Compliments', minLevel: 'program' },               // Warmth & Connection, Part 1
+    supportingconversations: { label: 'Supporting Conversations', minLevel: 'program' }, // Warmth & Connection, Part 2
+    emotionlabellingandregulation: { label: 'Emotion Labelling and Regulation', minLevel: 'program' }, // Warmth & Connection, Part 3
+    // Difficult Conversations is an EXTENDED program, so these three are
+    // unreachable without buying it. That is three packs taken out of Pro —
+    // the one decision here with a price on it.
+    conflictemotions: { label: 'Conflict Emotions', minLevel: 'program' },      // Difficult Conversations, Part 2
+    givingcriticism: { label: 'Giving Criticism', minLevel: 'program' },        // Difficult Conversations, Part 3
+    receivingfeedbackandcriticism: { label: 'Receiving Feedback and Criticism', minLevel: 'program' }, // Difficult Conversations, Part 3
+
     setupstatement: { label: 'Setup Statement', minLevel: 'pro' },
     firststrategies: { label: 'First Strategies', minLevel: 'freemium' },
     startingconversations1: { label: 'Starting Conversations — Pt. 1', minLevel: 'freemium' },
@@ -168,23 +192,13 @@ applyInputCounterVisibility();
     startingconversations2: { label: 'Starting Conversations — Pt. 2', minLevel: 'pro' },
     startingconversations3: { label: 'Starting Conversations — Pt. 3', minLevel: 'pro' },
     endingconversations: { label: 'Ending Conversations', minLevel: 'pro' },
-    changingtopics: { label: 'Changing Topics', minLevel: 'pro' },
     reactingtounexpectedstatements: { label: 'Reacting to Unexpected Statements', minLevel: 'pro' },
-    exploringatopic: { label: 'Exploring a Topic', minLevel: 'pro' },
-    deepquestions: { label: 'Deep Questions', minLevel: 'pro' },
     howtointerrupt: { label: 'How to Interrupt', minLevel: 'pro' },
     handleinterruptions: { label: 'Handle Interruptions', minLevel: 'pro' },
-    validation: { label: 'Validation', minLevel: 'pro' },
-    supportingconversations: { label: 'Supporting Conversations', minLevel: 'pro' },
-    talkingaboutyourself: { label: 'Talking About Yourself', minLevel: 'pro' },
     describethings: { label: 'Describe Things', minLevel: 'pro' },
     explainthings: { label: 'Explain Things', minLevel: 'pro' },
-    givingexamples: { label: 'Giving Examples', minLevel: 'pro' },
     storytellingwiththesixws: { label: 'Storytelling with the Six W\'s', minLevel: 'pro' },
-    storiesinconversation: { label: 'Stories in Conversation', minLevel: 'pro' },
     praiseandencouragement: { label: 'Praise and Encouragement', minLevel: 'pro' },
-    givingcriticism: { label: 'Giving Criticism', minLevel: 'pro' },
-    receivingfeedbackandcriticism: { label: 'Receiving Feedback and Criticism', minLevel: 'pro' },
     apologizing1: { label: 'Apologizing — Pt. 1', minLevel: 'pro' },
     agreeing: { label: 'Agreeing', minLevel: 'pro' },
     disagreeing: { label: 'Disagreeing', minLevel: 'pro' },
@@ -195,10 +209,7 @@ applyInputCounterVisibility();
     respondingtopassiveaggression: { label: 'Responding to Passive Aggression', minLevel: 'pro' },
     makingrequests: { label: 'Making Requests', minLevel: 'pro' },
     sayingno: { label: 'Saying No', minLevel: 'pro' },
-    emotionlabellingandregulation: { label: 'Emotion Labelling and Regulation', minLevel: 'pro' },
-    conflictemotions: { label: 'Conflict Emotions', minLevel: 'pro' },
     rolebasedhumour: { label: 'Role Based Humour', minLevel: 'pro' },
-    complimenting: { label: 'Compliments', minLevel: 'pro' },
     responsivehumour: { label: 'Responsive Humour', minLevel: 'pro' },
   };
 
@@ -225,6 +236,10 @@ applyInputCounterVisibility();
     'saying-no':           { minLevel: 'complete' },
     'social-confidence':   { minLevel: 'complete' },
     'conversation-skills': { minLevel: 'complete' },
+    // v1.26.82 — the three handbook programs.
+    'say-it-well':            { minLevel: 'pro' },
+    'warmth-connection':      { minLevel: 'pro' },
+    'difficult-conversations': { minLevel: 'extended' },
   };
   const _warnedPrograms = {};
 
@@ -247,6 +262,19 @@ applyInputCounterVisibility();
       return level === 'pro' ? 'available' : 'locked';
     }
     return levelIndex(level) >= levelIndex(cfg.minLevel) ? 'available' : 'locked';
+  }
+
+  // A single Part inside a program (v1.26.82). A section may carry its own
+  // minLevel, which is how one program can be partly free: Conversation
+  // Foundations is open through Part 2 and needs Pro from Part 3. The section
+  // can never be more open than the program it sits in.
+  function sectionVisibility(prog, sec) {
+    const progVis = programVisibility(prog.id);
+    if (progVis !== 'available' || !sec || !sec.minLevel) return progVis;
+    const level = getLevel();
+    if (level === 'complete') return 'available';
+    if (sec.minLevel === 'complete' || sec.minLevel === 'program') return 'hidden';
+    return levelIndex(level) >= levelIndex(sec.minLevel) ? 'available' : 'locked';
   }
 
   // Mode definitions per level
@@ -335,6 +363,8 @@ applyInputCounterVisibility();
         if (!sec.packs || !sec.packs.some(p => p.key === packKey)) return;
         state.inAnyProgram = true;
         if (progVis === 'hidden') return;
+        const secVis = sectionVisibility(prog, sec);
+        if (secVis === 'hidden') return;
         // Section unlocked = every previous checkpoint passed
         for (let i = 0; i < si; i++) {
           const cp = prog.sections[i].checkpoint;
@@ -352,8 +382,9 @@ applyInputCounterVisibility();
         const ownCp = sec.checkpoint;
         if (ownCp && !cpPassed(prog.id, ownCp.id)) { state.pendingRoute = true; return; }
         // A locked program (Pro badge, or Extended owned without Pro) offers a
-        // locked route, not an open one.
-        if (progVis === 'locked') state.lockedRoute = true;
+        // locked route, not an open one. So does a Pro-only section inside an
+        // otherwise free program.
+        if (secVis === 'locked') state.lockedRoute = true;
         else state.availableRoute = true;
       });
     });
@@ -376,6 +407,13 @@ applyInputCounterVisibility();
         if (!getExtendedOwned().includes(packKey)) standalone = 'hidden';
         else standalone = isProUp ? 'available' : 'locked';
       } else if (cfg.minLevel === 'complete') {
+        standalone = 'hidden';
+      } else if (cfg.minLevel === 'program') {
+        // v1.26.82 — the pack does not exist outside its program. It is not
+        // shown greyed with a badge anywhere: a locked pack in the list is a
+        // reminder of something you cannot do, while a pack that APPEARS when
+        // you pass a checkpoint is a reward. The program route below is the
+        // only thing that can turn this into 'available'.
         standalone = 'hidden';
       } else if (levelIndex(level) >= levelIndex(cfg.minLevel)) {
         standalone = 'available';
@@ -606,7 +644,7 @@ applyInputCounterVisibility();
   }
 
   // Expose for other modules
-  window.accessLevel = { getLevel, canAccess, badgeLabel, applyModeLocks, updateNavUpgradeBtn, packVisibility, programVisibility, applyAccessLevel };
+  window.accessLevel = { getLevel, canAccess, badgeLabel, applyModeLocks, updateNavUpgradeBtn, packVisibility, programVisibility, sectionVisibility, applyAccessLevel };
   window._applyAccessLevel = applyAccessLevel;
 
   // Init
