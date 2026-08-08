@@ -2923,6 +2923,24 @@ body.feedback-mode    .al-bar { display: none !important; }
 }
 
 /* Uppgift — white bg square on home gear (matching lib-banner-btn style) */
+/* v1.26.82 — tier banner at the top of a program: either "Pro only, but do
+   look" or "free this far". Sits between the description and Part 1. */
+.prog-tier-banner {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 18px;
+  padding: 10px 14px;
+  border-radius: 12px;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.4;
+  background: var(--ds-topbar-btn);
+  color: var(--ds-txt2);
+}
+.prog-tier-banner i { flex-shrink: 0; font-size: 16px; }
+.prog-section-badge { position: static; margin-left: 6px; vertical-align: middle; }
+
 #homeSettingsBtn {
   width: 34px;
   height: 34px;
