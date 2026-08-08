@@ -2577,6 +2577,13 @@ body.pb-enabled .divider::after {
   display: flex; align-items: center; justify-content: center;
   font-size: 22px; flex-shrink: 0;
 }
+/* v1.26.83 — icon and Pro badge share a left column, so a badged card and an
+   unbadged one have their text starting in exactly the same place. */
+.program-card-side {
+  display: flex; flex-direction: column; align-items: center;
+  gap: 8px; flex-shrink: 0; pointer-events: none;
+}
+.program-card-badge { justify-content: center; }
 .program-card-body { flex: 1; min-width: 0; }
 .program-card-title { font-size: 16px; font-weight: 700; margin-bottom: 4px; }
 .program-card-desc  { font-size: 13px; color: var(--ds-txt2); margin-bottom: 12px; line-height: 1.5; }
@@ -2939,7 +2946,6 @@ body.feedback-mode    .al-bar { display: none !important; }
   color: var(--ds-txt2);
 }
 .prog-tier-banner i { flex-shrink: 0; font-size: 16px; }
-.prog-section-badge { position: static; margin-left: 6px; vertical-align: middle; }
 
 #homeSettingsBtn {
   width: 34px;
