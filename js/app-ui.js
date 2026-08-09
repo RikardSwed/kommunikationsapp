@@ -2292,17 +2292,17 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
       const passedCPs = prog.sections.filter(s => s.checkpoint && isCheckpointPassed(prog.id, s.checkpoint.id)).length;
       const pct       = totalCPs ? Math.round((passedCPs / totalCPs) * 100) : 0;
       const locked    = progLocked(prog);
-      // v1.26.83 — the Pro badge sits UNDER the icon, in its own column, so a
-      // badged card lines up with an unbadged one. As a first flex child it
-      // pushed the icon and the whole text block sideways. The card is not
-      // greyed either: it opens, and greying it out said otherwise.
+      // v1.26.85 — the Pro badge sits to the RIGHT of the title, on the same
+      // line, which is where every other Pro badge in the app is. (v1.26.83
+      // put it under the icon; that fixed the alignment but broke the
+      // convention.) The card is not greyed: it opens.
       return '<div class="program-card" data-prog-id="' + prog.id + '" data-locked="' + locked + '">'
-        + '<div class="program-card-side">'
-        + '<div class="program-card-icon"><i class="ti ' + (prog.icon || 'ti-stack') + '"></i></div>'
+        + '<div class="program-card-icon" style="pointer-events:none"><i class="ti ' + (prog.icon || 'ti-stack') + '"></i></div>'
+        + '<div class="program-card-body" style="pointer-events:none">'
+        + '<div class="program-card-titlerow">'
+        + '<div class="program-card-title">' + prog.title + '</div>'
         + (locked ? '<div class="pack-lock-badge pack-lock-badge--pro program-card-badge">Pro</div>' : '')
         + '</div>'
-        + '<div class="program-card-body" style="pointer-events:none">'
-        + '<div class="program-card-title">' + prog.title + '</div>'
         + '<div class="program-card-desc">' + descFor(prog) + '</div>'
         + (locked ? '' :
             '<div class="program-progress-bar-wrap">'

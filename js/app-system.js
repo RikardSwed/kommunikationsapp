@@ -182,15 +182,22 @@ applyInputCounterVisibility();
     conflictemotions: { label: 'Conflict Emotions', minLevel: 'program' },      // Difficult Conversations, Part 2
     givingcriticism: { label: 'Giving Criticism', minLevel: 'program' },        // Difficult Conversations, Part 3
     receivingfeedbackandcriticism: { label: 'Receiving Feedback and Criticism', minLevel: 'program' }, // Difficult Conversations, Part 3
+    // v1.26.85 — the two ladders. A pack series with a sequel is the natural
+    // shape for a program: the earlier rungs stay open so the ladder is
+    // visible, and the last one is the reward. Starting Conversations Pt. 1
+    // (freemium) and Pt. 2 (pro) are both still open on their own; only Pt. 3
+    // is locked. Same for Persuasion, where Pt. 1 stays open with Pro.
+    setupstatement: { label: 'Setup Statement', minLevel: 'program' },          // Opening a Conversation, Part 2
+    startingconversations3: { label: 'Starting Conversations — Pt. 3', minLevel: 'program' }, // Opening a Conversation, Part 3
+    persuasionandinfluence2: { label: 'Persuasion and Influence — Pt. 2', minLevel: 'program' }, // Persuasion & Negotiation, Part 2
+    negotiationandcompromise: { label: 'Negotiation and Compromise', minLevel: 'program' },      // Persuasion & Negotiation, Part 3
 
-    setupstatement: { label: 'Setup Statement', minLevel: 'pro' },
     firststrategies: { label: 'First Strategies', minLevel: 'freemium' },
     startingconversations1: { label: 'Starting Conversations — Pt. 1', minLevel: 'freemium' },
     showunderstanding: { label: 'Show Understanding', minLevel: 'freemium' },
     startingconversations4: { label: 'Starting Conversations — Pt. 4', minLevel: 'extended' },
     apologizing2: { label: 'Apologizing — Pt. 2', minLevel: 'extended' },
     startingconversations2: { label: 'Starting Conversations — Pt. 2', minLevel: 'pro' },
-    startingconversations3: { label: 'Starting Conversations — Pt. 3', minLevel: 'pro' },
     endingconversations: { label: 'Ending Conversations', minLevel: 'pro' },
     reactingtounexpectedstatements: { label: 'Reacting to Unexpected Statements', minLevel: 'pro' },
     howtointerrupt: { label: 'How to Interrupt', minLevel: 'pro' },
@@ -203,8 +210,6 @@ applyInputCounterVisibility();
     agreeing: { label: 'Agreeing', minLevel: 'pro' },
     disagreeing: { label: 'Disagreeing', minLevel: 'pro' },
     persuasionandinfluence1: { label: 'Persuasion and Influence — Pt. 1', minLevel: 'pro' },
-    persuasionandinfluence2: { label: 'Persuasion and Influence — Pt. 2', minLevel: 'pro' },
-    negotiationandcompromise: { label: 'Negotiation and Compromise', minLevel: 'pro' },
     brokenrecord: { label: 'Broken Record', minLevel: 'pro' },
     respondingtopassiveaggression: { label: 'Responding to Passive Aggression', minLevel: 'pro' },
     makingrequests: { label: 'Making Requests', minLevel: 'pro' },
@@ -239,6 +244,8 @@ applyInputCounterVisibility();
     // v1.26.82 — the three handbook programs.
     'say-it-well':            { minLevel: 'pro' },
     'warmth-connection':      { minLevel: 'pro' },
+    'opening-a-conversation': { minLevel: 'pro' },
+    'persuasion-negotiation': { minLevel: 'pro' },
     'difficult-conversations': { minLevel: 'extended' },
   };
   const _warnedPrograms = {};

@@ -712,4 +712,148 @@ const programsData = [
       },
     ],
   },
+  {
+    id: 'opening-a-conversation',
+    title: "Opening a Conversation",
+    description: "The whole approach, one rung at a time — from a first sentence that costs nothing to walking up to someone with no excuse to hide behind.",
+    icon: "ti-arrow-bar-to-right",
+    sections: [
+      {
+        id: 'section-1',
+        title: "Part 1 — The easy openings",
+        packs: [
+          { key: "startingconversations1", label: "Starting Conversations — Pt. 1" },
+        ],
+        checkpoint: {
+          id: 'oac-cp1',
+          title: "The easy openings — check",
+          timeLimit: 30,
+          drawCount: 20,
+          questions: [
+            { id: 'oac1-1', q: "What makes a situational opener easy to say?", options: ["It is short", "You are both already in the thing you are commenting on", "It is about the weather", "It needs no answer"], correct: 1 },
+            { id: 'oac1-2', q: "Why is the first sentence rarely the hard part?", options: ["People are friendly", "Almost anything works — the difficulty is what you do with the reply", "It is rehearsed", "It is short"], correct: 1 },
+            { id: 'oac1-3', q: "What does an opener actually need to do?", options: ["Be interesting", "Give the other person something easy to answer", "Be original", "Show confidence"], correct: 1 },
+            { id: 'oac1-4', q: "Which opener asks least of a stranger?", options: ["\"What brings you here?\"", "\"Longer queue than usual today.\"", "\"Do you come here often?\"", "\"Can I ask you something?\""], correct: 1 },
+            { id: 'oac1-5', q: "What is the cost of waiting for the perfect opener?", options: ["Nothing", "The moment passes, and the moment was the opportunity", "You look nervous", "They open first"], correct: 1 },
+            { id: 'oac1-6', q: "Why does a comment beat a question at the very start?", options: ["It is friendlier", "It offers something instead of asking for something", "It is shorter", "It sounds confident"], correct: 1 },
+          ],
+        },
+      },
+      {
+        id: 'section-2',
+        title: "Part 2 — Setting it up",
+        packs: [
+          { key: "startingconversations2", label: "Starting Conversations — Pt. 2" },
+          { key: "setupstatement", label: "Setup Statement" },
+        ],
+        checkpoint: {
+          id: 'oac-cp2',
+          title: "Setting it up — check",
+          timeLimit: 30,
+          drawCount: 20,
+          questions: [
+            { id: 'oac2-1', q: "What is a setup statement?", options: ["An apology before a question", "A sentence that gives your question a reason to exist", "An introduction", "A compliment"], correct: 1 },
+            { id: 'oac2-2', q: "Why does a bare question to a stranger feel abrupt?", options: ["It is too direct", "They have to work out why you are asking before they can answer", "It is impolite", "It is too personal"], correct: 1 },
+            { id: 'oac2-3', q: "Which is a setup statement?", options: ["\"Sorry to bother you.\"", "\"I am new here and completely lost — is this the right platform?\"", "\"Excuse me, quick question.\"", "\"Do you know where platform 3 is?\""], correct: 1 },
+            { id: 'oac2-4', q: "What does a setup statement give away on purpose?", options: ["Your name", "A small piece of your own situation", "Your reason for being there", "Nothing — it is neutral"], correct: 1 },
+            { id: 'oac2-5', q: "What is the difference between a setup and an apology?", options: ["None in practice", "A setup gives context; an apology only says you are sorry for existing", "An apology is politer", "A setup is longer"], correct: 1 },
+            { id: 'oac2-6', q: "When does an opener need more setup?", options: ["With people you know", "The less obvious it is why you are talking to them", "In noisy places", "In groups"], correct: 1 },
+          ],
+        },
+      },
+      {
+        id: 'section-3',
+        title: "Part 3 — No excuse to hide behind",
+        packs: [
+          { key: "startingconversations3", label: "Starting Conversations — Pt. 3" },
+        ],
+        checkpoint: {
+          id: 'oac-cp3',
+          title: "No excuse to hide behind — check",
+          timeLimit: 30,
+          drawCount: 20,
+          questions: [
+            { id: 'oac3-1', q: "What makes a cold approach harder than a situational one?", options: ["The person is a stranger", "There is no shared situation to point at, so the reason has to be you", "There is less time", "People are suspicious"], correct: 1 },
+            { id: 'oac3-2', q: "What is the most useful thing to be honest about?", options: ["That you are nervous", "That you had no reason other than wanting to talk to them", "That you are new", "That you will be quick"], correct: 1 },
+            { id: 'oac3-3', q: "Why does a manufactured excuse usually go worse than none?", options: ["It is dishonest", "People hear that it is invented, and then wonder what else is", "It takes longer", "It is hard to remember"], correct: 1 },
+            { id: 'oac3-4', q: "What is the point of naming the awkwardness out loud?", options: ["It is funny", "Once it is said it stops being the thing you are both managing", "It buys time", "It sounds confident"], correct: 1 },
+            { id: 'oac3-5', q: "What should follow a cold opener almost immediately?", options: ["A question", "Something that gives them an easy way out if they want one", "Your name", "A compliment"], correct: 1 },
+            { id: 'oac3-6', q: "They answer briefly and turn away. What has happened?", options: ["You did it wrong", "They said no, which was always one of the answers", "You need a better opener", "They were busy"], correct: 1 },
+          ],
+        },
+      },
+    ],
+  },
+
+  {
+    id: 'persuasion-negotiation',
+    title: "Persuasion & Negotiation",
+    description: "Three steps in getting somewhere with someone who does not start out agreeing with you.",
+    icon: "ti-scale",
+    sections: [
+      {
+        id: 'section-1',
+        title: "Part 1 — Making the case",
+        packs: [
+          { key: "persuasionandinfluence1", label: "Persuasion and Influence — Pt. 1" },
+        ],
+        checkpoint: {
+          id: 'pn-cp1',
+          title: "Making the case — check",
+          timeLimit: 30,
+          drawCount: 20,
+          questions: [
+            { id: 'pn1-1', q: "What does an argument have to start from to land?", options: ["The strongest evidence", "Something the other person already cares about", "Your own position", "A shared fact"], correct: 1 },
+            { id: 'pn1-2', q: "Why does volume of evidence rarely change a mind?", options: ["People do not read it", "Disagreement is usually about what matters, not about what is true", "It takes too long", "It sounds arrogant"], correct: 1 },
+            { id: 'pn1-3', q: "What does asking a question do that asserting does not?", options: ["It is politer", "It makes them work out part of it themselves, so it is theirs", "It takes less time", "It avoids conflict"], correct: 1 },
+            { id: 'pn1-4', q: "What is the use of naming the strongest objection yourself?", options: ["It sounds fair", "It shows you have thought about it, and it stops being their weapon", "It shortens the argument", "It flatters them"], correct: 1 },
+            { id: 'pn1-5', q: "Which framing is most likely to be heard?", options: ["\"You are wrong about this.\"", "\"If the aim is X, this gets there faster.\"", "\"Everyone else does it this way.\"", "\"I have looked into it more than you.\""], correct: 1 },
+            { id: 'pn1-6', q: "What usually happens when someone feels pushed?", options: ["They give in", "They defend their position harder than they believed it", "They ask questions", "They change the subject"], correct: 1 },
+          ],
+        },
+      },
+      {
+        id: 'section-2',
+        title: "Part 2 — When it is not that easy",
+        packs: [
+          { key: "persuasionandinfluence2", label: "Persuasion and Influence — Pt. 2" },
+        ],
+        checkpoint: {
+          id: 'pn-cp2',
+          title: "When it is not that easy — check",
+          timeLimit: 30,
+          drawCount: 20,
+          questions: [
+            { id: 'pn2-1', q: "Someone has said no in public. What has changed?", options: ["Nothing", "Backing down now costs them face as well as the argument", "They are more certain", "They will not listen"], correct: 1 },
+            { id: 'pn2-2', q: "What is the use of giving someone a way to change their mind?", options: ["It is kind", "People agree more easily when it does not have to look like losing", "It speeds things up", "It avoids conflict"], correct: 1 },
+            { id: 'pn2-3', q: "What does conceding a real point do to your case?", options: ["Weakens it", "Strengthens it — the rest becomes more believable", "Nothing", "Invites more objections"], correct: 1 },
+            { id: 'pn2-4', q: "When is the right moment to stop persuading?", options: ["When you run out of arguments", "When repeating yourself would cost more than the point is worth", "When they get annoyed", "After three attempts"], correct: 1 },
+            { id: 'pn2-5', q: "What is wrong with winning an argument with someone you work with?", options: ["Nothing", "You can win the point and lose the willingness to work with you", "It takes too long", "They remember it"], correct: 1 },
+            { id: 'pn2-6', q: "They are not arguing about the stated subject. What is worth doing?", options: ["Press the stated subject harder", "Ask about the thing underneath it", "Drop it", "Repeat your case"], correct: 1 },
+          ],
+        },
+      },
+      {
+        id: 'section-3',
+        title: "Part 3 — Meeting in the middle",
+        packs: [
+          { key: "negotiationandcompromise", label: "Negotiation and Compromise" },
+        ],
+        checkpoint: {
+          id: 'pn-cp3',
+          title: "Meeting in the middle — check",
+          timeLimit: 30,
+          drawCount: 20,
+          questions: [
+            { id: 'pn3-1', q: "What is the difference between a position and an interest?", options: ["None", "A position is what they are asking for; an interest is why", "An interest is stronger", "Positions are stated, interests are hidden"], correct: 1 },
+            { id: 'pn3-2', q: "Why does asking why they want it open things up?", options: ["It buys time", "There is often more than one way to give them what is behind the ask", "It sounds cooperative", "It slows the argument"], correct: 1 },
+            { id: 'pn3-3', q: "What should you know before you start negotiating?", options: ["Their limit", "Your own — what you will do if there is no deal", "The market rate", "Who decides"], correct: 1 },
+            { id: 'pn3-4', q: "What is wrong with splitting the difference by reflex?", options: ["It is lazy", "It rewards whoever opened most unreasonably", "It takes too long", "It looks weak"], correct: 1 },
+            { id: 'pn3-5', q: "What makes a compromise hold?", options: ["It is written down", "Both sides can explain why it was acceptable to them", "It is even", "It was agreed quickly"], correct: 1 },
+            { id: 'pn3-6', q: "Which question opens the most room?", options: ["\"Can you do better than that?\"", "\"What would make this work for you?\"", "\"Is that your final offer?\"", "\"Why so high?\""], correct: 1 },
+          ],
+        },
+      },
+    ],
+  },
 ];
