@@ -856,4 +856,54 @@ const programsData = [
       },
     ],
   },
+  {
+    id: 'humour',
+    title: "Humour",
+    description: "Two steps in being funny on purpose — catching what is already in the room, then playing a part on purpose.",
+    icon: "ti-mood-smile",
+    sections: [
+      {
+        id: 'section-1',
+        title: "Part 1 — Catching what is there",
+        packs: [
+          { key: "responsivehumour", label: "Responsive Humour" },
+        ],
+        checkpoint: {
+          id: 'hum-cp1',
+          title: "Catching what is there — check",
+          timeLimit: 30,
+          drawCount: 20,
+          questions: [
+            { id: 'hum1-1', q: "What is responsive humour built on?", options: ["Prepared material", "Something that has just been said or has just happened", "Timing", "Confidence"], correct: 1 },
+            { id: 'hum1-2', q: "Why does a remembered joke usually land worse than a remark?", options: ["It is longer", "It could have been said anywhere — the remark could only be said here", "People have heard it", "It needs a setup"], correct: 1 },
+            { id: 'hum1-3', q: "What is the safest target for a joke in a group you do not know?", options: ["The loudest person", "The situation you are all in", "Yourself", "Nobody — stay serious"], correct: 1 },
+            { id: 'hum1-4', q: "A joke does not land. What is the move?", options: ["Explain it", "Let it go and carry on — explaining costs more than the joke was worth", "Try another", "Apologise"], correct: 1 },
+            { id: 'hum1-5', q: "What does exaggeration need to stay funny rather than odd?", options: ["To be extreme", "To start from something both of you already recognise as true", "To be quick", "To be about you"], correct: 1 },
+            { id: 'hum1-6', q: "Someone makes a joke at your expense. What keeps it light?", options: ["Ignoring it", "Taking it further than they did", "Making one back", "Saying it was unfair"], correct: 1 },
+          ],
+        },
+      },
+      {
+        id: 'section-2',
+        title: "Part 2 — Playing a part",
+        packs: [
+          { key: "rolebasedhumour", label: "Role Based Humour" },
+        ],
+        checkpoint: {
+          id: 'hum-cp2',
+          title: "Playing a part — check",
+          timeLimit: 30,
+          drawCount: 20,
+          questions: [
+            { id: 'hum2-1', q: "What is role based humour?", options: ["Impressions of people you know", "Briefly playing a part everyone can hear you are playing", "Jokes about jobs", "Sarcasm"], correct: 1 },
+            { id: 'hum2-2', q: "What has to be obvious for a played role to be funny rather than strange?", options: ["That it is exaggerated", "That you both know you are not serious", "That it is short", "That it is friendly"], correct: 1 },
+            { id: 'hum2-3', q: "Why is playing the role of the one who is wrong so reliable?", options: ["It is self-deprecating", "Nobody else has to be the target", "It is unexpected", "It is easy"], correct: 1 },
+            { id: 'hum2-4', q: "How long should a played role last?", options: ["As long as it is working", "A line or two — held too long it stops being a joke and becomes an act", "Until someone joins in", "One sentence exactly"], correct: 1 },
+            { id: 'hum2-5', q: "What is the risk of playing a role with someone who does not know you?", options: ["They will not find it funny", "They may take the part for your actual opinion", "It takes too long", "They will play along wrongly"], correct: 1 },
+            { id: 'hum2-6', q: "What separates a played role from sarcasm?", options: ["Nothing", "A role invites the other person in; sarcasm usually puts someone down", "Sarcasm is funnier", "Roles are longer"], correct: 1 },
+          ],
+        },
+      },
+    ],
+  },
 ];

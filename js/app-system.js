@@ -210,12 +210,12 @@ applyInputCounterVisibility();
     agreeing: { label: 'Agreeing', minLevel: 'pro' },
     disagreeing: { label: 'Disagreeing', minLevel: 'pro' },
     persuasionandinfluence1: { label: 'Persuasion and Influence — Pt. 1', minLevel: 'pro' },
+    responsivehumour: { label: 'Responsive Humour', minLevel: 'pro' },
     brokenrecord: { label: 'Broken Record', minLevel: 'pro' },
     respondingtopassiveaggression: { label: 'Responding to Passive Aggression', minLevel: 'pro' },
     makingrequests: { label: 'Making Requests', minLevel: 'pro' },
     sayingno: { label: 'Saying No', minLevel: 'pro' },
-    rolebasedhumour: { label: 'Role Based Humour', minLevel: 'pro' },
-    responsivehumour: { label: 'Responsive Humour', minLevel: 'pro' },
+    rolebasedhumour: { label: 'Role Based Humour', minLevel: 'program' },      // Humour, Part 2
   };
 
   // ── PROGRAM_CONFIG (v1.26.81) ─────────────────────────────────────────
@@ -246,6 +246,7 @@ applyInputCounterVisibility();
     'warmth-connection':      { minLevel: 'pro' },
     'opening-a-conversation': { minLevel: 'pro' },
     'persuasion-negotiation': { minLevel: 'pro' },
+    'humour':                 { minLevel: 'pro' },
     'difficult-conversations': { minLevel: 'extended' },
   };
   const _warnedPrograms = {};
