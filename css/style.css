@@ -1105,6 +1105,11 @@ body.pb-enabled .divider::after {
 
 .dash-search-bar {
   flex: 1;
+  /* v1.26.85 — without this the bar cannot shrink below its own content, so
+     the clear × appearing made the whole bar wider and shoved the Cancel
+     button into the edge of the screen. With min-width 0 the × takes its
+     room from the input instead, and nothing outside the bar moves. */
+  min-width: 0;
   display: flex;
   align-items: center;
   background: var(--ds-search-bg);
@@ -2535,7 +2540,12 @@ body.pb-enabled .divider::after {
 
 /* Program detail topbar */
 .program-detail-topbar { display: flex; align-items: center; justify-content: space-between; margin-bottom: 4px; }
-.program-settings-btn { background: none; border: none; color: var(--ds-txt3); font-size: 20px; cursor: pointer; padding: 4px 8px; border-radius: 8px; }
+/* v1.26.85 — the program gear only opens the "add tags" sheet, which is an
+   authoring tool. It follows tag mode, exactly like the other authoring UI:
+   app-system.js puts .tag-mode on <body> when the toggle is on, and a normal
+   user has no way to turn it on, so they never see the gear. */
+.program-settings-btn { display: none; background: none; border: none; color: var(--ds-txt3); font-size: 20px; cursor: pointer; padding: 4px 8px; border-radius: 8px; }
+body.tag-mode .program-settings-btn { display: block; }
 .program-settings-btn:hover { color: var(--ds-txt); background: var(--ds-card); }
 
 /* Editor tag section (inside pack editor header) */
@@ -2577,15 +2587,15 @@ body.pb-enabled .divider::after {
   display: flex; align-items: center; justify-content: center;
   font-size: 22px; flex-shrink: 0;
 }
-/* v1.26.83 — icon and Pro badge share a left column, so a badged card and an
-   unbadged one have their text starting in exactly the same place. */
-.program-card-side {
-  display: flex; flex-direction: column; align-items: center;
-  gap: 8px; flex-shrink: 0; pointer-events: none;
+/* v1.26.85 — the badge moved to the right of the title, which is where every
+   other Pro badge in the app sits. The old left-hand column is gone. */
+.program-card-titlerow {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 8px; margin-bottom: 4px;
 }
-.program-card-badge { justify-content: center; }
+.program-card-badge { flex-shrink: 0; }
 .program-card-body { flex: 1; min-width: 0; }
-.program-card-title { font-size: 16px; font-weight: 700; margin-bottom: 4px; }
+.program-card-title { font-size: 16px; font-weight: 700; }
 .program-card-desc  { font-size: 13px; color: var(--ds-txt2); margin-bottom: 12px; line-height: 1.5; }
 .program-progress-bar-wrap {
   height: 6px; background: var(--ds-border); border-radius: 99px; overflow: hidden; margin-bottom: 6px;
