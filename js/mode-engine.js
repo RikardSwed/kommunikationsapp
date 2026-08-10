@@ -572,6 +572,85 @@ const DS = (function () {
   // all. The engine is exported on the returned object instead — see `tts:`
   // near the bottom.
 
+  // ── Native background session (iOS app only) ────────────────────────
+  // A second native path, used ONLY inside the Capacitor app and ONLY for
+  // handsfree. The TTS engine above speaks one line at a time, driven by the
+  // JS loop; that dies when the screen locks because WKWebView freezes all
+  // JavaScript in the background. This hands the WHOLE session to our own
+  // DeckstackSpeech plugin up front, so AVSpeechSynthesizer plays it through
+  // — pauses included (as postUtteranceDelay) — with no JS timer to freeze.
+  // The browser and PWA never reach this; they keep the Web Speech path.
+  const DSNative = (function () {
+    let plugin = null;
+    let ready = false;
+    let voicesByName = {};   // lowercased voice name → AVSpeech identifier
+    let bound = false;
+    let stepCb = null, doneCb = null, stateCb = null;
+
+    function bridge() {
+      const C = window.Capacitor;
+      if (!C) return null;
+      if (typeof C.isNativePlatform === 'function' && !C.isNativePlatform()) return null;
+      if (plugin) return plugin;
+      if (typeof C.registerPlugin === 'function') {
+        try { plugin = C.registerPlugin('DeckstackSpeech'); } catch (e) { plugin = null; }
+      }
+      if (!plugin && C.Plugins) plugin = C.Plugins.DeckstackSpeech || null;
+      return plugin;
+    }
+
+    // registerPlugin() returns a proxy whether or not the native half exists,
+    // so only trust it once it has actually answered with a voice list.
+    async function probe() {
+      const p = bridge();
+      if (!p || typeof p.getVoices !== 'function') { ready = false; return; }
+      try {
+        const res = await p.getVoices();
+        const list = (res && res.voices) || [];
+        voicesByName = {};
+        list.forEach(v => { if (v && v.name) voicesByName[String(v.name).toLowerCase()] = v.id; });
+        ready = list.length > 0;
+      } catch (e) { ready = false; }
+    }
+
+    function isReady() { return ready; }
+    function voiceIdForName(name) {
+      return name ? (voicesByName[String(name).toLowerCase()] || null) : null;
+    }
+
+    function listen(onStep, onDone) {
+      stepCb = onStep; doneCb = onDone;
+      const p = bridge();
+      if (!p || bound) return;
+      bound = true;
+      try {
+        p.addListener('dsSpeechStep', d => { if (stepCb) stepCb(d); });
+        p.addListener('dsSpeechDone', () => { if (doneCb) doneCb(); });
+        // v1.26.87 — the headset centre button pauses and resumes natively,
+        // because JS is frozen while the screen is locked. This is how the
+        // web side finds out it happened.
+        p.addListener('dsSpeechPlayState', d => { if (stateCb) stateCb(!!(d && d.playing)); });
+      } catch (e) {}
+    }
+
+    async function start(payload, onStep, onDone, onPlayState) {
+      const p = bridge();
+      if (!p) return;
+      stateCb = onPlayState || null;
+      listen(onStep, onDone);
+      try { await p.startSession(payload); } catch (e) {}
+    }
+    async function stop()  { const p = bridge(); if (p) { try { await p.stopSession(); } catch (e) {} } }
+    async function togglePlay() { const p = bridge(); if (p && p.togglePlay) { try { await p.togglePlay(); } catch (e) {} } }
+    async function next()  { const p = bridge(); if (p && p.next)     { try { await p.next(); }     catch (e) {} } }
+    async function prev()  { const p = bridge(); if (p && p.previous) { try { await p.previous(); } catch (e) {} } }
+    async function getState() { const p = bridge(); if (!p) return null; try { return await p.getState(); } catch (e) { return null; } }
+
+    probe();   // resolve readiness at load, well before the user hits play
+
+    return { isReady, voiceIdForName, start, stop, togglePlay, next, prev, getState, probe };
+  })();
+
   function pickVoice(gender) {
     const voices = cachedVoices.length ? cachedVoices : speechSynthesis.getVoices();
     // Only ever consider real speaking voices — without this filter a missing
@@ -743,7 +822,10 @@ const DS = (function () {
 
     function updateButtons() {
       if (!els.playBtn) return;
-      els.playBtn.innerHTML = mode.playing ? HF_PAUSE_SVG : HF_PLAY_SVG;
+      // A natively paused session is still playing as far as the session is
+      // concerned, but the button has to show what pressing it will DO.
+      const showPause = mode.playing && !mode._nativePaused;
+      els.playBtn.innerHTML = showPause ? HF_PAUSE_SVG : HF_PLAY_SVG;
       // PrevStep/NextStep work both during playback and as manual nav —
       // always enabled, always full opacity.
       [els.prevStep, els.nextStep].forEach(b => {
@@ -802,10 +884,187 @@ const DS = (function () {
       closeHfInfo();
     });
 
+    // ── Native session (iOS app) ─────────────────────────────────────────
+    // Resolve the picker's stored value (a community-plugin voice index, or
+    // 'female'/'male' in the browser) to the voice NAME, so DSNative can map
+    // it to a stable AVSpeech identifier. Gender values → null (native default).
+    function currentVoiceName(s) {
+      const val = s.voiceGender;
+      if (!val || val === 'female' || val === 'male') return null;
+      const list = TTS.voices() || [];
+      const v = list.find(x => String(x.index) === String(val));
+      return v ? v.name : null;
+    }
+
+    // Build the whole session as a flat step list — the SAME sequence the JS
+    // loop below would speak — and hand it to native in one call.
+    function startNativeSession() {
+      const s = settings();
+      const maxItems = s.maxItems === 'all' ? Infinity : parseInt(s.maxItems);
+      const startGi = mode.gi, startIi = mode.ii;
+      const skipIntro = startIi > 0 || mode.pausedInGroup === mode.gi;
+      mode.pausedInGroup = null;
+
+      const groupOrder = s.shuffleGroups ? shuffle(mode.groups.map((_, i) => i))
+                                         : mode.groups.map((_, i) => i);
+      const itemOrders = mode.groups.map(g => {
+        const idx = items(g).map((_, i) => i);
+        return s.shuffleItems ? shuffle(idx) : idx;
+      });
+
+      const voiceId = DSNative.voiceIdForName(currentVoiceName(s));
+      const steps = [];
+      const push = (text, side, postMs, gi, ii, groupStart, gTitle) => {
+        if (!text) return;
+        steps.push({ text: text, voiceId: voiceId, rate: s.rate,
+                     postDelayMs: postMs, gi: gi, ii: ii, side: side,
+                     groupStart: groupStart, groupTitle: gTitle });
+      };
+
+      const loop = !!s.loop;
+      // Loop mode repeats the CURRENT strategy only (like the JS loop), so
+      // build just that one group and let native repeat it.
+      const lastGi = loop ? startGi : groupOrder.length - 1;
+
+      for (let gi2 = startGi; gi2 <= lastGi; gi2++) {
+        const realGi = groupOrder[gi2];
+        const g = mode.groups[realGi];
+        const list = items(g);
+        const gTitle = cfg.groupTitle(g);
+        let firstOfGroup = true;
+
+        if (!skipIntro || gi2 > startGi) {
+          push(gTitle, 'title', s.genPause * 1000, realGi, 0, true, gTitle);
+          firstOfGroup = false;
+          const desc = cfg.groupDescription ? cfg.groupDescription(g) : g.description;
+          if (s.explanation && desc) push(desc, 'desc', s.genPause * 1000, realGi, 0, false, gTitle);
+        }
+
+        const limit = Math.min(list.length, maxItems);
+        const from = (gi2 === startGi) ? startIi : 0;
+        const iOrder = itemOrders[realGi];
+
+        for (let ii2 = from; ii2 < limit; ii2++) {
+          const it = list[iOrder[ii2]];
+          const front = cfg.itemFront(it, g);
+          const back  = cfg.itemBack(it, g);
+          const effGF = (it && it.guideFront) || g.guideFront;
+          const effGB = (it && it.guideBack)  || g.guideBack;
+          const gFront = (s.guideText && effGF) ? effGF + ' ' : '';
+          const gBack  = (s.guideText && effGB) ? effGB + ' ' : '';
+
+          push(gFront + front, 'front', s.thinkPause * 1000, realGi, ii2, firstOfGroup, gTitle);
+          firstOfGroup = false;
+          if (s.cardBack && speakBack(it)) {
+            push(gBack + back, 'back', s.genPause * 1000, realGi, ii2, false, gTitle);
+          }
+        }
+      }
+
+      if (!steps.length) return;
+
+      // When looping, repeat from the first card so the strategy title is
+      // heard once, not on every lap.
+      let loopStartIndex = 0;
+      if (loop) {
+        const fi = steps.findIndex(st => st.side === 'front');
+        loopStartIndex = fi < 0 ? 0 : fi;
+      }
+
+      mode.playing = true; mode.abort = false; mode._nativeActive = true;
+      mode._nativePaused = false;
+      hfInfoOpen = false; hideInfo();
+      updateButtons();
+
+      applyNativeStep(steps[0]);   // show the first card at once; events then drive it
+      bindNativeForeground();
+      DSNative.start({ steps: steps, loop: loop, loopStartIndex: loopStartIndex },
+                     onNativeStep, onNativeDone, onNativePlayState);
+    }
+
+    // v1.26.87 — native told us it paused or resumed, which happens when the
+    // headset's centre button is pressed (or the lock-screen control). The
+    // session is still alive; only the play button has to catch up.
+    function onNativePlayState(playing) {
+      if (!mode._nativeActive) return;
+      mode._nativePaused = !playing;
+      updateButtons();
+    }
+
+    // Move the card display to a given step (called live in the foreground and
+    // on foreground-return to catch up with where native reached).
+    function applyNativeStep(step) {
+      if (!step) return;
+      mode.gi = step.gi;
+      mode.ii = step.ii;
+      const g = group();
+      if (!g) return;
+      const gTitle = cfg.groupTitle(g);
+      if (step.side === 'title') {
+        hideInfo();
+        showCard(gTitle, '', false, null);
+      } else if (step.side === 'desc') {
+        showCard(gTitle, '', false, null);
+        const desc = cfg.groupDescription ? cfg.groupDescription(g) : g.description;
+        showInfo(desc || '');
+      } else {
+        hideInfo();
+        const it = items(g)[step.ii];
+        const front = it ? cfg.itemFront(it, g) : '';
+        const back  = it ? cfg.itemBack(it, g)  : '';
+        showCard(front, back, step.side === 'back', it);
+      }
+    }
+
+    function onNativeStep(d) {
+      if (!mode._nativeActive || !d) return;
+      // While backgrounded the web view is frozen and these events buffer,
+      // firing on return; the visibilitychange resync is the authority, so
+      // applying the latest here is just the live foreground update.
+      applyNativeStep(d);
+    }
+
+    function onNativeDone() {
+      mode._nativeActive = false;
+      mode._nativePaused = false;
+      mode.playing = false;
+      mode.pausedInGroup = null;
+      updateButtons();
+    }
+
+    // On returning to the foreground, ask native where it actually is and jump
+    // the card there — the display could not update while JS was frozen.
+    function bindNativeForeground() {
+      if (mode._nativeVisBound) return;
+      mode._nativeVisBound = true;
+      document.addEventListener('visibilitychange', function () {
+        if (document.hidden) return;
+        if (!mode._nativeActive || !mode.playing) return;
+        DSNative.getState().then(function (st) {
+          if (st && typeof st.index === 'number' && st.index >= 0) {
+            applyNativeStep({ gi: st.gi, ii: st.ii, side: st.side });
+          }
+        });
+      });
+    }
+
     // ── Playback loop ──────────────────────────────────────────────────────
     async function play() {
+      // v1.26.87 — paused from a headset or the lock screen: the native
+      // session is still loaded, so the on-screen button resumes it instead of
+      // tearing the session down and rebuilding it from the current card.
+      if (mode._nativeActive && mode._nativePaused) {
+        mode._nativePaused = false;
+        DSNative.togglePlay();
+        updateButtons();
+        return;
+      }
       if (mode.playing) { stop(); return; }
       if (!mode.groups.length) return;
+
+      // iOS app: hand the whole session to native so it survives a screen lock.
+      // Browser and PWA fall through to the Web Speech loop below, unchanged.
+      if (DSNative.isReady()) { startNativeSession(); return; }
 
       // iOS unlock (browser only — the native engine needs no gesture)
       TTS.unlock();
@@ -908,6 +1167,16 @@ const DS = (function () {
       // Resume marker (v1.26.35): remember which strategy we paused in so
       // the next play() skips the intro and continues where we left off.
       mode.pausedInGroup = mode.gi;
+      // Native session (iOS app): only our own plugin is involved. Do NOT also
+      // poke the community TTS engine — it shares the AVAudioSession and can
+      // interfere with a clean stop/restart. There is no JS loop to unwind.
+      if (mode._nativeActive) {
+        mode._nativeActive = false;
+        mode._nativePaused = false;
+        DSNative.stop();
+        updateButtons();
+        return;
+      }
       // Release a pending pause-delay BEFORE clearing timeouts — otherwise
       // the play coroutine stays suspended on that promise forever and its
       // cleanup tail never runs.
@@ -925,6 +1194,8 @@ const DS = (function () {
         manNextItem();
         return;
       }
+      // Native session owns playback — let it advance one reading step.
+      if (mode._nativeActive) { DSNative.next(); return; }
       mode.skipStep = true;
       TTS.stop();
       clearTimeouts();
@@ -940,6 +1211,8 @@ const DS = (function () {
         renderManual();
         return;
       }
+      // Native session owns playback — let it restart the strategy.
+      if (mode._nativeActive) { DSNative.prev(); return; }
       if (mode.ii === 0 && mode.gi > 0) mode.gi--;
       mode.ii = 0;
       mode.abort = true;
