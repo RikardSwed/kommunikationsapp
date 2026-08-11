@@ -5,7 +5,7 @@
 // (DS.createCardMode / DS.createHandsfreeMode) and are declared in
 // app-modes.js and app-handsfree.js.
 
-const VERSION = 'v1.26.89';
+const VERSION = 'v1.26.91';
 
 // Keep every version label in the UI in sync with VERSION (v1.26.44).
 // The hardcoded strings in index.html are only fallbacks — this runs at
@@ -687,6 +687,13 @@ function fbSet(key, val) {
   localStorage.setItem(key, val);
 }
 
+// v1.26.91 — undo a rating. Tapping the same circle again clears it, because
+// these are easy to hit by accident while flipping or swiping a card, and
+// there was no way back once one was set.
+function fbClear(key) {
+  localStorage.removeItem(key);
+}
+
 // ── FEEDBACK BAR RENDER ───────────────────────────────────────────────────────
 
 function fbRender(barId, key) {
@@ -714,7 +721,10 @@ function fbInitBar(barId) {
       e.stopPropagation();
       const key = bar.dataset.fbKey;
       if (!key) return;
-      fbSet(key, parseInt(btn.dataset.val));
+      const v = parseInt(btn.dataset.val);
+      // Same circle again = undo. Any other circle = change the rating.
+      if (fbGet(key) === v) fbClear(key);
+      else fbSet(key, v);
       fbRender(barId, key);
     };
     btn.addEventListener('click', handler);
