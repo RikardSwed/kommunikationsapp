@@ -7,10 +7,10 @@
   <meta name="mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="default" />
   <meta name="apple-mobile-web-app-title" content="Deckstack" />
-  <link rel="manifest" href="manifest.json?v=12688" />
+  <link rel="manifest" href="manifest.json?v=12689" />
   <title>Deckstack</title>
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="stylesheet" href="css/style.css?v=12688" />
+  <link rel="stylesheet" href="css/style.css?v=12689" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
 </head>
 <body>
@@ -2267,6 +2267,21 @@
       <button id="aboutBtn" style="font-size:13px; color:#555; background:#f0f0f0; border:1px solid #ddd; border-radius:8px; padding:6px 12px; cursor:pointer;">View</button>
     </div>
 
+    <!-- v1.26.89 — beta access code. Grants Pro for a fixed number of days and
+         then expires by itself, so a tester who keeps the link does not keep
+         Pro forever. See BETA_CODES in app-system.js. -->
+    <div class="settings-row">
+      <label>Have an access code?</label>
+      <div style="display:flex; gap:6px;">
+        <input id="betaCodeInput" type="text" autocapitalize="characters" autocomplete="off" spellcheck="false"
+               placeholder="CODE" style="width:110px; font-size:13px; padding:6px 8px; border:1px solid #ddd; border-radius:8px; text-transform:uppercase;" />
+        <button id="betaCodeBtn" style="font-size:13px; color:#2c7a4b; background:#edf7f1; border:1px solid #b2dfcc; border-radius:8px; padding:6px 12px; cursor:pointer;">Redeem</button>
+      </div>
+    </div>
+    <div class="settings-row" id="betaCodeStatusRow" style="display:none;">
+      <label style="font-size:13px; color:#888;" id="betaCodeStatus"></label>
+    </div>
+
     <div id="devSection" style="display:none;">
     <div class="settings-row" style="margin-top:10px;">
       <label style="font-weight:700;">Developer</label>
@@ -2527,19 +2542,19 @@
   </button>
 </div>
 
-<script src="js/data.js?v=12688"></script>
-<script src="js/tagsData.js?v=12688"></script>
-<script src="js/programsData.js?v=12688"></script>
-<script src="js/challengesData.js?v=12688"></script>
-<script src="js/mindsetData.js?v=12688"></script>
-<script src="js/multiStepData.js?v=12688"></script>
-<script src="js/memorizeData.js?v=12688"></script>
-<script src="js/mode-engine.js?v=12688"></script>
-<script src="js/app-core.js?v=12688"></script>
-<script src="js/app-modes.js?v=12688"></script>
-<script src="js/app-handsfree.js?v=12688"></script>
-<script src="js/app-system.js?v=12688"></script>
-<script src="js/app-ui.js?v=12688"></script>
+<script src="js/data.js?v=12689"></script>
+<script src="js/tagsData.js?v=12689"></script>
+<script src="js/programsData.js?v=12689"></script>
+<script src="js/challengesData.js?v=12689"></script>
+<script src="js/mindsetData.js?v=12689"></script>
+<script src="js/multiStepData.js?v=12689"></script>
+<script src="js/memorizeData.js?v=12689"></script>
+<script src="js/mode-engine.js?v=12689"></script>
+<script src="js/app-core.js?v=12689"></script>
+<script src="js/app-modes.js?v=12689"></script>
+<script src="js/app-handsfree.js?v=12689"></script>
+<script src="js/app-system.js?v=12689"></script>
+<script src="js/app-ui.js?v=12689"></script>
 
 
 <!-- CHECKPOINT SCREEN -->
