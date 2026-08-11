@@ -2298,6 +2298,13 @@
       <label>Tag mode</label>
       <label class="toggle"><input type="checkbox" id="tagModeToggle" /><span class="toggle-slider"></span></label>
     </div>
+    <!-- v1.26.90 — clears a redeemed beta code. Without this the only way back
+         to freemium on a device that has redeemed one is to wait out the 60
+         days or clear site data by hand. -->
+    <div class="settings-row">
+      <label style="font-size:13px; color:#888;">Clear beta access code</label>
+      <button id="clearGrantBtn" style="font-size:13px; color:#555; background:#f0f0f0; border:1px solid #ddd; border-radius:8px; padding:6px 12px; cursor:pointer;">Clear</button>
+    </div>
     <div class="settings-row" id="tagExportRow" style="display:none;">
       <label style="font-size:13px; color:#888;">Export tag changes</label>
       <button id="tagExportBtn" style="font-size:13px; color:#555; background:#f0f0f0; border:1px solid #ddd; border-radius:8px; padding:6px 12px; cursor:pointer;">Export</button>
