@@ -326,6 +326,12 @@ applyInputCounterVisibility();
   const LEVEL_ORDER = ['freemium', 'pro', 'complete'];
 
   function getLevel() {
+    // v1.26.89 — a beta code can grant Pro for a fixed number of days. The
+    // grant lives in localStorage on the tester's own device, so changing the
+    // app does NOT take it back; it has to expire by itself, and this is where
+    // that happens. Checked before anything else so an expired grant cannot
+    // leak through any of the paths below.
+    expireBetaGrant();
     // v1.26.75 — DEFAULT IS NOW freemium, not complete. A fresh install used
     // to see the entire library, which would have made the beta test say
     // nothing at all about the paid model. This is the primary of five sites;
@@ -347,6 +353,61 @@ applyInputCounterVisibility();
 
   function setLevel(level) {
     localStorage.setItem(LEVEL_KEY, level);
+  }
+
+  // ── Beta access codes (v1.26.89) ─────────────────────────────────────────
+  // A tester gets Pro without being able to reach 'complete'. The grant is a
+  // timestamp, not a flag, because the app is served over the web: the tester
+  // keeps whatever is in their localStorage no matter what Rikard changes on
+  // GitHub, so the only way to take Pro back is to have written down when it
+  // ends. Add or retire a code by editing this table.
+  const BETA_CODES = {
+    BETA2026: { level: 'pro', days: 60 },
+  };
+  const GRANT_KEY = 'ds_beta_grant';   // { level, until, code }
+
+  function readGrant() {
+    try { return JSON.parse(localStorage.getItem(GRANT_KEY)) || null; }
+    catch { return null; }
+  }
+
+  // Drops the level back to freemium the moment the grant runs out.
+  function expireBetaGrant() {
+    const g = readGrant();
+    if (!g || !g.until) return;
+    if (Date.now() < g.until) return;
+    localStorage.removeItem(GRANT_KEY);
+    // Only take back what the code gave. If the level was changed since (a
+    // real purchase, or the developer radio), leave it alone.
+    if (localStorage.getItem(LEVEL_KEY) === g.level) {
+      localStorage.setItem(LEVEL_KEY, 'freemium');
+      localStorage.setItem('dev_level_forced', 'true');
+    }
+  }
+
+  function grantStatus() {
+    const g = readGrant();
+    if (!g || !g.until) return null;
+    const days = Math.max(0, Math.ceil((g.until - Date.now()) / 86400000));
+    return { level: g.level, days: days, code: g.code };
+  }
+
+  // Returns { ok, message }. Never throws — it is wired to a text field.
+  function redeemCode(raw) {
+    const code = String(raw || '').trim().toUpperCase();
+    if (!code) return { ok: false, message: 'Enter a code first.' };
+    const def = BETA_CODES[code];
+    if (!def) return { ok: false, message: 'That code is not valid.' };
+    const until = Date.now() + def.days * 86400000;
+    localStorage.setItem(GRANT_KEY, JSON.stringify({ level: def.level, until: until, code: code }));
+    localStorage.setItem(LEVEL_KEY, def.level);
+    // Beats the lifetime-pro auto-promotion logic either way, and means the
+    // level survives until expireBetaGrant() takes it back.
+    localStorage.setItem('dev_level_forced', 'true');
+    applyAccessLevel();
+    return { ok: true, message: def.level === 'pro'
+      ? 'Pro unlocked for ' + def.days + ' days.'
+      : 'Unlocked for ' + def.days + ' days.' };
   }
 
   function levelIndex(level) {
@@ -635,7 +696,36 @@ applyInputCounterVisibility();
   window.navToSettings = function() {
     _origNavToSettings();
     loadDevLevelUI();
+    renderGrantStatus();
   };
+
+  // ── Beta code field (v1.26.89) ───────────────────────────────────────────
+  function renderGrantStatus(msg) {
+    const row = document.getElementById('betaCodeStatusRow');
+    const el  = document.getElementById('betaCodeStatus');
+    if (!row || !el) return;
+    const g = grantStatus();
+    const text = msg || (g
+      ? (g.level === 'pro' ? 'Pro access' : g.level) + ' \u2014 ' +
+        (g.days === 0 ? 'expires today' : g.days + ' days left')
+      : '');
+    el.textContent = text;
+    row.style.display = text ? '' : 'none';
+  }
+
+  (function bindBetaCode() {
+    const btn = document.getElementById('betaCodeBtn');
+    const inp = document.getElementById('betaCodeInput');
+    if (!btn || !inp) return;
+    const submit = () => {
+      const res = redeemCode(inp.value);
+      if (res.ok) { inp.value = ''; loadDevLevelUI(); }
+      renderGrantStatus(res.message);
+      if (res.ok) setTimeout(() => renderGrantStatus(), 2500);
+    };
+    btn.addEventListener('click', submit);
+    inp.addEventListener('keydown', e => { if (e.key === 'Enter') submit(); });
+  })();
 
   // ── Nav upgrade/extended button ──────────────────────────────────────────────
   function updateNavUpgradeBtn() {
@@ -658,7 +748,7 @@ applyInputCounterVisibility();
   }
 
   // Expose for other modules
-  window.accessLevel = { getLevel, canAccess, badgeLabel, applyModeLocks, updateNavUpgradeBtn, packVisibility, programVisibility, sectionVisibility, applyAccessLevel };
+  window.accessLevel = { getLevel, canAccess, badgeLabel, applyModeLocks, updateNavUpgradeBtn, packVisibility, programVisibility, sectionVisibility, applyAccessLevel, redeemCode, grantStatus };
   window._applyAccessLevel = applyAccessLevel;
 
   // Init
