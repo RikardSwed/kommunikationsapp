@@ -166,14 +166,20 @@ applyInputCounterVisibility();
     // everywhere at once. That arrival is the reward the programs are built
     // around. The Part each one sits on is named so the link is findable
     // from this end too.
+    // v1.26.88 — Exploring a Topic, Talking About Yourself and Compliments were
+    // handed BACK to pro. They were the three cases where a Part 1 had no open
+    // pack at all, and the standalone packs list had fallen to 22. Their Parts
+    // keep working: the programme route overrides the tier, so a freemium user
+    // who passes the Conversation Foundations Part 2 checkpoint still opens
+    // Exploring a Topic even though it is a Pro pack. No exception needed.
+    exploringatopic: { label: 'Exploring a Topic', minLevel: 'pro' },
+    talkingaboutyourself: { label: 'Talking About Yourself', minLevel: 'pro' },
+    complimenting: { label: 'Compliments', minLevel: 'pro' },
     changingtopics: { label: 'Changing Topics', minLevel: 'program' },          // Conversation Foundations, Part 2
-    exploringatopic: { label: 'Exploring a Topic', minLevel: 'program' },       // Conversation Foundations, Part 2
     validation: { label: 'Validation', minLevel: 'program' },                   // Conversation Foundations, Part 3
     deepquestions: { label: 'Deep Questions', minLevel: 'program' },            // Conversation Foundations, Part 4
-    talkingaboutyourself: { label: 'Talking About Yourself', minLevel: 'program' },  // Say It Well, Part 1
     givingexamples: { label: 'Giving Examples', minLevel: 'program' },          // Say It Well, Part 2
     storiesinconversation: { label: 'Stories in Conversation', minLevel: 'program' },// Say It Well, Part 3
-    complimenting: { label: 'Compliments', minLevel: 'program' },               // Warmth & Connection, Part 1
     supportingconversations: { label: 'Supporting Conversations', minLevel: 'program' }, // Warmth & Connection, Part 2
     emotionlabellingandregulation: { label: 'Emotion Labelling and Regulation', minLevel: 'program' }, // Warmth & Connection, Part 3
     // Difficult Conversations is an EXTENDED program, so these three are
