@@ -392,6 +392,20 @@ applyInputCounterVisibility();
     return { level: g.level, days: days, code: g.code };
   }
 
+  // v1.26.90 — hands a device back to freemium immediately. Without it the
+  // only way off a redeemed code is to wait out the 60 days or clear site
+  // data by hand, which also wipes progress and favourites.
+  function clearGrant() {
+    const had = readGrant();
+    localStorage.removeItem(GRANT_KEY);
+    if (had) {
+      localStorage.setItem(LEVEL_KEY, 'freemium');
+      localStorage.setItem('dev_level_forced', 'true');
+      applyAccessLevel();
+    }
+    return !!had;
+  }
+
   // Returns { ok, message }. Never throws — it is wired to a text field.
   function redeemCode(raw) {
     const code = String(raw || '').trim().toUpperCase();
@@ -727,6 +741,17 @@ applyInputCounterVisibility();
     inp.addEventListener('keydown', e => { if (e.key === 'Enter') submit(); });
   })();
 
+  (function bindClearGrant() {
+    const btn = document.getElementById('clearGrantBtn');
+    if (!btn) return;
+    btn.addEventListener('click', () => {
+      const had = clearGrant();
+      loadDevLevelUI();
+      renderGrantStatus(had ? 'Beta code cleared \u2014 back to freemium.' : 'No beta code to clear.');
+      setTimeout(() => renderGrantStatus(), 2500);
+    });
+  })();
+
   // ── Nav upgrade/extended button ──────────────────────────────────────────────
   function updateNavUpgradeBtn() {
     const btn   = document.getElementById('navUpgradeBtn');
@@ -748,7 +773,7 @@ applyInputCounterVisibility();
   }
 
   // Expose for other modules
-  window.accessLevel = { getLevel, canAccess, badgeLabel, applyModeLocks, updateNavUpgradeBtn, packVisibility, programVisibility, sectionVisibility, applyAccessLevel, redeemCode, grantStatus };
+  window.accessLevel = { getLevel, canAccess, badgeLabel, applyModeLocks, updateNavUpgradeBtn, packVisibility, programVisibility, sectionVisibility, applyAccessLevel, redeemCode, grantStatus, clearGrant };
   window._applyAccessLevel = applyAccessLevel;
 
   // Init
