@@ -2517,4 +2517,385 @@ const mindsetCollections = {
       ]
     },
   ],
+  masculine1: [
+    {
+      name: "She is your Oracle",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "Viewing her criticism not as an attack, but as information about where you have stopped being present or true.\nWhen you accept her as your Oracle, you stop defending and start looking for the kernel of truth in what she says.",
+      inputs: [
+        { q: "She complains about something trivial.", a: "What could be true here? Is she reflecting a blind spot in me right now?", bundle: 'pro' },
+        { q: "I feel unfairly accused.", a: "Instead of correcting the facts, ask: Where have I stopped leading or loving her in this situation?", bundle: 'pro' },
+        { q: "Her emotions seem completely illogical.", a: "Her emotions aren't a problem to be solved logically; they're a signal I need to listen to.", bundle: 'pro' },
+        { q: "I just want her to be \"normal.\"", a: "Her emotional storms are the flip side of the fire and passion I love about her.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "What I Want Matters",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The posture that your own truth and needs are fundamental to your ability to lead.\nBeing \"nice\" by not having an opinion isn't leadership; it's abdicating the frame.",
+      inputs: [
+        { q: "I'm afraid my opinion will start a fight.", a: "Speaking my truth is the most loving thing I can do for the relationship long-term.", bundle: 'pro' },
+        { q: "I think I'm being \"easy-going\" when I say \"you choose.\"", a: "I'm not easy-going; I'm being lazy. Choosing is a gift of structure.", bundle: 'pro' },
+        { q: "I feel selfish when I set a boundary.", a: "A little healthy selfishness makes me a more stable man she can actually trust.", bundle: 'pro' },
+      ]
+    },
+  ],
+  masculine2: [
+    {
+      name: "The Oracle Reframe",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "Choosing to see her messy emotions as intuitive data rather than a personal attack.\nShe is reflecting back where you have stopped being present, heartful, or a leader.",
+      inputs: [
+        { q: "She is being \"irrational\" and emotional.", a: "\"She is my Oracle. What is the kernel of truth she is showing me about my own lack of leadership?\"", bundle: 'pro' },
+        { q: "I want to tell her she shouldn't feel that way.", a: "\"Emotions cannot be defended. They just are. Can I just take her reality in without resisting?\"", bundle: 'pro' },
+        { q: "Her complaint feels 90% \"crazy\".", a: "\"90% of the crazy comes from her not feeling loved or led. How can I step up right now?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Healthy Selfishness",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The commitment to satisfy your own needs and values first so you can lead others.\nWhat you want and need matters; expressing it is an act of love for the relationship.",
+      inputs: [
+        { q: "I feel guilty for wanting time at the gym.", a: "\"What I want matters. Being grounded and fit makes me a better leader for her.\"", bundle: 'pro' },
+        { q: "I'm afraid my preference will disappoint her.", a: "\"Speaking my truth is the most loving thing I can do. I'll trust my desire and live with the consequences.\"", bundle: 'pro' },
+        { q: "I've become a \"pleaser\" to avoid conflict.", a: "\"If I want a 'Yes' she can trust, I need to have a strong 'No'. Conflict is the price of integrity.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  masculine3: [
+    {
+      name: "Fear is just Resistance",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The reframe that fear is simply your subconscious mind resisting a possibility.\nOvercoming fear means challenging the belief that an outcome is \"unacceptable\" or \"unsurvivable\".",
+      inputs: [
+        { q: "I'm afraid she'll leave me if I set this boundary.", a: "\"She might leave. It would be painful, but I will survive and be fine.\"", bundle: 'pro' },
+        { q: "I'm scared to initiate sex because she might say no.", a: "\"Rejection doesn't define me. I can want what I want and be okay with her 'No'.\"", bundle: 'pro' },
+        { q: "I'm afraid of the intensity of her anger.", a: "\"Her anger is just energy. I can withstand this fire and die with dignity in this visualization.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Oracle of Heart",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The commitment to see her messy emotional expression as intuitive insight into your own blind spots.\nWhen you stop defending and start listening to the \"Oracle,\" your defensiveness organically vanishes.",
+      inputs: [
+        { q: "She's being \"crazy\" and illogical again.", a: "\"What is the kernel of truth here? Where have I stopped being present or leading her?\"", bundle: 'pro' },
+        { q: "I feel the urge to \"Fix the Facts.\"", a: "\"Feelings first, facts later. Logic is for work; heart is for her.\"", bundle: 'pro' },
+        { q: "She is complaining about a \"small thing\" I forgot.", a: "\"To her, this is about care and protection, not logistics. I'll hear the pain, not the blame.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  masculine4: [
+    {
+      name: "The Goal is Leadership, not Agreement",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "Realizing that your job is to lead the couple to a better place, even if she doesn't agree with your methods in the moment.\nAgreement is a \"sign\" you seek; leadership is a \"gift\" you give.",
+      inputs: [
+        { q: "I feel like a failure because she's still mad.", a: "\"I'm not failing. I'm passing the test by staying grounded in the fire.\".", bundle: 'pro' },
+        { q: "I think I need her permission to have an opinion.", a: "\"I don't need permission to exist as who I am. My sureness is its own authority.\".", bundle: 'pro' },
+        { q: "I'm afraid that setting a boundary makes me a \"jerk.\"", a: "\"Boundaries are an act of love for the relationship. I'm protecting our culture.\".", bundle: 'pro' },
+      ]
+    },
+  ],
+  masculine5: [
+    {
+      name: "Stability is a Gift",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "Reframing the Provider role not as a burdensome duty, but as a proactive gift of love that allows her to blossom.\nDelivering stability makes you uniquely attractive and trusted.",
+      inputs: [
+        { q: "I feel like I'm \"doing all the work\" logistically.", a: "\"Providing structure is my gift. When I lead well, she can relax into her radiance.\"", bundle: 'pro' },
+        { q: "I think she's a \"capable woman\" so she doesn't need my help.", a: "\"She *can* do it, but she doesn't want to *have* to do it. My lead relieves her burden.\"", bundle: 'pro' },
+        { q: "I'm afraid she'll think I'm being \"domineering\" if I make a plan.", a: "\"Leadership is an invitation, not a command. She craves my direction, not my dominance.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "My Attention is Love",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The realization that \"Tracking her priorities\" is not a chore, but a core Masculine skill that builds deep safety.\nA woman feels loved when she feels she is in your \"field of attention\".",
+      inputs: [
+        { q: "I think the \"little things\" (like the milk) don't matter.", a: "\"To her, it's not about the milk—it's about whether I'm tracking her and our life together.\"", bundle: 'pro' },
+        { q: "I'm too busy at work to think about her challenges.", a: "\"If I'm not tracking what's alive for her, she feels forgotten. My attention is a proxy for my love.\"", bundle: 'pro' },
+        { q: "I'll just wait for her to ask for help.", a: "\"Waiting to be told what to do is abdicating. Proactive tracking is Masculine leadership.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  masculine6: [
+    {
+      name: "Body Always Exists in the Now",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "Realizing that thoughts are mostly about the past or future, while the body is the only part of you that is actually \"here\".\nWaking up your body literally crowds out the thoughts and stories of the mind.",
+      inputs: [
+        { q: "I'm lost in thoughts about what she said yesterday.", a: "\"My thoughts are in the past. My body is in the 'now'. I'll focus on my breath.\".", bundle: 'pro' },
+        { q: "I'm worried about what will happen if we keep fighting.", a: "\"Worry is just a future story. I'll feel the ground under my feet. Reality is safe.\".", bundle: 'pro' },
+        { q: "I feel \"locked up\" in my head during a conflict.", a: "\"I'll shift my attention to the clenching in my jaw. Somatic sensation is truth; stories are illusions.\".", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Nervous System is a Muscle",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "Understanding that your ability to handle intensity is a trainable skill, not a fixed trait.\nYou have to \"suffer a little\" in practice to grow your capacity for the fire of a relationship.",
+      inputs: [
+        { q: "I feel like I'm \"just a nervous person\" and can't change.", a: "\"My nervous system is plastic. I can train it to handle this fire, one breath at a time.\".", bundle: 'pro' },
+        { q: "I want to quit my meditation or exercise because it's too hard.", a: "\"This resistance is exactly where the growth happens. I'm building my lead.\".", bundle: 'pro' },
+        { q: "I'm discouraged that I got reactive again.", a: "\"Training takes months, not days. I'll do a do-over and get back to practice.\".", bundle: 'pro' },
+      ]
+    },
+  ],
+  masculinesv: [
+    {
+      name: "Hon är ditt Orakel",
+      guideFront: "En tanke som hindrar dig.",
+      guideBack: "Ett sätt att tänka istället.",
+      description: "Att se hennes kritik inte som ett angrepp, utan som information om var du har slutat vara närvarande eller sann.\nNär du accepterar henne som ditt orakel, slutar du försvara dig och börjar istället leta efter kärnan av sanning i det hon säger.",
+      inputs: [
+        { q: "Hon klagar på något småaktigt.", a: "Vad kan vara sant i det här? Speglar hon en blind fläck hos mig just nu?.", bundle: 'pro' },
+        { q: "Jag känner mig orättvist anklagad.", a: "Istället för att rätta faktan, fråga mig: Var har jag slutat leda eller älska henne i den här situationen?.", bundle: 'pro' },
+        { q: "Hennes känslor verkar helt ologiska.", a: "Hennes känslor är inte ett problem som ska lösas logiskt, utan en signal jag behöver lyssna på..", bundle: 'pro' },
+        { q: "Jag vill bara att hon ska vara \"normal\".", a: "Hennes känslomässiga stormar är baksidan av den glöd och passion jag älskar hos henne..", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Det jag vill betyder något",
+      guideFront: "En tanke som hindrar dig.",
+      guideBack: "Ett sätt att tänka istället.",
+      description: "Hållningen att din egen sanning och dina behov är fundamentala för din förmåga att leda.\nAtt vara \"snäll\" genom att inte ha en åsikt är inte ledarskap; det är att abdikera.",
+      inputs: [
+        { q: "Jag är rädd att min åsikt ska starta ett bråk.", a: "Att tala min sanning är det mest kärleksfulla jag kan göra för relationen på lång sikt..", bundle: 'pro' },
+        { q: "Jag tänker att jag är \"easy-going\" när jag säger \"du får välja\".", a: "Jag är inte lättsam, jag är lat. Att välja är en gåva av struktur..", bundle: 'pro' },
+        { q: "Jag känner mig självisk när jag sätter en gräns.", a: "Lite hälsosam själviskhet gör mig till en stabilare man som hon faktiskt kan lita på..", bundle: 'pro' },
+      ]
+    },
+  ],
+  parenting1: [
+    {
+      name: "Parent with the End in Mind",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "Shifting focus from \"How do I get them to obey now?\" to \"Who do I want them to be as an adult?\".\nWhen you focus on the long-term, today's struggles become learning opportunities rather than personal attacks.",
+      inputs: [
+        { q: "I feel like a failure because they are shouting at me.", a: "\"This isn't a failure; it's a 'struggle' where they are learning to handle frustration.\"", bundle: 'pro' },
+        { q: "I just want them to stop crying so I can have some peace.", a: "\"My goal isn't silence; it's helping them learn that their feelings are seen and heard.\"", bundle: 'pro' },
+        { q: "They are being \"difficult\" again.", a: "\"They aren't being difficult; they are *having* a difficult time. I am their guide.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  parenting2: [
+    {
+      name: "Expectations vs. Reactivity",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The \"Mamalakis balance\": holding very high expectations for behavior while maintaining very low emotional reactivity when they fail to meet them.",
+      inputs: [
+        { q: "I feel like they are disrespecting my authority when they don't obey.", a: "\"Their 'No' is just a struggle they are having. My job is to be the calm guide through that struggle.\"", bundle: 'pro' },
+        { q: "I'm tempted to shout to show them I'm serious.", a: "\"Shouting is a reaction, not a response. Calmness is the clearest signal of true authority.\"", bundle: 'pro' },
+        { q: "If I don't give a consequence immediately, they won't learn.", a: "\"The struggle of doing the right thing *is* the learning. A consequence is only one tool among many.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  parenting3: [
+    {
+      name: "Growth through Friction",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "Embracing the \"struggle\" as a sign that learning is happening, rather than a sign that something is wrong.",
+      inputs: [
+        { q: "I hate seeing my child so frustrated; it makes me feel like a bad parent.", a: "\"Their frustration is the sound of them growing. My job is to be the guide, not the rescuer.\"", bundle: 'pro' },
+        { q: "It would be so much faster if I just did it for them.", a: "\"Doing it for them saves time today, but it steals their competence tomorrow. I am parenting for the 'End in Mind'.\"", bundle: 'pro' },
+        { q: "They are failing at this task and it’s embarrassing.", a: "\"A safe failure now is a massive win for their future character. I'll stay close while they fail.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  parenting4: [
+    {
+      name: "Authority is Calm",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "Realizing that true authority doesn't need to shout to be heard. Calmness is the clearest signal that you are in control of yourself and the situation.",
+      inputs: [
+        { q: "If I don't get angry, they won't think I'm serious.", a: "\"My anger escalates the fight; my calmness holds the line. Calmness is the sound of authority.\"", bundle: 'pro' },
+        { q: "I feel like I'm \"losing\" if I don't win the argument.", a: "\"Parenting isn't a game of win/lose; it's a process of lead/follow. I lead best when I respond rather than react.\"", bundle: 'pro' },
+        { q: "They are being so disrespectful!", a: "\"Their disrespect is a symptom of their struggle. I don't have to defend my dignity; I have to guide their heart.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  parenting5: [
+    {
+      name: "Repair is the Learning",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "Realizing that the goal of parenting isn't to never have conflicts, but to use conflicts as the classroom for learning how to return to love.",
+      inputs: [
+        { q: "I feel like a failure when we have a big fight.", a: "\"A fight is just a 'struggle' in progress. The real win is how we repair it afterward.\"", bundle: 'pro' },
+        { q: "If I apologize, they'll think I'm weak and lose respect for me.", a: "\"Owning my mistakes is the ultimate sign of strength and integrity. I am modeling the man/woman I want them to be.\"", bundle: 'pro' },
+        { q: "They need to feel the \"weight\" of their guilt to learn.", a: "\"Shame shuts down the heart; repentance opens it. I want to teach the joy of the return, not the burden of the debt.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  praxframe1: [
+    {
+      name: "You Belong to You",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The philosophy of Rational Egoism (Rule Zero). You exist for yourself, and anyone who wants something from you must offer value in return.",
+      inputs: [
+        { q: "I feel like a \"jerk\" for putting my gym time first.", a: "\"I am the only person who wipes my own ass every day; I must treat that man well.\"", bundle: 'pro' },
+        { q: "I'm afraid she'll leave if I don't \"keep the peace.\"", a: "\"If her staying requires me to lose my frame, then she doesn't deserve the value I bring.\"", bundle: 'pro' },
+        { q: "I think I need to be \"perfect\" so she won't criticize me.", a: "\"Perfection is a 'Nice Guy' trap. I have the right to be illogical and to make mistakes.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  praxframe2: [
+    {
+      name: "Authentic Kayfabe",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "Understanding that relationships are a \"Seduction Story\" where you are the protagonist; you play a character, but the character is based on your earned value.\nAuthentic men co-write the narrative with women rather than making them \"set pieces.\"",
+      inputs: [
+        { q: "I feel like a \"fraud\" for using these techniques.", a: "\"Acting isn't a fantasy; it's a job. Being a good actor builds my real confidence.\"", bundle: 'pro' },
+        { q: "I want her to love me for \"who I really am\" (Dick Whitman).", a: "\"She wants James Bond or Don Draper. I'll provide the frame she craves.\"", bundle: 'pro' },
+        { q: "I'm afraid she'll see through my \"Frame.\"", a: "\"The stronger the frame, the less people test it. It's not a suit; it's who I am.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Morality is Results",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "Shedding external shaming or religious dogmas that produce misery and adopting a morality based on your chosen outcomes.\nAs long as there is not a law against it, and it gets you what you want, it is moral for you.",
+      inputs: [
+        { q: "I feel \"guilty\" for being Machiavellian in my career.", a: "\"Everyone lies and manipulates. I'm choosing to play to win.\"", bundle: 'pro' },
+        { q: "My priest/mom/culture says I should be \"Self-Sacrificing.\"", a: "\"Horses that no longer plow are sent to the glue factory. I'll live for myself.\"", bundle: 'pro' },
+        { q: "I'm worried about being \"Fair\" in an argument.", a: "\"Women don't argue for truth; they argue for status. I'll maintain my status.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  praxframe3: [
+    {
+      name: "The Assertive Rights",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "Internalizing the fact that you are your own judge and don't require her permission to exist or make decisions.",
+      inputs: [
+        { q: "I feel like I have to explain \"why\" I made this choice.", a: "\"I have the right to offer no reasons or excuses for my behavior.\".", bundle: 'pro' },
+        { q: "I'm afraid to make a choice because I might be \"wrong.\"", a: "\"I have the right to make mistakes—and be responsible for them.\".", bundle: 'pro' },
+        { q: "She is pressuring me to solve her emotional drama.", a: "\"I have the right to judge if I am responsible for finding solutions to other people's problems.\".", bundle: 'pro' },
+      ]
+    },
+  ],
+  praxframe4: [
+    {
+      name: "You Are Not a Plow Horse",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "Refusing the identity of the \"Dutiful Plow Horse\" who sacrifices his life and frame for a \"warm stable\" that never arrives.",
+      inputs: [
+        { q: "I'll just do more chores and maybe she'll want me again.", a: "\"Fulfilling her checklist won't build attraction. Only frame and value do that.\"", bundle: 'pro' },
+        { q: "If I'm the best husband ever, she'll never leave.", a: "\"Horses that no longer plow are sent to the glue factory. I'll live for myself.\"", bundle: 'pro' },
+        { q: "I should put her happiness before my own.", a: "\"You were not put on this earth to light yourself on fire to keep others warm.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Morality of Results",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "Realizing that if the \"morals\" you were taught (Altruism, Self-Sacrifice) led to a life of quiet desperation, they aren't useful morals for you.",
+      inputs: [
+        { q: "I feel like a \"jerk\" for setting this boundary.", a: "\"Is it good for me? Is it bad for me? My results dictate my morality.\"", bundle: 'pro' },
+        { q: "I shouldn't lie or hide things from my wife.", a: "\"Lying implies I require her judgment. I don't. Some things are simply none of her business.\"", bundle: 'pro' },
+        { q: "I need her to understand \"why\" I'm doing this.", a: "\"Being understood is irrelevant. My goal is my vision, not her absolution.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  praxframe5: [
+    {
+      name: "The Visionary Captain",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "Internalizing the fact that leadership is a choice you make, not a grant you receive. You are the protagonist; she is the co-writer, not a set piece.",
+      inputs: [
+        { q: "I'm waiting for her to \"let\" me lead the family.", a: "\"Leadership isn't a grant; it's a choice. I lead myself first and those who want to follow, follow.\"", bundle: 'pro' },
+        { q: "I feel like a \"fraud\" for acting like I have a big vision.", a: "\"Acting is a job. Being a good actor builds my real confidence. I am Jon Hamm, not Dick Whitman.\"", bundle: 'pro' },
+        { q: "I'm afraid that being \"selfish\" makes me a bad husband.", a: "\"Rational egoism is the bedrock of a healthy family. I must treat the man in the mirror well if I expect anyone else to.\"", bundle: 'pro' },
+        { q: "I feel the need to \"keep the peace\" by submitting.", a: "\"Submission to avoid conflict only breeds contempt. I am the Oak; the wind cannot be anything but the wind.\"", bundle: 'pro' },
+        { q: "I'm worried about what others will think of my new vision.", a: "\"Anything outside my frame is amusing, intriguing, or funny. I am my own judge.\"", bundle: 'pro' },
+        { q: "I'm focusing too much on her reaction to my changes.", a: "\"Success is the goal; her investment is the lagging indicator. I stay on mission regardless.\"", bundle: 'pro' },
+        { q: "I feel like I'm \"losing\" when we have a conflict.", a: "\"There is no winning or losing, only the consequences of my actions. I own the consequences.\"", bundle: 'pro' },
+        { q: "I'm tempted to explain my \"why\" so she'll understand me.", a: "\"Being understood is irrelevant. My goal is the destination, not her absolution.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  praxdread1: [
+    {
+      name: "Luxury is Covert",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "Understanding that women hate \"sales\" but love \"marketing\". If you explain the rules of Dread, you kill the magic and signal desperation.",
+      inputs: [
+        { q: "I want to tell her that I'm lifting so she'll find me sexier", a: "\"Telling her is 'sales.' Letting her see the muscles is 'marketing.' Let the hamster find the exit on its own.\"", bundle: 'pro' },
+        { q: "I'm tempted to use an ultimatum to get sex", a: "\"Negotiated desire only leads to obligated compliance. I'm becoming the prize so she _wants_ to invest.\"", bundle: 'pro' },
+        { q: "I feel like a \"fraud\" for not being my old vulnerable self", a: "\"Vulnerability is for true friends, not a wife who relies on your strength. My silence is my power.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  praxdread2: [
+    {
+      name: "Luxury is Earned",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "Realizing that you cannot market a product that doesn't exist. You must do the passive work of self-improvement to become a legitimate luxury brand. You are what you do; do attractive things and the high-status identity will follow.",
+      inputs: [
+        { q: "I'm afraid she'll think I'm being \"manipulative\"", a: "\"Marketing isn't manipulation; it's communicating value. My value is real.\"", bundle: 'pro' },
+        { q: "I want to tell her the \"rules\" so she'll understand why I'm changing", a: "\"Spouting the rules signals weakness and kills the magic. Let my actions speak.\"", bundle: 'pro' },
+        { q: "I feel like a \"jerk\" for putting my mask on first", a: "\"Rational egoism is the bedrock of a healthy family. I must be strong to lead them.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  praxdread3: [
+    {
+      name: "You Are the Gatekeeper",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "Realizing that while she may be the gatekeeper of sex, you are the gatekeeper of the relationship. You decide if she is providing enough value to earn your commitment, attention, and resources.",
+      inputs: [
+        { q: "I feel like a \"failure\" because she won't fuck me", a: "\"My job is to be fuckable; her job is to fuck me. If she fails her job, I find her replacement.\"", bundle: 'pro' },
+        { q: "I should be \"vulnerable\" so she'll understand my needs", a: "\"Vulnerability is for friends. My wife needs my strength, not my complaints. Silence is my power.\"", bundle: 'pro' },
+        { q: "I'm afraid she'll leave if I start setting these hard standards", a: "\"The stay plan and the go plan are the same plan: become my best self. I am safe either way.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  praxdread4: [
+    {
+      name: "Anger is a Tool",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "Breaking the \"Blue Pill\" conditioning that anger is always shameful. Anger is the social signal that a boundary has been crossed.",
+      inputs: [
+        { q: "I'm afraid that getting angry makes me a \"bad person.\"", a: "\"My anger is valuable. It protects my frame and marks my boundaries.\"", bundle: 'pro' },
+        { q: "I think I need to \"explain\" why I'm angry so she'll understand.", a: "\"Explaining is 'sales.' Results are 'marketing.' Make her escalation uncomfortable.\"", bundle: 'pro' },
+        { q: "I'm tempted to hold a grudge after a big fight.", a: "\"Grudges signal that she had the power to hurt me. I have the memory of a goldfish.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  praxdread5: [
+    {
+      name: "Responsibility vs Blame",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "Realizing that while she may be \"to blame\" for her behavior, only you are responsible for the quality of your life and your reactions.",
+      inputs: [
+        { q: "I feel like a \"victim\" because she cheated.", a: "\"I am not a victim. I am the leader of my own life, and I am responsible for what I tolerate.\"", bundle: 'pro' },
+        { q: "I'm waiting for her to \"fix\" the marriage.", a: "\"Relationships are women's work, but my happiness is my own. I fix myself first.\"", bundle: 'pro' },
+        { q: "I'm afraid of the consequences of leading.", a: "\"The price of respect is the willingness to walk away. I am safe regardless of the outcome.\"", bundle: 'pro' },
+      ]
+    },
+  ],
 };

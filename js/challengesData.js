@@ -3082,4 +3082,290 @@ const challengesCollections = {
       ]
     },
   ],
+  masculine1: [
+    {
+      name: "The Cold Shoulder",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible response (strategy in brackets).",
+      description: "When she withdraws, becomes silent, or tries to reject connection. The challenge is not to respond in kind, but to remain present.\nHere we primarily use Refusing Rejection and Hear the Pain to re-establish contact.",
+      inputs: [
+        { q: "She stares at the wall and only answers with single words.", a: "\"I see that you're hurt. I'll sit here with you for a bit until you're ready to talk.\" (Refusing Rejection)", bundle: 'pro' },
+        { q: "She pulls her hand away when you try to hold it.", a: "\"I notice you feel far away from me right now. What's happening inside?\" (Hear the Pain)", bundle: 'pro' },
+        { q: "She sends a short, cold text: \"Don't call me.\"", a: "\"I hear that you need space. I love you and I'm here when you've landed.\" (Refusing Rejection)", bundle: 'pro' },
+      ]
+    },
+  ],
+  masculine2: [
+    {
+      name: "The Toxic Attack",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible response (strategy in brackets).",
+      description: "When her expression is laced with blame, shaming, or insults. The challenge is to hear the pain while holding the line on respect.\nUse Feelings First to meet the emotion and Boundary to protect the respect.",
+      inputs: [
+        { q: "She screams, \"You're a selfish jerk who only thinks of himself!\"", a: "\"I hear how much you're hurting, but I won't be called names. Tell me what's wrong.\" (Feelings First/Boundary)", bundle: 'pro' },
+        { q: "She mocks your career choices during a fight.", a: "\"I'm interested in your fear for our future, but have no interest in being mocked. Let's try again.\" (Shared Reality/Boundary)", bundle: 'pro' },
+        { q: "She is \"poking the bear\" with sarcastic digs.", a: "\"I see you're trying to get a reaction. I'd rather just hold you. Come here.\" (Boundary/Structure)", bundle: 'pro' },
+      ]
+    },
+  ],
+  masculine3: [
+    {
+      name: "High Intensity Attacks",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible response (strategy in brackets).",
+      description: "When she goes for the \"jugular\" or the drama is at an absolute peak. The challenge is to maintain your seat as Shiva—the unchanging observer.\nUse Intentional Pause to regulate and Ouch to name the impact.",
+      inputs: [
+        { q: "She is screaming at the top of her lungs about a logistical error.", a: "\"I want to hear you, but I need a 5-minute pause to settle my system.\" (Intentional Pause)", bundle: 'pro' },
+        { q: "She uses a sarcasm-laced attack about your manhood.", a: "\"Ouch. That strikes a deep nerve for me.\" (Heartful Ouch)", bundle: 'pro' },
+        { q: "She mocks your parents or your past.", a: "\"I'm interested in your pain, but have no interest in being mocked. Let's take a pause.\" (Ouch / Boundary)", bundle: 'pro' },
+      ]
+    },
+  ],
+  masculine4: [
+    {
+      name: "The Permission Trap",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible response (strategy in brackets).",
+      description: "When you find yourself asking for \"permission\" for simple things or editing yourself to avoid conflict. The challenge is to stop seeking the sign and own your frame.",
+      inputs: [
+        { q: "You want to go to the gym but are afraid she'll be \"annoyed\" if you go.", a: "\"Staying in shape is essential for me. I'm going to the gym tonight.\" (Sign-Seeking Pause / Frame).", bundle: 'pro' },
+        { q: "She asks what you want for your birthday, and you're afraid your real wish is \"too expensive.\"", a: "\"What I really want is X. I'm owning that desire.\" (Desire / Sign-Seeking).", bundle: 'pro' },
+        { q: "You are about to say \"Whatever you want, honey\" just to stay out of trouble.", a: "\"I'm in the Collapse shadow strategy. My actual preference is Y.\" (Identifying Shadow).", bundle: 'pro' },
+      ]
+    },
+  ],
+  masculine5: [
+    {
+      name: "The Decision Vacuum",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible response (strategy in brackets).",
+      description: "When she is waiting for you to lead, or when she is forced into her Masculine because you are being \"easy-going\" or passive.\nUse Drive the Decision and Handle the Burden to step back into your role.",
+      inputs: [
+        { q: "She keeps asking \"What do you want for your birthday?\" and you keep saying \"I don't care.\"", a: "\"Actually, I'd love X. Let's make that the plan.\" (Drive the Decision)", bundle: 'pro' },
+        { q: "She is frantically trying to figure out the traffic and route for your trip.", a: "\"Put the phone away, Love. I've already mapped the route and we have plenty of time.\" (Drive the Decision / Structure)", bundle: 'pro' },
+        { q: "She asks \"Should we go to the party or stay home?\" and looks exhausted.", a: "\"We're staying home. You need the rest, and I want you all to myself tonight.\" (Drive the Decision)", bundle: 'pro' },
+      ]
+    },
+  ],
+  masculine6: [
+    {
+      name: "The Story Loop",
+      guideFront: "Choose a somatic strategy to handle...",
+      guideBack: "A possible response (strategy in brackets).",
+      description: "When your mind gets trapped in \"Masculine logic\" and creates stories to explain her behavior or protect your ego.\nThe challenge is to use The Watcher and IAM to break the loop.",
+      inputs: [
+        { q: "You're thinking \"She always does this, she's so irrational.\"", a: "(Watcher) \"I see the 'irrational' label loop. I'm letting it go.\". (Watcher)", bundle: 'pro' },
+        { q: "You're planning your \"Defense\" speech while she is still talking.", a: "(Choice) \"I'm choosing to stop the planning and just feel her pain.\". (Conscious Choice)", bundle: 'pro' },
+        { q: "You feel the \"victim\" story arising (\"Why me?\").", a: "(Watcher) \"I see the victim role. I'm choosing to lead instead.\". (Watcher)", bundle: 'pro' },
+      ]
+    },
+  ],
+  masculinesv: [
+    {
+      name: "Kalla handen",
+      guideFront: "Välj en strategi för att svara när...",
+      guideBack: "En tänkbar replik (strategi i parentes).",
+      description: "När hon drar sig undan, tystnar eller försöker avvisa kontakten. Utmaningen är att inte svara med samma mynt utan att stå kvar i närvaro.\nHär använder vi främst Vägra avvisandet och Hör smärtan för att återetablera kontakt.",
+      inputs: [
+        { q: "Hon stirrar in i väggen och svarar bara med enstaka ord.", a: "\"Jag ser att du är sårad. Jag sitter här med dig en stund tills du är redo att prata.\" (Vägra avvisandet)", bundle: 'pro' },
+        { q: "Hon drar undan handen när du försöker hålla den.", a: "\"Jag märker att du känner dig långt borta från mig just nu. Vad händer inuti dig?\" (Hör smärtan)", bundle: 'pro' },
+        { q: "Hon skickar ett kort och kallt sms: \"Ring mig inte.\"", a: "\"Jag hör att du behöver space. Jag älskar dig och finns här när du landat.\" (Vägra avvisandet)", bundle: 'pro' },
+      ]
+    },
+  ],
+  parenting1: [
+    {
+      name: "The Big Meltdown",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible response (strategy in brackets).",
+      description: "When emotions are high and words are loud. The challenge is to respond with presence rather than reacting with your own anger.\nUse Naming the Feeling and Venerating the Child to remain the calm anchor in their storm.",
+      inputs: [
+        { q: "They scream \"I HATE YOU!\" after you say no to a friend coming over.", a: "\"Wow, you are really angry with me right now.\" (Naming Feeling)", bundle: 'pro' },
+        { q: "They are sobbing uncontrollably because they broke a cheap balloon.", a: "(Kneel down and just hold them) \"I'm right here. I see how sad you are.\" (Venerating / Naming)", bundle: 'pro' },
+        { q: "They are throwing toys because they are \"bored.\"", a: "\"You seem really frustrated and restless today.\" (Naming Feeling)", bundle: 'pro' },
+      ]
+    },
+  ],
+  parenting2: [
+    {
+      name: "The Flat Refusal",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible response, with the strategy in brackets.",
+      description: "When the child simply says \"No\" or ignores you. The challenge is to maintain \"High Expectations + Calm Presence\"—holding the limit without exploding.",
+      inputs: [
+        { q: "You ask them to put away their shoes and they say \"Make me!\".", a: "\"I hear you're feeling very defiant right now. And, the shoes need to be in the bin.\" (Name Struggle / Limit)", bundle: 'pro' },
+        { q: "You tell them \"iPad away\" and they simply ignore you and keep playing.", a: "(Walk over, put a hand on their shoulder) \"iPad.\" (One-Word Cue / Physical Follow-up)", bundle: 'pro' },
+        { q: "They are shouting \"I'M NOT DOING IT!\" about a chore.", a: "\"I can see you're really angry. Do you want to do it now or in three minutes?\" (Name Feeling / Options Within)", bundle: 'pro' },
+      ]
+    },
+  ],
+  parenting3: [
+    {
+      name: "The \"I Can't!\" Meltdown",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible response, with the strategy in brackets.",
+      description: "When the struggle turns into a total shutdown. The challenge is to remain the \"Calm Anchor\" and not take over the task just to end the noise.",
+      inputs: [
+        { q: "They throw their pencil across the room and sob \"I'm too stupid for this!\".", a: "\"You're having a really hard time with this page. I'm going to sit right here while you breathe.\" (Naming Struggle / Staying Close)", bundle: 'pro' },
+        { q: "They are refusing to even try a new task.", a: "\"It’s scary to try something for the first time. What’s the very first tiny step?\" (Naming Struggle / Brainstorm)", bundle: 'pro' },
+        { q: "They are demanding that you do their chore for them.", a: "\"I know you wish I would just do it. And, I know you can learn this. Where should we start?\" (Taking Side of Feelings / Naming Struggle)", bundle: 'pro' },
+      ]
+    },
+  ],
+  parenting4: [
+    {
+      name: "Verbal Attacks",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible response (strategy in brackets).",
+      description: "When the child uses \"mean words,\" name-calling, or insults. The challenge is to remain the adult and not \"fight back\" at a child's level.",
+      inputs: [
+        { q: "They shout \"I hate this house and I hate you!\"", a: "\"Wow, you are feeling really unhappy right now.\" (Meet the Frustration)", bundle: 'pro' },
+        { q: "They call you a \"jerk\" after a correction.", a: "\"Ouch. That was a mean thing to say. You must be very frustrated.\" (Meet the Frustration / Ouch)", bundle: 'pro' },
+        { q: "They are mocking your tone of voice.", a: "(Stay calm and silent) \"The shoes still need to be in the bin.\" (Heartful Silence / One-Word Cue)", bundle: 'pro' },
+      ]
+    },
+  ],
+  parenting5: [
+    {
+      name: "The Stubborn Heart",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible response (strategy in brackets).",
+      description: "When a child is stuck in shame, anger, or a refusal to repair. The challenge is to remain the \"Safe Leader\" who invites them back without shaming them.",
+      inputs: [
+        { q: "They refuse to apologize, saying \"I DON'T CARE!\".", a: "\"I hear you're still feeling very angry. Let's take another two-minute reset.\" (Time-Out Reset / Meet Frustration)", bundle: 'pro' },
+        { q: "They are sobbing because they think they are a \"bad kid\" after a mistake.", a: "\"You aren't a bad kid; you just had a bad moment. I'm right here with you.\" (Follow-up / Venerating)", bundle: 'pro' },
+        { q: "They are mocking your own attempt to apologize to them.", a: "(Stay calm) \"I'm being serious because our relationship matters to me. I'm sorry I yelled.\" (Modeling Apology / Respond vs React)", bundle: 'pro' },
+      ]
+    },
+  ],
+  praxframe1: [
+    {
+      name: "Seeking the Sign",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible response, with the strategy in brackets.",
+      description: "When you are \"leaning in\" or \"dancing\" to get her approval. The challenge is to stop the validation-seeking behavior and return to Point of Origin.",
+      inputs: [
+        { q: "You just told a joke and are staring at her face to see if she laughs.", a: "(Point of Origin) \"I found it funny. That's enough for me.\"", bundle: 'pro' },
+        { q: "You want to buy a new car but are afraid she'll think it's \"too flashy.\"", a: "(Point of Origin) \"This car meets my goals for style and utility. I'm getting it.\"", bundle: 'pro' },
+        { q: "She is \"still-facing\" you (giving no reaction) to make you feel anxious.", a: "(OODA Loop) (Observe the tactic. Settle into the silence. Need nothing from her.)", bundle: 'pro' },
+      ]
+    },
+  ],
+  praxframe2: [
+    {
+      name: "The Content Trap",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible response (strategy in brackets).",
+      description: "When she uses \"Hamster logic\" or baiting questions to draw you into a literal argument. The challenge is to stay on the \"Process\" level.\nRefuse to DEER (Defend, Excuse, Explain, Rationalize) and maintain your frame.",
+      inputs: [
+        { q: "She asks \"If I gained a hundred pounds, would you still love me?\"", a: "\"I'd love if you hit the treadmill when you did.\" (Process: Honesty/High Status)", bundle: 'pro' },
+        { q: "She demands \"Why did you buy that without asking me first?\"", a: "\"Because I decided it was the best move for us. Don't worry about it.\" (Process: Leadership)", bundle: 'pro' },
+        { q: "She says \"You're just like your father when you're mad!\"", a: "(Process) (Ignore the insult) \"You're really angry right now. I'm taking a walk.\" (Medium is the Message)", bundle: 'pro' },
+      ]
+    },
+  ],
+  praxframe3: [
+    {
+      name: "Shaming and Labels",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible response, with the strategy in brackets.",
+      description: "When she uses \"container words\" like \"creepy,\" \"misogynist,\" or \"selfish\" to weaponize your guilt.\nThe challenge is to need nothing from her and return to your own Mental Point of Origin.",
+      inputs: [
+        { q: "She shouts: \"You're being a misogynist!\" because you won't do a chore.", a: "\"I don't care.\" (Assertive Right #10).", bundle: 'pro' },
+        { q: "She calls your interest in self-improvement \"creepy.\"", a: "\"What specifically about my working out is creepy to you?\" (Negative Inquiry).", bundle: 'pro' },
+        { q: "She says: \"A real man would do X for his wife.\"", a: "\"It's possible. I'm doing Y instead.\" (Fogging / Point of Origin).", bundle: 'pro' },
+      ]
+    },
+  ],
+  praxframe4: [
+    {
+      name: "The \"Creepy\" Resonance",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible response, with the strategy in brackets.",
+      description: "When your partner describes your behavior as \"creepy\" or \"off\"—this usually means she is picking up on a covert contract.\nThe challenge is to kill the contract and return to your own Mental Point of Origin.",
+      inputs: [
+        { q: "She asks, \"Why are you being so nice today? What do you want?\".", a: "\"I was trying to earn points. That's lame. I'm stopping.\" (Killing Covert Contracts).", bundle: 'pro' },
+        { q: "You are \"leaning in\" energetically to see if she liked your gift.", a: "(Internal) \"I release the need for her to like it. I gave it because I wanted to.\" (Killing Covert Contracts / Point of Origin).", bundle: 'pro' },
+        { q: "You are \"shuffling\" around her, hoping for a sign that sex is on the table.", a: "(Stop shuffling. Go do your own thing.) (The Oak / Point of Origin).", bundle: 'pro' },
+      ]
+    },
+  ],
+  praxframe5: [
+    {
+      name: "Sabotage and Frame Traps",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible response, with the strategy in brackets.",
+      description: "Handling situations where her \"solipsism\" leads her to challenge your new leadership through guilt, logic traps, or manipulation. The challenge is to remain the \"Oak\" and maintain your seat as the leader.",
+      inputs: [
+        { q: "she cries and says you \"don't care about her feelings\" because you're following your mission", a: "\"I hear that you're upset. I'm still heading to the gym. See you at seven.\" (Rule Zero / The Oak)", bundle: 'pro' },
+        { q: "she uses a \"Frame Trap\" by pointing out a logical inconsistency in your plan", a: "\"My logic may be off, but my decision remains the same. I've got it.\" (Rule Zero / Leading Without Permission)", bundle: 'pro' },
+        { q: "she tries to \"authorize\" your behavior: \"I'll let you go if you do the dishes first.\"", a: "\"I've already handled my chores. I'm leaving now. See you later.\" (Rule Zero / No DEERing)", bundle: 'pro' },
+      ]
+    },
+  ],
+  praxdread1: [
+    {
+      name: "The Complaining Passenger",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible response, with the strategy in brackets.",
+      description: "When she treats you like a \"minion\" or \"man-child\" by nagging and setting the frame for your behavior. The challenge is to stop \"fixing her comfort\" and instead return to your own Mental Point of Origin.",
+      inputs: [
+        { q: "she yells \"You never do anything right!\" because you bought the wrong milk", a: "\"Damn, I didn't realize there were so many types. I'll get the other one Saturday.\" (STFU / Negative Assertion)", bundle: 'pro' },
+        { q: "she tries to \"gaslight\" you into feeling guilty for wanting a career change", a: "(Internal: Embrace the suck. I'm the leader of this vision.) (Tow Rope / STFU)", bundle: 'pro' },
+        { q: "she demands \"authorization\" to see your phone after you become distant", a: "\"No. My privacy is valuable. Ask me again when you're acting like a partner.\" (Standard Lead / 2/3rds Rule)", bundle: 'pro' },
+      ]
+    },
+  ],
+  praxdread2: [
+    {
+      name: "The Hamster Maze",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible response, with the strategy in brackets.",
+      description: "Handling the emotional \"weather\" and manipulation attempts that arise as she processes your new value. The challenge is to provide a clear \"exit\" (pleasantness/sex) for her anxiety while refusing to be moved from your frame.",
+      inputs: [
+        { q: "she starts crying and says \"I don't even know who you are anymore!\"", a: "\"I'm the same man, just focused on my vision. Come give me a hug.\" (The Oak / Operant Conditioning)", bundle: 'pro' },
+        { q: "she tries to \"gaslight\" you into feeling guilty for your new style", a: "\"I like the look. You should enjoy the change.\" (Negative Assertion / Scarcity)", bundle: 'pro' },
+        { q: "she gives you a \"Backhanded Compliment\" to lower your status", a: "\"Thanks. I'm glad you noticed the hard work.\" (Covert Marketing / Gratitude)", bundle: 'pro' },
+      ]
+    },
+  ],
+  praxdread3: [
+    {
+      name: "The Compliance Trap",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible response, with the strategy in brackets.",
+      description: "When she uses \"negotiated desire\" or \"obligated compliance\" to maintain control without investment. The challenge is to reject the low-quality intimacy and return to your own standards.",
+      inputs: [
+        { q: "she says \"Fine, let's just get it over with\" before sex", a: "\"I'll pass. I'm interested in desire, not a chore. I'm going for a run.\" (This Isn't Working / Scarcity)", bundle: 'pro' },
+        { q: "she \"zeroes you out\" by ignoring you for two days after you set a boundary", a: "(Need nothing. Continue your mission happily. Enjoy the quiet.) (The Oak / STFU)", bundle: 'pro' },
+        { q: "she tries to \"authorize\" your leadership: \"I'll let you pick the restaurant if you do X.\"", a: "\"I've already picked the place. We're leaving at seven.\" (Leading Without Permission)", bundle: 'pro' },
+      ]
+    },
+  ],
+  praxdread4: [
+    {
+      name: "The High-Intensity Meltdown",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible response, with the strategy in brackets.",
+      description: "When emotions go to 10/10. The challenge is to remain the \"Captain\" and not get drawn into her \"Neurotic\" or \"Hysterical\" frame. You are the anchor; she is the weather.",
+      inputs: [
+        { q: "she is screaming \"YOU DON'T LOVE ME!\" and throwing things", a: "\"STOP. I am leaving until you are an adult again.\" (Controlled Anger)", bundle: 'pro' },
+        { q: "she is sobbing \"I don't know who you are anymore!\" after your months of Dread", a: "(Internal: Stay silent. Provide a calm \"Pull\" hug.) (Navigating the Main Event)", bundle: 'pro' },
+        { q: "she accuses you of \"manipulating\" her with \"Internet rules\"", a: "\"That's an interesting theory. I'll give it some thought.\" (Cocky/Funny Response)", bundle: 'pro' },
+      ]
+    },
+  ],
+  praxdread5: [
+    {
+      name: "Betrayal and Evaluation",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible response, with the strategy in brackets.",
+      description: "Situations involving infidelity or major trust violations. The challenge is to stop \"looking with your heart\" and start \"looking with your eyes\" to assess real value. You must be willing to destroy the dynamic to save yourself.",
+      inputs: [
+        { q: "she claims she is \"sorry\" but refuses to tell you who it was with", a: "\"Nothing is forgivable if you expect it to be forgettable. I need full disclosure.\" (The Remorse Checklist)", bundle: 'pro' },
+        { q: "she tells you \"just get over it, it was a year ago\"", a: "(Internal: She lacks the patience for true remorse.) \"Remorse lasts as long as I need it to.\" (The Remorse Checklist)", bundle: 'pro' },
+        { q: "you confirm she is cheating but are afraid of being alone", a: "(Internal: The stay plan and go plan are the same.) (Continue lifting and networking to build abundance.) (Stay/Go Congruence)", bundle: 'pro' },
+      ]
+    },
+  ],
 };

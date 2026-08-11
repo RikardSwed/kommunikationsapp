@@ -4605,4 +4605,452 @@ const multiStepCollections = {
       ]
     },
   ],
+  masculine1: [
+    {
+      name: "Conflict to Connection",
+      guideFront: "What she said, and the strategy you respond with.",
+      guideBack: "How it could sound.",
+      description: "A sequence to turn a fight around: Hear the Pain → Do-Over → Tangible Action.\nFirst, you give her \"emotional oxygen,\" then you correct your own mistake, and finally, you offer a concrete solution.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You forgot to fix something in the house she's asked about for weeks. She is now furious and calling you \"irresponsible.\"",
+          steps: [
+            { front: "Hear the Pain — she snaps: \"You never care about what I need!\"", back: "\"I hear that you feel alone and let down in this, and I understand that.\"" },
+            { front: "Do-Over — she still looks skeptical.", back: "\"Can I have a do-over? I see I've been irresponsible and I want to show you I take you seriously.\"" },
+            { front: "Tangible Action — you offer a concrete solution.", back: "\"I'll fix it right now, and going forward I'll put our household tasks in my calendar.\"" },
+          ]
+        },
+      ]
+    },
+  ],
+  masculine2: [
+    {
+      name: "From Shutdown to Radiance",
+      guideFront: "What she said, and the strategy you respond with.",
+      guideBack: "How it could sound.",
+      description: "A repair sequence: Shared Reality → Feelings First → Tangible Action → Praise.\nThis moves from identifying the break to offering oxygen, fixing the behavior, and finally re-polarizing.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "She complained that you're always on your phone. You reacted by listing all the work you had to do. She is now shut down and cold.",
+          steps: [
+            { front: "Shared Reality — \"When I defended my phone use, did it feel like your needs don't matter to me?\"", back: "\"I want to understand. Did I make you feel invisible?\"" },
+            { front: "Feelings First — she nods and says, \"Yeah, it did.\"", back: "\"That makes sense. I see that I chose my phone over you, and I'm sorry.\"" },
+            { front: "Tangible Action — offering a container.", back: "\"From now on, I'll put my phone in the drawer from 6 PM to 8 PM so I can be fully with you.\"" },
+            { front: "Praise — re-establishing attraction.", back: "\"I missed your smile. You're the most important part of my day.\"" },
+          ]
+        },
+      ]
+    },
+  ],
+  masculine3: [
+    {
+      name: "The Brave Lead",
+      guideFront: "What she said, and the strategy you respond with.",
+      guideBack: "How it could sound.",
+      description: "A high-stakes sequence: Intentional Pause → Fear Underneath → Heartful \"Ouch\" → Direct Initiation.\nThis moves from self-regulation to vulnerable truth, and finally back to powerful leadership.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You have been fighting all morning. She is now cold and says \"Maybe we shouldn't have gone on this trip.\" You feel panic and anger.",
+          steps: [
+            { front: "Intentional Pause — \"I'm starting to react and I don't want to. Let's take 15 minutes.\"", back: "\"I need a pause. I'm getting triggered and I want to stay connected to you.\"" },
+            { front: "Fear Underneath — (After 15 minutes)", back: "\"When you said we shouldn't have come, I felt terrified that you're giving up on us.\"" },
+            { front: "Heartful \"Ouch\" — she snaps back with something defensive.", back: "\"Ouch. That hurts. I'm trying to be vulnerable here, Love.\"" },
+            { front: "Direct Initiation — (Later that evening, the air is clear)", back: "\"I've missed you today. Come here and let's just breathe together.\"" },
+          ]
+        },
+      ]
+    },
+  ],
+  masculine4: [
+    {
+      name: "Taming the Trigger",
+      guideFront: "What she said, and the strategy you respond with.",
+      guideBack: "How it could sound.",
+      description: "A sequence for when you are triggered: Sign-Seeking Pause → Reality Test → Identifying Shadow → Grounded Lead.\nThis moves from identifying the internal panic to choosing a Masculine response.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You just shared a dream about a new business, and she snapped: \"You'll never make enough money doing that.\" You feel a massive wave of shame and anger.",
+          steps: [
+            { front: "Sign-Seeking Pause — \"Am I wanting her to think I'm smart and capable? Yes. I release that need.\"", back: "\"deep down, I want her approval. I choose to let go of that sign.\"." },
+            { front: "Reality Test — (Breathe) \"Look at the room. I am safe. I am not a boy in trouble. I am a man.\"", back: "(Internal move) \"I am physically safe. Her opinion doesn't define my worth.\"." },
+            { front: "Identifying Shadow — \"I want to attack back (Blame) or hide (Contraction). I choose to stay present.\"", back: "\"I'm in a Blame strategy right now. I'm stopping the counter-attack.\"." },
+            { front: "Grounded Lead — You share the truth underneath.", back: "\"Ouch. That comment hurts because my career is important to me. I need your support, not mocks.\"." },
+          ]
+        },
+      ]
+    },
+  ],
+  masculine5: [
+    {
+      name: "From Overwhelmed to Relaxed",
+      guideFront: "What she said, and the strategy you respond with.",
+      guideBack: "How it could sound.",
+      description: "A sequence to handle her logistical stress: Shared Reality → Handle the Burden → Drive the Decision.\nIdentify the overwhelm, take the task off her plate, and provide the structure for what's next.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "She is in a bad mood, throwing items around and snapping at you because the living room is a disaster area.",
+          steps: [
+            { front: "Shared Reality — \"Is this bad mood because you feel overwhelmed by the house?\"", back: "\"I want to understand. Does the mess make you feel like you're in this alone?\"" },
+            { front: "Handle the Burden — she nods and says \"YES!\".", back: "\"I've got this. Sit down and breathe for ten minutes. I'm going to clear the main area now.\"" },
+            { front: "Drive the Decision — (15 minutes later)", back: "\"I've cleared the floor. I suggest we order in and watch that movie you liked. Sound good?\"" },
+          ]
+        },
+      ]
+    },
+  ],
+  masculine6: [
+    {
+      name: "The Grounded Response",
+      guideFront: "What you feel, and the somatic strategy you use.",
+      guideBack: "The internal or external move.",
+      description: "A somatic sequence: Watcher → Ujjayi Breath → Reality Test → Conscious Choice.\nStop the story, settle the system, verify safety, and choose the Masculine lead.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "She is shouting, her eyes are blazing, and you feel the \"Code Red\" threat response.",
+          steps: [
+            { front: "The Watcher — \"I see the 'Blame' shadow strategy starting. I see the story of unfairness.\"", back: "(Observe the thoughts without obeying them)." },
+            { front: "Ujjayi Breath — you feel your chest clenching.", back: "(Perform one long, audible Ujjayi breath to settle your body chemistry)." },
+            { front: "Reality Test — (Open eyes wide)", back: "\"I am sitting on the sofa. I am physically safe. She is just a woman in pain.\"." },
+            { front: "Conscious Choice — you decide to speak.", back: "\"I hear that you're feeling alone, Baby. I'm right here.\" (Hear the pain, not the blame)." },
+          ]
+        },
+      ]
+    },
+  ],
+  masculinesv: [
+    {
+      name: "Från konflikt till kontakt",
+      guideFront: "Vad hon sa, och strategin du svarar med.",
+      guideBack: "Hur det kan låta.",
+      description: "En sekvens för att vända ett bråk: Hör smärtan → Gör-om-tagning → Tangibel handling.\nFörst ger du henne \"emotionellt syre\", sen korrigerar du ditt eget misstag och slutligen erbjuder du en konkret lösning.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "Du har glömt att fixa en sak i hemmet som hon bett om i veckor. Hon är nu rasande och kallar dig \"oansvarig\".",
+          steps: [
+            { front: "Hör smärtan — hon fräser: \"Du bryr dig aldrig om vad jag behöver!\"", back: "\"Jag hör att du känner dig ensam och sviken i det här, och det förstår jag.\"" },
+            { front: "Gör-om-tagning — hon ser fortfarande skeptisk ut.", back: "\"Kan jag få en gör-om-tagning? Jag ser att jag har varit oansvarig och jag vill visa att jag tar dig på allvar.\"" },
+            { front: "Tangibel handling — du erbjuder en konkret lösning.", back: "\"Jag fixar det direkt nu, och i fortsättningen lägger jag in våra gemensamma uppgifter i min arbetskalender.\"." },
+          ]
+        },
+      ]
+    },
+  ],
+  parenting1: [
+    {
+      name: "From Resistance to Connection",
+      guideFront: "The step you are on — say your version out loud.",
+      guideBack: "One way it could sound.",
+      description: "A sequence for turning a moment of defiance into one of contact: Connection Before Correction → Naming the Feeling → Taking the Side of Feelings.\nInstead of jumping to a fight, you build the bridge first.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "It's time to go, and when you say \"Let's go,\" they scream \"NO!\" and run to the slide.",
+          steps: [
+            { front: "Connection Before Correction — walk over to the slide.", back: "\"Hey, look at that climb! You made it all the way to the top by yourself.\"" },
+            { front: "Naming the Feeling — they look at you, still defiant.", back: "\"You're having such a good time. You seem really sad to have to stop.\"" },
+            { front: "Taking the Side of Feelings — they nod and say \"I want to stay.\"", back: "\"I get it. I wish we could stay and play for two more hours too.\"" },
+            { front: "Re-stating the Limit — (After the connection).", back: "\"And, it's still time to go. Do you want to walk or should I carry you?\"" },
+          ]
+        },
+      ]
+    },
+  ],
+  parenting2: [
+    {
+      name: "The Gentle Hammer",
+      guideFront: "The step you are on — say your version out loud.",
+      guideBack: "One way it could sound.",
+      description: "A sequence for holding a firm limit with heart: Naming the Struggle (from Pack 1) → Describe What You See → Options Within the Limit.\nThis moves from \"I am with you\" to \"This is the reality\" to \"Here is your choice.\".",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You've told them it's bath time, but they are deep in a game and say \"NO! I'm not going!\"",
+          steps: [
+            { front: "Naming the Struggle — \"It's so hard to stop when you're having a great time. You really wish you could play all night.\"", back: "\"You're having so much fun. You seem really sad to have to stop your game.\"" },
+            { front: "Describe What You See — you point to the clock or the bathroom.", back: "\"The water is in the tub and it's time for your bath.\"" },
+            { front: "Options Within the Limit — they are still pouting.", back: "\"Do you want to bring your toy boat to the tub or the plastic dinosaur?\"" },
+            { front: "Re-stating the Limit — (If they still refuse).", back: "\"Bath is happening now. Do you want to walk yourself or should I carry you?\"" },
+          ]
+        },
+      ]
+    },
+  ],
+  parenting3: [
+    {
+      name: "From \"I Can't\" to \"I Did\"",
+      guideFront: "The step you are on — say your version out loud.",
+      guideBack: "One way it could sound.",
+      description: "A sequence for coaching through a difficulty: Naming the Struggle → Staying Close → Brainstorm Inquiry → Identifying Consequences.\nThis moves the child from emotional overwhelm to logical problem-solving.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "They are pulling on the handlebars, the bike is stuck on a lawnmower, and they start screaming \"I HATE THIS BIKE!\"",
+          steps: [
+            { front: "Naming the Struggle — you walk over calmly.", back: "\"Wow, that bike is really wedged in there. You're feeling very frustrated.\"" },
+            { front: "Staying Close — you sit on a nearby box.", back: "\"I'm right here. I'm not going to do it for you, but I'm here while you figure it out.\"" },
+            { front: "Brainstorm Inquiry — they stop screaming and look at the bike.", back: "\"What's the one thing that's blocking the wheel right now?\"" },
+            { front: "Identify Consequences — they suggest just \"yanking it harder.\"", back: "\"If you yank it that way, what do you think happens to the lawnmower?\"" },
+            { front: "Recognition of Effort — (After they finally get it out).", back: "\"You were really stuck, but you kept thinking until you found a way. You did it.\"" },
+          ]
+        },
+      ]
+    },
+  ],
+  parenting4: [
+    {
+      name: "Weathering the Storm",
+      guideFront: "The step you are on — say your version out loud.",
+      guideBack: "One way it could sound.",
+      description: "A sequence for managing a high-intensity meltdown: Respond vs. React → Meet the Frustration → Expect Pushback → Heartful Silence.\nThis moves from self-regulation to emotional validation, and finally to firm, quiet action.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "They want a toy, you said no, and they are now lying on the floor screaming \"YOU NEVER BUY ME ANYTHING!\".",
+          steps: [
+            { front: "Respond vs. React — you feel everyone watching and your face gets hot.", back: "(Close your eyes for one second and breathe) \"I am safe. My child is just having a hard time.\"" },
+            { front: "Meet the Frustration — you kneel down.", back: "\"You are so angry and disappointed that we aren't getting that today.\"" },
+            { front: "Expect Pushback — they shout \"I'M NOT LEAVING!\".", back: "\"I hear you. It's really hard to leave when you're this upset.\"" },
+            { front: "Heartful Silence — the talking isn't helping anymore.", back: "(Stop talking. Gently pick them up or lead them by the hand to the car)." },
+          ]
+        },
+      ]
+    },
+  ],
+  parenting5: [
+    {
+      name: "The Full Turn",
+      guideFront: "The step you are on — say your version out loud.",
+      guideBack: "One way it could sound.",
+      description: "A sequence for navigating a mistake from start to finish: The Time-Out Reset → The Joy of Repentance → The Tangible Follow-up.\nThis moves from calming the body to choosing the right path, and finally back to connection.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "They were frustrated and threw a block at your leg. You have already stopped the behavior.",
+          steps: [
+            { front: "The Time-Out Reset — they are still breathing fast and looking defiant.", back: "\"You're too upset to be safe right now. Take two minutes until your body is calm.\"" },
+            { front: "The Joy of Repentance — (After 2 minutes) they look calm but sheepish.", back: "\"Throwing was wrong. Now you have a chance to make it right. What do you need to do?\"" },
+            { front: "The Tangible Follow-up — they apologize and pick up the block.", back: "\"Thank you for fixing that. I'm so glad we're back on the same team. Come here.\"" },
+          ]
+        },
+      ]
+    },
+  ],
+  praxframe1: [
+    {
+      name: "The Unswayable Lead",
+      guideFront: "The step you are on — say your version out loud.",
+      guideBack: "One way it could sound.",
+      description: "A calibration sequence: Observe → Point of Origin → Act → Field Report.\nIdentify the dynamic, check your own values, take the action, and then analyze it objectively.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You are headed out the door. She starts crying and says you \"don't care about the family\" because the garage is messy.",
+          steps: [
+            { front: "Observe — (OODA Loop: Observe)", back: "\"She is using a 'Hamster' loop of anxiety to manipulate my protective instinct.\"" },
+            { front: "Point of Origin — (Internal Check)", back: "\"I value my health and my gym time. This is my priority right now.\"" },
+            { front: "Act — (OODA Loop: Act)", back: "\"I'm responsible for the garage and I'll handle it on Saturday. I'm going to the gym now. See you later.\"" },
+            { front: "Field Report — (Later that evening)", back: "\"I stayed the oak. She was mad, but I didn't buckle. My workout was excellent.\"" },
+          ]
+        },
+      ]
+    },
+  ],
+  praxframe2: [
+    {
+      name: "From Hamster to Harmony",
+      guideFront: "What she said, and the strategy you respond with.",
+      guideBack: "How it could sound.",
+      description: "A calibration sequence: Medium is the Message → Status Calibration → Gratitude/Lead.\nIdentify the emotional process, choose a high-status quadrant, and lead back to connection.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You walk in 30 minutes late. She starts shouting: \"You obviously don't care about my time! You're so selfish!\"",
+          steps: [
+            { front: "Medium is the Message — (Identify Process)", back: "\"She is on the 'Hamster Wheel' of anxiety. She wants comfort through my strength.\"" },
+            { front: "Status Calibration — (Higher Status/Cooperative)", back: "\"I hear you're frustrated, Love. I got stuck, and I'm here now. Come give me a hug.\"" },
+            { front: "Whisper’s Rule — (She softens and says \"I just want you to be here.\")", back: "(Internal) \"She wants to feel like I am a priority she can count on.\"" },
+            { front: "Gratitude Frame-Check — (She says \"You look good in that suit, even if you are an asshole.\")", back: "\"I know. And I'm glad I'm home to show you.\"" },
+          ]
+        },
+      ]
+    },
+  ],
+  praxframe3: [
+    {
+      name: "The Assertive Shield",
+      guideFront: "What they said, and the strategy to answer it with.",
+      guideBack: "One way it could sound.",
+      description: "A reaktiv sequence: Fogging → Negative Inquiry → Broken Record.\nAbsorb the emotional hit, clarify the specific issue, and hold the line on the decision.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You decided to stay late to finish a project. She is livid: \"You care more about your boss than your family! You're so selfish!\"",
+          steps: [
+            { front: "Fogging — \"I see why you'd think that. It's late and you've been alone all evening.\"", back: "\"I hear how much you're hurting. It makes sense you'd be angry.\"." },
+            { front: "Negative Inquiry — she snaps: \"You always have an excuse!\".", back: "\"What specifically about my decision to stay late feels like a betrayal to you?\"." },
+            { front: "Broken Record — she starts listing old grievances from last year.", back: "\"I hear those things. And, I'm working late tonight to finish this project.\"." },
+          ]
+        },
+      ]
+    },
+  ],
+  praxframe4: [
+    {
+      name: "Breaking the \"Save-A-Ho\" Cycle",
+      guideFront: "What they said, and the strategy to answer it with.",
+      guideBack: "One way it could sound.",
+      description: "A sequence for handling a partner's manipulative tears: The Oak → Killing Covert Contracts → No DEERing.\nStop reacting to the crying, stop trying to \"fix\" her mood to get peace, and stop justifying your boundaries.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You are packing your gym bag. She starts crying: \"You don't care about my feelings! You're so selfish for leaving me alone!\"",
+          steps: [
+            { front: "The Oak — \"I'm tough to get along with if I don't get my workout in.\"", back: "(Continue packing bag) \"I hear you're upset. I'm still going to the gym.\"" },
+            { front: "Killing Covert Contracts — she says, \"If you loved me, you'd stay.\"", back: "(Internal) \"I'm not staying to 'earn' her love. I'm going to benefit myself.\"" },
+            { front: "No DEERing — she demands, \"Why is your gym more important than me?\".", back: "\"Because I've decided my fitness is a priority. I'll be back at seven.\"" },
+            { front: "The Oak — (Later, when you return and she is still \"Still-Facing\" you).", back: "\"The birds are still singing. I'm going to go make some eggs.\"" },
+          ]
+        },
+      ]
+    },
+  ],
+  praxframe5: [
+    {
+      name: "The Visionary Lead",
+      guideFront: "What they said, and the strategy to answer it with.",
+      guideBack: "One way it could sound.",
+      description: "A sequence for establishing a new direction: Leading Without Permission → The Leader’s Vision → Push and Pull. Take the first step autonomously, explain the \"why\" in terms of your vision, and manage her emotional response.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You've decided the family spends too much time on screens. You've planned an outdoor weekend without asking for permission.",
+          steps: [
+            { front: "Leading Without Permission — she asks \"What are we doing Saturday?\".", back: "\"I've booked a cabin for the weekend. Pack for hiking, we're leaving at eight AM.\"" },
+            { front: "The Leader’s Vision — she complains that she'll miss her shows.", back: "\"I see us becoming a family that values adventure over screens. I want us to have real stories to tell.\"" },
+            { front: "Push and Pull — she gets quiet and huffy about the lack of Wi-Fi.", back: "(Smile and give her a kiss) \"I love your passion for Netflix. You're going to love the view even more. Come here.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You are working on a difficult task (like fixing a fence or a car) and she is critiquing your method.",
+          steps: [
+            { front: "Leading Without Permission — she says \"You're doing that wrong, my dad did it differently.\".", back: "\"I'm handling this to my standard. It suits me just fine.\"" },
+            { front: "Rule Zero — she keeps prodding for you to \"explain\" your logic.", back: "(Continue working silently. Need nothing from her judgment.)" },
+            { front: "The Leader’s Vision — she finally asks why you're even doing it yourself.", back: "\"I'm building the skills to maintain our own world. I see us being completely autonomous in five years.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You've bought a new, high-status wardrobe and she is testing your confidence in it.",
+          steps: [
+            { front: "Rule Zero — she asks \"Why did you spend so much on these clothes?\".", back: "\"Because I decided I wanted to communicate my value more clearly. I like the look.\"" },
+            { front: "Push and Pull — she says \"I think it's a bit much for our neighborhood.\".", back: "(Smile) \"I know, you always did have a hard time keeping up with me. You look great too, though.\"" },
+            { front: "The Leader’s Vision — she asks if you're trying to impress other women.", back: "\"I'm building the image of the man I intend to be. I want a world where we are the best-dressed couple in the room.\"" },
+          ]
+        },
+      ]
+    },
+  ],
+  praxdread1: [
+    {
+      name: "Handling the Initial Pushback",
+      guideFront: "What they said, and the strategy to answer it with.",
+      guideBack: "One way it could sound.",
+      description: "A sequence for the first time you set a boundary: STFU → Standard-Setting Lead → Tow Rope. Expect her to double-down on shaming and testing as you change; stay consistent to build the new dynamic.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You are headed to the gym for the fourth time this week. She snaps: \"Everything was great until you read that book and became an asshole!\"",
+          steps: [
+            { front: "1 · STFU — she waits for you to defend yourself.", back: "(Silence. Do not DEER. Hold a calm, unbothered gaze for three seconds.)" },
+            { front: "2 · Standard-Setting Lead — she demands you stay and \"help\" with dinner.", back: "\"I've handled the dishes all week. Dinner is your responsibility tonight. I'll be back at seven.\"" },
+            { front: "3 · Tow Rope — (You return from the gym and she is using the \"Silent Treatment\").", back: "\"The birds are still singing. I'm going to make some eggs. Do you want some?\" (Need nothing. Stay the Oak.)" },
+          ]
+        },
+      ]
+    },
+  ],
+  praxdread2: [
+    {
+      name: "The Scarcity to Reward Cycle",
+      guideFront: "What they said, and the strategy to answer it with.",
+      guideBack: "One way it could sound.",
+      description: "A sequence for rebuilding attraction: Scarcity Signaling → The Oak → Operant Conditioning. First you demonstrate value by being scarce and unbothered, then you reward her positive re-engagement with warmth.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You've been the \"plow horse\" doing all the chores with no sex for a month. You decide to change the frame.",
+          steps: [
+            { front: "Scarcity Signaling — she asks you to do an extra chore on your night off.", back: "\"I've handled my share. I'm going to the gym and then meeting a friend. I'll see you tomorrow.\"" },
+            { front: "The Oak — (You return and she is giving you the \"silent treatment\" to make you feel guilty.)", back: "(Act as if nothing is wrong. Whistle, make some food, and enjoy your book.)" },
+            { front: "Operant Conditioning — (Later, she softens and asks \"How was your gym?\")", back: "\"It was great, thanks for asking. Come here and tell me about your day.\" (Reward the investment.)" },
+          ]
+        },
+      ]
+    },
+  ],
+  praxdread3: [
+    {
+      name: "The Rejection Pivot",
+      guideFront: "What they said, and the strategy to answer it with.",
+      guideBack: "One way it could sound.",
+      description: "A sequence for handling a sexual rejection without losing frame: STFU → Gym Bag Routine → The Oak. Expect her to use shaming or \"guilt-tripping\" as you stop reacting to her \"No\"; stay the course to prove your value is real.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You initiate sex. She says \"No, I'm tired. And why are you always asking? It's so annoying.\"",
+          steps: [
+            { front: "STFU — she waits for you to whine or explain.", back: "(Silence. Do not DEER. Maintain a calm, unbothered gaze for three seconds.)" },
+            { front: "The Gym Bag Routine — you stand up and grab your gear.", back: "\"No worries. I'm heading to the gym for an hour. See you when I get back.\"" },
+            { front: "The Oak — you return and she says \"You're just trying to make me feel guilty by leaving.\"", back: "\"The birds are still singing, Love. I'm going to make a protein shake. Want one?\"" },
+          ]
+        },
+      ]
+    },
+  ],
+  praxdread4: [
+    {
+      name: "The Escalation Ladder",
+      guideFront: "What they said, and the strategy to answer it with.",
+      guideBack: "One way it could sound.",
+      description: "A sequence for handling persistent provocation: Controlled Anger (Warning) → Controlled Anger (Escalation) → Goldfish Memory. Move from a signal of boundary-crossing to an undeniable demonstration of dominance, then reset to normal immediately to show you aren't run by the emotion.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "She is \"chirping\" at you about a chore while you are busy. You decide to mark the boundary.",
+          steps: [
+            { front: "Controlled Anger — you fire a warning shot.", back: "\"Do you really want to have this fight? Because you aren't going to like it.\"" },
+            { front: "Controlled Anger — she keeps nagging, testing your resolve.", back: "(Match her intensity +1) \"I said enough! You can fuck off to the other room if you can't be pleasant.\"" },
+            { front: "Goldfish Memory — 15 minutes later, she comes back, looking sheepish.", back: "(Whistle and act as if nothing happened) \"Hey babe, do you want to help me with these burgers?\"" },
+          ]
+        },
+      ]
+    },
+  ],
+  praxdread5: [
+    {
+      name: "Navigating the Roadmap",
+      guideFront: "What they said, and the strategy to answer it with.",
+      guideBack: "One way it could sound.",
+      description: "A sequence for the final transition: STFU → Main Event → Come to Jesus → Stay/Go Congruence. Move from the silent building of value to the final communication of terms, then return to outcome-independent leadership.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You've been conducting Dread for 6 months. She is desperate, sobbing, and having a full Main Event in the bedroom.",
+          steps: [
+            { front: "STFU — she shouts \"Why won't you just tell me what's wrong?!\".", back: "(Maintain a calm, silent presence. Give her a minute to settle.)" },
+            { front: "The Come to Jesus Moment — she catches her breath and asks \"What do I need to do to keep you?\".", back: "\"I see myself in a relationship with a woman who treats me with respect and investment. If that's who you want to be, I'm right here.\"" },
+            { front: "Stay/Go Congruence — she says she'll try, but asks if you'll stop going to the gym.", back: "\"My health is part of my vision. I'm going to the gym at seven. You're welcome to join me.\"" },
+          ]
+        },
+      ]
+    },
+  ],
 };

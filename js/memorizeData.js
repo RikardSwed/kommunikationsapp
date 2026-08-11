@@ -4173,4 +4173,442 @@ const memorizeCollections = {
       ]
     },
   ],
+  masculine1: [
+    {
+      name: "The Core Pillars",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "The three elements of the Blueprint that form the base of Masculine leadership.",
+      cards: [
+        { q: "What are the three elements of The Masculine Blueprint?", a: "1. Respond vs. React, 2. Provide Structure, 3. Create Safety.", bundle: 'free' },
+        { q: "What is the difference between old and new masculinity?", a: "The old was about control and dominance; the new is about clarity and leadership.", bundle: 'free' },
+        { q: "What happens when a man abdicates the frame?", a: "The woman is forced into her Masculine energy to create the structure she needs, which kills attraction.", bundle: 'free' },
+        { q: "What is an \"Oracle\" in this context?", a: "The woman's capacity to reflect back where the man has stopped being present, true, or loving.", bundle: 'pro' },
+        { q: "What is the rule of \"facts\" during emotional intensity?", a: "Feelings first, facts later. Never try to \"fix the facts\" while she is in affect.", bundle: 'pro' },
+      ]
+    },
+  ],
+  masculine2: [
+    {
+      name: "Repair and Depth",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "The mechanisms of building trust and safety through advanced leadership skills.",
+      cards: [
+        { q: "What is the \"trifecta\" of emotional oxygen?", a: "Empathy, Responsibility, and Tangible Action.", bundle: 'free' },
+        { q: "What is the rule of thumb for \"Facts\"?", a: "Feelings first, facts later. Logic doesn't work in an emotional tsunami.", bundle: 'free' },
+        { q: "What is \"Shared Reality\"?", a: "An inquiry into her world to understand how she sees things, piece by piece.", bundle: 'free' },
+        { q: "Why is praise essential for the Feminine?", a: "It fulfills the need to feel desirable and encourages the behavior you want without using criticism.", bundle: 'pro' },
+        { q: "When should you ask for a \"Delay\"?", a: "When you are so elevated that you risk becoming reactive or destructive.", bundle: 'pro' },
+        { q: "What is the \"Shadow Side\" of the Provider role?", a: "Over-identifying with work such that you neglect the \"little things\" that make her feel safe.", bundle: 'pro' },
+      ]
+    },
+  ],
+  masculine3: [
+    {
+      name: "Depth and Embodiment",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "The advanced mechanics of training the nervous system and leading through vulnerability.",
+      cards: [
+        { q: "What is the primary cause of reactivity?", a: "A sense of threat which creates anxiety in the body-mind.", bundle: 'free' },
+        { q: "What is the rule for \"Sequence\" in sexual initiation?", a: "Warm her up slowly—men usually go three times too fast.", bundle: 'free' },
+        { q: "What is \"Shiva\" in the Hindu tradition of polarity?", a: "The unchanging and unswayable observer—pure consciousness.", bundle: 'free' },
+        { q: "What is the \"Oracle\" role of the Feminine?", a: "To reflect back to the man where he is out of integrity, heart, or presence.", bundle: 'pro' },
+        { q: "How do you decouple \"wanting\" from \"getting\"?", a: "By becoming a connoisseur of the pleasure of desire itself, regardless of the outcome.", bundle: 'pro' },
+        { q: "What is \"Provocation Meditation\"?", a: "Using triggering thoughts to intentionally stoke anxiety, then practicing staying grounded while in the fire.", bundle: 'pro' },
+      ]
+    },
+  ],
+  masculine4: [
+    {
+      name: "The Shadow and the System",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "The core concepts of internal mastery and the mechanisms of anxiety.",
+      cards: [
+        { q: "What are the 5 Dysfunctional Anxiety Strategies?", a: "1. Contraction, 2. Collapse, 3. Defense, 4. Distraction, 5. Blame..", bundle: 'free' },
+        { q: "What is the \"maxim\" regarding non-Masculine behavior?", a: "Nearly all non-Masculine behaviors are rooted in one thing: threat..", bundle: 'free' },
+        { q: "What does it mean to \"lean in\" energetically?", a: "Subconsciously seeking a sign of approval or validation from the other person..", bundle: 'free' },
+        { q: "What is \"Still-Facing\" in a relationship?", a: "When a partner shuts down or gives no reaction, creating a deep sense of disconnection and threat..", bundle: 'pro' },
+        { q: "What is a \"Reality Test\"?", a: "Using your physical environment to realize you are safe, decoupling from internal anxiety static..", bundle: 'pro' },
+        { q: "Why is \"Fixing the Facts\" a failure of leadership?", a: "Because it's an intellectual response to an emotional need—it fails to meet her heart..", bundle: 'pro' },
+      ]
+    },
+  ],
+  masculine5: [
+    {
+      name: "The Roles of Strength",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "The theoretical foundation of the Provider, Protector, and the Gift of Structure.",
+      cards: [
+        { q: "What are the three core elements of the Blueprint?", a: "1. Respond vs. React, 2. Provide Structure, 3. Create Safety.", bundle: 'free' },
+        { q: "What is the \"Provider\" role in this context?", a: "Delivering stability (financial, logistical, emotional) for those under your care.", bundle: 'free' },
+        { q: "What happens if a man does not provide \"Frame\"?", a: "The woman is forced into her Masculine to provide security for herself, killing Polarity.", bundle: 'free' },
+        { q: "Why is \"Tracking\" essential for love?", a: "Because the Feminine feels loved when she feels she is a priority in the man's field of attention.", bundle: 'pro' },
+        { q: "What is the \"Trifecta\" of emotional oxygen?", a: "Empathy, Responsibility, and Tangible Action.", bundle: 'pro' },
+        { q: "What is the primary complaint of women in the sexual arena?", a: "That men go too fast—they don't take the time to lead her slowly into arousal.", bundle: 'pro' },
+      ]
+    },
+  ],
+  masculine6: [
+    {
+      name: "Somatic Mechanics",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "The theoretical foundation of embodiment and nervous system regulation.",
+      cards: [
+        { q: "What is the primary cause of reactivity?", a: "A sense of threat which triggers anxiety in the body-mind.", bundle: 'free' },
+        { q: "Why is embodiment more effective than \"knowledge\"?", a: "Knowledge happens in the mind; embodiment changes the nervous system.", bundle: 'free' },
+        { q: "What is the \"Reality Test\"?", a: "Using your senses (sun, birds, ground) to verify that you are physically safe.", bundle: 'free' },
+        { q: "What are the four categories of somatic practice?", a: "1. Meditation, 2. Breath, 3. Intensity Expanders, 4. Movement.", bundle: 'pro' },
+        { q: "What is the \"Watcher\"?", a: "The conscious, unchanging part of you that can observe thoughts without being run by them.", bundle: 'pro' },
+        { q: "What is \"IAM\" (Intentioned Assertive Movement)?", a: "A practice of making fully conscious choices in movement to build deliberateness.", bundle: 'pro' },
+      ]
+    },
+  ],
+  masculinesv: [
+    {
+      name: "Grundbultarna",
+      guideFront: "En fråga om metoden.",
+      guideBack: "Svaret.",
+      description: "De tre elementen i Blueprinten som utgör basen för maskulint ledarskap.",
+      cards: [
+        { q: "Vilka är de tre elementen i The Masculine Blueprint?", a: "1. Respond vs. React, 2. Provide Structure, 3. Create Safety..", bundle: 'free' },
+        { q: "Vad är skillnaden mellan den gamla och nya maskuliniteten?", a: "Den gamla handlade om kontroll och dominans; den nya handlar om klarhet och ledarskap..", bundle: 'free' },
+        { q: "Vad händer när en man inte tar ledningen (the frame)?", a: "Kvinnan tvingas in i sin maskulina energi för att skapa den struktur hon behöver, vilket dödar attraktionen..", bundle: 'free' },
+        { q: "Vad är ett \"Orakel\" i det här sammanhanget?", a: "Kvinnans förmåga att spegla var mannen har slutat vara närvarande, sann eller kärleksfull..", bundle: 'pro' },
+        { q: "Vad är regeln om \"fakta\" vid känslomässig intensitet?", a: "Känslor först, fakta senare. Försök aldrig \"fixa faktan\" medan hon är i affekt..", bundle: 'pro' },
+      ]
+    },
+  ],
+  parenting1: [
+    {
+      name: "The Principles of Heart",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "The core concepts of connection and the Mamalakis approach.",
+      cards: [
+        { q: "What is the main goal of parenting in this model?", a: "To help the child become a person who can choose the good, not just someone who obeys out of fear.", bundle: 'free' },
+        { q: "What does \"Respond vs. React\" mean?", a: "Pausing to understand the struggle before choosing a purposeful action, rather than exploding back.", bundle: 'free' },
+        { q: "Why is \"Connection Before Correction\" essential?", a: "Because children need to feel \"with\" the parent before they can receptively follow the parent's lead.", bundle: 'free' },
+        { q: "What is the \"90% Rule\" of behavior?", a: "Most \"crazy\" behavior comes from the child not feeling loved, heard, or led.", bundle: 'pro' },
+        { q: "What does it mean to \"Venerate\" a child?", a: "To treat them as a person with inherent dignity (an icon), not as a problem to be fixed.", bundle: 'pro' },
+        { q: "How should you handle a child's protest (pushback)?", a: "Expect it as a normal part of the learning process rather than a threat to your authority.", bundle: 'pro' },
+      ]
+    },
+  ],
+  parenting2: [
+    {
+      name: "The Principles of Limits",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "The core concepts of creating structure and managing pushback.",
+      cards: [
+        { q: "What does \"Expect pushback, not compliance\" mean?", a: "Expect that children will protest limits as part of their learning process; don't take it personally.", bundle: 'free' },
+        { q: "Why is \"Describe what you see\" effective?", a: "It focuses the child's attention on the problem to be solved rather than on defending themselves.", bundle: 'free' },
+        { q: "What is the \"Architecture of the Home\"?", a: "The firm limits and routines that provide the safety and structure a child needs to grow.", bundle: 'free' },
+        { q: "What is \"Empathetic Firmness\"?", a: "Caring about how the child feels while refusing to budge on the necessary limit.", bundle: 'pro' },
+        { q: "When should you \"Follow up physically\"?", a: "When words aren't working—move to calm action, like taking a toy away or leading the child by the hand.", bundle: 'pro' },
+        { q: "Why offer \"Options within the limit\"?", a: "To give the child a sense of autonomy and reduce the likelihood of a power struggle.", bundle: 'pro' },
+      ]
+    },
+  ],
+  parenting3: [
+    {
+      name: "The Mechanics of Learning",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "The principles of productive struggle and long-term character building.",
+      cards: [
+        { q: "What is \"Productive Struggle\"?", a: "The process of a child working through a difficulty to develop competence and character.", bundle: 'free' },
+        { q: "Why should you avoid solving problems for your child?", a: "Because they learn that they are incapable and that others will always rescue them.", bundle: 'free' },
+        { q: "What is the difference between \"abandoning\" and \"joining\" a struggle?", a: "Abandoning is leaving them to struggle alone; joining is being present while they do the work.", bundle: 'free' },
+        { q: "What does it mean to \"Parent with the end in mind\"?", a: "Focusing on the adult you want them to become rather than just today's obedience.", bundle: 'pro' },
+        { q: "Why use \"Inquiry\" instead of \"Directions\"?", a: "Inquiry forces the child to think and take ownership of the solution.", bundle: 'pro' },
+        { q: "When is a failure \"safe\"?", a: "When the consequences are logical and informative rather than dangerous or shaming.", bundle: 'pro' },
+      ]
+    },
+  ],
+  parenting4: [
+    {
+      name: "The Principles of Calm",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "The theoretical foundation of self-regulation and pushback management.",
+      cards: [
+        { q: "What is the difference between reacting and responding?", a: "Reacting is an automatic emotional explosion; responding is a chosen, purposeful action.", bundle: 'free' },
+        { q: "Why should you \"Expect Pushback\"?", a: "Because children are learning to handle limits; protest is a normal part of that developmental process.", bundle: 'free' },
+        { q: "What should you do when a child uses \"mean words\"?", a: "Meet the frustration behind the words rather than defending yourself against the words.", bundle: 'free' },
+        { q: "What is \"Heartful Silence\"?", a: "Choosing to stop arguing and instead use calm action or brief cues to hold a limit.", bundle: 'pro' },
+        { q: "Why is \"High Expectations + Calm\" the target?", a: "It provides the child with both the clear standard they need and the safe container they require to meet it.", bundle: 'pro' },
+        { q: "What does it mean to \"Abandon the Struggle\"?", a: "Either giving in to the child to end the noise, or leaving them to handle overwhelming emotions alone.", bundle: 'pro' },
+      ]
+    },
+  ],
+  parenting5: [
+    {
+      name: "The Principles of Return",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "The theoretical foundation of repentance and modeling.",
+      cards: [
+        { q: "What is the \"Sixth Principle\" of the Kingdom model?", a: "Teach the joy of repentance—the path of doing wrong and returning to the good.", bundle: 'free' },
+        { q: "Why should parents apologize to their children?", a: "To model how to take responsibility and how to repair a relationship after a rupture.", bundle: 'free' },
+        { q: "What is the primary purpose of a Time-Out in this model?", a: "To allow the child's nervous system to return to a state of calm so they can re-engage.", bundle: 'free' },
+        { q: "What is the difference between \"Guilt\" and \"Repentance\"?", a: "Guilt is about who you are (shame); Repentance is about what you did and turning to make it right.", bundle: 'pro' },
+        { q: "What does it mean to \"Parent with the End in Mind\"?", a: "Focusing on the adult you want them to become (someone who can repent) rather than today's obedience.", bundle: 'pro' },
+        { q: "How does \"Connection Before Correction\" apply to repentance?", a: "A child must feel loved and secure (connection) before they can have the courage to admit a mistake (repentance).", bundle: 'pro' },
+      ]
+    },
+  ],
+  praxframe1: [
+    {
+      name: "The Frame Tetrahedron",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "The theoretical base of the Praxeology model.",
+      cards: [
+        { q: "What are the three base pillars of Frame?", a: "Physical, Intellectual, and Emotional.", bundle: 'free' },
+        { q: "What sits at the top of the Frame tetrahedron?", a: "Your Vision.", bundle: 'free' },
+        { q: "What is \"Frame\" in one sentence?", a: "Frame is how you conceptualize, process, and react to the world around you; it's who you are.", bundle: 'free' },
+        { q: "What is \"Mental Point of Origin\"?", a: "The internal locus of control where your own interests and values dictate your decisions.", bundle: 'pro' },
+        { q: "What is the \"OODA Loop\"?", a: "Observe, Orient, Decide, Act—a process for rapid calibration and problem-solving.", bundle: 'pro' },
+        { q: "What is \"Rule Zero\"?", a: "Male-centric sexual strategy and a positive male identity.", bundle: 'pro' },
+      ]
+    },
+  ],
+  praxframe2: [
+    {
+      name: "Subtext Mechanics",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "Key definitions for mastering intersexual communication.",
+      cards: [
+        { q: "What are the two channels of every conversation?", a: "Content (objective information) and Process (subtext/status outcomes).", bundle: 'free' },
+        { q: "What is \"Whisper’s Rule\"?", a: "Translating women's advice by adding \"I want to feel like...\" to the statement.", bundle: 'free' },
+        { q: "What is a \"Hamster\"?", a: "A mental model describing how emotions drive a woman's processing of the world.", bundle: 'free' },
+        { q: "What are the two axes of \"Closed Communication\"?", a: "Status (Higher/Lower) and Harmony (Cooperative/Adversarial).", bundle: 'pro' },
+        { q: "Why is \"Arguing with Women\" a categorical error?", a: "Men argue for factual truth; women argue for status and moral objectivity.", bundle: 'pro' },
+        { q: "What is \"Kayfabe\"?", a: "Theater being presented as real where the audience (and actor) suspends disbelief.", bundle: 'pro' },
+      ]
+    },
+  ],
+  praxframe3: [
+    {
+      name: "Assertive Defense Mechanics",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "The theoretical foundation of protecting your frame verbally.",
+      cards: [
+        { q: "What does DEER stand for?", a: "Defend, Excuse, Explain, Rationalize..", bundle: 'free' },
+        { q: "Why is DEERing a failure of frame?", a: "Because it's a submissive action that seeks her permission and authority over your decisions.", bundle: 'free' },
+        { q: "What is the primary purpose of Fogging?", a: "To acknowledge her subjective truth without accepting her narrative or accusations.", bundle: 'free' },
+        { q: "What is the \"Emasculation Paradox\"?", a: "The idea that submitting to her to avoid conflict actually makes her contempt and conflict more likely.", bundle: 'pro' },
+        { q: "What is \"Negative Assertion\"?", a: "Admitting a factual mistake without the submissive baggage of an apology or guilt.", bundle: 'pro' },
+        { q: "What is \"Assertive Right #10\"?", a: "You have the right to say, \"I don't care.\".", bundle: 'pro' },
+      ]
+    },
+  ],
+  praxframe4: [
+    {
+      name: "Nice Guy Mechanics",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "Key concepts from the Praxeology and \"No More Mr. Nice Guy\" models.",
+      cards: [
+        { q: "What is a \"Covert Contract\"?", a: "An unspoken expectation where you do something for someone hoping to get validation/sex in return.", bundle: 'free' },
+        { q: "What does DEER stand for?", a: "Defend, Excuse, Explain, Rationalize.", bundle: 'free' },
+        { q: "Why is \"Altruism\" a trap for men?", a: "Because it often functions as a \"Stay Monogamous to your Mother\" survival strategy.", bundle: 'free' },
+        { q: "What is \"Evolutionary Selfishness\"?", a: "The process where a woman instinctively distances emotionally from a man who has lost his frame.", bundle: 'pro' },
+        { q: "What is the \"Emasculation Paradox\"?", a: "Submitting to her to avoid her anger, which actually creates the contempt that makes her more angry.", bundle: 'pro' },
+        { q: "What is \"Rule Zero\"?", a: "Male-centric sexual strategy and a positive male identity.", bundle: 'pro' },
+      ]
+    },
+  ],
+  praxframe5: [
+    {
+      name: "The Leader’s Vision",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "Key concepts behind the \"Final Pillar.\"",
+      cards: [
+        { q: "What is the definition of \"Vision\" in a relationship?", a: "A generally-stated plan-of-action toward a distant but achievable goal.", bundle: 'free' },
+        { q: "Why is Vision a \"Display of Higher Value\" (DHV)?", a: "Because it signals character, foresight, and initiative, giving her a \"port\" to sail toward.", bundle: 'free' },
+        { q: "What are the three base pillars that hold up Vision?", a: "The Physical, Intellectual, and Emotional pillars.", bundle: 'free' },
+        { q: "Should Vision be detailed or general?", a: "It should be short on details and long on generalizations to remain inspiring.", bundle: 'free' },
+        { q: "What happens to a marriage without Vision?", a: "The partner finds it difficult to invest emotionally because there is no intended destination.", bundle: 'free' },
+        { q: "What is \"Narrative of Intent\"?", a: "Communicating the kind of man you intend to be and the life you intend to lead.", bundle: 'pro' },
+        { q: "How does Vision handle rejection?", a: "By framing rejections as tangible signs of progress toward the ultimate goal.", bundle: 'pro' },
+        { q: "Who is allowed to join you in your Vision?", a: "Only those who can demonstrate value to you; it is a form of luxury branding.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Leading Without Permission",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "",
+      cards: [
+        { q: "Do leaders need permission to lead?", a: "No. Thinking people have to follow so you can lead is \"ass-backwards.\"", bundle: 'free' },
+        { q: "Who is the first person you must lead?", a: "Yourself. Leadership doesn't require followers initially.", bundle: 'free' },
+        { q: "What is the \"Tom Sawyer\" law of action?", a: "To make a person covet a thing, it is only necessary to make the thing difficult to attain.", bundle: 'free' },
+        { q: "What is the \"Drunk Captain\" dynamic?", a: "A man who wants authority but cannot lead his own life or perform adult tasks competently.", bundle: 'free' },
+        { q: "How do you transition from the \"child\" frame to the \"Captain\" frame?", a: "By doing what needs to be done on your own timeline and standard without seeking approval.", bundle: 'free' },
+        { q: "What does \"Their fault, your responsibility\" mean?", a: "The Captain is responsible for everything on the ship, regardless of who caused the issue.", bundle: 'pro' },
+        { q: "Why is nagging a sign of a \"minion\" dynamic?", a: "Because leaders don't have time for nagging; they prioritize according to vision, not emotion.", bundle: 'pro' },
+        { q: "What is the best response to her \"bossing you around\"?", a: "\"Babe, I got it.\" — and then taking complete responsibility for the task.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Push and Pull",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "",
+      cards: [
+        { q: "What is the emotional purpose of \"Push and Pull\"?", a: "To take her on an emotional journey that cycles between tension (Push) and release (Pull).", bundle: 'free' },
+        { q: "Why is \"Tension\" necessary for attraction?", a: "Because sustainable desire requires strong emotions, both positive and negative.", bundle: 'free' },
+        { q: "What is a \"Push\" behavior?", a: "Withdrawing approval, challenging her frame, or being playfully aloof.", bundle: 'free' },
+        { q: "What is a \"Pull\" behavior?", a: "Rewarding her investment with warmth, comfort, and high-quality attention.", bundle: 'free' },
+        { q: "What happens if you are \"all Pull\" (too nice)?", a: "You become a \"fan\" or a dependent, and her sexual attraction vanishes.", bundle: 'free' },
+        { q: "What is \"Hysteric Bonding\"?", a: "A neurotic, pathological need for sex driven by the fear of losing a high-value man.", bundle: 'pro' },
+        { q: "What is the \"Emasculation Paradox\"?", a: "Submitting to avoid conflict, which creates the contempt that makes future conflict more likely.", bundle: 'pro' },
+        { q: "How do you \"reward\" feminine effort?", a: "By providing your presence and warm validation only when she adds value to your world.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Rule Zero (Rational Egoism)",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "",
+      cards: [
+        { q: "What is \"Rule Zero\"?", a: "Male-centric sexual strategy and a positive male identity.", bundle: 'free' },
+        { q: "What is \"Rational Egoism\"?", a: "The philosophy of living unapologetically for yourself and maximizing your own strengths.", bundle: 'free' },
+        { q: "Why is \"Altruism\" dangerous for men?", a: "Because it often functions as a covert contract where men \"give\" to avoid abandonment.", bundle: 'free' },
+        { q: "What is the \"Glue Factory\" analogy?", a: "Horses that no longer plow (sacrifice their frame) are discarded; sacrifice is never rewarded with security.", bundle: 'free' },
+        { q: "What are the three things most men agree are \"good\"?", a: "Financial freedom, sexual abundance, and physical fitness.", bundle: 'free' },
+        { q: "What is \"Outcome Independence\"?", a: "Becoming your best self for your own sake, regardless of whether she stays or leaves.", bundle: 'pro' },
+        { q: "What is \"Mental Point of Origin\"?", a: "The internal locus of control where your own interests and values dictate your decisions.", bundle: 'pro' },
+        { q: "What does it mean to \"Hate her, just a little bit\"?", a: "To stop seeing her as a fantasy and see her as a human being so you can lead with confidence.", bundle: 'pro' },
+      ]
+    },
+  ],
+  praxdread1: [
+    {
+      name: "STFU",
+      guideFront: "A question about STFU.",
+      guideBack: "The answer.",
+      description: "The theoretical foundation of silent frame.",
+      cards: [
+        { q: "What are the three channels of communication?", a: "55% body language, 38% intonation, and 7% actual words.", bundle: 'free' },
+        { q: "Why is \"explaining yourself\" a mistake?", a: "Because it confirmed to her that you are seeking her permission and validation.", bundle: 'free' },
+        { q: "When should you use words in Dread?", a: "To offer a direct explanation of _observed_ changes in behavior, after they have been established.", bundle: 'free' },
+        { q: "What is the \"7% rule\" in practice?", a: "Verbal affirmations are \"cope\"; only 93% action and body language paint a clear picture of change.", bundle: 'pro' },
+        { q: "What is \"Magic Pussy Syndrome\"?", a: "A woman's ego-driven assumption that her sexual rejection should put a man into a \"spiral of misery.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The 2/3rds Rule",
+      guideFront: "A question about the 2/3rds Rule.",
+      guideBack: "The answer.",
+      description: "",
+      cards: [
+        { q: "What is the core rule of 2/3rds?", a: "Give back to her 2/3rds of whatever non-sexual investment you receive from her.", bundle: 'free' },
+        { q: "Why avoid \"Sacrificial Love\"?", a: "Because sexual desire is tangential to sacrifice; \"back pats\" do not translate into \"blowjobs.\"", bundle: 'free' },
+        { q: "What happens if you are too predictable?", a: "People only follow your incentives when they want something; intermittent rewards create investment.", bundle: 'free' },
+        { q: "What is \"Choreplay\"?", a: "The failed strategy of doing dishes to \"lower her stress\" in hopes of getting sex.", bundle: 'pro' },
+        { q: "What is the \"Cardinal Rule\" of relationships?", a: "The person who needs the other person less has the power.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The 1,000-Foot Tow Rope",
+      guideFront: "A question about the Tow Rope.",
+      guideBack: "The answer.",
+      description: "",
+      cards: [
+        { q: "What is the \"slack\" in the rope?", a: "The period where your self-improvement doesn't yet affect her frame or behavior.", bundle: 'free' },
+        { q: "What is the \"jerk\" in the line?", a: "The moment her hamster realizes you are so far ahead that she might be left behind.", bundle: 'free' },
+        { q: "What does \"Outcome Independence\" mean here?", a: "Becoming a high-value man for yourself, regardless of whether she stays or goes.", bundle: 'free' },
+        { q: "Why is the \"Stay Plan\" the same as the \"Go Plan\"?", a: "Because both require you to become the most attractive, competent version of yourself.", bundle: 'pro' },
+        { q: "What is \"Evolutionary Selfishness\"?", a: "The phase where a woman instinctively distances herself from a man who has lost his frame.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Standard-Setting Lead",
+      guideFront: "A question about Standard-Setting.",
+      guideBack: "The answer.",
+      description: "",
+      cards: [
+        { q: "What is a \"Drunk Captain\"?", a: "A man who wants authority but cannot lead his own life or perform adult tasks competently.", bundle: 'free' },
+        { q: "Do leaders need permission?", a: "No. Thinking you can't lead because she \"doesn't let you\" is having it backwards.", bundle: 'free' },
+        { q: "What is the best \"apology\" for a mistake?", a: "Correcting the mistake and ensuring it doesn't happen again.", bundle: 'free' },
+        { q: "What are the 4 outcomes of a chore?", a: "1. Her standard/her timeline, 2. Her standard/your timeline, 3. Your standard/her timeline, 4. Your standard/your timeline.", bundle: 'pro' },
+        { q: "Which outcome signifies a man with Frame?", a: "Outcome 4: Your standard on your timeline.", bundle: 'pro' },
+      ]
+    },
+  ],
+  praxdread2: [
+    {
+      name: "Luxury Branding Mechanics",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "Key definitions for mastering the \"Marketing of Value.\"",
+      cards: [
+        { q: "What are the four concepts of luxury branding?", a: "Scarcity, Loss Aversion, Conditioning, and Framing.", bundle: 'free' },
+        { q: "Why is \"Covert\" communication necessary?", a: "Because women hate sales but love marketing; directness signals desperation.", bundle: 'free' },
+        { q: "What is the \"Cardinal Rule\" of relationships?", a: "The person who needs the other person less has the power.", bundle: 'free' },
+        { q: "What is \"Magic Pussy Syndrome\"?", a: "A woman's ego-driven assumption that her sexual rejection should cause a man to spiral into misery.", bundle: 'pro' },
+        { q: "What is \"Intermittent Reward\" in conditioning?", a: "Providing rewards only after desired behavior and not every time, which ensures the behavior continues by default.", bundle: 'pro' },
+        { q: "What is the \"Tow Rope\" model?", a: "A mental model where your self-improvement takes time to affect her behavior; you must lead regardless of her immediate reaction.", bundle: 'pro' },
+      ]
+    },
+  ],
+  praxdread3: [
+    {
+      name: "Enforcing Standards",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "Key definitions for the transition from Beta to Alpha.",
+      cards: [
+        { q: "What is \"Magic Pussy Syndrome\"?", a: "A woman's ego-driven assumption that her sexual rejection should cause a man to spiral into misery.", bundle: 'free' },
+        { q: "Why is \"negotiated desire\" a fail state?", a: "Because it only leads to obligated compliance, which feels like rape to the woman and sterile to the man.", bundle: 'free' },
+        { q: "What are the three dysfunctional captains?", a: "1. The Drunken Captain, 2. The Neurotic Captain, 3. The Captain's Husband.", bundle: 'free' },
+        { q: "What is \"Hysteric Bonding\"?", a: "A neurotic, pathological need for sex that functions like a fight-or-flight response to the fear of losing a man.", bundle: 'pro' },
+        { q: "What is \"Briffault’s Law\"?", a: "The principle that the female, not the male, determines all the conditions of the animal family.", bundle: 'pro' },
+        { q: "What is the \"Emasculation Paradox\"?", a: "Submitting to avoid conflict, which creates the contempt that makes future conflict more certain.", bundle: 'pro' },
+      ]
+    },
+  ],
+  praxdread4: [
+    {
+      name: "Emotional Mechanics",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "Key definitions for mastering interpersonal friction.",
+      cards: [
+        { q: "What are the three components of communication?", a: "55% body language, 38% intonation, and 7% actual words.", bundle: 'free' },
+        { q: "What is \"Goldfish Memory\"?", a: "Resetting to normal immediately after a conflict and refusing to revisit or hold a grudge.", bundle: 'free' },
+        { q: "Why \"Manufacture Outrage\"?", a: "Because attraction requires strong emotions (negative and positive) to remain sustainable.", bundle: 'free' },
+        { q: "What defines a \"Main Event\"?", a: "A massive blowup of desperation where she admits she doesn't know how to keep you.", bundle: 'pro' },
+        { q: "What is the goal of \"Controlled Anger\"?", a: "To make her escalation uncomfortable and her de-escalation comfortable (operant conditioning).", bundle: 'pro' },
+        { q: "Why is \"Mystery\" essential for a prize?", a: "Because explaining the rules kills the magic and signals the desperation of a salesman.", bundle: 'pro' },
+      ]
+    },
+  ],
+  praxdread5: [
+    {
+      name: "The Roadmap Principles",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "Theoretical foundations of agency and the final Dread outcomes.",
+      cards: [
+        { q: "What defines a \"Main Event\"?", a: "The mother of all comfort tests where she realizes she might lose you and is out of ideas.", bundle: 'free' },
+        { q: "What are the three components of a \"Come to Jesus\"?", a: "1. Articulate vision, 2. Succinctness, 3. Providing an exit strategy.", bundle: 'free' },
+        { q: "What is \"Remorse Checklist\" utility?", a: "To test yourself and your standards rather than just her words.", bundle: 'free' },
+        { q: "What is \"Stay/Go Congruence\"?", a: "Acting so that your self-improvement is the same whether you stay or leave.", bundle: 'pro' },
+        { q: "What is \"Magic Pussy Syndrome\"?", a: "A woman's ego-driven assumption that her sexual rejection should cause a man's misery.", bundle: 'pro' },
+        { q: "What is the \"Emasculation Paradox\"?", a: "Submitting to avoid conflict, which actually creates the contempt that makes conflict certain.", bundle: 'pro' },
+      ]
+    },
+  ],
 };

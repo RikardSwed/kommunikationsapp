@@ -196,6 +196,72 @@ const packTags = {
   responsivehumour: [
     'humour', 'being funny', 'quick replies', 'banter', 'playfulness', 'reacting'
   ],
+  masculine1: [
+    'masculinity', 'leadership', 'relationships', 'boundaries', 'presence', 'communication'
+  ],
+  masculine2: [
+    'masculinity', 'leadership', 'relationships', 'repair', 'sexual leadership', 'boundaries'
+  ],
+  masculine3: [
+    'masculinity', 'leadership', 'relationships', 'intimacy', 'nervous system', 'vulnerability'
+  ],
+  masculine4: [
+    'masculinity', 'leadership', 'anxiety', 'grounding', 'boundaries', 'shadow-work'
+  ],
+  masculine5: [
+    'masculinity', 'leadership', 'provider', 'protector', 'stability', 'logistics'
+  ],
+  masculine6: [
+    'masculinity', 'embodiment', 'meditation', 'nervous system', 'presence', 'grounding'
+  ],
+  masculinesv: [
+    'maskulinitet', 'ledarskap', 'relationer', 'gränser', 'närvaro', 'kommunikation'
+  ],
+  parenting1: [
+    'parenting', 'connection', 'empathy', 'mamalakis', 'kingdom'
+  ],
+  parenting2: [
+    'parenting', 'limits', 'discipline', 'mamalakis', 'kingdom', 'structure'
+  ],
+  parenting3: [
+    'parenting', 'struggle', 'competence', 'mamalakis', 'kingdom', 'growth'
+  ],
+  parenting4: [
+    'parenting', 'self-regulation', 'pushback', 'mamalakis', 'kingdom', 'calm'
+  ],
+  parenting5: [
+    'parenting', 'repentance', 'repair', 'mamalakis', 'kingdom', 'modeling'
+  ],
+  praxframe1: [
+    'praxeology', 'frame', 'rian stone', 'ooda loop', 'mindset', 'calibration'
+  ],
+  praxframe2: [
+    'praxeology', 'subtext', 'status', 'harmony', 'communication', 'rian stone'
+  ],
+  praxframe3: [
+    'praxeology', 'assertiveness', 'frame', 'boundaries', 'conflict', 'rian stone'
+  ],
+  praxframe4: [
+    'praxeology', 'nice-guy', 'covert-contracts', 'assertiveness', 'boundaries', 'rian-stone'
+  ],
+  praxframe5: [
+    'praxeology', 'leadership', 'vision', 'rule zero', 'dhv', 'rian stone'
+  ],
+  praxdread1: [
+    'praxeology', 'dread', 'frame', 'rian stone', 'stfu', 'leadership'
+  ],
+  praxdread2: [
+    'praxeology', 'dread', 'marketing', 'status', 'rian stone'
+  ],
+  praxdread3: [
+    'praxeology', 'dread', 'rejection', 'intimacy', 'leadership', 'rian stone'
+  ],
+  praxdread4: [
+    'praxeology', 'dread', 'emotions', 'anger', 'main event', 'rian stone'
+  ],
+  praxdread5: [
+    'praxeology', 'dread', 'agency', 'vision', 'leadership', 'treasury', 'remorse', 'rian stone'
+  ],
 };
 
 // ─── TOPICS ──────────────────────────────────────────────────────────
@@ -250,7 +316,7 @@ const TOPICS = [
   { id: 'boundaries',            title: 'Asking & Saying No',            packs: ['playfulrefusals', 'thehappyno', 'theregretfulno', 'makingrequests', 'sayingno'] },
 
   // ── The hard end ──────────────────────────────────────────────────
-  { id: 'emotions',              title: 'Emotions & Regulation',         packs: ['emotionlabellingandregulation', 'conflictemotions'] },
+  { id: 'emotions',              title: 'Emotions & Regulation',         packs: ['emotionlabellingandregulation', 'conflictemotions', 'praxdread4'] },
 
   // ── Lightness ─────────────────────────────────────────────────────
   { id: 'humour',                title: 'Humour & Banter',               packs: ['humour', 'teasing', 'selfhumour', 'humourpractise', 'playfulrefusals', 'rolebasedhumour', 'responsivehumour'] },
@@ -260,6 +326,6 @@ const TOPICS = [
   { id: 'giving',                title: 'Giving & Receiving',            packs: [] },
   { id: 'selfpresentation',      title: 'Self-Presentation',             packs: [] },
   { id: 'flirt',                 title: 'Flirting',                      packs: [] },
-  { id: 'leadership',            title: 'Leadership',                    packs: [] },
-  { id: 'relationshipcomm',      title: 'Communication in Relationships',packs: [] },
+  { id: 'leadership',            title: 'Leadership',                    packs: ['praxframe5', 'praxdread5'] },
+  { id: 'relationshipcomm',      title: 'Communication in Relationships',packs: ['masculine1', 'masculine2', 'masculine3', 'masculine4', 'masculine5', 'masculine6', 'masculinesv', 'parenting1', 'parenting2', 'parenting3', 'parenting4', 'parenting5', 'praxframe1', 'praxframe2', 'praxframe3', 'praxframe4', 'praxdread1', 'praxdread2', 'praxdread3'] },
 ];

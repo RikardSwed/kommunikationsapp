@@ -221,7 +221,29 @@ applyInputCounterVisibility();
     respondingtopassiveaggression: { label: 'Responding to Passive Aggression', minLevel: 'pro' },
     makingrequests: { label: 'Making Requests', minLevel: 'pro' },
     sayingno: { label: 'Saying No', minLevel: 'pro' },
-    rolebasedhumour: { label: 'Role Based Humour', minLevel: 'program' },      // Humour, Part 2
+    rolebasedhumour: { label: 'Role Based Humour', minLevel: 'program' },      // Humour, Part 2,
+    masculine1: { label: 'The Masculine Blueprint – Part 1', minLevel: 'complete' },
+    masculine2: { label: 'The Masculine Blueprint – Part 2', minLevel: 'complete' },
+    masculine3: { label: 'The Masculine Blueprint – Part 3', minLevel: 'complete' },
+    masculine4: { label: 'The Masculine Blueprint – Part 4', minLevel: 'complete' },
+    masculine5: { label: 'The Masculine Blueprint – Part 5', minLevel: 'complete' },
+    masculine6: { label: 'The Masculine Blueprint – Part 6', minLevel: 'complete' },
+    masculinesv: { label: 'The Masculine Blueprint – Svenska', minLevel: 'complete' },
+    parenting1: { label: 'Parenting 01 – The Heart of Connection', minLevel: 'complete' },
+    parenting2: { label: 'Parenting 02 – The Architecture of Limits', minLevel: 'complete' },
+    parenting3: { label: 'Parenting 03 – Mastering the Struggle', minLevel: 'complete' },
+    parenting4: { label: 'Parenting 04 – Calm in the Storm', minLevel: 'complete' },
+    parenting5: { label: 'Parenting 05 – The Path of Repentance', minLevel: 'complete' },
+    praxframe1: { label: 'Praxeology Frame 01 – The Foundation of Frame', minLevel: 'complete' },
+    praxframe2: { label: 'Praxeology Frame 02 – Mastering Subtext', minLevel: 'complete' },
+    praxframe3: { label: 'Praxeology Frame 03 – Assertive Defense', minLevel: 'complete' },
+    praxframe4: { label: 'Praxeology Frame 04 – Breaking the Nice Guy Loop', minLevel: 'complete' },
+    praxframe5: { label: 'Praxeology Frame 05 – Leadership and Vision', minLevel: 'complete' },
+    praxdread1: { label: 'Praxeology Dread 01 – The Silent Shift', minLevel: 'complete' },
+    praxdread2: { label: 'Praxeology Dread 02 – The Marketing of Value', minLevel: 'complete' },
+    praxdread3: { label: 'Praxeology Dread 03 – Enforcing Expectations', minLevel: 'complete' },
+    praxdread4: { label: 'Praxeology Dread 04 – Emotional Mechanics', minLevel: 'complete' },
+    praxdread5: { label: 'Praxeology Dread 05 – The Roadmap to Agency', minLevel: 'complete' },
   };
 
   // ── PROGRAM_CONFIG (v1.26.81) ─────────────────────────────────────────
@@ -1419,6 +1441,314 @@ const BUNDLE_DEFS = {
     },
   ],
   responsivehumour: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  masculine1: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  masculine2: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  masculine3: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  masculine4: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  masculine5: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  masculine6: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  masculinesv: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  parenting1: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  parenting2: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  parenting3: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  parenting4: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  parenting5: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  praxframe1: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  praxframe2: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  praxframe3: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  praxframe4: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  praxframe5: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  praxdread1: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  praxdread2: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  praxdread3: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  praxdread4: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  praxdread5: [
     {
       id: 'free',
       tier: 'free',
