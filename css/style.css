@@ -835,10 +835,11 @@ body.pb-enabled .divider::after {
   display: none;
   justify-content: space-around;
   align-items: center;
-  /* v1.26.91 — pushed down and away from the card text. The circles sat close
-     enough to the body copy to be hit while reaching to flip or swipe, so the
-     gap above them grew and the gap below them shrank. */
-  padding: 14px 12px 8px;
+  /* v1.26.93 — pushed further down still. The first attempt (14px above, 8px
+     below) was not enough separation from the body copy; the circles sit
+     right at the bottom edge now, which is the whole point — a thumb
+     reaching to flip or swipe should never find one. */
+  padding: 26px 12px 4px;
   width: 100%;
   position: absolute;
   bottom: 0;
