@@ -2483,7 +2483,80 @@ if (resetFirstRunBtn) resetFirstRunBtn.addEventListener('click', () => {
 // EDITING RULE: this list is NOT updated every release. Add an entry only
 // for a NEW PACK or a real feature; bugfixes and internal work stay out.
 // Newest first. Keep each line in the user's language, not the changelog's.
+//
+// TWO AUDIENCES (v1.26.97). An entry with no `audience` is a normal user
+// entry: it shows in the Settings row everybody can reach, AND in the
+// developer list. An entry with `audience: 'dev'` shows ONLY in developer
+// settings, marked with a tag. What belongs where:
+//   user  — packs, programs and features a freemium or Pro user can actually
+//           reach and use. Written in their language.
+//   dev   — developer-only tooling (feedback mode, tag mode, the editor,
+//           the import scripts), anything at minLevel 'complete' since it is
+//           invisible to everyone else, and structural work worth being able
+//           to date later.
+// Both lists are in the same array so a user entry never has to be written
+// twice; the developer list is simply the unfiltered one.
 const WHATS_NEW = [
+  {
+    version: 'v1.26.97', date: 'August 2026', title: 'Feedback circles, and this screen', audience: 'dev',
+    items: [
+      'The rating circles in feedback mode sit at the bottom edge of the card now. They were positioned against the inner card face, which left 40px of the card’s own padding underneath them — that is why three rounds of extra padding barely moved them.',
+      'The bar no longer swallows touches. Only the circles themselves take a tap, so a swipe or a flip that starts near them reaches the card.',
+      '<strong>What’s new</strong> is two lists. The row in normal settings shows what a user can use; this one shows everything, including developer-only work.',
+    ],
+  },
+  {
+    version: 'v1.26.96', date: 'August 2026', title: 'Checkpoint questions come from the vault', audience: 'dev',
+    items: [
+      '<strong>tools/import-test.js</strong> and <strong>tools/export-tests.js</strong> — question banks now live as .md files in <em>Programs/Tests/</em> and import into the app the same way packs do. No manifest: each file names its own program, section and checkpoint.',
+      'The syntax is the one the in-app editor already reads, so a test file can be pasted into the editor as well. Full reference in <em>Appdokumentation/import syntax/Testsyntax</em>.',
+      'Question banks finished so far: Conversation Foundations, Say It Well, Opening a Conversation and Warmth &amp; Connection — 40 questions each, 20 drawn.',
+    ],
+  },
+  {
+    version: 'v1.26.92', date: 'August 2026', title: '22 packs at complete level', audience: 'dev',
+    items: [
+      'Imported from NotebookLM and visible to nobody but you: <strong>The Masculine Blueprint</strong> Pt. 1–6 plus the Swedish one, <strong>Parenting</strong> 01–05, <strong>Praxeology Frame</strong> 01–05 and <strong>Praxeology Dread</strong> 01–05.',
+      'All at minLevel ‘complete’, so they appear in no list at freemium, Pro or Extended.',
+      'Open question before any of it ships: the <em>Refusing the Rejection</em> strategy in The Masculine Blueprint.',
+    ],
+  },
+  {
+    version: 'v1.26.90', date: 'August 2026', title: 'Beta codes, both ways', audience: 'dev',
+    items: [
+      '<strong>BETA2026</strong> grants Pro for 60 days, redeemed in Settings. The grant is a date rather than a flag, so it lapses on the tester’s own device whatever you push.',
+      '<strong>Clear beta access code</strong> in developer settings takes it back immediately, without wiping progress or favourites.',
+    ],
+  },
+  {
+    version: 'v1.26.89', date: 'August 2026', title: 'If you have an access code',
+    items: [
+      'Settings now has <strong>Have an access code?</strong> — enter one to unlock Pro for a set period. Codes are given out for testing.',
+    ],
+  },
+  {
+    version: 'v1.26.86', date: 'August 2026', title: 'Six programmes to work through',
+    items: [
+      'New programmes: <strong>Say It Well</strong>, <strong>Warmth &amp; Connection</strong>, <strong>Opening a Conversation</strong>, <strong>Persuasion &amp; Negotiation</strong> and <strong>Humour</strong> — alongside Conversation Foundations, which stays free through Part 2.',
+      'Some packs are now <em>earned</em>. They are not in the Library at all until you pass the checkpoint that releases them, and then they appear everywhere at once and stay yours.',
+      '<strong>Difficult Conversations</strong> is available in the Extended store as a programme of its own.',
+    ],
+  },
+  {
+    version: 'v1.26.82', date: 'August 2026', title: 'Programme tiers', audience: 'dev',
+    items: [
+      'PROGRAM_CONFIG gives programmes the same four levels as packs, and a programme missing from the table defaults to ‘pro’ with a console warning rather than being handed out free.',
+      'New pack level <strong>program</strong>: hidden everywhere until a checkpoint releases it. Sections carry their own minLevel, which is how Conversation Foundations is free through Part 2 and Pro from Part 3.',
+    ],
+  },
+  {
+    date: 'Earlier builds', title: 'Developer tools', audience: 'dev',
+    items: [
+      '<strong>Feedback mode</strong> — four circles on every card for rating the content as you train. The ratings are yours alone; tapping the selected circle again clears it.',
+      '<strong>Tag mode</strong> — adds tagging controls, including the gear on a programme screen and the Free/Pro/Ext bar for setting a card’s access level.',
+      '<strong>The editor</strong> — builds and edits packs and programmes in the browser, and reads the same paste format the import scripts use.',
+    ],
+  },
   {
     version: 'v1.26.78', date: 'August 2026', title: 'Two new packs',
     items: [
@@ -2579,18 +2652,30 @@ const WHATS_NEW = [
   const overlay = document.getElementById('whatsNewOverlay');
   const close   = document.getElementById('whatsNewClose');
   const body    = document.getElementById('whatsNewBody');
-  if (!btn || !overlay || !body) return;
+  const title   = document.getElementById('whatsNewTitle');
+  if (!overlay || !body) return;
 
-  body.innerHTML = WHATS_NEW.map(e =>
-    '<div class="whatsnew-entry">'
-    + '<div class="whatsnew-title">' + e.title + '</div>'
-    + '<div class="whatsnew-meta">' + e.date + ' \u00b7 ' + e.version + '</div>'
-    + '<ul class="whatsnew-list">'
-    + e.items.map(i => '<li>' + i + '</li>').join('')
-    + '</ul></div>'
-  ).join('');
+  // v1.26.97 \u2014 rendered per opening rather than once, because the same
+  // overlay now shows two different lists. 'dev' shows everything.
+  function render(mode) {
+    const entries = mode === 'dev' ? WHATS_NEW : WHATS_NEW.filter(e => e.audience !== 'dev');
+    if (title) title.innerHTML = mode === 'dev' ? 'What&rsquo;s new \u2014 all entries' : 'What&rsquo;s new';
+    body.innerHTML = entries.map(e =>
+      '<div class="whatsnew-entry">'
+      + '<div class="whatsnew-title">' + e.title
+      + (mode === 'dev' && e.audience === 'dev' ? '<span class="whatsnew-tag">dev</span>' : '')
+      + '</div>'
+      + '<div class="whatsnew-meta">' + e.date + (e.version ? ' \u00b7 ' + e.version : '') + '</div>'
+      + '<ul class="whatsnew-list">'
+      + e.items.map(i => '<li>' + i + '</li>').join('')
+      + '</ul></div>'
+    ).join('');
+    body.scrollTop = 0;
+  }
 
-  btn.addEventListener('click', () => overlay.classList.add('open'));
+  window._whatsNew = { open: mode => { render(mode === 'dev' ? 'dev' : 'user'); overlay.classList.add('open'); } };
+
+  if (btn) btn.addEventListener('click', () => window._whatsNew.open('user'));
   if (close) close.addEventListener('click', () => overlay.classList.remove('open'));
   overlay.addEventListener('click', e => { if (e.target === overlay) overlay.classList.remove('open'); });
 })();
@@ -3221,8 +3306,9 @@ const RECO_RULES = {
   on('devShowRating',   () => { if (window._rating) window._rating.open('ask'); });
   on('devShowFeedback', () => { if (window._rating) window._rating.open('form'); });
   on('devShowWhatsNew', () => {
-    const o = document.getElementById('whatsNewOverlay');
-    if (o) o.classList.add('open');
+    // v1.26.97 — the developer list: user entries plus the dev-only ones.
+    if (window._whatsNew) window._whatsNew.open('dev');
+    else { const o = document.getElementById('whatsNewOverlay'); if (o) o.classList.add('open'); }
   });
   on('devShowPackIntro', () => {
     let k = window.activeCollectionKey;
