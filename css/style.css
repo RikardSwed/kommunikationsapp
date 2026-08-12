@@ -835,15 +835,23 @@ body.pb-enabled .divider::after {
   display: none;
   justify-content: space-around;
   align-items: center;
-  /* v1.26.93 — pushed further down still. The first attempt (14px above, 8px
-     below) was not enough separation from the body copy; the circles sit
-     right at the bottom edge now, which is the whole point — a thumb
-     reaching to flip or swipe should never find one. */
-  padding: 26px 12px 4px;
+  /* v1.26.97 — the real fix, after three rounds of adding padding that barely
+     moved anything. The bar is positioned against .card-face, which fills
+     .card-inner — and .card has 40px of its own padding below that. So
+     bottom: 0 was never the bottom of the CARD, it was 40px above it, and no
+     amount of padding inside the bar could reach past that. A negative bottom
+     pushes the bar down into the card's own padding, which is empty space:
+     -34px leaves the circles about 6px from the visible bottom edge.
+     The other half of the problem was the bar itself. It spans the full width
+     and used to be tall, so a swipe or a flip that started anywhere near it
+     hit the bar instead of the card. pointer-events: none hands those touches
+     back to the card; only the circles themselves take a tap. */
+  padding: 0 12px;
   width: 100%;
   position: absolute;
-  bottom: 0;
+  bottom: -34px;
   left: 0;
+  pointer-events: none;
 }
 
 .feedback-mode .fb-bar {
@@ -857,6 +865,7 @@ body.pb-enabled .divider::after {
   border: none;
   cursor: pointer;
   padding: 0;
+  pointer-events: auto;   /* the bar itself is transparent to touches */
   transition: opacity 0.15s, transform 0.1s;
   -webkit-tap-highlight-color: transparent;
 }
@@ -2721,6 +2730,21 @@ body.tag-mode .program-settings-btn { display: block; }
 .whatsnew-entry:first-child { padding-top: 4px; }
 .whatsnew-entry:last-child  { border-bottom: none; }
 .whatsnew-title { font-size: 15px; font-weight: 700; color: var(--ds-txt); }
+/* v1.26.97 — marks a developer-only entry in the developer list */
+.whatsnew-tag {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 1px 7px;
+  border-radius: 10px;
+  background: var(--ds-card-alt);
+  border: 1px solid var(--ds-border-sub);
+  color: var(--ds-txt3);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
 .whatsnew-meta  { font-size: 11px; font-weight: 600; color: var(--ds-txt3); margin-top: 2px; letter-spacing: 0.02em; }
 .whatsnew-list  { margin: 8px 0 0; padding-left: 18px; }
 .whatsnew-list li { font-size: 14px; color: var(--ds-txt2); line-height: 1.6; margin-bottom: 6px; }
@@ -3516,6 +3540,8 @@ body.feedback-mode    .al-bar { display: none !important; }
 
   /* Training card: taller and roomier, like Quizlet's tablet flashcards */
   .card { min-height: 420px; padding: 48px 48px; }
+  /* the card's bottom padding grows to 48px here, so the bar follows it down */
+  .fb-bar { bottom: -42px; }
   .card-area { padding: 16px 32px 28px; }
   .card-text { font-size: 25px; }
   .card-back .card-text { font-size: 22px; }
