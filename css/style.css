@@ -841,7 +841,8 @@ body.pb-enabled .divider::after {
      bottom: 0 was never the bottom of the CARD, it was 40px above it, and no
      amount of padding inside the bar could reach past that. A negative bottom
      pushes the bar down into the card's own padding, which is empty space:
-     -34px leaves the circles about 6px from the visible bottom edge.
+     v1.26.97 used -34px, which landed a touch too low; -24px leaves the
+     circles roughly 16px above the visible bottom edge.
      The other half of the problem was the bar itself. It spans the full width
      and used to be tall, so a swipe or a flip that started anywhere near it
      hit the bar instead of the card. pointer-events: none hands those touches
@@ -849,7 +850,7 @@ body.pb-enabled .divider::after {
   padding: 0 12px;
   width: 100%;
   position: absolute;
-  bottom: -34px;
+  bottom: -24px;
   left: 0;
   pointer-events: none;
 }
@@ -3541,7 +3542,7 @@ body.feedback-mode    .al-bar { display: none !important; }
   /* Training card: taller and roomier, like Quizlet's tablet flashcards */
   .card { min-height: 420px; padding: 48px 48px; }
   /* the card's bottom padding grows to 48px here, so the bar follows it down */
-  .fb-bar { bottom: -42px; }
+  .fb-bar { bottom: -32px; }
   .card-area { padding: 16px 32px 28px; }
   .card-text { font-size: 25px; }
   .card-back .card-text { font-size: 22px; }
