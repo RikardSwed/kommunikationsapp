@@ -7,10 +7,10 @@
   <meta name="mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="default" />
   <meta name="apple-mobile-web-app-title" content="Deckstack" />
-  <link rel="manifest" href="manifest.json?v=12696" />
+  <link rel="manifest" href="manifest.json?v=12697" />
   <title>Deckstack</title>
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="stylesheet" href="css/style.css?v=12696" />
+  <link rel="stylesheet" href="css/style.css?v=12697" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
 </head>
 <body>
@@ -2500,10 +2500,13 @@
 
 <!-- WHAT'S NEW (v1.26.66) — a plain-language release list for users. The
      entries live in WHATS_NEW in app-system.js; only new packs and real
-     features go in, never bugfixes. -->
+     features go in, never bugfixes.
+     v1.26.97 — the same overlay now serves two lists. An entry marked
+     audience:'dev' is hidden from the Settings row everybody can reach and
+     shows only through developer settings, which sees everything. -->
 <div class="settings-overlay" id="whatsNewOverlay">
   <div class="settings-panel" style="max-height:82vh; overflow-y:auto;">
-    <div class="settings-title">What&rsquo;s new</div>
+    <div class="settings-title" id="whatsNewTitle">What&rsquo;s new</div>
     <div class="whatsnew-body" id="whatsNewBody"></div>
     <button class="settings-close" id="whatsNewClose">Done</button>
   </div>
@@ -2637,19 +2640,19 @@
   </button>
 </div>
 
-<script src="js/data.js?v=12696"></script>
-<script src="js/tagsData.js?v=12696"></script>
-<script src="js/programsData.js?v=12696"></script>
-<script src="js/challengesData.js?v=12696"></script>
-<script src="js/mindsetData.js?v=12696"></script>
-<script src="js/multiStepData.js?v=12696"></script>
-<script src="js/memorizeData.js?v=12696"></script>
-<script src="js/mode-engine.js?v=12696"></script>
-<script src="js/app-core.js?v=12696"></script>
-<script src="js/app-modes.js?v=12696"></script>
-<script src="js/app-handsfree.js?v=12696"></script>
-<script src="js/app-system.js?v=12696"></script>
-<script src="js/app-ui.js?v=12696"></script>
+<script src="js/data.js?v=12697"></script>
+<script src="js/tagsData.js?v=12697"></script>
+<script src="js/programsData.js?v=12697"></script>
+<script src="js/challengesData.js?v=12697"></script>
+<script src="js/mindsetData.js?v=12697"></script>
+<script src="js/multiStepData.js?v=12697"></script>
+<script src="js/memorizeData.js?v=12697"></script>
+<script src="js/mode-engine.js?v=12697"></script>
+<script src="js/app-core.js?v=12697"></script>
+<script src="js/app-modes.js?v=12697"></script>
+<script src="js/app-handsfree.js?v=12697"></script>
+<script src="js/app-system.js?v=12697"></script>
+<script src="js/app-ui.js?v=12697"></script>
 
 
 <!-- CHECKPOINT SCREEN -->
