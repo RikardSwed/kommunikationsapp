@@ -2898,4 +2898,112 @@ const mindsetCollections = {
       ]
     },
   ],
+  listeningthroughquestions: [
+    {
+      name: "The Question Is In Their Answer",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The pack-wide stance: you never have to invent a question, because their last sentence contains three or four. Looking for a good question is what makes people stop listening — the question you need is already on the table, and finding it only requires attention. Example of the shift — instead of thinking of what to ask next, you listen for the word to pick up.\n\nThe three thoughts that cause the trouble:\n1. \"I need an interesting question\" — you need a question about what they just said.\n2. \"I should think of the next one while they answer\" — that is how you miss it.\n3. \"I've run out of things to ask\" — you have run out of things you thought of in advance.\n\nMindset: listen for the noun, the odd word, or the half-sentence they hurried past. The question is already there.",
+      inputs: [
+        { q: "You are planning your next question while they are talking.", a: "\"That's how I miss the good one. It's in the sentence they're saying now.\"", bundle: 'pro' },
+        { q: "You feel you have run out of questions.", a: "\"I've run out of prepared ones. Their last answer has three in it.\"", bundle: 'pro' },
+        { q: "You want to ask something impressive.", a: "\"'Who was there?' has started more real conversations than anything clever.\"", bundle: 'pro' },
+        { q: "The conversation feels like hard work.", a: "\"Because I'm generating instead of following. Pick a word from what they just said.\"", bundle: 'pro' },
+        { q: "You are worried about the silence while you think.", a: "\"A beat before a question that follows beats a fast one that doesn't.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Following Beats Interviewing",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The stance that separates this from a questionnaire: a series of unconnected good questions is an interview, and people can feel it within two or three. The measure is not how good each question is but whether each one came out of the previous answer. Example of the shift — instead of moving to your next question, you go one step further into the one they just answered.\n\nWhere it goes wrong:\n1. You have a mental list and you are working through it.\n2. You ask a second question without responding to the first answer.\n3. Their answers get shorter and you ask harder questions in response.\n\nMindset: depth, not coverage. Four questions about one thing is a conversation; four questions about four things is a form.",
+      inputs: [
+        { q: "You are working through a mental list of questions.", a: "\"Bin the list. What did they just say that I want to know more about?\"", bundle: 'pro' },
+        { q: "Their answers are getting shorter.", a: "\"That's the interview feeling. Follow the last answer instead of moving on.\"", bundle: 'pro' },
+        { q: "You have learned four facts and followed none of them.", a: "\"Four facts, no conversation. Pick one and go into it.\"", bundle: 'pro' },
+        { q: "You want to cover more ground.", a: "\"Ground isn't the point. One thing, properly, is what they'll remember.\"", bundle: 'pro' },
+        { q: "You asked two questions in a row.", a: "\"Answer the first one myself, or react to it. Two in a row is a form.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ordinary Questions Work",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The stance about which questions to use: \"what happened next\" has drawn out more real accounts than any clever alternative, and its ordinariness is exactly why it is easy to answer. The interesting part of a conversation is their answer, not your question. Example of the shift — instead of searching for an original angle, you ask the obvious thing and listen properly.\n\nWhere the hesitation shows up:\n1. You discard the obvious question because it seems too plain.\n2. You look for an original angle while the moment passes.\n3. You judge your question by how it sounds rather than by how easy it is to answer.\n\nMindset: judge a question by how easy it is to answer. Plain to ask and easy to answer is the best trade in conversation.",
+      inputs: [
+        { q: "You discard a question for being too obvious.", a: "\"Obvious to ask, easy to answer. That trade wins every time.\"", bundle: 'pro' },
+        { q: "You are looking for an original angle.", a: "\"The ordinary question asked now beats the clever one asked never.\"", bundle: 'pro' },
+        { q: "You worry the question is too simple.", a: "\"Simple is the point. The conversation happens in their answer.\"", bundle: 'pro' },
+        { q: "You want to seem interesting rather than interested.", a: "\"Interested is what they'll remember. Interesting is what I'll remember.\"", bundle: 'pro' },
+        { q: "You are stuck between two questions.", a: "\"Ask the easier one. It gets a longer answer anyway.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "One More Question",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The stance about where to stop: most conversations end one question before the interesting part, because the account reached a natural pause and everybody took it. The extra question costs nothing and is very often where the actual story was. Example of the shift — instead of saying \"oh, nice\" and moving on, you ask the next obvious thing.\n\nWhere it shows up:\n1. Something surprising goes past and you let it.\n2. You accept a fact where there was clearly a story.\n3. You change the subject at the first pause.\n\nMindset: one more question, then move. The pause is not the end of the subject — it is the point where most people stop.",
+      inputs: [
+        { q: "Something surprising went past and you let it.", a: "\"Go back to it. Even a minute later, 'you said something earlier about…' works.\"", bundle: 'pro' },
+        { q: "You accepted a fact where there was a story.", a: "\"There's a story behind that. 'And then what?' is all it takes.\"", bundle: 'pro' },
+        { q: "You changed the subject at the first pause.", a: "\"A pause is where people stop, not where the subject ends.\"", bundle: 'pro' },
+        { q: "You feel you have asked enough about this.", a: "\"One more, then move. That's usually the one they wanted to be asked.\"", bundle: 'pro' },
+        { q: "The account has reached a natural stopping point.", a: "\"Ask what's changed since. That closes it properly instead of dropping it.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  showunderstanding2: [
+    {
+      name: "Understanding Is Checkable",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The pack-wide stance: understanding is not a private feeling you have while listening, it is a claim that can be tested — and the test costs one sentence. Most people never make it, and spend conversations assuming an accuracy nobody has verified. Example of the shift — instead of nodding because you followed it, you say your version and ask.\n\nThe three thoughts that cause the trouble:\n1. \"I understood, so we're fine\" — they cannot see that you did.\n2. \"Saying it back is patronising\" — it is only patronising if you do not invite the correction.\n3. \"If I check I'll look like I wasn't listening\" — checking is what listening looks like from outside.\n\nMindset: say your version and ask. Being wrong is the useful outcome, and it only arrives if you offer something to correct.",
+      inputs: [
+        { q: "You understood and see no reason to say so.", a: "\"They can't see inside my head. The check is the only evidence there is.\"", bundle: 'pro' },
+        { q: "Saying it back feels patronising.", a: "\"It's patronising without the question. With it, it's an offer.\"", bundle: 'pro' },
+        { q: "You worry a check makes you look inattentive.", a: "\"From outside, checking is exactly what attention looks like.\"", bundle: 'pro' },
+        { q: "You are fairly sure you have it right.", a: "\"Fairly sure is where the misunderstandings live. Four seconds settles it.\"", bundle: 'pro' },
+        { q: "You have been nodding for five minutes.", a: "\"Nodding proves nothing to them. Say the version.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Follow the Whole Conversation",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The stance that separates this pack from the first one: most listening is local — people track the last sentence and forget the rest. Carrying one detail across ten minutes is uncommon enough that it is remembered long after the conversation. Example of the shift — instead of responding only to what was just said, you bring back the thing they mentioned at the start.\n\nWhere it shows up:\n1. You remember the last point and nothing before it.\n2. Two things they said separately are one thing, and neither of you has noticed.\n3. They repeat something because they do not think it landed.\n\nMindset: carry one detail forward. Not everything — one thing, brought back at the right moment, does the whole job.",
+      inputs: [
+        { q: "You can only remember the last thing they said.", a: "\"Pick one detail from earlier and hold it. One is enough.\"", bundle: 'pro' },
+        { q: "They have mentioned the same person twice.", a: "\"Twice is a signal. Ask about them.\"", bundle: 'pro' },
+        { q: "Two of their complaints sound like one problem.", a: "\"Offer the connection as a question. It might be the most useful thing I say.\"", bundle: 'pro' },
+        { q: "They repeated something they said ten minutes ago.", a: "\"That's them checking whether it landed. Show them it did.\"", bundle: 'pro' },
+        { q: "You are focused entirely on what to say next.", a: "\"Then I'm tracking a sentence, not a person.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Feeling, Not the Anecdote",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The stance about sharing: the useful part of \"I've felt that too\" is the recognition, and the recognition is complete in one sentence. Everything after that sentence is your story, and your story is a different conversation. Example of the shift — instead of telling them about your version, you tell them you have had the feeling and ask about theirs.\n\nWhere it goes wrong:\n1. The detail of your case is genuinely relevant, so you add a second sentence, and then a third.\n2. Matching every point they make with one of your own.\n3. Sharing before you have shown you understood theirs.\n\nMindset: one sentence, then back to them. If your version is longer than theirs, the conversation has changed hands.",
+      inputs: [
+        { q: "Your own case has details that seem relevant.", a: "\"Relevant to me. One sentence is the whole gift — the rest is my turn.\"", bundle: 'pro' },
+        { q: "You have matched three of their points with your own.", a: "\"That's not meeting them, that's taking turns. Ask about theirs.\"", bundle: 'pro' },
+        { q: "You want to share before you have understood theirs.", a: "\"Understand first. A disclosure before that is a guess about what they need.\"", bundle: 'pro' },
+        { q: "You are about to say \"that's nothing, one time I…\"", a: "\"That sentence shrinks theirs. Say I know the feeling instead.\"", bundle: 'pro' },
+        { q: "You shared and the conversation stalled.", a: "\"It stalled because I didn't hand it back. One question fixes it.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Meet the Value, Not Just the Story",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The stance behind the deepest move here: people explaining a grievance are usually explaining a value — fairness, being consulted, honesty, not letting someone down — and almost nobody says the value out loud. Naming it says you understood the part underneath. Example of the shift — instead of agreeing that the situation was annoying, you say what it was about it that would matter to you too.\n\nWhere it shows up:\n1. You sympathise with the events and miss what they were really telling you.\n2. You agree with a value you do not hold because it is the warm thing to do.\n3. You think agreeing with the value commits you to agreeing with the conclusion.\n\nMindset: name what mattered to them, honestly. You can agree with the value and still doubt the conclusion, and saying both is worth more than agreeing with everything.",
+      inputs: [
+        { q: "You sympathised with the events and it landed thinly.", a: "\"What were they actually telling me? Usually it's a value, not an incident.\"", bundle: 'pro' },
+        { q: "You are about to agree with something you do not believe.", a: "\"There's a true version of agreement here. Find that one instead.\"", bundle: 'pro' },
+        { q: "Agreeing feels like committing to their plan.", a: "\"The value and the conclusion are separate. I can hold one and question the other.\"", bundle: 'pro' },
+        { q: "They have not said what mattered to them.", a: "\"Name it for them, as a question. 'Is this about being trusted?'\"", bundle: 'pro' },
+        { q: "You want to be supportive without being dishonest.", a: "\"'I'd have minded just as much' is true and it's enough.\"", bundle: 'pro' },
+      ]
+    },
+  ],
 };

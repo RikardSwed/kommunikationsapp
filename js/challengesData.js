@@ -3368,4 +3368,138 @@ const challengesCollections = {
       ]
     },
   ],
+  listeningthroughquestions: [
+    {
+      name: "It Has Become an Interview",
+      guideFront: "What has gone wrong with the questions here?",
+      guideBack: "A possible response, with the move in brackets.",
+      description: "Your questions are good and unconnected — each one comes from your head rather than from their last answer. The other person can feel it within two or three questions, and their answers start getting shorter.\n\nWhat it usually looks like:\n• Their answers are getting shorter while your questions stay the same length.\n• You asked something that had nothing to do with what they just said.\n• You have learned four separate facts and followed none of them.\n\nTwo ways through:\n1. Use a word from their last answer — the fastest repair there is.\n2. Give something of your own — a question after a small disclosure lands completely differently.\n\nMindset: the repair is not a better question. It is a question built out of their answer.",
+      inputs: [
+        { q: "You have asked four unconnected questions and answers are shortening.", a: "\"You said something about the second flat — what happened with that?\" [use their word]", bundle: 'pro' },
+        { q: "You realise you have been working through a mental list.", a: "\"I'm interrogating you. My version of that is much less impressive, by the way.\" [give something]", bundle: 'pro' },
+        { q: "Your last question changed the subject entirely.", a: "\"Ignore that, I jumped. Go back to the bit about your brother.\" [use their word]", bundle: 'pro' },
+        { q: "They are answering politely and volunteering nothing.", a: "\"I'll stop firing questions. That sounds like it was a long month, though.\" [give something]", bundle: 'pro' },
+        { q: "You have asked two questions in a row without responding to either answer.", a: "\"That's a much better story than the one I was about to ask about.\" [use their word]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "You Went Deep Too Early",
+      guideFront: "What has gone wrong with the questions here?",
+      guideBack: "A possible response, with the move in brackets.",
+      description: "You asked about feelings before you had the story, and it landed as intrusive rather than interested. The order matters more than the question: the same sentence is welcome once someone can tell you have followed what they said.\n\nWhat it usually looks like:\n• A pause, and then a short answer.\n• You asked how something felt about an event you could not picture.\n• You barely know the person and the question was about their inner life.\n\nTwo ways through:\n1. Go back to the facts — ask for the sequence and rebuild.\n2. Narrow it to a moment — \"what did you think when he said it\" is answerable where \"how did you feel about all that\" is not.\n\nMindset: earn the deep questions with the ordinary ones. Three facts, then a feeling.",
+      inputs: [
+        { q: "You asked how they felt and got a short answer and a pause.", a: "\"Sorry — back up. What actually happened on the Tuesday?\" [back to facts]", bundle: 'pro' },
+        { q: "The feeling question was too broad.", a: "\"Let me ask that better: what went through your head when she actually said it?\" [narrow it]", bundle: 'pro' },
+        { q: "You barely know them and asked something quite personal.", a: "\"That's a big question from someone you met an hour ago. What happened next, though?\" [back to facts]", bundle: 'pro' },
+        { q: "You asked about a feeling in a story you cannot picture.", a: "\"Actually — who else was involved in all this?\" [back to facts]", bundle: 'pro' },
+        { q: "They deflected with a joke.", a: "\"Fair. What did you do straight afterwards?\" [narrow it]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Question Sounded Like a Judgement",
+      guideFront: "What has gone wrong with the questions here?",
+      guideBack: "A possible response, with the move in brackets.",
+      description: "You asked \"why did you do that?\" and it landed as \"why on earth did you do that?\". The content was fine; the framing carried an accusation. Two words fix it.\n\nWhat it usually looks like:\n• They started justifying rather than explaining.\n• You used \"why did you\" rather than \"what made you\".\n• The answer came back defensive and slightly longer than it needed to be.\n\nTwo ways through:\n1. Reframe it — \"what made you…\" asks for a reason, not a defence.\n2. Say the assumption out loud — \"not a criticism, I'd probably have done the same.\"\n\nMindset: \"why did you\" asks them to justify. \"What made you\" asks them to explain. The difference is entirely in the framing.",
+      inputs: [
+        { q: "They started justifying rather than explaining.", a: "\"Not a criticism — I'd probably have done the same. What made it the right call at the time?\" [say the assumption]", bundle: 'pro' },
+        { q: "You asked \"why did you do that?\" and it landed badly.", a: "\"That came out wrong. I meant what was going on that made it the obvious thing.\" [reframe]", bundle: 'pro' },
+        { q: "Your perspective question sounded like a lesson.", a: "\"I'm not saying she was right — I'm just curious what her version sounds like.\" [say the assumption]", bundle: 'pro' },
+        { q: "They have gone defensive about a decision.", a: "\"You don't have to defend it to me. I'm just nosy about how it happened.\" [say the assumption]", bundle: 'pro' },
+        { q: "You are about to ask \"why didn't you just…\".", a: "\"Was there a reason the obvious route wasn't available?\" [reframe]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Nothing Is Coming Back",
+      guideFront: "What has gone wrong with the questions here?",
+      guideBack: "A possible response, with the move in brackets.",
+      description: "Your questions are getting one-word answers. Sometimes the person does not want to talk, and that is an answer worth respecting — but more often the questions have been too big, and a smaller one gets a real reply.\n\nWhat it usually looks like:\n• \"Fine\", \"yeah\", \"not much\", three times running.\n• Your questions have all been broad ones.\n• They have not asked you anything either.\n\nTwo ways through:\n1. Make it smaller and more concrete — \"what happened next\" beats \"how was it\".\n2. Read it as a no and change register — some conversations are not the moment.\n\nMindset: one-word answers are usually a question that was too big, not a person who does not want to talk. Try smaller once, then let it go.",
+      inputs: [
+        { q: "Three broad questions have got three short answers.", a: "\"Let me ask something easier — what did you actually do on the Saturday?\" [smaller]", bundle: 'pro' },
+        { q: "They said the trip was \"fine\" and nothing else.", a: "\"Where did you stay?\" [smaller]", bundle: 'pro' },
+        { q: "You have asked twice and got very little both times.", a: "\"I'll stop digging. Mine was mostly rain and an argument about a map.\" [change register]", bundle: 'pro' },
+        { q: "They are clearly not in the mood to talk about it.", a: "\"We can leave it. How's everything else?\" [change register]", bundle: 'pro' },
+        { q: "The question needed too much of an answer.", a: "\"Actually, simpler — who else was there?\" [smaller]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "You Stopped Too Soon",
+      guideFront: "What has gone wrong with the questions here?",
+      guideBack: "A possible response, with the move in brackets.",
+      description: "They gave you an answer with something obviously unfinished in it and you moved on. Half the good material in any conversation is one question past where most people stop.\n\nWhat it usually looks like:\n• They said something surprising and you said \"oh, nice\" and changed the subject.\n• A half-sentence went past that clearly had more behind it.\n• You have got a fact where there was a story available.\n\nTwo ways through:\n1. Go back to it — even a minute later. \"You said something earlier about…\"\n2. Ask the obvious next one — \"and then what?\" is usually the question that was waiting.\n\nMindset: one more question. Most conversations end one question before the interesting part.",
+      inputs: [
+        { q: "They mentioned something surprising and you let it pass.", a: "\"Hang on, go back — you said you'd never actually met him?\" [go back]", bundle: 'pro' },
+        { q: "You got a fact where there was clearly a story.", a: "\"There's more to that, isn't there. What happened?\" [ask the next one]", bundle: 'pro' },
+        { q: "A half-sentence went by that had something behind it.", a: "\"You said 'the second time'. There was a first time?\" [go back]", bundle: 'pro' },
+        { q: "You changed the subject and immediately regretted it.", a: "\"Sorry — I want to come back to the thing about your old job.\" [go back]", bundle: 'pro' },
+        { q: "Their answer stopped somewhere odd.", a: "\"And then what? That can't be the end of it.\" [ask the next one]", bundle: 'pro' },
+      ]
+    },
+  ],
+  showunderstanding2: [
+    {
+      name: "You Got It Wrong",
+      guideFront: "What has gone wrong here?",
+      guideBack: "A possible response, with the move in brackets.",
+      description: "You said their view back and it was not their view. This is not a failure — it is what the checking is for — but it needs a light touch, because a wrong version defended is much worse than a wrong version dropped.\n\nWhat it usually looks like:\n• \"No, not quite\" and then a longer explanation.\n• You explained why your version was reasonable.\n• They are now correcting you rather than saying their thing.\n\nTwo ways through:\n1. Drop it immediately and ask again — the correction is the useful part.\n2. Name what you had backwards — shows exactly where you were wrong.\n\nMindset: the correction is the point of asking. Do not defend a version you offered precisely so it could be corrected.",
+      inputs: [
+        { q: "They said \"no, not quite\" and you started explaining yourself.", a: "\"Forget my version. Say it again and I'll shut up.\" [drop it]", bundle: 'pro' },
+        { q: "You had the whole thing backwards.", a: "\"So I had it inside out — it's the not-being-asked, not the work.\" [name it]", bundle: 'pro' },
+        { q: "You are about to defend your reading.", a: "\"I'd rather be corrected than right. What's the actual shape of it?\" [drop it]", bundle: 'pro' },
+        { q: "You have got it wrong twice.", a: "\"I keep missing it. Give me the one-sentence version and I'll stop guessing.\" [drop it]", bundle: 'pro' },
+        { q: "They corrected you and moved on quickly.", a: "\"Hang on — say that bit again. That's the part I had wrong.\" [name it]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Summary Became a Speech",
+      guideFront: "What has gone wrong here?",
+      guideBack: "A possible response, with the move in brackets.",
+      description: "You started summarising and kept going, and by the end you had said more than they did. A summary that takes as long as the original is a repetition with your name on it.\n\nWhat it usually looks like:\n• More than three points.\n• You added your own interpretation while summarising.\n• They are waiting politely for you to finish.\n\nTwo ways through:\n1. Cut to three and check — \"the main things are…\"\n2. Hand it straight back — \"have I missed anything?\" ends it properly.\n\nMindset: three clauses and a question. Anything longer and it stops being a summary.",
+      inputs: [
+        { q: "Your summary has gone on longer than their account.", a: "\"I'll cut that down: timing, workload, being asked last. Yes?\" [cut to three]", bundle: 'pro' },
+        { q: "You slipped an interpretation into the summary.", a: "\"That last bit was mine, not yours. Ignore it — have I got the three right?\" [hand it back]", bundle: 'pro' },
+        { q: "You are listing everything they said.", a: "\"What are the three that actually matter here?\" [cut to three]", bundle: 'pro' },
+        { q: "They are waiting politely for you to finish.", a: "\"Sorry. Short version — have I missed anything?\" [hand it back]", bundle: 'pro' },
+        { q: "You summarised and then answered your own summary.", a: "\"I've answered my version rather than yours. Correct me first.\" [hand it back]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Your Share Became Your Turn",
+      guideFront: "What has gone wrong here?",
+      guideBack: "A possible response, with the move in brackets.",
+      description: "You offered something of your own to show you recognised it, and then kept going. The disclosure was fine; the absence of a way back was not.\n\nWhat it usually looks like:\n• Your version is now longer than theirs.\n• They have stopped adding anything.\n• You are on the second or third detail of your own case.\n\nTwo ways through:\n1. Cut it off and return — \"anyway, that's mine. Back to you.\"\n2. Ask them the question your own story raised — turns the detour into a bridge.\n\nMindset: one sentence about you, then back. Length is what turns recognition into a hijack.",
+      inputs: [
+        { q: "You are three sentences into your own version.", a: "\"Anyway — that's mine and it's less interesting. Where had you got to?\" [return]", bundle: 'pro' },
+        { q: "They have gone quiet while you talk about yourself.", a: "\"I've taken over. What were you going to say before I jumped in?\" [return]", bundle: 'pro' },
+        { q: "Your story raised a question worth asking them.", a: "\"Mine ended badly, which is why I'm asking — is yours still fixable?\" [bridge]", bundle: 'pro' },
+        { q: "You realise you have matched every point with one of your own.", a: "\"I keep answering with my own version. Tell me about yours properly.\" [return]", bundle: 'pro' },
+        { q: "You want to say more and probably should not.", a: "\"There's more but it's not the point. Yours is the one with a decision in it.\" [return]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "You Agreed With Something You Do Not Believe",
+      guideFront: "What has gone wrong here?",
+      guideBack: "A possible response, with the move in brackets.",
+      description: "You named a shared value in the moment because it was the warm thing to say, and you do not actually hold it. This gets found out, usually in the next conversation, and it costs more than the disagreement would have.\n\nWhat it usually looks like:\n• You agreed quickly and slightly too warmly.\n• You are hoping the subject does not come back.\n• You would say something different to somebody else.\n\nTwo ways through:\n1. Separate the value from the conclusion — you can often agree with one honestly.\n2. Say the honest half — \"I'd have minded too, though I'd probably have done nothing about it.\"\n\nMindset: agree with what is true. There is nearly always a true version of agreement available, and it is worth more than the generous one.",
+      inputs: [
+        { q: "You agreed with a principle you do not actually hold.", a: "\"Actually, let me be honest — I'd have let that one go. But I can see why you didn't.\" [honest half]", bundle: 'pro' },
+        { q: "You agree with the value but not the conclusion.", a: "\"I'm with you on the principle. Whether leaving is the answer, I'm less sure.\" [separate them]", bundle: 'pro' },
+        { q: "You agreed too quickly to move the conversation on.", a: "\"I said that a bit fast. What I do agree with is the being-told part.\" [honest half]", bundle: 'pro' },
+        { q: "You would say something different to somebody else.", a: "\"I'll say the awkward version: I think they were careless rather than malicious.\" [honest half]", bundle: 'pro' },
+        { q: "They are looking for agreement you cannot give.", a: "\"I can't tell you they were wrong. I can tell you I'd have been just as annoyed.\" [separate them]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Checking Turned Into Interrupting",
+      guideFront: "What has gone wrong here?",
+      guideBack: "A possible response, with the move in brackets.",
+      description: "You checked your understanding three times in five minutes and each check stopped them mid-flow. The move is right and the frequency is wrong.\n\nWhat it usually looks like:\n• They keep losing their thread.\n• You have summarised twice before the account finished.\n• Every paragraph is followed by \"so what you're saying is…\".\n\nTwo ways through:\n1. Save it for the end of a stretch — checking belongs at a pause, not inside one.\n2. Use a minimal signal instead — \"mm\", a nod, \"right\" keeps them going.\n\nMindset: check at the pauses, not at the commas. One good check beats three that break the flow.",
+      inputs: [
+        { q: "They keep losing their thread after your checks.", a: "(say nothing this time — let them finish the stretch) [save it]", bundle: 'pro' },
+        { q: "You have summarised twice before they finished.", a: "\"Carry on — I'll check I've got it when you've said the lot.\" [save it]", bundle: 'pro' },
+        { q: "Every paragraph gets a \"so what you're saying is\".", a: "\"Mm. Go on.\" [minimal signal]", bundle: 'pro' },
+        { q: "You want to check but they are mid-flow.", a: "(wait for the end of the stretch, then check) [save it]", bundle: 'pro' },
+        { q: "You interrupted a long account with a summary.", a: "\"Sorry, that could have waited. Where were you?\" [save it]", bundle: 'pro' },
+      ]
+    },
+  ],
 };

@@ -173,7 +173,21 @@ applyInputCounterVisibility();
     // who passes the Conversation Foundations Part 2 checkpoint still opens
     // Exploring a Topic even though it is a Pro pack. No exception needed.
     exploringatopic: { label: 'Exploring a Topic', minLevel: 'pro' },
-    talkingaboutyourself: { label: 'Talking About Yourself', minLevel: 'pro' },
+    // v1.27.00 — PROMOTED TO FREEMIUM. Without Assertive Communication the
+    // free tier can open a conversation and understand the other person, but
+    // has nothing to SAY — this is the pack that fills that hole, and it is
+    // the least confrontational one in the library, which is the point.
+    // It is also Say It Well Part 1, so a free user who likes it is already
+    // one step inside a Pro programme.
+    // THE PLAN: Assertive Communication stays freemium through the beta so
+    // testers get it, and moves to 'pro' before the App Store release, to
+    // keep the free tier free of conflict material. When that happens this
+    // pack is its replacement — the swap is two lines, both here.
+    // Its bundles were checked at promotion time: 5 free inputs per strategy
+    // in Single Strategy and 3 free cards per strategy in Memorize, which are
+    // the only two modes a freemium user can reach (see MODE_CONFIG). Same
+    // shape as Starting Conversations Pt. 1. Nothing needed changing.
+    talkingaboutyourself: { label: 'Talking About Yourself', minLevel: 'freemium' },
     complimenting: { label: 'Compliments', minLevel: 'pro' },
     changingtopics: { label: 'Changing Topics', minLevel: 'program' },          // Conversation Foundations, Part 2
     validation: { label: 'Validation', minLevel: 'program' },                   // Conversation Foundations, Part 3
@@ -222,6 +236,13 @@ applyInputCounterVisibility();
     makingrequests: { label: 'Making Requests', minLevel: 'pro' },
     sayingno: { label: 'Saying No', minLevel: 'pro' },
     rolebasedhumour: { label: 'Role Based Humour', minLevel: 'program' },      // Humour, Part 2,
+    // v1.27.00 — the two listening packs. import-pack.js writes no PACK_CONFIG
+    // entry for a --program import, which works only as long as the programme
+    // exists: delete it and the last line of packVisibility() hands the pack
+    // to everyone for free, which is exactly the bug v1.26.81 fixed. These
+    // entries are written by hand for the same reason as the ones above.
+    listeningthroughquestions: { label: 'Listening Through Questions', minLevel: 'program' }, // Listening in Depth, Part 2
+    showunderstanding2: { label: 'Show Understanding — Pt. 2', minLevel: 'program' },         // Listening in Depth, Part 3
     masculine1: { label: 'The Masculine Blueprint – Part 1', minLevel: 'complete' },
     masculine2: { label: 'The Masculine Blueprint – Part 2', minLevel: 'complete' },
     masculine3: { label: 'The Masculine Blueprint – Part 3', minLevel: 'complete' },
@@ -275,6 +296,10 @@ applyInputCounterVisibility();
     'opening-a-conversation': { minLevel: 'pro' },
     'persuasion-negotiation': { minLevel: 'pro' },
     'humour':                 { minLevel: 'pro' },
+    // v1.27.00 — the listening programme. Pro like the other four handbook
+    // programmes; Extended already carries Difficult Conversations and a
+    // second paid programme would thin both.
+    'listening-in-depth':     { minLevel: 'pro' },
     'difficult-conversations': { minLevel: 'extended' },
   };
   const _warnedPrograms = {};
@@ -1749,6 +1774,34 @@ const BUNDLE_DEFS = {
     },
   ],
   praxdread5: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  listeningthroughquestions: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  showunderstanding2: [
     {
       id: 'free',
       tier: 'free',

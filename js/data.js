@@ -6006,6 +6006,218 @@ const collections = {
       ]
     },
   ],
+  listeningthroughquestions: [
+    {
+      name: "Ask About the Detail",
+      guideFront: "They have just told you something. Ask the question it opened.",
+      guideBack: "One question that would draw out more.",
+      description: "Pick one small thing out of what they said — a name, a place, an object, an odd word — and ask about that. It is the most reliable follow-up there is, because the material is already on the table and choosing it proves you were listening to this particular sentence. Example: they mention driving back from Aarhus on Sunday; \"Who was in the car?\"\n\nIt works because a specific question could only have been asked by someone who was paying attention. A general question — \"so how was it?\" — could have been asked by anyone who heard nothing, and people can tell the difference immediately.\n\nPick the detail they said in passing rather than the one they emphasised. The thrown-away half-sentence is usually the door.\n\nTypical phrases: \"Who was there with you?\", \"What kind of…?\", \"Which one was that?\", \"What exactly did they say?\"\n\nThree kinds of detail to pick:\n\n1. The concrete noun — a person, a place, an object. \"Who's Petra?\"\n\n2. The odd word — the one that does not quite fit the rest of the sentence. \"Reluctantly? Why reluctantly?\"\n\n3. The thing said in passing — the half-sentence they hurried past. \"Go back — you said you nearly didn't go.\"\n\nMindset: you never need a new subject. Their last sentence has three or four questions in it, and picking one is the whole move.",
+      inputs: [
+        { q: "They mention driving back from Aarhus on Sunday.", a: "\"Who was in the car with you?\"", bundle: 'free' },
+        { q: "They say the meeting was fine apart from the last ten minutes.", a: "\"What happened in the last ten minutes?\"", bundle: 'free' },
+        { q: "They mention a colleague called Petra without explaining who she is.", a: "\"Who's Petra, in all this?\"", bundle: 'free' },
+        { q: "They say they finally finished the kitchen.", a: "\"Finally? How long has it been going on?\"", bundle: 'free' },
+        { q: "They mention they moved here about four years ago.", a: "\"What brought you here in the first place?\"", bundle: 'free' },
+        { q: "They used an odd word that did not fit the rest of the sentence.", a: "\"You said 'reluctantly'. Why reluctantly?\"", bundle: 'pro' },
+        { q: "They hurried past a half-sentence that sounded like a whole story.", a: "\"Hang on, go back — you nearly didn't go?\"", bundle: 'pro' },
+        { q: "They mention a number in passing that seems high.", a: "\"Eleven times? In one week?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ask What Happened Next",
+      guideFront: "They have just told you something. Ask the question it opened.",
+      guideBack: "One question that would draw out more.",
+      description: "Ask for the order of events, so the account becomes a sequence rather than a summary. It is the question that turns \"it was a nightmare\" into something you can actually follow. Example: \"Can you walk me through it? What happened first?\"\n\nIt works because most people compress a story into a verdict and then stop, assuming the detail would bore you. Asking for the sequence tells them it would not, and the middle of a story is where everything interesting lives.\n\nIt is also the easiest question in the pack to ask when you have not been following closely. \"What happened after that?\" needs no understanding of what came before.\n\nTypical phrases: \"What happened next?\", \"Can you walk me through it?\", \"And then what?\", \"Where did it start?\"\n\nThree ways to ask for the sequence:\n\n1. Forward — the standard. \"What happened after that?\"\n\n2. Backward — for a situation you have joined halfway. \"How did it get to that point?\"\n\n3. The whole thing — when the summary has skipped everything. \"Take me through it from the start.\"\n\nMindset: this is the question that costs you nothing and buys the most. If you are lost, ask it rather than pretending.",
+      inputs: [
+        { q: "They said the whole day was a disaster and stopped there.", a: "\"Take me through it. What went wrong first?\"", bundle: 'free' },
+        { q: "They have just described the beginning of something.", a: "\"So what happened after that?\"", bundle: 'free' },
+        { q: "They summarised a long argument in one sentence.", a: "\"Can you walk me through it? I want the actual order.\"", bundle: 'free' },
+        { q: "You have joined a story halfway and are lost.", a: "\"How did it get to that point? I've missed a bit.\"", bundle: 'free' },
+        { q: "They describe an outcome without the middle.", a: "\"How did you get from there to there? That's the interesting bit.\"", bundle: 'free' },
+        { q: "They keep jumping between two different days.", a: "\"Which came first — the meeting or the email?\"", bundle: 'pro' },
+        { q: "The story has clearly not finished but they have stopped.", a: "\"And that's where it's sitting now? Nothing since?\"", bundle: 'pro' },
+        { q: "They give you the ending first.", a: "\"Right, so how did it start? I want to see it coming.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ask Why It Happened",
+      guideFront: "They have just told you something. Ask the question it opened.",
+      guideBack: "One question that would draw out more.",
+      description: "Ask for the cause or the reason — why the thing happened, or why they did what they did. It moves an account from events to explanation, which is where the person actually appears in their own story. Example: \"What made you say yes in the end?\"\n\nIt works because events on their own are just weather. The reason is the part only they can supply, and being asked for it is being treated as somebody with judgement rather than as somebody things happened to.\n\nAsk it about the situation or about their choice, but keep the tone curious. \"Why did you do that?\" is a question or an accusation depending entirely on delivery, and the safe version is \"what made you…\" rather than \"why did you…\".\n\nTypical phrases: \"What made you…?\", \"Why do you think that happened?\", \"What was behind that?\", \"What led to it?\"\n\nThree kinds of why:\n\n1. The cause of the event — outside them. \"Why did the whole thing move to Friday?\"\n\n2. The reason for their choice — inside them, and the more interesting one. \"What made you take it on?\"\n\n3. The reason underneath the reason — for people who will go there. \"And why did that matter so much to you?\"\n\nMindset: use \"what made you\" rather than \"why did you\". The first asks for a reason; the second can sound like it is asking for a defence.",
+      inputs: [
+        { q: "They said they ended up taking the job.", a: "\"What made you say yes in the end?\"", bundle: 'free' },
+        { q: "They describe something going wrong at work.", a: "\"Why do you think it happened that way?\"", bundle: 'free' },
+        { q: "They mention they left a group they used to enjoy.", a: "\"What was behind that, in the end?\"", bundle: 'free' },
+        { q: "They said the deadline moved for the third time.", a: "\"What keeps causing it? Is it the same thing every time?\"", bundle: 'free' },
+        { q: "They describe a decision that surprised you.", a: "\"What made you go that way rather than the obvious one?\"", bundle: 'free' },
+        { q: "You want the reason without it sounding like a challenge.", a: "\"What made you decide that? I'd probably have frozen.\"", bundle: 'pro' },
+        { q: "They have given a surface reason that does not quite explain it.", a: "\"Is that the whole reason, or is there a bit more to it?\"", bundle: 'pro' },
+        { q: "They describe something they still do not understand themselves.", a: "\"Do you have a theory about why? Even a bad one.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ask How It Felt",
+      guideFront: "They have just told you something. Ask the question it opened.",
+      guideBack: "One question that would draw out more.",
+      description: "Ask about their reaction rather than about the events. It is the question people are least often asked and most often want, and it changes the register of a conversation in one sentence. Example: \"What was your first reaction when they said it?\"\n\nIt works because most accounts are given entirely in facts, and the facts are not what the person is carrying. Asking for the feeling gives them permission to say the part they were not sure was welcome.\n\nAsk about a specific moment rather than the whole thing. \"How did you feel about all that?\" is a big blank; \"what went through your head when she said it?\" is answerable.\n\nTypical phrases: \"What was your first reaction?\", \"How did that land?\", \"What went through your head?\", \"Was that a relief or the opposite?\"\n\nThree ways to ask:\n\n1. The moment — narrow and easy. \"What did you think when he actually said it?\"\n\n2. The reaction rather than the emotion — for people who do not do feelings. \"What did you do first?\"\n\n3. Offer a word to try on — the gentlest version, and Show Understanding territory. \"That sounds like it stung a bit. Did it?\"\n\nMindset: narrow it to a moment. A question about how they felt in general is a question about their whole life, and nobody answers that at a bus stop.",
+      inputs: [
+        { q: "They describe being told the news in a meeting.", a: "\"What was your first reaction when they said it?\"", bundle: 'free' },
+        { q: "They have given a completely factual account of something big.", a: "\"How was all that, actually? You've told me what happened but not that.\"", bundle: 'free' },
+        { q: "They mention their project was cancelled.", a: "\"Was that a relief or the opposite?\"", bundle: 'free' },
+        { q: "They describe a difficult conversation they had.", a: "\"What went through your head while she was saying it?\"", bundle: 'free' },
+        { q: "They finished something they had dreaded.", a: "\"How did it feel walking out afterwards?\"", bundle: 'free' },
+        { q: "They are not someone who talks about feelings.", a: "\"What did you do straight afterwards? That usually tells me more anyway.\"", bundle: 'pro' },
+        { q: "You want to offer them a word rather than ask for one.", a: "\"That sounds like it was mostly annoying rather than upsetting. Fair?\"", bundle: 'pro' },
+        { q: "They laughed while describing something that clearly was not funny.", a: "\"You're laughing, but that sounds like it was a horrible week.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ask About the Hard Part",
+      guideFront: "They have just told you something. Ask the question it opened.",
+      guideBack: "One question that would draw out more.",
+      description: "Ask what the difficult bit was, and what they did about it. It is the question that finds the story inside an account, because the difficulty is where the person had to do something. Example: \"What was the hardest part of that first month?\"\n\nIt works because everything worth telling has an obstacle in it. Ask about the smooth parts and you get a summary; ask about the hard part and you get the bit they have thought about most.\n\nIt also flatters without flattering. Asking what was difficult assumes they got through something, which is a much better assumption than most questions carry.\n\nTypical phrases: \"What was the hardest part?\", \"What went wrong along the way?\", \"What nearly stopped you?\", \"How did you handle that bit?\"\n\nThree ways in:\n\n1. The hardest part — the standard, and it works on any account. \"Which bit was worst?\"\n\n2. The thing that nearly stopped it — often the best story in the whole thing. \"Did it nearly not happen?\"\n\n3. How they handled it — the follow-up that matters. \"So what did you do about it?\"\n\nMindset: ask about the obstacle and then about what they did. The second half is the part they will remember being asked.",
+      inputs: [
+        { q: "They describe a year spent living abroad.", a: "\"What was the hardest part of the first month?\"", bundle: 'free' },
+        { q: "They mention finishing a long project.", a: "\"What nearly stopped it? There's always something.\"", bundle: 'free' },
+        { q: "They describe learning something difficult.", a: "\"Which bit did you get stuck on longest?\"", bundle: 'free' },
+        { q: "They say the move went fine in the end.", a: "\"What was the worst day of it?\"", bundle: 'free' },
+        { q: "They have named a problem they faced.", a: "\"So what did you actually do about that?\"", bundle: 'free' },
+        { q: "The account has been entirely smooth and you suspect it was not.", a: "\"Was any of it as bad as it sounds like it should have been?\"", bundle: 'pro' },
+        { q: "They mention a difficulty and move straight past it.", a: "\"Go back to the bit about the funding. How did that get solved?\"", bundle: 'pro' },
+        { q: "They describe handling something well.", a: "\"What would have happened if you hadn't caught it?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ask How It Looked From Elsewhere",
+      guideFront: "They have just told you something. Ask the question it opened.",
+      guideBack: "One question that would draw out more.",
+      description: "Ask them to consider it from someone else's position — the other person in the story, or an outside view of the whole thing. It is the question that opens a subject up rather than filling it in, and it produces answers people have often never said aloud. Example: \"How do you think it looked from her side?\"\n\nIt works because most accounts are given from exactly one vantage point, and the person telling it has usually not been invited to leave it. The invitation is often welcome, and occasionally it changes the account while they are giving it.\n\nIt has a hypothetical cousin worth having: \"what would you do differently?\" asks the same thing about their own past self, which is the gentlest possible version.\n\nTypical phrases: \"How do you think they saw it?\", \"What would someone outside make of it?\", \"Looking back, would you do it differently?\", \"What if it had gone the other way?\"\n\nThree angles:\n\n1. The other person in the story — the standard. \"What do you think she made of it?\"\n\n2. The outside view — for something they are close to. \"If a friend told you this, what would you say?\"\n\n3. Their own past self — the reflective version. \"Knowing what you know now, would you do it again?\"\n\nMindset: ask it as curiosity, not as correction. \"Have you considered how she felt?\" is a lesson wearing a question mark; \"how do you think it looked from her side?\" is a genuine question.",
+      inputs: [
+        { q: "They describe a disagreement with a colleague.", a: "\"How do you think it looked from her side?\"", bundle: 'free' },
+        { q: "They describe a decision they are still turning over.", a: "\"Knowing what you know now, would you do it the same way?\"", bundle: 'free' },
+        { q: "They are very close to a problem and cannot see round it.", a: "\"If a friend told you all this, what would you say to them?\"", bundle: 'free' },
+        { q: "They describe a situation involving several people.", a: "\"Who came out of it worst, do you think?\"", bundle: 'free' },
+        { q: "They tell you about something that went unexpectedly well.", a: "\"Did anyone see that coming? What did they expect?\"", bundle: 'free' },
+        { q: "You want them to consider the other side without it sounding like a lesson.", a: "\"I'm curious what her version of this would sound like.\"", bundle: 'pro' },
+        { q: "They are certain about something and you are not.", a: "\"What would the strongest argument against it be, if you had to make it?\"", bundle: 'pro' },
+        { q: "They describe a decision made under pressure.", a: "\"If you'd had another week, would it have gone the same way?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ask What They Took From It",
+      guideFront: "They have just told you something. Ask the question it opened.",
+      guideBack: "One question that would draw out more.",
+      description: "Ask what changed, what they learned, or what they would carry into the next one. It is the question that closes an account properly, and it treats the thing as something they came out of rather than something that merely happened. Example: \"Has it changed how you'd handle the next one?\"\n\nIt works because people rarely draw the conclusion out loud, and being asked to is usually the most valuable thing in the exchange for them. It is also the natural last question — the one that lets the subject finish rather than trail off.\n\nKeep it concrete. \"What did you learn?\" can sound like a school exercise; \"would you do anything differently?\" or \"what's changed since?\" asks the same thing without the homework.\n\nTypical phrases: \"What's changed since?\", \"Would you do anything differently?\", \"What did you take from it?\", \"Has it changed how you'd approach the next one?\"\n\nThree versions:\n\n1. What changed afterwards — the most concrete. \"What's different now?\"\n\n2. What they would do differently — easier to answer than a lesson. \"Would you go about it the same way?\"\n\n3. What they would tell someone else — the version people answer most fully. \"What would you tell someone about to do the same thing?\"\n\nMindset: this is the question that ends a subject well. Ask it and then let the conversation move — it is a closing question, not a way to keep going.",
+      inputs: [
+        { q: "They have finished telling you about a difficult year.", a: "\"What's different now, compared to before all that?\"", bundle: 'free' },
+        { q: "They describe a project that went badly.", a: "\"Would you do anything differently if it came round again?\"", bundle: 'free' },
+        { q: "They have just finished a long story about a trip.", a: "\"What would you tell someone who was about to do the same thing?\"", bundle: 'free' },
+        { q: "They describe a mistake they made.", a: "\"Has it changed how you'd handle the next one?\"", bundle: 'free' },
+        { q: "The account has reached its natural end.", a: "\"What did you take from all that, in the end?\"", bundle: 'free' },
+        { q: "You want the lesson without it sounding like a school question.", a: "\"Is there anything you'd warn someone about, having been through it?\"", bundle: 'pro' },
+        { q: "They say they learned nothing from it.", a: "\"Fair enough. Did it change anything anyway, even if it taught you nothing?\"", bundle: 'pro' },
+        { q: "The subject is finishing and you want to close it well.", a: "\"Last thing — would you go back and do it again?\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  showunderstanding2: [
+    {
+      name: "Ask If You Got It Right",
+      guideFront: "They have been talking a while. Show them you have followed it.",
+      guideBack: "One thing you could say here.",
+      description: "Say your version of what they mean and then ask whether it is right. The question is the whole strategy — it turns a claim about their meaning into an offer they can correct, which is what makes it safe to be wrong. Example: \"So the problem isn't the workload, it's that nobody told you. Am I getting that right?\"\n\nIt works because it hands the other person something almost no conversation offers: the chance to find out whether they have been understood. Most people spend a long conversation guessing at that, and the guess is often wrong in both directions.\n\nBeing wrong is a good outcome. A correction is the most useful sentence in the exchange, and you only get it if you have made the checking explicit rather than nodding.\n\nTypical phrases: \"Am I getting that right?\", \"Have I understood you?\", \"Is that what you mean, or have I got it round the wrong way?\", \"Correct me if that's off.\"\n\nThree ways to check:\n\n1. Version plus question — the standard. \"So it's the timing rather than the work. Right?\"\n\n2. Mark your uncertainty first — for something you may well have misread. \"I might have this wrong, but it sounds like…\"\n\n3. Offer two readings — when it could genuinely be either. \"Do you mean you don't want to, or you can't?\"\n\nMindset: say your version and then get out of the way. The point is not to be right; it is to find out.",
+      inputs: [
+        { q: "They have described a work problem at length.", a: "\"So it's not the workload, it's that nobody told you. Am I getting that right?\"", bundle: 'free' },
+        { q: "You think you have understood but are not sure.", a: "\"Let me check I've got this — you'd rather leave than be moved sideways?\"", bundle: 'free' },
+        { q: "Their point could be read two ways.", a: "\"Do you mean you don't want to do it, or that you can't right now?\"", bundle: 'free' },
+        { q: "You have listened for five minutes without saying anything.", a: "\"Can I say back what I think you're telling me, and you can correct it?\"", bundle: 'free' },
+        { q: "They said something you may well have misread.", a: "\"I might have this wrong, but it sounds like the deadline isn't really the issue.\"", bundle: 'free' },
+        { q: "You have got it wrong once already.", a: "\"Right, so I had that backwards. Is it that she asked, or that she didn't?\"", bundle: 'pro' },
+        { q: "They are describing something complicated and you are half lost.", a: "\"Stop me if this is off — there are two problems and only one of them is fixable?\"", bundle: 'pro' },
+        { q: "The conversation matters and you cannot afford to be guessing.", a: "\"Before I say anything — is the main thing the money or the principle?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Connect It to What They Said Earlier",
+      guideFront: "They have been talking a while. Show them you have followed it.",
+      guideBack: "One thing you could say here.",
+      description: "Link what they are saying now to something they said ten minutes ago. It is the move that proves you have been following the whole conversation rather than the current sentence, and it is remembered long after the conversation is over. Example: \"Earlier you said it had been stressful — is this the thing that made it stressful?\"\n\nIt works because most listening is local. People track the last thing, respond to it, and forget the rest, so somebody who carries a detail across a conversation is doing something genuinely uncommon.\n\nIt also does work the speaker cannot do for themselves. Two things they mentioned separately often turn out to be one thing, and hearing them put together is sometimes the most useful moment in the exchange.\n\nTypical phrases: \"Earlier you said…\", \"Is this the same thing as…?\", \"That connects to what you said about…\", \"You mentioned X before — is that part of this?\"\n\nThree kinds of connection:\n\n1. Same subject, two mentions — the simplest. \"You said the same about the last one.\"\n\n2. Two things that turn out to be one — the strongest. \"Is the travel the reason for the tiredness?\"\n\n3. A contradiction, offered gently — handle with care. \"You said you didn't mind, and this sounds like you did. Which is nearer?\"\n\nMindset: carry one detail forward. You do not need to remember everything — one thing, brought back at the right moment, does the whole job.",
+      inputs: [
+        { q: "They mentioned being tired earlier and are now describing their commute.", a: "\"Earlier you said you were shattered. Is this why?\"", bundle: 'free' },
+        { q: "They are describing a second problem that sounds like the first.", a: "\"Is that the same thing as the thing with the rota, or separate?\"", bundle: 'free' },
+        { q: "They mentioned a person at the start and have come back to them.", a: "\"That's the second time Petra's come up. What's going on there?\"", bundle: 'free' },
+        { q: "They said something in passing that now makes sense.", a: "\"Ah — is that why you said you nearly didn't take it?\"", bundle: 'free' },
+        { q: "Two separate complaints seem to have one cause.", a: "\"The travel and the tiredness — are those the same problem?\"", bundle: 'free' },
+        { q: "What they are saying now contradicts something from earlier.", a: "\"You said you didn't mind it, and this sounds like you did. Which is nearer the truth?\"", bundle: 'pro' },
+        { q: "They have circled back to a subject they dropped.", a: "\"You skipped past this earlier. I did notice.\"", bundle: 'pro' },
+        { q: "A detail from twenty minutes ago suddenly explains everything.", a: "\"The thing you said about your dad at the start — is that underneath all of this?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Summarise the Whole Thing Back",
+      guideFront: "They have been talking a while. Show them you have followed it.",
+      guideBack: "One thing you could say here.",
+      description: "Give a short version of everything they have said — the main points, in order, in your own words. It is the long form of looping, and it belongs at the end of something rather than in the middle. Example: \"So: the timing, the workload, and the fact that nobody asked you. Have I missed anything?\"\n\nIt works because a long account is hard for the person giving it to see the shape of. Hearing it back in three clauses is often the first time they see what they have actually been saying, and people frequently rearrange their own conclusion while listening to your summary.\n\nKeep it to three things. A summary that includes everything is a repetition, and it takes as long as the original.\n\nTypical phrases: \"So the main things are…\", \"Let me see if I've got the shape of it…\", \"Three things, then…\", \"Have I missed anything?\"\n\nThree ways to summarise:\n\n1. The list — the standard, and three items is the number. \"Timing, workload, and being asked last.\"\n\n2. The shape — for something with a structure rather than a list. \"It started as a scheduling thing and became about trust.\"\n\n3. The one thing under the rest — the boldest, and worth checking. \"It sounds like it's mostly about not being asked.\"\n\nMindset: end with \"have I missed anything?\" — the summary is a draft, and the correction is the point.",
+      inputs: [
+        { q: "They have described a work problem over several minutes.", a: "\"So: the timing, the workload, and nobody asking you. Have I missed anything?\"", bundle: 'free' },
+        { q: "A long complicated account has come to an end.", a: "\"Let me see if I've got the shape of it — it started as a rota problem and became about trust?\"", bundle: 'free' },
+        { q: "They have listed several separate frustrations.", a: "\"Three things, then: the hours, the travel, and the new manager.\"", bundle: 'free' },
+        { q: "You are about to respond to something long.", a: "\"Before I say anything — the main thing is that you found out last. Yes?\"", bundle: 'free' },
+        { q: "They have finished and are waiting for you.", a: "\"So the whole thing comes down to whether they'll move the date. Is that fair?\"", bundle: 'free' },
+        { q: "You suspect one thing underlies all the others.", a: "\"It sounds like most of this is about not being asked. Everything else is downstream of that.\"", bundle: 'pro' },
+        { q: "They have been going round the same three points.", a: "\"We've been round this a few times. Is it those three, or is there a fourth you haven't said?\"", bundle: 'pro' },
+        { q: "A decision has to come out of the conversation.", a: "\"So the options are stay and renegotiate, or leave in the spring. Anything I've left out?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Say You Felt That Too",
+      guideFront: "They have been talking a while. Show them you have followed it.",
+      guideBack: "One thing you could say here.",
+      description: "Report the same feeling from your own life — not the story, just the feeling. It is the shortest form of relating and by far the safest, because it takes no airtime and cannot turn into your anecdote. Example: \"I felt exactly that when my team went round me. It's a horrible feeling.\"\n\nIt works because the most isolating thing about a difficult experience is the suspicion that the reaction was unreasonable. One sentence saying you had the same reaction removes that, and it does it without asking them to listen to anything.\n\nThis is the opposite direction from Validation. There you say their feeling makes sense; here you report your own. Both help, and the difference is who the sentence is about — which is why this one has to be short.\n\nTypical phrases: \"I felt exactly that when…\", \"That's a horrible feeling. I've had it.\", \"I know that one.\", \"I recognise that, honestly.\"\n\nThree sizes:\n\n1. One clause — the safest and often the best. \"I know that feeling.\"\n\n2. The feeling plus where you had it — a single sentence, no story. \"I felt that when my team went round me.\"\n\n3. The feeling you did not expect — when yours was more complicated. \"I felt relieved, and then guilty about being relieved.\"\n\nMindset: the feeling, not the anecdote. The moment you add the second sentence about your own case, it has become your turn.",
+      inputs: [
+        { q: "They describe being left out of a decision.", a: "\"That's a horrible feeling. I've had it and it took a while to shake.\"", bundle: 'free' },
+        { q: "They say they felt stupid asking for help.", a: "\"I recognise that. It never once feels like the small thing it is.\"", bundle: 'free' },
+        { q: "They describe the nerves before something they had to do.", a: "\"I know that one. The waiting is worse than the doing, every time.\"", bundle: 'free' },
+        { q: "They admit they were relieved when a project was cancelled.", a: "\"I felt exactly that when mine was. And then a bit guilty about it.\"", bundle: 'free' },
+        { q: "They describe being frustrated with someone they like.", a: "\"That's a hard one. Being annoyed with someone you're fond of is its own thing.\"", bundle: 'free' },
+        { q: "You could tell a whole story but they need one line.", a: "\"I've been there. Yours sounds worse, though — go on.\"", bundle: 'pro' },
+        { q: "Your version was different in the details but the same underneath.", a: "\"Mine was a different situation entirely and it felt exactly like that.\"", bundle: 'pro' },
+        { q: "You want to say it without making it about you.", a: "\"I know that feeling. Anyway — what happened next?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Name the Value You Share",
+      guideFront: "They have been talking a while. Show them you have followed it.",
+      guideBack: "One thing you could say here.",
+      description: "Say that you agree with what matters to them, not just with what happened. It is the deepest of the relating moves, because it meets the reason behind the story rather than the story. Example: \"I think the same, honestly. Being told beforehand matters more than the decision does.\"\n\nIt works because most people explaining a grievance are really explaining a value — fairness, being consulted, honesty, not letting people down — and nobody ever says the value out loud. Naming it tells them you understood the part underneath.\n\nIt has to be true. Agreeing with a value you do not hold is the one version of this that gets found out later, usually in the next conversation.\n\nTypical phrases: \"I think that matters too.\", \"That's the bit I'd care about as well.\", \"You and I are the same on that one.\", \"I'd want the same thing.\"\n\nThree ways to name it:\n\n1. Agree with the principle — plainly. \"Being asked first matters. I'd feel the same.\"\n\n2. Name it for them — when they have not said it. \"It sounds like it's about being trusted rather than about the rota.\"\n\n3. Say where you differ but still agree on the value — honest and often stronger. \"I'd have handled it differently, but I'd have minded just as much.\"\n\nMindset: agree with what matters to them, not with everything. Naming the value is not the same as agreeing with their conclusion, and you can do the first without the second.",
+      inputs: [
+        { q: "They are upset about being told after a decision was made.", a: "\"Being told beforehand matters. I'd have felt the same about that.\"", bundle: 'free' },
+        { q: "They describe refusing to cut corners on something.", a: "\"I'd want it done properly too, even when nobody's checking.\"", bundle: 'free' },
+        { q: "They explain why they stayed to help someone.", a: "\"You and I are the same on that. You don't leave people mid-thing.\"", bundle: 'free' },
+        { q: "They are annoyed about a promise that was quietly dropped.", a: "\"That's the bit I'd mind as well — not the change, the not-saying.\"", bundle: 'free' },
+        { q: "They describe standing up for a colleague.", a: "\"That matters. Somebody has to say it out loud in those rooms.\"", bundle: 'free' },
+        { q: "They have not named the value themselves.", a: "\"I think this is about being trusted rather than about the rota. And that's fair enough.\"", bundle: 'pro' },
+        { q: "You would have acted differently but you care about the same thing.", a: "\"I'd probably have said nothing, honestly. But I'd have minded exactly as much.\"", bundle: 'pro' },
+        { q: "You agree with the principle but not the conclusion.", a: "\"I'm with you on the principle completely. Whether leaving is the answer I'm less sure about.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Share, Then Bring It Back",
+      guideFront: "They have been talking a while. Show them you have followed it.",
+      guideBack: "One thing you could say here.",
+      description: "Offer something of your own and then hand the conversation straight back to them. The second half is the strategy: the same disclosure is generous when it returns and a hijack when it does not. Example: \"I had something similar with a deadline last year. Mine was smaller, though — how are you going to play yours?\"\n\nIt works because sharing does two opposite things depending on what follows it. Ended properly it says \"you are not the only one, and I am still listening\"; left open, it says \"and now let me tell you about me\", and the other person quietly stops.\n\nThe book calls this combining sharing with reflection — link your case to theirs rather than parking it next to theirs. In practice that means one sentence about you and then a question, or a sentence about what it means for them.\n\nTypical phrases: \"Mine was smaller, though — what are you going to do?\", \"That's just my version. Yours sounds harder.\", \"What helped me was X, though your situation isn't the same.\", \"Anyway — back to you.\"\n\nThree ways to bring it back:\n\n1. Share and ask — the standard, and always available. \"…what are you going to do about yours?\"\n\n2. Share what helped, marked as yours — useful, and only after they have been heard. \"What helped me was writing it down first. Might not fit yours.\"\n\n3. Say theirs is the bigger one — costs nothing and is usually true. \"Mine was nothing like as complicated as this.\"\n\nMindset: one sentence about you, then back. If your version is longer than theirs, it has stopped being about them.",
+      inputs: [
+        { q: "You have just told them about a similar experience.", a: "\"That's my version, anyway. Yours sounds harder — what are you going to do?\"", bundle: 'free' },
+        { q: "You want to offer what worked for you.", a: "\"What helped me was writing it down before the meeting. Might not fit your situation.\"", bundle: 'free' },
+        { q: "You realise you have been talking about yourself for a while.", a: "\"Anyway, I've hijacked this. Back to yours — where had you got to?\"", bundle: 'free' },
+        { q: "Your case was much smaller than theirs.", a: "\"Mine was nothing like as complicated as this, to be fair.\"", bundle: 'free' },
+        { q: "You shared something and the conversation has stalled.", a: "\"Enough about mine. Is yours actually decided or still open?\"", bundle: 'free' },
+        { q: "You could go on about your own case for ten minutes.", a: "\"I'll skip the details — the short version is I got it wrong. How are you thinking about it?\"", bundle: 'pro' },
+        { q: "You want to offer advice without it landing as advice.", a: "\"The thing that helped me might not transfer at all. Do you want it, or shall I shut up?\"", bundle: 'pro' },
+        { q: "You shared and they went quiet.", a: "\"That wasn't me changing the subject. What were you going to say before I jumped in?\"", bundle: 'pro' },
+      ]
+    },
+  ],
 };
 
 // ─── COLLECTIONS MODE DATA ───────────────────────────────────────────────────
@@ -8518,6 +8730,97 @@ const collectionsModeData = {
         { q: "a Main Event has just finished and she is sobbing, asking what you want", a: "\"I see myself in a relationship with a woman who treats me with investment and respect.\" (Come to Jesus Moment)", bundle: 'pro' },
         { q: "you realize her uncontrolled spending is jeopardizing your retirement", a: "\"I'm taking complete charge of the finances. Here is your weekly allowance.\" (Control of the Treasury)", bundle: 'pro' },
         { q: "she threatens a divorce to test if you will cave on a boundary", a: "\"The door is that way. I'll help you pack if you've made your decision.\" (Stay/Go Congruence)", bundle: 'pro' },
+      ]
+    },
+  ],
+  listeningthroughquestions: [
+    {
+      name: "Fill In the Story",
+      guideFront: "Which question does this account need?",
+      guideBack: "A possible question, with the type in brackets.",
+      description: "The three questions that get the account itself onto the table: the detail, the sequence and the cause. Reach for these when you have been given a verdict rather than a story — \"it was a nightmare\", \"it went fine\" — and you cannot picture any of it yet.\n\nThe three options:\n1. Ask About the Detail — pick one thing out and open it. \"Who's Petra?\"\n2. Ask What Happened Next — get the order. \"What happened after that?\"\n3. Ask Why It Happened — get the cause. \"What made you say yes?\"\n\nThese three cost the other person nothing. They are the safe ones, and they work with anybody at any level of acquaintance.\n\nMindset: you cannot ask about a feeling in a story you cannot picture. Get the shape first.",
+      inputs: [
+        { q: "They said the whole day was a disaster and stopped there.", a: "\"Take me through it. What went wrong first?\" [what happened next]", bundle: 'pro' },
+        { q: "They mention a colleague called Petra without explaining who she is.", a: "\"Who's Petra, in all this?\" [detail]", bundle: 'pro' },
+        { q: "They said they ended up taking the job.", a: "\"What made you say yes in the end?\" [why]", bundle: 'pro' },
+        { q: "They gave you the ending and none of the middle.", a: "\"How did you get from there to there?\" [what happened next]", bundle: 'pro' },
+        { q: "They used an odd word that did not fit the sentence.", a: "\"You said 'reluctantly'. Why reluctantly?\" [detail]", bundle: 'pro' },
+        { q: "The same problem has now happened three times.", a: "\"What keeps causing it? Same thing each time?\" [why]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Go Below the Facts",
+      guideFront: "Which question does this account need?",
+      guideBack: "A possible question, with the type in brackets.",
+      description: "The three questions that move from what happened to what it was like: the feeling, the hard part, and the view from somewhere else. These are for when you have the story and the person is still missing from it.\n\nThe three options:\n1. Ask How It Felt — their reaction, at a specific moment. \"What went through your head?\"\n2. Ask About the Hard Part — where they had to do something. \"What was the hardest bit?\"\n3. Ask How It Looked From Elsewhere — the other vantage point. \"How do you think she saw it?\"\n\nThese ask more of the other person, so they belong after the facts rather than instead of them. Asked cold they can feel like an interview about someone's inner life.\n\nMindset: earn these with the first three. A feeling question lands very differently once someone can tell you have followed the story.",
+      inputs: [
+        { q: "They have given a completely factual account of something big.", a: "\"How was all that, actually? You've told me what happened but not that.\" [how it felt]", bundle: 'pro' },
+        { q: "They describe a year abroad in three sentences.", a: "\"What was the hardest part of the first month?\" [hard part]", bundle: 'pro' },
+        { q: "They describe a disagreement with a colleague.", a: "\"How do you think it looked from her side?\" [elsewhere]", bundle: 'pro' },
+        { q: "They mention their project was cancelled.", a: "\"Was that a relief or the opposite?\" [how it felt]", bundle: 'pro' },
+        { q: "They say the move went fine in the end.", a: "\"What was the worst day of it?\" [hard part]", bundle: 'pro' },
+        { q: "They are too close to a problem to see round it.", a: "\"If a friend told you this, what would you say to them?\" [elsewhere]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "All Seven",
+      guideFront: "Which question does this account need?",
+      guideBack: "A possible question, with the type in brackets.",
+      description: "The full taxonomy. Most accounts are missing one thing at a time, and the skill is hearing which: the shape when you cannot picture it, the reason when the person is absent from it, the feeling when it has been given as facts, the difficulty when it has been given as a summary, another vantage point when it is one-sided, and the conclusion when it is finishing.\n\nThe seven, with the cue for each:\n1. Detail — something in the last sentence is worth opening. \"Who was there?\"\n2. What happened next — you cannot follow the order. \"And then?\"\n3. Why — events without an explanation. \"What made you?\"\n4. How it felt — facts without a person. \"What was your first reaction?\"\n5. The hard part — a summary with no obstacle in it. \"What nearly stopped it?\"\n6. From elsewhere — one vantage point only. \"How did she see it?\"\n7. What they took from it — the subject is finishing. \"What's changed since?\"\n\nMindset: ask the one their last sentence opened, not the next one on the list. That is the whole difference between following and interviewing.",
+      inputs: [
+        { q: "They mention driving back from Aarhus on Sunday.", a: "\"Who was in the car with you?\" [detail]", bundle: 'pro' },
+        { q: "They summarised a long argument in one sentence.", a: "\"Can you walk me through it? I want the actual order.\" [what happened next]", bundle: 'pro' },
+        { q: "They describe a decision that surprised you.", a: "\"What made you go that way rather than the obvious one?\" [why]", bundle: 'pro' },
+        { q: "They describe being told the news in a meeting.", a: "\"What was your first reaction when they said it?\" [how it felt]", bundle: 'pro' },
+        { q: "They mention finishing a long project.", a: "\"What nearly stopped it? There's always something.\" [hard part]", bundle: 'pro' },
+        { q: "They describe a situation involving several people.", a: "\"Who came out of it worst, do you think?\" [from elsewhere]", bundle: 'pro' },
+        { q: "They have finished telling you about a difficult year.", a: "\"What's different now, compared to before all that?\" [what they took from it]", bundle: 'pro' },
+        { q: "They tell you about something that went unexpectedly well.", a: "\"Did anyone see that coming?\" [from elsewhere]", bundle: 'pro' },
+      ]
+    },
+  ],
+  showunderstanding2: [
+    {
+      name: "Check and Connect",
+      guideFront: "What would show them you have been following?",
+      guideBack: "A possible response, with the move in brackets.",
+      description: "The three moves that prove you have tracked the whole conversation rather than the last sentence: checking that you have it right, connecting to something said earlier, and summarising the lot. All three are about the shape of what they have said rather than about how they feel.\n\nThe three options:\n1. Ask If You Got It Right — make the checking explicit. \"Am I getting that right?\"\n2. Connect It to What They Said Earlier — carry a detail forward. \"Earlier you said…\"\n3. Summarise the Whole Thing Back — three clauses, at the end. \"So: timing, workload, and being asked last.\"\n\nThese are the safe three. None of them asks the other person for anything, and all three work at any level of acquaintance.\n\nMindset: understanding is not a feeling you have, it is a thing you can be checked on. These three offer the check.",
+      inputs: [
+        { q: "They have described a work problem at length.", a: "\"So it's not the workload, it's that nobody told you. Am I getting that right?\" [check]", bundle: 'pro' },
+        { q: "They mentioned being tired earlier and are now describing their commute.", a: "\"Earlier you said you were shattered — is this why?\" [connect]", bundle: 'pro' },
+        { q: "A long account has come to an end.", a: "\"So: the timing, the workload, and being asked last. Missed anything?\" [summarise]", bundle: 'pro' },
+        { q: "Two separate complaints seem to have one cause.", a: "\"The travel and the tiredness — same problem?\" [connect]", bundle: 'pro' },
+        { q: "Their point could be read two ways.", a: "\"Do you mean you don't want to, or that you can't?\" [check]", bundle: 'pro' },
+        { q: "They have been round the same three points.", a: "\"Is it those three, or is there a fourth you haven't said?\" [summarise]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Meet Them",
+      guideFront: "What would show them you have been following?",
+      guideBack: "A possible response, with the move in brackets.",
+      description: "The three moves that put something of yours next to something of theirs: the shared feeling, the shared value, and the disclosure that returns. These do what checking cannot — they say you have not only followed it, you recognise it.\n\nThe three options:\n1. Say You Felt That Too — the feeling, one sentence. \"I know that one.\"\n2. Name the Value You Share — the thing underneath. \"Being asked first matters.\"\n3. Share, Then Bring It Back — your case, then straight back to theirs. \"Mine was smaller. What will you do?\"\n\nThese cost airtime, which is why each has a rule attached: keep the feeling to a sentence, only name a value you actually hold, and always hand it back.\n\nMindset: meeting somebody is not the same as taking a turn. The difference is length.",
+      inputs: [
+        { q: "They describe being left out of a decision.", a: "\"That's a horrible feeling. I've had it.\" [shared feeling]", bundle: 'pro' },
+        { q: "They are upset about being told after the fact.", a: "\"Being told beforehand matters. I'd have felt the same.\" [shared value]", bundle: 'pro' },
+        { q: "You have just told them about a similar experience.", a: "\"That's my version. Yours sounds harder — what will you do?\" [share and return]", bundle: 'pro' },
+        { q: "They say they felt stupid asking for help.", a: "\"I recognise that. It never feels like the small thing it is.\" [shared feeling]", bundle: 'pro' },
+        { q: "They stayed late to help someone and are playing it down.", a: "\"You and I are the same on that one.\" [shared value]", bundle: 'pro' },
+        { q: "You realise you have been talking about yourself.", a: "\"I've hijacked this. Where had you got to?\" [share and return]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "All Six",
+      guideFront: "What would show them you have been following?",
+      guideBack: "A possible response, with the move in brackets.",
+      description: "The full set. A conversation usually needs one of them at a time: checking when you might have it wrong, connecting when two things they said belong together, summarising when a long account has ended, the feeling when the facts have been given and the person has not, the value when they are explaining why something mattered, and the return when you have just taken a turn.\n\nThe six, with the cue for each:\n1. Ask If You Got It Right — you are not certain. \"Am I getting that right?\"\n2. Connect to Earlier — two things belong together. \"Earlier you said…\"\n3. Summarise — a long account has finished. \"So, three things…\"\n4. Say You Felt That Too — the reaction is the part they are carrying. \"I know that one.\"\n5. Name the Value — they are explaining why it mattered. \"That matters to me too.\"\n6. Share, Then Bring It Back — you have just spoken about yourself. \"Anyway — yours?\"\n\nMindset: Pt. 1 shows you heard the sentence. These six show you have been following the person.",
+      inputs: [
+        { q: "You have listened for five minutes without saying anything.", a: "\"Can I say back what I think you're telling me?\" [check]", bundle: 'pro' },
+        { q: "A detail from twenty minutes ago suddenly explains everything.", a: "\"The thing you said at the start — is that underneath all of this?\" [connect]", bundle: 'pro' },
+        { q: "They have finished and are waiting for you.", a: "\"So it comes down to whether they'll move the date. Fair?\" [summarise]", bundle: 'pro' },
+        { q: "They admit they were relieved when it was cancelled.", a: "\"I felt exactly that when mine was. And then guilty about it.\" [shared feeling]", bundle: 'pro' },
+        { q: "They describe refusing to cut corners.", a: "\"I'd want it done properly too, even when nobody's checking.\" [shared value]", bundle: 'pro' },
+        { q: "You have offered your own case and they have gone quiet.", a: "\"That wasn't me changing the subject. What were you going to say?\" [share and return]", bundle: 'pro' },
+        { q: "You have got their meaning wrong once already.", a: "\"So I had that backwards. Is it that she asked, or that she didn't?\" [check]", bundle: 'pro' },
       ]
     },
   ],

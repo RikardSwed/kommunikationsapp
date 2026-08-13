@@ -4611,4 +4611,208 @@ const memorizeCollections = {
       ]
     },
   ],
+  listeningthroughquestions: [
+    {
+      name: "Core Idea",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "What the seven question types are for, and how to choose.",
+      cards: [
+        { q: "What is this pack for?", a: "The questions you ask while somebody is telling you about something that happened to them.", bundle: 'free' },
+        { q: "What are the seven types?", a: "The detail, what happened next, why, how it felt, the hard part, how it looked from elsewhere, and what they took from it.", bundle: 'free' },
+        { q: "How do you choose which to ask?", a: "By what the account is missing — and by what their last sentence opened.", bundle: 'free' },
+        { q: "What is the difference between following and interviewing?", a: "A followed question comes out of their last answer. An interview question comes out of your head, and people feel it within two or three.", bundle: 'pro' },
+        { q: "Which three are the safe ones to start with?", a: "The detail, the sequence and the cause — none of them asks anything of the other person.", bundle: 'pro' },
+        { q: "How is this different from Deep Questions?", a: "Deep Questions is about getting to know a person. This is about drawing out an account of something that happened.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ask About the Detail",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "The theory behind picking one thing out.",
+      cards: [
+        { q: "What is the detail question?", a: "Picking one small thing they said — a name, a place, an object, an odd word — and asking about that.", bundle: 'free' },
+        { q: "Why is it the most reliable follow-up?", a: "The material is already on the table, and a specific question proves you were listening to that particular sentence.", bundle: 'free' },
+        { q: "Which detail should you pick?", a: "The one said in passing rather than the one they emphasised. The thrown-away half-sentence is usually the door.", bundle: 'pro' },
+        { q: "What does a general question reveal?", a: "That it could have been asked by someone who heard nothing — and people can tell.", bundle: 'pro' },
+        { q: "Name three kinds of detail worth picking.", a: "The concrete noun, the odd word that does not fit, and the half-sentence they hurried past.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ask What Happened Next",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "The theory behind the sequence question.",
+      cards: [
+        { q: "What does the sequence question do?", a: "Turns a verdict into a story — \"it was a nightmare\" becomes something you can follow.", bundle: 'free' },
+        { q: "Why is it the easiest question to ask?", a: "It needs no understanding of what came before. \"What happened after that?\" always works.", bundle: 'free' },
+        { q: "Why do people compress a story into a verdict?", a: "They assume the detail would bore you. Asking for it tells them it would not.", bundle: 'pro' },
+        { q: "What do you ask if you have joined halfway?", a: "The backwards version — \"how did it get to that point?\"", bundle: 'pro' },
+        { q: "Where does the interesting part of a story live?", a: "In the middle, which is exactly the part a summary leaves out.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ask Why It Happened",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "The theory behind the cause question.",
+      cards: [
+        { q: "What does the why question add?", a: "The explanation — which is where the person appears in their own story rather than being someone things happened to.", bundle: 'free' },
+        { q: "What is the safer framing?", a: "\"What made you…\" rather than \"why did you…\".", bundle: 'free' },
+        { q: "What is the difference between those two framings?", a: "One asks for a reason; the other can sound like it is asking for a defence.", bundle: 'pro' },
+        { q: "Which why is more interesting — the event or the choice?", a: "The choice. The cause of an event is outside them; the reason for a decision is not.", bundle: 'pro' },
+        { q: "What do you ask when the stated reason does not quite explain it?", a: "\"Is that the whole reason, or is there a bit more to it?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ask How It Felt",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "The theory behind the reaction question.",
+      cards: [
+        { q: "Why is the feeling question worth asking?", a: "Most accounts are given in facts, and the facts are not what the person is carrying.", bundle: 'free' },
+        { q: "How should you narrow it?", a: "To a specific moment. \"How did you feel about all that\" is a question about someone's whole life.", bundle: 'free' },
+        { q: "What do you ask someone who does not talk about feelings?", a: "What they did straight afterwards — the action usually tells you the same thing.", bundle: 'pro' },
+        { q: "When should you ask it?", a: "After the facts. Asked cold it lands as an interview about someone's inner life.", bundle: 'pro' },
+        { q: "What is the gentlest version?", a: "Offering a word for them to try on — \"that sounds like it stung a bit. Did it?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ask About the Hard Part",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "The theory behind the obstacle question.",
+      cards: [
+        { q: "Why ask about the difficult bit?", a: "Everything worth telling has an obstacle in it, and the obstacle is where the person had to do something.", bundle: 'free' },
+        { q: "What is the follow-up that matters?", a: "What they did about it.", bundle: 'free' },
+        { q: "What does asking about the hard part assume?", a: "That they got through something — a much better assumption than most questions carry.", bundle: 'pro' },
+        { q: "What do you ask when an account has been suspiciously smooth?", a: "Whether any of it was as bad as it sounds like it should have been.", bundle: 'pro' },
+        { q: "Which version often produces the best story?", a: "The thing that nearly stopped it.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ask How It Looked From Elsewhere",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "The theory behind the perspective question.",
+      cards: [
+        { q: "What does the perspective question do?", a: "Invites them out of the single vantage point the account was given from.", bundle: 'free' },
+        { q: "What is its gentlest form?", a: "Asking about their own past self — \"knowing what you know now, would you do it again?\"", bundle: 'free' },
+        { q: "How do you keep it from sounding like a lesson?", a: "Ask it as curiosity. \"Have you considered how she felt?\" is a lesson with a question mark; \"how do you think it looked from her side?\" is a question.", bundle: 'pro' },
+        { q: "What is the outside-view version?", a: "\"If a friend told you this, what would you say to them?\" — useful when someone is too close to a problem.", bundle: 'pro' },
+        { q: "What can it do that no other question in the pack does?", a: "Occasionally change the account while it is being given.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ask What They Took From It",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "The theory behind the closing question.",
+      cards: [
+        { q: "What is this question for?", a: "Closing a subject properly rather than letting it trail off.", bundle: 'free' },
+        { q: "Why not simply ask \"what did you learn?\"", a: "It sounds like a school exercise. \"What's changed since?\" asks the same thing.", bundle: 'free' },
+        { q: "Which version do people answer most fully?", a: "What they would tell someone about to do the same thing.", bundle: 'pro' },
+        { q: "When should you ask it?", a: "At the end. Asked in the middle it stops the story.", bundle: 'pro' },
+        { q: "They say they learned nothing. What then?", a: "Ask whether anything changed anyway — the answer is usually yes.", bundle: 'pro' },
+      ]
+    },
+  ],
+  showunderstanding2: [
+    {
+      name: "Core Idea",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "What this pack adds to Show Understanding Pt. 1.",
+      cards: [
+        { q: "What does Pt. 1 cover?", a: "Three ways to show you heard the last thing — a follow-up question, a rephrase, and sharing a similar experience.", bundle: 'free' },
+        { q: "What does Pt. 2 add?", a: "Showing you have followed the WHOLE conversation — checking, connecting across it, summarising — and meeting them rather than only tracking them.", bundle: 'free' },
+        { q: "What are the six moves?", a: "Ask if you got it right, connect to what they said earlier, summarise the whole thing back, say you felt that too, name the value you share, and share then bring it back.", bundle: 'free' },
+        { q: "Which three are the safe ones?", a: "Checking, connecting and summarising — none of them asks anything of the other person.", bundle: 'pro' },
+        { q: "What do the other three cost?", a: "Airtime, which is why each has a rule: one sentence for the feeling, only a value you hold, and always hand it back.", bundle: 'pro' },
+        { q: "What is the order when you use both kinds?", a: "Understand first, meet second. A disclosure before you have understood is a guess about what they need.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ask If You Got It Right",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "The theory behind explicit checking.",
+      cards: [
+        { q: "What makes this different from just rephrasing?", a: "The question at the end. It turns a claim about their meaning into an offer they can correct.", bundle: 'free' },
+        { q: "What is the good outcome?", a: "Being corrected. It is the most useful sentence in the exchange and you only get it if you ask.", bundle: 'free' },
+        { q: "When is it patronising?", a: "Only when you leave the question off. With the question it is an offer, not a summary of them.", bundle: 'pro' },
+        { q: "What do you do when it could be read two ways?", a: "Offer both readings. \"Do you mean you don't want to, or that you can't?\"", bundle: 'pro' },
+        { q: "How often should you check?", a: "At the pauses, not at the commas. One good check beats three that break the flow.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Connect It to What They Said Earlier",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "The theory behind carrying a detail forward.",
+      cards: [
+        { q: "What does connecting prove?", a: "That you have followed the whole conversation, not just the current sentence.", bundle: 'free' },
+        { q: "How much do you need to remember?", a: "One detail. One thing brought back at the right moment does the whole job.", bundle: 'free' },
+        { q: "Which connection is the strongest?", a: "Two things they mentioned separately that turn out to be one thing.", bundle: 'pro' },
+        { q: "How do you offer a connection without diagnosing?", a: "As a question. \"Are those the same problem?\" rather than \"so obviously it's the travel\".", bundle: 'pro' },
+        { q: "What do you do after offering it?", a: "Nothing. This move often produces a realisation, and a realisation needs a moment.", bundle: 'pro' },
+        { q: "How do you handle a contradiction with something earlier?", a: "Gently, and as a question — \"which is nearer?\" rather than \"you said the opposite before\".", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Summarise the Whole Thing Back",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "The theory behind the long loop.",
+      cards: [
+        { q: "When does a summary belong?", a: "At the end of a stretch, not in the middle of one.", bundle: 'free' },
+        { q: "How many points?", a: "Three. A summary that includes everything is a repetition.", bundle: 'free' },
+        { q: "What should a summary end with?", a: "\"Have I missed anything?\" — it is a draft, and the correction is the point.", bundle: 'pro' },
+        { q: "Why summarise before you respond?", a: "Otherwise you respond to your own version, and the correction changes what you would have said surprisingly often.", bundle: 'pro' },
+        { q: "What is the boldest version?", a: "Naming the one thing underneath the rest — worth offering, and worth checking.", bundle: 'pro' },
+        { q: "What does hearing it back do for them?", a: "It is often the first time they see the shape of what they have been saying, and people rearrange their own conclusion while listening.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Say You Felt That Too",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "The theory behind sharing the feeling.",
+      cards: [
+        { q: "What do you share — the feeling or the story?", a: "The feeling. The story is a different conversation.", bundle: 'free' },
+        { q: "How long should it be?", a: "One sentence. The second sentence about your own case is where it becomes your turn.", bundle: 'free' },
+        { q: "How is this different from Validation?", a: "Validation says their feeling makes sense. This reports your own — opposite direction, which is why it has to be short.", bundle: 'pro' },
+        { q: "What does it remove for them?", a: "The suspicion that their reaction was unreasonable, which is the isolating part of a difficult experience.", bundle: 'pro' },
+        { q: "What is the safest size of all?", a: "One clause. \"I know that feeling.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Name the Value You Share",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "The theory behind meeting what is underneath.",
+      cards: [
+        { q: "What are people usually explaining when they explain a grievance?", a: "A value — fairness, being consulted, honesty, not letting someone down.", bundle: 'free' },
+        { q: "Why does naming it land so hard?", a: "Almost nobody says the value out loud, so naming it says you understood the part underneath.", bundle: 'free' },
+        { q: "What is the one rule?", a: "It has to be true. A value you do not hold gets found out, usually in the next conversation.", bundle: 'pro' },
+        { q: "Does agreeing with the value commit you to the conclusion?", a: "No — and saying both is stronger than agreeing with everything.", bundle: 'pro' },
+        { q: "What do you say when you would have acted differently?", a: "That you would have minded just as much. It is honest and it is usually the truer sentence.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Share, Then Bring It Back",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "The theory behind the disclosure that returns.",
+      cards: [
+        { q: "Which half of this strategy is the strategy?", a: "The second — the same disclosure is generous when it returns and a hijack when it does not.", bundle: 'free' },
+        { q: "How do you bring it back?", a: "A question about theirs, or a sentence about what it means for them.", bundle: 'free' },
+        { q: "What does the book mean by combining sharing with reflection?", a: "Linking your case to theirs rather than parking it next to theirs.", bundle: 'pro' },
+        { q: "When can you offer what helped you?", a: "After they have been heard, and marked as yours — \"might not fit your situation\".", bundle: 'pro' },
+        { q: "What is the test that it has gone wrong?", a: "Your version is longer than theirs.", bundle: 'pro' },
+        { q: "What is the cheapest repair?", a: "\"Anyway, that's mine. Where had you got to?\"", bundle: 'pro' },
+      ]
+    },
+  ],
 };

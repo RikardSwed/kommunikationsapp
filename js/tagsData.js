@@ -262,6 +262,12 @@ const packTags = {
   praxdread5: [
     'praxeology', 'dread', 'agency', 'vision', 'leadership', 'treasury', 'remorse', 'rian stone'
   ],
+  listeningthroughquestions: [
+    'listening', 'questions', 'curiosity', 'drawing someone out', 'following up'
+  ],
+  showunderstanding2: [
+    'listening', 'understanding', 'checking', 'connecting', 'sharing'
+  ],
 };
 
 // ─── TOPICS ──────────────────────────────────────────────────────────
@@ -296,7 +302,7 @@ const TOPICS = [
   { id: 'endingconversations',   title: 'Ending Conversations',          packs: ['endingconversations'] },
 
   // ── Being with the other person ───────────────────────────────────
-  { id: 'listening',             title: 'Listening & Understanding',     packs: ['listeningresponding', 'showunderstanding', 'validation'] },
+  { id: 'listening',             title: 'Listening & Understanding',     packs: ['listeningresponding', 'showunderstanding', 'validation', 'listeningthroughquestions', 'showunderstanding2'] },
   { id: 'depth',                 title: 'Depth & Connection',            packs: ['conversationaldepth', 'supportingconversations', 'talkingaboutyourself'] },
 
   // ── Holding the floor ─────────────────────────────────────────────

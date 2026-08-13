@@ -5053,4 +5053,157 @@ const multiStepCollections = {
       ]
     },
   ],
+  listeningthroughquestions: [
+    {
+      name: "Follow the Thread Down",
+      guideFront: "They answer, and you follow. What is the next question?",
+      guideBack: "A question you could ask at this step.",
+      description: "Four questions in a row, each built out of the answer to the last, which is what separates following from interviewing. Steps: 1) Open with a detail from what they said, 2) Ask for the sequence, 3) Ask the reason, 4) Ask the feeling.\n\nThe shape of the whole thing:\n1. \"Who was in the car with you?\"\n2. \"So what happened when you got there?\"\n3. \"What made you stay the extra night?\"\n4. \"How was the drive back, after all that?\"\n\nWhy this order: the shape of the story first, the person second. Each question uses a word from the answer before it, and that is the thing the other person actually notices — not the cleverness of any single question.\n\nMindset: never plan the next question while they are answering. The question you need is inside their answer, and you cannot hear it if you are composing.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "A colleague mentions they drove back from Aarhus on Sunday.",
+          steps: [
+            { front: "Step 1 · Detail — pick one thing out", back: "\"Who was in the car with you?\"" },
+            { front: "Step 2 · Sequence — they say they went with their brother", back: "\"How did the two of you end up going together?\"" },
+            { front: "Step 3 · Why — they say it was a last-minute thing", back: "\"What made you decide to go in the end?\"" },
+            { front: "Step 4 · Feeling — they say it was their grandmother's house", back: "\"How was it, seeing the place again?\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Someone at a course says they only started doing this a year ago.",
+          steps: [
+            { front: "Step 1 · Detail — open the timing", back: "\"A year? What were you doing before that?\"" },
+            { front: "Step 2 · Sequence — they say they switched from teaching", back: "\"How did that actually happen — was it gradual?\"" },
+            { front: "Step 3 · Why — they say they had had enough", back: "\"What was the thing that finally decided it?\"" },
+            { front: "Step 4 · Feeling — they describe handing in their notice", back: "\"What was the walk home like after that?\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "When You Have Been Given a Verdict",
+      guideFront: "They answer, and you follow. What is the next question?",
+      guideBack: "A question you could ask at this step.",
+      description: "They summarised the whole thing in four words — \"it was a nightmare\" — and there is nothing to follow yet. Three questions turn a verdict into an account. Steps: 1) Ask for the shape, 2) Ask about the hard part, 3) Ask the reason or the feeling, whichever is missing.\n\nThe shape of the whole thing:\n1. \"Take me through it — what went wrong first?\"\n2. \"What was the worst bit?\"\n3. \"What was going through your head at that point?\"\n\nWhy this order: a verdict has no handles. Asking for the sequence gives you something to pick up, the obstacle gives you the story, and only then is there a moment specific enough to ask about a feeling.\n\nMindset: do not ask how someone feels about something you cannot picture. Get the shape first and the rest becomes askable.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "A friend says the week has been an absolute disaster and stops there.",
+          steps: [
+            { front: "Step 1 · Shape — ask for the sequence", back: "\"Take me through it. What went wrong first?\"" },
+            { front: "Step 2 · Hard part — they list three things", back: "\"Which of those was actually the worst?\"" },
+            { front: "Step 3 · Feeling — they say it was the phone call", back: "\"What went through your head when they said it?\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A colleague says the launch \"went fine, in the end\" and changes the subject.",
+          steps: [
+            { front: "Step 1 · Shape — the \"in the end\" is the door", back: "\"In the end? What happened before the end?\"" },
+            { front: "Step 2 · Hard part — they mention a scramble on the Thursday", back: "\"What nearly went wrong on the Thursday?\"" },
+            { front: "Step 3 · Why — they say someone caught it late", back: "\"How did anyone spot it at that point?\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Closing a Subject Well",
+      guideFront: "They answer, and you follow. What is the next question?",
+      guideBack: "A question you could ask at this step.",
+      description: "The account has reached its end and the conversation could either finish the subject properly or trail off into a pause. Two questions land it. Steps: 1) Ask what changed, 2) Ask what they would tell someone else, 3) Let it end.\n\nThe shape of the whole thing:\n1. \"What's different now, after all that?\"\n2. \"What would you tell someone about to do the same thing?\"\n3. (let the subject finish — do not open a new one on top of it)\n\nWhy this order: the reflective questions belong at the end, where they close the subject rather than deepening it. Asked in the middle they stop the story.\n\nMindset: this is a closing move. Ask it, listen to the answer, and then let the conversation go somewhere else.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "A friend has finished telling you about a hard year at work.",
+          steps: [
+            { front: "Step 1 · What changed", back: "\"What's different now, compared to when it started?\"" },
+            { front: "Step 2 · What they would tell someone", back: "\"What would you tell someone heading into the same thing?\"" },
+            { front: "Step 3 · Let it land", back: "\"That's a good way of putting it.\" (and then let the subject rest)" },
+          ]
+        },
+      ]
+    },
+  ],
+  showunderstanding2: [
+    {
+      name: "Check, Then Meet",
+      guideFront: "They are talking. Show them you have followed it.",
+      guideBack: "A line you could say at this step.",
+      description: "The order that makes the personal moves land: establish that you have understood before you say anything about yourself. Steps: 1) Check your version, 2) Take the correction, 3) Meet them with the feeling or the value.\n\nThe shape of the whole thing:\n1. \"So it's not the workload — it's that nobody asked you.\"\n2. \"Right, so it's both. The workload made the not-asking worse.\"\n3. \"That's a horrible combination. I've had the second half of it.\"\n\nWhy this order: a disclosure before you have understood is a guess about what they need. After a check that they corrected, it lands as recognition rather than as a change of subject.\n\nMindset: understand first, meet second. In that order the sentence about you is a gift; in the other order it is an interruption.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "A colleague has been describing a decision that was made without them.",
+          steps: [
+            { front: "Step 1 · Check — offer your version", back: "\"So it's not the decision itself, it's that nobody asked you first.\"" },
+            { front: "Step 2 · Take the correction — they say it is both", back: "\"Right — the workload's real, and finding out last made it worse.\"" },
+            { front: "Step 3 · Meet them — the value underneath", back: "\"Being asked first matters. I'd have minded that just as much.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A friend has described a long, difficult few weeks.",
+          steps: [
+            { front: "Step 1 · Check — offer the shape", back: "\"It sounds like the work is fine and everything around it isn't. Right?\"" },
+            { front: "Step 2 · Take the correction — they say the work is part of it too", back: "\"Okay, so it's all of it, and the work is what you can't put down.\"" },
+            { front: "Step 3 · Meet them — the feeling, one sentence", back: "\"I know that feeling. It's the not-being-able-to-put-it-down that gets you.\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Bring It Together",
+      guideFront: "They are talking. Show them you have followed it.",
+      guideBack: "A line you could say at this step.",
+      description: "Two things they mentioned separately turn out to be one thing. Connect them, check the connection, and let them decide what it means. Steps: 1) Name both, 2) Ask whether they are connected, 3) Let them take it.\n\nThe shape of the whole thing:\n1. \"You said earlier the travel was getting heavy.\"\n2. \"And now the tiredness. Are those the same problem?\"\n3. (say nothing — they are working it out)\n\nWhy this order: naming both before connecting them stops it sounding like a diagnosis. And the silence at the end matters — this move often produces a realisation, and a realisation needs a moment.\n\nMindset: offer the connection, do not conclude it. \"Are those the same thing?\" is a question; \"so obviously it's the travel\" is a verdict.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "A friend has separately mentioned a long commute and constant tiredness.",
+          steps: [
+            { front: "Step 1 · Name both", back: "\"You said earlier the travel had got heavy.\"" },
+            { front: "Step 2 · Connect and check", back: "\"And now the tiredness. Are those the same problem, do you think?\"" },
+            { front: "Step 3 · Leave the space", back: "(say nothing while they think — the pause is the move)" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A colleague has complained about the rota and, separately, about not being consulted.",
+          steps: [
+            { front: "Step 1 · Name both", back: "\"The rota came up earlier, and now the not-being-asked.\"" },
+            { front: "Step 2 · Connect and check", back: "\"Is the rota actually the issue, or is it who decides it?\"" },
+            { front: "Step 3 · Leave the space", back: "\"Take your time — I've just realised I've asked you something quite big.\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Land a Long One",
+      guideFront: "They are talking. Show them you have followed it.",
+      guideBack: "A line you could say at this step.",
+      description: "They have been talking for a while and it is coming to an end. Summarise, invite the correction, and only then respond. Steps: 1) Summarise in three, 2) Ask what you missed, 3) Respond to the corrected version.\n\nThe shape of the whole thing:\n1. \"So: the timing, the workload, and finding out last.\"\n2. \"Have I missed anything?\"\n3. \"Then the thing I'd want to sort first is the finding-out-last.\"\n\nWhy this order: responding to your own summary before they have corrected it means responding to your version rather than theirs. The correction takes four seconds and changes what you say next surprisingly often.\n\nMindset: summarise, get corrected, then answer. Skipping the middle step is how people end up solving the wrong problem warmly.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "A colleague has spent several minutes on a problem and stopped.",
+          steps: [
+            { front: "Step 1 · Summarise in three", back: "\"So: the timing, the workload, and finding out after everyone else.\"" },
+            { front: "Step 2 · Invite the correction", back: "\"Have I missed anything, or got the weight wrong?\"" },
+            { front: "Step 3 · Respond to the corrected version", back: "\"Then the one worth sorting first is the finding-out-last, isn't it.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A friend has finished a long account of a family situation.",
+          steps: [
+            { front: "Step 1 · Summarise the shape", back: "\"It started as a practical thing and it's turned into something older.\"" },
+            { front: "Step 2 · Invite the correction", back: "\"Is that fair, or am I making it neater than it is?\"" },
+            { front: "Step 3 · Respond to the corrected version", back: "\"Then it's not really about the house at all. No wonder it's hard to talk about.\"" },
+          ]
+        },
+      ]
+    },
+  ],
 };
