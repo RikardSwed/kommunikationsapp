@@ -12,7 +12,10 @@ const feedbackExportBtn   = document.getElementById('feedbackExportBtn');
 
 function applyFeedbackMode() {
   document.body.classList.toggle('feedback-mode', feedbackMode);
-  feedbackModeToggle.checked = feedbackMode;
+  // v1.27.02 — null-guarded because tools/build-release.js deletes #devSection
+  // from the public build, and an unguarded throw here would stop the rest of
+  // this file from ever running.
+  if (feedbackModeToggle) feedbackModeToggle.checked = feedbackMode;
 }
 
 // Open/close home settings screen (slides in/out from the right, like modeScreen)
@@ -80,8 +83,8 @@ if (devSettingsDoneBtn) {
   devSettingsDoneBtn.addEventListener('touchend', e => { e.preventDefault(); navFromSettings(); }, { passive: false });
 }
 
-// Feedback toggle
-feedbackModeToggle.addEventListener('change', () => {
+// Feedback toggle (guarded — see applyFeedbackMode above)
+if (feedbackModeToggle) feedbackModeToggle.addEventListener('change', () => {
   feedbackMode = feedbackModeToggle.checked;
   localStorage.setItem('feedbackMode', feedbackMode);
   if (feedbackMode && alSuggestMode) {
@@ -94,8 +97,8 @@ feedbackModeToggle.addEventListener('change', () => {
   if (window.updateModeGearVisibility) window.updateModeGearVisibility();
 });
 
-// Export feedback data as JSON
-feedbackExportBtn.addEventListener('click', () => {
+// Export feedback data as JSON (guarded — see applyFeedbackMode above)
+if (feedbackExportBtn) feedbackExportBtn.addEventListener('click', () => {
   const data = {};
   for (let i = 0; i < localStorage.length; i++) {
     const key = localStorage.key(i);
