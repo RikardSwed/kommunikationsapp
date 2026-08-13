@@ -6218,6 +6218,660 @@ const collections = {
       ]
     },
   ],
+  setupquestion: [
+    {
+      name: "Opinion Question",
+      guideFront: "You want to talk about something. Ask them first.",
+      guideBack: "One way to ask it — and the answer you give once they have gone.",
+      description: "Ask what they think about something, listen, then say what you think. The question comes first, which is what makes it feel like interest rather than an announcement — and your own answer comes second, which is what stops it being an interview. Example: \"What did you make of that?\" and then, when they have said their bit, \"I liked it more than I expected to.\"\n\nThree strengths of question, from easiest to answer to most inviting:\n1. The closed one with an opening — \"Did you like it?\" gets a yes, and yes is a start.\n2. The open one — \"What did you make of it?\" gets a sentence.\n3. The one that offers a side — \"Was it just me or did it drag?\" gives them something to agree or disagree with.\n\nAsk about something present. An opinion question about a thing you can both see needs no setting up, and neither of you has to know anything.\n\nMindset: you asked because you want to talk about it too. Say your own answer afterwards — otherwise you have run an interview and learned nothing about each other.",
+      inputs: [
+        { q: "A film has just finished and the room is quiet.", a: "\"What did you make of that?\" — then your own: \"I liked it more than I expected to.\"", bundle: 'free' },
+        { q: "You are both looking at the same painting in a gallery.", a: "\"What do you make of this one?\" — then your own: \"I can't decide if I love it or hate it.\"", bundle: 'free' },
+        { q: "You are next to someone at a gig before the support act.", a: "\"Do you know these two?\" — then your own: \"Support bands are half the reason I come, honestly.\"", bundle: 'free' },
+        { q: "Music is playing at a party and nobody has spoken.", a: "\"What do you think of this playlist?\" — then your own: \"It's the best thing about this room so far.\"", bundle: 'free' },
+        { q: "You are both looking at the same menu in a queue.", a: "\"Have you had anything here before?\" — then your own: \"The coffee's underrated, that much I know.\"", bundle: 'free' },
+        { q: "A talk has just ended and people are filing out.", a: "\"What did you think of the last bit?\" — then your own: \"I was completely lost for about five minutes.\"", bundle: 'pro' },
+        { q: "A colleague mentions a series everyone is watching.", a: "\"Are you into it?\" — then your own: \"I'm the one person who found it a bit slow.\"", bundle: 'pro' },
+        { q: "You are standing with someone at a new venue.", a: "\"What do you make of this place?\" — then your own: \"I like it. It's trying quite hard, but I like it.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Purpose Question",
+      guideFront: "You want to talk about something. Ask them first.",
+      guideBack: "One way to ask it — and the answer you give once they have gone.",
+      description: "Ask why they are here or what they are after, then say why you came. It is the easiest of the five, because everybody in a room has a reason to be in it, and nobody has to be interesting to answer. Example: \"What brought you along tonight?\" and then, \"A friend talked me into it, honestly.\"\n\nThree ways to ask it:\n1. The plain one — \"What brings you here?\"\n2. The one about how they arrived at it — \"How did you end up doing this?\"\n3. The one that assumes nothing — \"Is this your first one of these?\"\n\nIt works everywhere people have gathered on purpose: a class, a club, a course, an event, a shared table.\n\nMindset: nobody has to invent anything to answer this one. That is what makes it the safest opener in the pack — and your own reason, said afterwards, is what makes it a conversation.",
+      inputs: [
+        { q: "First evening of a course where nobody knows anybody.", a: "\"What made you sign up for this?\" — then your own: \"I finally ran out of excuses, basically.\"", bundle: 'free' },
+        { q: "You arrive at a hobby club you have never been to.", a: "\"How did you get into this?\" — then your own: \"I've wanted to learn it properly for about ten years.\"", bundle: 'free' },
+        { q: "A networking event where people are milling around.", a: "\"What brought you along?\" — then your own: \"I mostly came to meet people outside my own team.\"", bundle: 'free' },
+        { q: "You join a group class at the gym.", a: "\"Is this one you come to a lot?\" — then your own: \"I'm here to be forced to actually stretch.\"", bundle: 'free' },
+        { q: "You sit down at a shared table in a co-working space.", a: "\"What brings you in here?\" — then your own: \"Getting out of my flat, mostly.\"", bundle: 'free' },
+        { q: "A conference mixer where everyone has a badge.", a: "\"What pulled you in to this one?\" — then your own: \"I came for one talk and stayed for the coffee.\"", bundle: 'pro' },
+        { q: "You show up to a volunteering day.", a: "\"How did you end up here?\" — then your own: \"I signed up to do something with my Saturday for once.\"", bundle: 'pro' },
+        { q: "A book club meeting you were invited to.", a: "\"What made you join?\" — then your own: \"I wanted to read things I wouldn't pick myself.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Status Question",
+      guideFront: "You want to talk about something. Ask them first.",
+      guideBack: "One way to ask it — and the answer you give once they have gone.",
+      description: "Ask how they are right now — properly, not as a greeting — and then answer it yourself. Asked first, it reads as noticing them; answered afterwards, it stops being a check-up. Example: \"How are you holding up today?\" and then, \"I'm running on about four hours' sleep, so not brilliantly.\"\n\nThree ways to ask it so it gets a real answer:\n1. Attach it to the moment — \"Long week for you too?\"\n2. Ask about a specific thing — \"How are you feeling about this afternoon?\"\n3. Mark it as the real question — \"How are you, actually?\"\n\nYour own answer is what makes it safe to have been honest. If they say they are tired and you say nothing back, they have given you something and got nothing.\n\nMindset: the ritual \"how are you\" expects \"fine\". This one expects an answer, which means you have to be ready to give one too.",
+      inputs: [
+        { q: "You meet a friend of a friend at the start of a long day.", a: "\"How are you holding up today?\" — then your own: \"I'm running on very little sleep, honestly.\"", bundle: 'free' },
+        { q: "Bumping into a classmate before a big test.", a: "\"How are you feeling about this one?\" — then your own: \"I'm more nervous than I'd like to admit.\"", bundle: 'free' },
+        { q: "You join a table where people are settling in.", a: "\"How's your day been?\" — then your own: \"Mine's been oddly good and I don't know why.\"", bundle: 'free' },
+        { q: "You sit next to someone at the end of a long week.", a: "\"Long week for you too?\" — then your own: \"I'm so ready for the weekend it's embarrassing.\"", bundle: 'free' },
+        { q: "Meeting someone new at a slow morning event.", a: "\"Are you awake yet? Genuinely.\" — then your own: \"I need about three more coffees to be a person.\"", bundle: 'free' },
+        { q: "A teammate joins a call looking as tired as you feel.", a: "\"How are you doing today, actually?\" — then your own: \"My brain clocked out an hour ago, I'll be honest.\"", bundle: 'pro' },
+        { q: "You run into a neighbour during a stressful week.", a: "\"How've you been this week?\" — then your own: \"A bit frazzled, not going to lie.\"", bundle: 'pro' },
+        { q: "Someone arrives at a party looking like they nearly did not come.", a: "\"How's your evening going so far?\" — then your own: \"I nearly stayed home tonight, if I'm honest.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Action Question",
+      guideFront: "You want to talk about something. Ask them first.",
+      guideBack: "One way to ask it — and the answer you give once they have gone.",
+      description: "Ask what they are doing or working on, then say what you are in the middle of. It is the question that gets the most concrete answers, because people can always say what they are doing even when they cannot say what is new. Example: \"What are you working on at the moment?\" and then, \"I'm trying to learn the guitar, badly.\"\n\nThree ways to ask it:\n1. Right now — \"What are you working on?\"\n2. Lately — \"Have you picked anything up recently?\"\n3. Narrow it — \"Are you reading anything at the moment?\"\n\nNarrowing helps more than it looks. \"What's new?\" is a blank page; \"are you reading anything?\" is a question anyone can answer in four words.\n\nMindset: ask for a concrete thing, not an interesting one. And have your own concrete thing ready — this is the question where \"not much\" from you kills what you just started.",
+      inputs: [
+        { q: "Catching up with someone you have not seen in a while.", a: "\"What have you been up to lately?\" — then your own: \"I've started running in the mornings, which is new for me.\"", bundle: 'free' },
+        { q: "You meet someone at a class and want to keep talking after.", a: "\"Are you reading anything at the moment?\" — then your own: \"I'm trying to actually finish a book this month.\"", bundle: 'free' },
+        { q: "Standing around at a family gathering.", a: "\"Have you picked up anything new this year?\" — then your own: \"I've been learning to cook properly, finally.\"", bundle: 'free' },
+        { q: "Chatting with a coworker in the break room.", a: "\"What are you working on today?\" — then your own: \"I'm knee-deep in redoing our filing system. Thrilling.\"", bundle: 'free' },
+        { q: "A neighbour is out in the garden as you pass.", a: "\"What are you doing to it?\" — then your own: \"Mine's a jungle. I keep meaning to start.\"", bundle: 'free' },
+        { q: "An old friend messages out of the blue.", a: "\"What are you up to these days?\" — then your own: \"I'm training for a half marathon, which was a terrible idea.\"", bundle: 'pro' },
+        { q: "You meet someone at a craft fair.", a: "\"Do you make anything yourself?\" — then your own: \"I've just started pottery and I'm gloriously bad at it.\"", bundle: 'pro' },
+        { q: "Reconnecting with a former classmate.", a: "\"What are you doing now?\" — then your own: \"I'm halfway through switching careers. It's chaos.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Background Question",
+      guideFront: "You want to talk about something. Ask them first.",
+      guideBack: "One way to ask it — and the answer you give once they have gone.",
+      description: "Ask where they have come from or what happened before this, then say the same about yourself. It is the question that most reliably produces a small story rather than a word, because everybody came from somewhere. Example: \"Where have you come from?\" and then, \"I came straight from work and I'm starving.\"\n\nThree ways to ask it:\n1. The journey — \"Did you come far?\"\n2. The immediate before — \"Where have you come from?\"\n3. The connection — \"How do you know everyone here?\"\n\nThe third one is the most useful at weddings, dinners and parties, where the honest answer is always a story and it is always about somebody in the room.\n\nMindset: this is the question with the highest chance of an actual anecdote. Ask it, listen for the detail, and then give one of your own.",
+      inputs: [
+        { q: "You arrive at an evening event a little flustered.", a: "\"Where have you come from?\" — then your own: \"Straight from the office, still catching my breath.\"", bundle: 'free' },
+        { q: "Meeting someone at a weekend brunch.", a: "\"What have you been up to today?\" — then your own: \"I was at the market and completely overspent.\"", bundle: 'free' },
+        { q: "You sit down next to someone at a wedding.", a: "\"How do you know the couple?\" — then your own: \"I've driven three hours for this and I'd do it again.\"", bundle: 'free' },
+        { q: "Arriving at a party where you only know the host.", a: "\"How did you end up here tonight?\" — then your own: \"A friend talked me into it about an hour ago.\"", bundle: 'free' },
+        { q: "You meet someone at a class after the holidays.", a: "\"Did you go anywhere over the break?\" — then your own: \"A week away, and my brain's still on a beach.\"", bundle: 'free' },
+        { q: "You show up to a reunion after a long journey.", a: "\"How far did you come for this?\" — then your own: \"I've been on trains since six this morning.\"", bundle: 'pro' },
+        { q: "Meeting a new colleague on your first day.", a: "\"Have you been here long?\" — then your own: \"I moved cities last month for this, so it's all new.\"", bundle: 'pro' },
+        { q: "Arriving at a dinner straight from something else.", a: "\"What's your day been like?\" — then your own: \"I came from my nephew's birthday. Cake and chaos.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  givingcounterexamples: [
+    {
+      name: "Your Own Exception",
+      guideFront: "Someone has said something a bit too general. Take the \"always\" out of it.",
+      guideBack: "One counter-example that would do the job — concede first, then the exception.",
+      description: "Say the time it did not work like that for you. It is the strongest counter-example available to almost anyone, because it happened, it is yours, and nobody can tell you it did not. Example: \"Exercise usually does help — I trained hard all last week and still felt awful.\"\n\nIt works because a general claim survives an argument easily and does not survive a real case. You are not asking them to accept a principle; you are reporting an afternoon.\n\nConcede first. \"Exercise usually helps\" costs you nothing, keeps them on your side, and makes the exception land as information rather than as contradiction.\n\nTypical phrases: \"I thought that too, but for me…\", \"Usually, yes — though when I…\", \"That was true for me until…\", \"I did exactly that and…\"\n\nThree kinds of personal exception:\n\n1. The single occasion — one time, dated and small. \"I revised for a week for that one and still failed it.\"\n\n2. The time you believed the claim yourself — the most disarming, because you were on their side. \"I said the same thing for years. Then I tried it.\"\n\n3. The way round you found — an exception that also offers something. \"I never managed it in the mornings. Evenings turned out fine.\"\n\nMindset: you are adding a case, not overturning a rule. Say the general thing is usually right, then say what happened to you.",
+      inputs: [
+        { q: "\"Exercise always makes you happy.\"", a: "\"It usually does, yeah. I trained hard all last week and still felt flat.\"", bundle: 'free' },
+        { q: "\"You have to start early if you want to get anything done.\"", a: "\"Mostly true. I've never once managed a morning — everything I've finished, I finished at night.\"", bundle: 'free' },
+        { q: "\"Reading is the only way to build vocabulary.\"", a: "\"It's a good way. Mine came from talking, honestly — six months of it.\"", bundle: 'free' },
+        { q: "\"You can't learn a language as an adult.\"", a: "\"It's harder, definitely. I started at thirty-four and I get by fine now.\"", bundle: 'free' },
+        { q: "\"Working in a team is always better than working alone.\"", a: "\"Usually is. The one project I did alone is the only one that shipped on time.\"", bundle: 'free' },
+        { q: "\"Nobody actually reads the instructions.\"", a: "\"Mostly nobody. I read them for the boiler and it saved me a call-out.\"", bundle: 'pro' },
+        { q: "\"The cheap version is always a false economy.\"", a: "\"I'd have said the same. I bought the cheap drill nine years ago and it's still going.\"", bundle: 'pro' },
+        { q: "\"You have to network to get anywhere.\"", a: "\"It clearly helps. Both my jobs came from an ad, for what that's worth.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The One You Have Seen",
+      guideFront: "Someone has said something a bit too general. Take the \"always\" out of it.",
+      guideBack: "One counter-example that would do the job — concede first, then the exception.",
+      description: "Point at a case you have watched happen, or one that most people have. Not your own life, but something observable — a person, a place, a situation both of you can check against experience. Example: \"Most early risers are productive, sure. The best person on my old team started at eleven every day.\"\n\nIt works because it is checkable without being personal. They do not have to take your word for it in the way they do with an opinion, and they cannot argue with it in the way they can with a principle.\n\nKeep it recognisable. A counter-example nobody can picture is just a claim of your own, and now there are two claims in the room instead of one.\n\nTypical phrases: \"Actually, I've seen it go the other way…\", \"There's at least one I know of…\", \"That's not been true at…\", \"Most people, maybe. Not…\"\n\nThree kinds:\n\n1. Someone you have watched — the clearest. \"My old boss never answered emails and was the most effective person there.\"\n\n2. A place where it works differently — good for claims about how things must be done. \"The Malmö office has done it the other way for years.\"\n\n3. The common counter-case — one most people have seen. \"Everyone knows one person who revises nothing and does fine.\"\n\nMindset: pick something they could picture or check. An example only you can see is not evidence, it is a second opinion.",
+      inputs: [
+        { q: "\"People who wake up early are always more productive.\"", a: "\"Often, yes. The best person on my old team never started before eleven.\"", bundle: 'free' },
+        { q: "\"Open-plan offices kill concentration.\"", a: "\"For most people. The team downstairs asked to stay open-plan when they got the choice.\"", bundle: 'free' },
+        { q: "\"Nobody sticks with a hobby they start as an adult.\"", a: "\"Most don't. My neighbour took up cello at fifty and still plays every day.\"", bundle: 'free' },
+        { q: "\"Big companies can't move quickly.\"", a: "\"Usually not. That's exactly what the recall last year was, though — three days, whole product.\"", bundle: 'free' },
+        { q: "\"Kids today can't concentrate on anything.\"", a: "\"Some can't. Same kids will do four hours on something they picked themselves.\"", bundle: 'free' },
+        { q: "\"You can't run a serious business from home.\"", a: "\"It's harder. Two of our suppliers are one person and a spare room.\"", bundle: 'pro' },
+        { q: "\"Deadlines are the only thing that makes people deliver.\"", a: "\"They help. The best thing we shipped had no deadline on it at all.\"", bundle: 'pro' },
+        { q: "\"Everyone hates public speaking.\"", a: "\"Most of us do. My sister volunteers for it, genuinely enjoys it.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Where It Would Break",
+      guideFront: "Someone has said something a bit too general. Take the \"always\" out of it.",
+      guideBack: "One counter-example that would do the job — concede first, then the exception.",
+      description: "Invent the case the claim cannot handle, and walk them through it. You are not saying it happened — you are asking them to try the rule somewhere it does not fit. Example: \"Say someone works nights. Does the early-start rule still hold?\"\n\nIt works when you have no real case to hand, and it is honest to say so. It also avoids the argument about whether your example is representative, because you are not claiming it is real.\n\nMark it as imagined. \"Say someone…\" is honest; presenting an invention as something that happened is the one move in this pack that cannot be repaired.\n\nTypical phrases: \"Imagine someone who…\", \"Say it were…\", \"What about a case where…\", \"Does that still hold if…\"\n\nThree ways to build it:\n\n1. The one person the rule forgets — the standard. \"Say someone works nights. Then what?\"\n\n2. Push it to the edge — until the shape shows. \"If everyone did it, there'd be forty people asking the same question.\"\n\n3. Turn it round — flip who it happens to. \"Imagine it was your own work being reviewed that way.\"\n\nMindset: an imagined case tests a rule without arguing about facts. Say plainly that it is imagined, and it stays a test rather than a claim.",
+      inputs: [
+        { q: "\"Everyone should start their day at six.\"", a: "\"Say someone works nights. Does the rule still hold, or is it really about a routine?\"", bundle: 'free' },
+        { q: "\"Homework should be banned.\"", a: "\"Imagine a subject that's only practice — an instrument, say. Where does that go?\"", bundle: 'free' },
+        { q: "\"You should always answer messages the same day.\"", a: "\"What about someone on a two-week hike? Same-day would mean not going.\"", bundle: 'free' },
+        { q: "\"Meetings should never be longer than half an hour.\"", a: "\"Say you're deciding something that affects four teams. Is half an hour honest?\"", bundle: 'free' },
+        { q: "\"Everyone learns better in a group.\"", a: "\"Imagine one person in the group already knows it. What are they learning?\"", bundle: 'free' },
+        { q: "\"Nobody needs a car in a city.\"", a: "\"Say someone does night shifts in a hospital on the other side of town.\"", bundle: 'pro' },
+        { q: "\"Rules should be the same for everyone.\"", a: "\"Imagine someone who's ten minutes late once, for a good reason. Same penalty?\"", bundle: 'pro' },
+        { q: "\"Everything important should be in writing.\"", a: "\"What about telling someone they didn't get the job? In writing, really?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Known Exception",
+      guideFront: "Someone has said something a bit too general. Take the \"always\" out of it.",
+      guideBack: "One counter-example that would do the job — concede first, then the exception.",
+      description: "Use a case both of you already know — a well-known person, a famous event, a story everyone recognises. You get the whole example for free, because you only have to point at it. Example: \"Most people who fail that many times give up, true. Not the ones we've all heard of.\"\n\nIt works through recognition rather than explanation, which makes it the fastest of the five. It is also the least personal, so it works with people you barely know and in rooms where your own life is not the subject.\n\nTwo cautions. If you have to explain the reference, it was not shared — pick another one. And describe what actually happened rather than putting words in a real person's mouth.\n\nTypical phrases: \"Even…\", \"Same as when…\", \"Remember the…\", \"There's a famous one, actually…\"\n\nThree kinds:\n\n1. The public case — an event most people recognise. \"Same as the vaccine timeline. Everyone said years.\"\n\n2. The known person — used for what they did, not for who they are. \"Plenty of authors were rejected a dozen times first.\"\n\n3. The story that carries the idea — a fable or a plot, when the real case is missing. \"It's the tortoise and the hare, basically.\"\n\nMindset: point, do not explain. The moment a shared example needs a paragraph of setup, it has stopped being shared.",
+      inputs: [
+        { q: "\"If a book gets rejected, it wasn't good enough.\"", a: "\"Mostly the market's right. Plenty of famous ones were turned down a dozen times first.\"", bundle: 'free' },
+        { q: "\"Nothing important ever happens quickly.\"", a: "\"Usually not. The vaccines were the obvious exception, and everyone had said years.\"", bundle: 'free' },
+        { q: "\"The favourite always wins.\"", a: "\"Nearly always. That's exactly why people still remember the ones that didn't.\"", bundle: 'free' },
+        { q: "\"Talent is what decides it.\"", a: "\"It gets you started. The tortoise and the hare exists for a reason.\"", bundle: 'free' },
+        { q: "\"Big changes need big budgets.\"", a: "\"Often. The seatbelt law cost almost nothing and changed everything.\"", bundle: 'free' },
+        { q: "\"If it were a good idea, someone would already be doing it.\"", a: "\"That's the sensible bet. It was also said about every one we now use daily.\"", bundle: 'pro' },
+        { q: "\"Experts are always right in their own field.\"", a: "\"Mostly, and the famous wrong predictions are famous precisely because they were experts.\"", bundle: 'pro' },
+        { q: "\"You can't change careers after forty.\"", a: "\"It's harder. There are enough well-known cases that it can't be a rule.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "What the Numbers Say",
+      guideFront: "Someone has said something a bit too general. Take the \"always\" out of it.",
+      guideBack: "One counter-example that would do the job — concede first, then the exception.",
+      description: "Answer a general claim with a figure, a measurement or a finding — and only one you actually know. Used honestly it is the strongest counter-example there is; used loosely it is the fastest way to lose the argument and your credibility with it. Example: \"Some research puts night owls just as high on output, though I'd want to check the number before you quote me.\"\n\nThe rule that makes this safe is the same as in Giving Examples: use a number you know and say where it came from. If you do not have one, say so and use a different type. An invented figure is worse than none, because when it is checked, every other thing you said goes with it.\n\nTypical phrases: \"I counted, and…\", \"The report put it at…\", \"Roughly a third, though don't quote me…\", \"It's tens, not hundreds.\"\n\nThree ways to use it honestly:\n\n1. Something you counted yourself — small and verifiable. \"I logged it for a fortnight. Nine days out of fourteen it went the other way.\"\n\n2. A figure with its source attached. \"The staff survey had it at about a third.\"\n\n3. A hedged estimate, marked as one. \"Something like a quarter. I'd check before repeating that.\"\n\nMindset: never invent a number to win a point about nuance. \"I don't have a figure, but I know one person it wasn't true for\" is a better sentence than a made-up statistic.",
+      inputs: [
+        { q: "\"Nobody uses the old system any more.\"", a: "\"I counted on Monday. Eleven people opened it that week.\"", bundle: 'free' },
+        { q: "\"Everyone's late on Fridays.\"", a: "\"I kept a note for a fortnight. It was two people, both times the same two.\"", bundle: 'free' },
+        { q: "\"Early risers get more done.\"", a: "\"Some research puts night owls level on output. I'd check the exact figure before quoting it.\"", bundle: 'free' },
+        { q: "\"It affects hundreds of customers.\"", a: "\"It's tens, not hundreds. That's the bit that matters for what we do next.\"", bundle: 'free' },
+        { q: "\"Nobody reads the newsletter.\"", a: "\"About a third open it, according to the last report. Not nobody.\"", bundle: 'free' },
+        { q: "\"The change made no difference at all.\"", a: "\"It moved about ten per cent, which is small but not nothing. Source is the same dashboard you've got.\"", bundle: 'pro' },
+        { q: "\"Everyone agrees with this.\"", a: "\"The survey said roughly two-thirds. That's a majority, not everyone.\"", bundle: 'pro' },
+        { q: "\"Costs have doubled.\"", a: "\"I don't have the figure to hand, so I won't guess. I'll pull it before we decide.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  discussing: [
+    {
+      name: "Say What You Think",
+      guideFront: "You are ten minutes into a discussion. What does this moment need?",
+      guideBack: "One thing you could say here.",
+      description: "State your view plainly and as yours. Not \"people say\" or \"it's obviously\", but \"I think\" — which is both more honest and much harder to argue with, because you are the authority on what you think. Example: \"I think homework is useful, mostly because it makes the gaps visible.\"\n\nIt works because a discussion needs two positions in it, and a great many stall because one person never actually said theirs. Hedged into invisibility, an opinion cannot be responded to, and the other person ends up talking to themselves.\n\nOwning it does something else too. \"You're wrong about homework\" starts a fight; \"I see it differently\" starts a discussion, and the difference is entirely in whose sentence it is.\n\nTypical phrases: \"I think…\", \"My view is…\", \"I'd say…\", \"I see it differently, actually.\"\n\nThree ways to say it:\n\n1. The plain view — shortest and clearest. \"I think it's worth doing.\"\n\n2. The view with its weight — tells them how firmly you hold it. \"I lean that way, but not strongly.\"\n\n3. The honest uncertainty — a real position, not a dodge. \"I genuinely don't know. I'm somewhere in the middle.\"\n\nMindset: say it as yours. An opinion presented as a fact invites a fight about the fact; an opinion presented as an opinion invites a conversation about the subject.",
+      inputs: [
+        { q: "Everyone is talking around the question and nobody has said what they think.", a: "\"I'll go first — I think phones in class are a bigger problem than we admit.\"", bundle: 'free' },
+        { q: "You are about to say \"people say\" instead of \"I think\".", a: "\"I think it's the wrong call, and it's just my view — I might be missing something.\"", bundle: 'free' },
+        { q: "Someone asks where you stand and you would rather not commit.", a: "\"I lean towards keeping it, honestly. Not strongly, but that's where I am.\"", bundle: 'free' },
+        { q: "You have been agreeing with everything for ten minutes.", a: "\"I've been nodding along, but I actually see the last bit differently.\"", bundle: 'free' },
+        { q: "You genuinely have not made your mind up.", a: "\"I don't know what I think about this one. Both sides sound right in turn.\"", bundle: 'free' },
+        { q: "You are the most junior person in the room and have a view.", a: "\"For what it's worth, I'd do it the other way round. Happy to be talked out of it.\"", bundle: 'pro' },
+        { q: "Your opinion is the unpopular one in this group.", a: "\"I think I'm the only one here who liked the old system. Can I say why?\"", bundle: 'pro' },
+        { q: "You disagree with someone you like and do not want a row.", a: "\"I see this one differently from you, which is annoying because you're usually right.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Give the Reason Behind It",
+      guideFront: "You are ten minutes into a discussion. What does this moment need?",
+      guideBack: "One thing you could say here.",
+      description: "Say why you think it, in one sentence. Not an example and not evidence — the reasoning that got you there. Example: \"I think the deadline should move, because the last two slipped for exactly the same reason.\"\n\nIt works because a bare opinion is a wall and a reason is a door. Once the reasoning is visible the other person can engage with the actual disagreement, which is usually narrower than the positions suggest — very often you both want the same thing and differ about one step.\n\nOne reason, said plainly. Three reasons sounds like a case being made, and the moment it sounds like a case, the other person starts looking for the weakest one.\n\nTypical phrases: \"…because…\", \"What makes me think that is…\", \"The reason I'd say that is…\", \"It's mostly that…\"\n\nThree kinds of reason:\n\n1. The cause — what leads to what. \"If we leave it to Friday, nobody's here to fix it.\"\n\n2. The principle — the rule you are applying. \"I'd rather be slightly early than slightly wrong.\"\n\n3. The honest one — sometimes it is a preference, and saying so is stronger than dressing it up. \"Partly I just don't enjoy the other way.\"\n\nMindset: give them your reasoning, not your conclusion twice. Repeating a view more firmly is not an argument, it is a volume control.",
+      inputs: [
+        { q: "You said what you think and they asked why.", a: "\"Mostly because the last two both slipped for the same reason. Feels like a pattern.\"", bundle: 'free' },
+        { q: "You are about to restate your opinion more firmly.", a: "\"Let me say why instead — it's the bit about who covers the shift that worries me.\"", bundle: 'free' },
+        { q: "Someone asks what is behind your view.", a: "\"Honestly, a principle more than evidence. I'd rather be early than wrong.\"", bundle: 'free' },
+        { q: "Your reason is a preference and you feel it is not good enough.", a: "\"Partly I just don't like doing it the other way. That's a real reason, I think.\"", bundle: 'free' },
+        { q: "You realise your view and theirs differ on one step only.", a: "\"I think we agree on all of it except whether it needs a review. That's my whole hesitation.\"", bundle: 'free' },
+        { q: "They have given three reasons and you are picking at the weakest.", a: "\"I'm arguing with your smallest point. Which of the three actually matters most to you?\"", bundle: 'pro' },
+        { q: "You have no evidence, only a judgement.", a: "\"No data behind this, to be clear. It's a hunch built on two bad experiences.\"", bundle: 'pro' },
+        { q: "The discussion keeps circling the same two positions.", a: "\"We've both said what. Can we each say why? I suspect the gap is small.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Say Their View Back",
+      guideFront: "You are ten minutes into a discussion. What does this moment need?",
+      guideBack: "One thing you could say here.",
+      description: "Put their position into your own words before you respond to it. It costs one sentence and it does two things: it proves you were listening, and it catches the misunderstanding that half of all disagreements turn out to be. Example: \"So you're saying it's not the homework itself, it's how much of it there is.\"\n\nIt works because most people spend a discussion feeling not-quite-heard, and repeating themselves louder is what that feeling produces. Someone who has just been understood accurately stops needing to make the same point again, and the discussion moves.\n\nIt also protects you. Answer what they actually said and you never have the conversation where you spend four minutes disagreeing with something they never claimed.\n\nTypical phrases: \"So what you're saying is…\", \"You think the problem is…\", \"Let me check I've got this…\", \"From where you're sitting…\"\n\nThree ways to do it:\n\n1. The position — plainly. \"You'd keep the deadline where it is.\"\n\n2. The reason behind it — stronger, because it shows you know why. \"You'd keep it because moving it means telling everyone twice.\"\n\n3. The bit they care about most — the deepest version. \"The thing you're actually protecting is the team's Friday.\"\n\nMindset: get it right rather than get it over with. If they correct you, that correction is the most useful sentence in the discussion.",
+      inputs: [
+        { q: "They have made a long point and you want to respond.", a: "\"Before I answer — you're saying the amount is the problem, not the homework itself?\"", bundle: 'free' },
+        { q: "You are about to disagree with something you might have misheard.", a: "\"Let me check I've got this. You'd scrap it entirely rather than reduce it?\"", bundle: 'free' },
+        { q: "They have repeated the same point three times.", a: "\"I think you're saying it costs more than it saves, and I haven't acknowledged that. Have I got it?\"", bundle: 'free' },
+        { q: "The discussion has become two people talking past each other.", a: "\"Can I try saying your side back? I want to know if we're even arguing about the same thing.\"", bundle: 'free' },
+        { q: "You want to acknowledge a point you still disagree with.", a: "\"You're right that it'd be simpler to explain. That's a real advantage.\"", bundle: 'free' },
+        { q: "They are getting frustrated and repeating themselves.", a: "\"You've said this three times and I've not shown you I heard it. It's about who carries it, isn't it.\"", bundle: 'pro' },
+        { q: "You suspect you are arguing with a position they do not hold.", a: "\"Am I arguing with something you actually think, or with a version of it I've built?\"", bundle: 'pro' },
+        { q: "You want to name what they are really protecting.", a: "\"I think the thing you don't want is to be the one explaining a delay. Is that fair?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ask What They Mean",
+      guideFront: "You are ten minutes into a discussion. What does this moment need?",
+      guideBack: "One thing you could say here.",
+      description: "Ask a clarifying question before you respond to something ambiguous. \"When you say homework is pointless — all of it, or the busywork?\" It takes six words and it prevents most of the wasted arguing in any discussion. Example: they say the system is broken; you ask which part.\n\nIt works because general words hide specific disagreements. Two people can use the same sentence and mean completely different things by it, and neither of them finds out until ten minutes have gone.\n\nAsk it as a question, not as a trap. \"Do you mean all subjects, or just some?\" is curiosity; \"so you're saying ALL homework is pointless?\" is a cross-examination wearing the same words.\n\nTypical phrases: \"When you say X, do you mean…?\", \"Which part specifically?\", \"Say a bit more about…\", \"Can you give me the version with an example in it?\"\n\nThree kinds of clarifying question:\n\n1. Narrow the word — the most useful. \"All of it, or the pointless parts?\"\n\n2. Ask for the specific case — turns an abstraction into something discussable. \"Can you give me an example of when that happened?\"\n\n3. Check the strength — people rarely mean the extreme version. \"Is that a strong view or a lean?\"\n\nMindset: ask before you argue. Half the disagreements that get properly heated are two people defending things the other never said.",
+      inputs: [
+        { q: "They said the system is broken.", a: "\"Which bit specifically? Booking, or what happens after?\"", bundle: 'free' },
+        { q: "They said homework should be banned.", a: "\"All of it, or the kind that's just filling time?\"", bundle: 'free' },
+        { q: "They made a sweeping statement you are about to argue with.", a: "\"Before I disagree — do you mean that as a rule, or in this case?\"", bundle: 'free' },
+        { q: "A word in their argument could mean two things.", a: "\"When you say 'not working', do you mean it's failing or that it's slow?\"", bundle: 'free' },
+        { q: "Their point is abstract and you cannot get hold of it.", a: "\"Can you give me a case where that happened? I'll follow it better.\"", bundle: 'free' },
+        { q: "You are about to write a long reply to an ambiguous message.", a: "\"Quick check before I answer properly — do you mean the whole approach or just the timing?\"", bundle: 'pro' },
+        { q: "Their claim sounds extreme and probably is not meant that way.", a: "\"Is that a strong position or a lean? I'd argue differently against each.\"", bundle: 'pro' },
+        { q: "You suspect you agree and are using different words.", a: "\"I think we might be saying the same thing. What would you call it?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Let Them Finish",
+      guideFront: "You are ten minutes into a discussion. What does this moment need?",
+      guideBack: "One thing you could say here.",
+      description: "Do not speak until they have stopped. Not as good manners, but because the last quarter of what someone says is where the qualification lives — the \"although\", the \"except when\", the bit that would have made your interruption unnecessary. Example: you are certain you disagree, and the sentence you were waiting to argue with ends with \"…though that's probably only true at scale\".\n\nIt works because interruption costs more than it saves. Every interrupted point gets made again, usually at greater length, and the person making it now has two things to say — the original point and the fact that you cut in.\n\nThe hard part is not silence, it is what happens in your head during the silence. If you are composing your reply while they talk, you are not listening — you are queueing.\n\nTypical phrases: nothing. Or: \"Sorry, go on.\", \"You weren't finished.\", \"Say the rest first.\"\n\nThree parts:\n\n1. Wait for the end of the sentence — not the end of the breath.\n\n2. Then wait a beat longer — the qualification usually arrives here.\n\n3. If you cut in anyway, hand it back — \"sorry, finish yours\" costs nothing and repairs it completely.\n\nMindset: listen to hear, not to reply. Whatever you were going to say will still be there in eight seconds, and it will probably be better.",
+      inputs: [
+        { q: "You are certain you disagree and they are still talking.", a: "(wait — the qualification usually comes in the last sentence)", bundle: 'free' },
+        { q: "You interrupted and they stopped mid-point.", a: "\"Sorry, that was me cutting in. Finish yours.\"", bundle: 'free' },
+        { q: "You have a good reply forming and are itching to say it.", a: "(let it wait — it will still be there, and probably sharper)", bundle: 'free' },
+        { q: "They pause mid-sentence to think.", a: "(say nothing — a pause is not an invitation)", bundle: 'free' },
+        { q: "Two people are talking at once and one of them is you.", a: "\"You go — I've had a fair share of this one.\"", bundle: 'free' },
+        { q: "They are making a point you have heard before and you want to skip ahead.", a: "(let them finish it — the version they say now might not be the one you remember)", bundle: 'pro' },
+        { q: "You have been composing your answer instead of listening.", a: "\"I'll be honest, I was planning my reply. Say the last bit again?\"", bundle: 'pro' },
+        { q: "Someone else keeps interrupting the quietest person in the group.", a: "\"Hang on — Sara was still going. What were you saying?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Keep the Temperature Down",
+      guideFront: "You are ten minutes into a discussion. What does this moment need?",
+      guideBack: "One thing you could say here.",
+      description: "Notice when a discussion is heating and do something about it before anyone says something they will have to walk back. The book calls it staying calm; the useful version is a set of specific moves, because \"stay calm\" is advice nobody can follow in the moment. Example: \"We're both getting sharp about this. Can we take the money bit separately?\"\n\nIt works because heat destroys the thing the discussion was for. Two people who are annoyed stop hearing each other's reasons entirely, and everything after that point is wasted breath, however good the arguments are.\n\nThe reliable signals are physical rather than verbal: talking faster, talking over, the same point getting louder, a laugh that is not quite a laugh.\n\nTypical phrases: \"We're getting heated — can we slow down?\", \"I'm going to stop and think.\", \"Can we park that bit?\", \"I've gone sharp, sorry.\"\n\nThree moves that work:\n\n1. Name it, jointly — \"we're\" rather than \"you're\". \"We're both getting sharp about this.\"\n\n2. Slow yourself visibly — a pause, a breath, a \"let me think about that for a second\".\n\n3. Split it — take the hot part out and settle the rest. \"Leave the cost aside. Do we agree on the rest?\"\n\nAnd one to avoid: telling the other person to calm down. It has never once worked.\n\nMindset: the goal is to still be talking in ten minutes. Winning an exchange with somebody you will see tomorrow is not winning.",
+      inputs: [
+        { q: "You are both talking faster and slightly over each other.", a: "\"We're getting heated — can we slow down a bit?\"", bundle: 'free' },
+        { q: "You hear yourself getting sharp.", a: "\"That came out sharper than I meant. Let me have another go.\"", bundle: 'free' },
+        { q: "The discussion has hit one topic that is clearly the hot one.", a: "\"Can we park the money bit and see if we agree on the rest?\"", bundle: 'free' },
+        { q: "You need a second to think and the pressure is to answer now.", a: "\"Give me a second on that one. I don't want to say something daft.\"", bundle: 'free' },
+        { q: "They said something that landed badly and you want to hit back.", a: "\"That one stung a bit. I'd rather say so than get clever about it.\"", bundle: 'free' },
+        { q: "You are about to tell them to calm down.", a: "\"We're both wound up, I think. Shall we come back to this after lunch?\"", bundle: 'pro' },
+        { q: "The same point has been made three times, louder each time.", a: "\"We're going round. I'll write down where we disagree and we can look at it tomorrow.\"", bundle: 'pro' },
+        { q: "It has become personal and you do not want it to.", a: "\"I don't want to fall out over a booking system. Can we start that bit again?\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  storybanter: [
+    {
+      name: "Yes, And",
+      guideFront: "The story so far. Add the next bit.",
+      guideBack: "One line that would keep it going.",
+      description: "Accept what they just added and put something on top of it. It is the engine of the whole thing: nothing gets questioned, everything gets built on. Example: they say you should skip the whole week — \"Yes, and I'll need a pillow fort so big the neighbours complain.\"\n\nIt works because a story built by two people dies the instant one of them starts editing. \"That wouldn't happen\" is technically true and completely fatal, and the person who says it is never invited into the next one.\n\nThe word \"and\" is doing the work. \"Yes, but\" is a rejection wearing agreement's clothes, and everybody hears it.\n\nTypical phrases: \"Yes, and…\", \"Exactly, and then…\", \"Right, so obviously…\", \"And the best part is…\"\n\nThree ways to build:\n\n1. Add one detail — the smallest and most reliable. \"…and the fort has a doorbell.\"\n\n2. Agree with too much enthusiasm — accept it as though it were the plan all along. \"Obviously. That was always the plan.\"\n\n3. Take their idea seriously — treat the ridiculous thing as practical. \"You'd need a permit for a fort that size, mind.\"\n\nMindset: your job is not to be funnier than them. It is to leave them something to build on, which is a different and easier job.",
+      inputs: [
+        { q: "They say you should just go home and watch films all day.", a: "\"Yes, and I'll need three pizzas to get through the afternoon.\"", bundle: 'free' },
+        { q: "They say your dog could take your place in the meeting.", a: "\"Yes, and honestly he'd ask better questions than I do.\"", bundle: 'free' },
+        { q: "They say you should build a pillow fort.", a: "\"Yes, and it has to have a doorbell. Otherwise what's the point.\"", bundle: 'free' },
+        { q: "They suggest you nap professionally.", a: "\"Exactly. There's a league, I think. I'd be mid-table.\"", bundle: 'free' },
+        { q: "They say you'd need to skip the whole week.", a: "\"Right, so obviously I'd have to fake a very slow illness.\"", bundle: 'free' },
+        { q: "They add a detail you would never have thought of.", a: "\"Yes, and now I can't imagine it any other way.\"", bundle: 'pro' },
+        { q: "They make your excuse much bigger than you intended.", a: "\"Yes, and I've already told my manager, so we're committed.\"", bundle: 'pro' },
+        { q: "They add something that solves the problem too neatly.", a: "\"Yes, and that's exactly the sort of thinking that got me into this.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "What If",
+      guideFront: "The story so far. Add the next bit.",
+      guideBack: "One line that would keep it going.",
+      description: "Introduce a complication nobody asked for. Where \"yes, and\" adds to the plan, \"what if\" adds a threat to it — and a threat is what stops a story becoming a list of nice things. Example: \"What if your mum comes home and finds ten empty pizza boxes?\"\n\nIt works because a story needs a problem. Two people building a happy afternoon run out of material in about four exchanges; two people building an afternoon with a mother arriving unexpectedly can go on for ten minutes.\n\nAim the complication at the situation, never at them. \"What if you're just bad at this?\" is not a twist, it is a dig with a question mark on it.\n\nTypical phrases: \"What if…?\", \"And then what happens when…?\", \"Wait — what about…\", \"Have you thought about what the neighbours…\"\n\nThree kinds of complication:\n\n1. Someone finds out — the most reliable one there is. \"What if your mum comes home?\"\n\n2. The plan works too well — funnier than failure, usually. \"What if nobody notices you're gone? Ever?\"\n\n3. Something ordinary goes wrong — small and domestic beats dramatic. \"What if the pizza place recognises your voice?\"\n\nMindset: give them a problem to solve rather than a nicer version of the plan. The problem is what they get to be funny about.",
+      inputs: [
+        { q: "They have described a perfect week off school.", a: "\"What if your mum comes home and finds ten empty pizza boxes?\"", bundle: 'free' },
+        { q: "They plan to send the dog to class in their place.", a: "\"What if the dog does better than you and they want to keep him?\"", bundle: 'free' },
+        { q: "They are going to hide in the pillow fort all week.", a: "\"What if someone posts a parcel and it lands on the roof of it?\"", bundle: 'free' },
+        { q: "They have decided to nap for six days.", a: "\"What if you wake up and it's Thursday and nobody woke you?\"", bundle: 'free' },
+        { q: "They will order enough pizza to feed the city.", a: "\"What if the delivery driver becomes a regular? Christmas cards, the lot.\"", bundle: 'free' },
+        { q: "The story has become a list of pleasant things.", a: "\"What if the neighbours have started a group chat about it, though?\"", bundle: 'pro' },
+        { q: "The plan is going suspiciously well in the story.", a: "\"What if it works perfectly and now it's your job forever?\"", bundle: 'pro' },
+        { q: "They have invented a way out of the problem.", a: "\"What if that's exactly what the school expected you to do?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Make It Bigger",
+      guideFront: "The story so far. Add the next bit.",
+      guideBack: "One line that would keep it going.",
+      description: "Take whatever was just said and inflate it past the point of sense. It is the same exaggeration as in Responsive Humour, but pointed at a shared invention instead of at a real sentence. Example: \"Not three pizzas — enough to feed the entire city.\"\n\nIt works because scale is instantly readable. Nobody has to decode anything: the gap between what was said and what you said is the joke, and the bigger the gap the safer it is, because nobody could mistake it for a real claim.\n\nIf you are wondering whether it is too much, it is not enough. A cautious exaggeration sounds like a correction.\n\nTypical phrases: \"Not X — X hundred.\", \"The entire…\", \"Every single…\", \"In recorded history.\"\n\nThree ways to inflate:\n\n1. The number — easiest and always available. \"Three pizzas? Thirty.\"\n\n2. The time — stretch it past a lifetime. \"You'd still be in that fort in 2040.\"\n\n3. The stakes — make something trivial world-historical. \"The council would have to redraw the map.\"\n\nMindset: go past sensible in one jump. Halfway is where it stops being play and starts sounding like an argument about the facts.",
+      inputs: [
+        { q: "They say you'd order three pizzas.", a: "\"Three? You'd need enough to feed the whole city.\"", bundle: 'free' },
+        { q: "They say you'd sleep in a bit.", a: "\"A bit? They'd find you in the spring.\"", bundle: 'free' },
+        { q: "They say the fort would be big.", a: "\"It'd have its own postcode by Wednesday.\"", bundle: 'free' },
+        { q: "They say the teacher would be annoyed.", a: "\"Annoyed? She'd turn up at your house with a giant calculator.\"", bundle: 'free' },
+        { q: "They say you'd need a few days off.", a: "\"A few days. I'm thinking a sabbatical. Possibly a decade.\"", bundle: 'free' },
+        { q: "They have made a modest exaggeration and stopped there.", a: "\"You're being restrained. There should be a helicopter involved by now.\"", bundle: 'pro' },
+        { q: "The story needs a jolt to get bigger.", a: "\"And at this point the national news picks it up, obviously.\"", bundle: 'pro' },
+        { q: "They describe a small mess.", a: "\"Small? They're naming a warning label after you.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Bring Someone In",
+      guideFront: "The story so far. Add the next bit.",
+      guideBack: "One line that would keep it going.",
+      description: "Add a character — a person, an animal, an inanimate object with opinions. New people bring reactions, and a reaction is the most reliable source of comedy available. Example: \"Then your dog takes your place in maths and nobody notices.\"\n\nIt works because a story with only the two of you in it has a ceiling. Every new character can want something, disapprove of something, or turn up at the wrong moment, and each of those restarts the story for free.\n\nThe best additions are people who would obviously never be involved. A neighbour, a headteacher, a delivery driver, someone's grandmother.\n\nTypical phrases: \"And then your dog…\", \"Meanwhile the neighbour…\", \"This is when your gran turns up…\", \"The delivery driver has opinions about this.\"\n\nThree kinds of character:\n\n1. Someone from the real situation — the teacher, the boss, the neighbour. Instantly recognisable.\n\n2. Someone absurdly out of place — a vet, a referee, a man from the council.\n\n3. An animal or an object with a personality — the safest of all, because nobody can be offended on its behalf.\n\nMindset: a new person is a new problem, and a new problem is more story. Bring them in before it runs out.",
+      inputs: [
+        { q: "The story about skipping maths needs something new.", a: "\"Then your dog takes your place in class and nobody notices.\"", bundle: 'free' },
+        { q: "They have described the pillow fort week.", a: "\"And your gran turns up unannounced and just moves in with you.\"", bundle: 'free' },
+        { q: "The pizza plan is in full swing.", a: "\"The delivery driver has started calling you by name. He's worried.\"", bundle: 'free' },
+        { q: "They plan to nap for a week.", a: "\"The cat's furious about it. That's her spot and you know it.\"", bundle: 'free' },
+        { q: "The story is running out of people.", a: "\"At this point a man from the council knocks, holding a clipboard.\"", bundle: 'free' },
+        { q: "The story has only the two of you in it and is flagging.", a: "\"This is where the neighbour appears at the fence with a very long question.\"", bundle: 'pro' },
+        { q: "They have introduced a character and moved on too fast.", a: "\"Hang on, the dog — is he enjoying maths? I need to know.\"", bundle: 'pro' },
+        { q: "You want to raise the stakes without more exaggeration.", a: "\"And the headteacher has been watching all of this from a parked car.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Then What Happens",
+      guideFront: "The story so far. Add the next bit.",
+      guideBack: "One line that would keep it going.",
+      description: "Follow the last idea to its consequence. Not a new invention — the thing that must now happen because of what they just said. Example: they skip maths for a week; \"the teacher shows up at your house with a giant calculator.\"\n\nIt works because a chain of consequences is what makes a made-up story feel like a story rather than a list of jokes. Each turn is caused by the one before it, and the shape that produces is the shape of an actual anecdote.\n\nIt is also the easiest technique when you have no idea what to say. You do not need an invention — you need to ask what would follow, and the answer usually arrives on its own.\n\nTypical phrases: \"So then…\", \"Which means…\", \"And now obviously…\", \"That's how you end up…\"\n\nThree ways to follow it:\n\n1. The immediate result — one step, straight ahead. \"So the school rings your mum.\"\n\n2. The delayed result — much funnier. \"And two years later it comes up in a job interview.\"\n\n3. The consequence for someone else — spreads the story outwards. \"Which means the dog now has a detention.\"\n\nMindset: when you are stuck, ask what happens next rather than what would be funny. The consequence is usually funnier than anything you would have invented.",
+      inputs: [
+        { q: "They say you'd skip the whole week of school.", a: "\"So the teacher turns up at your house with a giant calculator.\"", bundle: 'free' },
+        { q: "They say you'd eat pizza for six days.", a: "\"Which means by Friday you're basically a pizza with a heartbeat.\"", bundle: 'free' },
+        { q: "They say the dog goes to class instead of you.", a: "\"So now the dog's got homework and you're doing it at midnight.\"", bundle: 'free' },
+        { q: "They say the fort takes over the living room.", a: "\"That's how you end up eating Christmas dinner in a tunnel.\"", bundle: 'free' },
+        { q: "They say nobody notices you're gone.", a: "\"So they keep paying you. For years. You've become a legend nobody has met.\"", bundle: 'free' },
+        { q: "You have no idea what to add and the story is waiting.", a: "\"So what happens is your mum finds the boxes before you do.\"", bundle: 'pro' },
+        { q: "The last idea was very big and needs a landing.", a: "\"And that is why you're now banned from that particular pizza place.\"", bundle: 'pro' },
+        { q: "You want to bring an earlier detail back.", a: "\"Which means the doorbell on the fort finally makes sense, doesn't it.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Solve It Ridiculously",
+      guideFront: "The story so far. Add the next bit.",
+      guideBack: "One line that would keep it going.",
+      description: "Fix the problem in a way that could not possibly work, said with complete confidence. It is the release valve of the form: after several turns of escalation, a solution that is obviously absurd lets the story breathe without ending it. Example: \"Don't worry about missing maths — just download the formulas straight into your brain.\"\n\nIt works because confidence is the joke. The plan does not need to be plausible; it needs to be delivered as though the only remaining question is logistics.\n\nIt is also how you rescue a story that has painted itself into a corner. The corner is not a problem — it is the setup for the silliest possible exit.\n\nTypical phrases: \"Easy — you just…\", \"That's fine, you can just…\", \"There's a simple fix for that.\", \"Don't worry about that bit, because…\"\n\nThree kinds of ridiculous solution:\n\n1. The impossible technology — the classic. \"You download the maths directly.\"\n\n2. The obviously illegal or insane logistics — said as admin. \"You'd just need a second identical dog.\"\n\n3. The solution that makes it worse — the funniest of the three. \"Simple: skip next week as well and it evens out.\"\n\nMindset: say it like it is the obvious answer. Hesitation is what makes an absurd solution land as nonsense rather than as a bit.",
+      inputs: [
+        { q: "They ask how you'd catch up on a week of maths.", a: "\"Easy — you just download the formulas straight into your brain.\"", bundle: 'free' },
+        { q: "They ask what you'd do about the ten pizza boxes.", a: "\"Simple. You move house. Cheaper than the conversation.\"", bundle: 'free' },
+        { q: "They ask how the dog passes as you.", a: "\"You'd just need a second identical dog for the group work.\"", bundle: 'free' },
+        { q: "They ask how you'd explain the fort.", a: "\"You wouldn't. You'd claim it was always there and they'd assume they'd forgotten.\"", bundle: 'free' },
+        { q: "They ask what happens when you're found out.", a: "\"That's fine, you just skip the following week as well and it evens out.\"", bundle: 'free' },
+        { q: "The story has painted itself into a corner.", a: "\"Right, so obviously at this point you fake your own transfer to another school.\"", bundle: 'pro' },
+        { q: "They have raised a problem that has no answer.", a: "\"There's a simple fix, actually: you just never go back into that room again. Ever.\"", bundle: 'pro' },
+        { q: "The solution needs to make things worse.", a: "\"You solve it by ordering more pizza. It's the only move that makes sense now.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  explainthings2: [
+    {
+      name: "When It Comes Up",
+      guideFront: "They know what it is. Give them the piece that places it.",
+      guideBack: "One way to say it — one sentence, then stop.",
+      description: "Say when the thing is actually used — the moment, the situation, the point in a process where it turns up. It is the piece that turns a definition into something someone can recognise the need for. Example: \"It's for the bit where you've written the thing and can't tell if it's any good.\"\n\nIt works because most explanations answer \"what is this\" and leave the listener with no idea when they would ever reach for it. Naming the moment does what no amount of description does: it lets them recognise a situation they have actually been in.\n\nKeep it to one occasion rather than a list. \"When you're moving house\" beats \"in various situations involving relocation, storage and logistics\".\n\nTypical phrases: \"It's for when…\", \"You'd use it the moment…\", \"Comes up mostly when…\", \"The time you'd want it is…\"\n\nThree kinds of when:\n\n1. The trigger — the moment that calls for it. \"When two people have booked the same room.\"\n\n2. The frequency — how often it comes up, which sets its importance. \"About twice a year, and both times it's a panic.\"\n\n3. The wrong time — often the most useful. \"Not while you're still writing it. After.\"\n\nMindset: they are not asking what it is any more. They are asking whether they would ever need it, and the answer to that is a moment, not a description.",
+      inputs: [
+        { q: "Someone asks what a password manager is for.", a: "\"It's for the moment you're signing up for something and can't face inventing another password.\"", bundle: 'free' },
+        { q: "A colleague asks when they would use the shared calendar.", a: "\"Mostly when you're booking anything with more than two people in it.\"", bundle: 'free' },
+        { q: "Someone asks what a light box is for.", a: "\"It's for the dark months, first thing in the morning, before anything else.\"", bundle: 'free' },
+        { q: "A friend asks when a slow cooker is worth it.", a: "\"The days you leave at seven and get back at six. That's the whole use case.\"", bundle: 'free' },
+        { q: "Someone asks when they'd need travel insurance.", a: "\"The one trip you get ill on. Every other trip it's dead money.\"", bundle: 'free' },
+        { q: "A new colleague asks when to use the escalation process.", a: "\"When you've asked twice and nothing has moved. Not the first time — the second.\"", bundle: 'pro' },
+        { q: "Someone asks when a written brief is worth the effort.", a: "\"The moment more than two people have to agree on what 'done' means.\"", bundle: 'pro' },
+        { q: "A friend asks when they'd actually use a folding bike.", a: "\"When part of the journey is a train. Otherwise it's a worse bike.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Where It Belongs",
+      guideFront: "They know what it is. Give them the piece that places it.",
+      guideBack: "One way to say it — one sentence, then stop.",
+      description: "Say where the thing sits — which setting, which part of the process, which corner of the world it comes from. Not where it is physically kept, but where it fits. Example: \"It's a kitchen thing rather than a workshop thing, even though it looks like a tool.\"\n\nIt works because people file new things by where they go. Give someone the setting and they have somewhere to put the whole explanation; leave it out and they have a fact with no shelf.\n\nThe strongest version names the neighbours: what it sits next to, what comes before it and after it. That places it in one sentence.\n\nTypical phrases: \"It sits between…\", \"It's a X thing rather than a Y thing…\", \"It comes after…\", \"You'd find it in…\"\n\nThree kinds of where:\n\n1. The setting — home, work, outdoors, online. \"It's an office thing. Nobody has one at home.\"\n\n2. The place in a process — before or after something they know. \"It happens after the draft and before anyone else reads it.\"\n\n3. Where it came from — when the origin explains the shape of it. \"It's a hospital idea that ended up everywhere else.\"\n\nMindset: give it neighbours. Something with nothing next to it is much harder to remember than something between two things you already know.",
+      inputs: [
+        { q: "Someone asks where a project brief fits in.", a: "\"It sits right at the start — after somebody has the idea, before anyone builds anything.\"", bundle: 'free' },
+        { q: "A friend asks where you'd use a head torch.", a: "\"It's an outdoors thing and a under-the-sink thing. Nothing in between.\"", bundle: 'free' },
+        { q: "Someone asks where the recycling rules apply.", a: "\"Only at the depot. Kerbside collection is a different set entirely.\"", bundle: 'free' },
+        { q: "Someone asks where a mortar and pestle belongs.", a: "\"Kitchen, but next to the spices rather than the pans. That's the clue to what it's for.\"", bundle: 'free' },
+        { q: "A colleague asks where the review step goes.", a: "\"After the draft, before it goes anywhere near the client.\"", bundle: 'free' },
+        { q: "Someone asks where a standing desk actually helps.", a: "\"In an office where you sit for six hours. At home, where you move about anyway, much less.\"", bundle: 'pro' },
+        { q: "A friend asks where you'd use a French press over a machine.", a: "\"Kitchens without space and holidays without electricity. It's a no-plug thing.\"", bundle: 'pro' },
+        { q: "Someone asks where the escalation policy applies.", a: "\"Between teams. Inside a team it's just called asking twice.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Who It Is For",
+      guideFront: "They know what it is. Give them the piece that places it.",
+      guideBack: "One way to say it — one sentence, then stop.",
+      description: "Say who uses it, and — more usefully — who does not. The listener is really asking whether they are in the group, and answering that directly is faster than any amount of description. Example: \"If you cook most days it's brilliant. If you don't, honestly, skip it.\"\n\nIt works because relevance is what decides whether someone keeps listening. A person who has been told plainly that this is not for them stops trying to work out whether it is, which is a kindness and a relief.\n\nNaming who it is not for is what makes the rest believable. An explanation where everybody benefits sounds like an advertisement.\n\nTypical phrases: \"It's for people who…\", \"If you're the sort who…\", \"Not much use if you…\", \"It's aimed at…\"\n\nThree kinds of who:\n\n1. The group it is built for — named concretely. \"It's for people with more than one calendar.\"\n\n2. Who it is not for — the honest half. \"If you've got one project at a time, it'll just be admin.\"\n\n3. Where the listener sits — say it directly. \"You'd be in the second group, I think.\"\n\nMindset: tell them whether they are in the group. \"It depends\" is the least useful answer available, and they can hear that you are avoiding the question.",
+      inputs: [
+        { q: "A friend asks whether a food processor is worth buying.", a: "\"If you cook most days, yes. If you cook twice a week, it's a cupboard problem.\"", bundle: 'free' },
+        { q: "Someone asks whether they need a password manager.", a: "\"Anyone with more than about ten logins. Which is everyone, really.\"", bundle: 'free' },
+        { q: "A colleague asks whether the training is relevant to them.", a: "\"It's aimed at people who run meetings. You'd get the last hour and not much else.\"", bundle: 'free' },
+        { q: "Someone asks whether a running watch is worth it.", a: "\"If you're training for something, definitely. If you just run, your phone does it.\"", bundle: 'free' },
+        { q: "A friend asks whether they'd like a particular book.", a: "\"It's for people who like a slow start. You'd be bored by page forty.\"", bundle: 'free' },
+        { q: "Someone asks whether they should switch to the new system.", a: "\"Teams of more than six, yes. You're four people — you'd be adding process for its own sake.\"", bundle: 'pro' },
+        { q: "A friend asks whether a course is worth the money.", a: "\"For a beginner it's excellent. You'd spend two days on things you already do.\"", bundle: 'pro' },
+        { q: "Someone asks whether they need the extended warranty.", a: "\"Worth it if you'd struggle to replace it at short notice. Otherwise it's a bet against yourself.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Start Short, Then Go Deeper",
+      guideFront: "They know what it is. Give them the piece that places it.",
+      guideBack: "One way to say it — one sentence, then stop.",
+      description: "Give the one-sentence version first, then let them ask for more. The book's own tip, and the thing that separates a good explanation from a lecture: start simple and add depth only when it is wanted. Example: \"It's a shared to-do list.\" Then, if they lean in: \"…with the twist that only one person can be responsible for each line.\"\n\nIt works because you cannot tell how much someone wants until you have given them something to want more of. Starting long is a guess, and the guess is usually wrong in the same direction.\n\nThe check is the face in front of you, exactly as in storytelling. A question means go deeper; a nod and a \"right\" means you have said enough.\n\nTypical phrases: \"The short version is…\", \"Roughly, it's a…\", \"Do you want the detail or is that enough?\", \"There's more to it if you want it.\"\n\nThree levels to have ready:\n\n1. One sentence — what it is, in words they already have. \"It's a shared to-do list.\"\n\n2. One paragraph — the bit that makes it different from the obvious version. \"The twist is that every line has exactly one owner.\"\n\n3. The whole thing — only on request, and it is rarely requested.\n\nMindset: the short version is not a simplification you apologise for. It is the correct first answer, and the rest is available if they want it.",
+      inputs: [
+        { q: "Someone asks what your job involves.", a: "\"Short version, I teach English. Long version has a lot of admin in it.\"", bundle: 'free' },
+        { q: "A friend asks how the new system works.", a: "\"It's a shared to-do list. There's a twist, but that's the shape of it.\"", bundle: 'free' },
+        { q: "Someone asks what a podcast is.", a: "\"A radio show you download. Want the bit about how people make them?\"", bundle: 'free' },
+        { q: "Someone asks what your project is about.", a: "\"We're trying to make the booking bit less painful. That's the whole thing, really.\"", bundle: 'free' },
+        { q: "A child asks how a fridge works.", a: "\"It moves the heat from inside to outside. Do you want to know how it does that?\"", bundle: 'free' },
+        { q: "You are two minutes into an explanation and they have said \"right\" twice.", a: "\"I'll stop there — that's the useful part. Shout if you want the rest.\"", bundle: 'pro' },
+        { q: "They ask a follow-up question, which means they want more.", a: "\"Good question, that's the interesting bit — so the difference is…\"", bundle: 'pro' },
+        { q: "Someone asks about something you know far too much about.", a: "\"I can do this in a sentence or in twenty minutes. Which are you after?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Answer the W They Actually Asked",
+      guideFront: "They know what it is. Give them the piece that places it.",
+      guideBack: "One way to say it — one sentence, then stop.",
+      description: "Work out which of the six they are missing, and give them that one. Somebody who asks \"what is it?\" while looking at it usually means \"why would I want one?\", and answering the literal question wastes the exchange. Example: they ask what a light box is while holding one — the answer they want is When and Who, not What.\n\nIt works because an explanation lands when it fills the specific gap. All six W's are available at any moment, and using the wrong one produces the peculiar experience of a correct answer that helps nobody.\n\nThe tell is usually in the situation rather than the words. Someone holding the object does not need What; someone deciding whether to buy needs Who and When; someone about to use it needs How.\n\nTypical phrases: \"Do you mean what it is, or what it's for?\", \"The bit you're probably after is…\", \"Short answer's the how — you…\", \"Depends which part you're stuck on.\"\n\nThree ways to pick:\n\n1. Read the situation — what would they do with each answer?\n\n2. Ask, in six words — \"what it is, or what for?\" Nobody minds being asked.\n\n3. Give the likely one and check — \"That's the what. Was it the why you wanted?\"\n\nMindset: the six are a menu, not a sequence. You are not obliged to serve all of them, and serving them in order is how explanations get long.",
+      inputs: [
+        { q: "They ask what a light box is while holding one.", a: "\"You're holding it, so — it's for dark mornings, and mostly for people who wake up in the dark.\"", bundle: 'free' },
+        { q: "Someone in a shop asks what the difference is between two models.", a: "\"For what you'd use it for, honestly, none. The difference matters if you're carrying it daily.\"", bundle: 'free' },
+        { q: "A colleague asks what the new process is, ten minutes before using it.", a: "\"You need the how: fill the top box, send it, and it lands with Petra.\"", bundle: 'free' },
+        { q: "Someone asks what a mortgage broker does while shopping for a house.", a: "\"For you, right now, they're the person who finds the deals the banks don't advertise.\"", bundle: 'free' },
+        { q: "A friend asks what a slow cooker is while looking at yours.", a: "\"It's for the days you're out. That's really the whole answer.\"", bundle: 'free' },
+        { q: "You cannot tell which part they are stuck on.", a: "\"Do you want what it is, or what it's for? I'll do either.\"", bundle: 'pro' },
+        { q: "You gave the definition and they still look blank.", a: "\"That was the what and it didn't help. The point of it is that you stop chasing people.\"", bundle: 'pro' },
+        { q: "They asked a broad question ten seconds before a meeting.", a: "\"One line: it's the form that gets you a room. The rest can wait.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  buildingastory: [
+    {
+      name: "Open It in One Sentence",
+      guideFront: "You are telling this story. Supply this part of it.",
+      guideBack: "One way you could say it.",
+      description: "Start the story with a single sentence that makes someone want the next one. Four openings do almost all the work: straight into the action, the scene, the hook, or the feeling. Example: \"Right as I walked in, the fire alarm went off.\"\n\nIt works because the opening decides whether anybody is listening for the rest. A story that begins with two minutes of background is a story people join late, and by then you are competing with their phone.\n\nOne to three sentences. The commonest mistake in the whole pack is a setup longer than the story, and it is nearly always caused by explaining who everybody is before anything has happened.\n\nTypical phrases: \"Right as I walked in…\", \"Last Saturday I was at the park when…\", \"You won't believe what I saw today.\", \"I was so nervous I nearly didn't go.\"\n\nFour ways to open:\n\n1. Straight into the action — the fastest. \"I couldn't believe what happened when the taxi pulled up.\"\n\n2. Set the scene — time and place, one clause each. \"Last Saturday, in the rain, outside a shut supermarket.\"\n\n3. The hook — hint that something unexpected is coming. \"I never thought I'd end up carrying a wardrobe through town.\"\n\n4. The feeling first — connects them before the facts do. \"I was so nervous I nearly turned round.\"\n\nMindset: your first sentence has one job, and it is not to explain. It is to make them want the second one.",
+      inputs: [
+        { q: "You are about to tell a story about a chaotic morning.", a: "\"Right as I walked in, the fire alarm went off.\"", bundle: 'free' },
+        { q: "You want to set the scene before the event.", a: "\"Last Saturday, in the rain, outside a supermarket that turned out to be shut.\"", bundle: 'free' },
+        { q: "You are telling a story with a surprise in it.", a: "\"I never thought I'd end up carrying a wardrobe through town, and yet.\"", bundle: 'free' },
+        { q: "You want them with you before the facts arrive.", a: "\"I was so nervous I nearly didn't go in at all.\"", bundle: 'free' },
+        { q: "You are about to start with two minutes of background.", a: "\"Skip to the point: I locked myself out twice in one day.\"", bundle: 'free' },
+        { q: "The story needs a bit of context to make sense at all.", a: "\"One thing first — my brother had the only key. Right. So.\"", bundle: 'pro' },
+        { q: "You are telling something small and want it to land anyway.", a: "\"This is a very stupid story and I've been thinking about it all week.\"", bundle: 'pro' },
+        { q: "The room is half-listening and you have one sentence to catch them.", a: "\"So I got an email yesterday from someone I last saw in 2009.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Name the Turn",
+      guideFront: "You are telling this story. Supply this part of it.",
+      guideBack: "One way you could say it.",
+      description: "Say the moment the ordinary became a story — the thing that went wrong, the surprise, the decision you had not expected to make. It is the load-bearing part, and it is what people are listening for whether they know it or not. Example: \"Then, halfway there, I realised I'd left the whole thing at home.\"\n\nIt works because a sequence of events with nothing turning in it is a report of an afternoon. The turn is what makes the setup worth having listened to and the ending worth waiting for.\n\nTwo to four sentences. The turn should be clear rather than dramatic — a small thing said sharply beats a big thing described at length.\n\nTypical phrases: \"Then, suddenly…\", \"Just as I was about to leave…\", \"And that's when it went wrong.\", \"I had no idea what was coming next.\"\n\nFive kinds of turn, from the book:\n\n1. The unexpected event — something happens. \"The lift stopped between floors.\"\n\n2. The problem — something now has to be dealt with. \"I'd forgotten my notes. All of them.\"\n\n3. The conflict with someone — a disagreement surfaces. \"That was when she said she'd already told them.\"\n\n4. The internal one — a decision you did not want. \"I had about four seconds to decide whether to say anything.\"\n\n5. The realisation — you understood something. \"And then it landed that I'd been in the wrong building the whole time.\"\n\nMindset: everything before the turn is setup and everything after it is consequence. If you cannot name the turn, you may not have a story yet — you may have an anecdote about a day.",
+      inputs: [
+        { q: "You are telling a story about a presentation.", a: "\"Then, halfway to the room, I realised I'd left every one of my notes at home.\"", bundle: 'free' },
+        { q: "The story is about a journey that went wrong.", a: "\"And then the lift stopped. Between floors, with four of us in it.\"", bundle: 'free' },
+        { q: "The story turns on something someone said.", a: "\"That was when she said, quite casually, that she'd already told them.\"", bundle: 'free' },
+        { q: "The turn is a decision rather than an event.", a: "\"I had about four seconds to decide whether to say anything at all.\"", bundle: 'free' },
+        { q: "The turn is you realising something.", a: "\"And then it landed. I'd been sitting in the wrong building for an hour.\"", bundle: 'free' },
+        { q: "You want suspense rather than the fact itself.", a: "\"I still don't know what made me look in the bag at that exact moment.\"", bundle: 'pro' },
+        { q: "The turn is small and you are worried it is not enough.", a: "\"Nothing dramatic happened. It just stopped being a normal Tuesday right then.\"", bundle: 'pro' },
+        { q: "You have been describing the setup for too long.", a: "\"Anyway — that's the background. Here's where it goes wrong.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Land the Resolution",
+      guideFront: "You are telling this story. Supply this part of it.",
+      guideBack: "One way you could say it.",
+      description: "Say what you did and how it ended, plainly. The resolution is the part people are actually waiting for, and it is the part most often mumbled because the teller has already had the laugh they wanted. Example: \"In the end I just asked the woman at the desk, and she had a spare.\"\n\nIt works because a story without an ending leaves the listener holding something. They cannot tell whether you have finished, so they say \"right\" and the whole thing deflates in its last two seconds.\n\nTwo to four sentences, and the action first: what you did, then what happened because of it. That order is what makes it feel resolved rather than merely stopped.\n\nTypical phrases: \"In the end…\", \"So what I did was…\", \"It sorted itself out, eventually, because…\", \"And that was that.\"\n\nThree shapes of ending:\n\n1. What you did and what followed — the standard. \"I asked for help, and it took four minutes.\"\n\n2. The thing that resolved it without you — honest and often funnier. \"Someone else fixed it while I was still panicking.\"\n\n3. The flat statement — for stories with no punch, which is most of them. \"So we drove home. That's genuinely it.\"\n\nMindset: say the ending on purpose. A story that trails off was worth telling right up until the last sentence.",
+      inputs: [
+        { q: "You have described the problem and need to close it.", a: "\"In the end I just asked at the desk, and she had a spare key the whole time.\"", bundle: 'free' },
+        { q: "The problem resolved without you doing anything.", a: "\"And then somebody else fixed it while I was still standing there panicking.\"", bundle: 'free' },
+        { q: "The story has no dramatic ending.", a: "\"So we drove home. That's genuinely the whole thing.\"", bundle: 'free' },
+        { q: "You are about to trail off with \"anyway, yeah\".", a: "\"…and that's how I ended up carrying a wardrobe through town.\"", bundle: 'free' },
+        { q: "The ending is the consequence rather than the action.", a: "\"I've never once parked there again, which tells you how it went.\"", bundle: 'free' },
+        { q: "You realise you never actually said how it ended.", a: "\"Oh — and it was fine in the end. She'd taken it home by mistake.\"", bundle: 'pro' },
+        { q: "The ending is unsatisfying and you want to own that.", a: "\"And nothing happened. That's the story. I've built it up far too much.\"", bundle: 'pro' },
+        { q: "You want the ending to land rather than dribble out.", a: "\"He still says it wasn't his fault.\" (and stop)", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Say the Takeaway",
+      guideFront: "You are telling this story. Supply this part of it.",
+      guideBack: "One way you could say it.",
+      description: "Add what changed, what you learned, or what you would tell somebody in the same position — briefly, and only when there is one. Example: \"I check the bag before I leave the house now. Every time. It's become a thing.\"\n\nIt works because it lets the listener take something out of your story rather than only enjoying it. A takeaway invites them to recognise their own version, which is what turns an anecdote into something two people talk about.\n\nThe rule is the one people break: **not every story has one**. A forced moral is worse than none, and \"I suppose what it taught me was…\" tacked onto a funny story about a lift is where a good anecdote goes to die.\n\nTypical phrases: \"I do X differently now.\", \"What I took from it was…\", \"If it happens to you, do the opposite.\", \"It changed how I think about…\"\n\nFour kinds of takeaway:\n\n1. What you do differently now — the most concrete. \"I check the bag before I leave.\"\n\n2. What you understood — the reflective one. \"I'd been treating a scheduling problem as a personality problem.\"\n\n3. What you would tell someone else — the most useful to them. \"Ring first. Just ring first.\"\n\n4. Nothing at all — a legitimate ending. \"I don't think there's a lesson in it. It was just a strange day.\"\n\nMindset: the takeaway is optional and the honesty is not. If the story has no lesson, say so — it is a better ending than an invented one.",
+      inputs: [
+        { q: "The story ended with you learning something practical.", a: "\"I check the bag before I leave the house now. Every single time.\"", bundle: 'free' },
+        { q: "You understood something about yourself.", a: "\"I'd been treating a scheduling problem as if it were about respect. It wasn't.\"", bundle: 'free' },
+        { q: "You want to give them something usable.", a: "\"If it ever happens to you — ring them first. Just ring first.\"", bundle: 'free' },
+        { q: "The story is funny and has no lesson.", a: "\"There's no moral. It was just a very strange Tuesday.\"", bundle: 'free' },
+        { q: "The takeaway is about somebody else.", a: "\"She never mentioned it again, which taught me more than the whole thing did.\"", bundle: 'free' },
+        { q: "You are about to attach a moral to a story that has none.", a: "\"I was going to make that mean something. It doesn't. It was just funny.\"", bundle: 'pro' },
+        { q: "The lesson is uncomfortable and you would rather skip it.", a: "\"The honest version is that it was my fault and I knew it at the time.\"", bundle: 'pro' },
+        { q: "You want to hand it over rather than conclude it.", a: "\"I still don't know what I should have done. What would you have done?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Pick One Fast",
+      guideFront: "You are telling this story. Supply this part of it.",
+      guideBack: "One way you could say it.",
+      description: "Choose a story on the spot, in about fifteen seconds, and start telling it. The whole skill is choosing something small enough to be told rather than searching for the best one you have. Example: someone says \"food\" and you go with the first sushi you ever tried, not the best meal of your life.\n\nIt works because in real conversation you rarely have time to prepare, and the alternative to picking fast is picking nothing. Most missed stories were not missed because the person had none — they were missed because the moment ended while they were choosing.\n\nSmall and specific beats big and impressive. One key moment, one or two minutes, no cast of characters.\n\nTypical phrases: \"That reminds me of…\", \"Small one, but…\", \"I've got one, it's not dramatic.\", \"Actually, this happened last week.\"\n\nThree rules for picking:\n\n1. First one that arrives — not the best one you know. It arrived for a reason.\n\n2. One moment, not one period — \"the night the taxi didn't come\", not \"that whole summer\".\n\n3. Recent beats impressive — last week is easier to tell and easier to recognise.\n\nMindset: the story does not have to be good. It has to be true, small, and told now — a mediocre story told in the moment beats a great one you thought of on the way home.",
+      inputs: [
+        { q: "Somebody says \"travel\" and you have three seconds to think.", a: "\"Small one — the night the taxi never came and we walked eight kilometres.\"", bundle: 'free' },
+        { q: "You are hunting for your best story and the moment is passing.", a: "\"Nothing dramatic, but this happened on Tuesday and I'm still annoyed about it.\"", bundle: 'free' },
+        { q: "The group is swapping stories and it is nearly your turn.", a: "\"I've got one. It's not as good as yours but it's shorter.\"", bundle: 'free' },
+        { q: "You want to start before you have the whole thing worked out.", a: "\"Right — so this is about a bike, and I don't know yet why I'm telling it.\"", bundle: 'free' },
+        { q: "The prompt is \"mistakes\" and something small comes to mind.", a: "\"I once sent a message about my boss to my boss. That's the whole story.\"", bundle: 'free' },
+        { q: "The first story that arrives seems too small to bother with.", a: "\"It's a tiny one. Two sentences, and then I'll leave you alone.\"", bundle: 'pro' },
+        { q: "You have started telling it and are not sure where it goes.", a: "\"I've begun this without a plan, so bear with me — it does end somewhere.\"", bundle: 'pro' },
+        { q: "You realise mid-story that a different one would have been better.", a: "\"The better version of this happened to my sister, actually. Remind me after.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Tell It With the Feeling In It",
+      guideFront: "You are telling this story. Supply this part of it.",
+      guideBack: "One way you could say it.",
+      description: "Let the emotion of the story be in the telling, not just in the facts. The same events told flat and told with the feeling are two different stories, and only one of them is worth listening to. Example: \"I was so relieved I sat down on the pavement\" tells them more than any description of the problem.\n\nIt works because listeners follow feeling more closely than they follow events. It is also what makes a small story land — a mildly annoying morning told with the annoyance in it is better company than a dramatic week reported flatly.\n\nSay the feeling plainly at least once. People try to convey it through detail alone and it usually does not arrive; one clause naming it does what four descriptive sentences cannot.\n\nTypical phrases: \"I was so nervous I…\", \"I couldn't stop smiling.\", \"I was furious, which surprised me.\", \"Honestly, mostly I was just tired.\"\n\nThree things the feeling does:\n\n1. Names itself — one clause, said out loud. \"I was mortified.\"\n\n2. Sets the pace — slow down for the difficult moment, speed up for the chaos.\n\n3. Chooses the details — the ones that carry the feeling, not the ones that complete the record.\n\nAnd the version worth practising: tell the same story twice, once as the funny one and once as the honest one. It is the same events and two completely different stories, and knowing that is what lets you pick.\n\nMindset: say the feeling out loud once. Everything else — the pace, the detail, the pauses — follows from it, and none of it arrives on its own.",
+      inputs: [
+        { q: "You are telling a story about something that went well.", a: "\"I was so relieved I actually sat down on the pavement.\"", bundle: 'free' },
+        { q: "The story is about something embarrassing.", a: "\"I was mortified. Properly, ears-hot mortified.\"", bundle: 'free' },
+        { q: "You are describing a frustrating morning.", a: "\"By nine o'clock I had lost the will entirely.\"", bundle: 'free' },
+        { q: "The feeling was more complicated than the events.", a: "\"I was relieved, and then a bit guilty about being relieved.\"", bundle: 'free' },
+        { q: "You are telling it flat and can hear that it is not landing.", a: "\"I should say — I was properly panicking by this point.\"", bundle: 'free' },
+        { q: "You want to slow down at the important moment.", a: "\"And then there was this pause. Quite a long one.\" (and pause)", bundle: 'pro' },
+        { q: "The same story could be funny or sad and you have to choose.", a: "\"I'll tell you the funny version. The other one takes longer.\"", bundle: 'pro' },
+        { q: "The feeling was ordinary and you are tempted to inflate it.", a: "\"Honestly, mostly I was just tired. It wasn't dramatic, it was long.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  reframing: [
+    {
+      name: "The Positive Reframe",
+      guideFront: "Same facts. What is another way to see them?",
+      guideBack: "One reframe that would hold up.",
+      description: "Find the true upside in something that has been presented as bad. Not a cheerful spin — the reading that is genuinely available and has been overlooked. Example: \"We wasted three months\" becomes \"we found out in three months rather than in a year.\"\n\nIt works because most negative framings are one reading presented as the only one, and the alternative is usually already in the facts. Nobody has to be persuaded of anything; they only have to be shown the other reading.\n\nThe rule that keeps it honest: **it has to be true.** A positive reframe that requires ignoring something is not a reframe, it is a denial, and everybody present can tell which one they are being handed.\n\nTypical phrases: \"One way to look at it is…\", \"It also means…\", \"The other reading is…\", \"That's true, and it's also the case that…\"\n\nThree kinds of upside:\n\n1. What was learned — the most reliable, because it is nearly always true. \"We know now, and we didn't before.\"\n\n2. What was avoided — the one people miss. \"That would have been much worse in December.\"\n\n3. What it makes possible — for things that closed a door. \"It frees up the whole autumn, which we didn't have.\"\n\nMindset: find the reading that is true and unused. If you have to leave something out to make it work, you are not reframing, you are covering.",
+      inputs: [
+        { q: "\"We've wasted three months on this.\"", a: "\"Or we found out in three months rather than in a year. That's not nothing.\"", bundle: 'free' },
+        { q: "\"Nobody came to the event.\"", a: "\"Eleven people came, and every one of them wanted to be there. That's a different event.\"", bundle: 'free' },
+        { q: "\"I failed the test again.\"", a: "\"Third time. You also know exactly which bit you're failing on now, which you didn't in March.\"", bundle: 'free' },
+        { q: "\"The project got cancelled.\"", a: "\"It frees up the whole autumn. That's the first clear stretch you've had all year.\"", bundle: 'free' },
+        { q: "\"I'm too old to start this.\"", a: "\"You're starting it with thirty years of knowing what you don't like. That's an advantage.\"", bundle: 'free' },
+        { q: "\"That meeting was a complete waste of time.\"", a: "\"We did find out that Petra doesn't agree, which we'd have discovered much later otherwise.\"", bundle: 'pro' },
+        { q: "\"I got turned down again.\"", a: "\"Four applications, four real interviews. The applying part is clearly working.\"", bundle: 'pro' },
+        { q: "\"The whole thing had to be rebuilt from scratch.\"", a: "\"And the second one took a fifth of the time, because you'd already made the mistakes.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Context Reframe",
+      guideFront: "Same facts. What is another way to see them?",
+      guideBack: "One reframe that would hold up.",
+      description: "Keep the behaviour exactly as described and change the setting it is being judged in. The same trait is a fault in one room and precisely what is wanted in another. Example: \"You're too stubborn\" becomes \"in a negotiation that is exactly the quality you want on your side.\"\n\nIt works because most criticisms of a person are context-blind — they name a behaviour and treat it as universally bad, when what is actually true is that it does not fit this particular situation. Naming the situation where it fits restores the proportion.\n\nIt is the most useful of the four for handling labels, because it concedes nothing and denies nothing. The behaviour is agreed; only the verdict moves.\n\nTypical phrases: \"In here, maybe. Put it in a…\", \"That's a problem on a Tuesday and an asset in a crisis.\", \"Depends where you're standing.\", \"That's exactly what you'd want if…\"\n\nThree ways to move the context:\n\n1. Another setting — the standard. \"That's a liability in small talk and an asset in a negotiation.\"\n\n2. Another time — for things that were right once. \"That was the correct instinct five years ago. The situation moved.\"\n\n3. Another observer — when the verdict is one person's. \"Your manager calls it slow. The client called it thorough.\"\n\nMindset: do not argue about the behaviour. Move the room it is being judged in and the verdict moves with it.",
+      inputs: [
+        { q: "\"You're too stubborn.\"", a: "\"In a queue, maybe. In a negotiation it's exactly what you'd want on your side.\"", bundle: 'free' },
+        { q: "\"You overthink everything.\"", a: "\"For picking a restaurant, yes. For the thing we're about to sign, less so.\"", bundle: 'free' },
+        { q: "\"He's too slow.\"", a: "\"Slow in a sprint, careful in an audit. Depends which one we're doing.\"", bundle: 'free' },
+        { q: "\"You're so quiet in meetings.\"", a: "\"In meetings, yes. Ask anyone who's been on a call with me and a difficult client.\"", bundle: 'free' },
+        { q: "\"I'm hopeless at small talk.\"", a: "\"You're hopeless at small talk and very good at the conversation after it. Those are different skills.\"", bundle: 'free' },
+        { q: "\"You take things too seriously.\"", a: "\"I take the things that matter seriously. I'd rather have that problem than the other one.\"", bundle: 'pro' },
+        { q: "\"She never lets anything go.\"", a: "\"That's why the accounts have been right for six years, though.\"", bundle: 'pro' },
+        { q: "\"You're too cautious for this.\"", a: "\"I was too cautious for the last one. This one has actual money in it.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Meaning Reframe",
+      guideFront: "Same facts. What is another way to see them?",
+      guideBack: "One reframe that would hold up.",
+      description: "Leave the event untouched and change what it is taken to mean. Nothing about the facts moves — only the conclusion drawn from them. Example: \"She didn't reply\" means \"she is ignoring me\" or \"she has had a week from hell\", and both fit the same silence.\n\nIt works because the meaning is almost always the invented part. What happened is usually one sentence long, and everything painful attached to it is an interpretation that arrived so fast it felt like part of the event.\n\nThe test is whether the alternative meaning fits the same facts. If it requires different facts, it is not a reframe — it is wishful thinking, and it will not survive the next thing that happens.\n\nTypical phrases: \"Or it means…\", \"That's one explanation. Here's another that fits.\", \"What if it isn't about you at all?\", \"Same facts, different conclusion.\"\n\nThree ways to change the meaning:\n\n1. A different cause — the most common by far. \"Or she's had a terrible week and hasn't opened anything.\"\n\n2. Not about you — the one that resolves most of it. \"It might not be about you at all.\"\n\n3. A different verdict on yourself — for self-directed meanings. \"Nervous doesn't mean unprepared. It usually means it matters.\"\n\nMindset: separate what happened from what it means. The first is short and the second is a story, and only one of them is fixed.",
+      inputs: [
+        { q: "\"She didn't reply, so she's clearly annoyed with me.\"", a: "\"Or she's had a week from hell and hasn't opened her messages. Same silence, different reason.\"", bundle: 'free' },
+        { q: "\"They didn't laugh, so it went badly.\"", a: "\"Or it was nine in the morning and nobody laughs at nine in the morning.\"", bundle: 'free' },
+        { q: "\"I was nervous, which means I wasn't ready.\"", a: "\"Nervous usually means it mattered. Those aren't the same thing.\"", bundle: 'free' },
+        { q: "\"He didn't ask me anything, so he wasn't interested.\"", a: "\"Or he's shy and you're the third stranger he's met today.\"", bundle: 'free' },
+        { q: "\"I got it wrong, so I'm bad at this.\"", a: "\"You got one wrong. 'Bad at this' is a much bigger claim than the evidence.\"", bundle: 'free' },
+        { q: "\"They gave the project to someone else, so they don't rate me.\"", a: "\"Or they've got you earmarked for the one starting in November. You genuinely don't know yet.\"", bundle: 'pro' },
+        { q: "\"Nobody's said anything about it, so it must have been bad.\"", a: "\"Or it was fine, and people say almost nothing about fine.\"", bundle: 'pro' },
+        { q: "\"I felt awful the whole way through, so it must have shown.\"", a: "\"How you felt and how it looked are two different pieces of information, and you only have one of them.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Humorous Reframe",
+      guideFront: "Same facts. What is another way to see them?",
+      guideBack: "One reframe that would hold up.",
+      description: "Take the sting out by putting the thing at an absurd scale — usually smaller than the person is treating it, occasionally so much bigger that it becomes ridiculous. Example: \"I've ruined the whole evening\" becomes \"you knocked over a glass. They'll speak of little else for generations.\"\n\nIt works because most distress about a small thing comes from a scale error, and scale is the easiest thing to hear. You do not have to argue that it was not a disaster; you only have to say it in a size everyone can hear is wrong.\n\nThis is not the same as making a joke. The humorous reframe is aimed at the proportion, and it is warm — it says *this is smaller than it feels*, not *your reaction is silly*. Aimed at the person rather than the scale it stops working instantly.\n\nTypical phrases: \"In fifty years they'll still be talking about it.\", \"Historians will be kind.\", \"That's a Tuesday problem, not a life problem.\", \"You've committed a minor crime against a glass.\"\n\nThree ways to use scale:\n\n1. Shrink it by naming it plainly — the driest and safest. \"You sent an email to the wrong person. That's it. That's the crime.\"\n\n2. Inflate it absurdly — for things the person has already inflated. \"There'll be an inquiry. Possibly a statue.\"\n\n3. Give it a comically wrong category — \"that's a paperwork problem, not a moral one.\"\n\nMindset: aim at the size of the thing, never at the person's reaction. The moment it reads as \"you're overreacting\" it has become a criticism with a smile on it.",
+      inputs: [
+        { q: "\"I've completely ruined the evening.\"", a: "\"You knocked over one glass. They'll speak of little else for generations.\"", bundle: 'free' },
+        { q: "\"I made a total fool of myself.\"", a: "\"You said one slightly odd sentence. There is no permanent record.\"", bundle: 'free' },
+        { q: "\"That presentation was a disaster.\"", a: "\"Two people were on their phones and one asked a question. That's a Tuesday, not a disaster.\"", bundle: 'free' },
+        { q: "\"Everyone must think I'm an idiot.\"", a: "\"Everyone is thinking about their own lunch. You've been mentally filed under 'fine'.\"", bundle: 'free' },
+        { q: "\"I can never show my face there again.\"", a: "\"You'll be back on Thursday and nobody will mention it. It's very disappointing, honestly.\"", bundle: 'free' },
+        { q: "\"I've messed up the whole account.\"", a: "\"You've made a spreadsheet slightly wrong. It's a paperwork problem, not a moral one.\"", bundle: 'pro' },
+        { q: "\"I'll be known for this forever.\"", a: "\"There will be an inquiry. Possibly a small statue. Realistically, nobody remembers by Friday.\"", bundle: 'pro' },
+        { q: "\"I should never have said anything.\"", a: "\"You said a true thing at a slightly awkward moment. Historians will be kind.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Reframe What They Said About You",
+      guideFront: "Same facts. What is another way to see them?",
+      guideBack: "One reframe that would hold up.",
+      description: "Somebody has put a label on you and you take the same word and give it a different reading, calmly and without arguing. It is the everyday use of the whole pack, and the safest, because the frame you are changing is your own. Example: \"You're always so serious\" — \"I take the things that matter seriously. I'd rather be that than the alternative.\"\n\nIt works because arguing with a label keeps you inside it. Deny it and you are the person defending themselves against being too serious, which is a losing position and takes ten minutes. Reframe it and the conversation moves to your reading, which you chose.\n\nAgree with the observation, disagree with the verdict. That split is the whole move: yes I do that, and here is what I make of it.\n\nTypical phrases: \"I'd call it…\", \"True, and I'm fine with it.\", \"That's one word for it. Mine would be…\", \"Guilty. It's served me well.\"\n\nThree ways to answer a label:\n\n1. Rename it — the same behaviour, your word. \"Stubborn, or committed. I know which one I'd use.\"\n\n2. Own it plainly — the strongest, and it ends the exchange. \"Yes. I'm completely at peace with that.\"\n\n3. Name where it comes from — for labels with something behind them. \"I check things twice because I've been burnt. It's a scar, not a personality.\"\n\nMindset: accept the behaviour, decline the verdict. That is the reframe, and it is much harder to argue with than a denial.",
+      inputs: [
+        { q: "\"You're always so serious.\"", a: "\"I take the things that matter seriously. I'd rather have that than the other way round.\"", bundle: 'free' },
+        { q: "\"You're so fussy about this.\"", a: "\"I'd call it particular. And yes, entirely guilty.\"", bundle: 'free' },
+        { q: "\"You worry too much.\"", a: "\"I plan for things going wrong. It's dull and it's saved us twice.\"", bundle: 'free' },
+        { q: "\"You're too quiet.\"", a: "\"I say things once I've thought about them. It's slower and it's on purpose.\"", bundle: 'free' },
+        { q: "\"You never let anything go.\"", a: "\"Not the things that matter, no. I've made my peace with that.\"", bundle: 'free' },
+        { q: "\"You're very intense about your work.\"", a: "\"I care a lot about a small number of things. That's the deal I've made with myself.\"", bundle: 'pro' },
+        { q: "\"You always have to be right.\"", a: "\"I do like getting to the right answer. I'm much less fussed about who found it.\"", bundle: 'pro' },
+        { q: "\"You're too soft on people.\"", a: "\"I give people the benefit of the doubt. It costs me occasionally and I'd still choose it.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Offer It, Don't Impose It",
+      guideFront: "Same facts. What is another way to see them?",
+      guideBack: "One reframe that would hold up.",
+      description: "Give the reframe as one reading among others, after the person has been heard, and let them keep their own. It is the delivery rule for the entire pack, and it is what separates a reframe that helps from one that annoys. Example: \"That sounds genuinely rubbish. Can I offer another way of looking at it, or do you just want to be annoyed for a bit?\"\n\nIt works because a reframe handed to someone who has not yet been acknowledged is heard as a correction, and people defend against corrections. Two sentences of acknowledgement first and the same reframe lands as an offer.\n\nAsk, when it is not your own frame you are changing. \"Do you want a different angle on it?\" costs four seconds and it moves the whole thing from being told how to feel to being offered something.\n\nTypical phrases: \"That sounds hard. Want another angle on it, or not right now?\", \"One way to look at it — take it or leave it.\", \"I might be wrong about this.\", \"You don't have to buy it.\"\n\nThree parts to the delivery:\n\n1. Acknowledge first, properly — one true sentence about how it actually is. \"That's a rubbish way to find out.\"\n\n2. Ask before offering — especially if they are upset. \"Do you want a different reading of it?\"\n\n3. Hold it loosely — offer, then stop. \"That's just how it looks from here.\"\n\nMindset: acknowledge, then offer, then let it go. A reframe repeated is an argument about whose reading is correct, and nobody has ever won that.",
+      inputs: [
+        { q: "A friend is upset and you can see another reading.", a: "\"That sounds genuinely rubbish. Do you want another angle on it, or not right now?\"", bundle: 'free' },
+        { q: "You are about to say \"look on the bright side\".", a: "\"That's a horrible way to find out. There is one other way of reading it, if you want it.\"", bundle: 'free' },
+        { q: "They have rejected your reframe.", a: "\"Fair enough. It was just how it looked from here.\"", bundle: 'free' },
+        { q: "You want to offer a reading without insisting on it.", a: "\"One way to see it — and you can throw this straight out — is that it was going to surface eventually.\"", bundle: 'free' },
+        { q: "They are mid-vent and clearly not finished.", a: "\"Carry on. I've got a thought about it but it can wait.\"", bundle: 'free' },
+        { q: "You have offered the same reframe twice and they have not taken it.", a: "\"I'll stop pushing that reading. What would actually help right now?\"", bundle: 'pro' },
+        { q: "You are not sure whether they want perspective or company.", a: "\"Do you want me to be useful about this or just annoyed on your behalf?\"", bundle: 'pro' },
+        { q: "Your reframe might be completely wrong.", a: "\"I might have this entirely wrong, and it's your situation, not mine.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Know When Not To",
+      guideFront: "Same facts. What is another way to see them?",
+      guideBack: "One reframe that would hold up.",
+      description: "Recognise the moments when a reframe is the wrong move and say nothing, or say something else. Some situations are simply bad, some people need to be heard rather than helped, and some feelings are the correct response to what happened. Example: somebody's plan has just collapsed an hour ago — the reframe is not wrong, it is early.\n\nIt works because the failure mode of this whole pack is real and has a name. Reframing someone else's feeling before they have been heard is what the literature calls toxic positivity, and the effect is not that they cheer up — it is that they stop telling you things.\n\nThree situations where the answer is no: when the thing is genuinely bad and a positive reading would require ignoring most of it; when the feeling is the accurate response and does not need adjusting; and when they want company rather than perspective, which is most of the time in the first hour.\n\nTypical phrases: \"That's just bad. I'm not going to try to make it better.\", \"You're allowed to be furious about this.\", \"I don't have a silver lining for this one.\", \"That's the correct reaction, honestly.\"\n\nThree tests:\n\n1. Would the positive reading require leaving something out? Then it is denial, not a reframe.\n\n2. Has the feeling been acknowledged yet? If not, that comes first and might be all that is needed.\n\n3. Is the feeling accurate? Grief, anger at something genuinely unfair, dread about something that is actually coming — none of those are frames that need changing.\n\nMindset: some things do not need a better angle. \"That's just bad, and I'm sorry\" is a complete response, and it is the right one more often than this pack might suggest.",
+      inputs: [
+        { q: "Something genuinely bad has just happened to them.", a: "\"That's just bad. I'm not going to try to find an upside for it.\"", bundle: 'free' },
+        { q: "They are angry about something that was actually unfair.", a: "\"You're allowed to be furious about that. It was unfair.\"", bundle: 'free' },
+        { q: "You are about to offer a silver lining an hour after the event.", a: "\"Too soon for me to be clever about it. How are you doing?\"", bundle: 'free' },
+        { q: "They want company rather than perspective.", a: "\"I'll just be annoyed about it with you. That's the offer.\"", bundle: 'free' },
+        { q: "The positive reading would mean ignoring most of it.", a: "\"I could tell you what you've learned from it. I don't think that's what today is for.\"", bundle: 'free' },
+        { q: "Their dread is about something that is genuinely coming.", a: "\"It is going to be hard. I'm not going to pretend otherwise — what would help?\"", bundle: 'pro' },
+        { q: "You have a good reframe and the timing is wrong.", a: "\"I've got a thought about it. Ask me in a week if you want it.\"", bundle: 'pro' },
+        { q: "Somebody keeps reframing your own feeling away.", a: "\"I'd rather sit with this one for a bit before we make it into a lesson.\"", bundle: 'pro' },
+      ]
+    },
+  ],
 };
 
 // ─── COLLECTIONS MODE DATA ───────────────────────────────────────────────────
@@ -8821,6 +9475,322 @@ const collectionsModeData = {
         { q: "They describe refusing to cut corners.", a: "\"I'd want it done properly too, even when nobody's checking.\" [shared value]", bundle: 'pro' },
         { q: "You have offered your own case and they have gone quiet.", a: "\"That wasn't me changing the subject. What were you going to say?\" [share and return]", bundle: 'pro' },
         { q: "You have got their meaning wrong once already.", a: "\"So I had that backwards. Is it that she asked, or that she didn't?\" [check]", bundle: 'pro' },
+      ]
+    },
+  ],
+  setupquestion: [
+    {
+      name: "Ask About Now",
+      guideFront: "Which question fits this moment?",
+      guideBack: "A possible question, with the type in brackets.",
+      description: "A choice between the two questions that work off what is already in front of you: Opinion (there is something present to have a view on) and Status (the mood is the most honest thing available). Opinion fits when you can both see the thing; Status fits when the state of the room, or of them, is what you would actually notice. Example: in front of a painting an Opinion question lands; at the end of a visibly rough day a Status one does.\n\nThe two options:\n1. Opinion Question — there is something present to react to. \"What do you make of this?\"\n2. Status Question — the mood is worth asking about. \"How are you holding up today?\"\n\nLook before you choose. If there is a thing you are both looking at, ask about the thing; if the room has a feeling, ask about that.\n\nMindset: both of these read the moment rather than importing a subject. That is what stops them sounding rehearsed.",
+      inputs: [
+        { q: "You are both looking at the same painting in a gallery.", a: "\"What do you make of this one?\" (opinion)", bundle: 'pro' },
+        { q: "You meet someone at the end of a clearly rough day for both of you.", a: "\"How are you holding up today?\" (status)", bundle: 'pro' },
+        { q: "A film has just finished and the room has gone quiet.", a: "\"What did you think of that?\" (opinion)", bundle: 'pro' },
+        { q: "The mood in the room is low and everyone is flagging.", a: "\"Long week for you too?\" (status)", bundle: 'pro' },
+        { q: "Someone sits next to you at a talk that has not started.", a: "\"Have you seen this speaker before?\" (opinion)", bundle: 'pro' },
+        { q: "You are both waiting, clearly tired, early in the morning.", a: "\"Are you awake yet? Genuinely.\" (status)", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ask About Them",
+      guideFront: "Which question fits this moment?",
+      guideBack: "A possible question, with the type in brackets.",
+      description: "A choice between the three questions that ask them for something of their own: Purpose (why they are here), Action (what they are doing) and Background (where they came from). All three work when there is nothing present to react to — pick whichever the situation makes obvious. Example: at a new class, Purpose is the natural one; at a wedding, Background is.\n\nThe three options:\n1. Purpose Question — you are both somewhere on purpose. \"What brought you along?\"\n2. Action Question — you want something concrete. \"What are you working on at the moment?\"\n3. Background Question — a small story is likely. \"How do you know everyone here?\"\n\nChoose by the situation rather than by preference: a course suggests Purpose, a catch-up suggests Action, a party full of strangers suggests Background.\n\nMindset: you always have all three. That is the point of the group — you are never actually stuck for a question.",
+      inputs: [
+        { q: "First evening of a course where nobody knows anybody.", a: "\"What made you sign up for this?\" (purpose)", bundle: 'pro' },
+        { q: "An old friend asks what is new and you want to turn it round.", a: "\"What have you been up to lately?\" (action)", bundle: 'pro' },
+        { q: "You sit down next to a stranger at a wedding.", a: "\"How do you know the couple?\" (background)", bundle: 'pro' },
+        { q: "You join a volunteering day where everyone is new.", a: "\"How did you end up here?\" (purpose)", bundle: 'pro' },
+        { q: "A neighbour is out in the garden as you pass.", a: "\"What are you doing to it?\" (action)", bundle: 'pro' },
+        { q: "Someone arrives at a dinner having travelled a long way.", a: "\"How far did you come?\" (background)", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Choosing Your Question",
+      guideFront: "Which question fits this moment?",
+      guideBack: "A possible question, with the type in brackets.",
+      description: "The full choice between all five types. Most moments could take several, but one usually fits without effort: Opinion when there is something to react to, Purpose when you are both new somewhere, Status when the mood is the obvious thing, Action when you want a concrete thread, and Background when a small story is likely. Example: at a quiet party near the food, \"have you tried these?\" costs less than \"why did you come?\".\n\nThe five, with the cue for each:\n1. Opinion — something is in front of you both. \"What do you make of this?\"\n2. Purpose — you are both here on purpose. \"What brought you along?\"\n3. Status — the mood is worth asking about. \"How are you holding up?\"\n4. Action — you want a concrete thread. \"What are you working on?\"\n5. Background — a small story is likely. \"Where have you come from?\"\n\nMindset: there is no wrong one, only a more natural one. And whichever you pick, the second half is the same — you answer it too.",
+      inputs: [
+        { q: "You are both looking at the same painting in a gallery.", a: "\"What do you make of this one?\" (opinion)", bundle: 'pro' },
+        { q: "First evening of a course where nobody knows anybody.", a: "\"What made you sign up?\" (purpose)", bundle: 'pro' },
+        { q: "You meet someone at the end of a rough day for both of you.", a: "\"How are you holding up?\" (status)", bundle: 'pro' },
+        { q: "Catching up with someone you have not seen for a year.", a: "\"What have you been up to lately?\" (action)", bundle: 'pro' },
+        { q: "You sit down next to a stranger at a wedding.", a: "\"How do you know the couple?\" (background)", bundle: 'pro' },
+        { q: "Standing by the coffee at a work event, silence settling in.", a: "\"How's your day been?\" (status)", bundle: 'pro' },
+        { q: "Someone sits next to you at a talk that has not started.", a: "\"Have you seen this speaker before?\" (opinion)", bundle: 'pro' },
+        { q: "You join a table of strangers at a shared dinner.", a: "\"How do you all know each other?\" (background)", bundle: 'pro' },
+      ]
+    },
+  ],
+  givingcounterexamples: [
+    {
+      name: "When You Are the Evidence",
+      guideFront: "Which kind of counter-example fits here?",
+      guideBack: "A possible counter-example, with the type in brackets.",
+      description: "Your own exception and honest numbers — the two types where you are the source and can stand behind every word of it.\n\nUse them when it matters that you are believed: when the other person is sceptical, when the stakes are real, or when the claim is about something you have actually lived through.\n\nMindset: these two survive being questioned. Reach for them when you might be.",
+      inputs: [
+        { q: "\"Nobody manages to keep a new habit past January.\"", a: "\"Most don't. I've run four mornings a week since last February.\" [Your Own Exception]", bundle: 'pro' },
+        { q: "\"The old system is completely dead.\"", a: "\"I counted on Monday — eleven people opened it that week.\" [What the Numbers Say]", bundle: 'pro' },
+        { q: "\"You can't learn this as an adult.\"", a: "\"It's harder. I started at thirty-four and I manage fine.\" [Your Own Exception]", bundle: 'pro' },
+        { q: "\"Everyone is late on Fridays.\"", a: "\"I kept a note for a fortnight. Two people, same two both times.\" [What the Numbers Say]", bundle: 'pro' },
+        { q: "\"Cheap tools are always a false economy.\"", a: "\"I bought the cheap drill nine years ago and it's still going.\" [Your Own Exception]", bundle: 'pro' },
+        { q: "\"It affects hundreds of people.\"", a: "\"Tens, not hundreds. I'd rather we planned from the real number.\" [What the Numbers Say]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "When They Already Know It",
+      guideFront: "Which kind of counter-example fits here?",
+      guideBack: "A possible counter-example, with the type in brackets.",
+      description: "The one you have seen and the known exception — the two types that work through recognition. Neither needs establishing, so both are fast, and neither requires the other person to take your word for anything.\n\nUse them when you want the point to land immediately, when your own life is not the subject, or when you barely know the person you are talking to.\n\nMindset: these cost the listener nothing to accept. That is their whole advantage — and it is why they are the safest to use with a stranger.",
+      inputs: [
+        { q: "\"Early risers are always the productive ones.\"", a: "\"The best person on my old team never started before eleven.\" [The One You Have Seen]", bundle: 'pro' },
+        { q: "\"If a book gets rejected, it wasn't good enough.\"", a: "\"Plenty of famous ones were turned down a dozen times.\" [The Known Exception]", bundle: 'pro' },
+        { q: "\"Big organisations can never move fast.\"", a: "\"That recall last year took three days, whole product.\" [The Known Exception]", bundle: 'pro' },
+        { q: "\"Nobody keeps a hobby they start late.\"", a: "\"My neighbour took up cello at fifty and still plays daily.\" [The One You Have Seen]", bundle: 'pro' },
+        { q: "\"Nothing important happens quickly.\"", a: "\"The vaccine timeline, and everyone had said years.\" [The Known Exception]", bundle: 'pro' },
+        { q: "\"Open-plan always kills concentration.\"", a: "\"The team downstairs asked to stay open-plan when they got the choice.\" [The One You Have Seen]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "All Five",
+      guideFront: "Which kind of counter-example fits here?",
+      guideBack: "A possible counter-example, with the type in brackets.",
+      description: "The full choice. Most claims can be answered several ways, but one usually costs least: your own exception when you lived it, the one you have seen when you watched it, the imagined case when you have neither, the known exception when the room already knows it, and numbers when you actually have one.\n\nThe five, with the cue for each:\n1. Your Own Exception — it happened to you. \"I did exactly that and…\"\n2. The One You Have Seen — you watched it. \"There's at least one I know of…\"\n3. Where It Would Break — you have no case, and say so. \"Say someone…\"\n4. The Known Exception — you both already know it. \"Even…\"\n5. What the Numbers Say — you have a real figure. \"I counted, and…\"\n\nMindset: pick the cheapest true one. The point is to take \"always\" out of the claim, not to win the exchange.",
+      inputs: [
+        { q: "\"Exercise always makes you feel better.\"", a: "\"It usually does. I trained all last week and still felt flat.\" [Your Own Exception]", bundle: 'pro' },
+        { q: "\"Everyone should start at six.\"", a: "\"Say someone works nights. Does the rule survive that?\" [Where It Would Break]", bundle: 'pro' },
+        { q: "\"The favourite always wins.\"", a: "\"Nearly always — which is why we remember the ones that didn't.\" [The Known Exception]", bundle: 'pro' },
+        { q: "\"Nobody opens the newsletter.\"", a: "\"About a third do, per the last report.\" [What the Numbers Say]", bundle: 'pro' },
+        { q: "\"Nobody sticks with an instrument as an adult.\"", a: "\"My neighbour started cello at fifty and still plays.\" [The One You Have Seen]", bundle: 'pro' },
+        { q: "\"Working alone is always worse.\"", a: "\"The one thing I did alone is the only thing I finished on time.\" [Your Own Exception]", bundle: 'pro' },
+        { q: "\"All rules should apply to everyone equally.\"", a: "\"Imagine someone ten minutes late once, for a good reason.\" [Where It Would Break]", bundle: 'pro' },
+        { q: "\"Everyone agrees about this.\"", a: "\"The survey had it at two-thirds. Majority, not everyone.\" [What the Numbers Say]", bundle: 'pro' },
+      ]
+    },
+  ],
+  discussing: [
+    {
+      name: "Me-Focus",
+      guideFront: "Does this moment need you, or them?",
+      guideBack: "A possible response, with the focus in brackets.",
+      description: "The book's first half — the moves where you supply something: saying what you think, owning it as yours, and giving the reason behind it. These are what a discussion needs when nobody has actually put a position on the table, or when you have been agreeing along for so long that the other person has nothing to push against.\n\nThe two options:\n1. Say What You Think — put a position in the room. \"I think it's the wrong call.\"\n2. Give the Reason Behind It — the sentence after it. \"Because the last two slipped the same way.\"\n\nReach for these when the discussion is polite and going nowhere. That is almost always a shortage of positions rather than a shortage of goodwill.\n\nMindset: a discussion with only one view in it is not a discussion. Supply yours.",
+      inputs: [
+        { q: "Everyone is being agreeable and nothing is being discussed.", a: "\"I'll put something on the table — I think we're solving the wrong problem.\" [me]", bundle: 'pro' },
+        { q: "They asked why you think that.", a: "\"Because the last two both slipped for the same reason. It looks like a pattern.\" [me]", bundle: 'pro' },
+        { q: "You have agreed with everything for ten minutes.", a: "\"I've been nodding along, but I see the last part differently.\" [me]", bundle: 'pro' },
+        { q: "You are about to say \"people think\" instead of \"I think\".", a: "\"That's my view rather than a fact — I'd keep it.\" [me]", bundle: 'pro' },
+        { q: "You are restating your opinion more firmly instead of explaining it.", a: "\"Let me say why rather than say it again: it's the cover on Fridays.\" [me]", bundle: 'pro' },
+        { q: "Your reason is a preference rather than evidence.", a: "\"Honestly it's partly taste. I find the other way harder to live with.\" [me]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "You-Focus",
+      guideFront: "Does this moment need you, or them?",
+      guideBack: "A possible response, with the focus in brackets.",
+      description: "The book's second half — the moves where you take something in: saying their view back, asking what they mean, and letting them finish. These are what the discussion needs when it has started to circle, when the same point keeps coming back, or when you are not certain you are arguing about the same thing.\n\nThe three options:\n1. Say Their View Back — before you answer it. \"So you'd keep the deadline.\"\n2. Ask What They Mean — before you disagree with it. \"All of it, or the busywork?\"\n3. Let Them Finish — the qualification lives in the last quarter.\n\nThe tell that you need one of these is repetition. When someone says the same thing a third time, they do not think you have heard it, and no counter-argument will fix that.\n\nMindset: someone who has been understood accurately stops repeating themselves. That is the fastest thing that can happen to a stuck discussion.",
+      inputs: [
+        { q: "They have made the same point three times.", a: "\"I don't think I've shown you I heard this. It's about who carries the cost, isn't it.\" [you]", bundle: 'pro' },
+        { q: "You are about to disagree with something ambiguous.", a: "\"When you say it's not working — failing, or just slow?\" [you]", bundle: 'pro' },
+        { q: "They are mid-sentence and you have a good reply ready.", a: "(wait — the qualification usually arrives at the end) [you]", bundle: 'pro' },
+        { q: "The two of you seem to be arguing about different things.", a: "\"Can I try saying your side back? I want to check we're on the same subject.\" [you]", bundle: 'pro' },
+        { q: "You interrupted and they stopped.", a: "\"Sorry — that was me cutting in. Finish what you were saying.\" [you]", bundle: 'pro' },
+        { q: "Their claim sounds more extreme than they probably mean.", a: "\"Is that a strong position or a lean?\" [you]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Reading the Room",
+      guideFront: "Does this moment need you, or them?",
+      guideBack: "A possible response, with the focus in brackets.",
+      description: "The full choice, including the temperature move. A discussion needs different things at different moments: a position when there is none, a reason when the positions are stuck, understanding when someone is repeating themselves, a question when a word is doing too much work, silence when they are still talking, and a hand on the brake when it is heating up.\n\nThe six, with the cue for each:\n1. Say What You Think — nobody has said anything. \"I think…\"\n2. Give the Reason Behind It — the positions are stuck. \"Because…\"\n3. Say Their View Back — they keep repeating themselves. \"So you're saying…\"\n4. Ask What They Mean — a word is hiding a disagreement. \"Which part?\"\n5. Let Them Finish — you are itching to reply. (nothing)\n6. Keep the Temperature Down — it is getting fast and sharp. \"Can we slow down?\"\n\nMindset: the balance is the skill. Two people doing only Me-Focus have two monologues; two doing only You-Focus have nothing to discuss.",
+      inputs: [
+        { q: "Nobody has put a view on the table and the conversation is dying.", a: "\"I'll start — I think the deadline should move.\" [me]", bundle: 'pro' },
+        { q: "They have said the same thing three times.", a: "\"You're saying it costs more than it saves, and I've not acknowledged that.\" [you]", bundle: 'pro' },
+        { q: "Both of you are talking faster and over each other.", a: "\"We're getting heated. Can we slow down?\" [temperature]", bundle: 'pro' },
+        { q: "A key word in their argument could mean two things.", a: "\"Do you mean all of it, or the busywork?\" [you]", bundle: 'pro' },
+        { q: "They asked you why and you repeated your conclusion.", a: "\"Sorry — the reason is that nobody's here on Friday to fix it.\" [me]", bundle: 'pro' },
+        { q: "You are composing your reply while they are still speaking.", a: "(stop, and listen to the end — the qualification is coming) [you]", bundle: 'pro' },
+        { q: "It is becoming personal over something small.", a: "\"I don't want to fall out over a booking system. Let's restart that bit.\" [temperature]", bundle: 'pro' },
+      ]
+    },
+  ],
+  storybanter: [
+    {
+      name: "Keep It Moving",
+      guideFront: "Which move does the story need right now?",
+      guideBack: "A possible line, with the technique in brackets.",
+      description: "The two techniques that keep a story alive without changing its direction: Yes And, which accepts and adds, and Then What Happens, which follows the last idea forward. Between them they cover most turns, and neither requires you to have an idea of your own — you only have to take theirs seriously.\n\nThe two options:\n1. Yes, And — accept and put one thing on top. \"Yes, and the fort needs a doorbell.\"\n2. Then What Happens — follow it forward. \"So the school rings your mum.\"\n\nReach for these when the story is working and you just have to not drop it. Most turns are this.\n\nMindset: neither of these needs an idea. That is why they are the two to have ready when your mind is blank.",
+      inputs: [
+        { q: "They say you should skip the whole week.", a: "\"Yes, and I'll need three pizzas just for Monday.\" [yes and]", bundle: 'pro' },
+        { q: "They say the dog goes to class instead of you.", a: "\"So now the dog's got homework and you're doing it at midnight.\" [then what]", bundle: 'pro' },
+        { q: "They add a doorbell to the imaginary fort.", a: "\"Yes, and there's a bell rota. It's very organised in there.\" [yes and]", bundle: 'pro' },
+        { q: "They say nobody would notice you were gone.", a: "\"Which means they keep paying you for years. You become a rumour.\" [then what]", bundle: 'pro' },
+        { q: "You have gone blank and the story is waiting for you.", a: "\"So what happens is your mum gets home before the boxes go out.\" [then what]", bundle: 'pro' },
+        { q: "They have made your excuse bigger than you meant it.", a: "\"Yes, and I've already told my manager, so we're committed now.\" [yes and]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Make It Bigger",
+      guideFront: "Which move does the story need right now?",
+      guideBack: "A possible line, with the technique in brackets.",
+      description: "The three techniques that raise the stakes: Make It Bigger, which inflates what is already there; What If, which adds a threat; and Bring Someone In, which adds a person with opinions. These are for the moment the story is pleasant and going nowhere.\n\nThe three options:\n1. Make It Bigger — inflate past sense. \"Three pizzas? Enough for the city.\"\n2. What If — add a complication. \"What if your mum comes home?\"\n3. Bring Someone In — a new character with a reaction. \"Then your gran turns up.\"\n\nThe tell that you need one of these is that the last two turns were both agreeable. A story with no problem in it runs out fast.\n\nMindset: pleasant is the enemy. Give it a problem, a person or a bigger number.",
+      inputs: [
+        { q: "The story has become a list of nice things.", a: "\"What if the neighbours have started a group chat about it?\" [what if]", bundle: 'pro' },
+        { q: "They say you would sleep in a bit.", a: "\"A bit? They'd find you in the spring.\" [bigger]", bundle: 'pro' },
+        { q: "The story only has the two of you in it.", a: "\"This is where a man from the council knocks, holding a clipboard.\" [bring someone in]", bundle: 'pro' },
+        { q: "They describe a small mess.", a: "\"Small? They're naming a warning label after you.\" [bigger]", bundle: 'pro' },
+        { q: "The plan in the story is going suspiciously well.", a: "\"What if it works perfectly and now it's your job forever?\" [what if]", bundle: 'pro' },
+        { q: "The story is flagging and needs a reaction.", a: "\"And the headteacher has been watching all of this from a parked car.\" [bring someone in]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "All Six",
+      guideFront: "Which move does the story need right now?",
+      guideBack: "A possible line, with the technique in brackets.",
+      description: "The full set. Most turns take more than one, but one is usually obvious: accept and add when the story is working, follow the consequence when you are stuck, inflate when it is too small, complicate when it is too pleasant, add a person when it is too empty, and solve it ridiculously when it has nowhere left to go.\n\nThe six, with the cue for each:\n1. Yes, And — it is working. \"Yes, and…\"\n2. Then What Happens — you are stuck. \"So then…\"\n3. Make It Bigger — it is too small. \"Not three. Three hundred.\"\n4. What If — it is too pleasant. \"What if…?\"\n5. Bring Someone In — it is too empty. \"And then your gran…\"\n6. Solve It Ridiculously — it is cornered. \"Easy, you just…\"\n\nMindset: there is no wrong move, only a dropped one. Any of the six beats a pause where you were trying to think of something clever.",
+      inputs: [
+        { q: "They have just added a good detail and it is your turn.", a: "\"Yes, and now the fort needs a postcode.\" [yes and]", bundle: 'pro' },
+        { q: "You are completely stuck for an idea.", a: "\"So the school rings your mum, obviously.\" [then what]", bundle: 'pro' },
+        { q: "The last thing they said was too modest.", a: "\"Three pizzas? You'd need enough for the whole street.\" [bigger]", bundle: 'pro' },
+        { q: "Everything in the story is going well and it is dull.", a: "\"What if the delivery driver knows your mum?\" [what if]", bundle: 'pro' },
+        { q: "There is nobody in the story but the two of you.", a: "\"Then the cat gets involved, and she is furious.\" [bring someone in]", bundle: 'pro' },
+        { q: "The story has hit a problem with no way out.", a: "\"Easy — you just download the whole term directly into your head.\" [ridiculous solution]", bundle: 'pro' },
+        { q: "They have raised the stakes and it needs following.", a: "\"Which means two years later it comes up in a job interview.\" [then what]", bundle: 'pro' },
+      ]
+    },
+  ],
+  explainthings2: [
+    {
+      name: "Placing It",
+      guideFront: "Which piece are they missing?",
+      guideBack: "A possible answer, with the piece in brackets.",
+      description: "The three that place a thing rather than define it: When it comes up, Where it belongs, and Who it is for. Pt. 1 covers what it is, how it works and why it matters — these three answer the question underneath all of those, which is whether it has anything to do with the person listening.\n\nThe three options:\n1. When — the moment that calls for it. \"It's for when you've asked twice and nothing moved.\"\n2. Where — the setting it fits into. \"It sits after the draft, before anyone else reads it.\"\n3. Who — the group it is built for. \"If you cook most days, yes.\"\n\nMindset: a definition tells them what it is. These three tell them whether it is theirs.",
+      inputs: [
+        { q: "Someone asks what the escalation process is for.", a: "\"When you've asked twice and nothing has moved.\" [when]", bundle: 'pro' },
+        { q: "A friend is deciding whether to buy a food processor.", a: "\"If you cook most days, yes. Twice a week and it's a cupboard problem.\" [who]", bundle: 'pro' },
+        { q: "A colleague asks where the review step goes.", a: "\"After the draft, before it goes near the client.\" [where]", bundle: 'pro' },
+        { q: "Someone asks whether a running watch is worth it.", a: "\"Training for something, definitely. Just running, your phone does it.\" [who]", bundle: 'pro' },
+        { q: "Someone asks when they'd use a folding bike.", a: "\"When part of the journey is a train.\" [when]", bundle: 'pro' },
+        { q: "A friend asks where a mortar and pestle belongs.", a: "\"Kitchen, but by the spices rather than the pans.\" [where]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "All Six",
+      guideFront: "Which piece are they missing?",
+      guideBack: "A possible answer, with the piece in brackets.",
+      description: "The full menu — the three from Pt. 1 and the three from here. Any of the six can be the missing piece, and the skill is picking the one that is actually missing rather than starting at the beginning.\n\nThe six, with what each answers:\n1. What — what am I looking at? (Pt. 1)\n2. How — what do I do with it? (Pt. 1)\n3. Why — what problem does it solve? (Pt. 1)\n4. When — at what moment would I need it?\n5. Where — where does it fit?\n6. Who — is it for someone like me?\n\nMindset: six answers, one question at a time. Serving all six in order is how an explanation becomes a lecture.",
+      inputs: [
+        { q: "A neighbour asks what a podcast is.", a: "\"A radio show you download and listen to whenever.\" [what]", bundle: 'pro' },
+        { q: "They have one in their hand and ask what it is.", a: "\"It's for dark mornings, mostly.\" [when]", bundle: 'pro' },
+        { q: "Someone asks how the coffee machine works.", a: "\"Water at the back, pod in the top, press the big button once.\" [how]", bundle: 'pro' },
+        { q: "Someone asks why anyone bothers with a paper calendar.", a: "\"You see the whole month at once instead of just today.\" [why]", bundle: 'pro' },
+        { q: "A friend asks whether the course is aimed at them.", a: "\"It's for beginners. You'd spend two days on things you can already do.\" [who]", bundle: 'pro' },
+        { q: "Someone asks where the new step sits in the process.", a: "\"Straight after the draft, before anyone else sees it.\" [where]", bundle: 'pro' },
+        { q: "Someone asks what the form actually is, right before a meeting.", a: "\"It's the thing that gets you a room. That's all you need for now.\" [what]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "How Much To Say",
+      guideFront: "Which piece are they missing?",
+      guideBack: "A possible answer, with the piece in brackets.",
+      description: "A choice about size rather than content: the one-sentence version, the paragraph that adds the distinguishing detail, or the direct question about which they want. All three come from the same move — start short and add depth only when it is asked for.\n\nThe three options:\n1. One sentence — the correct first answer, every time. \"It's a shared to-do list.\"\n2. The distinguishing detail — the bit that makes it not the obvious thing. \"Every line has exactly one owner.\"\n3. Ask which they want — six words, and it saves both of you. \"Sentence or twenty minutes?\"\n\nMindset: length is a decision, not a habit. Decide it out loud if you cannot read the room.",
+      inputs: [
+        { q: "Someone asks what your job involves, in a corridor.", a: "\"Short version, I teach English.\" [one sentence]", bundle: 'pro' },
+        { q: "They asked a follow-up, which means they want more.", a: "\"The difference is that only one person can own each line.\" [the detail]", bundle: 'pro' },
+        { q: "You know far too much about the subject to guess.", a: "\"I can do this in a sentence or in twenty minutes. Which are you after?\" [ask]", bundle: 'pro' },
+        { q: "They have said \"right\" twice while you were talking.", a: "\"I'll stop there. Shout if you want the rest.\" [one sentence]", bundle: 'pro' },
+        { q: "A child asks how a fridge works.", a: "\"It moves the heat from inside to outside.\" [one sentence]", bundle: 'pro' },
+        { q: "Someone leans in and asks a specific question.", a: "\"That's the interesting bit, actually — so what happens is…\" [the detail]", bundle: 'pro' },
+      ]
+    },
+  ],
+  buildingastory: [
+    {
+      name: "The Three Parts",
+      guideFront: "Which part does the story need now?",
+      guideBack: "A possible line, with the part in brackets.",
+      description: "The spine of any told story: the opening that makes someone want the next sentence, the turn that makes it a story at all, and the ending that lets it finish. Everything else in the pack sits on top of these three.\n\nThe three options:\n1. Open It in One Sentence — start where it gets interesting. \"Right as I walked in…\"\n2. Name the Turn — the moment the ordinary changed. \"Then I realised I'd left it all at home.\"\n3. Land the Resolution — what you did and how it ended. \"In the end I just asked.\"\n\nIf a story is not working, one of these three is usually missing rather than badly done — most often the turn, and second most often the ending.\n\nMindset: setup, turn, ending. Everything else is decoration on a shape that has to be there.",
+      inputs: [
+        { q: "You are about to begin with two minutes of background.", a: "\"Skip to it: I locked myself out twice in one day.\" [opening]", bundle: 'pro' },
+        { q: "The events are told but nothing has turned yet.", a: "\"And then the lift stopped. Between floors, four of us in it.\" [turn]", bundle: 'pro' },
+        { q: "You have described the problem and never closed it.", a: "\"In the end I asked at the desk, and she had a spare all along.\" [resolution]", bundle: 'pro' },
+        { q: "The story is drifting and needs its first sentence back.", a: "\"I was so nervous I nearly didn't go in.\" [opening]", bundle: 'pro' },
+        { q: "You are about to trail off.", a: "\"…and that's how I ended up carrying a wardrobe through town.\" [resolution]", bundle: 'pro' },
+        { q: "The turn is a decision rather than an event.", a: "\"I had four seconds to decide whether to say anything.\" [turn]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Making It Land",
+      guideFront: "Which part does the story need now?",
+      guideBack: "A possible line, with the part in brackets.",
+      description: "The three that decide how the story is received rather than what it contains: the feeling in the telling, the takeaway at the end, and the judgement to pick something small enough to tell at all. These are the difference between a story that is followed and a story that is enjoyed.\n\nThe three options:\n1. Tell It With the Feeling In It — name it once, out loud. \"I was mortified.\"\n2. Say the Takeaway — if there is one. \"I check the bag now. Every time.\"\n3. Pick One Fast — small, recent, told now. \"Small one, but this happened Tuesday.\"\n\nThe rule that runs through all three is restraint: one feeling word, one takeaway or none at all, one moment rather than a period of your life.\n\nMindset: the shape gets you followed. These three get you listened to.",
+      inputs: [
+        { q: "The story is being told flat and you can hear it.", a: "\"I should say — I was properly panicking by this point.\" [feeling]", bundle: 'pro' },
+        { q: "You are about to attach a moral to something that has none.", a: "\"There's no lesson in it. It was just a strange day.\" [takeaway]", bundle: 'pro' },
+        { q: "Someone says \"food\" and you have three seconds.", a: "\"The first time I tried sushi. I was so nervous about it.\" [pick fast]", bundle: 'pro' },
+        { q: "The story ended with something you now do differently.", a: "\"I ring first now. Always.\" [takeaway]", bundle: 'pro' },
+        { q: "You are hunting for your best story while the moment passes.", a: "\"Nothing dramatic — this happened Tuesday and I'm still annoyed.\" [pick fast]", bundle: 'pro' },
+        { q: "You want to slow down at the important moment.", a: "\"And then there was a pause. Quite a long one.\" [feeling]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "All Six",
+      guideFront: "Which part does the story need now?",
+      guideBack: "A possible line, with the part in brackets.",
+      description: "The full set. A story usually needs one thing at a time: an opening when you are about to start with background, a turn when nothing has happened yet, an ending when you are trailing off, a feeling when it is being told flat, a takeaway when it has finished and there is something in it, and a fast choice when the moment is about to pass.\n\nThe six, with the cue for each:\n1. Open It in One Sentence — you are about to explain instead of start.\n2. Name the Turn — the events are told and nothing has changed.\n3. Land the Resolution — you are about to say \"anyway, yeah\".\n4. Tell It With the Feeling In It — it is accurate and flat.\n5. Say the Takeaway — it has ended and there is something in it.\n6. Pick One Fast — the moment is going and you are still choosing.\n\nMindset: six parts, one at a time. Nobody assembles a story in order in real conversation — you supply whichever piece is missing.",
+      inputs: [
+        { q: "You are three sentences into background and nothing has happened.", a: "\"Right — so I got an email yesterday from someone I last saw in 2009.\" [opening]", bundle: 'pro' },
+        { q: "The story has events but no moment where it changed.", a: "\"That was when she said she'd already told them.\" [turn]", bundle: 'pro' },
+        { q: "You have had the laugh and are mumbling the ending.", a: "\"He still says it wasn't his fault.\" [resolution]", bundle: 'pro' },
+        { q: "You are reporting rather than telling.", a: "\"I was so relieved I sat down on the pavement.\" [feeling]", bundle: 'pro' },
+        { q: "The story has finished and there is something in it.", a: "\"I'd been treating a scheduling problem as if it were personal.\" [takeaway]", bundle: 'pro' },
+        { q: "It is nearly your turn in a round of stories.", a: "\"I've got one. It's not as good as yours but it's shorter.\" [pick fast]", bundle: 'pro' },
+        { q: "The ending is unsatisfying and you want to own it.", a: "\"And then nothing happened. I've built that up far too much.\" [resolution]", bundle: 'pro' },
+      ]
+    },
+  ],
+  reframing: [
+    {
+      name: "The Four Types",
+      guideFront: "Which reframe fits this one?",
+      guideBack: "A possible reframe, with the type in brackets.",
+      description: "The core set: positive, context, meaning and humorous. Each changes something different — the upside, the setting, the conclusion, or the scale — while leaving the facts alone.\n\nThe four options:\n1. Positive — the true upside that was overlooked. \"We found out in three months, not a year.\"\n2. Context — the same behaviour in a different room. \"Stubborn in a queue, ideal in a negotiation.\"\n3. Meaning — the same event, a different conclusion. \"Or she's had a terrible week.\"\n4. Humorous — the same thing at its actual size. \"You knocked over a glass.\"\n\nChoose by what is wrong with the current frame: a missing upside, a missing setting, an invented conclusion, or a scale error.\n\nMindset: the facts never move. Only the frame around them.",
+      inputs: [
+        { q: "\"We've wasted three months on this.\"", a: "\"Or we found out in three months rather than in a year.\" [positive]", bundle: 'pro' },
+        { q: "\"You're too stubborn.\"", a: "\"In a queue, maybe. In a negotiation it's exactly what you'd want.\" [context]", bundle: 'pro' },
+        { q: "\"She didn't reply, so she's annoyed with me.\"", a: "\"Or she's had a week from hell and hasn't opened anything.\" [meaning]", bundle: 'pro' },
+        { q: "\"I've completely ruined the evening.\"", a: "\"You knocked over one glass. There is no permanent record.\" [humorous]", bundle: 'pro' },
+        { q: "\"He's too slow for this team.\"", a: "\"Slow in a sprint, careful in an audit. Which are we doing?\" [context]", bundle: 'pro' },
+        { q: "\"The project got cancelled.\"", a: "\"It frees up the whole autumn, which you didn't have before.\" [positive]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "When It Is About You",
+      guideFront: "Which reframe fits this one?",
+      guideBack: "A possible reframe, with the type in brackets.",
+      description: "The two moves for something aimed at you: renaming the label somebody has put on you, and changing the meaning you have put on yourself. Both are safe in a way the others are not, because the frame you are changing is your own.\n\nThe two options:\n1. Reframe What They Said About You — accept the behaviour, decline the verdict. \"I'd call it particular.\"\n2. The Meaning Reframe, turned inwards — the conclusion you drew about yourself. \"Nervous means it mattered.\"\n\nArguing with a label keeps you inside it. Renaming it moves the conversation to your word, which is a much better place to be standing.\n\nMindset: agree with the observation, disagree with the verdict. Almost nobody argues with that.",
+      inputs: [
+        { q: "\"You're always so serious.\"", a: "\"I take the things that matter seriously. I'd rather be that way round.\" [label]", bundle: 'pro' },
+        { q: "\"I was nervous, so I wasn't ready.\"", a: "\"Nervous usually means it mattered. Different thing entirely.\" [meaning]", bundle: 'pro' },
+        { q: "\"You worry too much.\"", a: "\"I plan for things going wrong. Dull, and it's saved us twice.\" [label]", bundle: 'pro' },
+        { q: "\"I got one wrong, so I'm bad at this.\"", a: "\"One wrong. 'Bad at this' is a much bigger claim than the evidence supports.\" [meaning]", bundle: 'pro' },
+        { q: "\"You're too quiet in meetings.\"", a: "\"I say things once I've thought about them. That's on purpose.\" [label]", bundle: 'pro' },
+        { q: "\"Nobody commented, so it must have been bad.\"", a: "\"Or it was fine, and people say almost nothing about fine.\" [meaning]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Should You At All",
+      guideFront: "Which reframe fits this one?",
+      guideBack: "A possible reframe, with the type in brackets.",
+      description: "The two moves that decide whether a reframe belongs in this moment: offering it properly, and recognising when the answer is no. These matter more than the four types, because a well-chosen reframe delivered at the wrong moment does damage that a badly chosen one delivered well does not.\n\nThe two options:\n1. Offer It, Don't Impose It — acknowledge, ask, hold it loosely. \"Want another angle, or not right now?\"\n2. Know When Not To — some things are just bad. \"I'm not going to try to find an upside for this.\"\n\nThe test is simple and worth memorising: has the feeling been heard yet, and would the new reading require leaving something out?\n\nMindset: acknowledge first, offer second, and be willing to have no reframe at all.",
+      inputs: [
+        { q: "A friend is upset and you can see another reading.", a: "\"That sounds genuinely rubbish. Want another angle, or not right now?\" [offer]", bundle: 'pro' },
+        { q: "Something genuinely bad has just happened to them.", a: "\"That's just bad. I'm not going to find an upside for it.\" [don't]", bundle: 'pro' },
+        { q: "You are about to say \"look on the bright side\".", a: "\"That's a horrible way to find out. There is one other reading, if you want it.\" [offer]", bundle: 'pro' },
+        { q: "They are angry about something that was actually unfair.", a: "\"You're allowed to be furious. It was unfair.\" [don't]", bundle: 'pro' },
+        { q: "They have rejected your reframe.", a: "\"Fair enough. It was just how it looked from here.\" [offer]", bundle: 'pro' },
+        { q: "They want company rather than perspective.", a: "\"I'll just be annoyed about it with you, then.\" [don't]", bundle: 'pro' },
       ]
     },
   ],

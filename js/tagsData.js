@@ -268,6 +268,27 @@ const packTags = {
   showunderstanding2: [
     'listening', 'understanding', 'checking', 'connecting', 'sharing'
   ],
+  setupquestion: [
+    'conversation', 'starting', 'connecting'
+  ],
+  givingcounterexamples: [
+    'examples', 'disagreeing', 'nuance', 'evidence', 'discussion'
+  ],
+  discussing: [
+    'discussion', 'opinions', 'listening', 'disagreement', 'keeping it civil'
+  ],
+  storybanter: [
+    'humour', 'banter', 'improvisation', 'playfulness', 'building together'
+  ],
+  explainthings2: [
+    'explaining', 'being clear', 'teaching', 'context', 'everyday things'
+  ],
+  buildingastory: [
+    'storytelling', 'structure', 'telling it well', 'thinking on your feet', 'emotion'
+  ],
+  reframing: [
+    'reframing', 'perspective', 'handling criticism', 'resilience', 'conversation'
+  ],
 };
 
 // ─── TOPICS ──────────────────────────────────────────────────────────
@@ -296,7 +317,7 @@ const packTags = {
 // emotionalboundaries merged into emotions and boundaries.
 const TOPICS = [
   // ── Getting a conversation going ──────────────────────────────────
-  { id: 'startingconversations', title: 'Starting Conversations',        packs: ['startingconnecting', 'setupstatement', 'firststrategies', 'startingconversations1', 'startingconversations4', 'startingconversations2', 'startingconversations3'] },
+  { id: 'startingconversations', title: 'Starting Conversations',        packs: ['startingconnecting', 'setupstatement', 'firststrategies', 'startingconversations1', 'startingconversations4', 'startingconversations2', 'startingconversations3', 'setupquestion'] },
   { id: 'questions',             title: 'Questions & Curiosity',         packs: ['exploringatopic', 'deepquestions'] },
   { id: 'flowtransitions',       title: 'Flow & Transitions',            packs: ['conversational', 'transitions', 'changingtopics', 'reactingtounexpectedstatements'] },
   { id: 'endingconversations',   title: 'Ending Conversations',          packs: ['endingconversations'] },
@@ -306,8 +327,8 @@ const TOPICS = [
   { id: 'depth',                 title: 'Depth & Connection',            packs: ['conversationaldepth', 'supportingconversations', 'talkingaboutyourself'] },
 
   // ── Holding the floor ─────────────────────────────────────────────
-  { id: 'storytelling',          title: 'Storytelling',                  packs: ['storytelling', 'storytellingwiththesixws', 'storiesinconversation'] },
-  { id: 'explaining',            title: 'Explaining & Describing',       packs: ['describethings', 'explainthings', 'givingexamples'] },
+  { id: 'storytelling',          title: 'Storytelling',                  packs: ['storytelling', 'storytellingwiththesixws', 'storiesinconversation', 'buildingastory'] },
+  { id: 'explaining',            title: 'Explaining & Describing',       packs: ['describethings', 'explainthings', 'givingexamples', 'explainthings2'] },
   { id: 'interruptions',         title: 'Interruptions & Speaking Up',   packs: ['speakingupingroups', 'howtointerrupt', 'handleinterruptions'] },
 
   // ── Giving and taking it ──────────────────────────────────────────
@@ -316,16 +337,16 @@ const TOPICS = [
   { id: 'repair',                title: 'Repair & Apology',              packs: ['apologizing2', 'apologizing1'] },
 
   // ── Standing your ground ──────────────────────────────────────────
-  { id: 'opinions',              title: 'Opinions & Argumentation',      packs: ['influenceframing', 'agreeing', 'disagreeing'] },
+  { id: 'opinions',              title: 'Opinions & Argumentation',      packs: ['influenceframing', 'agreeing', 'disagreeing', 'givingcounterexamples', 'discussing'] },
   { id: 'persuasion',            title: 'Persuasion & Negotiation',      packs: ['influenceframing', 'persuasionandinfluence1', 'persuasionandinfluence2', 'negotiationandcompromise'] },
   { id: 'assertiveness',         title: 'Assertiveness & Pressure',      packs: ['assertive', 'brokenrecord', 'respondingtopassiveaggression'] },
   { id: 'boundaries',            title: 'Asking & Saying No',            packs: ['playfulrefusals', 'thehappyno', 'theregretfulno', 'makingrequests', 'sayingno'] },
 
   // ── The hard end ──────────────────────────────────────────────────
-  { id: 'emotions',              title: 'Emotions & Regulation',         packs: ['emotionlabellingandregulation', 'conflictemotions', 'praxdread4'] },
+  { id: 'emotions',              title: 'Emotions & Regulation',         packs: ['emotionlabellingandregulation', 'conflictemotions', 'praxdread4', 'reframing'] },
 
   // ── Lightness ─────────────────────────────────────────────────────
-  { id: 'humour',                title: 'Humour & Banter',               packs: ['humour', 'teasing', 'selfhumour', 'humourpractise', 'playfulrefusals', 'rolebasedhumour', 'responsivehumour'] },
+  { id: 'humour',                title: 'Humour & Banter',               packs: ['humour', 'teasing', 'selfhumour', 'humourpractise', 'playfulrefusals', 'rolebasedhumour', 'responsivehumour', 'storybanter'] },
 
   // ── Placeholders: no material yet, hidden below Complete ──────────
   { id: 'bodyvoice',             title: 'Body Language & Voice',         packs: [] },

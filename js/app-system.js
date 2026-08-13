@@ -243,6 +243,7 @@ applyInputCounterVisibility();
     // entries are written by hand for the same reason as the ones above.
     listeningthroughquestions: { label: 'Listening Through Questions', minLevel: 'program' }, // Listening in Depth, Part 2
     showunderstanding2: { label: 'Show Understanding — Pt. 2', minLevel: 'program' },         // Listening in Depth, Part 3
+    storybanter: { label: 'Story Banter', minLevel: 'program' },                              // Humour, Part 3
     masculine1: { label: 'The Masculine Blueprint – Part 1', minLevel: 'complete' },
     masculine2: { label: 'The Masculine Blueprint – Part 2', minLevel: 'complete' },
     masculine3: { label: 'The Masculine Blueprint – Part 3', minLevel: 'complete' },
@@ -265,6 +266,12 @@ applyInputCounterVisibility();
     praxdread3: { label: 'Praxeology Dread 03 – Enforcing Expectations', minLevel: 'complete' },
     praxdread4: { label: 'Praxeology Dread 04 – Emotional Mechanics', minLevel: 'complete' },
     praxdread5: { label: 'Praxeology Dread 05 – The Roadmap to Agency', minLevel: 'complete' },
+    setupquestion: { label: 'Setup Question', minLevel: 'pro' },
+    givingcounterexamples: { label: 'Giving Counter Examples', minLevel: 'pro' },
+    discussing: { label: 'Discussing', minLevel: 'pro' },
+    explainthings2: { label: 'Explain Things — Pt. 2', minLevel: 'extended' },
+    buildingastory: { label: 'Building a Story', minLevel: 'extended' },
+    reframing: { label: 'Reframing', minLevel: 'extended' },
   };
 
   // ── PROGRAM_CONFIG (v1.26.81) ─────────────────────────────────────────
@@ -1802,6 +1809,104 @@ const BUNDLE_DEFS = {
     },
   ],
   showunderstanding2: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  setupquestion: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  givingcounterexamples: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  discussing: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  storybanter: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  explainthings2: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  buildingastory: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  reframing: [
     {
       id: 'free',
       tier: 'free',

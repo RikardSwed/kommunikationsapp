@@ -4815,4 +4815,665 @@ const memorizeCollections = {
       ]
     },
   ],
+  setupquestion: [
+    {
+      name: "Core Idea",
+      description: "The concept behind setup questions and the five types.",
+      cards: [
+        { q: "What is a setup question?", a: "You ask the other person a question about something you want to talk about, listen to their answer, and then give your own answer to the same question.", bundle: 'free' },
+        { q: "How is it different from a setup statement?", a: "Only the order. A setup statement says your bit first and then asks; a setup question asks first and answers afterwards.", bundle: 'free' },
+        { q: "What are the five types of setup question?", a: "Opinion, Purpose, Status, Action, Background.", bundle: 'free' },
+        { q: "What is the step people drop?", a: "Answering it themselves. Without that it is an interview, not a conversation.", bundle: 'free' },
+        { q: "What do you do when a question gets \"not much\"?", a: "Narrow it rather than repeat it — \"are you reading anything?\" is answerable where \"what's new?\" is not.", bundle: 'pro' },
+        { q: "What is the through-line of all five types?", a: "Each one asks about something you also want to talk about, so you always have your own answer ready.", bundle: 'pro' },
+        { q: "How big should your own answer be?", a: "Roughly the size of theirs. Much shorter reads as a brush-off; much longer takes the floor.", bundle: 'pro' },
+        { q: "What do you do when a conversation stops after one good exchange?", a: "Build the next question out of their answer rather than reaching for a new type.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Opinion Question",
+      description: "The theory behind the Opinion type.",
+      cards: [
+        { q: "What is an Opinion question?", a: "You ask what they think about something, then say what you think.", bundle: 'free' },
+        { q: "When does an Opinion question fit best?", a: "When there is something present to have a view on — a film, the food, the venue, the event itself.", bundle: 'free' },
+        { q: "Why ask before giving your own view?", a: "It reads as interest rather than an announcement, and they answer without having to agree with you first.", bundle: 'pro' },
+        { q: "Is a closed opinion question wasted?", a: "No. \"Did you like it?\" gets a yes, and a yes is somewhere to start.", bundle: 'pro' },
+        { q: "What makes an opinion question easy to answer?", a: "That you are both looking at the thing. Nobody has to remember or invent anything.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Purpose Question",
+      description: "The theory behind the Purpose type.",
+      cards: [
+        { q: "What is a Purpose question?", a: "You ask why they are here or what they are after, then say why you came.", bundle: 'free' },
+        { q: "Why is it the safest of the five?", a: "Everybody in the room has a reason to be there, so nobody has to invent anything to answer.", bundle: 'free' },
+        { q: "Where does a Purpose question work best?", a: "Anywhere people have gathered on purpose — a class, a club, a course, an event, a shared table.", bundle: 'pro' },
+        { q: "What is the most useful follow-up to a purpose answer?", a: "The \"nearly\" — what almost stopped them coming. It is where the real answer usually is.", bundle: 'pro' },
+        { q: "Why does it work on a whole group?", a: "Everyone present shares the reason, so anybody at the table can pick it up.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Status Question",
+      description: "The theory behind the Status type.",
+      cards: [
+        { q: "What is a Status question?", a: "You ask how they are right now — properly, not as a greeting — and then answer it yourself.", bundle: 'free' },
+        { q: "How do you stop it getting the ritual answer?", a: "Attach it to the moment or to a specific thing, and answer it yourself if they give you \"fine\".", bundle: 'free' },
+        { q: "Why does your own answer matter most with this type?", a: "They have just been honest about their state. If nothing comes back, they gave something and got nothing.", bundle: 'pro' },
+        { q: "What does \"fine, thanks\" actually mean?", a: "Usually that they answered the greeting rather than the question — not that the door is shut.", bundle: 'pro' },
+        { q: "What is the way back in after a ritual answer?", a: "Your own honest answer. Going first is what tells them the question was real.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Action Question",
+      description: "The theory behind the Action type.",
+      cards: [
+        { q: "What is an Action question?", a: "You ask what they are doing or working on, then say what you are in the middle of.", bundle: 'free' },
+        { q: "Why narrow the question?", a: "\"What's new?\" is a blank page; \"are you reading anything?\" is answerable in four words.", bundle: 'free' },
+        { q: "Why is Action the best repair for a stalled opener?", a: "A concrete activity is the easiest thing in the world to answer, even for someone who has gone blank.", bundle: 'pro' },
+        { q: "What does \"not much\" usually tell you?", a: "That the question was too big to answer, not that they do not want to talk.", bundle: 'pro' },
+        { q: "How do you show the size of answer you meant?", a: "Give a small concrete one of your own first.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Background Question",
+      description: "The theory behind the Background type.",
+      cards: [
+        { q: "What is a Background question?", a: "You ask where they have come from or what happened before this, then say the same about yourself.", bundle: 'free' },
+        { q: "Why does it produce more than a word?", a: "Everybody came from somewhere, so the honest answer is usually a small story.", bundle: 'free' },
+        { q: "Which version works best at a party or a wedding?", a: "\"How do you know everyone here?\" — the answer is always a story, and it is always about someone in the room.", bundle: 'pro' },
+        { q: "What do you do with the story you get?", a: "Follow one detail, then match it with a piece of your own at the same size.", bundle: 'pro' },
+        { q: "Why is it the best type for deepening rather than bouncing?", a: "It produces a story rather than a word, and a story has somewhere to go.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Choosing and Repairing",
+      description: "How to pick a type, and what to do when one does not land.",
+      cards: [
+        { q: "How do you choose which of the five to ask?", a: "By what the situation makes obvious — something present suggests Opinion, a gathering suggests Purpose, a mood suggests Status.", bundle: 'free' },
+        { q: "Is there a wrong question?", a: "No, only a more natural one. The bigger mistake is not answering it yourself.", bundle: 'free' },
+        { q: "What is the fix when it has become an interview?", a: "Not a better question — your own answer to the one you already asked.", bundle: 'pro' },
+        { q: "What do you do with a question that lands on a whole group?", a: "Aim it at one person by name, or answer it yourself first so the table has a shape to copy.", bundle: 'pro' },
+        { q: "What should you never do when a question stalls?", a: "Ask the same one again in different words. Go first yourself, then make it narrower.", bundle: 'pro' },
+      ]
+    },
+  ],
+  givingcounterexamples: [
+    {
+      name: "Core Idea",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "The concept behind counter-examples and the five types.",
+      cards: [
+        { q: "What is a counter-example?", a: "A case that shows a general statement is not always true — it takes the word \"always\" out without taking the claim away.", bundle: 'free' },
+        { q: "What are the five types?", a: "Your own exception, one you have seen, an imagined case where it breaks, a known exception, and what the numbers say.", bundle: 'free' },
+        { q: "What is the order that makes it land?", a: "Concede first, then the exception, then stop.", bundle: 'free' },
+        { q: "What does one exception actually prove?", a: "That the claim is a tendency rather than a rule. It does not make the claim false.", bundle: 'free' },
+        { q: "What turns a counter-example into an argument?", a: "Leaving out the concession, or carrying on after they have already narrowed their claim.", bundle: 'pro' },
+        { q: "When should you not give one at all?", a: "When the general statement is really about someone in the room — then it is a comment about them, however it is phrased.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Your Own Exception",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "The theory behind the personal type.",
+      cards: [
+        { q: "What is a personal counter-example?", a: "The time it did not work that way for you — one occasion, told small.", bundle: 'free' },
+        { q: "Why is it strong?", a: "It happened, it is yours, and nobody can tell you it did not.", bundle: 'free' },
+        { q: "What has to come before it?", a: "The concession — say the general case is usually right, then give your exception.", bundle: 'free' },
+        { q: "Which version is the most disarming?", a: "The time you believed the claim yourself, and then found out otherwise.", bundle: 'pro' },
+        { q: "How big should the incident be?", a: "One occasion, small and specific. A summary of ten is weaker than one that is dated.", bundle: 'pro' },
+        { q: "What do you do when they say your case is not typical?", a: "Agree that it is one case, and say what one case shows — that the claim is a tendency, not a rule.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The One You Have Seen",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "The theory behind the observed type.",
+      cards: [
+        { q: "What is an observed counter-example?", a: "A case you have watched happen — a person, a place, a situation — rather than one from your own life.", bundle: 'free' },
+        { q: "What does it have to be?", a: "Recognisable. An example nobody can picture is just a second opinion.", bundle: 'free' },
+        { q: "Name two kinds.", a: "Any two of: someone you have watched, a place where it works differently, the common counter-case most people have seen.", bundle: 'free' },
+        { q: "When is this the better choice than your own experience?", a: "When your own life is not the subject, or when you barely know the person you are talking to.", bundle: 'pro' },
+        { q: "What is the common counter-case?", a: "The exception nearly everyone has seen for themselves — \"everyone knows one person who revises nothing and does fine\".", bundle: 'pro' },
+        { q: "Why is it easier to accept than a personal one?", a: "They can check it against their own experience instead of taking your word for it.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Where It Would Break",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "The theory behind the imagined type.",
+      cards: [
+        { q: "What is an imagined counter-example?", a: "A case you invent to test whether the rule holds — \"say someone works nights\".", bundle: 'free' },
+        { q: "What must you always do with it?", a: "Mark it as imagined. Presenting an invention as something that happened cannot be repaired.", bundle: 'free' },
+        { q: "Name two ways to build one.", a: "Any two of: the person the rule forgets, pushing it to the edge, turning it round onto them.", bundle: 'free' },
+        { q: "When is it the right type?", a: "When you have no real case, and it is more honest to test the rule than to dress a guess up as experience.", bundle: 'pro' },
+        { q: "What is its advantage over a real case?", a: "Nobody can argue about whether it is representative, because you never claimed it was real.", bundle: 'pro' },
+        { q: "Which claims does it suit best?", a: "Rules stated for everybody — it finds the person the rule forgot.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Known Exception",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "The theory behind the shared type.",
+      cards: [
+        { q: "What is a known counter-example?", a: "A case you both already recognise — a public event, a well-known person, a familiar story.", bundle: 'free' },
+        { q: "How do you know it was not shared?", a: "You had to explain it.", bundle: 'free' },
+        { q: "Why is it the fastest of the five?", a: "You only have to point at it. Recognition does the work that explanation would.", bundle: 'free' },
+        { q: "What is the second caution with it?", a: "Describe what actually happened rather than putting words into a real person's mouth.", bundle: 'pro' },
+        { q: "When is this type the safest choice?", a: "With people you barely know, because it says nothing about your own life or theirs.", bundle: 'pro' },
+        { q: "What can you use when there is no real public case?", a: "A story that carries the idea — a fable or a familiar plot — as long as you do not present it as evidence.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "What the Numbers Say",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "The theory behind the statistical type.",
+      cards: [
+        { q: "When is a number safe to use as a counter-example?", a: "When you actually know it and can say where it came from.", bundle: 'free' },
+        { q: "What do you do if you have no figure?", a: "Say so, and use a different type.", bundle: 'free' },
+        { q: "Name two honest ways to use a number.", a: "Any two of: something you counted yourself, a figure with its source attached, a hedged estimate marked as one.", bundle: 'free' },
+        { q: "Why is an invented figure worse than none?", a: "When it is checked, everything else you said goes with it.", bundle: 'pro' },
+        { q: "What does \"tens, not hundreds\" do?", a: "Gives the order of magnitude when the exact number does not matter — and it is often the number that changes the decision.", bundle: 'pro' },
+        { q: "What is the better sentence than a made-up statistic?", a: "\"I don't have a figure, but I know one person it wasn't true for.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  discussing: [
+    {
+      name: "Core Idea",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "The two halves and what holds them together.",
+      cards: [
+        { q: "What are the two halves of a discussion?", a: "Me-Focus — saying what you think and why. You-Focus — taking in what they think.", bundle: 'free' },
+        { q: "What is the skill the pack actually trains?", a: "The balance between the two, kept up over a longer stretch rather than in a single exchange.", bundle: 'free' },
+        { q: "What happens if both people only do Me-Focus?", a: "Two monologues delivered alternately.", bundle: 'free' },
+        { q: "What happens if both people only do You-Focus?", a: "Nothing to discuss — nobody has put a position on the table.", bundle: 'pro' },
+        { q: "Does a discussion have to end in agreement?", a: "No. The outcome to aim for is that both understand the question better, which is compatible with still disagreeing.", bundle: 'pro' },
+        { q: "How is this different from Agreeing and Disagreeing?", a: "Those are single moves. This is keeping the whole thing going for ten minutes.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Say What You Think",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "The theory behind putting a position on the table.",
+      cards: [
+        { q: "Why say \"I think\" rather than stating it as fact?", a: "An opinion presented as a fact invites a fight about the fact; presented as an opinion it invites a conversation about the subject.", bundle: 'free' },
+        { q: "What is the commonest reason a discussion stalls politely?", a: "Nobody has actually said what they think, so there is nothing to respond to.", bundle: 'free' },
+        { q: "What does saying the weight of your view do?", a: "Tells them how hard to push back — \"I lean that way, not strongly\" is useful information.", bundle: 'pro' },
+        { q: "Is \"I don't know what I think\" a position?", a: "Yes, and an honest one. It is different from avoiding the question.", bundle: 'pro' },
+        { q: "Why is owning it harder to argue with?", a: "You are the authority on what you think. Nobody can correct you about it.", bundle: 'pro' },
+        { q: "What is the risk of dressing a preference as a principle?", a: "It makes the disagreement bigger than it is, and a preference is a perfectly good reason anyway.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Give the Reason Behind It",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "The theory behind saying why.",
+      cards: [
+        { q: "What is a bare opinion, and what is a reason?", a: "A wall and a door.", bundle: 'free' },
+        { q: "How many reasons should you give?", a: "One, plainly. Three sounds like a case, and then they look for the weakest.", bundle: 'free' },
+        { q: "What often turns out to be true once both reasons are visible?", a: "That you want the same thing and differ about one step.", bundle: 'pro' },
+        { q: "What is the difference from Giving Examples?", a: "An example illustrates; a reason explains why you hold the view.", bundle: 'pro' },
+        { q: "Is \"partly I just prefer it\" a legitimate reason?", a: "Yes, and saying so is stronger than dressing it up as something else.", bundle: 'pro' },
+        { q: "What is repeating your conclusion more firmly?", a: "A volume control, not an argument.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Say Their View Back",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "The theory behind restating a position.",
+      cards: [
+        { q: "What does saying their view back do?", a: "Proves you were listening, and catches the misunderstanding that half of all disagreements turn out to be.", bundle: 'free' },
+        { q: "What does someone do when they feel unheard?", a: "Repeats the same point, usually louder.", bundle: 'free' },
+        { q: "What is the strongest version of it?", a: "Naming what they are actually protecting, not just their position.", bundle: 'pro' },
+        { q: "What if they correct your version?", a: "That correction is the most useful sentence in the discussion.", bundle: 'pro' },
+        { q: "How does it protect you?", a: "You never spend four minutes disagreeing with something they never claimed.", bundle: 'pro' },
+        { q: "Does it mean you agree?", a: "No. You can restate a position accurately and then disagree with all of it.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ask What They Mean",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "The theory behind clarifying.",
+      cards: [
+        { q: "When should you ask a clarifying question?", a: "Before you respond to anything ambiguous — it takes six words and saves four minutes.", bundle: 'free' },
+        { q: "What do general words hide?", a: "Specific disagreements. Two people can use the same sentence and mean different things.", bundle: 'free' },
+        { q: "What is the difference between a question and a cross-examination?", a: "\"Do you mean all of it, or some?\" is curiosity. \"So you're saying ALL of it?\" is a trap in the same words.", bundle: 'pro' },
+        { q: "Name two kinds of clarifying question.", a: "Any two of: narrow the word, ask for a specific case, check the strength of the view.", bundle: 'pro' },
+        { q: "Why ask for a case?", a: "An abstraction becomes discussable the moment it has an example in it.", bundle: 'pro' },
+        { q: "Why check the strength?", a: "People rarely mean the extreme version, and you would argue differently against each.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Let Them Finish",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "The theory behind not interrupting.",
+      cards: [
+        { q: "Why let them finish, beyond politeness?", a: "The last quarter is where the qualification lives — the \"although\" that would have made your interruption unnecessary.", bundle: 'free' },
+        { q: "What does an interruption cost?", a: "The point gets made again, longer, and now they have two things to say.", bundle: 'free' },
+        { q: "What is the hard part of it?", a: "Not the silence — what happens in your head during it. Composing a reply is queueing, not listening.", bundle: 'pro' },
+        { q: "What is a pause mid-sentence?", a: "Thinking. Not an invitation.", bundle: 'pro' },
+        { q: "You interrupted anyway. What repairs it?", a: "\"Sorry, finish yours\" — it costs nothing and repairs it completely.", bundle: 'pro' },
+        { q: "What is the test that you were listening?", a: "Whether you could summarise their point, not whether you agreed with it.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Keep the Temperature Down",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "The theory behind staying calm, in moves rather than advice.",
+      cards: [
+        { q: "Why does heat matter in a discussion?", a: "Two annoyed people stop hearing each other's reasons, so everything after that point is wasted however good the arguments are.", bundle: 'free' },
+        { q: "What are the reliable signals?", a: "Physical ones — talking faster, talking over, the same point getting louder.", bundle: 'free' },
+        { q: "Name the three moves that work.", a: "Name it jointly as \"we\", slow yourself visibly, and split the hot part off from the rest.", bundle: 'pro' },
+        { q: "What should you never do?", a: "Tell the other person to calm down. It has never once worked.", bundle: 'pro' },
+        { q: "Why \"we\" rather than \"you\"?", a: "\"You're getting heated\" is an accusation and adds heat. \"We're getting sharp\" is an observation you are inside.", bundle: 'pro' },
+        { q: "What is the goal to hold on to?", a: "Still be talking in ten minutes. Winning an exchange with somebody you will see tomorrow is not winning.", bundle: 'pro' },
+      ]
+    },
+  ],
+  storybanter: [
+    {
+      name: "The Arc",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "The six beats of a banter story, and what each one is for.",
+      cards: [
+        { q: "What are the six beats of a banter story?", a: "Trigger, invitation, exaggerated response, building together, escalating, and the wrap-up.", bundle: 'free' },
+        { q: "What kind of thing should the trigger be?", a: "Small, everyday and true — a real frustration or observation. It is the only realistic line in the whole thing.", bundle: 'free' },
+        { q: "What is the invitation?", a: "A playful open question from the other person that hands the story back. \"So what are you going to do instead?\"", bundle: 'free' },
+        { q: "Why must the trigger stay small?", a: "The absurdity is built from it. If the opening line is already ridiculous there is nowhere to escalate to.", bundle: 'pro' },
+        { q: "What is the wrap-up for?", a: "Stopping while it is still funny — and it is a deliberate move, not the story running out.", bundle: 'pro' },
+        { q: "Whose story is it?", a: "Both people's. Nobody owns it, and the measure is whether it kept going, not who got the laughs.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Yes, And",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "The theory behind accepting and adding.",
+      cards: [
+        { q: "What does \"yes, and\" mean in practice?", a: "Accept whatever they added without questioning it, and put one thing on top.", bundle: 'free' },
+        { q: "What is wrong with \"yes, but\"?", a: "It is a rejection wearing agreement's clothes, and everybody hears it.", bundle: 'free' },
+        { q: "What is blocking?", a: "Answering an invented detail with a fact — \"that wouldn't happen\" — which stops the story dead.", bundle: 'pro' },
+        { q: "How do you repair a block?", a: "Take it back lightly and accept the idea twice as hard. The repair is usually funnier than the original turn.", bundle: 'pro' },
+        { q: "Does anything in the story have to be possible?", a: "No. The only rule is that you build on what you were given.", bundle: 'pro' },
+        { q: "What is the smallest reliable build?", a: "One added detail. It does not have to be clever.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "What If",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "The theory behind adding a complication.",
+      cards: [
+        { q: "What does a \"what if\" add?", a: "A problem — a threat to the plan rather than more of the plan.", bundle: 'free' },
+        { q: "Why does a story need a problem?", a: "Two people building a pleasant afternoon run out in about four turns. A problem gives you both something to be funny about.", bundle: 'free' },
+        { q: "Where should the complication be aimed?", a: "At the situation. A \"what if\" about the person is a dig with a question mark on it.", bundle: 'pro' },
+        { q: "Name two kinds of complication.", a: "Any two of: someone finds out, the plan works too well, something ordinary goes wrong.", bundle: 'pro' },
+        { q: "Why is \"the plan works too well\" funny?", a: "Success is a more surprising complication than failure, and it usually traps the character in something.", bundle: 'pro' },
+        { q: "What is the tell that a story needs one?", a: "The last two or three turns were all agreeable.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Make It Bigger",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "The theory behind exaggeration in a shared story.",
+      cards: [
+        { q: "What is exaggeration doing here?", a: "Inflating what was just said past the point of sense — the gap between the two is the joke.", bundle: 'free' },
+        { q: "How big is big enough?", a: "If you are wondering whether it is too much, it is not enough.", bundle: 'free' },
+        { q: "Why is a cautious exaggeration a problem?", a: "It sounds like a correction rather than play.", bundle: 'pro' },
+        { q: "Name three things you can inflate.", a: "The number, the time, and the stakes.", bundle: 'pro' },
+        { q: "How is this different from exaggeration in Responsive Humour?", a: "There it is aimed at a real sentence someone meant. Here it is aimed at a shared invention.", bundle: 'pro' },
+        { q: "Why is a huge exaggeration safe?", a: "Nobody could mistake it for a real claim about anyone.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Bring Someone In",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "The theory behind adding characters.",
+      cards: [
+        { q: "What does a new character give the story?", a: "A reaction — and a reaction is the most reliable source of comedy available.", bundle: 'free' },
+        { q: "Which characters work best?", a: "People who would obviously never be involved — a neighbour, a delivery driver, someone's grandmother.", bundle: 'free' },
+        { q: "Why is an animal or an object the safest character?", a: "Nobody can be offended on its behalf.", bundle: 'pro' },
+        { q: "What does a new person do to a story that is running out?", a: "Restarts it for free — they can want something, disapprove of something, or arrive at the wrong moment.", bundle: 'pro' },
+        { q: "What should you do with a character the other person introduced?", a: "Ask about them rather than moving on. \"Is the dog enjoying maths?\" is a whole turn.", bundle: 'pro' },
+        { q: "When should you bring someone in?", a: "Before the story runs out, not after.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Then What Happens",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "The theory behind following the consequence.",
+      cards: [
+        { q: "What is the consequence technique?", a: "Following the last idea to what must now happen because of it, rather than inventing something new.", bundle: 'free' },
+        { q: "Why is it the best move when you are stuck?", a: "It needs no idea of your own — their last line already contains the next one.", bundle: 'free' },
+        { q: "Which is usually funnier, the immediate result or the delayed one?", a: "The delayed one — \"and two years later it comes up in a job interview\".", bundle: 'pro' },
+        { q: "What does a chain of consequences do for the story?", a: "Makes it feel like a story rather than a list of jokes, because each turn is caused by the one before it.", bundle: 'pro' },
+        { q: "What should you ask yourself when you go blank?", a: "What happens next — not what would be funny.", bundle: 'pro' },
+        { q: "How can a consequence tie the story together?", a: "By landing on a detail from several turns earlier, which is the most satisfying ending available.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Solve It Ridiculously",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "The theory behind the absurd solution.",
+      cards: [
+        { q: "What is an absurd solution?", a: "A fix that could not possibly work, delivered as though the only question left is logistics.", bundle: 'free' },
+        { q: "What makes it land?", a: "Confidence. Hesitation turns it from a bit into nonsense.", bundle: 'free' },
+        { q: "When is it most useful?", a: "When the story has painted itself into a corner — the corner is the setup for the silliest exit.", bundle: 'pro' },
+        { q: "Which kind is funniest?", a: "The solution that makes the situation worse.", bundle: 'pro' },
+        { q: "Name two kinds.", a: "Any two of: impossible technology, insane logistics said as admin, and the fix that makes it worse.", bundle: 'pro' },
+        { q: "Does it end the story?", a: "Not necessarily — it releases the pressure and lets the story breathe, which often produces another round.", bundle: 'pro' },
+      ]
+    },
+  ],
+  explainthings2: [
+    {
+      name: "Core Idea",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "The six question words, and how the two packs divide them.",
+      cards: [
+        { q: "What are the six question words?", a: "What, How, Why, When, Where and Who.", bundle: 'free' },
+        { q: "Which three does Explain Things Pt. 1 cover?", a: "What it is, how it works and why it matters.", bundle: 'free' },
+        { q: "Which three does this pack cover?", a: "When it comes up, where it belongs and who it is for.", bundle: 'free' },
+        { q: "What do the first three do, and what do these three do?", a: "The first three make something understandable; these three make it placed — they answer whether it has anything to do with the listener.", bundle: 'pro' },
+        { q: "Do you use all six every time?", a: "No. They are a menu. Serving them in order is how an explanation becomes a lecture.", bundle: 'pro' },
+        { q: "What is the difference from Storytelling with the Six W's?", a: "There the six describe an event. Here they explain a thing or an idea.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "When It Comes Up",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "The theory behind the When piece.",
+      cards: [
+        { q: "What does the When piece answer?", a: "The moment or situation that calls for the thing.", bundle: 'free' },
+        { q: "Why does it matter more than a description?", a: "It lets someone recognise a situation they have actually been in.", bundle: 'free' },
+        { q: "Name two kinds of when.", a: "Any two of: the trigger moment, how often it comes up, and the wrong time to use it.", bundle: 'pro' },
+        { q: "Why is \"the wrong time\" worth saying?", a: "It stops the commonest misuse before it happens, and it is information nobody else gives them.", bundle: 'pro' },
+        { q: "One occasion or a list?", a: "One. \"When you're moving house\" beats a sentence with three situations in it.", bundle: 'pro' },
+        { q: "What question is the listener really asking?", a: "Whether they would ever need it.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Where It Belongs",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "The theory behind the Where piece.",
+      cards: [
+        { q: "What does the Where piece answer?", a: "The setting or the point in a process where the thing fits — not where it is physically kept.", bundle: 'free' },
+        { q: "What is the strongest version of it?", a: "Naming the neighbours — what it sits between, what comes before and after.", bundle: 'free' },
+        { q: "Name three kinds of where.", a: "The setting, the place in a process, and where it came from when the origin explains the shape.", bundle: 'pro' },
+        { q: "Why do neighbours help memory?", a: "People file new things by what they sit next to. Something with nothing beside it is remembered as a floating fact.", bundle: 'pro' },
+        { q: "How is this different from Describe Things?", a: "Describe Things says where you would find the object. This says which context makes sense of it.", bundle: 'pro' },
+        { q: "What does \"give it a shelf before you give it a manual\" mean?", a: "Place the thing before you explain its mechanics, or the mechanics have nowhere to land.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Who It Is For",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "The theory behind the Who piece.",
+      cards: [
+        { q: "What does the Who piece answer?", a: "Which group the thing is built for — and which it is not.", bundle: 'free' },
+        { q: "Why name who it is NOT for?", a: "It makes the rest believable. An explanation where everyone benefits sounds like an advertisement.", bundle: 'free' },
+        { q: "What is the least useful answer to \"would I like it?\"", a: "\"It depends\" — they can hear that you are avoiding the question.", bundle: 'pro' },
+        { q: "What should you tell them directly?", a: "Which group they are in, even when the honest answer is that it is not for them.", bundle: 'pro' },
+        { q: "What does an honest exclusion buy you?", a: "Trust in everything else you say, including the next recommendation.", bundle: 'pro' },
+        { q: "Why does relevance decide whether they keep listening?", a: "Someone who has been told it is not for them can stop working out whether it is.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Start Short, Then Go Deeper",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "The theory behind levels of detail.",
+      cards: [
+        { q: "What is the correct first answer?", a: "The one-sentence version, in words they already have.", bundle: 'free' },
+        { q: "When do you go deeper?", a: "When they ask, or when their face asks.", bundle: 'free' },
+        { q: "What are the three levels?", a: "One sentence, then the detail that makes it different from the obvious version, then the whole thing — which is rarely requested.", bundle: 'pro' },
+        { q: "Why not decide the length in advance?", a: "You cannot know how interested someone is until you have given them something to want more of.", bundle: 'pro' },
+        { q: "What do three \"rights\" in a row mean?", a: "Land it in one sentence and stop.", bundle: 'pro' },
+        { q: "Is the short version a simplification you apologise for?", a: "No. It is the correct first answer; the rest is available if wanted.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Answer the W They Actually Asked",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "The theory behind picking the right piece.",
+      cards: [
+        { q: "What does \"what is it?\" usually mean?", a: "\"Would I ever need this?\" — the literal answer is rarely the useful one.", bundle: 'free' },
+        { q: "What do you do when an explanation does not land?", a: "Change the W, not the volume.", bundle: 'free' },
+        { q: "Where is the tell about which piece they need?", a: "In the situation rather than the words — holding it, deciding whether to buy it, about to use it.", bundle: 'pro' },
+        { q: "Someone is about to use the thing. Which W?", a: "How.", bundle: 'pro' },
+        { q: "Someone is deciding whether to buy it. Which W?", a: "Who and When.", bundle: 'pro' },
+        { q: "What is the six-word repair when you cannot tell?", a: "\"What it is, or what for?\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  buildingastory: [
+    {
+      name: "Core Idea",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "The shape of a told story, and what this pack covers that the others do not.",
+      cards: [
+        { q: "What are the four parts of a told story?", a: "The opening, the turn, the resolution, and the takeaway — the last of which is optional.", bundle: 'free' },
+        { q: "Which part is load-bearing?", a: "The turn. Without it you have a description of a day rather than a story.", bundle: 'free' },
+        { q: "How is this different from Storytelling with the Six W's?", a: "The Six W's are the ingredients — what, how, why, when, where, who. This is the shape they are arranged into.", bundle: 'free' },
+        { q: "How is it different from Stories in Conversation?", a: "That pack owns the social frame — when to tell one, how to notice you have lost the room, how to stop. This owns how the story itself is built.", bundle: 'pro' },
+        { q: "What is the standard a story has to clear?", a: "Small, true and shaped. The size of the event is almost irrelevant.", bundle: 'pro' },
+        { q: "Which two parts do people most often miss out?", a: "The turn, and the ending — the second because the laugh has already happened.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Open It in One Sentence",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "The theory behind the setup.",
+      cards: [
+        { q: "How long should the opening be?", a: "One to three sentences.", bundle: 'free' },
+        { q: "What are the four ways to open?", a: "Straight into the action, set the scene, the hook, or the feeling first.", bundle: 'free' },
+        { q: "What is the job of the first sentence?", a: "To make them want the second one. Not to explain anything.", bundle: 'pro' },
+        { q: "What causes an overlong setup?", a: "Explaining who everybody is before anything has happened.", bundle: 'pro' },
+        { q: "When can context be delivered?", a: "Late, or not at all — the listener builds most of it themselves.", bundle: 'pro' },
+        { q: "Which opening connects the listener fastest?", a: "The feeling first — it reaches them before the facts do.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Name the Turn",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "The theory behind the turning point.",
+      cards: [
+        { q: "What is the turn?", a: "The moment the ordinary became a story — the problem, the surprise, the decision, the realisation.", bundle: 'free' },
+        { q: "How long should it be?", a: "Two to four sentences. Clear rather than dramatic.", bundle: 'free' },
+        { q: "Name three kinds of turn.", a: "Any three of: the unexpected event, the problem, conflict with someone, the internal decision, the moment of realisation.", bundle: 'pro' },
+        { q: "What does everything before and after the turn become?", a: "Setup and consequence.", bundle: 'pro' },
+        { q: "What if you cannot name the turn?", a: "You may not have a story — you may have an anecdote about a day, which is allowed as long as you do not tell it as though a punchline is coming.", bundle: 'pro' },
+        { q: "Small turn or big turn?", a: "A small thing said sharply beats a big thing described at length.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Land the Resolution",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "The theory behind the ending.",
+      cards: [
+        { q: "What does a resolution contain?", a: "What you did, and what happened because of it — in that order.", bundle: 'free' },
+        { q: "Why does an unlanded ending deflate a story?", a: "The listener cannot tell whether you have finished, so they say \"right\" and it dies in its last two seconds.", bundle: 'free' },
+        { q: "Name three shapes of ending.", a: "What you did and what followed; the thing that resolved without you; the flat statement.", bundle: 'pro' },
+        { q: "Is a flat ending acceptable?", a: "Yes — most stories have no punch, and \"so we drove home, that's it\" is a complete ending.", bundle: 'pro' },
+        { q: "Why do endings get mumbled?", a: "The teller has already had the laugh they wanted and loses interest in the last sentence.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Say the Takeaway",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "The theory behind the lesson — including when not to have one.",
+      cards: [
+        { q: "What is the takeaway?", a: "What changed, what you understood, or what you would tell somebody in the same position.", bundle: 'free' },
+        { q: "What is the rule people break?", a: "Not every story has one. A forced moral is worse than none.", bundle: 'free' },
+        { q: "What is the most concrete kind?", a: "What you do differently now.", bundle: 'pro' },
+        { q: "What is the most useful kind for the listener?", a: "What you would tell someone about to be in the same position.", bundle: 'pro' },
+        { q: "What do you say when there is no lesson?", a: "That there is no lesson. \"It was just a strange day\" is a complete ending.", bundle: 'pro' },
+        { q: "What is the sign a takeaway has been bolted on?", a: "It is more general than the story it came from.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Pick One Fast",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "The theory behind telling one on the spot.",
+      cards: [
+        { q: "How long should choosing take?", a: "About fifteen seconds. Then start, even if you have not worked out the ending.", bundle: 'free' },
+        { q: "Which story should you pick?", a: "The first small one that arrives, not the best one you know.", bundle: 'free' },
+        { q: "One moment or one period?", a: "One moment. \"The night the taxi didn't come\", not \"that whole summer\".", bundle: 'pro' },
+        { q: "Why does recent beat impressive?", a: "It is easier to tell and easier for the listener to recognise.", bundle: 'pro' },
+        { q: "Why are most stories missed?", a: "Not from having none — from the moment ending while the person was still choosing.", bundle: 'pro' },
+        { q: "What beats a great story thought of later?", a: "A mediocre one told now.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Tell It With the Feeling In It",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "The theory behind the emotional telling.",
+      cards: [
+        { q: "Why does the feeling matter more than the events?", a: "Listeners follow feeling more closely than they follow events. Without it an account is a report.", bundle: 'free' },
+        { q: "How do you get the feeling across?", a: "Say it plainly, out loud, at least once. It does not arrive through detail alone.", bundle: 'free' },
+        { q: "What else does the feeling decide?", a: "The pace — slow for the difficult moment, quick for the chaos — and which details are worth keeping.", bundle: 'pro' },
+        { q: "What is the exercise worth practising?", a: "Telling the same story twice, once as the funny version and once as the honest one.", bundle: 'pro' },
+        { q: "What does that exercise teach?", a: "That the events are not the story. The feeling you put in is a choice, and it should be chosen rather than defaulted to.", bundle: 'pro' },
+        { q: "What if the feeling was ordinary?", a: "Say that. \"Mostly I was just tired\" is honest, and honest lands.", bundle: 'pro' },
+      ]
+    },
+  ],
+  reframing: [
+    {
+      name: "Core Idea",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "What reframing is, and what it is not.",
+      cards: [
+        { q: "What is reframing?", a: "Taking the same facts and offering a different reading of them — the facts do not move, only the frame around them.", bundle: 'free' },
+        { q: "What are the four types?", a: "Positive, context, meaning and humorous.", bundle: 'free' },
+        { q: "What is the one rule that keeps it honest?", a: "It has to be true — a reframe must hold every fact the original reading held.", bundle: 'free' },
+        { q: "What is the difference from a counter-example?", a: "A counter-example changes what is claimed to be true. A reframe leaves the facts alone and changes the conclusion drawn from them.", bundle: 'pro' },
+        { q: "How is it different from validation?", a: "Validation says a feeling is reasonable. A reframe offers another reading of the situation, and it comes afterwards, not instead.", bundle: 'pro' },
+        { q: "What is the delivery rule for the whole pack?", a: "Acknowledge first, offer second, hold it loosely — and be willing to have no reframe at all.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Positive Reframe",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "The theory behind finding the upside.",
+      cards: [
+        { q: "What is a positive reframe?", a: "The true upside in something presented as bad — the reading that was available and unused.", bundle: 'free' },
+        { q: "What makes it fail?", a: "Requiring you to ignore something. Then it is denial rather than a reframe.", bundle: 'free' },
+        { q: "Which upside is most reliably true?", a: "What was learned — you know something now that you did not before.", bundle: 'pro' },
+        { q: "Which upside do people most often miss?", a: "What was avoided. \"That would have been much worse in December.\"", bundle: 'pro' },
+        { q: "How do you know it is spin rather than a reframe?", a: "You would not say the same thing about it in a month.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Context Reframe",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "The theory behind moving the setting.",
+      cards: [
+        { q: "What is a context reframe?", a: "The same behaviour judged in a different setting, where it is an asset rather than a fault.", bundle: 'free' },
+        { q: "Why is it so useful against labels?", a: "It concedes nothing and denies nothing — the behaviour is agreed, only the verdict moves.", bundle: 'free' },
+        { q: "Name three ways to move the context.", a: "Another setting, another time, or another observer.", bundle: 'pro' },
+        { q: "What is context-blindness in a criticism?", a: "Naming a behaviour and treating it as universally bad, when it is really about the fit with this situation.", bundle: 'pro' },
+        { q: "Give the classic example.", a: "\"Too stubborn\" in a queue is exactly what you want on your side in a negotiation.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Meaning Reframe",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "The theory behind changing the conclusion.",
+      cards: [
+        { q: "What is a meaning reframe?", a: "Leaving the event exactly as it was and changing what it is taken to mean.", bundle: 'free' },
+        { q: "Why is the meaning usually the weak part?", a: "What happened is one sentence. Everything painful attached to it is an interpretation that arrived fast enough to feel like a fact.", bundle: 'free' },
+        { q: "What is the test of a meaning reframe?", a: "Whether the new meaning fits the same facts. If it needs different facts it is wishful thinking.", bundle: 'pro' },
+        { q: "Which alternative meaning resolves the most cases?", a: "That it is not about you at all.", bundle: 'pro' },
+        { q: "Give a self-directed example.", a: "\"I was nervous, so I wasn't ready\" becomes \"nervous usually means it mattered\".", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Humorous Reframe",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "The theory behind using scale.",
+      cards: [
+        { q: "What does a humorous reframe aim at?", a: "The size of the thing — usually smaller than it is being treated, occasionally absurdly larger.", bundle: 'free' },
+        { q: "What must it never aim at?", a: "The person's reaction. Then it becomes \"you're overreacting\" with a smile on it.", bundle: 'free' },
+        { q: "Why does scale work so well?", a: "Most distress about a small thing is a scale error, and scale is the easiest thing for someone to hear.", bundle: 'pro' },
+        { q: "How is it different from Responsive Humour?", a: "There the aim is to be funny about what was said. Here the aim is to take the sting out by naming the real size.", bundle: 'pro' },
+        { q: "What does a late laugh tell you?", a: "That it landed on them rather than on the event. Repair it plainly.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Reframe What They Said About You",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "The theory behind answering a label.",
+      cards: [
+        { q: "What is the move when somebody labels you?", a: "Agree with the behaviour, decline the verdict, and give it your own word.", bundle: 'free' },
+        { q: "Why not just deny it?", a: "Arguing with a label keeps you inside it — you become the person defending themselves against being too serious.", bundle: 'free' },
+        { q: "What is the strongest version?", a: "Owning it plainly. \"Yes. I'm completely at peace with that\" ends the exchange.", bundle: 'pro' },
+        { q: "What is the third beat, and why does it matter?", a: "Moving on. A reframe you then defend for five minutes has become an argument about you.", bundle: 'pro' },
+        { q: "Why is this the safest strategy in the pack?", a: "The frame you are changing is your own.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Offer It, Don't Impose It",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "The theory behind delivery.",
+      cards: [
+        { q: "What has to come before a reframe?", a: "One true sentence acknowledging how it actually is.", bundle: 'free' },
+        { q: "What do you do when they do not take it?", a: "Let it go. \"That's just how it looked from here.\"", bundle: 'free' },
+        { q: "What does a reframe become when it is repeated?", a: "An argument about whose reading is correct — which nobody wins.", bundle: 'pro' },
+        { q: "What is the four-second question that changes everything?", a: "\"Do you want another angle on it, or not right now?\"", bundle: 'pro' },
+        { q: "Why does \"you should see it as\" fail?", a: "It tells them their reading is wrong, and people defend a reading they have been told is wrong even when they did not like it.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Know When Not To",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "The theory behind the limits.",
+      cards: [
+        { q: "When should you not reframe?", a: "When the thing is genuinely bad, when the feeling has not been heard yet, and when the feeling is the accurate response.", bundle: 'free' },
+        { q: "What is a complete response when there is no good angle?", a: "\"That's just bad, and I'm sorry.\"", bundle: 'free' },
+        { q: "What is the failure mode of this whole pack called?", a: "Toxic positivity — reframing somebody's feeling before they have been heard.", bundle: 'pro' },
+        { q: "What does it actually cause?", a: "Not cheerfulness. They stop telling you things.", bundle: 'pro' },
+        { q: "What are the three tests?", a: "Would the new reading require leaving something out; has the feeling been acknowledged yet; and is the feeling accurate?", bundle: 'pro' },
+        { q: "What do people mostly want in the first hour?", a: "Company rather than perspective.", bundle: 'pro' },
+      ]
+    },
+  ],
 };

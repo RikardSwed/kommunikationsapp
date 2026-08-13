@@ -2707,6 +2707,49 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
           'What you\u2019ll get better at: staying in the conversation after sorry.',
         ],
       },
+      // v1.27.01 — three more Extended packs. Unlike the two above, these are
+      // not all sequels: Building a Story and Reframing are parallel packs,
+      // and their copy has to say what they sit NEXT TO rather than what they
+      // continue, or a buyer cannot tell what they are getting.
+      {
+        id: 'explainthings2',
+        title: 'Explain Things — Pt. 2',
+        icon: 'ti-bulb',
+        description: 'For the explanations that do not go well the first time — the audience that already disagrees, the thing you know too well, and the moment you can see you have lost them.',
+        price: '29 kr',
+        details: [
+          'Explain Things gives you a working explanation: the order, the example, the check. This is what to do when that is not enough.',
+          'Covers explaining something to somebody who has already decided you are wrong, explaining a thing you know so well you cannot remember what is hard about it, noticing mid-sentence that they stopped following, and starting again without making it a bigger deal than it is.',
+          'Built as a full pack: strategies with worked examples, collections that mix them, challenges, sequences and mindset cards.',
+          'What you’ll get better at: being understood by people who were not going to make it easy.',
+        ],
+      },
+      {
+        id: 'buildingastory',
+        title: 'Building a Story',
+        icon: 'ti-book-2',
+        description: 'The shape of a story — first sentence to last. Where it starts, where it turns, how it lands, and how to produce one in ten seconds.',
+        price: '29 kr',
+        details: [
+          'Storytelling with the Six W’s gives you the ingredients and Stories in Conversation tells you when you may tell one. This is the part in between: how a story is actually built.',
+          'Opening in one sentence, naming the turn the whole thing hangs on, landing the ending rather than trailing off, and deciding whether it needs a takeaway at all — the pack is clear that a forced moral is worse than none.',
+          'There is also the hard version: picking a story fast, under pressure, when somebody has just said "go on then, tell us one".',
+          'What you’ll get better at: telling something that has a shape, instead of a series of things that happened.',
+        ],
+      },
+      {
+        id: 'reframing',
+        title: 'Reframing',
+        icon: 'ti-rotate',
+        description: 'Same facts, a different reading of them. Four kinds of reframe, how to offer one so it helps, and how to know when not to.',
+        price: '29 kr',
+        details: [
+          'Most bad news arrives with one reading attached, presented as the only one. Reframing is the skill of finding the other reading that fits exactly the same facts — the upside that was overlooked, the setting where the fault is an asset, the meaning that was invented, or the size the thing actually is.',
+          'It also covers the everyday version, which is what to say when somebody puts a word on you: agree with the behaviour, decline the verdict, and give it your own name. That is the safest strategy in the pack, because the frame you are changing is your own.',
+          'And the half nobody teaches: how to offer a reframe so it lands as an offer rather than a correction, and when the right answer is "that’s just bad, and I’m sorry". Reframing somebody’s feeling before they have been heard has a name, and the effect is not that they cheer up — it is that they stop telling you things.',
+          'What you’ll get better at: finding the reading that is both truer and kinder, and knowing when to keep it to yourself.',
+        ],
+      },
       // v1.26.80 — the old `storytelling` pack was REMOVED from the store.
       // It sits at minLevel 'complete' since the library import, and
       // packVisibility() returns 'hidden' for that regardless of purchase,
@@ -2795,13 +2838,18 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
         description: 'Every extra pack and input bundle in one purchase, for less than the parts cost separately.',
         price: '79 kr',
         details: [
-          'The two extra packs and both input bundles in one purchase \u2014 {separately} if you buy the parts one by one.',
-          'You get the two hardest packs in the library: the last step of the Starting Conversations ladder, where you open with nothing to hide behind, and the deep half of Apologizing, for when sorry is not enough. On top of that, extra situations for two packs you already train \u2014 family pressure for Broken Record, and home and close relationships for Assertive Communication.',
+          'All five extra packs and both input bundles in one purchase \u2014 {separately} if you buy the parts one by one.',
+          'Three of them go deeper into something you already train: the last step of the Starting Conversations ladder, where you open with nothing to hide behind; the deep half of Apologizing, for when sorry is not enough; and the second half of Explain Things, for the audience that was never going to make it easy.',
+          'The other two stand on their own. Building a Story is the shape of a story from first sentence to last. Reframing is the other reading of the same facts \u2014 and, just as usefully, when not to offer one.',
+          'On top of that, extra situations for two packs you already have \u2014 family pressure for Broken Record, and home and close relationships for Assertive Communication.',
           'Everything is unlocked immediately and works in all your training modes, including handsfree.',
         ],
         contents: [
           { type: 'pack',   id: 'startingconversations4' },
           { type: 'pack',   id: 'apologizing2' },
+          { type: 'pack',   id: 'explainthings2' },
+          { type: 'pack',   id: 'buildingastory' },
+          { type: 'pack',   id: 'reframing' },
           { type: 'bundle', id: 'brokenrecord::family' },
           { type: 'bundle', id: 'assertive::domestic' },
         ],
@@ -2813,14 +2861,17 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
         description: 'Everything in Extended, including the Difficult Conversations program — nothing left to buy.',
         price: '119 kr',
         details: [
-          'Every single thing in Extended in one purchase: both extra packs, both input bundles, and the Difficult Conversations program. Bought one by one it comes to {separately}.',
+          'Every single thing in Extended in one purchase: all five extra packs, both input bundles, and the Difficult Conversations program. Bought one by one it comes to {separately}.',
           'The program is what makes this different from The Communicator Kit. Three Parts with a test at the end of each, and three packs \u2014 Conflict Emotions, Giving Criticism and Receiving Feedback and Criticism \u2014 that exist nowhere else in the app.',
-          'Around it sit the two hardest packs in the library: the last step of the Starting Conversations ladder, and the deep half of Apologizing. Plus family pressure for Broken Record and home situations for Assertive Communication.',
+          'Around it sit the five extra packs: the last step of the Starting Conversations ladder, the deep half of Apologizing, the second half of Explain Things, the shape of a story from first sentence to last, and Reframing \u2014 the other reading of the same facts. Plus family pressure for Broken Record and home situations for Assertive Communication.',
           'Everything unlocks immediately and works in all your training modes, including handsfree. After this there is nothing else in Extended to buy.',
         ],
         contents: [
           { type: 'pack',    id: 'startingconversations4' },
           { type: 'pack',    id: 'apologizing2' },
+          { type: 'pack',    id: 'explainthings2' },
+          { type: 'pack',    id: 'buildingastory' },
+          { type: 'pack',    id: 'reframing' },
           { type: 'bundle',  id: 'brokenrecord::family' },
           { type: 'bundle',  id: 'assertive::domestic' },
           { type: 'program', id: 'difficult-conversations' },
@@ -2835,11 +2886,14 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
         code: 'DEMO2026',
         details: [
           'The same packs and bundles as The Communicator Kit, at a special rate for classroom and group use \u2014 unlocked with an access code from your teacher or course leader.',
-          'Two extra packs and two sets of extra situations, {separately} bought separately, all available in every training mode. The Difficult Conversations program is not included; that one is in The Complete Kit.',
+          'Five extra packs and two sets of extra situations, {separately} bought separately, all available in every training mode. The Difficult Conversations program is not included; that one is in The Complete Kit.',
         ],
         contents: [
           { type: 'pack',   id: 'startingconversations4' },
           { type: 'pack',   id: 'apologizing2' },
+          { type: 'pack',   id: 'explainthings2' },
+          { type: 'pack',   id: 'buildingastory' },
+          { type: 'pack',   id: 'reframing' },
           { type: 'bundle', id: 'brokenrecord::family' },
           { type: 'bundle', id: 'assertive::domestic' },
         ],

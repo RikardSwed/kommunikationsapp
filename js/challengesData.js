@@ -3502,4 +3502,473 @@ const challengesCollections = {
       ]
     },
   ],
+  setupquestion: [
+    {
+      name: "The Interview",
+      guideFront: "What has gone wrong here?",
+      guideBack: "A possible response, with the type in brackets.",
+      description: "You have asked three questions in a row and given nothing back, and the other person has started giving shorter answers. The training is to notice the pattern early and answer your own question before you ask another one.\n\nWhat it usually looks like:\n• Their answers are getting shorter each time.\n• You have learned four things about them and they know nothing about you.\n• You are already thinking about the next question while they are still answering.\n\nTwo ways through:\n1. Answer the last one yourself — the direct repair. \"I should say mine — I came for the same reason.\"\n2. Name it lightly — costs nothing and usually gets a laugh. \"I'm interrogating you. Your turn to ask me something.\"\n\nMindset: the fix is not a better question. It is your own answer to the one you already asked.",
+      inputs: [
+        { q: "You have asked three questions and answered none of them.", a: "\"I've been interrogating you. Mine's the same, for what it's worth — I signed up to get better at this.\" (purpose)", bundle: 'pro' },
+        { q: "Their answers are getting shorter with each question.", a: "\"I'll stop asking and give you something. I'm halfway through moving flat and it's chaos.\" (action)", bundle: 'pro' },
+        { q: "You realise they know nothing about you.", a: "\"You've had all the questions. I came straight from work and I'm still winding down.\" (background)", bundle: 'pro' },
+        { q: "You have asked a fourth question without giving anything back.", a: "\"Right — my turn to be useful. I've been here twice and I still don't know where the coffee is.\" (status)", bundle: 'pro' },
+        { q: "You catch yourself planning the next question mid-answer.", a: "\"Say that last bit again. I stopped listening and started planning, which is rude of me.\" (status)", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Question That Was Not Wanted",
+      guideFront: "What has gone wrong here?",
+      guideBack: "A possible response, with the type in brackets.",
+      description: "You asked a real question and got the ritual answer — \"fine, thanks\" — and a closed door. The training is to notice they answered the greeting rather than the question, and to give your own honest answer as the way back in rather than asking again.\n\nWhat it usually looks like:\n• \"Fine, thanks\" delivered without a pause.\n• They answered the words rather than the question.\n• Asking again would be pushing, and you can feel it.\n\nTwo ways through:\n1. Answer it yourself honestly — turns a closed door into an open one. \"I'm shattered, since you didn't ask.\"\n2. Switch type — move from Status to something concrete. \"What are you working on at the moment?\"\n\nMindset: they may not have realised the question was real. Going first with your own answer is what tells them it was.",
+      inputs: [
+        { q: "You asked how they were and got \"fine, thanks\" and a pause.", a: "\"I'll go first, then — I'm shattered and mildly grumpy. How's your week actually been?\" (status)", bundle: 'pro' },
+        { q: "The real question got the ritual answer.", a: "\"Fair enough. I'm running on four hours' sleep, which explains most things about me today.\" (status)", bundle: 'pro' },
+        { q: "They clearly want the light version.", a: "\"What are you working on at the moment? I'm deep in a spreadsheet I don't understand.\" (action)", bundle: 'pro' },
+        { q: "They gave the polite version and moved straight on.", a: "\"Mine's less polite — this week has been a mess. What's yours actually been like?\" (status)", bundle: 'pro' },
+        { q: "You want to reopen it without asking the same thing twice.", a: "\"I won't ask again. I'll just say I'm knackered and see whether that's contagious.\" (status)", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Blank Answer",
+      guideFront: "What has gone wrong here?",
+      guideBack: "A possible response, with the type in brackets.",
+      description: "You asked what they have been up to and got \"not much\" — not from rudeness, but because the question was too wide to answer. The training is to narrow it rather than repeat it.\n\nWhat it usually looks like:\n• \"Not much, you?\" and nothing else.\n• A shrug and a real effort to think of something.\n• You have asked the widest possible version of the question.\n\nTwo ways through:\n1. Narrow it — \"are you reading anything?\" beats \"what's new?\" every time.\n2. Answer yours first, small — a concrete example shows the size of answer you meant.\n\nMindset: \"not much\" is almost never a refusal. It is a question that was too big to answer, and the fix is a smaller one.",
+      inputs: [
+        { q: "You asked what is new and got \"not much\".", a: "\"Fair. Are you watching anything at the moment? I've started something terrible and I can't stop.\" (action)", bundle: 'pro' },
+        { q: "They cannot think of anything to say they have been doing.", a: "\"Mine's small too — I repainted a wardrobe badly. Have you got anything on the go?\" (action)", bundle: 'pro' },
+        { q: "The question was too wide and they went blank.", a: "\"Let me narrow that. Been anywhere at all this summer? I got as far as my mother's.\" (background)", bundle: 'pro' },
+        { q: "They said \"not much\" and looked slightly apologetic about it.", a: "\"Nobody has an answer to that one. Eaten anything good lately? I had a genuinely bad kebab.\" (action)", bundle: 'pro' },
+        { q: "You asked about the whole year and got nothing back.", a: "\"Too big a question. Last weekend — did you do anything at all? I moved a sofa.\" (action)", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Group Question",
+      guideFront: "What has gone wrong here?",
+      guideBack: "A possible response, with the type in brackets.",
+      description: "You are with three or four people and a question aimed at nobody in particular lands on nobody. The training is to aim it at one person, or to answer it yourself first so the group has a shape to copy.\n\nWhat it usually looks like:\n• You ask the group and everybody waits for somebody else.\n• The question dies in the middle of the table.\n• One person answers out of politeness and it stops there.\n\nTwo ways through:\n1. Aim it — use a name or look at one person. \"How about you, Sara?\"\n2. Answer first, then hand it on — gives the table a model and a size. \"I'll start. Mine was...\"\n\nMindset: a question to everyone is a question to no one. Name someone, or go first yourself.",
+      inputs: [
+        { q: "You asked the whole table and nobody answered.", a: "\"I'll start, then — I came because a friend dragged me. How about you two?\" (purpose)", bundle: 'pro' },
+        { q: "The question landed in the middle of a group and died.", a: "\"Let me aim that better. Sara, how do you know everyone here?\" (background)", bundle: 'pro' },
+        { q: "One person answered politely and it stopped.", a: "\"That's a good one. Mine's less impressive — I've been rewatching the same series for a month.\" (action)", bundle: 'pro' },
+        { q: "Two people started answering at once and both stopped.", a: "\"You go — and then I'll tell you why I'm actually here.\" (purpose)", bundle: 'pro' },
+        { q: "The quietest person at the table still has not spoken.", a: "\"I haven't heard from you yet. How did you end up at this one?\" (purpose)", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "You Ran Out After One",
+      guideFront: "What has gone wrong here?",
+      guideBack: "A possible response, with the type in brackets.",
+      description: "The question worked, they answered, you answered, and then the whole thing stopped. The training is to build the next question out of their answer rather than reaching down the list for a fresh type.\n\nWhat it usually looks like:\n• A good exchange, and then silence.\n• You are mentally scanning the five types for another one.\n• Neither of you has picked up anything the other said.\n\nTwo ways through:\n1. Use a word from their answer — the next question is already inside it.\n2. Change type on purpose — a Status answer opens straight onto an Action question.\n\nMindset: you do not need a new question. You need the one that was in their last answer.",
+      inputs: [
+        { q: "You both answered and then it went quiet.", a: "\"You said you'd come straight from work — what is it you do?\" (action)", bundle: 'pro' },
+        { q: "You are scanning for a fresh question type.", a: "\"Go back a bit — you said you nearly didn't come. Why nearly?\" (purpose)", bundle: 'pro' },
+        { q: "The exchange worked and then stopped dead.", a: "\"You said Gothenburg. Is that where you're from, or just where you were?\" (background)", bundle: 'pro' },
+        { q: "A status answer has nowhere obvious to go.", a: "\"Busy with what, though? I like knowing what's keeping people up.\" (action)", bundle: 'pro' },
+        { q: "Neither of you picked anything up from the other.", a: "\"I'm going back one — the bit about the course. What made you pick that one?\" (purpose)", bundle: 'pro' },
+      ]
+    },
+  ],
+  givingcounterexamples: [
+    {
+      name: "It Landed As Contradiction",
+      guideFront: "What has gone wrong with this counter-example?",
+      guideBack: "A possible response, with the move in brackets.",
+      description: "Your example was fine, but it arrived without the concession, so it read as \"you're wrong\" rather than \"not always\". The repair is to put the general case back in and let the exception stay an exception.\n\nWhat it usually looks like:\n• They have gone defensive and started restating the claim.\n• You said \"actually\" or \"that's not true\" first.\n• The conversation is now about the claim rather than about the subject.\n\nTwo ways through:\n1. Concede late — better than never. \"You're right in general, that's the bit I skipped.\"\n2. Shrink your own point out loud — \"I only meant it isn't universal.\"\n\nMindset: \"actually\" is the word that turns an example into a correction. Take it out and the same sentence lands completely differently.",
+      inputs: [
+        { q: "You said \"actually, that's not true\" and they went defensive.", a: "\"That came out wrong. You're right in general — I only meant it isn't universal.\" [concede late]", bundle: 'pro' },
+        { q: "They are now arguing for the claim harder than they believe it.", a: "\"I'm not arguing against you. Most of the time it's exactly as you said.\" [concede late]", bundle: 'pro' },
+        { q: "The exchange has become about who is right.", a: "\"I've made this bigger than it was. My point was only about the edge case.\" [shrink the point]", bundle: 'pro' },
+        { q: "They repeat the claim more firmly than before.", a: "\"That's on me — I led with the objection instead of the agreement. You're right about most cases.\" [concede late]", bundle: 'pro' },
+        { q: "You can hear that your tone did the damage rather than the words.", a: "\"Let me say that again properly. Usually it works exactly as you said. I ran into one week where it didn't.\" [concede late]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "One Case, Big Conclusion",
+      guideFront: "What has gone wrong with this counter-example?",
+      guideBack: "A possible response, with the move in brackets.",
+      description: "You used a single exception as if it settled the whole question, and they noticed. The repair is to say what one case actually shows — that the claim is a tendency and not a rule — which is a smaller thing and much easier to agree with.\n\nWhat it usually looks like:\n• \"That's one person\" and they are right.\n• You are defending your example rather than your point.\n• You said \"so it's not true\" when you meant \"so it's not always true\".\n\nTwo ways through:\n1. Name what one case proves — \"it makes it 'usually' rather than 'always'\".\n2. Offer the narrower claim and take the agreement — \"most people, I'd sign up to.\"\n\nMindset: an exception removes the word always. It does not remove the sentence.",
+      inputs: [
+        { q: "They said \"that's just one person\" and it is a fair hit.", a: "\"It is one. One's enough to make it 'usually' rather than 'always', though.\" [what one case shows]", bundle: 'pro' },
+        { q: "You realise you claimed too much from your example.", a: "\"I overstated it. 'Most people, most of the time' is what I actually think.\" [narrower claim]", bundle: 'pro' },
+        { q: "You are defending the example rather than the point.", a: "\"Forget my case. Would you say 'nearly always' rather than 'always'?\" [narrower claim]", bundle: 'pro' },
+        { q: "You said \"so it's not true\" and meant \"so it's not always true\".", a: "\"Wrong word from me. Not always — that's all I meant.\" [what one case shows]", bundle: 'pro' },
+        { q: "They ask how many exceptions you actually know of.", a: "\"One I've lived and one I've watched. Not enough for a rule, enough to lose the 'always'.\" [what one case shows]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Example Is Invented",
+      guideFront: "What has gone wrong with this counter-example?",
+      guideBack: "A possible response, with the move in brackets.",
+      description: "You reached for a figure or a case you do not actually have, or you are about to. The repair is to say so before it is checked, and to use a type you can stand behind instead.\n\nWhat it usually looks like:\n• You have said \"I read somewhere\" and cannot say where.\n• The number felt right rather than known.\n• You are hoping nobody asks for the source.\n\nTwo ways through:\n1. Withdraw it immediately — costs a sentence, saves the rest of your credibility.\n2. Swap the type — an imagined case, marked as imagined, does the same job honestly.\n\nMindset: a made-up example is the one mistake that spreads. When it is checked, everything else you said goes with it.",
+      inputs: [
+        { q: "You quoted a statistic you cannot actually source.", a: "\"I shouldn't have said that as a fact — I don't have the number. Let me find it.\" [withdraw]", bundle: 'pro' },
+        { q: "You are about to invent a case that would prove your point.", a: "\"I don't have a real one. But imagine someone who works nights — does the rule hold?\" [swap the type]", bundle: 'pro' },
+        { q: "They ask where your figure came from.", a: "\"Honestly, I can't source it. Treat it as a hunch until I check.\" [withdraw]", bundle: 'pro' },
+        { q: "You said \"I read somewhere\" and cannot say where.", a: "\"I can't stand that one up, so ignore it. Here's one I can: I counted it myself last month.\" [swap the type]", bundle: 'pro' },
+        { q: "A number that felt right has become a number you stated.", a: "\"I gave that as a fact and it was a guess. Let me get the real one before we go further.\" [withdraw]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "They Cannot Picture It",
+      guideFront: "What has gone wrong with this counter-example?",
+      guideBack: "A possible response, with the move in brackets.",
+      description: "Your example is real but it means nothing to them — a person they do not know, a place they have not been. The repair is to swap it for something they can check against their own experience.\n\nWhat it usually looks like:\n• They nod and the point does not land.\n• You have had to explain who the person is.\n• The example needed two sentences of setup.\n\nTwo ways through:\n1. Swap to the common counter-case — \"everyone knows one person who…\"\n2. Swap to a known exception — a public case needs no introduction at all.\n\nMindset: if you have to explain the example, it is doing less work than the claim it is answering.",
+      inputs: [
+        { q: "You named a colleague they have never met.", a: "\"Bad example — you don't know him. Everyone knows one person who revises nothing and does fine.\" [common counter-case]", bundle: 'pro' },
+        { q: "The example needed setting up and lost the room.", a: "\"Let me use an easier one. Plenty of famous books were rejected a dozen times.\" [known exception]", bundle: 'pro' },
+        { q: "They nodded politely and the point did not land.", a: "\"That one's too far from here. Think of the recall last year — three days, whole product.\" [known exception]", bundle: 'pro' },
+        { q: "You had to explain who the person in your example was.", a: "\"If I have to introduce him, he's the wrong example. Everyone knows one person who does the opposite.\" [common counter-case]", bundle: 'pro' },
+        { q: "The reference turned out not to be shared at all.", a: "\"Forget that one. Simpler version: plenty of famous books were turned down a dozen times.\" [known exception]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Claim Is About Someone Present",
+      guideFront: "What has gone wrong with this counter-example?",
+      guideBack: "A possible response, with the move in brackets.",
+      description: "The general statement is really about a person in the room, and any counter-example is going to be heard as taking sides. The repair is to move it off people entirely, or to say plainly that this is not really a general question.\n\nWhat it usually looks like:\n• \"People who do X are always Y\" and someone present does X.\n• The room has gone quiet in a specific way.\n• Your example would name or clearly point at somebody.\n\nTwo ways through:\n1. Move it off people — use an imagined case or a public one instead.\n2. Name what is happening, lightly — \"I don't think we're talking about people in general here.\"\n\nMindset: a counter-example about someone in the room is not a counter-example. It is a comment about them, and it will be received as one.",
+      inputs: [
+        { q: "The claim is clearly aimed at someone sitting there.", a: "\"Let's take it off people. Say someone works nights — does the rule still hold?\" [imagined case]", bundle: 'pro' },
+        { q: "Your best example would obviously point at a person present.", a: "\"I've got one, and it's too close to home to be useful. There's a public one that's better.\" [known exception]", bundle: 'pro' },
+        { q: "The generalisation has landed on someone in the room.", a: "\"I don't think this is really a general question, is it. Should we say the actual thing?\" [name it lightly]", bundle: 'pro' },
+        { q: "Your counter-example would obviously be about the person sitting there.", a: "\"I'll keep mine out of it. Say someone had a reason we don't know about — does the rule still hold?\" [imagined case]", bundle: 'pro' },
+        { q: "The room has gone quiet in that specific way.", a: "\"Let's move this off individuals. In general I'd agree with you, and there are edges.\" [name it lightly]", bundle: 'pro' },
+      ]
+    },
+  ],
+  discussing: [
+    {
+      name: "Two Monologues",
+      guideFront: "What has gone wrong in this discussion?",
+      guideBack: "A possible response, with the move in brackets.",
+      description: "Both of you are stating positions and neither is taking anything in. It looks like a discussion and functions as two speeches delivered alternately. The repair is a You-Focus move — say their view back, and mean it.\n\nWhat it usually looks like:\n• Each turn starts with \"but\" or \"yeah, but\".\n• Neither of you has repeated anything the other said.\n• You could not summarise their position if asked.\n\nTwo ways through:\n1. Say their view back — the fastest way to break the pattern.\n2. Ask a real question — one you do not know the answer to.\n\nMindset: if you could not state their position in a sentence, you are not discussing. You are taking turns.",
+      inputs: [
+        { q: "Every turn starts with \"yeah, but\".", a: "\"I've been saying 'yeah but' for five minutes. Let me actually say your side back.\" [say it back]", bundle: 'pro' },
+        { q: "You realise you could not summarise their position.", a: "\"I'm not sure I could explain your view to someone else. Say it once more?\" [say it back]", bundle: 'pro' },
+        { q: "Both of you have made the same point twice.", a: "\"We're both repeating. What would change your mind on this?\" [real question]", bundle: 'pro' },
+        { q: "You are waiting to speak rather than listening.", a: "\"I've been queuing rather than listening. What was the last bit?\" [say it back]", bundle: 'pro' },
+        { q: "The exchange is polite and going nowhere.", a: "\"Can I ask what you'd do if it were entirely your call?\" [real question]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Arguing About Different Things",
+      guideFront: "What has gone wrong in this discussion?",
+      guideBack: "A possible response, with the move in brackets.",
+      description: "Ten minutes in, it turns out you meant different things by the same word, and most of the disagreement was never real. The repair is a clarifying question — and it should have come first.\n\nWhat it usually looks like:\n• The disagreement feels bigger than the subject.\n• One of you keeps saying \"that's not what I mean\".\n• A key word is doing a lot of unexamined work.\n\nTwo ways through:\n1. Narrow the word — \"all of it, or part of it?\"\n2. Ask for a case — an abstraction becomes discussable the moment it has an example in it.\n\nMindset: check what they mean before you disagree with what you heard. Half of all heated discussions are this.",
+      inputs: [
+        { q: "They keep saying \"that's not what I mean\".", a: "\"Then I've got the wrong end. What DO you mean by it, in one sentence?\" [narrow it]", bundle: 'pro' },
+        { q: "The disagreement feels bigger than the topic warrants.", a: "\"I think we mean different things by 'broken'. Which part is broken for you?\" [narrow it]", bundle: 'pro' },
+        { q: "A key word is carrying too much weight.", a: "\"Give me a case where that happened. I'll follow it much better with an example.\" [ask for a case]", bundle: 'pro' },
+        { q: "You realise you have been arguing against a position they never took.", a: "\"I've been arguing with something you didn't say. Sorry — start again?\" [narrow it]", bundle: 'pro' },
+        { q: "You suspect you actually agree.", a: "\"I think we might be saying the same thing in different words. Test it on me?\" [narrow it]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "It Got Personal",
+      guideFront: "What has gone wrong in this discussion?",
+      guideBack: "A possible response, with the move in brackets.",
+      description: "The discussion has moved from the subject to the people, and the next thing said will be about character rather than about the question. The repair is to name it as a shared thing and take the heat out before anything else.\n\nWhat it usually looks like:\n• \"You always…\" has appeared.\n• Someone has brought in something from another day.\n• The tone changed and neither of you acknowledged it.\n\nTwo ways through:\n1. Name it as \"we\" — never as \"you\".\n2. Stop the discussion rather than win it — \"let's come back to this.\"\n\nMindset: winning an exchange with someone you will see tomorrow is not winning.",
+      inputs: [
+        { q: "\"You always do this\" has just been said.", a: "\"We've moved off the subject. Can we go back to the actual question?\" [name it as we]", bundle: 'pro' },
+        { q: "Something from another day has been brought in.", a: "\"That's a separate thing and probably worth talking about, but not inside this one.\" [split it]", bundle: 'pro' },
+        { q: "You are about to say something you would have to take back.", a: "\"I'm going to stop before I say something daft. Give me ten minutes.\" [stop it]", bundle: 'pro' },
+        { q: "The tone has changed and nobody has said so.", a: "\"This has gone a bit tense, hasn't it. I'd rather say that than pretend.\" [name it as we]", bundle: 'pro' },
+        { q: "You want to win more than you want to be right.", a: "\"I've stopped listening and started competing. That's on me.\" [name it as we]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Floor Is Not Shared",
+      guideFront: "What has gone wrong in this discussion?",
+      guideBack: "A possible response, with the move in brackets.",
+      description: "One person has had almost all the airtime — sometimes you, sometimes them, sometimes a third person in a group. The repair depends on which, but both versions are the same move: put the balance back deliberately.\n\nWhat it usually looks like:\n• You have spoken for four minutes without a pause.\n• Or: you have said almost nothing and are now resentful about it.\n• In a group, the quietest person has said one sentence.\n\nTwo ways through:\n1. Hand it over explicitly — \"I've had a good run at this. What do you think?\"\n2. Take your turn explicitly — \"Can I have thirty seconds? I've not said much.\"\n\nMindset: airtime is part of the discussion, not a side effect of it. Notice it and say something.",
+      inputs: [
+        { q: "You have been talking for four minutes.", a: "\"I've had a good run at that. What's your read on it?\" [hand it over]", bundle: 'pro' },
+        { q: "You have said almost nothing and are starting to resent it.", a: "\"Can I jump in? I've not said much and I do have a view.\" [take your turn]", bundle: 'pro' },
+        { q: "The quietest person in the group has said one sentence.", a: "\"Sara, you've been quiet — what do you make of it?\" [hand it over]", bundle: 'pro' },
+        { q: "Someone keeps talking over the same person.", a: "\"Hang on, she was still going. You were saying?\" [hand it over]", bundle: 'pro' },
+        { q: "You keep starting to speak and being cut off.", a: "\"Third time I've tried to say this — give me twenty seconds.\" [take your turn]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "You Have Changed Your Mind",
+      guideFront: "What has gone wrong in this discussion?",
+      guideBack: "A possible response, with the move in brackets.",
+      description: "Somewhere in the discussion they have convinced you, and now saying so feels like losing. It is not, and saying it plainly is the single most useful thing that can happen in a discussion — it is also what makes people willing to have the next one with you.\n\nWhat it usually looks like:\n• You are defending a position you no longer hold.\n• You are looking for a small point to be right about instead.\n• You want to concede but only quietly.\n\nTwo ways through:\n1. Say it plainly and name what changed it — \"the bit about the night shift did it\".\n2. Concede the part, not the whole — if only some of it moved you, say which.\n\nMindset: changing your mind is the discussion working. Concede out loud, and name what did it — that is a compliment as well as an answer.",
+      inputs: [
+        { q: "They have convinced you and you are still arguing.", a: "\"I'm defending something I don't think any more. You're right about the shift cover.\" [say it plainly]", bundle: 'pro' },
+        { q: "You are hunting for a small point to be right about.", a: "\"I'm picking at details to avoid saying you've changed my mind. So — you have.\" [say it plainly]", bundle: 'pro' },
+        { q: "Only half of their case moved you.", a: "\"The cost argument I'll give you. The timing one I still don't buy.\" [concede the part]", bundle: 'pro' },
+        { q: "Conceding feels like losing in front of others.", a: "\"I've come round to your view on this, for the record.\" [say it plainly]", bundle: 'pro' },
+        { q: "You want to concede but only quietly.", a: "\"Say the bit about the night shift again — that's the part that landed.\" [name what did it]", bundle: 'pro' },
+      ]
+    },
+  ],
+  storybanter: [
+    {
+      name: "You Blocked It",
+      guideFront: "What has gone wrong in this banter?",
+      guideBack: "A possible response, with the move in brackets.",
+      description: "You answered an invented detail with a fact, and the story stopped. Blocking is almost never meant — it comes out as a reflex to correct something — but the effect is the same, and it is the one failure the form cannot absorb.\n\nWhat it usually looks like:\n• \"That wouldn't happen, though.\"\n• \"Well, you couldn't actually do that.\"\n• A small silence, and then somebody changes the subject.\n\nTwo ways through:\n1. Take it back and accept it — out loud, lightly. \"Ignore me. Yes, and…\"\n2. Accept it too hard — over-agree, which repairs the block and is funnier than the original.\n\nMindset: nothing in a made-up story needs to be possible. The only rule is that you build on what you were given.",
+      inputs: [
+        { q: "You said \"that wouldn't happen\" and the story stopped.", a: "\"Ignore me, I'm being boring. Yes — and the dog has a locker now.\" [take it back]", bundle: 'pro' },
+        { q: "You corrected a detail out of reflex.", a: "\"Forget the physics. He's in the fort. The fort is the point.\" [accept it]", bundle: 'pro' },
+        { q: "You answered an absurd plan with a practical objection.", a: "\"You know what, you're right, it'd work perfectly. That's the terrifying part.\" [accept it too hard]", bundle: 'pro' },
+        { q: "There is a small silence after something you said.", a: "\"That was me killing it, sorry. Where were we — the pizzas?\" [take it back]", bundle: 'pro' },
+        { q: "You are about to say \"but\".", a: "\"Yes, AND — because 'but' is how I lose friends.\" [accept it]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "It Went Flat",
+      guideFront: "What has gone wrong in this banter?",
+      guideBack: "A possible response, with the move in brackets.",
+      description: "The last few turns have all been agreeable and nothing is at stake. The story is pleasant, which is the state it dies in. The repair is a problem, not a better joke.\n\nWhat it usually looks like:\n• Two or three turns in a row that just add nice things.\n• Both of you waiting for the other to be funny.\n• The energy has dropped and neither of you has said so.\n\nTwo ways through:\n1. Complicate it — What If, aimed at the situation.\n2. Bring someone in — a new person with a reaction restarts it for free.\n\nMindset: a flat story needs a problem, not a punchline. Give the other person something to be funny about.",
+      inputs: [
+        { q: "Nothing has gone wrong in the story for three turns.", a: "\"What if your mum's been home the whole time, though?\" [complicate]", bundle: 'pro' },
+        { q: "You are both waiting for the other one to be funny.", a: "\"Right, this is where the neighbour appears at the fence.\" [bring someone in]", bundle: 'pro' },
+        { q: "The story is a list of pleasant things.", a: "\"What if it works so well that they make it your permanent job?\" [complicate]", bundle: 'pro' },
+        { q: "The energy has gone and neither of you has said so.", a: "\"And the dog has been watching this whole plan with open contempt.\" [bring someone in]", bundle: 'pro' },
+        { q: "You have added three details and none of them landed.", a: "\"So what happens when someone actually knocks on the fort?\" [then what]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "It Got Personal",
+      guideFront: "What has gone wrong in this banter?",
+      guideBack: "A possible response, with the move in brackets.",
+      description: "A complication landed on the person rather than on the situation — a joke about their laziness rather than about the imaginary week off. The form only works while everything absurd is happening to an invented version of things.\n\nWhat it usually looks like:\n• The \"what if\" was about them being bad at something.\n• They laughed a beat late, or not quite.\n• The story is suddenly about a real thing.\n\nTwo ways through:\n1. Move the target back to the situation — immediately, without a speech about it.\n2. Turn it on yourself — the fastest repair there is.\n\nMindset: everything in the story is invented, including the version of them in it. The moment it is about the real person, it stops being banter.",
+      inputs: [
+        { q: "Your complication was really a dig at them.", a: "\"Actually scrap that — what if it's me who gets caught, hiding in your fort?\" [turn it on yourself]", bundle: 'pro' },
+        { q: "They laughed half a beat late.", a: "\"Anyway, the pizzas. Thirty of them. That's the real crisis here.\" [back to the situation]", bundle: 'pro' },
+        { q: "The story has drifted onto something real about them.", a: "\"This has stopped being made up, hasn't it. Back to the dog doing maths.\" [back to the situation]", bundle: 'pro' },
+        { q: "You made a joke about something they actually mind.", a: "\"That one was on me and it wasn't funny. Where were we — the council man?\" [take it back]", bundle: 'pro' },
+        { q: "You are about to aim a what-if at them rather than at the plan.", a: "\"What if I turn up as well and make it twice as bad?\" [turn it on yourself]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "It Went On Too Long",
+      guideFront: "What has gone wrong in this banter?",
+      guideBack: "A possible response, with the move in brackets.",
+      description: "The best moment has passed and you are both still going. Everyone remembers the four extra minutes; nobody remembers a story that stopped one turn early.\n\nWhat it usually looks like:\n• The biggest laugh was three turns ago.\n• You are inventing rather than building.\n• Someone has checked their phone.\n\nTwo ways through:\n1. Land it flat — one sentence that closes it, then a change of subject.\n2. Hand it to them to finish — \"how does this end?\" gets a last line and an exit.\n\nMindset: stop while it is still funny. Ending one turn early is invisible; ending three turns late is the thing people remember.",
+      inputs: [
+        { q: "The biggest laugh was three turns ago.", a: "\"Anyway — that's how you end up moving cities. Right, coffee?\" [land it]", bundle: 'pro' },
+        { q: "You are inventing rather than building on each other.", a: "\"Go on, how does this actually end? Give me the last bit.\" [hand it over]", bundle: 'pro' },
+        { q: "Someone has checked their phone.", a: "\"I'm going to leave it there while it's still good. The dog got a promotion, the end.\" [land it]", bundle: 'pro' },
+        { q: "The story has no natural stopping point.", a: "\"Let's stop before the council gets properly involved.\" [land it]", bundle: 'pro' },
+        { q: "You want one more turn and probably should not have it.", a: "\"One more and I ruin it. Your ending, and then we're done.\" [hand it over]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "You Have Nothing",
+      guideFront: "What has gone wrong in this banter?",
+      guideBack: "A possible response, with the move in brackets.",
+      description: "It is your turn, the story is going well, and your mind is completely blank. The mistake is waiting until you think of something clever. Two of the six techniques need no invention at all.\n\nWhat it usually looks like:\n• A pause that has gone on a beat too long.\n• You are searching for something funny rather than something next.\n• You say \"yeah\" and the turn passes to nobody.\n\nTwo ways through:\n1. Follow the consequence — \"so then what happens is…\" requires no idea, only their last line.\n2. Ask a playful question — an invitation is always available and always in bounds.\n\nMindset: you do not need an idea. You need a next thing, and their last line already contains one.",
+      inputs: [
+        { q: "It is your turn and your mind is blank.", a: "\"So then your mum gets home before the boxes do.\" [follow the consequence]", bundle: 'pro' },
+        { q: "You are hunting for something clever.", a: "\"Wait — what does the dog think about all this?\" [ask a question]", bundle: 'pro' },
+        { q: "You said \"yeah\" and the story stalled.", a: "\"Which means by Friday you're basically nocturnal.\" [follow the consequence]", bundle: 'pro' },
+        { q: "The pause has gone on a beat too long.", a: "\"Okay, but where does the fort actually go? Physically.\" [ask a question]", bundle: 'pro' },
+        { q: "Everything you think of feels flat.", a: "\"Yes, and — I don't know where that goes yet, but yes and.\" [yes and]", bundle: 'pro' },
+      ]
+    },
+  ],
+  explainthings2: [
+    {
+      name: "You Answered the Literal Question",
+      guideFront: "What has gone wrong with this explanation?",
+      guideBack: "A possible response, with the move in brackets.",
+      description: "They asked what something is, you told them what it is, and it helped nobody — because what they wanted was whether it had anything to do with them. The repair is to give a different W rather than a better version of the same one.\n\nWhat it usually looks like:\n• They nod and nothing happens behind it.\n• They ask the same question again in slightly different words.\n• They could see the object while you defined it.\n\nTwo ways through:\n1. Switch to Who or When — the two that answer relevance.\n2. Ask which part they are stuck on — six words, no cost.\n\nMindset: a correct answer that helps nobody is still a failed explanation.",
+      inputs: [
+        { q: "You defined the thing and they still look blank.", a: "\"That was the what, and it didn't land. The point is you stop chasing people.\" [switch W]", bundle: 'pro' },
+        { q: "They asked what it is while holding it.", a: "\"You can see what it is — it's for dark mornings, mainly.\" [switch W]", bundle: 'pro' },
+        { q: "They have asked the same question twice.", a: "\"I'm answering the wrong bit. Which part is unclear — what it does, or whether you'd want one?\" [ask]", bundle: 'pro' },
+        { q: "You are about to repeat the definition more slowly.", a: "\"Let me come at it differently: it's for people with more than one calendar.\" [switch W]", bundle: 'pro' },
+        { q: "They asked in a shop, deciding between two.", a: "\"For what you'd use it for, they're the same. The difference only matters if you carry it daily.\" [switch W]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Lecture",
+      guideFront: "What has gone wrong with this explanation?",
+      guideBack: "A possible response, with the move in brackets.",
+      description: "You started long, and by the time you reached the useful part they had stopped following. The repair is to stop where you are, give the one-sentence version, and let them ask.\n\nWhat it usually looks like:\n• Three \"rights\" in a row.\n• You are two minutes in and have not reached the point.\n• You began with background because it felt thorough.\n\nTwo ways through:\n1. Land it in one sentence — say the short version now, late.\n2. Hand them the choice — \"want the rest, or is that enough?\"\n\nMindset: nobody has ever complained that an explanation was too short. They ask, if it was.",
+      inputs: [
+        { q: "They have said \"right\" three times.", a: "\"I'll land this: it's a shared list where every line has one owner.\" [land it]", bundle: 'pro' },
+        { q: "You are two minutes in and still on the background.", a: "\"I've buried the point. The point is it stops things sitting unclaimed.\" [land it]", bundle: 'pro' },
+        { q: "You can hear yourself going on.", a: "\"That's more than you asked for. Do you want the rest or is that plenty?\" [hand them the choice]", bundle: 'pro' },
+        { q: "You started with the history of the thing.", a: "\"Skip all that — what it does is give every task one name against it.\" [land it]", bundle: 'pro' },
+        { q: "Someone asked a small question and got four minutes.", a: "\"Short answer, which I should have led with: yes, and it takes ten seconds.\" [land it]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Everybody Benefits",
+      guideFront: "What has gone wrong with this explanation?",
+      guideBack: "A possible response, with the move in brackets.",
+      description: "Your explanation makes the thing sound useful to everyone, which is exactly what an advertisement sounds like. The repair is to name who it is not for, which makes the rest believable again.\n\nWhat it usually looks like:\n• You have listed four benefits and no drawbacks.\n• They have gone politely non-committal.\n• You would not actually recommend it to them, and you have not said so.\n\nTwo ways through:\n1. Name who it is not for — the honest half of Who.\n2. Say where they sit — directly, even when it is a no.\n\nMindset: an explanation with no \"not for you\" in it is a pitch, and people hear the difference immediately.",
+      inputs: [
+        { q: "You have made it sound useful to absolutely everyone.", a: "\"To be fair, if you cook twice a week it's just a big object in a cupboard.\" [who it is not for]", bundle: 'pro' },
+        { q: "They have gone politely non-committal.", a: "\"Honestly, for what you do, I don't think you'd use it.\" [say where they sit]", bundle: 'pro' },
+        { q: "You are describing something you love to someone who would not use it.", a: "\"I'm biased. For your setup it'd be solving a problem you don't have.\" [say where they sit]", bundle: 'pro' },
+        { q: "They ask if they should get one and you are not sure.", a: "\"It depends on one thing — do you carry it daily? If not, no.\" [name the condition]", bundle: 'pro' },
+        { q: "Every sentence has been a benefit.", a: "\"The catch is it takes about a week before it saves you any time at all.\" [name the drawback]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "No Shelf To Put It On",
+      guideFront: "What has gone wrong with this explanation?",
+      guideBack: "A possible response, with the move in brackets.",
+      description: "You have explained the mechanics of something with an unfamiliar shape, and none of it stuck because they had nowhere to put it. The repair is to go back and give the setting and the group first.\n\nWhat it usually looks like:\n• They are following each sentence and retaining none of them.\n• You began with how it works.\n• They ask \"but what is it for?\" after a perfectly clear description.\n\nTwo ways through:\n1. Give it neighbours — what it sits between, before, after.\n2. Give the setting first, then the mechanics.\n\nMindset: give it a shelf before you give it a manual.",
+      inputs: [
+        { q: "They followed every sentence and retained nothing.", a: "\"Let me place it first: it's an office thing, for teams that share rooms.\" [setting first]", bundle: 'pro' },
+        { q: "You opened with how it works.", a: "\"That's the how. Where it sits is right after the draft, before anyone else reads it.\" [neighbours]", bundle: 'pro' },
+        { q: "They ask what it's for after a clear description.", a: "\"Fair — it belongs to the booking bit. Everything before that stays the same.\" [setting first]", bundle: 'pro' },
+        { q: "The thing has no obvious category.", a: "\"Closest thing is a kitchen timer, but for people rather than food.\" [neighbours]", bundle: 'pro' },
+        { q: "They cannot tell whether it is a tool or a service.", a: "\"It's a service that looks like a tool. That confuses everybody at first.\" [neighbours]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Wrong Level of Detail",
+      guideFront: "What has gone wrong with this explanation?",
+      guideBack: "A possible response, with the move in brackets.",
+      description: "You pitched it at the wrong depth — too technical for the person in front of you, or so simplified that it sounded evasive. The repair is to name the level out loud and let them choose.\n\nWhat it usually looks like:\n• Their questions are more basic than your answers.\n• Or: they are visibly waiting for you to get past the obvious.\n• You are guessing what they know and guessing wrong in both directions.\n\nTwo ways through:\n1. Ask what they already know — one sentence, and it saves five.\n2. Offer the two versions — \"the simple one or the real one?\"\n\nMindset: you cannot guess someone's starting point reliably. Asking takes six words.",
+      inputs: [
+        { q: "Their questions are more basic than your answers.", a: "\"I've pitched this too high. Start again: it's a list, shared between people.\" [simpler]", bundle: 'pro' },
+        { q: "They are waiting for you to get past the obvious.", a: "\"You know all this — skip to the bit that's different, which is the ownership rule.\" [go deeper]", bundle: 'pro' },
+        { q: "You have no idea what they already know.", a: "\"How much of this do you already deal with? I'll start from there.\" [ask]", bundle: 'pro' },
+        { q: "You are explaining to two people with very different backgrounds.", a: "\"I'll do the simple version, and grab me afterwards for the detail.\" [offer both]", bundle: 'pro' },
+        { q: "You simplified so hard it sounded evasive.", a: "\"That was too neat. The honest version is messier — there are two systems and they don't quite agree.\" [go deeper]", bundle: 'pro' },
+      ]
+    },
+  ],
+  buildingastory: [
+    {
+      name: "The Setup Ate the Story",
+      guideFront: "What has gone wrong with this story?",
+      guideBack: "A possible response, with the move in brackets.",
+      description: "You are two minutes in and nothing has happened yet. Everybody who needed to be introduced has been introduced, and the room has quietly gone. It is the most common failure in the pack and it always has the same cause: explaining before starting.\n\nWhat it usually looks like:\n• You are still describing who people are.\n• Somebody has said \"right\" twice while you set the scene.\n• The interesting bit is still two sentences away.\n\nTwo ways through:\n1. Jump to the turn — say it now and backfill only what is needed.\n2. Restart the opening out loud — costs nothing and usually gets a laugh.\n\nMindset: context can arrive late. Attention cannot.",
+      inputs: [
+        { q: "You are two minutes in and nothing has happened.", a: "\"Right, I'm burying this — the point is the lift stopped with four of us in it.\" [jump to the turn]", bundle: 'pro' },
+        { q: "You are still explaining who everyone is.", a: "\"You don't need any of that. Someone I work with had already told them.\" [jump to the turn]", bundle: 'pro' },
+        { q: "Somebody has said \"right\" twice during your setup.", a: "\"Let me start again properly: I got locked out of the building with my laptop inside.\" [restart]", bundle: 'pro' },
+        { q: "The story needs context but not this much.", a: "\"One thing you need: my brother had the only key. That's it, that's the background.\" [restart]", bundle: 'pro' },
+        { q: "You can hear yourself explaining rather than telling.", a: "\"I'll do this the other way round — here's what happened, then I'll explain.\" [jump to the turn]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "There Is No Turn",
+      guideFront: "What has gone wrong with this story?",
+      guideBack: "A possible response, with the move in brackets.",
+      description: "You have told a sequence of events and nothing in it changed. It was a day, described. Sometimes the story genuinely has no turn, and the honest move is to say so rather than keep hoping one arrives.\n\nWhat it usually looks like:\n• You are still adding events, hoping one lands.\n• The listener is waiting politely for the point.\n• You have said \"and then\" four times.\n\nTwo ways through:\n1. Find the smallest turn in it — a realisation counts, and so does a decision.\n2. Abandon it lightly — \"this is going nowhere\" is a better ending than eight more sentences.\n\nMindset: if you cannot name the moment it changed, you have an anecdote about a day. That is allowed — just do not tell it as though it has a punchline coming.",
+      inputs: [
+        { q: "You are adding events hoping one of them lands.", a: "\"None of this is going anywhere, is it. Anyway — how was Denmark?\" [abandon]", bundle: 'pro' },
+        { q: "The story is a description of an afternoon.", a: "\"The bit that actually got me was realising I'd been in the wrong queue the whole time.\" [find the turn]", bundle: 'pro' },
+        { q: "You have said \"and then\" four times.", a: "\"Let me get to the thing: none of it mattered because the office was shut.\" [find the turn]", bundle: 'pro' },
+        { q: "There is genuinely no turn in it.", a: "\"That's it, that's the story. It was a very ordinary Thursday.\" [abandon]", bundle: 'pro' },
+        { q: "The listener is waiting for a point you do not have.", a: "\"You had to be there. You weren't. I've oversold this.\" [abandon]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Ending Got Mumbled",
+      guideFront: "What has gone wrong with this story?",
+      guideBack: "A possible response, with the move in brackets.",
+      description: "You had the laugh you wanted three sentences ago and now you are winding down rather than landing. The ending arrives as an afterthought and the listener cannot tell whether you are finished.\n\nWhat it usually looks like:\n• \"…anyway, yeah.\"\n• You explained the ending instead of saying it.\n• Somebody said \"right\" and you both moved on awkwardly.\n\nTwo ways through:\n1. Say the last line on purpose — the one you told it for, put last.\n2. Land it flat — \"so we drove home, that's it\" is a perfectly good ending.\n\nMindset: the ending is what they remember. Say it, then stop talking.",
+      inputs: [
+        { q: "You are about to say \"anyway, yeah\".", a: "\"…and that's how I ended up carrying a door through town.\" [say the last line]", bundle: 'pro' },
+        { q: "You never actually said how it ended.", a: "\"Oh — and it was fine. She'd taken it home by mistake.\" [land it]", bundle: 'pro' },
+        { q: "The story has no punchline and you are searching for one.", a: "\"So we drove home. That's genuinely it.\" [land it flat]", bundle: 'pro' },
+        { q: "You explained the ending rather than saying it.", a: "\"Short version of that: he still says it wasn't his fault.\" [say the last line]", bundle: 'pro' },
+        { q: "You have wound down instead of finishing.", a: "\"I've never parked there since. That's the end of it.\" [land it]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Moral Was Bolted On",
+      guideFront: "What has gone wrong with this story?",
+      guideBack: "A possible response, with the move in brackets.",
+      description: "The story was fine and then you added a lesson it did not have. A forced takeaway makes an honest anecdote sound like a parable, and everybody can hear the seam.\n\nWhat it usually looks like:\n• \"I suppose what it taught me was…\" after a story about a lift.\n• The lesson is more general than the story.\n• You added it because the ending felt too small.\n\nTwo ways through:\n1. Take it off — say there is no lesson, which is often the better ending.\n2. Swap it for the honest one — usually smaller and more specific than the invented version.\n\nMindset: an ending does not need to mean anything. \"It was just a strange day\" is a complete sentence.",
+      inputs: [
+        { q: "You have attached a lesson to a story that has none.", a: "\"I was making that mean something. It doesn't. It was just funny.\" [take it off]", bundle: 'pro' },
+        { q: "The moral is much bigger than the story.", a: "\"That's overclaiming. What actually changed is I check the bag now.\" [swap it]", bundle: 'pro' },
+        { q: "You added a lesson because the ending felt thin.", a: "\"There's no moral. That's genuinely the whole thing and I liked it.\" [take it off]", bundle: 'pro' },
+        { q: "The real takeaway is less flattering than the invented one.", a: "\"The honest version is it was my fault and I knew at the time.\" [swap it]", bundle: 'pro' },
+        { q: "You are about to say \"I suppose what it taught me was\".", a: "\"No lesson. Just a very odd Tuesday.\" [take it off]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "You Missed the Moment",
+      guideFront: "What has gone wrong with this story?",
+      guideBack: "A possible response, with the move in brackets.",
+      description: "You had something worth telling and by the time you had decided which story and how to start it, the conversation had moved. Nearly all missed stories are lost here rather than to a shortage of material.\n\nWhat it usually looks like:\n• You are still choosing between two while the subject changes.\n• You wanted the best one rather than the first one.\n• The moment has gone and you are quietly annoyed about it.\n\nTwo ways through:\n1. Take it back — \"going back a bit\" costs nothing and works.\n2. Next time, start before you have finished choosing — the shape will carry it.\n\nMindset: fifteen seconds. Then start, even if you have not worked out the ending yet.",
+      inputs: [
+        { q: "The subject changed while you were choosing.", a: "\"Going back a bit — this is what your bus thing reminded me of.\" [take it back]", bundle: 'pro' },
+        { q: "You were picking the best story instead of the first.", a: "\"I've got a smaller one that's actually more to the point.\" [take it back]", bundle: 'pro' },
+        { q: "You are still deciding and it is your turn now.", a: "\"Right — this is about a bike, and I'll work out why as I go.\" [start anyway]", bundle: 'pro' },
+        { q: "You know the story is good but not how to begin it.", a: "\"I'll start in the wrong place and fix it: I ended up carrying a wardrobe.\" [start anyway]", bundle: 'pro' },
+        { q: "The moment has passed and you are annoyed about it.", a: "\"That reminds me of something from earlier that I never said. Can I?\" [take it back]", bundle: 'pro' },
+      ]
+    },
+  ],
+  reframing: [
+    {
+      name: "It Landed as Denial",
+      guideFront: "What has gone wrong with this reframe?",
+      guideBack: "A possible response, with the move in brackets.",
+      description: "The positive reading required leaving something out, and the other person noticed. A reframe that ignores part of the facts is not a reframe; it is a request to pretend, and it costs trust rather than helping.\n\nWhat it usually looks like:\n• \"Yes, but you're forgetting that…\"\n• They list the things your reading skipped.\n• The conversation has become about whether it was really that bad.\n\nTwo ways through:\n1. Concede the part you skipped — immediately and without defending it.\n2. Drop the reframe entirely — \"you're right, I was making it smaller than it is.\"\n\nMindset: a reframe has to hold every fact that the original one held. If it does not, it is a nicer story rather than a truer one.",
+      inputs: [
+        { q: "They pointed out what your reading ignored.", a: "\"You're right — I skipped the money, and the money is the actual problem.\" [concede]", bundle: 'pro' },
+        { q: "You made it sound smaller than it is.", a: "\"I was making that smaller than it is. It's genuinely a mess.\" [drop it]", bundle: 'pro' },
+        { q: "The upside you named requires ignoring the cost.", a: "\"That upside doesn't pay for the cost, does it. Forget it.\" [concede]", bundle: 'pro' },
+        { q: "They are now arguing that it really was that bad.", a: "\"It was that bad. I don't want to win an argument about how bad it was.\" [drop it]", bundle: 'pro' },
+        { q: "You reached for a silver lining out of habit.", a: "\"That was a reflex, not a thought. What's actually the hardest part of it?\" [drop it]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "You Reframed Too Early",
+      guideFront: "What has gone wrong with this reframe?",
+      guideBack: "A possible response, with the move in brackets.",
+      description: "The reading was right and the timing was wrong. Offered before the person has been acknowledged, a reframe is heard as being told how to feel, and the effect is that they stop telling you things.\n\nWhat it usually looks like:\n• They repeat the complaint, louder, rather than taking the reframe.\n• \"I know, I know\" and then no engagement.\n• It happened within a few minutes of the event.\n\nTwo ways through:\n1. Go back and acknowledge — late is much better than never.\n2. Park it out loud — \"I've got a thought about it, but not today.\"\n\nMindset: acknowledgement first, always. Most reframes that fail were correct and premature.",
+      inputs: [
+        { q: "They repeated the complaint louder instead of taking your reading.", a: "\"I jumped ahead. That's a genuinely rubbish thing to have happened.\" [acknowledge]", bundle: 'pro' },
+        { q: "You offered perspective five minutes after the event.", a: "\"Ignore me, it's far too early for that. How are you doing?\" [park it]", bundle: 'pro' },
+        { q: "They said \"I know, I know\" and went quiet.", a: "\"I've been trying to fix it and you didn't ask me to. Tell me the rest.\" [acknowledge]", bundle: 'pro' },
+        { q: "You can see the reframe is right but they are not ready.", a: "\"There's another way of looking at it. Ask me next week if you want it.\" [park it]", bundle: 'pro' },
+        { q: "They have gone quiet after your third helpful angle.", a: "\"I'll stop being useful. That sounds like it's been a horrible week.\" [acknowledge]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "It Sounded Like a Correction",
+      guideFront: "What has gone wrong with this reframe?",
+      guideBack: "A possible response, with the move in brackets.",
+      description: "The content was fine and the framing made it a lesson. \"You should look at it as…\" tells somebody their reading is wrong, and people defend a reading they have been told is wrong even when they had not much liked it.\n\nWhat it usually looks like:\n• You started with \"you should\" or \"you need to\".\n• You presented the reframe as the correct view rather than another one.\n• They have started defending an interpretation they did not care much about.\n\nTwo ways through:\n1. Mark it as one reading — \"one way to look at it\", not \"the way\".\n2. Own the uncertainty — \"I might be wrong about this.\"\n\nMindset: offer, do not correct. \"Here's another way to see it\" and \"you're seeing it wrong\" contain the same information and produce opposite conversations.",
+      inputs: [
+        { q: "You said \"you should see it as a good thing\".", a: "\"Let me say that better — one way to look at it is that it surfaced early.\" [mark it]", bundle: 'pro' },
+        { q: "They are defending a reading they did not seem attached to.", a: "\"I'm not trying to talk you out of yours. Mine's just an option.\" [mark it]", bundle: 'pro' },
+        { q: "Your reframe arrived as a lesson.", a: "\"That came out like advice and I didn't mean it to. I might be wrong anyway.\" [own the uncertainty]", bundle: 'pro' },
+        { q: "You have repeated the same reframe twice.", a: "\"I'll stop. You've heard it and you can do what you like with it.\" [mark it]", bundle: 'pro' },
+        { q: "You are about to say \"you need to stop thinking of it as\".", a: "\"Can I offer a different angle? Throw it out if it's no use.\" [mark it]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Humour Landed on Them",
+      guideFront: "What has gone wrong with this reframe?",
+      guideBack: "A possible response, with the move in brackets.",
+      description: "You aimed the scale joke at their reaction rather than at the size of the thing, and it came out as \"you're overreacting\". The move is only warm when the target is the event.\n\nWhat it usually looks like:\n• A laugh that arrived half a beat late, or not at all.\n• The joke implied the feeling was silly.\n• They have gone quiet or become defensive.\n\nTwo ways through:\n1. Repair it plainly — \"that came out as though I was making fun of you\".\n2. Turn the scale on yourself — the fastest available fix.\n\nMindset: shrink the event, never the reaction. The first is a relief and the second is a criticism with a smile on it.",
+      inputs: [
+        { q: "The laugh came half a beat late.", a: "\"That came out wrong — I was aiming at the glass, not at you.\" [repair]", bundle: 'pro' },
+        { q: "Your joke implied the feeling was silly.", a: "\"I'd have been mortified too, for the record. I once did the same thing at a wedding.\" [turn it on yourself]", bundle: 'pro' },
+        { q: "They have gone quiet after your remark.", a: "\"Sorry. Genuinely, though, is it bothering you more than it looks?\" [repair]", bundle: 'pro' },
+        { q: "You are about to say \"it's not that big a deal\".", a: "\"It feels enormous right now, I know. From outside it's a spilt glass.\" [repair]", bundle: 'pro' },
+        { q: "The thing is small but the feeling clearly is not.", a: "\"The thing is small and the feeling isn't. Those can both be true.\" [repair]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Somebody Is Reframing You",
+      guideFront: "What has gone wrong with this reframe?",
+      guideBack: "A possible response, with the move in brackets.",
+      description: "You are on the receiving end — every feeling you report comes back as a lesson or a bright side, and you are starting to stop mentioning things. This is worth having a sentence ready for.\n\nWhat it usually looks like:\n• \"At least…\" arrives before you have finished a sentence.\n• You leave feeling worse and cannot say why.\n• You have stopped telling them the difficult things.\n\nTwo ways through:\n1. Ask for what you want instead — \"I'd rather just be annoyed about it for a bit.\"\n2. Say the effect plainly — \"when it gets turned into a lesson I stop wanting to say anything.\"\n\nMindset: you are allowed to decline a reframe. \"I know, and I'm not ready to be sensible about it yet\" is a complete sentence.",
+      inputs: [
+        { q: "Every complaint comes back as a silver lining.", a: "\"I know there's an upside. I'd like to be fed up about it for one more day first.\" [ask for what you want]", bundle: 'pro' },
+        { q: "They keep turning your feelings into lessons.", a: "\"When it turns into a lesson straight away, I stop wanting to bring things up.\" [say the effect]", bundle: 'pro' },
+        { q: "You are told to be grateful for the parts that went well.", a: "\"I am grateful for those. It's still a bad outcome and I'd like to say so.\" [ask for what you want]", bundle: 'pro' },
+        { q: "You have started keeping things to yourself.", a: "\"Can I just tell you about it without us fixing it? That's all I want today.\" [ask for what you want]", bundle: 'pro' },
+        { q: "\"At least it wasn't worse\" has arrived too fast, again.", a: "\"It could have been worse and it's still bad. Both of those are true.\" [say the effect]", bundle: 'pro' },
+      ]
+    },
+  ],
 };

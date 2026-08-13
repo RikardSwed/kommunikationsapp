@@ -5206,4 +5206,580 @@ const multiStepCollections = {
       ]
     },
   ],
+  setupquestion: [
+    {
+      name: "Ask, Listen, Answer",
+      guideFront: "Ask, listen properly, then answer it yourself.",
+      guideBack: "A line you could say at this step.",
+      description: "The whole move in three beats: ask the question, actually listen to the answer, then give your own. The third step is the one people drop, and dropping it is what turns a good opener into an interview. Steps: 1) Ask — a question about something you want to talk about, 2) Listen — react to what they actually said, 3) Answer — give your own answer to the same question.\n\nThe shape of the whole thing:\n1. \"What made you sign up for this?\"\n2. \"Six months of meaning to — that sounds familiar.\"\n3. \"I came because I finally ran out of excuses.\"\n\nWhy this order: asking first shows interest and costs you nothing, and answering afterwards is what makes it mutual. Reverse it and you have a Setup Statement, which is a different pack.\n\nMindset: step 3 is not optional. A question you never answer yourself is an interview, and people can feel the difference within about two exchanges.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You have just sat down next to someone before a workshop starts.",
+          steps: [
+            { front: "Step 1 · Ask — you decide to open with a question", back: "\"What made you sign up for this one?\"" },
+            { front: "Step 2 · Listen — they say \"my manager sent me, for a project\"", back: "\"A project — what are you actually building?\"" },
+            { front: "Step 3 · Answer — give them yours too", back: "\"I came to steal ideas, honestly. Mine's a mess.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A friend of a friend at a party, both of you a bit tired.",
+          steps: [
+            { front: "Step 1 · Ask — the mood is the obvious thing", back: "\"How's your evening going so far?\"" },
+            { front: "Step 2 · Listen — they say \"I came straight from a night shift\"", back: "\"A night shift and then this? That's commitment.\"" },
+            { front: "Step 3 · Answer — say where you are too", back: "\"I nearly bailed on tonight. Low-energy day.\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Question into Story",
+      guideFront: "Ask, listen properly, then answer it yourself.",
+      guideBack: "A line you could say at this step.",
+      description: "Ask a background question, follow the detail they give you, and then give a piece of your own instead of moving on. Good when you want the conversation to deepen rather than bounce. Steps: 1) Ask — where they have come from, 2) Follow — pick up one detail and go further, 3) Match — give a piece of your own at the same size.\n\nThe shape of the whole thing:\n1. \"How do you know everyone here?\"\n2. \"You grew up together? Okay, I need one embarrassing story.\"\n3. \"I've known the host about a year and I'm still the new one.\"\n\nWhy this order: a background question almost always produces a story rather than a word, and matching it with something of your own is what stops you being the one who asks all the questions.\n\nMindset: follow one detail properly, then match it. Two questions in a row without anything of yours in between is where it starts to feel like an interview.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "Arriving at a dinner where you only know the host.",
+          steps: [
+            { front: "Step 1 · Ask — you want a thread, not a yes", back: "\"How do you know everyone here?\"" },
+            { front: "Step 2 · Follow — they say \"I grew up with the host\"", back: "\"Grew up together? I need one embarrassing story.\"" },
+            { front: "Step 3 · Match — give them yours", back: "\"I've known him a year and I'm still the new one.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A colleague you have never spoken to properly, waiting for a lift.",
+          steps: [
+            { front: "Step 1 · Ask — where they came from", back: "\"Have you been here long? I've never worked out who's new.\"" },
+            { front: "Step 2 · Follow — they say \"eleven years, on and off\"", back: "\"On and off? What made you leave, and what brought you back?\"" },
+            { front: "Step 3 · Match — give a piece the same size", back: "\"I'm three months in and still guessing at half the names.\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "When the First One Stalls",
+      guideFront: "Ask, listen properly, then answer it yourself.",
+      guideBack: "A line you could say at this step.",
+      description: "You asked, they gave you almost nothing, and the temptation is to ask the same question again in different words. Three beats get out of it instead. Steps: 1) Answer your own question, small and concrete, 2) Ask again — narrower, and about something specific, 3) Follow whatever comes back.\n\nThe shape of the whole thing:\n1. \"Mine's been dull, honestly — mostly a spreadsheet.\"\n2. \"Have you got anything on the go at the moment?\"\n3. \"A greenhouse? In this weather?\"\n\nWhy this order: your own small answer shows the size of answer you meant, which is usually what was missing. Then a narrower question is answerable without any effort, and the third step is just following what they gave you.\n\nMindset: never ask the same question twice. Go first yourself, then make it smaller.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You asked how their week has been and got \"fine, you?\"",
+          steps: [
+            { front: "Step 1 · Answer yours, small", back: "\"Dull, honestly. Mostly a spreadsheet I don't understand.\"" },
+            { front: "Step 2 · Ask again, narrower", back: "\"Have you got anything on the go outside work?\"" },
+            { front: "Step 3 · Follow it", back: "\"A greenhouse? In this weather? How's that going?\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A neighbour you barely know, both taking bins out.",
+          steps: [
+            { front: "Step 1 · Answer yours, small", back: "\"I've had a week of it — the boiler's gone again.\"" },
+            { front: "Step 2 · Ask again, narrower", back: "\"Has yours held up? I assume they're all the same age.\"" },
+            { front: "Step 3 · Follow it", back: "\"Replaced the whole thing? Who did you get to do it?\"" },
+          ]
+        },
+      ]
+    },
+  ],
+  givingcounterexamples: [
+    {
+      name: "Concede, Except, Stop",
+      guideFront: "They have made the claim. Take the \"always\" out without taking the point away.",
+      guideBack: "A line you could say at this step.",
+      description: "The whole move in three beats: agree with the general case, give one exception, and then stop talking. The third step is the one people drop, and dropping it is what turns a counter-example into an argument. Steps: 1) Concede — say the claim is usually right, 2) Except — one case where it was not, 3) Stop — let them do something with it.\n\nThe shape of the whole thing:\n1. \"Exercise usually does help, yeah.\"\n2. \"I trained hard all last week and still felt awful.\"\n3. (nothing — let them answer)\n\nWhy this order: conceding first means the exception arrives as information rather than as opposition, and stopping afterwards leaves them room to adjust their own claim, which they will do far more readily than they will accept yours.\n\nMindset: the silence after the exception is doing work. Fill it with a second example and you have started arguing.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "A friend says exercise always makes you happier.",
+          steps: [
+            { front: "Step 1 · Concede — agree with the general case", back: "\"It usually does, honestly.\"" },
+            { front: "Step 2 · Except — one case, yours", back: "\"I trained hard all last week and felt flat the whole time.\"" },
+            { front: "Step 3 · Stop — leave it with them", back: "\"Anyway. Might just have been the week.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A colleague says nobody uses the old system any more.",
+          steps: [
+            { front: "Step 1 · Concede — the direction is right", back: "\"It's definitely on the way out.\"" },
+            { front: "Step 2 · Except — a real number", back: "\"I counted Monday, though. Eleven people opened it that week.\"" },
+            { front: "Step 3 · Stop — hand the decision back", back: "\"So it's eleven people we'd need to move.\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "When They Defend the Rule",
+      guideFront: "They have made the claim. Take the \"always\" out without taking the point away.",
+      guideBack: "A line you could say at this step.",
+      description: "They have answered your exception by explaining it away — \"that's different\", \"that's one person\". The move is to agree that it is one case, and to say what it means, which is narrower than they think you meant. Steps: 1) Agree it is one case, 2) Say what one case shows, 3) Offer the smaller version of their claim.\n\nThe shape of the whole thing:\n1. \"You're right, it's one person.\"\n2. \"One is enough to make it 'usually' rather than 'always', though.\"\n3. \"Which is probably what we both actually think.\"\n\nWhy this order: an exception does not disprove a rule, and pretending it does is what loses the argument. Conceding that immediately, and then naming what it does show, gets you the narrower claim, which was all you wanted.\n\nMindset: you are not trying to knock the claim over. You are trying to get the word \"always\" out of it, and then you are finished.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You gave a counter-example and they said \"that's just one person\".",
+          steps: [
+            { front: "Step 1 · Agree — concede the size", back: "\"It is just one, you're right.\"" },
+            { front: "Step 2 · What it shows — narrow, not nothing", back: "\"It makes it a strong tendency rather than a rule.\"" },
+            { front: "Step 3 · Offer the smaller claim", back: "\"'Most people' I'd agree with completely.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "They say your example is a special case that does not count.",
+          steps: [
+            { front: "Step 1 · Agree — it is unusual", back: "\"It is unusual, I'll give you that.\"" },
+            { front: "Step 2 · What it shows — the rule has an edge", back: "\"It means there's a group it doesn't cover, and I think it's bigger than one.\"" },
+            { front: "Step 3 · Offer the smaller claim", back: "\"Would you go with 'for most people, most of the time'?\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "When You Do Not Have One",
+      guideFront: "They have made the claim. Take the \"always\" out without taking the point away.",
+      guideBack: "A line you could say at this step.",
+      description: "Something in the claim is too broad but you have no case to hand. Rather than inventing one, say what you doubt and turn it into a question — which often produces the counter-example from them. Steps: 1) Name the part you doubt, 2) Say you have no example, 3) Ask.\n\nThe shape of the whole thing:\n1. \"I'd believe that for most people.\"\n2. \"I've got no case to point at, though.\"\n3. \"Can you think of anyone it hasn't been true for?\"\n\nWhy this order: admitting you have nothing costs almost nothing and buys a great deal of credibility, and the question does the work an invented example would have done badly.\n\nMindset: \"I don't have an example\" is a perfectly good sentence. An invented one is the only move here that cannot be repaired.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "A sweeping claim you doubt, and nothing concrete comes to mind.",
+          steps: [
+            { front: "Step 1 · Name the doubt", back: "\"I'd believe that for most people, not for everyone.\"" },
+            { front: "Step 2 · Say you have nothing", back: "\"I can't point at a case, to be fair.\"" },
+            { front: "Step 3 · Ask", back: "\"Can you think of anyone it hasn't been true for?\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A number is quoted at you and you doubt it but have nothing to put against it.",
+          steps: [
+            { front: "Step 1 · Name the doubt", back: "\"That figure sounds higher than I'd have guessed.\"" },
+            { front: "Step 2 · Say you have nothing", back: "\"I've got no counter-number, to be clear.\"" },
+            { front: "Step 3 · Ask", back: "\"Where's it from? I'd like to look at the same thing you're looking at.\"" },
+          ]
+        },
+      ]
+    },
+  ],
+  discussing: [
+    {
+      name: "Back, Then Differ",
+      guideFront: "Take the discussion one step at a time.",
+      guideBack: "A line you could say at this step.",
+      description: "The core discussion move: say their position back, acknowledge the true part, and only then give yours. Steps: 1) Say it back — in your own words, 2) Grant what is right — the part you actually agree with, 3) Differ — your view and one reason.\n\nThe shape of the whole thing:\n1. \"So you'd keep the date where it is.\"\n2. \"And you're right that moving it means telling everyone twice.\"\n3. \"I'd still move it, because the last two slipped anyway and we told them late.\"\n\nWhy this order: a disagreement that arrives after accurate understanding is heard as a contribution. The same sentence first is heard as not having listened.\n\nMindset: the concession in step 2 is not a tactic. If you cannot find anything true in their position, you have probably not understood it yet.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "A colleague wants to keep a deadline you think should move.",
+          steps: [
+            { front: "Step 1 · Say it back", back: "\"So you'd keep the date where it is.\"" },
+            { front: "Step 2 · Grant the true part", back: "\"And you're right that moving it means telling the client twice.\"" },
+            { front: "Step 3 · Differ, with a reason", back: "\"I'd still move it — the last two slipped anyway, and we told them late.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A friend argues that phones should be banned in schools.",
+          steps: [
+            { front: "Step 1 · Say it back", back: "\"You'd take them off them entirely during the day.\"" },
+            { front: "Step 2 · Grant the true part", back: "\"And it's true the lessons I've seen go best are the ones where they're away.\"" },
+            { front: "Step 3 · Differ, with a reason", back: "\"I'd keep them in the bag rather than confiscate, because the fight over it costs more than the phones do.\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Ask Before You Argue",
+      guideFront: "Take the discussion one step at a time.",
+      guideBack: "A line you could say at this step.",
+      description: "When something they said is ambiguous, clarify before responding — it very often turns out you were about to argue with something they do not think. Steps: 1) Notice the vague word, 2) Ask which version, 3) Answer the version they actually meant.\n\nThe shape of the whole thing:\n1. (they said \"homework is pointless\")\n2. \"All of it, or the filler?\"\n3. \"The filler I completely agree with. The rest I'd keep.\"\n\nWhy this order: general words hide specific disagreements, and the specific one is usually much smaller and much easier to settle.\n\nMindset: six words of clarification save four minutes of arguing about a position nobody holds.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "Someone says the whole system is broken.",
+          steps: [
+            { front: "Step 1 · Notice the vague part", back: "(broken could mean failing, slow, or badly designed)" },
+            { front: "Step 2 · Ask which version", back: "\"Which bit — the booking, or what happens after?\"" },
+            { front: "Step 3 · Answer that version", back: "\"The booking I'd defend. What happens after is genuinely a mess, agreed.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A friend says nobody should work from home.",
+          steps: [
+            { front: "Step 1 · Notice the vague part", back: "(nobody, ever, or in their specific job?)" },
+            { front: "Step 2 · Ask which version", back: "\"As a rule everywhere, or in your place specifically?\"" },
+            { front: "Step 3 · Answer that version", back: "\"In your place I'd probably agree. As a rule I'd push back hard.\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "When It Heats Up",
+      guideFront: "Take the discussion one step at a time.",
+      guideBack: "A line you could say at this step.",
+      description: "The discussion has gone fast and sharp. Name it jointly, take the hot part out, and settle what is left — which is nearly always most of it. Steps: 1) Name it as \"we\", 2) Split off the hot part, 3) Agree the rest.\n\nThe shape of the whole thing:\n1. \"We're both getting sharp about this.\"\n2. \"Can we leave the money bit aside for a minute?\"\n3. \"Because I think we agree on everything else, and it'd be good to say so.\"\n\nWhy this order: naming it jointly removes the accusation, splitting removes the heat, and agreeing the rest gives you both something to stand on before you go back to the difficult part.\n\nMindset: never tell the other person to calm down. Say \"we\", or say what you are doing yourself.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "A discussion with a colleague has become fast and clipped.",
+          steps: [
+            { front: "Step 1 · Name it jointly", back: "\"We're both getting a bit sharp about this.\"" },
+            { front: "Step 2 · Split off the hot part", back: "\"Can we leave the budget aside for ten minutes?\"" },
+            { front: "Step 3 · Agree the rest", back: "\"Because I think we agree on the timing and the scope, and that's most of it.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A discussion with a friend has drifted towards something personal.",
+          steps: [
+            { front: "Step 1 · Name it jointly", back: "\"This has stopped being about the thing, hasn't it.\"" },
+            { front: "Step 2 · Split off the hot part", back: "\"I'd rather not do the other bit today.\"" },
+            { front: "Step 3 · Agree the rest", back: "\"On the actual question I think we're closer than it sounded.\"" },
+          ]
+        },
+      ]
+    },
+  ],
+  storybanter: [
+    {
+      name: "Your Turn to Start",
+      guideFront: "Their line, then your turn. Keep it going.",
+      guideBack: "A line you could say at this step.",
+      description: "The book's six-beat arc with you as the one who opens: you throw out the small complaint, they invite you to say more, you answer absurdly, they build, you escalate, and then somebody lands it. Steps: 1) Trigger, 2) Answer their invitation, 3) Build on what they added, 4) Escalate, 5) Land it.\n\nThe shape of the whole thing:\n1. \"I'm so tired I can't do this.\"\n2. \"Honestly? Going home and getting into bed until Thursday.\"\n3. \"Yes, and three pizzas. Minimum.\"\n4. \"By Friday I'm basically a pizza with a heartbeat.\"\n5. \"And that's how I ended up banned from that place. Anyway.\"\n\nWhy this order: the trigger has to be small and true or the other person has nothing to recognise. Everything after it gets bigger, and the landing is somebody choosing to stop while it is still funny.\n\nMindset: the opening line is the only one that should be realistic. Keep it small — the absurdity is built from it, not stated in it.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You and a colleague are both stuck on a slow Wednesday afternoon.",
+          steps: [
+            { front: "Step 1 · Trigger — open with something small and true", back: "\"I'm so tired I've read the same line four times.\"" },
+            { front: "Step 2 · Their invitation — they ask \"so what are you going to do instead?\"", back: "\"Go home, get into bed, and stay there until Thursday.\"" },
+            { front: "Step 3 · They build — \"you'd need snacks for that\"", back: "\"Yes, and three pizzas. Delivered on a schedule.\"" },
+            { front: "Step 4 · Escalate — take it further yourself", back: "\"By Friday I'd be more pizza than person. They'd have to notify someone.\"" },
+            { front: "Step 5 · Land it — stop while it is still funny", back: "\"And that's how I got banned from the good place. Anyway. Back to it.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You are waiting with a friend for a bus that is clearly not coming.",
+          steps: [
+            { front: "Step 1 · Trigger — small and true", back: "\"I've been standing here so long I've started making plans for the shelter.\"" },
+            { front: "Step 2 · Their invitation — they ask \"what sort of plans?\"", back: "\"Curtains. A small rug. Nothing extravagant.\"" },
+            { front: "Step 3 · They build — \"you'd need a kettle\"", back: "\"Yes, and a doorbell, so people know not to just wander in.\"" },
+            { front: "Step 4 · Escalate — go past sensible", back: "\"Give it a month and I'm on the council for this shelter. Unopposed.\"" },
+            { front: "Step 5 · Land it — a flat last line", back: "\"And then the bus comes and I have to give it all up. Tragic.\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Their Turn to Start",
+      guideFront: "Their line, then your turn. Keep it going.",
+      guideBack: "A line you could say at this step.",
+      description: "The same arc from the other side — they complain, and you are the one who keeps it going. This is the harder role and the more useful one, because it is the one most people freeze in. Steps: 1) Invite, 2) Build on their answer, 3) Complicate it, 4) Bring someone in, 5) Hand the ending to them.\n\nThe shape of the whole thing:\n1. \"So what are you going to do about it?\"\n2. \"Yes, and you'd need enough pizza to see the week out.\"\n3. \"What if your mum comes home and finds the boxes?\"\n4. \"This is where the dog gives you away, obviously.\"\n5. \"So how does this end? I need to know.\"\n\nWhy this order: your first move is a question, because an invitation costs you no ideas and buys you a whole turn to think. After that you are building on material they have already given you rather than inventing from nothing.\n\nMindset: when it is not your story, ask first. A playful open question is always available and it is never the wrong move.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "A friend says they are too tired to face the rest of the week.",
+          steps: [
+            { front: "Step 1 · Invite — a playful open question", back: "\"So what are you going to do instead? Realistically.\"" },
+            { front: "Step 2 · Build — they say \"hide at home with films\"", back: "\"Yes, and you'd need enough pizza to see the whole week out.\"" },
+            { front: "Step 3 · Complicate — add a threat to the plan", back: "\"What if your mum comes home and finds ten empty boxes?\"" },
+            { front: "Step 4 · Bring someone in — a new reaction", back: "\"And the dog gives you away immediately. He has no loyalty.\"" },
+            { front: "Step 5 · Hand it back — let them land it", back: "\"So how does this end? I need to know how you get out of it.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A colleague announces they have far too much to do tonight.",
+          steps: [
+            { front: "Step 1 · Invite — ask for the plan", back: "\"How are you actually going to get through all that?\"" },
+            { front: "Step 2 · Build — they say \"coffee and denial\"", back: "\"Yes, and a whiteboard. Nobody's ever solved anything without one.\"" },
+            { front: "Step 3 · Complicate — a small domestic disaster", back: "\"What if the coffee machine picks tonight to break?\"" },
+            { front: "Step 4 · Bring someone in — someone unhelpful", back: "\"And then your neighbour knocks. He wants to talk about the bins.\"" },
+            { front: "Step 5 · Hand it back — their ending", back: "\"Go on then. Do you survive this or not?\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "When It Stalls",
+      guideFront: "Their line, then your turn. Keep it going.",
+      guideBack: "A line you could say at this step.",
+      description: "The story has gone flat — the last two turns were pleasant, nobody has added a problem, and there is a pause coming. Three moves get it back, and they are the three you should reach for in order: complicate it, add a person, or follow the consequence. Steps: 1) Notice the flatness, 2) Restart it with a complication, 3) Add a reaction, 4) Land it before it dies twice.\n\nThe shape of the whole thing:\n1. (two agreeable turns in a row, and the energy has gone)\n2. \"What if the neighbours have already noticed, though?\"\n3. \"There's a group chat. You're in it, apparently.\"\n4. \"Anyway. That's how you end up moving cities. Right — coffee?\"\n\nWhy this order: a stalled story does not need a funnier line, it needs a problem. Adding a complication gives both of you something to be funny about again, which a clever remark does not.\n\nMindset: a story that has flattened twice is finished. Land it warmly rather than dragging it — the goal was the laugh you already had.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "A banter story about a week off has become a list of pleasant things.",
+          steps: [
+            { front: "Step 1 · Notice — nothing has gone wrong in the story for two turns", back: "(the energy has gone; it needs a problem, not a better joke)" },
+            { front: "Step 2 · Complicate — add the threat", back: "\"What if the neighbours have already noticed you're home all week?\"" },
+            { front: "Step 3 · Add a reaction — someone with opinions", back: "\"There's a group chat about it. You're in it, which is worse.\"" },
+            { front: "Step 4 · Land it — while it is still funny", back: "\"Anyway, that's how you end up moving cities. Right, coffee?\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A story about a bus shelter has run out of ideas and there is a pause coming.",
+          steps: [
+            { front: "Step 1 · Notice — you are both waiting for the other to be funny", back: "(nobody has added a problem for two turns)" },
+            { front: "Step 2 · Complicate — something ordinary goes wrong", back: "\"What if someone else moves in? Do you share, or is it war?\"" },
+            { front: "Step 3 · Add a reaction — a character with a view", back: "\"The man from the council arrives with a clipboard. He is not sympathetic.\"" },
+            { front: "Step 4 · Land it — flat and warm", back: "\"And that's the last time I'm early for anything. Here's the bus.\"" },
+          ]
+        },
+      ]
+    },
+  ],
+  explainthings2: [
+    {
+      name: "Short, Check, Deeper",
+      guideFront: "Explain it in the order they can take it.",
+      guideBack: "A line you could say at this step.",
+      description: "The three-beat explanation: give the one-sentence version, check whether they want more, and only then go deeper. It is the book's tip made into a habit, and it is what stops an answer becoming a lecture. Steps: 1) Short — one sentence in words they already have, 2) Check — a question or a look, 3) Deeper — the detail, but only if it was wanted.\n\nThe shape of the whole thing:\n1. \"It's a shared to-do list.\"\n2. \"Want the bit that makes it different?\"\n3. \"Every line has exactly one owner, so nothing sits there unclaimed.\"\n\nWhy this order: the short version tells you how interested they are, which is the thing you cannot know in advance. Guessing produces either a lecture or an unhelpfully thin answer.\n\nMindset: the check is the whole strategy. Without it you are just choosing a length at random.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "A colleague asks what the new system actually is.",
+          steps: [
+            { front: "Step 1 · Short — one sentence, no jargon", back: "\"It's a shared to-do list, basically.\"" },
+            { front: "Step 2 · Check — hand them the choice", back: "\"Want the bit that makes it different from a list?\"" },
+            { front: "Step 3 · Deeper — the distinguishing detail", back: "\"Every line has one owner, so nothing sits there unclaimed.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Someone at a party asks what you do.",
+          steps: [
+            { front: "Step 1 · Short — the version anyone can hold", back: "\"I teach English to teenagers.\"" },
+            { front: "Step 2 · Check — read the face, not the words", back: "\"It's a lot louder than it sounds. Do you want the honest version?\"" },
+            { front: "Step 3 · Deeper — the part you actually find interesting", back: "\"Most of the job is negotiating. The English is almost a side effect.\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Find the Missing W",
+      guideFront: "Explain it in the order they can take it.",
+      guideBack: "A line you could say at this step.",
+      description: "When an explanation has not landed, work out which of the six they are missing rather than repeating the one you already gave. Steps: 1) Notice it did not land, 2) Name what you gave them, 3) Give a different W.\n\nThe shape of the whole thing:\n1. (they still look blank)\n2. \"That was what it is, and it didn't help.\"\n3. \"The point is you stop chasing people for updates.\"\n\nWhy this order: repeating a definition more slowly is the commonest failure in explaining anything, and it is always the same mistake — answering the question you were asked rather than the one they have.\n\nMindset: if it did not land, change the W, not the volume.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You have defined the thing and they still look blank.",
+          steps: [
+            { front: "Step 1 · Notice", back: "(they nodded, and nothing happened behind it)" },
+            { front: "Step 2 · Name what you gave", back: "\"That was the what, and it clearly didn't help.\"" },
+            { front: "Step 3 · Different W", back: "\"The point of it is that you stop chasing people for updates.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Someone asks what a tool is while holding it in a shop.",
+          steps: [
+            { front: "Step 1 · Notice", back: "(they do not need to know what it is — they can see it)" },
+            { front: "Step 2 · Name what you gave", back: "\"I was about to tell you what it's called, which you can read.\"" },
+            { front: "Step 3 · Different W", back: "\"It's for people who cook most days. Twice a week and it lives in a cupboard.\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Place It Before You Detail It",
+      guideFront: "Explain it in the order they can take it.",
+      guideBack: "A line you could say at this step.",
+      description: "For anything with an unfamiliar shape, give the setting and the group first, then the mechanics. Steps: 1) Where it belongs, 2) Who it is for, 3) How it works — the detail, now that it has somewhere to sit.\n\nThe shape of the whole thing:\n1. \"It's an office thing rather than a home thing.\"\n2. \"Mostly for teams where more than two people book the same rooms.\"\n3. \"You claim the slot, and it goes grey for everyone else.\"\n\nWhy this order: mechanics land badly on a listener who has not yet worked out whether the thing has anything to do with them. Place it first, and the how is suddenly worth following.\n\nMindset: give it a shelf before you give it a manual.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "Explaining a work tool to someone outside your team.",
+          steps: [
+            { front: "Step 1 · Where", back: "\"It's an office thing. Nobody would have one at home.\"" },
+            { front: "Step 2 · Who", back: "\"It's for teams where several people book the same rooms.\"" },
+            { front: "Step 3 · How", back: "\"You claim a slot and it goes grey for everyone else.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Explaining an unfamiliar kitchen object to a friend.",
+          steps: [
+            { front: "Step 1 · Where", back: "\"It lives by the spices rather than the pans, which is the clue.\"" },
+            { front: "Step 2 · Who", back: "\"Anyone who cooks with whole spices. Otherwise it's an ornament.\"" },
+            { front: "Step 3 · How", back: "\"You put them in and lean on it. That's genuinely all there is.\"" },
+          ]
+        },
+      ]
+    },
+  ],
+  buildingastory: [
+    {
+      name: "The Whole Thing, Start to Finish",
+      guideFront: "Build the story one part at a time.",
+      guideBack: "A line you could say at this step.",
+      description: "The book's Complete Storytelling exercise: build a real story out of the four parts and tell it end to end. Steps: 1) Open in one sentence, 2) Name the turn, 3) Land the resolution, 4) Say the takeaway, or say there is not one.\n\nThe shape of the whole thing:\n1. \"Right as I walked in, the fire alarm went off.\"\n2. \"And my laptop was still on the desk, in the room I'd just been locked out of.\"\n3. \"In the end a caretaker let me back in through the car park.\"\n4. \"I email things to myself now. Every single time.\"\n\nWhy this order: the opening buys you attention, the turn earns it, the resolution repays it and the takeaway is the only optional part. Told in this order a story does not need to be dramatic to work.\n\nMindset: four parts, four sentences if you like. A short story with all four beats a long one missing the turn.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "A story about the morning the fire alarm went off at work.",
+          steps: [
+            { front: "Step 1 · Open — one sentence, start where it moves", back: "\"Right as I walked in on Monday, the fire alarm went off.\"" },
+            { front: "Step 2 · Turn — the moment it became a story", back: "\"And my laptop was still on the desk, in a building we were now not allowed into.\"" },
+            { front: "Step 3 · Resolution — what you did, and what followed", back: "\"In the end a caretaker took pity on me and let me in through the car park.\"" },
+            { front: "Step 4 · Takeaway — or say there is not one", back: "\"I email things to myself now. Every time, like a paranoid.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A story about trying a new hobby that went badly.",
+          steps: [
+            { front: "Step 1 · Open — the feeling first", back: "\"I was so confident going into my first pottery class. Unwarranted, it turned out.\"" },
+            { front: "Step 2 · Turn — where it changed", back: "\"Twenty minutes in, the thing collapsed and took most of the wheel with it.\"" },
+            { front: "Step 3 · Resolution — how it ended", back: "\"The teacher rebuilt it in about forty seconds without looking up.\"" },
+            { front: "Step 4 · Takeaway — the honest one", back: "\"I've been back four times. I'm still terrible and I like it more each week.\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Told On the Spot",
+      guideFront: "Build the story one part at a time.",
+      guideBack: "A line you could say at this step.",
+      description: "Somebody has said a word and it is your turn. Pick fast, start before you have it all, and let the shape carry you. Steps: 1) Pick the first small one that arrives, 2) Open it, 3) Get to the turn quickly, 4) Land it short.\n\nThe shape of the whole thing:\n1. (prompt: \"food\" — first sushi, not best meal ever)\n2. \"The first time I tried sushi I was so nervous about it.\"\n3. \"And I hated the first piece. Properly hated it.\"\n4. \"Then I ate about nine more. I have no explanation.\"\n\nWhy this order: the picking is the hard part and it has a time limit. Once you have started, the four parts do the work, and the story does not need to be good — it needs to be told while the subject is still live.\n\nMindset: fifteen seconds to choose, then start. A mediocre story told now beats a great one you think of on the way home.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "The group is swapping stories and someone says \"travel\".",
+          steps: [
+            { front: "Step 1 · Pick — first small one, not best one", back: "(the night the taxi never came — not the whole interrailing summer)" },
+            { front: "Step 2 · Open — one sentence", back: "\"There was a night in Portugal when the taxi just never came.\"" },
+            { front: "Step 3 · Turn — get there fast", back: "\"And we realised the last bus had gone about an hour before we started waiting.\"" },
+            { front: "Step 4 · Land it short", back: "\"So we walked eight kilometres in the dark and it was the best night of the trip.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Somebody says \"mistakes\" and it is nearly your turn.",
+          steps: [
+            { front: "Step 1 · Pick — recent beats impressive", back: "(the message about my boss, sent to my boss, last month)" },
+            { front: "Step 2 · Open — the hook", back: "\"I once sent a message about my boss to my boss.\"" },
+            { front: "Step 3 · Turn — the moment of noticing", back: "\"I watched the little 'read' appear underneath it. Nothing I could do.\"" },
+            { front: "Step 4 · Land it short", back: "\"She replied 'fair'. We've never mentioned it since.\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Same Story, Different Feeling",
+      guideFront: "Build the story one part at a time.",
+      guideBack: "A line you could say at this step.",
+      description: "The book's flexibility exercise, and the one that teaches most: take one set of events and tell it twice, once as the funny version and once as the honest one. Steps: 1) The events, flat, 2) The funny telling, 3) The honest telling, 4) Notice which one the moment wanted.\n\nThe shape of the whole thing:\n1. (the events: the interview, the wrong building, arriving late)\n2. \"I spent forty minutes in the wrong building. Confidently.\"\n3. \"I've never wanted anything as much as I wanted that job.\"\n4. (same events — one is for a party, one is for a friend)\n\nWhy this order: telling it flat first shows you that the events are not the story. The two versions are built from identical facts, which is the entire lesson: the feeling you put in is the choice, and it should be chosen rather than defaulted to.\n\nMindset: same events, two stories. Knowing both is what lets you pick the one the room can take.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "The interview you were late for because you went to the wrong building.",
+          steps: [
+            { front: "Step 1 · The events, flat", back: "\"I had an interview, I went to the wrong building, I was twenty minutes late.\"" },
+            { front: "Step 2 · The funny telling", back: "\"I sat confidently in the wrong reception for forty minutes. Nobody questioned me.\"" },
+            { front: "Step 3 · The honest telling", back: "\"I'd wanted that job for two years and I lost it in a lobby.\"" },
+            { front: "Step 4 · Choose", back: "\"For a party, the first one. For someone who knows me, the second.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "The week your car broke down twice.",
+          steps: [
+            { front: "Step 1 · The events, flat", back: "\"The car broke down on the Tuesday and again on the Friday.\"" },
+            { front: "Step 2 · The funny telling", back: "\"The same mechanic, twice in one week. He'd started waving.\"" },
+            { front: "Step 3 · The honest telling", back: "\"It was the week I worked out I couldn't afford to keep it.\"" },
+            { front: "Step 4 · Choose", back: "\"Depends entirely who's asking, and whether they've got ten minutes.\"" },
+          ]
+        },
+      ]
+    },
+  ],
+  reframing: [
+    {
+      name: "Acknowledge, Ask, Offer",
+      guideFront: "Take it one step at a time.",
+      guideBack: "A line you could say at this step.",
+      description: "The order that makes a reframe welcome rather than irritating. Steps: 1) Say the true hard thing first, 2) Ask whether they want another angle, 3) Offer it once and hold it loosely.\n\nThe shape of the whole thing:\n1. \"That's a horrible way to find out.\"\n2. \"Do you want another way of looking at it, or not right now?\"\n3. \"It'd have surfaced eventually, and better now than after you'd signed.\"\n\nWhy this order: acknowledgement first is what stops the reframe reading as a correction. Asking hands them the choice. Offering once and stopping is what keeps it an offer rather than an argument about whose reading is right.\n\nMindset: if you only remember one thing from this pack, remember this order.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "A friend has found out they were left out of something at work.",
+          steps: [
+            { front: "Step 1 · Acknowledge — the true, hard sentence", back: "\"That's a horrible way to find out. I'd be livid.\"" },
+            { front: "Step 2 · Ask — hand them the choice", back: "\"Do you want another angle on it, or do you want to be angry for a bit first?\"" },
+            { front: "Step 3 · Offer, then stop", back: "\"It'd have come out eventually, and better now than in six months. That's all I've got.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A colleague is convinced a presentation went badly.",
+          steps: [
+            { front: "Step 1 · Acknowledge — do not skip it", back: "\"It clearly didn't feel good in there.\"" },
+            { front: "Step 2 · Ask — check they want it", back: "\"Can I tell you what it looked like from the back of the room?\"" },
+            { front: "Step 3 · Offer, then stop", back: "\"Two people on phones, one real question. That's a normal Tuesday, not a disaster.\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Answering a Label",
+      guideFront: "Take it one step at a time.",
+      guideBack: "A line you could say at this step.",
+      description: "Somebody has put a word on you. Three beats and it is over, without an argument. Steps: 1) Agree with the behaviour, 2) Rename it, 3) Own it and move on.\n\nThe shape of the whole thing:\n1. \"That's fair, I do do that.\"\n2. \"I'd call it particular rather than fussy.\"\n3. \"And I'm completely at peace with it. Anyway — what were we saying?\"\n\nWhy this order: agreeing first removes the fight, because they were expecting a denial. Renaming moves the conversation onto your word. Owning it and changing the subject ends it — a reframe you then defend for five minutes has become an argument.\n\nMindset: agree, rename, move on. The third step is what stops it becoming a conversation about you.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "Somebody at work has called you fussy about detail, in front of others.",
+          steps: [
+            { front: "Step 1 · Agree with the behaviour", back: "\"That's fair, I do go over things twice.\"" },
+            { front: "Step 2 · Rename it", back: "\"I'd call it particular. It's why the last audit was boring.\"" },
+            { front: "Step 3 · Own it and move", back: "\"Entirely guilty and quite happy about it. Right — where were we?\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A friend says you take everything too seriously.",
+          steps: [
+            { front: "Step 1 · Agree with the behaviour", back: "\"I do, yeah. I've always been like that.\"" },
+            { front: "Step 2 · Rename it", back: "\"I take the things that matter seriously. That's the version I'd use.\"" },
+            { front: "Step 3 · Own it and move", back: "\"I'd rather have that problem than the other one. Anyway, tell me about Friday.\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Deciding Not To",
+      guideFront: "Take it one step at a time.",
+      guideBack: "A line you could say at this step.",
+      description: "You can see a reframe and you are going to hold it. Three beats that leave the person better off than a reframe would have. Steps: 1) Say the thing is bad, 2) Say the feeling fits, 3) Ask what would actually help.\n\nThe shape of the whole thing:\n1. \"That's just bad. I'm not going to try to make it better.\"\n2. \"You're allowed to be as fed up as you are.\"\n3. \"What would actually help right now?\"\n\nWhy this order: naming it as bad is the opposite of a silver lining and it lands as honesty. Saying the feeling fits removes the second problem, which is wondering whether the reaction is reasonable. The question at the end hands them the wheel.\n\nMindset: this combo is the most useful one in the pack in the first hour after something has gone wrong. The reframes can wait a week.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "A friend's plan has fallen apart the same afternoon.",
+          steps: [
+            { front: "Step 1 · Name it as bad", back: "\"That's just bad. I'm not going to look for an upside today.\"" },
+            { front: "Step 2 · Say the feeling fits", back: "\"You're allowed to be gutted about it. Anyone would be.\"" },
+            { front: "Step 3 · Ask what helps", back: "\"What would actually help right now — company, or a plan, or neither?\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Somebody is dreading something that genuinely is going to be hard.",
+          steps: [
+            { front: "Step 1 · Name it honestly", back: "\"It probably will be as bad as you think. I'm not going to pretend.\"" },
+            { front: "Step 2 · Say the feeling fits", back: "\"Dreading it is the sensible response, not a failure of attitude.\"" },
+            { front: "Step 3 · Ask what helps", back: "\"Do you want to talk about the day itself, or think about something else entirely?\"" },
+          ]
+        },
+      ]
+    },
+  ],
 };

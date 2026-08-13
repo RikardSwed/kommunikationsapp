@@ -1555,7 +1555,7 @@ const programsData = [
   {
     id: 'humour',
     title: "Humour",
-    description: "Two steps in being funny on purpose — catching what is already in the room, then playing a part on purpose.",
+    description: "Three steps in being funny on purpose — catching what is already in the room, playing a part, and keeping it going back and forth.",
     icon: "ti-mood-smile",
     sections: [
       {
@@ -1665,6 +1665,67 @@ const programsData = [
             { id: 'hum2-38', q: "\"What if I did about a fifth of that?\" belongs to which role?", options: ["The Lazy One", "The Super Stingy One", "The Rule Breaker", "The Mock-Offended One"], correct: 0 },
             { id: 'hum2-39', q: "What is the common failure across all seven roles?", options: ["Holding the role too briefly", "Choosing the wrong role for the group", "Letting the stakes stop being nothing — the moment it touches something real, the bit becomes the behaviour", "Explaining the role afterwards"], correct: 2 },
             { id: 'hum2-40', q: "Why does the pack say to keep the orders, the schemes and the claims trivial?", options: ["Small things are funnier", "It keeps the exchange short", "It stops the joke being repeated", "The gap between the size of the performance and the size of what it is about IS the joke"], correct: 3 },
+          ],
+        },
+      },
+      // ── v1.27.01 — Part 3, the capstone. Responsive Humour and Role Based
+      // Humour are both single moves; Story Banter is the back-and-forth they
+      // feed into, which is why it belongs here rather than as an Extended
+      // pack. It also makes Humour the same three-Part shape as every other
+      // programme. Story Banter is minLevel 'program', so this is the only
+      // route to it.
+      {
+        id: 'section-3',
+        title: "Part 3 \u2014 Keeping it going",
+        packs: [
+          { key: "storybanter", label: "Story Banter" },
+        ],
+        checkpoint: {
+          id: 'hum-cp3',
+          title: "Keeping it going — check",
+          timeLimit: 30,
+          drawCount: 20,
+          questions: [
+            { id: 'hum3-1', q: "What is story banter?", options: ["Telling a funny story well", "Making jokes about the person you are talking to", "Two people building an invented story together, where nobody owns it and both keep adding", "Responding wittily to something somebody said"], correct: 2 },
+            { id: 'hum3-2', q: "What are the six techniques?", options: ["Setup, punchline, callback, exaggeration, timing, delivery", "Yes and, what if, make it bigger, bring someone in, then what happens, solve it ridiculously", "Tease, escalate, deflect, agree, invent, close", "Ask, listen, exaggerate, invert, repeat, land"], correct: 1 },
+            { id: 'hum3-3', q: "How does this differ from Responsive Humour?", options: ["It is funnier", "It needs a group", "It is planned rather than spontaneous", "Responsive Humour answers one sentence somebody actually meant; this builds a made-up story together"], correct: 3 },
+            { id: 'hum3-4', q: "How does it differ from Role Based Humour?", options: ["A role is a character you play over time; this is a story neither of you owns", "Roles are for groups and banter is for pairs", "Roles are riskier", "There is no real difference"], correct: 0 },
+            { id: 'hum3-5', q: "What are the six beats of the arc?", options: ["Setup, joke, laugh, build, escalate, stop", "Complaint, question, answer, joke, joke, exit", "Trigger, invitation, exaggerated response, building together, escalating, wrap-up", "Open, invite, invent, complicate, resolve, repeat"], correct: 2 },
+            { id: 'hum3-6', q: "What is the engine of the whole form?", options: ["Exaggeration", "Yes and — accept what they added and put something on top of it", "Timing", "Bringing in new characters"], correct: 1 },
+            { id: 'hum3-7', q: "What is your actual job when you take a turn?", options: ["To be funnier than the last line", "To move the story towards an ending", "To keep it believable", "To leave them something to build on"], correct: 3 },
+            { id: 'hum3-8', q: "Which is the smallest and most reliable form of \"yes, and\"?", options: ["Add one detail", "Agree with too much enthusiasm", "Treat the ridiculous thing as practical", "Repeat their idea back"], correct: 0 },
+            { id: 'hum3-9', q: "What does \"what if\" add that \"yes and\" does not?", options: ["More detail", "A new character", "A threat to the plan — a problem, rather than a nicer version of it", "An ending"], correct: 2 },
+            { id: 'hum3-10', q: "Why is a problem better than a nicer version of the plan?", options: ["Problems are funnier in themselves", "The problem is what the other person gets to be funny about", "It makes the story more realistic", "It shortens the story"], correct: 1 },
+            { id: 'hum3-11', q: "Which \"what if\" is described as the most reliable there is?", options: ["Someone finds out", "The plan works too well", "Something ordinary goes wrong", "The plan fails completely"], correct: 0 },
+            { id: 'hum3-12', q: "Which is usually funnier — the plan failing or the plan working too well?", options: ["Failing, because it is unexpected", "They are the same", "Failing, because it needs no setup", "Working too well"], correct: 3 },
+            { id: 'hum3-13', q: "How far should you exaggerate?", options: ["Just past what is plausible", "As far as the other person went", "Past sensible in one jump — halfway is where it stops being play", "Only as far as the situation allows"], correct: 2 },
+            { id: 'hum3-14', q: "What happens if you exaggerate only halfway?", options: ["It gets a smaller laugh", "It starts sounding like an argument about the facts", "It reads as sarcasm", "The other person has to correct you"], correct: 1 },
+            { id: 'hum3-15', q: "What is the safest kind of character to bring in?", options: ["Someone from the real situation", "A stranger", "Somebody absurdly out of place", "An animal or an object with a personality, because nobody can be offended on its behalf"], correct: 3 },
+            { id: 'hum3-16', q: "Why does adding a character work so reliably?", options: ["New people bring reactions, and a reaction is the most reliable source of comedy available", "It gives the story a plot", "It buys you time to think", "It moves the joke away from the other person"], correct: 0 },
+            { id: 'hum3-17', q: "What is \"then what happens\"?", options: ["Asking the other person to continue", "Following the last idea to its consequence — the thing that must now happen because of what they said", "Skipping ahead to the ending", "Introducing a new complication"], correct: 1 },
+            { id: 'hum3-18', q: "Which version of the consequence is described as much funnier?", options: ["The immediate result", "The consequence for the story itself", "The delayed result — \"and two years later it comes up in a job interview\"", "The consequence for the person telling it"], correct: 2 },
+            { id: 'hum3-19', q: "When you are stuck, what should you ask yourself?", options: ["What is the funniest thing I could say", "What have we not used yet", "How does this end", "What happens next — the consequence is usually funnier than anything you would have invented"], correct: 3 },
+            { id: 'hum3-20', q: "What is the point of an absurd solution in the arc?", options: ["It is the release valve — after several turns of escalation it lets the story breathe without ending it", "It closes the story cleanly", "It is the funniest of the six", "It hands the turn back"], correct: 0 },
+            { id: 'hum3-21', q: "How should an absurd solution be delivered?", options: ["Quickly, before the moment passes", "Like it is the obvious answer — hesitation makes it land as nonsense rather than as a bit", "With a laugh, so it is clearly a joke", "As a question"], correct: 1 },
+            { id: 'hum3-22', q: "Which absurd solution is described as the funniest of the three?", options: ["The impossible technology", "The insane logistics, said as admin", "The one that makes it worse", "The one nobody could afford"], correct: 2 },
+            { id: 'hum3-23', q: "In the arc, which line should be realistic?", options: ["The invitation", "The wrap-up", "None of them", "The opening one — the absurdity is built from it, not stated in it"], correct: 3 },
+            { id: 'hum3-24', q: "Which side of the exchange is the harder role, and the more useful to train?", options: ["Starting it, because you have to invent the trigger", "Building on somebody else's complaint, because that is where most people freeze", "Landing it", "They are equally hard"], correct: 1 },
+            { id: 'hum3-25', q: "When it is not your story, what is always available and never wrong?", options: ["A playful open question — an invitation", "An exaggeration", "A new character", "Silence"], correct: 0 },
+            { id: 'hum3-26', q: "The story has gone flat. What does it need?", options: ["A better joke", "A change of subject", "A problem — a complication, a new person, or a consequence", "Someone to land it"], correct: 2 },
+            { id: 'hum3-27', q: "What does a flat story usually look like?", options: ["Long pauses between turns", "One person talking much more than the other", "Jokes that miss", "Two or three agreeable turns in a row that just add nice things, with nothing at stake"], correct: 3 },
+            { id: 'hum3-28', q: "What is the one failure the form cannot absorb?", options: ["A joke that does not land", "Blocking — answering an invented detail with a fact", "Going on too long", "Repeating a technique"], correct: 1 },
+            { id: 'hum3-29', q: "Why does blocking happen?", options: ["It is a reflex to correct something, and almost never meant", "People want to end the story", "People forget the rules", "It is a way of showing you were listening"], correct: 0 },
+            { id: 'hum3-30', q: "What is the funniest way to repair a block?", options: ["Apologise and move on", "Change the subject", "Accept it too hard — over-agreeing repairs it and beats the original", "Ask them to repeat it"], correct: 2 },
+            { id: 'hum3-31', q: "A complication landed on the person rather than the situation. What has gone wrong?", options: ["It was not exaggerated enough", "It came at the wrong point in the arc", "It needed a character", "The story is suddenly about a real thing, and the form only works while everything absurd is invented"], correct: 3 },
+            { id: 'hum3-32', q: "What is the fastest repair when a joke lands on the person?", options: ["Say you did not mean it", "Turn it on yourself", "Escalate past it", "Land the story and stop"], correct: 1 },
+            { id: 'hum3-33', q: "What is the tell that a joke landed on the person rather than the situation?", options: ["They laughed a beat late, or not quite", "They changed the subject", "They matched it with a harder one", "They went quiet for the rest of the exchange"], correct: 0 },
+            { id: 'hum3-34', q: "What does the pack say about stopping?", options: ["Stop when you run out of ideas", "Let the other person decide", "Stop while it is still funny — ending one turn early is invisible, ending three turns late is what people remember", "Stop after the sixth beat"], correct: 2 },
+            { id: 'hum3-35', q: "What are the signs it has gone on too long?", options: ["Somebody repeats a technique", "The biggest laugh was three turns ago, you are inventing rather than building, and somebody has checked their phone", "The story has become realistic again", "Both of you are talking at once"], correct: 1 },
+            { id: 'hum3-36', q: "What is the best way to end it without killing it?", options: ["Say it was funny and stop", "Explain the joke", "Escalate one last time", "Land it flat in one sentence, or hand it to them — \"so how does this end?\""], correct: 3 },
+            { id: 'hum3-37', q: "It is your turn and your mind is blank. What are the two techniques that need no invention?", options: ["Follow the consequence, or ask a playful question", "Exaggerate, or bring someone in", "Yes and, or what if", "Solve it ridiculously, or land it"], correct: 0 },
+            { id: 'hum3-38', q: "What is the measure of a good turn?", options: ["How big the laugh was", "How original the idea was", "Whether the story kept going", "How quickly you said it"], correct: 2 },
+            { id: 'hum3-39', q: "Why is absurd safer than clever?", options: ["It is easier to think of", "An obviously impossible idea cannot be mistaken for a judgement about anyone, and a clever remark can", "It gets a bigger laugh", "It works in more situations"], correct: 1 },
+            { id: 'hum3-40', q: "What is the one rule the form actually has?", options: ["Keep it short", "Take turns evenly", "Never repeat a technique", "Everything offered is accepted — \"yes, and\", never \"yes, but\""], correct: 3 },
           ],
         },
       },

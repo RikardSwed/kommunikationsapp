@@ -3006,4 +3006,382 @@ const mindsetCollections = {
       ]
     },
   ],
+  setupquestion: [
+    {
+      name: "The Asking-First Mindset",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The pack-wide stance: asking first is the cheapest way into a conversation, because it puts no pressure on you to be interesting. You only need to be curious, and curiosity is available even on a bad day. Example of the shift — instead of hunting for something worth saying, you ask about the thing you wanted to talk about anyway.\n\nThe three thoughts that cause the trouble:\n1. \"I need something worth saying\" — you need a question, and you already have one.\n2. \"Asking is intrusive\" — an ordinary question about the room is not an interrogation.\n3. \"They'll think I'm prying\" — people are far more often glad to be asked than they are offended.\n\nMindset: you do not have to be interesting to open a conversation. You have to be interested, and then say your own bit afterwards.",
+      inputs: [
+        { q: "You feel you need something clever before you can speak.", a: "\"I don't need a line. I need a question, and I've already got one.\"", bundle: 'pro' },
+        { q: "You worry a question will feel like prying.", a: "\"'What brought you here' is not prying. It's the easiest thing in the room to answer.\"", bundle: 'pro' },
+        { q: "You freeze because nothing you'd say seems worth saying.", a: "\"I don't have to say anything yet. I just have to ask.\"", bundle: 'pro' },
+        { q: "You are having a flat day and feel you have nothing to offer.", a: "\"Curiosity works on a flat day. Being interesting does not, and is not needed.\"", bundle: 'pro' },
+        { q: "You are waiting for the right moment to say something good.", a: "\"There isn't one. There's a question about the room, and it works now.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Answer-It-Too Mindset",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The stance that separates this from an interview: the question was never only for them. You asked because you wanted to talk about it, so your own answer is part of the move rather than an optional extra. Example of the shift — instead of moving to the next question, you say your own answer to the one you just asked.\n\nWhere it goes wrong:\n1. You ask a second question before you have answered the first.\n2. You answer with \"yeah, same\" and hand it straight back.\n3. You are so relieved the attention is on them that you keep it there.\n\nMindset: a question you never answer yourself is an interview. Give your version, at roughly the size of theirs.",
+      inputs: [
+        { q: "You realise you have asked four questions and answered none.", a: "\"Time to give something. My answer to the last one is worth saying out loud.\"", bundle: 'pro' },
+        { q: "You want to keep the attention safely on them.", a: "\"Keeping it on them feels safe and leaves us strangers. One honest sentence changes that.\"", bundle: 'pro' },
+        { q: "You are about to reply with 'yeah, same'.", a: "\"'Same' is not an answer. What is actually true for me here?\"", bundle: 'pro' },
+        { q: "Their answer was long and yours would be short.", a: "\"Roughly their size. Much shorter reads as a brush-off, much longer takes the floor.\"", bundle: 'pro' },
+        { q: "You asked because you wanted to talk about it, then did not.", a: "\"That was the whole reason I asked. Say it.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Ordinary Question Mindset",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The stance about which questions are good enough: the ordinary ones work. \"What brings you here\" has opened more conversations than any clever alternative, and its ordinariness is exactly why it is easy to answer. Example of the shift — instead of discarding the obvious question as too boring, you ask it and listen properly.\n\nWhere the hesitation shows up:\n1. You reject the obvious question because everyone asks it.\n2. You look for an original angle and the moment passes.\n3. You judge your question by how it sounds rather than by how easy it is to answer.\n\nMindset: judge a question by how easy it is to answer, not by how it sounds. The interesting part is their answer, and what you do with it.",
+      inputs: [
+        { q: "You dismiss the obvious question as too boring.", a: "\"Boring to ask, easy to answer. That trade is worth making every time.\"", bundle: 'pro' },
+        { q: "You are searching for an original angle and the moment is passing.", a: "\"The ordinary question asked now beats the clever one asked never.\"", bundle: 'pro' },
+        { q: "You worry the question is too simple.", a: "\"Simple is the point. The conversation happens in their answer, not in my question.\"", bundle: 'pro' },
+        { q: "You want the question to show you are perceptive.", a: "\"A question that shows off is a question about me. Ask the plain one.\"", bundle: 'pro' },
+        { q: "You think they have been asked this a hundred times.", a: "\"They have, and they can answer it without thinking. That is exactly why it works.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Whole Room Is Askable",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The stance about running out: there are five types and you always have all of them, so being stuck for a question is nearly always a failure to look rather than a shortage of material. Something is in front of you, you are both here for a reason, the room has a mood, they are doing something with their days, and they came from somewhere. Example of the shift — instead of concluding there is nothing to ask, you run the five and take whichever is nearest.\n\nWhere it goes wrong:\n1. You decide the situation is too boring to ask anything about.\n2. You use the same type every time and it stops fitting.\n3. You go quiet after one exchange rather than asking the obvious second thing.\n\nMindset: five doors, and at least one is always open. If nothing occurs to you, run the list.",
+      inputs: [
+        { q: "You have decided there is nothing here to ask about.", a: "\"Five types. One of them fits this room — I just haven't looked yet.\"", bundle: 'pro' },
+        { q: "You always reach for the same type and it is not landing.", a: "\"Purpose is my default. The room is asking for Status.\"", bundle: 'pro' },
+        { q: "The conversation stopped after one good exchange.", a: "\"That was one door. There are four more, and one is inside what they just said.\"", bundle: 'pro' },
+        { q: "The setting seems too dull to open anything.", a: "\"Dull settings are the easiest — everyone in a dull room has noticed it.\"", bundle: 'pro' },
+        { q: "You feel you have used up your questions with this person.", a: "\"I've used up the ones I planned. The ones in their answers are unlimited.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  givingcounterexamples: [
+    {
+      name: "Not Wrong, Just Not Always",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The pack-wide stance: the target of a counter-example is the word \"always\", not the sentence. You are making a claim the right size rather than knocking it over, and that is a much smaller thing to ask of somebody. Example of the shift — instead of \"that's not true\", you are aiming at \"that's true most of the time\".\n\nThe three thoughts that cause the trouble:\n1. \"If I have an exception, they're wrong\" — they are usually right, with an edge.\n2. \"One of us has to be correct\" — the useful outcome is a narrower claim you both hold.\n3. \"I need a strong example\" — you need a true one, and small is fine.\n\nMindset: you are taking the word always out. When it is gone, you are finished — do not keep going.",
+      inputs: [
+        { q: "You feel you have to prove the whole claim wrong.", a: "\"I don't. I just want the word 'always' out of it, and then I'm done.\"", bundle: 'pro' },
+        { q: "You are hunting for a knockout example.", a: "\"A small true one takes 'always' out just as well as a big one.\"", bundle: 'pro' },
+        { q: "They have conceded 'usually' and you want to keep going.", a: "\"That was the whole goal. Anything more is me arguing for fun.\"", bundle: 'pro' },
+        { q: "You realise they were mostly right.", a: "\"Mostly right is the normal outcome. My job was the edge, not the middle.\"", bundle: 'pro' },
+        { q: "You want them to admit the claim was wrong.", a: "\"It wasn't wrong. It was too wide, and now it isn't. That's the win.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Widen, Do Not Win",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The stance about what a counter-example is for: it makes the discussion bigger, not the other person smaller. Used to score a point it produces defensiveness and nothing else; used to widen, it usually produces agreement within a sentence or two. Example of the shift — instead of hunting for the case that will end the argument, you offer the case that adds a room to it.\n\nWhere it goes wrong:\n1. You save your best example for the moment it will land hardest.\n2. You feel a small pleasure when they cannot answer.\n3. You keep going after they have already moved.\n\nMindset: the counter-example is a door, not a hit. If nobody has learned anything, it was an argument in disguise.",
+      inputs: [
+        { q: "You are enjoying having the better example.", a: "\"That feeling is the sign I've stopped discussing and started competing.\"", bundle: 'pro' },
+        { q: "You are saving a strong case for maximum effect.", a: "\"If I'm timing it for impact, it's not an example any more. It's a move.\"", bundle: 'pro' },
+        { q: "They have already softened their claim and you have more to say.", a: "\"They moved. My job here is finished.\"", bundle: 'pro' },
+        { q: "You are choosing the example that will be hardest to answer.", a: "\"Hardest to answer is not the same as most useful. Which one actually shows the edge?\"", bundle: 'pro' },
+        { q: "Nobody has learned anything but you are ahead.", a: "\"Then it was an argument in disguise. Widen it or drop it.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Concede First",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The stance about order: the sentence before the exception decides how the exception is heard. Six words of agreement turn a contradiction into a contribution, and they cost nothing because the general case usually is right. Example of the shift — instead of opening with \"actually\", you open with \"usually, yes\".\n\nWhere the hesitation shows up:\n1. You feel that conceding weakens your point — it is what makes it hearable.\n2. You want to get the exception out before you lose your nerve.\n3. You think agreement will be read as backing down.\n\nMindset: \"usually, yes — though…\" is the whole technique. Everything else in this pack is what goes after the dash.",
+      inputs: [
+        { q: "You are about to open with 'actually'.", a: "\"Swap it for 'usually, yes'. Same sentence after it, completely different conversation.\"", bundle: 'pro' },
+        { q: "You worry that agreeing first weakens the point.", a: "\"It doesn't weaken it. It's what gets it listened to.\"", bundle: 'pro' },
+        { q: "You want to say the exception before you lose your nerve.", a: "\"Six words of agreement first. The exception will still be there.\"", bundle: 'pro' },
+        { q: "You feel the concession is dishonest because you disagree.", a: "\"I don't disagree with most of it. Saying so is accurate, not diplomatic.\"", bundle: 'pro' },
+        { q: "You have opened with the exception and it went badly.", a: "\"Same content, wrong order. Concede, then except — it's the whole technique.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "I Don't Have One",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The stance about honesty: not having an example is an ordinary situation with an ordinary sentence attached, and inventing one is the only failure in this pack that cannot be walked back. Example of the shift — instead of reaching for a figure that feels right, you say you have not got one and ask instead.\n\nWhere it goes wrong:\n1. A number that feels about right becomes a number you stated.\n2. \"I read somewhere\" stands in for a source you cannot name.\n3. A story you half remember gets told as something you saw.\n\nMindset: \"I don't have a case to point at\" costs you a sentence. An invented one costs you everything else you said.",
+      inputs: [
+        { q: "You are about to quote a statistic you cannot source.", a: "\"'I think it's around a third, but don't quote me' is allowed. Inventing it is not.\"", bundle: 'pro' },
+        { q: "You half remember a story that would prove your point.", a: "\"Half a memory is not evidence. I'll say I'm unsure or I'll say nothing.\"", bundle: 'pro' },
+        { q: "You have no example and feel you need one.", a: "\"Then I ask. 'Can you think of anyone it hasn't been true for?' does the same job.\"", bundle: 'pro' },
+        { q: "The invented version would be so much better than the real one.", a: "\"Better and unusable. One check and everything else I said goes with it.\"", bundle: 'pro' },
+        { q: "You want to round a figure into something more convincing.", a: "\"Hedge it out loud instead. 'About a third, don't quote me' is honest and still useful.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  discussing: [
+    {
+      name: "Not Trying to Win",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The pack-wide stance: a discussion is not a contest with a result, and treating it as one is what produces every failure in the pack. The aim is that both people understand the question better than they did — which is compatible with disagreeing at the end. Example of the shift — instead of hunting for the argument they cannot answer, you look for the part you have not understood.\n\nThe three thoughts that cause the trouble:\n1. \"One of us has to be right\" — you can both be, about different parts.\n2. \"If I concede I lose\" — conceding accurately is what makes the rest of you believable.\n3. \"It ended without agreement, so it failed\" — most good discussions do.\n\nMindset: the outcome to aim for is two people who understand it better. Agreement is optional and often unavailable.",
+      inputs: [
+        { q: "You are looking for the argument they cannot answer.", a: "\"That's a competition move. What's the bit I haven't understood yet?\"", bundle: 'pro' },
+        { q: "The discussion ended without agreement and you feel it failed.", a: "\"We both understand it better than an hour ago. That was the point.\"", bundle: 'pro' },
+        { q: "You feel a small pleasure when they cannot reply.", a: "\"That feeling means I've stopped discussing. Back to the actual question.\"", bundle: 'pro' },
+        { q: "You want the last word.", a: "\"The last word is worth nothing tomorrow. What do I actually want them to leave with?\"", bundle: 'pro' },
+        { q: "You are keeping score.", a: "\"There isn't a score. There's what we each think, and whether it's moved.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Say It As Yours",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The stance behind every Me-Focus move: an opinion stated as a fact invites a fight about the fact. \"I think\" is not a hedge — it is the accurate description of what you are saying, and it makes the other person's disagreement cheap rather than confrontational. Example of the shift — instead of \"that's obviously wrong\", you say \"I see it differently, and here's why\".\n\nWhere it goes wrong:\n1. You dress a preference up as a principle to make it harder to argue with.\n2. You say \"people think\" when you mean \"I think\".\n3. You avoid the opinion entirely and then resent not being heard.\n\nMindset: own it. It is more honest, and it is harder to argue with — you are the authority on what you think.",
+      inputs: [
+        { q: "You are about to present your view as an obvious fact.", a: "\"It's my view. Saying so makes it easier for them to say theirs.\"", bundle: 'pro' },
+        { q: "You are hiding behind 'people say'.", a: "\"Whose view is this actually? If it's mine, say mine.\"", bundle: 'pro' },
+        { q: "You have not stated a position and feel unheard.", a: "\"Nobody can respond to something I haven't said. Put it on the table.\"", bundle: 'pro' },
+        { q: "You are dressing a preference up as a principle.", a: "\"It's a preference and that's allowed. Preferences are real reasons.\"", bundle: 'pro' },
+        { q: "You worry your view is not well enough thought through.", a: "\"Half-formed and honest is fine. 'I lean this way, not strongly' is a real position.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Listen to Hear, Not to Reply",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The stance behind every You-Focus move: while someone is talking you are either taking it in or you are queueing, and the two feel identical from the inside. The qualification you needed usually arrives in their last sentence, which is exactly the sentence you talk over. Example of the shift — instead of holding your reply ready, you follow to the end and then think.\n\nWhere it shows up:\n1. You have your answer ready before they have finished the point.\n2. You interrupt and the interrupted point comes back twice as long.\n3. You cannot summarise what they said, only whether you agreed with it.\n\nMindset: whatever you were going to say will still be there in eight seconds, and it will usually be better for the wait.",
+      inputs: [
+        { q: "Your reply is ready and they are still talking.", a: "\"It'll keep. The last quarter is where the interesting part usually is.\"", bundle: 'pro' },
+        { q: "You cannot summarise what they just said.", a: "\"Then I wasn't listening, I was waiting. Ask them to say the last bit again.\"", bundle: 'pro' },
+        { q: "You interrupted and the point came back at twice the length.", a: "\"That's what interrupting costs. Cheaper to wait.\"", bundle: 'pro' },
+        { q: "A pause tempts you to jump in.", a: "\"A pause is thinking, not an invitation.\"", bundle: 'pro' },
+        { q: "You are certain you disagree before they have finished.", a: "\"Certain before the end is a sign I'm arguing with a prediction.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Changing Your Mind Is a Result",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The stance about outcomes: being persuaded is not a defeat, it is the discussion doing the thing discussions are for. Saying so out loud costs a moment of discomfort and buys something considerable — people are far more willing to discuss anything with someone who has been seen to move. Example of the shift — instead of quietly adjusting your view and defending it anyway, you say which part changed your mind.\n\nWhere the resistance shows up:\n1. You keep arguing a position you have already left.\n2. You concede silently and let them think they lost.\n3. You look for a smaller point to be right about instead.\n\nMindset: say it plainly, and name what did it. \"The bit about the night shift changed my mind\" is an answer and a compliment at the same time.",
+      inputs: [
+        { q: "You are defending a position you no longer hold.", a: "\"Say it out loud. Arguing for something I don't believe wastes both of us.\"", bundle: 'pro' },
+        { q: "Conceding feels like losing in front of other people.", a: "\"It reads as confidence, not defeat. People trust someone who can move.\"", bundle: 'pro' },
+        { q: "You want to concede quietly and move on.", a: "\"Name the part that did it. That's the useful half of conceding.\"", bundle: 'pro' },
+        { q: "Only some of their case moved you.", a: "\"Then say which. Half a concession, accurately placed, beats a vague one.\"", bundle: 'pro' },
+        { q: "You changed your mind an hour after the discussion.", a: "\"Tell them tomorrow. Late is fine — silent isn't.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  storybanter: [
+    {
+      name: "Build, Do Not Perform",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The pack-wide stance: this is a thing two people make together, and the measure is whether the story kept going, not whether your line was the best one. A person who is trying to be the funniest stops listening, and a person who has stopped listening cannot build on anything. Example of the shift — instead of hunting for your best line, you take their last one seriously.\n\nThe three thoughts that cause the trouble:\n1. \"I need to be funnier than that\" — you need to leave them something.\n2. \"That was a weak turn from me\" — a turn that kept it going is a good turn.\n3. \"It only works if I'm quick\" — the consequence technique needs no speed at all.\n\nMindset: the goal is collaboration, not being the funniest. Two people building beats one person performing at another.",
+      inputs: [
+        { q: "You are trying to top their last line.", a: "\"Topping it ends it. Building on it keeps it going, which is the actual game.\"", bundle: 'pro' },
+        { q: "You feel your turn was weak.", a: "\"It kept the story alive. That is the whole job of a turn.\"", bundle: 'pro' },
+        { q: "You are waiting for a good enough idea before speaking.", a: "\"Good enough is 'so then what happens'. Say it and the rest arrives.\"", bundle: 'pro' },
+        { q: "They said something better than anything you have.", a: "\"Perfect — now I've got material. Building is easier than starting.\"", bundle: 'pro' },
+        { q: "You are keeping score of who got the laughs.", a: "\"Nobody else is keeping that score. They're just enjoying it.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Yes, And — Never Yes, But",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The stance behind the whole form: everything offered is accepted. \"But\" is a correction, and a correction inside an invented story is a small door closing. This is the one rule the form actually has, and it is worth holding absolutely. Example of the shift — instead of pointing out that it would not work, you decide it would.\n\nWhere it goes wrong:\n1. You correct a detail out of pure reflex.\n2. You say \"yes, but\" and think you have agreed.\n3. You treat an impossible idea as a mistake rather than as an offer.\n\nMindset: nothing has to be possible. The only thing that matters is that you build on what you were handed.",
+      inputs: [
+        { q: "You are about to point out that it would not work.", a: "\"Nothing here works. That's not the point — what happens next?\"", bundle: 'pro' },
+        { q: "You said \"yes, but\" and thought you were agreeing.", a: "\"'But' undoes the 'yes'. Swap it and the same sentence builds instead.\"", bundle: 'pro' },
+        { q: "Their idea broke the internal logic of the story.", a: "\"Then the logic changes. That's allowed, and it's usually funnier.\"", bundle: 'pro' },
+        { q: "You corrected a detail out of reflex.", a: "\"Take it back lightly and accept it twice as hard. That repairs it completely.\"", bundle: 'pro' },
+        { q: "You want to steer the story somewhere better.", a: "\"Steering is blocking with better manners. Go where they put it.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Absurd Is Safer Than Clever",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The stance about what to aim for: an obviously impossible idea cannot be mistaken for a judgement about anyone, and a clever remark can. The bigger and sillier the invention, the more clearly it is play — which is why the safest banter is the least realistic. Example of the shift — instead of a sharp observation, you reach for the ridiculous version.\n\nWhere it shows up:\n1. A remark that is nearly true and therefore nearly a criticism.\n2. Humour aimed at a real weakness, dressed as a story.\n3. Restraint — a cautious exaggeration that reads as a correction.\n\nMindset: go past sensible in one jump. Halfway is where a joke starts sounding like a point.",
+      inputs: [
+        { q: "Your line is funny because it is nearly true.", a: "\"Nearly true is nearly a criticism. Make it impossible instead.\"", bundle: 'pro' },
+        { q: "You are being careful with the exaggeration.", a: "\"Careful reads as correcting. If I'm wondering whether it's too much, it isn't enough.\"", bundle: 'pro' },
+        { q: "You have a sharp observation about them ready.", a: "\"Sharp belongs somewhere else. Here I want ridiculous.\"", bundle: 'pro' },
+        { q: "The joke would work best if it landed on them.", a: "\"Then it isn't this game. Aim it at the invented week, not the real person.\"", bundle: 'pro' },
+        { q: "You want the clever version rather than the silly one.", a: "\"Clever gets admired. Silly gets built on. I'd rather be built on.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Stop While It Is Good",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The stance about endings: nobody remembers a story that stopped a turn early, and everybody remembers one that went four turns long. Landing it is a move in its own right, not a failure of imagination. Example of the shift — instead of finding one more thing, you say the flat closing line and change the subject.\n\nWhere the pull to continue comes from:\n1. You have one more idea and it feels like a waste not to use it.\n2. Stopping feels like admitting it has run out.\n3. Nobody else has stopped it, so you assume it is still working.\n\nMindset: the goal was the laugh you already had. Land it warmly and go and do something else.",
+      inputs: [
+        { q: "You have one more idea and the room has moved on.", a: "\"Save it. An unused good line is better than a used late one.\"", bundle: 'pro' },
+        { q: "Stopping feels like giving up.", a: "\"Landing it is a move, not a surrender. Somebody has to do it.\"", bundle: 'pro' },
+        { q: "The biggest laugh was three turns ago.", a: "\"That was the top. Everything since is downhill with more words.\"", bundle: 'pro' },
+        { q: "Nobody else has ended it so you assume it is fine.", a: "\"Everyone's waiting for someone to land it. Be that person.\"", bundle: 'pro' },
+        { q: "You want the last word in a story you both built.", a: "\"Hand them the ending instead. It's their story too, and it ends better.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  explainthings2: [
+    {
+      name: "The Question Under the Question",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The pack-wide stance: people rarely ask the question they actually want answered. \"What is it?\" almost always means \"would I ever need this?\", and answering the literal version is how clear explanations end up useless. Example of the shift — instead of defining the thing, you tell them when they would reach for it.\n\nThe three thoughts that cause the trouble:\n1. \"They asked what it is\" — they asked what it is *to them*.\n2. \"I should start at the beginning\" — start where their gap is.\n3. \"If I am accurate I have done my job\" — accurate and irrelevant is still a failure.\n\nMindset: answer the question they have, not the one they said. If you cannot tell, ask — it takes six words.",
+      inputs: [
+        { q: "You gave a correct answer and it landed flat.", a: "\"Correct isn't the standard. Useful is. Which W were they actually missing?\"", bundle: 'pro' },
+        { q: "You want to start from first principles.", a: "\"First principles are for me, not for them. Start where their gap is.\"", bundle: 'pro' },
+        { q: "You cannot tell what they are asking.", a: "\"Then ask. 'What it is, or what it's for?' costs nothing and saves five minutes.\"", bundle: 'pro' },
+        { q: "You are annoyed that they asked the wrong question.", a: "\"They asked the only question they had words for. Finding the real one is my job.\"", bundle: 'pro' },
+        { q: "You have explained this many times and always the same way.", a: "\"Same explanation every time means I have stopped listening to who is asking.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Short Is Not Rude",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The stance about length: a one-sentence answer feels dismissive from the inside and generous from the outside. The long version is available if they want it, and they will ask — people always ask about things they are interested in. Example of the shift — instead of proving you know the subject, you give the short version and stop.\n\nWhere the hesitation shows up:\n1. You add detail so it does not sound like you are brushing them off.\n2. You explain the exceptions before anyone has met the rule.\n3. You mistake completeness for helpfulness.\n\nMindset: nobody has ever complained that an explanation was too short. They ask, and then you get to say more with someone who wants it.",
+      inputs: [
+        { q: "A one-sentence answer feels like brushing them off.", a: "\"It reads as generous from where they're standing. And they'll ask if they want more.\"", bundle: 'pro' },
+        { q: "You want to include the exceptions.", a: "\"Exceptions after the rule, and only if they're still there.\"", bundle: 'pro' },
+        { q: "You are proving you know the subject.", a: "\"That's for me, not for them. What do they actually need to walk away with?\"", bundle: 'pro' },
+        { q: "You worry the short version makes you sound vague.", a: "\"Vague is missing information. Short is choosing which information first.\"", bundle: 'pro' },
+        { q: "They have not asked a follow-up.", a: "\"Then that was enough. Not every explanation needs a second half.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Say Who It Is Not For",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The stance about honesty in explaining: the sentence that says \"this probably isn't for you\" is what makes everything else you said believable. It costs a recommendation and buys the listener's trust in every future one. Example of the shift — instead of listing what is good about it, you say plainly where the listener sits.\n\nWhere it goes wrong:\n1. You like the thing, so every sentence is a benefit.\n2. You do not want to be discouraging.\n3. You leave out the catch because they did not ask.\n\nMindset: an explanation with no \"not for you\" in it is a pitch. One honest exclusion makes the rest land.",
+      inputs: [
+        { q: "Every sentence you have said has been a benefit.", a: "\"Where's the catch? If I can't name one, I'm selling rather than explaining.\"", bundle: 'pro' },
+        { q: "You do not want to put them off something you like.", a: "\"Telling them honestly costs one recommendation and buys every future one.\"", bundle: 'pro' },
+        { q: "They did not ask about the drawback.", a: "\"They shouldn't have to ask. It's part of the explanation, not an objection.\"", bundle: 'pro' },
+        { q: "Saying it is not for them feels discouraging.", a: "\"Letting them buy the wrong thing is what would actually discourage them.\"", bundle: 'pro' },
+        { q: "You are recommending something you use daily to someone quite different.", a: "\"It fits my week. Does it fit theirs? That is the whole question.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Give It Neighbours",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The stance about placing things: people file new information by what it sits next to, so an explanation with no neighbours is remembered as a fact rather than as a thing. Naming what comes before it, after it, or beside it does more for memory than any amount of description. Example of the shift — instead of describing the thing in isolation, you say what it sits between.\n\nWhere it shows up:\n1. Something perfectly explained that nobody can recall a day later.\n2. A description that is accurate and floating.\n3. \"But where does it fit?\" asked after a complete answer.\n\nMindset: give it a shelf. Between two things they already know is the easiest place in the world to remember something.",
+      inputs: [
+        { q: "Your explanation was clear and nobody remembers it.", a: "\"It had nothing next to it. What does it sit between?\"", bundle: 'pro' },
+        { q: "You are describing something with no obvious category.", a: "\"Closest familiar thing first, then the difference. That's a shelf.\"", bundle: 'pro' },
+        { q: "They ask where it fits after you have finished.", a: "\"That question means I explained the thing and not its place. Answer it first next time.\"", bundle: 'pro' },
+        { q: "You have described something accurately and it floated away.", a: "\"Accurate and unplaced. What does it come after, and what comes next?\"", bundle: 'pro' },
+        { q: "You are about to open with how it works.", a: "\"Shelf first. Where it belongs and who it is for, then the mechanics.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  buildingastory: [
+    {
+      name: "Small Stories Are Enough",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The pack-wide stance: the size of the event is almost irrelevant. A locked door told sharply lands better than a dramatic week told vaguely, and most of the stories people remember hearing were about nothing much. Example of the shift — instead of waiting for a story worth telling, you tell the small true one that arrived.\n\nThe three thoughts that cause the trouble:\n1. \"Nothing interesting happens to me\" — nothing interesting happens to anybody; the telling is the difference.\n2. \"This isn't a good enough story\" — good enough means true, small and shaped.\n3. \"I'll save it for when it fits better\" — that moment does not come.\n\nMindset: small, true, shaped. That is the whole standard, and everybody clears it several times a week.",
+      inputs: [
+        { q: "You think nothing interesting happens to you.", a: "\"Nothing interesting happens to anyone. The telling is the whole difference.\"", bundle: 'pro' },
+        { q: "The story you have feels too small.", a: "\"Small and sharp beats big and vague, every single time.\"", bundle: 'pro' },
+        { q: "You are waiting for a better moment to tell it.", a: "\"The better moment doesn't come. This one is here.\"", bundle: 'pro' },
+        { q: "You compare your story to the one just told.", a: "\"It's not a competition — a smaller one next to theirs is a conversation.\"", bundle: 'pro' },
+        { q: "You are looking for a dramatic story and have none.", a: "\"The locked door story is the one people will remember. Use that.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Start Where It Moves",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The stance about openings: your instinct is to explain first so that everything makes sense, and that instinct costs you the room. Context can be delivered late and often does not need delivering at all — the listener will build most of it themselves. Example of the shift — instead of introducing everyone, you say the first thing that happened.\n\nWhere it goes wrong:\n1. You explain who people are before anything has occurred.\n2. You give the background because you would want it yourself.\n3. You start at the true beginning rather than at the interesting one.\n\nMindset: start where it moves and backfill only what they actually need. Almost nobody has ever asked for more setup.",
+      inputs: [
+        { q: "You are about to explain who everyone is.", a: "\"Names can wait. What happened?\"", bundle: 'pro' },
+        { q: "You want to start at the real beginning.", a: "\"The real beginning is usually the boring one. Start where it turns.\"", bundle: 'pro' },
+        { q: "You are worried it will not make sense without context.", a: "\"They'll ask if they need it. They almost never need it.\"", bundle: 'pro' },
+        { q: "You have three sentences of background ready.", a: "\"One clause of it, at most. The rest can arrive later or not at all.\"", bundle: 'pro' },
+        { q: "You have lost the room in the setup.", a: "\"Jump to the turn now. The setup can follow it.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Feeling Is the Story",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The stance behind the emotional half of the pack: people follow feeling more closely than they follow events, and a story told without any is a report. Naming the feeling once, plainly, does more than any amount of vivid description. Example of the shift — instead of describing the situation more carefully, you say how it felt.\n\nWhere it shows up:\n1. An accurate account that nobody reacts to.\n2. Detail piled on detail in the hope that the feeling arrives on its own.\n3. Playing something down because naming the feeling seems dramatic.\n\nMindset: say the feeling out loud once. The pace, the pauses and the detail all follow from it, and none of them arrive without it.",
+      inputs: [
+        { q: "The account is accurate and nobody is reacting.", a: "\"Accurate isn't the same as told. How did it feel?\"", bundle: 'pro' },
+        { q: "You are adding detail hoping the feeling comes through.", a: "\"One clause naming it does more than four describing it.\"", bundle: 'pro' },
+        { q: "Naming the feeling seems a bit dramatic.", a: "\"'I was mortified' is not dramatic. It's information.\"", bundle: 'pro' },
+        { q: "The feeling was ordinary and unimpressive.", a: "\"'Mostly I was just tired' is honest, and honest is what lands.\"", bundle: 'pro' },
+        { q: "You are telling a funny story about something that was not funny.", a: "\"Both versions are true. Choose the one this room can take.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Finish It on Purpose",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The stance about endings and lessons: a story is remembered by its last sentence, and most stories are ended by running out rather than by stopping. Deciding to end — and deciding whether there is a takeaway at all — is a move, not an admission that you have nothing left. Example of the shift — instead of winding down, you say the line you told it for and stop.\n\nWhere the trouble comes from:\n1. You have had the laugh and lose interest in the ending.\n2. You add a moral because the ending feels too small.\n3. You keep going because nobody has stopped you.\n\nMindset: say the last line on purpose, and stop. If there is a lesson, one sentence; if there is not, say that instead — it is a better ending than an invented one.",
+      inputs: [
+        { q: "You have had the laugh and are winding down.", a: "\"The ending is what they'll carry. Say it properly.\"", bundle: 'pro' },
+        { q: "You are about to add a moral to make it feel finished.", a: "\"'It was just a strange day' finishes it perfectly well.\"", bundle: 'pro' },
+        { q: "You cannot tell whether you have finished.", a: "\"Then they can't either. Say the last line and stop talking.\"", bundle: 'pro' },
+        { q: "Nobody has stopped you so you keep going.", a: "\"Nobody stops a story out loud. Land it before they have to.\"", bundle: 'pro' },
+        { q: "The lesson you are about to give is not the true one.", a: "\"The honest one is smaller and better. Say that instead.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  reframing: [
+    {
+      name: "Every Frame Is a Choice",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The pack-wide stance: what happened and what it means are two different things, and only the first is fixed. The meaning arrives so fast that it feels like part of the event, which is exactly why it goes unexamined. Example of the shift — instead of accepting the first reading that arrived, you ask what else fits the same facts.\n\nThe three thoughts that cause the trouble:\n1. \"That's just what it means\" — that is the reading that got there first.\n2. \"I'm not spinning it, I'm being realistic\" — the negative frame is also a frame.\n3. \"There's only one way to see this\" — there is at least one more, and it usually fits better.\n\nMindset: separate the event from the conclusion. The event is a sentence; the conclusion is a story, and stories can be rewritten without lying.",
+      inputs: [
+        { q: "You have accepted the first reading that arrived.", a: "\"First doesn't mean true. What else fits exactly these facts?\"", bundle: 'pro' },
+        { q: "You think the negative version is simply realistic.", a: "\"The gloomy frame is a frame too. It isn't more accurate for being less pleasant.\"", bundle: 'pro' },
+        { q: "You cannot see any other reading.", a: "\"Then start with the smallest one: what would somebody who liked me say about this?\"", bundle: 'pro' },
+        { q: "The meaning feels like part of the event.", a: "\"What happened is one sentence. Everything else I've added.\"", bundle: 'pro' },
+        { q: "You are certain about what somebody's silence meant.", a: "\"I have their silence. I don't have their week.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "It Has To Be True",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The stance that keeps this from becoming spin: a reframe has to hold every fact the original one held. The moment it requires leaving something out it stops being a different reading and becomes a request to pretend — and the other person can always tell. Example of the shift — instead of reaching for the encouraging version, you look for the accurate one that happens to be kinder.\n\nWhere it goes wrong:\n1. The upside you name does not cover the cost, and you say it anyway.\n2. You reframe out of discomfort with their feeling rather than out of a real reading.\n3. You would not say the same thing about it in a month.\n\nMindset: truer, not nicer. A reframe that is both is available surprisingly often, and one that is only nicer is worth nothing.",
+      inputs: [
+        { q: "Your upside does not really cover the cost.", a: "\"Then it isn't a reframe. Say the honest thing instead.\"", bundle: 'pro' },
+        { q: "You are reframing because their feeling is uncomfortable.", a: "\"That's my discomfort, not their reading. Sit with it a minute.\"", bundle: 'pro' },
+        { q: "You would not say this in a month's time.", a: "\"Then it isn't true now either. It's just something to say.\"", bundle: 'pro' },
+        { q: "The kinder version requires ignoring one fact.", a: "\"It has to hold every fact the first one held. Otherwise it's a nicer story.\"", bundle: 'pro' },
+        { q: "You want to make somebody feel better quickly.", a: "\"Quickly is what makes it hollow. Accurate takes another minute and lasts.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Not Everything Needs a Better Angle",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The stance that makes the pack safe to own: some things are bad, some feelings are the correct response, and the reframe is not always the gift it feels like. Offered too early it is heard as being told how to feel, and the result is not comfort but silence next time. Example of the shift — instead of finding the silver lining, you say the thing is bad and ask what would help.\n\nWhere it shows up:\n1. You reach for perspective within an hour of something going wrong.\n2. You cannot sit with somebody being upset without trying to fix it.\n3. You treat a reasonable reaction as a problem to be solved.\n\nMindset: \"that's just bad, and I'm sorry\" is a complete response. Reach for it more often than the four types.",
+      inputs: [
+        { q: "You want to find the upside within an hour of the event.", a: "\"Too early. Today is for saying it's bad. The angle keeps.\"", bundle: 'pro' },
+        { q: "You cannot sit with somebody being upset.", a: "\"The urge to fix it is mine. What they asked for was company.\"", bundle: 'pro' },
+        { q: "The feeling seems out of proportion to you.", a: "\"Anger at something unfair is not a distortion. It's the correct reading.\"", bundle: 'pro' },
+        { q: "You have a genuinely good reframe and they are in bits.", a: "\"Good and premature. Offer it in a week and it'll land.\"", bundle: 'pro' },
+        { q: "You feel useless just listening.", a: "\"Listening is the useful thing. The clever angle is the optional extra.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Offer, Never Impose",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The stance about delivery: a reframe belongs to the person receiving it, and they get to refuse it. Handed over as the correct view it produces defence of a reading they might not even have liked; handed over as one option it usually gets tried on. Example of the shift — instead of \"you should see it as\", you say \"one way to look at it is\" and then stop.\n\nWhere it goes wrong:\n1. You repeat a reframe that was not taken.\n2. You treat their not taking it as them being stubborn.\n3. You start the sentence with \"you should\".\n\nMindset: offer it once, hold it loosely, let them keep their own. A reframe argued for has stopped being a gift.",
+      inputs: [
+        { q: "They did not take your reframe.", a: "\"That's allowed. It's their situation and their reading.\"", bundle: 'pro' },
+        { q: "You have said the same thing twice.", a: "\"Twice is pushing. They heard it the first time.\"", bundle: 'pro' },
+        { q: "You are about to begin with \"you should\".", a: "\"Swap it for 'one way to look at it'. Same content, completely different conversation.\"", bundle: 'pro' },
+        { q: "You think they are being stubborn about a good reading.", a: "\"Or it doesn't fit their facts, which they know better than I do.\"", bundle: 'pro' },
+        { q: "You want them to agree with your version.", a: "\"Wanting agreement means I'm arguing, not offering.\"", bundle: 'pro' },
+      ]
+    },
+  ],
 };
