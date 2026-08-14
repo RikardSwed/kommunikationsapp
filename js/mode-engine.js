@@ -123,6 +123,85 @@ const DS = (function () {
     return { open: doOpen, close: doClose };
   }
 
+  // ── Per-card notes panel (v1.27.03) ──────────────────────────────────────
+  // Opened by three taps on the hint line under the card. Covers the card the
+  // same way the description panel does, but is writable.
+  //
+  // Three things it has to get right:
+  //   · save before it can be lost — on every keystroke, on close, on
+  //     navigation, and on the page being hidden (iOS kills backgrounded web
+  //     views without warning)
+  //   · swallow touch events, or writing in it swipes the card underneath
+  //   · follow the card: setKey() is called on every render, so the panel
+  //     always shows the note for the side you are looking at
+  function setupNotePanel(cfg) {
+    const noop = { setKey() {}, close() {}, isOpen: () => false };
+    if (!cfg) return noop;
+    const panel = $(cfg.panel), area = $(cfg.area);
+    const closeBtn = $(cfg.close), hint = $(cfg.hint);
+    if (!panel || !area) return noop;
+
+    let open = false, key = null;
+
+    function save() {
+      if (!key || !window.noteSet) return;
+      noteSet(key, area.value);
+      markHint();
+    }
+    function markHint() {
+      if (!hint) return;
+      hint.classList.toggle('has-note', !!(key && window.noteGet && noteGet(key).trim()));
+    }
+    function doOpen() {
+      if (!key) return;
+      if (open) { doClose(); return; }
+      open = true;
+      area.value = window.noteGet ? noteGet(key) : '';
+      panel.classList.add('visible');
+      // let the panel land before the keyboard is asked for, or iOS scrolls
+      // the whole screen instead of the field
+      setTimeout(() => area.focus(), 60);
+    }
+    function doClose() {
+      if (!open) return;
+      save();
+      open = false;
+      area.blur();
+      panel.classList.remove('visible');
+    }
+    function setKey(k) {
+      if (open && key && k !== key) save();
+      key = k;
+      if (open) area.value = window.noteGet ? noteGet(key) : '';
+      markHint();
+    }
+
+    area.addEventListener('input', save);
+    if (closeBtn) closeBtn.addEventListener('click', e => { e.stopPropagation(); doClose(); });
+
+    // three taps on the hint line
+    let taps = 0, timer = null;
+    if (hint) {
+      const onTap = e => {
+        e.stopPropagation();
+        taps++;
+        clearTimeout(timer);
+        timer = setTimeout(() => { taps = 0; }, 1200);
+        if (taps >= 3) { taps = 0; doOpen(); }
+      };
+      hint.addEventListener('click', onTap);
+    }
+
+    // the card underneath must not see any of this
+    ['touchstart', 'touchmove', 'touchend', 'click'].forEach(ev =>
+      panel.addEventListener(ev, e => e.stopPropagation(), { passive: true }));
+
+    // a backgrounded web view can be killed without another event firing
+    document.addEventListener('visibilitychange', () => { if (document.hidden) save(); });
+
+    return { setKey, close: doClose, isOpen: () => open };
+  }
+
   // ═════════════════════════════════════════════════════════════════════════
   // STANDARD CARD MODE
   // ═════════════════════════════════════════════════════════════════════════
@@ -163,6 +242,7 @@ const DS = (function () {
 
     const info = setupInfoOverlay(cfg.info, () =>
       cfg.info && cfg.info.getText ? cfg.info.getText(group()) : (group() && group().description));
+    const note = setupNotePanel(cfg.note);
 
     // ── Orders (shuffle) ───────────────────────────────────────────────────
     function buildOrders() {
@@ -246,18 +326,45 @@ const DS = (function () {
       renderPb();
     }
 
-    // ── Feedback / access-level bars ───────────────────────────────────────
+    // ── Feedback / access-level bars, and the note key ─────────────────────
+    //
+    // v1.27.03 — THE INDICES CHANGED HERE, and it was a bug fix rather than a
+    // refactor. mode.gi and mode.ii are positions in the SHUFFLED order, not
+    // the card's own place in the pack. Keying a rating on them tied it to a
+    // slot: rate a card with Shuffle strategies on, come back tomorrow, and
+    // the same key is showing on a different card. The real indices below are
+    // stable whatever the shuffle does.
+    //
+    // With shuffle OFF the two are identical, so every rating given without
+    // shuffling keeps exactly the key it had. Nothing is lost by the change
+    // except ratings that were already pointing at the wrong card.
+    //
+    // Challenges, Mindset and Collections were never affected — their
+    // groupKey is g.name, which does not move.
+    function realIndices() {
+      const gi = (mode.groupOrder && mode.groupOrder.length) ? mode.groupOrder[mode.gi] : mode.gi;
+      const orders = mode.itemOrders && mode.itemOrders[gi];
+      const ii = (orders && orders.length) ? orders[mode.ii] : mode.ii;
+      return { gi, ii };
+    }
+
     function renderBars() {
       const g = group();
+      const { gi, ii } = realIndices();
       if (cfg.fb && window.fbRender && window.fbKey) {
-        const gk = cfg.fb.groupKey(g, mode.gi);
-        fbRender(`fb-${cfg.barPrefix}-front`, fbKey(cfg.fb.id, gk, mode.ii, 'front'));
-        fbRender(`fb-${cfg.barPrefix}-back`,  fbKey(cfg.fb.id, gk, mode.ii, 'back'));
+        const gk = cfg.fb.groupKey(g, gi);
+        fbRender(`fb-${cfg.barPrefix}-front`, fbKey(cfg.fb.id, gk, ii, 'front'));
+        fbRender(`fb-${cfg.barPrefix}-back`,  fbKey(cfg.fb.id, gk, ii, 'back'));
       }
       if (cfg.al && window.alRender && window.alKey) {
-        const gk = cfg.al.groupKey(g, mode.gi);
-        alRender(`al-${cfg.barPrefix}-front`, alKey(cfg.al.id, gk, mode.ii, 'front'));
-        alRender(`al-${cfg.barPrefix}-back`,  alKey(cfg.al.id, gk, mode.ii, 'back'));
+        const gk = cfg.al.groupKey(g, gi);
+        alRender(`al-${cfg.barPrefix}-front`, alKey(cfg.al.id, gk, ii, 'front'));
+        alRender(`al-${cfg.barPrefix}-back`,  alKey(cfg.al.id, gk, ii, 'back'));
+      }
+      // The note follows the side you are looking at, so flip() re-runs this.
+      if (cfg.note && cfg.fb && window.noteKey) {
+        const gk = cfg.fb.groupKey(g, gi);
+        note.setKey(noteKey(cfg.fb.id, gk, ii, mode.flipped ? 'back' : 'front'));
       }
     }
 
@@ -286,6 +393,8 @@ const DS = (function () {
         els.inner.style.transition = animate ? 'transform 0.4s ease' : 'none';
         els.inner.classList.toggle('flipped', mode.flipped);
       }
+      // front and back are two different notes
+      renderBars();
     }
 
     function trig(dir, cb) {
@@ -301,8 +410,8 @@ const DS = (function () {
     const itemCount = () => mode.itemOrders[mode.groupOrder[mode.gi]].length;
     function nextItem()  { trig('up',    () => { mode.ii = (mode.ii + 1) % itemCount(); render(); }); }
     function prevItem()  { trig('down',  () => { mode.ii = (mode.ii - 1 + itemCount()) % itemCount(); render(); }); }
-    function nextGroup() { trig('left',  () => { info.close(); mode.gi = (mode.gi + 1) % mode.groups.length; mode.ii = 0; render(); }); }
-    function prevGroup() { trig('right', () => { info.close(); mode.gi = (mode.gi - 1 + mode.groups.length) % mode.groups.length; mode.ii = 0; render(); }); }
+    function nextGroup() { trig('left',  () => { info.close(); note.close(); mode.gi = (mode.gi + 1) % mode.groups.length; mode.ii = 0; render(); }); }
+    function prevGroup() { trig('right', () => { info.close(); note.close(); mode.gi = (mode.gi - 1 + mode.groups.length) % mode.groups.length; mode.ii = 0; render(); }); }
 
     attachSwipe(els.card, {
       tap: () => flip(!mode.flipped),

@@ -97,26 +97,233 @@ if (feedbackModeToggle) feedbackModeToggle.addEventListener('change', () => {
   if (window.updateModeGearVisibility) window.updateModeGearVisibility();
 });
 
-// Export feedback data as JSON (guarded — see applyFeedbackMode above)
-if (feedbackExportBtn) feedbackExportBtn.addEventListener('click', () => {
-  const data = {};
+// ─── FEEDBACK & NOTES EXPORT (v1.27.03) ──────────────────────────────────────
+//
+// Ratings live under fb_… and notes under note_…, and the two key formats are
+// identical apart from the prefix (see fbKey / noteKey in app-core.js). That
+// is the whole design: strip the prefix and the rest of the key IS the card's
+// identity, so a rating and a note for the same card side collapse onto one
+// row without any matching logic.
+//
+// The raw key is not enough on its own, though. It carries indices, and
+// indices move when a pack is re-imported with its strategies in a different
+// order. So every exported entry also carries the RESOLVED strategy name and
+// the card's own text: if the indices ever drift, the file still says exactly
+// which card was meant.
+
+// key -> { pack, mode, group, item, side }  (null if it is not one of ours)
+function _fbParseKey(key) {
+  const body = key.replace(/^(fb_|note_)/, '');
+  const parts = body.split('_');
+  if (parts.length < 5) return null;
+  // side and item are the last two; mode and group are in between; the pack
+  // key is everything before them. Pack keys never contain '_', but group
+  // keys can be strategy NAMES, which do — so parse from the right.
+  const side = parts[parts.length - 1];
+  const item = parts[parts.length - 2];
+  const pack = parts[0];
+  const mode = parts[1];
+  const group = parts.slice(2, parts.length - 2).join('_');
+  return { pack, mode, group, item, side };
+}
+
+// Resolve a parsed key to the strategy name and the card's own text.
+// Returns {} when the pack or card is gone — an export must never throw on a
+// note left behind by a deleted pack.
+const _MODE_SOURCES = {
+  single:      () => (typeof collections           !== 'undefined' ? collections           : null),
+  mem:         () => (typeof memorizeCollections   !== 'undefined' ? memorizeCollections   : null),
+  flow:        () => (typeof multiStepCollections  !== 'undefined' ? multiStepCollections  : null),
+  challScreen: () => (typeof challengesCollections !== 'undefined' ? challengesCollections : null),
+  mindScreen:  () => (typeof mindsetCollections    !== 'undefined' ? mindsetCollections    : null),
+  collScreen:  () => (typeof collectionsModeData   !== 'undefined' ? collectionsModeData   : null),
+};
+const _MODE_LABELS = {
+  single: 'Single Strategy', mem: 'Memorize', flow: 'Sequences',
+  challScreen: 'Challenges', mindScreen: 'Mindset', collScreen: 'Collections',
+};
+
+// The indices in a key are positions in the BUNDLE-FILTERED list the user was
+// actually looking at, not in the raw data — DS.loadGroups drops groups with
+// no visible items and filters the items inside the rest. Resolving against
+// the raw data would name the wrong card for anyone below Pro. This mirrors
+// loadGroups exactly, so the export is correct for the level the export is
+// run at, which is the level the keys were written at.
+function _fbFilteredGroups(src, packKey, itemsProp) {
+  const raw = (src && src[packKey]) || [];
+  if (!raw.length || !window.filterInputsByBundle) return raw;
+  const filtered = raw
+    .map(g => Object.assign({}, g, {
+      [itemsProp]: window.filterInputsByBundle(g[itemsProp] || [], packKey)
+    }))
+    .filter(g => g[itemsProp].length);
+  return filtered.length ? filtered : raw;
+}
+
+function _fbResolve(p) {
+  const out = { modeLabel: _MODE_LABELS[p.mode] || p.mode };
+  const src = (_MODE_SOURCES[p.mode] || (() => null))();
+  const itemsProp = (p.mode === 'mem') ? 'cards' : 'inputs';
+  // Sequences are the exception: multiStepCollections is read unfiltered by
+  // the mode, and its scenarios are filtered later inside buildFlowSequence.
+  const groups = (p.mode === 'flow')
+    ? ((src && src[p.pack]) || [])
+    : _fbFilteredGroups(src, p.pack, itemsProp);
+  if (!groups.length) return out;
+  // group is either an index (single, mem, flow) or a strategy name
+  const g = /^\d+$/.test(p.group) ? groups[parseInt(p.group, 10)]
+                                  : groups.find(x => x && x.name === p.group);
+  if (!g) return out;
+  out.strategy = g.name;
+  const list = g.inputs || g.cards || [];
+  const it = list[parseInt(p.item, 10)];
+  if (!it) return out;
+  if (p.mode === 'flow') {
+    // a sequences item is a scenario, not a single card
+    out.card = it.situation || '';
+  } else {
+    out.card = (p.side === 'back') ? (it.a || '') : (it.q || '');
+  }
+  return out;
+}
+
+// Every rating and note in storage, merged onto one row per card side.
+function collectFeedbackAndNotes() {
+  const rows = {};
   for (let i = 0; i < localStorage.length; i++) {
     const key = localStorage.key(i);
-    if (key.startsWith('fb_')) {
-      data[key] = parseInt(localStorage.getItem(key));
+    const isFb = key.indexOf('fb_') === 0;
+    const isNote = key.indexOf('note_') === 0;
+    if (!isFb && !isNote) continue;
+    // fb_pack_… is the pack-level rating bar, a different thing
+    if (isFb && key.indexOf('fb_pack_') === 0) continue;
+    const p = _fbParseKey(key);
+    if (!p) continue;
+    const id = p.pack + '|' + p.mode + '|' + p.group + '|' + p.item + '|' + p.side;
+    if (!rows[id]) {
+      const r = _fbResolve(p);
+      rows[id] = {
+        pack: p.pack, mode: r.modeLabel, strategy: r.strategy || null,
+        cardIndex: parseInt(p.item, 10), side: p.side,
+        card: r.card || null, rating: null, note: null,
+      };
     }
+    if (isFb) rows[id].rating = parseInt(localStorage.getItem(key), 10);
+    else      rows[id].note   = localStorage.getItem(key);
   }
-  if (!Object.keys(data).length) {
-    alert('No feedback data yet.');
-    return;
-  }
-  const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+  // stable, readable order
+  return Object.keys(rows).sort().map(k => rows[k]);
+}
+window.collectFeedbackAndNotes = collectFeedbackAndNotes;
+
+function _download(text, filename, mime) {
+  const blob = new Blob([text], { type: mime });
   const url  = URL.createObjectURL(blob);
   const a    = document.createElement('a');
   a.href     = url;
-  a.download = `feedback_${new Date().toISOString().slice(0,10)}.json`;
+  a.download = filename;
   a.click();
-  URL.revokeObjectURL(url);
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
+}
+window._dsDownload = _download;
+
+// Developer export — ratings AND notes, JSON, one entry per card side.
+if (feedbackExportBtn) feedbackExportBtn.addEventListener('click', () => {
+  const entries = collectFeedbackAndNotes();
+  if (!entries.length) {
+    alert('No ratings or notes yet.');
+    return;
+  }
+  const payload = {
+    exportedAt: new Date().toISOString(),
+    appVersion: (typeof VERSION !== 'undefined' ? VERSION : ''),
+    counts: {
+      total: entries.length,
+      withRating: entries.filter(e => e.rating !== null).length,
+      withNote: entries.filter(e => e.note !== null).length,
+      withBoth: entries.filter(e => e.rating !== null && e.note !== null).length,
+    },
+    entries,
+  };
+  _download(JSON.stringify(payload, null, 2),
+            `deckstack_feedback_${new Date().toISOString().slice(0, 10)}.json`,
+            'application/json');
+});
+
+
+// ─── USER-FACING NOTES EXPORT (v1.27.03) ─────────────────────────────────────
+//
+// Markdown rather than JSON, on purpose. This button is in the ordinary
+// settings screen, so the person pressing it is not a developer — they want
+// to read their own notes, or mail them to somebody. A .md file opens as
+// plain text everywhere and still has enough structure to be useful when a
+// beta tester sends it back. The developer export next to the ratings is the
+// machine-readable one.
+const notesExportBtn = document.getElementById('notesExportBtn');
+if (notesExportBtn) notesExportBtn.addEventListener('click', () => {
+  const entries = (window.collectFeedbackAndNotes ? collectFeedbackAndNotes() : [])
+    .filter(e => e.note);
+  if (!entries.length) {
+    alert('You have not written any notes yet.\n\nOpen a card, tap three times on the line under it, and write.');
+    return;
+  }
+  const packLabel = k => {
+    const card = document.querySelector('.collection-card[data-key="' + k + '"]');
+    return (card && card.dataset.label) || k;
+  };
+  const byPack = {};
+  entries.forEach(e => { (byPack[e.pack] = byPack[e.pack] || []).push(e); });
+
+  const out = [];
+  out.push('# My Deckstack notes');
+  out.push('');
+  out.push(entries.length + (entries.length === 1 ? ' note' : ' notes') +
+           ' · exported ' + new Date().toISOString().slice(0, 10) +
+           (typeof VERSION !== 'undefined' ? ' · ' + VERSION : ''));
+  out.push('');
+  Object.keys(byPack).sort().forEach(pack => {
+    out.push('## ' + packLabel(pack));
+    out.push('');
+    byPack[pack].sort((a, b) =>
+      (a.mode + (a.strategy || '')).localeCompare(b.mode + (b.strategy || ''))
+    ).forEach(e => {
+      out.push('### ' + (e.strategy || 'Unknown strategy') + '  ·  ' + e.mode);
+      if (e.card) out.push('> ' + String(e.card).replace(/\n/g, '\n> '));
+      out.push('');
+      out.push('Card ' + (e.cardIndex + 1) + ', ' + e.side +
+               (e.rating !== null ? '  ·  rating ' + e.rating + '/4' : ''));
+      out.push('');
+      out.push(e.note);
+      out.push('');
+    });
+  });
+  window._dsDownload(out.join('\n'),
+    'deckstack_notes_' + new Date().toISOString().slice(0, 10) + '.md',
+    'text/markdown');
+});
+
+// ─── CLEAR RATINGS AND NOTES (v1.27.03) ──────────────────────────────────────
+//
+// Its own button, deliberately separate from "Reset first-run state". That one
+// clears favourites, the continue card, the tap hint and onboarding, and it
+// has NEVER touched fb_ or note_ keys — which is right: you reset the first
+// run to see the app fresh, not to throw away the feedback you collected on
+// the way. This is the button for throwing that away, once it has been read
+// and acted on.
+const clearFeedbackBtn = document.getElementById('clearFeedbackBtn');
+if (clearFeedbackBtn) clearFeedbackBtn.addEventListener('click', () => {
+  const doomed = Object.keys(localStorage)
+    .filter(k => k.indexOf('fb_') === 0 || k.indexOf('note_') === 0);
+  if (!doomed.length) {
+    if (window.showToast) showToast('There are no ratings or notes to clear.');
+    return;
+  }
+  const notes = doomed.filter(k => k.indexOf('note_') === 0).length;
+  const ratings = doomed.length - notes;
+  if (!confirm('Delete ' + ratings + ' rating(s) and ' + notes + ' note(s)?\n\nThis cannot be undone. Export them first if you have not.')) return;
+  doomed.forEach(k => localStorage.removeItem(k));
+  document.querySelectorAll('.hint.has-note').forEach(el => el.classList.remove('has-note'));
+  if (window.showToast) showToast('Ratings and notes cleared.');
 });
 
 applyFeedbackMode();

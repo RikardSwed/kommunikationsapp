@@ -27,6 +27,10 @@ DS.createCardMode({
   itemBack:  it => it.a,
   shuffle: true,
   barPrefix: 'single',
+  // v1.27.03 — per-card notes. The panel is keyed off the SAME id and
+  // groupKey as `fb` above, so a note and a rating on one card side share
+  // an identity and the export can merge them without any matching.
+  note: { panel: 'cardNote', area: 'cardNoteArea', close: 'cardNoteClose', hint: 'hint' },
   fb: { id: 'single', groupKey: (g, gi) => gi },
   al: { id: 'single', groupKey: (g, gi) => gi },
 });
@@ -65,6 +69,7 @@ DS.createCardMode({
   itemFront: it => it.q,
   itemBack:  it => it.a,
   barPrefix: 'mem',
+  note: { panel: 'memCardNote', area: 'memCardNoteArea', close: 'memCardNoteClose', hint: 'memHint' },
   fb: { id: 'mem', groupKey: (g, gi) => gi },
   al: { id: 'mem', groupKey: (g, gi) => gi },
 });
@@ -109,6 +114,7 @@ DS.createCardMode({
   itemFront: it => it.front,
   itemBack:  it => it.back,
   barPrefix: 'flow',
+  note: { panel: 'flowCardNote', area: 'flowCardNoteArea', close: 'flowCardNoteClose', hint: 'flowHint' },
   fb: { id: 'flow', groupKey: (g, gi) => gi },
   al: { id: 'flow', groupKey: (g, gi) => gi },
 });
@@ -133,6 +139,7 @@ DS.createCardMode({
   itemBack:  it => it.a,
   barPrefix: 'chall',
   // Preserves existing localStorage keys: fb_{pack}_challScreen_{name}_{idx}_{side}
+  note: { panel: 'challCardNote', area: 'challCardNoteArea', close: 'challCardNoteClose', hint: 'challHint' },
   fb: { id: 'challScreen', groupKey: g => g.name },
   al: { id: 'challScreen', groupKey: g => g.name },
 });
@@ -156,6 +163,7 @@ DS.createCardMode({
   itemFront: it => it.q,
   itemBack:  it => it.a,
   barPrefix: 'mind',
+  note: { panel: 'mindCardNote', area: 'mindCardNoteArea', close: 'mindCardNoteClose', hint: 'mindHint' },
   fb: { id: 'mindScreen', groupKey: g => g.name },
   al: { id: 'mindScreen', groupKey: g => g.name },
 });
@@ -179,6 +187,7 @@ DS.createCardMode({
   itemFront: it => it.q,
   itemBack:  it => it.a,
   barPrefix: 'coll',
+  note: { panel: 'collCardNote', area: 'collCardNoteArea', close: 'collCardNoteClose', hint: 'collHint' },
   fb: { id: 'collScreen', groupKey: g => g.name },
   al: { id: 'collScreen', groupKey: g => g.name },
 });

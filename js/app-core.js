@@ -5,7 +5,7 @@
 // (DS.createCardMode / DS.createHandsfreeMode) and are declared in
 // app-modes.js and app-handsfree.js.
 
-const VERSION = 'v1.27.02';
+const VERSION = 'v1.27.03';
 
 // Keep every version label in the UI in sync with VERSION (v1.26.44).
 // The hardcoded strings in index.html are only fallbacks — this runs at
@@ -724,6 +724,30 @@ function fbSet(key, val) {
 function fbClear(key) {
   localStorage.removeItem(key);
 }
+
+// ── PER-CARD NOTES (v1.27.03) ─────────────────────────────────────────────────
+// Key format: note_{collection}_{screen}_{comboOrStratId}_{cardId}_{side}
+//
+// Deliberately the SAME shape as fbKey, differing only in the prefix. That is
+// what lets the export put a rating and a note for the same card side on the
+// same row without any matching logic: swap the prefix and you have the other
+// one. Change one format and you must change both.
+function noteKey(screen, comboId, cardId, side) {
+  return `note_${activeCollectionKey}_${screen}_${comboId}_${cardId}_${side}`;
+}
+window.noteKey = noteKey;
+
+function noteGet(key) {
+  return localStorage.getItem(key) || '';
+}
+function noteSet(key, text) {
+  // An empty note is no note. Storing '' would leave a key that the export has
+  // to filter out later, so it is removed instead.
+  if (text && text.trim()) localStorage.setItem(key, text);
+  else localStorage.removeItem(key);
+}
+window.noteGet = noteGet;
+window.noteSet = noteSet;
 
 // ── FEEDBACK BAR RENDER ───────────────────────────────────────────────────────
 
