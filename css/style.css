@@ -505,6 +505,57 @@ body.pb-enabled .divider::after {
   user-select: none;
 }
 
+/* ── PER-CARD NOTES (v1.27.03) ─────────────────────────────────────────────
+   Same panel geometry as .card-info so the two feel like one mechanism: it
+   covers the card, it closes with the same cross, and it stops the card's
+   swipe gestures. The difference is that this one is writable. */
+.card-note {
+  display: none;
+  position: absolute;
+  inset: 0;
+  background: var(--ds-card);
+  border-radius: 20px;
+  padding: 36px 24px 18px 24px;
+  z-index: 11;
+  flex-direction: column;
+}
+.card-note.visible { display: flex; }
+
+.card-note-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--ds-txt);
+  margin-bottom: 10px;
+  flex: 0 0 auto;
+}
+
+.card-note-area {
+  flex: 1 1 auto;
+  width: 100%;
+  border: none;
+  outline: none;
+  resize: none;
+  background: transparent;
+  color: var(--ds-txt);
+  font-family: inherit;
+  font-size: 15px;
+  line-height: 1.7;
+  padding: 0;
+  -webkit-appearance: none;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.card-note-area::placeholder { color: var(--ds-txt2); opacity: .6; }
+
+/* A card that carries a note gets a quiet mark on the hint line, so you can
+   see there is something written without opening it. */
+.hint.has-note::after {
+  content: ' \25CF';
+  color: var(--ds-accent, #2c7a4b);
+  font-size: 9px;
+  vertical-align: middle;
+}
+
 .card-info-text {
   font-size: 15px;
   line-height: 1.7;
