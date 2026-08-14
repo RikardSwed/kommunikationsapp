@@ -565,11 +565,16 @@ body.pb-enabled .divider::after {
 
 /* Hints turned off. `visibility: hidden` used to be used here, which also
    made the line untappable and killed the three-tap that opens a note. The
-   text is made transparent instead: the box, and its taps, stay. */
-.hint--muted { color: transparent; }
-.hint--muted .hint-sep { color: transparent; }
+   text is made transparent instead: the box, and its taps, stay.
+
+   v1.27.05 — WRITTEN AS `.hint.hint--muted`, not `.hint--muted`. The base
+   `.hint` rule sets a colour and is declared LATER in this file, so at equal
+   specificity it won and the muted rule did nothing at all. Doubling the
+   class is what makes it stick; do not simplify it back. */
+.hint.hint--muted { color: transparent; }
+.hint.hint--muted .hint-sep { color: transparent; }
 /* …except that a card carrying a note still shows one very quiet dot. */
-.hint--muted.has-note .hint-sep {
+.hint.hint--muted.has-note .hint-sep {
   color: var(--ds-txt3);
   font-weight: 400;
   opacity: .55;
