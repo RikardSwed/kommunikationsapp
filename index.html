@@ -7,10 +7,10 @@
   <meta name="mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="default" />
   <meta name="apple-mobile-web-app-title" content="Deckstack" />
-  <link rel="manifest" href="manifest.json?v=12702" />
+  <link rel="manifest" href="manifest.json?v=12703" />
   <title>Deckstack</title>
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="stylesheet" href="css/style.css?v=12702" />
+  <link rel="stylesheet" href="css/style.css?v=12703" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
 </head>
 <body>
@@ -1371,6 +1371,15 @@
         <button class="card-info-close" id="cardInfoClose">✕</button>
         <p class="card-info-text" id="cardInfoText"></p>
       </div>
+      <!-- v1.27.03 — per-card notes. Opened by three taps on the hint line
+           below the card; one note per card SIDE, keyed exactly like the
+           feedback ratings so the two merge in the export. -->
+      <div class="card-note" id="cardNote">
+        <button class="card-info-close" id="cardNoteClose">✕</button>
+        <div class="card-note-title">Notes</div>
+        <textarea class="card-note-area" id="cardNoteArea" placeholder="Write a thought about this card…"
+                  autocomplete="off" autocapitalize="sentences" spellcheck="false"></textarea>
+      </div>
     </div>
   </div>
   <div class="hint" id="hint">Tap card to reveal<br>↑ ↓ new input &nbsp;·&nbsp; ← → new strategy</div>
@@ -1404,6 +1413,15 @@
       <div class="card-info" id="memCardInfo">
         <button class="card-info-close" id="memCardInfoClose">✕</button>
         <p class="card-info-text" id="memCardInfoText"></p>
+      </div>
+      <!-- v1.27.03 — per-card notes. Opened by three taps on the hint line
+           below the card; one note per card SIDE, keyed exactly like the
+           feedback ratings so the two merge in the export. -->
+      <div class="card-note" id="memCardNote">
+        <button class="card-info-close" id="memCardNoteClose">✕</button>
+        <div class="card-note-title">Notes</div>
+        <textarea class="card-note-area" id="memCardNoteArea" placeholder="Write a thought about this card…"
+                  autocomplete="off" autocapitalize="sentences" spellcheck="false"></textarea>
       </div>
     </div>
   </div>
@@ -1471,6 +1489,15 @@
       <div class="card-info" id="flowCardInfo">
         <button class="card-info-close" id="flowCardInfoClose">✕</button>
         <p class="card-info-text" id="flowCardInfoText"></p>
+      </div>
+      <!-- v1.27.03 — per-card notes. Opened by three taps on the hint line
+           below the card; one note per card SIDE, keyed exactly like the
+           feedback ratings so the two merge in the export. -->
+      <div class="card-note" id="flowCardNote">
+        <button class="card-info-close" id="flowCardNoteClose">✕</button>
+        <div class="card-note-title">Notes</div>
+        <textarea class="card-note-area" id="flowCardNoteArea" placeholder="Write a thought about this card…"
+                  autocomplete="off" autocapitalize="sentences" spellcheck="false"></textarea>
       </div>
     </div>
   </div>
@@ -2276,6 +2303,15 @@
         <button class="card-info-close" id="challCardInfoClose">✕</button>
         <p class="card-info-text" id="challCardInfoText"></p>
       </div>
+      <!-- v1.27.03 — per-card notes. Opened by three taps on the hint line
+           below the card; one note per card SIDE, keyed exactly like the
+           feedback ratings so the two merge in the export. -->
+      <div class="card-note" id="challCardNote">
+        <button class="card-info-close" id="challCardNoteClose">✕</button>
+        <div class="card-note-title">Notes</div>
+        <textarea class="card-note-area" id="challCardNoteArea" placeholder="Write a thought about this card…"
+                  autocomplete="off" autocapitalize="sentences" spellcheck="false"></textarea>
+      </div>
     </div>
   </div>
   <div class="hint" id="challHint">Tap card to reveal · ↑↓ next input · ←→ next challenge</div>
@@ -2310,6 +2346,15 @@
         <button class="card-info-close" id="mindCardInfoClose">✕</button>
         <p class="card-info-text" id="mindCardInfoText"></p>
       </div>
+      <!-- v1.27.03 — per-card notes. Opened by three taps on the hint line
+           below the card; one note per card SIDE, keyed exactly like the
+           feedback ratings so the two merge in the export. -->
+      <div class="card-note" id="mindCardNote">
+        <button class="card-info-close" id="mindCardNoteClose">✕</button>
+        <div class="card-note-title">Notes</div>
+        <textarea class="card-note-area" id="mindCardNoteArea" placeholder="Write a thought about this card…"
+                  autocomplete="off" autocapitalize="sentences" spellcheck="false"></textarea>
+      </div>
     </div>
   </div>
   <div class="hint" id="mindHint">Tap card to reveal · ↑↓ next input · ←→ next mindset</div>
@@ -2343,6 +2388,15 @@
       <div class="card-info" id="collCardInfo">
         <button class="card-info-close" id="collCardInfoClose">✕</button>
         <p class="card-info-text" id="collCardInfoText"></p>
+      </div>
+      <!-- v1.27.03 — per-card notes. Opened by three taps on the hint line
+           below the card; one note per card SIDE, keyed exactly like the
+           feedback ratings so the two merge in the export. -->
+      <div class="card-note" id="collCardNote">
+        <button class="card-info-close" id="collCardNoteClose">✕</button>
+        <div class="card-note-title">Notes</div>
+        <textarea class="card-note-area" id="collCardNoteArea" placeholder="Write a thought about this card…"
+                  autocomplete="off" autocapitalize="sentences" spellcheck="false"></textarea>
       </div>
     </div>
   </div>
@@ -2389,6 +2443,13 @@
     <div class="settings-row">
       <label>About &amp; privacy</label>
       <button id="aboutBtn" style="font-size:13px; color:#555; background:#f0f0f0; border:1px solid #ddd; border-radius:8px; padding:6px 12px; cursor:pointer;">View</button>
+    </div>
+
+    <!-- v1.27.03 — the notes you write on individual cards, as a readable
+         file. Three taps on the line under a card opens the note panel. -->
+    <div class="settings-row">
+      <label>Export notes</label>
+      <button id="notesExportBtn" style="font-size:13px; color:#555; background:#f0f0f0; border:1px solid #ddd; border-radius:8px; padding:6px 12px; cursor:pointer;">Export</button>
     </div>
 
     <!-- v1.26.89 — beta access code. Grants Pro for a fixed number of days and
@@ -2438,8 +2499,15 @@
       <button id="alExportBtn" style="font-size:13px; color:#555; background:#f0f0f0; border:1px solid #ddd; border-radius:8px; padding:6px 12px; cursor:pointer;">Export</button>
     </div>
     <div class="settings-row">
-      <label style="font-size:13px; color:#888;">Export all ratings as JSON</label>
+      <label style="font-size:13px; color:#888;">Export all ratings and notes as JSON</label>
       <button id="feedbackExportBtn" style="font-size:13px; color:#555; background:#f0f0f0; border:1px solid #ddd; border-radius:8px; padding:6px 12px; cursor:pointer;">Export</button>
+    </div>
+    <!-- v1.27.03 — separate from "Reset first-run state", which never touched
+         ratings and must not start. This is the one for wiping feedback after
+         it has been read and acted on. -->
+    <div class="settings-row">
+      <label style="font-size:13px; color:#888;">Clear all ratings and notes</label>
+      <button id="clearFeedbackBtn" style="font-size:13px; color:#a33; background:#fdf0f0; border:1px solid #e5c2c2; border-radius:8px; padding:6px 12px; cursor:pointer;">Clear</button>
     </div>
     <div class="settings-row" style="flex-direction:column; align-items:flex-start; gap:10px;">
       <label style="font-weight:700; font-size:15px;">Simulate access level</label>
@@ -2676,19 +2744,19 @@
   </button>
 </div>
 
-<script src="js/data.js?v=12702"></script>
-<script src="js/tagsData.js?v=12702"></script>
-<script src="js/programsData.js?v=12702"></script>
-<script src="js/challengesData.js?v=12702"></script>
-<script src="js/mindsetData.js?v=12702"></script>
-<script src="js/multiStepData.js?v=12702"></script>
-<script src="js/memorizeData.js?v=12702"></script>
-<script src="js/mode-engine.js?v=12702"></script>
-<script src="js/app-core.js?v=12702"></script>
-<script src="js/app-modes.js?v=12702"></script>
-<script src="js/app-handsfree.js?v=12702"></script>
-<script src="js/app-system.js?v=12702"></script>
-<script src="js/app-ui.js?v=12702"></script>
+<script src="js/data.js?v=12703"></script>
+<script src="js/tagsData.js?v=12703"></script>
+<script src="js/programsData.js?v=12703"></script>
+<script src="js/challengesData.js?v=12703"></script>
+<script src="js/mindsetData.js?v=12703"></script>
+<script src="js/multiStepData.js?v=12703"></script>
+<script src="js/memorizeData.js?v=12703"></script>
+<script src="js/mode-engine.js?v=12703"></script>
+<script src="js/app-core.js?v=12703"></script>
+<script src="js/app-modes.js?v=12703"></script>
+<script src="js/app-handsfree.js?v=12703"></script>
+<script src="js/app-system.js?v=12703"></script>
+<script src="js/app-ui.js?v=12703"></script>
 
 
 <!-- CHECKPOINT SCREEN -->
