@@ -177,11 +177,6 @@ const DS = (function () {
     }
 
     area.addEventListener('input', save);
-    // Escape has to be handled here: the global dispatch above deliberately
-    // ignores anything typed in a field, so it never reaches this panel.
-    area.addEventListener('keydown', e => {
-      if (e.key === 'Escape') { e.preventDefault(); e.stopPropagation(); doClose(); }
-    });
     if (closeBtn) closeBtn.addEventListener('click', e => { e.stopPropagation(); doClose(); });
 
     // three taps on the hint line
@@ -200,6 +195,15 @@ const DS = (function () {
     // the card underneath must not see any of this
     ['touchstart', 'touchmove', 'touchend', 'click'].forEach(ev =>
       panel.addEventListener(ev, e => e.stopPropagation(), { passive: true }));
+    // Keydown in the CAPTURE phase, so nothing typed here reaches the
+    // document-level shortcut dispatch even if a browser mislabels the target.
+    // Escape is handled in this same listener rather than on the textarea:
+    // a capture-phase stopPropagation runs first and would otherwise swallow
+    // the event before the textarea's own handler ever saw it.
+    panel.addEventListener('keydown', e => {
+      e.stopPropagation();
+      if (e.key === 'Escape') { e.preventDefault(); doClose(); }
+    }, true);
 
     // a backgrounded web view can be killed without another event firing
     document.addEventListener('visibilitychange', () => { if (document.hidden) save(); });
@@ -1472,17 +1476,27 @@ const DS = (function () {
 
   // ── Global keyboard dispatch (one listener for all card modes) ───────────
   document.addEventListener('keydown', e => {
-    // v1.27.04 — BAIL OUT WHILE THE USER IS TYPING. Space is bound to "flip
+    // v1.27.04/05 — BAIL OUT WHILE THE USER IS TYPING. Space is bound to "flip
     // the card", so writing a note used to flip it mid-sentence: the panel
     // re-keyed to the other side, the text vanished, and pressing space again
     // brought it back. It looked like the note was moving between the two
     // sides. It was the card flipping under it.
     //
-    // The check is on the event target rather than on the note panel, because
-    // every other field in the app has the same problem — the beta code box,
-    // the tag input, the editor. None of them should trigger card gestures.
-    const t = e.target;
-    if (t && (t.tagName === 'INPUT' || t.tagName === 'TEXTAREA' || t.isContentEditable)) return;
+    // THREE CHECKS, NOT ONE. The target check alone was enough in desktop
+    // Chrome and not on iOS, where a key from the software keyboard does not
+    // reliably arrive with the focused field as its target. So:
+    //   1. any open note panel switches the card shortcuts off outright — the
+    //      panel covers the card, so this is right on its own terms and it
+    //      does not depend on the event at all;
+    //   2. document.activeElement, which is correct on iOS even when the
+    //      event target is not;
+    //   3. the event target, which covers the rest.
+    // Checks 2 and 3 also protect every other field in the app — the beta code
+    // box, the tag input, the editor. None of them should move cards.
+    if (document.querySelector('.card-note.visible')) return;
+    const editable = el => !!el && (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA' || el.isContentEditable);
+    if (editable(document.activeElement)) return;
+    if (editable(e.target)) return;
 
     const anyOverlayOpen = document.querySelector('.settings-overlay.open, #settingsOverlay.open, #packSettingsOverlay.open');
     if (anyOverlayOpen) return;
