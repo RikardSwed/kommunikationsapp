@@ -547,13 +547,32 @@ body.pb-enabled .divider::after {
 }
 .card-note-area::placeholder { color: var(--ds-txt2); opacity: .6; }
 
-/* A card that carries a note gets a quiet mark on the hint line, so you can
-   see there is something written without opening it. */
-.hint.has-note::after {
-  content: ' \25CF';
-  color: var(--ds-accent, #2c7a4b);
-  font-size: 9px;
-  vertical-align: middle;
+/* THE NOTE MARK (v1.27.04)
+   No extra glyph: the separator that is already sitting between the two
+   navigation groups does the job. A card with a note simply makes it heavier.
+   Nothing appears or disappears, so the line never changes width.
+   Deliberately NOT an accent colour — the hint line is the quietest thing on
+   the screen and the mark has to stay inside that register. */
+.hint-sep {
+  font-weight: 400;
+  color: inherit;
+  transition: font-weight .15s ease, color .15s ease;
+}
+.hint.has-note .hint-sep {
+  font-weight: 800;
+  color: var(--ds-txt2);
+}
+
+/* Hints turned off. `visibility: hidden` used to be used here, which also
+   made the line untappable and killed the three-tap that opens a note. The
+   text is made transparent instead: the box, and its taps, stay. */
+.hint--muted { color: transparent; }
+.hint--muted .hint-sep { color: transparent; }
+/* …except that a card carrying a note still shows one very quiet dot. */
+.hint--muted.has-note .hint-sep {
+  color: var(--ds-txt3);
+  font-weight: 400;
+  opacity: .55;
 }
 
 .card-info-text {
