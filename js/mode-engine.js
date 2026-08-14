@@ -177,6 +177,11 @@ const DS = (function () {
     }
 
     area.addEventListener('input', save);
+    // Escape has to be handled here: the global dispatch above deliberately
+    // ignores anything typed in a field, so it never reaches this panel.
+    area.addEventListener('keydown', e => {
+      if (e.key === 'Escape') { e.preventDefault(); e.stopPropagation(); doClose(); }
+    });
     if (closeBtn) closeBtn.addEventListener('click', e => { e.stopPropagation(); doClose(); });
 
     // three taps on the hint line
@@ -1467,6 +1472,18 @@ const DS = (function () {
 
   // ── Global keyboard dispatch (one listener for all card modes) ───────────
   document.addEventListener('keydown', e => {
+    // v1.27.04 — BAIL OUT WHILE THE USER IS TYPING. Space is bound to "flip
+    // the card", so writing a note used to flip it mid-sentence: the panel
+    // re-keyed to the other side, the text vanished, and pressing space again
+    // brought it back. It looked like the note was moving between the two
+    // sides. It was the card flipping under it.
+    //
+    // The check is on the event target rather than on the note panel, because
+    // every other field in the app has the same problem — the beta code box,
+    // the tag input, the editor. None of them should trigger card gestures.
+    const t = e.target;
+    if (t && (t.tagName === 'INPUT' || t.tagName === 'TEXTAREA' || t.isContentEditable)) return;
+
     const anyOverlayOpen = document.querySelector('.settings-overlay.open, #settingsOverlay.open, #packSettingsOverlay.open');
     if (anyOverlayOpen) return;
 

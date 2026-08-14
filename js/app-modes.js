@@ -219,12 +219,21 @@ document.getElementById('settingsOverlay').addEventListener('click', e => {
 
 function applySettings() {
   const showH = document.getElementById('showHints').checked;
-  const showHVal = showH ? 'visible' : 'hidden';
 
-  // Update hint visibility on all screens safely
-  ['hint','memHint','msHint','flowHint','guidedHint','hfHint'].forEach(id => {
+  // v1.27.04 — this used to set `visibility: hidden`, which hides the line AND
+  // stops it receiving taps. Since v1.27.03 the same line is the three-tap
+  // target that opens a card's note, so turning hints off silently removed the
+  // way in. A class that makes the text transparent keeps the box, the layout
+  // and the taps; only the words go.
+  //
+  // The list also gained challHint, mindHint and collHint. They were missing,
+  // so "Show hints" never did anything on Challenges, Mindset or Collections.
+  ['hint','memHint','msHint','flowHint','guidedHint','hfHint',
+   'challHint','mindHint','collHint'].forEach(id => {
     const el = document.getElementById(id);
-    if (el) el.style.visibility = showHVal;
+    if (!el) return;
+    el.style.visibility = '';            // clear the old inline style
+    el.classList.toggle('hint--muted', !showH);
   });
 
   applyInputCounterVisibility();
