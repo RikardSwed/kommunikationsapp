@@ -289,6 +289,72 @@ const packTags = {
   reframing: [
     'reframing', 'perspective', 'handling criticism', 'resilience', 'conversation'
   ],
+  danbacon1: [
+    'banter', 'flirting', 'sexual attraction', 'humor', 'conversation', 'first impressions', 'unpredictable'
+  ],
+  danbacon2: [
+    'status', 'frame', 'confidence', 'alpha', 'prize', 'selector', 'masculinity', 'pressure'
+  ],
+  danbacon3: [
+    'relationship mastery', 'attraction', 'leadership', 'emotional independence', 'boundaries', 'respect', 'commitment'
+  ],
+  danbacon4: [
+    'relationship management', 'frame control', 'boundaries', 'attraction', 'masculinity', 'long term', 'sparks'
+  ],
+  oconnor1: [
+    'boundaries', 'professional', 'verbal-defense', 'workplace-communication', 'power-phrases'
+  ],
+  oconnor2: [
+    'boundaries', 'time management', 'work-life balance', 'productivity', 'saying no', 'interruptions'
+  ],
+  oconnor3: [
+    'narcissism', 'toxic people', 'workplace conflict', 'boundaries', 'emotional control'
+  ],
+  oconnor4: [
+    'leadership', 'feedback', 'accountability', 'professional image', 'management', 'communication'
+  ],
+  oconnor5: [
+    'confidence', 'body language', 'executive presence', 'non-verbal', 'status', 'authority'
+  ],
+  oconnor6: [
+    'resilience', 'self-regulation', 'persistence', 'boundaries', 'self-worth', 'negotiations'
+  ],
+  oconnor7: [
+    'social skills', 'small talk', 'networking', 'names', 'rapport', 'confidence', 'connection'
+  ],
+  jimmy1: [
+    'safety', 'respect', 'trust', 'values', 'choosing a partner', 'influence'
+  ],
+  jimmy2: [
+    'communication', 'conflict', 'expression', 'soft startup', 'vulnerability', 'marriage'
+  ],
+  jimmy3: [
+    'listening', 'validation', 'empathy', 'bids', 'vulnerability', 'emotional presence'
+  ],
+  jimmy4: [
+    'conflict', 'repair', 'flooding', 'boundaries', 'accountability', 'safety'
+  ],
+  jimmy5: [
+    'intimacy', 'appreciation', 'affection', 'mental load', 'check-in', 'friendship'
+  ],
+  jimmy6: [
+    'boundaries', 'narcissism', 'people-pleasing', 'self-worth', 'respect', 'accountability'
+  ],
+  toddv1: [
+    'opening', 'approach', 'verbal game', 'high value', 'first impressions', 'hook'
+  ],
+  toddv2: [
+    'tension', 'push-pull', 'negging', 'qualifying', 'disqualification', 'sexual tension', 'verbal game'
+  ],
+  toddv3: [
+    'connection', 'rapport', 'blueprint', 'storytelling', 'cold reading', 'values', 'deep conversation'
+  ],
+  toddv4: [
+    'closing', 'logistics', 'leading', 'pull', 'dates', 'premise', 'results'
+  ],
+  toddv5: [
+    'tests', 'social pressure', 'inner game', 'group theory', 'frame control', 'value', 'comfort'
+  ],
 };
 
 // ─── TOPICS ──────────────────────────────────────────────────────────
@@ -317,13 +383,13 @@ const packTags = {
 // emotionalboundaries merged into emotions and boundaries.
 const TOPICS = [
   // ── Getting a conversation going ──────────────────────────────────
-  { id: 'startingconversations', title: 'Starting Conversations',        packs: ['startingconnecting', 'setupstatement', 'firststrategies', 'startingconversations1', 'startingconversations4', 'startingconversations2', 'startingconversations3', 'setupquestion'] },
+  { id: 'startingconversations', title: 'Starting Conversations',        packs: ['startingconnecting', 'setupstatement', 'firststrategies', 'startingconversations1', 'startingconversations4', 'startingconversations2', 'startingconversations3', 'setupquestion', 'oconnor7'] },
   { id: 'questions',             title: 'Questions & Curiosity',         packs: ['exploringatopic', 'deepquestions'] },
   { id: 'flowtransitions',       title: 'Flow & Transitions',            packs: ['conversational', 'transitions', 'changingtopics', 'reactingtounexpectedstatements'] },
   { id: 'endingconversations',   title: 'Ending Conversations',          packs: ['endingconversations'] },
 
   // ── Being with the other person ───────────────────────────────────
-  { id: 'listening',             title: 'Listening & Understanding',     packs: ['listeningresponding', 'showunderstanding', 'validation', 'listeningthroughquestions', 'showunderstanding2'] },
+  { id: 'listening',             title: 'Listening & Understanding',     packs: ['listeningresponding', 'showunderstanding', 'validation', 'listeningthroughquestions', 'showunderstanding2', 'jimmy3'] },
   { id: 'depth',                 title: 'Depth & Connection',            packs: ['conversationaldepth', 'supportingconversations', 'talkingaboutyourself'] },
 
   // ── Holding the floor ─────────────────────────────────────────────
@@ -334,16 +400,16 @@ const TOPICS = [
   // ── Giving and taking it ──────────────────────────────────────────
   { id: 'praise',                title: 'Praise & Compliments',          packs: ['compliments', 'praiseandencouragement', 'complimenting'] },
   { id: 'feedback',              title: 'Feedback & Criticism',          packs: ['criticism', 'givingcriticism', 'receivingfeedbackandcriticism'] },
-  { id: 'repair',                title: 'Repair & Apology',              packs: ['apologizing2', 'apologizing1'] },
+  { id: 'repair',                title: 'Repair & Apology',              packs: ['apologizing2', 'apologizing1', 'jimmy4'] },
 
   // ── Standing your ground ──────────────────────────────────────────
   { id: 'opinions',              title: 'Opinions & Argumentation',      packs: ['influenceframing', 'agreeing', 'disagreeing', 'givingcounterexamples', 'discussing'] },
   { id: 'persuasion',            title: 'Persuasion & Negotiation',      packs: ['influenceframing', 'persuasionandinfluence1', 'persuasionandinfluence2', 'negotiationandcompromise'] },
-  { id: 'assertiveness',         title: 'Assertiveness & Pressure',      packs: ['assertive', 'brokenrecord', 'respondingtopassiveaggression'] },
-  { id: 'boundaries',            title: 'Asking & Saying No',            packs: ['playfulrefusals', 'thehappyno', 'theregretfulno', 'makingrequests', 'sayingno'] },
+  { id: 'assertiveness',         title: 'Assertiveness & Pressure',      packs: ['assertive', 'brokenrecord', 'respondingtopassiveaggression', 'oconnor1', 'oconnor3'] },
+  { id: 'boundaries',            title: 'Asking & Saying No',            packs: ['playfulrefusals', 'thehappyno', 'theregretfulno', 'makingrequests', 'sayingno', 'oconnor2', 'jimmy6'] },
 
   // ── The hard end ──────────────────────────────────────────────────
-  { id: 'emotions',              title: 'Emotions & Regulation',         packs: ['emotionlabellingandregulation', 'conflictemotions', 'praxdread4', 'reframing'] },
+  { id: 'emotions',              title: 'Emotions & Regulation',         packs: ['emotionlabellingandregulation', 'conflictemotions', 'praxdread4', 'reframing', 'oconnor6'] },
 
   // ── Lightness ─────────────────────────────────────────────────────
   { id: 'humour',                title: 'Humour & Banter',               packs: ['humour', 'teasing', 'selfhumour', 'humourpractise', 'playfulrefusals', 'rolebasedhumour', 'responsivehumour', 'storybanter'] },
@@ -352,7 +418,7 @@ const TOPICS = [
   { id: 'bodyvoice',             title: 'Body Language & Voice',         packs: [] },
   { id: 'giving',                title: 'Giving & Receiving',            packs: [] },
   { id: 'selfpresentation',      title: 'Self-Presentation',             packs: [] },
-  { id: 'flirt',                 title: 'Flirting',                      packs: [] },
-  { id: 'leadership',            title: 'Leadership',                    packs: ['praxframe5', 'praxdread5'] },
-  { id: 'relationshipcomm',      title: 'Communication in Relationships',packs: ['masculine1', 'masculine2', 'masculine3', 'masculine4', 'masculine5', 'masculine6', 'masculinesv', 'parenting1', 'parenting2', 'parenting3', 'parenting4', 'parenting5', 'praxframe1', 'praxframe2', 'praxframe3', 'praxframe4', 'praxdread1', 'praxdread2', 'praxdread3'] },
+  { id: 'flirt',                 title: 'Flirting',                      packs: ['danbacon1', 'danbacon2', 'danbacon3', 'danbacon4', 'toddv1', 'toddv2', 'toddv3', 'toddv4', 'toddv5'] },
+  { id: 'leadership',            title: 'Leadership',                    packs: ['praxframe5', 'praxdread5', 'oconnor4', 'oconnor5'] },
+  { id: 'relationshipcomm',      title: 'Communication in Relationships',packs: ['masculine1', 'masculine2', 'masculine3', 'masculine4', 'masculine5', 'masculine6', 'masculinesv', 'parenting1', 'parenting2', 'parenting3', 'parenting4', 'parenting5', 'praxframe1', 'praxframe2', 'praxframe3', 'praxframe4', 'praxdread1', 'praxdread2', 'praxdread3', 'jimmy1', 'jimmy2', 'jimmy5'] },
 ];

@@ -3384,4 +3384,319 @@ const mindsetCollections = {
       ]
     },
   ],
+  danbacon1: [
+    {
+      name: "The \"Prize\" Mentality",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The belief that you are the one who needs to be \"good enough\" for her. This mindset causes you to be over-polite and boring. Dan Bacon teaches that you must believe you are the prize she is trying to win over.",
+      inputs: [
+        { q: "\"She is so beautiful, I have to be extra nice to her.\"", a: "\"She gets special treatment from every guy. If I treat her like a normal person and tease her, I’ll be the one she actually remembers.\"", bundle: 'pro' },
+        { q: "\"I'm afraid I'll offend her if I make a joke.\"", a: "\"Risking her reaction is what shows my confidence. A guy who isn't afraid of a 'no' is the one who gets a 'yes'.\"", bundle: 'pro' },
+        { q: "\"I need to prove my value by talking about my job and car.\"", a: "\"Bragging makes me look lower value. My value comes from my personality and how I make her feel, not my resume.\"", bundle: 'pro' },
+        { q: "\"I should wait for a clear sign she likes me before I flirt.\"", a: "\"I am the one who creates the spark. I don't wait for luck; I interact and make her feel attracted to my confidence.\"", bundle: 'pro' },
+        { q: "\"If she plays hard to get, it means she doesn't like me.\"", a: "\"She is testing my confidence. If I remain calm and keep joking, I prove I am good enough for a woman like her.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  danbacon2: [
+    {
+      name: "The Selector's Frame",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The internal stance that you are the one deciding if she is good enough for you, rather than vice versa.",
+      inputs: [
+        { q: "\"She is way more attractive than me.\"", a: "\"I am feeling an instant automatic attraction, but that doesn't mean she is more valuable. I can make her feel as much attraction for me as I feel for her.\"", bundle: 'pro' },
+        { q: "\"I hope she doesn't reject me.\"", a: "\"Rejection is just a test of my confidence. If I remain calm, I prove I am the rare guy who is good enough for her.\"", bundle: 'pro' },
+        { q: "\"I should explain why I'm a good guy.\"", a: "\"Explaining myself makes me look lower value. My value is a default; she is the one who needs to win _me_ over.\"", bundle: 'pro' },
+        { q: "\"She's playing hard to get.\"", a: "\"She is testing to see if our emotional match works. I will have independent confidence and remain cool regardless of her signals.\"", bundle: 'pro' },
+        { q: "\"I need to impress her with my resume.\"", a: "\"Bragging signals that I don't feel worthy as I am. I will let my real, cool self come through without an act.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  danbacon3: [
+    {
+      name: "Bringing Out the Best",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The belief that her behavior is fixed. In reality, every woman has a \"good girl\" side, and it is your job to create the dynamic that brings it out and keeps it active.",
+      inputs: [
+        { q: "\"She's just a moody person, there's nothing I can do.\"", a: "\"She reacts to the dynamic I create. If I change my approach and stay masculine and leading, her behavior will naturally follow.\"", bundle: 'pro' },
+        { q: "\"I should do more chores so she'll want to have sex with me.\"", a: "\"Sucking up kills attraction. I will be a good man, but she needs to feel the need to win _me_ over to feel sexual desire.\"", bundle: 'pro' },
+        { q: "\"I'm afraid she'll leave if I tell her she's being disrespectful.\"", a: "\"She is testing to see if I'm strong enough to handle her. If I allow bad treatment, she will lose all respect and leave anyway.\"", bundle: 'pro' },
+        { q: "\"I need her to be happy all the time for me to feel good.\"", a: "\"I am emotionally independent. I can be happy even if she's in a mood. My stability is what makes her feel safe.\"", bundle: 'pro' },
+        { q: "\"Being the leader sounds like too much work.\"", a: "\"It's actually the easiest approach. Once the dynamic is set, she gives and gives because it feels good to her. It becomes effortless.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  danbacon4: [
+    {
+      name: "Independent Confidence",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The internal stance that your value and your mood are not dependent on her signals or behavior. You are in control of your own confidence.",
+      inputs: [
+        { q: "\"She is being moody, so I must have done something wrong.\"", a: "\"She is a woman; her moods fluctuate. I will remain stable and leading, and her behavior will naturally follow my masculine frame.\"", bundle: 'pro' },
+        { q: "\"I should abide by her rules to avoid an argument.\"", a: "\"Avoiding conflict at the cost of my balls makes me unattractive. I will lovingly challenge her BS to keep the spark alive.\"", bundle: 'pro' },
+        { q: "\"I need her to reassure me that she still loves me.\"", a: "\"I don't need her 'pat on the back' to feel worthy. I know I am a good man, and she is lucky to be with me.\"", bundle: 'pro' },
+        { q: "\"I'm afraid she'll leave if I act too dominant.\"", a: "\"She is testing to see if I am man enough for her. If I allow her to be the leader, she will lose all respect and leave anyway.\"", bundle: 'pro' },
+        { q: "\"I should only show her my best, most positive self.\"", a: "\"Hiding my real moods makes me a fake 'nice guy.' Authenticity is what creates a real emotional connection.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  oconnor2: [
+    {
+      name: "Substance Over Form",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The internal shift required to stop worrying about \"the perfect words\" and start focusing on your \"true intention.\" If your intention is to be a loving, peaceful, and professional person, the words will follow naturally.",
+      inputs: [
+        { q: "I'm afraid I'll stumble over my words when I say no.", a: "\"The form (words) is less important than the substance (intention). If my intention is to be a productive teammate, they will feel that regardless of stumbles.\"", bundle: 'pro' },
+        { q: "I feel like a \"witch\" or a \"jerk\" for setting a boundary.", a: "\"I am made of love, and setting boundaries is an act of self-love. To communicate from a place of lovelessness is a perversion of who I am.\"", bundle: 'pro' },
+        { q: "I need to win this argument to prove I'm right.", a: "\"If I'm focused on 'winning,' I've already lost. I choose to focus on being a problem-solver and maintaining peace.\"", bundle: 'pro' },
+        { q: "My boss's bad mood is ruining my day.", a: "\"I am the cause, not the effect. I refuse to let their chaos dictate who I am or how I communicate today.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "We Train People How To Treat Us",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "Accepting total responsibility for the patterns of behavior you allow in your workspace. What gets rewarded gets repeated. If you allow the \"Time Sucker\" to stay, you are rewarding them with your attention.",
+      inputs: [
+        { q: "People always dump work on me; it's so unfair.", a: "\"The first time was about them. The 10th time is about me. I am training them that I am the one who always says yes.\"", bundle: 'pro' },
+        { q: "I shouldn't have to use a sign; they should just know I'm busy.", a: "\"I cannot expect people to follow rules I haven't spelled out clearly. It's my job to lay down the ground rules.\"", bundle: 'pro' },
+        { q: "I have to explain myself so they don't think I'm lazy.", a: "\"I only defend what I believe to be vulnerable. If I'm a competent professional, my work speaks for itself. Explaining looks like weakness.\"", bundle: 'pro' },
+        { q: "I'll just do it this one last time to keep the peace.", a: "\"Keeping a false peace is rewarding their intrusion. If I want the behavior to stop, I must take away the reward today.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  oconnor3: [
+    {
+      name: "Substance Over Form",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The internal shift from \"What will they think of me?\" to \"Who am I being in this moment?\"",
+      inputs: [
+        { q: "I'm afraid I'll look mean if I use the \"Irrelevant\" block.", a: "\"I am made of love, and setting professional boundaries is an act of self-love. I refuse to let your chaos dictate who I am today.\"", bundle: 'pro' },
+        { q: "I need to explain my side so they don't think I'm wrong.", a: "\"I only defend what I believe to be vulnerable. My competence is not vulnerable, so I have nothing to explain to you.\"", bundle: 'pro' },
+        { q: "They are \"winning\" the argument because everyone is laughing.", a: "\"If I'm focused on 'winning,' I've already lost. I choose to focus on maintaining my dignity and my professional standard.\"", bundle: 'pro' },
+        { q: "I have to respond to every jab or they'll think I'm weak.", a: "\"I am the cause, not the effect. I decide who is worthy of my attention, and this interaction is not.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  oconnor4: [
+    {
+      name: "Influential Leadership",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The internal shifts from \"Reaction\" to \"Intention.\" Leaders are the cause, never just the effect.",
+      inputs: [
+        { q: "I have to explain myself so they understand my side.", a: "\"We only defend what we believe to be vulnerable. My position is based on data and merit; explaining makes it look weak. I choose to state the instruction and move on.\"", bundle: 'pro' },
+        { q: "My boss's bad mood is ruining my confidence.", a: "\"I am the cause, not the effect. I refuse to let their chaos dictate who I am or how I communicate today. I will reflect on my personal compass before I speak.\"", bundle: 'pro' },
+        { q: "It's just easier to say \"it's okay\" when someone messes up.", a: "\"Don't tell people it's okay when it wasn't okay five seconds ago. I will say 'I accept your apology' or 'I forgive you' instead to maintain my worth.\"", bundle: 'pro' },
+        { q: "I'm afraid people will think I'm arrogant if I use power phrases.", a: "\"Professional communication is a game, and these are the rules. People respect those who know the moves. Dignity is not arrogance.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  oconnor5: [
+    {
+      name: "Executive Presence",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The internal shifts required to stop \"acting\" like an intern and start \"being\" a leader.",
+      inputs: [
+        { q: "I don't want to look like I'm \"too much\" or arrogant.", a: "\"Dignity is not arrogance. Taking up space and speaking clearly is a favor to the room; it makes it easier for everyone to know where they stand.\"", bundle: 'pro' },
+        { q: "I'll just wait for them to give me a seat or tell me where to go.", a: "\"I am the cause, not the effect. I don't wait for permission to belong; I act like I'm in my own home because I have dominion here.\"", bundle: 'pro' },
+        { q: "I'm too nervous to speak loudly.", a: "\"I will act myself into a new way of thinking. If I speak like a confident person, my biochemistry will eventually catch up and make me one.\"", bundle: 'pro' },
+        { q: "I have to keep staring at them so they know I'm paying attention.", a: "\"Polished communicators know the 7-second rule. I will use the 'Look Away' to show I am comfortable with power, not psychotic.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  oconnor6: [
+    {
+      name: "Mindful Resilience",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The internal shifts required to move from \"Victim of Circumstance\" to \"Cause of Change.\"",
+      inputs: [
+        { q: "I'm afraid if I keep repeating myself I'll look stupid.", a: "\"The moment I introduce a new defense, I have lost. I choose the power of the Broken Record to show my message is valid and unchanging.\"", bundle: 'pro' },
+        { q: "If I say 'I forgive you,' it sounds too religious or heavy.", a: "\"It sounds like a person who knows their worth. 'It's okay' is a lie that hurts me; 'I forgive you' is the truth that heals me.\"", bundle: 'pro' },
+        { q: "My boss already knows I'm doing a good job; I don't need a journal.", a: "\"Numbers speak louder than memories. My boss is busy; the Value Journal is a gift that makes it easy for them to justify my success to their boss.\"", bundle: 'pro' },
+        { q: "I have to tell myself 'I will not get angry' so I don't blow up.", a: "\"My brain doesn't process 'not.' I will use a present, positive coping statement like 'I am calm' to give my brain a clear instruction.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  oconnor7: [
+    {
+      name: "Substance Over Form",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The internal posture of a person who values connection over \"getting the words right.\"",
+      inputs: [
+        { q: "I'm too nervous to start a conversation with that executive.", a: "\"I belong here as much as anyone else. I am comfortable as if I were in my own home, and I have a service attitude to offer.\"", bundle: 'pro' },
+        { q: "If I ask for a favor, they'll think I'm a nuisance.", a: "\"People love being asked for help. A simple favor is a gift I give them to justify why they like me.\"", bundle: 'pro' },
+        { q: "I'm afraid I'll forget their name and look stupid.", a: "\"Memory is a game, not a talent. I will use my visual hooks and repeats because I value their identity more than my ego.\"", bundle: 'pro' },
+        { q: "I don't want to look arrogant by taking up space.", a: "\"Dignity is not arrogance. Taking up space and moving my chair forward is a sign that I am present and open to the message.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  jimmy1: [
+    {
+      name: "The Foundation of Safety",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The internal posture required to build a relationship that lasts. It shifts from \"fear of loss\" to \"commitment to self-worth.\"",
+      inputs: [
+        { q: "I'm afraid if I talk about my non-negotiables, they'll leave.", a: "\"If they leave because of my values, they weren't my person anyway. Better to know now than in ten years.\"", bundle: 'pro' },
+        { q: "I feel like I have to earn their love through performance.", a: "\"I am already whole and valuable. Love is a gift to be reciprocated, not a wage to be earned.\"", bundle: 'pro' },
+        { q: "Yelling is just how my family always communicated.", a: "\"My past explains my patterns, but it doesn't justify them. I choose emotional maturity today.\"", bundle: 'pro' },
+        { q: "I should be able to change them if I just love them enough.", a: "\"I can't 'out-love' their lack of interest in growth. I can only control my own standard for safety.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  jimmy2: [
+    {
+      name: "Healthy Expression",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The internal shifts required to move from \"protecting yourself\" to \"prioritizing the relationship\".",
+      inputs: [
+        { q: "I shouldn't have to tell them what I need; they should just know.", a: "\"Assuming they can read my mind is an unhealthy need. I choose the maturity of being clear and direct.\"", bundle: 'pro' },
+        { q: "If I’m vulnerable, they’ll use it as ammunition later.", a: "\"I can't have closeness without vulnerability. If they punish my honesty, that is information about their character, not my worth.\"", bundle: 'pro' },
+        { q: "I feel like I'm \"walking on eggshells\" to avoid a fight.", a: "\"Keeping the peace at the cost of my honesty is self-abandonment. I deserve a relationship where the real me is known.\"", bundle: 'pro' },
+        { q: "My anger is proof that they are the bad guy.", a: "\"My anger is a signal that a boundary was crossed or a need was unmet. It’s an invitation to communicate, not to convict.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  jimmy3: [
+    {
+      name: "Listening & Presence",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The internal posture of being a \"Detective of the Heart\" rather than a \"Judge of the Facts\".",
+      inputs: [
+        { q: "If I validate them, they'll think they're \"right\" and I'm \"wrong.\"", a: "\"Validation isn't about facts; it's about acknowledging their humanity. We can handle the facts once they feel safe.\"", bundle: 'pro' },
+        { q: "Their bids for connection are so small and annoying.", a: "\"These 'small' moments are the bricks that build our house. If I ignore them, the house eventually collapses.\"", bundle: 'pro' },
+        { q: "I don't have the energy to be a \"safe harbor\" right now.", a: "\"It's okay to be tired. I will communicate my limit respectfully instead of punishing their need for connection.\"", bundle: 'pro' },
+        { q: "They should just be 'strong' and get over their feelings.", a: "\"Vulnerability is the true strength. I am helping us both grow by holding space for these emotions.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  jimmy4: [
+    {
+      name: "Handling Conflict",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The internal posture needed to move from \"US vs. THEM\" to \"US vs. THE PROBLEM\".",
+      inputs: [
+        { q: "If I walk away for a break, they'll think I don't care.", a: "\"Leaving a fight to get regulated is an act of love for the relationship. I am protecting us from my own worst impulses.\"", bundle: 'pro' },
+        { q: "I have to prove that my facts are right or I'm a failure.", a: "\"My partner's feeling is real regardless of my facts. I can be 'right' and still lose the connection. I choose connection.\"", bundle: 'pro' },
+        { q: "Apologizing first makes me the \"submissive\" one in the relationship.", a: "\"Apologizing first is a sign of leadership and maturity. I am the lead repenter on our team.\"", bundle: 'pro' },
+        { q: "They should just get over the past; I’ve already changed.", a: "\"Validation is the fastest way to move forward. If I run from their past pain, I keep us stuck in it.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  jimmy5: [
+    {
+      name: "Nurturing Connection",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The internal posture of a partner who views the relationship as a \"third entity\" that needs constant watering and sunlight.",
+      inputs: [
+        { q: "I shouldn't have to \"work\" this hard if we truly love each other.", a: "\"Love is the fuel, but intentionality is the engine. Even the best car doesn't run without maintenance.\"", bundle: 'pro' },
+        { q: "If I do more chores, I'm just rewarding their laziness.", a: "\"I am serving my partner because I love them, not to 'win' a competition. My initiative builds the trust we both need.\"", bundle: 'pro' },
+        { q: "Why should I be the one to initiate the check-in every time?", a: "\"Initiating is an act of leadership. I value our connection more than I value being the 'second' one to care.\"", bundle: 'pro' },
+        { q: "They already know I'm grateful; I don't need to say it.", a: "\"Unexpressed gratitude feels like entitlement to the receiver. I choose to make my partner feel valued out-loud.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  jimmy6: [
+    {
+      name: "Defending Your Worth",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The internal shifts required to move from \"protecting them\" to \"honoring yourself.\"",
+      inputs: [
+        { q: "If I set this boundary, I’m being \"mean\" or \"abandoning\" them.", a: "\"They abandon me every time they mistreat me. Honoring my limits is an act of love for both of us.\".", bundle: 'pro' },
+        { q: "Maybe I really _am_ the problem like they say.", a: "\"They have never once asked themselves that question. That is all I need to know about who is truly interested in growth.\".", bundle: 'pro' },
+        { q: "I have to stay to save them from their own pain.", a: "\"I cannot 'out-love' their refusal to heal. I am not a life raft for someone who keeps poking holes in the boat.\".", bundle: 'pro' },
+        { q: "I'm too \"needy\" for wanting to be treated with respect.", a: "\"What one person calls 'too needy,' the right person calls 'exactly what I want to give.' Respect is the bare minimum.\".", bundle: 'pro' },
+      ]
+    },
+  ],
+  toddv1: [
+    {
+      name: "Assuming the Burden",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The belief that she should be helping you keep the conversation going. In reality, because you initiated, you must \"start the lawnmower\" by providing 90% of the energy for the first minute.",
+      inputs: [
+        { q: "It feels awkward and I want to leave.", a: "\"Stay 20 more seconds. Force yourself to live with the nervousness. It's a fractional success just to stay.\"", bundle: 'pro' },
+        { q: "I don't know what to say next.", a: "\"Anything is better than silence. Ramble if you have to. Feed the 'conversation baby' until it can walk on its own.\"", bundle: 'pro' },
+        { q: "She's not being very talkative.", a: "\"She's probably just as nervous as you are. Assume she wants to talk but doesn't know how yet.\"", bundle: 'pro' },
+        { q: "I feel like I'm trying too hard.", a: "\"The only way to be 10% better than the average guy is to take the responsibility for the vibe on your own shoulders.\"", bundle: 'pro' },
+        { q: "I'm waiting for a perfect moment to open.", a: "\"There are no perfect moments. Walk over and make a noise. Everything after that is just an experiment.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  toddv2: [
+    {
+      name: "The Willingness to Offend",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The fear of losing the interaction stops most guys from teasing or negging. You must be willing to \"risk the immediate pain\" of an awkward moment to give yourself an actual chance at sexual tension.",
+      inputs: [
+        { q: "I'm afraid she'll get angry if I tease her.", a: "\"I'd much rather get rejected or offend someone than hear 'nice to meet you' after another boring conversation.\"", bundle: 'pro' },
+        { q: "I don't want to be mean.", a: "\"A neg isn't an insult; it's unintentional honesty. High-value guys state their mind and aren't afraid of a little friction.\"", bundle: 'pro' },
+        { q: "I should be nice to her because she's so hot.", a: "\"If all I have is nice behaviors, I will be less trusted and seen as having an agenda. Friction creates attraction.\"", bundle: 'pro' },
+        { q: "What if she calls my bluff when I disqualify?", a: "\"If she's willing to let me walk away, the set was already dead. Fundamentally being non-needy is how I win.\"", bundle: 'pro' },
+        { q: "I feel like I'm manipulating her.", a: "\"Push-pull and teasing are just giving her a fun experience. It's foreplay. She'll have better sex and a more fun night because of the tension.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  toddv3: [
+    {
+      name: "The \"Us\" Narrative",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The belief that the conversation is about \"me versus her.\" In reality, the most obsessive connections are built when you create a shared \"Story of Us\" or a \"We\" frame.",
+      inputs: [
+        { q: "I'm worried about being too cocky.", a: "\"It's not cocky if she's in on the joke. Frame it as 'we' are a cute couple or 'we' are trouble together.\"", bundle: 'pro' },
+        { q: "I don't want to tell her too much about myself.", a: "\"Vulnerability is strength. Telling a story about a time you were lost or failed builds Comfort and trust.\"", bundle: 'pro' },
+        { q: "I'm waiting for her to ask me something interesting.", a: "\"Lead the way. Offer your perspective first, and she will follow your lead to report to you.\"", bundle: 'pro' },
+        { q: "I feel like I'm just 'hitting on' her.", a: "\"You aren't hitting on her; you are interviewing her for the role of 'Future Ex-Wife.' You are the Selector.\"", bundle: 'pro' },
+        { q: "What if her 'Blueprint' is totally different from mine?", a: "\"Find the overlap. Even with different backgrounds, you both have dreams and passions. Connect on the emotion, not the fact.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  toddv4: [
+    {
+      name: "Empathy, Not Sympathy",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The belief that you are being \"pushy\" or \"rude\" by trying to close. In reality, you are a problem solver. Sympathy buys into her excuses; Empathy understands the obstacle and helps her overcome it so you can both have a great time.",
+      inputs: [
+        { q: "I don't want to be that pushy guy.", a: "\"I owe it to her to be a hard closer. If I'm a high-value guy, she'll have a better night with me than with some other guy who doesn't care about her.\"", bundle: 'pro' },
+        { q: "She gave me an objection, so I should stop.", a: "\"Most sales and most dates are only closed after at least three attempts. An objection is just a 'not yet,' not a 'no forever.'\"", bundle: 'pro' },
+        { q: "What if she says no and it's awkward?", a: "\"I'd much rather fail by going for it than fail by not trying. I'm proud of myself for giving us an actual chance.\"", bundle: 'pro' },
+        { q: "I need her to logically agree before we move.", a: "\"Stop asking for permission. Leadership is assuming the move and letting her follow. 'Sco' game is high-value game.\"", bundle: 'pro' },
+        { q: "I'm worried about 'point of no return' flakes.", a: "\"I will take the escalation slow and pull away first. I want her to be the one chasing the resolution, not me.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  toddv5: [
+    {
+      name: "True Self-Esteem",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The belief that your value depends on her reaction. True self-esteem comes from accepting exactly where you are—flaws and all—and doing the right thing regardless of the result.",
+      inputs: [
+        { q: "I'm too short/bald/ugly for her.", a: "\"I accept who I am. I'm the best short guy in the world. Rejection is a rejection of the moment, not of me.\"", bundle: 'pro' },
+        { q: "I'm afraid of being judged by the group.", a: "\"If I fail by going for it, I can be proud. If I fail by not trying, I'll never know. I choose to give us a chance.\"", bundle: 'pro' },
+        { q: "I need this specific girl to like me.", a: "\"I am outcome independent. I want sex, but I'm completely okay if it doesn't happen with her. There's another girl coming.\"", bundle: 'pro' },
+        { q: "I'm worried I'll look like a player.", a: "\"If I'm being my honest self and taking risks, I'm an enhancement to her life. A player with heart is a win for her.\"", bundle: 'pro' },
+        { q: "I feel like a beginner and it's embarrassing.", a: "\"We were all beginners once. My job is just to walk over and make a noise. Everything else is practice.\"", bundle: 'pro' },
+      ]
+    },
+  ],
 };

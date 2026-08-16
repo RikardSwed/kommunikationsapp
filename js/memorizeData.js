@@ -5476,4 +5476,413 @@ const memorizeCollections = {
       ]
     },
   ],
+  danbacon1: [
+    {
+      name: "Creating the Spark",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "Hold the core principles of Dan Bacon's flirtatious banter and attraction philosophy.",
+      cards: [
+        { q: "What is the \"Attraction Equation\"?", a: "Making her feel sexually attracted + being a good guy = Being \"Charming.\"", bundle: 'free' },
+        { q: "What is the \"80/20 Rule\" in banter?", a: "80% normal/confident behavior and 20% unpredictable/silly behavior.", bundle: 'free' },
+        { q: "Why should you avoid being \"too nice\"?", a: "It signals you don't feel worthy of her and makes the interaction one-dimensional and boring.", bundle: 'free' },
+        { q: "What is the \"Halo Effect\"?", a: "The psychological tendency to assume attractive people are smarter, nicer, and more valuable just because of their looks.", bundle: 'free' },
+        { q: "What does it mean to \"Flip the Script\"?", a: "Taking on the role of the judge/selector so she feels the need to be accepted by you.", bundle: 'free' },
+        { q: "What is \"Instant Attraction\"?", a: "The automatic response a man feels for a healthy, attractive woman; it is natural and nothing to be ashamed of.", bundle: 'pro' },
+        { q: "Why is \"Independent Confidence\" important?", a: "It's the ability to feel confident regardless of how a woman behaves or tests you.", bundle: 'pro' },
+        { q: "How do you handle a \"Confidence Test\"?", a: "By remaining calm, not taking it seriously, and playfully challenging her back.", bundle: 'pro' },
+        { q: "What is an \"Open Type\"?", a: "The majority of women who are open to all kinds of guys as long as the guy can trigger her attraction.", bundle: 'pro' },
+        { q: "When is the best time to discuss intellectual or serious ideas?", a: "After you have had sex with her and she is already attracted and in love.", bundle: 'pro' },
+      ]
+    },
+  ],
+  danbacon2: [
+    {
+      name: "Assertive Presence",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "Hold the core definitions of frame control and high-status communication.",
+      cards: [
+        { q: "What is the \"Halo Effect\"?", a: "The psychological tendency to assume attractive people are smarter and more valuable just because of their looks.", bundle: 'free' },
+        { q: "What defines \"High Social Status\" in a greeting?", a: "Using a relaxed, assertive \"how you doing\" instead of an apologetic \"excuse me.\"", bundle: 'free' },
+        { q: "What is a \"Confidence Test\"?", a: "A challenge where a woman says something \"mean\" or \"boring\" to see if you will crumble or get nervous.", bundle: 'free' },
+        { q: "What does \"Flipping the Script\" mean?", a: "Taking the role of the judge/selector so she feels the need to be accepted by you.", bundle: 'free' },
+        { q: "Why avoid \"Self-Qualification\"?", a: "Because trying to build yourself up signals that you don't feel \"good enough\" as you are.", bundle: 'free' },
+        { q: "What is \"Independent Confidence\"?", a: "Feeling confident regardless of a woman's behavior, signals, or tests.", bundle: 'pro' },
+        { q: "What is the \"Teflon\" frame?", a: "The ability to let a woman's scolding or negative comments slide off you without affecting your mood.", bundle: 'pro' },
+        { q: "Why is being \"not easily tamed\" attractive?", a: "It creates a challenge for her to acquire you, which is exciting for attractive women who are used to men falling in love instantly.", bundle: 'pro' },
+        { q: "What is \"Judgmental tonality\"?", a: "Speaking with a slight sense that you are evaluating the other person's value or behavior.", bundle: 'pro' },
+        { q: "What is the \"Open Type\"?", a: "The majority of women who are open to any guy as long as he can trigger her emotional attraction.", bundle: 'pro' },
+      ]
+    },
+  ],
+  danbacon3: [
+    {
+      name: "Relationship Mastery",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "Hold the core definitions of Dan Bacon's relationship philosophy.",
+      cards: [
+        { q: "What is the \"Good Girl Switch\"?", a: "The dynamic where a woman gains pleasure and happiness out of being attentive and good to her man.", bundle: 'free' },
+        { q: "What is \"Emotional Independence\"?", a: "Not needing your woman's emotional support, attention, or \"pat on the back\" to feel okay.", bundle: 'free' },
+        { q: "What is \"General Leadership\"?", a: "Providing the direction and approval for the relationship while letting her make specific decisions and do some of the work.", bundle: 'free' },
+        { q: "How should you handle her hormonal moodiness?", a: "Be assertive but loving; let her know it's not a free pass to treat you badly.", bundle: 'free' },
+        { q: "Why is \"Sucking Up\" a mistake?", a: "It makes her lose respect for you and stops her from feeling sexually attracted.", bundle: 'free' },
+        { q: "What is the \"Coffee Test\"?", a: "A way to lovingly expect more by asking for a drink and rewarding her with affection when she complies.", bundle: 'pro' },
+        { q: "How many times is an \"order\" usually asked for in sales (and closing)?", a: "At least three times.", bundle: 'pro' },
+        { q: "What is \"Independent Confidence\"?", a: "Feeling confident regardless of how a woman behaves or what she says.", bundle: 'pro' },
+        { q: "Why should a man avoid being \"too nice\"?", a: "She may assume he is boring or doesn't feel worthy of her value.", bundle: 'pro' },
+        { q: "What defines a \"Charming\" guy?", a: "Making her feel sexually attracted + being a good guy.", bundle: 'pro' },
+      ]
+    },
+  ],
+  danbacon4: [
+    {
+      name: "Holding the Frame",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "Hold the core definitions of Dan Bacon's frame and boundary philosophy.",
+      cards: [
+        { q: "What is a \"Ridiculous Rule\"?", a: "A test of power where a woman sets a meaningless boundary to see if her man will abide by it out of fear.", bundle: 'free' },
+        { q: "What is the \"Good Girl Switch\"?", a: "The dynamic where a woman gains pleasure and happiness out of being attentive and good to her man.", bundle: 'free' },
+        { q: "What defines \"Independent Confidence\"?", a: "Feeling confident regardless of a woman's behavior, signals, or tests.", bundle: 'free' },
+        { q: "Why should you avoid being \"neutral\" in a relationship?", a: "It turns the interaction into a friendship or \"housemate\" dynamic, which kills the sexual spark.", bundle: 'free' },
+        { q: "What is \"General Leadership\"?", a: "Providing the direction and approval for the relationship while letting her make specific decisions.", bundle: 'free' },
+        { q: "What is the \"Icarus Effect\"?", a: "Getting too close to sex/resolution without closing, then flailing or pushing too hard and causing a flake.", bundle: 'pro' },
+        { q: "What is the rule about \"Fearing her reaction\"?", a: "If you fear her reaction, she won't feel attraction.", bundle: 'pro' },
+        { q: "How should a man handle a woman's hormonal moodiness?", a: "Be assertive but loving; let her know it's not a free pass to treat you badly.", bundle: 'pro' },
+        { q: "Why is \"Sucking Up\" a mistake?", a: "It makes her lose respect for you and stops her from feeling sexually attracted.", bundle: 'pro' },
+        { q: "What is the \"80/20 Rule\" in relationships?", a: "80% normal/confident behavior and 20% unpredictable/playful behavior.", bundle: 'pro' },
+      ]
+    },
+  ],
+  oconnor1: [
+    {
+      name: "Tactics and Mechanics",
+      description: "Core mechanics of tactical communication and boundary setting.",
+      cards: [
+        { q: "What are the \"Three Watchmen\" you encounter after standing your ground?", a: "1. The Supporter (in awe), 2. The Competitor (jealous/scared), 3. The Decision Maker (sees leadership material).", bundle: 'free' },
+        { q: "How do you perform the \"Icy Stare\" correctly?", a: "Maintain direct eye contact with eyelids slightly covering the top of the iris; avoid \"psychosis eyes\" (wide open).", bundle: 'free' },
+        { q: "What is the difference between \"Why\" and \"What\" questions?", a: "\"Why\" leads to rumination and defensive excuses; \"What\" gets specific facts or calls out the behavior's venue.", bundle: 'free' },
+        { q: "How do you find your \"Power Tone\"?", a: "Look down into your lap, say a phrase, and lift your chin as you finish the sentence.", bundle: 'free' },
+        { q: "What are the components of the A-E-I-O-U script?", a: "Actions (unacceptable), Effects (of behavior), I (what I ask), Or else (consequence), You (positive benefit).", bundle: 'free' },
+        { q: "In the AEIOU script, what is the precise definition of \"Or Else\" and \"You\"?", a: "\"Or Else\" is the negative consequence of continued behavior; \"You\" is the positive benefit the other person receives for complying.", bundle: 'free' },
+        { q: "What are the two mandatory components of an effective coping statement?", a: "1. Present tense (\"I am\"), 2. Positively phrased (\"I am calm\" vs \"I won't cry\").", bundle: 'pro' },
+        { q: "What are \"Territorial Markers\" and why use them?", a: "Physical objects (pen, notebook) placed on a table to mark your space, project confidence, and signal you belong.", bundle: 'pro' },
+      ]
+    },
+  ],
+  oconnor2: [
+    {
+      name: "Core Idea",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "Key concepts from Dan O’Connor’s \"Professional Boundaries\" teachings.",
+      cards: [
+        { q: "What are the four 'S's of the Diplomatic Decline?", a: "Sympathize, Say No, Say Why (Benefit), and Suggest Alternatives.", bundle: 'free' },
+        { q: "What does the 'B-I-B' script stand for?", a: "Boundary, Instruction, and Benefit.", bundle: 'free' },
+        { q: "What is the \"Number One Mistake\" professional communicators make?", a: "Winging it. Approach difficult talks with scripted freestyle scripts instead.", bundle: 'free' },
+        { q: "Why should you avoid saying \"Constructive Criticism\"?", a: "It's outdated and creates a negative biochemical reaction. Use \"Feedback\" instead.", bundle: 'free' },
+        { q: "What is the \"Broken Record\" technique?", a: "Repeating your valid message (e.g., \"That may be, but...\") without adding new justifications or defenses.", bundle: 'free' },
+        { q: "What is the \"AEIOU\" script used for?", a: "Actions (unacceptable), Effects, Instruction (what to do), Or else, and You (what you get).", bundle: 'pro' },
+        { q: "What does Dan mean by \"Form follows Substance\"?", a: "When your internal intention (substance) is clear and peaceful, the right words (form) take shape naturally.", bundle: 'pro' },
+        { q: "Why is \"I don't appreciate...\" considered a weak phrase?", a: "It has no real meaning and doesn't set a hard line. Be specific about the facts and consequences instead.", bundle: 'pro' },
+        { q: "What are \"Power-Down Phrases\"?", a: "Closing statements that firm up your position and signal you are exiting an unproductive conversation.", bundle: 'pro' },
+      ]
+    },
+  ],
+  oconnor3: [
+    {
+      name: "Core Idea",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "Key principles for handling high-conflict and narcissistic personalities.",
+      cards: [
+        { q: "What is the \"Number One Rule\" when dealing with a narcissist?", a: "Don't defend yourself. We only defend against what we perceive to be vulnerable.", bundle: 'free' },
+        { q: "What does \"Selective Engagement\" mean?", a: "I decide who I respond to, how I respond, and what thoughts I allow in my brain.", bundle: 'free' },
+        { q: "Why use the passive voice with narcissists (e.g., \"A mistake was made\")?", a: "Because it avoids a direct identity attack, which narcissists are biologically programmed to deflect or counter-attack.", bundle: 'free' },
+        { q: "What is the \"Illusion of Choice\"?", a: "Offering two paths that both lead to your boundary being respected, satisfying the narcissist's need for control.", bundle: 'free' },
+        { q: "What is the \"litmus test\" for a loving response?", a: "If you can mentally preface it with \"It's because I love [myself/the goal] that I am saying this,\" it is a loving act.", bundle: 'free' },
+        { q: "Why is \"I don't appreciate...\" a weak phrase?", a: "It has no real meaning at work. Focus on the behavior and the logical consequences instead.", bundle: 'pro' },
+        { q: "What is \"illuminating the battlefield\"?", a: "Calling out the behavior for what it is (e.g., \"You're trying to embarrass me\") to reveal the true nature of the interaction.", bundle: 'pro' },
+        { q: "What does Dan say about \"taking away the reward\"?", a: "Since toxic behavior is driven by the reaction it gets, taking away the reaction stops the behavior from being repeated.", bundle: 'pro' },
+      ]
+    },
+  ],
+  oconnor4: [
+    {
+      name: "Core Idea",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "Key concepts on leadership and professional image from Dan O'Connor.",
+      cards: [
+        { q: "What does LBNT stand for?", a: "Liked Best / Next Time.", bundle: 'free' },
+        { q: "Why should you avoid the word \"idea\" when presenting a solution?", a: "Because people associate \"ideas\" with worker bees; leaders bring \"solutions,\" \"answers,\" or \"proposals.\"", bundle: 'free' },
+        { q: "What is the \"Porky the Pig\" mistake?", a: "Trailing off at the end of a message with phrases like \"So... yeah, that's it.\"", bundle: 'free' },
+        { q: "What are the three components of a good Lead-in Line?", a: "Short, use the other person's name, and use \"I\" language.", bundle: 'free' },
+        { q: "What is the rule of thumb for \"You\" vs \"I\"?", a: "\"You\" language triggers defensiveness; \"I\" language slows down self-talk and gets the message through.", bundle: 'free' },
+        { q: "What is a \"Tag Question\"?", a: "A statement with a quick yes/no confirmation at the end (e.g., \"Reasonable, isn't it?\") used to get buy-in.", bundle: 'pro' },
+        { q: "What does D-A-R-T stand for in boundary setting?", a: "Describe (intent), Address (distraction), Redirect (to goal), Tag question (buy-in).", bundle: 'pro' },
+        { q: "Why is \"I don't appreciate...\" a weak phrase for leaders?", a: "It is vague and lacks professional meaning. Focus on facts and logical consequences instead.", bundle: 'pro' },
+        { q: "What is the \"Number One\" rule for maintaining power?", a: "We only defend against what we believe to be vulnerable. If you are sure of yourself, you don't defend.", bundle: 'pro' },
+      ]
+    },
+  ],
+  oconnor5: [
+    {
+      name: "Core Idea",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "Key concepts on non-verbal power from Dan O'Connor.",
+      cards: [
+        { q: "What is the \"Power Hum\"?", a: "Saying \"mm-hmm\" to find the vibration at the bottom of the throat for a more credible power tone.", bundle: 'free' },
+        { q: "What does a neck scratch signal on a subconscious level?", a: "Confusion, frustration, or that the person is not 100% sure of their answer.", bundle: 'free' },
+        { q: "How long should you hold the Steeple pose?", a: "No more than four seconds at a time; otherwise it becomes overpowering.", bundle: 'free' },
+        { q: "What is the \"7-second rule\" for eye contact?", a: "Breaking eye contact (by looking down) every 7-10 seconds to avoid looking aggressive or creepy.", bundle: 'free' },
+        { q: "What does widening your eyes too much signal?", a: "Aggression, that they've \"gotten your goat,\" or a sign of psychosis.", bundle: 'free' },
+        { q: "What are \"Territorial Markers\"?", a: "Objects like notebooks or pens used to physically claim space and signal belonging in a room.", bundle: 'pro' },
+        { q: "What biochemical changes happen during a \"Power Pose\"?", a: "Testosterone levels go up (increasing confidence) and cortisol levels go down (decreasing stress).", bundle: 'pro' },
+        { q: "Why should you avoid looking UP when breaking eye contact?", a: "Because looking down is a natural cognitive break; looking up can appear dismissive or confused.", bundle: 'pro' },
+        { q: "What is the \"Porky the Pig\" mistake in executive presence?", a: "Trailing off at the end of a message (e.g., \"So... yeah\"); use a closing question instead.", bundle: 'pro' },
+      ]
+    },
+  ],
+  oconnor6: [
+    {
+      name: "Core Idea",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "Key concepts on persistence and internal regulation from Dan O'Connor.",
+      cards: [
+        { q: "What are the two components of a properly formed Coping Statement?", a: "It must be in the Present Tense and Positively Phrased.", bundle: 'free' },
+        { q: "Why is \"I will be calm\" a bad coping statement?", a: "Because it's in the future; your brain needs an instruction for RIGHT NOW.", bundle: 'free' },
+        { q: "What is the \"Broken Record\" technique?", a: "Repeating a valid message without adding new justifications or defenses.", bundle: 'free' },
+        { q: "Why should you avoid saying \"It's okay\" when someone apologizes?", a: "Because it wasn't okay five seconds ago; it makes you look wishy-washy and devalues your standard.", bundle: 'free' },
+        { q: "What is the \"Number One Mistake\" in negotiations according to Dan?", a: "Winging it without data. Use a Value Journal to quantify your impact.", bundle: 'free' },
+        { q: "What does \"We only defend what we believe to be vulnerable\" mean?", a: "If you are sure of your value and your decision, you don't need to justify it; your certainty is its own defense.", bundle: 'pro' },
+        { q: "What is \"Syntax\" in self-talk?", a: "The specific word order (Present/Positive) that allows the brain to process information efficiently.", bundle: 'pro' },
+        { q: "How does a Value Journal help during a \"budget freeze\"?", a: "It allows you to show that your specific role is generating revenue or saving costs, making you an exception to the freeze.", bundle: 'pro' },
+      ]
+    },
+  ],
+  oconnor7: [
+    {
+      name: "Core Idea",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "Fundamental concepts of social fluidity and connection from Dan O’Connor.",
+      cards: [
+        { q: "What does the acronym 'OFF' stand for?", a: "Offer, Favor, and Familiar language.", bundle: 'free' },
+        { q: "What are the three components of a PPT Opener?", a: "Person, Place, or Thing.", bundle: 'free' },
+        { q: "What is the \"Number One Key\" to making people want you around?", a: "Make it easy for them to communicate with you.", bundle: 'free' },
+        { q: "How many times should you repeat a new name out loud?", a: "At least three times during the first meeting.", bundle: 'free' },
+        { q: "Why is \"You should be proud of yourself\" more powerful than \"I'm proud of you\"?", a: "It gives them internal permission to recognize their worth and changes their posture.", bundle: 'free' },
+        { q: "What is a \"visual hook\" for a name?", a: "Associating a new person with a character or story that shares their name to trigger long-term recall.", bundle: 'pro' },
+        { q: "Why should you avoid rejecting an offer (like coffee or water)?", a: "Rejection breaks social protocol and stops the fluidity of the interaction.", bundle: 'pro' },
+        { q: "What are three great \"reel-in\" questions for small talk?", a: "\"Tell me about...\", \"How do you feel about...\", and \"What do you think about...\".", bundle: 'pro' },
+        { q: "What does Dan say about being \"the cause\" in social situations?", a: "You are the driver of the interaction; if it’s awkward, you have the power to fix it using tactics.", bundle: 'pro' },
+      ]
+    },
+  ],
+  jimmy1: [
+    {
+      name: "Core Idea",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "The fundamental requirements for a relationship to survive beyond the infatuation stage.",
+      cards: [
+        { q: "What is the \"Level Zero\" requirement for any relationship?", a: "Safety. Without it, everything else (intimacy, friendship, playfulness) crumbles.", bundle: 'free' },
+        { q: "What did Dr. Gottman find was the risk if a man won't share power?", a: "There is an 81% chance the marriage will self-destruct.", bundle: 'free' },
+        { q: "According to Jimmy, what is the \"Manual\" for a relationship?", a: "Emotional responsiveness and prioritizing your partner's legitimate needs.", bundle: 'free' },
+        { q: "What are the two factors the success of a relationship is \"solely dependent\" on?", a: "A partner's ability to listen lovingly and a partner's ability to share feelings respectfully.", bundle: 'free' },
+        { q: "Why is the concept of \"The One\" dangerous?", a: "It creates a false belief that finding the right person will magically fix all your baggage and trauma.", bundle: 'pro' },
+        { q: "What is the difference between a boundary and an ultimatum?", a: "A boundary is about what YOU will do; an ultimatum is an attempt to control what THEY do.", bundle: 'pro' },
+      ]
+    },
+  ],
+  jimmy2: [
+    {
+      name: "Core Idea",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "Key concepts from Jimmy’s teachings on how conversations determine the life or death of a marriage.",
+      cards: [
+        { q: "What did Dr. John Gottman say about how marriages die?", a: "\"Marriages die in the conversations that never happen.\"", bundle: 'free' },
+        { q: "What are the \"Four Horsemen\" that predict divorce with 90% accuracy?", a: "Defensiveness, Criticism, Contempt, and Stonewalling.", bundle: 'free' },
+        { q: "What is the \"Expression Formula\"?", a: "Fact → Feeling → Meaning → Need.", bundle: 'free' },
+        { q: "Why is a \"Soft Startup\" important?", a: "Because the first minute of a discussion determines the outcome of the entire talk.", bundle: 'free' },
+        { q: "What is the difference between a Complaint and a Criticism?", a: "A complaint focuses on a specific behavior; a criticism is an attack on the partner's character.", bundle: 'pro' },
+        { q: "What does \"Owning the Narrative\" mean?", a: "Using phrases like \"The story I'm telling myself\" to admit that your interpretation might not be the objective truth.", bundle: 'pro' },
+        { q: "What is the \"15 to 1 ratio\"?", a: "The need for 15 positive interactions for every 1 negative interaction/complaint to keep the \"love tank\" full.", bundle: 'pro' },
+      ]
+    },
+  ],
+  jimmy3: [
+    {
+      name: "Core Idea",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "Fundamental concepts of emotional responsiveness and \"Turning Toward\" according to Jimmy and Dr. Gottman.",
+      cards: [
+        { q: "What percentage of the time do happy couples \"turn toward\" bids for connection?", a: "86%. Divorcing couples only turn toward 33% of the time.", bundle: 'free' },
+        { q: "Does validation mean you have to agree with your partner's accusations?", a: "No. You validate the _feeling_ and the _experience_, not the blame or character attack.", bundle: 'free' },
+        { q: "What is the \"Manual\" for getting your partner in the mood?", a: "Emotional connection and non-sexual affection that starts \"at breakfast\".", bundle: 'free' },
+        { q: "What did Dr. Sue Johnson say is the \"Virus\" in a relationship?", a: "Disconnection. (Conflict is just the \"inflammation\").", bundle: 'free' },
+        { q: "What is the primary purpose of the \"Vulnerable\" code word?", a: "To signal that the \"Thinking brain\" needs to stay on and the \"Defensive brain\" needs to stand down.", bundle: 'pro' },
+        { q: "What are the three \"threads\" worth pulling in Compassionate Curiosity?", a: "The Meaning (their story), the Needs (what's missing), and the History (old wounds).", bundle: 'pro' },
+        { q: "Why is \"indifference\" worse than \"anger\" in a relationship?", a: "Indifference signals that you have stopped caring about their experience entirely; anger at least shows the bond still matters.", bundle: 'pro' },
+      ]
+    },
+  ],
+  jimmy4: [
+    {
+      name: "Core Idea",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "Key concepts on how conflict resolution predicts the life or death of a relationship.",
+      cards: [
+        { q: "What did Dr. John Gottman say was the \"Single Greatest Predictor of Divorce\"?", a: "The presence of Contempt.", bundle: 'free' },
+        { q: "What are the \"Four Horsemen\" of conflict?", a: "Criticism, Contempt, Defensiveness, and Stonewalling.", bundle: 'free' },
+        { q: "What is \"physiological flooding\"?", a: "A state of high arousal (racing heart, hot ears) where the thinking brain shuts off and \"Fight/Flight/Freeze\" takes over.", bundle: 'free' },
+        { q: "How long does it typically take for the nervous system to calm down after flooding?", a: "At least 20 to 30 minutes.", bundle: 'free' },
+        { q: "What is the \"Level Zero\" of a relationship according to Jimmy?", a: "Respect. Without it, intimacy cannot exist.", bundle: 'free' },
+        { q: "What is \"Repair\" in a relationship?", a: "Intentionally revisiting a moment of disconnection, taking accountability, and validating the partner's impact.", bundle: 'pro' },
+        { q: "What is the difference between a Boundary and an Ultimatum?", a: "A boundary is what YOU will do (e.g., leave the room); an ultimatum is an attempt to control what THEY do.", bundle: 'pro' },
+        { q: "Why is \"Validation without Agreement\" important?", a: "Because it acknowledges the partner's experience is real to them, which calms their nervous system even if you disagree with their conclusions.", bundle: 'pro' },
+        { q: "According to Sue Johnson, what is the \"Virus\" in a relationship?", a: "Disconnection. (Conflict is just the \"inflammation\").", bundle: 'pro' },
+      ]
+    },
+  ],
+  jimmy5: [
+    {
+      name: "Core Idea",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "Key concepts on proactive maintenance and the \"Love Tank\" from Jimmy’s teachings.",
+      cards: [
+        { q: "What did Dr. Sue Johnson say is the \"Virus\" in a relationship?", a: "Disconnection. (Conflict is just the \"inflammation\") [01:19, 408].", bundle: 'free' },
+        { q: "What is the \"15 to 1 ratio\"?", a: "The need for 15 positive interactions for every 1 negative interaction to keep the \"love tank\" full.", bundle: 'free' },
+        { q: "What is \"Invisible Labor\"?", a: "The mental load of managing the home, schedule, and family needs that often goes unnoticed.", bundle: 'free' },
+        { q: "Where does \"Foreplay\" start according to Jimmy?", a: "At breakfast—with emotional connection, non-sexual touch, and helping with chores.", bundle: 'free' },
+        { q: "Why is \"indifference\" more dangerous than \"anger\"?", a: "Anger shows the bond still matters; indifference signals that you have stopped caring about their experience entirely.", bundle: 'pro' },
+        { q: "What is the \"Team Meeting\" of a relationship?", a: "The Weekly Check-in—a structured time to ensure no hurts are being \"swept under the rug.\"", bundle: 'pro' },
+        { q: "What does Jimmy mean by \"Accepting Influence\"?", a: "Being malleable and responsive to your partner's feedback and perspective in your decision-making.", bundle: 'pro' },
+      ]
+    },
+  ],
+  jimmy6: [
+    {
+      name: "Core Idea",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "Fundamental concepts on narcissism and self-worth according to Jimmy’s teachings.",
+      cards: [
+        { q: "What is the \"Kryptonite\" of every narcissist?", a: "Accountability..", bundle: 'free' },
+        { q: "What does Jimmy say is the only real solution for a narcissistic relationship?", a: "Going No-Contact (the ultimate boundary)..", bundle: 'free' },
+        { q: "What is the difference between a \"Nice Guy\" and a \"Kind Man\"?", a: "A nice guy is selfless out of fear; a kind man is selfless out of love but has firm boundaries..", bundle: 'free' },
+        { q: "What is the \"Shame Response\"?", a: "Subconsciously believing that a mistake confirms you are a failure, leading to immediate defensiveness..", bundle: 'free' },
+        { q: "What is the \"rigged system\" in a narcissistic fight?", a: "A dynamic where your defense is used as ammunition to prove you are the \"abusive\" one..", bundle: 'pro' },
+        { q: "Why is \"Indifference\" more powerful than \"Anger\" against a manipulator?", a: "Because anger shows you still care; indifference shows they have lost their importance and control..", bundle: 'pro' },
+        { q: "What does it mean to \"abandon yourself\"?", a: "Prioritizing someone else's comfort or needs over your own core values and safety to avoid conflict..", bundle: 'pro' },
+      ]
+    },
+  ],
+  toddv1: [
+    {
+      name: "High-Value Openings",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "Hold the core definitions of Todd V's opening philosophy.",
+      cards: [
+        { q: "What are the four stages of game?", a: "Open, Hook, Qualify/Connect, and Close.", bundle: 'free' },
+        { q: "Why avoid asking \"Where are you from?\" immediately?", a: "It's \"value-taking.\" You are asking her to provide the interesting content without offering any yourself.", bundle: 'free' },
+        { q: "What is the \"Cookie\" in an Open Loop?", a: "A piece of intriguing information you show but don't fully give yet, forcing her to chase it.", bundle: 'free' },
+        { q: "What is the 90/10 rule?", a: "You talk 90% and she talks 10% at the very start to \"assume the burden\" of the conversation.", bundle: 'free' },
+        { q: "What defines a \"Hook\"?", a: "When she stops merely acknowledging you and begins to actively participate and accept the interaction.", bundle: 'free' },
+        { q: "What does \"Narrating the Frame\" mean?", a: "Speaking as if you are the \"Prize\" or \"Selector,\" naturally screening her for your world.", bundle: 'pro' },
+        { q: "What is the \"Starting the Lawnmower\" metaphor?", a: "Realizing that the first few \"pulls\" (lines) might die out, but you must keep pulling until the engine (conversation) stays on.", bundle: 'pro' },
+        { q: "What is a \"Soft Direct\" opener?", a: "A statement like \"You're adorable\" that shows interest but uses a condescending/playful word to avoid giving away all power.", bundle: 'pro' },
+      ]
+    },
+  ],
+  toddv2: [
+    {
+      name: "Tension & Banter",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "Definitions for the core concepts of the Todd V emotional rollercoaster.",
+      cards: [
+        { q: "What is the Push-Pull formula?", a: "A positive emotional spike combined with a negative emotional spike (or vice versa) in quick succession.", bundle: 'free' },
+        { q: "What is a \"Neg\"?", a: "A backwards compliment or unintentional observation that provokes insecurity without being an overt insult.", bundle: 'free' },
+        { q: "What is \"Qualifying\"?", a: "Taking the role of the Selector and finding out if she has value beyond her looks (screening her).", bundle: 'free' },
+        { q: "What is \"Disqualification\"?", a: "Indicating that sex or a relationship might not happen to remove pressure and create a chase.", bundle: 'free' },
+        { q: "What are the three ways to pass a shit test?", a: "Ignore, Agree and Exaggerate, or Misinterpret as a compliment.", bundle: 'free' },
+        { q: "What is the \"Icarus Effect\" in game?", a: "Getting too close to sex without closing, crossing the \"point of no return\" and then flaking.", bundle: 'pro' },
+        { q: "What is the difference between a tease and a flirt?", a: "A tease is playfully giving someone a hard time; a flirt is a tease with a man-to-woman premise.", bundle: 'pro' },
+        { q: "Why is \"Uncertainty\" essential for sexual tension?", a: "People don't value what comes too easily; doubt about whether she can have you accentuates the energy.", bundle: 'pro' },
+        { q: "What is \"Active Disinterest\"?", a: "Being actively engaged in the interaction while showing polarizing or negative spikes so you aren't on a pedestal.", bundle: 'pro' },
+        { q: "What does it mean to \"disqualify the sex\"?", a: "Indicating sex might not happen so she feels safe to escalate without being judged.", bundle: 'pro' },
+      ]
+    },
+  ],
+  toddv3: [
+    {
+      name: "Advanced Connection",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "Core definitions of Todd V's connection and blueprint philosophy.",
+      cards: [
+        { q: "What is the difference between Wide and Deep Rapport?", a: "Wide is touching on many topics for chemistry; Deep is exploring one topic emotionally for a bond.", bundle: 'free' },
+        { q: "What defines a girl's \"Blueprint\"?", a: "Her cultural background, upbringing, career, and values that determine what she finds high-value.", bundle: 'free' },
+        { q: "What is the \"90/10 Rule\" myth?", a: "Todd V disagrees with it; while you carry the burden early, the goal is 50/50 or her talking more once she's hooked.", bundle: 'free' },
+        { q: "What are the three parts of a grounding story?", a: "Situation, Interruption (the conflict), and Change/Resolution.", bundle: 'free' },
+        { q: "Why is a \"Cold Read\" better than a question?", a: "It offers value and insight first, taking the burden off her to be interesting.", bundle: 'free' },
+        { q: "What is \"Checkmating God\"?", a: "A frame where a girl tries to gain value by wasting your time (not having sex) because you are high-value.", bundle: 'pro' },
+        { q: "How do you identify a situational blueprint?", a: "Recognizing she acts differently on vacation (Vegas) than she does in her normal environment.", bundle: 'pro' },
+        { q: "What is a \"DHV Story\"?", a: "A story that demonstrates Higher Value traits (competence, status, social proof) through subtext rather than bragging.", bundle: 'pro' },
+        { q: "What is the \"Passion Pivot\"?", a: "Taking a factual answer and asking for the emotional motivation behind it.", bundle: 'pro' },
+        { q: "Why use the \"We\" frame?", a: "It creates an immediate narrative of a shared future or partnership, bypassing the \"stranger\" frame.", bundle: 'pro' },
+      ]
+    },
+  ],
+  toddv4: [
+    {
+      name: "Closing & Logistics",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "Hold the core definitions of Todd V's resolution philosophy.",
+      cards: [
+        { q: "What are the three things to screen for a pull?", a: "1. How hot is she? 2. How down to [ __ ] is she? 3. Logistics and situation.", bundle: 'free' },
+        { q: "What is the \"Front Door Rule\"?", a: "Walking a girl out of the club when it closes; effective in early-closing cities like LA.", bundle: 'free' },
+        { q: "What is the \"Sco Game\"?", a: "Closing with a foregone conclusion (\"Let's go\") rather than asking for permission.", bundle: 'free' },
+        { q: "What is the purpose of a False Time Constraint?", a: "To lower her guard and remove the pressure of a move or a stop.", bundle: 'free' },
+        { q: "Why should you \"Cover the Exits\"?", a: "To give the excuses and objections yourself before she does, taking them off the table.", bundle: 'free' },
+        { q: "What is \"Empathy\" in the context of closing?", a: "Understanding her situation (e.g., her friends) and helping her solve the problem so she can be with you.", bundle: 'pro' },
+        { q: "What is the \"Icarus Effect\"?", a: "Crossing the point of no return toward sex but then flailing/pushing too hard and causing a flake.", bundle: 'pro' },
+        { q: "What is \"Seeding the Pull\"?", a: "Mentioning future plans in the negative early on to test compliance and plant the idea.", bundle: 'pro' },
+        { q: "What defines a \"Polarizing Statement\"?", a: "A strong statement of intent or opinion that makes her either love or hate the interaction.", bundle: 'pro' },
+        { q: "How many times is a typical 'order' asked for before a successful close?", a: "At least three times.", bundle: 'pro' },
+      ]
+    },
+  ],
+  toddv5: [
+    {
+      name: "Unflappable Presence",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "Hold the core definitions of Todd V's inner game and pressure-handling philosophy.",
+      cards: [
+        { q: "What is the ultimate long-term solution for approach anxiety?", a: "Doing enough successful approaches to have more positive references than negative ones.", bundle: 'free' },
+        { q: "What is \"Agree and Exaggerate\"?", a: "Agreeing with a challenge and taking it to a ridiculous, humorous extreme to show you're not affected.", bundle: 'free' },
+        { q: "What is the \"What Do I Want?\" move?", a: "Acting on your genuine desire in the moment to overcome outcome dependence and seeking permission.", bundle: 'free' },
+        { q: "What is a \"Comfort Shit Test\"?", a: "A challenge to see if you are genuine, honest, or \"real\" rather than a challenge of your value.", bundle: 'free' },
+        { q: "What is the \"90/10 Rule\" myth in groups?", a: "Todd V disagrees with it; you carry the burden early, but the goal is her investment.", bundle: 'free' },
+        { q: "What is \"Active Disinterest\"?", a: "Being actively engaged in an interaction while showing polarizing or negative spikes to prove you're not on a pedestal.", bundle: 'pro' },
+        { q: "What is the \"Point of No Return\" in LMR?", a: "The moment where if escalation goes further but sex doesn't happen, she'll likely never see you again.", bundle: 'pro' },
+        { q: "How do you \"Cover the Exits\"?", a: "Giving the girl's likely objections and excuses yourself before she does to take them off the table.", bundle: 'pro' },
+        { q: "What is \"Sco Game\"?", a: "Leading with a foregone conclusion (\"Let's go\") instead of asking for permission.", bundle: 'pro' },
+        { q: "What is the \"True Self-Esteem\" formula?", a: "Accepting who you are and doing what you know is right regardless of the result.", bundle: 'pro' },
+      ]
+    },
+  ],
 };

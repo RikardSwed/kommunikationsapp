@@ -5782,4 +5782,807 @@ const multiStepCollections = {
       ]
     },
   ],
+  danbacon1: [
+    {
+      name: "Moving from \"Nice Guy\" to \"Lover\"",
+      guideFront: "What they said, and the strategy to answer it with.",
+      guideBack: "One way it could sound.",
+      description: "Step 1: The Statement-Question Combo (start easy) -> Step 2: Making Fun of Her Answers (create friction) -> Step 3: Misinterpreting Intent (sexualize). This sequence moves the interaction from neutral to high-attraction.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You see a stylish co-worker you haven't spoken to much standing by the drinks table.",
+          steps: [
+            { front: "The Statement-Question Combo — share your status.", back: "\"I'm just taking a break from the networking madness. How are you finding the event so far?\"" },
+            { front: "Making Fun of Her Answers — she says she is an \"Accountant.\"", back: "\"An accountant? I knew it! You have that 'I’m secretly a math genius' look. Where are you hiding your calculator?\"" },
+            { front: "Misinterpreting Intent — she giggles and says \"You're funny.\"", back: "\"Flattery will get you nowhere, but keep it coming. I've seen the way you've been looking at me—you're totally trying to seduce me, aren't you?\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "The \"Unpredictable\" Closer",
+      guideFront: "What they said, and the strategy to answer it with.",
+      guideBack: "One way it could sound.",
+      description: "Step 1: Unexpected Reactions (break the pattern) -> Step 2: Playfully Challenging Humor (test her) -> Step 3: Misinterpreting Intent (assume the lead).",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You have just finished a first date and are walking her to her car or door.",
+          steps: [
+            { front: "Unexpected Reactions — set a playful boundary.", back: "\"Look, we can walk together, but no holding hands yet. I don't move that fast—you're going to have to win me over more.\"" },
+            { front: "Playfully Challenging Humor — she laughs and asks \"Oh really?\"", back: "\"Exactly. You seem cool, but you also look like trouble. I'm not sure if I should trust you yet.\"" },
+            { front: "Misinterpreting Intent — she reaches for her keys and touches your hand.", back: "\"Woah, settle down! You're already throwing yourself at me? I told you, I'm a gentleman. Just take my number and we'll see if you behave.\"" },
+          ]
+        },
+      ]
+    },
+  ],
+  danbacon2: [
+    {
+      name: "From Challenge to Lead",
+      guideFront: "What they said, and the strategy to answer it with.",
+      guideBack: "One way it could sound.",
+      description: "Trains the transition from handling her pressure to taking control. Step 1: Passing Confidence Tests (absorb) -> Step 2: Conveying High Status (re-establish value) -> Step 3: The \"You Can't Tame Me\" Impression (assume the lead).",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You meet an attractive woman at a bar. She is used to attention and immediately tries to put you on the back foot.",
+          steps: [
+            { front: "Passing Confidence Tests — she says, \"That's a weird shirt. Why are you wearing that?\"", back: "\"Really? I thought it was a cool shirt. What should I be wearing instead? Give me some fashion tips.\" (Smile and laugh)" },
+            { front: "Conveying High Social Status — she gives some advice.", back: "\"Okay, I see you're stylish. I'm Dan, by the way. How are you doing tonight?\" (Relaxed, expectant tone)" },
+            { front: "The \"You Can't Tame Me\" Impression — she asks if you talk to every girl like this.", back: "\"I'm a good guy, but don't get any ideas—I'm not that easy. You're going to have to wine and dine me more than that.\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "The \"Selector\" Interaction",
+      guideFront: "What they said, and the strategy to answer it with.",
+      guideBack: "One way it could sound.",
+      description: "Step 1: Flipping the Script (place her under spotlight) -> Step 2: Avoiding Self-Qualification (hold frame) -> Step 3: Conveying High Status (assume dominance).",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You tell her you work in IT and she tries to judge you for it.",
+          steps: [
+            { front: "Flipping the Script — she says \"Oh, so you're an IT nerd then.\"", back: "\"No, I'm a smart man who understands code. You're just jealous because it's too difficult for you!\"" },
+            { front: "Avoiding Self-Qualification — she asks \"But do you actually make money?\"", back: "[Don't list achievements] \"Why are you so worried about my money? Are you one of those gold-digging girls who wants me to buy her things?\"" },
+            { front: "Conveying High Social Status — she laughs.", back: "\"I like you already. You're funny. Come on, let's go get a drink at the bar.\"" },
+          ]
+        },
+      ]
+    },
+  ],
+  danbacon3: [
+    {
+      name: "The \"Good Girl\" Loop",
+      guideFront: "What they said, and the strategy to answer it with.",
+      guideBack: "One way it could sound.",
+      description: "Step 1: Lovingly Expecting More (the ask) -> Step 2: Positive Reinforcement (the reward) -> Step 3: General Leadership (the next move). This sequence trains the \"Good Girl Switch\" by linking her compliance to pleasure and your leadership.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You are both relaxing, and you want her to be more attentive.",
+          steps: [
+            { front: "Lovingly Expecting More — ask for a small favor.", back: "\"Hey honey, can you go make me a coffee? Thanks.\"" },
+            { front: "Positive Reinforcement — she brings it to you.", back: "\"[Stand up, give her a warm hug and a kiss] Thanks babe. You're such a good woman when you want to be.\"" },
+            { front: "General Leadership — use the momentum to lead.", back: "\"Now that we're both caffeinated, get off your butt and let's go for a quick walk before it gets dark. Come on.\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "The \"Respect Reset\"",
+      guideFront: "What they said, and the strategy to answer it with.",
+      guideBack: "One way it could sound.",
+      description: "Step 1: Addressing Bad Behavior (set the boundary) -> Step 2: Emotional Independence (process the friction) -> Step 3: Positive Reinforcement (reward the change).",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "She is snapping at you and trying to start a pointless argument.",
+          steps: [
+            { front: "Addressing Bad Behavior — call it out calmly.", back: "\"Hey, that wasn't cool. You're usually great, but talking to me like that? No, I don't like it.\"" },
+            { front: "Emotional Independence — she continues to grumble; stay unreactive.", back: "\"[Don't argue back] I'm going to go work on my project for an hour. Let me know when you're ready to be a good girl again.\"" },
+            { front: "Positive Reinforcement — an hour later, she comes over and apologizes/snuggles.", back: "\"I appreciate that you're being sweet now. That's the woman I love. Come here.\"" },
+          ]
+        },
+      ]
+    },
+  ],
+  danbacon4: [
+    {
+      name: "The \"Friction to Dominance\" Sequence",
+      guideFront: "What they said, and the strategy to answer it with.",
+      guideBack: "One way it could sound.",
+      description: "Step 1: Ignoring Ridiculous Rules (handle the test) -> Step 2: Restoring the Spark (assume dominance) -> Step 3: Expressing Real Moods (be authentic). This sequence moves the relationship from a state of \"testing/friction\" back into a state of \"attraction/connection.\"",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You are at home and she is acting a bit \"bratty,\" making rules about where you can sit and how you can touch her.",
+          steps: [
+            { front: "Ignoring Ridiculous Rules — she says, \"You can sit next to me, but no touching.\"", back: "\"Whatever! I tell you what: from now on, all you're getting is butt squeezes and hugs from me. Come here.\"" },
+            { front: "Restoring the Spark — she giggles; escalate.", back: "\"[Bring her in for a firm 10-second hug] Just relax. [Lift her chin and kiss her] You're copping it tonight.\"" },
+            { front: "Expressing Real Moods — the tension is gone; be real.", back: "\"Actually, I've had a hectic day and I just wanted to relax with my girl. Tell me what you've been up to today.\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "The \"Selector\" Date Loop",
+      guideFront: "What they said, and the strategy to answer it with.",
+      guideBack: "One way it could sound.",
+      description: "Step 1: Let Her Win You Over (the pitch) -> Step 2: Expressing Real Moods (the authentic response) -> Step 3: Restoring the Spark (the sexualize).",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "She wants to go to a specific bar that you find a bit \"boring.\"",
+          steps: [
+            { front: "Let Her Win You Over — she suggests the bar.", back: "\"I'm not really in the mood for that spot tonight. Win me over—what's so good about it that I should change my mind?\"" },
+            { front: "Expressing Real Moods — she pitches it; give your real take.", back: "\"Okay, the music is good there, I agree. But the drinks are overpriced and the crowd is usually lame. I'm open to it if you promise to be fun though.\"" },
+            { front: "Restoring the Spark — she promises to be fun.", back: "\"Alright, let's go. But don't get any funny ideas—I'm a gentleman. You're going to have to wine and dine me more if you want a kiss at the end of the night.\"" },
+          ]
+        },
+      ]
+    },
+  ],
+  oconnor1: [
+    {
+      name: "The Public Bus-Throwing",
+      guideFront: "The situation and strategy to use.",
+      guideBack: "The tactical execution.",
+      description: "For when a superior blames you for a failure in front of others. You maintain professional dignity while forcing them to offer a public solution. **Mindset:** Acting in good faith while refusing to be the scapegoat. **Scenario:** A boss tells a client on a call, \"Dan won't be turning things in late anymore,\" blaming you for their own delay.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "",
+          steps: [
+            { front: "1: Empathize & Validate.", back: "\"I can understand why this would be upsetting to you if you thought I was turning things in late.\"" },
+            { front: "2: Address Behavior/Take Responsibility Tactically.", back: "\"Since that is my fault and I’m taking responsibility for it, I’d like some help right now when everyone is watching to help rectify that.\"" },
+            { front: "3: Question/Clarify.", back: "\"Could you please show me when I've turned them in late so we can fix the breakdown immediately?\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "The Micromanager Reset",
+      guideFront: "The situation and strategy to use.",
+      guideBack: "The tactical execution.",
+      description: "For supervisors who break agreements or hover. It uses a structured script to take responsibility for time management and sets a visual boundary. **Mindset:** Retraining people how to treat you. **Scenario:** A boss keeps checking in every hour despite a \"daily report\" agreement.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "",
+          steps: [
+            { front: "1: A-E-I-O-U Script.", back: "\"I've found I'm not managing my time as efficiently as I could. I'm implementing a new system. If you help me, I can focus more on the work you need.\"" },
+            { front: "2: Availability Monitor.", back: "(Points to a red/green sign). \"When this is red, it means I'm in a focused block. Please come back when it's green so I can give you my full attention.\"" },
+            { front: "3: \"What will it take?\" Statement.", back: "\"John, we made an agreement on feedback. What will it take to get you to respect that agreement?\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "The Toxic Colleague Trap",
+      guideFront: "The situation and strategy to use.",
+      guideBack: "The tactical execution.",
+      description: "For passive-aggressive snipers. It uses silence and controlled body language to return the discomfort to the attacker. **Mindset:** Taking away the reward of your emotional reaction. **Scenario:** A colleague makes a snide remark about your personal life at the break room table.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "",
+          steps: [
+            { front: "1: 3-Second Look.", back: "(Look them directly in the eyes for three seconds of silence; let them \"cook their own goose\")." },
+            { front: "2: Clarifying Question.", back: "\"When you say that, it sounds to me like you're trying to shame me in front of the group. Is that what you're saying?\"" },
+            { front: "3: Icy Stare.", back: "(Maintain eye contact with eyelids slightly covering the iris, then pivot). \"Charlie, could you pass the coffee?\"" },
+          ]
+        },
+      ]
+    },
+  ],
+  oconnor2: [
+    {
+      name: "Implementing the Monitor",
+      guideFront: "What they said, and the strategy to answer it with.",
+      guideBack: "One way it could sound.",
+      description: "Use the AEIOU script to set the groundwork, then enforce the sign, and follow up during a \"Green\" period. This ensures that the transition to a new system is understood as a productivity move, not a personal rejection.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You have a colleague, Mary, who stops by every morning to chat for 20 minutes, killing your most productive hour.",
+          steps: [
+            { front: "The Availability Monitor (Groundwork) — use AEIOU to explain.", back: "\"Mary, I need your help. I’ve noticed I’m not as efficient as I could be [A], and I'm falling behind [E]. I'm asking you to help me use this new 'Red/Green' system [I].\"" },
+            { front: "The Availability Monitor (Signal) — set the or-else and benefit.", back: "\"If it's red, I won't be able to visit [O]. But when it's green, I can actually focus on what you're saying [U]. Can I count on you?\"" },
+            { front: "The Availability Monitor (Enforcer) — next morning, she walks in while Red.", back: "(Simply point to the red sign with a small, polite smile and keep working)." },
+            { front: "Turning Toward — later, when you turn the sign to Green.", back: "\"Hey Mary! I'm green now. What was that thing you wanted to tell me this morning? I'm all yours.\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "The Firm No",
+      guideFront: "What they said, and the strategy to answer it with.",
+      guideBack: "One way it could sound.",
+      description: "Use the Diplomatic Decline, and if they push, use the Broken Record technique to stand your ground. This prevents you from introducing \"new justifications\" that the other person can use to argue with you.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "Your boss asks if you can come in Saturday morning to \"help out\" with some filing.",
+          steps: [
+            { front: "The Diplomatic Decline — give the four-step no.", back: "\"I'd like to be helpful, however I'm afraid I have plans this Saturday. I'm wondering, could I handle those files first thing Monday?\"" },
+            { front: "Broken Record — they say \"But I really need this done before Monday morning.\"", back: "\"That may be, but I have already made plans for this weekend and cannot come in. I’ll be happy to do it Monday.\"" },
+            { front: "Broken Record — they try guilt: \"I guess the team just isn't a priority for you.\"", back: "\"That may be, but again, I've made other plans. I look forward to tackling this with a fresh mind on Monday.\"" },
+            { front: "Power-Down Phrases — they won't let it go.", back: "\"I think we both understand the situation. I'm going to get back to work now so I can finish today's tasks. Goodbye.\"" },
+          ]
+        },
+      ]
+    },
+  ],
+  oconnor3: [
+    {
+      name: "Handling the Office Sniper",
+      guideFront: "What they said, and the strategy to answer it with.",
+      guideBack: "One way it could sound.",
+      description: "Use Selective Engagement (The 3-Second Look) to let the bait hang, followed by an Empowering Statement to dictate the next move. • This forces the narcissist to realize that their \"passive-aggressive\" game isn't working.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You are eating lunch. A narcissist says, \"I see you're eating that burger—I guess the diet didn't last through Monday.\"",
+          steps: [
+            { front: "Selective Engagement — use the 3-second look.", back: "(Stop eating, look them directly in the eyes for 3 seconds without smiling or frowning)." },
+            { front: "Empowering Statements — offer a choice for the future.", back: "\"I'm sure you aren't trying to be rude, but I don't allow personal comments about my health. Would you like to talk about work, or should I finish my lunch in private?\"" },
+            { front: "Selective Engagement — they try to backtrack: \"Jeez, I was just kidding!\"", back: "(Maintain the 3-second look again, then go back to your burger without responding to the excuse)." },
+          ]
+        },
+      ]
+    },
+    {
+      name: "The \"Professional\" Shield",
+      guideFront: "What they said, and the strategy to answer it with.",
+      guideBack: "One way it could sound.",
+      description: "Use the Communication Hamburger to address a behavior, and if they try to make it personal, use the \"Irrelevant\" Block. • This sequence moves from \"improving the work\" to \"denying the intimacy.\"",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "Your coworker is constantly \"checking in\" on you in a way that feels like micromanagement and sabotage.",
+          steps: [
+            { front: "The Communication Hamburger — address the behavior.", back: "\"John, when you check my draft every hour, it concerns me because it appears you don't believe I'm capable of finishing it on time.\"" },
+            { front: "The \"Irrelevant\" Block — they say, \"I'm just trying to be a good friend and help you out.\"", back: "\"I appreciate the thought, but to me, our relationship has always been strictly professional. I'd thank you for keeping it that way.\"" },
+            { front: "Empowering Statements — set the rule.", back: "\"I'll have the update for you at 5:00. Would you like to wait until then, or would you prefer to let the manager handle the coordination?\"" },
+          ]
+        },
+      ]
+    },
+  ],
+  oconnor4: [
+    {
+      name: "The Forward-Focused Feedback",
+      guideFront: "The step you are on — say your version out loud.",
+      guideBack: "One way it could sound.",
+      description: "Use a Lead-in to focus their attention, followed by LBNT for the correction, and a Closer to finish with a bang. • This ensures the person feels supported while clearly understanding the required change.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You are sitting in an office with a teammate. Their report is correct but visually confusing.",
+          steps: [
+            { front: "Lead-in Lines — use their name and \"I\" language.", back: "\"Mark, I need your help. I'm concerned about the Jones report layout.\"" },
+            { front: "LBNT (Liked Best) — start with the positive.", back: "\"I liked the accuracy of the figures you gathered. They are exactly what we need.\"" },
+            { front: "LBNT (Next Time) — give the instruction.", back: "\"Next time, if you use a standard table format for the costs, it will be much easier for the client to read.\"" },
+            { front: "Lead-in & Closing Lines — wrap it up.", back: "\"Does that sound doable for you? [Pause] Great. I'm going to get back to my desk now. Goodbye.\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Correcting a Rule-Breaker",
+      guideFront: "The step you are on — say your version out loud.",
+      guideBack: "One way it could sound.",
+      description: "Use \"I\" instead of \"You\" to state the issue, and then the D-A-R-T script to get them back on track. • Moves from internal observation to public accountability.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You are a team lead. A colleague walks in 10 minutes late for the third time this week.",
+          steps: [
+            { front: "\"I\" Instead of \"You\" — state the observation.", back: "\"I find it difficult to run an effective meeting when we have to repeat the first 10 minutes.\"" },
+            { front: "D-A-R-T (Describe & Address) — show the intent and the distraction.", back: "\"I'm here to ensure our team hits its goals. However, late starts are counterproductive to our mission.\"" },
+            { front: "D-A-R-T (Redirect & Tag) — ask for the change.", back: "\"What do you say we all agree to be in our seats by 9:00 sharp? That's reasonable, isn't it?\"" },
+          ]
+        },
+      ]
+    },
+  ],
+  oconnor5: [
+    {
+      name: "The Executive Entry",
+      guideFront: "The step you are on — say your version out loud.",
+      guideBack: "One way it could sound.",
+      description: "Combine Territorial Markers, Vocal Power Tone, and The Steeple to establish authority from the first second of a meeting. • This ensures that before you even get to the meat of your message, the room has already accepted you as a person of consequence.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You walk into the room. The board members are chatting amongst themselves. You have a folder and a laptop.",
+          steps: [
+            { front: "Territorial Markers — claim your space.", back: "(Firmly move your chair to the table, set your laptop down, and place your folder to the side to mark your area)." },
+            { front: "Vocal Power Tone — capture the room's attention.", back: "(Speak loudly enough to cut through the chatter) \"Good morning, everyone. I'm Dan. I have the solutions for the Q3 objectives.\"" },
+            { front: "The Steeple — anchor your first key point.", back: "(As you deliver your opening line, plant your forearms and put your fingertips together for 4 seconds)." },
+            { front: "The Look Away — manage the connection.", back: "(Maintain eye contact for 7 seconds, then glance at your slides before returning your gaze to the CEO)." },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Handling a \"Stare Down\"",
+      guideFront: "The step you are on — say your version out loud.",
+      guideBack: "One way it could sound.",
+      description: "Use the Icy Stare and The Look Away to neutralize a challenger's attempt to intimidate you. • This demonstrates that you are comfortable with power but are not playing \"childish\" dominance games.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You just told a coworker you wouldn't do their work. They are standing in your doorway, staring at you without saying a word.",
+          steps: [
+            { front: "The Look Away — notice the aggression and stay calm.", back: "(Meet their eyes comfortably, keeping your eyelids in the 'Icy Stare' position—eyelids covering the top of the iris)." },
+            { front: "Selective Engagement — use the 3-second look.", back: "(Simply look at them for 3 seconds without smiling or speaking. Let them 'cook their own goose')." },
+            { front: "The Look Away — break the tension on your terms.", back: "(After 7 seconds, calmly look down at your keyboard and continue your work as if they aren't there)." },
+          ]
+        },
+      ]
+    },
+  ],
+  oconnor6: [
+    {
+      name: "Handling a Pushy Request",
+      guideFront: "The step you are on — say your version out loud.",
+      guideBack: "One way it could sound.",
+      description: "Use a Coping Statement to stay calm, followed by The Broken Record to hold the line, and \"I Forgive You\" if they eventually apologize for their persistence. • This ensures you stay regulated while being persistent.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "Mark wants you to give him access to a restricted file. You've already said no, but he's getting aggressive and personal.",
+          steps: [
+            { front: "Coping Statements — you feel your temper rising.", back: "(Internal) \"I am in control of this relationship. I am a calm professional.\"" },
+            { front: "The Broken Record — Mark says, \"Come on, I thought we were friends! Just give me the password.\"", back: "\"I understand this is a sensitive timeline, however I must stick to the established security protocol. I can't share the password.\"" },
+            { front: "The Broken Record — Mark snaps: \"You're just being a difficult gatekeeper.\"", back: "\"That may be, but again, I am sticking to the protocol. I'm sure you can respect that.\"" },
+            { front: "\"I Forgive You\" — Mark cools down and says, \"Sorry Dan, I'm just stressed about the deadline.\"", back: "\"I understand the pressure. I forgive you. Let's get back to work.\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Preparing for the Raise Talk",
+      guideFront: "The step you are on — say your version out loud.",
+      guideBack: "One way it could sound.",
+      description: "Use The Value Journal to gather data, and Coping Statements to maintain executive presence during the actual meeting. • Data + Calm = Power.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You are meeting with your manager to discuss your salary for the next year.",
+          steps: [
+            { front: "The Value Journal — a week before the meeting.", back: "\"I've dropped off a summary of my quantifiable contributions this year. I'd like us to reference those during our review.\"" },
+            { front: "Coping Statements — you are sitting in the hallway waiting to be called in.", back: "(Internal) \"I am a high-value asset to this team. I am calm and confident.\"" },
+            { front: "The Broken Record — the manager says, \"The budget is tight this year for everyone.\"", back: "\"I understand the budget constraints, however based on the $50k in new revenue I generated, a raise is a logical return on investment.\"" },
+          ]
+        },
+      ]
+    },
+  ],
+  oconnor7: [
+    {
+      name: "The Masterful Introduction",
+      guideFront: "The step you are on — say your version out loud.",
+      guideBack: "One way it could sound.",
+      description: "Combine the PPT Opener with the Visual Hook and OFF technique to turn a stranger into a warm connection. • Moves from \"Shared Environment\" to \"Personal Connection\" to \"Established Rapport.\"",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You are standing by the snack table. A man walks up and starts looking at the food.",
+          steps: [
+            { front: "The \"Person, Place, or Thing\" Opener — notice a detail.", back: "\"The catering here is actually impressive for a Tuesday, isn't it?\"" },
+            { front: "The Visual Hook for Names — he introduces himself as 'Joe'.", back: "\"Joe, always a pleasure. I'm Dan.\" (Picture a cup of 'Joe' coffee in his hand; repeat 'Joe' three times)." },
+            { front: "The OFF Technique (Offer) — build instant service rapport.", back: "\"I was just about to grab a workbook from the front. Joe, would you like me to grab you one as well?\"" },
+            { front: "The OFF Technique (Familiar Language) — as you walk away.", back: "\"I'll be right back, Joe. You're in charge of the cookies while I'm gone!\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Empowering a Teammate",
+      guideFront: "The step you are on — say your version out loud.",
+      guideBack: "One way it could sound.",
+      description: "Use specific \"Your\" language and shift to Empowering Praise to build self-esteem and visibility. • This transforms a generic \"Good job\" into a meaningful leadership moment.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "Your employee, Mary, has just handed you a perfectly organized file that solved a major headache for you.",
+          steps: [
+            { front: "\"Your\" instead of \"You\" — make it personable.", back: "\"Mary, your attention to detail on this file really shines through. It solved exactly the problem I was having.\"" },
+            { front: "Empowering Praise — shift the pride to her.", back: "\"You did a fantastic job. You should be really proud of yourself for this one.\"" },
+            { front: "Empowering Praise (Engagement) — add the tag question.", back: "\"Were you aware that the whole team has been noticing how much you've stepped up lately?\"" },
+          ]
+        },
+      ]
+    },
+  ],
+  jimmy1: [
+    {
+      name: "The Foundation Check",
+      guideFront: "What they said, and the strategy to answer it with.",
+      guideBack: "One way it could sound.",
+      description: "Discern their character through observation, then align on values, and set the standard for how you will handle the inevitable conflicts. • You move from observation to verbal agreement to procedural safety.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You've been seeing someone for two months. Everything feels great, but you want to ensure the foundations are solid before getting \"all-in.\"",
+          steps: [
+            { front: "Character Discernment — you are out at a busy restaurant where the service is slow.", back: "(notice if they are patient and empathetic or entitled and aggressive toward the staff)" },
+            { front: "Values Alignment — later that night, you bring up the \"big\" stuff.", back: "\"I'm really enjoying us. I'd love to know what your non-negotiables are for a long-term partner.\"" },
+            { front: "Enforcing Mutual Respect — they share their values, and you discuss how to handle disagreements.", back: "\"If we do this, can we agree that yelling and name-calling are off-limits, no matter how mad we get?\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Handling a \"Power Struggle\"",
+      guideFront: "What they said, and the strategy to answer it with.",
+      guideBack: "One way it could sound.",
+      description: "Accepting Influence combined with Enforcing Mutual Respect to turn a fight back into a partnership. • You show you are malleable but also that you have firm limits on treatment.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You want to buy a new car; your partner thinks it's a bad financial move. The tension is rising.",
+          steps: [
+            { front: "Accepting Influence — they explain their fear about the savings account.", back: "\"You're right to be concerned about the safety net. Let's look at the numbers together.\"" },
+            { front: "Enforcing Mutual Respect — they get frustrated and say, \"You're always so impulsive!\"", back: "\"I hear your frustration, but 'you always' feels like an attack. Can we stick to the car?\"" },
+            { front: "Accepting Influence — they apologize and suggest a compromise.", back: "\"I can wait six months if we hit a specific savings goal first. I trust your judgment on the timing.\"" },
+          ]
+        },
+      ]
+    },
+  ],
+  jimmy2: [
+    {
+      name: "The Vulnerable Reveal",
+      guideFront: "What they said, and the strategy to answer it with.",
+      guideBack: "One way it could sound.",
+      description: "Use the Soft Startup to set the stage, followed by the full Expression Formula to share a deep concern. • This ensures the partner is ready to listen before you share your core vulnerability.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "Your partner has been spending a lot of time with new friends, and you are starting to feel insecure and left behind.",
+          steps: [
+            { front: "The Soft Startup — check for their capacity.", back: "\"Hey, I've been feeling a bit disconnected. Do you have some time to sit and look me in the eyes for a bit?\"" },
+            { front: "The Expression Formula (Facts) — state the event.", back: "\"You've been out with your new group three nights this week.\"" },
+            { front: "The Expression Formula (Feelings & Meaning) — share the internal state.", back: "\"I’m feeling pretty anxious and lonely. The story I’m telling myself is that you're starting to prefer their company over mine.\"" },
+            { front: "The Expression Formula (Need) — ask for reconnection.", back: "\"What I really need is for us to have a dedicated 'us' night this weekend to feel like a priority again.\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Correcting a \"Hard\" Startup",
+      guideFront: "What they said, and the strategy to answer it with.",
+      guideBack: "One way it could sound.",
+      description: "When you realize you've started with criticism, use self-regulation to stop and \"Requests Over Criticism\" to try again. • This trains the \"Repentant Leader\" mindset: owning your part of the conflict immediately.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You walk into the living room, see a mess, and immediately yell: \"You're so lazy! Why is it always me cleaning up?\"",
+          steps: [
+            { front: "The Soft Startup — realize you've been \"disregulated\" and call a timeout.", back: "\"Wait—stop. My heart is racing and I just attacked you. Let me take 30 seconds to breathe and start over.\"" },
+            { front: "Requests Over Criticism — rephrase the attack into a vulnerable request.", back: "\"I'm feeling really overwhelmed by the state of the house. Would you be willing to spend 15 minutes helping me tidy up?\"" },
+            { front: "Owning the Narrative — explain the \"why\" behind the snap.", back: "\"I'm sorry I called you lazy. The story I told myself was that I'm alone in this, but I know that's not fair.\"" },
+          ]
+        },
+      ]
+    },
+  ],
+  jimmy3: [
+    {
+      name: "The Safe Harbor Loop",
+      guideFront: "What they said, and the strategy to answer it with.",
+      guideBack: "One way it could sound.",
+      description: "Start with the \"Vulnerable\" code word to set the tone, follow with Compassionate Curiosity to understand, and finish with Validation Without Agreement. • This ensures the partner feels safe enough to share the _real_ hurt, not just the \"surface\" anger.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "Things have been tense for a week. You want to have a \"real\" talk about the distance you've both been feeling.",
+          steps: [
+            { front: "The \"Vulnerable\" Code Word — set the stage.", back: "\"Vulnerable. I've been feeling some distance between us and it's making me anxious.\"" },
+            { front: "Compassionate Curiosity — they admit they've been pulling away too.", back: "\"I'm glad you're being honest. What story have you been telling yourself about why we're distant?\"" },
+            { front: "Validation Without Agreement — they say they feel like you don't enjoy their company anymore.", back: "\"I can see how you'd feel that way since I've been so quiet. It makes sense that you'd feel rejected.\"" },
+            { front: "Compassionate Curiosity — dig for the solution.", back: "\"What do you need from me tonight to feel like a priority again?\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Responding to a \"Bid\" for Connection",
+      guideFront: "What they said, and the strategy to answer it with.",
+      guideBack: "One way it could sound.",
+      description: "Turning Toward a bid and following up with Compassionate Curiosity to turn a small moment into a bonding event. • This trains the habit of \"emotional responsiveness\" which predicts long-term success.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You are watching TV and your partner walks in and says, \"My boss finally liked my presentation today.\"",
+          steps: [
+            { front: "Turning Toward Bids — give them your attention.", back: "(Mute the TV and look at them) \"That's amazing! I know how much work you put into that.\"" },
+            { front: "Compassionate Curiosity — explore the win.", back: "\"What part of it did they like the most? Tell me the details.\"" },
+            { front: "Turning Toward Bids — celebrate as a team.", back: "\"You've been crushing it lately. Let's go out for a treat tonight to celebrate.\"" },
+          ]
+        },
+      ]
+    },
+  ],
+  jimmy4: [
+    {
+      name: "From Heat to Regulation",
+      guideFront: "What they said, and the strategy to answer it with.",
+      guideBack: "One way it could sound.",
+      description: "Recognize flooding, initiate a Reset with reassurance, and return with Curiosity. • This trains the ability to \"stop the bleed\" and return as a teammate.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You are discussing a large credit card bill. Voices are rising, and you can feel your heart thumping in your chest.",
+          steps: [
+            { front: "The 30-Minute Reset — recognize flooding and call a timeout.", back: "\"Wait—my heart is racing and I’m starting to get aggressive. I need to take 30 minutes to breathe.\"" },
+            { front: "The 30-Minute Reset — reassure the partner before leaving.", back: "\"I love you and I’m not abandoning this talk. I just want to be in a better headspace to hear you. I’ll be back at 8:00.\"" },
+            { front: "The 30-Minute Reset — return and re-initiate the talk.", back: "\"Thank you for the break. I’m feeling much calmer. Can we try again? I want to understand what's worrying you about the bill.\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "The Deep Repair",
+      guideFront: "What they said, and the strategy to answer it with.",
+      guideBack: "One way it could sound.",
+      description: "Practice Radical Accountability for a mistake and follow it with Validating Past Pain to see if there's a deeper pattern. • This turns a \"cheap apology\" into a moment of deep connection.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You forgot your anniversary and your partner is visibly hurt and distant.",
+          steps: [
+            { front: "Radical Accountability — own the ball you dropped.", back: "\"I completely missed our anniversary and I am so sorry. I know how much that day means to you and I failed you there.\"" },
+            { front: "Radical Accountability — validate the impact.", back: "\"I imagine that made you feel like you aren't a priority in my life, and that hurts my heart to think about.\"" },
+            { front: "Validating Past Pain — check if this triggered an old wound.", back: "\"Does this feel like a pattern of me neglecting you that we need to talk about? I want to hear the whole story.\"" },
+            { front: "Radical Accountability — offer a plan for change.", back: "\"I’ve set a recurring alert in my calendar and my phone for next year. I want you to be able to count on me.\"" },
+          ]
+        },
+      ]
+    },
+  ],
+  jimmy5: [
+    {
+      name: "The Daily Reconnection",
+      guideFront: "What they said, and the strategy to answer it with.",
+      guideBack: "One way it could sound.",
+      description: "Use Non-Sexual Affection upon greeting, followed immediately by Out-Loud Appreciation to bridge the gap after a day apart. • This ensures the transition from \"Work/World\" to \"Home/Relationship\" is safe and warm.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You walk through the front door. Your partner is in the kitchen.",
+          steps: [
+            { front: "Non-Sexual Affection — greet them with physical presence.", back: "(Walk straight to them, put your phone away, and give them a 20-second hug)" },
+            { front: "Out-Loud Appreciation — name something you're grateful for right now.", back: "\"I'm so glad to see you. Thank you for being the best part of my day.\"" },
+            { front: "Sharing the Mental Load — look for an immediate way to serve.", back: "\"The kitchen looks like it was a battleground today. Let me take over the dishes while you tell me about your day.\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "A Deep Check-In",
+      guideFront: "What they said, and the strategy to answer it with.",
+      guideBack: "One way it could sound.",
+      description: "Move from general highlights to a \"vulnerability scale\" and finish with a specific request for support. • This sequence turns a \"logistics talk\" into an \"intimacy talk.\"",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "The kids are in bed and you have 20 minutes of quiet time.",
+          steps: [
+            { front: "The Weekly Check-in — start with general mood.", back: "\"I love us. Let's do our check-in. What was your high light and low light from this week?\"" },
+            { front: "The Weekly Check-in — check the connection scale.", back: "\"On a scale of 1 to 5, how connected have you felt to me? I want to know what I can do to move that closer to a 5.\"" },
+            { front: "Sharing the Mental Load — identify a burden to carry.", back: "\"What's one thing weighing on you for this coming week that I can handle for you?\"" },
+            { front: "Non-Sexual Affection — seal the talk with connection.", back: "(Reach over, hold their hand, and maintain eye contact) \"Thank you for being honest with me. I'm on your team.\"" },
+          ]
+        },
+      ]
+    },
+  ],
+  jimmy6: [
+    {
+      name: "Handling the \"Victim\" Bait",
+      guideFront: "What they said, and the strategy to answer it with.",
+      guideBack: "One way it could sound.",
+      description: "When a manipulator plays the victim to bypass your boundary, use The Bare Minimum Standard to hold the line and Indifference to close the loop. • This prevents you from being \"pulled back into the mud\".",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You tell your partner you need two hours of \"quiet time\" on Saturdays. They immediately pout and say, \"I guess I just don't matter to you as much as your hobbies do.\".",
+          steps: [
+            { front: "The Bare Minimum Standard — reassert the need without apology.", back: "\"My need for space has nothing to do with my love for you. I need these two hours to be a healthy partner.\"" },
+            { front: "Indifference to Manipulation — they escalate: \"Fine! Just go be alone since you hate me so much!\"", back: "(Stay calm) \"I’ll see you in two hours for dinner. I love you.\"" },
+            { front: "Indifference to Manipulation — they follow you, still complaining.", back: "(Say nothing, go to your designated space, and close the door)." },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Navigating a Shame Spiral",
+      guideFront: "What they said, and the strategy to answer it with.",
+      guideBack: "One way it could sound.",
+      description: "Recognize the internal trigger, use Healing the Shame Trigger to name it, and follow with Authenticity to state what you actually need. • This turns a potential explosion into a moment of vulnerability.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "Your partner says, \"I felt lonely when you stayed in the office all night.\" You immediately feel like they are calling you a \"bad spouse.\".",
+          steps: [
+            { front: "Healing the Shame Trigger — name the internal reaction.", back: "\"I’m hearing 'you’re a bad spouse,' and it’s triggering a lot of shame in me right now.\"" },
+            { front: "Healing the Shame Trigger — separate the identity from the behavior.", back: "\"I know you didn't say that, but I’m struggling not to get defensive. Can we pause for 60 seconds?\"" },
+            { front: "Authenticity Over Pleasing — state your actual need for reassurance.", back: "\"What I need to know right now is that you still see me as a good partner, even though I messed up the timing.\"." },
+          ]
+        },
+      ]
+    },
+  ],
+  toddv1: [
+    {
+      name: "The \"Open to Hook\" Sequence",
+      guideFront: "What they said, and the strategy to answer it with.",
+      guideBack: "One way it could sound.",
+      description: "Step 1: Statement Opener (get attention) -> Step 2: Narrating the Frame (establish value) -> Step 3: Open Loop (create intrigue). This sequence follows the \"Fred\" method: Focus, Relevance, Emotion, Decision.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You see a girl sitting alone at an outdoor cafe, looking elegant but bored.",
+          steps: [
+            { front: "Statement Opener — comment on her vibe.", back: "\"You have the most bubbly, elegant look about you. I had to meet you.\"" },
+            { front: "Narrating the Frame — they giggle and say \"Thank you.\"", back: "\"You're welcome. I thought you might be the girl to finally impress me today.\"" },
+            { front: "Open Loop — they ask \"Oh really? And how am I doing?\"", back: "\"Well, you're cute, but you also look like trouble. I'm not sure if I should love you or run away yet.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You see a group of three girls walking through a mall with many bags.",
+          steps: [
+            { front: "Statement Opener — address the leader.", back: "\"Excuse me, did you guys leave anything in the stores for the rest of us? I respect the hustle.\"" },
+            { front: "Open Loop — they laugh and stop.", back: "\"Wait, I just noticed something. Are you guys best friends? There's a reason I'm asking.\"" },
+            { front: "Narrating the Frame — they ask \"What reason?\"", back: "\"I'm just a boy from Queens living the dream, and I have a theory about groups like yours. I'm Todd.\"" },
+          ]
+        },
+      ]
+    },
+  ],
+  toddv2: [
+    {
+      name: "The \"Push-Pull Escalation\"",
+      guideFront: "What they said, and the strategy to answer it with.",
+      guideBack: "One way it could sound.",
+      description: "Step 1: Push-Pull (create tension) -> Step 2: Qualifying (test her investment) -> Step 3: Disqualification (remove pressure). This creates a cycle where she feels the \"pull\" of your interest, the \"push\" of your standards, and the \"uncertainty\" of the outcome.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You are talking to an attractive girl who is giving you a bit of the \"blase\" or acting slightly superior.",
+          steps: [
+            { front: "Push-Pull — compliment her look but add a spike.", back: "\"You have a very bubbly, elegant look... but you also look like you're a lot of trouble. I'm not sure about you.\"" },
+            { front: "Qualifying — she giggles and asks \"What do you mean?\"", back: "\"Well, you seem fun, but tell me: are you as adventurous as you look? I only hang out with cool girls.\"" },
+            { front: "Disqualification — she qualifies herself (\"I traveled to India alone!\").", back: "\"India? Okay, you get some points for that. But look, don't get any ideas—I'm not having sex with you tonight. I'm flying out early.\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "The \"Interviewer\" Frame",
+      guideFront: "What they said, and the strategy to answer it with.",
+      guideBack: "One way it could sound.",
+      description: "Step 1: The Neg (knock her off the pedestal) -> Step 2: Qualifying (screen for culture) -> Step 3: Push-Pull (reward investment). This sequence is designed for the \"10\" or the girl who is used to constant validation.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "A girl who is very well-dressed and seems used to guys trying to impress her.",
+          steps: [
+            { front: "The Neg — unintentional honesty about her style.", back: "\"I love that outfit. It's so cool that you're trying to bring the 'Mean Girls' look back.\"" },
+            { front: "Qualifying — she's shocked/amused; screen her.", back: "\"I'm curious though, behind all the designer labels... do you have a soul? What are you actually passionate about?\"" },
+            { front: "Push-Pull — she starts talking about her art/hobbies.", back: "\"You're an artist? That's amazing. I love creative people... although most of them are crazy, so we're probably not going to get along.\"" },
+          ]
+        },
+      ]
+    },
+  ],
+  toddv3: [
+    {
+      name: "The \"Blueprint Connection\" Sequence",
+      guideFront: "What they said, and the strategy to answer it with.",
+      guideBack: "One way it could sound.",
+      description: "Step 1: Cold Read (state your first impression) -> Step 2: Identify the Blueprint (guess her background/values) -> Step 3: Wide/Deep Rapport (pivot to emotion). This sequence helps you \"crack the iceberg\" of a polite, logical conversation.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You are talking to a girl who is being very polite but staying very logical and \"guarded\" about her life.",
+          steps: [
+            { front: "The Cold Read — make a guess about her vibe.", back: "\"You seem like the type of girl who was the 'smart one' in her group growing up. Always having to have the right answers.\"" },
+            { front: "Identifying the Blueprint — she giggles and says \"How did you know?\"", back: "\"I have a catalog in my head. You seem like you value intelligence and drive, but you're a little bit bored with the usual guys in this city.\"" },
+            { front: "Wide and Deep Rapport — ask a deep question based on that.", back: "\"So tell me, with all that ambition... what's the one dream you're still chasing that has nothing to do with your resume?\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You meet a girl who is dressed stylishly but has a very humble, friendly way of speaking.",
+          steps: [
+            { front: "Identifying the Blueprint — make a guess on her origin.", back: "\"I'm guessing you didn't grow up in this big, crazy city. You're too polite for that. Small town originally?\"" },
+            { front: "Grounding Stories — she says \"Yes, Ohio.\"", back: "\"I get it. I grew up in Colorado. I used to think I'd stay there forever until I realized I wanted a bigger show. Coming here was a huge adjustment.\"" },
+            { front: "Wide and Deep Rapport — pivot to how she feels.", back: "\"Ohio to here is a massive jump. What's the one thing you miss the most about the quiet life, and the one thing you'd never give up about being here?\"" },
+          ]
+        },
+      ]
+    },
+  ],
+  toddv4: [
+    {
+      name: "The \"Seeding to Closing\" Sequence",
+      guideFront: "What they said, and the strategy to answer it with.",
+      guideBack: "One way it could sound.",
+      description: "Step 1: False Time Constraint (lowers guard) -> Step 2: Seeding the Pull (plants the idea) -> Step 3: Assumptive Closing (executes the move). This sequence follows the natural logistical progression from the \"Middle Game\" to the \"Resolution.\"",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You've been talking to a girl for 15 minutes at a crowded bar. The vibe is good but the environment is distracting.",
+          steps: [
+            { front: "False Time Constraints — mention you have to leave soon.", back: "\"I have to meet my friends in about 20 minutes, but I'm really enjoying this.\"" },
+            { front: "Seeding the Pull — plant the seed of a quieter spot.", back: "\"I'd love to show you that rooftop lounge around the corner, but I don't think you're ready for that kind of view yet.\"" },
+            { front: "Assumptive Closing — she says \"Oh really? I love views.\"", back: "\"[ __ ] it, let's go check it out for ten minutes before I have to run. Sco.\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "The \"Vibe Save\" Sequence",
+      guideFront: "What they said, and the strategy to answer it with.",
+      guideBack: "One way it could sound.",
+      description: "Step 1: Emotional Spiking (re-establishes premise) -> Step 2: False Time Constraints (takes off pressure) -> Step 3: Seeding the Pull (tests for compliance). This sequence is used to rescue a set that has gone \"flat\" or boring.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You've been talking for 10 minutes and it feels like an interview. She's looking at her phone.",
+          steps: [
+            { front: "Emotional Spiking — use a polarizing statement.", back: "\"You're the most ridiculous girl I've met all night. I think I like you, but you also totally disgust me.\"" },
+            { front: "False Time Constraints — she giggles and puts the phone away.", back: "\"Look, I have to head off in a minute, but tell me something about you that isn't obvious.\"" },
+            { front: "Seeding the Pull — she qualifies herself.", back: "\"Okay, you're actually kind of cool. I might have to take you for that drink on Sunday after all. We'll see.\"" },
+          ]
+        },
+      ]
+    },
+  ],
+  toddv5: [
+    {
+      name: "The \"Group to Isolation\" Sequence",
+      guideFront: "What they said, and the strategy to answer it with.",
+      guideBack: "One way it could sound.",
+      description: "Step 1: Handling the Posse (win the friends) -> Step 2: The \"What Do I Want?\" Move (take the lead) -> Step 3: Passing Value Tests (hold the frame). This sequence moves you from the \"guy talking to a group\" to the \"leader taking the girl.\"",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You see a girl you like with three of her friends at a bar. They are all talking and laughing.",
+          steps: [
+            { front: "Handling the Posse — address the whole group.", back: "\"Wait, I just noticed something. Are you guys best friends? There's a reason I'm asking.\"" },
+            { front: "The \"What Do I Want?\" Move — they engage; lead the target.", back: "\"You guys are awesome, but I'm stealing your friend for two minutes to get a drink. We'll be right back.\"" },
+            { front: "Passing Value Tests — as you walk away, she says \"You're very assertive, aren't you?\"", back: "\"I'm glad you noticed. It's better than being a bumbling buffoon, right? I'm Todd.\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "The \"Friction to Connection\" Sequence",
+      guideFront: "What they said, and the strategy to answer it with.",
+      guideBack: "One way it could sound.",
+      description: "Step 1: Passing Value Tests (prove status) -> Step 2: Passing Comfort Tests (prove heart) -> Step 3: The \"What Do I Want?\" Move (execute desire).",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You are on a date with a very attractive girl who is being difficult and testing you constantly.",
+          steps: [
+            { front: "Passing Value Tests — she says \"I bet you're a player.\"", back: "\"If by that you mean I'm a guy with options who chose to be here with you, then yes. Very perceptive.\"" },
+            { front: "Passing Comfort Tests — she softens and says \"I just don't want to get hurt.\"", back: "\"I respect that. It's modest of you to think I could even hurt you yet. Let's just have a fun time and see where it goes.\"" },
+            { front: "The \"What Do I Want?\" Move — the tension is high; move for the close.", back: "\"I'm tired of this bar. Let's go check out the view on the rooftop nearby. Sco.\"" },
+          ]
+        },
+      ]
+    },
+  ],
 };

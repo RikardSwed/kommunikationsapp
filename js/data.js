@@ -6872,6 +6872,1538 @@ const collections = {
       ]
     },
   ],
+  danbacon1: [
+    {
+      name: "Playfully Challenging Humor",
+      guideFront: "Use this strategy to respond when...",
+      guideBack: "A possible response.",
+      description: "Use humor that playfully suggests the woman isn't quite your type or is \"trouble.\" Instead of sucking up to her or being on your best behavior, you show you are not 100% sold on her yet. This creates a \"man-to-woman\" dynamic where she feels the need to win your approval.\n\n**Why it works:** It breaks the \"Halo Effect\" where men place beautiful women on a pedestal. By playfully pushing her away, you demonstrate emotional independence and confidence. She gets to laugh and feel \"girly\" and feminine because you aren't afraid of her.\n\n**Typical phrases:** • \"I thought you were cool until you said that.\" • \"You're beautiful, but...\" • \"You seem like a bit of a troublemaker.\"\n\n**Under-categories:**\n\n1. **The Disqualifier:** Stating a playful reason why it won't work. Example: \"You like [Team]? Sorry, you've just been placed in the friend zone.\"\n2. **The \"Too Easy\" Label:** Accusing her of being too simple to figure out. Example: \"I bet I can guess your whole life story in two minutes.\"\n3. **The Hair/Style Swap:** Suggesting she needs to change a detail to please you. Example: \"You're pretty, but would you be open to dying your hair blonde?\"\n\n**Mindset:** \"I am the prize\". You are not a \"nice guy\" hoping for a chance; you are the one deciding if she is good enough for you.",
+      inputs: [
+        { q: "You meet a beautiful brunette and want to tease her about her look.", a: "\"You know, you're beautiful, but I don't normally date brunettes. Would you be open to dying your hair blonde?\"", bundle: 'free' },
+        { q: "She says she is into something you find \"nerdy\" or different (like astrology).", a: "\"Oh, you like that? I thought you were cute up until that point, but sorry—you've just been placed in the friend zone.\"", bundle: 'free' },
+        { q: "You've just met and want to establish that she might be \"too much\" for you.", a: "\"You seem like a bit of a troublemaker. I’m going to have to keep a close eye on you so you don't get me into trouble.\"", bundle: 'free' },
+        { q: "She asks what you do for a living and you want to avoid a boring talk.", a: "\"What do I do? Why are you asking silly questions like that? Come on, give me a better line than that. You're a boring girl, aren't you?\"", bundle: 'free' },
+        { q: "You want to tease her about a choice she made (like her drink or a movie).", a: "\"I liked you until you ordered that. Now I’m not so sure we can get along.\"", bundle: 'free' },
+        { q: "You want to use the \"I'm a gentleman\" frame to tease her.", a: "\"Look, we can hold hands, but no kissing, alright? I don't move that fast. You're going to have to wine and dine me a little bit more.\"", bundle: 'pro' },
+        { q: "She is acting a bit \"cool\" or distant.", a: "\"You have a real scowl on your face. You look like you'd be a really mean receptionist. Are you always this grumpy?\"", bundle: 'pro' },
+        { q: "You want to challenge her capability in a fun way.", a: "\"You look stylish and smart, but I bet there’s something you can’t do. Can you arm wrestle? Come on, let’s go.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Misinterpreting Intent",
+      guideFront: "Use this strategy to respond when...",
+      guideBack: "A possible response.",
+      description: "Playfully assume that the woman is hitting on you, trying to seduce you, or obsessing over you when she asks a standard question or makes a neutral comment. You \"flip the script\" so that you are the one being pursued.\n\n**Why it works:** It removes the pressure of you \"chasing\" her and puts her in the position of having to defend herself or play along with the flirtation. It creates an immediate sexual spark and shows you are confident enough to joke about her wanting you.\n\n**Typical phrases:** • \"Are you hitting on me?\" • \"Stop undressing me with your eyes.\" • \"You're very forward, aren't you?\"\n\n**Under-categories:**\n\n1. **The Date Assumption:** Turning a question about your status into a date request. Example: \"Do you have a girlfriend?\" -> \"Why, you want to take me out?\"\n2. **The \"Eyes\" Reframe:** Accusing her of looking at you inappropriately. Example: \"I've seen the way you've been looking at me. Settle down.\"\n3. **The Compliment Reversal:** Treating her \"nice guy\" comment as flattery. Example: \"You're nice.\" -> \"Flattery will get you nowhere, but keep going.\"\n\n**Mindset:** \"Assume she wants me\". Every interaction is an attempt by her to get closer to you.",
+      inputs: [
+        { q: "She asks the standard question: \"So, do you have a girlfriend?\"", a: "\"Why, do you want to take me out on a date? Look, if you want to wine and dine me, just be direct and ask. Don't be so shy.\"", bundle: 'free' },
+        { q: "She tells you, \"You're a really nice guy.\"", a: "\"Flattery will get you nowhere, girl! But go ahead, keep going with the compliments. What else do you like about me?\"", bundle: 'free' },
+        { q: "You catch her looking at you from across the room or at the table.", a: "\"I've seen the way you've been looking at me. You've been undressing me with your eyes. You're actually very forward, aren't you?\"", bundle: 'free' },
+        { q: "She asks what you've been up to lately and you want to be \"mysterious.\"", a: "\"I don't know if I can tell you, actually. You seem a little bit innocent. I don't know if you could handle it.\"", bundle: 'free' },
+        { q: "She asks if you are \"always this smooth.\"", a: "\"Stop it, you're making me blush. You're totally trying to seduce me right now, aren't you?\"", bundle: 'free' },
+        { q: "She accidentally stumbles or touches your arm.", a: "\"So you're throwing yourself at me now? Geez, settle down girl! I'm a gentleman.\"", bundle: 'pro' },
+        { q: "She asks for your phone number or social media.", a: "\"Woah, slow down! We just met. Are you one of those clingy girls that has to monitor a guy all the time?\"", bundle: 'pro' },
+        { q: "She asks if you pick up girls all the time.", a: "\"I'm actually a bit disappointed in you for asking such a cliché line. You can do better than that, come on.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Making Fun of Her Answers",
+      guideFront: "Use this strategy to respond when...",
+      guideBack: "A possible response.",
+      description: "Break the \"logical interview\" mode by playfully mocking or labeling the answers she gives to your questions. Instead of saying \"That's interesting,\" you give her a hard time about her profession, hobbies, or habits.\n\n**Why it works:** Standard questions make a woman feel neutral. Making fun of her answers displays social intelligence and the ability to make her laugh. It creates \"up and down\" moments in the conversation that keep her \"awake\" and emotionally engaged.\n\n**Typical phrases:** • \"That makes sense, you look like a [Label].\" • \"I wouldn't want you as my [Profession].\" • \"Anyone can pass that.\"\n\n**Under-categories:**\n\n1. **The \"Doesn't Look Like It\" Move:** Doubting her expertise. Example: \"You don't look like a painter. Come on, you don't paint.\"\n2. **The \"Mean\" Label:** Assigning a negative trait to a helpful job. Example: \"A nurse? So you like hurting people with syringes?\"\n3. **The Skill Dismissal:** Calling her difficult degree \"easy.\" Example: \"Medicine? That's easy. Anyone can get a degree in that.\"\n\n**Mindset:** \"Don't be mr. plain\". A straightforward conversation has no spark; adding friction creates the fire.",
+      inputs: [
+        { q: "You ask her what she does and she says she is a \"nurse.\"", a: "\"A nurse? Oh, so you like hurting people then. I can see it now: 'Excuse me, Mr. Patient, I'm going to insert the syringe and it might hurt a bit.' You'd be a mean nurse.\"", bundle: 'free' },
+        { q: "She tells you she goes to the gym and works out.", a: "\"Going to the gym, huh? How much can you lift? Show me your biceps. [She flexes] Oh, you don't even have any muscles! You're a little weakling, aren't you?\"", bundle: 'free' },
+        { q: "She says she works as an \"accountant.\"", a: "\"An accountant? Now that makes sense. You did seem kind of nerdy. Where’s your calculator?\"", bundle: 'free' },
+        { q: "You ask what she did on the weekend and she says \"nothing much.\"", a: "\"Nothing much? Geez, you live a boring life, don't you? I thought you were one of the cool kids.\"", bundle: 'free' },
+        { q: "She mentions she studied \"Engineering\" or another difficult subject.", a: "\"Engineering? That’s easy. Anyone can pass that. Why didn't you study something more difficult that would actually use your brain?\"", bundle: 'free' },
+        { q: "She says she likes \"painting\" or a specific creative hobby.", a: "\"You don't look like a painter. You're not a painter—come on, you don't paint! Show me some of your paintings or I don't believe you.\"", bundle: 'pro' },
+        { q: "She tells you she is a \"teacher.\"", a: "\"A teacher? I’d hate to have you as a teacher. You seem like you’d be the mean, strict type who gives out too much homework.\"", bundle: 'pro' },
+        { q: "She says she works in \"IT.\"", a: "\"Oh, so you're an IT nerd then? You want to come home and write computer code with me? You don't look like you can write code.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Statement-Question Combo",
+      guideFront: "Use this strategy to respond when...",
+      guideBack: "A possible response.",
+      description: "Before asking a woman a question, lead with an opening statement that expresses your opinion, vibe, or personality. This gives her information to work with and avoids making the conversation feel like a one-way interrogation.\n\n**Why it works:** A question by itself \"hands the other person a job.\" If she is shy or not yet attracted, she will give short answers. A statement proves you have a personality and are confident enough to share your perspective without seeking permission.\n\n**Typical phrases:** • \"I'm loving the [Vibe/Music] here... How about you?\" • \"I've been busy with [Activity]... What have you been up to?\" • \"It's good to finally meet you... My friend said you're into [Topic].\"\n\n**Under-categories:**\n\n1. **The Vibe Statement:** Commenting on the environment. Example: \"I'm loving the vibe here. What do you think of the music?\"\n2. **The Personal Lead:** Sharing your own status first. Example: \"I'm out with friends relaxing. What brings you out tonight?\"\n3. **The Challenge Statement:** Leading with a playful label. Example: \"You look like a [Name]. Does that name suit you?\"\n\n**Mindset:** \"Help her into the conversation\". Give first, ask later.",
+      inputs: [
+        { q: "You want to ask what she thinks of the bar/venue you are in.", a: "\"I'm really loving the vibe in here tonight. This place is cool. How about you? What do you think of the music?\"", bundle: 'free' },
+        { q: "You want to ask what she has been up to lately.", a: "\"Lately I’ve been busy with work and catching up with friends. How about yourself? What have you been up to?\"", bundle: 'free' },
+        { q: "You are at university and want to find out her major.", a: "\"I've got a few more months left on my engineering degree. It's been a challenge, but I've enjoyed it. What about you? Still early on or nearly done?\"", bundle: 'free' },
+        { q: "You are talking to a co-worker you haven't met properly yet.", a: "\"I work on the eighth floor in accounting. It's been a hectic week. How about you? What floor are you on?\"", bundle: 'free' },
+        { q: "You want to ask her name in a more interesting way.", a: "\"You look like a 'Jenny.' That name suits you. Am I right? What is your name?\"", bundle: 'free' },
+        { q: "You are about to ask what she is drinking.", a: "\"I've gone for a Jameson and soda for my first drink. How about yourself? What are you drinking?\"", bundle: 'pro' },
+        { q: "You've heard something about her and want to confirm it.", a: "\"It's good to finally meet you. I've seen you around but haven't had a chance to chat. My friend Susie said you're really into hiking—is that true?\"", bundle: 'pro' },
+        { q: "You want to give a compliment followed by a challenge.", a: "\"I really like your style; you know how to dress. But are you always this stylish? Do you wear stylish pajamas too?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Unexpected Reactions",
+      guideFront: "Use this strategy to respond when...",
+      guideBack: "A possible response.",
+      description: "Add a bit of silliness, playfulness, or \"ballsiness\" to your reactions instead of always being straightforward and serious. This involves risking a response that might \"turn her off\" or shock her slightly to stand out from predictable \"nice guys.\"\n\n**Why it works:** Predictable guys are on their \"best behavior,\" which women find boring. An unpredictable guy shows he is confident and not worried about her reaction. This creates a spark because she never knows what you will do next.\n\n**Typical phrases:** • \"I don't know if I can tell you...\" • \"I'm a gentleman, you do it.\" • \"Actually, this is a boring topic.\"\n\n**Under-categories:**\n\n1. **The Playful Disagreement:** Sticking to your guns when she dislikes something you love. Example: \"I thought you were cool until you said you don't like the UFC.\"\n2. **The Role Reversal:** Making her perform the \"gentlemanly\" tasks. Example: \"I'll allow you to buy me a drink first. Ladies first!\"\n3. **The \"Wait, I'm Joking\" Fake-out:** Pretending to be serious or disappointed before laughing. Example: \"Wait, I said interesting!\"\n\n**Mindset:** \"Follow the 80/20 rule\". 80% normal/confident, 20% unpredictable/silly.",
+      inputs: [
+        { q: "Your food arrives on a date and you want to create a quick spark.", a: "\"[Look at the plate with a puzzled face, take a bite, then smile] This is very good! I love this view. How about you?\"", bundle: 'free' },
+        { q: "She asks you to buy her a drink.", a: "\"Well, since I'm such a gentleman, I'll allow you to buy me one first. Ladies first, as they say!\"", bundle: 'free' },
+        { q: "She asks what you've been up to and you want to be \"ballsy.\"", a: "\"What are you, working with the FBI? Are you undercover? Look, I'm clean! I'm a good guy now. [Laugh] Just kidding.\"", bundle: 'free' },
+        { q: "She tells you she doesn't like something you are passionate about (like the UFC).", a: "\"I thought you were cool up until that point. [Laugh] So what do you watch instead? Romantic movies? Boring!\"", bundle: 'free' },
+        { q: "You are at the door of a restaurant with her.", a: "\"[Stop at the door and look at her] Well, you can open the door for me! [Laugh] No, no, alright—in you go. I'm a gentleman.\"", bundle: 'free' },
+        { q: "She mentions she is going to the gym and eating healthy.", a: "\"Wait... I asked if you'd been up to anything _interesting_ lately. Going to the gym? So you're a boring girl then? [Laugh] Just kidding.\"", bundle: 'pro' },
+        { q: "You want to end a boring topic abruptly.", a: "\"Actually, this is a boring topic. Let’s talk about something more dangerous instead. What’s the most rebellious thing you’ve done?\"", bundle: 'pro' },
+        { q: "You are walking out of a restaurant and she is close to you.", a: "\"Look, we can hold hands, but no kissing tonight. I'm not that easy. You're going to have to wine and dine me more.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  danbacon2: [
+    {
+      name: "Conveying High Social Status",
+      guideFront: "Use this strategy to respond when...",
+      guideBack: "A possible response.",
+      description: "High social status is conveyed through how you talk and behave, not just your money or career. It is the ability to communicate that you feel equal to or cooler than the woman you are interacting with. By adjusting your greeting, tonality, and body language to be relaxed and expectant, you trigger a woman's attraction instincts for a man who commands a high position.\n\n**Why it works:** Women are attracted to potential future success and the likelihood of a man being high-status. When you speak as if you don't feel unworthy, it signals that you are one of the \"leaders of men.\" This avoids the \"outsider\" vibe that kills attraction.\n\n**Typical phrases:** • \"Hi, how you doing? I'm Dan.\" • \"Interesting. How long have you been doing that?\" • \"Get off your butt, let's go get something to eat.\"\n\n**Under-categories:**\n\n1. **The High-Status Greeting:** Using a relaxed, assertive \"how are you doing\" rather than a timid \"excuse me.\"\n2. **The Judgmental Inquiry:** Asking about her life in a way that suggests you are evaluating her, not being interviewed.\n3. **Dominant Leadership:** Playfully telling her to take action (e.g., get up) rather than asking for permission.\n\n**Mindset:** \"I am more than good enough for the majority of women I meet.\"",
+      inputs: [
+        { q: "You want to start a conversation with a couple of women you find attractive.", a: "\"Oh hi, how you doing? I thought I’d come over and say hi. I’m Dan. What are your names?\" (High Status)", bundle: 'free' },
+        { q: "You are starting a conversation and want to avoid the \"Low Status\" apologetic tone.", a: "\"Hey, how's it going? I noticed you from over there and had to come meet you.\"", bundle: 'free' },
+        { q: "You ask a woman what she does for a living and want to sound judgmental in a high-status way.", a: "\"So what do you do for a living? [She answers] Interesting... and how long have you been doing that?\"", bundle: 'free' },
+        { q: "You are hungry and want to suggest going to eat in a dominant, high-status way.", a: "\"Hey you, I'm hungry. Get off your butt, let's go get something to eat. Come on, let's go.\"", bundle: 'free' },
+        { q: "You want to convey that you are not intimidated by her beauty.", a: "\"You're a pretty girl, but come on—you're not _that_ pretty. Settle down.\"", bundle: 'free' },
+        { q: "You want to use the \"Equal Status\" greeting to test the waters.", a: "\"Oh hi, I thought I’d come over and say hi. I’m Dan. What’s your name?\"", bundle: 'pro' },
+        { q: "You want to lead the interaction by setting the pace of the walk.", a: "\"Let's walk this way. There's a spot over here that's much better for a chat.\"", bundle: 'pro' },
+        { q: "She asks what you've been up to and you want to sound high-status.", a: "\"Lately I’ve been busy with some big projects and catching up with friends. How about yourself? What brings you out?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Passing Confidence Tests",
+      guideFront: "Use this strategy to respond when...",
+      guideBack: "A possible response.",
+      description: "Women test a man’s confidence by saying or doing things to put him on the spot, such as criticizing his style or acting bored. Passing the test means remaining calm, non-reactive, and playful. You prove you are \"Teflon\"—nothing she says can penetrate your self-esteem or make you crumble.\n\n**Why it works:** If you fear her reaction, she won't feel attraction. By not getting angry or nervous when she \"scolds\" you, you prove you are an emotionally strong man. This makes her feel safe and protected because she knows you can handle pressure.\n\n**Typical phrases:** • \"You're just jealous because I look handsome today.\" • \"It's true, I'm a total dork. What was I thinking?\" • \"If you want wine and dine me, just ask direct. Don't be shy.\"\n\n**Under-categories:**\n\n1. **The Fashion Scold:** Handling criticism of your clothes or hair with humor.\n2. **The \"Player\" Accusation:** Playfully challenging her for using a \"cliché line\" when she asks if you're a player.\n3. **The Intent Reframe:** Assuming her \"mean\" comment is actually a sign she is hitting on you.\n\n**Mindset:** \"Risk the immediate pain of an awkward moment to prove your strength.\"",
+      inputs: [
+        { q: "She criticizes your shirt: \"I don't like your shirt. It's a weird color.\"", a: "\"Whatever! You're just jealous because I look handsome today and you don't look very good. [Laugh] Just kidding.\"", bundle: 'free' },
+        { q: "She calls you a nerd: \"Oh, so you work in IT? You're an IT nerd then.\"", a: "\"No, I'm a smart man who understands computer code. You're just jealous because it's too difficult for you! You're not smart enough.\"", bundle: 'free' },
+        { q: "She asks a challenging question: \"Do you say that to all the girls?\"", a: "\"I'm actually a bit disappointed you’d use such a cliché line on me. You seem smarter than that. Come on, try again.\"", bundle: 'free' },
+        { q: "She asks how many women you have slept with to see if you panic.", a: "\"[Smile] How many women? I don't know, zero. I'm a virgin—can't you tell?\"", bundle: 'free' },
+        { q: "She pretends to lose interest and checks her phone while you talk.", a: "\"[Wait for second check] No, no one sent you a message. No one cares about you! [Laugh] Put that thing away.\"", bundle: 'free' },
+        { q: "She asks \"Are you going to buy me a drink?\" as a test of your status.", a: "\"Well, since I'm such a gentleman, I'll allow you to buy me one first. Ladies first, as they say!\"", bundle: 'pro' },
+        { q: "She says you are annoying.", a: "\"I'm glad I stand out. I'd much rather be annoying than a 'Mr. Plain' like every other guy.\"", bundle: 'pro' },
+        { q: "You are on a date and she says \"I don't do one-night stands\" to see if you get defensive.", a: "\"Cool, I'm just here for a conversation anyway. Let's slow this way down, you're moving too fast for me.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Flipping the Script",
+      guideFront: "Use this strategy to respond when...",
+      guideBack: "A possible response.",
+      description: "Instead of handing over the power and hoping to be \"accepted\" by her, you take on the role of the judge and selector. You playfully judge her answers or background to make her feel the need to impress you. This flips the dynamic so she is the one seeking validation.\n\n**Why it works:** Attractive women are used to guys sucking up to them. When you act as the \"selector,\" you stand out as a rare, high-value guy who doesn't put her on a pedestal. She begins to wonder how she can win _your_ approval.\n\n**Typical phrases:** • \"Ah, it all makes sense now. You're the youngest, aren't you?\" • \"You ask the most boring questions. Where did you get that line?\" • \"I thought you were cool until you said you like that music.\"\n\n**Under-categories:**\n\n1. **The Sibling Profile:** Guessing her role in the family (bratty sister/boring older sister) to \"explain\" her behavior.\n2. **The Interrogation Reversal:** Playfully mocking her standard questions (e.g., \"What do you do?\") as boring.\n3. **The Style Challenge:** Questioning if she is \"always this stylish\" or just \"trying to impress you.\"\n\n**Mindset:** \"I am the prize. She is the lucky girl who gets to be with me.\"",
+      inputs: [
+        { q: "You ask if she has siblings and she says she's the youngest.", a: "\"Ah, it all makes sense now. You have that bratty little sister vibe about you. You were a little brat when you were young, weren't you?\"", bundle: 'free' },
+        { q: "She mentions she is a \"goody two-shoes\" older sister.", a: "\"The boring older sister? Always the goody two-shoes. Come on, you need to lighten up and have some fun for once.\"", bundle: 'free' },
+        { q: "She asks a standard question: \"So, what do you like to do on the weekends?\"", a: "\"You ask the most boring questions! Where did you get that? It sounds like an article from 'Top 10 Tips for talking to your crush'.\"", bundle: 'free' },
+        { q: "She tells you her hobby is painting.", a: "\"[Look her up and down] You don't look like a painter. You're not a painter—come on, you don't paint! [Wait for laugh] Alright, show me some proof.\"", bundle: 'free' },
+        { q: "She asks if you have a girlfriend.", a: "\"Why, you want to take me out? Look, if you want to wine and dine me, just be direct and ask. Don't be so shy.\"", bundle: 'free' },
+        { q: "You want to use a \"spotlight\" reversal when she asks your age.", a: "\"My age? It's the same number as your IQ score... 22. Somewhere between zero and 100.\"", bundle: 'pro' },
+        { q: "You want to playfully judge her taste in music.", a: "\"Really? You like that singer? You dork! I thought you were cool up until that point. You disappoint me.\"", bundle: 'pro' },
+        { q: "You catch her looking at you repeatedly.", a: "\"I've seen the way you've been looking at me. You're undressing me with your eyes! You're actually very forward, aren't you? Settle down.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Avoiding Self-Qualification",
+      guideFront: "Use this strategy to respond when...",
+      guideBack: "A possible response.",
+      description: "Avoiding the urge to raise your value in her eyes by bragging about possessions, achievements, or \"explaining away\" bad behavior. When you try to build yourself up, you actually look lower value because you signal that you don't feel \"good enough\" as you are.\n\n**Why it works:** Women sense when a guy is putting on an act to impress them. True confidence is being your authentic self without needing to show off your resume or your car. If you stop trying to raise your value, she won't feel \"too good\" for you.\n\n**Typical phrases:** • \"I don't kiss and tell.\" • \"That's easy. Anyone can do that.\" • \"I'm just a normal guy, no need for the song and dance.\"\n\n**Under-categories:**\n\n1. **Resisting the Brag:** Not mentioning money or status items to \"win her over.\"\n2. **The Achievement Dismissal:** Playfully calling your own or her difficult achievements \"easy\" to lower the seriousness.\n3. **No-Apology Authenticity:** Not \"explaining\" yourself when you make a mistake or show a flaw.\n\n**Mindset:** \"My personality and confidence are my value, not my resume.\"",
+      inputs: [
+        { q: "She complains about how \"all guys are jerks\" and you want to prove you're different.", a: "[Avoid saying \"I'm not like that\"] \"Yeah, some guys are Pricks. But anyway, what's the most rebellious thing you've done lately?\" (Maintain Frame)", bundle: 'free' },
+        { q: "You feel the urge to mention your expensive car or new promotion.", a: "[Say nothing about it. Focus on the vibe and making her feel girly.]", bundle: 'free' },
+        { q: "She asks about your career and you want to avoid sounding like a \"try-hard.\"", a: "\"I work in [Field]. It's a hectic week. But enough about the boring stuff—tell me your story.\"", bundle: 'free' },
+        { q: "She asks how many girls you've been with.", a: "\"Sorry, I don't kiss and tell. A gentleman has to have some secrets, doesn't he?\"", bundle: 'free' },
+        { q: "You made a minor mistake and feel the need to explain yourself.", a: "[Accept it and joke] \"Yeah, that was me being silly. I'm a beginner at this 'being cool' thing. Cut me some slack!\"", bundle: 'free' },
+        { q: "She mentions she studied Engineering and you want to avoid looking \"impressed.\"", a: "\"Engineering? That’s easy. Anyone can pass that. Why didn't you study something more difficult that would use your brain?\"", bundle: 'pro' },
+        { q: "You want to stop her from \"pitying\" you after a rejection.", a: "\"Rejection is part of the process. I'm just getting my practice in so I can handle a woman like you.\"", bundle: 'pro' },
+        { q: "She asks if you pick up girls all the time.", a: "\"I'm clean! I'm a good guy now. [Laugh] Just kidding. Why? Are you one of those clingy girls who needs to monitor a guy?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The \"You Can't Tame Me\" Impression",
+      guideFront: "Use this strategy to respond when...",
+      guideBack: "A possible response.",
+      description: "Communicating that you are not instantly smitten, domesticated, or ready for a committed relationship just because she is attractive. You show her that she hasn't won you over yet and must continue to charm and impress you to keep your interest.\n\n**Why it works:** Pretty women are used to men falling in love instantly. A guy who is \"not easily tamed\" is a challenge, which is exciting for her. It makes the moments when you _do_ show affection (like holding her hand) feel earned and special.\n\n**Typical phrases:** • \"We can hold hands, but no kissing. I don't move that fast.\" • \"You're going to have to wine and dine me a little bit more.\" • \"I'm not sure if I should trust you yet.\"\n\n**Under-categories:**\n\n1. **The Physical Barrier:** Setting a playful limit on physical contact to make her chase.\n2. **The \"Wine and Dine\" Reversal:** Acting like she is the one who needs to court you.\n3. **The Mixed Signal:** Showing interest but letting her sense you could lose interest if she becomes boring.\n\n**Mindset:** \"She has to turn on her charm to win me over.\"",
+      inputs: [
+        { q: "You are walking out of a restaurant and she is walking close to you.", a: "\"Look, we can hold hands, but no kissing tonight. I don't move that fast—you're going to have to wine and dine me more.\"", bundle: 'free' },
+        { q: "She asks for your phone number.", a: "\"Woah, slow down! We just met. Are you one of those clingy girls that has to monitor a guy all the time?\"", bundle: 'free' },
+        { q: "You want to show you can lose interest if she becomes boring.", a: "\"[When she tells a boring story] Really? ... Okay. [Shift body language away] Tell me something more dangerous instead.\"", bundle: 'free' },
+        { q: "You want to indicate she hasn't won you over yet.", a: "\"You seem cool, but the jury is still out. I'm not sure if I can trust you not to get me into trouble.\"", bundle: 'free' },
+        { q: "She touches your arm or chest during a talk.", a: "\"So you're throwing yourself at me now? Geez, settle down girl! I'm a gentleman.\"", bundle: 'free' },
+        { q: "You want to use the \"Ice Cream\" level-up to move toward a date.", a: "\"Okay, you've leveled up as a friend. Now you need to take me out for ice cream. If you're a good girl, I might let you buy me one.\"", bundle: 'pro' },
+        { q: "You want to signal you're not ready for a \"Relationship Frame\" after sex.", a: "\"That was great. But don't start saying 'I love you' yet—you've still got to impress me more.\"", bundle: 'pro' },
+        { q: "She asks what you are doing later.", a: "\"Wouldn't you like to know? You've got a wild imagination, girl. I'm busy, but maybe I'll see you Sunday if you behave.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  danbacon3: [
+    {
+      name: "Lovingly Expecting More",
+      guideFront: "Use this strategy to respond when...",
+      guideBack: "A possible response.",
+      description: "Approach your relationship by assuming your woman wants to be good to you. Instead of demanding behavior or doing everything yourself to \"avoid trouble,\" you ask her to do small things for you and reward her when she does. If she refuses, you remain calm and non-reactive, showing that she is the one \"missing out\" on the good feeling of being attentive.\n\n**Why it works:** It \"flicks on\" her desire to be a good girl for a man she respects. When you don't get angry or sulk after a refusal, you prove your emotional strength. When she finally complies and you reward her with affection, she associates being good to you with a rush of sexual attraction and happiness.\n\n**Typical phrases:** • \"Hey honey, can you go make me a coffee? Thanks.\" • \"Nice, now we're talking. I knew the loving you was in there somewhere.\" • \"I appreciate you doing that. Come here.\"\n\n**Under-categories:**\n\n1. **The Gentle Ask:** Requesting a small favor without making it a big deal. Example: \"Can you grab me the sugar? Thanks.\"\n2. **The \"Wait and See\" Reframe:** Handling a refusal by doing it yourself calmly, then asking again later to give her another chance to be \"good.\"\n3. **The Affectionate Reward:** Using a kiss, a hug, or a playful spank to reinforce her compliance.\n\n**Mindset:** \"I expect her to be good to me because I am a good man, and she loves how it feels to be my girl.\"",
+      inputs: [
+        { q: "You are sitting on the couch and want a coffee, but she is on her phone.", a: "\"Hey honey, can you go make me a coffee? Thanks.\"", bundle: 'free' },
+        { q: "You asked for a coffee and she said \"make it yourself.\"", a: "\"Okay cool, I'll make it myself then. [Go do it without sulking or complaining]\"", bundle: 'free' },
+        { q: "It's the second time you've asked for a coffee tonight and she finally says \"fine\" and gets up.", a: "\"Nice! Now we're talking. I knew that loving side of you was in there somewhere. Get in there and make me that coffee.\"", bundle: 'free' },
+        { q: "She brings you the drink you asked for.", a: "\"[Stand up, give her a quick kiss or a playful spank] Thank you babe. You're a good woman.\"", bundle: 'free' },
+        { q: "You are at lunch and want her to clear the table.", a: "\"I'm going to head to the restroom real fast. Can you put all this in the bin and I'll catch you outside? Thanks.\"", bundle: 'free' },
+        { q: "You want her to show more effort in her appearance for a date.", a: "\"You look great, but I love it when you wear that red dress. Wear that for me tonight—I want to show you off.\"", bundle: 'pro' },
+        { q: "She did something nice for you that is out of character.", a: "\"[Just smile and take it] Thanks honey. [Get back to what you were doing to keep the reward unpredictable]\"", bundle: 'pro' },
+        { q: "You want to test if she'll cook for you after being \"just friends\" for a while.", a: "\"We've been hanging out for months and you haven't even invited me over to cook me dinner. What sort of friend are you?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Addressing Bad Behavior",
+      guideFront: "Use this strategy to respond when...",
+      guideBack: "A possible response.",
+      description: "Directly giving feedback when she behaves disrespectfully, irritably, or short-tempered. You don't get angry, yell, or \"get revenge.\" Instead, you stay calm and explain that her current behavior isn't \"cool\" and doesn't match the great woman you know she is.\n\n**Why it works:** It makes her accountable for her emotions. By maintaining your cool, you create a clear contrast between her \"drama\" and your masculine stability. She will later replay the scene and realize she was out of line, increasing her respect for your strength.\n\n**Typical phrases:** • \"Hey, that wasn't cool. You're usually a great woman, but that? No.\" • \"I'm disappointed with you. I know you can be a much better girl than you're being right now.\" • \"Just because it's that time of the month, it's not a free pass to start being a pain in the butt.\"\n\n**Under-categories:**\n\n1. **The Character Contrast:** Reminding her she is usually \"good\" while calling out the current \"bad\" behavior.\n2. **The Mature Boundary:** Setting limits on tantrums or hormonal moodiness without being intimidated.\n3. **The Silent Replay:** Giving her space after the feedback to let her realize her mistake on her own.\n\n**Mindset:** \"I am not intimidated by her tantrums. I am the leader of the relationship, and I expect respect.\"",
+      inputs: [
+        { q: "She snaps at you or speaks to you in a rude, disrespectful tone.", a: "\"Hey, that wasn't cool. You're usually a great woman, but talking to me like that? No, I don't like it.\"", bundle: 'free' },
+        { q: "She is starting an argument for no reason or being \"moody.\"", a: "\"I'm disappointed in you right now. I know you can be a much better girl than you're being. That behavior isn't cool.\"", bundle: 'free' },
+        { q: "She tries to use her period as an excuse to yell at you.", a: "\"I understand you're going through a lot, but it's not a free pass to be a pain in the butt and scream at me. Try your best to control it.\"", bundle: 'free' },
+        { q: "She is throwing a tantrum or getting \"worked up\" over something small.", a: "\"[Smile or laugh lovingly] Look at you getting all worked up. You're such a nutcase. Come on, let's go.\"", bundle: 'free' },
+        { q: "You noticed she improved her behavior after you gave her feedback.", a: "\"Thanks honey. I appreciate that you're not reacting the way you used to. That's much better.\"", bundle: 'free' },
+        { q: "She complains about a minor rule you have (like not squeezing her butt).", a: "\"Whatever! I tell you what: from now on, all you're getting is butt squeezes from me. Come here.\"", bundle: 'pro' },
+        { q: "She threatens to break up because you didn't follow one of her \"ridiculous rules.\"", a: "\"Imagine that. You go tell your friends we broke up and they ask why, and you say: 'He squeezed my butt!' Absolutely ridiculous.\"", bundle: 'pro' },
+        { q: "She tries to make her bad mood \"your fault.\"", a: "\"[Stay calm and silent] I'm not getting dragged into this drama. Let's talk when you're being a good girl again.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Emotional Independence",
+      guideFront: "Use this strategy to respond when...",
+      guideBack: "A possible response.",
+      description: "Being a man who does not rely on his woman for emotional support, reassurance, or a \"pat on the back\" to feel okay. You handle your own stress, \"crappy days,\" and insecurities internally rather than bringing them home and dumping them on her.\n\n**Why it works:** Women feel safe and protected by an emotionally strong man who has his \"stuff together.\" When you don't need her attention to feel worthy, it triggers her desire to provide that attention to feel needed and important in your life. It prevents her from feeling like a \"mother figure\" or \"big sister.\"\n\n**Typical phrases:** • \"I had a hectic day, but enough about that. Tell me your story.\" • \"I'm fine. I don't need a hug, I need a beer. Want one?\" • \"I'm in control of my own confidence. I don't need you to be nice to me all the time.\"\n\n**Under-categories:**\n\n1. **The Non-Needy Response:** Answering questions about your day without venting or seeking sympathy.\n2. **Independent Confidence:** Feeling worthy and secure even when she is being \"aloof\" or \"difficult.\"\n3. **Internal Processing:** Managing stress through your own purpose and goals rather than relationship talk.\n\n**Mindset:** \"I am a strong man. I don't need her to hold my hand through every problem; I provide the stability for both of us.\"",
+      inputs: [
+        { q: "You had a terrible day at work and she asks \"How was your day?\"", a: "\"It was a bit of a hectic one, but I've handled it. Anyway, how was _your_ day? Tell me what you've been up to.\"", bundle: 'free' },
+        { q: "You are feeling stressed and the old you would have asked for a \"comfort hug.\"", a: "\"[Process it yourself] I'm going to hit the gym for an hour to clear my head, then let's relax and watch that movie.\"", bundle: 'free' },
+        { q: "She is acting distant or \"checking out\" to see if you'll panic.", a: "\"[Remain relaxed and confident] No worries. I'm going to catch up on some work. Let me know when you're ready to be fun again.\"", bundle: 'free' },
+        { q: "You are tempted to ask her \"Do you still love me?\" or \"Are we okay?\"", a: "\"[Stop yourself] I know I'm good enough for her. I don't need her reassurance to know my value.\"", bundle: 'free' },
+        { q: "She asks if you are \"serious\" about her after a few months.", a: "\"I'm enjoying getting to know you. But let's take it slow—I'm not the type to get tamed that easily.\"", bundle: 'free' },
+        { q: "You feel like you're losing power in the relationship and want to \"chase\" her.", a: "\"[Ask yourself: What is my purpose today?] I'm focusing on my goals. She can join my journey if she behaves well.\"", bundle: 'pro' },
+        { q: "She says \"You're so cold\" because you aren't venting your feelings.", a: "\"I'm not cold, I'm just a man. I handle my business so we can enjoy our time together. Now, get over here.\"", bundle: 'pro' },
+        { q: "You're on a date and she's giving \"mixed signals.\"", a: "\"She's here with me, so she's attracted. I'm not going to doubt myself just because she's being a bit feisty.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "General Leadership",
+      guideFront: "Use this strategy to respond when...",
+      guideBack: "A possible response.",
+      description: "Taking responsibility for the direction and \"vibe\" of the relationship without becoming a micromanager. You provide the framework (the \"what\" and \"where\"), but you allow her to make specific decisions and do some of the work so she feels involved and invested.\n\n**Why it works:** A woman wants to follow a man's lead, not \"carry him throughout life\" like a mother. By providing general leadership, you allow her to relax into her feminine role. She feels lucky to have a man who has a plan and gives his \"approval\" for the direction they are taking.\n\n**Typical phrases:** • \"I'm not in the mood for Japanese. What else can you think of?\" • \"You really seem set on Italian. Let's do it. What's the best thing on the menu?\" • \"Get off your butt, let's go get something to eat. Come on.\"\n\n**Under-categories:**\n\n1. **The Approval Move:** Letting her choose but maintaining the role of the one who says \"yes.\"\n2. **The \"Sco\" Lead:** Telling her to move (e.g., to a restaurant) rather than asking permission.\n3. **The Task Delegation:** Handing over responsibility for specific plans (like a holiday) to her.\n\n**Mindset:** \"I am the captain of this ship. She is a valued member of the crew, but I set the course.\"",
+      inputs: [
+        { q: "You are both hungry and she asks \"What should we eat?\"", a: "\"I'm in the mood for something hearty. What's that place you mentioned last week? Let's check the menu for that.\"", bundle: 'free' },
+        { q: "She suggests a restaurant you don't really like.", a: "\"I'm not really in the mood for that tonight. What's your second favorite option? Win me over with a better one.\"", bundle: 'free' },
+        { q: "She is set on a specific choice and you decide to \"make an exception.\"", a: "\"You sound like you really want that tonight. Cool, let's go and do it. Lead the way.\"", bundle: 'free' },
+        { q: "It's Saturday night and you're both just sitting around.", a: "\"Hey you, I'm hungry. Get off your butt, let's go get something to eat. Come on, let's go.\"", bundle: 'free' },
+        { q: "You want to plan a weekend getaway but don't want to do all the research.", a: "\"I want to go away next weekend. You're great at finding cool spots—show me three options and I'll pick the winner.\"", bundle: 'free' },
+        { q: "You are at a party and want to leave or move to a different room.", a: "\"This room is boring. Let's go see what's happening over there. Come on. [Start walking]\"", bundle: 'pro' },
+        { q: "She asks \"Where are we going?\" in a skeptical way.", a: "\"Somewhere lovely that you will love. If you don't, you can go home. Trust me, I'm a professional.\"", bundle: 'pro' },
+        { q: "You want to change the \"friend\" dynamic back to \"lover\" mode.", a: "\"[Stop her, look her in the eye] Enough with the buddy talk. Come here and give me a real hug.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  danbacon4: [
+    {
+      name: "Ignoring Ridiculous Rules",
+      guideFront: "Use this strategy to respond when...",
+      guideBack: "A possible response.",
+      description: "When a woman comes up with \"ridiculous rules\" (e.g., \"you can pat my butt but not squeeze it\" or \"no texting after 10 PM\"), a man needs to be able to laugh at her and not take the rules seriously. If a guy starts to abide by these rules because he is afraid of losing her, he becomes less of a challenge and she gains too much power.\n\n**Why it works:** It proves you are not intimidated by her tantrums or BS. By being mature and loving but refusing to be controlled, you maintain your masculine dominance. She will respect you more for not being a \"wimp\" who can be walked all over.\n\n**Typical phrases:** • \"Whatever! I tell you what...\" • \"Imagine telling your friends that we broke up because of [Rule].\" • \"I'm not following that rule. Come here.\"\n\n**Under-categories:**\n\n1. **The \"Butt Squeeze\" Reframe:** Laughing at physical boundaries that are meant to test your balls.\n2. **The Breaking Up Mockery:** Pointing out how ridiculous her reason for an argument would sound to others.\n3. **The Playful Defiance:** Doing the \"forbidden\" thing anyway while laughing to show it's all play.\n\n**Mindset:** \"A woman doesn't want a guy she can walk all over. She wants a man who is more confident than her.\"",
+      inputs: [
+        { q: "She tells you, \"You can pat me on the butt, but you can't squeeze me on the butt.\"", a: "\"Whatever! No squeezing, only padding? I tell you what—from now on, all you're getting is butt squeezes from me. Come here.\"", bundle: 'free' },
+        { q: "She threatens to break up with you because you squeezed her butt after she told you not to.", a: "\"Oh poor you, you got your butt squeezed. Imagine this: we break up and you go tell your friends 'He squeezed my butt! I told him to pat it but he squeezed it!' Absolutely ridiculous.\"", bundle: 'free' },
+        { q: "She makes a rule that you can only text her during a specific one-hour window.", a: "\"Relax girl! I'll text you when I have something cool to say. You're already trying to monitor me and we aren't even married yet.\"", bundle: 'free' },
+        { q: "She says, \"I'm only going to watch romantic comedies with you, never action movies.\"", a: "\"Cool, we'll watch your cartoon tonight, but next time we go, it's an action movie. I'm the man—you're following my lead next time.\"", bundle: 'free' },
+        { q: "She gets angry and throws a tantrum about a minor disagreement.", a: "\"[Smile lovingly] Look at you getting all worked up. You're such a nutcase. Come here and give me a hug.\"", bundle: 'free' },
+        { q: "She says she won't kiss you tonight because she is \"in a mood.\"", a: "\"Okay cool, I'm going to enjoy my drink then. You're missing out on some great affection, but that's your choice.\"", bundle: 'pro' },
+        { q: "She tells you that you aren't allowed to talk about work when you are at dinner.", a: "\"Whatever! I'll talk about whatever I'm in the mood to talk about. But tell you what—if you're a good girl, I'll talk about your shoes for five minutes first.\"", bundle: 'pro' },
+        { q: "She tells you she needs \"space\" but is still sitting right next to you.", a: "\"You want space? [Move to the other side of the couch and laugh] There you go. You look lonely over there already. Want to come back yet?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The \"Let Her Win You Over\" Move",
+      guideFront: "Use this strategy to respond when...",
+      guideBack: "A possible response.",
+      description: "Instead of always being agreeable and going along with what she wants to do, you make her \"win you over.\" You express a different desire and ask her to explain why her suggestion is better. This forces her to turn on her charm and impress you.\n\n**Why it works:** It flips the script so you are the selector and she is the one seeking approval. Attractive women love the challenge of having to win a man's affection and interest. It prevents the relationship from becoming a \"neutral friendship.\"\n\n**Typical phrases:** • \"I'm not really in the mood for that. What else can you think of?\" • \"Win me over. What's so good about that place?\" • \"I'll consider it if you're a good girl.\"\n\n**Under-categories:**\n\n1. **The Menu Challenge:** Asking her to pitch a restaurant or dish to you.\n2. **The \"Leveled Up\" Friend:** Indicating she has \"earned\" a new level of your attention.\n3. **The Second Favorite Option:** Refusing her first choice to see if she can come up with something better.\n\n**Mindset:** \"Attractive women want a guy who is a bit of a challenge to acquire and keep.\"",
+      inputs: [
+        { q: "She says, \"Let's go eat Italian food tonight.\"", a: "\"I've actually been in the mood for Indian, but I'm open to your suggestion. What have they got on the menu that you think I'd like? Win me over.\"", bundle: 'free' },
+        { q: "She suggests a movie that you aren't really interested in seeing.", a: "\"I'm not in the mood for a drama tonight. What's your second favorite option? See if you can think of one I'll actually enjoy.\"", bundle: 'free' },
+        { q: "You want her to do some research for a holiday plan.", a: "\"I want to go away next weekend. You're great at finding cool spots—show me three options and I'll pick the winner.\"", bundle: 'free' },
+        { q: "She did something nice and you want to use the \"level up\" frame.", a: "\"Okay, you've leveled up as a girlfriend. Now you need to take me out for ice cream. If you're a good girl, I might let you buy me one.\"", bundle: 'free' },
+        { q: "She asks to go to a party with you.", a: "\"I'm not sure yet. You seem like a bit of a troublemaker. I'm going to have to keep a close eye on you if I take you out.\"", bundle: 'free' },
+        { q: "She wants you to buy her something expensive.", a: "\"Why? What have you done for me lately to deserve such a big gift? You're going to have to wine and dine me more than that.\"", bundle: 'pro' },
+        { q: "She asks if you are \"serious\" about the relationship.", a: "\"I'm enjoying our time. But don't start saying 'I love you' yet—you've still got to impress me more.\"", bundle: 'pro' },
+        { q: "You are at the door of a restaurant and want her to open it.", a: "\"[Stop and look at her] Well, you can open the door for me! [Laugh] No, no, alright—in you go. I'm a gentleman.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Expressing Real Moods",
+      guideFront: "Use this strategy to respond when...",
+      guideBack: "A possible response.",
+      description: "Stop suppressing your real emotions or \"hiding your balls\" just to be on your best behavior. Feel free to express positive, neutral, and even negative reactions to things (like a movie or a bad day) without being needy. This shows you have a strong sense of identity.\n\n**Why it works:** People are much more attracted to someone they sense is being real. If you are always \"nice\" and \"supportive,\" she will sense you are putting on an act to get her approval. Authenticity builds a genuine emotional connection that isn't based on \"playing it safe.\"\n\n**Typical phrases:** • \"Actually, I thought that was pretty boring.\" • \"I had a hectic day, but I handled it. How about you?\" • \"I really want to make a joke about that... okay, I'm doing it.\"\n\n**Under-categories:**\n\n1. **The Authentic Opinion:** Stating you disliked something she liked (or vice versa) without fear.\n2. **The \"Hectic Day\" Lead:** Sharing stress internally while reporting it as \"handled.\"\n3. **The Fearless Joke:** Making a joke you think she might \"not like\" to test her reaction.\n\n**Mindset:** \"If you fear her reaction, she won't feel attraction.\"",
+      inputs: [
+        { q: "You just walked out of a movie she loved, but you thought it was mediocre.", a: "\"Yeah, I saw a really good movie last week, but that one? It was one of the most boring things I've seen in ages. I almost fell asleep!\"", bundle: 'free' },
+        { q: "You are in a silly mood and she is being serious.", a: "\"Look at you, so serious today! Someone's a little ball of energy... wait, no, you're the opposite. You need a Red Bull or a vacation.\"", bundle: 'free' },
+        { q: "You want to share that you had a bad day without sounding needy for a hug.", a: "\"It was a bit of a hectic day at work, but I've handled it. Anyway, how was _your_ day? Tell me your story.\"", bundle: 'free' },
+        { q: "You really want to make a joke but are worried she might get offended.", a: "\"I really want to make a joke about that right now, but you'll probably get offended. [Pause] Okay, I'm doing it anyway.\"", bundle: 'free' },
+        { q: "She asks what you've been up to and you want to be \"ballsy.\"", a: "\"What are you, working with the FBI? Are you undercover? Look, I'm clean! I'm a good guy now. [Laugh] Just kidding.\"", bundle: 'free' },
+        { q: "You are stressed and want to process it alone.", a: "\"I'm going to hit the gym for an hour to clear my head, then let's relax and watch that movie. I'll be back soon.\"", bundle: 'pro' },
+        { q: "She says you are \"cold\" because you aren't venting your feelings to her.", a: "\"I'm not cold, I'm just a man. I handle my business so we can enjoy our time together. Now, come here.\"", bundle: 'pro' },
+        { q: "You want to express your passion for something she thinks is \"nerdy.\"", a: "\"I love [Hobby] because it makes me feel [Emotion]. If you don't like it, we're probably not going to get along. You're a dork.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Restoring the Spark",
+      guideFront: "Use this strategy to respond when...",
+      guideBack: "A possible response.",
+      description: "Shift the interaction from \"housemate,\" \"friend,\" or \"brother\" mode back into masculine dominance. This involves using physical presence, dominant touch, and assertive tonality to trigger her feminine attraction and sexual desire.\n\n**Why it works:** A woman feels at her happiest when she is with a man who can \"handle her\" and bring out her \"good girl\" side. When you stop being \"neutral\" and start being \"masculine,\" she can relax into her feminine role and the sexual tension returns.\n\n**Typical phrases:** • \"Enough with the buddy talk. Come here.\" • \"Stop it, you're making me blush. You're trying to seduce me.\" • \"Get over here and be a good girl.\"\n\n**Under-categories:**\n\n1. **The Physical Dominance Move:** Using a firm but loving embrace to stop her moodiness.\n2. **The Intent Reframe (Sexual):** Playfully accusing her of trying to seduce you.\n3. **The \"Sco\" Reset:** Telling her to move/action in a way that establishes you as the leader.\n\n**Mindset:** \"A man who is the leader of the relationship brings out the best in his woman.\"",
+      inputs: [
+        { q: "You've been talking like \"buddies\" all day and you want to change the vibe.", a: "\"[Stop her, look her in the eye] Enough with the buddy talk. Come here and give me a real hug.\"", bundle: 'free' },
+        { q: "You are passing each other in the house and she looks a bit distant.", a: "\"[Stand in front of her, bring her in for a firm hug] Just relax for a second. [Wait 5 seconds, lift her chin] Give me a kiss.\"", bundle: 'free' },
+        { q: "You've just kissed and want to \"put the icing on the cake.\"", a: "\"[As she walks away, give her a playful spank on the butt] You're copping it tonight! [Laugh]\"", bundle: 'free' },
+        { q: "She accidentally touches your arm while you are talking.", a: "\"So you're throwing yourself at me now? Geez, settle down girl! I'm a gentleman.\"", bundle: 'free' },
+        { q: "You want to lead her to a different room at a party.", a: "\"This room is boring. Let's go see what's happening over there. Come on. [Start walking without looking back]\"", bundle: 'free' },
+        { q: "She says she is \"not in the mood\" for sex to test your confidence.", a: "\"[Tell her to relax and smile] I'm just here for the conversation anyway. You're moving too fast for me! Settle down.\"", bundle: 'pro' },
+        { q: "She is threw a tantrum but has now calmed down.", a: "\"I appreciate that you're being sweet now. That's the woman I love. Come here.\"", bundle: 'pro' },
+        { q: "You want to indicate she needs to earn your affection.", a: "\"I might take you out on Friday if you're a good girl for the rest of the week. We'll see how you behave.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  oconnor1: [
+    {
+      name: "The Professional Boundary (I'm Surprised)",
+      guideFront: "Use this strategy when...",
+      guideBack: "A tactical verbal response.",
+      description: "This strategy removes the \"reward\" of an emotional reaction. By stating you are surprised, you highlight that the other person has deviated from professional norms without becoming defensive. It shifts the focus back to their behavior while maintaining your status as a neutral communicator. **Typical Phrases:**",
+      inputs: [
+        { q: "A coworker makes an inappropriate comment about your body.", a: "\"I’m surprised that you would make a personal comment like that to me when our relationship has always been professional.\"", bundle: 'free' },
+        { q: "Someone implies a level of familiarity that doesn't exist.", a: "\"To me, our relationship has always been nothing but professional.\"", bundle: 'free' },
+        { q: "You need to clarify a boundary you might have blurred previously.", a: "\"If in the past I have given you any reason to believe our relationship is at that level of familiarity, I apologize.\"", bundle: 'free' },
+        { q: "They try to justify a rude comment as a joke.", a: "\"That may be, but again, to me, our relationship is purely professional and I'd appreciate it if we kept it that way.\"", bundle: 'free' },
+        { q: "You want to let a silence do the work after a boundary statement.", a: "(Perform the three-second look without saying a word).", bundle: 'free' },
+        { q: "A boss makes an insulting personal remark.", a: "\"Mary, what have I done to lead you to believe we are on that level of intimacy that you could make that comment?\"", bundle: 'free' },
+        { q: "A bully snipes you in front of a group.", a: "\"I apologize for whatever reason I gave you to think you could bring our relationship to that personal, intimate level.\"", bundle: 'pro' },
+        { q: "They continue to push professional boundaries after being told once.", a: "\"Again, to me, our relationship is strictly professional; can we agree to keep our conversations focused on work?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Clarifying Question",
+      guideFront: "Use this strategy when...",
+      guideBack: "A tactical verbal response.",
+      description: "This tactic forces the speaker to own the hidden meaning behind their words. You translate their subtext into a blunt, factual statement and ask if that is what they meant. Most people will retreat once their passive-aggression is made explicit. **Typical Phrases:**",
+      inputs: [
+        { q: "A colleague asks \"if you finally got that report done\" in front of the team.", a: "\"When you say that, it sounds to me like you're placing yourself in a supervisory position over me. Is that what you're trying to say?\"", bundle: 'free' },
+        { q: "Someone says \"I see you've finally been chosen for a project.\"", a: "\"When you say that, it sounds to me like you're saying I haven't earned my previous roles. Is that what you're saying?\"", bundle: 'free' },
+        { q: "A coworker asks if you'll be late \"this time.\"", a: "\"It sounds to me like you're saying I've been the reason for past delays. Is that what you're trying to say?\"", bundle: 'free' },
+        { q: "A peer questions your dress code.", a: "\"It sounds like you're saying my professional attire is inappropriate for this role. Is that what you're saying?\"", bundle: 'free' },
+        { q: "Someone implies you are \"lucky\" to be here.", a: "\"Are you trying to say that my presence here is due to luck rather than merit?\"", bundle: 'free' },
+        { q: "A coworker implies you slept your way to a promotion.", a: "\"John, when you say I'd get chosen for more conventions if I dressed like you do, it sounds like you're saying I exchange sexual favors for promotions. Is that what you're saying?\"", bundle: 'free' },
+        { q: "They tell you \"not to get so defensive\" after you call them out.", a: "\"I'm not being defensive; I'm clarifying your comment. So, is that what you were trying to say?\"", bundle: 'pro' },
+        { q: "A toxic colleague uses a sarcastic \"good for you.\"", a: "\"When you say that in that tone, it sounds like you're being dismissive of the team's success. Is that what you're trying to say?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Selective Engagement",
+      guideFront: "Use this strategy when...",
+      guideBack: "A tactical verbal response.",
+      description: "Choosing not to address the content of an accusation, but instead addressing the behavior of the attacker. This elevates you above the conflict. By not defending, you signal that you are not vulnerable. **Typical Phrases:**",
+      inputs: [
+        { q: "A peer says you lost the big account.", a: "\"I can understand why you'd be upset if you thought I lost that account, but my work speaks for itself.\"", bundle: 'free' },
+        { q: "A colleague says you only got the job by kissing up.", a: "\"Frankly, your beliefs regarding my promotion are of no consequence to me.\"", bundle: 'free' },
+        { q: "Someone blames you for a delay in a meeting.", a: "\"I understand that delays are frustrating, but I’m surprised you’d use this meeting to disparage me.\"", bundle: 'free' },
+        { q: "An office gossip asks for your take on a rumor.", a: "\"My work speaks for itself, and I don't engage in those types of conversations.\"", bundle: 'free' },
+        { q: "A bully tells you your ideas are \"worthless.\"", a: "\"Your opinion is of no consequence to me. Let's move on to the facts.\"", bundle: 'free' },
+        { q: "A boss blames you for their mistake in front of others.", a: "\"I understand this is a difficult situation, but my reputation for turning work in on time speaks for itself.\"", bundle: 'free' },
+        { q: "A jealous competitor questions your school or background.", a: "\"My credentials and my record speak for themselves; I don't feel the need to defend them.\"", bundle: 'pro' },
+        { q: "A toxic person tells you that \"everyone thinks you're difficult.\"", a: "\"What others believe is of no consequence to me; I focus on the results I deliver.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Power of 'What'",
+      guideFront: "Use this strategy when...",
+      guideBack: "A tactical verbal response.",
+      description: "Asking \"Why\" leads to excuses and rumination. Asking \"What\" forces a factual, solution-oriented response. It shifts the conversation from the attacker's subjective feelings to their objective behavior and the appropriateness of the setting. **Typical Phrases:**",
+      inputs: [
+        { q: "Someone asks a very rude, personal question at lunch.", a: "\"What made you ask a question like that?\"", bundle: 'free' },
+        { q: "A coworker reacts with sudden hostility.", a: "\"What did I do to prompt that type of response from you?\"", bundle: 'free' },
+        { q: "Someone critiques your work style unprompted.", a: "\"What is it I'm doing that makes you feel it's okay to say that to me?\"", bundle: 'free' },
+        { q: "An interrupter stops your flow.", a: "\"What is the reason for the interruption right now?\"", bundle: 'free' },
+        { q: "Someone makes a snide comment about your lunch.", a: "\"What factor led you to believe I'd be interested in your opinion on my meal?\"", bundle: 'free' },
+        { q: "A colleague asks a personal question in a high-stakes meeting.", a: "\"Is this the appropriate venue for that type of question?\"", bundle: 'free' },
+        { q: "A narcissist tries to shame you in front of the boss.", a: "\"What have I done to lead you to believe we are on that level of intimacy where you could make that comment?\"", bundle: 'pro' },
+        { q: "You are questioned on a decision you've already made.", a: "\"What specific information are you looking for that wasn't in the report?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Benefit Statements",
+      guideFront: "Use this strategy when...",
+      guideBack: "A tactical verbal response.",
+      description: "To be persuasive, you must stop talking about the \"form\" (the idea) and focus on the \"substance\" (the person). Benefit statements translate your needs into a direct personal win for the listener, increasing buy-in. **Typical Phrases:**",
+      inputs: [
+        { q: "Proposing a new workflow to your boss.", a: "\"I’d like to implement this new system so you can have more time for yourself and not feel you have to do everything.\"", bundle: 'free' },
+        { q: "Asking a coworker for data.", a: "\"Could you send those numbers by noon so you won't have to deal with me asking for them during your lunch break?\"", bundle: 'free' },
+        { q: "Suggesting a meeting be moved.", a: "\"Let’s move this to tomorrow so you can focus on your presentation today without distraction.\"", bundle: 'free' },
+        { q: "Requesting a signature.", a: "\"If you could sign this now, so you won't have to worry about this deadline later this afternoon.\"", bundle: 'free' },
+        { q: "Asking a team to use a new software.", a: "\"We are switching to this tool so you can automate your reports and save three hours a week.\"", bundle: 'free' },
+        { q: "Pitching a raise to a manager.", a: "\"I’ve quantified my value here so you can easily justify this increase to the CFO.\"", bundle: 'free' },
+        { q: "Asking a micromanager for autonomy.", a: "\"If you let me handle this project independently, then you can focus on the high-level strategy you mentioned earlier.\"", bundle: 'pro' },
+        { q: "Selling a client on a service.", a: "\"We handle the back-end integration so you will see a seamless transition without any downtime.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Power Tone and Icy Stare",
+      guideFront: "Use this strategy when...",
+      guideBack: "A tactical verbal response.",
+      description: "Authority is established non-verbally. The \"Power Tone\" projects confidence by speaking from the diaphragm, while the \"Icy Stare\" signals you are unmoved by aggression. Correct mechanics prevent you from appearing aggressive or \"psychotic.\" **Typical Phrases:**",
+      inputs: [
+        { q: "A bully approaches your desk.", a: "(Square your shoulders, face them chest-to-chest, and maintain the icy stare).", bundle: 'free' },
+        { q: "You need to deliver a firm \"No.\"", a: "(Drop your voice to your power tone) \"I'm afraid that's not possible.\"", bundle: 'free' },
+        { q: "Someone is yelling at you.", a: "(Maintain the icy stare—eyelids covering the top of iris—showing you are unimpressed and calm).", bundle: 'free' },
+        { q: "You are entering a job interview.", a: "(Walk in, move the chair to a comfortable position, and take up space confidently).", bundle: 'free' },
+        { q: "You are being interrupted.", a: "(Wait in silence with the icy stare until they stop talking).", bundle: 'free' },
+        { q: "You need to command a room.", a: "(Speak loudly from the lap, lifting your chin as you finish your key points).", bundle: 'free' },
+        { q: "A colleague tries to \"stare you down.\"", a: "(Maintain the icy stare without blinking or opening eyes wide; show no sign of their \"getting your goat\").", bundle: 'pro' },
+        { q: "You are delivering unpleasant news.", a: "(Use your name, a short lead-in, and a deep power tone to signal authority).", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Power-Down (Exiting Conversations)",
+      guideFront: "Use this strategy when...",
+      guideBack: "A tactical verbal response.",
+      description: "You are never bound to stay in an unproductive or toxic conversation. A \"Power-Down\" phrase summarizes your position, signals your departure, and leaves an impression of absolute control. **Typical Phrases:**",
+      inputs: [
+        { q: "A meeting turns into a gossip session.", a: "\"I have nothing constructive to add to this, so I’m going back to my desk to do something positive.\"", bundle: 'free' },
+        { q: "A customer is looping in circles at your window.", a: "\"I think we both understand the situation; I'm ending this conversation now. Goodbye.\"", bundle: 'free' },
+        { q: "A phone call becomes abusive.", a: "\"I value our professional relationship too much to continue this unproductive call. Goodbye.\" (Hang up).", bundle: 'free' },
+        { q: "A coworker tries to bait you into an argument.", a: "\"I can see this is important to you, but I have nothing of value to add. I'm going back to work.\"", bundle: 'free' },
+        { q: "A social interaction at work gets uncomfortable.", a: "\"I'm going to get back to my desk where I can be productive. If you need me, you know where I am.\"", bundle: 'free' },
+        { q: "A debate reaches a stalemate.", a: "\"I think we both understand each other's position clearly, therefore I'm ending this conversation. Have a good afternoon.\"", bundle: 'free' },
+        { q: "You are finished with a task and the other person keeps talking.", a: "\"I can see you've got this under control, so I'm making my exit. Goodbye.\"", bundle: 'pro' },
+        { q: "You are in a toxic \"venting\" session.", a: "\"I've reached the point where I have nothing positive to contribute, so I'm opting out. Have a good day.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  oconnor2: [
+    {
+      name: "The Diplomatic Decline",
+      guideFront: "Use the Diplomatic Decline to say no when...",
+      guideBack: "One way to respond.",
+      description: "Say no to requests clearly and warmly without giving a long list of excuses that invite negotiation. It works because clarity is a favor; a vague \"maybe\" costs the other person time. • Typical phrases: \"I’d like to be helpful, however...\", \"Unfortunately, that’s not in my budget/schedule.\", \"I'm wondering, could we [Alternative] instead?\"\n\n1. **Sympathize:** Acknowledge their need. \"I understand these deadlines are tough.\"\n2. **Say No:** Be clear. \"I cannot take that on right now.\"\n3. **Say Why:** Give a professional reason with a benefit. \"To keep costs low for everyone, I have to stick to this policy.\"\n4. **Suggest Alternative:** Show you are a teammate. \"Could I help you first thing tomorrow instead?\" **Mindset:** I don't say no for other people; I say no for me to maintain my professional standards.",
+      inputs: [
+        { q: "Your boss asks you to stay late for a couple of hours on a night you have plans.", a: "\"I’d like to be helpful, however I’m afraid I have plans tonight. I'm wondering, could I come in early tomorrow to help you out?\"", bundle: 'free' },
+        { q: "A customer asks for a fourth revision when your policy only allows for three.", a: "\"I understand you want this perfect, but unfortunately I can't offer another free revision. To keep our rates low for all customers, we offer three per project.\"", bundle: 'free' },
+        { q: "A colleague asks for a small loan that you aren't comfortable giving.", a: "\"I'd like to help, however unfortunately that's not in my budget this month. I'm wondering, have you checked with HR about the emergency fund?\"", bundle: 'free' },
+        { q: "You are asked to join a committee that will take up your focused work time.", a: "\"I understand the importance of this group, but unfortunately I cannot join right now because I’m focusing on the Jones project. Would you like me to suggest someone else?\"", bundle: 'free' },
+        { q: "They push back after your first 'no', saying \"it will only take a minute.\"", a: "\"I hear you, but again, I'd like to be helpful. Unfortunately, I've made other plans and need to head out. Could we look at this in the morning?\"", bundle: 'free' },
+        { q: "You want to decline a request for a deadline extension on a bill.", a: "\"I understand this is frustrating, but unfortunately I cannot extend the deadline further. I’d be happy to help you set up an automatic plan so this doesn't happen again.\"", bundle: 'pro' },
+        { q: "A client asks for a service you no longer provide.", a: "\"That sounds like a great project, however I'm afraid we no longer offer that specific service. I'm wondering, would you like me to refer you to a specialist?\"", bundle: 'pro' },
+        { q: "You are asked to do a favor that interferes with your primary duties.", a: "\"I'd like to be helpful, but unfortunately I can't take that on right now without falling behind on my core work. Can we find another way?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The B-I-B Script",
+      guideFront: "Use the B-I-B script when...",
+      guideBack: "One way to respond.",
+      description: "Use Boundary, Instruction, and Benefit to stop coworkers from dumping their work on you. It works because you take responsibility for your own limits while articulating how your boundary helps the other person. • Typical phrases: \"I noticed I've been...\", \"In the future, if you see me...\", \"That way, you'll know that...\"\n\n1. **Boundary:** State the problem as your own observation. \"I've noticed I'm taking on so much work I can't do my own effectively.\"\n2. **Instruction:** Tell them how to help you. \"If you see me saying yes to everything, please remind me of this talk.\"\n3. **Benefit:** State what’s in it for them. \"That way, when I _do_ say yes to you, you'll know I'm doing it with a happy heart and to the best of my ability.\" **Mindset:** I am the co-CEO of my workstation; I am training people how to treat me.",
+      inputs: [
+        { q: "A coworker tries to hand you their unfinished work as they leave for the day.", a: "\"I’ve noticed lately I’m taking on more than I can handle. If you see me doing that, could you just say 'Hey Dan' to remind me? That way, when I help you, I can really give it my best.\"", bundle: 'free' },
+        { q: "You've been overspending on others and need to set a limit.", a: "\"I've noticed I've been giving away so much money I'm not securing my future. If I try to pay for lunch again, please remind me. That way, I'll be prepared to help for real if a true emergency comes up.\"", bundle: 'free' },
+        { q: "You want to stop a \"serial asker\" from relying on you for every small task.", a: "\"I've noticed I'm saying yes when I should be saying no. Could you help me by checking if I'm busy first? That way, I can give you my undivided attention when I _am_ free.\"", bundle: 'free' },
+        { q: "You are a manager who wants to stop being the \"bottleneck\" for your team.", a: "\"I've noticed I'm taking on tasks you guys can handle yourselves. If you see me grabbing the pen, remind me to step back. That way, you'll get more experience leading.\"", bundle: 'free' },
+        { q: "You want to close the B-I-B talk with a confirmation.", a: "\"So, could you help me with that? [Instruction] It would really help us both perform better. [Benefit]\"", bundle: 'free' },
+        { q: "You need to set a boundary with a boss who micromanages your process.", a: "\"I've noticed I perform best when I can focus until the end of the day. If I turn in my report then, could you let me work unsupervised until it's done? That way you can focus on your own heavy workload.\"", bundle: 'pro' },
+        { q: "You want to stop people-pleasing during social interactions.", a: "\"I've noticed I agree to things I don't actually want to do. If you hear me being vague, please ask for my real preference. That way, our friendship stays honest.\"", bundle: 'pro' },
+        { q: "You are setting a boundary about non-work interruptions.", a: "\"I've noticed personal calls during the day are hurting my productivity. Please remind me of this if I pick up. That way, I can give you my full attention after 5:00.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Availability Monitor",
+      guideFront: "Use the Availability Monitor when...",
+      guideBack: "One way to respond.",
+      description: "A simple visual and verbal system to signal when you are \"off limits\" for interruptions. It works because visual cues provide immediate instructions to others before they even open their mouths. • Typical phrases: \"Green means available, Red means focused.\", \"Please check my monitor before asking a question.\", \"I'm implementing a new time management system.\"\n\n1. **The Groundwork:** Use the AEIOU script to explain the system. \"I've found I'm not managing my time efficiently, so I'm asking for your help.\"\n2. **The Signal:** Use a physical indicator (sign, flag, or color). \"When it's red, I'm focusing on a project.\"\n3. **The Enforcer:** Use the passive voice to redirect. \"Check my monitor—it explains why I can't respond right now.\" **Mindset:** I am taking control of my professional schedule to serve my team better.",
+      inputs: [
+        { q: "You are telling a \"Time Sucker\" about your new system for the first time.", a: "\"Mary, I need your help. I've found I'm falling behind, so I'm implementing a new system. When my sign is red, I'm unavailable. Can I count on your help with this?\"", bundle: 'free' },
+        { q: "Someone walks into your office while your monitor is on the 'Red' side.", a: "(Don't say a word—simply point to the red sign and continue working).", bundle: 'free' },
+        { q: "You want to explain the benefit of the monitor to your team.", a: "\"When I have scheduled time for uninterrupted work, I can produce 10 times more results. That helps all of us get our goals met faster.\"", bundle: 'free' },
+        { q: "Someone calls you while you are in a \"Red\" period.", a: "(Let it go to voicemail) \"Hi, you've reached Dan. If my monitor is red, I'll return your call during my next Green block. Thanks!\"", bundle: 'free' },
+        { q: "You are explaining the \"Green\" period.", a: "\"When you see the green side, that means I'm available to be interrupted and can give you my full attention. Please wait for the green!\"", bundle: 'free' },
+        { q: "Someone asks \"Hey, do you have a second?\" while you are clearly Red.", a: "\"I'm in a Red block right now. Check back when it's green so I can actually listen to you.\"", bundle: 'pro' },
+        { q: "You are setting the groundwork using the AEIOU \"O\" (Or Else).", a: "\"If I don't implement this system, I won't have any time to visit with you at all. But if we do this, I can actually focus on what you're saying later.\"", bundle: 'pro' },
+        { q: "You need to ignore an interruption to maintain the pattern.", a: "(If you have already told them about the system, simply do not respond and let them check the sign themselves).", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Power-Down Phrases",
+      guideFront: "Use a Power-Down phrase when...",
+      guideBack: "One way to respond.",
+      description: "Firm closing statements to gracefully exit conversations that have become toxic or unproductive. It works because you summarize your position and signal the end of your participation without asking for permission. • Typical phrases: \"Unfortunately, continuing this conversation with me is not an option.\", \"I value both our time too much to continue this.\", \"I'm going to get back to work.\"\n\n1. **The Summary:** State the current situation. \"I can see this is important to you, but we've come to a stalemate.\"\n2. **The Decision:** State your action. \"I have nothing constructive to add, so I'm ending this conversation.\"\n3. **The Exit:** Physically or verbally leave. \"If anyone needs me, you know where to find me. Goodbye.\" **Mindset:** I am never bound to any conversation; it is my prerogative to exit when it is no longer productive.",
+      inputs: [
+        { q: "A meeting has turned into a gossip session about a colleague.", a: "\"I can see you need to talk about this, but I have nothing constructive to add. I'm going to get back to my desk where I can be productive.\"", bundle: 'free' },
+        { q: "You are at a stalemate in a parent-teacher conference.", a: "\"I think we both understand each other's position clearly. Since there is nothing more to contribute, I'm ending this talk. Have a good afternoon.\"", bundle: 'free' },
+        { q: "A conversation with a toxic person is rising to a level you aren't comfortable with.", a: "\"You have many options here. Unfortunately, continuing this conversation with me is not one of them. Have a good day. Goodbye.\"", bundle: 'free' },
+        { q: "You want to exit a toxic meeting and signal your professional worth.", a: "\"I value both our time too much to continue this unproductive conversation, which is why I'm choosing to end it. Goodbye.\"", bundle: 'free' },
+        { q: "You are leaving a group to go back to your desk and want to use a tag question.", a: "\"I'm going back to my desk to get some work done. That's all right with everyone here, isn't it?\"", bundle: 'free' },
+        { q: "You are on the phone with someone who is being rude.", a: "\"This conversation is no longer tenable for me to stay in, so I'm leaving it. Goodbye.\" (Hang up).", bundle: 'pro' },
+        { q: "Someone is trying to \"drag you back in\" after you've announced you're leaving.", a: "\"As I said, I have nothing positive to contribute. You're capable of handling this without me. Goodbye.\"", bundle: 'pro' },
+        { q: "You want to signal that you are \"Management Material\" while leaving a meeting.", a: "\"Nice job on the figures, everyone. I'm going to get back to the Jones project now. See you later.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  oconnor3: [
+    {
+      name: "The Communication Hamburger",
+      guideFront: "Use the Communication Hamburger when...",
+      guideBack: "A possible response.",
+      description: "Address unwanted behavior by wrapping the confrontation in a structured formula: \"When you [Action], I feel [Emotion], because [Implication]\". • It works because it focuses on the behavior and its logical impact rather than attacking the person's character, which triggers less immediate defensiveness. • Typical phrases: \"When you keep interrupting...\", \"It concerns me...\", \"Because it appears you aren't aware...\".\n\n1. **The Behavioral Layer:** State the specific action. \"John, when you take credit for my ideas in meetings...\"\n2. **The Emotional Layer:** Name a professional concern. \"...it concerns me...\"\n3. **The Logical Layer:** State the implication. \"...because it suggests there is a misunderstanding about our roles.\" **Mindset:** I am not a victim of your behavior; I am a professional observer describing a breakdown in protocol.",
+      inputs: [
+        { q: "A colleague keeps interrupting you during your presentation after being asked to stop.", a: "\"John, when you keep interrupting me after we've already talked about this, it concerns me because it appears as though you don't know you're engaging in this behavior.\"", bundle: 'free' },
+        { q: "A teammate constantly \"forgets\" to include your name on shared reports.", a: "\"When my name is left off the reports we co-authored, it concerns me because it appears as though the protocol for shared credit is unclear.\"", bundle: 'free' },
+        { q: "Your boss blames you for a mistake they made in front of the whole team.", a: "\"When I am identified as the source of this error, it concerns me because it appears the data from my desk and the final output aren't being matched correctly.\"", bundle: 'free' },
+        { q: "A toxic coworker uses sarcasm to belittle your recent promotion.", a: "\"When you use that tone regarding my new role, it concerns me because it suggests you believe the selection process was not based on merit.\"", bundle: 'free' },
+        { q: "Someone is \"scab picking\" by bringing up a past failure at the lunch table.", a: "\"When you bring up that project from two years ago, it concerns me because it appears you're stuck on the past instead of our current goals.\"", bundle: 'free' },
+        { q: "A narcissist tries to bait you into an argument by questioning your qualifications.", a: "\"When you question my background in this forum, it concerns me because it suggests you are unaware of the vetting process for this position.\"", bundle: 'pro' },
+        { q: "They mock your boundary by calling you \"too sensitive.\"", a: "\"When you characterize my professional boundaries as sensitivity, it concerns me because it appears you don't recognize the standard rules of engagement.\"", bundle: 'pro' },
+        { q: "You want to use a Hamburger to address a recurring gossip issue.", a: "\"When I hear my personal business being discussed by colleagues, it concerns me because it suggests our professional environment is losing its focus.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Selective Engagement",
+      guideFront: "Practice Selective Engagement when...",
+      guideBack: "A possible response.",
+      description: "Consciously decide who you respond to and which comments deserve your energy, refusing to take the \"bait\" thrown by toxic people. • It works because narcissists feed on your reaction; by choosing not to engage, you take away the reward and maintain your stance as the \"cause\" rather than the \"effect\". • Typical phrases: \"I'll let my work speak for itself.\", \"That's an interesting perspective.\", (Silence).\n\n1. **The 3-Second Look:** Maintain eye contact for three seconds without speaking. \"Look them in the eyes—let them cook their own goose.\"\n2. **The Deflection:** Acknowledge the comment without defending yourself. \"Frankly, your beliefs are of no consequence to me.\"\n3. **The Redirect:** Move the focus back to the task. \"I'm not interested in assessing blame; I'm here to solve the problem.\" **Mindset:** I only defend what I believe to be vulnerable. Since my worth is not vulnerable, your insults require no defense.",
+      inputs: [
+        { q: "A coworker says, \"I see you got the promotion—I guess kissing up to the boss pays off.\"", a: "(Maintain eye contact for 3 seconds, then turn back to your work without saying a word).", bundle: 'free' },
+        { q: "A toxic person tells a blatant lie about you to get you to defend your reputation.", a: "\"My reputation and my work speak for themselves. I don't feel the need to add anything to that.\"", bundle: 'free' },
+        { q: "Someone asks a nosy, \"challenge question\" like \"How much do you actually make here?\"", a: "\"Interesting. Why would you ask me a question like that?\"", bundle: 'free' },
+        { q: "They try to \"pounce\" on you during a Zoom meeting by blaming you for a delay.", a: "\"I'm not interested in assessing blame right now. I'm simply interested in correcting the problem so the client is happy.\"", bundle: 'free' },
+        { q: "You are being berated in public for a minor lapse in judgment.", a: "\"It's really embarrassing for me when people berate me in public. So this must be really embarrassing for you.\"", bundle: 'free' },
+        { q: "A narcissist tells you, \"No one else would ever put up with your attitude.\"", a: "\"Frankly, Jane, your beliefs regarding my character are of no consequence to me. Let's get back to the spreadsheet.\"", bundle: 'pro' },
+        { q: "They try to drag you into a \"battle of wits\" regarding a policy change.", a: "\"I'm not going to engage in a battle here. I've stated the instruction, and it stands regardless of the challenge.\"", bundle: 'pro' },
+        { q: "You feel the physical \"flush\" of anger and want to snap back.", a: "(Take three breaths) \"I'm going to take a moment to reflect on my personal compass before I respond to that.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Empowering Statements",
+      guideFront: "Use an Empowering Statement when...",
+      guideBack: "A possible response.",
+      description: "Offer the narcissist a choice between two paths, both of which result in your boundary being respected. • It works by creating the \"illusion of choice,\" satisfying the narcissist's need for control while you remain the one instructing how the relationship will proceed. • Typical phrases: \"Would you like to... or...\", \"Which one works best for you?\", \"When you're ready to... I'll be ready to...\".\n\n1. **Naming the Infraction:** Identify the behavior clearly. \"John, you just used another insult.\"\n2. **The Choice:** Offer two alternatives. \"Would you like to continue this talk without the insults, or do you need 10 minutes to collect your thoughts?\"\n3. **The Confirmation:** Use a tag question. \"That sounds reasonable, doesn't it?\" **Mindset:** I am the driver of this conversation. You choose the lane, but I choose the destination.",
+      inputs: [
+        { q: "A narcissist keeps interrupting you during a one-on-one meeting.", a: "\"John, I want to hear what you have to say, but not if you won't allow me to finish. Would you like to continue now without interrupting, or should we reschedule?\"", bundle: 'free' },
+        { q: "They are using profanity or aggressive language while discussing a project.", a: "\"I don't allow that type of language in my office. Do you think you're ready to discuss this now without it, or do you need a break?\"", bundle: 'free' },
+        { q: "A toxic person is trying to \"interrogate\" you with rapid-fire personal questions.", a: "\"I'm uncomfortable with this line of questioning. Would you like to shift back to the agenda, or should we end this talk for today?\"", bundle: 'free' },
+        { q: "You've set a boundary and they are pushing against it immediately.", a: "\"When you're ready to respect the agreement we made, I'll be ready to help you with your project. Which would you prefer?\"", bundle: 'free' },
+        { q: "They are trying to \"gotcha\" you regarding a minor error.", a: "\"I've acknowledged the error and offered a fix. Do you want to implement that fix now, or would you prefer to keep discussing the past?\"", bundle: 'free' },
+        { q: "You want to get buy-in for a new communication standard.", a: "\"I've decided to put a moratorium on all political talk in this office. I'm sure you can honor that, can't you?\"", bundle: 'pro' },
+        { q: "A narcissistic boss insists on breaking the rules you both agreed to.", a: "\"What will it take to get you to respect our agreement? Would you like to modify the terms now, or keep things as they are?\"", bundle: 'pro' },
+        { q: "They claim your boundary is \"unreasonable\" or \"unfair.\"", a: "\"I'm giving you the choice of how to proceed within these rules. Which option works best for you?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The \"Irrelevant\" Block",
+      guideFront: "Use the \"Irrelevant\" Block when...",
+      guideBack: "A possible response.",
+      description: "Formally declare that the relationship is strictly professional to stop the narcissist from using personal intimacy as a weapon. • It works by cutting the emotional cord; if there is \"no relationship,\" their personal judgments and attempts to hurt your feelings become logically impossible and irrelevant. • Typical phrases: \"Ours is a strictly professional relationship.\", \"There is no you, there is no me.\", \"I apologize if I led you to believe otherwise.\"\n\n1. **The Surprise:** Express that the personal comment was unexpected. \"I'm surprised you'd make a comment like that.\"\n2. **The Reality Check:** State the nature of the bond. \"To me, our relationship has always been purely professional.\"\n3. **The Cord-Cutting:** Refuse to engage on a personal level. \"I'd thank you for keeping it that way.\" **Mindset:** You cannot hurt me personally because you do not know me personally.",
+      inputs: [
+        { q: "A narcissist makes a disparaging comment about your clothing or appearance at work.", a: "\"I'm surprised you'd make a personal comment like that to me when, to me, our relationship has always been nothing but professional.\"", bundle: 'free' },
+        { q: "They ask \"Why are you doing this to me?\" as if you are attacking them personally.", a: "\"There is no 'me' and 'you' in this situation, Nancy. It's an impossibility that I'm doing something to you, as that would imply a relationship that does not exist.\"", bundle: 'free' },
+        { q: "They try to guilt-trip you by saying \"I thought we were friends\" to get a favor.", a: "\"If I've given you the impression that our relationship is at that level of familiarity, I apologize. To me, this has always been strictly professional.\"", bundle: 'free' },
+        { q: "A coworker brings up your past dating life in front of others.", a: "\"That type of personal talk is reserved for people I have a personal relationship with. Since ours is purely professional, let's stick to the data.\"", bundle: 'free' },
+        { q: "They mock your professional tone by saying \"You're acting so high and mighty.\"", a: "\"I'm simply keeping our interaction professional, and I'd appreciate it if you did the same. Can we do that?\"", bundle: 'free' },
+        { q: "You want to deliver the \"King Kahuna\" script to a narcissist who is obsessing over you.", a: "\"It's not that I dislike you; it's that for me to judge you on that level would presuppose that we had a relationship that we do not. I hope that clarifies things.\"", bundle: 'pro' },
+        { q: "They accuse you of sabotaging them because you reported a factual error.", a: "\"I have no interest in sabotaging you because that would require an emotional investment I don't have. I'm simply interested in the accuracy of the report.\"", bundle: 'pro' },
+        { q: "You want to signal that they are \"irrelevant\" to your personal development.", a: "\"Your opinions on my lifestyle are of no consequence to me. However, your input on the Jones project is. What's the status?\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  oconnor4: [
+    {
+      name: "The LBNT System",
+      guideFront: "Use the LBNT system when giving feedback...",
+      guideBack: "One way to respond.",
+      description: "Replace \"constructive criticism\" with the LBNT method (Liked Best / Next Time) to focus on future performance rather than past failures. • It works because focusing on the future removes the \"biochemical churn\" associated with being critiqued for a past error. • Typical phrases: \"I liked best...\", \"Next time, I believe...\", \"I enjoyed...\".\n\n1. **Liked Best:** State a specific positive observation. \"I liked the passion in your presentation today.\"\n2. **Next Time:** Give a specific instruction for the future. \"Next time, if you invest more in substantiating evidence, it will be even more compelling.\" **Mindset:** I am a coach focusing on growth, not a judge assessing blame.",
+      inputs: [
+        { q: "You are giving a teammate feedback on their recently finished project.", a: "\"I liked best how you organized the summary. Next time, if you include the revenue impact in the first slide, it will be even more persuasive.\"", bundle: 'free' },
+        { q: "A junior colleague just finished their first client call.", a: "\"I liked the tone you used with the client. Next time, if you ask for the follow-up meeting before hanging up, it will be more efficient.\"", bundle: 'free' },
+        { q: "You are critiquing a draft of a budget report.", a: "\"I liked the clarity of the figures. Next time, if you use bullet points for the key takeaways, it will be much easier to read.\"", bundle: 'free' },
+        { q: "A staff member handled a difficult customer well.", a: "\"I liked best how calm you stayed. Next time, if you offer the automatic payment plan earlier, it might resolve the issue even faster.\"", bundle: 'free' },
+        { q: "You want to provide feedback on a training session you observed.", a: "\"I liked the energy you brought to the room. Next time, if you leave a full ten minutes for Q&A, the engagement will be even higher.\"", bundle: 'free' },
+        { q: "You are giving feedback to a manager about their team coordination.", a: "\"I liked the speed of the updates. Next time, if you double-check the CC list before sending, it will ensure everyone stays in the loop.\"", bundle: 'pro' },
+        { q: "A colleague presented a proposal that lacked a clear call to action.", a: "\"I liked the realism of the goals. Next time, if you end with a specific question for the CFO, you'll get a faster decision.\"", bundle: 'pro' },
+        { q: "You want to improve a colleague's email communication style.", a: "\"I liked the brevity of your last email. Next time, if you include a clearer subject line, it will be more professional for the client.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "D-A-R-T for Accountability",
+      guideFront: "Use D-A-R-T when setting professional boundaries...",
+      guideBack: "One way to respond.",
+      description: "Use Describe, Address, Redirect, and Tag Question to correct behavior while maintaining leadership authority. • It works because it ties the behavior back to the primary goal, making the correction about the work rather than the person. • Typical phrases: \"I'm here to...\", \"However, when you...\", \"So what do you say we...\", \"Reasonable, isn't it?\".\n\n1. **Describe:** State your helpful intent. \"I'm here to find solutions so this doesn't happen again.\"\n2. **Address:** State how their actions distract from that goal. \"However, comments like that distract us from that goal.\"\n3. **Redirect:** Move the energy back to the task. \"So what do you say we get back to focusing on the solution?\"\n4. **Tag Question:** Get buy-in. \"That sounds reasonable, doesn't it?\" **Mindset:** I am the driver of this conversation. I am not letting toxic energy take hold.",
+      inputs: [
+        { q: "Your boss is micromanaging you and checking your work every hour.", a: "\"I'm here to get this report done perfectly. However, these hourly check-ins make it harder for me to focus. Let's wait until the end of the day for the full update. That's reasonable, isn't it?\"", bundle: 'free' },
+        { q: "A teammate is blaming others for a mistake in a group meeting.", a: "\"I'm here to solve the breakdown. However, assessing blame right now takes us away from the fix. What do you say we focus on correcting the problem? Agree?\"", bundle: 'free' },
+        { q: "A customer is making distracting, rude comments while you try to help them.", a: "\"Mr. Jones, I'm here to help you. However, these comments make it difficult for me to stay on track. What do you say we get this taken care of for you? Isn't that right?\"", bundle: 'free' },
+        { q: "A colleague is derailing a meeting with passive-aggressive interruptions.", a: "\"I'm here to find a path forward. However, these interruptions are counterproductive to our mission. What do you say we stick to the agenda? We can do that, can't we?\"", bundle: 'free' },
+        { q: "A teammate's tone is becoming aggressive during a project talk.", a: "\"I'm here to be a strong partner for you. However, that tone is demotivating and makes me not want to engage. Let's keep the talk to the data. That's fair, isn't it?\"", bundle: 'free' },
+        { q: "You are talking to an underperforming employee about their targets.", a: "\"I want you to succeed in this role. However, missing these weekly targets hurts the whole team. Let's stick to the agreed-upon schedule. You can honor that, can't you?\"", bundle: 'pro' },
+        { q: "A narcissist at work makes a personal comment about your appearance.", a: "\"I value our work together. However, that personal comment is unprofessional in this office. Let's get back to the spreadsheet. Reasonable?\"", bundle: 'pro' },
+        { q: "Your boss interrupts you repeatedly while you are explaining a process.", a: "\"I want this explanation to be perfect for you. However, interrupting the flow makes it harder to be clear. What do you say we wait for the pause at the end? Can I count on your support?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "\"I\" Instead of \"You\"",
+      guideFront: "Lead with an \"I\" statement when...",
+      guideBack: "One way to respond.",
+      description: "Swap blame-filled \"You\" language for \"I\" statements to slow down the other person's self-talk and reduce arguments. • It works because \"You\" triggers an immediate internal defense; \"I\" provides information about your state. • Typical phrases: \"I find it...\", \"I'm concerned...\", \"I was under the impression...\".\n\n1. **The 'I' Lead:** Start with your observation or feeling. \"I find it uncomfortable...\".\n2. **The Link:** Connect it to a professional standard. \"...because I appreciate our professional relationship.\"\n3. **The Question:** End with a tag to check for agreement. \"...that wouldn't be a problem, would it?\" **Mindset:** I am the cause, not the effect. I am laying down the ground rules for the relationship.",
+      inputs: [
+        { q: "A colleague is asking you nosy personal questions at your desk.", a: "\"I find it uncomfortable when you ask me personal questions like that because I appreciate our professional relationship and want to keep it that way. That wouldn't be a problem, would it?\"", bundle: 'free' },
+        { q: "You need to bring up a difficult topic with a male colleague.", a: "\"Mark, I need your help. I'm troubled and I'd like to get your perspective on something.\"", bundle: 'free' },
+        { q: "You are delivering unfortunate news to a client.", a: "\"Mr. Jones, I'm concerned that the timeline we discussed has shifted. I have some unfortunate news to share.\"", bundle: 'free' },
+        { q: "Someone is using inflammatory language in a professional meeting.", a: "\"I suggest we refrain from using that type of dehumanizing rhetoric as it is counterproductive to our mission. Wouldn't you agree?\"", bundle: 'free' },
+        { q: "You were blamed for a mistake and you want to clarify without being defensive.", a: "\"I was under the impression that these were due on Thursday. Could you show me where the breakdown occurred?\"", bundle: 'free' },
+        { q: "You want to show you are in control during a Zoom call where things are chaotic.", a: "\"I'm the cause here, and I want to clarify, not conclude. I'm seeing different information from what you have—could you share your screen?\"", bundle: 'pro' },
+        { q: "You realize your actions made someone feel invisible.", a: "\"I apologize for making you feel as though you weren't important here, because I do notice you and you are a valued part of this team.\"", bundle: 'pro' },
+        { q: "You need to tell someone they aren't authorized to make a decision.", a: "\"I have a standard of service that I must maintain, and that means I must stick to the established procedure here. I'm sure you can respect that.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Lead-in & Closing Lines",
+      guideFront: "Use an anchor line to start or end a talk when...",
+      guideBack: "One way to respond.",
+      description: "Use short, name-focused lead-ins to set the tone, and closed-ended questions to signify the conversation is finished. • It works because lead-ins signal a \"trained, polished professional,\" while closers prevent the \"Porky the Pig\" trailing-off effect. • Typical phrases: \"[Name], I need your help.\", \"[Name], I'm concerned.\", \"Are we on the same page?\", \"Can I count on you?\".\n\n1. **The Lead-in:** Use their name + \"I\" language + pause. \"Mark, I'm concerned.\"\n2. **The Meat:** Deliver the core message succinctly.\n3. **The Closer:** Use a closed-ended question. \"Can I count on your support?\" **Mindset:** I am Never Bound to any conversation. I signal the beginning and the end with authority.",
+      inputs: [
+        { q: "You need to tell an employee that their project has been canceled.", a: "\"John, I have some unfortunate news. [Meat] Can I count on your help with the transition?\"", bundle: 'free' },
+        { q: "You want to start a conversation about a budget challenge.", a: "\"Mary, I need your help. I'm concerned about the XYZ department spending. Are we on the same page regarding the limits?\"", bundle: 'free' },
+        { q: "You are finishing a feedback session and want a clean exit.", a: "\"Do you need anything else from me? [Pause] Great, I hope the rest of your day is a pleasant one.\"", bundle: 'free' },
+        { q: "You want to start a talk without saying \"We need to talk\" (the relationship killer).", a: "\"Charlie, I need your help. I've noticed I'm taking on too much work and I'd like to adjust my list.\"", bundle: 'free' },
+        { q: "You are leaving a meeting that has become unproductive.", a: "\"I have nothing positive to contribute anymore, so I'm exiting. That's all right with everyone here, isn't it?\"", bundle: 'free' },
+        { q: "You want to wrap up an instruction given to a subordinate.", a: "\"Does that sound doable for you? [Pause] Excellent. I'll check back on Friday.\"", bundle: 'pro' },
+        { q: "You are entering a difficult negotiation and want to set a powerful tone.", a: "\"[Name], I have made a decision. [Pause] I'm ready to discuss the terms.\"", bundle: 'pro' },
+        { q: "You are finishing a talk with a toxic person and want to \"power down.\"", a: "\"Continuing this conversation with me is not an option. Have a good day. Goodbye.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  oconnor5: [
+    {
+      name: "The Steeple",
+      guideFront: "Use the Steeple when...",
+      guideBack: "A possible response or physical move.",
+      description: "Place your fingertips together in the form of a steeple while keeping palms apart. • It works because it is a very powerful visual communication strategy that subconsciously makes others believe you are 100% confident in your message. • Typical phrases: \"I am very confident in...\", \"I believe that...\", \"My experience shows...\".\n\n1. **The Standard Steeple:** Forearms planted heavily on the table, fingers raised together. \"I’m very confident in my team's ability.\"\n2. **The 4-Second Rule:** Implement the pose for a few seconds during a key point, then return to interlocked fingers.\n3. **The Active Listener:** Using the posture while leaning forward to show you are engaged and powerful. **Mindset:** My physical presence confirms the strength of the words I am delivering.",
+      inputs: [
+        { q: "You are asked in an interview how confident you are in your management skills.", a: "(Place fingertips together) \"I am very confident in my leadership abilities; it’s one of my core strengths.\"", bundle: 'free' },
+        { q: "You are presenting a solution to a difficult budget problem.", a: "(Implement the steeple for 4 seconds) \"I believe this is the most economical and effective path forward.\"", bundle: 'free' },
+        { q: "You are in a high-risk negotiation and want to project power without speaking.", a: "(Plant forearms on the table and slowly form a steeple while listening).", bundle: 'free' },
+        { q: "A customer asks if you can guarantee the deadline will be met.", a: "(Implementing the steeple) \"I have checked the data, and I can count on my team to deliver by Thursday.\"", bundle: 'free' },
+        { q: "You are at the dinner table and want to practice appearing more authoritative.", a: "(Practice the steeple for 4 seconds while telling a story about your day).", bundle: 'free' },
+        { q: "You are being challenged on your qualifications for a new project.", a: "(Steeple) \"I’ve been doing this for 15 years, and I enjoy sharing that expertise with the organization.\"", bundle: 'pro' },
+        { q: "You want to show you are an \"active listener\" while your boss is speaking.", a: "(Lean forward, forearms on the table, fingertips lightly touching).", bundle: 'pro' },
+        { q: "You find yourself fidgeting or scratching your neck during a meeting.", a: "(Stop the fidgeting and anchor your hands into a confident steeple).", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Look Away",
+      guideFront: "Use the Look Away when...",
+      guideBack: "A possible response or physical move.",
+      description: "Manage eye contact by following the \"7-second rule\"—breaking contact after 7-10 seconds to avoid being perceived as aggressive. • It works because holding a glance too long (staring down) is interpreted by the human brain as a sign of aggression, dominance, or psychosis. • Typical phrases: (Silent maneuver), \"Let me check my notes...\", \"I see your point.\"\n\n1. **The Natural Break:** Looking down (not up) every seven seconds, then looking back into the iris.\n2. **The Icy Stare:** Keeping eyelids barely covering the top of the iris to project focus without aggression.\n3. **The Mirror Break:** Breaking eye contact when the other person does, maintaining a rhythmic social flow. **Mindset:** I use eye contact to connect with people, not to conquer them.",
+      inputs: [
+        { q: "You are in a job interview and have been maintaining intense eye contact for a full minute.", a: "(Look down briefly at your portfolio, then look back up into their eyes).", bundle: 'free' },
+        { q: "You feel yourself getting aggressive or \"wide-eyed\" during a disagreement.", a: "(Relax your eyelids so they cover the top of the iris—the 'Icy Stare').", bundle: 'free' },
+        { q: "You are listening to a long explanation and want to look comfortable, not creepy.", a: "(Every 7-8 seconds, glance down at the table before returning your gaze).", bundle: 'free' },
+        { q: "You want to show a puppy (or a person) that you are the dominant, calm leader.", a: "(Maintain eye contact comfortably until they look away first).", bundle: 'free' },
+        { q: "You are being berated by a toxic person and want to show you aren't rattled.", a: "(Face them head-on, chest to chest, using the Icy Stare).", bundle: 'free' },
+        { q: "You realize you've been \"staring down\" your opponent in a negotiation.", a: "(Softly break eye contact by looking at your notebook for a moment).", bundle: 'pro' },
+        { q: "You want to look like a \"polished, trained communicator\" during a Zoom call.", a: "(Look into the lens for several seconds, then briefly check your screen data).", bundle: 'pro' },
+        { q: "You feel a colleague is trying to \"get your goat\" with a rude comment.", a: "(Face them head-on with a calm, 3-second look using neutral eyelids).", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Territorial Markers",
+      guideFront: "Use territorial markers when...",
+      guideBack: "A possible response or physical move.",
+      description: "Intentionally take up space and use physical objects (notebooks, pens, chairs) to signal that you belong in the room. • It works because people who feel they don't belong try to take up as little space as possible; taking space signals high status and \"dominion.\" • Typical phrases: \"Let me pull this chair up.\", \"I'm going to set my things here.\", \"I'll take this spot.\"\n\n1. **The Chair Move:** Pulling your chair all the way to the desk or table to signal you are in your \"own home.\"\n2. **The Object Spread:** Placing your notebook, pen, or water in your designated area to prevent others from overflowing into it.\n3. **The Open Posture:** Sitting with chest to the sky and arms uncrossed to show you are not defensive. **Mindset:** I belong here as much as anyone else, and I am comfortable using the resources in this room.",
+      inputs: [
+        { q: "You walk into a job interview and the guest chair is set two yards away from the desk.", a: "(Pick up the chair and move it to a comfortable, close position before sitting down).", bundle: 'free' },
+        { q: "You are at a conference table and people's folders are sliding into your workspace.", a: "(Don't ask—simply slide their things back and place your own notebook firmly on the table).", bundle: 'free' },
+        { q: "You are entering a meeting where you feel nervous and small.", a: "(Stand with feet shoulder-width apart, chest out, and take up your full height).", bundle: 'free' },
+        { q: "You have a lot of items in your lap (bag, coat) while sitting in a lobby.", a: "(Set your items on the seat next to you or the table; never put them on the floor).", bundle: 'free' },
+        { q: "You are about to deliver a presentation and want to look like \"management material.\"", a: "(Stand head-on to the group, hands visible on the lectern or in an open pose).", bundle: 'free' },
+        { q: "You are submitting your resignation and want to leave with maximum dignity.", a: "(Sit down with chest to the sky, posture high, and wait silently for them to read).", bundle: 'pro' },
+        { q: "You want to use a \"Power Pose\" to change your biochemistry before a big talk.", a: "(Find a private spot and hold the 'Big X' pose for two minutes).", bundle: 'pro' },
+        { q: "A toxic person is trying to ignore your presence in a meeting.", a: "(Lean forward into their space slightly and place your hands visibly on the table).", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Vocal Power Tone",
+      guideFront: "Find your Vocal Power Tone when...",
+      guideBack: "A possible response or physical move.",
+      description: "Speak from the diaphragm at a volume that ensures your listener never has to ask you to repeat yourself. • It works because people perceive loud, clear talkers as more credible and confident; soft talking is often interpreted as a lack of conviction or worthiness. • Typical phrases: \"Good morning!\", \"I have a solution.\", \"Can I count on you?\"\n\n1. **The Power Hum:** Saying \"mm-hmm\" to find the vibration at the bottom of your throat.\n2. **The 20-Foot Rule:** Speaking loudly enough that someone 20 feet away could hear you without you feeling like you're yelling.\n3. **The Mic Rejection:** Choosing to speak without a microphone in a room of 50-100 people to maintain your natural dynamic. **Mindset:** My message is worthy of being heard, and I will not force my listener to do the work of hearing me.",
+      inputs: [
+        { q: "You are answering the phone in a professional environment.", a: "(Hum \"mm-hmm\" to find your tone) \"Good morning, Dan's Donuts, this is Dan. How can I help you?\"", bundle: 'free' },
+        { q: "You are giving a presentation in a medium-sized room and are offered a mic.", a: "\"Thank you, but I don't need it. I can make sure everyone in the back hears me just fine.\"", bundle: 'free' },
+        { q: "Someone asks \"Pardon me? What was that?\" for the second time.", a: "(Take a breath from the diaphragm and increase your volume significantly) \"I said, the report is ready.\"", bundle: 'free' },
+        { q: "You want to project confidence while introducing yourself to a stranger.", a: "(Speak loudly and proudly) \"Hi! I'm Dan. I haven't had a chance to meet you yet.\"", bundle: 'free' },
+        { q: "You are in a noisy restaurant and need to get the server's attention.", a: "(Use your power tone to say their name clearly) \"Excuse me, John!\"", bundle: 'free' },
+        { q: "You feel your voice getting high-pitched or shaky because you're nervous.", a: "(Pause, do one 'Box Breath', and hum 'mm-hmm' internally to drop your tone).", bundle: 'pro' },
+        { q: "You are being interrupted and need to take the floor back with authority.", a: "(Increase volume without increasing emotion) \"I'm speaking.\"", bundle: 'pro' },
+        { q: "You want to signal you are a \"polished executive\" during a meeting.", a: "(Ensure your greeting and lead-in lines are delivered at a high, steady volume).", bundle: 'pro' },
+      ]
+    },
+  ],
+  oconnor6: [
+    {
+      name: "Coping Statements",
+      guideFront: "Use a coping statement when...",
+      guideBack: "A possible response.",
+      description: "Internal syntax used to regulate emotions when under pressure or about to lose control. • The brain processes instructions more efficiently when they are in the present tense and positively phrased. • Negative or future-focused commands (like \"I won't cry\") are often ignored or trigger the very behavior you are trying to avoid. • Mindset: \"My internal narrative determines my external response; I use syntax to stay in the logical side of my brain.\"",
+      inputs: [
+        { q: "You feel yourself starting to get angry during a confrontation.", a: "(Internal) \"I am cool, calm, and collected.\"", bundle: 'free' },
+        { q: "You are about to walk into a high-stakes presentation and feel nervous.", a: "(Internal) \"I am confident and prepared.\"", bundle: 'free' },
+        { q: "You feel the urge to cry during a difficult feedback session.", a: "(Internal) \"I am calm.\"", bundle: 'free' },
+        { q: "Someone is pushing your buttons and you want to keep your cool.", a: "(Internal) \"I am in control of my emotions.\"", bundle: 'free' },
+        { q: "You feel overwhelmed by a sudden change in plans at work.", a: "(Internal) \"I am at peace with this challenge.\"", bundle: 'free' },
+        { q: "You are tempted to say \"I'm not going to let them get to me.\"", a: "(Correct to) \"I am the cause, not the effect.\"", bundle: 'pro' },
+        { q: "You feel your heart racing before a difficult phone call.", a: "(Internal) \"I am breathing deeply and staying focused.\"", bundle: 'pro' },
+        { q: "You are about to snap and want to remind yourself of your standard.", a: "(Internal) \"I am a mindful communicator.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Broken Record",
+      guideFront: "Use the Broken Record when...",
+      guideBack: "A possible response.",
+      description: "A persistence technique where you calmly repeat a valid message without adding any new justification or defense. • Introducing new thoughts or justifications gives the other person \"ammunition\" to keep you on the run. • Repetition signals that your original message is firm and non-negotiable, forcing the other person to eventually accept it. • Mindset: \"I only defend what I believe to be vulnerable. My stance is solid, so it needs no new explanation.\"",
+      inputs: [
+        { q: "Someone is pressuring you to finish a task faster than is safe.", a: "\"I understand you're in a hurry, however I need to do this correctly to ensure quality.\"", bundle: 'free' },
+        { q: "They push back: \"But we're going to be late if you don't hurry!\"", a: "\"That may be, but I need to do this correctly to ensure quality.\"", bundle: 'free' },
+        { q: "They try guilt: \"I thought you were a team player!\"", a: "\"That may be, but again, I need to do this correctly to ensure quality.\"", bundle: 'free' },
+        { q: "You've announced a new policy and an employee says \"This will ruin morale.\"", a: "\"Is that so? Well, we will be using the new system starting Monday.\"", bundle: 'free' },
+        { q: "They continue: \"Nobody is going to follow these rules.\"", a: "\"That may be, but we will be using the new system starting Monday.\"", bundle: 'free' },
+        { q: "A \"Time Sucker\" tries to ignore your Red availability sign.", a: "\"I'm in focus mode right now. I'll be available during my next green block.\"", bundle: 'pro' },
+        { q: "They keep talking: \"It will only take a second, I promise.\"", a: "\"That may be, but as I said, I'll be available during my next green block.\"", bundle: 'pro' },
+        { q: "You told a friend you'd be ready in 10 minutes and they keep shouting \"Hurry up!\"", a: "\"I'll be ready in 10 minutes. If you'd like to go ahead, I can meet you there.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "\"I Forgive You\"",
+      guideFront: "Use \"I forgive you\" when...",
+      guideBack: "A possible response.",
+      description: "Replacing the reflexive \"It's okay\" with forgiveness language when someone apologizes for mistreating you. • Saying \"It's okay\" when it wasn't okay five seconds ago tells your brain that your worth is low and that mistreatment is acceptable. • \"I forgive you\" acknowledges that a transgression occurred while maintaining your professional and personal standards. • Mindset: \"I value myself too much to tell people it's okay to mistreat me. Forgiveness is a gift I give to both of us.\"",
+      inputs: [
+        { q: "A coworker apologizes for snapping at you in a meeting.", a: "\"Thank you for the apology. I forgive you.\"", bundle: 'free' },
+        { q: "Someone says \"I'm sorry I was late and held up the project.\"", a: "\"I accept your apology and I forgive you. Let's get back on track.\"", bundle: 'free' },
+        { q: "You are tempted to say \"Oh, don't worry about it, it's fine.\"", a: "(Correct it) \"I appreciate you saying that. I forgive you.\"", bundle: 'free' },
+        { q: "They hurt your feelings with a joke and then apologize.", a: "\"You did hurt my feelings, however I forgive you. Let's put a period on this.\"", bundle: 'free' },
+        { q: "You want to show you are moving past a conflict permanently.", a: "\"I forgive you. I’m ready to put this behind us and move forward.\"", bundle: 'free' },
+        { q: "They apologize but you can tell they expect you to say \"it's okay.\"", a: "\"I forgive you. I’m happy to put a period on this one.\"", bundle: 'pro' },
+        { q: "You want to acknowledge their honesty while accepting the apology.", a: "\"I admire your honesty in coming to me. I forgive you.\"", bundle: 'pro' },
+        { q: "They've apologized for a recurring mistake and you want to set a limit.", a: "\"I forgive you for this instance. Next time, if we stick to the plan, we can avoid this.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Value Journal",
+      guideFront: "Use the Value Journal when...",
+      guideBack: "A possible response.",
+      description: "A daily habit of quantifying the extra revenue or organizational value you create to prepare for negotiations. • Negotiations are based on data and revenue impact, not feelings or \"hard work.\" • By tracking \"invisible labor\" and \"beyond-paygrade\" tasks daily, you build an unarguable case for a raise or promotion. • Mindset: \"I am a professional whose value can be measured in numbers. I don't ask for a raise; I justify a return on investment.\"",
+      inputs: [
+        { q: "You filled in for a manager for two days while they were sick.", a: "(Write in journal) \"Acted as Interim Manager for 16 hours. Managed team of 10. (Value: $X based on manager's salary).\"", bundle: 'free' },
+        { q: "You saved a frustrated customer who was about to cancel their account.", a: "(Write in journal) \"Prevented cancellation of Client Jones. (Value: $5,000 annual recurring revenue).\"", bundle: 'free' },
+        { q: "You implemented a new filing system that saves everyone 10 minutes a day.", a: "(Write in journal) \"Created new efficiency protocol. Saves team 5 hours/week. (Value: $Z in recovered productivity).\"", bundle: 'free' },
+        { q: "You are a week away from your performance review.", a: "\"I've compiled a summary of the additional revenue impact I've had this year. I'll drop off a copy for your review.\"", bundle: 'free' },
+        { q: "You want to quantify your value before asking for a promotion.", a: "(Check journal for how many 'Level 10' tasks you performed this month versus your actual job description).", bundle: 'free' },
+        { q: "You were asked to train a new hire, which isn't in your contract.", a: "(Write in journal) \"Conducted 10 hours of training. Accelerated onboarding by 2 weeks. (Value: $W in training costs saved).\"", bundle: 'pro' },
+        { q: "You discovered a billing error that was costing the company money.", a: "(Write in journal) \"Identified $2,000 discrepancy in vendor invoice. Recovered funds immediately.\"", bundle: 'pro' },
+        { q: "Your boss asks why they should give you the maximum raise.", a: "\"Based on my logs, my contributions resulted in a 15% increase in department efficiency this quarter. Here are the numbers.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  oconnor7: [
+    {
+      name: "The Visual Hook for Names",
+      guideFront: "Create a visual hook for names when...",
+      guideBack: "A possible mental or verbal move.",
+      description: "Associate new names with established characters and humorous physical actions to anchor them in long-term memory. • The brain cannot remember every name through repetition alone; it needs \"hooks\" and creative stories. • It works because associating a stranger with a funny cartoon or movie character strikes an emotional chord that makes the name easier to recall. • Typical phrases: \"Hi [Name], nice to meet you [Name],\" \"Substitute your name for mine,\" \"Repeat it three times\".\n\n1. **The Character Association:** Visualize a famous character with the same name standing next to them. \"I met Patty and visualized Peppermint Patty standing beside her\".\n2. **The Physical Interaction:** Picture the character and the new person touching or doing something physical. \"Picture them holding hands or stroking their hair\".\n3. **The Verbal Anchor:** Repeat the name out loud at least three times during the first encounter. **Mindset:** I don't rely on my memory; I play games in my head to ensure people feel seen.",
+      inputs: [
+        { q: "You just met a woman named Patty at a networking event.", a: "(In your mind, visualize Peppermint Patty from the Peanuts standing beside her)", bundle: 'free' },
+        { q: "You want to anchor the name Patty during the initial greeting.", a: "\"Hi Patty, nice to meet you. Tell me, Patty, how are you enjoying the event?\"", bundle: 'free' },
+        { q: "You are introduced to a man named Peter and want to remember him easily.", a: "(Picture Peter Pan flying around him and shaking his hand)", bundle: 'free' },
+        { q: "You are leaving a conversation with Peter and want to finalize the memory hook.", a: "\"Well, Peter, it was really nice to meet you. I hope to see you again soon.\"", bundle: 'free' },
+        { q: "You have forgotten a name and want to avoid an awkward \"friend-pretending\" game.", a: "\"Hi, I don't know if you remember meeting me, but I'm [Your Name]. What's your name again?\"", bundle: 'free' },
+        { q: "You want to use humor to make a name stick in a large group setting.", a: "(Picture the character doing something ridiculous, like balancing a pie on the new person's head)", bundle: 'pro' },
+        { q: "You are at a workshop with 150 people and want to show them you've mastered their names.", a: "\"Of course I remember you, Patty. We spoke about the budget earlier.\"", bundle: 'pro' },
+        { q: "You want to ensure your visual hook is strong enough for the \"street test.\"", a: "(Confirm the physical action in the visualization—are they shaking hands or high-fiving?)", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The OFF Technique",
+      guideFront: "Use the OFF technique when...",
+      guideBack: "A possible social move.",
+      description: "Use Offer, Favor, and Familiar language to lower social anxiety and build instant comfort with strangers. • Rejection of an offer breaks social protocol and stops fluidity; saying \"yes\" shows you are comfortable as if in your own home. • It works because simple favors force the other person to justify why they are helping you, which subconsciously builds their affinity for you. • Typical phrases: \"Would you like me to grab you one as well?\", \"Can you watch my stuff?\", \"Save my spot.\"\n\n1. **The Offer:** Make an \"as well\" offer to show a service attitude. \"I'm getting coffee, would you like one as well?\".\n2. **The Favor:** Ask for a simple, undeniable favor. \"Can you watch my bag while I step away for a minute?\".\n3. **Familiar Language:** Use phrases typically reserved for close friends to signal instant rapport. \"You're in charge while I'm gone!\". **Mindset:** I belong here, and I bring the dignity and fluidity to every social interaction.",
+      inputs: [
+        { q: "You are at a job interview and the receptionist offers you a glass of water.", a: "\"I would love one, thank you. That’s very kind of you.\"", bundle: 'free' },
+        { q: "You are getting a workbook at a seminar and notice the person next to you doesn't have one.", a: "\"I'm going to grab a workbook. I notice you don't have one—would you like me to grab you one as well?\"", bundle: 'free' },
+        { q: "You need to step away from your seat at a crowded event for a moment.", a: "\"Joe, can you do me a favor and watch my stuff while I'm gone so no one walks off with it?\"", bundle: 'free' },
+        { q: "You are leaving the room for a minute and want to use familiar language to build rapport.", a: "\"I'll be right back. You're in charge while I'm gone, okay?\"", bundle: 'free' },
+        { q: "You have finished a quick task and are returning to your seat.", a: "\"Thanks for saving my spot! I really appreciate it.\"", bundle: 'free' },
+        { q: "You want to signal you are \"management material\" by being gracious to a server.", a: "(Use the server's name at the end of the order) \"I think that'll be it, thank you John.\"", bundle: 'pro' },
+        { q: "You are offered a \"better seat\" up front during a busy meeting.", a: "\"I'm with you! Let's go.\" (Accepting with open arms rather than saying 'I'm fine')", bundle: 'pro' },
+        { q: "You want to decompress in the middle of a social event without looking awkward.", a: "(Use OFF to step away) \"I'm out of water—can you watch my notebook? I'll be right back.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The \"Person, Place, or Thing\" Opener",
+      guideFront: "Use a PPT opener when...",
+      guideBack: "A possible opening line.",
+      description: "Start a conversation effortlessly by noticing one positive detail about the environment, the venue, or a specific person. • Fishing for \"bait\" makes it easy for others to communicate with you; the more difficult you are to talk to, the less people want you around. • It works because a positive observation about shared surroundings asks for nothing but an opinion, which lowers the barrier to entry. • Typical phrases: \"Did you happen to see [X]?\", \"I hear that [Y] is phenomenal,\" \"Are you here for [Z]?\"\n\n1. **The Thing:** A physical detail of the room. \"That antique tile on the floor is phenomenal\".\n2. **The Person:** A participant or someone involved in the event. \"My friend's son is playing the violin; are you here with someone?\".\n3. **The Place:** The venue itself or the location. \"This museum is beautiful; have you been here before?\". **Mindset:** I don't need to be interesting; I just need to notice one positive truth.",
+      inputs: [
+        { q: "You are parking your car or entering a building and want to find a positive detail to mention later.", a: "(Notice a cool architectural detail or a beautiful tree)", bundle: 'free' },
+        { q: "You just met someone named Joe and want to open the talk using the venue.", a: "\"Nice to meet you, Joe. Did you happen to see that tile on the floor as you were coming in?\"", bundle: 'free' },
+        { q: "You are at a cultural event where a child is performing.", a: "\"I'm here because my friend's son, Victor, is playing. Are you here for the event itself?\"", bundle: 'free' },
+        { q: "They \"take the bait\" and mention they've lived in the city their whole life.", a: "\"Really? Tell me, what was it like growing up here?\"", bundle: 'free' },
+        { q: "You want to reel someone in after they make a brief comment about the food.", a: "\"I agree, it’s great. What do you think is the best thing they’ve served so far?\"", bundle: 'free' },
+        { q: "You are at a networking event and want to keep the conversation rolling after the initial PPT hook.", a: "\"Tell me about other places like this you've gone to. I'd love to hear your recommendations.\"", bundle: 'pro' },
+        { q: "You want to start a conversation with a stranger at a social event without feeling stressed.", a: "\"I haven't had a chance to meet you yet. I'm [Your Name]. What's your name?\"", bundle: 'pro' },
+        { q: "You need to buy time during an opener while you think of your next move.", a: "(Use a stall tactic) \"I can appreciate why you'd say that. I've heard others mention the same thing.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Empowering Praise",
+      guideFront: "Use empowering praise when...",
+      guideBack: "One way to phrase the compliment.",
+      description: "Empower others by telling them they \"should be proud\" of themselves, shifting the focus from your validation to their self-esteem. • It is one thing to have someone proud of you, but an entirely different thing to be proud of yourself. • It works because this phrase gives the receiver \"permission\" to recognize their own worth, often resulting in an immediate posture change (chest up, chin up). • Typical phrases: \"You should be proud of yourself,\" \"Your passion comes through,\" \"I appreciate your level of professionalism.\"\n\n1. **The Shift:** Moving from \"I am proud of you\" to \"You should be proud.\"\n2. **The Personal Focus:** Compliment who they ARE, not just the job they did. \"I appreciate your professionalism\".\n3. **The Tag Question:** Engage them with a confirmation. \"Were you aware that people noticed that?\". **Mindset:** I use my words to help others see their own greatness.",
+      inputs: [
+        { q: "Your child gets straight A's on their report card and you want to do more than just praise them.", a: "\"I am so proud of you, sweetheart. And you know what? You should be really proud of yourself too.\"", bundle: 'free' },
+        { q: "A junior colleague finished a very difficult project ahead of schedule.", a: "\"You did a great job on that report. You should be really proud of yourself for pulling that off.\"", bundle: 'free' },
+        { q: "You want to compliment a teammate's specific skill without sounding like a \"mom.\"", a: "\"I really appreciate your attention to detail; it’s one of the reasons I enjoy working with you so much.\"", bundle: 'free' },
+        { q: "You want to make an employee feel more \"visible\" after they created a brochure.", a: "\"Your passion comes through in everything you do, including this brochure. Did you know that?\"", bundle: 'free' },
+        { q: "You are a \"Driver\" type who finds it hard to say \"I'm proud of you.\"", a: "\"Well, you did a great job. You should be proud of yourself.\"", bundle: 'free' },
+        { q: "You want to ensure your compliment makes the other person feel \"seen.\"", a: "\"I appreciate the level of professionalism you bring to this office. Were you aware that everyone here values that?\"", bundle: 'pro' },
+        { q: "You want to empower a friend who just successfully handled a tough family crisis.", a: "\"The way you stayed calm was remarkable. You should be incredibly proud of yourself.\"", bundle: 'pro' },
+        { q: "You are giving a compliment and want to encourage the person to respond and engage.", a: "\"Did you know that's one of the things people always say about you?\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  jimmy1: [
+    {
+      name: "Character Discernment",
+      guideFront: "Use character discernment when...",
+      guideBack: "A possible response.",
+      description: "Assess the core of a person by looking at how they treat people who can do nothing for them. • True kindness is consistent across all interactions, not just when someone is trying to impress you. • Look for \"green flags\" of empathy and selflessness early on. • Mindset: \"I am choosing my future based on their current patterns, not their potential.\"",
+      inputs: [
+        { q: "You are on a third date and want to see if they are actually a kind person.", a: "(observe how they speak to the waiter or a stranger in the street)", bundle: 'free' },
+        { q: "They are telling you a story about a conflict they had with a subordinate at work.", a: "\"How did you feel about their perspective in that situation?\"", bundle: 'free' },
+        { q: "You want to test if they can own a small mistake early on.", a: "\"Hey, I think there was a misunderstanding about the time. What happened on your end?\"", bundle: 'free' },
+        { q: "You are looking for signs of consistency in how they treat you versus others.", a: "(compare how they talk about their 'annoying' family to how they talk to you)", bundle: 'free' },
+        { q: "You want to see if they are a 'taker' or a 'giver'.", a: "(notice if they ever ask about your day or stressors without being prompted)", bundle: 'free' },
+        { q: "They are being very sweet to you but just snapped at a parking attendant.", a: "\"That seemed like a pretty intense reaction for a small mistake. What was that about?\"", bundle: 'pro' },
+        { q: "You want to know if they admire people for who they are or just what they do.", a: "\"What do you value most about your closest friend?\"", bundle: 'pro' },
+        { q: "You are checking for the \"7 signs\" of a healthy partner.", a: "\"Do you feel like your needs are usually met in your relationships?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Values Alignment",
+      guideFront: "Align on values when...",
+      guideBack: "A possible response.",
+      description: "Explicitly discuss non-negotiables like religion, money, and kids early to ensure compatibility. • Love does not magically fix fundamental differences in goals or lifestyle. • Sharing your \"story\" and needs invites them to accept the real you. • Mindset: \"I would rather be rejected for who I am than chosen for a version of myself I have to maintain.\"",
+      inputs: [
+        { q: "You are getting serious and need to know their stance on having children.", a: "\"I've always envisioned having kids one day. What’s your vision for the future in that area?\"", bundle: 'free' },
+        { q: "You want to know how they handle money before things get complicated.", a: "\"Money can be such a huge stressor. How do you usually like to handle budgeting or savings?\"", bundle: 'free' },
+        { q: "You are discussing how to split domestic labor in a future home.", a: "\"I value equality in chores. How did your parents split the mental load growing up?\"", bundle: 'free' },
+        { q: "You need to know if they share your view on transparency and honesty.", a: "\"Honesty is a non-negotiable for me. How do you feel about sharing passwords or being 'all-in'?\"", bundle: 'free' },
+        { q: "You want to know if your religious or political views are a dealbreaker.", a: "\"My faith is a huge part of my life. How important is that kind of alignment to you?\"", bundle: 'free' },
+        { q: "They say \"we'll just figure it out\" regarding a major value difference.", a: "\"I'd rather have the hard conversation now than the same fight for ten years.\"", bundle: 'pro' },
+        { q: "You want to know if they view pornography as a violation of trust.", a: "\"For me, pornography feels like cheating. Where do you draw the line on exclusivity?\"", bundle: 'pro' },
+        { q: "You are checking if they find joy in the world or default to negativity.", a: "\"I love looking at sunsets and practicing gratitude. Does that feel silly to you or do you enjoy that too?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Accepting Influence",
+      guideFront: "Accept their influence when...",
+      guideBack: "A possible response.",
+      description: "Allow your partner’s perspective to affect your decisions and acknowledge that they are on your team. • Refusing to share power leads to a high risk of relationship collapse. • It means being malleable and responsive to constructive feedback. • Mindset: \"I trust my partner’s heart, so their feedback is information, not an attack.\"",
+      inputs: [
+        { q: "Your partner suggests a different way to handle a household budget.", a: "\"That’s a good point. Let’s look at your way and see if it works better.\"", bundle: 'free' },
+        { q: "They give you feedback that you've been a bit distant lately.", a: "\"I hear you. I didn't realize I was doing that, but I want to reconnect. What can we do tonight?\"", bundle: 'free' },
+        { q: "You are making a big decision about a job and they express a concern.", a: "\"I want to take your perspective into account. Tell me more about what worries you.\"", bundle: 'free' },
+        { q: "You are arguing about where to go on vacation.", a: "\"You seem really passionate about this spot. I'm willing to bend if it means a lot to you.\"", bundle: 'free' },
+        { q: "They suggest you handle a conflict with a friend differently.", a: "\"I trust your judgment. Why do you think that approach would be better?\"", bundle: 'free' },
+        { q: "You feel a strong urge to defend yourself against their feedback.", a: "\"I’m feeling defensive right now, but I know you're on my team. Let me listen again.\"", bundle: 'pro' },
+        { q: "You are a man who has historically felt that you 'need to lead' alone.", a: "\"I don't need to do this by myself. What do you think is the best move for us?\"", bundle: 'pro' },
+        { q: "They are being vulnerable about a need you haven't been meeting.", a: "\"Thank you for telling me. I want to be the partner you deserve. How can I start?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Enforcing Mutual Respect",
+      guideFront: "Enforce mutual respect when...",
+      guideBack: "A possible response.",
+      description: "Establish a zero-tolerance policy for belittling, yelling, or name-calling during conflict. • Boundaries are about what YOU will do (e.g., leave the room), not controlling them. • Respect is level zero; without it, intimacy and trust cannot survive. • Mindset: \"I respect myself enough to walk away from a conversation that has become unsafe.\"",
+      inputs: [
+        { q: "Your partner starts raising their voice and calling you names.", a: "\"I want to hear what you have to say, but I won't be yelled at. I'm taking a 30-minute break.\"", bundle: 'free' },
+        { q: "They mock your feelings by saying \"you're just being too sensitive.\"", a: "\"My feelings aren't up for debate. We can talk when you're ready to be respectful.\"", bundle: 'free' },
+        { q: "You feel like you are being 'poked' or baited into a fight.", a: "\"I’m not going to take the bait. I’m going to go for a walk and we can try again later.\"", bundle: 'free' },
+        { q: "They belittle your intelligence in front of friends.", a: "\"That comment was disrespectful. I need us to be a team, especially in public.\"", bundle: 'free' },
+        { q: "You are afraid to bring something up because of their reaction.", a: "\"I have something to share, but I need us to agree on no yelling before I start.\"", bundle: 'free' },
+        { q: "They follow you into another room while you are trying to take a reset break.", a: "\"I am enforcing my boundary. I am leaving the house for a bit to get regulated.\"", bundle: 'pro' },
+        { q: "You catch yourself about to use a critical \"you always\" statement.", a: "\"Wait, let me start over. I'm feeling overwhelmed and I need some help.\"", bundle: 'pro' },
+        { q: "They dismiss a boundary you just set as being \"controlling.\"", a: "\"I’m not controlling you; I’m controlling my access to this conversation.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  jimmy2: [
+    {
+      name: "The Soft Startup",
+      guideFront: "Use a soft startup when...",
+      guideBack: "A possible response.",
+      description: "Begin difficult conversations gently to predict a collaborative outcome rather than a fight. • The first minute of a discussion is extremely predictive of whether it will be productive or turn into a missed opportunity. • It involves checking for the partner's capacity and bringing up a concern without character assassination. • Mindset: \"If I don't start the conversation healthy, I shouldn't be surprised when it doesn't end healthy\".",
+      inputs: [
+        { q: "You have a concern about the household budget and want to talk now.", a: "\"Hey, can I talk to you about something that’s important to me? Is now a good time?\"", bundle: 'free' },
+        { q: "You feel neglected because your partner has been working long hours.", a: "\"I know you've been really busy at work and I appreciate how hard you're working, but I’ve been feeling a bit lonely lately.\"", bundle: 'free' },
+        { q: "You want to discuss a recurring issue with the dishes without attacking them.", a: "\"I have a heart-to-heart thing I'd like to share. Do you have the mental capacity for a talk right now?\"", bundle: 'free' },
+        { q: "You are feeling hurt by a joke they made earlier at dinner.", a: "\"I’d love to check in about something that happened at dinner. Are you in a headspace where you can listen?\"", bundle: 'free' },
+        { q: "You need to talk about parenting styles but it's late at night.", a: "\"I really want to get on the same page about the kids. If now isn't good, can we pick a time tomorrow to sit down?\"", bundle: 'free' },
+        { q: "You feel a lot of anger and want to \"dump\" it on them.", a: "(Wait and self-regulate first) \"I’m feeling fired up, so I want to wait until I can talk to you with respect.\"", bundle: 'pro' },
+        { q: "You want to signal that this isn't just a casual \"logistics\" talk.", a: "\"Vulnerable. Something is heavy on my heart and I need you to be a safe place for me.\"", bundle: 'pro' },
+        { q: "Your partner says \"now isn't a good time\" to your request to talk.", a: "\"I hear you. When do you think you'll have the capacity to circle back to this?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Expression Formula",
+      guideFront: "Use the expression formula when...",
+      guideBack: "A possible response.",
+      description: "Use the structure \"Fact → Feeling → Meaning → Need\" to relay information without blame. • Facts: State the observable event without \"always\" or \"never\". • Feelings: Name an actual emotion (lonely, overwhelmed, hurt). • Meaning: Share \"the story I'm telling myself\" to own your interpretation. • Need: Clearly state what would help you feel close in the future. • Mindset: \"I am sharing my inner world as information, not as a verdict on my partner's character\".",
+      inputs: [
+        { q: "You’ve done the dishes every night this week and feel ignored.", a: "\"I’ve done the dishes every night this week [Fact]. I’m feeling pretty dismissed [Feeling], and the story I’m telling myself is that you don't care about my time [Meaning].\"", bundle: 'free' },
+        { q: "They didn't text you that they would be late for dinner.", a: "\"When I didn't get a text that you'd be late [Fact], I felt scared [Feeling]. The story I told myself is that I wasn't a priority [Meaning].\"", bundle: 'free' },
+        { q: "They were on their phone while you were trying to tell a story.", a: "\"When you stayed on your phone while I was talking [Fact], I felt lonely [Feeling]. I started telling myself that my day isn't interesting to you [Meaning].\"", bundle: 'free' },
+        { q: "You want to finish the formula by stating what you need.", a: "\"...and what I need to feel reconnected is just 10 minutes of undivided attention when you get home.\"", bundle: 'free' },
+        { q: "You feel overwhelmed by the house chores.", a: "\"The house feels very chaotic right now [Fact] and I’m feeling overwhelmed [Feeling]. I’d love it if we could split the chores for this evening [Need].\"", bundle: 'free' },
+        { q: "They got defensive before you could finish the formula.", a: "\"I’m not blaming you; I’m just sharing my heart because I want to feel close to you.\"", bundle: 'pro' },
+        { q: "You are tempted to say \"I feel like you're a jerk.\"", a: "(Correct it) \"I feel disrespected and hurt. I need to feel like we are on the same team.\"", bundle: 'pro' },
+        { q: "You are sharing a \"meaning\" that you know might be wrong.", a: "\"This is the meaning I’m giving this, but I don't want to make assumptions. I’m just feeling hurt and need some reassurance.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Requests Over Criticism",
+      guideFront: "Choose a request over criticism when...",
+      guideBack: "A possible response.",
+      description: "Transform character attacks into specific, positive requests for action. • Criticism attacks the person (\"You are lazy\"); requests address a vulnerable need. • Character attacks trigger the partner's shame and lead to immediate defensiveness. • Mindset: \"Instead of telling them who they are, I will tell them what I need\".",
+      inputs: [
+        { q: "You feel like your partner never touches you anymore.", a: "\"I feel so loved when you touch me. Would you be willing to do that for me more?\"", bundle: 'free' },
+        { q: "You are about to say, \"You're so selfish, you never help me.\"", a: "\"I'm feeling a bit burdened. Could you help me by putting the kids to bed tonight?\"", bundle: 'free' },
+        { q: "You want more quality time and are about to say \"You always work.\"", a: "\"I miss us. Would you be open to planning a date night for us this Friday?\"", bundle: 'free' },
+        { q: "You want them to be more present when you speak.", a: "\"It would mean so much to me if we could put the phones away for 30 minutes and just chat.\"", bundle: 'free' },
+        { q: "You want to be greeted warmly when they get home.", a: "\"It fills my love tank when you give me a hug as soon as you walk through the door. Can we make that a habit?\"", bundle: 'free' },
+        { q: "You are about to say, \"You're so bad at directions.\"", a: "\"Don't worry about it, babe, you got this. You've never not gotten me home before.\"", bundle: 'pro' },
+        { q: "You realize you just used an \"always/never\" statement.", a: "\"Wait, let me start over. I'm feeling overwhelmed and I need some help with the laundry.\"", bundle: 'pro' },
+        { q: "You want more emotional checking in.", a: "\"I love it when you ask about my day. Could you try to initiate that talk tonight?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Owning the Narrative",
+      guideFront: "Own your narrative when...",
+      guideBack: "A possible response.",
+      description: "Use the phrase \"The story I'm telling myself\" to invite clarification instead of war. • This separates your partner's actual intent from your interpretation of the event. • It reduces defensiveness because you aren't stating your interpretation as a fact about them. • Mindset: \"I am responsible for the meaning I give to things, and I'm willing to be wrong\".",
+      inputs: [
+        { q: "They didn't invite you to a lunch with their coworkers.", a: "\"The story I’m telling myself is that you’re embarrassed of me, but I’d love to hear your side.\"", bundle: 'free' },
+        { q: "They have been very quiet all evening and you feel anxious.", a: "\"I'm noticing you're quiet. I'm telling myself that you're mad at me, but is that actually what's happening?\"", bundle: 'free' },
+        { q: "They bought a large item without consulting you.", a: "\"When you bought that, the story I started to believe is that my opinion doesn't matter in our finances.\"", bundle: 'free' },
+        { q: "You shared a feeling and they rolled their eyes.", a: "\"When you roll your eyes, I tell myself that my feelings are a burden to you.\"", bundle: 'free' },
+        { q: "They haven't been physically affectionate for a few days.", a: "\"I’ve been feeling a bit rejected. The story in my head is that you aren't attracted to me anymore.\"", bundle: 'free' },
+        { q: "You feel your shame being triggered by their feedback.", a: "\"I'm hearing you say I'm a failure, but I know that's just the story I'm telling myself. What are you actually saying?\"", bundle: 'pro' },
+        { q: "They had a \"disproportionate\" reaction and you are judging them.", a: "\"I'm telling myself that you're just trying to be difficult, but I want to understand what's actually hurting.\"", bundle: 'pro' },
+        { q: "You are realizing your narrative is based on a childhood wound.", a: "\"I'm telling myself you're going to abandon me. That’s an old story, but I need some reassurance right now.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  jimmy3: [
+    {
+      name: "Validation Without Agreement",
+      guideFront: "Validate their feeling when...",
+      guideBack: "A possible validation.",
+      description: "Acknowledge that your partner’s feeling or experience is real and important to them, even if you disagree with their facts or accusations. • Validation is not about who is \"right\"; it is about saying \"I see that you are hurting, and your pain matters to me\". • It helps calm their nervous system and prevents the \"Protest Polka\" where they get louder to be heard. • Typcial phrases: \"I can see why you would feel that way,\" \"It makes sense that you'd be hurt,\" \"Your experience matters to me\".\n\n1. **Validating the Feeling:** Acknowledge the specific emotion named. \"I can see how that would make you feel lonely.\"\n2. **Validating the Experience:** Acknowledge the logic of their perspective. \"Given what happened, it makes sense that you felt overlooked.\"\n3. **Validating the Courage:** Thank them for being honest. \"Thank you for being brave enough to share that with me.\" **Mindset:** I am not a judge deciding if their feeling is \"rational\"; I am a partner acknowledging that it is real.",
+      inputs: [
+        { q: "Your partner says, \"You completely ignored me at the party!\" and you feel you didn't.", a: "\"I hear that you felt ignored and alone. I don't want you to feel that way.\"", bundle: 'free' },
+        { q: "They tell you they feel neglected because you've been working long hours.", a: "\"It makes perfect sense why you would feel neglected. I've been very busy lately.\"", bundle: 'free' },
+        { q: "They share a fear about the future of the relationship that seems \"dramatic\" to you.", a: "\"I can see that you're feeling scared right now. Tell me more about what's on your heart.\"", bundle: 'free' },
+        { q: "You accidentally hurt their feelings with a joke you thought was funny.", a: "\"I see that my joke really hurt you. That wasn't my intent, but I value your feelings.\"", bundle: 'free' },
+        { q: "They are crying and you aren't sure why, but you want them to feel safe.", a: "(Maintain eye contact and nod) \"I'm right here. Your pain matters to me.\"", bundle: 'free' },
+        { q: "They make an accusation like \"You're so selfish!\"", a: "\"I hear that you're feeling unappreciated. I'm willing to listen to that, but I need us to avoid the 'selfish' label.\"", bundle: 'pro' },
+        { q: "You feel a strong urge to correct their facts while they are being emotional.", a: "(Wait) \"I want to get this right. So when I forgot to text, you felt like you weren't a priority?\"", bundle: 'pro' },
+        { q: "They admit they are feeling insecure for \"no reason.\"", a: "\"You don't need a 'good' reason to feel what you feel. I'm just glad you're telling me.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Compassionate Curiosity",
+      guideFront: "Practice curiosity when...",
+      guideBack: "A possible question.",
+      description: "Ask open-ended questions to understand the \"why\" behind your partner’s hurt or frustration. • Instead of defending your intent, become a detective trying to understand their internal world. • It shifts the energy from \"me vs. you\" to \"us vs. the misunderstanding\". • Typcial phrases: \"What led you to feel that way?\", \"What meaning did you give that?\", \"What do you wish happened differently?\".\n\n1. **The 'Meaning' Question:** Exploring their interpretation. \"What story did you tell yourself when I didn't call?\"\n2. **The 'Needs' Question:** Identifying the missing piece. \"What were you needing in that moment that you weren't getting?\"\n3. **The 'History' Question:** Checking for old wounds. \"Does this feel like a pattern from the past that's being triggered?\" **Mindset:** I trust my partner's heart, so if they are upset, there is something valuable for me to learn.",
+      inputs: [
+        { q: "Your partner snaps at you about something small like the dishes.", a: "\"I can tell you're frustrated. What’s actually been weighing on you today?\"", bundle: 'free' },
+        { q: "They mention they've been feeling \"off\" for a few days.", a: "\"I've noticed that too. Can you help me understand what's been going on inside?\"", bundle: 'free' },
+        { q: "They are upset about a decision you made together.", a: "\"What meaning did you give my choice in that situation? I want to see it from your lens.\"", bundle: 'free' },
+        { q: "You want to dig deeper into a recurring conflict.", a: "\"What do you wish would have happened differently in that moment?\"", bundle: 'free' },
+        { q: "They are being unusually quiet or withdrawn.", a: "\"You seem a bit distant. Is there anything on your heart that you'd like to share?\"", bundle: 'free' },
+        { q: "They mention a specific behavior of yours that bothers them.", a: "\"What is it specifically about that behavior that leads to you feeling hurt?\"", bundle: 'pro' },
+        { q: "You suspect their reaction is tied to a childhood wound.", a: "\"Does this feel like a familiar pain from when you were growing up?\"", bundle: 'pro' },
+        { q: "They are struggling to express a need.", a: "\"It's okay that you don't know what you need yet. Can we figure it out together?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Turning Toward Bids",
+      guideFront: "Turn toward a bid when...",
+      guideBack: "A possible response.",
+      description: "Recognize and respond positively to your partner's small attempts at connection (bids) throughout the day. • A bid can be a look, a touch, a question, or a comment like \"Look at that bird!\". • Turning toward means giving undivided attention and showing interest; turning away means ignoring or staying on your phone. • Typcial phrases: \"That's interesting!\", \"Tell me more,\" (Eye contact/smile).\n\n1. **Informational Bids:** Responding to \"Did you see this?\". \"No, tell me more about it!\"\n2. **Emotional Bids:** Responding to \"I had a hard day\". \"I'm so sorry. Put your phone down and tell me everything.\"\n3. **Affectionate Bids:** Responding to a light touch or a look. (Return the touch or make eye contact and smile) **Mindset:** Every small interaction is a deposit into our \"Love Tank\" that protects us during future fights.",
+      inputs: [
+        { q: "Your partner says, \"You have to hear about what happened at work today!\"", a: "(Put your phone down and look at them) \"I'm listening. Tell me everything.\"", bundle: 'free' },
+        { q: "They point out something minor, like a nice sunset or a cool car.", a: "\"Wow, you're right. That's beautiful. I'm glad you pointed it out.\"", bundle: 'free' },
+        { q: "They reach out to hold your hand while you are walking.", a: "(Squeeze their hand back and smile)", bundle: 'free' },
+        { q: "They ask, \"Are you busy right now?\" in a hopeful tone.", a: "\"Never too busy for you. What's up?\"", bundle: 'free' },
+        { q: "They sigh heavily while sitting on the couch next to you.", a: "\"That sounded like a heavy sigh. Is there something on your mind?\"", bundle: 'free' },
+        { q: "You are in the middle of an email and they ask you a random question.", a: "\"Give me 60 seconds to finish this sentence, and then I'm all yours.\"", bundle: 'pro' },
+        { q: "They send you a \"sweet text\" in the middle of a busy workday.", a: "\"That just made my whole afternoon. I can't wait to see you.\"", bundle: 'pro' },
+        { q: "You've been having a lot of conflict lately and they try to initiate a joke.", a: "(Choose to laugh or smile) \"I really needed that. Thanks for making me laugh.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The \"Vulnerable\" Code Word",
+      guideFront: "Use the \"Vulnerable\" code word when...",
+      guideBack: "A possible response.",
+      description: "Use a pre-agreed word (like \"vulnerable\") to signal that a conversation needs extra safety and care. • Hearing the word is a cue to stop all defensiveness, put away distractions, and become a safe harbor. • It protects the person sharing from the fear of being mocked or dismissed. • Typcial phrases: \"Vulnerable,\" \"I have a 'vulnerable' thing to share,\" \"Thank you for using the word\".\n\n1. **Initiating:** Using the word to open the talk. \"Vulnerable. I have something heavy on my heart.\"\n2. **Receiving:** Responding to the word. \"Thank you for telling me. I'm here and I'm listening.\"\n3. **The 'Safe Word' Reset:** Using it when a talk turns into a fight. \"Wait—Vulnerable. I'm feeling scared and I need you to be safe for me.\" **Mindset:** This word is a \"pause button\" for our egos; the relationship is more important than being right.",
+      inputs: [
+        { q: "You want to bring up a hurt but you're afraid they'll get defensive.", a: "\"Vulnerable. I need to share something that's been bothering me.\"", bundle: 'free' },
+        { q: "Your partner says the word \"Vulnerable\" to you.", a: "\"Thank you for telling me. My phone is away. I am all yours.\"", bundle: 'free' },
+        { q: "You have a \"desire to be loved in a new way\" but feel embarrassed.", a: "\"Vulnerable. I'd love it if we could try [X] to feel closer.\"", bundle: 'free' },
+        { q: "A conversation about chores is starting to feel like a \"power struggle.\"", a: "\"Vulnerable. I'm starting to feel like the 'bad guy' here and it's making me want to shut down.\"", bundle: 'free' },
+        { q: "You are about to share a deep insecurity from your past.", a: "\"Vulnerable. This is hard for me to say, but I want you to know the real me.\"", bundle: 'free' },
+        { q: "They used the code word but you are currently too \"flooded\" to listen.", a: "\"I hear your 'Vulnerable.' I want to be a safe place, but I need 30 minutes to calm down so I can do it right.\"", bundle: 'pro' },
+        { q: "You've just finished a \"vulnerable\" talk.", a: "\"Thank you for being brave. I feel so much closer to you now.\"", bundle: 'pro' },
+        { q: "They share something using the code word that you disagree with.", a: "\"I'm telling myself you're wrong, but I'm setting that aside. Tell me more about your feeling.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  jimmy4: [
+    {
+      name: "The 30-Minute Reset",
+      guideFront: "Initiate a 30-minute reset when...",
+      guideBack: "A possible response.",
+      description: "Pause a heated conversation when you or your partner feel emotionally \"flooded\" to prevent the conflict from turning into a fight. • Flooding is a physiological state where your heart rate rises, your voice gets louder, and the thinking part of your brain shuts off. • A mature break allows your nervous system to calm down so you can return with curiosity and respect. • Typical phrases: \"I’m getting too heated,\" \"I need a reset,\" \"I promise to come back to this in 30 minutes\".\n\n1. **Recognizing Flooding:** Identifying physical cues in yourself or your partner. Example: \"I notice my heart is racing; I need a break so I can listen to you correctly\".\n2. **Reassuring the Partner:** Clarifying that the break is for regulation, not abandonment. Example: \"I really care about this, but I need 30 minutes to calm down so I can be a safe partner for you\". **Mindset:** Taking a break is not an act of weakness; it is a mature commitment to protecting the relationship from hurtful words I might regret.",
+      inputs: [
+        { q: "You feel your heart racing and the urge to start yelling back.", a: "\"I’m noticing my heart is racing and I’m feeling overwhelmed. I need to take a 30-minute break.\"", bundle: 'free' },
+        { q: "Your partner is escalating and you know you are about to shut down.", a: "\"I want to hear you, but I’m becoming flooded. Can we pause for 30 minutes and try again?\"", bundle: 'free' },
+        { q: "You want to take a break but need to reassure your partner you aren't leaving.", a: "\"We are good, but I’m too heated to think clearly. I promise I’ll initiate our talk again in 30 minutes.\"", bundle: 'free' },
+        { q: "It is late at night and a reset is needed before bed.", a: "\"I’m too tired to be respectful right now. Can we agree to pick this up tomorrow morning after coffee?\"", bundle: 'free' },
+        { q: "Your partner is pressuring you to keep talking while you are triggered.", a: "\"I am trying to be a mature partner by stepping away before I say something hurtful. I’ll be back soon.\"", bundle: 'free' },
+        { q: "You realize you’ve been arguing for an hour and nothing is being solved.", a: "\"We’re spinning our wheels because we’re both triggered. Let’s take a timeout and get regulated.\"", bundle: 'pro' },
+        { q: "You want to signal that the relationship is still safe despite the break.", a: "\"I’m stepping away to calm my body, but I love you and I’m not going anywhere.\"", bundle: 'pro' },
+        { q: "You just finished a reset and are ready to talk again.", a: "\"I’m feeling much calmer now. Thank you for giving me that space. What were you saying earlier?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Safety Boundaries",
+      guideFront: "Enforce a safety boundary when...",
+      guideBack: "A possible response.",
+      description: "Establish a zero-tolerance policy for disrespectful behaviors like yelling or name-calling by removing yourself from the conversation. • Boundaries are about what YOU will do in response to mistreatment, not an attempt to control the other person. • Respect is \"Level Zero\"; without it, intimacy and trust cannot survive in the environment. • Typical phrases: \"I won't be yelled at,\" \"My feelings aren't up for debate,\" \"I'm leaving the room\".\n\n1. **Setting the Standard:** Communicating the limit during a calm moment. Example: \"I want us to be a team, so if things get to yelling or name-calling, I will have to step away\".\n2. **Executing the Exit:** Leaving the room when the boundary is crossed. Example: \"I will not continue this if I’m being called names. I’m going for a walk now\". **Mindset:** I respect myself and my partner enough to walk away from a conversation that has become unsafe.",
+      inputs: [
+        { q: "Your partner calls you a \"lazy piece of garbage\" during a fight about chores.", a: "\"I am more than happy to talk about the chores, but I won't be called names. I’m taking a break.\"", bundle: 'free' },
+        { q: "Your partner starts yelling in your face to get their point across.", a: "\"I can't hear your needs when you're yelling at me. I’m removing myself from this talk for a bit.\"", bundle: 'free' },
+        { q: "They mock your feelings by laughing or rolling their eyes.", a: "\"My feelings aren't up for debate. We can try this again when you are ready to be respectful.\"", bundle: 'free' },
+        { q: "You are being \"poked\" or baited into a fight you don't want to have.", a: "\"I’m not going to take the bait. I’m going to another room so I can stay calm.\"", bundle: 'free' },
+        { q: "They follow you into another room while you are trying to take a reset break.", a: "\"I am enforcing my boundary. I am leaving the house for 30 minutes to get safe.\"", bundle: 'free' },
+        { q: "You want to explain why you are setting the boundary in a calm moment.", a: "\"I love us too much to let us hurt each other with our words. Can we agree that yelling is a 'stop' signal?\"", bundle: 'pro' },
+        { q: "They dismiss your boundary as being \"controlling\" or \"immature.\"", a: "\"I’m not controlling what you say; I’m controlling my access to this conversation.\"", bundle: 'pro' },
+        { q: "You catch yourself about to yell or call them a name.", a: "\"Wait—I’m about to cross my own boundary and be disrespectful. Let me stop and take a breath.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Radical Accountability",
+      guideFront: "Practice radical accountability when...",
+      guideBack: "A possible response.",
+      description: "Own your part of a conflict or mistake without bringing up your partner’s flaws as a counter-attack. • True accountability is admitting what you did was wrong and expressing remorse with a plan for change. • Being a \"lead apologizer\" means taking responsibility for your role even if you feel they were \"worse\". • Typical phrases: \"I’m sorry for my part,\" \"It makes sense why you're hurt,\" \"I will do X differently\".\n\n1. **Owning the Behavior:** Naming exactly what you did wrong without excuses. Example: \"I’m sorry I got defensive and interrupted you; that wasn't respectful\".\n2. **Validating the Impact:** Acknowledging how your action made them feel. Example: \"I can see how my being late made you feel like you weren't a priority\". **Mindset:** I value my partner's heart more than my pride or the need to be right.",
+      inputs: [
+        { q: "You realized you snapped at them earlier because you were stressed from work.", a: "\"I’m sorry I was short with you earlier. I was stressed, but that’s not an excuse to treat you poorly.\"", bundle: 'free' },
+        { q: "They tell you that your defensiveness makes them feel alone.", a: "\"It makes sense why you'd feel alone when I shut you out. I’m sorry I did that; I want to do better.\"", bundle: 'free' },
+        { q: "You forgot to do the one thing they asked you to do today.", a: "\"I dropped the ball and I'm sorry. I know that adds to your mental load. I'll do it right now.\"", bundle: 'free' },
+        { q: "You catch yourself saying \"I'm sorry, but you did X first.\"", a: "\"Wait, scratch that. I'm sorry for my part in this. I shouldn't have yelled.\"", bundle: 'free' },
+        { q: "You want to show you are committed to changing a hurtful pattern.", a: "\"I realize I’ve been dismissive of your feelings. Going forward, I’m going to listen until you’re finished.\"", bundle: 'free' },
+        { q: "They are bringing up a concern and you feel the urge to blame them back.", a: "\"I’m feeling defensive, but I’m putting that aside. Tell me more about how my actions hurt you.\"", bundle: 'pro' },
+        { q: "You are apologizing for an old hurt that you previously ignored.", a: "\"I haven't taken this seriously in the past, and that was wrong. I’m sorry for how I neglected you.\"", bundle: 'pro' },
+        { q: "You want to ask what would help them feel reconnected after you messed up.", a: "\"I am truly sorry. What can I do right now to help you feel valued again?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Validating Past Pain",
+      guideFront: "Validate past pain when...",
+      guideBack: "A possible response.",
+      description: "Hold space for old hurts and neglect to be expressed so the relationship can move forward and rebuild trust. • Acknowledging and validating old anger is the fastest way to process it and prevent it from snowballing. • It involves inviting your partner to share how they felt during times when you weren't a good partner. • Typical phrases: \"I want to understand your pain,\" \"It makes sense that you don't trust me yet,\" \"Thank you for being honest about that\".\n\n1. **The Invitation:** Encouraging them to share the \"unresolved\" stuff. Example: \"I know I hurt you last year. I’m ready to listen to what that was like for you if you're willing to share\".\n2. **The Patient Validation:** Acknowledging their current lack of trust. Example: \"It makes perfect sense that you're waiting to see if my changes last. I’ve hurt you a lot in the past\". **Mindset:** I am not being labeled as the \"bad guy\" forever; I am being a mature partner who cares about healing the damage I caused.",
+      inputs: [
+        { q: "They bring up a mistake you made months ago and you feel like saying \"not this again!\"", a: "\"I hear that you're still hurting from what happened. Tell me more about what's on your heart.\"", bundle: 'free' },
+        { q: "They say \"we'll see if this change lasts\" after you apologize.", a: "\"It makes sense why you wouldn't trust me yet. I want to prove it to you through consistency.\"", bundle: 'free' },
+        { q: "You want to start a conversation about a period where you were emotionally distant.", a: "\"I realize I was very distant last winter. I'd love to hear how that impacted you so I can understand better.\"", bundle: 'free' },
+        { q: "They are expressing anger about a past betrayal or neglect.", a: "\"Your anger is healthy and real. I want to sit with you in this pain rather than run from it.\"", bundle: 'free' },
+        { q: "You want to reassure them you won't \"sweep it under the rug\" anymore.", a: "\"I don't want to ignore what happened. I want us to wade through it together so we can heal.\"", bundle: 'free' },
+        { q: "You feel your shame being triggered by them bringing up your past mistakes.", a: "\"This is hard for me to hear because I’m ashamed, but your experience matters more than my discomfort.\"", bundle: 'pro' },
+        { q: "They admit they feel scared to be vulnerable because of how you used to react.", a: "\"I see how I taught you not to trust me. I’m committed to showing you that I’m a safe harbor now.\"", bundle: 'pro' },
+        { q: "You want to ask how you can specifically repair the damage from a past hurt.", a: "\"I know I caused a deep wound there. What do you need from me to feel even a little bit safer today?\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  jimmy5: [
+    {
+      name: "Out-Loud Appreciation",
+      guideFront: "Express appreciation out-loud when...",
+      guideBack: "A possible response.",
+      description: "Express specific gratitude for what your partner is doing right, focusing on the \"why\" to ensure they feel truly seen. • Unexpressed gratitude is often interpreted as entitlement. • Deposits into the \"emotional bank account\" protect the relationship during future conflicts. • Mindset: \"I will not let my partner’s efforts become wallpaper; I will name their value daily.\"",
+      inputs: [
+        { q: "You notice your partner handled a stressful morning with the kids very calmly.", a: "\"I really appreciated how patient you were with the kids this morning. It made the whole house feel more peaceful.\"", bundle: 'free' },
+        { q: "They just finished cooking a meal after a long day.", a: "\"Thank you for making dinner. I know you're tired, and it means a lot to me that you took that off my plate.\"", bundle: 'free' },
+        { q: "You want to tell them why you love them, not just that you do.", a: "\"I love you because you always know how to make me laugh when I'm stressed. You're a great teammate.\"", bundle: 'free' },
+        { q: "They sent you a supportive text in the middle of your workday.", a: "\"That text was exactly what I needed to hear. Thank you for thinking of me.\"", bundle: 'free' },
+        { q: "You notice a recurring pattern of kindness they show toward your family.", a: "\"I noticed how much effort you put into talking with my mom today. That meant so much to me.\"", bundle: 'free' },
+        { q: "It's a random Tuesday and you want to make a \"deposit\" into their love tank.", a: "\"I was just thinking about how lucky I am to be doing life with you. You're a wonderful partner.\"", bundle: 'pro' },
+        { q: "They did something small, like filling up your car with gas.", a: "\"I saw you filled my tank. Thank you for anticipating that need; it saved me so much stress this morning.\"", bundle: 'pro' },
+        { q: "You realized you haven't thanked them for their hard work lately.", a: "\"I've been a bit complacent lately, but I want you to know I see how hard you're working for us. I don't take it for granted.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Non-Sexual Affection",
+      guideFront: "Show non-sexual affection when...",
+      guideBack: "A possible response.",
+      description: "Prioritize touch, hugs, and kisses with zero expectation of the bedroom to build deep emotional safety. • \"Foreplay starts at breakfast\"; women especially need to feel valued outside the bedroom to feel desire inside it. • It communicates that you value their personhood, not just their body. • Mindset: \"I am using touch to connect our hearts, not just to initiate a transaction.\"",
+      inputs: [
+        { q: "You are both leaving the house for work in the morning.", a: "(Give them a long hug and a gentle kiss) \"I'm going to miss you today. Have a good one.\"", bundle: 'free' },
+        { q: "Your partner is sitting on the couch looking a bit stressed.", a: "(Sit next to them and put your arm around them or rub their shoulder) \"I'm right here with you.\"", bundle: 'free' },
+        { q: "You walk past them in the kitchen while they are busy.", a: "(Gently place your hand on the small of their back or give them a quick squeeze)", bundle: 'free' },
+        { q: "You just got home and want to reconnect immediately.", a: "\"I'm so glad to be home.\" (Give them a long, meaningful hug before doing anything else)", bundle: 'free' },
+        { q: "You are out walking together in public.", a: "(Reach for their hand and interlace your fingers)", bundle: 'free' },
+        { q: "They seem overwhelmed by a task and you want to \"melt away\" their stress.", a: "(Hold them from behind and kiss their neck gently) \"You're doing a great job. I'm so grateful for you.\"", bundle: 'pro' },
+        { q: "You want to offer a physical gesture of care with no strings attached.", a: "\"You look like you've had a long day. Would you like a 10-minute foot rub while we watch TV? No expectations for anything else.\"", bundle: 'pro' },
+        { q: "They aren't in the mood for sex and you want to show you respect that.", a: "\"I hear you, babe. Let's just cuddle for a bit instead. I just want to be close to you.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sharing the Mental Load",
+      guideFront: "Share the mental load when...",
+      guideBack: "A possible response.",
+      description: "Identify and take initiative on domestic chores and \"invisible labor\" without being asked. • Initiative is \"sexy\"; carrying the burden _with_ them builds trust. • Don't ask \"what can I do?\"; instead, run the diagnostics and fix what's broken. • Mindset: \"I am a co-CEO of this home, not a subordinate waiting for instructions.\"",
+      inputs: [
+        { q: "You notice the dishwasher is full of clean dishes.", a: "(Empty the dishwasher immediately without saying anything)", bundle: 'free' },
+        { q: "The kitchen is a mess after dinner and your partner looks exhausted.", a: "\"How about you go take a bath or a walk and I'll take over the kitchen chaos for a bit?\"", bundle: 'free' },
+        { q: "You realize you're low on a household staple like milk or toilet paper.", a: "\"I noticed we're low on a few things. I'm going to run to the store real quick—anything else you need?\"", bundle: 'free' },
+        { q: "You see a pile of mail or school forms that need attention.", a: "\"I'll go through these forms and handle the signatures so you don't have to worry about them.\"", bundle: 'free' },
+        { q: "It's your turn to handle the kids' bedtime routine.", a: "\"I've got the kids tonight. Why don't you decompress for 30 minutes?\"", bundle: 'free' },
+        { q: "You want to proactively plan a date night to take that labor off them.", a: "\"I’ve booked a sitter for Friday and made a reservation at that spot you like. All you have to do is be ready at 7:00.\"", bundle: 'pro' },
+        { q: "You want to align on domestic labor during a calm moment.", a: "\"I want to make sure the chores feel fair. Are there any areas where you feel like you're carrying too much of the mental load?\"", bundle: 'pro' },
+        { q: "You notice they are stressed about an upcoming family event.", a: "\"I'll take the lead on coordinate with your parents for this weekend. I'll handle the logistics.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Weekly Check-in",
+      guideFront: "Conduct a weekly check-in when...",
+      guideBack: "A possible response.",
+      description: "Use a structured, planned routine to discuss highlights, needs, and connection levels. • \"Marriages die in the conversations that never happen\". • It prevents resentment from building up by \"keeping short accounts\". • Mindset: \"This is a team meeting for our most important partnership; your heart is the agenda.\"",
+      inputs: [
+        { q: "It is Sunday evening and you want to start your agreed-upon check-in.", a: "\"I love you. Let's look into each other's eyes for a second before we start our check-in. How was your week in general?\"", bundle: 'free' },
+        { q: "You want to assess the level of connection you've had lately.", a: "\"On a scale of 1 to 5, how close have you felt to me this week? What made that number go up or down?\"", bundle: 'free' },
+        { q: "You want to invite them to share any hurts you might have missed.", a: "\"Was there a moment this week where you felt unappreciated or dismissed? I want to understand so I can make it right.\"", bundle: 'free' },
+        { q: "You want to offer specific support for the week ahead.", a: "\"What are two things I can do for you this week specifically to help you feel prioritized?\"", bundle: 'free' },
+        { q: "You want to check in on their stress levels outside the relationship.", a: "\"How's your stress level lately? Are there any burdens I can help carry for you?\"", bundle: 'free' },
+        { q: "You want to encourage them to share a vulnerable need.", a: "\"Vulnerable. Is there an emotional need of yours that hasn't been a priority lately? Let's figure out how to meet it together.\"", bundle: 'pro' },
+        { q: "You want to celebrate the \"wins\" of the past week.", a: "\"What are some things we got right this week? Tell me about a time you felt really loved by me.\"", bundle: 'pro' },
+        { q: "You want to get ahead of upcoming schedule conflicts.", a: "\"What challenges do you see coming up in the next month? How can we get on the same page now?\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  jimmy6: [
+    {
+      name: "Indifference to Manipulation",
+      guideFront: "Use indifference to manipulation when...",
+      guideBack: "A possible response.",
+      description: "Use short, neutral responses to avoid being baited into a \"rigged\" fight where the other person is looking for an emotional reaction. • A narcissistic or toxic person uses your anger to validate their own importance; if they can make you explode, they still have control. • Indifference—giving as little energy as possible—is the only \"punishment\" that works because it makes the manipulator feel powerless. • Typical phrases: \"Okay.\", \"I hear you.\", \"That’s your perspective.\", (Silence). **Mindset:** \"I will not give my peace away as a reward for your toxicity.\".",
+      inputs: [
+        { q: "A toxic person says, \"You’re so selfish, no one else would ever put up with you.\".", a: "\"I hear that’s how you feel.\"", bundle: 'free' },
+        { q: "They tell a blatant lie about you to get you to defend yourself.", a: "(Stay silent and look them in the eyes).", bundle: 'free' },
+        { q: "They try to guilt-trip you by saying, \"I guess I’m just the worst partner ever.\".", a: "\"I'm not going to argue with that narrative.\"", bundle: 'free' },
+        { q: "They send you a long, aggressive text message meant to start a fight.", a: "\"Okay.\"", bundle: 'free' },
+        { q: "They mock your boundary by saying, \"Wow, you're so sensitive today.\".", a: "\"Okay. I'm taking my break now.\"", bundle: 'free' },
+        { q: "You feel a massive urge to explain your side to someone who isn't listening.", a: "\"I’m not going to over-explain. You’ve heard my limit.\".", bundle: 'pro' },
+        { q: "They bait you by bringing up a mistake you made three years ago.", a: "\"That’s one way to see the past.\"", bundle: 'pro' },
+        { q: "They accuse you of being \"controlling\" because you set a boundary.", a: "\"I’m not controlling you; I’m controlling what I tolerate.\".", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Authenticity Over Pleasing",
+      guideFront: "Choose authenticity over pleasing when...",
+      guideBack: "A possible response.",
+      description: "Overcome \"Nice Guy\" or people-pleaser patterns by being honest about your needs, even if it causes temporary conflict. • People-pleasing is often a trauma response used to avoid abandonment, but it eventually leads to deep resentment. • Authenticity is more attractive and healthy than being a \"doormat\" who always agrees to keep the peace. • Typical phrases: \"Actually, I don't want to do that,\" \"This is what I need,\" \"I’m not okay with this.\" **Mindset:** \"I would rather be rejected for who I am than loved for a version of myself I have to maintain.\".",
+      inputs: [
+        { q: "You are asked to do a favor that you genuinely don't have the capacity for.", a: "\"I’d love to help, but I can’t do that this time. I need that time to recharge.\"", bundle: 'free' },
+        { q: "Your partner suggests a plan and asks, \"Is that okay?\" but you actually hate the idea.", a: "\"Actually, that doesn't work for me. I’d prefer to do something else.\"", bundle: 'free' },
+        { q: "You feel yourself \"shape-shifting\" to make someone like you more.", a: "\"Wait, I’m being a chameleon right now. What I actually believe is [X].\"", bundle: 'free' },
+        { q: "You want to bring up a need but are afraid of being \"too much.\".", a: "\"I have a need for more quality time. It’s important to me that we prioritize that.\"", bundle: 'free' },
+        { q: "Someone asks for a commitment and you feel pressured to say yes.", a: "\"I need some time to think about that before I give you an answer.\"", bundle: 'free' },
+        { q: "You realize you’ve been \"faking it\" to avoid a fight for weeks.", a: "\"I’ve been staying quiet to keep the peace, but it’s making me feel disconnected. Here is the truth: [X].\"", bundle: 'pro' },
+        { q: "They tell you that you're being \"difficult\" for having a preference.", a: "\"I'm not being difficult; I'm being honest. My preference matters too.\"", bundle: 'pro' },
+        { q: "You are tempted to apologize for something you didn't do wrong.", a: "(Stop yourself) \"I’m not going to apologize for having a boundary.\".", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Bare Minimum Standard",
+      guideFront: "Enforce the bare minimum standard when...",
+      guideBack: "A possible response.",
+      description: "Get clear on non-negotiable standards for how you must be treated (no yelling, no name-calling, no belittling). • You deserve respect and kindness as a baseline; these are not \"extras\" you have to earn. • If you don't enforce your own \"floor,\" people will step on it to see how far you'll sink. • Typical phrases: \"I will not be yelled at,\" \"Respect is level zero,\" \"I’m leaving the room now.\" **Mindset:** \"I love myself enough to walk away from anyone who treats me like I’m worthless.\".",
+      inputs: [
+        { q: "Your partner starts calling you names during an argument.", a: "\"I’m happy to talk, but I won't be called names. I’m taking a 30-minute break.\"", bundle: 'free' },
+        { q: "They begin yelling to drown out your voice.", a: "\"I can't hear you when you're yelling. I’m removing myself from this conversation.\"", bundle: 'free' },
+        { q: "They belittle your intelligence or \"invalidates\" your reality.", a: "\"My experience isn't up for debate. We can try again when you're ready to be respectful.\"", bundle: 'free' },
+        { q: "You are on a date and they are rude to the staff or a stranger.", a: "\"That seemed pretty disrespectful. What led you to react that way?\"", bundle: 'free' },
+        { q: "They try to rush you into a sexual situation you aren't ready for.", a: "\"I value our connection, but I’m not comfortable with that yet. I need my boundaries respected.\"", bundle: 'free' },
+        { q: "They follow you into another room while you are trying to take a safety break.", a: "\"I am enforcing my boundary. I am leaving the house for a bit to get safe.\".", bundle: 'pro' },
+        { q: "You are realizing that you’ve been tolerating the \"bare minimum\" for years.", a: "\"I deserve a partner who is considerate. This current dynamic doesn't work for me.\".", bundle: 'pro' },
+        { q: "You need to define what \"mutual respect\" looks like during a calm time.", a: "\"Can we agree that no matter how mad we get, yelling and name-calling are off-limits?\".", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Healing the Shame Trigger",
+      guideFront: "Manage a shame trigger when...",
+      guideBack: "A possible response.",
+      description: "Recognize when your partner’s feedback triggers a childhood wound of \"not being enough\" and choose a vulnerable response instead of a defensive attack. • Defensiveness is often a shield against the intense pain of feeling like a failure. • Choosing to be vulnerable about the _feeling_ of shame prevents the \"Counter-attack\" cycle. • Typical phrases: \"I'm feeling like a failure right now,\" \"The story I'm telling myself is that you think I'm bad,\" \"I'm struggling not to defend myself.\" **Mindset:** \"Your feedback is information about your needs, not a verdict on my soul.\".",
+      inputs: [
+        { q: "Your partner says, \"It hurt when you forgot our plans,\" and you feel a hot flash of shame.", a: "\"I’m starting to feel like a failure, and it’s making me want to get defensive. Give me a second.\"", bundle: 'free' },
+        { q: "You feel your heart racing and ears getting hot during a critique.", a: "\"Vulnerable. I’m feeling really ashamed right now, and I’m having trouble listening.\"", bundle: 'free' },
+        { q: "You are about to snap back with \"Well, you do the same thing!\".", a: "\"Wait—I’m counter-attacking because I feel judged. What are you actually needing from me?\"", bundle: 'free' },
+        { q: "They ask for a change in chores and you feel \"pounced on.\".", a: "\"The story I’m telling myself is that nothing I do is good enough, but I know that’s not what you said.\"", bundle: 'free' },
+        { q: "You want to admit why you shut down during the last fight.", a: "\"I shut down because I felt so overwhelmed by shame. I didn't know how to make it right.\"", bundle: 'free' },
+        { q: "You are realizing a current conflict is actually a \"battle from the past.\".", a: "\"I think I'm fighting an old battle with you right now. I’m projecting my past onto this moment.\"", bundle: 'pro' },
+        { q: "You want to ask for reassurance when you feel \"not enough.\".", a: "\"I’m stuck in a loop of thinking I’m failing you. Can you remind me that we're on the same team?\"", bundle: 'pro' },
+        { q: "They used all the \"right\" words, but you still feel like a \"bad guy.\".", a: "\"Even though you were respectful, I’m still triggered. I need to sit with this for a minute.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  toddv1: [
+    {
+      name: "Statement Openers",
+      guideFront: "Use this strategy to respond when...",
+      guideBack: "A possible opening.",
+      description: "Open by making a statement or an observation instead of asking a boring \"interview\" question. A question is often a \"value-taking\" move because it demands that the other person provide the interesting parts of the conversation. A statement, however, offers your own perspective or insight first.\n\n**Why it works:** It demonstrates entitlement and high status because you aren't seeking permission to speak; you are simply \"putting one true, ordinary sentence on the table\". It also prevents the interaction from starting in \"interview mode,\" which kills attraction.\n\n**Typical phrases:** • \"You don't seem like you're from New York.\" • \"There is a startling amount of cake for a Tuesday.\" • \"You look so low-key fashionable, I love it.\"\n\n**Under-categories:**\n\n1. **The Cold Read:** Guessing something about her rather than asking. Example: \"You look like you've had the same week I have\".\n2. **Situational Observation:** Commenting on the environment. Example: \"This queue has not moved in five minutes\".\n3. **The Soft Direct:** A statement of intent that isn't overly aggressive. Example: \"I thought you were cute and had to come say hi\".\n\n**Mindset:** \"Assume the burden of the conversation\". It is your job to carry the initial weight until she feels comfortable enough to participate.",
+      inputs: [
+        { q: "You see a girl with a very unique look in a busy mall.", a: "\"That is like the most unique look I've seen all day. In Las Vegas, you win the prize.\"", bundle: 'free' },
+        { q: "You are standing next to a girl in a long queue that isn't moving.", a: "\"This queue has not moved in five minutes. I'm starting to think we live here now.\"", bundle: 'free' },
+        { q: "You see a girl with many shopping bags looking successful.", a: "\"Wow, did you leave anything in the store for the rest of us? I respect the hustle.\"", bundle: 'free' },
+        { q: "You want to open a girl but feel like a question would be too much work for her.", a: "\"You look like you're on a mission. I'm curious what kind of trouble you're about to get into.\"", bundle: 'free' },
+        { q: "You meet a girl at a party and want to start without being \"that guy.\"", a: "\"I've been here four minutes and I've already lost the person I came with. I'm Todd.\"", bundle: 'free' },
+        { q: "You notice a girl with a very expressive face as you walk past.", a: "\"You have the most expressive face. I feel like I can see your whole internal monologue right now.\"", bundle: 'pro' },
+        { q: "You want to guess where she is from instead of asking.", a: "\"You don't seem like a local. You have too much energy for this city.\"", bundle: 'pro' },
+        { q: "You see a girl looking at her phone with green text messages visible.", a: "\"I almost didn't come say hi. Those green messages... I'm not sure we can get along.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Narrating the Frame",
+      guideFront: "Use this strategy to respond when...",
+      guideBack: "A possible opening.",
+      description: "Speak from a role where you are already the \"prize\" or the \"sexiest man alive\". Instead of wondering if she likes you, you narrate the interaction as if it's a foregone conclusion that she's interested, and you are the one screening her.\n\n**Why it works:** It creates an immediate \"man-to-woman\" premise. By adopting a frame that \"if true, would lead to sex,\" you bypass the friend zone and force her to either accept your high-value frame or test it—both of which create emotional spikes.\n\n**Typical phrases:** • \"I thought you might be the girl that finally impresses me.\" • \"We're both attractive people, what do we do now?\" • \"I'm just a boy living the dream in the city.\"\n\n**Under-categories:**\n\n1. **The Selector:** Acting like you are interviewing her for the role of girlfriend. Example: \"I thought you might be the girl that finally impresses me\".\n2. **The \"Us\" Frame:** Speaking as if you are already a couple. Example: \"Are you as fun and adventurous as you are worldly?\".\n3. **Cocky Entitlement:** Acting as if it's natural that she wants you. Example: \"I was wondering if you'd noticed how good looking I am\".\n\n**Mindset:** \"Channel the guy who has never had negative feedback from a girl\". Assume she wants you until she proves otherwise.",
+      inputs: [
+        { q: "You approach a very attractive girl and want to establish yourself as the prize.", a: "\"I thought you might be the girl that finally impresses me, so I had to come say hi.\"", bundle: 'free' },
+        { q: "You open a girl and she giggles. Narrate the frame of her being interested.", a: "\"I like that. You're already trying to win me over with that smile. Take it slow, we just met.\"", bundle: 'free' },
+        { q: "You want to use a \"roleplay\" frame as an opener.", a: "\"Oh my god, what are you doing here? You're the last person I expected to see. Have you been stalking me?\"", bundle: 'free' },
+        { q: "You are talking to a girl who seems a bit arrogant.", a: "\"I can appreciate a little arrogance in a girl. It shows you might be able to keep up with me.\"", bundle: 'free' },
+        { q: "You want to establish the \"man-to-woman\" nature of the talk immediately.", a: "\"You look like trouble in the best way. I'm Todd, and I'm a bad influence.\"", bundle: 'free' },
+        { q: "You approach a girl and want to use a \"bubbly\" frame.", a: "\"You have the most bubbly, elegant look. I don't even know what to do with you yet.\"", bundle: 'pro' },
+        { q: "You want to use a \"high status\" humble brag.", a: "\"If you move to New York, LA, or Vegas, I can help you out. Anywhere else, I'm useless.\"", bundle: 'pro' },
+        { q: "She asks who you are. Narrate from a \"recognized\" frame.", a: "\"Who am I? You don't recognize me? You haven't seen me on TV? That's a blow to my ego.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Open Loops (The Cookie)",
+      guideFront: "Use this strategy to respond when...",
+      guideBack: "A possible opening.",
+      description: "Be vague and ambiguous to provoke her to pursue the information. It’s the \"cookie\" metaphor: if you show someone a cookie and then don't give it to them (or give only a piece), they have a reason to want it.\n\n**Why it works:** It creates intrigue and mystery. It gets the girl to participate and \"chase\" the conversation. By not closing the loop immediately, you keep the tension high and make her work to find out the rest of the story.\n\n**Typical phrases:** • \"There is just something about you... I'll tell you later.\" • \"You don't even want to know what I was thinking.\" • \"Are you guys best friends? There is a reason I ask.\"\n\n**Mindset:** \"Don't be in such a hurry to tell everything\". Land on the last word and stop—the silence afterwards is her turn to chase.",
+      inputs: [
+        { q: "You want to hook a girl's attention by being mysterious about her look.", a: "\"You have a very unique look... there's something strange I can't quite place. I'll tell you later.\"", bundle: 'free' },
+        { q: "You are in a group of girls and want to instigate a response.", a: "\"Wait, I just noticed something. Are you guys best friends? There's a reason I'm asking.\"", bundle: 'free' },
+        { q: "You start to say something cocky but then \"reconsider.\"", a: "\"You know, I was going to make a joke about your shoes, but never mind. It's too mean.\"", bundle: 'free' },
+        { q: "She asks what you do for a living. Keep the loop open.", a: "\"I bet you wouldn't guess it in a million years. Guess once, and then I'll tell you.\"", bundle: 'free' },
+        { q: "You want her to ask for a story instead of just telling it.", a: "\"I have a crazy story about what happened in Amsterdam last week, but I don't trust you enough to tell you yet.\"", bundle: 'free' },
+        { q: "You see a girl doing something \"unusual\" (like reading a specific book).", a: "\"I knew you were that type of girl. I'll explain what that means if you're lucky.\"", bundle: 'pro' },
+        { q: "You want to use the \"I can't decide\" loop.", a: "\"I can't decide if I'm going to love you or hate you yet. The jury is still out.\"", bundle: 'pro' },
+        { q: "You want to provoke a \"qualification\" through an open loop.", a: "\"You seem cool so far, but I'm wondering if you're actually adventurous. There's a test for that.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Question-Answer-Tease (QAT)",
+      guideFront: "Use this strategy to respond when...",
+      guideBack: "A possible opening.",
+      description: "Break the boring \"interview mode\" by adding a playful opinion or a tease after she answers a question. Instead of just moving to the next question, you \"play with the answer\" to convey your personality.\n\n**Why it works:** It creates the \"middle\" of the interaction that many guys miss. By adding \"spice\" (the tease) to the \"meat\" (the information), you create emotional spikes that make the interaction memorable.\n\n**Typical phrases:** • \"A nurse? So you're the hero type. I'm more of a villain.\" • \"I respect that, but I'm a bit of an elitist when it comes to coffee.\" • \"Wait, you like [Team]? We are definitely going to have to break up.\"\n\n**Mindset:** \"Your opinions are gold\". Don't be afraid to be a little bit \"player-ish\" or polarizing; it's better than being boring.",
+      inputs: [
+        { q: "She tells you she is a doctor. Tease her for it.", a: "\"A doctor? Oh god, you're one of those kids who studied their whole life and never had a social life. We're not going to get along.\"", bundle: 'free' },
+        { q: "You ask where she is from and she says \"New York.\"", a: "\"New York? Okay, so you're used to getting your way. I'll have to keep a close eye on you.\"", bundle: 'free' },
+        { q: "She tells you she likes watching TV dramas.", a: "\"I respect that. I have a laid-back vibe too, but I'm probably cooler about it than you.\"", bundle: 'free' },
+        { q: "She answers a question about her favorite food with \"Steak.\"", a: "\"Steak? Okay, you have some taste. But if you'd said well-done, I would have walked away right now.\"", bundle: 'free' },
+        { q: "She tells you she is an actress.", a: "\"An actress? So you're professionally good at lying. That makes me feel totally safe.\"", bundle: 'free' },
+        { q: "She mentions she works in the corporate world.", a: "\"Corporate world? You could have made more money, but it's not all about the money, right? You look more like a fashionista anyway.\"", bundle: 'pro' },
+        { q: "She tells you she is a student.", a: "\"A student? You look like the type that's always in the front row, taking too many notes. Am I right?\"", bundle: 'pro' },
+        { q: "She answers what she is passionate about by saying \"Horses.\"", a: "\"You love horses? You dirty girl. I knew there was a reason I liked you.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  toddv2: [
+    {
+      name: "Push-Pull",
+      guideFront: "Use this strategy to respond when...",
+      guideBack: "A possible response.",
+      description: "Give a positive emotional spike and a negative emotional spike in quick succession. This creates a \"rollercoaster\" effect where the girl feels validated and devalidated almost simultaneously, keeping her in suspense about where she stands.\n\n**Why it works:** It creates intense sexual tension and prevents you from appearing needy or too obvious about your interest. Because you balance the \"pull\" (interest) with a \"push\" (disinterest), you can get away with showing much more interest without giving away your power.\n\n**Typical phrases:** • \"I thought I loved you until you said that.\" • \"It's so annoying how cute you are.\" • \"You and I would get along great, but you're probably too much trouble for me.\"\n\n**Under-categories:**\n\n1. **The Teasing Push:** A positive followed by a playful negative. Example: \"You have a great smile, but I can tell you use it to get your way too much.\"\n2. **The Skeptical Pull:** A negative followed by a redeeming positive. Example: \"I hated your team, but I respect that you stick to your guns.\"\n3. **Non-Verbal Push-Pull:** Using a warm verbal line with a skeptical facial expression or \"pushing\" her away physically while smiling.\n\n**Mindset:** \"Assume she wants you, then give her a hard time about it.\" The goal is to be unpredictable.",
+      inputs: [
+        { q: "A girl says something slightly annoying but she is very attractive.", a: "\"It's so annoying how cute you are. Stop it.\"", bundle: 'free' },
+        { q: "You want to give a compliment without losing power.", a: "\"Do you know what I love about you? ... Absolutely nothing.\"", bundle: 'free' },
+        { q: "You want to tease her about a choice she made (like a sports team).", a: "\"I actually hate that team, but I support the fact that you're loyal. It's a start.\"", bundle: 'free' },
+        { q: "She says something you disagree with.", a: "\"I thought I loved you... until you said that. Now it's over.\"", bundle: 'free' },
+        { q: "You want to indicate she's winning you over but maintain the \"Selector\" frame.", a: "\"You're actually not so terrible. I might only be like 80% player with you.\"", bundle: 'free' },
+        { q: "You want to use a \"separated\" push-pull in conversation.", a: "\"You have an amazing look, but I'm not sure if I should love you or run away yet.\"", bundle: 'pro' },
+        { q: "She tells you something impressive about her career.", a: "\"I can appreciate a little arrogance in a girl. It shows you might be able to keep up with me.\"", bundle: 'pro' },
+        { q: "You notice a unique item she's wearing.", a: "\"That is a really cool jacket. Where's the motorcycle? ... Oh, I see. You're just trying to look cool. I respect the hustle.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Neg",
+      guideFront: "Use this strategy to respond when...",
+      guideBack: "A possible response.",
+      description: "A \"backwards compliment\" or a statement that provokes a small amount of insecurity. It is not an insult; it should feel unintentional, as if your honesty just \"slipped out\" while you were trying to be nice.\n\n**Why it works:** It puts the girl in her head and makes her want to qualify herself to you. Hot girls are used to being on a pedestal; a neg knocks them off just enough to make you relevant and high-value in their eyes.\n\n**Typical phrases:** • \"You blink a lot. It's cute, your eyes must be very hydrated.\" • \"I love that sweater. It’s so cool that you’re trying to bring the 80s back.\" • \"You actually have a very expressive face. I can see your whole internal monologue.\"\n\n**Under-categories:**\n\n1. **The Observational Neg:** Pointing out a tiny, neutral oddity. Example: \"You have a very unique way of laughing.\"\n2. **The Backwards Compliment:** Praising something in a way that suggests it’s out of style or \"interesting.\" Example: \"That's a very unique style. In Vegas, you win the prize.\"\n3. **The \"Actually\" Neg:** Complimenting her for not being a negative stereotype. Example: \"You're actually not super boring.\"\n\n**Mindset:** \"Deliver it deadpan.\" If she calls you out, you must be able to explain honestly why it’s not an insult.",
+      inputs: [
+        { q: "You notice a girl blinking rapidly because she's nervous.", a: "\"You blink a lot. It's cool, your eyes must be very hydrated.\"", bundle: 'free' },
+        { q: "You want to give an \"accidental\" neg about her clothing.", a: "\"I love that sweater. It's so cool that you're trying to bring the 80s back.\"", bundle: 'free' },
+        { q: "You want to tease her about being \"different\" from your first impression.", a: "\"You're actually not super boring. I'm pleasantly surprised.\"", bundle: 'free' },
+        { q: "You meet a girl with a very unique, perhaps loud, look.", a: "\"That is the most unique look I've seen all day. In Vegas, you definitely win the prize.\"", bundle: 'free' },
+        { q: "She's acting a bit superior or \"high maintenance.\"", a: "\"You have such an expressive face. I feel like I'm watching a cartoon character right now.\"", bundle: 'free' },
+        { q: "You want to neg her \"resume\" or background.", a: "\"I love hanging out with girls with really good resumes and outsmarting them.\"", bundle: 'pro' },
+        { q: "She mentions her family or \"Daddy\" pays for things.", a: "\"Oh, I see. So you're the 'Daddy's girl' type. I'll have to keep a close eye on my credit card around you.\"", bundle: 'pro' },
+        { q: "She uses a word incorrectly or makes a minor verbal slip.", a: "\"I like that you just made up a word. It's cute when you're being 'creative' with English.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Qualifying (The Interviewer)",
+      guideFront: "Use this strategy to respond when...",
+      guideBack: "A possible response.",
+      description: "Taking the role of the \"Selector\" who is screening her to see if she meets your standards. Instead of trying to get her to like you, you find out what makes her special beyond her looks.\n\n**Why it works:** It creates \"Value Plus Comfort.\" It builds value by putting you in the role of judgment and comfort by showing you actually like her for a reason. Girls chase your approval when they feel they have to earn it.\n\n**Typical phrases:** • \"Are you as fun and adventurous as you are worldly?\" • \"I didn't expect you to be this talkative. You're actually fun to talk to.\" • \"You seem cool so far, but tell me one thing that's not obvious about you.\"\n\n**Under-categories:**\n\n1. **The Hoops:** Asking her to prove a trait. Example: \"You look like trouble. Tell me something adventurous you've done.\"\n2. **Assigning Points:** Giving her \"credit\" for good answers. Example: \"You get some points for that. I like fit girls.\"\n3. **The \"Us\" Screen:** Testing compatibility. Example: \"Are you the type of girl who makes me regret meeting her, or are we going to get along?\"\n\n**Mindset:** \"I am the prize\". You are interviewing her for the role of girlfriend culture.",
+      inputs: [
+        { q: "You want to test if she is more than just a \"pretty face.\"", a: "\"You seem cool so far, but are you actually adventurous? There's a test for that.\"", bundle: 'free' },
+        { q: "She tells you she traveled somewhere interesting (like India).", a: "\"Wow, three weeks in India? You definitely get some points for that. Most girls couldn't handle it.\"", bundle: 'free' },
+        { q: "You find out she's a doctor or has a serious career.", a: "\"A doctor? I didn't expect you to be that industrious. You just grew on me a little bit.\"", bundle: 'free' },
+        { q: "You want her to prove she's not boring.", a: "\"Tell me just one thing that's not obvious about you. I want to see if there's a soul behind those eyes.\"", bundle: 'free' },
+        { q: "She mentions she likes an activity you also enjoy (like soccer).", a: "\"Wait, you like soccer? If you'd said United, I would have fallen in love. Which team is it?\"", bundle: 'free' },
+        { q: "You want to use a \"conditional\" compliment.", a: "\"I like that you're particular. It shows you have standards. You might be able to keep up with me.\"", bundle: 'pro' },
+        { q: "She qualifies herself and you want to \"let her win\" slightly.", a: "\"Okay, you're actually fairly entertaining. The bar was low, but you're clearing it.\"", bundle: 'pro' },
+        { q: "You want to screen for \"Girlfriend Culture.\"", a: "\"I'm looking for my 'New York future ex-wife.' Do you think you're qualified for the position?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Disqualification (Sexual)",
+      guideFront: "Use this strategy to respond when...",
+      guideBack: "A possible response.",
+      description: "Indicating that sex or a relationship might not happen between you. This is the \"takeaway\" move that removes the pressure of escalation and makes her chase the \"forbidden\" outcome.\n\n**Why it works:** By \"disqualifying the sex,\" you open her up to be receptive to escalation because it doesn't seem like you have a pushy agenda. It creates uncertainty: she knows you're a sexual man, but she doesn't know if she can have you.\n\n**Typical phrases:** • \"You and I would not get along. We'd be that boring couple that fights all the time.\" • \"I'm not boyfriend material, don't get any ideas.\" • \"Let's not make it about sex tonight. I just want to chat.\"\n\n**Under-categories:**\n\n1. **The \"Not My Type\" Move:** Stating a preference she doesn't meet. Example: \"You're cute, but I usually go for girls who are more [trait].\"\n2. **The Obstacle:** Giving a reason why it won't work. Example: \"I'm flying out in the morning, so nothing can happen between us.\"\n3. **Sexual Misinterpretation (Negative):** Acting like she's hitting on you and turning her down. Example: \"I know I'm hot, but stop looking at me like that. I'm not ready for you yet.\"\n\n**Mindset:** \"Willingness to walk away\". Be the recovering sex addict who is trying to resist her.",
+      inputs: [
+        { q: "She gives you a \"heavy\" sexual look or a flirtatious line.", a: "\"Stop looking at me like that! You're never going to get in my pants if you keep doing that.\"", bundle: 'free' },
+        { q: "You want to set a \"Friend Zone\" frame to make her chase.", a: "\"We can be friends, but I'm not giving you my number. You look like the type that would stalk me.\"", bundle: 'free' },
+        { q: "You're in a high-tension moment and want to \"push\" her away.", a: "\"You're adorable, but you also look like trouble. I think I should run away before I get in too deep.\"", bundle: 'free' },
+        { q: "You want to disqualify yourself as a \"serious\" option.", a: "\"I'm definitely not boyfriend material. Let's just have fun and let the grown-ups handle the serious stuff.\"", bundle: 'free' },
+        { q: "You want to indicate that sex is off the table (to lower her guard).", a: "\"I think you're cool, but just so we're clear: no sex tonight. I'm over the meaningless hookups.\"", bundle: 'free' },
+        { q: "You want to use the \"I can't decide\" disqualifier.", a: "\"I can't decide if I'm going to love you or hate you yet. The jury is still out.\"", bundle: 'pro' },
+        { q: "She mentions a \"red flag\" about herself.", a: "\"Wow, I am definitely going to have to break up with you now. That is a dealbreaker.\"", bundle: 'pro' },
+        { q: "You want to use \"Arrogant Disqualification.\"", a: "\"I was hoping you'd be my 'future ex-wife,' but you just don't have the discipline for it.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  toddv3: [
+    {
+      name: "Wide and Deep Rapport",
+      guideFront: "Use this strategy to respond when...",
+      guideBack: "A possible response.",
+      description: "Rapport is built through a balance of **Wide Rapport** (touching on many different topics to establish conversational chemistry) and **Deep Rapport** (exploring one topic emotionally and passionately). If you only go wide, the talk stays superficial; if you only go deep on a non-sexual topic (like a specific hobby), you risk being categorized as just a \"friend who likes that thing\" rather than a romantic option.\n\n**Why it works:** It creates a **multi-dimensional connection**. Mixing breadths of topics with emotional depth makes the interaction feel like you've known each other much longer than you actually have.\n\n**Typical phrases:** • \"I love that because...\" • \"That's cool, but what actually drives you to do it?\" • \"Enough about [Topic A], tell me something about [Topic B].\"\n\n**Under-categories:**\n\n1. **The Passion Pivot:** Moving from a fact (\"I'm a doctor\") to the emotion (\"What motivated you to help people?\").\n2. **The Topic Shift:** Intentionally changing the subject to avoid getting \"stuck\" in one logical loop.\n3. **Emotional Mirroring:** Sharing your own passion to invite her to share hers.\n\n**Mindset:** \"Don't micromanage, but notice if the balance is out of whack\".",
+      inputs: [
+        { q: "You've been talking about her job for 10 minutes and want to go deeper.", a: "\"I get the facts of the job, but I'm curious: what actually motivated 14-year-old you to choose that path? What's the passion behind it?\"", bundle: 'free' },
+        { q: "You realize you've only talked about one nerdy subject for too long.", a: "\"We could talk about this all night, but I want to know more about you. Tell me, are you as adventurous as you are intelligent?\"", bundle: 'free' },
+        { q: "The conversation is jumping from topic to topic too fast.", a: "\"Wait, go back to what you said about traveling alone. I love that because it shows real independence. Why was that important to you?\"", bundle: 'free' },
+        { q: "She tells you she likes a specific team or hobby.", a: "\"I respect that passion. For me, I'm obsessed with [Your Hobby] because it makes me feel [Emotion]. Do you get that same feeling from your thing?\"", bundle: 'free' },
+        { q: "You want to share a personal belief to deepen the bond.", a: "\"You know, I've always believed that a morning of awkwardness is better than a night of loneliness. What’s your take on that?\"", bundle: 'free' },
+        { q: "You want to move from \"Poker talk\" to something more personal.", a: "\"I love the theory of [Topic], but let's be real—what's one thing about you that isn't obvious from looking at you?\"", bundle: 'pro' },
+        { q: "You want to test if she's a \"Hero\" or \"Villain\" type.", a: "\"So you're a nurse? That means you're the hero. I'm definitely more of a villain type. How are we going to get along?\"", bundle: 'pro' },
+        { q: "You want to explore her dreams.", a: "\"If you had 40 million dollars and no responsibilities, what would you actually do with your life? What's the dream?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Identifying the Blueprint",
+      guideFront: "Use this strategy to respond when...",
+      guideBack: "A possible response.",
+      description: "A \"Blueprint\" is the collection of **cultural background, life experiences, and values** that determine what a specific woman finds attractive or high-value. You observe her dress, speech, and origin (e.g., small-town vs. big-city) to guess what she \"invests\" in, then adjust your communication to be relevant to her specific world.\n\n**Why it works:** It allows you to **laser-target your value proposition**. Instead of using the same generic \"high-value\" lines for everyone, you hit the specific emotional buttons that resonate with her upbringing and current lifestyle.\n\n**Typical phrases:** • \"You seem like the type of girl who...\" • \"Being from a small town, you probably value...\" • \"I can tell you're the ambitious, nine-to-five type who...\"\n\n**Under-categories:**\n\n1. **The Cultural Read:** Guessing her background based on accent or style.\n2. **The Career Blueprint:** Tailoring your value (e.g., \"The Hero Doctor\") to her professional outlook.\n3. **The Situational Blueprint:** Recognizing that her \"Vegas vacation\" self is different from her \"At the office\" self.\n\n**Mindset:** \"Put yourself in her shoes and ask: what would I be feeling?\".",
+      inputs: [
+        { q: "You see a girl dressed in very high-end designer labels.", a: "\"You look like you're used to the finer things, but I'm curious—behind the labels, do you actually have a soul? What are you passionate about?\"", bundle: 'free' },
+        { q: "You find out she's from a small, traditional town.", a: "\"Growing up there, I bet you were the 'good girl' who everyone expected big things from. Am I right, or are you the black sheep?\"", bundle: 'free' },
+        { q: "You're talking to an ambitious corporate professional.", a: "\"I respect the hustle. Most people just want the paycheck, but you seem like the type who actually wants to rule the world one day.\"", bundle: 'free' },
+        { q: "She tells you she's a teacher or nurse.", a: "\"So you're the 'societally correct' hero type. You're probably looking for a guy with a 'doctor' level of stability, aren't you?\"", bundle: 'free' },
+        { q: "You meet a girl on vacation who seems high-energy and flighty.", a: "\"You're in full 'Vegas mode' right now, aren't you? I bet your home-self would be shocked by the trouble you're looking for tonight.\"", bundle: 'free' },
+        { q: "You want to test her \"Girlfriend Culture.\"", a: "\"I screen for culture just like a top company. Tell me, what's one red flag you have that I should know about now?\"", bundle: 'pro' },
+        { q: "She's acting very \"Bubbly and Elegant.\"", a: "\"You have that incredibly elegant look, but I have a feeling you're secretly a brat who always gets her way. Am I close?\"", bundle: 'pro' },
+        { q: "You want to see if she values intelligence.", a: "\"I love New York because I don't have to dumb things down. You seem precocious enough to actually keep up with a skewed sample like me.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Grounding Stories (DHV Stories)",
+      guideFront: "Use this strategy to respond when...",
+      guideBack: "A possible response.",
+      description: "Tell stories about your life that **subtly convey high-value traits** (DHVs) like competence, social proof, and health without sounding like you are bragging. A good grounding story focuses on an interesting event, and the \"value\" part is woven in as a natural detail.\n\n**Why it works:** It provides **attraction through subtext**. If you brag directly, you're \"try-hard\"; if you tell a funny story about being in Argentina to play soccer, you're just \"a guy with a cool life\".\n\n**Typical phrases:** • \"It was crazy, we were in [Location] and...\" • \"I was actually a serious [Athlete/Profession] back then...\" • \"I almost didn't tell you this, but...\"\n\n**Under-categories:**\n\n1. **The Vulnerable Strength:** A story about a struggle you've transcended.\n2. **The Accidental Success:** Mentioning an achievement as part of a larger, often funny, narrative.\n3. **The \"Us\" Leading Story:** A story that illustrates how you want your future interaction to look.\n\n**Mindset:** \"Brevity is the soul of wit—keep it pithy\".",
+      inputs: [
+        { q: "You want to convey that you are ambitious and successful.", a: "\"I actually started as a student with nothing, but I quit one credit before graduating because I knew I wanted to build my own show. It was a risk, but it's why I'm here now.\"", bundle: 'free' },
+        { q: "You want to show you have high-value social connections.", a: "\"My friend Woody and I were driving down Sunset in this drop-top Jeep, and these girls in a '57 Chevy started flirting with us at the lights. It was such a surreal American Dream moment.\"", bundle: 'free' },
+        { q: "You want to show you are an athlete or healthy.", a: "\"When I was younger, I lived in Argentina training with youth professional soccer teams. It was insane; those guys live for the sport. It taught me everything about discipline.\"", bundle: 'free' },
+        { q: "You want to lead the \"Seize the Moment\" frame.", a: "\"I heard this story about two people who met and left it to fate. They never saw each other again and died full of regret. I've always believed you have to seize the moment instead of waiting for fate.\"", bundle: 'free' },
+        { q: "You want to show you are \"dangerous\" but cool.", a: "\"I've had some crazy times traveling. One time in Asia, I ended up with so much cash I had to distribute it among my friends just to get through customs without a headache.\"", bundle: 'free' },
+        { q: "You want to show you are a \"leader.\"", a: "\"I've been coaching guys for years on how to get their lives together. It's rewarding to be the one pulling people out of the sea when they're a bit lost.\"", bundle: 'pro' },
+        { q: "You want to ground a \"douchy\" accessory.", a: "\"I wear this purely to look more douchy. It's like a cross for a vampire—it warns girls I'm not boyfriend material.\"", bundle: 'pro' },
+        { q: "You want to provoke her to ask for the story.", a: "\"I have a completely shady story about that, but I'm a little embarrassed to tell you. I'm not sure I trust you enough yet.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Cold Read",
+      guideFront: "Use this strategy to respond when...",
+      guideBack: "A possible response.",
+      description: "Make an observational **guess or statement about her personality or history** instead of asking a boring question. This is \"Answering the question instead of asking it\". Instead of \"Where are you from?\", you say \"You don't seem like you're from here\".\n\n**Why it works:** It **takes the burden off her** to provide the value and puts you in the role of the observant, high-value man. Even if your guess is wrong, the fact that you have a perspective makes the conversation more interesting and provocative.\n\n**Typical phrases:** • \"You seem like the type of girl who...\" • \"I bet you were the kid who...\" • \"You look like you're about to...\"\n\n**Under-categories:**\n\n1. **The Personality Label:** \"You seem like a workaholic\".\n2. **The \"I Knew It\" Read:** \"I knew you were the adventurous type\".\n3. **The Comparative Read:** \"You look like a fashionista, unlike most people in this industry\".\n\n**Mindset:** \"Your opinions are gold—state them unabashedly\".",
+      inputs: [
+        { q: "You want to find out her background without asking \"Where are you from?\".", a: "\"You don't seem like a local. You have way too much energy for this city. I'm guessing you're from somewhere sunnier.\"", bundle: 'free' },
+        { q: "You want to comment on her look and provoke a reaction.", a: "\"You have a beautiful look, but there's something a little strange I can't quite place yet. I bet you're more trouble than you look.\"", bundle: 'free' },
+        { q: "You see her looking at her phone.", a: "\"Don't tell me you're a social media addict. You look too creative to be wasting your time scrolling all day.\"", bundle: 'free' },
+        { q: "She tells you her job and you want to challenge her.", a: "\"A software engineer? I bet you're the type who was always at the front of the class taking too many notes. Am I right?\"", bundle: 'free' },
+        { q: "You meet a girl who seems very polite.", a: "\"You seem really nice. I bet you're the girl who got walked all over in high school until you found your edge.\"", bundle: 'free' },
+        { q: "You want to guess her current mission.", a: "\"You look like a girl on a mission. I'm curious what kind of trouble you're about to get into.\"", bundle: 'pro' },
+        { q: "You notice a specific style choice.", a: "\"I knew you were that type of girl. You're trying to bring the 'Mean Girls' look back, aren't you?\"", bundle: 'pro' },
+        { q: "She gives a specific reaction.", a: "\"The way you just smiled makes me think you actually love your job, even though you pretend to complain about it.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  toddv4: [
+    {
+      name: "Seeding the Pull",
+      guideFront: "Use this strategy to respond when...",
+      guideBack: "A possible response.",
+      description: "Mention future plans or activities with the girl in a restrictive or negative way before actually making the move. Instead of asking her to go somewhere, you suggest that you \"probably can't\" or that it \"might happen later\" if she's lucky.\n\n**Why it works:** It \"covers the exits\" by bringing up potential objections before she does, making it impossible for her to use them against you later. It tests her compliance and interest level in a low-risk environment where a \"no\" isn't a rejection of a real offer, but just a \"not yet\".\n\n**Typical phrases:** • \"I would love to show you [Place], but I don't know you well enough yet.\" • \"We probably shouldn't go back to my place yet, I'm a bad influence.\" • \"Maybe in 45 minutes we'll do X, but I'm not doing that yet.\"\n\n**Under-categories:**\n\n1. **The Restricted Invite:** Suggesting a cool place but saying you aren't ready to take her there. Example: \"There is this amazing rooftop, but I only take cool girls there\".\n2. **Preempting Objections:** Stating her likely excuses first. Example: \"I know you have to get back to your friends soon, so we can only hang out for five minutes\".\n3. **The \"Not Yet\" Frame:** Keeping her in suspense about when the escalation will happen. Example: \"I'm enjoying you, but let's take it slow\".\n\n**Mindset:** \"Have faith in your future self.\" Don't worry about being \"friend-zoned\" by being slow; if you are one-on-one, you will eventually escalate.",
+      inputs: [
+        { q: "You want to suggest going to a different bar but keep it low pressure.", a: "\"I'd love to show you this other spot with a crazy view, but actually never mind, I don't know you well enough yet. Let's just stay here for a bit.\"", bundle: 'free' },
+        { q: "You want to plant the seed of going home together later.", a: "\"I think you're cool, but we probably shouldn't go back to my place yet. I have to get up early, and you look like the type that would keep me awake all night.\"", bundle: 'free' },
+        { q: "You are having a great conversation and want to test her compliance for a move later.", a: "\"You seem relatively fun, but we can't do anything adventurous yet. Maybe in 45 minutes, if you've won me over, I'll reconsider.\"", bundle: 'free' },
+        { q: "You see her looking at her friends and want to preempt her leaving.", a: "\"I know you're probably worried your friends will miss you. We'll get you back soon, but stay for five more minutes and tell me the rest of that story.\"", bundle: 'free' },
+        { q: "You want to use the \"I don't do sex on the first date\" seed.", a: "\"I think you're adorable, but just so you know, I'm not having sex with you tonight. I'm over the meaningless hookups.\"", bundle: 'free' },
+        { q: "You want to seed an \"adventure\" for a future date.", a: "\"You seem like you might actually be adventurous. I have a crazy plan for a date involving [Activity], but you're not ready for that level of trouble yet.\"", bundle: 'pro' },
+        { q: "She asks what you are doing later.", a: "\"I have some business to handle, but I might pop back later and send you home... or maybe you can come. Actually, no, you shouldn't come. I just met you.\"", bundle: 'pro' },
+        { q: "You want to seed a \"deal\" to be revealed later.", a: "\"I have a deal I want to make with you later, but I'll tell you the details when you've earned it.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "False Time Constraints",
+      guideFront: "Use this strategy to respond when...",
+      guideBack: "A possible response.",
+      description: "Explicitly state that you can only stay for a brief period or that you have to leave soon. This is used at the start of an approach or right before suggesting a move to a new venue.\n\n**Why it works:** It removes the \"threat\" of the interaction lasting forever, which lowers her defenses and makes her more likely to commit to a stop or a move. It also communicates that you are a high-value man with a life and plans outside of her.\n\n**Typical phrases:** • \"I have to go meet my friends in a second, but...\" • \"I can only stay for one quick drink.\" • \"I'm heading out in a minute, but I had to say hi.\"\n\n**Under-categories:**\n\n1. **The Opener Constraint:** Used to get a girl to stop walking. Example: \"Excuse me, I have to go in a second, but I just noticed something...\".\n2. **The Date Constraint:** Setting a limit on a date to make her chase your time. Example: \"I'm busy with friends in two hours, but I have a gap now\".\n3. **The Move Constraint:** Lowering the pressure of a venue change. Example: \"Let's go check out the view for five minutes, then I have to head off\".\n\n**Mindset:** \"Be the one who is leaving.\" The person willing to walk away has the power in the negotiation.",
+      inputs: [
+        { q: "You want to stop a girl who is walking but she looks busy.", a: "\"Excuse me, I have to run in a second, but you have the most expressive face I've seen all day.\"", bundle: 'free' },
+        { q: "You are suggesting a quick drink on an instant date.", a: "\"I can't stay super long, but let's grab one quick drink. I want to see if you're actually as cool as you look.\"", bundle: 'free' },
+        { q: "You are joining a girl and her friends at a table.", a: "\"I'll join you guys for one minute, then I have to get back to my friends. I'm Todd.\"", bundle: 'free' },
+        { q: "You want to exchange numbers because you are \"leaving.\"", a: "\"I'm actually going to head off now, but let's exchange contact info so we can grab that drink later.\"", bundle: 'free' },
+        { q: "You want to sit down next to a girl but don't want to seem needy.", a: "\"My legs are killing me, I'm going to sit here for two minutes and then keep going. What's your story?\"", bundle: 'free' },
+        { q: "You want to suggest a venue change to a \"rooftop.\"", a: "\"I have to meet some people in a bit, but I have 20 minutes. I can show you a little glimpse of my life on that rooftop nearby, then we both go our separate ways.\"", bundle: 'pro' },
+        { q: "You are setting up a date for later.", a: "\"I'm busy with friends for a few hours, but I'll be free later in the evening for a quick banter session.\"", bundle: 'pro' },
+        { q: "You want to pull her to your place using a \"work\" excuse.", a: "\"I have to go plug this camera into my computer real fast, but come with me and we can finish this conversation while it loads.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Assumptive Closing (Sco Game)",
+      guideFront: "Use this strategy to respond when...",
+      guideBack: "A possible response.",
+      description: "Move the interaction forward by treating the move or the close as a foregone conclusion. Instead of asking for permission (e.g., \"Do you want to go?\"), you simply state the move and start walking.\n\n**Why it works:** It demonstrates dominant leadership and certainty. By not asking a \"yes/no\" question, you avoid giving her a chance to reflexively say \"no\" out of habit or social conditioning.\n\n**Typical phrases:** • \"Let's go.\" • \"Sco.\" (Let's go contracted) • \"I'll take your number.\"\n\n**Under-categories:**\n\n1. **The Physical Lead:** Walking and assuming she follows. Example: \"Let's go this way\".\n2. **The Logistical Close:** Treating the exchange of information as natural. Example: \"I'll take your number, I'll hit you up on WhatsApp\".\n3. **The Scenarist Close:** Ending the set by assuming you will see her again. Example: \"I know a cute boy who might consider coffee with you if you're lucky\".\n\n**Mindset:** \"Assume she wants to go with you.\" Don't ask for permission, just beg for forgiveness if she objects.",
+      inputs: [
+        { q: "You've been talking at a bar and want to move to a booth.", a: "\"Let's go over there, it's quieter. Come on.\"", bundle: 'free' },
+        { q: "You are ending a great conversation and want her number.", a: "\"I'll take your number. We'll get in touch and I'll show you that spot I mentioned.\"", bundle: 'free' },
+        { q: "You want to take her on an instant date to Cheesecake Factory.", a: "\"I'm actually going to Cheesecake Factory for a minute. I may as well join you, let's go.\"", bundle: 'free' },
+        { q: "You are ready to leave the club and want her to come along.", a: "\"I'm enjoying this, but I need to head back. [ __ ] it, just come with me. Let's go now before I change my mind.\"", bundle: 'free' },
+        { q: "You want to set up a future meeting after a good set.", a: "\"I'll shoot you a message on Sunday and we'll see if you're cool enough for that coffee.\"", bundle: 'free' },
+        { q: "You are at the door of a club and the bouncer asks for the guest list.", a: "\"Nope, it's just me. [Look him in the eye and walk in].\"", bundle: 'pro' },
+        { q: "You want to lead her away from her friends in a high-energy way.", a: "\"You guys are awesome, but I'm stealing your friend for two minutes. We have a secret to discuss.\"", bundle: 'pro' },
+        { q: "You want to assume the \"couple\" frame for the close.", a: "\"We're going to go somewhere lovely and you will love it. If you don't, you can go home. Sco.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Emotional Spiking (The Polarizer)",
+      guideFront: "Use this strategy to respond when...",
+      guideBack: "A possible response.",
+      description: "Inject a sudden, strong positive or negative statement into the conversation to break a platonic \"flat line.\" This is used when the conversation is getting too polite, logical, or boring (\"Nice to meet you\" territory).\n\n**Why it works:** It creates immediate sexual relevance and tension. By being polarizing, you force her to engage emotionally and chase validation, rather than just tolerating a \"nice\" conversation.\n\n**Typical phrases:** • \"You're the most ridiculous girl I've ever met.\" • \"I think I like you and you totally disgust me.\" • \"You seem really nice... I bet you were the girl who got bullied in high school.\"\n\n**Under-categories:**\n\n1. **The Vibe Spike:** Used to save a \"lukewarm\" set. Example: \"Wait, there's something I love about you and something I just can't stand\".\n2. **The Qualification Spike:** Challenging her to prove she's not boring. Example: \"I bet you've never done anything crazy in your life\".\n3. **The Intention Spike:** Making a strong statement of desire or interest. Example: \"You look like trouble in the best way. I had to meet you\".\n\n**Mindset:** \"Risk the immediate pain of an awkward moment to give yourself an actual chance\".",
+      inputs: [
+        { q: "The conversation is friendly but lacks any \"spark\" or tension.", a: "\"You're the most ridiculous girl I've ever met. I think you win the prize. If I had a crown, I'd give it to you.\"", bundle: 'free' },
+        { q: "You want to save a set that is about to end with \"nice to meet you.\"", a: "\"Wait, stop. I can't decide if I'm going to have a crush on you or run away right now. You're trouble.\"", bundle: 'free' },
+        { q: "She seems too polite and \"good girl\" for the venue.", a: "\"You seem really nice... I bet you were the girl who got walked all over in high school until you found your edge.\"", bundle: 'free' },
+        { q: "You want to inject a sexual \"spike\" into a boring topic.", a: "\"I bet you're professionally good at lying. That makes me feel totally safe... and a little turned on. Stop it.\"", bundle: 'free' },
+        { q: "You want to challenge her intelligence/drive.", a: "\"I respect the hustle, but I'm curious: behind all the designer labels, do you actually have a soul?\"", bundle: 'free' },
+        { q: "You want to use a \"highly polarizing\" intent statement.", a: "\"I think I like you and you [ __ ] totally disgust me at the same time. It's a weird vibe.\"", bundle: 'pro' },
+        { q: "You want to spike the vibe after she gives a one-word answer.", a: "\"You're a doctor? Boring! I bet you've never done anything impulsive in your entire life.\"", bundle: 'pro' },
+        { q: "You want to tease her about her \"red flags.\"", a: "\"Wow, I am definitely going to have to break up with you now. That is a massive dealbreaker.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  toddv5: [
+    {
+      name: "Passing Value Shit Tests",
+      guideFront: "Use this strategy to respond when...",
+      guideBack: "A possible response.",
+      description: "Value shit tests are challenges to see if your frame is as high-value as you claim. When a girl challenges your style, intent, or presence, pass the test by being non-reactive. Use \"Agree and Exaggerate\" to point out the absurdity of the challenge, or \"Misinterpret as a Compliment\" to flip the script.\n\n**Why it works:** It proves you are \"Teflon\"—nothing she says can penetrate your self-esteem. By finding the positive implication in her challenge, you demonstrate high status and force her to engage with your frame instead of defending yours.\n\n**Typical phrases:** • \"If by that you mean it was clever, then thank you.\" • \"I'm glad I Stand out. Maybe one day you will too.\" • \"Wait, you've been looking me up and down all night! I'm flattered.\"\n\n**Under-categories:**\n\n1. **Agree and Exaggerate:** Taking her challenge to a ridiculous extreme. Example: \"I've been in my basement for 10 years, I missed the Kardashians\".\n2. **The \"Check Me Out\" Reframe:** Acting like her insult is proof she's objectifying you. Example: \"I'm glad you're checking out my tight shirt\".\n3. **Reframing as Attraction:** Interpreting her challenge as her being confused by her attraction to you.\n\n**Mindset:** \"Risk the immediate pain of an awkward moment to give yourself an actual chance\". Find the challenge amusing rather than annoying.",
+      inputs: [
+        { q: "She says, \"Is that your only pickup line?\"", a: "\"If by that you mean it was clever enough to be a line, I'm glad you thought so. It just popped into my head.\"", bundle: 'free' },
+        { q: "A girl tells you, \"I think you're just so annoying.\"", a: "\"I'm glad I stand out. I'd much rather stand out as annoying than fit in as nothing.\"", bundle: 'free' },
+        { q: "You approach a girl and she says, \"You seem very nervous.\"", a: "\"Oh my god, I am so nervous. I can barely talk. My voice might crack, so please don't hold it against me.\"", bundle: 'free' },
+        { q: "She challenges your outfit: \"Your style reminds me of 2011.\"", a: "\"Well, thank you for calling me hot. I guess we've determined your favorite decade.\"", bundle: 'free' },
+        { q: "She says, \"Why are you looking at me like that?\"", a: "\"Stop flattering yourself. I'm just listening to what you're saying.\"", bundle: 'free' },
+        { q: "She says you've gained weight or look different.", a: "\"Have you been stalking me? How do you know what I used to look like? I need a few more gut punches for my self-esteem.\"", bundle: 'pro' },
+        { q: "She asks, \"What makes you so amazing?\" in a skeptical way.", a: "\"Have you looked at me? Of course I'm amazing. But let's take it slow, I'm not ready for you yet.\"", bundle: 'pro' },
+        { q: "She says, \"I don't date guys with beards.\"", a: "\"I'll tell you what: when we get very close one day, you can ask me to shave it and I'll tell you no.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Passing Comfort Shit Tests",
+      guideFront: "Use this strategy to respond when...",
+      guideBack: "A possible response.",
+      description: "Comfort shit tests aren't about your value; they are checking if you are genuine or just a \"player\". She is checking if she can trust the connection. Pass these by acknowledging her concern without giving up your frame.\n\n**Why it works:** If you use a \"cocky\" pass for a comfort test, you confirm her fear that you are fake. By being calm and \"all-pro,\" you build the necessary comfort for the interaction to progress toward sex or a relationship.\n\n**Typical phrases:** • \"It's so modest of you to think you're not special.\" • \"I thought we had a special connection, I see it meant nothing to you.\" • \"I respect that you're being cautious. Most girls just drift, but you have standards.\"\n\n**Under-categories:**\n\n1. **The \"You're Not Special\" Reframe:** Playfully accusing her of being the one who isn't genuine.\n2. **Calm Ownership:** Stating that you have been a player in the past but you're being real now.\n3. **Empathy, not Sympathy:** Understanding her logistical or emotional obstacle and helping her through it.\n\n**Mindset:** \"Vulnerability is strength\". Assure her you are genuine without becoming needy.",
+      inputs: [
+        { q: "She says, \"I bet you've had this conversation with a lot of girls.\"", a: "\"It's so modest of you to think you're not special. I actually thought we had a connection.\"", bundle: 'free' },
+        { q: "She says, \"I don't do one-night stands.\"", a: "\"Cool, I'm just here for a conversation. Let's slow this way down.\"", bundle: 'free' },
+        { q: "She says, \"I can't leave my friends.\"", a: "\"I get it, you're a good friend. We'll just go for ten minutes and I'll have you back before they even notice.\"", bundle: 'free' },
+        { q: "She calls you a \"player\" after a few minutes.", a: "\"You think I'm a player? That's perceptive. I have been that guy at times, but with you, I'm only like 80% player.\"", bundle: 'free' },
+        { q: "She asks, \"Are you being serious right now?\"", a: "\"I know I've been joking a lot, but actually... yes. I'm really enjoying getting to know the real you.\"", bundle: 'free' },
+        { q: "She says, \"I'm not sure if I can trust you.\"", a: "\"I don't blame you. I'm a stranger from a different city. But I'm a boy who lives by his word. Let's see if you can keep up.\"", bundle: 'pro' },
+        { q: "She suggests you are trying too hard to impress her.", a: "\"I'm not trying to impress you, I'm trying to see if you can impress me. The jury is still out.\"", bundle: 'pro' },
+        { q: "She says, \"This is so socially awkward.\"", a: "\"Socially awkward doesn't mean bad. It means we're doing something real instead of staring at our phones.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The \"What Do I Want?\" Move",
+      guideFront: "Use this strategy to respond when...",
+      guideBack: "A possible response.",
+      description: "Stop asking \"What should I do to get her?\" and start asking \"What do I genuinely want to do right now?\". This involves acting on your own desires—whether it's getting a drink, moving venues, or making a joke—without censoring yourself for her approval.\n\n**Why it works:** It cures outcome dependence. When you do what you want, you convey the highest level of status because you aren't seeking her permission to exist or lead.\n\n**Typical phrases:** • \"I'm thirsty, let's go get water.\" • \"I've been sitting too long, I want to walk around.\" • \"I want to rule the world one day, I'm serious.\"\n\n**Mindset:** \"Assume you are the man and don't ask for permission, just beg forgiveness if you have to\".",
+      inputs: [
+        { q: "You are tired of sitting in a booth and want to walk.", a: "\"You know what? I'm tired of sitting. Let's go for a walk and see what's happening over there.\"", bundle: 'free' },
+        { q: "She mentions something that reminds you of a joke you want to say.", a: "\"I really want to make a joke about that right now, but you'll probably get offended. [Pause] Okay, I'm doing it anyway.\"", bundle: 'free' },
+        { q: "You want a drink but aren't sure if she's ready to move.", a: "\"I'm thirsty. I'm going to get bottled water, come with me and we'll keep talking.\"", bundle: 'free' },
+        { q: "You want to share a big, \"unrealistic\" dream.", a: "\"I want to rule the world one day. I'm 100% serious. What about you?\"", bundle: 'free' },
+        { q: "You feel like the conversation is boring you.", a: "\"Actually, this is a boring topic. Let's talk about something more dangerous instead.\"", bundle: 'free' },
+        { q: "You want to check a score on your phone or do something minor.", a: "\"Hang on one second, I just want to check this score real fast. [Does it] Okay, back to you.\"", bundle: 'pro' },
+        { q: "You want to lead her to a rooftop but it's a big move.", a: "\"I'm going to go check out the view on that rooftop. You should come, I want to see if you're as adventurous as you look.\"", bundle: 'pro' },
+        { q: "You really want to physically escalate but are nervous.", a: "[Ask yourself: What would I do if rejection was impossible? Then do that.]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Handling the Posse",
+      guideFront: "Use this strategy to respond when...",
+      guideBack: "A possible response.",
+      description: "When a girl is with friends, you must win over the group or \"wing off\" the obstacles. This involves engaging the leader or the \"pissed off\" friend first to build social capital before isolating your target.\n\n**Why it works:** If the friends don't like you, they will drag her away. By providing value to the whole group (e.g., being the \"fun guy\" or the \"knowledgeable local\"), you remove the social pressure that makes her flake.\n\n**Typical phrases:** • \"Are you guys best friends? There's a reason I'm asking.\" • \"You guys are such good wingmen, I love this.\" • \"I'll join you guys for one minute, then I have to get back.\"\n\n**Under-categories:**\n\n1. **Engaging the Obstacle:** Giving attention to the friend who seems most skeptical.\n2. **The Group Venue Change:** Moving the whole posse to a new location where isolation is easier.\n3. **The \"Steal\":** Explicitly telling the group you are taking their friend for a moment.\n\n**Mindset:** \"Use society to your advantage\". Be the socially well-adjusted person people enjoy making friends with.",
+      inputs: [
+        { q: "You approach a girl in a group and her friends look protective.", a: "\"You guys are such good wingmen! I respect that. I'm Todd, I promise I'm only like 10% trouble.\"", bundle: 'free' },
+        { q: "You want to start a conversation with a group of friends.", a: "\"Wait, I just noticed something. Are you guys best friends? There's a reason I'm asking.\"", bundle: 'free' },
+        { q: "You want to talk to one girl but the group is moving.", a: "\"Excuse me, I'll join you guys for one minute, then I have to get back to my friends. What's the story here?\"", bundle: 'free' },
+        { q: "You are talking to a girl and her friend looks bored.", a: "\"Hey, are you doing okay? You look like you need a drink or a vacation. Which one is it?\"", bundle: 'free' },
+        { q: "You want to venue change a group of tourists.", a: "\"You guys are tourists, right? You don't know this city. I know a way more fun spot, follow me.\"", bundle: 'free' },
+        { q: "You want to isolate her from her friends for a \"secret.\"", a: "\"You guys are awesome, but I'm stealing your friend for two minutes. We have a secret to discuss. We'll be right back.\"", bundle: 'pro' },
+        { q: "The group has a language barrier or is difficult to manage.", a: "[Be friendly with everyone and use \"fun\" or \"knowledge of the area\" as your currency.]", bundle: 'pro' },
+        { q: "A guy friend or \"alpha\" male enters the set.", a: "\"This guy is awesome! That was like the best pickup line. Just go, I'm taking notes. You have 30 seconds.\"", bundle: 'pro' },
+      ]
+    },
+  ],
 };
 
 // ─── COLLECTIONS MODE DATA ───────────────────────────────────────────────────
@@ -9791,6 +11323,462 @@ const collectionsModeData = {
         { q: "They are angry about something that was actually unfair.", a: "\"You're allowed to be furious. It was unfair.\" [don't]", bundle: 'pro' },
         { q: "They have rejected your reframe.", a: "\"Fair enough. It was just how it looked from here.\" [offer]", bundle: 'pro' },
         { q: "They want company rather than perspective.", a: "\"I'll just be annoyed about it with you, then.\" [don't]", bundle: 'pro' },
+      ]
+    },
+  ],
+  danbacon1: [
+    {
+      name: "Friction & Spark",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible response, with the strategy in brackets.",
+      description: "Playfully Challenging Humor and Making Fun of Her Answers. These strategies are used to create \"playful friction.\" They prevent you from being the \"boring nice guy\" by challenging her and labeling her in fun ways.",
+      inputs: [
+        { q: "You want to tease a brunette woman about her hair.", a: "\"You're beautiful, but I don't date brunettes. Would you dye your hair blonde for me?\" [Playfully Challenging Humor]", bundle: 'pro' },
+        { q: "She tells you she works as an \"accountant.\"", a: "\"An accountant? That makes sense. You look like a total nerd. Where's your calculator?\" [Making Fun of Her Answers]", bundle: 'pro' },
+        { q: "She mentions she is into astrology and you want to \"disqualify\" her.", a: "\"I thought you were cute, but astrology? Sorry, you've just been placed in the friend zone.\" [Playfully Challenging Humor]", bundle: 'pro' },
+        { q: "She says she is a \"nurse\" and you want to tease her.", a: "\"A nurse? So you're a mean one then. I can see you poking people with needles and laughing.\" [Making Fun of Her Answers]", bundle: 'pro' },
+        { q: "She asks what you did this weekend and you want to be mysterious.", a: "\"Wouldn't you like to know? I'm not sure I should tell you... your imagination will go wild.\" [Playfully Challenging Humor]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Breaking the Interview",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible response, with the strategy in brackets.",
+      description: "Misinterpreting Intent and The Statement-Question Combo. These strategies shift the conversation from a logical \"interrogation\" to a flirtatious connection. They make you the \"prize\" and lead her into the talk.",
+      inputs: [
+        { q: "She asks if you have a girlfriend.", a: "\"Why, you want to take me out? If you want to wine and dine me, just ask! Don't be shy.\" [Misinterpreting Intent]", bundle: 'pro' },
+        { q: "You want to start a talk about the music at a bar.", a: "\"I'm loving the music tonight. How about you? What do you think of this place?\" [The Statement-Question Combo]", bundle: 'pro' },
+        { q: "She says, \"You're a nice guy.\"", a: "\"Flattery will get you nowhere, girl! But keep going—what else do you like about me?\" [Misinterpreting Intent]", bundle: 'pro' },
+        { q: "You want to find out what she's studying at university.", a: "\"I'm nearly done with my engineering degree; it's been tough. How about you? Are you early on or almost a pro?\" [The Statement-Question Combo]", bundle: 'pro' },
+        { q: "You catch her looking at you repeatedly.", a: "\"I've seen you looking at me. You're undressing me with your eyes! Settle down, we just met.\" [Misinterpreting Intent]", bundle: 'pro' },
+      ]
+    },
+  ],
+  danbacon2: [
+    {
+      name: "The Selection Mindset",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible response, with the strategy in brackets.",
+      description: "Conveying High Social Status, Flipping the Script, and Avoiding Self-Qualification. These strategies are used to establish the \"Frame\" of the interaction. They focus on being the selector rather than the selected, ensuring you are seen as the prize.",
+      inputs: [
+        { q: "You meet an attractive woman and want to greet her with high status.", a: "\"Oh hi, how you doing? I'm Dan. What are your names?\" [Conveying High Social Status]", bundle: 'pro' },
+        { q: "You feel like bragging about your new apartment to impress her.", a: "[Say nothing about the apartment. Ask about her passions instead.] [Avoiding Self-Qualification]", bundle: 'pro' },
+        { q: "She asks if you have a girlfriend.", a: "\"Why, you want to take me out? If you want to wine and dine me, just ask! Don't be shy.\" [Flipping the Script]", bundle: 'pro' },
+        { q: "You want to suggest moving to a quieter bar in a dominant way.", a: "\"Hey you, I'm thirsty. Let's go to that other spot. Come on, let's go.\" [Conveying High Social Status]", bundle: 'pro' },
+        { q: "She mentions she is the middle child.", a: "\"The rebellious middle child! I knew it. What sort of trouble did you get up to growing up?\" [Flipping the Script]", bundle: 'pro' },
+      ]
+    },
+  ],
+  danbacon3: [
+    {
+      name: "Relationship Dynamics",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible response, with the strategy in brackets.",
+      description: "Lovingly Expecting More, Addressing Bad Behavior, and General Leadership. These strategies focus on maintaining the correct \"Frame\" within a long-term commitment. They ensure you are seen as the leader and the prize, which keeps her \"Good Girl Switch\" active.",
+      inputs: [
+        { q: "She is being lazy and expects you to do all the housework.", a: "\"I'm not your maid, honey. You're a great woman, but you need to pull your weight more. Now, go handle those dishes while I finish this.\" [Addressing Bad Behavior / Leadership]", bundle: 'pro' },
+        { q: "You want her to make you a drink but she's watching TV.", a: "\"Hey babe, go make me a Jameson and soda. I'll give you a big kiss when you get back.\" [Lovingly Expecting More]", bundle: 'pro' },
+        { q: "She asks \"What are we doing for our anniversary?\"", a: "\"I've got a surprise planned, but I need you to find a dress that makes you look like a total knockout. Can you handle that mission?\" [General Leadership]", bundle: 'pro' },
+        { q: "She starts an argument because you were 5 minutes late.", a: "\"That wasn't cool. You're getting all worked up over nothing. Relax, I'm here now. Give me a hug.\" [Addressing Bad Behavior]", bundle: 'pro' },
+        { q: "You want to reward her for being extra sweet lately.", a: "\"I've noticed you've been a really good girl this week. I'm taking you out to that fancy spot on Friday. Be ready by eight.\" [General Leadership / Reinforcement]", bundle: 'pro' },
+      ]
+    },
+  ],
+  danbacon4: [
+    {
+      name: "Holding the Frame",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible response, with the strategy in brackets.",
+      description: "Ignoring Ridiculous Rules and The \"Let Her Win You Over\" Move. These strategies are used when she is testing your boundaries or your leadership. They focus on maintaining the position of the \"prize\" and the \"selector\" in the relationship.",
+      inputs: [
+        { q: "She says you can't touch her hair because she just did it.", a: "\"Whatever! It looks a mess anyway. Come here, I'm fixing it for you.\" [Ignoring Ridiculous Rules]", bundle: 'pro' },
+        { q: "She suggests a place to go for the weekend.", a: "\"I'm not really in the mood for the beach. What's your second favorite option? Pitch it to me.\" [Let Her Win You Over]", bundle: 'pro' },
+        { q: "She makes a rule that you aren't allowed to call her by her nickname in public.", a: "\"Imagine telling your friends we broke up because I called you 'Babs' at the grocery store. Absolutely ridiculous.\" [Ignoring Ridiculous Rules]", bundle: 'pro' },
+        { q: "You want her to make a decision but keep the approval power.", a: "\"I want to eat something hearty. Show me three restaurants you like and I'll pick the winner.\" [Let Her Win You Over]", bundle: 'pro' },
+        { q: "She is throwning a tantrum about a \"rule\" you broke.", a: "\"[Smile lovingly] Look at you getting all worked up. You're such a nutcase. Give me a hug.\" [Ignoring Ridiculous Rules]", bundle: 'pro' },
+      ]
+    },
+  ],
+  oconnor1: [
+    {
+      name: "Calling Them Out",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A tactical response [Strategy Name].",
+      description: "Strategies for directly addressing inappropriate behavior by drawing sharp professional lines or exposing subtext. **Mindset:** Assertive neutrality; making the subtext the text.",
+      inputs: [
+        { q: "A colleague asks a snide question about your promotion.", a: "\"It sounds to me like you're saying I'm incompetent and haven't earned this. Is that what you're saying?\" [The Clarifying Question]", bundle: 'free' },
+        { q: "A manager makes a \"joke\" about your appearance.", a: "\"I'm surprised you'd make a personal comment like that when our relationship has been professional.\" [The Professional Boundary]", bundle: 'pro' },
+        { q: "A peer tries to shame you in front of a group.", a: "\"Is this the appropriate venue for that type of question?\" [The Power of 'What']", bundle: 'pro' },
+        { q: "Someone implies you only got an opportunity through favors.", a: "\"When you say that, it sounds like you're impugning my integrity. Is that what you're trying to say?\" [The Clarifying Question]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Taking Control",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A tactical response [Strategy Name].",
+      description: "Strategies to establish physical and verbal dominance in an environment and exit toxic interactions. **Mindset:** I have dominion; I am the cause.",
+      inputs: [
+        { q: "You need to project authority against a workplace bully.", a: "(Face them head-on, eyelids slightly lowered over the iris, voice deep). [Power Tone and Icy Stare]", bundle: 'free' },
+        { q: "A conversation has become a waste of time.", a: "\"I value both of our time too much to continue this unproductive conversation. Goodbye.\" [The Power-Down]", bundle: 'pro' },
+        { q: "You are being ignored in a meeting.", a: "(Use territorial markers—pen, notebook—to take up space and lean forward). [Power Tone and Icy Stare]", bundle: 'pro' },
+        { q: "You need to shut down a looping argument.", a: "\"I think we both understand each other's position; I'm ending this conversation now. Have a pleasant day.\" [The Power-Down]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Professional Leverage",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A tactical response [Strategy Name].",
+      description: "Strategies for increasing persuasiveness and handling reputation attacks with results-oriented logic. **Mindset:** Service-oriented and evidence-based.",
+      inputs: [
+        { q: "You are proposing a project to a busy manager.", a: "\"We should do this so you can have more time for yourself and not feel you have to do everything.\" [Benefit Statements]", bundle: 'free' },
+        { q: "Someone blames you for a client loss.", a: "\"I understand losing a client is hard, but my work speaks for itself and I'm surprised you'd attack me here.\" [Selective Engagement]", bundle: 'pro' },
+        { q: "You want to dismiss a petty insult about your work.", a: "\"Your beliefs are of no consequence to me; my track record speaks for itself.\" [Selective Engagement]", bundle: 'pro' },
+        { q: "You need to decline a request while sounding like a team player.", a: "\"I'd like to be helpful, however I'm afraid I have plans tonight, so I'm wondering if I can help in the morning?\" [Benefit Statements]", bundle: 'pro' },
+      ]
+    },
+  ],
+  oconnor2: [
+    {
+      name: "Managing Your Time",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible response, with the strategy in brackets.",
+      description: "Use The B-I-B script to stop work-dumping and The Availability Monitor to manage interruptions. These tools help you reclaim your focused work hours and train others to respect your schedule. **Mindset:** My time is a resource that I must manage, or someone else will manage it for me.",
+      inputs: [
+        { q: "You’ve been taking on too many favors and your own work is suffering.", a: "\"I've noticed I'm saying yes when I should be saying no. If you see me doing that, remind me of this talk. That way, I'll be more productive for the team.\" [The B-I-B Script]", bundle: 'pro' },
+        { q: "You want to prevent \"Time Suckers\" from walking into your cubicle all day.", a: "\"I'm implementing a red/green sign system. When it's red, I'm in deep focus mode. Can I count on your support with this?\" [The Availability Monitor]", bundle: 'pro' },
+        { q: "Someone asks \"Quick question?\" while you are clearly working on a deadline.", a: "(Point to your 'Unavailable' sign and stay focused). [The Availability Monitor]", bundle: 'pro' },
+        { q: "You want to set the groundwork for a new boundary with a needy coworker.", a: "\"Mary, I need your help. I've found I haven't been managing my time efficiently, so I'm asking you to help me stay on track.\" [The Availability Monitor]", bundle: 'pro' },
+        { q: "You want to explain why you are rejecting a task to keep the team strong.", a: "\"I've noticed I'm taking on work others can do. If I do that, it hinders your growth. Let's make sure you handle this one.\" [The B-I-B Script]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ending the Interaction",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible response, with the strategy in brackets.",
+      description: "Use The Diplomatic Decline to refuse a new request and Power-Down Phrases to exit an existing conversation. Use the Decline when the work hasn't started yet; use Power-Down when you are already in the room and need to leave. **Mindset:** I am in charge of my relationships and my exits.",
+      inputs: [
+        { q: "A coworker asks you to do their report because they \"have a life.\"", a: "\"I'd like to be helpful, however unfortunately I have my own deadlines to meet. Could we look at it together Monday?\" [The Diplomatic Decline]", bundle: 'pro' },
+        { q: "You are in a meeting that has become a \"circular argument\" with no end in sight.", a: "\"We both understand our positions. Since there's nothing more to contribute, I'm ending this conversation. Have a good day.\" [Power-Down Phrases]", bundle: 'pro' },
+        { q: "Your boss asks you to switch to a new software that you know will slow you down.", a: "\"I'd like to help, but I'm afraid that switch would double my project time. Could we stick to the current plan for this month?\" [The Diplomatic Decline]", bundle: 'pro' },
+        { q: "You are caught in a gossip session and want to leave without looking like a \"worker bee.\"", a: "\"I have nothing valuable to add to this, so I'm going to get back to my project. You know where to find me if you need anything.\" [Power-Down Phrases]", bundle: 'pro' },
+        { q: "A client asks for a discount you aren't authorized to give.", a: "\"I understand the budget is tight, but unfortunately I can't change the rate. I can, however, offer a smaller package that fits your needs.\" [The Diplomatic Decline]", bundle: 'pro' },
+      ]
+    },
+  ],
+  oconnor3: [
+    {
+      name: "Disempowering the Narcissist",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible response, with the strategy in brackets.",
+      description: "Use the Communication Hamburger to address behavior, Selective Engagement to ignore bait, Empowering Statements to manage control, and the \"Irrelevant\" Block to cut emotional ties. • If they want a reaction, use Selective Engagement. • If they want control, use an Empowering Statement. • If they want intimacy (even negative), use the \"Irrelevant\" Block. • Mindset: I am the master of my conversations.",
+      inputs: [
+        { q: "A narcissist says, \"You're only successful because you're lucky. Everyone knows you're incompetent.\"", a: "\"Frankly, your beliefs are of no consequence to me. Let's get back to the agenda.\" [Selective Engagement]", bundle: 'pro' },
+        { q: "Your coworker keeps asking why you're being \"so mean\" to them after you set a work boundary.", a: "\"It's an impossibility that I'm being mean to you, as that would imply a personal relationship that does not exist here.\" [The \"Irrelevant\" Block]", bundle: 'pro' },
+        { q: "They are yelling at you in your own office about a deadline.", a: "\"I don't allow that type of aggressive talk in my office. Would you like to continue this now with respect, or should we reschedule for tomorrow?\" [Empowering Statements]", bundle: 'pro' },
+        { q: "You notice they are \"forgetting\" your contributions to the team project for the third time.", a: "\"John, when my contributions are omitted from the summary, it concerns me because it appears you aren't aware of the work I've done.\" [The Communication Hamburger]", bundle: 'pro' },
+        { q: "They try to \"gotcha\" you by bringing up a mistake you made during your first week.", a: "(Maintain eye contact for 3 seconds, then turn to the person next to you) \"So, where were we on the budget?\" [Selective Engagement]", bundle: 'pro' },
+      ]
+    },
+  ],
+  oconnor4: [
+    {
+      name: "Influential Leadership",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible response, with the strategy in brackets.",
+      description: "Use Lead-in Lines to open the door, LBNT to guide performance, and D-A-R-T to enforce boundaries. • Professionalism is a game; these are the moves that separate the \"worker bees\" from the leaders. • Mindset: I bring the dignity to my social interactions.",
+      inputs: [
+        { q: "You need to tell a direct report that their presentation style needs to change.", a: "\"John, I'm concerned. [Lead-in] I liked your passion today. Next time, if you add more data, it will land better. [LBNT] Can I count on you for that? [Closer]\" [Dan 4 strategies]", bundle: 'pro' },
+        { q: "Your boss is constantly interrupting your focus time to give you \"ideas.\"", a: "\"I'm here to be your most productive team member. [D] However, these interruptions break my pattern. [A] Let's wait for my 'Green' block to discuss ideas. [R] That sounds reasonable, doesn't it? [T]\" [D-A-R-T]", bundle: 'pro' },
+        { q: "You want to praise a teammate in front of others without sounding like a \"mom.\"", a: "\"I really appreciate your attention to detail on this brochure. Were you aware that everyone here values your professionalism?\" [\"I\" instead of \"You\"]", bundle: 'pro' },
+        { q: "You are delivering a correction to someone who is older or more experienced than you.", a: "\"I find it difficult when our deadlines shift without notice. [I-statement] I'd like to help, however unfortunately my schedule is full. [Diplomatic Decline] Can we pick a fixed update time?\" [Dan 4 / Dan 2 mix]", bundle: 'pro' },
+      ]
+    },
+  ],
+  oconnor5: [
+    {
+      name: "Projecting Presence",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible response, with the strategy in brackets.",
+      description: "Use The Steeple to signal confidence in your message, Territorial Markers to show you belong, and Vocal Power Tone to command attention. • Presence is the total package of non-verbal cues that tell the room you are in charge of yourself. • Mindset: I bring the dignity to my social interactions.",
+      inputs: [
+        { q: "You are sitting in the lobby of a major corporation waiting for a high-stakes interview.", a: "(Set your bag on the chair next to you, sit with an open posture, and hum 'mm-hmm' to warm your voice).", bundle: 'pro' },
+        { q: "You are walking into a meeting room where everyone is already seated and talking.", a: "(Walk to a central spot, move the chair firmly to the table, and set your notebook down).", bundle: 'pro' },
+        { q: "Your boss asks for your opinion on a controversial project in front of the VP.", a: "(Lean into the table, implement a 4-second steeple, and speak loudly).", bundle: 'pro' },
+        { q: "You are being introduced to a new team and want to look like a leader, not a \"worker bee.\"", a: "(Face them head-on, chest to chest, and use your power tone).", bundle: 'pro' },
+        { q: "You're being given \"constructive criticism\" that feels like a personal attack.", a: "(Use the Icy Stare to stay cool, plant your forearms on the table, and listen without fidgeting).", bundle: 'pro' },
+      ]
+    },
+  ],
+  oconnor6: [
+    {
+      name: "Professional Resilience",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible response, with the strategy in brackets.",
+      description: "Use Coping Statements for internal control, The Broken Record for persistence, \"I Forgive You\" to maintain worth, and The Value Journal to quantify your power. • If you feel the pressure internally, regulate. • If the pressure is external, repeat. • If they mess up, forgive. • If you want more, prove it. • Mindset: I am the master of my internal and external environment.",
+      inputs: [
+        { q: "You feel your face getting flushed because a colleague is mocking your idea.", a: "(Internal) \"I am cool, calm, and collected. My work speaks for itself.\" [Coping Statements]", bundle: 'pro' },
+        { q: "A coworker tries to bait you into explaining why you won't work through lunch.", a: "\"I understand there's a lot to do, however I use my lunch hour to recharge so I can be productive this afternoon.\" [The Broken Record]", bundle: 'pro' },
+        { q: "Your boss says \"I'm sorry I threw you under the bus in that meeting, I was stressed.\"", a: "\"I understand you were under pressure. I forgive you. Let's move past it.\" [\"I Forgive You\"]", bundle: 'pro' },
+        { q: "You are sitting at home feeling like you'll never get the recognition you deserve.", a: "(Open your Value Journal and record the three ways you saved the company money today). [The Value Journal]", bundle: 'pro' },
+        { q: "They keep asking \"Why can't you just do this one little favor?\" after you said no.", a: "\"That may be, but as I said, I have other plans and cannot take that on today.\" [The Broken Record]", bundle: 'pro' },
+      ]
+    },
+  ],
+  oconnor7: [
+    {
+      name: "Social Initiation",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible response, with the strategy in brackets.",
+      description: "Use PPT Openers to start, the Visual Hook to remember names, and the OFF Technique to build instant rapport. • These moves establish you as a \"Cause\" of social fluidity rather than a victim of awkwardness. • Mindset: I belong here, and it is my job to make others feel comfortable.",
+      inputs: [
+        { q: "You arrive at a party where you only know the host.", a: "\"I haven't had a chance to meet you yet. I'm [Your Name]. What's your name?\" [Visual Hook / 222]", bundle: 'pro' },
+        { q: "You want to start a conversation with the person standing next to you in a museum.", a: "\"That antique tile on the floor is phenomenal. Did you happen to see it on your way in?\" [PPT Opener]", bundle: 'pro' },
+        { q: "You just met 'Midge' and want to ensure you don't forget her name in five minutes.", a: "(Picture a tiny midge fly buzzing around her head, and repeat 'Midge' three times in the first minute). [Visual Hook]", bundle: 'pro' },
+        { q: "You are sitting next to a stranger and want to bridge into a deeper talk.", a: "\"I'm going to grab a water. Would you like me to grab you one as well?\" [OFF Technique]", bundle: 'pro' },
+        { q: "You need to step away from a new acquaintance to decompress.", a: "\"I'll be right back. Save my spot for me, would you?\" [OFF Technique]", bundle: 'pro' },
+      ]
+    },
+  ],
+  jimmy1: [
+    {
+      name: "Establishing the Baseline",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible response, with the strategy in brackets.",
+      description: "Use Character Discernment to pick the right person, Values Alignment to ensure you're heading the same way, and Enforcing Mutual Respect to keep the environment safe. • If they fail the character test, the values don't matter. • If they don't respect your boundaries, the relationship isn't a partnership. • Mindset: Safety first, compatibility second.",
+      inputs: [
+        { q: "You notice they are incredibly kind to you but rude to their own mother.", a: "(observe this as a red flag for future behavior) [Character Discernment]", bundle: 'pro' },
+        { q: "You are deciding whether to move to a new city together.", a: "\"This is a big life goal for me. Does this align with the vision you have for us?\" [Values Alignment]", bundle: 'pro' },
+        { q: "During a heated talk about money, they roll their eyes and call your idea \"stupid.\"", a: "\"I won't continue this talk if I'm being mocked. Let's take a break.\" [Enforcing Mutual Respect]", bundle: 'pro' },
+        { q: "You want to know if they will actually 'show up' when things get hard.", a: "\"If things ever got rocky, would you be willing to go to counseling with me?\" [Character Discernment]", bundle: 'pro' },
+        { q: "You are discussing how you view 'faith' versus 'career' in terms of priority.", a: "\"I need to know where we both stand on what comes first in our home.\" [Values Alignment]", bundle: 'pro' },
+      ]
+    },
+  ],
+  jimmy2: [
+    {
+      name: "Expressing Yourself",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible response, with the strategy in brackets.",
+      description: "Use a Soft Startup to open the door, the Expression Formula to be clear, and Requests Over Criticism to ask for change. • If you lead with an attack, you've already lost the chance to be heard. • Focus on your feelings, not their flaws. • Mindset: \"I am fighting for connection, not to win an argument\".",
+      inputs: [
+        { q: "You've been feeling unheard lately and want to bring it up on a Sunday night.", a: "\"I have something on my heart. Is now a safe time to talk?\" [The Soft Startup]", bundle: 'pro' },
+        { q: "You are about to tell your partner they are \"too sensitive\" about your jokes.", a: "\"I feel bad that I hurt you. What can I do differently in the future?\" [Requests Over Criticism]", bundle: 'pro' },
+        { q: "You want to explain why you were upset about them being late.", a: "\"When you were late, I felt disrespected. I told myself that you don't value our time together.\" [The Expression Formula]", bundle: 'pro' },
+        { q: "You want to turn your anger about the messy kitchen into a request.", a: "\"I’m feeling overwhelmed by the kitchen. Would you be willing to help me clear it tonight?\" [Requests Over Criticism]", bundle: 'pro' },
+        { q: "You want to bridge the gap after a small misunderstanding.", a: "\"The story I was telling myself was pretty negative. Can you help me understand what you meant?\" [Owning the Narrative]", bundle: 'pro' },
+      ]
+    },
+  ],
+  jimmy3: [
+    {
+      name: "Emotional Presence",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible response, with the strategy in brackets.",
+      description: "Use Validation Without Agreement to lower their guard, Compassionate Curiosity to find the root cause, and Turning Toward Bids to keep the connection alive daily. • Presence is about the _energy_ you bring, not just being in the same room. • Curiosity is the antidote to defensiveness. • Mindset: I am here, I am engaged, and you are my priority.",
+      inputs: [
+        { q: "They are explaining why they are stressed about the family budget.", a: "\"I can see why that's weighing on you. What can I do to help carry that burden?\" [Validation Without Agreement]", bundle: 'pro' },
+        { q: "You realize you've been on your phone for 20 minutes while they've been talking.", a: "\"I'm sorry, I was distracted. Can you tell me that last part again? I want to hear it.\" [Turning Toward Bids]", bundle: 'pro' },
+        { q: "They say, \"I feel like I'm doing everything alone in this house.\"", a: "\"That sounds exhausting and lonely. What led you to feel that way specifically?\" [Compassionate Curiosity]", bundle: 'pro' },
+        { q: "They show you a photo of a dress they are thinking of buying.", a: "\"That looks great on you! What made you pick that style?\" [Turning Toward Bids]", bundle: 'pro' },
+        { q: "They share a hurt using the word \"Vulnerable.\"", a: "\"Thank you for trusting me with that. I'm listening with my whole heart.\" [The \"Vulnerable\" Code Word]", bundle: 'pro' },
+      ]
+    },
+  ],
+  jimmy4: [
+    {
+      name: "Managing the Heat",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible response, with the strategy in brackets.",
+      description: "Use the 30-Minute Reset to stop a fight before it starts and Safety Boundaries to ensure respect is maintained. • If you are too flooded to think, reset. • If they are being disrespectful, set a boundary. • Mindset: Safety is the foundation; without it, communication is impossible.",
+      inputs: [
+        { q: "Your partner starts calling you \"stupid\" and \"selfish\" in a loud voice.", a: "\"I won't be yelled at or called names. I’m taking 30 minutes to get regulated.\" [Safety Boundaries]", bundle: 'pro' },
+        { q: "You feel your face getting flushed and you are starting to argue rather than listen.", a: "\"I can feel myself getting flooded. I need a 30-minute break so I can be respectful.\" [The 30-Minute Reset]", bundle: 'pro' },
+        { q: "They follow you to the kitchen while yelling after you asked for a break.", a: "\"I am enforcing my boundary and leaving the house for 30 minutes. I’ll be back soon.\" [Safety Boundaries]", bundle: 'pro' },
+        { q: "You want to pick up a difficult talk but want to set a \"safety net\" first.", a: "\"I want to talk about this, but can we agree to a 30-minute timeout if things get too heated?\" [The 30-Minute Reset]", bundle: 'pro' },
+        { q: "They mock your request for a reset by saying \"you're just running away.\"", a: "\"I’m not running away; I’m staying in control of myself so I don't hurt our relationship.\" [The 30-Minute Reset]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Rebuilding the Bond",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible response, with the strategy in brackets.",
+      description: "Use Radical Accountability to own your part and Validating Past Pain to heal old wounds. • Accountability fixes the present rupture. • Validation fixes the past foundation. • Mindset: The relationship is more important than my pride.",
+      inputs: [
+        { q: "They are crying about how lonely they felt when you were working all those late nights last year.", a: "\"It makes so much sense why you felt abandoned. I’m so sorry I didn't see your pain then.\" [Validating Past Pain]", bundle: 'pro' },
+        { q: "You realize you were passive-aggressive all morning because you were annoyed.", a: "\"I’m sorry I was passive-aggressive earlier. That was my immaturity, and you didn't deserve it.\" [Radical Accountability]", bundle: 'pro' },
+        { q: "They say \"I don't even know if I can trust you anymore\" after a small lie.", a: "\"I broke your trust and that is on me. I want to do the work to show you I’m reliable.\" [Radical Accountability]", bundle: 'pro' },
+        { q: "You want to invite them to share a \"heavy\" thing they've been keeping inside.", a: "\"I know I haven't been a safe place for your hurts in the past. I want to change that. Tell me what's on your heart.\" [Validating Past Pain]", bundle: 'pro' },
+        { q: "You find yourself wanting to say \"I only did that because you were mean.\"", a: "\"Wait—I’m making excuses. I’m sorry for my part in that. I should have been more considerate.\" [Radical Accountability]", bundle: 'pro' },
+      ]
+    },
+  ],
+  jimmy5: [
+    {
+      name: "Prioritizing the Bond",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible response, with the strategy in brackets.",
+      description: "Use Out-Loud Appreciation and Non-Sexual Affection to fill the \"Love Tank\" daily, and Sharing the Mental Load to prove you are a dedicated teammate. • These proactive moves create the safety needed for the Weekly Check-in to be successful. • Mindset: I am the lead servant in this relationship.",
+      inputs: [
+        { q: "Your partner looks beautiful but also exhausted from a long day of chores.", a: "\"You're so beautiful, but I can see how hard you've been working. Let me finish the laundry while you rest.\" [Out-Loud Appreciation / Sharing the Mental Load]", bundle: 'pro' },
+        { q: "You want to make sure your partner knows they are more than just a \"roommate\" to you.", a: "(Reach for their hand and look them in the eyes) \"I'm so glad we're in this together. Thank you for being my person.\" [Non-Sexual Affection / Out-Loud Appreciation]", bundle: 'pro' },
+        { q: "You notice the \"Love Tank\" is getting low and you've both been a bit snappy.", a: "\"I miss us. Can we sit down tonight for 20 minutes and just check in on how we're doing?\" [The Weekly Check-in]", bundle: 'pro' },
+        { q: "You realize your partner has been the one doing all the \"invisible\" planning for the kids' school.", a: "\"I see all the work you put into their schedule. I'll take over the emails for the rest of the week.\" [Sharing the Mental Load]", bundle: 'pro' },
+        { q: "You want to build physical intimacy that doesn't feel like \"pressure.\"", a: "(Give them a long, lingering hug with no other move) \"I just needed a 'you' fix.\" [Non-Sexual Affection]", bundle: 'pro' },
+      ]
+    },
+  ],
+  jimmy6: [
+    {
+      name: "Defending Your Worth",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible response, with the strategy in brackets.",
+      description: "Use Indifference to Manipulation to stop \"rigged\" fights, Authenticity Over Pleasing to stay true to yourself, and The Bare Minimum Standard to enforce respect. • If they won't respect the standard, indifference is your exit strategy. • Safety is not just the absence of abuse, but the presence of integrity. • Mindset: I am the gatekeeper of my own peace.",
+      inputs: [
+        { q: "A partner who has been hot-and-cold tries to bait you into a fight about \"why you're so distant.\".", a: "\"I’m prioritizing my peace right now. We can talk when things are calm.\" [Indifference to Manipulation]", bundle: 'pro' },
+        { q: "You want to say \"no\" to an event, but you're worried they'll think you're \"boring.\".", a: "\"I’m not up for it tonight. I’m going to stay in and rest.\" [Authenticity Over Pleasing]", bundle: 'pro' },
+        { q: "During a discussion about money, they roll their eyes and say \"Only you could be this dumb.\".", a: "\"That’s contempt. I won't be talked to that way. I'm taking 30 minutes.\" [The Bare Minimum Standard]", bundle: 'pro' },
+        { q: "You realize you’ve been doing 90% of the emotional labor just to keep them happy.", a: "\"I’m realizing this dynamic isn't equal, and I’m no longer okay with it.\" [Authenticity Over Pleasing]", bundle: 'pro' },
+        { q: "They demand you stop seeing a friend because they \"don't like them.\".", a: "\"I decide who I spend my time with. That is my boundary.\" [The Bare Minimum Standard]", bundle: 'pro' },
+      ]
+    },
+  ],
+  toddv1: [
+    {
+      name: "Breaking the Ice",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible opening, with the strategy in brackets.",
+      description: "Statement Openers and Narrating the Frame—the two strategies for when you are the one starting the interaction. These focus on not being \"value-taking\" and establishing your high status from the first second.",
+      inputs: [
+        { q: "You see a girl in a mall and want to start with a guess.", a: "\"You don't seem like a local. You're far too stylish for this part of town.\" [Statement Openers]", bundle: 'pro' },
+        { q: "You approach a girl and want to establish the \"Prize\" frame.", a: "\"I thought you might be the girl that finally impresses me, so I had to come over.\" [Narrating the Frame]", bundle: 'pro' },
+        { q: "You are in a long queue and want to comment on it.", a: "\"This queue is not moving. I think we should just start a new civilization here.\" [Statement Openers]", bundle: 'pro' },
+        { q: "You want to use a \"doubling down on entitlement\" opener.", a: "\"I'm Todd. I'm a bit of a bad influence, but I thought you looked like you could handle it.\" [Narrating the Frame]", bundle: 'pro' },
+        { q: "You see a girl with an interesting hair color.", a: "\"That blue hair is the most unique thing I've seen all day. You win the prize.\" [Statement Openers]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Creating Intrigue",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible opening, with the strategy in brackets.",
+      description: "Open Loops and Question-Answer-Tease—these strategies move the interaction from a simple \"hello\" to an emotional hook. They get her to participate and wonder about you.",
+      inputs: [
+        { q: "You want to keep her guessing about your opinion of her.", a: "\"You have a beautiful look, but there's something a little strange I can't quite place... I'll tell you later.\" [Open Loops]", bundle: 'pro' },
+        { q: "She tells you what she does for a living (e.g., Teacher).", a: "\"A teacher? So you're used to telling people what to do. I hope you're not planning on bossing me around tonight.\" [Question-Answer-Tease]", bundle: 'pro' },
+        { q: "You want to use an \"instigating\" line for a group.", a: "\"Wait, I just noticed something. Are you guys best friends? There's a reason I'm asking.\" [Open Loops]", bundle: 'pro' },
+        { q: "She answers where she is going with \"Chipotle.\"", a: "\"Chipotle? You little lost soul. You should come with me instead, I know a better spot.\" [Question-Answer-Tease]", bundle: 'pro' },
+        { q: "She asks what you are doing in the city.", a: "\"I'm helping people when they are most in need. Guess what that means.\" [Open Loops]", bundle: 'pro' },
+      ]
+    },
+  ],
+  toddv2: [
+    {
+      name: "Spiking the Vibe",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible response, with the strategy in brackets.",
+      description: "Push-Pull and The Neg. These strategies are used to break a flat, logical conversation by injecting emotional spikes. They focus on creating \"uncertainty\" and \"tension\" through playful friction.",
+      inputs: [
+        { q: "You want to give a compliment that doesn't lower your value.", a: "\"It's so annoying how cute you are. You're definitely getting your way tonight.\" [Push-Pull]", bundle: 'pro' },
+        { q: "You notice a tiny detail about her behavior (like hydrated eyes).", a: "\"You blink a lot. It's actually very endearing.\" [The Neg]", bundle: 'pro' },
+        { q: "She says something you disagree with in a fun way.", a: "\"I thought I loved you... until you said that. Now we're definitely breaking up.\" [Push-Pull]", bundle: 'pro' },
+        { q: "You want to give a \"backwards compliment\" about her style.", a: "\"I love that look. It's very '90s music video.' You're bringing it back.\" [The Neg]", bundle: 'pro' },
+        { q: "You want to challenge her while showing interest.", a: "\"I can't decide if I'm going to love you or hate you yet. I'll tell you in ten minutes.\" [Push-Pull]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Selection & Standards",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible response, with the strategy in brackets.",
+      description: "Qualifying and Disqualification. These strategies establish you as a high-value man with standards. You aren't just \"hit on\" every girl; you are actively screening her for \"girlfriend culture\" while simultaneously taking the pressure off by saying sex might not happen.",
+      inputs: [
+        { q: "You want to test her adventurous side.", a: "\"You seem cool, but tell me: are you as adventurous as you are stylish?\" [Qualifying]", bundle: 'pro' },
+        { q: "You want to remove \"sexual neediness\" from the interaction.", a: "\"I'm not boyfriend material, so don't start falling in love with me yet.\" [Disqualification]", bundle: 'pro' },
+        { q: "She mentions a hobby or trait you actually like.", a: "\"You like [hobby]? Okay, you get some points for that. I'm impressed.\" [Qualifying]", bundle: 'pro' },
+        { q: "You want to \"push\" her away for a relationship.", a: "\"You're cute, but I'm not sure you could handle a guy like me. We're probably not going to get along.\" [Disqualification]", bundle: 'pro' },
+        { q: "You want her to prove herself after a compliment.", a: "\"You look great, but tell me something about you that isn't obvious. I have high standards.\" [Qualifying]", bundle: 'pro' },
+      ]
+    },
+  ],
+  toddv3: [
+    {
+      name: "Deepening the Bond",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible response, with the strategy in brackets.",
+      description: "Wide and Deep Rapport and Grounding Stories. These strategies are for the \"Middle Game\" where you move from basic attraction to a genuine emotional connection. You share your world through stories and explore hers through deep, emotional inquiries.",
+      inputs: [
+        { q: "You want to share a value while telling a story.", a: "\"I trained with pros in Argentina because I've always believed that if you want to be the best, you have to surround yourself with the best.\" [Grounding Stories]", bundle: 'pro' },
+        { q: "The conversation is getting stuck on one logical topic.", a: "\"We're getting way too deep into work talk. Tell me something adventurous you've done recently instead.\" [Wide and Deep Rapport]", bundle: 'pro' },
+        { q: "You want to show you're not just a \"player.\"", a: "\"I've had casual stuff, but honestly, I need a connection. I don't like feeling used anymore.\" [Grounding Stories]", bundle: 'pro' },
+        { q: "You want to find out what truly drives her.", a: "\"I respect the career, but what's the dream job? If money didn't matter, what would you be doing right now?\" [Wide and Deep Rapport]", bundle: 'pro' },
+        { q: "You want to create an \"Us\" narrative.", a: "\"It's funny we met like this. Usually, I'm shy, but you had this bubbly look that made me impulsive.\" [Grounding Stories]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Reading Her World",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible response, with the strategy in brackets.",
+      description: "Identifying the Blueprint and The Cold Read. These strategies focus on \"Guess and Check\". You stop asking questions and start making observations about who she is, where she came from, and what she values.",
+      inputs: [
+        { q: "You want to guess her background based on her look.", a: "\"You don't seem like a New Yorker. You look like you're from a small town where people are actually polite to each other.\" [The Cold Read]", bundle: 'pro' },
+        { q: "You want to target your value to an \"Ambitious\" girl.", a: "\"I can appreciate your drive. Most girls are just drifting, but you're a leader. I like that.\" [Identifying the Blueprint]", bundle: 'pro' },
+        { q: "You want to provoke her to justify her style.", a: "\"I love that jacket. It's so cool that you're trying to bring the 80s back.\" [The Cold Read]", bundle: 'pro' },
+        { q: "You're talking to a girl on vacation.", a: "\"You're probably a 'good girl' back home, but Vegas-you seems like she's looking for some bad decisions.\" [Identifying the Blueprint]", bundle: 'pro' },
+        { q: "You want to label her behavior.", a: "\"You have the most expressive face. I feel like I'm watching your whole internal monologue.\" [The Cold Read]", bundle: 'pro' },
+      ]
+    },
+  ],
+  toddv4: [
+    {
+      name: "Taking the Lead",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible response, with the strategy in brackets.",
+      description: "Assumptive Closing and False Time Constraints. These strategies are used to orchestrate the movement of the set. They focus on leading with certainty while simultaneously removing the pressure that causes flakes.",
+      inputs: [
+        { q: "You want to move to a quieter area in the club.", a: "\"It's too loud here, let's go over to those chairs. Come on.\" [Assumptive Closing]", bundle: 'pro' },
+        { q: "You want to suggest an instant date at a coffee shop.", a: "\"I only have ten minutes before I have to meet a friend, but let's grab a coffee. I want to see if you're actually fun.\" [False Time Constraints]", bundle: 'pro' },
+        { q: "You are ready to get her number and leave.", a: "\"I'm heading off, but I'll take your number. We'll banter more on Sunday.\" [Assumptive Closing]", bundle: 'pro' },
+        { q: "You want to sit with a girl who is by herself in a park.", a: "\"I'm just taking a one-minute break from my run, so I'm going to sit here. What are you reading?\" [False Time Constraints]", bundle: 'pro' },
+        { q: "You want to lead her back to your place using an excuse.", a: "\"I need to go grab a jacket from my room real fast. Come with me, I don't want to stop this conversation yet.\" [Assumptive Closing]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Moving Toward the Resolution",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible response, with the strategy in brackets.",
+      description: "Seeding the Pull and Emotional Spiking. These strategies prepare the girl for the final \"close.\" Seeding creates the logical and emotional bridge to future plans, while Spiking ensures the interaction remains sexually relevant and exciting.",
+      inputs: [
+        { q: "You want to test if she'd be down to go somewhere else later.", a: "\"I'd love to take you to that cool speakeasy, but you're probably not adventurous enough for it yet.\" [Seeding the Pull]", bundle: 'pro' },
+        { q: "The conversation has become too platonic and \"friendly.\"", a: "\"I can't decide if I'm going to love you or hate you yet. You have that 'trouble' look in your eyes.\" [Emotional Spiking]", bundle: 'pro' },
+        { q: "You want to plant the idea that you are a \"bad influence.\"", a: "\"You seem like a good girl. You better be careful around me, I'm a terrible influence.\" [Seeding the Pull]", bundle: 'pro' },
+        { q: "You want to save a boring \"resume exchange\" talk.", a: "\"Marketing? So you're professionally good at manipulating people. I should probably run away now while I still can.\" [Emotional Spiking]", bundle: 'pro' },
+        { q: "You want to seed the idea of her being a \"side chick.\"", a: "\"You're cute, maybe you'll be my New York future ex-mistress. We'll see how you behave.\" [Seeding the Pull]", bundle: 'pro' },
+      ]
+    },
+  ],
+  toddv5: [
+    {
+      name: "Friction & Selection",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible response, with the strategy in brackets.",
+      description: "Passing Value Shit Tests and Passing Comfort Shit Tests. These are the two types of challenges you will face. One tests your status, the other tests your heart. You must know which one you are in to respond correctly.",
+      inputs: [
+        { q: "She says, \"I bet you say that to all the girls.\"", a: "\"It's so modest of you to think you're not special. I actually thought we were having a moment.\" [Passing Comfort Shit Tests]", bundle: 'pro' },
+        { q: "She says, \"You're too cocky.\"", a: "\"I'm glad you noticed. It's my best quality. You're starting to grow on me.\" [Passing Value Shit Tests]", bundle: 'pro' },
+        { q: "She says, \"I can't go home with a stranger.\"", a: "\"I get it, you're a good girl. We'll just hang out for ten minutes and if you feel weird, you can leave.\" [Passing Comfort Shit Tests]", bundle: 'pro' },
+        { q: "She says, \"Your watch is kind of lame.\"", a: "\"I'm glad you're checking me out so closely! But honestly, it's not even a watch, so the joke's on you.\" [Passing Value Shit Tests]", bundle: 'pro' },
+        { q: "She says, \"Is this a pickup line?\"", a: "\"If by that you mean it was clever enough to be a line, thanks. I'm Todd.\" [Passing Value Shit Tests]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Leading with Presence",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible response, with the strategy in brackets.",
+      description: "The \"What Do I Want?\" Move and Handling the Posse. These strategies focus on social dominance and internal motivation. They are about moving the world (and the group) to fit your genuine desires.",
+      inputs: [
+        { q: "You want to get a drink and she is with two friends.", a: "\"I'm thirsty. You guys look like you're having fun, let's all go grab a drink at the bar.\" [Handling the Posse]", bundle: 'pro' },
+        { q: "You want to talk about your love for soccer even if it's \"nerdy.\"", a: "\"I grew up playing soccer and I'm obsessed with it. If you don't like it, we're probably not going to get along.\" [The \"What Do I Want?\" Move]", bundle: 'pro' },
+        { q: "You want to move her away from the loud music.", a: "\"It's too loud here and my legs are killing me. Let's go sit on those couches over there.\" [The \"What Do I Want?\" Move]", bundle: 'pro' },
+        { q: "You want to win over her skeptical friend.", a: "\"Hey, you have a very expressive face. I bet you're the one in this group who actually makes all the decisions.\" [Handling the Posse]", bundle: 'pro' },
+        { q: "You want to ask her a highly polarizing question.", a: "\"What would you do right now if you knew there was no chance I'd reject you?\" [The \"What Do I Want?\" Move]", bundle: 'pro' },
       ]
     },
   ],

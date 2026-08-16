@@ -3971,4 +3971,369 @@ const challengesCollections = {
       ]
     },
   ],
+  danbacon1: [
+    {
+      name: "The \"Interrogation\" Trap",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible response, with the strategy in brackets.",
+      description: "When the woman is asking you standard, logical questions. Most guys answer these directly and kill the spark. You need to use humor or statements to keep the vibe flirtatious and unpredictable.",
+      inputs: [
+        { q: "She asks, \"What do you do for fun?\"", a: "\"I've been learning to cook bread, which has been a total disaster. What about you? Do you have any secret talents or are you just a weakling?\" (Statement-Question / Mocking)", bundle: 'pro' },
+        { q: "She asks, \"Where are you from originally?\"", a: "\"Richmond. You know what they say about girls from Richmond, right? [Wait] They have great manners and buy empty-handed guys a drink.\" (Unexpected Reactions)", bundle: 'pro' },
+        { q: "She asks, \"How many women have you slept with?\"", a: "\"What, actually slept with? Like, gone to sleep? Because usually I just have sex and leave. [Laugh] Just kidding.\" (Unexpected Reactions)", bundle: 'pro' },
+        { q: "She asks, \"Do you say that to all the girls?\"", a: "\"I’m actually a bit disappointed you’d use such a cliché line on me. You seem smarter than that. Come on, try again.\" (Misinterpreting Intent)", bundle: 'pro' },
+        { q: "She asks, \"Would you stay with a girl if she put on weight?\"", a: "\"What? We’re not even dating yet and you’re already worried about me dumping you? Relax, girl!\" (Misinterpreting Intent)", bundle: 'pro' },
+      ]
+    },
+  ],
+  danbacon2: [
+    {
+      name: "Confidence Attacks",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible response, with the strategy in brackets.",
+      description: "When a woman uses \"scolding\" or \"mean\" comments to see if you will crumble. These are standard tests of your masculine frame. You must pass them by not taking her seriously and turning the challenge into a joke.",
+      inputs: [
+        { q: "She says, \"Is that your only pickup line?\"", a: "\"I'm actually a bit disappointed you'd use such a cliché line on me. You seem smarter than that.\" (Passing Confidence Tests)", bundle: 'pro' },
+        { q: "She says, \"You seem very nervous.\"", a: "\"Oh my god, I am so nervous! I can barely talk. Don't hold it against me.\" (Passing Confidence Tests - Exaggerate)", bundle: 'pro' },
+        { q: "She says, \"I don't usually date guys like you.\"", a: "\"That's okay. You like guys who are a challenge, otherwise you wouldn't be hitting on me right now.\" (Flipping the Script)", bundle: 'pro' },
+        { q: "She acting superior because of her career (e.g. Lawyer).", a: "\"A lawyer? Boring! I bet you've never done anything crazy in your life.\" (Flipping the Script / Judging)", bundle: 'pro' },
+        { q: "She says your hair looks bad today.", a: "\"Horrible, right? It's a total mess. But hey—at least I'm pretty on the inside.\" (Passing Confidence Tests / Self Humour)", bundle: 'pro' },
+      ]
+    },
+  ],
+  danbacon3: [
+    {
+      name: "Relationship Friction",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible response, with the strategy in brackets.",
+      description: "When the \"spark\" starts to fade or she begins to \"test\" your leadership with bad behavior. These situations require you to hold your frame and use the \"Good Girl Switch\" techniques to restore attraction and respect.",
+      inputs: [
+        { q: "She says, \"I'm bored, you never take me anywhere interesting.\"", a: "\"I respect that you want more adventure. I've got a crazy idea for next weekend, but you've got to win me over first. Be a good girl for the rest of the day and I'll tell you.\" (Lovingly Expecting More)", bundle: 'pro' },
+        { q: "She refuses to give you a hug because she's \"not in the mood.\"", a: "\"[Maintain your cool] No worries. I'm going to enjoy this coffee. You're missing out on some great affection, but that's your choice.\" (Emotional Independence)", bundle: 'pro' },
+        { q: "She tries to make a \"ridiculous rule\" like \"No talking about work after 6 PM.\"", a: "\"[Laugh lovingly] Whatever! We'll talk about whatever I'm in the mood to talk about. But tell you what—if you're a good girl, I'll talk about your shoes for ten minutes first.\" (Addressing Bad Behavior / Leadership)", bundle: 'pro' },
+        { q: "You feel yourself wanting to \"suck up\" to her because she's angry.", a: "[Stop yourself] \"I'm a good man and I've done nothing wrong. I'm going to do my own thing until she's ready to be respectful again.\" (Emotional Independence)", bundle: 'pro' },
+        { q: "She asks \"Do you even care about my feelings?\" during an argument.", a: "\"Of course I do, but I don't care for the way you're acting right now. When you're ready to talk like a grown-up, I'm here.\" (Addressing Bad Behavior)", bundle: 'pro' },
+      ]
+    },
+  ],
+  danbacon4: [
+    {
+      name: "Relationship Stalls",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible response, with the strategy in brackets.",
+      description: "When the \"Good Girl Switch\" has been turned off and the relationship has become neutral or disrespectful. These situations require you to re-establish your frame and use \"up and down\" emotional spikes to restore attraction.",
+      inputs: [
+        { q: "She snaps at you in a rude tone for no reason.", a: "\"Hey, that wasn't cool. You're usually a great woman, but talking to me like that? No, I don't like it.\" (Restoring the Spark - Boundary)", bundle: 'pro' },
+        { q: "She says, \"I'm bored, do something to entertain me.\"", a: "\"I'm not your court jester, girl! If you're bored, go find three cool movies we can watch and I'll pick the winner.\" (Let Her Win You Over)", bundle: 'pro' },
+        { q: "You are on a date and she starts checking her phone repeatedly.", a: "\"[Wait for second check, then laugh] No, no one sent you a message. No one cares about you! Put that thing away.\" (Ignoring Ridiculous Rules / Playful)", bundle: 'pro' },
+        { q: "She asks, \"Would you still love me if I gained 20 pounds?\"", a: "\"What? We're not even married yet and you're already worried about me dumping you? Relax, girl!\" (Expressing Real Moods / Ballsy)", bundle: 'pro' },
+        { q: "She is thrown a tantrum but the argument is actually her fault.", a: "\"[Stay calm and unreactive] I'm going to go work in my office for an hour. Let me know when you're ready to be a good girl again.\" (Expressing Real Moods - Independence)", bundle: 'pro' },
+      ]
+    },
+  ],
+  oconnor1: [
+    {
+      name: "The Office Narcissist",
+      description: "Disempower narcissists by using the \"Hamburger\" method to call out behavior or tag questions that force them to admit they are breaking agreed-upon rules. **Mindset:** Create the illusion of their choice while maintaining your boundaries.",
+      inputs: [
+        { q: "They keep interrupting you.", a: "\"John, when you keep interrupting after you agreed not to, it concerns me because it appears you don't know you're doing it.\"", bundle: 'free' },
+        { q: "You need to force them to acknowledge their behavior.", a: "\"You do understand this is exactly what you agreed not to do anymore, right?\"", bundle: 'pro' },
+        { q: "They use an offensive comment to bait you.", a: "\"Would you like to continue this without racial slurs, or do you need a few minutes to collect your thoughts? Which do you prefer?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Time Sucker",
+      description: "Use the A-E-I-O-U script to take the \"blame\" on yourself for wanting to be more productive, then implement visual tools like the Availability Monitor. **Mindset:** Managing your time is a sign of self-respect.",
+      inputs: [
+        { q: "Implementing the new system.", a: "\"I'm starting a new time management system so I can serve you better and focus when we do visit. Can I count on you to help me?\"", bundle: 'free' },
+        { q: "They ignore your \"unavailable\" sign.", a: "(Continue working and tap the red sign without making eye contact).", bundle: 'pro' },
+        { q: "You want to set email boundaries.", a: "\"I'll be responding to emails between 9:00 and 10:00 AM; if it's an emergency, please call.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Passive-Aggressive Comments",
+      description: "Call out \"scab pickers\" by naming the effect of their behavior. Place the description of the behavior at the very end of the sentence for maximum impact. **Mindset:** Make the subtext the text.",
+      inputs: [
+        { q: "A relative picks a wound about your relationship status.", a: "\"I'm sure you're not trying to be insulting, but I'm not going to engage when you ask a rude question like that one.\"", bundle: 'free' },
+        { q: "A boss asks if you've thanked a colleague for \"saving you.\"", a: "\"I'm sure you're not trying to open up wounds of the past, but I'm going to call you on it if you keep making passive-aggressive comments.\"", bundle: 'pro' },
+        { q: "Someone tries to play off a rude remark as \"small talk.\"", a: "\"In the future, if you want to know how I am, just ask 'How have you been?' That’s how you start that conversation.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "High-Risk Resignations",
+      description: "Resign in person with high-power body language. Hand over the letter and wait in total silence while it is read. Keep the documentation 100% positive. **Mindset:** Professionalism is defined by how you transition from a relationship.",
+      inputs: [
+        { q: "Handing over the resignation letter.", a: "\"I have made a decision to transition.\" (Wait in silence with chest high and chin up while they read).", bundle: 'free' },
+        { q: "They ask for the reason you're leaving.", a: "\"I have made a decision to move forward; my letter outlines how I'll ensure a positive handover.\"", bundle: 'pro' },
+        { q: "Ending the resignation meeting.", a: "\"Do you need anything else from me? No? Great, I hope the rest of your day is pleasant.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  oconnor2: [
+    {
+      name: "The Work-Dumper",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible response, with the strategy in brackets.",
+      description: "Scenarios where colleagues or bosses try to offload their responsibilities or \"invisible labor\" onto you. These situations test your ability to set a boundary that focuses on _your_ productivity rather than _their_ laziness. **Mindset:** I am not a \"worker bee\"; I am a professional who values my time.",
+      inputs: [
+        { q: "\"Since you're so fast at these spreadsheets, could you just finish mine for me?\"", a: "\"I noticed I've been taking on too much and it's slowing down my own projects. If I say yes, remind me of this. That way I can stay productive.\" [The B-I-B Script]", bundle: 'pro' },
+        { q: "\"I need to leave early for a hair appointment, can you cover the phones?\"", a: "\"I'd like to be helpful, but unfortunately I have a hard deadline on this Jones report. I'm wondering, could we see if the intern is available?\" [The Diplomatic Decline]", bundle: 'pro' },
+        { q: "Your boss dumps a task on you that belongs to a higher-paid colleague who is \"too busy.\"", a: "\"I understand the importance of this, but unfortunately my current workload is at capacity. To keep our team standards high, should we re-prioritize my list?\" [The Diplomatic Decline]", bundle: 'pro' },
+        { q: "You realize a colleague is quoting you as having agreed to do their work.", a: "\"Mary, I have to be frank. I haven't agreed to take that on, and continuing this talk isn't helpful. I'm going back to my desk now.\" [Power-Down Phrases]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Interrupter",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible response, with the strategy in brackets.",
+      description: "Scenarios where people disregard your focus time or use \"nosy questions\" to derail you. These situations require immediate, visual, or scripted neutralizers to keep you in the \"Green.\" **Mindset:** I only defend what I believe to be vulnerable; my right to focus is not up for debate.",
+      inputs: [
+        { q: "A coworker starts asking personal questions while you are trying to finish an email.", a: "\"Mary, I'm concerned that personal talks during work are affecting my output. Check my monitor—if it's red, I'm focusing. That way we can chat when I'm green.\" [The Availability Monitor]", bundle: 'pro' },
+        { q: "Someone stands in your doorway waiting for you to look up, even though you are Red.", a: "(Maintain eye contact for 3 seconds without speaking—the 3-second look—then point to the sign). [Availability Monitor / Dan 1 Strategy]", bundle: 'pro' },
+        { q: "\"Why are you using that weird sign? It makes you look like a diva.\"", a: "\"That may be, but I've found it makes me 10 times more productive. Can I count on your support to respect the 'Red' times?\" [The Availability Monitor]", bundle: 'pro' },
+        { q: "You are interrupted during a presentation and need to take the floor back.", a: "\"I'm speaking. [Anti-interrupter] I have nothing constructive to add to that interruption, so I'm moving on to the data. [Power-Down]\" [Dan 1 / Power-Down hybrid]", bundle: 'pro' },
+      ]
+    },
+  ],
+  oconnor3: [
+    {
+      name: "The Bait & Switch",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible response, with the strategy in brackets.",
+      description: "When the narcissist tries to get an emotional reaction by using guilt, shame, or false accusations. • These situations test your ability to stay \"cool, calm, and collected\". • Remember: What gets rewarded gets repeated.",
+      inputs: [
+        { q: "\"You're so selfish for not staying late—I guess the team's success doesn't matter to you.\"", a: "\"I'm not going to engage with that narrative. My work speaks for itself.\" [Selective Engagement]", bundle: 'pro' },
+        { q: "They claim they \"saved\" your project because you were \"struggling.\"", a: "\"When you characterize my work as 'struggling' to others, it concerns me because the data shows the project was on track.\" [The Communication Hamburger]", bundle: 'pro' },
+        { q: "\"I thought we had a special connection, but you're just like everyone else.\"", a: "\"I apologize if I led you to believe there was anything here beyond a professional bond. Let's keep it that way.\" [The \"Irrelevant\" Block]", bundle: 'pro' },
+        { q: "They keep \"scolding\" you in front of the junior staff.", a: "\"I won't be berated in public. Would you like to continue this in your office, or should we pick it up tomorrow morning?\" [Empowering Statements]", bundle: 'pro' },
+      ]
+    },
+  ],
+  oconnor4: [
+    {
+      name: "The Feedback Trap",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible response, with the strategy in brackets.",
+      description: "Situations where you are tempted to say \"I don't appreciate...\" or \"You did this wrong.\" • These test your ability to use LBNT and D-A-R-T under pressure. • Remember: What gets rewarded gets repeated. Don't reward bad behavior with a weak response.",
+      inputs: [
+        { q: "Your boss throws you under the bus in a meeting.", a: "\"I'm surprised, but I can understand why you'd be upset if you thought the projects were late. [D] Could you show me when they were turned in late so I can rectify that? [R] Reasonable? [T]\" [D-A-R-T / 101]", bundle: 'pro' },
+        { q: "Someone says \"No offense, but you're just not leadership material.\"", a: "\"I'm always open to professional feedback. Therefore, if you keep your feedback professional or helpful, I'd be open to that. [I-statement]\"", bundle: 'pro' },
+        { q: "You are tempted to say \"You're always so bossy!\" to a coworker.", a: "\"I suggest you rethink how you characterize my behavior. [I-statement] I'm here to find solutions. [D] So what do you say we get back to the project? [R]\" [D-A-R-T / 212]", bundle: 'pro' },
+        { q: "An employee makes a joke that borders on being inappropriate.", a: "\"I'm surprised you'd make a joke like that in this office. [Lead-in] Next time, if you keep your humor inclusive, it will better reflect our team mission. [LBNT]\" [LBNT / 146]", bundle: 'pro' },
+      ]
+    },
+  ],
+  oconnor5: [
+    {
+      name: "Confidence Killers",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible response, with the strategy in brackets.",
+      description: "Situations that normally trigger \"low status\" behaviors like fidgeting, whispering, or shrinking. • These test your ability to use physical \"Power Projectors\" to override your internal nerves.",
+      inputs: [
+        { q: "You are the youngest person in a room of high-level executives.", a: "(Take up space: move your chair up, plant your arms, and steeple when you speak).", bundle: 'pro' },
+        { q: "You realize you are scratching your neck and looking at the floor while answering a question.", a: "(Stop immediately. Lift your chin, raise your volume, and steeple).", bundle: 'pro' },
+        { q: "Someone offers you a seat that is low and uncomfortable, making you feel \"beneath\" them.", a: "(Sit on the edge of the seat, lean forward, and use territorial markers to claim the table).", bundle: 'pro' },
+        { q: "You are giving a talk and the mic starts cutting out.", a: "(Hand the mic back and use your Vocal Power Tone to project to the back of the room).", bundle: 'pro' },
+      ]
+    },
+  ],
+  oconnor6: [
+    {
+      name: "Boundary Breakers",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible response, with the strategy in brackets.",
+      description: "Situations where people attempt to bulldoze your decision or make you feel \"guilty\" for having standards. • These test your resilience and ability to avoid the \"Defensive Trap.\" • Remember: We only defend what we believe to be vulnerable.",
+      inputs: [
+        { q: "\"You're so mean for not letting me borrow your car. I thought you were a nice guy.\"", a: "\"That may be, but I don't lend my car out. I'm sure you can respect that.\" [The Broken Record]", bundle: 'pro' },
+        { q: "Someone you just met keeps asking \"How much did that watch cost?\"", a: "\"Interesting. Why would you ask me a question like that?\" [Selective Engagement / Dan 3]", bundle: 'pro' },
+        { q: "You realize you've been working two jobs for the price of one for six months.", a: "(Start recording every 'Job B' task in your Value Journal with its corresponding market rate). [The Value Journal]", bundle: 'pro' },
+        { q: "They apologize for \"acting like a jerk\" earlier but you're still feeling the sting.", a: "\"I accept your apology. I forgive you. Let's put a period on it.\" [\"I Forgive You\"]", bundle: 'pro' },
+      ]
+    },
+  ],
+  oconnor7: [
+    {
+      name: "The Social Stall",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible response, with the strategy in brackets.",
+      description: "When a conversation dies because of a closed-ended answer or when you feel the urge to \"interview\" the other person. • These situations test your ability to use \"hooks\" and \"bait\" to keep the flow alive without being pushy.",
+      inputs: [
+        { q: "You ask \"How was your weekend?\" and they say \"Fine.\"", a: "\"Fine? That sounds suspiciously quiet. What did you actually get up to?\" [PPT Opener / Follow the Thread]", bundle: 'pro' },
+        { q: "You realize you’ve asked three questions in a row and they haven't asked anything back.", a: "\"I'm getting water. Would you like one as well? I'll be right back.\" [OFF Technique - to give them space]", bundle: 'pro' },
+        { q: "You have nothing interesting to say about your own week.", a: "\"It's been a long week—I've spent most of it arguing with a printer. How about yours?\" [Answer with a Hook]", bundle: 'pro' },
+        { q: "Someone asks what you do and you want to give them something to ask about.", a: "\"I'm a teacher. Mostly teenagers, which is exactly as loud as it sounds.\" [Answer with a Hook]", bundle: 'pro' },
+      ]
+    },
+  ],
+  jimmy1: [
+    {
+      name: "The \"One-Sided\" Trap",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible response, with the strategy in brackets.",
+      description: "When you feel like you are the only one sacrificing or when the other person is asserting dominance. These situations test whether a foundation of safety actually exists. • Takers will often view your boundaries as \"attacks.\" • Safety is not just the absence of violence, but the presence of respect.",
+      inputs: [
+        { q: "You set a boundary about needing alone time, and they say, \"If you loved me, you'd want to be with me.\"", a: "\"I can love you and still need space to recharge. My boundary is about my health.\" [Enforcing Mutual Respect]", bundle: 'pro' },
+        { q: "You realize they've made the last three major decisions without asking you.", a: "\"I feel like an unequal partner right now. I need us to share the decision-making power.\" [Accepting Influence]", bundle: 'pro' },
+        { q: "They consistently \"forget\" the chores you agreed they would handle.", a: "\"I can't rely on your word right now, and that's breaking my trust. We need to talk about this.\" [Character Discernment]", bundle: 'pro' },
+        { q: "They want to move fast sexually, but you aren't comfortable yet.", a: "\"I value our connection, and I need to move at a pace where I feel safe. I hope you can respect that.\" [Enforcing Mutual Respect]", bundle: 'pro' },
+      ]
+    },
+  ],
+  jimmy2: [
+    {
+      name: "The Criticism Trigger",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible response, with the strategy in brackets.",
+      description: "When you feel the overwhelming urge to attack your partner's character or use \"always/never\" statements. • These situations test your ability to stay vulnerable when you feel hurt. • Remember: Criticism is a shield; vulnerability is the bridge.",
+      inputs: [
+        { q: "You are frustrated that they are on their phone _again_ during dinner.", a: "\"I miss you. Could we put the phones away so I can feel connected to you?\" [Requests Over Criticism]", bundle: 'pro' },
+        { q: "They forgot to pick up the one thing you asked for at the store.", a: "\"I feel pretty frustrated and unheard right now. I really needed that for tomorrow.\" [The Expression Formula]", bundle: 'pro' },
+        { q: "You are about to yell, \"You never listen to me!\"", a: "\"I'm telling myself that what I say doesn't matter to you. Can we try that again?\" [Owning the Narrative]", bundle: 'pro' },
+        { q: "You want to bring up a sexual need but feel embarrassed.", a: "\"This is vulnerable for me to say, but I’d love more non-sexual touch during the day.\" [The Soft Startup]", bundle: 'pro' },
+      ]
+    },
+  ],
+  jimmy3: [
+    {
+      name: "The Defensive Reflex",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible response, with the strategy in brackets.",
+      description: "When you feel unfairly attacked or blamed, your body wants to defend. These situations test your ability to stay curious and validating when your \"shame\" is triggered. • Defensiveness is the #1 killer of connection. • Validation is the antidote to a \"Flooded\" partner.",
+      inputs: [
+        { q: "They say, \"You never listen to me!\" and you know you listened yesterday.", a: "\"I'm hearing that you feel unheard right now. Can you tell me what led to that feeling?\" [Compassionate Curiosity]", bundle: 'pro' },
+        { q: "You feel your heart racing and ears getting hot during a critique.", a: "\"Vulnerable. I'm starting to feel defensive, but I want to hear you. Can we take 5 minutes?\" [The \"Vulnerable\" Code Word]", bundle: 'pro' },
+        { q: "They are \"Protesting\" by yelling about the messy kitchen.", a: "\"I can see that the mess is making you feel overwhelmed. I'm sorry my part in it caused you stress.\" [Validation Without Agreement]", bundle: 'pro' },
+        { q: "They say, \"I bet you're just waiting for me to fail again.\"", a: "\"That sounds like a really scary story to believe. I'm on your team—what can I do to prove that?\" [Compassionate Curiosity]", bundle: 'pro' },
+      ]
+    },
+  ],
+  jimmy4: [
+    {
+      name: "The High-Conflict Trap",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible response, with the strategy in brackets.",
+      description: "When the situation is escalating rapidly or involving \"The Four Horsemen\" (Contempt, Criticism, Defensiveness, Stonewalling). • These situations test your commitment to safety over the urge to \"win\" the fight. • Remember: If it isn't safe, it isn't a conversation.",
+      inputs: [
+        { q: "Your partner sneers, \"Of course you'd forget. You're just like your father!\"", a: "\"That felt like contempt. I won't be talked down to. I’m taking a break for 30 minutes.\" [Safety Boundaries]", bundle: 'pro' },
+        { q: "They are screaming and won't let you get a word in edgewise.", a: "\"I want to hear you, but I can't do it while you're yelling. I’m going for a walk to get regulated.\" [Safety Boundaries]", bundle: 'pro' },
+        { q: "You are tempted to Stonewall and just stare at your phone until they stop talking.", a: "\"I’m feeling overwhelmed and I want to shut down. Can we take a reset break instead?\" [The 30-Minute Reset]", bundle: 'pro' },
+        { q: "They say, \"I bet you're just waiting for me to fail again.\"", a: "\"It makes sense why you'd feel that way after how I’ve acted. I want to prove I’m on your team.\" [Validating Past Pain]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Blame Game",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible response, with the strategy in brackets.",
+      description: "When you are being pressured to take 100% of the blame or when you are tempted to shift all the blame onto them. • Maturity is taking accountability for _your_ side of the street. • Refusing to apologize is a sign of weakness, not strength.",
+      inputs: [
+        { q: "You were rude, but you feel it's because they were ignoring you.", a: "\"Regardless of why I did it, my rudeness was wrong. I’m sorry for how I spoke to you.\" [Radical Accountability]", bundle: 'pro' },
+        { q: "They say \"It's your fault we're in this mess!\"", a: "\"I can see the ways I’ve contributed to our distance. I want to own my part and work on it with you.\" [Radical Accountability]", bundle: 'pro' },
+        { q: "You realize you've been punishing them for a mistake they made months ago.", a: "\"I realize I’ve been holding onto resentment. I’m sorry for making you pay for the past.\" [Radical Accountability]", bundle: 'pro' },
+        { q: "They are bringing up a hurt from three years ago.", a: "\"I didn't hold space for that pain back then. I’m ready to listen now. Tell me what it was like for you.\" [Validating Past Pain]", bundle: 'pro' },
+      ]
+    },
+  ],
+  jimmy5: [
+    {
+      name: "The Complacency Drift",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible response, with the strategy in brackets.",
+      description: "When life gets busy and you realize you've become \"roommates\" who only talk about schedules and chores. • These situations test your initiative to bring back the \"butterfly\" stage energy. • Remember: The natural state of a relationship is to drift apart; intentionality is the only way to stay close [12:37, 15:29].",
+      inputs: [
+        { q: "You realize you haven't really _looked_ at your partner's face in three days because of work.", a: "(Put your phone down) \"I feel like I've missed you even though we're in the same house. Tell me what's actually on your heart.\" [The Weekly Check-in]", bundle: 'pro' },
+        { q: "You feel a bit rejected because they aren't \"in the mood,\" but you realize you haven't been affectionate all day.", a: "\"I'm sorry I've been distant. Let's just cuddle and talk—no pressure for anything else.\" [Non-Sexual Affection]", bundle: 'pro' },
+        { q: "They mention they feel \"invisible\" lately.", a: "\"I haven't been doing a good job of telling you how much I appreciate you. I saw how you handled that crisis today—you were amazing.\" [Out-Loud Appreciation]", bundle: 'pro' },
+        { q: "You are tempted to wait for them to tell you what to do around the house.", a: "(Identify a chore that needs doing and do it immediately) [Sharing the Mental Load]", bundle: 'pro' },
+      ]
+    },
+  ],
+  jimmy6: [
+    {
+      name: "The Toxic Pushback",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible response, with the strategy in brackets.",
+      description: "Scenarios where a partner or co-parent intentionally uses your self-reflection or empathy against you. • These situations test your ability to stay \"High\" when they \"Go Low\". • Remember: You cannot reason with someone who is committed to misunderstanding you.",
+      inputs: [
+        { q: "A narcissistic co-parent says, \"The kids told me they hate being at your house.\" (Baiting).", a: "\"Okay.\" [Indifference to Manipulation]", bundle: 'pro' },
+        { q: "They overstep a boundary and then say, \"I don't remember you saying that, you're making things up.\" (Gaslighting).", a: "\"I’ve been clear about my limit. I’m not going to argue about the facts.\" [Indifference to Manipulation]", bundle: 'pro' },
+        { q: "You say you're hurt, and they respond with, \"Oh, so now _I'm_ the bad guy again?\".", a: "\"I'm sharing my feeling, not a verdict. I need you to just listen.\" [The Bare Minimum Standard]", bundle: 'pro' },
+        { q: "They promise to change but then \"punish\" you with a week of silence for bringing it up.", a: "(Enjoy your week and don't beg for their attention) [Indifference to Manipulation]", bundle: 'pro' },
+      ]
+    },
+  ],
+  toddv1: [
+    {
+      name: "Lukewarm Responses",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible response, with the strategy in brackets.",
+      description: "When you open and she gives a polite but flat answer like \"thanks\" or \"okay.\" This is where most conversations die. You need to \"spike\" the interaction or \"assume the burden\" to get a real reaction.",
+      inputs: [
+        { q: "You give a compliment and she just says \"Thanks.\"", a: "\"You're welcome. Now that we've got the boring stuff out of the way, tell me your story.\" (Narrating the Frame)", bundle: 'pro' },
+        { q: "She gives a one-word answer to your question.", a: "\"You're a doctor? Boring! I bet you've never done anything crazy in your life.\" (Question-Answer-Tease)", bundle: 'pro' },
+        { q: "She says \"Nice to meet you\" in a way that sounds like goodbye.", a: "\"Wait, you're the most ridiculous girl I've ever met. I think you win the prize for 'shortest conversation ever'.\" (Question-Answer-Tease)", bundle: 'pro' },
+        { q: "The conversation goes silent after 20 seconds.", a: "\"You know, there's something about you I love and something I just can't stand. I'm still deciding which one it is.\" (Open Loops)", bundle: 'pro' },
+        { q: "She seems skeptical of your approach.", a: "\"You think I'm a player? I respect that. Perceptive. But with you, I'm only like 80% player.\" (Narrating the Frame)", bundle: 'pro' },
+      ]
+    },
+  ],
+  toddv2: [
+    {
+      name: "The \"Nice to Meet You\" Trap",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible response, with the strategy in brackets.",
+      description: "When the conversation is friendly but platonic (baseline). Most guys leave here and get a flake. You need to \"spike\" the interaction to create sexual relevance and tension.",
+      inputs: [
+        { q: "She says \"Nice to meet you\" in a way that sounds like the end.", a: "\"Wait, you're the most ridiculous girl I've ever met. I think you win the prize for 'shortest conversation ever'.\" (Push-Pull)", bundle: 'pro' },
+        { q: "The conversation is getting very logical and boring.", a: "\"You blink a lot when you're talking about work. It's cute, but we're definitely going to have to break up if you keep being this serious.\" (The Neg / Push-Pull)", bundle: 'pro' },
+        { q: "She asks a standard \"What do you do?\" question.", a: "\"I bet you wouldn't guess it in a million years. Guess once, and if you're right, I'll fall in love with you.\" (Push-Pull)", bundle: 'pro' },
+        { q: "You've been talking for 5 minutes and it feels like \"just friends.\"", a: "\"I can't decide if I want to have a crush on you or run away right now. You're trouble.\" (Disqualification)", bundle: 'pro' },
+        { q: "She is being very polite but not investing.", a: "\"You seem really nice... I bet you were the girl who got bullied in high school. I feel for you.\" (Push-Pull - Polarizing Spike)", bundle: 'pro' },
+      ]
+    },
+  ],
+  toddv3: [
+    {
+      name: "The \"Logical Interview\" Stall",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible response, with the strategy in brackets.",
+      description: "When the conversation turns into a \"Resume Exchange\" (What do you do? Where do you live?). You need to pivot to emotions or provide your own \"grounding\" to make yourself more than a set of facts.",
+      inputs: [
+        { q: "She asks \"What do you do for a living?\" for the second time because she forgot.", a: "\"Don't ask who cares! Ask me what I'm passionate about instead. I bet you wouldn't guess my real dream in a million years.\" (Wide and Deep Rapport)", bundle: 'pro' },
+        { q: "The conversation is stuck on \"How long have you lived here?\".", a: "\"You don't seem like you've been here long. You still have that 'new kid' excitement in your eyes. Am I right?\" (The Cold Read)", bundle: 'pro' },
+        { q: "She tells you her job is \"Marketing.\"", a: "\"Marketing? So you're professionally good at manipulating people's desires. That makes me feel totally safe with you.\" (The Cold Read / Tease)", bundle: 'pro' },
+        { q: "You want to share your career without \"bragging.\"", a: "\"I actually left a stable path to become an entrepreneur because I couldn't stand not being the one in charge of my own show.\" (Grounding Stories)", bundle: 'pro' },
+        { q: "She gives a very short, factual answer about her family.", a: "\"That's the list, but what's the story? Who's the person in your family that actually understands you the best?\" (Wide and Deep Rapport)", bundle: 'pro' },
+      ]
+    },
+  ],
+  toddv4: [
+    {
+      name: "The Logistic Stall",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible response, with the strategy in brackets.",
+      description: "When the interaction is stuck in one place or she gives a logistical objection (e.g., \"I'm with friends\"). You need to use empathy over sympathy to solve the problem and keep the logistical momentum moving forward.",
+      inputs: [
+        { q: "She says, \"I can't leave, I'm with my friends.\"", a: "\"I get it, you're a good friend. We'll just go for ten minutes and I'll have you back before they even notice you're gone.\" (Seeding the Pull / Empathy)", bundle: 'pro' },
+        { q: "You want to suggest a venue change but she seems hesitant.", a: "\"We're just going for a quick walk to see [View/Place]. If you hate it, you can go home. I'm having a good time either way.\" (Assumptive Closing)", bundle: 'pro' },
+        { q: "You want to take her home but she's worried about the \"bedroom\" frame.", a: "\"I need to go grab a battery for my camera real fast. Come with me, we can finish this talk while I find it.\" (False Time Constraints / Assumptive Closing)", bundle: 'pro' },
+        { q: "She asks, \"Where are we going?\" in a skeptical way.", a: "\"Somewhere lovely that you will love. And if you don't, you can leave. Trust me, I'm a professional.\" (Seeding the Pull)", bundle: 'pro' },
+        { q: "You suggest a move and she says \"Maybe later.\"", a: "\"Actually, you're right. Not yet. Let's hang out here for 15 more minutes first.\" (Seeding the Pull - Preempting)", bundle: 'pro' },
+      ]
+    },
+  ],
+  toddv5: [
+    {
+      name: "High Pressure Situations",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible response, with the strategy in brackets.",
+      description: "When the set is \"on the line\"—either through a harsh rejection, a heavy group obstacle, or an internal freeze-up. These situations require you to double down on your frame and your entitlement.",
+      inputs: [
+        { q: "You open and she says, \"No thanks, I'm busy.\"", a: "\"I understand, but hi, I'm Todd. Nice to meet you anyway.\" (Passing Value Tests - Double Down)", bundle: 'pro' },
+        { q: "Her boyfriend walks over and looks aggressive.", a: "\"Oh hey! You guys look great together. I was just telling her she has a unique look. Have a great night!\" (Handling the Posse - Graceful Exit)", bundle: 'pro' },
+        { q: "You feel yourself \"cracking\" under her intense eye contact.", a: "[Stay for 20 more seconds. Live with the nervousness until it becomes normal.] (The \"What Do I Want?\" Move - Internal)", bundle: 'pro' },
+        { q: "A \"chode\" or another guy enters your set to steal the girl.", a: "\"This guy is awesome! He's got better game than me. Hold on, let me take some notes.\" (Handling the Posse - Reframe)", bundle: 'pro' },
+        { q: "She says \"Nice to meet you\" in a way that ends the set.", a: "\"Wait, stop. I can't decide if I'm going to love you or hate you yet. You're trouble.\" (The \"What Do I Want?\" Move - Polarizer)", bundle: 'pro' },
+      ]
+    },
+  ],
 };

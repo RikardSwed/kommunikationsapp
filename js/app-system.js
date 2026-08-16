@@ -482,6 +482,28 @@ applyInputCounterVisibility();
     explainthings2: { label: 'Explain Things — Pt. 2', minLevel: 'extended' },
     buildingastory: { label: 'Building a Story', minLevel: 'extended' },
     reframing: { label: 'Reframing', minLevel: 'extended' },
+    danbacon1: { label: 'Dan Bacon 1 — Creating the Spark', minLevel: 'complete' },
+    danbacon2: { label: 'Dan Bacon 2 — Assertive Presence', minLevel: 'complete' },
+    danbacon3: { label: 'Dan Bacon 3 — Relationship Mastery', minLevel: 'complete' },
+    danbacon4: { label: 'Dan Bacon 4 — Holding the Frame', minLevel: 'complete' },
+    oconnor1: { label: 'Dan o Connor 1 — Tactical Verbal Defense', minLevel: 'complete' },
+    oconnor2: { label: 'Dan o Connor 2 — Professional Boundaries', minLevel: 'complete' },
+    oconnor3: { label: 'Dan o Connor 3 — Disempowering Narcissists', minLevel: 'complete' },
+    oconnor4: { label: 'Dan o Connor 4 — Influential Leadership', minLevel: 'complete' },
+    oconnor5: { label: 'Dan o Connor 5 — Executive Presence', minLevel: 'complete' },
+    oconnor6: { label: 'Dan o Connor 6 — The Mindful Communicator', minLevel: 'complete' },
+    oconnor7: { label: 'Dan o Connor 7 — Social Fluidity', minLevel: 'complete' },
+    jimmy1: { label: 'Jimmy 1 — The Foundations of Safety', minLevel: 'complete' },
+    jimmy2: { label: 'Jimmy 2 — Healthy Expression', minLevel: 'complete' },
+    jimmy3: { label: 'Jimmy 3 — Listening & Emotional Presence', minLevel: 'complete' },
+    jimmy4: { label: 'Jimmy 4 — Handling Conflict & Repair', minLevel: 'complete' },
+    jimmy5: { label: 'Jimmy 5 — Nurturing Connection', minLevel: 'complete' },
+    jimmy6: { label: 'Jimmy 6 — Boundaries & Your Worth', minLevel: 'complete' },
+    toddv1: { label: 'Todd V 1 — High-Value Openings', minLevel: 'complete' },
+    toddv2: { label: 'Todd V 2 — Tension & Banter', minLevel: 'complete' },
+    toddv3: { label: 'Todd V 3 — Advanced Connection', minLevel: 'complete' },
+    toddv4: { label: 'Todd V 4 — Closing & Logistics', minLevel: 'complete' },
+    toddv5: { label: 'Todd V 5 — Unflappable Presence', minLevel: 'complete' },
   };
 
   // ── PROGRAM_CONFIG (v1.26.81) ─────────────────────────────────────────
@@ -2117,6 +2139,314 @@ const BUNDLE_DEFS = {
     },
   ],
   reframing: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  danbacon1: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  danbacon2: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  danbacon3: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  danbacon4: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  oconnor1: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  oconnor2: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  oconnor3: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  oconnor4: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  oconnor5: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  oconnor6: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  oconnor7: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  jimmy1: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  jimmy2: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  jimmy3: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  jimmy4: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  jimmy5: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  jimmy6: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  toddv1: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  toddv2: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  toddv3: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  toddv4: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  toddv5: [
     {
       id: 'free',
       tier: 'free',
