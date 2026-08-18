@@ -5,7 +5,7 @@
 // (DS.createCardMode / DS.createHandsfreeMode) and are declared in
 // app-modes.js and app-handsfree.js.
 
-const VERSION = 'v1.27.09';
+const VERSION = 'v1.27.10';
 
 // Keep every version label in the UI in sync with VERSION (v1.26.44).
 // The hardcoded strings in index.html are only fallbacks — this runs at
@@ -14,6 +14,18 @@ document.querySelectorAll('.settings-version').forEach(el => {
   const t = el.textContent.trim();
   if (!t || /^v\d/.test(t)) el.textContent = VERSION;
 });
+
+// v1.27.10 — mark the native build. In a browser the page has browser chrome
+// above it; in the Capacitor web view it is full screen and the top row ends up
+// crowded against the status bar. The extra spacing lives in style.css under
+// `.ds-native` so the browser is untouched, and one variable there tunes it.
+try {
+  const native = !!(window.Capacitor && (
+    (typeof window.Capacitor.isNativePlatform === 'function' && window.Capacitor.isNativePlatform()) ||
+    window.Capacitor.isNative === true
+  ));
+  if (native) document.documentElement.classList.add('ds-native');
+} catch (e) {}
 
 // Pack icon map — global so both dashboard and favorites can use it
 const PACK_ICONS = {

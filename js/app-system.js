@@ -618,6 +618,7 @@ applyInputCounterVisibility();
     // that happens. Checked before anything else so an expired grant cannot
     // leak through any of the paths below.
     expireBetaGrant();
+    expirePackGrants();
     // v1.26.75 — DEFAULT IS NOW freemium, not complete. A fresh install used
     // to see the entire library, which would have made the beta test say
     // nothing at all about the paid model. This is the primary of five sites;
@@ -647,10 +648,38 @@ applyInputCounterVisibility();
   // keeps whatever is in their localStorage no matter what Rikard changes on
   // GitHub, so the only way to take Pro back is to have written down when it
   // ends. Add or retire a code by editing this table.
-  const BETA_CODES = {
-    BETA2026: { level: 'pro', days: 60 },
+  // ── ACCESS CODES (v1.27.10) ──────────────────────────────────────────────
+  // Two kinds, redeemed in the same field on the home settings screen.
+  //
+  //   kind: 'level'  raises the whole access level for a while (the beta code)
+  //   kind: 'pack'   opens NAMED PACKS for a while and touches nothing else
+  //
+  // Fields:
+  //   days        how long the grant lasts from the moment it is redeemed
+  //   requiresPro true = refuse the code unless the device is already Pro
+  //   notAfter    optional 'YYYY-MM-DD'. The code stops working entirely on
+  //               that date, whatever anyone does. This is the only real
+  //               limit available without a server — see the note on
+  //               reinstalling in `Åtkomstkoder — register.md`.
+  //   label       what the person sees when it works
+  //
+  // KEEP `Appdokumentation/Åtkomstkoder — register.md` IN STEP WITH THIS TABLE.
+  // It is the only place the codes are written down in plain language.
+  const ACCESS_CODES = {
+    BETA2026: {
+      kind: 'level', level: 'pro', days: 60,
+      label: 'Pro unlocked for 60 days.',
+    },
+    // Newsletter code: one Pro pack, opened for everybody who has the code,
+    // Pro or not. The pack is at minLevel 'complete', so a grant is the ONLY
+    // way to reach it — which is what makes it worth handing out.
+    PARENT60: {
+      kind: 'pack', packs: ['parenting1'], days: 60, requiresPro: false,
+      label: 'Parenting 01 unlocked for 60 days.',
+    },
   };
-  const GRANT_KEY = 'ds_beta_grant';   // { level, until, code }
+  const GRANT_KEY  = 'ds_beta_grant';    // { level, until, code }
+  const PACKS_KEY  = 'ds_pack_grants';   // { packKey: { until, code } }
 
   function readGrant() {
     try { return JSON.parse(localStorage.getItem(GRANT_KEY)) || null; }
@@ -671,19 +700,58 @@ applyInputCounterVisibility();
     }
   }
 
+  // ── Pack grants ──────────────────────────────────────────────────────────
+  // Independent of the level grant and of each other: several codes can be
+  // live at once, each with its own expiry, and a level code does not disturb
+  // them. Stored per pack so a second code for the same pack simply extends it.
+  function readPackGrants() {
+    try { return JSON.parse(localStorage.getItem(PACKS_KEY)) || {}; }
+    catch { return {}; }
+  }
+  function writePackGrants(o) {
+    try { localStorage.setItem(PACKS_KEY, JSON.stringify(o)); } catch (e) {}
+  }
+  function expirePackGrants() {
+    const g = readPackGrants();
+    const now = Date.now();
+    let changed = false;
+    Object.keys(g).forEach(k => {
+      if (!g[k] || !g[k].until || g[k].until <= now) { delete g[k]; changed = true; }
+    });
+    if (changed) writePackGrants(g);
+  }
+  function packGranted(packKey) {
+    const g = readPackGrants()[packKey];
+    return !!(g && g.until && g.until > Date.now());
+  }
+
   function grantStatus() {
+    const out = [];
     const g = readGrant();
-    if (!g || !g.until) return null;
-    const days = Math.max(0, Math.ceil((g.until - Date.now()) / 86400000));
-    return { level: g.level, days: days, code: g.code };
+    if (g && g.until) {
+      out.push({ kind: 'level', level: g.level, code: g.code,
+                 days: Math.max(0, Math.ceil((g.until - Date.now()) / 86400000)) });
+    }
+    const pg = readPackGrants();
+    Object.keys(pg).forEach(k => {
+      if (!pg[k] || !pg[k].until) return;
+      out.push({ kind: 'pack', pack: k, code: pg[k].code,
+                 days: Math.max(0, Math.ceil((pg[k].until - Date.now()) / 86400000)) });
+    });
+    if (!out.length) return null;
+    // Backwards compatible: callers that expect the old single object still
+    // get the level grant's fields, with the full list on `.all`.
+    const level = out.find(x => x.kind === 'level');
+    return Object.assign({}, level || out[0], { all: out });
   }
 
   // v1.26.90 — hands a device back to freemium immediately. Without it the
   // only way off a redeemed code is to wait out the 60 days or clear site
   // data by hand, which also wipes progress and favourites.
   function clearGrant() {
-    const had = readGrant();
+    const had = readGrant() || Object.keys(readPackGrants()).length;
     localStorage.removeItem(GRANT_KEY);
+    localStorage.removeItem(PACKS_KEY);
     if (had) {
       localStorage.setItem(LEVEL_KEY, 'freemium');
       localStorage.setItem('dev_level_forced', 'true');
@@ -696,18 +764,43 @@ applyInputCounterVisibility();
   function redeemCode(raw) {
     const code = String(raw || '').trim().toUpperCase();
     if (!code) return { ok: false, message: 'Enter a code first.' };
-    const def = BETA_CODES[code];
+    const def = ACCESS_CODES[code];
     if (!def) return { ok: false, message: 'That code is not valid.' };
+
+    // A hard cut-off date, if the code has one. This is the only limit that a
+    // reinstall cannot get around, because it does not depend on anything
+    // stored on the device.
+    if (def.notAfter && Date.now() > Date.parse(def.notAfter + 'T23:59:59')) {
+      return { ok: false, message: 'That code has expired.' };
+    }
+
     const until = Date.now() + def.days * 86400000;
+
+    if (def.kind === 'pack') {
+      if (def.requiresPro) {
+        const lvl = getLevel();
+        if (lvl !== 'pro' && lvl !== 'complete') {
+          return { ok: false, message: 'That code needs Pro.' };
+        }
+      }
+      const g = readPackGrants();
+      (def.packs || []).forEach(k => { g[k] = { until: until, code: code }; });
+      writePackGrants(g);
+      applyAccessLevel();
+      return { ok: true, message: def.label ||
+        ((def.packs || []).length + ' pack(s) unlocked for ' + def.days + ' days.') };
+    }
+
+    // kind: 'level'
     localStorage.setItem(GRANT_KEY, JSON.stringify({ level: def.level, until: until, code: code }));
     localStorage.setItem(LEVEL_KEY, def.level);
     // Beats the lifetime-pro auto-promotion logic either way, and means the
     // level survives until expireBetaGrant() takes it back.
     localStorage.setItem('dev_level_forced', 'true');
     applyAccessLevel();
-    return { ok: true, message: def.level === 'pro'
+    return { ok: true, message: def.label || (def.level === 'pro'
       ? 'Pro unlocked for ' + def.days + ' days.'
-      : 'Unlocked for ' + def.days + ' days.' };
+      : 'Unlocked for ' + def.days + ' days.') };
   }
 
   function levelIndex(level) {
@@ -773,6 +866,11 @@ applyInputCounterVisibility();
   function packVisibility(packKey) {
     const level = getLevel();
     if (level === 'complete') return 'available';
+    // v1.27.10 — an access code can open a single pack for a while, whatever
+    // its minLevel says. Checked before everything else so it can reach even a
+    // 'complete' pack: that is the point of a newsletter code, since a pack
+    // nobody can otherwise get is the only kind worth giving away.
+    if (packGranted(packKey)) return 'available';
     const cfg = PACK_CONFIG[packKey];
     const isProUp = level === 'pro';
     let standalone = 'none';
@@ -1005,10 +1103,14 @@ applyInputCounterVisibility();
     const el  = document.getElementById('betaCodeStatus');
     if (!row || !el) return;
     const g = grantStatus();
-    const text = msg || (g
-      ? (g.level === 'pro' ? 'Pro access' : g.level) + ' \u2014 ' +
-        (g.days === 0 ? 'expires today' : g.days + ' days left')
-      : '');
+    const nameOf = k => {
+      const c = document.querySelector('.collection-card[data-key="' + k + '"]');
+      return (c && c.dataset.label) || k;
+    };
+    const line = x => (x.kind === 'pack' ? nameOf(x.pack)
+                                         : (x.level === 'pro' ? 'Pro access' : x.level)) +
+      ' \u2014 ' + (x.days === 0 ? 'expires today' : x.days + ' days left');
+    const text = msg || (g ? (g.all || [g]).map(line).join('  \u00b7  ') : '');
     el.textContent = text;
     row.style.display = text ? '' : 'none';
   }
@@ -1059,7 +1161,9 @@ applyInputCounterVisibility();
   }
 
   // Expose for other modules
-  window.accessLevel = { getLevel, canAccess, badgeLabel, applyModeLocks, updateNavUpgradeBtn, packVisibility, programVisibility, sectionVisibility, applyAccessLevel, redeemCode, grantStatus, clearGrant };
+  // `codes` is exposed read-only so the registry document can be checked
+  // against the real table rather than kept in step by hand.
+  window.accessLevel = { getLevel, canAccess, badgeLabel, applyModeLocks, updateNavUpgradeBtn, packVisibility, programVisibility, sectionVisibility, applyAccessLevel, redeemCode, grantStatus, clearGrant, packGranted, codes: ACCESS_CODES };
   window._applyAccessLevel = applyAccessLevel;
 
   // Init
