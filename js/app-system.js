@@ -3153,13 +3153,18 @@ if (resetFirstRunBtn) resetFirstRunBtn.addEventListener('click', () => {
   ['fav_packs', 'dash_last_pack', 'ds_last_modes', 'ds_tap_hint_count',
    'ds_onboarding_done', 'ds_onboarding', 'ds_reco_packs',
    'ds_seen_home', 'ds_pro_nudge', 'ds_reco'].forEach(k => localStorage.removeItem(k));
-  // Pack intro counters (v1.26.44) — dynamic keys, one per pack
-  Object.keys(localStorage).filter(k => k.indexOf('ds_packintro_') === 0)
+  // Pack intro counters (v1.26.44) and guide flags (v1.27.09) — dynamic keys.
+  // The guides belong here for the same reason the pack intros do: this button
+  // means "show me the app as a new user sees it", and a new user has not seen
+  // them. It still does NOT touch fb_ or note_ — feedback survives a reset on
+  // purpose; the button for wiping that is in developer settings.
+  Object.keys(localStorage)
+    .filter(k => k.indexOf('ds_packintro_') === 0 || k.indexOf('ds_guide_') === 0)
     .forEach(k => localStorage.removeItem(k));
   if (window._favRenderTab)  window._favRenderTab();
   if (window._favRenderDash) window._favRenderDash();
   if (window.renderContinueCard) window.renderContinueCard();
-  if (window.showToast) showToast('Favorites, continue, tap hint and onboarding reset.');
+  if (window.showToast) showToast('Favorites, continue, hints, guides and onboarding reset.');
 });
 
 // ─── ABOUT & PRIVACY (v1.26.36) ────────────────────────────────────────────
@@ -5151,7 +5156,7 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
             ART.nextDeck() +
             cap('A new thing to practise') +
             P('Swiping left or right moves to the next <strong>' + D.one + '</strong> &mdash; a different move, with its own name, its own explanation and its own set of inputs.') +
-            Pdim('A pack is a stack of ' + D.many + '. That is where the app got its name.'),
+            Pdim('A pack is a stack of ' + D.many + '. A ' + D.one + ' is a stack of input cards.'),
         },
         {
           title: 'That is the whole thing',
@@ -5344,12 +5349,19 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
 
   // Show once, ever. The flag is per guide so adding a fifth one later does
   // not re-show the first four.
+  //
+  // v1.27.09 — RENDERS IMMEDIATELY and returns whether it did. It used to wait
+  // 520 ms for the training screen to finish sliding in, which meant you saw
+  // the screen swipe up and then get covered a moment later: a flicker, and it
+  // read as two separate things happening. Now the guide is simply there, and
+  // the training screen is revealed underneath when you close it. The caller
+  // uses the return value to suppress the slide-in it would otherwise start.
   function maybeShow(id) {
     const key = 'ds_guide_' + id;
-    if (localStorage.getItem(key) === 'seen') return;
+    if (localStorage.getItem(key) === 'seen') return false;
     try { localStorage.setItem(key, 'seen'); } catch (e) {}
-    // let the screen finish sliding in first
-    setTimeout(() => render(id), 520);
+    render(id);
+    return true;
   }
 
   window.showGuide = render;

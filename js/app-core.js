@@ -5,7 +5,7 @@
 // (DS.createCardMode / DS.createHandsfreeMode) and are declared in
 // app-modes.js and app-handsfree.js.
 
-const VERSION = 'v1.27.08';
+const VERSION = 'v1.27.09';
 
 // Keep every version label in the UI in sync with VERSION (v1.26.44).
 // The hardcoded strings in index.html are only fallbacks — this runs at
@@ -193,8 +193,15 @@ function navToTraining(id) {
   // Hooked here rather than in each mode's show(): this is the one place every
   // training screen passes through, standard and handsfree alike, so a new
   // mode gets the guide without anyone remembering to wire it.
+  //
+  // v1.27.09 — if a guide opens, suppress the screen's slide-in. Otherwise the
+  // training screen animates up and the guide lands on top of it a moment
+  // later, which flickers. _noTrainingAnim is consumed by the check directly
+  // below, so the screen is simply in place behind the guide and is revealed
+  // when the guide closes.
   if (window.maybeShowGuide) {
-    maybeShowGuide(HANDSFREE_SCREENS.indexOf(id) > -1 ? 'handsfree-basics' : 'training-basics');
+    const guideId = HANDSFREE_SCREENS.indexOf(id) > -1 ? 'handsfree-basics' : 'training-basics';
+    if (maybeShowGuide(guideId)) window._noTrainingAnim = true;
   }
   if (window._noTrainingAnim) {
     window._noTrainingAnim = false;
