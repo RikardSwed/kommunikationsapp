@@ -4951,3 +4951,457 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
     });
   }
 })();
+
+// ─── GUIDES (v1.27.08) ───────────────────────────────────────────────────────
+//
+// Four walkthroughs that explain the training screens. They are NOT onboarding:
+// onboarding runs once at first launch and explains the app. These run the
+// first time you open a training screen, and afterwards live behind the gear.
+//
+//   training-basics   · shown automatically on the first standard training screen
+//   training-more     · settings only
+//   handsfree-basics  · shown automatically on the first handsfree screen
+//   handsfree-more    · settings only
+//
+// They reuse #packIntroScreen and the .ob-* styles, so a guide looks and moves
+// exactly like a pack intro — same dots, same Skip, same Continue.
+//
+// THE PICTURES ARE DRAWN, NOT SCREENSHOTTED. See the .gd-art note in style.css.
+(function initGuides() {
+  const screen = document.getElementById('packIntroScreen');
+  if (!screen) return;
+
+  // ── The word for "the thing you swipe sideways between" ──────────────────
+  // In the data it is a group: a strategy in Single Strategy, a category in
+  // Memorize and Challenges, a combo in Sequences, a collection in Collections.
+  // The user needs ONE word for all six, and it is DECK — which is also where
+  // the app's name comes from: a pack is a stack of decks.
+  //
+  // EVERY user-facing use of that word in this file goes through D. Renaming it
+  // later is this one object.
+  const D = { one: 'deck', One: 'Deck', many: 'decks', Many: 'Decks' };
+
+  // ── Illustration kit ─────────────────────────────────────────────────────
+  // Small SVG scenes of the training screen. Coordinates are a 250×150 stage.
+  const svg = (h, body) =>
+    '<svg class="gd-art" viewBox="0 0 250 ' + h + '" role="img" aria-hidden="true">' + body + '</svg>';
+
+  // a card with a few text lines on it
+  const card = (x, y, w, h, lines, opts) => {
+    opts = opts || {};
+    let s = '<rect class="gd-card" x="' + x + '" y="' + y + '" width="' + w + '" height="' + h + '" rx="10"/>';
+    for (let i = 0; i < lines; i++) {
+      const lw = (i === lines - 1) ? w * 0.45 : w * (0.72 - i * 0.06);
+      s += '<rect class="gd-line' + (opts.strong && i === 0 ? ' gd-line--strong' : '') + '" x="' +
+           (x + w * 0.14) + '" y="' + (y + h * 0.3 + i * 11) + '" width="' + lw + '" height="4.5" rx="2.2"/>';
+    }
+    return s;
+  };
+  const arrow = (x1, y1, x2, y2, head) => {
+    const a = '<path class="gd-arrow" d="M' + x1 + ' ' + y1 + ' L' + x2 + ' ' + y2 + '"/>';
+    return a + '<path class="gd-arrow" d="' + head + '"/>';
+  };
+  const label = (x, y, t, cls) =>
+    '<text class="' + (cls || 'gd-label') + '" x="' + x + '" y="' + y + '" text-anchor="middle">' + t + '</text>';
+
+  const ART = {
+    // tapping the deck name above the card opens its description
+    deckName: () => svg(150,
+      '<rect class="gd-panel" x="55" y="8" width="140" height="20" rx="7"/>' +
+      '<rect class="gd-line gd-line--strong" x="80" y="16" width="90" height="4.5" rx="2.2"/>' +
+      '<circle class="gd-ring" cx="125" cy="18" r="17"/>' +
+      '<circle class="gd-ring" cx="125" cy="18" r="25" opacity=".25"/>' +
+      card(55, 40, 140, 100, 4) +
+      label(125, 149, 'TAP THE NAME')),
+
+    // the card itself, front and back
+    flip: () => svg(150,
+      card(15, 20, 105, 110, 3) +
+      card(130, 20, 105, 110, 3, { strong: true }) +
+      arrow(122, 75, 128, 75, 'M124 71 L129 75 L124 79') +
+      label(67, 148, 'FRONT SIDE') +
+      label(182, 148, 'BACK SIDE')),
+
+    // swipe down: a new input inside the same deck
+    newInput: () => svg(160,
+      card(70, 6, 110, 84, 3) +
+      card(70, 60, 110, 84, 3) +
+      '<rect class="gd-card" x="70" y="60" width="110" height="84" rx="10"/>' +
+      '<rect class="gd-line" x="85" y="85" width="72" height="4.5" rx="2.2"/>' +
+      '<rect class="gd-line" x="85" y="96" width="62" height="4.5" rx="2.2"/>' +
+      '<rect class="gd-line" x="85" y="107" width="42" height="4.5" rx="2.2"/>' +
+      arrow(35, 40, 35, 110, 'M29 102 L35 111 L41 102') +
+      label(35, 128, 'SWIPE', 'gd-muted') +
+      label(35, 138, 'DOWN', 'gd-muted') +
+      label(125, 159, 'A NEW INPUT')),
+
+    // swipe right: the next deck
+    nextDeck: () => svg(150,
+      card(8, 25, 96, 96, 3) +
+      card(146, 25, 96, 96, 3) +
+      arrow(112, 73, 138, 73, 'M132 67 L139 73 L132 79') +
+      label(56, 137, 'THIS ' + D.One.toUpperCase()) +
+      label(194, 137, 'NEXT ' + D.One.toUpperCase()) +
+      label(125, 16, 'SWIPE RIGHT', 'gd-muted')),
+
+    // the counters above the card
+    counters: () => svg(120,
+      '<rect class="gd-panel" x="70" y="10" width="110" height="22" rx="7"/>' +
+      '<text class="gd-label" x="125" y="25" text-anchor="middle">3 / 8  ·  2 / 5</text>' +
+      arrow(100, 52, 100, 38, 'M95 44 L100 37 L105 44') +
+      arrow(152, 52, 152, 38, 'M147 44 L152 37 L157 44') +
+      '<text class="gd-muted" x="100" y="70" text-anchor="middle">input</text>' +
+      '<text class="gd-muted" x="152" y="70" text-anchor="middle">' + D.one + '</text>' +
+      card(70, 82, 110, 34, 2)),
+
+    // the four arrows at the bottom
+    navBar: () => svg(110,
+      card(70, 4, 110, 46, 2) +
+      '<rect class="gd-panel" x="45" y="60" width="160" height="34" rx="10"/>' +
+      '<path class="gd-arrow" d="M70 77 L62 77 M66 73 L61 77 L66 81"/>' +
+      '<path class="gd-arrow" d="M104 82 L104 72 M100 76 L104 71 L108 76"/>' +
+      '<path class="gd-arrow" d="M146 72 L146 82 M142 78 L146 83 L150 78"/>' +
+      '<path class="gd-arrow" d="M180 77 L188 77 M184 73 L189 77 L184 81"/>' +
+      '<text class="gd-muted" x="66" y="107" text-anchor="middle">prev ' + D.one + '</text>' +
+      '<text class="gd-muted" x="184" y="107" text-anchor="middle">next ' + D.one + '</text>'),
+
+    // three taps on the hint line opens a note
+    notes: () => svg(150,
+      card(70, 6, 110, 74, 3) +
+      '<rect class="gd-line" x="92" y="92" width="66" height="4" rx="2" opacity=".45"/>' +
+      '<circle class="gd-dot" cx="125" cy="110" r="3.5"/>' +
+      '<circle class="gd-ring" cx="125" cy="110" r="9"/>' +
+      '<circle class="gd-ring" cx="125" cy="110" r="15" opacity=".3"/>' +
+      label(125, 136, 'TAP THREE TIMES') +
+      label(125, 148, 'BELOW THE CARD', 'gd-muted')),
+
+    // handsfree: the app talks, the screen can sleep
+    handsfree: () => svg(150,
+      card(30, 20, 100, 100, 3) +
+      '<path class="gd-arrow" d="M158 52 L172 52 L188 38 L188 102 L172 88 L158 88 Z"/>' +
+      '<path class="gd-ring" d="M199 50 a22 22 0 0 1 0 40"/>' +
+      '<path class="gd-ring" d="M207 40 a34 34 0 0 1 0 60" opacity=".4"/>' +
+      label(125, 143, 'IT READS TO YOU')),
+
+    // handsfree: adding voices on iPhone
+    voices: () => svg(130,
+      '<rect class="gd-panel" x="35" y="10" width="180" height="26" rx="8"/>' +
+      '<text class="gd-muted" x="125" y="27" text-anchor="middle">Settings &#8250; Accessibility</text>' +
+      '<rect class="gd-panel" x="35" y="44" width="180" height="26" rx="8"/>' +
+      '<text class="gd-muted" x="125" y="61" text-anchor="middle">Spoken Content &#8250; Voices</text>' +
+      '<rect class="gd-panel" x="35" y="78" width="180" height="26" rx="8"/>' +
+      '<text class="gd-muted" x="125" y="95" text-anchor="middle">English &#8250; download one</text>' +
+      '<path class="gd-arrow" d="M125 38 L125 42 M121 39 L125 43 L129 39"/>' +
+      '<path class="gd-arrow" d="M125 72 L125 76 M121 73 L125 77 L129 73"/>' +
+      label(125, 123, 'ONCE, ON THE PHONE')),
+  };
+
+  const P = t => '<p class="ob-text">' + t + '</p>';
+  const Pdim = t => '<p class="ob-text ob-text--dim">' + t + '</p>';
+  const cap = t => '<div class="gd-cap">' + t + '</div>';
+  const rows = list =>
+    '<div class="ob-how">' + list.map((r, i) =>
+      '<div class="ob-how-row"><span class="ob-how-num">' + (i + 1) + '</span><p>' + r + '</p></div>'
+    ).join('') + '</div>';
+
+  // ── The guides ───────────────────────────────────────────────────────────
+  const GUIDES = {
+
+    'training-basics': {
+      title: 'How training works',
+      pages: [
+        {
+          title: 'How training works',
+          html:
+            P('Every screen is the same loop. You read a situation, you decide what you would <strong>actually say</strong>, and then you check it against a suggested answer.') +
+            rows([
+              'Read the <strong>front side</strong> &mdash; the situation.',
+              'Say your answer, out loud or in your head.',
+              'Tap the card for a <strong>suggested answer</strong>.',
+            ]) +
+            Pdim('Answering before you look is the whole exercise. Reading both sides teaches you nothing.'),
+        },
+        {
+          title: 'The two sides',
+          html:
+            ART.flip() +
+            cap('Tap anywhere on the card') +
+            P('The front gives you a situation. The back gives you <strong>one</strong> answer that would work &mdash; not the only one, and not one to memorise word for word.') +
+            Pdim('If yours was different and it holds up, yours was right too.'),
+        },
+        {
+          title: 'What you are practising',
+          html:
+            ART.deckName() +
+            cap('Tap the name above the card') +
+            P('The name above the card is the ' + D.one + ' you are in. Tap it and you get the explanation: what this ' + D.one + ' trains, when it works, and what makes it fail.') +
+            Pdim('Worth reading once per ' + D.one + '. It is the part that makes the cards make sense.'),
+        },
+        {
+          title: 'Swipe down: a new input',
+          html:
+            ART.newInput() +
+            cap('Same ' + D.one + ', a different situation') +
+            P('Swiping up or down keeps you on the same ' + D.one + ' and hands you another situation to try it on.') +
+            Pdim('This is where the reps are. One situation proves nothing; eight starts to stick.'),
+        },
+        {
+          title: 'Swipe right: the next ' + D.one,
+          html:
+            ART.nextDeck() +
+            cap('A new thing to practise') +
+            P('Swiping left or right moves to the next <strong>' + D.one + '</strong> &mdash; a different move, with its own name, its own explanation and its own set of inputs.') +
+            Pdim('A pack is a stack of ' + D.many + '. That is where the app got its name.'),
+        },
+        {
+          title: 'That is the whole thing',
+          html:
+            P('Three gestures. Tap to reveal, swipe down for another input, swipe right for the next ' + D.one + '.') +
+            rows([
+              'You can open this guide again from the <strong>gear</strong> on any training screen.',
+              'There is a <strong>second guide</strong> in the same place, for the counters, the arrows, notes and the settings.',
+            ]) +
+            Pdim('Nothing else is required. Everything below is optional.'),
+        },
+      ],
+    },
+
+    'training-more': {
+      title: 'The rest of the screen',
+      pages: [
+        {
+          title: 'The numbers at the top',
+          html:
+            ART.counters() +
+            cap('input  ·  ' + D.one) +
+            P('The left pair is where you are among this ' + D.one + '&rsquo;s inputs. The right pair is where you are among the ' + D.many + ' in the pack.') +
+            Pdim('The left one is hidden by default. Turn on <strong>Show input counter</strong> if you want it.'),
+        },
+        {
+          title: 'The arrows at the bottom',
+          html:
+            ART.navBar() +
+            cap('The same moves, as buttons') +
+            P('The outer two step between ' + D.many + '. The inner two step between inputs. They do exactly what the swipes do, for when one hand is busy.') +
+            Pdim('Go forward past the last ' + D.one + ' and you land in the <strong>next pack</strong> in whatever list you opened this one from.'),
+        },
+        {
+          title: 'Notes',
+          html:
+            ART.notes() +
+            cap('Three taps on the line under the card') +
+            P('Writes a note attached to <strong>this card, this side</strong>. Use it for a thought, a better phrasing of your own, or something that did not work when you tried it.') +
+            Pdim('A card that has a note shows a heavier dot on that line. Export them all from Settings on the home screen.'),
+        },
+        {
+          title: 'Settings',
+          html:
+            P('The gear on a training screen holds the things worth changing:') +
+            rows([
+              '<strong>Shuffle</strong> &mdash; ' + D.many + ' and inputs in a different order each session.',
+              '<strong>Guide text</strong> &mdash; the small framing line above the card.',
+              '<strong>Hints</strong> &mdash; the line under the card. Turning it off keeps the three-tap for notes.',
+              '<strong>Progress bar</strong> &mdash; how far through the pack you are.',
+            ]) +
+            Pdim('The same panel has a button for each of these two guides.'),
+        },
+      ],
+    },
+
+    'handsfree-basics': {
+      title: 'Handsfree',
+      pages: [
+        {
+          title: 'Handsfree',
+          html:
+            ART.handsfree() +
+            cap('Screen off, headphones in') +
+            P('Handsfree reads the cards to you and leaves a pause where your answer goes. It is the same material as the normal screen, out loud.') +
+            Pdim('Made for walking, driving and washing up &mdash; the times you can rehearse but cannot look.'),
+        },
+        {
+          title: 'How a round runs',
+          html:
+            rows([
+              'It reads the ' + D.one + '&rsquo;s <strong>explanation</strong>, once.',
+              'It reads a <strong>situation</strong>, then goes quiet.',
+              'You answer <strong>out loud</strong>, into the pause.',
+              'It reads the <strong>suggested answer</strong>, then moves on.',
+            ]) +
+            P('It keeps going by itself until you stop it. Say your answer properly &mdash; out loud, in a full sentence. Thinking it is not the same exercise.'),
+        },
+        {
+          title: 'Better voices',
+          html:
+            ART.voices() +
+            cap('iPhone') +
+            P('The default voice is flat and it makes an hour of this hard work. iOS has much better ones, free, but they have to be downloaded first:') +
+            rows([
+              'iPhone <strong>Settings &#8250; Accessibility</strong>.',
+              '<strong>Spoken Content &#8250; Voices &#8250; English</strong>.',
+              'Download a <strong>Premium</strong> or <strong>Enhanced</strong> voice.',
+              'Come back here and pick it under <strong>Voice</strong> in the gear.',
+            ]) +
+            Pdim('Worth the four minutes. It is the single biggest difference in handsfree.'),
+        },
+        {
+          title: 'That is the whole thing',
+          html:
+            P('Start it, put the phone away, and answer out loud.') +
+            rows([
+              'This guide is behind the <strong>gear</strong> on any handsfree screen.',
+              'A <strong>second guide</strong> in the same place covers the pace, the pauses and what gets read.',
+            ]) +
+            Pdim('The screen can sleep. It keeps talking.'),
+        },
+      ],
+    },
+
+    'handsfree-more': {
+      title: 'Handsfree settings',
+      pages: [
+        {
+          title: 'What gets read',
+          html:
+            rows([
+              '<strong>Strategy explanation</strong> &mdash; the full description at the start of each ' + D.one + '. Turn it off once you know them.',
+              '<strong>Card back</strong> &mdash; the suggested answer. Off means you answer and never hear a model.',
+              '<strong>Guide text</strong> &mdash; the short framing line.',
+            ]) +
+            Pdim('Explanation off and card back on is the usual setting after the first few rounds.'),
+        },
+        {
+          title: 'Time to think',
+          html:
+            rows([
+              '<strong>Thinking pause</strong> &mdash; the silence after a situation. This is your answer. Make it long enough to say a real sentence.',
+              '<strong>General pause</strong> &mdash; the gaps everywhere else.',
+              '<strong>Speech rate</strong> &mdash; how fast it talks.',
+            ]) +
+            P('If you find yourself rushing, the thinking pause is too short. It is meant to feel slightly too long.'),
+        },
+        {
+          title: 'How much, and in what order',
+          html:
+            rows([
+              '<strong>Max inputs per ' + D.one + '</strong> &mdash; caps how many situations you get before it moves on.',
+              '<strong>Loop current ' + D.one + '</strong> &mdash; stay on one until you stop it.',
+              '<strong>Shuffle</strong> &mdash; a different order each session.',
+              '<strong>Voice</strong> &mdash; see the first guide for how to add better ones.',
+            ]) +
+            Pdim('Looping one ' + D.one + ' with a long thinking pause is the closest thing to real rehearsal in the app.'),
+        },
+      ],
+    },
+  };
+
+  // ── Renderer ─────────────────────────────────────────────────────────────
+  // Same shape as the pack intro so the two feel like one mechanism.
+  function render(id) {
+    const g = GUIDES[id];
+    if (!g) return;
+    screen.innerHTML =
+      '<div class="ob-top"><div class="ob-dots" id="gdDots"></div>' +
+      '<button class="ob-skip" id="gdSkipBtn">Skip</button></div>' +
+      g.pages.map((p, i) =>
+        '<div class="ob-step" style="display:' + (i === 0 ? 'flex' : 'none') + ';">' +
+        '<h2 class="ob-title">' + p.title + '</h2>' + p.html + '</div>').join('') +
+      '<div class="ob-bottom"><button class="ob-next" id="gdNextBtn">Continue</button></div>';
+
+    const steps = Array.from(screen.querySelectorAll('.ob-step'));
+    const dotsEl = screen.querySelector('#gdDots');
+    const nextBtn = screen.querySelector('#gdNextBtn');
+    dotsEl.innerHTML = steps.map((_, i) =>
+      '<span class="ob-dot' + (i === 0 ? ' ob-dot--active' : '') + '"></span>').join('');
+    const dots = Array.from(dotsEl.children);
+    let step = 0;
+
+    function showStep(i) {
+      steps.forEach((st, j) => { st.style.display = j === i ? 'flex' : 'none'; });
+      dots.forEach((d, j) => d.classList.toggle('ob-dot--active', j === i));
+      step = i;
+      nextBtn.textContent = (i === steps.length - 1) ? 'Got it' : 'Continue';
+      screen.scrollTop = 0;
+    }
+    function finish() {
+      screen.classList.add('ob-leaving');
+      setTimeout(() => {
+        screen.style.display = 'none';
+        screen.classList.remove('ob-leaving');
+        screen.innerHTML = '';
+      }, 450);
+    }
+    nextBtn.addEventListener('click', () => {
+      if (step < steps.length - 1) showStep(step + 1);
+      else finish();
+    });
+    screen.querySelector('#gdSkipBtn').addEventListener('click', finish);
+
+    screen.classList.remove('ob-leaving');
+    screen.style.display = 'flex';
+    showStep(0);
+  }
+
+  // Show once, ever. The flag is per guide so adding a fifth one later does
+  // not re-show the first four.
+  function maybeShow(id) {
+    const key = 'ds_guide_' + id;
+    if (localStorage.getItem(key) === 'seen') return;
+    try { localStorage.setItem(key, 'seen'); } catch (e) {}
+    // let the screen finish sliding in first
+    setTimeout(() => render(id), 520);
+  }
+
+  window.showGuide = render;
+  window.maybeShowGuide = maybeShow;
+  window.DECK_TERM = D;
+
+  // ── The rows inside every training settings panel ────────────────────────
+  // Injected rather than written into index.html seven times: the standard
+  // panel plus six handsfree ones, and a new mode would need an eighth.
+  const PANELS = [
+    { overlay: 'settingsOverlay',       basics: 'training-basics',  more: 'training-more'  },
+    { overlay: 'hfSettingsOverlay',      basics: 'handsfree-basics', more: 'handsfree-more' },
+    { overlay: 'hfMemSettingsOverlay',   basics: 'handsfree-basics', more: 'handsfree-more' },
+    { overlay: 'hfChallSettingsOverlay', basics: 'handsfree-basics', more: 'handsfree-more' },
+    { overlay: 'hfFlowSettingsOverlay',  basics: 'handsfree-basics', more: 'handsfree-more' },
+    { overlay: 'hfMindSettingsOverlay',  basics: 'handsfree-basics', more: 'handsfree-more' },
+    { overlay: 'hfCollSettingsOverlay',  basics: 'handsfree-basics', more: 'handsfree-more' },
+  ];
+
+  PANELS.forEach(cfg => {
+    const overlay = document.getElementById(cfg.overlay);
+    if (!overlay) return;
+    const panel = overlay.querySelector('.settings-panel');
+    if (!panel || panel.querySelector('.gd-settings-head')) return;
+
+    const head = document.createElement('div');
+    head.className = 'gd-settings-head';
+    head.textContent = 'Guides';
+
+    const mk = (text, guideId) => {
+      const row = document.createElement('div');
+      row.className = 'settings-row';
+      const lab = document.createElement('label');
+      lab.textContent = text;
+      const btn = document.createElement('button');
+      btn.className = 'gd-btn';
+      btn.textContent = 'View';
+      btn.addEventListener('click', e => {
+        e.stopPropagation();
+        overlay.classList.remove('open');
+        render(guideId);
+      });
+      row.appendChild(lab);
+      row.appendChild(btn);
+      return row;
+    };
+
+    // sit above the version line and the Done button
+    const anchor = panel.querySelector('.settings-version') || panel.querySelector('.settings-close');
+    const add = el => anchor ? panel.insertBefore(el, anchor) : panel.appendChild(el);
+    add(head);
+    add(mk(GUIDES[cfg.basics].title, cfg.basics));
+    add(mk(GUIDES[cfg.more].title, cfg.more));
+  });
+})();

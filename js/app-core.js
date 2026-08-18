@@ -5,7 +5,7 @@
 // (DS.createCardMode / DS.createHandsfreeMode) and are declared in
 // app-modes.js and app-handsfree.js.
 
-const VERSION = 'v1.27.07';
+const VERSION = 'v1.27.08';
 
 // Keep every version label in the UI in sync with VERSION (v1.26.44).
 // The hardcoded strings in index.html are only fallbacks — this runs at
@@ -176,6 +176,11 @@ function navToMode() {
   hideBottomNav();
 }
 
+// v1.27.08 — the six handsfree screens, so navToTraining can tell which of the
+// two first-run guides to offer. Standard screens are everything else.
+const HANDSFREE_SCREENS = ['hfScreen', 'hfMemScreen', 'hfChallScreen',
+                           'hfFlowScreen', 'hfMindScreen', 'hfCollScreen'];
+
 function navToTraining(id) {
   // Layered stack: do NOT touch modeScreen here. Whatever is underneath
   // (mode screen, or the dashboard for Continue-card launches) stays put,
@@ -183,6 +188,14 @@ function navToTraining(id) {
   const el = document.getElementById(id);
   if (!el) return;
   el.style.display = 'flex';
+
+  // v1.27.08 — first time on a training screen of this kind, explain it.
+  // Hooked here rather than in each mode's show(): this is the one place every
+  // training screen passes through, standard and handsfree alike, so a new
+  // mode gets the guide without anyone remembering to wire it.
+  if (window.maybeShowGuide) {
+    maybeShowGuide(HANDSFREE_SCREENS.indexOf(id) > -1 ? 'handsfree-basics' : 'training-basics');
+  }
   if (window._noTrainingAnim) {
     window._noTrainingAnim = false;
     el.classList.remove('slide-in-bottom', 'slide-out-bottom');
