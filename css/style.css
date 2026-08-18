@@ -505,6 +505,60 @@ body.pb-enabled .divider::after {
   user-select: none;
 }
 
+/* ── GUIDES (v1.27.08) ─────────────────────────────────────────────────────
+   The in-app walkthroughs. They reuse the pack-intro screen and its .ob-*
+   classes wholesale; everything here is the illustration layer on top.
+
+   The pictures are DRAWN, not screenshotted. An inline SVG follows the theme
+   variables, never goes stale when the interface moves, weighs nothing, and
+   needs no device to produce. A screenshot fails all four. */
+.gd-art {
+  display: block;
+  width: 100%;
+  max-width: 250px;
+  margin: 2px auto 12px;
+  overflow: visible;
+}
+.gd-art .gd-card   { fill: var(--ds-card); stroke: var(--ds-border); stroke-width: 1.5; }
+.gd-art .gd-panel  { fill: var(--ds-card-alt); stroke: var(--ds-border-sub); stroke-width: 1.5; }
+.gd-art .gd-line   { fill: var(--ds-txt3); opacity: .55; }
+.gd-art .gd-line--strong { fill: var(--ds-txt2); opacity: .8; }
+.gd-art .gd-arrow  { stroke: var(--ds-acc); stroke-width: 2.2; fill: none;
+                     stroke-linecap: round; stroke-linejoin: round; }
+.gd-art .gd-ring   { stroke: var(--ds-acc); stroke-width: 1.6; fill: none; opacity: .55; }
+.gd-art .gd-dot    { fill: var(--ds-acc); }
+.gd-art .gd-label  { fill: var(--ds-txt2); font-size: 9px; font-weight: 700;
+                     font-family: inherit; letter-spacing: .02em; }
+.gd-art .gd-muted  { fill: var(--ds-txt3); font-size: 8.5px; font-family: inherit; }
+
+/* caption under a picture */
+.gd-cap {
+  text-align: center;
+  font-size: 12.5px;
+  color: var(--ds-txt3);
+  margin: -6px 0 14px;
+}
+
+/* the two rows added to every training settings panel */
+.gd-settings-head {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--ds-txt2);
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  margin: 14px 0 2px;
+}
+.gd-btn {
+  font-size: 13px;
+  color: var(--ds-acc);
+  background: var(--ds-card-alt);
+  border: 1px solid var(--ds-border-sub);
+  border-radius: 8px;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-family: inherit;
+}
+
 /* ── PER-CARD NOTES (v1.27.03) ─────────────────────────────────────────────
    Same panel geometry as .card-info so the two feel like one mechanism: it
    covers the card, it closes with the same cross, and it stops the card's
