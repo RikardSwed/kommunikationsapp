@@ -505,6 +505,27 @@ body.pb-enabled .divider::after {
   user-select: none;
 }
 
+/* ── NATIVE TOP SPACING (v1.27.10) ─────────────────────────────────────────
+   In a browser the page sits inside browser chrome and the top of the layout
+   has room above it. In the Capacitor build the web view is full screen, so
+   the same layout starts higher up and the top row reads as cramped.
+
+   The extra room is therefore applied ONLY in the native build. app-core.js
+   puts `ds-native` on <html> when Capacitor is present; nothing changes in
+   the browser, which is why the web app has always looked right.
+
+   ONE NUMBER TUNES IT: --ds-native-top. Raise or lower it and every top row
+   moves together. It is added on top of whatever the element already had.
+
+   If the status bar ever OVERLAPS the content rather than merely crowding it,
+   this is the wrong fix and the real one is env(safe-area-inset-top) — the
+   bottom inset is already handled that way further down this file. */
+:root { --ds-native-top: 10px; }
+
+.ds-native .topbar      { padding-top: calc(16px + var(--ds-native-top)); }
+.ds-native .lib-banner  { padding-top: calc(18px + var(--ds-native-top)); }
+.ds-native .dash-hero   { padding-top: calc(34px + var(--ds-native-top)); }
+
 /* ── GUIDES (v1.27.08) ─────────────────────────────────────────────────────
    The in-app walkthroughs. They reuse the pack-intro screen and its .ob-*
    classes wholesale; everything here is the illustration layer on top.
