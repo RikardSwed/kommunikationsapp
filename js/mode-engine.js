@@ -606,15 +606,34 @@ const DS = (function () {
         return plugin.speak(req).catch(() => {});
       }
 
+      // The Web Speech path. Android's WebView has historically shipped
+      // without window.speechSynthesis, or with one that returns an empty
+      // voice list — and an unguarded call there throws a ReferenceError that
+      // takes down whatever was calling it. Fail quietly and say why instead:
+      // a silent handsfree session is bad, a dead screen is worse.
+      if (!window.speechSynthesis || typeof window.SpeechSynthesisUtterance !== 'function') {
+        lastError = 'no speech engine on this platform (no window.speechSynthesis)';
+        return Promise.resolve();
+      }
       return new Promise(resolve => {
-        const utt = new SpeechSynthesisUtterance(text);
+        let utt;
+        try {
+          utt = new SpeechSynthesisUtterance(text);
+        } catch (e) {
+          lastError = 'SpeechSynthesisUtterance failed: ' + (e && e.message ? e.message : e);
+          return resolve();
+        }
         utt.lang = 'en-US';
         utt.rate = rate;
         const voice = pickVoice(pick);
         if (voice) utt.voice = voice;
         utt.onend = () => resolve();
         utt.onerror = () => resolve();
-        speechSynthesis.speak(utt);
+        try { speechSynthesis.speak(utt); }
+        catch (e) {
+          lastError = 'speechSynthesis.speak failed: ' + (e && e.message ? e.message : e);
+          resolve();
+        }
       });
     }
 
@@ -770,7 +789,11 @@ const DS = (function () {
   })();
 
   function pickVoice(gender) {
-    const voices = cachedVoices.length ? cachedVoices : speechSynthesis.getVoices();
+    // getVoices() on a missing engine is a ReferenceError, not a null — see
+    // the note in TTS.speak(). Everything downstream copes with null.
+    const voices = cachedVoices.length
+      ? cachedVoices
+      : (window.speechSynthesis ? speechSynthesis.getVoices() : []);
     // Only ever consider real speaking voices — without this filter a missing
     // preferred name could fall through to Albert or Bad News and read the
     // cards in a novelty voice.

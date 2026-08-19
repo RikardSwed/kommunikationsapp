@@ -45,8 +45,11 @@ if (_hfVoiceDebugBtn) _hfVoiceDebugBtn.addEventListener('click', async () => {
       + DS.tts.voices().map(v => v.name + '  —  ' + v.lang).join('\n'));
     return;
   }
-  const voices = speechSynthesis.getVoices();
-  const en = voices.filter(v => v.lang.startsWith('en'))
+  // Android's WebView may have no speechSynthesis at all. This button exists
+  // to explain a broken engine, so it must not itself throw on the platform
+  // where the engine is most likely to be missing.
+  const voices = window.speechSynthesis ? speechSynthesis.getVoices() : [];
+  const en = voices.filter(v => v.lang && v.lang.startsWith('en'))
                    .filter(v => !DS.tts || DS.tts.isRealVoice(v.name))
                    .map(v => v.name).join('\n');
   const why = d
@@ -251,6 +254,37 @@ applyHfInputCounterVisibility();
       if (saved !== null) el.checked = saved === 'true';
       // Save on change
       el.addEventListener('change', () => localStorage.setItem(key, el.checked));
+    });
+  });
+})();
+
+// ─── Persist the remaining HF training settings ─────────────────────────
+// Previously ONLY the shuffle toggles were saved, so Card back, Explainer,
+// Loop and the pause / rate / max-inputs selects reset to their HTML defaults
+// on every app launch. In the native app — where you close the app between
+// runs — a setting you had turned off silently came back on, which looked like
+// "the setting won't turn off". Persist them per prefix, the same way shuffle
+// is. (Guide text is stored separately, per pack, in mode-engine.js.)
+(function persistHfControls() {
+  const prefixes = ['hf', 'hfMem', 'hfChall', 'hfFlow', 'hfMind', 'hfColl'];
+  const checkboxes = ['Explanation', 'CardBack', 'LoopStrategy'];
+  const selects    = ['ThinkPause', 'GenPause', 'Rate', 'MaxInputs'];
+  prefixes.forEach(p => {
+    checkboxes.forEach(s => {
+      const el = document.getElementById(p + s);
+      if (!el) return;
+      const key = 'hfSet:' + p + s;
+      const saved = localStorage.getItem(key);
+      if (saved !== null) el.checked = saved === 'true';
+      el.addEventListener('change', () => localStorage.setItem(key, el.checked));
+    });
+    selects.forEach(s => {
+      const el = document.getElementById(p + s);
+      if (!el) return;
+      const key = 'hfSet:' + p + s;
+      const saved = localStorage.getItem(key);
+      if (saved !== null) el.value = saved;
+      el.addEventListener('change', () => localStorage.setItem(key, el.value));
     });
   });
 })();
