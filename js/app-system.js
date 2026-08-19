@@ -216,16 +216,135 @@ function collectFeedbackAndNotes() {
 }
 window.collectFeedbackAndNotes = collectFeedbackAndNotes;
 
-function _download(text, filename, mime) {
-  const blob = new Blob([text], { type: mime });
-  const url  = URL.createObjectURL(blob);
-  const a    = document.createElement('a');
-  a.href     = url;
-  a.download = filename;
-  a.click();
-  setTimeout(() => URL.revokeObjectURL(url), 1000);
+// ─── EXPORT — THREE WAYS OUT, IN ORDER OF USEFULNESS (v1.27.11) ──────────────
+//
+// `<a download>` alone was a silent failure. In an installed app — iOS PWA,
+// TestFlight build, Android APK — the WebView has nowhere to put a file, so
+// the click does nothing at all: no file, no error, no toast. The pack-tag
+// export was rewritten as a copyable modal for exactly this reason (see the
+// comment further down this file); the notes and ratings exports were not,
+// which meant a beta tester could press "Export" and get silence.
+//
+// Three tiers, tried in order:
+//   1. navigator.share() with a real File — the share sheet on a phone, so a
+//      tester can mail the file to me in two taps. Best case, and the only
+//      one that produces an actual file on iOS.
+//   2. <a download> — desktop browsers, where it has always worked. Skipped
+//      when we can tell we are installed, because there it is the silent case.
+//   3. A copyable modal — works literally everywhere, including Android
+//      WebView, which implements neither share nor download.
+//
+// A share that the user cancels is NOT a failure and must not fall through to
+// the modal; anything else does fall through, so there is no path that ends
+// in nothing happening.
+
+function _dsIsInstalled() {
+  if (document.documentElement.classList.contains('ds-native')) return true;
+  if (window.navigator.standalone === true) return true;
+  try {
+    if (window.matchMedia && window.matchMedia('(display-mode: standalone)').matches) return true;
+  } catch (e) {}
+  return false;
 }
-window._dsDownload = _download;
+
+function _dsCanShareFile(text, filename, mime) {
+  try {
+    if (typeof File !== 'function' || !navigator.share || !navigator.canShare) return false;
+    return navigator.canShare({ files: [new File([text], filename, { type: mime })] });
+  } catch (e) { return false; }
+}
+
+// The universal fallback. Also reachable on its own, so a tester who cancels
+// the share sheet by accident is not stuck.
+function _dsExportModal(text, title, filename) {
+  let ov = document.getElementById('dsExportOverlay');
+  if (!ov) {
+    ov = document.createElement('div');
+    ov.id = 'dsExportOverlay';
+    ov.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,0.45);z-index:10000;display:flex;align-items:center;justify-content:center;padding:20px;';
+    ov.innerHTML =
+      '<div style="background:var(--ds-card,#fff);border-radius:16px;max-width:520px;width:100%;max-height:80vh;display:flex;flex-direction:column;padding:16px;box-shadow:0 8px 32px rgba(0,0,0,0.25);">' +
+        '<div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:4px;">' +
+          '<strong id="dsExportTitle" style="font-size:15px;"></strong>' +
+          '<button id="dsExportClose" aria-label="Close" style="border:none;background:none;font-size:18px;cursor:pointer;padding:4px 8px;">✕</button>' +
+        '</div>' +
+        '<div style="font-size:12px;color:var(--ds-txt3,#777);margin-bottom:10px;">Copy this and paste it into an email or a note.</div>' +
+        '<textarea id="dsExportText" readonly spellcheck="false" style="flex:1;min-height:220px;font-family:ui-monospace,Menlo,monospace;font-size:12px;border:1px solid var(--ds-border,#ddd);border-radius:10px;padding:10px;resize:none;-webkit-user-select:text;user-select:text;"></textarea>' +
+        '<div style="display:flex;gap:8px;margin-top:12px;">' +
+          '<button id="dsExportCopy" style="flex:1;font-size:14px;font-weight:600;color:#fff;background:#2c7a4b;border:none;border-radius:10px;padding:10px;cursor:pointer;">Copy to clipboard</button>' +
+          '<button id="dsExportShare" style="display:none;font-size:14px;font-weight:600;color:var(--ds-txt,#333);background:var(--ds-bg2,#f0f0f0);border:1px solid var(--ds-border,#ddd);border-radius:10px;padding:10px 14px;cursor:pointer;">Share…</button>' +
+        '</div>' +
+      '</div>';
+    document.body.appendChild(ov);
+    ov.addEventListener('click', e => { if (e.target === ov) ov.style.display = 'none'; });
+    ov.querySelector('#dsExportClose').addEventListener('click', () => { ov.style.display = 'none'; });
+    ov.querySelector('#dsExportCopy').addEventListener('click', () => {
+      const ta = ov.querySelector('#dsExportText');
+      const done = () => { if (window.showToast) showToast('Copied to clipboard.'); };
+      const manual = () => {
+        ta.focus(); ta.select();
+        try { document.execCommand('copy'); done(); }
+        catch (e) { if (window.showToast) showToast('Copy failed — select the text manually.'); }
+      };
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(ta.value).then(done).catch(manual);
+      } else manual();
+    });
+    // Sharing plain text works in places where sharing a File does not.
+    ov.querySelector('#dsExportShare').addEventListener('click', () => {
+      const ta = ov.querySelector('#dsExportText');
+      try {
+        navigator.share({ title: ov.querySelector('#dsExportTitle').textContent, text: ta.value })
+          .catch(() => {});
+      } catch (e) {}
+    });
+  }
+  ov.querySelector('#dsExportTitle').textContent = title || filename || 'Export';
+  ov.querySelector('#dsExportText').value = text;
+  ov.querySelector('#dsExportShare').style.display = navigator.share ? '' : 'none';
+  ov.style.display = 'flex';
+}
+window._dsExportModal = _dsExportModal;
+
+// Returns which route it took — 'share' | 'download' | 'modal' — so a test can
+// assert on the decision without a real share sheet.
+function _dsExport(text, filename, mime, title) {
+  const label = title || filename;
+
+  if (_dsCanShareFile(text, filename, mime)) {
+    try {
+      const file = new File([text], filename, { type: mime });
+      const p = navigator.share({ files: [file], title: label });
+      if (p && p.catch) p.catch(err => {
+        // Cancelling the sheet is a decision, not a failure.
+        if (err && (err.name === 'AbortError' || err.name === 'NotAllowedError')) return;
+        _dsExportModal(text, label, filename);
+      });
+      return 'share';
+    } catch (e) { /* fall through */ }
+  }
+
+  if (!_dsIsInstalled() && 'download' in document.createElement('a')) {
+    try {
+      const blob = new Blob([text], { type: mime });
+      const url  = URL.createObjectURL(blob);
+      const a    = document.createElement('a');
+      a.href     = url;
+      a.download = filename;
+      a.click();
+      setTimeout(() => URL.revokeObjectURL(url), 1000);
+      return 'download';
+    } catch (e) { /* fall through */ }
+  }
+
+  _dsExportModal(text, label, filename);
+  return 'modal';
+}
+
+// Kept so older call sites keep working unchanged.
+function _download(text, filename, mime) { return _dsExport(text, filename, mime, filename); }
+window._dsDownload = _dsExport;
+window._dsExport   = _dsExport;
 
 // Developer export — ratings AND notes, JSON, one entry per card side.
 if (feedbackExportBtn) feedbackExportBtn.addEventListener('click', () => {
@@ -245,9 +364,10 @@ if (feedbackExportBtn) feedbackExportBtn.addEventListener('click', () => {
     },
     entries,
   };
-  _download(JSON.stringify(payload, null, 2),
+  _dsExport(JSON.stringify(payload, null, 2),
             `deckstack_feedback_${new Date().toISOString().slice(0, 10)}.json`,
-            'application/json');
+            'application/json',
+            'Ratings and notes — JSON');
 });
 
 
@@ -297,9 +417,10 @@ if (notesExportBtn) notesExportBtn.addEventListener('click', () => {
       out.push('');
     });
   });
-  window._dsDownload(out.join('\n'),
+  window._dsExport(out.join('\n'),
     'deckstack_notes_' + new Date().toISOString().slice(0, 10) + '.md',
-    'text/markdown');
+    'text/markdown',
+    'My Deckstack notes');
 });
 
 // ─── CLEAR RATINGS AND NOTES (v1.27.03) ──────────────────────────────────────
@@ -3233,11 +3354,10 @@ function exportAlSuggestions() {
     }
   }
 
-  const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
-  const url  = URL.createObjectURL(blob);
-  const a    = document.createElement('a');
-  a.href = url; a.download = `deckstack-al-suggestions-${Date.now()}.json`;
-  a.click(); URL.revokeObjectURL(url);
+  _dsExport(JSON.stringify(data, null, 2),
+            `deckstack-al-suggestions-${Date.now()}.json`,
+            'application/json',
+            'Access-level suggestions — JSON');
 }
 
 const alExportBtn = document.getElementById('alExportBtn');
@@ -4412,11 +4532,10 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
         meta: { exportedAt: new Date().toISOString(), version: typeof VERSION !== 'undefined' ? VERSION : '' },
         tagEdits: edits,
       };
-      const blob = new Blob([JSON.stringify(out, null, 2)], { type: 'application/json' });
-      const url  = URL.createObjectURL(blob);
-      const a    = document.createElement('a');
-      a.href = url; a.download = 'deckstack-tag-edits-' + Date.now() + '.json';
-      a.click(); URL.revokeObjectURL(url);
+      _dsExport(JSON.stringify(out, null, 2),
+                'deckstack-tag-edits-' + Date.now() + '.json',
+                'application/json',
+                'Tag edits — JSON');
     });
   }
 

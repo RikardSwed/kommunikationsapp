@@ -5,6 +5,21 @@ const EDITOR_VERSION = 'v1.12.0';
 const STORAGE_KEY    = 'ds_editor_packs';
 const ACTIVE_KEY     = 'ds_editor_active';
 
+// Route every export through app-system's three-tier helper when it is loaded
+// (share sheet → download → copyable modal). The editor is usually opened on a
+// desktop, where the old <a download> path was fine, but it is reachable from
+// a phone too — and there a bare download is a silent no-op. The legacy branch
+// keeps admin.html working if it is ever opened without app-system.js.
+function _edExport(text, filename, title) {
+  if (window._dsExport) return window._dsExport(text, filename, 'application/json', title);
+  const blob = new Blob([text], { type: 'application/json' });
+  const url  = URL.createObjectURL(blob);
+  const a    = document.createElement('a');
+  a.href = url; a.download = filename;
+  a.click(); URL.revokeObjectURL(url);
+  return 'download';
+}
+
 // ── MODE DEFINITIONS ──────────────────────────────────────────────────────────
 
 const MODES = [
@@ -293,11 +308,9 @@ function exportProgram(program) {
     data: program,
     packs: resolved.packs.map(p => JSON.parse(exportPack(p))),
   };
-  const blob = new Blob([JSON.stringify(out, null, 2)], { type: 'application/json' });
-  const url  = URL.createObjectURL(blob);
-  const a    = document.createElement('a');
-  a.href = url; a.download = `deckstack-program-${program.id}-${Date.now()}.json`;
-  a.click(); URL.revokeObjectURL(url);
+  _edExport(JSON.stringify(out, null, 2),
+            `deckstack-program-${program.id}-${Date.now()}.json`,
+            'Program export — JSON');
   return { packs: resolved.packs.length, missing: resolved.missing };
 }
 
@@ -354,11 +367,9 @@ function resolveGuides(modeData) {
 }
 
 function downloadExport(pack) {
-  const blob = new Blob([exportPack(pack)], { type: 'application/json' });
-  const url  = URL.createObjectURL(blob);
-  const a    = document.createElement('a');
-  a.href = url; a.download = `deckstack-pack-${pack.key}-${Date.now()}.json`;
-  a.click(); URL.revokeObjectURL(url);
+  _edExport(exportPack(pack),
+            `deckstack-pack-${pack.key}-${Date.now()}.json`,
+            'Pack export — JSON');
 }
 
 // BUNDLE EXPORT (v1.10.0)
@@ -396,12 +407,9 @@ function buildBundle(packs, programs) {
 
 function downloadBundle(packs, programs) {
   const bundle = buildBundle(packs, programs);
-  const blob = new Blob([JSON.stringify(bundle, null, 2)], { type: 'application/json' });
-  const url  = URL.createObjectURL(blob);
-  const a    = document.createElement('a');
-  a.href = url;
-  a.download = `deckstack-bundle-${bundle.meta.packs}p${bundle.meta.programs}g-${Date.now()}.json`;
-  a.click(); URL.revokeObjectURL(url);
+  _edExport(JSON.stringify(bundle, null, 2),
+            `deckstack-bundle-${bundle.meta.packs}p${bundle.meta.programs}g-${Date.now()}.json`,
+            'Bundle export — JSON');
   return bundle.meta;
 }
 

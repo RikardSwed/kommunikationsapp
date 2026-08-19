@@ -5,7 +5,7 @@
 // (DS.createCardMode / DS.createHandsfreeMode) and are declared in
 // app-modes.js and app-handsfree.js.
 
-const VERSION = 'v1.27.10';
+const VERSION = 'v1.27.12';
 
 // Keep every version label in the UI in sync with VERSION (v1.26.44).
 // The hardcoded strings in index.html are only fallbacks — this runs at
@@ -158,8 +158,23 @@ function hideAll() {
 // Track whether mode screen was opened from dashboard or library
 let _modeOrigin = 'library';
 
-// Pack navigation context
-let _packContext = null; // { packs: [{key,label}], index: N } | null
+// ─── NAVIGATION CONTEXT (v1.27.12) ───────────────────────────────────────────
+//
+// The forward arrow on the mode screen walks a list that is captured when the
+// pack is opened. What that list IS depends on where you opened the pack from,
+// and getting it wrong is invisible: the arrow still works, it just takes you
+// somewhere that has nothing to do with what you were looking at.
+//
+// The list is a list of STEPS, not packs, because a program is not a flat run
+// of packs — it is packs interrupted by checkpoints. A step is either:
+//
+//   { type: 'pack',       key, label }
+//   { type: 'checkpoint', programId, sectionIndex, label }
+//
+// Library, Topics and Folders produce pack-only lists. Programs produce the
+// interleaved one, built in app-ui.js, which is what makes the arrow able to
+// hand you a test at the right moment instead of skipping past it.
+let _packContext = null; // { kind, steps: [...], index: N } | null
 
 function navToHome() {
   // Layered stack: make the origin tab active/visible BEFORE the slide-out,
@@ -389,22 +404,41 @@ function showModeScreen(key, label) {
   if (window.maybeShowPackIntro) maybeShowPackIntro(key);
 }
 
-// Set the navigation context (called by Library, Folders, Programs)
+// Set the navigation context (called by Library, Topics, Folders, Programs)
 let _contextJustSet = false;
-function setPackContext(packs, currentKey) {
-  const index = packs.findIndex(p => p.key === currentKey);
-  _packContext = (index >= 0 && packs.length > 1) ? { packs, index } : null;
+
+// The general form. `kind` is for readability and tests; the behaviour is
+// entirely in the steps.
+function setNavContext(steps, currentKey, kind) {
+  const list  = (steps || []).filter(Boolean);
+  const index = list.findIndex(s => s.type === 'pack' && s.key === currentKey);
+  _packContext = (index >= 0 && list.length > 1)
+    ? { kind: kind || 'library', steps: list, index }
+    : null;
   _contextJustSet = true;
   updateNextBtn();
 }
+window.setNavContext = setNavContext;
 
-// Find the next ACCESSIBLE pack in the context (locked packs are skipped,
-// so the arrow never runs into an upgrade toast — list 3 #1)
+// The old shape — a plain array of packs. Kept because Folders and the
+// library fallback both speak it, and it reads better at those call sites.
+function setPackContext(packs, currentKey, kind) {
+  setNavContext(
+    (packs || []).map(p => ({ type: 'pack', key: p.key, label: p.label })),
+    currentKey,
+    kind || 'library'
+  );
+}
+
+// Find the next reachable step. Locked packs are skipped so the arrow never
+// runs into an upgrade toast. Checkpoints are always reachable — the program
+// step list is built with the unreachable ones already left out.
 function _nextAccessibleIndex() {
   if (!_packContext) return -1;
-  for (let i = _packContext.index + 1; i < _packContext.packs.length; i++) {
-    const p = _packContext.packs[i];
-    if (!window.accessLevel || accessLevel.canAccess(p.key)) return i;
+  for (let i = _packContext.index + 1; i < _packContext.steps.length; i++) {
+    const s = _packContext.steps[i];
+    if (s.type === 'checkpoint') return i;
+    if (!window.accessLevel || accessLevel.canAccess(s.key)) return i;
   }
   return -1;
 }
@@ -416,13 +450,30 @@ function updateNextBtn() {
   btn.style.visibility = (_nextAccessibleIndex() >= 0) ? 'visible' : 'hidden';
 }
 
-// Navigate to next pack in context
+// Arrowing onto a checkpoint leaves the mode screen the ordinary way and lands
+// in the program, with the quiz on top of it. Doing it any other way would
+// leave the mode screen sitting underneath the quiz, and "Continue" would drop
+// the user back into a pack they had already finished with.
+function _goToCheckpoint(step) {
+  if (typeof showLibraryTab === 'function') showLibraryTab('programs');
+  _modeOrigin = 'library';
+  if (window.progEndSession) progEndSession();
+  navToHome();
+  // navToHome's slide-out is 320ms; start the quiz once it has landed.
+  setTimeout(() => {
+    if (window.dsStartCheckpoint) dsStartCheckpoint(step.programId, step.sectionIndex);
+  }, 340);
+}
+
+// Navigate to the next step in context — the next pack, or the next checkpoint
 function goNextPack() {
   if (!_packContext) return;
   // Skip locked packs entirely — jump to the next accessible one
   const nextIdx = _nextAccessibleIndex();
   if (nextIdx < 0) return;
-  const next = _packContext.packs[nextIdx];
+  const next = _packContext.steps[nextIdx];
+  _packContext.index = nextIdx;
+  if (next.type === 'checkpoint') { _goToCheckpoint(next); return; }
   // Snapshot the current mode screen as a static ghost underneath, so the
   // incoming mode screen slides in OVER it instead of revealing the tab
   // screen behind. IDs are stripped so getElementById never hits the ghost.
@@ -436,7 +487,6 @@ function goNextPack() {
     _ms.parentNode.insertBefore(ghost, _ms);
     setTimeout(() => { if (ghost.parentNode) ghost.parentNode.removeChild(ghost); }, 360);
   }
-  _packContext.index = nextIdx;
   // Update state without triggering navToMode (avoids Library flash)
   activeCollectionKey   = next.key;
   activeCollectionLabel = next.label;
@@ -634,6 +684,31 @@ function renderTopics() {
 }
 renderTopics();
 
+// Which list should the forward arrow walk for THIS card?
+//
+// A card opened from inside a topic must walk that topic, not the library.
+// It used to walk the library, because topics were lumped in with the Packs
+// tab here — so opening "Handling Criticism" from the Listening topic and
+// pressing → gave you whatever happened to come next alphabetically in the
+// whole library. Folders and programs set their own context at their own
+// click sites and are left alone.
+function _setContextForCard(el, key) {
+  const topicList = el.closest('.topic-packs');
+  if (topicList) {
+    const packs = Array.from(topicList.querySelectorAll('.collection-card[data-key]'))
+      .filter(c => c.style.display !== 'none')
+      .map(c => ({ key: c.dataset.key, label: c.dataset.label }))
+      .filter(p => p.key && p.label);
+    setPackContext(packs, key, 'topic');
+    return true;
+  }
+  if (el.closest('#libTabPacks')) {
+    setPackContext(_buildLibPackList(), key, 'library');
+    return true;
+  }
+  return false;
+}
+
 document.querySelectorAll('.collection-card').forEach(el => {
   const key   = el.dataset.key;
   const label = el.dataset.label;
@@ -642,18 +717,13 @@ document.querySelectorAll('.collection-card').forEach(el => {
   el.addEventListener('touchmove',  e => { if (Math.abs(e.touches[0].clientY - cStartY) > 8) cMoved = true; }, { passive: true });
   el.addEventListener('touchend',   e => {
     if (!cMoved) {
-      // Set context only if clicked from Packs tab (not folders/programs which set their own)
-      if (el.closest('#libTabPacks') || el.closest('#libTabTopics')) {
-        setPackContext(_buildLibPackList(), key);
-      }
+      _setContextForCard(el, key);
       showModeScreen(key, label);
     }
   });
   el.addEventListener('click', () => {
     if (cDidTouch) { cDidTouch = false; return; }
-    if (el.closest('#libTabPacks') || el.closest('#libTabTopics')) {
-      setPackContext(_buildLibPackList(), key);
-    }
+    _setContextForCard(el, key);
     showModeScreen(key, label);
   });
 });

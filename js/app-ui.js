@@ -34,14 +34,13 @@
     }
   });
 
-  // Pack cards inside topics
-  document.querySelectorAll('#libTabTopics .collection-card').forEach(card => {
-    let cStartY = 0, cMoved = false;
-    card.addEventListener('touchstart', e => { cStartY = e.touches[0].clientY; cMoved = false; }, { passive: true });
-    card.addEventListener('touchmove',  e => { if (Math.abs(e.touches[0].clientY - cStartY) > 8) cMoved = true; }, { passive: true });
-    card.addEventListener('touchend', () => { if (!cMoved) showModeScreen(card.dataset.key, card.dataset.label); });
-    card.addEventListener('click', () => showModeScreen(card.dataset.key, card.dataset.label));
-  });
+  // Pack cards inside topics are bound in app-core.js, together with every
+  // other .collection-card, and that binding sets the topic as the forward
+  // arrow's context. This file used to bind them a SECOND time, without a
+  // context — and because app-core runs first, the second handler's
+  // showModeScreen() call landed on the "no context was set" branch and
+  // replaced the topic list with the whole library. One tap, two opens, and
+  // the arrow silently pointed somewhere else. Do not re-add it.
 })();
 
 // ─── LIBRARY SUB-NAV ────────────────────────────────────────────────────────
@@ -2250,6 +2249,52 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
     return true;
   }
 
+  // ── The forward arrow's route through a program (v1.27.12) ───────────────────
+  //
+  // A program is not a flat list of packs. It is packs interrupted by
+  // checkpoints, and the checkpoint is the point — it is what releases the
+  // next part. So the arrow walks the program in the program's own order:
+  //
+  //   pack → pack → checkpoint → pack → pack → checkpoint → …
+  //
+  // Two rules, both deliberate:
+  //   · A checkpoint already passed is left out. On a second pass through a
+  //     program the arrow runs straight through; the test is still there in
+  //     the program view if you want to retake it.
+  //   · The list stops at the first wall — a section behind Pro, or one whose
+  //     previous checkpoint has not been passed. The arrow simply disappears
+  //     there rather than offering a step that would be refused.
+  //
+  // Built fresh at every open, so it always reflects current progress.
+  function buildProgramSteps(program) {
+    const A       = window.accessLevel || {};
+    const progVis = A.programVisibility ? A.programVisibility(program.id) : 'available';
+    const secVis  = sec => (A.sectionVisibility ? A.sectionVisibility(program, sec) : progVis);
+    const steps   = [];
+    for (let si = 0; si < program.sections.length; si++) {
+      const section = program.sections[si];
+      if (secVis(section) !== 'available') break;
+      if (!isSectionUnlocked(program, si)) break;
+      (section.packs || []).forEach(p => steps.push({ type: 'pack', key: p.key, label: p.label }));
+      const cp = section.checkpoint;
+      if (cp && !isCheckpointPassed(program.id, cp.id)) {
+        steps.push({ type: 'checkpoint', programId: program.id, sectionIndex: si, label: cp.title });
+      }
+    }
+    return steps;
+  }
+
+  // Entry point for the arrow: render the program behind the quiz, then run it.
+  window.dsStartCheckpoint = function (programId, sectionIndex) {
+    if (typeof programsData === 'undefined') return;
+    const program = programsData.find(p => p.id === programId);
+    if (!program) return;
+    const section = program.sections[sectionIndex];
+    if (!section || !section.checkpoint) return;
+    renderProgramDetail(program);
+    startCheckpoint(program, section.checkpoint, sectionIndex);
+  };
+
   // ── Render program list ──────────────────────────────────────────────────────
   function renderProgramList() {
     const container = document.getElementById('libTabPrograms');
@@ -2431,12 +2476,12 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
     container.querySelectorAll('.prog-pack-card').forEach(card => {
       if (!card.classList.contains('prog-card--locked')) {
         card.addEventListener('click', () => {
-          // Build context from all unlocked packs in this section
-          const section = card.closest('.prog-section');
-          const sectionPacks = section
-            ? Array.from(section.querySelectorAll('.prog-pack-card:not(.prog-card--locked)')).map(c => ({ key: c.dataset.key, label: c.dataset.label }))
-            : [];
-          if (window.setPackContext && sectionPacks.length > 1) setPackContext(sectionPacks, card.dataset.key);
+          // The arrow follows the whole program from here, checkpoints and all,
+          // not just the section this card happens to sit in. (It used to take
+          // the section only — and a one-pack section set no context at all,
+          // which dropped the user into the library-wide fallback and walked
+          // them straight out of the program.)
+          if (window.setNavContext) setNavContext(buildProgramSteps(program), card.dataset.key, 'program');
           showModeScreen(card.dataset.key, card.dataset.label);
         });
       }
