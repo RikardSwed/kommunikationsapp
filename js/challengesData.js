@@ -419,73 +419,6 @@ const challengesCollections = {
       ]
     },
   ],
-  firststrategies: [
-    {
-      name: "You Do Not Know Them At All",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
-      description: "A stranger, a first meeting, a room where everybody else already knows each other. Nothing has been said yet, so there is nothing to work with except what is in front of you both.\n\nOpening Statement does most of the work here, and Answer With a Hook does the rest — because a first conversation with a stranger almost always turns into questions about you within a minute.\n\nThe one thing to avoid is the interview. Two questions in a row from the same person makes anyone feel examined, and it also means you have given them nothing to ask you about.\n\nMindset: ordinary is the target. The remark does not have to be good, it has to be true.",
-      inputs: [
-        { q: "You are next to someone at a counter and neither of you has spoken.", a: "\"I still have no idea what half of these are.\" [Opening Statement]", bundle: 'free' },
-        { q: "They answer your remark and mention where they have come from.", a: "\"All the way from Kalmar? That's a morning gone.\" [Follow the Thread]", bundle: 'free' },
-        { q: "They ask what you do, thirty seconds in.", a: "\"I teach English. Mostly teenagers, which is as loud as it sounds.\" [Answer With a Hook]", bundle: 'free' },
-        { q: "You have asked two questions in a row and it is starting to feel like an interview.", a: "\"I've been interrogating you. My week's been strange too — I got locked out twice.\" [Answer With a Hook]", bundle: 'free' },
-        { q: "You want to say something and everything you think of sounds trivial.", a: "\"That queue has not moved once.\" [Opening Statement]", bundle: 'free' },
-      ]
-    },
-    {
-      name: "The Conversation Has Stalled",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
-      description: "It was going fine and now it is not. Both of you are looking for something new, which is the hardest possible way to find something to say.\n\nFollow the Thread is the way out, and the thread does not have to be recent. Anything they said in the last ten minutes is still open, and going back to it reads as interest rather than as a rescue.\n\nAnswer With a Hook is the other half of the fix, because a stall is often caused by a closed answer three exchanges ago that left the other person with nowhere to go.\n\nMindset: do not look for a new subject. Look backwards.",
-      inputs: [
-        { q: "There has been a pause and you are both aware of it.", a: "\"You mentioned the new place earlier — how's that going?\" [Follow the Thread]", bundle: 'free' },
-        { q: "You just gave a one-word answer and the conversation died on it.", a: "\"Actually, that's not the whole answer — it's been a strange week.\" [Answer With a Hook]", bundle: 'free' },
-        { q: "You are searching for a fresh topic and finding nothing.", a: "\"Go back to the thing about your brother — did he actually do it?\" [Follow the Thread]", bundle: 'free' },
-        { q: "The pause has gone on, and there is something in the room to use.", a: "\"They've moved all the furniture since last time.\" [Opening Statement]", bundle: 'free' },
-        { q: "They gave you a long answer and you are not sure which part to take.", a: "\"So the whole move happened in one week?\" [Say It Back]", bundle: 'free' },
-      ]
-    },
-    {
-      name: "They Asked You Something About Yourself",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
-      description: "The moment people handle worst. Someone turns the attention onto you — how are you, what do you do, how was the weekend — and the reflex is to say as little as possible and hand it straight back.\n\nAnswer With a Hook is the strategy, and the size of the hook is the only decision. One extra detail is plenty with a stranger. Something you care about is for people you want to know better.\n\nA Friendly No belongs here too, for the questions you would rather not answer. Declining a question works exactly like declining a request: clear, warm, no explanation needed.\n\nMindset: they asked because they want a conversation. Give them somewhere to go.",
-      inputs: [
-        { q: "Someone asks how you are and you are about to say \"fine\".", a: "\"Fine — well, fine apart from the drive here.\" [Answer With a Hook]", bundle: 'free' },
-        { q: "Someone asks about your weekend and you did nothing.", a: "\"Nothing at all, on purpose. It was excellent.\" [Answer With a Hook]", bundle: 'free' },
-        { q: "They ask something you would rather not go into.", a: "\"I'll skip that one if that's alright — ask me another time.\" [A Friendly No]", bundle: 'free' },
-        { q: "You answered, and the attention is still on you.", a: "\"That's me, anyway. You said you'd just got back — back from where?\" [Follow the Thread]", bundle: 'free' },
-        { q: "You want to answer honestly without making it heavy.", a: "\"Mixed, honestly. Good week at work, less good everywhere else.\" [Answer With a Hook]", bundle: 'free' },
-      ]
-    },
-    {
-      name: "They Want Something From You",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
-      description: "A request has arrived and you do not want to say yes. This is where people invent the vague no — \"maybe\", \"I'll see\", \"probably not\" — which feels kind and costs the other person a week.\n\nSay It Back first, especially when the request is complicated. It buys you a moment, and it means the no lands after they have been understood.\n\nThen the no, short and warm, and at most one reason. If there is a version you could do, Ask Plainly for it — as an offer, not an apology.\n\nMindset: soften the delivery, never the answer.",
-      inputs: [
-        { q: "The request has several parts and you want to be sure of it.", a: "\"So it's two weeks, starting Monday, on top of what I've got.\" [Say It Back]", bundle: 'free' },
-        { q: "You have decided, and you are about to say \"maybe\".", a: "\"I'll be honest rather than vague: no, not this time.\" [A Friendly No]", bundle: 'free' },
-        { q: "You could do part of it.", a: "\"Could I do the morning instead? I'd rather do half than none.\" [Ask Plainly]", bundle: 'free' },
-        { q: "You said no and they are waiting for a reason.", a: "\"It just doesn't work for me this month.\" [A Friendly No]", bundle: 'free' },
-        { q: "They give a reason for needing you specifically.", a: "\"You said it has to be someone who was there in March — why's that?\" [Follow the Thread]", bundle: 'free' },
-      ]
-    },
-    {
-      name: "You Want Something From Them",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
-      description: "You need something, and you have been putting it off, or hinting, or building a case in your head. Hinting is the failure mode: it protects you from hearing no, and it also almost never works.\n\nAsk Plainly is the whole strategy — one sentence, specific, then quiet. If they push back, Say It Back rather than repeating the ask, because the reason they give is often solvable and would never survive an argument.\n\nOpening Statement has a role too, when you need to raise something in a room where nothing has been said yet.\n\nMindset: asking is normal. You are giving them the chance to say yes.",
-      inputs: [
-        { q: "You have been hinting for a week and nothing has changed.", a: "\"I'll say it properly: could you do the shopping this week?\" [Ask Plainly]", bundle: 'free' },
-        { q: "You asked, and are now about to explain why.", a: "(stop — the question was already complete) [Ask Plainly]", bundle: 'free' },
-        { q: "They say no and give a reason.", a: "\"So it's the Wednesday stand-up that's the problem, not the hour.\" [Say It Back]", bundle: 'free' },
-        { q: "Their reason contains something worth asking about.", a: "\"You said it's the only time everyone's in — has that always been Wednesday?\" [Follow the Thread]", bundle: 'free' },
-        { q: "You want to make it easy for them to refuse.", a: "\"Could you take Thursday? Say if it doesn't work — I'll find someone.\" [Ask Plainly]", bundle: 'free' },
-      ]
-    },
-  ],
   startingconversations1: [
     {
       name: "They Look Busy or Closed Off",
@@ -4333,6 +4266,88 @@ const challengesCollections = {
         { q: "You feel yourself \"cracking\" under her intense eye contact.", a: "[Stay for 20 more seconds. Live with the nervousness until it becomes normal.] (The \"What Do I Want?\" Move - Internal)", bundle: 'pro' },
         { q: "A \"chode\" or another guy enters your set to steal the girl.", a: "\"This guy is awesome! He's got better game than me. Hold on, let me take some notes.\" (Handling the Posse - Reframe)", bundle: 'pro' },
         { q: "She says \"Nice to meet you\" in a way that ends the set.", a: "\"Wait, stop. I can't decide if I'm going to love you or hate you yet. You're trouble.\" (The \"What Do I Want?\" Move - Polarizer)", bundle: 'pro' },
+      ]
+    },
+  ],
+  firststrategies: [
+    {
+      name: "You Do Not Know Them At All",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible response, with the strategy in brackets.",
+      description: "A stranger, a first meeting, a room where everybody else already knows each other. Nothing has been said yet, so there is nothing to work with except what is in front of you both.\n\nOpening Statement does most of the work here, and Answer With a Hook does the rest — because a first conversation with a stranger almost always turns into questions about you within a minute.\n\nThe one thing to avoid is the interview. Two questions in a row from the same person makes anyone feel examined, and it also means you have given them nothing to ask you about.\n\nMindset: ordinary is the target. The remark does not have to be good, it has to be true.",
+      inputs: [
+        { q: "You are next to someone at a counter and neither of you has spoken.", a: "\"I still have no idea what half of these are.\" [Opening Statement]", bundle: 'free' },
+        { q: "They answer your remark and mention where they have come from.", a: "\"All the way from Kalmar? That's a morning gone.\" [Follow the Thread]", bundle: 'free' },
+        { q: "They ask what you do, thirty seconds in.", a: "\"I teach English. Mostly teenagers, which is as loud as it sounds.\" [Answer With a Hook]", bundle: 'free' },
+        { q: "You have asked two questions in a row and it is starting to feel like an interview.", a: "\"I've been interrogating you. My week's been strange too — I got locked out twice.\" [Answer With a Hook]", bundle: 'free' },
+        { q: "You want to say something and everything you think of sounds trivial.", a: "\"That queue has not moved once.\" [Opening Statement]", bundle: 'free' },
+        { q: "They tell you their name and it is gone by the time they finish the sentence.", a: "\"Say that again — it went straight out of my head.\" [Ask Plainly]", bundle: 'free' },
+        { q: "A third person joins and has missed everything said so far.", a: "\"We'd got as far as how long everybody's journey was.\" [Opening Statement]", bundle: 'free' },
+        { q: "They answer at length and you cannot tell which part they care about.", a: "\"So you came here for the job, and the rest followed?\" [Say It Back]", bundle: 'free' },
+      ]
+    },
+    {
+      name: "The Conversation Has Stalled",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible response, with the strategy in brackets.",
+      description: "It was going fine and now it is not. Both of you are looking for something new, which is the hardest possible way to find something to say.\n\nFollow the Thread is the way out, and the thread does not have to be recent. Anything they said in the last ten minutes is still open, and going back to it reads as interest rather than as a rescue.\n\nAnswer With a Hook is the other half of the fix, because a stall is often caused by a closed answer three exchanges ago that left the other person with nowhere to go.\n\nMindset: do not look for a new subject. Look backwards.",
+      inputs: [
+        { q: "There has been a pause and you are both aware of it.", a: "\"You mentioned the new place earlier — how's that going?\" [Follow the Thread]", bundle: 'free' },
+        { q: "You just gave a one-word answer and the conversation died on it.", a: "\"Actually, that's not the whole answer — it's been a strange week.\" [Answer With a Hook]", bundle: 'free' },
+        { q: "You are searching for a fresh topic and finding nothing.", a: "\"Go back to the thing about your brother — did he actually do it?\" [Follow the Thread]", bundle: 'free' },
+        { q: "The pause has gone on, and there is something in the room to use.", a: "\"They've moved all the furniture since last time.\" [Opening Statement]", bundle: 'free' },
+        { q: "They gave you a long answer and you are not sure which part to take.", a: "\"So the whole move happened in one week?\" [Say It Back]", bundle: 'free' },
+        { q: "The subject has run out and neither of you has started another.", a: "\"You said earlier you'd only just moved back. Back from where?\" [Follow the Thread]", bundle: 'free' },
+        { q: "You want to speak but everything you think of sounds like changing the subject.", a: "\"Sorry — I'm still on the boat. Did you actually buy it?\" [Follow the Thread]", bundle: 'free' },
+        { q: "They ask a closed question and it dies on the spot.", a: "\"Yes — and badly. I've been up since five because of it.\" [Answer With a Hook]", bundle: 'free' },
+      ]
+    },
+    {
+      name: "They Asked You Something About Yourself",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible response, with the strategy in brackets.",
+      description: "The moment people handle worst. Someone turns the attention onto you — how are you, what do you do, how was the weekend — and the reflex is to say as little as possible and hand it straight back.\n\nAnswer With a Hook is the strategy, and the size of the hook is the only decision. One extra detail is plenty with a stranger. Something you care about is for people you want to know better.\n\nA Friendly No belongs here too, for the questions you would rather not answer. Declining a question works exactly like declining a request: clear, warm, no explanation needed.\n\nMindset: they asked because they want a conversation. Give them somewhere to go.",
+      inputs: [
+        { q: "Someone asks how you are and you are about to say \"fine\".", a: "\"Fine — well, fine apart from the drive here.\" [Answer With a Hook]", bundle: 'free' },
+        { q: "Someone asks about your weekend and you did nothing.", a: "\"Nothing at all, on purpose. It was excellent.\" [Answer With a Hook]", bundle: 'free' },
+        { q: "They ask something you would rather not go into.", a: "\"I'll skip that one if that's alright — ask me another time.\" [A Friendly No]", bundle: 'free' },
+        { q: "You answered, and the attention is still on you.", a: "\"That's me, anyway. You said you'd just got back — back from where?\" [Follow the Thread]", bundle: 'free' },
+        { q: "You want to answer honestly without making it heavy.", a: "\"Mixed, honestly. Good week at work, less good everywhere else.\" [Answer With a Hook]", bundle: 'free' },
+        { q: "They ask what you do and it is awkward to explain.", a: "\"Easier to say what my week looks like — teenagers and a broken photocopier.\" [Answer With a Hook]", bundle: 'free' },
+        { q: "They ask how something went, and it went badly.", a: "\"Not well, honestly. I'll spare you the details — I did learn something.\" [Answer With a Hook]", bundle: 'free' },
+        { q: "You have answered, and you would like the attention to move.", a: "\"That's genuinely all of it. You said you'd had a week too — what happened?\" [Follow the Thread]", bundle: 'free' },
+      ]
+    },
+    {
+      name: "They Want Something From You",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible response, with the strategy in brackets.",
+      description: "A request has arrived and you do not want to say yes. This is where people invent the vague no — \"maybe\", \"I'll see\", \"probably not\" — which feels kind and costs the other person a week.\n\nSay It Back first, especially when the request is complicated. It buys you a moment, and it means the no lands after they have been understood.\n\nThen the no, short and warm, and at most one reason. If there is a version you could do, Ask Plainly for it — as an offer, not an apology.\n\nMindset: soften the delivery, never the answer.",
+      inputs: [
+        { q: "The request has several parts and you want to be sure of it.", a: "\"So it's two weeks, starting Monday, on top of what I've got.\" [Say It Back]", bundle: 'free' },
+        { q: "You have decided, and you are about to say \"maybe\".", a: "\"I'll be honest rather than vague: no, not this time.\" [A Friendly No]", bundle: 'free' },
+        { q: "You could do part of it.", a: "\"Could I do the morning instead? I'd rather do half than none.\" [Ask Plainly]", bundle: 'free' },
+        { q: "You said no and they are waiting for a reason.", a: "\"It just doesn't work for me this month.\" [A Friendly No]", bundle: 'free' },
+        { q: "They give a reason for needing you specifically.", a: "\"You said it has to be someone who was there in March — why's that?\" [Follow the Thread]", bundle: 'free' },
+        { q: "They ask in front of other people and you can feel the pressure of it.", a: "\"Let me say it back so I've got it right — you need someone from Monday.\" [Say It Back]", bundle: 'free' },
+        { q: "You said no, and a week later they ask again.", a: "\"Still no, I'm afraid — nothing's changed. Thanks for asking again, though.\" [A Friendly No]", bundle: 'free' },
+        { q: "You would say yes to part of it but not all of it.", a: "\"Could I do the Thursday and not the Friday? That part I can manage.\" [Ask Plainly]", bundle: 'free' },
+      ]
+    },
+    {
+      name: "You Want Something From Them",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible response, with the strategy in brackets.",
+      description: "You need something, and you have been putting it off, or hinting, or building a case in your head. Hinting is the failure mode: it protects you from hearing no, and it also almost never works.\n\nAsk Plainly is the whole strategy — one sentence, specific, then quiet. If they push back, Say It Back rather than repeating the ask, because the reason they give is often solvable and would never survive an argument.\n\nOpening Statement has a role too, when you need to raise something in a room where nothing has been said yet.\n\nMindset: asking is normal. You are giving them the chance to say yes.",
+      inputs: [
+        { q: "You have been hinting for a week and nothing has changed.", a: "\"I'll say it properly: could you do the shopping this week?\" [Ask Plainly]", bundle: 'free' },
+        { q: "You asked, and are now about to explain why.", a: "(stop — the question was already complete) [Ask Plainly]", bundle: 'free' },
+        { q: "They say no and give a reason.", a: "\"So it's the Wednesday stand-up that's the problem, not the hour.\" [Say It Back]", bundle: 'free' },
+        { q: "Their reason contains something worth asking about.", a: "\"You said it's the only time everyone's in — has that always been Wednesday?\" [Follow the Thread]", bundle: 'free' },
+        { q: "You want to make it easy for them to refuse.", a: "\"Could you take Thursday? Say if it doesn't work — I'll find someone.\" [Ask Plainly]", bundle: 'free' },
+        { q: "You have written three paragraphs of explanation above the actual question.", a: "\"Could you look at this before Friday?\" — and delete the rest. [Ask Plainly]", bundle: 'free' },
+        { q: "They say yes, but they sound unsure.", a: "\"So it's a yes, but the timing is awkward. Have I got that right?\" [Say It Back]", bundle: 'free' },
+        { q: "You need to raise something in a room where nothing has been said yet.", a: "\"There's one thing I'd like to get to before we finish.\" [Opening Statement]", bundle: 'free' },
       ]
     },
   ],

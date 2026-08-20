@@ -76,9 +76,6 @@ const packTags = {
   setupstatement: [
     'conversation', 'starting', 'connecting'
   ],
-  firststrategies: [
-    'getting started', 'first conversations', 'beginner', 'everyday talk', 'the basic moves'
-  ],
   startingconversations1: [
     'starting conversations', 'openers', 'small talk', 'strangers', 'first words'
   ],
@@ -355,6 +352,9 @@ const packTags = {
   toddv5: [
     'tests', 'social pressure', 'inner game', 'group theory', 'frame control', 'value', 'comfort'
   ],
+  firststrategies: [
+    'getting started', 'first conversations', 'beginner', 'everyday talk', 'the basic moves'
+  ],
 };
 
 // ─── TOPICS ──────────────────────────────────────────────────────────
@@ -383,7 +383,7 @@ const packTags = {
 // emotionalboundaries merged into emotions and boundaries.
 const TOPICS = [
   // ── Getting a conversation going ──────────────────────────────────
-  { id: 'startingconversations', title: 'Starting Conversations',        packs: ['startingconnecting', 'setupstatement', 'firststrategies', 'startingconversations1', 'startingconversations4', 'startingconversations2', 'startingconversations3', 'setupquestion', 'oconnor7'] },
+  { id: 'startingconversations', title: 'Starting Conversations',        packs: ['startingconnecting', 'setupstatement', 'startingconversations1', 'startingconversations4', 'startingconversations2', 'startingconversations3', 'setupquestion', 'oconnor7', 'firststrategies'] },
   { id: 'questions',             title: 'Questions & Curiosity',         packs: ['exploringatopic', 'deepquestions'] },
   { id: 'flowtransitions',       title: 'Flow & Transitions',            packs: ['conversational', 'transitions', 'changingtopics', 'reactingtounexpectedstatements'] },
   { id: 'endingconversations',   title: 'Ending Conversations',          packs: ['endingconversations'] },

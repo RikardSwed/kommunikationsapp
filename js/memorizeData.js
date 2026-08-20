@@ -865,99 +865,6 @@ const memorizeCollections = {
       ]
     },
   ],
-  firststrategies: [
-    {
-      name: "Core Idea",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
-      description: "The shape of the pack: six strategies that between them make a whole small conversation.",
-      cards: [
-        { q: "What are the six strategies in this pack?", a: "Opening Statement, Follow the Thread, Say It Back, Ask Plainly, A Friendly No, Answer With a Hook.", bundle: 'free' },
-        { q: "What is the arc the six make together?", a: "Open, keep it going, listen, ask, decline, and share something back.", bundle: 'free' },
-        { q: "Which two are for when nothing has been said yet?", a: "Opening Statement and Ask Plainly.", bundle: 'free' },
-        { q: "What decides which strategy to use?", a: "What the other person just did — told you something, asked you for something, or asked about you.", bundle: 'pro' },
-        { q: "What do all six have in common?", a: "They are short, and they all end by leaving the other person a turn.", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Opening Statement",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
-      description: "Opening with a remark instead of a question.",
-      cards: [
-        { q: "What is an opening statement?", a: "A remark rather than a question — something the other person can pick up or let go.", bundle: 'free' },
-        { q: "Why does a statement open more conversations than a question?", a: "A question makes them work; a statement hands them material.", bundle: 'free' },
-        { q: "What are the three kinds?", a: "Something you are both looking at, something about you right now, and a small opinion.", bundle: 'free' },
-        { q: "Why is an unanswered statement better than an unanswered question?", a: "Silence after a remark is nothing. Silence after a question is awkward for both of you.", bundle: 'pro' },
-        { q: "Which kind invites the most, and which risks the most?", a: "The small opinion — it is the same one.", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Follow the Thread",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
-      description: "Using what they just said instead of finding something new.",
-      cards: [
-        { q: "What does following the thread mean?", a: "Taking one word or detail out of what they just said and going into it.", bundle: 'free' },
-        { q: "What problem does it solve?", a: "Having nothing to say next — they have already given you three things.", bundle: 'free' },
-        { q: "What are the three threads worth pulling?", a: "The concrete detail, the odd word that carries feeling, and the thing they skipped past.", bundle: 'free' },
-        { q: "Why do conversations stall?", a: "Both people go looking for a new subject while a perfectly good one is lying between them.", bundle: 'pro' },
-        { q: "Does the thread have to come from the last sentence?", a: "No. Anything from the last ten minutes is still open, and going back reads as interest.", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Say It Back",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
-      description: "Repeating what you understood before you answer.",
-      cards: [
-        { q: "What is the move?", a: "Say back what you understood, in your own words, before you answer.", bundle: 'free' },
-        { q: "What two things does it do at once?", a: "Proves you were listening, and buys you a few seconds to think.", bundle: 'free' },
-        { q: "Why in your own words rather than theirs?", a: "Repeating their sentence sounds like a technique. Rewording it proves you understood.", bundle: 'free' },
-        { q: "What does it catch?", a: "The times you had it wrong — before that costs anyone an evening.", bundle: 'pro' },
-        { q: "When is it most worth doing?", a: "When the thing is complicated, upsetting, or about to be disagreed with.", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Ask Plainly",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
-      description: "Making a request without the run-up.",
-      cards: [
-        { q: "What is the shape of a plain ask?", a: "One specific sentence, put as a question, and then stop.", bundle: 'free' },
-        { q: "What actually makes a request awkward?", a: "The run-up. The apology before it tells them you think you are imposing.", bundle: 'free' },
-        { q: "Why stop talking afterwards?", a: "The reasons you add turn a question into a case that can be argued with.", bundle: 'free' },
-        { q: "What is the difference between a hint and a request?", a: "\"Are you around Thursday?\" is a hint. \"Could you take Thursday?\" is a request.", bundle: 'pro' },
-        { q: "Why does being specific matter?", a: "A vague ask is hard to say yes to. Say what, and say when.", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "A Friendly No",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
-      description: "Declining clearly without a pile of reasons.",
-      cards: [
-        { q: "What are the three parts of a friendly no?", a: "Something warm, the actual no, and at most one reason.", bundle: 'free' },
-        { q: "What is the rule about softening?", a: "Soften the delivery, never the answer.", bundle: 'free' },
-        { q: "Why is \"maybe\" worse than \"no\"?", a: "It feels kinder and costs the other person a week of waiting.", bundle: 'free' },
-        { q: "Why are reasons a trap?", a: "Every reason is something they can solve — and then you are negotiating a decision you had already made.", bundle: 'pro' },
-        { q: "What does a clear no give the other person?", a: "The chance to ask someone else today.", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Answer With a Hook",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
-      description: "Answering about yourself so there is somewhere to go next.",
-      cards: [
-        { q: "What is a hook?", a: "One extra detail in your answer that the other person can ask about.", bundle: 'free' },
-        { q: "What is wrong with \"fine\"?", a: "It leaves them with nothing, so they have to invent another question.", bundle: 'free' },
-        { q: "What are the three sizes of hook?", a: "One extra detail, a small complaint or oddity, and something you actually care about.", bundle: 'free' },
-        { q: "What do people usually mean when they say they are bad at small talk?", a: "They are good at asking and empty at answering, so the conversation runs on their questions until they run out.", bundle: 'pro' },
-        { q: "Is the point to be interesting?", a: "No. The point is to leave a door open.", bundle: 'pro' },
-      ]
-    },
-  ],
   startingconversations1: [
     {
       name: "Core Idea",
@@ -5882,6 +5789,184 @@ const memorizeCollections = {
         { q: "How do you \"Cover the Exits\"?", a: "Giving the girl's likely objections and excuses yourself before she does to take them off the table.", bundle: 'pro' },
         { q: "What is \"Sco Game\"?", a: "Leading with a foregone conclusion (\"Let's go\") instead of asking for permission.", bundle: 'pro' },
         { q: "What is the \"True Self-Esteem\" formula?", a: "Accepting who you are and doing what you know is right regardless of the result.", bundle: 'pro' },
+      ]
+    },
+  ],
+  firststrategies: [
+    {
+      name: "Core Idea",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "The shape of the pack: six strategies that between them make a whole small conversation.",
+      cards: [
+        { q: "What are the six strategies in this pack?", a: "Opening Statement, Follow the Thread, Say It Back, Ask Plainly, A Friendly No, Answer With a Hook.", bundle: 'free' },
+        { q: "What is the arc the six make together?", a: "Open, keep it going, listen, ask, decline, and share something back.", bundle: 'free' },
+        { q: "Which two are for when nothing has been said yet?", a: "Opening Statement and Ask Plainly.", bundle: 'free' },
+        { q: "What decides which strategy to use?", a: "What the other person just did — told you something, asked you for something, or asked about you.", bundle: 'free' },
+        { q: "What do all six have in common?", a: "They are short, and they all end by leaving the other person a turn.", bundle: 'free' },
+        { q: "Which strategy do you use when they have told you something?", a: "Follow the Thread — take one detail out of it and go into that.", bundle: 'free' },
+        { q: "Which two are for when the attention lands on you?", a: "Answer With a Hook if you want to answer, A Friendly No if you would rather not.", bundle: 'free' },
+        { q: "Why is the pack called First Strategies?", a: "These are the six most basic moves in their simplest form. Each one is the door into a deeper pack.", bundle: 'free' },
+      ]
+    },
+    {
+      name: "Opening Statement",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "Opening with a remark instead of a question.",
+      cards: [
+        { q: "What is an opening statement?", a: "A remark rather than a question — something the other person can pick up or let go.", bundle: 'free' },
+        { q: "Why does a statement open more conversations than a question?", a: "A question makes them work; a statement hands them material.", bundle: 'free' },
+        { q: "What are the three kinds?", a: "Something you are both looking at, something about you right now, and a small opinion.", bundle: 'free' },
+        { q: "Why is an unanswered statement better than an unanswered question?", a: "Silence after a remark is nothing. Silence after a question is awkward for both of you.", bundle: 'free' },
+        { q: "Which kind invites the most, and which risks the most?", a: "The small opinion — it is the same one.", bundle: 'free' },
+        { q: "What does a statement hand the other person?", a: "Material — something to agree with, add to, disagree with, or laugh at.", bundle: 'free' },
+        { q: "Which kind is safest with a stranger?", a: "Something you are both looking at, because it is already true for both of you.", bundle: 'free' },
+        { q: "What is the mindset behind it?", a: "You are not performing. One true, ordinary sentence is the entire bar.", bundle: 'free' },
+      ]
+    },
+    {
+      name: "Follow the Thread",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "Using what they just said instead of finding something new.",
+      cards: [
+        { q: "What does following the thread mean?", a: "Taking one word or detail out of what they just said and going into it.", bundle: 'free' },
+        { q: "What problem does it solve?", a: "Having nothing to say next — they have already given you three things.", bundle: 'free' },
+        { q: "What are the three threads worth pulling?", a: "The concrete detail, the odd word that carries feeling, and the thing they skipped past.", bundle: 'free' },
+        { q: "Why do conversations stall?", a: "Both people go looking for a new subject while a perfectly good one is lying between them.", bundle: 'free' },
+        { q: "Does the thread have to come from the last sentence?", a: "No. Anything from the last ten minutes is still open, and going back reads as interest.", bundle: 'free' },
+        { q: "What are you listening for?", a: "The noun, not the gap — a place, an object, a number, or a word that carries feeling.", bundle: 'free' },
+        { q: "What habit does it replace?", a: "Waiting for your turn while you hunt for a fresh subject.", bundle: 'free' },
+        { q: "What do you say when they skipped past something?", a: "Ask for it out loud — \"Wait, go back — you moved house the same month?\"", bundle: 'free' },
+      ]
+    },
+    {
+      name: "Say It Back",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "Repeating what you understood before you answer.",
+      cards: [
+        { q: "What is the move?", a: "Say back what you understood, in your own words, before you answer.", bundle: 'free' },
+        { q: "What two things does it do at once?", a: "Proves you were listening, and buys you a few seconds to think.", bundle: 'free' },
+        { q: "Why in your own words rather than theirs?", a: "Repeating their sentence sounds like a technique. Rewording it proves you understood.", bundle: 'free' },
+        { q: "What does it catch?", a: "The times you had it wrong — before that costs anyone an evening.", bundle: 'free' },
+        { q: "When is it most worth doing?", a: "When the thing is complicated, upsetting, or about to be disagreed with.", bundle: 'free' },
+        { q: "What are the three ways to do it?", a: "Short and plain, name the part that matters, or check rather than state.", bundle: 'free' },
+        { q: "What does it give you besides accuracy?", a: "A few seconds. You are talking, so the silence is filled, but nothing is committed.", bundle: 'free' },
+        { q: "What does it prevent?", a: "The argument where two people are describing two different versions of what was said.", bundle: 'free' },
+      ]
+    },
+    {
+      name: "Ask Plainly",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "Making a request without the run-up.",
+      cards: [
+        { q: "What is the shape of a plain ask?", a: "One specific sentence, put as a question, and then stop.", bundle: 'free' },
+        { q: "What actually makes a request awkward?", a: "The run-up. The apology before it tells them you think you are imposing.", bundle: 'free' },
+        { q: "Why stop talking afterwards?", a: "The reasons you add turn a question into a case that can be argued with.", bundle: 'free' },
+        { q: "What is the difference between a hint and a request?", a: "\"Are you around Thursday?\" is a hint. \"Could you take Thursday?\" is a request.", bundle: 'free' },
+        { q: "Why does being specific matter?", a: "A vague ask is hard to say yes to. Say what, and say when.", bundle: 'free' },
+        { q: "What are the three parts of a plain ask?", a: "Put it as a question, make it specific, and then stop.", bundle: 'free' },
+        { q: "What do you do while they are deciding?", a: "Nothing. The silence is theirs, not a gap you have to fill.", bundle: 'free' },
+        { q: "What is the mindset behind it?", a: "Asking is normal. You are giving them the chance to say yes, and leaving them free to say no.", bundle: 'free' },
+      ]
+    },
+    {
+      name: "A Friendly No",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "Declining clearly without a pile of reasons.",
+      cards: [
+        { q: "What are the three parts of a friendly no?", a: "Something warm, the actual no, and at most one reason.", bundle: 'free' },
+        { q: "What is the rule about softening?", a: "Soften the delivery, never the answer.", bundle: 'free' },
+        { q: "Why is \"maybe\" worse than \"no\"?", a: "It feels kinder and costs the other person a week of waiting.", bundle: 'free' },
+        { q: "Why are reasons a trap?", a: "Every reason is something they can solve — and then you are negotiating a decision you had already made.", bundle: 'free' },
+        { q: "What does a clear no give the other person?", a: "The chance to ask someone else today.", bundle: 'free' },
+        { q: "What do the warmth and the clarity each do?", a: "The warmth keeps the person. The clarity gives them the answer. People swap one for the other.", bundle: 'free' },
+        { q: "How do you say no and keep the door open?", a: "Decline this one and name another time — \"Not this time. Ask me again in the spring.\"", bundle: 'free' },
+        { q: "What happens if you soften the answer instead of the delivery?", a: "It stops being a no. \"Probably not\" and \"I'll see\" cost them a week of waiting.", bundle: 'free' },
+      ]
+    },
+    {
+      name: "Answer With a Hook",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "Answering about yourself so there is somewhere to go next.",
+      cards: [
+        { q: "What is a hook?", a: "One extra detail in your answer that the other person can ask about.", bundle: 'free' },
+        { q: "What is wrong with \"fine\"?", a: "It leaves them with nothing, so they have to invent another question.", bundle: 'free' },
+        { q: "What are the three sizes of hook?", a: "One extra detail, a small complaint or oddity, and something you actually care about.", bundle: 'free' },
+        { q: "What do people usually mean when they say they are bad at small talk?", a: "They are good at asking and empty at answering, so the conversation runs on their questions until they run out.", bundle: 'free' },
+        { q: "Is the point to be interesting?", a: "No. The point is to leave a door open.", bundle: 'free' },
+        { q: "What is the person asking actually trying to do?", a: "Start a conversation. A closed answer leaves them with nothing to build on.", bundle: 'free' },
+        { q: "How big should the hook be with a stranger?", a: "One extra detail. The larger ones are for people you want to know better.", bundle: 'free' },
+        { q: "What do you do after you have answered?", a: "Hand it back if you like — but answer first, or they carry the whole thing alone.", bundle: 'free' },
+      ]
+    },
+    {
+      name: "What goes wrong",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "The five kinds of difficult moment this pack covers, and what each one does to people who have no strategy for it.",
+      cards: [
+        { q: "What are the five hard moments in this pack?", a: "You do not know them at all, the conversation has stalled, they asked about you, they want something from you, and you want something from them.", bundle: 'free' },
+        { q: "What goes wrong with someone you do not know?", a: "It turns into an interview — two questions in a row, and nothing given back.", bundle: 'free' },
+        { q: "What is the fix for a stalled conversation?", a: "Look backwards, not for a new subject. Anything from the last ten minutes is still open.", bundle: 'free' },
+        { q: "Why does a closed answer stall a conversation three exchanges later?", a: "It leaves the other person inventing every question, and after two or three most people stop.", bundle: 'free' },
+        { q: "What goes wrong when someone asks about you?", a: "The reflex is to say as little as possible and hand the question straight back.", bundle: 'free' },
+        { q: "What goes wrong when someone wants something from you?", a: "The vague no — \"maybe\", \"I'll see\" — which feels kind and costs them a week.", bundle: 'free' },
+        { q: "What goes wrong when you want something?", a: "Hinting. It protects you from hearing no, and it almost never gets you the thing.", bundle: 'free' },
+        { q: "Which strategy turns up in the most categories?", a: "Follow the Thread — it rescues a stall, softens an interview, and opens up a refusal.", bundle: 'free' },
+      ]
+    },
+    {
+      name: "Which one to use",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "How to choose when more than one strategy would work — which is most of the time, and the thing Single Strategy never has to answer.",
+      cards: [
+        { q: "What single question decides most of it?", a: "What did the other person just do?", bundle: 'free' },
+        { q: "Which two are for when nothing has been said yet?", a: "Opening Statement and Ask Plainly.", bundle: 'free' },
+        { q: "What separates those two?", a: "Opening Statement wants a conversation. Ask Plainly wants a specific thing, and the conversation is only the way to it.", bundle: 'free' },
+        { q: "They told you something. Which strategy?", a: "Follow the Thread — unless it was complicated or upsetting, and then Say It Back first.", bundle: 'free' },
+        { q: "They asked you for something you cannot do. Which strategy?", a: "A Friendly No — with Say It Back first if the request had several parts.", bundle: 'free' },
+        { q: "They asked about you. Which strategy?", a: "Answer With a Hook — or A Friendly No, if you would rather not answer it.", bundle: 'free' },
+        { q: "What do the six divide into?", a: "Three pairs — two that start something, two that work with what was said, and two that answer something aimed at you.", bundle: 'free' },
+        { q: "Do you need the best strategy?", a: "No. You need one that suits what just happened.", bundle: 'free' },
+      ]
+    },
+    {
+      name: "In what order",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "The three sequences in the pack, and why the steps come in the order they do. In every one of them the order is doing the work, not the individual moves.",
+      cards: [
+        { q: "What is the order for a whole small conversation?", a: "Opening Statement, Follow the Thread, Answer With a Hook, Follow the Thread.", bundle: 'free' },
+        { q: "Which step of that sequence do people skip?", a: "The last one. They answer a question about themselves and then stop.", bundle: 'free' },
+        { q: "What is the order when someone asks you for something?", a: "Say It Back, then A Friendly No, then Ask Plainly if there is a version you could do.", bundle: 'free' },
+        { q: "Why does Say It Back come before the no?", a: "So the no arrives after they have been understood, rather than instead of it.", bundle: 'free' },
+        { q: "What order do most people use instead?", a: "A reason, then a vague no, then an apology — which leaves the other person unsure it was a no at all.", bundle: 'free' },
+        { q: "What is the order when you want something?", a: "Ask Plainly, then Say It Back when they push back, then Follow the Thread into whatever they raised.", bundle: 'free' },
+        { q: "Why say it back rather than repeat the ask?", a: "Repeating it louder starts an argument. Saying it back turns a refusal into a conversation.", bundle: 'free' },
+        { q: "What is usually true about the second thing they say?", a: "It is the real reason — and it is often solvable, which it never would be in an argument.", bundle: 'free' },
+      ]
+    },
+    {
+      name: "What gets in the way",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "The six beliefs that stop people using any of this, and what is true instead. Every one of them feels like modesty or good manners from the inside.",
+      cards: [
+        { q: "What belief stops people speaking first?", a: "That a conversation is a performance, and the price of entry is something worth saying.", bundle: 'free' },
+        { q: "What is true instead?", a: "The bar is a true, ordinary sentence. Nobody remembers the sentence — only that someone spoke to them.", bundle: 'free' },
+        { q: "Why do people reach for a question when a remark would work better?", a: "A question feels polite. It is also a small demand, answered on the spot, by someone who may be tired.", bundle: 'free' },
+        { q: "What belief produces \"maybe\"?", a: "That a no is a verdict on the person asking, rather than an answer to what they asked.", bundle: 'free' },
+        { q: "What does a clear no actually give them?", a: "The chance to ask someone else today.", bundle: 'free' },
+        { q: "What belief produces the one-word answer?", a: "That saying something about yourself is taking up space.", bundle: 'free' },
+        { q: "What belief produces hinting?", a: "That asking puts the other person in a difficult position — so you hint instead, and hope they offer.", bundle: 'free' },
+        { q: "What belief makes people change the subject during a pause?", a: "That silence means the conversation has broken. A pause is where people think.", bundle: 'free' },
       ]
     },
   ],

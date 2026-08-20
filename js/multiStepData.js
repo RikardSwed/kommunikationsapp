@@ -1319,92 +1319,6 @@ const multiStepCollections = {
       ]
     },
   ],
-  firststrategies: [
-    {
-      name: "A Whole Small Conversation",
-      guideFront: "What they said, and the strategy to answer it with.",
-      guideBack: "One way it could sound.",
-      description: "Opening Statement, then Follow the Thread, then Answer With a Hook, then Follow the Thread again. Four steps, and it is a complete conversation with a stranger.\n\nNotice the shape: you start, they answer, you go into what they said, they ask you something back, and you give them a door. Nothing clever happens at any point.\n\nThe last step is the one people skip. Answering a question about yourself and then stopping is where most first conversations quietly end.\n\nMindset: this is the whole thing. Six sentences, and neither of you had to be interesting.",
-      inputs: [
-        {
-          bundle: 'free',
-          situation: "You are on a platform with one other person, both looking at a board that has said \"delayed\" for fifteen minutes.",
-          steps: [
-            { front: "Opening Statement — the board changes to \"delayed\" again.", back: "\"That's the second time it's done that.\"" },
-            { front: "Follow the Thread — they say, \"I've got a connection in Gothenburg I'm going to miss.\"", back: "\"Gothenburg — is it work, or are you escaping?\"" },
-            { front: "Answer With a Hook — they say, \"Work, sadly. You?\"", back: "\"Home, luckily. I've been at a course all week that I understood about half of.\"" },
-            { front: "Follow the Thread — they say, \"What kind of course?\"", back: "\"Communication, of all things. You said you do this run a lot — is it always like this?\"" },
-          ]
-        },
-        {
-          bundle: 'free',
-          situation: "You are holding a coffee at the edge of a room where everyone else seems to have arrived together.",
-          steps: [
-            { front: "Opening Statement — someone stops beside you at the same table.", back: "\"There is a startling amount of cake for a Tuesday.\"" },
-            { front: "Follow the Thread — they say, \"They always overdo it at these. I've been to four.\"", back: "\"Four — so you actually know what happens after lunch?\"" },
-            { front: "Answer With a Hook — they say, \"Sadly yes. Is this your first?\"", back: "\"First one. I said yes in March, when March-me had no idea how busy I'd be.\"" },
-            { front: "Follow the Thread — they say, \"That's how they get you.\"", back: "\"You said you'd done four, though. What made you keep coming back?\"" },
-          ]
-        },
-      ]
-    },
-    {
-      name: "When Someone Asks You for Something",
-      guideFront: "What they said, and the strategy to answer it with.",
-      guideBack: "One way it could sound.",
-      description: "Say It Back, then A Friendly No, then Ask Plainly. The order is what makes it work.\n\nSaying it back first means the no arrives after they have been understood, rather than instead of it. Then the no, clear and short. Then, if you want to, asking for the version you could actually do — which is a request, not an excuse, and belongs at the end.\n\nMost people do this in the opposite order: a reason, then a vague no, then an apology. That leaves the other person unsure whether it was a no at all.\n\nMindset: understood, declined, and offered something — in that order.",
-      inputs: [
-        {
-          bundle: 'free',
-          situation: "A colleague stops by your desk on a Friday afternoon and asks whether you could take over a piece of work that starts on Monday.",
-          steps: [
-            { front: "Say It Back — they say, \"It's not huge. Two weeks, maybe three.\"", back: "\"So it's two or three weeks, starting Monday, on top of what I've got.\"" },
-            { front: "A Friendly No — they say, \"Roughly, yes.\"", back: "\"I can't take that on, I'm afraid. Not this month.\"" },
-            { front: "Ask Plainly — they say, \"Okay. I'll have to find someone else.\"", back: "\"Could you come back to me in June? I'd want it then.\"" },
-            { front: "Follow the Thread — they say, \"June might be too late, honestly.\"", back: "\"Too late how — is there a deadline on it, or is it the client?\"" },
-          ]
-        },
-        {
-          bundle: 'free',
-          situation: "A friend rings and asks if you can help them move flat on Saturday, which is the one day you had kept free.",
-          steps: [
-            { front: "Say It Back — they say, \"It's the whole day, probably eight till six.\"", back: "\"So the whole of Saturday, eight to six, with the van.\"" },
-            { front: "A Friendly No — they say, \"Basically, yes.\"", back: "\"I can't do the whole day, I'm sorry — Saturday's the only day I've got.\"" },
-            { front: "Ask Plainly — they say, \"No, that's fair.\"", back: "\"Could I do the morning instead? I'd rather do half than none.\"" },
-            { front: "Answer With a Hook — they say, \"That'd actually help a lot. You alright otherwise?\"", back: "\"Knackered, mostly. I've said yes to too many things this month, which is why I'm being careful with this one.\"" },
-          ]
-        },
-      ]
-    },
-    {
-      name: "When You Want Something",
-      guideFront: "What they said, and the strategy to answer it with.",
-      guideBack: "One way it could sound.",
-      description: "Ask Plainly, then Say It Back, then Follow the Thread. What to do when the answer is not a simple yes.\n\nThe request goes first, and short. Then, when they push back, you say back what they have said rather than repeating the ask louder — which is the move almost nobody makes and the one that turns a refusal into a conversation. Then you follow the thread into whatever they raised.\n\nOften the reason they gave is solvable, and it would never have come out if you had argued instead.\n\nMindset: ask once, then listen. The second thing they say is usually the real one.",
-      inputs: [
-        {
-          bundle: 'free',
-          situation: "You want to start an hour later on Wednesdays, and you have been putting off asking for two months.",
-          steps: [
-            { front: "Ask Plainly — you have their attention and five minutes.", back: "\"Could I start at ten on Wednesdays from next month?\"" },
-            { front: "Say It Back — they say, \"It's difficult with the Wednesday stand-up.\"", back: "\"So the problem is the stand-up specifically, not the hour itself.\"" },
-            { front: "Follow the Thread — they say, \"Mostly, yes. It's the only time we're all in.\"", back: "\"All in — does that have to be a Wednesday, or is that just how it ended up?\"" },
-            { front: "Ask Plainly — they say, \"I suppose it's habit.\"", back: "\"Could we try it on a Tuesday for a month and see?\"" },
-          ]
-        },
-        {
-          bundle: 'free',
-          situation: "The kitchen has been left for four days running, and you have been leaving increasingly obvious signs instead of saying anything.",
-          steps: [
-            { front: "Ask Plainly — they come in and put a mug down.", back: "\"Could you do your washing up the same evening from now on?\"" },
-            { front: "Say It Back — they say, \"I'm never in before nine, that's the thing.\"", back: "\"So it's not that you won't — it's that you get in when it's already late.\"" },
-            { front: "Follow the Thread — they say, \"Exactly. By then I just want to sit down.\"", back: "\"Fair enough. What time do you actually get through the door on a bad day?\"" },
-            { front: "Ask Plainly — they say, \"Half nine, sometimes ten.\"", back: "\"Could you do it before you leave in the morning instead? I don't mind when — just not four days.\"" },
-          ]
-        },
-      ]
-    },
-  ],
   startingconversations1: [
     {
       name: "Open, Then Build On What You Get",
@@ -6580,6 +6494,122 @@ const multiStepCollections = {
             { front: "Passing Value Tests — she says \"I bet you're a player.\"", back: "\"If by that you mean I'm a guy with options who chose to be here with you, then yes. Very perceptive.\"" },
             { front: "Passing Comfort Tests — she softens and says \"I just don't want to get hurt.\"", back: "\"I respect that. It's modest of you to think I could even hurt you yet. Let's just have a fun time and see where it goes.\"" },
             { front: "The \"What Do I Want?\" Move — the tension is high; move for the close.", back: "\"I'm tired of this bar. Let's go check out the view on the rooftop nearby. Sco.\"" },
+          ]
+        },
+      ]
+    },
+  ],
+  firststrategies: [
+    {
+      name: "A Whole Small Conversation",
+      guideFront: "What they said, and the strategy to answer it with.",
+      guideBack: "One way it could sound.",
+      description: "Opening Statement, then Follow the Thread, then Answer With a Hook, then Follow the Thread again. Four steps, and it is a complete conversation with a stranger.\n\nNotice the shape: you start, they answer, you go into what they said, they ask you something back, and you give them a door. Nothing clever happens at any point.\n\nThe last step is the one people skip. Answering a question about yourself and then stopping is where most first conversations quietly end.\n\nMindset: this is the whole thing. Six sentences, and neither of you had to be interesting.",
+      inputs: [
+        {
+          bundle: 'free',
+          situation: "You are on a platform with one other person, both looking at a board that has said \"delayed\" for fifteen minutes.",
+          steps: [
+            { front: "Opening Statement — the board changes to \"delayed\" again.", back: "\"That's the second time it's done that.\"" },
+            { front: "Follow the Thread — they say, \"I've got a connection in Gothenburg I'm going to miss.\"", back: "\"Gothenburg — is it work, or are you escaping?\"" },
+            { front: "Answer With a Hook — they say, \"Work, sadly. You?\"", back: "\"Home, luckily. I've been at a course all week that I understood about half of.\"" },
+            { front: "Follow the Thread — they say, \"What kind of course?\"", back: "\"Communication, of all things. You said you do this run a lot — is it always like this?\"" },
+          ]
+        },
+        {
+          bundle: 'free',
+          situation: "You are holding a coffee at the edge of a room where everyone else seems to have arrived together.",
+          steps: [
+            { front: "Opening Statement — someone stops beside you at the same table.", back: "\"There is a startling amount of cake for a Tuesday.\"" },
+            { front: "Follow the Thread — they say, \"They always overdo it at these. I've been to four.\"", back: "\"Four — so you actually know what happens after lunch?\"" },
+            { front: "Answer With a Hook — they say, \"Sadly yes. Is this your first?\"", back: "\"First one. I said yes in March, when March-me had no idea how busy I'd be.\"" },
+            { front: "Follow the Thread — they say, \"That's how they get you.\"", back: "\"You said you'd done four, though. What made you keep coming back?\"" },
+          ]
+        },
+        {
+          bundle: 'free',
+          situation: "You are standing among parents you half-recognise, none of whom you have ever spoken to, and the doors are late.",
+          steps: [
+            { front: "Opening Statement — the doors have been shut for five minutes past the hour.", back: "\"They have never once opened these on time.\"" },
+            { front: "Follow the Thread — they say, \"Every day since September. I've stopped rushing.\"", back: "\"Since September — is this your first year here as well?\"" },
+            { front: "Answer With a Hook — they say, \"Third. You?\"", back: "\"First. I've spent the whole term working out which gate is which.\"" },
+            { front: "Follow the Thread — they say, \"It took me about a year.\"", back: "\"A year? Please tell me there's a trick to it.\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "When Someone Asks You for Something",
+      guideFront: "What they said, and the strategy to answer it with.",
+      guideBack: "One way it could sound.",
+      description: "Say It Back, then A Friendly No, then Ask Plainly. The order is what makes it work.\n\nSaying it back first means the no arrives after they have been understood, rather than instead of it. Then the no, clear and short. Then, if you want to, asking for the version you could actually do — which is a request, not an excuse, and belongs at the end.\n\nMost people do this in the opposite order: a reason, then a vague no, then an apology. That leaves the other person unsure whether it was a no at all.\n\nMindset: understood, declined, and offered something — in that order.",
+      inputs: [
+        {
+          bundle: 'free',
+          situation: "A colleague stops by your desk on a Friday afternoon and asks whether you could take over a piece of work that starts on Monday.",
+          steps: [
+            { front: "Say It Back — they say, \"It's not huge. Two weeks, maybe three.\"", back: "\"So it's two or three weeks, starting Monday, on top of what I've got.\"" },
+            { front: "A Friendly No — they say, \"Roughly, yes.\"", back: "\"I can't take that on, I'm afraid. Not this month.\"" },
+            { front: "Ask Plainly — they say, \"Okay. I'll have to find someone else.\"", back: "\"Could you come back to me in June? I'd want it then.\"" },
+            { front: "Follow the Thread — they say, \"June might be too late, honestly.\"", back: "\"Too late how — is there a deadline on it, or is it the client?\"" },
+          ]
+        },
+        {
+          bundle: 'free',
+          situation: "A friend rings and asks if you can help them move flat on Saturday, which is the one day you had kept free.",
+          steps: [
+            { front: "Say It Back — they say, \"It's the whole day, probably eight till six.\"", back: "\"So the whole of Saturday, eight to six, with the van.\"" },
+            { front: "A Friendly No — they say, \"Basically, yes.\"", back: "\"I can't do the whole day, I'm sorry — Saturday's the only day I've got.\"" },
+            { front: "Ask Plainly — they say, \"No, that's fair.\"", back: "\"Could I do the morning instead? I'd rather do half than none.\"" },
+            { front: "Answer With a Hook — they say, \"That'd actually help a lot. You alright otherwise?\"", back: "\"Knackered, mostly. I've said yes to too many things this month, which is why I'm being careful with this one.\"" },
+          ]
+        },
+        {
+          bundle: 'free',
+          situation: "Someone from the school association rings and asks you to run the raffle table, which turns out to be a whole Saturday.",
+          steps: [
+            { front: "Say It Back — they say, \"It's setting up at nine and clearing away at four.\"", back: "\"So it's the whole of Saturday, nine to four, and I'd be running it on my own.\"" },
+            { front: "A Friendly No — they say, \"That's about the size of it, yes.\"", back: "\"I can't take a whole day on, I'm afraid. Thanks for thinking of me, though.\"" },
+            { front: "Ask Plainly — they say, \"Ah. That's a shame.\"", back: "\"Could you put me down for the last hour instead? I'd rather do a bit than nothing.\"" },
+            { front: "Follow the Thread — they say, \"The last hour is actually the hardest one to fill.\"", back: "\"Hardest how — is it the clearing up, or has everyone gone home by then?\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "When You Want Something",
+      guideFront: "What they said, and the strategy to answer it with.",
+      guideBack: "One way it could sound.",
+      description: "Ask Plainly, then Say It Back, then Follow the Thread. What to do when the answer is not a simple yes.\n\nThe request goes first, and short. Then, when they push back, you say back what they have said rather than repeating the ask louder — which is the move almost nobody makes and the one that turns a refusal into a conversation. Then you follow the thread into whatever they raised.\n\nOften the reason they gave is solvable, and it would never have come out if you had argued instead.\n\nMindset: ask once, then listen. The second thing they say is usually the real one.",
+      inputs: [
+        {
+          bundle: 'free',
+          situation: "You want to start an hour later on Wednesdays, and you have been putting off asking for two months.",
+          steps: [
+            { front: "Ask Plainly — you have their attention and five minutes.", back: "\"Could I start at ten on Wednesdays from next month?\"" },
+            { front: "Say It Back — they say, \"It's difficult with the Wednesday stand-up.\"", back: "\"So the problem is the stand-up specifically, not the hour itself.\"" },
+            { front: "Follow the Thread — they say, \"Mostly, yes. It's the only time we're all in.\"", back: "\"All in — does that have to be a Wednesday, or is that just how it ended up?\"" },
+            { front: "Ask Plainly — they say, \"I suppose it's habit.\"", back: "\"Could we try it on a Tuesday for a month and see?\"" },
+          ]
+        },
+        {
+          bundle: 'free',
+          situation: "The kitchen has been left for four days running, and you have been leaving increasingly obvious signs instead of saying anything.",
+          steps: [
+            { front: "Ask Plainly — they come in and put a mug down.", back: "\"Could you do your washing up the same evening from now on?\"" },
+            { front: "Say It Back — they say, \"I'm never in before nine, that's the thing.\"", back: "\"So it's not that you won't — it's that you get in when it's already late.\"" },
+            { front: "Follow the Thread — they say, \"Exactly. By then I just want to sit down.\"", back: "\"Fair enough. What time do you actually get through the door on a bad day?\"" },
+            { front: "Ask Plainly — they say, \"Half nine, sometimes ten.\"", back: "\"Could you do it before you leave in the morning instead? I don't mind when — just not four days.\"" },
+          ]
+        },
+        {
+          bundle: 'free',
+          situation: "You paid for two tickets in March, your friend has not mentioned it since, and you have been waiting for them to bring it up.",
+          steps: [
+            { front: "Ask Plainly — you are having coffee and there is a natural pause.", back: "\"Could you send me your half of the tickets this week?\"" },
+            { front: "Say It Back — they say, \"God, sorry — I thought I had. Things are tight until the 25th.\"", back: "\"So it's not that you'd forgotten. It's that the money isn't there until the 25th.\"" },
+            { front: "Follow the Thread — they say, \"Pretty much. It's been a strange month.\"", back: "\"Strange how? You haven't said anything.\"" },
+            { front: "Ask Plainly — they say, \"Just a lot at once, honestly.\"", back: "\"Then let's say the 26th, and I won't bring it up again.\"" },
           ]
         },
       ]

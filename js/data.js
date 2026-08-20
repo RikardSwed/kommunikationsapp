@@ -964,104 +964,6 @@ const collections = {
       ]
     },
   ],
-  firststrategies: [
-    {
-      name: "Opening Statement",
-      guideFront: "Open with a statement when...",
-      guideBack: "A possible response.",
-      description: "Say something instead of asking something. \"That queue is not moving.\" \"I have no idea what half of these are.\"\n\nIt works because a question hands the other person a job. They have to think of an answer, and if they are shy or tired or busy, the easiest answer is a short one — which ends the conversation you just started. A statement hands them material instead. They can agree, disagree, add to it, or laugh, and any of those is a conversation.\n\nIt also lets them out politely. Someone who does not want to talk can smile and say nothing, and nobody has been rude. An unanswered question is awkward; an unanswered remark is not.\n\nTypical phrases: \"This place is busier than I expected.\", \"I've been staring at this menu for five minutes.\", \"That's a serious amount of cake for one meeting.\"\n\nThree kinds of statement, and they are the ones you will use most:\n\n1. Something you are both looking at — the safest, because it is true for both of you. \"That painting is enormous.\"\n\n2. Something about you, right now — gives them something personal without asking for anything. \"I've come to the wrong building twice already.\"\n\n3. A small opinion — invites the most, risks the most. \"I think the old one was better.\"\n\nMindset: you are not performing. You are putting one true, ordinary sentence on the table for someone else to pick up.",
-      inputs: [
-        { q: "You are standing next to someone in a long queue.", a: "\"This queue has not moved in five minutes.\"", bundle: 'free' },
-        { q: "You arrive at a party where you only know the host.", a: "\"I've been here four minutes and I've already lost the person I came with.\"", bundle: 'free' },
-        { q: "You are next to a colleague waiting for a meeting to start.", a: "\"Whoever booked this room did not think about the sun.\"", bundle: 'free' },
-        { q: "You are at a counter and the person beside you is waiting too.", a: "\"I still have no idea what half of these are.\"", bundle: 'free' },
-        { q: "You want to start with something about yourself.", a: "\"I've walked past this place for a year and never come in.\"", bundle: 'free' },
-        { q: "You want to open with a small opinion rather than a fact.", a: "\"I think it was better before they redid it, honestly.\"", bundle: 'pro' },
-        { q: "You are about to ask \"how are you?\" for the fourth time this week.", a: "\"You look like you've had the same week I have.\"", bundle: 'pro' },
-        { q: "A question would put them on the spot and you do not want to.", a: "\"That's the third time that door has stuck today.\"", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Follow the Thread",
-      guideFront: "Follow the thread when...",
-      guideBack: "A possible response.",
-      description: "Take one word out of what they just said and go into it. They say \"we drove back from Malmö on Sunday\" — you take Malmö, or the driving, or the Sunday.\n\nIt works because people put more into a sentence than they expect anyone to notice. Picking one piece up shows you were listening, and it saves you from the real problem in conversation, which is not shyness but having nothing to say next. You do not need something new. They just gave you three things.\n\nThe mistake it replaces is waiting for your turn. Most conversations stall because both people are searching for a fresh subject while a perfectly good one is lying between them.\n\nTypical phrases: \"Malmö — what were you doing down there?\", \"You said 'finally' — has it been dragging on?\", \"Back to what, though?\"\n\nThree threads worth pulling:\n\n1. The concrete detail — the place, the object, the number. Easiest, always works. \"Three hours? What was the traffic like?\"\n\n2. The odd word — the one that carries feeling. \"You said you 'survived' it.\"\n\n3. The thing they skipped past — often the interesting one. \"Wait, go back — you moved house in the same month?\"\n\nMindset: the next thing to say is already in what they said. Listen for the noun, not for a gap.",
-      inputs: [
-        { q: "They say they got back from Malmö on Sunday.", a: "\"Malmö — what took you down there?\"", bundle: 'free' },
-        { q: "They mention they finally finished a project.", a: "\"Finally? How long has that been going on?\"", bundle: 'free' },
-        { q: "They say the week has been a lot.", a: "\"A lot how? Work, or everything at once?\"", bundle: 'free' },
-        { q: "They mention a person you have not heard of.", a: "\"Who's Ella? I don't think you've mentioned her.\"", bundle: 'free' },
-        { q: "They say something in passing and move on.", a: "\"Hang on, go back — you did what on Saturday?\"", bundle: 'free' },
-        { q: "You want to follow the feeling rather than the fact.", a: "\"You said you 'survived' it. That's a word.\"", bundle: 'pro' },
-        { q: "The thread you want is the detail they skipped.", a: "\"You went past the interesting bit. Start again from the boat.\"", bundle: 'pro' },
-        { q: "You have nothing new to say and the pause is coming.", a: "\"You mentioned the new place earlier — how's that going?\"", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Say It Back",
-      guideFront: "Say it back when...",
-      guideBack: "A possible response.",
-      description: "Repeat what you understood before you answer. \"So the deadline moved and nobody told you.\" Then answer.\n\nIt works for two reasons at once. It proves you were listening, which is most of what people want. And it gives you a few seconds to think — you are talking, so the silence is filled, but you have not committed to anything yet.\n\nIt is also the fastest way to find out you had it wrong. Half the arguments people have are about two different versions of what was said, and saying it back catches that before it costs anyone an evening.\n\nTypical phrases: \"So what you're saying is...\", \"Let me check I've got this...\", \"So the problem is the timing, not the work itself.\"\n\nThree ways to do it:\n\n1. Short and plain — the standard. \"So it's moved to Friday.\"\n\n2. Name the part that matters — shows you got the point, not just the words. \"So the issue is that nobody asked you.\"\n\n3. Check rather than state — invites the correction. \"Have I got that right?\"\n\nMindset: say it back in your own words, not theirs. Repeating their exact sentence sounds like a technique. Rewording it proves you understood.",
-      inputs: [
-        { q: "A colleague explains a problem with several parts.", a: "\"So the deadline moved and nobody told you until today.\"", bundle: 'free' },
-        { q: "A friend is upset and the story is tangled.", a: "\"Let me check I've got this — she said yes, then changed her mind on the day?\"", bundle: 'free' },
-        { q: "You are about to disagree and want to be sure first.", a: "\"So you'd rather we didn't go at all. Have I got that right?\"", bundle: 'free' },
-        { q: "Someone gives you a long instruction.", a: "\"So I send it first, then copy you in. Yes?\"", bundle: 'free' },
-        { q: "You need a second before answering something difficult.", a: "\"So the choice is stay another year, or leave now with nothing lined up.\"", bundle: 'free' },
-        { q: "You want to name the part that actually matters to them.", a: "\"So it's not the extra work. It's that nobody asked you first.\"", bundle: 'pro' },
-        { q: "You suspect you have understood it differently.", a: "\"I want to say it back, because I think I've heard it wrong.\"", bundle: 'pro' },
-        { q: "They are going in circles and you want to steady it.", a: "\"Can I stop you and say what I've got so far?\"", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Ask Plainly",
-      guideFront: "Ask plainly when...",
-      guideBack: "A possible response.",
-      description: "Say what you want, in one sentence, without building up to it. \"Could you take the Thursday meeting?\" Then stop talking.\n\nIt works because the long run-up is what makes a request awkward, not the request. Three sentences of apology before the ask tell the other person that you think you are imposing — so by the time it arrives, they think so too.\n\nStopping afterwards matters as much as starting cleanly. Most people ask well and then fill the silence with reasons, which turns a simple question into a case that can be argued with.\n\nTypical phrases: \"Could you take Thursday?\", \"I'd like to swap weekends if that works.\", \"Can you have a look at this before five?\"\n\nThree parts, all short:\n\n1. Say it as a question, not a hint. \"Are you around Thursday?\" is a hint. \"Could you take Thursday?\" is a request.\n\n2. Make it specific — a vague ask is hard to say yes to. What, and when.\n\n3. Stop. Let them answer. The silence is theirs, not a gap you need to fill.\n\nMindset: asking is normal. You are giving them the chance to say yes, and leaving them free to say no.",
-      inputs: [
-        { q: "You need a colleague to cover a meeting.", a: "\"Could you take the Thursday meeting? I'm away.\"", bundle: 'free' },
-        { q: "You want a friend to help you move something.", a: "\"Could you give me an hour on Saturday? It's one wardrobe.\"", bundle: 'free' },
-        { q: "You have been hinting for a week and nothing has happened.", a: "\"I'll say it properly: could you do the shopping this week?\"", bundle: 'free' },
-        { q: "You want feedback on something you wrote.", a: "\"Would you read this and tell me if it makes sense?\"", bundle: 'free' },
-        { q: "You asked, and now you are about to explain why.", a: "(stop — the question is already complete)", bundle: 'free' },
-        { q: "You want to make it easy to refuse.", a: "\"Could you take Thursday? Say if it doesn't work — I'll find someone.\"", bundle: 'pro' },
-        { q: "The ask is bigger than usual.", a: "\"This is a bigger favour than normal. Could you have the dog for a week?\"", bundle: 'pro' },
-        { q: "You are asking someone more senior than you.", a: "\"Could I have twenty minutes this week? I'd like your view on something.\"", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "A Friendly No",
-      guideFront: "Give a friendly no when...",
-      guideBack: "A possible response.",
-      description: "Say no clearly, warmly, and without a pile of reasons. \"I can't this time — thanks for asking.\"\n\nIt works because the warmth and the clarity do different jobs, and people usually swap one for the other. Soften the no and it stops being a no: \"probably not\", \"I'll see\" and \"maybe\" all cost the other person a week of waiting. Sharpen it and it lands as a rejection of them.\n\nThe reasons are the trap. Every reason you add is something the other person can solve, and now you are negotiating a decision you had already made. One short reason is friendly. Three is an invitation to argue.\n\nTypical phrases: \"I can't, sorry — thanks for asking.\", \"Not this time.\", \"I'd like to, but I can't take anything else on this month.\"\n\nThree parts, and the order matters:\n\n1. Something warm — one clause, not a paragraph. \"Thanks for thinking of me.\"\n\n2. The word no, or something that plainly means it. Not \"probably not\".\n\n3. At most one reason, and only if you want to give one. You do not owe anyone the reason.\n\nMindset: soften the delivery, never the answer. A clear no given kindly is a favour — it lets them ask someone else today.",
-      inputs: [
-        { q: "A colleague asks you to take on another task.", a: "\"I can't take anything else on this month, sorry.\"", bundle: 'free' },
-        { q: "A friend invites you to something you do not want to go to.", a: "\"Not this one for me — have a good time, though.\"", bundle: 'free' },
-        { q: "You are about to say \"maybe\" to avoid saying no.", a: "\"I'll be honest rather than vague: no, not this time.\"", bundle: 'free' },
-        { q: "Someone asks a favour you cannot do.", a: "\"I can't, I'm sorry. Thanks for asking me, though.\"", bundle: 'free' },
-        { q: "You have said no and they are waiting for the reason.", a: "\"It just doesn't work for me this week.\"", bundle: 'free' },
-        { q: "You want to say no and keep the door open for another time.", a: "\"Not this time — ask me again in the spring, though.\"", bundle: 'pro' },
-        { q: "You are giving a third reason and can hear yourself doing it.", a: "(stop at the first one — it was enough)", bundle: 'pro' },
-        { q: "You would like to help with part of it.", a: "\"I can't do the whole day. I could come for the morning.\"", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Answer With a Hook",
-      guideFront: "Answer with a hook when...",
-      guideBack: "A possible response.",
-      description: "When someone asks about you, answer with something they can ask about. Not \"fine\" — \"good, though I've spent the whole week arguing with a printer.\"\n\nIt works because the person asking is trying to start a conversation, and a closed answer leaves them with nothing. They then have to think of a new question, which is work, and after two of those most people give up. A hook does their next move for them.\n\nIt also solves the problem people mean when they say they are bad at small talk. They are usually good at asking and empty at answering — so every conversation runs on their questions until they run out.\n\nTypical phrases: \"Good — busy week, mostly in a good way.\", \"Fine, apart from the drive.\", \"I'm alright. Slightly obsessed with a new thing, if I'm honest.\"\n\nThree sizes of hook:\n\n1. One extra detail — the smallest version, and enough. \"Good. Long week.\"\n\n2. A small complaint or oddity — invites the most, because people love a story. \"Fine, except I've locked myself out twice.\"\n\n3. Something you actually care about — for people you want to know better. \"Good. I've started running again, which is going badly.\"\n\nMindset: give them something to work with. The point is not to be interesting; it is to leave a door open.",
-      inputs: [
-        { q: "Someone asks how your week has been.", a: "\"Good — long, though. I've spent most of it arguing with a printer.\"", bundle: 'free' },
-        { q: "Someone asks what you have been up to.", a: "\"Not much, apart from a fairly disastrous attempt at making bread.\"", bundle: 'free' },
-        { q: "Someone asks what you do.", a: "\"I teach English. Mostly to teenagers, which is exactly as loud as it sounds.\"", bundle: 'free' },
-        { q: "You are about to answer \"fine\" and stop.", a: "\"Fine — well, fine apart from the drive here.\"", bundle: 'free' },
-        { q: "Someone asks how the weekend was.", a: "\"Quiet, which I badly needed. I did nothing on purpose.\"", bundle: 'free' },
-        { q: "You want to answer honestly without making it heavy.", a: "\"Mixed, honestly. Good week at work, less good everywhere else.\"", bundle: 'pro' },
-        { q: "You want to hand the question back after answering.", a: "\"Busy, but the good kind. You've had a week of it too, by the look of you.\"", bundle: 'pro' },
-        { q: "You do not want to say much but do not want to close it down.", a: "\"Not my best week. Nothing dramatic — tell me about yours.\"", bundle: 'pro' },
-      ]
-    },
-  ],
   startingconversations1: [
     {
       name: "Simple Greeting",
@@ -8404,6 +8306,104 @@ const collections = {
       ]
     },
   ],
+  firststrategies: [
+    {
+      name: "Opening Statement",
+      guideFront: "Open with a statement when...",
+      guideBack: "A possible response.",
+      description: "Say something instead of asking something. \"That queue is not moving.\" \"I have no idea what half of these are.\"\n\nIt works because a question hands the other person a job. They have to think of an answer, and if they are shy or tired or busy, the easiest answer is a short one — which ends the conversation you just started. A statement hands them material instead. They can agree, disagree, add to it, or laugh, and any of those is a conversation.\n\nIt also lets them out politely. Someone who does not want to talk can smile and say nothing, and nobody has been rude. An unanswered question is awkward; an unanswered remark is not.\n\nTypical phrases: \"This place is busier than I expected.\", \"I've been staring at this menu for five minutes.\", \"That's a serious amount of cake for one meeting.\"\n\nThree kinds of statement, and they are the ones you will use most:\n\n1. Something you are both looking at — the safest, because it is true for both of you. \"That painting is enormous.\"\n\n2. Something about you, right now — gives them something personal without asking for anything. \"I've come to the wrong building twice already.\"\n\n3. A small opinion — invites the most, risks the most. \"I think the old one was better.\"\n\nMindset: you are not performing. You are putting one true, ordinary sentence on the table for someone else to pick up.",
+      inputs: [
+        { q: "You are standing next to someone in a long queue.", a: "\"This queue has not moved in five minutes.\"", bundle: 'free' },
+        { q: "You arrive at a party where you only know the host.", a: "\"I've been here four minutes and I've already lost the person I came with.\"", bundle: 'free' },
+        { q: "You are next to a colleague waiting for a meeting to start.", a: "\"Whoever booked this room did not think about the sun.\"", bundle: 'free' },
+        { q: "You are at a counter and the person beside you is waiting too.", a: "\"I still have no idea what half of these are.\"", bundle: 'free' },
+        { q: "You want to start with something about yourself.", a: "\"I've walked past this place for a year and never come in.\"", bundle: 'free' },
+        { q: "You want to open with a small opinion rather than a fact.", a: "\"I think it was better before they redid it, honestly.\"", bundle: 'free' },
+        { q: "You are about to ask \"how are you?\" for the fourth time this week.", a: "\"You look like you've had the same week I have.\"", bundle: 'free' },
+        { q: "A question would put them on the spot and you do not want to.", a: "\"That's the third time that door has stuck today.\"", bundle: 'free' },
+      ]
+    },
+    {
+      name: "Follow the Thread",
+      guideFront: "Follow the thread when...",
+      guideBack: "A possible response.",
+      description: "Take one word out of what they just said and go into it. They say \"we drove back from Malmö on Sunday\" — you take Malmö, or the driving, or the Sunday.\n\nIt works because people put more into a sentence than they expect anyone to notice. Picking one piece up shows you were listening, and it saves you from the real problem in conversation, which is not shyness but having nothing to say next. You do not need something new. They just gave you three things.\n\nThe mistake it replaces is waiting for your turn. Most conversations stall because both people are searching for a fresh subject while a perfectly good one is lying between them.\n\nTypical phrases: \"Malmö — what were you doing down there?\", \"You said 'finally' — has it been dragging on?\", \"Back to what, though?\"\n\nThree threads worth pulling:\n\n1. The concrete detail — the place, the object, the number. Easiest, always works. \"Three hours? What was the traffic like?\"\n\n2. The odd word — the one that carries feeling. \"You said you 'survived' it.\"\n\n3. The thing they skipped past — often the interesting one. \"Wait, go back — you moved house in the same month?\"\n\nMindset: the next thing to say is already in what they said. Listen for the noun, not for a gap.",
+      inputs: [
+        { q: "They say they got back from Malmö on Sunday.", a: "\"Malmö — what took you down there?\"", bundle: 'free' },
+        { q: "They mention they finally finished a project.", a: "\"Finally? How long has that been going on?\"", bundle: 'free' },
+        { q: "They say the week has been a lot.", a: "\"A lot how? Work, or everything at once?\"", bundle: 'free' },
+        { q: "They mention a person you have not heard of.", a: "\"Who's Ella? I don't think you've mentioned her.\"", bundle: 'free' },
+        { q: "They say something in passing and move on.", a: "\"Hang on, go back — you did what on Saturday?\"", bundle: 'free' },
+        { q: "You want to follow the feeling rather than the fact.", a: "\"You said you 'survived' it. That's a word.\"", bundle: 'free' },
+        { q: "The thread you want is the detail they skipped.", a: "\"You went past the interesting bit. Start again from the boat.\"", bundle: 'free' },
+        { q: "You have nothing new to say and the pause is coming.", a: "\"You mentioned the new place earlier — how's that going?\"", bundle: 'free' },
+      ]
+    },
+    {
+      name: "Say It Back",
+      guideFront: "Say it back when...",
+      guideBack: "A possible response.",
+      description: "Repeat what you understood before you answer. \"So the deadline moved and nobody told you.\" Then answer.\n\nIt works for two reasons at once. It proves you were listening, which is most of what people want. And it gives you a few seconds to think — you are talking, so the silence is filled, but you have not committed to anything yet.\n\nIt is also the fastest way to find out you had it wrong. Half the arguments people have are about two different versions of what was said, and saying it back catches that before it costs anyone an evening.\n\nTypical phrases: \"So what you're saying is...\", \"Let me check I've got this...\", \"So the problem is the timing, not the work itself.\"\n\nThree ways to do it:\n\n1. Short and plain — the standard. \"So it's moved to Friday.\"\n\n2. Name the part that matters — shows you got the point, not just the words. \"So the issue is that nobody asked you.\"\n\n3. Check rather than state — invites the correction. \"Have I got that right?\"\n\nMindset: say it back in your own words, not theirs. Repeating their exact sentence sounds like a technique. Rewording it proves you understood.",
+      inputs: [
+        { q: "A colleague explains a problem with several parts.", a: "\"So the deadline moved and nobody told you until today.\"", bundle: 'free' },
+        { q: "A friend is upset and the story is tangled.", a: "\"Let me check I've got this — she said yes, then changed her mind on the day?\"", bundle: 'free' },
+        { q: "You are about to disagree and want to be sure first.", a: "\"So you'd rather we didn't go at all. Have I got that right?\"", bundle: 'free' },
+        { q: "Someone gives you a long instruction.", a: "\"So I send it first, then copy you in. Yes?\"", bundle: 'free' },
+        { q: "You need a second before answering something difficult.", a: "\"So the choice is stay another year, or leave now with nothing lined up.\"", bundle: 'free' },
+        { q: "You want to name the part that actually matters to them.", a: "\"So it's not the extra work. It's that nobody asked you first.\"", bundle: 'free' },
+        { q: "You suspect you have understood it differently.", a: "\"I want to say it back, because I think I've heard it wrong.\"", bundle: 'free' },
+        { q: "They are going in circles and you want to steady it.", a: "\"Can I stop you and say what I've got so far?\"", bundle: 'free' },
+      ]
+    },
+    {
+      name: "Ask Plainly",
+      guideFront: "Ask plainly when...",
+      guideBack: "A possible response.",
+      description: "Say what you want, in one sentence, without building up to it. \"Could you take the Thursday meeting?\" Then stop talking.\n\nIt works because the long run-up is what makes a request awkward, not the request. Three sentences of apology before the ask tell the other person that you think you are imposing — so by the time it arrives, they think so too.\n\nStopping afterwards matters as much as starting cleanly. Most people ask well and then fill the silence with reasons, which turns a simple question into a case that can be argued with.\n\nTypical phrases: \"Could you take Thursday?\", \"I'd like to swap weekends if that works.\", \"Can you have a look at this before five?\"\n\nThree parts, all short:\n\n1. Say it as a question, not a hint. \"Are you around Thursday?\" is a hint. \"Could you take Thursday?\" is a request.\n\n2. Make it specific — a vague ask is hard to say yes to. What, and when.\n\n3. Stop. Let them answer. The silence is theirs, not a gap you need to fill.\n\nMindset: asking is normal. You are giving them the chance to say yes, and leaving them free to say no.",
+      inputs: [
+        { q: "You need a colleague to cover a meeting.", a: "\"Could you take the Thursday meeting? I'm away.\"", bundle: 'free' },
+        { q: "You want a friend to help you move something.", a: "\"Could you give me an hour on Saturday? It's one wardrobe.\"", bundle: 'free' },
+        { q: "You have been hinting for a week and nothing has happened.", a: "\"I'll say it properly: could you do the shopping this week?\"", bundle: 'free' },
+        { q: "You want feedback on something you wrote.", a: "\"Would you read this and tell me if it makes sense?\"", bundle: 'free' },
+        { q: "You asked, and now you are about to explain why.", a: "(stop — the question is already complete)", bundle: 'free' },
+        { q: "You want to make it easy to refuse.", a: "\"Could you take Thursday? Say if it doesn't work — I'll find someone.\"", bundle: 'free' },
+        { q: "The ask is bigger than usual.", a: "\"This is a bigger favour than normal. Could you have the dog for a week?\"", bundle: 'free' },
+        { q: "You are asking someone more senior than you.", a: "\"Could I have twenty minutes this week? I'd like your view on something.\"", bundle: 'free' },
+      ]
+    },
+    {
+      name: "A Friendly No",
+      guideFront: "Give a friendly no when...",
+      guideBack: "A possible response.",
+      description: "Say no clearly, warmly, and without a pile of reasons. \"I can't this time — thanks for asking.\"\n\nIt works because the warmth and the clarity do different jobs, and people usually swap one for the other. Soften the no and it stops being a no: \"probably not\", \"I'll see\" and \"maybe\" all cost the other person a week of waiting. Sharpen it and it lands as a rejection of them.\n\nThe reasons are the trap. Every reason you add is something the other person can solve, and now you are negotiating a decision you had already made. One short reason is friendly. Three is an invitation to argue.\n\nTypical phrases: \"I can't, sorry — thanks for asking.\", \"Not this time.\", \"I'd like to, but I can't take anything else on this month.\"\n\nThree parts, and the order matters:\n\n1. Something warm — one clause, not a paragraph. \"Thanks for thinking of me.\"\n\n2. The word no, or something that plainly means it. Not \"probably not\".\n\n3. At most one reason, and only if you want to give one. You do not owe anyone the reason.\n\nMindset: soften the delivery, never the answer. A clear no given kindly is a favour — it lets them ask someone else today.",
+      inputs: [
+        { q: "A colleague asks you to take on another task.", a: "\"I can't take anything else on this month, sorry.\"", bundle: 'free' },
+        { q: "A friend invites you to something you do not want to go to.", a: "\"Not this one for me — have a good time, though.\"", bundle: 'free' },
+        { q: "You are about to say \"maybe\" to avoid saying no.", a: "\"I'll be honest rather than vague: no, not this time.\"", bundle: 'free' },
+        { q: "Someone asks a favour you cannot do.", a: "\"I can't, I'm sorry. Thanks for asking me, though.\"", bundle: 'free' },
+        { q: "You have said no and they are waiting for the reason.", a: "\"It just doesn't work for me this week.\"", bundle: 'free' },
+        { q: "You want to say no and keep the door open for another time.", a: "\"Not this time — ask me again in the spring, though.\"", bundle: 'free' },
+        { q: "You are giving a third reason and can hear yourself doing it.", a: "(stop at the first one — it was enough)", bundle: 'free' },
+        { q: "You would like to help with part of it.", a: "\"I can't do the whole day. I could come for the morning.\"", bundle: 'free' },
+      ]
+    },
+    {
+      name: "Answer With a Hook",
+      guideFront: "Answer with a hook when...",
+      guideBack: "A possible response.",
+      description: "When someone asks about you, answer with something they can ask about. Not \"fine\" — \"good, though I've spent the whole week arguing with a printer.\"\n\nIt works because the person asking is trying to start a conversation, and a closed answer leaves them with nothing. They then have to think of a new question, which is work, and after two of those most people give up. A hook does their next move for them.\n\nIt also solves the problem people mean when they say they are bad at small talk. They are usually good at asking and empty at answering — so every conversation runs on their questions until they run out.\n\nTypical phrases: \"Good — busy week, mostly in a good way.\", \"Fine, apart from the drive.\", \"I'm alright. Slightly obsessed with a new thing, if I'm honest.\"\n\nThree sizes of hook:\n\n1. One extra detail — the smallest version, and enough. \"Good. Long week.\"\n\n2. A small complaint or oddity — invites the most, because people love a story. \"Fine, except I've locked myself out twice.\"\n\n3. Something you actually care about — for people you want to know better. \"Good. I've started running again, which is going badly.\"\n\nMindset: give them something to work with. The point is not to be interesting; it is to leave a door open.",
+      inputs: [
+        { q: "Someone asks how your week has been.", a: "\"Good — long, though. I've spent most of it arguing with a printer.\"", bundle: 'free' },
+        { q: "Someone asks what you have been up to.", a: "\"Not much, apart from a fairly disastrous attempt at making bread.\"", bundle: 'free' },
+        { q: "Someone asks what you do.", a: "\"I teach English. Mostly to teenagers, which is exactly as loud as it sounds.\"", bundle: 'free' },
+        { q: "You are about to answer \"fine\" and stop.", a: "\"Fine — well, fine apart from the drive here.\"", bundle: 'free' },
+        { q: "Someone asks how the weekend was.", a: "\"Quiet, which I badly needed. I did nothing on purpose.\"", bundle: 'free' },
+        { q: "You want to answer honestly without making it heavy.", a: "\"Mixed, honestly. Good week at work, less good everywhere else.\"", bundle: 'free' },
+        { q: "You want to hand the question back after answering.", a: "\"Busy, but the good kind. You've had a week of it too, by the look of you.\"", bundle: 'free' },
+        { q: "You do not want to say much but do not want to close it down.", a: "\"Not my best week. Nothing dramatic — tell me about yours.\"", bundle: 'free' },
+      ]
+    },
+  ],
 };
 
 // ─── COLLECTIONS MODE DATA ───────────────────────────────────────────────────
@@ -8626,53 +8626,6 @@ const collectionsModeData = {
         { q: "Standing by the coffee at a work event, silence settling in.", a: "\"This coffee is doing heavy lifting today. How's it going?\" (status)", bundle: 'pro' },
         { q: "Someone sits next to you at a talk that hasn't started.", a: "\"I heard good things about this speaker. Have you seen them before?\" (opinion)", bundle: 'pro' },
         { q: "You join a table of strangers at a shared dinner.", a: "\"A friend dragged me along tonight, happily. How do you all know each other?\" (background)", bundle: 'pro' },
-      ]
-    },
-  ],
-  firststrategies: [
-    {
-      name: "When You Speak First",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
-      description: "Opening Statement and Ask Plainly — the two strategies for when nothing has happened yet and you are the one who has to start.\n\nThey are the same shape: one short sentence, then stop. What differs is what you want. Use Opening Statement when you want a conversation and have no particular business. Use Ask Plainly when you want something specific and the conversation is only the way to get it.\n\nThe mistake is the same in both. People pad the front of it — the run-up before the request, the throat-clearing before the remark — and the padding is what makes it awkward.\n\nMindset: one sentence, then let them answer.",
-      inputs: [
-        { q: "You are standing next to someone in a long queue.", a: "\"This queue has not moved in five minutes.\" [Opening Statement]", bundle: 'free' },
-        { q: "You need a colleague to cover Thursday for you.", a: "\"Could you take the Thursday meeting? I'm away.\" [Ask Plainly]", bundle: 'free' },
-        { q: "You are at a party and only know the host.", a: "\"I've been here four minutes and already lost the person I came with.\" [Opening Statement]", bundle: 'free' },
-        { q: "You have been hinting for a week and nothing has changed.", a: "\"I'll say it properly: could you do the shopping this week?\" [Ask Plainly]", bundle: 'free' },
-        { q: "A question would put them on the spot.", a: "\"That's the third time that door has stuck today.\" [Opening Statement]", bundle: 'free' },
-        { q: "You want something and want it to be easy to refuse.", a: "\"Could you have a look before five? Say if you can't.\" [Ask Plainly]", bundle: 'free' },
-        { q: "You want to open with something about yourself.", a: "\"I've walked past this place for a year and never come in.\" [Opening Statement]", bundle: 'free' },
-      ]
-    },
-    {
-      name: "When You Answer",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
-      description: "Follow the Thread, Say It Back, A Friendly No and Answer With a Hook — the four for when someone has already said something and it is your turn.\n\nChoosing between them is easier than it looks, because they answer different things. If they told you something, follow the thread. If they told you something complicated or upsetting, say it back first. If they asked you for something you cannot do, give a friendly no. If they asked about you, answer with a hook.\n\nOnly one of the four is about you. The other three keep the attention where they put it, which is why a conversation built on these rarely feels like an interview.\n\nMindset: what they just did tells you which one to use.",
-      inputs: [
-        { q: "They mention they got back from Malmö on Sunday.", a: "\"Malmö — what took you down there?\" [Follow the Thread]", bundle: 'free' },
-        { q: "A colleague explains a problem with several moving parts.", a: "\"So the deadline moved and nobody told you until today.\" [Say It Back]", bundle: 'free' },
-        { q: "Someone asks how your week has been.", a: "\"Good — long, though. I've spent it arguing with a printer.\" [Answer With a Hook]", bundle: 'free' },
-        { q: "A friend asks you to help with something you cannot do.", a: "\"I can't this time, sorry. Thanks for asking, though.\" [A Friendly No]", bundle: 'free' },
-        { q: "A friend is upset and the story is tangled.", a: "\"Let me check I've got this — she said yes, then changed her mind?\" [Say It Back]", bundle: 'free' },
-        { q: "Someone asks what you do.", a: "\"I teach English. Mostly to teenagers, which is as loud as it sounds.\" [Answer With a Hook]", bundle: 'free' },
-        { q: "They said something in passing and moved on.", a: "\"Hang on, go back — you did what on Saturday?\" [Follow the Thread]", bundle: 'free' },
-      ]
-    },
-    {
-      name: "All Six",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
-      description: "Every strategy in the pack, mixed. This is the real test, because in a conversation nobody tells you which kind of moment you are in.\n\nThe six divide into three pairs by what they do. Opening Statement and Ask Plainly start something. Follow the Thread and Say It Back work with what the other person said. A Friendly No and Answer With a Hook are the two ways of answering something aimed at you — one declines, one opens.\n\nIf you are unsure, ask what the other person just did. Almost every situation in this collection is decided by that alone.\n\nMindset: you do not need the best strategy. You need one that suits what just happened.",
-      inputs: [
-        { q: "You are next to a colleague waiting for a meeting to start.", a: "\"Whoever booked this room did not think about the sun.\" [Opening Statement]", bundle: 'free' },
-        { q: "They say they finally finished a project.", a: "\"Finally? How long has that been dragging on?\" [Follow the Thread]", bundle: 'free' },
-        { q: "Someone gives you a long instruction and you want to be sure.", a: "\"So I send it first, then copy you in. Yes?\" [Say It Back]", bundle: 'free' },
-        { q: "You need an hour of someone's Saturday.", a: "\"Could you give me an hour on Saturday? It's one wardrobe.\" [Ask Plainly]", bundle: 'free' },
-        { q: "A colleague asks you to take on another task this month.", a: "\"I can't take anything else on this month, sorry.\" [A Friendly No]", bundle: 'free' },
-        { q: "Someone asks what you have been up to.", a: "\"Not much, apart from a disastrous attempt at making bread.\" [Answer With a Hook]", bundle: 'free' },
-        { q: "You are about to say \"maybe\" to avoid saying no.", a: "\"I'll be honest rather than vague: no, not this time.\" [A Friendly No]", bundle: 'free' },
       ]
     },
   ],
@@ -11779,6 +11732,56 @@ const collectionsModeData = {
         { q: "You want to move her away from the loud music.", a: "\"It's too loud here and my legs are killing me. Let's go sit on those couches over there.\" [The \"What Do I Want?\" Move]", bundle: 'pro' },
         { q: "You want to win over her skeptical friend.", a: "\"Hey, you have a very expressive face. I bet you're the one in this group who actually makes all the decisions.\" [Handling the Posse]", bundle: 'pro' },
         { q: "You want to ask her a highly polarizing question.", a: "\"What would you do right now if you knew there was no chance I'd reject you?\" [The \"What Do I Want?\" Move]", bundle: 'pro' },
+      ]
+    },
+  ],
+  firststrategies: [
+    {
+      name: "When You Speak First",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible response, with the strategy in brackets.",
+      description: "Opening Statement and Ask Plainly — the two strategies for when nothing has happened yet and you are the one who has to start.\n\nThey are the same shape: one short sentence, then stop. What differs is what you want. Use Opening Statement when you want a conversation and have no particular business. Use Ask Plainly when you want something specific and the conversation is only the way to get it.\n\nThe mistake is the same in both. People pad the front of it — the run-up before the request, the throat-clearing before the remark — and the padding is what makes it awkward.\n\nMindset: one sentence, then let them answer.",
+      inputs: [
+        { q: "You are standing next to someone in a long queue.", a: "\"This queue has not moved in five minutes.\" [Opening Statement]", bundle: 'free' },
+        { q: "You need a colleague to cover Thursday for you.", a: "\"Could you take the Thursday meeting? I'm away.\" [Ask Plainly]", bundle: 'free' },
+        { q: "You are at a party and only know the host.", a: "\"I've been here four minutes and already lost the person I came with.\" [Opening Statement]", bundle: 'free' },
+        { q: "You have been hinting for a week and nothing has changed.", a: "\"I'll say it properly: could you do the shopping this week?\" [Ask Plainly]", bundle: 'free' },
+        { q: "A question would put them on the spot.", a: "\"That's the third time that door has stuck today.\" [Opening Statement]", bundle: 'free' },
+        { q: "You want something and want it to be easy to refuse.", a: "\"Could you have a look before five? Say if you can't.\" [Ask Plainly]", bundle: 'free' },
+        { q: "You want to open with something about yourself.", a: "\"I've walked past this place for a year and never come in.\" [Opening Statement]", bundle: 'free' },
+        { q: "You want twenty minutes with someone more senior than you.", a: "\"Could I have twenty minutes this week? I'd like your view on something.\" [Ask Plainly]", bundle: 'free' },
+      ]
+    },
+    {
+      name: "When You Answer",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible response, with the strategy in brackets.",
+      description: "Follow the Thread, Say It Back, A Friendly No and Answer With a Hook — the four for when someone has already said something and it is your turn.\n\nChoosing between them is easier than it looks, because they answer different things. If they told you something, follow the thread. If they told you something complicated or upsetting, say it back first. If they asked you for something you cannot do, give a friendly no. If they asked about you, answer with a hook.\n\nOnly one of the four is about you. The other three keep the attention where they put it, which is why a conversation built on these rarely feels like an interview.\n\nMindset: what they just did tells you which one to use.",
+      inputs: [
+        { q: "They mention they got back from Malmö on Sunday.", a: "\"Malmö — what took you down there?\" [Follow the Thread]", bundle: 'free' },
+        { q: "A colleague explains a problem with several moving parts.", a: "\"So the deadline moved and nobody told you until today.\" [Say It Back]", bundle: 'free' },
+        { q: "Someone asks how your week has been.", a: "\"Good — long, though. I've spent it arguing with a printer.\" [Answer With a Hook]", bundle: 'free' },
+        { q: "A friend asks you to help with something you cannot do.", a: "\"I can't this time, sorry. Thanks for asking, though.\" [A Friendly No]", bundle: 'free' },
+        { q: "A friend is upset and the story is tangled.", a: "\"Let me check I've got this — she said yes, then changed her mind?\" [Say It Back]", bundle: 'free' },
+        { q: "Someone asks what you do.", a: "\"I teach English. Mostly to teenagers, which is as loud as it sounds.\" [Answer With a Hook]", bundle: 'free' },
+        { q: "They said something in passing and moved on.", a: "\"Hang on, go back — you did what on Saturday?\" [Follow the Thread]", bundle: 'free' },
+        { q: "A neighbour asks if you can take a delivery in every day this week.", a: "\"I can't do every day, sorry — thanks for asking, though.\" [A Friendly No]", bundle: 'free' },
+      ]
+    },
+    {
+      name: "All Six",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible response, with the strategy in brackets.",
+      description: "Every strategy in the pack, mixed. This is the real test, because in a conversation nobody tells you which kind of moment you are in.\n\nThe six divide into three pairs by what they do. Opening Statement and Ask Plainly start something. Follow the Thread and Say It Back work with what the other person said. A Friendly No and Answer With a Hook are the two ways of answering something aimed at you — one declines, one opens.\n\nIf you are unsure, ask what the other person just did. Almost every situation in this collection is decided by that alone.\n\nMindset: you do not need the best strategy. You need one that suits what just happened.",
+      inputs: [
+        { q: "You are next to a colleague waiting for a meeting to start.", a: "\"Whoever booked this room did not think about the sun.\" [Opening Statement]", bundle: 'free' },
+        { q: "They say they finally finished a project.", a: "\"Finally? How long has that been dragging on?\" [Follow the Thread]", bundle: 'free' },
+        { q: "Someone gives you a long instruction and you want to be sure.", a: "\"So I send it first, then copy you in. Yes?\" [Say It Back]", bundle: 'free' },
+        { q: "You need an hour of someone's Saturday.", a: "\"Could you give me an hour on Saturday? It's one wardrobe.\" [Ask Plainly]", bundle: 'free' },
+        { q: "A colleague asks you to take on another task this month.", a: "\"I can't take anything else on this month, sorry.\" [A Friendly No]", bundle: 'free' },
+        { q: "Someone asks what you have been up to.", a: "\"Not much, apart from a disastrous attempt at making bread.\" [Answer With a Hook]", bundle: 'free' },
+        { q: "You are about to say \"maybe\" to avoid saying no.", a: "\"I'll be honest rather than vague: no, not this time.\" [A Friendly No]", bundle: 'free' },
+        { q: "They mention in passing that they have taken something up.", a: "\"Started when? I didn't know you'd got into that.\" [Follow the Thread]", bundle: 'free' },
       ]
     },
   ],

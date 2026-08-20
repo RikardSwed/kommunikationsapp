@@ -431,60 +431,6 @@ const mindsetCollections = {
       ]
     },
   ],
-  firststrategies: [
-    {
-      name: "You Do Not Have to Be Interesting",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
-      description: "The belief that a conversation is a performance, and that the price of entry is something worth saying.\n\nIt is the single biggest reason people say nothing. Every ordinary remark gets measured against an imagined standard and thrown away, and the silence that results is far more awkward than the remark would have been.\n\nWhat people actually respond to is being spoken to. The content of the first sentence matters remarkably little.\n\nMindset: the bar is a true, ordinary sentence. That is the whole bar.",
-      inputs: [
-        { q: "I can't think of anything worth saying.", a: "It doesn't have to be worth saying. \"That queue hasn't moved\" is enough.", bundle: 'free' },
-        { q: "They'll think it's a stupid thing to say.", a: "Nobody remembers the sentence. They remember that someone spoke to them.", bundle: 'free' },
-        { q: "I'm not a natural at this.", a: "Almost nobody is. The ones who look natural are using about six things on repeat.", bundle: 'free' },
-        { q: "If I start it, I'll have to keep it going.", a: "They get a turn too. That's what makes it a conversation and not a speech.", bundle: 'free' },
-        { q: "Everyone else finds this easy.", a: "Everyone else is looking at their phone in the queue for exactly the same reason you are.", bundle: 'free' },
-      ]
-    },
-    {
-      name: "A Question Is Not Always the Friendliest Thing",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
-      description: "Questions feel polite, so people reach for them first. But a question is also a small demand — it requires an answer, on the spot, from someone who may be tired or busy or shy.\n\nA statement asks for nothing. It can be picked up or let go, and either is fine. That is why it opens more conversations than a question does, and why it never puts anyone on the spot.\n\nThis matters most with people you do not know, where a question can feel like being stopped in the street.\n\nMindset: give first, ask later. The question is better once there is something to be curious about.",
-      inputs: [
-        { q: "Asking about them is the polite way in.", a: "It's also work for them. A remark lets them choose whether to join.", bundle: 'free' },
-        { q: "If I don't ask, I'm making it about me.", a: "One sentence about the room isn't about you. It's about the room.", bundle: 'free' },
-        { q: "They didn't answer my question and now it's worse.", a: "That's the risk a question carries. An unanswered remark isn't awkward at all.", bundle: 'free' },
-        { q: "I'll ask something to show I'm interested.", a: "Show it by picking up what they've already said. That proves more than a new question.", bundle: 'free' },
-        { q: "Statements sound like I'm just talking at them.", a: "Two in a row does. One, then listening, is an opening.", bundle: 'free' },
-      ]
-    },
-    {
-      name: "No Is Not a Rejection of the Person",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
-      description: "The reason people say \"maybe\" is not that they are unclear. It is that a no feels like a verdict on the person asking, so the answer gets padded until it means nothing.\n\nThe padding is what actually costs them something. A vague no leaves them waiting, planning around you, and asking again. A clear one lets them ask someone else today.\n\nThe warmth belongs in the delivery, not in the answer — and it does not require reasons.\n\nMindset: a kind no is a favour. An unclear one is not kindness, it is postponement.",
-      inputs: [
-        { q: "They'll be hurt if I say no.", a: "They'll be more inconvenienced by a maybe that turns into a no next week.", bundle: 'free' },
-        { q: "I need a good enough reason first.", a: "You don't owe a reason. \"I can't this time\" is a complete sentence.", bundle: 'free' },
-        { q: "If I explain properly they'll understand.", a: "Every reason you add is something they can solve. Then you're negotiating.", bundle: 'free' },
-        { q: "Saying no makes me difficult.", a: "It makes you predictable. People trust a yes more when a no is possible.", bundle: 'free' },
-        { q: "I'll just do it, it's easier.", a: "It's easier today. Notice what it costs on Thursday.", bundle: 'free' },
-      ]
-    },
-    {
-      name: "Give Them Something to Work With",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
-      description: "The habit of answering questions about yourself as briefly as possible — fine, not much, the usual — and handing the conversation straight back.\n\nIt feels modest. What it actually does is put the whole job on the other person: they have to keep inventing questions, and after two or three closed answers most people conclude you would rather not talk.\n\nA hook is not a monologue. It is one extra detail, offered so there is somewhere to go next.\n\nMindset: leaving a door open is not taking up space. It is the polite half of being asked.",
-      inputs: [
-        { q: "They don't really want to hear about my week.", a: "They asked. A question is an offer, not a formality.", bundle: 'free' },
-        { q: "I don't want to go on about myself.", a: "One detail isn't going on. \"Fine, apart from the drive\" is the whole technique.", bundle: 'free' },
-        { q: "Nothing interesting has happened to me.", a: "The printer, the bread, the locked door. Small and true beats interesting.", bundle: 'free' },
-        { q: "It's better to ask them back straight away.", a: "Answer first, then ask. Otherwise they're carrying the whole thing alone.", bundle: 'free' },
-        { q: "If I say more they'll ask more.", a: "Yes. That's the conversation you said you wanted.", bundle: 'free' },
-      ]
-    },
-  ],
   startingconversations1: [
     {
       name: "It Does Not Have to Be Interesting",
@@ -3696,6 +3642,104 @@ const mindsetCollections = {
         { q: "I need this specific girl to like me.", a: "\"I am outcome independent. I want sex, but I'm completely okay if it doesn't happen with her. There's another girl coming.\"", bundle: 'pro' },
         { q: "I'm worried I'll look like a player.", a: "\"If I'm being my honest self and taking risks, I'm an enhancement to her life. A player with heart is a win for her.\"", bundle: 'pro' },
         { q: "I feel like a beginner and it's embarrassing.", a: "\"We were all beginners once. My job is just to walk over and make a noise. Everything else is practice.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  firststrategies: [
+    {
+      name: "You Do Not Have to Be Interesting",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The belief that a conversation is a performance, and that the price of entry is something worth saying.\n\nIt is the single biggest reason people say nothing. Every ordinary remark gets measured against an imagined standard and thrown away, and the silence that results is far more awkward than the remark would have been.\n\nWhat people actually respond to is being spoken to. The content of the first sentence matters remarkably little.\n\nMindset: the bar is a true, ordinary sentence. That is the whole bar.",
+      inputs: [
+        { q: "I can't think of anything worth saying.", a: "It doesn't have to be worth saying. \"That queue hasn't moved\" is enough.", bundle: 'free' },
+        { q: "They'll think it's a stupid thing to say.", a: "Nobody remembers the sentence. They remember that someone spoke to them.", bundle: 'free' },
+        { q: "I'm not a natural at this.", a: "Almost nobody is. The ones who look natural are using about six things on repeat.", bundle: 'free' },
+        { q: "If I start it, I'll have to keep it going.", a: "They get a turn too. That's what makes it a conversation and not a speech.", bundle: 'free' },
+        { q: "Everyone else finds this easy.", a: "Everyone else is looking at their phone in the queue for exactly the same reason you are.", bundle: 'free' },
+        { q: "I'll say something and then have nothing to follow it with.", a: "You won't need one. They answer, and their answer is your next line.", bundle: 'free' },
+        { q: "There's nothing in here worth remarking on anyway.", a: "There never is. The remark isn't about the room — it's about starting.", bundle: 'free' },
+        { q: "I've left it too long now. It would be strange to speak.", a: "Nobody is timing it. People notice you far less than you think they do.", bundle: 'free' },
+      ]
+    },
+    {
+      name: "A Question Is Not Always the Friendliest Thing",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "Questions feel polite, so people reach for them first. But a question is also a small demand — it requires an answer, on the spot, from someone who may be tired or busy or shy.\n\nA statement asks for nothing. It can be picked up or let go, and either is fine. That is why it opens more conversations than a question does, and why it never puts anyone on the spot.\n\nThis matters most with people you do not know, where a question can feel like being stopped in the street.\n\nMindset: give first, ask later. The question is better once there is something to be curious about.",
+      inputs: [
+        { q: "Asking about them is the polite way in.", a: "It's also work for them. A remark lets them choose whether to join.", bundle: 'free' },
+        { q: "If I don't ask, I'm making it about me.", a: "One sentence about the room isn't about you. It's about the room.", bundle: 'free' },
+        { q: "They didn't answer my question and now it's worse.", a: "That's the risk a question carries. An unanswered remark isn't awkward at all.", bundle: 'free' },
+        { q: "I'll ask something to show I'm interested.", a: "Show it by picking up what they've already said. That proves more than a new question.", bundle: 'free' },
+        { q: "Statements sound like I'm just talking at them.", a: "Two in a row does. One, then listening, is an opening.", bundle: 'free' },
+        { q: "A statement feels blunter than a question.", a: "Blunt is a tone, not a form. \"That queue\" said warmly is not blunt.", bundle: 'free' },
+        { q: "What if they don't pick it up?", a: "Then nothing has happened. That is exactly what a remark is for.", bundle: 'free' },
+        { q: "Polite people ask questions.", a: "Polite people also let others off. A remark does that; a question can't.", bundle: 'free' },
+      ]
+    },
+    {
+      name: "No Is Not a Rejection of the Person",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The reason people say \"maybe\" is not that they are unclear. It is that a no feels like a verdict on the person asking, so the answer gets padded until it means nothing.\n\nThe padding is what actually costs them something. A vague no leaves them waiting, planning around you, and asking again. A clear one lets them ask someone else today.\n\nThe warmth belongs in the delivery, not in the answer — and it does not require reasons.\n\nMindset: a kind no is a favour. An unclear one is not kindness, it is postponement.",
+      inputs: [
+        { q: "They'll be hurt if I say no.", a: "They'll be more inconvenienced by a maybe that turns into a no next week.", bundle: 'free' },
+        { q: "I need a good enough reason first.", a: "You don't owe a reason. \"I can't this time\" is a complete sentence.", bundle: 'free' },
+        { q: "If I explain properly they'll understand.", a: "Every reason you add is something they can solve. Then you're negotiating.", bundle: 'free' },
+        { q: "Saying no makes me difficult.", a: "It makes you predictable. People trust a yes more when a no is possible.", bundle: 'free' },
+        { q: "I'll just do it, it's easier.", a: "It's easier today. Notice what it costs on Thursday.", bundle: 'free' },
+        { q: "They asked me specifically, so it must matter.", a: "It might. That still doesn't make a no unkind — only slower to arrive.", bundle: 'free' },
+        { q: "I said yes last time, so I can't say no now.", a: "Last time was last time. A yes isn't a subscription.", bundle: 'free' },
+        { q: "I'll say no, but soften it so it barely counts.", a: "Then it isn't a no, and they'll be back on Thursday to ask again.", bundle: 'free' },
+      ]
+    },
+    {
+      name: "Give Them Something to Work With",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The habit of answering questions about yourself as briefly as possible — fine, not much, the usual — and handing the conversation straight back.\n\nIt feels modest. What it actually does is put the whole job on the other person: they have to keep inventing questions, and after two or three closed answers most people conclude you would rather not talk.\n\nA hook is not a monologue. It is one extra detail, offered so there is somewhere to go next.\n\nMindset: leaving a door open is not taking up space. It is the polite half of being asked.",
+      inputs: [
+        { q: "They don't really want to hear about my week.", a: "They asked. A question is an offer, not a formality.", bundle: 'free' },
+        { q: "I don't want to go on about myself.", a: "One detail isn't going on. \"Fine, apart from the drive\" is the whole technique.", bundle: 'free' },
+        { q: "Nothing interesting has happened to me.", a: "The printer, the bread, the locked door. Small and true beats interesting.", bundle: 'free' },
+        { q: "It's better to ask them back straight away.", a: "Answer first, then ask. Otherwise they're carrying the whole thing alone.", bundle: 'free' },
+        { q: "If I say more they'll ask more.", a: "Yes. That's the conversation you said you wanted.", bundle: 'free' },
+        { q: "My week has been dull. There's nothing to hand over.", a: "Dull is fine. \"Quiet, which I badly needed\" is a hook.", bundle: 'free' },
+        { q: "They're only asking to be polite.", a: "Maybe. Answer properly anyway, and find out which it was.", bundle: 'free' },
+        { q: "If I say something real they'll have to respond to it.", a: "One detail isn't a confession. It's a door, and they can walk through it or not.", bundle: 'free' },
+      ]
+    },
+    {
+      name: "Asking Is Not Imposing",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The belief that a request puts the other person in a difficult position — so instead of asking, you hint, and hope they offer.\n\nHinting feels considerate. What it actually does is protect you from hearing no, at the cost of almost never working. The other person either misses it or notices it and now has to decide without being asked, which is worse for them, not better.\n\nA plain request is the considerate version, because it leaves the no available. The whole art is asking in a way that makes refusing easy.\n\nMindset: you are giving them a choice, not taking one away.",
+      inputs: [
+        { q: "If I ask, they'll feel they have to say yes.", a: "Only if you make it hard to refuse. Ask plainly and leave the no on the table.", bundle: 'free' },
+        { q: "I'll drop a hint and see if they offer.", a: "A hint spares you the no. It also almost never gets you the thing.", bundle: 'free' },
+        { q: "They're busy. It isn't fair to ask.", a: "They know what they've got on. Let them be the one who decides.", bundle: 'free' },
+        { q: "I should have a good reason ready first.", a: "Reasons turn a question into a case. Ask, then stop talking.", bundle: 'free' },
+        { q: "I'd rather struggle than put someone out.", a: "You'd help them. The reluctance is about you, not about them.", bundle: 'free' },
+        { q: "If they say no it'll be awkward.", a: "A no is an answer, not an incident. It's the maybe that's awkward.", bundle: 'free' },
+        { q: "I'll ask for less than I need, to be safe.", a: "Then you'll have to ask twice. Ask for the thing you actually want.", bundle: 'free' },
+        { q: "Asking makes me look like I can't cope.", a: "Asking early looks organised. Asking late looks desperate.", bundle: 'free' },
+      ]
+    },
+    {
+      name: "A Pause Is Not a Failure",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The belief that silence means the conversation has broken — which sends people hunting for a new subject at exactly the moment the old one is still open.\n\nA pause is where people think. It is two seconds long and only one of you is treating it as a verdict. The damage comes from what the panic produces: a change of subject, which throws away everything already on the table.\n\nThe move is to go backwards instead. Anything said in the last ten minutes is still available, and returning to it reads as interest rather than as a rescue.\n\nMindset: the gap is not the problem. What you do to escape it is.",
+      inputs: [
+        { q: "It's gone quiet. I've lost them.", a: "A pause is where people think. Two seconds is not a verdict.", bundle: 'free' },
+        { q: "I need a new subject, quickly.", a: "You need an old one. Anything from the last ten minutes is still open.", bundle: 'free' },
+        { q: "The silence is my fault.", a: "There are two of you. Neither owes the room a sentence every second.", bundle: 'free' },
+        { q: "I'll fill it with anything rather than sit in it.", a: "Anything is how a conversation ends up nowhere. Go back instead.", bundle: 'free' },
+        { q: "If I return to something they said, it'll seem odd.", a: "Going back reads as interest. Changing the subject reads as rescue.", bundle: 'free' },
+        { q: "They've stopped talking, so they want to leave.", a: "Or they're waiting. Say something back and find out which.", bundle: 'free' },
+        { q: "I need a second before I answer that.", a: "Take it out loud. \"So the choice is stay or go\" buys you the second.", bundle: 'free' },
+        { q: "Good conversations don't have gaps.", a: "They are mostly gaps. The comfortable ones are what makes them good.", bundle: 'free' },
       ]
     },
   ],

@@ -543,7 +543,6 @@ applyInputCounterVisibility();
     persuasionandinfluence2: { label: 'Persuasion and Influence — Pt. 2', minLevel: 'program' }, // Persuasion & Negotiation, Part 2
     negotiationandcompromise: { label: 'Negotiation and Compromise', minLevel: 'program' },      // Persuasion & Negotiation, Part 3
 
-    firststrategies: { label: 'First Strategies', minLevel: 'freemium' },
     startingconversations1: { label: 'Starting Conversations — Pt. 1', minLevel: 'freemium' },
     showunderstanding: { label: 'Show Understanding', minLevel: 'freemium' },
     startingconversations4: { label: 'Starting Conversations — Pt. 4', minLevel: 'extended' },
@@ -625,6 +624,7 @@ applyInputCounterVisibility();
     toddv3: { label: 'Todd V 3 — Advanced Connection', minLevel: 'complete' },
     toddv4: { label: 'Todd V 4 — Closing & Logistics', minLevel: 'complete' },
     toddv5: { label: 'Todd V 5 — Unflappable Presence', minLevel: 'complete' },
+    firststrategies: { label: 'First Strategies', minLevel: 'freemium' },
   };
 
   // ── PROGRAM_CONFIG (v1.26.81) ─────────────────────────────────────────
@@ -1358,20 +1358,6 @@ const BUNDLE_DEFS = {
     },
   ],
   setupstatement: [
-    {
-      id: 'free',
-      tier: 'free',
-      name: 'Free Bundle',
-      description: '',
-    },
-    {
-      id: 'pro',
-      tier: 'pro',
-      name: 'Pro Bundle',
-      description: '',
-    },
-  ],
-  firststrategies: [
     {
       id: 'free',
       tier: 'free',
@@ -2682,6 +2668,14 @@ const BUNDLE_DEFS = {
       id: 'pro',
       tier: 'pro',
       name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  firststrategies: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
       description: '',
     },
   ],
