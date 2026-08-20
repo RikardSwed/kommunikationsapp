@@ -470,6 +470,15 @@ body.pb-enabled .divider::after {
 }
 .card-back .card-text { color: var(--ds-txt2); font-size: 18px; }
 
+/* The back of a Sequences scenario card is a numbered list of the moves, so
+   its line breaks have to survive. Scoped to these two elements ON PURPOSE:
+   .card-text collapses newlines everywhere else, and 56 cards elsewhere in the
+   library contain one — lifting the rule to .card-text would restyle all of
+   them in one go, which is a separate decision. Nothing else reaches these two
+   ids: a step's back is a single spoken line (0 of 2059 sequence texts contain
+   a line break). v1.27.17. */
+#flowBackText, #hfFlowBackText { white-space: pre-line; }
+
 /* ─── INFO OVERLAY ────────────────────────────────────────────────────────── */
 
 .card-info {
