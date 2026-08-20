@@ -479,6 +479,26 @@ body.pb-enabled .divider::after {
    a line break). v1.27.17. */
 #flowBackText, #hfFlowBackText { white-space: pre-line; }
 
+/* v1.27.18 — the pack / programme note field inside a settings panel. Styled
+   from the tag input rather than the card note panel, because it sits in a
+   settings sheet and should read as part of it. */
+.scope-note-area {
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 8px;
+  padding: 10px 12px;
+  font: inherit;
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--ds-txt);
+  background: var(--ds-bg2, transparent);
+  border: 1.5px solid var(--ds-border);
+  border-radius: 10px;
+  resize: vertical;
+  min-height: 92px;
+}
+.scope-note-area:focus { outline: none; border-color: var(--ds-acc); }
+
 /* ─── INFO OVERLAY ────────────────────────────────────────────────────────── */
 
 .card-info {
@@ -1751,6 +1771,25 @@ body.pb-enabled .divider::after {
 /* Uppgift 8 — center pin btn when gear is hidden */
 .mode-pin-centered { margin: 0 auto; }
 
+/* v1.27.18 — the gear with no feedback mode on.
+   It used to be display:none, which also removed the only place to press.
+   The pack note lives behind three taps HERE, so the button has to stay
+   pressable while showing nothing: the icon goes, the hit area stays and
+   grows a little, because a target you cannot see needs to be easy to find.
+   Layout is unchanged either way — .mode-topbar-center is flex:1 and holds
+   the middle whether or not anything is drawn in it. */
+.mode-gear--silent > svg,
+.prog-gear--silent > i,
+.prog-gear--silent > svg { visibility: hidden; }
+.mode-gear--silent,
+.prog-gear--silent {
+  background: transparent;
+  border-color: transparent;
+  min-width: 56px;
+  min-height: 44px;
+  cursor: default;
+}
+
 .mode-pin-btn.pinned {
   color: var(--ds-acc);
   border-color: var(--ds-acc);
@@ -2717,8 +2756,15 @@ body.pb-enabled .divider::after {
    authoring tool. It follows tag mode, exactly like the other authoring UI:
    app-system.js puts .tag-mode on <body> when the toggle is on, and a normal
    user has no way to turn it on, so they never see the gear. */
-.program-settings-btn { display: none; background: none; border: none; color: var(--ds-txt3); font-size: 20px; cursor: pointer; padding: 4px 8px; border-radius: 8px; }
-body.tag-mode .program-settings-btn { display: block; }
+/* v1.27.18 — this button is now ALWAYS in the document.
+   It used to be display:none with `body.tag-mode` as the only way to show it,
+   which meant that outside tag mode there was nothing on the programme screen
+   to press. The programme note lives behind three taps on exactly this spot,
+   so the button has to stay pressable; whether its icon is DRAWN is decided in
+   app-ui.js by adding .prog-gear--silent. Putting display:none back here
+   removes the note with no visible sign that anything changed. */
+.program-settings-btn { display: block; background: none; border: none; color: var(--ds-txt3); cursor: pointer; padding: 4px 8px; border-radius: 8px; line-height: 0; }
+.program-settings-btn > svg { display: block; }
 .program-settings-btn:hover { color: var(--ds-txt); background: var(--ds-card); }
 
 /* Editor tag section (inside pack editor header) */
@@ -2778,10 +2824,12 @@ body.tag-mode .program-settings-btn { display: block; }
 
 /* Program detail */
 .program-detail { padding-bottom: 40px; }
+/* v1.27.18 — a step up from 19px. It is the only way out of a programme and
+   was reading as smaller than the screen title it sits above. */
 .program-back-btn {
-  background: none; border: none; color: var(--ds-acc); font-size: 19px;
+  background: none; border: none; color: var(--ds-acc); font-size: 22px;
   font-weight: 600; cursor: pointer; padding: 0 0 16px 0;
-  display: flex; align-items: center; gap: 6px;
+  display: flex; align-items: center; gap: 8px;
 }
 .cp-result-back-btn {
   margin-top: 10px; width: 100%; padding: 12px; border-radius: 12px;
