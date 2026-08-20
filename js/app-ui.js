@@ -2401,7 +2401,13 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
     let html = '<div class="program-detail">'
       + '<div class="program-detail-topbar">'
       + '<button class="program-back-btn" id="prog-back-btn">\u2190 Programs</button>'
-      + '<button class="program-settings-btn" id="prog-settings-btn" title="Program settings"><i class="ti ti-settings"></i></button>'
+      // v1.27.18 — the same inline SVG gear as the home screen, the training
+      // screens and the mode screen. This one was still the Tabler icon-font
+      // version and read as a different, slightly heavier shape: the same
+      // mismatch that was fixed on the mode screen in v1.27.07.
+      + '<button class="program-settings-btn" id="prog-settings-btn" aria-label="Program settings" title="Program settings">'
+      + '<svg width="22" height="22" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 4.5h6l.7 3a7.5 7.5 0 0 1 2.3 1.35l2.9-.9 3 5.2-2.3 1.8a7.5 7.5 0 0 1 0 2.1l2.3 1.8-3 5.2-2.9-.9a7.5 7.5 0 0 1-2.3 1.35l-.7 3H13l-.7-3a7.5 7.5 0 0 1-2.3-1.35l-2.9.9-3-5.2 2.3-1.8a7.5 7.5 0 0 1 0-2.1L4.1 14.1l3-5.2 2.9.9A7.5 7.5 0 0 1 12.3 8Z"/><circle cx="16" cy="16" r="4.5"/></svg>'
+      + '</button>'
       + '</div>'
       + '<h2 class="program-detail-title">' + program.title + '</h2>'
       + '<p class="program-detail-desc">'
@@ -2467,9 +2473,24 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
     document.getElementById('prog-back-btn').addEventListener('click', renderProgramList);
     const progSettingsBtn = document.getElementById('prog-settings-btn');
     if (progSettingsBtn) {
+      // v1.27.18 — the gear follows the same rule as the mode screen's: it is
+      // drawn only when a feedback mode is on, but the button stays pressable
+      // either way, because three taps on it open the programme note. The note
+      // is the SAME note on both paths.
+      const anyFbMode = !!window.feedbackMode || !!window.alSuggestMode ||
+        localStorage.getItem('tagMode') === 'true';
+      progSettingsBtn.classList.toggle('prog-gear--silent', !anyFbMode);
+      progSettingsBtn.setAttribute('aria-hidden', anyFbMode ? 'false' : 'true');
       progSettingsBtn.addEventListener('click', () => {
+        if (progSettingsBtn.classList.contains('prog-gear--silent')) return;
         if (window.openProgramSettings) window.openProgramSettings(program.id, program.title);
       });
+      if (window.dsTripleTap) {
+        dsTripleTap(progSettingsBtn, () => {
+          if (!progSettingsBtn.classList.contains('prog-gear--silent')) return;
+          if (window.openProgramSettings) window.openProgramSettings(program.id, program.title, true);
+        });
+      }
     }
 
     // Pack clicks

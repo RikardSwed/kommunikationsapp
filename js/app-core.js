@@ -5,7 +5,7 @@
 // (DS.createCardMode / DS.createHandsfreeMode) and are declared in
 // app-modes.js and app-handsfree.js.
 
-const VERSION = 'v1.27.17';
+const VERSION = 'v1.27.18';
 
 // Keep every version label in the UI in sync with VERSION (v1.26.44).
 // The hardcoded strings in index.html are only fallbacks — this runs at
@@ -737,7 +737,19 @@ document.getElementById('modeNextBtn') && document.getElementById('modeNextBtn')
   const overlay = document.getElementById('packSettingsOverlay');
   const close   = document.getElementById('packSettingsClose');
   if (btn && overlay) {
-    btn.addEventListener('click', () => overlay.classList.add('open'));
+    // v1.27.18 — THE SECOND HANDLER ON THIS BUTTON. app-system.js binds the
+    // other one, which fills the panel in; this one only opens it and reloads
+    // training afterwards, because a bundle may have changed.
+    //
+    // Both now have to know that the gear can be present but silent: with no
+    // feedback mode on it is drawn as nothing and belongs to the three-tap
+    // gesture that opens the pack note. Without this guard a single tap on
+    // blank space opened an empty settings panel — which is exactly what
+    // happened, and what the test caught.
+    btn.addEventListener('click', () => {
+      if (btn.classList.contains('mode-gear--silent')) return;
+      overlay.classList.add('open');
+    });
     if (close) close.addEventListener('click', () => {
       overlay.classList.remove('open');
       // Re-run the current training mode so bundle changes take effect immediately
@@ -872,6 +884,51 @@ function noteSet(key, text) {
 }
 window.noteGet = noteGet;
 window.noteSet = noteSet;
+
+// ── SCOPE NOTES: one note for a whole pack, one for a whole programme ────────
+// (v1.27.18)
+//
+// A card note answers "what do I think of THIS card". These answer "what do I
+// think of this pack" and "how is this programme going", which is the question
+// a beta tester actually has after training for twenty minutes and which had
+// nowhere to go.
+//
+// The key shapes mirror the rating keys that already exist beside them —
+// `fb_pack_<packKey>` has been there since the pack rating bar was built — so
+// a rating and a note for the same thing are again one prefix apart, exactly
+// as noteKey/fbKey are for a card. THREE segments, where a card note has six:
+// that difference is what the export parser uses to tell them apart, so do not
+// put an underscore-separated id in here.
+function packNoteKey(packKey) { return 'note_pack_' + (packKey || ''); }
+function packFbKey(packKey)   { return 'fb_pack_'   + (packKey || ''); }
+function progNoteKey(progId)  { return 'note_prog_' + (progId  || ''); }
+function progFbKey(progId)    { return 'fb_prog_'   + (progId  || ''); }
+window.packNoteKey = packNoteKey;
+window.packFbKey   = packFbKey;
+window.progNoteKey = progNoteKey;
+window.progFbKey   = progFbKey;
+
+// ── THREE TAPS ───────────────────────────────────────────────────────────────
+// The gesture that opens a note where there is no button to press. It already
+// existed inline in mode-engine.js for the hint line under a card; this is the
+// same thing, lifted out so the mode screen and the programme view use one
+// implementation rather than three copies that drift.
+//
+// 1200 ms is the window between taps, matched to the original deliberately: a
+// gesture that behaves differently in two places is worse than no gesture.
+function dsTripleTap(el, fn) {
+  if (!el || el._dsTripleTap) return;
+  el._dsTripleTap = true;
+  let taps = 0, timer = null;
+  el.addEventListener('click', e => {
+    e.stopPropagation();
+    taps++;
+    clearTimeout(timer);
+    timer = setTimeout(() => { taps = 0; }, 1200);
+    if (taps >= 3) { taps = 0; fn(e); }
+  });
+}
+window.dsTripleTap = dsTripleTap;
 
 // ── FEEDBACK BAR RENDER ───────────────────────────────────────────────────────
 

@@ -190,20 +190,47 @@ function _fbResolve(p) {
 // Every rating and note in storage, merged onto one row per card side.
 function collectFeedbackAndNotes() {
   const rows = {};
+  // v1.27.18 — pack-wide and programme-wide entries, gathered first so they
+  // sort to the top of their pack. They are NOT cards: they have no mode, no
+  // strategy and no side, and the shape below says so with nulls rather than
+  // with invented values, so a reader can never mistake one for a card.
+  const scope = {};
+  const scopeRow = (bucket, id) => {
+    const k = bucket + '|' + id;
+    if (!scope[k]) scope[k] = {
+      scope: bucket, pack: bucket === 'pack' ? id : null, program: bucket === 'program' ? id : null,
+      mode: null, strategy: null, cardIndex: null, side: null, card: null,
+      rating: null, note: null,
+    };
+    return scope[k];
+  };
+  for (let i = 0; i < localStorage.length; i++) {
+    const key = localStorage.key(i);
+    if (key.indexOf('fb_pack_')   === 0) scopeRow('pack',    key.slice(8)).rating  = parseInt(localStorage.getItem(key), 10);
+    else if (key.indexOf('note_pack_') === 0) scopeRow('pack',    key.slice(10)).note = localStorage.getItem(key);
+    else if (key.indexOf('fb_prog_')   === 0) scopeRow('program', key.slice(8)).rating  = parseInt(localStorage.getItem(key), 10);
+    else if (key.indexOf('note_prog_') === 0) scopeRow('program', key.slice(10)).note = localStorage.getItem(key);
+  }
+
   for (let i = 0; i < localStorage.length; i++) {
     const key = localStorage.key(i);
     const isFb = key.indexOf('fb_') === 0;
     const isNote = key.indexOf('note_') === 0;
     if (!isFb && !isNote) continue;
-    // fb_pack_… is the pack-level rating bar, a different thing
-    if (isFb && key.indexOf('fb_pack_') === 0) continue;
+    // The pack- and programme-wide keys are handled above. Skipping them here
+    // matters for more than tidiness: `note_pack_<key>` would otherwise be fed
+    // to a parser that expects six underscore-separated segments and would
+    // read the pack name as a mode.
+    if (key.indexOf('fb_pack_') === 0 || key.indexOf('note_pack_') === 0 ||
+        key.indexOf('fb_prog_') === 0 || key.indexOf('note_prog_') === 0) continue;
     const p = _fbParseKey(key);
     if (!p) continue;
     const id = p.pack + '|' + p.mode + '|' + p.group + '|' + p.item + '|' + p.side;
     if (!rows[id]) {
       const r = _fbResolve(p);
       rows[id] = {
-        pack: p.pack, mode: r.modeLabel, strategy: r.strategy || null,
+        scope: 'card',
+        pack: p.pack, program: null, mode: r.modeLabel, strategy: r.strategy || null,
         cardIndex: parseInt(p.item, 10), side: p.side,
         card: r.card || null, rating: null, note: null,
       };
@@ -211,8 +238,9 @@ function collectFeedbackAndNotes() {
     if (isFb) rows[id].rating = parseInt(localStorage.getItem(key), 10);
     else      rows[id].note   = localStorage.getItem(key);
   }
-  // stable, readable order
-  return Object.keys(rows).sort().map(k => rows[k]);
+  // stable, readable order — the pack and programme entries first
+  return Object.keys(scope).sort().map(k => scope[k])
+    .concat(Object.keys(rows).sort().map(k => rows[k]));
 }
 window.collectFeedbackAndNotes = collectFeedbackAndNotes;
 
@@ -391,8 +419,12 @@ if (notesExportBtn) notesExportBtn.addEventListener('click', () => {
     const card = document.querySelector('.collection-card[data-key="' + k + '"]');
     return (card && card.dataset.label) || k;
   };
+  // v1.27.18 — programme notes have no pack, so they get their own section
+  // rather than being filed under a pack they do not belong to.
+  const progNotes = entries.filter(e => e.scope === 'program');
   const byPack = {};
-  entries.forEach(e => { (byPack[e.pack] = byPack[e.pack] || []).push(e); });
+  entries.filter(e => e.scope !== 'program')
+         .forEach(e => { (byPack[e.pack] = byPack[e.pack] || []).push(e); });
 
   const out = [];
   out.push('# My Deckstack notes');
@@ -405,8 +437,18 @@ if (notesExportBtn) notesExportBtn.addEventListener('click', () => {
     out.push('## ' + packLabel(pack));
     out.push('');
     byPack[pack].sort((a, b) =>
-      (a.mode + (a.strategy || '')).localeCompare(b.mode + (b.strategy || ''))
+      // The whole-pack note first; it is about everything below it.
+      (a.scope === 'pack' ? '' : '1' + a.mode + (a.strategy || ''))
+        .localeCompare(b.scope === 'pack' ? '' : '1' + b.mode + (b.strategy || ''))
     ).forEach(e => {
+      if (e.scope === 'pack') {
+        out.push('### About this pack');
+        out.push('');
+        if (e.rating !== null) { out.push('Rating ' + e.rating + '/4'); out.push(''); }
+        out.push(e.note);
+        out.push('');
+        return;
+      }
       out.push('### ' + (e.strategy || 'Unknown strategy') + '  ·  ' + e.mode);
       if (e.card) out.push('> ' + String(e.card).replace(/\n/g, '\n> '));
       out.push('');
@@ -417,6 +459,17 @@ if (notesExportBtn) notesExportBtn.addEventListener('click', () => {
       out.push('');
     });
   });
+  if (progNotes.length) {
+    out.push('## Programs');
+    out.push('');
+    progNotes.sort((a, b) => String(a.program).localeCompare(String(b.program))).forEach(e => {
+      out.push('### ' + e.program);
+      out.push('');
+      if (e.rating !== null) { out.push('Rating ' + e.rating + '/4'); out.push(''); }
+      out.push(e.note);
+      out.push('');
+    });
+  }
   window._dsExport(out.join('\n'),
     'deckstack_notes_' + new Date().toISOString().slice(0, 10) + '.md',
     'text/markdown',
@@ -3282,9 +3335,15 @@ if (alPackBar) {
   const ver     = document.getElementById('packSettingsVersion');
   if (!btn || !overlay) return;
   btn.addEventListener('click', () => {
+    // v1.27.18 — the button stays in the document when no feedback mode is on,
+    // so that three taps can reach the pack note. A SINGLE tap there must go
+    // on doing nothing, exactly as it did when the button was display:none.
+    if (btn.classList.contains('mode-gear--silent')) return;
     const packKey = window.activeCollectionKey;
     const label   = window.activeCollectionLabel || packKey;
     if (title) title.textContent = label + ' — Settings';
+    const noteSection = document.getElementById('packSettingsNoteSection');
+    if (noteSection) noteSection.style.display = '';
     if (ver)   ver.textContent   = typeof VERSION !== 'undefined' ? VERSION : '';
     // Show/hide sections based on active mode
     const fbSection = document.getElementById('packSettingsFbSection');
@@ -3301,22 +3360,35 @@ if (alPackBar) {
     if (_fbBar) _fbBar.dataset.fbKey = _fbPK;
     alRender('al-pack-bar', _alPK);
     if (_fbBar && typeof fbRender === 'function') fbRender('fb-pack-bar', _fbPK);
+    // v1.27.18 — the pack note. Always rendered, whatever the modes say.
+    _scopeNoteBind('packNoteArea', window.packNoteKey ? packNoteKey(packKey || '') : '');
     // Render tag section if tag mode is on
     if (window.renderPackTagSection) window.renderPackTagSection(packKey || '');
     overlay.classList.add('open');
   });
-  if (close) close.addEventListener('click', () => overlay.classList.remove('open'));
+  if (close) close.addEventListener('click', () => { _scopeNoteSaveAll(); overlay.classList.remove('open'); });
   // Uppgift 9 — close on backdrop click
-  overlay.addEventListener('click', e => { if (e.target === overlay) overlay.classList.remove('open'); });
+  overlay.addEventListener('click', e => {
+    if (e.target === overlay) { _scopeNoteSaveAll(); overlay.classList.remove('open'); }
+  });
 
   // Uppgift 8 — show gear only when at least one feedback mode is active
+  //
+  // v1.27.18 — IT NO LONGER LEAVES THE DOCUMENT. The button used to be
+  // display:none here, which also removed the only thing on the mode screen
+  // you could press. The pack note now lives behind three taps in exactly that
+  // spot, so the button stays and only its icon goes (.mode-gear--silent).
+  // Layout is untouched: .mode-topbar-center is flex:1 and holds the middle
+  // whether anything is drawn in it or not.
   function updateModeGearVisibility() {
     const gearBtn = document.getElementById('modePackSettingsBtn');
     const pinBtn  = document.getElementById('modePinBtn');
     if (!gearBtn) return;
     const anyActive = feedbackMode || alSuggestMode ||
       (localStorage.getItem('tagMode') === 'true');
-    gearBtn.style.display = anyActive ? '' : 'none';
+    gearBtn.style.display = '';
+    gearBtn.classList.toggle('mode-gear--silent', !anyActive);
+    gearBtn.setAttribute('aria-hidden', anyActive ? 'false' : 'true');
     if (pinBtn) {
       pinBtn.classList.toggle('mode-pin-centered', !anyActive);
     }
@@ -3324,7 +3396,75 @@ if (alPackBar) {
   // Expose so settings toggles can trigger a refresh
   window.updateModeGearVisibility = updateModeGearVisibility;
   updateModeGearVisibility();
+
+  // Three taps on the silent gear open the same overlay, note only. A single
+  // tap there must keep doing nothing — the click handler above is bound to
+  // the same element, so it checks the class and bails.
+  if (btn && window.dsTripleTap) {
+    dsTripleTap(btn, () => {
+      if (!btn.classList.contains('mode-gear--silent')) return;  // gear visible: ordinary click already works
+      _openScopeOverlayNoteOnly(overlay, {
+        title:  (window.activeCollectionLabel || window.activeCollectionKey || 'Pack') + ' — Note',
+        hide:   ['packSettingsFbSection', 'packSettingsAlSection', 'packSettingsTagSection'],
+        noteSection: 'packSettingsNoteSection',
+        area:   'packNoteArea',
+        key:    window.packNoteKey ? packNoteKey(window.activeCollectionKey || '') : '',
+        titleEl: 'packSettingsTitle',
+      });
+    });
+  }
 })();
+
+// ── SCOPE NOTES: shared plumbing for the pack and programme notes ────────────
+// (v1.27.18)
+//
+// Small on purpose. A textarea in a settings sheet does not need the card note
+// panel's machinery — no keyboard timing, no swipe swallowing, no follow-the-
+// card key changes. What it DOES need is the one thing that panel got right:
+// save on every keystroke, on close, and when the page is hidden, because an
+// iOS web view is killed in the background without another event firing.
+const _scopeNotes = new Map();   // textarea id -> storage key
+
+function _scopeNoteBind(areaId, key) {
+  const area = document.getElementById(areaId);
+  if (!area) return;
+  _scopeNotes.set(areaId, key);
+  area.value = (key && window.noteGet) ? noteGet(key) : '';
+  if (!area._scopeBound) {
+    area._scopeBound = true;
+    area.addEventListener('input', () => {
+      const k = _scopeNotes.get(areaId);
+      if (k && window.noteSet) noteSet(k, area.value);
+    });
+    // Nothing typed in here may reach the app's single-key shortcuts.
+    area.addEventListener('keydown', e => e.stopPropagation());
+  }
+}
+
+function _scopeNoteSaveAll() {
+  _scopeNotes.forEach((key, areaId) => {
+    const area = document.getElementById(areaId);
+    if (area && key && window.noteSet) noteSet(key, area.value);
+  });
+}
+document.addEventListener('visibilitychange', () => { if (document.hidden) _scopeNoteSaveAll(); });
+
+// Open one of the two settings overlays showing ONLY its note. This is the
+// three-tap path: the same note the gear shows, reached where there is no gear.
+function _openScopeOverlayNoteOnly(overlay, o) {
+  if (!overlay) return;
+  const titleEl = document.getElementById(o.titleEl);
+  if (titleEl) titleEl.textContent = o.title;
+  o.hide.forEach(id => { const el = document.getElementById(id); if (el) el.style.display = 'none'; });
+  const noteSection = document.getElementById(o.noteSection || '');
+  if (noteSection) noteSection.style.display = '';
+  _scopeNoteBind(o.area, o.key);
+  if (overlay.classList.contains('settings-overlay')) overlay.classList.add('open');
+  overlay.style.display = '';
+  setTimeout(() => { const a = document.getElementById(o.area); if (a) a.focus(); }, 60);
+}
+window._scopeNoteBind = _scopeNoteBind;
+window._scopeNoteSaveAll = _scopeNoteSaveAll;
 
 // ── AL EXPORT ────────────────────────────────────────────────────────────────
 function exportAlSuggestions() {
@@ -4585,31 +4725,54 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
   const progSettingsClose   = document.getElementById('programSettingsClose');
   if (progSettingsClose) {
     progSettingsClose.addEventListener('click', () => {
+      if (window._scopeNoteSaveAll) _scopeNoteSaveAll();
       if (progSettingsOverlay) progSettingsOverlay.style.display = 'none';
     });
   }
   // Uppgift 9 — close on backdrop click
   if (progSettingsOverlay) {
     progSettingsOverlay.addEventListener('click', e => {
-      if (e.target === progSettingsOverlay) progSettingsOverlay.style.display = 'none';
+      if (e.target === progSettingsOverlay) {
+        if (window._scopeNoteSaveAll) _scopeNoteSaveAll();
+        progSettingsOverlay.style.display = 'none';
+      }
     });
   }
 
-  window.openProgramSettings = function(programId, programTitle) {
+  // v1.27.18 — noteOnly is the three-taps-on-a-blank-space path. Same overlay,
+  // same note; everything a feedback mode owns is hidden.
+  window.openProgramSettings = function(programId, programTitle, noteOnly) {
     if (!progSettingsOverlay) return;
     const titleEl = document.getElementById('programSettingsTitle');
-    if (titleEl) titleEl.textContent = programTitle || 'Program Settings';
+    if (titleEl) titleEl.textContent = (programTitle || 'Program') + (noteOnly ? ' — Note' : ' Settings');
+
+    // The programme rating, alongside the note. It follows feedback mode the
+    // way the pack rating does; the note does not.
+    const fbSection = document.getElementById('programSettingsFbSection');
+    if (fbSection) fbSection.style.display = (!noteOnly && feedbackMode) ? '' : 'none';
+    if (!noteOnly && feedbackMode) {
+      const fbKeyProg = window.progFbKey ? progFbKey(programId) : ('fb_prog_' + programId);
+      const fbBar = document.getElementById('fb-prog-bar');
+      if (fbBar) fbBar.dataset.fbKey = fbKeyProg;
+      if (fbBar && typeof fbRender === 'function') fbRender('fb-prog-bar', fbKeyProg);
+    }
+
+    const noteSection = document.getElementById('programSettingsNoteSection');
+    if (noteSection) noteSection.style.display = '';
+    if (window._scopeNoteBind) {
+      _scopeNoteBind('progNoteArea', window.progNoteKey ? progNoteKey(programId) : ('note_prog_' + programId));
+    }
 
     const listEl  = document.getElementById('programTagsList');
     const input   = document.getElementById('programTagInput');
     const addBtn  = document.getElementById('programTagAddBtn');
     const tagKey  = 'prog:' + programId;
 
-    // Only show tag section if tag mode is on
+    // Only show tag section if tag mode is on — and never on the note-only path
     const tagSection = document.getElementById('programSettingsTagSection');
-    if (tagSection) tagSection.style.display = tagMode ? '' : 'none';
+    if (tagSection) tagSection.style.display = (tagMode && !noteOnly) ? '' : 'none';
 
-    if (tagMode && listEl) {
+    if (tagMode && !noteOnly && listEl) {
       function renderProgTags() {
         const tags = window.getTagsForKey(tagKey);
         listEl.innerHTML = tags.length
@@ -4643,6 +4806,7 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
     }
 
     progSettingsOverlay.style.display = 'flex';
+    if (noteOnly) setTimeout(() => { const a = document.getElementById('progNoteArea'); if (a) a.focus(); }, 60);
   };
 
   // Init
