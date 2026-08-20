@@ -7,10 +7,10 @@
   <meta name="mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="default" />
   <meta name="apple-mobile-web-app-title" content="Deckstack" />
-  <link rel="manifest" href="manifest.json?v=12717" />
+  <link rel="manifest" href="manifest.json?v=12718" />
   <title>Deckstack</title>
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="stylesheet" href="css/style.css?v=12717" />
+  <link rel="stylesheet" href="css/style.css?v=12718" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
 </head>
 <body>
@@ -2790,6 +2790,16 @@
         <button class="al-btn" data-val="3">Extended</button>
       </div>
     </div>
+    <!-- v1.27.18 — one note for the whole pack. Deliberately OUTSIDE the
+         feedback section: the rating is a reviewer's tool and comes and goes
+         with feedback mode, but this note is always reachable — by the gear
+         when it is showing, and by three taps where the gear would be when it
+         is not. Same note either way. -->
+    <div id="packSettingsNoteSection">
+      <div class="settings-row" style="margin-top:12px;"><label>Note for this pack</label></div>
+      <textarea id="packNoteArea" class="scope-note-area" rows="5"
+                placeholder="What works, what does not, what is missing&#8230;"></textarea>
+    </div>
     <div id="packSettingsTagSection" style="display:none;">
       <div class="settings-row" style="margin-top:12px;"><label style="font-weight:700;">Tags</label></div>
       <div id="packTagsList" class="tag-list"></div>
@@ -2807,6 +2817,23 @@
 <div class="settings-overlay" id="programSettingsOverlay" style="display:none;">
   <div class="settings-panel">
     <div class="settings-title" id="programSettingsTitle">Program Settings</div>
+    <!-- v1.27.18 — the programme now has the same two things a pack has: a
+         rating that appears with feedback mode, and a note that is always
+         there. -->
+    <div id="programSettingsFbSection">
+      <div class="settings-row"><label>Overall quality rating</label></div>
+      <div class="fb-bar fb-bar--pack" id="fb-prog-bar">
+        <button class="fb-btn" data-val="1"></button>
+        <button class="fb-btn" data-val="2"></button>
+        <button class="fb-btn" data-val="3"></button>
+        <button class="fb-btn" data-val="4"></button>
+      </div>
+    </div>
+    <div id="programSettingsNoteSection">
+      <div class="settings-row" style="margin-top:12px;"><label>Note for this program</label></div>
+      <textarea id="progNoteArea" class="scope-note-area" rows="5"
+                placeholder="How is it going, what is working&#8230;"></textarea>
+    </div>
     <div id="programSettingsTagSection">
       <div class="settings-row"><label style="font-weight:700;">Tags</label></div>
       <div id="programTagsList" class="tag-list"></div>
@@ -2835,20 +2862,20 @@
   </button>
 </div>
 
-<script src="js/data.js?v=12717"></script>
-<script src="js/tagsData.js?v=12717"></script>
-<script src="js/programsData.js?v=12717"></script>
-<script src="js/challengesData.js?v=12717"></script>
-<script src="js/mindsetData.js?v=12717"></script>
-<script src="js/multiStepData.js?v=12717"></script>
-<script src="js/memorizeData.js?v=12717"></script>
-<script src="js/mode-engine.js?v=12717"></script>
-<script src="js/app-core.js?v=12717"></script>
-<script src="js/app-modes.js?v=12717"></script>
-<script src="js/app-handsfree.js?v=12717"></script>
-<script src="js/app-system.js?v=12717"></script>
-<script src="js/app-ui.js?v=12717"></script>
-<script src="js/app-back.js?v=12717"></script>
+<script src="js/data.js?v=12718"></script>
+<script src="js/tagsData.js?v=12718"></script>
+<script src="js/programsData.js?v=12718"></script>
+<script src="js/challengesData.js?v=12718"></script>
+<script src="js/mindsetData.js?v=12718"></script>
+<script src="js/multiStepData.js?v=12718"></script>
+<script src="js/memorizeData.js?v=12718"></script>
+<script src="js/mode-engine.js?v=12718"></script>
+<script src="js/app-core.js?v=12718"></script>
+<script src="js/app-modes.js?v=12718"></script>
+<script src="js/app-handsfree.js?v=12718"></script>
+<script src="js/app-system.js?v=12718"></script>
+<script src="js/app-ui.js?v=12718"></script>
+<script src="js/app-back.js?v=12718"></script>
 
 
 <!-- CHECKPOINT SCREEN -->
