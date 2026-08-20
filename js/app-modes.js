@@ -50,7 +50,19 @@ DS.createCardMode({
   info: {
     panel: 'memCardInfo', text: 'memCardInfoText',
     trigger: 'memStrategyName', close: 'memCardInfoClose',
-    // Memorize decks have no own description — look it up in the source pack
+    // Where a Memorize deck's theory text comes from (v1.27.14).
+    //
+    // A Memorize deck mirrors something else in the pack, so it borrows that
+    // thing's description: a deck named exactly like a Single Strategy shows
+    // that strategy's theory, and "Challenge: X" shows challenge X's. That
+    // borrowing is why the names have to match character for character.
+    //
+    // But it was the ONLY source, and a deck matching nothing showed an empty
+    // panel — 100 of the app's 415 Memorize decks did, including every single
+    // "Core Idea". Nothing was wrong with those decks; they simply had theory
+    // nowhere to put it. So the deck's own description is now the fallback,
+    // which also lets a deck that combines several things (What goes wrong,
+    // In what order) carry its own text.
     getText: g => {
       if (!g) return '';
       let src = (collections[activeCollectionKey] || []).find(s => s.name === g.name);
@@ -60,7 +72,8 @@ DS.createCardMode({
           c.name === challName || c.name.includes(challName) || challName.includes(c.name)
         );
       }
-      return src ? src.description : '';
+      if (src && src.description) return src.description;
+      return g.description || '';
     },
   },
   getGroups: () => DS.loadGroups(memorizeCollections, activeCollectionKey, 'cards'),
