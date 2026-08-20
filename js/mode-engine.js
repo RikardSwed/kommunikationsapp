@@ -390,7 +390,25 @@ const DS = (function () {
     }
 
     // ── Flip / swipe ───────────────────────────────────────────────────────
+    //
+    // cfg.canFlip(item, group) -> bool. Optional; default is "everything
+    // flips".
+    //
+    // Every card in the app is a question with an answer behind it. The
+    // scenario card that opens a Sequences scenario is not: it sets the scene,
+    // and there is nothing to check yourself against. Until v1.27.16 its back
+    // carried the same sentence as its front, so the flip handed you back what
+    // you were already reading. A card that will not flip is honest about
+    // being a title card; inventing a back for it would mean filler text in
+    // 467 scenarios.
+    //
+    // The guard sits inside flip() rather than at each caller on purpose —
+    // tap, click and the space bar all arrive here, so they cannot drift
+    // apart later.
+    const canFlip = it => !cfg.canFlip || cfg.canFlip(it, group());
+
     function flip(val, animate = true) {
+      if (val && !canFlip(item())) return;
       if (val && !mode.flipped && window.progCardFlipped) {
         const total = mode.groups.reduce((s, g) => s + items(g).length, 0);
         const soFar = mode.groupOrder.slice(0, mode.gi)
@@ -1394,6 +1412,11 @@ const DS = (function () {
     attachSwipe(els.card, {
       enabled: () => !mode.playing,
       tap: () => {
+        // Same rule as the training screen: a card the mode says cannot be
+        // flipped is not flipped by a tap here either. cfg.canFlip is
+        // documented at the flip() in createCardMode.
+        const _it = mode._lastItem;
+        if (cfg.canFlip && !cfg.canFlip(_it, group())) return;
         if (window.progCardFlipped && els.inner && !els.inner.classList.contains('flipped')) progCardFlipped();
         if (els.inner) {
           els.inner.style.transition = 'transform 0.4s ease';

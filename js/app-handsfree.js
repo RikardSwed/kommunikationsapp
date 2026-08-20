@@ -191,10 +191,22 @@ DS.createHandsfreeMode({
   getGroups: () => multiStepCollections[activeCollectionKey] || [],
   getItems: buildFlowSequence,   // from app-modes.js
   groupTitle: g => g.name,
-  itemFront: it => it.front,
+  // The scenario card is read from `plain` — the same sentence without the
+  // pin, which the synthesiser would otherwise have to make something of.
+  itemFront: it => it.plain || it.front,
   itemBack:  it => it.back,
-  // Situation cards have front === back — don't read them twice
-  speakBack: it => it.back !== it.front,
+  // The scenario card sets the scene and has no answer behind it, so its back
+  // is never read.
+  //
+  // v1.27.16 — THIS GUARD USED TO BE `it.back !== it.front` AND IT NEVER ONCE
+  // FIRED. The comment beside it said "situation cards have front === back",
+  // which stopped being true the moment buildFlowSequence prepended a pin to
+  // the front. So handsfree read the whole scenario, paused, and read it again
+  // with "One way it could sound." in front of it. Testing on `type` instead
+  // of on text means a change to how the card LOOKS can no longer silently
+  // switch off how it SOUNDS.
+  speakBack: it => it.type !== 'situation',
+  canFlip:   it => !it || it.type !== 'situation',
 });
 
 // ─── HANDSFREE: MINDSET ───────────────────────────────────────────────────────

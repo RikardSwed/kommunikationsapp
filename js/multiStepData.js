@@ -6502,7 +6502,7 @@ const multiStepCollections = {
   firststrategies: [
     {
       name: "A Whole Small Conversation",
-      guideFront: "What they said, and the strategy to answer it with.",
+      guideFront: "What's happening, and the strategy to use.",
       guideBack: "One way it could sound.",
       description: "Opening Statement, then Follow the Thread, then Answer With a Hook, then Follow the Thread again. Four steps, and it is a complete conversation with a stranger.\n\nNotice the shape: you start, they answer, you go into what they said, they ask you something back, and you give them a door. Nothing clever happens at any point.\n\nThe last step is the one people skip. Answering a question about yourself and then stopping is where most first conversations quietly end.\n\nMindset: this is the whole thing. Six sentences, and neither of you had to be interesting.",
       inputs: [
@@ -6540,7 +6540,7 @@ const multiStepCollections = {
     },
     {
       name: "When Someone Asks You for Something",
-      guideFront: "What they said, and the strategy to answer it with.",
+      guideFront: "What's happening, and the strategy to use.",
       guideBack: "One way it could sound.",
       description: "Say It Back, then A Friendly No, then Ask Plainly. The order is what makes it work.\n\nSaying it back first means the no arrives after they have been understood, rather than instead of it. Then the no, clear and short. Then, if you want to, asking for the version you could actually do — which is a request, not an excuse, and belongs at the end.\n\nMost people do this in the opposite order: a reason, then a vague no, then an apology. That leaves the other person unsure whether it was a no at all.\n\nMindset: understood, declined, and offered something — in that order.",
       inputs: [
@@ -6578,7 +6578,7 @@ const multiStepCollections = {
     },
     {
       name: "When You Want Something",
-      guideFront: "What they said, and the strategy to answer it with.",
+      guideFront: "What's happening, and the strategy to use.",
       guideBack: "One way it could sound.",
       description: "Ask Plainly, then Say It Back, then Follow the Thread. What to do when the answer is not a simple yes.\n\nThe request goes first, and short. Then, when they push back, you say back what they have said rather than repeating the ask louder — which is the move almost nobody makes and the one that turns a refusal into a conversation. Then you follow the thread into whatever they raised.\n\nOften the reason they gave is solvable, and it would never have come out if you had argued instead.\n\nMindset: ask once, then listen. The second thing they say is usually the real one.",
       inputs: [

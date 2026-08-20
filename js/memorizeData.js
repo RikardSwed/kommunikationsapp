@@ -5906,26 +5906,10 @@ const memorizeCollections = {
       ]
     },
     {
-      name: "What goes wrong",
+      name: "Collections",
       guideFront: "A question about the method.",
       guideBack: "The answer.",
-      description: "The five kinds of difficult moment this pack covers, and what each one does to people who have no strategy for it.",
-      cards: [
-        { q: "What are the five hard moments in this pack?", a: "You do not know them at all, the conversation has stalled, they asked about you, they want something from you, and you want something from them.", bundle: 'free' },
-        { q: "What goes wrong with someone you do not know?", a: "It turns into an interview — two questions in a row, and nothing given back.", bundle: 'free' },
-        { q: "What is the fix for a stalled conversation?", a: "Look backwards, not for a new subject. Anything from the last ten minutes is still open.", bundle: 'free' },
-        { q: "Why does a closed answer stall a conversation three exchanges later?", a: "It leaves the other person inventing every question, and after two or three most people stop.", bundle: 'free' },
-        { q: "What goes wrong when someone asks about you?", a: "The reflex is to say as little as possible and hand the question straight back.", bundle: 'free' },
-        { q: "What goes wrong when someone wants something from you?", a: "The vague no — \"maybe\", \"I'll see\" — which feels kind and costs them a week.", bundle: 'free' },
-        { q: "What goes wrong when you want something?", a: "Hinting. It protects you from hearing no, and it almost never gets you the thing.", bundle: 'free' },
-        { q: "Which strategy turns up in the most categories?", a: "Follow the Thread — it rescues a stall, softens an interview, and opens up a refusal.", bundle: 'free' },
-      ]
-    },
-    {
-      name: "Which one to use",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
-      description: "How to choose when more than one strategy would work — which is most of the time, and the thing Single Strategy never has to answer.",
+      description: "The theory behind the Collections mode: how to choose when more than one strategy would work — which is most of the time, and the question Single Strategy never has to answer.",
       cards: [
         { q: "What single question decides most of it?", a: "What did the other person just do?", bundle: 'free' },
         { q: "Which two are for when nothing has been said yet?", a: "Opening Statement and Ask Plainly.", bundle: 'free' },
@@ -5938,10 +5922,10 @@ const memorizeCollections = {
       ]
     },
     {
-      name: "In what order",
+      name: "Sequences",
       guideFront: "A question about the method.",
       guideBack: "The answer.",
-      description: "The three sequences in the pack, and why the steps come in the order they do. In every one of them the order is doing the work, not the individual moves.",
+      description: "The theory behind the Sequences mode: the three sequences in this pack, and why the steps come in the order they do. In every one of them the order is doing the work, not the individual moves.",
       cards: [
         { q: "What is the order for a whole small conversation?", a: "Opening Statement, Follow the Thread, Answer With a Hook, Follow the Thread.", bundle: 'free' },
         { q: "Which step of that sequence do people skip?", a: "The last one. They answer a question about themselves and then stop.", bundle: 'free' },
@@ -5954,10 +5938,26 @@ const memorizeCollections = {
       ]
     },
     {
-      name: "What gets in the way",
+      name: "Challenges",
       guideFront: "A question about the method.",
       guideBack: "The answer.",
-      description: "The six beliefs that stop people using any of this, and what is true instead. Every one of them feels like modesty or good manners from the inside.",
+      description: "The theory behind the Challenges mode: the five kinds of difficult moment this pack covers, and what each one does to people who have no strategy for it.",
+      cards: [
+        { q: "What are the five hard moments in this pack?", a: "You do not know them at all, the conversation has stalled, they asked about you, they want something from you, and you want something from them.", bundle: 'free' },
+        { q: "What goes wrong with someone you do not know?", a: "It turns into an interview — two questions in a row, and nothing given back.", bundle: 'free' },
+        { q: "What is the fix for a stalled conversation?", a: "Look backwards, not for a new subject. Anything from the last ten minutes is still open.", bundle: 'free' },
+        { q: "Why does a closed answer stall a conversation three exchanges later?", a: "It leaves the other person inventing every question, and after two or three most people stop.", bundle: 'free' },
+        { q: "What goes wrong when someone asks about you?", a: "The reflex is to say as little as possible and hand the question straight back.", bundle: 'free' },
+        { q: "What goes wrong when someone wants something from you?", a: "The vague no — \"maybe\", \"I'll see\" — which feels kind and costs them a week.", bundle: 'free' },
+        { q: "What goes wrong when you want something?", a: "Hinting. It protects you from hearing no, and it almost never gets you the thing.", bundle: 'free' },
+        { q: "Which strategy turns up in the most categories?", a: "Follow the Thread — it rescues a stall, softens an interview, and opens up a refusal.", bundle: 'free' },
+      ]
+    },
+    {
+      name: "Mindset",
+      guideFront: "A question about the method.",
+      guideBack: "The answer.",
+      description: "The theory behind the Mindset mode: the six beliefs that stop people using any of this, and what is true instead. Every one of them feels like modesty or good manners from the inside.",
       cards: [
         { q: "What belief stops people speaking first?", a: "That a conversation is a performance, and the price of entry is something worth saying.", bundle: 'free' },
         { q: "What is true instead?", a: "The bar is a true, ordinary sentence. Nobody remembers the sentence — only that someone spoke to them.", bundle: 'free' },

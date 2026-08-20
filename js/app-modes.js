@@ -98,7 +98,29 @@ function buildFlowSequence(combo) {
     ? window.filterInputsByBundle(combo.inputs || [], activeCollectionKey)
     : (combo.inputs || []);
   filtered.forEach(inp => {
-    seq.push({ type: 'situation', front: '\u{1F4CD} ' + inp.situation, back: inp.situation });
+    // THE SCENARIO CARD (v1.27.16). It opens a scenario and sets the scene; it
+    // is not a question. Three things follow from that, and all three are set
+    // here rather than in pack data, so every one of the app's 467 scenarios
+    // gets them without a single card being rewritten:
+    //
+    //   guideFront  its own guide. Without it the card inherited the combo's
+    //               — "What they said, and the strategy to answer it with." —
+    //               on a card where nobody has said anything and there is no
+    //               strategy. In handsfree that sentence was read ALOUD before
+    //               the scenario.
+    //   plain       the same text without the pin, for the voice. The pin is
+    //               a visual marker; the synthesiser has no use for it.
+    //   type        what `canFlip` and handsfree's `speakBack` test against.
+    //               They used to compare front with back, which stopped
+    //               working the moment the pin was prepended to the front —
+    //               see app-handsfree.js.
+    seq.push({
+      type: 'situation',
+      front: '\u{1F4CD} ' + inp.situation,
+      back: inp.situation,
+      plain: inp.situation,
+      guideFront: 'The scenario.',
+    });
     (inp.steps || []).forEach(s => seq.push({
       type: 'step', front: s.front, back: s.back,
       // Per-card guide text (v1.26.32) — carried through so the engine
@@ -126,6 +148,8 @@ DS.createCardMode({
   groupTitle: g => g.name,
   itemFront: it => it.front,
   itemBack:  it => it.back,
+  // The scenario card is a title card, not a question — it does not turn.
+  canFlip: it => !it || it.type !== 'situation',
   barPrefix: 'flow',
   note: { panel: 'flowCardNote', area: 'flowCardNoteArea', close: 'flowCardNoteClose', hint: 'flowHint' },
   fb: { id: 'flow', groupKey: (g, gi) => gi },
