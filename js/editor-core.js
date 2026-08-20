@@ -641,9 +641,34 @@ function _parsePack(lines) {
     }
 
     // - Situation: text — sets situation for current scenario (sequences)
+    //
+    // Optional trailing segments, exactly the ones a card line already takes:
+    //   | Back: ...          what the scenario card shows when it is turned
+    //   | Guide Front: ...   overrides the app's default, "The scenario."
+    //   | Guide Back: ...    overrides "The steps, in order."
+    //
+    // v1.27.17. Before this the whole line after the colon became the
+    // situation, so a `| Guide Front: ...` written here ended up INSIDE the
+    // scene text — no error, no warning, just a scenario reading
+    // "A queue that will not move. | Guide Front: Custom guide." Nobody had
+    // written one (0 of 259 combos), so nothing in the library changes. What
+    // changes is that the app's wording is now a default rather than the only
+    // possibility.
+    //
+    // A pipe with no recognised label after it is LEFT IN the situation text
+    // rather than dropped: losing half a sentence to punctuation would be a
+    // worse failure than an odd-looking scene.
     if (/^-\s+Situation:\s*/i.test(line) && currentModeId === 'sequences' && currentStrat) {
       if (!currentScenario) newScenario();
-      currentScenario.situation = line.replace(/^-\s+Situation:\s*/i,'').trim();
+      const sExt  = _extractCardGuides(line.replace(/^-\s+Situation:\s*/i,''));
+      const segs  = sExt.text.split(/\s*\|\s*/);
+      const backM = segs.length > 1
+        ? segs.slice(1).join(' | ').match(/^(?:Back|Response|A):\s*([\s\S]+)$/i)
+        : null;
+      currentScenario.situation = (backM ? segs[0] : sExt.text).trim();
+      if (backM)           currentScenario.back       = backM[1].trim();
+      if (sExt.guideFront) currentScenario.guideFront = sExt.guideFront;
+      if (sExt.guideBack)  currentScenario.guideBack  = sExt.guideBack;
       continue;
     }
 

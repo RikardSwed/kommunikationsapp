@@ -195,18 +195,20 @@ DS.createHandsfreeMode({
   // pin, which the synthesiser would otherwise have to make something of.
   itemFront: it => it.plain || it.front,
   itemBack:  it => it.back,
-  // The scenario card sets the scene and has no answer behind it, so its back
-  // is never read.
+  // A back is read when there is one. From v1.27.17 the scenario card's back
+  // is the numbered move list, which is worth hearing — "can you name the
+  // steps?" works aloud as well as on screen. Turn Card back off in handsfree
+  // settings to skip every back, this one included.
   //
   // v1.27.16 — THIS GUARD USED TO BE `it.back !== it.front` AND IT NEVER ONCE
   // FIRED. The comment beside it said "situation cards have front === back",
   // which stopped being true the moment buildFlowSequence prepended a pin to
   // the front. So handsfree read the whole scenario, paused, and read it again
-  // with "One way it could sound." in front of it. Testing on `type` instead
-  // of on text means a change to how the card LOOKS can no longer silently
-  // switch off how it SOUNDS.
-  speakBack: it => it.type !== 'situation',
-  canFlip:   it => !it || it.type !== 'situation',
+  // with "One way it could sound." in front of it. Testing on what the card
+  // HAS rather than on how its text reads means a cosmetic change can no
+  // longer silently switch off how it sounds.
+  speakBack: it => it.type !== 'situation' || !!it.hasBack,
+  canFlip:   it => !it || it.type !== 'situation' || !!it.hasBack,
 });
 
 // ─── HANDSFREE: MINDSET ───────────────────────────────────────────────────────

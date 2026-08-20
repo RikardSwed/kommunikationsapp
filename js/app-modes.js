@@ -89,6 +89,39 @@ DS.createCardMode({
 
 // ─── SEQUENCES (FLOW) ─────────────────────────────────────────────────────────
 // A combo's items are its flattened sequence: situation card + step cards.
+
+// The moves in a scenario, as a numbered list — the back of the scenario card.
+//
+// It is derived rather than written because it is the same information twice:
+// the steps are already there, and a hand-written copy of them is one more
+// thing that can fall out of step with the scenario it describes.
+//
+// TWO SPELLINGS EXIST IN THE LIBRARY and both have to work, which is why this
+// is not a one-line split:
+//
+//     "Opening Statement — the board changes to delayed again."   name FIRST
+//     "Step 1 — Claim the turn"                                   name LAST
+//
+// 405 of the app's 467 scenarios yield a full list. The other 62 are mostly
+// one pack (describethings) whose steps are lines of dialogue with no move in
+// them — there is nothing to list, so those scenario cards keep their old
+// behaviour and do not turn. Returning '' is how that is said.
+function scenarioMoveList(inp) {
+  const steps = (inp && inp.steps) || [];
+  if (!steps.length) return '';
+  const names = steps.map(s => {
+    const parts = String(s.front || '').split(/\s+[—–]\s+/);
+    if (parts.length < 2) return '';
+    const first = parts[0].trim(), second = parts[1].trim();
+    const name = /^(step|steg)\s*\d+\.?$/i.test(first) ? second : first;
+    // A whole sentence is a description, not a move. 60 characters is well
+    // clear of the longest real strategy name in the library.
+    return (name && name.length <= 60) ? name : '';
+  });
+  if (names.some(n => !n)) return '';          // all or nothing — a half list misleads
+  return names.map((n, i) => (i + 1) + '. ' + n).join('\n');
+}
+
 function buildFlowSequence(combo) {
   const seq = [];
   // Filter inputs by active bundle before flattening to cards.
@@ -98,28 +131,36 @@ function buildFlowSequence(combo) {
     ? window.filterInputsByBundle(combo.inputs || [], activeCollectionKey)
     : (combo.inputs || []);
   filtered.forEach(inp => {
-    // THE SCENARIO CARD (v1.27.16). It opens a scenario and sets the scene; it
-    // is not a question. Three things follow from that, and all three are set
-    // here rather than in pack data, so every one of the app's 467 scenarios
-    // gets them without a single card being rewritten:
+    // THE SCENARIO CARD (v1.27.16, back rewritten v1.27.17). It opens a
+    // scenario and sets the scene. Its back used to hold the same sentence as
+    // its front, so the flip returned you to where you already were; now it
+    // holds the moves as a numbered list, which makes the flip a test — can
+    // you name the steps before you look?
     //
-    //   guideFront  its own guide. Without it the card inherited the combo's
-    //               — "What they said, and the strategy to answer it with." —
-    //               on a card where nobody has said anything and there is no
-    //               strategy. In handsfree that sentence was read ALOUD before
-    //               the scenario.
-    //   plain       the same text without the pin, for the voice. The pin is
-    //               a visual marker; the synthesiser has no use for it.
+    //   guideFront  its own guide, DEFAULTED HERE, NOT HARDCODED. Without one
+    //               the card inherited the combo's — "What they said, and the
+    //               strategy to answer it with." — on a card where nobody has
+    //               said anything and there is no strategy. In handsfree that
+    //               sentence was read ALOUD before the scenario. A pack that
+    //               wants different words writes them on the Situation line;
+    //               see the parser in editor-core.js.
+    //   back        the move list, or whatever the pack wrote instead. Empty
+    //               when neither exists — see scenarioMoveList above.
+    //   plain       the same sentence without the pin, for the voice. The pin
+    //               is a visual marker; the synthesiser has no use for it.
     //   type        what `canFlip` and handsfree's `speakBack` test against.
     //               They used to compare front with back, which stopped
     //               working the moment the pin was prepended to the front —
     //               see app-handsfree.js.
+    const sBack = (inp.back && String(inp.back).trim()) || scenarioMoveList(inp);
     seq.push({
       type: 'situation',
       front: '\u{1F4CD} ' + inp.situation,
-      back: inp.situation,
+      back: sBack,
+      hasBack: !!sBack,
       plain: inp.situation,
-      guideFront: 'The scenario.',
+      guideFront: inp.guideFront || 'The scenario.',
+      guideBack:  inp.guideBack  || 'The steps, in order.',
     });
     (inp.steps || []).forEach(s => seq.push({
       type: 'step', front: s.front, back: s.back,
@@ -148,8 +189,10 @@ DS.createCardMode({
   groupTitle: g => g.name,
   itemFront: it => it.front,
   itemBack:  it => it.back,
-  // The scenario card is a title card, not a question — it does not turn.
-  canFlip: it => !it || it.type !== 'situation',
+  // A scenario card turns only when it has something else on the back — the
+  // move list, or text the pack wrote. In the scenarios where neither exists
+  // there is nothing to turn to, so it stays put.
+  canFlip: it => !it || it.type !== 'situation' || !!it.hasBack,
   barPrefix: 'flow',
   note: { panel: 'flowCardNote', area: 'flowCardNoteArea', close: 'flowCardNoteClose', hint: 'flowHint' },
   fb: { id: 'flow', groupKey: (g, gi) => gi },
