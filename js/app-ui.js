@@ -2477,8 +2477,11 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
       // drawn only when a feedback mode is on, but the button stays pressable
       // either way, because three taps on it open the programme note. The note
       // is the SAME note on both paths.
-      const anyFbMode = !!window.feedbackMode || !!window.alSuggestMode ||
-        localStorage.getItem('tagMode') === 'true';
+      // v1.27.19 — ask app-system.js. This used to test `window.feedbackMode`,
+      // which is a file-scope `let` over there and has never existed on
+      // window, so the gear appeared in tag mode and nowhere else.
+      const anyFbMode = window.dsReviewModes ? dsReviewModes().any
+                                             : localStorage.getItem('tagMode') === 'true';
       progSettingsBtn.classList.toggle('prog-gear--silent', !anyFbMode);
       progSettingsBtn.setAttribute('aria-hidden', anyFbMode ? 'false' : 'true');
       progSettingsBtn.addEventListener('click', () => {

@@ -3326,6 +3326,47 @@ if (alPackBar) {
   });
 }
 
+// ── WHICH REVIEW MODES ARE ON — ONE ANSWER, NOT THREE ────────────────────────
+// (v1.27.19)
+//
+// `feedbackMode` and `alSuggestMode` are file-scope `let`s in THIS file and
+// have never been on window; `tagMode` is read from localStorage in three
+// different places. app-ui.js draws the programme screen and could see none of
+// them, so its gear checked `window.feedbackMode` — permanently undefined —
+// and only ever appeared in tag mode. That is the bug Rikard hit: the gear was
+// there for tags and missing for feedback, which looks like a rendering
+// problem and is actually a scope one.
+function dsReviewModes() {
+  return {
+    feedback: !!feedbackMode,
+    al:       !!alSuggestMode,
+    tag:      localStorage.getItem('tagMode') === 'true',
+    get any() { return this.feedback || this.al || this.tag; },
+  };
+}
+window.dsReviewModes = dsReviewModes;
+
+// The programme rating and access-level bars. Same shape as the pack bars
+// above; written once here rather than a third and fourth copy of the loop.
+function _bindScopeBar(barId, kind) {
+  const bar = document.getElementById(barId);
+  if (!bar) return;
+  const sel = kind === 'fb' ? '.fb-btn' : '.al-btn';
+  bar.querySelectorAll(sel).forEach(btn => {
+    const handler = e => {
+      e.stopPropagation();
+      const key = kind === 'fb' ? bar.dataset.fbKey : bar.dataset.alKey;
+      if (!key) return;
+      if (kind === 'fb') { fbSet(key, parseInt(btn.dataset.val)); fbRender(barId, key); }
+      else               { alSet(key, parseInt(btn.dataset.val)); alRender(barId, key); }
+    };
+    btn.addEventListener('click', handler);
+    btn.addEventListener('touchend', e => { e.preventDefault(); e.stopPropagation(); handler(e); }, { passive: false });
+  });
+}
+_bindScopeBar('fb-prog-bar', 'fb');
+_bindScopeBar('al-prog-bar', 'al');
+
 // Pack settings overlay
 (function() {
   const btn     = document.getElementById('modePackSettingsBtn');
@@ -3383,9 +3424,17 @@ if (alPackBar) {
   function updateModeGearVisibility() {
     const gearBtn = document.getElementById('modePackSettingsBtn');
     const pinBtn  = document.getElementById('modePinBtn');
+    // The programme gear follows the same rule, and is refreshed here too so
+    // that toggling a mode while standing on the programme screen takes effect
+    // without a re-render.
+    const progGear = document.getElementById('prog-settings-btn');
+    if (progGear) {
+      const on = dsReviewModes().any;
+      progGear.classList.toggle('prog-gear--silent', !on);
+      progGear.setAttribute('aria-hidden', on ? 'false' : 'true');
+    }
     if (!gearBtn) return;
-    const anyActive = feedbackMode || alSuggestMode ||
-      (localStorage.getItem('tagMode') === 'true');
+    const anyActive = dsReviewModes().any;
     gearBtn.style.display = '';
     gearBtn.classList.toggle('mode-gear--silent', !anyActive);
     gearBtn.setAttribute('aria-hidden', anyActive ? 'false' : 'true');
@@ -3480,6 +3529,12 @@ function exportAlSuggestions() {
     if (k.startsWith('al_pack_')) {
       const packKey = k.replace('al_pack_', '');
       data.packSuggestions[packKey] = levelName;
+    } else if (k.startsWith('al_prog_')) {
+      // v1.27.19 — programme suggestions get their own bucket. Without this
+      // branch the key falls into the card parser below and is reported as a
+      // card in a pack called "prog", which is the same shape of silent
+      // mistake the pack and programme NOTES had in the other export.
+      (data.programSuggestions = data.programSuggestions || {})[k.replace('al_prog_', '')] = levelName;
     } else {
       // al_{pack}_{screen}_{stratId}_{cardId}_{side}
       const parts = k.split('_');
@@ -4755,6 +4810,18 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
       const fbBar = document.getElementById('fb-prog-bar');
       if (fbBar) fbBar.dataset.fbKey = fbKeyProg;
       if (fbBar && typeof fbRender === 'function') fbRender('fb-prog-bar', fbKeyProg);
+    }
+
+    // v1.27.19 — a programme can be suggested for a tier too. Same reasoning
+    // as the pack bar beside it: the question "should this be free or pro"
+    // comes up while reviewing, and had nowhere to go for programmes.
+    const alSection = document.getElementById('programSettingsAlSection');
+    if (alSection) alSection.style.display = (!noteOnly && alSuggestMode) ? '' : 'none';
+    if (!noteOnly && alSuggestMode) {
+      const alKeyProg = 'al_prog_' + programId;
+      const alBar = document.getElementById('al-prog-bar');
+      if (alBar) alBar.dataset.alKey = alKeyProg;
+      if (typeof alRender === 'function') alRender('al-prog-bar', alKeyProg);
     }
 
     const noteSection = document.getElementById('programSettingsNoteSection');
