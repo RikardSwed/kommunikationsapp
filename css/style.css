@@ -1781,13 +1781,29 @@ body.pb-enabled .divider::after {
 .mode-gear--silent > svg,
 .prog-gear--silent > i,
 .prog-gear--silent > svg { visibility: hidden; }
-.mode-gear--silent,
-.prog-gear--silent {
+
+/* THE WHITE SQUARE (fixed v1.27.19).
+   `.program-settings-btn:hover` sets `background: var(--ds-card)`, and a
+   class selector plus a pseudo-class outranks a plain class — so the silent
+   button's `background: transparent` lost, and a tap left the hover state
+   stuck, drawing a pale square exactly where the icon is not. Every
+   interactive state is pinned below, and the tap highlight the browser paints
+   on its own is turned off with it. A button drawn as nothing must stay
+   nothing while it is being pressed. */
+.mode-gear--silent,  .mode-gear--silent:hover,  .mode-gear--silent:focus,  .mode-gear--silent:active,  .mode-gear--silent:focus-visible,
+.prog-gear--silent,  .prog-gear--silent:hover,  .prog-gear--silent:focus,  .prog-gear--silent:active,  .prog-gear--silent:focus-visible {
   background: transparent;
   border-color: transparent;
+  box-shadow: none;
+  outline: none;
+  color: transparent;
+  -webkit-tap-highlight-color: transparent;
+  cursor: default;
+}
+.mode-gear--silent,
+.prog-gear--silent {
   min-width: 56px;
   min-height: 44px;
-  cursor: default;
 }
 
 .mode-pin-btn.pinned {
@@ -2763,7 +2779,16 @@ body.pb-enabled .divider::after {
    so the button has to stay pressable; whether its icon is DRAWN is decided in
    app-ui.js by adding .prog-gear--silent. Putting display:none back here
    removes the note with no visible sign that anything changed. */
-.program-settings-btn { display: block; background: none; border: none; color: var(--ds-txt3); cursor: pointer; padding: 4px 8px; border-radius: 8px; line-height: 0; }
+/* v1.27.19 — sized from .topbar-btn so the gear is the same object here as on
+   the mode screen and the training screens. It was padding-sized before and
+   came out visibly smaller than the same icon elsewhere. */
+.program-settings-btn {
+  display: flex; align-items: center; justify-content: center;
+  width: 40px; height: 40px;
+  background: none; border: none; border-radius: 10px;
+  color: var(--ds-txt3); cursor: pointer; padding: 0;
+  touch-action: manipulation;
+}
 .program-settings-btn > svg { display: block; }
 .program-settings-btn:hover { color: var(--ds-txt); background: var(--ds-card); }
 
