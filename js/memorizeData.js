@@ -5806,7 +5806,7 @@ const memorizeCollections = {
         { q: "What do all six have in common?", a: "They are short, and they all end by leaving the other person a turn.", bundle: 'free' },
         { q: "Which strategy do you use when they have told you something?", a: "Follow the Thread — take one detail out of it and go into that.", bundle: 'free' },
         { q: "Which two are for when the attention lands on you?", a: "Answer With a Hook if you want to answer, A Friendly No if you would rather not.", bundle: 'free' },
-        { q: "Why is the pack called First Strategies?", a: "These are the six most basic moves in their simplest form. Each one is the door into a deeper pack.", bundle: 'free' },
+        { q: "Why is the pack called First Strategies?", a: "These are the six most basic strategies in their simplest form. Each one is the door into a deeper pack.", bundle: 'free' },
       ]
     },
     {
@@ -5925,7 +5925,7 @@ const memorizeCollections = {
       name: "Sequences",
       guideFront: "A question about the method.",
       guideBack: "The answer.",
-      description: "1. **A Whole Small Conversation** — Opening Statement → Follow the Thread → Answer With a Hook → Follow the Thread\n2. **When Someone Asks You for Something** — Say It Back → A Friendly No → Ask Plainly\n3. **When You Want Something** — Ask Plainly → Say It Back → Follow the Thread\n\nIn each one the order is doing the work, not the individual moves.",
+      description: "1. **A Whole Small Conversation** — Opening Statement → Follow the Thread → Answer With a Hook → Follow the Thread\n2. **When Someone Asks You for Something** — Say It Back → A Friendly No → Ask Plainly\n3. **When You Want Something** — Ask Plainly → Say It Back → Follow the Thread\n\nIn each one the order is doing the work, not the individual strategies.",
       cards: [
         { q: "What is the order for a whole small conversation?", a: "Opening Statement, Follow the Thread, Answer With a Hook, Follow the Thread.", bundle: 'free' },
         { q: "Which step of that sequence do people skip?", a: "The last one. They answer a question about themselves and then stop.", bundle: 'free' },

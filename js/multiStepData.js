@@ -6580,7 +6580,7 @@ const multiStepCollections = {
       name: "When You Want Something",
       guideFront: "What's happening, and the strategy to use.",
       guideBack: "One way it could sound.",
-      description: "You asked, and the answer was not a simple yes.\n\n1. **Ask Plainly** — one sentence, then quiet\n2. **Say It Back** — when they push back, say their objection back\n3. **Follow the Thread** — go into whatever they raised\n\n**Why this order:** saying it back before you argue is the move almost nobody makes. Repeating the ask louder starts a negotiation; saying their objection back turns a refusal into a conversation — and the reason they gave is usually solvable.\n\n**What people do instead:** ask, hear a no, and ask again with more words. The second version is never more persuasive than the first. It is only longer.\n\nMindset: ask once, then listen. The second thing they say is usually the real one.",
+      description: "You asked, and the answer was not a simple yes.\n\n1. **Ask Plainly** — one sentence, then quiet\n2. **Say It Back** — when they push back, say their objection back\n3. **Follow the Thread** — go into whatever they raised\n\n**Why this order:** saying it back before you argue is what almost nobody does. Repeating the ask louder starts a negotiation; saying their objection back turns a refusal into a conversation — and the reason they gave is usually solvable.\n\n**What people do instead:** ask, hear a no, and ask again with more words. The second version is never more persuasive than the first. It is only longer.\n\nMindset: ask once, then listen. The second thing they say is usually the real one.",
       inputs: [
         {
           bundle: 'free',

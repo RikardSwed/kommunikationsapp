@@ -353,7 +353,7 @@ const packTags = {
     'tests', 'social pressure', 'inner game', 'group theory', 'frame control', 'value', 'comfort'
   ],
   firststrategies: [
-    'getting started', 'first conversations', 'beginner', 'everyday talk', 'the basic moves'
+    'getting started', 'first conversations', 'beginner', 'everyday talk', 'the basic strategies'
   ],
 };
 
