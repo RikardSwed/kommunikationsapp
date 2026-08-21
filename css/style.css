@@ -1219,14 +1219,25 @@ body.pb-enabled .divider::after {
   background: var(--ds-bg);
   display: flex;
   flex-direction: column;
-  overflow-y: auto;
+  /* v1.27.20 — the SCREEN no longer scrolls; its body does. The back arrow is
+     the only way out of this screen, and with developer settings switched on
+     the page is long enough that scrolling carried the arrow off the top and
+     left no way back except the Done button at the far bottom. */
+  overflow: hidden;
   z-index: 700;
 }
 
+/* v1.27.20 — the fixed nav bar. flex-shrink:0 keeps it at its natural height
+   while the body below takes the rest, and the background matters: without it
+   the rows scrolling past underneath show through a transparent bar. */
 .settings-screen-topbar {
   display: flex;
   align-items: center;
   padding: 16px 20px 8px;
+  flex: 0 0 auto;
+  background: var(--ds-bg);
+  position: relative;
+  z-index: 2;
 }
 
 .settings-screen-title {
@@ -1236,9 +1247,17 @@ body.pb-enabled .divider::after {
   padding: 8px 20px 20px;
 }
 
+/* v1.27.20 — this is what scrolls now. The bar and the "Settings" heading
+   above it are siblings in the same flex column and simply stay where they
+   are. min-height:0 is the flexbox part that is easy to forget — without it a
+   flex child refuses to shrink below its content, and the page scrolls again
+   as if nothing had been done. */
 .settings-screen-body {
   padding: 0 20px 40px;
-  flex: 1;
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 /* ─── SUB-COUNTER (input counter, opt-in) ───────────────────────────── */
@@ -1782,24 +1801,9 @@ body.pb-enabled .divider::after {
 .prog-gear--silent > i,
 .prog-gear--silent > svg { visibility: hidden; }
 
-/* THE WHITE SQUARE (fixed v1.27.19).
-   `.program-settings-btn:hover` sets `background: var(--ds-card)`, and a
-   class selector plus a pseudo-class outranks a plain class — so the silent
-   button's `background: transparent` lost, and a tap left the hover state
-   stuck, drawing a pale square exactly where the icon is not. Every
-   interactive state is pinned below, and the tap highlight the browser paints
-   on its own is turned off with it. A button drawn as nothing must stay
-   nothing while it is being pressed. */
-.mode-gear--silent,  .mode-gear--silent:hover,  .mode-gear--silent:focus,  .mode-gear--silent:active,  .mode-gear--silent:focus-visible,
-.prog-gear--silent,  .prog-gear--silent:hover,  .prog-gear--silent:focus,  .prog-gear--silent:active,  .prog-gear--silent:focus-visible {
-  background: transparent;
-  border-color: transparent;
-  box-shadow: none;
-  outline: none;
-  color: transparent;
-  -webkit-tap-highlight-color: transparent;
-  cursor: default;
-}
+/* The silent-gear STATE rules are not here — they are at the very end of this
+   file. See the note there; it is about source order, and moving them back up
+   brings the white square back. */
 .mode-gear--silent,
 .prog-gear--silent {
   min-width: 56px;
@@ -2780,13 +2784,16 @@ body.pb-enabled .divider::after {
    app-ui.js by adding .prog-gear--silent. Putting display:none back here
    removes the note with no visible sign that anything changed. */
 /* v1.27.19 — sized from .topbar-btn so the gear is the same object here as on
-   the mode screen and the training screens. It was padding-sized before and
-   came out visibly smaller than the same icon elsewhere. */
+   the mode screen and the training screens.
+   v1.27.20 — and the same COLOUR. It was --ds-txt3, the faintest text colour
+   in the palette, which is why it kept reading as smaller and weaker than the
+   gear on the mode screen. The icons were never different sizes: all 16 gears
+   in index.html are the same 22×22 SVG, this one included. */
 .program-settings-btn {
   display: flex; align-items: center; justify-content: center;
   width: 40px; height: 40px;
   background: none; border: none; border-radius: 10px;
-  color: var(--ds-txt3); cursor: pointer; padding: 0;
+  color: var(--ds-topbar-btnT); cursor: pointer; padding: 0;
   touch-action: manipulation;
 }
 .program-settings-btn > svg { display: block; }
@@ -3965,3 +3972,32 @@ body.feedback-mode    .al-bar { display: none !important; }
    space-between then parks on the LEFT. Push it back to the right so
    Info + Added sit exactly where Info + Add sat before the purchase. */
 .ext-store-card-bottom > .ext-store-actions:only-child { margin-left: auto; }
+
+/* ─── SILENT GEARS — KEEP THIS LAST IN THE FILE ──────────────────────────────
+   (v1.27.20)
+
+   THE WHITE SQUARE, twice. `.program-settings-btn:hover` sets
+   `background: var(--ds-card)`. That selector and `.prog-gear--silent:hover`
+   have the SAME specificity — one class plus one pseudo-class each — so
+   specificity cannot break the tie and SOURCE ORDER decides. The silent rules
+   were written a thousand lines earlier in the file, so the hover rule won,
+   and a tap left the hover state stuck: a pale square exactly where the icon
+   is not drawn.
+
+   This is the third time this file has produced the same class of bug (see
+   `.hint--muted` vs `.hint`). The lesson stands: a rule that must win is
+   asserted on COMPUTED STYLE in tools/test-notes.js, not read off the source.
+
+   Every interactive state is pinned, and the highlight the browser paints on
+   its own goes with them. A button drawn as nothing must stay nothing while it
+   is being pressed. */
+.mode-gear--silent,  .mode-gear--silent:hover,  .mode-gear--silent:focus,  .mode-gear--silent:active,  .mode-gear--silent:focus-visible,
+.prog-gear--silent,  .prog-gear--silent:hover,  .prog-gear--silent:focus,  .prog-gear--silent:active,  .prog-gear--silent:focus-visible {
+  background: transparent !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
+  outline: none !important;
+  color: transparent !important;
+  -webkit-tap-highlight-color: transparent;
+  cursor: default;
+}
