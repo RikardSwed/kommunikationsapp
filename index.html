@@ -7,10 +7,10 @@
   <meta name="mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="default" />
   <meta name="apple-mobile-web-app-title" content="Deckstack" />
-  <link rel="manifest" href="manifest.json?v=12720" />
+  <link rel="manifest" href="manifest.json?v=12721" />
   <title>Deckstack</title>
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="stylesheet" href="css/style.css?v=12720" />
+  <link rel="stylesheet" href="css/style.css?v=12721" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
 </head>
 <body>
@@ -2505,8 +2505,11 @@
   <div class="settings-screen-topbar">
     <button class="topbar-btn" id="homeSettingsBackBtn">←</button>
   </div>
-  <div class="settings-screen-title">Settings</div>
+  <!-- v1.27.21 — the heading moved INSIDE the scrolling body. The fixed nav bar
+       is the arrow row and nothing else: the bar exists to keep the way out
+       reachable, not to become a header. -->
   <div class="settings-screen-body">
+    <div class="settings-screen-title">Settings</div>
     <div class="settings-row">
       <label>Dark mode (Ember)</label>
       <label class="toggle"><input type="checkbox" id="devDarkModeToggle" /><span class="toggle-slider"></span></label>
@@ -2870,20 +2873,20 @@
   </button>
 </div>
 
-<script src="js/data.js?v=12720"></script>
-<script src="js/tagsData.js?v=12720"></script>
-<script src="js/programsData.js?v=12720"></script>
-<script src="js/challengesData.js?v=12720"></script>
-<script src="js/mindsetData.js?v=12720"></script>
-<script src="js/multiStepData.js?v=12720"></script>
-<script src="js/memorizeData.js?v=12720"></script>
-<script src="js/mode-engine.js?v=12720"></script>
-<script src="js/app-core.js?v=12720"></script>
-<script src="js/app-modes.js?v=12720"></script>
-<script src="js/app-handsfree.js?v=12720"></script>
-<script src="js/app-system.js?v=12720"></script>
-<script src="js/app-ui.js?v=12720"></script>
-<script src="js/app-back.js?v=12720"></script>
+<script src="js/data.js?v=12721"></script>
+<script src="js/tagsData.js?v=12721"></script>
+<script src="js/programsData.js?v=12721"></script>
+<script src="js/challengesData.js?v=12721"></script>
+<script src="js/mindsetData.js?v=12721"></script>
+<script src="js/multiStepData.js?v=12721"></script>
+<script src="js/memorizeData.js?v=12721"></script>
+<script src="js/mode-engine.js?v=12721"></script>
+<script src="js/app-core.js?v=12721"></script>
+<script src="js/app-modes.js?v=12721"></script>
+<script src="js/app-handsfree.js?v=12721"></script>
+<script src="js/app-system.js?v=12721"></script>
+<script src="js/app-ui.js?v=12721"></script>
+<script src="js/app-back.js?v=12721"></script>
 
 
 <!-- CHECKPOINT SCREEN -->
