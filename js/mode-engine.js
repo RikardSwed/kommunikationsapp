@@ -94,6 +94,32 @@ const DS = (function () {
     }, { passive: false });
   }
 
+  // ── Descriptions: the ONE piece of formatting they may carry ─────────────
+  // (v1.27.22)
+  //
+  // Descriptions were written into the panel with textContent, so `**like
+  // this**` came out with the asterisks showing. 118 of the app's 1961
+  // descriptions already contained `**` — written by people who assumed it
+  // would render — so this is a repair as much as a feature.
+  //
+  // STRICTLY ONE RULE. The text is escaped first and then exactly one pattern
+  // is turned into markup. Nothing else in the string can become HTML, which
+  // is what makes it safe to run on text pasted into the editor by hand.
+  // Adding a second rule later means re-reading this comment: every rule is a
+  // new way for pack text to reach innerHTML.
+  //
+  // What it is FOR: names. Strategy names, deck names, category names — the
+  // words a reader should be able to find by scanning. Not emphasis on
+  // ordinary words.
+  function dsRichText(el, str) {
+    if (!el) return;
+    const safe = String(str == null ? '' : str)
+      .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    // Non-greedy, and `.` does not cross a newline in JS — so an unclosed `**`
+    // cannot swallow the rest of the description.
+    el.innerHTML = safe.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+  }
+
   // ── Info overlay (tap the title to read the strategy description) ───────
   function setupInfoOverlay(cfg, getText) {
     if (!cfg) return { open() {}, close() {} };
@@ -107,7 +133,7 @@ const DS = (function () {
       open = true;
       // The user found the name — remove the "tap to learn" hint instantly
       if (window.hideTapHint) hideTapHint();
-      text.textContent = getText() || 'No description available.';
+      dsRichText(text, getText() || 'No description available.');
       panel.classList.add('visible');
     }
     function doClose() {
@@ -1010,7 +1036,10 @@ const DS = (function () {
 
     function showInfo(text) {
       if (!els.info || !els.infoText) return;
-      els.infoText.textContent = text;
+      // Same renderer as the training screen — the handsfree panel shows the
+      // same descriptions, and two ways of drawing one string is how they
+      // start to differ.
+      dsRichText(els.infoText, text);
       els.info.classList.add('visible');
     }
     function hideInfo() {
