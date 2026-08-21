@@ -6504,7 +6504,7 @@ const multiStepCollections = {
       name: "A Whole Small Conversation",
       guideFront: "What's happening, and the strategy to use.",
       guideBack: "One way it could sound.",
-      description: "Opening Statement, then Follow the Thread, then Answer With a Hook, then Follow the Thread again. Four steps, and it is a complete conversation with a stranger.\n\nNotice the shape: you start, they answer, you go into what they said, they ask you something back, and you give them a door. Nothing clever happens at any point.\n\nThe last step is the one people skip. Answering a question about yourself and then stopping is where most first conversations quietly end.\n\nMindset: this is the whole thing. Six sentences, and neither of you had to be interesting.",
+      description: "Four steps, and it is a whole conversation with a stranger.\n\n1. **Opening Statement** — put something on the table\n2. **Follow the Thread** — take one piece of what they answered\n3. **Answer With a Hook** — they ask about you; leave a door open\n4. **Follow the Thread** — go back into what they said\n\n**Why this order:** the hook has to come after they have spoken, because a hook only works as an answer. Lead with something about yourself and it is a monologue; offer the same sentence when asked and it is an exchange.\n\n**What people do instead:** stop at step 3. Answering a question about yourself and then going quiet is where most first conversations end.\n\nMindset: six sentences, and neither of you had to be interesting.",
       inputs: [
         {
           bundle: 'free',
@@ -6542,7 +6542,7 @@ const multiStepCollections = {
       name: "When Someone Asks You for Something",
       guideFront: "What's happening, and the strategy to use.",
       guideBack: "One way it could sound.",
-      description: "Say It Back, then A Friendly No, then Ask Plainly. The order is what makes it work.\n\nSaying it back first means the no arrives after they have been understood, rather than instead of it. Then the no, clear and short. Then, if you want to, asking for the version you could actually do — which is a request, not an excuse, and belongs at the end.\n\nMost people do this in the opposite order: a reason, then a vague no, then an apology. That leaves the other person unsure whether it was a no at all.\n\nMindset: understood, declined, and offered something — in that order.",
+      description: "Someone has asked, and the answer is no — or not all of it.\n\n1. **Say It Back** — show you have the whole request\n2. **A Friendly No** — clear, warm, at most one reason\n3. **Ask Plainly** — offer the version you could do\n\n**Why this order:** saying it back first means the no arrives to someone who has been understood, rather than instead of it. And the offer belongs last — made before the no it reads as bargaining, made after it reads as a gift.\n\n**What people do instead:** a reason, then a vague no, then an apology. That leaves the other person unsure whether it was a no at all, and they come back on Thursday.\n\nMindset: understood, declined, and offered something — in that order.",
       inputs: [
         {
           bundle: 'free',
@@ -6580,7 +6580,7 @@ const multiStepCollections = {
       name: "When You Want Something",
       guideFront: "What's happening, and the strategy to use.",
       guideBack: "One way it could sound.",
-      description: "Ask Plainly, then Say It Back, then Follow the Thread. What to do when the answer is not a simple yes.\n\nThe request goes first, and short. Then, when they push back, you say back what they have said rather than repeating the ask louder — which is the move almost nobody makes and the one that turns a refusal into a conversation. Then you follow the thread into whatever they raised.\n\nOften the reason they gave is solvable, and it would never have come out if you had argued instead.\n\nMindset: ask once, then listen. The second thing they say is usually the real one.",
+      description: "You asked, and the answer was not a simple yes.\n\n1. **Ask Plainly** — one sentence, then quiet\n2. **Say It Back** — when they push back, say their objection back\n3. **Follow the Thread** — go into whatever they raised\n\n**Why this order:** saying it back before you argue is the move almost nobody makes. Repeating the ask louder starts a negotiation; saying their objection back turns a refusal into a conversation — and the reason they gave is usually solvable.\n\n**What people do instead:** ask, hear a no, and ask again with more words. The second version is never more persuasive than the first. It is only longer.\n\nMindset: ask once, then listen. The second thing they say is usually the real one.",
       inputs: [
         {
           bundle: 'free',

@@ -5797,7 +5797,7 @@ const memorizeCollections = {
       name: "Core Idea",
       guideFront: "A question about the method.",
       guideBack: "The answer.",
-      description: "The shape of the pack: six strategies that between them make a whole small conversation.",
+      description: "Six strategies that between them make a whole small conversation.\n\n1. **Opening Statement**\n2. **Follow the Thread**\n3. **Say It Back**\n4. **Ask Plainly**\n5. **A Friendly No**\n6. **Answer With a Hook**\n\nOpen, keep it going, listen, ask, decline, and share something back.",
       cards: [
         { q: "What are the six strategies in this pack?", a: "Opening Statement, Follow the Thread, Say It Back, Ask Plainly, A Friendly No, Answer With a Hook.", bundle: 'free' },
         { q: "What is the arc the six make together?", a: "Open, keep it going, listen, ask, decline, and share something back.", bundle: 'free' },
@@ -5813,7 +5813,7 @@ const memorizeCollections = {
       name: "Opening Statement",
       guideFront: "A question about the method.",
       guideBack: "The answer.",
-      description: "Opening with a remark instead of a question.",
+      description: "",
       cards: [
         { q: "What is an opening statement?", a: "A remark rather than a question — something the other person can pick up or let go.", bundle: 'free' },
         { q: "Why does a statement open more conversations than a question?", a: "A question makes them work; a statement hands them material.", bundle: 'free' },
@@ -5829,7 +5829,7 @@ const memorizeCollections = {
       name: "Follow the Thread",
       guideFront: "A question about the method.",
       guideBack: "The answer.",
-      description: "Using what they just said instead of finding something new.",
+      description: "",
       cards: [
         { q: "What does following the thread mean?", a: "Taking one word or detail out of what they just said and going into it.", bundle: 'free' },
         { q: "What problem does it solve?", a: "Having nothing to say next — they have already given you three things.", bundle: 'free' },
@@ -5845,7 +5845,7 @@ const memorizeCollections = {
       name: "Say It Back",
       guideFront: "A question about the method.",
       guideBack: "The answer.",
-      description: "Repeating what you understood before you answer.",
+      description: "",
       cards: [
         { q: "What is the move?", a: "Say back what you understood, in your own words, before you answer.", bundle: 'free' },
         { q: "What two things does it do at once?", a: "Proves you were listening, and buys you a few seconds to think.", bundle: 'free' },
@@ -5861,7 +5861,7 @@ const memorizeCollections = {
       name: "Ask Plainly",
       guideFront: "A question about the method.",
       guideBack: "The answer.",
-      description: "Making a request without the run-up.",
+      description: "",
       cards: [
         { q: "What is the shape of a plain ask?", a: "One specific sentence, put as a question, and then stop.", bundle: 'free' },
         { q: "What actually makes a request awkward?", a: "The run-up. The apology before it tells them you think you are imposing.", bundle: 'free' },
@@ -5877,7 +5877,7 @@ const memorizeCollections = {
       name: "A Friendly No",
       guideFront: "A question about the method.",
       guideBack: "The answer.",
-      description: "Declining clearly without a pile of reasons.",
+      description: "",
       cards: [
         { q: "What are the three parts of a friendly no?", a: "Something warm, the actual no, and at most one reason.", bundle: 'free' },
         { q: "What is the rule about softening?", a: "Soften the delivery, never the answer.", bundle: 'free' },
@@ -5893,7 +5893,7 @@ const memorizeCollections = {
       name: "Answer With a Hook",
       guideFront: "A question about the method.",
       guideBack: "The answer.",
-      description: "Answering about yourself so there is somewhere to go next.",
+      description: "",
       cards: [
         { q: "What is a hook?", a: "One extra detail in your answer that the other person can ask about.", bundle: 'free' },
         { q: "What is wrong with \"fine\"?", a: "It leaves them with nothing, so they have to invent another question.", bundle: 'free' },
@@ -5909,7 +5909,7 @@ const memorizeCollections = {
       name: "Collections",
       guideFront: "A question about the method.",
       guideBack: "The answer.",
-      description: "The theory behind the Collections mode: how to choose when more than one strategy would work — which is most of the time, and the question Single Strategy never has to answer.",
+      description: "• **Opening Statement** — nothing said yet, and you want a conversation\n• **Ask Plainly** — nothing said yet, and you want one specific thing\n• **Follow the Thread** — they told you something\n• **Say It Back** — they told you something complicated\n• **A Friendly No** — they asked for something you cannot do\n• **Answer With a Hook** — they asked about you\n\nOne question decides all six: what did the other person just do?",
       cards: [
         { q: "What single question decides most of it?", a: "What did the other person just do?", bundle: 'free' },
         { q: "Which two are for when nothing has been said yet?", a: "Opening Statement and Ask Plainly.", bundle: 'free' },
@@ -5925,7 +5925,7 @@ const memorizeCollections = {
       name: "Sequences",
       guideFront: "A question about the method.",
       guideBack: "The answer.",
-      description: "The theory behind the Sequences mode: the three sequences in this pack, and why the steps come in the order they do. In every one of them the order is doing the work, not the individual moves.",
+      description: "1. **A Whole Small Conversation** — Opening Statement → Follow the Thread → Answer With a Hook → Follow the Thread\n2. **When Someone Asks You for Something** — Say It Back → A Friendly No → Ask Plainly\n3. **When You Want Something** — Ask Plainly → Say It Back → Follow the Thread\n\nIn each one the order is doing the work, not the individual moves.",
       cards: [
         { q: "What is the order for a whole small conversation?", a: "Opening Statement, Follow the Thread, Answer With a Hook, Follow the Thread.", bundle: 'free' },
         { q: "Which step of that sequence do people skip?", a: "The last one. They answer a question about themselves and then stop.", bundle: 'free' },
@@ -5941,9 +5941,9 @@ const memorizeCollections = {
       name: "Challenges",
       guideFront: "A question about the method.",
       guideBack: "The answer.",
-      description: "The theory behind the Challenges mode: the five kinds of difficult moment this pack covers, and what each one does to people who have no strategy for it.",
+      description: "• **Cold Starts** — nothing has been said yet\n• **Stalling** — it was going, and now it is not\n• **In the Spotlight** — the attention turns to you\n• **Requests** — they want something from you\n• **Asking** — you want something from them\n\nFive moments, each with its own way of going wrong.",
       cards: [
-        { q: "What are the five hard moments in this pack?", a: "You do not know them at all, the conversation has stalled, they asked about you, they want something from you, and you want something from them.", bundle: 'free' },
+        { q: "What are the five hard moments in this pack?", a: "Cold Starts, Stalling, In the Spotlight, Requests and Asking.", bundle: 'free' },
         { q: "What goes wrong with someone you do not know?", a: "It turns into an interview — two questions in a row, and nothing given back.", bundle: 'free' },
         { q: "What is the fix for a stalled conversation?", a: "Look backwards, not for a new subject. Anything from the last ten minutes is still open.", bundle: 'free' },
         { q: "Why does a closed answer stall a conversation three exchanges later?", a: "It leaves the other person inventing every question, and after two or three most people stop.", bundle: 'free' },
@@ -5957,7 +5957,7 @@ const memorizeCollections = {
       name: "Mindset",
       guideFront: "A question about the method.",
       guideBack: "The answer.",
-      description: "The theory behind the Mindset mode: the six beliefs that stop people using any of this, and what is true instead. Every one of them feels like modesty or good manners from the inside.",
+      description: "• **You Do Not Have to Be Interesting** — one true ordinary sentence is the bar\n• **A Question Is Not Always the Friendliest Thing** — a remark asks for nothing\n• **No Is Not a Rejection of the Person** — a clear no lets them ask someone else\n• **Give Them Something to Work With** — one detail is not taking up space\n• **Asking Is Not Imposing** — you are giving them a choice\n• **A Pause Is Not a Failure** — a pause is where people think\n\nEvery one of them feels like modesty or good manners from the inside.",
       cards: [
         { q: "What belief stops people speaking first?", a: "That a conversation is a performance, and the price of entry is something worth saying.", bundle: 'free' },
         { q: "What is true instead?", a: "The bar is a true, ordinary sentence. Nobody remembers the sentence — only that someone spoke to them.", bundle: 'free' },

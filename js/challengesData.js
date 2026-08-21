@@ -4271,10 +4271,10 @@ const challengesCollections = {
   ],
   firststrategies: [
     {
-      name: "You Do Not Know Them At All",
+      name: "Cold Starts",
       guideFront: "Choose a strategy to respond when...",
       guideBack: "A possible response, with the strategy in brackets.",
-      description: "A stranger, a first meeting, a room where everybody else already knows each other. Nothing has been said yet, so there is nothing to work with except what is in front of you both.\n\nOpening Statement does most of the work here, and Answer With a Hook does the rest — because a first conversation with a stranger almost always turns into questions about you within a minute.\n\nThe one thing to avoid is the interview. Two questions in a row from the same person makes anyone feel examined, and it also means you have given them nothing to ask you about.\n\nMindset: ordinary is the target. The remark does not have to be good, it has to be true.",
+      description: "A stranger, a first meeting, a room where everyone else arrived together. Nothing has been said, so there is nothing to work with except what is in front of you both.\n\n**What goes wrong:** it turns into an interview. Two questions in a row from the same person makes anyone feel examined — and it means you have given them nothing to ask you about.\n\n**What works here:** **Opening Statement** does most of it, and **Answer With a Hook** does the rest, because a first conversation turns into questions about you within a minute.\n\n**Avoid:** waiting for something worth saying. It does not arrive, and the silence is more awkward than the remark would have been.\n\nMindset: ordinary is the target. The remark does not have to be good, it has to be true.",
       inputs: [
         { q: "You are next to someone at a counter and neither of you has spoken.", a: "\"I still have no idea what half of these are.\" [Opening Statement]", bundle: 'free' },
         { q: "They answer your remark and mention where they have come from.", a: "\"All the way from Kalmar? That's a morning gone.\" [Follow the Thread]", bundle: 'free' },
@@ -4287,10 +4287,10 @@ const challengesCollections = {
       ]
     },
     {
-      name: "The Conversation Has Stalled",
+      name: "Stalling",
       guideFront: "Choose a strategy to respond when...",
       guideBack: "A possible response, with the strategy in brackets.",
-      description: "It was going fine and now it is not. Both of you are looking for something new, which is the hardest possible way to find something to say.\n\nFollow the Thread is the way out, and the thread does not have to be recent. Anything they said in the last ten minutes is still open, and going back to it reads as interest rather than as a rescue.\n\nAnswer With a Hook is the other half of the fix, because a stall is often caused by a closed answer three exchanges ago that left the other person with nowhere to go.\n\nMindset: do not look for a new subject. Look backwards.",
+      description: "It was going fine and now it is not. Both of you are hunting for a new subject, which is the hardest possible way to find something to say.\n\n**What goes wrong:** you look forwards. A stall is nearly always caused by a closed answer two or three exchanges back, and the material to fix it is behind you, not ahead.\n\n**What works here:** **Follow the Thread**, and the thread does not have to be recent — anything from the last ten minutes is still open. **Answer With a Hook** is the other half, because it prevents the next one.\n\n**Avoid:** changing the subject. It throws away everything already on the table and starts the same problem again.\n\nMindset: do not look for a new subject. Look backwards.",
       inputs: [
         { q: "There has been a pause and you are both aware of it.", a: "\"You mentioned the new place earlier — how's that going?\" [Follow the Thread]", bundle: 'free' },
         { q: "You just gave a one-word answer and the conversation died on it.", a: "\"Actually, that's not the whole answer — it's been a strange week.\" [Answer With a Hook]", bundle: 'free' },
@@ -4303,10 +4303,10 @@ const challengesCollections = {
       ]
     },
     {
-      name: "They Asked You Something About Yourself",
+      name: "In the Spotlight",
       guideFront: "Choose a strategy to respond when...",
       guideBack: "A possible response, with the strategy in brackets.",
-      description: "The moment people handle worst. Someone turns the attention onto you — how are you, what do you do, how was the weekend — and the reflex is to say as little as possible and hand it straight back.\n\nAnswer With a Hook is the strategy, and the size of the hook is the only decision. One extra detail is plenty with a stranger. Something you care about is for people you want to know better.\n\nA Friendly No belongs here too, for the questions you would rather not answer. Declining a question works exactly like declining a request: clear, warm, no explanation needed.\n\nMindset: they asked because they want a conversation. Give them somewhere to go.",
+      description: "Someone turns the attention onto you — how are you, what do you do, how was the weekend. The moment people handle worst.\n\n**What goes wrong:** the reflex is to say as little as possible and hand the question straight back. It feels modest, and it puts the whole job on them.\n\n**What works here:** **Answer With a Hook**, and the size is the only decision — one extra detail with a stranger, something you care about with someone you want to know. **A Friendly No** belongs here too, for questions you would rather not answer.\n\n**Avoid:** answering and asking back in the same breath. Answer first, or they are carrying the conversation alone.\n\nMindset: they asked because they want a conversation. Give them somewhere to go.",
       inputs: [
         { q: "Someone asks how you are and you are about to say \"fine\".", a: "\"Fine — well, fine apart from the drive here.\" [Answer With a Hook]", bundle: 'free' },
         { q: "Someone asks about your weekend and you did nothing.", a: "\"Nothing at all, on purpose. It was excellent.\" [Answer With a Hook]", bundle: 'free' },
@@ -4319,10 +4319,10 @@ const challengesCollections = {
       ]
     },
     {
-      name: "They Want Something From You",
+      name: "Requests",
       guideFront: "Choose a strategy to respond when...",
       guideBack: "A possible response, with the strategy in brackets.",
-      description: "A request has arrived and you do not want to say yes. This is where people invent the vague no — \"maybe\", \"I'll see\", \"probably not\" — which feels kind and costs the other person a week.\n\nSay It Back first, especially when the request is complicated. It buys you a moment, and it means the no lands after they have been understood.\n\nThen the no, short and warm, and at most one reason. If there is a version you could do, Ask Plainly for it — as an offer, not an apology.\n\nMindset: soften the delivery, never the answer.",
+      description: "Someone wants something from you, and you do not want to say yes.\n\n**What goes wrong:** the vague no. \"Maybe\", \"I'll see\", \"probably not\" — they feel kind, and they cost the other person a week of planning around you.\n\n**What works here:** **Say It Back** first when the request has several parts; it buys a moment and means the no lands after they have been understood. Then **A Friendly No**, and **Ask Plainly** if there is a version you could do.\n\n**Avoid:** the third reason. One is friendly. Three is an invitation to solve them one by one.\n\nMindset: soften the delivery, never the answer.",
       inputs: [
         { q: "The request has several parts and you want to be sure of it.", a: "\"So it's two weeks, starting Monday, on top of what I've got.\" [Say It Back]", bundle: 'free' },
         { q: "You have decided, and you are about to say \"maybe\".", a: "\"I'll be honest rather than vague: no, not this time.\" [A Friendly No]", bundle: 'free' },
@@ -4335,10 +4335,10 @@ const challengesCollections = {
       ]
     },
     {
-      name: "You Want Something From Them",
+      name: "Asking",
       guideFront: "Choose a strategy to respond when...",
       guideBack: "A possible response, with the strategy in brackets.",
-      description: "You need something, and you have been putting it off, or hinting, or building a case in your head. Hinting is the failure mode: it protects you from hearing no, and it also almost never works.\n\nAsk Plainly is the whole strategy — one sentence, specific, then quiet. If they push back, Say It Back rather than repeating the ask, because the reason they give is often solvable and would never survive an argument.\n\nOpening Statement has a role too, when you need to raise something in a room where nothing has been said yet.\n\nMindset: asking is normal. You are giving them the chance to say yes.",
+      description: "You need something, and you have been putting it off, hinting, or building the case in your head.\n\n**What goes wrong:** hinting. It spares you the no and almost never gets you the thing — they either miss it, or notice it and now have to decide without being asked.\n\n**What works here:** **Ask Plainly** is the whole move — one specific sentence, then quiet. If they push back, **Say It Back** rather than repeating it louder.\n\n**Avoid:** explaining after the question. The reasons you add turn a request into a case that can be argued with.\n\nMindset: asking is normal. You are giving them the chance to say yes.",
       inputs: [
         { q: "You have been hinting for a week and nothing has changed.", a: "\"I'll say it properly: could you do the shopping this week?\" [Ask Plainly]", bundle: 'free' },
         { q: "You asked, and are now about to explain why.", a: "(stop — the question was already complete) [Ask Plainly]", bundle: 'free' },
