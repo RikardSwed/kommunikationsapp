@@ -1240,18 +1240,21 @@ body.pb-enabled .divider::after {
   z-index: 2;
 }
 
+/* v1.27.21 — the heading now sits INSIDE .settings-screen-body, which already
+   carries the 20px side padding, so this only spaces it vertically. Its old
+   `padding: 8px 20px 20px` would have indented it 40px from the rows below. */
 .settings-screen-title {
   font-size: 20px;
   font-weight: 800;
   color: var(--ds-txt);
-  padding: 8px 20px 20px;
+  padding: 8px 0 20px;
 }
 
-/* v1.27.20 — this is what scrolls now. The bar and the "Settings" heading
-   above it are siblings in the same flex column and simply stay where they
-   are. min-height:0 is the flexbox part that is easy to forget — without it a
-   flex child refuses to shrink below its content, and the page scrolls again
-   as if nothing had been done. */
+/* v1.27.20 — this is what scrolls now; v1.27.21 — and the "Settings" heading
+   scrolls with it, because it lives in here. The fixed part above is the arrow
+   row alone. min-height:0 is the flexbox part that is easy to forget — without
+   it a flex child refuses to shrink below its content, and the page scrolls
+   again as if nothing had been done. */
 .settings-screen-body {
   padding: 0 20px 40px;
   flex: 1 1 auto;
