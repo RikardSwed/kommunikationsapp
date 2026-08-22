@@ -5941,16 +5941,16 @@ const memorizeCollections = {
       name: "Challenges",
       guideFront: "A question about the method.",
       guideBack: "The answer.",
-      description: "• **Cold Starts** — nothing has been said yet\n• **Stalling** — it was going, and now it is not\n• **In the Spotlight** — the attention turns to you\n• **Requests** — they want something from you\n• **Asking** — you want something from them\n\nFive moments, each with its own way of going wrong.",
+      description: "• **Cold Starts** — nothing has been said yet\n• **Stalling** — it was going, and now it is not\n• **In the Spotlight** — the attention turns to you\n• **Requests** — they want something from you\n• **Asking** — you want something from them\n\nFive challenges, each with its own way of going wrong.",
       cards: [
-        { q: "What are the five hard moments in this pack?", a: "Cold Starts, Stalling, In the Spotlight, Requests and Asking.", bundle: 'free' },
+        { q: "What are the five challenges in this pack?", a: "Cold Starts, Stalling, In the Spotlight, Requests and Asking.", bundle: 'free' },
         { q: "What goes wrong with someone you do not know?", a: "It turns into an interview — two questions in a row, and nothing given back.", bundle: 'free' },
         { q: "What is the fix for a stalled conversation?", a: "Look backwards, not for a new subject. Anything from the last ten minutes is still open.", bundle: 'free' },
         { q: "Why does a closed answer stall a conversation three exchanges later?", a: "It leaves the other person inventing every question, and after two or three most people stop.", bundle: 'free' },
         { q: "What goes wrong when someone asks about you?", a: "The reflex is to say as little as possible and hand the question straight back.", bundle: 'free' },
         { q: "What goes wrong when someone wants something from you?", a: "The vague no — \"maybe\", \"I'll see\" — which feels kind and costs them a week.", bundle: 'free' },
         { q: "What goes wrong when you want something?", a: "Hinting. It protects you from hearing no, and it almost never gets you the thing.", bundle: 'free' },
-        { q: "Which strategy turns up in the most categories?", a: "Follow the Thread — it rescues a stall, softens an interview, and opens up a refusal.", bundle: 'free' },
+        { q: "Which strategy turns up in the most challenges?", a: "Follow the Thread — it rescues a stall, softens an interview, and opens up a refusal.", bundle: 'free' },
       ]
     },
     {
