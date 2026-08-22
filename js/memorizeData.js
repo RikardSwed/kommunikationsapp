@@ -5795,12 +5795,12 @@ const memorizeCollections = {
   firststrategies: [
     {
       name: "Core Idea",
-      guideFront: "A question about the method.",
+      guideFront: "Answer out loud, then flip.",
       guideBack: "The answer.",
       description: "Six strategies that between them make a whole small conversation.\n\n1. **Opening Statement**\n2. **Follow the Thread**\n3. **Say It Back**\n4. **Ask Plainly**\n5. **A Friendly No**\n6. **Answer With a Hook**\n\nOpen, keep it going, listen, ask, decline, and share something back.",
       cards: [
         { q: "What are the six strategies in this pack?", a: "Opening Statement, Follow the Thread, Say It Back, Ask Plainly, A Friendly No, Answer With a Hook.", bundle: 'free' },
-        { q: "What is the arc the six make together?", a: "Open, keep it going, listen, ask, decline, and share something back.", bundle: 'free' },
+        { q: "How do the six fit together?", a: "Open, keep it going, listen, ask, decline, and share something back.", bundle: 'free' },
         { q: "Which two are for when nothing has been said yet?", a: "Opening Statement and Ask Plainly.", bundle: 'free' },
         { q: "What decides which strategy to use?", a: "What the other person just did — told you something, asked you for something, or asked about you.", bundle: 'free' },
         { q: "What do all six have in common?", a: "They are short, and they all end by leaving the other person a turn.", bundle: 'free' },
@@ -5811,7 +5811,7 @@ const memorizeCollections = {
     },
     {
       name: "Opening Statement",
-      guideFront: "A question about the method.",
+      guideFront: "Answer out loud, then flip.",
       guideBack: "The answer.",
       description: "",
       cards: [
@@ -5827,7 +5827,7 @@ const memorizeCollections = {
     },
     {
       name: "Follow the Thread",
-      guideFront: "A question about the method.",
+      guideFront: "Answer out loud, then flip.",
       guideBack: "The answer.",
       description: "",
       cards: [
@@ -5843,7 +5843,7 @@ const memorizeCollections = {
     },
     {
       name: "Say It Back",
-      guideFront: "A question about the method.",
+      guideFront: "Answer out loud, then flip.",
       guideBack: "The answer.",
       description: "",
       cards: [
@@ -5859,7 +5859,7 @@ const memorizeCollections = {
     },
     {
       name: "Ask Plainly",
-      guideFront: "A question about the method.",
+      guideFront: "Answer out loud, then flip.",
       guideBack: "The answer.",
       description: "",
       cards: [
@@ -5875,7 +5875,7 @@ const memorizeCollections = {
     },
     {
       name: "A Friendly No",
-      guideFront: "A question about the method.",
+      guideFront: "Answer out loud, then flip.",
       guideBack: "The answer.",
       description: "",
       cards: [
@@ -5891,7 +5891,7 @@ const memorizeCollections = {
     },
     {
       name: "Answer With a Hook",
-      guideFront: "A question about the method.",
+      guideFront: "Answer out loud, then flip.",
       guideBack: "The answer.",
       description: "",
       cards: [
@@ -5907,12 +5907,12 @@ const memorizeCollections = {
     },
     {
       name: "Collections",
-      guideFront: "A question about the method.",
+      guideFront: "Answer out loud, then flip.",
       guideBack: "The answer.",
-      description: "• **Opening Statement** — nothing said yet, and you want a conversation\n• **Ask Plainly** — nothing said yet, and you want one specific thing\n• **Follow the Thread** — they told you something\n• **Say It Back** — they told you something complicated\n• **A Friendly No** — they asked for something you cannot do\n• **Answer With a Hook** — they asked about you\n\nOne question decides all six: what did the other person just do?",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Open or Ask** — nothing has been said yet: do you want a conversation, or one specific thing?\n• **Read and Reply** — they have spoken: which of the four answers fits?\n• **All Six Strategies** — everything mixed, and no warning about which moment you are in\n\nOne question decides nearly all of it: what did the other person just do?",
       cards: [
-        { q: "What single question decides most of it?", a: "What did the other person just do?", bundle: 'free' },
-        { q: "Which two are for when nothing has been said yet?", a: "Opening Statement and Ask Plainly.", bundle: 'free' },
+        { q: "What are the three collections in this pack?", a: "Open or Ask, Read and Reply, and All Six Strategies.", bundle: 'free' },
+        { q: "What does Open or Ask make you choose between?", a: "A conversation for its own sake, or one specific thing you need.", bundle: 'free' },
         { q: "What separates those two?", a: "Opening Statement wants a conversation. Ask Plainly wants a specific thing, and the conversation is only the way to it.", bundle: 'free' },
         { q: "They told you something. Which strategy?", a: "Follow the Thread — unless it was complicated or upsetting, and then Say It Back first.", bundle: 'free' },
         { q: "They asked you for something you cannot do. Which strategy?", a: "A Friendly No — with Say It Back first if the request had several parts.", bundle: 'free' },
@@ -5923,25 +5923,25 @@ const memorizeCollections = {
     },
     {
       name: "Sequences",
-      guideFront: "A question about the method.",
+      guideFront: "Answer out loud, then flip.",
       guideBack: "The answer.",
-      description: "1. **The First Conversation** — Opening Statement → Follow the Thread → Answer With a Hook → Follow the Thread\n2. **The Half Yes** — Say It Back → A Friendly No → Ask Plainly\n3. **The Second Answer** — Ask Plainly → Say It Back → Follow the Thread\n\nIn each one the order is doing the work, not the individual strategies.",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **The First Conversation** — Opening Statement → Follow the Thread → Answer With a Hook → Follow the Thread\n2. **The Half Yes** — Say It Back → A Friendly No → Ask Plainly\n3. **The Second Answer** — Ask Plainly → Say It Back → Follow the Thread\n\nIn each one the order is doing the work, not the individual strategies.",
       cards: [
-        { q: "What is the order for a whole small conversation?", a: "Opening Statement, Follow the Thread, Answer With a Hook, Follow the Thread.", bundle: 'free' },
+        { q: "What is the order in The First Conversation?", a: "Opening Statement, Follow the Thread, Answer With a Hook, Follow the Thread.", bundle: 'free' },
         { q: "Which step of that sequence do people skip?", a: "The last one. They answer a question about themselves and then stop.", bundle: 'free' },
-        { q: "What is the order when someone asks you for something?", a: "Say It Back, then A Friendly No, then Ask Plainly if there is a version you could do.", bundle: 'free' },
+        { q: "What is the order in The Half Yes?", a: "Say It Back, then A Friendly No, then Ask Plainly if there is a version you could do.", bundle: 'free' },
         { q: "Why does Say It Back come before the no?", a: "So the no arrives after they have been understood, rather than instead of it.", bundle: 'free' },
         { q: "What order do most people use instead?", a: "A reason, then a vague no, then an apology — which leaves the other person unsure it was a no at all.", bundle: 'free' },
-        { q: "What is the order when you want something?", a: "Ask Plainly, then Say It Back when they push back, then Follow the Thread into whatever they raised.", bundle: 'free' },
+        { q: "What is the order in The Second Answer?", a: "Ask Plainly, then Say It Back when they push back, then Follow the Thread into whatever they raised.", bundle: 'free' },
         { q: "Why say it back rather than repeat the ask?", a: "Repeating it louder starts an argument. Saying it back turns a refusal into a conversation.", bundle: 'free' },
         { q: "What is usually true about the second thing they say?", a: "It is the real reason — and it is often solvable, which it never would be in an argument.", bundle: 'free' },
       ]
     },
     {
       name: "Challenges",
-      guideFront: "A question about the method.",
+      guideFront: "Answer out loud, then flip.",
       guideBack: "The answer.",
-      description: "• **Cold Starts** — nothing has been said yet\n• **Stalling** — it was going, and now it is not\n• **In the Spotlight** — the attention turns to you\n• **Requests** — they want something from you\n• **Asking** — you want something from them\n\nFive challenges, each with its own way of going wrong.",
+      description: "The five challenges to master in this pack:\n\n• **Cold Starts** — nothing has been said yet\n• **Stalling** — it was going, and now it is not\n• **In the Spotlight** — the attention turns to you\n• **Requests** — they want something from you\n• **Asking** — you want something from them\n\nEach one has its own way of going wrong.",
       cards: [
         { q: "What are the five challenges in this pack?", a: "Cold Starts, Stalling, In the Spotlight, Requests and Asking.", bundle: 'free' },
         { q: "What goes wrong with someone you do not know?", a: "It turns into an interview — two questions in a row, and nothing given back.", bundle: 'free' },
@@ -5955,11 +5955,11 @@ const memorizeCollections = {
     },
     {
       name: "Mindset",
-      guideFront: "A question about the method.",
+      guideFront: "Answer out loud, then flip.",
       guideBack: "The answer.",
-      description: "• **You Do Not Have to Be Interesting** — one true ordinary sentence is the bar\n• **A Question Is Not Always the Friendliest Thing** — a remark asks for nothing\n• **No Is Not a Rejection of the Person** — a clear no lets them ask someone else\n• **Give Them Something to Work With** — one detail is not taking up space\n• **Asking Is Not Imposing** — you are giving them a choice\n• **A Pause Is Not a Failure** — a pause is where people think\n\nEvery one of them feels like modesty or good manners from the inside.",
+      description: "These are the mindsets you practise in this pack:\n\n• **You Do Not Have to Be Interesting** — one true ordinary sentence is the bar\n• **A Question Is Not Always the Friendliest Thing** — a remark asks for nothing\n• **No Is Not a Rejection of the Person** — a clear no lets them ask someone else\n• **Give Them Something to Work With** — one detail is not taking up space\n• **Asking Is Not Imposing** — you are giving them a choice\n• **A Pause Is Not a Failure** — a pause is where people think\n\nEach one replaces a belief that feels like modesty or good manners from the inside.",
       cards: [
-        { q: "What belief stops people speaking first?", a: "That a conversation is a performance, and the price of entry is something worth saying.", bundle: 'free' },
+        { q: "What belief stops people from speaking first?", a: "That a conversation is a performance, and the price of entry is something worth saying.", bundle: 'free' },
         { q: "What is true instead?", a: "The bar is a true, ordinary sentence. Nobody remembers the sentence — only that someone spoke to them.", bundle: 'free' },
         { q: "Why do people reach for a question when a remark would work better?", a: "A question feels polite. It is also a small demand, answered on the spot, by someone who may be tired.", bundle: 'free' },
         { q: "What belief produces \"maybe\"?", a: "That a no is a verdict on the person asking, rather than an answer to what they asked.", bundle: 'free' },
