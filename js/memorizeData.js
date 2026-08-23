@@ -5795,7 +5795,7 @@ const memorizeCollections = {
   firststrategies: [
     {
       name: "Core Idea",
-      guideFront: "Answer out loud, then flip.",
+      guideFront: "Test yourself.",
       guideBack: "The answer.",
       description: "Six strategies that between them make a whole small conversation.\n\n1. **Opening Statement**\n2. **Follow the Thread**\n3. **Say It Back**\n4. **Ask Plainly**\n5. **A Friendly No**\n6. **Answer With a Hook**\n\nOpen, keep it going, listen, ask, decline, and share something back.",
       cards: [
@@ -5811,7 +5811,7 @@ const memorizeCollections = {
     },
     {
       name: "Opening Statement",
-      guideFront: "Answer out loud, then flip.",
+      guideFront: "Test yourself.",
       guideBack: "The answer.",
       description: "",
       cards: [
@@ -5827,7 +5827,7 @@ const memorizeCollections = {
     },
     {
       name: "Follow the Thread",
-      guideFront: "Answer out loud, then flip.",
+      guideFront: "Test yourself.",
       guideBack: "The answer.",
       description: "",
       cards: [
@@ -5843,7 +5843,7 @@ const memorizeCollections = {
     },
     {
       name: "Say It Back",
-      guideFront: "Answer out loud, then flip.",
+      guideFront: "Test yourself.",
       guideBack: "The answer.",
       description: "",
       cards: [
@@ -5859,7 +5859,7 @@ const memorizeCollections = {
     },
     {
       name: "Ask Plainly",
-      guideFront: "Answer out loud, then flip.",
+      guideFront: "Test yourself.",
       guideBack: "The answer.",
       description: "",
       cards: [
@@ -5875,7 +5875,7 @@ const memorizeCollections = {
     },
     {
       name: "A Friendly No",
-      guideFront: "Answer out loud, then flip.",
+      guideFront: "Test yourself.",
       guideBack: "The answer.",
       description: "",
       cards: [
@@ -5891,7 +5891,7 @@ const memorizeCollections = {
     },
     {
       name: "Answer With a Hook",
-      guideFront: "Answer out loud, then flip.",
+      guideFront: "Test yourself.",
       guideBack: "The answer.",
       description: "",
       cards: [
@@ -5907,7 +5907,7 @@ const memorizeCollections = {
     },
     {
       name: "Collections",
-      guideFront: "Answer out loud, then flip.",
+      guideFront: "Test yourself.",
       guideBack: "The answer.",
       description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Open or Ask** — nothing has been said yet: do you want a conversation, or one specific thing?\n• **Read and Reply** — they have spoken: which of the four answers fits?\n• **All Six Strategies** — everything mixed, and no warning about which moment you are in\n\nOne question decides nearly all of it: what did the other person just do?",
       cards: [
@@ -5923,7 +5923,7 @@ const memorizeCollections = {
     },
     {
       name: "Sequences",
-      guideFront: "Answer out loud, then flip.",
+      guideFront: "Test yourself.",
       guideBack: "The answer.",
       description: "The three sequences in this pack, and the order each one runs in:\n\n1. **The First Conversation** — Opening Statement → Follow the Thread → Answer With a Hook → Follow the Thread\n2. **The Half Yes** — Say It Back → A Friendly No → Ask Plainly\n3. **The Second Answer** — Ask Plainly → Say It Back → Follow the Thread\n\nIn each one the order is doing the work, not the individual strategies.",
       cards: [
@@ -5939,7 +5939,7 @@ const memorizeCollections = {
     },
     {
       name: "Challenges",
-      guideFront: "Answer out loud, then flip.",
+      guideFront: "Test yourself.",
       guideBack: "The answer.",
       description: "The five challenges to master in this pack:\n\n• **Cold Starts** — nothing has been said yet\n• **Stalling** — it was going, and now it is not\n• **In the Spotlight** — the attention turns to you\n• **Requests** — they want something from you\n• **Asking** — you want something from them\n\nEach one has its own way of going wrong.",
       cards: [
@@ -5955,7 +5955,7 @@ const memorizeCollections = {
     },
     {
       name: "Mindset",
-      guideFront: "Answer out loud, then flip.",
+      guideFront: "Test yourself.",
       guideBack: "The answer.",
       description: "These are the mindsets you practise in this pack:\n\n• **You Do Not Have to Be Interesting** — one true ordinary sentence is the bar\n• **A Question Is Not Always the Friendliest Thing** — a remark asks for nothing\n• **No Is Not a Rejection of the Person** — a clear no lets them ask someone else\n• **Give Them Something to Work With** — one detail is not taking up space\n• **Asking Is Not Imposing** — you are giving them a choice\n• **A Pause Is Not a Failure** — a pause is where people think\n\nEach one replaces a belief that feels like modesty or good manners from the inside.",
       cards: [
