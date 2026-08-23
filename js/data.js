@@ -8310,7 +8310,7 @@ const collections = {
     {
       name: "Opening Statement",
       guideFront: "Open with a statement when...",
-      guideBack: "A possible response.",
+      guideBack: "A possible opening.",
       description: "Say something instead of asking something. \"That queue is not moving.\" \"I have no idea what half of these are.\"\n\nIt works because a question hands the other person a job. They have to think of an answer, and if they are shy or tired or busy, the easiest answer is a short one — which ends the conversation you just started. A statement hands them material instead. They can agree, disagree, add to it, or laugh, and any of those is a conversation.\n\nIt also lets them out politely. Someone who does not want to talk can smile and say nothing, and nobody has been rude. An unanswered question is awkward; an unanswered remark is not.\n\nTypical phrases: \"This place is busier than I expected.\", \"I've been staring at this menu for five minutes.\", \"That's a serious amount of cake for one meeting.\"\n\nThree kinds of statement, and they are the ones you will use most:\n\n1. Something you are both looking at — the safest, because it is true for both of you. \"That painting is enormous.\"\n\n2. Something about you, right now — gives them something personal without asking for anything. \"I've come to the wrong building twice already.\"\n\n3. A small opinion — invites the most, risks the most. \"I think the old one was better.\"\n\nMindset: you are not performing. You are putting one true, ordinary sentence on the table for someone else to pick up.",
       inputs: [
         { q: "You are standing next to someone in a long queue.", a: "\"This queue has not moved in five minutes.\"", bundle: 'free' },
@@ -8326,7 +8326,7 @@ const collections = {
     {
       name: "Follow the Thread",
       guideFront: "Follow the thread when...",
-      guideBack: "A possible response.",
+      guideBack: "A possible follow-up.",
       description: "Take one word out of what they just said and go into it. They say \"we drove back from Malmö on Sunday\" — you take Malmö, or the driving, or the Sunday.\n\nIt works because people put more into a sentence than they expect anyone to notice. Picking one piece up shows you were listening, and it saves you from the real problem in conversation, which is not shyness but having nothing to say next. You do not need something new. They just gave you three things.\n\nThe mistake it replaces is waiting for your turn. Most conversations stall because both people are searching for a fresh subject while a perfectly good one is lying between them.\n\nTypical phrases: \"Malmö — what were you doing down there?\", \"You said 'finally' — has it been dragging on?\", \"Back to what, though?\"\n\nThree threads worth pulling:\n\n1. The concrete detail — the place, the object, the number. Easiest, always works. \"Three hours? What was the traffic like?\"\n\n2. The odd word — the one that carries feeling. \"You said you 'survived' it.\"\n\n3. The thing they skipped past — often the interesting one. \"Wait, go back — you moved house in the same month?\"\n\nMindset: the next thing to say is already in what they said. Listen for the noun, not for a gap.",
       inputs: [
         { q: "They say they got back from Malmö on Sunday.", a: "\"Malmö — what took you down there?\"", bundle: 'free' },
@@ -8342,7 +8342,7 @@ const collections = {
     {
       name: "Say It Back",
       guideFront: "Say it back when...",
-      guideBack: "A possible response.",
+      guideBack: "A possible summary.",
       description: "Repeat what you understood before you answer. \"So the deadline moved and nobody told you.\" Then answer.\n\nIt works for two reasons at once. It proves you were listening, which is most of what people want. And it gives you a few seconds to think — you are talking, so the silence is filled, but you have not committed to anything yet.\n\nIt is also the fastest way to find out you had it wrong. Half the arguments people have are about two different versions of what was said, and saying it back catches that before it costs anyone an evening.\n\nTypical phrases: \"So what you're saying is...\", \"Let me check I've got this...\", \"So the problem is the timing, not the work itself.\"\n\nThree ways to do it:\n\n1. Short and plain — the standard. \"So it's moved to Friday.\"\n\n2. Name the part that matters — shows you got the point, not just the words. \"So the issue is that nobody asked you.\"\n\n3. Check rather than state — invites the correction. \"Have I got that right?\"\n\nMindset: say it back in your own words, not theirs. Repeating their exact sentence sounds like a technique. Rewording it proves you understood.",
       inputs: [
         { q: "A colleague explains a problem with several parts.", a: "\"So the deadline moved and nobody told you until today.\"", bundle: 'free' },
@@ -8358,7 +8358,7 @@ const collections = {
     {
       name: "Ask Plainly",
       guideFront: "Ask plainly when...",
-      guideBack: "A possible response.",
+      guideBack: "A possible request.",
       description: "Say what you want, in one sentence, without building up to it. \"Could you take the Thursday meeting?\" Then stop talking.\n\nIt works because the long run-up is what makes a request awkward, not the request. Three sentences of apology before the ask tell the other person that you think you are imposing — so by the time it arrives, they think so too.\n\nStopping afterwards matters as much as starting cleanly. Most people ask well and then fill the silence with reasons, which turns a simple question into a case that can be argued with.\n\nTypical phrases: \"Could you take Thursday?\", \"I'd like to swap weekends if that works.\", \"Can you have a look at this before five?\"\n\nThree parts, all short:\n\n1. Say it as a question, not a hint. \"Are you around Thursday?\" is a hint. \"Could you take Thursday?\" is a request.\n\n2. Make it specific — a vague ask is hard to say yes to. What, and when.\n\n3. Stop. Let them answer. The silence is theirs, not a gap you need to fill.\n\nMindset: asking is normal. You are giving them the chance to say yes, and leaving them free to say no.",
       inputs: [
         { q: "You need a colleague to cover a meeting.", a: "\"Could you take the Thursday meeting? I'm away.\"", bundle: 'free' },
@@ -8374,7 +8374,7 @@ const collections = {
     {
       name: "A Friendly No",
       guideFront: "Give a friendly no when...",
-      guideBack: "A possible response.",
+      guideBack: "A possible no.",
       description: "Say no clearly, warmly, and without a pile of reasons. \"I can't this time — thanks for asking.\"\n\nIt works because the warmth and the clarity do different jobs, and people usually swap one for the other. Soften the no and it stops being a no: \"probably not\", \"I'll see\" and \"maybe\" all cost the other person a week of waiting. Sharpen it and it lands as a rejection of them.\n\nThe reasons are the trap. Every reason you add is something the other person can solve, and now you are negotiating a decision you had already made. One short reason is friendly. Three is an invitation to argue.\n\nTypical phrases: \"I can't, sorry — thanks for asking.\", \"Not this time.\", \"I'd like to, but I can't take anything else on this month.\"\n\nThree parts, and the order matters:\n\n1. Something warm — one clause, not a paragraph. \"Thanks for thinking of me.\"\n\n2. The word no, or something that plainly means it. Not \"probably not\".\n\n3. At most one reason, and only if you want to give one. You do not owe anyone the reason.\n\nMindset: soften the delivery, never the answer. A clear no given kindly is a favour — it lets them ask someone else today.",
       inputs: [
         { q: "A colleague asks you to take on another task.", a: "\"I can't take anything else on this month, sorry.\"", bundle: 'free' },
@@ -8390,7 +8390,7 @@ const collections = {
     {
       name: "Answer With a Hook",
       guideFront: "Answer with a hook when...",
-      guideBack: "A possible response.",
+      guideBack: "A possible answer.",
       description: "When someone asks about you, answer with something they can ask about. Not \"fine\" — \"good, though I've spent the whole week arguing with a printer.\"\n\nIt works because the person asking is trying to start a conversation, and a closed answer leaves them with nothing. They then have to think of a new question, which is work, and after two of those most people give up. A hook does their next move for them.\n\nIt also solves the problem people mean when they say they are bad at small talk. They are usually good at asking and empty at answering — so every conversation runs on their questions until they run out.\n\nTypical phrases: \"Good — busy week, mostly in a good way.\", \"Fine, apart from the drive.\", \"I'm alright. Slightly obsessed with a new thing, if I'm honest.\"\n\nThree sizes of hook:\n\n1. One extra detail — the smallest version, and enough. \"Good. Long week.\"\n\n2. A small complaint or oddity — invites the most, because people love a story. \"Fine, except I've locked myself out twice.\"\n\n3. Something you actually care about — for people you want to know better. \"Good. I've started running again, which is going badly.\"\n\nMindset: give them something to work with. The point is not to be interesting; it is to leave a door open.",
       inputs: [
         { q: "Someone asks how your week has been.", a: "\"Good — long, though. I've spent most of it arguing with a printer.\"", bundle: 'free' },
@@ -11739,7 +11739,7 @@ const collectionsModeData = {
     {
       name: "Open or Ask",
       guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideBack: "One way it could sound, with the strategy in brackets.",
       description: "**Opening Statement** and **Ask Plainly** — the two strategies for when nothing has been said yet and you are the one who has to start.\n\n• **Opening Statement** — you want a conversation and have no particular business\n• **Ask Plainly** — you want one specific thing, and the conversation is only the way to it\n\n**Which one:** is there a thing you need? An hour, a favour, a swap — then ask for it. If there is not, remark on something. Asking when you only wanted company makes the other person work; remarking when you needed something means starting again in a minute.\n\n**Where it goes wrong:** padding the front of either one. The run-up before a request and the throat-clearing before a remark are the same mistake, and the padding is what makes it awkward — not the sentence.\n\nMindset: one sentence, then let them answer.",
       inputs: [
         { q: "You are standing next to someone in a long queue.", a: "\"This queue has not moved in five minutes.\" [Opening Statement]", bundle: 'free' },
@@ -11755,7 +11755,7 @@ const collectionsModeData = {
     {
       name: "Read and Reply",
       guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideBack: "One way it could sound, with the strategy in brackets.",
       description: "**Follow the Thread**, **Say It Back**, **A Friendly No** and **Answer With a Hook** — the four for when someone has already spoken and it is your turn.\n\n• **Follow the Thread** — they told you something\n• **Say It Back** — they told you something complicated or upsetting\n• **A Friendly No** — they asked for something you cannot do\n• **Answer With a Hook** — they asked about you\n\n**Which one:** what did they just do? That single question decides nearly every card in this deck, and the four answers do not overlap.\n\n**Where it goes wrong:** following the thread on something that needed saying back first. Picking up a detail from a tangled story moves the conversation on before the person has been understood — and they will bring it back.\n\nMindset: only one of the four is about you. That is why a conversation built on these rarely feels like an interview.",
       inputs: [
         { q: "They mention they got back from Malmö on Sunday.", a: "\"Malmö — what took you down there?\" [Follow the Thread]", bundle: 'free' },
@@ -11771,7 +11771,7 @@ const collectionsModeData = {
     {
       name: "All Six Strategies",
       guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideBack: "One way it could sound, with the strategy in brackets.",
       description: "All six, mixed. The real test, because in a conversation nobody tells you which kind of moment you are in.\n\n• **Opening Statement** · **Ask Plainly** — nothing has been said yet\n• **Follow the Thread** · **Say It Back** — they said something\n• **A Friendly No** · **Answer With a Hook** — something was aimed at you\n\n**Which one:** ask what the other person just did. Three pairs, three answers — and the pair narrows it to two, which is a choice you can make in a second.\n\n**Where it goes wrong:** reaching for the best strategy instead of the one that fits. There is no best. There is only what just happened.\n\nMindset: almost every situation here is decided by that one question alone.",
       inputs: [
         { q: "You are next to a colleague waiting for a meeting to start.", a: "\"Whoever booked this room did not think about the sun.\" [Opening Statement]", bundle: 'free' },
