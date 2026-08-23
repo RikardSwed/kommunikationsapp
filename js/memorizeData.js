@@ -5957,7 +5957,7 @@ const memorizeCollections = {
       name: "Mindset",
       guideFront: "Test yourself.",
       guideBack: "The answer.",
-      description: "These are the mindsets you practise in this pack:\n\n• **You Do Not Have to Be Interesting** — one true ordinary sentence is the bar\n• **A Question Is Not Always the Friendliest Thing** — a remark asks for nothing\n• **No Is Not a Rejection of the Person** — a clear no lets them ask someone else\n• **Give Them Something to Work With** — one detail is not taking up space\n• **Asking Is Not Imposing** — you are giving them a choice\n• **A Pause Is Not a Failure** — a pause is where people think\n\nEach one replaces a belief that feels like modesty or good manners from the inside.",
+      description: "These are the mindsets you practise in this pack:\n\n• **Speaking First** — the bar is one true, ordinary sentence\n• **Questions** — a remark asks for nothing, and can be let go\n• **Refusals** — a clear no lets them ask someone else today\n• **Modesty** — one detail is not taking up space\n• **Favours** — asking gives them a choice rather than taking one away\n• **Pauses** — a pause is where people think\n\nIn every one, the belief that gets in the way feels like good manners from the inside.",
       cards: [
         { q: "What belief stops people from speaking first?", a: "That a conversation is a performance, and the price of entry is something worth saying.", bundle: 'free' },
         { q: "What is true instead?", a: "The bar is a true, ordinary sentence. Nobody remembers the sentence — only that someone spoke to them.", bundle: 'free' },
