@@ -11738,7 +11738,7 @@ const collectionsModeData = {
   firststrategies: [
     {
       name: "Open or Ask",
-      guideFront: "Choose a strategy to respond when...",
+      guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound, with the strategy in brackets.",
       description: "**Opening Statement** and **Ask Plainly** — the two strategies for when nothing has been said yet and you are the one who has to start.\n\n• **Opening Statement** — you want a conversation and have no particular business\n• **Ask Plainly** — you want one specific thing, and the conversation is only the way to it\n\n**Which one:** is there a thing you need? An hour, a favour, a swap — then ask for it. If there is not, remark on something. Asking when you only wanted company makes the other person work; remarking when you needed something means starting again in a minute.\n\n**Where it goes wrong:** padding the front of either one. The run-up before a request and the throat-clearing before a remark are the same mistake, and the padding is what makes it awkward — not the sentence.\n\nMindset: one sentence, then let them answer.",
       inputs: [
@@ -11754,7 +11754,7 @@ const collectionsModeData = {
     },
     {
       name: "Read and Reply",
-      guideFront: "Choose a strategy to respond when...",
+      guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound, with the strategy in brackets.",
       description: "**Follow the Thread**, **Say It Back**, **A Friendly No** and **Answer With a Hook** — the four for when someone has already spoken and it is your turn.\n\n• **Follow the Thread** — they told you something\n• **Say It Back** — they told you something complicated or upsetting\n• **A Friendly No** — they asked for something you cannot do\n• **Answer With a Hook** — they asked about you\n\n**Which one:** what did they just do? That single question decides nearly every card in this deck, and the four answers do not overlap.\n\n**Where it goes wrong:** following the thread on something that needed saying back first. Picking up a detail from a tangled story moves the conversation on before the person has been understood — and they will bring it back.\n\nMindset: only one of the four is about you. That is why a conversation built on these rarely feels like an interview.",
       inputs: [
@@ -11770,7 +11770,7 @@ const collectionsModeData = {
     },
     {
       name: "All Six Strategies",
-      guideFront: "Choose a strategy to respond when...",
+      guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound, with the strategy in brackets.",
       description: "All six, mixed. The real test, because in a conversation nobody tells you which kind of moment you are in.\n\n• **Opening Statement** · **Ask Plainly** — nothing has been said yet\n• **Follow the Thread** · **Say It Back** — they said something\n• **A Friendly No** · **Answer With a Hook** — something was aimed at you\n\n**Which one:** ask what the other person just did. Three pairs, three answers — and the pair narrows it to two, which is a choice you can make in a second.\n\n**Where it goes wrong:** reaching for the best strategy instead of the one that fits. There is no best. There is only what just happened.\n\nMindset: almost every situation here is decided by that one question alone.",
       inputs: [
