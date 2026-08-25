@@ -159,8 +159,8 @@ function buildFlowSequence(combo) {
       back: sBack,
       hasBack: !!sBack,
       plain: inp.situation,
-      guideFront: inp.guideFront || 'The scenario.',
-      guideBack:  inp.guideBack  || 'The steps, in order.',
+      guideFront: inp.guideFront || 'The scenario',
+      guideBack:  inp.guideBack  || 'The steps, in order',
     });
     (inp.steps || []).forEach(s => seq.push({
       type: 'step', front: s.front, back: s.back,

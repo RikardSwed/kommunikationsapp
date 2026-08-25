@@ -3648,8 +3648,8 @@ const mindsetCollections = {
   firststrategies: [
     {
       name: "Speaking First",
-      guideFront: "A limiting thought:",
-      guideBack: "A way to reset it:",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "\"I can't think of anything worth saying.\"\n\n**What is true instead:** the bar is one true, ordinary sentence. That is the whole bar.\n\n**Why it feels right:** the remarks you remember other people making are the good ones. You never hear the hundreds of dull ones that worked perfectly well.\n\n**What it costs:** every ordinary remark gets measured against an imagined standard and thrown away, and the silence that follows is far more awkward than the remark would have been.\n\nMindset: nobody remembers the sentence. They remember that someone spoke to them.",
       inputs: [
         { q: "I can't think of anything worth saying.", a: "It doesn't have to be worth saying. \"That queue hasn't moved\" is enough.", bundle: 'free' },
@@ -3664,8 +3664,8 @@ const mindsetCollections = {
     },
     {
       name: "Questions",
-      guideFront: "A limiting thought:",
-      guideBack: "A way to reset it:",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "\"Asking about them is the polite way in.\"\n\n**What is true instead:** a remark asks for nothing. It can be picked up or let go, and either is fine.\n\n**Why it feels right:** a question does show interest, and interest is exactly what you are trying to show. That part is true.\n\n**What it costs:** a question is also a small demand — an answer, on the spot, from someone who may be tired or busy or shy. And an unanswered question is awkward in a way an unanswered remark never is.\n\nMindset: give first, ask later. The question is better once there is something to be curious about.",
       inputs: [
         { q: "Asking about them is the polite way in.", a: "It's also work for them. A remark lets them choose whether to join.", bundle: 'free' },
@@ -3680,8 +3680,8 @@ const mindsetCollections = {
     },
     {
       name: "Refusals",
-      guideFront: "A limiting thought:",
-      guideBack: "A way to reset it:",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "\"They'll be hurt if I say no.\"\n\n**What is true instead:** a clear no is a favour. It lets them ask someone else today.\n\n**Why it feels right:** refusing does land on a person, and you can watch it happen. Softening it is an attempt to protect them, not cowardice.\n\n**What it costs:** the softening is what actually costs them. A vague no leaves them waiting, planning around you, and asking again — and you have to say it twice.\n\nMindset: soften the delivery, never the answer. An unclear no is not kindness, it is postponement.",
       inputs: [
         { q: "They'll be hurt if I say no.", a: "They'll be more inconvenienced by a maybe that turns into a no next week.", bundle: 'free' },
@@ -3696,8 +3696,8 @@ const mindsetCollections = {
     },
     {
       name: "Modesty",
-      guideFront: "A limiting thought:",
-      guideBack: "A way to reset it:",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "\"They don't really want to hear about my week.\"\n\n**What is true instead:** they asked. A question is an offer, not a formality.\n\n**Why it feels right:** it is modesty, and modesty is a good instinct. Nobody wants to be the person who talks about themselves.\n\n**What it costs:** it puts the whole job on the other person. After two or three closed answers most people conclude you would rather not talk, and stop asking.\n\nMindset: one extra detail is not taking up space. It is the polite half of being asked.",
       inputs: [
         { q: "They don't really want to hear about my week.", a: "They asked. A question is an offer, not a formality.", bundle: 'free' },
@@ -3712,8 +3712,8 @@ const mindsetCollections = {
     },
     {
       name: "Favours",
-      guideFront: "A limiting thought:",
-      guideBack: "A way to reset it:",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "\"If I ask, they'll feel they have to say yes.\"\n\n**What is true instead:** you are giving them a choice, not taking one away. Ask plainly and leave the no available.\n\n**Why it feels right:** a request badly made does corner people. The concern is real; it is the conclusion that is wrong.\n\n**What it costs:** hinting instead. It spares you the no and almost never gets you the thing — and the other person either misses it or has to decide without being asked, which is worse for them, not better.\n\nMindset: a no is an answer, not an incident. It is the maybe that is awkward.",
       inputs: [
         { q: "If I ask, they'll feel they have to say yes.", a: "Only if you make it hard to refuse. Ask plainly and leave the no on the table.", bundle: 'free' },
@@ -3728,8 +3728,8 @@ const mindsetCollections = {
     },
     {
       name: "Pauses",
-      guideFront: "A limiting thought:",
-      guideBack: "A way to reset it:",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "\"It's gone quiet. I've lost them.\"\n\n**What is true instead:** a pause is where people think. Two seconds is not a verdict.\n\n**Why it feels right:** silence in a conversation is uncomfortable, and only one of you is treating it as a problem — which is exactly why it feels like your job to fix.\n\n**What it costs:** the panic changes the subject, and a change of subject throws away everything already on the table. The thing that would have rescued it was said four minutes ago.\n\nMindset: the gap is not the problem. What you do to escape it is.",
       inputs: [
         { q: "It's gone quiet. I've lost them.", a: "A pause is where people think. Two seconds is not a verdict.", bundle: 'free' },

@@ -6502,8 +6502,8 @@ const multiStepCollections = {
   firststrategies: [
     {
       name: "The First Conversation",
-      guideFront: "What's happening, and the strategy to use.",
-      guideBack: "One way it could sound.",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
       description: "Four steps, and it is a whole conversation with a stranger.\n\n1. **Opening Statement** — put something on the table\n2. **Follow the Thread** — take one piece of what they answered\n3. **Answer With a Hook** — they ask about you; leave a door open\n4. **Follow the Thread** — go back into what they said\n\n**Why this order:** the hook has to come after they have spoken, because a hook only works as an answer. Lead with something about yourself and it is a monologue; offer the same sentence when asked and it is an exchange.\n\n**What people do instead:** stop at step 3. Answering a question about yourself and then going quiet is where most first conversations end.\n\nMindset: six sentences, and neither of you had to be interesting.",
       inputs: [
         {
@@ -6540,8 +6540,8 @@ const multiStepCollections = {
     },
     {
       name: "The Half Yes",
-      guideFront: "What's happening, and the strategy to use.",
-      guideBack: "One way it could sound.",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
       description: "Someone has asked, and the answer is no — or not all of it.\n\n1. **Say It Back** — show you have the whole request\n2. **A Friendly No** — clear, warm, at most one reason\n3. **Ask Plainly** — offer the version you could do\n\n**Why this order:** saying it back first means the no arrives to someone who has been understood, rather than instead of it. And the offer belongs last — made before the no it reads as bargaining, made after it reads as a gift.\n\n**What people do instead:** a reason, then a vague no, then an apology. That leaves the other person unsure whether it was a no at all, and they come back on Thursday.\n\nMindset: understood, declined, and offered something — in that order.",
       inputs: [
         {
@@ -6578,8 +6578,8 @@ const multiStepCollections = {
     },
     {
       name: "The Second Answer",
-      guideFront: "What's happening, and the strategy to use.",
-      guideBack: "One way it could sound.",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
       description: "You asked, and the answer was not a simple yes.\n\n1. **Ask Plainly** — one sentence, then quiet\n2. **Say It Back** — when they push back, say their objection back\n3. **Follow the Thread** — go into whatever they raised\n\n**Why this order:** saying it back before you argue is what almost nobody does. Repeating the ask louder starts a negotiation; saying their objection back turns a refusal into a conversation — and the reason they gave is usually solvable.\n\n**What people do instead:** ask, hear a no, and ask again with more words. The second version is never more persuasive than the first. It is only longer.\n\nMindset: ask once, then listen. The second thing they say is usually the real one.",
       inputs: [
         {
