@@ -5795,7 +5795,6 @@ const memorizeCollections = {
   firststrategies: [
     {
       name: "Core Idea",
-      guideFront: "Test yourself",
       description: "Six strategies that between them make a whole small conversation.\n\n1. **Opening Statement**\n2. **Follow the Thread**\n3. **Say It Back**\n4. **Ask Plainly**\n5. **A Friendly No**\n6. **Answer With a Hook**\n\nOpen, keep it going, listen, ask, decline, and share something back.",
       cards: [
         { q: "What are the six strategies in this pack?", a: "Opening Statement, Follow the Thread, Say It Back, Ask Plainly, A Friendly No, Answer With a Hook.", bundle: 'free' },
@@ -5810,7 +5809,6 @@ const memorizeCollections = {
     },
     {
       name: "Opening Statement",
-      guideFront: "Test yourself",
       description: "",
       cards: [
         { q: "What is an opening statement?", a: "A remark rather than a question — something the other person can pick up or let go.", bundle: 'free' },
@@ -5825,7 +5823,6 @@ const memorizeCollections = {
     },
     {
       name: "Follow the Thread",
-      guideFront: "Test yourself",
       description: "",
       cards: [
         { q: "What does following the thread mean?", a: "Taking one word or detail out of what they just said and going into it.", bundle: 'free' },
@@ -5840,7 +5837,6 @@ const memorizeCollections = {
     },
     {
       name: "Say It Back",
-      guideFront: "Test yourself",
       description: "",
       cards: [
         { q: "What is the move?", a: "Say back what you understood, in your own words, before you answer.", bundle: 'free' },
@@ -5855,7 +5851,6 @@ const memorizeCollections = {
     },
     {
       name: "Ask Plainly",
-      guideFront: "Test yourself",
       description: "",
       cards: [
         { q: "What is the shape of a plain ask?", a: "One specific sentence, put as a question, and then stop.", bundle: 'free' },
@@ -5870,7 +5865,6 @@ const memorizeCollections = {
     },
     {
       name: "A Friendly No",
-      guideFront: "Test yourself",
       description: "",
       cards: [
         { q: "What are the three parts of a friendly no?", a: "Something warm, the actual no, and at most one reason.", bundle: 'free' },
@@ -5885,7 +5879,6 @@ const memorizeCollections = {
     },
     {
       name: "Answer With a Hook",
-      guideFront: "Test yourself",
       description: "",
       cards: [
         { q: "What is a hook?", a: "One extra detail in your answer that the other person can ask about.", bundle: 'free' },
@@ -5900,7 +5893,6 @@ const memorizeCollections = {
     },
     {
       name: "Collections",
-      guideFront: "Test yourself",
       description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Open or Ask** — nothing has been said yet: do you want a conversation, or one specific thing?\n• **Read and Reply** — they have spoken: which of the four answers fits?\n• **All Six Strategies** — everything mixed, and no warning about which moment you are in\n\nOne question decides nearly all of it: what did the other person just do?",
       cards: [
         { q: "What are the three collections in this pack?", a: "Open or Ask, Read and Reply, and All Six Strategies.", bundle: 'free' },
@@ -5915,7 +5907,6 @@ const memorizeCollections = {
     },
     {
       name: "Sequences",
-      guideFront: "Test yourself",
       description: "The three sequences in this pack, and the order each one runs in:\n\n1. **The First Conversation** — Opening Statement → Follow the Thread → Answer With a Hook → Follow the Thread\n2. **The Half Yes** — Say It Back → A Friendly No → Ask Plainly\n3. **The Second Answer** — Ask Plainly → Say It Back → Follow the Thread\n\nIn each one the order is doing the work, not the individual strategies.",
       cards: [
         { q: "What is the order in The First Conversation?", a: "Opening Statement, Follow the Thread, Answer With a Hook, Follow the Thread.", bundle: 'free' },
@@ -5930,7 +5921,6 @@ const memorizeCollections = {
     },
     {
       name: "Challenges",
-      guideFront: "Test yourself",
       description: "The five challenges to master in this pack:\n\n• **Cold Starts** — nothing has been said yet\n• **Stalling** — it was going, and now it is not\n• **In the Spotlight** — the attention turns to you\n• **Requests** — they want something from you\n• **Asking** — you want something from them\n\nEach one has its own way of going wrong.",
       cards: [
         { q: "What are the five challenges in this pack?", a: "Cold Starts, Stalling, In the Spotlight, Requests and Asking.", bundle: 'free' },
@@ -5945,7 +5935,6 @@ const memorizeCollections = {
     },
     {
       name: "Mindset",
-      guideFront: "Test yourself",
       description: "These are the mindsets you practise in this pack:\n\n• **Speaking First** — the bar is one true, ordinary sentence\n• **Questions** — a remark asks for nothing, and can be let go\n• **Refusals** — a clear no lets them ask someone else today\n• **Modesty** — one detail is not taking up space\n• **Favours** — asking gives them a choice rather than taking one away\n• **Pauses** — a pause is where people think\n\nIn every one, the belief that gets in the way feels like good manners from the inside.",
       cards: [
         { q: "What belief stops people from speaking first?", a: "That a conversation is a performance, and the price of entry is something worth saying.", bundle: 'free' },

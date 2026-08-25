@@ -120,6 +120,27 @@ const DS = (function () {
     el.innerHTML = safe.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
   }
 
+  // ── Spoken guide lead-in (v1.27.37) ────────────────────────────────────────
+  // Guide texts carry no end punctuation on screen (§11b-V) — they are labels,
+  // not sentences, and a full stop looked like clutter. But the handsfree
+  // reader concatenates the guide with the card text and speaks them as one
+  // string, so with no punctuation there is no pause:
+  //
+  //     "A limiting thought I can't think of anything worth saying."
+  //
+  // This adds the pause back for the SPOKEN string only. Nothing on screen
+  // changes. A guide already ending in punctuation is left alone, and so is
+  // one ending in "..." — there the ellipsis IS the join (the guide and the
+  // card front are meant to read as one sentence) and speech engines already
+  // pause on it.
+  function dsSpokenGuide(g) {
+    const t = String(g == null ? '' : g).trim();
+    if (!t) return '';
+    if (/(\.\.\.|…)$/.test(t)) return t + ' ';   // a join, not a sentence end
+    if (/[.!?:;,—–-]$/.test(t))  return t + ' ';   // already punctuated
+    return t + '. ';
+  }
+
   // ── Info overlay (tap the title to read the strategy description) ───────
   function setupInfoOverlay(cfg, getText) {
     if (!cfg) return { open() {}, close() {} };
@@ -1138,8 +1159,8 @@ const DS = (function () {
           const back  = cfg.itemBack(it, g);
           const effGF = (it && it.guideFront) || g.guideFront;
           const effGB = (it && it.guideBack)  || g.guideBack;
-          const gFront = (s.guideText && effGF) ? effGF + ' ' : '';
-          const gBack  = (s.guideText && effGB) ? effGB + ' ' : '';
+          const gFront = (s.guideText && effGF) ? dsSpokenGuide(effGF) : '';
+          const gBack  = (s.guideText && effGB) ? dsSpokenGuide(effGB) : '';
 
           push(gFront + front, 'front', s.thinkPause * 1000, realGi, ii2, firstOfGroup, gTitle);
           firstOfGroup = false;
@@ -1320,8 +1341,8 @@ const DS = (function () {
           // Per-card guide (v1.26.32) overrides the strategy default.
           const effGF = (it && it.guideFront) || g.guideFront;
           const effGB = (it && it.guideBack)  || g.guideBack;
-          const gFront = (s.guideText && effGF) ? effGF + ' ' : '';
-          const gBack  = (s.guideText && effGB) ? effGB + ' '  : '';
+          const gFront = (s.guideText && effGF) ? dsSpokenGuide(effGF) : '';
+          const gBack  = (s.guideText && effGB) ? dsSpokenGuide(effGB) : '';
 
           showCard(front, back, false, it);
           await speak(gFront + front, s);
