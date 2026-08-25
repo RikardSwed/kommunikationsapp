@@ -6615,4 +6615,218 @@ const multiStepCollections = {
       ]
     },
   ],
+  jfisher1: [
+    {
+      name: "The Neutral Ground",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
+      description: "Defuse a direct verbal attack by moving through silence, a repeat request, and an intent check.\n\n1. **Silence** — let their words hang in the air for five to seven seconds.\n2. **Return to Sender** — force them to say the insult again.\n3. **Decoding Intent** — spotlight their motive once they back down or double down.\n\nWhy this order: Silence drains the immediate amydala charge, repetition forces their prefrontal cortex to engage, and the intent check exposes the motive.\n\nMindset: Do not deliver on the same plane of hostility. Move them to your ground.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "An aggressive colleague loudly insults your work quality in front of others in the breakroom.",
+          steps: [
+            { front: "Return to Sender — you let five seconds of silence hang, then look them in the eye.", back: "\"Can you say that again for me?\"" },
+            { front: "Decoding Intent — they stammer and backtrack, saying \"I just meant the layout was messy.\"", back: "\"Did you say that to make me look bad in front of the team?\"" },
+            { front: "Straightening the Record — they say \"No, I was just frustrated.\"", back: "\"I remember the quality of my work differently. Let's stick to the facts.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A relative makes an ugly, direct comment about your personal life at the dinner table.",
+          steps: [
+            { front: "Return to Sender — you drop your hands, wait five seconds, and speak calmly.", back: "\"I need you to say that again.\"" },
+            { front: "Decoding Intent — they go red and try to shrug it off with \"Never mind.\"", back: "\"Did you say that to hurt my feelings, or did you want to embarrass me?\"" },
+            { front: "Naming the Reaction — they double down and say \"You're just too sensitive.\"", back: "\"I can tell I'm getting defensive, so I'm stepping away from this table.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A difficult customer calls you a scammer in front of other clients.",
+          steps: [
+            { front: "Return to Sender — you stand still, breathe, let the silence settle for six seconds.", back: "\"I need you to say that again to me.\"" },
+            { front: "Decoding Intent — they look around, feeling the room go quiet, and sputter.", back: "\"Did you say that to pressure me into giving you a discount?\"" },
+            { front: "Straightening the Record — they claim \"Your prices are robbery anyway.\"", back: "\"My prices match the standards we agreed on. I see things differently.\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "The Clean Deflection",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
+      description: "Spot a backhanded dig, expose the hidden attitude, and set a firm boundary without ever looking defensive.\n\n1. **Calling Out Subtext** — identify and label the passive-aggressive dig.\n2. **Decoding Intent** — ask if they meant for the comment to sound rude.\n3. **Boundary Consequences** — establish what you will and will not tolerate moving forward.\n\nWhy this order: Exposing the subtext stops the passive-aggressive game, the intent check forces a choice, and the boundary locks your peace in place.\n\nMindset: You are giving them a manual on how to talk to you, not letting them press your remote.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "A peer smiles and says, \"Oh, you finally got that promotion. I guess they had to fill the slot.\"",
+          steps: [
+            { front: "Calling Out Subtext — you pause, keeping your tone perfectly flat.", back: "\"Was that supposed to be a compliment, or was that the other kind of comment?\"" },
+            { front: "Decoding Intent — they sputter, saying \"I was just joking, don't be so sensitive.\"", back: "\"Did you mean for that to sound belittling?\"" },
+            { front: "Naming the Reaction — they roll their eyes and turn away.", back: "\"I can tell this isn't a productive conversation for me, so I'm heading back to my desk.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A teammate sarcastically sighs and says \"Great job, genius\" when a minor error is found.",
+          steps: [
+            { front: "Calling Out Subtext — you look directly at them.", back: "\"Should I read into that tone?\"" },
+            { front: "Decoding Intent — they claim \"I didn't mean anything by it.\"", back: "\"Did you say that to undermine my contribution?\"" },
+            { front: "Naming the Reaction — they shrug and look at their phone.", back: "\"I don't respond to sarcasm. If we want to solve this, we speak respectfully.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A relative looks at your outfit and sighs, \"Well, I guess comfort is your main priority now.\"",
+          steps: [
+            { front: "Calling Out Subtext — you let their words hang.", back: "\"I'm feeling some friction from you. Is everything okay?\"" },
+            { front: "Decoding Intent — they say \"I'm just saying, in my day we dressed up.\"", back: "\"Did you say that to make me feel uncomfortable?\"" },
+            { front: "Naming the Reaction — they huff and say \"You can't take any feedback.\"", back: "\"I can tell I'm getting frustrated, so I'm changing the subject.\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "The Pause and Reset",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
+      description: "Recognize an emotional flooding event, voice your limits, and execute a clean, timed checkout before things combust.\n\n1. **Naming the Reaction** — claim your rising adrenaline or physical tension.\n2. **Calling Out Subtext** — note the circular nature of the current argument.\n3. **Checkout** — set a specific time to return when both nervous systems are calm.\n\nWhy this order: Voicing your state stops the reactive momentum, labeling the circle shows the futility, and the checkout preserves the relationship.\n\nMindset: Taking a timeout is not giving up. It is taking responsibility for how you show up.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You and your partner are yelling, going around in circles on the same issue at midnight.",
+          steps: [
+            { front: "Naming the Reaction — you feel your chest tightening and your breathing get shallow.", back: "\"I can tell I'm getting defensive and I'm starting to snap.\"" },
+            { front: "Calling Out Subtext — you notice the familiar argument loop.", back: "\"We're running in circles here, and it's doing more harm than good right now.\"" },
+            { front: "Naming the Reaction — you pause to breathe.", back: "\"I'm not leaving the conversation, but I need a thirty-minute walk to reset.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A coworker is shouting at you during a high-stakes project sync.",
+          steps: [
+            { front: "Naming the Reaction — you feel your temper flare.", back: "\"I can tell I'm getting frustrated and my blood is starting to boil.\"" },
+            { front: "Calling Out Subtext — you address the dynamic, not the details.", back: "\"I don't respond to that volume. It's blocking us from finding a solution.\"" },
+            { front: "Naming the Reaction — you stand up slowly.", back: "\"I'm taking a ten-minute break. I'll be back at my desk when we're ready to speak calmly.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A sibling is screaming at you about a sensitive inheritance dispute.",
+          steps: [
+            { front: "Naming the Reaction — you feel yourself starting to shake.", back: "\"I can tell I'm not ready to have this conversation at this volume.\"" },
+            { front: "Calling Out Subtext — you label the conflict.", back: "\"This is getting too heated, and we're not actually listening to each other.\"" },
+            { front: "Naming the Reaction — you take a deep breath.", back: "\"Let's put a time frame on this. I'll call you tomorrow night at six to discuss it.\"" },
+          ]
+        },
+      ]
+    },
+  ],
+  jfisher2: [
+    {
+      name: "The Reconciliation Runway",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
+      description: "Restore an estranged or broken relationship by moving through three clear steps: an agreement on facts, removing defenses, and inviting listening.\n\n1. **Agreement on facts (I know)** — state the macro-level reality that both of you must agree on.\n2. **Removing defenses (I'm not)** — eliminate their expected objections before they can raise them.\n3. **Inviting listening (I'm open)** — offer a safe, pressure-free space to listen rather than speak.\n\nWhy this order: The \"I know\" breaks the ice on common ground, the \"I'm not\" disarms their defense mechanism, and the \"I'm open\" shifts the focus entirely to their experience.\n\nMindset: You cannot litigate a relationship back together. Remove the sting first.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You want to break the ice with an estranged family member you haven't spoken to in years.",
+          steps: [
+            { front: "Agreement on facts (I know)", back: "\"I know there's a lot of distance between us right now, and I know things aren't how we both want them to be.\"" },
+            { front: "Removing defenses (I'm not)", back: "\"I'm not trying to reopen past arguments, and I'm not asking you to change your mind.\"" },
+            { front: "Inviting listening (I'm open)", back: "\"I'm open to having a conversation and just listening whenever you're ready.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You want to reconnect with an old business partner after a major, public falling out.",
+          steps: [
+            { front: "Agreement on facts (I know)", back: "\"I know things ended badly between us, and I know there has been a lot of unsaid tension.\"" },
+            { front: "Removing defenses (I'm not)", back: "\"I'm not asking for an apology, and I'm not pushing this on my timeframe.\"" },
+            { front: "Inviting listening (I'm open)", back: "\"I'm open to sitting down to hear your perspective whenever you're comfortable.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Reconnecting with a former close friend after a long, awkward silence.",
+          steps: [
+            { front: "Agreement on facts (I know)", back: "\"I know it's been a long time since we last spoke, and I know I've made mistakes.\"" },
+            { front: "Removing defenses (I'm not)", back: "\"I'm not trying to pretend nothing happened, and I'm not wanting to cause more pain.\"" },
+            { front: "Inviting listening (I'm open)", back: "\"I'm open to having a coffee and just listening to how you are, no strings attached.\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "The Soft Dismiss",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
+      description: "End a personal or professional relationship with clean, direct transparency instead of a manipulative compliment sandwich.\n\n1. **Eliminate small talk** — skip the pleasantries and weather talk to keep the discussion sincere.\n2. **Label the conversation** — warn their nervous system that a difficult topic is coming.\n3. **Deliver the bad news** — pull off the band-aid quickly with directness and kindness.\n\nWhy this order: Skipping small talk prevents the feeling of deception, labeling the conversation allows them to steady themselves, and immediate delivery respects their dignity.\n\nMindset: The compliment sandwich is hard to chew and impossible to swallow. Be transparent.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You need to let go of a junior contract worker whose output is not meeting standards.",
+          steps: [
+            { front: "Eliminate small talk", back: "\"Thank you for meeting with me today.\"" },
+            { front: "Label the conversation", back: "\"This is going to be a difficult conversation.\"" },
+            { front: "Deliver the bad news", back: "\"I have to let you go. The output doesn't match our current needs, but I look forward to seeing your future work elsewhere.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You need to end a dating relationship after three weeks because you don't feel a romantic connection.",
+          steps: [
+            { front: "Eliminate small talk", back: "\"Thank you for coming to meet me.\"" },
+            { front: "Label the conversation", back: "\"This is going to be hard to say, but I want to be upfront with you.\"" },
+            { front: "Deliver the bad news", back: "\"I don't feel the romantic connection I'm looking for, and I want to end things. I appreciate the time we spent.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You need to let a vendor know you are switching to another supplier.",
+          steps: [
+            { front: "Eliminate small talk", back: "\"Thank you for making time for this call.\"" },
+            { front: "Label the conversation", back: "\"This is going to be a tough business update for us to share.\"" },
+            { front: "Deliver the bad news", back: "\"We are transitioning our supply line to another vendor starting next month. Thank you for your support so far.\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "The Collaborative Pivot",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
+      description: "Separate the person from the problem by shifting a face-to-face conflict into a side-by-side problem-solving session.\n\n1. **Validate first (I can see)** — acknowledge their perspective or frustration to lower their defenses.\n2. **Objectify the issue** — pull the problem out of their character and put it as a third-person object on the table.\n3. **Invite collaboration (I need help)** — use \"help\" language to turn them from an opponent into a teammate.\n\nWhy this order: Validation stops the immediate fight-or-flight reflex, objectifying the issue removes personal attacks, and asking for help invites mutual ownership.\n\nMindset: An argument is a knot to unravel, not a war to win.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "A teammate gets highly defensive when you point out an error in the shared spreadsheet.",
+          steps: [
+            { front: "Validate first (I can see)", back: "\"I can see why this is frustrating to look at.\"" },
+            { front: "Objectify the issue", back: "\"The spreadsheet layout is the bottleneck here. Let's look at the cells.\"" },
+            { front: "Invite collaboration (I need help)", back: "\"I need your help figuring out how to get these numbers aligned.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A partner is angry about a missed household chore on a stressful evening.",
+          steps: [
+            { front: "Validate first (I can see)", back: "\"I can see how tired and frustrated you are right now.\"" },
+            { front: "Objectify the issue", back: "\"The trash is the problem on the table. It's on the floor, not you or me.\"" },
+            { front: "Invite collaboration (I need help)", back: "\"Could you help me work out a schedule that actually works for both of us?\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A client is upset about a delivery delay on a high-priority shipment.",
+          steps: [
+            { front: "Validate first (I can see)", back: "\"I can see how this delay is putting pressure on your team.\"" },
+            { front: "Objectify the issue", back: "\"The shipping delay is the bottleneck on the table. Let's look at the dates.\"" },
+            { front: "Invite collaboration (I need help)", back: "\"I need your help determining how we can adjust the timeline to minimize the impact.\"" },
+          ]
+        },
+      ]
+    },
+  ],
 };

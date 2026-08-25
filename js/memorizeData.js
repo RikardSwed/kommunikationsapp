@@ -5948,4 +5948,237 @@ const memorizeCollections = {
       ]
     },
   ],
+  jfisher1: [
+    {
+      name: "Core Idea",
+      description: "The shape of this pack: five defense strategies to maintain your footing, status, and physiological control under pressure.\n\n1. **Decoding Intent** — expose their snarky motive.\n2. **Return to Sender** — force them to repeat the insult.\n3. **Straightening the Record** — neutralize gaslighting.\n4. **Calling Out Subtext** — challenge passive aggression.\n5. **Naming the Reaction** — claim your nervous system.",
+      cards: [
+        { q: "What are the five defense strategies in this pack?", a: "Decoding Intent, Return to Sender, Straightening the Record, Calling Out Subtext, and Naming the Reaction.", bundle: 'free' },
+        { q: "What is the core premise of Control under Pressure?", a: "Conflict defense has nothing to do with your mouth, and everything to do with your nervous system.", bundle: 'free' },
+        { q: "What is the difference between absorbing and observing?", a: "Absorbing means taking their negativity personally. Observing means treating it as data about their insecurity.", bundle: 'free' },
+        { q: "Which two strategies are about exposing their hidden motive?", a: "Decoding Intent and Calling Out Subtext.", bundle: 'free' },
+        { q: "What does this pack claim about winning arguments?", a: "If your priority is to win every argument, you will lose the relationship, the trust, and your peace.", bundle: 'free' },
+        { q: "Why is silence considered a secret weapon in pressure defense?", a: "It forces the hostile speaker to hear their own words echo in their head, taking all the fun out of the attack.", bundle: 'pro' },
+        { q: "What does \"claiming it to control it\" mean?", a: "Voicing your physical or emotional state out loud (\"I can tell I'm getting defensive\") stops you from acting it out.", bundle: 'pro' },
+        { q: "Why does logic fail against timeline-twisting or gaslighting?", a: "Because gaslighting is an identity-preservation game, not a factual disagreement.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Decoding Intent",
+      description: "",
+      cards: [
+        { q: "What is the core move of Decoding Intent?", a: "Shift the focus from the snarky comment to the speaker's underlying motive by asking targeted intent questions.", bundle: 'free' },
+        { q: "Why use questions instead of direct comebacks?", a: "A comeback tries to assert dominance. A question of intent puts the spotlight and the awkwardness back on them.", bundle: 'free' },
+        { q: "What are three typical questions of intent?", a: "\"Did you say that to embarrass me?\", \"Did you mean for that to sound rude?\", and \"Was that supposed to make me uncomfortable?\"", bundle: 'free' },
+        { q: "What do you say if they answer \"Yes\" to your intent question?", a: "Say \"Good to know\" and act like it doesn't bother you at all. Let them carry that weight.", bundle: 'free' },
+        { q: "What is the psychological effect of an intent question?", a: "It forces them to look in a mirror and listen to their own words, which instantly stops the fun of the power play.", bundle: 'pro' },
+        { q: "Why does Decoding Intent help you stay calm?", a: "Because it reminds you that their belittling remark is a projection of their insecurity, not a threat to your worth.", bundle: 'pro' },
+        { q: "When should you avoid using Decoding Intent?", a: "When you are with close loved ones where the issue is deep vulnerability rather than everyday workplace snark.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Return to Sender",
+      description: "",
+      cards: [
+        { q: "What is the core move of Return to Sender?", a: "Force the speaker to repeat, clarify, or sit in the echo of their insult by refusing to carry their negative energy.", bundle: 'free' },
+        { q: "What is the first, crucial step before you speak?", a: "Add five to seven seconds of absolute, awkward silence to let their words hang alone on a plank.", bundle: 'free' },
+        { q: "Why is forcing them to repeat the insult so effective?", a: "Because the first time was said through emotion (the amygdala). Forcing a repeat forces them to use their logical brain (the prefrontal cortex).", bundle: 'free' },
+        { q: "What is the risk of answering an insult with a direct counter-attack?", a: "You match their frequency, validate their tone, and make yourself look out of control.", bundle: 'pro' },
+        { q: "What do you say if you want to use their exact words against them?", a: "Wait five seconds, then repeat their insult flatly as a question: \"I'm an idiot?\"", bundle: 'pro' },
+        { q: "How does Return to Sender take the oxygen out of the room for a bully?", a: "It delays their gratification. They wanted an instant, defensive reaction, and instead they got silent observation.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Straightening the Record",
+      description: "",
+      cards: [
+        { q: "What is the core move of Straightening the Record?", a: "Neutralize gaslighting and timeline-twisting by firmly stating your perspective and closing the door.", bundle: 'free' },
+        { q: "What are two typical phrases for Straightening the Record?", a: "\"I remember things differently. Period.\" and \"That wasn't my experience.\"", bundle: 'free' },
+        { q: "Why should you avoid explaining or justifying your memory?", a: "The more words you use to defend your truth, the more material you give them to twist.", bundle: 'free' },
+        { q: "What is the cat-and-laser-pointer metaphor in gaslighting?", a: "The gaslighter is trying to make you the cat chasing their laser pointer everywhere but the truth. To stop it, stand still.", bundle: 'pro' },
+        { q: "Why is \"Period\" such an important part of the response?", a: "It signals that your memory is a firm state, not a negotiation or an invitation to argue.", bundle: 'pro' },
+        { q: "How does Straightening the Record handle their twisted timeline?", a: "It completely bypasses the details of their story and simply claims your own experience with quiet authority.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Calling Out Subtext",
+      description: "",
+      cards: [
+        { q: "What is the core move of Calling Out Subtext?", a: "Gently bring passive-aggressive behavior, coldness, or sarcasm out into the open with a factual observation.", bundle: 'free' },
+        { q: "What are two typical phrases for Calling Out Subtext?", a: "\"Should I read into that?\" and \"Was that supposed to be funny, or was that the funny kind of joke?\"", bundle: 'free' },
+        { q: "Why does passive aggression thrive?", a: "Because it relies on unspoken tension. Exposing it to the light completely breaks the game.", bundle: 'free' },
+        { q: "What do you say if someone sends a brief, freezing text message?", a: "\"Did you mean for that to sound short?\" This gives them a clear path to clarify rather than let the tension fester.", bundle: 'pro' },
+        { q: "Why is \"Should I read into that?\" so effective?", a: "It forces them to either own their hidden attitude or backtrack and say \"No, I'm just busy.\"", bundle: 'pro' },
+        { q: "What is the mistake people make after exposing subtext?", a: "Pressing too hard. Once you've signaled \"I see what you're doing,\" let it go — don't trap them like a wild animal.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Naming the Reaction",
+      description: "",
+      cards: [
+        { q: "What is the core move of Naming the Reaction?", a: "Claim control of your nervous system by voicing your emotional or physiological state out loud instead of acting it out.", bundle: 'free' },
+        { q: "What are three typical phrases for Naming the Reaction?", a: "\"I can tell I'm getting defensive.\", \"I can tell I'm getting frustrated.\", and \"I can tell I'm not ready for this conversation right now.\"", bundle: 'free' },
+        { q: "What is the difference between acting defensive and voicing defensiveness?", a: "Acting defensive is shouting and snapping. Voicing it is writing it on a piece of paper and putting it on the table to look at together.", bundle: 'free' },
+        { q: "Why does Naming the Reaction show high emotional intelligence?", a: "It signals that you are self-aware and in control of your tempo, rather than letting your triggers drive your behavior.", bundle: 'pro' },
+        { q: "How does Naming the Reaction handle crying or physical shaking?", a: "By labeling the physical state (\"These are stressed tears, keep talking\") so it doesn't serve as a distraction or a weapon.", bundle: 'pro' },
+        { q: "When should you use \"I can tell I'm not ready for this conversation\"?", a: "When you are too emotionally flooded to think analytically, especially late at night or during an unexpected ambush.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Pressure Defense** — they are pushing: do you need to defend your character, or straighten their twisted history?\n• **Expose and Regulate** — tension is rising: is the obstacle their hidden attitude, or your own rising adrenaline?\n• **The Full Set** — all five strategies mixed together with no situational warning.\n\nOne question decides nearly all of it: what did the other person just throw at you?",
+      cards: [
+        { q: "What does the Pressure Defense collection make you choose between?", a: "Straightening the Record for fact-twisting, Return to Sender for insults, and Decoding Intent for snark.", bundle: 'pro' },
+        { q: "What is the key to the Expose and Regulate collection?", a: "Choosing between Calling Out Subtext for their passive-aggressive digs, and Naming the Reaction for your own physical tension.", bundle: 'pro' },
+        { q: "Why are there multiple collections in this pack?", a: "To allow you to train separate, smaller pairs of defenses before testing your skills against the full mixed set.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **The Neutral Ground** — Return to Sender → Decoding Intent → Straightening the Record\n2. **The Clean Deflection** — Calling Out Subtext → Decoding Intent → Naming the Reaction\n3. **The Pause and Reset** — Naming the Reaction → Calling Out Subtext → Checkout\n\nIn each one, the order of the steps is what does the work of defusing the conflict.",
+      cards: [
+        { q: "What is the order in The Neutral Ground?", a: "Return to Sender, then Decoding Intent, then Straightening the Record.", bundle: 'pro' },
+        { q: "Why does Return to Sender come before the intent check in a direct attack?", a: "Because the silence and repetition drain the emotional energy before you spotlight their motive.", bundle: 'pro' },
+        { q: "What is the order in The Clean Deflection?", a: "Calling Out Subtext, then Decoding Intent, then Naming the Reaction.", bundle: 'pro' },
+        { q: "What is the purpose of The Pause and Reset sequence?", a: "To recognize emotional flooding, label the circular argument, and exit cleanly with a set return time.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenges to master in this pack:\n\n• **Direct Hostility** — meeting loud, aggressive insults or character attacks\n• **Passive Aggression** — navigating sarcasm, disguised digs, or cold shoulder treatment\n• **Timeline Twisting** — responding to someone actively rewriting the history of an agreement\n• **Emotional Flooding** — remaining centered when someone gets angry, cries, or panics\n• **Rapid Fire** — managing pushy people who try to rush you into concession\n\nEach challenge category represents a distinct way a high-pressure conversation can go wrong.",
+      cards: [
+        { q: "What is the target error in the Direct Hostility challenge?", a: "Matching their volume or returning a zinger, which validates their tone and makes you look out of control.", bundle: 'pro' },
+        { q: "What is the key to the Passive Aggression challenge?", a: "Exposing the subtext to the light rather than pretending you didn't notice the dig to keep the peace.", bundle: 'pro' },
+        { q: "What is the target error in the Timeline Twisting challenge?", a: "Going down the rabbit hole to litigate every detail of their twisted history.", bundle: 'pro' },
+        { q: "How does the Emotional Flooding challenge handle crying?", a: "By continuing to look at them normally and focusing on the words, rather than acting exasperated or rolling your eyes.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "These are the mindsets you practise in this pack:\n\n• **Hostility** — hostility is their projection, not your threat: stay quiet and stay regulated\n• **Apologies** — save apologies for real, intentional mistakes: tension is not a failure\n• **Silence** — silence is control: let their words fall and let them carry the weight\n• **Zingers** — comebacks leave a bad aftertaste: the goal is to protect your peace\n• **Speed** — rushing is a sign of panic: operate on your own timeframe to show authority\n\nIn every mindset deck, you train to replace a limiting belief with a grounded, courtroom-tested truth.",
+      cards: [
+        { q: "What is the limiting belief in the Hostility mindset?", a: "That you must strike back immediately with an aggressive zinger to survive and win the moment.", bundle: 'pro' },
+        { q: "Why is over-apologizing considered harmful in the Apologies mindset?", a: "Because apologizing for having boundaries or taking up space silently corrodes your self-worth.", bundle: 'pro' },
+        { q: "What is the core premise of the Speed mindset?", a: "That pushy people use accelerated timelines to bypass your analytical brain, and slowing down is your ultimate defense.", bundle: 'pro' },
+      ]
+    },
+  ],
+  jfisher2: [
+    {
+      name: "Core Idea",
+      description: "The shape of this pack: five proactive strategies to establish conversational parity, protect your limits, and manage dominant dynamics cleanly.\n\n1. **Conversational Framing** — set a clear contract at the start.\n2. **Boundary Consequences** — protect your limits with follow-through.\n3. **Agreement Checks** — neutralize pushy consensus demands.\n4. **Serving It Neat** — speak without self-undercutting hedges.\n5. **No-Oriented Questions** — invite a safe and comfortable \"No\".",
+      cards: [
+        { q: "What are the five assertive connection strategies in this pack?", a: "Conversational Framing, Boundary Consequences, Agreement Checks, Serving It Neat, and No-Oriented Questions.", bundle: 'free' },
+        { q: "What is the core premise of Assertive Connection?", a: "Parity in conversation is not something you are given. It is something you establish with clear, quiet standards.", bundle: 'free' },
+        { q: "What is the difference between being short and being concise?", a: "Being short is dismissive and cold. Being concise is clear, warm, and removes the unnecessary fluff.", bundle: 'free' },
+        { q: "Which strategy is designed to neutralize pushy or dominant personalities?", a: "Agreement Checks — by questioning whether a shared agreement is actually required right now.", bundle: 'free' },
+        { q: "What does this pack claim about the compliment sandwich?", a: "It is hard to chew and impossible to swallow. Directness is always kinder and more genuine.", bundle: 'free' },
+        { q: "Why is a No-Oriented Question so effective in difficult talks?", a: "It lowers their defenses by inviting a safe \"No\" that protects their autonomy, rather than forcing a defensive \"Yes\".", bundle: 'pro' },
+        { q: "What does \"serving your words neat\" mean?", a: "Delivering your message without undercutting prefixes, filler words, or unnecessary apologies that dilute your authority.", bundle: 'pro' },
+        { q: "What is the target error in boundary-setting?", a: "Giving a long list of reasons and justifications, which turns your boundary into a negotiation.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Conversational Framing",
+      description: "",
+      cards: [
+        { q: "What is the core move of Conversational Framing?", a: "Erase conversational anxiety by setting a clear three-part contract at the start: topic, desired end-state, and buy-in.", bundle: 'free' },
+        { q: "What are the three parts of a conversational frame?", a: "Tell them what you want to talk about, tell them how you want the conversation to end, and get their buy-in.", bundle: 'free' },
+        { q: "What are three typical framing phrases?", a: "\"I'd like to talk about...\", \"I want to walk away with...\", and \"Does that sound good?\"", bundle: 'free' },
+        { q: "Why does Conversational Framing remove anxiety?", a: "Because it defines the boundaries of the discussion, so the other person knows they aren't in trouble or about to be ambushed.", bundle: 'free' },
+        { q: "What is the checkered flag in Conversational Framing?", a: "The specific outcome or takeaway you want to walk away with from the discussion.", bundle: 'pro' },
+        { q: "What do you do once they agree to the frame?", a: "Keep the discussion strictly within that frame — do not let other collateral issues pull you off track.", bundle: 'pro' },
+        { q: "Why is getting their buy-in considered an implicit contract?", a: "Because people have a strong internal need to remain consistent with their word once they have explicitly agreed to a frame.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Boundary Consequences",
+      description: "",
+      cards: [
+        { q: "What is the core move of Boundary Consequences?", a: "Protect your personal limits and focus with a firm three-step structure: the boundary, the condition, and the follow-through.", bundle: 'free' },
+        { q: "What are the three steps of a Boundary Consequence?", a: "State the boundary limit, set the trigger condition, and execute the objective follow-through.", bundle: 'free' },
+        { q: "Why is \"I\" language preferred over \"You\" language in boundaries?", a: "Because \"I\" language states what you will do, which is not antagonistic, whereas \"You\" language feels like an attack.", bundle: 'free' },
+        { q: "What is an example of a complete Boundary Consequence?", a: "\"I don't respond to that volume. If you continue to raise your voice, I am going to end this conversation.\"", bundle: 'free' },
+        { q: "What is the most common failure in boundary-setting?", a: "Failing to follow through with the stated consequence, which teaches them that your boundaries are just suggestions.", bundle: 'pro' },
+        { q: "Why should you avoid giving a long list of reasons for your boundary?", a: "Because reasons give the other person a handle to negotiate your limits and justify their overreach.", bundle: 'pro' },
+        { q: "How does a boundary differ from a demand to change their behavior?", a: "A demand tries to control them, which fails. A boundary simply states what you will do in response to their behavior.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Agreement Checks",
+      description: "",
+      cards: [
+        { q: "What is the core move of Agreement Checks?", a: "Neutralize pushy, dominant personalities by checking if a shared agreement is actually required right now.", bundle: 'free' },
+        { q: "What are three typical Agreement Check phrases?", a: "\"Is this something we have to agree on?\", \"Are you asking me to agree with you?\", and \"Do we need to decide this right now?\"", bundle: 'free' },
+        { q: "Why do pushy people try to force agreement?", a: "Because they want control and confirmation of their dominance, often to mask their own underlying insecurity.", bundle: 'free' },
+        { q: "How does an Agreement Check separate the person from the problem?", a: "It stops the personal tug-of-war and focuses the conversation on whether consensus is a factual requirement for the task.", bundle: 'pro' },
+        { q: "What is the timing component in Agreement Checks?", a: "Asking \"Do we need to agree on this right now?\" to add distance and pacing when you are being rushed.", bundle: 'pro' },
+        { q: "What do you do if they answer \"No\" to your Agreement Check?", a: "Say \"Great, let's move on\" and proceed with the discussion without conceding your perspective.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Serving It Neat",
+      description: "",
+      cards: [
+        { q: "What is the core move of Serving It Neat?", a: "Speak with quiet confidence by removing undercutting prefixes, needless apologies, and watering-down filler words.", bundle: 'free' },
+        { q: "What are three common filler words to eliminate?", a: "\"just\", \"sorry\", and \"basically\" — they suggest you are hesitant or trying to avoid taking up space.", bundle: 'free' },
+        { q: "How do you replace a delayed apology with gratitude?", a: "Replace \"Sorry I'm late\" with \"Thank you for your patience.\"", bundle: 'free' },
+        { q: "What is an example of a pre-undercutting prefix?", a: "\"This is probably a dumb question, but...\" — which tells the listener that your question is not worth hearing.", bundle: 'free' },
+        { q: "Why does over-apologizing corrode your self-worth over time?", a: "Because it sends a silent signal to yourself and others that you are apologizing for occupying space or having limits.", bundle: 'pro' },
+        { q: "How does \"Serving It Neat\" apply to spoken requests?", a: "By asking for what you need in one specific sentence, and then stopping. Let the silence do the work.", bundle: 'pro' },
+        { q: "What is the difference between being short and serving your words neat?", a: "Being short is cold and dismissive. Serving it neat is warm, clear, and direct, without the defensive clutter.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "No-Oriented Questions",
+      description: "",
+      cards: [
+        { q: "What is the core move of No-Oriented Questions?", a: "Dissolve defensive barriers by asking negative-oriented questions that invite a safe and comfortable \"No\".", bundle: 'free' },
+        { q: "Why is a \"No\" more comfortable for people than a \"Yes\"?", a: "Because saying \"No\" feels protective and preserves their autonomy, while \"Yes\" feels like a commitment.", bundle: 'free' },
+        { q: "What are three typical No-Oriented Questions?", a: "\"Are you against us talking at a normal volume?\", \"Is it unreasonable to ask us to reschedule?\", and \"Are you opposed to this?\"", bundle: 'free' },
+        { q: "Who pioneered the use of No-Oriented Questions in negotiations?", a: "FBI negotiator Chris Voss in his book \"Never Split the Difference,\" whose framework Jefferson Fisher adopts.", bundle: 'pro' },
+        { q: "How does a No-Oriented Question calm down an angry person?", a: "By giving them the control to say \"No\" to the negative, which instantly lowers their defenses and opens up communication.", bundle: 'pro' },
+        { q: "When should you avoid using a No-Oriented Question?", a: "When you want to check if they are completely aligned on a positive goal, where a direct framing check is more appropriate.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Framing First** — nothing has been said yet: do you want to set a clear contract, or check if agreement is required? • **State Your Terms** — they are overreaching: do you need to enforce a consequence, or stop undercutting your words? • **The Full Set** — all five connection strategies mixed together with no situational warning.\n\nOne question decides nearly all of it: are you starting a conversation, or are you protecting your personal margin?",
+      cards: [
+        { q: "What does the Framing First collection make you choose between?", a: "Conversational Framing to set the topic and checkered flag, and Agreement Checks to neutralize pushy consensus demands.", bundle: 'pro' },
+        { q: "What is the key to the State Your Terms collection?", a: "Choosing between Boundary Consequences to set firm limits with follow-through, and Serving It Neat to speak with direct authority.", bundle: 'pro' },
+        { q: "Why does this pack contain multiple collections?", a: "To allow you to train separate, smaller pairs of assertive moves before testing your skills against the full mixed set.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **The Reconciliation Runway** — Agreement on facts → Removing defenses → Inviting listening\n2. **The Soft Dismiss** — Eliminate small talk → Label the conversation → Deliver the bad news\n3. **The Collaborative Pivot** — Validate first → Objectify the issue → Invite collaboration\n\nIn each one, the order of the steps is what does the work of establishing parity and connection.",
+      cards: [
+        { q: "What is the order in The Reconciliation Runway?", a: "Agreement on facts (I know), then Removing defenses (I'm not), then Inviting listening (I'm open).", bundle: 'pro' },
+        { q: "Why does \"I'm not\" come before \"I'm open\" in the Reconciliation Runway?", a: "Because you must remove their anticipated defense mechanism before they can safely open up and listen to you.", bundle: 'pro' },
+        { q: "What is the order in The Soft Dismiss?", a: "Eliminate small talk, then Label the conversation, then Deliver the bad news.", bundle: 'pro' },
+        { q: "What is the purpose of The Collaborative Pivot sequence?", a: "To separate the person from the problem by shifting a face-to-face conflict into a side-by-side problem-solving session.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenges to master in this pack:\n\n• **Avoidant Partners** — managing loved ones or colleagues who dodge tough discussions • **Pushy Personalities** — neutralizing dominant characters who try to dictate terms • **Overcommitment** — turning down invitations or favors without needless apologies • **Unclear Standards** — establishing expectations and contracts where none exist • **The Compliment Sandwich** — demanding direct, transparent feedback instead of insincere praise\n\nEach challenge category represents a distinct way an assertive conversation can be hijacked.",
+      cards: [
+        { q: "What is the target error in the Avoidant Partners challenge?", a: "Sending long, emotional text paragraphs, which triggers their withdrawal mechanism and makes them go silent.", bundle: 'pro' },
+        { q: "What is the key to the Pushy Personalities challenge?", a: "Refusing to get sucked into an exhausting debate to prove them wrong. Use Agreement Checks instead.", bundle: 'pro' },
+        { q: "What is the target error in the Overcommitment challenge?", a: "Giving a long list of reasons and apologies, which invites the other person to negotiate your decision.", bundle: 'pro' },
+        { q: "How does the Compliment Sandwich challenge handle insincere praise?", a: "By cutting straight to the issue with Conversational Framing, and demanding direct feedback with Boundary Consequences.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "These are the mindsets you practise in this pack:\n\n• **No-Saying** — a clear no is a favor: softening it just postpones the pain • **Asking for Help** — saying \"I need your help\" turns opponents into teammates • **Arguments** — an argument is a knot to unravel, not a war to win • **Rescuing** — protect your presence, not their problem: you cannot control their mood • **Patience** — real repair happens in a hundred small moments of calm connection\n\nIn every mindset deck, you train to replace a limiting belief with a grounded, courtroom-tested truth.",
+      cards: [
+        { q: "What is the limiting belief in the No-Saying mindset?", a: "That saying no is unkind and selfish, and will destroy your relationships.", bundle: 'pro' },
+        { q: "Why is hyper-independence considered a trap in the Asking for Help mindset?", a: "Because it cuts you off from deep connection and leads to isolation, when people actually love to be helpful.", bundle: 'pro' },
+        { q: "What is the core premise of the Rescuing mindset?", a: "That trying to fix another person's emotional state is a boundary overreach that suffocates their autonomy.", bundle: 'pro' },
+        { q: "How does the Patience mindset approach relationship repair?", a: "By understanding that real connection cannot be forced or resolved in one heated marathon talk.", bundle: 'pro' },
+      ]
+    },
+  ],
 };

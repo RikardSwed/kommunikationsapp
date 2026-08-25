@@ -3743,4 +3743,168 @@ const mindsetCollections = {
       ]
     },
   ],
+  jfisher1: [
+    {
+      name: "Hostility",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"I am being attacked, so I must strike back with a poetic zinger to survive and win the moment.\"\n\n• **Hostility is their projection** — their ugly words are about their insecurity, not your worth.\n• **The zinger has a bad aftertaste** — winning an argument with a punch leaves you first up to apologize.\n• **Stay still to stand firm** — when they dig a hole, let them fall in it alone.\n\nMindset: You do not need to prove yourself to a hostile speaker. Protect your peace.",
+      inputs: [
+        { q: "I must strike back immediately to prove I won the moment.", a: "Hostility is their projection, not my threat. Stay regulated.", bundle: 'pro' },
+        { q: "If I don't send a zinger back, I look weak or slow.", a: "Silence is control. It forces them to hear their own words.", bundle: 'pro' },
+        { q: "They said something ugly, so they deserve to be hurt.", a: "Zingers leave a bad aftertaste. The goal is to protect your peace.", bundle: 'pro' },
+        { q: "I have to convince them that their insult is wrong.", a: "You don't need their agreement to hold your ground.", bundle: 'pro' },
+        { q: "If they yell, I have to match their volume to be heard.", a: "Control the pace. Lowering your volume shows real authority.", bundle: 'pro' },
+        { q: "I must defend my reputation in front of everyone.", a: "Grounded people don't fear the truth. State it and close the door.", bundle: 'pro' },
+        { q: "If I don't respond, they have gained power over me.", a: "Refusing to carry their negative energy is the ultimate power move.", bundle: 'pro' },
+        { q: "They are attacking me because I did something wrong.", a: "Their delivery is their responsibility. You own only your reaction.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Apologies",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If there is tension, friction, or silence in the room, I must apologize immediately to make it go away.\"\n\n• **Save apologies for intentional mistakes** — over-apologizing for being alive or having boundaries corrodes your self-worth.\n• **Tension is not a failure** — standing firm in your boundaries is kinder than placating a pushy personality.\n• **Spoken gratitude replaces apologies** — replace \"Sorry for my delay\" with \"Thank you for your patience.\"\n\nMindset: Calm confidence does not need to beg for forgiveness for occupying space.",
+      inputs: [
+        { q: "If there is tension, I must apologize immediately to make it go away.", a: "Save apologies for real, intentional mistakes. Standing firm is kinder.", bundle: 'pro' },
+        { q: "I should say sorry for taking up their time or desk space.", a: "Your self-worth is not tied to how little of an inconvenience you make yourself.", bundle: 'pro' },
+        { q: "Apologizing is the safest way to de-escalate a hostile client.", a: "Placating an aggressive person only reinforces their bad behavior.", bundle: 'pro' },
+        { q: "If I don't apologize, they will think I'm a difficult person.", a: "Being clear is kind. Vague apologies just postpone the boundary.", bundle: 'pro' },
+        { q: "I must say sorry for being late even if it was traffic.", a: "Replace the weak apology with spoken gratitude: \"Thank you for waiting.\"", bundle: 'pro' },
+        { q: "Saying sorry shows I have high emotional intelligence.", a: "Over-apologizing shows insecurity. Own your space with dignity.", bundle: 'pro' },
+        { q: "I should apologize for having a different opinion in a meeting.", a: "Your perspective has value. State it neat without the preface.", bundle: 'pro' },
+        { q: "I must apologize for crying or showing stressed emotions.", a: "Don't apologize for what your body does naturally. Label it and carry on.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Silence",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"A long pause makes me look slow, weak, or incompetent. I must fill every gap instantly.\"\n\n• **Silence is control** — it adds distance between what they said and how you respond.\n• **Let their words fall** — when they walk their words out onto a plank, let them stand there alone.\n• **The gap is where they think** — they get in their head about the silence, not you.\n\nMindset: Confidence is quiet. Insecurity is loud. Let the silence do the work.",
+      inputs: [
+        { q: "A long pause makes me look slow or weak in a meeting.", a: "Silence is control. It forces them to hear their own words.", bundle: 'pro' },
+        { q: "I must answer immediately to show I know what I'm doing.", a: "Let your first word be your breath. Control the pacing.", bundle: 'pro' },
+        { q: "If it goes quiet, I have lost the other person.", a: "A pause is where people think. Two seconds is not a verdict.", bundle: 'pro' },
+        { q: "I must fill the gap with reasons to justify my answer.", a: "The more words you use, the more you give them to twist.", bundle: 'pro' },
+        { q: "Silence is awkward and uncomfortable for me to sit in.", a: "It is uncomfortable for them too. Let them be the first to break it.", bundle: 'pro' },
+        { q: "I must change the subject if the conversation stalls.", a: "Look backwards, not forwards. Use an old thread to resume.", bundle: 'pro' },
+        { q: "If they don't respond to my text, I must send more.", a: "Sending more text shows panic. Wait 24 hours to let your gut settle.", bundle: 'pro' },
+        { q: "I need to explain my joke if nobody laughed.", a: "Never explain the joke. Move on calmly without apology.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Zingers",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"I must craft a highly poetic, devastating zinger that will completely crush them two days later.\"\n\n• **Zingers leave a bad aftertaste** — they feel good for ten seconds, then leave you wearing the dummy hat.\n• **Be like water** — instead of fighting their force, just push it aside and let it pass like a cloud.\n• **The goal is peace, not victory** — winning an argument with a cutting remark destroys the relationship.\n\nMindset: The true power is showing them that their hostility does not threaten you whatsoever.",
+      inputs: [
+        { q: "I must send a poetic zinger back to prove I won the moment.", a: "Zingers leave a bad aftertaste. The goal is to protect your peace.", bundle: 'pro' },
+        { q: "If I don't crush them with a comeback, they won me.", a: "The only thing you win in a hostile argument is their contempt.", bundle: 'pro' },
+        { q: "I want to make them hurt as much as they hurt me.", a: "Protecting your presence is more important than fixing their behavior.", bundle: 'pro' },
+        { q: "A clever clapback will make them respect me more.", a: "Respect comes from calm certainty, not emotional combat.", bundle: 'pro' },
+        { q: "I must have the last word to prove I am right.", a: "The person who speaks last in a heated argument usually loses.", bundle: 'pro' },
+        { q: "If I don't respond with force, they will walk all over me.", a: "Refusing to engage on their level is the ultimate boundary.", bundle: 'pro' },
+        { q: "I must prove their logic is completely ridiculous.", a: "Logic does not work on high-conflict identity games. Stand still.", bundle: 'pro' },
+        { q: "I want to tell everyone what they said to prove I was right.", a: "Carrying that resentment home means they won your focus. Drop it.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Speed",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"I must operate on their accelerated timeline and answer immediately to show my competence.\"\n\n• **Operating on their timeline is a trap** — they use speed to bypass your analytical brain.\n• **Your first word is your breath** — slow your words down and turn down the volume.\n• **You have full autonomy** — nobody can force you to say something you are not ready to say.\n\nMindset: Confident people have all the patience in the world. Rushing signals panic.",
+      inputs: [
+        { q: "I must answer immediately on their accelerated timeline.", a: "Control the pace. Operating on your timeframe shows confidence.", bundle: 'pro' },
+        { q: "If they pepper me with questions, I must answer fast.", a: "Let them get the whole question out, pause, then speak.", bundle: 'pro' },
+        { q: "Rushing shows I am highly efficient and capable.", a: "Rushing makes you say things you don't mean. Slow it down.", bundle: 'pro' },
+        { q: "I must decide right now because they demand an answer.", a: "You always have the right to say, \"I need some time with this.\"", bundle: 'pro' },
+        { q: "If I take a long breath, it will feel like an eternity.", a: "To the audience, it barely looks like a breath. Use the pause.", bundle: 'pro' },
+        { q: "I must keep up with their rapid-fire energy to stand my ground.", a: "Speak slowly, speak softly. It anchors the room to your tempo.", bundle: 'pro' },
+        { q: "If I hesitate, they will think I am hiding something.", a: "Liars want rapid-fire conversation. Truth-tellers have patience.", bundle: 'pro' },
+        { q: "I must jump on their comment the second they finish speaking.", a: "Count \"one Mississippi\" in your head before you open your mouth.", bundle: 'pro' },
+      ]
+    },
+  ],
+  jfisher2: [
+    {
+      name: "No-Saying",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Saying no is unkind, selfish, and will destroy my relationships. I must always say yes to be valued.\"\n\n• **A clear no is a favor** — it gives the other person the chance to find a real, honest solution today. • **Softening a no is a trap** — giving long excuses or vague promises just postpones the pain. • **Calm confidence is kinder** — you don't need to apologize for occupying space and having limits.\n\nMindset: A clear no is a favor. Softening it just postpones the pain.",
+      inputs: [
+        { q: "Saying no makes me a difficult and unhelpful person.", a: "A clear no is a favor. Softening it just postpones the pain.", bundle: 'pro' },
+        { q: "If I refuse this favor, they will stop liking me.", a: "People trust a yes more when they know a no is possible.", bundle: 'pro' },
+        { q: "I need a massive, unarguable reason before I can say no.", a: "You don't owe an excuse. \"I can't this time\" is a complete sentence.", bundle: 'pro' },
+        { q: "Softening my refusal with \"maybe\" is the kindest path.", a: "An unclear no is not kindness. It is just postponement.", bundle: 'pro' },
+        { q: "I should apologize profusely for having personal limits.", a: "Save apologies for real, intentional mistakes. Standing firm is kinder.", bundle: 'pro' },
+        { q: "If I say no to my manager, I will look incompetent.", a: "Saying no early looks organized. Saying no late looks desperate.", bundle: 'pro' },
+        { q: "I have to say yes because I said yes last time.", a: "Last time was last time. A yes is not a lifetime subscription.", bundle: 'pro' },
+        { q: "Giving three reasons makes my refusal sound more believable.", a: "Every reason you add is a handle they can use to negotiate.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Asking for Help",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Asking for help makes me look weak, dependent, or incompetent. I must handle everything alone.\"\n\n• **Help is an act of trust** — it turns a lonely struggle into a collaborative team effort. • **Independence can be isolation** — refusing to need others cuts you off from deep connection. • **People love to be helpful** — asking for help is an invitation, not an imposition.\n\nMindset: Saying \"I need your help\" turns opponents into teammates.",
+      inputs: [
+        { q: "Asking for help is admitting that I cannot cope on my own.", a: "Saying \"I need your help\" turns opponents into teammates.", bundle: 'pro' },
+        { q: "If I ask for assistance, I am burdening the other person.", a: "People love to be helpful. It is an invitation, not an imposition.", bundle: 'pro' },
+        { q: "I should wait until I am drowning before I dare to ask.", a: "Asking early shows self-awareness. Asking late shows panic.", bundle: 'pro' },
+        { q: "If they wanted to help me, they would have offered already.", a: "People cannot read your mind. Give them the gift of asking plainly.", bundle: 'pro' },
+        { q: "My worth is measured by how much I can carry alone.", a: "Hyper-independence is just isolation in disguise. Trust the team.", bundle: 'pro' },
+        { q: "Asking for help makes me look less senior or capable.", a: "Strong leaders build wells of support, not waterfalls of solo effort.", bundle: 'pro' },
+        { q: "I'd rather struggle for three hours than take five of their minutes.", a: "Your reluctance is about protecting your ego, not their time.", bundle: 'pro' },
+        { q: "If I ask for help, I will owe them a massive debt.", a: "Real collaboration is a circle of support, not a ledger of debts.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Arguments",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"An argument is a battle that I must win to maintain my status, worth, and authority.\"\n\n• **An argument is a knot** — the goal is to unravel the knot together, not to stand alone on top of the mountain. • **Winning an argument loses the relationship** — the only thing you win is their quiet contempt. • **The loudest voice is the weakest** — calm certainty is quiet, while insecurity is loud.\n\nMindset: An argument is a knot to unravel, not a war to win.",
+      inputs: [
+        { q: "I must strike back with a direct zinger to win the argument.", a: "An argument is a knot to unravel, not a war to win.", bundle: 'pro' },
+        { q: "The person who has the last word is the one who won.", a: "The person who speaks last usually loses the relationship.", bundle: 'pro' },
+        { q: "If I don't raise my voice, they will think I am backing down.", a: "Lowering your volume shows real authority. Speak slowly.", bundle: 'pro' },
+        { q: "I must prove their logic is completely ridiculous to win.", a: "Logic does not work on high-conflict identity games. Stand still.", bundle: 'pro' },
+        { q: "Winning the point is worth more than their peace of mind.", a: "If you win the point but lose the person, your prize is empty.", bundle: 'pro' },
+        { q: "If I apologize for my behavior, I admit defeat in the fight.", a: "Taking ownership of your actions is the ultimate power move.", bundle: 'pro' },
+        { q: "I must litigate every detail of their twisted timeline.", a: "The truth does not need an excuse. State it and close the door.", bundle: 'pro' },
+        { q: "We must resolve every single detail perfectly right now.", a: "One conversation is rarely enough. Real repair happens over time.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Rescuing",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"I am personally responsible for fixing other people's negative energy, sadness, or disappointment.\"\n\n• **Protect your presence, not their problem** — you cannot control another person's emotional state. • **Tension is not a failure** — standing firm in your boundaries is kinder than placating their mood. • **They have their own agency** — let them do their own emotional work rather than carrying it for them.\n\nMindset: Protect your presence, not their problem. You cannot control their mood.",
+      inputs: [
+        { q: "If my partner is sad, I must have done something wrong.", a: "Protect your presence, not their problem. You cannot control their mood.", bundle: 'pro' },
+        { q: "I must apologize immediately to make their anger go away.", a: "Placating an aggressive person only reinforces their bad behavior.", bundle: 'pro' },
+        { q: "Their negative energy is a threat to my own safety.", a: "Hostility is their projection, not your threat. Stay regulated.", bundle: 'pro' },
+        { q: "If I don't fix their mood, I am an unkind person.", a: "You are giving them a manual on how to treat you, not a remote.", bundle: 'pro' },
+        { q: "I should absorb their anxiety to keep our relationship stable.", a: "You cannot find peace by drowning in someone else's storm.", bundle: 'pro' },
+        { q: "I must say yes to their demand to make the tension disappear.", a: "A yes you resent is a worse gift than a no you mean.", bundle: 'pro' },
+        { q: "I am responsible for how they react to my clear boundary.", a: "They get to choose what to do with their disappointment.", bundle: 'pro' },
+        { q: "If they go silent on me, I must crawl back and apologize.", a: "Silence is their choice. Stand still and protect your presence.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Patience",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If we have a conflict, we must solve everything perfectly right now, or our connection is broken.\"\n\n• **Repair happens over time** — real repair happens in a hundred small moments, not one heated marathon talk. • **Slowing down is your defense** — pushy people use accelerated timelines to bypass your analytical brain. • **Take a timeout early** — walking away to reset is an act of responsibility, not abandonment.\n\nMindset: One conversation is rarely enough. Real repair happens in a hundred small moments.",
+      inputs: [
+        { q: "We must talk this out at midnight even if we are exhausted.", a: "One conversation is rarely enough. Real repair happens in a hundred small moments.", bundle: 'pro' },
+        { q: "If we take a break, it means we are giving up on each other.", a: "Taking a timeout is taking responsibility for how you show up.", bundle: 'pro' },
+        { q: "I must answer their rapid-fire questions instantly on the spot.", a: "Control the pace. Operating on your timeframe shows confidence.", bundle: 'pro' },
+        { q: "If the relationship is healthy, we should never have ruptures.", a: "Ruptures are normal. The gold standard is how you repair them.", bundle: 'pro' },
+        { q: "I must find the perfect words to resolve this conflict forever.", a: "There are no magic words. Focus on regulating your body first.", bundle: 'pro' },
+        { q: "If we don't agree right now, our connection is permanently damaged.", a: "We don't have to agree on how to get there. Just align on the goal.", bundle: 'pro' },
+        { q: "I must explain my whole history to make them understand.", a: "The more words you use, the more you water down the truth.", bundle: 'pro' },
+        { q: "If they don't change their behavior today, I have failed.", a: "Evolving takes time. Give them the grace of a slower runway.", bundle: 'pro' },
+      ]
+    },
+  ],
 };

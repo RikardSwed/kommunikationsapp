@@ -355,6 +355,12 @@ const packTags = {
   firststrategies: [
     'getting started', 'first conversations', 'beginner', 'everyday talk', 'the basic strategies'
   ],
+  jfisher1: [
+    'pressure', 'defense', 'conflict', 'boundaries', 'self-regulation'
+  ],
+  jfisher2: [
+    'assertive', 'connection', 'boundaries', 'negotiations', 'communication'
+  ],
 };
 
 // ─── TOPICS ──────────────────────────────────────────────────────────
@@ -405,7 +411,7 @@ const TOPICS = [
   // ── Standing your ground ──────────────────────────────────────────
   { id: 'opinions',              title: 'Opinions & Argumentation',      packs: ['influenceframing', 'agreeing', 'disagreeing', 'givingcounterexamples', 'discussing'] },
   { id: 'persuasion',            title: 'Persuasion & Negotiation',      packs: ['influenceframing', 'persuasionandinfluence1', 'persuasionandinfluence2', 'negotiationandcompromise'] },
-  { id: 'assertiveness',         title: 'Assertiveness & Pressure',      packs: ['assertive', 'brokenrecord', 'respondingtopassiveaggression', 'oconnor1', 'oconnor3'] },
+  { id: 'assertiveness',         title: 'Assertiveness & Pressure',      packs: ['assertive', 'brokenrecord', 'respondingtopassiveaggression', 'oconnor1', 'oconnor3', 'jfisher1', 'jfisher2'] },
   { id: 'boundaries',            title: 'Asking & Saying No',            packs: ['playfulrefusals', 'thehappyno', 'theregretfulno', 'makingrequests', 'sayingno', 'oconnor2', 'jimmy6'] },
 
   // ── The hard end ──────────────────────────────────────────────────

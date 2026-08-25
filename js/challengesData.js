@@ -4351,4 +4351,168 @@ const challengesCollections = {
       ]
     },
   ],
+  jfisher1: [
+    {
+      name: "Direct Hostility",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "You are hit with direct, aggressive insults, loud volume, or character attacks designed to force you into a defensive retreat.\n\n• **Return to Sender** — force them to repeat the insult to drain its emotional fuel.\n• **Decoding Intent** — spotlight their motive and take the fun out of the attack.\n• **Naming the Reaction** — protect your peace by voicing your physiological limits.\n\nThe target error: matching their volume or returning a zinger. This justifies their attack and makes you look out of control.\n\nMindset: Hostility is their projection of insecurity. Keep your breathing steady and hold your ground.",
+      inputs: [
+        { q: "A colleague yells \"You are completely incompetent\" during a heated argument.", a: "\"I need you to say that again to me.\" [Return to Sender]", bundle: 'pro' },
+        { q: "An aggressive buyer sneers that your service is a total joke in front of other clients.", a: "\"Did you say that to pressure me into backing down?\" [Decoding Intent]", bundle: 'pro' },
+        { q: "A client screams at you over a shipping delay.", a: "\"I can tell I'm getting defensive, so I need to step away from this call.\" [Naming the Reaction]", bundle: 'pro' },
+        { q: "Someone calls you a lazy idiot during a team brainstorming session.", a: "\"Can you repeat what you just said?\" [Return to Sender]", bundle: 'pro' },
+        { q: "A partner yells a cutting character attack at you during a household disagreement.", a: "\"Did you say that to hurt my feelings?\" [Decoding Intent]", bundle: 'pro' },
+        { q: "An associate corners you in the hallway and starts aggressively venting at your face.", a: "\"I can tell I don't have the capacity for this volume right now.\" [Naming the Reaction]", bundle: 'pro' },
+        { q: "A pushy neighbor shouts demands at you over a property line dispute.", a: "\"Did you say that to make me feel uncomfortable?\" [Decoding Intent]", bundle: 'pro' },
+        { q: "A seller aggressively pressures you to make a cash decision on the spot.", a: "\"I can tell I'm being rushed, and I need twenty minutes to think.\" [Naming the Reaction]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Passive Aggression",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Hostility that hides behind sarcasm, backhanded praise, cold shoulder treatment, or disguised digs.\n\n• **Calling Out Subtext** — pull the hidden attitude into the light with a calm observation.\n• **Decoding Intent** — check if the underlying motive was to be rude or snarky.\n• **Straightening the Record** — stand still when they try to wrap their dig in historical twisting.\n\nThe target error: pretending you didn't notice the dig to keep the peace. This teaches them they can play the game with you.\n\nMindset: Passive aggression thrives in the dark. Bring it into the sunlight.",
+      inputs: [
+        { q: "A coworker smiles and says, \"Oh, you finally decided to join us\" when you arrive at a sync.", a: "\"Should I read into that tone?\" [Calling Out Subtext]", bundle: 'pro' },
+        { q: "A friend sends a brief, freezing text message saying \"Sure.\"", a: "\"Did you mean for that text to sound short?\" [Decoding Intent]", bundle: 'pro' },
+        { q: "A relative makes a sarcastic remark about your cooking and covers it with \"only joking.\"", a: "\"Was that supposed to be funny, or was that the funny kind of joke?\" [Calling Out Subtext]", bundle: 'pro' },
+        { q: "An associate claims \"Oh, you always take things so seriously\" after making a rude dig.", a: "\"That wasn't my experience of our conversation.\" [Straightening the Record]", bundle: 'pro' },
+        { q: "A manager sighingly tells you \"I guess comfort is your priority\" regarding your work style.", a: "\"Did you say that to make me feel uncomfortable?\" [Decoding Intent]", bundle: 'pro' },
+        { q: "A teammate acts cold and avoids eye contact in the corridor.", a: "\"I'm feeling some friction from you. Is everything okay?\" [Calling Out Subtext]", bundle: 'pro' },
+        { q: "A coworker claims you never contribute to group drafts.", a: "\"I see things differently. Period.\" [Straightening the Record]", bundle: 'pro' },
+        { q: "A peer makes a condescending dig about your project contribution in a group chat.", a: "\"Did you say that to undermine my authority?\" [Decoding Intent]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Timeline Twisting",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Someone actively tries to rewrite the history of an agreement, a past conflict, or a factual event to escape accountability.\n\n• **Straightening the Record** — state your experience as a firm period, not an ellipsis.\n• **Return to Sender** — repeat their twisted version of history back to them as a question.\n• **Calling Out Subtext** — address the pattern of rewriting rather than the details.\n\nThe target error: going down the rabbit hole to litigate every detail. They want you to chase the laser pointer. Stand still.\n\nMindset: The truth does not need an excuse or a long defense. State it and stop.",
+      inputs: [
+        { q: "A manager claims you promised to deliver the entire Q3 draft by Monday morning.", a: "\"I remember things differently. Period.\" [Straightening the Record]", bundle: 'pro' },
+        { q: "An associate twists a past agreement to make themselves look like the hero.", a: "\"So you did the entire project yourself?\" [Return to Sender]", bundle: 'pro' },
+        { q: "A partner claims \"You always said you hated hosting family events.\"", a: "\"I see things differently.\" [Straightening the Record]", bundle: 'pro' },
+        { q: "A supplier insists they verbally warned you about a massive price hike.", a: "\"I remember our conversation differently.\" [Straightening the Record]", bundle: 'pro' },
+        { q: "A colleague claims you missed their warning text, but you never received one.", a: "\"That wasn't my experience.\" [Straightening the Record]", bundle: 'pro' },
+        { q: "A client goes through a long, twisted history of everything that allegedly went wrong.", a: "\"Should I read into this timeline?\" [Calling Out Subtext]", bundle: 'pro' },
+        { q: "A sibling claims you promised to pay for their entire holiday trip.", a: "\"I remember our agreement differently. Period.\" [Straightening the Record]", bundle: 'pro' },
+        { q: "A pushy coworker claims \"You said you didn't mind handling the weekend reports.\"", a: "\"My memory of that conversation is different.\" [Straightening the Record]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Emotional Flooding",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "The conversation escalates rapidly as the other person gets intensely angry, starts crying, or displays chaotic emotions.\n\n• **Naming the Reaction** — claim your own physiological boundaries to keep from absorbing their state.\n• **Return to Sender** — use silence and neutral repeats to let their emotional waves break.\n• **Straightening the Record** — hold your factual ground while remaining a safe space for their expression.\n\nThe target error: trying to fix their mood, acting exasperated, or rolling your eyes. This erodes trust instantly.\n\nMindset: Protect your presence, not their problem. You cannot control their mood, but you can control your pace.",
+      inputs: [
+        { q: "Your partner starts crying intensely during a difficult discussion about chores.", a: "\"These are stressed tears. Keep talking, I'm listening.\" [Naming the Reaction]", bundle: 'pro' },
+        { q: "A coworker gets red-faced and starts yelling aggressively in a meeting.", a: "\"I can tell I'm getting defensive, so I'm taking a breath.\" [Naming the Reaction]", bundle: 'pro' },
+        { q: "A client gets highly dramatic and starts sobbing over a minor delay.", a: "(let the silence sit for six seconds, then speak softly) [Return to Sender]", bundle: 'pro' },
+        { q: "A relative gets hysterically angry and accuses you of destroying the family.", a: "\"I see things differently.\" [Straightening the Record]", bundle: 'pro' },
+        { q: "You feel yourself beginning to cry from sheer exhaustion in a workplace sync.", a: "\"I can tell these are tired tears. I am still listening.\" [Naming the Reaction]", bundle: 'pro' },
+        { q: "Someone slams a folder on the desk and shouts a hurtful remark.", a: "\"I need you to say that again to me.\" [Return to Sender]", bundle: 'pro' },
+        { q: "A teammate panics and starts frantically listing everything that is failing.", a: "\"I can tell I'm getting overwhelmed, so let's slow this down.\" [Naming the Reaction]", bundle: 'pro' },
+        { q: "A sibling screams that you never cared about them during a conflict.", a: "\"I remember my feelings differently. Period.\" [Straightening the Record]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Rapid Fire",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Pushy people corner you in corridors, cut you off, or pressure you to answer on their accelerated timeline to force a concession.\n\n• **Naming the Reaction** — voice that you are being rushed and need time to think.\n• **Return to Sender** — use slow, deliberate repetition to completely control the pacing.\n• **Straightening the Record** — refuse to agree to a twisted timeline under pressure.\n\nThe target error: responding instantly on their timeline. This engages your emotional brain and leads to regret.\n\nMindset: Control the pace. Operating on your timeframe shows confidence.",
+      inputs: [
+        { q: "A pushy manager demands an immediate decision on an extra assignment in the corridor.", a: "\"I can tell I'm being rushed, and I need twenty minutes to think.\" [Naming the Reaction]", bundle: 'pro' },
+        { q: "A coworker repeatedly cuts you off mid-sentence during a project sync.", a: "\"I can't hear you when you interrupt me.\" [Return to Sender]", bundle: 'pro' },
+        { q: "An aggressive peer corners you at your desk demanding a cash approval.", a: "\"I need some time with this before I respond.\" [Naming the Reaction]", bundle: 'pro' },
+        { q: "A teammate peppers you with rapid-fire questions to force a concession.", a: "\"Let me check I've got this — you need a yes right now?\" [Return to Sender]", bundle: 'pro' },
+        { q: "A supplier insists you must sign a renewal contract within the hour.", a: "\"I remember our deadline differently.\" [Straightening the Record]", bundle: 'pro' },
+        { q: "A partner demands you answer a massive relationship question instantly.", a: "\"I can tell I'm not ready for this conversation right now.\" [Naming the Reaction]", bundle: 'pro' },
+        { q: "An associate cuts in to finish your sentence with their own words.", a: "\"Hold on — let me finish this thought, then I want to hear yours.\" [Return to Sender]", bundle: 'pro' },
+        { q: "A pushy client demands you agree to an immediate, unbudgeted change.", a: "\"I see our priorities differently. Period.\" [Straightening the Record]", bundle: 'pro' },
+      ]
+    },
+  ],
+  jfisher2: [
+    {
+      name: "Avoidant Partners",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "A partner or colleague actively avoids tough discussions, cancels meetings at the last minute, or goes silent when tension rises.\n\nWhat goes wrong: You keep chasing them, which makes them withdraw further, leaving the conflict unresolved and building silent resentment.\n\nWhich strategies bite: **Boundary Consequences** to stop the endless rescheduling loop, and **No-Oriented Questions** to make re-engaging feel safe and low-pressure.\n\nThe single thing to avoid: Sending long paragraphs of emotional explanation.\n\nMindset: You cannot force an avoidant person to speak, but you can choose what behaviors you are willing to tolerate.",
+      inputs: [
+        { q: "Your partner has avoided talking about holiday planning for three weeks.", a: "\"I'm not willing to be in a relationship that avoids difficult conversations. If we don't set our travel dates by Friday, I will book my own flight.\" [Boundary Consequences]", bundle: 'pro' },
+        { q: "You want to invite an avoidant colleague to a quick, low-pressure discussion.", a: "\"Are you against us taking ten minutes to talk about our schedule?\" [No-Oriented Questions]", bundle: 'pro' },
+        { q: "A client keeps dodging your calls about an overdue invoice.", a: "\"I don't continue work when invoices are unpaid. If this payment isn't settled by Wednesday, I will pause the Q3 project.\" [Boundary Consequences]", bundle: 'pro' },
+        { q: "You want to check if a busy boss is opposed to a quick review.", a: "\"Is it unreasonable to ask for a five-minute sync before you head out?\" [No-Oriented Questions]", bundle: 'pro' },
+        { q: "A friend has canceled your coffee meetup three times in a row.", a: "\"I don't chase plans. If we have to reschedule again, I'm going to take some distance for a bit.\" [Boundary Consequences]", bundle: 'pro' },
+        { q: "Asking an avoidant family member if they are opposed to a brief holiday call.", a: "\"Are you opposed to us having a quick ten-minute call on Sunday?\" [No-Oriented Questions]", bundle: 'pro' },
+        { q: "A coworker refuses to answer Slack messages about their pending tasks.", a: "\"I require timely updates to finish the report. If I don't hear back by noon, I am submitting the draft without your section.\" [Boundary Consequences]", bundle: 'pro' },
+        { q: "Checking if a silent teammate is against sharing their thoughts.", a: "\"Are you against sharing your perspective on this project?\" [No-Oriented Questions]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Pushy Personalities",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "A dominant character tries to dictate terms, corner you into agreement, or push their opinions onto you as facts.\n\nWhat goes wrong: You get sucked into an exhausting debate to prove them wrong, which only keeps them in the driver's seat.\n\nWhich strategies bite: **Agreement Checks** to expose that consensus is unnecessary, and **Boundary Consequences** to set a firm limit on their volume or pushiness.\n\nThe single thing to avoid: Trying to justify or defend your own opinions.\n\nMindset: Pushy people use volume and confidence to mask their insecurity. Stand still.",
+      inputs: [
+        { q: "A dominant friend insists their political view is the only correct one.", a: "\"Is this something we have to agree on?\" [Agreement Checks]", bundle: 'pro' },
+        { q: "A pushy colleague argues intensely about a minor design decision.", a: "\"Are you asking me to agree with you, or are we just discussing options?\" [Agreement Checks]", bundle: 'pro' },
+        { q: "A relative aggressively asserts how the family dinner must be run.", a: "\"Is this something we have to agree on to have a good dinner?\" [Agreement Checks]", bundle: 'pro' },
+        { q: "A customer service agent gets highly sarcastic and loud at the counter.", a: "\"I don't respond to that volume. If you continue to yell, I am going to speak with your manager.\" [Boundary Consequences]", bundle: 'pro' },
+        { q: "An expert witness on the stand tries to corner you into agreeing with their theory.", a: "\"Do I need to agree with your conclusion to discuss the facts?\" [Agreement Checks]", bundle: 'pro' },
+        { q: "Someone is shouting at you in a heated disagreement.", a: "\"I don't respond to that volume. If you want to talk, we do it in a normal voice, or I am walking away.\" [Boundary Consequences]", bundle: 'pro' },
+        { q: "A coworker tries to dictate who takes the holiday shift.", a: "\"Are you looking for my agreement, or are you just telling me your preference?\" [Agreement Checks]", bundle: 'pro' },
+        { q: "A pushy supplier tries to deny a verbal discount they promised last week.", a: "\"I don't work with changing pricing. If the original rate is not honored, I am canceling the order.\" [Boundary Consequences]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Overcommitment",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "You are hit with constant invitations, favors, or project requests that you want to turn down but worry about disappointing people.\n\nWhat goes wrong: You tip-toe around the refusal, giving long excuses and filler words that invite them to negotiate you into a yes.\n\nWhich strategies bite: **Serving It Neat** to deliver a clean, unwatered-down refusal, and **No-Oriented Questions** to establish your limits early without apology.\n\nThe single thing to avoid: Making vague promises like \"maybe next week\".\n\nMindset: A clear refusal today is a favor that lets them find another option.",
+      inputs: [
+        { q: "You walk up to a colleague's desk to ask for help and want to start with \"sorry to bother you\".", a: "\"I want to ask you about the Q3 numbers when you have a second.\" [Serving It Neat]", bundle: 'pro' },
+        { q: "Proposing a schedule change to a busy manager.", a: "\"Is it unreasonable to ask us to reschedule our weekly sync?\" [No-Oriented Questions]", bundle: 'pro' },
+        { q: "A client asks if you can do a massive favor on your day off and you want to avoid a long excuse.", a: "\"I can't make that work this weekend. I can look at it on Monday.\" [Serving It Neat]", bundle: 'pro' },
+        { q: "You are telling a peer about your availability for a task and are about to say \"I'm just really busy\".", a: "\"I don't have the capacity for that task right now.\" [Serving It Neat]", bundle: 'pro' },
+        { q: "Proposing a different restaurant choice to a pushy group of friends.", a: "\"Are you against us trying the new Italian spot instead?\" [No-Oriented Questions]", bundle: 'pro' },
+        { q: "You want to check in on a project's status with a coworker and are about to say \"just checking in\".", a: "\"I wanted to check on the status of the draft.\" [Serving It Neat]", bundle: 'pro' },
+        { q: "Asking a coworker to review a draft before the weekend.", a: "\"Is it unreasonable to ask for a quick look at this before Friday?\" [No-Oriented Questions]", bundle: 'pro' },
+        { q: "You want to disagree with your boss's strategy and feel the urge to say \"I'm probably wrong, but\".", a: "\"I see a different approach that might save us some time.\" [Serving It Neat]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Unclear Standards",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "You find yourself in professional or personal situations where expectations are unspoken, leading to anxiety and guesswork.\n\nWhat goes wrong: You waste energy trying to read their mind, or drop subtle hints instead of asking for what you need.\n\nWhich strategies bite: **Conversational Framing** to establish a clear contract at the start, and **Serving It Neat** to ask for clarification without self-undercutting hedges.\n\nThe single thing to avoid: Relying on small talk to ease into the topic.\n\nMindset: To be unclear is to be unkind. Define the space and the goal.",
+      inputs: [
+        { q: "You want to discuss our weekend plans and want to set a clear contract.", a: "\"I'd like to talk about our weekend plans. I want to walk away with a clear schedule so we can both relax. Does that sound good?\" [Conversational Framing]", bundle: 'pro' },
+        { q: "You want to check in on a project's status with a coworker and want to avoid hedging.", a: "\"I wanted to check on the status of the draft.\" [Serving It Neat]", bundle: 'pro' },
+        { q: "You need to discuss a sudden performance drop with a junior employee.", a: "\"I'd like to talk about your recent drafts. I want to leave this meeting with a plan to get things back on track. Does that work?\" [Conversational Framing]", bundle: 'pro' },
+        { q: "You walk up to a colleague's desk to ask for help and want to avoid \"sorry to bother you\".", a: "\"I want to ask you about the Q3 numbers when you have a second.\" [Serving It Neat]", bundle: 'pro' },
+        { q: "You want to discuss a sensitive inheritance topic with a sibling and need a clear contract.", a: "\"I'd like to talk about the estate paperwork. I want to leave with an agreed list of next steps. Does that work for you?\" [Conversational Framing]", bundle: 'pro' },
+        { q: "You want to disagree with your boss's strategy and want to avoid \"I'm probably wrong, but\".", a: "\"I see a different approach that might save us some time.\" [Serving It Neat]", bundle: 'pro' },
+        { q: "You are preparing your team for a budget discussion and want to prevent scope creep.", a: "\"I want to talk about the Q3 budget. I want to leave this room with three agreed cuts. Does that work for everyone?\" [Conversational Framing]", bundle: 'pro' },
+        { q: "You are telling a peer about your availability for a task and want to avoid \"I'm just really busy\".", a: "\"I don't have the capacity for that task right now.\" [Serving It Neat]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Compliment Sandwich",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Someone uses insincere praise to soften the blow of a harsh critique or bad news.\n\nWhat goes wrong: The praise feels fake and confusing, making you anxious and destroying your trust in their sincerity.\n\nWhich strategies bite: **Conversational Framing** to cut straight to the issue, and **Boundary Consequences** to demand direct, transparent feedback.\n\nThe single thing to avoid: Accepting the false praise just to keep the peace.\n\nMindset: The compliment sandwich is hard to chew and impossible to swallow. Demand transparency.",
+      inputs: [
+        { q: "Your boss starts giving vague praise right before a performance review.", a: "\"I want to talk about my performance review. I want to walk away with a clear list of what I need to improve. Does that sound good?\" [Conversational Framing]", bundle: 'pro' },
+        { q: "A partner gives you a compliment right before bringing up a chore issue.", a: "\"I'd like to talk about the chores. I want to leave with a clear plan for the kitchen duties. Sound good?\" [Conversational Framing]", bundle: 'pro' },
+        { q: "A colleague uses a compliment sandwich to criticize your project draft.", a: "\"I don't respond to mixed feedback. If you have critique on the draft, I need it direct and transparent.\" [Boundary Consequences]", bundle: 'pro' },
+        { q: "A client praises your work but keeps hinting at late-night changes.", a: "\"I don't answer work calls after 6 PM. If we need to discuss changes, let's schedule ten minutes on Monday morning.\" [Boundary Consequences]", bundle: 'pro' },
+        { q: "You want to discuss a project with your team and want to set a clear contract.", a: "\"I want to talk about the Q3 budget. I want to leave this room with three agreed cuts. Does that work for everyone?\" [Conversational Framing]", bundle: 'pro' },
+        { q: "A supplier uses soft compliments to dodge a conversation about delays.", a: "\"I don't work with changing timelines. If the next shipment is late without warning, I am canceling the contract.\" [Boundary Consequences]", bundle: 'pro' },
+        { q: "A teammate praises your skills right before pushing their work onto you.", a: "\"I don't accept extra tasks under the table. If you want to discuss work division, let's schedule a formal talk with our lead.\" [Boundary Consequences]", bundle: 'pro' },
+        { q: "You want to discuss your recent drafts with a junior employee.", a: "\"I'd like to talk about your recent drafts. I want to leave this meeting with a plan to get things back on track. Does that work?\" [Conversational Framing]", bundle: 'pro' },
+      ]
+    },
+  ],
 };

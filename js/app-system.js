@@ -678,6 +678,8 @@ applyInputCounterVisibility();
     toddv4: { label: 'Todd V 4 — Closing & Logistics', minLevel: 'complete' },
     toddv5: { label: 'Todd V 5 — Unflappable Presence', minLevel: 'complete' },
     firststrategies: { label: 'First Strategies', minLevel: 'freemium' },
+    jfisher1: { label: 'Jefferson Fisher 1 — Control under Pressure', minLevel: 'complete' },
+    jfisher2: { label: 'Jefferson Fisher 2 — Assertive Connection', minLevel: 'complete' },
   };
 
   // ── PROGRAM_CONFIG (v1.26.81) ─────────────────────────────────────────
@@ -2729,6 +2731,34 @@ const BUNDLE_DEFS = {
       id: 'free',
       tier: 'free',
       name: 'Free Bundle',
+      description: '',
+    },
+  ],
+  jfisher1: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  jfisher2: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
       description: '',
     },
   ],
