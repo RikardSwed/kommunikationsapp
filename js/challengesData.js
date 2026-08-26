@@ -620,56 +620,6 @@ const challengesCollections = {
       ]
     },
   ],
-  changingtopics: [
-    {
-      name: "The Topic That Won't Die",
-      guideFront: "What kind of switch is this?",
-      guideBack: "A possible response, with the strategy in brackets.",
-      description: "A subject that's been fully covered but keeps coming back — the same complaint on its third lap, a story retold, a work gripe that won't rest. The training is to recognise it's over-covered (not new) and close it warmly before opening something else. Best handled with Respectful Exit.\n\nWhat it usually looks like:\n• The same complaint on its third lap.\n• A story you have already heard, being retold.\n• Everyone agreeing with each other for the fourth time.\n\nTwo ways through:\n1. Respectful Exit — name the loop kindly and close it. \"We could go round on this all night, couldn't we?\"\n2. Acknowledge and Redirect — give it a nod and open something else. \"Well, fingers crossed. By the way—\"\n\nMindset: it is over-covered, not new, so hinting will not work. Someone has to close it, and it may as well be you.",
-      inputs: [
-        { q: "You've tried to move on twice and they keep pulling it back to the same subject.", a: "\"I think we've really covered this one — genuinely, what else is going on with you?\" (respectful exit)", bundle: 'pro' },
-        { q: "The same complaint is coming round for a third lap.", a: "\"I do get it — let's give it a rest though. How's everything else?\" (respectful exit)", bundle: 'pro' },
-        { q: "A story you've already heard is being retold in full.", a: "\"Still a great one — so, tell me something I haven't heard yet.\" (respectful exit)", bundle: 'pro' },
-        { q: "They keep returning to a work gripe you've discussed from every angle.", a: "\"We've squeezed that dry, I think. Shall we move to something new?\" (respectful exit)", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "The Sensitive Corner",
-      guideFront: "What kind of switch is this?",
-      guideBack: "A possible response, with the strategy in brackets.",
-      description: "The conversation turns to something uncomfortable, painful, or heated — and a jokey switch would feel careless. The training is to notice the sensitivity and redirect gently, acknowledging briefly before guiding somewhere safer. Best handled with Steering Away from Sensitive (and a soft Acknowledge and Redirect).\n\nWhat it usually looks like:\n• Someone has gone quiet or tense.\n• The subject has turned to money, illness, politics or a rift.\n• A joke here would land badly and everyone can feel it.\n\nTwo ways through:\n1. Steering Away from Sensitive — acknowledge, then guide. \"That's a tough one. On a lighter note—\"\n2. Acknowledge and Redirect, softly — close it gently. \"I hear you. Anyway, how's the new job going?\"\n\nMindset: a jokey switch here reads as careless. Brief acknowledgement first is what turns the redirect into an act of care.",
-      inputs: [
-        { q: "A sensitive topic comes up that you can't just joke your way out of.", a: "\"That's a heavy one, and I don't want to make light of it. How have things been otherwise?\" (steering away from sensitive)", bundle: 'pro' },
-        { q: "Someone overshared and it's gone quiet and awkward.", a: "\"No judgement here at all — and hey, how's the new job been?\" (steering away from sensitive)", bundle: 'pro' },
-        { q: "A group starts arguing and it's getting tense.", a: "\"We all feel strongly on that one. Anyway — anyone been anywhere nice lately?\" (steering away from sensitive)", bundle: 'pro' },
-        { q: "You need to switch but don't want to seem like you're dodging them.", a: "\"That's really interesting and I'll come back to it — but first, how did the interview go?\" (acknowledge and redirect)", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "The Stall",
-      guideFront: "What kind of switch is this?",
-      guideBack: "A possible response, with the strategy in brackets.",
-      description: "The conversation has died into silence and there's nothing to bridge from — they've said almost nothing to catch. The training is to accept there's no thread to link off and just open something fresh and light. Best handled with Random or Light Switch.\n\nWhat it usually looks like:\n• A silence with nothing in it to catch.\n• They have said almost nothing you could bridge from.\n• Both of you are waiting for the other to go first.\n\nTwo ways through:\n1. Random or Light Switch — open something fresh, and flag it. \"Completely random, but have you seen—\"\n2. Finding Common Ground — offer your own thing and see if it matches. \"I've been doing nothing but watching films. You?\"\n\nMindset: stop hunting for a bridge that is not there. With no thread to link off, opening something new IS the move.",
-      inputs: [
-        { q: "There's no natural detail to bridge from — they've said almost nothing.", a: "\"Totally out of nowhere, but — what's been the highlight of your week?\" (random or light switch)", bundle: 'pro' },
-        { q: "Small talk has died into silence.", a: "\"Right, random question to save us — best thing you've eaten this week?\" (random or light switch)", bundle: 'pro' },
-        { q: "The conversation keeps fizzling after every topic.", a: "\"Let me try a fun one — if you could teleport anywhere right now, where?\" (random or light switch)", bundle: 'pro' },
-        { q: "You're both out of easy things to say.", a: "\"I've got a curveball — worst film you've ever paid to see?\" (random or light switch)", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "The Ignored Switch",
-      guideFront: "What kind of switch is this?",
-      guideBack: "A possible response, with the strategy in brackets.",
-      description: "You tried to change the subject and it didn't land — they carried on regardless. The training is to notice the soft move failed and make a clearer, warmer one rather than repeating the same hint. Best handled with a firm Respectful Exit or an open Light Switch.\n\nWhat it usually looks like:\n• You changed the subject and they carried straight on.\n• Your bridge was too subtle to register.\n• You are about to try the same soft hint again.\n\nTwo ways through:\n1. Respectful Exit, firmly — close it out loud. \"Let's park that one. What else is going on with you?\"\n2. Random or Light Switch — flag the switch openly. \"Right, I'm changing the subject on purpose —\"\n\nMindset: repeating a hint that already failed just makes it awkward. Be warmer and clearer, not more subtle.",
-      inputs: [
-        { q: "Your light switch got ignored and the heavy topic rolls on.", a: "\"I'll be honest — I'd love to lift the mood a bit. What's something good that's happened lately?\" (random or light switch)", bundle: 'pro' },
-        { q: "You tried to redirect and they didn't take the hint.", a: "\"Let me be clearer — I think we've done that topic. What else is new with you?\" (respectful exit)", bundle: 'pro' },
-        { q: "A gentle bridge landed flat and they carried on.", a: "\"Genuinely, shall we switch it up? Tell me the best part of your week.\" (respectful exit)", bundle: 'pro' },
-        { q: "Your redirect got a one-word reply and then back to the old subject.", a: "\"Okay, new tack entirely — got any plans this weekend?\" (random or light switch)", bundle: 'pro' },
-      ]
-    },
-  ],
   reactingtounexpectedstatements: [
     {
       name: "They Said Something You Object To",
@@ -734,73 +684,6 @@ const challengesCollections = {
         { q: "The silence is becoming conspicuous.", a: "\"Give me a second — I'm thinking.\" [Say You Need a Second]", bundle: 'pro' },
         { q: "You can answer the practical part in the room.", a: "\"The dates I can answer. The rest I'd want to come back on.\" [Answer the Part You Can]", bundle: 'pro' },
         { q: "You catch them privately afterwards.", a: "\"What you said in there — what was behind it?\" [Ask What Prompted It]", bundle: 'pro' },
-      ]
-    },
-  ],
-  exploringatopic: [
-    {
-      name: "The Topic Runs Dry",
-      guideFront: "What kind of moment is this?",
-      guideBack: "A possible response, with the strategy in brackets.",
-      description: "Everyone has said their piece and the subject is out of air — the next thing is silence or an abrupt jump to something unrelated. The training is to spot the fade early and either squeeze one more layer out of it or step sideways into a close subtopic. Best handled with Build on Their Point and Expand to a Related Subtopic.\n\nWhat it usually looks like:\n• Answers get shorter and nobody asks anything back.\n• Someone says \"yeah, that's about it really.\"\n• A pause that is one second too long.\n\nTwo ways through:\n1. Build on Their Point — squeeze one more layer out. \"Was there anything you gave up on?\"\n2. Expand to a Related Subtopic — step sideways. \"Are they any good live?\"\n\nMindset: spot the fade early. Once the silence has landed, whatever you say next has to restart the whole thing.",
-      inputs: [
-        { q: "The group has covered everything about their holidays.", a: "\"Does anyone actually enjoy the travelling part, or just the arriving?\" (expand to a related subtopic)", bundle: 'pro' },
-        { q: "The conversation about the album has nothing left in it.", a: "\"Are they any good live? I have never seen them.\" (expand to a related subtopic)", bundle: 'pro' },
-        { q: "Someone says: \"Yeah, that is about it really.\" and it goes quiet.", a: "\"You said that is about it — was there a part you skipped?\" (build on their point)", bundle: 'pro' },
-        { q: "The talk about running has covered routes, shoes and races.", a: "\"Does anyone do anything else — swimming, cycling?\" (expand to a related subtopic)", bundle: 'pro' },
-        { q: "The topic is fading but nobody wants to leave it.", a: "\"Before we drop it — what got you all started on this?\" (ask an open question)", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "A Topic You Know Nothing About",
-      guideFront: "What kind of moment is this?",
-      guideBack: "A possible response, with the strategy in brackets.",
-      description: "The group is deep in something you have no knowledge of, and staying silent starts to look like boredom. The training is to see that knowledge is not the entry ticket — a question is a full contribution, and people enjoy explaining what they are into. Best handled with Ask an Open Question and Build on Their Point.\n\nWhat makes it hard:\n• Staying quiet starts to look like boredom.\n• Everyone else has shared history with the subject.\n• You cannot judge whether what they are saying is right.\n\nTwo ways through:\n1. Ask an Open Question — knowledge is not the entry ticket. \"How did you all get into it?\"\n2. Build on Their Point — use their own word back. \"You said it is the gearbox — is that the expensive bit?\"\n\nMindset: people enjoy explaining the thing they are into. The beginner's question is usually the most welcome one in the room.",
-      inputs: [
-        { q: "The table is deep in a sport you have never followed.", a: "\"How did you all get into it in the first place?\" (ask an open question)", bundle: 'pro' },
-        { q: "Everyone is discussing a series you have not watched.", a: "\"What is it that keeps you watching?\" (ask an open question)", bundle: 'pro' },
-        { q: "The group is talking about car engines and you are lost.", a: "\"You said it is the gearbox — is that the expensive bit?\" (build on their point)", bundle: 'pro' },
-        { q: "They are comparing running shoes and you do not run.", a: "\"Does the shoe actually make that much difference?\" (ask an open question)", bundle: 'pro' },
-        { q: "You have nothing to add about their industry.", a: "\"What is the part of that job nobody outside it understands?\" (ask an open question)", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Bringing In the Quiet One",
-      guideFront: "What kind of moment is this?",
-      guideBack: "A possible response, with the strategy in brackets.",
-      description: "One person has not spoken for ten minutes, or one person has not stopped — either way the topic is only being shared by half the group. The training is to notice the imbalance and open a door, without putting anyone too much on the spot. Best handled with Share, Then Invite and Ask an Open Question.\n\nWhat it usually looks like:\n• One person has not spoken since the topic started.\n• Someone keeps starting to speak and getting cut off.\n• The same two people have had the whole conversation.\n\nTwo ways through:\n1. Share, Then Invite — use their name, and keep the question easy. \"Sara, do you cook at all?\"\n2. Ask an Open Question — reopen the door someone else closed. \"Tom, you were going to say something?\"\n\nMindset: keep the invitation small. A big question puts someone on the spot; an easy one just lets them back in.",
-      inputs: [
-        { q: "One person has said nothing since the topic started.", a: "\"That is my version. Sara, do you cook at all?\" (share, then invite)", bundle: 'pro' },
-        { q: "Someone keeps starting to speak and getting cut off.", a: "\"Hang on — Tom, you were going to say something?\" (ask an open question)", bundle: 'pro' },
-        { q: "One person has held the floor for several minutes.", a: "\"That is a good point. What do the rest of you think?\" (share, then invite)", bundle: 'pro' },
-        { q: "You notice a friend nodding along but never joining in.", a: "\"You have been through this too, have you not? What was yours like?\" (ask an open question)", bundle: 'pro' },
-        { q: "The same two people have had the whole conversation.", a: "\"We have been going on. Has anyone else got a horror story?\" (share, then invite)", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "When It Drifts Off Topic",
-      guideFront: "What kind of moment is this?",
-      guideBack: "A possible response, with the strategy in brackets.",
-      description: "The talk has jumped somewhere far away and the subject everyone was enjoying is gone. The training is to notice how far it has travelled and bring it back through a related angle, rather than announcing a change of subject. Best handled with Expand to a Related Subtopic and Build on Their Point.\n\nWhat it usually looks like:\n• A holiday story that has become a story about someone's boss.\n• Three jumps in two minutes.\n• The subject everyone was enjoying has quietly gone.\n\nTwo ways through:\n1. Expand to a Related Subtopic — come back in sideways. \"Did anyone else's tomatoes fail this year?\"\n2. Build on Their Point — pick the thread back up. \"Where were we, Portugal?\"\n\nMindset: steer, do not announce. \"Can we get back on topic\" makes everyone self-conscious; a related question just quietly works.",
-      inputs: [
-        { q: "The gardening talk has turned into a discussion about tax.", a: "\"Before we get lost — did anyone else's tomatoes fail this year?\" (expand to a related subtopic)", bundle: 'pro' },
-        { q: "A story about a holiday has become a story about someone's boss.", a: "\"That is a whole other thing. Where were we, Portugal?\" (build on their point)", bundle: 'pro' },
-        { q: "The music conversation drifted into phone contracts.", a: "\"That reminds me — does anyone still buy actual records?\" (expand to a related subtopic)", bundle: 'pro' },
-        { q: "A food conversation has turned into complaints about parking.", a: "\"You mentioned the place by the station — is the food good there?\" (build on their point)", bundle: 'pro' },
-        { q: "The topic has jumped three times in two minutes.", a: "\"Can we go back? You were saying something about the trip.\" (build on their point)", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "When You Have Talked Too Much",
-      guideFront: "What kind of moment is this?",
-      guideBack: "A possible response, with the strategy in brackets.",
-      description: "You look up and realise you have been holding the floor — three stories in a row, or every question answered by you. The training is to catch it yourself and hand the topic back rather than adding one more point. Best handled with Share, Then Invite and Ask an Open Question.\n\nWhat it usually looks like:\n• Two of your own stories in a row.\n• Every question answered by you.\n• Everyone has gone quiet while you explain.\n\nTwo ways through:\n1. Share, Then Invite — close your bit and pass it on. \"Anyway, that's mine. What does yours look like?\"\n2. Ask an Open Question — take yourself out of it entirely. \"What do you all think about it?\"\n\nMindset: noticing it yourself is the whole skill. One question puts the balance back, and nobody else has to say anything about it.",
-      inputs: [
-        { q: "You realise you have answered the last three questions yourself.", a: "\"I keep taking over. What is your take on it?\" (share, then invite)", bundle: 'pro' },
-        { q: "You have told two stories in a row about the same subject.", a: "\"That is enough from me. Has anyone else had that happen?\" (share, then invite)", bundle: 'pro' },
-        { q: "You notice everyone has gone quiet while you explain.", a: "\"Anyway, that is my version. What does yours look like?\" (share, then invite)", bundle: 'pro' },
-        { q: "You have been describing your commute in detail.", a: "\"Enough about mine — how bad is yours?\" (share, then invite)", bundle: 'pro' },
-        { q: "You catch yourself about to add a fourth point.", a: "\"Actually, what do you all think about it?\" (ask an open question)", bundle: 'pro' },
       ]
     },
   ],
@@ -4113,88 +3996,6 @@ const challengesCollections = {
       ]
     },
   ],
-  showunderstanding: [
-    {
-      name: "The Urge to Fix",
-      guideFront: "Choose a strategy when...",
-      guideBack: "One way it could sound",
-      description: "They have described a problem, and everything in you wants to offer the solution. It was not what they asked for, and usually not what they want.\n\n**What goes wrong:** advice given before somebody has been understood rarely gets taken — it answers a question they had not finished asking. It also ends the telling.\n\n**What works here:** **Loop Back or Rephrase** does most of it, because reflecting a problem is the closest thing to solving it that does not take it away from them. **Ask Follow-up Questions** does the rest, aimed at their experience rather than the mechanics.\n\n**Avoid:** \"Have you tried\" in any of its forms. If they want the answer they will ask for it, and they will ask sooner if they feel understood first.\n\nMindset: understanding first is not a delay before the useful part. For most conversations it is the useful part.",
-      inputs: [
-        { q: "You can feel \"have you tried\" forming.", a: "\"So it's the whole process that's the problem, not one bit of it.\" [Loop Back or Rephrase]", bundle: 'pro' },
-        { q: "The solution seems obvious to you and they have not mentioned it.", a: "\"What have you already tried with it?\" [Ask Follow-up Questions]", bundle: 'pro' },
-        { q: "You are impatient to get to the practical part.", a: "\"What's the bit that's actually wearing you down?\" [Ask Follow-up Questions]", bundle: 'pro' },
-        { q: "They describe a problem you have solved before.", a: "\"That sounds genuinely exhausting to keep managing.\" [Loop Back or Rephrase]", bundle: 'pro' },
-        { q: "You have already given advice and they are still describing it.", a: "\"Sorry — I jumped ahead. Tell me the rest of it.\" [Ask Follow-up Questions]", bundle: 'pro' },
-        { q: "They ask \"what would you do?\" and you are not sure they mean it.", a: "\"I'll say — but first, what's putting you off the obvious one?\" [Ask Follow-up Questions]", bundle: 'pro' },
-        { q: "The problem is one you have lived through yourself.", a: "\"I had that exact one. It's grim while it lasts.\" [Relate Through Sharing]", bundle: 'pro' },
-        { q: "You gave advice, it was ignored, and they are back with the same thing.", a: "\"So it's still going, and nothing's shifted it.\" [Loop Back or Rephrase]", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Taking the Floor",
-      guideFront: "Choose a strategy when...",
-      guideBack: "One way it could sound",
-      description: "You relate to what they said, and four sentences later the conversation is about you, and nobody is quite sure how it happened.\n\n**What goes wrong:** your version grows a middle. Two sentences and a question is the whole move; anything with a middle and an ending is a story, and stories take the floor whether or not you meant them to.\n\n**What works here:** **Relate Through Sharing**, kept to two sentences. When it has already gone too far, **Loop Back or Rephrase** is the way back — handing the floor over explicitly is less awkward than trailing off.\n\n**Avoid:** the second example. One matching experience is relating; two is a turn.\n\nMindset: relating is a nod, not a turn. If your version has a middle, cut the middle.",
-      inputs: [
-        { q: "You are three sentences into your own version.", a: "\"Anyway — yours sounds worse. What happened with the deadline?\" [Loop Back or Rephrase]", bundle: 'pro' },
-        { q: "You notice they have started asking you questions.", a: "\"We're talking about me now, sorry. Go back to the group thing.\" [Loop Back or Rephrase]", bundle: 'pro' },
-        { q: "You have a long story that fits perfectly.", a: "\"I had almost exactly that last year. It's a special kind of awful.\" [Relate Through Sharing]", bundle: 'pro' },
-        { q: "You are about to add a second example of your own.", a: "\"Same feeling, anyway. What did you end up doing?\" [Ask Follow-up Questions]", bundle: 'pro' },
-        { q: "Your version is genuinely more dramatic than theirs.", a: "\"I know that feeling. Yours is the one we're talking about though.\" [Relate Through Sharing]", bundle: 'pro' },
-        { q: "Someone else joins and asks you about the thing you just mentioned.", a: "\"Later — she was telling me about the group project.\" [Loop Back or Rephrase]", bundle: 'pro' },
-        { q: "You realise you have not asked them anything for five minutes.", a: "\"I've talked all over that. What happened in the end?\" [Ask Follow-up Questions]", bundle: 'pro' },
-        { q: "They politely wait for your story to finish.", a: "\"That's enough from me. Back to yours.\" [Loop Back or Rephrase]", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Sounding Rehearsed",
-      guideFront: "Choose a strategy when...",
-      guideBack: "One way it could sound",
-      description: "You used the technique correctly and it came out like a customer service script — \"so what I'm hearing is that you feel frustrated\".\n\n**What goes wrong:** the formula is scaffolding, and you left it up. A loop in a voice you would never otherwise use tells the other person that a method is being applied to them, which is the opposite of what the method was for.\n\n**What works here:** **Loop Back or Rephrase** in plain language — your own register, your own words, including the unflattering ones. **Ask Follow-up Questions** is the escape hatch, because a real question always sounds less staged than a reflection does.\n\n**Avoid:** repeating their exact sentence. Same words back is the clearest possible signal that nothing was processed in between.\n\nMindset: if you would not say it that way to a friend, do not say it that way to a friend.",
-      inputs: [
-        { q: "You have said \"so what I'm hearing is\" twice already.", a: "\"So the deadline moved and nobody told you. That's rubbish.\" [Loop Back or Rephrase]", bundle: 'pro' },
-        { q: "You repeated their exact words back and it sounded odd.", a: "\"What did you do when you found out?\" [Ask Follow-up Questions]", bundle: 'pro' },
-        { q: "You can hear yourself using a therapist voice.", a: "\"Right, so it's the being left out that's the actual problem.\" [Loop Back or Rephrase]", bundle: 'pro' },
-        { q: "The reflection landed flat and slightly formal.", a: "\"Sorry, that came out weird. What I mean is — that would annoy me too.\" [Relate Through Sharing]", bundle: 'pro' },
-        { q: "You are following the formula and not really listening.", a: "\"Say that last bit again? I want to make sure I've got it.\" [Ask Follow-up Questions]", bundle: 'pro' },
-        { q: "You have started every response with the same three words.", a: "\"That's a mess, then. Who was supposed to tell you?\" [Ask Follow-up Questions]", bundle: 'pro' },
-        { q: "You are reflecting something that needs no reflecting.", a: "\"God, yes. I'd have been furious.\" [Relate Through Sharing]", bundle: 'pro' },
-        { q: "You are about to summarise something that took one sentence.", a: "\"What happened next?\" [Ask Follow-up Questions]", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Losing the Thread",
-      guideFront: "Choose a strategy when...",
-      guideBack: "One way it could sound",
-      description: "They have explained something and you genuinely have not followed — the names, the order of events, or why any of it matters.\n\n**What goes wrong:** you nod and hope. A loop built on a misunderstanding is worse than no loop at all, because now they believe they have been understood when they have not, and the correction comes much later and costs more.\n\n**What works here:** **Ask Follow-up Questions**, aimed at the specific gap rather than the topic. **Loop Back or Rephrase** works too if you offer it as a check — your version, plus permission to fix it.\n\n**Avoid:** waiting for it to make sense on its own. It rarely does, and every further minute makes admitting it more awkward.\n\nMindset: admitting you are lost is a form of attention, not a failure of it. The alternative is pretending, which they will notice eventually.",
-      inputs: [
-        { q: "There are three names in the story and you cannot place any of them.", a: "\"Sorry — who's Anna in this?\" [Ask Follow-up Questions]", bundle: 'pro' },
-        { q: "You have lost the order of what happened.", a: "\"Let me check I've got it — the plan changed twice and you found out last?\" [Loop Back or Rephrase]", bundle: 'pro' },
-        { q: "You understand the events but not why it upset them.", a: "\"What was the part that got to you most?\" [Ask Follow-up Questions]", bundle: 'pro' },
-        { q: "You have been nodding along for a minute without following.", a: "\"Can you take me back a step? I've lost the thread.\" [Ask Follow-up Questions]", bundle: 'pro' },
-        { q: "You are about to loop back something you are not sure of.", a: "\"Tell me if this is wrong — it's the not being asked that's the issue?\" [Loop Back or Rephrase]", bundle: 'pro' },
-        { q: "They are using words from their job that you do not know.", a: "\"What's a handover, in your world?\" [Ask Follow-up Questions]", bundle: 'pro' },
-        { q: "You followed all of it except the ending.", a: "\"So it's resolved — or it isn't, and that's the problem?\" [Loop Back or Rephrase]", bundle: 'pro' },
-        { q: "You realise you have been thinking about something else.", a: "\"I drifted for a second, sorry. Start again from the meeting.\" [Ask Follow-up Questions]", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Closed Doors",
-      guideFront: "Choose a strategy when...",
-      guideBack: "One way it could sound",
-      description: "They have given you three words and a shrug, and there is almost nothing to reflect or ask about.\n\n**What goes wrong:** you ask a bigger question, and a bigger question is harder to answer than a small one. Open questions about feelings are the hardest of all for somebody who has already decided not to go into it.\n\n**What works here:** **Loop Back or Rephrase** what you can see rather than what they said — it gives them something to agree with or correct, which is far easier than producing an answer. **Relate Through Sharing** works as a way of going first, so they do not have to.\n\n**Avoid:** pushing. Offering a word and leaving the door open is the whole move; whether they walk through it is theirs to decide.\n\nMindset: you are not trying to get it out of them. You are letting them know the offer is there.",
-      inputs: [
-        { q: "They say: \"It's fine, honestly.\" and clearly mean the opposite.", a: "\"It sounds less fine and more relentless, from where I'm sitting.\" [Loop Back or Rephrase]", bundle: 'pro' },
-        { q: "They shrug and change the subject.", a: "\"Fair enough. I'm around if it turns into something you want to say.\" [Loop Back or Rephrase]", bundle: 'pro' },
-        { q: "They say: \"I don't really want to go into it.\"", a: "\"That's completely fine. No need.\" [Loop Back or Rephrase]", bundle: 'pro' },
-        { q: "They will not open up and you have a similar experience.", a: "\"I had a run like that in the spring. Hard to explain to anyone.\" [Relate Through Sharing]", bundle: 'pro' },
-        { q: "Their face says a lot more than their three words did.", a: "\"You don't have to say anything. It just looks like a lot.\" [Loop Back or Rephrase]", bundle: 'pro' },
-        { q: "They give one-word answers to everything you ask.", a: "\"I'll stop asking. It's just good to see you.\" [Loop Back or Rephrase]", bundle: 'pro' },
-        { q: "They mention it once and immediately move on.", a: "\"You said the thing with your brother — is that still going on?\" [Ask Follow-up Questions]", bundle: 'pro' },
-        { q: "They deflect with a joke about it.", a: "\"I do that too when I don't want to get into something.\" [Relate Through Sharing]", bundle: 'pro' },
-      ]
-    },
-  ],
   talkingaboutyourself: [
     {
       name: "An Ordinary Week",
@@ -4557,6 +4358,252 @@ const challengesCollections = {
         { q: "You are their manager and the joke is about their work.", a: "(not yours to make — the room hears it differently from you) [Irony]", bundle: 'pro' },
         { q: "The joke needs them to be a good sport to work.", a: "(that means it is aimed at them — leave it) [Exaggeration]", bundle: 'pro' },
         { q: "You want to be light about something heavy, later.", a: "\"For what it's worth, that is the worst week I've heard about this year.\" [Exaggeration]", bundle: 'pro' },
+      ]
+    },
+  ],
+  showunderstanding: [
+    {
+      name: "The Urge to Fix",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "They have described a problem, and everything in you wants to offer the solution. It was not what they asked for, and usually not what they want.\n\n**What goes wrong:** advice given before somebody has been understood rarely gets taken — it answers a question they had not finished asking. It also ends the telling.\n\n**What works here:** **Loop Back or Rephrase** does most of it, because reflecting a problem is the closest thing to solving it that does not take it away from them. **Ask Follow-up Questions** does the rest, aimed at their experience rather than the mechanics.\n\n**Avoid:** \"Have you tried\" in any of its forms. If they want the answer they will ask for it, and they will ask sooner if they feel understood first.\n\nMindset: understanding first is not a delay before the useful part. For most conversations it is the useful part.",
+      inputs: [
+        { q: "You can feel \"have you tried\" forming.", a: "\"So it's the whole process that's the problem, not one bit of it.\" [Loop Back or Rephrase]", bundle: 'pro' },
+        { q: "The solution seems obvious to you and they have not mentioned it.", a: "\"What have you already tried with it?\" [Ask Follow-up Questions]", bundle: 'pro' },
+        { q: "You are impatient to get to the practical part.", a: "\"What's the bit that's actually wearing you down?\" [Ask Follow-up Questions]", bundle: 'pro' },
+        { q: "They describe a problem you have solved before.", a: "\"That sounds genuinely exhausting to keep managing.\" [Loop Back or Rephrase]", bundle: 'pro' },
+        { q: "You have already given advice and they are still describing it.", a: "\"Sorry — I jumped ahead. Tell me the rest of it.\" [Ask Follow-up Questions]", bundle: 'pro' },
+        { q: "They ask \"what would you do?\" and you are not sure they mean it.", a: "\"I'll say — but first, what's putting you off the obvious one?\" [Ask Follow-up Questions]", bundle: 'pro' },
+        { q: "The problem is one you have lived through yourself.", a: "\"I had that exact one. It's grim while it lasts.\" [Relate Through Sharing]", bundle: 'pro' },
+        { q: "You gave advice, it was ignored, and they are back with the same thing.", a: "\"So it's still going, and nothing's shifted it.\" [Loop Back or Rephrase]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Taking the Floor",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "You relate to what they said, and four sentences later the conversation is about you, and nobody is quite sure how it happened.\n\n**What goes wrong:** your version grows a middle. Two sentences and a question is the whole move; anything with a middle and an ending is a story, and stories take the floor whether or not you meant them to.\n\n**What works here:** **Relate Through Sharing**, kept to two sentences. When it has already gone too far, **Loop Back or Rephrase** is the way back — handing the floor over explicitly is less awkward than trailing off.\n\n**Avoid:** the second example. One matching experience is relating; two is a turn.\n\nMindset: relating is a nod, not a turn. If your version has a middle, cut the middle.",
+      inputs: [
+        { q: "You are three sentences into your own version.", a: "\"Anyway — yours sounds worse. What happened with the deadline?\" [Loop Back or Rephrase]", bundle: 'pro' },
+        { q: "You notice they have started asking you questions.", a: "\"We're talking about me now, sorry. Go back to the group thing.\" [Loop Back or Rephrase]", bundle: 'pro' },
+        { q: "You have a long story that fits perfectly.", a: "\"I had almost exactly that last year. It's a special kind of awful.\" [Relate Through Sharing]", bundle: 'pro' },
+        { q: "You are about to add a second example of your own.", a: "\"Same feeling, anyway. What did you end up doing?\" [Ask Follow-up Questions]", bundle: 'pro' },
+        { q: "Your version is genuinely more dramatic than theirs.", a: "\"I know that feeling. Yours is the one we're talking about though.\" [Relate Through Sharing]", bundle: 'pro' },
+        { q: "Someone else joins and asks you about the thing you just mentioned.", a: "\"Later — she was telling me about the group project.\" [Loop Back or Rephrase]", bundle: 'pro' },
+        { q: "You realise you have not asked them anything for five minutes.", a: "\"I've talked all over that. What happened in the end?\" [Ask Follow-up Questions]", bundle: 'pro' },
+        { q: "They politely wait for your story to finish.", a: "\"That's enough from me. Back to yours.\" [Loop Back or Rephrase]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sounding Rehearsed",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "You used the technique correctly and it came out like a customer service script — \"so what I'm hearing is that you feel frustrated\".\n\n**What goes wrong:** the formula is scaffolding, and you left it up. A loop in a voice you would never otherwise use tells the other person that a method is being applied to them, which is the opposite of what the method was for.\n\n**What works here:** **Loop Back or Rephrase** in plain language — your own register, your own words, including the unflattering ones. **Ask Follow-up Questions** is the escape hatch, because a real question always sounds less staged than a reflection does.\n\n**Avoid:** repeating their exact sentence. Same words back is the clearest possible signal that nothing was processed in between.\n\nMindset: if you would not say it that way to a friend, do not say it that way to a friend.",
+      inputs: [
+        { q: "You have said \"so what I'm hearing is\" twice already.", a: "\"So the deadline moved and nobody told you. That's rubbish.\" [Loop Back or Rephrase]", bundle: 'pro' },
+        { q: "You repeated their exact words back and it sounded odd.", a: "\"What did you do when you found out?\" [Ask Follow-up Questions]", bundle: 'pro' },
+        { q: "You can hear yourself using a therapist voice.", a: "\"Right, so it's the being left out that's the actual problem.\" [Loop Back or Rephrase]", bundle: 'pro' },
+        { q: "The reflection landed flat and slightly formal.", a: "\"Sorry, that came out weird. What I mean is — that would annoy me too.\" [Relate Through Sharing]", bundle: 'pro' },
+        { q: "You are following the formula and not really listening.", a: "\"Say that last bit again? I want to make sure I've got it.\" [Ask Follow-up Questions]", bundle: 'pro' },
+        { q: "You have started every response with the same three words.", a: "\"That's a mess, then. Who was supposed to tell you?\" [Ask Follow-up Questions]", bundle: 'pro' },
+        { q: "You are reflecting something that needs no reflecting.", a: "\"God, yes. I'd have been furious.\" [Relate Through Sharing]", bundle: 'pro' },
+        { q: "You are about to summarise something that took one sentence.", a: "\"What happened next?\" [Ask Follow-up Questions]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Losing the Thread",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "They have explained something and you genuinely have not followed — the names, the order of events, or why any of it matters.\n\n**What goes wrong:** you nod and hope. A loop built on a misunderstanding is worse than no loop at all, because now they believe they have been understood when they have not, and the correction comes much later and costs more.\n\n**What works here:** **Ask Follow-up Questions**, aimed at the specific gap rather than the topic. **Loop Back or Rephrase** works too if you offer it as a check — your version, plus permission to fix it.\n\n**Avoid:** waiting for it to make sense on its own. It rarely does, and every further minute makes admitting it more awkward.\n\nMindset: admitting you are lost is a form of attention, not a failure of it. The alternative is pretending, which they will notice eventually.",
+      inputs: [
+        { q: "There are three names in the story and you cannot place any of them.", a: "\"Sorry — who's Anna in this?\" [Ask Follow-up Questions]", bundle: 'pro' },
+        { q: "You have lost the order of what happened.", a: "\"Let me check I've got it — the plan changed twice and you found out last?\" [Loop Back or Rephrase]", bundle: 'pro' },
+        { q: "You understand the events but not why it upset them.", a: "\"What was the part that got to you most?\" [Ask Follow-up Questions]", bundle: 'pro' },
+        { q: "You have been nodding along for a minute without following.", a: "\"Can you take me back a step? I've lost the thread.\" [Ask Follow-up Questions]", bundle: 'pro' },
+        { q: "You are about to loop back something you are not sure of.", a: "\"Tell me if this is wrong — it's the not being asked that's the issue?\" [Loop Back or Rephrase]", bundle: 'pro' },
+        { q: "They are using words from their job that you do not know.", a: "\"What's a handover, in your world?\" [Ask Follow-up Questions]", bundle: 'pro' },
+        { q: "You followed all of it except the ending.", a: "\"So it's resolved — or it isn't, and that's the problem?\" [Loop Back or Rephrase]", bundle: 'pro' },
+        { q: "You realise you have been thinking about something else.", a: "\"I drifted for a second, sorry. Start again from the meeting.\" [Ask Follow-up Questions]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Closed Doors",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "They have given you three words and a shrug, and there is almost nothing to reflect or ask about.\n\n**What goes wrong:** you ask a bigger question, and a bigger question is harder to answer than a small one. Open questions about feelings are the hardest of all for somebody who has already decided not to go into it.\n\n**What works here:** **Loop Back or Rephrase** what you can see rather than what they said — it gives them something to agree with or correct, which is far easier than producing an answer. **Relate Through Sharing** works as a way of going first, so they do not have to.\n\n**Avoid:** pushing. Offering a word and leaving the door open is the whole move; whether they walk through it is theirs to decide.\n\nMindset: you are not trying to get it out of them. You are letting them know the offer is there.",
+      inputs: [
+        { q: "They say: \"It's fine, honestly.\" and clearly mean the opposite.", a: "\"It sounds less fine and more relentless, from where I'm sitting.\" [Loop Back or Rephrase]", bundle: 'pro' },
+        { q: "They shrug and change the subject.", a: "\"Fair enough. I'm around if it turns into something you want to say.\" [Loop Back or Rephrase]", bundle: 'pro' },
+        { q: "They say: \"I don't really want to go into it.\"", a: "\"That's completely fine. No need.\" [Loop Back or Rephrase]", bundle: 'pro' },
+        { q: "They will not open up and you have a similar experience.", a: "\"I had a run like that in the spring. Hard to explain to anyone.\" [Relate Through Sharing]", bundle: 'pro' },
+        { q: "Their face says a lot more than their three words did.", a: "\"You don't have to say anything. It just looks like a lot.\" [Loop Back or Rephrase]", bundle: 'pro' },
+        { q: "They give one-word answers to everything you ask.", a: "\"I'll stop asking. It's just good to see you.\" [Loop Back or Rephrase]", bundle: 'pro' },
+        { q: "They mention it once and immediately move on.", a: "\"You said the thing with your brother — is that still going on?\" [Ask Follow-up Questions]", bundle: 'pro' },
+        { q: "They deflect with a joke about it.", a: "\"I do that too when I don't want to get into something.\" [Relate Through Sharing]", bundle: 'pro' },
+      ]
+    },
+  ],
+  exploringatopic: [
+    {
+      name: "Running Dry",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Everyone has said their piece and the subject is out of air. The next thing is either silence or an abrupt jump to something unrelated.\n\n**What goes wrong:** you wait to be sure. By the time the pause has landed, whatever you say has to restart the whole conversation rather than continue it.\n\n**What works here:** **Build on Their Point** squeezes one more layer out of the thread, and **Expand to a Related Subtopic** steps sideways once there genuinely is nothing left.\n\n**Avoid:** a brand-new subject. The group was enjoying this one, and a jump throws away everything already established.\n\nMindset: spot the fade early. A thread ending is not the topic ending.",
+      inputs: [
+        { q: "The group has covered everything about their holidays.", a: "\"Does anyone actually enjoy the travelling part, or just the arriving?\" [Expand to a Related Subtopic]", bundle: 'pro' },
+        { q: "The conversation about the album has nothing left in it.", a: "\"Are they any good live? I have never seen them.\" [Expand to a Related Subtopic]", bundle: 'pro' },
+        { q: "Someone says: \"Yeah, that is about it really.\" and it goes quiet.", a: "\"You said that is about it — was there a part you skipped?\" [Build on Their Point]", bundle: 'pro' },
+        { q: "The talk about running has covered routes, shoes and races.", a: "\"Does anyone do anything else — swimming, cycling?\" [Expand to a Related Subtopic]", bundle: 'pro' },
+        { q: "The topic is fading but nobody wants to leave it.", a: "\"Before we drop it — what got you all started on this?\" [Ask an Open Question]", bundle: 'pro' },
+        { q: "Answers have shortened to three words each.", a: "\"What is the part of it people usually get wrong?\" [Ask an Open Question]", bundle: 'pro' },
+        { q: "You can feel the pause coming and there is one detail left.", a: "\"You mentioned the second year was different — what changed?\" [Build on Their Point]", bundle: 'pro' },
+        { q: "The subject is done but the group is not ready to move.", a: "\"Mine is a smaller version of that, and it went about as well.\" [Share a Related Experience]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Unfamiliar Ground",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "The group is deep in something you have no knowledge of, and staying silent starts to look like boredom.\n\n**What goes wrong:** you wait for a subject you know. If you only speak on your own topics you are barely in the conversation, and the wait can last the whole evening.\n\n**What works here:** **Ask an Open Question** — knowledge is not the entry ticket, and people enjoy explaining what they are into. **Build on Their Point** works too: use their own word back and you are inside the subject without knowing anything about it.\n\n**Avoid:** pretending to follow. It costs you the one thing you actually have to offer, which is a genuine question.\n\nMindset: the beginner's question is usually the most welcome one in the room.",
+      inputs: [
+        { q: "The table is deep in a sport you have never followed.", a: "\"How did you all get into it in the first place?\" [Ask an Open Question]", bundle: 'pro' },
+        { q: "Everyone is discussing a series you have not watched.", a: "\"What is it that keeps you watching?\" [Ask an Open Question]", bundle: 'pro' },
+        { q: "The group is talking about car engines and you are lost.", a: "\"You said it is the gearbox — is that the expensive bit?\" [Build on Their Point]", bundle: 'pro' },
+        { q: "They are comparing running shoes and you do not run.", a: "\"Does the shoe actually make that much difference?\" [Ask an Open Question]", bundle: 'pro' },
+        { q: "You have nothing to add about their industry.", a: "\"What is the part of that job nobody outside it understands?\" [Ask an Open Question]", bundle: 'pro' },
+        { q: "They use a word you do not know and carry on.", a: "\"Sorry — what is a peloton, in this context?\" [Build on Their Point]", bundle: 'pro' },
+        { q: "You have been quiet so long that speaking feels awkward.", a: "\"I have followed none of this, and I would like to. Start me at the beginning?\" [Ask an Open Question]", bundle: 'pro' },
+        { q: "There is one corner of the subject you do know something about.", a: "\"The only bit I know is the food. That part I can talk about for hours.\" [Share a Related Experience]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "An Uneven Table",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "One person has not spoken for ten minutes, or one person has not stopped. Either way the topic is only being shared by half the group.\n\n**What goes wrong:** the big question. \"So what do you think?\" aimed at someone who has been quiet for ten minutes is a spotlight, and the usual answer is \"no, I agree with what everyone said\".\n\n**What works here:** **Share, Then Invite**, with a name and an easy question. **Ask an Open Question** reopens a door somebody else closed — \"Tom, you were going to say something?\"\n\n**Avoid:** commenting on the silence. Naming that someone has been quiet makes it a thing, and now they have to explain themselves before they can join in.\n\nMindset: keep the invitation small. An easy question just lets somebody back in.",
+      inputs: [
+        { q: "One person has said nothing since the topic started.", a: "\"That is my version. Sara, do you cook at all?\" [Share, Then Invite]", bundle: 'pro' },
+        { q: "Someone keeps starting to speak and getting cut off.", a: "\"Hang on — Tom, you were going to say something?\" [Ask an Open Question]", bundle: 'pro' },
+        { q: "One person has held the floor for several minutes.", a: "\"That is a good point. What do the rest of you think?\" [Share, Then Invite]", bundle: 'pro' },
+        { q: "You notice a friend nodding along but never joining in.", a: "\"You have been through this too, have you not? What was yours like?\" [Ask an Open Question]", bundle: 'pro' },
+        { q: "The same two people have had the whole conversation.", a: "\"We have been going on. Has anyone else got a horror story?\" [Share, Then Invite]", bundle: 'pro' },
+        { q: "The quiet one clearly knows more about this than anyone.", a: "\"You actually do this for a living — am I getting it wrong?\" [Ask an Open Question]", bundle: 'pro' },
+        { q: "A new person is at the table and nobody has drawn them in.", a: "\"We have been at this ten minutes. What do you make of it all?\" [Share, Then Invite]", bundle: 'pro' },
+        { q: "Somebody gave a short answer and the group moved straight on.", a: "\"Go back a second — you said it was the timing?\" [Build on Their Point]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Drift",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "The talk has jumped somewhere far away and the subject everyone was enjoying is gone.\n\n**What goes wrong:** you announce it. \"Can we get back on topic\" makes everyone self-conscious and turns an ordinary drift into a small telling-off.\n\n**What works here:** **Expand to a Related Subtopic** comes back in sideways, and **Build on Their Point** picks the old thread up as though it never dropped — \"where were we, Portugal?\"\n\n**Avoid:** waiting to see if it comes back on its own. It does not, and three jumps later there is no thread left to pick up.\n\nMindset: steer, do not announce. A related question just quietly works.",
+      inputs: [
+        { q: "The gardening talk has turned into a discussion about tax.", a: "\"Before we get lost — did anyone else's tomatoes fail this year?\" [Expand to a Related Subtopic]", bundle: 'pro' },
+        { q: "A story about a holiday has become a story about someone's boss.", a: "\"That is a whole other thing. Where were we, Portugal?\" [Build on Their Point]", bundle: 'pro' },
+        { q: "The music conversation drifted into phone contracts.", a: "\"That reminds me — does anyone still buy actual records?\" [Expand to a Related Subtopic]", bundle: 'pro' },
+        { q: "A food conversation has turned into complaints about parking.", a: "\"You mentioned the place by the station — is the food good there?\" [Build on Their Point]", bundle: 'pro' },
+        { q: "The topic has jumped three times in two minutes.", a: "\"Can we go back? You were saying something about the trip.\" [Build on Their Point]", bundle: 'pro' },
+        { q: "Your own answer is what took it off course.", a: "\"That was me wandering off. You were mid-story.\" [Build on Their Point]", bundle: 'pro' },
+        { q: "The new subject is fine but the old one was better.", a: "\"We can come back to this — did you ever finish the kitchen?\" [Build on Their Point]", bundle: 'pro' },
+        { q: "The drift happened because the old topic was running out.", a: "\"Fair enough, that one was done. What else has everyone been up to this month?\" [Ask an Open Question]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Taking Over",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "You look up and realise you have been holding the floor — three stories in a row, or every question answered by you.\n\n**What goes wrong:** you add one more point to round it off. There is no rounding off; the next thing you say is either a handover or another minute of you.\n\n**What works here:** **Share, Then Invite** closes your bit and passes it on. **Ask an Open Question** takes you out of it entirely, which is the cleaner move when you have really been going.\n\n**Avoid:** apologising for it. \"Sorry, I have been talking too much\" makes everyone reassure you, which is another minute of the conversation being about you.\n\nMindset: noticing it yourself is the whole skill. One question puts the balance back and nobody has to say anything about it.",
+      inputs: [
+        { q: "You realise you have answered the last three questions yourself.", a: "\"I keep taking over. What is your take on it?\" [Share, Then Invite]", bundle: 'pro' },
+        { q: "You have told two stories in a row about the same subject.", a: "\"That is enough from me. Has anyone else had that happen?\" [Share, Then Invite]", bundle: 'pro' },
+        { q: "You notice everyone has gone quiet while you explain.", a: "\"Anyway, that is my version. What does yours look like?\" [Share, Then Invite]", bundle: 'pro' },
+        { q: "You have been describing your commute in detail.", a: "\"Enough about mine — how bad is yours?\" [Share, Then Invite]", bundle: 'pro' },
+        { q: "You catch yourself about to add a fourth point.", a: "\"Actually, what do you all think about it?\" [Ask an Open Question]", bundle: 'pro' },
+        { q: "Somebody tried to speak while you were mid-sentence.", a: "\"You went to say something — go on.\" [Ask an Open Question]", bundle: 'pro' },
+        { q: "You know a lot about this and it keeps coming out.", a: "\"I could do this all night, which is exactly why I should stop. Who else?\" [Share, Then Invite]", bundle: 'pro' },
+        { q: "You have been asked a question and the answer is long.", a: "\"Short version, then somebody stop me: it took two years and most of a summer.\" [Share a Related Experience]", bundle: 'pro' },
+      ]
+    },
+  ],
+  changingtopics: [
+    {
+      name: "The Third Lap",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "A subject that has been fully covered but keeps coming back — the same complaint on its third lap, a story retold, a work gripe that will not rest.\n\n**What goes wrong:** you treat it as new. Answering the same complaint a third time as though it were the first is what keeps it going, and everyone leaves the conversation slightly worn out.\n\n**What works here:** **Respectful Exit** — name the loop kindly and open something else. **Acknowledge and Redirect** does the gentler version when it is only the second lap.\n\n**Avoid:** hinting. A soft signal on a topic this sticky gets absorbed and the subject carries on.\n\nMindset: letting a topic end is part of a good conversation. Your job is flow, not endurance.",
+      inputs: [
+        { q: "You've tried to move on twice and they keep pulling it back.", a: "\"I think we've really covered this one — genuinely, what else is going on with you?\" [Respectful Exit]", bundle: 'pro' },
+        { q: "The same complaint is coming round for a third lap.", a: "\"I do get it — let's give it a rest though. How's everything else?\" [Respectful Exit]", bundle: 'pro' },
+        { q: "A story you've already heard is being retold in full.", a: "\"Still a great one — so, tell me something I haven't heard yet.\" [Respectful Exit]", bundle: 'pro' },
+        { q: "They keep returning to a work gripe you've discussed from every angle.", a: "\"We've squeezed that dry, I think. Shall we move to something new?\" [Respectful Exit]", bundle: 'pro' },
+        { q: "It's only the second lap and you'd rather be gentle about it.", a: "\"Still no fun, that. Anyway — did you get anywhere with the flat?\" [Acknowledge and Redirect]", bundle: 'pro' },
+        { q: "They circle back to it every time you open something else.", a: "\"You clearly need to say more about it. Say it properly, then let's leave it.\" [Respectful Exit]", bundle: 'pro' },
+        { q: "The loop is a happy one — a story they love telling.", a: "\"I love that one. What's the newest thing you've got?\" [Respectful Exit]", bundle: 'pro' },
+        { q: "A group has gone round the same subject three times.", a: "\"We could do this all night, couldn't we. Someone give us a new one.\" [Respectful Exit]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Sensitive Corner",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "The conversation turns to something uncomfortable, painful, or heated, and a jokey switch would feel careless.\n\n**What goes wrong:** the tone mismatch. A cheerful change of subject aimed at something raw is worse than staying in the subject, because it says you did not notice.\n\n**What works here:** **Steering Away from Sensitive Topics** — acknowledge briefly, then guide somewhere kinder. **Acknowledge and Redirect** works when it is awkward rather than painful.\n\n**Avoid:** trying to resolve it first. You do not have to fix a heavy subject to be allowed to move it.\n\nMindset: caring about someone and moving the conversation somewhere kinder are the same act.",
+      inputs: [
+        { q: "A sensitive topic comes up that you can't just joke your way out of.", a: "\"That's a heavy one, and I don't want to make light of it. How have things been otherwise?\" [Steering Away from Sensitive Topics]", bundle: 'pro' },
+        { q: "Someone overshared and it's gone quiet and awkward.", a: "\"No judgement here at all — and hey, how's the new job been?\" [Steering Away from Sensitive Topics]", bundle: 'pro' },
+        { q: "A group starts arguing and it's getting tense.", a: "\"We all feel strongly on that one. Anyway — anyone been anywhere nice lately?\" [Steering Away from Sensitive Topics]", bundle: 'pro' },
+        { q: "You need to switch but don't want to seem like you're dodging them.", a: "\"That's really interesting and I'll come back to it — but first, how did the interview go?\" [Acknowledge and Redirect]", bundle: 'pro' },
+        { q: "Someone asks you directly to take a side in it.", a: "\"I'm going to be useless on that one, honestly. How's your end of things?\" [Steering Away from Sensitive Topics]", bundle: 'pro' },
+        { q: "The subject is painful for someone who is in the room.", a: "\"I think that's theirs to talk about, if they want. What else has been happening?\" [Steering Away from Sensitive Topics]", bundle: 'pro' },
+        { q: "They clearly want to leave it but can't find the way out.", a: "\"Shall we park that? Tell me about the weekend instead.\" [Respectful Exit]", bundle: 'pro' },
+        { q: "They said something raw and then made a joke about it.", a: "\"I'll take the joke, but the offer's there another time. How's everything else?\" [Steering Away from Sensitive Topics]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Stall",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "The conversation has died into silence and there is nothing to bridge from — they have said almost nothing to catch.\n\n**What goes wrong:** hunting for a link that does not exist. The search takes longer than the silence you were trying to fix, and the bridge you eventually invent sounds invented.\n\n**What works here:** **Random or Light Switch** — accept there is no thread, say so, and open something fresh. Flagging the swerve is what makes it land.\n\n**Avoid:** the big question. \"So what do you do for fun?\" aimed at somebody who has already run out of things to say makes the silence longer.\n\nMindset: a stalled conversation has no thread to catch. Stop hunting and open something light.",
+      inputs: [
+        { q: "There's no natural detail to bridge from — they've said almost nothing.", a: "\"Totally out of nowhere, but — what's been the highlight of your week?\" [Random or Light Switch]", bundle: 'pro' },
+        { q: "Small talk has died into silence.", a: "\"Right, random question to save us — best thing you've eaten this week?\" [Random or Light Switch]", bundle: 'pro' },
+        { q: "The conversation keeps fizzling after every topic.", a: "\"Let me try a fun one — if you could teleport anywhere right now, where?\" [Random or Light Switch]", bundle: 'pro' },
+        { q: "You're both out of easy things to say.", a: "\"I've got a curveball — worst film you've ever paid to see?\" [Random or Light Switch]", bundle: 'pro' },
+        { q: "They gave you three words and the silence came back.", a: "\"Same energy here, honestly. It's been a long week.\" [Finding Common Ground]", bundle: 'pro' },
+        { q: "You are stuck together for a while and it has gone quiet twice.", a: "\"We're going to be here a bit, so I'll ask something daft — tea or coffee, and why are you wrong?\" [Random or Light Switch]", bundle: 'pro' },
+        { q: "The silence has lasted long enough that you're both aware of it.", a: "\"I've got nothing, and I refuse to be beaten. What did you do at the weekend?\" [Random or Light Switch]", bundle: 'pro' },
+        { q: "They finally offer one small detail.", a: "\"You said Gothenburg — what took you up there?\" [Linking]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Ignored Switch",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "You tried to change the subject and it did not land — they carried on regardless.\n\n**What goes wrong:** you repeat the same hint. A signal that was too soft the first time is not going to work the second, and a third attempt starts to feel like something is wrong.\n\n**What works here:** a firmer **Respectful Exit** or an openly flagged **Random or Light Switch**. Both say plainly what the hint said quietly.\n\n**Avoid:** giving up and settling back into it. Two people stuck in a subject neither wants is how an evening gets long.\n\nMindset: if the soft move failed, be clearer rather than quieter.",
+      inputs: [
+        { q: "Your light switch got ignored and the heavy topic rolls on.", a: "\"I'll be honest — I'd love to lift the mood a bit. What's something good that's happened lately?\" [Random or Light Switch]", bundle: 'pro' },
+        { q: "You tried to redirect and they didn't take the hint.", a: "\"Let me be clearer — I think we've done that topic. What else is new with you?\" [Respectful Exit]", bundle: 'pro' },
+        { q: "A gentle bridge landed flat and they carried on.", a: "\"Genuinely, shall we switch it up? Tell me the best part of your week.\" [Respectful Exit]", bundle: 'pro' },
+        { q: "Your redirect got a one-word reply and then back to the old subject.", a: "\"Okay, new tack entirely — got any plans this weekend?\" [Random or Light Switch]", bundle: 'pro' },
+        { q: "They keep answering your new topic with the old one.", a: "\"You're clearly not finished with it. Go on, then — say the rest.\" [Acknowledge and Redirect]", bundle: 'pro' },
+        { q: "The group followed you but one person did not.", a: "\"We'll come back to it. Anna was mid-sentence about something.\" [Respectful Exit]", bundle: 'pro' },
+        { q: "You switched, they switched back, and you both noticed.", a: "\"Ha — we're pulling in opposite directions. Yours or mine?\" [Random or Light Switch]", bundle: 'pro' },
+        { q: "They ignored the switch because they had not finished.", a: "\"Fair enough, finish it properly. I jumped in too early.\" [Acknowledge and Redirect]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The One You Started",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "You opened a subject and it landed flat. Nobody picked it up, and now you are the one who has to move on from your own dead topic.\n\n**What goes wrong:** you push it. A second attempt at a subject nobody wanted turns a small flat moment into a long one, and it makes everyone else responsible for rescuing you.\n\n**What works here:** **Random or Light Switch** — name it, laugh at it, and move. **Respectful Exit** works when you would rather be dry about it than jokey.\n\n**Avoid:** apologising. \"Sorry, that was boring\" makes everyone reassure you, which keeps the flat moment going.\n\nMindset: one topic that did not land is not a verdict. Move it along yourself and nobody remembers.",
+      inputs: [
+        { q: "You brought something up and got polite nods and nothing else.", a: "\"Right, nobody cares about that — fair. What's everyone actually been doing?\" [Random or Light Switch]", bundle: 'pro' },
+        { q: "Your story finished and the silence sat there.", a: "\"Anyway. That was a lot of words about a shed. What have you got?\" [Random or Light Switch]", bundle: 'pro' },
+        { q: "You asked a question and got one-word answers from everyone.", a: "\"Bad question. Let me try again — worst journey any of you has had this year?\" [Random or Light Switch]", bundle: 'pro' },
+        { q: "You raised something and realised mid-sentence it was the wrong room.", a: "\"I'm going to leave that one there, actually. How was the weekend?\" [Respectful Exit]", bundle: 'pro' },
+        { q: "You want to move on without making a thing of it.", a: "\"Anyway — you were saying something about the new place?\" [Linking]", bundle: 'pro' },
+        { q: "Somebody politely tried to keep your dead topic alive.", a: "\"You're being kind. Let it go, it's fine. What's new with you?\" [Respectful Exit]", bundle: 'pro' },
+        { q: "Your joke landed flat and the room went quiet.", a: "\"That was for me, clearly. Moving swiftly on — anyone got weekend plans?\" [Random or Light Switch]", bundle: 'pro' },
+        { q: "You realise you have started three subjects that all died.", a: "\"I'm three for three on bad topics. Someone else drive.\" [Random or Light Switch]", bundle: 'pro' },
       ]
     },
   ],

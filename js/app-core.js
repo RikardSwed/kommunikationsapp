@@ -5,7 +5,7 @@
 // (DS.createCardMode / DS.createHandsfreeMode) and are declared in
 // app-modes.js and app-handsfree.js.
 
-const VERSION = 'v1.27.45';
+const VERSION = 'v1.27.46';
 
 // Keep every version label in the UI in sync with VERSION (v1.26.44).
 // The hardcoded strings in index.html are only fallbacks — this runs at
@@ -46,9 +46,7 @@ const PACK_ICONS = {
   apologizing2: 'ti-heart-handshake',
   startingconversations3: 'ti-message',
   endingconversations: 'ti-door',
-  changingtopics: 'ti-arrows-shuffle',
   reactingtounexpectedstatements: 'ti-alert-triangle',
-  exploringatopic: 'ti-search',
   deepquestions: 'ti-question-mark',
   howtointerrupt: 'ti-microphone',
   handleinterruptions: 'ti-shield',
@@ -132,12 +130,14 @@ const PACK_ICONS = {
   firststrategies: 'ti-cards',
   jfisher1: 'ti-shield-bolt',
   jfisher2: 'ti-messages',
-  showunderstanding: 'ti-cards',
   talkingaboutyourself: 'ti-cards',
   startingconversations1: 'ti-cards',
   startingconversations2: 'ti-cards',
   startingconversations4: 'ti-cards',
   responsivehumour: 'ti-cards',
+  showunderstanding: 'ti-cards',
+  exploringatopic: 'ti-cards',
+  changingtopics: 'ti-cards',
 };
 function packIcon(key) {
   const name = PACK_ICONS[key] || 'ti-cards';
@@ -373,9 +373,19 @@ function showToast(msg, duration) {
 }
 window.showToast = showToast;
 
-function showModeScreen(key, label) {
+function showModeScreen(key, label, opts) {
+  // v1.27.46 — the programme route. A pack in an unlocked Part is trainable
+  // inside the programme straight away; it only spreads to the Packs tab,
+  // Topics and search once that Part's own checkpoint is passed. The
+  // programme screen has already made that decision with its own
+  // isSectionUnlocked, so it says so with opts.viaProgram and this guard
+  // steps aside. Every other caller keeps the plain canAccess answer, and
+  // programRoutePending() refuses anyway unless the Part really is open.
+  const viaProgram = !!(opts && opts.viaProgram)
+    && !!(window.accessLevel && window.accessLevel.programRoutePending
+          && window.accessLevel.programRoutePending(key));
   // Block if pack is locked for current access level
-  if (window.accessLevel && !window.accessLevel.canAccess(key)) {
+  if (!viaProgram && window.accessLevel && !window.accessLevel.canAccess(key)) {
     const badge = window.accessLevel.badgeLabel ? window.accessLevel.badgeLabel(key) : null;
     const tier  = badge ? badge.text : 'Pro';
     showToast('This pack requires ' + tier + '. Upgrade to unlock it.');
@@ -437,10 +447,17 @@ function setPackContext(packs, currentKey, kind) {
 // step list is built with the unreachable ones already left out.
 function _nextAccessibleIndex() {
   if (!_packContext) return -1;
+  // v1.27.46 — inside a programme, a pack whose Part is open but whose
+  // checkpoint is unpassed counts as reachable. Without this the arrow walked
+  // a freemium user straight from Part 1 to the Part 2 test, skipping the two
+  // packs the test is about.
+  const inProgram = _packContext.kind === 'program';
+  const reachable = key => !window.accessLevel || accessLevel.canAccess(key)
+    || (inProgram && accessLevel.programRoutePending && accessLevel.programRoutePending(key));
   for (let i = _packContext.index + 1; i < _packContext.steps.length; i++) {
     const s = _packContext.steps[i];
     if (s.type === 'checkpoint') return i;
-    if (!window.accessLevel || accessLevel.canAccess(s.key)) return i;
+    if (reachable(s.key)) return i;
   }
   return -1;
 }

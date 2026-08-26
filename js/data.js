@@ -1226,104 +1226,6 @@ const collections = {
       ]
     },
   ],
-  changingtopics: [
-    {
-      name: "Linking",
-      guideFront: "They've said something — where could you take it next?",
-      guideBack: "One way to make the move — a short, smooth line.",
-      description: "Catch a word or detail from what they just said and use it as a bridge to a new topic. It feels smooth because the switch grows out of their own words. Example: they mention a work trip to Rome — \"Rome! That reminds me, have you travelled much this year?\"\n\nThree kinds of word worth catching:\n1. A place — \"Rome! Have you travelled much this year?\"\n2. A person — \"Your sister's a nurse? My cousin just started training.\"\n3. A feeling or a time — \"You said exhausting — has the whole year been like that?\"\n\nCatch it while it is fresh. A word from two minutes ago works; a word from ten minutes ago sounds like you were waiting for an opening.\n\nMindset: this is the smoothest of the six because the switch grows out of their own words. Done well, nobody notices a change happened at all.",
-      inputs: [
-        { q: "They mention they were up late finishing a report.", a: "\"Late nights — that reminds me, have you managed any proper time off lately?\"", bundle: 'free' },
-        { q: "They say their kid just started playing football.", a: "\"Football — speaking of, did you catch any of the tournament last weekend?\"", bundle: 'free' },
-        { q: "They mention they just moved into a new flat.", a: "\"A new place — that reminds me, have you found any good spots around there yet?\"", bundle: 'free' },
-        { q: "They say they've been trying to eat healthier.", a: "\"Eating better — funny you say that, come across any recipes worth stealing?\"", bundle: 'free' },
-        { q: "They mention their sister is visiting from abroad.", a: "\"Abroad — that reminds me, where's the best place you've ever travelled?\"", bundle: 'free' },
-        { q: "They mention a stressful deadline at work.", a: "\"Deadlines — on that note, what do you actually do to switch off?\"", bundle: 'pro' },
-        { q: "They say they spent the weekend gardening.", a: "\"Gardening — that reminds me, are you growing anything worth bragging about?\"", bundle: 'pro' },
-        { q: "They mention they've been listening to a lot of podcasts.", a: "\"Podcasts — speaking of, has anything been good enough to recommend?\"", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Acknowledge and Redirect",
-      guideFront: "They've said something — where could you take it next?",
-      guideBack: "One way to make the move — a short, smooth line.",
-      description: "Briefly wrap up the current topic — a quick \"that's interesting, thanks\" — and then open a new one. The little acknowledgement stops the switch from feeling abrupt. Example: \"That's a great point, thanks for explaining. By the way, did you hear about the office move?\"\n\nThree ways to wrap before you move:\n1. Thank them for it — \"That's a great point, thanks for explaining.\"\n2. Sum it up — \"So it's basically a waiting game. Makes sense.\"\n3. Mark the end plainly — \"Right, well, fingers crossed for you.\"\n\nThe acknowledgement should be one short sentence. A long wrap-up sounds like you are building a case for leaving the topic.\n\nMindset: the little nod is what stops the switch feeling abrupt. Without it the new topic reads as \"I wasn't listening.\"",
-      inputs: [
-        { q: "You've heard enough about a colleague's car trouble.", a: "\"Sounds like a nightmare — glad it's sorted. By the way, are you around for the team lunch Friday?\"", bundle: 'free' },
-        { q: "A friend has finished explaining their new phone in detail.", a: "\"Nice, sounds like a solid upgrade. Anyway — how's the new job treating you?\"", bundle: 'free' },
-        { q: "Someone's wrapped up a long story about their commute.", a: "\"That does sound rough, honestly. On another note, got any plans this weekend?\"", bundle: 'free' },
-        { q: "A relative has covered the weather pretty thoroughly.", a: "\"Classic autumn. By the way, how's your mum doing these days?\"", bundle: 'free' },
-        { q: "Someone finishes venting about a slow website.", a: "\"Yeah, that'd drive me mad too. Anyway — what are you working on at the moment?\"", bundle: 'free' },
-        { q: "A meeting has drifted into detail nobody really needs.", a: "\"I think we've got that covered, thanks. Shall we move to the next thing?\"", bundle: 'pro' },
-        { q: "Someone's finished a long story about a food order gone wrong.", a: "\"Sounds like a proper saga. Anyway — how was the rest of the trip?\"", bundle: 'pro' },
-        { q: "A friend wraps up talking about their fantasy football league.", a: "\"Ha, sounds like you're winning at least. By the way, still on for Saturday?\"", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Finding Common Ground",
-      guideFront: "They've said something — where could you take it next?",
-      guideBack: "One way to make the move — a short, smooth line.",
-      description: "Use a shared experience as the stepping stone — \"that's like when I…\" — so your relating to them opens the new direction. Example: they mention hiking — \"That's like the time I got completely lost on a trail. Do you get out much?\"\n\nThree ways to relate before you turn:\n1. A matching story — \"That's like the time I got completely lost on a trail.\"\n2. A matching feeling — \"I know that exact dread. I had it before my driving test.\"\n3. A matching habit — \"Same, I do that every Sunday without fail.\"\n\nThe relating has to be genuine. A manufactured \"oh, me too\" is transparent, and it makes the topic change look like an escape.\n\nMindset: this one warms the conversation before it turns it. You are not just switching subject, you are telling them you recognised something.",
-      inputs: [
-        { q: "They mention they've just started learning to cook.", a: "\"Same here last year — total disasters at first. What have you tried making?\"", bundle: 'free' },
-        { q: "They say they find networking events awkward.", a: "\"God, me too. What's the most painfully awkward one you've been to?\"", bundle: 'free' },
-        { q: "They mention they've been getting into running.", a: "\"I did the exact same over summer. Have you got a route you actually like?\"", bundle: 'free' },
-        { q: "They say they never have time to read anymore.", a: "\"Same problem here. What's the last thing you actually finished?\"", bundle: 'free' },
-        { q: "They mention they're redecorating.", a: "\"I just did mine — pure chaos. Which room are you brave enough to start with?\"", bundle: 'free' },
-        { q: "They say they're trying to travel more this year.", a: "\"That's my whole plan too. Where's top of your list?\"", bundle: 'pro' },
-        { q: "They mention their team went fully remote.", a: "\"Ours did as well — mixed feelings, honestly. How's it working for you?\"", bundle: 'pro' },
-        { q: "They say they've picked up photography.", a: "\"Snap — I got a camera last year. What do you like shooting?\"", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Random or Light Switch",
-      guideFront: "They've said something — where could you take it next?",
-      guideBack: "One way to make the move — a short, smooth line.",
-      description: "Change the subject openly with a bit of humour or spontaneity — no bridge needed. You flag the switch and keep it playful, so it feels light instead of jarring. Example: \"Okay, before we solve world peace — seen anything good on TV lately?\"\n\nThree ways to flag the switch:\n1. Name it and joke about it — \"Okay, before we solve world peace — seen anything good lately?\"\n2. Admit the swerve — \"Completely unrelated, but I have to ask —\"\n3. Blame yourself — \"My brain has jumped somewhere else entirely. Sorry. Have you—\"\n\nFlagging is what makes it work. An unflagged jump is jarring; a flagged one is just honest, and usually gets a laugh.\n\nMindset: you do not always need a bridge. Sometimes announcing the switch is warmer than pretending there was a smooth link.",
-      inputs: [
-        { q: "The conversation has gone quite deep and heavy.", a: "\"Okay, before we get too philosophical — seen any good films lately?\"", bundle: 'free' },
-        { q: "Small talk has stalled and gone quiet.", a: "\"Right, changing the subject completely — best thing you've eaten this week?\"", bundle: 'free' },
-        { q: "You've both been complaining about work for a while.", a: "\"Let's stage a jailbreak from work talk — got any weekend plans?\"", bundle: 'free' },
-        { q: "The topic has fizzled out a bit awkwardly.", a: "\"New topic, no reason — if you had to eat one meal forever, what is it?\"", bundle: 'free' },
-        { q: "Things have got a little too serious for the setting.", a: "\"Okay, lighter note before we spiral — got any good gossip?\"", bundle: 'free' },
-        { q: "A friendly debate is getting a little too intense.", a: "\"Let's call that a draw before it ends a friendship — what are you watching these days?\"", bundle: 'pro' },
-        { q: "The energy has dropped flat at a dinner.", a: "\"Completely random, but — worst haircut you've ever had, go.\"", bundle: 'pro' },
-        { q: "You want to reset a lifeless group chat.", a: "\"Throwing this out there — most controversial snack opinion, anyone?\"", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Steering Away from Sensitive Topics",
-      guideFront: "They've said something — where could you take it next?",
-      guideBack: "One way to make the move — a short, smooth line.",
-      description: "When a subject gets uncomfortable, acknowledge it briefly and gently guide toward safer ground — you don't ignore it, but you don't dig in either. Example: \"That's a tough one, I hear you. On a lighter note, how's the family?\"\n\nThree levels of steer, depending on how raw it is:\n1. Light touch — \"That's a tough one. Anyway, how's the family?\"\n2. Named and closed — \"I don't think we'll fix that one tonight. Tell me about the new job.\"\n3. Offered as an out — \"Happy to talk about it another time. For now — how was the trip?\"\n\nAcknowledge before you steer, always. Skipping straight to the new topic reads as though you did not hear them at all.\n\nMindset: caring about someone and moving the conversation somewhere kinder are the same act here. Protecting them is not evasion.",
-      inputs: [
-        { q: "The chat drifts to someone's recent breakup and they look uncomfortable.", a: "\"That sounds really hard — no need to get into it. How have you been otherwise?\"", bundle: 'free' },
-        { q: "A group starts arguing about politics and it's getting tense.", a: "\"I think we all feel strongly on that one. Anyway — anyone been anywhere nice lately?\"", bundle: 'free' },
-        { q: "Someone brings up money in a way that feels awkward.", a: "\"Money's always a weird one to talk about. Changing tack — how's the new place?\"", bundle: 'free' },
-        { q: "A relative starts on a divisive subject at dinner.", a: "\"Let's not let that ruin the food. On a nicer note, what's everyone been up to?\"", bundle: 'free' },
-        { q: "Someone mentions a painful health issue and trails off.", a: "\"I'm really sorry you're dealing with that. Only if you want — what's kept you busy otherwise?\"", bundle: 'free' },
-        { q: "A colleague hints at office drama you don't want to be in.", a: "\"Probably best I stay out of that one. How's your side of things going, work-wise?\"", bundle: 'pro' },
-        { q: "The conversation edges toward a recent bereavement.", a: "\"I can't imagine. We really don't have to talk about it — how are you holding up in general?\"", bundle: 'pro' },
-        { q: "Someone starts oversharing and clearly regrets it.", a: "\"No judgement here at all. Shall we talk about literally anything lighter?\"", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Respectful Exit",
-      guideFront: "They've said something — where could you take it next?",
-      guideBack: "One way to make the move — a short, smooth line.",
-      description: "When a topic's been covered or keeps repeating, close it politely and open something new. You signal you valued it, then move on cleanly. Example: \"I think we've done that one justice! So — what else is going on with you?\"\n\nThree ways to close it warmly:\n1. Give it credit — \"I think we've done that one justice!\"\n2. Name the loop kindly — \"We could go round on this all night, couldn't we?\"\n3. Draw a friendly line — \"Let's park that one. What else is going on with you?\"\n\nWarmth is what makes it respectful. The same words said flatly are a dismissal; said with a smile they are a shared decision.\n\nMindset: letting a topic end is part of a good conversation. Your job is flow, not endurance.",
-      inputs: [
-        { q: "You've been on the same holiday story for a good while now.", a: "\"Sounds like an amazing trip — I think we've covered it well! So what else is new with you?\"", bundle: 'free' },
-        { q: "A friend keeps circling back to the same complaint.", a: "\"I really do get why it's frustrating. Let's give it a rest though — how's everything else?\"", bundle: 'free' },
-        { q: "A work topic has been discussed from every angle.", a: "\"I think we've squeezed that one dry. Shall we move on to the next bit?\"", bundle: 'free' },
-        { q: "The weather has been discussed to death.", a: "\"Well, we've solved the weather! Anyway — how's your week actually been?\"", bundle: 'free' },
-        { q: "A story has reached its natural end but lingered.", a: "\"Great story, honestly. So — what have you got coming up?\"", bundle: 'free' },
-        { q: "Someone's told the same anecdote twice now.", a: "\"Ha, I love that one — so, tell me something I haven't heard yet.\"", bundle: 'pro' },
-        { q: "A debate has clearly run its full course.", a: "\"I think we've both made our case well. On to something new — any plans this week?\"", bundle: 'pro' },
-        { q: "The catch-up has covered all the obvious ground.", a: "\"Right, we've done the headlines! What's the stuff that didn't make the news?\"", bundle: 'pro' },
-      ]
-    },
-  ],
   reactingtounexpectedstatements: [
     {
       name: "Say You Need a Second",
@@ -1403,88 +1305,6 @@ const collections = {
         { q: "You are using the delay to avoid it entirely.", a: "\"I've been putting this off. Let's do it now — I still don't have a tidy answer.\"", bundle: 'pro' },
         { q: "They press for an answer immediately.", a: "\"If you need one now it'll be a poor one. Thursday I'd have a real one.\"", bundle: 'pro' },
         { q: "You want to close the moment warmly while deferring.", a: "\"I'll think about it properly. Thanks for telling me — that bit I'm sure about.\"", bundle: 'pro' },
-      ]
-    },
-  ],
-  exploringatopic: [
-    {
-      name: "Ask an Open Question",
-      guideFront: "Keep the topic alive with this move.",
-      guideBack: "One thing you could say.",
-      description: "Keep the topic going by asking something that cannot be answered with yes or no — a what, how or why about the subject in hand. It works even when you know nothing about it. Example: the group is talking about gardening — \"What do you actually grow out there?\"\n\nQuestions that open a topic up nearly always start with one of three words, and each one pulls a different kind of answer:\n1. What — pulls facts and detail. \"What do you actually grow out there?\"\n2. How — pulls process and story. \"How long did it take before it started working?\"\n3. Why — pulls reasons and feeling. \"Why did you pick that one over the others?\"\n\nUse what when you know nothing and need material, how when you want them to tell it properly, and why when the topic is ready to go a bit deeper.\n\nMindset: not knowing the subject is not a reason to stay quiet. A question is a full contribution, and the people who do know are usually glad to be asked.",
-      inputs: [
-        { q: "The group is talking about gardening and you know nothing about it.", a: "\"What do you actually grow out there?\"", bundle: 'free' },
-        { q: "Someone says: \"I have been getting into baking sourdough.\"", a: "\"How long did it take before it started working?\"", bundle: 'free' },
-        { q: "The table is discussing a film everyone but you has seen.", a: "\"What was it about it that stuck with you?\"", bundle: 'free' },
-        { q: "A colleague mentions they have taken up climbing.", a: "\"What got you into that in the first place?\"", bundle: 'free' },
-        { q: "The conversation is about travel and it starts to slow.", a: "\"Where is the one place you would go back to?\"", bundle: 'free' },
-        { q: "The group is deep in a conversation about pets.", a: "\"What is the strangest thing yours has ever done?\"", bundle: 'pro' },
-        { q: "Someone says: \"We finally got the kitchen finished.\"", a: "\"What would you do differently if you started again?\"", bundle: 'pro' },
-        { q: "The topic is music and it is drifting to a stop.", a: "\"What was the first gig any of you went to?\"", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Share a Related Experience",
-      guideFront: "Keep the topic alive with this move.",
-      guideBack: "One thing you could say.",
-      description: "Add your own piece to the topic — a story, a habit or an opinion of yours that sits inside the same subject. It does not have to be impressive, only related. Example: they are talking about balcony gardening — \"I tried herbs on the windowsill and the basil lasted about a week.\"\n\nThree kinds of thing you can put in:\n1. A story — something that happened once. \"We did that coast a few years back.\"\n2. A habit — something you do. \"I get through a whole audiobook a week.\"\n3. An opinion — what you make of it. \"There's a tiny Thai place I keep dragging people to.\"\n\nThe only test is whether it sits inside the same subject — close enough that nobody has to ask how you got there.\n\nMindset: it does not have to be impressive. Small ordinary experiences are what most good conversations are made of.",
-      inputs: [
-        { q: "Someone talks about growing vegetables on their balcony.", a: "\"I tried herbs on the windowsill — the basil lasted about a week.\"", bundle: 'free' },
-        { q: "The group is talking about long commutes.", a: "\"Mine is forty minutes each way. I get through a whole audiobook a week.\"", bundle: 'free' },
-        { q: "A friend describes a holiday on the Italian coast.", a: "\"We did that coast a few years back — we ate our way along it.\"", bundle: 'free' },
-        { q: "The conversation turns to learning instruments.", a: "\"I had four years of piano and can still play exactly one song.\"", bundle: 'free' },
-        { q: "Someone mentions they have started running in the mornings.", a: "\"I did that one winter. The first ten minutes were always the worst part.\"", bundle: 'free' },
-        { q: "The table is comparing terrible first jobs.", a: "\"Mine was a petrol station night shift. I learned to sleep standing up.\"", bundle: 'pro' },
-        { q: "Someone talks about their dog's training class.", a: "\"Ours failed twice. He passed on the third go, mostly by luck.\"", bundle: 'pro' },
-        { q: "The group is comparing favourite restaurants.", a: "\"There is a tiny Thai place near me I keep dragging people to.\"", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Build on Their Point",
-      guideFront: "Keep the topic alive with this move.",
-      guideBack: "One thing you could say.",
-      description: "Take what someone just said and go one step further into it instead of starting something new. Pick up their word, add to it, or ask about the next layer down. Example: they mention growing vegetables — \"You said most of them — what is the one thing that never works?\"\n\nThree ways to go one layer down:\n1. Pick up one of their words — \"You said most — what never works?\"\n2. Offer the next distinction — \"Was it the sound or the crowd?\"\n3. Add to it and hand it back — \"That venue ruins everything. Which night were you there?\"\n\nThe word worth picking up is usually the vaguest one in their sentence — most, strange, awful, fine. That is where the detail is hiding.\n\nMindset: this is the move that proves you were listening. It costs nothing, and it is the one people notice.",
-      inputs: [
-        { q: "Someone says: \"I grow most of our vegetables in the summer.\"", a: "\"You said most — what is the one thing that never works?\"", bundle: 'free' },
-        { q: "A friend says: \"The concert was good, but the venue was awful.\"", a: "\"That venue ruins everything. Was it the sound or the crowd?\"", bundle: 'free' },
-        { q: "Someone says: \"I have started cooking more Thai food at home.\"", a: "\"That is interesting — is the shopping or the cooking the hard part?\"", bundle: 'free' },
-        { q: "A colleague says: \"The new office layout is strange.\"", a: "\"It really is. Is it the noise, or that nobody knows where to sit?\"", bundle: 'free' },
-        { q: "Someone says: \"We have been walking a lot more since we got the dog.\"", a: "\"That reminds me — do you have a route you always end up taking?\"", bundle: 'free' },
-        { q: "Someone says: \"I only really listen to music when I am driving.\"", a: "\"So the car is the concert hall. What is on in there at the moment?\"", bundle: 'pro' },
-        { q: "A friend says: \"The flight was fine, it was the airport that was chaos.\"", a: "\"Airports do that. Was it the queues or the gate changes?\"", bundle: 'pro' },
-        { q: "Someone says: \"I have stopped watching series and started reading again.\"", a: "\"Interesting swap — has it changed how your evenings go?\"", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Expand to a Related Subtopic",
-      guideFront: "Keep the topic alive with this move.",
-      guideBack: "One thing you could say.",
-      description: "When the current thread is running out, step sideways into something close by rather than away from the topic. Gardening moves to indoor plants; sport moves from playing to watching. Example: the balcony garden talk dries up — \"Does anyone keep plants indoors? Mine never survive.\"\n\nThree directions the sideways step can take:\n1. Same subject, new setting — gardening outdoors becomes plants indoors.\n2. Doing it becomes watching it — playing football becomes following it.\n3. The thing becomes the things around it — dogs becomes vets, cooking becomes eating out.\n\nHow far is too far: if people have to stop and ask what you are talking about, that was not an expansion, it was a new topic.\n\nMindset: a fading topic usually has more in it than it looks. Reach for the next room before you leave the house.",
-      inputs: [
-        { q: "The talk about balcony gardening is running out of steam.", a: "\"Does anyone keep plants indoors? Mine never survive the winter.\"", bundle: 'free' },
-        { q: "The conversation about playing football has covered everything.", a: "\"Do you watch as much as you play, or is that a different thing?\"", bundle: 'free' },
-        { q: "The group has finished discussing the band's new album.", a: "\"Are they any good live? I have never seen them.\"", bundle: 'free' },
-        { q: "The topic of cooking dinner is winding down.", a: "\"What about eating out — is there anywhere good round here?\"", bundle: 'free' },
-        { q: "The talk about a holiday abroad is running dry.", a: "\"Does anyone actually enjoy the travelling part, or just the arriving?\"", bundle: 'free' },
-        { q: "The conversation about dogs has covered every breed.", a: "\"What about vets round here — has anyone found a good one?\"", bundle: 'pro' },
-        { q: "The group has exhausted the subject of running.", a: "\"Do any of you do anything else, like swimming or cycling?\"", bundle: 'pro' },
-        { q: "The talk about learning guitar is fading.", a: "\"Has anyone ever played in front of people? That is the part I could not do.\"", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Share, Then Invite",
-      guideFront: "Keep the topic alive with this move.",
-      guideBack: "One thing you could say.",
-      description: "Say your own bit and then hand the ball straight on, so you contribute without holding the floor. One part you, one part them. Example: \"I love cooking Italian food. What is your favourite thing to cook?\"\n\nThree ways to hand it on:\n1. To the group — \"That's just me though. What do you two think?\"\n2. To one person by name — \"Anna, you actually cook. What would you make?\"\n3. Back to the speaker — \"Enough about mine. How bad is yours?\"\n\nUse a name when someone has been quiet. An open invitation is easy to let somebody else answer; a named one is not.\n\nMindset: holding the floor is not winning. The conversation people remember well is the one that got shared out.",
-      inputs: [
-        { q: "You have just given your opinion and the group goes quiet.", a: "\"That is just me, though. What do you two think?\"", bundle: 'free' },
-        { q: "The conversation is about food and you have been talking a while.", a: "\"I could talk about Italian food all day. What is your go-to?\"", bundle: 'free' },
-        { q: "You notice one person has not said anything about the topic.", a: "\"I am the wrong person to ask about films. Anna, you actually watch them?\"", bundle: 'free' },
-        { q: "You have just told a story about your holiday.", a: "\"That is ours. Has anyone been anywhere better?\"", bundle: 'free' },
-        { q: "You have been explaining your training routine at length.", a: "\"Anyway, that is my version. What does yours look like?\"", bundle: 'free' },
-        { q: "You realise you have answered the last three questions yourself.", a: "\"I keep taking over. What is your take on it?\"", bundle: 'pro' },
-        { q: "You share your opinion on a band and it lands flat.", a: "\"Maybe that is just me. Who do you actually like?\"", bundle: 'pro' },
-        { q: "You have just described your commute in detail.", a: "\"Enough about mine — how bad is yours?\"", bundle: 'pro' },
       ]
     },
   ],
@@ -8118,56 +7938,6 @@ const collections = {
       ]
     },
   ],
-  showunderstanding: [
-    {
-      name: "Ask Follow-up Questions",
-      guideFront: "Use this strategy when...",
-      guideBack: "One way it could sound",
-      description: "You show understanding by asking for more — a question that could only come from someone who was listening to that particular sentence.\n\nIt works because a follow-up question is proof of attention in a way that agreement never is. \"That sounds hard\" can be said by someone who heard nothing. \"What did your manager actually say?\" cannot.\n\nThis is also the move that keeps the floor with them. They are still telling it, and a question is permission to carry on.\n\nTypical phrases: \"Can you tell me more about that?\", \"What were you feeling at that moment?\", \"What happened after that?\"\n\nThree kinds of follow-up, and they do different jobs:\n\n1. More of the same — widens the picture. \"What else went wrong with it?\"\n\n2. The moment — goes inward, to what it was like. \"What was going through your head right then?\"\n\n3. What came next — moves the story on. \"So what happened after you sent it?\"\n\nAim it at the specific thing, not the topic. \"Tell me about school\" is a subject change; \"what did the teacher actually say?\" is a follow-up.\n\nMindset: this is the move for when the story is not finished. Asking keeps them going, which is usually what somebody mid-story actually wants.",
-      inputs: [
-        { q: "They say: \"That project was honestly a nightmare from start to finish.\"", a: "\"What was the worst part of it?\"", bundle: 'free' },
-        { q: "They say: \"I finally got the certificate last week.\"", a: "\"How long had you been working towards that?\"", bundle: 'free' },
-        { q: "They say: \"I was so frustrated I nearly walked out.\"", a: "\"What was going through your head right at that point?\"", bundle: 'free' },
-        { q: "They say: \"Then the whole group just stopped replying.\"", a: "\"What did you do when you realised?\"", bundle: 'free' },
-        { q: "They say: \"My manager pulled me aside afterwards.\"", a: "\"What did she say?\"", bundle: 'free' },
-        { q: "They say: \"I've been thinking about changing course, actually.\"", a: "\"What's brought that on?\"", bundle: 'pro' },
-        { q: "They say: \"It's been a strange few weeks.\"", a: "\"Strange how? Good strange or hard strange?\"", bundle: 'pro' },
-        { q: "They say: \"I didn't tell anyone at the time.\"", a: "\"What stopped you?\"", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Loop Back or Rephrase",
-      guideFront: "Use this strategy when...",
-      guideBack: "One way it could sound",
-      description: "You say their point back in your own words, so they can hear that it arrived intact — or correct you if it did not.\n\nIt works because almost nothing else in a conversation lets somebody find out whether they have been understood. They can guess from your face. A loop tells them.\n\nIt sounds like it adds nothing, which is why it is the most underrated move here. What it actually does is finish something the other person started and could not finish alone.\n\nTypical phrases: \"So what you're saying is...\", \"I hear that you felt frustrated when that happened.\", \"You mean the situation was hard because...\"\n\nThree kinds of loop:\n\n1. The summary — the shape of the whole thing. \"So the deadline moved and nobody told you.\"\n\n2. The feeling named — the part they did not say out loud. \"That sounds like it was more embarrassing than annoying.\"\n\n3. The check — offered as a question, so they can fix it. \"Have I got that right? It's the not being asked that bothers you.\"\n\nUse your own words, not theirs. Repeating someone's exact sentence back is parroting; rephrasing it proves the idea went in rather than the syllables.\n\nMindset: being slightly wrong is useful here. \"No, not annoyed — disappointed\" is somebody getting closer to their own point, which is exactly what you were offering.",
-      inputs: [
-        { q: "They say: \"That project was honestly a nightmare from start to finish.\"", a: "\"So it wasn't one bad bit — it was the whole thing.\"", bundle: 'free' },
-        { q: "They say: \"I was so frustrated I nearly walked out.\"", a: "\"That's proper frustration, if you were that close to leaving.\"", bundle: 'free' },
-        { q: "They say: \"It's not the work, it's that nobody asked me.\"", a: "\"So it's the being left out of it, more than the job itself.\"", bundle: 'free' },
-        { q: "They say: \"Then the whole group just stopped replying.\"", a: "\"So you were suddenly doing it on your own, with no warning.\"", bundle: 'free' },
-        { q: "They say: \"I didn't want to make a fuss about it.\"", a: "\"So you sat on it rather than say anything.\"", bundle: 'free' },
-        { q: "They say: \"It's fine, honestly. It's just been a lot.\"", a: "\"It sounds less fine and more relentless, from where I'm sitting.\"", bundle: 'pro' },
-        { q: "They give you a long, tangled explanation of a problem.", a: "\"Let me check I've got it — the plan changed twice and you found out last?\"", bundle: 'pro' },
-        { q: "They say: \"I don't know why it bothered me as much as it did.\"", a: "\"Something about it landed harder than the size of it would suggest.\"", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Relate Through Sharing",
-      guideFront: "Use this strategy when...",
-      guideBack: "One way it could sound",
-      description: "You show understanding by offering something of your own — a time you felt the same, thought the same, or wanted the same thing.\n\nIt works because it tells somebody they are not the only person this has happened to, which is a different comfort from being understood and sometimes a bigger one.\n\nIt is also the move with the shortest fuse. Done badly it is the conversational equivalent of taking the microphone, and the difference between the two is mostly length.\n\nTypical phrases: \"I know exactly what you mean, something similar happened to me...\", \"I felt the same way when...\", \"That reminds me of a time when I...\"\n\nThree ways to relate, in rising order of how safe they are:\n\n1. The matching value — safest, because it says nothing about you. \"I'd have wanted to be asked too.\"\n\n2. The matching feeling — names the same experience without a story attached. \"I know that specific kind of frustration.\"\n\n3. The matching experience — warmest and riskiest, because it comes with events. \"I had almost exactly that with a group project.\"\n\nKeep it short and hand it straight back. Two sentences of yours, then a question or a pause. The moment it grows a middle, you have taken over.\n\nMindset: the point is connection, not comparison. \"The same thing happened to me but worse\" is not relating, it is competing, and everyone can hear the difference.",
-      inputs: [
-        { q: "They say: \"That project was honestly a nightmare from start to finish.\"", a: "\"I had almost exactly that last year. It's a special kind of awful.\"", bundle: 'free' },
-        { q: "They say: \"I was so frustrated I nearly walked out.\"", a: "\"I know that feeling. I've stood in a corridor counting to ten before now.\"", bundle: 'free' },
-        { q: "They say: \"It's not the work, it's that nobody asked me.\"", a: "\"That would get me too. I'd rather do more and be asked.\"", bundle: 'free' },
-        { q: "They say: \"I finally got the certificate last week.\"", a: "\"That feeling is brilliant. I remember just sitting in the car afterwards.\"", bundle: 'free' },
-        { q: "They say: \"I didn't tell anyone at the time.\"", a: "\"I do that as well. It always seems easier not to mention it.\"", bundle: 'free' },
-        { q: "They say: \"It's been a strange few weeks.\"", a: "\"I had a run like that in the spring. Hard to explain to anyone.\"", bundle: 'pro' },
-        { q: "They say: \"I keep going over what I should have said.\"", a: "\"I do that at three in the morning, reliably.\"", bundle: 'pro' },
-        { q: "They say: \"Everyone else seems to find it easy.\"", a: "\"They really don't. I spent a year assuming the same thing.\"", bundle: 'pro' },
-      ]
-    },
-  ],
   talkingaboutyourself: [
     {
       name: "Give a Detail",
@@ -8562,6 +8332,236 @@ const collections = {
       ]
     },
   ],
+  showunderstanding: [
+    {
+      name: "Ask Follow-up Questions",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
+      description: "You show understanding by asking for more — a question that could only come from someone who was listening to that particular sentence.\n\nIt works because a follow-up question is proof of attention in a way that agreement never is. \"That sounds hard\" can be said by someone who heard nothing. \"What did your manager actually say?\" cannot.\n\nThis is also the move that keeps the floor with them. They are still telling it, and a question is permission to carry on.\n\nTypical phrases: \"Can you tell me more about that?\", \"What were you feeling at that moment?\", \"What happened after that?\"\n\nThree kinds of follow-up, and they do different jobs:\n\n1. More of the same — widens the picture. \"What else went wrong with it?\"\n\n2. The moment — goes inward, to what it was like. \"What was going through your head right then?\"\n\n3. What came next — moves the story on. \"So what happened after you sent it?\"\n\nAim it at the specific thing, not the topic. \"Tell me about school\" is a subject change; \"what did the teacher actually say?\" is a follow-up.\n\nMindset: this is the move for when the story is not finished. Asking keeps them going, which is usually what somebody mid-story actually wants.",
+      inputs: [
+        { q: "They say: \"That project was honestly a nightmare from start to finish.\"", a: "\"What was the worst part of it?\"", bundle: 'free' },
+        { q: "They say: \"I finally got the certificate last week.\"", a: "\"How long had you been working towards that?\"", bundle: 'free' },
+        { q: "They say: \"I was so frustrated I nearly walked out.\"", a: "\"What was going through your head right at that point?\"", bundle: 'free' },
+        { q: "They say: \"Then the whole group just stopped replying.\"", a: "\"What did you do when you realised?\"", bundle: 'free' },
+        { q: "They say: \"My manager pulled me aside afterwards.\"", a: "\"What did she say?\"", bundle: 'free' },
+        { q: "They say: \"I've been thinking about changing course, actually.\"", a: "\"What's brought that on?\"", bundle: 'pro' },
+        { q: "They say: \"It's been a strange few weeks.\"", a: "\"Strange how? Good strange or hard strange?\"", bundle: 'pro' },
+        { q: "They say: \"I didn't tell anyone at the time.\"", a: "\"What stopped you?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Loop Back or Rephrase",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
+      description: "You say their point back in your own words, so they can hear that it arrived intact — or correct you if it did not.\n\nIt works because almost nothing else in a conversation lets somebody find out whether they have been understood. They can guess from your face. A loop tells them.\n\nIt sounds like it adds nothing, which is why it is the most underrated move here. What it actually does is finish something the other person started and could not finish alone.\n\nTypical phrases: \"So what you're saying is...\", \"I hear that you felt frustrated when that happened.\", \"You mean the situation was hard because...\"\n\nThree kinds of loop:\n\n1. The summary — the shape of the whole thing. \"So the deadline moved and nobody told you.\"\n\n2. The feeling named — the part they did not say out loud. \"That sounds like it was more embarrassing than annoying.\"\n\n3. The check — offered as a question, so they can fix it. \"Have I got that right? It's the not being asked that bothers you.\"\n\nUse your own words, not theirs. Repeating someone's exact sentence back is parroting; rephrasing it proves the idea went in rather than the syllables.\n\nMindset: being slightly wrong is useful here. \"No, not annoyed — disappointed\" is somebody getting closer to their own point, which is exactly what you were offering.",
+      inputs: [
+        { q: "They say: \"That project was honestly a nightmare from start to finish.\"", a: "\"So it wasn't one bad bit — it was the whole thing.\"", bundle: 'free' },
+        { q: "They say: \"I was so frustrated I nearly walked out.\"", a: "\"That's proper frustration, if you were that close to leaving.\"", bundle: 'free' },
+        { q: "They say: \"It's not the work, it's that nobody asked me.\"", a: "\"So it's the being left out of it, more than the job itself.\"", bundle: 'free' },
+        { q: "They say: \"Then the whole group just stopped replying.\"", a: "\"So you were suddenly doing it on your own, with no warning.\"", bundle: 'free' },
+        { q: "They say: \"I didn't want to make a fuss about it.\"", a: "\"So you sat on it rather than say anything.\"", bundle: 'free' },
+        { q: "They say: \"It's fine, honestly. It's just been a lot.\"", a: "\"It sounds less fine and more relentless, from where I'm sitting.\"", bundle: 'pro' },
+        { q: "They give you a long, tangled explanation of a problem.", a: "\"Let me check I've got it — the plan changed twice and you found out last?\"", bundle: 'pro' },
+        { q: "They say: \"I don't know why it bothered me as much as it did.\"", a: "\"Something about it landed harder than the size of it would suggest.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Relate Through Sharing",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
+      description: "You show understanding by offering something of your own — a time you felt the same, thought the same, or wanted the same thing.\n\nIt works because it tells somebody they are not the only person this has happened to, which is a different comfort from being understood and sometimes a bigger one.\n\nIt is also the move with the shortest fuse. Done badly it is the conversational equivalent of taking the microphone, and the difference between the two is mostly length.\n\nTypical phrases: \"I know exactly what you mean, something similar happened to me...\", \"I felt the same way when...\", \"That reminds me of a time when I...\"\n\nThree ways to relate, in rising order of how safe they are:\n\n1. The matching value — safest, because it says nothing about you. \"I'd have wanted to be asked too.\"\n\n2. The matching feeling — names the same experience without a story attached. \"I know that specific kind of frustration.\"\n\n3. The matching experience — warmest and riskiest, because it comes with events. \"I had almost exactly that with a group project.\"\n\nKeep it short and hand it straight back. Two sentences of yours, then a question or a pause. The moment it grows a middle, you have taken over.\n\nMindset: the point is connection, not comparison. \"The same thing happened to me but worse\" is not relating, it is competing, and everyone can hear the difference.",
+      inputs: [
+        { q: "They say: \"That project was honestly a nightmare from start to finish.\"", a: "\"I had almost exactly that last year. It's a special kind of awful.\"", bundle: 'free' },
+        { q: "They say: \"I was so frustrated I nearly walked out.\"", a: "\"I know that feeling. I've stood in a corridor counting to ten before now.\"", bundle: 'free' },
+        { q: "They say: \"It's not the work, it's that nobody asked me.\"", a: "\"That would get me too. I'd rather do more and be asked.\"", bundle: 'free' },
+        { q: "They say: \"I finally got the certificate last week.\"", a: "\"That feeling is brilliant. I remember just sitting in the car afterwards.\"", bundle: 'free' },
+        { q: "They say: \"I didn't tell anyone at the time.\"", a: "\"I do that as well. It always seems easier not to mention it.\"", bundle: 'free' },
+        { q: "They say: \"It's been a strange few weeks.\"", a: "\"I had a run like that in the spring. Hard to explain to anyone.\"", bundle: 'pro' },
+        { q: "They say: \"I keep going over what I should have said.\"", a: "\"I do that at three in the morning, reliably.\"", bundle: 'pro' },
+        { q: "They say: \"Everyone else seems to find it easy.\"", a: "\"They really don't. I spent a year assuming the same thing.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  exploringatopic: [
+    {
+      name: "Ask an Open Question",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
+      description: "Keep the topic going by asking something that cannot be answered with yes or no — a what, how or why about the subject in hand. It works even when you know nothing about it. Example: the group is talking about gardening — \"What do you actually grow out there?\"\n\nQuestions that open a topic up nearly always start with one of three words, and each one pulls a different kind of answer:\n\n1. What — pulls facts and detail. \"What do you actually grow out there?\"\n\n2. How — pulls process and story. \"How long did it take before it started working?\"\n\n3. Why — pulls reasons and feeling. \"Why did you pick that one over the others?\"\n\nUse what when you know nothing and need material, how when you want them to tell it properly, and why when the topic is ready to go a bit deeper.\n\nMindset: not knowing the subject is not a reason to stay quiet. A question is a full contribution, and the people who do know are usually glad to be asked.",
+      inputs: [
+        { q: "The group is talking about gardening and you know nothing about it.", a: "\"What do you actually grow out there?\"", bundle: 'free' },
+        { q: "Someone says: \"I have been getting into baking sourdough.\"", a: "\"How long did it take before it started working?\"", bundle: 'free' },
+        { q: "The table is discussing a film everyone but you has seen.", a: "\"What was it about it that stuck with you?\"", bundle: 'free' },
+        { q: "A colleague mentions they have taken up climbing.", a: "\"What got you into that in the first place?\"", bundle: 'free' },
+        { q: "The conversation is about travel and it starts to slow.", a: "\"Where is the one place you would go back to?\"", bundle: 'free' },
+        { q: "The group is deep in a conversation about pets.", a: "\"What is the strangest thing yours has ever done?\"", bundle: 'pro' },
+        { q: "Someone says: \"We finally got the kitchen finished.\"", a: "\"What would you do differently if you started again?\"", bundle: 'pro' },
+        { q: "The topic is music and it is drifting to a stop.", a: "\"What was the first gig any of you went to?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Share a Related Experience",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
+      description: "Add your own piece to the topic — a story, a habit or an opinion of yours that sits inside the same subject. It does not have to be impressive, only related. Example: they are talking about balcony gardening — \"I tried herbs on the windowsill and the basil lasted about a week.\"\n\nThree kinds of thing you can put in:\n\n1. A story — something that happened once. \"We did that coast a few years back.\"\n\n2. A habit — something you do. \"I get through a whole audiobook a week.\"\n\n3. An opinion — what you make of it. \"There's a tiny Thai place I keep dragging people to.\"\n\nThe only test is whether it sits inside the same subject — close enough that nobody has to ask how you got there.\n\nMindset: it does not have to be impressive. Small ordinary experiences are what most good conversations are made of.",
+      inputs: [
+        { q: "Someone talks about growing vegetables on their balcony.", a: "\"I tried herbs on the windowsill — the basil lasted about a week.\"", bundle: 'free' },
+        { q: "The group is talking about long commutes.", a: "\"Mine is forty minutes each way. I get through a whole audiobook a week.\"", bundle: 'free' },
+        { q: "A friend describes a holiday on the Italian coast.", a: "\"We did that coast a few years back — we ate our way along it.\"", bundle: 'free' },
+        { q: "The conversation turns to learning instruments.", a: "\"I had four years of piano and can still play exactly one song.\"", bundle: 'free' },
+        { q: "Someone mentions they have started running in the mornings.", a: "\"I did that one winter. The first ten minutes were always the worst part.\"", bundle: 'free' },
+        { q: "The table is comparing terrible first jobs.", a: "\"Mine was a petrol station night shift. I learned to sleep standing up.\"", bundle: 'pro' },
+        { q: "Someone talks about their dog's training class.", a: "\"Ours failed twice. He passed on the third go, mostly by luck.\"", bundle: 'pro' },
+        { q: "The group is comparing favourite restaurants.", a: "\"There is a tiny Thai place near me I keep dragging people to.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Build on Their Point",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
+      description: "Take what someone just said and go one step further into it instead of starting something new. Pick up their word, add to it, or ask about the next layer down. Example: they mention growing vegetables — \"You said most of them — what is the one thing that never works?\"\n\nThree ways to go one layer down:\n\n1. Pick up one of their words — \"You said most — what never works?\"\n\n2. Offer the next distinction — \"Was it the sound or the crowd?\"\n\n3. Add to it and hand it back — \"That venue ruins everything. Which night were you there?\"\n\nThe word worth picking up is usually the vaguest one in their sentence — most, strange, awful, fine. That is where the detail is hiding.\n\nMindset: this is the move that proves you were listening. It costs nothing, and it is the one people notice.",
+      inputs: [
+        { q: "Someone says: \"I grow most of our vegetables in the summer.\"", a: "\"You said most — what is the one thing that never works?\"", bundle: 'free' },
+        { q: "A friend says: \"The concert was good, but the venue was awful.\"", a: "\"That venue ruins everything. Was it the sound or the crowd?\"", bundle: 'free' },
+        { q: "Someone says: \"I have started cooking more Thai food at home.\"", a: "\"That is interesting — is the shopping or the cooking the hard part?\"", bundle: 'free' },
+        { q: "A colleague says: \"The new office layout is strange.\"", a: "\"It really is. Is it the noise, or that nobody knows where to sit?\"", bundle: 'free' },
+        { q: "Someone says: \"We have been walking a lot more since we got the dog.\"", a: "\"That reminds me — do you have a route you always end up taking?\"", bundle: 'free' },
+        { q: "Someone says: \"I only really listen to music when I am driving.\"", a: "\"So the car is the concert hall. What is on in there at the moment?\"", bundle: 'pro' },
+        { q: "A friend says: \"The flight was fine, it was the airport that was chaos.\"", a: "\"Airports do that. Was it the queues or the gate changes?\"", bundle: 'pro' },
+        { q: "Someone says: \"I have stopped watching series and started reading again.\"", a: "\"Interesting swap — has it changed how your evenings go?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Expand to a Related Subtopic",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
+      description: "When the current thread is running out, step sideways into something close by rather than away from the topic. Gardening moves to indoor plants; sport moves from playing to watching. Example: the balcony garden talk dries up — \"Does anyone keep plants indoors? Mine never survive.\"\n\nThree directions the sideways step can take:\n\n1. Same subject, new setting — gardening outdoors becomes plants indoors.\n\n2. Doing it becomes watching it — playing football becomes following it.\n\n3. The thing becomes the things around it — dogs becomes vets, cooking becomes eating out.\n\nHow far is too far: if people have to stop and ask what you are talking about, that was not an expansion, it was a new topic.\n\nMindset: a fading topic usually has more in it than it looks. Reach for the next room before you leave the house.",
+      inputs: [
+        { q: "The talk about balcony gardening is running out of steam.", a: "\"Does anyone keep plants indoors? Mine never survive the winter.\"", bundle: 'free' },
+        { q: "The conversation about playing football has covered everything.", a: "\"Do you watch as much as you play, or is that a different thing?\"", bundle: 'free' },
+        { q: "The group has finished discussing the band's new album.", a: "\"Are they any good live? I have never seen them.\"", bundle: 'free' },
+        { q: "The topic of cooking dinner is winding down.", a: "\"What about eating out — is there anywhere good round here?\"", bundle: 'free' },
+        { q: "The talk about a holiday abroad is running dry.", a: "\"Does anyone actually enjoy the travelling part, or just the arriving?\"", bundle: 'free' },
+        { q: "The conversation about dogs has covered every breed.", a: "\"What about vets round here — has anyone found a good one?\"", bundle: 'pro' },
+        { q: "The group has exhausted the subject of running.", a: "\"Do any of you do anything else, like swimming or cycling?\"", bundle: 'pro' },
+        { q: "The talk about learning guitar is fading.", a: "\"Has anyone ever played in front of people? That is the part I could not do.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Share, Then Invite",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
+      description: "Say your own bit and then hand the ball straight on, so you contribute without holding the floor. One part you, one part them. Example: \"I love cooking Italian food. What is your favourite thing to cook?\"\n\nThree ways to hand it on:\n\n1. To the group — \"That's just me though. What do you two think?\"\n\n2. To one person by name — \"Anna, you actually cook. What would you make?\"\n\n3. Back to the speaker — \"Enough about mine. How bad is yours?\"\n\nUse a name when someone has been quiet. An open invitation is easy to let somebody else answer, because it belongs to nobody; a named one is not, and that is the whole reason it works.\n\nThe size of the question matters as much as the name. Somebody who has been silent for ten minutes cannot answer \"so what do you think about all this\" — that is a spotlight, and the safe reply is that they agree with everyone. \"Do you cook at all?\" is answerable in three words, and three words is a way back in.\n\nMindset: holding the floor is not winning. The conversation people remember well is the one that got shared out.",
+      inputs: [
+        { q: "You have just given your opinion and the group goes quiet.", a: "\"That is just me, though. What do you two think?\"", bundle: 'free' },
+        { q: "The conversation is about food and you have been talking a while.", a: "\"I could talk about Italian food all day. What is your go-to?\"", bundle: 'free' },
+        { q: "You notice one person has not said anything about the topic.", a: "\"I am the wrong person to ask about films. Anna, you actually watch them?\"", bundle: 'free' },
+        { q: "You have just told a story about your holiday.", a: "\"That is ours. Has anyone been anywhere better?\"", bundle: 'free' },
+        { q: "You have been explaining your training routine at length.", a: "\"Anyway, that is my version. What does yours look like?\"", bundle: 'free' },
+        { q: "You realise you have answered the last three questions yourself.", a: "\"I keep taking over. What is your take on it?\"", bundle: 'pro' },
+        { q: "You share your opinion on a band and it lands flat.", a: "\"Maybe that is just me. Who do you actually like?\"", bundle: 'pro' },
+        { q: "You have just described your commute in detail.", a: "\"Enough about mine — how bad is yours?\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  changingtopics: [
+    {
+      name: "Linking",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
+      description: "Catch a word or detail from what they just said and use it as a bridge to a new topic. It feels smooth because the switch grows out of their own words. Example: they mention a work trip to Rome — \"Rome! That reminds me, have you travelled much this year?\"\n\nThree kinds of word worth catching:\n\n1. A place — \"Rome! Have you travelled much this year?\"\n\n2. A person — \"Your sister's a nurse? My cousin just started training.\"\n\n3. A feeling or a time — \"You said exhausting — has the whole year been like that?\"\n\nCatch it while it is fresh. A word from two minutes ago works; a word from ten minutes ago sounds like you were waiting for an opening.\n\nMindset: this is the smoothest of the six because the switch grows out of their own words. Done well, nobody notices a change happened at all.",
+      inputs: [
+        { q: "They mention they were up late finishing a report.", a: "\"Late nights — that reminds me, have you managed any proper time off lately?\"", bundle: 'free' },
+        { q: "They say their kid just started playing football.", a: "\"Football — speaking of, did you catch any of the tournament last weekend?\"", bundle: 'free' },
+        { q: "They mention they just moved into a new flat.", a: "\"A new place — that reminds me, have you found any good spots around there yet?\"", bundle: 'free' },
+        { q: "They say they've been trying to eat healthier.", a: "\"Eating better — funny you say that, come across any recipes worth stealing?\"", bundle: 'free' },
+        { q: "They mention their sister is visiting from abroad.", a: "\"Abroad — that reminds me, where's the best place you've ever travelled?\"", bundle: 'free' },
+        { q: "They mention a stressful deadline at work.", a: "\"Deadlines — on that note, what do you actually do to switch off?\"", bundle: 'pro' },
+        { q: "They say they spent the weekend gardening.", a: "\"Gardening — that reminds me, are you growing anything worth bragging about?\"", bundle: 'pro' },
+        { q: "They mention they've been listening to a lot of podcasts.", a: "\"Podcasts — speaking of, has anything been good enough to recommend?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Acknowledge and Redirect",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
+      description: "Briefly wrap up the current topic — a quick \"that's interesting, thanks\" — and then open a new one. The little acknowledgement stops the switch from feeling abrupt. Example: \"That's a great point, thanks for explaining. By the way, did you hear about the office move?\"\n\nThree ways to wrap before you move:\n\n1. Thank them for it — \"That's a great point, thanks for explaining.\"\n\n2. Sum it up — \"So it's basically a waiting game. Makes sense.\"\n\n3. Mark the end plainly — \"Right, well, fingers crossed for you.\"\n\nThe acknowledgement should be one short sentence. A long wrap-up sounds like you are building a case for leaving the topic.\n\nMindset: the little nod is what stops the switch feeling abrupt. Without it the new topic reads as \"I wasn't listening.\"",
+      inputs: [
+        { q: "You've heard enough about a colleague's car trouble.", a: "\"Sounds like a nightmare — glad it's sorted. By the way, are you around for the team lunch Friday?\"", bundle: 'free' },
+        { q: "A friend has finished explaining their new phone in detail.", a: "\"Nice, sounds like a solid upgrade. Anyway — how's the new job treating you?\"", bundle: 'free' },
+        { q: "Someone's wrapped up a long story about their commute.", a: "\"That does sound rough, honestly. On another note, got any plans this weekend?\"", bundle: 'free' },
+        { q: "A relative has covered the weather pretty thoroughly.", a: "\"Classic autumn. By the way, how's your mum doing these days?\"", bundle: 'free' },
+        { q: "Someone finishes venting about a slow website.", a: "\"Yeah, that'd drive me mad too. Anyway — what are you working on at the moment?\"", bundle: 'free' },
+        { q: "A meeting has drifted into detail nobody really needs.", a: "\"I think we've got that covered, thanks. Shall we move to the next thing?\"", bundle: 'pro' },
+        { q: "Someone's finished a long story about a food order gone wrong.", a: "\"Sounds like a proper saga. Anyway — how was the rest of the trip?\"", bundle: 'pro' },
+        { q: "A friend wraps up talking about their fantasy football league.", a: "\"Ha, sounds like you're winning at least. By the way, still on for Saturday?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Finding Common Ground",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
+      description: "Use a shared experience as the stepping stone — \"that's like when I…\" — so your relating to them opens the new direction. Example: they mention hiking — \"That's like the time I got completely lost on a trail. Do you get out much?\"\n\nThree ways to relate before you turn:\n\n1. A matching story — \"That's like the time I got completely lost on a trail.\"\n\n2. A matching feeling — \"I know that exact dread. I had it before my driving test.\"\n\n3. A matching habit — \"Same, I do that every Sunday without fail.\"\n\nThe relating has to be genuine. A manufactured \"oh, me too\" is transparent, and it makes the topic change look like an escape.\n\nMindset: this one warms the conversation before it turns it. You are not just switching subject, you are telling them you recognised something.",
+      inputs: [
+        { q: "They mention they've just started learning to cook.", a: "\"Same here last year — total disasters at first. What have you tried making?\"", bundle: 'free' },
+        { q: "They say they find networking events awkward.", a: "\"God, me too. What's the most painfully awkward one you've been to?\"", bundle: 'free' },
+        { q: "They mention they've been getting into running.", a: "\"I did the exact same over summer. Have you got a route you actually like?\"", bundle: 'free' },
+        { q: "They say they never have time to read anymore.", a: "\"Same problem here. What's the last thing you actually finished?\"", bundle: 'free' },
+        { q: "They mention they're redecorating.", a: "\"I just did mine — pure chaos. Which room are you brave enough to start with?\"", bundle: 'free' },
+        { q: "They say they're trying to travel more this year.", a: "\"That's my whole plan too. Where's top of your list?\"", bundle: 'pro' },
+        { q: "They mention their team went fully remote.", a: "\"Ours did as well — mixed feelings, honestly. How's it working for you?\"", bundle: 'pro' },
+        { q: "They say they've picked up photography.", a: "\"Snap — I got a camera last year. What do you like shooting?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Random or Light Switch",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
+      description: "Change the subject openly with a bit of humour or spontaneity — no bridge needed. You flag the switch and keep it playful, so it feels light instead of jarring. Example: \"Okay, before we solve world peace — seen anything good on TV lately?\"\n\nThree ways to flag the switch:\n\n1. Name it and joke about it — \"Okay, before we solve world peace — seen anything good lately?\"\n\n2. Admit the swerve — \"Completely unrelated, but I have to ask —\"\n\n3. Blame yourself — \"My brain has jumped somewhere else entirely. Sorry. Have you—\"\n\nFlagging is what makes it work. An unflagged jump is jarring; a flagged one is just honest, and usually gets a laugh.\n\nMindset: you do not always need a bridge. Sometimes announcing the switch is warmer than pretending there was a smooth link.",
+      inputs: [
+        { q: "The conversation has gone quite deep and heavy.", a: "\"Okay, before we get too philosophical — seen any good films lately?\"", bundle: 'free' },
+        { q: "Small talk has stalled and gone quiet.", a: "\"Right, changing the subject completely — best thing you've eaten this week?\"", bundle: 'free' },
+        { q: "You've both been complaining about work for a while.", a: "\"Let's stage a jailbreak from work talk — got any weekend plans?\"", bundle: 'free' },
+        { q: "The topic has fizzled out a bit awkwardly.", a: "\"New topic, no reason — if you had to eat one meal forever, what is it?\"", bundle: 'free' },
+        { q: "Things have got a little too serious for the setting.", a: "\"Okay, lighter note before we spiral — got any good gossip?\"", bundle: 'free' },
+        { q: "A friendly debate is getting a little too intense.", a: "\"Let's call that a draw before it ends a friendship — what are you watching these days?\"", bundle: 'pro' },
+        { q: "The energy has dropped flat at a dinner.", a: "\"Completely random, but — worst haircut you've ever had, go.\"", bundle: 'pro' },
+        { q: "You want to reset a lifeless group chat.", a: "\"Throwing this out there — most controversial snack opinion, anyone?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Steering Away from Sensitive Topics",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
+      description: "When a subject gets uncomfortable, acknowledge it briefly and gently guide toward safer ground — you don't ignore it, but you don't dig in either. Example: \"That's a tough one, I hear you. On a lighter note, how's the family?\"\n\nThree levels of steer, depending on how raw it is:\n\n1. Light touch — \"That's a tough one. Anyway, how's the family?\"\n\n2. Named and closed — \"I don't think we'll fix that one tonight. Tell me about the new job.\"\n\n3. Offered as an out — \"Happy to talk about it another time. For now — how was the trip?\"\n\nAcknowledge before you steer, always. Skipping straight to the new topic reads as though you did not hear them at all.\n\nMindset: caring about someone and moving the conversation somewhere kinder are the same act here. Protecting them is not evasion.",
+      inputs: [
+        { q: "The chat drifts to someone's recent breakup and they look uncomfortable.", a: "\"That sounds really hard — no need to get into it. How have you been otherwise?\"", bundle: 'free' },
+        { q: "A group starts arguing about politics and it's getting tense.", a: "\"I think we all feel strongly on that one. Anyway — anyone been anywhere nice lately?\"", bundle: 'free' },
+        { q: "Someone brings up money in a way that feels awkward.", a: "\"Money's always a weird one to talk about. Changing tack — how's the new place?\"", bundle: 'free' },
+        { q: "A relative starts on a divisive subject at dinner.", a: "\"Let's not let that ruin the food. On a nicer note, what's everyone been up to?\"", bundle: 'free' },
+        { q: "Someone mentions a painful health issue and trails off.", a: "\"I'm really sorry you're dealing with that. Only if you want — what's kept you busy otherwise?\"", bundle: 'free' },
+        { q: "A colleague hints at office drama you don't want to be in.", a: "\"Probably best I stay out of that one. How's your side of things going, work-wise?\"", bundle: 'pro' },
+        { q: "The conversation edges toward a recent bereavement.", a: "\"I can't imagine. We really don't have to talk about it — how are you holding up in general?\"", bundle: 'pro' },
+        { q: "Someone starts oversharing and clearly regrets it.", a: "\"No judgement here at all. Shall we talk about literally anything lighter?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Respectful Exit",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
+      description: "When a topic's been covered or keeps repeating, close it politely and open something new. You signal you valued it, then move on cleanly. Example: \"I think we've done that one justice! So — what else is going on with you?\"\n\nThree ways to close it warmly:\n\n1. Give it credit — \"I think we've done that one justice!\"\n\n2. Name the loop kindly — \"We could go round on this all night, couldn't we?\"\n\n3. Draw a friendly line — \"Let's park that one. What else is going on with you?\"\n\nWarmth is what makes it respectful. The same words said flatly are a dismissal; said with a smile they are a shared decision, and most people are relieved somebody said it first.\n\nSay it once and clearly. A hint on a topic this sticky gets absorbed and the subject carries straight on, and a second hint starts to feel as though something is wrong between you. Being plain is the kinder version.\n\nMindset: letting a topic end is part of a good conversation. Your job is flow, not endurance.",
+      inputs: [
+        { q: "You've been on the same holiday story for a good while now.", a: "\"Sounds like an amazing trip — I think we've covered it well! So what else is new with you?\"", bundle: 'free' },
+        { q: "A friend keeps circling back to the same complaint.", a: "\"I really do get why it's frustrating. Let's give it a rest though — how's everything else?\"", bundle: 'free' },
+        { q: "A work topic has been discussed from every angle.", a: "\"I think we've squeezed that one dry. Shall we move on to the next bit?\"", bundle: 'free' },
+        { q: "The weather has been discussed to death.", a: "\"Well, we've solved the weather! Anyway — how's your week actually been?\"", bundle: 'free' },
+        { q: "A story has reached its natural end but lingered.", a: "\"Great story, honestly. So — what have you got coming up?\"", bundle: 'free' },
+        { q: "Someone's told the same anecdote twice now.", a: "\"Ha, I love that one — so, tell me something I haven't heard yet.\"", bundle: 'pro' },
+        { q: "A debate has clearly run its full course.", a: "\"I think we've both made our case well. On to something new — any plans this week?\"", bundle: 'pro' },
+        { q: "The catch-up has covered all the obvious ground.", a: "\"Right, we've done the headlines! What's the stuff that didn't make the news?\"", bundle: 'pro' },
+      ]
+    },
+  ],
 };
 
 // ─── COLLECTIONS MODE DATA ───────────────────────────────────────────────────
@@ -8928,66 +8928,6 @@ const collectionsModeData = {
       ]
     },
   ],
-  changingtopics: [
-    {
-      name: "Bridge or Relate",
-      guideFront: "Which move fits this moment?",
-      guideBack: "A possible response, with the strategy in brackets.",
-      description: "A choice between the two moves that grow out of what the other person just said: Linking (catch a word and pivot off it) and Finding Common Ground (share a matching experience of your own). Linking fits when there's a handy detail to jump from; Common Ground fits when you genuinely relate and want to warm things up first. Example: they mention a new flat — Linking pivots (\"a new place — found any good spots nearby?\"), while Common Ground bonds first (\"I just moved too, total chaos — how are you finding it?\").\n\nThe two options:\n1. Linking — there is a handy detail to jump from. \"Rome! Have you travelled much this year?\"\n2. Finding Common Ground — you genuinely relate. \"That's like the time I got lost on a trail. Do you get out much?\"\n\nBoth grow out of what they just said, so both feel smooth. Link when you spot a word; relate when you spot yourself in their story.\n\nMindset: never manufacture the connection. A real link or a real shared experience carries the switch; a fake one draws attention to it.",
-      inputs: [
-        { q: "They mention they've started going to the gym.", a: "\"Same, I finally caved in January — what got you started?\" (finding common ground)", bundle: 'pro' },
-        { q: "They say they visited Berlin last month.", a: "\"Berlin — that reminds me, have you got any trips coming up?\" (linking)", bundle: 'pro' },
-        { q: "They mention they've been stressed with exams.", a: "\"I remember that feeling far too well. How are you holding up?\" (finding common ground)", bundle: 'pro' },
-        { q: "They say they just adopted a dog.", a: "\"A dog — speaking of, are you much of an animal person generally?\" (linking)", bundle: 'pro' },
-        { q: "They mention they can never stick to a hobby.", a: "\"Ha, story of my life. What's the last one that lasted more than a month?\" (finding common ground)", bundle: 'pro' },
-        { q: "They mention they work in a hospital.", a: "\"Hospitals — that reminds me, do you get much time to switch off?\" (linking)", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Wrap or Exit",
-      guideFront: "Which move fits this moment?",
-      guideBack: "A possible response, with the strategy in brackets.",
-      description: "A choice between the two moves that close the current topic: Acknowledge and Redirect (topic is simply finished — wrap it and open a new one) and Respectful Exit (topic has been over-covered or keeps repeating — signal that gently before moving on). Redirect is for a clean, done topic; Exit is for one that's outstayed its welcome. Example: a finished work update gets a Redirect (\"got it, thanks — by the way…\"), while a third retelling of the same story gets an Exit (\"I love that one — so, tell me something new\").\n\nThe two options:\n1. Acknowledge and Redirect — the topic is simply finished. \"That's a great point, thanks. By the way—\"\n2. Respectful Exit — it has been over-covered or keeps looping. \"I think we've done that one justice!\"\n\nThe difference is whether the topic ended naturally or has outstayed its welcome. A clean finish needs only a nod; a third lap needs to be named.\n\nMindset: both are closings, and both should be warm. The point is to end the topic without ending the conversation.",
-      inputs: [
-        { q: "A colleague has just finished a clear, complete project update.", a: "\"Great, thanks for the rundown. By the way, are you joining Friday's lunch?\" (acknowledge and redirect)", bundle: 'pro' },
-        { q: "A friend has complained about the same coworker three times now.", a: "\"I really do get it. Let's give them a night off though — what else is happening?\" (respectful exit)", bundle: 'pro' },
-        { q: "Someone wraps up explaining how their new coffee machine works.", a: "\"Sounds fancy, nice. Anyway — how was the weekend?\" (acknowledge and redirect)", bundle: 'pro' },
-        { q: "You've both thoroughly dissected last night's match.", a: "\"I think we've fully covered that result. So — what's the plan for the week?\" (respectful exit)", bundle: 'pro' },
-        { q: "A relative finishes a detailed update on the garden.", a: "\"Sounds like it's thriving. By the way, how's the family doing?\" (acknowledge and redirect)", bundle: 'pro' },
-        { q: "The same holiday anecdote is coming round for a second lap.", a: "\"Still a great story — what else have you been up to lately?\" (respectful exit)", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Lighten or Protect",
-      guideFront: "Which move fits this moment?",
-      guideBack: "A possible response, with the strategy in brackets.",
-      description: "A choice between the two moves that ease tension: Random or Light Switch (things are just stale or heavy and you want to lift the mood with something fun) and Steering Away from Sensitive (someone's genuinely uncomfortable and needs a gentle, caring redirect). Light Switch is playful; Steer is protective. Reading which one the moment needs is the skill. Example: a flat silence gets a Light Switch (\"random question — best meal this week?\"), while a painful subject gets a Steer (\"that sounds hard, no need to get into it — how are you otherwise?\").\n\nThe two options:\n1. Random or Light Switch — it is stale or heavy and safe to be playful. \"Before we solve world peace — seen anything good lately?\"\n2. Steering Away from Sensitive — someone is genuinely uncomfortable. \"That's a tough one. On a lighter note, how's the family?\"\n\nGetting this wrong is the costliest mistake in the pack. A joke aimed at real discomfort lands as callous, and it is hard to take back.\n\nMindset: read the person, not the topic. The same subject can be light banter with one person and a raw spot for another.",
-      inputs: [
-        { q: "The conversation has gone quiet and a bit flat.", a: "\"Okay, random one to wake us up — best thing you've eaten this week?\" (random or light switch)", bundle: 'pro' },
-        { q: "Someone's eyes well up as they mention a recent loss.", a: "\"I'm so sorry — we don't have to talk about it. How have you been otherwise?\" (steering away from sensitive)", bundle: 'pro' },
-        { q: "You've both been grumbling about work for ten minutes.", a: "\"Let's break out of work jail — got any plans this weekend?\" (random or light switch)", bundle: 'pro' },
-        { q: "A guest starts on a divisive topic and the table tenses.", a: "\"I think we all feel strongly there. On a nicer note — anyone been anywhere good lately?\" (steering away from sensitive)", bundle: 'pro' },
-        { q: "A debate is getting a touch too heated between friends.", a: "\"Let's call it a draw before it gets personal — what are you watching lately?\" (random or light switch)", bundle: 'pro' },
-        { q: "Someone shares something very personal and instantly looks like they regret it.", a: "\"No judgement at all here. Shall we move to something lighter?\" (steering away from sensitive)", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Reading the Room",
-      guideFront: "Which move fits this moment?",
-      guideBack: "A possible response, with the strategy in brackets.",
-      description: "The full choice between all six moves. Each moment could be handled several ways, but one usually fits best: Linking when there's a detail to pivot off, Common Ground when you relate, Redirect when a topic's simply done, Exit when it's over-covered, Light Switch when it's stale and safe to be playful, and Steer when it's genuinely sensitive. Example: a tense political argument calls for Steer, not a jokey Light Switch — reading which one fits is the whole skill.\n\nThe six, with the cue for each:\n1. Linking — there is a detail to pivot off. \"Rome! Travelled much this year?\"\n2. Finding Common Ground — you relate. \"That's like the time I got lost on a trail.\"\n3. Acknowledge and Redirect — the topic is done. \"Great point, thanks. By the way—\"\n4. Respectful Exit — it is over-covered. \"I think we've done that one justice!\"\n5. Random or Light Switch — it is stale and safe to lift. \"Before we solve world peace—\"\n6. Steering Away from Sensitive — someone is uncomfortable. \"That's a tough one. Anyway—\"\n\nMindset: the first four are about flow and the last two are about care. Knowing which kind of problem you have is most of the decision.",
-      inputs: [
-        { q: "They mention they've just got back from Japan.", a: "\"Japan — that reminds me, have you got more travel planned?\" (linking)", bundle: 'pro' },
-        { q: "A friend keeps returning to the same work grievance.", a: "\"I hear you, truly. Let's park it though — what else is new?\" (respectful exit)", bundle: 'pro' },
-        { q: "The mood at dinner has gone flat and quiet.", a: "\"Right, random question — worst film you've ever paid to see?\" (random or light switch)", bundle: 'pro' },
-        { q: "Someone mentions their divorce and looks uncomfortable.", a: "\"That sounds really tough — no need to go there. How are you doing otherwise?\" (steering away from sensitive)", bundle: 'pro' },
-        { q: "They finish a clear, complete explanation of their new role.", a: "\"Makes sense, thanks. By the way — how's the family?\" (acknowledge and redirect)", bundle: 'pro' },
-        { q: "They say they've started painting to relax.", a: "\"I took that up in lockdown too. What do you like to paint?\" (finding common ground)", bundle: 'pro' },
-        { q: "A heated argument about politics is building at the table.", a: "\"We all feel strongly on that one. Anyway — anyone been anywhere nice lately?\" (steering away from sensitive)", bundle: 'pro' },
-        { q: "They mention they're learning the piano.", a: "\"Piano — speaking of, are you a musical family?\" (linking)", bundle: 'pro' },
-      ]
-    },
-  ],
   reactingtounexpectedstatements: [
     {
       name: "Buying the Moment",
@@ -9032,52 +8972,6 @@ const collectionsModeData = {
         { q: "It is genuinely too big for a corridor conversation.", a: "\"Can we do this properly tomorrow? I'll have thought by then.\" [Come Back to It Later]", bundle: 'pro' },
         { q: "Someone is blaming themselves and you cannot fix it.", a: "\"I don't know how the rest works. I do know it isn't your fault.\" [Answer the Part You Can]", bundle: 'pro' },
         { q: "You said you would come back and the day has arrived.", a: "\"I said I'd come back to Tuesday. Can we?\" [Come Back to It Later]", bundle: 'pro' },
-      ]
-    },
-  ],
-  exploringatopic: [
-    {
-      name: "Ask or Contribute",
-      guideFront: "Which move keeps this topic alive?",
-      guideBack: "A possible response, with the strategy in brackets.",
-      description: "The choice between the two basic ways of joining in: Ask an Open Question (when you have nothing of your own on the subject) and Share a Related Experience (when you do). Ask when you are empty; share when you have a piece that fits. Example: gardening talk with no gardening in your life takes a question (\"what do you grow?\"), while the same conversation about commuting takes your own forty minutes.\n\nThe two options:\n1. Ask an Open Question — you have nothing of your own. \"What do you actually grow out there?\"\n2. Share a Related Experience — you do. \"I tried herbs on the windowsill and the basil lasted a week.\"\n\nThe tell is whether you can picture yourself in the subject. If a memory turns up on its own, share it; if you have to hunt for one, ask instead.\n\nMindset: asking is not the lesser option. It hands the group more to work with than a thin story would.",
-      inputs: [
-        { q: "The group is discussing gardening and you have never grown anything.", a: "\"What do you actually manage to grow out there?\" (ask an open question)", bundle: 'pro' },
-        { q: "The topic is long commutes and yours is forty minutes.", a: "\"Mine is forty minutes. I get through a whole audiobook a week.\" (share a related experience)", bundle: 'pro' },
-        { q: "The table is talking about a film you have not seen.", a: "\"What was it that stuck with you about it?\" (ask an open question)", bundle: 'pro' },
-        { q: "Someone mentions a holiday on a coast you have been to.", a: "\"We did that coast a few years ago — we ate our way along it.\" (share a related experience)", bundle: 'pro' },
-        { q: "The group is deep in a sport you do not follow.", a: "\"How did you all get into it in the first place?\" (ask an open question)", bundle: 'pro' },
-        { q: "The conversation turns to failing at learning an instrument.", a: "\"Four years of piano and I can still play exactly one song.\" (share a related experience)", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Deepen or Widen",
-      guideFront: "Which move keeps this topic alive?",
-      guideBack: "A possible response, with the strategy in brackets.",
-      description: "The choice between staying and moving: Build on Their Point (go one layer down into what was just said, while there is still life in it) and Expand to a Related Subtopic (step sideways into something close by once the thread has run out). Deepen while it is alive; widen when it is fading. Example: \"I grow most of our vegetables\" still has life, so you deepen (\"what never works?\"), but a subject everyone has finished takes a sideways step to indoor plants.\n\nThe two options:\n1. Build on Their Point — stay where they are. \"You said most — what never works?\"\n2. Expand to a Related Subtopic — step sideways. \"Does anyone keep plants indoors?\"\n\nRead the energy rather than the clock: long answers and follow-up questions mean deepen, short answers and pauses mean widen.\n\nMindset: widening too early throws away a topic that still had life in it. Deepening too late leaves everyone sitting in silence.",
-      inputs: [
-        { q: "Someone says: \"I grow most of our vegetables in summer.\"", a: "\"You said most — what is the one thing that never works?\" (build on their point)", bundle: 'pro' },
-        { q: "The gardening talk has run out of steam.", a: "\"Does anyone keep plants indoors? Mine never survive.\" (expand to a related subtopic)", bundle: 'pro' },
-        { q: "A friend says: \"The gig was great but the venue was awful.\"", a: "\"Was it the sound or the crowd that ruined it?\" (build on their point)", bundle: 'pro' },
-        { q: "The group has said everything there is about the album.", a: "\"Are they any good live? I have never seen them.\" (expand to a related subtopic)", bundle: 'pro' },
-        { q: "Someone says: \"We walk a lot more since we got the dog.\"", a: "\"Do you have a route you always end up taking?\" (build on their point)", bundle: 'pro' },
-        { q: "The conversation about playing football has covered everything.", a: "\"Do you watch as much as you play, or is that different?\" (expand to a related subtopic)", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Keeping Any Topic Alive",
-      guideFront: "Which move keeps this topic alive?",
-      guideBack: "A possible response, with the strategy in brackets.",
-      description: "The full choice between all five moves. Most moments would take several, but one usually fits best: ask when you have nothing of your own, share when you do, build while the thread still has life, expand when it is fading, and share-then-invite when you have been holding the floor. Reading what the group needs is the whole skill. Example: after you have talked for a minute, the right move is not another point of yours — it is handing it over.\n\nThe five, with the cue for each:\n1. Ask an Open Question — you have nothing of your own. \"What got you into it?\"\n2. Share a Related Experience — you do. \"Mine was a petrol station night shift.\"\n3. Build on Their Point — the thread still has life. \"Was it the noise, or the seats?\"\n4. Expand to a Related Subtopic — it is fading. \"What about eating out?\"\n5. Share, Then Invite — you have been holding the floor. \"What does yours look like?\"\n\nMindset: a good group conversation is not about being the most interesting person in it. It is about keeping the ball in the air.",
-      inputs: [
-        { q: "The group is discussing something you know nothing about.", a: "\"What got you into it in the first place?\" (ask an open question)", bundle: 'pro' },
-        { q: "Someone says: \"The new office layout is strange.\"", a: "\"It is. Is it the noise, or that nobody knows where to sit?\" (build on their point)", bundle: 'pro' },
-        { q: "You have been talking about your own training routine for a while.", a: "\"Anyway, that is mine. What does yours look like?\" (share, then invite)", bundle: 'pro' },
-        { q: "The topic of cooking dinner has run its course.", a: "\"What about eating out — anywhere good round here?\" (expand to a related subtopic)", bundle: 'pro' },
-        { q: "The table is comparing terrible first jobs.", a: "\"Mine was a petrol station night shift. I learned to sleep standing up.\" (share a related experience)", bundle: 'pro' },
-        { q: "Someone mentions they have started running in the mornings.", a: "\"How long was it before it stopped being awful?\" (ask an open question)", bundle: 'pro' },
-        { q: "One person at the table has said nothing about the topic.", a: "\"I am useless at this one. Anna, you cook — what would you make?\" (share, then invite)", bundle: 'pro' },
-        { q: "A friend says: \"The flight was fine, the airport was chaos.\"", a: "\"Was it the queues or the gate changes?\" (build on their point)", bundle: 'pro' },
       ]
     },
   ],
@@ -11762,56 +11656,6 @@ const collectionsModeData = {
       ]
     },
   ],
-  showunderstanding: [
-    {
-      name: "Finished or Not",
-      guideFront: "Choose a strategy when...",
-      guideBack: "One way it could sound",
-      description: "**Ask Follow-up Questions**, **Loop Back or Rephrase** and **Relate Through Sharing** — chosen by where they are in the story.\n\n• **Ask Follow-up Questions** — the story is still moving and they want to keep going\n• **Loop Back or Rephrase** — they have landed something and stopped\n• **Relate Through Sharing** — the whole thing is out and has been understood\n\n**Which one:** listen to the pause. A short breath means carry on, so ask. A longer one, especially after something that cost them a little to say, means they have arrived somewhere — reflect it. Once it has been reflected and the air has cleared, your own version is welcome.\n\n**Where it goes wrong:** asking after they have finished. A question at the end of a story reads as being asked to keep performing, and it is the most common way a good conversation gets one turn too long.\n\nMindset: a question asks them to do more work. A loop does the work for them. After something difficult, do the work.",
-      inputs: [
-        { q: "They are mid-story and clearly not finished.", a: "\"What did you do when you realised?\" [Ask Follow-up Questions]", bundle: 'pro' },
-        { q: "They finish a hard sentence and go quiet.", a: "\"So you were suddenly doing it alone, with no warning.\" [Loop Back or Rephrase]", bundle: 'pro' },
-        { q: "They mention something in passing and carry straight on.", a: "\"Sorry — what did your manager actually say?\" [Ask Follow-up Questions]", bundle: 'pro' },
-        { q: "They have just admitted something they find embarrassing.", a: "\"So it's the being left out of it, more than the job.\" [Loop Back or Rephrase]", bundle: 'pro' },
-        { q: "They have finished, been understood, and the mood has settled.", a: "\"I had almost exactly that last year. Special kind of awful.\" [Relate Through Sharing]", bundle: 'pro' },
-        { q: "They are describing a sequence of events and pause for breath.", a: "\"And then what?\" [Ask Follow-up Questions]", bundle: 'pro' },
-        { q: "They give you a tangled explanation and stop, looking tired.", a: "\"Let me check I've got it — the plan changed twice and you found out last?\" [Loop Back or Rephrase]", bundle: 'pro' },
-        { q: "They have said the whole thing and you both sat with it a moment.", a: "\"I do that at three in the morning, reliably.\" [Relate Through Sharing]", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Raw or Settled",
-      guideFront: "Choose a strategy when...",
-      guideBack: "One way it could sound",
-      description: "The same three strategies, chosen by how fresh the feeling is rather than how far the story has got.\n\n• **Loop Back or Rephrase** — while it is still raw, stay entirely with them\n• **Ask Follow-up Questions** — once it has cooled a little, ask about the part that matters\n• **Relate Through Sharing** — only once it has settled, and briefly\n\n**Which one:** raw means they are still inside the feeling, and the only safe move is to reflect it. Settled means they can look at it from outside, and then a question opens it up and a shared experience warms it. The two cues do come apart: somebody can finish a story and still be raw, and that is the moment to loop rather than relate.\n\n**Where it goes wrong:** relating too early. Somebody who has not finished being heard does not want to hear about your version yet, however well it matches — and the better it matches, the more it takes.\n\nMindset: when in doubt, stay with them. Nobody has ever regretted being reflected back one time too many.",
-      inputs: [
-        { q: "They are halfway through something difficult and clearly still in it.", a: "\"So it's the not being told that's the worst part.\" [Loop Back or Rephrase]", bundle: 'pro' },
-        { q: "They say something raw and you have a similar story ready.", a: "\"That's a lot to have been carrying on your own.\" [Loop Back or Rephrase]", bundle: 'pro' },
-        { q: "They have told it before and can talk about it calmly now.", a: "\"What would you do differently if it came round again?\" [Ask Follow-up Questions]", bundle: 'pro' },
-        { q: "They say: \"Everyone else seems to find it easy.\"", a: "\"They really don't. I spent a year assuming the same.\" [Relate Through Sharing]", bundle: 'pro' },
-        { q: "They are still working out what they think as they speak.", a: "\"Something about it landed harder than its size would suggest.\" [Loop Back or Rephrase]", bundle: 'pro' },
-        { q: "They have shared a win and are pleased with it.", a: "\"That feeling is brilliant. I remember sitting in the car afterwards.\" [Relate Through Sharing]", bundle: 'pro' },
-        { q: "They mention an old disappointment lightly, in passing.", a: "\"What happened with that in the end?\" [Ask Follow-up Questions]", bundle: 'pro' },
-        { q: "They finish, go quiet, and the quiet is not comfortable yet.", a: "\"That sounds like it's still sitting with you.\" [Loop Back or Rephrase]", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "All Three Moves",
-      guideFront: "Choose a strategy when...",
-      guideBack: "One way it could sound",
-      description: "The full choice with no cue given, which is what this whole exercise is for.\n\n• **Ask Follow-up Questions** — the story is unfinished. \"What happened after that?\"\n• **Loop Back or Rephrase** — they have landed something. \"So it's the being left out that stings.\"\n• **Relate Through Sharing** — they have been heard, and warmth is what is left. \"I know that feeling exactly.\"\n\n**Which one:** the rule is one at a time, so the skill is not knowing the three moves — it is reading which one the moment wants, fast enough to use it. A rough order for anything difficult: loop first, ask second, relate last.\n\n**Where it goes wrong:** most people do it backwards and lead with their own story, because relating is the most enjoyable of the three to do. Choose it for them rather than for you.\n\nMindset: one at a time. Stacking all three is not three times as understanding; it is a performance about you managing the conversation.",
-      inputs: [
-        { q: "They are mid-story with more to tell.", a: "\"What was the worst part of it?\" [Ask Follow-up Questions]", bundle: 'pro' },
-        { q: "They have just said something that cost them a little to say.", a: "\"So you sat on it rather than say anything.\" [Loop Back or Rephrase]", bundle: 'pro' },
-        { q: "They have finished and the air has cleared.", a: "\"I do that too. It always seems easier not to mention it.\" [Relate Through Sharing]", bundle: 'pro' },
-        { q: "They mention a detail you did not follow.", a: "\"Sorry, who pulled you aside?\" [Ask Follow-up Questions]", bundle: 'pro' },
-        { q: "They say \"it's fine, honestly\" and it clearly is not.", a: "\"It sounds less fine and more relentless, from here.\" [Loop Back or Rephrase]", bundle: 'pro' },
-        { q: "They share a win they are proud of.", a: "\"How long had you been working towards that?\" [Ask Follow-up Questions]", bundle: 'pro' },
-        { q: "They say they keep replaying what they should have said.", a: "\"I do that at three in the morning, reliably.\" [Relate Through Sharing]", bundle: 'pro' },
-        { q: "They give a long tangled account and stop.", a: "\"Let me check — the deadline moved and nobody told you?\" [Loop Back or Rephrase]", bundle: 'pro' },
-      ]
-    },
-  ],
   talkingaboutyourself: [
     {
       name: "When They Ask About You",
@@ -12050,6 +11894,156 @@ const collectionsModeData = {
         { q: "\"My computer is super fast.\"", a: "\"Steady on. It's a laptop, not a rocket.\" [Understatement]", bundle: 'pro' },
         { q: "\"I'm so hungry.\"", a: "\"Same. I've started eyeing up the stationery.\" [Exaggeration]", bundle: 'pro' },
         { q: "\"I couldn't sleep last night.\"", a: "\"Bit of a shame.\" [Understatement]", bundle: 'pro' },
+      ]
+    },
+  ],
+  showunderstanding: [
+    {
+      name: "Finished or Not",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Ask Follow-up Questions**, **Loop Back or Rephrase** and **Relate Through Sharing** — chosen by where they are in the story.\n\n• **Ask Follow-up Questions** — the story is still moving and they want to keep going\n• **Loop Back or Rephrase** — they have landed something and stopped\n• **Relate Through Sharing** — the whole thing is out and has been understood\n\n**Which one:** listen to the pause. A short breath means carry on, so ask. A longer one, especially after something that cost them a little to say, means they have arrived somewhere — reflect it. Once it has been reflected and the air has cleared, your own version is welcome.\n\n**Where it goes wrong:** asking after they have finished. A question at the end of a story reads as being asked to keep performing, and it is the most common way a good conversation gets one turn too long.\n\nMindset: a question asks them to do more work. A loop does the work for them. After something difficult, do the work.",
+      inputs: [
+        { q: "They are mid-story and clearly not finished.", a: "\"What did you do when you realised?\" [Ask Follow-up Questions]", bundle: 'pro' },
+        { q: "They finish a hard sentence and go quiet.", a: "\"So you were suddenly doing it alone, with no warning.\" [Loop Back or Rephrase]", bundle: 'pro' },
+        { q: "They mention something in passing and carry straight on.", a: "\"Sorry — what did your manager actually say?\" [Ask Follow-up Questions]", bundle: 'pro' },
+        { q: "They have just admitted something they find embarrassing.", a: "\"So it's the being left out of it, more than the job.\" [Loop Back or Rephrase]", bundle: 'pro' },
+        { q: "They have finished, been understood, and the mood has settled.", a: "\"I had almost exactly that last year. Special kind of awful.\" [Relate Through Sharing]", bundle: 'pro' },
+        { q: "They are describing a sequence of events and pause for breath.", a: "\"And then what?\" [Ask Follow-up Questions]", bundle: 'pro' },
+        { q: "They give you a tangled explanation and stop, looking tired.", a: "\"Let me check I've got it — the plan changed twice and you found out last?\" [Loop Back or Rephrase]", bundle: 'pro' },
+        { q: "They have said the whole thing and you both sat with it a moment.", a: "\"I do that at three in the morning, reliably.\" [Relate Through Sharing]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Raw or Settled",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "The same three strategies, chosen by how fresh the feeling is rather than how far the story has got.\n\n• **Loop Back or Rephrase** — while it is still raw, stay entirely with them\n• **Ask Follow-up Questions** — once it has cooled a little, ask about the part that matters\n• **Relate Through Sharing** — only once it has settled, and briefly\n\n**Which one:** raw means they are still inside the feeling, and the only safe move is to reflect it. Settled means they can look at it from outside, and then a question opens it up and a shared experience warms it. The two cues do come apart: somebody can finish a story and still be raw, and that is the moment to loop rather than relate.\n\n**Where it goes wrong:** relating too early. Somebody who has not finished being heard does not want to hear about your version yet, however well it matches — and the better it matches, the more it takes.\n\nMindset: when in doubt, stay with them. Nobody has ever regretted being reflected back one time too many.",
+      inputs: [
+        { q: "They are halfway through something difficult and clearly still in it.", a: "\"So it's the not being told that's the worst part.\" [Loop Back or Rephrase]", bundle: 'pro' },
+        { q: "They say something raw and you have a similar story ready.", a: "\"That's a lot to have been carrying on your own.\" [Loop Back or Rephrase]", bundle: 'pro' },
+        { q: "They have told it before and can talk about it calmly now.", a: "\"What would you do differently if it came round again?\" [Ask Follow-up Questions]", bundle: 'pro' },
+        { q: "They say: \"Everyone else seems to find it easy.\"", a: "\"They really don't. I spent a year assuming the same.\" [Relate Through Sharing]", bundle: 'pro' },
+        { q: "They are still working out what they think as they speak.", a: "\"Something about it landed harder than its size would suggest.\" [Loop Back or Rephrase]", bundle: 'pro' },
+        { q: "They have shared a win and are pleased with it.", a: "\"That feeling is brilliant. I remember sitting in the car afterwards.\" [Relate Through Sharing]", bundle: 'pro' },
+        { q: "They mention an old disappointment lightly, in passing.", a: "\"What happened with that in the end?\" [Ask Follow-up Questions]", bundle: 'pro' },
+        { q: "They finish, go quiet, and the quiet is not comfortable yet.", a: "\"That sounds like it's still sitting with you.\" [Loop Back or Rephrase]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "All Three Moves",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "The full choice with no cue given, which is what this whole exercise is for.\n\n• **Ask Follow-up Questions** — the story is unfinished. \"What happened after that?\"\n• **Loop Back or Rephrase** — they have landed something. \"So it's the being left out that stings.\"\n• **Relate Through Sharing** — they have been heard, and warmth is what is left. \"I know that feeling exactly.\"\n\n**Which one:** the rule is one at a time, so the skill is not knowing the three moves — it is reading which one the moment wants, fast enough to use it. A rough order for anything difficult: loop first, ask second, relate last.\n\n**Where it goes wrong:** most people do it backwards and lead with their own story, because relating is the most enjoyable of the three to do. Choose it for them rather than for you.\n\nMindset: one at a time. Stacking all three is not three times as understanding; it is a performance about you managing the conversation.",
+      inputs: [
+        { q: "They are mid-story with more to tell.", a: "\"What was the worst part of it?\" [Ask Follow-up Questions]", bundle: 'pro' },
+        { q: "They have just said something that cost them a little to say.", a: "\"So you sat on it rather than say anything.\" [Loop Back or Rephrase]", bundle: 'pro' },
+        { q: "They have finished and the air has cleared.", a: "\"I do that too. It always seems easier not to mention it.\" [Relate Through Sharing]", bundle: 'pro' },
+        { q: "They mention a detail you did not follow.", a: "\"Sorry, who pulled you aside?\" [Ask Follow-up Questions]", bundle: 'pro' },
+        { q: "They say \"it's fine, honestly\" and it clearly is not.", a: "\"It sounds less fine and more relentless, from here.\" [Loop Back or Rephrase]", bundle: 'pro' },
+        { q: "They share a win they are proud of.", a: "\"How long had you been working towards that?\" [Ask Follow-up Questions]", bundle: 'pro' },
+        { q: "They say they keep replaying what they should have said.", a: "\"I do that at three in the morning, reliably.\" [Relate Through Sharing]", bundle: 'pro' },
+        { q: "They give a long tangled account and stop.", a: "\"Let me check — the deadline moved and nobody told you?\" [Loop Back or Rephrase]", bundle: 'pro' },
+      ]
+    },
+  ],
+  exploringatopic: [
+    {
+      name: "Empty or Full",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Ask an Open Question**, **Share a Related Experience** and **Share, Then Invite** — the three chosen by what you are carrying on the subject.\n\n• **Ask an Open Question** — you have nothing of your own on it\n• **Share a Related Experience** — you do, and nobody has heard it\n• **Share, Then Invite** — you have plenty, and you have already used some of it\n\n**Which one:** the tell is whether you can picture yourself in the subject. If a memory turns up on its own, share it. If you have to hunt for one, ask instead. And if two have already turned up, put one in and hand the rest of the turn over.\n\n**Where it goes wrong:** hunting. The pause while you search for something worth saying is longer than the question would have been, and the story you eventually find is usually thin.\n\nMindset: asking is not the lesser option. It hands the group more to work with than a thin story would.",
+      inputs: [
+        { q: "The group is discussing gardening and you have never grown anything.", a: "\"What do you actually manage to grow out there?\" [Ask an Open Question]", bundle: 'pro' },
+        { q: "The topic is long commutes and yours is forty minutes.", a: "\"Forty minutes each way. I've become an audiobook person against my will.\" [Share a Related Experience]", bundle: 'pro' },
+        { q: "The table is talking about a film you have not seen.", a: "\"What was it that stuck with you about it?\" [Ask an Open Question]", bundle: 'pro' },
+        { q: "Someone mentions a holiday on a coast you have been to.", a: "\"We did that stretch years ago. Ate our way from one end to the other.\" [Share a Related Experience]", bundle: 'pro' },
+        { q: "The group is deep in a sport you do not follow.", a: "\"How did you all get into it in the first place?\" [Ask an Open Question]", bundle: 'pro' },
+        { q: "You have already told one story and another is queuing up.", a: "\"I'll stop there. What about the rest of you?\" [Share, Then Invite]", bundle: 'pro' },
+        { q: "The conversation turns to failing at learning an instrument.", a: "\"Four years of piano, one surviving song. I can still do that one.\" [Share a Related Experience]", bundle: 'pro' },
+        { q: "You have given your opinion and nobody has given theirs.", a: "\"That's my two pence. What do you make of it?\" [Share, Then Invite]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Alive or Fading",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Build on Their Point**, **Expand to a Related Subtopic** and **Ask an Open Question** — the three chosen by how much life is left in the thread.\n\n• **Build on Their Point** — it is still going, so go one layer down\n• **Ask an Open Question** — it has slowed but not stopped, so open it back up\n• **Expand to a Related Subtopic** — it is finished, so step sideways\n\n**Which one:** read the energy rather than the clock. Long answers and follow-up questions mean deepen; short answers mean open it up again; a pause after \"yeah, that's about it\" means step sideways.\n\n**Where it goes wrong:** widening too early throws away a topic that still had life in it, and widening too late means the sideways step has to restart a conversation from silence.\n\nMindset: a thread ending is not the topic ending. There is usually one more room in the same house.",
+      inputs: [
+        { q: "Someone says: \"I grow most of our vegetables in summer.\"", a: "\"You said most — what's the one thing that never works?\" [Build on Their Point]", bundle: 'pro' },
+        { q: "The gardening talk has run out of steam.", a: "\"Does anyone keep plants indoors? Mine never survive.\" [Expand to a Related Subtopic]", bundle: 'pro' },
+        { q: "A friend says: \"The gig was great but the venue was awful.\"", a: "\"Was it the sound or the crowd that ruined it?\" [Build on Their Point]", bundle: 'pro' },
+        { q: "The group has said everything there is about the album.", a: "\"Are they any good live? I've never seen them.\" [Expand to a Related Subtopic]", bundle: 'pro' },
+        { q: "The answers have gone short but nobody has changed the subject.", a: "\"What got you all into it in the first place?\" [Ask an Open Question]", bundle: 'pro' },
+        { q: "Someone says: \"We walk a lot more since we got the dog.\"", a: "\"Do you have a route you always end up taking?\" [Build on Their Point]", bundle: 'pro' },
+        { q: "The conversation about playing football has covered everything.", a: "\"Do you watch as much as you play, or is that a different thing?\" [Expand to a Related Subtopic]", bundle: 'pro' },
+        { q: "The topic has slowed and you would rather not lose it.", a: "\"Before we drop this — what's the part nobody warns you about?\" [Ask an Open Question]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Keeping Any Topic Alive",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "All five moves, with no cue given, which is what a real group conversation is like.\n\n• **Ask an Open Question** — you have nothing of your own\n• **Share a Related Experience** — you do\n• **Build on Their Point** — the thread still has life\n• **Expand to a Related Subtopic** — it is fading\n• **Share, Then Invite** — you have been holding the floor\n\n**Which one:** most moments would take several, and one usually fits best. Reading what the group needs — material, depth, a new angle, or a turn for somebody else — is the whole skill.\n\n**Where it goes wrong:** answering your own question. After you have talked for a minute the right move is not another point of yours, it is handing it over.\n\nMindset: a good group conversation is not about being the most interesting person in it. It is about keeping the ball in the air.",
+      inputs: [
+        { q: "The group is discussing something you know nothing about.", a: "\"What got you into it in the first place?\" [Ask an Open Question]", bundle: 'pro' },
+        { q: "Someone says: \"The new office layout is strange.\"", a: "\"It is. Is it the noise, or that nobody knows where to sit?\" [Build on Their Point]", bundle: 'pro' },
+        { q: "You have been talking about your own training routine for a while.", a: "\"Anyway, that is mine. What does yours look like?\" [Share, Then Invite]", bundle: 'pro' },
+        { q: "The topic of cooking dinner has run its course.", a: "\"What about eating out — anywhere good round here?\" [Expand to a Related Subtopic]", bundle: 'pro' },
+        { q: "The table is comparing terrible first jobs.", a: "\"Petrol station, night shift. I learned to sleep upright.\" [Share a Related Experience]", bundle: 'pro' },
+        { q: "Someone mentions they have started running in the mornings.", a: "\"How long was it before it stopped being awful?\" [Ask an Open Question]", bundle: 'pro' },
+        { q: "One person at the table has said nothing about the topic.", a: "\"I'm useless at this one. Anna, you cook — what would you make?\" [Share, Then Invite]", bundle: 'pro' },
+        { q: "A friend says: \"The flight was fine, the airport was chaos.\"", a: "\"Was it the queues or the gate changes?\" [Build on Their Point]", bundle: 'pro' },
+      ]
+    },
+  ],
+  changingtopics: [
+    {
+      name: "Is There a Bridge",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Linking**, **Finding Common Ground** and **Random or Light Switch** — the three chosen by whether the old topic gives you anything to build the new one out of.\n\n• **Linking** — a word, a place, a name you can catch and turn\n• **Finding Common Ground** — no single word, but you recognise the experience\n• **Random or Light Switch** — nothing at all, so you say so and jump\n\n**Which one:** listen to what they last said. A concrete noun is a link. A situation you have been in yourself is common ground. Three words and a shrug is neither, and then flagging the switch is the honest move.\n\n**Where it goes wrong:** hunting for a bridge that is not there. The pause while you search is longer and more awkward than \"completely unrelated, but —\" would have been.\n\nMindset: a bridge is nicer when there is one. There is no rule that says there has to be.",
+      inputs: [
+        { q: "They mention they were up late finishing a report.", a: "\"Late nights — speaking of, have you had a proper break this year?\" [Linking]", bundle: 'pro' },
+        { q: "They say they find networking events awkward.", a: "\"Oh, me too. What's the worst one you've had to stand through?\" [Finding Common Ground]", bundle: 'pro' },
+        { q: "Small talk has stalled and there is nothing to catch.", a: "\"Right — completely unrelated, but best thing you've eaten this week?\" [Random or Light Switch]", bundle: 'pro' },
+        { q: "They mention their sister is over from abroad.", a: "\"Abroad — where's the best place you've been, actually?\" [Linking]", bundle: 'pro' },
+        { q: "They say they never get round to reading anymore.", a: "\"Same here, and it bothers me. What's the last one you finished?\" [Finding Common Ground]", bundle: 'pro' },
+        { q: "The conversation has gone heavy and there is no easy link out.", a: "\"Okay, before we solve everything — seen anything good lately?\" [Random or Light Switch]", bundle: 'pro' },
+        { q: "They mention a place you have both been to.", a: "\"You've been there too? What did you make of it?\" [Finding Common Ground]", bundle: 'pro' },
+        { q: "They say the weekend went on gardening.", a: "\"Gardening — are you growing anything worth bragging about?\" [Linking]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Closing the Old One",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Acknowledge and Redirect**, **Respectful Exit** and **Steering Away from Sensitive Topics** — the three that finish the current subject before opening the next one.\n\n• **Acknowledge and Redirect** — one short nod, then the new thing\n• **Respectful Exit** — for a topic that is finished, or on its third lap\n• **Steering Away from Sensitive Topics** — for one that is uncomfortable rather than done\n\n**Which one:** ask what kind of ending it needs. A subject that simply ran its course takes a nod. One that keeps coming back needs naming, warmly. One that is raw needs acknowledging before anything else moves.\n\n**Where it goes wrong:** the wrong size of ending. A cheerful \"right, we've solved the weather\" aimed at something painful is careless, and a solemn acknowledgement of a phone upgrade is odd.\n\nMindset: how you close it decides how the next one lands.",
+      inputs: [
+        { q: "A colleague has finished a long story about their car trouble.", a: "\"Glad it's sorted, honestly. By the way — are you around Friday?\" [Acknowledge and Redirect]", bundle: 'pro' },
+        { q: "The same complaint is coming round for a third lap.", a: "\"I do get it. Let's give it a rest, though — how's everything else?\" [Respectful Exit]", bundle: 'pro' },
+        { q: "The chat drifts to someone's breakup and they look uncomfortable.", a: "\"That sounds hard, and we don't have to go into it. How have you been otherwise?\" [Steering Away from Sensitive Topics]", bundle: 'pro' },
+        { q: "A meeting has drifted into detail nobody needs.", a: "\"I think we've got that covered. Shall we move on?\" [Acknowledge and Redirect]", bundle: 'pro' },
+        { q: "A debate between two people has clearly run its course.", a: "\"You've both made the case well. Something new — any plans this week?\" [Respectful Exit]", bundle: 'pro' },
+        { q: "A group argument about politics is getting tense.", a: "\"Everyone here feels strongly. Anyway — has anyone been anywhere nice lately?\" [Steering Away from Sensitive Topics]", bundle: 'pro' },
+        { q: "A friend has finished explaining their new phone in detail.", a: "\"Sounds like a solid upgrade. Anyway — how's the job going?\" [Acknowledge and Redirect]", bundle: 'pro' },
+        { q: "The catch-up has covered every obvious thing.", a: "\"Right, that's the headlines done. What didn't make the news?\" [Respectful Exit]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Reading the Room",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "All six moves, with no cue given, which is what a real conversation is like.\n\n• **Linking** — there is a word to catch\n• **Finding Common Ground** — you recognise the experience\n• **Random or Light Switch** — there is nothing to build on\n• **Acknowledge and Redirect** — the subject just finished\n• **Respectful Exit** — it finished a while ago\n• **Steering Away from Sensitive Topics** — it is uncomfortable, not finished\n\n**Which one:** two questions cover nearly all of it. Does the old topic need closing first, and is there anything in it to build the new one from? Everything else is a matter of how warm to make it.\n\n**Where it goes wrong:** doing nothing. A subject that has died and not been replaced is the most uncomfortable moment in any conversation, and it is entirely avoidable.\n\nMindset: changing the subject is steering, not hijacking. Somebody has to do it.",
+      inputs: [
+        { q: "They mention they just moved into a new flat.", a: "\"A new place — found anywhere good around there yet?\" [Linking]", bundle: 'pro' },
+        { q: "A relative starts on a divisive subject at dinner.", a: "\"Let's not let that ruin the food. What's everyone been up to?\" [Steering Away from Sensitive Topics]", bundle: 'pro' },
+        { q: "Someone's wrapped up a long story about their commute.", a: "\"That does sound rough. On another note — plans this weekend?\" [Acknowledge and Redirect]", bundle: 'pro' },
+        { q: "You've been on the same holiday story for a good while.", a: "\"Sounds like a brilliant trip, and I think we've covered it. What else is new?\" [Respectful Exit]", bundle: 'pro' },
+        { q: "They mention they've been getting into running.", a: "\"I did the same over summer. Have you got a route you actually like?\" [Finding Common Ground]", bundle: 'pro' },
+        { q: "The energy has dropped flat at a dinner table.", a: "\"Completely random, but — worst haircut you've ever had, go.\" [Random or Light Switch]", bundle: 'pro' },
+        { q: "They say they've been trying to eat better.", a: "\"Eating better — have you come across any recipes worth stealing?\" [Linking]", bundle: 'pro' },
+        { q: "Someone overshared and it has gone quiet.", a: "\"No judgement here at all. Shall we talk about something lighter?\" [Steering Away from Sensitive Topics]", bundle: 'pro' },
       ]
     },
   ],

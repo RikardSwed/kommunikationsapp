@@ -576,7 +576,6 @@ applyInputCounterVisibility();
     // keep working: the programme route overrides the tier, so a freemium user
     // who passes the Conversation Foundations Part 2 checkpoint still opens
     // Exploring a Topic even though it is a Pro pack. No exception needed.
-    exploringatopic: { label: 'Exploring a Topic', minLevel: 'pro' },
     // v1.27.00 — PROMOTED TO FREEMIUM. Without Assertive Communication the
     // free tier can open a conversation and understand the other person, but
     // has nothing to SAY — this is the pack that fills that hole, and it is
@@ -592,7 +591,7 @@ applyInputCounterVisibility();
     // the only two modes a freemium user can reach (see MODE_CONFIG). Same
     // shape as Starting Conversations Pt. 1. Nothing needed changing.
     complimenting: { label: 'Compliments', minLevel: 'pro' },
-    changingtopics: { label: 'Changing Topics', minLevel: 'program' },          // Conversation Foundations, Part 2
+// Conversation Foundations, Part 2
     validation: { label: 'Validation', minLevel: 'program' },                   // Conversation Foundations, Part 3
     deepquestions: { label: 'Deep Questions', minLevel: 'program' },            // Conversation Foundations, Part 4
     givingexamples: { label: 'Giving Examples', minLevel: 'program' },          // Say It Well, Part 2
@@ -694,12 +693,14 @@ applyInputCounterVisibility();
     firststrategies: { label: 'First Strategies', minLevel: 'freemium' },
     jfisher1: { label: 'Jefferson Fisher 1 — Control under Pressure', minLevel: 'complete' },
     jfisher2: { label: 'Jefferson Fisher 2 — Assertive Connection', minLevel: 'complete' },
-    showunderstanding: { label: 'Show Understanding', minLevel: 'freemium' },
     talkingaboutyourself: { label: 'Talking About Yourself', minLevel: 'freemium' },
     startingconversations1: { label: 'Starting Conversations — Pt. 1', minLevel: 'freemium' },
     startingconversations2: { label: 'Starting Conversations — Pt. 2', minLevel: 'pro' },
     startingconversations4: { label: 'Starting Conversations — Pt. 4', minLevel: 'extended' },
     responsivehumour: { label: 'Responsive Humour', minLevel: 'pro' },
+    showunderstanding: { label: 'Show Understanding', minLevel: 'freemium' },
+    exploringatopic: { label: 'Exploring a Topic', minLevel: 'pro' },
+    changingtopics: { label: 'Changing Topics', minLevel: 'pro' },
   };
 
   // ── PROGRAM_CONFIG (v1.26.81) ─────────────────────────────────────────
@@ -1011,7 +1012,14 @@ applyInputCounterVisibility();
   // ── Program routes: is this pack delivered via a Program, and if so is
   //    any of its sections unlocked (all previous checkpoints passed)? ──────
   function _programState(packKey) {
-    const state = { inAnyProgram: false, availableRoute: false, lockedRoute: false, pendingRoute: false };
+    // pendingOpenRoute (v1.27.46) — the pack sits in a Part that is unlocked
+    // AND covered by the user's plan, but that Part's own checkpoint has not
+    // been passed yet. That is the state the discovery rule below calls
+    // "trainable inside the programme, invisible everywhere else", and until
+    // now nothing could act on it: pendingRoute alone was also true for a Part
+    // behind Pro, so it could not be used to open anything.
+    const state = { inAnyProgram: false, availableRoute: false, lockedRoute: false,
+                    pendingRoute: false, pendingOpenRoute: false };
     if (typeof programsData === 'undefined' || !Array.isArray(programsData)) return state;
     let progress = {};
     try { progress = JSON.parse(localStorage.getItem('ds_program_progress')) || {}; } catch {}
@@ -1044,7 +1052,11 @@ applyInputCounterVisibility();
         // A section with no checkpoint has nothing to wait for, so it releases
         // as soon as it unlocks.
         const ownCp = sec.checkpoint;
-        if (ownCp && !cpPassed(prog.id, ownCp.id)) { state.pendingRoute = true; return; }
+        if (ownCp && !cpPassed(prog.id, ownCp.id)) {
+          state.pendingRoute = true;
+          if (secVis === 'available') state.pendingOpenRoute = true;
+          return;
+        }
         // A locked program (Pro badge, or Extended owned without Pro) offers a
         // locked route, not an open one. So does a Pro-only section inside an
         // otherwise free program.
@@ -1359,7 +1371,22 @@ applyInputCounterVisibility();
   // Expose for other modules
   // `codes` is exposed read-only so the registry document can be checked
   // against the real table rather than kept in step by hand.
-  window.accessLevel = { getLevel, canAccess, badgeLabel, applyModeLocks, updateNavUpgradeBtn, packVisibility, programVisibility, sectionVisibility, applyAccessLevel, redeemCode, grantStatus, clearGrant, packGranted, codes: ACCESS_CODES };
+  // v1.27.46 — the programme route, asked as a question.
+  //
+  // canAccess() answers for the app at large, and it is right to say no here:
+  // a pack whose Part is unlocked but whose checkpoint is unpassed must NOT
+  // turn up in the Packs tab, Topics, search, favourites or folders. That is
+  // the discovery rule, and passing the checkpoint is what releases it.
+  //
+  // But the programme screen is a different surface with a different answer,
+  // and it had no way to say so: it opened packs through showModeScreen, which
+  // asks canAccess and refused. A freemium user who had passed Part 1 of
+  // Conversation Foundations was told "This pack requires Pro" on the two
+  // packs Part 2 had just handed them — and the forward arrow skipped straight
+  // past them to the next test. Both now ask this instead.
+  function programRoutePending(packKey) { return !!_programState(packKey).pendingOpenRoute; }
+
+  window.accessLevel = { getLevel, canAccess, badgeLabel, applyModeLocks, updateNavUpgradeBtn, packVisibility, programVisibility, sectionVisibility, programRoutePending, applyAccessLevel, redeemCode, grantStatus, clearGrant, packGranted, codes: ACCESS_CODES };
   window._applyAccessLevel = applyAccessLevel;
 
   // Init
@@ -1488,35 +1515,7 @@ const BUNDLE_DEFS = {
       description: '',
     },
   ],
-  changingtopics: [
-    {
-      id: 'free',
-      tier: 'free',
-      name: 'Free Bundle',
-      description: '',
-    },
-    {
-      id: 'pro',
-      tier: 'pro',
-      name: 'Pro Bundle',
-      description: '',
-    },
-  ],
   reactingtounexpectedstatements: [
-    {
-      id: 'free',
-      tier: 'free',
-      name: 'Free Bundle',
-      description: '',
-    },
-    {
-      id: 'pro',
-      tier: 'pro',
-      name: 'Pro Bundle',
-      description: '',
-    },
-  ],
-  exploringatopic: [
     {
       id: 'free',
       tier: 'free',
@@ -2698,20 +2697,6 @@ const BUNDLE_DEFS = {
       description: '',
     },
   ],
-  showunderstanding: [
-    {
-      id: 'free',
-      tier: 'free',
-      name: 'Free Bundle',
-      description: '',
-    },
-    {
-      id: 'pro',
-      tier: 'pro',
-      name: 'Pro Bundle',
-      description: '',
-    },
-  ],
   talkingaboutyourself: [
     {
       id: 'free',
@@ -2769,6 +2754,48 @@ const BUNDLE_DEFS = {
     },
   ],
   responsivehumour: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  showunderstanding: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  exploringatopic: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  changingtopics: [
     {
       id: 'free',
       tier: 'free',
@@ -3944,8 +3971,14 @@ const PRO_NUDGE_RULES = {
   // this wrapper; the original still owns the "requires Pro" toast.
   const origShowMode = window.showModeScreen;
   if (typeof origShowMode === 'function') {
-    window.showModeScreen = function (key) {
-      const locked = !!(window.accessLevel && !window.accessLevel.canAccess(key));
+    window.showModeScreen = function (key, label, opts) {
+      // v1.27.46 — a pack opened through the programme route is not a locked
+      // tap. It is the user training exactly what the programme just gave
+      // them, and answering that with an upgrade nudge would be absurd.
+      const viaProgram = !!(opts && opts.viaProgram)
+        && !!(window.accessLevel && window.accessLevel.programRoutePending
+              && window.accessLevel.programRoutePending(key));
+      const locked = !viaProgram && !!(window.accessLevel && !window.accessLevel.canAccess(key));
       const s = state();
       if (locked) {
         if (isFreemium()) {

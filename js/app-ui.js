@@ -2506,7 +2506,12 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
           // which dropped the user into the library-wide fallback and walked
           // them straight out of the program.)
           if (window.setNavContext) setNavContext(buildProgramSteps(program), card.dataset.key, 'program');
-          showModeScreen(card.dataset.key, card.dataset.label);
+          // viaProgram (v1.27.46): this card is only rendered unlocked when the
+          // Part is both covered by the plan and earned, so the programme screen
+          // is entitled to open a pack that canAccess() still says no to. The
+          // discovery rule holds that pack back from the Packs tab, Topics and
+          // search until this Part's checkpoint is passed — not from here.
+          showModeScreen(card.dataset.key, card.dataset.label, { viaProgram: true });
         });
       }
     });

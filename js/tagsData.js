@@ -85,14 +85,8 @@ const packTags = {
   endingconversations: [
     'ending conversations', 'leaving', 'goodbyes', 'closing a conversation', 'exits'
   ],
-  changingtopics: [
-    'conversation', 'transitions', 'managing'
-  ],
   reactingtounexpectedstatements: [
     'caught off guard', 'not knowing what to say', 'buying time', 'surprising remarks', 'thinking before answering'
-  ],
-  exploringatopic: [
-    'conversation', 'group conversation', 'topics'
   ],
   deepquestions: [
     'conversation', 'curiosity', 'connection'
@@ -343,9 +337,6 @@ const packTags = {
   jfisher2: [
     'assertive', 'connection', 'boundaries', 'negotiations', 'communication'
   ],
-  showunderstanding: [
-    'listening', 'understanding', 'empathy', 'conversation'
-  ],
   talkingaboutyourself: [
     'answering questions', 'small talk', 'self-disclosure', 'opening up', 'what do you do', 'being asked about yourself'
   ],
@@ -360,6 +351,15 @@ const packTags = {
   ],
   responsivehumour: [
     'humour', 'being funny', 'quick replies', 'banter', 'playfulness', 'reacting'
+  ],
+  showunderstanding: [
+    'listening', 'understanding', 'empathy', 'conversation'
+  ],
+  exploringatopic: [
+    'conversation', 'group conversation', 'topics'
+  ],
+  changingtopics: [
+    'conversation', 'topic change', 'transitions', 'small talk'
   ],
 };
 
@@ -389,9 +389,9 @@ const packTags = {
 // emotionalboundaries merged into emotions and boundaries.
 const TOPICS = [
   // ── Getting a conversation going ──────────────────────────────────
-  { id: 'startingconversations', title: 'Starting Conversations',        packs: ['startingconnecting', 'setupstatement', 'startingconversations3', 'setupquestion', 'oconnor7', 'firststrategies', 'startingconversations1', 'startingconversations2', 'startingconversations4'] },
-  { id: 'questions',             title: 'Questions & Curiosity',         packs: ['exploringatopic', 'deepquestions'] },
-  { id: 'flowtransitions',       title: 'Flow & Transitions',            packs: ['conversational', 'transitions', 'changingtopics', 'reactingtounexpectedstatements'] },
+  { id: 'startingconversations', title: 'Starting Conversations',        packs: ['startingconnecting', 'setupstatement', 'startingconversations3', 'setupquestion', 'oconnor7', 'firststrategies', 'startingconversations1', 'startingconversations2', 'startingconversations4', 'exploringatopic'] },
+  { id: 'questions',             title: 'Questions & Curiosity',         packs: ['deepquestions'] },
+  { id: 'flowtransitions',       title: 'Flow & Transitions',            packs: ['conversational', 'transitions', 'reactingtounexpectedstatements', 'changingtopics'] },
   { id: 'endingconversations',   title: 'Ending Conversations',          packs: ['endingconversations'] },
 
   // ── Being with the other person ───────────────────────────────────

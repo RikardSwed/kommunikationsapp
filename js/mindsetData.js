@@ -593,42 +593,6 @@ const mindsetCollections = {
       ]
     },
   ],
-  changingtopics: [
-    {
-      name: "The Changing-Topics Mindset",
-      guideFront: "A thought that holds you back.",
-      guideBack: "A way to reset it.",
-      description: "The pack-wide stance: changing the subject isn't rude, it's steering — guiding a conversation somewhere better is a service to both people, not a hijack. Example of the shift — instead of suffering through a dead topic to be polite, you gently move it along and everyone relaxes.\n\nThe three thoughts that cause the trouble:\n1. \"Changing the subject is rude\" — sitting in a dead topic to be polite helps nobody.\n2. \"They'll notice and be offended\" — done with a bridge or a nod, most people feel relief.\n3. \"It's not my place to steer\" — someone has to, and it is usually whoever notices first.\n\nMindset: changing the subject is steering, not hijacking. Guiding a conversation somewhere better is a service to both of you.",
-      inputs: [
-        { q: "You feel it's rude to change the subject.", a: "\"Steering isn't rude. Keeping a dead topic alive out of politeness helps no one.\"", bundle: 'pro' },
-        { q: "You can't think of a clever bridge, so you stay stuck.", a: "\"I don't need a perfect bridge. 'By the way' is a complete sentence.\"", bundle: 'pro' },
-        { q: "You worry the other person will notice you're switching.", a: "\"So what if they notice? A warm, open switch reads as confidence, not evasion.\"", bundle: 'pro' },
-        { q: "Your switch landed a bit awkwardly and you feel embarrassed.", a: "\"One clunky transition isn't a disaster. I acknowledge it, smile, and carry on.\"", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "The Sensitive-Steer Mindset",
-      guideFront: "A thought that holds you back.",
-      guideBack: "A way to reset it.",
-      description: "The stance behind Steering Away from Sensitive: you can care about someone and move the conversation somewhere kinder at the same time — protecting them isn't evasion. Example of the shift — instead of freezing in an awkward topic, you gently guide it somewhere safer.\n\nWhere it goes wrong:\n1. You freeze in an uncomfortable topic because leaving feels like abandoning them.\n2. You change the subject with no acknowledgement, and it reads as cold.\n3. You keep the topic going out of politeness while they visibly shrink.\n\nMindset: you can care about someone and move the conversation somewhere kinder at the same time. Protecting them is not evasion.",
-      inputs: [
-        { q: "A sensitive topic is dragging and you feel trapped in it.", a: "\"I can care about them and move us somewhere kinder at the same time.\"", bundle: 'pro' },
-        { q: "You worry that steering away looks like you don't care.", a: "\"Redirecting gently IS the caring move — I'm sparing them, not dodging them.\"", bundle: 'pro' },
-        { q: "You feel you have to solve the heavy topic before you can leave it.", a: "\"I don't have to fix it. Sometimes the kindest thing is to lighten the room.\"", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "The Respectful-Exit Mindset",
-      guideFront: "A thought that holds you back.",
-      guideBack: "A way to reset it.",
-      description: "The stance behind Respectful Exit: letting a topic end is part of a good conversation — my job is flow, not endurance. Example of the shift — instead of forcing a spent topic along, you close it warmly and open something fresh.\n\nWhere it goes wrong:\n1. You force a spent topic along because ending it feels like rejection.\n2. You wait for them to close it, and they are waiting for you.\n3. You treat a long conversation as a better one.\n\nMindset: letting a topic end is part of a good conversation. Your job is flow, not endurance.",
-      inputs: [
-        { q: "You feel responsible for keeping every topic going forever.", a: "\"My job is flow, not endurance. Letting a topic end is part of a good conversation.\"", bundle: 'pro' },
-        { q: "You're bored but assume it's your fault for not being interested.", a: "\"If I'm drifting, the topic's probably run its course — that's a cue, not a failing.\"", bundle: 'pro' },
-        { q: "You keep waiting for a 'natural' gap that never comes.", a: "\"Sometimes I make the gap. Waiting forever is just avoiding the move.\"", bundle: 'pro' },
-      ]
-    },
-  ],
   reactingtounexpectedstatements: [
     {
       name: "You Are Allowed a Second",
@@ -680,56 +644,6 @@ const mindsetCollections = {
         { q: "It'd be awkward to raise it again.", a: "\"Can I come back to yesterday?\" is one sentence and nobody minds it.", bundle: 'pro' },
         { q: "I said I'd think about it and I haven't.", a: "Then say that, and give a new day. Don't just let it go quiet.", bundle: 'pro' },
         { q: "My answer would be the same anyway.", a: "Then say it again, deliberately. That's different from having reacted.", bundle: 'pro' },
-      ]
-    },
-  ],
-  exploringatopic: [
-    {
-      name: "The Exploring-a-Topic Mindset",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
-      description: "The pack-wide stance: a good group conversation is not about being the most interesting person in it, but about keeping the ball in the air. Every move you make either feeds the topic or ends it. Example of the shift — instead of hunting for something impressive to say, you ask the question that keeps everyone else talking.\n\nThe three thoughts that cause the trouble:\n1. \"I have nothing worth saying\" — a question is worth saying.\n2. \"I should find a subject I'm better at\" — jumping topics is the easy escape.\n3. \"Someone else will keep it going\" — everyone at the table is thinking that.\n\nMindset: every move you make either feeds the topic or ends it. There is no neutral turn.",
-      inputs: [
-        { q: "You feel you need something impressive to say.", a: "\"It isn't a competition for the best story. Keeping it going is the contribution.\"", bundle: 'pro' },
-        { q: "You go quiet because you have nothing to add.", a: "\"A question counts. I don't have to know anything to keep this alive.\"", bundle: 'pro' },
-        { q: "You want to move to a subject you are better at.", a: "\"Jumping topics is the easy escape. There's more in this one if I look.\"", bundle: 'pro' },
-        { q: "You feel the conversation dying and freeze.", a: "\"One question or one small story restarts it. It doesn't have to be clever.\"", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "The Nothing-to-Add Mindset",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
-      description: "The stance behind Ask an Open Question: you do not need knowledge of a subject to take part in it. Curiosity is a full contribution, and the people who do know are usually glad to be asked. Example of the shift — instead of sitting out a conversation about cars, you ask what got them into it.\n\nWhere the block shows up:\n1. You sit out a whole conversation about cars.\n2. You wait for a subject you know before you speak.\n3. You worry the basic question will sound stupid.\n\nMindset: not knowing is not a reason to be silent, it is a reason to ask. One question puts you in the conversation without needing a single fact.",
-      inputs: [
-        { q: "The group is talking about something you know nothing about.", a: "\"Not knowing isn't a reason to be silent. It's a reason to ask.\"", bundle: 'pro' },
-        { q: "You worry your question will sound stupid.", a: "\"People like explaining the thing they're into. The basic question is usually welcome.\"", bundle: 'pro' },
-        { q: "You feel like an outsider in the conversation.", a: "\"One question puts me in it. I don't have to earn my way in with facts.\"", bundle: 'pro' },
-        { q: "You wait for a subject you know before speaking.", a: "\"If I only speak on my own topics, I'm barely in the conversation.\"", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "The Ordinary-Is-Enough Mindset",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
-      description: "The stance behind Share a Related Experience: your piece does not have to be dramatic or funny to belong. Small, ordinary experiences are what most good conversations are made of. Example of the shift — instead of holding back a plain story, you tell the one about the basil that died.\n\nThree things your contribution does not need to be:\n1. Not dramatic — a dead basil plant is plenty.\n2. Not funny — a punchline is a bonus, not a requirement.\n3. Not better than theirs — it is not a ranking.\n\nMindset: small and specific beats big and vague. Ordinary experience is what most good conversations are actually made of.",
-      inputs: [
-        { q: "You hold back a story because it is not interesting enough.", a: "\"Ordinary is fine. Most of a good conversation is small stuff, told warmly.\"", bundle: 'pro' },
-        { q: "You compare your story to the better one just told.", a: "\"It's not a ranking. Mine only has to be related, not better.\"", bundle: 'pro' },
-        { q: "You think you need a punchline before you can share anything.", a: "\"A detail is enough. The point is joining in, not performing.\"", bundle: 'pro' },
-        { q: "You stay silent because your experience feels too small.", a: "\"Small experiences are relatable, and that's worth more here than impressive ones.\"", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "The Balance Mindset",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
-      description: "The stance behind Share, Then Invite: holding the floor is not winning, and handing it over is not losing. The conversation people remember well is the one that got shared out. Example of the shift — instead of adding a fourth point of your own, you ask what the others think.\n\nThe tell is what you do with a pause:\n1. Fill it with another point of your own — that is holding the floor.\n2. Fill it with a question — that is passing it on.\n3. Notice who has not spoken — that is running the room well.\n\nMindset: giving the topic away is what keeps it alive. It comes back richer than you left it.",
-      inputs: [
-        { q: "You are enjoying having the floor and keep going.", a: "\"Holding the floor isn't winning. The best conversations get passed around.\"", bundle: 'pro' },
-        { q: "You feel that handing over the topic means losing it.", a: "\"Giving it away keeps it alive. It comes back richer than I left it.\"", bundle: 'pro' },
-        { q: "You worry you have been talking too much.", a: "\"Easy fix. One question and the balance is back.\"", bundle: 'pro' },
-        { q: "You notice someone has said nothing and say nothing about it.", a: "\"Opening a door for one quiet person can change the whole table.\"", bundle: 'pro' },
       ]
     },
   ],
@@ -3587,72 +3501,6 @@ const mindsetCollections = {
       ]
     },
   ],
-  showunderstanding: [
-    {
-      name: "Understanding as Agreement",
-      guideFront: "A limiting thought",
-      guideBack: "A way to reset it",
-      description: "\"If I say I understand, I've agreed with them.\"\n\n**What is true instead:** you can reflect somebody's position back perfectly and disagree with it a minute later. They will take the disagreement better for having been understood first.\n\n**Why it feels right:** in an argument the first person to concede loses ground, and a loop sounds like a concession. It is a receipt, not a concession.\n\n**What it costs:** you stop showing understanding exactly where it matters most, and the conversation becomes two people explaining.\n\nMindset: understanding is not a concession. It is the thing that makes the disagreement worth having.",
-      inputs: [
-        { q: "If I say I understand, it sounds like I'm agreeing.", a: "I can understand it completely and still say no in the next sentence.", bundle: 'pro' },
-        { q: "Reflecting their point back gives them ammunition.", a: "It gives them a receipt. Nobody has ever won an argument by proving they weren't listening.", bundle: 'pro' },
-        { q: "If I loop this back, I'll have conceded the point.", a: "Saying what someone thinks isn't the same as thinking it.", bundle: 'pro' },
-        { q: "I don't want to encourage them by seeming sympathetic.", a: "They'll stop repeating it once it's landed. Being ignored is what makes people repeat things.", bundle: 'pro' },
-        { q: "Understanding without helping is useless.", a: "Being understood is the help, most of the time. It isn't a consolation prize.", bundle: 'pro' },
-        { q: "I need something clever to say or there's no point saying anything.", a: "A rephrase in my own words does more than anything clever would.", bundle: 'pro' },
-        { q: "If I agree they've had a hard time, I'm admitting I got it wrong.", a: "Two things can be true. Their week was hard and my decision was right.", bundle: 'pro' },
-        { q: "I'll understand them once they've understood me.", a: "Somebody has to go first, and going first is cheaper than it looks.", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Doing Too Much",
-      guideFront: "A limiting thought",
-      guideBack: "A way to reset it",
-      description: "\"The more of these moves I use, the more understanding I'm being.\"\n\n**What is true instead:** one move, then wait. The silence after it is the space where the other person decides whether to go further.\n\n**Why it feels right:** each move is good on its own, so three sounds better than one. And the pause feels long from your side in a way it does not from theirs.\n\n**What it costs:** a loop, a question and your own story in one breath is not three times the understanding. It is a performance, and it leaves them nowhere to go.\n\nMindset: one move, then wait. Two seconds is not awkward. It is somebody deciding whether to say the real thing.",
-      inputs: [
-        { q: "I want to reflect, ask and relate all at once.", a: "One of them. Then wait. The pause is part of the move.", bundle: 'pro' },
-        { q: "I stacked two questions and they answered the easier one.", a: "One question. Ask two and I've chosen the one they'll dodge.", bundle: 'pro' },
-        { q: "I reflected something back and immediately kept talking.", a: "Leave the space. That's where they say the real thing.", bundle: 'pro' },
-        { q: "I can feel the silence and I want to fill it.", a: "Two seconds isn't awkward. It's them deciding whether to go further.", bundle: 'pro' },
-        { q: "One sentence doesn't feel like enough of a response.", a: "It's more than they usually get. Most people don't get one.", bundle: 'pro' },
-        { q: "If I only ask one thing, I'll miss the important part.", a: "They'll get to it. The second thing they say is usually the real one.", bundle: 'pro' },
-        { q: "A short answer from me looks like I don't care.", a: "Short and accurate reads as care. Long and general reads as filling time.", bundle: 'pro' },
-        { q: "I've got three good responses and I don't want to waste two.", a: "They keep. The conversation isn't over after one turn.", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Going Through the Motions",
-      guideFront: "A limiting thought",
-      guideBack: "A way to reset it",
-      description: "\"If I use the technique correctly, that counts as listening.\"\n\n**What is true instead:** the words are nearly identical either way, and the difference still comes through. People can tell whether you wanted the answer.\n\n**Why it feels right:** the technique is the hard part to learn, so learning it feels like arriving. And it works — until it runs without you behind it.\n\n**What it costs:** a question you do not listen to the answer of establishes that your questions mean nothing.\n\nMindset: if you are not actually curious, a plain \"that sounds hard\" beats a well-executed technique.",
-      inputs: [
-        { q: "I asked a follow-up and realise I didn't hear the answer.", a: "Then the question was for me, not them. Ask again and mean it.", bundle: 'pro' },
-        { q: "My loop was accurate and came out cold.", a: "Accurate isn't the point. Would I say it that way to someone I like?", bundle: 'pro' },
-        { q: "I related with a story I wanted to tell anyway.", a: "That's my turn dressed as listening. Save it.", bundle: 'pro' },
-        { q: "I'm not actually curious about this topic.", a: "Then say the honest small thing. \"That sounds hard\" beats a technique.", bundle: 'pro' },
-        { q: "I'm working out my next move while they're still talking.", a: "There's no next move to plan. It comes out of what they say.", bundle: 'pro' },
-        { q: "I know the formula, so I don't need to concentrate.", a: "The formula is the easy half. The listening is the half that shows.", bundle: 'pro' },
-        { q: "I did all three moves and it still went flat.", a: "Then none of them were aimed at them. Technique doesn't survive being on autopilot.", bundle: 'pro' },
-        { q: "I'm tired and I don't have the attention for this right now.", a: "Say so. \"I want to hear this properly — can we do it after dinner?\" is honest listening.", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "The Pull to Relate",
-      guideFront: "A limiting thought",
-      guideBack: "A way to reset it",
-      description: "\"Telling them about my version is how I show I understand.\"\n\n**What is true instead:** sometimes it is, and it is the warmest of the three when it lands. But the pull arrives disguised as empathy, and earliest when the match is best.\n\n**Why it feels right:** you have been there, and saying so does help — once they have finished. The timing is the difficulty, not the intention.\n\n**What it costs:** somebody still being heard hears it as the moment the conversation stopped being about them, and quietly winds the story up early.\n\nMindset: two sentences, then hand it back. Connection, not comparison — and never \"the same thing happened to me but worse\".",
-      inputs: [
-        { q: "My version is getting longer than theirs was.", a: "Cut it to two sentences and hand it back. It's a nod, not a turn.", bundle: 'pro' },
-        { q: "I want to tell my story more than I want to hear theirs.", a: "That's the signal to wait. Relating that serves me isn't relating.", bundle: 'pro' },
-        { q: "I'm about to say my version was worse.", a: "That's competing, not connecting. Everyone can hear the difference.", bundle: 'pro' },
-        { q: "They haven't finished and I have a perfect match ready.", a: "It'll still be true in two minutes. Let them finish first.", bundle: 'pro' },
-        { q: "If I don't say it now I'll lose the moment.", a: "If it only works right now, it was for me.", bundle: 'pro' },
-        { q: "My experience would genuinely help them.", a: "Then it'll help more after they've been understood. Advice lands on cleared ground.", bundle: 'pro' },
-        { q: "Staying quiet about mine feels dishonest, like I'm holding back.", a: "Holding back for two minutes isn't dishonesty. It's timing.", bundle: 'pro' },
-        { q: "They asked me directly whether I've been through it.", a: "Then answer — briefly, and hand it straight back with a question.", bundle: 'pro' },
-      ]
-    },
-  ],
   talkingaboutyourself: [
     {
       name: "Just Being Polite",
@@ -3944,6 +3792,204 @@ const mindsetCollections = {
         { q: "Everyone else is doing it.", a: "To each other, with years behind it. You've had four minutes.", bundle: 'pro' },
         { q: "Self-deprecation is boring.", a: "It's also the only target that can't complain, which makes it useful.", bundle: 'pro' },
         { q: "The joke's about their thing, not them.", a: "Then shrink the thing and leave them out of it entirely.", bundle: 'pro' },
+      ]
+    },
+  ],
+  showunderstanding: [
+    {
+      name: "Understanding as Agreement",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If I say I understand, I've agreed with them.\"\n\n**What is true instead:** you can reflect somebody's position back perfectly and disagree with it a minute later. They will take the disagreement better for having been understood first.\n\n**Why it feels right:** in an argument the first person to concede loses ground, and a loop sounds like a concession. It is a receipt, not a concession.\n\n**What it costs:** you stop showing understanding exactly where it matters most, and the conversation becomes two people explaining.\n\nMindset: understanding is not a concession. It is the thing that makes the disagreement worth having.",
+      inputs: [
+        { q: "If I say I understand, it sounds like I'm agreeing.", a: "I can understand it completely and still say no in the next sentence.", bundle: 'pro' },
+        { q: "Reflecting their point back gives them ammunition.", a: "It gives them a receipt. Nobody has ever won an argument by proving they weren't listening.", bundle: 'pro' },
+        { q: "If I loop this back, I'll have conceded the point.", a: "Saying what someone thinks isn't the same as thinking it.", bundle: 'pro' },
+        { q: "I don't want to encourage them by seeming sympathetic.", a: "They'll stop repeating it once it's landed. Being ignored is what makes people repeat things.", bundle: 'pro' },
+        { q: "Understanding without helping is useless.", a: "Being understood is the help, most of the time. It isn't a consolation prize.", bundle: 'pro' },
+        { q: "I need something clever to say or there's no point saying anything.", a: "A rephrase in my own words does more than anything clever would.", bundle: 'pro' },
+        { q: "If I agree they've had a hard time, I'm admitting I got it wrong.", a: "Two things can be true. Their week was hard and my decision was right.", bundle: 'pro' },
+        { q: "I'll understand them once they've understood me.", a: "Somebody has to go first, and going first is cheaper than it looks.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Doing Too Much",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"The more of these moves I use, the more understanding I'm being.\"\n\n**What is true instead:** one move, then wait. The silence after it is the space where the other person decides whether to go further.\n\n**Why it feels right:** each move is good on its own, so three sounds better than one. And the pause feels long from your side in a way it does not from theirs.\n\n**What it costs:** a loop, a question and your own story in one breath is not three times the understanding. It is a performance, and it leaves them nowhere to go.\n\nMindset: one move, then wait. Two seconds is not awkward. It is somebody deciding whether to say the real thing.",
+      inputs: [
+        { q: "I want to reflect, ask and relate all at once.", a: "One of them. Then wait. The pause is part of the move.", bundle: 'pro' },
+        { q: "I stacked two questions and they answered the easier one.", a: "One question. Ask two and I've chosen the one they'll dodge.", bundle: 'pro' },
+        { q: "I reflected something back and immediately kept talking.", a: "Leave the space. That's where they say the real thing.", bundle: 'pro' },
+        { q: "I can feel the silence and I want to fill it.", a: "Two seconds isn't awkward. It's them deciding whether to go further.", bundle: 'pro' },
+        { q: "One sentence doesn't feel like enough of a response.", a: "It's more than they usually get. Most people don't get one.", bundle: 'pro' },
+        { q: "If I only ask one thing, I'll miss the important part.", a: "They'll get to it. The second thing they say is usually the real one.", bundle: 'pro' },
+        { q: "A short answer from me looks like I don't care.", a: "Short and accurate reads as care. Long and general reads as filling time.", bundle: 'pro' },
+        { q: "I've got three good responses and I don't want to waste two.", a: "They keep. The conversation isn't over after one turn.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Going Through the Motions",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If I use the technique correctly, that counts as listening.\"\n\n**What is true instead:** the words are nearly identical either way, and the difference still comes through. People can tell whether you wanted the answer.\n\n**Why it feels right:** the technique is the hard part to learn, so learning it feels like arriving. And it works — until it runs without you behind it.\n\n**What it costs:** a question you do not listen to the answer of establishes that your questions mean nothing.\n\nMindset: if you are not actually curious, a plain \"that sounds hard\" beats a well-executed technique.",
+      inputs: [
+        { q: "I asked a follow-up and realise I didn't hear the answer.", a: "Then the question was for me, not them. Ask again and mean it.", bundle: 'pro' },
+        { q: "My loop was accurate and came out cold.", a: "Accurate isn't the point. Would I say it that way to someone I like?", bundle: 'pro' },
+        { q: "I related with a story I wanted to tell anyway.", a: "That's my turn dressed as listening. Save it.", bundle: 'pro' },
+        { q: "I'm not actually curious about this topic.", a: "Then say the honest small thing. \"That sounds hard\" beats a technique.", bundle: 'pro' },
+        { q: "I'm working out my next move while they're still talking.", a: "There's no next move to plan. It comes out of what they say.", bundle: 'pro' },
+        { q: "I know the formula, so I don't need to concentrate.", a: "The formula is the easy half. The listening is the half that shows.", bundle: 'pro' },
+        { q: "I did all three moves and it still went flat.", a: "Then none of them were aimed at them. Technique doesn't survive being on autopilot.", bundle: 'pro' },
+        { q: "I'm tired and I don't have the attention for this right now.", a: "Say so. \"I want to hear this properly — can we do it after dinner?\" is honest listening.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Pull to Relate",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Telling them about my version is how I show I understand.\"\n\n**What is true instead:** sometimes it is, and it is the warmest of the three when it lands. But the pull arrives disguised as empathy, and earliest when the match is best.\n\n**Why it feels right:** you have been there, and saying so does help — once they have finished. The timing is the difficulty, not the intention.\n\n**What it costs:** somebody still being heard hears it as the moment the conversation stopped being about them, and quietly winds the story up early.\n\nMindset: two sentences, then hand it back. Connection, not comparison — and never \"the same thing happened to me but worse\".",
+      inputs: [
+        { q: "My version is getting longer than theirs was.", a: "Cut it to two sentences and hand it back. It's a nod, not a turn.", bundle: 'pro' },
+        { q: "I want to tell my story more than I want to hear theirs.", a: "That's the signal to wait. Relating that serves me isn't relating.", bundle: 'pro' },
+        { q: "I'm about to say my version was worse.", a: "That's competing, not connecting. Everyone can hear the difference.", bundle: 'pro' },
+        { q: "They haven't finished and I have a perfect match ready.", a: "It'll still be true in two minutes. Let them finish first.", bundle: 'pro' },
+        { q: "If I don't say it now I'll lose the moment.", a: "If it only works right now, it was for me.", bundle: 'pro' },
+        { q: "My experience would genuinely help them.", a: "Then it'll help more after they've been understood. Advice lands on cleared ground.", bundle: 'pro' },
+        { q: "Staying quiet about mine feels dishonest, like I'm holding back.", a: "Holding back for two minutes isn't dishonesty. It's timing.", bundle: 'pro' },
+        { q: "They asked me directly whether I've been through it.", a: "Then answer — briefly, and hand it straight back with a question.", bundle: 'pro' },
+      ]
+    },
+  ],
+  exploringatopic: [
+    {
+      name: "Whose Job It Is",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Somebody else will keep this going.\"\n\n**What is true instead:** every move you make either feeds the topic or ends it. There is no neutral turn, and a nod is a turn.\n\n**Why it feels right:** somebody usually does keep it going, so the belief mostly survives contact with reality. It only fails in the rooms where everyone is thinking it.\n\n**What it costs:** the conversations that die are the ones where four people were all waiting for a fifth. Nobody notices they did it, because nothing happened.\n\nMindset: every move you make either feeds the topic or ends it.",
+      inputs: [
+        { q: "Someone else will keep this going.", a: "Everyone at the table is thinking that. That's how a good subject dies.", bundle: 'pro' },
+        { q: "I don't need something impressive to say.", a: "Right — it isn't a competition for the best story. Keeping it going is the contribution.", bundle: 'pro' },
+        { q: "I'd rather move to a subject I'm better at.", a: "Jumping topics is the easy escape. There's more in this one if I look.", bundle: 'pro' },
+        { q: "The conversation is dying and I've frozen.", a: "One question or one small story restarts it. It doesn't have to be clever.", bundle: 'pro' },
+        { q: "If I say nothing, nothing is lost.", a: "A silent turn is still a turn. It just ends where it started.", bundle: 'pro' },
+        { q: "I'm not the host, it isn't my job.", a: "There is no host. It's four people and whoever speaks next.", bundle: 'pro' },
+        { q: "I said something and it went nowhere.", a: "Half of them do. The ones that land are why the other half were worth saying.", bundle: 'pro' },
+        { q: "Everyone else seems better at this.", a: "They're using five moves on repeat. You've got the same five.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Not Knowing",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"I can't join in — I don't know anything about this.\"\n\n**What is true instead:** knowledge is not the entry ticket. Curiosity is a full contribution, and the people who do know are usually glad to be asked.\n\n**Why it feels right:** in a room of enthusiasts it genuinely feels as if there is a level of knowledge you need to reach before you are allowed a turn.\n\n**What it costs:** you sit out whole conversations waiting for a subject you own, and the waiting reads from outside as boredom.\n\nMindset: not knowing is not a reason to be silent. It is a reason to ask.",
+      inputs: [
+        { q: "The group is talking about something I know nothing about.", a: "Not knowing isn't a reason to be silent. It's a reason to ask.", bundle: 'pro' },
+        { q: "My question will sound stupid.", a: "People like explaining the thing they're into. The basic question is usually welcome.", bundle: 'pro' },
+        { q: "I feel like an outsider in this conversation.", a: "One question puts me in it. I don't have to earn my way in with facts.", bundle: 'pro' },
+        { q: "I'll wait for a subject I know before I speak.", a: "If I only speak on my own topics, I'm barely in the conversation.", bundle: 'pro' },
+        { q: "They'll have to stop and explain it to me.", a: "They'd rather do that than have me sit there silently.", bundle: 'pro' },
+        { q: "I've been quiet so long it would be strange to speak now.", a: "Nobody is tracking it. Ask the thing you've been wondering.", bundle: 'pro' },
+        { q: "I might ask something they've already covered.", a: "Then they'll say so, in one sentence, and the subject is still moving.", bundle: 'pro' },
+        { q: "I can't tell if what they're saying is right.", a: "You don't need to. You need to be interested, which you are.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Too Small to Say",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"My version isn't worth telling.\"\n\n**What is true instead:** your piece does not have to be dramatic, funny, or better than theirs. It only has to be related, and small ordinary experiences are what most good conversations are made of.\n\n**Why it feels right:** the contributions you remember other people making were the good ones. You never notice the hundreds of ordinary ones that kept the evening going.\n\n**What it costs:** the search for something worth telling takes longer than the telling would have, and it usually ends in you saying nothing.\n\nMindset: small and specific beats big and vague.",
+      inputs: [
+        { q: "My story isn't interesting enough.", a: "Ordinary is fine. Most of a good conversation is small stuff, told warmly.", bundle: 'pro' },
+        { q: "Someone just told a much better one.", a: "It's not a ranking. Mine only has to be related, not better.", bundle: 'pro' },
+        { q: "I need a punchline before I can share this.", a: "A detail is enough. The point is joining in, not performing.", bundle: 'pro' },
+        { q: "My experience is too small to mention.", a: "Small experiences are relatable, which is worth more here than impressive ones.", bundle: 'pro' },
+        { q: "It'll sound like I'm making it about me.", a: "One related thing, then a question. That's not taking over.", bundle: 'pro' },
+        { q: "I'd be repeating what someone already said.", a: "Then say so and add your bit. \"Same here, except—\" is a whole contribution.", bundle: 'pro' },
+        { q: "My story doesn't have an ending.", a: "Very few do. Say the part you remember and stop.", bundle: 'pro' },
+        { q: "I'll wait until I've got something better.", a: "Nothing better arrives, and the topic will have moved on.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Giving It Away",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If I hand the topic over, I lose it.\"\n\n**What is true instead:** holding the floor is not winning, and handing it over is not losing. The conversation people remember well is the one that got shared out.\n\n**Why it feels right:** it is genuinely enjoyable to be the one talking, and a subject you are good at is a rare chance to be that person.\n\n**What it costs:** everyone else stops contributing, and then it stops being a conversation and becomes a talk with an audience who cannot leave.\n\nMindset: giving the topic away keeps it alive. It comes back richer than you left it.",
+      inputs: [
+        { q: "I'm enjoying having the floor and I want to keep going.", a: "Holding the floor isn't winning. The best conversations get passed around.", bundle: 'pro' },
+        { q: "Handing over the topic means losing it.", a: "Giving it away keeps it alive. It comes back richer than I left it.", bundle: 'pro' },
+        { q: "I think I've been talking too much.", a: "Easy fix. One question and the balance is back.", bundle: 'pro' },
+        { q: "Someone has said nothing and I've said nothing about it.", a: "Opening a door for one quiet person can change the whole table.", bundle: 'pro' },
+        { q: "If I stop, the conversation will stop.", a: "It won't. It'll go somewhere you couldn't have taken it.", bundle: 'pro' },
+        { q: "Nobody else seems to want a turn.", a: "An open question is easy to dodge. Use a name.", bundle: 'pro' },
+        { q: "I've got one more thing and then I'll stop.", a: "That's the sentence that turns three minutes into six.", bundle: 'pro' },
+        { q: "They asked, so they must want the long version.", a: "Give the short one and offer the long one. Then it's their choice.", bundle: 'pro' },
+      ]
+    },
+  ],
+  changingtopics: [
+    {
+      name: "Steering Feels Rude",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Changing the subject is rude. I should let them finish properly.\"\n\n**What is true instead:** steering is a service, not a hijack. Guiding a conversation somewhere better is something both people benefit from, and somebody has to do it.\n\n**Why it feels right:** interrupting IS rude, and the two feel similar from the inside. But an interruption takes the turn away; a topic change happens between turns.\n\n**What it costs:** you sit through dead topics out of politeness, and so do they — two people being polite at each other while an evening goes nowhere.\n\nMindset: steering is not rude. Keeping a dead topic alive out of politeness helps nobody.",
+      inputs: [
+        { q: "It feels rude to change the subject.", a: "Steering isn't rude. Keeping a dead topic alive out of politeness helps no one.", bundle: 'pro' },
+        { q: "They haven't finished, so I should wait.", a: "They have finished. That's why there's a pause you're standing in.", bundle: 'pro' },
+        { q: "If I switch they'll think I wasn't interested.", a: "Then acknowledge it first. One short sentence fixes that entirely.", bundle: 'pro' },
+        { q: "Someone else should be the one to move it on.", a: "They're waiting for you. That's usually how a conversation stalls.", bundle: 'pro' },
+        { q: "My switch landed a bit awkwardly and I feel embarrassed.", a: "One clunky transition isn't a disaster. Smile and carry on.", bundle: 'pro' },
+        { q: "They'll notice I'm changing the subject.", a: "So what if they notice? A warm, open switch reads as confidence, not evasion.", bundle: 'pro' },
+        { q: "It's their conversation, not mine.", a: "It's a conversation. It belongs to whoever speaks next.", bundle: 'pro' },
+        { q: "Changing it will look like I want to leave.", a: "Opening a new subject is the opposite of leaving.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Perfect Bridge",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"I can't change the subject until I think of a smooth way in.\"\n\n**What is true instead:** \"by the way\" is a complete sentence. A flagged switch is honest and usually gets a laugh; only an unflagged one is jarring.\n\n**Why it feels right:** the smoothest switches genuinely are the linked ones, and it is satisfying to find the word that turns a conversation. When there is one to find, it is worth using.\n\n**What it costs:** the search takes longer than the silence you were trying to avoid, and the bridge you eventually construct sounds constructed.\n\nMindset: a bridge is nicer when there is one. There is no rule that says there has to be.",
+      inputs: [
+        { q: "I can't think of a clever bridge, so I'll stay stuck.", a: "I don't need a perfect bridge. \"By the way\" is a complete sentence.", bundle: 'pro' },
+        { q: "A random switch will sound clumsy.", a: "Not if you flag it. An unflagged jump is jarring; a flagged one is just honest.", bundle: 'pro' },
+        { q: "There must be something in what they said I can use.", a: "Sometimes there genuinely isn't. Three words and a shrug is not a bridge.", bundle: 'pro' },
+        { q: "I'll wait for a natural gap.", a: "Sometimes you make the gap. Waiting forever is just avoiding the move.", bundle: 'pro' },
+        { q: "I found a link but it's a bit of a stretch.", a: "Then it'll sound like a stretch. Say \"completely unrelated\" instead — it's warmer.", bundle: 'pro' },
+        { q: "Good conversationalists always find the smooth link.", a: "They also say \"anyway\" a lot. You just don't notice it.", bundle: 'pro' },
+        { q: "If I flag the switch it draws attention to it.", a: "It draws attention to you being relaxed about it. That's different.", bundle: 'pro' },
+        { q: "I've been searching for a way in for ten seconds.", a: "That's nine seconds longer than \"right, new subject\" would have taken.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Leaving Them In It",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Moving the subject on would look like I don't care.\"\n\n**What is true instead:** redirecting gently IS the caring move. You are sparing them, not dodging them — and staying in a subject somebody is struggling with does not help them out of it.\n\n**Why it feels right:** leaving too fast really can read as callous, and the fear is a decent instinct. The fix is the acknowledgement, not staying put.\n\n**What it costs:** you both sit in something uncomfortable that neither of you can do anything about, and the person who raised it now has to manage your discomfort as well as their own.\n\nMindset: you do not have to fix it. Sometimes the kindest thing is to lighten the room.",
+      inputs: [
+        { q: "A sensitive topic is dragging and I feel trapped in it.", a: "I can care about them and move us somewhere kinder at the same time.", bundle: 'pro' },
+        { q: "Steering away will look like I don't care.", a: "Redirecting gently IS the caring move. I'm sparing them, not dodging them.", bundle: 'pro' },
+        { q: "I have to solve the heavy topic before I can leave it.", a: "I don't have to fix it. Sometimes the kindest thing is to lighten the room.", bundle: 'pro' },
+        { q: "If I change it they'll think I was uncomfortable.", a: "You were. So were they. One of you has to say so.", bundle: 'pro' },
+        { q: "They brought it up, so they must want to talk about it.", a: "Sometimes. Offer the way out and let them decide.", bundle: 'pro' },
+        { q: "Moving on now would be abrupt.", a: "Not if you acknowledge it first. That's the whole difference.", bundle: 'pro' },
+        { q: "I don't know what to say about it, so I'll say nothing.", a: "\"I'm sorry, and we don't have to go into it\" is enough. Then move.", bundle: 'pro' },
+        { q: "They went quiet after I steered away.", a: "Quiet can be relief. Give it a beat before you decide it went wrong.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Endurance",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Once a topic has started, I have to keep it going.\"\n\n**What is true instead:** your job is flow, not endurance. Letting a topic end is part of a good conversation, and a subject that has run its course is not a failure of effort.\n\n**Why it feels right:** the person who keeps things going does real work, and it is a good instinct pointed at the wrong target.\n\n**What it costs:** you keep spent topics alive past the point where anyone is enjoying them, which is exactly when a conversation starts to feel like an obligation.\n\nMindset: letting a topic end is part of a good conversation.",
+      inputs: [
+        { q: "I feel responsible for keeping every topic going.", a: "My job is flow, not endurance. Letting a topic end is part of a good conversation.", bundle: 'pro' },
+        { q: "I'm bored, which means I'm not being interested enough.", a: "If I'm drifting, the topic's probably run its course. That's a cue, not a failing.", bundle: 'pro' },
+        { q: "I keep waiting for a natural gap that never comes.", a: "Sometimes I make the gap. Waiting forever is just avoiding the move.", bundle: 'pro' },
+        { q: "If this topic dies I'll have nothing to replace it with.", a: "You will. Something always turns up once the old one stops taking the space.", bundle: 'pro' },
+        { q: "They started it, so they must still want it.", a: "Or they're keeping it going for you. Somebody has to check.", bundle: 'pro' },
+        { q: "Ending it early would waste what we've said.", a: "Nothing is wasted. It happened, and now something else can.", bundle: 'pro' },
+        { q: "I've squeezed three more questions out of this subject.", a: "That's the tell. Squeezing is not the same as interest.", bundle: 'pro' },
+        { q: "A short topic feels like a failure.", a: "Ten good short ones beat one long one nobody enjoyed.", bundle: 'pro' },
       ]
     },
   ],

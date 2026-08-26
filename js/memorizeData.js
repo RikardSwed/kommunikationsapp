@@ -1137,73 +1137,6 @@ const memorizeCollections = {
       ]
     },
   ],
-  changingtopics: [
-    {
-      name: "Core Idea",
-      description: "The concept behind changing topics and the full set of moves.",
-      cards: [
-        { q: "What is the goal when changing topics?", a: "To move the conversation somewhere better without it feeling abrupt or dismissive — steering, not hijacking.", bundle: 'free' },
-        { q: "What are the six moves for changing topics?", a: "Linking, Acknowledge and Redirect, Finding Common Ground, Random or Light Switch, Steering Away from Sensitive, Respectful Exit.", bundle: 'free' },
-        { q: "What's the golden rule that stops a switch feeling rude?", a: "Acknowledge the current topic briefly before you move — even one line (\"that's interesting, thanks\") softens the change.", bundle: 'free' },
-        { q: "How do you pick which move to use?", a: "Detail to catch → Linking; you relate → Common Ground; topic done → Redirect; over-covered → Exit; stale/safe → Light Switch; sensitive → Steer.", bundle: 'pro' },
-        { q: "What's the through-line of all six moves?", a: "You guide the conversation somewhere better without making the other person feel dismissed.", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Linking",
-      description: "The theory behind bridging off what they just said.",
-      cards: [
-        { q: "What is Linking?", a: "Catching a word or detail from what they said and using it as a bridge to a new topic.", bundle: 'free' },
-        { q: "When does it fit best?", a: "When there's a handy detail to pivot off, so the switch grows out of their own words.", bundle: 'free' },
-        { q: "How is Linking different from Finding Common Ground?", a: "Linking pivots off a word they said; Common Ground shares a matching experience of your own first.", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Acknowledge and Redirect",
-      description: "The theory behind wrapping the old topic and opening a new one.",
-      cards: [
-        { q: "What is Acknowledge and Redirect?", a: "Briefly wrapping up the current topic (\"that's interesting, thanks\"), then introducing a new one.", bundle: 'free' },
-        { q: "When does it fit best?", a: "When a topic is simply finished and you want a clean move to something else.", bundle: 'free' },
-        { q: "Why acknowledge before redirecting?", a: "The brief wrap stops the switch feeling abrupt — it signals you valued what they said.", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Finding Common Ground",
-      description: "The theory behind relating your own experience to open a new direction.",
-      cards: [
-        { q: "What is Finding Common Ground?", a: "Using a shared experience as a stepping stone — \"that's like when I…\" — then opening the new direction.", bundle: 'free' },
-        { q: "When does it fit best?", a: "When you genuinely relate to what they said and want to warm things up before switching.", bundle: 'free' },
-        { q: "What's the risk with this move?", a: "Making it about you — relate briefly, then turn it back to them with a question.", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Random or Light Switch",
-      description: "The theory behind the open, playful subject change.",
-      cards: [
-        { q: "What is a Random or Light Switch?", a: "Changing the subject openly with humour or spontaneity — no bridge needed, just flag it and keep it light.", bundle: 'free' },
-        { q: "When does it fit best?", a: "When the mood is stale or heavy and it's safe to be playful — and when there's nothing to bridge from.", bundle: 'free' },
-        { q: "Why flag the switch out loud?", a: "Naming it (\"okay, random question—\") makes an abrupt change feel light and intentional rather than jarring.", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Steering Away from Sensitive",
-      description: "The theory behind gently guiding away from an uncomfortable subject.",
-      cards: [
-        { q: "What is Steering Away from Sensitive?", a: "Acknowledging an uncomfortable subject briefly, then gently guiding toward safer ground.", bundle: 'free' },
-        { q: "When should you Steer rather than use a Light Switch?", a: "When the subject is genuinely sensitive and someone's uncomfortable — a joke would feel careless.", bundle: 'free' },
-        { q: "What's the shape of the move?", a: "A brief, warm acknowledgement (\"that sounds hard\") + a gentle turn to something lighter — never ignore, never dig in.", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Respectful Exit",
-      description: "The theory behind closing an exhausted topic and moving on.",
-      cards: [
-        { q: "What is a Respectful Exit?", a: "Closing a topic politely when it's been covered or keeps repeating — signal you valued it, then open something new.", bundle: 'free' },
-        { q: "When does it fit best?", a: "When a topic has been covered fully or keeps returning — the over-stayed topic, not the merely finished one.", bundle: 'free' },
-        { q: "What do you do if your switch gets ignored?", a: "Don't repeat the same move — try a clearer one, often a warm Respectful Exit that names that the topic's done.", bundle: 'pro' },
-      ]
-    },
-  ],
   reactingtounexpectedstatements: [
     {
       name: "Core Idea",
@@ -1287,76 +1220,6 @@ const memorizeCollections = {
         { q: "Why is coming back treated as reliable rather than weak?", a: "It makes the first answer clearly a first answer rather than what you think.", bundle: 'pro' },
         { q: "What do you say when they press for an answer now?", a: "\"If you need one now it'll be a poor one. Thursday I'd have a real one.\"", bundle: 'pro' },
         { q: "What is worse than a poor answer in the moment?", a: "Promising to come back and never doing it.", bundle: 'pro' },
-      ]
-    },
-  ],
-  exploringatopic: [
-    {
-      name: "Core Idea",
-      description: "The concept behind exploring a topic and the full set of moves.",
-      cards: [
-        { q: "What is the goal when exploring a topic?", a: "Keep the conversation inside one subject while making it richer — contribute, ask, and expand without jumping away.", bundle: 'free' },
-        { q: "What are the five moves in this pack?", a: "Ask an Open Question, Share a Related Experience, Build on Their Point, Expand to a Related Subtopic, Share Then Invite.", bundle: 'free' },
-        { q: "What does a good group conversation need?", a: "Staying on topic, contributing your own bit, asking questions, and expanding into closely related areas.", bundle: 'free' },
-        { q: "What is the difference between expanding and changing the subject?", a: "Expanding stays close — gardening to indoor plants. Changing leaves the topic behind.", bundle: 'free' },
-        { q: "How do you know whether to deepen or widen?", a: "Deepen while the thread still has life in it; widen when the answers get short and the energy drops.", bundle: 'pro' },
-        { q: "What is the most common mistake in a group conversation?", a: "Jumping to a new topic too early, before the current one has actually been used up.", bundle: 'pro' },
-        { q: "What do you do when you know nothing about the topic?", a: "Ask. A question is a full contribution, and people enjoy explaining what they're into.", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Ask an Open Question",
-      description: "The theory behind the question that cannot be answered with yes or no.",
-      cards: [
-        { q: "What is an open question?", a: "One that can't be answered with yes or no — a what, how or why about the subject in hand.", bundle: 'free' },
-        { q: "Why is it useful when you know nothing about the topic?", a: "It lets you take part without any knowledge, and gives the group more to work with.", bundle: 'free' },
-        { q: "What do open questions sound like?", a: "\"What do you usually grow?\" or \"How long have you been into that?\" or \"Why do you like it?\"", bundle: 'free' },
-        { q: "What is the failure mode?", a: "Questions so wide nobody knows where to start, like \"what do you think about music?\"", bundle: 'pro' },
-        { q: "When is an open question the wrong move?", a: "When you've asked three in a row and it's turning into an interview — share something instead.", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Share a Related Experience",
-      description: "The theory behind putting your own piece into the topic.",
-      cards: [
-        { q: "What is Share a Related Experience?", a: "Adding your own story, habit or opinion from inside the same topic.", bundle: 'free' },
-        { q: "How related does it have to be?", a: "Close enough that it feels like the same conversation — herbs on a windowsill for a gardening topic.", bundle: 'free' },
-        { q: "Why does sharing matter in a group?", a: "A conversation of pure questions turns into an interview. Your piece gives others something to react to.", bundle: 'free' },
-        { q: "What is the failure mode?", a: "The story that quietly tops theirs, or one so long that the topic becomes yours.", bundle: 'pro' },
-        { q: "How is it different from Share, Then Invite?", a: "Sharing adds your piece. Share, Then Invite adds it and hands the floor straight on.", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Build on Their Point",
-      description: "The theory behind going one layer down instead of starting something new.",
-      cards: [
-        { q: "What is Build on Their Point?", a: "Taking what someone just said and going one step further into it, instead of starting something new.", bundle: 'free' },
-        { q: "What does it sound like?", a: "\"You mentioned vegetables — have you tried tomatoes?\" or \"That's interesting, it reminds me of…\"", bundle: 'free' },
-        { q: "Why does it keep a topic alive?", a: "It shows you listened, and it gives the speaker a reason to say more.", bundle: 'free' },
-        { q: "How do you find the next layer?", a: "Pick one word from their sentence and ask about that — \"you said most, what never works?\"", bundle: 'pro' },
-        { q: "What is the failure mode?", a: "Using their point as a launchpad for your own subject. That's changing topic, not building.", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Expand to a Related Subtopic",
-      description: "The theory behind the sideways step that keeps you inside the topic.",
-      cards: [
-        { q: "What is Expand to a Related Subtopic?", a: "Stepping sideways into something close by when the current thread runs out.", bundle: 'free' },
-        { q: "What does a good expansion look like?", a: "Gardening to indoor plants to plants at the office. Sport to team sport to watching versus playing.", bundle: 'free' },
-        { q: "When do you use it?", a: "When answers get short and the energy drops, but nobody actually wants to leave the topic.", bundle: 'free' },
-        { q: "How far is too far?", a: "If people have to stop and ask what you're talking about, it wasn't an expansion — it was a new topic.", bundle: 'pro' },
-        { q: "What is the safest kind of expansion?", a: "One that keeps the subject but changes the angle — doing it versus watching it, home versus work.", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Share, Then Invite",
-      description: "The theory behind the balance move — your bit, then theirs.",
-      cards: [
-        { q: "What is Share, Then Invite?", a: "Saying your own bit and then handing the floor straight on with a question.", bundle: 'free' },
-        { q: "What does it sound like?", a: "\"I love cooking Italian food. What's your favourite thing to cook?\"", bundle: 'free' },
-        { q: "What problem does it solve?", a: "Talking too much, and leaving quiet people out. It fixes both in one move.", bundle: 'free' },
-        { q: "Who should you hand it to?", a: "Whoever hasn't spoken, if there is someone. Using their name makes it easy to answer.", bundle: 'pro' },
-        { q: "What is the failure mode?", a: "Putting someone on the spot with a big question. Keep the invitation easy to answer.", bundle: 'pro' },
       ]
     },
   ],
@@ -5731,120 +5594,6 @@ const memorizeCollections = {
       ]
     },
   ],
-  showunderstanding: [
-    {
-      name: "Core Idea",
-      description: "Three moves that between them cover almost everything somebody needs after they have told you something.\n\n1. **Ask Follow-up Questions**\n2. **Loop Back or Rephrase**\n3. **Relate Through Sharing**\n\nAsk when the story is unfinished, reflect when it has landed, share once it has been heard. One at a time.",
-      cards: [
-        { q: "What is the goal of showing understanding?", a: "Actively demonstrating that you followed what someone said — not just listening quietly.", bundle: 'free' },
-        { q: "What are the three moves in this pack?", a: "Ask Follow-up Questions, Loop Back or Rephrase, and Relate Through Sharing.", bundle: 'free' },
-        { q: "How many should you use at once?", a: "One. Stacking them makes the response about you managing the conversation.", bundle: 'free' },
-        { q: "Is understanding the same as agreeing?", a: "No. You can fully understand someone and disagree with them a minute later.", bundle: 'free' },
-        { q: "What decides which of the three to use?", a: "Where they are — still telling it, just landed it, or finished and settled.", bundle: 'free' },
-        { q: "What is the safe order for something difficult?", a: "Loop first, ask second, relate last. Most people do it backwards.", bundle: 'pro' },
-        { q: "What is the most common mistake?", a: "Relating too early — bringing in your own version before they have finished being heard.", bundle: 'pro' },
-        { q: "What matters more than the technique?", a: "Actually being interested. The formulas are identical whether or not anyone is paying attention.", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Ask Follow-up Questions",
-      description: "",
-      cards: [
-        { q: "What is Ask Follow-up Questions?", a: "Asking something that could only come from someone who was listening to that particular sentence.", bundle: 'free' },
-        { q: "What does it sound like?", a: "\"Can you tell me more about that?\" / \"What were you feeling at that moment?\"", bundle: 'free' },
-        { q: "When is it the right move?", a: "When the story isn't finished. Asking keeps them going.", bundle: 'free' },
-        { q: "What are the three kinds of follow-up?", a: "More of the same, the moment itself, or what came next.", bundle: 'free' },
-        { q: "Why does a question prove attention better than agreement does?", a: "It has to be built out of what they just said. \"That sounds hard\" can be said by someone who heard nothing.", bundle: 'free' },
-        { q: "What is the failure mode?", a: "Aiming at the topic instead of the specific thing — that's a subject change, not a follow-up.", bundle: 'pro' },
-        { q: "When is a question the wrong move?", a: "After they have finished. It reads as being asked to keep performing.", bundle: 'pro' },
-        { q: "What is wrong with two questions in a row?", a: "It becomes an interview, and it means you have given them nothing to ask you about.", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Loop Back or Rephrase",
-      description: "",
-      cards: [
-        { q: "What is Loop Back or Rephrase?", a: "Saying their point back in your own words, so they can hear that it arrived — or correct you.", bundle: 'free' },
-        { q: "What does it sound like?", a: "\"So what you're saying is...\" / \"I hear that you felt frustrated when that happened.\"", bundle: 'free' },
-        { q: "Why your own words rather than theirs?", a: "Repeating their exact sentence is parroting. Rephrasing proves the idea went in.", bundle: 'free' },
-        { q: "What are the three kinds of loop?", a: "The summary, the feeling named, or the check.", bundle: 'free' },
-        { q: "Why does it help to be slightly wrong?", a: "\"No, not annoyed — disappointed\" is them getting closer to their own point. That was the offer.", bundle: 'free' },
-        { q: "What is the failure mode?", a: "Sounding mechanical — \"so what I'm hearing is\" in a voice you would never otherwise use.", bundle: 'pro' },
-        { q: "What does a loop do that nothing else in a conversation does?", a: "It lets somebody find out whether they have been understood, rather than guess.", bundle: 'pro' },
-        { q: "Why is a loop built on a misunderstanding worse than no loop?", a: "They now believe they have been understood when they have not, and the correction costs more later.", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Relate Through Sharing",
-      description: "",
-      cards: [
-        { q: "What is Relate Through Sharing?", a: "Offering something of your own — a time you felt, thought or wanted the same thing.", bundle: 'free' },
-        { q: "What does it sound like?", a: "\"I know exactly what you mean, something similar happened to me...\"", bundle: 'free' },
-        { q: "How long should it be?", a: "Two sentences, then hand it back. Anything with a middle is a story, and stories take the floor.", bundle: 'free' },
-        { q: "What are the three ways to relate?", a: "The matching value, the matching feeling, or the matching experience.", bundle: 'free' },
-        { q: "When is it the right move?", a: "Once they have finished and been understood. Then it arrives as company.", bundle: 'free' },
-        { q: "What turns it from relating into competing?", a: "\"The same thing happened to me but worse.\" Connection, not comparison.", bundle: 'pro' },
-        { q: "Which of the three ways is safest, and why?", a: "The matching value — it says nothing about you, so it cannot take the floor.", bundle: 'pro' },
-        { q: "What is the sign it has gone too far?", a: "They have started asking you follow-up questions.", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Collections",
-      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Finished or Not** — where they are in the story decides the move\n• **Raw or Settled** — how fresh the feeling is decides the move\n• **All Three Moves** — no cue given, which is the real conversation\n\nAll three offer the same three strategies. What changes is what you read to pick one.",
-      cards: [
-        { q: "What are the three collections in this pack?", a: "Finished or Not, Raw or Settled, and All Three Moves.", bundle: 'pro' },
-        { q: "What does Finished or Not read?", a: "The pause. A short breath means carry on; a longer one means they have landed something.", bundle: 'pro' },
-        { q: "What does Raw or Settled read?", a: "How fresh the feeling is — whether they are still inside it or can look at it from outside.", bundle: 'pro' },
-        { q: "Can the two cues disagree?", a: "Yes. Somebody can finish a story and still be raw, and then you loop rather than relate.", bundle: 'pro' },
-        { q: "They are mid-story and not finished. Which move?", a: "Ask Follow-up Questions — a question is permission to carry on.", bundle: 'pro' },
-        { q: "They have just said something that cost them. Which move?", a: "Loop Back or Rephrase — reflect it rather than asking for more.", bundle: 'pro' },
-        { q: "They have finished and the air has cleared. Which move?", a: "Relate Through Sharing, briefly.", bundle: 'pro' },
-        { q: "Why is there no two-strategy collection in this pack?", a: "Two is a comparison, not a choice. A collection makes you pick between at least three.", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Sequences",
-      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **Loop, Then Ask** — Loop Back or Rephrase → Ask Follow-up Questions → Loop Back or Rephrase\n2. **Ask, Then Relate** — Ask Follow-up Questions → Loop Back or Rephrase → Relate Through Sharing\n3. **When They Are Still Upset** — Loop Back or Rephrase → Loop Back or Rephrase → Ask Follow-up Questions\n\nIn each one the order is doing the work, not the individual moves.",
-      cards: [
-        { q: "What is the order in Loop, Then Ask?", a: "Loop back, ask a follow-up, then loop back again on the new part.", bundle: 'pro' },
-        { q: "Why does the loop come before the question?", a: "A question after a loop feels like interest. On its own it can feel like being interviewed.", bundle: 'pro' },
-        { q: "Why does that sequence end with a second loop?", a: "The answer to your question is usually the real thing. The first version was the summary.", bundle: 'pro' },
-        { q: "What is the order in Ask, Then Relate?", a: "Ask a follow-up, loop what you heard, then bring yourself in.", bundle: 'pro' },
-        { q: "Why does relating come last?", a: "Once the whole thing has been told and reflected, your version arrives as company rather than as an interruption.", bundle: 'pro' },
-        { q: "What is the order in When They Are Still Upset?", a: "Two loops, then one gentle question — and then stop.", bundle: 'pro' },
-        { q: "Why is there no relating in that one?", a: "They have not finished being heard, and a comparison invites them to weigh their situation against yours.", bundle: 'pro' },
-        { q: "What do people do instead, in all three?", a: "Lead with their own story, because the match is obvious early and holding it is uncomfortable.", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Challenges",
-      description: "The five things that get in the way of showing understanding:\n\n• **The Urge to Fix** — you want to solve it instead of hear it\n• **Taking the Floor** — your version grows a middle\n• **Sounding Rehearsed** — the technique shows\n• **Losing the Thread** — you have not actually followed\n• **Closed Doors** — there is nothing to work with\n\nFour of the five are about you rather than them. That is the honest shape of this skill.",
-      cards: [
-        { q: "What are the five challenge categories in this pack?", a: "The Urge to Fix, Taking the Floor, Sounding Rehearsed, Losing the Thread, and Closed Doors.", bundle: 'pro' },
-        { q: "Why does advice given too early rarely get taken?", a: "It answers a question they had not finished asking — and it ends the telling.", bundle: 'pro' },
-        { q: "What is the tell that you have taken the floor?", a: "They have started asking you follow-up questions.", bundle: 'pro' },
-        { q: "How do you fix a loop that sounded rehearsed?", a: "Say it again in your own register. If you would not say it that way to a friend, do not.", bundle: 'pro' },
-        { q: "What should you do when you have lost the thread?", a: "Say so, and ask about the specific gap. A loop built on a misunderstanding is worse than no loop.", bundle: 'pro' },
-        { q: "Why is a big question the wrong move with someone closed off?", a: "A bigger question is harder to answer. Offer a small loop they can agree with or correct.", bundle: 'pro' },
-        { q: "What do four of the five categories have in common?", a: "They are about what you are doing, not about what they are doing.", bundle: 'pro' },
-        { q: "What is the move when somebody will not open up and you have a similar story?", a: "Relate Through Sharing — go first, so they do not have to.", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Mindset",
-      description: "The four beliefs that stop people showing understanding:\n\n• **Understanding as Agreement** — reflecting it back means conceding it\n• **Doing Too Much** — more moves means more understanding\n• **Going Through the Motions** — correct technique counts as listening\n• **The Pull to Relate** — my version is how I show I get it\n\nEach one is a reasonable thought that produces the wrong behaviour.",
-      cards: [
-        { q: "What are the four mindset areas in this pack?", a: "Understanding as Agreement, Doing Too Much, Going Through the Motions, and The Pull to Relate.", bundle: 'pro' },
-        { q: "Why does \"if I understand, I've agreed\" cause trouble?", a: "It stops people showing understanding in disagreements, which is where it matters most.", bundle: 'pro' },
-        { q: "What is a loop, if it is not a concession?", a: "A receipt. Saying what somebody thinks is not the same as thinking it.", bundle: 'pro' },
-        { q: "Why is one move better than three?", a: "The silence after one well-chosen response is where they decide whether to go further.", bundle: 'pro' },
-        { q: "How long does a pause have to be before it is awkward?", a: "Longer than it feels. Two seconds is them deciding, not an emergency.", bundle: 'pro' },
-        { q: "What is the problem with a question you do not listen to?", a: "It establishes that your questions do not mean anything.", bundle: 'pro' },
-        { q: "What beats a well-executed technique when you are not curious?", a: "The honest small thing. \"That sounds hard.\"", bundle: 'pro' },
-        { q: "Why does the pull to relate arrive earliest when the match is best?", a: "Because it feels most like empathy exactly when it would take the most.", bundle: 'pro' },
-      ]
-    },
-  ],
   talkingaboutyourself: [
     {
       name: "Core Idea",
@@ -6364,6 +6113,418 @@ const memorizeCollections = {
         { q: "Which target is safest by a wide margin?", a: "Your own failures.", bundle: 'free' },
         { q: "When does irony stop being humour?", a: "When it is aimed at a person, or at something they are proud of. Then it is sarcasm, which is a different thing.", bundle: 'pro' },
         { q: "What is the risk with someone who does not know you?", a: "Delivered flat, it can be taken at face value — so keep it short and let the warmth show.", bundle: 'pro' },
+      ]
+    },
+  ],
+  showunderstanding: [
+    {
+      name: "Core Idea",
+      description: "Three moves that between them cover almost everything somebody needs after they have told you something.\n\n1. **Ask Follow-up Questions**\n2. **Loop Back or Rephrase**\n3. **Relate Through Sharing**\n\nAsk when the story is unfinished, reflect when it has landed, share once it has been heard. One at a time.",
+      cards: [
+        { q: "What is the goal of showing understanding?", a: "Actively demonstrating that you followed what someone said — not just listening quietly.", bundle: 'free' },
+        { q: "What are the three moves in this pack?", a: "Ask Follow-up Questions, Loop Back or Rephrase, and Relate Through Sharing.", bundle: 'free' },
+        { q: "How many should you use at once?", a: "One. Stacking them makes the response about you managing the conversation.", bundle: 'free' },
+        { q: "Is understanding the same as agreeing?", a: "No. You can fully understand someone and disagree with them a minute later.", bundle: 'free' },
+        { q: "What decides which of the three to use?", a: "Where they are — still telling it, just landed it, or finished and settled.", bundle: 'free' },
+        { q: "What is the safe order for something difficult?", a: "Loop first, ask second, relate last. Most people do it backwards.", bundle: 'pro' },
+        { q: "What is the most common mistake?", a: "Relating too early — bringing in your own version before they have finished being heard.", bundle: 'pro' },
+        { q: "What matters more than the technique?", a: "Actually being interested. The formulas are identical whether or not anyone is paying attention.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ask Follow-up Questions",
+      description: "",
+      cards: [
+        { q: "What is Ask Follow-up Questions?", a: "Asking something that could only come from someone who was listening to that particular sentence.", bundle: 'free' },
+        { q: "What does it sound like?", a: "\"Can you tell me more about that?\" / \"What were you feeling at that moment?\"", bundle: 'free' },
+        { q: "When is it the right move?", a: "When the story isn't finished. Asking keeps them going.", bundle: 'free' },
+        { q: "What are the three kinds of follow-up?", a: "More of the same, the moment itself, or what came next.", bundle: 'free' },
+        { q: "Why does a question prove attention better than agreement does?", a: "It has to be built out of what they just said. \"That sounds hard\" can be said by someone who heard nothing.", bundle: 'free' },
+        { q: "What is the failure mode?", a: "Aiming at the topic instead of the specific thing — that's a subject change, not a follow-up.", bundle: 'pro' },
+        { q: "When is a question the wrong move?", a: "After they have finished. It reads as being asked to keep performing.", bundle: 'pro' },
+        { q: "What is wrong with two questions in a row?", a: "It becomes an interview, and it means you have given them nothing to ask you about.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Loop Back or Rephrase",
+      description: "",
+      cards: [
+        { q: "What is Loop Back or Rephrase?", a: "Saying their point back in your own words, so they can hear that it arrived — or correct you.", bundle: 'free' },
+        { q: "What does it sound like?", a: "\"So what you're saying is...\" / \"I hear that you felt frustrated when that happened.\"", bundle: 'free' },
+        { q: "Why your own words rather than theirs?", a: "Repeating their exact sentence is parroting. Rephrasing proves the idea went in.", bundle: 'free' },
+        { q: "What are the three kinds of loop?", a: "The summary, the feeling named, or the check.", bundle: 'free' },
+        { q: "Why does it help to be slightly wrong?", a: "\"No, not annoyed — disappointed\" is them getting closer to their own point. That was the offer.", bundle: 'free' },
+        { q: "What is the failure mode?", a: "Sounding mechanical — \"so what I'm hearing is\" in a voice you would never otherwise use.", bundle: 'pro' },
+        { q: "What does a loop do that nothing else in a conversation does?", a: "It lets somebody find out whether they have been understood, rather than guess.", bundle: 'pro' },
+        { q: "Why is a loop built on a misunderstanding worse than no loop?", a: "They now believe they have been understood when they have not, and the correction costs more later.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Relate Through Sharing",
+      description: "",
+      cards: [
+        { q: "What is Relate Through Sharing?", a: "Offering something of your own — a time you felt, thought or wanted the same thing.", bundle: 'free' },
+        { q: "What does it sound like?", a: "\"I know exactly what you mean, something similar happened to me...\"", bundle: 'free' },
+        { q: "How long should it be?", a: "Two sentences, then hand it back. Anything with a middle is a story, and stories take the floor.", bundle: 'free' },
+        { q: "What are the three ways to relate?", a: "The matching value, the matching feeling, or the matching experience.", bundle: 'free' },
+        { q: "When is it the right move?", a: "Once they have finished and been understood. Then it arrives as company.", bundle: 'free' },
+        { q: "What turns it from relating into competing?", a: "\"The same thing happened to me but worse.\" Connection, not comparison.", bundle: 'pro' },
+        { q: "Which of the three ways is safest, and why?", a: "The matching value — it says nothing about you, so it cannot take the floor.", bundle: 'pro' },
+        { q: "What is the sign it has gone too far?", a: "They have started asking you follow-up questions.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Finished or Not** — where they are in the story decides the move\n• **Raw or Settled** — how fresh the feeling is decides the move\n• **All Three Moves** — no cue given, which is the real conversation\n\nAll three offer the same three strategies. What changes is what you read to pick one.",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "Finished or Not, Raw or Settled, and All Three Moves.", bundle: 'pro' },
+        { q: "What does Finished or Not read?", a: "The pause. A short breath means carry on; a longer one means they have landed something.", bundle: 'pro' },
+        { q: "What does Raw or Settled read?", a: "How fresh the feeling is — whether they are still inside it or can look at it from outside.", bundle: 'pro' },
+        { q: "Can the two cues disagree?", a: "Yes. Somebody can finish a story and still be raw, and then you loop rather than relate.", bundle: 'pro' },
+        { q: "They are mid-story and not finished. Which move?", a: "Ask Follow-up Questions — a question is permission to carry on.", bundle: 'pro' },
+        { q: "They have just said something that cost them. Which move?", a: "Loop Back or Rephrase — reflect it rather than asking for more.", bundle: 'pro' },
+        { q: "They have finished and the air has cleared. Which move?", a: "Relate Through Sharing, briefly.", bundle: 'pro' },
+        { q: "Why is there no two-strategy collection in this pack?", a: "Two is a comparison, not a choice. A collection makes you pick between at least three.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **Loop, Then Ask** — Loop Back or Rephrase → Ask Follow-up Questions → Loop Back or Rephrase\n2. **Ask, Then Relate** — Ask Follow-up Questions → Loop Back or Rephrase → Relate Through Sharing\n3. **Loop, Loop, Ask** — Loop Back or Rephrase → Loop Back or Rephrase → Ask Follow-up Questions\n\nIn each one the order is doing the work, not the individual moves.",
+      cards: [
+        { q: "What is the order in Loop, Then Ask?", a: "Loop back, ask a follow-up, then loop back again on the new part.", bundle: 'pro' },
+        { q: "Why does the loop come before the question?", a: "A question after a loop feels like interest. On its own it can feel like being interviewed.", bundle: 'pro' },
+        { q: "Why does that sequence end with a second loop?", a: "The answer to your question is usually the real thing. The first version was the summary.", bundle: 'pro' },
+        { q: "What is the order in Ask, Then Relate?", a: "Ask a follow-up, loop what you heard, then bring yourself in.", bundle: 'pro' },
+        { q: "Why does relating come last?", a: "Once the whole thing has been told and reflected, your version arrives as company rather than as an interruption.", bundle: 'pro' },
+        { q: "What is the order in Loop, Loop, Ask?", a: "Two loops, then one gentle question — and then stop.", bundle: 'pro' },
+        { q: "Why is there no relating in that one?", a: "They have not finished being heard, and a comparison invites them to weigh their situation against yours.", bundle: 'pro' },
+        { q: "What do people do instead, in all three?", a: "Lead with their own story, because the match is obvious early and holding it is uncomfortable.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five things that get in the way of showing understanding:\n\n• **The Urge to Fix** — you want to solve it instead of hear it\n• **Taking the Floor** — your version grows a middle\n• **Sounding Rehearsed** — the technique shows\n• **Losing the Thread** — you have not actually followed\n• **Closed Doors** — there is nothing to work with\n\nFour of the five are about you rather than them. That is the honest shape of this skill.",
+      cards: [
+        { q: "What are the five challenge categories in this pack?", a: "The Urge to Fix, Taking the Floor, Sounding Rehearsed, Losing the Thread, and Closed Doors.", bundle: 'pro' },
+        { q: "Why does advice given too early rarely get taken?", a: "It answers a question they had not finished asking — and it ends the telling.", bundle: 'pro' },
+        { q: "What is the tell that you have taken the floor?", a: "They have started asking you follow-up questions.", bundle: 'pro' },
+        { q: "How do you fix a loop that sounded rehearsed?", a: "Say it again in your own register. If you would not say it that way to a friend, do not.", bundle: 'pro' },
+        { q: "What should you do when you have lost the thread?", a: "Say so, and ask about the specific gap. A loop built on a misunderstanding is worse than no loop.", bundle: 'pro' },
+        { q: "Why is a big question the wrong move with someone closed off?", a: "A bigger question is harder to answer. Offer a small loop they can agree with or correct.", bundle: 'pro' },
+        { q: "What do four of the five categories have in common?", a: "They are about what you are doing, not about what they are doing.", bundle: 'pro' },
+        { q: "What is the move when somebody will not open up and you have a similar story?", a: "Relate Through Sharing — go first, so they do not have to.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "The four beliefs that stop people showing understanding:\n\n• **Understanding as Agreement** — reflecting it back means conceding it\n• **Doing Too Much** — more moves means more understanding\n• **Going Through the Motions** — correct technique counts as listening\n• **The Pull to Relate** — my version is how I show I get it\n\nEach one is a reasonable thought that produces the wrong behaviour.",
+      cards: [
+        { q: "What are the four mindset areas in this pack?", a: "Understanding as Agreement, Doing Too Much, Going Through the Motions, and The Pull to Relate.", bundle: 'pro' },
+        { q: "Why does \"if I understand, I've agreed\" cause trouble?", a: "It stops people showing understanding in disagreements, which is where it matters most.", bundle: 'pro' },
+        { q: "What is a loop, if it is not a concession?", a: "A receipt. Saying what somebody thinks is not the same as thinking it.", bundle: 'pro' },
+        { q: "Why is one move better than three?", a: "The silence after one well-chosen response is where they decide whether to go further.", bundle: 'pro' },
+        { q: "How long does a pause have to be before it is awkward?", a: "Longer than it feels. Two seconds is them deciding, not an emergency.", bundle: 'pro' },
+        { q: "What is the problem with a question you do not listen to?", a: "It establishes that your questions do not mean anything.", bundle: 'pro' },
+        { q: "What beats a well-executed technique when you are not curious?", a: "The honest small thing. \"That sounds hard.\"", bundle: 'pro' },
+        { q: "Why does the pull to relate arrive earliest when the match is best?", a: "Because it feels most like empathy exactly when it would take the most.", bundle: 'pro' },
+      ]
+    },
+  ],
+  exploringatopic: [
+    {
+      name: "Core Idea",
+      description: "Five moves for staying inside a subject instead of hopping out of it.\n\n1. **Ask an Open Question**\n2. **Share a Related Experience**\n3. **Build on Their Point**\n4. **Expand to a Related Subtopic**\n5. **Share, Then Invite**\n\nTwo feed the topic, two go deeper or sideways, and one hands it on.",
+      cards: [
+        { q: "What are the five moves in this pack?", a: "Ask an Open Question, Share a Related Experience, Build on Their Point, Expand to a Related Subtopic, and Share, Then Invite.", bundle: 'free' },
+        { q: "What is this pack for?", a: "Keeping a subject alive without changing it.", bundle: 'free' },
+        { q: "How is it different from Changing Topics?", a: "Here you stay. Expand goes one step sideways, never away.", bundle: 'free' },
+        { q: "Do you need to know about the subject to take part?", a: "No. A question is a full contribution.", bundle: 'free' },
+        { q: "What does every turn do?", a: "Either feeds the topic or ends it. There is no neutral turn.", bundle: 'free' },
+        { q: "What decides which move to use?", a: "What you are carrying, and how much life is left in the thread.", bundle: 'pro' },
+        { q: "How far is too far when you expand?", a: "If people have to ask what you are talking about, that was a new topic, not an expansion.", bundle: 'pro' },
+        { q: "What is a good group conversation, according to this pack?", a: "Not being the most interesting person in it. Keeping the ball in the air.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ask an Open Question",
+      description: "",
+      cards: [
+        { q: "What makes a question open?", a: "It cannot be answered with yes or no.", bundle: 'free' },
+        { q: "What are the three words open questions start with?", a: "What, how and why.", bundle: 'free' },
+        { q: "What does each of the three pull?", a: "What pulls facts, how pulls process and story, why pulls reasons and feeling.", bundle: 'free' },
+        { q: "When do you use why?", a: "When the topic is ready to go a bit deeper.", bundle: 'free' },
+        { q: "Why is a question a full contribution?", a: "It gives the group material, and the people who know are glad to be asked.", bundle: 'free' },
+        { q: "Which word do you reach for when you know nothing?", a: "What — it pulls the detail you need to say anything else.", bundle: 'pro' },
+        { q: "What is wrong with two questions in a row?", a: "It becomes an interview, and the second answer is shorter than the first.", bundle: 'pro' },
+        { q: "What should you do with the answer?", a: "Use it. Building on it is what makes the question look genuine.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Share a Related Experience",
+      description: "",
+      cards: [
+        { q: "What are the three kinds of thing you can put in?", a: "A story, a habit, or an opinion.", bundle: 'free' },
+        { q: "What is the only test?", a: "Whether it sits inside the same subject.", bundle: 'free' },
+        { q: "Does it have to be impressive?", a: "No. Small ordinary experiences are what most good conversations are made of.", bundle: 'free' },
+        { q: "How do you know it is close enough?", a: "Nobody has to ask how you got there.", bundle: 'free' },
+        { q: "What is a habit, as a contribution?", a: "Something you do rather than something that happened. \"I get through an audiobook a week.\"", bundle: 'free' },
+        { q: "Why does the search for a better story backfire?", a: "The pause is longer than the question would have been, and the story is usually thin.", bundle: 'pro' },
+        { q: "What do you do when someone just told a better version?", a: "Tell yours anyway. It is not a ranking.", bundle: 'pro' },
+        { q: "What should follow your piece if you have already had a turn?", a: "A question. One part you, one part them.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Build on Their Point",
+      description: "",
+      cards: [
+        { q: "What is the move?", a: "Take what someone just said and go one step further into it.", bundle: 'free' },
+        { q: "What are the three ways to go one layer down?", a: "Pick up one of their words, offer the next distinction, or add to it and hand it back.", bundle: 'free' },
+        { q: "Which word is worth picking up?", a: "Usually the vaguest one — most, strange, awful, fine.", bundle: 'free' },
+        { q: "Why is the vague word the right one?", a: "That is where the detail is hiding.", bundle: 'free' },
+        { q: "What does this move prove?", a: "That you were listening. It is the one people notice.", bundle: 'free' },
+        { q: "What is \"the next distinction\"?", a: "Splitting their point in two and asking which half. \"Was it the sound or the crowd?\"", bundle: 'pro' },
+        { q: "When is this the wrong move?", a: "When the thread is genuinely finished. Then you step sideways instead.", bundle: 'pro' },
+        { q: "How do you use it to recover a conversation that has drifted?", a: "Pick the old thread back up as though it never dropped. \"Where were we, Portugal?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Expand to a Related Subtopic",
+      description: "",
+      cards: [
+        { q: "When do you use it?", a: "When the current thread is running out.", bundle: 'free' },
+        { q: "What are the three directions the sideways step can take?", a: "Same subject in a new setting, doing it becomes watching it, or the thing becomes the things around it.", bundle: 'free' },
+        { q: "How far is too far?", a: "If people have to ask what you are talking about, that was a new topic.", bundle: 'free' },
+        { q: "What is the difference between this and changing the subject?", a: "One step sideways, not away. Everything already said still counts.", bundle: 'free' },
+        { q: "What does a fading topic usually have in it?", a: "More than it looks. Reach for the next room before you leave the house.", bundle: 'free' },
+        { q: "What happens if you expand too early?", a: "You throw away a topic that still had life in it.", bundle: 'pro' },
+        { q: "What happens if you expand too late?", a: "The sideways step has to restart a conversation from silence.", bundle: 'pro' },
+        { q: "Why should a sideways step end in a question?", a: "Otherwise you have simply changed the subject and kept it.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Share, Then Invite",
+      description: "",
+      cards: [
+        { q: "What is the shape of this move?", a: "One part you, one part them. Say your bit, then hand it on.", bundle: 'free' },
+        { q: "What are the three ways to hand it on?", a: "To the group, to one person by name, or back to the speaker.", bundle: 'free' },
+        { q: "When should you use a name?", a: "When someone has been quiet.", bundle: 'free' },
+        { q: "Why does a name work better then?", a: "An open invitation is easy to let somebody else answer. A named one is not.", bundle: 'free' },
+        { q: "What is the mindset line?", a: "Holding the floor is not winning.", bundle: 'free' },
+        { q: "What is the sign you need this move?", a: "Two of your own stories in a row, or every question answered by you.", bundle: 'pro' },
+        { q: "What is wrong with apologising for talking too much?", a: "Everyone reassures you, which is another minute of the conversation being about you.", bundle: 'pro' },
+        { q: "What makes an invitation real rather than polite?", a: "Following up on the answer.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Empty or Full** — what you are carrying on the subject\n• **Alive or Fading** — how much life is left in the thread\n• **Keeping Any Topic Alive** — all five, no cue given\n\nTwo questions cover nearly all of it: have I got something of my own, and is this thread still going?",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "Empty or Full, Alive or Fading, and Keeping Any Topic Alive.", bundle: 'pro' },
+        { q: "What does Empty or Full read?", a: "Whether you can picture yourself in the subject.", bundle: 'pro' },
+        { q: "What does Alive or Fading read?", a: "The energy — long answers mean deepen, short ones mean open it back up, a pause means step sideways.", bundle: 'pro' },
+        { q: "You have nothing of your own on the subject. Which move?", a: "Ask an Open Question.", bundle: 'pro' },
+        { q: "A memory turned up on its own. Which move?", a: "Share a Related Experience.", bundle: 'pro' },
+        { q: "You have already told one story. Which move?", a: "Share, Then Invite.", bundle: 'pro' },
+        { q: "The answers have gone short but nobody has changed the subject. Which move?", a: "Ask an Open Question — open it back up before stepping sideways.", bundle: 'pro' },
+        { q: "Why is there no two-strategy collection in this pack?", a: "Two is a comparison, not a choice. A collection makes you pick between at least three.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **The Full Loop** — Ask an Open Question → Build on Their Point → Share, Then Invite\n2. **The Rescue** — Build on Their Point → Expand to a Related Subtopic → Ask an Open Question\n3. **The Open Door** — Share a Related Experience → Share, Then Invite → Build on Their Point\n\nEach one ends by handing something to the group rather than keeping it.",
+      cards: [
+        { q: "What is the order in The Full Loop?", a: "Ask, build on the answer, then add your own bit and pass it on.", bundle: 'pro' },
+        { q: "Why does The Full Loop end with a hand-off?", a: "Otherwise the whole thing turns into an interview.", bundle: 'pro' },
+        { q: "How many moves does it take to get a topic properly going?", a: "Usually three. After that it runs on its own.", bundle: 'pro' },
+        { q: "What is the order in The Rescue?", a: "Squeeze the thread, step sideways, then hand the new angle to the group.", bundle: 'pro' },
+        { q: "Why squeeze before stepping sideways?", a: "So you do not abandon a topic that still had something in it.", bundle: 'pro' },
+        { q: "What is the order in The Open Door?", a: "Put your own piece in, hand the floor to the quiet one, then follow up on their answer.", bundle: 'pro' },
+        { q: "Why share before inviting?", a: "So the invitation does not arrive out of nowhere.", bundle: 'pro' },
+        { q: "Which step of The Open Door do people skip?", a: "The third. Following up is what proves the invitation was real.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five kinds of moment that make a group topic hard to keep:\n\n• **Running Dry** — the subject is out of air\n• **Unfamiliar Ground** — you know nothing about it\n• **An Uneven Table** — half the group is doing all of it\n• **Drift** — the subject has quietly gone\n• **Taking Over** — the half doing all of it is you\n\nThree of the five are about the room. Two are about you.",
+      cards: [
+        { q: "What are the five challenge categories in this pack?", a: "Running Dry, Unfamiliar Ground, An Uneven Table, Drift, and Taking Over.", bundle: 'pro' },
+        { q: "What goes wrong in Running Dry?", a: "Waiting to be sure. Once the pause lands, whatever you say has to restart the whole thing.", bundle: 'pro' },
+        { q: "What is the entry ticket to an unfamiliar subject?", a: "A question. Knowledge is not required.", bundle: 'pro' },
+        { q: "Why is a big question the wrong move for someone who has been quiet?", a: "It is a spotlight, and the usual answer is \"I agree with what everyone said\".", bundle: 'pro' },
+        { q: "Why should you not comment on someone's silence?", a: "It makes it a thing, and now they have to explain themselves before joining in.", bundle: 'pro' },
+        { q: "How do you handle drift?", a: "Steer, do not announce. A related question just quietly works.", bundle: 'pro' },
+        { q: "What is the wrong way to fix having talked too much?", a: "Apologising for it — everyone reassures you, which is another minute about you.", bundle: 'pro' },
+        { q: "What is the whole skill in Taking Over?", a: "Noticing it yourself.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "The four beliefs that keep people out of a group conversation:\n\n• **Whose Job It Is** — somebody else will keep it going\n• **Not Knowing** — I have nothing to contribute here\n• **Too Small to Say** — my version is not worth telling\n• **Giving It Away** — handing the topic over means losing it\n\nThe first three keep you quiet. The fourth keeps everyone else quiet.",
+      cards: [
+        { q: "What are the four mindset areas in this pack?", a: "Whose Job It Is, Not Knowing, Too Small to Say, and Giving It Away.", bundle: 'pro' },
+        { q: "Why do conversations die when everyone is reasonable?", a: "Four people all waiting for a fifth. Nobody notices, because nothing happened.", bundle: 'pro' },
+        { q: "Is a silent turn neutral?", a: "No. Every move either feeds the topic or ends it.", bundle: 'pro' },
+        { q: "What is the cost of waiting for a subject you know?", a: "You sit out whole conversations, and from outside the waiting reads as boredom.", bundle: 'pro' },
+        { q: "Why does the search for a better story fail?", a: "It takes longer than the telling would have, and usually ends in saying nothing.", bundle: 'pro' },
+        { q: "What does holding the floor actually produce?", a: "A talk with an audience who cannot leave.", bundle: 'pro' },
+        { q: "What happens when you give the topic away?", a: "It comes back richer than you left it.", bundle: 'pro' },
+        { q: "Which three beliefs keep you quiet, and which one keeps everyone else quiet?", a: "Whose Job It Is, Not Knowing and Too Small to Say keep you quiet. Giving It Away keeps the others quiet.", bundle: 'pro' },
+      ]
+    },
+  ],
+  changingtopics: [
+    {
+      name: "Core Idea",
+      description: "Six ways to change the subject without it feeling like an interruption.\n\n1. **Linking**\n2. **Acknowledge and Redirect**\n3. **Finding Common Ground**\n4. **Random or Light Switch**\n5. **Steering Away from Sensitive Topics**\n6. **Respectful Exit**\n\nThree build a bridge from the old subject; three close it first.",
+      cards: [
+        { q: "What are the six moves in this pack?", a: "Linking, Acknowledge and Redirect, Finding Common Ground, Random or Light Switch, Steering Away from Sensitive Topics, and Respectful Exit.", bundle: 'free' },
+        { q: "What do people actually notice about a topic change?", a: "Not the change — the gap where it happened.", bundle: 'free' },
+        { q: "How is this pack different from Exploring a Topic?", a: "There you stay in the subject. Here you leave it.", bundle: 'free' },
+        { q: "Which is the smoothest of the six, and why?", a: "Linking. The new subject grows out of their own words.", bundle: 'free' },
+        { q: "Do you always need a bridge?", a: "No. A flagged switch is honest, and only an unflagged one is jarring.", bundle: 'free' },
+        { q: "What are the two questions that sort nearly every moment?", a: "Does the old topic need closing first, and is there anything in it to build from?", bundle: 'pro' },
+        { q: "What is the worst option available?", a: "Doing nothing. A subject that has died and not been replaced is the most uncomfortable moment in a conversation.", bundle: 'pro' },
+        { q: "Is changing the subject rude?", a: "No. It is steering, and somebody has to do it.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Linking",
+      description: "",
+      cards: [
+        { q: "What is the move?", a: "Catch a word or detail from what they just said and use it as a bridge to a new topic.", bundle: 'free' },
+        { q: "What three kinds of word are worth catching?", a: "A place, a person, or a feeling or time.", bundle: 'free' },
+        { q: "How fresh does the word have to be?", a: "Fresh. Two minutes works; ten minutes sounds like you were waiting for an opening.", bundle: 'free' },
+        { q: "Why does it feel smooth?", a: "The switch grows out of their own words, so nobody notices a change happened.", bundle: 'free' },
+        { q: "What does it prove?", a: "That you were listening — you cannot catch a word you did not hear.", bundle: 'free' },
+        { q: "Where is the bridge usually hiding?", a: "In something they said earlier and nobody followed up.", bundle: 'pro' },
+        { q: "What happens if the link is a stretch?", a: "It sounds like a stretch. Flagging the switch is warmer than forcing a bridge.", bundle: 'pro' },
+        { q: "When is this move unavailable?", a: "When they have given you almost nothing to catch.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Acknowledge and Redirect",
+      description: "",
+      cards: [
+        { q: "What is the move?", a: "Briefly wrap up the current topic, then open a new one.", bundle: 'free' },
+        { q: "What are the three ways to wrap?", a: "Thank them for it, sum it up, or mark the end plainly.", bundle: 'free' },
+        { q: "How long should the acknowledgement be?", a: "One short sentence.", bundle: 'free' },
+        { q: "What does a long wrap-up sound like?", a: "Building a case for leaving the topic.", bundle: 'free' },
+        { q: "What does the little nod do?", a: "Stops the switch feeling abrupt. Without it the new topic reads as \"I wasn't listening.\"", bundle: 'free' },
+        { q: "When is this the right move rather than Respectful Exit?", a: "When the topic has just finished rather than finished a while ago.", bundle: 'pro' },
+        { q: "How does it help when a switch is going to look like dodging?", a: "It shows you heard the thing you are moving on from.", bundle: 'pro' },
+        { q: "What is a good wrap for something you genuinely did not enjoy hearing?", a: "Sum it up rather than praise it. \"So it's a waiting game. Makes sense.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Finding Common Ground",
+      description: "",
+      cards: [
+        { q: "What is the move?", a: "Use a shared experience as the stepping stone, so relating to them opens the new direction.", bundle: 'free' },
+        { q: "What are the three ways to relate before you turn?", a: "A matching story, a matching feeling, or a matching habit.", bundle: 'free' },
+        { q: "What has to be true of the relating?", a: "It has to be genuine. A manufactured \"me too\" is transparent.", bundle: 'free' },
+        { q: "What does a fake one make the switch look like?", a: "An escape.", bundle: 'free' },
+        { q: "What does this move do that the others do not?", a: "It warms the conversation before it turns it.", bundle: 'free' },
+        { q: "When is it better than Linking?", a: "When there is no single word to catch but you recognise the situation.", bundle: 'pro' },
+        { q: "What do you do after you have related?", a: "Turn it into a question, so the new direction belongs to both of you.", bundle: 'pro' },
+        { q: "Why does it work so well after a stall?", a: "Whatever small thing they gave you is enough to relate to, and relating is easier than bridging.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Random or Light Switch",
+      description: "",
+      cards: [
+        { q: "What is the move?", a: "Change the subject openly, with humour or spontaneity, and no bridge.", bundle: 'free' },
+        { q: "What are the three ways to flag it?", a: "Name it and joke about it, admit the swerve, or blame yourself.", bundle: 'free' },
+        { q: "What makes it work?", a: "Flagging. An unflagged jump is jarring; a flagged one is honest.", bundle: 'free' },
+        { q: "When is it the only option?", a: "When the conversation has stalled and there is nothing to bridge from.", bundle: 'free' },
+        { q: "Is announcing the switch worse than pretending there was a link?", a: "No. It is usually warmer, and it often gets a laugh.", bundle: 'free' },
+        { q: "What is the wrong move when a conversation has stalled?", a: "A bigger question. It makes the next thing harder to answer than the last.", bundle: 'pro' },
+        { q: "Why is hunting for a bridge a mistake here?", a: "The search takes longer than the silence, and the bridge you invent sounds invented.", bundle: 'pro' },
+        { q: "When is this move the wrong one?", a: "When the subject is raw. A jokey switch there reads as careless.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Steering Away from Sensitive Topics",
+      description: "",
+      cards: [
+        { q: "What is the move?", a: "Acknowledge the uncomfortable subject briefly, then guide gently toward safer ground.", bundle: 'free' },
+        { q: "What are the three levels of steer?", a: "Light touch, named and closed, or offered as an out.", bundle: 'free' },
+        { q: "What must always come first?", a: "The acknowledgement. Skipping to the new topic reads as though you did not hear them.", bundle: 'free' },
+        { q: "Is steering away evasion?", a: "No. Caring about someone and moving somewhere kinder are the same act here.", bundle: 'free' },
+        { q: "Do you have to resolve the heavy subject first?", a: "No. Sometimes the kindest thing is to lighten the room.", bundle: 'free' },
+        { q: "What do you do when the subject is about somebody who is present?", a: "Hand it back to them. \"I think that's theirs to tell, if they want.\"", bundle: 'pro' },
+        { q: "What do you do if they went quiet after you steered?", a: "Give it a beat. Quiet can be relief.", bundle: 'pro' },
+        { q: "What is \"offered as an out\"?", a: "Leaving the door open for another time. \"Happy to talk about it another day.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Respectful Exit",
+      description: "",
+      cards: [
+        { q: "When do you use it?", a: "When a topic has been covered, or keeps repeating.", bundle: 'free' },
+        { q: "What are the three ways to close it warmly?", a: "Give it credit, name the loop kindly, or draw a friendly line.", bundle: 'free' },
+        { q: "What makes it respectful rather than dismissive?", a: "Warmth. The same words said flatly are a dismissal.", bundle: 'free' },
+        { q: "What is the mindset line?", a: "Your job is flow, not endurance.", bundle: 'free' },
+        { q: "Is letting a topic end a failure?", a: "No. It is part of a good conversation.", bundle: 'free' },
+        { q: "What is wrong with hinting at a sticky topic?", a: "A soft signal gets absorbed and the subject carries on.", bundle: 'pro' },
+        { q: "What do you do when the first exit was ignored?", a: "Be clearer rather than quieter. Say plainly what the hint said quietly.", bundle: 'pro' },
+        { q: "How do you close a topic somebody clearly is not finished with?", a: "Let them finish it properly, then close it. \"Say the rest, then let's leave it.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Is There a Bridge** — Linking, Finding Common Ground or Random or Light Switch\n• **Closing the Old One** — Acknowledge and Redirect, Respectful Exit or Steering Away from Sensitive Topics\n• **Reading the Room** — all six, no cue given\n\nThe first asks what you can build from. The second asks what kind of ending the old subject needs.",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "Is There a Bridge, Closing the Old One, and Reading the Room.", bundle: 'pro' },
+        { q: "What does Is There a Bridge read?", a: "What they last said — a concrete noun, a shared situation, or neither.", bundle: 'pro' },
+        { q: "What does Closing the Old One read?", a: "What kind of ending the subject needs — a nod, a naming, or an acknowledgement.", bundle: 'pro' },
+        { q: "They mentioned a place you can catch. Which move?", a: "Linking.", bundle: 'pro' },
+        { q: "They described a situation you have been in yourself. Which move?", a: "Finding Common Ground.", bundle: 'pro' },
+        { q: "The subject is on its third lap. Which move?", a: "Respectful Exit.", bundle: 'pro' },
+        { q: "The subject is raw rather than finished. Which move?", a: "Steering Away from Sensitive Topics.", bundle: 'pro' },
+        { q: "Why is there no two-strategy collection in this pack?", a: "Two is a comparison, not a choice. A collection makes you pick between at least three.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **Sensitive to Safe** — Steering Away → Random or Light Switch → Finding Common Ground\n2. **Exhausted to Fresh** — Respectful Exit → Linking → Acknowledge and Redirect\n3. **Stalled to Started** — Random or Light Switch → Finding Common Ground → Linking\n\nAll three end by making the new subject take hold, not just by opening it.",
+      cards: [
+        { q: "What is the order in Sensitive to Safe?", a: "Defuse without engaging, offer somewhere safer, then pick up whatever they give you.", bundle: 'pro' },
+        { q: "Why acknowledge before steering?", a: "It is what stops the steer looking like avoidance.", bundle: 'pro' },
+        { q: "What happens if you do not pick up their answer?", a: "The conversation falls back into the old subject within a minute.", bundle: 'pro' },
+        { q: "What is the order in Exhausted to Fresh?", a: "Close the done topic warmly, pivot off something they said earlier, then open it properly.", bundle: 'pro' },
+        { q: "Where is the bridge in Exhausted to Fresh?", a: "Behind you. There is almost always a detail from ten minutes ago that never got followed up.", bundle: 'pro' },
+        { q: "What is the order in Stalled to Started?", a: "Flag a switch, relate to whatever comes back, then catch a word from their answer.", bundle: 'pro' },
+        { q: "Why does Stalled to Started end with Linking?", a: "Catching a word from their answer is what stops it stalling a second time.", bundle: 'pro' },
+        { q: "What do all three have in common?", a: "They do not stop at opening a new subject. They make it take hold.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five kinds of moment that make a topic change hard:\n\n• **The Third Lap** — a subject that will not stay closed\n• **The Sensitive Corner** — uncomfortable rather than finished\n• **The Stall** — nothing to bridge from\n• **The Ignored Switch** — you tried and it did not land\n• **The One You Started** — your own subject fell flat\n\nFour are about the conversation. One is about you.",
+      cards: [
+        { q: "What are the five challenge categories in this pack?", a: "The Third Lap, The Sensitive Corner, The Stall, The Ignored Switch, and The One You Started.", bundle: 'pro' },
+        { q: "What keeps a repeated topic going?", a: "Answering it as though it were new.", bundle: 'pro' },
+        { q: "Why is a jokey switch wrong in a sensitive moment?", a: "The tone mismatch says you did not notice, which is worse than staying in it.", bundle: 'pro' },
+        { q: "What is the mistake when a conversation has stalled?", a: "Hunting for a link that does not exist.", bundle: 'pro' },
+        { q: "What do you do when a switch gets ignored?", a: "Be clearer, not quieter. Repeating a soft hint does not work.", bundle: 'pro' },
+        { q: "What do you do when your own topic falls flat?", a: "Name it, move it along yourself, and do not apologise for it.", bundle: 'pro' },
+        { q: "Why not apologise for a flat topic?", a: "Everyone reassures you, which keeps the flat moment going.", bundle: 'pro' },
+        { q: "What is the one category that is about you rather than them?", a: "The One You Started.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "The four beliefs that keep people stuck in a finished subject:\n\n• **Steering Feels Rude** — changing it is impolite\n• **The Perfect Bridge** — I need a smooth way in first\n• **Leaving Them In It** — moving on looks like not caring\n• **Endurance** — once a topic starts, I have to keep it going\n\nEvery one of them is a good instinct pointed at the wrong target.",
+      cards: [
+        { q: "What are the four mindset areas in this pack?", a: "Steering Feels Rude, The Perfect Bridge, Leaving Them In It, and Endurance.", bundle: 'pro' },
+        { q: "Why does changing the subject feel like interrupting?", a: "They feel similar from the inside — but an interruption takes the turn, and a topic change happens between turns.", bundle: 'pro' },
+        { q: "What does politeness cost in a dead topic?", a: "Two people being polite at each other while an evening goes nowhere.", bundle: 'pro' },
+        { q: "What is \"by the way\"?", a: "A complete sentence. You do not need a perfect bridge.", bundle: 'pro' },
+        { q: "Does steering away from something painful look like not caring?", a: "No. Redirecting gently is the caring move — you are sparing them, not dodging them.", bundle: 'pro' },
+        { q: "Do you have to fix a heavy subject before you move it?", a: "No. Sometimes the kindest thing is to lighten the room.", bundle: 'pro' },
+        { q: "What is the tell that you are enduring rather than interested?", a: "Squeezing a third question out of a subject.", bundle: 'pro' },
+        { q: "How many good short topics beat one long one?", a: "Ten — if the long one was one nobody enjoyed.", bundle: 'pro' },
       ]
     },
   ],
