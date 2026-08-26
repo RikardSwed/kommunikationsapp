@@ -1998,120 +1998,6 @@ const collections = {
       ]
     },
   ],
-  talkingaboutyourself: [
-    {
-      name: "Give a Detail",
-      guideFront: "Give a detail when...",
-      guideBack: "A possible response.",
-      description: "Answer the question, then add one concrete thing. Not \"busy\" — \"busy, mostly moving a greenhouse in the rain.\"\n\nIt works because a closed answer is a dead end for the other person. They asked in order to get a conversation, and now they have to invent a fresh question with nothing to build it from. Two of those in a row and most people conclude you would rather not talk, which is almost never what you meant.\n\nOne detail is the whole technique. It does not have to be interesting, and trying to make it interesting is what stops people using it. The detail is a handle, not a performance.\n\nTypical phrases: \"Good — long, though. The week had a lot in it.\", \"Fine, apart from the drive.\", \"Busy. Mostly moving a greenhouse, oddly.\"\n\nThree details that always work:\n\n1. The concrete thing — an object, a place, a number. Easiest to ask about. \"We drove back from Aarhus on Sunday.\"\n\n2. The small mishap — invites the most, because people love a story with a problem in it. \"Fine, except I've locked myself out twice this week.\"\n\n3. The odd contrast — the bit that does not fit. \"Quiet week. Which is strange, because it started with a funeral.\"\n\nMindset: you are not being asked to be interesting. You are being asked to leave a door open.",
-      inputs: [
-        { q: "Someone asks how your week has been.", a: "\"Good — long, though. I've spent most of it arguing with a printer.\"", bundle: 'free' },
-        { q: "Someone asks what you have been up to.", a: "\"Not much. Well — a fairly disastrous attempt at making bread.\"", bundle: 'free' },
-        { q: "You are about to answer \"fine\" and stop.", a: "\"Fine — well, fine apart from the drive here.\"", bundle: 'free' },
-        { q: "Someone asks how the weekend was.", a: "\"Quiet. I did nothing on purpose and it was excellent.\"", bundle: 'free' },
-        { q: "You want the detail to be easy to pick up.", a: "\"Busy. We drove back from Aarhus on Sunday, which took nine hours.\"", bundle: 'free' },
-        { q: "The honest detail is a small mishap.", a: "\"Fine, except I've locked myself out twice this week.\"", bundle: 'pro' },
-        { q: "You gave a one-word answer and can feel the conversation dying.", a: "\"That's not the whole answer, actually — it's been a strange week.\"", bundle: 'pro' },
-        { q: "The detail that comes to mind feels too small to mention.", a: "(say it anyway — small and specific is exactly what works)", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Match What They Gave",
-      guideFront: "Match what they gave when...",
-      guideBack: "A possible response.",
-      description: "Answer at roughly the depth they offered. They mention a hard week at work, you mention yours. They tell you their marriage is ending, you do not reply with the printer.\n\nIt works because conversations get deeper in steps, and each step has to be taken by both people. Someone who has just shared something real is checking whether it was safe. A light answer tells them it was not, and they will close the subject and be pleasant for the rest of the evening.\n\nThe mistake runs both ways, though, and the other direction is worse. Answering a polite question with something very personal is not honesty, it is a step nobody offered to take, and it usually ends the conversation faster than the closed answer would have.\n\nTypical phrases: \"That sounds heavy. Mine's been similar, honestly.\", \"That's a lot to be carrying.\", \"I'll match you — I've had a rough few months too.\"\n\nThree sizes to read, and what each is asking for:\n\n1. The polite question — \"how are you?\" in a corridor. Wants one line and a door. Do not go deep here.\n\n2. The real question — they have stopped and are looking at you. Wants something true, one level below the polite answer.\n\n3. The disclosure — they have just told you something significant. Wants you to meet it, or to say plainly that you are listening rather than matching.\n\nMindset: one step at a time, and take it after they do. Depth is a staircase, not a switch.",
-      inputs: [
-        { q: "A colleague mentions their week has been hard.", a: "\"Sounds like it. Mine's been the same kind of week, honestly.\"", bundle: 'free' },
-        { q: "Someone asks how you are as they walk past your desk.", a: "\"Good, thanks — busy end of the week.\"", bundle: 'free' },
-        { q: "A friend tells you something significant about their health.", a: "\"That's a lot. I'm not going to match that with a work story — tell me more.\"", bundle: 'free' },
-        { q: "They have stopped and are actually waiting for a real answer.", a: "\"Honestly? Not my best month. Nothing dramatic, just heavy.\"", bundle: 'free' },
-        { q: "You are about to answer a polite question with something very personal.", a: "\"Busy, but fine.\" (save the rest for when there is time)", bundle: 'free' },
-        { q: "They shared something real and you are about to change the subject.", a: "\"I nearly moved us on then. I'd rather stay with what you said.\"", bundle: 'pro' },
-        { q: "You want to go one step deeper and are not sure it is welcome.", a: "\"Can I tell you the longer version, or is this a corridor conversation?\"", bundle: 'pro' },
-        { q: "They gave you a light answer to something you asked seriously.", a: "(take the hint — that door is closed for now)", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Say the Small True Thing",
-      guideFront: "Say the small true thing when...",
-      guideBack: "A possible response.",
-      description: "Say what is actually true, at whatever size it happens to be, instead of hunting for something impressive. \"I've been watching a lot of terrible television\" is a better answer than a polished one.\n\nIt works because people are not measuring how eventful your life is. They are finding out what you are like, and specificity is what tells them. \"Not much\" reveals nothing. \"Mostly repainting a wardrobe badly\" reveals a person.\n\nIt also solves the paralysis. The reason people say \"nothing much\" is that they are searching for something worth reporting and failing to find it. There is nothing to find, because that was never the standard.\n\nTypical phrases: \"Nothing dramatic — mostly repainting a wardrobe badly.\", \"I've been going to bed at nine and I'm not sorry.\", \"Honestly? Terrible television and too much coffee.\"\n\nThree sizes, and all three are fine:\n\n1. Ordinary and specific — the default, and the most useful. \"I've been trying to fix a bike I don't know how to fix.\"\n\n2. Mildly embarrassing — costs nothing and buys a lot of warmth. \"I've watched the same series twice this month.\"\n\n3. Actually difficult — say it plainly and without the full weight, so they can decide whether to go there. \"It's been a hard few weeks, honestly. Nothing I can't handle.\"\n\nMindset: the bar is true and specific, not interesting. Nobody is grading this.",
-      inputs: [
-        { q: "Someone asks what you have been up to and nothing has happened.", a: "\"Nothing dramatic. Mostly repainting a wardrobe, badly.\"", bundle: 'free' },
-        { q: "You are searching for something worth reporting.", a: "\"Honestly — terrible television and too much coffee.\"", bundle: 'free' },
-        { q: "You are about to make it sound better than it was.", a: "\"It was fine. Not the weekend I'd planned, but fine.\"", bundle: 'free' },
-        { q: "The true answer is slightly embarrassing.", a: "\"I've watched the same series twice this month. That's my news.\"", bundle: 'free' },
-        { q: "You want to give something ordinary but specific.", a: "\"I've been trying to fix a bike I don't know how to fix.\"", bundle: 'free' },
-        { q: "Things are genuinely hard and you do not want to hide it or dump it.", a: "\"It's been a rough few weeks, honestly. Nothing I can't handle.\"", bundle: 'pro' },
-        { q: "You are about to inflate a story to make it land better.", a: "(tell the small version — it lands better than the inflated one)", bundle: 'pro' },
-        { q: "You feel your life is not interesting enough to describe.", a: "\"Very little happens to me, and I've come to quite like that.\"", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Answer What They Are Really Asking",
-      guideFront: "Answer what they are really asking when...",
-      guideBack: "A possible response.",
-      description: "Give the version of the answer that is about you, not the official one. \"What do you do?\" is not a request for a job title.\n\nIt works because the literal answer is usually the least useful one available. \"I'm a project manager\" tells them what to call you and nothing else, and it is very hard to ask a follow-up question about a job title. What they are actually asking is what your days are like, and whether there is anything in there worth talking about.\n\nThe same applies to most standard questions. \"Where are you from?\" is asking what shaped you. \"How long have you been here?\" is asking whether you feel settled.\n\nTypical phrases: \"On paper I'm a teacher. In practice I spend most of the day negotiating.\", \"Officially, admin. Actually, I fix things nobody else wants to.\", \"I'm from a small place you won't have heard of, which explains a lot about me.\"\n\nThree ways to give the real answer:\n\n1. Add what it is actually like — one clause after the title. \"I teach English. Mostly to teenagers, which is as loud as it sounds.\"\n\n2. Give the part you find interesting — even if it is a small part of the job. \"Technically accounting. The bit I like is the detective work.\"\n\n3. Answer the person, not the form — for questions about where you are from, how long you have been somewhere, how you know the host. \"I moved here for someone and stayed for the city.\"\n\nMindset: they are not filling in a form. Give them the version they can ask a second question about.",
-      inputs: [
-        { q: "Someone asks what you do.", a: "\"I teach English. Mostly to teenagers, which is as loud as it sounds.\"", bundle: 'free' },
-        { q: "Someone asks where you are from.", a: "\"A small place two hours north. It explains most things about me.\"", bundle: 'free' },
-        { q: "Someone asks how you know the host.", a: "\"We shared a flat for two years, which is a long story and mostly her fault.\"", bundle: 'free' },
-        { q: "You just gave your job title and the conversation stopped.", a: "\"That's the title, anyway. What I actually do all day is answer email.\"", bundle: 'free' },
-        { q: "You want to give the part you find interesting.", a: "\"Technically it's accounting. The part I like is the detective work.\"", bundle: 'free' },
-        { q: "You do not much like your job and do not want to lead with it.", a: "\"I work in logistics, which I'd rather not describe. Ask me what I do at weekends.\"", bundle: 'pro' },
-        { q: "They ask how long you have been here.", a: "\"Six years, and I've only just started calling it home.\"", bundle: 'pro' },
-        { q: "The literal answer would be a conversation ender.", a: "\"The short answer's dull. The long one's better — do you want it?\"", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Name What You Are Into",
-      guideFront: "Name what you are into when...",
-      guideBack: "A possible response.",
-      description: "Say the thing you actually care about, plainly, and then stop talking. \"I've got quite into bread. Not in a normal way.\"\n\nIt works because enthusiasm is the most attractive thing most people have, and it is the thing they hide hardest. The fear is being boring, so the interest gets buried under an apology — \"it's a bit sad, but\" — which tells the other person that this is not something to ask about.\n\nThe stopping is the discipline. What people are actually worried about is not the enthusiasm, it is the lecture, and those are different things. Name it, give one line, and let them decide whether to open it.\n\nTypical phrases: \"I've got very into bread lately.\", \"I'm a bit obsessed with maps, if I'm honest.\", \"I've started running, which is going badly and I love it.\"\n\nThree parts:\n\n1. Name it without apologising. Not \"this is going to sound stupid, but\". Just the thing.\n\n2. One line about it — enough to be a handle, not enough to be a talk. \"It's mostly about the timing, it turns out.\"\n\n3. Stop. If they are interested they will ask, and then you get to say the rest with an audience that wants it.\n\nMindset: the enthusiasm is not the risk. The unrequested twenty minutes is. Say it, then let them choose.",
-      inputs: [
-        { q: "Someone asks what you do with your time.", a: "\"I've got very into bread lately. Not in a normal amount.\"", bundle: 'free' },
-        { q: "You are about to apologise for the thing you like.", a: "\"I like maps. That's it, that's the hobby.\"", bundle: 'free' },
-        { q: "You want to give one line and stop.", a: "\"I've started running. It's going badly and I'm enjoying it enormously.\"", bundle: 'free' },
-        { q: "They ask a follow-up about it.", a: "(now you can go on — they asked)", bundle: 'free' },
-        { q: "You have been talking about it for two minutes.", a: "\"I could do this all night. Tell me something of yours.\"", bundle: 'free' },
-        { q: "The thing you love has no obvious point to it.", a: "\"There's no point to it, which is most of why I like it.\"", bundle: 'pro' },
-        { q: "You think it is too niche to mention.", a: "\"It's extremely niche. Do you want the short version or the long one?\"", bundle: 'pro' },
-        { q: "You are burying it under an apology.", a: "(take the apology off the front — the sentence is better without it)", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Keep Something Back",
-      guideFront: "Keep something back when...",
-      guideBack: "A possible response.",
-      description: "Answer a question you would rather not answer, without either lying or opening the whole subject. \"That's a long story I'm not up for tonight — short version, it ended badly.\"\n\nIt works because the two obvious options are both bad. Stonewalling makes the thing enormous and makes the other person feel they trod on something. Answering fully, when you did not want to, is how people end up telling near-strangers things they regret at two in the morning.\n\nThe middle option is a partial answer given warmly. It says the door is closed without saying that you mind being asked, and most people take it gracefully because you gave them something rather than nothing.\n\nTypical phrases: \"Short version: it ended badly.\", \"I'll skip that one, if that's alright.\", \"Ask me again when we know each other better.\", \"That's a whole evening's answer and this is a party.\"\n\nThree ways to keep it:\n\n1. The short version — give the headline and stop. \"We're not in touch. That's about all there is to it.\"\n\n2. Name the boundary warmly — the clearest, and fine with anyone. \"I'd rather not go into that one. Nothing to do with you.\"\n\n3. Move it rather than close it — for people you do want to tell, later. \"Ask me again when we're not in a room full of people.\"\n\nMindset: you can give them something without giving them everything. A door left ajar is not a wall.",
-      inputs: [
-        { q: "Someone asks about a breakup you do not want to discuss.", a: "\"Short version: it ended badly. That's probably enough for a Tuesday.\"", bundle: 'free' },
-        { q: "A question comes up you would rather not answer at all.", a: "\"I'll skip that one if that's alright — nothing to do with you.\"", bundle: 'free' },
-        { q: "You do want to tell them, but not here.", a: "\"Ask me again when there aren't twelve people in the room.\"", bundle: 'free' },
-        { q: "You are about to stonewall and make it enormous.", a: "\"It's not a secret, it's just a long one. We're not in touch, that's the gist.\"", bundle: 'free' },
-        { q: "They apologise for asking.", a: "\"Don't — it's a completely reasonable question. I'm just not doing it tonight.\"", bundle: 'free' },
-        { q: "You are about to tell them far more than you meant to.", a: "\"I'm going to stop there, actually. That's more than I meant to say.\"", bundle: 'pro' },
-        { q: "They push after you have kept it back.", a: "\"I've given you what I've got on that one.\" (and then let the pause sit)", bundle: 'pro' },
-        { q: "The question came from someone with authority over you.", a: "\"I'd rather keep that one outside work, if that's alright.\"", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Hand It Back",
-      guideFront: "Hand it back when...",
-      guideBack: "A possible response.",
-      description: "Return the attention — but only after you have answered. \"That's me. What about you, though?\"\n\nIt works because a conversation needs both people to be curious, and turning the attention around is how it keeps moving. Done at the right moment it feels generous.\n\nDone too early, it is the single most common way people avoid being known. Answering in four words and immediately asking a question looks like interest and functions as a shield: they learn nothing about you, they do all the work, and after a while they stop asking.\n\nThe timing is the whole strategy. Answer first, with something real. Then hand it over.\n\nTypical phrases: \"That's my week. What about yours?\", \"Enough about the greenhouse. How was Denmark?\", \"Your turn — you said something about a new flat?\"\n\nThree good moments to hand it back:\n\n1. After a real answer — the standard, and the only one that costs nothing. Answer, then ask.\n\n2. When they have given you a thread — hand it back into their own material. \"You mentioned Malmö earlier.\"\n\n3. When you have been talking a while — the graceful exit from your own subject. \"I've had a good run at this. Your turn.\"\n\nAnd one to avoid: immediately, before you have said anything. That is not generosity, it is a way of staying out of reach.\n\nMindset: answer first. Handing it back before you have said anything is a way of not being asked again.",
-      inputs: [
-        { q: "You have answered properly and want to turn it around.", a: "\"That's my week, anyway. What about yours?\"", bundle: 'free' },
-        { q: "You have been talking about your own thing for a while.", a: "\"I've had a good run at this. Tell me about the new place.\"", bundle: 'free' },
-        { q: "They gave you a thread earlier that you never followed.", a: "\"You said something about Malmö before — what were you doing down there?\"", bundle: 'free' },
-        { q: "You are about to hand it back without answering.", a: "(answer first — one detail, then ask)", bundle: 'free' },
-        { q: "They ask a question and you have already asked two.", a: "\"I'll answer this one properly, because I've been interrogating you.\"", bundle: 'free' },
-        { q: "You notice you have asked four questions and answered none.", a: "\"I keep doing this. Ask me the same thing and I'll actually answer.\"", bundle: 'pro' },
-        { q: "They keep handing it back to you and you both keep deflecting.", a: "\"We're both being very polite. I'll go first: it's been a hard month.\"", bundle: 'pro' },
-        { q: "The conversation has become an interview with you as the interviewer.", a: "\"You've told me loads and I've told you nothing. Let me fix that.\"", bundle: 'pro' },
-      ]
-    },
-  ],
   describethings: [
     {
       name: "Name and Main Details",
@@ -8562,6 +8448,120 @@ const collections = {
       ]
     },
   ],
+  talkingaboutyourself: [
+    {
+      name: "Give a Detail",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
+      description: "Answer the question, then add one concrete thing. Not \"busy\" — \"busy, mostly moving a greenhouse in the rain.\"\n\nIt works because a closed answer is a dead end for the other person. They asked in order to get a conversation, and now they have to invent a fresh question with nothing to build it from. Two of those in a row and most people conclude you would rather not talk, which is almost never what you meant.\n\nOne detail is the whole technique. It does not have to be interesting, and trying to make it interesting is what stops people using it. The detail is a handle, not a performance.\n\nTypical phrases: \"Good — long, though. The week had a lot in it.\", \"Fine, apart from the drive.\", \"Busy. Mostly moving a greenhouse, oddly.\"\n\nThree details that always work:\n\n1. The concrete thing — an object, a place, a number. Easiest to ask about. \"We drove back from Aarhus on Sunday.\"\n\n2. The small mishap — invites the most, because people love a story with a problem in it. \"Fine, except I've locked myself out twice this week.\"\n\n3. The odd contrast — the bit that does not fit. \"Quiet week. Which is strange, because it started with a funeral.\"\n\nMindset: you are not being asked to be interesting. You are being asked to leave a door open.",
+      inputs: [
+        { q: "Someone asks how your week has been.", a: "\"Good — long, though. I've spent most of it arguing with a printer.\"", bundle: 'free' },
+        { q: "Someone asks what you have been up to.", a: "\"Not much. Well — a fairly disastrous attempt at making bread.\"", bundle: 'free' },
+        { q: "You are about to answer \"fine\" and stop.", a: "\"Fine — well, fine apart from the drive here.\"", bundle: 'free' },
+        { q: "Someone asks how the weekend was.", a: "\"Quiet. I did nothing on purpose and it was excellent.\"", bundle: 'free' },
+        { q: "You want the detail to be easy to pick up.", a: "\"Busy. We drove back from Aarhus on Sunday, which took nine hours.\"", bundle: 'free' },
+        { q: "The honest detail is a small mishap.", a: "\"Fine, except I've locked myself out twice this week.\"", bundle: 'pro' },
+        { q: "You gave a one-word answer and can feel the conversation dying.", a: "\"That's not the whole answer, actually — it's been a strange week.\"", bundle: 'pro' },
+        { q: "The detail that comes to mind feels too small to mention.", a: "\"This is a very small piece of news, but I've finally fixed the tap.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Match What They Gave",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
+      description: "Answer at roughly the depth they offered. They mention a hard week at work, you mention yours. They tell you their marriage is ending, you do not reply with the printer.\n\nIt works because conversations get deeper in steps, and each step has to be taken by both people. Someone who has just shared something real is checking whether it was safe. A light answer tells them it was not, and they will close the subject and be pleasant for the rest of the evening.\n\nThe mistake runs both ways, though, and the other direction is worse. Answering a polite question with something very personal is not honesty, it is a step nobody offered to take, and it usually ends the conversation faster than the closed answer would have.\n\nTypical phrases: \"That sounds heavy. Mine's been similar, honestly.\", \"That's a lot to be carrying.\", \"I'll match you — I've had a rough few months too.\"\n\nThree sizes to read, and what each is asking for:\n\n1. The polite question — \"how are you?\" in a corridor. Wants one line and a door. Do not go deep here.\n\n2. The real question — they have stopped and are looking at you. Wants something true, one level below the polite answer.\n\n3. The disclosure — they have just told you something significant. Wants you to meet it, or to say plainly that you are listening rather than matching.\n\nMindset: one step at a time, and take it after they do. Depth is a staircase, not a switch.",
+      inputs: [
+        { q: "A colleague mentions their week has been hard.", a: "\"Sounds like it. Mine's been the same kind of week, honestly.\"", bundle: 'free' },
+        { q: "Someone asks how you are as they walk past your desk.", a: "\"Good, thanks — busy end of the week.\"", bundle: 'free' },
+        { q: "A friend tells you something significant about their health.", a: "\"That's a lot. I'm not going to match that with a work story — tell me more.\"", bundle: 'free' },
+        { q: "They have stopped and are actually waiting for a real answer.", a: "\"Honestly? Not my best month. Nothing dramatic, just heavy.\"", bundle: 'free' },
+        { q: "You are about to answer a polite question with something very personal.", a: "\"Busy, but fine. I'll tell you the longer version when we've got time.\"", bundle: 'free' },
+        { q: "They shared something real and you are about to change the subject.", a: "\"I nearly moved us on then. I'd rather stay with what you said.\"", bundle: 'pro' },
+        { q: "You want to go one step deeper and are not sure it is welcome.", a: "\"Can I tell you the longer version, or is this a corridor conversation?\"", bundle: 'pro' },
+        { q: "They gave you a light answer to something you asked seriously.", a: "\"Fair enough. I'll leave that one — how's everything else?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Say the Small True Thing",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
+      description: "Say what is actually true, at whatever size it happens to be, instead of hunting for something impressive. \"I've been watching a lot of terrible television\" is a better answer than a polished one.\n\nIt works because people are not measuring how eventful your life is. They are finding out what you are like, and specificity is what tells them. \"Not much\" reveals nothing. \"Mostly repainting a wardrobe badly\" reveals a person.\n\nIt also solves the paralysis. The reason people say \"nothing much\" is that they are searching for something worth reporting and failing to find it. There is nothing to find, because that was never the standard.\n\nTypical phrases: \"Nothing dramatic — mostly repainting a wardrobe badly.\", \"I've been going to bed at nine and I'm not sorry.\", \"Honestly? Terrible television and too much coffee.\"\n\nThree sizes, and all three are fine:\n\n1. Ordinary and specific — the default, and the most useful. \"I've been trying to fix a bike I don't know how to fix.\"\n\n2. Mildly embarrassing — costs nothing and buys a lot of warmth. \"I've watched the same series twice this month.\"\n\n3. Actually difficult — say it plainly and without the full weight, so they can decide whether to go there. \"It's been a hard few weeks, honestly. Nothing I can't handle.\"\n\nMindset: the bar is true and specific, not interesting. Nobody is grading this.",
+      inputs: [
+        { q: "Someone asks what you have been up to and nothing has happened.", a: "\"Nothing dramatic. Mostly repainting a wardrobe, badly.\"", bundle: 'free' },
+        { q: "You are searching for something worth reporting.", a: "\"Honestly — terrible television and too much coffee.\"", bundle: 'free' },
+        { q: "You are about to make it sound better than it was.", a: "\"It was fine. Not the weekend I'd planned, but fine.\"", bundle: 'free' },
+        { q: "The true answer is slightly embarrassing.", a: "\"I've watched the same series twice this month. That's my news.\"", bundle: 'free' },
+        { q: "You want to give something ordinary but specific.", a: "\"I've been trying to fix a bike I don't know how to fix.\"", bundle: 'free' },
+        { q: "Things are genuinely hard and you do not want to hide it or dump it.", a: "\"It's been a rough few weeks, honestly. Nothing I can't handle.\"", bundle: 'pro' },
+        { q: "You are about to inflate a story to make it land better.", a: "\"It's less dramatic than I was about to make it sound. I got wet and came home.\"", bundle: 'pro' },
+        { q: "You feel your life is not interesting enough to describe.", a: "\"Very little happens to me, and I've come to quite like that.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Answer What They Are Really Asking",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
+      description: "Give the version of the answer that is about you, not the official one. \"What do you do?\" is not a request for a job title.\n\nIt works because the literal answer is usually the least useful one available. \"I'm a project manager\" tells them what to call you and nothing else, and it is very hard to ask a follow-up question about a job title. What they are actually asking is what your days are like, and whether there is anything in there worth talking about.\n\nThe same applies to most standard questions. \"Where are you from?\" is asking what shaped you. \"How long have you been here?\" is asking whether you feel settled.\n\nTypical phrases: \"On paper I'm a teacher. In practice I spend most of the day negotiating.\", \"Officially, admin. Actually, I fix things nobody else wants to.\", \"I'm from a small place you won't have heard of, which explains a lot about me.\"\n\nThree ways to give the real answer:\n\n1. Add what it is actually like — one clause after the title. \"I teach English. Mostly to teenagers, which is as loud as it sounds.\"\n\n2. Give the part you find interesting — even if it is a small part of the job. \"Technically accounting. The bit I like is the detective work.\"\n\n3. Answer the person, not the form — for questions about where you are from, how long you have been somewhere, how you know the host. \"I moved here for someone and stayed for the city.\"\n\nMindset: they are not filling in a form. Give them the version they can ask a second question about.",
+      inputs: [
+        { q: "Someone asks what you do.", a: "\"I teach English. Mostly to teenagers, which is as loud as it sounds.\"", bundle: 'free' },
+        { q: "Someone asks where you are from.", a: "\"A small place two hours north. It explains most things about me.\"", bundle: 'free' },
+        { q: "Someone asks how you know the host.", a: "\"We shared a flat for two years, which is a long story and mostly her fault.\"", bundle: 'free' },
+        { q: "You just gave your job title and the conversation stopped.", a: "\"That's the title, anyway. What I actually do all day is answer email.\"", bundle: 'free' },
+        { q: "You want to give the part you find interesting.", a: "\"Technically it's accounting. The part I like is the detective work.\"", bundle: 'free' },
+        { q: "You do not much like your job and do not want to lead with it.", a: "\"I work in logistics, which I'd rather not describe. Ask me what I do at weekends.\"", bundle: 'pro' },
+        { q: "They ask how long you have been here.", a: "\"Six years, and I've only just started calling it home.\"", bundle: 'pro' },
+        { q: "The literal answer would be a conversation ender.", a: "\"The short answer's dull. The long one's better — do you want it?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Name What You Are Into",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
+      description: "Say the thing you actually care about, plainly, and then stop talking. \"I've got quite into bread. Not in a normal way.\"\n\nIt works because enthusiasm is the most attractive thing most people have, and it is the thing they hide hardest. The fear is being boring, so the interest gets buried under an apology — \"it's a bit sad, but\" — which tells the other person that this is not something to ask about.\n\nThe stopping is the discipline. What people are actually worried about is not the enthusiasm, it is the lecture, and those are different things. Name it, give one line, and let them decide whether to open it.\n\nTypical phrases: \"I've got very into bread lately.\", \"I'm a bit obsessed with maps, if I'm honest.\", \"I've started running, which is going badly and I love it.\"\n\nThree parts:\n\n1. Name it without apologising. Not \"this is going to sound stupid, but\". Just the thing.\n\n2. One line about it — enough to be a handle, not enough to be a talk. \"It's mostly about the timing, it turns out.\"\n\n3. Stop. If they are interested they will ask, and then you get to say the rest with an audience that wants it.\n\nMindset: the enthusiasm is not the risk. The unrequested twenty minutes is. Say it, then let them choose.",
+      inputs: [
+        { q: "Someone asks what you do with your time.", a: "\"I've got very into bread lately. Not in a normal amount.\"", bundle: 'free' },
+        { q: "You are about to apologise for the thing you like.", a: "\"I like maps. That's it, that's the hobby.\"", bundle: 'free' },
+        { q: "You want to give one line and stop.", a: "\"I've started running. It's going badly and I'm enjoying it enormously.\"", bundle: 'free' },
+        { q: "They ask a follow-up about it and you can go on now.", a: "\"Since you've asked — it's almost entirely about the timing. Everything else is forgiving.\"", bundle: 'free' },
+        { q: "You have been talking about it for two minutes.", a: "\"I could do this all night. Tell me something of yours.\"", bundle: 'free' },
+        { q: "The thing you love has no obvious point to it.", a: "\"There's no point to it, which is most of why I like it.\"", bundle: 'pro' },
+        { q: "You think it is too niche to mention.", a: "\"It's extremely niche. Do you want the short version or the long one?\"", bundle: 'pro' },
+        { q: "You are burying it under an apology.", a: "\"I was about to apologise for this and I'm not going to. I collect maps.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Keep Something Back",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
+      description: "Answer a question you would rather not answer, without either lying or opening the whole subject. \"That's a long story I'm not up for tonight — short version, it ended badly.\"\n\nIt works because the two obvious options are both bad. Stonewalling makes the thing enormous and makes the other person feel they trod on something. Answering fully, when you did not want to, is how people end up telling near-strangers things they regret at two in the morning.\n\nThe middle option is a partial answer given warmly. It says the door is closed without saying that you mind being asked, and most people take it gracefully because you gave them something rather than nothing.\n\nTypical phrases: \"Short version: it ended badly.\", \"I'll skip that one, if that's alright.\", \"Ask me again when we know each other better.\", \"That's a whole evening's answer and this is a party.\"\n\nThree ways to keep it:\n\n1. The short version — give the headline and stop. \"We're not in touch. That's about all there is to it.\"\n\n2. Name the boundary warmly — the clearest, and fine with anyone. \"I'd rather not go into that one. Nothing to do with you.\"\n\n3. Move it rather than close it — for people you do want to tell, later. \"Ask me again when we're not in a room full of people.\"\n\nMindset: you can give them something without giving them everything. A door left ajar is not a wall.",
+      inputs: [
+        { q: "Someone asks about a breakup you do not want to discuss.", a: "\"Short version: it ended badly. That's probably enough for a Tuesday.\"", bundle: 'free' },
+        { q: "A question comes up you would rather not answer at all.", a: "\"I'll skip that one if that's alright — nothing to do with you.\"", bundle: 'free' },
+        { q: "You do want to tell them, but not here.", a: "\"Ask me again when there aren't twelve people in the room.\"", bundle: 'free' },
+        { q: "You are about to stonewall and make it enormous.", a: "\"It's not a secret, it's just a long one. We're not in touch, that's the gist.\"", bundle: 'free' },
+        { q: "They apologise for asking.", a: "\"Don't — it's a completely reasonable question. I'm just not doing it tonight.\"", bundle: 'free' },
+        { q: "You are about to tell them far more than you meant to.", a: "\"I'm going to stop there, actually. That's more than I meant to say.\"", bundle: 'pro' },
+        { q: "They push after you have kept it back.", a: "\"(Let it sit.) I've given you what I've got on that one.\"", bundle: 'pro' },
+        { q: "The question came from someone with authority over you.", a: "\"I'd rather keep that one outside work, if that's alright.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Hand It Back",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
+      description: "Return the attention — but only after you have answered. \"That's me. What about you, though?\"\n\nIt works because a conversation needs both people to be curious, and turning the attention around is how it keeps moving. Done at the right moment it feels generous.\n\nDone too early, it is the single most common way people avoid being known. Answering in four words and immediately asking a question looks like interest and functions as a shield: they learn nothing about you, they do all the work, and after a while they stop asking.\n\nThe timing is the whole strategy. Answer first, with something real. Then hand it over.\n\nTypical phrases: \"That's my week. What about yours?\", \"Enough about the greenhouse. How was Denmark?\", \"Your turn — you said something about a new flat?\"\n\nThree good moments to hand it back:\n\n1. After a real answer — the standard, and the only one that costs nothing. Answer, then ask.\n\n2. When they have given you a thread — hand it back into their own material. \"You mentioned Malmö earlier.\"\n\n3. When you have been talking a while — the graceful exit from your own subject. \"I've had a good run at this. Your turn.\"\n\nAnd one to avoid: immediately, before you have said anything. That is not generosity, it is a way of staying out of reach.\n\nMindset: answer first. Handing it back before you have said anything is a way of not being asked again.",
+      inputs: [
+        { q: "You have answered properly and want to turn it around.", a: "\"That's my week, anyway. What about yours?\"", bundle: 'free' },
+        { q: "You have been talking about your own thing for a while.", a: "\"I've had a good run at this. Tell me about the new place.\"", bundle: 'free' },
+        { q: "They gave you a thread earlier that you never followed.", a: "\"You said something about Malmö before — what were you doing down there?\"", bundle: 'free' },
+        { q: "You are about to hand it back without having answered.", a: "\"Before I turn that round — it's been a long week and a good one. What about yours?\"", bundle: 'free' },
+        { q: "They ask a question and you have already asked two.", a: "\"I'll answer this one properly, because I've been interrogating you.\"", bundle: 'free' },
+        { q: "You notice you have asked four questions and answered none.", a: "\"I keep doing this. Ask me the same thing and I'll actually answer.\"", bundle: 'pro' },
+        { q: "They keep handing it back to you and you both keep deflecting.", a: "\"We're both being very polite. I'll go first: it's been a hard month.\"", bundle: 'pro' },
+        { q: "The conversation has become an interview with you as the interviewer.", a: "\"You've told me loads and I've told you nothing. Let me fix that.\"", bundle: 'pro' },
+      ]
+    },
+  ],
 };
 
 // ─── COLLECTIONS MODE DATA ───────────────────────────────────────────────────
@@ -9403,53 +9403,6 @@ const collectionsModeData = {
         { q: "A friend is describing something and you cannot tell what they want.", a: "\"Do you want ideas or do you want to vent?\" [Work Out What They Need]", bundle: 'pro' },
         { q: "They say they just needed to say it out loud.", a: "\"Then say it. I'm not going anywhere.\" [Just Listen]", bundle: 'pro' },
         { q: "They are nervous about tomorrow and know exactly what to do.", a: "\"You'll be fine once you start. It's the waiting you hate.\" [Respond With Encouragement]", bundle: 'pro' },
-      ]
-    },
-  ],
-  talkingaboutyourself: [
-    {
-      name: "When They Ask About You",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
-      description: "Give a Detail, Answer What They Are Really Asking and Say the Small True Thing — the three for an ordinary question landing on you.\n\nThey fix different failures. Give a Detail fixes the dead end, where your answer leaves them with nothing. Answer What They Are Really Asking fixes the literal answer, where you gave them a job title instead of a person. Say the Small True Thing fixes the search, where you are hunting for something impressive and stalling.\n\nBetween them they cover almost every version of \"how are you\", \"what do you do\" and \"what have you been up to\" — which is most of the questions anyone will ever ask you.\n\nMindset: answer the person, with something true and specific, and leave a handle on it.",
-      inputs: [
-        { q: "Someone asks how your week has been.", a: "\"Good — long, though. I've spent most of it arguing with a printer.\" [Give a Detail]", bundle: 'pro' },
-        { q: "Someone asks what you do.", a: "\"I teach English. Mostly to teenagers, which is as loud as it sounds.\" [Answer What They Are Really Asking]", bundle: 'pro' },
-        { q: "Someone asks what you have been up to and nothing has happened.", a: "\"Nothing dramatic. Mostly repainting a wardrobe, badly.\" [Say the Small True Thing]", bundle: 'pro' },
-        { q: "You are about to answer \"fine\" and stop.", a: "\"Fine — well, fine apart from the drive here.\" [Give a Detail]", bundle: 'pro' },
-        { q: "You gave your job title and the conversation stopped.", a: "\"That's the title. What I actually do all day is answer email.\" [Answer What They Are Really Asking]", bundle: 'pro' },
-        { q: "The true answer is slightly embarrassing.", a: "\"I've watched the same series twice this month. That's my news.\" [Say the Small True Thing]", bundle: 'pro' },
-        { q: "Someone asks where you are from.", a: "\"A small place two hours north. It explains most things about me.\" [Answer What They Are Really Asking]", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Choosing How Much",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
-      description: "Match What They Gave, Keep Something Back, Name What You Are Into and Hand It Back — the four that decide the size of what you say rather than its content.\n\nThis is the part people get wrong in both directions at once: too little with the people they want to know, and occasionally far too much with people they have just met. Match What They Gave is the rule that governs both.\n\nKeep Something Back is for the question you would rather not answer, and Hand It Back is for after you have answered — never before, which is the most common way of staying out of reach while looking interested.\n\nMindset: depth is a staircase. Take one step after they do, and answer before you turn it around.",
-      inputs: [
-        { q: "A friend tells you something significant about their health.", a: "\"That's a lot. I'm not going to match that with a work story — tell me more.\" [Match What They Gave]", bundle: 'pro' },
-        { q: "Someone asks about a breakup you do not want to discuss.", a: "\"Short version: it ended badly. That's probably enough for a Tuesday.\" [Keep Something Back]", bundle: 'pro' },
-        { q: "You have answered properly and want to turn it around.", a: "\"That's my week, anyway. What about yours?\" [Hand It Back]", bundle: 'pro' },
-        { q: "You are about to answer a polite corridor question with something very personal.", a: "\"Busy, but fine.\" [Match What They Gave]", bundle: 'pro' },
-        { q: "Someone asks what you do with your time.", a: "\"I've got very into bread lately. Not in a normal amount.\" [Name What You Are Into]", bundle: 'pro' },
-        { q: "You are about to hand it back without having answered.", a: "(answer first — one detail, then ask) [Hand It Back]", bundle: 'pro' },
-        { q: "You do want to tell them, but not in this room.", a: "\"Ask me again when there aren't twelve people here.\" [Keep Something Back]", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "All Seven",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
-      description: "Every strategy in the pack, mixed, in the order real conversations produce them rather than the order they were taught.\n\nThe seven divide by what the moment needs. Three answer the question in front of you: give a detail, give the real version, give the small true thing. Two decide the size: match what they gave, keep something back. One is for what you care about. And one is for afterwards.\n\nIf you are unsure, the useful question is what your answer would leave them with. Nothing to ask about means give a detail. A job title means answer what they were really asking. Nothing true means say the small thing.\n\nMindset: attention on you is an offer, not an exam.",
-      inputs: [
-        { q: "Someone asks how the weekend was.", a: "\"Quiet. I did nothing on purpose and it was excellent.\" [Give a Detail]", bundle: 'pro' },
-        { q: "A colleague mentions their week has been hard.", a: "\"Sounds like it. Mine's been the same kind of week, honestly.\" [Match What They Gave]", bundle: 'pro' },
-        { q: "You are searching for something worth reporting.", a: "\"Honestly — terrible television and too much coffee.\" [Say the Small True Thing]", bundle: 'pro' },
-        { q: "Someone asks how you know the host.", a: "\"We shared a flat for two years. Long story, mostly her fault.\" [Answer What They Are Really Asking]", bundle: 'pro' },
-        { q: "You are about to apologise for the thing you like.", a: "\"I like maps. That's it, that's the hobby.\" [Name What You Are Into]", bundle: 'pro' },
-        { q: "A question comes up you would rather not answer at all.", a: "\"I'll skip that one if that's alright — nothing to do with you.\" [Keep Something Back]", bundle: 'pro' },
-        { q: "You have been talking about your own thing for a while.", a: "\"I've had a good run at this. Tell me about the new place.\" [Hand It Back]", bundle: 'pro' },
       ]
     },
   ],
@@ -12047,6 +12000,56 @@ const collectionsModeData = {
         { q: "You are waiting at a bar that is very understaffed.", a: "\"Do you know if you order here or at the other end?\" [Ask About the Situation]", bundle: 'pro' },
         { q: "Someone sits down on the bench next to you in a park.", a: "\"Nice out today, finally.\" [Comment on the Situation]", bundle: 'pro' },
         { q: "You pass a colleague in a corridor with nothing to say.", a: "\"Alright?\" [Simple Greeting]", bundle: 'pro' },
+      ]
+    },
+  ],
+  talkingaboutyourself: [
+    {
+      name: "When They Ask About You",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Give a Detail**, **Answer What They Are Really Asking** and **Say the Small True Thing** — the three for an ordinary question landing on you.\n\n• **Give a Detail** — fixes the dead end, where your answer leaves them nothing to hold\n• **Answer What They Are Really Asking** — fixes the literal answer, where you gave a job title instead of a person\n• **Say the Small True Thing** — fixes the search, where you are hunting for something impressive and stalling\n\n**Which one:** ask what your answer would leave them with. Nothing to ask about means give a detail. A job title means answer what they were really asking. Nothing true means say the small thing.\n\n**Where it goes wrong:** all three failures produce the same four-word answer, so they look identical from the outside. Naming which one you just did is how you stop doing it.\n\nMindset: answer the person, with something true and specific, and leave a handle on it.",
+      inputs: [
+        { q: "Someone asks how your week has been.", a: "\"Long, but good. Half of it went on a printer that hates me.\" [Give a Detail]", bundle: 'pro' },
+        { q: "Someone asks what you do.", a: "\"I teach. Sixteen-year-olds, mostly, which is exactly as loud as it sounds.\" [Answer What They Are Really Asking]", bundle: 'pro' },
+        { q: "Someone asks what you have been up to and nothing has happened.", a: "\"Honestly nothing. I repainted a wardrobe and did it badly.\" [Say the Small True Thing]", bundle: 'pro' },
+        { q: "You are about to answer \"fine\" and stop there.", a: "\"Fine — although the drive here took two hours longer than it should have.\" [Give a Detail]", bundle: 'pro' },
+        { q: "You gave your job title and the conversation stalled.", a: "\"That's what's on the contract. Most days it's email and apologising.\" [Answer What They Are Really Asking]", bundle: 'pro' },
+        { q: "The true answer is slightly embarrassing.", a: "\"I've rewatched the same series. Twice. In one month.\" [Say the Small True Thing]", bundle: 'pro' },
+        { q: "Someone asks where you are from.", a: "\"Somewhere very small, two hours north. It explains a lot about me.\" [Answer What They Are Really Asking]", bundle: 'pro' },
+        { q: "They ask about your weekend and you did one small thing.", a: "\"I finally fixed the shed door. It has taken me four years.\" [Give a Detail]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Choosing How Much",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Match What They Gave**, **Keep Something Back**, **Name What You Are Into** and **Hand It Back** — the four that decide the size of what you say rather than its content.\n\n• **Match What They Gave** — one step below what they offered, taken after they take theirs\n• **Keep Something Back** — a partial answer, warmly given, for the question you would rather skip\n• **Name What You Are Into** — one line about the thing you care about, then stop\n• **Hand It Back** — after you have answered, never before\n\n**Which one:** read what they offered first. A corridor question wants one line; a disclosure wants you to meet it or say you are staying. Only once you have answered does handing it back count as generosity rather than as a shield.\n\n**Where it goes wrong:** people get it wrong in both directions at once — too little with the people they want to know, and occasionally far too much with someone met an hour ago.\n\nMindset: depth is a staircase. Take one step after they do, and answer before you turn it around.",
+      inputs: [
+        { q: "A friend tells you something serious about their health.", a: "\"That's an enormous thing to be carrying. I'd rather hear about it than talk about me.\" [Match What They Gave]", bundle: 'pro' },
+        { q: "Someone asks about a breakup you would rather not discuss.", a: "\"It ended, and it ended badly. That's the whole of what I've got tonight.\" [Keep Something Back]", bundle: 'pro' },
+        { q: "You have answered properly and want to turn it around.", a: "\"So that's my news. What's been happening with you?\" [Hand It Back]", bundle: 'pro' },
+        { q: "You are about to answer a corridor question with something very personal.", a: "\"Busy. Good busy, mostly.\" [Match What They Gave]", bundle: 'pro' },
+        { q: "Someone asks what you do with your time.", a: "\"Bread, lately. An unreasonable amount of bread.\" [Name What You Are Into]", bundle: 'pro' },
+        { q: "You are about to hand it back without having answered.", a: "\"Mine's been a strange one — I'll spare you the details. Yours?\" [Hand It Back]", bundle: 'pro' },
+        { q: "You do want to tell them, but not in this room.", a: "\"That's a proper conversation and this is a party. Remind me another time.\" [Keep Something Back]", bundle: 'pro' },
+        { q: "They went one level deeper and you want to meet it.", a: "\"Since you said that — I've not been having a great year either.\" [Match What They Gave]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "All Seven",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Every strategy in the pack, mixed, in the order real conversations produce them rather than the order they were taught.\n\n• **Give a Detail** · **Answer What They Are Really Asking** · **Say the Small True Thing** — answer the question in front of you\n• **Match What They Gave** · **Keep Something Back** — decide the size\n• **Name What You Are Into** — say what you care about\n• **Hand It Back** — and then move the attention\n\n**Which one:** the useful question is what your answer would leave them with. Nothing to ask about, a job title, or nothing true — each has its own fix. Everything else is a question of size.\n\n**Where it goes wrong:** freezing. Any of the seven beats the four-word answer, and choosing the second-best one instantly beats choosing the best one late.\n\nMindset: attention on you is an offer, not an exam.",
+      inputs: [
+        { q: "Someone asks how the weekend was.", a: "\"Deliberately empty. I have never enjoyed doing nothing more.\" [Give a Detail]", bundle: 'pro' },
+        { q: "A colleague mentions their week has been hard.", a: "\"Same here, if it helps. Mine's been the same shape as yours.\" [Match What They Gave]", bundle: 'pro' },
+        { q: "You are searching for something worth reporting.", a: "\"Coffee and bad television. That is genuinely the whole report.\" [Say the Small True Thing]", bundle: 'pro' },
+        { q: "Someone asks how you know the host.", a: "\"We lived together for two years. I could tell you things.\" [Answer What They Are Really Asking]", bundle: 'pro' },
+        { q: "You are about to apologise for the thing you like.", a: "\"Maps. I collect maps. I've decided not to be embarrassed about it.\" [Name What You Are Into]", bundle: 'pro' },
+        { q: "A question comes up you would rather not answer at all.", a: "\"I'm going to duck that one, if you don't mind. Nothing to do with you.\" [Keep Something Back]", bundle: 'pro' },
+        { q: "You have been talking about your own thing for a while.", a: "\"Right, I've taken up enough of that. Tell me about the flat.\" [Hand It Back]", bundle: 'pro' },
+        { q: "Someone asks how you are and you have been saying \"fine\" for weeks.", a: "\"I keep saying fine. It hasn't been true since about March.\" [Say the Small True Thing]", bundle: 'pro' },
       ]
     },
   ],

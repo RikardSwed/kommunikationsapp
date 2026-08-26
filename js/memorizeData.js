@@ -1845,112 +1845,6 @@ const memorizeCollections = {
       ]
     },
   ],
-  talkingaboutyourself: [
-    {
-      name: "Core Idea",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
-      description: "The shape of the pack: what to do when the attention lands on you.",
-      cards: [
-        { q: "What are the seven strategies in this pack?", a: "Give a Detail, Match What They Gave, Say the Small True Thing, Answer What They Are Really Asking, Name What You Are Into, Keep Something Back, Hand It Back.", bundle: 'free' },
-        { q: "What are the two ways answering goes wrong?", a: "Giving too little, which puts the whole conversation on them. And giving too much too soon, which outruns what they offered.", bundle: 'free' },
-        { q: "What is the mistake underneath both?", a: "Reading the question as a test of how interesting you are, rather than as an invitation to be known.", bundle: 'free' },
-        { q: "What does the rest of the app teach that this pack answers?", a: "Everything else teaches asking. This is the half where the question comes back to you.", bundle: 'pro' },
-        { q: "What is the useful question when you are unsure which strategy to use?", a: "What would my answer leave them with?", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Give a Detail",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
-      description: "The closed answer, plus one concrete thing.",
-      cards: [
-        { q: "What is the move?", a: "Answer the question, then add one concrete detail they could ask about.", bundle: 'free' },
-        { q: "Why is a closed answer a problem?", a: "They asked in order to have a conversation, and now they must invent a new question with nothing to build on.", bundle: 'free' },
-        { q: "What are the three details that always work?", a: "The concrete thing, the small mishap, and the odd contrast.", bundle: 'free' },
-        { q: "Does the detail have to be interesting?", a: "No. It is a handle, not a performance — and trying to make it interesting is what stops people using it.", bundle: 'pro' },
-        { q: "What happens after two closed answers?", a: "Most people conclude you would rather not talk, which is almost never what you meant.", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Match What They Gave",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
-      description: "Reading the size of the moment.",
-      cards: [
-        { q: "What is the rule?", a: "Answer at roughly the depth they offered — one step, taken after they take theirs.", bundle: 'free' },
-        { q: "What are the three sizes to read?", a: "The polite question, the real question, and the disclosure.", bundle: 'free' },
-        { q: "Which direction is the worse mistake?", a: "Going too deep too early. It is a step nobody offered to take.", bundle: 'free' },
-        { q: "What does a light answer tell someone who has just shared something real?", a: "That it was not safe. They will close the subject and be pleasant for the rest of the evening.", bundle: 'pro' },
-        { q: "Does matching always mean disclosing something of your own?", a: "No. Saying plainly that you are listening rather than trading is also a match.", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Say the Small True Thing",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
-      description: "True and specific instead of impressive.",
-      cards: [
-        { q: "What is the standard for a good answer?", a: "True and specific. Not interesting.", bundle: 'free' },
-        { q: "Why do people stall on \"what have you been up to\"?", a: "They are searching for something worth reporting, and there is nothing to find because that was never the standard.", bundle: 'free' },
-        { q: "What does \"not much\" reveal?", a: "Nothing. \"Repainting a wardrobe badly\" reveals a person.", bundle: 'free' },
-        { q: "How do you say a genuinely hard thing without making it heavy?", a: "Plainly and without the full weight, so they can decide whether to go there.", bundle: 'pro' },
-        { q: "Why does the mildly embarrassing answer work so well?", a: "It costs nothing and buys a lot of warmth.", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Answer What They Are Really Asking",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
-      description: "The version that is about you, not the official one.",
-      cards: [
-        { q: "What is \"what do you do?\" actually asking?", a: "What your days are like, and whether there is anything in there worth talking about.", bundle: 'free' },
-        { q: "Why is a job title a bad answer?", a: "It tells them what to call you and nothing else, and it is very hard to ask a follow-up about.", bundle: 'free' },
-        { q: "What are the three ways to give the real answer?", a: "Add what it is actually like, give the part you find interesting, or answer the person rather than the form.", bundle: 'free' },
-        { q: "What is \"where are you from?\" really asking?", a: "What shaped you.", bundle: 'pro' },
-        { q: "What if you would rather not lead with your job at all?", a: "Fine — as long as you hand them something else to hold.", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Name What You Are Into",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
-      description: "Enthusiasm without the lecture.",
-      cards: [
-        { q: "What are the three parts?", a: "Name it without apologising, give one line, then stop.", bundle: 'free' },
-        { q: "Why is stopping the discipline?", a: "What people fear is not the enthusiasm, it is the lecture. Those are different things.", bundle: 'free' },
-        { q: "What does an apology in front of it do?", a: "Tells the other person this is not something to ask about.", bundle: 'free' },
-        { q: "What is the most attractive thing most people hide?", a: "What they are actually enthusiastic about.", bundle: 'pro' },
-        { q: "When do you get to say the rest?", a: "When they ask — and then you have an audience that wants it.", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Keep Something Back",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
-      description: "Answering without opening the whole subject.",
-      cards: [
-        { q: "What are the two bad options this replaces?", a: "Stonewalling, which makes it enormous, and answering fully when you did not want to.", bundle: 'free' },
-        { q: "What are the three ways to keep it?", a: "The short version, naming the boundary warmly, or moving it rather than closing it.", bundle: 'free' },
-        { q: "Why does a partial answer land well?", a: "You gave them something rather than nothing, so the door closes without anyone feeling they trod on something.", bundle: 'free' },
-        { q: "What stops the gap becoming the story?", a: "Filling it with something else true about you.", bundle: 'pro' },
-        { q: "What if it is someone with authority over you?", a: "\"I'd rather keep that outside work\" is a complete sentence. If it is not respected, that is information about them.", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Hand It Back",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
-      description: "Turning the attention around, and when.",
-      cards: [
-        { q: "What is the rule?", a: "Answer first, with something real. Then hand it over.", bundle: 'free' },
-        { q: "What is wrong with handing it back immediately?", a: "It looks like interest and works like a shield — they learn nothing about you and do all the work.", bundle: 'free' },
-        { q: "What are the three good moments?", a: "After a real answer, into a thread they gave you, or when you have been talking a while.", bundle: 'free' },
-        { q: "What happens if you only ever hand it back?", a: "They stop asking, and the conversation becomes an interview with you as the interviewer.", bundle: 'pro' },
-        { q: "How do you fix it once you have noticed?", a: "Say so and go first. \"You've told me loads and I've told you nothing.\"", bundle: 'pro' },
-      ]
-    },
-  ],
   describethings: [
     {
       name: "Core Idea",
@@ -6300,6 +6194,176 @@ const memorizeCollections = {
         { q: "What is the honest worst case of an opener that falls flat?", a: "A short reply, from someone who will not remember it by lunchtime.", bundle: 'pro' },
         { q: "How long does the discomfort last?", a: "A few seconds — and only for you.", bundle: 'pro' },
         { q: "What do you give up by avoiding it?", a: "Every conversation that would have started. That is the trade being made.", bundle: 'pro' },
+      ]
+    },
+  ],
+  talkingaboutyourself: [
+    {
+      name: "Core Idea",
+      description: "Seven strategies for the moment the attention lands on you.\n\n1. **Give a Detail**\n2. **Match What They Gave**\n3. **Say the Small True Thing**\n4. **Answer What They Are Really Asking**\n5. **Name What You Are Into**\n6. **Keep Something Back**\n7. **Hand It Back**\n\nThree answer the question, two decide the size, one names what you care about.",
+      cards: [
+        { q: "What are the seven strategies in this pack?", a: "Give a Detail, Match What They Gave, Say the Small True Thing, Answer What They Are Really Asking, Name What You Are Into, Keep Something Back, Hand It Back.", bundle: 'free' },
+        { q: "What are the two ways answering goes wrong?", a: "Giving too little, which puts the whole conversation on them. And giving too much too soon, which outruns what they offered.", bundle: 'free' },
+        { q: "What is the mistake underneath both?", a: "Reading the question as a test of how interesting you are, rather than as an invitation to be known.", bundle: 'free' },
+        { q: "How do the seven divide?", a: "Three answer the question, two decide the size, one names what you care about, and one hands the attention back.", bundle: 'free' },
+        { q: "What is the useful question when you are unsure which strategy to use?", a: "What would my answer leave them with?", bundle: 'free' },
+        { q: "What does the rest of the app teach that this pack answers?", a: "Everything else teaches asking. This is the half where the question comes back to you.", bundle: 'pro' },
+        { q: "What is attention on you, according to this pack?", a: "An offer, not an exam.", bundle: 'pro' },
+        { q: "Which strategy always comes last, and why?", a: "Hand It Back — because before you have answered, it is a shield rather than a gift.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Give a Detail",
+      description: "",
+      cards: [
+        { q: "What is the move?", a: "Answer the question, then add one concrete detail they could ask about.", bundle: 'free' },
+        { q: "Why is a closed answer a problem?", a: "They asked in order to have a conversation, and now they must invent a new question with nothing to build on.", bundle: 'free' },
+        { q: "What are the three details that always work?", a: "The concrete thing, the small mishap, and the odd contrast.", bundle: 'free' },
+        { q: "Does the detail have to be interesting?", a: "No. It is a handle, not a performance — and trying to make it interesting is what stops people using it.", bundle: 'free' },
+        { q: "What happens after two closed answers?", a: "Most people conclude you would rather not talk, which is almost never what you meant.", bundle: 'free' },
+        { q: "Why does the small mishap invite the most?", a: "People like a story with a problem in it, and a problem is something they can ask about.", bundle: 'pro' },
+        { q: "How do you recover an answer you already closed?", a: "Reopen it out loud. \"That's not the whole answer, actually.\"", bundle: 'pro' },
+        { q: "What is the odd contrast?", a: "The bit that does not fit — \"quiet week, which is strange, because it started with a funeral\".", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Match What They Gave",
+      description: "",
+      cards: [
+        { q: "What is the rule?", a: "Answer at roughly the depth they offered — one step, taken after they take theirs.", bundle: 'free' },
+        { q: "What are the three sizes to read?", a: "The polite question, the real question, and the disclosure.", bundle: 'free' },
+        { q: "Which direction is the worse mistake?", a: "Going too deep too early. It is a step nobody offered to take.", bundle: 'free' },
+        { q: "What does a light answer tell someone who has just shared something real?", a: "That it was not safe. They will close the subject and be pleasant for the rest of the evening.", bundle: 'free' },
+        { q: "Does matching always mean disclosing something of your own?", a: "No. Saying plainly that you are listening rather than trading is also a match.", bundle: 'free' },
+        { q: "How do you tell a real question from a polite one?", a: "They stop, and they wait. A polite question is asked in motion.", bundle: 'pro' },
+        { q: "What do you do if you have gone too deep by accident?", a: "Say so lightly and carry on. \"That was more than I meant to say.\"", bundle: 'pro' },
+        { q: "What does \"depth is a staircase\" mean in practice?", a: "One step below what they gave, taken after they take theirs. Not five, and not none.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Say the Small True Thing",
+      description: "",
+      cards: [
+        { q: "What is the standard for a good answer?", a: "True and specific. Not interesting.", bundle: 'free' },
+        { q: "Why do people stall on \"what have you been up to\"?", a: "They are searching for something worth reporting, and there is nothing to find because that was never the standard.", bundle: 'free' },
+        { q: "What does \"not much\" reveal?", a: "Nothing. \"Repainting a wardrobe badly\" reveals a person.", bundle: 'free' },
+        { q: "What are the three sizes, and are they all fine?", a: "Ordinary and specific, mildly embarrassing, and actually difficult. All three are fine.", bundle: 'free' },
+        { q: "Why does the mildly embarrassing answer work so well?", a: "It costs nothing and buys a lot of warmth.", bundle: 'free' },
+        { q: "How do you say a genuinely hard thing without making it heavy?", a: "Plainly and without the full weight, so they can decide whether to go there.", bundle: 'pro' },
+        { q: "What is wrong with inflating an ordinary story?", a: "The inflated version is the one that falls flat, because it is the only one they can hear you doing.", bundle: 'pro' },
+        { q: "What are people actually measuring when they ask?", a: "What you are like — not how eventful your life is.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Answer What They Are Really Asking",
+      description: "",
+      cards: [
+        { q: "What is \"what do you do?\" actually asking?", a: "What your days are like, and whether there is anything in there worth talking about.", bundle: 'free' },
+        { q: "Why is a job title a bad answer?", a: "It tells them what to call you and nothing else, and it is very hard to ask a follow-up about.", bundle: 'free' },
+        { q: "What are the three ways to give the real answer?", a: "Add what it is actually like, give the part you find interesting, or answer the person rather than the form.", bundle: 'free' },
+        { q: "What is \"where are you from?\" really asking?", a: "What shaped you.", bundle: 'free' },
+        { q: "What if you would rather not lead with your job at all?", a: "Fine — as long as you hand them something else to hold.", bundle: 'free' },
+        { q: "What is \"how long have you been here?\" really asking?", a: "Whether you feel settled.", bundle: 'pro' },
+        { q: "What is wrong with \"just admin, nothing exciting\"?", a: "It closes the subject twice — once with the title, once with the apology.", bundle: 'pro' },
+        { q: "What should the real answer make possible?", a: "A second question. That is the whole test.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Name What You Are Into",
+      description: "",
+      cards: [
+        { q: "What are the three parts?", a: "Name it without apologising, give one line, then stop.", bundle: 'free' },
+        { q: "Why is stopping the discipline?", a: "What people fear is not the enthusiasm, it is the lecture. Those are different things.", bundle: 'free' },
+        { q: "What does an apology in front of it do?", a: "Tells the other person this is not something to ask about.", bundle: 'free' },
+        { q: "What is the most attractive thing most people hide?", a: "What they are actually enthusiastic about.", bundle: 'free' },
+        { q: "When do you get to say the rest?", a: "When they ask — and then you have an audience that wants it.", bundle: 'free' },
+        { q: "Does the thing you are into have to have a point?", a: "No. \"There's no point to it\" is often the most likeable answer available.", bundle: 'pro' },
+        { q: "What do you do if it is very niche?", a: "Say so, and offer them the choice of the short version or the long one.", bundle: 'pro' },
+        { q: "How long is \"one line about it\"?", a: "Long enough to be a handle, short enough not to be a talk.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Keep Something Back",
+      description: "",
+      cards: [
+        { q: "What are the two bad options this replaces?", a: "Stonewalling, which makes it enormous, and answering fully when you did not want to.", bundle: 'free' },
+        { q: "What are the three ways to keep it?", a: "The short version, naming the boundary warmly, or moving it rather than closing it.", bundle: 'free' },
+        { q: "Why does a partial answer land well?", a: "You gave them something rather than nothing, so the door closes without anyone feeling they trod on something.", bundle: 'free' },
+        { q: "What stops the gap becoming the story?", a: "Filling it with something else true about you.", bundle: 'free' },
+        { q: "What if it is someone with authority over you?", a: "\"I'd rather keep that outside work\" is a complete sentence. If it is not respected, that is information about them.", bundle: 'free' },
+        { q: "What do you say if they apologise for asking?", a: "That it was a normal question and you are simply not doing it tonight.", bundle: 'pro' },
+        { q: "What do you do if they push after you have declined?", a: "Repeat that you have given them what you have, and let the pause sit.", bundle: 'pro' },
+        { q: "What makes a refusal heavy rather than easy?", a: "The justification. The refusal itself is fine.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Hand It Back",
+      description: "",
+      cards: [
+        { q: "What is the rule?", a: "Answer first, with something real. Then hand it over.", bundle: 'free' },
+        { q: "What is wrong with handing it back immediately?", a: "It looks like interest and works like a shield — they learn nothing about you and do all the work.", bundle: 'free' },
+        { q: "What are the three good moments?", a: "After a real answer, into a thread they gave you, or when you have been talking a while.", bundle: 'free' },
+        { q: "What happens if you only ever hand it back?", a: "They stop asking, and the conversation becomes an interview with you as the interviewer.", bundle: 'free' },
+        { q: "How do you fix it once you have noticed?", a: "Say so and go first. \"You've told me loads and I've told you nothing.\"", bundle: 'free' },
+        { q: "What does handing it back into a thread sound like?", a: "Using their own earlier material — \"you mentioned Malmö earlier\".", bundle: 'pro' },
+        { q: "What do you do when you have been talking a while?", a: "Name it and stop. \"I've had a good run at this. Your turn.\"", bundle: 'pro' },
+        { q: "What do you do when both of you keep deflecting?", a: "Go first. \"We're both being very polite — I'll start.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **When They Ask About You** — the three for an ordinary question: detail, real answer, or small true thing\n• **Choosing How Much** — the four that decide size: match, keep back, name what you love, hand back\n• **All Seven** — everything mixed, in the order real conversations produce it\n\nOne question sorts the first group and one sorts the second: what would my answer leave them with, and how much did they just offer?",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "When They Ask About You, Choosing How Much, and All Seven.", bundle: 'pro' },
+        { q: "What does When They Ask About You sort by?", a: "What your answer would leave them with — nothing to ask about, a job title, or nothing true.", bundle: 'pro' },
+        { q: "What does Choosing How Much sort by?", a: "Size rather than content — how much they offered, and whether you want to answer at all.", bundle: 'pro' },
+        { q: "Your answer left them nothing to hold. Which strategy?", a: "Give a Detail.", bundle: 'pro' },
+        { q: "You gave a job title and it stalled. Which strategy?", a: "Answer What They Are Really Asking.", bundle: 'pro' },
+        { q: "You are hunting for something impressive. Which strategy?", a: "Say the Small True Thing.", bundle: 'pro' },
+        { q: "They went one level deeper than usual. Which strategy?", a: "Match What They Gave.", bundle: 'pro' },
+        { q: "You have answered fully and want the attention to move. Which strategy?", a: "Hand It Back.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **A First Conversation** — Answer What They Are Really Asking → Give a Detail → Hand It Back → Match What They Gave\n2. **Going a Bit Deeper** — Match What They Gave → Say the Small True Thing → Name What You Are Into → Hand It Back\n3. **A Question You Would Rather Not Answer** — Keep Something Back → Give a Detail → Hand It Back → Match What They Gave\n\nAll three end by handing the attention over, and none of them starts there.",
+      cards: [
+        { q: "What is the order in A First Conversation?", a: "Real answer, one detail, hand it back, then match whatever they give you.", bundle: 'pro' },
+        { q: "Why does that sequence answer three times before turning it around?", a: "So the handover lands as generosity rather than as escape.", bundle: 'pro' },
+        { q: "What do people do instead in a first conversation?", a: "Answer briefly and immediately ask back — which means after four exchanges they know nothing about you.", bundle: 'pro' },
+        { q: "What is the order in Going a Bit Deeper?", a: "Match what they gave, say the small true thing, name what you are into, hand it back.", bundle: 'pro' },
+        { q: "Whose decision is the first step of that sequence?", a: "Theirs as much as yours — they went one level down and you are taking them up on it.", bundle: 'pro' },
+        { q: "What is the order in A Question You Would Rather Not Answer?", a: "Keep something back, give a detail, hand it back, then match.", bundle: 'pro' },
+        { q: "Why does a detail come straight after keeping something back?", a: "The gap is what makes it awkward, so the next step fills it rather than letting it sit.", bundle: 'pro' },
+        { q: "What do all three sequences have in common?", a: "They end by handing the attention over, and none of them starts there.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five situations where answering gets hard:\n\n• **An Ordinary Week** — nothing feels worth reporting\n• **After a Disclosure** — they have just told you something big\n• **What Do You Do** — the most-asked question, worst-answered\n• **A Bad Stretch** — the honest answer is not good\n• **A Closed Subject** — you would rather not answer at all\n\nTwo are about having nothing to say, and three are about deciding how much to give.",
+      cards: [
+        { q: "What are the five challenge categories in this pack?", a: "An Ordinary Week, After a Disclosure, What Do You Do, A Bad Stretch, and A Closed Subject.", bundle: 'pro' },
+        { q: "What is wrong in An Ordinary Week?", a: "The standard, not the week. There is nothing to find because interesting was never the bar.", bundle: 'pro' },
+        { q: "What is always wrong after a disclosure?", a: "The light answer. They are checking whether it was safe, and a breezy reply answers that.", bundle: 'pro' },
+        { q: "Why is a job title the worst available answer?", a: "It is nearly impossible to ask a follow-up question about.", bundle: 'pro' },
+        { q: "What is the middle option in a bad stretch?", a: "A true answer at the size the moment allows — honest and small.", bundle: 'pro' },
+        { q: "What makes a declined question awkward?", a: "The gap afterwards, not the refusal. Fill it with something else true.", bundle: 'pro' },
+        { q: "What should you avoid when declining?", a: "Explaining why. The refusal is fine; the justification makes it heavy.", bundle: 'pro' },
+        { q: "What do two of the five categories have in common?", a: "They are about having nothing to say. The other three are about how much to give.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "The four beliefs that keep people from answering:\n\n• **Just Being Polite** — they only asked to be polite\n• **The Bar for an Answer** — an ordinary week is not worth reporting\n• **Always the Asker** — I would rather hear about them\n• **All or Nothing** — honesty means telling them everything\n\nEach is a real rule applied far too widely.",
+      cards: [
+        { q: "What are the four mindset areas in this pack?", a: "Just Being Polite, The Bar for an Answer, Always the Asker, and All or Nothing.", bundle: 'pro' },
+        { q: "What does the four-word answer teach the other person?", a: "That you would rather not be asked — and then they stop asking, which seems to prove the belief.", bundle: 'pro' },
+        { q: "What is the standard for an answer?", a: "True and specific. Not interesting.", bundle: 'pro' },
+        { q: "Why is being the listener such an effective place to hide?", a: "Because it is genuinely generous, genuinely comfortable and genuinely a strength.", bundle: 'pro' },
+        { q: "What stalls a friendship where one person only ever asks?", a: "Being known has to go both ways. Otherwise it stops at a certain depth and nobody can say why.", bundle: 'pro' },
+        { q: "Why do the two extremes feel easier than the middle?", a: "They are rules. The middle is a judgement, and judgements can be got wrong.", bundle: 'pro' },
+        { q: "What does \"one step below what they gave\" replace?", a: "The choice between guarded and wide open, which produces both failures at once.", bundle: 'pro' },
+        { q: "What is attention on you?", a: "An offer, not an exam.", bundle: 'pro' },
       ]
     },
   ],

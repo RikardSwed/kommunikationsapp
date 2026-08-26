@@ -1083,60 +1083,6 @@ const mindsetCollections = {
       ]
     },
   ],
-  talkingaboutyourself: [
-    {
-      name: "They Asked Because They Want to Know",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
-      description: "The assumption that a question about you is a formality — something people say to be polite, which it would be greedy to treat as a real opening.\n\nIt produces the four-word answer and the immediate handover, and it slowly teaches the other person that you would rather not be asked. After a few rounds they stop asking, which then confirms the original belief.\n\nMindset: a question is an offer. Taking someone up on it is the polite thing, not the greedy one.",
-      inputs: [
-        { q: "They're only asking to be polite.", a: "Maybe. Answer properly and find out — that's how the polite version becomes a real one.", bundle: 'pro' },
-        { q: "They don't want to hear about my week.", a: "They asked about your week. Start there and watch what happens.", bundle: 'pro' },
-        { q: "I'd be taking up their time.", a: "One detail is four seconds. The awkward pause after \"fine\" is longer.", bundle: 'pro' },
-        { q: "They'll ask again if they really want to know.", a: "They won't. Two closed answers and most people conclude you'd rather not.", bundle: 'pro' },
-        { q: "It's more polite to ask them back straight away.", a: "Answer first, then ask. Otherwise they're carrying the whole conversation.", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "You Do Not Have to Be Impressive",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
-      description: "The belief that the answer is being judged — that an ordinary week is a failure to report, and that something is required to earn the attention.\n\nIt is why people stall on \"what have you been up to\", a question with no wrong answers. Nobody is comparing your fortnight to anyone else's. They are finding out what you are like, and specificity does that far better than scale.\n\nMindset: the standard is true and specific. Nobody has ever been bored by a detail.",
-      inputs: [
-        { q: "Nothing interesting has happened to me.", a: "The wardrobe, the bike, the terrible series. Ordinary and specific is the whole trick.", bundle: 'pro' },
-        { q: "My life sounds dull said out loud.", a: "Said vaguely, everyone's does. Said specifically, almost nobody's does.", bundle: 'pro' },
-        { q: "They've got much better stories.", a: "They're not stories. They're just details, and you have exactly as many as they do.", bundle: 'pro' },
-        { q: "I should have something better to say.", a: "Better than true? There isn't a category above that one.", bundle: 'pro' },
-        { q: "I'll wait until I've got something worth telling.", a: "You'll wait a long time, and be quiet the whole way.", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Being Known Is the Point",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
-      description: "The quiet strategy of being the person who asks — endlessly curious, generous with attention, and almost never the subject.\n\nIt looks like a virtue and works like a wall. People become close by taking turns at being known, and someone who only ever asks is unknowable, however warm they are. The friendship stalls and neither person can say why.\n\nMindset: asking is half of it. Being answerable is the other half.",
-      inputs: [
-        { q: "I'd rather hear about them.", a: "Usually true, and it's also the most comfortable place to hide.", bundle: 'pro' },
-        { q: "I'm just a good listener.", a: "You are. Being listened to is a thing you're allowed as well.", bundle: 'pro' },
-        { q: "They don't need to know all that about me.", a: "Not all of it. Some of it is how this becomes a friendship rather than a habit.", bundle: 'pro' },
-        { q: "Talking about myself feels self-indulgent.", a: "It's how they get to know you. That's not indulgence, it's your half of the work.", bundle: 'pro' },
-        { q: "I've never been the sort who opens up.", a: "One detail at a time is how everyone who does it started.", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Depth Is a Staircase",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
-      description: "The idea that honesty means saying everything, so the choice is between guarded and wide open. It produces both failures at once — too little with the people who matter, and occasionally far too much with someone met an hour ago.\n\nConversations get deeper in steps, and each step is taken by both people. Reading the size of what they offered is a skill, and it is most of the difference between someone easy to talk to and someone slightly overwhelming.\n\nMindset: one step below what they gave. Not five, and not none.",
-      inputs: [
-        { q: "If I'm going to be honest I should say all of it.", a: "Honest and complete aren't the same. One step below their level is honest.", bundle: 'pro' },
-        { q: "They shared something big so I should match it exactly.", a: "Or say you're listening rather than trading. That's a match too.", bundle: 'pro' },
-        { q: "Holding anything back is a kind of lying.", a: "It's timing. The rest is still available next month.", bundle: 'pro' },
-        { q: "I told them too much and now it's strange.", a: "Say so lightly and carry on. \"That was more than I meant to say\" fixes most of it.", bundle: 'pro' },
-        { q: "They gave me a light answer, so they don't like me.", a: "They gave you a corridor answer to a corridor question. That's all it means.", bundle: 'pro' },
-      ]
-    },
-  ],
   describethings: [
     {
       name: "You Do Not Need the Word",
@@ -3932,6 +3878,72 @@ const mindsetCollections = {
         { q: "Other people will see it go wrong.", a: "Nobody is watching. Everyone is thinking about their own queue.", bundle: 'pro' },
         { q: "If it fails I'll have to stand next to them anyway.", a: "For four minutes, having said one friendly thing. That's survivable.", bundle: 'pro' },
         { q: "I've had it go badly before and it was horrible.", a: "And the week after, nobody mentioned it. That's the actual size of it.", bundle: 'pro' },
+      ]
+    },
+  ],
+  talkingaboutyourself: [
+    {
+      name: "Just Being Polite",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"They only asked to be polite. It would be greedy to actually answer.\"\n\n**What is true instead:** a question is an offer, and taking someone up on it is the polite thing rather than the greedy one.\n\n**Why it feels right:** some questions are formalities, and answering a corridor \"how are you\" with four minutes is a real mistake. It is a good rule applied far too widely.\n\n**What it costs:** the four-word answer teaches them you would rather not be asked. They stop asking, which seems to prove the belief.\n\nMindset: a question is an offer. Take it.",
+      inputs: [
+        { q: "They're only asking to be polite.", a: "Maybe. Answer properly and find out — that's how the polite version becomes a real one.", bundle: 'pro' },
+        { q: "They don't want to hear about my week.", a: "They asked about your week. Start there and watch what happens.", bundle: 'pro' },
+        { q: "I'd be taking up their time.", a: "One detail is four seconds. The awkward pause after \"fine\" is longer.", bundle: 'pro' },
+        { q: "They'll ask again if they really want to know.", a: "They won't. Two closed answers and most people conclude you'd rather not.", bundle: 'pro' },
+        { q: "It's more polite to ask them back straight away.", a: "Answer first, then ask. Otherwise they're carrying the whole conversation.", bundle: 'pro' },
+        { q: "Nobody actually wants to hear the answer to \"how are you\".", a: "Some don't. The ones who stopped walking do.", bundle: 'pro' },
+        { q: "I'd be making it about me.", a: "They aimed the question at you. Answering it isn't a hijack.", bundle: 'pro' },
+        { q: "If I answer properly it'll be a whole thing.", a: "One sentence isn't a whole thing. You get to choose the size.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Bar for an Answer",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"An ordinary week isn't worth reporting. I need something better.\"\n\n**What is true instead:** the standard is true and specific, not interesting. They are finding out what you are like, and a detail does that better than scale.\n\n**Why it feels right:** other people's answers sound better than yours. What you have not noticed is how ordinary their content was.\n\n**What it costs:** the search for something impressive is what produces the pause, and then \"not much\".\n\nMindset: the standard is true and specific. Nobody has ever been bored by a detail.",
+      inputs: [
+        { q: "Nothing interesting has happened to me.", a: "The wardrobe, the bike, the terrible series. Ordinary and specific is the whole trick.", bundle: 'pro' },
+        { q: "My life sounds dull said out loud.", a: "Said vaguely, everyone's does. Said specifically, almost nobody's does.", bundle: 'pro' },
+        { q: "They've got much better stories.", a: "They're not stories. They're just details, and you have exactly as many as they do.", bundle: 'pro' },
+        { q: "I should have something better to say.", a: "Better than true? There isn't a category above that one.", bundle: 'pro' },
+        { q: "I'll wait until I've got something worth telling.", a: "You'll wait a long time, and be quiet the whole way.", bundle: 'pro' },
+        { q: "They'll think my week sounds sad.", a: "Vague weeks sound sad. Specific ones sound like a person.", bundle: 'pro' },
+        { q: "I need to make this sound better than it was.", a: "The inflated version is the one that falls flat. It's the only one they can hear you doing.", bundle: 'pro' },
+        { q: "There's nothing in my week they could possibly ask about.", a: "Name one object you touched. That's the handle.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Always the Asker",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"I'd rather hear about them. I'm just a good listener.\"\n\n**What is true instead:** asking is half of it. People become close by taking turns at being known, and being listened to is something you are allowed as well.\n\n**Why it feels right:** it is genuinely more comfortable, it is genuinely generous, and it is genuinely a strength. All of that is true, which is exactly what makes it such an effective place to hide.\n\n**What it costs:** someone who only ever asks is unknowable, however warm they are. The friendship stalls at a certain depth and neither person can say why.\n\nMindset: asking is half of it. Being answerable is the other half.",
+      inputs: [
+        { q: "I'd rather hear about them.", a: "Usually true, and it's also the most comfortable place to hide.", bundle: 'pro' },
+        { q: "I'm just a good listener.", a: "You are. Being listened to is a thing you're allowed as well.", bundle: 'pro' },
+        { q: "They don't need to know all that about me.", a: "Not all of it. Some of it is how this becomes a friendship rather than a habit.", bundle: 'pro' },
+        { q: "Talking about myself feels self-indulgent.", a: "It's how they get to know you. That's not indulgence, it's your half of the work.", bundle: 'pro' },
+        { q: "I've never been the sort who opens up.", a: "One detail at a time is how everyone who does it started.", bundle: 'pro' },
+        { q: "Asking questions is what I'm good at.", a: "It is. It's also a very effective way of never being asked one.", bundle: 'pro' },
+        { q: "They haven't asked, so they don't want to know.", a: "You've trained them not to. Go first once and see.", bundle: 'pro' },
+        { q: "If I start talking about myself I won't know when to stop.", a: "One detail, then hand it back. The rule is the same as it is for them.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "All or Nothing",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Being honest means telling them everything. So it's either guarded or wide open.\"\n\n**What is true instead:** conversations get deeper in steps, taken by both people. One level below what they offered is honest, not a half-measure.\n\n**Why it feels right:** the extremes are easier to execute. Reading what somebody offered is a judgement, and judgements can be got wrong.\n\n**What it costs:** both failures at once — too little with the people who matter, and far too much with someone met an hour ago.\n\nMindset: one step below what they gave. Not five, and not none.",
+      inputs: [
+        { q: "If I'm going to be honest I should say all of it.", a: "Honest and complete aren't the same. One step below their level is honest.", bundle: 'pro' },
+        { q: "They shared something big so I should match it exactly.", a: "Or say you're listening rather than trading. That's a match too.", bundle: 'pro' },
+        { q: "Holding anything back is a kind of lying.", a: "It's timing. The rest is still available next month.", bundle: 'pro' },
+        { q: "I told them too much and now it's strange.", a: "Say so lightly and carry on. \"That was more than I meant to say\" fixes most of it.", bundle: 'pro' },
+        { q: "They gave me a light answer, so they don't like me.", a: "They gave you a corridor answer to a corridor question. That's all it means.", bundle: 'pro' },
+        { q: "I don't know how deep is too deep.", a: "Look at what they just gave you. One step under that.", bundle: 'pro' },
+        { q: "If I don't say it now I never will.", a: "You will. This isn't the last conversation you'll ever have with them.", bundle: 'pro' },
+        { q: "Being guarded is safer than getting it wrong.", a: "Safer, and it costs you every friendship that would have gone further.", bundle: 'pro' },
       ]
     },
   ],

@@ -115,9 +115,6 @@ const packTags = {
   supportingconversations: [
     'supporting someone', 'listening', 'what they need', 'comforting', 'being there'
   ],
-  talkingaboutyourself: [
-    'answering questions', 'small talk', 'self-disclosure', 'opening up', 'what do you do', 'being asked about yourself'
-  ],
   describethings: [
     'describing', 'detail', 'vocabulary', 'painting a picture', 'being specific'
   ],
@@ -360,6 +357,9 @@ const packTags = {
   ],
   startingconversations1: [
     'starting conversations', 'openers', 'small talk', 'strangers', 'first words'
+  ],
+  talkingaboutyourself: [
+    'answering questions', 'small talk', 'self-disclosure', 'opening up', 'what do you do', 'being asked about yourself'
   ],
 };
 

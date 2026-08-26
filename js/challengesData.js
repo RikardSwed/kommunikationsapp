@@ -1273,73 +1273,6 @@ const challengesCollections = {
       ]
     },
   ],
-  talkingaboutyourself: [
-    {
-      name: "You Think Nothing Interesting Has Happened",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
-      description: "The most common reason people give a closed answer. They search for something worth reporting, find an ordinary week, and conclude there is nothing to say.\n\nThe standard is wrong, not the week. Nobody asking how your weekend was is hoping for an anecdote; they are finding out what you are like, and a specific ordinary thing does that better than an impressive vague one.\n\nSay the Small True Thing is the fix, and Give a Detail is what makes it usable — the detail is the handle they pick it up by.\n\nMindset: specific beats interesting. Every time, with everyone.",
-      inputs: [
-        { q: "Someone asks what you did at the weekend and you did nothing.", a: "\"Nothing at all, on purpose. It was excellent.\" [Say the Small True Thing]", bundle: 'pro' },
-        { q: "You are hunting for something worth reporting.", a: "\"Terrible television and too much coffee, honestly.\" [Say the Small True Thing]", bundle: 'pro' },
-        { q: "The only true answer feels too small to say out loud.", a: "\"I've been trying to fix a bike I don't know how to fix.\" [Give a Detail]", bundle: 'pro' },
-        { q: "You are about to inflate a story to make it land.", a: "(tell the small version — it lands better) [Say the Small True Thing]", bundle: 'pro' },
-        { q: "You said \"not much\" and the conversation stopped dead.", a: "\"That's not quite true, actually — I repainted a wardrobe, badly.\" [Give a Detail]", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "They Have Just Shared Something Big",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
-      description: "Someone has told you about an illness, a separation, a job lost, a parent failing. The attention is about to come back to you, and this is where people misjudge the size most badly in both directions.\n\nMatch What They Gave is the strategy, and matching does not always mean disclosing. Sometimes the right match is saying plainly that you are listening rather than trading — a story of your own can read as taking the subject back.\n\nWhat is always wrong is the light answer. Someone who has just taken a risk is checking whether it was safe, and a breezy reply answers that question for them.\n\nMindset: meet them, or say you are staying. Never breeze past it.",
-      inputs: [
-        { q: "A friend tells you something serious about their health.", a: "\"That's a lot. I'm not going to match that with a work story — tell me more.\" [Match What They Gave]", bundle: 'pro' },
-        { q: "You have something comparable and it would genuinely help.", a: "\"I'll match you, since it might help: I went through the same thing in 2019.\" [Match What They Gave]", bundle: 'pro' },
-        { q: "You are about to change the subject because it is uncomfortable.", a: "\"I nearly moved us on then. I'd rather stay with what you said.\" [Match What They Gave]", bundle: 'pro' },
-        { q: "They ask how you are, straight after telling you.", a: "\"Fine, and that genuinely isn't the interesting thing right now.\" [Hand It Back]", bundle: 'pro' },
-        { q: "They ask you something personal in return and you do not want to answer it.", a: "\"I'll skip that bit — not tonight. Keep going with yours.\" [Keep Something Back]", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "The Question Is About Work or What You Do",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
-      description: "The most-asked question there is, and the one most reliably answered with the least useful sentence available. A job title is nearly impossible to follow up.\n\nAnswer What They Are Really Asking is the whole category. They want to know what your days are like, whether you enjoy it, and whether there is anything in there worth talking about — not what to write on your name badge.\n\nIt also covers the case where you would rather not lead with your job at all, which is a perfectly good answer as long as you give them something else to hold.\n\nMindset: give them the version they can ask a second question about.",
-      inputs: [
-        { q: "Someone asks what you do.", a: "\"I teach English. Mostly to teenagers, which is as loud as it sounds.\" [Answer What They Are Really Asking]", bundle: 'pro' },
-        { q: "You gave the title and the conversation stalled.", a: "\"That's the title. What I actually do all day is answer email.\" [Answer What They Are Really Asking]", bundle: 'pro' },
-        { q: "You do not much like your job and would rather not lead with it.", a: "\"I work in logistics, which I'd rather not describe. Ask me about weekends.\" [Answer What They Are Really Asking]", bundle: 'pro' },
-        { q: "There is a part of the job you genuinely like.", a: "\"Technically accounting. The bit I like is the detective work.\" [Name What You Are Into]", bundle: 'pro' },
-        { q: "You have answered and they are still looking at you.", a: "\"Anyway — that's mine. What do you do all day?\" [Hand It Back]", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "You Are Having a Bad Time and They Asked",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
-      description: "Someone asks how you are and the honest answer is not good. The two easy options are lying and unloading, and both cost something — the first keeps everyone at a distance, the second lands more than the person asked to carry.\n\nThe middle is a true answer at the size the moment allows. Say the Small True Thing, sized by Match What They Gave: a corridor question gets one honest line, a real one gets the longer version.\n\nKeep Something Back is here too, for when you do not want to go into it at all — which is allowed, and works better said than performed.\n\nMindset: honest and small is a real option. It is not the same as pretending.",
-      inputs: [
-        { q: "A colleague asks how you are as they pass your desk.", a: "\"Bit of a rough week, honestly. Nothing that won't keep.\" [Say the Small True Thing]", bundle: 'pro' },
-        { q: "A friend has stopped and is actually waiting for the real answer.", a: "\"Honestly? Not my best month. Nothing dramatic, just heavy.\" [Match What They Gave]", bundle: 'pro' },
-        { q: "You are about to say \"fine\" for the twentieth time.", a: "\"I've been saying fine for two months and it isn't true.\" [Say the Small True Thing]", bundle: 'pro' },
-        { q: "You do not want to go into it here.", a: "\"Not great, but I'd rather not do it at work. Thanks for asking, though.\" [Keep Something Back]", bundle: 'pro' },
-        { q: "You have said more than you meant to and want to steady it.", a: "\"That's more than I planned to say. How have you been?\" [Hand It Back]", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "You Do Not Want to Answer",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
-      description: "A question about money, health, a relationship, your family, why you left the last job. Sometimes it is innocent curiosity, sometimes it is not, and the strategy is the same either way.\n\nKeep Something Back is the move: a partial answer, warmly given, closes the subject without making it enormous. Give a Detail is what stops the gap becoming the story — fill the space with something else true.\n\nThe one situation worth naming separately is a question from someone with power over you, where the friendly boundary is both allowed and usually respected. \"I'd rather keep that outside work\" is a complete sentence, and if it is not respected, that is information about them rather than about you.\n\nMindset: you can give them something without giving them everything.",
-      inputs: [
-        { q: "Someone asks about a breakup you do not want to discuss.", a: "\"Short version: it ended badly. Enough for a Tuesday.\" [Keep Something Back]", bundle: 'pro' },
-        { q: "You want to close the subject without leaving a hole in the conversation.", a: "\"Not a story for tonight. I have been repainting a flat instead, though.\" [Give a Detail]", bundle: 'pro' },
-        { q: "A manager asks something personal.", a: "\"I'd rather keep that one outside work, if that's alright.\" [Keep Something Back]", bundle: 'pro' },
-        { q: "They push after you have already declined once.", a: "\"I've given you what I've got on that one.\" [Keep Something Back]", bundle: 'pro' },
-        { q: "You do want to tell them, but not here.", a: "\"Ask me again when there aren't twelve people in the room.\" [Keep Something Back]", bundle: 'pro' },
-      ]
-    },
-  ],
   describethings: [
     {
       name: "Too Vague",
@@ -4542,6 +4475,88 @@ const challengesCollections = {
         { q: "They gave you a polite smile and no words at all.", a: "\"Is this the queue for the main hall?\" [Ask About the Situation]", bundle: 'pro' },
         { q: "They answered your question and asked nothing back.", a: "\"Cheers.\" [Simple Greeting]", bundle: 'pro' },
         { q: "The reply was short but they are still standing there.", a: "\"Have you been to one of these before?\" [Ask About the Situation]", bundle: 'pro' },
+      ]
+    },
+  ],
+  talkingaboutyourself: [
+    {
+      name: "An Ordinary Week",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "The most common reason people give a closed answer. They search for something worth reporting, find an ordinary week, and conclude there is nothing to say.\n\n**What goes wrong:** the standard is wrong, not the week. Nobody asking how your weekend was is hoping for an anecdote, and the search for one is what produces the pause and then the \"not much\".\n\n**What works here:** **Say the Small True Thing** is the fix, and **Give a Detail** is what makes it usable — the detail is the handle they pick it up by.\n\n**Avoid:** inflating it. An ordinary thing told plainly lands better than an ordinary thing told as though it were a story.\n\nMindset: specific beats interesting. Every time, with everyone.",
+      inputs: [
+        { q: "Someone asks what you did at the weekend and you did nothing.", a: "\"Nothing at all, on purpose. It was excellent.\" [Say the Small True Thing]", bundle: 'pro' },
+        { q: "You are hunting for something worth reporting.", a: "\"Terrible television and too much coffee, honestly.\" [Say the Small True Thing]", bundle: 'pro' },
+        { q: "The only true answer feels too small to say out loud.", a: "\"I spent Saturday trying to fix a bike I have no idea how to fix.\" [Give a Detail]", bundle: 'pro' },
+        { q: "You are about to inflate a story to make it land.", a: "\"It's a much duller story than I was about to make it. I went, it rained, I left.\" [Say the Small True Thing]", bundle: 'pro' },
+        { q: "You said \"not much\" and the conversation stopped dead.", a: "\"That's not quite true, actually — I repainted a wardrobe, badly.\" [Give a Detail]", bundle: 'pro' },
+        { q: "Your week genuinely was the same as every other week.", a: "\"Identical to last week. I've started to find that quite restful.\" [Say the Small True Thing]", bundle: 'pro' },
+        { q: "Someone with an eventful life has just told you about theirs.", a: "\"Nothing like that here. My news is a new kettle.\" [Say the Small True Thing]", bundle: 'pro' },
+        { q: "They ask what is new and you want to leave a handle.", a: "\"Not much — although I've somehow acquired a second cat.\" [Give a Detail]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "After a Disclosure",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Someone has told you about an illness, a separation, a job lost, a parent failing. The attention is about to come back to you, and this is where people misjudge the size most badly in both directions.\n\n**What goes wrong:** the light answer. Someone who has just taken a risk is checking whether it was safe, and a breezy reply answers that question for them.\n\n**What works here:** **Match What They Gave** — and matching does not always mean disclosing. Saying plainly that you are listening rather than trading is a match too, because a story of your own can read as taking the subject back.\n\n**Avoid:** competing. \"The same thing happened to me but worse\" is the one version that always lands badly.\n\nMindset: meet them, or say you are staying. Never breeze past it.",
+      inputs: [
+        { q: "A friend tells you something serious about their health.", a: "\"That's a lot. I'm not going to match that with a work story — tell me more.\" [Match What They Gave]", bundle: 'pro' },
+        { q: "You have something comparable and it would genuinely help.", a: "\"I'll match you, since it might help: I went through the same thing in 2019.\" [Match What They Gave]", bundle: 'pro' },
+        { q: "You are about to change the subject because it is uncomfortable.", a: "\"I nearly moved us on then. I'd rather stay with what you said.\" [Match What They Gave]", bundle: 'pro' },
+        { q: "They ask how you are, straight after telling you.", a: "\"Fine, and that genuinely isn't the interesting thing right now.\" [Hand It Back]", bundle: 'pro' },
+        { q: "They ask you something personal in return and you do not want to answer it.", a: "\"I'll skip that bit — not tonight. Keep going with yours.\" [Keep Something Back]", bundle: 'pro' },
+        { q: "You have nothing comparable at all and feel you should.", a: "\"I've got nothing that compares, and I don't think you need me to.\" [Match What They Gave]", bundle: 'pro' },
+        { q: "They played it down and you can tell it is not small.", a: "\"You said that very lightly for something that size.\" [Match What They Gave]", bundle: 'pro' },
+        { q: "The conversation has been heavy for a while and they seem done.", a: "\"We can leave that there if you like. How's everything else?\" [Hand It Back]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "What Do You Do",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "The most-asked question there is, and the one most reliably answered with the least useful sentence available. A job title is nearly impossible to follow up.\n\n**What goes wrong:** you give the official version. They wanted to know what your days are like and whether there is anything in there worth talking about, and now they have a word to put on a name badge.\n\n**What works here:** **Answer What They Are Really Asking** is the whole category. **Name What You Are Into** covers the part of the job you actually like, which is often the better answer.\n\n**Avoid:** apologising for the job. \"Just admin, nothing exciting\" closes the subject twice over.\n\nMindset: give them the version they can ask a second question about.",
+      inputs: [
+        { q: "Someone asks what you do.", a: "\"I teach English. Mostly to teenagers, which is as loud as it sounds.\" [Answer What They Are Really Asking]", bundle: 'pro' },
+        { q: "You gave the title and the conversation stalled.", a: "\"That's the title. What I actually do all day is answer email.\" [Answer What They Are Really Asking]", bundle: 'pro' },
+        { q: "You do not much like your job and would rather not lead with it.", a: "\"I work in logistics, which I'd rather not describe. Ask me about weekends.\" [Answer What They Are Really Asking]", bundle: 'pro' },
+        { q: "There is a part of the job you genuinely like.", a: "\"Technically accounting. The bit I like is the detective work.\" [Name What You Are Into]", bundle: 'pro' },
+        { q: "You have answered and they are still looking at you.", a: "\"Anyway — that's mine. What do you do all day?\" [Hand It Back]", bundle: 'pro' },
+        { q: "Your job needs three sentences to explain properly.", a: "\"It takes a while to describe. Short version: I stop two systems arguing.\" [Answer What They Are Really Asking]", bundle: 'pro' },
+        { q: "You are between jobs and the question comes anyway.", a: "\"Nothing, at the moment, and it's been more interesting than I expected.\" [Say the Small True Thing]", bundle: 'pro' },
+        { q: "You are about to say \"just\" in front of your job title.", a: "\"Admin. Which sounds small and runs the entire building.\" [Answer What They Are Really Asking]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "A Bad Stretch",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Someone asks how you are and the honest answer is not good. The two easy options are lying and unloading, and both cost something.\n\n**What goes wrong:** lying keeps everyone at a distance, and unloading lands more than the person asked to carry. Neither is the middle, and the middle is available.\n\n**What works here:** **Say the Small True Thing**, sized by **Match What They Gave** — a corridor question gets one honest line, a real one gets the longer version. **Keep Something Back** covers not going into it at all, which is allowed.\n\n**Avoid:** the twentieth \"fine\". It is not protecting anybody, and it is the thing that makes the truth hard to say later.\n\nMindset: honest and small is a real option. It is not the same as pretending.",
+      inputs: [
+        { q: "A colleague asks how you are as they pass your desk.", a: "\"Bit of a rough week, honestly. Nothing that won't keep.\" [Say the Small True Thing]", bundle: 'pro' },
+        { q: "A friend has stopped and is actually waiting for the real answer.", a: "\"Honestly? Not my best month. Nothing dramatic, just heavy.\" [Match What They Gave]", bundle: 'pro' },
+        { q: "You are about to say \"fine\" for the twentieth time.", a: "\"I've been saying fine for two months and it isn't true.\" [Say the Small True Thing]", bundle: 'pro' },
+        { q: "You do not want to go into it here.", a: "\"Not great, but I'd rather not do it at work. Thanks for asking, though.\" [Keep Something Back]", bundle: 'pro' },
+        { q: "You have said more than you meant to and want to steady it.", a: "\"That's more than I planned to say. How have you been?\" [Hand It Back]", bundle: 'pro' },
+        { q: "They can obviously tell and are giving you the chance to say so.", a: "\"You've clearly noticed. Yes — it's been a hard couple of months.\" [Say the Small True Thing]", bundle: 'pro' },
+        { q: "You want to answer honestly without making it their problem.", a: "\"Not brilliant, but I'm handling it. Genuinely nothing you need to do.\" [Match What They Gave]", bundle: 'pro' },
+        { q: "Someone asks in front of other people.", a: "\"Surviving. Ask me properly when it's just us.\" [Keep Something Back]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "A Closed Subject",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "A question about money, health, a relationship, your family, why you left the last job. Sometimes it is innocent curiosity, sometimes it is not, and the strategy is the same either way.\n\n**What goes wrong:** the gap. Declining and then stopping leaves the other person holding a silence they now feel responsible for, which is what makes everyone remember it as awkward.\n\n**What works here:** **Keep Something Back** — a partial answer, warmly given, closes the subject without making it enormous. **Give a Detail** is what stops the gap becoming the story.\n\n**Avoid:** an explanation of why you are not answering. The refusal is fine; the justification is what makes it heavy.\n\nMindset: you can give them something without giving them everything.",
+      inputs: [
+        { q: "Someone asks about a breakup you do not want to discuss.", a: "\"Short version: it ended badly. Enough for a Tuesday.\" [Keep Something Back]", bundle: 'pro' },
+        { q: "You want to close the subject without leaving a hole in the conversation.", a: "\"Not a story for tonight. I have been repainting a flat instead, though.\" [Give a Detail]", bundle: 'pro' },
+        { q: "A manager asks something personal.", a: "\"I'd rather keep that one outside work, if that's alright.\" [Keep Something Back]", bundle: 'pro' },
+        { q: "They push after you have already declined once.", a: "\"(Let it sit.) I've given you what I've got on that one.\" [Keep Something Back]", bundle: 'pro' },
+        { q: "You do want to tell them, but not here.", a: "\"Ask me again when there aren't twelve people in the room.\" [Keep Something Back]", bundle: 'pro' },
+        { q: "A relative asks what you earn, in front of others.", a: "\"I'm going to be dull about that. It's enough, and that's the whole answer.\" [Keep Something Back]", bundle: 'pro' },
+        { q: "You have declined and they look embarrassed for asking.", a: "\"It's a completely normal question. I'm just not doing it tonight.\" [Keep Something Back]", bundle: 'pro' },
+        { q: "Somebody asks why you left your last job.", a: "\"It ran its course. The useful part is that I ended up here instead.\" [Give a Detail]", bundle: 'pro' },
       ]
     },
   ],

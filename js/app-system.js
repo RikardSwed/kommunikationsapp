@@ -591,7 +591,6 @@ applyInputCounterVisibility();
     // in Single Strategy and 3 free cards per strategy in Memorize, which are
     // the only two modes a freemium user can reach (see MODE_CONFIG). Same
     // shape as Starting Conversations Pt. 1. Nothing needed changing.
-    talkingaboutyourself: { label: 'Talking About Yourself', minLevel: 'freemium' },
     complimenting: { label: 'Compliments', minLevel: 'pro' },
     changingtopics: { label: 'Changing Topics', minLevel: 'program' },          // Conversation Foundations, Part 2
     validation: { label: 'Validation', minLevel: 'program' },                   // Conversation Foundations, Part 3
@@ -700,6 +699,7 @@ applyInputCounterVisibility();
     jfisher2: { label: 'Jefferson Fisher 2 — Assertive Connection', minLevel: 'complete' },
     showunderstanding: { label: 'Show Understanding', minLevel: 'freemium' },
     startingconversations1: { label: 'Starting Conversations — Pt. 1', minLevel: 'freemium' },
+    talkingaboutyourself: { label: 'Talking About Yourself', minLevel: 'freemium' },
   };
 
   // ── PROGRAM_CONFIG (v1.26.81) ─────────────────────────────────────────
@@ -1615,20 +1615,6 @@ const BUNDLE_DEFS = {
     },
   ],
   supportingconversations: [
-    {
-      id: 'free',
-      tier: 'free',
-      name: 'Free Bundle',
-      description: '',
-    },
-    {
-      id: 'pro',
-      tier: 'pro',
-      name: 'Pro Bundle',
-      description: '',
-    },
-  ],
-  talkingaboutyourself: [
     {
       id: 'free',
       tier: 'free',
@@ -2769,6 +2755,20 @@ const BUNDLE_DEFS = {
     },
   ],
   startingconversations1: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  talkingaboutyourself: [
     {
       id: 'free',
       tier: 'free',
@@ -5361,6 +5361,88 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
         }
       ]
     },
+
+    // v1.27.44 \u2014 written from scratch. This pack is freemium and had no intro
+    // at all, which meant one of the four packs a free user can open said
+    // nothing about itself. Seven strategies is too many to give a page each
+    // without the intro turning into a manual, so the pages follow the pack's
+    // own grouping: three that answer the question, two that decide the size,
+    // one for enthusiasm, one for the handover.
+    talkingaboutyourself: {
+      pages: [
+        {
+          title: 'Talking About Yourself',
+          html:
+            '<p class="ob-text">Everything else in this app teaches you to <strong>ask</strong>. ' +
+            'This is the half where the question comes back to you.</p>' +
+            '<p class="ob-text">It goes wrong in two opposite ways, and both come from the ' +
+            'same mistake &mdash; reading the question as a test of how interesting you are.</p>' +
+            '<div class="ob-how">' +
+            '<div class="ob-how-row"><span class="ob-how-num">1</span><p><strong>Too little.</strong> Four words, and now they are carrying the whole conversation.</p></div>' +
+            '<div class="ob-how-row"><span class="ob-how-num">2</span><p><strong>Too much, too soon.</strong> A step nobody offered to take.</p></div>' +
+            '</div>' +
+            '<p class="ob-text ob-text--dim">Attention on you is an offer, not an exam.</p>'
+        },
+        {
+          title: 'Answering the Question',
+          html:
+            '<p class="ob-text">Three strategies for an ordinary question landing on you. ' +
+            'Each one fixes a different way the answer dies.</p>' +
+            '<div class="ob-how">' +
+            '<div class="ob-how-row"><span class="ob-how-num">1</span><p><strong>Give a Detail</strong> &mdash; answer, then add one concrete thing they can pick up.</p></div>' +
+            '<div class="ob-how-row"><span class="ob-how-num">2</span><p><strong>Answer What They Are Really Asking</strong> &mdash; the version about you, not the job title.</p></div>' +
+            '<div class="ob-how-row"><span class="ob-how-num">3</span><p><strong>Say the Small True Thing</strong> &mdash; true and specific beats impressive.</p></div>' +
+            '</div>' +
+            '<p class="ob-text ob-text--dim">&ldquo;How was your week?&rdquo;<br>&rarr; &ldquo;Good &mdash; long, though. I spent most of it arguing with a printer.&rdquo;</p>'
+        },
+        {
+          title: 'Deciding How Much',
+          html:
+            '<p class="ob-text">Two strategies for size rather than content. Depth is a ' +
+            'staircase: one step below what they offered, taken after they take theirs.</p>' +
+            '<div class="ob-how">' +
+            '<div class="ob-how-row"><span class="ob-how-num">1</span><p><strong>Match What They Gave</strong> &mdash; a corridor question wants one line; a real one wants more.</p></div>' +
+            '<div class="ob-how-row"><span class="ob-how-num">2</span><p><strong>Keep Something Back</strong> &mdash; a partial answer, warmly given, for what you would rather skip.</p></div>' +
+            '</div>' +
+            '<p class="ob-text ob-text--dim">&ldquo;Weren\u2019t you with someone for years?&rdquo;<br>&rarr; &ldquo;I was. Short version: it ended badly, and I\u2019m not doing the long one tonight.&rdquo;</p>'
+        },
+        {
+          title: 'Name What You Are Into',
+          html:
+            '<p class="ob-text">Say the thing you actually care about, plainly, and then stop ' +
+            'talking.</p>' +
+            '<p class="ob-text">Enthusiasm is the most attractive thing most people have and ' +
+            'the thing they hide hardest. What you are afraid of is not the enthusiasm &mdash; ' +
+            'it is the lecture, and those are different. Name it, give one line, and let them ' +
+            'decide whether to open it.</p>' +
+            '<p class="ob-text ob-text--dim">&ldquo;What do you do with your time?&rdquo;<br>&rarr; &ldquo;I\u2019ve got very into bread lately. Not in a normal amount.&rdquo;</p>'
+        },
+        {
+          title: 'Hand It Back',
+          html:
+            '<p class="ob-text">Return the attention &mdash; but only after you have answered.</p>' +
+            '<p class="ob-text">Answering in four words and immediately asking a question ' +
+            'looks like interest and works like a shield. They learn nothing about you, they ' +
+            'do all the work, and after a while they stop asking.</p>' +
+            '<p class="ob-text ob-text--dim">&ldquo;That\u2019s my week, anyway. What about yours?&rdquo;</p>'
+        },
+        {
+          title: 'Choosing One',
+          html:
+            '<p class="ob-text">One question sorts most of it: <strong>what would my answer ' +
+            'leave them with?</strong></p>' +
+            '<div class="ob-how">' +
+            '<div class="ob-how-row"><span class="ob-how-num">1</span><p>Nothing to ask about &mdash; <strong>give a detail</strong>.</p></div>' +
+            '<div class="ob-how-row"><span class="ob-how-num">2</span><p>A job title &mdash; <strong>answer what they were really asking</strong>.</p></div>' +
+            '<div class="ob-how-row"><span class="ob-how-num">3</span><p>Nothing true &mdash; <strong>say the small thing</strong>.</p></div>' +
+            '</div>' +
+            '<p class="ob-text">Everything else is a question of size, and the answer to that ' +
+            'one is always: look at what they just gave you.</p>' +
+            '<p class="ob-text ob-text--dim">The bar is true and specific. Nobody is grading this.</p>'
+        }
+      ]
+    },
+
     humourpractise: {
       pages: [
         {
