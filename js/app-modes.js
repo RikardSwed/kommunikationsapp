@@ -96,23 +96,32 @@ DS.createCardMode({
 // the steps are already there, and a hand-written copy of them is one more
 // thing that can fall out of step with the scenario it describes.
 //
-// TWO SPELLINGS EXIST IN THE LIBRARY and both have to work, which is why this
+// THREE SPELLINGS EXIST IN THE LIBRARY and all have to work, which is why this
 // is not a one-line split:
 //
 //     "Opening Statement — the board changes to delayed again."   name FIRST
 //     "Step 1 — Claim the turn"                                   name LAST
+//     "Agreement on facts (I know)"                               name ALONE
 //
-// 405 of the app's 467 scenarios yield a full list. The other 62 are mostly
-// one pack (describethings) whose steps are lines of dialogue with no move in
-// them — there is nothing to list, so those scenario cards keep their old
-// behaviour and do not turn. Returning '' is how that is said.
+// The third was added in v1.27.40. The dash separates a move name from the task
+// or stimulus that follows it; a front that carries no task has no dash, and
+// then the whole front IS the name. Requiring the dash made every scenario in
+// Jefferson Fisher 2 return '' — nine cards that would not turn — along with 56
+// more across thirteen other packs.
+//
+// 479 of the app's 485 scenarios now yield a full list. The remaining six are
+// content, not code: four spell their steps as whole sentences (caught by the
+// 60-character guard below — a sentence is a description, not a move), and two
+// are purely reactive, their fronts holding only what the other person said.
+// Neither has a move list to build, so those scenario cards do not turn.
+// Returning '' is how that is said.
 function scenarioMoveList(inp) {
   const steps = (inp && inp.steps) || [];
   if (!steps.length) return '';
   const names = steps.map(s => {
     const parts = String(s.front || '').split(/\s+[—–]\s+/);
-    if (parts.length < 2) return '';
-    const first = parts[0].trim(), second = parts[1].trim();
+    const first = parts[0].trim();
+    const second = parts.length > 1 ? parts[1].trim() : '';
     const name = /^(step|steg)\s*\d+\.?$/i.test(first) ? second : first;
     // A whole sentence is a description, not a move. 60 characters is well
     // clear of the longest real strategy name in the library.
