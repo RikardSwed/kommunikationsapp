@@ -485,56 +485,6 @@ const mindsetCollections = {
       ]
     },
   ],
-  showunderstanding: [
-    {
-      name: "The Show Understanding Mindset",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
-      description: "The pack-wide stance: understanding is not the same as agreeing, and it is not the same as fixing.\n\nBoth confusions cause the same behaviour — people avoid showing understanding because they think it commits them to something. It does not. Demonstrating that you have followed somebody costs you no ground at all.\n\nThe three thoughts that cause the trouble:\n1. \"If I say I understand, I've agreed\" — you have understood, which is different.\n2. \"Understanding without helping is useless\" — being understood is the help, most of the time.\n3. \"I need something clever to say\" — a rephrase in your own words is enough.\n\nMindset: focus on their perspective, choose one strategy that fits the flow, and mean it rather than perform it. That is the whole exercise.",
-      inputs: [
-        { q: "You avoid saying you understand in case it sounds like agreeing.", a: "\"Understanding and agreeing are different things. I can do the first and still disagree.\"", bundle: 'pro' },
-        { q: "You feel useless because you have nothing practical to offer.", a: "\"Being understood is the useful thing most of the time. That's not a consolation prize.\"", bundle: 'pro' },
-        { q: "You think you need something insightful to say.", a: "\"A rephrase in my own words does more than anything clever would.\"", bundle: 'pro' },
-        { q: "You feel awkward reflecting something back.", a: "\"It only feels odd from my side. From theirs it's the thing nobody else does.\"", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "The One at a Time Mindset",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
-      description: "The stance the whole pack rests on: pick one strategy, not three.\n\nOnce you know all three moves the temptation is to use them together — reflect, then ask, then share, all in one breath. That produces a response that is about you managing the conversation rather than about them being heard.\n\nWhat overloading looks like:\n1. A loop, a question and your own story in a single turn.\n2. Two questions stacked, so they answer the second and lose the first.\n3. Reflecting something back and immediately moving on before they can respond.\n\nMindset: one move, then wait. The silence after a single well-chosen response is doing more than a second response would.",
-      inputs: [
-        { q: "You want to reflect, ask and relate all at once.", a: "\"One of them. Then wait. The pause is part of the move.\"", bundle: 'pro' },
-        { q: "You stack two questions and they answer the easier one.", a: "\"One question. If I ask two, I've chosen the one they'll dodge.\"", bundle: 'pro' },
-        { q: "You reflect something back and immediately keep talking.", a: "\"Leave the space. That's where they say the real thing.\"", bundle: 'pro' },
-        { q: "You feel the silence after your response and rush to fill it.", a: "\"Two seconds isn't awkward. It's them deciding whether to go further.\"", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "The Genuine Interest Mindset",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
-      description: "The stance behind all three moves: the technique is scaffolding, and the room still has to be real.\n\nEvery one of these three moves has a formula, and every formula can be run without any attention behind it. Somebody can always tell. The words are nearly identical; what differs is whether you wanted the answer.\n\nWhere the performance shows:\n1. You ask a follow-up and do not listen to the answer.\n2. You loop back accurately with no warmth in it at all.\n3. You relate with a story you were going to tell regardless.\n\nMindset: show genuine interest, not the strategy. If you are not actually curious, a plain \"that sounds hard\" beats a well-executed technique.",
-      inputs: [
-        { q: "You ask a follow-up and realise you did not hear the answer.", a: "\"Then the question was for me, not them. Ask again and mean it.\"", bundle: 'pro' },
-        { q: "Your loop was accurate and came out cold.", a: "\"Accurate isn't the point. Would I say it that way to someone I like?\"", bundle: 'pro' },
-        { q: "You relate with a story you wanted to tell anyway.", a: "\"That's my turn dressed as listening. Save it.\"", bundle: 'pro' },
-        { q: "You are not actually curious about the topic.", a: "\"Then say the honest small thing. 'That sounds hard' beats a technique.\"", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "The Not My Turn Mindset",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
-      description: "The stance behind Relate Through Sharing: your story is a nod, not a turn.\n\nRelating is the most enjoyable of the three moves to do, which is exactly why it is the one that goes wrong. The pull towards your own version is strong, and it arrives disguised as empathy.\n\nThree questions to ask yourself mid-sentence:\n1. Is my version longer than theirs was? Then cut it.\n2. Am I telling this because it helps them, or because I want to?\n3. Have they finished yet? If not, this is not the moment.\n\nMindset: two sentences, then hand it back. Connection, not comparison — and never \"the same thing happened to me but worse\".",
-      inputs: [
-        { q: "Your version is getting longer than theirs.", a: "\"Cut it to two sentences and hand it back. It's a nod, not a turn.\"", bundle: 'pro' },
-        { q: "You want to tell your story more than you want to hear theirs.", a: "\"That's the signal to wait. Relating that serves me isn't relating.\"", bundle: 'pro' },
-        { q: "You are about to say your version was worse.", a: "\"That's competing, not connecting. Everyone can hear the difference.\"", bundle: 'pro' },
-        { q: "They have not finished and you have a perfect match ready.", a: "\"It'll still be true in two minutes. Let them finish first.\"", bundle: 'pro' },
-      ]
-    },
-  ],
   startingconversations4: [
     {
       name: "Somebody Has to Go First",
@@ -3904,6 +3854,72 @@ const mindsetCollections = {
         { q: "If we don't agree right now, our connection is permanently damaged.", a: "We don't have to agree on how to get there. Just align on the goal.", bundle: 'pro' },
         { q: "I must explain my whole history to make them understand.", a: "The more words you use, the more you water down the truth.", bundle: 'pro' },
         { q: "If they don't change their behavior today, I have failed.", a: "Evolving takes time. Give them the grace of a slower runway.", bundle: 'pro' },
+      ]
+    },
+  ],
+  showunderstanding: [
+    {
+      name: "Understanding as Agreement",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If I say I understand, I've agreed with them.\"\n\n**What is true instead:** you can reflect somebody's position back perfectly and disagree with it a minute later. They will take the disagreement better for having been understood first.\n\n**Why it feels right:** in an argument the first person to concede loses ground, and a loop sounds like a concession. It is a receipt, not a concession.\n\n**What it costs:** you stop showing understanding exactly where it matters most, and the conversation becomes two people explaining.\n\nMindset: understanding is not a concession. It is the thing that makes the disagreement worth having.",
+      inputs: [
+        { q: "If I say I understand, it sounds like I'm agreeing.", a: "I can understand it completely and still say no in the next sentence.", bundle: 'pro' },
+        { q: "Reflecting their point back gives them ammunition.", a: "It gives them a receipt. Nobody has ever won an argument by proving they weren't listening.", bundle: 'pro' },
+        { q: "If I loop this back, I'll have conceded the point.", a: "Saying what someone thinks isn't the same as thinking it.", bundle: 'pro' },
+        { q: "I don't want to encourage them by seeming sympathetic.", a: "They'll stop repeating it once it's landed. Being ignored is what makes people repeat things.", bundle: 'pro' },
+        { q: "Understanding without helping is useless.", a: "Being understood is the help, most of the time. It isn't a consolation prize.", bundle: 'pro' },
+        { q: "I need something clever to say or there's no point saying anything.", a: "A rephrase in my own words does more than anything clever would.", bundle: 'pro' },
+        { q: "If I agree they've had a hard time, I'm admitting I got it wrong.", a: "Two things can be true. Their week was hard and my decision was right.", bundle: 'pro' },
+        { q: "I'll understand them once they've understood me.", a: "Somebody has to go first, and going first is cheaper than it looks.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Doing Too Much",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"The more of these moves I use, the more understanding I'm being.\"\n\n**What is true instead:** one move, then wait. The silence after it is the space where the other person decides whether to go further.\n\n**Why it feels right:** each move is good on its own, so three sounds better than one. And the pause feels long from your side in a way it does not from theirs.\n\n**What it costs:** a loop, a question and your own story in one breath is not three times the understanding. It is a performance, and it leaves them nowhere to go.\n\nMindset: one move, then wait. Two seconds is not awkward. It is somebody deciding whether to say the real thing.",
+      inputs: [
+        { q: "I want to reflect, ask and relate all at once.", a: "One of them. Then wait. The pause is part of the move.", bundle: 'pro' },
+        { q: "I stacked two questions and they answered the easier one.", a: "One question. Ask two and I've chosen the one they'll dodge.", bundle: 'pro' },
+        { q: "I reflected something back and immediately kept talking.", a: "Leave the space. That's where they say the real thing.", bundle: 'pro' },
+        { q: "I can feel the silence and I want to fill it.", a: "Two seconds isn't awkward. It's them deciding whether to go further.", bundle: 'pro' },
+        { q: "One sentence doesn't feel like enough of a response.", a: "It's more than they usually get. Most people don't get one.", bundle: 'pro' },
+        { q: "If I only ask one thing, I'll miss the important part.", a: "They'll get to it. The second thing they say is usually the real one.", bundle: 'pro' },
+        { q: "A short answer from me looks like I don't care.", a: "Short and accurate reads as care. Long and general reads as filling time.", bundle: 'pro' },
+        { q: "I've got three good responses and I don't want to waste two.", a: "They keep. The conversation isn't over after one turn.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Going Through the Motions",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If I use the technique correctly, that counts as listening.\"\n\n**What is true instead:** the words are nearly identical either way, and the difference still comes through. People can tell whether you wanted the answer.\n\n**Why it feels right:** the technique is the hard part to learn, so learning it feels like arriving. And it works — until it runs without you behind it.\n\n**What it costs:** a question you do not listen to the answer of establishes that your questions mean nothing.\n\nMindset: if you are not actually curious, a plain \"that sounds hard\" beats a well-executed technique.",
+      inputs: [
+        { q: "I asked a follow-up and realise I didn't hear the answer.", a: "Then the question was for me, not them. Ask again and mean it.", bundle: 'pro' },
+        { q: "My loop was accurate and came out cold.", a: "Accurate isn't the point. Would I say it that way to someone I like?", bundle: 'pro' },
+        { q: "I related with a story I wanted to tell anyway.", a: "That's my turn dressed as listening. Save it.", bundle: 'pro' },
+        { q: "I'm not actually curious about this topic.", a: "Then say the honest small thing. \"That sounds hard\" beats a technique.", bundle: 'pro' },
+        { q: "I'm working out my next move while they're still talking.", a: "There's no next move to plan. It comes out of what they say.", bundle: 'pro' },
+        { q: "I know the formula, so I don't need to concentrate.", a: "The formula is the easy half. The listening is the half that shows.", bundle: 'pro' },
+        { q: "I did all three moves and it still went flat.", a: "Then none of them were aimed at them. Technique doesn't survive being on autopilot.", bundle: 'pro' },
+        { q: "I'm tired and I don't have the attention for this right now.", a: "Say so. \"I want to hear this properly — can we do it after dinner?\" is honest listening.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Pull to Relate",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Telling them about my version is how I show I understand.\"\n\n**What is true instead:** sometimes it is, and it is the warmest of the three when it lands. But the pull arrives disguised as empathy, and earliest when the match is best.\n\n**Why it feels right:** you have been there, and saying so does help — once they have finished. The timing is the difficulty, not the intention.\n\n**What it costs:** somebody still being heard hears it as the moment the conversation stopped being about them, and quietly winds the story up early.\n\nMindset: two sentences, then hand it back. Connection, not comparison — and never \"the same thing happened to me but worse\".",
+      inputs: [
+        { q: "My version is getting longer than theirs was.", a: "Cut it to two sentences and hand it back. It's a nod, not a turn.", bundle: 'pro' },
+        { q: "I want to tell my story more than I want to hear theirs.", a: "That's the signal to wait. Relating that serves me isn't relating.", bundle: 'pro' },
+        { q: "I'm about to say my version was worse.", a: "That's competing, not connecting. Everyone can hear the difference.", bundle: 'pro' },
+        { q: "They haven't finished and I have a perfect match ready.", a: "It'll still be true in two minutes. Let them finish first.", bundle: 'pro' },
+        { q: "If I don't say it now I'll lose the moment.", a: "If it only works right now, it was for me.", bundle: 'pro' },
+        { q: "My experience would genuinely help them.", a: "Then it'll help more after they've been understood. Advice lands on cleared ground.", bundle: 'pro' },
+        { q: "Staying quiet about mine feels dishonest, like I'm holding back.", a: "Holding back for two minutes isn't dishonesty. It's timing.", bundle: 'pro' },
+        { q: "They asked me directly whether I've been through it.", a: "Then answer — briefly, and hand it straight back with a question.", bundle: 'pro' },
       ]
     },
   ],

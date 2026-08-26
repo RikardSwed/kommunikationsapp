@@ -617,7 +617,6 @@ applyInputCounterVisibility();
     negotiationandcompromise: { label: 'Negotiation and Compromise', minLevel: 'program' },      // Persuasion & Negotiation, Part 3
 
     startingconversations1: { label: 'Starting Conversations — Pt. 1', minLevel: 'freemium' },
-    showunderstanding: { label: 'Show Understanding', minLevel: 'freemium' },
     startingconversations4: { label: 'Starting Conversations — Pt. 4', minLevel: 'extended' },
     apologizing2: { label: 'Apologizing — Pt. 2', minLevel: 'extended' },
     startingconversations2: { label: 'Starting Conversations — Pt. 2', minLevel: 'pro' },
@@ -700,6 +699,7 @@ applyInputCounterVisibility();
     firststrategies: { label: 'First Strategies', minLevel: 'freemium' },
     jfisher1: { label: 'Jefferson Fisher 1 — Control under Pressure', minLevel: 'complete' },
     jfisher2: { label: 'Jefferson Fisher 2 — Assertive Connection', minLevel: 'complete' },
+    showunderstanding: { label: 'Show Understanding', minLevel: 'freemium' },
   };
 
   // ── PROGRAM_CONFIG (v1.26.81) ─────────────────────────────────────────
@@ -1447,20 +1447,6 @@ const BUNDLE_DEFS = {
     },
   ],
   startingconversations1: [
-    {
-      id: 'free',
-      tier: 'free',
-      name: 'Free Bundle',
-      description: '',
-    },
-    {
-      id: 'pro',
-      tier: 'pro',
-      name: 'Pro Bundle',
-      description: '',
-    },
-  ],
-  showunderstanding: [
     {
       id: 'free',
       tier: 'free',
@@ -2769,6 +2755,20 @@ const BUNDLE_DEFS = {
     },
   ],
   jfisher2: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  showunderstanding: [
     {
       id: 'free',
       tier: 'free',
@@ -5235,13 +5235,14 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
           html:
             '<p class="ob-text">Understanding someone is not enough on its own. They have to ' +
             'be able to tell that you did &mdash; and that is a separate skill.</p>' +
-            '<p class="ob-text">Three ways to make it visible.</p>' +
+            '<p class="ob-text">Three ways to make it visible &mdash; and you use ' +
+            '<strong>one</strong> at a time.</p>' +
             '<div class="ob-how">' +
             '<div class="ob-how-row"><span class="ob-how-num">1</span><p><strong>Ask Follow-up Questions</strong> &mdash; ask what only a listener could ask.</p></div>' +
             '<div class="ob-how-row"><span class="ob-how-num">2</span><p><strong>Loop Back or Rephrase</strong> &mdash; say their point back in your own words.</p></div>' +
             '<div class="ob-how-row"><span class="ob-how-num">3</span><p><strong>Relate Through Sharing</strong> &mdash; offer something of your own.</p></div>' +
             '</div>' +
-            '<p class="ob-text ob-text--dim">The next pages explain each one.</p>'
+            '<p class="ob-text ob-text--dim">The next pages explain each one, and how to choose.</p>'
         },
         {
           title: 'Ask Follow-up Questions',
@@ -5269,6 +5270,24 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
             '<p class="ob-text">Done briefly it says: I recognise this, you are not strange. ' +
             'Done at length it quietly takes the conversation away from them.</p>' +
             '<p class="ob-text ob-text--dim">&ldquo;I felt completely out of my depth.&rdquo;<br>&rarr; &ldquo;I know that one. My first week I hid in the stairwell.&rdquo;</p>'
+        },
+        {
+          // v1.27.42 — added when the pack was rewritten. Choosing between the
+          // three IS the exercise, and the intro had never said so: it
+          // introduced three moves and left the reader to work out that they
+          // are alternatives rather than a sequence.
+          title: 'Choosing One',
+          html:
+            '<p class="ob-text">Knowing the three moves is the easy half. Reading which one ' +
+            'the moment wants is the skill this pack trains.</p>' +
+            '<div class="ob-how">' +
+            '<div class="ob-how-row"><span class="ob-how-num">1</span><p>Still telling it &mdash; <strong>ask</strong>.</p></div>' +
+            '<div class="ob-how-row"><span class="ob-how-num">2</span><p>Just landed something &mdash; <strong>loop</strong>.</p></div>' +
+            '<div class="ob-how-row"><span class="ob-how-num">3</span><p>Finished and settled &mdash; <strong>relate</strong>.</p></div>' +
+            '</div>' +
+            '<p class="ob-text">For anything difficult: loop first, ask second, relate last. ' +
+            'Most people do it backwards.</p>' +
+            '<p class="ob-text ob-text--dim">One move, then wait. The pause is part of it.</p>'
         }
       ]
     },

@@ -79,9 +79,6 @@ const packTags = {
   startingconversations1: [
     'starting conversations', 'openers', 'small talk', 'strangers', 'first words'
   ],
-  showunderstanding: [
-    'listening', 'understanding', 'empathy', 'conversation'
-  ],
   startingconversations4: [
     'starting conversations', 'openers', 'humour', 'saying what you feel', 'approaching people'
   ],
@@ -361,6 +358,9 @@ const packTags = {
   jfisher2: [
     'assertive', 'connection', 'boundaries', 'negotiations', 'communication'
   ],
+  showunderstanding: [
+    'listening', 'understanding', 'empathy', 'conversation'
+  ],
 };
 
 // ─── TOPICS ──────────────────────────────────────────────────────────
@@ -395,7 +395,7 @@ const TOPICS = [
   { id: 'endingconversations',   title: 'Ending Conversations',          packs: ['endingconversations'] },
 
   // ── Being with the other person ───────────────────────────────────
-  { id: 'listening',             title: 'Listening & Understanding',     packs: ['listeningresponding', 'showunderstanding', 'validation', 'listeningthroughquestions', 'showunderstanding2', 'jimmy3'] },
+  { id: 'listening',             title: 'Listening & Understanding',     packs: ['listeningresponding', 'validation', 'listeningthroughquestions', 'showunderstanding2', 'jimmy3', 'showunderstanding'] },
   { id: 'depth',                 title: 'Depth & Connection',            packs: ['conversationaldepth', 'supportingconversations', 'talkingaboutyourself'] },
 
   // ── Holding the floor ─────────────────────────────────────────────

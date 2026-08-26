@@ -1405,86 +1405,6 @@ const multiStepCollections = {
       ]
     },
   ],
-  showunderstanding: [
-    {
-      name: "Loop, Then Ask",
-      guideFront: "Take the next step in showing you understood.",
-      guideBack: "One line you could say here.",
-      description: "The safest order for anything difficult, with an optional second round. Steps: 1) Loop Back or Rephrase — show it arrived, 2) Ask Follow-up Questions — now that they feel heard, ask for more, 3) Loop Back again — reflect the new part.\n\nThe reason this order works is that a question after a loop feels like interest, whereas a question on its own can feel like being interviewed. The loop earns the question.\n\nThe shape of the whole thing:\n1. \"So it wasn't one bad bit — it was the whole thing.\"\n2. \"What was the worst part?\"\n3. \"So the deadline was the bit that broke it.\"\n\nMindset: loop, ask, loop. It looks repetitive written down and it does not feel that way at all in a conversation.",
-      inputs: [
-        {
-          bundle: 'pro',
-          situation: "A friend is describing a school project that went badly wrong.",
-          steps: [
-            { front: "Step 1 · Loop it back — they say: \"That project was a nightmare from start to finish.\"", back: "\"So it wasn't one bad bit — it was the whole thing.\"" },
-            { front: "Step 2 · Now ask — they say: \"Yeah. Every stage.\"", back: "\"What was the worst part of it?\"" },
-            { front: "Step 3 · Loop the new part — they say: \"Honestly, the deadline moving with no warning.\"", back: "\"So it was the not being told, more than the extra work.\"" },
-          ]
-        },
-        {
-          bundle: 'pro',
-          situation: "A colleague is describing being left out of a decision.",
-          steps: [
-            { front: "Step 1 · Loop it back — they say: \"It's not the work, it's that nobody asked me.\"", back: "\"So it's the being left out of it, more than the job itself.\"" },
-            { front: "Step 2 · Now ask — they say: \"Exactly that.\"", back: "\"How did you find out in the end?\"" },
-            { front: "Step 3 · Loop the new part — they say: \"From the client, of all people.\"", back: "\"So you heard it from outside before anyone inside told you. That's worse.\"" },
-          ]
-        },
-      ]
-    },
-    {
-      name: "Ask, Then Relate",
-      guideFront: "Take the next step in showing you understood.",
-      guideBack: "One line you could say here.",
-      description: "The version for a story that is still being told, ending in warmth. Steps: 1) Ask Follow-up Questions — keep them going, 2) Loop Back or Rephrase — show what you took from it, 3) Relate Through Sharing — and then bring yourself in.\n\nRelating comes last for a reason. Once somebody has told the whole thing and heard it reflected back, your own version arrives as company. Two minutes earlier it would have arrived as an interruption.\n\nWhy this order:\n1. Ask — the story is not finished, so do not summarise it yet.\n2. Loop — now it is finished, show it landed.\n3. Relate — and only now, briefly, say you have been there.\n\nMindset: your story is the dessert, not the main course. It goes at the end, and it should be about a third as long as theirs.",
-      inputs: [
-        {
-          bundle: 'pro',
-          situation: "A friend has started telling you about a frustrating week at work.",
-          steps: [
-            { front: "Step 1 · Ask for more — they say: \"I was so frustrated I nearly walked out.\"", back: "\"What was going through your head at that point?\"" },
-            { front: "Step 2 · Loop what you heard — they say: \"Mostly that nobody would even notice.\"", back: "\"So the frustrating bit is feeling like it wouldn't register either way.\"" },
-            { front: "Step 3 · Bring yourself in — they say: \"That's it, yeah.\"", back: "\"I know that exact feeling. I've stood in a corridor counting to ten before now.\"" },
-          ]
-        },
-        {
-          bundle: 'pro',
-          situation: "Someone is telling you about an achievement they are quietly proud of.",
-          steps: [
-            { front: "Step 1 · Ask for more — they say: \"I finally got the certificate last week.\"", back: "\"How long had you been working towards that?\"" },
-            { front: "Step 2 · Loop what you heard — they say: \"Two years, on and off. Mostly on.\"", back: "\"So that's two years of evenings, finished.\"" },
-            { front: "Step 3 · Bring yourself in — they say: \"Feels strange, actually.\"", back: "\"It does. I remember just sitting in the car for a while afterwards.\"" },
-          ]
-        },
-      ]
-    },
-    {
-      name: "When They Are Still Upset",
-      guideFront: "Take the next step in showing you understood.",
-      guideBack: "One line you could say here.",
-      description: "The version with no relating in it at all. Steps: 1) Loop Back or Rephrase — reflect it, 2) Loop Back again on the part that matters most, 3) Ask Follow-up Questions — one gentle question, and then stop.\n\nThis is the combination for when somebody is still in the middle of the feeling. Sharing your own version here is almost always a mistake, however well meant, because it moves the attention off them at the one moment they need it not to move.\n\nWhy relating is left out:\n1. They have not finished being heard, so there is nothing to add to yet.\n2. A comparison invites them to weigh their situation against yours.\n3. The silence after a loop is doing more work than another sentence would.\n\nMindset: do less than you want to. Two loops and one question is often the whole of what somebody needs from you.",
-      inputs: [
-        {
-          bundle: 'pro',
-          situation: "A friend is upset about being excluded from something and has just told you.",
-          steps: [
-            { front: "Step 1 · Reflect it — they say: \"Then the whole group just stopped replying.\"", back: "\"So you were suddenly on your own with it, with no warning at all.\"" },
-            { front: "Step 2 · Reflect the part that matters — they say: \"And nobody's said anything since.\"", back: "\"It's the silence afterwards that's doing the damage, isn't it.\"" },
-            { front: "Step 3 · One gentle question — they nod", back: "\"Has anyone actually spoken to you about it since?\"" },
-          ]
-        },
-        {
-          bundle: 'pro',
-          situation: "Someone is describing a disappointment and keeps saying they are fine.",
-          steps: [
-            { front: "Step 1 · Reflect it — they say: \"It's fine, honestly. It's just been a lot.\"", back: "\"It sounds less fine and more relentless, from where I'm sitting.\"" },
-            { front: "Step 2 · Reflect the part that matters — they say: \"It's been going on for months.\"", back: "\"Months of it. That's not a bad week, that's a stretch.\"" },
-            { front: "Step 3 · One gentle question — they let out a breath", back: "\"What's the part that's hardest to keep doing?\"" },
-          ]
-        },
-      ]
-    },
-  ],
   startingconversations4: [
     {
       name: "Going First and Staying There",
@@ -6824,6 +6744,113 @@ const multiStepCollections = {
             { front: "Validate first (I can see)", back: "\"I can see how this delay is putting pressure on your team.\"" },
             { front: "Objectify the issue", back: "\"The shipping delay is the bottleneck on the table. Let's look at the dates.\"" },
             { front: "Invite collaboration (I need help)", back: "\"I need your help determining how we can adjust the timeline to minimize the impact.\"" },
+          ]
+        },
+      ]
+    },
+  ],
+  showunderstanding: [
+    {
+      name: "Loop, Then Ask",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
+      description: "The safest order for anything difficult, and the one to reach for when you are not sure.\n\n1. **Loop Back or Rephrase** — show it arrived\n2. **Ask Follow-up Questions** — now that they feel heard, ask for more\n3. **Loop Back or Rephrase** — reflect the new part\n\n**Why this order:** the loop earns the question. The same question on its own can feel like being interviewed. The second loop matters as much as the first, because the answer is usually the real thing — the first version was the summary.\n\n**What people do instead:** ask straight away, get a short answer, and ask again. Two questions in a row is an interview, and people close down under it.\n\nMindset: loop, ask, loop. It looks repetitive written down and does not feel that way at all in a conversation.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "A friend is telling you about a group project at school that fell apart, and you can tell they have been waiting to say it.",
+          steps: [
+            { front: "Loop Back or Rephrase — they say: \"That project was a nightmare from start to finish.\"", back: "\"So it wasn't one bad bit — it was the whole thing.\"" },
+            { front: "Ask Follow-up Questions — they say: \"Yeah. Every stage.\"", back: "\"What was the worst part of it?\"" },
+            { front: "Loop Back or Rephrase — they say: \"Honestly, the deadline moving with no warning.\"", back: "\"So it was the not being told, more than the extra work.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A colleague has stopped by your desk and mentioned, half casually, that a decision was made without them.",
+          steps: [
+            { front: "Loop Back or Rephrase — they say: \"It's not the work, it's that nobody asked me.\"", back: "\"So it's the being left out of it, more than the job itself.\"" },
+            { front: "Ask Follow-up Questions — they say: \"Exactly that.\"", back: "\"How did you find out in the end?\"" },
+            { front: "Loop Back or Rephrase — they say: \"From the client, of all people.\"", back: "\"So you heard it from outside before anyone inside told you. That's worse.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Someone is describing a weekend at their parents' that they had been dreading and which went about as expected.",
+          steps: [
+            { front: "Loop Back or Rephrase — they say: \"Two days and we were back to the same argument by Saturday lunch.\"", back: "\"So it took less than a day to land where it always lands.\"" },
+            { front: "Ask Follow-up Questions — they say: \"It always does.\"", back: "\"What sets it off, usually?\"" },
+            { front: "Loop Back or Rephrase — they say: \"Anything about my job, really.\"", back: "\"So it's not the argument, it's that your job is the thing they reach for.\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Ask, Then Relate",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
+      description: "The version for a story that is still being told, ending in warmth.\n\n1. **Ask Follow-up Questions** — keep them going\n2. **Loop Back or Rephrase** — show what you took from it\n3. **Relate Through Sharing** — and only then bring yourself in\n\n**Why this order:** relating comes last for a reason. Once somebody has told the whole thing and heard it reflected back, your own version arrives as company. Two minutes earlier the identical sentence would have arrived as an interruption.\n\n**What people do instead:** relate first, because the match is obvious the moment they start talking and holding it is uncomfortable. It will still be true in two minutes.\n\nMindset: your story is the dessert, not the main course. It goes at the end, and it should be about a third as long as theirs.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "A friend has started telling you about a week at work that has clearly been building up for a while.",
+          steps: [
+            { front: "Ask Follow-up Questions — they say: \"I was so frustrated I nearly walked out.\"", back: "\"What was going through your head at that point?\"" },
+            { front: "Loop Back or Rephrase — they say: \"Mostly that nobody would even notice.\"", back: "\"So the frustrating bit is feeling like it wouldn't register either way.\"" },
+            { front: "Relate Through Sharing — they say: \"That's it, yeah.\"", back: "\"I know that exact feeling. I've stood in a corridor counting to ten before now.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Someone has mentioned, almost in passing, that they finished something they have been working at for a long time.",
+          steps: [
+            { front: "Ask Follow-up Questions — they say: \"I finally got the certificate last week.\"", back: "\"How long had you been working towards that?\"" },
+            { front: "Loop Back or Rephrase — they say: \"Two years, on and off. Mostly on.\"", back: "\"So that's two years of evenings, finished.\"" },
+            { front: "Relate Through Sharing — they say: \"Feels strange, actually.\"", back: "\"It does. I remember just sitting in the car for a while afterwards.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Someone you have not seen for months is telling you about moving somewhere they knew nobody.",
+          steps: [
+            { front: "Ask Follow-up Questions — they say: \"It's been six months and I still don't really know anyone.\"", back: "\"What's the part that's been hardest to get going?\"" },
+            { front: "Loop Back or Rephrase — they say: \"There's nowhere you just end up. You have to arrange everything.\"", back: "\"So it's not that people are unfriendly — there's just no accidental version.\"" },
+            { front: "Relate Through Sharing — they say: \"That's exactly it.\"", back: "\"I moved for a job once and it took a year. It's the Tuesdays that get you.\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "When They Are Still Upset",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
+      description: "The version with no relating in it at all, for when somebody is still inside the feeling.\n\n1. **Loop Back or Rephrase** — reflect it\n2. **Loop Back or Rephrase** — reflect the part that matters most\n3. **Ask Follow-up Questions** — one gentle question, and then stop\n\n**Why this order:** the first loop catches the events, the second catches what is actually wrong. The question at the end is an offer, not an interview — and stopping there is the point.\n\n**What people do instead:** share their own version, well meant, at the one moment when moving the attention off them costs most. A comparison also invites them to weigh their situation against yours.\n\nMindset: do less than you want to. Two loops and one question is often the whole of what somebody needs from you.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "A friend has just told you that a group they were part of stopped including them, and it is still going on.",
+          steps: [
+            { front: "Loop Back or Rephrase — they say: \"Then the whole group just stopped replying.\"", back: "\"So you were suddenly on your own with it, with no warning at all.\"" },
+            { front: "Loop Back or Rephrase — they say: \"And nobody's said anything since.\"", back: "\"It's the silence afterwards that's doing the damage, isn't it.\"" },
+            { front: "Ask Follow-up Questions — they nod and look away.", back: "\"Has anyone actually spoken to you about it since?\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Someone is describing something that has clearly knocked them, while insisting at every turn that it is not a problem.",
+          steps: [
+            { front: "Loop Back or Rephrase — they say: \"It's fine, honestly. It's just been a lot.\"", back: "\"It sounds less fine and more relentless, from where I'm sitting.\"" },
+            { front: "Loop Back or Rephrase — they say: \"It's been going on for months.\"", back: "\"Months of it. That's not a bad week, that's a stretch.\"" },
+            { front: "Ask Follow-up Questions — they let out a breath.", back: "\"What's the part that's hardest to keep doing?\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Someone has told you something that happened this morning, and they are still working out what they think about it.",
+          steps: [
+            { front: "Loop Back or Rephrase — they say: \"They told me at nine and I've been sitting here since.\"", back: "\"So you've had four hours and no idea what to do with them.\"" },
+            { front: "Loop Back or Rephrase — they say: \"I don't even know who to tell.\"", back: "\"That's its own thing, isn't it. Not just the news, but having to hand it on.\"" },
+            { front: "Ask Follow-up Questions — they shrug.", back: "\"Is there anything that would help in the next hour?\"" },
           ]
         },
       ]

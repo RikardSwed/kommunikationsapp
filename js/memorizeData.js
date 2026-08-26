@@ -937,54 +937,6 @@ const memorizeCollections = {
       ]
     },
   ],
-  showunderstanding: [
-    {
-      name: "Core Idea",
-      description: "The concept behind showing understanding and the three moves.",
-      cards: [
-        { q: "What is the goal of showing understanding?", a: "Actively demonstrating that you followed what someone said — not just listening quietly.", bundle: 'free' },
-        { q: "What are the three moves in this pack?", a: "Ask Follow-up Questions, Loop Back or Rephrase, Relate Through Sharing.", bundle: 'free' },
-        { q: "How many should you use at once?", a: "One. Stacking them makes the response about you managing the conversation.", bundle: 'free' },
-        { q: "Is understanding the same as agreeing?", a: "No. You can fully understand someone and disagree with them a minute later.", bundle: 'free' },
-        { q: "What is the safe order for something difficult?", a: "Loop first, ask second, relate last. Most people do it backwards.", bundle: 'pro' },
-        { q: "What is the most common mistake?", a: "Relating too early — bringing in your own version before they've finished being heard.", bundle: 'pro' },
-        { q: "What matters more than the technique?", a: "Actually being interested. The formulas are identical whether or not anyone's paying attention.", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Ask Follow-up Questions",
-      description: "The theory behind asking for more.",
-      cards: [
-        { q: "What is Ask Follow-up Questions?", a: "Asking something that could only come from someone who was listening to that particular sentence.", bundle: 'free' },
-        { q: "What does it sound like?", a: "\"Can you tell me more about that?\" / \"What were you feeling at that moment?\"", bundle: 'free' },
-        { q: "When is it the right move?", a: "When the story isn't finished. Asking keeps them going.", bundle: 'free' },
-        { q: "What are the three kinds of follow-up?", a: "Ask for more of the same, ask about the moment, or ask what came next.", bundle: 'pro' },
-        { q: "What is the failure mode?", a: "Aiming at the topic instead of the specific thing — that's a subject change, not a follow-up.", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Loop Back or Rephrase",
-      description: "The theory behind reflecting their point back.",
-      cards: [
-        { q: "What is Loop Back or Rephrase?", a: "Saying their point back in your own words, so they can hear that it arrived — or correct you.", bundle: 'free' },
-        { q: "What does it sound like?", a: "\"So what you're saying is…\" / \"I hear that you felt frustrated when that happened.\"", bundle: 'free' },
-        { q: "Why your own words rather than theirs?", a: "Repeating their exact sentence is parroting. Rephrasing proves the idea went in.", bundle: 'free' },
-        { q: "What are the three kinds of loop?", a: "The summary, the feeling named, or the check.", bundle: 'pro' },
-        { q: "What is the failure mode?", a: "Sounding mechanical — \"so what I'm hearing is\" in a voice you'd never otherwise use.", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Relate Through Sharing",
-      description: "The theory behind bringing yourself in.",
-      cards: [
-        { q: "What is Relate Through Sharing?", a: "Offering something of your own — a time you felt, thought or wanted the same thing.", bundle: 'free' },
-        { q: "What does it sound like?", a: "\"I know exactly what you mean, something similar happened to me…\"", bundle: 'free' },
-        { q: "How long should it be?", a: "Two sentences, then hand it back. Anything with a middle is a story, and stories take the floor.", bundle: 'free' },
-        { q: "What are the three ways to relate?", a: "The matching experience, the matching feeling, or the matching value.", bundle: 'pro' },
-        { q: "What turns it from relating into competing?", a: "\"The same thing happened to me but worse.\" Connection, not comparison.", bundle: 'pro' },
-      ]
-    },
-  ],
   startingconversations4: [
     {
       name: "Core Idea",
@@ -6178,6 +6130,120 @@ const memorizeCollections = {
         { q: "Why is hyper-independence considered a trap in the Asking for Help mindset?", a: "Because it cuts you off from deep connection and leads to isolation, when people actually love to be helpful.", bundle: 'pro' },
         { q: "What is the core premise of the Rescuing mindset?", a: "That trying to fix another person's emotional state is a boundary overreach that suffocates their autonomy.", bundle: 'pro' },
         { q: "How does the Patience mindset approach relationship repair?", a: "By understanding that real connection cannot be forced or resolved in one heated marathon talk.", bundle: 'pro' },
+      ]
+    },
+  ],
+  showunderstanding: [
+    {
+      name: "Core Idea",
+      description: "Three moves that between them cover almost everything somebody needs after they have told you something.\n\n1. **Ask Follow-up Questions**\n2. **Loop Back or Rephrase**\n3. **Relate Through Sharing**\n\nAsk when the story is unfinished, reflect when it has landed, share once it has been heard. One at a time.",
+      cards: [
+        { q: "What is the goal of showing understanding?", a: "Actively demonstrating that you followed what someone said — not just listening quietly.", bundle: 'free' },
+        { q: "What are the three moves in this pack?", a: "Ask Follow-up Questions, Loop Back or Rephrase, and Relate Through Sharing.", bundle: 'free' },
+        { q: "How many should you use at once?", a: "One. Stacking them makes the response about you managing the conversation.", bundle: 'free' },
+        { q: "Is understanding the same as agreeing?", a: "No. You can fully understand someone and disagree with them a minute later.", bundle: 'free' },
+        { q: "What decides which of the three to use?", a: "Where they are — still telling it, just landed it, or finished and settled.", bundle: 'free' },
+        { q: "What is the safe order for something difficult?", a: "Loop first, ask second, relate last. Most people do it backwards.", bundle: 'pro' },
+        { q: "What is the most common mistake?", a: "Relating too early — bringing in your own version before they have finished being heard.", bundle: 'pro' },
+        { q: "What matters more than the technique?", a: "Actually being interested. The formulas are identical whether or not anyone is paying attention.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ask Follow-up Questions",
+      description: "",
+      cards: [
+        { q: "What is Ask Follow-up Questions?", a: "Asking something that could only come from someone who was listening to that particular sentence.", bundle: 'free' },
+        { q: "What does it sound like?", a: "\"Can you tell me more about that?\" / \"What were you feeling at that moment?\"", bundle: 'free' },
+        { q: "When is it the right move?", a: "When the story isn't finished. Asking keeps them going.", bundle: 'free' },
+        { q: "What are the three kinds of follow-up?", a: "More of the same, the moment itself, or what came next.", bundle: 'free' },
+        { q: "Why does a question prove attention better than agreement does?", a: "It has to be built out of what they just said. \"That sounds hard\" can be said by someone who heard nothing.", bundle: 'free' },
+        { q: "What is the failure mode?", a: "Aiming at the topic instead of the specific thing — that's a subject change, not a follow-up.", bundle: 'pro' },
+        { q: "When is a question the wrong move?", a: "After they have finished. It reads as being asked to keep performing.", bundle: 'pro' },
+        { q: "What is wrong with two questions in a row?", a: "It becomes an interview, and it means you have given them nothing to ask you about.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Loop Back or Rephrase",
+      description: "",
+      cards: [
+        { q: "What is Loop Back or Rephrase?", a: "Saying their point back in your own words, so they can hear that it arrived — or correct you.", bundle: 'free' },
+        { q: "What does it sound like?", a: "\"So what you're saying is...\" / \"I hear that you felt frustrated when that happened.\"", bundle: 'free' },
+        { q: "Why your own words rather than theirs?", a: "Repeating their exact sentence is parroting. Rephrasing proves the idea went in.", bundle: 'free' },
+        { q: "What are the three kinds of loop?", a: "The summary, the feeling named, or the check.", bundle: 'free' },
+        { q: "Why does it help to be slightly wrong?", a: "\"No, not annoyed — disappointed\" is them getting closer to their own point. That was the offer.", bundle: 'free' },
+        { q: "What is the failure mode?", a: "Sounding mechanical — \"so what I'm hearing is\" in a voice you would never otherwise use.", bundle: 'pro' },
+        { q: "What does a loop do that nothing else in a conversation does?", a: "It lets somebody find out whether they have been understood, rather than guess.", bundle: 'pro' },
+        { q: "Why is a loop built on a misunderstanding worse than no loop?", a: "They now believe they have been understood when they have not, and the correction costs more later.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Relate Through Sharing",
+      description: "",
+      cards: [
+        { q: "What is Relate Through Sharing?", a: "Offering something of your own — a time you felt, thought or wanted the same thing.", bundle: 'free' },
+        { q: "What does it sound like?", a: "\"I know exactly what you mean, something similar happened to me...\"", bundle: 'free' },
+        { q: "How long should it be?", a: "Two sentences, then hand it back. Anything with a middle is a story, and stories take the floor.", bundle: 'free' },
+        { q: "What are the three ways to relate?", a: "The matching value, the matching feeling, or the matching experience.", bundle: 'free' },
+        { q: "When is it the right move?", a: "Once they have finished and been understood. Then it arrives as company.", bundle: 'free' },
+        { q: "What turns it from relating into competing?", a: "\"The same thing happened to me but worse.\" Connection, not comparison.", bundle: 'pro' },
+        { q: "Which of the three ways is safest, and why?", a: "The matching value — it says nothing about you, so it cannot take the floor.", bundle: 'pro' },
+        { q: "What is the sign it has gone too far?", a: "They have started asking you follow-up questions.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Finished or Not** — where they are in the story decides the move\n• **Raw or Settled** — how fresh the feeling is decides the move\n• **All Three Moves** — no cue given, which is the real conversation\n\nAll three offer the same three strategies. What changes is what you read to pick one.",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "Finished or Not, Raw or Settled, and All Three Moves.", bundle: 'pro' },
+        { q: "What does Finished or Not read?", a: "The pause. A short breath means carry on; a longer one means they have landed something.", bundle: 'pro' },
+        { q: "What does Raw or Settled read?", a: "How fresh the feeling is — whether they are still inside it or can look at it from outside.", bundle: 'pro' },
+        { q: "Can the two cues disagree?", a: "Yes. Somebody can finish a story and still be raw, and then you loop rather than relate.", bundle: 'pro' },
+        { q: "They are mid-story and not finished. Which move?", a: "Ask Follow-up Questions — a question is permission to carry on.", bundle: 'pro' },
+        { q: "They have just said something that cost them. Which move?", a: "Loop Back or Rephrase — reflect it rather than asking for more.", bundle: 'pro' },
+        { q: "They have finished and the air has cleared. Which move?", a: "Relate Through Sharing, briefly.", bundle: 'pro' },
+        { q: "Why is there no two-strategy collection in this pack?", a: "Two is a comparison, not a choice. A collection makes you pick between at least three.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **Loop, Then Ask** — Loop Back or Rephrase → Ask Follow-up Questions → Loop Back or Rephrase\n2. **Ask, Then Relate** — Ask Follow-up Questions → Loop Back or Rephrase → Relate Through Sharing\n3. **When They Are Still Upset** — Loop Back or Rephrase → Loop Back or Rephrase → Ask Follow-up Questions\n\nIn each one the order is doing the work, not the individual moves.",
+      cards: [
+        { q: "What is the order in Loop, Then Ask?", a: "Loop back, ask a follow-up, then loop back again on the new part.", bundle: 'pro' },
+        { q: "Why does the loop come before the question?", a: "A question after a loop feels like interest. On its own it can feel like being interviewed.", bundle: 'pro' },
+        { q: "Why does that sequence end with a second loop?", a: "The answer to your question is usually the real thing. The first version was the summary.", bundle: 'pro' },
+        { q: "What is the order in Ask, Then Relate?", a: "Ask a follow-up, loop what you heard, then bring yourself in.", bundle: 'pro' },
+        { q: "Why does relating come last?", a: "Once the whole thing has been told and reflected, your version arrives as company rather than as an interruption.", bundle: 'pro' },
+        { q: "What is the order in When They Are Still Upset?", a: "Two loops, then one gentle question — and then stop.", bundle: 'pro' },
+        { q: "Why is there no relating in that one?", a: "They have not finished being heard, and a comparison invites them to weigh their situation against yours.", bundle: 'pro' },
+        { q: "What do people do instead, in all three?", a: "Lead with their own story, because the match is obvious early and holding it is uncomfortable.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five things that get in the way of showing understanding:\n\n• **The Urge to Fix** — you want to solve it instead of hear it\n• **Taking the Floor** — your version grows a middle\n• **Sounding Rehearsed** — the technique shows\n• **Losing the Thread** — you have not actually followed\n• **Closed Doors** — there is nothing to work with\n\nFour of the five are about you rather than them. That is the honest shape of this skill.",
+      cards: [
+        { q: "What are the five challenge categories in this pack?", a: "The Urge to Fix, Taking the Floor, Sounding Rehearsed, Losing the Thread, and Closed Doors.", bundle: 'pro' },
+        { q: "Why does advice given too early rarely get taken?", a: "It answers a question they had not finished asking — and it ends the telling.", bundle: 'pro' },
+        { q: "What is the tell that you have taken the floor?", a: "They have started asking you follow-up questions.", bundle: 'pro' },
+        { q: "How do you fix a loop that sounded rehearsed?", a: "Say it again in your own register. If you would not say it that way to a friend, do not.", bundle: 'pro' },
+        { q: "What should you do when you have lost the thread?", a: "Say so, and ask about the specific gap. A loop built on a misunderstanding is worse than no loop.", bundle: 'pro' },
+        { q: "Why is a big question the wrong move with someone closed off?", a: "A bigger question is harder to answer. Offer a small loop they can agree with or correct.", bundle: 'pro' },
+        { q: "What do four of the five categories have in common?", a: "They are about what you are doing, not about what they are doing.", bundle: 'pro' },
+        { q: "What is the move when somebody will not open up and you have a similar story?", a: "Relate Through Sharing — go first, so they do not have to.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "The four beliefs that stop people showing understanding:\n\n• **Understanding as Agreement** — reflecting it back means conceding it\n• **Doing Too Much** — more moves means more understanding\n• **Going Through the Motions** — correct technique counts as listening\n• **The Pull to Relate** — my version is how I show I get it\n\nEach one is a reasonable thought that produces the wrong behaviour.",
+      cards: [
+        { q: "What are the four mindset areas in this pack?", a: "Understanding as Agreement, Doing Too Much, Going Through the Motions, and The Pull to Relate.", bundle: 'pro' },
+        { q: "Why does \"if I understand, I've agreed\" cause trouble?", a: "It stops people showing understanding in disagreements, which is where it matters most.", bundle: 'pro' },
+        { q: "What is a loop, if it is not a concession?", a: "A receipt. Saying what somebody thinks is not the same as thinking it.", bundle: 'pro' },
+        { q: "Why is one move better than three?", a: "The silence after one well-chosen response is where they decide whether to go further.", bundle: 'pro' },
+        { q: "How long does a pause have to be before it is awkward?", a: "Longer than it feels. Two seconds is them deciding, not an emergency.", bundle: 'pro' },
+        { q: "What is the problem with a question you do not listen to?", a: "It establishes that your questions do not mean anything.", bundle: 'pro' },
+        { q: "What beats a well-executed technique when you are not curious?", a: "The honest small thing. \"That sounds hard.\"", bundle: 'pro' },
+        { q: "Why does the pull to relate arrive earliest when the match is best?", a: "Because it feels most like empathy exactly when it would take the most.", bundle: 'pro' },
       ]
     },
   ],

@@ -486,73 +486,6 @@ const challengesCollections = {
       ]
     },
   ],
-  showunderstanding: [
-    {
-      name: "You Want to Fix It",
-      guideFront: "What is getting in the way of understanding here?",
-      guideBack: "A possible response, with the strategy in brackets.",
-      description: "They have described a problem and everything in you wants to offer the solution, which is not what they asked for and usually not what they want.\n\nThe training is to notice the urge and hold it for three more exchanges. Advice given before somebody has been understood almost never gets taken, because it answers a question they had not finished asking.\n\nWhat it usually sounds like from the inside:\n• \"Have you tried—\" already forming.\n• A solution that seems obvious to you and clearly has not occurred to them.\n• Impatience with hearing the problem described again.\n\nTwo ways through:\n1. Loop Back or Rephrase — reflect the problem instead of solving it. \"So the deadline moved and nobody told you.\"\n2. Ask Follow-up Questions — ask about their experience rather than the mechanics. \"What was the worst part?\"\n\nMindset: if they want the answer they will ask for it. Understanding first is not a delay before the useful part — for most conversations it is the useful part.",
-      inputs: [
-        { q: "You can feel \"have you tried\" forming.", a: "\"So it's the whole process that's the problem, not one bit of it.\" (loop back or rephrase)", bundle: 'pro' },
-        { q: "The solution seems obvious to you and they have not mentioned it.", a: "\"What have you already tried with it?\" (ask follow-up questions)", bundle: 'pro' },
-        { q: "You are impatient to get to the practical part.", a: "\"What's the bit that's actually wearing you down?\" (ask follow-up questions)", bundle: 'pro' },
-        { q: "They describe a problem you have solved before.", a: "\"That sounds genuinely exhausting to keep managing.\" (loop back or rephrase)", bundle: 'pro' },
-        { q: "You have already given advice and they are still describing it.", a: "\"Sorry — I jumped ahead. Tell me the rest of it.\" (ask follow-up questions)", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Your Story Takes Over",
-      guideFront: "What is getting in the way of understanding here?",
-      guideBack: "A possible response, with the strategy in brackets.",
-      description: "You relate to what they said, and four sentences later the conversation is about you and nobody quite knows how it happened.\n\nThe training is to keep relating short and hand it straight back. Two sentences and a question is the whole move; anything with a middle and an ending is a story, and stories take the floor.\n\nWhat it usually looks like:\n• Your version has more detail than theirs did.\n• You have moved on to a second example of your own.\n• They are now asking you follow-up questions.\n\nTwo ways through:\n1. Relate Through Sharing, briefly — two sentences, then stop. \"I had almost exactly that. It's a special kind of awful.\"\n2. Loop Back or Rephrase — hand the floor back explicitly. \"Anyway, yours sounds worse. The deadline thing especially.\"\n\nMindset: relating is a nod, not a turn. If your version has a middle, cut the middle.",
-      inputs: [
-        { q: "You are three sentences into your own version.", a: "\"Anyway — yours sounds worse. What happened with the deadline?\" (loop back or rephrase)", bundle: 'pro' },
-        { q: "You notice they have started asking you questions.", a: "\"We're talking about me now, sorry. Go back to the group thing.\" (loop back or rephrase)", bundle: 'pro' },
-        { q: "You have a long story that fits perfectly.", a: "\"I had almost exactly that last year. It's a special kind of awful.\" (relate through sharing)", bundle: 'pro' },
-        { q: "You are about to add a second example of your own.", a: "\"Same feeling, anyway. What did you end up doing?\" (ask follow-up questions)", bundle: 'pro' },
-        { q: "Your version is genuinely more dramatic than theirs.", a: "\"I know that feeling. Yours is the one we're talking about though.\" (relate through sharing)", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "It Sounds Mechanical",
-      guideFront: "What is getting in the way of understanding here?",
-      guideBack: "A possible response, with the strategy in brackets.",
-      description: "You used the technique correctly and it came out like a customer service script — \"so what I'm hearing is that you feel frustrated.\"\n\nThe training is to loop in your own words, in your own register. The formula is not the skill; the formula is scaffolding you are supposed to take down once the building stands.\n\nWhat it usually sounds like:\n• \"So what I'm hearing is…\" three times in one conversation.\n• Their exact words repeated back with no change.\n• A therapist voice you would never otherwise use.\n\nTwo ways through:\n1. Loop Back or Rephrase, in plain language — \"So the deadline moved and nobody told you. That's rubbish.\"\n2. Ask Follow-up Questions — a real question always sounds less staged than a reflection does.\n\nMindset: show genuine interest rather than performing the strategy. If you would not say it that way to a friend, do not say it that way to a friend.",
-      inputs: [
-        { q: "You have said \"so what I'm hearing is\" twice already.", a: "\"So the deadline moved and nobody told you. That's rubbish.\" (loop back or rephrase)", bundle: 'pro' },
-        { q: "You repeated their exact words back and it sounded odd.", a: "\"What did you do when you found out?\" (ask follow-up questions)", bundle: 'pro' },
-        { q: "You can hear yourself using a therapist voice.", a: "\"Right, so it's the being left out that's the actual problem.\" (loop back or rephrase)", bundle: 'pro' },
-        { q: "The reflection landed flat and slightly formal.", a: "\"Sorry, that came out weird. What I mean is — that would annoy me too.\" (relate through sharing)", bundle: 'pro' },
-        { q: "You are following the formula and not really listening.", a: "\"Say that last bit again? I want to make sure I've got it.\" (ask follow-up questions)", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "You Do Not Understand It",
-      guideFront: "What is getting in the way of understanding here?",
-      guideBack: "A possible response, with the strategy in brackets.",
-      description: "They have explained something and you genuinely have not followed — the names, the sequence, or the reason it matters.\n\nThe training is to say so, plainly, instead of nodding and hoping. A loop built on a misunderstanding is worse than no loop, because now they think they have been understood when they have not.\n\nWhat it usually looks like:\n• Three names you cannot place.\n• A sequence of events you have lost the order of.\n• You understand the words and not why it upset them.\n\nTwo ways through:\n1. Ask Follow-up Questions — the specific question, not a general one. \"Sorry, who pulled you aside?\"\n2. Loop Back or Rephrase as a check — offer your version and let them correct it. \"Have I got that right?\"\n\nMindset: admitting you are lost is a form of attention, not a failure of it. The alternative is pretending, which they will notice eventually.",
-      inputs: [
-        { q: "There are three names in the story and you cannot place any of them.", a: "\"Sorry — who's Anna in this?\" (ask follow-up questions)", bundle: 'pro' },
-        { q: "You have lost the order of what happened.", a: "\"Let me check I've got it — the plan changed twice and you found out last?\" (loop back or rephrase)", bundle: 'pro' },
-        { q: "You understand the events but not why it upset them.", a: "\"What was the part that got to you most?\" (ask follow-up questions)", bundle: 'pro' },
-        { q: "You have been nodding along for a minute without following.", a: "\"Can you take me back a step? I've lost the thread.\" (ask follow-up questions)", bundle: 'pro' },
-        { q: "You are about to loop back something you are not sure of.", a: "\"Tell me if this is wrong — it's the not being asked that's the issue?\" (loop back or rephrase)", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "They Keep Saying They Are Fine",
-      guideFront: "What is getting in the way of understanding here?",
-      guideBack: "A possible response, with the strategy in brackets.",
-      description: "They have given you three words and a shrug, and there is almost nothing to reflect or ask about.\n\nThe training is to offer rather than extract. A gentle loop of what you can see gives them something to agree with or correct, which is much easier than answering an open question about their feelings.\n\nWhat it usually looks like:\n• \"It's fine.\" / \"It's whatever.\" / \"I don't really want to go into it.\"\n• A change of subject as soon as you get close.\n• Body language that says more than the words.\n\nTwo ways through:\n1. Loop Back or Rephrase what you can see — \"It sounds less fine and more relentless, from here.\"\n2. Relate Through Sharing — go first, so they do not have to. \"I had a stretch like that in the spring. Grim.\"\n\nMindset: do not push. Offering a word and leaving the door open is the whole move; whether they walk through it is theirs to decide.",
-      inputs: [
-        { q: "They say: \"It's fine, honestly.\" and clearly mean the opposite.", a: "\"It sounds less fine and more relentless, from where I'm sitting.\" (loop back or rephrase)", bundle: 'pro' },
-        { q: "They shrug and change the subject.", a: "\"Fair enough. I'm around if it turns into something you want to say.\" (loop back or rephrase)", bundle: 'pro' },
-        { q: "They say: \"I don't really want to go into it.\"", a: "\"That's completely fine. No need.\" (loop back or rephrase)", bundle: 'pro' },
-        { q: "They will not open up and you have a similar experience.", a: "\"I had a run like that in the spring. Hard to explain to anyone.\" (relate through sharing)", bundle: 'pro' },
-        { q: "Their face says a lot more than their three words did.", a: "\"You don't have to say anything. It just looks like a lot.\" (loop back or rephrase)", bundle: 'pro' },
-      ]
-    },
-  ],
   startingconversations4: [
     {
       name: "The Joke Misfires",
@@ -4512,6 +4445,88 @@ const challengesCollections = {
         { q: "A supplier uses soft compliments to dodge a conversation about delays.", a: "\"I don't work with changing timelines. If the next shipment is late without warning, I am canceling the contract.\" [Boundary Consequences]", bundle: 'pro' },
         { q: "A teammate praises your skills right before pushing their work onto you.", a: "\"I don't accept extra tasks under the table. If you want to discuss work division, let's schedule a formal talk with our lead.\" [Boundary Consequences]", bundle: 'pro' },
         { q: "You want to discuss your recent drafts with a junior employee.", a: "\"I'd like to talk about your recent drafts. I want to leave this meeting with a plan to get things back on track. Does that work?\" [Conversational Framing]", bundle: 'pro' },
+      ]
+    },
+  ],
+  showunderstanding: [
+    {
+      name: "The Urge to Fix",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "They have described a problem, and everything in you wants to offer the solution. It was not what they asked for, and usually not what they want.\n\n**What goes wrong:** advice given before somebody has been understood rarely gets taken — it answers a question they had not finished asking. It also ends the telling.\n\n**What works here:** **Loop Back or Rephrase** does most of it, because reflecting a problem is the closest thing to solving it that does not take it away from them. **Ask Follow-up Questions** does the rest, aimed at their experience rather than the mechanics.\n\n**Avoid:** \"Have you tried\" in any of its forms. If they want the answer they will ask for it, and they will ask sooner if they feel understood first.\n\nMindset: understanding first is not a delay before the useful part. For most conversations it is the useful part.",
+      inputs: [
+        { q: "You can feel \"have you tried\" forming.", a: "\"So it's the whole process that's the problem, not one bit of it.\" [Loop Back or Rephrase]", bundle: 'pro' },
+        { q: "The solution seems obvious to you and they have not mentioned it.", a: "\"What have you already tried with it?\" [Ask Follow-up Questions]", bundle: 'pro' },
+        { q: "You are impatient to get to the practical part.", a: "\"What's the bit that's actually wearing you down?\" [Ask Follow-up Questions]", bundle: 'pro' },
+        { q: "They describe a problem you have solved before.", a: "\"That sounds genuinely exhausting to keep managing.\" [Loop Back or Rephrase]", bundle: 'pro' },
+        { q: "You have already given advice and they are still describing it.", a: "\"Sorry — I jumped ahead. Tell me the rest of it.\" [Ask Follow-up Questions]", bundle: 'pro' },
+        { q: "They ask \"what would you do?\" and you are not sure they mean it.", a: "\"I'll say — but first, what's putting you off the obvious one?\" [Ask Follow-up Questions]", bundle: 'pro' },
+        { q: "The problem is one you have lived through yourself.", a: "\"I had that exact one. It's grim while it lasts.\" [Relate Through Sharing]", bundle: 'pro' },
+        { q: "You gave advice, it was ignored, and they are back with the same thing.", a: "\"So it's still going, and nothing's shifted it.\" [Loop Back or Rephrase]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Taking the Floor",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "You relate to what they said, and four sentences later the conversation is about you, and nobody is quite sure how it happened.\n\n**What goes wrong:** your version grows a middle. Two sentences and a question is the whole move; anything with a middle and an ending is a story, and stories take the floor whether or not you meant them to.\n\n**What works here:** **Relate Through Sharing**, kept to two sentences. When it has already gone too far, **Loop Back or Rephrase** is the way back — handing the floor over explicitly is less awkward than trailing off.\n\n**Avoid:** the second example. One matching experience is relating; two is a turn.\n\nMindset: relating is a nod, not a turn. If your version has a middle, cut the middle.",
+      inputs: [
+        { q: "You are three sentences into your own version.", a: "\"Anyway — yours sounds worse. What happened with the deadline?\" [Loop Back or Rephrase]", bundle: 'pro' },
+        { q: "You notice they have started asking you questions.", a: "\"We're talking about me now, sorry. Go back to the group thing.\" [Loop Back or Rephrase]", bundle: 'pro' },
+        { q: "You have a long story that fits perfectly.", a: "\"I had almost exactly that last year. It's a special kind of awful.\" [Relate Through Sharing]", bundle: 'pro' },
+        { q: "You are about to add a second example of your own.", a: "\"Same feeling, anyway. What did you end up doing?\" [Ask Follow-up Questions]", bundle: 'pro' },
+        { q: "Your version is genuinely more dramatic than theirs.", a: "\"I know that feeling. Yours is the one we're talking about though.\" [Relate Through Sharing]", bundle: 'pro' },
+        { q: "Someone else joins and asks you about the thing you just mentioned.", a: "\"Later — she was telling me about the group project.\" [Loop Back or Rephrase]", bundle: 'pro' },
+        { q: "You realise you have not asked them anything for five minutes.", a: "\"I've talked all over that. What happened in the end?\" [Ask Follow-up Questions]", bundle: 'pro' },
+        { q: "They politely wait for your story to finish.", a: "\"That's enough from me. Back to yours.\" [Loop Back or Rephrase]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sounding Rehearsed",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "You used the technique correctly and it came out like a customer service script — \"so what I'm hearing is that you feel frustrated\".\n\n**What goes wrong:** the formula is scaffolding, and you left it up. A loop in a voice you would never otherwise use tells the other person that a method is being applied to them, which is the opposite of what the method was for.\n\n**What works here:** **Loop Back or Rephrase** in plain language — your own register, your own words, including the unflattering ones. **Ask Follow-up Questions** is the escape hatch, because a real question always sounds less staged than a reflection does.\n\n**Avoid:** repeating their exact sentence. Same words back is the clearest possible signal that nothing was processed in between.\n\nMindset: if you would not say it that way to a friend, do not say it that way to a friend.",
+      inputs: [
+        { q: "You have said \"so what I'm hearing is\" twice already.", a: "\"So the deadline moved and nobody told you. That's rubbish.\" [Loop Back or Rephrase]", bundle: 'pro' },
+        { q: "You repeated their exact words back and it sounded odd.", a: "\"What did you do when you found out?\" [Ask Follow-up Questions]", bundle: 'pro' },
+        { q: "You can hear yourself using a therapist voice.", a: "\"Right, so it's the being left out that's the actual problem.\" [Loop Back or Rephrase]", bundle: 'pro' },
+        { q: "The reflection landed flat and slightly formal.", a: "\"Sorry, that came out weird. What I mean is — that would annoy me too.\" [Relate Through Sharing]", bundle: 'pro' },
+        { q: "You are following the formula and not really listening.", a: "\"Say that last bit again? I want to make sure I've got it.\" [Ask Follow-up Questions]", bundle: 'pro' },
+        { q: "You have started every response with the same three words.", a: "\"That's a mess, then. Who was supposed to tell you?\" [Ask Follow-up Questions]", bundle: 'pro' },
+        { q: "You are reflecting something that needs no reflecting.", a: "\"God, yes. I'd have been furious.\" [Relate Through Sharing]", bundle: 'pro' },
+        { q: "You are about to summarise something that took one sentence.", a: "\"What happened next?\" [Ask Follow-up Questions]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Losing the Thread",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "They have explained something and you genuinely have not followed — the names, the order of events, or why any of it matters.\n\n**What goes wrong:** you nod and hope. A loop built on a misunderstanding is worse than no loop at all, because now they believe they have been understood when they have not, and the correction comes much later and costs more.\n\n**What works here:** **Ask Follow-up Questions**, aimed at the specific gap rather than the topic. **Loop Back or Rephrase** works too if you offer it as a check — your version, plus permission to fix it.\n\n**Avoid:** waiting for it to make sense on its own. It rarely does, and every further minute makes admitting it more awkward.\n\nMindset: admitting you are lost is a form of attention, not a failure of it. The alternative is pretending, which they will notice eventually.",
+      inputs: [
+        { q: "There are three names in the story and you cannot place any of them.", a: "\"Sorry — who's Anna in this?\" [Ask Follow-up Questions]", bundle: 'pro' },
+        { q: "You have lost the order of what happened.", a: "\"Let me check I've got it — the plan changed twice and you found out last?\" [Loop Back or Rephrase]", bundle: 'pro' },
+        { q: "You understand the events but not why it upset them.", a: "\"What was the part that got to you most?\" [Ask Follow-up Questions]", bundle: 'pro' },
+        { q: "You have been nodding along for a minute without following.", a: "\"Can you take me back a step? I've lost the thread.\" [Ask Follow-up Questions]", bundle: 'pro' },
+        { q: "You are about to loop back something you are not sure of.", a: "\"Tell me if this is wrong — it's the not being asked that's the issue?\" [Loop Back or Rephrase]", bundle: 'pro' },
+        { q: "They are using words from their job that you do not know.", a: "\"What's a handover, in your world?\" [Ask Follow-up Questions]", bundle: 'pro' },
+        { q: "You followed all of it except the ending.", a: "\"So it's resolved — or it isn't, and that's the problem?\" [Loop Back or Rephrase]", bundle: 'pro' },
+        { q: "You realise you have been thinking about something else.", a: "\"I drifted for a second, sorry. Start again from the meeting.\" [Ask Follow-up Questions]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Closed Doors",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "They have given you three words and a shrug, and there is almost nothing to reflect or ask about.\n\n**What goes wrong:** you ask a bigger question, and a bigger question is harder to answer than a small one. Open questions about feelings are the hardest of all for somebody who has already decided not to go into it.\n\n**What works here:** **Loop Back or Rephrase** what you can see rather than what they said — it gives them something to agree with or correct, which is far easier than producing an answer. **Relate Through Sharing** works as a way of going first, so they do not have to.\n\n**Avoid:** pushing. Offering a word and leaving the door open is the whole move; whether they walk through it is theirs to decide.\n\nMindset: you are not trying to get it out of them. You are letting them know the offer is there.",
+      inputs: [
+        { q: "They say: \"It's fine, honestly.\" and clearly mean the opposite.", a: "\"It sounds less fine and more relentless, from where I'm sitting.\" [Loop Back or Rephrase]", bundle: 'pro' },
+        { q: "They shrug and change the subject.", a: "\"Fair enough. I'm around if it turns into something you want to say.\" [Loop Back or Rephrase]", bundle: 'pro' },
+        { q: "They say: \"I don't really want to go into it.\"", a: "\"That's completely fine. No need.\" [Loop Back or Rephrase]", bundle: 'pro' },
+        { q: "They will not open up and you have a similar experience.", a: "\"I had a run like that in the spring. Hard to explain to anyone.\" [Relate Through Sharing]", bundle: 'pro' },
+        { q: "Their face says a lot more than their three words did.", a: "\"You don't have to say anything. It just looks like a lot.\" [Loop Back or Rephrase]", bundle: 'pro' },
+        { q: "They give one-word answers to everything you ask.", a: "\"I'll stop asking. It's just good to see you.\" [Loop Back or Rephrase]", bundle: 'pro' },
+        { q: "They mention it once and immediately move on.", a: "\"You said the thing with your brother — is that still going on?\" [Ask Follow-up Questions]", bundle: 'pro' },
+        { q: "They deflect with a joke about it.", a: "\"I do that too when I don't want to get into something.\" [Relate Through Sharing]", bundle: 'pro' },
       ]
     },
   ],
