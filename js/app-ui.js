@@ -609,7 +609,7 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
   const FAV_KEY      = 'fav_packs';       // ordered array of {key, label}
   const TRAINED_KEY  = 'dash_last_pack';  // existing last-pack key
   const ALL_PACKS = [
-    { key: 'assertive',      label: 'Assertive Communication' },
+    { key: 'assertive',      label: 'The Assertive Four' },
     { key: 'humour',         label: 'Humour Practise' },
     { key: 'teasing',        label: 'Teasing & Playfulness' },
     { key: 'criticism',      label: 'Criticism & Correction' },
@@ -2876,18 +2876,27 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
           'The smallest purchase in Extended, aimed at the situations people actually lose.',
         ],
       },
+      // v1.27.41 — ONLY THE PACK NAME WAS UPDATED IN THIS ITEM. `assertive`
+      // moved to minLevel 'complete', so this bundle now sells extra inputs for
+      // a pack no real user can open. Nothing is charged yet — buy() only
+      // writes to localStorage — so it is not doing harm today. But before
+      // anything is sold for real this item has to either move to one of the
+      // new Assertive Communication packs or come out of the store, together
+      // with its three entries in the kits below and the two sentences of kit
+      // copy that name it. Removing it also changes what the kits are worth,
+      // which feeds the handset kit prices that are already an open item.
       {
         id: 'assertive::domestic',
         packKey: 'assertive',
         bundleId: 'domestic',
-        packTitle: 'Assertive Communication',
+        packTitle: 'The Assertive Four',
         title: 'Domestic Situations',
         icon: 'ti-home',
         description: 'Extra inputs for home and close relationships — partners, family, neighbours, friends. Covers all four assertive strategies.',
         price: '19 kr',
         details: [
           'The hardest place to stay assertive isn\u2019t the office \u2014 it\u2019s home. The stakes are personal, the patterns are old, and the other person knows exactly which buttons to push.',
-          'This bundle adds a full set of home-and-close-relationship situations to your Assertive Communication pack: partners, parents, siblings, neighbours and old friends.',
+          'This bundle adds a full set of home-and-close-relationship situations to your Assertive Four pack: partners, parents, siblings, neighbours and old friends.',
           'Every card plugs straight into the strategies you already train \u2014 Fogging, Broken Record, Negative Inquiry and Negative Assertion \u2014 so the extra material appears right inside your normal sessions.',
           'Small price, big blind spot covered.',
         ],
@@ -2910,7 +2919,7 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
           'All five extra packs and both input bundles in one purchase \u2014 {separately} if you buy the parts one by one.',
           'Three of them go deeper into something you already train: the last step of the Starting Conversations ladder, where you open with nothing to hide behind; the deep half of Apologizing, for when sorry is not enough; and the second half of Explain Things, for the audience that was never going to make it easy.',
           'The other two stand on their own. Building a Story is the shape of a story from first sentence to last. Reframing is the other reading of the same facts \u2014 and, just as usefully, when not to offer one.',
-          'On top of that, extra situations for two packs you already have \u2014 family pressure for Broken Record, and home and close relationships for Assertive Communication.',
+          'On top of that, extra situations for two packs you already have \u2014 family pressure for Broken Record, and home and close relationships for The Assertive Four.',
           'Everything is unlocked immediately and works in all your training modes, including handsfree.',
         ],
         contents: [
@@ -2932,7 +2941,7 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
         details: [
           'Every single thing in Extended in one purchase: all five extra packs, both input bundles, and the Difficult Conversations program. Bought one by one it comes to {separately}.',
           'The program is what makes this different from The Communicator Kit. Three Parts with a test at the end of each, and three packs \u2014 Conflict Emotions, Giving Criticism and Receiving Feedback and Criticism \u2014 that exist nowhere else in the app.',
-          'Around it sit the five extra packs: the last step of the Starting Conversations ladder, the deep half of Apologizing, the second half of Explain Things, the shape of a story from first sentence to last, and Reframing \u2014 the other reading of the same facts. Plus family pressure for Broken Record and home situations for Assertive Communication.',
+          'Around it sit the five extra packs: the last step of the Starting Conversations ladder, the deep half of Apologizing, the second half of Explain Things, the shape of a story from first sentence to last, and Reframing \u2014 the other reading of the same facts. Plus family pressure for Broken Record and home situations for The Assertive Four.',
           'Everything unlocks immediately and works in all your training modes, including handsfree. After this there is nothing else in Extended to buy.',
         ],
         contents: [

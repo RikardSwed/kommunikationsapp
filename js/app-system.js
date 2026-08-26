@@ -511,7 +511,27 @@ applyInputCounterVisibility();
 
   // Pack definitions per level
   const PACK_CONFIG = {
-    assertive:      { label: 'Assertive Communication', minLevel: 'freemium'  },
+    // v1.27.41 — RENAMED AND PUT AWAY. The pack itself is untouched: its key is
+    // still `assertive`, so every rating, note, favourite, folder and bit of
+    // progress a user has follows it (the keys are fb_assertive_… and
+    // note_assertive_…). Only the label on screen changed, and the level.
+    //
+    // Why: Rikard is keeping this version as it is — it has personal value —
+    // and will build new packs from the current rules called Assertive
+    // Communication Part 1, Part 2 and possibly more. Two packs cannot both be
+    // called Assertive Communication in the library, so this one took a name of
+    // its own. `The Assertive Four` says what it is: the four Manuel J. Smith
+    // drills (Fogging, Negative Inquiry, Negative Assertion, Broken Record).
+    //
+    // 'complete' really does hide it: social-confidence, the only programme
+    // that lists it, is itself 'complete' (see PROGRAM_CONFIG), so no programme
+    // route reopens it in packVisibility.
+    //
+    // STILL OPEN: `assertive::domestic` is an Extended bundle for this pack and
+    // is sold inside all three kits (app-ui.js). It now adds inputs to a pack
+    // no real user can reach. It has to move to one of the new packs or come
+    // out of the store before anything is sold for real.
+    assertive:      { label: 'The Assertive Four', minLevel: 'complete'  },
     // v1.26.67 — the pre-handbook packs are put AWAY, not deleted: minLevel
     // 'complete' hides them from every real user while leaving them intact
     // for Rikard to review at the developer level. Assertive Communication is
@@ -5256,7 +5276,7 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
     assertive: {
       pages: [
         {
-          title: 'Assertive Communication',
+          title: 'The Assertive Four',
           html:
             '<p class="ob-text">This pack trains you to stand your ground calmly &mdash; ' +
             'without getting defensive, without attacking back, and without giving in.</p>' +
