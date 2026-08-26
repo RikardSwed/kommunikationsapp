@@ -76,14 +76,8 @@ const packTags = {
   setupstatement: [
     'conversation', 'starting', 'connecting'
   ],
-  startingconversations4: [
-    'starting conversations', 'openers', 'humour', 'saying what you feel', 'approaching people'
-  ],
   apologizing2: [
     'apologizing', 'repair', 'when someone is hurt', 'making amends', 'difficult conversations'
-  ],
-  startingconversations2: [
-    'starting conversations', 'openers', 'common ground', 'asking for help', 'small talk'
   ],
   startingconversations3: [
     'starting conversations', 'openers', 'compliments', 'curiosity about people', 'small talk'
@@ -180,9 +174,6 @@ const packTags = {
   ],
   complimenting: [
     'compliments', 'appreciation', 'praise', 'receiving praise', 'saying nice things', 'noticing people'
-  ],
-  responsivehumour: [
-    'humour', 'being funny', 'quick replies', 'banter', 'playfulness', 'reacting'
   ],
   masculine1: [
     'masculinity', 'leadership', 'relationships', 'boundaries', 'presence', 'communication'
@@ -355,11 +346,20 @@ const packTags = {
   showunderstanding: [
     'listening', 'understanding', 'empathy', 'conversation'
   ],
+  talkingaboutyourself: [
+    'answering questions', 'small talk', 'self-disclosure', 'opening up', 'what do you do', 'being asked about yourself'
+  ],
   startingconversations1: [
     'starting conversations', 'openers', 'small talk', 'strangers', 'first words'
   ],
-  talkingaboutyourself: [
-    'answering questions', 'small talk', 'self-disclosure', 'opening up', 'what do you do', 'being asked about yourself'
+  startingconversations2: [
+    'starting conversations', 'openers', 'common ground', 'asking for help', 'small talk'
+  ],
+  startingconversations4: [
+    'starting conversations', 'openers', 'humour', 'saying what you feel', 'approaching people'
+  ],
+  responsivehumour: [
+    'humour', 'being funny', 'quick replies', 'banter', 'playfulness', 'reacting'
   ],
 };
 
@@ -389,7 +389,7 @@ const packTags = {
 // emotionalboundaries merged into emotions and boundaries.
 const TOPICS = [
   // ── Getting a conversation going ──────────────────────────────────
-  { id: 'startingconversations', title: 'Starting Conversations',        packs: ['startingconnecting', 'setupstatement', 'startingconversations4', 'startingconversations2', 'startingconversations3', 'setupquestion', 'oconnor7', 'firststrategies', 'startingconversations1'] },
+  { id: 'startingconversations', title: 'Starting Conversations',        packs: ['startingconnecting', 'setupstatement', 'startingconversations3', 'setupquestion', 'oconnor7', 'firststrategies', 'startingconversations1', 'startingconversations2', 'startingconversations4'] },
   { id: 'questions',             title: 'Questions & Curiosity',         packs: ['exploringatopic', 'deepquestions'] },
   { id: 'flowtransitions',       title: 'Flow & Transitions',            packs: ['conversational', 'transitions', 'changingtopics', 'reactingtounexpectedstatements'] },
   { id: 'endingconversations',   title: 'Ending Conversations',          packs: ['endingconversations'] },
@@ -418,7 +418,7 @@ const TOPICS = [
   { id: 'emotions',              title: 'Emotions & Regulation',         packs: ['emotionlabellingandregulation', 'conflictemotions', 'praxdread4', 'reframing', 'oconnor6'] },
 
   // ── Lightness ─────────────────────────────────────────────────────
-  { id: 'humour',                title: 'Humour & Banter',               packs: ['humour', 'teasing', 'selfhumour', 'humourpractise', 'playfulrefusals', 'rolebasedhumour', 'responsivehumour', 'storybanter'] },
+  { id: 'humour',                title: 'Humour & Banter',               packs: ['humour', 'teasing', 'selfhumour', 'humourpractise', 'playfulrefusals', 'rolebasedhumour', 'storybanter', 'responsivehumour'] },
 
   // ── Placeholders: no material yet, hidden below Complete ──────────
   { id: 'bodyvoice',             title: 'Body Language & Voice',         packs: [] },

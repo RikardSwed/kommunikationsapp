@@ -615,9 +615,7 @@ applyInputCounterVisibility();
     persuasionandinfluence2: { label: 'Persuasion and Influence — Pt. 2', minLevel: 'program' }, // Persuasion & Negotiation, Part 2
     negotiationandcompromise: { label: 'Negotiation and Compromise', minLevel: 'program' },      // Persuasion & Negotiation, Part 3
 
-    startingconversations4: { label: 'Starting Conversations — Pt. 4', minLevel: 'extended' },
     apologizing2: { label: 'Apologizing — Pt. 2', minLevel: 'extended' },
-    startingconversations2: { label: 'Starting Conversations — Pt. 2', minLevel: 'pro' },
     endingconversations: { label: 'Ending Conversations', minLevel: 'pro' },
     reactingtounexpectedstatements: { label: 'Reacting to Unexpected Statements', minLevel: 'pro' },
     howtointerrupt: { label: 'How to Interrupt', minLevel: 'pro' },
@@ -630,7 +628,6 @@ applyInputCounterVisibility();
     agreeing: { label: 'Agreeing', minLevel: 'pro' },
     disagreeing: { label: 'Disagreeing', minLevel: 'pro' },
     persuasionandinfluence1: { label: 'Persuasion and Influence — Pt. 1', minLevel: 'pro' },
-    responsivehumour: { label: 'Responsive Humour', minLevel: 'pro' },
     brokenrecord: { label: 'Broken Record', minLevel: 'pro' },
     respondingtopassiveaggression: { label: 'Responding to Passive Aggression', minLevel: 'pro' },
     makingrequests: { label: 'Making Requests', minLevel: 'pro' },
@@ -698,8 +695,11 @@ applyInputCounterVisibility();
     jfisher1: { label: 'Jefferson Fisher 1 — Control under Pressure', minLevel: 'complete' },
     jfisher2: { label: 'Jefferson Fisher 2 — Assertive Connection', minLevel: 'complete' },
     showunderstanding: { label: 'Show Understanding', minLevel: 'freemium' },
-    startingconversations1: { label: 'Starting Conversations — Pt. 1', minLevel: 'freemium' },
     talkingaboutyourself: { label: 'Talking About Yourself', minLevel: 'freemium' },
+    startingconversations1: { label: 'Starting Conversations — Pt. 1', minLevel: 'freemium' },
+    startingconversations2: { label: 'Starting Conversations — Pt. 2', minLevel: 'pro' },
+    startingconversations4: { label: 'Starting Conversations — Pt. 4', minLevel: 'extended' },
+    responsivehumour: { label: 'Responsive Humour', minLevel: 'pro' },
   };
 
   // ── PROGRAM_CONFIG (v1.26.81) ─────────────────────────────────────────
@@ -1446,35 +1446,7 @@ const BUNDLE_DEFS = {
       description: '',
     },
   ],
-  startingconversations4: [
-    {
-      id: 'free',
-      tier: 'free',
-      name: 'Free Bundle',
-      description: '',
-    },
-    {
-      id: 'pro',
-      tier: 'pro',
-      name: 'Pro Bundle',
-      description: '',
-    },
-  ],
   apologizing2: [
-    {
-      id: 'free',
-      tier: 'free',
-      name: 'Free Bundle',
-      description: '',
-    },
-    {
-      id: 'pro',
-      tier: 'pro',
-      name: 'Pro Bundle',
-      description: '',
-    },
-  ],
-  startingconversations2: [
     {
       id: 'free',
       tier: 'free',
@@ -1935,20 +1907,6 @@ const BUNDLE_DEFS = {
     },
   ],
   complimenting: [
-    {
-      id: 'free',
-      tier: 'free',
-      name: 'Free Bundle',
-      description: '',
-    },
-    {
-      id: 'pro',
-      tier: 'pro',
-      name: 'Pro Bundle',
-      description: '',
-    },
-  ],
-  responsivehumour: [
     {
       id: 'free',
       tier: 'free',
@@ -2754,6 +2712,20 @@ const BUNDLE_DEFS = {
       description: '',
     },
   ],
+  talkingaboutyourself: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
   startingconversations1: [
     {
       id: 'free',
@@ -2768,7 +2740,35 @@ const BUNDLE_DEFS = {
       description: '',
     },
   ],
-  talkingaboutyourself: [
+  startingconversations2: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  startingconversations4: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  responsivehumour: [
     {
       id: 'free',
       tier: 'free',
@@ -5205,7 +5205,7 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
             '<p class="ob-text">Say your name and give them a reason to say theirs.</p>' +
             '<p class="ob-text">This is the opener that turns a stranger into someone you ' +
             'have met. Most people are relieved that you went first.</p>' +
-            '<p class="ob-text ob-text--dim">Waiting for the same meeting<br>&rarr; &ldquo;I don\u2019t think we\u2019ve met &mdash; I\u2019m Rikard.&rdquo;</p>'
+            '<p class="ob-text ob-text--dim">Waiting for the same meeting<br>&rarr; &ldquo;I don\u2019t think we\u2019ve met &mdash; I\u2019m&hellip;&rdquo;</p>'
         },
         {
           title: 'Comment on the Situation',
@@ -5439,6 +5439,135 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
             '<p class="ob-text">Everything else is a question of size, and the answer to that ' +
             'one is always: look at what they just gave you.</p>' +
             '<p class="ob-text ob-text--dim">The bar is true and specific. Nobody is grading this.</p>'
+        }
+      ]
+    },
+
+    // v1.27.45 — the two packs a freemium user reaches through the
+    // Conversation Foundations programme rather than from the Packs tab. Both
+    // are Pro standalone, so they had no intro: nobody thought of them as packs
+    // a free user opens, and they are exactly that after a checkpoint.
+    exploringatopic: {
+      pages: [
+        {
+          title: 'Exploring a Topic',
+          html:
+            '<p class="ob-text">Most conversations die by hopping. A subject comes up, ' +
+            'somebody says one thing about it, and then everyone starts hunting for a new one.</p>' +
+            '<p class="ob-text">This pack is the opposite skill: <strong>staying</strong>. ' +
+            'Five ways to add something to the subject already on the table.</p>' +
+            '<p class="ob-text ob-text--dim">You do not need to know anything about the topic to keep it going.</p>'
+        },
+        {
+          title: 'Going Deeper',
+          html:
+            '<p class="ob-text">Two ways to go further into what is already being said.</p>' +
+            '<div class="ob-how">' +
+            '<div class="ob-how-row"><span class="ob-how-num">1</span><p><strong>Ask an Open Question</strong> &mdash; a what, how or why about the subject in hand.</p></div>' +
+            '<div class="ob-how-row"><span class="ob-how-num">2</span><p><strong>Build on Their Point</strong> &mdash; take their own word and go one layer down.</p></div>' +
+            '</div>' +
+            '<p class="ob-text ob-text--dim">&ldquo;I grow most of our vegetables in the summer.&rdquo;<br>&rarr; &ldquo;You said <em>most</em> &mdash; what is the one thing that never works?&rdquo;</p>'
+        },
+        {
+          title: 'Adding Your Own',
+          html:
+            '<p class="ob-text">Two ways to put something of yours into the topic without ' +
+            'taking it over.</p>' +
+            '<div class="ob-how">' +
+            '<div class="ob-how-row"><span class="ob-how-num">1</span><p><strong>Share a Related Experience</strong> &mdash; it does not have to be impressive, only related.</p></div>' +
+            '<div class="ob-how-row"><span class="ob-how-num">2</span><p><strong>Share, Then Invite</strong> &mdash; one part you, one part them, in the same breath.</p></div>' +
+            '</div>' +
+            '<p class="ob-text ob-text--dim">&ldquo;I tried herbs on the windowsill &mdash; the basil lasted about a week. What do you grow?&rdquo;</p>'
+        },
+        {
+          title: 'When It Runs Out',
+          html:
+            '<p class="ob-text"><strong>Expand to a Related Subtopic</strong> &mdash; step ' +
+            'sideways rather than away.</p>' +
+            '<p class="ob-text">A thread does eventually finish, and the instinct then is to ' +
+            'jump to something unrelated. Moving to the next room instead of the next house ' +
+            'keeps everything said so far still useful.</p>' +
+            '<p class="ob-text ob-text--dim">Balcony gardening dries up<br>&rarr; &ldquo;Does anyone keep plants indoors? Mine never survive the winter.&rdquo;</p>'
+        },
+        {
+          title: 'Choosing One',
+          html:
+            '<p class="ob-text">One question decides it: <strong>is the thread still ' +
+            'alive?</strong></p>' +
+            '<div class="ob-how">' +
+            '<div class="ob-how-row"><span class="ob-how-num">1</span><p>Yes, and they are talking &mdash; <strong>ask</strong> or <strong>build</strong>.</p></div>' +
+            '<div class="ob-how-row"><span class="ob-how-num">2</span><p>Yes, but it is your turn &mdash; <strong>share</strong>, then invite.</p></div>' +
+            '<div class="ob-how-row"><span class="ob-how-num">3</span><p>No &mdash; <strong>expand sideways</strong>, and only sideways.</p></div>' +
+            '</div>' +
+            '<p class="ob-text ob-text--dim">Stay one move longer than feels natural. That is where the conversation usually is.</p>'
+        }
+      ]
+    },
+
+    changingtopics: {
+      pages: [
+        {
+          title: 'Changing Topics',
+          html:
+            '<p class="ob-text">Every subject ends. What people notice is not that you changed ' +
+            'it &mdash; it is the gap where the change happened.</p>' +
+            '<p class="ob-text">Six ways to move on, sorted by how much of a bridge you build ' +
+            'from the old subject to the new one.</p>' +
+            '<p class="ob-text ob-text--dim">A switch with a bridge feels like a conversation. Without one it feels like an interruption.</p>'
+        },
+        {
+          title: 'Bridging From What They Said',
+          html:
+            '<p class="ob-text">The smoothest two, because the new subject grows out of their ' +
+            'own words.</p>' +
+            '<div class="ob-how">' +
+            '<div class="ob-how-row"><span class="ob-how-num">1</span><p><strong>Linking</strong> &mdash; catch one word and use it as the bridge.</p></div>' +
+            '<div class="ob-how-row"><span class="ob-how-num">2</span><p><strong>Finding Common Ground</strong> &mdash; &ldquo;that&rsquo;s like when I&hellip;&rdquo;, and the new direction opens itself.</p></div>' +
+            '</div>' +
+            '<p class="ob-text ob-text--dim">&ldquo;I was up late finishing a report.&rdquo;<br>&rarr; &ldquo;Late nights &mdash; that reminds me, have you had any proper time off lately?&rdquo;</p>'
+        },
+        {
+          title: 'Closing Before Opening',
+          html:
+            '<p class="ob-text">Two ways to finish the old subject on purpose, so the new one ' +
+            'is not standing on top of it.</p>' +
+            '<div class="ob-how">' +
+            '<div class="ob-how-row"><span class="ob-how-num">1</span><p><strong>Acknowledge and Redirect</strong> &mdash; a short wrap-up, then the new subject.</p></div>' +
+            '<div class="ob-how-row"><span class="ob-how-num">2</span><p><strong>Respectful Exit</strong> &mdash; for a topic that has been covered, or is going round again.</p></div>' +
+            '</div>' +
+            '<p class="ob-text ob-text--dim">&ldquo;Sounds like an amazing trip &mdash; I think we&rsquo;ve covered it well. So what else is new?&rdquo;</p>'
+        },
+        {
+          title: 'No Bridge At All',
+          html:
+            '<p class="ob-text"><strong>Random or Light Switch</strong> &mdash; change the ' +
+            'subject openly, and say that you are doing it.</p>' +
+            '<p class="ob-text">Naming the switch is what makes it work. An unannounced jump ' +
+            'is jarring; an announced one is just a bit of lightness, and everyone is usually ' +
+            'relieved.</p>' +
+            '<p class="ob-text ob-text--dim">&ldquo;Okay, before we get too philosophical &mdash; seen any good films lately?&rdquo;</p>'
+        },
+        {
+          title: 'When It Gets Uncomfortable',
+          html:
+            '<p class="ob-text"><strong>Steering Away from Sensitive Topics</strong> &mdash; ' +
+            'acknowledge it, then offer safer ground.</p>' +
+            '<p class="ob-text">The acknowledgement is the part people skip, and it is the part ' +
+            'that matters. Moving on without it reads as not having noticed, which is worse ' +
+            'than staying.</p>' +
+            '<p class="ob-text ob-text--dim">&ldquo;That sounds really hard &mdash; no need to get into it. How have you been otherwise?&rdquo;</p>'
+        },
+        {
+          title: 'Choosing One',
+          html:
+            '<p class="ob-text">One question: <strong>can you build a bridge from what they ' +
+            'just said?</strong></p>' +
+            '<div class="ob-how">' +
+            '<div class="ob-how-row"><span class="ob-how-num">1</span><p>Yes &mdash; <strong>link</strong>, or find common ground.</p></div>' +
+            '<div class="ob-how-row"><span class="ob-how-num">2</span><p>No, but the subject is finished &mdash; <strong>close it</strong>, then open.</p></div>' +
+            '<div class="ob-how-row"><span class="ob-how-num">3</span><p>No, and you just want out &mdash; <strong>say so</strong>, lightly.</p></div>' +
+            '</div>' +
+            '<p class="ob-text ob-text--dim">Whatever you do, do not leave the gap unmarked. That is the only part anyone notices.</p>'
         }
       ]
     },

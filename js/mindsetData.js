@@ -431,60 +431,6 @@ const mindsetCollections = {
       ]
     },
   ],
-  startingconversations4: [
-    {
-      name: "Somebody Has to Go First",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
-      description: "In almost every room, several people are waiting for someone else to say the thing. Whoever admits to being nervous, makes the joke about the queue, or says they know nobody here is not exposing themselves — they are doing the thing everyone was hoping somebody would do.\n\nThat is the whole logic of this pack. Going first costs you a few seconds of risk and buys the other person permission.\n\nMindset: the exposure is real and it is brief. What it buys is not.",
-      inputs: [
-        { q: "Why should it be me who breaks the silence?", a: "Because everyone else is asking the same question. Somebody has to answer it.", bundle: 'pro' },
-        { q: "If I go first and it fails I'll look stupid.", a: "For a moment, to one person, who'll have forgotten by the bus home.", bundle: 'pro' },
-        { q: "I'd rather wait and see if they open.", a: "They're waiting too. That's why nothing is happening.", bundle: 'pro' },
-        { q: "It's not my job to make this less awkward.", a: "It isn't. It's just within your power, which is different.", bundle: 'pro' },
-        { q: "I never know what to say first.", a: "\"I don't know anyone here\" is enough, and it's always true when it's true.", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "A Missed Joke Is Cheap",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
-      description: "People avoid humour with strangers because a joke that fails feels like a small public failure. It is worth measuring what actually happens: a half-smile, two seconds of nothing, and a conversation that continues.\n\nWhat makes it expensive is the response — explaining it, repeating it, apologising at length. Left alone, a missed joke evaporates.\n\nMindset: say it, and if it misses, carry on as though it did not.",
-      inputs: [
-        { q: "What if the joke doesn't land?", a: "Then nothing happens, and you say something plain instead.", bundle: 'pro' },
-        { q: "They'll think I'm trying too hard.", a: "One light remark about a queue is not trying hard.", bundle: 'pro' },
-        { q: "I'm not funny.", a: "You don't need to be funny. You need to say the obvious thing everyone's thinking.", bundle: 'pro' },
-        { q: "I should explain what I meant.", a: "That's the only thing that turns a missed joke into an awkward one.", bundle: 'pro' },
-        { q: "I'll wait until I know them better.", a: "The queue joke is how you get to know them. It doesn't work in reverse.", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Small Feelings, Not Big Ones",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
-      description: "Saying how you feel is powerful precisely because it is small. \"I'm nervous about this\" invites a matching admission; something much larger invites concern, and concern is a different kind of conversation that a stranger did not sign up for.\n\nThe rule is easy to apply: if it would need explaining, it is too big for an opener. That is not a rule about hiding things — it is about what a first conversation can hold.\n\nMindset: current, small, about this room.",
-      inputs: [
-        { q: "If I'm being honest I should say the whole thing.", a: "Honest doesn't mean complete. \"It's been a long week\" is entirely honest.", bundle: 'pro' },
-        { q: "Small feelings seem too trivial to mention.", a: "They're the ones other people can match. That's what makes them work.", bundle: 'pro' },
-        { q: "I don't want to seem like I'm complaining.", a: "One sentence about being tired isn't complaining. Five minutes is.", bundle: 'pro' },
-        { q: "They'll think I'm oversharing.", a: "Not at this size. Oversharing starts where the explaining starts.", bundle: 'pro' },
-        { q: "Nobody wants to hear that I'm nervous.", a: "Half the room is nervous and wishing someone would say so.", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "The Real Reason Works Best",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
-      description: "When people finally approach someone, they often reach for a pretext — a question they do not need answered, a comment they do not mean. It feels safer than saying why they actually came over.\n\nBut the pretext is usually visible, and the true reason is almost always more disarming. \"I don't know anybody here\" is not a confession of failure; it is the most ordinary sentence in the world, and it makes the other person relax.\n\nMindset: awkward and true beats smooth and invented.",
-      inputs: [
-        { q: "I need a reason to go over there.", a: "\"I don't know anyone here\" is a reason, and it happens to be true.", bundle: 'pro' },
-        { q: "Admitting I'm alone makes me look like a loser.", a: "It makes you look like someone at an event. Which is what everyone there is.", bundle: 'pro' },
-        { q: "I'll think of a question to ask as an excuse.", a: "You could. The true version is shorter and works better.", bundle: 'pro' },
-        { q: "Saying \"I've been meaning to say hello\" sounds odd after this long.", a: "It sounds like relief. They've been thinking it too.", bundle: 'pro' },
-        { q: "It's embarrassing to admit I find this hard.", a: "Almost everyone does, and the one who says it is the one people warm to.", bundle: 'pro' },
-      ]
-    },
-  ],
   apologizing2: [
     {
       name: "Sorry Comes After Understanding",
@@ -536,60 +482,6 @@ const mindsetCollections = {
         { q: "They said it's fine but I don't think they mean it.", a: "Ask once, plainly. Then take the answer.", bundle: 'pro' },
         { q: "I feel terrible and I want to say so.", a: "One sentence. Then stop, so they don't have to look after you.", bundle: 'pro' },
         { q: "It'd be cold to just say it and move on.", a: "Clear and specific isn't cold. Prolonged is what becomes uncomfortable.", bundle: 'pro' },
-      ]
-    },
-  ],
-  startingconversations2: [
-    {
-      name: "Being Asked Is a Compliment",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
-      description: "Most people avoid asking for small favours because it feels like an imposition — as though a stranger's time were being taken. But being asked for something small is one of the more pleasant things that happens in an ordinary day. You are treated as competent, trusted or knowledgeable, and it takes four seconds.\n\nWatch what happens when someone asks you. You almost certainly do not resent it.\n\nMindset: a small request is a gift as often as it is a cost.",
-      inputs: [
-        { q: "I don't want to bother them.", a: "A four-second favour isn't a bother. Think how you feel when someone asks you.", bundle: 'pro' },
-        { q: "I should be able to work this out myself.", a: "Probably. Asking is also how conversations start.", bundle: 'pro' },
-        { q: "They're busy, it's not fair to ask.", a: "Then ask something that takes four seconds and thank them properly.", bundle: 'pro' },
-        { q: "I'll look incompetent.", a: "You'll look like someone who asks rather than stands there guessing.", bundle: 'pro' },
-        { q: "They might say no.", a: "Then they say no, and you have lost nothing at all.", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Say the Useful Thing",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
-      description: "People notice a broken machine, a shorter queue, a locked door — and say nothing, because speaking to a stranger feels like more of an event than staying quiet does.\n\nBut offering information is the least intrusive thing you can do. It has an obvious reason, it costs them nothing, and even when it goes no further you have made someone's next ten minutes easier.\n\nMindset: if you know something they would want to know, that is reason enough to speak.",
-      inputs: [
-        { q: "They'll probably work it out themselves.", a: "Probably, in ten minutes. You could save them the ten minutes.", bundle: 'pro' },
-        { q: "It's not my business to interfere.", a: "Telling someone a door is locked isn't interfering.", bundle: 'pro' },
-        { q: "They might already know.", a: "Then they say \"oh, thanks\" and you've lost two seconds.", bundle: 'pro' },
-        { q: "It feels like showing off that I know.", a: "It feels like that from inside. From outside it's just helpful.", bundle: 'pro' },
-        { q: "I'd have to go over there to say it.", a: "Yes. That's the whole thing you're practising.", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Remembering Is the Whole Gift",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
-      description: "People consistently underestimate what it does to be asked a specific question about their own life. Not \"how are you\" but \"how did Thursday go\" — the second one says you were listening, and that you thought about them at some point when they were not there.\n\nIt is a small effort with an unusually large return, and it is the opener people most often skip in favour of a greeting.\n\nMindset: if you remember something, use it. That is what remembering is for.",
-      inputs: [
-        { q: "They probably don't want to be asked about it.", a: "Most people very much do. Being remembered is rare enough to be noticeable.", bundle: 'pro' },
-        { q: "It was weeks ago, it'd be odd to bring up.", a: "\"You mentioned this a while back\" covers that entirely.", bundle: 'pro' },
-        { q: "I might have the details wrong.", a: "Then ask loosely. Getting it half right still shows you listened.", bundle: 'pro' },
-        { q: "A general \"how are you\" is easier.", a: "It is, and it gets \"fine\". That's the trade you're making.", bundle: 'pro' },
-        { q: "I don't want to seem like I've been thinking about them.", a: "You listened once. That's all it shows, and it's a good thing to show.", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "You Need Something Real",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
-      description: "Every opener in this pack depends on something being true — a genuine request, a genuine piece of information, a shared thing that actually happened, a thread you actually remember. That is what makes them work, and it is also their limit.\n\nWhen none of them is true, the honest move is not to manufacture one. It is to use a plainer opener, or to say nothing. Manufactured common ground is easy to spot and worse than a simple hello.\n\nMindset: use the opener that is true. If none is, there are simpler ones.",
-      inputs: [
-        { q: "I'll invent a question so I've got a reason to talk to them.", a: "Or just say hello. It's more honest and it works better.", bundle: 'pro' },
-        { q: "We must have something in common I can use.", a: "You're in the same room. Sometimes that's genuinely all there is, and it's enough.", bundle: 'pro' },
-        { q: "A made-up reason is better than no reason.", a: "It isn't. People hear the difference, even if they can't name it.", bundle: 'pro' },
-        { q: "I need a better opener than \"hi\".", a: "You don't. You need to say something, and \"hi\" is something.", bundle: 'pro' },
-        { q: "If I can't find common ground I shouldn't approach.", a: "Common ground is usually built in the conversation, not before it.", bundle: 'pro' },
       ]
     },
   ],
@@ -2251,60 +2143,6 @@ const mindsetCollections = {
       ]
     },
   ],
-  responsivehumour: [
-    {
-      name: "You Do Not Need Material",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
-      description: "The belief that funny people arrive with something — stories,\nlines, a stock of jokes — and that having none of that is why you are quiet.\n\nAlmost none of the humour in ordinary conversation works that way. It is\nbuilt out of the sentence that was just said, in the second after it was said,\nby someone doing one of about five things to it.\n\nMindset: you are not supposed to bring anything. Their sentence is the\nmaterial.",
-      inputs: [
-        { q: "I'm just not a funny person.", a: "You've never had to be. You've had to notice a sentence and bend it.", bundle: 'pro' },
-        { q: "I can never think of anything.", a: "Because you're looking for something new. Look at what they just said instead.", bundle: 'pro' },
-        { q: "Funny people have better lives to talk about.", a: "This pack is built on white walls and rain. That's the point.", bundle: 'pro' },
-        { q: "I think of the good line ten minutes later.", a: "Everyone does. The five moves are for the first ten seconds instead.", bundle: 'pro' },
-        { q: "I'd need to be quicker.", a: "You'd need one move. Exaggeration works on almost anything and nobody minds a slow one.", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Short Is Funnier",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
-      description: "The instinct to keep going — to add the second half, the\nexplanation, the bit that makes sure they got it.\n\nEvery one of those is a subtraction. The response works because it is quick\nenough to feel effortless; a long one announces that you are performing, and\nnow it has to be worth the wait.\n\nMindset: four words beats fourteen. Stop before you want to.",
-      inputs: [
-        { q: "They might not get it.", a: "If they don't, it costs four seconds. If you explain, it costs more.", bundle: 'pro' },
-        { q: "It needs a bit more setup.", a: "Then it's a story, not a response. Save it and answer them instead.", bundle: 'pro' },
-        { q: "I'll add one more thing to make it land.", a: "The one more thing is what stops it landing.", bundle: 'pro' },
-        { q: "A longer joke is a better joke.", a: "On a stage, sometimes. In a kitchen, never.", bundle: 'pro' },
-        { q: "I trailed off at the end.", a: "Land on the last word and stop. The silence afterwards is theirs.", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Never Explain It",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
-      description: "The urge to rescue a joke that did not land — to say it again,\nto point out the pun, to describe why it was funny.\n\nThe rescue is what people remember, not the miss. A joke nobody noticed is\nforgotten within seconds; a joke that was explained is a small awkwardness\neveryone in the room now shares.\n\nMindset: let it go. The next opening is a minute away.",
-      inputs: [
-        { q: "They didn't get it.", a: "Fine. Answer what they said and carry on.", bundle: 'pro' },
-        { q: "If I explain it they'll laugh.", a: "They'll do something. It won't be laughing.", bundle: 'pro' },
-        { q: "I want them to know I was joking.", a: "One flat line: \"that was me agreeing, badly.\" Then stop.", bundle: 'pro' },
-        { q: "I'll try the same joke again with better timing.", a: "The second run is always worse. Wait for a new sentence.", bundle: 'pro' },
-        { q: "It's embarrassing to be ignored.", a: "For you, for four seconds. Nobody else has noticed.", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Aim at the Situation, Not the Person",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
-      description: "The line between this pack and being unkind, and it is not a\nvague one. Humour aimed at the weather, the queue, the timetable or at\nyourself is free. Humour aimed at a person costs them something.\n\nThe test is whether the joke needs them to be a good sport. If it does, it is\nat their expense, and that is a different skill with different rules — it needs\nan established friendship, not a technique.\n\nMindset: the situation, their sentence, or yourself. Those three are safe with\nanyone.",
-      inputs: [
-        { q: "They can take a joke.", a: "Maybe. But needing them to is the tell.", bundle: 'pro' },
-        { q: "It's obviously affectionate.", a: "To you. Warmth doesn't always survive the trip.", bundle: 'pro' },
-        { q: "Everyone else is doing it.", a: "To each other, with years behind it. You've had four minutes.", bundle: 'pro' },
-        { q: "Self-deprecation is boring.", a: "It's also the only target that can't complain, which makes it useful.", bundle: 'pro' },
-        { q: "The joke's about their thing, not them.", a: "Then shrink the thing and leave them out of it entirely.", bundle: 'pro' },
-      ]
-    },
-  ],
   masculine1: [
     {
       name: "She is your Oracle",
@@ -3815,6 +3653,72 @@ const mindsetCollections = {
       ]
     },
   ],
+  talkingaboutyourself: [
+    {
+      name: "Just Being Polite",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"They only asked to be polite. It would be greedy to actually answer.\"\n\n**What is true instead:** a question is an offer, and taking someone up on it is the polite thing rather than the greedy one.\n\n**Why it feels right:** some questions are formalities, and answering a corridor \"how are you\" with four minutes is a real mistake. It is a good rule applied far too widely.\n\n**What it costs:** the four-word answer teaches them you would rather not be asked. They stop asking, which seems to prove the belief.\n\nMindset: a question is an offer. Take it.",
+      inputs: [
+        { q: "They're only asking to be polite.", a: "Maybe. Answer properly and find out — that's how the polite version becomes a real one.", bundle: 'pro' },
+        { q: "They don't want to hear about my week.", a: "They asked about your week. Start there and watch what happens.", bundle: 'pro' },
+        { q: "I'd be taking up their time.", a: "One detail is four seconds. The awkward pause after \"fine\" is longer.", bundle: 'pro' },
+        { q: "They'll ask again if they really want to know.", a: "They won't. Two closed answers and most people conclude you'd rather not.", bundle: 'pro' },
+        { q: "It's more polite to ask them back straight away.", a: "Answer first, then ask. Otherwise they're carrying the whole conversation.", bundle: 'pro' },
+        { q: "Nobody actually wants to hear the answer to \"how are you\".", a: "Some don't. The ones who stopped walking do.", bundle: 'pro' },
+        { q: "I'd be making it about me.", a: "They aimed the question at you. Answering it isn't a hijack.", bundle: 'pro' },
+        { q: "If I answer properly it'll be a whole thing.", a: "One sentence isn't a whole thing. You get to choose the size.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Bar for an Answer",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"An ordinary week isn't worth reporting. I need something better.\"\n\n**What is true instead:** the standard is true and specific, not interesting. They are finding out what you are like, and a detail does that better than scale.\n\n**Why it feels right:** other people's answers sound better than yours. What you have not noticed is how ordinary their content was.\n\n**What it costs:** the search for something impressive is what produces the pause, and then \"not much\".\n\nMindset: the standard is true and specific. Nobody has ever been bored by a detail.",
+      inputs: [
+        { q: "Nothing interesting has happened to me.", a: "The wardrobe, the bike, the terrible series. Ordinary and specific is the whole trick.", bundle: 'pro' },
+        { q: "My life sounds dull said out loud.", a: "Said vaguely, everyone's does. Said specifically, almost nobody's does.", bundle: 'pro' },
+        { q: "They've got much better stories.", a: "They're not stories. They're just details, and you have exactly as many as they do.", bundle: 'pro' },
+        { q: "I should have something better to say.", a: "Better than true? There isn't a category above that one.", bundle: 'pro' },
+        { q: "I'll wait until I've got something worth telling.", a: "You'll wait a long time, and be quiet the whole way.", bundle: 'pro' },
+        { q: "They'll think my week sounds sad.", a: "Vague weeks sound sad. Specific ones sound like a person.", bundle: 'pro' },
+        { q: "I need to make this sound better than it was.", a: "The inflated version is the one that falls flat. It's the only one they can hear you doing.", bundle: 'pro' },
+        { q: "There's nothing in my week they could possibly ask about.", a: "Name one object you touched. That's the handle.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Always the Asker",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"I'd rather hear about them. I'm just a good listener.\"\n\n**What is true instead:** asking is half of it. People become close by taking turns at being known, and being listened to is something you are allowed as well.\n\n**Why it feels right:** it is genuinely more comfortable, it is genuinely generous, and it is genuinely a strength. All of that is true, which is exactly what makes it such an effective place to hide.\n\n**What it costs:** someone who only ever asks is unknowable, however warm they are. The friendship stalls at a certain depth and neither person can say why.\n\nMindset: asking is half of it. Being answerable is the other half.",
+      inputs: [
+        { q: "I'd rather hear about them.", a: "Usually true, and it's also the most comfortable place to hide.", bundle: 'pro' },
+        { q: "I'm just a good listener.", a: "You are. Being listened to is a thing you're allowed as well.", bundle: 'pro' },
+        { q: "They don't need to know all that about me.", a: "Not all of it. Some of it is how this becomes a friendship rather than a habit.", bundle: 'pro' },
+        { q: "Talking about myself feels self-indulgent.", a: "It's how they get to know you. That's not indulgence, it's your half of the work.", bundle: 'pro' },
+        { q: "I've never been the sort who opens up.", a: "One detail at a time is how everyone who does it started.", bundle: 'pro' },
+        { q: "Asking questions is what I'm good at.", a: "It is. It's also a very effective way of never being asked one.", bundle: 'pro' },
+        { q: "They haven't asked, so they don't want to know.", a: "You've trained them not to. Go first once and see.", bundle: 'pro' },
+        { q: "If I start talking about myself I won't know when to stop.", a: "One detail, then hand it back. The rule is the same as it is for them.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "All or Nothing",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Being honest means telling them everything. So it's either guarded or wide open.\"\n\n**What is true instead:** conversations get deeper in steps, taken by both people. One level below what they offered is honest, not a half-measure.\n\n**Why it feels right:** the extremes are easier to execute. Reading what somebody offered is a judgement, and judgements can be got wrong.\n\n**What it costs:** both failures at once — too little with the people who matter, and far too much with someone met an hour ago.\n\nMindset: one step below what they gave. Not five, and not none.",
+      inputs: [
+        { q: "If I'm going to be honest I should say all of it.", a: "Honest and complete aren't the same. One step below their level is honest.", bundle: 'pro' },
+        { q: "They shared something big so I should match it exactly.", a: "Or say you're listening rather than trading. That's a match too.", bundle: 'pro' },
+        { q: "Holding anything back is a kind of lying.", a: "It's timing. The rest is still available next month.", bundle: 'pro' },
+        { q: "I told them too much and now it's strange.", a: "Say so lightly and carry on. \"That was more than I meant to say\" fixes most of it.", bundle: 'pro' },
+        { q: "They gave me a light answer, so they don't like me.", a: "They gave you a corridor answer to a corridor question. That's all it means.", bundle: 'pro' },
+        { q: "I don't know how deep is too deep.", a: "Look at what they just gave you. One step under that.", bundle: 'pro' },
+        { q: "If I don't say it now I never will.", a: "You will. This isn't the last conversation you'll ever have with them.", bundle: 'pro' },
+        { q: "Being guarded is safer than getting it wrong.", a: "Safer, and it costs you every friendship that would have gone further.", bundle: 'pro' },
+      ]
+    },
+  ],
   startingconversations1: [
     {
       name: "The Bar You Set",
@@ -3881,69 +3785,165 @@ const mindsetCollections = {
       ]
     },
   ],
-  talkingaboutyourself: [
+  startingconversations2: [
     {
-      name: "Just Being Polite",
-      guideFront: "A limiting thought",
-      guideBack: "A way to reset it",
-      description: "\"They only asked to be polite. It would be greedy to actually answer.\"\n\n**What is true instead:** a question is an offer, and taking someone up on it is the polite thing rather than the greedy one.\n\n**Why it feels right:** some questions are formalities, and answering a corridor \"how are you\" with four minutes is a real mistake. It is a good rule applied far too widely.\n\n**What it costs:** the four-word answer teaches them you would rather not be asked. They stop asking, which seems to prove the belief.\n\nMindset: a question is an offer. Take it.",
+      name: "Being Asked Is a Compliment",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "Most people avoid asking for small favours because it feels like an imposition — as though a stranger's time were being taken. But being asked for something small is one of the more pleasant things that happens in an ordinary day. You are treated as competent, trusted or knowledgeable, and it takes four seconds.\n\nWatch what happens when someone asks you. You almost certainly do not resent it.\n\nMindset: a small request is a gift as often as it is a cost.",
       inputs: [
-        { q: "They're only asking to be polite.", a: "Maybe. Answer properly and find out — that's how the polite version becomes a real one.", bundle: 'pro' },
-        { q: "They don't want to hear about my week.", a: "They asked about your week. Start there and watch what happens.", bundle: 'pro' },
-        { q: "I'd be taking up their time.", a: "One detail is four seconds. The awkward pause after \"fine\" is longer.", bundle: 'pro' },
-        { q: "They'll ask again if they really want to know.", a: "They won't. Two closed answers and most people conclude you'd rather not.", bundle: 'pro' },
-        { q: "It's more polite to ask them back straight away.", a: "Answer first, then ask. Otherwise they're carrying the whole conversation.", bundle: 'pro' },
-        { q: "Nobody actually wants to hear the answer to \"how are you\".", a: "Some don't. The ones who stopped walking do.", bundle: 'pro' },
-        { q: "I'd be making it about me.", a: "They aimed the question at you. Answering it isn't a hijack.", bundle: 'pro' },
-        { q: "If I answer properly it'll be a whole thing.", a: "One sentence isn't a whole thing. You get to choose the size.", bundle: 'pro' },
+        { q: "I don't want to bother them.", a: "A four-second favour isn't a bother. Think how you feel when someone asks you.", bundle: 'pro' },
+        { q: "I should be able to work this out myself.", a: "Probably. Asking is also how conversations start.", bundle: 'pro' },
+        { q: "They're busy, it's not fair to ask.", a: "Then ask something that takes four seconds and thank them properly.", bundle: 'pro' },
+        { q: "I'll look incompetent.", a: "You'll look like someone who asks rather than stands there guessing.", bundle: 'pro' },
+        { q: "They might say no.", a: "Then they say no, and you have lost nothing at all.", bundle: 'pro' },
       ]
     },
     {
-      name: "The Bar for an Answer",
-      guideFront: "A limiting thought",
-      guideBack: "A way to reset it",
-      description: "\"An ordinary week isn't worth reporting. I need something better.\"\n\n**What is true instead:** the standard is true and specific, not interesting. They are finding out what you are like, and a detail does that better than scale.\n\n**Why it feels right:** other people's answers sound better than yours. What you have not noticed is how ordinary their content was.\n\n**What it costs:** the search for something impressive is what produces the pause, and then \"not much\".\n\nMindset: the standard is true and specific. Nobody has ever been bored by a detail.",
+      name: "Say the Useful Thing",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "People notice a broken machine, a shorter queue, a locked door — and say nothing, because speaking to a stranger feels like more of an event than staying quiet does.\n\nBut offering information is the least intrusive thing you can do. It has an obvious reason, it costs them nothing, and even when it goes no further you have made someone's next ten minutes easier.\n\nMindset: if you know something they would want to know, that is reason enough to speak.",
       inputs: [
-        { q: "Nothing interesting has happened to me.", a: "The wardrobe, the bike, the terrible series. Ordinary and specific is the whole trick.", bundle: 'pro' },
-        { q: "My life sounds dull said out loud.", a: "Said vaguely, everyone's does. Said specifically, almost nobody's does.", bundle: 'pro' },
-        { q: "They've got much better stories.", a: "They're not stories. They're just details, and you have exactly as many as they do.", bundle: 'pro' },
-        { q: "I should have something better to say.", a: "Better than true? There isn't a category above that one.", bundle: 'pro' },
-        { q: "I'll wait until I've got something worth telling.", a: "You'll wait a long time, and be quiet the whole way.", bundle: 'pro' },
-        { q: "They'll think my week sounds sad.", a: "Vague weeks sound sad. Specific ones sound like a person.", bundle: 'pro' },
-        { q: "I need to make this sound better than it was.", a: "The inflated version is the one that falls flat. It's the only one they can hear you doing.", bundle: 'pro' },
-        { q: "There's nothing in my week they could possibly ask about.", a: "Name one object you touched. That's the handle.", bundle: 'pro' },
+        { q: "They'll probably work it out themselves.", a: "Probably, in ten minutes. You could save them the ten minutes.", bundle: 'pro' },
+        { q: "It's not my business to interfere.", a: "Telling someone a door is locked isn't interfering.", bundle: 'pro' },
+        { q: "They might already know.", a: "Then they say \"oh, thanks\" and you've lost two seconds.", bundle: 'pro' },
+        { q: "It feels like showing off that I know.", a: "It feels like that from inside. From outside it's just helpful.", bundle: 'pro' },
+        { q: "I'd have to go over there to say it.", a: "Yes. That's the whole thing you're practising.", bundle: 'pro' },
       ]
     },
     {
-      name: "Always the Asker",
-      guideFront: "A limiting thought",
-      guideBack: "A way to reset it",
-      description: "\"I'd rather hear about them. I'm just a good listener.\"\n\n**What is true instead:** asking is half of it. People become close by taking turns at being known, and being listened to is something you are allowed as well.\n\n**Why it feels right:** it is genuinely more comfortable, it is genuinely generous, and it is genuinely a strength. All of that is true, which is exactly what makes it such an effective place to hide.\n\n**What it costs:** someone who only ever asks is unknowable, however warm they are. The friendship stalls at a certain depth and neither person can say why.\n\nMindset: asking is half of it. Being answerable is the other half.",
+      name: "Remembering Is the Whole Gift",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "People consistently underestimate what it does to be asked a specific question about their own life. Not \"how are you\" but \"how did Thursday go\" — the second one says you were listening, and that you thought about them at some point when they were not there.\n\nIt is a small effort with an unusually large return, and it is the opener people most often skip in favour of a greeting.\n\nMindset: if you remember something, use it. That is what remembering is for.",
       inputs: [
-        { q: "I'd rather hear about them.", a: "Usually true, and it's also the most comfortable place to hide.", bundle: 'pro' },
-        { q: "I'm just a good listener.", a: "You are. Being listened to is a thing you're allowed as well.", bundle: 'pro' },
-        { q: "They don't need to know all that about me.", a: "Not all of it. Some of it is how this becomes a friendship rather than a habit.", bundle: 'pro' },
-        { q: "Talking about myself feels self-indulgent.", a: "It's how they get to know you. That's not indulgence, it's your half of the work.", bundle: 'pro' },
-        { q: "I've never been the sort who opens up.", a: "One detail at a time is how everyone who does it started.", bundle: 'pro' },
-        { q: "Asking questions is what I'm good at.", a: "It is. It's also a very effective way of never being asked one.", bundle: 'pro' },
-        { q: "They haven't asked, so they don't want to know.", a: "You've trained them not to. Go first once and see.", bundle: 'pro' },
-        { q: "If I start talking about myself I won't know when to stop.", a: "One detail, then hand it back. The rule is the same as it is for them.", bundle: 'pro' },
+        { q: "They probably don't want to be asked about it.", a: "Most people very much do. Being remembered is rare enough to be noticeable.", bundle: 'pro' },
+        { q: "It was weeks ago, it'd be odd to bring up.", a: "\"You mentioned this a while back\" covers that entirely.", bundle: 'pro' },
+        { q: "I might have the details wrong.", a: "Then ask loosely. Getting it half right still shows you listened.", bundle: 'pro' },
+        { q: "A general \"how are you\" is easier.", a: "It is, and it gets \"fine\". That's the trade you're making.", bundle: 'pro' },
+        { q: "I don't want to seem like I've been thinking about them.", a: "You listened once. That's all it shows, and it's a good thing to show.", bundle: 'pro' },
       ]
     },
     {
-      name: "All or Nothing",
-      guideFront: "A limiting thought",
-      guideBack: "A way to reset it",
-      description: "\"Being honest means telling them everything. So it's either guarded or wide open.\"\n\n**What is true instead:** conversations get deeper in steps, taken by both people. One level below what they offered is honest, not a half-measure.\n\n**Why it feels right:** the extremes are easier to execute. Reading what somebody offered is a judgement, and judgements can be got wrong.\n\n**What it costs:** both failures at once — too little with the people who matter, and far too much with someone met an hour ago.\n\nMindset: one step below what they gave. Not five, and not none.",
+      name: "You Need Something Real",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "Every opener in this pack depends on something being true — a genuine request, a genuine piece of information, a shared thing that actually happened, a thread you actually remember. That is what makes them work, and it is also their limit.\n\nWhen none of them is true, the honest move is not to manufacture one. It is to use a plainer opener, or to say nothing. Manufactured common ground is easy to spot and worse than a simple hello.\n\nMindset: use the opener that is true. If none is, there are simpler ones.",
       inputs: [
-        { q: "If I'm going to be honest I should say all of it.", a: "Honest and complete aren't the same. One step below their level is honest.", bundle: 'pro' },
-        { q: "They shared something big so I should match it exactly.", a: "Or say you're listening rather than trading. That's a match too.", bundle: 'pro' },
-        { q: "Holding anything back is a kind of lying.", a: "It's timing. The rest is still available next month.", bundle: 'pro' },
-        { q: "I told them too much and now it's strange.", a: "Say so lightly and carry on. \"That was more than I meant to say\" fixes most of it.", bundle: 'pro' },
-        { q: "They gave me a light answer, so they don't like me.", a: "They gave you a corridor answer to a corridor question. That's all it means.", bundle: 'pro' },
-        { q: "I don't know how deep is too deep.", a: "Look at what they just gave you. One step under that.", bundle: 'pro' },
-        { q: "If I don't say it now I never will.", a: "You will. This isn't the last conversation you'll ever have with them.", bundle: 'pro' },
-        { q: "Being guarded is safer than getting it wrong.", a: "Safer, and it costs you every friendship that would have gone further.", bundle: 'pro' },
+        { q: "I'll invent a question so I've got a reason to talk to them.", a: "Or just say hello. It's more honest and it works better.", bundle: 'pro' },
+        { q: "We must have something in common I can use.", a: "You're in the same room. Sometimes that's genuinely all there is, and it's enough.", bundle: 'pro' },
+        { q: "A made-up reason is better than no reason.", a: "It isn't. People hear the difference, even if they can't name it.", bundle: 'pro' },
+        { q: "I need a better opener than \"hi\".", a: "You don't. You need to say something, and \"hi\" is something.", bundle: 'pro' },
+        { q: "If I can't find common ground I shouldn't approach.", a: "Common ground is usually built in the conversation, not before it.", bundle: 'pro' },
+      ]
+    },
+  ],
+  startingconversations4: [
+    {
+      name: "Somebody Has to Go First",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "In almost every room, several people are waiting for someone else to say the thing. Whoever admits to being nervous, makes the joke about the queue, or says they know nobody here is not exposing themselves — they are doing the thing everyone was hoping somebody would do.\n\nThat is the whole logic of this pack. Going first costs you a few seconds of risk and buys the other person permission.\n\nMindset: the exposure is real and it is brief. What it buys is not.",
+      inputs: [
+        { q: "Why should it be me who breaks the silence?", a: "Because everyone else is asking the same question. Somebody has to answer it.", bundle: 'pro' },
+        { q: "If I go first and it fails I'll look stupid.", a: "For a moment, to one person, who'll have forgotten by the bus home.", bundle: 'pro' },
+        { q: "I'd rather wait and see if they open.", a: "They're waiting too. That's why nothing is happening.", bundle: 'pro' },
+        { q: "It's not my job to make this less awkward.", a: "It isn't. It's just within your power, which is different.", bundle: 'pro' },
+        { q: "I never know what to say first.", a: "\"I don't know anyone here\" is enough, and it's always true when it's true.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "A Missed Joke Is Cheap",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "People avoid humour with strangers because a joke that fails feels like a small public failure. It is worth measuring what actually happens: a half-smile, two seconds of nothing, and a conversation that continues.\n\nWhat makes it expensive is the response — explaining it, repeating it, apologising at length. Left alone, a missed joke evaporates.\n\nMindset: say it, and if it misses, carry on as though it did not.",
+      inputs: [
+        { q: "What if the joke doesn't land?", a: "Then nothing happens, and you say something plain instead.", bundle: 'pro' },
+        { q: "They'll think I'm trying too hard.", a: "One light remark about a queue is not trying hard.", bundle: 'pro' },
+        { q: "I'm not funny.", a: "You don't need to be funny. You need to say the obvious thing everyone's thinking.", bundle: 'pro' },
+        { q: "I should explain what I meant.", a: "That's the only thing that turns a missed joke into an awkward one.", bundle: 'pro' },
+        { q: "I'll wait until I know them better.", a: "The queue joke is how you get to know them. It doesn't work in reverse.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Small Feelings, Not Big Ones",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "Saying how you feel is powerful precisely because it is small. \"I'm nervous about this\" invites a matching admission; something much larger invites concern, and concern is a different kind of conversation that a stranger did not sign up for.\n\nThe rule is easy to apply: if it would need explaining, it is too big for an opener. That is not a rule about hiding things — it is about what a first conversation can hold.\n\nMindset: current, small, about this room.",
+      inputs: [
+        { q: "If I'm being honest I should say the whole thing.", a: "Honest doesn't mean complete. \"It's been a long week\" is entirely honest.", bundle: 'pro' },
+        { q: "Small feelings seem too trivial to mention.", a: "They're the ones other people can match. That's what makes them work.", bundle: 'pro' },
+        { q: "I don't want to seem like I'm complaining.", a: "One sentence about being tired isn't complaining. Five minutes is.", bundle: 'pro' },
+        { q: "They'll think I'm oversharing.", a: "Not at this size. Oversharing starts where the explaining starts.", bundle: 'pro' },
+        { q: "Nobody wants to hear that I'm nervous.", a: "Half the room is nervous and wishing someone would say so.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Real Reason Works Best",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "When people finally approach someone, they often reach for a pretext — a question they do not need answered, a comment they do not mean. It feels safer than saying why they actually came over.\n\nBut the pretext is usually visible, and the true reason is almost always more disarming. \"I don't know anybody here\" is not a confession of failure; it is the most ordinary sentence in the world, and it makes the other person relax.\n\nMindset: awkward and true beats smooth and invented.",
+      inputs: [
+        { q: "I need a reason to go over there.", a: "\"I don't know anyone here\" is a reason, and it happens to be true.", bundle: 'pro' },
+        { q: "Admitting I'm alone makes me look like a loser.", a: "It makes you look like someone at an event. Which is what everyone there is.", bundle: 'pro' },
+        { q: "I'll think of a question to ask as an excuse.", a: "You could. The true version is shorter and works better.", bundle: 'pro' },
+        { q: "Saying \"I've been meaning to say hello\" sounds odd after this long.", a: "It sounds like relief. They've been thinking it too.", bundle: 'pro' },
+        { q: "It's embarrassing to admit I find this hard.", a: "Almost everyone does, and the one who says it is the one people warm to.", bundle: 'pro' },
+      ]
+    },
+  ],
+  responsivehumour: [
+    {
+      name: "You Do Not Need Material",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The belief that funny people arrive with something — stories,\nlines, a stock of jokes — and that having none of that is why you are quiet.\n\nAlmost none of the humour in ordinary conversation works that way. It is\nbuilt out of the sentence that was just said, in the second after it was said,\nby someone doing one of about five things to it.\n\nMindset: you are not supposed to bring anything. Their sentence is the\nmaterial.",
+      inputs: [
+        { q: "I'm just not a funny person.", a: "You've never had to be. You've had to notice a sentence and bend it.", bundle: 'pro' },
+        { q: "I can never think of anything.", a: "Because you're looking for something new. Look at what they just said instead.", bundle: 'pro' },
+        { q: "Funny people have better lives to talk about.", a: "This pack is built on white walls and rain. That's the point.", bundle: 'pro' },
+        { q: "I think of the good line ten minutes later.", a: "Everyone does. The five moves are for the first ten seconds instead.", bundle: 'pro' },
+        { q: "I'd need to be quicker.", a: "You'd need one move. Exaggeration works on almost anything and nobody minds a slow one.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Short Is Funnier",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The instinct to keep going — to add the second half, the\nexplanation, the bit that makes sure they got it.\n\nEvery one of those is a subtraction. The response works because it is quick\nenough to feel effortless; a long one announces that you are performing, and\nnow it has to be worth the wait.\n\nMindset: four words beats fourteen. Stop before you want to.",
+      inputs: [
+        { q: "They might not get it.", a: "If they don't, it costs four seconds. If you explain, it costs more.", bundle: 'pro' },
+        { q: "It needs a bit more setup.", a: "Then it's a story, not a response. Save it and answer them instead.", bundle: 'pro' },
+        { q: "I'll add one more thing to make it land.", a: "The one more thing is what stops it landing.", bundle: 'pro' },
+        { q: "A longer joke is a better joke.", a: "On a stage, sometimes. In a kitchen, never.", bundle: 'pro' },
+        { q: "I trailed off at the end.", a: "Land on the last word and stop. The silence afterwards is theirs.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Never Explain It",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The urge to rescue a joke that did not land — to say it again,\nto point out the pun, to describe why it was funny.\n\nThe rescue is what people remember, not the miss. A joke nobody noticed is\nforgotten within seconds; a joke that was explained is a small awkwardness\neveryone in the room now shares.\n\nMindset: let it go. The next opening is a minute away.",
+      inputs: [
+        { q: "They didn't get it.", a: "Fine. Answer what they said and carry on.", bundle: 'pro' },
+        { q: "If I explain it they'll laugh.", a: "They'll do something. It won't be laughing.", bundle: 'pro' },
+        { q: "I want them to know I was joking.", a: "One flat line: \"that was me agreeing, badly.\" Then stop.", bundle: 'pro' },
+        { q: "I'll try the same joke again with better timing.", a: "The second run is always worse. Wait for a new sentence.", bundle: 'pro' },
+        { q: "It's embarrassing to be ignored.", a: "For you, for four seconds. Nobody else has noticed.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Aim at the Situation, Not the Person",
+      guideFront: "A thought that gets in the way.",
+      guideBack: "A way to reset it.",
+      description: "The line between this pack and being unkind, and it is not a\nvague one. Humour aimed at the weather, the queue, the timetable or at\nyourself is free. Humour aimed at a person costs them something.\n\nThe test is whether the joke needs them to be a good sport. If it does, it is\nat their expense, and that is a different skill with different rules — it needs\nan established friendship, not a technique.\n\nMindset: the situation, their sentence, or yourself. Those three are safe with\nanyone.",
+      inputs: [
+        { q: "They can take a joke.", a: "Maybe. But needing them to is the tell.", bundle: 'pro' },
+        { q: "It's obviously affectionate.", a: "To you. Warmth doesn't always survive the trip.", bundle: 'pro' },
+        { q: "Everyone else is doing it.", a: "To each other, with years behind it. You've had four minutes.", bundle: 'pro' },
+        { q: "Self-deprecation is boring.", a: "It's also the only target that can't complain, which makes it useful.", bundle: 'pro' },
+        { q: "The joke's about their thing, not them.", a: "Then shrink the thing and leave them out of it entirely.", bundle: 'pro' },
       ]
     },
   ],

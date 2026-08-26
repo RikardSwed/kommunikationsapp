@@ -419,73 +419,6 @@ const challengesCollections = {
       ]
     },
   ],
-  startingconversations4: [
-    {
-      name: "The Joke Misfires",
-      guideFront: "What makes this opening hard?",
-      guideBack: "A possible opener, with the strategy in brackets.",
-      description: "It lands flat, or it is taken literally, or it accidentally sounds like a criticism of something they said. All three feel much worse from the inside than they look from outside.\n\nThe recovery is always the same shape: short, unbothered, and onwards. Do not explain the joke, do not repeat it louder, and do not deliver a paragraph of apology — that is what turns a two-second miss into an awkward moment.\n\nMindset: acknowledge it in four words if at all, then say something plain.",
-      inputs: [
-        { q: "Your dry remark was taken completely seriously.", a: "\"Sorry, that was me being sarcastic badly. It is properly annoying, though.\" [Use Humour or Irony]", bundle: 'pro' },
-        { q: "The joke got nothing at all.", a: "\"Anyway — do you know if there's a break in this?\" [Mention Something That Happened]", bundle: 'pro' },
-        { q: "Your joke could be read as a dig at what they just said.", a: "\"That came out wrong — I meant the situation, not you.\" [Use Humour or Irony]", bundle: 'pro' },
-        { q: "You are about to explain why the joke was funny.", a: "\"Ignore me. Have you been to one of these before?\" [Mention Something That Happened]", bundle: 'pro' },
-        { q: "You made a joke about the event and they organised it.", a: "\"And now I find out you made it. I'll get my coat.\" [Use Humour or Irony]", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Irony Across a Language Gap",
-      guideFront: "What makes this opening hard?",
-      guideBack: "A possible opener, with the strategy in brackets.",
-      description: "Irony is the opener most likely to fail with someone whose first language is different from yours, or who comes from somewhere the dry register is not standard. Understatement in particular carries almost none of its meaning in the words.\n\nThe fix is not to avoid humour, but to make it visible: exaggeration travels far better than understatement, tone and face have to do more work, and if it does not land, say the plain version straight away without embarrassment.\n\nMindset: exaggeration crosses borders. Dryness often does not.",
-      inputs: [
-        { q: "You are about to use dry understatement with someone you have just met.", a: "\"I think we've been queueing so long I've developed a personality.\" [Use Humour or Irony]", bundle: 'pro' },
-        { q: "Your flat, ironic line was taken at face value.", a: "\"Sorry — joke. It is genuinely awful, though.\" [Use Humour or Irony]", bundle: 'pro' },
-        { q: "You are speaking with someone in their second language.", a: "\"This is the slowest queue in the country. Possibly Europe.\" [Use Humour or Irony]", bundle: 'pro' },
-        { q: "They look confused rather than amused.", a: "\"Ignore that. Have you been waiting long?\" [Mention Something That Happened]", bundle: 'pro' },
-        { q: "You want humour that cannot be misread.", a: "\"I've picked the slow queue again. Every single time.\" [Use Humour or Irony]", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "It Sounds Like Flirting",
-      guideFront: "What makes this opening hard?",
-      guideBack: "A possible opener, with the strategy in brackets.",
-      description: "\"I came over because I wanted to talk to you\" is a warm and honest sentence that can also read as interest of a different kind. That is fine when it is true and unwelcome when it is not.\n\nIf you do not intend it that way, anchor the reason in something outside the two of you — being new, knowing nobody, a specific thing they said. Reasons about the situation read as friendliness; reasons about them read as attraction.\n\nMindset: name the reason, and make it about the room rather than about them.",
-      inputs: [
-        { q: "You want to say why you came over without it being misread.", a: "\"I don't know anyone here, so I'm working my way round the room. I'm Rikard.\" [Say Why You Came Over]", bundle: 'pro' },
-        { q: "You want to compliment the reason without it being personal.", a: "\"You were the only other person taking notes, so I thought I'd risk it.\" [Say Why You Came Over]", bundle: 'pro' },
-        { q: "You realise your opener came out warmer than intended.", a: "\"That sounded odd — I mean I don't know a soul in here.\" [Say Why You Came Over]", bundle: 'pro' },
-        { q: "A colleague might read a personal approach as something else.", a: "\"I've been meaning to say hello since you joined. How's it going so far?\" [Say Why You Came Over]", bundle: 'pro' },
-        { q: "You do mean it that way and want to be honest but light.", a: "\"I'd have regretted not coming over, so — hello. I'm Rikard.\" [Say Why You Came Over]", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "You Have Said Too Much",
-      guideFront: "What makes this opening hard?",
-      guideBack: "A possible opener, with the strategy in brackets.",
-      description: "Saying how you feel works when it is small and current. It stops working when it turns out to be the top of something much larger, and the other person suddenly finds themselves holding it.\n\nIf you notice yourself going further than you meant, the fix is not to backtrack apologetically — that makes it heavier. Name it lightly, put it down, and offer them a way back to ordinary conversation.\n\nMindset: put it down without making a thing of putting it down.",
-      inputs: [
-        { q: "You have gone further than you meant with someone you just met.", a: "\"That got heavy quickly. Anyway — have you been here before?\" [Mention Something That Happened]", bundle: 'pro' },
-        { q: "You can see them looking for an exit.", a: "\"Sorry, long week. Ignore me.\" [Say How You Feel]", bundle: 'pro' },
-        { q: "You are about to say something too big for an opener.", a: "\"It's been a long week, put it that way.\" [Say How You Feel]", bundle: 'pro' },
-        { q: "They responded kindly but you feel exposed.", a: "\"Thanks. Right — tell me something more cheerful than that.\" [Mention Something That Happened]", bundle: 'pro' },
-        { q: "You want the small version of something big.", a: "\"I'm running on about four hours' sleep, so I'm not at my sharpest.\" [Say How You Feel]", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "The News Is Too Heavy",
-      guideFront: "What makes this opening hard?",
-      guideBack: "A possible opener, with the strategy in brackets.",
-      description: "Bringing something in from outside works when it is small. Major news — a disaster, something political, something genuinely upsetting — is a poor opener with a stranger, not because it does not matter but because you are asking them to have a position in front of someone they have just met.\n\nSave the weight for people you know. With a stranger, the wrong bus and the closed road do more work.\n\nMindset: an opener should be easy to answer. Heavy news is not.",
-      inputs: [
-        { q: "The big news of the week is on everyone's mind and you are about to raise it.", a: "\"Did you see they're digging up the high street again?\" [Mention Something That Happened]", bundle: 'pro' },
-        { q: "They raise something heavy and you do not want to debate it with a stranger.", a: "\"It's a lot, that whole thing. Have you come far today?\" [Mention Something That Happened]", bundle: 'pro' },
-        { q: "You want something with no weight at all.", a: "\"I got on the wrong bus this morning and didn't notice for four stops.\" [Mention Something That Happened]", bundle: 'pro' },
-        { q: "Something sad has happened locally and it would be strange not to mention it.", a: "\"Awful business this week. Everyone's a bit quiet, I think.\" [Say How You Feel]", bundle: 'pro' },
-        { q: "You started on something heavy and want to move on gracefully.", a: "\"Anyway. Not a topic for a Tuesday morning. Are you here for the whole day?\" [Mention Something That Happened]", bundle: 'pro' },
-      ]
-    },
-  ],
   apologizing2: [
     {
       name: "You Went Straight to Sorry",
@@ -550,73 +483,6 @@ const challengesCollections = {
         { q: "They keep saying it is fine and they seem to mean it.", a: "\"Then I'll take that. Sorry again and I'll shut up about it.\" [Say What You'll Do Differently]", bundle: 'pro' },
         { q: "You want to check whether it needs the full version.", a: "\"Is this a small thing or has it been sitting with you?\" [Name What They Felt]", bundle: 'pro' },
         { q: "It was your embarrassment rather than their injury.", a: "(say the short version, once, and move on) [Apologise for What You Did]", bundle: 'pro' },
-      ]
-    },
-  ],
-  startingconversations2: [
-    {
-      name: "You Do Not Actually Need Anything",
-      guideFront: "What makes this opening hard?",
-      guideBack: "A possible opener, with the strategy in brackets.",
-      description: "Asking for help works because the request is real. Invent one and it usually shows — the question is slightly too easy, or you do not listen properly to the answer, and the whole thing reads as a device.\n\nEither find something you genuinely do want to know, which is more often available than it seems, or switch to an opener that does not require a pretext.\n\nMindset: if you would not ask it with nobody around, do not ask it now.",
-      inputs: [
-        { q: "You want to talk to them but you know how the machine works.", a: "\"Busy in here tonight, isn't it.\" [Mention a Shared Experience]", bundle: 'pro' },
-        { q: "You are about to ask something you can obviously see the answer to.", a: "\"Is this seat taken?\" [Ask for Help]", bundle: 'pro' },
-        { q: "There is something you have genuinely wondered about this place.", a: "\"Do you know if it's always this busy on a Tuesday?\" [Ask for Help]", bundle: 'pro' },
-        { q: "You have nothing to ask but you do know something they might want.", a: "\"The far end's usually emptier, if you're looking for space.\" [Offer Something Useful]", bundle: 'pro' },
-        { q: "You have just realised your question was a pretext and they answered it seriously.", a: "\"Thanks — sorry, I think I did know that. It's been a long day.\" [Ask for Help]", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "The Offer Is Not Wanted",
-      guideFront: "What makes this opening hard?",
-      guideBack: "A possible opener, with the strategy in brackets.",
-      description: "Offering useful information is welcome; offering an opinion about what someone should do is not, and the line between them is easy to cross without noticing.\n\nThe test is whether the information is about the situation or about them. \"The other queue is shorter\" is about the situation. \"You'd be better off doing it a different way\" is about them, and it arrives as a correction.\n\nMindset: give facts about the place, not verdicts about the person.",
-      inputs: [
-        { q: "You are about to tell someone they are doing something the wrong way.", a: "\"That door sticks, by the way — you have to pull first.\" [Offer Something Useful]", bundle: 'pro' },
-        { q: "They have clearly chosen the slower option on purpose.", a: "\"Fair enough — I always take the other one, but that's habit.\" [Offer Something Useful]", bundle: 'pro' },
-        { q: "You offered a tip and they looked mildly irritated.", a: "\"Sorry, unsolicited advice. Ignore me.\" [Offer Something Useful]", bundle: 'pro' },
-        { q: "You want to help but they know more about this than you do.", a: "\"You've done this before, haven't you? Is there a trick I'm missing?\" [Ask for Help]", bundle: 'pro' },
-        { q: "You start to give advice about their life rather than the situation.", a: "\"None of my business, though. How's it going otherwise?\" [Pick Up a Shared Thread]", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "You Cannot Remember the Thread",
-      guideFront: "What makes this opening hard?",
-      guideBack: "A possible opener, with the strategy in brackets.",
-      description: "You know they told you something. You cannot remember whether it was a house move, a job interview or a hospital appointment, and asking about the wrong one would be worse than asking about nothing.\n\nAdmitting the gap works far better than people expect. \"You told me something last time and I have lost it\" is honest, mildly self-deprecating, and gets you the thread back from them.\n\nMindset: half-remembering and saying so beats pretending, and it beats saying nothing.",
-      inputs: [
-        { q: "You know something was going on but not what.", a: "\"You told me something last time and I've completely lost it. What was happening?\" [Pick Up a Shared Thread]", bundle: 'pro' },
-        { q: "You remember the topic but not the outcome.", a: "\"Did the house thing ever get sorted? I've lost track of where you got to.\" [Pick Up a Shared Thread]", bundle: 'pro' },
-        { q: "You are about to guess and might guess wrong.", a: "\"Refresh me — was it the interview or the move that was happening?\" [Pick Up a Shared Thread]", bundle: 'pro' },
-        { q: "You remember nothing at all about them.", a: "\"How's your week been? Properly, not the polite version.\" [Mention a Shared Experience]", bundle: 'pro' },
-        { q: "You realise mid-sentence you have mixed them up with someone else.", a: "\"That's someone else entirely, isn't it. Sorry. What have you been up to?\" [Pick Up a Shared Thread]", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "The Thread Might Be Painful",
-      guideFront: "What makes this opening hard?",
-      guideBack: "A possible opener, with the strategy in brackets.",
-      description: "Some ongoing things are difficult — an illness, a job that might have gone, a relationship, an application that may not have worked. Asking is usually right, because being asked is better than being avoided, but how you ask matters.\n\nLeave them a way out. A question with an easy exit lets them say \"fine, thanks\" and move on, and lets them say more if they want to. Do not ask across a room, and do not ask twice if the first answer was short.\n\nMindset: ask gently, once, and let their answer decide the size of the conversation.",
-      inputs: [
-        { q: "Someone was waiting on medical results.", a: "\"How have you been? You had things going on last time we spoke.\" [Pick Up a Shared Thread]", bundle: 'pro' },
-        { q: "You know they were at risk of losing a job.", a: "\"How did things land at work in the end? Only if you want to.\" [Pick Up a Shared Thread]", bundle: 'pro' },
-        { q: "They gave a very short answer and you were going to ask more.", a: "\"Fair enough. Are you around for the rest of the week?\" [Pick Up a Shared Thread]", bundle: 'pro' },
-        { q: "You are in a group and the thread is a private one.", a: "\"Good to see you — how was the weekend?\" [Mention a Shared Experience]", bundle: 'pro' },
-        { q: "They said it did not go well and you do not know what to say.", a: "\"That's rough. Do you want to talk about it or would you rather not?\" [Pick Up a Shared Thread]", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "The Shared Experience Was Bad",
-      guideFront: "What makes this opening hard?",
-      guideBack: "A possible opener, with the strategy in brackets.",
-      description: "Sometimes the thing you have both just been through was genuinely unpleasant rather than mildly annoying — a difficult meeting, bad news, someone being told off in front of everyone.\n\nThe light comment that works after a long queue does not work here. Either say something plainly and briefly, or say nothing and let the situation be what it is. The failure mode is jokey small talk over something that actually mattered.\n\nMindset: match the weight. If it was heavy, one honest sentence beats a light one.",
-      inputs: [
-        { q: "You have both come out of a meeting where bad news was announced.", a: "\"That was a lot to take in. Are you alright?\" [Mention a Shared Experience]", bundle: 'pro' },
-        { q: "Someone was criticised in front of the group and you were both there.", a: "\"That was uncomfortable to sit through. Are you okay?\" [Mention a Shared Experience]", bundle: 'pro' },
-        { q: "You want to acknowledge it without making them discuss it.", a: "\"Not the morning any of us wanted. I'm around if you want a coffee.\" [Offer Something Useful]", bundle: 'pro' },
-        { q: "You are about to make a joke about something that was not funny.", a: "\"That was grim, actually.\" [Mention a Shared Experience]", bundle: 'pro' },
-        { q: "They clearly do not want to talk about it.", a: "\"Say no more. Are you off after this?\" [Pick Up a Shared Thread]", bundle: 'pro' },
       ]
     },
   ],
@@ -2747,73 +2613,6 @@ const challengesCollections = {
       ]
     },
   ],
-  responsivehumour: [
-    {
-      name: "A Small Complaint",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
-      description: "The most common opening there is. Someone mentions a minor\nannoyance — the weather, the timetable, the neighbour, the queue — and what\nthey want is company, not a solution.\n\nExaggeration is the natural fit, because it says *I am on your side and this is\nnot serious*. Understatement does the same job in the opposite register and is\nbetter with people you do not know well.\n\nThe thing to avoid is the earnest reply. Answering a small complaint with real\nadvice makes it a bigger thing than they meant it to be.\n\nMindset: they are not asking for help. They are handing you a sentence.",
-      inputs: [
-        { q: "\"I couldn't sleep, my neighbour was making noise.\"", a: "\"Is your neighbour a marching band?\" [Exaggeration]", bundle: 'pro' },
-        { q: "\"The car broke down, then it rained.\"", a: "\"So the day has been going well.\" [Understatement]", bundle: 'pro' },
-        { q: "\"This room is too dark.\"", a: "\"It's saving the light for the afternoon shift.\" [Misdirection]", bundle: 'pro' },
-        { q: "\"I'm running out of time.\"", a: "\"Where does it go? Have you checked the sofa?\" [Deliberate Misunderstanding]", bundle: 'pro' },
-        { q: "\"It's raining again.\"", a: "\"Excellent. My favourite.\" [Irony]", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "They Are Pleased With Themselves",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
-      description: "Someone is mildly showing off — the fast computer, the\nmarathon, the reading habit. Handled well this is warm; handled badly it is a\nput-down.\n\nUnderstatement is the safest, because shrinking an achievement in an obviously\nabsurd way is a compliment wearing a disguise. Misdirection works too, as long\nas the twist is about the thing rather than about them.\n\nWhat does not work is irony aimed at the achievement itself. \"Oh, very\nimpressive\" said flat is sarcasm, and it takes something from them rather than\ngiving it.\n\nMindset: shrink the thing, never the person.",
-      inputs: [
-        { q: "\"I ran a marathon on Sunday.\"", a: "\"That's a bit of a walk.\" [Understatement]", bundle: 'pro' },
-        { q: "\"My computer is super fast.\"", a: "\"I saw it running down the street yesterday.\" [Misdirection]", bundle: 'pro' },
-        { q: "\"I read books all the time.\"", a: "\"All of them? At once? That's a lot of arms.\" [Deliberate Misunderstanding]", bundle: 'pro' },
-        { q: "You are about to be ironic about the achievement itself.", a: "(leave it — that one lands as sarcasm) [Irony]", bundle: 'pro' },
-        { q: "They built the whole thing themselves.", a: "\"Bit of a project, then.\" [Understatement]", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Someone States the Obvious",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
-      description: "\"It's raining outside.\" \"The room has white walls.\" \"It's\nlunch in five minutes.\" Sentences with no content, said to fill a silence — and\ntherefore an open invitation.\n\nDeliberate Misunderstanding is made for these. So is Misdirection, because an\nobvious statement gives you a very flat first half to build on.\n\nThese are also the best sentences to practise on, precisely because they are\nempty. Anyone can be funny about a good story. The skill is being funny about\nwhite walls.\n\nMindset: the emptier the sentence, the more room there is in it.",
-      inputs: [
-        { q: "\"It's raining outside.\"", a: "\"Really? Inside it's completely dry.\" [Deliberate Misunderstanding]", bundle: 'pro' },
-        { q: "\"The room has white walls.\"", a: "\"Someone in this building has made exactly one decision.\" [Misdirection]", bundle: 'pro' },
-        { q: "\"It's lunch in five minutes.\"", a: "\"Five minutes. I can survive that. Probably.\" [Exaggeration]", bundle: 'pro' },
-        { q: "\"I love eating pizza.\"", a: "\"Same. It's the only food that's also a plate.\" [Misdirection]", bundle: 'pro' },
-        { q: "\"It's quite cold today.\"", a: "\"Bit brisk, yes.\" [Understatement]", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "It Did Not Land",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
-      description: "You said something you thought was funny and nothing happened\n— or worse, they took it seriously. Every practised joker has this several\ntimes a week, and the difference between them and everyone else is entirely in\nwhat happens next.\n\nThe rule: do not explain it. An explained joke is worse than an unnoticed one,\nand a second run at the same joke is worse again. Answer the thing they\nactually said and move on; the next opening arrives within a minute.\n\nIf they took it at face value, one flat clarification is fine — \"that was me\nagreeing with you, badly\" — and then it is over.\n\nMindset: a miss costs four seconds. Explaining it costs the conversation.",
-      inputs: [
-        { q: "They take your irony completely at face value.", a: "\"That was me agreeing with you, badly.\" [Understatement]", bundle: 'pro' },
-        { q: "You are about to explain why it was funny.", a: "(do not — answer what they actually said instead) [Irony]", bundle: 'pro' },
-        { q: "Nobody reacted at all.", a: "(say the plain version and carry on — the next opening is a minute away) [Understatement]", bundle: 'pro' },
-        { q: "You want one more go without repeating yourself.", a: "\"Ignore me. What happened after the car broke down?\" [Deliberate Misunderstanding]", bundle: 'pro' },
-        { q: "They laughed a beat late.", a: "(let it be — do not point out that it worked) [Irony]", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Now Is Not the Time",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
-      description: "Where this pack stops. Not every sentence is an invitation,\nand the five strategies are quick enough to arrive before you have decided\nwhether they should.\n\nThree situations to keep out of: something they are genuinely upset about,\nsomething they are proud of and vulnerable about, and any moment where you have\npower over them — humour from a manager about someone's work is not read the\nsame way as humour from a peer.\n\nThe tell is easy to feel and easy to ignore: if the joke needs them to be a\ngood sport, it is aimed at them, and this pack is not aimed at people.\n\nMindset: aim at the situation, the sentence, or yourself. Never at the person\nwho is holding something heavy.",
-      inputs: [
-        { q: "They are genuinely upset and you reached for a joke by reflex.", a: "(drop it — answer the sentence, not the setup) [Understatement]", bundle: 'pro' },
-        { q: "They said something they are proud and slightly nervous about.", a: "\"That's a bit of a project.\" (warm, and then say it plainly) [Understatement]", bundle: 'pro' },
-        { q: "You are their manager and the joke is about their work.", a: "(not yours to make — the room hears it differently from you) [Irony]", bundle: 'pro' },
-        { q: "The joke needs them to be a good sport to work.", a: "(that means it is aimed at them — leave it) [Exaggeration]", bundle: 'pro' },
-        { q: "You want to be light about something heavy, later.", a: "\"For what it's worth, that is the worst week I've heard about this year.\" [Exaggeration]", bundle: 'pro' },
-      ]
-    },
-  ],
   masculine1: [
     {
       name: "The Cold Shoulder",
@@ -4396,88 +4195,6 @@ const challengesCollections = {
       ]
     },
   ],
-  startingconversations1: [
-    {
-      name: "Closed Signals",
-      guideFront: "Choose a strategy when...",
-      guideBack: "One way it could sound",
-      description: "Headphones, a book, a phone, a fast walk, a screen they are staring at. The signals are usually accurate, and the honest answer is that sometimes the right move is to say nothing at all.\n\n**What goes wrong:** an opener that needs a real answer. They give you one because people are polite, and now you are both in a conversation neither of you chose.\n\n**What works here:** **Comment on the Situation** and **Simple Greeting**, because both can be answered with a nod. **Ask About the Situation** is fine when you genuinely need something — keep it short and practical.\n\n**Avoid:** reading the signals as a personal verdict. Someone absorbed in a book is absorbed in a book.\n\nMindset: an opener they can answer in one word is a kindness, not a failure.",
-      inputs: [
-        { q: "They have headphones in but you need to know if the seat is free.", a: "\"Sorry — is anyone sitting here?\" [Ask About the Situation]", bundle: 'pro' },
-        { q: "They are reading and you are sharing a table.", a: "\"Hello.\" [Simple Greeting]", bundle: 'pro' },
-        { q: "They are clearly working but you have just joined the team.", a: "\"I'll not interrupt — I'm Rikard, I started today. I'll catch you later.\" [Introduce Yourself]", bundle: 'pro' },
-        { q: "They are on their phone and the queue has stopped completely.", a: "\"This has properly stopped, hasn't it.\" [Comment on the Situation]", bundle: 'pro' },
-        { q: "They look stressed and are gathering their things quickly.", a: "\"Do you know if there's another one after this?\" [Ask About the Situation]", bundle: 'pro' },
-        { q: "They have a laptop open on a train table and are typing fast.", a: "\"Sorry to interrupt — is this seat taken?\" [Ask About the Situation]", bundle: 'pro' },
-        { q: "They are watching something with one earphone out.", a: "\"Bit of a wait, this.\" [Comment on the Situation]", bundle: 'pro' },
-        { q: "They walk past you quickly every morning without looking up.", a: "\"Morning.\" [Simple Greeting]", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "An Empty Room",
-      guideFront: "Choose a strategy when...",
-      guideBack: "One way it could sound",
-      description: "An empty room, a bare corridor, a lift, a quiet waiting area. There is no event to comment on and no obvious question to ask, which is exactly when people conclude there is nothing to say.\n\n**What goes wrong:** you wait for something to happen that you can remark on. It does not happen, and the silence gets more established with every minute you leave it.\n\n**What works here:** **Comment on the Situation** — the emptiness, the wait, being early, the room itself. **Ask About the Situation** works too, because in an empty room the practical questions are the obvious ones and nobody minds being asked.\n\n**Avoid:** the belief that the opener has to be interesting. It has to be shared, and being the only two people in a room is about as shared as it gets.\n\nMindset: the fact that nothing is happening is itself something you are both in.",
-      inputs: [
-        { q: "You and one other person are the only ones who have arrived.", a: "\"I think we're the keen ones.\" [Comment on the Situation]", bundle: 'pro' },
-        { q: "You are in a silent lift for four floors.", a: "\"Alright.\" [Simple Greeting]", bundle: 'pro' },
-        { q: "You are both in an empty waiting room with no information.", a: "\"Do you know if they call you or you just go in?\" [Ask About the Situation]", bundle: 'pro' },
-        { q: "You are early to a meeting with one other person and nothing to do.", a: "\"Have you come far for this?\" [Ask About the Situation]", bundle: 'pro' },
-        { q: "You are sitting in a bare room waiting for something to start.", a: "\"They've really gone to town on the decor in here.\" [Comment on the Situation]", bundle: 'pro' },
-        { q: "You are both waiting for a bus that is not due for ten minutes.", a: "\"Nothing for a while, is there.\" [Comment on the Situation]", bundle: 'pro' },
-        { q: "The two of you are in a corridor waiting to be called in.", a: "\"Are you here for the same thing as me, or is that a coincidence?\" [Ask About the Situation]", bundle: 'pro' },
-        { q: "You will be sat in this quiet room together for an hour.", a: "\"Looks like it's just us. I'm Rikard.\" [Introduce Yourself]", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Joining a Group",
-      guideFront: "Choose a strategy when...",
-      guideBack: "One way it could sound",
-      description: "Walking towards people who are mid-conversation is the hardest version of this, because there is no obvious gap and interrupting feels rude.\n\n**What goes wrong:** you try to join the topic. You have missed the first half, so you either say nothing relevant or ask a question everyone has already answered.\n\n**What works here:** **Introduce Yourself** to one person rather than to the group — you do not have to break into the topic, because there is a smaller conversation available about who you are. **Ask About the Situation** works as a side door.\n\n**Avoid:** talking to the group. Groups do not answer; people do.\n\nMindset: join at the edge, quietly, and to one person.",
-      inputs: [
-        { q: "Three people are talking and you know none of them.", a: "\"Mind if I join? I'm Rikard, I don't know anybody here.\" [Introduce Yourself]", bundle: 'pro' },
-        { q: "You catch the eye of one person on the edge of a group.", a: "\"Hi — Rikard.\" [Introduce Yourself]", bundle: 'pro' },
-        { q: "The group pauses and nobody says anything to you.", a: "\"Is this the right room for the six o'clock?\" [Ask About the Situation]", bundle: 'pro' },
-        { q: "You have been standing near a group for a while without speaking.", a: "\"Busy tonight, isn't it.\" [Comment on the Situation]", bundle: 'pro' },
-        { q: "You know one person in the group slightly.", a: "\"Evening — I'm going to hide behind you, I don't know anyone.\" [Simple Greeting]", bundle: 'pro' },
-        { q: "Two people beside you are laughing about something you missed.", a: "\"I've no idea what that was about, but I'd like to.\" [Comment on the Situation]", bundle: 'pro' },
-        { q: "A group is forming for an activity and you are not in one.", a: "\"Have you got room for one more? I'm Rikard.\" [Introduce Yourself]", bundle: 'pro' },
-        { q: "Someone leaves the group and you are suddenly next to a stranger.", a: "\"Do you know how long this bit goes on for?\" [Ask About the Situation]", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Left Too Long",
-      guideFront: "Choose a strategy when...",
-      guideBack: "One way it could sound",
-      description: "You have been sitting next to someone for twenty minutes, or you have passed the same neighbour weekly for a year. The window for a normal opener seems to have closed.\n\n**What goes wrong:** every option now feels like it needs explaining, so you keep not speaking, and the thing that needs explaining gets bigger.\n\n**What works here:** **Introduce Yourself**, with the delay named lightly. It usually lands as funny rather than awkward — people are almost always relieved that somebody finally said something. **Ask About the Situation** is the lower-key version if naming it feels like too much.\n\n**Avoid:** apologising at length for not having spoken. One short sentence undoes a year; a paragraph makes it strange again.\n\nMindset: name it and move on. Nobody has been keeping score except you.",
-      inputs: [
-        { q: "You have sat beside this person for half of a long day.", a: "\"I've been sitting next to you all morning and never said hello. I'm Rikard.\" [Introduce Yourself]", bundle: 'pro' },
-        { q: "You have passed the same neighbour weekly for a year.", a: "\"We must have passed each other fifty times. I'm Rikard, from the third floor.\" [Introduce Yourself]", bundle: 'pro' },
-        { q: "You have been in a silent car share for ten minutes.", a: "\"Do you know how long this takes, roughly?\" [Ask About the Situation]", bundle: 'pro' },
-        { q: "You have exchanged nods with a colleague for months.", a: "\"Morning. I realise I've never actually asked what you do here.\" [Simple Greeting]", bundle: 'pro' },
-        { q: "The event is nearly over and you have not spoken to the person beside you.", a: "\"Well, that went quickly. Was it what you expected?\" [Ask About the Situation]", bundle: 'pro' },
-        { q: "You have been in the same club for a term without learning anyone's name.", a: "\"I've been coming since September and I know nobody. I'm Rikard.\" [Introduce Yourself]", bundle: 'pro' },
-        { q: "You realise mid-journey that you should have spoken an hour ago.", a: "\"Long one, this.\" [Comment on the Situation]", bundle: 'pro' },
-        { q: "You are about to leave a two-day course having said nothing to your neighbour.", a: "\"Two days and I never introduced myself. Rikard.\" [Introduce Yourself]", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "A Flat Reply",
-      guideFront: "Choose a strategy when...",
-      guideBack: "One way it could sound",
-      description: "You said something and got a one-word reply, a polite smile, or nothing. This is the moment people take as proof that they are bad at this.\n\n**What goes wrong:** you read one flat reply as a verdict and stop, or you read it as a challenge and try four more times. Both misjudge how little information one short answer carries.\n\n**What works here:** **Ask About the Situation**, because it needs more than a word to answer and changes the shape of the exchange. **Comment on the Situation** works as the softer second attempt.\n\n**Avoid:** a third try. Two is enough to know, and the graceful exit is part of the skill — **Simple Greeting** does that job.\n\nMindset: one more try, then let it go warmly. A friendly exit costs nothing and leaves the door open for another day.",
-      inputs: [
-        { q: "Your comment got a \"mm\" and nothing else.", a: "\"Do you know if there's a break in this?\" [Ask About the Situation]", bundle: 'pro' },
-        { q: "Your question got a one-word factual answer.", a: "\"First time here for me. It's bigger than I thought.\" [Comment on the Situation]", bundle: 'pro' },
-        { q: "You have tried twice and got very little back.", a: "\"Anyway — enjoy the rest of it.\" [Simple Greeting]", bundle: 'pro' },
-        { q: "They answered and immediately looked back at their phone.", a: "\"No worries. Cheers.\" [Simple Greeting]", bundle: 'pro' },
-        { q: "Your opener landed but they seem to be leaving.", a: "\"I'm Rikard, by the way — I'll probably see you next week.\" [Introduce Yourself]", bundle: 'pro' },
-        { q: "They gave you a polite smile and no words at all.", a: "\"Is this the queue for the main hall?\" [Ask About the Situation]", bundle: 'pro' },
-        { q: "They answered your question and asked nothing back.", a: "\"Cheers.\" [Simple Greeting]", bundle: 'pro' },
-        { q: "The reply was short but they are still standing there.", a: "\"Have you been to one of these before?\" [Ask About the Situation]", bundle: 'pro' },
-      ]
-    },
-  ],
   talkingaboutyourself: [
     {
       name: "An Ordinary Week",
@@ -4557,6 +4274,289 @@ const challengesCollections = {
         { q: "A relative asks what you earn, in front of others.", a: "\"I'm going to be dull about that. It's enough, and that's the whole answer.\" [Keep Something Back]", bundle: 'pro' },
         { q: "You have declined and they look embarrassed for asking.", a: "\"It's a completely normal question. I'm just not doing it tonight.\" [Keep Something Back]", bundle: 'pro' },
         { q: "Somebody asks why you left your last job.", a: "\"It ran its course. The useful part is that I ended up here instead.\" [Give a Detail]", bundle: 'pro' },
+      ]
+    },
+  ],
+  startingconversations1: [
+    {
+      name: "Closed Signals",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Headphones, a book, a phone, a fast walk, a screen they are staring at. The signals are usually accurate, and the honest answer is that sometimes the right move is to say nothing at all.\n\n**What goes wrong:** an opener that needs a real answer. They give you one because people are polite, and now you are both in a conversation neither of you chose.\n\n**What works here:** **Comment on the Situation** and **Simple Greeting**, because both can be answered with a nod. **Ask About the Situation** is fine when you genuinely need something — keep it short and practical.\n\n**Avoid:** reading the signals as a personal verdict. Someone absorbed in a book is absorbed in a book.\n\nMindset: an opener they can answer in one word is a kindness, not a failure.",
+      inputs: [
+        { q: "They have headphones in but you need to know if the seat is free.", a: "\"Sorry — is anyone sitting here?\" [Ask About the Situation]", bundle: 'pro' },
+        { q: "They are reading and you are sharing a table.", a: "\"Hello.\" [Simple Greeting]", bundle: 'pro' },
+        { q: "They are clearly working but you have just joined the team.", a: "\"I'll not interrupt — I started today. I'm... I'll catch you later.\" [Introduce Yourself]", bundle: 'pro' },
+        { q: "They are on their phone and the queue has stopped completely.", a: "\"This has properly stopped, hasn't it.\" [Comment on the Situation]", bundle: 'pro' },
+        { q: "They look stressed and are gathering their things quickly.", a: "\"Do you know if there's another one after this?\" [Ask About the Situation]", bundle: 'pro' },
+        { q: "They have a laptop open on a train table and are typing fast.", a: "\"Sorry to interrupt — is this seat taken?\" [Ask About the Situation]", bundle: 'pro' },
+        { q: "They are watching something with one earphone out.", a: "\"Bit of a wait, this.\" [Comment on the Situation]", bundle: 'pro' },
+        { q: "They walk past you quickly every morning without looking up.", a: "\"Morning.\" [Simple Greeting]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "An Empty Room",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "An empty room, a bare corridor, a lift, a quiet waiting area. There is no event to comment on and no obvious question to ask, which is exactly when people conclude there is nothing to say.\n\n**What goes wrong:** you wait for something to happen that you can remark on. It does not happen, and the silence gets more established with every minute you leave it.\n\n**What works here:** **Comment on the Situation** — the emptiness, the wait, being early, the room itself. **Ask About the Situation** works too, because in an empty room the practical questions are the obvious ones and nobody minds being asked.\n\n**Avoid:** the belief that the opener has to be interesting. It has to be shared, and being the only two people in a room is about as shared as it gets.\n\nMindset: the fact that nothing is happening is itself something you are both in.",
+      inputs: [
+        { q: "You and one other person are the only ones who have arrived.", a: "\"I think we're the keen ones.\" [Comment on the Situation]", bundle: 'pro' },
+        { q: "You are in a silent lift for four floors.", a: "\"Alright.\" [Simple Greeting]", bundle: 'pro' },
+        { q: "You are both in an empty waiting room with no information.", a: "\"Do you know if they call you or you just go in?\" [Ask About the Situation]", bundle: 'pro' },
+        { q: "You are early to a meeting with one other person and nothing to do.", a: "\"Have you come far for this?\" [Ask About the Situation]", bundle: 'pro' },
+        { q: "You are sitting in a bare room waiting for something to start.", a: "\"They've really gone to town on the decor in here.\" [Comment on the Situation]", bundle: 'pro' },
+        { q: "You are both waiting for a bus that is not due for ten minutes.", a: "\"Nothing for a while, is there.\" [Comment on the Situation]", bundle: 'pro' },
+        { q: "The two of you are in a corridor waiting to be called in.", a: "\"Are you here for the same thing as me, or is that a coincidence?\" [Ask About the Situation]", bundle: 'pro' },
+        { q: "You will be sat in this quiet room together for an hour.", a: "\"Looks like it's just us. I'm...\" [Introduce Yourself]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Joining a Group",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Walking towards people who are mid-conversation is the hardest version of this, because there is no obvious gap and interrupting feels rude.\n\n**What goes wrong:** you try to join the topic. You have missed the first half, so you either say nothing relevant or ask a question everyone has already answered.\n\n**What works here:** **Introduce Yourself** to one person rather than to the group — you do not have to break into the topic, because there is a smaller conversation available about who you are. **Ask About the Situation** works as a side door.\n\n**Avoid:** talking to the group. Groups do not answer; people do.\n\nMindset: join at the edge, quietly, and to one person.",
+      inputs: [
+        { q: "Three people are talking and you know none of them.", a: "\"Mind if I join? I don't know anybody here. I'm...\" [Introduce Yourself]", bundle: 'pro' },
+        { q: "You catch the eye of one person on the edge of a group.", a: "\"Hi — I'm...\" [Introduce Yourself]", bundle: 'pro' },
+        { q: "The group pauses and nobody says anything to you.", a: "\"Is this the right room for the six o'clock?\" [Ask About the Situation]", bundle: 'pro' },
+        { q: "You have been standing near a group for a while without speaking.", a: "\"Busy tonight, isn't it.\" [Comment on the Situation]", bundle: 'pro' },
+        { q: "You know one person in the group slightly.", a: "\"Evening — I'm going to hide behind you, I don't know anyone.\" [Simple Greeting]", bundle: 'pro' },
+        { q: "Two people beside you are laughing about something you missed.", a: "\"I've no idea what that was about, but I'd like to.\" [Comment on the Situation]", bundle: 'pro' },
+        { q: "A group is forming for an activity and you are not in one.", a: "\"Have you got room for one more? I'm...\" [Introduce Yourself]", bundle: 'pro' },
+        { q: "Someone leaves the group and you are suddenly next to a stranger.", a: "\"Do you know how long this bit goes on for?\" [Ask About the Situation]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Left Too Long",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "You have been sitting next to someone for twenty minutes, or you have passed the same neighbour weekly for a year. The window for a normal opener seems to have closed.\n\n**What goes wrong:** every option now feels like it needs explaining, so you keep not speaking, and the thing that needs explaining gets bigger.\n\n**What works here:** **Introduce Yourself**, with the delay named lightly. It usually lands as funny rather than awkward — people are almost always relieved that somebody finally said something. **Ask About the Situation** is the lower-key version if naming it feels like too much.\n\n**Avoid:** apologising at length for not having spoken. One short sentence undoes a year; a paragraph makes it strange again.\n\nMindset: name it and move on. Nobody has been keeping score except you.",
+      inputs: [
+        { q: "You have sat beside this person for half of a long day.", a: "\"I've been sitting next to you all morning and never said hello. I'm...\" [Introduce Yourself]", bundle: 'pro' },
+        { q: "You have passed the same neighbour weekly for a year.", a: "\"We must have passed each other fifty times, and I'm on the third floor. I'm...\" [Introduce Yourself]", bundle: 'pro' },
+        { q: "You have been in a silent car share for ten minutes.", a: "\"Do you know how long this takes, roughly?\" [Ask About the Situation]", bundle: 'pro' },
+        { q: "You have exchanged nods with a colleague for months.", a: "\"Morning. I realise I've never actually asked what you do here.\" [Simple Greeting]", bundle: 'pro' },
+        { q: "The event is nearly over and you have not spoken to the person beside you.", a: "\"Well, that went quickly. Was it what you expected?\" [Ask About the Situation]", bundle: 'pro' },
+        { q: "You have been in the same club for a term without learning anyone's name.", a: "\"I've been coming since September and I know nobody. I'm...\" [Introduce Yourself]", bundle: 'pro' },
+        { q: "You realise mid-journey that you should have spoken an hour ago.", a: "\"Long one, this.\" [Comment on the Situation]", bundle: 'pro' },
+        { q: "You are about to leave a two-day course having said nothing to your neighbour.", a: "\"Two days and I never introduced myself. I'm...\" [Introduce Yourself]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "A Flat Reply",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "You said something and got a one-word reply, a polite smile, or nothing. This is the moment people take as proof that they are bad at this.\n\n**What goes wrong:** you read one flat reply as a verdict and stop, or you read it as a challenge and try four more times. Both misjudge how little information one short answer carries.\n\n**What works here:** **Ask About the Situation**, because it needs more than a word to answer and changes the shape of the exchange. **Comment on the Situation** works as the softer second attempt.\n\n**Avoid:** a third try. Two is enough to know, and the graceful exit is part of the skill — **Simple Greeting** does that job.\n\nMindset: one more try, then let it go warmly. A friendly exit costs nothing and leaves the door open for another day.",
+      inputs: [
+        { q: "Your comment got a \"mm\" and nothing else.", a: "\"Do you know if there's a break in this?\" [Ask About the Situation]", bundle: 'pro' },
+        { q: "Your question got a one-word factual answer.", a: "\"First time here for me. It's bigger than I thought.\" [Comment on the Situation]", bundle: 'pro' },
+        { q: "You have tried twice and got very little back.", a: "\"Anyway — enjoy the rest of it.\" [Simple Greeting]", bundle: 'pro' },
+        { q: "They answered and immediately looked back at their phone.", a: "\"No worries. Cheers.\" [Simple Greeting]", bundle: 'pro' },
+        { q: "Your opener landed but they seem to be leaving.", a: "\"Before you go — I'm... I'll probably see you next week.\" [Introduce Yourself]", bundle: 'pro' },
+        { q: "They gave you a polite smile and no words at all.", a: "\"Is this the queue for the main hall?\" [Ask About the Situation]", bundle: 'pro' },
+        { q: "They answered your question and asked nothing back.", a: "\"Cheers.\" [Simple Greeting]", bundle: 'pro' },
+        { q: "The reply was short but they are still standing there.", a: "\"Have you been to one of these before?\" [Ask About the Situation]", bundle: 'pro' },
+      ]
+    },
+  ],
+  startingconversations2: [
+    {
+      name: "You Do Not Actually Need Anything",
+      guideFront: "What makes this opening hard?",
+      guideBack: "A possible opener, with the strategy in brackets.",
+      description: "Asking for help works because the request is real. Invent one and it usually shows — the question is slightly too easy, or you do not listen properly to the answer, and the whole thing reads as a device.\n\nEither find something you genuinely do want to know, which is more often available than it seems, or switch to an opener that does not require a pretext.\n\nMindset: if you would not ask it with nobody around, do not ask it now.",
+      inputs: [
+        { q: "You want to talk to them but you know how the machine works.", a: "\"Busy in here tonight, isn't it.\" [Mention a Shared Experience]", bundle: 'pro' },
+        { q: "You are about to ask something you can obviously see the answer to.", a: "\"Is this seat taken?\" [Ask for Help]", bundle: 'pro' },
+        { q: "There is something you have genuinely wondered about this place.", a: "\"Do you know if it's always this busy on a Tuesday?\" [Ask for Help]", bundle: 'pro' },
+        { q: "You have nothing to ask but you do know something they might want.", a: "\"The far end's usually emptier, if you're looking for space.\" [Offer Something Useful]", bundle: 'pro' },
+        { q: "You have just realised your question was a pretext and they answered it seriously.", a: "\"Thanks — sorry, I think I did know that. It's been a long day.\" [Ask for Help]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Offer Is Not Wanted",
+      guideFront: "What makes this opening hard?",
+      guideBack: "A possible opener, with the strategy in brackets.",
+      description: "Offering useful information is welcome; offering an opinion about what someone should do is not, and the line between them is easy to cross without noticing.\n\nThe test is whether the information is about the situation or about them. \"The other queue is shorter\" is about the situation. \"You'd be better off doing it a different way\" is about them, and it arrives as a correction.\n\nMindset: give facts about the place, not verdicts about the person.",
+      inputs: [
+        { q: "You are about to tell someone they are doing something the wrong way.", a: "\"That door sticks, by the way — you have to pull first.\" [Offer Something Useful]", bundle: 'pro' },
+        { q: "They have clearly chosen the slower option on purpose.", a: "\"Fair enough — I always take the other one, but that's habit.\" [Offer Something Useful]", bundle: 'pro' },
+        { q: "You offered a tip and they looked mildly irritated.", a: "\"Sorry, unsolicited advice. Ignore me.\" [Offer Something Useful]", bundle: 'pro' },
+        { q: "You want to help but they know more about this than you do.", a: "\"You've done this before, haven't you? Is there a trick I'm missing?\" [Ask for Help]", bundle: 'pro' },
+        { q: "You start to give advice about their life rather than the situation.", a: "\"None of my business, though. How's it going otherwise?\" [Pick Up a Shared Thread]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "You Cannot Remember the Thread",
+      guideFront: "What makes this opening hard?",
+      guideBack: "A possible opener, with the strategy in brackets.",
+      description: "You know they told you something. You cannot remember whether it was a house move, a job interview or a hospital appointment, and asking about the wrong one would be worse than asking about nothing.\n\nAdmitting the gap works far better than people expect. \"You told me something last time and I have lost it\" is honest, mildly self-deprecating, and gets you the thread back from them.\n\nMindset: half-remembering and saying so beats pretending, and it beats saying nothing.",
+      inputs: [
+        { q: "You know something was going on but not what.", a: "\"You told me something last time and I've completely lost it. What was happening?\" [Pick Up a Shared Thread]", bundle: 'pro' },
+        { q: "You remember the topic but not the outcome.", a: "\"Did the house thing ever get sorted? I've lost track of where you got to.\" [Pick Up a Shared Thread]", bundle: 'pro' },
+        { q: "You are about to guess and might guess wrong.", a: "\"Refresh me — was it the interview or the move that was happening?\" [Pick Up a Shared Thread]", bundle: 'pro' },
+        { q: "You remember nothing at all about them.", a: "\"How's your week been? Properly, not the polite version.\" [Mention a Shared Experience]", bundle: 'pro' },
+        { q: "You realise mid-sentence you have mixed them up with someone else.", a: "\"That's someone else entirely, isn't it. Sorry. What have you been up to?\" [Pick Up a Shared Thread]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Thread Might Be Painful",
+      guideFront: "What makes this opening hard?",
+      guideBack: "A possible opener, with the strategy in brackets.",
+      description: "Some ongoing things are difficult — an illness, a job that might have gone, a relationship, an application that may not have worked. Asking is usually right, because being asked is better than being avoided, but how you ask matters.\n\nLeave them a way out. A question with an easy exit lets them say \"fine, thanks\" and move on, and lets them say more if they want to. Do not ask across a room, and do not ask twice if the first answer was short.\n\nMindset: ask gently, once, and let their answer decide the size of the conversation.",
+      inputs: [
+        { q: "Someone was waiting on medical results.", a: "\"How have you been? You had things going on last time we spoke.\" [Pick Up a Shared Thread]", bundle: 'pro' },
+        { q: "You know they were at risk of losing a job.", a: "\"How did things land at work in the end? Only if you want to.\" [Pick Up a Shared Thread]", bundle: 'pro' },
+        { q: "They gave a very short answer and you were going to ask more.", a: "\"Fair enough. Are you around for the rest of the week?\" [Pick Up a Shared Thread]", bundle: 'pro' },
+        { q: "You are in a group and the thread is a private one.", a: "\"Good to see you — how was the weekend?\" [Mention a Shared Experience]", bundle: 'pro' },
+        { q: "They said it did not go well and you do not know what to say.", a: "\"That's rough. Do you want to talk about it or would you rather not?\" [Pick Up a Shared Thread]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Shared Experience Was Bad",
+      guideFront: "What makes this opening hard?",
+      guideBack: "A possible opener, with the strategy in brackets.",
+      description: "Sometimes the thing you have both just been through was genuinely unpleasant rather than mildly annoying — a difficult meeting, bad news, someone being told off in front of everyone.\n\nThe light comment that works after a long queue does not work here. Either say something plainly and briefly, or say nothing and let the situation be what it is. The failure mode is jokey small talk over something that actually mattered.\n\nMindset: match the weight. If it was heavy, one honest sentence beats a light one.",
+      inputs: [
+        { q: "You have both come out of a meeting where bad news was announced.", a: "\"That was a lot to take in. Are you alright?\" [Mention a Shared Experience]", bundle: 'pro' },
+        { q: "Someone was criticised in front of the group and you were both there.", a: "\"That was uncomfortable to sit through. Are you okay?\" [Mention a Shared Experience]", bundle: 'pro' },
+        { q: "You want to acknowledge it without making them discuss it.", a: "\"Not the morning any of us wanted. I'm around if you want a coffee.\" [Offer Something Useful]", bundle: 'pro' },
+        { q: "You are about to make a joke about something that was not funny.", a: "\"That was grim, actually.\" [Mention a Shared Experience]", bundle: 'pro' },
+        { q: "They clearly do not want to talk about it.", a: "\"Say no more. Are you off after this?\" [Pick Up a Shared Thread]", bundle: 'pro' },
+      ]
+    },
+  ],
+  startingconversations4: [
+    {
+      name: "The Joke Misfires",
+      guideFront: "What makes this opening hard?",
+      guideBack: "A possible opener, with the strategy in brackets.",
+      description: "It lands flat, or it is taken literally, or it accidentally sounds like a criticism of something they said. All three feel much worse from the inside than they look from outside.\n\nThe recovery is always the same shape: short, unbothered, and onwards. Do not explain the joke, do not repeat it louder, and do not deliver a paragraph of apology — that is what turns a two-second miss into an awkward moment.\n\nMindset: acknowledge it in four words if at all, then say something plain.",
+      inputs: [
+        { q: "Your dry remark was taken completely seriously.", a: "\"Sorry, that was me being sarcastic badly. It is properly annoying, though.\" [Use Humour or Irony]", bundle: 'pro' },
+        { q: "The joke got nothing at all.", a: "\"Anyway — do you know if there's a break in this?\" [Mention Something That Happened]", bundle: 'pro' },
+        { q: "Your joke could be read as a dig at what they just said.", a: "\"That came out wrong — I meant the situation, not you.\" [Use Humour or Irony]", bundle: 'pro' },
+        { q: "You are about to explain why the joke was funny.", a: "\"Ignore me. Have you been to one of these before?\" [Mention Something That Happened]", bundle: 'pro' },
+        { q: "You made a joke about the event and they organised it.", a: "\"And now I find out you made it. I'll get my coat.\" [Use Humour or Irony]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Irony Across a Language Gap",
+      guideFront: "What makes this opening hard?",
+      guideBack: "A possible opener, with the strategy in brackets.",
+      description: "Irony is the opener most likely to fail with someone whose first language is different from yours, or who comes from somewhere the dry register is not standard. Understatement in particular carries almost none of its meaning in the words.\n\nThe fix is not to avoid humour, but to make it visible: exaggeration travels far better than understatement, tone and face have to do more work, and if it does not land, say the plain version straight away without embarrassment.\n\nMindset: exaggeration crosses borders. Dryness often does not.",
+      inputs: [
+        { q: "You are about to use dry understatement with someone you have just met.", a: "\"I think we've been queueing so long I've developed a personality.\" [Use Humour or Irony]", bundle: 'pro' },
+        { q: "Your flat, ironic line was taken at face value.", a: "\"Sorry — joke. It is genuinely awful, though.\" [Use Humour or Irony]", bundle: 'pro' },
+        { q: "You are speaking with someone in their second language.", a: "\"This is the slowest queue in the country. Possibly Europe.\" [Use Humour or Irony]", bundle: 'pro' },
+        { q: "They look confused rather than amused.", a: "\"Ignore that. Have you been waiting long?\" [Mention Something That Happened]", bundle: 'pro' },
+        { q: "You want humour that cannot be misread.", a: "\"I've picked the slow queue again. Every single time.\" [Use Humour or Irony]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "It Sounds Like Flirting",
+      guideFront: "What makes this opening hard?",
+      guideBack: "A possible opener, with the strategy in brackets.",
+      description: "\"I came over because I wanted to talk to you\" is a warm and honest sentence that can also read as interest of a different kind. That is fine when it is true and unwelcome when it is not.\n\nIf you do not intend it that way, anchor the reason in something outside the two of you — being new, knowing nobody, a specific thing they said. Reasons about the situation read as friendliness; reasons about them read as attraction.\n\nMindset: name the reason, and make it about the room rather than about them.",
+      inputs: [
+        { q: "You want to say why you came over without it being misread.", a: "\"I don't know anyone here, so I'm working my way round the room. I'm...\" [Say Why You Came Over]", bundle: 'pro' },
+        { q: "You want to compliment the reason without it being personal.", a: "\"You were the only other person taking notes, so I thought I'd risk it.\" [Say Why You Came Over]", bundle: 'pro' },
+        { q: "You realise your opener came out warmer than intended.", a: "\"That sounded odd — I mean I don't know a soul in here.\" [Say Why You Came Over]", bundle: 'pro' },
+        { q: "A colleague might read a personal approach as something else.", a: "\"I've been meaning to say hello since you joined. How's it going so far?\" [Say Why You Came Over]", bundle: 'pro' },
+        { q: "You do mean it that way and want to be honest but light.", a: "\"I'd have regretted not coming over, so — hello. I'm...\" [Say Why You Came Over]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "You Have Said Too Much",
+      guideFront: "What makes this opening hard?",
+      guideBack: "A possible opener, with the strategy in brackets.",
+      description: "Saying how you feel works when it is small and current. It stops working when it turns out to be the top of something much larger, and the other person suddenly finds themselves holding it.\n\nIf you notice yourself going further than you meant, the fix is not to backtrack apologetically — that makes it heavier. Name it lightly, put it down, and offer them a way back to ordinary conversation.\n\nMindset: put it down without making a thing of putting it down.",
+      inputs: [
+        { q: "You have gone further than you meant with someone you just met.", a: "\"That got heavy quickly. Anyway — have you been here before?\" [Mention Something That Happened]", bundle: 'pro' },
+        { q: "You can see them looking for an exit.", a: "\"Sorry, long week. Ignore me.\" [Say How You Feel]", bundle: 'pro' },
+        { q: "You are about to say something too big for an opener.", a: "\"It's been a long week, put it that way.\" [Say How You Feel]", bundle: 'pro' },
+        { q: "They responded kindly but you feel exposed.", a: "\"Thanks. Right — tell me something more cheerful than that.\" [Mention Something That Happened]", bundle: 'pro' },
+        { q: "You want the small version of something big.", a: "\"I'm running on about four hours' sleep, so I'm not at my sharpest.\" [Say How You Feel]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The News Is Too Heavy",
+      guideFront: "What makes this opening hard?",
+      guideBack: "A possible opener, with the strategy in brackets.",
+      description: "Bringing something in from outside works when it is small. Major news — a disaster, something political, something genuinely upsetting — is a poor opener with a stranger, not because it does not matter but because you are asking them to have a position in front of someone they have just met.\n\nSave the weight for people you know. With a stranger, the wrong bus and the closed road do more work.\n\nMindset: an opener should be easy to answer. Heavy news is not.",
+      inputs: [
+        { q: "The big news of the week is on everyone's mind and you are about to raise it.", a: "\"Did you see they're digging up the high street again?\" [Mention Something That Happened]", bundle: 'pro' },
+        { q: "They raise something heavy and you do not want to debate it with a stranger.", a: "\"It's a lot, that whole thing. Have you come far today?\" [Mention Something That Happened]", bundle: 'pro' },
+        { q: "You want something with no weight at all.", a: "\"I got on the wrong bus this morning and didn't notice for four stops.\" [Mention Something That Happened]", bundle: 'pro' },
+        { q: "Something sad has happened locally and it would be strange not to mention it.", a: "\"Awful business this week. Everyone's a bit quiet, I think.\" [Say How You Feel]", bundle: 'pro' },
+        { q: "You started on something heavy and want to move on gracefully.", a: "\"Anyway. Not a topic for a Tuesday morning. Are you here for the whole day?\" [Mention Something That Happened]", bundle: 'pro' },
+      ]
+    },
+  ],
+  responsivehumour: [
+    {
+      name: "A Small Complaint",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible response, with the strategy in brackets.",
+      description: "The most common opening there is. Someone mentions a minor\nannoyance — the weather, the timetable, the neighbour, the queue — and what\nthey want is company, not a solution.\n\nExaggeration is the natural fit, because it says *I am on your side and this is\nnot serious*. Understatement does the same job in the opposite register and is\nbetter with people you do not know well.\n\nThe thing to avoid is the earnest reply. Answering a small complaint with real\nadvice makes it a bigger thing than they meant it to be.\n\nMindset: they are not asking for help. They are handing you a sentence.",
+      inputs: [
+        { q: "\"I couldn't sleep, my neighbour was making noise.\"", a: "\"Is your neighbour a marching band?\" [Exaggeration]", bundle: 'pro' },
+        { q: "\"The car broke down, then it rained.\"", a: "\"So the day has been going well.\" [Understatement]", bundle: 'pro' },
+        { q: "\"This room is too dark.\"", a: "\"It's saving the light for the afternoon shift.\" [Misdirection]", bundle: 'pro' },
+        { q: "\"I'm running out of time.\"", a: "\"Where does it go? Have you checked the sofa?\" [Deliberate Misunderstanding]", bundle: 'pro' },
+        { q: "\"It's raining again.\"", a: "\"Excellent. My favourite.\" [Irony]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "They Are Pleased With Themselves",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible response, with the strategy in brackets.",
+      description: "Someone is mildly showing off — the fast computer, the\nmarathon, the reading habit. Handled well this is warm; handled badly it is a\nput-down.\n\nUnderstatement is the safest, because shrinking an achievement in an obviously\nabsurd way is a compliment wearing a disguise. Misdirection works too, as long\nas the twist is about the thing rather than about them.\n\nWhat does not work is irony aimed at the achievement itself. \"Oh, very\nimpressive\" said flat is sarcasm, and it takes something from them rather than\ngiving it.\n\nMindset: shrink the thing, never the person.",
+      inputs: [
+        { q: "\"I ran a marathon on Sunday.\"", a: "\"That's a bit of a walk.\" [Understatement]", bundle: 'pro' },
+        { q: "\"My computer is super fast.\"", a: "\"I saw it running down the street yesterday.\" [Misdirection]", bundle: 'pro' },
+        { q: "\"I read books all the time.\"", a: "\"All of them? At once? That's a lot of arms.\" [Deliberate Misunderstanding]", bundle: 'pro' },
+        { q: "You are about to be ironic about the achievement itself.", a: "(leave it — that one lands as sarcasm) [Irony]", bundle: 'pro' },
+        { q: "They built the whole thing themselves.", a: "\"Bit of a project, then.\" [Understatement]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Someone States the Obvious",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible response, with the strategy in brackets.",
+      description: "\"It's raining outside.\" \"The room has white walls.\" \"It's\nlunch in five minutes.\" Sentences with no content, said to fill a silence — and\ntherefore an open invitation.\n\nDeliberate Misunderstanding is made for these. So is Misdirection, because an\nobvious statement gives you a very flat first half to build on.\n\nThese are also the best sentences to practise on, precisely because they are\nempty. Anyone can be funny about a good story. The skill is being funny about\nwhite walls.\n\nMindset: the emptier the sentence, the more room there is in it.",
+      inputs: [
+        { q: "\"It's raining outside.\"", a: "\"Really? Inside it's completely dry.\" [Deliberate Misunderstanding]", bundle: 'pro' },
+        { q: "\"The room has white walls.\"", a: "\"Someone in this building has made exactly one decision.\" [Misdirection]", bundle: 'pro' },
+        { q: "\"It's lunch in five minutes.\"", a: "\"Five minutes. I can survive that. Probably.\" [Exaggeration]", bundle: 'pro' },
+        { q: "\"I love eating pizza.\"", a: "\"Same. It's the only food that's also a plate.\" [Misdirection]", bundle: 'pro' },
+        { q: "\"It's quite cold today.\"", a: "\"Bit brisk, yes.\" [Understatement]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "It Did Not Land",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible response, with the strategy in brackets.",
+      description: "You said something you thought was funny and nothing happened\n— or worse, they took it seriously. Every practised joker has this several\ntimes a week, and the difference between them and everyone else is entirely in\nwhat happens next.\n\nThe rule: do not explain it. An explained joke is worse than an unnoticed one,\nand a second run at the same joke is worse again. Answer the thing they\nactually said and move on; the next opening arrives within a minute.\n\nIf they took it at face value, one flat clarification is fine — \"that was me\nagreeing with you, badly\" — and then it is over.\n\nMindset: a miss costs four seconds. Explaining it costs the conversation.",
+      inputs: [
+        { q: "They take your irony completely at face value.", a: "\"That was me agreeing with you, badly.\" [Understatement]", bundle: 'pro' },
+        { q: "You are about to explain why it was funny.", a: "(do not — answer what they actually said instead) [Irony]", bundle: 'pro' },
+        { q: "Nobody reacted at all.", a: "(say the plain version and carry on — the next opening is a minute away) [Understatement]", bundle: 'pro' },
+        { q: "You want one more go without repeating yourself.", a: "\"Ignore me. What happened after the car broke down?\" [Deliberate Misunderstanding]", bundle: 'pro' },
+        { q: "They laughed a beat late.", a: "(let it be — do not point out that it worked) [Irony]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Now Is Not the Time",
+      guideFront: "Choose a strategy to respond when...",
+      guideBack: "A possible response, with the strategy in brackets.",
+      description: "Where this pack stops. Not every sentence is an invitation,\nand the five strategies are quick enough to arrive before you have decided\nwhether they should.\n\nThree situations to keep out of: something they are genuinely upset about,\nsomething they are proud of and vulnerable about, and any moment where you have\npower over them — humour from a manager about someone's work is not read the\nsame way as humour from a peer.\n\nThe tell is easy to feel and easy to ignore: if the joke needs them to be a\ngood sport, it is aimed at them, and this pack is not aimed at people.\n\nMindset: aim at the situation, the sentence, or yourself. Never at the person\nwho is holding something heavy.",
+      inputs: [
+        { q: "They are genuinely upset and you reached for a joke by reflex.", a: "(drop it — answer the sentence, not the setup) [Understatement]", bundle: 'pro' },
+        { q: "They said something they are proud and slightly nervous about.", a: "\"That's a bit of a project.\" (warm, and then say it plainly) [Understatement]", bundle: 'pro' },
+        { q: "You are their manager and the joke is about their work.", a: "(not yours to make — the room hears it differently from you) [Irony]", bundle: 'pro' },
+        { q: "The joke needs them to be a good sport to work.", a: "(that means it is aimed at them — leave it) [Exaggeration]", bundle: 'pro' },
+        { q: "You want to be light about something heavy, later.", a: "\"For what it's worth, that is the worst week I've heard about this year.\" [Exaggeration]", bundle: 'pro' },
       ]
     },
   ],

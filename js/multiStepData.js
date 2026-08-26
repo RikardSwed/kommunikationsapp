@@ -1319,92 +1319,6 @@ const multiStepCollections = {
       ]
     },
   ],
-  startingconversations4: [
-    {
-      name: "Going First and Staying There",
-      guideFront: "What they gave back, and the opener to use next.",
-      guideBack: "One way it could sound.",
-      description: "When you open with something of your own, the other person usually matches it — but only if you leave room. The commonest mistake is to say the brave thing and then immediately cover it with a joke or a change of subject.\n\nThis combo chains the pack's four openers, and each step front carries what they gave back. Notice how often their reply is a matching disclosure: that is what going first buys you.\n\nMindset: say it, then stop. What they do with it is the conversation.",
-      inputs: [
-        {
-          bundle: 'pro',
-          situation: "You are waiting to present at a training day. Someone else who is also presenting is standing nearby, checking their notes for the fourth time.",
-          steps: [
-            { front: "Step 1 · Say How You Feel — name what you are feeling, small and current.", back: "\"I'm quite nervous about this, actually.\"", guideFront: "One short sentence. Then stop talking." },
-            { front: "Step 2 · Use Humour or Irony — they say, \"Oh good, it's not just me.\"", back: "\"We can be terrible together. Solidarity.\"" },
-            { front: "Step 3 · Say Why You Came Over — they laugh and say, \"I've rewritten mine three times.\"", back: "\"I came over because you looked exactly as calm as I feel. I'm Rikard.\"" },
-            { front: "Step 4 · Mention Something That Happened — they say, \"Hanna. And that's fair.\"", back: "\"I nearly didn't get here at all — I spent ten minutes trying to get into the wrong building.\"" },
-          ]
-        },
-        {
-          bundle: 'pro',
-          situation: "You have arrived at a party where you know only the host, who is busy. Someone is standing near the kitchen door on their own.",
-          steps: [
-            { front: "Step 1 · Say Why You Came Over — name the approach, since that is the awkward part.", back: "\"I know exactly one person here and she's disappeared. So — hello.\"", guideFront: "The real reason. Awkward and true beats smooth and invented." },
-            { front: "Step 2 · Say How You Feel — they say, \"Ha. I'm in the same position, honestly.\"", back: "\"It's a strange thing to do to yourself, coming to these.\"" },
-            { front: "Step 3 · Use Humour or Irony — they say, \"And yet here we both are.\"", back: "\"Stood by the kitchen. The traditional position.\"" },
-            { front: "Step 4 · Mention Something That Happened — they say, \"Closest to the food, though.\"", back: "\"Sensible. I got on the wrong bus getting here, so I've earned it.\"" },
-          ]
-        },
-      ]
-    },
-    {
-      name: "When the Joke Does Not Land",
-      guideFront: "What they gave back, and the opener to use next.",
-      guideBack: "One way it could sound.",
-      description: "You make a joke and get nothing — a polite half-smile, or a blank look, or worse, they take it seriously. This is the risk that stops people using humour at all.\n\nThe recovery is short and cheap: do not explain it, do not repeat it, and do not apologise at length. Move to a plainer opener and carry on as though nothing happened, because from the outside, nothing has.\n\nMindset: a missed joke costs about two seconds. Explaining it costs considerably more.",
-      inputs: [
-        {
-          bundle: 'pro',
-          situation: "You are on a badly delayed train. You make a dry remark to the person opposite and they take it at face value.",
-          steps: [
-            { front: "Step 1 · Use Humour or Irony — say the dry version about the delay.", back: "\"Going well, this.\"", guideFront: "Aimed at the situation, not the person." },
-            { front: "Step 2 · Mention Something That Happened — they say, \"Is it? I thought it was quite bad.\"", back: "\"No, you're right, it's terrible — I was being sarcastic badly. They said forty minutes at my end.\"" },
-            { front: "Step 3 · Say How You Feel — they say, \"Forty? I've got a connection at six.\"", back: "\"You'll not make that. I'd be furious in your position.\"" },
-            { front: "Step 4 · Mention Something That Happened — they say, \"I'm getting there.\"", back: "\"There's a bus that does the same route, apparently. Slower but it exists.\"" },
-          ]
-        },
-        {
-          bundle: 'pro',
-          situation: "You are in a long queue. You make an exaggerated joke to the person behind you and it lands on nothing.",
-          steps: [
-            { front: "Step 1 · Use Humour or Irony — exaggerate the wait.", back: "\"I think we've been here long enough to claim residency.\"", guideFront: "Say it lightly. If it misses, let it go." },
-            { front: "Step 2 · Ask about the situation instead — they smile faintly and say nothing.", back: "\"Do you know if there's more than one desk open?\"", guideFront: "Do not explain the joke. Switch to something plain." },
-            { front: "Step 3 · Mention Something That Happened — they say, \"I think there's one round the side.\"", back: "\"Of course there is. Same thing happened to me at the airport last month.\"" },
-            { front: "Step 4 · Read it and stop — they say, \"Mm,\" and look at their phone.", back: "\"Fair enough. Good luck with it.\"", guideFront: "Two flat replies is an answer. Leave warmly." },
-          ]
-        },
-      ]
-    },
-    {
-      name: "Naming the Approach",
-      guideFront: "What they gave back, and the opener to use next.",
-      guideBack: "One way it could sound.",
-      description: "Saying why you came over is the strongest opener in the pack, and the hardest to start. Once it is said, the conversation tends to go quickly, because the awkward part is already out loud and behind you.\n\nBoth scenarios practise the same shape: name the reason, let them respond, and then move to ordinary conversation rather than staying in the meta.\n\nMindset: say why once. Then talk about something else.",
-      inputs: [
-        {
-          bundle: 'pro',
-          situation: "You have passed the same colleague from another team for about a year. You are both in the kitchen at the same time.",
-          steps: [
-            { front: "Step 1 · Say Why You Came Over — name the year of not speaking.", back: "\"We've walked past each other for about a year and I've never said hello. I'm Rikard.\"", guideFront: "Name the delay lightly. It usually lands as funny." },
-            { front: "Step 2 · Use Humour or Irony — they say, \"Ha — I know, I've thought the same. Tom.\"", back: "\"It's a very British problem, this.\"" },
-            { front: "Step 3 · Mention Something That Happened — they say, \"We could have sorted it months ago.\"", back: "\"We could. I only got brave because I've just had a very stupid morning.\"" },
-            { front: "Step 4 · Say How You Feel — they say, \"Go on then.\"", back: "\"I spent ten minutes trying to badge into the wrong building. I'm not at my best.\"" },
-          ]
-        },
-        {
-          bundle: 'pro',
-          situation: "It is your first evening at a club. Everyone else appears to know one another. Two people are talking near the equipment.",
-          steps: [
-            { front: "Step 1 · Say Why You Came Over — being new is the reason, so lead with it.", back: "\"It's my first time here and standing by the door felt worse. I'm Rikard.\"", guideFront: "Being new is a licence. Use it while it lasts." },
-            { front: "Step 2 · Say How You Feel — they say, \"Welcome — I'm Bea. Everyone's new once.\"", back: "\"I'm about eighty per cent nerves, if I'm honest.\"" },
-            { front: "Step 3 · Use Humour or Irony — they say, \"You'll be fine. We're not very serious.\"", back: "\"That's the best news I've had all week.\"" },
-            { front: "Step 4 · Mention Something That Happened — they say, \"What made you come along?\"", back: "\"A friend kept telling me about it and then moved to Manchester. So here I am alone.\"" },
-          ]
-        },
-      ]
-    },
-  ],
   apologizing2: [
     {
       name: "The Full Five Steps",
@@ -1487,90 +1401,6 @@ const multiStepCollections = {
             { front: "Name What They Felt — they say, \"I'd honestly rather leave it.\"", back: "\"That's fair. I don't want to make you go back there for my benefit.\"" },
             { front: "Apologise for What You Did — they say, \"It's fine, really.\"", back: "\"Then one sentence and I'll stop: I was in the wrong, and I'm sorry.\"" },
             { front: "Say Their Feelings Matter — they say, \"Thank you. Genuinely.\"", back: "\"That's all I wanted to say. It's been bothering me for a long time.\"" },
-          ]
-        },
-      ]
-    },
-  ],
-  startingconversations2: [
-    {
-      name: "From a Favour Into a Conversation",
-      guideFront: "What they gave back, and the opener to use next.",
-      guideBack: "One way it could sound.",
-      description: "A request or an offer gets you talking, but it also ends by itself: the favour is done, they say no problem, and the exchange is over unless you do something with it.\n\nThis combo practises the second move — turning a completed small transaction into an actual conversation, usually by picking up the situation or something they said while helping.\n\nEach step front carries what they said back, and names the opener to use next.\n\nMindset: the favour buys you about ten seconds of goodwill. Use them.",
-      inputs: [
-        {
-          bundle: 'pro',
-          situation: "You are on a machine you have not used before and cannot work out the weight pin. Someone is on the machine next to you, between sets.",
-          steps: [
-            { front: "Step 1 · Ask for Help — you genuinely do not know how it works, so ask.", back: "\"Sorry — do you know how you change the weight on this one?\"", guideFront: "A real request. Small enough that yes is easy." },
-            { front: "Step 2 · Mention a Shared Experience — they lean over, show you, and say, \"It's a stiff one, that.\"", back: "\"Cheers. I've been standing here looking at it for a while, if I'm honest.\"" },
-            { front: "Step 3 · Ask for Help — they laugh and say, \"We've all done it.\"", back: "\"While I've got you — is there a trick to the one behind you as well?\"" },
-            { front: "Step 4 · Pick Up a Shared Thread — they say, \"That one's easier. Same pin, other side.\"", back: "\"Good. I'm here Tuesdays, so I'll probably be asking you again.\"" },
-          ]
-        },
-        {
-          bundle: 'pro',
-          situation: "You are outside a venue. A long queue has formed at the main door, and you know there is a second entrance round the side. Someone joins the line behind you.",
-          steps: [
-            { front: "Step 1 · Offer Something Useful — you know something they would want to know.", back: "\"There's a second door round the side, if you'd rather. Hardly anyone's found it.\"", guideFront: "Give it and let go. Thanks is a complete outcome." },
-            { front: "Step 2 · Mention a Shared Experience — they say, \"Oh — cheers. Are you going round?\"", back: "\"I might. I did this last year and stood here forty minutes.\"" },
-            { front: "Step 3 · Offer Something Useful — they say, \"Forty minutes? God.\"", back: "\"They also open the bar before the doors, so the queue in there is worse. Go straight through.\"" },
-            { front: "Step 4 · Pick Up a Shared Thread — they say, \"You've done this properly, haven't you.\"", back: "\"Third time. Have you been before, or is this the first?\"" },
-          ]
-        },
-      ]
-    },
-    {
-      name: "Picking Someone Back Up",
-      guideFront: "What they gave back, and the opener to use next.",
-      guideBack: "One way it could sound.",
-      description: "With someone you already half know, the opening is not the hard part — remembering is. The combo drills the pattern of coming back to something specific and then following where their answer goes.\n\nThe first step is always the thread, because it is the strongest opener available with someone you know a little. After that, what they give you decides.\n\nMindset: the specific question is the whole move. \"How's things\" and \"how did Thursday go\" are not the same opener.",
-      inputs: [
-        {
-          bundle: 'pro',
-          situation: "A colleague you speak to occasionally is making tea in the kitchen. Last time you spoke they were about to hand in something big.",
-          steps: [
-            { front: "Step 1 · Pick Up a Shared Thread — you remember what they were in the middle of, so use it.", back: "\"Did the report get finished in the end? You were nearly there last time.\"", guideFront: "Specific beats general. Name the thing." },
-            { front: "Step 2 · Mention a Shared Experience — they say, \"Handed it in Friday. Barely.\"", back: "\"You had the same week as me, then. Mine went in about an hour before the deadline.\"" },
-            { front: "Step 3 · Ask for Help — they say, \"Everyone's had a horrible month.\"", back: "\"Actually, while you're here — do you know who signs these off now? I asked two people and got two answers.\"" },
-            { front: "Step 4 · Offer Something Useful — they say, \"It's Priya now. Changed in January.\"", back: "\"Right, thanks. And if you're doing another one — the template's changed, the old one gets bounced back.\"" },
-          ]
-        },
-        {
-          bundle: 'pro',
-          situation: "You are putting the bins out. A neighbour you speak to occasionally comes out at the same time. Last time you spoke their car was in the garage.",
-          steps: [
-            { front: "Step 1 · Pick Up a Shared Thread — something was in progress last time, so ask about it.", back: "\"Did you get the car back in the end?\"", guideFront: "Specific beats general. Name the thing." },
-            { front: "Step 2 · Mention a Shared Experience — they say, \"Two weeks and four hundred quid. Don't ask.\"", back: "\"That's the going rate, isn't it. Mine was the same last spring.\"" },
-            { front: "Step 3 · Offer Something Useful — they say, \"Is there anywhere better round here?\"", back: "\"There's a place on the industrial estate. Half what I paid at the main dealer, and quicker.\"" },
-            { front: "Step 4 · Pick Up a Shared Thread — they say, \"I'll write that down.\"", back: "\"Do. And how's the extension going? Is that still happening?\"" },
-          ]
-        },
-      ]
-    },
-    {
-      name: "When the Favour Is All They Wanted",
-      guideFront: "What they gave back, and the opener to use next.",
-      guideBack: "One way it could sound.",
-      description: "Not every helpful exchange is an opening. Sometimes a person answers your question, or takes your tip, and quite clearly wants to get on with their day.\n\nThis combo practises reading that and stopping well — which matters more here than in the other openers, because a request creates a small obligation and pushing past a polite answer turns a favour into an imposition.\n\nBoth scenarios end with a clean exit rather than a conversation. That is a successful outcome, not a failed one.\n\nMindset: they helped you. Do not charge them interest.",
-      inputs: [
-        {
-          bundle: 'pro',
-          situation: "You cannot find something in a large shop. A member of staff is restocking a shelf nearby, working quickly.",
-          steps: [
-            { front: "Step 1 · Ask for Help — you need to know where something is.", back: "\"Sorry — do you know where the batteries are?\"", guideFront: "A real request. Keep it small." },
-            { front: "Step 2 · Mention a Shared Experience — they point and say, \"Aisle six, bottom shelf.\"", back: "\"Thanks. I've walked past it twice, obviously.\"" },
-            { front: "Step 3 · Read it and stop — they say, \"Everyone does,\" and turn back to the shelf.", back: "\"Cheers. Have a good one.\"", guideFront: "They answered and went back to work. That is the whole exchange." },
-          ]
-        },
-        {
-          bundle: 'pro',
-          situation: "You are waiting for a train. Someone is standing at the far end of the platform where the train does not stop today.",
-          steps: [
-            { front: "Step 1 · Offer Something Useful — they are about to be in the wrong place.", back: "\"It's only four carriages today — it stops down that end.\"", guideFront: "Give it and let go." },
-            { front: "Step 2 · Mention a Shared Experience — they say, \"Oh, thanks,\" and start walking down.", back: "\"They've been doing it all week. Caught me out on Monday.\"" },
-            { front: "Step 3 · Read it and stop — they say, \"Right, thanks again,\" and put their headphones back in.", back: "\"No problem.\"", guideFront: "Headphones back in is an answer. Take it warmly." },
           ]
         },
       ]
@@ -4181,92 +4011,6 @@ const multiStepCollections = {
       ]
     },
   ],
-  responsivehumour: [
-    {
-      name: "Setup and Response",
-      guideFront: "What they said, and the strategy to answer it with.",
-      guideBack: "One way it could sound.",
-      description: "The book's own drill, in four steps. One person makes a plain\ninformational statement; the other answers with one of the five. Then it comes\nback, and you answer again.\n\nThe setup is deliberately dull — the weather, the timetable, the room. That is\nthe point of the exercise: if you can be funny about white walls, you never\nneed to wait for good material.\n\nMindset: their sentence is the raw material. You are not starting anything.",
-      inputs: [
-        {
-          bundle: 'pro',
-          situation: "Two of you are in a classroom before anyone else arrives, with nothing much to talk about.",
-          steps: [
-            { front: "Understatement — they say, \"This room is too dark.\"", back: "\"Mildly cave-like, yes.\"" },
-            { front: "Exaggeration — they say, \"And we have three tests next week.\"", back: "\"Three? That's not a week, that's a sentence.\"" },
-            { front: "Irony — they say, \"I'm really looking forward to it.\"", back: "\"Obviously. Best week of the year.\"" },
-            { front: "Deliberate Misunderstanding — they say, \"At least it's lunch in five minutes.\"", back: "\"Five minutes? I'll never last. Tell my family I tried.\"" },
-          ]
-        },
-        {
-          bundle: 'pro',
-          situation: "A colleague is listing small annoyances and clearly wants company rather than solutions.",
-          steps: [
-            { front: "Exaggeration — they say, \"I couldn't sleep, my neighbour was making noise.\"", back: "\"Is your neighbour a marching band? It sounds like a marching band.\"" },
-            { front: "Understatement — they say, \"And then the car wouldn't start.\"", back: "\"So the morning has been going well.\"" },
-            { front: "Misdirection — they say, \"At least my computer's fast.\"", back: "\"I know. I saw it running down the street yesterday.\"" },
-            { front: "Irony — they say, \"You're a great help.\"", back: "\"I'm known for it. People come from miles.\"" },
-          ]
-        },
-      ]
-    },
-    {
-      name: "Keeping It Going",
-      guideFront: "What they said, and the strategy to answer it with.",
-      guideBack: "One way it could sound.",
-      description: "Two exchanges rather than one. The first joke is easy; what\nmost people miss is that the second one should build on the first rather than\nstart again.\n\nBuilding means staying inside the world the first joke created. If you made\ntheir computer a runner, keep it running — do not open a second joke about\nsomething else. The staying is what makes it feel like play instead of two\npeople taking turns being funny.\n\nMindset: stay in the same world. The second joke lives inside the first.",
-      inputs: [
-        {
-          bundle: 'pro',
-          situation: "A friend is very pleased with a new laptop and keeps mentioning how quick it is.",
-          steps: [
-            { front: "Misdirection — they say, \"This thing is so fast.\"", back: "\"I know. I saw it running down the street yesterday.\"" },
-            { front: "Exaggeration — they say, \"You're an idiot.\"", back: "\"It overtook a bus. I waved. It didn't wave back — too busy.\"" },
-            { front: "Understatement — they say, \"It's just a laptop.\"", back: "\"Sure. A modest little machine with Olympic ambitions.\"" },
-            { front: "Irony — they say, \"I'm never telling you anything again.\"", back: "\"Very wise. I've been nothing but unsupportive.\"" },
-          ]
-        },
-        {
-          bundle: 'pro',
-          situation: "You and someone you barely know are in a queue that has not moved for several minutes.",
-          steps: [
-            { front: "Exaggeration — the queue does not move.", back: "\"I've been here so long I have grandchildren.\"" },
-            { front: "Understatement — they say, \"It is quite slow.\"", back: "\"Bit sluggish, yes.\"" },
-            { front: "Misdirection — they say, \"I have somewhere to be at two.\"", back: "\"So did I. It was last Tuesday.\"" },
-            { front: "Irony — the queue moves one step.", back: "\"Ah. Progress. I'll write to someone.\"" },
-          ]
-        },
-      ]
-    },
-    {
-      name: "When It Does Not Land",
-      guideFront: "What they said, and the strategy to answer it with.",
-      guideBack: "One way it could sound.",
-      description: "Understatement, then a plain answer, then back in later. The\nrecovery, which is the part nobody practises.\n\nThe rule is simple and hard: do not explain it. An explained joke is worse\nthan an unnoticed one, and a second attempt at the same joke is worse still.\nAcknowledge it lightly if at all, answer the thing they actually said, and let\nthe next opening come on its own.\n\nMindset: a joke that misses costs four seconds. Explaining it costs the\nconversation.",
-      inputs: [
-        {
-          bundle: 'pro',
-          situation: "You make an ironic reply and the other person takes it completely at face value.",
-          steps: [
-            { front: "Irony — they say, \"We have three tests next week.\"", back: "\"Lovely. I was hoping for a quiet week.\"" },
-            { front: "Understatement — they say, \"Really? I think it's awful.\"", back: "\"That was me agreeing with you, badly.\"" },
-            { front: "Exaggeration — they say, \"Oh — right.\"", back: "\"To be clear, I'd rather do anything else. Anything.\"" },
-            { front: "Misdirection — they say, \"Same, honestly.\"", back: "\"Good. I've already planned my entire week around avoiding it.\"" },
-          ]
-        },
-        {
-          bundle: 'pro',
-          situation: "You reach for a joke and realise mid-sentence that they are genuinely upset about it.",
-          steps: [
-            { front: "Understatement — they say, \"My week has been a disaster.\"", back: "\"Sounds mildly inconvenient.\"" },
-            { front: "Deliberate Misunderstanding — they say, \"No, it's actually been really bad.\"", back: "(drop it — answer the sentence, not the setup)" },
-            { front: "Exaggeration — later, once they have finished.", back: "\"For what it's worth, that is the worst week I've heard about this year.\"" },
-            { front: "Irony — they say, \"Thanks, that helps.\"", back: "\"I'm here to help. Famously.\"" },
-          ]
-        },
-      ]
-    },
-  ],
   masculine1: [
     {
       name: "Conflict to Connection",
@@ -6684,122 +6428,6 @@ const multiStepCollections = {
       ]
     },
   ],
-  startingconversations1: [
-    {
-      name: "Open, Then Build On What You Get",
-      guideFront: "What's happening, and the strategy to use",
-      guideBack: "One way it could sound",
-      description: "One opener is rarely a conversation. You say something, they give you a little back, and the whole question is what you do with that little.\n\n1. **Simple Greeting** or **Comment on the Situation** — put something small in the air\n2. **Introduce Yourself** or **Ask About the Situation** — use what came back\n3. **Ask About the Situation** — go into the thing they mentioned\n4. **Comment on the Situation** or **Introduce Yourself** — land it\n\n**Why this order:** smallest to largest, each step built out of the last reply. That is what decides whether a conversation happens — using what came back instead of starting again.\n\n**What people do instead:** deliver a second opener unrelated to the answer, which reads as a series of attempts rather than an exchange.\n\nMindset: whatever they give you, use a piece of it. That is the entire skill.",
-      inputs: [
-        {
-          bundle: 'pro',
-          situation: "You have taken a seat at a two-day course. The person next to you is unpacking a notebook. Nothing has started yet and there is about ten minutes to fill.",
-          steps: [
-            { front: "Simple Greeting — nothing has happened yet, so start with the smallest possible thing.", back: "\"Morning.\"", guideFront: "The smallest opener. Just a signal that you are open to talking." },
-            { front: "Introduce Yourself — they look up and say, \"Morning.\"", back: "\"I'm Rikard. Looks like we're neighbours for two days.\"" },
-            { front: "Ask About the Situation — they say, \"Hanna. Yeah, apparently so.\"", back: "\"Have you done one of these before? I don't know how they run it.\"" },
-            { front: "Comment on the Situation — they say, \"I did the one last spring. It's mostly group work.\"", back: "\"Group work, right. That explains the tables being like this.\"" },
-          ]
-        },
-        {
-          bundle: 'pro',
-          situation: "You are in a slow queue outside a venue. The person in front of you keeps looking down the line. It is cold and nothing is moving.",
-          steps: [
-            { front: "Comment on the Situation — you have never met, so open with what you can both see.", back: "\"This isn't moving at all, is it.\"", guideFront: "No question yet. Give them something they can pick up or let go." },
-            { front: "Ask About the Situation — they turn round and say, \"Twenty minutes now.\"", back: "\"Do you know if there's more than one door open?\"" },
-            { front: "Comment on the Situation — they say, \"I think there's another one round the side.\"", back: "\"Of course there is. And nobody's told anyone.\"" },
-            { front: "Introduce Yourself — they laugh and say, \"Standard, really.\"", back: "\"I'm Rikard, by the way. If we're going to be here all night.\"" },
-          ]
-        },
-        {
-          bundle: 'pro',
-          situation: "You are at a table of eight at a wedding reception. You know the couple and nobody else. People are sitting down and reading the menu cards.",
-          steps: [
-            { front: "Simple Greeting — everyone is settling and nobody has spoken yet.", back: "\"Evening.\"", guideFront: "Say it to the person beside you, not to the table." },
-            { front: "Ask About the Situation — they say, \"Evening. Long day already, isn't it.\"", back: "\"It is. Do you know if there are speeches before the food or after?\"" },
-            { front: "Comment on the Situation — they say, \"After, I think. That's the civilised way round.\"", back: "\"Much better. Speeches on an empty stomach are a hard watch.\"" },
-            { front: "Introduce Yourself — they laugh and say, \"I've sat through a few.\"", back: "\"I'm Rikard — I'm on the bride's side, badly out of my depth.\"" },
-          ]
-        },
-      ]
-    },
-    {
-      name: "When You Get Almost Nothing Back",
-      guideFront: "What's happening, and the strategy to use",
-      guideBack: "One way it could sound",
-      description: "Sometimes the reply is one word — the situation most people quietly dread.\n\n1. **Simple Greeting** or **Ask About the Situation** — the opener\n2. **Comment on the Situation** — the flat reply comes back; try a different shape\n3. **Ask About the Situation** — the one that needs more than a word\n4. Read the second reply — carry on if it opened, leave warmly if it did not\n\n**Why this order:** a short answer usually means your opener was easy to answer shortly, so the second move changes shape and the third asks for something a single word cannot cover. The fourth step is the one nobody practises: stopping without it being awkward.\n\n**What people do instead:** stop at the first flat reply, or push through four more.\n\nMindset: give it one more try, and one only. If the second attempt lands flat too, that is a real answer.",
-      inputs: [
-        {
-          bundle: 'pro',
-          situation: "You are in the lift with a neighbour you have seen many times and never spoken to. It is six floors.",
-          steps: [
-            { front: "Simple Greeting — nothing yet, so start small.", back: "\"Morning.\"", guideFront: "Start at the bottom. There is nowhere further down to go." },
-            { front: "Comment on the Situation — they say, \"Morning,\" and look at the floor numbers.", back: "\"Slow lift, this one.\"" },
-            { front: "Ask About the Situation — they say, \"Mm.\"", back: "\"Are you on the fifth? I always see you get out around there.\"" },
-            { front: "Simple Greeting — they say, \"Fourth,\" and go back to their phone.", back: "\"Ah, right. Have a good one.\"", guideFront: "Two flat replies is an answer. Leave it warmly, not coldly." },
-          ]
-        },
-        {
-          bundle: 'pro',
-          situation: "You are waiting for a machine. The person using it is between sets, looking at their phone.",
-          steps: [
-            { front: "Ask About the Situation — you need to know if it is free, so ask.", back: "\"Are you still on this, or is it free?\"", guideFront: "A real question you actually need answered." },
-            { front: "Comment on the Situation — they say, \"Two more sets, sorry.\"", back: "\"No rush. It's rammed in here tonight.\"" },
-            { front: "Ask About the Situation — they say, \"Always is on a Tuesday.\"", back: "\"Is it? I've only ever come at the weekend. Is there a quiet night?\"" },
-            { front: "Introduce Yourself — they say, \"Thursdays are dead. That's when I'd come.\"", back: "\"Good to know. I'm Rikard, by the way.\"" },
-          ]
-        },
-        {
-          bundle: 'pro',
-          situation: "You are waiting for the doors to open among parents you half recognise. One of them is standing near you, looking at their phone.",
-          steps: [
-            { front: "Comment on the Situation — the doors are late again and you are standing next to each other.", back: "\"They've never once opened these on time.\"", guideFront: "An observation, not a question. Easy to ignore." },
-            { front: "Ask About the Situation — they glance up and say, \"No.\"", back: "\"Is it always this late, or is today special?\"" },
-            { front: "Comment on the Situation — they say, \"Always,\" and look back down.", back: "\"Right. I'll stop rushing, then.\"" },
-            { front: "Simple Greeting — they smile faintly and say nothing more.", back: "\"Have a good one.\"", guideFront: "They were polite, not interested. Leave it there and try again another day." },
-          ]
-        },
-      ]
-    },
-    {
-      name: "When You Are Joining Something",
-      guideFront: "What's happening, and the strategy to use",
-      guideBack: "One way it could sound",
-      description: "Arriving somewhere new — a class, a club, a team, a first day. Openers matter most here, and people freeze hardest, because everyone else appears to know each other already.\n\n1. **Introduce Yourself** or **Simple Greeting** — say who you are, and that you are new\n2. **Ask About the Situation** — how does this work\n3. **Comment on the Situation** — react to what they told you\n4. **Ask About the Situation** — one more, now that it is easy\n\n**Why this order:** being new is a legitimate reason to talk to anyone. Asking how things work then turns a stranger into someone helping you, which is an easier role for both of you than two strangers making conversation.\n\n**What people do instead:** hide the newness, which makes every question sound like one you should already know the answer to.\n\nMindset: being new is a licence. Use it while it lasts.",
-      inputs: [
-        {
-          bundle: 'pro',
-          situation: "It is your first time at a local club. People are setting out chairs. Nobody has noticed you yet.",
-          steps: [
-            { front: "Introduce Yourself — you are new here and nobody knows you, so say so.", back: "\"Hi — I'm Rikard, it's my first time.\"", guideFront: "Being new is the reason. Lead with it." },
-            { front: "Ask About the Situation — they say, \"Oh, welcome. I'm Bea.\"", back: "\"Is there anything I should know before we start?\"" },
-            { front: "Comment on the Situation — they say, \"Not really. We just get going and see who turns up.\"", back: "\"That suits me. I was worried there'd be a form.\"" },
-            { front: "Ask About the Situation — they say, \"Ha. No forms here.\"", back: "\"How many usually come on a Tuesday?\"" },
-          ]
-        },
-        {
-          bundle: 'pro',
-          situation: "It is your first morning. You are in the kitchen and one colleague is waiting for the kettle.",
-          steps: [
-            { front: "Simple Greeting — you have never met, so start with hello.", back: "\"Morning.\"", guideFront: "The smallest thing first. Everything else can follow it." },
-            { front: "Introduce Yourself — they say, \"Morning — you're new, aren't you?\"", back: "\"I am, yeah. Rikard. Started today.\"" },
-            { front: "Ask About the Situation — they say, \"Ah, welcome. I'm Tom, I'm on the other team.\"", back: "\"Is there anything about this place I should know on day one?\"" },
-            { front: "Comment on the Situation — they say, \"Don't trust the second kettle. It takes about a year.\"", back: "\"Noted. That's the most useful thing anyone's told me today.\"" },
-          ]
-        },
-        {
-          bundle: 'pro',
-          situation: "You have joined a course six weeks in. Everyone else has settled into their seats and their pairs. There is one free chair.",
-          steps: [
-            { front: "Ask About the Situation — you do not know if the seat is taken.", back: "\"Is anyone sitting here?\"", guideFront: "A practical question first. It gets you a foothold before anything else." },
-            { front: "Introduce Yourself — they move a bag and say, \"All yours.\"", back: "\"Thanks. I'm Rikard — I've joined late, so I'm about six weeks behind.\"" },
-            { front: "Ask About the Situation — they say, \"Oh, you'll catch up. I'm Ines.\"", back: "\"Is there anything from the first weeks I should read?\"" },
-            { front: "Comment on the Situation — they say, \"Honestly, just the handout. Nobody's read the rest.\"", back: "\"That's a relief. I'd braced myself for a reading list.\"" },
-          ]
-        },
-      ]
-    },
-  ],
   talkingaboutyourself: [
     {
       name: "A First Conversation",
@@ -6911,6 +6539,378 @@ const multiStepCollections = {
             { front: "Give a Detail — they say, \"Fair enough, fair enough.\"", back: "\"The interesting bit isn't the money anyway — I've ended up running the whole southern region, which nobody planned.\"" },
             { front: "Hand It Back — they say, \"Since when?\"", back: "\"March. It's been a steep few months. How's the shop going?\"" },
             { front: "Match What They Gave — they say, \"Quieter than I'd like, if I'm honest.\"", back: "\"Quieter how? Fewer people, or the same people spending less?\"" },
+          ]
+        },
+      ]
+    },
+  ],
+  startingconversations1: [
+    {
+      name: "The First Exchange",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
+      description: "One opener is rarely a conversation. You say something, they give you a little back, and the whole question is what you do with that little.\n\n1. **Simple Greeting** or **Comment on the Situation** — put something small in the air\n2. **Introduce Yourself** or **Ask About the Situation** — use what came back\n3. **Ask About the Situation** — go into the thing they mentioned\n4. **Comment on the Situation** or **Introduce Yourself** — land it\n\n**Why this order:** smallest to largest, each step built out of the last reply. That is what decides whether a conversation happens — using what came back instead of starting again.\n\n**What people do instead:** deliver a second opener unrelated to the answer, which reads as a series of attempts rather than an exchange.\n\nMindset: whatever they give you, use a piece of it. That is the entire skill.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You have taken a seat at a two-day course. The person next to you is unpacking a notebook. Nothing has started yet and there is about ten minutes to fill.",
+          steps: [
+            { front: "Simple Greeting — nothing has happened yet, so start with the smallest possible thing.", back: "\"Morning.\"", guideFront: "The smallest opener. Just a signal that you are open to talking." },
+            { front: "Introduce Yourself — they look up and say, \"Morning.\"", back: "\"I'm... Looks like we're neighbours for two days.\"" },
+            { front: "Ask About the Situation — they say, \"Hanna. Yeah, apparently so.\"", back: "\"Have you done one of these before? I don't know how they run it.\"" },
+            { front: "Comment on the Situation — they say, \"I did the one last spring. It's mostly group work.\"", back: "\"Group work, right. That explains the tables being like this.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You are in a slow queue outside a venue. The person in front of you keeps looking down the line. It is cold and nothing is moving.",
+          steps: [
+            { front: "Comment on the Situation — you have never met, so open with what you can both see.", back: "\"This isn't moving at all, is it.\"", guideFront: "No question yet. Give them something they can pick up or let go." },
+            { front: "Ask About the Situation — they turn round and say, \"Twenty minutes now.\"", back: "\"Do you know if there's more than one door open?\"" },
+            { front: "Comment on the Situation — they say, \"I think there's another one round the side.\"", back: "\"Of course there is. And nobody's told anyone.\"" },
+            { front: "Introduce Yourself — they laugh and say, \"Standard, really.\"", back: "\"I should introduce myself, if we're going to be here all night. I'm...\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You are at a table of eight at a wedding reception. You know the couple and nobody else. People are sitting down and reading the menu cards.",
+          steps: [
+            { front: "Simple Greeting — everyone is settling and nobody has spoken yet.", back: "\"Evening.\"", guideFront: "Say it to the person beside you, not to the table." },
+            { front: "Ask About the Situation — they say, \"Evening. Long day already, isn't it.\"", back: "\"It is. Do you know if there are speeches before the food or after?\"" },
+            { front: "Comment on the Situation — they say, \"After, I think. That's the civilised way round.\"", back: "\"Much better. Speeches on an empty stomach are a hard watch.\"" },
+            { front: "Introduce Yourself — they laugh and say, \"I've sat through a few.\"", back: "\"I'm... — I'm on the bride's side, badly out of my depth.\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "The Second Try",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
+      description: "Sometimes the reply is one word — the situation most people quietly dread.\n\n1. **Simple Greeting** or **Ask About the Situation** — the opener\n2. **Comment on the Situation** — the flat reply comes back; try a different shape\n3. **Ask About the Situation** — the one that needs more than a word\n4. Read the second reply — carry on if it opened, leave warmly if it did not\n\n**Why this order:** a short answer usually means your opener was easy to answer shortly, so the second move changes shape and the third asks for something a single word cannot cover. The fourth step is the one nobody practises: stopping without it being awkward.\n\n**What people do instead:** stop at the first flat reply, or push through four more.\n\nMindset: give it one more try, and one only. If the second attempt lands flat too, that is a real answer.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You are in the lift with a neighbour you have seen many times and never spoken to. It is six floors.",
+          steps: [
+            { front: "Simple Greeting — nothing yet, so start small.", back: "\"Morning.\"", guideFront: "Start at the bottom. There is nowhere further down to go." },
+            { front: "Comment on the Situation — they say, \"Morning,\" and look at the floor numbers.", back: "\"Slow lift, this one.\"" },
+            { front: "Ask About the Situation — they say, \"Mm.\"", back: "\"Are you on the fifth? I always see you get out around there.\"" },
+            { front: "Simple Greeting — they say, \"Fourth,\" and go back to their phone.", back: "\"Ah, right. Have a good one.\"", guideFront: "Two flat replies is an answer. Leave it warmly, not coldly." },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You are waiting for a machine. The person using it is between sets, looking at their phone.",
+          steps: [
+            { front: "Ask About the Situation — you need to know if it is free, so ask.", back: "\"Are you still on this, or is it free?\"", guideFront: "A real question you actually need answered." },
+            { front: "Comment on the Situation — they say, \"Two more sets, sorry.\"", back: "\"No rush. It's rammed in here tonight.\"" },
+            { front: "Ask About the Situation — they say, \"Always is on a Tuesday.\"", back: "\"Is it? I've only ever come at the weekend. Is there a quiet night?\"" },
+            { front: "Introduce Yourself — they say, \"Thursdays are dead. That's when I'd come.\"", back: "\"Good to know. I should say — I'm...\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You are waiting for the doors to open among parents you half recognise. One of them is standing near you, looking at their phone.",
+          steps: [
+            { front: "Comment on the Situation — the doors are late again and you are standing next to each other.", back: "\"They've never once opened these on time.\"", guideFront: "An observation, not a question. Easy to ignore." },
+            { front: "Ask About the Situation — they glance up and say, \"No.\"", back: "\"Is it always this late, or is today special?\"" },
+            { front: "Comment on the Situation — they say, \"Always,\" and look back down.", back: "\"Right. I'll stop rushing, then.\"" },
+            { front: "Simple Greeting — they smile faintly and say nothing more.", back: "\"Have a good one.\"", guideFront: "They were polite, not interested. Leave it there and try again another day." },
+          ]
+        },
+      ]
+    },
+    {
+      name: "The Way In",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
+      description: "Arriving somewhere new — a class, a club, a team, a first day. Openers matter most here, and people freeze hardest, because everyone else appears to know each other already.\n\n1. **Introduce Yourself** or **Simple Greeting** — say who you are, and that you are new\n2. **Ask About the Situation** — how does this work\n3. **Comment on the Situation** — react to what they told you\n4. **Ask About the Situation** — one more, now that it is easy\n\n**Why this order:** being new is a legitimate reason to talk to anyone. Asking how things work then turns a stranger into someone helping you, which is an easier role for both of you than two strangers making conversation.\n\n**What people do instead:** hide the newness, which makes every question sound like one you should already know the answer to.\n\nMindset: being new is a licence. Use it while it lasts.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "It is your first time at a local club. People are setting out chairs. Nobody has noticed you yet.",
+          steps: [
+            { front: "Introduce Yourself — you are new here and nobody knows you, so say so.", back: "\"Hi — it's my first time here. I'm...\"", guideFront: "Being new is the reason. Lead with it." },
+            { front: "Ask About the Situation — they say, \"Oh, welcome. I'm Bea.\"", back: "\"Is there anything I should know before we start?\"" },
+            { front: "Comment on the Situation — they say, \"Not really. We just get going and see who turns up.\"", back: "\"That suits me. I was worried there'd be a form.\"" },
+            { front: "Ask About the Situation — they say, \"Ha. No forms here.\"", back: "\"How many usually come on a Tuesday?\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "It is your first morning. You are in the kitchen and one colleague is waiting for the kettle.",
+          steps: [
+            { front: "Simple Greeting — you have never met, so start with hello.", back: "\"Morning.\"", guideFront: "The smallest thing first. Everything else can follow it." },
+            { front: "Introduce Yourself — they say, \"Morning — you're new, aren't you?\"", back: "\"I am, yeah. Started today. I'm...\"" },
+            { front: "Ask About the Situation — they say, \"Ah, welcome. I'm Tom, I'm on the other team.\"", back: "\"Is there anything about this place I should know on day one?\"" },
+            { front: "Comment on the Situation — they say, \"Don't trust the second kettle. It takes about a year.\"", back: "\"Noted. That's the most useful thing anyone's told me today.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You have joined a course six weeks in. Everyone else has settled into their seats and their pairs. There is one free chair.",
+          steps: [
+            { front: "Ask About the Situation — you do not know if the seat is taken.", back: "\"Is anyone sitting here?\"", guideFront: "A practical question first. It gets you a foothold before anything else." },
+            { front: "Introduce Yourself — they move a bag and say, \"All yours.\"", back: "\"Thanks. I'm... — I've joined late, so I'm about six weeks behind.\"" },
+            { front: "Ask About the Situation — they say, \"Oh, you'll catch up. I'm Ines.\"", back: "\"Is there anything from the first weeks I should read?\"" },
+            { front: "Comment on the Situation — they say, \"Honestly, just the handout. Nobody's read the rest.\"", back: "\"That's a relief. I'd braced myself for a reading list.\"" },
+          ]
+        },
+      ]
+    },
+  ],
+  startingconversations2: [
+    {
+      name: "From a Favour Into a Conversation",
+      guideFront: "What they gave back, and the opener to use next.",
+      guideBack: "One way it could sound.",
+      description: "A request or an offer gets you talking, but it also ends by itself: the favour is done, they say no problem, and the exchange is over unless you do something with it.\n\nThis combo practises the second move — turning a completed small transaction into an actual conversation, usually by picking up the situation or something they said while helping.\n\nEach step front carries what they said back, and names the opener to use next.\n\nMindset: the favour buys you about ten seconds of goodwill. Use them.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You are on a machine you have not used before and cannot work out the weight pin. Someone is on the machine next to you, between sets.",
+          steps: [
+            { front: "Step 1 · Ask for Help — you genuinely do not know how it works, so ask.", back: "\"Sorry — do you know how you change the weight on this one?\"", guideFront: "A real request. Small enough that yes is easy." },
+            { front: "Step 2 · Mention a Shared Experience — they lean over, show you, and say, \"It's a stiff one, that.\"", back: "\"Cheers. I've been standing here looking at it for a while, if I'm honest.\"" },
+            { front: "Step 3 · Ask for Help — they laugh and say, \"We've all done it.\"", back: "\"While I've got you — is there a trick to the one behind you as well?\"" },
+            { front: "Step 4 · Pick Up a Shared Thread — they say, \"That one's easier. Same pin, other side.\"", back: "\"Good. I'm here Tuesdays, so I'll probably be asking you again.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You are outside a venue. A long queue has formed at the main door, and you know there is a second entrance round the side. Someone joins the line behind you.",
+          steps: [
+            { front: "Step 1 · Offer Something Useful — you know something they would want to know.", back: "\"There's a second door round the side, if you'd rather. Hardly anyone's found it.\"", guideFront: "Give it and let go. Thanks is a complete outcome." },
+            { front: "Step 2 · Mention a Shared Experience — they say, \"Oh — cheers. Are you going round?\"", back: "\"I might. I did this last year and stood here forty minutes.\"" },
+            { front: "Step 3 · Offer Something Useful — they say, \"Forty minutes? God.\"", back: "\"They also open the bar before the doors, so the queue in there is worse. Go straight through.\"" },
+            { front: "Step 4 · Pick Up a Shared Thread — they say, \"You've done this properly, haven't you.\"", back: "\"Third time. Have you been before, or is this the first?\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Picking Someone Back Up",
+      guideFront: "What they gave back, and the opener to use next.",
+      guideBack: "One way it could sound.",
+      description: "With someone you already half know, the opening is not the hard part — remembering is. The combo drills the pattern of coming back to something specific and then following where their answer goes.\n\nThe first step is always the thread, because it is the strongest opener available with someone you know a little. After that, what they give you decides.\n\nMindset: the specific question is the whole move. \"How's things\" and \"how did Thursday go\" are not the same opener.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "A colleague you speak to occasionally is making tea in the kitchen. Last time you spoke they were about to hand in something big.",
+          steps: [
+            { front: "Step 1 · Pick Up a Shared Thread — you remember what they were in the middle of, so use it.", back: "\"Did the report get finished in the end? You were nearly there last time.\"", guideFront: "Specific beats general. Name the thing." },
+            { front: "Step 2 · Mention a Shared Experience — they say, \"Handed it in Friday. Barely.\"", back: "\"You had the same week as me, then. Mine went in about an hour before the deadline.\"" },
+            { front: "Step 3 · Ask for Help — they say, \"Everyone's had a horrible month.\"", back: "\"Actually, while you're here — do you know who signs these off now? I asked two people and got two answers.\"" },
+            { front: "Step 4 · Offer Something Useful — they say, \"It's Priya now. Changed in January.\"", back: "\"Right, thanks. And if you're doing another one — the template's changed, the old one gets bounced back.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You are putting the bins out. A neighbour you speak to occasionally comes out at the same time. Last time you spoke their car was in the garage.",
+          steps: [
+            { front: "Step 1 · Pick Up a Shared Thread — something was in progress last time, so ask about it.", back: "\"Did you get the car back in the end?\"", guideFront: "Specific beats general. Name the thing." },
+            { front: "Step 2 · Mention a Shared Experience — they say, \"Two weeks and four hundred quid. Don't ask.\"", back: "\"That's the going rate, isn't it. Mine was the same last spring.\"" },
+            { front: "Step 3 · Offer Something Useful — they say, \"Is there anywhere better round here?\"", back: "\"There's a place on the industrial estate. Half what I paid at the main dealer, and quicker.\"" },
+            { front: "Step 4 · Pick Up a Shared Thread — they say, \"I'll write that down.\"", back: "\"Do. And how's the extension going? Is that still happening?\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "When the Favour Is All They Wanted",
+      guideFront: "What they gave back, and the opener to use next.",
+      guideBack: "One way it could sound.",
+      description: "Not every helpful exchange is an opening. Sometimes a person answers your question, or takes your tip, and quite clearly wants to get on with their day.\n\nThis combo practises reading that and stopping well — which matters more here than in the other openers, because a request creates a small obligation and pushing past a polite answer turns a favour into an imposition.\n\nBoth scenarios end with a clean exit rather than a conversation. That is a successful outcome, not a failed one.\n\nMindset: they helped you. Do not charge them interest.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You cannot find something in a large shop. A member of staff is restocking a shelf nearby, working quickly.",
+          steps: [
+            { front: "Step 1 · Ask for Help — you need to know where something is.", back: "\"Sorry — do you know where the batteries are?\"", guideFront: "A real request. Keep it small." },
+            { front: "Step 2 · Mention a Shared Experience — they point and say, \"Aisle six, bottom shelf.\"", back: "\"Thanks. I've walked past it twice, obviously.\"" },
+            { front: "Step 3 · Read it and stop — they say, \"Everyone does,\" and turn back to the shelf.", back: "\"Cheers. Have a good one.\"", guideFront: "They answered and went back to work. That is the whole exchange." },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You are waiting for a train. Someone is standing at the far end of the platform where the train does not stop today.",
+          steps: [
+            { front: "Step 1 · Offer Something Useful — they are about to be in the wrong place.", back: "\"It's only four carriages today — it stops down that end.\"", guideFront: "Give it and let go." },
+            { front: "Step 2 · Mention a Shared Experience — they say, \"Oh, thanks,\" and start walking down.", back: "\"They've been doing it all week. Caught me out on Monday.\"" },
+            { front: "Step 3 · Read it and stop — they say, \"Right, thanks again,\" and put their headphones back in.", back: "\"No problem.\"", guideFront: "Headphones back in is an answer. Take it warmly." },
+          ]
+        },
+      ]
+    },
+  ],
+  startingconversations4: [
+    {
+      name: "Going First and Staying There",
+      guideFront: "What they gave back, and the opener to use next.",
+      guideBack: "One way it could sound.",
+      description: "When you open with something of your own, the other person usually matches it — but only if you leave room. The commonest mistake is to say the brave thing and then immediately cover it with a joke or a change of subject.\n\nThis combo chains the pack's four openers, and each step front carries what they gave back. Notice how often their reply is a matching disclosure: that is what going first buys you.\n\nMindset: say it, then stop. What they do with it is the conversation.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You are waiting to present at a training day. Someone else who is also presenting is standing nearby, checking their notes for the fourth time.",
+          steps: [
+            { front: "Step 1 · Say How You Feel — name what you are feeling, small and current.", back: "\"I'm quite nervous about this, actually.\"", guideFront: "One short sentence. Then stop talking." },
+            { front: "Step 2 · Use Humour or Irony — they say, \"Oh good, it's not just me.\"", back: "\"We can be terrible together. Solidarity.\"" },
+            { front: "Step 3 · Say Why You Came Over — they laugh and say, \"I've rewritten mine three times.\"", back: "\"I came over because you looked exactly as calm as I feel. I'm...\"" },
+            { front: "Step 4 · Mention Something That Happened — they say, \"Hanna. And that's fair.\"", back: "\"I nearly didn't get here at all — I spent ten minutes trying to get into the wrong building.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You have arrived at a party where you know only the host, who is busy. Someone is standing near the kitchen door on their own.",
+          steps: [
+            { front: "Step 1 · Say Why You Came Over — name the approach, since that is the awkward part.", back: "\"I know exactly one person here and she's disappeared. So — hello.\"", guideFront: "The real reason. Awkward and true beats smooth and invented." },
+            { front: "Step 2 · Say How You Feel — they say, \"Ha. I'm in the same position, honestly.\"", back: "\"It's a strange thing to do to yourself, coming to these.\"" },
+            { front: "Step 3 · Use Humour or Irony — they say, \"And yet here we both are.\"", back: "\"Stood by the kitchen. The traditional position.\"" },
+            { front: "Step 4 · Mention Something That Happened — they say, \"Closest to the food, though.\"", back: "\"Sensible. I got on the wrong bus getting here, so I've earned it.\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "When the Joke Does Not Land",
+      guideFront: "What they gave back, and the opener to use next.",
+      guideBack: "One way it could sound.",
+      description: "You make a joke and get nothing — a polite half-smile, or a blank look, or worse, they take it seriously. This is the risk that stops people using humour at all.\n\nThe recovery is short and cheap: do not explain it, do not repeat it, and do not apologise at length. Move to a plainer opener and carry on as though nothing happened, because from the outside, nothing has.\n\nMindset: a missed joke costs about two seconds. Explaining it costs considerably more.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You are on a badly delayed train. You make a dry remark to the person opposite and they take it at face value.",
+          steps: [
+            { front: "Step 1 · Use Humour or Irony — say the dry version about the delay.", back: "\"Going well, this.\"", guideFront: "Aimed at the situation, not the person." },
+            { front: "Step 2 · Mention Something That Happened — they say, \"Is it? I thought it was quite bad.\"", back: "\"No, you're right, it's terrible — I was being sarcastic badly. They said forty minutes at my end.\"" },
+            { front: "Step 3 · Say How You Feel — they say, \"Forty? I've got a connection at six.\"", back: "\"You'll not make that. I'd be furious in your position.\"" },
+            { front: "Step 4 · Mention Something That Happened — they say, \"I'm getting there.\"", back: "\"There's a bus that does the same route, apparently. Slower but it exists.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You are in a long queue. You make an exaggerated joke to the person behind you and it lands on nothing.",
+          steps: [
+            { front: "Step 1 · Use Humour or Irony — exaggerate the wait.", back: "\"I think we've been here long enough to claim residency.\"", guideFront: "Say it lightly. If it misses, let it go." },
+            { front: "Step 2 · Ask about the situation instead — they smile faintly and say nothing.", back: "\"Do you know if there's more than one desk open?\"", guideFront: "Do not explain the joke. Switch to something plain." },
+            { front: "Step 3 · Mention Something That Happened — they say, \"I think there's one round the side.\"", back: "\"Of course there is. Same thing happened to me at the airport last month.\"" },
+            { front: "Step 4 · Read it and stop — they say, \"Mm,\" and look at their phone.", back: "\"Fair enough. Good luck with it.\"", guideFront: "Two flat replies is an answer. Leave warmly." },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Naming the Approach",
+      guideFront: "What they gave back, and the opener to use next.",
+      guideBack: "One way it could sound.",
+      description: "Saying why you came over is the strongest opener in the pack, and the hardest to start. Once it is said, the conversation tends to go quickly, because the awkward part is already out loud and behind you.\n\nBoth scenarios practise the same shape: name the reason, let them respond, and then move to ordinary conversation rather than staying in the meta.\n\nMindset: say why once. Then talk about something else.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You have passed the same colleague from another team for about a year. You are both in the kitchen at the same time.",
+          steps: [
+            { front: "Step 1 · Say Why You Came Over — name the year of not speaking.", back: "\"We've walked past each other for about a year and I've never said hello. I'm...\"", guideFront: "Name the delay lightly. It usually lands as funny." },
+            { front: "Step 2 · Use Humour or Irony — they say, \"Ha — I know, I've thought the same. Tom.\"", back: "\"It's a very British problem, this.\"" },
+            { front: "Step 3 · Mention Something That Happened — they say, \"We could have sorted it months ago.\"", back: "\"We could. I only got brave because I've just had a very stupid morning.\"" },
+            { front: "Step 4 · Say How You Feel — they say, \"Go on then.\"", back: "\"I spent ten minutes trying to badge into the wrong building. I'm not at my best.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "It is your first evening at a club. Everyone else appears to know one another. Two people are talking near the equipment.",
+          steps: [
+            { front: "Step 1 · Say Why You Came Over — being new is the reason, so lead with it.", back: "\"It's my first time here and standing by the door felt worse. I'm...\"", guideFront: "Being new is a licence. Use it while it lasts." },
+            { front: "Step 2 · Say How You Feel — they say, \"Welcome — I'm Bea. Everyone's new once.\"", back: "\"I'm about eighty per cent nerves, if I'm honest.\"" },
+            { front: "Step 3 · Use Humour or Irony — they say, \"You'll be fine. We're not very serious.\"", back: "\"That's the best news I've had all week.\"" },
+            { front: "Step 4 · Mention Something That Happened — they say, \"What made you come along?\"", back: "\"A friend kept telling me about it and then moved to Manchester. So here I am alone.\"" },
+          ]
+        },
+      ]
+    },
+  ],
+  responsivehumour: [
+    {
+      name: "Setup and Response",
+      guideFront: "What they said, and the strategy to answer it with.",
+      guideBack: "One way it could sound.",
+      description: "The book's own drill, in four steps. One person makes a plain\ninformational statement; the other answers with one of the five. Then it comes\nback, and you answer again.\n\nThe setup is deliberately dull — the weather, the timetable, the room. That is\nthe point of the exercise: if you can be funny about white walls, you never\nneed to wait for good material.\n\nMindset: their sentence is the raw material. You are not starting anything.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "Two of you are in a classroom before anyone else arrives, with nothing much to talk about.",
+          steps: [
+            { front: "Understatement — they say, \"This room is too dark.\"", back: "\"Mildly cave-like, yes.\"" },
+            { front: "Exaggeration — they say, \"And we have three tests next week.\"", back: "\"Three? That's not a week, that's a sentence.\"" },
+            { front: "Irony — they say, \"I'm really looking forward to it.\"", back: "\"Obviously. Best week of the year.\"" },
+            { front: "Deliberate Misunderstanding — they say, \"At least it's lunch in five minutes.\"", back: "\"Five minutes? I'll never last. Tell my family I tried.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A colleague is listing small annoyances and clearly wants company rather than solutions.",
+          steps: [
+            { front: "Exaggeration — they say, \"I couldn't sleep, my neighbour was making noise.\"", back: "\"Is your neighbour a marching band? It sounds like a marching band.\"" },
+            { front: "Understatement — they say, \"And then the car wouldn't start.\"", back: "\"So the morning has been going well.\"" },
+            { front: "Misdirection — they say, \"At least my computer's fast.\"", back: "\"I know. I saw it running down the street yesterday.\"" },
+            { front: "Irony — they say, \"You're a great help.\"", back: "\"I'm known for it. People come from miles.\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Keeping It Going",
+      guideFront: "What they said, and the strategy to answer it with.",
+      guideBack: "One way it could sound.",
+      description: "Two exchanges rather than one. The first joke is easy; what\nmost people miss is that the second one should build on the first rather than\nstart again.\n\nBuilding means staying inside the world the first joke created. If you made\ntheir computer a runner, keep it running — do not open a second joke about\nsomething else. The staying is what makes it feel like play instead of two\npeople taking turns being funny.\n\nMindset: stay in the same world. The second joke lives inside the first.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "A friend is very pleased with a new laptop and keeps mentioning how quick it is.",
+          steps: [
+            { front: "Misdirection — they say, \"This thing is so fast.\"", back: "\"I know. I saw it running down the street yesterday.\"" },
+            { front: "Exaggeration — they say, \"You're an idiot.\"", back: "\"It overtook a bus. I waved. It didn't wave back — too busy.\"" },
+            { front: "Understatement — they say, \"It's just a laptop.\"", back: "\"Sure. A modest little machine with Olympic ambitions.\"" },
+            { front: "Irony — they say, \"I'm never telling you anything again.\"", back: "\"Very wise. I've been nothing but unsupportive.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You and someone you barely know are in a queue that has not moved for several minutes.",
+          steps: [
+            { front: "Exaggeration — the queue does not move.", back: "\"I've been here so long I have grandchildren.\"" },
+            { front: "Understatement — they say, \"It is quite slow.\"", back: "\"Bit sluggish, yes.\"" },
+            { front: "Misdirection — they say, \"I have somewhere to be at two.\"", back: "\"So did I. It was last Tuesday.\"" },
+            { front: "Irony — the queue moves one step.", back: "\"Ah. Progress. I'll write to someone.\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "When It Does Not Land",
+      guideFront: "What they said, and the strategy to answer it with.",
+      guideBack: "One way it could sound.",
+      description: "Understatement, then a plain answer, then back in later. The\nrecovery, which is the part nobody practises.\n\nThe rule is simple and hard: do not explain it. An explained joke is worse\nthan an unnoticed one, and a second attempt at the same joke is worse still.\nAcknowledge it lightly if at all, answer the thing they actually said, and let\nthe next opening come on its own.\n\nMindset: a joke that misses costs four seconds. Explaining it costs the\nconversation.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You make an ironic reply and the other person takes it completely at face value.",
+          steps: [
+            { front: "Irony — they say, \"We have three tests next week.\"", back: "\"Lovely. I was hoping for a quiet week.\"" },
+            { front: "Understatement — they say, \"Really? I think it's awful.\"", back: "\"That was me agreeing with you, badly.\"" },
+            { front: "Exaggeration — they say, \"Oh — right.\"", back: "\"To be clear, I'd rather do anything else. Anything.\"" },
+            { front: "Misdirection — they say, \"Same, honestly.\"", back: "\"Good. I've already planned my entire week around avoiding it.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You reach for a joke and realise mid-sentence that they are genuinely upset about it.",
+          steps: [
+            { front: "Understatement — they say, \"My week has been a disaster.\"", back: "\"Sounds mildly inconvenient.\"" },
+            { front: "Deliberate Misunderstanding — they say, \"No, it's actually been really bad.\"", back: "(drop it — answer the sentence, not the setup)" },
+            { front: "Exaggeration — later, once they have finished.", back: "\"For what it's worth, that is the worst week I've heard about this year.\"" },
+            { front: "Irony — they say, \"Thanks, that helps.\"", back: "\"I'm here to help. Famously.\"" },
           ]
         },
       ]
