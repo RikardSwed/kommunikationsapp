@@ -419,73 +419,6 @@ const challengesCollections = {
       ]
     },
   ],
-  startingconversations1: [
-    {
-      name: "They Look Busy or Closed Off",
-      guideFront: "What makes this opening hard?",
-      guideBack: "A possible opener, with the strategy in brackets.",
-      description: "Headphones, a book, a phone, a fast walk, a screen they are staring at. The signals are usually accurate, and the honest answer is that sometimes the right move is to say nothing at all.\n\nWhen you do need to speak — because you need something, or because it would be strange not to — keep it small and make it easy to end. A comment or a short practical question gives them a graceful way to give you one word and go back to what they were doing.\n\nMindset: an opener they can answer in one word is a kindness, not a failure.",
-      inputs: [
-        { q: "They have headphones in but you need to know if the seat is free.", a: "\"Sorry — is anyone sitting here?\" [Ask About the Situation]", bundle: 'pro' },
-        { q: "They are reading and you are sharing a table.", a: "\"Morning.\" [Simple Greeting]", bundle: 'pro' },
-        { q: "They are clearly working but you have just joined the team.", a: "\"I'll not interrupt — I'm Rikard, I started today. I'll catch you later.\" [Introduce Yourself]", bundle: 'pro' },
-        { q: "They are on their phone and the queue has stopped completely.", a: "\"This has properly stopped, hasn't it.\" [Comment on the Situation]", bundle: 'pro' },
-        { q: "They look stressed and are gathering their things quickly.", a: "\"Do you know if there's another one after this?\" [Ask About the Situation]", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Nothing Is Happening",
-      guideFront: "What makes this opening hard?",
-      guideBack: "A possible opener, with the strategy in brackets.",
-      description: "An empty room, a bare corridor, a lift, a quiet waiting area. There is no event to comment on and no obvious question to ask, which is exactly when people conclude there is nothing to say.\n\nThere is always something: the emptiness itself, the wait, being early, the room, why you are both here. The bar is much lower than it feels — an opener does not have to be interesting, only shared.\n\nMindset: the fact that nothing is happening is itself something you are both in.",
-      inputs: [
-        { q: "You and one other person are the only ones who have arrived.", a: "\"I think we're the keen ones.\" [Comment on the Situation]", bundle: 'pro' },
-        { q: "You are in a silent lift for four floors.", a: "\"Morning.\" [Simple Greeting]", bundle: 'pro' },
-        { q: "You are both in an empty waiting room with no information.", a: "\"Do you know if they call you or you just go in?\" [Ask About the Situation]", bundle: 'pro' },
-        { q: "You are early to a meeting with one other person and nothing to do.", a: "\"Have you come far for this?\" [Ask About the Situation]", bundle: 'pro' },
-        { q: "You are sitting in a bare room waiting for something to start.", a: "\"They've really gone to town on the decor in here.\" [Comment on the Situation]", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "They Already Know Each Other",
-      guideFront: "What makes this opening hard?",
-      guideBack: "A possible opener, with the strategy in brackets.",
-      description: "Walking towards a group who are mid-conversation is the hardest version of this, because there is no obvious gap and interrupting feels rude.\n\nTwo things help. You do not have to break into the topic — you can open the smaller conversation of who you are. And joining at the edge, quietly, is normal: standing near, catching an eye, and introducing yourself to one person rather than the group.\n\nMindset: talk to one person, not to the group. Groups do not answer; people do.",
-      inputs: [
-        { q: "Three people are talking and you know none of them.", a: "\"Mind if I join? I'm Rikard, I don't know anybody here.\" [Introduce Yourself]", bundle: 'pro' },
-        { q: "You catch the eye of one person on the edge of a group.", a: "\"Hi — Rikard.\" [Introduce Yourself]", bundle: 'pro' },
-        { q: "The group pauses and nobody says anything to you.", a: "\"Is this the right room for the six o'clock?\" [Ask About the Situation]", bundle: 'pro' },
-        { q: "You have been standing near a group for a while without speaking.", a: "\"Busy tonight, isn't it.\" [Comment on the Situation]", bundle: 'pro' },
-        { q: "You know one person in the group slightly.", a: "\"Evening — I'm going to hide behind you, I don't know anyone.\" [Simple Greeting]", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "You Have Left It Too Long",
-      guideFront: "What makes this opening hard?",
-      guideBack: "A possible opener, with the strategy in brackets.",
-      description: "You have been sitting next to someone for twenty minutes, or you have passed the same neighbour weekly for a year. The window for a normal opener seems to have closed, and every option now feels like it needs explaining.\n\nIt does not. Naming the delay lightly is the whole solution, and it usually lands as funny rather than awkward. People are almost always relieved that someone finally said something.\n\nMindset: name it and move on. One short sentence undoes a year of not speaking.",
-      inputs: [
-        { q: "You have sat beside this person for half of a long day.", a: "\"I've been sitting next to you all morning and never said hello. I'm Rikard.\" [Introduce Yourself]", bundle: 'pro' },
-        { q: "You have passed the same neighbour weekly for a year.", a: "\"We must have passed each other fifty times. I'm Rikard, from the third floor.\" [Introduce Yourself]", bundle: 'pro' },
-        { q: "You have been in a silent car share for ten minutes.", a: "\"Do you know how long this takes, roughly?\" [Ask About the Situation]", bundle: 'pro' },
-        { q: "You have exchanged nods with a colleague for months.", a: "\"Morning. I realise I've never actually asked what you do here.\" [Simple Greeting]", bundle: 'pro' },
-        { q: "The event is nearly over and you have not spoken to the person beside you.", a: "\"Well, that went quickly. Was it what you expected?\" [Ask About the Situation]", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "The Opener Falls Flat",
-      guideFront: "What makes this opening hard?",
-      guideBack: "A possible opener, with the strategy in brackets.",
-      description: "You said something and got a one-word reply, a polite smile, or nothing. This is the moment people take as proof that they are bad at this.\n\nIt is usually not about you. People are tired, preoccupied, in a hurry, or simply not in the mood, and none of that is information about your opener. The useful skill is having one second attempt ready, and then being able to stop without it being awkward.\n\nMindset: one more try, then let it go warmly. A friendly exit costs nothing and leaves the door open for another day.",
-      inputs: [
-        { q: "Your comment got a \"mm\" and nothing else.", a: "\"Do you know if there's a break in this?\" [Ask About the Situation]", bundle: 'pro' },
-        { q: "Your question got a one-word factual answer.", a: "\"First time here for me. It's bigger than I thought.\" [Comment on the Situation]", bundle: 'pro' },
-        { q: "You have tried twice and got very little back.", a: "\"Anyway — enjoy the rest of it.\" [Simple Greeting]", bundle: 'pro' },
-        { q: "They answered and immediately looked back at their phone.", a: "\"No worries. Cheers.\" [Simple Greeting]", bundle: 'pro' },
-        { q: "Your opener landed but they seem to be leaving.", a: "\"I'm Rikard, by the way — I'll probably see you next week.\" [Introduce Yourself]", bundle: 'pro' },
-      ]
-    },
-  ],
   startingconversations4: [
     {
       name: "The Joke Misfires",
@@ -4527,6 +4460,88 @@ const challengesCollections = {
         { q: "They give one-word answers to everything you ask.", a: "\"I'll stop asking. It's just good to see you.\" [Loop Back or Rephrase]", bundle: 'pro' },
         { q: "They mention it once and immediately move on.", a: "\"You said the thing with your brother — is that still going on?\" [Ask Follow-up Questions]", bundle: 'pro' },
         { q: "They deflect with a joke about it.", a: "\"I do that too when I don't want to get into something.\" [Relate Through Sharing]", bundle: 'pro' },
+      ]
+    },
+  ],
+  startingconversations1: [
+    {
+      name: "Closed Signals",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Headphones, a book, a phone, a fast walk, a screen they are staring at. The signals are usually accurate, and the honest answer is that sometimes the right move is to say nothing at all.\n\n**What goes wrong:** an opener that needs a real answer. They give you one because people are polite, and now you are both in a conversation neither of you chose.\n\n**What works here:** **Comment on the Situation** and **Simple Greeting**, because both can be answered with a nod. **Ask About the Situation** is fine when you genuinely need something — keep it short and practical.\n\n**Avoid:** reading the signals as a personal verdict. Someone absorbed in a book is absorbed in a book.\n\nMindset: an opener they can answer in one word is a kindness, not a failure.",
+      inputs: [
+        { q: "They have headphones in but you need to know if the seat is free.", a: "\"Sorry — is anyone sitting here?\" [Ask About the Situation]", bundle: 'pro' },
+        { q: "They are reading and you are sharing a table.", a: "\"Hello.\" [Simple Greeting]", bundle: 'pro' },
+        { q: "They are clearly working but you have just joined the team.", a: "\"I'll not interrupt — I'm Rikard, I started today. I'll catch you later.\" [Introduce Yourself]", bundle: 'pro' },
+        { q: "They are on their phone and the queue has stopped completely.", a: "\"This has properly stopped, hasn't it.\" [Comment on the Situation]", bundle: 'pro' },
+        { q: "They look stressed and are gathering their things quickly.", a: "\"Do you know if there's another one after this?\" [Ask About the Situation]", bundle: 'pro' },
+        { q: "They have a laptop open on a train table and are typing fast.", a: "\"Sorry to interrupt — is this seat taken?\" [Ask About the Situation]", bundle: 'pro' },
+        { q: "They are watching something with one earphone out.", a: "\"Bit of a wait, this.\" [Comment on the Situation]", bundle: 'pro' },
+        { q: "They walk past you quickly every morning without looking up.", a: "\"Morning.\" [Simple Greeting]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "An Empty Room",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "An empty room, a bare corridor, a lift, a quiet waiting area. There is no event to comment on and no obvious question to ask, which is exactly when people conclude there is nothing to say.\n\n**What goes wrong:** you wait for something to happen that you can remark on. It does not happen, and the silence gets more established with every minute you leave it.\n\n**What works here:** **Comment on the Situation** — the emptiness, the wait, being early, the room itself. **Ask About the Situation** works too, because in an empty room the practical questions are the obvious ones and nobody minds being asked.\n\n**Avoid:** the belief that the opener has to be interesting. It has to be shared, and being the only two people in a room is about as shared as it gets.\n\nMindset: the fact that nothing is happening is itself something you are both in.",
+      inputs: [
+        { q: "You and one other person are the only ones who have arrived.", a: "\"I think we're the keen ones.\" [Comment on the Situation]", bundle: 'pro' },
+        { q: "You are in a silent lift for four floors.", a: "\"Alright.\" [Simple Greeting]", bundle: 'pro' },
+        { q: "You are both in an empty waiting room with no information.", a: "\"Do you know if they call you or you just go in?\" [Ask About the Situation]", bundle: 'pro' },
+        { q: "You are early to a meeting with one other person and nothing to do.", a: "\"Have you come far for this?\" [Ask About the Situation]", bundle: 'pro' },
+        { q: "You are sitting in a bare room waiting for something to start.", a: "\"They've really gone to town on the decor in here.\" [Comment on the Situation]", bundle: 'pro' },
+        { q: "You are both waiting for a bus that is not due for ten minutes.", a: "\"Nothing for a while, is there.\" [Comment on the Situation]", bundle: 'pro' },
+        { q: "The two of you are in a corridor waiting to be called in.", a: "\"Are you here for the same thing as me, or is that a coincidence?\" [Ask About the Situation]", bundle: 'pro' },
+        { q: "You will be sat in this quiet room together for an hour.", a: "\"Looks like it's just us. I'm Rikard.\" [Introduce Yourself]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Joining a Group",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Walking towards people who are mid-conversation is the hardest version of this, because there is no obvious gap and interrupting feels rude.\n\n**What goes wrong:** you try to join the topic. You have missed the first half, so you either say nothing relevant or ask a question everyone has already answered.\n\n**What works here:** **Introduce Yourself** to one person rather than to the group — you do not have to break into the topic, because there is a smaller conversation available about who you are. **Ask About the Situation** works as a side door.\n\n**Avoid:** talking to the group. Groups do not answer; people do.\n\nMindset: join at the edge, quietly, and to one person.",
+      inputs: [
+        { q: "Three people are talking and you know none of them.", a: "\"Mind if I join? I'm Rikard, I don't know anybody here.\" [Introduce Yourself]", bundle: 'pro' },
+        { q: "You catch the eye of one person on the edge of a group.", a: "\"Hi — Rikard.\" [Introduce Yourself]", bundle: 'pro' },
+        { q: "The group pauses and nobody says anything to you.", a: "\"Is this the right room for the six o'clock?\" [Ask About the Situation]", bundle: 'pro' },
+        { q: "You have been standing near a group for a while without speaking.", a: "\"Busy tonight, isn't it.\" [Comment on the Situation]", bundle: 'pro' },
+        { q: "You know one person in the group slightly.", a: "\"Evening — I'm going to hide behind you, I don't know anyone.\" [Simple Greeting]", bundle: 'pro' },
+        { q: "Two people beside you are laughing about something you missed.", a: "\"I've no idea what that was about, but I'd like to.\" [Comment on the Situation]", bundle: 'pro' },
+        { q: "A group is forming for an activity and you are not in one.", a: "\"Have you got room for one more? I'm Rikard.\" [Introduce Yourself]", bundle: 'pro' },
+        { q: "Someone leaves the group and you are suddenly next to a stranger.", a: "\"Do you know how long this bit goes on for?\" [Ask About the Situation]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Left Too Long",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "You have been sitting next to someone for twenty minutes, or you have passed the same neighbour weekly for a year. The window for a normal opener seems to have closed.\n\n**What goes wrong:** every option now feels like it needs explaining, so you keep not speaking, and the thing that needs explaining gets bigger.\n\n**What works here:** **Introduce Yourself**, with the delay named lightly. It usually lands as funny rather than awkward — people are almost always relieved that somebody finally said something. **Ask About the Situation** is the lower-key version if naming it feels like too much.\n\n**Avoid:** apologising at length for not having spoken. One short sentence undoes a year; a paragraph makes it strange again.\n\nMindset: name it and move on. Nobody has been keeping score except you.",
+      inputs: [
+        { q: "You have sat beside this person for half of a long day.", a: "\"I've been sitting next to you all morning and never said hello. I'm Rikard.\" [Introduce Yourself]", bundle: 'pro' },
+        { q: "You have passed the same neighbour weekly for a year.", a: "\"We must have passed each other fifty times. I'm Rikard, from the third floor.\" [Introduce Yourself]", bundle: 'pro' },
+        { q: "You have been in a silent car share for ten minutes.", a: "\"Do you know how long this takes, roughly?\" [Ask About the Situation]", bundle: 'pro' },
+        { q: "You have exchanged nods with a colleague for months.", a: "\"Morning. I realise I've never actually asked what you do here.\" [Simple Greeting]", bundle: 'pro' },
+        { q: "The event is nearly over and you have not spoken to the person beside you.", a: "\"Well, that went quickly. Was it what you expected?\" [Ask About the Situation]", bundle: 'pro' },
+        { q: "You have been in the same club for a term without learning anyone's name.", a: "\"I've been coming since September and I know nobody. I'm Rikard.\" [Introduce Yourself]", bundle: 'pro' },
+        { q: "You realise mid-journey that you should have spoken an hour ago.", a: "\"Long one, this.\" [Comment on the Situation]", bundle: 'pro' },
+        { q: "You are about to leave a two-day course having said nothing to your neighbour.", a: "\"Two days and I never introduced myself. Rikard.\" [Introduce Yourself]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "A Flat Reply",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "You said something and got a one-word reply, a polite smile, or nothing. This is the moment people take as proof that they are bad at this.\n\n**What goes wrong:** you read one flat reply as a verdict and stop, or you read it as a challenge and try four more times. Both misjudge how little information one short answer carries.\n\n**What works here:** **Ask About the Situation**, because it needs more than a word to answer and changes the shape of the exchange. **Comment on the Situation** works as the softer second attempt.\n\n**Avoid:** a third try. Two is enough to know, and the graceful exit is part of the skill — **Simple Greeting** does that job.\n\nMindset: one more try, then let it go warmly. A friendly exit costs nothing and leaves the door open for another day.",
+      inputs: [
+        { q: "Your comment got a \"mm\" and nothing else.", a: "\"Do you know if there's a break in this?\" [Ask About the Situation]", bundle: 'pro' },
+        { q: "Your question got a one-word factual answer.", a: "\"First time here for me. It's bigger than I thought.\" [Comment on the Situation]", bundle: 'pro' },
+        { q: "You have tried twice and got very little back.", a: "\"Anyway — enjoy the rest of it.\" [Simple Greeting]", bundle: 'pro' },
+        { q: "They answered and immediately looked back at their phone.", a: "\"No worries. Cheers.\" [Simple Greeting]", bundle: 'pro' },
+        { q: "Your opener landed but they seem to be leaving.", a: "\"I'm Rikard, by the way — I'll probably see you next week.\" [Introduce Yourself]", bundle: 'pro' },
+        { q: "They gave you a polite smile and no words at all.", a: "\"Is this the queue for the main hall?\" [Ask About the Situation]", bundle: 'pro' },
+        { q: "They answered your question and asked nothing back.", a: "\"Cheers.\" [Simple Greeting]", bundle: 'pro' },
+        { q: "The reply was short but they are still standing there.", a: "\"Have you been to one of these before?\" [Ask About the Situation]", bundle: 'pro' },
       ]
     },
   ],

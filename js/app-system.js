@@ -616,7 +616,6 @@ applyInputCounterVisibility();
     persuasionandinfluence2: { label: 'Persuasion and Influence — Pt. 2', minLevel: 'program' }, // Persuasion & Negotiation, Part 2
     negotiationandcompromise: { label: 'Negotiation and Compromise', minLevel: 'program' },      // Persuasion & Negotiation, Part 3
 
-    startingconversations1: { label: 'Starting Conversations — Pt. 1', minLevel: 'freemium' },
     startingconversations4: { label: 'Starting Conversations — Pt. 4', minLevel: 'extended' },
     apologizing2: { label: 'Apologizing — Pt. 2', minLevel: 'extended' },
     startingconversations2: { label: 'Starting Conversations — Pt. 2', minLevel: 'pro' },
@@ -700,6 +699,7 @@ applyInputCounterVisibility();
     jfisher1: { label: 'Jefferson Fisher 1 — Control under Pressure', minLevel: 'complete' },
     jfisher2: { label: 'Jefferson Fisher 2 — Assertive Connection', minLevel: 'complete' },
     showunderstanding: { label: 'Show Understanding', minLevel: 'freemium' },
+    startingconversations1: { label: 'Starting Conversations — Pt. 1', minLevel: 'freemium' },
   };
 
   // ── PROGRAM_CONFIG (v1.26.81) ─────────────────────────────────────────
@@ -1433,20 +1433,6 @@ const BUNDLE_DEFS = {
     },
   ],
   setupstatement: [
-    {
-      id: 'free',
-      tier: 'free',
-      name: 'Free Bundle',
-      description: '',
-    },
-    {
-      id: 'pro',
-      tier: 'pro',
-      name: 'Pro Bundle',
-      description: '',
-    },
-  ],
-  startingconversations1: [
     {
       id: 'free',
       tier: 'free',
@@ -2769,6 +2755,20 @@ const BUNDLE_DEFS = {
     },
   ],
   showunderstanding: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  startingconversations1: [
     {
       id: 'free',
       tier: 'free',
@@ -5224,6 +5224,23 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
             '<p class="ob-text">A question about the situation is easy to answer, and it ' +
             'gives them the small pleasure of knowing something you do not.</p>' +
             '<p class="ob-text ob-text--dim">First time at a regular event<br>&rarr; &ldquo;Do you know if this usually runs over?&rdquo;</p>'
+        },
+        {
+          // v1.27.43 — added when the pack was rewritten. The four openers were
+          // never the hard part; choosing between them is, and the intro said
+          // nothing about it. Two questions cover nearly every real moment, and
+          // they are what the three collections now drill.
+          title: 'Choosing One',
+          html:
+            '<p class="ob-text">All four work almost anywhere. Two questions decide which, ' +
+            'and neither needs thinking about.</p>' +
+            '<div class="ob-how">' +
+            '<div class="ob-how-row"><span class="ob-how-num">1</span><p><strong>How much do they want to be spoken to?</strong> Headphones and a book &mdash; greet or comment. Relaxed and looking around &mdash; ask.</p></div>' +
+            '<div class="ob-how-row"><span class="ob-how-num">2</span><p><strong>Will you see them again?</strong> If so, give them your name now. It only gets more awkward later.</p></div>' +
+            '</div>' +
+            '<p class="ob-text">And when the reply is short: try one more thing, then let it ' +
+            'go warmly. One flat answer means nothing. Two means something.</p>' +
+            '<p class="ob-text ob-text--dim">Any of the four beats saying nothing. Pick one and start.</p>'
         }
       ]
     },

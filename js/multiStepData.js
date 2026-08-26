@@ -1319,92 +1319,6 @@ const multiStepCollections = {
       ]
     },
   ],
-  startingconversations1: [
-    {
-      name: "Open, Then Build On What You Get",
-      guideFront: "What they gave back, and the opener to use next.",
-      guideBack: "One way it could sound.",
-      description: "One opener is rarely a conversation. You say something, they give you a little back, and the whole question is what you do with that little.\n\nThis combo chains the pack's four openers. Each step front carries what they actually said in reply, and names the opener to use next — so you are practising the thing that decides whether a conversation happens: using what came back instead of starting again from nothing.\n\nThe replies here are deliberately short and slightly flat, because that is what real replies are like. A short answer is not a rejection; it is the normal amount of material to work with.\n\nMindset: whatever they give you, use a piece of it. That is the entire skill.",
-      inputs: [
-        {
-          bundle: 'pro',
-          situation: "You have taken a seat at a two-day course. The person next to you is unpacking a notebook. Nothing has started yet and there is about ten minutes to fill.",
-          steps: [
-            { front: "Step 1 · Simple Greeting — nothing has happened yet, so start with the smallest possible thing.", back: "\"Morning.\"", guideFront: "The smallest opener. Just a signal that you are open to talking." },
-            { front: "Step 2 · Introduce Yourself — they look up and say, \"Morning.\"", back: "\"I'm Rikard. Looks like we're neighbours for two days.\"" },
-            { front: "Step 3 · Ask About the Situation — they say, \"Hanna. Yeah, apparently so.\"", back: "\"Have you done one of these before? I don't know how they run it.\"" },
-            { front: "Step 4 · Comment on the Situation — they say, \"I did the one last spring. It's mostly group work.\"", back: "\"Group work, right. That explains the tables being like this.\"" },
-          ]
-        },
-        {
-          bundle: 'pro',
-          situation: "You are in a slow queue outside a venue. The person in front of you keeps looking down the line. It is cold and nothing is moving.",
-          steps: [
-            { front: "Step 1 · Comment on the Situation — you have never met, so open with what you can both see.", back: "\"This isn't moving at all, is it.\"", guideFront: "No question yet. Give them something they can pick up or let go." },
-            { front: "Step 2 · Ask About the Situation — they turn round and say, \"Twenty minutes now.\"", back: "\"Do you know if there's more than one door open?\"" },
-            { front: "Step 3 · Comment on the Situation — they say, \"I think there's another one round the side.\"", back: "\"Of course there is. And nobody's told anyone.\"" },
-            { front: "Step 4 · Introduce Yourself — they laugh and say, \"Standard, really.\"", back: "\"I'm Rikard, by the way. If we're going to be here all night.\"" },
-          ]
-        },
-      ]
-    },
-    {
-      name: "When You Get Almost Nothing Back",
-      guideFront: "What they gave back, and the opener to use next.",
-      guideBack: "One way it could sound.",
-      description: "Sometimes the reply is one word. This is the situation most people quietly dread, and the instinct is to conclude the person does not want to talk and stop.\n\nSometimes that is true, and the combo teaches you to read it. But often a short answer just means your opener was easy to answer shortly. The move is to follow it with something that needs more than a word — usually a question about the situation.\n\nEach scenario here ends with a decision rather than a conversation: one where it opens up, one where it does not and you let it go gracefully.\n\nMindset: give it one more try, and one only. If the second attempt lands flat too, that is a real answer.",
-      inputs: [
-        {
-          bundle: 'pro',
-          situation: "You are in the lift with a neighbour you have seen many times and never spoken to. It is six floors.",
-          steps: [
-            { front: "Step 1 · Simple Greeting — nothing yet, so start small.", back: "\"Morning.\"", guideFront: "Start at the bottom. There is nowhere further down to go." },
-            { front: "Step 2 · Comment on the Situation — they say, \"Morning,\" and look at the floor numbers.", back: "\"Slow lift, this one.\"" },
-            { front: "Step 3 · Ask About the Situation — they say, \"Mm.\"", back: "\"Are you on the fifth? I always see you get out around there.\"" },
-            { front: "Step 4 · Read it and stop — they say, \"Fourth,\" and go back to their phone.", back: "\"Ah, right. Have a good one.\"", guideFront: "Two flat replies is an answer. Leave it warmly, not coldly." },
-          ]
-        },
-        {
-          bundle: 'pro',
-          situation: "You are waiting for a machine. The person using it is between sets, looking at their phone.",
-          steps: [
-            { front: "Step 1 · Ask About the Situation — you need to know if it is free, so ask.", back: "\"Are you still on this, or is it free?\"", guideFront: "A real question you actually need answered." },
-            { front: "Step 2 · Comment on the Situation — they say, \"Two more sets, sorry.\"", back: "\"No rush. It's rammed in here tonight.\"" },
-            { front: "Step 3 · Ask About the Situation — they say, \"Always is on a Tuesday.\"", back: "\"Is it? I've only ever come at the weekend. Is there a quiet night?\"" },
-            { front: "Step 4 · Introduce Yourself — they say, \"Thursdays are dead. That's when I'd come.\"", back: "\"Good to know. I'm Rikard, by the way.\"" },
-          ]
-        },
-      ]
-    },
-    {
-      name: "When You Are Joining Something",
-      guideFront: "What they gave back, and the opener to use next.",
-      guideBack: "One way it could sound.",
-      description: "Arriving somewhere new — a class, a club, a team, a first day — is the situation where openers matter most and where people freeze hardest, because everyone else appears to already know each other.\n\nTwo things make it easier. First, being new is a legitimate reason to talk to anyone, and saying so out loud is allowed. Second, asking how things work turns a stranger into someone helping you, which is a much easier role for both of you than two strangers making conversation.\n\nMindset: being new is a licence. Use it while it lasts.",
-      inputs: [
-        {
-          bundle: 'pro',
-          situation: "It is your first time at a local club. People are setting out chairs. Nobody has noticed you yet.",
-          steps: [
-            { front: "Step 1 · Introduce Yourself — you are new here and nobody knows you, so say so.", back: "\"Hi — I'm Rikard, it's my first time.\"", guideFront: "Being new is the reason. Lead with it." },
-            { front: "Step 2 · Ask About the Situation — they say, \"Oh, welcome. I'm Bea.\"", back: "\"Is there anything I should know before we start?\"" },
-            { front: "Step 3 · Comment on the Situation — they say, \"Not really. We just get going and see who turns up.\"", back: "\"That suits me. I was worried there'd be a form.\"" },
-            { front: "Step 4 · Ask About the Situation — they say, \"Ha. No forms here.\"", back: "\"How many usually come on a Tuesday?\"" },
-          ]
-        },
-        {
-          bundle: 'pro',
-          situation: "It is your first morning. You are in the kitchen and one colleague is waiting for the kettle.",
-          steps: [
-            { front: "Step 1 · Simple Greeting — you have never met, so start with hello.", back: "\"Morning.\"", guideFront: "The smallest thing first. Everything else can follow it." },
-            { front: "Step 2 · Introduce Yourself — they say, \"Morning — you're new, aren't you?\"", back: "\"I am, yeah. Rikard. Started today.\"" },
-            { front: "Step 3 · Ask About the Situation — they say, \"Ah, welcome. I'm Tom, I'm on the other team.\"", back: "\"Is there anything about this place I should know on day one?\"" },
-            { front: "Step 4 · Comment on the Situation — they say, \"Don't trust the second kettle. It takes about a year.\"", back: "\"Noted. That's the most useful thing anyone's told me today.\"" },
-          ]
-        },
-      ]
-    },
-  ],
   startingconversations4: [
     {
       name: "Going First and Staying There",
@@ -6851,6 +6765,122 @@ const multiStepCollections = {
             { front: "Loop Back or Rephrase — they say: \"They told me at nine and I've been sitting here since.\"", back: "\"So you've had four hours and no idea what to do with them.\"" },
             { front: "Loop Back or Rephrase — they say: \"I don't even know who to tell.\"", back: "\"That's its own thing, isn't it. Not just the news, but having to hand it on.\"" },
             { front: "Ask Follow-up Questions — they shrug.", back: "\"Is there anything that would help in the next hour?\"" },
+          ]
+        },
+      ]
+    },
+  ],
+  startingconversations1: [
+    {
+      name: "Open, Then Build On What You Get",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
+      description: "One opener is rarely a conversation. You say something, they give you a little back, and the whole question is what you do with that little.\n\n1. **Simple Greeting** or **Comment on the Situation** — put something small in the air\n2. **Introduce Yourself** or **Ask About the Situation** — use what came back\n3. **Ask About the Situation** — go into the thing they mentioned\n4. **Comment on the Situation** or **Introduce Yourself** — land it\n\n**Why this order:** smallest to largest, each step built out of the last reply. That is what decides whether a conversation happens — using what came back instead of starting again.\n\n**What people do instead:** deliver a second opener unrelated to the answer, which reads as a series of attempts rather than an exchange.\n\nMindset: whatever they give you, use a piece of it. That is the entire skill.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You have taken a seat at a two-day course. The person next to you is unpacking a notebook. Nothing has started yet and there is about ten minutes to fill.",
+          steps: [
+            { front: "Simple Greeting — nothing has happened yet, so start with the smallest possible thing.", back: "\"Morning.\"", guideFront: "The smallest opener. Just a signal that you are open to talking." },
+            { front: "Introduce Yourself — they look up and say, \"Morning.\"", back: "\"I'm Rikard. Looks like we're neighbours for two days.\"" },
+            { front: "Ask About the Situation — they say, \"Hanna. Yeah, apparently so.\"", back: "\"Have you done one of these before? I don't know how they run it.\"" },
+            { front: "Comment on the Situation — they say, \"I did the one last spring. It's mostly group work.\"", back: "\"Group work, right. That explains the tables being like this.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You are in a slow queue outside a venue. The person in front of you keeps looking down the line. It is cold and nothing is moving.",
+          steps: [
+            { front: "Comment on the Situation — you have never met, so open with what you can both see.", back: "\"This isn't moving at all, is it.\"", guideFront: "No question yet. Give them something they can pick up or let go." },
+            { front: "Ask About the Situation — they turn round and say, \"Twenty minutes now.\"", back: "\"Do you know if there's more than one door open?\"" },
+            { front: "Comment on the Situation — they say, \"I think there's another one round the side.\"", back: "\"Of course there is. And nobody's told anyone.\"" },
+            { front: "Introduce Yourself — they laugh and say, \"Standard, really.\"", back: "\"I'm Rikard, by the way. If we're going to be here all night.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You are at a table of eight at a wedding reception. You know the couple and nobody else. People are sitting down and reading the menu cards.",
+          steps: [
+            { front: "Simple Greeting — everyone is settling and nobody has spoken yet.", back: "\"Evening.\"", guideFront: "Say it to the person beside you, not to the table." },
+            { front: "Ask About the Situation — they say, \"Evening. Long day already, isn't it.\"", back: "\"It is. Do you know if there are speeches before the food or after?\"" },
+            { front: "Comment on the Situation — they say, \"After, I think. That's the civilised way round.\"", back: "\"Much better. Speeches on an empty stomach are a hard watch.\"" },
+            { front: "Introduce Yourself — they laugh and say, \"I've sat through a few.\"", back: "\"I'm Rikard — I'm on the bride's side, badly out of my depth.\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "When You Get Almost Nothing Back",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
+      description: "Sometimes the reply is one word — the situation most people quietly dread.\n\n1. **Simple Greeting** or **Ask About the Situation** — the opener\n2. **Comment on the Situation** — the flat reply comes back; try a different shape\n3. **Ask About the Situation** — the one that needs more than a word\n4. Read the second reply — carry on if it opened, leave warmly if it did not\n\n**Why this order:** a short answer usually means your opener was easy to answer shortly, so the second move changes shape and the third asks for something a single word cannot cover. The fourth step is the one nobody practises: stopping without it being awkward.\n\n**What people do instead:** stop at the first flat reply, or push through four more.\n\nMindset: give it one more try, and one only. If the second attempt lands flat too, that is a real answer.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You are in the lift with a neighbour you have seen many times and never spoken to. It is six floors.",
+          steps: [
+            { front: "Simple Greeting — nothing yet, so start small.", back: "\"Morning.\"", guideFront: "Start at the bottom. There is nowhere further down to go." },
+            { front: "Comment on the Situation — they say, \"Morning,\" and look at the floor numbers.", back: "\"Slow lift, this one.\"" },
+            { front: "Ask About the Situation — they say, \"Mm.\"", back: "\"Are you on the fifth? I always see you get out around there.\"" },
+            { front: "Simple Greeting — they say, \"Fourth,\" and go back to their phone.", back: "\"Ah, right. Have a good one.\"", guideFront: "Two flat replies is an answer. Leave it warmly, not coldly." },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You are waiting for a machine. The person using it is between sets, looking at their phone.",
+          steps: [
+            { front: "Ask About the Situation — you need to know if it is free, so ask.", back: "\"Are you still on this, or is it free?\"", guideFront: "A real question you actually need answered." },
+            { front: "Comment on the Situation — they say, \"Two more sets, sorry.\"", back: "\"No rush. It's rammed in here tonight.\"" },
+            { front: "Ask About the Situation — they say, \"Always is on a Tuesday.\"", back: "\"Is it? I've only ever come at the weekend. Is there a quiet night?\"" },
+            { front: "Introduce Yourself — they say, \"Thursdays are dead. That's when I'd come.\"", back: "\"Good to know. I'm Rikard, by the way.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You are waiting for the doors to open among parents you half recognise. One of them is standing near you, looking at their phone.",
+          steps: [
+            { front: "Comment on the Situation — the doors are late again and you are standing next to each other.", back: "\"They've never once opened these on time.\"", guideFront: "An observation, not a question. Easy to ignore." },
+            { front: "Ask About the Situation — they glance up and say, \"No.\"", back: "\"Is it always this late, or is today special?\"" },
+            { front: "Comment on the Situation — they say, \"Always,\" and look back down.", back: "\"Right. I'll stop rushing, then.\"" },
+            { front: "Simple Greeting — they smile faintly and say nothing more.", back: "\"Have a good one.\"", guideFront: "They were polite, not interested. Leave it there and try again another day." },
+          ]
+        },
+      ]
+    },
+    {
+      name: "When You Are Joining Something",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
+      description: "Arriving somewhere new — a class, a club, a team, a first day. Openers matter most here, and people freeze hardest, because everyone else appears to know each other already.\n\n1. **Introduce Yourself** or **Simple Greeting** — say who you are, and that you are new\n2. **Ask About the Situation** — how does this work\n3. **Comment on the Situation** — react to what they told you\n4. **Ask About the Situation** — one more, now that it is easy\n\n**Why this order:** being new is a legitimate reason to talk to anyone. Asking how things work then turns a stranger into someone helping you, which is an easier role for both of you than two strangers making conversation.\n\n**What people do instead:** hide the newness, which makes every question sound like one you should already know the answer to.\n\nMindset: being new is a licence. Use it while it lasts.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "It is your first time at a local club. People are setting out chairs. Nobody has noticed you yet.",
+          steps: [
+            { front: "Introduce Yourself — you are new here and nobody knows you, so say so.", back: "\"Hi — I'm Rikard, it's my first time.\"", guideFront: "Being new is the reason. Lead with it." },
+            { front: "Ask About the Situation — they say, \"Oh, welcome. I'm Bea.\"", back: "\"Is there anything I should know before we start?\"" },
+            { front: "Comment on the Situation — they say, \"Not really. We just get going and see who turns up.\"", back: "\"That suits me. I was worried there'd be a form.\"" },
+            { front: "Ask About the Situation — they say, \"Ha. No forms here.\"", back: "\"How many usually come on a Tuesday?\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "It is your first morning. You are in the kitchen and one colleague is waiting for the kettle.",
+          steps: [
+            { front: "Simple Greeting — you have never met, so start with hello.", back: "\"Morning.\"", guideFront: "The smallest thing first. Everything else can follow it." },
+            { front: "Introduce Yourself — they say, \"Morning — you're new, aren't you?\"", back: "\"I am, yeah. Rikard. Started today.\"" },
+            { front: "Ask About the Situation — they say, \"Ah, welcome. I'm Tom, I'm on the other team.\"", back: "\"Is there anything about this place I should know on day one?\"" },
+            { front: "Comment on the Situation — they say, \"Don't trust the second kettle. It takes about a year.\"", back: "\"Noted. That's the most useful thing anyone's told me today.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You have joined a course six weeks in. Everyone else has settled into their seats and their pairs. There is one free chair.",
+          steps: [
+            { front: "Ask About the Situation — you do not know if the seat is taken.", back: "\"Is anyone sitting here?\"", guideFront: "A practical question first. It gets you a foothold before anything else." },
+            { front: "Introduce Yourself — they move a bag and say, \"All yours.\"", back: "\"Thanks. I'm Rikard — I've joined late, so I'm about six weeks behind.\"" },
+            { front: "Ask About the Situation — they say, \"Oh, you'll catch up. I'm Ines.\"", back: "\"Is there anything from the first weeks I should read?\"" },
+            { front: "Comment on the Situation — they say, \"Honestly, just the handout. Nobody's read the rest.\"", back: "\"That's a relief. I'd braced myself for a reading list.\"" },
           ]
         },
       ]

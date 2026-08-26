@@ -431,60 +431,6 @@ const mindsetCollections = {
       ]
     },
   ],
-  startingconversations1: [
-    {
-      name: "It Does Not Have to Be Interesting",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
-      description: "Most people who struggle to open conversations are not short of words — they are rejecting the words they have, because the opener that occurred to them seemed too obvious to say out loud.\n\nBut an opener is not judged as a remark. It is judged as an invitation, and \"busy in here today\" works precisely because it asks nothing of the other person. The interesting part of a conversation happens later, and it cannot happen at all until someone says something boring first.\n\nMindset: say the obvious thing. It is doing a different job than you think.",
-      inputs: [
-        { q: "That's such a boring thing to say.", a: "It is. That's why it's easy to answer, which is the whole point.", bundle: 'pro' },
-        { q: "They'll think I'm stating the obvious.", a: "You are. Everyone opens this way, including the people you think are good at it.", bundle: 'pro' },
-        { q: "I should say something they'll find interesting.", a: "Later, maybe. First you just need them to say something back.", bundle: 'pro' },
-        { q: "I need a better opener than the weather.", a: "The weather has started more conversations than every clever line ever written.", bundle: 'pro' },
-        { q: "If I can't think of anything good I shouldn't speak.", a: "Then most conversations would never happen. Say the ordinary thing.", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "A Short Answer Is Not a No",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
-      description: "You open, they answer in three words, and something in you concludes it went badly. But most first replies are short — people are mid-something, they were not expecting to talk, and they are matching the size of what you gave them.\n\nReading a short answer as rejection ends conversations that were about to start. The better reading is that they gave you exactly as much as your opener asked for, and a slightly bigger second move often gets a bigger reply.\n\nMindset: one flat reply means nothing. Two means something.",
-      inputs: [
-        { q: "They only said \"yeah\". That means they don't want to talk.", a: "Or it means \"yeah\". Try one more thing before you decide.", bundle: 'pro' },
-        { q: "I've made it awkward now.", a: "You've said one sentence to someone in a queue. Nobody is thinking about it.", bundle: 'pro' },
-        { q: "They're clearly not interested.", a: "Maybe. You've got one piece of evidence. Get a second.", bundle: 'pro' },
-        { q: "I should stop before this gets embarrassing.", a: "Nothing embarrassing has happened. A short answer is the most normal thing there is.", bundle: 'pro' },
-        { q: "They answered and then looked away.", a: "People look away. It isn't a verdict on you.", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "You Are Allowed to Speak",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
-      description: "A surprising amount of hesitation is not about what to say but about whether you are permitted to say it — as though speaking to a stranger were an intrusion that needs justifying.\n\nIn almost every everyday setting it is not. Queues, waiting rooms, courses, lifts, gyms and events are places where a passing exchange is entirely ordinary, and the person you speak to will forget it within minutes whichever way it goes.\n\nMindset: you do not need a reason. Being in the same place is the reason.",
-      inputs: [
-        { q: "I don't have a good enough reason to talk to them.", a: "You're both standing in the same queue. That has always been reason enough.", bundle: 'pro' },
-        { q: "They didn't ask to be spoken to.", a: "True of every conversation that has ever started.", bundle: 'pro' },
-        { q: "I'd be interrupting them.", a: "Then keep it small and let them end it. That's what a greeting is for.", bundle: 'pro' },
-        { q: "What if they think I want something?", a: "Then they'll find out you don't, in about four seconds.", bundle: 'pro' },
-        { q: "It's weird to just start talking to someone.", a: "It's the most ordinary thing people do. It only feels weird from the inside.", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Nothing Is Lost",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
-      description: "The fear that stops openers is not really fear of a bad conversation — it is fear of a moment of exposure: standing there having said something that did not land.\n\nWeigh it honestly. The worst realistic outcome is a short reply and a return to your own thoughts, from a person you will probably never see again, who will not remember it by lunchtime. The best outcome is a conversation. The odds are not close.\n\nMindset: the downside is a few seconds. The upside is everything that comes after.",
-      inputs: [
-        { q: "What if it goes badly?", a: "Then you stood in a queue having said one sentence. That's the whole cost.", bundle: 'pro' },
-        { q: "I'll feel stupid.", a: "For about a minute, and only you will know.", bundle: 'pro' },
-        { q: "They'll remember it and it'll be awkward next time.", a: "They won't remember it. You will, and only you.", bundle: 'pro' },
-        { q: "It's not worth the risk.", a: "Count the risk out loud. Ten seconds of mild discomfort, at the very worst.", bundle: 'pro' },
-        { q: "I'd rather not put myself through it.", a: "Fair, sometimes. But do it once today and notice how little actually happens.", bundle: 'pro' },
-      ]
-    },
-  ],
   startingconversations4: [
     {
       name: "Somebody Has to Go First",
@@ -3920,6 +3866,72 @@ const mindsetCollections = {
         { q: "My experience would genuinely help them.", a: "Then it'll help more after they've been understood. Advice lands on cleared ground.", bundle: 'pro' },
         { q: "Staying quiet about mine feels dishonest, like I'm holding back.", a: "Holding back for two minutes isn't dishonesty. It's timing.", bundle: 'pro' },
         { q: "They asked me directly whether I've been through it.", a: "Then answer — briefly, and hand it straight back with a question.", bundle: 'pro' },
+      ]
+    },
+  ],
+  startingconversations1: [
+    {
+      name: "The Bar You Set",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"I can't say that — it's too obvious.\"\n\n**What is true instead:** an opener is not judged as a remark, it is judged as an invitation. \"Busy in here today\" works precisely because it asks nothing of the other person.\n\n**Why it feels right:** the openers you remember other people using are the good ones. You never notice the hundreds of dull ones that worked perfectly well.\n\n**What it costs:** most people who struggle to open conversations are not short of words. They are rejecting the words they have, and then standing in a silence that is far more uncomfortable than the ordinary sentence would have been.\n\nMindset: say the obvious thing. It is doing a different job than you think.",
+      inputs: [
+        { q: "That's such a boring thing to say.", a: "It is. That's why it's easy to answer, which is the whole point.", bundle: 'pro' },
+        { q: "They'll think I'm stating the obvious.", a: "You are. Everyone opens this way, including the people you think are good at it.", bundle: 'pro' },
+        { q: "I should say something they'll find interesting.", a: "Later, maybe. First you just need them to say something back.", bundle: 'pro' },
+        { q: "I need a better opener than the weather.", a: "The weather has started more conversations than every clever line ever written.", bundle: 'pro' },
+        { q: "If I can't think of anything good I shouldn't speak.", a: "Then most conversations would never happen. Say the ordinary thing.", bundle: 'pro' },
+        { q: "Everyone else seems to open with something clever.", a: "They don't. You only remember the ones that were.", bundle: 'pro' },
+        { q: "I'll wait until I think of something better.", a: "Nothing better arrives. The waiting is the awkward part, not the sentence.", bundle: 'pro' },
+        { q: "A comment about the queue isn't a conversation.", a: "No, it's an invitation. The conversation is what they do with it.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Reading a Short Reply",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"They only gave me three words, so they don't want to talk.\"\n\n**What is true instead:** they gave you as much as your opener asked for. Most first replies are short, and a slightly bigger second move often gets a bigger reply.\n\n**Why it feels right:** a short answer genuinely can mean no. The mistake is treating one piece of evidence as a conclusion.\n\n**What it costs:** it ends conversations at the moment they were about to start, and teaches you that you are bad at this when nothing unusual happened.\n\nMindset: one flat reply means nothing. Two means something.",
+      inputs: [
+        { q: "They only said \"yeah\". That means they don't want to talk.", a: "Or it means \"yeah\". Try one more thing before you decide.", bundle: 'pro' },
+        { q: "I've made it awkward now.", a: "You've said one sentence to someone in a queue. Nobody is thinking about it.", bundle: 'pro' },
+        { q: "They're clearly not interested.", a: "Maybe. You've got one piece of evidence. Get a second.", bundle: 'pro' },
+        { q: "I should stop before this gets embarrassing.", a: "Nothing embarrassing has happened. A short answer is the most normal thing there is.", bundle: 'pro' },
+        { q: "They answered and then looked away.", a: "People look away. It isn't a verdict on you.", bundle: 'pro' },
+        { q: "If they wanted to talk they'd have said more.", a: "They'd have to know it was on offer. That's what the second move is for.", bundle: 'pro' },
+        { q: "I got one word, so I'll get one word again.", a: "Not if the next thing needs more than one. Ask something a \"yeah\" can't cover.", bundle: 'pro' },
+        { q: "Two flat replies — now I really should stop.", a: "Yes. That one's a real answer. Leave it warmly and it costs nothing.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Permission",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"I don't have a good enough reason to speak to them.\"\n\n**What is true instead:** in almost every everyday setting you do not need one. Queues, waiting rooms, courses, lifts and gyms are places where a passing exchange is ordinary.\n\n**Why it feels right:** speaking to a stranger is an intrusion in some settings, so the instinct to check is a social one. It is just calibrated far too cautiously.\n\n**What it costs:** the hesitation is not about what to say. It is about whether you are allowed to, and that question has no answer, so it can be asked forever.\n\nMindset: you do not need a reason. Being in the same place is the reason.",
+      inputs: [
+        { q: "I don't have a good enough reason to talk to them.", a: "You're both standing in the same queue. That has always been reason enough.", bundle: 'pro' },
+        { q: "They didn't ask to be spoken to.", a: "True of every conversation that has ever started.", bundle: 'pro' },
+        { q: "I'd be interrupting them.", a: "Then keep it small and let them end it. That's what a greeting is for.", bundle: 'pro' },
+        { q: "What if they think I want something?", a: "Then they'll find out you don't, in about four seconds.", bundle: 'pro' },
+        { q: "It's weird to just start talking to someone.", a: "It's the most ordinary thing people do. It only feels weird from the inside.", bundle: 'pro' },
+        { q: "I'm not the sort of person who does this.", a: "Nobody is, until the third time. It's a habit, not a personality.", bundle: 'pro' },
+        { q: "They're clearly not here to make friends.", a: "Neither are you. A thirty-second exchange isn't friendship.", bundle: 'pro' },
+        { q: "I'd need an excuse — something to ask them.", a: "You've got one: whatever you are both standing in.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "What It Would Cost",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"What if it goes badly?\"\n\n**What is true instead:** count the actual cost. The worst realistic outcome is a short reply and a return to your own thoughts, from someone who will not remember it by lunchtime.\n\n**Why it feels right:** the fear is not of a bad conversation but of a moment of exposure, and that moment is genuinely uncomfortable while it lasts.\n\n**What it costs:** a few seconds of discomfort avoided, against every conversation that would have started. A bad trade, made many times a week.\n\nMindset: the downside is a few seconds. The upside is everything that comes after.",
+      inputs: [
+        { q: "What if it goes badly?", a: "Then you stood in a queue having said one sentence. That's the whole cost.", bundle: 'pro' },
+        { q: "I'll feel stupid.", a: "For about a minute, and only you will know.", bundle: 'pro' },
+        { q: "They'll remember it and it'll be awkward next time.", a: "They won't remember it. You will, and only you.", bundle: 'pro' },
+        { q: "It's not worth the risk.", a: "Count the risk out loud. Ten seconds of mild discomfort, at the very worst.", bundle: 'pro' },
+        { q: "I'd rather not put myself through it.", a: "Fair, sometimes. But do it once today and notice how little actually happens.", bundle: 'pro' },
+        { q: "Other people will see it go wrong.", a: "Nobody is watching. Everyone is thinking about their own queue.", bundle: 'pro' },
+        { q: "If it fails I'll have to stand next to them anyway.", a: "For four minutes, having said one friendly thing. That's survivable.", bundle: 'pro' },
+        { q: "I've had it go badly before and it was horrible.", a: "And the week after, nobody mentioned it. That's the actual size of it.", bundle: 'pro' },
       ]
     },
   ],

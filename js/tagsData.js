@@ -76,9 +76,6 @@ const packTags = {
   setupstatement: [
     'conversation', 'starting', 'connecting'
   ],
-  startingconversations1: [
-    'starting conversations', 'openers', 'small talk', 'strangers', 'first words'
-  ],
   startingconversations4: [
     'starting conversations', 'openers', 'humour', 'saying what you feel', 'approaching people'
   ],
@@ -361,6 +358,9 @@ const packTags = {
   showunderstanding: [
     'listening', 'understanding', 'empathy', 'conversation'
   ],
+  startingconversations1: [
+    'starting conversations', 'openers', 'small talk', 'strangers', 'first words'
+  ],
 };
 
 // ─── TOPICS ──────────────────────────────────────────────────────────
@@ -389,7 +389,7 @@ const packTags = {
 // emotionalboundaries merged into emotions and boundaries.
 const TOPICS = [
   // ── Getting a conversation going ──────────────────────────────────
-  { id: 'startingconversations', title: 'Starting Conversations',        packs: ['startingconnecting', 'setupstatement', 'startingconversations1', 'startingconversations4', 'startingconversations2', 'startingconversations3', 'setupquestion', 'oconnor7', 'firststrategies'] },
+  { id: 'startingconversations', title: 'Starting Conversations',        packs: ['startingconnecting', 'setupstatement', 'startingconversations4', 'startingconversations2', 'startingconversations3', 'setupquestion', 'oconnor7', 'firststrategies', 'startingconversations1'] },
   { id: 'questions',             title: 'Questions & Curiosity',         packs: ['exploringatopic', 'deepquestions'] },
   { id: 'flowtransitions',       title: 'Flow & Transitions',            packs: ['conversational', 'transitions', 'changingtopics', 'reactingtounexpectedstatements'] },
   { id: 'endingconversations',   title: 'Ending Conversations',          packs: ['endingconversations'] },

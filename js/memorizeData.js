@@ -865,78 +865,6 @@ const memorizeCollections = {
       ]
     },
   ],
-  startingconversations1: [
-    {
-      name: "Core Idea",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
-      description: "The shape of the pack: four openers that work anywhere, and the judgements about when to use which.",
-      cards: [
-        { q: "What are the four openers in this pack?", a: "Simple greeting, introduce yourself, comment on the situation, ask about the situation.", bundle: 'free' },
-        { q: "What do all four have in common?", a: "They need no courage and nothing known about the other person.", bundle: 'free' },
-        { q: "What is the one thing you are guaranteed to share with a stranger?", a: "The situation you are both in.", bundle: 'free' },
-        { q: "Which opener asks the least of the other person?", a: "A comment — they can nod and that is the end of it.", bundle: 'pro' },
-        { q: "Which opener gets words back most reliably?", a: "A question about the situation.", bundle: 'pro' },
-        { q: "What does the pack say a short reply means?", a: "Very little. One flat reply means nothing; two means something.", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Simple Greeting",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
-      description: "The smallest opener there is.",
-      cards: [
-        { q: "What is a greeting actually doing?", a: "Signalling that you are willing to talk, and leaving the next move to them.", bundle: 'free' },
-        { q: "Name two ways to greet.", a: "Any two of: the plain greeting, greeting plus their name, the ritual question, greeting plus a small hook.", bundle: 'free' },
-        { q: "What does adding their name cost, and what does it buy?", a: "One word, and considerably more warmth.", bundle: 'free' },
-        { q: "What is the mindset line for this move?", a: "A greeting is an offer, not a demand — a nod back is a complete outcome.", bundle: 'pro' },
-        { q: "What is a \"small hook\"?", a: "One extra clause they can answer if they want to — \"busy in here today\".", bundle: 'pro' },
-        { q: "When is \"how are you\" not a real question?", a: "When it is used as a greeting — expect \"fine, you?\" and treat that as the door opening.", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Introduce Yourself",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
-      description: "The opener that turns a stranger into someone you have met.",
-      cards: [
-        { q: "What does introducing yourself do that other openers do not?", a: "It makes the second conversation easy, because there is no first one left to get through.", bundle: 'free' },
-        { q: "What should you add to your name, and why?", a: "A small piece of context, so they have something to reply to besides their own name.", bundle: 'free' },
-        { q: "When should you do it?", a: "Early. Introducing yourself after twenty minutes of talking is far more awkward.", bundle: 'free' },
-        { q: "Name two ways to introduce yourself.", a: "Any two of: name only, name plus your connection to the room, name plus a reason you are talking to them, naming that you have not met.", bundle: 'pro' },
-        { q: "What obstacle does saying your name remove?", a: "Not knowing whether you are allowed to talk — it answers that for both of you.", bundle: 'pro' },
-        { q: "How do you handle having left it far too long?", a: "Name the delay lightly. It usually lands as funny rather than awkward.", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Comment on the Situation",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
-      description: "The lowest-pressure opener with a stranger.",
-      cards: [
-        { q: "Why is a comment lower pressure than a question?", a: "It does not require an answer, so they can opt out with no awkwardness.", bundle: 'free' },
-        { q: "Name two ways to comment on the situation.", a: "Any two of: state what you both see, react to it, wonder out loud, compare it to before.", bundle: 'free' },
-        { q: "Does the comment have to be interesting?", a: "No. It has to be shared.", bundle: 'free' },
-        { q: "What does \"wonder out loud\" achieve?", a: "It invites an answer without asking for one.", bundle: 'pro' },
-        { q: "When should you comment rather than ask?", a: "When they look busy, closed off or absorbed — it lets them decide.", bundle: 'pro' },
-        { q: "What is the most common reason people do not use this opener?", a: "They reject their own line for being too obvious, which is exactly why it works.", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Ask About the Situation",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
-      description: "The question form, and the highest reply rate in the pack.",
-      cards: [
-        { q: "Why does this opener get the most words back?", a: "A comment can be met with a nod; a question almost always gets words.", bundle: 'free' },
-        { q: "Name two ways to ask about the situation.", a: "Any two of: practical information, whether they have been here before, how something works, checking your own assumption.", bundle: 'free' },
-        { q: "Why does asking how something works help?", a: "It invites them to be helpful, which is an easy role to be given.", bundle: 'free' },
-        { q: "What is the mindset line for this move?", a: "Ask the question you actually want answered — people hear the difference.", bundle: 'pro' },
-        { q: "What do you use when a first opener fell flat?", a: "Usually a question about the situation, because it needs more than a word.", bundle: 'pro' },
-        { q: "Which question opens the door widest?", a: "Whether this is their first time — the answer leads somewhere either way.", bundle: 'pro' },
-      ]
-    },
-  ],
   startingconversations4: [
     {
       name: "Core Idea",
@@ -6244,6 +6172,134 @@ const memorizeCollections = {
         { q: "What is the problem with a question you do not listen to?", a: "It establishes that your questions do not mean anything.", bundle: 'pro' },
         { q: "What beats a well-executed technique when you are not curious?", a: "The honest small thing. \"That sounds hard.\"", bundle: 'pro' },
         { q: "Why does the pull to relate arrive earliest when the match is best?", a: "Because it feels most like empathy exactly when it would take the most.", bundle: 'pro' },
+      ]
+    },
+  ],
+  startingconversations1: [
+    {
+      name: "Core Idea",
+      description: "Four openers that work anywhere, need no courage, and require nothing known about the other person.\n\n1. **Simple Greeting**\n2. **Introduce Yourself**\n3. **Comment on the Situation**\n4. **Ask About the Situation**\n\nTwo use the relationship, two use the room.",
+      cards: [
+        { q: "What are the four openers in this pack?", a: "Simple Greeting, Introduce Yourself, Comment on the Situation, and Ask About the Situation.", bundle: 'free' },
+        { q: "What do all four have in common?", a: "They need no courage and nothing known about the other person.", bundle: 'free' },
+        { q: "What is the one thing you are guaranteed to share with a stranger?", a: "The situation you are both in.", bundle: 'free' },
+        { q: "How do the four divide?", a: "Two are about the relationship — greeting and introducing. Two are about the room — commenting and asking.", bundle: 'free' },
+        { q: "What decides whether to introduce yourself?", a: "Whether you will need to speak to them again.", bundle: 'free' },
+        { q: "Which opener asks the least of the other person?", a: "A comment — they can nod and that is the end of it.", bundle: 'pro' },
+        { q: "Which opener gets words back most reliably?", a: "A question about the situation.", bundle: 'pro' },
+        { q: "What does the pack say a short reply means?", a: "Very little. One flat reply means nothing; two means something.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Simple Greeting",
+      description: "",
+      cards: [
+        { q: "What is a greeting actually doing?", a: "Signalling that you are willing to talk, and leaving the next move to them.", bundle: 'free' },
+        { q: "Name two ways to greet.", a: "Any two of: the plain greeting, greeting plus their name, the ritual question, greeting plus a small hook.", bundle: 'free' },
+        { q: "What does adding their name cost, and what does it buy?", a: "One word, and considerably more warmth.", bundle: 'free' },
+        { q: "What is a \"small hook\"?", a: "One extra clause they can answer if they want to — \"busy in here today\".", bundle: 'free' },
+        { q: "What counts as a successful greeting?", a: "A nod back. It is an offer, not a demand.", bundle: 'free' },
+        { q: "When is \"how are you\" not a real question?", a: "When it is used as a greeting — expect \"fine, you?\" and treat that as the door opening.", bundle: 'pro' },
+        { q: "What else is a greeting good for besides opening?", a: "Closing. It is how you leave a flat exchange warmly rather than coldly.", bundle: 'pro' },
+        { q: "Why is it the lowest-risk opener there is?", a: "Nobody has ever been offended by \"morning\", and an unanswered one costs nothing.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Introduce Yourself",
+      description: "",
+      cards: [
+        { q: "What does introducing yourself do that other openers do not?", a: "It makes the second conversation easy, because there is no first one left to get through.", bundle: 'free' },
+        { q: "What should you add to your name, and why?", a: "A small piece of context, so they have something to reply to besides their own name.", bundle: 'free' },
+        { q: "When should you do it?", a: "Early. Introducing yourself after twenty minutes of talking is far more awkward.", bundle: 'free' },
+        { q: "Name two ways to introduce yourself.", a: "Any two of: name only, name plus your connection to the room, name plus a reason you are talking to them, naming that you have not met.", bundle: 'free' },
+        { q: "What obstacle does saying your name remove?", a: "Not knowing whether you are allowed to talk — it answers that for both of you.", bundle: 'free' },
+        { q: "How do you handle having left it far too long?", a: "Name the delay lightly. It usually lands as funny rather than awkward.", bundle: 'pro' },
+        { q: "Which mistake is the more expensive one?", a: "Not introducing yourself to someone you will see weekly. The other way round costs nothing.", bundle: 'pro' },
+        { q: "Why is being new a licence?", a: "It is a legitimate reason to talk to anyone, and it turns a stranger into someone helping you.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Comment on the Situation",
+      description: "",
+      cards: [
+        { q: "Why is a comment lower pressure than a question?", a: "It does not require an answer, so they can opt out with no awkwardness.", bundle: 'free' },
+        { q: "Name two ways to comment on the situation.", a: "Any two of: state what you both see, react to it, wonder out loud, compare it to before.", bundle: 'free' },
+        { q: "Does the comment have to be interesting?", a: "No. It has to be shared.", bundle: 'free' },
+        { q: "What does \"wonder out loud\" achieve?", a: "It invites an answer without asking for one.", bundle: 'free' },
+        { q: "When should you comment rather than ask?", a: "When they look busy, closed off or absorbed — it lets them decide.", bundle: 'free' },
+        { q: "What is the most common reason people do not use this opener?", a: "They reject their own line for being too obvious, which is exactly why it works.", bundle: 'pro' },
+        { q: "What can you comment on in a completely empty room?", a: "The emptiness, the wait, being early, or the room itself.", bundle: 'pro' },
+        { q: "Why is a comment the right move with someone who looks busy?", a: "They can answer it with a nod, which lets them decide whether anything follows.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ask About the Situation",
+      description: "",
+      cards: [
+        { q: "Why does this opener get the most words back?", a: "A comment can be met with a nod; a question almost always gets words.", bundle: 'free' },
+        { q: "Name two ways to ask about the situation.", a: "Any two of: practical information, whether they have been here before, how something works, checking your own assumption.", bundle: 'free' },
+        { q: "Why does asking how something works help?", a: "It invites them to be helpful, which is an easy role to be given.", bundle: 'free' },
+        { q: "What is the mindset line for this move?", a: "Ask the question you actually want answered — people hear the difference.", bundle: 'free' },
+        { q: "What do you use when a first opener fell flat?", a: "Usually a question about the situation, because it needs more than a word.", bundle: 'free' },
+        { q: "Which question opens the door widest?", a: "Whether this is their first time — the answer leads somewhere either way.", bundle: 'pro' },
+        { q: "When is a question the wrong opener?", a: "With someone plainly busy. They will answer out of politeness and neither of you wanted the conversation.", bundle: 'pro' },
+        { q: "What makes an invented question obvious?", a: "You are not listening to the answer. Ask something you actually want to know.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **The Three Without a Name** — greeting, comment or question, on a scale of how much you are asking\n• **Will You See Them Again** — all four, decided by whether the person recurs\n• **All Four Openers** — no cue given, which is what a real moment is like\n\nTwo questions cover nearly all of it: how much do they want to be spoken to, and will you meet again?",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "The Three Without a Name, Will You See Them Again, and All Four Openers.", bundle: 'pro' },
+        { q: "What is the scale in The Three Without a Name?", a: "How much you are asking of them — a greeting asks least, a question asks most.", bundle: 'pro' },
+        { q: "What decides it in Will You See Them Again?", a: "Whether you will need to speak to this person twice.", bundle: 'pro' },
+        { q: "Someone has headphones in and you need the seat. Which opener?", a: "Ask About the Situation, kept short and practical.", bundle: 'pro' },
+        { q: "A new colleague is by the coffee machine. Which opener?", a: "Introduce Yourself — they recur, so give them your name now.", bundle: 'pro' },
+        { q: "You pass the same dog walker every morning. Which opener?", a: "Simple Greeting. There is nothing to be gained by making it bigger.", bundle: 'pro' },
+        { q: "Why is there no two-strategy collection in this pack?", a: "Two is a comparison, not a choice. A collection makes you pick between at least three.", bundle: 'pro' },
+        { q: "What is the commonest failure in the full collection?", a: "Not choosing wrongly — standing there running through the options until the moment has gone.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and what each one drills:\n\n1. **Open, Then Build On What You Get** — smallest to largest, each step built from the last reply\n2. **When You Get Almost Nothing Back** — two attempts, then a graceful exit\n3. **When You Are Joining Something** — being new as the reason, then asking how it works\n\nAll three are reactive: every step carries what they actually said, and names the opener to use next.",
+      cards: [
+        { q: "What does Open, Then Build On What You Get drill?", a: "Using what came back instead of starting again from nothing.", bundle: 'pro' },
+        { q: "Why are the replies in that sequence short and flat?", a: "Because real first replies are. A short answer is the normal amount of material to work with.", bundle: 'pro' },
+        { q: "How many attempts does When You Get Almost Nothing Back allow?", a: "Two. Enough to be sure, few enough to leave gracefully.", bundle: 'pro' },
+        { q: "What is the fourth step of that sequence?", a: "The exit — leaving warmly rather than coldly when the second attempt lands flat too.", bundle: 'pro' },
+        { q: "Why does the second attempt change shape rather than volume?", a: "A short answer often just means the opener was easy to answer shortly.", bundle: 'pro' },
+        { q: "What is the licence in When You Are Joining Something?", a: "Being new. It is a legitimate reason to talk to anyone, and saying so is allowed.", bundle: 'pro' },
+        { q: "Why does asking how things work help when you are new?", a: "It turns a stranger into someone helping you, which is easier for both of you.", bundle: 'pro' },
+        { q: "What do people do instead when they are new?", a: "Hide it and try to blend in, which makes every question sound like one they should know the answer to.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five situations that make opening hard:\n\n• **Closed Signals** — headphones, a book, a fast walk\n• **An Empty Room** — nothing to remark on\n• **Joining a Group** — no gap to speak into\n• **Left Too Long** — the normal moment has passed\n• **A Flat Reply** — you tried and got almost nothing\n\nFour of the five are solved by making the opener smaller, not cleverer.",
+      cards: [
+        { q: "What are the five challenge categories in this pack?", a: "Closed Signals, An Empty Room, Joining a Group, Left Too Long, and A Flat Reply.", bundle: 'pro' },
+        { q: "What is the right move with someone showing closed signals?", a: "An opener they can answer in one word — a comment or a greeting.", bundle: 'pro' },
+        { q: "What can you open with in a completely empty room?", a: "The emptiness itself, the wait, being early, or why you are both there.", bundle: 'pro' },
+        { q: "How do you join a group mid-conversation?", a: "Talk to one person, not the group. Groups do not answer; people do.", bundle: 'pro' },
+        { q: "How do you fix having left it too long?", a: "Name the delay lightly in one sentence, then move on. A paragraph makes it strange again.", bundle: 'pro' },
+        { q: "What does a single flat reply tell you?", a: "Almost nothing. Get a second piece of evidence before deciding.", bundle: 'pro' },
+        { q: "How many attempts after a flat reply?", a: "One more, then let it go warmly.", bundle: 'pro' },
+        { q: "What do most of these categories have in common?", a: "The answer is a smaller opener, not a cleverer one.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "The four beliefs that stop people opening a conversation:\n\n• **The Bar You Set** — it has to be interesting\n• **Reading a Short Reply** — three words means no\n• **Permission** — I need a reason to speak\n• **What It Would Cost** — what if it goes badly\n\nEach one is a reasonable thought, and each one is measuring the wrong thing.",
+      cards: [
+        { q: "What are the four mindset areas in this pack?", a: "The Bar You Set, Reading a Short Reply, Permission, and What It Would Cost.", bundle: 'pro' },
+        { q: "Why is an obvious opener the right one?", a: "It is judged as an invitation, not a remark. Obvious is what makes it easy to answer.", bundle: 'pro' },
+        { q: "Why do people think good openers have to be clever?", a: "They remember the clever ones and never notice the hundreds of dull ones that worked.", bundle: 'pro' },
+        { q: "What does one short reply actually tell you?", a: "That your opener was easy to answer shortly. Nothing more.", bundle: 'pro' },
+        { q: "What reason do you need to speak to a stranger in a queue?", a: "Being in the same queue. That has always been reason enough.", bundle: 'pro' },
+        { q: "What is the honest worst case of an opener that falls flat?", a: "A short reply, from someone who will not remember it by lunchtime.", bundle: 'pro' },
+        { q: "How long does the discomfort last?", a: "A few seconds — and only for you.", bundle: 'pro' },
+        { q: "What do you give up by avoiding it?", a: "Every conversation that would have started. That is the trade being made.", bundle: 'pro' },
       ]
     },
   ],

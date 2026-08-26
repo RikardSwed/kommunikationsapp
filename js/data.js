@@ -964,72 +964,6 @@ const collections = {
       ]
     },
   ],
-  startingconversations1: [
-    {
-      name: "Simple Greeting",
-      guideFront: "You are about to say the first thing. Say it out loud.",
-      guideBack: "One way it could sound.",
-      description: "Say hello. Nothing more. A greeting is not really a question and it is not really information — it is a signal that you are willing to talk, and it puts the next move in the other person's hands without any pressure.\n\nIt works because it is the lowest-risk opener there is. Nobody has ever been offended by \"morning\". If they answer with anything more than a word, the conversation has started; if they do not, nothing has been lost and nothing was awkward.\n\nTypical phrases: \"Hi, how are you?\", \"Morning\", \"Alright?\", \"Hello — long queue, isn't it\"\n\nFour ways to greet:\n\n1. The plain greeting — no addition at all. \"Morning.\" Often the right amount when you pass someone daily.\n\n2. Greeting plus their name — much warmer for one extra word. \"Morning, Sara.\"\n\n3. The ritual question — \"how are you\" used as a greeting, not a real question. Expect \"fine, you?\" and treat that as the door opening.\n\n4. Greeting plus a small hook — one clause that gives them something to answer if they want. \"Hi — busy in here today.\"\n\nMindset: a greeting is an offer, not a demand. If they only nod back, that is a complete and acceptable outcome.",
-      inputs: [
-        { q: "You pass a neighbour on the stairs for the third time this week.", a: "\"Morning.\"", bundle: 'free' },
-        { q: "You arrive at a class and sit next to someone you half recognise.", a: "\"Hi — alright?\"", bundle: 'free' },
-        { q: "You are the first two people in the meeting room.", a: "\"Morning. Just us so far, then.\"", bundle: 'free' },
-        { q: "You get into a lift with one other person.", a: "\"Hi.\"", bundle: 'free' },
-        { q: "A colleague you have not spoken to walks into the kitchen.", a: "\"Hey. How's your week going?\"", bundle: 'free' },
-        { q: "You want to greet someone whose name you have just remembered.", a: "\"Morning, Priya — I nearly walked past you.\"", bundle: 'pro' },
-        { q: "Someone is clearly waiting for the same thing as you.", a: "\"Hi. Long queue, isn't it.\"", bundle: 'pro' },
-        { q: "You are back after two weeks away and see a colleague.", a: "\"Hello, stranger. Have I missed anything?\"", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Introduce Yourself",
-      guideFront: "You are about to say the first thing. Say it out loud.",
-      guideBack: "One way it could sound.",
-      description: "Say your name and give them a reason to say theirs. This is the opener that turns a stranger into someone you have met, and it does something no other opener does: it makes the second conversation easy, because there is no longer a first one to get through.\n\nIt works because it removes the most common obstacle in a room full of people — not knowing whether you are allowed to talk. Saying your name answers that for both of you.\n\nThe trick is to give a small piece of context along with the name, so they have something to reply to besides their own name.\n\nTypical phrases: \"I don't think we've met — I'm…\", \"Hi, I'm…, I work with…\", \"We haven't been introduced, have we? I'm…\"\n\nFour ways to introduce yourself:\n\n1. Name only — short and clear, works everywhere. \"Hi, I'm Rikard.\"\n\n2. Name plus your connection to this room — gives them the frame. \"I'm Rikard, I'm here with the school group.\"\n\n3. Name plus a reason you are talking to them — takes the strangeness out. \"I'm Rikard. I think we're both waiting for the same person.\"\n\n4. Naming the fact that you have not met — useful when you might have. \"Have we actually met? I'm never sure. I'm Rikard.\"\n\nMindset: say it early rather than late. Introducing yourself after twenty minutes of talking is much more awkward than doing it in the first ten seconds.",
-      inputs: [
-        { q: "You arrive at a party where you only know the host.", a: "\"Hi, I'm Rikard. I don't think we've met.\"", bundle: 'free' },
-        { q: "A new person joins your team and you are the first to reach them.", a: "\"You must be the new starter — I'm Rikard, I sit over there.\"", bundle: 'free' },
-        { q: "You are put in a group with someone for the first time.", a: "\"Right, we're together on this. I'm Rikard.\"", bundle: 'free' },
-        { q: "Someone sits down at your table at a course.", a: "\"Hello. I'm Rikard — are you on the same course?\"", bundle: 'free' },
-        { q: "You are both waiting to be picked up from the same place.", a: "\"I think we're waiting for the same lift. I'm Rikard.\"", bundle: 'free' },
-        { q: "You have been in the same room as this person twice without speaking.", a: "\"We keep ending up in the same places and I've never said hello. I'm Rikard.\"", bundle: 'pro' },
-        { q: "You are joining a group where everyone else knows each other.", a: "\"I'm the one nobody knows — Rikard. What have I walked into?\"", bundle: 'pro' },
-        { q: "You want to introduce yourself to someone senior at an event.", a: "\"I've not introduced myself — Rikard. I've been reading what your team publishes.\"", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Comment on the Situation",
-      guideFront: "You are about to say the first thing. Say it out loud.",
-      guideBack: "One way it could sound.",
-      description: "Say something about the thing you are both in. The room, the queue, the weather, the delay, the noise, the food. You are not asking anything — you are putting a shared observation into the air and letting them pick it up.\n\nIt works because the situation is the one thing you are guaranteed to have in common. You do not need to know anything about the person, and they do not need to know anything about you: the evidence is right there in front of both of you.\n\nA comment is lower pressure than a question, because it does not require an answer. That makes it the safest opener with a stranger who might not want to talk.\n\nTypical phrases: \"It's really crowded today.\", \"This is taking a while.\", \"Nice place, this.\", \"I wonder why it always takes so long here.\"\n\nFour ways to comment on the situation:\n\n1. State what you both see — plain and factual. \"It's much busier than last week.\"\n\n2. React to it — put a small feeling on it. \"This queue is testing me a bit.\"\n\n3. Wonder out loud — invites an answer without asking for one. \"I wonder why they only ever open one till.\"\n\n4. Compare it to before — useful if you have both been here before. \"It was half this size last time.\"\n\nMindset: it is meant to be ordinary. The comment does not have to be interesting; it has to be shared.",
-      inputs: [
-        { q: "You are in a long queue with one other person behind you.", a: "\"This is moving slowly, isn't it.\"", bundle: 'free' },
-        { q: "You are early to an event and the room is nearly empty.", a: "\"I think we're the keen ones.\"", bundle: 'free' },
-        { q: "You are both sheltering from heavy rain in a doorway.", a: "\"That came out of nowhere.\"", bundle: 'free' },
-        { q: "You are in a very warm meeting room.", a: "\"It's like a greenhouse in here.\"", bundle: 'free' },
-        { q: "You are at a busy event and can barely move.", a: "\"It's much busier than I expected.\"", bundle: 'free' },
-        { q: "The train has stopped between stations with no announcement.", a: "\"I wonder if anyone's actually going to tell us anything.\"", bundle: 'pro' },
-        { q: "You are at a venue you have both clearly been to before.", a: "\"They've changed the layout since last time. I keep walking the wrong way.\"", bundle: 'pro' },
-        { q: "You are at an event where the food has just run out.", a: "\"Well, that lasted about nine minutes.\"", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Ask About the Situation",
-      guideFront: "You are about to say the first thing. Say it out loud.",
-      guideBack: "One way it could sound.",
-      description: "Ask them something about where you both are. When it starts, where the room is, whether they know how it works, whether this is their first time. It is the question form of the previous move, and it does one extra thing: it gives them a reason to speak.\n\nIt works because the question is easy to answer and obviously genuine. Nobody thinks you are prying when you ask what time the thing begins, and answering costs them nothing.\n\nIt is also the opener with the highest reply rate. A comment can be met with a nod; a question almost always gets words back — and words are what you need.\n\nTypical phrases: \"Do you know when it starts?\", \"Is this the right queue?\", \"Have you been to one of these before?\", \"Do you know how this works?\"\n\nFour ways to ask about the situation:\n\n1. Practical information — the simplest and most natural. \"Do you know if there's a break?\"\n\n2. Whether they have done this before — opens the door to more. \"Is this your first one of these?\"\n\n3. How something works — invites them to be helpful. \"Do you know if we're supposed to sign in?\"\n\n4. Checking your own assumption — gives them something easy to confirm. \"This is the queue for the front section, isn't it?\"\n\nMindset: ask the question you actually want answered. A real question sounds different from an invented one, and people can hear the difference immediately.",
-      inputs: [
-        { q: "You arrive at an event and are not sure where to go.", a: "\"Do you know if we're meant to sign in somewhere?\"", bundle: 'free' },
-        { q: "You are in a queue and not certain it is the right one.", a: "\"Is this the one for the exhibition?\"", bundle: 'free' },
-        { q: "You are at a class and do not know the format.", a: "\"Do you know if there's a break in the middle?\"", bundle: 'free' },
-        { q: "Someone is sitting near you at a talk that has not begun.", a: "\"Any idea when it actually starts?\"", bundle: 'free' },
-        { q: "You are at a gym on a machine you have not used.", a: "\"Sorry — do you know how you change the weight on this?\"", bundle: 'free' },
-        { q: "You want an answer that might open into more than a fact.", a: "\"Is this your first time at one of these, or do you come every year?\"", bundle: 'pro' },
-        { q: "You are on a delayed train with someone opposite you.", a: "\"Have they said anything at your end? I've heard nothing.\"", bundle: 'pro' },
-        { q: "You are new somewhere and want to be shown how things work.", a: "\"You look like you know the drill — is there a system to this or do we just go in?\"", bundle: 'pro' },
-      ]
-    },
-  ],
   startingconversations4: [
     {
       name: "Use Humour or Irony",
@@ -8562,6 +8496,72 @@ const collections = {
       ]
     },
   ],
+  startingconversations1: [
+    {
+      name: "Simple Greeting",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
+      description: "Say hello. Nothing more. A greeting is not really a question and it is not really information — it is a signal that you are willing to talk, and it puts the next move in the other person's hands without any pressure.\n\nIt works because it is the lowest-risk opener there is. Nobody has ever been offended by \"morning\". If they answer with anything more than a word, the conversation has started; if they do not, nothing has been lost and nothing was awkward.\n\nTypical phrases: \"Hi, how are you?\", \"Morning\", \"Alright?\", \"Hello — long queue, isn't it\"\n\nFour ways to greet:\n\n1. The plain greeting — no addition at all. \"Morning.\" Often the right amount when you pass someone daily.\n\n2. Greeting plus their name — much warmer for one extra word. \"Morning, Sara.\"\n\n3. The ritual question — \"how are you\" used as a greeting, not a real question. Expect \"fine, you?\" and treat that as the door opening.\n\n4. Greeting plus a small hook — one clause that gives them something to answer if they want. \"Hi — busy in here today.\"\n\nMindset: a greeting is an offer, not a demand. If they only nod back, that is a complete and acceptable outcome.",
+      inputs: [
+        { q: "You pass a neighbour on the stairs for the third time this week.", a: "\"Morning.\"", bundle: 'free' },
+        { q: "You arrive at a class and sit next to someone you half recognise.", a: "\"Hi — alright?\"", bundle: 'free' },
+        { q: "You are the first two people in the meeting room.", a: "\"Morning. Just us so far, then.\"", bundle: 'free' },
+        { q: "You get into a lift with one other person.", a: "\"Hi.\"", bundle: 'free' },
+        { q: "A colleague you have not spoken to walks into the kitchen.", a: "\"Hey. How's your week going?\"", bundle: 'free' },
+        { q: "You want to greet someone whose name you have just remembered.", a: "\"Morning, Priya — I nearly walked past you.\"", bundle: 'pro' },
+        { q: "Someone is clearly waiting for the same thing as you.", a: "\"Hi. Long queue, isn't it.\"", bundle: 'pro' },
+        { q: "You are back after two weeks away and see a colleague.", a: "\"Hello, stranger. Have I missed anything?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Introduce Yourself",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
+      description: "Say your name and give them a reason to say theirs. This is the opener that turns a stranger into someone you have met, and it does something no other opener does: it makes the second conversation easy, because there is no longer a first one to get through.\n\nIt works because it removes the most common obstacle in a room full of people — not knowing whether you are allowed to talk. Saying your name answers that for both of you.\n\nThe trick is to give a small piece of context along with the name, so they have something to reply to besides their own name.\n\nTypical phrases: \"I don't think we've met — I'm...\", \"Hi, I'm..., I work with...\", \"We haven't been introduced, have we? I'm...\"\n\nFour ways to introduce yourself:\n\n1. Name only — short and clear, works everywhere. \"Hi, I'm Rikard.\"\n\n2. Name plus your connection to this room — gives them the frame. \"I'm Rikard, I'm here with the school group.\"\n\n3. Name plus a reason you are talking to them — takes the strangeness out. \"I'm Rikard. I think we're both waiting for the same person.\"\n\n4. Naming the fact that you have not met — useful when you might have. \"Have we actually met? I'm never sure. I'm Rikard.\"\n\nMindset: say it early rather than late. Introducing yourself after twenty minutes of talking is much more awkward than doing it in the first ten seconds.",
+      inputs: [
+        { q: "You arrive at a party where you only know the host.", a: "\"Hi, I'm Rikard. I don't think we've met.\"", bundle: 'free' },
+        { q: "A new person joins your team and you are the first to reach them.", a: "\"You must be the new starter — I'm Rikard, I sit over there.\"", bundle: 'free' },
+        { q: "You are put in a group with someone for the first time.", a: "\"Right, we're together on this. I'm Rikard.\"", bundle: 'free' },
+        { q: "Someone sits down at your table at a course.", a: "\"Hello. I'm Rikard — are you on the same course?\"", bundle: 'free' },
+        { q: "You are both waiting to be picked up from the same place.", a: "\"I think we're waiting for the same lift. I'm Rikard.\"", bundle: 'free' },
+        { q: "You have been in the same room as this person twice without speaking.", a: "\"We keep ending up in the same places and I've never said hello. I'm Rikard.\"", bundle: 'pro' },
+        { q: "You are joining a group where everyone else knows each other.", a: "\"I'm the one nobody knows — Rikard. What have I walked into?\"", bundle: 'pro' },
+        { q: "You want to introduce yourself to someone senior at an event.", a: "\"I've not introduced myself — Rikard. I've been reading what your team publishes.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Comment on the Situation",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
+      description: "Say something about the thing you are both in. The room, the queue, the weather, the delay, the noise, the food. You are not asking anything — you are putting a shared observation into the air and letting them pick it up.\n\nIt works because the situation is the one thing you are guaranteed to have in common. You do not need to know anything about the person, and they do not need to know anything about you: the evidence is right there in front of both of you.\n\nA comment is lower pressure than a question, because it does not require an answer. That makes it the safest opener with a stranger who might not want to talk.\n\nTypical phrases: \"It's really crowded today.\", \"This is taking a while.\", \"Nice place, this.\", \"I wonder why it always takes so long here.\"\n\nFour ways to comment on the situation:\n\n1. State what you both see — plain and factual. \"It's much busier than last week.\"\n\n2. React to it — put a small feeling on it. \"This queue is testing me a bit.\"\n\n3. Wonder out loud — invites an answer without asking for one. \"I wonder why they only ever open one till.\"\n\n4. Compare it to before — useful if you have both been here before. \"It was half this size last time.\"\n\nMindset: it is meant to be ordinary. The comment does not have to be interesting; it has to be shared.",
+      inputs: [
+        { q: "You are in a long queue with one other person behind you.", a: "\"This is moving slowly, isn't it.\"", bundle: 'free' },
+        { q: "You are early to an event and the room is nearly empty.", a: "\"I think we're the keen ones.\"", bundle: 'free' },
+        { q: "You are both sheltering from heavy rain in a doorway.", a: "\"That came out of nowhere.\"", bundle: 'free' },
+        { q: "You are in a very warm meeting room.", a: "\"It's like a greenhouse in here.\"", bundle: 'free' },
+        { q: "You are at a busy event and can barely move.", a: "\"It's much busier than I expected.\"", bundle: 'free' },
+        { q: "The train has stopped between stations with no announcement.", a: "\"I wonder if anyone's actually going to tell us anything.\"", bundle: 'pro' },
+        { q: "You are at a venue you have both clearly been to before.", a: "\"They've changed the layout since last time. I keep walking the wrong way.\"", bundle: 'pro' },
+        { q: "You are at an event where the food has just run out.", a: "\"Well, that lasted about nine minutes.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ask About the Situation",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
+      description: "Ask them something about where you both are. When it starts, where the room is, whether they know how it works, whether this is their first time. It is the question form of the previous move, and it does one extra thing: it gives them a reason to speak.\n\nIt works because the question is easy to answer and obviously genuine. Nobody thinks you are prying when you ask what time the thing begins, and answering costs them nothing.\n\nIt is also the opener with the highest reply rate. A comment can be met with a nod; a question almost always gets words back — and words are what you need.\n\nTypical phrases: \"Do you know when it starts?\", \"Is this the right queue?\", \"Have you been to one of these before?\", \"Do you know how this works?\"\n\nFour ways to ask about the situation:\n\n1. Practical information — the simplest and most natural. \"Do you know if there's a break?\"\n\n2. Whether they have done this before — opens the door to more. \"Is this your first one of these?\"\n\n3. How something works — invites them to be helpful. \"Do you know if we're supposed to sign in?\"\n\n4. Checking your own assumption — gives them something easy to confirm. \"This is the queue for the front section, isn't it?\"\n\nMindset: ask the question you actually want answered. A real question sounds different from an invented one, and people can hear the difference immediately.",
+      inputs: [
+        { q: "You arrive at an event and are not sure where to go.", a: "\"Do you know if we're meant to sign in somewhere?\"", bundle: 'free' },
+        { q: "You are in a queue and not certain it is the right one.", a: "\"Is this the one for the exhibition?\"", bundle: 'free' },
+        { q: "You are at a class and do not know the format.", a: "\"Do you know if there's a break in the middle?\"", bundle: 'free' },
+        { q: "Someone is sitting near you at a talk that has not begun.", a: "\"Any idea when it actually starts?\"", bundle: 'free' },
+        { q: "You are at a gym on a machine you have not used.", a: "\"Sorry — do you know how you change the weight on this?\"", bundle: 'free' },
+        { q: "You want an answer that might open into more than a fact.", a: "\"Is this your first time at one of these, or do you come every year?\"", bundle: 'pro' },
+        { q: "You are on a delayed train with someone opposite you.", a: "\"Have they said anything at your end? I've heard nothing.\"", bundle: 'pro' },
+        { q: "You are new somewhere and want to be shown how things work.", a: "\"You look like you know the drill — is there a system to this or do we just go in?\"", bundle: 'pro' },
+      ]
+    },
+  ],
 };
 
 // ─── COLLECTIONS MODE DATA ───────────────────────────────────────────────────
@@ -8784,53 +8784,6 @@ const collectionsModeData = {
         { q: "Standing by the coffee at a work event, silence settling in.", a: "\"This coffee is doing heavy lifting today. How's it going?\" (status)", bundle: 'pro' },
         { q: "Someone sits next to you at a talk that hasn't started.", a: "\"I heard good things about this speaker. Have you seen them before?\" (opinion)", bundle: 'pro' },
         { q: "You join a table of strangers at a shared dinner.", a: "\"A friend dragged me along tonight, happily. How do you all know each other?\" (background)", bundle: 'pro' },
-      ]
-    },
-  ],
-  startingconversations1: [
-    {
-      name: "Statement or Question",
-      guideFront: "Which opener fits this moment?",
-      guideBack: "A possible opener, with the strategy in brackets.",
-      description: "The two openers that use the situation itself: commenting on it and asking about it. Choosing between them is the most useful judgement in this pack, because it decides how much you are asking of the other person.\n\nA comment lets them opt out — they can nod and that is the end of it, with no awkwardness for either of you. A question asks for words back, which is more likely to start something but is also more of an imposition.\n\nThe rule of thumb: if they look open, ask. If they look busy, closed off, or absorbed in something, comment — and let them decide.\n\nMindset: read how much they want to be spoken to, and pick the move that respects it.",
-      inputs: [
-        { q: "Someone in the queue keeps checking the time and sighing.", a: "\"This is taking forever, isn't it.\" [Comment on the Situation]", bundle: 'pro' },
-        { q: "Someone in the queue looks around, relaxed, and catches your eye.", a: "\"Do you know if there's more than one till open?\" [Ask About the Situation]", bundle: 'pro' },
-        { q: "A person on the train has headphones half in and is looking out of the window.", a: "\"Bit of a wait, this one.\" [Comment on the Situation]", bundle: 'pro' },
-        { q: "A person at the event is standing alone looking at the programme.", a: "\"Do you know which of these is on first?\" [Ask About the Situation]", bundle: 'pro' },
-        { q: "Someone at the gym is between sets, phone in hand.", a: "\"Busy in here tonight.\" [Comment on the Situation]", bundle: 'pro' },
-        { q: "Someone at the gym is standing by the machine you want.", a: "\"Are you still on this one, or is it free?\" [Ask About the Situation]", bundle: 'pro' },
-        { q: "You are both staring at a departure board that has stopped updating.", a: "\"Do you know if that thing's actually working?\" [Ask About the Situation]", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Do You Need a Name",
-      guideFront: "Which opener fits this moment?",
-      guideBack: "A possible opener, with the strategy in brackets.",
-      description: "Greeting and introducing yourself. Both are about the relationship rather than the topic, and the choice is simply whether this is a person you will see again.\n\nIntroduce yourself when there is a reason to be known — a new colleague, a course, a group you will be part of, anyone you will need to speak to twice. Greet when you will not, or not yet: a queue, a lift, a passer-by.\n\nGetting it wrong is not serious. Introducing yourself to someone you never see again costs nothing; not introducing yourself to someone you now sit next to every week is the more expensive mistake.\n\nMindset: if you might need to talk to them again, give them your name now.",
-      inputs: [
-        { q: "A new person has joined your team and is standing by the coffee machine.", a: "\"You must be new — I'm Rikard, I sit by the window.\" [Introduce Yourself]", bundle: 'pro' },
-        { q: "You get into the lift with someone from another floor.", a: "\"Morning.\" [Simple Greeting]", bundle: 'pro' },
-        { q: "You have been put in a study group with three people you do not know.", a: "\"Right — I'm Rikard. Shall we go round?\" [Introduce Yourself]", bundle: 'pro' },
-        { q: "You pass the same dog walker you pass most mornings.", a: "\"Morning.\" [Simple Greeting]", bundle: 'pro' },
-        { q: "You are seated next to someone at a two-day course.", a: "\"Looks like we're neighbours for two days. I'm Rikard.\" [Introduce Yourself]", bundle: 'pro' },
-        { q: "Someone holds a door for you on the way in.", a: "\"Thanks — morning.\" [Simple Greeting]", bundle: 'pro' },
-        { q: "You join a club and someone is setting up the chairs.", a: "\"Can I give you a hand? I'm Rikard, it's my first time.\" [Introduce Yourself]", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "All Four",
-      guideFront: "Which opener fits this moment?",
-      guideBack: "A possible opener, with the strategy in brackets.",
-      description: "The full set. In any real moment more than one of the four would work, and the skill is picking one quickly rather than picking the best.\n\nA rough guide: if you need to be known, introduce yourself. If you need information, ask about the situation. If you want to open a door without pushing, comment. If you want to do the smallest possible thing, greet.\n\nThe commonest failure is not choosing wrongly — it is standing there running through the options until the moment has gone.\n\nMindset: any of the four beats saying nothing. Pick one and start.",
-      inputs: [
-        { q: "You arrive at a workshop and sit down next to a stranger.", a: "\"Hi, I'm Rikard. Have you done one of these before?\" [Introduce Yourself]", bundle: 'pro' },
-        { q: "You are stuck on a platform with a delayed train and one other person.", a: "\"Do you know if they've said anything about how long?\" [Ask About the Situation]", bundle: 'pro' },
-        { q: "You walk into the office kitchen where one colleague is making tea.", a: "\"Morning.\" [Simple Greeting]", bundle: 'pro' },
-        { q: "You are at a concert and the support act has overrun badly.", a: "\"This is going on a bit, isn't it.\" [Comment on the Situation]", bundle: 'pro' },
-        { q: "You are the only two people who have turned up early to a class.", a: "\"I think we're the keen ones. I'm Rikard.\" [Introduce Yourself]", bundle: 'pro' },
-        { q: "You are waiting at a bar that is very understaffed.", a: "\"Do you know if you order here or at the other end?\" [Ask About the Situation]", bundle: 'pro' },
-        { q: "Someone sits down on the bench next to you in a park.", a: "\"Nice out today, finally.\" [Comment on the Situation]", bundle: 'pro' },
       ]
     },
   ],
@@ -12044,6 +11997,56 @@ const collectionsModeData = {
         { q: "They share a win they are proud of.", a: "\"How long had you been working towards that?\" [Ask Follow-up Questions]", bundle: 'pro' },
         { q: "They say they keep replaying what they should have said.", a: "\"I do that at three in the morning, reliably.\" [Relate Through Sharing]", bundle: 'pro' },
         { q: "They give a long tangled account and stop.", a: "\"Let me check — the deadline moved and nobody told you?\" [Loop Back or Rephrase]", bundle: 'pro' },
+      ]
+    },
+  ],
+  startingconversations1: [
+    {
+      name: "The Three Without a Name",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "**Simple Greeting**, **Comment on the Situation** and **Ask About the Situation** — the three you can use on anybody, with no names exchanged and nothing owed afterwards.\n\n• **Simple Greeting** — the smallest possible signal. They can nod and that is a complete outcome\n• **Comment on the Situation** — an observation they may pick up or let go\n• **Ask About the Situation** — asks for words, and usually gets them\n\n**Which one:** it is a scale of how much you are asking of them. Read how much they want to be spoken to and pick the move that respects it. Headphones, a book, a fast walk — greet or comment. Relaxed, looking around, catching your eye — ask.\n\n**Where it goes wrong:** asking a question of someone who is plainly busy. They answer it, because people do, and then both of you are stuck in a conversation neither wanted.\n\nMindset: the smaller the opener, the easier it is for them to make it bigger.",
+      inputs: [
+        { q: "Someone in the queue keeps checking the time and sighing.", a: "\"This is taking forever, isn't it.\" [Comment on the Situation]", bundle: 'pro' },
+        { q: "Someone in the queue looks around, relaxed, and catches your eye.", a: "\"Do you know if there's more than one till open?\" [Ask About the Situation]", bundle: 'pro' },
+        { q: "A person on the train has headphones half in and is looking out of the window.", a: "\"Bit of a wait, this one.\" [Comment on the Situation]", bundle: 'pro' },
+        { q: "A person at the event is standing alone looking at the programme.", a: "\"Do you know which of these is on first?\" [Ask About the Situation]", bundle: 'pro' },
+        { q: "Someone at the gym is between sets, phone in hand.", a: "\"Busy in here tonight.\" [Comment on the Situation]", bundle: 'pro' },
+        { q: "You pass the same dog walker you pass most mornings.", a: "\"Morning.\" [Simple Greeting]", bundle: 'pro' },
+        { q: "You are both staring at a departure board that has stopped updating.", a: "\"Do you know if that thing's actually working?\" [Ask About the Situation]", bundle: 'pro' },
+        { q: "Someone holds a door for you on the way in.", a: "\"Thanks — nice one.\" [Simple Greeting]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Will You See Them Again",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "All four openers, chosen by one question: is this somebody you will need to speak to twice?\n\n• **Introduce Yourself** — a colleague, a course, a club, anyone recurring\n• **Simple Greeting** — a lift, a passer-by, someone you will not see again\n• **Ask About the Situation** — when you need something from them right now\n• **Comment on the Situation** — when you want a door open without deciding anything\n\n**Which one:** if you might need to talk to them again, give them your name now. The cost of getting this wrong is uneven — introducing yourself to a stranger you never see again costs nothing, while not introducing yourself to someone you now sit beside every week gets more expensive every week.\n\n**Where it goes wrong:** waiting to see whether the conversation is worth a name. By then the natural moment has passed, and the introduction needs explaining.\n\nMindset: names are cheap and awkwardness compounds. Give yours early.",
+      inputs: [
+        { q: "A new person has joined your team and is standing by the coffee machine.", a: "\"You must be new — I'm Rikard, I sit by the window.\" [Introduce Yourself]", bundle: 'pro' },
+        { q: "You get into the lift with someone from another floor.", a: "\"Hi there.\" [Simple Greeting]", bundle: 'pro' },
+        { q: "You have been put in a study group with three people you do not know.", a: "\"Right — I'm Rikard. Shall we go round?\" [Introduce Yourself]", bundle: 'pro' },
+        { q: "You are seated next to someone at a two-day course.", a: "\"Looks like we're neighbours for two days. I'm Rikard.\" [Introduce Yourself]", bundle: 'pro' },
+        { q: "You are behind someone at a till you will never visit again.", a: "\"Long day for them, by the look of it.\" [Comment on the Situation]", bundle: 'pro' },
+        { q: "You join a club and someone is setting up the chairs.", a: "\"Can I give you a hand? I'm Rikard, it's my first time.\" [Introduce Yourself]", bundle: 'pro' },
+        { q: "You need to know something from a stranger you are passing.", a: "\"Sorry — do you know if the café's still open?\" [Ask About the Situation]", bundle: 'pro' },
+        { q: "Someone sits beside you on a two-hour train and you would rather read.", a: "\"Alright.\" [Simple Greeting]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "All Four Openers",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "The full set with no cue given, which is what a real moment is like.\n\n• **Simple Greeting** — the smallest possible thing\n• **Introduce Yourself** — when you need to be known\n• **Comment on the Situation** — when you want a door open without pushing\n• **Ask About the Situation** — when you need information, or words back\n\n**Which one:** in almost any real moment more than one of the four would work, so the skill is picking one quickly rather than picking the best. A rough guide: be known, get information, open a door, or do the smallest thing — in that order of how much you want.\n\n**Where it goes wrong:** it is almost never the wrong choice that costs you. It is standing there running through the options until the moment has gone.\n\nMindset: any of the four beats saying nothing. Pick one and start.",
+      inputs: [
+        { q: "You arrive at a workshop and sit down next to a stranger.", a: "\"Hi, I'm Rikard. Have you done one of these before?\" [Introduce Yourself]", bundle: 'pro' },
+        { q: "You are stuck on a platform with a delayed train and one other person.", a: "\"Do you know if they've said anything about how long?\" [Ask About the Situation]", bundle: 'pro' },
+        { q: "You walk into the office kitchen where one colleague is making tea.", a: "\"Morning — you are keen.\" [Simple Greeting]", bundle: 'pro' },
+        { q: "You are at a concert and the support act has overrun badly.", a: "\"This is going on a bit, isn't it.\" [Comment on the Situation]", bundle: 'pro' },
+        { q: "You are the only two people who have turned up early to a class.", a: "\"I think we're the keen ones. I'm Rikard.\" [Introduce Yourself]", bundle: 'pro' },
+        { q: "You are waiting at a bar that is very understaffed.", a: "\"Do you know if you order here or at the other end?\" [Ask About the Situation]", bundle: 'pro' },
+        { q: "Someone sits down on the bench next to you in a park.", a: "\"Nice out today, finally.\" [Comment on the Situation]", bundle: 'pro' },
+        { q: "You pass a colleague in a corridor with nothing to say.", a: "\"Alright?\" [Simple Greeting]", bundle: 'pro' },
       ]
     },
   ],
