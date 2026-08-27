@@ -2740,6 +2740,21 @@ body.pb-enabled .divider::after {
 }
 .ext-store-btn:active { opacity: 0.8; }
 
+/* v1.27.47 — butiken browsar men säljer inte förrän IAP_LIVE är true.
+   Knappen står kvar på sin plats så kortet inte byter form den dagen den
+   börjar fungera; den ser bara inaktiv ut och går inte att trycka på. */
+.ext-store-btn.is-soon,
+.ext-lifetime-btn.is-soon,
+#extInfoBuy.is-soon {
+  background: var(--ds-subnav-btn);
+  color: var(--ds-txt2);
+  cursor: default;
+  font-weight: 600;
+}
+.ext-store-btn.is-soon:active,
+.ext-lifetime-btn.is-soon:active,
+#extInfoBuy.is-soon:active { opacity: 1; }
+
 .ext-store-owned {
   font-size: 13px;
   font-weight: 600;
