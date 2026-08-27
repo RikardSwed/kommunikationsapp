@@ -3734,6 +3734,97 @@ if (resetFirstRunBtn) resetFirstRunBtn.addEventListener('click', () => {
 // twice; the developer list is simply the unfiltered one.
 const WHATS_NEW = [
   {
+    version: 'v1.27.50', date: 'August 2026', title: 'Assertive Communication, in two parts',
+    items: [
+      '<strong>Assertive Communication 1 — Coping with Criticism</strong>, free. The four moves Manuel J. Smith taught for the moment somebody is criticising, pressuring or guilt-tripping you: <em>Broken Record</em>, <em>Fogging</em>, <em>Negative Assertion</em> and <em>Negative Inquiry</em>.',
+      '<strong>Part 2 — Social &amp; Equal Connections</strong>, in the Extended store. The other half, and the one nobody teaches: catching the details people drop without being asked, saying what you actually feel, declaring a want with no excuse attached, and trading the practical half of a conflict without giving up the part that matters.',
+      'Part 1 is what to do when it is coming at you. Part 2 is what to do first.',
+    ],
+  },
+  {
+    version: 'v1.27.50', date: 'August 2026', title: 'A book in, two packs out', audience: 'dev',
+    items: [
+      'Both Assertive Communication packs were planned and drafted in Gemini Notebook from <em>When I Say No, I Feel Guilty</em>, then corrected against <strong>check-pack.js</strong> over four rounds. It found all seven named techniques, including the three the old pack had dropped, and mapped the Bill of Assertive Rights to nine Mindset decks.',
+      'What it kept getting wrong is worth remembering: it fixes the line you point at, not the rule behind it. Told to repair one malformed step name it repaired that one and wrote two more in the next pack.',
+      '<strong>check-pack.js</strong> gained three checks it had been missing — bullet-list names in descriptions, the <code>[Strategy]</code> label on a card measured against the pack’s own list, and a sequence step name with text appended. Zero false positives across all 116 packs.',
+      '<strong>tools/verify-build.js</strong> — compares the published app file by file against the local one. VERSION only proves that <em>app-core.js</em> arrived; this counts the packs in the data too.',
+    ],
+  },
+  {
+    version: 'v1.27.49', date: 'August 2026', title: 'Two packs, rebuilt',
+    items: [
+      '<strong>Compliments</strong> and <strong>Responsive Humour</strong> have been rewritten to the size the newer packs are — roughly half as much material again in each, with every training mode filled out properly.',
+      'Compliments gained the half almost nobody practises: three new collections that make you choose <em>what</em> you are praising, how far to go, and what to do when one is coming at you.',
+    ],
+  },
+  {
+    version: 'v1.27.48', date: 'August 2026', title: 'Domestic Situations comes with the pack', audience: 'dev',
+    items: [
+      '<strong>assertive::domestic</strong> was sold in Extended and in all three kits, for a pack sitting at minLevel ‘complete’ that no real user can open. It is out of the store; the bundle is now tier <code>pro-opt</code>, a toggle inside the pack like its sibling <em>Workplace &amp; Social</em>. No cards moved — only the gate.',
+      'The parts got 19 kr cheaper, so the kit prices followed. They have been re-set twice since: 129/169/89, then 149/189/99 when Assertive Pt. 2 joined. <strong>test-store.js</strong> now recomputes the ratios from the catalogue itself, so the discount cannot quietly drift again.',
+    ],
+  },
+  {
+    version: 'v1.27.47', date: 'August 2026', title: 'The Extended store is not open yet',
+    items: [
+      'Every <em>Add</em> button now says <strong>Coming soon</strong> and does nothing. Purchases are not built, and until they are, nothing should look like it can be bought.',
+      'Everything else in the store still works — browse it, read what each pack contains, see what it will cost.',
+    ],
+  },
+  {
+    version: 'v1.27.46', date: 'August 2026', title: 'Packs a programme has just given you', audience: 'dev',
+    items: [
+      'The discovery rule has two halves: a pack in an unlocked Part is trainable <em>inside</em> the programme immediately, and spreads to the Library, Topics and search only once that Part’s own checkpoint is passed. The second half worked. The first half never had.',
+      'The programme screen opens packs through <code>showModeScreen</code>, which asked <code>canAccess()</code> and was told no — so a free user who had passed Part 1 of Conversation Foundations got “This pack requires Pro” on the two packs Part 2 had just handed them.',
+      'Fixed with an explicit <code>viaProgram</code> flag, and pinned by <strong>test-progroute.js</strong>, which checks both halves at the same moment.',
+    ],
+  },
+  {
+    version: 'v1.27.45', date: 'August 2026', title: 'Five packs rebuilt, three new introductions',
+    items: [
+      '<strong>Show Understanding</strong>, <strong>Starting Conversations — Pt. 1</strong>, <strong>Talking About Yourself</strong>, <strong>Exploring a Topic</strong> and <strong>Changing Topics</strong> have all been rewritten. Every mode is filled out, the collections make you choose between three strategies rather than two, and every sequence has three scenarios instead of one.',
+      'Three of them had no introduction at all. Talking About Yourself, Exploring a Topic and Changing Topics now open with one, and every introduction ends on the same page: <em>Choosing One</em>. Picking the right move is the exercise, and it was the part none of them said out loud.',
+      'Some deck names have changed, so a rating or a note you left on a renamed deck will not follow it.',
+    ],
+  },
+  {
+    version: 'v1.27.42', date: 'August 2026', title: 'Measuring the library instead of reading it', audience: 'dev',
+    items: [
+      '<strong>tools/check-pack.js</strong> reads a pack with the app’s own parser and measures it against the specification — deck and card counts, free/pro split, guide texts, description lengths, repeated backs, and the one a human cannot do at scale: a sequence or collection naming a strategy that lives in a different pack.',
+      '<strong>Packregister — status och regelnivå.md</strong>, generated by <strong>tools/pack-register.js</strong>. Three rule levels, measured from the app data, plus a hand-filled date for when each pack was last rewritten. It survives regeneration.',
+      'Where it stands: 12 of 116 packs at R3.',
+    ],
+  },
+  {
+    version: 'v1.27.41', date: 'August 2026', title: 'The Assertive Four', audience: 'dev',
+    items: [
+      'The original <em>Assertive Communication</em> is now called <strong>The Assertive Four</strong> and sits at minLevel ‘complete’. The pack key is untouched, so ratings, notes and favourites follow it.',
+      'The name was freed deliberately, for the new packs built from the current rules. The old one is kept exactly as it was.',
+    ],
+  },
+  {
+    version: 'v1.27.40', date: 'August 2026', title: 'The scenario card turns again', audience: 'dev',
+    items: [
+      'In Sequences, the card that sets the scene lists the moves in order on its back. <code>scenarioMoveList</code> required an em dash in each step front to find the move’s name, so a pack that wrote <em>Agreement on facts (I know)</em> produced an empty list and a card that would not turn at all.',
+      'When a step front has no dash, the whole front is the name. That repaired 65 of 71 broken scenario cards across 14 packs. The remaining six are content rather than code — four write their steps as whole sentences, two are purely reactive.',
+    ],
+  },
+  {
+    version: 'v1.27.16', date: 'August 2026', title: 'Notes, and text that reads properly',
+    items: [
+      'You can keep a <strong>note on a pack or a programme</strong> now, not just on a card — reach it from the gear on the pack screen. Notes come along in the export.',
+      'In Sequences, the card that sets the scene now shows the moves in order on its back.',
+      'Bold text in a strategy’s explanation is finally rendered as bold, instead of showing the asterisks.',
+    ],
+  },
+  {
+    version: 'v1.27.10', date: 'August 2026', title: 'A code can open a single pack',
+    items: [
+      'Access codes come in two kinds now. One raises your whole level for a period; the other opens <strong>named packs</strong> and changes nothing else. Several pack codes can run at once, each with its own end date, and the row under the code field counts them down.',
+      'A pack code works whatever level the pack normally needs — which is the point of handing one out.',
+    ],
+  },
+  {
     version: 'v1.26.97', date: 'August 2026', title: 'Feedback circles, and this screen', audience: 'dev',
     items: [
       'The rating circles in feedback mode sit at the bottom edge of the card now. They were positioned against the inner card face, which left 40px of the card’s own padding underneath them — that is why three rounds of extra padding barely moved them.',
