@@ -166,9 +166,6 @@ const packTags = {
   rolebasedhumour: [
     'humour', 'banter', 'playfulness', 'characters'
   ],
-  complimenting: [
-    'compliments', 'appreciation', 'praise', 'receiving praise', 'saying nice things', 'noticing people'
-  ],
   masculine1: [
     'masculinity', 'leadership', 'relationships', 'boundaries', 'presence', 'communication'
   ],
@@ -349,9 +346,6 @@ const packTags = {
   startingconversations4: [
     'starting conversations', 'openers', 'humour', 'saying what you feel', 'approaching people'
   ],
-  responsivehumour: [
-    'humour', 'being funny', 'quick replies', 'banter', 'playfulness', 'reacting'
-  ],
   showunderstanding: [
     'listening', 'understanding', 'empathy', 'conversation'
   ],
@@ -360,6 +354,18 @@ const packTags = {
   ],
   changingtopics: [
     'conversation', 'topic change', 'transitions', 'small talk'
+  ],
+  complimenting: [
+    'compliments', 'appreciation', 'praise', 'receiving praise', 'saying nice things', 'noticing people'
+  ],
+  responsivehumour: [
+    'humour', 'being funny', 'quick replies', 'banter', 'playfulness', 'reacting'
+  ],
+  assertivecomm1: [
+    'assertiveness', 'criticism', 'boundaries', 'coping', 'commercial', 'authority'
+  ],
+  assertivecomm2: [
+    'assertiveness', 'social', 'conversation', 'relationships', 'dating', 'equal'
   ],
 };
 
@@ -411,7 +417,7 @@ const TOPICS = [
   // ── Standing your ground ──────────────────────────────────────────
   { id: 'opinions',              title: 'Opinions & Argumentation',      packs: ['influenceframing', 'agreeing', 'disagreeing', 'givingcounterexamples', 'discussing'] },
   { id: 'persuasion',            title: 'Persuasion & Negotiation',      packs: ['influenceframing', 'persuasionandinfluence1', 'persuasionandinfluence2', 'negotiationandcompromise'] },
-  { id: 'assertiveness',         title: 'Assertiveness & Pressure',      packs: ['assertive', 'brokenrecord', 'respondingtopassiveaggression', 'oconnor1', 'oconnor3', 'jfisher1', 'jfisher2'] },
+  { id: 'assertiveness',         title: 'Assertiveness & Pressure',      packs: ['assertive', 'brokenrecord', 'respondingtopassiveaggression', 'oconnor1', 'oconnor3', 'jfisher1', 'jfisher2', 'assertivecomm1', 'assertivecomm2'] },
   { id: 'boundaries',            title: 'Asking & Saying No',            packs: ['playfulrefusals', 'thehappyno', 'theregretfulno', 'makingrequests', 'sayingno', 'oconnor2', 'jimmy6'] },
 
   // ── The hard end ──────────────────────────────────────────────────

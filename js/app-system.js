@@ -527,10 +527,12 @@ applyInputCounterVisibility();
     // that lists it, is itself 'complete' (see PROGRAM_CONFIG), so no programme
     // route reopens it in packVisibility.
     //
-    // STILL OPEN: `assertive::domestic` is an Extended bundle for this pack and
-    // is sold inside all three kits (app-ui.js). It now adds inputs to a pack
-    // no real user can reach. It has to move to one of the new packs or come
-    // out of the store before anything is sold for real.
+    // SETTLED v1.27.48: `assertive::domestic` was an Extended bundle sold for
+    // this pack, and inside all three kits, which meant the store charged for
+    // inputs to a pack no real user can open. It is out of the store and out
+    // of the kits, and the bundle is now tier 'pro-opt' in BUNDLE_DEFS — a
+    // toggle inside the pack, like its sibling `workplace`. Nothing was
+    // deleted: the cards are still tagged `domestic`, only the gate is gone.
     assertive:      { label: 'The Assertive Four', minLevel: 'complete'  },
     // v1.26.67 — the pre-handbook packs are put AWAY, not deleted: minLevel
     // 'complete' hides them from every real user while leaving them intact
@@ -590,7 +592,6 @@ applyInputCounterVisibility();
     // in Single Strategy and 3 free cards per strategy in Memorize, which are
     // the only two modes a freemium user can reach (see MODE_CONFIG). Same
     // shape as Starting Conversations Pt. 1. Nothing needed changing.
-    complimenting: { label: 'Compliments', minLevel: 'pro' },
 // Conversation Foundations, Part 2
     validation: { label: 'Validation', minLevel: 'program' },                   // Conversation Foundations, Part 3
     deepquestions: { label: 'Deep Questions', minLevel: 'program' },            // Conversation Foundations, Part 4
@@ -697,10 +698,13 @@ applyInputCounterVisibility();
     startingconversations1: { label: 'Starting Conversations — Pt. 1', minLevel: 'freemium' },
     startingconversations2: { label: 'Starting Conversations — Pt. 2', minLevel: 'pro' },
     startingconversations4: { label: 'Starting Conversations — Pt. 4', minLevel: 'extended' },
-    responsivehumour: { label: 'Responsive Humour', minLevel: 'pro' },
     showunderstanding: { label: 'Show Understanding', minLevel: 'freemium' },
     exploringatopic: { label: 'Exploring a Topic', minLevel: 'pro' },
     changingtopics: { label: 'Changing Topics', minLevel: 'pro' },
+    complimenting: { label: 'Compliments', minLevel: 'pro' },
+    responsivehumour: { label: 'Responsive Humour', minLevel: 'pro' },
+    assertivecomm1: { label: 'Assertive Communication 1 — Coping with Criticism', minLevel: 'freemium' },
+    assertivecomm2: { label: 'Assertive Communication 2 — Social & Equal Connections', minLevel: 'extended' },
   };
 
   // ── PROGRAM_CONFIG (v1.26.81) ─────────────────────────────────────────
@@ -858,6 +862,10 @@ applyInputCounterVisibility();
   //               that date, whatever anyone does. This is the only real
   //               limit available without a server — see the note on
   //               reinstalling in `Åtkomstkoder — register.md`.
+  //               v1.27.47: both codes end 2026-12-31. It gates REDEMPTION,
+  //               not the grant — a code redeemed on 30 December still runs
+  //               its 60 days into 2027. That is the intent: nobody loses
+  //               access mid-test, and the code stops spreading at new year.
   //   label       what the person sees when it works
   //
   // KEEP `Appdokumentation/Åtkomstkoder — register.md` IN STEP WITH THIS TABLE.
@@ -865,6 +873,7 @@ applyInputCounterVisibility();
   const ACCESS_CODES = {
     BETA2026: {
       kind: 'level', level: 'pro', days: 60,
+      notAfter: '2026-12-31',
       label: 'Pro unlocked for 60 days.',
     },
     // Newsletter code: one Pro pack, opened for everybody who has the code,
@@ -872,6 +881,7 @@ applyInputCounterVisibility();
     // way to reach it — which is what makes it worth handing out.
     PARENT60: {
       kind: 'pack', packs: ['parenting1'], days: 60, requiresPro: false,
+      notAfter: '2026-12-31',
       label: 'Parenting 01 unlocked for 60 days.',
     },
   };
@@ -1432,9 +1442,14 @@ const BUNDLE_DEFS = {
       name: 'Workplace & Social',
       description: 'Professional situations — colleagues, managers and meetings.',
     },
+    // v1.27.48 — var `extended`, alltså en toggle som först måste köpas i
+    // Extended-butiken. Butiksvaran är borttagen och innehållet ingår nu i
+    // packet: samma tier som systerbunten `workplace`, en valbar toggle för
+    // Pro utan köp. Ingen data har flyttats — korten är taggade `domestic`
+    // som förut, det är bara grinden framför dem som är borta.
     {
       id: 'domestic',
-      tier: 'extended',
+      tier: 'pro-opt',
       name: 'Domestic Situations',
       description: 'Home and close relationships — partners, family and housemates.',
     },
@@ -1892,20 +1907,6 @@ const BUNDLE_DEFS = {
     },
   ],
   rolebasedhumour: [
-    {
-      id: 'free',
-      tier: 'free',
-      name: 'Free Bundle',
-      description: '',
-    },
-    {
-      id: 'pro',
-      tier: 'pro',
-      name: 'Pro Bundle',
-      description: '',
-    },
-  ],
-  complimenting: [
     {
       id: 'free',
       tier: 'free',
@@ -2753,20 +2754,6 @@ const BUNDLE_DEFS = {
       description: '',
     },
   ],
-  responsivehumour: [
-    {
-      id: 'free',
-      tier: 'free',
-      name: 'Free Bundle',
-      description: '',
-    },
-    {
-      id: 'pro',
-      tier: 'pro',
-      name: 'Pro Bundle',
-      description: '',
-    },
-  ],
   showunderstanding: [
     {
       id: 'free',
@@ -2796,6 +2783,62 @@ const BUNDLE_DEFS = {
     },
   ],
   changingtopics: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  complimenting: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  responsivehumour: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  assertivecomm1: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  assertivecomm2: [
     {
       id: 'free',
       tier: 'free',
@@ -3717,7 +3760,7 @@ const WHATS_NEW = [
   {
     version: 'v1.26.90', date: 'August 2026', title: 'Beta codes, both ways', audience: 'dev',
     items: [
-      '<strong>BETA2026</strong> grants Pro for 60 days, redeemed in Settings. The grant is a date rather than a flag, so it lapses on the tester’s own device whatever you push.',
+      '<strong>BETA2026</strong> grants Pro for 60 days, redeemed in Settings. The grant is a date rather than a flag, so it lapses on the tester’s own device whatever you push. The code itself stops being redeemable after 2026-12-31.',
       '<strong>Clear beta access code</strong> in developer settings takes it back immediately, without wiping progress or favourites.',
     ],
   },

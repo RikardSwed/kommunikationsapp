@@ -5,7 +5,7 @@
 // (DS.createCardMode / DS.createHandsfreeMode) and are declared in
 // app-modes.js and app-handsfree.js.
 
-const VERSION = 'v1.27.46';
+const VERSION = 'v1.27.50';
 
 // Keep every version label in the UI in sync with VERSION (v1.26.44).
 // The hardcoded strings in index.html are only fallbacks — this runs at
@@ -73,7 +73,6 @@ const PACK_ICONS = {
   emotionlabellingandregulation: 'ti-mood-smile',
   conflictemotions: 'ti-flame',
   rolebasedhumour: 'ti-mood-happy',
-  complimenting: 'ti-heart',
   masculine1: 'ti-shield',
   masculine2: 'ti-shield',
   masculine3: 'ti-shield',
@@ -134,10 +133,13 @@ const PACK_ICONS = {
   startingconversations1: 'ti-cards',
   startingconversations2: 'ti-cards',
   startingconversations4: 'ti-cards',
-  responsivehumour: 'ti-cards',
   showunderstanding: 'ti-cards',
   exploringatopic: 'ti-cards',
   changingtopics: 'ti-cards',
+  complimenting: 'ti-cards',
+  responsivehumour: 'ti-cards',
+  assertivecomm1: 'ti-cards',
+  assertivecomm2: 'ti-cards',
 };
 function packIcon(key) {
   const name = PACK_ICONS[key] || 'ti-cards';

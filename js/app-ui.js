@@ -2756,6 +2756,19 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
       // entry here a pack with tier 'extended' is unreachable for EVERYONE,
       // so these are load-bearing, not decoration.
       {
+        id: 'assertivecomm2',
+        title: 'Assertive Communication \u2014 Pt. 2',
+        icon: 'ti-users-group',
+        description: 'The other half of assertiveness: starting things, saying what you want, and bargaining with people you are equal to.',
+        details: [
+          'Part 1 is defence \u2014 what to do when criticism, pressure or guilt is coming at you. This is the half nobody teaches: the moves you make first, with people who have no authority over you.',
+          'Four strategies from Manuel J. Smith\u2019s work: catching the details people drop without being asked, saying what you actually feel, declaring a want without a single excuse attached, and trading the practical half of a conflict without giving up the part that matters.',
+          'The hard cases are the ones with no rulebook \u2014 parents who still speak to you as a child, a flatmate who assumes yes, a partner asking for something you do not want tonight, a room full of strangers.',
+          'What you\u2019ll get better at: asking for things, and holding a limit with someone you want to keep.',
+        ],
+        price: '29 kr',
+      },
+      {
         id: 'startingconversations4',
         title: 'Starting Conversations — Pt. 4',
         icon: 'ti-flame',
@@ -2881,31 +2894,16 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
           'The smallest purchase in Extended, aimed at the situations people actually lose.',
         ],
       },
-      // v1.27.41 — ONLY THE PACK NAME WAS UPDATED IN THIS ITEM. `assertive`
-      // moved to minLevel 'complete', so this bundle now sells extra inputs for
-      // a pack no real user can open. Nothing is charged yet — buy() only
-      // writes to localStorage — so it is not doing harm today. But before
-      // anything is sold for real this item has to either move to one of the
-      // new Assertive Communication packs or come out of the store, together
-      // with its three entries in the kits below and the two sentences of kit
-      // copy that name it. Removing it also changes what the kits are worth,
-      // which feeds the handset kit prices that are already an open item.
-      {
-        id: 'assertive::domestic',
-        packKey: 'assertive',
-        bundleId: 'domestic',
-        packTitle: 'The Assertive Four',
-        title: 'Domestic Situations',
-        icon: 'ti-home',
-        description: 'Extra inputs for home and close relationships — partners, family, neighbours, friends. Covers all four assertive strategies.',
-        price: '19 kr',
-        details: [
-          'The hardest place to stay assertive isn\u2019t the office \u2014 it\u2019s home. The stakes are personal, the patterns are old, and the other person knows exactly which buttons to push.',
-          'This bundle adds a full set of home-and-close-relationship situations to your Assertive Four pack: partners, parents, siblings, neighbours and old friends.',
-          'Every card plugs straight into the strategies you already train \u2014 Fogging, Broken Record, Negative Inquiry and Negative Assertion \u2014 so the extra material appears right inside your normal sessions.',
-          'Small price, big blind spot covered.',
-        ],
-      },
+      // v1.27.48 — `assertive::domestic` ÄR BORTTAGEN HÄRIFRÅN. Den sålde
+      // extra inputs till ett pack som ligger på minLevel 'complete' och som
+      // ingen riktig användare kan öppna. Materialet är inte borta: bunten är
+      // omtaggad till tier 'pro-opt' i BUNDLE_DEFS, alltså en valbar toggle
+      // inne i packet utan köp, precis som systerbunten `workplace`.
+      //
+      // Delarnas summa sjönk med 19 kr när varan försvann (183 → 164 och
+      // 242 → 223), så kiten är prisändrade i samma andel som i v1.27.47.
+      // `tools/test-store.js` räknar om andelarna ur källan och hade fallit
+      // om bara den ena halvan gjorts.
     ],
     kits: [
       // v1.26.80 — both kits now list the WHOLE current catalog. Their copy
@@ -2918,23 +2916,28 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
         id: 'kit-communicator',
         title: 'The Communicator Kit',
         icon: 'ti-packages',
-        description: 'Every extra pack and input bundle in one purchase, for less than the parts cost separately.',
-        price: '79 kr',
+        description: 'Every extra pack and every input bundle in one purchase, for less than the parts cost separately.',
+        // v1.27.47. Priset var 79 kr av 183, alltså 43 % — det låg på 80 %
+        // innan de fem Extended-packen tillkom och kiten inte följde med.
+        // Rabatten ska vara ett beslut, inte en bieffekt av att katalogen
+        // växte. v1.27.50: Assertive Communication Pt. 2 tillkom, delarna
+        // kostar 193 kr, och 149 kr är 77 % — samma nivå som förut.
+        price: '149 kr',
         details: [
-          'All five extra packs and both input bundles in one purchase \u2014 {separately} if you buy the parts one by one.',
+          'All six extra packs and the extra Broken Record situations in one purchase \u2014 {separately} if you buy the parts one by one.',
           'Three of them go deeper into something you already train: the last step of the Starting Conversations ladder, where you open with nothing to hide behind; the deep half of Apologizing, for when sorry is not enough; and the second half of Explain Things, for the audience that was never going to make it easy.',
           'The other two stand on their own. Building a Story is the shape of a story from first sentence to last. Reframing is the other reading of the same facts \u2014 and, just as usefully, when not to offer one.',
-          'On top of that, extra situations for two packs you already have \u2014 family pressure for Broken Record, and home and close relationships for The Assertive Four.',
+          'On top of that, a full set of extra situations for a pack you already have \u2014 the family pressure that makes Broken Record hard in the first place.',
           'Everything is unlocked immediately and works in all your training modes, including handsfree.',
         ],
         contents: [
+          { type: 'pack',   id: 'assertivecomm2' },
           { type: 'pack',   id: 'startingconversations4' },
           { type: 'pack',   id: 'apologizing2' },
           { type: 'pack',   id: 'explainthings2' },
           { type: 'pack',   id: 'buildingastory' },
           { type: 'pack',   id: 'reframing' },
           { type: 'bundle', id: 'brokenrecord::family' },
-          { type: 'bundle', id: 'assertive::domestic' },
         ],
       },
       {
@@ -2942,21 +2945,24 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
         title: 'The Complete Kit',
         icon: 'ti-diamond',
         description: 'Everything in Extended, including the Difficult Conversations program — nothing left to buy.',
-        price: '119 kr',
+        // 189 av 252 är 75 %. Steget upp från The Communicator Kit är 40 kr
+        // för ett program som kostar 59 styckvis — uppgraderingen ska vara
+        // det uppenbara valet för den som ändå står vid kassan.
+        price: '189 kr',
         details: [
-          'Every single thing in Extended in one purchase: all five extra packs, both input bundles, and the Difficult Conversations program. Bought one by one it comes to {separately}.',
+          'Every single thing in Extended in one purchase: all six extra packs, the extra Broken Record situations, and the Difficult Conversations program. Bought one by one it comes to {separately}.',
           'The program is what makes this different from The Communicator Kit. Three Parts with a test at the end of each, and three packs \u2014 Conflict Emotions, Giving Criticism and Receiving Feedback and Criticism \u2014 that exist nowhere else in the app.',
-          'Around it sit the five extra packs: the last step of the Starting Conversations ladder, the deep half of Apologizing, the second half of Explain Things, the shape of a story from first sentence to last, and Reframing \u2014 the other reading of the same facts. Plus family pressure for Broken Record and home situations for The Assertive Four.',
+          'Around it sit the six extra packs: the last step of the Starting Conversations ladder, the deep half of Apologizing, the second half of Explain Things, the shape of a story from first sentence to last, and Reframing \u2014 the other reading of the same facts. Plus the family pressure that makes Broken Record hard in the first place.',
           'Everything unlocks immediately and works in all your training modes, including handsfree. After this there is nothing else in Extended to buy.',
         ],
         contents: [
+          { type: 'pack',    id: 'assertivecomm2' },
           { type: 'pack',    id: 'startingconversations4' },
           { type: 'pack',    id: 'apologizing2' },
           { type: 'pack',    id: 'explainthings2' },
           { type: 'pack',    id: 'buildingastory' },
           { type: 'pack',    id: 'reframing' },
           { type: 'bundle',  id: 'brokenrecord::family' },
-          { type: 'bundle',  id: 'assertive::domestic' },
           { type: 'program', id: 'difficult-conversations' },
         ],
       },
@@ -2965,20 +2971,23 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
         title: 'Classroom Kit',
         icon: 'ti-school',
         description: 'The same material as The Communicator Kit, at a special rate for classroom and group use.',
-        price: '59 kr',
+        // Samma innehåll som The Communicator Kit till 67 % av dess pris
+        // (52 % av delarna). Det är den rabatt som gör "special rate"
+        // sann utan att göra det billigare att låtsas vara ett klassrum.
+        price: '99 kr',
         code: 'DEMO2026',
         details: [
           'The same packs and bundles as The Communicator Kit, at a special rate for classroom and group use \u2014 unlocked with an access code from your teacher or course leader.',
-          'Five extra packs and two sets of extra situations, {separately} bought separately, all available in every training mode. The Difficult Conversations program is not included; that one is in The Complete Kit.',
+          'Six extra packs and the extra Broken Record situations, {separately} bought separately, all available in every training mode. The Difficult Conversations program is not included; that one is in The Complete Kit.',
         ],
         contents: [
+          { type: 'pack',   id: 'assertivecomm2' },
           { type: 'pack',   id: 'startingconversations4' },
           { type: 'pack',   id: 'apologizing2' },
           { type: 'pack',   id: 'explainthings2' },
           { type: 'pack',   id: 'buildingastory' },
           { type: 'pack',   id: 'reframing' },
           { type: 'bundle', id: 'brokenrecord::family' },
-          { type: 'bundle', id: 'assertive::domestic' },
         ],
       },
     ],
@@ -3071,6 +3080,21 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
   }
 
   // ── Purchasing ─────────────────────────────────────────────────
+  // v1.27.47. NOTHING IS CHARGED FOR. `buy()` writes to localStorage and that
+  // is the whole transaction — there is no StoreKit, no receipt, no payment.
+  // Until there is, a beta tester who presses Add gets the goods for free and
+  // reports it as a bug, which is exactly what happened in the last round.
+  //
+  // With IAP_LIVE false the store still browses, still shows prices and still
+  // opens every info sheet — only the Add button is replaced by a disabled
+  // "Coming soon". Flip this to true on the day real purchases work, and
+  // nothing else in this file needs touching.
+  //
+  // The developer level `complete` is exempt: it is not a level any real user
+  // can reach, and the store has to stay testable.
+  const IAP_LIVE = false;
+  function iapOpen() { return IAP_LIVE || getAccessLevel() === 'complete'; }
+
   function activateBundle(item) {
     const bKey = `bundles:${item.packKey}`;
     try {
@@ -3080,6 +3104,7 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
   }
 
   function buy(type, item) {
+    if (!iapOpen()) return;            // se IAP_LIVE ovan
     const o = getOwned();
     const add = id => { if (!o.includes(id)) o.push(id); };
     add(item.id);
@@ -3180,8 +3205,12 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
     const ownedEl = ov.querySelector('#extInfoOwned');
     buyBtn.style.display = owned ? 'none' : '';
     ownedEl.style.display = owned ? '' : 'none';
-    buyBtn.textContent = type === 'lifetime' ? 'Get Lifetime Pro' : 'Add';
+    const open = iapOpen();
+    buyBtn.textContent = open ? (type === 'lifetime' ? 'Get Lifetime Pro' : 'Add') : 'Coming soon';
+    buyBtn.disabled = !open;
+    buyBtn.classList.toggle('is-soon', !open);
     buyBtn.onclick = () => {
+      if (!open) return;
       if (type === 'lifetime') {
         const o = getOwned();
         if (!o.includes(item.id)) o.push(item.id);
@@ -3228,7 +3257,7 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
           : `<div class="ext-store-price">${item.price}</div>
              <div class="ext-store-actions">
                <button class="ext-info-btn" aria-label="More about ${item.title}"><i class="ti ti-info-circle" aria-hidden="true"></i> Info</button>
-               <button class="ext-store-btn">Add</button>
+               <button class="ext-store-btn${iapOpen() ? '' : ' is-soon'}"${iapOpen() ? '' : ' disabled'}>${iapOpen() ? 'Add' : 'Coming soon'}</button>
              </div>`
         }
       </div>`;
@@ -3236,9 +3265,9 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
       e.stopPropagation();
       openExtInfo(type, item);
     });
-    if (!owned) {
+    if (!owned && iapOpen()) {
       card.querySelector('.ext-store-btn').addEventListener('click', () => buy(type, item));
-    } else if (type === 'packs' || type === 'programs') {
+    } else if (owned && (type === 'packs' || type === 'programs')) {
       card.style.cursor = 'pointer';
       card.addEventListener('click', () => goToOwned(type, item));
     }
@@ -3262,14 +3291,14 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
           : `<div class="ext-lifetime-price">${LIFETIME.price}</div>
              <div class="ext-store-actions">
                <button class="ext-info-btn ext-info-btn--light" id="extLifetimeInfo"><i class="ti ti-info-circle" aria-hidden="true"></i> Info</button>
-               <button class="ext-lifetime-btn" id="extLifetimeBuy">Get Lifetime Pro</button>
+               <button class="ext-lifetime-btn${iapOpen() ? '' : ' is-soon'}" id="extLifetimeBuy"${iapOpen() ? '' : ' disabled'}>${iapOpen() ? 'Get Lifetime Pro' : 'Coming soon'}</button>
              </div>`
         }
       </div>`;
     const infoBtn = host.querySelector('#extLifetimeInfo');
     if (infoBtn) infoBtn.addEventListener('click', () => openExtInfo('lifetime', LIFETIME));
     const btn = host.querySelector('#extLifetimeBuy');
-    if (btn) btn.addEventListener('click', () => {
+    if (btn && iapOpen()) btn.addEventListener('click', () => {
       const o = getOwned();
       if (!o.includes(LIFETIME.id)) o.push(LIFETIME.id);
       setOwned(o);

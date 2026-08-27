@@ -2429,73 +2429,6 @@ const challengesCollections = {
       ]
     },
   ],
-  complimenting: [
-    {
-      name: "They Deflect It",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible compliment, with the strategy in brackets.",
-      description: "You say something kind and it bounces straight off — \"oh, it's old\", \"anyone could have done it\", \"I got lucky\". The compliment has not landed, and the usual response is to give up and change the subject.\n\nThe fix is to make it harder to wave away. A specific detail cannot be dismissed as politeness, and an effect on you cannot be dismissed at all — they can argue about whether they were good, but not about what you went home and told your partner.\n\nOne repetition is enough. Saying it a third time turns a compliment into a negotiation, and that is not a nicer thing to be on the receiving end of.\n\nMindset: say it once more with evidence, then let them have their answer.",
-      inputs: [
-        { q: "They say \"oh, it was nothing\".", a: "\"It wasn't. The ending specifically — you didn't oversell it.\" [Name What You Noticed]", bundle: 'pro' },
-        { q: "They put it down to luck.", a: "\"You chose to cut the first version. That's not luck.\" [Compliment the Choice, Not the Luck]", bundle: 'pro' },
-        { q: "They cannot argue with what it did to you.", a: "\"Whether it was good or not, I've started doing it your way.\" [Say Why It Landed]", bundle: 'pro' },
-        { q: "You have now said it twice and they still will not take it.", a: "\"You never take these. I'm going to keep saying them anyway.\" [Answer It, Don't Return It]", bundle: 'pro' },
-        { q: "They deflect by complimenting you back immediately.", a: "\"Nice try. This one's about you.\" [Answer It, Don't Return It]", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "There Is a Difference in Rank",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible compliment, with the strategy in brackets.",
-      description: "Praise from a manager is not the same object as praise from a peer. It carries weight, it can be heard as an evaluation, and it can make everyone else in the room recalculate.\n\nGoing downwards: be specific and be public about credit, but keep character compliments private — \"you're so reliable\" from a boss sounds like a performance review, not a kindness.\n\nGoing upwards: the risk is that it sounds like flattery, and the cure is the same as everywhere else. Praise something specific that you could only know by paying attention, and say what it did rather than how good they are.\n\nMindset: the more power in the room, the more specific the compliment has to be to be believed.",
-      inputs: [
-        { q: "You manage them and want to praise the work.", a: "\"The order you put the sections in is what made it work.\" [Name What You Noticed]", bundle: 'pro' },
-        { q: "You manage them and want the room to know.", a: "\"The whole second half is Jonas's work.\" [Say It Where It Counts]", bundle: 'pro' },
-        { q: "You want to praise your manager without it sounding like flattery.", a: "\"When you took the blame for that in the meeting, it changed how I saw the team.\" [Say Why It Landed]", bundle: 'pro' },
-        { q: "The character compliment would sound like an appraisal.", a: "(say it privately, not in the room) [Say It Where It Counts]", bundle: 'pro' },
-        { q: "Someone senior praises you in front of the team.", a: "\"Thank you — that's a nice thing to hear in front of people.\" [Answer It, Don't Return It]", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "It Is About How They Look",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible compliment, with the strategy in brackets.",
-      description: "The category people worry about most, and the one with the clearest rule: praise the choice, not the body.\n\nThe jacket, the haircut, the way someone puts colours together — those are decisions, and decisions are fair game with almost anyone. What they were born with is not a decision, and saying so is an observation about their body rather than a compliment.\n\nContext does the rest. At work, keep it short and move on: a sentence, no lingering, no follow-up questions. With people who cannot easily leave the conversation — a colleague, someone serving you — shorter still.\n\nMindset: if it took a decision, it is a compliment. If it took genetics, it is a remark.",
-      inputs: [
-        { q: "You like what a colleague is wearing.", a: "\"Good jacket. That's all, carry on.\" [Say It Where It Counts]", bundle: 'pro' },
-        { q: "You are about to compliment their face or their body.", a: "\"Whoever cuts your hair knows what they're doing.\" [Compliment the Choice, Not the Luck]", bundle: 'pro' },
-        { q: "A friend has clearly made an effort tonight.", a: "\"You've put that together properly. It's very you.\" [Name What You Noticed]", bundle: 'pro' },
-        { q: "They wave it off as an old thing they threw on.", a: "\"You still chose it. That counts.\" [Compliment the Choice, Not the Luck]", bundle: 'pro' },
-        { q: "Someone compliments how you look and you go straight to explaining.", a: "\"Thanks — I like it too, which is why I wear it too often.\" [Take a Compliment]", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "You Have Not Said It in Years",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible compliment, with the strategy in brackets.",
-      description: "Someone close — a parent, a sibling, an old friend — and a thing you have thought for a decade and never said. The longer it goes unsaid, the stranger it feels to start, and the more it would mean.\n\nThe awkwardness is real and it is worth naming out loud rather than working around. \"We don't say this sort of thing\" is a perfectly good first sentence, and it does most of the work: it tells them something unusual is coming and gives you both permission.\n\nAttach it to something concrete if you can. Evidence keeps a large sentence from floating.\n\nMindset: say it late rather than not at all. Late still counts.",
-      inputs: [
-        { q: "You never say things like this to your family.", a: "\"We don't say this sort of thing. I'm going to anyway.\" [Say the Bigger One]", bundle: 'pro' },
-        { q: "It is years overdue and that is the awkward part.", a: "\"I should have said this a long time ago, and here it is anyway.\" [Say the Bigger One]", bundle: 'pro' },
-        { q: "You want to anchor it in something real.", a: "\"You drove two hours for someone who wouldn't have done it for you.\" [Say the Bigger One]", bundle: 'pro' },
-        { q: "They did something good years ago that you never acknowledged.", a: "\"I never said it at the time: what you did that summer mattered.\" [Say Why It Landed]", bundle: 'pro' },
-        { q: "You have said it and they have gone quiet.", a: "(let it sit — do not fill the pause) [Say the Bigger One]", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "It Is Not Really a Compliment",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible compliment, with the strategy in brackets.",
-      description: "Where this pack stops. Some sentences look like praise and are doing something else, and using the strategies here to polish them makes them worse, not better.\n\nPraise with a request attached is a lever — \"you're so good at this, could you…\" tells them the kindness was payment in advance. Praise as the front half of a criticism is the compliment sandwich, and everyone can hear the \"but\" coming, so the praise is spent before it lands. Praise aimed at someone who cannot easily leave, about their body, is not a gift no matter how it is phrased.\n\nAnd the last one: praise you do not mean. A compliment is information about how you actually see them, and an untrue one quietly devalues every true one you have given.\n\nMindset: if it is doing a job for you, it is not a compliment. Say the thing you want instead.",
-      inputs: [
-        { q: "You are about to praise them and then ask for a favour.", a: "(ask plainly first, and save the compliment for a day when you want nothing) [Say It Where It Counts]", bundle: 'pro' },
-        { q: "You are about to open a criticism with something nice.", a: "(give the criticism plainly — praise spent as padding has no effect left to report) [Say Why It Landed]", bundle: 'pro' },
-        { q: "You want to say something warm to soften bad news.", a: "(the news first, warmth after, and mean it when it comes) [Say the Bigger One]", bundle: 'pro' },
-        { q: "You do not actually believe the compliment you are about to give.", a: "(leave it — if you noticed nothing there is nothing to name, and an untrue one costs you the true ones) [Name What You Noticed]", bundle: 'pro' },
-        { q: "There is something you genuinely admire and no agenda at all.", a: "\"No reason for saying this: you're very good at what you do.\" [Say the Bigger One]", bundle: 'pro' },
-      ]
-    },
-  ],
   masculine1: [
     {
       name: "The Cold Shoulder",
@@ -4294,73 +4227,6 @@ const challengesCollections = {
       ]
     },
   ],
-  responsivehumour: [
-    {
-      name: "A Small Complaint",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
-      description: "The most common opening there is. Someone mentions a minor\nannoyance — the weather, the timetable, the neighbour, the queue — and what\nthey want is company, not a solution.\n\nExaggeration is the natural fit, because it says *I am on your side and this is\nnot serious*. Understatement does the same job in the opposite register and is\nbetter with people you do not know well.\n\nThe thing to avoid is the earnest reply. Answering a small complaint with real\nadvice makes it a bigger thing than they meant it to be.\n\nMindset: they are not asking for help. They are handing you a sentence.",
-      inputs: [
-        { q: "\"I couldn't sleep, my neighbour was making noise.\"", a: "\"Is your neighbour a marching band?\" [Exaggeration]", bundle: 'pro' },
-        { q: "\"The car broke down, then it rained.\"", a: "\"So the day has been going well.\" [Understatement]", bundle: 'pro' },
-        { q: "\"This room is too dark.\"", a: "\"It's saving the light for the afternoon shift.\" [Misdirection]", bundle: 'pro' },
-        { q: "\"I'm running out of time.\"", a: "\"Where does it go? Have you checked the sofa?\" [Deliberate Misunderstanding]", bundle: 'pro' },
-        { q: "\"It's raining again.\"", a: "\"Excellent. My favourite.\" [Irony]", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "They Are Pleased With Themselves",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
-      description: "Someone is mildly showing off — the fast computer, the\nmarathon, the reading habit. Handled well this is warm; handled badly it is a\nput-down.\n\nUnderstatement is the safest, because shrinking an achievement in an obviously\nabsurd way is a compliment wearing a disguise. Misdirection works too, as long\nas the twist is about the thing rather than about them.\n\nWhat does not work is irony aimed at the achievement itself. \"Oh, very\nimpressive\" said flat is sarcasm, and it takes something from them rather than\ngiving it.\n\nMindset: shrink the thing, never the person.",
-      inputs: [
-        { q: "\"I ran a marathon on Sunday.\"", a: "\"That's a bit of a walk.\" [Understatement]", bundle: 'pro' },
-        { q: "\"My computer is super fast.\"", a: "\"I saw it running down the street yesterday.\" [Misdirection]", bundle: 'pro' },
-        { q: "\"I read books all the time.\"", a: "\"All of them? At once? That's a lot of arms.\" [Deliberate Misunderstanding]", bundle: 'pro' },
-        { q: "You are about to be ironic about the achievement itself.", a: "(leave it — that one lands as sarcasm) [Irony]", bundle: 'pro' },
-        { q: "They built the whole thing themselves.", a: "\"Bit of a project, then.\" [Understatement]", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Someone States the Obvious",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
-      description: "\"It's raining outside.\" \"The room has white walls.\" \"It's\nlunch in five minutes.\" Sentences with no content, said to fill a silence — and\ntherefore an open invitation.\n\nDeliberate Misunderstanding is made for these. So is Misdirection, because an\nobvious statement gives you a very flat first half to build on.\n\nThese are also the best sentences to practise on, precisely because they are\nempty. Anyone can be funny about a good story. The skill is being funny about\nwhite walls.\n\nMindset: the emptier the sentence, the more room there is in it.",
-      inputs: [
-        { q: "\"It's raining outside.\"", a: "\"Really? Inside it's completely dry.\" [Deliberate Misunderstanding]", bundle: 'pro' },
-        { q: "\"The room has white walls.\"", a: "\"Someone in this building has made exactly one decision.\" [Misdirection]", bundle: 'pro' },
-        { q: "\"It's lunch in five minutes.\"", a: "\"Five minutes. I can survive that. Probably.\" [Exaggeration]", bundle: 'pro' },
-        { q: "\"I love eating pizza.\"", a: "\"Same. It's the only food that's also a plate.\" [Misdirection]", bundle: 'pro' },
-        { q: "\"It's quite cold today.\"", a: "\"Bit brisk, yes.\" [Understatement]", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "It Did Not Land",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
-      description: "You said something you thought was funny and nothing happened\n— or worse, they took it seriously. Every practised joker has this several\ntimes a week, and the difference between them and everyone else is entirely in\nwhat happens next.\n\nThe rule: do not explain it. An explained joke is worse than an unnoticed one,\nand a second run at the same joke is worse again. Answer the thing they\nactually said and move on; the next opening arrives within a minute.\n\nIf they took it at face value, one flat clarification is fine — \"that was me\nagreeing with you, badly\" — and then it is over.\n\nMindset: a miss costs four seconds. Explaining it costs the conversation.",
-      inputs: [
-        { q: "They take your irony completely at face value.", a: "\"That was me agreeing with you, badly.\" [Understatement]", bundle: 'pro' },
-        { q: "You are about to explain why it was funny.", a: "(do not — answer what they actually said instead) [Irony]", bundle: 'pro' },
-        { q: "Nobody reacted at all.", a: "(say the plain version and carry on — the next opening is a minute away) [Understatement]", bundle: 'pro' },
-        { q: "You want one more go without repeating yourself.", a: "\"Ignore me. What happened after the car broke down?\" [Deliberate Misunderstanding]", bundle: 'pro' },
-        { q: "They laughed a beat late.", a: "(let it be — do not point out that it worked) [Irony]", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Now Is Not the Time",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
-      description: "Where this pack stops. Not every sentence is an invitation,\nand the five strategies are quick enough to arrive before you have decided\nwhether they should.\n\nThree situations to keep out of: something they are genuinely upset about,\nsomething they are proud of and vulnerable about, and any moment where you have\npower over them — humour from a manager about someone's work is not read the\nsame way as humour from a peer.\n\nThe tell is easy to feel and easy to ignore: if the joke needs them to be a\ngood sport, it is aimed at them, and this pack is not aimed at people.\n\nMindset: aim at the situation, the sentence, or yourself. Never at the person\nwho is holding something heavy.",
-      inputs: [
-        { q: "They are genuinely upset and you reached for a joke by reflex.", a: "(drop it — answer the sentence, not the setup) [Understatement]", bundle: 'pro' },
-        { q: "They said something they are proud and slightly nervous about.", a: "\"That's a bit of a project.\" (warm, and then say it plainly) [Understatement]", bundle: 'pro' },
-        { q: "You are their manager and the joke is about their work.", a: "(not yours to make — the room hears it differently from you) [Irony]", bundle: 'pro' },
-        { q: "The joke needs them to be a good sport to work.", a: "(that means it is aimed at them — leave it) [Exaggeration]", bundle: 'pro' },
-        { q: "You want to be light about something heavy, later.", a: "\"For what it's worth, that is the worst week I've heard about this year.\" [Exaggeration]", bundle: 'pro' },
-      ]
-    },
-  ],
   showunderstanding: [
     {
       name: "The Urge to Fix",
@@ -4604,6 +4470,334 @@ const challengesCollections = {
         { q: "Somebody politely tried to keep your dead topic alive.", a: "\"You're being kind. Let it go, it's fine. What's new with you?\" [Respectful Exit]", bundle: 'pro' },
         { q: "Your joke landed flat and the room went quiet.", a: "\"That was for me, clearly. Moving swiftly on — anyone got weekend plans?\" [Random or Light Switch]", bundle: 'pro' },
         { q: "You realise you have started three subjects that all died.", a: "\"I'm three for three on bad topics. Someone else drive.\" [Random or Light Switch]", bundle: 'pro' },
+      ]
+    },
+  ],
+  complimenting: [
+    {
+      name: "They Deflect It",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "You say something kind and it bounces straight off — \"oh, it's old\", \"anyone could have done it\", \"I got lucky\". The compliment has not landed, and the usual response is to give up and change the subject.\n\nThe fix is to make it harder to wave away. A specific detail cannot be dismissed as politeness, and an effect on you cannot be dismissed at all — they can argue about whether they were good, but not about what you went home and told your partner.\n\nOne repetition is enough. Saying it a third time turns a compliment into a negotiation, and that is not a nicer thing to be on the receiving end of.\n\nMindset: say it once more with evidence, then let them have their answer.",
+      inputs: [
+        { q: "They say \"oh, it was nothing\".", a: "\"It wasn't. The ending specifically — you didn't oversell it.\" [Name What You Noticed]", bundle: 'pro' },
+        { q: "They put it down to luck.", a: "\"You chose to cut the first version. That's not luck.\" [Compliment the Choice, Not the Luck]", bundle: 'pro' },
+        { q: "They cannot argue with what it did to you.", a: "\"Whether it was good or not, I've started doing it your way.\" [Say Why It Landed]", bundle: 'pro' },
+        { q: "You have now said it twice and they still will not take it.", a: "\"You never take these. I'm going to keep saying them anyway.\" [Answer It, Don't Return It]", bundle: 'pro' },
+        { q: "They deflect by complimenting you back immediately.", a: "\"Nice try. This one's about you.\" [Answer It, Don't Return It]", bundle: 'pro' },
+        { q: "They credit the whole team instead of themselves.", a: "\"The team was there. You're the one who made the call.\" [Compliment the Choice, Not the Luck]", bundle: 'pro' },
+        { q: "They laugh and change the subject.", a: "\"You can move on, I'm just leaving it on the table.\" [Say the Bigger One]", bundle: 'pro' },
+        { q: "You realise you deflect exactly the same way.", a: "\"I do this too. So: thank you, and you're allowed to say thank you back.\" [Take a Compliment]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "There Is a Difference in Rank",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Praise from a manager is not the same object as praise from a peer. It carries weight, it can be heard as an evaluation, and it can make everyone else in the room recalculate.\n\nGoing downwards: be specific and be public about credit, but keep character compliments private — \"you're so reliable\" from a boss sounds like a performance review, not a kindness.\n\nGoing upwards: the risk is that it sounds like flattery, and the cure is the same as everywhere else. Praise something specific that you could only know by paying attention, and say what it did rather than how good they are.\n\nMindset: the more power in the room, the more specific the compliment has to be to be believed.",
+      inputs: [
+        { q: "You manage them and want to praise the work.", a: "\"The order you put the sections in is what made it work.\" [Name What You Noticed]", bundle: 'pro' },
+        { q: "You manage them and want the room to know.", a: "\"The whole second half is Jonas's work.\" [Say It Where It Counts]", bundle: 'pro' },
+        { q: "You want to praise your manager without it sounding like flattery.", a: "\"When you took the blame for that in the meeting, it changed how I saw the team.\" [Say Why It Landed]", bundle: 'pro' },
+        { q: "The character compliment would sound like an appraisal.", a: "\"I'll say this at your desk rather than in the room: you're the steady one here.\" [Say It Where It Counts]", bundle: 'pro' },
+        { q: "Someone senior praises you in front of the team.", a: "\"Thank you — that's a nice thing to hear in front of people.\" [Answer It, Don't Return It]", bundle: 'pro' },
+        { q: "You are praising a peer while your manager is listening.", a: "\"For the record, the difficult half was hers.\" [Say It Where It Counts]", bundle: 'pro' },
+        { q: "Praise from you might be heard as the start of a request.", a: "\"Nothing attached to this — the report was the clearest one this year.\" [Name What You Noticed]", bundle: 'pro' },
+        { q: "You are new and everyone senior is in the room.", a: "\"I'm new, so take it as an outside view: you run the shortest meetings I've sat in.\" [Say the Bigger One]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "It Is About How They Look",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "The category people worry about most, and the one with the clearest rule: praise the choice, not the body.\n\nThe jacket, the haircut, the way someone puts colours together — those are decisions, and decisions are fair game with almost anyone. What they were born with is not a decision, and saying so is an observation about their body rather than a compliment.\n\nContext does the rest. At work, keep it short and move on: a sentence, no lingering, no follow-up questions. With people who cannot easily leave the conversation — a colleague, someone serving you — shorter still.\n\nMindset: if it took a decision, it is a compliment. If it took genetics, it is a remark.",
+      inputs: [
+        { q: "You like what a colleague is wearing.", a: "\"Good jacket. That's all, carry on.\" [Say It Where It Counts]", bundle: 'pro' },
+        { q: "You are about to compliment their face or their body.", a: "\"Whoever cuts your hair knows what they're doing.\" [Compliment the Choice, Not the Luck]", bundle: 'pro' },
+        { q: "A friend has clearly made an effort tonight.", a: "\"You've put that together properly. It's very you.\" [Name What You Noticed]", bundle: 'pro' },
+        { q: "They wave it off as an old thing they threw on.", a: "\"You still chose it. That counts.\" [Compliment the Choice, Not the Luck]", bundle: 'pro' },
+        { q: "Someone compliments how you look and you go straight to explaining.", a: "\"Thanks — I like it too, which is why I wear it too often.\" [Take a Compliment]", bundle: 'pro' },
+        { q: "You are in a group and the compliment is personal.", a: "\"I'll tell you afterwards rather than in front of everyone.\" [Say It Where It Counts]", bundle: 'pro' },
+        { q: "They have obviously changed something and you are not sure what.", a: "\"Something's different and it's working. I can't tell you what it is.\" [Name What You Noticed]", bundle: 'pro' },
+        { q: "Someone serving you cannot easily leave the conversation.", a: "\"That's a great pair of glasses.\" (and then let them get on) [Compliment the Choice, Not the Luck]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "You Have Not Said It in Years",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Someone close — a parent, a sibling, an old friend — and a thing you have thought for a decade and never said. The longer it goes unsaid, the stranger it feels to start, and the more it would mean.\n\nThe awkwardness is real and it is worth naming out loud rather than working around. \"We don't say this sort of thing\" is a perfectly good first sentence, and it does most of the work: it tells them something unusual is coming and gives you both permission.\n\nAttach it to something concrete if you can. Evidence keeps a large sentence from floating, and it gives them somewhere to look while you say it.\n\nMindset: say it late rather than not at all. Late still counts.",
+      inputs: [
+        { q: "You never say things like this to your family.", a: "\"We don't say this sort of thing. I'm going to anyway.\" [Say the Bigger One]", bundle: 'pro' },
+        { q: "It is years overdue and that is the awkward part.", a: "\"I should have said this a long time ago, and here it is anyway.\" [Say the Bigger One]", bundle: 'pro' },
+        { q: "You want to anchor it in something real.", a: "\"You drove two hours for someone who wouldn't have done it for you.\" [Say the Bigger One]", bundle: 'pro' },
+        { q: "They did something good years ago that you never acknowledged.", a: "\"I never said it at the time: what you did that summer mattered.\" [Say Why It Landed]", bundle: 'pro' },
+        { q: "You have said it and they have gone quiet.", a: "(let it sit — do not fill the pause) [Say the Bigger One]", bundle: 'pro' },
+        { q: "Saying it face to face is more than you can manage.", a: "\"I'm writing this because I'd fumble it out loud.\" [Say It Where It Counts]", bundle: 'pro' },
+        { q: "They deflect with a joke, the way they always do.", a: "\"You can joke. It's still true and I've still said it.\" [Answer It, Don't Return It]", bundle: 'pro' },
+        { q: "A parent says something like this to you first.", a: "\"Thank you. I'm not going to be clever about it.\" [Take a Compliment]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "It Is Not Really a Compliment",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Where this pack stops. Some sentences look like praise and are doing something else, and using the strategies here to polish them makes them worse, not better.\n\nPraise with a request attached is a lever — \"you're so good at this, could you…\" tells them the kindness was payment in advance. Praise as the front half of a criticism is the compliment sandwich, and everyone can hear the \"but\" coming, so the praise is spent before it lands. Praise aimed at someone who cannot easily leave, about their body, is not a gift no matter how it is phrased.\n\nAnd the last one: praise you do not mean. A compliment is information about how you actually see them, and an untrue one quietly devalues every true one you have given.\n\nMindset: if it is doing a job for you, it is not a compliment. Say the thing you want instead.",
+      inputs: [
+        { q: "You are about to praise them and then ask for a favour.", a: "\"I need a favour — that's the whole message, no warm-up.\" [Say It Where It Counts]", bundle: 'pro' },
+        { q: "You are about to open a criticism with something nice.", a: "\"This is a criticism and I'm not going to wrap it: the second half doesn't work.\" [Say Why It Landed]", bundle: 'pro' },
+        { q: "You want to say something warm to soften bad news.", a: "\"The news first: we're not going ahead. I'll say the rest when it isn't padding.\" [Say the Bigger One]", bundle: 'pro' },
+        { q: "You do not actually believe the compliment you are about to give.", a: "(leave it — if you noticed nothing there is nothing to name) [Name What You Noticed]", bundle: 'pro' },
+        { q: "There is something you genuinely admire and no agenda at all.", a: "\"No reason for saying this: you're very good at what you do.\" [Say the Bigger One]", bundle: 'pro' },
+        { q: "You praised them last week and now you need something.", a: "\"Separate from last week, and this one is just a request.\" [Say It Where It Counts]", bundle: 'pro' },
+        { q: "Someone praises you and you can hear the request coming.", a: "\"Thank you. What's the ask?\" [Take a Compliment]", bundle: 'pro' },
+        { q: "The compliment is really about how it makes you look to say it.", a: "\"I'll say this to you, not to the room.\" [Say It Where It Counts]", bundle: 'pro' },
+      ]
+    },
+  ],
+  responsivehumour: [
+    {
+      name: "A Small Complaint",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "The most common opening there is. Someone mentions a minor annoyance — the weather, the timetable, the neighbour, the queue — and what they want is company, not a solution.\n\nExaggeration is the natural fit, because it says *I am on your side and this is not serious*. Understatement does the same job in the opposite register and is better with people you do not know well.\n\nThe thing to avoid is the earnest reply. Answering a small complaint with real advice makes it a bigger thing than they meant it to be, and now they have to either take the advice or explain why they will not.\n\nMindset: they are not asking for help. They are handing you a sentence.",
+      inputs: [
+        { q: "\"I couldn't sleep, my neighbour was making noise.\"", a: "\"Is your neighbour a marching band?\" [Exaggeration]", bundle: 'pro' },
+        { q: "\"The car broke down, then it rained.\"", a: "\"So the day has been going well.\" [Understatement]", bundle: 'pro' },
+        { q: "\"This room is too dark.\"", a: "\"It's saving the light for the afternoon shift.\" [Misdirection]", bundle: 'pro' },
+        { q: "\"I'm running out of time.\"", a: "\"Where does it go? Have you checked the sofa?\" [Deliberate Misunderstanding]", bundle: 'pro' },
+        { q: "\"It's raining again.\"", a: "\"Excellent. My favourite.\" [Irony]", bundle: 'pro' },
+        { q: "\"The coffee machine is broken. Again.\"", a: "\"Second time this month. It's clearly making a point.\" [Exaggeration]", bundle: 'pro' },
+        { q: "\"My train was twenty minutes late.\"", a: "\"Practically early, by their standards.\" [Irony]", bundle: 'pro' },
+        { q: "You are about to offer them a genuine solution.", a: "\"That's rotten. Have you considered moving countries?\" [Exaggeration]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "They Are Pleased With Themselves",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Someone is mildly showing off — the fast computer, the marathon, the reading habit. Handled well this is warm; handled badly it is a put-down.\n\nUnderstatement is the safest, because shrinking an achievement in an obviously absurd way is a compliment wearing a disguise. Misdirection works too, as long as the twist is about the thing rather than about them.\n\nWhat does not work is irony aimed at the achievement itself. \"Oh, very impressive\" said flat is sarcasm, and it takes something from them rather than giving it.\n\nMindset: shrink the thing, never the person.",
+      inputs: [
+        { q: "\"I ran a marathon on Sunday.\"", a: "\"That's a bit of a walk.\" [Understatement]", bundle: 'pro' },
+        { q: "\"My computer is super fast.\"", a: "\"I saw it running down the street yesterday.\" [Misdirection]", bundle: 'pro' },
+        { q: "\"I read books all the time.\"", a: "\"All of them? At once? That's a lot of arms.\" [Deliberate Misunderstanding]", bundle: 'pro' },
+        { q: "You are about to be ironic about the achievement itself.", a: "\"No, that's genuinely good.\" (say it plainly instead) [Irony]", bundle: 'pro' },
+        { q: "They built the whole thing themselves.", a: "\"Bit of a project, then.\" [Understatement]", bundle: 'pro' },
+        { q: "\"I've been learning Italian for six months.\"", a: "\"Six months? So you're basically Italian.\" [Exaggeration]", bundle: 'pro' },
+        { q: "They are proud and slightly nervous about it.", a: "\"That's a lot of work. Bit of a project.\" (warm, then let them talk) [Understatement]", bundle: 'pro' },
+        { q: "\"I did it all in one evening.\"", a: "\"One evening. And the rest of us are just here.\" [Irony]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Someone States the Obvious",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "\"It's raining outside.\" \"The room has white walls.\" \"It's lunch in five minutes.\" Sentences with no content, said to fill a silence — and therefore an open invitation.\n\nDeliberate Misunderstanding is made for these. So is Misdirection, because an obvious statement gives you a very flat first half to build on.\n\nThese are also the best sentences to practise on, precisely because they are empty. Anyone can be funny about a good story. The skill is being funny about white walls.\n\nMindset: the emptier the sentence, the more room there is in it.",
+      inputs: [
+        { q: "\"It's raining outside.\"", a: "\"Really? Inside it's completely dry.\" [Deliberate Misunderstanding]", bundle: 'pro' },
+        { q: "\"The room has white walls.\"", a: "\"Someone in this building has made exactly one decision.\" [Misdirection]", bundle: 'pro' },
+        { q: "\"It's lunch in five minutes.\"", a: "\"Five minutes. I can survive that. Probably.\" [Exaggeration]", bundle: 'pro' },
+        { q: "\"I love eating pizza.\"", a: "\"Same. It's the only food that's also a plate.\" [Misdirection]", bundle: 'pro' },
+        { q: "\"It's quite cold today.\"", a: "\"Bit brisk, yes.\" [Understatement]", bundle: 'pro' },
+        { q: "\"This lift is slow.\"", a: "\"Slow? It's stopping to think.\" [Deliberate Misunderstanding]", bundle: 'pro' },
+        { q: "\"Long week.\"", a: "\"Five whole days. Unprecedented.\" [Irony]", bundle: 'pro' },
+        { q: "\"There's a lot of traffic.\"", a: "\"There is. All of it is between me and my sofa.\" [Misdirection]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "It Did Not Land",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "You said something you thought was funny and nothing happened — or worse, they took it seriously. Every practised joker has this several times a week, and the difference between them and everyone else is entirely in what happens next.\n\nThe rule: do not explain it. An explained joke is worse than an unnoticed one, and a second run at the same joke is worse again. Answer the thing they actually said and move on; the next opening arrives within a minute.\n\nIf they took it at face value, one flat clarification is fine — \"that was me agreeing with you, badly\" — and then it is over.\n\nMindset: a miss costs four seconds. Explaining it costs the conversation.",
+      inputs: [
+        { q: "They take your irony completely at face value.", a: "\"That was me agreeing with you, badly.\" [Understatement]", bundle: 'pro' },
+        { q: "You are about to explain why it was funny.", a: "\"Anyway — what happened after that?\" [Irony]", bundle: 'pro' },
+        { q: "Nobody reacted at all.", a: "\"Right. So the car wouldn't start.\" (say the plain version and carry on) [Understatement]", bundle: 'pro' },
+        { q: "You want one more go without repeating yourself.", a: "\"Ignore me. What happened after the car broke down?\" [Deliberate Misunderstanding]", bundle: 'pro' },
+        { q: "They laughed a beat late.", a: "(let it be — do not point out that it worked) [Irony]", bundle: 'pro' },
+        { q: "You can hear yourself starting to say \"because, you see…\".", a: "\"Never mind. Go on.\" [Misdirection]", bundle: 'pro' },
+        { q: "They ask what you meant.", a: "\"Nothing clever. I was agreeing with you.\" [Understatement]", bundle: 'pro' },
+        { q: "A minute has passed and there is a new sentence to work with.", a: "\"Now this one I can do something with.\" [Exaggeration]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Now Is Not the Time",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Where this pack stops. Not every sentence is an invitation, and the five strategies are quick enough to arrive before you have decided whether they should.\n\nThree situations to keep out of: something they are genuinely upset about, something they are proud of and vulnerable about, and any moment where you have power over them — humour from a manager about someone's work is not read the same way as humour from a peer.\n\nThe tell is easy to feel and easy to ignore: if the joke needs them to be a good sport, it is aimed at them, and this pack is not aimed at people.\n\nMindset: aim at the situation, the sentence, or yourself. Never at the person who is holding something heavy.",
+      inputs: [
+        { q: "They are genuinely upset and you reached for a joke by reflex.", a: "\"Sorry — tell me properly. What happened?\" [Understatement]", bundle: 'pro' },
+        { q: "They said something they are proud and slightly nervous about.", a: "\"That's a bit of a project. Seriously, though — well done.\" [Understatement]", bundle: 'pro' },
+        { q: "You are their manager and the joke is about their work.", a: "\"The second draft is better than the first.\" (plain, from you, in this room) [Irony]", bundle: 'pro' },
+        { q: "The joke needs them to be a good sport to work.", a: "(that means it is aimed at them — leave it) [Exaggeration]", bundle: 'pro' },
+        { q: "You want to be light about something heavy, later.", a: "\"For what it's worth, that is the worst week I've heard about this year.\" [Exaggeration]", bundle: 'pro' },
+        { q: "You have made three jokes in a row and they have made none.", a: "\"I'll stop. What were you saying?\" [Understatement]", bundle: 'pro' },
+        { q: "Everyone else is teasing them and you are new to the group.", a: "\"I've only just got here, so I'm staying out of this one.\" [Irony]", bundle: 'pro' },
+        { q: "They said something serious in a light voice to make it easier.", a: "\"That sounded light. Was it?\" [Deliberate Misunderstanding]", bundle: 'pro' },
+      ]
+    },
+  ],
+  assertivecomm1: [
+    {
+      name: "Handling Authority",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Dealing with critical supervisors, inspectors, or experts who use their position to make you feel anxious, ignorant, or guilty.\n\n• Fogging — absorb their logical or company-linked pressure without agreeing that you are wrong\n• Negative Assertion — own real work mistakes calmly to eliminate their leverage\n• Negative Inquiry — prompt for specific performance feedback to focus the discussion on facts\n\nWhat goes wrong: subordinates usually react with submissive excuses or passive-aggressive silence, which only encourages the authority figure to impose more unilateral rules.\n\nMindset: their position gives them power over your job, but not over your self-respect.",
+      inputs: [
+        { q: "Your supervisor sighs: \"You're always the first one to walk out the door at 5:00 PM.\"", a: "\"You're right, I do leave promptly when my shift ends.\" [Fogging]", bundle: 'pro' },
+        { q: "An inspector notes: \"Your safety logs are not fully compliant with the new procedure.\"", a: "\"You're right, I missed the new compliance checklist. That's my error.\" [Negative Assertion]", bundle: 'pro' },
+        { q: "Your manager mutters: \"You seem to lack the commitment we expect of senior staff.\"", a: "\"What specifically am I doing that makes me look uncommitted?\" [Negative Inquiry]", bundle: 'pro' },
+        { q: "A senior expert says: \"Your method of analysis is entirely outdated.\"", a: "\"What specific analysis tools would you recommend instead?\" [Negative Inquiry]", bundle: 'pro' },
+        { q: "Your boss demands: \"Why can't you just cover this extra shift? Everyone else is pitching in.\"", a: "\"I understand the team is pitching in, but I am not available to work.\" [Broken Record]", bundle: 'pro' },
+        { q: "Your supervisor says: \"You made a complete mess of the presentation yesterday.\"", a: "\"What specifically about my presentation did you find messy?\" [Negative Inquiry]", bundle: 'pro' },
+        { q: "A manager notes: \"You forgot to submit the quarterly goals before the deadline.\"", a: "\"I did. That was careless of me. I'll write them up now.\" [Negative Assertion]", bundle: 'pro' },
+        { q: "An authority figure tells you: \"You should want to improve your performance.\"", a: "\"That's true, I could improve, so what specific areas would you have me work on?\" [Negative Inquiry]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Commercial Pressure",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Dealing with salespeople, telemarketers, or service representatives who try to manipulate your behavior to make a sale or avoid a return.\n\n• Broken Record — repeat your decision calmly to block their persistent pitches\n• Fogging — agree with their sales logic or company rules without changing your mind\n• Negative Inquiry — ask for specific details about their rules or offers to find options\n\nWhat goes wrong: customers feel obligated to listen politely or invent \"reasons\" why they can't buy, which the salesperson easily dismantles to close the sale anyway.\n\nMindset: you do not need a logical reason to say no to a purchase.",
+      inputs: [
+        { q: "A door-to-door seller says: \"Surely you want to give your family the best security possible?\"", a: "\"I'm sure your system is excellent, but I am not interested.\" [Broken Record]", bundle: 'pro' },
+        { q: "A telemarketer asks: \"Don't you want to save fifty percent on your utility bills?\"", a: "\"I do want to save money, but I am not going to buy today.\" [Broken Record]", bundle: 'pro' },
+        { q: "A subscription service clerk insists: \"But why do you want to cancel? We can offer you a lower rate.\"", a: "\"I appreciate the offer, but I still want to cancel my account.\" [Broken Record]", bundle: 'pro' },
+        { q: "A salesman asks: \"What is it specifically about this deal that you don't like?\"", a: "\"Nothing, but I still don't want to buy it.\" [Broken Record]", bundle: 'pro' },
+        { q: "A car dealer notes: \"All your neighbors have bought this model.\"", a: "\"I don't doubt that, but I'm not interested in this car.\" [Broken Record]", bundle: 'pro' },
+        { q: "A clerk claims: \"We only issue store credit for returns, not cash refunds.\"", a: "\"I understand your policy is store credit, but I want a cash refund.\" [Broken Record]", bundle: 'pro' },
+        { q: "A service representative sighs: \"If we cancel your contract now, you'll lose your deposit.\"", a: "\"I understand I'll lose the deposit, but I want to cancel anyway.\" [Broken Record]", bundle: 'pro' },
+        { q: "A salesperson insists: \"Just let me come in and show you a quick demonstration.\"", a: "\"I know you want to show me, but I am not interested in a demonstration.\" [Broken Record]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Flattery & Compliments",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Dealing with positive manipulation, insincere praise, or flattery designed to lower your guard before a request is made.\n\n• Negative Inquiry — ask for specific details about the praise to test its sincerity\n• Fogging — accept the compliment calmly without feeling obligated to return a favor\n• Broken Record — hold your line when the request is inevitably made\n\nWhat goes wrong: people feel so flattered or embarrassed by praise that they automatically say \"yes\" to whatever favor the flatterer asks next.\n\nMindset: a compliment is not a financial transaction; you do not owe them anything in return.",
+      inputs: [
+        { q: "A coworker beams: \"You are the absolute best writer on this team!\"", a: "\"Thank you. What is it specifically about my writing that you like?\" [Negative Inquiry]", bundle: 'pro' },
+        { q: "A colleague says: \"You dress so elegantly. You must have an amazing sense of style.\"", a: "\"That's very nice of you to say. I do like style.\" [Fogging]", bundle: 'pro' },
+        { q: "A teammate flatters: \"You're so quick with spreadsheets, could you just fix my numbers?\"", a: "\"I understand you think I'm fast, but I don't have time to do your spreadsheet.\" [Broken Record]", bundle: 'pro' },
+        { q: "A neighbor gushes: \"You have such a beautiful garden. You must be a true expert!\"", a: "\"Thank you. I do enjoy gardening.\" [Fogging]", bundle: 'pro' },
+        { q: "An associate says: \"You're the only one smart enough to explain this report to the board.\"", a: "\"What specifically is confusing about the report that needs explanation?\" [Negative Inquiry]", bundle: 'pro' },
+        { q: "A manager says: \"You're so reliable, I know you won't mind staying late to finish this.\"", a: "\"I appreciate that you think I'm reliable, but I am not available to stay late.\" [Broken Record]", bundle: 'pro' },
+        { q: "A client flatters: \"Your team is so creative, I'm sure you can add these extra features for free.\"", a: "\"I'm glad you find us creative, but our rate for extra features is fixed.\" [Broken Record]", bundle: 'pro' },
+        { q: "A coworker notes: \"You're so good with difficult clients. Can you handle this angry caller?\"", a: "\"I understand you're stressed, but I want you to handle your own client.\" [Broken Record]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Nagging & Testing",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Navigating persistent emotional pressure, guilt-tripping, or passive-aggressive boundary trials from people you deal with regularly.\n\n• Broken Record — repeat your boundary calmly without raising your voice\n• Fogging — agree with their emotional observations without defending your choices\n• Negative Assertion — own your part of a conflict to end their leverage\n\nWhat goes wrong: users get drawn into arguments about their motives or reasons, which gives the nagger more material to continue the emotional trial.\n\nMindset: you do not have to argue or get angry to make a boundary stick.",
+      inputs: [
+        { q: "Your partner sighs: \"You always ignore me when I ask you to help with the laundry.\"", a: "\"You're right, I have ignored you. I'll help you fold this load now.\" [Negative Assertion]", bundle: 'pro' },
+        { q: "A coworker complains: \"You're ruining the team's vibe by refusing to join our lunch.\"", a: "\"I see how you feel, but I am not joining you for lunch today.\" [Broken Record]", bundle: 'pro' },
+        { q: "A sibling mutters: \"You obviously don't care about our family if you can't visit this weekend.\"", a: "\"I understand you feel that way, but I am not available to visit.\" [Broken Record]", bundle: 'pro' },
+        { q: "A relative says: \"You always make such selfish choices about where you spend holidays.\"", a: "\"You're right, I do prioritize my own choices for holidays.\" [Negative Assertion]", bundle: 'pro' },
+        { q: "A roommate grumbles: \"If you don't wash your mug now, you're a terrible person.\"", a: "\"I'm sure it's annoying to see the mug, but I will wash it after lunch.\" [Broken Record]", bundle: 'pro' },
+        { q: "A colleague keeps muttering: \"Some people just don't care about team collaboration.\"", a: "\"What am I doing specifically that looks uncollaborative?\" [Negative Inquiry]", bundle: 'pro' },
+        { q: "An associate sighs: \"You're so cold and robotic when you say no.\"", a: "\"You're right, I am very plain when I say no.\" [Negative Assertion]", bundle: 'pro' },
+        { q: "A persistent family member grumbles: \"You never listen to my advice anyway.\"", a: "\"That's true, I don't always follow your advice.\" [Fogging]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Modern Evasions",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Resolving commercial or service disputes in a digital landscape where clerks, support bots, and gig workers pass the responsibility around.\n\n• Broken Record — repeat your demand for resolution to block evasive procedures\n• Fogging — agree with their system statements without letting go of your demand\n• Negative Assertion — own your part of a technical mistake calmly to speed up correction\n\nWhat goes wrong: users get stuck in loops of clicking links, waiting on hold, or accepting digital vouchers they don't want because the bot or clerk claims \"it's not our fault.\"\n\nMindset: the system's technical failures are not your responsibility to solve.",
+      inputs: [
+        { q: "A customer support agent claims: \"Our system doesn't allow cash refunds for cancelled subscriptions.\"", a: "\"I understand your system's limit, but I want a cash refund.\" [Broken Record]", bundle: 'pro' },
+        { q: "A delivery driver texts: \"I left your food on the curb because I couldn't find your door.\"", a: "\"I understand you had trouble, but I want you to bring the food to my door.\" [Broken Record]", bundle: 'pro' },
+        { q: "An automated chatbot says: \"To resolve your issue, please read our 20-page FAQ document.\"", a: "\"I have read the document, and I want to speak to a human agent now.\" [Broken Record]", bundle: 'pro' },
+        { q: "A retail clerk tells you: \"We can't return this defective smart speaker because the box is opened.\"", a: "\"I understand the box is open, but the item is defective and I want my money back.\" [Broken Record]", bundle: 'pro' },
+        { q: "A software support agent claims: \"That bug was caused by a third-party plugin, not our software.\"", a: "\"I understand the plugin is involved, but your software is what I paid for and I want it fixed.\" [Broken Record]", bundle: 'pro' },
+        { q: "A ride-share driver complains: \"The traffic is terrible, you should just cancel the ride and get a new one.\"", a: "\"I see the traffic is bad, but I am not going to cancel. I'll wait for you to arrive.\" [Broken Record]", bundle: 'pro' },
+        { q: "A hotel desk clerk sighs: \"Your digital booking isn't showing in our database, you'll have to call corporate.\"", a: "\"I understand it's not showing, but I have my receipt and I want a room assigned now.\" [Broken Record]", bundle: 'pro' },
+        { q: "A gig worker claims: \"The store was out of your item, so I replaced it with something twice the price.\"", a: "\"I understand they were out, but I do not want this replacement and I want a refund.\" [Broken Record]", bundle: 'pro' },
+      ]
+    },
+  ],
+  assertivecomm2: [
+    {
+      name: "Parental Ties",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Establishing adult-to-adult relationships with parents who try to use childhood guilt-trips or rules to control your schedule and choices.\n\n• Self-Disclosure — share your feelings of independence and worry honestly\n• Asserting Wants — state your adult decisions clearly without giving excuses\n• Workable Compromise — offer alternative ways to connect that respect your limits\n\nWhat goes wrong: adult children react with childhood excuses or angry shouting, which only validates the parents' belief that they are still irresponsible.\n\nMindset: your schedule is your own decision; you do not need parental permission.",
+      inputs: [
+        { q: "Your mother cries on the phone: \"If you really loved us, you would visit every single weekend.\"", a: "\"I love you, Mom, but I don't want to visit every weekend.\" [Asserting Wants]", bundle: 'pro' },
+        { q: "Your father snaps: \"You changed your mind about our holiday plans. That is completely flaky.\"", a: "\"I did change my mind, yes. I have decided to stay home.\" [Asserting Wants]", bundle: 'pro' },
+        { q: "Your parent demands to know why you won't let them manage your savings account.", a: "\"I understand you want to help, but I want to manage my own savings.\" [Asserting Wants]", bundle: 'pro' },
+        { q: "Your mother sighs: \"You're growing so distant from us since you moved out.\"", a: "\"I want my space, but I will call you every Sunday evening to catch up.\" [Workable Compromise]", bundle: 'pro' },
+        { q: "Your father lectures you: \"This career change is completely illogical. You are throwing away your degree.\"", a: "\"I understand you're worried, but I want to try this new path.\" [Asserting Wants]", bundle: 'pro' },
+        { q: "Your mother grumbles: \"If you don't come over this Friday, your father will be devastated.\"", a: "\"I can't come Friday, but I can take you both out for lunch on Sunday.\" [Workable Compromise]", bundle: 'pro' },
+        { q: "Your parent demands to know why you are seeing a therapist.", a: "\"I have some things I want to work through, but I don't want to discuss them.\" [Asserting Wants]", bundle: 'pro' },
+        { q: "Your father mutters: \"You are acting very selfishly by choosing your own schedule.\"", a: "\"I can see why you think that, but I want to prioritize my rest this weekend.\" [Asserting Wants]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Equal Demands",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Negotiating space, borrowing items, and chores with roommates, friends, or colleagues who treat your compliance as a given.\n\n• Asserting Wants — state your boundaries clearly when items or spaces are requested\n• Self-Disclosure — explain your personal feelings or worries about your belongings\n• Workable Compromise — propose balanced trade-offs for shared tasks\n\nWhat goes wrong: roommates drop passive-aggressive hints or agree to chores they never do, leading to a slow buildup of resentment.\n\nMindset: equal relationships require clear boundaries and active negotiation.",
+      inputs: [
+        { q: "A roommate asks if they can borrow your favorite camera for their weekend trip.", a: "\"I know you'll be careful, but I don't want to lend my camera out.\" [Asserting Wants]", bundle: 'pro' },
+        { q: "A colleague asks if they can take your shift because they have a concert.", a: "\"I can't cover your shift, I want to keep my evening free.\" [Asserting Wants]", bundle: 'pro' },
+        { q: "A friend grumbles: \"Why won't you let me borrow your car? I'm a safe driver.\"", a: "\"You are safe, but I just feel very anxious when my car is out.\" [Self-Disclosure]", bundle: 'pro' },
+        { q: "A roommate complains that you haven't taken out the bins this week.", a: "\"I can't take them down right now, but I will do it before I leave tomorrow morning.\" [Workable Compromise]", bundle: 'pro' },
+        { q: "A colleague wants to borrow your desk space while theirs is being painted.", a: "\"I don't want to share my desk, but you can use the empty table next to me.\" [Workable Compromise]", bundle: 'pro' },
+        { q: "A friend asks if they can crash on your sofa for two whole weeks.", a: "\"You can stay for three days, but I don't want a long-term guest right now.\" [Workable Compromise]", bundle: 'pro' },
+        { q: "A neighbor asks to borrow your lawnmower, which you just repaired.", a: "\"I don't want to lend my lawnmower, but I can help you mow your front yard on Saturday.\" [Workable Compromise]", bundle: 'pro' },
+        { q: "A roommate demands that you buy the expensive organic milk for the shared fridge.", a: "\"I don't want to pay for organic milk, let's buy our own cartons instead.\" [Workable Compromise]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Dating and Seduction",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Confidently asserting physical and emotional boundaries under romantic or sexual pressure, and dealing with manipulative \"hurt\" ploys.\n\n• Asserting Wants — declare your boundaries plainly and repeatedly\n• Self-Disclosure — state your true feelings, hesitations, or lack of readiness\n• Workable Compromise — propose romantic alternatives that keep you safe\n\nWhat goes wrong: people feel so pressured by \"hurt\" looks or romantic flattery that they comply with physical acts they do not want.\n\nMindset: your body is your own; you do not owe anyone sexual compliance.",
+      inputs: [
+        { q: "A date asks you up to their apartment and starts pulling you toward the bed.", a: "\"I like you, but I don't want to go to bed with you tonight.\" [Asserting Wants]", bundle: 'pro' },
+        { q: "A romantic partner sighs: \"If you really loved me, you wouldn't hesitate.\"", a: "\"I do love you, but I still don't want to rush this.\" [Asserting Wants]", bundle: 'pro' },
+        { q: "A date grumbles: \"Why did you invite me up if you didn't want to sleep with me?\"", a: "\"I understand you're disappointed, but I only wanted to talk and I don't want to have sex tonight.\" [Self-Disclosure]", bundle: 'pro' },
+        { q: "A partner pushes for sex when you feel completely exhausted.", a: "\"I'm just incredibly pooped today and I want to just sleep.\" [Self-Disclosure]", bundle: 'pro' },
+        { q: "A date complains: \"You're so cold and robotic when you say no.\"", a: "\"I can see why you think that, but I still want to stop.\" [Asserting Wants]", bundle: 'pro' },
+        { q: "A partner wants to try group sex, which makes you feel very insecure.", a: "\"I don't want to do group sex, but I want to talk about how we can spice up our own bed.\" [Workable Compromise]", bundle: 'pro' },
+        { q: "A date asks how much you actually like them during a physical push.", a: "\"I really like you, but I am still not sure about making a commitment.\" [Self-Disclosure]", bundle: 'pro' },
+        { q: "A partner wants to go to a nudist beach, but you feel terrified of being exposed.", a: "\"I want to go with you, but I want us to agree to keep our clothes on.\" [Workable Compromise]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Marital Routines",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Confronting stale routines, renegotiating household tasks, and discussing lifestyle changes with a long-term spouse.\n\n• Asserting Wants — state your desires for change and new goals clearly\n• Self-Disclosure — reveal your feelings of resentment, tiredness, or excitement\n• Workable Compromise — negotiate practical trade-offs for chores and schedules\n\nWhat goes wrong: spouses use nagging or silent withdrawal to express dissatisfaction, causing the relationship to drift apart.\n\nMindset: change is healthy; daily cooperation requires active, nondefensive negotiation.",
+      inputs: [
+        { q: "Your spouse complains that your sex life is getting extremely routine.", a: "\"You're right, it is routine, and I want us to change how we do things.\" [Asserting Wants]", bundle: 'pro' },
+        { q: "Your partner grumbles about you getting a job because of the busy schedule.", a: "\"I want to work, let's see how we can split the household tasks.\" [Workable Compromise]", bundle: 'pro' },
+        { q: "Your spouse sighs: \"You always find something wrong when I clean the house.\"", a: "\"You're right. I do that, and I guess I've been feeling very stressed lately.\" [Self-Disclosure]", bundle: 'pro' },
+        { q: "Your partner mutters: \"We haven't been out for an evening in months.\"", a: "\"I've been feeling really disconnected too, let's plan a date night for Thursday.\" [Workable Compromise]", bundle: 'pro' },
+        { q: "Your spouse demands: \"Why can't you just let things be? Our routine is fine.\"", a: "\"It might be fine for you, but I feel very trapped in this routine.\" [Self-Disclosure]", bundle: 'pro' },
+        { q: "Your partner complains that they have to do all the grocery shopping.", a: "\"I can take over the grocery shopping if you handle the laundry.\" [Workable Compromise]", bundle: 'pro' },
+        { q: "Your spouse sighs: \"You always bring up past arguments to punish me.\"", a: "\"I guess I do that sometimes. That's a crappy way for me to behave.\" [Self-Disclosure]", bundle: 'pro' },
+        { q: "Your partner grumbles that you are spending too much money on your classes.", a: "\"These classes are very important to me and I want to keep taking them.\" [Asserting Wants]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Tongue-Tied Socials",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Navigating social events, dealing with strangers, and building rapport without feeling the pressure to perform.\n\n• Free Information — listen for unprompted cues to open conversational doors\n• Self-Disclosure — share simple, ordinary details about yourself to build comfort\n• Workable Compromise — find middle grounds in social pressure or group plans\n\nWhat goes wrong: people stay silent because they are trying to think of \"interesting\" things to say, which makes the interaction stall.\n\nMindset: ordinary is the target; give them simple material to work with.",
+      inputs: [
+        { q: "A stranger at a wedding reception notes they came all the way from Kalmar.", a: "\"Kalmar — what took you down there?\" [Free Information]", bundle: 'pro' },
+        { q: "Someone asks what you do, and you feel awkward explaining your job.", a: "\"I teach English. Mostly to teenagers, which is exactly as loud as it sounds.\" [Self-Disclosure]", bundle: 'pro' },
+        { q: "A peer at a party asks how your weekend was, and you did nothing.", a: "\"Not much, honestly. I did nothing on purpose and it was excellent.\" [Self-Disclosure]", bundle: 'pro' },
+        { q: "An acquaintance notes they are trying a disastrous new recipe.", a: "\"Disastrous? What happened with the recipe?\" [Free Information]", bundle: 'pro' },
+        { q: "A group wants to go to a very expensive restaurant, but you are budgeting.", a: "\"I want to join you, but I don't want to spend that much. Can we go to the bistro instead?\" [Workable Compromise]", bundle: 'pro' },
+        { q: "A colleague mentions they have a huge collection of festival wristbands.", a: "\"That's a serious collection — which one was the best night?\" [Free Information]", bundle: 'pro' },
+        { q: "Someone asks how your week has been, and you had a printer dispute.", a: "\"Fine — well, fine apart from spending most of it arguing with a printer.\" [Self-Disclosure]", bundle: 'pro' },
+        { q: "An acquaintance wants to stay out late, but you are exhausted.", a: "\"I want to head home now, but let's grab coffee tomorrow morning.\" [Workable Compromise]", bundle: 'pro' },
       ]
     },
   ],

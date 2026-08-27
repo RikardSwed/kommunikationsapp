@@ -2003,60 +2003,6 @@ const mindsetCollections = {
       ]
     },
   ],
-  complimenting: [
-    {
-      name: "They Cannot See Themselves From Outside",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
-      description: "The assumption that they already know — that a person who is good at something must be aware of it, so saying so adds nothing.\n\nAlmost nobody knows. People know what they intended and what went wrong; what they cannot see is the effect, and that is exactly the part only you can report.\n\nMindset: you are not confirming something. You are telling them something they have no way of knowing.",
-      inputs: [
-        { q: "They must know they're good at this.", a: "They know they tried. They don't know what it did to the room.", bundle: 'pro' },
-        { q: "Someone will have told them already.", a: "Ask anyone how often they get told. The answer is usually \"almost never\".", bundle: 'pro' },
-        { q: "It'll sound like I'm stating the obvious.", a: "Obvious to you, from the outside. That's the whole reason it's worth saying.", bundle: 'pro' },
-        { q: "They'd be embarrassed.", a: "For four seconds. Then it stays with them for years.", bundle: 'pro' },
-        { q: "I'll say it when it's a bigger occasion.", a: "The Tuesday ones are the ones people remember. Nobody expects those.", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Deflecting Refuses a Gift",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
-      description: "The reflex to correct a compliment — \"it's old\", \"it was nothing\", \"I got lucky\". It feels like modesty from the inside. From the outside it is being told you were wrong to say something kind.\n\nAnd it teaches. Someone who is corrected twice stops offering, and then you have fewer compliments and no idea why.\n\nMindset: taking it is the generous move. Two words, then stop.",
-      inputs: [
-        { q: "Agreeing would be arrogant.", a: "\"Thank you\" isn't agreement. It's acknowledgement, and it's all that's needed.", bundle: 'pro' },
-        { q: "But it really wasn't that good.", a: "They weren't asking for your assessment. They were telling you theirs.", bundle: 'pro' },
-        { q: "I have to say something back.", a: "You don't. Theirs gets its own moment, and yours keeps.", bundle: 'pro' },
-        { q: "It's easier to laugh it off.", a: "Easier for you. It costs them the thing they were trying to give.", bundle: 'pro' },
-        { q: "I never know what to say.", a: "\"Thank you.\" Then close your mouth. That's the whole skill.", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Specific Is Believable",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
-      description: "The belief that a bigger compliment is a better one — so \"you're amazing\" ought to beat \"the ending was good\".\n\nIt does not. Large general praise is the shape politeness takes, and everyone knows it; small specific praise cannot be produced without having paid attention, so it proves itself as it is said.\n\nMindset: the detail is the evidence. Without it you are only being nice.",
-      inputs: [
-        { q: "\"That was great\" is enough.", a: "It's pleasant and it evaporates. Add the one detail and it stays.", bundle: 'pro' },
-        { q: "I can't remember anything specific.", a: "Then say that. \"Something about the middle worked and I'm still working out what.\"", bundle: 'pro' },
-        { q: "The detail I noticed is too small.", a: "Small is the point. Nobody says the small ones, which is why they land.", bundle: 'pro' },
-        { q: "I don't want to sound like I was analysing them.", a: "Being noticed is not the same as being analysed. One sentence isn't a report.", bundle: 'pro' },
-        { q: "A big compliment feels more generous.", a: "More generous to give, less useful to receive. Aim at useful.", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "It Costs You Nothing",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
-      description: "The quiet arithmetic that stops most compliments — the fear that it will be strange, misread, unwelcome, or that the moment has passed.\n\nWeigh it honestly. The downside is a few seconds of mild awkwardness, usually yours. The upside is something the other person may still be carrying in ten years. Very few things in a conversation have that ratio.\n\nMindset: the risk is small and it is mostly yours. Say it.",
-      inputs: [
-        { q: "It might come across wrong.", a: "Praise the choice, keep it short, and it won't. That's the whole safety rule.", bundle: 'pro' },
-        { q: "The moment has passed.", a: "\"This is overdue\" fixes that in three words.", bundle: 'pro' },
-        { q: "We're not close enough for me to say it.", a: "\"We barely know each other, so take this as an outside opinion…\" — and now you are.", bundle: 'pro' },
-        { q: "They'll think I want something.", a: "Then don't ask for anything today. That's what separates the two.", bundle: 'pro' },
-        { q: "I'd feel awkward.", a: "You would, for about four seconds. They'd have it for years.", bundle: 'pro' },
-      ]
-    },
-  ],
   masculine1: [
     {
       name: "She is your Oracle",
@@ -3741,60 +3687,6 @@ const mindsetCollections = {
       ]
     },
   ],
-  responsivehumour: [
-    {
-      name: "You Do Not Need Material",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
-      description: "The belief that funny people arrive with something — stories,\nlines, a stock of jokes — and that having none of that is why you are quiet.\n\nAlmost none of the humour in ordinary conversation works that way. It is\nbuilt out of the sentence that was just said, in the second after it was said,\nby someone doing one of about five things to it.\n\nMindset: you are not supposed to bring anything. Their sentence is the\nmaterial.",
-      inputs: [
-        { q: "I'm just not a funny person.", a: "You've never had to be. You've had to notice a sentence and bend it.", bundle: 'pro' },
-        { q: "I can never think of anything.", a: "Because you're looking for something new. Look at what they just said instead.", bundle: 'pro' },
-        { q: "Funny people have better lives to talk about.", a: "This pack is built on white walls and rain. That's the point.", bundle: 'pro' },
-        { q: "I think of the good line ten minutes later.", a: "Everyone does. The five moves are for the first ten seconds instead.", bundle: 'pro' },
-        { q: "I'd need to be quicker.", a: "You'd need one move. Exaggeration works on almost anything and nobody minds a slow one.", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Short Is Funnier",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
-      description: "The instinct to keep going — to add the second half, the\nexplanation, the bit that makes sure they got it.\n\nEvery one of those is a subtraction. The response works because it is quick\nenough to feel effortless; a long one announces that you are performing, and\nnow it has to be worth the wait.\n\nMindset: four words beats fourteen. Stop before you want to.",
-      inputs: [
-        { q: "They might not get it.", a: "If they don't, it costs four seconds. If you explain, it costs more.", bundle: 'pro' },
-        { q: "It needs a bit more setup.", a: "Then it's a story, not a response. Save it and answer them instead.", bundle: 'pro' },
-        { q: "I'll add one more thing to make it land.", a: "The one more thing is what stops it landing.", bundle: 'pro' },
-        { q: "A longer joke is a better joke.", a: "On a stage, sometimes. In a kitchen, never.", bundle: 'pro' },
-        { q: "I trailed off at the end.", a: "Land on the last word and stop. The silence afterwards is theirs.", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Never Explain It",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
-      description: "The urge to rescue a joke that did not land — to say it again,\nto point out the pun, to describe why it was funny.\n\nThe rescue is what people remember, not the miss. A joke nobody noticed is\nforgotten within seconds; a joke that was explained is a small awkwardness\neveryone in the room now shares.\n\nMindset: let it go. The next opening is a minute away.",
-      inputs: [
-        { q: "They didn't get it.", a: "Fine. Answer what they said and carry on.", bundle: 'pro' },
-        { q: "If I explain it they'll laugh.", a: "They'll do something. It won't be laughing.", bundle: 'pro' },
-        { q: "I want them to know I was joking.", a: "One flat line: \"that was me agreeing, badly.\" Then stop.", bundle: 'pro' },
-        { q: "I'll try the same joke again with better timing.", a: "The second run is always worse. Wait for a new sentence.", bundle: 'pro' },
-        { q: "It's embarrassing to be ignored.", a: "For you, for four seconds. Nobody else has noticed.", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Aim at the Situation, Not the Person",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
-      description: "The line between this pack and being unkind, and it is not a\nvague one. Humour aimed at the weather, the queue, the timetable or at\nyourself is free. Humour aimed at a person costs them something.\n\nThe test is whether the joke needs them to be a good sport. If it does, it is\nat their expense, and that is a different skill with different rules — it needs\nan established friendship, not a technique.\n\nMindset: the situation, their sentence, or yourself. Those three are safe with\nanyone.",
-      inputs: [
-        { q: "They can take a joke.", a: "Maybe. But needing them to is the tell.", bundle: 'pro' },
-        { q: "It's obviously affectionate.", a: "To you. Warmth doesn't always survive the trip.", bundle: 'pro' },
-        { q: "Everyone else is doing it.", a: "To each other, with years behind it. You've had four minutes.", bundle: 'pro' },
-        { q: "Self-deprecation is boring.", a: "It's also the only target that can't complain, which makes it useful.", bundle: 'pro' },
-        { q: "The joke's about their thing, not them.", a: "Then shrink the thing and leave them out of it entirely.", bundle: 'pro' },
-      ]
-    },
-  ],
   showunderstanding: [
     {
       name: "Understanding as Agreement",
@@ -3990,6 +3882,286 @@ const mindsetCollections = {
         { q: "Ending it early would waste what we've said.", a: "Nothing is wasted. It happened, and now something else can.", bundle: 'pro' },
         { q: "I've squeezed three more questions out of this subject.", a: "That's the tell. Squeezing is not the same as interest.", bundle: 'pro' },
         { q: "A short topic feels like a failure.", a: "Ten good short ones beat one long one nobody enjoyed.", bundle: 'pro' },
+      ]
+    },
+  ],
+  complimenting: [
+    {
+      name: "They Already Know",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The assumption that a person who is good at something must be aware of it, so saying so adds nothing to what they already have.\n\nAlmost nobody knows. People know what they intended and what went wrong; what they cannot see is the effect, and the effect is exactly the part only you can report. Nobody sees themselves from outside.\n\nMindset: you are not confirming something. You are telling them something they have no way of knowing.",
+      inputs: [
+        { q: "They must know they're good at this.", a: "They know they tried. They don't know what it did to the room.", bundle: 'pro' },
+        { q: "Someone will have told them already.", a: "Ask anyone how often they get told. The answer is usually \"almost never\".", bundle: 'pro' },
+        { q: "It'll sound like I'm stating the obvious.", a: "Obvious to you, from the outside. That's the whole reason it's worth saying.", bundle: 'pro' },
+        { q: "They'd be embarrassed.", a: "For four seconds. Then it stays with them for years.", bundle: 'pro' },
+        { q: "I'll say it when it's a bigger occasion.", a: "The Tuesday ones are the ones people remember. Nobody expects those.", bundle: 'pro' },
+        { q: "Everyone can see it, so it doesn't need saying.", a: "Everyone can see it and everyone assumes someone else has mentioned it.", bundle: 'pro' },
+        { q: "They get praised constantly.", a: "For the same thing every time. Say the one nobody else has noticed.", bundle: 'pro' },
+        { q: "It won't make any difference.", a: "Think of one you were given years ago. That's the difference it makes.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Deflecting Feels Like Modesty",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The reflex to correct a compliment — \"it's old\", \"it was nothing\", \"I got lucky\". It feels like modesty from the inside. From the outside it is being told you were wrong to say something kind.\n\nAnd it teaches. Someone who is corrected twice stops offering, and then you have fewer compliments coming at you and no idea why.\n\nMindset: taking it is the generous move. Two words, then stop.",
+      inputs: [
+        { q: "Agreeing would be arrogant.", a: "\"Thank you\" isn't agreement. It's acknowledgement, and it's all that's needed.", bundle: 'pro' },
+        { q: "But it really wasn't that good.", a: "They weren't asking for your assessment. They were telling you theirs.", bundle: 'pro' },
+        { q: "I have to say something back.", a: "You don't. Theirs gets its own moment, and yours keeps.", bundle: 'pro' },
+        { q: "It's easier to laugh it off.", a: "Easier for you. It costs them the thing they were trying to give.", bundle: 'pro' },
+        { q: "I never know what to say.", a: "\"Thank you.\" Then close your mouth. That's the whole skill.", bundle: 'pro' },
+        { q: "If I take it, they'll think I agree I'm great.", a: "They'll think you heard them. That's all taking it means.", bundle: 'pro' },
+        { q: "Explaining how it happened is just being honest.", a: "It's honest and it's an argument. Save the explanation for when they ask.", bundle: 'pro' },
+        { q: "I'd rather move the attention off me.", a: "Understandable. Wait four seconds first — that's their part of the exchange.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Small Is Not Worth Saying",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The belief that a bigger compliment is a better one — so \"you're amazing\" ought to beat \"the ending was good\", and a detail is too slight to bother anyone with.\n\nIt is the wrong way round. Large general praise is the shape politeness takes and everyone knows it; small specific praise cannot be produced without having paid attention, so it proves itself as it is said.\n\nMindset: the detail is the evidence. Without it you are only being nice.",
+      inputs: [
+        { q: "\"That was great\" is enough.", a: "It's pleasant and it evaporates. Add the one detail and it stays.", bundle: 'pro' },
+        { q: "I can't remember anything specific.", a: "Then say that. \"Something about the middle worked and I'm still working out what.\"", bundle: 'pro' },
+        { q: "The detail I noticed is too small.", a: "Small is the point. Nobody says the small ones, which is why they land.", bundle: 'pro' },
+        { q: "I don't want to sound like I was analysing them.", a: "Being noticed is not the same as being analysed. One sentence isn't a report.", bundle: 'pro' },
+        { q: "A big compliment feels more generous.", a: "More generous to give, less useful to receive. Aim at useful.", bundle: 'pro' },
+        { q: "It's such a minor thing to make a fuss about.", a: "One sentence isn't a fuss. A fuss is three sentences and a follow-up question.", bundle: 'pro' },
+        { q: "They'll wonder why I'm mentioning something that tiny.", a: "They'll register that you were paying attention. That's the message underneath.", bundle: 'pro' },
+        { q: "I should save it for something that matters more.", a: "Praise isn't rationed. Saving it just means it never gets said.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "It Might Land Wrong",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The quiet arithmetic that stops most compliments — the fear that it will be strange, misread, unwelcome, or that the moment has passed and starting now would be worse than silence.\n\nWeigh it honestly. The downside is a few seconds of mild awkwardness, usually yours. The upside is something the other person may still be carrying in ten years. Very few things in a conversation have that ratio.\n\nMindset: the risk is small and it is mostly yours. Say it.",
+      inputs: [
+        { q: "It might come across wrong.", a: "Praise the choice, keep it short, and it won't. That's the whole safety rule.", bundle: 'pro' },
+        { q: "The moment has passed.", a: "\"This is overdue\" fixes that in three words.", bundle: 'pro' },
+        { q: "We're not close enough for me to say it.", a: "\"We barely know each other, so take this as an outside opinion…\" — and now you are.", bundle: 'pro' },
+        { q: "They'll think I want something.", a: "Then don't ask for anything today. That's what separates the two.", bundle: 'pro' },
+        { q: "I'd feel awkward.", a: "You would, for about four seconds. They'd have it for years.", bundle: 'pro' },
+        { q: "What if they don't know how to take it?", a: "Then they'll fumble it, and you'll have given it anyway. Their half isn't your job.", bundle: 'pro' },
+        { q: "It's a strange thing to say out of nowhere.", a: "Say that first. \"This is out of nowhere\" is a complete introduction.", bundle: 'pro' },
+        { q: "I'll wait until it comes up naturally.", a: "It won't. Compliments almost never come up — they get decided on.", bundle: 'pro' },
+      ]
+    },
+  ],
+  responsivehumour: [
+    {
+      name: "Funny People Have Material",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The belief that funny people arrive with something — stories, lines, a stock of jokes — and that having none of that is why you are quiet.\n\nAlmost none of the humour in ordinary conversation works that way. It is built out of the sentence that was just said, in the second after it was said, by someone doing one of about five things to it.\n\nMindset: you are not supposed to bring anything. Their sentence is the material.",
+      inputs: [
+        { q: "I'm just not a funny person.", a: "You've never had to be. You've had to notice a sentence and bend it.", bundle: 'pro' },
+        { q: "I can never think of anything.", a: "Because you're looking for something new. Look at what they just said instead.", bundle: 'pro' },
+        { q: "Funny people have better lives to talk about.", a: "This pack is built on white walls and rain. That's the point.", bundle: 'pro' },
+        { q: "I think of the good line ten minutes later.", a: "Everyone does. The five moves are for the first ten seconds instead.", bundle: 'pro' },
+        { q: "I'd need to be quicker.", a: "You'd need one move. Exaggeration works on almost anything and nobody minds a slow one.", bundle: 'pro' },
+        { q: "They're naturally witty and I'm not.", a: "They're practised. You are watching the ten thousandth attempt, not the first.", bundle: 'pro' },
+        { q: "I'd have to remember jokes.", a: "You'd have to remember five verbs. Bigger, smaller, sideways, literal, backwards.", bundle: 'pro' },
+        { q: "There's nothing funny about this conversation.", a: "There's nothing funny about white walls either. That hasn't stopped anyone.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "One More Thing",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The instinct to keep going — to add the second half, the explanation, the bit that makes sure they got it, the small laugh at the end that asks them to join in.\n\nEvery one of those is a subtraction. The response works because it is quick enough to feel effortless; a long one announces that you are performing, and now it has to be worth the wait. The addition you make to be safe is the thing that costs you the laugh.\n\nMindset: four words beats fourteen. Stop before you want to.",
+      inputs: [
+        { q: "They might not get it.", a: "If they don't, it costs four seconds. If you explain, it costs more.", bundle: 'pro' },
+        { q: "It needs a bit more setup.", a: "Then it's a story, not a response. Save it and answer them instead.", bundle: 'pro' },
+        { q: "I'll add one more thing to make it land.", a: "The one more thing is what stops it landing.", bundle: 'pro' },
+        { q: "A longer joke is a better joke.", a: "On a stage, sometimes. In a kitchen, never.", bundle: 'pro' },
+        { q: "I trailed off at the end.", a: "Land on the last word and stop. The silence afterwards is theirs.", bundle: 'pro' },
+        { q: "I laughed at my own line to help it along.", a: "That's asking. Say it flat and let them decide.", bundle: 'pro' },
+        { q: "Four words doesn't feel like enough effort.", a: "Effort isn't the currency. \"Bit of a walk\" is four words and it's the best line in the pack.", bundle: 'pro' },
+        { q: "I want to make sure they know I'm joking.", a: "Your face does that. The extra sentence just makes it a lecture.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "They Didn't Get It",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The urge to rescue a joke that did not land — to say it again, to point out the pun, to describe why it was funny, to check whether they heard.\n\nThe rescue is what people remember, not the miss. A joke nobody noticed is forgotten within seconds; a joke that was explained is a small awkwardness everyone in the room now shares, and it belongs to you.\n\nMindset: let it go. The next opening is a minute away.",
+      inputs: [
+        { q: "They didn't get it.", a: "Fine. Answer what they said and carry on.", bundle: 'pro' },
+        { q: "If I explain it they'll laugh.", a: "They'll do something. It won't be laughing.", bundle: 'pro' },
+        { q: "I want them to know I was joking.", a: "One flat line: \"that was me agreeing, badly.\" Then stop.", bundle: 'pro' },
+        { q: "I'll try the same joke again with better timing.", a: "The second run is always worse. Wait for a new sentence.", bundle: 'pro' },
+        { q: "It's embarrassing to be ignored.", a: "For you, for four seconds. Nobody else has noticed.", bundle: 'pro' },
+        { q: "They looked confused.", a: "They'll be over it before you are. Move to the next sentence.", bundle: 'pro' },
+        { q: "Now the whole conversation feels awkward.", a: "Only in your head. Ask them a question and it's gone.", bundle: 'pro' },
+        { q: "Maybe they thought I meant it.", a: "Then say the plain version once. Not twice, and not with a reason attached.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "They Can Take a Joke",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The line between this pack and being unkind, and it is not a vague one. Humour aimed at the weather, the queue, the timetable or at yourself is free. Humour aimed at a person costs them something.\n\nThe test is whether the joke needs them to be a good sport. If it does, it is at their expense, and that is a different skill with different rules — it needs an established friendship, not a technique.\n\nMindset: the situation, their sentence, or yourself. Those three are safe with anyone.",
+      inputs: [
+        { q: "They can take a joke.", a: "Maybe. But needing them to is the tell.", bundle: 'pro' },
+        { q: "It's obviously affectionate.", a: "To you. Warmth doesn't always survive the trip.", bundle: 'pro' },
+        { q: "Everyone else is doing it.", a: "To each other, with years behind it. You've had four minutes.", bundle: 'pro' },
+        { q: "Self-deprecation is boring.", a: "It's also the only target that can't complain, which makes it useful.", bundle: 'pro' },
+        { q: "The joke's about their thing, not them.", a: "Then shrink the thing and leave them out of it entirely.", bundle: 'pro' },
+        { q: "They laughed, so it was fine.", a: "People laugh to end things. Check whether they came back to the subject.", bundle: 'pro' },
+        { q: "I'm their manager but we're friendly.", a: "Friendly doesn't remove the rank. The room hears it differently from you.", bundle: 'pro' },
+        { q: "If I never tease anyone I'll be boring.", a: "The five moves don't need a target. Not one of them requires a person.", bundle: 'pro' },
+      ]
+    },
+  ],
+  assertivecomm1: [
+    {
+      name: "Standards",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The standards, rules, and criteria we let others use to judge our choices. This deck targets the belief that you must measure up to external structures of right, wrong, or proper behavior before you can act. It trains the prime assertive right: you are the ultimate judge of all you are and do. If you don't own this area, others will invent rules to run your life. When you accept their criteria, you allow them to manipulate you with rules, reasons, and expectations that serve their interests instead of your own.\n\nMindset: you are the final judge of your own standards.",
+      inputs: [
+        { q: "Other people seem to have a fixed rulebook on how I should behave.", a: "The rules were made by people just like you. They are not laws of physics.", bundle: 'pro' },
+        { q: "If I don't follow their rules, I feel like I'm doing something wrong.", a: "Following their rules means letting them write the script of your life.", bundle: 'pro' },
+        { q: "Someone tells me that what I'm doing isn't the proper way.", a: "Proper only means it is the way they prefer. Your preference is just as valid.", bundle: 'pro' },
+        { q: "I feel anxious when I make a choice that doesn't fit standard procedures.", a: "You are the ultimate judge of your own choices. The anxiety is just old training.", bundle: 'pro' },
+        { q: "Everyone else seems to agree on what is fair and right.", a: "Consensus is not truth. It is often just a shared habit of compliance.", bundle: 'pro' },
+        { q: "I worry that being my own judge will make me selfish or irresponsible.", a: "Being your own judge means taking full responsibility for the consequences of your actions.", bundle: 'pro' },
+        { q: "A supervisor insists that their way is the only correct way.", a: "They can set company rules, but they cannot decide who you are as a person.", bundle: 'pro' },
+        { q: "I feel I need someone else's permission to change my routine.", a: "Waiting for permission is a habit from childhood. You are an adult now.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Justifications",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The constant urge to explain, defend, and offer reasons for your choices. When you feel you must justify your actions, you hand others the power to judge whether your reasons are good enough. This deck trains you to declare your desires plainly without excuses. Your likes, dislikes, and choices do not require parental or commercial approval to be valid. You are the sole judge of what you do. Giving reasons only hands the manipulator target points to dismantle and argue with.\n\nMindset: your desires are their own justification.",
+      inputs: [
+        { q: "If I don't give a reason for saying no, they will think I'm rude.", a: "You do not owe anyone an explanation for having a boundary.", bundle: 'pro' },
+        { q: "I need to think of a good excuse before I can decline an invitation.", a: "Excuses are just targets for the other person to solve and negotiate with.", bundle: 'pro' },
+        { q: "Someone demands to know why I changed my mind about our plans.", a: "You are allowed to change your mind simply because your feelings or preferences evolved.", bundle: 'pro' },
+        { q: "I feel guilty when I declare what I want without proving why I need it.", a: "Your want is a factual state. It does not need a logical argument to exist.", bundle: 'pro' },
+        { q: "If I don't justify my pricing, clients will think I'm ripping them off.", a: "Your rate is your decision. They can accept it or decline, but you don't need to defend it.", bundle: 'pro' },
+        { q: "My parents demand to know why I don't visit them every weekend.", a: "You are an independent adult. Your schedule does not require parental validation.", bundle: 'pro' },
+        { q: "I feel I must explain why I am returning this defective item to the clerk.", a: "\"I don't like it\" is a complete and valid reason for a return.", bundle: 'pro' },
+        { q: "When I am criticized, my immediate reflex is to explain my intentions.", a: "Explaining your intentions is a submissive attempt to get their approval. State the facts instead.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mistakes",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The heavy guilt and shame that follow everyday human errors. If you believe mistakes are moral failures, you allow others to demand psychological atonement and control your future behavior. This deck trains you to own your mistakes calmly as simple, inefficient facts. Admitting a mistake is an act of strength, not a submissive surrender. You are responsible for your errors, not for satisfying critics. We make errors because we are human, not because we are bad.\n\nMindset: errors are simply errors, not sins.",
+      inputs: [
+        { q: "Making a mistake at work means I am incompetent and untrustworthy.", a: "Errors are part of the human condition. They are inefficient, but they do not define your worth.", bundle: 'pro' },
+        { q: "Since I messed up the project timeline, I must work extra overtime for free to make it up.", a: "You are responsible for correcting the error, not for punishing yourself to satisfy them.", bundle: 'pro' },
+        { q: "My coworker keeps bringing up an error I made last month to control my schedule.", a: "They are using your past mistake as psychological leverage. Do not accept the guilt trap.", bundle: 'pro' },
+        { q: "If I admit I made a mistake, my critic will have won the argument.", a: "Admitting an error calmly is the fastest way to end their leverage and close the argument.", bundle: 'pro' },
+        { q: "I feel I must apologize profusely and crawl when I slip up.", a: "Apologizing three times is asking for forgiveness. State the mistake, correct it, and stop.", bundle: 'pro' },
+        { q: "If I make an error in judgment, I shouldn't be allowed to make decisions anymore.", a: "You are allowed to make mistakes. It is how humans learn to make better decisions.", bundle: 'pro' },
+        { q: "I try to hide my mistakes so that others won't think less of me.", a: "Hiding errors creates anxiety. Owning them calmly shows confidence and security.", bundle: 'pro' },
+        { q: "My partner's irritated tone when I forget something makes me feel like a bad person.", a: "Their irritation is their feeling. Your forgetfulness is just an error, not a moral crime.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Approval",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The paralyzing belief that you must have the goodwill of everyone before you can deal with them. The need for constant approval leaves you open to manipulation by anyone who threatens to withdraw their affection or cooperation. This deck trains you to realize that you can cope with people effectively even if they dislike your boundaries. You do not need their goodwill to survive or succeed. True relationships survive limits; compliance only builds a cage.\n\nMindset: you do not need everyone to like you.",
+      inputs: [
+        { q: "I can't function or do business with someone if they are angry or irritated with me.", a: "You do not need their friendship or goodwill to deal with them assertively and effectively.", bundle: 'pro' },
+        { q: "If my supervisor dislikes my boundaries, they will ruin my career.", a: "You can perform your job tasks effectively without needing your boss to be your friend.", bundle: 'pro' },
+        { q: "I feel terrible when a store clerk gets annoyed with my return request.", a: "Their annoyance is their problem. Your goal is the refund, not their smile.", bundle: 'pro' },
+        { q: "If I say no to my friends, our relationship will fall apart.", a: "True relationships survive boundaries. A friendship built on your compliance is a cage.", bundle: 'pro' },
+        { q: "I must always stay in everyone's good graces to keep the system steady.", a: "You are not responsible for keeping everyone else comfortable at the expense of your limits.", bundle: 'pro' },
+        { q: "I feel anxious when a coworker gives me a cold look in the hallway.", a: "Their cold look cannot hurt you. You can still work together without mutual warmth.", bundle: 'pro' },
+        { q: "I worry that being assertive will make people talk behind my back.", a: "People will talk regardless of what you do. Your self-respect is more important than their gossip.", bundle: 'pro' },
+        { q: "I need my family's approval before I can make a major life change.", a: "You are the final judge of your life. Their approval is a nice extra, not a requirement.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ignorance",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The belief that you must predict every consequence and have an answer for every question before you can act. This anxiety traps you in passive hesitation because you fear sounding stupid. This deck trains you to say 'I don't know' or 'I don't understand' with total confidence. You do not have to read minds or be an omniscient expert to make a decision about your own life. You are allowed to be illogical or declare that you simply do not care.\n\nMindset: saying I don't know is a valid boundary.",
+      inputs: [
+        { q: "If someone asks me a question about my plans, I must have an immediate answer.", a: "\"I don't know\" is a complete, honest, and perfectly valid answer.", bundle: 'pro' },
+        { q: "I must predict every consequence of my choices before I can change my mind.", a: "You do not have to be omniscient to make a decision. You can handle consequences as they arrive.", bundle: 'pro' },
+        { q: "I must worry about what would happen to the world if everyone acted as their own judge.", a: "You do not need to solve global philosophy to decide what works for your own life.", bundle: 'pro' },
+        { q: "I feel stupid when I don't understand what a specialist is talking about.", a: "Specialists often hide behind jargon. Reclaim your right to say: \"I don't understand.\"", bundle: 'pro' },
+        { q: "If I don't anticipate my partner's needs, I am being insensitive and irresponsible.", a: "You cannot read minds. If they want or need something, they must ask for it plainly.", bundle: 'pro' },
+        { q: "I worry that admitting lack of knowledge in a meeting will ruin my credibility.", a: "Admitting you don't know shows security. Faking knowledge creates real risk of failure.", bundle: 'pro' },
+        { q: "A customer service bot keeps asking me to categorize my issue before I can proceed.", a: "You don't have to fit into their pre-programmed boxes. Insist on your request.", bundle: 'pro' },
+        { q: "I feel I must have a logical reason for every preference I express.", a: "\"I don't know, I just prefer it\" is the only justification your wants require.", bundle: 'pro' },
+      ]
+    },
+  ],
+  assertivecomm2: [
+    {
+      name: "Responsibilities",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The heavy burden of believing you are responsible for solving other people's personal problems. This mindset targets the belief that you must sacrifice your own desires to keep everyone else comfortable or preserve ineffective systems. This deck trains Right III: you have the ultimate right to judge if you are responsible for finding solutions to others' problems. When you take ownership of their issues, you allow them to manipulate you with guilt and avoid taking charge of their own lives.\n\nMindset: they are responsible for their own happiness.",
+      inputs: [
+        { q: "I am responsible for solving my spouse's bad mood.", a: "Their emotional state belongs to them. I can support them without taking ownership of their feelings or neglecting my own limits.", bundle: 'pro' },
+        { q: "If I return this item, I am responsible for the store clerk's lost commission.", a: "The store's commission structure is their problem. My goal is a refund for defective goods.", bundle: 'pro' },
+        { q: "If I don't help my friend clean their garage, I am a bad person.", a: "My friend is responsible for their own chores. Saying no to a massive task is a healthy choice.", bundle: 'pro' },
+        { q: "I must find a solution to my parents' loneliness.", a: "My parents are independent adults. They must find their own social activities and outlets.", bundle: 'pro' },
+        { q: "If I say no to Greg's shift, the manager will be left in a terrible fix.", a: "The manager is responsible for shift coverage systems. My free time is my own decision.", bundle: 'pro' },
+        { q: "I must keep my partner from getting upset during our talks.", a: "Their irritation is their own feeling. We can discuss difficult truths without me managing their comfort.", bundle: 'pro' },
+        { q: "If the delivery system fails, I am responsible for making it easy for the company.", a: "The company's logistical errors are not mine to solve. I want my delivery processed correctly.", bundle: 'pro' },
+        { q: "I am bad if I don't spend my energy solving my roommate's problems.", a: "They must take charge of their own choices. I can be a friend without being their therapist.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Consistency",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The rigid belief that once you have made a decision, you must never change your mind. If you believe consistency is a moral duty, you allow others to use your past choices to control your future actions. This deck trains Right IV: you have the ultimate right to change your mind. Changing your mind as circumstances, feelings, or preferences evolve is a healthy, normal part of being human, not a sign of irresponsibility.\n\nMindset: you are allowed to change your mind.",
+      inputs: [
+        { q: "Since I agreed to go to the concert, I must go even if I feel sick.", a: "I am allowed to change my mind simply because my physical state or feelings have evolved.", bundle: 'pro' },
+        { q: "Changing my mind makes me look flaky and irresponsible to others.", a: "Adult life requires flexibility. My choices are not fixed contracts; they can adapt.", bundle: 'pro' },
+        { q: "I must keep using this terrible laptop because I chose to buy it.", a: "I made an error in judgment, and I can change my mind about keeping it.", bundle: 'pro' },
+        { q: "If I change my mind, I must have a massive, logical excuse to prove I'm right.", a: "My change of preference is its own justification. I don't need an excuse to choose differently now.", bundle: 'pro' },
+        { q: "I said yes to their request last week, so I cannot say no today.", a: "Last week was last week. A previous agreement is not an endless subscription to compliance.", bundle: 'pro' },
+        { q: "My parent grumbles that I used to visit them every weekend.", a: "My schedule and needs have changed. It is normal to adjust my routine as my life grows.", bundle: 'pro' },
+        { q: "I promised to stay in my current job, so leaving makes me a bad employee.", a: "My goals and feelings have evolved. I have the right to seek better paths for myself.", bundle: 'pro' },
+        { q: "I told my partner I wanted to cook, but now I am too tired.", a: "I can change my mind and propose ordering food instead without feeling guilty.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Decisions",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The belief that you must always have a logical, rational reason for your choices and desires. When you accept this rule, you hand others the power to judge whether your reasons are \"good enough\" to justify your boundaries. This deck trains Right VIII: you have the ultimate right to be illogical in making decisions. Your wants, likes, and dislikes do not fit into neat logical boxes; they are factual states that require no external validation.\n\nMindset: your feelings do not need a logical proof.",
+      inputs: [
+        { q: "I must prove logically why I want to return this unopened paint.", a: "\"I don't like it\" is a complete, valid, and sufficient reason for my choice.", bundle: 'pro' },
+        { q: "I need a rational argument to explain why I don't want to go out tonight.", a: "My lack of desire is a fact. It does not need a logical equation to be respected.", bundle: 'pro' },
+        { q: "If I cannot explain why I prefer this dress, I shouldn't buy it.", a: "Likes and dislikes are emotional states. I am allowed to choose simply because I prefer it.", bundle: 'pro' },
+        { q: "If I cannot argue a logical case for wanting things to change at home, I have no right to ask.", a: "My feelings of being cramped are real. They do not need to fit into a logical box to be valid.", bundle: 'pro' },
+        { q: "I must have a rational excuse to refuse a friend's invitation.", a: "\"I don't want to\" is a complete and adult boundary. I don't owe them a logical defense.", bundle: 'pro' },
+        { q: "If my decision is illogical, it means I am stupid or irresponsible.", a: "Wanting something is not a mathematical problem. It is healthy to make decisions based on feelings.", bundle: 'pro' },
+        { q: "I must justify my career change to my parents with a massive financial plan.", a: "My desire for change is my own. I have the right to make choices that don't satisfy their logic.", bundle: 'pro' },
+        { q: "Someone demands to know what is illogical about their sales offer.", a: "I don't need to debate their offer. I simply do not want to buy it today.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Obligations",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The constant pressure to improve yourself to meet everyone else's arbitrary standards of perfection. If you believe you are bad or lazy unless you are constantly striving to improve, you let others define who you should be. This deck trains Right X: you have the ultimate right to say \"I don't care\" to their rules. You do not have to be perfect, neat, or efficient according to anyone else's definition to keep your self-respect.\n\nMindset: you don't have to care about their standards.",
+      inputs: [
+        { q: "I am bad and lazy because I don't keep my house perfectly neat.", a: "Neatness is a preference, not a moral law. I don't have to care about being a perfect housekeeper.", bundle: 'pro' },
+        { q: "My boss says I should want to improve my speed, even though my work is average.", a: "I perform my tasks adequately. I don't have to strive for perfection to be a worthy employee.", bundle: 'pro' },
+        { q: "I must constantly read books to become a more civilized and educated person.", a: "I can enjoy my free time however I like. I don't owe anyone a constant self-improvement campaign.", bundle: 'pro' },
+        { q: "Someone grumbles that I don't care about the community standard.", a: "Their standard is their own choice. I have the right to say \"I don't care\" to their expectations.", bundle: 'pro' },
+        { q: "I must work overtime because everyone should strive to be highly productive.", a: "I work to put food on the table, not to satisfy a rigid philosophy of endless productivity.", bundle: 'pro' },
+        { q: "My partner sighs that I don't care about improving my presentation style.", a: "I am comfortable with my current style. I don't have to be a perfect public speaker to communicate.", bundle: 'pro' },
+        { q: "I feel guilty because I don't care about global political debates.", a: "I am allowed to limit my attention. Saying \"I don't care\" to side issues keeps my energy safe.", bundle: 'pro' },
+        { q: "I must struggle to meet my family's definition of success.", a: "I am the final judge of my own achievements. Their definition of success does not run my life.", bundle: 'pro' },
       ]
     },
   ],

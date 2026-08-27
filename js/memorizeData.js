@@ -3387,112 +3387,6 @@ const memorizeCollections = {
       ]
     },
   ],
-  complimenting: [
-    {
-      name: "Core Idea",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
-      description: "The shape of the pack: what a compliment is for, and the two ways it fails.",
-      cards: [
-        { q: "What are the seven strategies in this pack?", a: "Name What You Noticed, Compliment the Choice Not the Luck, Say Why It Landed, Say the Bigger One, Say It Where It Counts, Take a Compliment, Answer It Don't Return It.", bundle: 'free' },
-        { q: "What is a compliment, in one line?", a: "Information the other person does not have — nobody sees themselves from outside.", bundle: 'free' },
-        { q: "What are the two ways a compliment fails?", a: "Too vague to be believed, or too much to be received.", bundle: 'free' },
-        { q: "Which two strategies are about receiving?", a: "Take a Compliment, and Answer It Don't Return It.", bundle: 'pro' },
-        { q: "What does this pack own that Praise and Encouragement does not?", a: "That one is performance feedback at work. This is about the person, in ordinary life, with no agenda underneath.", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Name What You Noticed",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
-      description: "Specific rather than general.",
-      cards: [
-        { q: "What is the move?", a: "Say the specific thing you saw, not the category it belongs to.", bundle: 'free' },
-        { q: "Why does specific beat general?", a: "General praise could have been said by someone who wasn't paying attention. The detail proves you were.", bundle: 'free' },
-        { q: "What are the three things worth naming?", a: "A moment, a choice, or a pattern.", bundle: 'free' },
-        { q: "Why is a specific compliment easier to say?", a: "It's a small factual sentence. \"You're amazing\" is a claim you then have to defend.", bundle: 'pro' },
-        { q: "What if the detail feels too small to mention?", a: "Say it anyway. Small and specific is exactly what lands.", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Compliment the Choice, Not the Luck",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
-      description: "Praising what they can take credit for.",
-      cards: [
-        { q: "What is the rule?", a: "Praise what they did or chose, not what they were handed.", bundle: 'free' },
-        { q: "Why does a compliment about luck land badly?", a: "There's nothing to be proud of and nothing to say back.", bundle: 'free' },
-        { q: "What are the three kinds of choice?", a: "What they picked, what they practised, and what they decided.", bundle: 'free' },
-        { q: "How does this solve complimenting appearance?", a: "The clothes and the haircut are decisions and are fair game. The body underneath is not.", bundle: 'pro' },
-        { q: "They say it was nothing, they just threw it on.", a: "\"You still chose it. That counts.\"", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Say Why It Landed",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
-      description: "Reporting the effect.",
-      cards: [
-        { q: "What do you add?", a: "What it did to you — the part they cannot see.", bundle: 'free' },
-        { q: "Why is the effect unarguable?", a: "They can wave away \"that was brilliant\". They cannot wave away what you told someone else that evening.", bundle: 'free' },
-        { q: "What are the three effects worth reporting?", a: "What you did differently, what you felt, and what you told someone else.", bundle: 'free' },
-        { q: "Which of the three is strongest?", a: "What you did differently — it is proof rather than opinion.", bundle: 'pro' },
-        { q: "Can it be said months late?", a: "Yes. \"This is very overdue\" is the whole fix.", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Say the Bigger One",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
-      description: "The compliment about who they are.",
-      cards: [
-        { q: "What makes this one different?", a: "It is about who they are, not what they did — and almost nobody ever hears it.", bundle: 'free' },
-        { q: "Why say it rarely?", a: "Said often it becomes wallpaper; said in passing it sounds like a line.", bundle: 'free' },
-        { q: "What are the three ways to do it without it being strange?", a: "Attach it to evidence, say it is overdue, or say it and stop.", bundle: 'free' },
-        { q: "Why are these remembered for decades?", a: "Because they are so rarely said.", bundle: 'pro' },
-        { q: "What comes after it?", a: "Nothing. No question, no expectation of a reply — let it sit.", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Say It Where It Counts",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
-      description: "Choosing the audience.",
-      cards: [
-        { q: "What does public praise do that private praise cannot?", a: "It changes what everyone else thinks, not only what they think.", bundle: 'free' },
-        { q: "What belongs in private?", a: "Anything personal — appearance, character, anything they might rather the room did not know.", bundle: 'free' },
-        { q: "What are the three options?", a: "Public for credit, private for anything personal, in writing when it should outlast the moment.", bundle: 'free' },
-        { q: "What is the test for which to choose?", a: "Ask who the compliment is for. If it is for them, it goes where they will be comfortable.", bundle: 'pro' },
-        { q: "Why send it as a message sometimes?", a: "A message can be read again on a bad day. A remark cannot.", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Take a Compliment",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
-      description: "Accepting one cleanly.",
-      cards: [
-        { q: "What is the move?", a: "Say thank you and stop. No correcting, no explaining it away.", bundle: 'free' },
-        { q: "What does deflecting actually do?", a: "Tells the person they were wrong to say it — and after twice, people stop saying things.", bundle: 'free' },
-        { q: "What are the three ways to take one?", a: "Just thank you; thank you plus agreement; thank you plus what it means to hear it.", bundle: 'free' },
-        { q: "What is the hardest part?", a: "Stopping. Two words and then silence is harder than it sounds.", bundle: 'pro' },
-        { q: "What if you do not agree with it?", a: "\"I don't quite see it, but thank you for saying so.\"", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Answer It, Don't Return It",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
-      description: "Not firing one straight back.",
-      cards: [
-        { q: "What is wrong with returning it immediately?", a: "It cancels both — it reads as a transaction, and neither person has been told anything.", bundle: 'free' },
-        { q: "Where does the reflex come from?", a: "Discomfort, not generosity. It gets the attention off you fast.", bundle: 'free' },
-        { q: "What are the three ways to answer instead?", a: "Take it and let the moment end; take it then say something true and different; or praise them back later, named as separate.", bundle: 'free' },
-        { q: "If you do want to praise them back, how?", a: "Later, about something specific, and say plainly that it is not a return.", bundle: 'pro' },
-        { q: "What is the rule in four words?", a: "Theirs first. Yours keeps.", bundle: 'pro' },
-      ]
-    },
-  ],
   masculine1: [
     {
       name: "The Core Pillars",
@@ -6036,86 +5930,6 @@ const memorizeCollections = {
       ]
     },
   ],
-  responsivehumour: [
-    {
-      name: "Core Idea",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
-      description: "The shape of the pack: five ways to do something to the sentence you were just given.",
-      cards: [
-        { q: "What are the five strategies in this pack?", a: "Exaggeration, Understatement, Misdirection, Deliberate Misunderstanding, Irony.", bundle: 'free' },
-        { q: "Where does humour in conversation usually come from?", a: "How you respond, not what you bring.", bundle: 'free' },
-        { q: "What do all five have in common?", a: "Each takes their sentence and changes it — bigger, smaller, sideways, literal, or backwards.", bundle: 'free' },
-        { q: "What are the two ways it goes wrong?", a: "Aiming at something they actually care about, and explaining it afterwards.", bundle: 'pro' },
-        { q: "Which one should you reach for when stuck?", a: "Exaggeration. It works on almost anything and nobody has ever had to explain one.", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Exaggeration",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
-      description: "Making it enormous.",
-      cards: [
-        { q: "What is the move?", a: "Take what they said and make it far too big.", bundle: 'free' },
-        { q: "Why does the scale matter?", a: "A small exaggeration sounds like a complaint. A ridiculous one is obviously play.", bundle: 'free' },
-        { q: "What are the three safest targets?", a: "Your own state, the situation you are both in, and their claim agreed with too enthusiastically.", bundle: 'free' },
-        { q: "How do you know you have not gone far enough?", a: "If you are worried it is too much, it is probably not enough.", bundle: 'pro' },
-        { q: "Why is it the one to learn first?", a: "It is the most forgiving of the five — nobody has to decode anything.", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Understatement",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
-      description: "Making it tiny.",
-      cards: [
-        { q: "What is the move?", a: "Treat something large as though it were small — \"you ran a marathon? That's a bit of a walk.\"", bundle: 'free' },
-        { q: "How does it differ from exaggeration in feel?", a: "Exaggeration is loud and warm. Understatement is dry, and it flatters what it shrinks.", bundle: 'free' },
-        { q: "Where does the humour actually live?", a: "In the delivery. Say it flat — the words do almost none of the work.", bundle: 'free' },
-        { q: "Why is it good with people you do not know well?", a: "It is quiet, nobody has to perform, and it is over in four words.", bundle: 'pro' },
-        { q: "Why is shrinking an achievement a compliment?", a: "Treating it as ordinary is a way of saying it is not.", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Misdirection",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
-      description: "Turning at the end.",
-      cards: [
-        { q: "What is the shape?", a: "Start out agreeing, then twist the ending.", bundle: 'free' },
-        { q: "Why must the twist come last?", a: "The first half sets the expectation. Signal it early and there is nothing left to break.", bundle: 'free' },
-        { q: "What are the three ways to set up the turn?", a: "Agree then take a word literally, agree then reveal a ridiculous reason, or agree then land somewhere unrelated.", bundle: 'free' },
-        { q: "What should the first half sound like?", a: "Completely ordinary. That half is the setup, not the joke.", bundle: 'pro' },
-        { q: "Which of the five is closest to a traditional joke?", a: "This one — it has a setup and a punchline.", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Deliberate Misunderstanding",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
-      description: "Taking it the wrong way on purpose.",
-      cards: [
-        { q: "What is the move?", a: "Pretend you took it the wrong way — both of you know what was meant, and the pretending is the joke.", bundle: 'free' },
-        { q: "What are the three kinds?", a: "Take the literal sense, take the other meaning of a word, or take the statement as being about something else.", bundle: 'free' },
-        { q: "What makes it fail?", a: "A straight face with no warmth. Then it reads as pedantry or as not listening.", bundle: 'free' },
-        { q: "What is the point, if it is not seeming confused?", a: "Being obviously, cheerfully wrong on purpose.", bundle: 'pro' },
-        { q: "They start explaining what they really meant.", a: "\"I know what you meant. I just liked mine better.\"", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Irony",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
-      description: "Saying the opposite and letting the tone carry it.",
-      cards: [
-        { q: "What is the move?", a: "Say the opposite of what you mean, and let the delivery explain.", bundle: 'free' },
-        { q: "What are the four things worth being ironic about?", a: "Your own failures, your own successes played down, a shared inconvenience, and something obviously good called bad.", bundle: 'free' },
-        { q: "Which target is safest by a wide margin?", a: "Your own failures.", bundle: 'free' },
-        { q: "When does irony stop being humour?", a: "When it is aimed at a person, or at something they are proud of. Then it is sarcasm, which is a different thing.", bundle: 'pro' },
-        { q: "What is the risk with someone who does not know you?", a: "Delivered flat, it can be taken at face value — so keep it short and let the warmth show.", bundle: 'pro' },
-      ]
-    },
-  ],
   showunderstanding: [
     {
       name: "Core Idea",
@@ -6525,6 +6339,574 @@ const memorizeCollections = {
         { q: "Do you have to fix a heavy subject before you move it?", a: "No. Sometimes the kindest thing is to lighten the room.", bundle: 'pro' },
         { q: "What is the tell that you are enduring rather than interested?", a: "Squeezing a third question out of a subject.", bundle: 'pro' },
         { q: "How many good short topics beat one long one?", a: "Ten — if the long one was one nobody enjoyed.", bundle: 'pro' },
+      ]
+    },
+  ],
+  complimenting: [
+    {
+      name: "Core Idea",
+      description: "Seven ways to say a true thing to someone about themselves.\n\n1. **Name What You Noticed**\n2. **Compliment the Choice, Not the Luck**\n3. **Say Why It Landed**\n4. **Say the Bigger One**\n5. **Say It Where It Counts**\n6. **Take a Compliment**\n7. **Answer It, Don't Return It**\n\nFive give. Two receive, and those two happen to you unprepared.",
+      cards: [
+        { q: "What are the seven strategies in this pack?", a: "Name What You Noticed, Compliment the Choice Not the Luck, Say Why It Landed, Say the Bigger One, Say It Where It Counts, Take a Compliment, Answer It Don't Return It.", bundle: 'free' },
+        { q: "What is a compliment, in one line?", a: "Information the other person does not have — nobody sees themselves from outside.", bundle: 'free' },
+        { q: "What are the two ways a compliment fails?", a: "Too vague to be believed, or too much to be received.", bundle: 'free' },
+        { q: "Which two strategies are about receiving?", a: "Take a Compliment, and Answer It Don't Return It.", bundle: 'free' },
+        { q: "Why are the receiving ones worth practising most?", a: "They happen to you whether you prepared or not.", bundle: 'free' },
+        { q: "What does this pack own that Praise and Encouragement does not?", a: "That one is performance feedback at work. This is about the person, in ordinary life, with no agenda underneath.", bundle: 'pro' },
+        { q: "What is the single question that picks a strategy?", a: "What is missing — the detail, the effect, the audience, or the ability to stop talking.", bundle: 'pro' },
+        { q: "Where does the pack stop?", a: "Praise with a request attached, praise as padding for criticism, and praise you do not mean.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Name What You Noticed",
+      description: "",
+      cards: [
+        { q: "What is the move?", a: "Say the specific thing you saw, not the category it belongs to.", bundle: 'free' },
+        { q: "Why does specific beat general?", a: "General praise could have been said by someone who wasn't paying attention. The detail proves you were.", bundle: 'free' },
+        { q: "What are the three things worth naming?", a: "A moment, a choice, or a pattern.", bundle: 'free' },
+        { q: "Which of the three is safest?", a: "A moment. It is the smallest and it commits you to nothing.", bundle: 'free' },
+        { q: "Which is strongest, and who is it for?", a: "A pattern — and only for people you know well.", bundle: 'free' },
+        { q: "Why is a specific compliment easier to say?", a: "It's a small factual sentence. \"You're amazing\" is a claim you then have to defend.", bundle: 'pro' },
+        { q: "What if the detail feels too small to mention?", a: "Say it anyway. Small and specific is exactly what lands.", bundle: 'pro' },
+        { q: "What if you cannot remember anything specific?", a: "Say that. \"Something about the middle worked and I'm still working out what.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Compliment the Choice, Not the Luck",
+      description: "",
+      cards: [
+        { q: "What is the rule?", a: "Praise what they did or chose, not what they were handed.", bundle: 'free' },
+        { q: "Why does a compliment about luck land badly?", a: "There's nothing to be proud of and nothing to say back.", bundle: 'free' },
+        { q: "What are the three kinds of choice?", a: "What they picked, what they practised, and what they decided.", bundle: 'free' },
+        { q: "Which of the three is strongest?", a: "What they practised — they know what it cost.", bundle: 'free' },
+        { q: "What is the one to avoid?", a: "What they were born with. That is an observation about their body, not a compliment.", bundle: 'free' },
+        { q: "How does this solve complimenting appearance?", a: "The clothes and the haircut are decisions and are fair game. The body underneath is not.", bundle: 'pro' },
+        { q: "They say it was nothing, they just threw it on.", a: "\"You still chose it. That counts.\"", bundle: 'pro' },
+        { q: "Can a compliment about character be about a choice?", a: "Yes — being calm in every room is a practice, not luck, and can be praised as one.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Say Why It Landed",
+      description: "",
+      cards: [
+        { q: "What do you add?", a: "What it did to you — the part they cannot see.", bundle: 'free' },
+        { q: "Why is the effect unarguable?", a: "They can wave away \"that was brilliant\". They cannot wave away what you told someone else that evening.", bundle: 'free' },
+        { q: "What are the three effects worth reporting?", a: "What you did differently, what you felt, and what you told someone else.", bundle: 'free' },
+        { q: "Which of the three is strongest?", a: "What you did differently — it is proof rather than opinion.", bundle: 'free' },
+        { q: "Why is this the one that gets remembered?", a: "Because they already know what they did. The effect is the only genuinely new information.", bundle: 'free' },
+        { q: "Can it be said months late?", a: "Yes. \"This is very overdue\" is the whole fix.", bundle: 'pro' },
+        { q: "How do you use it against a deflection?", a: "Move off whether they were good and onto what happened to you. That part is not up for debate.", bundle: 'pro' },
+        { q: "How do you keep it from sounding heavy?", a: "Keep it factual. \"I've thought about that three times this week\" is enough.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Say the Bigger One",
+      description: "",
+      cards: [
+        { q: "What makes this one different?", a: "It is about who they are, not what they did — and almost nobody ever hears it.", bundle: 'free' },
+        { q: "Why say it rarely?", a: "Said often it becomes wallpaper; said in passing it sounds like a line.", bundle: 'free' },
+        { q: "What are the three ways to do it without it being strange?", a: "Attach it to evidence, say it is overdue, or say it and stop.", bundle: 'free' },
+        { q: "Which of the three is safest?", a: "Attaching it to evidence. The evidence gives them somewhere to look.", bundle: 'free' },
+        { q: "What comes after it?", a: "Nothing. No question, no expectation of a reply — let it sit.", bundle: 'free' },
+        { q: "Why are these remembered for decades?", a: "Because they are so rarely said.", bundle: 'pro' },
+        { q: "How do you say it to someone you barely know?", a: "Name the distance first. \"Take this as an outside opinion.\"", bundle: 'pro' },
+        { q: "How do you say it to family who never talk this way?", a: "Name the fact that you never talk this way, then say it regardless. The naming is what gives you both permission.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Say It Where It Counts",
+      description: "",
+      cards: [
+        { q: "What does public praise do that private praise cannot?", a: "It changes what everyone else thinks, not only what they think.", bundle: 'free' },
+        { q: "What belongs in private?", a: "Anything personal — appearance, character, anything they might rather the room did not know.", bundle: 'free' },
+        { q: "What are the three options?", a: "Public for credit, private for anything personal, in writing when it should outlast the moment.", bundle: 'free' },
+        { q: "What is the test for which to choose?", a: "Ask who the compliment is for. If it is for them, it goes where they will be comfortable.", bundle: 'free' },
+        { q: "Why send it as a message sometimes?", a: "A message can be read again on a bad day. A remark cannot.", bundle: 'free' },
+        { q: "How long should public praise be?", a: "Name, thing, done. Longer and it becomes a speech and embarrasses everyone.", bundle: 'pro' },
+        { q: "What if you cannot tell whether they would want it public?", a: "Ask. \"Would you rather I said this in the meeting or just to you?\"", bundle: 'pro' },
+        { q: "You praised someone publicly and it clearly embarrassed them.", a: "Say so and stop. \"I put you on the spot. I meant it, though.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Take a Compliment",
+      description: "",
+      cards: [
+        { q: "What is the move?", a: "Say thank you and stop. No correcting, no explaining it away.", bundle: 'free' },
+        { q: "What does deflecting actually do?", a: "Tells the person they were wrong to say it — and after twice, people stop saying things.", bundle: 'free' },
+        { q: "What are the three ways to take one?", a: "Just thank you; thank you plus agreement; thank you plus what it means to hear it.", bundle: 'free' },
+        { q: "What is the hardest part?", a: "Stopping. Two words and then silence is harder than it sounds.", bundle: 'free' },
+        { q: "What if you do not agree with it?", a: "\"I don't quite see it, but thank you for saying so.\"", bundle: 'free' },
+        { q: "Is taking it arrogant?", a: "No. \"Thank you\" is acknowledgement, not agreement.", bundle: 'pro' },
+        { q: "When is the warmest version right?", a: "When you were unsure about the thing. \"That's good to hear — I wasn't sure about it.\"", bundle: 'pro' },
+        { q: "The compliment is bigger than you are comfortable with.", a: "\"That's a lot. Thank you — I'm going to sit with it rather than argue.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Answer It, Don't Return It",
+      description: "",
+      cards: [
+        { q: "What is wrong with returning it immediately?", a: "It cancels both — it reads as a transaction, and neither person has been told anything.", bundle: 'free' },
+        { q: "Where does the reflex come from?", a: "Discomfort, not generosity. It gets the attention off you fast.", bundle: 'free' },
+        { q: "What are the three ways to answer instead?", a: "Take it and let the moment end; take it then say something true and different; or praise them back later, named as separate.", bundle: 'free' },
+        { q: "What is the rule in four words?", a: "Theirs first. Yours keeps.", bundle: 'free' },
+        { q: "If you do want to praise them back, how?", a: "Later, about something specific, and say plainly that it is not a return.", bundle: 'free' },
+        { q: "How long does the gap need to be?", a: "Long enough that it is clearly a separate sentence. Ten minutes is plenty.", bundle: 'pro' },
+        { q: "You already fired one back and it sounded hollow.", a: "Say so. \"That came out as a reflex. Let me say it properly.\"", bundle: 'pro' },
+        { q: "They deflect everything you ever say to them.", a: "\"You never take these. I'm going to keep saying them anyway.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **What Are You Praising** — Name What You Noticed, Compliment the Choice or Say Why It Landed\n• **How Far and Who Hears** — Say the Bigger One, Say It Where It Counts or Name What You Noticed\n• **One Is Coming At You** — Take a Compliment, Answer It Don't Return It or Say Why It Landed\n\nThe first asks what goes in the sentence. The second asks how large it should be and who should hear it. The third is the receiving half.",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "What Are You Praising, How Far and Who Hears, and One Is Coming At You.", bundle: 'pro' },
+        { q: "What does What Are You Praising read?", a: "What you actually have — a moment you saw, a decision they made, or an effect on you.", bundle: 'pro' },
+        { q: "What two dials does How Far and Who Hears set?", a: "Size and audience.", bundle: 'pro' },
+        { q: "You can quote the exact moment. Which move?", a: "Name What You Noticed.", bundle: 'pro' },
+        { q: "What you admire is something they decided, not something they were given. Which move?", a: "Compliment the Choice, Not the Luck.", bundle: 'pro' },
+        { q: "They are shy and the room is large. Which move?", a: "Say It Where It Counts — afterwards, not now.", bundle: 'pro' },
+        { q: "They just praised you and you have one ready to fire back. Which move?", a: "Answer It, Don't Return It.", bundle: 'pro' },
+        { q: "Which strategy appears in two collections, and why?", a: "Name What You Noticed — it is the detail that both the giving questions eventually need.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one insists on:\n\n• **Small, Then Large** — a detail, then the effect, then the sentence about who they are\n• **Theirs First** — take it, let the gap happen, praise them later and separately\n• **Credit in a Room** — public and short, then private and long\n\nEach is an order rather than a set. The same four sentences in the wrong order produce flattery, a transaction, or a speech.",
+      cards: [
+        { q: "What are the three sequences in this pack?", a: "Small, Then Large; Theirs First; and Credit in a Room.", bundle: 'pro' },
+        { q: "Why does Small, Then Large go in that order?", a: "The large sentence only sounds earned on top of a small one. Said first it is flattery.", bundle: 'pro' },
+        { q: "What is the whole point of Theirs First?", a: "The gap. The same praise ten minutes later counts; in the same breath it cancels both.", bundle: 'pro' },
+        { q: "What is the shape of Credit in a Room?", a: "Name, thing, done in public — then the detail afterwards, quietly.", bundle: 'pro' },
+        { q: "Why does Credit in a Room end with taking one?", a: "Public credit almost always produces a private deflection, and that is where it unravels.", bundle: 'pro' },
+        { q: "Which strategy ends two of the three sequences?", a: "Take a Compliment. A good compliment usually comes back at you.", bundle: 'pro' },
+        { q: "What is the hardest step in Theirs First?", a: "The silence in the middle, where the reflex wants to fill the space.", bundle: 'pro' },
+        { q: "Why is the receiving half in every sequence?", a: "Because giving one is only half an exchange, and the other half arrives whether you planned it or not.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five hard cases in this pack:\n\n• **They Deflect It** — it bounces off\n• **There Is a Difference in Rank** — praise up or down a hierarchy\n• **It Is About How They Look** — appearance, and the one clear rule\n• **You Have Not Said It in Years** — the decade-old unsaid thing\n• **It Is Not Really a Compliment** — where the pack stops\n\nThe last one is a boundary, not a technique. Some sentences look like praise and are doing another job.",
+      cards: [
+        { q: "What are the five challenge categories?", a: "They Deflect It; There Is a Difference in Rank; It Is About How They Look; You Have Not Said It in Years; It Is Not Really a Compliment.", bundle: 'pro' },
+        { q: "How many times do you repeat a deflected compliment?", a: "Once, with evidence. A third time is a negotiation.", bundle: 'pro' },
+        { q: "What changes when praise comes from a manager?", a: "It carries weight and can be heard as an evaluation, so character compliments go private.", bundle: 'pro' },
+        { q: "What is the rule for appearance?", a: "If it took a decision, it is a compliment. If it took genetics, it is a remark.", bundle: 'pro' },
+        { q: "What is the first sentence for a decade-old unsaid thing?", a: "\"We don't say this sort of thing.\" It names the awkwardness and gives you both permission.", bundle: 'pro' },
+        { q: "Name the three things that are not compliments.", a: "Praise with a request attached, praise as padding for criticism, and praise you do not mean.", bundle: 'pro' },
+        { q: "Why does an untrue compliment cost you?", a: "It quietly devalues every true one you have given.", bundle: 'pro' },
+        { q: "What do you do instead of a compliment sandwich?", a: "Give the criticism plainly. Praise spent as padding has no effect left to report.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "The four beliefs that stop compliments before they are said:\n\n• **They Already Know** — so it adds nothing\n• **Deflecting Feels Like Modesty** — so taking one feels like bragging\n• **Small Is Not Worth Saying** — so only a large compliment counts\n• **It Might Land Wrong** — so silence is safer\n\nAll four are arithmetic errors. The cost is a few seconds, usually yours. The other side of the ledger is measured in years.",
+      cards: [
+        { q: "What are the four mindsets in this pack?", a: "They Already Know; Deflecting Feels Like Modesty; Small Is Not Worth Saying; It Might Land Wrong.", bundle: 'pro' },
+        { q: "Why is \"they already know\" wrong?", a: "They know what they intended. They cannot see the effect, and that is the part only you have.", bundle: 'pro' },
+        { q: "Why is deflecting not modesty?", a: "From the outside it corrects someone who was being kind, and after twice they stop offering.", bundle: 'pro' },
+        { q: "Is \"thank you\" the same as agreeing?", a: "No. It is acknowledgement, and it is all that is needed.", bundle: 'pro' },
+        { q: "Why is small better than large?", a: "Large general praise is the shape politeness takes. A detail cannot be produced without paying attention.", bundle: 'pro' },
+        { q: "What is the honest weighing of the risk?", a: "Four seconds of awkwardness for you, against something they may carry for ten years.", bundle: 'pro' },
+        { q: "The moment has passed.", a: "\"This is overdue\" fixes that in three words.", bundle: 'pro' },
+        { q: "Why does waiting for it to come up naturally fail?", a: "It never comes up. Compliments get decided on, not stumbled into.", bundle: 'pro' },
+      ]
+    },
+  ],
+  responsivehumour: [
+    {
+      name: "Core Idea",
+      description: "Five things you can do to a sentence somebody just handed you.\n\n1. **Exaggeration**\n2. **Understatement**\n3. **Misdirection**\n4. **Deliberate Misunderstanding**\n5. **Irony**\n\nTwo change the size. Three change the meaning. None of them requires you to bring anything.",
+      cards: [
+        { q: "What are the five strategies in this pack?", a: "Exaggeration, Understatement, Misdirection, Deliberate Misunderstanding, Irony.", bundle: 'free' },
+        { q: "Where does humour in conversation usually come from?", a: "How you respond, not what you bring.", bundle: 'free' },
+        { q: "What do all five have in common?", a: "Each takes their sentence and changes it — bigger, smaller, sideways, literal, or backwards.", bundle: 'free' },
+        { q: "Which two change the size?", a: "Exaggeration and Understatement.", bundle: 'free' },
+        { q: "Which one should you reach for when stuck?", a: "Exaggeration. It works on almost anything and nobody has ever had to explain one.", bundle: 'free' },
+        { q: "What are the two ways it goes wrong?", a: "Aiming at something they actually care about, and explaining it afterwards.", bundle: 'pro' },
+        { q: "Why practise on dull sentences?", a: "Anyone can be funny about a good story. The skill is being funny about white walls.", bundle: 'pro' },
+        { q: "Where does the pack stop?", a: "Anything aimed at a person — that needs a friendship, not a technique.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Exaggeration",
+      description: "",
+      cards: [
+        { q: "What is the move?", a: "Take what they said and make it far too big.", bundle: 'free' },
+        { q: "Why does the scale matter?", a: "A small exaggeration sounds like a complaint. A ridiculous one is obviously play.", bundle: 'free' },
+        { q: "What are the three safest targets?", a: "Your own state, the situation you are both in, and their claim agreed with too enthusiastically.", bundle: 'free' },
+        { q: "How do you know you have not gone far enough?", a: "If you are worried it is too much, it is probably not enough.", bundle: 'free' },
+        { q: "Why is it the one to learn first?", a: "It is the most forgiving of the five — nobody has to decode anything.", bundle: 'free' },
+        { q: "What is the risk in the third target?", a: "Agreeing too enthusiastically is warm only if you are clearly on their side.", bundle: 'pro' },
+        { q: "Why is your own state the safest?", a: "Because the target is you, and you cannot take offence at yourself.", bundle: 'pro' },
+        { q: "It came out sounding like moaning.", a: "Go further. Halfway sounds like a complaint; all the way sounds like a joke.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Understatement",
+      description: "",
+      cards: [
+        { q: "What is the move?", a: "Treat something large as though it were small — \"you ran a marathon? That's a bit of a walk.\"", bundle: 'free' },
+        { q: "How does it differ from exaggeration in feel?", a: "Exaggeration is loud and warm. Understatement is dry, and it flatters what it shrinks.", bundle: 'free' },
+        { q: "Where does the humour actually live?", a: "In the delivery. Say it flat — the words do almost none of the work.", bundle: 'free' },
+        { q: "What are the three places it works best?", a: "On something impressive, on something disastrous, and on something obvious.", bundle: 'free' },
+        { q: "Why is shrinking an achievement a compliment?", a: "Treating it as ordinary is a way of saying it is not.", bundle: 'free' },
+        { q: "Why is it good with people you do not know well?", a: "It is quiet, nobody has to perform, and it is over in four words.", bundle: 'pro' },
+        { q: "How does it do sympathy?", a: "Dryly. \"So the week has been going well, then\" says I heard you without making it solemn.", bundle: 'pro' },
+        { q: "What ruins it?", a: "Adding a laugh or an explanation. The flatness was the joke.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Misdirection",
+      description: "",
+      cards: [
+        { q: "What is the shape?", a: "Start out agreeing, then twist the ending.", bundle: 'free' },
+        { q: "Why must the twist come last?", a: "The first half sets the expectation. Signal it early and there is nothing left to break.", bundle: 'free' },
+        { q: "What are the three ways to set up the turn?", a: "Agree then take a word literally, agree then reveal a ridiculous reason, or agree then land somewhere unrelated.", bundle: 'free' },
+        { q: "What should the first half sound like?", a: "Completely ordinary. That half is the setup, not the joke.", bundle: 'free' },
+        { q: "Which of the five is closest to a traditional joke?", a: "This one — it has a setup and a punchline.", bundle: 'free' },
+        { q: "Which of the three setups is easiest?", a: "Taking a word literally in another sense.", bundle: 'pro' },
+        { q: "What do you do with a sentence that can be read two ways?", a: "Agree, then pick the second reading out loud.", bundle: 'pro' },
+        { q: "Your face gave it away halfway through.", a: "Keep it still until after the last word. The straight face is half the technique.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Deliberate Misunderstanding",
+      description: "",
+      cards: [
+        { q: "What is the move?", a: "Pretend you took it the wrong way — both of you know what was meant, and the pretending is the joke.", bundle: 'free' },
+        { q: "What are the three kinds?", a: "Take the literal sense, take the other meaning of a word, or take the statement as being about something else.", bundle: 'free' },
+        { q: "What makes it fail?", a: "A straight face with no warmth. Then it reads as pedantry or as not listening.", bundle: 'free' },
+        { q: "What is the point, if it is not seeming confused?", a: "Being obviously, cheerfully wrong on purpose.", bundle: 'free' },
+        { q: "They start explaining what they really meant.", a: "\"I know what you meant. I just liked mine better.\"", bundle: 'free' },
+        { q: "Which of the three kinds is sharpest?", a: "Taking the other meaning of a word, when a word offers two.", bundle: 'pro' },
+        { q: "How is it different from irony?", a: "Irony turns your own words. This one turns theirs.", bundle: 'pro' },
+        { q: "It is landing as pedantic.", a: "The words are fine. Warm the tone — the smile does the work.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Irony",
+      description: "",
+      cards: [
+        { q: "What is the move?", a: "Say the opposite of what you mean, and let the delivery explain.", bundle: 'free' },
+        { q: "What are the four things worth being ironic about?", a: "Your own failures, your own successes played down, a shared inconvenience, and something obviously good called bad.", bundle: 'free' },
+        { q: "Which target is safest by a wide margin?", a: "Your own failures.", bundle: 'free' },
+        { q: "When does irony stop being humour?", a: "When it is aimed at a person, or at something they are proud of. Then it is sarcasm.", bundle: 'free' },
+        { q: "What is the risk with someone who does not know you?", a: "Delivered flat, it can be taken at face value.", bundle: 'free' },
+        { q: "Why is it the most economical of the five?", a: "Three words is often the whole thing.", bundle: 'pro' },
+        { q: "What is the lightest form?", a: "Something obviously good, called bad. \"A whole week off. How will I cope.\"", bundle: 'pro' },
+        { q: "They took it at face value.", a: "One flat correction, then stop. \"That was sarcasm, for the record.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Bigger, Smaller, Opposite** — Exaggeration, Understatement or Irony\n• **Twisting It** — Misdirection, Deliberate Misunderstanding or Irony\n• **All Five** — everything, no cue given\n\nThe first changes the size of what they said. The second changes its meaning. Irony sits in both, because it does a bit of each.",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "Bigger, Smaller, Opposite; Twisting It; and All Five.", bundle: 'pro' },
+        { q: "What does Bigger, Smaller, Opposite ask you to read?", a: "The temperature the moment wants — warmth, dryness, or something in between.", bundle: 'pro' },
+        { q: "What does Twisting It have in common?", a: "All three change the meaning rather than the size, and all three live in the delivery.", bundle: 'pro' },
+        { q: "A friend is describing a disaster. Which register?", a: "Warmth — exaggeration.", bundle: 'pro' },
+        { q: "A colleague is describing an achievement. Which register?", a: "Dryness — understatement.", bundle: 'pro' },
+        { q: "A word they used has two meanings. Which move?", a: "Deliberate Misunderstanding.", bundle: 'pro' },
+        { q: "Why does Irony appear in two collections?", a: "It flips the value and the meaning at the same time.", bundle: 'pro' },
+        { q: "What is the default when nothing suggests itself?", a: "Exaggeration. Most forgiving, works on almost anything.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and what each one drills:\n\n• **Something Out of Nothing** — four dull sentences, four different moves\n• **Keeping It Going** — the second joke lives inside the first\n• **Missed, Then Back In** — the recovery, which nobody practises\n\nThe first builds reach, the second builds play, the third removes the fear that stops both.",
+      cards: [
+        { q: "What are the three sequences in this pack?", a: "Something Out of Nothing; Keeping It Going; and Missed, Then Back In.", bundle: 'pro' },
+        { q: "Why are the setups in the first one deliberately dull?", a: "If you can be funny about white walls, you never need to wait for good material.", bundle: 'pro' },
+        { q: "What does Keeping It Going actually train?", a: "Staying inside the world the first joke created instead of opening a new one.", bundle: 'pro' },
+        { q: "Why does the second joke get easier than the first?", a: "The first needs an idea. The second only needs the world you both already agreed to stand in.", bundle: 'pro' },
+        { q: "What is the rule in Missed, Then Back In?", a: "Do not explain it. Answer the thing they actually said.", bundle: 'pro' },
+        { q: "What is the last step of the recovery?", a: "Coming back in a minute later, on a new sentence — not the old one.", bundle: 'pro' },
+        { q: "What does a miss actually cost?", a: "Four seconds. The explanation costs the conversation.", bundle: 'pro' },
+        { q: "They took your irony at face value. What is the one allowed repair?", a: "A single flat clarification, then nothing.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five hard cases in this pack:\n\n• **A Small Complaint** — they want company, not solutions\n• **They Are Pleased With Themselves** — warm or a put-down, depending\n• **Someone States the Obvious** — the emptiest sentences, and the best practice\n• **It Did Not Land** — what happens next is the whole difference\n• **Now Is Not the Time** — where the pack stops\n\nFour are openings. The last one is a boundary.",
+      cards: [
+        { q: "What are the five challenge categories?", a: "A Small Complaint; They Are Pleased With Themselves; Someone States the Obvious; It Did Not Land; Now Is Not the Time.", bundle: 'pro' },
+        { q: "What does a small complaint actually want?", a: "Company, not a solution. The earnest reply makes it bigger than they meant.", bundle: 'pro' },
+        { q: "What is the rule when someone is showing off?", a: "Shrink the thing, never the person.", bundle: 'pro' },
+        { q: "Why is irony wrong on an achievement?", a: "\"Oh, very impressive\" said flat is sarcasm. It takes rather than gives.", bundle: 'pro' },
+        { q: "Why are empty sentences the best practice?", a: "The emptier the sentence, the more room there is in it.", bundle: 'pro' },
+        { q: "Name the three situations to stay out of.", a: "Something they are upset about, something they are proud and nervous about, and any moment where you have power over them.", bundle: 'pro' },
+        { q: "What is the tell that a joke is aimed at a person?", a: "It needs them to be a good sport.", bundle: 'pro' },
+        { q: "Why does rank change the joke?", a: "Humour from a manager about someone's work is not heard the way the same words are from a peer.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "The four beliefs that keep people quiet:\n\n• **Funny People Have Material** — so you need something to bring\n• **One More Thing** — so you add the explanation\n• **They Didn't Get It** — so you rescue the joke\n• **They Can Take a Joke** — so the target does not matter\n\nThe first stops you starting. The middle two spoil what you started. The last is the one that does damage.",
+      cards: [
+        { q: "What are the four mindsets in this pack?", a: "Funny People Have Material; One More Thing; They Didn't Get It; They Can Take a Joke.", bundle: 'pro' },
+        { q: "What is the answer to \"I'm not a funny person\"?", a: "You never had to be. You have to notice a sentence and bend it.", bundle: 'pro' },
+        { q: "Why is the addition a subtraction?", a: "The response works because it feels effortless. A long one announces that you are performing.", bundle: 'pro' },
+        { q: "What does explaining a joke cost?", a: "A miss is forgotten in seconds. An explanation is an awkwardness the room now shares.", bundle: 'pro' },
+        { q: "What is the one allowed rescue?", a: "A single flat line — \"that was me agreeing, badly\" — and then stop.", bundle: 'pro' },
+        { q: "Why is \"they can take a joke\" the wrong question?", a: "Needing them to is the tell that it is aimed at them.", bundle: 'pro' },
+        { q: "They laughed, so it was fine.", a: "People laugh to end things. Check whether they came back to the subject.", bundle: 'pro' },
+        { q: "Do you need a target to be funny?", a: "No. Not one of the five moves requires a person.", bundle: 'pro' },
+      ]
+    },
+  ],
+  assertivecomm1: [
+    {
+      name: "Core Idea",
+      description: "Four systematic verbal defenses to handle hostile criticism and manipulation in commercial and authority settings.\n\n• Broken Record — persistence\n• Fogging — absorbing attacks\n• Negative Assertion — owning real errors\n• Negative Inquiry — prompting feedback\n\nThese skills keep you as your own ultimate judge.",
+      cards: [
+        { q: "What are the four strategies in this pack?", a: "Broken Record, Fogging, Negative Assertion, and Negative Inquiry.", bundle: 'free' },
+        { q: "What is the prime assertive right from which all others derive?", a: "The right to be the ultimate judge of your own behavior, thoughts, and emotions.", bundle: 'free' },
+        { q: "What are the three relationship categories taught in the source?", a: "Commercial or formal, authority, and equal relationships.", bundle: 'free' },
+        { q: "What decides which strategy to use?", a: "What the other person just did: pressured your boundary, criticized your style, pointed out a real error, or threw vague complaints.", bundle: 'free' },
+        { q: "What is the main goal of being verbally assertive?", a: "Maintaining your self-respect while cutting through manipulation.", bundle: 'free' },
+        { q: "Why is a \"Workable Compromise\" not a standalone strategy in Pack 1?", a: "Because it is a negotiation move that belongs to Pack 2 once boundaries are established.", bundle: 'pro' },
+        { q: "What do all four strategies have in common?", a: "They allow you to respond without becoming defensive, angry, or anxious.", bundle: 'pro' },
+        { q: "Who is the author of the systematic assertive skills taught in the source?", a: "Manuel J. Smith, Ph.D. (1975).", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Broken Record",
+      description: "",
+      cards: [
+        { q: "What is the core mechanism of Broken Record?", a: "Calmly repeating what you want over and over again without getting angry.", bundle: 'free' },
+        { q: "Why does Broken Record work against persistent sellers?", a: "Most people have only a few \"noes\" in their bag. If they have six, you only need seven.", bundle: 'free' },
+        { q: "What trap does Broken Record help you avoid?", a: "Being drawn into irrelevant arguments, logical baiting, or explaining your reasons.", bundle: 'free' },
+        { q: "What tone of voice should you use when broken-recording?", a: "A low-key, relaxed, and unflappable voice.", bundle: 'free' },
+        { q: "How do you handle a manipulator who tries to change the subject?", a: "Ignore the bait, acknowledge their comment briefly, and repeat your want.", bundle: 'free' },
+        { q: "What does Broken Record communicate to the other person?", a: "That you will not be put off and can persist all day if necessary.", bundle: 'pro' },
+        { q: "When is a Workable Compromise appropriate during Broken Record?", a: "Only when your self-respect is not on the line and a practical deal works.", bundle: 'pro' },
+        { q: "What habit does Broken Record break?", a: "The compulsive childhood habit of answering every question put to you.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Fogging",
+      description: "",
+      cards: [
+        { q: "What is the core mechanism of Fogging?", a: "Calmly agreeing with whatever is true, probable, or logical in a criticism.", bundle: 'free' },
+        { q: "Why is the skill called Fogging?", a: "Because you offer no hard striking surfaces. Like a fog bank, you absorb the blow and remain unaffected.", bundle: 'free' },
+        { q: "What are the three logical forms of Fogging?", a: "Agreeing with the truth, agreeing with the odds, and agreeing in principle.", bundle: 'free' },
+        { q: "What does Fogging do to a manipulative critic?", a: "It removes their reward by refusing to deny, defend, or counterattack.", bundle: 'free' },
+        { q: "Why does agreeing with a critic defuse the argument?", a: "It leaves their exaggeration standing alone without a fight to feed on.", bundle: 'free' },
+        { q: "How does Fogging force you to become a better listener?", a: "It requires you to listen to exactly what they say, not what you think they imply.", bundle: 'pro' },
+        { q: "What is the difference between Fogging and compliance?", a: "Fogging agrees with the words but reserves the judgment of what you will actually do.", bundle: 'pro' },
+        { q: "How do you handle flattery using Fogging?", a: "Agree with the positive quality without feeling obligated to return a favor.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Negative Assertion",
+      description: "",
+      cards: [
+        { q: "What is the core mechanism of Negative Assertion?", a: "Calmly and strongly owning your real errors and faults without over-apologizing.", bundle: 'free' },
+        { q: "Why does Negative Assertion defuse a critic's anger?", a: "Because it treats errors as simple human facts, leaving no room for them to lecture you.", bundle: 'free' },
+        { q: "What childish belief does Negative Assertion dismantle?", a: "That making a mistake is a moral failure that must be atoned for.", bundle: 'free' },
+        { q: "What is the difference between Negative Assertion and a submissive apology?", a: "Negative Assertion calmly owns the fact of the error; submissive apologies ask for forgiveness.", bundle: 'free' },
+        { q: "Why do manipulators focus on your past mistakes?", a: "To induce guilt and control your future, unrelated behavior.", bundle: 'free' },
+        { q: "What is the tone of a good Negative Assertion?", a: "Calm, matter-of-fact, and completely free of visceral squirming.", bundle: 'pro' },
+        { q: "What is the danger of denying or defending a real mistake?", a: "It escalates the conflict into a character fight and resents the partner.", bundle: 'pro' },
+        { q: "How does Negative Assertion help you look at yourself?", a: "It allows you to accept negative points about your personality without feeling anxious.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Negative Inquiry",
+      description: "",
+      cards: [
+        { q: "What is the core mechanism of Negative Inquiry?", a: "Actively prompting further criticism about yourself in an unemotional, low-key manner.", bundle: 'free' },
+        { q: "Why is Negative Inquiry useful in close relationships?", a: "It reduces their use of right-and-wrong judgments, prompting them to say what they want.", bundle: 'free' },
+        { q: "What trap does Negative Inquiry help you avoid?", a: "The cycle of responding to criticism with denial, defensiveness, or counter-criticism.", bundle: 'free' },
+        { q: "What is the difference between \"Why is that bad?\" and \"What is it about that that is bad?\"?", a: "The first is defensive and sarcastic; the second points to yourself and prompts information.", bundle: 'free' },
+        { q: "How does Negative Inquiry extinguish manipulative criticism?", a: "It exhausts their vague complaints, forcing them to either spell out real issues or stop.", bundle: 'free' },
+        { q: "What is the optimal end result of Negative Inquiry?", a: "The partner discards their right-and-wrong structure and states their actual wishes.", bundle: 'pro' },
+        { q: "How does Negative Inquiry help you emotionally?", a: "It desensitizes you to criticism so you can listen to feedback without panic.", bundle: 'pro' },
+        { q: "When is Negative Inquiry used in authority relationships?", a: "To prompt constructive feedback on your work performance to speed up improvement.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and the choices they train:\n\n• Deflect & Inquiry — choosing between Fogging and Negative Inquiry under vague criticism\n• Own or Agree — choosing between Negative Assertion and Fogging under factual attacks\n• The Defense Set — choosing among all four strategies to defuse any conflict\n\nOne question decides nearly all of it: what did the other person just do?",
+      cards: [
+        { q: "What is the primary purpose of the Collections mode?", a: "It trains the quick recognition and selection of the correct assertive defense.", bundle: 'pro' },
+        { q: "What does Deflect & Inquiry make you choose between?", a: "Defusing an empty attack (Fogging) vs. extracting a real complaint (Negative Inquiry).", bundle: 'pro' },
+        { q: "What is the danger of using Fogging when Negative Assertion is required?", a: "You sound evasive and untrustworthy by hiding a real error behind probabilities.", bundle: 'pro' },
+        { q: "What is the danger of using Negative Assertion when Fogging is required?", a: "You submissively own a mistake you didn't make, handing them control.", bundle: 'pro' },
+        { q: "Why does the Deflect & Inquiry collection represent a genuine fork?", a: "Because choosing the wrong move either feeds a hostile critic's fire or stalls a solvable grievance.", bundle: 'pro' },
+        { q: "How many strategies are represented in The Defense Set?", a: "All four strategies in this pack.", bundle: 'pro' },
+        { q: "Why is a two-strategy collection allowed?", a: "Because it allows you to practice a sharp, binary decision where both moves look plausible.", bundle: 'pro' },
+        { q: "What is the deciding factor in the Own or Agree collection?", a: "Whether you actually made a factual error that you are responsible for.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the orders they enforce:\n\n• The Defusal Run — Fogging, then Negative Inquiry twice\n• The Full Defense — Fogging, then Negative Inquiry, then Negative Assertion\n• The Persistent Defusal — Negative Assertion, then Broken Record twice\n\nIn each sequence, the order does the work of defusing criticism.",
+      cards: [
+        { q: "What is the specific order of moves in The Defusal Run?", a: "Fogging, then Negative Inquiry, then Negative Inquiry again.", bundle: 'pro' },
+        { q: "Why does Fogging come first in The Defusal Run?", a: "To absorb the emotional strike so the critic quietens down before you ask for details.", bundle: 'pro' },
+        { q: "What is the specific order of moves in The Full Defense?", a: "Fogging, then Negative Inquiry, then Negative Assertion.", bundle: 'pro' },
+        { q: "What problem does The Full Defense solve?", a: "It separates exaggerated emotional attacks from the factual error you actually made.", bundle: 'pro' },
+        { q: "What is the specific order of moves in The Persistent Defusal?", a: "Negative Assertion, then Broken Record, then Broken Record again.", bundle: 'pro' },
+        { q: "Why does Negative Assertion come before Broken Record in a mistake dispute?", a: "It removes their factual leverage first, so your broken record isn't just evasive stonewalling.", bundle: 'pro' },
+        { q: "What happens if you put the Negative Assertion step last in a mixed criticism dispute?", a: "You waste energy arguing about their exaggerations before finally admitting the mistake.", bundle: 'pro' },
+        { q: "Why do sequences in this pack contain at least three steps?", a: "To train the realistic flow and order of a persistent conversation under pressure.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenge categories in this pack, representing the problem areas you meet:\n\n• Handling Authority — supervisor or expert pressure\n• Commercial Pressure — salespeople and telemarketers\n• Flattery & Compliments — positive manipulation\n• Nagging & Testing — persistent emotional guilt\n• Modern Evasions — gig workers, bots, and digital buck-passing\n\nEach category has its own way of testing your boundaries.",
+      cards: [
+        { q: "What are the five challenge categories in this pack?", a: "Handling Authority, Commercial Pressure, Flattery & Compliments, Nagging & Testing, and Modern Evasions.", bundle: 'pro' },
+        { q: "Why is Handling Authority a distinct challenge?", a: "Because subordinates tend to use submissive excuses or passive silence when bosses criticize.", bundle: 'pro' },
+        { q: "How does Flattery & Compliments manipulate your behavior?", a: "It induces a feeling of obligation, making it difficult to say no to their subsequent request.", bundle: 'pro' },
+        { q: "What is the main goal in Nagging & Testing?", a: "Holding your boundary calmly without getting drawn into emotional arguments or shouting.", bundle: 'pro' },
+        { q: "What is the core issue in Modern Evasions?", a: "Digital systems, bots, and workers passing the buck to make you solve their technical problems.", bundle: 'pro' },
+        { q: "What goes wrong in Commercial Pressure?", a: "Customers feel forced to give excuses, which salespeople easily dismantle to make a sale.", bundle: 'pro' },
+        { q: "Why is Modern Evasions updated from \"Supermarket Evasions\"?", a: "To apply the same core assertive skills to today's digital, gig-economy customer service loops.", bundle: 'pro' },
+        { q: "Which strategy is most useful in Commercial Pressure?", a: "Broken Record — repeating your decision calmly to block their persistent pitch.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "The five limiting mindsets targeted in this pack, and what is true instead:\n\n• Standards — you are the final judge of your own choices\n• Justifications — your wants do not need excuses or approval\n• Mistakes — errors are simple inefficient facts, not moral failures\n• Approval — you do not need their goodwill to deal with them effectively\n• Ignorance — saying \"I don't know\" is a completely valid boundary\n\nThe rules and guilt that feel like good manners are actually puppet strings.",
+      cards: [
+        { q: "What are the five mindset decks in this pack?", a: "Standards, Justifications, Mistakes, Approval, and Ignorance.", bundle: 'pro' },
+        { q: "Why is \"Sovereignty\" renamed to \"Standards\"?", a: "Because a mindset deck must be named after the area of belief, not the insight or answer.", bundle: 'pro' },
+        { q: "What is the limiting belief in Justifications?", a: "That you must explain your reasons to prove your choices are correct and responsible.", bundle: 'pro' },
+        { q: "What is the reset for the Mistakes mindset?", a: "Errors are simply errors. They are inefficient, but they do not require emotional atonement.", bundle: 'pro' },
+        { q: "What is the reset for the Approval mindset?", a: "You can do business and deal with people assertively even if they do not like you or your boundaries.", bundle: 'pro' },
+        { q: "What is the reset for the Ignorance mindset?", a: "You don't have to read minds, predict the future, or be an expert to decide what you want.", bundle: 'pro' },
+        { q: "What is the core truth of the Standards mindset?", a: "You have the ultimate right to judge your own behavior, thoughts, and emotions.", bundle: 'pro' },
+        { q: "What do all five limiting mindsets have in common?", a: "They rely on learned childhood anxiety, ignorance, and guilt to let others control you.", bundle: 'pro' },
+      ]
+    },
+  ],
+  assertivecomm2: [
+    {
+      name: "Core Idea",
+      description: "Four social assertiveness skills to start equal connections, disclose your feelings, assert boundaries, and negotiate material deals.\n\n• Free Information — spotting cues\n• Self-Disclosure — sharing feelings\n• Asserting Wants — declaring limits\n• Workable Compromise — bargaining\n\nThese skills build intimate, equal relationships.",
+      cards: [
+        { q: "What are the four strategies in this pack?", a: "Free Information, Self-Disclosure, Asserting Wants, and Workable Compromise.", bundle: 'free' },
+        { q: "What separates Pack 2 from Pack 1?", a: "Pack 1 handles defensive criticism in formal settings; Pack 2 handles proactive connection and negotiation in equal relationships.", bundle: 'free' },
+        { q: "What are the three equal relationship areas focused on in this pack?", a: "Dating and sex, spouses, and friends or parents.", bundle: 'free' },
+        { q: "What is the prime assertive right that runs through equal relationships?", a: "The right to be the final judge of your own behavior, wants, and standards.", bundle: 'free' },
+        { q: "What is the main goal of social assertiveness?", a: "Building intimacy and cooperation without losing your self-respect or boundaries.", bundle: 'free' },
+        { q: "Who wrote the source these systematic assertive skills come from?", a: "Manuel J. Smith, Ph.D. (1975).", bundle: 'pro' },
+        { q: "Why is \"Workable Compromise\" placed in Pack 2?", a: "Because negotiation can only occur between equals once boundaries have been established.", bundle: 'pro' },
+        { q: "What do all four Pack 2 strategies have in common?", a: "They allow you to proactively open communication and resolve conflicts between equals.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Free Information",
+      description: "",
+      cards: [
+        { q: "What is the core mechanism of Free Information?", a: "Recognizing and following up on unprompted cues dropped by others in conversation.", bundle: 'free' },
+        { q: "What conversational trap does Free Information solve?", a: "Being tongue-tied or feeling the pressure to invent \"interesting\" new topics.", bundle: 'free' },
+        { q: "What are three common types of free information cues?", a: "Location cues, activity cues, and emotional feeling cues.", bundle: 'free' },
+        { q: "What is the difference between Free Information and interrogation?", a: "Free Information follows up on what they offered; interrogation asks demanding questions.", bundle: 'free' },
+        { q: "What does following up on free information communicate to the partner?", a: "That you are actively listening and interested in what they actually care about.", bundle: 'free' },
+        { q: "How does Free Information help shy people?", a: "It removes the cognitive load of having to create a topic out of nothing.", bundle: 'pro' },
+        { q: "What is the best way to prompt social partners to talk easily?", a: "Pair their free information cues with a small bit of your own self-disclosure.", bundle: 'pro' },
+        { q: "Where does the raw material for conversation live?", a: "In the very last sentence the other person spoke.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Self-Disclosure",
+      description: "",
+      cards: [
+        { q: "What is the core mechanism of Self-Disclosure?", a: "Sharing personal, non-defensive information about your feelings, interests, and anxieties.", bundle: 'free' },
+        { q: "Why does Self-Disclosure prevent manipulation?", a: "It takes away their ability to induce guilt by bringing your true state out in the open first.", bundle: 'free' },
+        { q: "What childish habit does Self-Disclosure break?", a: "The habit of hiding your worries or trying to present a perfect, flawless image.", bundle: 'free' },
+        { q: "What is the difference between Self-Disclosure and a submissive confession?", a: "Self-Disclosure is stated calmly as a fact of your state; confessions plead for approval.", bundle: 'free' },
+        { q: "How does Self-Disclosure build equal intimacy?", a: "It models nondefensive vulnerability, encouraging the partner to share their own feelings.", bundle: 'free' },
+        { q: "When is Self-Disclosure used in boundary setting?", a: "To explain your feelings of worry or exhaustion so your \"no\" feels personal rather than hostile.", bundle: 'pro' },
+        { q: "What is the tone of a good Self-Disclosure?", a: "Calm, matter-of-fact, and completely free of defensive justification.", bundle: 'pro' },
+        { q: "Why does the room relax when you disclose a slip-up?", a: "It signals that the stakes are low and that perfection is not required.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Asserting Wants",
+      description: "",
+      cards: [
+        { q: "What is the core mechanism of Asserting Wants?", a: "Stating your boundaries or desires plainly using \"I want\" or \"I don't want\" without excuses.", bundle: 'free' },
+        { q: "Why does Asserting Wants prevent arguments?", a: "It states your preference as a factual state, leaving no logical justifications for them to debate.", bundle: 'free' },
+        { q: "What childhood conditioning does Asserting Wants dismantle?", a: "The belief that declaring your desires without a \"good reason\" is selfish or rude.", bundle: 'free' },
+        { q: "How do you assert a want without sounding aggressive?", a: "Speak in a low, relaxed, and matter-of-fact tone of voice.", bundle: 'free' },
+        { q: "What is the risk of giving excuses when stating a want?", a: "The other person will try to solve your excuses to manipulate you into compliance.", bundle: 'free' },
+        { q: "Why is \"I don't want to\" a complete and valid adult answer?", a: "Because you have the right to offer no reasons or excuses for your behavior.", bundle: 'pro' },
+        { q: "When is Asserting Wants essential in dating?", a: "To establish clear physical boundaries and confidently resist sexual pressure.", bundle: 'pro' },
+        { q: "How does Asserting Wants shift a marriage dispute?", a: "It moves the partners from passive nagging to straightforward, honest negotiation.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Workable Compromise",
+      description: "",
+      cards: [
+        { q: "What is the core mechanism of Workable Compromise?", a: "Bargaining for material goals and negotiating alternative arrangements between equals.", bundle: 'free' },
+        { q: "Why is Workable Compromise vital in equal relationships?", a: "Because equal relationships have no rigid rulebook, so everything must be negotiated.", bundle: 'free' },
+        { q: "When is a Workable Compromise inappropriate?", a: "When your self-respect or a core personal boundary is being traded away.", bundle: 'free' },
+        { q: "What is the difference between compromise and surrender?", a: "Compromise is a balanced trade-off where both sides get a piece of the action; surrender is compliance.", bundle: 'free' },
+        { q: "How do you transition from saying \"no\" to offering a compromise?", a: "State your boundary clearly first, then propose a practical alternative.", bundle: 'free' },
+        { q: "What does a Workable Compromise treat conflict as?", a: "A logistical or material problem to be solved, not a moral battle of right and wrong.", bundle: 'pro' },
+        { q: "What goes wrong when you compromise too early?", a: "You collapse your boundary before the other person has even understood your position.", bundle: 'pro' },
+        { q: "Why is compromise the key to daily cooperation?", a: "It allows spouses or roommates to split tasks and spaces in a way that respects both.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• Connect or Disclose — choosing between Free Information and Self-Disclosure\n• Say No or Compromise — choosing between Asserting Wants and Workable Compromise\n• The Social Set — choosing among all four strategies to handle equal partners\n\nOne question decides nearly all of it: what does the relationship need right now?",
+      cards: [
+        { q: "What does the Connect or Disclose collection train?", a: "Choosing whether to open a door for them (Free Information) vs. sharing your own side (Self-Disclosure).", bundle: 'pro' },
+        { q: "What is the danger of using Workable Compromise when Asserting Wants is required?", a: "You trade away your self-respect or core boundaries to buy temporary peace.", bundle: 'pro' },
+        { q: "What is the danger of using Asserting Wants when Workable Compromise is required?", a: "You refuse to negotiate on trivial, material details, causing the relationship to break.", bundle: 'pro' },
+        { q: "Why does Connect or Disclose represent a genuine fork?", a: "Because interrogating without sharing makes you a prosecutor, while sharing without listening makes you self-absorbed.", bundle: 'pro' },
+        { q: "How many strategies are represented in The Social Set?", a: "All four strategies in this pack.", bundle: 'pro' },
+        { q: "What does Say No or Compromise make you choose between?", a: "Holding your line cleanly (Asserting Wants) vs. bargaining for a practical deal (Workable Compromise).", bundle: 'pro' },
+        { q: "What is the deciding factor in the Say No or Compromise collection?", a: "Whether your self-respect is at stake or if it is a logistical detail that can be traded.", bundle: 'pro' },
+        { q: "Why is a two-strategy collection allowed?", a: "Because it allows you to practice a sharp decision where both moves look plausible in the moment.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one insists on:\n\n• The Social Opening — Free Information, Self-Disclosure, Free Information\n• The Boundaried No — Self-Disclosure, Asserting Wants, Workable Compromise\n• The Workable Deal — Asserting Wants, Self-Disclosure, Workable Compromise\n\nIn each sequence, the order does the work of building equal connection.",
+      cards: [
+        { q: "What is the specific order of moves in The Social Opening?", a: "Free Information, then Self-Disclosure, then Free Information again.", bundle: 'pro' },
+        { q: "Why does Free Information come first in The Social Opening?", a: "It makes them feel heard first, opening the door for you to share your side.", bundle: 'pro' },
+        { q: "What is the specific order of moves in The Boundaried No?", a: "Self-Disclosure, then Asserting Wants, then Workable Compromise.", bundle: 'pro' },
+        { q: "What problem does The Boundaried No solve?", a: "It explains your feeling first so the refusal lands gently, then offers a practical alternative.", bundle: 'pro' },
+        { q: "What is the specific order of moves in The Workable Deal?", a: "Asserting Wants, then Self-Disclosure, then Workable Compromise.", bundle: 'pro' },
+        { q: "Why does Asserting Wants come before Self-Disclosure in a chore negotiation?", a: "It sets a clean, honest direction first before explaining your feelings and bargaining terms.", bundle: 'pro' },
+        { q: "What happens if you put the Workable Compromise step first in a boundary dispute?", a: "You pre-emptively surrender your boundary before establishing your position.", bundle: 'pro' },
+        { q: "Why do sequences in this pack contain at least three steps?", a: "To train the realistic flow of an intimate conversation where things must be worked through.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenge categories in this pack, representing the equal areas you meet:\n\n• Parental Ties — adult-to-adult boundaries with parents\n• Equal Demands — negotiating space, borrowing, and chores with friends\n• Dating and Seduction — asserting physical boundaries under romantic pressure\n• Marital Routines — renegotiating household tasks and confronting routines\n• Tongue-Tied Socials — navigating strangers and building rapport\n\nEach category has its own way of testing your equal assertiveness.",
+      cards: [
+        { q: "What are the five challenge categories in this pack?", a: "Parental Ties, Equal Demands, Dating and Seduction, Marital Routines, and Tongue-Tied Socials.", bundle: 'pro' },
+        { q: "Why is Parental Ties a distinct challenge?", a: "Because adult children tend to revert to childhood excuses or angry shouting under parental pressure.", bundle: 'pro' },
+        { q: "How does Dating and Seduction test your boundaries?", a: "Partners use \"hurt\" looks or romantic flattery to make you feel guilty for saying no.", bundle: 'pro' },
+        { q: "What is the main goal in Marital Routines?", a: "Confronting routines and dividing chores without falling into passive nagging or silent treatment.", bundle: 'pro' },
+        { q: "What is the core issue in Tongue-Tied Socials?", a: "Overcoming the pressure to perform or be \"interesting\" by using simple conversational raw material.", bundle: 'pro' },
+        { q: "What goes wrong in Equal Demands?", a: "Roommates or friends treat your compliance as a given, causing a slow buildup of resentment.", bundle: 'pro' },
+        { q: "Why do Challenges in Pack 2 focus on equal relationships?", a: "To apply your skills to the areas with the least defined rules, where everything must be negotiated.", bundle: 'pro' },
+        { q: "Which strategy is most useful in Tongue-Tied Socials?", a: "Free Information — listening for unprompted cues to keep the flow balanced.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "The four limiting mindsets targeted in this pack, and what is true instead:\n\n• Responsibilities — you are responsible for your own happiness, and they are for theirs\n• Consistency — changing your mind as feelings or needs evolve is healthy and normal\n• Decisions — wants and feelings do not need logical proofs to be valid\n• Obligations — you don't have to be perfect or care about their standards of success\n\nThe expectations we use to control each other are actually cages.",
+      cards: [
+        { q: "What are the four mindset decks in this pack?", a: "Responsibilities, Consistency, Decisions, and Obligations.", bundle: 'pro' },
+        { q: "Why is \"Sovereignty\" replaced in Pack 2?", a: "Because Pack 2 targets the specific relational rights rather than the prime right.", bundle: 'pro' },
+        { q: "What is the limiting belief in Responsibilities?", a: "That you are obligated to find solutions to other people's personal problems and keep systems smooth.", bundle: 'pro' },
+        { q: "What is the reset for the Consistency mindset?", a: "Changing your mind as circumstances or preferences evolve is a healthy, normal part of life.", bundle: 'pro' },
+        { q: "What is the reset for the Decisions mindset?", a: "Wants and feelings are not mathematical equations; you have the right to make illogical choices.", bundle: 'pro' },
+        { q: "What is the reset for the Obligations mindset?", a: "You do not have to be perfect or even care to improve according to anyone else's definition.", bundle: 'pro' },
+        { q: "What is the core truth of the Responsibilities mindset?", a: "You are responsible for your own behavior, and other people are responsible for theirs.", bundle: 'pro' },
+        { q: "What do all four limiting mindsets have in common?", a: "They rely on learned childhood anxiety and guilt to make your wants dependent on others.", bundle: 'pro' },
       ]
     },
   ],
