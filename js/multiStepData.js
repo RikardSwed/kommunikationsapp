@@ -7298,4 +7298,288 @@ const multiStepCollections = {
       ]
     },
   ],
+  assertivecommadv: [
+    {
+      name: "The Long Refusal",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
+      description: "A three-step sequence for the person who does not stop at your first no and keeps finding new angles.\n\n• Fogging — accept whatever is true in their opening push\n• Broken Record — repeat the want, unchanged, when they come back\n• Self-Disclosure — name the feeling underneath once the reasons run out\n\nWhy this order: fogging denies them a fight, the repeat denies them progress, and by the third pass they have usually stopped arguing and started asking why. That is the moment a feeling lands, and not before. What people do instead: they give the feeling first, as a reason, and spend the rest of the conversation defending whether the feeling is fair.\n\nMindset: hold the line long enough that honesty is a gift rather than a defence.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "A salesperson at the counter keeps pushing an extended warranty you have already declined twice.",
+          steps: [
+            { front: "Fogging — they say most buyers regret skipping the cover.", back: "\"You're probably right that some people regret it.\"" },
+            { front: "Broken Record — they ask what harm one more year of cover could do.", back: "\"It may well be worth it for some people, and I don't want the warranty.\"" },
+            { front: "Self-Disclosure — they ask why you are being so difficult about this.", back: "\"I'm not trying to be difficult. I just don't like buying things at a counter under pressure.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A friend has spent ten minutes trying to talk you into a weekend trip you already declined.",
+          steps: [
+            { front: "Fogging — they say the group will be smaller without you.", back: "\"It will be smaller, that's true.\"" },
+            { front: "Broken Record — they say you can decide when you get there.", back: "\"I know it's easy to join late, and I'm not coming this time.\"" },
+            { front: "Self-Disclosure — they ask what is going on with you lately.", back: "\"Nothing dramatic. I'm just worn out and I want two quiet days.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A supervisor keeps returning to your desk about covering Saturday.",
+          steps: [
+            { front: "Fogging — they say the rota is genuinely short this week.", back: "\"You're right, the rota is short.\"" },
+            { front: "Broken Record — they ask if you could do even half a day.", back: "\"I understand it's short, and I'm not available on Saturday.\"" },
+            { front: "Self-Disclosure — they ask whether something is wrong.", back: "\"I'm fine. I've worked the last three weekends and I want this one at home.\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "The Full Concession",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
+      description: "A three-step sequence for a request from someone close, where a flat no would cost you more than the request would.\n\n• Fogging — agree with the part of their case that holds\n• Self-Disclosure — say what you actually feel about doing it\n• Workable Compromise — put a concrete alternative on the table\n\nWhy this order: agreement stops them defending their request, the feeling explains without justifying, and the offer arrives when they are listening rather than arguing. What people do instead: they open with the compromise, which is read as an opening bid and negotiated straight back to the original ask.\n\nMindset: concede the argument, keep the boundary, and pay the difference in something you can afford.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "Your mother is upset that you will not come home every weekend as your sibling does.",
+          steps: [
+            { front: "Fogging — she says the drive is only two hours.", back: "\"It is only two hours, you're right.\"" },
+            { front: "Self-Disclosure — she asks why that is too much to ask.", back: "\"It's not the drive. I come back with nothing left for my own week.\"" },
+            { front: "Workable Compromise — she says she barely sees you now.", back: "\"I don't want every weekend. I do want one Saturday a month and a call every Sunday.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A colleague asks to borrow your car for a weekend move and points out it is standing idle.",
+          steps: [
+            { front: "Fogging — they say it will just sit in the car park otherwise.", back: "\"That's true, it does sit there all weekend.\"" },
+            { front: "Self-Disclosure — they ask what the problem is then.", back: "\"I know it sounds silly, but I get anxious the whole time my car is out.\"" },
+            { front: "Workable Compromise — they say they have nobody else to ask.", back: "\"I don't want to lend it, but I'll drive the two big loads for you on Saturday morning.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A neighbour wants the trees along your fence taken down because of leaves in their pool.",
+          steps: [
+            { front: "Fogging — they say the leaves are genuinely a weekly job.", back: "\"They do drop a lot, and I can see it's constant.\"" },
+            { front: "Self-Disclosure — they ask why you are so attached to a few trees.", back: "\"I had a bare garden for years and I really want to keep the shade.\"" },
+            { front: "Workable Compromise — they ask what they are supposed to do about the pool.", back: "\"I'm keeping the trees. I'll pay for a pool cover and clear the filter each autumn.\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "The Grievance Run",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
+      description: "A three-step sequence for a partner or old friend who has been storing things up and has finally opened with a vague one.\n\n• Negative Inquiry — ask what is behind the complaint before answering it\n• Negative Assertion — own the real thing plainly once it is named\n• Negative Inquiry — ask for the rest of the list while you are still calm\n\nWhy this order: the first question turns a mood into a fact, the admission removes the fact from the argument, and the second question empties the file instead of leaving items for next month. What people do instead: they answer the vague opener, which means arguing about a mood, which never ends.\n\nMindset: get the whole list out in one calm hour rather than one item a month for a year.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "Your partner says, over the washing up, that you never pull your weight around the house.",
+          steps: [
+            { front: "Negative Inquiry — they wait for you to defend yourself.", back: "\"What is it I'm not doing that lands on you?\"" },
+            { front: "Negative Assertion — they say they have done every food shop for a month.", back: "\"You have, all four of them. That's on me.\"" },
+            { front: "Negative Inquiry — they go quiet, still tense.", back: "\"What else has been building up that I haven't noticed?\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Your manager opens the review by saying the year has been uneven.",
+          steps: [
+            { front: "Negative Inquiry — they slide the form across the desk.", back: "\"What specifically about the year looked uneven to you?\"" },
+            { front: "Negative Assertion — they point at two missed reporting deadlines.", back: "\"Both of those were late, and both were mine to file.\"" },
+            { front: "Negative Inquiry — they nod and move to close the meeting.", back: "\"Before we finish — what else should be on this form that isn't?\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A friend of fifteen years says, half joking, that you have become hard work.",
+          steps: [
+            { front: "Negative Inquiry — they laugh it off and change the subject.", back: "\"No, I'd rather know. What is it that's hard work?\"" },
+            { front: "Negative Assertion — they say you cancel more than you show up.", back: "\"I've cancelled on you three times this year. That's true and it's not great.\"" },
+            { front: "Negative Inquiry — they say it is fine, really.", back: "\"What else have you been putting up with that you haven't said?\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "The Owned Deal",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
+      description: "A three-step sequence for when you have genuinely made a mistake and the other person wants both an admission and a solution.\n\n• Fogging — absorb the exaggerated part of the accusation\n• Negative Assertion — own the real error, once it is separated out\n• Workable Compromise — put a concrete repair on the table\n\nWhy this order: fogging keeps the exaggeration from becoming the argument, the admission ends the moral question, and the offer moves the conversation from blame to logistics while they are still listening. What people do instead: they lead with the fix, which reads as buying their way out of an apology they never made.\n\nMindset: separate the exaggeration from the error, own the error, then fix what can be fixed.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "A coworker says your carelessness ruined the client's whole week.",
+          steps: [
+            { front: "Fogging — they say you are chaotic with every handover you touch.", back: "\"I can be chaotic with handovers, that's fair.\"" },
+            { front: "Negative Assertion — they say the access codes were never sent.", back: "\"I never sent those codes. That was mine to do and I didn't do it.\"" },
+            { front: "Workable Compromise — they ask what happens now.", back: "\"I'll send them within the hour and take the Friday call myself so you don't have to.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A client says your billing is a disaster and they are considering leaving.",
+          steps: [
+            { front: "Fogging — they say every invoice this year has been a problem.", back: "\"There have been problems with the invoices, yes.\"" },
+            { front: "Negative Assertion — they point out that March was sent six weeks late.", back: "\"March was six weeks late. That was my oversight, not the system's.\"" },
+            { front: "Workable Compromise — they ask why they should stay.", back: "\"I want to keep working with you. I'll bill on the first of each month and copy you on the schedule.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Your partner says you never take responsibility for anything to do with the holiday.",
+          steps: [
+            { front: "Fogging — they say you leave every arrangement to them.", back: "\"You do end up doing most of the arranging, that's true.\"" },
+            { front: "Negative Assertion — they say the flights are now twice the price.", back: "\"I forgot to book them on Sunday like I said I would. That's on me.\"" },
+            { front: "Workable Compromise — they ask how this gets fixed.", back: "\"I'll book tonight at whatever it costs, and I'll take the hotel and the car too.\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "The Held Deal",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
+      description: "A three-step sequence for the compromise that gets renegotiated the moment it is agreed.\n\n• Self-Disclosure — say what the limit is and where it comes from\n• Workable Compromise — offer the specific alternative you can live with\n• Broken Record — keep the offer identical when they try to widen it\n\nWhy this order: the disclosure makes the limit personal rather than arbitrary, the offer gives them a real yes, and the repeat protects the offer from becoming an opening bid. What people do instead: they improve the offer each time it is questioned, which teaches the other person that questioning it always works.\n\nMindset: an offer that grows every time it is pushed was never an offer.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "A friend asked for your whole Saturday to help them move; you offered the morning.",
+          steps: [
+            { front: "Self-Disclosure — they ask if you really can't do the whole day.", back: "\"I want the afternoon to myself. I've had no weekend to speak of this month.\"" },
+            { front: "Workable Compromise — they say the van arrives at two.", back: "\"I can do eight until one, and I'll bring my car for the small stuff.\"" },
+            { front: "Broken Record — they ask if you could stay just until three.", back: "\"I understand the timing is awkward, and I'm free until one.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A housemate wants the car three evenings a week; you offered one.",
+          steps: [
+            { front: "Self-Disclosure — they ask why one evening is the limit.", back: "\"I get uneasy not knowing whether it's there when I need it.\"" },
+            { front: "Workable Compromise — they say their course runs three nights.", back: "\"You can have it every Tuesday, booked in advance. That one I can plan around.\"" },
+            { front: "Broken Record — they ask about Thursdays as well, just this term.", back: "\"I know the course is three nights, and Tuesdays are what I can offer.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Your parents want two weeks together in the summer; you offered five days.",
+          steps: [
+            { front: "Self-Disclosure — they ask why you are rationing your own holiday.", back: "\"Two weeks with family and I come back needing a holiday. That's just how I am.\"" },
+            { front: "Workable Compromise — they say the house is booked for a fortnight anyway.", back: "\"I'll come for the first five days, and I'd like us to do the coast trip in those.\"" },
+            { front: "Broken Record — they suggest you stay on for the second weekend.", back: "\"I know the house is yours for the fortnight, and five days is what I'm coming for.\"" },
+          ]
+        },
+      ]
+    },
+  ],
+  integratedmaster: [
+    {
+      name: "The Defusal Run",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
+      description: "A three-step sequence to handle persistent, vague criticism from an authority figure.\n\n• The Integrated Shield — agree with their criticism and repeat your decision to defuse their initial anger\n• Empathic Inquiry — prompt for specific details of their complaint to find the real issue\n• Empathic Inquiry — dig deeper into their logic to force them to state what they actually want\n\nWhy this order: shielding first ensures you do not trigger a defensive counter-argument. Once the critic's emotional wave hits a soft wall, they go quiet, allowing you to use inquiry to find the actual problem. Repeating inquiry reveals what they truly want.\nWhat people do instead: they argue the initial point, which escalates the conflict into a fight about motives.\n\nMindset: absorb the blow, then make them do the work of explaining.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "Your manager drops a draft budget on your desk and sighs: \"This is completely unrealistic.\"",
+          steps: [
+            { front: "The Integrated Shield — the supervisor points to the total cost.", back: "\"You're right, the total cost is higher than we planned, but I want to keep this project scope.\"" },
+            { front: "Empathic Inquiry — they wait for you to explain the numbers.", back: "\"What specific items in the budget look unrealistic to you?\"" },
+            { front: "Empathic Inquiry — they claim the software license costs are far too high.", back: "\"What is it about the license costs that feels too high for this project?\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A senior colleague looks at your project board and mutters: \"This timeline is a disaster.\"",
+          steps: [
+            { front: "The Integrated Shield — they claim you'll never hit the launch date.", back: "\"You could be right, hitting that date will be tight, but I still want to run the full testing phase.\"" },
+            { front: "Empathic Inquiry — they stare at the milestones.", back: "\"Which specific milestones do you feel are most at risk?\"" },
+            { front: "Empathic Inquiry — they say the review phases are too slow.", back: "\"What is it about the speed of our review phases that worries you most?\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A supervisor hands back your slides and says: \"This looks like a high school student made it.\"",
+          steps: [
+            { front: "The Integrated Shield — they claim the layout looks incredibly sloppy.", back: "\"You might be right, the formatting could be cleaner, but I want to keep the current data slides.\"" },
+            { front: "Empathic Inquiry — they throw their hands up.", back: "\"What specifically about the layout looks sloppy to you?\"" },
+            { front: "Empathic Inquiry — they mutter that the color choices are unprofessional.", back: "\"What is it about the colors that feels unprofessional for this client?\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "The Reconciliation Path",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
+      description: "A three-step sequence to use when a partner refuses to let go of a mistake you have already owned.\n\n• The Complete Ownership — own the mistake calmly and clearly with an honest disclosure of regret\n• Empathic Inquiry — prompt for further grievances to empty their emotional ledger\n• The Complete Ownership — own any real issues found and pivot directly to a workable deal\n\nWhy this order: owning the mistake immediately removes their logical argument. When they try to use the error as psychological leverage to keep lecturing you, transitioning to empathic inquiry allows you to maintain your dignity and clear the air.\nWhat people do instead: they keep apologizing and explaining, which invites the critic to continue punishing them.\n\nMindset: a mistake requires correction, not eternal atonement.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "Your supervisor brings back a spreadsheet with a mistake and continues to lecture you after you have corrected it.",
+          steps: [
+            { front: "The Complete Ownership — they point to the transposition error.", back: "\"You're right, I made a transposition error on that line. That was my mistake. I feel terrible about it, so I have updated the sheet.\"" },
+            { front: "Empathic Inquiry — they sigh that you must be checked up on constantly.", back: "\"What am I doing specifically in my checks that makes you feel you have to monitor me?\"" },
+            { front: "The Complete Ownership — they grumble that you rushed the final formatting.", back: "\"I did rush the final formatting. That was sloppy of me, so I'll use the dual-validation sheet next time.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A colleague keeps grumbling about you being ten minutes late to a planning session.",
+          steps: [
+            { front: "The Complete Ownership — they stare at you as you sit down.", back: "\"You're right, I am ten minutes late. That's my fault entirely. I feel awful for making you wait, so let's jump straight into the agenda.\"" },
+            { front: "Empathic Inquiry — they continue to complain that the whole schedule is ruined.", back: "\"What is it about my lateness today that has caused the biggest schedule issue?\"" },
+            { front: "The Complete Ownership — they grumble that they had to shift the client review.", back: "\"I really messed up that alignment. That was very careless of me, so I will draft the review notes myself today to save us time.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A developer keeps bringing up a coding error you made last week in front of the team.",
+          steps: [
+            { front: "The Complete Ownership — they point to the patched line.", back: "\"That was a sloppy mistake on my part. I feel terrible about the downtime, but I am glad we patched it.\"" },
+            { front: "Empathic Inquiry — they complain that the team had to stay late to patch it.", back: "\"What specific parts of our deployment review do you feel I am skipping?\"" },
+            { front: "The Complete Ownership — they sigh that you are always rushing your final code push.", back: "\"I did rush the final push. That was a bad mistake of mine, so I will follow the peer-review protocol for every release now.\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "The Boundaried No",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
+      description: "A three-step sequence to decline an invasive request from a close friend or family member while maintaining the relationship.\n\n• Assertive Disclosure — share your personal feeling or worry honestly to explain your state\n• The Integrated Shield — repeat your boundary calmly to block their persistent guilt-trips\n• Assertive Disclosure — hold your line cleanly against their attempts to make you feel guilty\n\nWhy this order: the feeling explains you rather than judging them, so the refusal lands as personal rather than hostile. Shielding next stops them solving your excuses. What people do instead: they invent excuses, which the other person dismantles one by one, leaving them trapped in a yes they resent.\n\nMindset: protect your boundaries kindly, then offer what you actually can give.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "A close friend asks to borrow your car for the weekend, which makes you feel very anxious.",
+          steps: [
+            { front: "Assertive Disclosure — they explain their own car is broken.", back: "\"I know you're a great driver, but I just feel very worried when I lend my car out, so I don't want to do it.\"" },
+            { front: "The Integrated Shield — they ask if they can have it just for Saturday instead.", back: "\"I understand you're in a jam, but I still don't want to lend my car today.\"" },
+            { front: "Assertive Disclosure — they sigh and complain that friends should help each other in a bind.", back: "\"I care about you, but I feel very anxious about my car, so I am not going to lend it.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You paid for concert tickets weeks ago, your friend has not paid you back, and you want to bring it up.",
+          steps: [
+            { front: "Assertive Disclosure — you have a natural pause during coffee.", back: "\"I've been feeling a bit awkward about bringing this up, but I want you to send me your half of the ticket money.\"" },
+            { front: "The Integrated Shield — they apologize and say they are tight until next month.", back: "\"I understand things are tight, but I still want to settle this payment this week.\"" },
+            { front: "Assertive Disclosure — they sigh that you are being very rigid about a small sum.", back: "\"I value our friendship, but I feel stressed when money is hanging between us, so I want to get it resolved now.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Your parent rings and demands that you come over for a massive family dinner that ruins your free weekend.",
+          steps: [
+            { front: "Assertive Disclosure — they sigh that you are always busy.", back: "\"I've had a really exhausting month and feel totally pooped, so I want to keep this weekend free to rest.\"" },
+            { front: "The Integrated Shield — they complain that everyone else is coming.", back: "\"I understand everyone else is coming, but I don't want to come over this weekend.\"" },
+            { front: "Assertive Disclosure — they sound hurt and claim you don't care about the family.", back: "\"I love you, but I feel completely drained, so I want to stay home.\"" },
+          ]
+        },
+      ]
+    },
+  ],
 };

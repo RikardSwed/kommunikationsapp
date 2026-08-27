@@ -4165,4 +4165,152 @@ const mindsetCollections = {
       ]
     },
   ],
+  assertivecommadv: [
+    {
+      name: "Sounding Rehearsed",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The belief that two deliberate moves in a row will sound like a technique rather than a person. This is the fear that keeps people at one move, where the conversation always outlasts them. The truth is that combinations sound less mechanical, not more: a single move repeated is what sounds like a script, while an agreement followed by a real question sounds like someone paying attention. This deck targets the assumption that spontaneity is more honest than preparation.\n\nMindset: deliberate is not the same as insincere.",
+      inputs: [
+        { q: "If I plan two moves in advance, I'll sound like a machine.", a: "A plan is not a script. You are choosing a direction, not the words.", bundle: 'pro' },
+        { q: "Real people just say what comes to mind in the moment.", a: "What comes to mind in the moment is usually the habit you are trying to break.", bundle: 'pro' },
+        { q: "They'll be able to tell I'm doing something.", a: "They can tell you are calm. That is all most people notice.", bundle: 'pro' },
+        { q: "It feels dishonest to know how I want the conversation to end.", a: "Knowing what you want is the opposite of dishonest. Hiding it is the problem.", bundle: 'pro' },
+        { q: "If I agree and then ask a question, it sounds like a trick.", a: "It sounds like a trick if the agreement is false. Agree with something real.", bundle: 'pro' },
+        { q: "Skilled communication is something you are born with.", a: "Every fluent speaker you admire got there by repetition, not by birth.", bundle: 'pro' },
+        { q: "My friends would laugh if they knew I practised this.", a: "They practise for interviews and dates without calling it practice.", bundle: 'pro' },
+        { q: "If it doesn't come naturally, it isn't really me.", a: "It becomes you the way driving does — awkward, then invisible.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Second Half",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The habit of stopping after the first move. Agreeing and then going quiet, or owning a mistake and waiting to see what happens. The opening half of every combination in this pack gives something away, and leaving it there is worse than never having started: you have conceded a point and taken no position. This deck targets the moment of hesitation between the two halves, where most of the pack is actually won or lost.\n\nMindset: the first half is the cost; the second half is what you bought.",
+      inputs: [
+        { q: "I agreed with them and then couldn't think what to say next.", a: "The second half is decided before you open your mouth, not after.", bundle: 'pro' },
+        { q: "Once I've admitted the mistake, it feels greedy to ask for more.", a: "Asking for the rest is not greed. It is closing the file instead of leaving it open.", bundle: 'pro' },
+        { q: "If I agree and then repeat my request, it sounds like I ignored them.", a: "You did not ignore them. You answered them and then continued.", bundle: 'pro' },
+        { q: "Saying both halves at once feels like too much talking.", a: "Two short sentences is not a speech. It is one turn.", bundle: 'pro' },
+        { q: "I lose my nerve in the gap between the two parts.", a: "Close the gap. Say the second half in the same breath, before you can reconsider.", bundle: 'pro' },
+        { q: "After I've fogged, they usually change the subject and I let it go.", a: "The subject changed because you stopped. Bring your half back in one sentence.", bundle: 'pro' },
+        { q: "I only remember the second move afterwards, in the car.", a: "That is what practice is for. The car version arrives sooner every time.", bundle: 'pro' },
+        { q: "If I've conceded something, pressing on feels unfair.", a: "You conceded a sentence, not the conversation.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Planning What to Say",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The belief that preparing your words is a form of manipulation, and that anything not spontaneous is a trick played on the other person. It is the most common reason people abandon these skills after learning them. Preparation does not decide what the other person will do; it only stops you doing the thing you always regret. This deck separates planning your own conduct from controlling someone else's.\n\nMindset: planning what you will say is not deciding what they will do.",
+      inputs: [
+        { q: "Rehearsing a conversation feels like setting a trap for someone.", a: "A trap hides your intent. Preparation usually makes it clearer.", bundle: 'pro' },
+        { q: "If I plan it, I'm not really listening to them.", a: "You are less anxious, which is the only state in which listening is possible.", bundle: 'pro' },
+        { q: "Manipulative people plan conversations. That's the difference.", a: "Manipulative people plan to get something they hide. Say your want out loud.", bundle: 'pro' },
+        { q: "It feels calculating to know what I'll do if they push back.", a: "Knowing your own limit is not a calculation about them.", bundle: 'pro' },
+        { q: "I should be able to handle it honestly without any preparation.", a: "Unprepared honesty is usually just whatever your temper says first.", bundle: 'pro' },
+        { q: "If I have a plan, I'm treating them as an opponent.", a: "You can have a plan and want a good outcome for both of you.", bundle: 'pro' },
+        { q: "Thinking about the order of what I say feels cold.", a: "Order is courtesy. It is how you avoid saying the hurtful part first.", bundle: 'pro' },
+        { q: "They didn't prepare, so it isn't a fair conversation.", a: "They also did not prepare to be reasonable. You are not taking anything from them.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Giving Ground",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The belief that whoever concedes first has lost. Every combination in this pack opens by giving ground on purpose, which feels backwards to anyone raised on the idea that agreement is surrender. The ground you give is a sentence; what you keep is the want. This deck targets the reflex that treats the first concession as the end of the argument rather than the start of a workable one.\n\nMindset: you can agree with the words and keep the position.",
+      inputs: [
+        { q: "If I agree with any part of it, I've admitted they were right.", a: "You admitted one sentence was true. The rest is still yours.", bundle: 'pro' },
+        { q: "Conceding the first point means I'll have to concede the rest.", a: "Only if you have no second half ready. That is a preparation problem, not a rule.", bundle: 'pro' },
+        { q: "People will walk all over me if I agree so easily.", a: "The people who walk over you do it when you argue and then fold, not when you agree and hold.", bundle: 'pro' },
+        { q: "Agreeing with an unfair criticism feels like lying.", a: "Agree only with the part that is true or possible. That is never a lie.", bundle: 'pro' },
+        { q: "If I don't defend myself, they'll assume the whole thing is true.", a: "They assume it anyway when you defend. Defence looks like guilt to most people.", bundle: 'pro' },
+        { q: "My instinct is to correct the exaggeration first.", a: "Correcting the exaggeration is how you end up arguing about it all evening.", bundle: 'pro' },
+        { q: "Giving ground early leaves me with nothing to bargain with.", a: "Your want was never a bargaining chip. It is not on the table at all.", bundle: 'pro' },
+        { q: "It feels weak to say \"you're probably right\" to someone hostile.", a: "It is the only sentence a hostile person has no answer to.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Changing Move Mid-Talk",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The belief that once you have started with one approach you have to see it through, even as the conversation turns into something else. Combinations make this worse: the plan feels more binding because there was one. In reality the other person changes what they are doing several times in five minutes, and matching them is the skill. This deck targets the stubbornness that keeps people repeating a move that stopped fitting two sentences ago.\n\nMindset: the move follows what they just did, not what you decided earlier.",
+      inputs: [
+        { q: "I planned to hold my line, so I can't suddenly start asking questions.", a: "They stopped pushing and started complaining. Follow the change.", bundle: 'pro' },
+        { q: "Switching approach halfway makes me look inconsistent.", a: "Consistency is about your want, not about your sentences.", bundle: 'pro' },
+        { q: "I had decided to compromise, so I have to see the offer through.", a: "An offer made to a person who has started insulting you can wait.", bundle: 'pro' },
+        { q: "If I change tack they'll think they got to me.", a: "They will think you are listening. That is what changing tack looks like.", bundle: 'pro' },
+        { q: "I keep repeating my request even after they have agreed.", a: "When they say yes, stop. The move is finished.", bundle: 'pro' },
+        { q: "They admitted the real problem and I carried on defending myself.", a: "The moment they name the real thing, the argument is over. Move to what happens next.", bundle: 'pro' },
+        { q: "I started owning a mistake and then found it wasn't mine.", a: "Say so plainly. Half an admission is easier to withdraw than a whole apology.", bundle: 'pro' },
+        { q: "It feels like giving up to abandon the approach I chose.", a: "You are abandoning a method, not a boundary. The boundary has not moved.", bundle: 'pro' },
+      ]
+    },
+  ],
+  integratedmaster: [
+    {
+      name: "Standards",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The standards, rules, and criteria we let others use to judge our choices. This deck targets the belief that you must measure up to external structures of right, wrong, or proper behavior before you can act. It trains the prime assertive right: you are the ultimate judge of all you are and do. If you don't own this area, others will invent rules to run your life. When you accept their criteria, you allow them to manipulate you with rules, reasons, and expectations that serve their interests instead of your own.\n\nMindset: you are the final judge of your own standards.",
+      inputs: [
+        { q: "Other people seem to have a fixed rulebook on how I should behave.", a: "The rules were made by people just like you. They are not laws of physics.", bundle: 'pro' },
+        { q: "If I don't follow their rules, I feel like I'm doing something wrong.", a: "Following their rules means letting them write the script of your life.", bundle: 'pro' },
+        { q: "Someone tells me that what I'm doing isn't the proper way.", a: "Proper only means it is the way they prefer. Your preference is just as valid.", bundle: 'pro' },
+        { q: "I feel anxious when I make a choice that doesn't fit standard procedures.", a: "You are the ultimate judge of your own choices. The anxiety is just old training.", bundle: 'pro' },
+        { q: "Everyone else seems to agree on what is fair and right.", a: "Consensus is not truth. It is often just a shared habit of compliance.", bundle: 'pro' },
+        { q: "I worry that being my own judge will make me selfish or irresponsible.", a: "Being your own judge means taking full responsibility for the consequences of your actions.", bundle: 'pro' },
+        { q: "A supervisor insists that their way is the only correct way.", a: "They can set company rules, but they cannot decide who you are as a person.", bundle: 'pro' },
+        { q: "I feel I need someone else's permission to change my routine.", a: "Waiting for permission is a habit from childhood. You are an adult now.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Justifications",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The constant urge to explain, defend, and offer reasons for your choices. When you feel you must justify your actions, you hand others the power to judge whether your reasons are good enough. This deck trains you to declare your desires plainly without excuses. Your likes, dislikes, and choices do not require parental or commercial approval to be valid. You are the sole judge of what you do. Giving reasons only hands the manipulator target points to dismantle and argue with.\n\nMindset: your desires are their own justification.",
+      inputs: [
+        { q: "If I don't give a reason for saying no, they will think I'm rude.", a: "You do not owe anyone an explanation for having a boundary.", bundle: 'pro' },
+        { q: "I need to think of a good excuse before I can decline an invitation.", a: "Excuses are just targets for the other person to solve and negotiate with.", bundle: 'pro' },
+        { q: "Someone demands to know why I changed my mind about our plans.", a: "You are allowed to change your mind simply because your feelings or preferences evolved.", bundle: 'pro' },
+        { q: "I feel guilty when I declare what I want without proving why I need it.", a: "Your want is a factual state. It does not need a logical argument to exist.", bundle: 'pro' },
+        { q: "If I don't justify my pricing, clients will think I'm ripping them off.", a: "Your rate is your decision. They can accept it or decline, but you don't need to defend it.", bundle: 'pro' },
+        { q: "My parents demand to know why I don't visit them every weekend.", a: "You are an independent adult. Your schedule does not require parental validation.", bundle: 'pro' },
+        { q: "I feel I must explain why I am returning this defective item to the clerk.", a: "\"I don't like it\" is a complete and valid reason for a return.", bundle: 'pro' },
+        { q: "When I am criticized, my immediate reflex is to explain my intentions.", a: "Explaining your intentions is a submissive attempt to get their approval. State the facts instead.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mistakes",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The heavy guilt and shame that follow everyday human errors. If you believe mistakes are moral failures, you allow others to demand psychological atonement and control your future behavior. This deck trains you to own your mistakes calmly as simple, inefficient facts. Admitting a mistake is an act of strength, not a submissive surrender. You are responsible for your errors, not for satisfying critics. We make errors because we are human, not because we are bad.\n\nMindset: errors are simply errors, not sins.",
+      inputs: [
+        { q: "Making a mistake at work means I am incompetent and untrustworthy.", a: "Errors are part of the human condition. They are inefficient, but they do not define your worth.", bundle: 'pro' },
+        { q: "Since I messed up the project timeline, I must work extra overtime for free to make it up.", a: "You are responsible for correcting the error, not for punishing yourself to satisfy them.", bundle: 'pro' },
+        { q: "My coworker keeps bringing up an error I made last week to control my schedule.", a: "They are using your past mistake as psychological leverage. Do not accept the guilt trap.", bundle: 'pro' },
+        { q: "If I admit I made a mistake, my critic will have won the argument.", a: "Admitting an error calmly is the fastest way to end their leverage and close the argument.", bundle: 'pro' },
+        { q: "I feel I must apologize profusely and crawl when I slip up.", a: "Apologizing three times is asking for forgiveness. State the mistake, correct it, and stop.", bundle: 'pro' },
+        { q: "If I make an error in judgment, I shouldn't be allowed to make decisions anymore.", a: "You are allowed to make mistakes. It is how humans learn to make better decisions.", bundle: 'pro' },
+        { q: "I try to hide my mistakes so that others won't think less of me.", a: "Hiding errors creates anxiety. Owning them calmly shows confidence and security.", bundle: 'pro' },
+        { q: "My partner's irritated tone when I forget something makes me feel like a bad person.", a: "Their irritation is their feeling. Your forgetfulness is just an error, not a moral crime.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Approval",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The paralyzing belief that you must have the goodwill of everyone before you can deal with them. The need for constant approval leaves you open to manipulation by anyone who threatens to withdraw their affection or cooperation. This deck trains you to realize that you can cope with people effectively even if they dislike your boundaries. You do not need their goodwill to survive or succeed. True relationships survive limits; compliance only builds a cage.\n\nMindset: you do not need everyone to like you.",
+      inputs: [
+        { q: "I can't function or do business with someone if they are angry or irritated with me.", a: "You do not need their friendship or goodwill to deal with them assertively and effectively.", bundle: 'pro' },
+        { q: "If my supervisor dislikes my boundaries, they will ruin my career.", a: "You can perform your job tasks effectively without needing your boss to be your friend.", bundle: 'pro' },
+        { q: "I feel terrible when a store clerk gets annoyed with my return request.", a: "Their annoyance is their problem. Your goal is the refund, not their smile.", bundle: 'pro' },
+        { q: "If I say no to my friends, our relationship will fall apart.", a: "True relationships survive boundaries. A friendship built on your compliance is a cage.", bundle: 'pro' },
+        { q: "I must always stay in everyone's good graces to keep the system steady.", a: "You are not responsible for keeping everyone else comfortable at the expense of your limits.", bundle: 'pro' },
+        { q: "I feel anxious when a coworker gives me a cold look in the hallway.", a: "Their cold look cannot hurt you. You can still work together without mutual warmth.", bundle: 'pro' },
+        { q: "I worry that being assertive will make people talk behind my back.", a: "People will talk regardless of what you do. Your self-respect is more important than their gossip.", bundle: 'pro' },
+        { q: "I need my family's approval before I can make a major life change.", a: "You are the final judge of your life. Their approval is a nice extra, not a requirement.", bundle: 'pro' },
+      ]
+    },
+  ],
 };

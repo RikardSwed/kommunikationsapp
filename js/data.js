@@ -8694,6 +8694,154 @@ const collections = {
       ]
     },
   ],
+  assertivecommadv: [
+    {
+      name: "Fog, Then Hold",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
+      description: "A combined move that joins the two defences that do opposite jobs: **Fogging** takes the sting out of what the other person said, and **Broken Record** puts your want back on the table before a new argument can start. You agree with whatever is true or probable in their objection and, in the same breath, repeat the thing you want, unchanged. It works because a fogged objection has nothing left to push against: their point was accepted, so the only thing still standing is your request. Each half fails alone — fogging drifts into agreement that sounds like a yes, and Broken Record by itself sounds deaf enough to start an argument about your rudeness. It is hardest when the objection is genuinely reasonable, because agreeing with a good reason feels like conceding the whole thing.\n\nTypical phrases: • \"You may be right, but I still want...\" • \"I understand that, and I want...\" • \"That's probably true. I'd still like...\"\n\nThree variants of the move:\n\n1. Absorbing a policy — accepting the rule and repeating the want anyway: \"I understand that's the policy, but I want a cash refund.\"\n\n2. Absorbing a cost — agreeing that your choice has a price and keeping it: \"You're right, I'll lose the deposit, and I still want to cancel.\"\n\n3. Absorbing a judgment — accepting their opinion of you without trading the want for it: \"I probably do sound difficult, and I still want the delivery today.\"\n\nMindset: agreeing with their sentence costs you nothing as long as your want survives it.",
+      inputs: [
+        { q: "A clerk says returns are only given as store credit because that is company policy.", a: "\"I understand that's your policy, but I want a cash refund.\"", bundle: 'free' },
+        { q: "A phone agent warns that cancelling now means losing the deposit you already paid.", a: "\"You're right, I'll lose the deposit, and I still want to cancel today.\"", bundle: 'free' },
+        { q: "A mechanic insists the new brake pads are top quality and that squealing is normal.", a: "\"They may well be top quality, but I want brakes that don't squeal.\"", bundle: 'free' },
+        { q: "A supervisor says everyone else on the team is picking up an extra shift this week.", a: "\"I'm sure they are, but I'm not available on Saturday.\"", bundle: 'free' },
+        { q: "A salesperson says you will regret not taking this price while it lasts.", a: "\"I might well regret it, but I'm not buying today.\"", bundle: 'free' },
+        { q: "A landlord argues that the deduction from your deposit is standard practice everywhere.", a: "\"That's probably standard, and I still want an itemised list of the damages.\"", bundle: 'pro' },
+        { q: "A colleague says you are being unusually rigid about the meeting time.", a: "\"I probably do sound rigid about it, but I want to keep the eleven o'clock slot.\"", bundle: 'pro' },
+        { q: "A support bot repeats that your issue has to go through the online form first.", a: "\"I understand that's the route, but I want to speak to a person about it now.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Fog, Then Ask",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
+      description: "A combined move for vague criticism: **Fogging** absorbs the emotional charge, and **Negative Inquiry** asks the critic to make the complaint concrete. You concede the part that could be true, then hand the work of explaining straight back, in one turn, before they have decided how offended to be. Fogging removes the fight they expected; the question removes the vagueness they were hiding behind, so they must name something real or stop. Alone, fogging leaves a sour comment hanging in the air, and inquiry without a soft landing in front of it is a fighting sentence. It is hardest in public, where defending your reputation feels more urgent than finding out what they meant.\n\nTypical phrases: • \"You could be right — what specifically...?\" • \"That's probably true. What is it about...?\" • \"I can see why it looks that way. What am I doing that...?\"\n\nThree variants of the move:\n\n1. Opening up a character attack — conceding the impression, then asking what caused it: \"I can see why it looks that way. What am I doing that gives that impression?\"\n\n2. Breaking down an always-or-never — accepting the pattern, then asking for one instance: \"I probably do that more than I notice. When did it last land badly?\"\n\n3. Taking a public jab — absorbing it in front of others and asking anyway: \"That's fair, the slides were rushed. What was missing that you needed?\"\n\nMindset: the sentence that hurts is never the complaint; ask for the complaint.",
+      inputs: [
+        { q: "A coworker sighs that you were unprofessional on the client call.", a: "\"I could have handled it better. What specifically looked unprofessional?\"", bundle: 'free' },
+        { q: "Your partner says you never really listen when they talk about work.", a: "\"I probably do drift off sometimes. What am I doing that makes it look that way?\"", bundle: 'free' },
+        { q: "A manager tells you your attitude this quarter has been a problem.", a: "\"That's worth knowing. What specifically about my attitude is causing concern?\"", bundle: 'free' },
+        { q: "A friend says you have become difficult to make plans with.", a: "\"I have been hard to pin down, that's true. What is it that makes it difficult?\"", bundle: 'free' },
+        { q: "A teammate says your part of the report was weak.", a: "\"You may well be right. What was missing from my section?\"", bundle: 'free' },
+        { q: "A senior colleague says in front of the team that your method is outdated.", a: "\"It probably is dated. What specifically would you do differently?\"", bundle: 'pro' },
+        { q: "A client complains that your team is exhausting to deal with.", a: "\"We can be demanding, I know. What are we doing that makes it exhausting?\"", bundle: 'pro' },
+        { q: "A relative remarks that you have changed, and not for the better.", a: "\"I have changed, that's true. What is it you're seeing that you don't like?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Own It, Then Ask",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
+      description: "A combined move for the moment a real mistake of yours is used as the opening item on a longer list. **Negative Assertion** owns the error plainly, and **Negative Inquiry** invites whatever else they are carrying — the last thing a critic building a case expects. Owning the error removes their evidence; asking for more removes the ammunition supply, because a grievance list read out on request loses most of its force, and what is left is usually one real thing they want. Alone, negative assertion ends the sentence but not the mood: they accept the admission and keep going, because the admission was never the point. Alone, inquiry after a genuine mistake sounds evasive. It is hardest when you are already embarrassed, because the instinct after admitting one fault is to close the subject, not open it wider.\n\nTypical phrases: • \"You're right, I did. What else is on the list?\" • \"That was my mistake. What else am I doing that bothers you?\" • \"I did do that. What else has been building up?\"\n\nThree variants of the move:\n\n1. Owning a slip and inviting the rest — closing one item and opening the file: \"You're right, I forgot to send it. What else has been piling up?\"\n\n2. Owning a habit and asking for the cost — admitting a pattern, then asking what it does to them: \"I do leave things to the last minute. What does that do to your week?\"\n\n3. Owning it in public and asking anyway — taking it in front of others without hiding: \"That was my error, yes. What else in the handover needs fixing?\"\n\nMindset: ask for the whole list while you are calm, not in pieces while you are not.",
+      inputs: [
+        { q: "Your partner points out that you forgot to pay the bill, in a tone that suggests more is coming.", a: "\"You're right, I forgot it. What else has been building up this week?\"", bundle: 'free' },
+        { q: "A manager notes that you missed the deadline for the quarterly goals.", a: "\"I did miss it, that's on me. What else about my planning worries you?\"", bundle: 'free' },
+        { q: "A colleague says you left the shared drive in a mess again.", a: "\"That was sloppy of me. What else in the way I file things gets in your way?\"", bundle: 'free' },
+        { q: "A friend mentions that you cancelled on them twice this month.", a: "\"I did cancel twice, and that's fair. What else have I been doing lately?\"", bundle: 'free' },
+        { q: "A client points out a spelling error on the cover page of your proposal.", a: "\"What a careless mistake. What else in the document should I be checking?\"", bundle: 'free' },
+        { q: "A teammate says your code broke the build and hints that it is a pattern.", a: "\"I broke it, yes. What else about how I push changes causes you trouble?\"", bundle: 'pro' },
+        { q: "Your parent notes that you did not call on their birthday and pauses meaningfully.", a: "\"I forgot, and I'm sorry about that. What else has been bothering you?\"", bundle: 'pro' },
+        { q: "A supervisor lists your late time sheet as one example of something larger.", a: "\"The time sheet was late, that's true. What else belongs on that list?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Fog, Then Tell",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
+      description: "A combined move that meets pressure with agreement and then, instead of a reason, gives a feeling. **Fogging** accepts whatever is fair in what they said, and **Self-Disclosure** states plainly how you feel about the thing being asked of you. It works because a feeling cannot be argued with the way a reason can: once you have conceded their point, a stated feeling is the only thing left on the table, and there is nothing there to attack. They can dislike that you worry about lending your car, but they cannot prove you don't. Alone, fogging invites them to keep pushing, since agreement without a position reads as a soft no. Alone, self-disclosure sounds like an excuse offered up for inspection. It is hardest with people close to you, because the feeling you have to say out loud is usually one you consider unreasonable — and saying it anyway is the whole move.\n\nTypical phrases: • \"You're probably right, and I just...\" • \"That's true, and honestly I...\" • \"I can see that, but I worry when...\"\n\nThree variants of the move:\n\n1. Conceding and confiding — accepting their logic and naming the feeling behind your no: \"You're right, it's only one evening, and I just don't want to go out this week.\"\n\n2. Conceding and admitting a worry — agreeing while naming the thing that makes you uneasy: \"It probably is silly, and I do worry when I lend my car out.\"\n\n3. Conceding and admitting uncertainty — accepting their point and saying you don't know: \"You could be right. I honestly don't know how I'll feel about it in a year.\"\n\nMindset: a feeling is a fact about you, and facts do not need approval.",
+      inputs: [
+        { q: "A colleague asks to borrow your car for the afternoon and says it is only a few hours.", a: "\"It is only a few hours, you're right, and I worry when I lend my car out.\"", bundle: 'free' },
+        { q: "A friend says the party will be small and that you always enjoy it once you are there.", a: "\"I usually do enjoy it, that's true, and I just don't want a crowd this week.\"", bundle: 'free' },
+        { q: "A relative asks why you are not planning to have children yet.", a: "\"You may well be right that it gets harder. I don't know how I'll feel in a few years.\"", bundle: 'free' },
+        { q: "A neighbour says the trees along the fence are dropping leaves into their pool.", a: "\"They do drop a lot, I know, and I really want to keep those trees.\"", bundle: 'free' },
+        { q: "A partner asks why you are so quiet after work again.", a: "\"I have been quiet all week. I'm just worn down by these meetings.\"", bundle: 'free' },
+        { q: "A friend asks you to go in on a business loan together and says the numbers are solid.", a: "\"The numbers do look fine, and I don't want to mix money with our friendship.\"", bundle: 'pro' },
+        { q: "A recruiter presses you on where you see yourself in five years.", a: "\"It's a fair question. I don't know enough about the role yet to answer honestly.\"", bundle: 'pro' },
+        { q: "A date suggests coming up to your flat and says the evening has gone well.", a: "\"It has gone well, and I like you. I don't want to go to bed with anyone tonight.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Tell, Then Offer",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
+      description: "A combined move that turns a refusal into a negotiation without giving up what the refusal protected. **Self-Disclosure** names the feeling or limit behind your no, and **Workable Compromise** puts a concrete alternative in its place. The disclosure tells them the boundary is about you, not about them, which stops the whole thing becoming a fight over whether they deserved better; the offer gives them something to say yes to, so it ends on a decision rather than a wound. Alone, disclosure leaves them with a feeling and no way forward; alone, a compromise looks like haggling and invites a counter-offer back to the original request. It is hardest when the alternative you can genuinely give is much smaller than what they asked for. Offer it anyway: small and real beats generous and resented.\n\nTypical phrases: • \"I don't want to..., but I can...\" • \"I'm not comfortable with..., though how about...\" • \"That's not something I'll do. What I could do is...\"\n\nThree variants of the move:\n\n1. Splitting the task — refusing the whole and offering a part: \"I don't want the whole Saturday, but I can help until lunch.\"\n\n2. Changing the terms — keeping the boundary and moving the conditions: \"I worry about lending the car, but I can drive you there myself.\"\n\n3. Proposing a trade — swapping what you won't do for something you will: \"I don't want to host again, but I'll cook if you have it at yours.\"\n\nMindset: the boundary is not negotiable; almost everything around it is.",
+      inputs: [
+        { q: "A friend asks you to help them move flat for the whole of Saturday.", a: "\"I want to keep most of Saturday free, but I can help you until lunch.\"", bundle: 'free' },
+        { q: "A colleague asks you to take over their entire Thursday shift.", a: "\"I don't want a whole extra shift this week, though I could take the first two hours.\"", bundle: 'free' },
+        { q: "A parent is upset that you will not come over every weekend.", a: "\"I don't want to come every weekend. I do want to call you every Sunday evening.\"", bundle: 'free' },
+        { q: "A neighbour asks you to cut down the trees that shed leaves into their pool.", a: "\"I really want to keep the trees. How about I clear the pool filter every autumn?\"", bundle: 'free' },
+        { q: "A friend asks you for a loan to start their business.", a: "\"I don't want to lend money to friends, but I can introduce you to two investors.\"", bundle: 'free' },
+        { q: "Your manager refuses to let you start late on Wednesdays because of the team meeting.", a: "\"Early Wednesdays are rough for me. Could we move the meeting to Tuesday instead?\"", bundle: 'pro' },
+        { q: "A partner wants you to stay home while you want to take a job.", a: "\"I want to work, and I know it changes things. Let's redo who does what at home.\"", bundle: 'pro' },
+        { q: "A relative asks to stay in your flat for three weeks over the summer.", a: "\"Three weeks is more than I can live with. You're welcome for the first weekend.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  integratedmaster: [
+    {
+      name: "The Integrated Shield",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
+      description: "An advanced defensive skill that integrates Fogging and Broken Record to handle high-pressure commercial traps, persistent authority figures, or invasive sales pitches. It operates like a padded brick wall. First, you agree with whatever is true, probable, or logical in the competitor's claim, which instantly defuses their argument. Then, in the very same breath, you repeat your core demand or boundary. By offering zero resistance to their logic while remaining entirely immovable on your decision, you exhaust their persistence. It is hard when the competitor is highly charismatic or uses complex data to make you feel stupid, triggering your childhood reflex to debate their facts.\n\nTypical phrases: • \"You're probably right, but I still want...\" • \"I understand your system's limit, but I want...\" • \"That makes complete sense, but I'm not interested.\"\n\nThree variants of the move:\n\n1. Pure commercial block — deflecting sales arguments while holding your decision: \"I'm sure your product is excellent, but I am not interested.\"\n2. Bypassing authority pressure — agreeing with their company rules while repeating your demand: \"I know that is your store policy, but I want a cash refund.\"\n3. Defusing nagging — acknowledging their irritation while maintaining your boundary: \"I understand you're annoyed, but I want to keep my evening free.\"\n\nMindset: you can agree with their logic without letting go of your decision.",
+      inputs: [
+        { q: "A subscription representative claims you'll lose your locked-in loyalty rate if you cancel now.", a: "\"I'm sure I'll lose that rate, but I still want to cancel my subscription.\"", bundle: 'free' },
+        { q: "A car mechanic claims that repairing the minor scratch will take three days and cost extra.", a: "\"That might be true, but I want my car delivered by five today.\"", bundle: 'free' },
+        { q: "A supervisor tells you that everyone else is staying late because the team is in a real pinch.", a: "\"I know the team is in a pinch, but I am not available to work overtime tonight.\"", bundle: 'free' },
+        { q: "A merchant insists they can only offer store credit because their computer system is locked.", a: "\"I understand your system is locked, but I still want a full cash refund.\"", bundle: 'free' },
+        { q: "A persistent fundraiser asks if you want to help feed starving children in our city today.", a: "\"I'm sure it's a very worthy cause, but I am not interested in donating today.\"", bundle: 'free' },
+        { q: "A landlord claims that painting the hallway is not their responsibility under the lease terms.", a: "\"You could be right about the terms, but I still want the hallway painted this week.\"", bundle: 'pro' },
+        { q: "A gym clerk tells you that the cancellation form must be signed in person by the manager.", a: "\"I understand the manager needs to sign, but I want my account cancelled today.\"", bundle: 'pro' },
+        { q: "An aggressive software seller claims you are wasting your team's time by not upgrading now.", a: "\"That is certainly possible, but I am still not interested in the upgrade.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Empathic Inquiry",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
+      description: "An advanced collaborative skill that integrates Negative Inquiry with Workable Compromise to dissolve passive-aggressive gridlocks, vague grumbles, and silent sulking in close relationships. It operates like a truth probe. Instead of getting defensive or ignoring a partner's cold shoulder, you actively prompt them to detail exactly what they dislike about your behavior. Once you have exhausted their emotional generalizations and extracted the core issue, you pivot directly into proposing a practical, material alternative. It is hard because our immediate reflex to a partner's irritated tone is either to retreat into cold silence or to launch a counter-attack pointing out their flaws.\n\nTypical phrases: • \"What am I doing specifically that is bothering you?\" • \"What is it about my decision that feels unfair?\" • \"How about if we work out an alternative?\"\n\nThree variants of the move:\n\n1. Dissolving domestic grumbles — asking for specifics before offering a chores split: \"What am I doing that makes you feel unsupported, and can we split the tasks?\"\n2. Uncovering relationship distance — prompting a partner's worries before finding a compromise: \"What is it about my late hours that worries you, and how about if we plan Sunday?\"\n3. Handling work friction — inquiring into a peer's passive resistance to negotiate terms: \"What is it about my schedule that messes up your timeline, and how can we adjust?\"\n\nMindset: look for the factual problem underneath their emotional criticism.",
+      inputs: [
+        { q: "Your spouse sighs and grumbles that you always prioritize your career over the family.", a: "\"What am I doing specifically that makes it look like I don't care about the family?\"", bundle: 'free' },
+        { q: "A close colleague complains that your projects are always a disorganized headache to work on.", a: "\"What is it about my project organization that makes things difficult for you?\"", bundle: 'free' },
+        { q: "Your partner gives you a cold shoulder and mutters that you are incredibly selfish.", a: "\"What am I doing or not doing specifically that makes me look selfish to you?\"", bundle: 'free' },
+        { q: "A roommate grumbles that you have completely given up on keeping the kitchen clean.", a: "\"What is it about how I leave the kitchen that is causing the biggest mess?\"", bundle: 'free' },
+        { q: "An associate complains that your presentation style is far too technical for the team.", a: "\"What specific parts of my presentation felt too difficult to follow?\"", bundle: 'free' },
+        { q: "Your parent sighs on the phone that you are growing completely distant from them.", a: "\"What am I doing specifically that makes it look like I am avoiding you?\"", bundle: 'pro' },
+        { q: "A teammate grumbles that your schedule makes it impossible to collaborate effectively.", a: "\"What specific times are you struggling to reach me, and how can we adjust?\"", bundle: 'pro' },
+        { q: "A neighbor complains that your dog's behavior during the day is totally unacceptable.", a: "\"What specifically is my dog doing that is causing you the most trouble?\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Assertive Disclosure",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
+      description: "An advanced boundary-setting skill that integrates Self-Disclosure and Asserting Wants to express firm personal limits and preferences without giving reasons, excuses, or apologies. It operates like an open window. By calmly declaring your internal feelings or anxieties first, you explain your state rather than judging their request, which keeps the connection warm. Then, you state your decision cleanly, leaving no excuses for the other person to argue with or dismantle. It is hard because our childhood conditioning teaches us that saying no to friends or family without a massive, logical justification is selfish, rude, or cold.\n\nTypical phrases: • \"I feel really anxious about that, so I don't want to...\" • \"I'm just too exhausted today, so I want to stay in.\" • \"I care about you, but I don't want to...\"\n\nThree variants of the move:\n\n1. Protecting personal energy — stating your tired state before refusing plans: \"I'm feeling completely pooped after this week, so I want to stay home tonight.\"\n2. Resisting financial pressure — sharing your worries before declining a loan: \"I get very anxious when I mix money and friendship, so I don't want to lend it.\"\n3. Deflecting romantic speed — expressing your limits while keeping the connection: \"I like you very much, but I don't want to go to bed with you tonight.\"\n\nMindset: your feelings are real facts, and they do not need a logical justification.",
+      inputs: [
+        { q: "A friend asks to borrow your expensive camera, which makes you feel extremely anxious.", a: "\"I know you'll be careful, but I just feel worried when I lend my gear out, so I don't want to do it.\"", bundle: 'free' },
+        { q: "A family member pushes you to attend a massive weekend gathering when you feel completely drained.", a: "\"I've had an incredibly exhausting month and feel totally pooped, so I want to keep this weekend free.\"", bundle: 'free' },
+        { q: "A colleague asks if you want to join them for a risky business investment.", a: "\"I feel very anxious about mixing money with work relationships, so I have decided I don't want to invest.\"", bundle: 'free' },
+        { q: "Your partner demands that you cancel your weekly evening class to stay home with them.", a: "\"I've been feeling quite cramped lately and I want to keep taking this class for my own space.\"", bundle: 'free' },
+        { q: "A date asks you up to their apartment and immediately pushes for physical intimacy.", a: "\"I really like you, but I feel we are moving too fast and I don't want to go to bed tonight.\"", bundle: 'free' },
+        { q: "A relative asks you to host their children for a week when you are struggling with a tight work deadline.", a: "\"I'm feeling very overwhelmed with my current work deadlines, so I don't want to host guests right now.\"", bundle: 'pro' },
+        { q: "A friend asks if they can crash on your sofa for two weeks while their flat is painted.", a: "\"I get very stressed when my living space is crowded, so I don't want to have a long-term guest.\"", bundle: 'pro' },
+        { q: "A neighbor asks you to cut down your beautiful hedge because they want more sunlight.", a: "\"I really love having this green hedge for my privacy, so I don't want to cut it down.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Complete Ownership",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
+      description: "An advanced recovery skill that integrates Negative Assertion, Self-Disclosure, and Workable Compromise to resolve relationship friction caused by your own mistakes without falling into guilt or defensiveness. It operates like a clean slate. First, you strongly and calmly own your mistake as an inefficient human fact, refusing to make excuses. Then, you share your honest feelings of regret or embarrassment to show you are not indifferent. Finally, you transition directly into proposing a practical, material trade-off to correct the error. It is hard because when we slip up, our immediate reflex is either to hide the mistake, offer submissive apologies, or blame external systems to avoid looking incompetent.\n\nTypical phrases: • \"You're right, I completely goofed. I feel terrible about it.\" • \"That was a sloppy mistake on my part, so let's...\" • \"I really messed that up, how about if I...\"\n\nThree variants of the move:\n\n1. Resolving administrative blunders — owning work errors before proposing a catch-up plan: \"I completely missed that deadline. I feel quite embarrassed, so I'll finish it first thing tomorrow.\"\n2. Fixing domestic slips — admitting forgetfulness before offering a trade-off: \"I forgot to buy the milk. That was dumb of me, so I'll drive down to get it right now.\"\n3. Rebuilding client trust — owning executive mistakes before delivering corrections: \"I misspelled your company name on the cover. What a sloppy mistake on my part. I'll reprint it now.\"\n\nMindset: owning an error with dignity is the fastest way to solve it and maintain equality.",
+      inputs: [
+        { q: "You forgot to copy the department head on an urgent email, causing a major communication delay.", a: "\"You're right, I completely missed that. It was very careless of me, so I'll forward it to them right now.\"", bundle: 'free' },
+        { q: "You arrived twenty minutes late to a project meeting with your senior colleagues.", a: "\"I completely lost track of the time. I feel terrible for keeping you waiting, so let's jump straight into the agenda.\"", bundle: 'free' },
+        { q: "Your partner points out you forgot to write down a check in the family ledger again.", a: "\"I did. That was a really dumb thing for me to do again, so I'll sit down and update the entries now.\"", bundle: 'free' },
+        { q: "A client notes that your final proposal had three spelling errors on the budget page.", a: "\"What a sloppy mistake. I feel quite embarrassed about that, so I'll print a corrected copy for you right away.\"", bundle: 'free' },
+        { q: "You left the lab's supply cabinet unlocked overnight, breaking the security protocol.", a: "\"That was extremely careless of my part. I am glad nothing was lost, and I'll make sure to lock it now.\"", bundle: 'free' },
+        { q: "You accidentally deleted a shared folder containing your teammate's draft slides.", a: "\"I really goofed on that folder deletion. I feel awful about the extra work, so I'll stay late to help you rebuild them.\"", bundle: 'pro' },
+        { q: "You realized you gave your friend the wrong directions, causing them to get completely lost.", a: "\"I gave you the wrong street name. That was a stupid mistake of mine, so I'll drive down to meet you at the corner now.\"", bundle: 'pro' },
+        { q: "You missed the morning approval deadline for the logistics team, delaying the shipment.", a: "\"I missed that approval deadline completely. That is my fault, so I'll call the carrier directly to expedite it.\"", bundle: 'pro' },
+      ]
+    },
+  ],
 };
 
 // ─── COLLECTIONS MODE DATA ───────────────────────────────────────────────────
@@ -12282,6 +12430,106 @@ const collectionsModeData = {
         { q: "A colleague mentions they used to be a professional swimmer.", a: "\"A swimmer? How did you get into doing that competitively?\" [Free Information]", bundle: 'pro' },
         { q: "Your partner asks why you seem so quiet during dinner.", a: "\"I'm just really worried about my project update tomorrow.\" [Self-Disclosure]", bundle: 'pro' },
         { q: "A neighbor grumbles that your dog is barking during the day.", a: "\"I understand it's annoying, so I will arrange a dog walker for afternoons.\" [Workable Compromise]", bundle: 'pro' },
+      ]
+    },
+  ],
+  assertivecommadv: [
+    {
+      name: "Hold or Ask",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Choosing between Fog, Then Hold and Fog, Then Ask when someone pushes back at you. Both open the same way, and the second half decides everything.\n\n• Fog, Then Hold — absorb the objection and repeat the want you came in with\n• Fog, Then Ask — absorb the objection and make them say what is actually wrong\n\nThe deciding question: did you walk into this conversation wanting something? If you came with a request and they are grinding away at it, hold. Asking for detail there hands them a fresh topic and an hour of your evening. If you came with nothing and they have simply criticised you, holding is empty — there is no want to repeat — and the useful move is to find out what they mean.\n\nMindset: hold what you came for; ask about what you didn't see coming.",
+      inputs: [
+        { q: "A clerk says the return window closed yesterday and there is nothing to be done.", a: "\"I understand the window closed, and I still want this exchanged.\" [Fog, Then Hold]", bundle: 'pro' },
+        { q: "A colleague mutters that you have been impossible to work with this month.", a: "\"I've been difficult, that's fair. What specifically has been impossible?\" [Fog, Then Ask]", bundle: 'pro' },
+        { q: "A salesperson says nobody turns down this offer and asks what your hesitation is.", a: "\"I'm sure most people take it, and I'm not buying today.\" [Fog, Then Hold]", bundle: 'pro' },
+        { q: "Your manager says your last two weeks have been disappointing, without saying why.", a: "\"They haven't been my best, no. What specifically disappointed you?\" [Fog, Then Ask]", bundle: 'pro' },
+        { q: "A relative says you are being stubborn about the holiday dates.", a: "\"I am being stubborn about it, and I want to travel on the ninth.\" [Fog, Then Hold]", bundle: 'pro' },
+        { q: "A friend says something has felt off between you two lately.", a: "\"It has felt off, I agree. What have I been doing that's part of that?\" [Fog, Then Ask]", bundle: 'pro' },
+        { q: "A support agent explains that the refund has to be approved by another department.", a: "\"That may well be how it works, and I want the refund processed today.\" [Fog, Then Hold]", bundle: 'pro' },
+        { q: "A client says your last presentation did not land with their board.", a: "\"It clearly didn't land, no. What did the board need that wasn't there?\" [Fog, Then Ask]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Own or Absorb",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Choosing between Own It, Then Ask and Fog, Then Ask when a criticism comes with more behind it. Both end by inviting more; the difference is what you concede first.\n\n• Own It, Then Ask — take a real error plainly, then invite whatever else is on the list\n• Fog, Then Ask — concede only what is plausible, then ask for the detail\n\nThe deciding question: did you actually do the thing they are describing? Owning something you did not do is submissive, and it teaches them that the charge sticks whether or not it is true. Fogging a real, factual mistake is worse: it sounds slippery, and every sentence after it is read as evasion.\n\nMindset: own facts, fog opinions, and ask either way.",
+      inputs: [
+        { q: "A coworker points out that you forgot to copy the client on the contract email.", a: "\"I did forget, that's my mistake. What else in the handover is missing?\" [Own It, Then Ask]", bundle: 'pro' },
+        { q: "A coworker says you are far too slow at getting drafts out.", a: "\"I probably am slower than most. What is it that's being held up?\" [Fog, Then Ask]", bundle: 'pro' },
+        { q: "Your partner notes that you left the car unlocked overnight again.", a: "\"I did leave it unlocked. What else have I been letting slide?\" [Own It, Then Ask]", bundle: 'pro' },
+        { q: "A manager says your communication style has been a problem for the team.", a: "\"It could well read badly. What am I doing that causes the problem?\" [Fog, Then Ask]", bundle: 'pro' },
+        { q: "A client points out that the invoice has last quarter's rate on it.", a: "\"That's the wrong rate, yes, my error. What else on the invoice looks off?\" [Own It, Then Ask]", bundle: 'pro' },
+        { q: "A friend says you have been distant since you changed jobs.", a: "\"I have been less around, that's true. What have you been missing?\" [Fog, Then Ask]", bundle: 'pro' },
+        { q: "A teammate notes that you skipped the review step before deploying.", a: "\"I skipped it. That was careless. What else about my process worries you?\" [Own It, Then Ask]", bundle: 'pro' },
+        { q: "A relative says you always put your own plans first at Christmas.", a: "\"I do plan around my own year, that's true. What would you want instead?\" [Fog, Then Ask]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Combined Set",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Choosing among all five combinations in this pack. Every one of them opens by giving ground and closes by taking a position, and the closing half is what you are actually choosing.\n\n• Fog, Then Hold — repeat the want you arrived with\n• Fog, Then Ask — make a vague criticism concrete\n• Own It, Then Ask — take a real mistake and invite the rest\n• Fog, Then Tell — answer pressure with a feeling instead of a reason\n• Tell, Then Offer — name the limit and put a real alternative next to it\n\nThe deciding question: what does this conversation need to end with? A want that survived, a complaint made specific, a mistake closed, a feeling stated, or a deal. Pick the ending first; the opening takes care of itself.\n\nMindset: decide how it should end before you decide how to answer.",
+      inputs: [
+        { q: "A phone agent explains that your contract cannot be cancelled before the term ends.", a: "\"I understand the term runs longer, and I want it cancelled today.\" [Fog, Then Hold]", bundle: 'pro' },
+        { q: "A colleague says the whole team finds your updates confusing.", a: "\"They could well be confusing. What is it people can't follow?\" [Fog, Then Ask]", bundle: 'pro' },
+        { q: "Your partner points out that you forgot the parents' evening, again.", a: "\"I forgot it. That's twice now. What else has been landing on you?\" [Own It, Then Ask]", bundle: 'pro' },
+        { q: "A friend keeps pressing you to come to a big birthday party this weekend.", a: "\"It'll probably be a good night, and I just don't want a crowd right now.\" [Fog, Then Tell]", bundle: 'pro' },
+        { q: "A neighbour asks to park in your space every weekday for a month.", a: "\"I want the space during the week. You're welcome to it at weekends.\" [Tell, Then Offer]", bundle: 'pro' },
+        { q: "A manager tells you that senior staff simply do not leave at five.", a: "\"That may be the culture here, and I'm leaving at five today.\" [Fog, Then Hold]", bundle: 'pro' },
+        { q: "A client asks you to add a whole extra feature at no cost, as a favour.", a: "\"I don't want to work unpaid on this. I can scope it as a small phase two.\" [Tell, Then Offer]", bundle: 'pro' },
+        { q: "A relative says you have got cold since you moved away.", a: "\"I'm around less, that's true. What is it that feels cold from where you sit?\" [Fog, Then Ask]", bundle: 'pro' },
+      ]
+    },
+  ],
+  integratedmaster: [
+    {
+      name: "Deflect & Inquiry",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Choosing between The Integrated Shield and Empathic Inquiry when faced with vague, critical hostility from others.\n\n• The Integrated Shield — absorb empty attacks and hold your boundary to end the drama\n• Empathic Inquiry — dig deeper to extract concrete issues and prompt them to be clear\n\nThe deciding question: is this person throwing empty, manipulative barbs to wear you down, or do they have a real, unexpressed grievance you need to solve? Choosing to inquire into a hostile solicitor's insults only invites further debate, while shielding against a partner's genuine distress stalls the relationship.\n\nMindset: shield against manipulative attacks; inquire into relationship friction.",
+      inputs: [
+        { q: "A colleague snorts: \"You're always so uptight about every little detail of the budget.\"", a: "\"I can understand why you would think that, but I want my budget approved today.\" [The Integrated Shield]", bundle: 'pro' },
+        { q: "A supervisor says: \"Your weekly team updates are totally useless to everyone.\"", a: "\"What specifically is missing from my updates that you need?\" [Empathic Inquiry]", bundle: 'pro' },
+        { q: "Your partner complains: \"You're always so quiet and distant after work.\"", a: "\"What is it about my silence that bothers you?\" [Empathic Inquiry]", bundle: 'pro' },
+        { q: "A door-to-door seller sighs: \"Most responsible people would want to protect their homes.\"", a: "\"That's probably true, but I am still not interested.\" [The Integrated Shield]", bundle: 'pro' },
+        { q: "A client complains: \"Your technical team is just too difficult to deal with.\"", a: "\"What specifically are we doing that makes us difficult?\" [Empathic Inquiry]", bundle: 'pro' },
+        { q: "A rival grumbles: \"You only won that promotion because you got lucky with the board.\"", a: "\"You could be right, luck definitely played a part, but I still want to focus on my new role.\" [The Integrated Shield]", bundle: 'pro' },
+        { q: "A coworker snaps: \"Your style of presenting is completely backward and slow.\"", a: "\"What specifically about my style feels backward?\" [Empathic Inquiry]", bundle: 'pro' },
+        { q: "An aggressive stranger shouts: \"You drive like a total idiot in this lane!\"", a: "\"I'm sure I make mistakes sometimes, but I am staying in this lane.\" [The Integrated Shield]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Own or Agree",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Choosing between The Complete Ownership and Assertive Disclosure when your behavior is criticized.\n\n• The Complete Ownership — own your factual mistakes with dignity and offer a practical compromise\n• Assertive Disclosure — declare your feelings and preferences to establish boundaries without excuses\n\nThe deciding question: did you actually make a factual mistake that you are responsible for, or is the other person exaggerating a normal choice into a failure? Owning something you didn't do is submissive; explaining your personal wants as if they were errors invites them to negotiate your life.\n\nMindset: own your real mistakes; disclose your personal wants.",
+      inputs: [
+        { q: "A coworker notes: \"You forgot to copy the department head on the email.\"", a: "\"You're right, I completely missed that. It was very careless of me, so I'll forward it right now.\" [The Complete Ownership]", bundle: 'pro' },
+        { q: "A coworker says: \"You spend an awful lot of time researching before you start writing.\"", a: "\"I want to feel secure in my data before I write, so I want to keep researching today.\" [Assertive Disclosure]", bundle: 'pro' },
+        { q: "A client notes: \"The final proposal had three spelling errors on the budget page.\"", a: "\"What a sloppy mistake. I feel quite embarrassed, so I'll correct and reprint those pages right away.\" [The Complete Ownership]", bundle: 'pro' },
+        { q: "Your partner complains: \"You bought the expensive brand of coffee again when we're tight.\"", a: "\"I did. That was a dumb thing to do when we're budgeting, so I'll deduct it from my pocket money.\" [The Complete Ownership]", bundle: 'pro' },
+        { q: "Your partner says: \"If you buy that car, it will probably break down in a year.\"", a: "\"I feel very excited about this model and I want to take that risk.\" [Assertive Disclosure]", bundle: 'pro' },
+        { q: "A friend says: \"You changed your mind about going to the concert at the last minute.\"", a: "\"I did change my mind, yes. I'm feeling completely pooped, so I have decided I want to stay home.\" [Assertive Disclosure]", bundle: 'pro' },
+        { q: "A colleague remarks: \"You always seem to defend the junior designer's choices.\"", a: "\"I really value their creative perspective and I want to support their work here.\" [Assertive Disclosure]", bundle: 'pro' },
+        { q: "A manager notes: \"You didn't submit your time sheet before the noon deadline.\"", a: "\"I completely forgot. That's my mistake. I feel awful about the delay, so I'll submit it now.\" [The Complete Ownership]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Masterclass Set",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Choosing among The Integrated Shield, Empathic Inquiry, Assertive Disclosure, and The Complete Ownership to handle advanced conflicts.\n\n• The Integrated Shield — agree with facts while repeating boundaries to block manipulation\n• Empathic Inquiry — prompt detailed criticism to resolve passive gridlock\n• Assertive Disclosure — state feelings and wants to set clean limits\n• The Complete Ownership — own blunders and pivot directly into practical solutions\n\nThe deciding question: what is the nature of the situation? If they are trying to manipulate your decision, shield. If they are sulking or grumbling, inquire. If they push a boundary, disclose. If you made a real mistake, own it.\n\nMindset: select the integrated response that matches the relational moment.",
+      inputs: [
+        { q: "A store clerk claims that returns are not allowed because they would lose their commission.", a: "\"I understand your commission is affected, but I want a refund.\" [The Integrated Shield]", bundle: 'pro' },
+        { q: "A coworker tells you that you are being incredibly difficult about the schedule.", a: "\"What is it about my scheduling requests that feels difficult?\" [Empathic Inquiry]", bundle: 'pro' },
+        { q: "A colleague notes that you left the projector running in the conference room.", a: "\"You're right, I forgot to shut it down. That was very careless of me, so I'll turn it off now.\" [The Complete Ownership]", bundle: 'pro' },
+        { q: "A door-to-door seller sighs: \"You obviously don't want to make things easier for your family.\"", a: "\"I can understand why you would think that, but I am not interested.\" [The Integrated Shield]", bundle: 'pro' },
+        { q: "A friend asks to borrow your laptop for their weekend trip, which makes you anxious.", a: "\"I know you need it, but I get very worried when I lend my gear out, so I don't want to do it.\" [Assertive Disclosure]", bundle: 'pro' },
+        { q: "Your supervisor says: \"Your project report was extremely thin on data.\"", a: "\"What specific data points do you feel are missing from the report?\" [Empathic Inquiry]", bundle: 'pro' },
+        { q: "A teammate snaps: \"You're late with your slides and you've ruined the timeline.\"", a: "\"You're right, my slides are late. I feel terrible for slowing us down, so I'll finish them within the hour.\" [The Complete Ownership]", bundle: 'pro' },
+        { q: "A critic grumbles: \"You'll never get a promotion if you keep saying no to overtime.\"", a: "\"You could be right, it might affect my chances, but I want to keep my evenings for my family.\" [The Integrated Shield]", bundle: 'pro' },
       ]
     },
   ],

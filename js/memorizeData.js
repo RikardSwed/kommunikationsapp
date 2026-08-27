@@ -6910,4 +6910,274 @@ const memorizeCollections = {
       ]
     },
   ],
+  assertivecommadv: [
+    {
+      name: "Core Idea",
+      description: "Five combined moves built from strategies you already know.\n\n• Fog, Then Hold — absorb, then repeat\n• Fog, Then Ask — absorb, then dig\n• Own It, Then Ask — admit, then invite\n• Fog, Then Tell — absorb, then confide\n• Tell, Then Offer — refuse, then trade\n\nGround first, position second.",
+      cards: [
+        { q: "What are the five combinations in this pack?", a: "Fog, Then Hold; Fog, Then Ask; Own It, Then Ask; Fog, Then Tell; and Tell, Then Offer.", bundle: 'free' },
+        { q: "What do all five combinations have in common?", a: "Each opens by giving ground and closes by taking a position.", bundle: 'free' },
+        { q: "Which two packs do these combinations draw on?", a: "Assertive Communication 1 and 2 — the four coping defences and the four social strategies.", bundle: 'free' },
+        { q: "What decides whether a combination belongs in one turn or in a sequence?", a: "Whether the other person speaks in between.", bundle: 'free' },
+        { q: "What is the point of combining moves at all?", a: "A single move rarely survives a conversation that has more than one turn in it.", bundle: 'free' },
+        { q: "Why is the first half of every combination a concession?", a: "Because a person with nothing to push against stops pushing, which is what makes room for the second half.", bundle: 'pro' },
+        { q: "What is the most common failure with these combinations?", a: "Stopping after the first half, which concedes a point and takes no position.", bundle: 'pro' },
+        { q: "What does the source say about tone when combining these moves?", a: "Sarcasm turns any of them into an attack and starts the fight they were built to avoid.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Fog, Then Hold",
+      description: "",
+      cards: [
+        { q: "What two moves make up Fog, Then Hold?", a: "Fogging, then Broken Record.", bundle: 'free' },
+        { q: "What is the core mechanism of Fog, Then Hold?", a: "Agree with what is true in the objection, then repeat the want unchanged.", bundle: 'free' },
+        { q: "When is Fog, Then Hold the right combination?", a: "When you came into the conversation wanting something and they are grinding at it.", bundle: 'free' },
+        { q: "What does fogging alone do wrong in this situation?", a: "It reads as a soft no, so they keep pushing to see if it turns into a yes.", bundle: 'free' },
+        { q: "What does Broken Record alone do wrong?", a: "It sounds deaf, and turns the argument into one about your rudeness.", bundle: 'free' },
+        { q: "What must never change between repetitions?", a: "The want itself. Rephrasing it invites negotiation about the new wording.", bundle: 'pro' },
+        { q: "Why does agreeing with a policy not weaken your request?", a: "Because a policy is a fact about them, not an argument about what you want.", bundle: 'pro' },
+        { q: "How do you know Fog, Then Hold is working?", a: "They run out of angles and either agree, escalate to someone else, or leave.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Fog, Then Ask",
+      description: "",
+      cards: [
+        { q: "What two moves make up Fog, Then Ask?", a: "Fogging, then Negative Inquiry.", bundle: 'free' },
+        { q: "What is the core mechanism of Fog, Then Ask?", a: "Concede what could be true, then ask them to name the concrete behaviour.", bundle: 'free' },
+        { q: "When is Fog, Then Ask the right combination?", a: "When the criticism is vague and you did not come in wanting anything.", bundle: 'free' },
+        { q: "Why does the question need the fog in front of it?", a: "Without it, \"what exactly do you mean\" is a challenge and starts a fight.", bundle: 'free' },
+        { q: "What does fogging alone leave behind?", a: "A sour comment hanging in the air with both of you pretending it was nothing.", bundle: 'free' },
+        { q: "What makes the question a real one rather than a sneer?", a: "A flat tone and a genuine wish to hear the answer. The words alone will not save it.", bundle: 'pro' },
+        { q: "What is the sign that the combination has worked?", a: "The complaint turns from a mood into a specific event or request.", bundle: 'pro' },
+        { q: "Why is this combination hardest in public?", a: "The urge to defend your reputation in front of witnesses drowns out the useful question.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Own It, Then Ask",
+      description: "",
+      cards: [
+        { q: "What two moves make up Own It, Then Ask?", a: "Negative Assertion, then Negative Inquiry.", bundle: 'free' },
+        { q: "What is the core mechanism of Own It, Then Ask?", a: "Own the real error plainly, then invite whatever else is on their list.", bundle: 'free' },
+        { q: "When is Own It, Then Ask the right combination?", a: "When you genuinely made the mistake and it is clearly the opening item.", bundle: 'free' },
+        { q: "Why ask for more after admitting a fault?", a: "A grievance list read out on request loses most of its force.", bundle: 'free' },
+        { q: "What does Negative Assertion alone leave behind?", a: "The admission is accepted and the mood continues, because the admission was not the point.", bundle: 'free' },
+        { q: "Why does inquiry alone sound evasive after a real mistake?", a: "It looks like shopping for other topics rather than answering the one at hand.", bundle: 'pro' },
+        { q: "What is the instinct you have to override?", a: "The urge to close the subject the moment you have admitted one fault.", bundle: 'pro' },
+        { q: "What is the practical gain of emptying the list at once?", a: "One calm hour instead of one item a month for a year.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Fog, Then Tell",
+      description: "",
+      cards: [
+        { q: "What two moves make up Fog, Then Tell?", a: "Fogging, then Self-Disclosure.", bundle: 'free' },
+        { q: "What is the core mechanism of Fog, Then Tell?", a: "Accept what is fair in what they said, then state how you actually feel.", bundle: 'free' },
+        { q: "Why is a feeling stronger than a reason here?", a: "A reason can be solved or argued with. A feeling cannot be disproved.", bundle: 'free' },
+        { q: "When is Fog, Then Tell the right combination?", a: "Under pressure from someone close, where a reason would just be negotiated.", bundle: 'free' },
+        { q: "What does self-disclosure alone risk sounding like?", a: "An excuse offered up for inspection, especially before you acknowledge their point.", bundle: 'free' },
+        { q: "Why is this combination hardest with people close to you?", a: "The feeling you have to say out loud is usually one you consider unreasonable.", bundle: 'pro' },
+        { q: "What does the disclosure have to be?", a: "True, brief, and about you — not a complaint about them in disguise.", bundle: 'pro' },
+        { q: "What happens if you fog and stop?", a: "They read agreement without a position as a maybe, and keep pushing.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Tell, Then Offer",
+      description: "",
+      cards: [
+        { q: "What two moves make up Tell, Then Offer?", a: "Self-Disclosure, then Workable Compromise.", bundle: 'free' },
+        { q: "What is the core mechanism of Tell, Then Offer?", a: "Name the limit and the feeling behind it, then put a concrete alternative next to it.", bundle: 'free' },
+        { q: "What is the offer for?", a: "To give them something to say yes to, so the conversation ends in a decision.", bundle: 'free' },
+        { q: "What is never included in the offer?", a: "The boundary itself. Everything around it is negotiable; it is not.", bundle: 'free' },
+        { q: "What does a compromise offered without the disclosure look like?", a: "Haggling — which invites a counter-offer back towards the original request.", bundle: 'free' },
+        { q: "Why offer a small alternative when it feels almost insulting?", a: "Small and real beats generous and resented, and it keeps the boundary intact.", bundle: 'pro' },
+        { q: "What should you do when the offer is questioned?", a: "Repeat it unchanged. An offer that grows when pushed was never an offer.", bundle: 'pro' },
+        { q: "What tells you this is the right combination rather than a plain no?", a: "There is a real part of the request you would genuinely be willing to meet.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and the choices they train:\n\n• Hold or Ask — repeat the want, or make the criticism concrete\n• Own or Absorb — take a real error, or concede only the plausible part\n• The Combined Set — choosing among all five combinations\n\nEach collection is decided by how the conversation should end, not by how it started.",
+      cards: [
+        { q: "What decides the Hold or Ask fork?", a: "Whether you walked in wanting something. If you did, hold; if not, ask.", bundle: 'pro' },
+        { q: "Why is asking the wrong move when you came in with a request?", a: "It hands them a fresh topic and lets the conversation drift off your want.", bundle: 'pro' },
+        { q: "What decides the Own or Absorb fork?", a: "Whether you actually did the thing they are describing.", bundle: 'pro' },
+        { q: "What is the cost of owning something you did not do?", a: "It is submissive, and it teaches them the charge sticks whether or not it is true.", bundle: 'pro' },
+        { q: "What is the cost of fogging a real, factual mistake?", a: "You sound slippery, and everything you say afterwards is read as evasion.", bundle: 'pro' },
+        { q: "What question organises The Combined Set?", a: "What does this conversation need to end with — a want, a fact, a closed mistake, a feeling, or a deal?", bundle: 'pro' },
+        { q: "What do all three collections have in common?", a: "The opening half is nearly always the same, so the choice is always about the second half.", bundle: 'pro' },
+        { q: "Why are two of the three collections two-way?", a: "Because the two options look alike in the moment, which is exactly what makes the choice worth drilling.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The five sequences in this pack, and the orders they enforce:\n\n• The Long Refusal — Fogging, Broken Record, then Self-Disclosure\n• The Full Concession — Fogging, Self-Disclosure, then Workable Compromise\n• The Grievance Run — Negative Inquiry, Negative Assertion, then Negative Inquiry\n• The Owned Deal — Fogging, Negative Assertion, then Workable Compromise\n• The Held Deal — Self-Disclosure, Workable Compromise, then Broken Record\n\nThese run across several turns, with the other person answering in between.",
+      cards: [
+        { q: "What separates a sequence from a combination in this pack?", a: "In a sequence the other person speaks between the steps; a combination is one turn.", bundle: 'pro' },
+        { q: "What is the order in The Long Refusal?", a: "Fogging, then Broken Record, then Self-Disclosure.", bundle: 'pro' },
+        { q: "Why does the feeling come last in The Long Refusal?", a: "By the third pass they have stopped arguing and started asking why, which is when honesty lands.", bundle: 'pro' },
+        { q: "What is the order in The Full Concession?", a: "Fogging, then Self-Disclosure, then Workable Compromise.", bundle: 'pro' },
+        { q: "What goes wrong if you open with the compromise?", a: "It is read as an opening bid and negotiated back towards the original request.", bundle: 'pro' },
+        { q: "What is the order in The Grievance Run?", a: "Negative Inquiry, then Negative Assertion, then Negative Inquiry again.", bundle: 'pro' },
+        { q: "Why does The Owned Deal fog before admitting anything?", a: "So the exaggeration does not become the argument before the real error is separated out.", bundle: 'pro' },
+        { q: "What does the final Broken Record protect in The Held Deal?", a: "The offer — by keeping it identical when they try to widen it.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenge categories in this pack, representing where combinations are actually tested:\n\n• The Long Haul — people who treat your first no as an opening position\n• Mixed Attacks — a real error wrapped in an exaggeration\n• Close Quarters — partners and family, where the relationship has to survive\n• The Sarcasm Trap — the same words ruined by tone\n• When They Notice — they name the technique out loud\n\nEach one breaks a different half of the combination.",
+      cards: [
+        { q: "What are the five challenge categories in this pack?", a: "The Long Haul, Mixed Attacks, Close Quarters, The Sarcasm Trap, and When They Notice.", bundle: 'pro' },
+        { q: "What goes wrong in The Long Haul?", a: "People answer each new angle with a new reason, and every reason is a target.", bundle: 'pro' },
+        { q: "What is the first task in a Mixed Attack?", a: "Cutting the sentence in two: the factual half and the exaggerated half.", bundle: 'pro' },
+        { q: "Why is denying the whole of a mixed attack a mistake?", a: "You end up defending the exaggeration, and the true part is what they remember.", bundle: 'pro' },
+        { q: "What makes Close Quarters different?", a: "You are not trying to win. The boundary has to hold and the relationship has to survive it.", bundle: 'pro' },
+        { q: "What does sarcasm do to these combinations?", a: "It turns agreement into mockery and inquiry into a trap, starting the fight they prevent.", bundle: 'pro' },
+        { q: "What is the test for sarcasm before you speak?", a: "If you would enjoy saying it, say something else.", bundle: 'pro' },
+        { q: "What is the right answer when someone says you are using a technique?", a: "Agree that you are being deliberate and say why — neither deny it nor explain the method.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "The five limiting beliefs targeted in this pack, all of them about combining rather than about any single move:\n\n• Sounding Rehearsed — deliberate speech must be insincere\n• The Second Half — stopping between the two halves\n• Planning What to Say — preparation is manipulation\n• Giving Ground — whoever concedes first has lost\n• Changing Move Mid-Talk — a chosen approach must be seen through\n\nThe obstacles to each separate move were handled in the earlier packs.",
+      cards: [
+        { q: "Why do these mindsets differ from those in Packs 1 and 2?", a: "The earlier packs treated obstacles to each single move; these are about putting moves together.", bundle: 'pro' },
+        { q: "What is true instead of \"planning is manipulation\"?", a: "Planning what you will say is not deciding what they will do.", bundle: 'pro' },
+        { q: "Where is a combination most often lost?", a: "In the gap between the two halves, where nerve fails and the second half is never said.", bundle: 'pro' },
+        { q: "What is the cure for stopping after the first half?", a: "Deciding the second half before you open your mouth, and saying it in the same breath.", bundle: 'pro' },
+        { q: "What is given away by the opening concession?", a: "A sentence — never the want, and never the boundary.", bundle: 'pro' },
+        { q: "Why does a repeated single move sound more mechanical than a combination?", a: "Because repetition is what a script sounds like; agreement followed by a real question sounds like attention.", bundle: 'pro' },
+        { q: "When should you abandon the approach you planned?", a: "When the other person changes what they are doing — the move follows them, not your earlier decision.", bundle: 'pro' },
+        { q: "What is the answer to \"if it doesn't come naturally, it isn't really me\"?", a: "It becomes you the way driving does: awkward, then invisible.", bundle: 'pro' },
+      ]
+    },
+  ],
+  integratedmaster: [
+    {
+      name: "Core Idea",
+      description: "Four advanced integrated assertive skills to handle high-pressure commercial, authority, and equal disputes.\n\n• The Integrated Shield — persistent boundaries\n• Empathic Inquiry — resolving gridlock\n• Assertive Disclosure — clean limits\n• The Complete Ownership — guilt-free recovery\n\nThese integrated skills keep you sovereign.",
+      cards: [
+        { q: "What are the four strategies in this pack?", a: "The Integrated Shield, Empathic Inquiry, Assertive Disclosure, and The Complete Ownership.", bundle: 'free' },
+        { q: "What is the prime assertive right from which all others derive?", a: "The right to be the ultimate judge of your own behavior, thoughts, and emotions.", bundle: 'free' },
+        { q: "What separates this masterclass pack from the first two packs?", a: "It integrates defensive criticism-blocking and social boundary-setting into advanced compound maneuvers.", bundle: 'free' },
+        { q: "What decides which strategy to use?", a: "The relational task: blocking manipulation (Shield), resolving passive sulking (Inquiry), setting boundaries (Disclosure), or fixing mistakes (Ownership).", bundle: 'free' },
+        { q: "What is the main goal of integrating these skills?", a: "Moving fluidly between connection and boundary enforcement without getting anxious or defensive.", bundle: 'free' },
+        { q: "Why is \"Workable Compromise\" integrated directly into masterclass moves?", a: "Because advanced assertiveness uses material bargains to maintain cooperative, equal relationships.", bundle: 'pro' },
+        { q: "What do all four integrated strategies have in common?", a: "They combine feelings, facts, and boundaries into single-turn responses.", bundle: 'pro' },
+        { q: "Who wrote the source text these integrated concepts are based on?", a: "Manuel J. Smith, Ph.D. (1975).", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Integrated Shield",
+      description: "",
+      cards: [
+        { q: "What is the core mechanism of The Integrated Shield?", a: "Agreeing with whatever is true, probable, or logical in a criticism while repeating your boundary.", bundle: 'free' },
+        { q: "What two base skills are combined in The Integrated Shield?", a: "Fogging and Broken Record.", bundle: 'free' },
+        { q: "Why does The Integrated Shield work against persistent manipulators?", a: "It offers no hard striking surface for their arguments while keeping your decision immovable.", bundle: 'free' },
+        { q: "What trap does The Integrated Shield help you avoid?", a: "Getting drawn into logical debates or trying to disprove their company rules.", bundle: 'free' },
+        { q: "What tone of voice is required for The Integrated Shield?", a: "A low-key, relaxed, and completely unflappable voice.", bundle: 'free' },
+        { q: "When is The Integrated Shield most useful?", a: "In high-pressure commercial, bureaucratic, or formal authority disputes.", bundle: 'pro' },
+        { q: "How does The Integrated Shield handle \"store policies\"?", a: "By agreeing that the policy exists, and repeating your specific demand anyway.", bundle: 'pro' },
+        { q: "What habit does The Integrated Shield break?", a: "The childish habit of defending your choices when someone gives you a logical reason to comply.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Empathic Inquiry",
+      description: "",
+      cards: [
+        { q: "What is the core mechanism of Empathic Inquiry?", a: "Actively prompting specific criticism about your behavior and pivoting directly to a compromise.", bundle: 'free' },
+        { q: "What two base skills are combined in Empathic Inquiry?", a: "Negative Inquiry and Workable Compromise.", bundle: 'free' },
+        { q: "Why is Empathic Inquiry useful in close relationships?", a: "It forces a passive-aggressive or sulking partner to state their concrete grievances so you can negotiate.", bundle: 'free' },
+        { q: "What trap does Empathic Inquiry help you avoid?", a: "Responding to a partner's cold shoulder with defensive anger or silent withdrawal.", bundle: 'free' },
+        { q: "What is the difference between emotional nagging and a workable problem?", a: "Nagging uses vague right-and-wrong judgments; a workable problem is a concrete, negotiable conflict.", bundle: 'free' },
+        { q: "What is the optimal end result of Empathic Inquiry?", a: "Your partner discards their right-and-wrong manipulation and states their actual desires.", bundle: 'pro' },
+        { q: "How does Empathic Inquiry help you emotionally?", a: "It desensitizes you to your partner's irritated tone so you can listen to their underlying issue.", bundle: 'pro' },
+        { q: "When should you use Empathic Inquiry with colleagues?", a: "To resolve passive resistance to your schedule or project timelines.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Assertive Disclosure",
+      description: "",
+      cards: [
+        { q: "What is the core mechanism of Assertive Disclosure?", a: "Sharing your personal, non-defensive feelings or anxieties first, then declaring your decision cleanly without excuses.", bundle: 'free' },
+        { q: "What two base skills are combined in Assertive Disclosure?", a: "Self-Disclosure and Asserting Wants.", bundle: 'free' },
+        { q: "Why does Assertive Disclosure prevent manipulation?", a: "It explains your state rather than judging their request, leaving no excuses for them to argue with.", bundle: 'free' },
+        { q: "What childhood conditioning does Assertive Disclosure dismantle?", a: "The belief that saying no to family or close friends without a massive logical reason is selfish or rude.", bundle: 'free' },
+        { q: "How does Assertive Disclosure keep a close relationship warm?", a: "Honest vulnerability builds intimacy and makes your boundary feel personal rather than hostile.", bundle: 'free' },
+        { q: "Why are \"reasons and excuses\" a trap in Assertive Disclosure?", a: "Every excuse you give is a target for the other person to solve and negotiate with.", bundle: 'pro' },
+        { q: "When is Assertive Disclosure essential in dating?", a: "To establish physical boundaries under romantic pressure without losing the connection.", bundle: 'pro' },
+        { q: "How does Assertive Disclosure protect your personal energy?", a: "By allowing you to reject exhausting social plans simply because you feel drained.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Complete Ownership",
+      description: "",
+      cards: [
+        { q: "What is the core mechanism of The Complete Ownership?", a: "Owning your real mistakes with dignity, sharing your honest embarrassment, and proposing a compromise.", bundle: 'free' },
+        { q: "What three base skills are combined in The Complete Ownership?", a: "Negative Assertion, Self-Disclosure, and Workable Compromise.", bundle: 'free' },
+        { q: "Why does The Complete Ownership defuse a critic's anger?", a: "It treats mistakes as simple human facts and immediately redirects the conversation to solutions.", bundle: 'free' },
+        { q: "What childish belief does The Complete Ownership dismantle?", a: "That making an error is a moral failure that requires psychological atonement or crawling.", bundle: 'free' },
+        { q: "What is the difference between Complete Ownership and a submissive apology?", a: "Complete Ownership owns the fact of the mistake and offers a deal; apologies plead for forgiveness.", bundle: 'free' },
+        { q: "What is the optimal tone for The Complete Ownership?", a: "Factual, straightforward, and completely free of visceral squirming.", bundle: 'pro' },
+        { q: "What is the danger of denying or hiding a real mistake?", a: "It escalates the conflict into a character fight and builds resentment.", bundle: 'pro' },
+        { q: "How does The Complete Ownership protect your credibility?", a: "Owning mistakes calmly shows confidence, security, and a focus on practical execution.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• Deflect & Inquiry — choosing between The Integrated Shield and Empathic Inquiry\n• Own or Agree — choosing between The Complete Ownership and Assertive Disclosure\n• The Masterclass Set — choosing among all four integrated strategies to handle advanced conflicts\n\nOne question decides nearly all of it: what did the other person just do?",
+      cards: [
+        { q: "What is the primary purpose of the Collections mode?", a: "It trains the quick recognition and selection of the correct integrated masterclass defense.", bundle: 'pro' },
+        { q: "What does Deflect & Inquiry make you choose between?", a: "Defusing an empty, manipulative attack (Shield) vs. extracting a real relationship complaint (Inquiry).", bundle: 'pro' },
+        { q: "What is the danger of using The Integrated Shield when Empathic Inquiry is required?", a: "You sound evasive and stall a solvable relationship grievance behind a wall of agreements.", bundle: 'pro' },
+        { q: "What is the danger of using The Complete Ownership when Assertive Disclosure is required?", a: "You submissively own a mistake you didn't make, handing them control over your schedule.", bundle: 'pro' },
+        { q: "Why does the Deflect & Inquiry collection represent a genuine fork?", a: "Because choosing the wrong move either invites further debate with a troll or freezes out a partner.", bundle: 'pro' },
+        { q: "How many strategies are represented in The Masterclass Set?", a: "All four strategies in this pack: Shield, Inquiry, Disclosure, and Ownership.", bundle: 'pro' },
+        { q: "Why is a two-strategy collection allowed?", a: "Because it allows you to practice a sharp, binary decision where both moves look plausible in the moment.", bundle: 'pro' },
+        { q: "What is the deciding factor in the Own or Agree collection?", a: "Whether you actually made a factual error that you are responsible for.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one insists on:\n\n• The Defusal Run — The Integrated Shield, then Empathic Inquiry twice\n• The Reconciliation Path — The Complete Ownership, then Empathic Inquiry, then The Complete Ownership\n• The Boundaried No — Assertive Disclosure, then The Integrated Shield, then Assertive Disclosure\n\nIn each sequence, the order does the work of defusing advanced criticism.",
+      cards: [
+        { q: "What is the specific order of moves in The Defusal Run?", a: "The Integrated Shield, then Empathic Inquiry, then Empathic Inquiry again.", bundle: 'pro' },
+        { q: "Why does The Integrated Shield come first in The Defusal Run?", a: "To absorb the emotional strike so the critic quietens down before you ask for details.", bundle: 'pro' },
+        { q: "What is the specific order of moves in The Reconciliation Path?", a: "The Complete Ownership, then Empathic Inquiry, then The Complete Ownership again.", bundle: 'pro' },
+        { q: "What problem does The Reconciliation Path solve?", a: "It defuses a partner who refuses to let go of an error you have already owned.", bundle: 'pro' },
+        { q: "What is the specific order of moves in The Boundaried No?", a: "Assertive Disclosure, then The Integrated Shield, then Assertive Disclosure again.", bundle: 'pro' },
+        { q: "Why does Assertive Disclosure come before The Integrated Shield in a family boundary dispute?", a: "It explains your feeling first so the refusal lands gently, before you hold your line under pressure.", bundle: 'pro' },
+        { q: "What happens if you put the compromise step first in a boundary dispute?", a: "You pre-emptively surrender your boundary before establishing your position.", bundle: 'pro' },
+        { q: "Why do sequences in this pack contain at least three steps?", a: "To train the realistic flow of an intense conversation where things must be worked through.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenge categories in this pack, representing the advanced areas you meet:\n\n• Handling Authority — advanced boss or expert pressure\n• Commercial Pressure — persistent sales pitches and evasive clerks\n• Flattery & Compliments — positive manipulation and insincere praise\n• Nagging & Testing — emotional guilt-trips and boundary trials\n• Modern Evasions — gig workers, support bots, and digital disputes\n\nEach category has its own way of testing your integrated boundaries.",
+      cards: [
+        { q: "What are the five challenge categories in this pack?", a: "Handling Authority, Commercial Pressure, Flattery & Compliments, Nagging & Testing, and Modern Evasions.", bundle: 'pro' },
+        { q: "Why is Handling Authority a distinct challenge?", a: "Because subordinates tend to use submissive excuses or passive silence when bosses criticize.", bundle: 'pro' },
+        { q: "How does Flattery & Compliments manipulate your behavior?", a: "It induces a feeling of obligation, making it difficult to say no to their subsequent request.", bundle: 'pro' },
+        { q: "What is the main goal in Nagging & Testing?", a: "Holding your boundary calmly without getting drawn into emotional arguments or shouting.", bundle: 'pro' },
+        { q: "What is the core issue in Modern Evasions?", a: "Digital systems, bots, and workers passing the buck to make you solve their technical problems.", bundle: 'pro' },
+        { q: "What goes wrong in Commercial Pressure?", a: "Customers feel forced to give excuses, which salespeople easily dismantle to make a sale.", bundle: 'pro' },
+        { q: "Why is Modern Evasions updated from \"Supermarket Evasions\"?", a: "To apply the same core assertive skills to today's digital, gig-economy customer service loops.", bundle: 'pro' },
+        { q: "Which strategy is most useful in Commercial Pressure?", a: "The Integrated Shield — repeating your decision calmly to block their persistent pitch.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "The four limiting mindsets targeted in this pack, and what is true instead:\n\n• Standards — the limiting belief that you must follow external criteria of right and wrong\n• Justifications — the urge to explain, defend, and offer reasons for your choices\n• Mistakes — the heavy guilt and shame that follow everyday human errors\n• Approval — the paralyzing belief that you must have the goodwill of everyone\n\nThe expectations we use to control each other are actually cages.",
+      cards: [
+        { q: "What are the four mindset decks in this pack?", a: "Standards, Justifications, Mistakes, and Approval.", bundle: 'pro' },
+        { q: "What is the limiting belief in Standards?", a: "That you must measure up to someone else's criteria of right and proper before you can act.", bundle: 'pro' },
+        { q: "What is the limiting belief in Justifications?", a: "That you must explain your reasons to prove your choices are correct and responsible.", bundle: 'pro' },
+        { q: "What is the reset for the Mistakes mindset?", a: "Errors are simply errors. They are inefficient, but they do not require emotional atonement.", bundle: 'pro' },
+        { q: "What is the reset for the Approval mindset?", a: "You can do business and deal with people assertively even if they do not like you or your boundaries.", bundle: 'pro' },
+        { q: "What is the core truth of the Standards mindset?", a: "You have the ultimate right to judge your own behavior, thoughts, and emotions.", bundle: 'pro' },
+        { q: "What do all four limiting mindsets have in common?", a: "They rely on learned childhood anxiety, ignorance, and guilt to let others control you.", bundle: 'pro' },
+        { q: "Why does the Mistakes mindset target the Complete Ownership skill?", a: "It allows you to own mistakes as simple human facts without feeling guilty or defensive.", bundle: 'pro' },
+      ]
+    },
+  ],
 };

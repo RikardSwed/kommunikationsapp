@@ -705,6 +705,8 @@ applyInputCounterVisibility();
     responsivehumour: { label: 'Responsive Humour', minLevel: 'pro' },
     assertivecomm1: { label: 'Assertive Communication 1 — Coping with Criticism', minLevel: 'freemium' },
     assertivecomm2: { label: 'Assertive Communication 2 — Social & Equal Connections', minLevel: 'extended' },
+    assertivecommadv: { label: 'Assertive Communication — Advanced', minLevel: 'complete' },
+    integratedmaster: { label: 'The Integrated Masterclass', minLevel: 'complete' },
   };
 
   // ── PROGRAM_CONFIG (v1.26.81) ─────────────────────────────────────────
@@ -2839,6 +2841,34 @@ const BUNDLE_DEFS = {
     },
   ],
   assertivecomm2: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  assertivecommadv: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  integratedmaster: [
     {
       id: 'free',
       tier: 'free',

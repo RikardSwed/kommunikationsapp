@@ -4801,4 +4801,168 @@ const challengesCollections = {
       ]
     },
   ],
+  assertivecommadv: [
+    {
+      name: "The Long Haul",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "People who treat your first no as an opening position and simply keep going — sellers, negotiators, and anyone who has learned that persistence usually works.\n\n• Fog, Then Hold — absorb each new angle and repeat the same want\n• Fog, Then Tell — answer the \"but why\" round with a feeling instead of a reason\n• Tell, Then Offer — end it with a real alternative when there is one worth giving\n\nWhat goes wrong: people answer each new argument with a new reason, which turns the conversation into a debate they can lose. Every reason you give is a target, and a determined pusher will work through all of them.\n\nMindset: they only need one of your reasons to fail; they cannot make your want disappear.",
+      inputs: [
+        { q: "A gym adviser says the joining fee is waived only if you sign today.", a: "\"That's a real saving, and I'm not signing today.\" [Fog, Then Hold]", bundle: 'pro' },
+        { q: "A charity caller says twelve pounds a month is less than two coffees.", a: "\"It is a small amount, you're right, and I don't want to sign up on a call.\" [Fog, Then Hold]", bundle: 'pro' },
+        { q: "A recruiter has called four times about a role you already turned down.", a: "\"It does look good on paper, and honestly I don't want to move this year.\" [Fog, Then Tell]", bundle: 'pro' },
+        { q: "A contractor keeps returning to the bigger renovation you said no to.", a: "\"The full job would be better value, and I want just the roof done.\" [Fog, Then Hold]", bundle: 'pro' },
+        { q: "A friend asks for the fifth time whether you have reconsidered the trip.", a: "\"I know you'd like me there. I don't want to travel in August.\" [Fog, Then Tell]", bundle: 'pro' },
+        { q: "A supplier insists a partial delivery is the best anyone can do this month.", a: "\"The shortage is real, I'm sure, and I want the full order this month.\" [Fog, Then Hold]", bundle: 'pro' },
+        { q: "A neighbour keeps asking to use your garage for their restoration project.", a: "\"I don't want the garage occupied all winter. You can use the drive at weekends.\" [Tell, Then Offer]", bundle: 'pro' },
+        { q: "A colleague has asked three times if you will swap your leave week.", a: "\"I understand it's the only week that works for you, and I'm keeping mine.\" [Fog, Then Hold]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mixed Attacks",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Criticism that arrives as one lump: a real mistake of yours wrapped in an exaggeration about who you are. Answer the whole thing and you defend the exaggeration; answer none of it and you look evasive.\n\n• Own It, Then Ask — take the factual half and ask what else is in there\n• Fog, Then Ask — when the factual half turns out not to be yours\n• Tell, Then Offer — when what they want next is a fix, not an apology\n\nWhat goes wrong: people hear \"you always\" and deny everything, including the true part. The true part is then the only thing the other person remembers.\n\nMindset: cut the sentence in two before you answer either half.",
+      inputs: [
+        { q: "A coworker says your laziness cost the team the deadline, and you did send the file late.", a: "\"The file was two days late, that's mine. What else got held up by it?\" [Own It, Then Ask]", bundle: 'pro' },
+        { q: "Your manager says nobody with your attitude gets promoted, after you missed one meeting.", a: "\"I missed Tuesday and I should have said so. What else is shaping this?\" [Own It, Then Ask]", bundle: 'pro' },
+        { q: "A partner says you never think of anyone but yourself, after you booked a trip alone.", a: "\"I booked it without asking you, that's true. What else has felt one-sided?\" [Own It, Then Ask]", bundle: 'pro' },
+        { q: "A client says your team is unreliable, though the delay was their own supplier's.", a: "\"Delays are miserable, I know. What specifically did we get wrong on our side?\" [Fog, Then Ask]", bundle: 'pro' },
+        { q: "A relative says you have no respect for the family, because you left early at Easter.", a: "\"I did leave early. What else has felt disrespectful to you lately?\" [Own It, Then Ask]", bundle: 'pro' },
+        { q: "A teammate says you always cut people off, referring to one heated meeting.", a: "\"I probably do interrupt when I'm keen. What happened on Thursday from your side?\" [Fog, Then Ask]", bundle: 'pro' },
+        { q: "A supervisor says your sloppiness is a pattern, and one report did have errors.", a: "\"That report had three errors and they were mine. I'll re-check the quarter's set by Friday.\" [Tell, Then Offer]", bundle: 'pro' },
+        { q: "A friend says you have never once been there for them, after you missed one dinner.", a: "\"I missed the dinner and I didn't call. What else have I not shown up for?\" [Own It, Then Ask]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Close Quarters",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Partners, parents, and the friends you will still have in ten years. The boundary has to hold and the relationship has to survive it, which rules out both winning and folding.\n\n• Fog, Then Tell — replace the reason they can argue with the feeling they cannot\n• Tell, Then Offer — protect the limit and hand back something real\n• Own It, Then Ask — clear the backlog before it becomes the argument\n\nWhat goes wrong: people either fold to keep the peace and resent it for a month, or hold the line so cleanly that they win the exchange and lose the evening.\n\nMindset: you are not trying to win; you are trying to still be here afterwards.",
+      inputs: [
+        { q: "Your mother says a good child would come home more often than you do.", a: "\"I could come more, that's true. I come back drained and I need my weekends.\" [Fog, Then Tell]", bundle: 'pro' },
+        { q: "Your partner wants to spend every holiday with their family.", a: "\"I don't want both weeks there. Let's do one week with them and one just us.\" [Tell, Then Offer]", bundle: 'pro' },
+        { q: "A sibling says you have left them to handle your parents alone.", a: "\"You have done more than me this year. What has landed on you that I don't see?\" [Own It, Then Ask]", bundle: 'pro' },
+        { q: "Your partner asks why you have been short with them all week.", a: "\"I have been short, you're right. Work is grinding me down and it's leaking out.\" [Fog, Then Tell]", bundle: 'pro' },
+        { q: "A close friend wants to move in with you for a few months between flats.", a: "\"I don't want a flatmate again. You're welcome on the sofa for two weeks.\" [Tell, Then Offer]", bundle: 'pro' },
+        { q: "Your father says you never ask for his advice any more.", a: "\"I ask less than I used to, that's fair. What has that felt like from your side?\" [Fog, Then Ask]", bundle: 'pro' },
+        { q: "Your partner says the two of you never do anything spontaneous because of you.", a: "\"I do plan everything. I get anxious with open days and I'd rather admit it.\" [Fog, Then Tell]", bundle: 'pro' },
+        { q: "A friend says you forgot their birthday for the second year running.", a: "\"I forgot it again. That's twice. What else have I been missing?\" [Own It, Then Ask]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Sarcasm Trap",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Every combination in this pack can be delivered with an edge, and the edge turns each one into an insult. Agreement said flatly is fogging; agreement said sweetly is mockery. A question asked plainly is inquiry; the same question with a lift at the end is a trap. The source warns about this directly: sarcasm added to these moves starts the fight they were built to avoid.\n\n• Fog, Then Ask — the question has to be a real one, or it is a sneer\n• Own It, Then Ask — the admission has to be flat, or it is a performance\n• Fog, Then Hold — the agreement has to be meant, or it is contempt\n\nWhat goes wrong: people use the words correctly and the tone destroys them, then conclude the technique does not work.\n\nMindset: if you would enjoy saying it, say something else.",
+      inputs: [
+        { q: "A colleague repeats a criticism you have already accepted twice, and you want to sigh.", a: "\"You're right, I did miss it. What else is still open on that job?\" [Own It, Then Ask]", bundle: 'pro' },
+        { q: "Your partner says something unfair and you can feel a sweet, poisonous agreement forming.", a: "\"That's probably how it looked. What is it I did that made it look that way?\" [Fog, Then Ask]", bundle: 'pro' },
+        { q: "A manager states an obvious point slowly, as if to a child.", a: "\"That's a fair point, and I still want the deadline moved to the ninth.\" [Fog, Then Hold]", bundle: 'pro' },
+        { q: "A relative gives you advice they are plainly not qualified to give.", a: "\"You could be right. What is it you're seeing that worries you?\" [Fog, Then Ask]", bundle: 'pro' },
+        { q: "A coworker takes credit for a fix and then criticises your part of it.", a: "\"My half did need reworking. What still isn't right with it?\" [Own It, Then Ask]", bundle: 'pro' },
+        { q: "A salesperson implies you cannot afford the better model.", a: "\"It probably is the better machine, and I want the basic one.\" [Fog, Then Hold]", bundle: 'pro' },
+        { q: "A friend brings up an old mistake of yours in front of other people.", a: "\"I did do that, yes. What made it come to mind tonight?\" [Own It, Then Ask]", bundle: 'pro' },
+        { q: "A client explains your own field back to you, incorrectly.", a: "\"That's one way it's often described. What outcome are you actually after?\" [Fog, Then Ask]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "When They Notice",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Sooner or later somebody says it: are you using some kind of technique on me? They are right, and the answer that works is not a denial. Deny it and you have lied about the one thing they can plainly see; explain it and you have started a seminar instead of a conversation.\n\n• Fog, Then Tell — agree that you are being deliberate and say why\n• Own It, Then Ask — own the clumsiness if it landed badly, then ask\n• Tell, Then Offer — name what you want from the conversation and offer a way to have it\n\nWhat goes wrong: people either deny it, which reads as evasion, or over-explain the method, which makes the other person feel handled twice.\n\nMindset: being deliberate about how you speak is not a thing to be caught at.",
+      inputs: [
+        { q: "Your partner says you sound like you have been reading a book about arguing.", a: "\"I have, actually. I'm trying not to blow up at you and this is me trying.\" [Fog, Then Tell]", bundle: 'pro' },
+        { q: "A colleague says you keep repeating yourself like a robot.", a: "\"I am repeating myself, that's true. I don't want to keep re-arguing the same point.\" [Fog, Then Tell]", bundle: 'pro' },
+        { q: "A friend says your calm agreement is somehow more annoying than a fight.", a: "\"It probably is annoying. What would you rather I did when we disagree?\" [Fog, Then Ask]", bundle: 'pro' },
+        { q: "A relative says you sound rehearsed and it feels cold.", a: "\"It came out stiff, that's fair. What would feel less cold to you?\" [Own It, Then Ask]", bundle: 'pro' },
+        { q: "A manager says your questions feel like a tactic to avoid feedback.", a: "\"They came out badly. What is it you want me to hear and I haven't?\" [Own It, Then Ask]", bundle: 'pro' },
+        { q: "Your partner asks whether you are managing them rather than talking to them.", a: "\"I am being careful, yes. I'd rather be careful than say the thing I'd regret.\" [Fog, Then Tell]", bundle: 'pro' },
+        { q: "A friend says you never just react like a normal person any more.", a: "\"I've got slower to react, that's true. I'm trying to stop snapping at people.\" [Fog, Then Tell]", bundle: 'pro' },
+        { q: "A coworker says they can tell you are steering the meeting.", a: "\"I want a decision today rather than another round. Shall we take the two options first?\" [Tell, Then Offer]", bundle: 'pro' },
+      ]
+    },
+  ],
+  integratedmaster: [
+    {
+      name: "Handling Authority",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Dealing with critical supervisors, inspectors, or experts who use their position to make you feel anxious, ignorant, or guilty.\n\n• The Integrated Shield — absorb their logical or company-linked pressure without letting go of your decision\n• The Complete Ownership — own real work mistakes calmly to eliminate their leverage\n• Empathic Inquiry — prompt for specific performance feedback to focus the discussion on facts\n\nWhat goes wrong: subordinates usually react with submissive excuses or passive-aggressive silence, which only encourages the authority figure to impose more unilateral rules.\n\nMindset: their position gives them power over your job, but not over your self-respect.",
+      inputs: [
+        { q: "Your supervisor sighs: \"You're always the first one to walk out the door at 5:00 PM.\"", a: "\"You're right, I do leave promptly when my shift ends, but I want to maintain my schedule.\" [The Integrated Shield]", bundle: 'pro' },
+        { q: "An inspector notes: \"Your safety logs are not fully compliant with the new procedure.\"", a: "\"You're right, I missed the new compliance checklist. That was very careless of me, so I'll write them up now.\" [The Complete Ownership]", bundle: 'pro' },
+        { q: "Your manager mutters: \"You seem to lack the commitment we expect of senior staff.\"", a: "\"What specifically am I doing that makes me look uncommitted?\" [Empathic Inquiry]", bundle: 'pro' },
+        { q: "A senior expert says: \"Your method of analysis is entirely outdated.\"", a: "\"What specific analysis tools would you recommend instead?\" [Empathic Inquiry]", bundle: 'pro' },
+        { q: "Your boss demands: \"Why can't you just cover this extra shift? Everyone else is pitching in.\"", a: "\"I understand the team is pitching in, but I am not available to work.\" [The Integrated Shield]", bundle: 'pro' },
+        { q: "Your supervisor says: \"You made a complete mess of the presentation yesterday.\"", a: "\"What specifically about my presentation did you find messy?\" [Empathic Inquiry]", bundle: 'pro' },
+        { q: "A manager notes: \"You forgot to submit the quarterly goals before the deadline.\"", a: "\"I did. That was a sloppy mistake of mine. I feel terrible about the delay, so I'll write them now.\" [The Complete Ownership]", bundle: 'pro' },
+        { q: "An authority figure tells you: \"You should want to improve your performance.\"", a: "\"That's true, I could improve, so what specific areas would you have me work on?\" [Empathic Inquiry]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Commercial Pressure",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Dealing with salespeople, telemarketers, or service representatives who try to manipulate your behavior to make a sale or avoid a return.\n\n• The Integrated Shield — repeat your decision calmly to block their persistent pitches\n• Assertive Disclosure — state your lack of interest plainly to leave no room for argument\n• Empathic Inquiry — ask for specific details about their rules or offers to find options\n\nWhat goes wrong: customers feel obligated to listen politely or invent \"reasons\" why they can't buy, which the salesperson easily dismantles to close the sale anyway.\n\nMindset: you do not need a logical reason to say no to a purchase.",
+      inputs: [
+        { q: "A door-to-door seller says: \"Surely you want to give your family the best security possible?\"", a: "\"I'm sure your system is excellent, but I am not interested.\" [The Integrated Shield]", bundle: 'pro' },
+        { q: "A telemarketer asks: \"Don't you want to save fifty percent on your utility bills?\"", a: "\"I do want to save money, but I am not going to buy today.\" [The Integrated Shield]", bundle: 'pro' },
+        { q: "A subscription service clerk insists: \"But why do you want to cancel? We can offer you a lower rate.\"", a: "\"I appreciate the offer, but I still want to cancel my account.\" [The Integrated Shield]", bundle: 'pro' },
+        { q: "A salesman asks: \"What is it specifically about this deal that you don't like?\"", a: "\"I just feel very uncomfortable with cold sales, so I don't want to buy anything.\" [Assertive Disclosure]", bundle: 'pro' },
+        { q: "A car dealer notes: \"All your neighbors have bought this model.\"", a: "\"I don't doubt that, but I'm not interested in this car.\" [The Integrated Shield]", bundle: 'pro' },
+        { q: "A clerk claims: \"We only issue store credit for returns, not cash refunds.\"", a: "\"I understand your policy is store credit, but I want a cash refund.\" [The Integrated Shield]", bundle: 'pro' },
+        { q: "A service representative sighs: \"If we cancel your contract now, you'll lose your deposit.\"", a: "\"I understand I'll lose the deposit, but I want to cancel anyway.\" [The Integrated Shield]", bundle: 'pro' },
+        { q: "A salesperson insists: \"Just let me come in and show you a quick demonstration.\"", a: "\"I know you want to show me, but I am not interested in a demonstration.\" [The Integrated Shield]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Flattery & Compliments",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Dealing with positive manipulation, insincere praise, or flattery designed to lower your guard before a request is made.\n\n• Empathic Inquiry — ask for specific details about the praise to test its sincerity\n• The Integrated Shield — accept the compliment calmly while holding your line on the request\n• Assertive Disclosure — state your feelings and wants plainly without excuses when the ask is made\n\nWhat goes wrong: people feel so flattered or embarrassed by praise that they automatically say \"yes\" to whatever favor the flatterer asks next.\n\nMindset: a compliment is not a financial transaction; you do not owe them anything in return.",
+      inputs: [
+        { q: "A coworker beams: \"You are the absolute best writer on this team!\"", a: "\"Thank you. What is it specifically about my writing that you like?\" [Empathic Inquiry]", bundle: 'pro' },
+        { q: "A colleague says: \"You dress so elegantly — you must come along and help me pick a suit.\"", a: "\"That's very nice of you to say, and I don't want to spend Saturday shopping.\" [The Integrated Shield]", bundle: 'pro' },
+        { q: "A teammate flatters: \"You're so quick with spreadsheets, could you just fix my numbers?\"", a: "\"I understand you think I'm fast, but I don't have time to do your spreadsheet.\" [The Integrated Shield]", bundle: 'pro' },
+        { q: "A neighbor gushes: \"You have such a beautiful garden — you must come and redo mine too!\"", a: "\"Thank you, I do enjoy gardening, but I don't want to take on your garden.\" [The Integrated Shield]", bundle: 'pro' },
+        { q: "An associate says: \"You're the only one smart enough to explain this report to the board.\"", a: "\"What specifically is confusing about the report that needs explanation?\" [Empathic Inquiry]", bundle: 'pro' },
+        { q: "A manager says: \"You're so reliable, I know you won't mind staying late to finish this.\"", a: "\"I appreciate that you think I'm reliable, but I am not available to stay late.\" [The Integrated Shield]", bundle: 'pro' },
+        { q: "A client flatters: \"Your team is so creative, I'm sure you can add these extra features for free.\"", a: "\"I'm glad you find us creative, but our rate for extra features is fixed.\" [The Integrated Shield]", bundle: 'pro' },
+        { q: "A coworker notes: \"You're so good with difficult clients. Can you handle this angry caller?\"", a: "\"I understand you're stressed, but I want you to handle your own client.\" [The Integrated Shield]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Nagging & Testing",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Navigating persistent emotional pressure, guilt-tripping, or passive-aggressive boundary trials from people you deal with regularly.\n\n• The Integrated Shield — repeat your boundary calmly without raising your voice\n• Assertive Disclosure — state your feelings and wants plainly to end their emotional leverage\n• The Complete Ownership — own your part of a conflict to end their nag loops\n\nWhat goes wrong: users get drawn into arguments about their motives or reasons, which gives the nagger more material to continue the emotional trial.\n\nMindset: you do not have to argue or get angry to make a boundary stick.",
+      inputs: [
+        { q: "Your partner sighs: \"You always ignore me when I ask you to help with the laundry.\"", a: "\"You're right, I have ignored you. I feel terrible about the friction, so I'll help you fold this load now.\" [The Complete Ownership]", bundle: 'pro' },
+        { q: "A coworker complains: \"You're ruining the team's vibe by refusing to join our lunch.\"", a: "\"I see how you feel, but I am not joining you for lunch today.\" [The Integrated Shield]", bundle: 'pro' },
+        { q: "A sibling mutters: \"You obviously don't care about our family if you can't visit this weekend.\"", a: "\"I understand you feel that way, but I am not available to visit.\" [The Integrated Shield]", bundle: 'pro' },
+        { q: "A relative says: \"You always make such selfish choices about where you spend holidays.\"", a: "\"You're right, I do choose my own holidays, and I am keeping this year's plan.\" [The Integrated Shield]", bundle: 'pro' },
+        { q: "A roommate grumbles: \"If you don't wash your mug now, you're a terrible person.\"", a: "\"I'm sure it's annoying to see the mug, but I will wash it after lunch.\" [The Integrated Shield]", bundle: 'pro' },
+        { q: "A colleague keeps muttering: \"Some people just don't care about team collaboration.\"", a: "\"What am I doing specifically that looks uncollaborative?\" [Empathic Inquiry]", bundle: 'pro' },
+        { q: "An associate sighs: \"You're so cold and robotic when you say no.\"", a: "\"I do get tangled up when I dress it up, so I want to keep my noes short.\" [Assertive Disclosure]", bundle: 'pro' },
+        { q: "A persistent family member grumbles: \"You never listen to my advice anyway.\"", a: "\"That's true, I don't always follow it, and I want to decide this one myself.\" [The Integrated Shield]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Modern Evasions",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Resolving commercial or service disputes in a digital landscape where clerks, support bots, and gig workers pass the responsibility around.\n\n• The Integrated Shield — repeat your demand for resolution to block evasive procedures\n• Assertive Disclosure — state your dissatisfaction plainly without excuses\n• The Complete Ownership — own your part of a technical mistake calmly to speed up correction\n\nWhat goes wrong: users get stuck in loops of clicking links, waiting on hold, or accepting digital vouchers they don't want because the bot or clerk claims \"it's not our fault.\"\n\nMindset: the system's technical failures are not your responsibility to solve.",
+      inputs: [
+        { q: "A customer support agent claims: \"Our system doesn't allow cash refunds for cancelled subscriptions.\"", a: "\"I understand your system's limit, but I want a cash refund.\" [The Integrated Shield]", bundle: 'pro' },
+        { q: "A delivery driver texts: \"I left your food on the curb because I couldn't find your door.\"", a: "\"I understand you had trouble, but I want you to bring the food to my door.\" [The Integrated Shield]", bundle: 'pro' },
+        { q: "An automated chatbot says: \"To resolve your issue, please read our 20-page FAQ document.\"", a: "\"I have read the document, and I want to speak to a human agent now.\" [The Integrated Shield]", bundle: 'pro' },
+        { q: "A retail clerk tells you: \"We can't return this defective smart speaker because the box is opened.\"", a: "\"I understand the box is open, but the item is defective and I want my money back.\" [The Integrated Shield]", bundle: 'pro' },
+        { q: "A software support agent claims: \"That bug was caused by a third-party plugin, not our software.\"", a: "\"I understand the plugin is involved, but your software is what I paid for and I want it fixed.\" [The Integrated Shield]", bundle: 'pro' },
+        { q: "A ride-share driver complains: \"The traffic is terrible, you should just cancel the ride and get a new one.\"", a: "\"I see the traffic is bad, but I am not going to cancel. I'll wait for you to arrive.\" [The Integrated Shield]", bundle: 'pro' },
+        { q: "A hotel desk clerk sighs: \"Your digital booking isn't showing in our database, you'll have to call corporate.\"", a: "\"I understand it's not showing, but I have my receipt and I want a room assigned now.\" [The Integrated Shield]", bundle: 'pro' },
+        { q: "A gig worker claims: \"The store was out of your item, so I replaced it with something twice the price.\"", a: "\"I understand they were out, but I do not want this replacement and I want a refund.\" [The Integrated Shield]", bundle: 'pro' },
+      ]
+    },
+  ],
 };
