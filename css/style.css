@@ -4019,3 +4019,48 @@ body.feedback-mode    .al-bar { display: none !important; }
   -webkit-tap-highlight-color: transparent;
   cursor: default;
 }
+
+/* ─── PORTRAIT ONLY ON PHONES (v1.27.53) ────────────────────────────────────
+   Rikard, 2026-08-28: with rotation unlocked on the iPhone, turning the phone
+   sideways gave a wide, short Deckstack the layout was never drawn for — and
+   turning it back left the page slightly scrollable with scrollbars down the
+   right edge. Both are the same fault: `.app` is `height: 100dvh` inside a
+   `overflow: hidden` body, so a landscape pass leaves a stale height behind.
+
+   There is no API fix on iOS. Safari honours neither the manifest's
+   `orientation` member nor `screen.orientation.lock()`, so the lock is done in
+   the layout instead: hide `.app` completely while the phone is sideways.
+   Nothing is laid out at the wrong size, so nothing stale survives the way
+   back, and the notice below is all that shows.
+
+   THE QUERY IS DELIBERATELY NARROW. It needs landscape AND a viewport under
+   500px tall. Phones in landscape are 320–430px tall; the shortest iPad is
+   744px. So this never fires on an iPad, which keeps both orientations until
+   Rikard has tested one. Raising 500px would catch iPads too — don't, without
+   testing there first. */
+
+#rotateNotice { display: none; }
+
+@media (orientation: landscape) and (max-height: 500px) {
+  .app,
+  #onboardingScreen,
+  #packIntroScreen,
+  #splashScreen { display: none !important; }
+
+  #rotateNotice {
+    position: fixed;
+    inset: 0;
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    background: var(--ds-bg);
+    color: var(--ds-txt);
+    text-align: center;
+  }
+  .rn-inner { max-width: 340px; }
+  .rn-icon  { width: 40px; height: 40px; color: var(--ds-txt2); margin-bottom: 16px; }
+  .rn-title { font-size: 19px; font-weight: 600; margin-bottom: 8px; }
+  .rn-text  { font-size: 15px; line-height: 1.5; color: var(--ds-txt2); }
+}
