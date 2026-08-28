@@ -4965,4 +4965,168 @@ const challengesCollections = {
       ]
     },
   ],
+  counseling1: [
+    {
+      name: "The Sluggish Spirit",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Dealing with a friend who has sunk into listlessness, depression, and a pile of undone chores.\nThe specific miss is coddling their mood or accepting their \"I can't\" excuses. The strategies that bite are Spurring Obedience (to get them moving) and Clarifying the Facts (to see the actual state of the chores).\nAvoid: waiting for their feelings to change before you call them to action.\nMindset: action is the road back to hope; we must start with the board.",
+      inputs: [
+        { q: "A friend says, \"I can't clean my kitchen today; I just have zero motivation.\"", a: "\"You don't have to feel motivated to start. Let's wash the first plate together anyway.\" [Spurring Obedience]", bundle: 'pro' },
+        { q: "They claim they are doing fine, but their house is completely falling apart.", a: "\"When did this heavy feeling actually start, and what happened right before that?\" [Clarifying the Facts]", bundle: 'pro' },
+        { q: "They are weeping on the sofa and say they will never get their chores done.", a: "\"You are not a hopeless failure. What is one small task we can schedule for this afternoon?\" [Challenging Self-Pity]", bundle: 'pro' },
+        { q: "They claim they've prayed about it, so they are just waiting on the Lord.", a: "\"God gives us strength as we obey. What is one chore in the kitchen we can schedule?\" [Spurring Obedience]", bundle: 'pro' },
+        { q: "They are defensive when you bring up their pile of ungraded student papers.", a: "\"What is the single most urgent page on your desk today?\" [Clarifying the Facts]", bundle: 'pro' },
+        { q: "They insist that they need a holiday before they can face their duties.", a: "\"We must do our duty regardless of our mood. Let's schedule thirty minutes of work now.\" [Spurring Obedience]", bundle: 'pro' },
+        { q: "They say nobody in the church understands how heavy their schedule is.", a: "\"I want to help you carry this burden. Let's look at your calendar together.\" [Gentle Restoration]", bundle: 'pro' },
+        { q: "They are brooding over how exhausting their work has become.", a: "\"Instead of rehashing how hard the day was, let's name three blessings from this week.\" [Righteous Replacement]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Pious Pretending",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Handing a friend who uses spiritual talk or false modesty to avoid looking at their real problems.\nThe specific miss is letting \"the devil made me do it\" or \"I'm just waiting on God\" close the subject. The strategies that bite are Challenging Self-Pity (to poke the balloon) and Clarifying the Facts (to get to what they actually did).\nAvoid: agreeing with spiritual-sounding excuses that hide disobedience.\nMindset: true godliness begins with honest confession of concrete sins.",
+      inputs: [
+        { q: "A friend says, \"The demon of anger made me lose control and slam the door.\"", a: "\"We must own our reactions. What did you actually say right before the door slammed?\" [Clarifying the Facts]", bundle: 'pro' },
+        { q: "They say, \"I'm just too weak of a vessel; I guess God can never use me.\"", a: "\"You are not a hopeless failure. What is the specific mistake we need to correct?\" [Challenging Self-Pity]", bundle: 'pro' },
+        { q: "They claim, \"I've handed this conflict over to the Lord, so I don't need to apologize.\"", a: "\"Obedience requires direct action. What is the first apology we need to write?\" [Spurring Obedience]", bundle: 'pro' },
+        { q: "They evade: \"I'm just waiting for a peace in my spirit before I speak to him.\"", a: "\"What have you actually been doing to resolve the conflict since it started?\" [Clarifying the Facts]", bundle: 'pro' },
+        { q: "They say, \"I'm just too sinful to ever read my Bible again.\"", a: "\"Christ's blood is sufficient for your sin. Will you open the word with me today?\" [Challenging Self-Pity]", bundle: 'pro' },
+        { q: "They claim they are \"just sharing a prayer request\" about a roommate's failure.", a: "\"Gossip is sin, even in prayer. What encouraging thing can we say about them instead?\" [Righteous Replacement]", bundle: 'pro' },
+        { q: "They say, \"I'm just trusting God to fix my marriage in His own time.\"", a: "\"God calls us to act. What did you actually say to your wife yesterday?\" [Clarifying the Facts]", bundle: 'pro' },
+        { q: "They claim, \"I don't need to confess to anyone; God knows my heart.\"", a: "\"I'm here because I care about your soul, not to police you. Will you be honest with me?\" [Gentle Restoration]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Feelings Trap",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Dealing with a friend who insists they cannot obey God because they do not feel like it.\nThe specific miss is letting them treat feelings as an authority over their duty. The strategies that bite are Spurring Obedience (to act anyway) and Righteous Replacement (to trade brooding for thanksgiving).\nAvoid: treating their lack of motivation as a valid reason to delay duty.\nMindset: obedience is a matter of the will, not the emotions.",
+      inputs: [
+        { q: "A friend says, \"I can't pray today; my heart is just too cold.\"", a: "\"Prayer is about obedience, not your mood. Let's pray for five minutes right now anyway.\" [Spurring Obedience]", bundle: 'pro' },
+        { q: "They claim they are too anxious to go to the church dinner.", a: "\"What specifically happened today that made you feel so overwhelmed?\" [Clarifying the Facts]", bundle: 'pro' },
+        { q: "They say, \"I'll apologize to him once the bitter feelings leave me.\"", a: "\"Obedience doesn't require energy first. What if we write a simple message now?\" [Spurring Obedience]", bundle: 'pro' },
+        { q: "They are brooding: \"I just feel too down to do anything useful.\"", a: "\"What is one concrete blessing we can stop and thank God for right now?\" [Righteous Replacement]", bundle: 'pro' },
+        { q: "They say, \"I know I should help, but I just don't feel any love for them.\"", a: "\"Serving others often breeds love. What is one small chore we can do for them today?\" [Spurring Obedience]", bundle: 'pro' },
+        { q: "They insist that their feelings are too empty to carry any duties.", a: "\"I'm not here because I'm better than you, but let's take the first small step together.\" [Gentle Restoration]", bundle: 'pro' },
+        { q: "They say, \"I'm too depressed to get out of my bed.\"", a: "\"You don't have to feel motivated to start. Let's take the first step together anyway.\" [Spurring Obedience]", bundle: 'pro' },
+        { q: "They are defensive: \"You don't know what it's like to have your emotions rule you.\"", a: "\"I understand, but we must trade grumbling for thanksgiving. Let's name three blessings.\" [Righteous Replacement]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Gossip Grapevine",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Dealing with a member who tries to drop gossip into your lap under the guise of \"prayer requests\".\nThe specific miss is listening behind people's backs or playing along. The strategies that bite are Gentle Restoration (to restore the gossiper) and Clarifying the Facts (to stop the rumors).\nAvoid: receiving negative details about someone who is not in the room.\nMindset: love covers a multitude of sins; gossip spreads them.",
+      inputs: [
+        { q: "A member says, \"I have a heavy prayer request about John's marriage — she is leaving him.\"", a: "\"I won't listen to this behind her back. Let's go to her together and help.\" [Gentle Restoration]", bundle: 'pro' },
+        { q: "They deflect: \"I'm just telling you so we can pray intelligently.\"", a: "\"Gossip is sin, even when we call it prayer. What good thing can we share instead?\" [Righteous Replacement]", bundle: 'pro' },
+        { q: "They claim: \"Everyone is talking about what happened at the board meeting.\"", a: "\"What did the board actually decide when they met yesterday?\" [Clarifying the Facts]", bundle: 'pro' },
+        { q: "They are defensive: \"You are just being too sensitive about gossip.\"", a: "\"I'm here because I care about your soul, not to judge. Let's guard our tongues.\" [Gentle Restoration]", bundle: 'pro' },
+        { q: "They say: \"I just needed to get this off my chest about John's failure.\"", a: "\"Venting rumors only hurts the church. What encouraging thing can we say about John?\" [Righteous Replacement]", bundle: 'pro' },
+        { q: "They claim: \"John is clearly in rebellion, I've heard the stories.\"", a: "\"What did John actually do that you witnessed yourself?\" [Clarifying the Facts]", bundle: 'pro' },
+        { q: "They say: \"I'm too embarrassed to go to him and apologize for spreading that rumor.\"", a: "\"We are all sinners. Let's go together in meekness and make this right.\" [Gentle Restoration]", bundle: 'pro' },
+        { q: "They insist: \"It's not gossip if the story is true.\"", a: "\"Love covers a multitude of sins. Let's stop and pray for his blessing instead.\" [Righteous Replacement]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Private Offenses",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Dealing with the temptation to nurse small hurts, slights, and personal offenses in the congregation.\nThe specific miss is brooding over how they treated you and letting bitterness grow. The strategies that bite are Righteous Replacement (to trade bitterness for prayer) and Gentle Restoration (to walk in humility).\nAvoid: making lists of minor annoyances instead of letting them go in love.\nMindset: love covers the small hurt; bitterness files it away.",
+      inputs: [
+        { q: "A friend says: \"I can't forgive her for forgetting my birthday.\"", a: "\"What is one concrete blessing we can stop and thank God for today instead?\" [Righteous Replacement]", bundle: 'pro' },
+        { q: "They deflect: \"She does this all the time, she's completely selfish.\"", a: "\"What did she actually say to you when you saw her yesterday?\" [Clarifying the Facts]", bundle: 'pro' },
+        { q: "They say: \"I'm going to stay home from church to avoid seeing her.\"", a: "\"Pulling away from fellowship only feeds bitterness. Let's walk in together.\" [Gentle Restoration]", bundle: 'pro' },
+        { q: "They claim: \"I have a right to be angry after how she ignored me.\"", a: "\"Bitterness is sin. Will you let go of this grievance and pray for her blessing?\" [Righteous Replacement]", bundle: 'pro' },
+        { q: "They say: \"I'll only speak to her if she comes and begs for my forgiveness.\"", a: "\"Obedience requires us to take the first step. Let's go greet her in meekness.\" [Gentle Restoration]", bundle: 'pro' },
+        { q: "They are defensive: \"You don't know how much this small slight stung.\"", a: "\"I know it hurts, but we must replace bitterness with kind words. Let's offer to help her.\" [Righteous Replacement]", bundle: 'pro' },
+        { q: "They say: \"I can't stop thinking about what she did.\"", a: "\"Let's write a think list of productive things to focus your mind on today.\" [Righteous Replacement]", bundle: 'pro' },
+        { q: "They claim: \"I've tried to be friendly, but she just laughs.\"", a: "\"What did she actually do when you offered to help her yesterday?\" [Clarifying the Facts]", bundle: 'pro' },
+      ]
+    },
+  ],
+  counseling2: [
+    {
+      name: "The Marriage Wall",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Dealing with roommates or married couples who refuse to communicate, point fingers, and blame each other for the conflict.\nThe specific miss is agreeing with their blame or focusing on the spouse's sins instead of their own. The strategies that bite are Sorting Responsibilities (to own their own part) and Pursuing Peace (to offer a soft answer).\nAvoid: validating their focus on what the other person did wrong.\nMindset: our first job is to clear the log out of our own eye before we touch the splinter.",
+      inputs: [
+        { q: "A spouse says, \"He ignored my birthday on purpose, so I have every right to give him the silent treatment.\"", a: "\"What did you actually say to him when you noticed he forgot, and how did you choose to react?\" [Sorting Responsibilities]", bundle: 'pro' },
+        { q: "They deflect: \"She only yelled at me because I was five minutes late; she is completely crazy.\"", a: "\"What was your actual response to her when she started yelling?\" [Sorting Responsibilities]", bundle: 'pro' },
+        { q: "They use a pious phrase: \"I'm just praying that God convicts him of his terrible laziness around the house.\"", a: "\"Before we pray for him, what is the log in your own eye that we need to address?\" [Sorting Responsibilities]", bundle: 'pro' },
+        { q: "They are defensive: \"We can't have a normal discussion because she always starts crying to manipulate me.\"", a: "\"What did you actually say to her right before she started crying?\" [Sorting Responsibilities]", bundle: 'pro' },
+        { q: "A husband says, \"I tried to talk, but she just locked herself in the room and told me to get out.\"", a: "\"What did you say to her through the door, and how did you say it?\" [Pursuing Peace]", bundle: 'pro' },
+        { q: "They resist: \"I am ninety percent the victim in this marriage; his anger is the entire issue.\"", a: "\"Even if he is ninety percent wrong, what did you do with your ten percent?\" [Sorting Responsibilities]", bundle: 'pro' },
+        { q: "They claim: \"If I apologize first, she will just use it as a weapon to prove she was right.\"", a: "\"Reconciliation is about obedience, not strategy. What is the fault we need to own?\" [Sorting Responsibilities]", bundle: 'pro' },
+        { q: "They say: \"We are sleeping in separate rooms because there is absolutely no hope for us.\"", a: "\"I want us to be at peace. Let's sit down and talk about the real issue quietly.\" [Pursuing Peace]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Gossip Trap",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Handling church members who try to dump rumors, slander, and bitterness into your lap under the guise of \"prayer requests\" or \"venting\".\nThe specific miss is receiving negative details about an absent brother or playing along. The strategies that bite are Direct Confrontation (to stop the gossip) and Pursuing Peace (to guard church unity).\nAvoid: listening to a distorted story without the other person in the room.\nMindset: gossip separates close friends; direct speech mends them.",
+      inputs: [
+        { q: "A member says, \"Did you hear Karin is leaving her husband? We need to pray for her.\"", a: "\"What did Karin actually say to you when you spoke to her about this directly?\" [Direct Confrontation]", bundle: 'pro' },
+        { q: "They deflect: \"I'm just telling you this so we can pray intelligently for the leadership crisis.\"", a: "\"Since you know the details, when are we going to talk to the leaders face-to-face?\" [Direct Confrontation]", bundle: 'pro' },
+        { q: "They use a pious phrase: \"I am sharing this so we can support him in his spiritual failure.\"", a: "\"Before we discuss his failure, did you confront him privately about this sin?\" [Direct Confrontation]", bundle: 'pro' },
+        { q: "They are defensive: \"I'm not gossiping; I'm just venting because her pride is hurting the whole choir.\"", a: "\"I won't discuss her behind her back. Let's go talk to her together right now.\" [Direct Confrontation]", bundle: 'pro' },
+        { q: "A member says, \"He cheated his business partner, and everyone at church is talking about it.\"", a: "\"What did he say when you confronted him privately about these business rumors?\" [Direct Confrontation]", bundle: 'pro' },
+        { q: "They claim: \"I'm just a sounding board; it is healthy for them to get this out of their system.\"", a: "\"Venting rumors only spreads poison. What encouraging thing can we say instead?\" [Pursuing Peace]", bundle: 'pro' },
+        { q: "They say: \"I can't talk to her face-to-face because she is too intimidating.\"", a: "\"I'll go with you. Let's go together in meekness and address this directly.\" [Direct Confrontation]", bundle: 'pro' },
+        { q: "They insist: \"It's not gossip if the whole story is completely true.\"", a: "\"Love covers a multitude of sins. Let's stop and pray for his blessing instead.\" [Pursuing Peace]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Active Hostility",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Dealing with an opponent or tormentor who actively throws digs, mocks your faith, or attacks your reputation in the congregation.\nThe specific miss is retaliating in kind or retreating into bitter isolation. The strategies that bite are Overcoming With Good (to serve them aggressively) and Pursuing Peace (to stop the fight with a soft answer).\nAvoid: returning evil for evil or trying to even the score.\nMindset: goodness is an active, aggressive weapon that disarms hostility.",
+      inputs: [
+        { q: "An opponent snaps, \"You are a legalist and a fake, and nobody in this church respects you!\"", a: "\"I know you are angry, but I genuinely pray that God blesses your family today.\" [Overcoming With Good]", bundle: 'pro' },
+        { q: "They mock your contribution to the building fund in front of several other members.", a: "\"I want us to be at peace, and I value your care for the church's resources.\" [Pursuing Peace]", bundle: 'pro' },
+        { q: "They accuse you of being a hypocrite because you made a mistake during the service.", a: "\"You are right that I made a mistake, and I own that. How can I make it right?\" [Sorting Responsibilities]", bundle: 'pro' },
+        { q: "They use a pious phrase: \"I'm just pointing out your sin because the Bible tells me to.\"", a: "\"Thank you for the correction. What is the specific error I need to address first?\" [Sorting Responsibilities]", bundle: 'pro' },
+        { q: "You see your active tormentor struggling with heavy grocery bags in the church parking lot.", a: "\"I see you are struggling with those heavy bags. Let me carry them to your car.\" [Overcoming With Good]", bundle: 'pro' },
+        { q: "They spread lies about your work to your employer, and you are tempted to expose them.", a: "\"I know you are angry with me, but let me help you finish your office chores today.\" [Overcoming With Good]", bundle: 'pro' },
+        { q: "They yell at you in the hallway, trying to provoke a public fight.", a: "\"I don't want to fight with you. Let's sit down and talk about this quietly.\" [Pursuing Peace]", bundle: 'pro' },
+        { q: "They laugh at your work and say you are completely incompetent.", a: "\"I want to do what is right. What did I actually do that was incompetent?\" [Sorting Responsibilities]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Refused Peace",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Handling situations where you go in humility to confess your sin and reconcile, but the other person rejects you or mocks your attempt.\nThe specific miss is getting defensive or giving up on peace entirely. The strategies that bite are Pursuing Peace (to keep your side clean) and Overcoming With Good (to bless them regardless).\nAvoid: allowing their rejection to produce bitterness in your own heart.\nMindset: our duty is to offer peace; their response is in the Lord's hands.",
+      inputs: [
+        { q: "You confess your sin, and they laugh: \"You expect me to forgive you after what you did? Forget it.\"", a: "\"I want to make this right, but if you are not ready to reconcile, I will wait.\" [Pursuing Peace]", bundle: 'pro' },
+        { q: "They deflect: \"Your apology is fake, and you are just trying to make yourself look spiritual.\"", a: "\"I have sinned against you, and my apology is real. How can I earn your trust?\" [Sorting Responsibilities]", bundle: 'pro' },
+        { q: "They use a pious phrase: \"I will only forgive you once I see some real fruit of repentance.\"", a: "\"That is fair. What does fruit look like to you in my daily habits?\" [Sorting Responsibilities]", bundle: 'pro' },
+        { q: "They are defensive: \"You've ruined my life, and a simple apology won't fix anything.\"", a: "\"You are right that I caused deep harm. What can I do to begin repairing the damage?\" [Sorting Responsibilities]", bundle: 'pro' },
+        { q: "You offer peace, and they turn their back and walk away without saying a word.", a: "\"I want us to be at peace. I will be here whenever you are ready to talk.\" [Pursuing Peace]", bundle: 'pro' },
+        { q: "They say: \"I will never forgive you as long as I live.\"", a: "\"I understand your anger. I will continue to pray for your blessing anyway.\" [Overcoming With Good]", bundle: 'pro' },
+        { q: "They tell you to get out of their house and never come back.", a: "\"I am leaving as you asked, but my desire is still to make peace with you.\" [Pursuing Peace]", bundle: 'pro' },
+        { q: "They claim: \"You only came here to clear your own conscience, not because you care.\"", a: "\"I came because I sinned against you. What is the specific damage I need to pay for?\" [Sorting Responsibilities]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Neutrality Escape",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Dealing with the temptation to stay silent, neutral, or passive in the church during an ongoing conflict or when a brother is in active sin.\nThe specific miss is treating silence as \"loving\" or \"non-judgmental\". The strategies that bite are Direct Confrontation (to stop the sin) and Pursuing Peace (to actively work for reconciliation).\nAvoid: hiding behind \"it's none of my business\" to escape conflict.\nMindset: passive neutrality during sin is a betrayal of the body of Christ.",
+      inputs: [
+        { q: "A friend says, \"I know John is cheating on his taxes, but I'm staying neutral to avoid conflict.\"", a: "\"If he is trapped in this sin, what does loving him face-to-face look like?\" [Direct Confrontation]", bundle: 'pro' },
+        { q: "They deflect: \"It's not my place to judge another member's personal life.\"", a: "\"We are called to restore one another. When are we going to talk to him directly?\" [Direct Confrontation]", bundle: 'pro' },
+        { q: "They use a pious phrase: \"I am just praying and letting go; God will handle his rebellion.\"", a: "\"God calls us to confront in meekness. What did he say when you spoke privately?\" [Direct Confrontation]", bundle: 'pro' },
+        { q: "They are defensive: \"I can't get involved because it will make the whole small group uncomfortable.\"", a: "\"If the group is suffering, what does pursuing peace and truth look like today?\" [Pursuing Peace]", bundle: 'pro' },
+        { q: "A member says, \"I know they are fighting, but I'm staying out of their marriage completely.\"", a: "\"If their home is breaking, how can we go together to offer help?\" [Pursuing Peace]", bundle: 'pro' },
+        { q: "They claim: \"Staying out of it is the most loving thing we can do.\"", a: "\"Leaving a brother under the weight of sin is not love. Will you speak to him?\" [Direct Confrontation]", bundle: 'pro' },
+        { q: "They say: \"I am neutral because I don't know who is right or wrong in their fight.\"", a: "\"What did they say when you asked them about the facts face-to-face?\" [Direct Confrontation]", bundle: 'pro' },
+        { q: "They insist: \"It's safer to let them cool down for a few months first.\"", a: "\"The scriptures say not to let the sun go down on anger. Let's go to them today.\" [Pursuing Peace]", bundle: 'pro' },
+      ]
+    },
+  ],
 };

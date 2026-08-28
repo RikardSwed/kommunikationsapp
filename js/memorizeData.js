@@ -7180,4 +7180,274 @@ const memorizeCollections = {
       ]
     },
   ],
+  counseling1: [
+    {
+      name: "Core Idea",
+      description: "Five ways to help a struggling brother back to obedience.\n\n• Spurring Obedience — duty over feeling\n• Righteous Replacement — put off and put on\n• Clarifying the Facts — what, not why\n• Challenging Self-Pity — pop the balloon\n• Gentle Restoration — humble burden-bearing\n\nA path from the first question to a restored habit.",
+      cards: [
+        { q: "What are the five personal restoration strategies in this pack?", a: "Spurring Obedience, Righteous Replacement, Clarifying the Facts, Challenging Self-Pity, and Gentle Restoration.", bundle: 'free' },
+        { q: "How do the five fit together?", a: "They form a path of mutual care: discover the facts, break self-pity, restore gently, replace old habits, and spur obedience.", bundle: 'free' },
+        { q: "Who is the user of these strategies?", a: "A regular congregation member helping a friend in their daily walk.", bundle: 'free' },
+        { q: "What is the core goal of these strategies?", a: "Personal sanctification — helping a brother or sister grow in holiness and usefulness.", bundle: 'free' },
+        { q: "What is the decide rule for when to help?", a: "When you stumble over a brother who is caught in a trespass and cannot get out.", bundle: 'free' },
+        { q: "Why is counseling a duty for every member of the church?", a: "Colossians 3:16 and Galatians 6:1 command all believers to teach and admonish one another.", bundle: 'pro' },
+        { q: "What is the role of the pastor compared to the layman?", a: "The pastor ordains and patrols officially; the layman counsels unofficially as a second calling.", bundle: 'pro' },
+        { q: "Where does the power for true change come from?", a: "The Holy Spirit working through His written word as we step out in obedience.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Spurring Obedience",
+      description: "",
+      cards: [
+        { q: "What is the core idea of Spurring Obedience?", a: "Doing your duty regardless of your mood. Action must precede and shape feeling.", bundle: 'free' },
+        { q: "Why does this strategy work?", a: "Because feelings follow actions. The lower the pile of undone duties gets, the higher our spirits get.", bundle: 'free' },
+        { q: "What are the three variants of Spurring Obedience?", a: "The Action Step, The Schedule Lock, and The Grace Reminder.", bundle: 'free' },
+        { q: "What are \"feelings\" in this strategy?", a: "Followers, not leaders. We must not let them rule our duties.", bundle: 'free' },
+        { q: "Who is particularly prone to the feelings trap?", a: "People who must schedule their own days, like preachers and homemakers, because they need self-discipline.", bundle: 'free' },
+        { q: "What is the first assignment we give to a depressed friend?", a: "To get their most avoided daily chore completely finished before the next meeting.", bundle: 'pro' },
+        { q: "Why is waiting for motivation a trap?", a: "Because the longer we avoid our duty, the guiltier we feel, and the lower our feelings sink.", bundle: 'pro' },
+        { q: "How does Christ strengthen us to obey?", a: "He gives us the ability as we step out by faith to do what His word commands.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Righteous Replacement",
+      description: "",
+      cards: [
+        { q: "What is the core idea of Righteous Replacement?", a: "Putting off a sinful habit of mind or speech and immediately putting on the righteous equivalent.", bundle: 'free' },
+        { q: "Why does a vacuum in the soul fail?", a: "Simply stopping a sin leaves an empty space that always invites the old habit back.", bundle: 'free' },
+        { q: "What are the three variants of Righteous Replacement?", a: "The Speech Trade, The Thought Trade, and The Service Trade.", bundle: 'free' },
+        { q: "What is the speech trade?", a: "Replacing gossip or bitter words with active encouragement and thanksgiving.", bundle: 'free' },
+        { q: "What is the thought trade?", a: "Replacing anxious brooding with a think list of true, pure, and excellent things.", bundle: 'free' },
+        { q: "What is the biblical foundation of replacement?", a: "Ephesians four: putting off the old man and putting on the new man.", bundle: 'pro' },
+        { q: "What is forgiveness according to this strategy?", a: "A promise first, not a feeling. I promise not to rehash, repeat, or brood over the sin.", bundle: 'pro' },
+        { q: "How do we help a friend stop brooding?", a: "By having them write a think list of concrete things to focus on when temptation starts.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Clarifying the Facts",
+      description: "",
+      cards: [
+        { q: "What is the core idea of Clarifying the Facts?", a: "Asking objective \"what\" and \"how\" questions to help a friend see their situation through Scripture.", bundle: 'free' },
+        { q: "Why do we avoid \"why\" questions?", a: "Why questions put people on the spot and invite defensive speculation and excuse-making.", bundle: 'free' },
+        { q: "What are the three variants of Clarifying the Facts?", a: "The What Swap, The Timing Check, and The Action Check.", bundle: 'free' },
+        { q: "When did the listlessness or conflict start?", a: "That is the timing check — it locates the concrete trigger of the problem.", bundle: 'free' },
+        { q: "What is the action check?", a: "Asking what they actually did in the situation, rather than what they felt.", bundle: 'free' },
+        { q: "What are \"halo data\" in counseling?", a: "Nonverbal clues like blushes, tension, sighs, and hesitations that help locate hot spots.", bundle: 'pro' },
+        { q: "How do we use a personal data inventory?", a: "To gather facts about what the problem is, what they have done, and what they want us to do.", bundle: 'pro' },
+        { q: "Why is exact specific data necessary for change?", a: "Because change happens in the concrete, not in the abstract. Vague data breeds vague solutions.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenging Self-Pity",
+      description: "",
+      cards: [
+        { q: "What is the core idea of Challenging Self-Pity?", a: "Refusing to play along with self-destructive pity parties, and pointing to Christ's grace and responsibility.", bundle: 'free' },
+        { q: "What is the pity party stop?", a: "Stopping \"I'm a failure\" talk and calling them to confess their concrete, individual sins.", bundle: 'free' },
+        { q: "What is the grace pivot?", a: "Reminding a crushed friend that Christ's blood is sufficient to wash away their real failures.", bundle: 'free' },
+        { q: "Why is self-pity dangerous?", a: "It is a subtle form of pride that resists God's grace and avoids personal responsibility.", bundle: 'free' },
+        { q: "What are the three variants of Challenging Self-Pity?", a: "The Pity Party Stop, The Grace Pivot, and The Responsibility Call.", bundle: 'free' },
+        { q: "What is a \"trial balloon\" in a counseling conversation?", a: "A small, parenthetical hint of sin or self-regret a friend lets out to see if you will minimize it.", bundle: 'pro' },
+        { q: "What do we do when we see a trial balloon?", a: "We grab the string and pop it immediately, taking their sin seriously without minimizing.", bundle: 'pro' },
+        { q: "Why is minimizing sin unhelpful?", a: "Because if we tell them \"it's not that bad,\" they never reach the point of honest confession and real hope.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Gentle Restoration",
+      description: "",
+      cards: [
+        { q: "What is the core idea of Gentle Restoration?", a: "Restoring a brother caught in a trespass with deep humility, looking to yourself lest you be tempted.", bundle: 'free' },
+        { q: "What does the word \"restore\" mean in Galatians 6:1?", a: "To mend a broken bone or repair a torn net in order to make it useful again.", bundle: 'free' },
+        { q: "What are the three variants of Gentle Restoration?", a: "The Leveling Statement, The Burden Share, and The Self-Watch.", bundle: 'free' },
+        { q: "What is the leveling statement?", a: "\"I'm no better than you, and I might need your help next week, but let's carry this together.\"", bundle: 'free' },
+        { q: "What is the burden share?", a: "Stepping into the mess to pull them out, so they can get back to bearing their own load.", bundle: 'free' },
+        { q: "What is the self-watch?", a: "Keeping a close watch on your own heart so you are not infected by the same temptation.", bundle: 'pro' },
+        { q: "How do we avoid becoming drowned ourselves while helping?", a: "By staying anchored in structure and using a second witness in difficult situations.", bundle: 'pro' },
+        { q: "What is the ultimate goal of restoration?", a: "To return the brother to usefulness so they can carry their own share of the church's load.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n• Responding to a Drifting Friend — Gentle Restoration, Clarifying the Facts or Spurring Obedience • Breaking the Spiral — Righteous Replacement or Challenging Self-Pity • The Personal Restoration Set — everything mixed\nOne question decides: is their struggle about motivation, habit, or a sudden fall?",
+      cards: [
+        { q: "What is the purpose of the Collections mode?", a: "To train you to choose the right strategy when several might seem to fit the situation.", bundle: 'pro' },
+        { q: "What does \"Responding to a Drifting Friend\" choose between?", a: "Gentle Restoration (for trespasses), Clarifying the Facts (for vagueness), and Spurring Obedience (for listlessness).", bundle: 'pro' },
+        { q: "What does \"Breaking the Spiral\" choose between?", a: "Challenging Self-Pity (for self-regret) and Righteous Replacement (for brooding habits).", bundle: 'pro' },
+        { q: "What deciding question separates Spurring Obedience and Gentle Restoration?", a: "Is the friend paralyzed by a lack of motivation, or are they crushed under the weight of a specific sin?", bundle: 'pro' },
+        { q: "What decides between Challenging Self-Pity and Righteous Replacement?", a: "Do they need to accept God's forgiveness first, or do they need an active trade for their brooding?", bundle: 'pro' },
+        { q: "Why does a collection deck need at least three strategies?", a: "Because two is a simple comparison, while three forces a genuine choice in the moment.", bundle: 'pro' },
+        { q: "Where does the theory behind each choice live?", a: "In the descriptions of the individual strategies in Single Strategy.", bundle: 'pro' },
+        { q: "Why do we tag all Collections cards as pro?", a: "Because Collections is a pro-only training mode that is closed to free users.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n• First the Meal, Then the Gospel — Gentle Restoration → Clarifying the Facts → Spurring Obedience\n• Steering a Sinking Friend — Challenging Self-Pity → Clarifying the Facts → Righteous Replacement\n• The Path of Restoration — Clarifying the Facts → Challenging Self-Pity → Righteous Replacement → Spurring Obedience\n\nThe order does the work of breaking the spiral step-by-step.",
+      cards: [
+        { q: "What is the purpose of the Sequences mode?", a: "To train you in the step-by-step order of biblical care across several weeks.", bundle: 'pro' },
+        { q: "What is the order in \"First the Meal, Then the Gospel\"?", a: "Gentle Restoration (meet the burden), Clarifying the Facts (gather data), and Spurring Obedience (present the truth).", bundle: 'pro' },
+        { q: "Why does the physical help come before the Gospel in this sequence?", a: "Meeting the immediate burden first disarms their defensiveness; naming the Gospel too early reads as a trick.", bundle: 'pro' },
+        { q: "What is the order in \"Steering a Sinking Friend\"?", a: "Challenging Self-Pity (break the mood), Clarifying the Facts (audit habits), and Righteous Replacement (active service).", bundle: 'pro' },
+        { q: "Why must we challenge self-pity before we build new habits?", a: "Because we cannot build a disciplined schedule while they are still protecting their pity party.", bundle: 'pro' },
+        { q: "What are the four steps of \"The Path of Restoration\"?", a: "Clarifying the Facts (Teaching), Challenging Self-Pity (Conviction), Righteous Replacement (Correction), and Spurring Obedience (Discipline).", bundle: 'pro' },
+        { q: "Why do the Situation lines in these Sequences contain time gaps?", a: "Because the steps are weeks apart in the friend's life, not turns in one single conversation.", bundle: 'pro' },
+        { q: "Why do we avoid using generic labels like \"Step 1\" on the cards?", a: "Because the step must contain a concrete stimulus and a specific strategy name.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenges to master in this pack:\n• The Sluggish Spirit — helping a listless friend • Pious Pretending — cutting through spiritual-sounding excuses • The Feelings Trap — dealing with the \"I don't feel like it\" reflex • The Gossip Grapevine — stopping rumors in their tracks • Private Offenses — letting minor hurts go in love\nEach challenge represents a common lock that stops our growth.",
+      cards: [
+        { q: "What is the purpose of the Challenges mode?", a: "To train you to recognize and categorize common problems from the outside.", bundle: 'pro' },
+        { q: "What is the specific miss in \"The Sluggish Spirit\"?", a: "Coddling their down mood or accepting their \"I can't\" excuses instead of pushing them to act.", bundle: 'pro' },
+        { q: "What is the specific miss in \"Pious Pretending\"?", a: "Allowing spiritual-sounding phrases like \"the devil made me do it\" to shield them from responsibility.", bundle: 'pro' },
+        { q: "What are the biting strategies in \"The Feelings Trap\"?", a: "Spurring Obedience (to get them moving) and Righteous Replacement (to trade brooding for thanksgiving).", bundle: 'pro' },
+        { q: "What must we avoid in \"The Gossip Grapevine\"?", a: "Listening to negative details or \"prayer requests\" about someone who is not in the room.", bundle: 'pro' },
+        { q: "What does \"Private Offenses\" train us to do?", a: "To put off bitterness and put on prayer and soft answers when we are slighted.", bundle: 'pro' },
+        { q: "Why is Challenges not necessarily harder than other modes?", a: "It simply organizes the cards around the problem category rather than the strategy.", bundle: 'pro' },
+        { q: "Why must every Challenge card show the strategy name in brackets?", a: "So the user can see exactly which biblical move solved that specific problem.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "The five mindsets you practise in this pack:\n• Feelings — duty is independent of our emotions • Habits — the Spirit makes change possible at any age • Plain Speech — we must name the sin to find the cure • Self-Forgiveness — we rest in Christ's payment, not our own • Confrontation — humble restoration is the truest form of love\nThe battle inside ourselves is what decides whether we can help others.",
+      cards: [
+        { q: "What is the purpose of the Mindset mode?", a: "To train you to identify and reset the limiting thoughts that stop your care.", bundle: 'pro' },
+        { q: "What is the limiting thought behind \"Feelings\"?", a: "\"I cannot do my duty or help my friend until I feel motivated to do so.\"", bundle: 'pro' },
+        { q: "What is the reset for \"Habits\"?", a: "You are not an animal to be trained; the Holy Spirit makes change possible at any age.", bundle: 'pro' },
+        { q: "What is the cost of avoiding \"Plain Speech\"?", a: "Your friend stays trapped under a vague cloud of guilt without any hope of a cure.", bundle: 'pro' },
+        { q: "Why is \"Self-Forgiveness\" a theological error?", a: "It is a prideful attempt to pay for our own sins instead of resting in Christ's complete payment.", bundle: 'pro' },
+        { q: "What is the limiting thought behind \"Confrontation\"?", a: "\"Pointing out a brother's sin is always unloving, judgmental, and hypocritical.\"", bundle: 'pro' },
+        { q: "Why is restoring a brother in meekness the truest form of love?", a: "Because leaving them crushed under the rock of sin leads to their spiritual decay.", bundle: 'pro' },
+        { q: "Why are Mindset cards written as self-talk in the first person?", a: "To help you identify the subtle excuses your own heart makes in the moment.", bundle: 'pro' },
+      ]
+    },
+  ],
+  counseling2: [
+    {
+      name: "Core Idea",
+      description: "Four ways to meet friction between members of a church.\n\n• Sorting Responsibilities — the log in your own eye first\n• Direct Confrontation — face to face, never behind the back\n• Pursuing Peace — the first move is always yours\n• Overcoming With Good — service instead of a score\n\nPeacemaking is obedience, not luck.",
+      cards: [
+        { q: "What are the four conflict resolution strategies in this pack?", a: "Sorting Responsibilities, Direct Confrontation, Pursuing Peace, and Overcoming With Good.", bundle: 'free' },
+        { q: "How do the four fit together?", a: "They provide a complete path of peacemaking: own your part, confront sin directly, pursue peace actively, and overcome hostility with service.", bundle: 'free' },
+        { q: "Who is the user of these strategies?", a: "A regular congregation member helping a friend in their daily walk.", bundle: 'free' },
+        { q: "What is the core goal of these strategies?", a: "Relational reconciliation — restoring broken bonds in the church while preserving biblical truth.", bundle: 'free' },
+        { q: "What is the decide rule for when to intervene?", a: "When a brother is in active sin, or when two members are trapped in an unresolved conflict.", bundle: 'free' },
+        { q: "Why is church discipline considered a blessing?", a: "Because it is a process of care designed for the restoration and blessing of the offender.", bundle: 'pro' },
+        { q: "What is the lay person's role in the church's discipline?", a: "The layman handles the informal pre-disciplinary stages by going one-on-one and then taking witnesses.", bundle: 'pro' },
+        { q: "Where do we find the power to reconcile with our enemies?", a: "The Holy Spirit provides the willingness and the ability as we step out in obedience to the word.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sorting Responsibilities",
+      description: "",
+      cards: [
+        { q: "What is the core idea of Sorting Responsibilities?", a: "Taking the log out of your own eye first and owning your response regardless of how much you were pushed.", bundle: 'free' },
+        { q: "Why does this strategy work?", a: "Because it disarms defensiveness by stopping the Eden blame-shifting reflex.", bundle: 'free' },
+        { q: "What are the three variants of Sorting Responsibilities?", a: "The Eden Check, The Resentment Audit, and The Arrow Swap.", bundle: 'free' },
+        { q: "What is the Eden check?", a: "Stopping the automatic reflex to blame others or circumstances for our own angry reactions.", bundle: 'free' },
+        { q: "What is the resentment audit?", a: "Confessing and owning the bitterness you nursed in response to being wronged by another.", bundle: 'free' },
+        { q: "Why is personal responsibility independent of the other person's actions?", a: "Because we are individually responsible before God for our own responses, regardless of the pressure.", bundle: 'pro' },
+        { q: "What is the arrow swap?", a: "Actively redirecting the focus of a conflict from their failure to your own to find the common ground.", bundle: 'pro' },
+        { q: "What does the Bible say about why we blame others?", a: "It is our default fallen nature since the garden of Eden, attempting to shift the blame eventually onto God.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Direct Confrontation",
+      description: "",
+      cards: [
+        { q: "What is the core idea of Direct Confrontation?", a: "Opposing sin and hypocrisy face-to-face in the congregation instead of gossiping behind people's backs.", bundle: 'free' },
+        { q: "Why does this strategy work?", a: "It stops the spread of rumors immediately and forces the sin to be dealt with in truth and love.", bundle: 'free' },
+        { q: "What are the three variants of Direct Confrontation?", a: "The Face-to-Face Lock, The Gentle Opposition, and The Public Check.", bundle: 'free' },
+        { q: "What is the face-to-face lock?", a: "Refusing to listen to gossip about an absent brother and insisting on meeting them directly.", bundle: 'free' },
+        { q: "What is gentle opposition?", a: "Confronting a brother caught in a clear trespass with meekness and a quiet voice.", bundle: 'free' },
+        { q: "When is a confrontation considered public?", a: "When the sin is already open and apparent to everyone, requiring an open check to protect the church's unity.", bundle: 'pro' },
+        { q: "Why is passive silence in the presence of sin dangerous?", a: "Because it leaves our brother under the weight of his sin and lets the church leak its spiritual power.", bundle: 'pro' },
+        { q: "What is the difference between judging a brother and restoring him?", a: "Judging is done in haughtiness to condemn; restoring is done in meekness to make them useful again.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Pursuing Peace",
+      description: "",
+      cards: [
+        { q: "What is the core idea of Pursuing Peace?", a: "Seeking reconciliation actively and doing everything on your side to make peace without compromising truth.", bundle: 'free' },
+        { q: "Why does this strategy work?", a: "It stops the verbal ping-pong match of arguments by offering a soft answer.", bundle: 'free' },
+        { q: "What are the three variants of Pursuing Peace?", a: "The Soft Return, The Love Cover, and The Clean Border.", bundle: 'free' },
+        { q: "What is the soft return?", a: "Responding to a verbal attack with a soft answer to stop the conflict from escalating.", bundle: 'free' },
+        { q: "What is the love cover?", a: "Choosing to let minor slights and personal offenses pass without keeping a record of them.", bundle: 'free' },
+        { q: "What is the clean border?", a: "Establishing your own peaceful stance and leaving the door open when the other person refuses to reconcile.", bundle: 'pro' },
+        { q: "Why is reconciliation always your move?", a: "Because Jesus left no loopholes: whether you are the offender (Matthew 5) or the offended (Matthew 18), you must go.", bundle: 'pro' },
+        { q: "When is peace not possible?", a: "When the other person refuses, or when peace would require the compromise of God's written word.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Overcoming With Good",
+      description: "",
+      cards: [
+        { q: "What is the core idea of Overcoming With Good?", a: "Conquering hostile attacks by actively meeting the practical needs of your enemy.", bundle: 'free' },
+        { q: "Why does this strategy work?", a: "Because goodness is a far more powerful weapon than evil, and active service disarms hostility.", bundle: 'free' },
+        { q: "What are the three variants of Overcoming With Good?", a: "The Practical Surprise, The Verbal Blessing, and The Prayer Swap.", bundle: 'free' },
+        { q: "What is the practical surprise?", a: "Actively serving or helping someone who is currently mistreating or opposing you.", bundle: 'free' },
+        { q: "What is the verbal blessing?", a: "Responding to a verbal attack with kind words and sincere prayers for their welfare.", bundle: 'free' },
+        { q: "What is the prayer swap?", a: "Offering to pray out loud for the welfare and salvation of your tormentor instead of defending yourself.", bundle: 'pro' },
+        { q: "Why does retaliation always fail?", a: "Because returning evil for evil only multiplies the forces of the evil one.", bundle: 'pro' },
+        { q: "What is the biblical foundation of Overcoming With Good?", a: "Romans 12:20 — if your enemy is hungry, feed him; if he is thirsty, give him a drink.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n• Friction in the Ranks — Direct Confrontation, Pursuing Peace or Sorting Responsibilities • Fending Off Attacks — Overcoming With Good or Pursuing Peace • The Conflict Resolution Set — everything mixed\nOne question decides: what did the other person just do?",
+      cards: [
+        { q: "What is the purpose of the Collections mode?", a: "To train you to choose the right relational strategy when several might seem to fit.", bundle: 'pro' },
+        { q: "What does \"Friction in the Ranks\" choose between?", a: "Direct Confrontation (for rumors), Pursuing Peace (for broken bonds), and Sorting Responsibilities (for blame-shifting).", bundle: 'pro' },
+        { q: "What does \"Fending Off Attacks\" choose between?", a: "Overcoming With Good (for active service) and Pursuing Peace (for a soft answer).", bundle: 'pro' },
+        { q: "What deciding question separates Sorting Responsibilities and Pursuing Peace?", a: "Are you addressing your own failure first, or are you offering a path to stop the argument?", bundle: 'pro' },
+        { q: "What decides between Overcoming With Good and Pursuing Peace?", a: "Do they need an immediate soft answer, or a practical service to break their hostility?", bundle: 'pro' },
+        { q: "Why do we tag all Collections cards as pro?", a: "Because Collections is a pro-only training mode that is closed for free users.", bundle: 'pro' },
+        { q: "How many collections are in this pack?", a: "Three collections, ranging from specific rank friction to the full set.", bundle: 'pro' },
+        { q: "Where does the theory for each collection choice live?", a: "In the descriptions of the individual strategies in Single Strategy.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one insists on:\n\n• The Matthew 18 Process — Direct Confrontation → Direct Confrontation → Direct Confrontation\n• Attacking the Problem — Sorting Responsibilities → Pursuing Peace → Overcoming With Good\n• Opposing Hypocrisy — Direct Confrontation → Pursuing Peace → Overcoming With Good\n\nIn each one the order is doing the work, not the individual strategies.",
+      cards: [
+        { q: "What is the purpose of the Sequences mode?", a: "To train you in the step-by-step order of biblical conflict resolution over several weeks.", bundle: 'pro' },
+        { q: "What is the order of steps in \"The Matthew 18 Process\"?", a: "Direct Confrontation (privately) → Direct Confrontation (with witnesses) → Direct Confrontation (church elders).", bundle: 'pro' },
+        { q: "Why do we keep the first step of Matthew 18 strictly private?", a: "To protect our brother's reputation and win him back without involving others.", bundle: 'pro' },
+        { q: "What is the order of steps in \"Attacking the Problem\"?", a: "Sorting Responsibilities (own your part) → Pursuing Peace (soft answer) → Overcoming With Good (active service).", bundle: 'pro' },
+        { q: "Why must we sort responsibilities before we pursue peace?", a: "Because we cannot build a bridge of peace while we are still pointing fingers and shifting blame.", bundle: 'pro' },
+        { q: "What is the order of steps in \"Opposing Hypocrisy\"?", a: "Direct Confrontation (oppose the sin) → Pursuing Peace (soft path back) → Overcoming With Good (practical reconciliation).", bundle: 'pro' },
+        { q: "Why do the step fronts in these Sequences contain time gaps?", a: "Because the steps are weeks apart in the members' lives, not turns in one conversation.", bundle: 'pro' },
+        { q: "How do we write the steps of a Sequence?", a: "Each step front must name the strategy and give a concrete stimulus to react to.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenges to master in this pack:\n• The Marriage Wall — roommates or couples trapped in blameshifting • The Gossip Trap — members dumping rumors in your lap • Active Hostility — opponents throwing verbal digs • Refused Peace — when your apology is rejected • The Neutrality Escape — the temptation to stay silent during sin\nEach challenge represents a common relational barrier in the church.",
+      cards: [
+        { q: "What is the purpose of the Challenges mode?", a: "To train you to recognize and categorize common conflict scenarios from the outside.", bundle: 'pro' },
+        { q: "What is the specific miss in \"The Marriage Wall\"?", a: "Focusing on the other person's failure or agreeing with their blame instead of owning your own part.", bundle: 'pro' },
+        { q: "What is the specific miss in \"The Gossip Trap\"?", a: "Listening to negative stories or \"prayer requests\" about someone who is not in the room.", bundle: 'pro' },
+        { q: "What are the biting strategies in \"Active Hostility\"?", a: "Overcoming With Good (to serve them) and Pursuing Peace (to stop the fight).", bundle: 'pro' },
+        { q: "What must we avoid in \"Refused Peace\"?", a: "Allowing their rejection of your apology to produce bitterness in your own heart.", bundle: 'pro' },
+        { q: "What does \"The Neutrality Escape\" train you to do?", a: "To put off passive silence and take the active responsibility to confront sin and make peace.", bundle: 'pro' },
+        { q: "Why must every Challenge card show the strategy name in brackets?", a: "So the user can see exactly which biblical move solved that specific scenario.", bundle: 'pro' },
+        { q: "How many challenges are in this pack?", a: "Five distinct categories of relational friction.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "The four mindsets you practise in this pack:\n• Blame — my reaction is my responsibility, regardless of their actions • Gossip — direct face-to-face speech mends what rumors destroy • Neutrality — passive silence during sin is a betrayal of love • Retaliation — we conquer hostility with active, aggressive goodness\nThe battle inside our own hearts is what decides whether we can build peace.",
+      cards: [
+        { q: "What is the purpose of the Mindset mode?", a: "To train you to identify and reset the limiting thoughts that stop your peacemaking.", bundle: 'pro' },
+        { q: "What is the limiting thought behind \"Blame\"?", a: "\"My reactions are justified because she treated me so unfairly first.\"", bundle: 'pro' },
+        { q: "What is the reset for \"Gossip\"?", a: "Talking behind someone's back is sin, even if the rumors are completely true. Talk to them, not about them.", bundle: 'pro' },
+        { q: "What is the cost of avoiding conflict in \"Neutrality\"?", a: "Our brother stays trapped under his sin, and the church's witness is ruined.", bundle: 'pro' },
+        { q: "Why is \"Retaliation\" a spiritual failure?", a: "It multiplies the evil instead of conquering it. We must use the powerful weapons of goodness.", bundle: 'pro' },
+        { q: "What is the limiting thought behind \"Retaliation\"?", a: "\"Being nice to an active enemy is just fake, weak, and hypocritical.\"", bundle: 'pro' },
+        { q: "Why is a clear confrontation a sign of love?", a: "Because leaving a brother caught in a trespass is hatred; mending him is genuine care.", bundle: 'pro' },
+        { q: "Why are Mindset cards written as self-talk in the first person?", a: "To help you identify the subtle excuses your own heart makes under relational pressure.", bundle: 'pro' },
+      ]
+    },
+  ],
 };

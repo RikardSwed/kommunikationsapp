@@ -707,6 +707,8 @@ applyInputCounterVisibility();
     assertivecomm2: { label: 'Assertive Communication 2 — Social & Equal Connections', minLevel: 'extended' },
     assertivecommadv: { label: 'Assertive Communication — Advanced', minLevel: 'complete' },
     integratedmaster: { label: 'The Integrated Masterclass', minLevel: 'complete' },
+    counseling1: { label: 'Biblical Counseling 1 — Personal Restoration', minLevel: 'complete' },
+    counseling2: { label: 'Biblical Counseling 2 — Conflict and Reconciliation', minLevel: 'complete' },
   };
 
   // ── PROGRAM_CONFIG (v1.26.81) ─────────────────────────────────────────
@@ -2869,6 +2871,34 @@ const BUNDLE_DEFS = {
     },
   ],
   integratedmaster: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  counseling1: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  counseling2: [
     {
       id: 'free',
       tier: 'free',

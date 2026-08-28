@@ -4313,4 +4313,152 @@ const mindsetCollections = {
       ]
     },
   ],
+  counseling1: [
+    {
+      name: "Feelings",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"I can't do my duty until I feel motivated to do it.\"\nWhat is true instead: feelings are followers, not leaders. They catch up when we act.\nWhy it feels right: our emotions are loud, and acting against them feels unnatural or fake.\nWhat it costs: we stay paralyzed in bed, the piles grow higher, and our spirits sink lower.\nMindset: do the right thing first; the feelings will catch up.",
+      inputs: [
+        { q: "I can't pray today because my heart is too cold.", a: "Prayer is about obedience, not your mood. Pray for five minutes right now anyway.", bundle: 'pro' },
+        { q: "It would be hypocritical to serve when I don't feel motivated.", a: "Doing what is right is obedience, not hypocrisy. Step out anyway.", bundle: 'pro' },
+        { q: "I'll start cleaning once the depression lifts.", a: "The depression lifts as we work. Spread out the board and start.", bundle: 'pro' },
+        { q: "I don't have the energy to read my Bible.", a: "We need the word most in the storm. Read one verse today.", bundle: 'pro' },
+        { q: "I have to wait for God to give me the desire to reconcile.", a: "God gives us strength as we obey. Write the first message now.", bundle: 'pro' },
+        { q: "If I act without feeling, it's just empty structure.", a: "Structure is the difference between sloppiness and effectiveness. Move anyway.", bundle: 'pro' },
+        { q: "I'm too exhausted to face my daily duties today.", a: "Do what you can do this day. Even a small dent brings hope.", bundle: 'pro' },
+        { q: "My feelings are too intense to ignore.", a: "We are feeling-oriented, but God's word is our authority. Obey the word.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Habits",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"I am too old to change these deeply ingrained patterns of sin.\"\nWhat is true instead: you are not an animal to be trained. You are a new creation in Christ.\nWhy it feels right: we have failed so many times that staying defeated feels like realism.\nWhat it costs: we freeze ourselves in disobedience and deny the power of the Holy Spirit.\nMindset: change is possible because the Spirit is at work in you.",
+      inputs: [
+        { q: "You can't teach an old dog new tricks.", a: "You are not an animal. You are a man created in the image of God.", bundle: 'pro' },
+        { q: "These patterns of worry have been with me for forty years.", a: "The Spirit is stronger than forty years of habit. Take the first step today.", bundle: 'pro' },
+        { q: "I've tried to change before and always failed.", a: "You tried in your own strength. Let's work God's way with His word.", bundle: 'pro' },
+        { q: "I am just naturally an anxious person.", a: "Anxiety is a habit of mind to be put off, not a personality trait.", bundle: 'pro' },
+        { q: "My brain is wired to react in bitter anger.", a: "You are a new creation. Put off the old man and put on the new.", bundle: 'pro' },
+        { q: "It's too late for me to build a disciplined life.", a: "Christians are not frozen or refrigerated. We are green and growing.", bundle: 'pro' },
+        { q: "This habit of gossip is too deeply ingrained to stop.", a: "We can replace gossip with edification. Start the trade today.", bundle: 'pro' },
+        { q: "I am stuck in this spiral of defeat forever.", a: "Tomorrow is in God's hands. He demands change and provides the power.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Plain Speech",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If I call their sin by its real name, I will break them.\"\nWhat is true instead: naming the real sin is the only way to find real forgiveness.\nWhy it feels right: we want to be gentle, and talking about \"mistakes\" feels safer than \"sin\".\nWhat it costs: they stay trapped under a vague cloud of guilt without any hope of a cure.\nMindset: kind words speak truth. We must poke the balloon to let the air out.",
+      inputs: [
+        { q: "Naming their sin will only crush their fragile self-esteem.", a: "Coddling their self-pity keeps them trapped. Naming the sin brings real hope.", bundle: 'pro' },
+        { q: "I should euphemize it as a \"weakness\" to be kind.", a: "Euphemizing sin is a copout. We must call it sin to find the cure.", bundle: 'pro' },
+        { q: "If I say they sinned, they will reject me.", a: "Speak the truth in love. True love cares too much to leave them in error.", bundle: 'pro' },
+        { q: "They are too depressed to handle the truth about their failure.", a: "True hope begins when we stop making excuses and confess to the Lord.", bundle: 'pro' },
+        { q: "I should focus on building them up first.", a: "We cannot build on top of rubble. We must clear away the sin first.", bundle: 'pro' },
+        { q: "Naming their gossip as sin feels too harsh.", a: "It is a gentle restoration, but it must be honest. Gossip is sin.", bundle: 'pro' },
+        { q: "Vague encouragement is safer than direct confrontation.", a: "Vague words leave them under vague guilt. Poke the balloon.", bundle: 'pro' },
+        { q: "They just need me to agree that their situation is hopeless.", a: "Agreeing with their despair is a betrayal. Pity feeds depression.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Self-Forgiveness",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"My biggest problem is that I need to learn to forgive myself.\"\nWhat is true instead: the Bible knows nothing of self-forgiveness. You need to accept God's forgiveness.\nWhy it feels right: we still feel the shame, so we assume the problem is with us, not our theology.\nWhat it costs: we waste our energy on a prideful attempt to pay for our own sins.\nMindset: Christ's blood paid the entire debt. Rest in His work.",
+      inputs: [
+        { q: "I know God forgives me, but I just can't forgive myself.", a: "You are trying to pay a debt that Christ already paid. Rest in His cross.", bundle: 'pro' },
+        { q: "My guilt is too heavy because of what I did.", a: "Real guilt is washed clean by real blood. Accept God's verdict.", bundle: 'pro' },
+        { q: "I must continue to feel bad to prove I am truly sorry.", a: "That is works-righteousness. Forgiveness is a promise, not a feeling.", bundle: 'pro' },
+        { q: "I need to find a way to make peace with my own conscience.", a: "Conscience must be informed by the word. If God says you are clean, you are clean.", bundle: 'pro' },
+        { q: "My failure is too unique for ordinary grace to cover.", a: "No sin is outside the design of the cross. Let the blood wipe it out.", bundle: 'pro' },
+        { q: "I must carry this regret as a reminder of my weakness.", a: "Christ died to free you from regret. Walk in newness of life.", bundle: 'pro' },
+        { q: "I can't move on until I feel reconciled with myself.", a: "You are reconciled to God. That is the only relationship that rules.", bundle: 'pro' },
+        { q: "Self-condemnation is a sign of true humility.", a: "It is a prideful refusal to accept God's free gift of grace.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Confrontation",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Pointing out a brother's sin is an unloving and self-righteous thing to do.\"\nWhat is true instead: leaving a brother under the weight of sin is the truest form of hatred.\nWhy it feels right: we are afraid of looking hypocritical or being rejected by our friend.\nWhat it costs: they continue to slide down the skids, and the church leaks its power.\nMindset: go in meekness to restore, not to judge.",
+      inputs: [
+        { q: "Who am I to point out their failure when I have my own?", a: "You go in meekness as a fellow sinner, not as a judge.", bundle: 'pro' },
+        { q: "It is more loving to stay quiet and just pray for them.", a: "True love is active. Leaving them trapped under the rock is hatred.", bundle: 'pro' },
+        { q: "They will think I am lording it over them.", a: "Not if you go in gentleness, admitting you might need their help next week.", bundle: 'pro' },
+        { q: "Confrontation always breeds division in the church.", a: "True unity is built on truth. Confrontation brings genuine reconciliation.", bundle: 'pro' },
+        { q: "It is the pastor's job to handle these sins, not mine.", a: "Every member is called to restore. This is our mutual care.", bundle: 'pro' },
+        { q: "I'm too afraid of their reaction to say anything.", a: "Fear is culpable laziness. God has given you the resources; use them.", bundle: 'pro' },
+        { q: "They are caught in a major fall; I will only make it worse.", a: "If you go carefully, looking to yourself, you can never hurt them.", bundle: 'pro' },
+        { q: "We should just accept people as they are.", a: "We accept them in Christ, but we never ignore the sin that destroys them.", bundle: 'pro' },
+      ]
+    },
+  ],
+  counseling2: [
+    {
+      name: "Blame",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"My biggest problems are caused entirely by how she acts.\"\nWe cannot control others, but we are fully responsible to God for our own responses.\nBlaming others feels right because their behavior really is unfair, and focusing on their sin shields us from the pain of our own failure.\nIt costs us our sanctification, leaving us trapped in a bitter deadlock where we wait for them to change before we will obey.\nMindset: my reaction is my responsibility, regardless of the pressure.",
+      inputs: [
+        { q: "I only lost my temper because he was being completely unreasonable first.", a: "He was wrong, but my angry reaction was my own sin before God. I own my response.", bundle: 'pro' },
+        { q: "I have a right to be cold since she ignored me all morning.", a: "Bitterness is not a right; it is a sin. I must pursue peace regardless of her distance.", bundle: 'pro' },
+        { q: "I can't start the reconciliation until he acknowledges his ninety percent of the blame.", a: "I am responsible for my own ten percent, and obedience means taking the first step.", bundle: 'pro' },
+        { q: "My bitterness is just a natural result of being treated so unfairly.", a: "My bitterness is my own choice to nurse resentment. I must put it off and put on peace.", bundle: 'pro' },
+        { q: "I wouldn't have lied to avoid the argument if she didn't react so harshly.", a: "I chose to lie instead of speaking the truth in love. The fear of her reaction is no excuse.", bundle: 'pro' },
+        { q: "He is the one who broke the contract, so he is the entire problem here.", a: "He broke the contract, but my bitter attitude is my own failure to keep my heart clean.", bundle: 'pro' },
+        { q: "I can't be expected to be nice when I am constantly being treated like an enemy.", a: "Christ calls us to bless those who curse us. The treatment I receive does not rule my duty.", bundle: 'pro' },
+        { q: "Our roommate group is completely ruined because of her selfishness.", a: "I cannot control her selfishness, but I can control my own daily acts of service to her.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Gossip",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Talking about his failure with an outside friend helps me process the pain.\"\nSpeaking about a brother behind his back is gossip, which destroys unity and spreads poison in the church.\nIt feels right because sharing the story with a sympathetic friend relieves our immediate emotional pressure and makes us feel validated.\nIt costs the church its power, breeds suspicion, and prevents the face-to-face reconciliation that Jesus commands.\nMindset: talk to the person, never about them.",
+      inputs: [
+        { q: "I'm just sharing this prayer request about his marriage so we can lift them up.", a: "Sharing negative details about an absent brother is gossip, even when I call it prayer.", bundle: 'pro' },
+        { q: "Getting this frustration off my chest with a friend helps me cope with her pride.", a: "Venting to an outsider only deepens my resentment. I must go to her face-to-face.", bundle: 'pro' },
+        { q: "If I tell a neutral third party first, I can get their advice on the conflict.", a: "I am gathering a biased audience for my side. I must go directly to the person I have the issue with.", bundle: 'pro' },
+        { q: "It's not gossip if the details of his moral failure are completely true.", a: "Love covers a multitude of sins. Spreading true rumors is still the sin of gossip.", bundle: 'pro' },
+        { q: "I need to tell others about her cheating so they can protect themselves from her.", a: "Hiding behind warning others is a copout. I must go and confront her privately in meekness.", bundle: 'pro' },
+        { q: "Talking to his roommate about his drinking will help us find a solution.", a: "I am talking behind his back. I must go to him directly or bring witnesses face-to-face.", bundle: 'pro' },
+        { q: "She won't listen to me anyway, so there's no harm in talking to someone else about it.", a: "The harm is to my own heart and the church's peace. I must stay silent or take the next step.", bundle: 'pro' },
+        { q: "I need to vent about the leader's decision because it was incredibly unfair to the group.", a: "Venting is murmuring. I must go to the leader directly or let the matter go in love.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Neutrality",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Hiding behind silence is the most loving and non-judgmental way to handle other people's conflicts.\"\nStaying silent during active sin is a failure to love your brother and a betrayal of the body of Christ.\nIt feels right because it protects us from the discomfort of confrontation, and lets us pretend we are being humble and non-directive.\nIt costs our brother his restoration, leaving him trapped under the rock of sin while the church's witness decays.\nMindset: love is active and confrontational when a brother is caught in a trap.",
+      inputs: [
+        { q: "It is none of my business if a fellow member is cheating on his taxes.", a: "We are members of one another. If he is trapped in sin, it is my business to restore him.", bundle: 'pro' },
+        { q: "I am being humble by not judging their marriage conflict from the outside.", a: "Humility does not mean passivity. I must offer to help them reconcile face-to-face.", bundle: 'pro' },
+        { q: "It is more loving to stay quiet and just pray for his drug habit silently.", a: "Leaving him under the weight of sin is hatred, not love. I must speak to him directly.", bundle: 'pro' },
+        { q: "It is the pastor's job to deal with public hypocrisy, not mine as a layman.", a: "Every member is called to restore. God laid this brother in my pathway today.", bundle: 'pro' },
+        { q: "I should stay out of it to preserve my own peace and comfort in the small group.", a: "That is selfish laziness. True peace is built on truth and reconciliation.", bundle: 'pro' },
+        { q: "He is too intimidating, so I'll just wait for someone else to say something.", a: "Fear of man is a trap. I must go in meekness, trusting God for the courage.", bundle: 'pro' },
+        { q: "If I stay neutral, I can remain a friend to both sides of the fight.", a: "Neutrality in the presence of sin is a compromise. I must stand for truth and reconciliation.", bundle: 'pro' },
+        { q: "They will think I am being self-righteous if I bring up their sin.", a: "If I go in meekness, admitting I might need their help next week, I cannot look self-righteous.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Retaliation",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Hitting back in kind is the only fair way to teach my tormentor a lesson.\"\nRetaliation only multiplies the forces of evil; we conquer hostility with active, aggressive goodness.\nIt feels right because matching their anger feels like justice, and defending ourselves feels like a basic survival reflex.\nIt costs us the victory, keeping both parties locked in a sinful ping-pong match that God never blesses.\nMindset: defeat evil with good, using the powerful weapons of grace.",
+      inputs: [
+        { q: "He slandered my work, so I have every right to expose his mistakes in the next meeting.", a: "If I return evil for evil, I have been conquered. I must find a way to serve him instead.", bundle: 'pro' },
+        { q: "If I am nice to her after she insulted me, it will look like she won the fight.", a: "The winner is the one who obeys God. I conquer her insult by offering a blessing.", bundle: 'pro' },
+        { q: "He called me a legalist, so I should call him out on his obvious hypocrisy.", a: "A soft answer turns away wrath. I must respond with kind words and keep my heart clean.", bundle: 'pro' },
+        { q: "She deserves to feel the pain she caused me by ignoring my texts.", a: "Vengeance is the Lord's prerogative, not mine. I must let go of the score.", bundle: 'pro' },
+        { q: "I should protect myself by cutting him off completely and never offering help.", a: "Cutting him off is bitter retreat. I must look for a practical way to meet his needs.", bundle: 'pro' },
+        { q: "He threw my gift back in my face, which proves being nice is a waste of time.", a: "My duty is to obey God, not to get a warm reaction. I will continue to bless him.", bundle: 'pro' },
+        { q: "If I don't defend my reputation publicly, everyone will believe his lies.", a: "My reputation is in God's hands. I will focus on doing what is honourable in the eyes of everyone.", bundle: 'pro' },
+        { q: "Offering to carry his bags is just letting him walk all over me like a doormat.", a: "It is an aggressive act of biblical love. I will serve him in faith to break his hostility.", bundle: 'pro' },
+      ]
+    },
+  ],
 };

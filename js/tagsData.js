@@ -373,6 +373,12 @@ const packTags = {
   integratedmaster: [
     'assertiveness', 'masterclass', 'integration', 'advanced', 'relationships', 'boundaries'
   ],
+  counseling1: [
+    'counseling', 'restoration', 'personal', 'obedience', 'congregation'
+  ],
+  counseling2: [
+    'counseling', 'conflict', 'reconciliation', 'peacemaking', 'congregation'
+  ],
 };
 
 // ─── TOPICS ──────────────────────────────────────────────────────────
@@ -439,4 +445,12 @@ const TOPICS = [
   { id: 'flirt',                 title: 'Flirting',                      packs: ['danbacon1', 'danbacon2', 'danbacon3', 'danbacon4', 'toddv1', 'toddv2', 'toddv3', 'toddv4', 'toddv5'] },
   { id: 'leadership',            title: 'Leadership',                    packs: ['praxframe5', 'praxdread5', 'oconnor4', 'oconnor5'] },
   { id: 'relationshipcomm',      title: 'Communication in Relationships',packs: ['masculine1', 'masculine2', 'masculine3', 'masculine4', 'masculine5', 'masculine6', 'masculinesv', 'parenting1', 'parenting2', 'parenting3', 'parenting4', 'parenting5', 'praxframe1', 'praxframe2', 'praxframe3', 'praxframe4', 'praxdread1', 'praxdread2', 'praxdread3', 'jimmy1', 'jimmy2', 'jimmy5'] },
+
+  // ── Mutual care in a congregation (v1.27.54) ──────────────────────
+  // Added for the Jay Adams packs. Both sit at minLevel 'complete', so this
+  // topic row is invisible to freemium and pro users: app-system.js hides a
+  // topic group with no VISIBLE pack, and only 'complete' shows empty topics.
+  // Redeeming the per-pack code makes the packs visible and the topic appears
+  // with them. Do not add packs here that are meant for everybody.
+  { id: 'counseling',            title: 'Counseling & Restoration',      packs: ['counseling1', 'counseling2'] },
 ];

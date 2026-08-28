@@ -7582,4 +7582,221 @@ const multiStepCollections = {
       ]
     },
   ],
+  counseling1: [
+    {
+      name: "First the Meal, Then the Gospel",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
+      description: "Getting a drifting or non-believing friend to hear the truth by meeting their immediate burden first, then setting up an order of care.\n\n• Gentle Restoration — meet the immediate burden with humility\n• Clarifying the Facts — secure a commitment and gather data\n• Spurring Obedience — present the truth and call to action\n\nWhy this order: meeting the physical or emotional burden first disarms defensiveness. Naming the Gospel before the burden is lifted reads as a trick; naming it after reads as a gift.\nMindset: we must feed the empty stomach before we speak to the soul.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You find a neighbor outside who is shivering and hasn't eaten in two days.",
+          steps: [
+            { front: "Gentle Restoration — You take them inside and sit down with them.", back: "\"I'm not here to lecture you, brother, but I want to get some hot food in you first.\"" },
+            { front: "Clarifying the Facts — One hour later, they have eaten and you need to set up a regular time to help them; you pull out your calendar to schedule.", back: "\"What day next week can you come to the study so we can map out a plan together?\"" },
+            { front: "Spurring Obedience — One week later, they arrive at the study but are hesitant to talk about their soul; you open the scriptures with them.", back: "\"We have sorted out your physical needs, so let's look at what God wants to do in your heart today.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A friend is in financial ruin and asks you for rent money.",
+          steps: [
+            { front: "Gentle Restoration — You sit down to help them carry the immediate load.", back: "\"I want to help you carry this burden, so let's look at your immediate bills together.\"" },
+            { front: "Clarifying the Facts — Three days later, you meet to gather the exact numbers of their debt; you ask them to list their expenses.", back: "\"What did you actually spend your income on this past month so we can see the facts?\"" },
+            { front: "Spurring Obedience — One week later, they are refusing to budget because they feel discouraged; you call them to act regardless of their feelings.", back: "\"You don't have to feel confident to start a budget. Let's write down the first limit together anyway.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A church member's marriage is drifting, and they ask you for advice.",
+          steps: [
+            { front: "Gentle Restoration — You meet them at a coffee shop to listen.", back: "\"I've had my own struggles, brother, but I want to listen and help you through this.\"" },
+            { front: "Clarifying the Facts — Two days later, you meet to find out what actually happened between them; you ask for concrete details.", back: "\"What was happening in your home right before she packed her bags?\"" },
+            { front: "Spurring Obedience — Two weeks later, they are paralyzed by fear of her reaction; you push them to take the first step of obedience.", back: "\"Regardless of how she responds, you need to do what God requires. Let's draft your apology today.\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Steering a Sinking Friend",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
+      description: "Guiding a friend out of listlessness or paralyzing guilt by addressing self-pity first, then organizing their days.\n\n• Challenging Self-Pity — break the downward pity spiral\n• Clarifying the Facts — establish the reality of their habits\n• Righteous Replacement — trade the old pattern for righteous action\n\nWhy this order: we cannot establish new habits while self-pity is still protected. We must poke the balloon before we can build the structure.\nMindset: we must stop the \"I can't\" before we can show them \"I can\".",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "A friend is locked in deep depression and won't leave their house.",
+          steps: [
+            { front: "Challenging Self-Pity — You go to their house and find them in bed.", back: "\"You are not a hopeless failure, and staying in bed won't fix this. What is one small chore we can do right now?\"" },
+            { front: "Clarifying the Facts — Two days later, they are still struggling to maintain any order; you check when they are sleeping and eating.", back: "\"What time did you actually get out of bed yesterday and what did you eat?\"" },
+            { front: "Righteous Replacement — One week later, they are still brooding over their failures; you help them replace brooding with active service.", back: "\"Instead of rehashing your regrets, let's go help wash the dishes in the church kitchen together.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A friend is overwhelmed by guilt from a past sin and is paralyzed.",
+          steps: [
+            { front: "Challenging Self-Pity — They keep saying they can never be forgiven.", back: "\"Christ's blood is sufficient for your sin. What concrete step of obedience is God calling you to take today?\"" },
+            { front: "Clarifying the Facts — Three days later, they are avoiding the person they wronged; you sit down to find out what they have done to reconcile.", back: "\"What have you actually said to him since we last talked?\"" },
+            { front: "Righteous Replacement — Two weeks later, they are still hiding in shame; you push them to put off hiding and put on confession.", back: "\"Instead of running from him, let's go to his house today and ask for his forgiveness face-to-face.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A young member has given up on their studies and is listless.",
+          steps: [
+            { front: "Challenging Self-Pity — They say they are too stupid to pass.", back: "\"You are created in the image of God, and giving up is not an option. What is the first assignment on your desk?\"" },
+            { front: "Clarifying the Facts — Four days later, they haven't opened a book because they \"don't feel like it\"; you check their schedule.", back: "\"How many hours did you actually spend studying yesterday?\"" },
+            { front: "Righteous Replacement — One week later, they are still wasting time on their phone; you help them replace phone scrolling with scheduled study.", back: "\"Instead of scrolling through your phone, let's put it in the drawer and do thirty minutes of reading right now.\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "The Path of Restoration",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
+      description: "The complete process of biblical restoration (2 Tim 3:16) mapped over several weeks.\n\n• Clarifying the Facts — expose the deviation (Teaching)\n• Challenging Self-Pity — call to repentance (Conviction)\n• Righteous Replacement — stand them straight (Correction)\n• Spurring Obedience — build the habit (Discipline)\n\nWhy this order: we must define the deviation before we can call to repentance, and we must correct the path before we can train the habit.\nMindset: restoration is a step-by-step rebuilding of righteousness.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "A friend has been caught spreading gossip in the church.",
+          steps: [
+            { front: "Clarifying the Facts — You meet them to find out what was said.", back: "\"What did you actually tell Mary about John's marriage yesterday?\"" },
+            { front: "Challenging Self-Pity — Three days later, they are defensive and claim everyone does it; you confront the sin directly.", back: "\"Gossip is sin, and defending it only keeps you trapped. Will you confess this to the Lord?\"" },
+            { front: "Righteous Replacement — One week later, they want to replace the gossip with righteous speech; you help them trade gossip for encouragement.", back: "\"Instead of talking about Mary behind her back, let's go tell her how much we appreciate her service.\"" },
+            { front: "Spurring Obedience — Two weeks later, they want to build consistent habits of speech; you lock in a daily discipline.", back: "\"Let's commit to reading Ephesians four together every morning this week to guard our tongues.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A friend has been neglecting their family to play video games.",
+          steps: [
+            { front: "Clarifying the Facts — You ask them about their screen time.", back: "\"How many hours did you actually spend playing games this past weekend?\"" },
+            { front: "Challenging Self-Pity — Five days later, they claim they need it to escape their stress; you confront the evasion.", back: "\"Escaping your family is not how God calls you to handle stress. Will you own this failure?\"" },
+            { front: "Righteous Replacement — One week later, they want to correct the pattern; you help them trade screen time for family time.", back: "\"Instead of turning on the console tonight, let's take your wife out for dinner and listen to her day.\"" },
+            { front: "Spurring Obedience — Three weeks later, they are tempted to slide back; you set up an accountability schedule.", back: "\"We scheduled your gaming for Saturday mornings only. Let's stick to that regardless of how you feel.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A friend has been reacting in bitter anger toward their roommate.",
+          steps: [
+            { front: "Clarifying the Facts — You ask them what triggered the last fight.", back: "\"What did your roommate actually say right before you slammed the door?\"" },
+            { front: "Challenging Self-Pity — Four days later, they are brooding and feeling like the victim; you confront the resentment.", back: "\"Slamming doors in anger is sin, and playing the victim won't heal this. Will you own your reaction?\"" },
+            { front: "Righteous Replacement — One week later, they want to correct the relationship; you help them trade anger for a soft answer.", back: "\"Instead of reacting in bitterness when they leave the dishes, let's offer to wash them together.\"" },
+            { front: "Spurring Obedience — Two weeks later, they want to maintain the peace; you encourage them to pray daily for their roommate.", back: "\"Let's schedule five minutes every morning to pray out loud for your roommate's blessings.\"" },
+          ]
+        },
+      ]
+    },
+  ],
+  counseling2: [
+    {
+      name: "The Matthew 18 Process",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
+      description: "The three stages of biblical reconciliation and correction mapped over several weeks to restore a rebellious brother.\n\n• Direct Confrontation — go one-on-one privately to show them their sin\n• Direct Confrontation — take two or three witnesses when they refuse to listen\n• Direct Confrontation — take it to the elders to lay before the church\n\nWhy this order: we must exhaust the private circle before we involve others, protecting their reputation as long as possible.\nMindset: discipline is the extreme form of care, aimed at mending a broken vessel.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "A brother borrowed a large sum of money from you and has refused to pay it back for a month.",
+          steps: [
+            { front: "Direct Confrontation — You go to him privately to address the unpaid debt face-to-face.", back: "\"We need to talk privately about the money you borrowed and have not returned.\"" },
+            { front: "Direct Confrontation — Two weeks later, he still refuses to pay and avoids your calls; you bring John and Peter as witnesses.", back: "\"Since you won't listen to me, I have brought John and Peter with me so we can settle this in their presence.\"" },
+            { front: "Direct Confrontation — Three weeks after that, he still ignores the debt and the witnesses; you take the matter to the church leadership.", back: "\"Because you still refuse to listen, we are now taking this to the elders so they can lay it before the congregation.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You discover a member is spreading malicious rumors about your business in the congregation.",
+          steps: [
+            { front: "Direct Confrontation — You go to their house to confront the slander privately.", back: "\"I need to talk to you privately about the rumors you have been spreading about my business.\"" },
+            { front: "Direct Confrontation — Ten days later, they continue to tell others the same lies; you bring two deacons as witnesses.", back: "\"Since you continue to spread these rumors, I have brought John and Peter so we can address this together.\"" },
+            { front: "Direct Confrontation — Two weeks after that, they refuse to stop and slander the witnesses too; you take it to the church session.", back: "\"Because you still refuse to stop this slander, we are now laying this before the church elders for formal discipline.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A fellow member has cheated you in a joint business deal and refuses to acknowledge it.",
+          steps: [
+            { front: "Direct Confrontation — You meet him privately in his office to address the cheating directly.", back: "\"We need to talk privately about how you altered the business accounts last week.\"" },
+            { front: "Direct Confrontation — Three weeks later, he denies the facts and refuses to meet; you bring two respected elders informally as witnesses.", back: "\"Since you refuse to discuss the accounts, I have brought John and Peter so we can examine the records together.\"" },
+            { front: "Direct Confrontation — One month after that, he threatens to sue you and ignores the witnesses; you bring the case to the congregation's leadership.", back: "\"Because you still refuse to repent of this fraud, we are now taking this to the church elders for formal discipline.\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Attacking the Problem",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
+      description: "Moving a fighting couple or roommates from attacking each other to joint problem-solving over several weeks.\n\n• Sorting Responsibilities — confess your own part first to turn the arrows\n• Pursuing Peace — establish a soft answer to stop the verbal combat\n• Overcoming With Good — meet their practical needs aggressively to break their hostility\n\nWhy this order: you cannot solve the issue while you are still fighting each other. Poking the fire must stop before you can build the bridge.\nMindset: our words must be spent on cutting the problem in half, not on dicing people.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "Your roommate has stopped talking to you and leaves dirty dishes piled in the sink for days.",
+          steps: [
+            { front: "Sorting Responsibilities — You sit down to confess your own irritation and defensive silence first.", back: "\"I have been passive-aggressive and cold to you, and I need to ask you to forgive me.\"" },
+            { front: "Pursuing Peace — One week later, they snap at you about a chore you forgot to do.", back: "\"I don't want us to live in tension. Let's find a way to manage our chores together.\"" },
+            { front: "Overcoming With Good — Three days after that, they are cooking a meal and run out of clean pans; you wash them all.", back: "\"I see you are busy cooking. Let me wash these pans so you have room to work.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Your teenage son is rebellious, refusing to do his homework, and yelling when confronted.",
+          steps: [
+            { front: "Sorting Responsibilities — You sit with him to own your own harshness and shouting first.", back: "\"I have yelled at you and treated you like an enemy, and I am sorry for my harshness.\"" },
+            { front: "Pursuing Peace — One week later, he starts slamming his door again when you ask about school.", back: "\"I want us to be at peace, son. Let's talk about school quietly when you are ready.\"" },
+            { front: "Overcoming With Good — Two days after that, he is working late on a school project and is exhausted; you bring him dinner.", back: "\"I know you are working hard on that project. I brought you some dinner to help you keep going.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Your spouse is cold, sleeping in the guest room, and accusing you of ignoring her needs.",
+          steps: [
+            { front: "Sorting Responsibilities — You go to her room to own your own negligence and defensive reactions.", back: "\"I have been defensive and ignored your requests, and I ask for your forgiveness.\"" },
+            { front: "Pursuing Peace — Five days later, she snaps that she is tired of your fake apologies.", back: "\"I don't want us to be at war. Let's stop fighting and talk about our real marriage needs.\"" },
+            { front: "Overcoming With Good — One week after that, her car breaks down; you spend the afternoon fixing it in the rain.", back: "\"I know we are struggling, but let me take your car to the garage and get it fixed for you.\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Opposing Hypocrisy",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
+      description: "Responding to public compromise or hypocrisy in the church to restore the unity of the Spirit.\n\n• Direct Confrontation — oppose the public compromise openly to his face\n• Pursuing Peace — offer a soft path back to unity in truth\n• Overcoming With Good — seal the reconciliation by meeting their practical needs\n\nWhy this order: public hypocrisy must be checked immediately to protect the church, but we must quickly offer the path of grace to restore the brother.\nMindset: we oppose the sin to save the sinner, not to win an argument.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "A small group leader is publicly favoring wealthy members and ignoring poorer visitors.",
+          steps: [
+            { front: "Direct Confrontation — You confront him openly after a meeting about his favoritism.", back: "\"Brother, you are welcoming the wealthy but ignoring our poorer visitors. This is a public compromise.\"" },
+            { front: "Pursuing Peace — Two weeks later, he is defensive and angry at you during a committee meeting.", back: "\"I want our group to be united in truth. Let's look at how we can welcome everyone together.\"" },
+            { front: "Overcoming With Good — One week after that, his yard is flooded and he needs help clearing the mud; you show up with a shovel.", back: "\"I heard your yard was flooded. I brought my shovel to help you dig this out today.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A church member is publicly mocking the elders' decisions in the fellowship hall.",
+          steps: [
+            { front: "Direct Confrontation — You stop them in the middle of their speech in front of the others.", back: "\"You are publicly slandering our leaders and causing division. This is sin and it must stop.\"" },
+            { front: "Pursuing Peace — One week later, they avoid you and glare at you in the lobby.", back: "\"I don't want any walls between us. Let's talk about the leaders' decisions quietly whenever you are ready.\"" },
+            { front: "Overcoming With Good — Ten days after that, they are moving house on a Saturday and are short-staffed; you show up with your truck.", back: "\"I know we had a hard discussion, but let me help you load your truck today.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A Sunday school teacher is publicly teaching that some members are superior to others because of their spiritual gifts.",
+          steps: [
+            { front: "Direct Confrontation — You challenge their teaching openly at the end of the class.", back: "\"Your teaching on spiritual gifts contradicts the scriptures and causes public division.\"" },
+            { front: "Pursuing Peace — Two weeks later, they refuse to speak to you and call you legalistic.", back: "\"I want us to be united in the word. Let's sit down with our Bibles and examine this together.\"" },
+            { front: "Overcoming With Good — One month after that, they get sick and are stuck at home; you bring them groceries.", back: "\"I know we disagree on gifts, but I brought you some groceries to help you while you recover.\"" },
+          ]
+        },
+      ]
+    },
+  ],
 };
