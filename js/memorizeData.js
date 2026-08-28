@@ -7267,7 +7267,7 @@ const memorizeCollections = {
     },
     {
       name: "Collections",
-      description: "The three collections in this pack, and what each one makes you choose between:\n• Responding to a Drifting Friend — Gentle Restoration, Clarifying the Facts or Spurring Obedience • Breaking the Spiral — Righteous Replacement or Challenging Self-Pity • The Personal Restoration Set — everything mixed\nOne question decides: is their struggle about motivation, habit, or a sudden fall?",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• Responding to a Drifting Friend — Gentle Restoration, Clarifying the Facts or Spurring Obedience\n• Breaking the Spiral — Righteous Replacement or Challenging Self-Pity\n• The Personal Restoration Set — everything mixed\n\nOne question decides: is their struggle about motivation, habit, or a sudden fall?",
       cards: [
         { q: "What is the purpose of the Collections mode?", a: "To train you to choose the right strategy when several might seem to fit the situation.", bundle: 'pro' },
         { q: "What does \"Responding to a Drifting Friend\" choose between?", a: "Gentle Restoration (for trespasses), Clarifying the Facts (for vagueness), and Spurring Obedience (for listlessness).", bundle: 'pro' },
@@ -7295,7 +7295,7 @@ const memorizeCollections = {
     },
     {
       name: "Challenges",
-      description: "The five challenges to master in this pack:\n• The Sluggish Spirit — helping a listless friend • Pious Pretending — cutting through spiritual-sounding excuses • The Feelings Trap — dealing with the \"I don't feel like it\" reflex • The Gossip Grapevine — stopping rumors in their tracks • Private Offenses — letting minor hurts go in love\nEach challenge represents a common lock that stops our growth.",
+      description: "The five challenges to master in this pack:\n\n• The Sluggish Spirit — helping a listless friend\n• Pious Pretending — cutting through spiritual-sounding excuses\n• The Feelings Trap — dealing with the \"I don't feel like it\" reflex\n• The Gossip Grapevine — stopping rumors in their tracks\n• Private Offenses — letting minor hurts go in love\n\nEach challenge represents a common lock that stops our growth.",
       cards: [
         { q: "What is the purpose of the Challenges mode?", a: "To train you to recognize and categorize common problems from the outside.", bundle: 'pro' },
         { q: "What is the specific miss in \"The Sluggish Spirit\"?", a: "Coddling their down mood or accepting their \"I can't\" excuses instead of pushing them to act.", bundle: 'pro' },
@@ -7309,7 +7309,7 @@ const memorizeCollections = {
     },
     {
       name: "Mindset",
-      description: "The five mindsets you practise in this pack:\n• Feelings — duty is independent of our emotions • Habits — the Spirit makes change possible at any age • Plain Speech — we must name the sin to find the cure • Self-Forgiveness — we rest in Christ's payment, not our own • Confrontation — humble restoration is the truest form of love\nThe battle inside ourselves is what decides whether we can help others.",
+      description: "The five mindsets you practise in this pack:\n\n• Feelings — duty is independent of our emotions\n• Habits — the Spirit makes change possible at any age\n• Plain Speech — we must name the sin to find the cure\n• Self-Forgiveness — we rest in Christ's payment, not our own\n• Confrontation — humble restoration is the truest form of love\n\nThe battle inside ourselves is what decides whether we can help others.",
       cards: [
         { q: "What is the purpose of the Mindset mode?", a: "To train you to identify and reset the limiting thoughts that stop your care.", bundle: 'pro' },
         { q: "What is the limiting thought behind \"Feelings\"?", a: "\"I cannot do my duty or help my friend until I feel motivated to do so.\"", bundle: 'pro' },
@@ -7395,7 +7395,7 @@ const memorizeCollections = {
     },
     {
       name: "Collections",
-      description: "The three collections in this pack, and what each one makes you choose between:\n• Friction in the Ranks — Direct Confrontation, Pursuing Peace or Sorting Responsibilities • Fending Off Attacks — Overcoming With Good or Pursuing Peace • The Conflict Resolution Set — everything mixed\nOne question decides: what did the other person just do?",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• Friction in the Ranks — Direct Confrontation, Pursuing Peace or Sorting Responsibilities\n• Fending Off Attacks — Overcoming With Good or Pursuing Peace\n• The Conflict Resolution Set — everything mixed\n\nOne question decides: what did the other person just do?",
       cards: [
         { q: "What is the purpose of the Collections mode?", a: "To train you to choose the right relational strategy when several might seem to fit.", bundle: 'pro' },
         { q: "What does \"Friction in the Ranks\" choose between?", a: "Direct Confrontation (for rumors), Pursuing Peace (for broken bonds), and Sorting Responsibilities (for blame-shifting).", bundle: 'pro' },
@@ -7423,7 +7423,7 @@ const memorizeCollections = {
     },
     {
       name: "Challenges",
-      description: "The five challenges to master in this pack:\n• The Marriage Wall — roommates or couples trapped in blameshifting • The Gossip Trap — members dumping rumors in your lap • Active Hostility — opponents throwing verbal digs • Refused Peace — when your apology is rejected • The Neutrality Escape — the temptation to stay silent during sin\nEach challenge represents a common relational barrier in the church.",
+      description: "The five challenges to master in this pack:\n\n• The Marriage Wall — roommates or couples trapped in blameshifting\n• The Gossip Trap — members dumping rumors in your lap\n• Active Hostility — opponents throwing verbal digs\n• Refused Peace — when your apology is rejected\n• The Neutrality Escape — the temptation to stay silent during sin\n\nEach challenge represents a common relational barrier in the church.",
       cards: [
         { q: "What is the purpose of the Challenges mode?", a: "To train you to recognize and categorize common conflict scenarios from the outside.", bundle: 'pro' },
         { q: "What is the specific miss in \"The Marriage Wall\"?", a: "Focusing on the other person's failure or agreeing with their blame instead of owning your own part.", bundle: 'pro' },
@@ -7437,7 +7437,7 @@ const memorizeCollections = {
     },
     {
       name: "Mindset",
-      description: "The four mindsets you practise in this pack:\n• Blame — my reaction is my responsibility, regardless of their actions • Gossip — direct face-to-face speech mends what rumors destroy • Neutrality — passive silence during sin is a betrayal of love • Retaliation — we conquer hostility with active, aggressive goodness\nThe battle inside our own hearts is what decides whether we can build peace.",
+      description: "The four mindsets you practise in this pack:\n\n• Blame — my reaction is my responsibility, regardless of their actions\n• Gossip — direct face-to-face speech mends what rumors destroy\n• Neutrality — passive silence during sin is a betrayal of love\n• Retaliation — we conquer hostility with active, aggressive goodness\n\nThe battle inside our own hearts is what decides whether we can build peace.",
       cards: [
         { q: "What is the purpose of the Mindset mode?", a: "To train you to identify and reset the limiting thoughts that stop your peacemaking.", bundle: 'pro' },
         { q: "What is the limiting thought behind \"Blame\"?", a: "\"My reactions are justified because she treated me so unfairly first.\"", bundle: 'pro' },

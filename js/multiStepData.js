@@ -7587,7 +7587,7 @@ const multiStepCollections = {
       name: "First the Meal, Then the Gospel",
       guideFront: "What's happening, and the strategy to use",
       guideBack: "One way it could sound",
-      description: "Getting a drifting or non-believing friend to hear the truth by meeting their immediate burden first, then setting up an order of care.\n\n• Gentle Restoration — meet the immediate burden with humility\n• Clarifying the Facts — secure a commitment and gather data\n• Spurring Obedience — present the truth and call to action\n\nWhy this order: meeting the physical or emotional burden first disarms defensiveness. Naming the Gospel before the burden is lifted reads as a trick; naming it after reads as a gift.\nMindset: we must feed the empty stomach before we speak to the soul.",
+      description: "Getting a drifting or non-believing friend to hear the truth by meeting their immediate burden first, then setting up an order of care.\n\n• Gentle Restoration — meet the immediate burden with humility\n• Clarifying the Facts — secure a commitment and gather data\n• Spurring Obedience — present the truth and call to action\n\nWhy this order: meeting the physical or emotional burden first disarms defensiveness. Naming the Gospel before the burden is lifted reads as a trick; naming it after reads as a gift.\n\nMindset: we must feed the empty stomach before we speak to the soul.",
       inputs: [
         {
           bundle: 'pro',
@@ -7622,7 +7622,7 @@ const multiStepCollections = {
       name: "Steering a Sinking Friend",
       guideFront: "What's happening, and the strategy to use",
       guideBack: "One way it could sound",
-      description: "Guiding a friend out of listlessness or paralyzing guilt by addressing self-pity first, then organizing their days.\n\n• Challenging Self-Pity — break the downward pity spiral\n• Clarifying the Facts — establish the reality of their habits\n• Righteous Replacement — trade the old pattern for righteous action\n\nWhy this order: we cannot establish new habits while self-pity is still protected. We must poke the balloon before we can build the structure.\nMindset: we must stop the \"I can't\" before we can show them \"I can\".",
+      description: "Guiding a friend out of listlessness or paralyzing guilt by addressing self-pity first, then organizing their days.\n\n• Challenging Self-Pity — break the downward pity spiral\n• Clarifying the Facts — establish the reality of their habits\n• Righteous Replacement — trade the old pattern for righteous action\n\nWhy this order: we cannot establish new habits while self-pity is still protected. We must poke the balloon before we can build the structure.\n\nMindset: we must stop the \"I can't\" before we can show them \"I can\".",
       inputs: [
         {
           bundle: 'pro',
@@ -7657,7 +7657,7 @@ const multiStepCollections = {
       name: "The Path of Restoration",
       guideFront: "What's happening, and the strategy to use",
       guideBack: "One way it could sound",
-      description: "The complete process of biblical restoration (2 Tim 3:16) mapped over several weeks.\n\n• Clarifying the Facts — expose the deviation (Teaching)\n• Challenging Self-Pity — call to repentance (Conviction)\n• Righteous Replacement — stand them straight (Correction)\n• Spurring Obedience — build the habit (Discipline)\n\nWhy this order: we must define the deviation before we can call to repentance, and we must correct the path before we can train the habit.\nMindset: restoration is a step-by-step rebuilding of righteousness.",
+      description: "The complete process of biblical restoration (2 Tim 3:16) mapped over several weeks.\n\n• Clarifying the Facts — expose the deviation (Teaching)\n• Challenging Self-Pity — call to repentance (Conviction)\n• Righteous Replacement — stand them straight (Correction)\n• Spurring Obedience — build the habit (Discipline)\n\nWhy this order: we must define the deviation before we can call to repentance, and we must correct the path before we can train the habit.\n\nMindset: restoration is a step-by-step rebuilding of righteousness.",
       inputs: [
         {
           bundle: 'pro',
@@ -7697,7 +7697,7 @@ const multiStepCollections = {
       name: "The Matthew 18 Process",
       guideFront: "What's happening, and the strategy to use",
       guideBack: "One way it could sound",
-      description: "The three stages of biblical reconciliation and correction mapped over several weeks to restore a rebellious brother.\n\n• Direct Confrontation — go one-on-one privately to show them their sin\n• Direct Confrontation — take two or three witnesses when they refuse to listen\n• Direct Confrontation — take it to the elders to lay before the church\n\nWhy this order: we must exhaust the private circle before we involve others, protecting their reputation as long as possible.\nMindset: discipline is the extreme form of care, aimed at mending a broken vessel.",
+      description: "The three stages of biblical reconciliation and correction mapped over several weeks to restore a rebellious brother.\n\n• Direct Confrontation — go one-on-one privately to show them their sin\n• Direct Confrontation — take two or three witnesses when they refuse to listen\n• Direct Confrontation — take it to the elders to lay before the church\n\nWhy this order: we must exhaust the private circle before we involve others, protecting their reputation as long as possible.\n\nMindset: discipline is the extreme form of care, aimed at mending a broken vessel.",
       inputs: [
         {
           bundle: 'pro',
@@ -7732,7 +7732,7 @@ const multiStepCollections = {
       name: "Attacking the Problem",
       guideFront: "What's happening, and the strategy to use",
       guideBack: "One way it could sound",
-      description: "Moving a fighting couple or roommates from attacking each other to joint problem-solving over several weeks.\n\n• Sorting Responsibilities — confess your own part first to turn the arrows\n• Pursuing Peace — establish a soft answer to stop the verbal combat\n• Overcoming With Good — meet their practical needs aggressively to break their hostility\n\nWhy this order: you cannot solve the issue while you are still fighting each other. Poking the fire must stop before you can build the bridge.\nMindset: our words must be spent on cutting the problem in half, not on dicing people.",
+      description: "Moving a fighting couple or roommates from attacking each other to joint problem-solving over several weeks.\n\n• Sorting Responsibilities — confess your own part first to turn the arrows\n• Pursuing Peace — establish a soft answer to stop the verbal combat\n• Overcoming With Good — meet their practical needs aggressively to break their hostility\n\nWhy this order: you cannot solve the issue while you are still fighting each other. Poking the fire must stop before you can build the bridge.\n\nMindset: our words must be spent on cutting the problem in half, not on dicing people.",
       inputs: [
         {
           bundle: 'pro',
@@ -7767,7 +7767,7 @@ const multiStepCollections = {
       name: "Opposing Hypocrisy",
       guideFront: "What's happening, and the strategy to use",
       guideBack: "One way it could sound",
-      description: "Responding to public compromise or hypocrisy in the church to restore the unity of the Spirit.\n\n• Direct Confrontation — oppose the public compromise openly to his face\n• Pursuing Peace — offer a soft path back to unity in truth\n• Overcoming With Good — seal the reconciliation by meeting their practical needs\n\nWhy this order: public hypocrisy must be checked immediately to protect the church, but we must quickly offer the path of grace to restore the brother.\nMindset: we oppose the sin to save the sinner, not to win an argument.",
+      description: "Responding to public compromise or hypocrisy in the church to restore the unity of the Spirit.\n\n• Direct Confrontation — oppose the public compromise openly to his face\n• Pursuing Peace — offer a soft path back to unity in truth\n• Overcoming With Good — seal the reconciliation by meeting their practical needs\n\nWhy this order: public hypocrisy must be checked immediately to protect the church, but we must quickly offer the path of grace to restore the brother.\n\nMindset: we oppose the sin to save the sinner, not to win an argument.",
       inputs: [
         {
           bundle: 'pro',

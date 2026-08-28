@@ -5,7 +5,7 @@
 // (DS.createCardMode / DS.createHandsfreeMode) and are declared in
 // app-modes.js and app-handsfree.js.
 
-const VERSION = 'v1.27.56';
+const VERSION = 'v1.27.58';
 
 // Keep every version label in the UI in sync with VERSION (v1.26.44).
 // The hardcoded strings in index.html are only fallbacks — this runs at
@@ -1005,3 +1005,65 @@ fbInitBar('fb-mind-front');
 fbInitBar('fb-mind-back');
 fbInitBar('fb-coll-front');
 fbInitBar('fb-coll-back');
+
+/* ─── ROTATION CLEAN-UP (v1.27.57) ───────────────────────────────────────────
+   Rikard, 2026-08-28: after the phone had been turned sideways and back, parts
+   of the app that are meant to be fixed could be dragged up and down — the top
+   banner on the home screen, the bottom nav, the mode screen, and every screen
+   reached from them. Scrollbars appeared down the right edge.
+
+   The cause is `height: 100dvh` on `.home-screen`, `.mode-screen` and their
+   siblings, combined with `overflow-y: auto` on the same element. `dvh` is
+   resolved by the browser, and after a rotation iOS can hand back a stale
+   value. The box is then shorter than its own content, so the WHOLE screen —
+   banner and nav included, since they live inside it — becomes a scroll area.
+
+   v1.27.56 stopped the landscape layout from ever being drawn, which prevents
+   the fault for anyone who never rotates. It does not help someone who already
+   did, or who rotates before the media query has settled. This does.
+
+   Two steps, in order, and only on a real orientation change:
+
+     1. Hide `.app` for one frame. Nothing inside it is laid out while it is
+        display:none, so every `dvh` box is measured again from scratch when it
+        comes back. This is the same mechanism the landscape media query uses.
+     2. Clamp the leftovers. A screen that cannot scroll but HAS a scroll offset
+        is exactly the bug and nothing else, so `scrollTop` is only reset where
+        `scrollHeight` fits inside `clientHeight`. A user who has genuinely
+        scrolled a long list keeps their place.
+
+   `resize` is deliberately NOT listened to. It fires when the iOS toolbar
+   collapses, several times per screen, and resetting anything there would
+   throw the user back to the top of a list while they were reading it. */
+(function dsRotationReset() {
+  if (!window.addEventListener) return;
+  var timer = null;
+
+  function clampStrays() {
+    var els = document.querySelectorAll('[class*="-screen"], .app, .topic-packs');
+    Array.prototype.forEach.call(els, function (el) {
+      // Only the boxes that should not be scrollable at all.
+      if (el.scrollTop && el.scrollHeight <= el.clientHeight + 2) el.scrollTop = 0;
+    });
+    if (window.scrollY) window.scrollTo(0, 0);
+    if (document.documentElement.scrollTop) document.documentElement.scrollTop = 0;
+    if (document.body.scrollTop) document.body.scrollTop = 0;
+  }
+
+  function reset() {
+    var app = document.querySelector('.app');
+    if (app) {
+      var prev = app.style.display;
+      app.style.display = 'none';
+      void app.offsetHeight;              // force the reflow
+      app.style.display = prev;
+    }
+    // One more tick: iOS finishes the rotation animation after the event.
+    setTimeout(clampStrays, 60);
+  }
+
+  window.addEventListener('orientationchange', function () {
+    clearTimeout(timer);
+    timer = setTimeout(reset, 350);
+  });
+})();

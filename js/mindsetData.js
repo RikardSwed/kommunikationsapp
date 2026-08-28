@@ -4318,7 +4318,7 @@ const mindsetCollections = {
       name: "Feelings",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
-      description: "\"I can't do my duty until I feel motivated to do it.\"\nWhat is true instead: feelings are followers, not leaders. They catch up when we act.\nWhy it feels right: our emotions are loud, and acting against them feels unnatural or fake.\nWhat it costs: we stay paralyzed in bed, the piles grow higher, and our spirits sink lower.\nMindset: do the right thing first; the feelings will catch up.",
+      description: "\"I can't do my duty until I feel motivated to do it.\"\nWhat is true instead: feelings are followers, not leaders. They catch up when we act.\nWhy it feels right: our emotions are loud, and acting against them feels unnatural or fake.\nWhat it costs: we stay paralyzed in bed, the piles grow higher, and our spirits sink lower.\n\nMindset: do the right thing first; the feelings will catch up.",
       inputs: [
         { q: "I can't pray today because my heart is too cold.", a: "Prayer is about obedience, not your mood. Pray for five minutes right now anyway.", bundle: 'pro' },
         { q: "It would be hypocritical to serve when I don't feel motivated.", a: "Doing what is right is obedience, not hypocrisy. Step out anyway.", bundle: 'pro' },
@@ -4334,7 +4334,7 @@ const mindsetCollections = {
       name: "Habits",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
-      description: "\"I am too old to change these deeply ingrained patterns of sin.\"\nWhat is true instead: you are not an animal to be trained. You are a new creation in Christ.\nWhy it feels right: we have failed so many times that staying defeated feels like realism.\nWhat it costs: we freeze ourselves in disobedience and deny the power of the Holy Spirit.\nMindset: change is possible because the Spirit is at work in you.",
+      description: "\"I am too old to change these deeply ingrained patterns of sin.\"\nWhat is true instead: you are not an animal to be trained. You are a new creation in Christ.\nWhy it feels right: we have failed so many times that staying defeated feels like realism.\nWhat it costs: we freeze ourselves in disobedience and deny the power of the Holy Spirit.\n\nMindset: change is possible because the Spirit is at work in you.",
       inputs: [
         { q: "You can't teach an old dog new tricks.", a: "You are not an animal. You are a man created in the image of God.", bundle: 'pro' },
         { q: "These patterns of worry have been with me for forty years.", a: "The Spirit is stronger than forty years of habit. Take the first step today.", bundle: 'pro' },
@@ -4350,7 +4350,7 @@ const mindsetCollections = {
       name: "Plain Speech",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
-      description: "\"If I call their sin by its real name, I will break them.\"\nWhat is true instead: naming the real sin is the only way to find real forgiveness.\nWhy it feels right: we want to be gentle, and talking about \"mistakes\" feels safer than \"sin\".\nWhat it costs: they stay trapped under a vague cloud of guilt without any hope of a cure.\nMindset: kind words speak truth. We must poke the balloon to let the air out.",
+      description: "\"If I call their sin by its real name, I will break them.\"\nWhat is true instead: naming the real sin is the only way to find real forgiveness.\nWhy it feels right: we want to be gentle, and talking about \"mistakes\" feels safer than \"sin\".\nWhat it costs: they stay trapped under a vague cloud of guilt without any hope of a cure.\n\nMindset: kind words speak truth. We must poke the balloon to let the air out.",
       inputs: [
         { q: "Naming their sin will only crush their fragile self-esteem.", a: "Coddling their self-pity keeps them trapped. Naming the sin brings real hope.", bundle: 'pro' },
         { q: "I should euphemize it as a \"weakness\" to be kind.", a: "Euphemizing sin is a copout. We must call it sin to find the cure.", bundle: 'pro' },
@@ -4366,7 +4366,7 @@ const mindsetCollections = {
       name: "Self-Forgiveness",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
-      description: "\"My biggest problem is that I need to learn to forgive myself.\"\nWhat is true instead: the Bible knows nothing of self-forgiveness. You need to accept God's forgiveness.\nWhy it feels right: we still feel the shame, so we assume the problem is with us, not our theology.\nWhat it costs: we waste our energy on a prideful attempt to pay for our own sins.\nMindset: Christ's blood paid the entire debt. Rest in His work.",
+      description: "\"My biggest problem is that I need to learn to forgive myself.\"\nWhat is true instead: the Bible knows nothing of self-forgiveness. You need to accept God's forgiveness.\nWhy it feels right: we still feel the shame, so we assume the problem is with us, not our theology.\nWhat it costs: we waste our energy on a prideful attempt to pay for our own sins.\n\nMindset: Christ's blood paid the entire debt. Rest in His work.",
       inputs: [
         { q: "I know God forgives me, but I just can't forgive myself.", a: "You are trying to pay a debt that Christ already paid. Rest in His cross.", bundle: 'pro' },
         { q: "My guilt is too heavy because of what I did.", a: "Real guilt is washed clean by real blood. Accept God's verdict.", bundle: 'pro' },
@@ -4382,7 +4382,7 @@ const mindsetCollections = {
       name: "Confrontation",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
-      description: "\"Pointing out a brother's sin is an unloving and self-righteous thing to do.\"\nWhat is true instead: leaving a brother under the weight of sin is the truest form of hatred.\nWhy it feels right: we are afraid of looking hypocritical or being rejected by our friend.\nWhat it costs: they continue to slide down the skids, and the church leaks its power.\nMindset: go in meekness to restore, not to judge.",
+      description: "\"Pointing out a brother's sin is an unloving and self-righteous thing to do.\"\nWhat is true instead: leaving a brother under the weight of sin is the truest form of hatred.\nWhy it feels right: we are afraid of looking hypocritical or being rejected by our friend.\nWhat it costs: they continue to slide down the skids, and the church leaks its power.\n\nMindset: go in meekness to restore, not to judge.",
       inputs: [
         { q: "Who am I to point out their failure when I have my own?", a: "You go in meekness as a fellow sinner, not as a judge.", bundle: 'pro' },
         { q: "It is more loving to stay quiet and just pray for them.", a: "True love is active. Leaving them trapped under the rock is hatred.", bundle: 'pro' },
@@ -4400,7 +4400,7 @@ const mindsetCollections = {
       name: "Blame",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
-      description: "\"My biggest problems are caused entirely by how she acts.\"\nWe cannot control others, but we are fully responsible to God for our own responses.\nBlaming others feels right because their behavior really is unfair, and focusing on their sin shields us from the pain of our own failure.\nIt costs us our sanctification, leaving us trapped in a bitter deadlock where we wait for them to change before we will obey.\nMindset: my reaction is my responsibility, regardless of the pressure.",
+      description: "\"My biggest problems are caused entirely by how she acts.\"\nWe cannot control others, but we are fully responsible to God for our own responses.\nBlaming others feels right because their behavior really is unfair, and focusing on their sin shields us from the pain of our own failure.\nIt costs us our sanctification, leaving us trapped in a bitter deadlock where we wait for them to change before we will obey.\n\nMindset: my reaction is my responsibility, regardless of the pressure.",
       inputs: [
         { q: "I only lost my temper because he was being completely unreasonable first.", a: "He was wrong, but my angry reaction was my own sin before God. I own my response.", bundle: 'pro' },
         { q: "I have a right to be cold since she ignored me all morning.", a: "Bitterness is not a right; it is a sin. I must pursue peace regardless of her distance.", bundle: 'pro' },
@@ -4416,7 +4416,7 @@ const mindsetCollections = {
       name: "Gossip",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
-      description: "\"Talking about his failure with an outside friend helps me process the pain.\"\nSpeaking about a brother behind his back is gossip, which destroys unity and spreads poison in the church.\nIt feels right because sharing the story with a sympathetic friend relieves our immediate emotional pressure and makes us feel validated.\nIt costs the church its power, breeds suspicion, and prevents the face-to-face reconciliation that Jesus commands.\nMindset: talk to the person, never about them.",
+      description: "\"Talking about his failure with an outside friend helps me process the pain.\"\nSpeaking about a brother behind his back is gossip, which destroys unity and spreads poison in the church.\nIt feels right because sharing the story with a sympathetic friend relieves our immediate emotional pressure and makes us feel validated.\nIt costs the church its power, breeds suspicion, and prevents the face-to-face reconciliation that Jesus commands.\n\nMindset: talk to the person, never about them.",
       inputs: [
         { q: "I'm just sharing this prayer request about his marriage so we can lift them up.", a: "Sharing negative details about an absent brother is gossip, even when I call it prayer.", bundle: 'pro' },
         { q: "Getting this frustration off my chest with a friend helps me cope with her pride.", a: "Venting to an outsider only deepens my resentment. I must go to her face-to-face.", bundle: 'pro' },
@@ -4432,7 +4432,7 @@ const mindsetCollections = {
       name: "Neutrality",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
-      description: "\"Hiding behind silence is the most loving and non-judgmental way to handle other people's conflicts.\"\nStaying silent during active sin is a failure to love your brother and a betrayal of the body of Christ.\nIt feels right because it protects us from the discomfort of confrontation, and lets us pretend we are being humble and non-directive.\nIt costs our brother his restoration, leaving him trapped under the rock of sin while the church's witness decays.\nMindset: love is active and confrontational when a brother is caught in a trap.",
+      description: "\"Hiding behind silence is the most loving and non-judgmental way to handle other people's conflicts.\"\nStaying silent during active sin is a failure to love your brother and a betrayal of the body of Christ.\nIt feels right because it protects us from the discomfort of confrontation, and lets us pretend we are being humble and non-directive.\nIt costs our brother his restoration, leaving him trapped under the rock of sin while the church's witness decays.\n\nMindset: love is active and confrontational when a brother is caught in a trap.",
       inputs: [
         { q: "It is none of my business if a fellow member is cheating on his taxes.", a: "We are members of one another. If he is trapped in sin, it is my business to restore him.", bundle: 'pro' },
         { q: "I am being humble by not judging their marriage conflict from the outside.", a: "Humility does not mean passivity. I must offer to help them reconcile face-to-face.", bundle: 'pro' },
@@ -4448,7 +4448,7 @@ const mindsetCollections = {
       name: "Retaliation",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
-      description: "\"Hitting back in kind is the only fair way to teach my tormentor a lesson.\"\nRetaliation only multiplies the forces of evil; we conquer hostility with active, aggressive goodness.\nIt feels right because matching their anger feels like justice, and defending ourselves feels like a basic survival reflex.\nIt costs us the victory, keeping both parties locked in a sinful ping-pong match that God never blesses.\nMindset: defeat evil with good, using the powerful weapons of grace.",
+      description: "\"Hitting back in kind is the only fair way to teach my tormentor a lesson.\"\nRetaliation only multiplies the forces of evil; we conquer hostility with active, aggressive goodness.\nIt feels right because matching their anger feels like justice, and defending ourselves feels like a basic survival reflex.\nIt costs us the victory, keeping both parties locked in a sinful ping-pong match that God never blesses.\n\nMindset: defeat evil with good, using the powerful weapons of grace.",
       inputs: [
         { q: "He slandered my work, so I have every right to expose his mistakes in the next meeting.", a: "If I return evil for evil, I have been conquered. I must find a way to serve him instead.", bundle: 'pro' },
         { q: "If I am nice to her after she insulted me, it will look like she won the fight.", a: "The winner is the one who obeys God. I conquer her insult by offering a blessing.", bundle: 'pro' },
