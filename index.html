@@ -7,10 +7,10 @@
   <meta name="mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="default" />
   <meta name="apple-mobile-web-app-title" content="Deckstack" />
-  <link rel="manifest" href="manifest.json?v=12752" />
+  <link rel="manifest" href="manifest.json?v=12753" />
   <title>Deckstack</title>
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="stylesheet" href="css/style.css?v=12752" />
+  <link rel="stylesheet" href="css/style.css?v=12753" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
 </head>
 <body>
@@ -1042,8 +1042,8 @@
       <div><div class="collection-name">Responsive Humour</div><div class="collection-meta">5 strategies &nbsp;·&nbsp; Flashcard mode</div></div>
       <div class="collection-arrow">›</div>
     </div>
-    <div class="collection-card" id="collectionAssertiveCommunication1CopingWithCriticism" data-key="assertivecomm1" data-label="Assertive Communication 1 — Coping with Criticism">
-      <div><div class="collection-name">Assertive Communication 1 — Coping with Criticism</div><div class="collection-meta">4 strategies &nbsp;·&nbsp; Flashcard mode</div></div>
+    <div class="collection-card" id="collectionAssertiveCommunication1CopingWithCriticism" data-key="assertivecomm1" data-label="Assertive Communication">
+      <div><div class="collection-name">Assertive Communication</div><div class="collection-meta">4 strategies &nbsp;·&nbsp; Flashcard mode</div></div>
       <div class="collection-arrow">›</div>
     </div>
     <div class="collection-card collection-card--extended" id="collectionAssertiveCommunication2SocialEqualConnections" data-key="assertivecomm2" data-label="Assertive Communication 2 — Social &amp; Equal Connections" style="display:none;">
@@ -2897,20 +2897,20 @@
   </button>
 </div>
 
-<script src="js/data.js?v=12752"></script>
-<script src="js/tagsData.js?v=12752"></script>
-<script src="js/programsData.js?v=12752"></script>
-<script src="js/challengesData.js?v=12752"></script>
-<script src="js/mindsetData.js?v=12752"></script>
-<script src="js/multiStepData.js?v=12752"></script>
-<script src="js/memorizeData.js?v=12752"></script>
-<script src="js/mode-engine.js?v=12752"></script>
-<script src="js/app-core.js?v=12752"></script>
-<script src="js/app-modes.js?v=12752"></script>
-<script src="js/app-handsfree.js?v=12752"></script>
-<script src="js/app-system.js?v=12752"></script>
-<script src="js/app-ui.js?v=12752"></script>
-<script src="js/app-back.js?v=12752"></script>
+<script src="js/data.js?v=12753"></script>
+<script src="js/tagsData.js?v=12753"></script>
+<script src="js/programsData.js?v=12753"></script>
+<script src="js/challengesData.js?v=12753"></script>
+<script src="js/mindsetData.js?v=12753"></script>
+<script src="js/multiStepData.js?v=12753"></script>
+<script src="js/memorizeData.js?v=12753"></script>
+<script src="js/mode-engine.js?v=12753"></script>
+<script src="js/app-core.js?v=12753"></script>
+<script src="js/app-modes.js?v=12753"></script>
+<script src="js/app-handsfree.js?v=12753"></script>
+<script src="js/app-system.js?v=12753"></script>
+<script src="js/app-ui.js?v=12753"></script>
+<script src="js/app-back.js?v=12753"></script>
 
 
 <!-- CHECKPOINT SCREEN -->
@@ -2923,6 +2923,30 @@
   <div class="cp-body">
     <div id="checkpointQuestion" class="cp-question"></div>
     <div id="checkpointOptions" class="cp-options"></div>
+  </div>
+</div>
+
+<!-- PORTRAIT ONLY ON PHONES (v1.27.53) ─────────────────────────────────────
+     Deckstack is one column, sized for a thumb. Rotated on a phone it became
+     a wide, short window where the card no longer fitted, and turning back
+     left the page a few pixels scrollable with scrollbars down the right.
+     iOS honours neither the manifest's `orientation` nor
+     `screen.orientation.lock()`, so the lock has to be done in the layout:
+     the phone-landscape media query hides `.app` entirely — nothing is laid
+     out at the wrong size, so there is nothing stale to scroll when it comes
+     back — and shows this instead. iPads are deliberately untouched; the
+     query needs BOTH landscape and a viewport under 500px tall, and no iPad
+     is that short. The App Store build locks properly via Info.plist. -->
+<div id="rotateNotice" aria-hidden="true">
+  <div class="rn-inner">
+    <svg class="rn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <rect x="7" y="2" width="10" height="20" rx="2"></rect>
+      <path d="M11 18.5h2"></path>
+      <path d="M3.5 9.5a9 9 0 0 1 2.2-3.6"></path>
+      <path d="M3.2 6.2l.3 3.3 3.3-.3"></path>
+    </svg>
+    <p class="rn-title">Turn your phone upright</p>
+    <p class="rn-text">Deckstack is one column, made for one hand. It runs in portrait only.</p>
   </div>
 </div>
 
