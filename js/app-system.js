@@ -888,6 +888,19 @@ applyInputCounterVisibility();
       notAfter: '2026-12-31',
       label: 'Parenting 01 unlocked for 60 days.',
     },
+    // v1.27.56 — the two Jay Adams packs, for the people Rikard hands them to
+    // before the beta. `fullAccess` is the new flag: the grant opens the pro
+    // bundles and the pro modes inside THESE packs only, so a freemium tester
+    // gets the whole thing rather than five cards and four empty modes.
+    // Without it the code would still work, but the pack would follow the
+    // ordinary freemium rules — which is the right choice for a pack that has
+    // a real free tier, and the wrong one here.
+    COUNSEL60: {
+      kind: 'pack', packs: ['counseling1', 'counseling2'],
+      days: 180, requiresPro: false, fullAccess: true,
+      notAfter: '2026-12-31',
+      label: 'Biblical Counseling 1 & 2 unlocked in full for 180 days.',
+    },
   };
   const GRANT_KEY  = 'ds_beta_grant';    // { level, until, code }
   const PACKS_KEY  = 'ds_pack_grants';   // { packKey: { until, code } }
@@ -934,6 +947,17 @@ applyInputCounterVisibility();
   function packGranted(packKey) {
     const g = readPackGrants()[packKey];
     return !!(g && g.until && g.until > Date.now());
+  }
+
+  // v1.27.56. A pack grant makes the pack VISIBLE; it says nothing about the
+  // cards inside it, which are gated separately by bundle tier and by mode.
+  // `fullAccess` on the code adds that second half: getActiveBundles and
+  // applyModeLocks both treat a full-granted pack as if the user were pro,
+  // for that pack alone. Extended bundles are deliberately NOT included —
+  // those are purchases, and a beta code should not hand them out.
+  function packGrantFull(packKey) {
+    const g = readPackGrants()[packKey];
+    return !!(g && g.full && g.until && g.until > Date.now());
   }
 
   function grantStatus() {
@@ -995,7 +1019,7 @@ applyInputCounterVisibility();
         }
       }
       const g = readPackGrants();
-      (def.packs || []).forEach(k => { g[k] = { until: until, code: code }; });
+      (def.packs || []).forEach(k => { g[k] = { until: until, code: code, full: !!def.fullAccess }; });
       writePackGrants(g);
       applyAccessLevel();
       return { ok: true, message: def.label ||
@@ -1258,11 +1282,14 @@ applyInputCounterVisibility();
     // (this one and launch() in app-core.js) read the same CSS class, so
     // toggling it here is enough to open the mode for real.
     const freeHere = MODE_FREE_FOR[window.activeCollectionKey] || [];
+    // A code with `fullAccess` opens every mode for its own pack (v1.27.56).
+    const fullHere = packGrantFull(window.activeCollectionKey);
     Object.entries(MODE_CONFIG).forEach(([id, cfg]) => {
       const el = document.getElementById(id);
       if (!el) return;
       const accessible = levelIndex(curLevel) >= levelIndex(cfg.minLevel)
-                      || freeHere.indexOf(id) > -1;
+                      || freeHere.indexOf(id) > -1
+                      || fullHere;
       el.classList.toggle('mode-card--locked', !accessible);
       // Remove old badge
       const old = el.querySelector('.mode-lock-badge');
@@ -1400,7 +1427,7 @@ applyInputCounterVisibility();
   // past them to the next test. Both now ask this instead.
   function programRoutePending(packKey) { return !!_programState(packKey).pendingOpenRoute; }
 
-  window.accessLevel = { getLevel, canAccess, badgeLabel, applyModeLocks, updateNavUpgradeBtn, packVisibility, programVisibility, sectionVisibility, programRoutePending, applyAccessLevel, redeemCode, grantStatus, clearGrant, packGranted, codes: ACCESS_CODES };
+  window.accessLevel = { getLevel, canAccess, badgeLabel, applyModeLocks, updateNavUpgradeBtn, packVisibility, programVisibility, sectionVisibility, programRoutePending, applyAccessLevel, redeemCode, grantStatus, clearGrant, packGranted, packGrantFull, codes: ACCESS_CODES };
   window._applyAccessLevel = applyAccessLevel;
 
   // Init
@@ -2942,9 +2969,14 @@ function getActiveBundles(packKey) {
   const isExtendedBundleOwned = (bundleId) =>
     level === 'complete' || extOwned.includes(`${packKey}::${bundleId}`);
 
+  // v1.27.56 — a pack opened by a `fullAccess` code counts as pro for its own
+  // bundles. Extended bundles stay out: those are bought, not granted.
+  const fullPack = !!(window.accessLevel && window.accessLevel.packGrantFull
+                   && window.accessLevel.packGrantFull(packKey));
+
   const canUseTier = (tier, bundleId) => {
     if (tier === 'free') return true;
-    if (tier === 'pro' || tier === 'pro-opt') return level === 'pro' || level === 'complete';
+    if (tier === 'pro' || tier === 'pro-opt') return fullPack || level === 'pro' || level === 'complete';
     // Extended bundles require pro/complete level AND ownership —
     // freemium always sees only the free bundle
     if (tier === 'extended') return (level === 'pro' || level === 'complete') && isExtendedBundleOwned(bundleId);
