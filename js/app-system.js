@@ -703,7 +703,7 @@ applyInputCounterVisibility();
     changingtopics: { label: 'Changing Topics', minLevel: 'pro' },
     complimenting: { label: 'Compliments', minLevel: 'pro' },
     responsivehumour: { label: 'Responsive Humour', minLevel: 'pro' },
-    assertivecomm1: { label: 'Assertive Communication 1 — Coping with Criticism', minLevel: 'freemium' },
+    assertivecomm1: { label: 'Assertive Communication', minLevel: 'freemium' },
     assertivecomm2: { label: 'Assertive Communication 2 — Social & Equal Connections', minLevel: 'extended' },
     assertivecommadv: { label: 'Assertive Communication — Advanced', minLevel: 'complete' },
     integratedmaster: { label: 'The Integrated Masterclass', minLevel: 'complete' },
@@ -3766,7 +3766,7 @@ const WHATS_NEW = [
   {
     version: 'v1.27.50', date: 'August 2026', title: 'Assertive Communication, in two parts',
     items: [
-      '<strong>Assertive Communication 1 — Coping with Criticism</strong>, free. The four moves Manuel J. Smith taught for the moment somebody is criticising, pressuring or guilt-tripping you: <em>Broken Record</em>, <em>Fogging</em>, <em>Negative Assertion</em> and <em>Negative Inquiry</em>.',
+      '<strong>Assertive Communication</strong>, free. The four moves Manuel J. Smith taught for the moment somebody is criticising, pressuring or guilt-tripping you: <em>Broken Record</em>, <em>Fogging</em>, <em>Negative Assertion</em> and <em>Negative Inquiry</em>.',
       '<strong>Part 2 — Social &amp; Equal Connections</strong>, in the Extended store. The other half, and the one nobody teaches: catching the details people drop without being asked, saying what you actually feel, declaring a want with no excuse attached, and trading the practical half of a conflict without giving up the part that matters.',
       'Part 1 is what to do when it is coming at you. Part 2 is what to do first.',
     ],
@@ -5555,6 +5555,69 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
             'Steady repetition shows that pressure will not move you.</p>' +
             '<p class="ob-text ob-text--dim">&ldquo;I understand, but I\u2019m not able to help this weekend.&rdquo;<br>' +
             '&hellip;and again, just as calmly: &ldquo;I understand, but I\u2019m not able to help this weekend.&rdquo;</p>'
+        }
+      ]
+    },
+
+    // v1.27.53 \u2014 Assertive Communication (assertivecomm1), renamed from
+    // "Assertive Communication 1 \u2014 Coping with Criticism". A freemium pack with
+    // no intro at all: one of the packs a free user can open said nothing about
+    // itself. Four strategies, so each gets a page, and the first page does the
+    // one job the pack's own Core Idea cannot \u2014 say what the four have in
+    // common and which question picks between them.
+    assertivecomm1: {
+      pages: [
+        {
+          title: 'Assertive Communication',
+          html:
+            '<p class="ob-text">Four things to say when someone is criticising you, ' +
+            'pressuring you, or working on your guilt. They are defences, not attacks &mdash; ' +
+            'each one ends the pressure without starting a fight.</p>' +
+            '<div class="ob-how">' +
+            '<div class="ob-how-row"><span class="ob-how-num">1</span><p><strong>Fogging</strong> &mdash; agree with what is true in it.</p></div>' +
+            '<div class="ob-how-row"><span class="ob-how-num">2</span><p><strong>Negative Inquiry</strong> &mdash; ask what they actually mean.</p></div>' +
+            '<div class="ob-how-row"><span class="ob-how-num">3</span><p><strong>Negative Assertion</strong> &mdash; own a real mistake, plainly.</p></div>' +
+            '<div class="ob-how-row"><span class="ob-how-num">4</span><p><strong>Broken Record</strong> &mdash; repeat what you want, unchanged.</p></div>' +
+            '</div>' +
+            '<p class="ob-text ob-text--dim">One question picks between them: what did the ' +
+            'other person just do?</p>'
+        },
+        {
+          title: 'Fogging',
+          html:
+            '<p class="ob-text">Agree with whatever is true, likely, or fair in the criticism &mdash; ' +
+            'and with nothing else. You are not promising to change. You are removing the fight ' +
+            'they were expecting.</p>' +
+            '<p class="ob-text">A critic needs something solid to hit. Agree, and the exaggeration ' +
+            'is left standing on its own, which is where it looks worst.</p>' +
+            '<p class="ob-text ob-text--dim">&ldquo;You&rsquo;re always so disorganised.&rdquo;<br>&rarr; &ldquo;I probably am, some days.&rdquo;</p>'
+        },
+        {
+          title: 'Negative Inquiry',
+          html:
+            '<p class="ob-text">Ask for the complaint instead of answering the mood. ' +
+            'Calmly, without an edge: what specifically am I doing?</p>' +
+            '<p class="ob-text">Vague criticism runs on being vague. One plain question forces it ' +
+            'to become an actual event you can do something about &mdash; or to stop.</p>' +
+            '<p class="ob-text ob-text--dim">&ldquo;I don&rsquo;t like your attitude.&rdquo;<br>&rarr; &ldquo;What is it about my attitude that bothers you?&rdquo;</p>'
+        },
+        {
+          title: 'Negative Assertion',
+          html:
+            '<p class="ob-text">When you really did it, say so &mdash; once, flatly, without ' +
+            'excuses and without crawling.</p>' +
+            '<p class="ob-text">A mistake is an inefficiency, not a verdict on you. Owning it ' +
+            'immediately takes away the only thing the other person was holding.</p>' +
+            '<p class="ob-text ob-text--dim">&ldquo;You forgot the report.&rdquo;<br>&rarr; &ldquo;I did &mdash; that was careless of me.&rdquo;</p>'
+        },
+        {
+          title: 'Broken Record',
+          html:
+            '<p class="ob-text">Say what you want in the same words, in the same even tone, ' +
+            'as many times as it takes. No new arguments.</p>' +
+            '<p class="ob-text">Every reason you add is something for them to solve. The want ' +
+            'itself cannot be solved, which is why repeating it works and arguing does not.</p>' +
+            '<p class="ob-text ob-text--dim">&ldquo;But it is store policy.&rdquo;<br>&rarr; &ldquo;I understand that&rsquo;s the policy, and I want a refund.&rdquo;</p>'
         }
       ]
     },

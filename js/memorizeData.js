@@ -6664,7 +6664,7 @@ const memorizeCollections = {
         { q: "What are the three relationship categories taught in the source?", a: "Commercial or formal, authority, and equal relationships.", bundle: 'free' },
         { q: "What decides which strategy to use?", a: "What the other person just did: pressured your boundary, criticized your style, pointed out a real error, or threw vague complaints.", bundle: 'free' },
         { q: "What is the main goal of being verbally assertive?", a: "Maintaining your self-respect while cutting through manipulation.", bundle: 'free' },
-        { q: "Why is a \"Workable Compromise\" not a standalone strategy in Pack 1?", a: "Because it is a negotiation move that belongs to Pack 2 once boundaries are established.", bundle: 'pro' },
+        { q: "Why is a \"Workable Compromise\" not a standalone strategy in this pack?", a: "Because it is a negotiation move, and negotiation belongs to the pack on equal relationships once boundaries are established.", bundle: 'pro' },
         { q: "What do all four strategies have in common?", a: "They allow you to respond without becoming defensive, angry, or anxious.", bundle: 'pro' },
         { q: "Who is the author of the systematic assertive skills taught in the source?", a: "Manuel J. Smith, Ph.D. (1975).", bundle: 'pro' },
       ]
