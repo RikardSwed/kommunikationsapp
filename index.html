@@ -7,10 +7,10 @@
   <meta name="mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="default" />
   <meta name="apple-mobile-web-app-title" content="Deckstack" />
-  <link rel="manifest" href="manifest.json?v=12760" />
+  <link rel="manifest" href="manifest.json?v=12761" />
   <title>Deckstack</title>
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="stylesheet" href="css/style.css?v=12760" />
+  <link rel="stylesheet" href="css/style.css?v=12761" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
 </head>
 <body>
@@ -2620,9 +2620,29 @@
     <!-- v1.26.90 — clears a redeemed beta code. Without this the only way back
          to freemium on a device that has redeemed one is to wait out the 60
          days or clear site data by hand. -->
+    <!-- v1.27.61 — THREE buttons, because there are two unrelated things called
+         "codes" and one row that undoes both.
+
+           ACCESS codes  (BETA2026, PARENT60, COUNSEL60) raise your level or
+                         open named packs. Stored in ds_beta_grant and
+                         ds_pack_grants. Entered in the field on this screen.
+           STORE codes   (DEMO2026) reveal a hidden item in the Extended shop.
+                         They give nothing away — the item still costs money.
+                         Stored in ds_redeemed_codes. Entered in the shop's
+                         search field.
+
+         Rikard, 2026-08-29: the old labels were "Clear access codes" and
+         "Redeemed codes", which is the same sentence twice. He pressed the
+         store one, got "Redeemed codes cleared", and still had the pack. The
+         labels now say which field the code came from, and the row below
+         undoes everything at once so nobody has to know the difference. -->
     <div class="settings-row">
-      <label style="font-size:13px; color:#888;">Clear access codes</label>
+      <label style="font-size:13px; color:#888;">Access codes &mdash; level &amp; pack grants</label>
       <button id="clearGrantBtn" style="font-size:13px; color:#555; background:#f0f0f0; border:1px solid #ddd; border-radius:8px; padding:6px 12px; cursor:pointer;">Clear</button>
+    </div>
+    <div class="settings-row">
+      <label style="font-size:13px; color:#888;"><strong>Everything back to normal</strong><br>access codes, store codes and Extended purchases</label>
+      <button id="resetAccessBtn" style="font-size:13px; color:#c0392b; background:#fdf0ee; border:1px solid #f5c6c2; border-radius:8px; padding:6px 12px; cursor:pointer;">Reset</button>
     </div>
     <div class="settings-row" id="tagExportRow" style="display:none;">
       <label style="font-size:13px; color:#888;">Export tag changes</label>
@@ -2660,7 +2680,7 @@
       <button id="clearExtendedBtn" style="font-size:13px; color:#c0392b; background:#fdf0ee; border:1px solid #f5c6c2; border-radius:8px; padding:6px 12px; cursor:pointer;">Clear</button>
     </div>
     <div class="settings-row">
-      <label>Redeemed codes</label>
+      <label>Store codes &mdash; Extended shop reveals</label>
       <button id="clearCodesBtn" style="font-size:13px; color:#c0392b; background:#fdf0ee; border:1px solid #f5c6c2; border-radius:8px; padding:6px 12px; cursor:pointer;">Clear</button>
     </div>
     <div class="settings-row">
@@ -2913,20 +2933,20 @@
   </button>
 </div>
 
-<script src="js/data.js?v=12760"></script>
-<script src="js/tagsData.js?v=12760"></script>
-<script src="js/programsData.js?v=12760"></script>
-<script src="js/challengesData.js?v=12760"></script>
-<script src="js/mindsetData.js?v=12760"></script>
-<script src="js/multiStepData.js?v=12760"></script>
-<script src="js/memorizeData.js?v=12760"></script>
-<script src="js/mode-engine.js?v=12760"></script>
-<script src="js/app-core.js?v=12760"></script>
-<script src="js/app-modes.js?v=12760"></script>
-<script src="js/app-handsfree.js?v=12760"></script>
-<script src="js/app-system.js?v=12760"></script>
-<script src="js/app-ui.js?v=12760"></script>
-<script src="js/app-back.js?v=12760"></script>
+<script src="js/data.js?v=12761"></script>
+<script src="js/tagsData.js?v=12761"></script>
+<script src="js/programsData.js?v=12761"></script>
+<script src="js/challengesData.js?v=12761"></script>
+<script src="js/mindsetData.js?v=12761"></script>
+<script src="js/multiStepData.js?v=12761"></script>
+<script src="js/memorizeData.js?v=12761"></script>
+<script src="js/mode-engine.js?v=12761"></script>
+<script src="js/app-core.js?v=12761"></script>
+<script src="js/app-modes.js?v=12761"></script>
+<script src="js/app-handsfree.js?v=12761"></script>
+<script src="js/app-system.js?v=12761"></script>
+<script src="js/app-ui.js?v=12761"></script>
+<script src="js/app-back.js?v=12761"></script>
 
 
 <!-- CHECKPOINT SCREEN -->
