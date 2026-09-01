@@ -4063,6 +4063,12 @@ body.feedback-mode    .al-bar { display: none !important; }
   .rn-icon  { width: 40px; height: 40px; color: var(--ds-txt2); margin-bottom: 16px; }
   .rn-title { font-size: 19px; font-weight: 600; margin-bottom: 8px; }
   .rn-text  { font-size: 15px; line-height: 1.5; color: var(--ds-txt2); }
+  /* v1.27.60 \u2014 the honest footnote. The pixel-pinning in app-core.js
+     clears the stale viewport height on most devices but not on all, and a
+     restart always does. Saying so is better than leaving someone with a
+     screen that drags a few pixels and no idea why. */
+  .rn-note  { font-size: 12.5px; line-height: 1.5; color: var(--ds-txt3, var(--ds-txt2));
+              opacity: 0.8; margin-top: 14px; }
 }
 
 /* ─── VIEWPORT PINNED AFTER A ROTATION (v1.27.59) ────────────────────────────
@@ -4081,4 +4087,48 @@ html.ds-vh-pinned .settings-screen,
 html.ds-vh-pinned .extended-screen {
   height: var(--ds-vh, 100dvh) !important;
   max-height: var(--ds-vh, 100dvh) !important;
+}
+
+/* ─── MODE TILES INSIDE THE GUIDE (v1.27.60) ─────────────────────────────────
+   The mode guide explains the six choices on the mode screen, so it shows them
+   the way the mode screen does: a tile, the same Tabler icon, the name. Values
+   are borrowed from .mode-card and .mode-icon and then scaled down — a guide
+   page has to fit three tiles and a heading without scrolling, so the padding
+   and the icon are smaller here. Not a shared class: the mode screen's cards
+   are tappable and these are not, and one rule serving both would tie a
+   decorative element to a live control. */
+.gd-modes { display: flex; flex-direction: column; gap: 10px; width: 100%; }
+
+.gd-mode {
+  background: var(--ds-card);
+  border-radius: 14px;
+  padding: 14px 16px;
+  box-shadow: 0 2px 8px var(--ds-shadow);
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  text-align: left;
+}
+.gd-mode-ic {
+  font-size: 22px;
+  width: 32px;
+  flex-shrink: 0;
+  color: var(--ds-acc);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2px;
+}
+.gd-mode-tx { flex: 1; min-width: 0; }
+.gd-mode-tx strong {
+  display: block;
+  font-size: 15px;
+  color: var(--ds-txt);
+  margin-bottom: 3px;
+}
+.gd-mode-tx span {
+  display: block;
+  font-size: 13px;
+  line-height: 1.45;
+  color: var(--ds-txt2);
 }
