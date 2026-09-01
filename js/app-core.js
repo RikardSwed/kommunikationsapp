@@ -5,7 +5,7 @@
 // (DS.createCardMode / DS.createHandsfreeMode) and are declared in
 // app-modes.js and app-handsfree.js.
 
-const VERSION = 'v1.27.58';
+const VERSION = 'v1.27.59';
 
 // Keep every version label in the UI in sync with VERSION (v1.26.44).
 // The hardcoded strings in index.html are only fallbacks — this runs at
@@ -419,7 +419,13 @@ function showModeScreen(key, label, opts) {
   navToMode();
   if (window.progStartSession) progStartSession(key, label);
   // Pack intro (v1.26.44): first 3 opens of a pack with an intro defined
-  if (window.maybeShowPackIntro) maybeShowPackIntro(key);
+  // v1.27.59 — the mode screen is the first place the six modes are visible,
+  // so the guide that explains them runs here, once, and hands over to the
+  // pack's own intro when it closes. Both use the same screen, so they have to
+  // be sequential — showing them together would put one on top of the other.
+  const _startPackIntro = () => { if (window.maybeShowPackIntro) maybeShowPackIntro(key); };
+  if (!(window.maybeShowGuide && window.maybeShowGuide('modes-overview', _startPackIntro)))
+    _startPackIntro();
 }
 
 // Set the navigation context (called by Library, Topics, Folders, Programs)
@@ -1006,38 +1012,43 @@ fbInitBar('fb-mind-back');
 fbInitBar('fb-coll-front');
 fbInitBar('fb-coll-back');
 
-/* ─── ROTATION CLEAN-UP (v1.27.57) ───────────────────────────────────────────
+/* ─── ROTATION CLEAN-UP (v1.27.57, rewritten v1.27.59) ───────────────────────
    Rikard, 2026-08-28: after the phone had been turned sideways and back, parts
    of the app that are meant to be fixed could be dragged up and down — the top
-   banner on the home screen, the bottom nav, the mode screen, and every screen
-   reached from them. Scrollbars appeared down the right edge.
+   banner, the bottom nav, the mode screen, and every screen reached from them.
+   A scrollbar appeared down the right edge.
 
-   The cause is `height: 100dvh` on `.home-screen`, `.mode-screen` and their
-   siblings, combined with `overflow-y: auto` on the same element. `dvh` is
-   resolved by the browser, and after a rotation iOS can hand back a stale
-   value. The box is then shorter than its own content, so the WHOLE screen —
-   banner and nav included, since they live inside it — becomes a scroll area.
+   Six boxes are `height: 100dvh` with `overflow-y: auto` on the same element:
+   `.app`, `.home-screen`, `.mode-screen`, `.upgrade-screen`, `.settings-screen`
+   and `.extended-screen`. `dvh` is resolved by the browser, and after a
+   rotation iOS can keep handing back the landscape value. The box is then
+   taller than the window, so the WHOLE screen — banner and nav included, since
+   they live inside it — becomes a scroll area.
 
-   v1.27.56 stopped the landscape layout from ever being drawn, which prevents
-   the fault for anyone who never rotates. It does not help someone who already
-   did, or who rotates before the media query has settled. This does.
+   v1.27.57 tried to fix this by forcing a reflow. It did not work: the stale
+   `dvh` survives a reflow, because nothing has told the browser the value is
+   wrong. So this version stops asking. On the first orientation change it
+   measures the window itself and pins the six boxes to that number in pixels,
+   through `--ds-vh` and the `ds-vh-pinned` class. `dvh` is no longer consulted.
 
-   Two steps, in order, and only on a real orientation change:
+   WHY IT IS NOT PINNED FROM THE START. `dvh` is the right answer while the
+   iOS toolbar is collapsing and expanding — it tracks that, and a pixel value
+   would not. A device that is never rotated therefore behaves exactly as it
+   did before this block existed: the class is never added. The pin is the
+   price of having rotated, not the default.
 
-     1. Hide `.app` for one frame. Nothing inside it is laid out while it is
-        display:none, so every `dvh` box is measured again from scratch when it
-        comes back. This is the same mechanism the landscape media query uses.
-     2. Clamp the leftovers. A screen that cannot scroll but HAS a scroll offset
-        is exactly the bug and nothing else, so `scrollTop` is only reset where
-        `scrollHeight` fits inside `clientHeight`. A user who has genuinely
-        scrolled a long list keeps their place.
-
-   `resize` is deliberately NOT listened to. It fires when the iOS toolbar
-   collapses, several times per screen, and resetting anything there would
-   throw the user back to the top of a list while they were reading it. */
+   `visualViewport.height` is preferred over `innerHeight` because it is the
+   genuinely visible height, which is what `dvh` means. It is only read on
+   orientationchange, never on plain resize — the keyboard shrinks it, and
+   pinning to a keyboard-sized window would squash every screen. */
 (function dsRotationReset() {
   if (!window.addEventListener) return;
   var timer = null;
+
+  function viewportHeight() {
+    var vv = window.visualViewport;
+    return Math.round((vv && vv.height) || window.innerHeight || 0);
+  }
 
   function clampStrays() {
     var els = document.querySelectorAll('[class*="-screen"], .app, .topic-packs');
@@ -1050,20 +1061,19 @@ fbInitBar('fb-coll-back');
     if (document.body.scrollTop) document.body.scrollTop = 0;
   }
 
-  function reset() {
-    var app = document.querySelector('.app');
-    if (app) {
-      var prev = app.style.display;
-      app.style.display = 'none';
-      void app.offsetHeight;              // force the reflow
-      app.style.display = prev;
-    }
-    // One more tick: iOS finishes the rotation animation after the event.
+  function pin() {
+    var h = viewportHeight();
+    if (!h) return;
+    var root = document.documentElement;
+    root.style.setProperty('--ds-vh', h + 'px');
+    root.classList.add('ds-vh-pinned');
     setTimeout(clampStrays, 60);
   }
 
   window.addEventListener('orientationchange', function () {
     clearTimeout(timer);
-    timer = setTimeout(reset, 350);
+    // Two passes: iOS reports the old size for a while after the event, and
+    // the second measurement is the one that is actually right.
+    timer = setTimeout(function () { pin(); setTimeout(pin, 400); }, 350);
   });
 })();

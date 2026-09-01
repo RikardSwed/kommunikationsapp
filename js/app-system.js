@@ -983,16 +983,21 @@ applyInputCounterVisibility();
   // v1.26.90 — hands a device back to freemium immediately. Without it the
   // only way off a redeemed code is to wait out the 60 days or clear site
   // data by hand, which also wipes progress and favourites.
+  // v1.27.59 \u2014 returnerar VAD som togs bort, och sanker bara nivan om det
+  // var en nivakod som hojde den. En packkod ror aldrig nivan, sa att klippa
+  // den och samtidigt kasta ner en Pro-anvandare i freemium var fel: knappen
+  // tog bort mer an den gav, och gjorde det tyst.
   function clearGrant() {
-    const had = readGrant() || Object.keys(readPackGrants()).length;
+    const hadLevel = !!readGrant();
+    const packs    = Object.keys(readPackGrants());
     localStorage.removeItem(GRANT_KEY);
     localStorage.removeItem(PACKS_KEY);
-    if (had) {
+    if (hadLevel) {
       localStorage.setItem(LEVEL_KEY, 'freemium');
       localStorage.setItem('dev_level_forced', 'true');
-      applyAccessLevel();
     }
-    return !!had;
+    if (hadLevel || packs.length) applyAccessLevel();
+    return { level: hadLevel, packs: packs, any: hadLevel || packs.length > 0 };
   }
 
   // Returns { ok, message }. Never throws — it is wired to a text field.
@@ -1382,9 +1387,16 @@ applyInputCounterVisibility();
     const btn = document.getElementById('clearGrantBtn');
     if (!btn) return;
     btn.addEventListener('click', () => {
-      const had = clearGrant();
+      const res = clearGrant();
       loadDevLevelUI();
-      renderGrantStatus(had ? 'Beta code cleared \u2014 back to freemium.' : 'No beta code to clear.');
+      let msg = 'No access code to clear.';
+      if (res.level && res.packs.length)
+        msg = 'Level code and ' + res.packs.length + ' pack grant'
+            + (res.packs.length === 1 ? '' : 's') + ' cleared \u2014 back to freemium.';
+      else if (res.level) msg = 'Level code cleared \u2014 back to freemium.';
+      else if (res.packs.length)
+        msg = res.packs.join(', ') + ' locked again. Your level is unchanged.';
+      renderGrantStatus(msg);
       setTimeout(() => renderGrantStatus(), 2500);
     });
   })();
@@ -5358,79 +5370,42 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
     // First Strategies is the first pack a new user ever opens, so its first
     // page does one extra job the others do not: it says what the app is for.
     // Every other intro goes straight to preparing the training.
+    // First Strategies ar det forsta packet en ny anvandare oppnar, och det
+    // kommer direkt efter onboarding. v1.27.59 kortade det fran atta sidor
+    // till tre: en sida per strategi betydde sex skarmar text innan ett enda
+    // kort, ovanpa allt introturen redan visat. Strategierna kommer nu tre och
+    // tre, med tva rader var \u2014 nog for att kanna igen ett namn nar det
+    // dyker upp pa nasta skarm, och inte mer an sa.
     firststrategies: {
       pages: [
         {
           title: 'First Strategies',
           html:
-            // v1.26.79: the intro text above the list was cut to one short
-            // paragraph — the six rows plus a long lead-in pushed the page into
-            // scrolling, which made the first pack look like a lot of work.
             '<p class="ob-text">Deckstack is a rehearsal room. You practise things to say ' +
             'here, so they are already yours when a real conversation arrives.</p>' +
+            '<p class="ob-text">This pack holds six moves. Together they make one small ' +
+            'conversation, from the first remark to a good ending.</p>' +
+            '<p class="ob-text ob-text--dim">The next two pages introduce them. You do not ' +
+            'have to remember the names &mdash; you will meet them one at a time.</p>'
+        },
+        {
+          title: 'Getting it going',
+          html:
             '<div class="ob-how">' +
-            '<div class="ob-how-row"><span class="ob-how-num">1</span><p><strong>Opening Statement</strong> &mdash; a remark, not a question.</p></div>' +
-            '<div class="ob-how-row"><span class="ob-how-num">2</span><p><strong>Follow the Thread</strong> &mdash; use what they just said.</p></div>' +
-            '<div class="ob-how-row"><span class="ob-how-num">3</span><p><strong>Say It Back</strong> &mdash; show you understood.</p></div>' +
-            '<div class="ob-how-row"><span class="ob-how-num">4</span><p><strong>Ask Plainly</strong> &mdash; say what you want, in one sentence.</p></div>' +
-            '<div class="ob-how-row"><span class="ob-how-num">5</span><p><strong>A Friendly No</strong> &mdash; decline warmly and clearly.</p></div>' +
-            '<div class="ob-how-row"><span class="ob-how-num">6</span><p><strong>Answer With a Hook</strong> &mdash; leave them somewhere to go.</p></div>' +
+            '<div class="ob-how-row"><span class="ob-how-num">1</span><p><strong>Opening Statement</strong><br>Say something instead of asking something. A remark hands the other person material; a question hands them a job.</p></div>' +
+            '<div class="ob-how-row"><span class="ob-how-num">2</span><p><strong>Follow the Thread</strong><br>Take one word out of what they just said and go into it. You never need a new topic.</p></div>' +
+            '<div class="ob-how-row"><span class="ob-how-num">3</span><p><strong>Say It Back</strong><br>Show that you understood before you add anything of your own. It is the cheapest way to be easy to talk to.</p></div>' +
+            '</div>'
+        },
+        {
+          title: 'Saying what you want',
+          html:
+            '<div class="ob-how">' +
+            '<div class="ob-how-row"><span class="ob-how-num">4</span><p><strong>Ask Plainly</strong><br>Say what you want in one sentence, without building up to it. The ask is shorter than the run-up.</p></div>' +
+            '<div class="ob-how-row"><span class="ob-how-num">5</span><p><strong>A Friendly No</strong><br>Decline warmly and clearly at the same time. Warmth is not the same as a maybe.</p></div>' +
+            '<div class="ob-how-row"><span class="ob-how-num">6</span><p><strong>Answer With a Hook</strong><br>Leave something in your answer for them to pick up, so the turn comes back to you.</p></div>' +
             '</div>' +
-            '<p class="ob-text ob-text--dim">Six strategies that make one small conversation. ' +
-            'The next pages explain each one.</p>'
-        },
-        {
-          title: 'Opening Statement',
-          html:
-            '<p class="ob-text">Say something instead of asking something. A question hands ' +
-            'the other person a job; a statement hands them material.</p>' +
-            '<p class="ob-text">It also lets them out politely. An unanswered question is ' +
-            'awkward &mdash; an unanswered remark is not.</p>' +
-            '<p class="ob-text ob-text--dim">Standing in a long queue<br>&rarr; &ldquo;This queue has not moved in five minutes.&rdquo;</p>'
-        },
-        {
-          title: 'Follow the Thread',
-          html:
-            '<p class="ob-text">Take one word out of what they just said and go into it. ' +
-            'People put more into a sentence than they expect anyone to notice.</p>' +
-            '<p class="ob-text">It solves the real problem in conversation, which is not ' +
-            'shyness but having nothing to say next. You do not need something new.</p>' +
-            '<p class="ob-text ob-text--dim">&ldquo;We drove back from Malm\u00f6 on Sunday.&rdquo;<br>&rarr; &ldquo;Malm\u00f6 &mdash; what took you down there?&rdquo;</p>'
-        },
-        {
-          title: 'Say It Back',
-          html:
-            '<p class="ob-text">Repeat what you understood before you answer. It proves you ' +
-            'were listening, and it buys you a few seconds to think.</p>' +
-            '<p class="ob-text">Say it in your own words. Repeating their exact sentence ' +
-            'sounds like a technique; rewording it proves you understood.</p>' +
-            '<p class="ob-text ob-text--dim">A tangled complaint about work<br>&rarr; &ldquo;So the deadline moved and nobody told you.&rdquo;</p>'
-        },
-        {
-          title: 'Ask Plainly',
-          html:
-            '<p class="ob-text">Say what you want, in one sentence, without building up to ' +
-            'it. Then stop talking.</p>' +
-            '<p class="ob-text">The long run-up is what makes a request awkward, not the ' +
-            'request. And every reason you add afterwards is something to argue with.</p>' +
-            '<p class="ob-text ob-text--dim">You need Thursday covered<br>&rarr; &ldquo;Could you take the Thursday meeting? I\u2019m away.&rdquo;</p>'
-        },
-        {
-          title: 'A Friendly No',
-          html:
-            '<p class="ob-text">Say no clearly, warmly, and without a pile of reasons.</p>' +
-            '<p class="ob-text">Soften the delivery, never the answer. &ldquo;Maybe&rdquo; feels ' +
-            'kinder and costs the other person a week of waiting.</p>' +
-            '<p class="ob-text ob-text--dim">Asked to take on more this month<br>&rarr; &ldquo;I can\u2019t take anything else on, sorry.&rdquo;</p>'
-        },
-        {
-          title: 'Answer With a Hook',
-          html:
-            '<p class="ob-text">When someone asks about you, answer with something they can ' +
-            'ask about. One extra detail is the whole technique.</p>' +
-            '<p class="ob-text">A closed answer leaves them with nothing, so they have to ' +
-            'invent a new question. Two of those and most people give up.</p>' +
-            '<p class="ob-text ob-text--dim">&ldquo;How was your week?&rdquo;<br>&rarr; &ldquo;Good &mdash; long, though. I\u2019ve spent it arguing with a printer.&rdquo;</p>'
+            '<p class="ob-text ob-text--dim">Six moves, one conversation. Start anywhere.</p>'
         }
       ]
     },
@@ -5627,6 +5602,11 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
     // itself. Four strategies, so each gets a page, and the first page does the
     // one job the pack's own Core Idea cannot \u2014 say what the four have in
     // common and which question picks between them.
+    // v1.27.53, ordningen rattad v1.27.59. Sidorna foljer nu packets egen
+    // deckordning: Broken Record, Fogging, Negative Assertion, Negative
+    // Inquiry. Forsta versionen arvde ordningen fran The Assertive Four, som
+    // listar dem tvartom, och da stamde introt inte med det anvandaren motte
+    // pa nasta skarm.
     assertivecomm1: {
       pages: [
         {
@@ -5636,13 +5616,22 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
             'pressuring you, or working on your guilt. They are defences, not attacks &mdash; ' +
             'each one ends the pressure without starting a fight.</p>' +
             '<div class="ob-how">' +
-            '<div class="ob-how-row"><span class="ob-how-num">1</span><p><strong>Fogging</strong> &mdash; agree with what is true in it.</p></div>' +
-            '<div class="ob-how-row"><span class="ob-how-num">2</span><p><strong>Negative Inquiry</strong> &mdash; ask what they actually mean.</p></div>' +
+            '<div class="ob-how-row"><span class="ob-how-num">1</span><p><strong>Broken Record</strong> &mdash; repeat what you want, unchanged.</p></div>' +
+            '<div class="ob-how-row"><span class="ob-how-num">2</span><p><strong>Fogging</strong> &mdash; agree with what is true in it.</p></div>' +
             '<div class="ob-how-row"><span class="ob-how-num">3</span><p><strong>Negative Assertion</strong> &mdash; own a real mistake, plainly.</p></div>' +
-            '<div class="ob-how-row"><span class="ob-how-num">4</span><p><strong>Broken Record</strong> &mdash; repeat what you want, unchanged.</p></div>' +
+            '<div class="ob-how-row"><span class="ob-how-num">4</span><p><strong>Negative Inquiry</strong> &mdash; ask what they actually mean.</p></div>' +
             '</div>' +
             '<p class="ob-text ob-text--dim">One question picks between them: what did the ' +
             'other person just do?</p>'
+        },
+        {
+          title: 'Broken Record',
+          html:
+            '<p class="ob-text">Say what you want in the same words, in the same even tone, ' +
+            'as many times as it takes. No new arguments.</p>' +
+            '<p class="ob-text">Every reason you add is something for them to solve. The want ' +
+            'itself cannot be solved, which is why repeating it works and arguing does not.</p>' +
+            '<p class="ob-text ob-text--dim">&ldquo;But it is store policy.&rdquo;<br>&rarr; &ldquo;I understand that&rsquo;s the policy, and I want a refund.&rdquo;</p>'
         },
         {
           title: 'Fogging',
@@ -5655,15 +5644,6 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
             '<p class="ob-text ob-text--dim">&ldquo;You&rsquo;re always so disorganised.&rdquo;<br>&rarr; &ldquo;I probably am, some days.&rdquo;</p>'
         },
         {
-          title: 'Negative Inquiry',
-          html:
-            '<p class="ob-text">Ask for the complaint instead of answering the mood. ' +
-            'Calmly, without an edge: what specifically am I doing?</p>' +
-            '<p class="ob-text">Vague criticism runs on being vague. One plain question forces it ' +
-            'to become an actual event you can do something about &mdash; or to stop.</p>' +
-            '<p class="ob-text ob-text--dim">&ldquo;I don&rsquo;t like your attitude.&rdquo;<br>&rarr; &ldquo;What is it about my attitude that bothers you?&rdquo;</p>'
-        },
-        {
           title: 'Negative Assertion',
           html:
             '<p class="ob-text">When you really did it, say so &mdash; once, flatly, without ' +
@@ -5673,13 +5653,13 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
             '<p class="ob-text ob-text--dim">&ldquo;You forgot the report.&rdquo;<br>&rarr; &ldquo;I did &mdash; that was careless of me.&rdquo;</p>'
         },
         {
-          title: 'Broken Record',
+          title: 'Negative Inquiry',
           html:
-            '<p class="ob-text">Say what you want in the same words, in the same even tone, ' +
-            'as many times as it takes. No new arguments.</p>' +
-            '<p class="ob-text">Every reason you add is something for them to solve. The want ' +
-            'itself cannot be solved, which is why repeating it works and arguing does not.</p>' +
-            '<p class="ob-text ob-text--dim">&ldquo;But it is store policy.&rdquo;<br>&rarr; &ldquo;I understand that&rsquo;s the policy, and I want a refund.&rdquo;</p>'
+            '<p class="ob-text">Ask for the complaint instead of answering the mood. ' +
+            'Calmly, without an edge: what specifically am I doing?</p>' +
+            '<p class="ob-text">Vague criticism runs on being vague. One plain question forces it ' +
+            'to become an actual event you can do something about &mdash; or to stop.</p>' +
+            '<p class="ob-text ob-text--dim">&ldquo;I don&rsquo;t like your attitude.&rdquo;<br>&rarr; &ldquo;What is it about my attitude that bothers you?&rdquo;</p>'
         }
       ]
     },
@@ -6178,6 +6158,59 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
 
   // ── The guides ───────────────────────────────────────────────────────────
   const GUIDES = {
+    // v1.27.59 \u2014 the six modes, side by side. The four older guides all
+    // explain what to do once you are INSIDE a training screen; none of them
+    // said what the six choices on the mode screen actually are. This one is
+    // shown on the first pack the user ever opens, immediately before that
+    // pack's own intro, and afterwards lives under the gear on the home
+    // screen. Three pages, deliberately: it arrives right after onboarding.
+    'modes-overview': {
+      title: 'Training modes',
+      pages: [
+        {
+          title: 'Six ways to train',
+          html:
+            '<p class="ob-text">Every pack holds the same strategies, taught six different ' +
+            'ways. You do not have to use them all &mdash; most people live in one or two.</p>' +
+            '<div class="ob-how">' +
+            '<div class="ob-how-row"><span class="ob-how-num">1</span><p><strong>Single Strategy</strong> &mdash; one move at a time</p></div>' +
+            '<div class="ob-how-row"><span class="ob-how-num">2</span><p><strong>Collections</strong> &mdash; choosing between moves</p></div>' +
+            '<div class="ob-how-row"><span class="ob-how-num">3</span><p><strong>Sequences</strong> &mdash; moves in order</p></div>' +
+            '<div class="ob-how-row"><span class="ob-how-num">4</span><p><strong>Challenges</strong> &mdash; the hard situations</p></div>' +
+            '<div class="ob-how-row"><span class="ob-how-num">5</span><p><strong>Mindset</strong> &mdash; what stops you</p></div>' +
+            '<div class="ob-how-row"><span class="ob-how-num">6</span><p><strong>Memorize</strong> &mdash; the plain facts</p></div>' +
+            '</div>' +
+            '<p class="ob-text ob-text--dim">The next two pages say what each one is for.</p>'
+        },
+        {
+          title: 'Learning to say it',
+          html:
+            '<p class="ob-text"><strong>Single Strategy</strong> is where you start. One move, ' +
+            'a situation on the front and something you could say on the back. This is where a ' +
+            'move becomes yours.</p>' +
+            '<p class="ob-text"><strong>Collections</strong> puts two or more moves side by ' +
+            'side and asks which one this moment calls for. Knowing a move and picking it under ' +
+            'pressure are different skills.</p>' +
+            '<p class="ob-text"><strong>Sequences</strong> runs a whole conversation, step by ' +
+            'step, with the other person answering in between. It is the only mode where the ' +
+            'order is the lesson.</p>'
+        },
+        {
+          title: 'Making it stick',
+          html:
+            '<p class="ob-text"><strong>Challenges</strong> takes the same moves into the rooms ' +
+            'where they are hardest &mdash; the seller who will not stop, the friend who ' +
+            'deflects, the boss with an audience.</p>' +
+            '<p class="ob-text"><strong>Mindset</strong> is not about what to say at all. It ' +
+            'targets the belief that stops you saying it, one thought at a time.</p>' +
+            '<p class="ob-text"><strong>Memorize</strong> is flashcards: the names, the ' +
+            'mechanisms, the reasons. Short sessions, and it holds the pack together.</p>' +
+            '<p class="ob-text ob-text--dim">You can see this again under the gear on the home ' +
+            'screen.</p>'
+        }
+      ]
+    },
+
 
     'training-basics': {
       title: 'How training works',
@@ -6369,9 +6402,9 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
 
   // ── Renderer ─────────────────────────────────────────────────────────────
   // Same shape as the pack intro so the two feel like one mechanism.
-  function render(id) {
+  function render(id, onDone) {
     const g = GUIDES[id];
-    if (!g) return;
+    if (!g) { if (onDone) onDone(); return; }
     screen.innerHTML =
       '<div class="ob-top"><div class="ob-dots" id="gdDots"></div>' +
       '<button class="ob-skip" id="gdSkipBtn">Skip</button></div>' +
@@ -6395,12 +6428,19 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
       nextBtn.textContent = (i === steps.length - 1) ? 'Got it' : 'Continue';
       screen.scrollTop = 0;
     }
+    // v1.27.59 \u2014 onDone lets one guide hand over to whatever should follow
+    // it. The mode guide uses it to start the pack intro, so a first-time user
+    // sees the two in sequence instead of on top of each other.
+    let done = false;
     function finish() {
+      if (done) return;
+      done = true;
       screen.classList.add('ob-leaving');
       setTimeout(() => {
         screen.style.display = 'none';
         screen.classList.remove('ob-leaving');
         screen.innerHTML = '';
+        if (onDone) onDone();
       }, 450);
     }
     nextBtn.addEventListener('click', () => {
@@ -6423,16 +6463,32 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
   // read as two separate things happening. Now the guide is simply there, and
   // the training screen is revealed underneath when you close it. The caller
   // uses the return value to suppress the slide-in it would otherwise start.
-  function maybeShow(id) {
+  function maybeShow(id, onDone) {
     const key = 'ds_guide_' + id;
     if (localStorage.getItem(key) === 'seen') return false;
     try { localStorage.setItem(key, 'seen'); } catch (e) {}
-    render(id);
+    render(id, onDone);
     return true;
   }
 
   window.showGuide = render;
   window.maybeShowGuide = maybeShow;
+
+  // Replay fran kugghjulet pa hemskarmen. De fyra aldre guiderna nas inifran
+  // ett traningslage; den har handlar om valet MELLAN lagena, sa den hor hemma
+  // ett steg tidigare.
+  (function bindModeGuideBtn() {
+    const b = document.getElementById('modeGuideBtn');
+    if (!b) return;
+    b.addEventListener('click', e => {
+      e.stopPropagation();
+      const panel = b.closest('.settings-screen') || b.closest('.settings-panel');
+      if (panel && panel.classList) panel.classList.remove('open');
+      const back = document.getElementById('settingsBackBtn');
+      if (back) back.click();
+      setTimeout(() => render('modes-overview'), 60);
+    });
+  })();
   window.DECK_TERM = D;
 
   // ── The rows inside every training settings panel ────────────────────────
