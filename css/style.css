@@ -4064,3 +4064,21 @@ body.feedback-mode    .al-bar { display: none !important; }
   .rn-title { font-size: 19px; font-weight: 600; margin-bottom: 8px; }
   .rn-text  { font-size: 15px; line-height: 1.5; color: var(--ds-txt2); }
 }
+
+/* ─── VIEWPORT PINNED AFTER A ROTATION (v1.27.59) ────────────────────────────
+   See dsRotationReset() in app-core.js. Every box below is `height: 100dvh`
+   further up; once the phone has been rotated, iOS can keep serving the
+   landscape value and the whole screen becomes draggable. From the first
+   rotation onwards these six take a measured pixel height instead.
+
+   The class is only ever added by that function, so a device that is never
+   rotated never sees these rules and keeps the plain `dvh` behaviour. */
+html.ds-vh-pinned .app,
+html.ds-vh-pinned .home-screen,
+html.ds-vh-pinned .mode-screen,
+html.ds-vh-pinned .upgrade-screen,
+html.ds-vh-pinned .settings-screen,
+html.ds-vh-pinned .extended-screen {
+  height: var(--ds-vh, 100dvh) !important;
+  max-height: var(--ds-vh, 100dvh) !important;
+}
