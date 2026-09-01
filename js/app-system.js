@@ -1397,7 +1397,9 @@ applyInputCounterVisibility();
       else if (res.packs.length)
         msg = res.packs.join(', ') + ' locked again. Your level is unchanged.';
       renderGrantStatus(msg);
-      setTimeout(() => renderGrantStatus(), 2500);
+      // v1.27.60 \u2014 2,5 s var for kort: knappen sag ut att inte gora
+      // nagot alls, for meddelandet hann forsvinna innan man last det.
+      setTimeout(() => renderGrantStatus(), 12000);
     });
   })();
 
@@ -5291,7 +5293,13 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
     conversation: ['exploringatopic', 'changingtopics', 'reactingtounexpectedstatements'],
     listening:    ['showunderstanding', 'validation', 'supportingconversations'],
     depth:        ['deepquestions', 'talkingaboutyourself', 'supportingconversations'],
-    boundaries:   ['assertive', 'sayingno', 'makingrequests', 'brokenrecord'],
+    boundaries:   ['sayingno', 'makingrequests', 'brokenrecord'],
+    // v1.27.60 \u2014 `assertive` (The Assertive Four) satt har och ligger pa
+    // minLevel 'complete': en ny freemium-anvandare fick alltsa ett pack
+    // rekommenderat som hen inte kan oppna. `assertivecomm1` ar freemium och
+    // lar ut samma fyra drag.
+    assertive:    ['assertivecomm1', 'brokenrecord', 'receivingfeedbackandcriticism'],
+    humour:       ['humour', 'teasing', 'selfhumour', 'humourpractise'],
     conflict:     ['conflictemotions', 'respondingtopassiveaggression', 'emotionlabellingandregulation'],
     feedback:     ['givingcriticism', 'receivingfeedbackandcriticism', 'praiseandencouragement'],
     repair:       ['apologizing1'],
@@ -6164,54 +6172,74 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
     // shown on the first pack the user ever opens, immediately before that
     // pack's own intro, and afterwards lives under the gear on the home
     // screen. Three pages, deliberately: it arrives right after onboarding.
+    // v1.27.59, redrawn v1.27.60. The four older guides explain what to do
+    // once you are INSIDE a training screen; none of them said what the six
+    // choices on the mode screen actually are. Shown on the first pack the
+    // user ever opens, ahead of that pack's own intro, and afterwards under
+    // the gear on the home screen.
+    //
+    // The tiles carry the same Tabler icons as the mode cards, so the guide
+    // and the screen it describes look like the same thing. Three modes a
+    // page: six tiles do not fit one screen without scrolling.
+    //
+    // NOTE ON CHALLENGES. An earlier draft called these "the hard situations".
+    // Rikard, 2026-08-29: that is not what the mode is. The situations are no
+    // harder than anywhere else \u2014 the difference is that the deck is
+    // sorted by the PROBLEM rather than by the strategy, which is a different
+    // way in, not a difficulty setting. The two page groupings follow that
+    // same axis and nothing else.
     'modes-overview': {
       title: 'Training modes',
       pages: [
         {
           title: 'Six ways to train',
           html:
-            '<p class="ob-text">Every pack holds the same strategies, taught six different ' +
-            'ways. You do not have to use them all &mdash; most people live in one or two.</p>' +
-            '<div class="ob-how">' +
-            '<div class="ob-how-row"><span class="ob-how-num">1</span><p><strong>Single Strategy</strong> &mdash; one move at a time</p></div>' +
-            '<div class="ob-how-row"><span class="ob-how-num">2</span><p><strong>Collections</strong> &mdash; choosing between moves</p></div>' +
-            '<div class="ob-how-row"><span class="ob-how-num">3</span><p><strong>Sequences</strong> &mdash; moves in order</p></div>' +
-            '<div class="ob-how-row"><span class="ob-how-num">4</span><p><strong>Challenges</strong> &mdash; the hard situations</p></div>' +
-            '<div class="ob-how-row"><span class="ob-how-num">5</span><p><strong>Mindset</strong> &mdash; what stops you</p></div>' +
-            '<div class="ob-how-row"><span class="ob-how-num">6</span><p><strong>Memorize</strong> &mdash; the plain facts</p></div>' +
-            '</div>' +
-            '<p class="ob-text ob-text--dim">The next two pages say what each one is for.</p>'
+            '<p class="ob-text">Every pack holds the same strategies, taught six different ways.</p>' +
+            '<p class="ob-text">Three of them start from a strategy and work outwards. ' +
+            'Three come at it from somewhere else entirely.</p>' +
+            '<p class="ob-text ob-text--dim">You do not have to use them all. Most people ' +
+            'live in one or two.</p>'
         },
         {
-          title: 'Learning to say it',
+          title: 'From the strategy',
           html:
-            '<p class="ob-text"><strong>Single Strategy</strong> is where you start. One move, ' +
-            'a situation on the front and something you could say on the back. This is where a ' +
-            'move becomes yours.</p>' +
-            '<p class="ob-text"><strong>Collections</strong> puts two or more moves side by ' +
-            'side and asks which one this moment calls for. Knowing a move and picking it under ' +
-            'pressure are different skills.</p>' +
-            '<p class="ob-text"><strong>Sequences</strong> runs a whole conversation, step by ' +
-            'step, with the other person answering in between. It is the only mode where the ' +
-            'order is the lesson.</p>'
+            '<div class="gd-modes">' +
+            '<div class="gd-mode"><div class="gd-mode-ic"><i class="ti ti-cards" aria-hidden="true"></i></div>' +
+            '<div class="gd-mode-tx"><strong>Single Strategy</strong><span>One move at a time. A situation on the front, something you could say on the back. This is where a move becomes yours.</span></div></div>' +
+            
+            '<div class="gd-mode"><div class="gd-mode-ic"><i class="ti ti-layout-grid" aria-hidden="true"></i></div>' +
+            '<div class="gd-mode-tx"><strong>Collections</strong><span>Two or more moves side by side, and the question of which one this moment calls for. Knowing a move and picking it are different skills.</span></div></div>' +
+            
+            '<div class="gd-mode"><div class="gd-mode-ic"><i class="ti ti-list-numbers" aria-hidden="true"></i></div>' +
+            '<div class="gd-mode-tx"><strong>Sequences</strong><span>A whole conversation, step by step, with the other person answering in between. The only mode where the order is the lesson.</span></div></div>' +
+            
+            '</div>'
         },
         {
-          title: 'Making it stick',
+          title: 'From another angle',
           html:
-            '<p class="ob-text"><strong>Challenges</strong> takes the same moves into the rooms ' +
-            'where they are hardest &mdash; the seller who will not stop, the friend who ' +
-            'deflects, the boss with an audience.</p>' +
-            '<p class="ob-text"><strong>Mindset</strong> is not about what to say at all. It ' +
-            'targets the belief that stops you saying it, one thought at a time.</p>' +
-            '<p class="ob-text"><strong>Memorize</strong> is flashcards: the names, the ' +
-            'mechanisms, the reasons. Short sessions, and it holds the pack together.</p>' +
-            '<p class="ob-text ob-text--dim">You can see this again under the gear on the home ' +
-            'screen.</p>'
+            '<div class="gd-modes">' +
+            '<div class="gd-mode"><div class="gd-mode-ic"><i class="ti ti-trophy" aria-hidden="true"></i></div>' +
+            '<div class="gd-mode-tx"><strong>Challenges</strong><span>The same moves, sorted by the problem instead of the strategy. You meet the comment first and pick the answer yourself.</span></div></div>' +
+            
+            '<div class="gd-mode"><div class="gd-mode-ic"><i class="ti ti-sparkles" aria-hidden="true"></i></div>' +
+            '<div class="gd-mode-tx"><strong>Mindset</strong><span>Not about what to say at all. It takes the belief that stops you saying it, one thought at a time.</span></div></div>' +
+            
+            '<div class="gd-mode"><div class="gd-mode-ic"><i class="ti ti-brain" aria-hidden="true"></i></div>' +
+            '<div class="gd-mode-tx"><strong>Memorize</strong><span>Flashcards: the names, the mechanisms, the reasons. Short sessions, and it holds the pack together.</span></div></div>' +
+            
+            '</div>'
+        },
+        {
+          title: 'Ready',
+          html:
+            '<p class="ob-text">That is how the training works. Now for the material.</p>' +
+            '<p class="ob-text">Every pack teaches its own set of strategies, and each one ' +
+            'opens with a short introduction to them.</p>' +
+            '<p class="ob-text ob-text--dim">Here is your first.</p>'
         }
       ]
     },
-
-
     'training-basics': {
       title: 'How training works',
       pages: [
@@ -6435,12 +6463,23 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
     function finish() {
       if (done) return;
       done = true;
+      // v1.27.60 \u2014 when something follows, hand over WITHOUT the fade.
+      // The fade takes 450 ms with the screen hidden at the end of it, and in
+      // that gap the mode screen underneath was revealed and then covered
+      // again: a flash of a screen the user had not asked for yet. Handing
+      // over while the overlay is still up means the pack intro simply
+      // replaces the guide, and the mode screen is not seen until both are
+      // finished with.
+      if (onDone) {
+        screen.innerHTML = '';
+        onDone();
+        return;
+      }
       screen.classList.add('ob-leaving');
       setTimeout(() => {
         screen.style.display = 'none';
         screen.classList.remove('ob-leaving');
         screen.innerHTML = '';
-        if (onDone) onDone();
       }, 450);
     }
     nextBtn.addEventListener('click', () => {
