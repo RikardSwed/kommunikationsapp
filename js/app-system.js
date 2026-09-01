@@ -1383,6 +1383,49 @@ applyInputCounterVisibility();
     inp.addEventListener('keydown', e => { if (e.key === 'Enter') submit(); });
   })();
 
+  // v1.27.61 \u2014 en knapp som lamnar tillbaka enheten till utgangslaget.
+  // De tre sakerna som kan ha andrats sitter i tre olika system med tre olika
+  // nycklar, och att veta vilken som gav en ett visst pack ar inte anvandarens
+  // jobb. Den har tar dem alla och sager vad den tog.
+  (function bindResetAccess() {
+    const btn = document.getElementById('resetAccessBtn');
+    if (!btn) return;
+    btn.addEventListener('click', () => {
+      const parts = [];
+      const res = clearGrant();                      // niva- och packgrants
+      if (res.level) parts.push('level code');
+      if (res.packs.length) parts.push(res.packs.length + ' pack grant'
+        + (res.packs.length === 1 ? '' : 's'));
+
+      const store = (() => {
+        try { return (JSON.parse(localStorage.getItem('ds_redeemed_codes')) || []).length; }
+        catch (e) { return 0; }
+      })();
+      if (store) parts.push(store + ' store code' + (store === 1 ? '' : 's'));
+      localStorage.removeItem('ds_redeemed_codes');
+
+      ['ds_owned', 'ds_extended_owned'].forEach(k => {
+        try {
+          const n = (JSON.parse(localStorage.getItem(k)) || []).length;
+          if (n) parts.push(n + ' purchase' + (n === 1 ? '' : 's'));
+        } catch (e) {}
+        localStorage.removeItem(k);
+      });
+
+      localStorage.setItem(LEVEL_KEY, 'freemium');
+      localStorage.setItem('dev_level_forced', 'true');
+      applyAccessLevel();
+      loadDevLevelUI();
+      if (window.renderExtendedStore) renderExtendedStore();
+      const msg = parts.length
+        ? 'Cleared: ' + parts.join(', ') + '. Back to freemium.'
+        : 'Nothing to clear \u2014 already at freemium with no codes.';
+      renderGrantStatus(msg);
+      if (window.showToast) showToast(msg);
+      setTimeout(() => renderGrantStatus(), 12000);
+    });
+  })();
+
   (function bindClearGrant() {
     const btn = document.getElementById('clearGrantBtn');
     if (!btn) return;
@@ -3784,7 +3827,7 @@ const clearCodesBtn = document.getElementById('clearCodesBtn');
 if (clearCodesBtn) clearCodesBtn.addEventListener('click', () => {
   localStorage.removeItem('ds_redeemed_codes');
   if (window.renderExtendedStore) renderExtendedStore();
-  if (window.showToast) showToast('Redeemed codes cleared.');
+  if (window.showToast) showToast('Store codes cleared. Access codes are a separate button.');
 });
 
 const resetFirstRunBtn = document.getElementById('resetFirstRunBtn');
