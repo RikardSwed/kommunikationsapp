@@ -3370,7 +3370,7 @@ const mindsetCollections = {
       name: "No-Saying",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
-      description: "\"Saying no is unkind, selfish, and will destroy my relationships. I must always say yes to be valued.\"\n\n• **A clear no is a favor** — it gives the other person the chance to find a real, honest solution today. • **Softening a no is a trap** — giving long excuses or vague promises just postpones the pain. • **Calm confidence is kinder** — you don't need to apologize for occupying space and having limits.\n\nMindset: A clear no is a favor. Softening it just postpones the pain.",
+      description: "\"Saying no is unkind, selfish, and will destroy my relationships. I must always say yes to be valued.\"\n\n• **A clear no is a favor** — it gives the other person the chance to find a real, honest solution today.\n• **Softening a no is a trap** — giving long excuses or vague promises just postpones the pain.\n• **Calm confidence is kinder** — you don't need to apologize for occupying space and having limits.\n\nMindset: A clear no is a favor. Softening it just postpones the pain.",
       inputs: [
         { q: "Saying no makes me a difficult and unhelpful person.", a: "A clear no is a favor. Softening it just postpones the pain.", bundle: 'pro' },
         { q: "If I refuse this favor, they will stop liking me.", a: "People trust a yes more when they know a no is possible.", bundle: 'pro' },
@@ -3386,7 +3386,7 @@ const mindsetCollections = {
       name: "Asking for Help",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
-      description: "\"Asking for help makes me look weak, dependent, or incompetent. I must handle everything alone.\"\n\n• **Help is an act of trust** — it turns a lonely struggle into a collaborative team effort. • **Independence can be isolation** — refusing to need others cuts you off from deep connection. • **People love to be helpful** — asking for help is an invitation, not an imposition.\n\nMindset: Saying \"I need your help\" turns opponents into teammates.",
+      description: "\"Asking for help makes me look weak, dependent, or incompetent. I must handle everything alone.\"\n\n• **Help is an act of trust** — it turns a lonely struggle into a collaborative team effort.\n• **Independence can be isolation** — refusing to need others cuts you off from deep connection.\n• **People love to be helpful** — asking for help is an invitation, not an imposition.\n\nMindset: Saying \"I need your help\" turns opponents into teammates.",
       inputs: [
         { q: "Asking for help is admitting that I cannot cope on my own.", a: "Saying \"I need your help\" turns opponents into teammates.", bundle: 'pro' },
         { q: "If I ask for assistance, I am burdening the other person.", a: "People love to be helpful. It is an invitation, not an imposition.", bundle: 'pro' },
@@ -3402,7 +3402,7 @@ const mindsetCollections = {
       name: "Arguments",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
-      description: "\"An argument is a battle that I must win to maintain my status, worth, and authority.\"\n\n• **An argument is a knot** — the goal is to unravel the knot together, not to stand alone on top of the mountain. • **Winning an argument loses the relationship** — the only thing you win is their quiet contempt. • **The loudest voice is the weakest** — calm certainty is quiet, while insecurity is loud.\n\nMindset: An argument is a knot to unravel, not a war to win.",
+      description: "\"An argument is a battle that I must win to maintain my status, worth, and authority.\"\n\n• **An argument is a knot** — the goal is to unravel the knot together, not to stand alone on top of the mountain.\n• **Winning an argument loses the relationship** — the only thing you win is their quiet contempt.\n• **The loudest voice is the weakest** — calm certainty is quiet, while insecurity is loud.\n\nMindset: An argument is a knot to unravel, not a war to win.",
       inputs: [
         { q: "I must strike back with a direct zinger to win the argument.", a: "An argument is a knot to unravel, not a war to win.", bundle: 'pro' },
         { q: "The person who has the last word is the one who won.", a: "The person who speaks last usually loses the relationship.", bundle: 'pro' },
@@ -3418,7 +3418,7 @@ const mindsetCollections = {
       name: "Rescuing",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
-      description: "\"I am personally responsible for fixing other people's negative energy, sadness, or disappointment.\"\n\n• **Protect your presence, not their problem** — you cannot control another person's emotional state. • **Tension is not a failure** — standing firm in your boundaries is kinder than placating their mood. • **They have their own agency** — let them do their own emotional work rather than carrying it for them.\n\nMindset: Protect your presence, not their problem. You cannot control their mood.",
+      description: "\"I am personally responsible for fixing other people's negative energy, sadness, or disappointment.\"\n\n• **Protect your presence, not their problem** — you cannot control another person's emotional state.\n• **Tension is not a failure** — standing firm in your boundaries is kinder than placating their mood.\n• **They have their own agency** — let them do their own emotional work rather than carrying it for them.\n\nMindset: Protect your presence, not their problem. You cannot control their mood.",
       inputs: [
         { q: "If my partner is sad, I must have done something wrong.", a: "Protect your presence, not their problem. You cannot control their mood.", bundle: 'pro' },
         { q: "I must apologize immediately to make their anger go away.", a: "Placating an aggressive person only reinforces their bad behavior.", bundle: 'pro' },
@@ -3434,7 +3434,7 @@ const mindsetCollections = {
       name: "Patience",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
-      description: "\"If we have a conflict, we must solve everything perfectly right now, or our connection is broken.\"\n\n• **Repair happens over time** — real repair happens in a hundred small moments, not one heated marathon talk. • **Slowing down is your defense** — pushy people use accelerated timelines to bypass your analytical brain. • **Take a timeout early** — walking away to reset is an act of responsibility, not abandonment.\n\nMindset: One conversation is rarely enough. Real repair happens in a hundred small moments.",
+      description: "\"If we have a conflict, we must solve everything perfectly right now, or our connection is broken.\"\n\n• **Repair happens over time** — real repair happens in a hundred small moments, not one heated marathon talk.\n• **Slowing down is your defense** — pushy people use accelerated timelines to bypass your analytical brain.\n• **Take a timeout early** — walking away to reset is an act of responsibility, not abandonment.\n\nMindset: One conversation is rarely enough. Real repair happens in a hundred small moments.",
       inputs: [
         { q: "We must talk this out at midnight even if we are exhausted.", a: "One conversation is rarely enough. Real repair happens in a hundred small moments.", bundle: 'pro' },
         { q: "If we take a break, it means we are giving up on each other.", a: "Taking a timeout is taking responsibility for how you show up.", bundle: 'pro' },

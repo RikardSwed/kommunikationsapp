@@ -5450,7 +5450,7 @@ const memorizeCollections = {
     },
     {
       name: "Collections",
-      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Framing First** — nothing has been said yet: do you want to set a clear contract, or check if agreement is required? • **State Your Terms** — they are overreaching: do you need to enforce a consequence, or stop undercutting your words? • **The Full Set** — all five connection strategies mixed together with no situational warning.\n\nOne question decides nearly all of it: are you starting a conversation, or are you protecting your personal margin?",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Framing First** — nothing has been said yet: do you want to set a clear contract, or check if agreement is required?\n• **State Your Terms** — they are overreaching: do you need to enforce a consequence, or stop undercutting your words?\n• **The Full Set** — all five connection strategies mixed together with no situational warning.\n\nOne question decides nearly all of it: are you starting a conversation, or are you protecting your personal margin?",
       cards: [
         { q: "What does the Framing First collection make you choose between?", a: "Conversational Framing to set the topic and checkered flag, and Agreement Checks to neutralize pushy consensus demands.", bundle: 'pro' },
         { q: "What is the key to the State Your Terms collection?", a: "Choosing between Boundary Consequences to set firm limits with follow-through, and Serving It Neat to speak with direct authority.", bundle: 'pro' },
@@ -5469,7 +5469,7 @@ const memorizeCollections = {
     },
     {
       name: "Challenges",
-      description: "The five challenges to master in this pack:\n\n• **Avoidant Partners** — managing loved ones or colleagues who dodge tough discussions • **Pushy Personalities** — neutralizing dominant characters who try to dictate terms • **Overcommitment** — turning down invitations or favors without needless apologies • **Unclear Standards** — establishing expectations and contracts where none exist • **The Compliment Sandwich** — demanding direct, transparent feedback instead of insincere praise\n\nEach challenge category represents a distinct way an assertive conversation can be hijacked.",
+      description: "The five challenges to master in this pack:\n\n• **Avoidant Partners** — managing loved ones or colleagues who dodge tough discussions\n• **Pushy Personalities** — neutralizing dominant characters who try to dictate terms\n• **Overcommitment** — turning down invitations or favors without needless apologies\n• **Unclear Standards** — establishing expectations and contracts where none exist\n• **The Compliment Sandwich** — demanding direct, transparent feedback instead of insincere praise\n\nEach challenge category represents a distinct way an assertive conversation can be hijacked.",
       cards: [
         { q: "What is the target error in the Avoidant Partners challenge?", a: "Sending long, emotional text paragraphs, which triggers their withdrawal mechanism and makes them go silent.", bundle: 'pro' },
         { q: "What is the key to the Pushy Personalities challenge?", a: "Refusing to get sucked into an exhausting debate to prove them wrong. Use Agreement Checks instead.", bundle: 'pro' },
@@ -5479,7 +5479,7 @@ const memorizeCollections = {
     },
     {
       name: "Mindset",
-      description: "These are the mindsets you practise in this pack:\n\n• **No-Saying** — a clear no is a favor: softening it just postpones the pain • **Asking for Help** — saying \"I need your help\" turns opponents into teammates • **Arguments** — an argument is a knot to unravel, not a war to win • **Rescuing** — protect your presence, not their problem: you cannot control their mood • **Patience** — real repair happens in a hundred small moments of calm connection\n\nIn every mindset deck, you train to replace a limiting belief with a grounded, courtroom-tested truth.",
+      description: "These are the mindsets you practise in this pack:\n\n• **No-Saying** — a clear no is a favor: softening it just postpones the pain\n• **Asking for Help** — saying \"I need your help\" turns opponents into teammates\n• **Arguments** — an argument is a knot to unravel, not a war to win\n• **Rescuing** — protect your presence, not their problem: you cannot control their mood\n• **Patience** — real repair happens in a hundred small moments of calm connection\n\nIn every mindset deck, you train to replace a limiting belief with a grounded, courtroom-tested truth.",
       cards: [
         { q: "What is the limiting belief in the No-Saying mindset?", a: "That saying no is unkind and selfish, and will destroy your relationships.", bundle: 'pro' },
         { q: "Why is hyper-independence considered a trap in the Asking for Help mindset?", a: "Because it cuts you off from deep connection and leads to isolation, when people actually love to be helpful.", bundle: 'pro' },
