@@ -3943,6 +3943,96 @@ const multiStepCollections = {
             { front: "Praise — re-establishing attraction.", back: "\"I missed your smile. You're the most important part of my day.\"" },
           ]
         },
+        {
+          bundle: 'pro',
+          situation: "You cancelled your dinner date at the last minute because of an urgent work emergency. She is now cold and won't look at you.",
+          steps: [
+            { front: "Shared Reality — \"When I cancelled our date, did it feel like you and our time don't matter to me?\"", back: "\"I want to understand your perspective. Did my late cancel make you feel unimportant?\"" },
+            { front: "Feelings First — she says, \"Yes, it did. I was looking forward to it all week.\"", back: "\"That makes sense. I see how much that let you down, and I'm really sorry.\"" },
+            { front: "Tangible Action — offering a container.", back: "\"To prevent this, I'll block out Friday nights as non-negotiable for work, starting this week.\"" },
+            { front: "Praise — re-establishing attraction.", back: "\"I love spending focused time with you. You look absolutely beautiful tonight.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You promised to fix the leaking kitchen sink before her parents arrived, but you forgot. She is now furious and giving you the silent treatment.",
+          steps: [
+            { front: "Shared Reality — she sighs and looks away.", back: "\"When I forgot the sink, did it make you feel like I don't care about our home's safety?\"" },
+            { front: "Feelings First — she snaps: \"Yes, I feel like I'm alone in managing this house.\"", back: "\"I hear how exhausting that must feel. It's completely valid that you're angry, and I'm sorry.\"" },
+            { front: "Tangible Action — offering a container.", back: "\"I'll call the plumber first thing tomorrow morning and handle the payment myself.\"" },
+            { front: "Praise — re-establishing attraction.", back: "\"You've worked so hard to get the house ready. You are an amazing partner, and I want to support you.\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "From Chaos to Order",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
+      description: "Getting Shared Reality → Vocalizing the Boundary → The Tangible Action Proposal. This sequence trains you to handle her anxious attempts to manage you: first you check her internal logic, then you set a firm boundary, and finally you take decisive action.\n\n1. Getting Shared Reality — understand her underlying anxiety\n2. Vocalizing the Boundary — stop her from controlling or shaming you\n3. The Tangible Action Proposal — offer a concrete, structured solution\n\nWhy just this order: you must understand the anxiety before setting the boundary, and you must protect respect before offering the solution. What people do instead: they argue about her tone, get defensive, and leave the logistical mess unresolved. Mindset: a woman only tries to control you when she doesn't trust your capacity to lead.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "She is anxious about packing for the upcoming beach trip and starts criticizing your packing method, trying to take over.",
+          steps: [
+            { front: "Getting Shared Reality — she tells you that you are doing it all wrong.", back: "\"When you criticize my packing, are you feeling anxious that we won't have enough space?\"" },
+            { front: "Vocalizing the Boundary — she sighs and tries to grab the bags from your hands.", back: "\"I hear your worry, but I won't be micromanaged. I've got this packing handled.\"" },
+            { front: "The Tangible Action Proposal — you propose a clear plan.", back: "\"I'll pack the heavy gear in the trunk now, and I'll leave the back seat completely free for your bags.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "She is looking at the monthly bills and starts snapping at you, accusing you of being irresponsible with money.",
+          steps: [
+            { front: "Getting Shared Reality — she complains that you spend too much on your hobbies.", back: "\"When you look at the bills, are you feeling financially unsafe about our future?\"" },
+            { front: "Vocalizing the Boundary — she says a real provider would care more.", back: "\"I want to talk about our budget, but I won't be shamed about my hobbies. Let's speak calmly.\"" },
+            { front: "The Tangible Action Proposal — you propose a clear plan.", back: "\"Let's sit down on the first of every month to review our shared savings goal and expenses.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You see the garage is a mess. She starts nagging you in a harsh, demanding tone to clean it up immediately.",
+          steps: [
+            { front: "Getting Shared Reality — she yells that she can't stand the clutter anymore.", back: "\"When the garage is messy, does it make you feel like the house is chaotic and out of control?\"" },
+            { front: "Vocalizing the Boundary — she keeps demanding that you stand up and do it now.", back: "\"No, Love, we're not doing this. I won't respond to a demanding tone. Let's find connection.\"" },
+            { front: "The Tangible Action Proposal — you propose a clear plan.", back: "\"I'm going to spend two hours on Saturday morning cleaning the garage. Don't worry about it.\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Re-Polarizing the Room",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
+      description: "Feelings First, Facts Later → Leading with Praise → The Tangible Action Proposal. This sequence trains you to melt her shutdown or irritability: first you validate her feelings, then you praise her Feminine radiance, and finally you offer structure.\n\n1. Feelings First, Facts Later — offer emotional oxygen to lower her defenses\n2. Leading with Praise — build polarity by expressing your genuine desire for her\n3. The Tangible Action Proposal — take charge of the solution to relieve her burden\n\nWhy just this order: you must validate her feelings first because logic doesn't work in a storm; then praise re-establishes attraction before you offer the solution. What people do instead: they offer immediate practical fixes while she is upset, which feels like emotional neglect to her. Mindset: do not argue with her weather; be the unswayable Oak that welcomes her storm.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "She comes home from an exhausting day at work, looking highly irritable, stressed, and completely shut down.",
+          steps: [
+            { front: "Feelings First, Facts Later — she complains that the kitchen is messy and sighs heavily.", back: "\"I see how heavy and stressful your day was, Love. You can let all that frustration out here.\"" },
+            { front: "Leading with Praise — she collapses onto the couch.", back: "\"Even when you're completely exhausted, there is so much beauty in you. I missed your radiance today.\"" },
+            { front: "The Tangible Action Proposal — taking charge of the dinner.", back: "\"Let's do this: go take a warm bath, and I'll order our favorite sushi right now.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "She is getting ready for a date night, feeling self-conscious and complaining that nothing she wears looks good on her.",
+          steps: [
+            { front: "Feelings First, Facts Later — she sighs: \"I look so tired and old tonight.\"", back: "\"I hear how much pressure you're feeling to look perfect, and how frustrating that is.\"" },
+            { front: "Leading with Praise — she looks in the mirror with disapproval.", back: "\"The truth is you look absolutely hot in that black dress. My eyes are entirely on you.\"" },
+            { front: "The Tangible Action Proposal — guiding the evening.", back: "\"I've handled all the reservations. Relax, get your coat, and I'll drive us to the restaurant.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "She is highly anxious and complaining about how hard it is to coordinate the kids' school schedules.",
+          steps: [
+            { front: "Feelings First, Facts Later — she snaps that she has to think of everything herself.", back: "\"I hear how alone and overwhelmed you feel in managing the kids right now.\"" },
+            { front: "Leading with Praise — she looks up, surprised by your calm presence.", back: "\"I love how deeply you care for our children. You're an amazing mother, and I'm right here.\"" },
+            { front: "The Tangible Action Proposal — you take over a logistical chunk.", back: "\"I'll take complete responsibility for the school runs and lunches for the next two weeks.\"" },
+          ]
+        },
       ]
     },
   ],

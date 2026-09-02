@@ -2095,6 +2095,11 @@ const mindsetCollections = {
         { q: "She is being \"irrational\" and emotional.", a: "\"She is my Oracle. What is the kernel of truth she is showing me about my own lack of leadership?\"", bundle: 'pro' },
         { q: "I want to tell her she shouldn't feel that way.", a: "\"Emotions cannot be defended. They just are. Can I just take her reality in without resisting?\"", bundle: 'pro' },
         { q: "Her complaint feels 90% \"crazy\".", a: "\"90% of the crazy comes from her not feeling loved or led. How can I step up right now?\"", bundle: 'pro' },
+        { q: "I feel like she is just trying to find things to complain about.", a: "Her complaining is a clumsy expression of a deeper longing for my presence.", bundle: 'pro' },
+        { q: "Her intensity makes me feel like I am failing as a husband.", a: "She is testing my solidity; her storm is just weather, and I am the Oak.", bundle: 'pro' },
+        { q: "She is furious about the milk, and I want to explain that it's just milk.", a: "It's not about the milk; to her, it's about whether she is top of mind for me.", bundle: 'pro' },
+        { q: "I feel personally attacked when she vents about how messy the living room is.", a: "She is not attacking my character; her storm is a signal that she feels overwhelmed by disorder. Settle my nervous system first.", bundle: 'pro' },
+        { q: "I want to walk away when she raises her voice in frustration about our child's schedule.", a: "She is reflecting the lack of structural support in our home. If I stay grounded and engaged, she can relax.", bundle: 'pro' },
       ]
     },
     {
@@ -2106,6 +2111,59 @@ const mindsetCollections = {
         { q: "I feel guilty for wanting time at the gym.", a: "\"What I want matters. Being grounded and fit makes me a better leader for her.\"", bundle: 'pro' },
         { q: "I'm afraid my preference will disappoint her.", a: "\"Speaking my truth is the most loving thing I can do. I'll trust my desire and live with the consequences.\"", bundle: 'pro' },
         { q: "I've become a \"pleaser\" to avoid conflict.", a: "\"If I want a 'Yes' she can trust, I need to have a strong 'No'. Conflict is the price of integrity.\"", bundle: 'pro' },
+        { q: "I'll agree to go to her family's event even though I am completely exhausted.", a: "If I say yes out of fear of conflict, I will only breed resentment inside. My rest matters.", bundle: 'pro' },
+        { q: "I want to ask for her permission before buying new gym gear.", a: "Seeking permission turns her into my surrogate mother. I will state my decision clearly instead.", bundle: 'pro' },
+        { q: "I should hide my career ambition because it might make her feel insecure.", a: "Suppressing my drive to protect her comfort only emasculates me. A leader stands by his purpose.", bundle: 'pro' },
+        { q: "I'm tempted to say \"whatever you want\" to avoid the effort of making a choice.", a: "\"Whatever you want\" is the default of a passive pleaser. My clarity is what settles her.", bundle: 'pro' },
+        { q: "I feel a bad person for putting my need for a quiet hour ahead of her request.", a: "I cannot serve my family unless I attend to my own basic needs first. Self-care is leadership.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Structure",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"She's much better at planning and logistics, so I should just let her run things.\"\n\n**What is true instead:** providing structure is my role as a leader, and abdicating it leaves her unpartnered and anxious.\n\n**Why it feels right:** she is highly competent, thinks faster, and obsesses over the details more than I do.\n\n**What it costs:** her respect, and the polarity between you — she is pushed into her Masculine while she is craving your direction.\n\nMindset: providing structure is a gift of leadership, not a burden.",
+      inputs: [
+        { q: "I want to say \"whatever you want\" when she asks where we should go on vacation.", a: "Deciding is a gift of structure I give her to relieve her decision fatigue. I will propose two clear options.", bundle: 'pro' },
+        { q: "I'm tempted to let her handle all the parenting plans because she is more organized.", a: "If I don't engage and bring my own perspective, she will feel lonely and unpartnered in raising our children.", bundle: 'pro' },
+        { q: "I feel like a domineering jerk when I set a limit on how many bags she can pack.", a: "Setting a limit because of the rental car's size is not bullying; it is providing real, loving structure.", bundle: 'pro' },
+        { q: "I hesitate to set a regular time to sync our schedules because she is busy.", a: "A predictable structure reduces her uncertainty and allows her Feminine nervous system to relax.", bundle: 'pro' },
+        { q: "I want to let things drift on auto-pilot because organizing the household takes too much effort.", a: "My passivity will eventually force her into her Masculine to manage things, which kills our polarity.", bundle: 'pro' },
+        { q: "I'm afraid she will resist my proposal for a weekend hike.", a: "I will present my plan clearly. If she resists, I can calmly listen while staying grounded in my leadership.", bundle: 'pro' },
+        { q: "I want to yield to her strong opinions immediately just to avoid any conflict.", a: "Yielding to avoid conflict only breeds her contempt. I must stand by my truth and lead.", bundle: 'pro' },
+        { q: "I feel incompetent when we cook because she is so much better in the kitchen.", a: "I can show leadership by asking her to tell me what to do, and taking complete responsibility for my tasks.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Praise",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Praising her feels manipulative, or like I'm just trying to perform a technique.\"\n\n**What is true instead:** praise is the essential fuel that opens her Feminine heart and body to connect with me.\n\n**What is true instead:** it feels easy to withhold appreciation when I am feeling underappreciated or when she is being irritable.\n\n**What it costs:** the polarity between you, leaving her heart closed and her body shut down to me.\n\nMindset: my specific appreciation is the oxygen her Feminine heart craves.",
+      inputs: [
+        { q: "I feel a resistance to praising her beauty because she has been cold all day.", a: "She closes when she doesn't feel desired. My genuine praise is the invitation she needs to relax and open.", bundle: 'pro' },
+        { q: "I want to give a general compliment like \"you look nice\" because it's safe and easy.", a: "General compliments feel polite but evaporate. Specific praise proves I am paying focused attention.", bundle: 'pro' },
+        { q: "I feel awkward expressing my raw sexual desire for her body out loud.", a: "Owning my desire is deeply Masculine and attractive. I will tell her exactly how hot she looks.", bundle: 'pro' },
+        { q: "I want to complain about our lack of intimacy instead of praising her responsiveness.", a: "Complaining breeds defensiveness. Praising her responsiveness is what actually encourages her to open.", bundle: 'pro' },
+        { q: "I'm afraid that praising her effort with the kids will sound patronizing.", a: "Appreciating her deep Feminine care is a gift of heart connection that makes her feel seen.", bundle: 'pro' },
+        { q: "I think she already knows she looks beautiful in that dress.", a: "She knows she tried, but she cannot see the effect she has on me. My praise is that feedback.", bundle: 'pro' },
+        { q: "I feel like a fraud when I praise her while she is stuck in her work mind.", a: "My warm presence and praise are what invite her to drop her analytical armor and soften.", bundle: 'pro' },
+        { q: "I want to withhold my attention until she apologizes for being irritable.", a: "Withholding attention is a petty, reactive game. I will lead with desire and melt the coldness.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Heart",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Opening my heart and showing vulnerability makes me look weak and unmasculine.\"\n\n**What is true instead:** dropping into my heart is the ultimate display of grounding and emotional safety.\n\n**What is true instead:** it feels safer to stay in my logical, thinking mind and preserve my \"rightness\" during conflict.\n\n**What it costs:** the connection, leaving her alone, unseen and emotionally unsafe with me.\n\nMindset: a strong man rules his emotional world by feeling deeply and staying present.",
+      inputs: [
+        { q: "I want to argue the facts of her complaint because I know I am technically right.", a: "Preserving my rightness at the cost of connection is a loss. I will drop into my heart and feel her pain.", bundle: 'pro' },
+        { q: "I feel a strong urge to shut down or freeze when she blasts me with messy emotions.", a: "My withdrawal is what a boy does. A Masculine leader breathes, stays in connection, and contains the storm.", bundle: 'pro' },
+        { q: "I'm afraid that sharing my underlying fear or shame will make her lose respect for me.", a: "A strong man knows his emotions and shares them without needing anyone else to change to make the pain stop.", bundle: 'pro' },
+        { q: "I want to pretend I'm fine to look tough.", a: "Clamping up is an act of avoidance, not strength. If I choose not to feel my pain, she will have to feel it for me.", bundle: 'pro' },
+        { q: "I want to explain my good intentions immediately to avoid being the bad guy.", a: "My scramble to defend comes from my own anxiety. I will tolerate the discomfort and listen first.", bundle: 'pro' },
+        { q: "I feel awkward slowing down and just breathing with her when she is upset.", a: "Slowing down is the antithesis of the get-it-done mind. It is where true emotional safety is built.", bundle: 'pro' },
+        { q: "I'm tempted to use intellectual arguments to solve her emotional distress.", a: "Reasoning at an upset partner does not land. I must speak from my heart instead.", bundle: 'pro' },
+        { q: "I feel ashamed of how long it takes me to notice what I am feeling.", a: "Naming a feeling slowly is still naming it. The practice is the point, not the speed.", bundle: 'pro' },
       ]
     },
   ],

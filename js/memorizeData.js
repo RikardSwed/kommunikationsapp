@@ -3544,6 +3544,148 @@ const memorizeCollections = {
         { q: "Why is praise essential for the Feminine?", a: "It fulfills the need to feel desirable and encourages the behavior you want without using criticism.", bundle: 'pro' },
         { q: "When should you ask for a \"Delay\"?", a: "When you are so elevated that you risk becoming reactive or destructive.", bundle: 'pro' },
         { q: "What is the \"Shadow Side\" of the Provider role?", a: "Over-identifying with work such that you neglect the \"little things\" that make her feel safe.", bundle: 'pro' },
+        { q: "What does \"Vocalizing the Boundary\" protect in a relationship?", a: "The dignity of both partners and the culture of the relationship, by stopping shaming and insults.", bundle: 'pro' },
+        { q: "Why is \"Choreplay\" a failed strategy for attraction?", a: "Because doing chores to \"earn\" sex is a covert contract that communicates dependency and lack of desire.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Core Idea",
+      description: "The five strategies of this pack, designed to build a Masculine core and inspire trust, lust, and devotion.\n\n1. Feelings First, Facts Later\n2. The Tangible Action Proposal\n3. Getting Shared Reality\n4. Vocalizing the Boundary\n5. Leading with Praise\n\nThey move you from reactive pleasing into grounded leadership.",
+      cards: [
+        { q: "What are the three core principles of Masculine leadership?", a: "Respond vs. React, Provide Structure, and Create Safety.", bundle: 'free' },
+        { q: "What is the primary purpose of the new Masculine?", a: "To serve others powerfully through clarity, leadership, protection, and care, rather than control.", bundle: 'free' },
+        { q: "Why is \"being nice\" not enough to win her respect?", a: "Because it produces harmless, tentative men who abdicate leadership to avoid conflict.", bundle: 'free' },
+        { q: "What is the basic rule about who is responsible for relationship conflict?", a: "Whether or not you are the problem, your Masculine leadership is the solution.", bundle: 'free' },
+        { q: "What does David Deida's concept of Polarity require?", a: "That for juicy intimacy to flourish, there must be one partner in the Masculine pole and one in the Feminine.", bundle: 'pro' },
+        { q: "Why is a woman's nagging actually an indicator that she is \"in\" the relationship?", a: "It is her clumsy expression of longing for you to step up; the day she stops calling you out is the day she has given up.", bundle: 'pro' },
+        { q: "What is the main outcome of embodying the blueprint?", a: "It induces her to relax back into her Feminine state of playfulness, adoration, and sexual openness.", bundle: 'pro' },
+        { q: "What is the primary difference between the old Masculine and the new Masculine?", a: "The old Masculine was based on control and power imbalance; the new Masculine is based on clarity and leadership.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Feelings First, Facts Later",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"Feelings First, Facts Later\"?", a: "Prioritizing emotional validation over logical corrections during an argument.", bundle: 'free' },
+        { q: "Why is reasoning with an emotional partner useless in the moment?", a: "Because addressing emotion with cognitive reasoning is like speaking French to an English speaker.", bundle: 'free' },
+        { q: "What is the \"emotional oxygen\" she needs during an outburst?", a: "Hearing that her pain is seen and validated, without you getting defensive.", bundle: 'free' },
+        { q: "When do you deal with the facts of her complaint?", a: "Later, after her emotional storm has passed and she has settled.", bundle: 'free' },
+        { q: "What are the two variants of \"Feelings First, Facts Later\"?", a: "The Emotional Storm (ignore the story) and The Misunderstanding (stay present).", bundle: 'free' },
+        { q: "Why does your defensiveness naturally diminish when you use this strategy?", a: "Because knowing you will get to the facts later frees you to focus entirely on her heart now.", bundle: 'pro' },
+        { q: "What does getting defensive or explaining your intentions immediately do?", a: "It invalidates her emotional experience and enrages her further.", bundle: 'pro' },
+        { q: "How does this strategy build deep relational trust over time?", a: "It proves to her nervous system that you are a solid rock who can contain her intensity without running.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Tangible Action Proposal",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"The Tangible Action Proposal\"?", a: "Offering a specific, concrete behavioral change to ensure a problem doesn't recur.", bundle: 'free' },
+        { q: "Why are vague promises of \"trying harder\" insufficient?", a: "Because they don't settle her Feminine nervous system or build structural trust.", bundle: 'free' },
+        { q: "What are the two variants of \"The Tangible Action Proposal\"?", a: "The Trust Builder (for recurring failures) and The Connection Container (for regular syncs).", bundle: 'free' },
+        { q: "What does the Masculine expectation of \"delivering results\" require?", a: "Translating your intentions into stable, predictable actions that she can rely on.", bundle: 'free' },
+        { q: "How does proposing a regular \"schedule sync\" help her relax?", a: "It reduces her uncertainty about the upcoming week's plans and logistics.", bundle: 'free' },
+        { q: "What is the \"shadow side\" of being a good Provider?", a: "Over-identifying with work such that you neglect the \"little things\" that make her feel safe.", bundle: 'pro' },
+        { q: "What is the \"trifecta\" of repair after you have caused harm?", a: "Empathy first, taking responsibility second, and then offering a tangible action.", bundle: 'pro' },
+        { q: "Why should you keep a personal task list for household commitments?", a: "It demonstrates that you take her needs as seriously as your professional responsibilities.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Getting Shared Reality",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"Getting Shared Reality\"?", a: "Using curious inquiry to understand her perspective when her reaction seems baffling.", bundle: 'free' },
+        { q: "Why should you avoid trying to solve her perspective logically?", a: "Because her feelings are a signal to listen to, not a puzzle to analyze.", bundle: 'free' },
+        { q: "What are the two variants of \"Getting Shared Reality\"?", a: "The Reality Sync (checking your understanding) and The Deep Dive (exploring the pain).", bundle: 'free' },
+        { q: "What kind of questions should you ask to sync reality?", a: "Questions that explore how she felt: \"Did it feel like you didn't matter to me?\"", bundle: 'free' },
+        { q: "What does \"speaking inarguably\" mean?", a: "Stating only what is true for your own experience without characterizing her motives.", bundle: 'free' },
+        { q: "How does this strategy help you find the \"kernel of truth\" in a complaint?", a: "It gets you on the same page by focusing on the hardest part of her experience.", bundle: 'pro' },
+        { q: "Why does she react toxically when her reality is invalidated?", a: "Because she feels abandoned to deal with her pain alone.", bundle: 'pro' },
+        { q: "What is she really saying when she complains about a minor lapse like forgotten milk?", a: "She is expressing the pain of feeling forgotten and not top of mind.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Vocalizing the Boundary",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"Vocalizing the Boundary\"?", a: "Directly calling out unacceptable behavior while staying in connection and heart.", bundle: 'free' },
+        { q: "What are the two variants of \"Vocalizing the Boundary\"?", a: "The \"No Fighting\" container and The Anti-Shaming line.", bundle: 'free' },
+        { q: "What is the \"container\" of a conflict?", a: "The rules of engagement, such as refusing to sleep disconnected or tolerating insults.", bundle: 'free' },
+        { q: "Why is setting boundaries considered an act of love?", a: "Because it protects the relationship's culture and builds her respect for your spine.", bundle: 'free' },
+        { q: "How should you respond to the silent treatment or \"punitive withdrawal\"?", a: "Make it clear that while you acknowledge her hurt, you won't tolerate being shut out.", bundle: 'free' },
+        { q: "What is the difference between setting a boundary and trying to dominate her?", a: "A boundary is set in connection to protect respect; dominance is trying to control her out of fear.", bundle: 'pro' },
+        { q: "What is the best response to \"token resistance\" from your partner?", a: "Gently but firmly persisting with love, rather than backing down or steamrolling.", bundle: 'pro' },
+        { q: "Why does a woman lose respect for a man who has no boundaries?", a: "Because she knows that if he can't stand up TO her, he can't stand up FOR her.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Leading with Praise",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"Leading with Praise\"?", a: "Using specific appreciation of her beauty or behavior to open her Feminine heart.", bundle: 'free' },
+        { q: "Why is specific praise more powerful than general compliments?", a: "Specific praise proves you are paying focused attention, which is what she craves.", bundle: 'free' },
+        { q: "What are the two variants of \"Leading with Praise\"?", a: "Behavioral Praise (encouraging what you like) and Seductive Praise (building polarity).", bundle: 'free' },
+        { q: "Why should you avoid \"standardized\" or forced-Pavlovian praise?", a: "Because the Feminine will experience it as obligatory, as if she is supposed to perform.", bundle: 'free' },
+        { q: "How does praise help a woman transition out of her Masculine work-mind?", a: "It invites her to let go of control and relax into her radiant, feeling state.", bundle: 'free' },
+        { q: "What is the \"container\" in the sexual domain?", a: "A sense of safety and preparation within which her Feminine sexual energy can flourish.", bundle: 'pro' },
+        { q: "Why is praising her effort more effective than complaining about her lack?", a: "Because the Feminine thrives on being desired; praise organically encourages her openness.", bundle: 'pro' },
+        { q: "What is the foundational relationship between heart connection and sexuality?", a: "Opening her Feminine heart with praise and presence is what naturally opens her body.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• The Repair Kit — turn a conflict into trust: do you sync reality, validate feelings, or offer a tangible action?\n• Polarity and Power — maintain the juice: do you set a firm boundary or lead with warm praise?\n• Guiding the Decision — relieve her burden: do you propose a concrete step, hold limits, or sync her logic?\n\nOne question decides nearly all of it: what did she just do?",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "The Repair Kit, Polarity and Power, and Guiding the Decision.", bundle: 'pro' },
+        { q: "What is the core purpose of \"The Repair Kit\"?", a: "To heal connection after a breach by combining empathy, ownership, and proactive solutions.", bundle: 'pro' },
+        { q: "What does \"Polarity and Power\" teach you to manage?", a: "The sexual tension and mutual respect, balancing safety boundaries with seductive desire.", bundle: 'pro' },
+        { q: "What is the focus of \"Guiding the Decision\"?", a: "Relieving her decision fatigue by narrowing the scope of daily logistics and choices.", bundle: 'pro' },
+        { q: "When should you choose \"Getting Shared Reality\" over \"Feelings First\"?", a: "When her reaction is truly baffling and you need to understand her internal logic first.", bundle: 'pro' },
+        { q: "When should you choose \"Vocalizing the Boundary\" over \"Leading with Praise\"?", a: "When her anxious control crosses into disrespectful shaming or name-calling.", bundle: 'pro' },
+        { q: "Why does \"Guiding the Decision\" include \"Vocalizing the Boundary\"?", a: "Because setting limits on her micromanaging is how you establish your frame to lead.", bundle: 'pro' },
+        { q: "What is the main trap in Collections?", a: "Choosing the \"easy-going\" default of doing nothing, which abdicates your role as Captain.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n• From Shutdown to Radiance — Shared Reality → Feelings First → Tangible Action → Praise\n• From Chaos to Order — Getting Shared Reality → Vocalizing the Boundary → Tangible Action\n• Re-Polarizing the Room — Feelings First, Facts Later → Leading with Praise → Tangible Action\n\nIn each one, the order of the steps is what re-establishes safety and polarity.",
+      cards: [
+        { q: "What are the three sequences in this pack?", a: "From Shutdown to Radiance, From Chaos to Order, and Re-Polarizing the Room.", bundle: 'pro' },
+        { q: "Why does \"From Shutdown to Radiance\" start with \"Shared Reality\"?", a: "To locate the exact point of disconnection before you offer comfort or validate her feelings.", bundle: 'pro' },
+        { q: "What is the final step in \"From Shutdown to Radiance\"?", a: "Leading with Praise, to transition her out of the repair state and back into attraction.", bundle: 'pro' },
+        { q: "What is the order in \"From Chaos to Order\"?", a: "Getting Shared Reality, then Vocalizing the Boundary, and finally The Tangible Action Proposal.", bundle: 'pro' },
+        { q: "Why does \"Vocalizing the Boundary\" come before the action proposal in \"From Chaos to Order\"?", a: "Because you must stop her disrespectful control before you can offer a solid, Masculine lead.", bundle: 'pro' },
+        { q: "What is the order in \"Re-Polarizing the Room\"?", a: "Feelings First, Facts Later, then Leading with Praise, and finally The Tangible Action Proposal.", bundle: 'pro' },
+        { q: "Why does \"Leading with Praise\" precede the action in \"Re-Polarizing the Room\"?", a: "Because her Feminine heart must feel desired and attractive before she can trust your practical solution.", bundle: 'pro' },
+        { q: "What does \"From Chaos to Order\" help you do?", a: "Reclaim the Captain's seat when she is trying to manage your schedule out of anxiety.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenges to master in this pack:\n\n• The Toxic Attack — when she blasts you with blame, shaming, or insults\n• The Silent Treatment — when she goes cold or shuts you out as a punishment\n• Decision Fatigue — when she is overwhelmed by the burden of planning\n• Testing Your Solidity — when she tests your boundaries or devotion\n• The Fact-Centered Trap — when you get sucked into logical debates during storms\n\nEach category starts from her behavior rather than from your strategy.",
+      cards: [
+        { q: "What are the five challenges in this pack?", a: "The Toxic Attack, The Silent Treatment, Decision Fatigue, Testing Your Solidity, and The Fact-Centered Trap.", bundle: 'pro' },
+        { q: "How do you handle \"The Toxic Attack\"?", a: "By ignoring her blame to focus on her underlying pain, while holding a firm line on respect.", bundle: 'pro' },
+        { q: "What is the core danger during \"The Silent Treatment\"?", a: "Reacting with contraction or using the silent treatment yourself, which destroys connection.", bundle: 'pro' },
+        { q: "What is the best strategy to resolve \"Decision Fatigue\"?", a: "The Tangible Action Proposal—synthesizing information and presenting proactive plans.", bundle: 'pro' },
+        { q: "What is she really seeking when she is \"Testing Your Solidity\"?", a: "Evidence that you are strong enough to withstand her emotional tsunamis.", bundle: 'pro' },
+        { q: "How do you escape \"The Fact-Centered Trap\"?", a: "By applying the \"Feelings First, Facts Later\" sequence, ignoring the logical debate.", bundle: 'pro' },
+        { q: "Which strategy handles both \"The Silent Treatment\" and \"Testing Your Solidity\"?", a: "Vocalizing the Boundary—protecting respect and refusing to be punished or manipulated.", bundle: 'pro' },
+        { q: "Why does a woman throw these challenges at you?", a: "To test your consciousness and competence before she surrenders to your lead.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "The five mindsets you practise in this pack:\n\n• The Oracle Reframe — choosing to see her messy emotions as intuitive data about my presence\n• Healthy Selfishness — stating what I want clearly to provide orientation and polarity\n• Structure — taking the lead in logistics to relieve her decision fatigue\n• Praise — appreciating her beauty to open her Feminine heart\n• Heart — dropping into my vulnerability to create emotional safety\n\nEach mindset shifts you from reactive avoidance to grounded presence.",
+      cards: [
+        { q: "What is the core block of \"The Oracle Reframe\"?", a: "Getting defensive because you interpret her emotional storm as a personal attack rather than intuitive data.", bundle: 'pro' },
+        { q: "What is the core block of \"Healthy Selfishness\"?", a: "Acting as a nice guy pleaser who hides his needs to avoid conflict, which kills polarity.", bundle: 'pro' },
+        { q: "What is the core block of the \"Structure\" mindset?", a: "Abdicating the lead in logistics because she is competent, leaving her unpartnered and anxious.", bundle: 'pro' },
+        { q: "What is the core block of the \"Praise\" mindset?", a: "Withholding appreciation because you feel underappreciated or believe praise is a manipulative technique.", bundle: 'pro' },
+        { q: "What is the core block of the \"Heart\" mindset?", a: "Staying in your logical mind to protect your rightness instead of dropping into your heart to feel her pain.", bundle: 'pro' },
+        { q: "Which mindset answers \"I should just let her run things\"?", a: "Structure — providing direction is leadership, not a burden you place on her.", bundle: 'pro' },
+        { q: "How does stating what you want help her relax?", a: "Your expressed desire provides a clear point of orientation that settles her nervous system.", bundle: 'pro' },
+        { q: "What is the ultimate goal of these five mindsets?", a: "To shift your posture from reactive avoidance and defense to grounded, loving containment.", bundle: 'pro' },
       ]
     },
   ],

@@ -10675,9 +10675,14 @@ const collectionsModeData = {
       guideBack: "A possible response (strategy in brackets).",
       description: "Shared Reality, Feelings First, and Tangible Action. Use these to turn a conflict into a trust-building moment.\nRepair work requires empathy first, then ownership, and finally a plan for the future.",
       inputs: [
-        { q: "She feels forgotten because you missed an important event.", a: "\"Did it feel like you aren't a priority? I'm so sorry I caused that pain.\" (Shared Reality/Feelings First)", bundle: 'pro' },
-        { q: "You've both been shut down for days after a big fight.", a: "\"I was clumsy and reactive. I'll start using my journal to process my anger instead.\" (Feelings First/Tangible Action)", bundle: 'pro' },
-        { q: "She is mad about a chore you promised to do.", a: "\"I owned that I'd let it sit. I'm putting it on my to-do list for 9 AM tomorrow.\" (Tangible Action)", bundle: 'pro' },
+        { q: "She feels forgotten because you missed an important event.", a: "\"Did it feel like you aren't a priority? I'm so sorry I caused that pain.\" [Getting Shared Reality]", bundle: 'pro' },
+        { q: "You've both been shut down for days after a big fight.", a: "\"I was clumsy and reactive. I'll start using my journal to process my anger instead.\" [Feelings First, Facts Later]", bundle: 'pro' },
+        { q: "She is mad about a chore you promised to do.", a: "\"I owned that I'd let it sit. I'm putting it on my to-do list for 9 AM tomorrow.\" [The Tangible Action Proposal]", bundle: 'pro' },
+        { q: "She is angry that you didn't help her with her taxes.", a: "\"I see you felt completely abandoned on a task that was really hard for you. Let's sit down and handle it together tonight.\" [The Tangible Action Proposal]", bundle: 'pro' },
+        { q: "She blasts you with anger about you going on a golf weekend with your buddies.", a: "\"I hear how much it hurts that I made plans without you. I want to listen to how you feel.\" [Feelings First, Facts Later]", bundle: 'pro' },
+        { q: "She says you always choose your work over her.", a: "\"When I stay late, does it feel like you aren't important to me?\" [Getting Shared Reality]", bundle: 'pro' },
+        { q: "She is sobbing because she feels overwhelmed by the household chores.", a: "\"Let's do this: I'll take complete responsibility for the laundry and groceries starting today.\" [The Tangible Action Proposal]", bundle: 'pro' },
+        { q: "She is cold and distant because you forgot to check in on her uncle's illness.", a: "\"Did my silence make you feel forgotten and unloved? Help me understand.\" [Getting Shared Reality]", bundle: 'pro' },
       ]
     },
     {
@@ -10686,9 +10691,30 @@ const collectionsModeData = {
       guideBack: "A possible response (strategy in brackets).",
       description: "Vocalizing the Boundary and Leading with Praise. These maintain the \"juice\" and respect in the relationship.\nOne protects the container, the other fuels the attraction.",
       inputs: [
-        { q: "She is being \"bossy\" and telling you how to drive.", a: "\"I've got this handled, Love. Why don't you put on some music instead?\" (Boundary/Structure)", bundle: 'pro' },
-        { q: "You want to spark some electricity on a boring Tuesday.", a: "\"You look incredible in that light. I'm going to devour you later.\" (Praise)", bundle: 'pro' },
-        { q: "She snaps at you in front of your friends.", a: "\"Darling, I'm happy to hear your frustration later, but not like this. Let's stay in connection.\" (Boundary)", bundle: 'pro' },
+        { q: "She is being \"bossy\" and telling you how to drive.", a: "\"I've got this handled, Love. Why don't you put on some music instead?\" [Vocalizing the Boundary]", bundle: 'pro' },
+        { q: "You want to spark some electricity on a boring Tuesday.", a: "\"You look incredible in that light. I'm going to devour you later.\" [Leading with Praise]", bundle: 'pro' },
+        { q: "She snaps at you in front of your friends.", a: "\"Darling, I'm happy to hear your frustration later, but not like this. Let's stay in connection.\" [Vocalizing the Boundary]", bundle: 'pro' },
+        { q: "She comes out of her office still stressed and locked in her analytical work mind.", a: "\"I missed your radiance today. Come here, let me just hold you and look at you.\" [Leading with Praise]", bundle: 'pro' },
+        { q: "She is complaining in a high-pitched, demanding tone about a minor issue.", a: "\"No, Baby, we're not fighting about this. Come here and let's connect first.\" [Vocalizing the Boundary]", bundle: 'pro' },
+        { q: "She is wearing a simple summer dress and looking radiant.", a: "\"You look absolutely gorgeous in that dress. I can't take my eyes off you.\" [Leading with Praise]", bundle: 'pro' },
+        { q: "She rolls her eyes and makes a sarcastic comment about your parenting choice.", a: "\"I'm happy to discuss our son's study habits, but I won't tolerate sarcasm. Let's speak with respect.\" [Vocalizing the Boundary]", bundle: 'pro' },
+        { q: "You want to encourage her to open up and relax before an intimate evening.", a: "\"Your body is so beautiful, and I love how responsive you are when I touch you.\" [Leading with Praise]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Guiding the Decision",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "The Tangible Action Proposal, Vocalizing the Boundary, and Getting Shared Reality. Use these to lead her out of uncertainty and simplify her life. When she is overwhelmed by choices or trying to control your schedule, you provide a clear point of orientation.\n\n• The Tangible Action Proposal — when she needs a concrete, structural solution to relax\n• Vocalizing the Boundary — when you need to stop her from managing you out of anxiety\n• Getting Shared Reality — when you need to understand her internal logic before proposing a path\n\nThe key question is: are you leaving her in a state of decision fatigue, or are you offering Masculine structure?\n\nMindset: my decisiveness is a gift of structure I give her, not a burden I place on her.",
+      inputs: [
+        { q: "She is stressed and unable to choose between three holiday destinations.", a: "\"Let's do this: I'll research these two spots, book the best one, and handle all the bookings.\" [The Tangible Action Proposal]", bundle: 'pro' },
+        { q: "She is obsessing over the logistics of moving and trying to dictate your schedule.", a: "\"I've got my schedule handled, Love. I'll take care of the heavy lifting on Saturday.\" [Vocalizing the Boundary]", bundle: 'pro' },
+        { q: "She has been hinting for weeks that she wants to redecorate the living room.", a: "\"I'll research three local painters this weekend and present a budget on Monday.\" [The Tangible Action Proposal]", bundle: 'pro' },
+        { q: "She snaps at you because you haven't decided on a plumber yet.", a: "\"When I delay on the plumbing, does it make you feel unsafe in our home?\" [Getting Shared Reality]", bundle: 'pro' },
+        { q: "She tries to \"let\" you choose the restaurant only if you agree to do her chores.", a: "\"No, Baby, let's keep those separate. I'm choosing the Italian place for tonight.\" [Vocalizing the Boundary]", bundle: 'pro' },
+        { q: "She looks completely overwhelmed by the piles of stuff in the small apartment.", a: "\"Let's sit down right now. I'll bring the items out one by one, and you decide which ones to keep.\" [The Tangible Action Proposal]", bundle: 'pro' },
+        { q: "She demands to know why you're choosing a different bank account structure.", a: "\"Did my financial change make you feel insecure or left out? Let's sync on this.\" [Getting Shared Reality]", bundle: 'pro' },
+        { q: "She is trying to manage how you pack the car for the beach trip.", a: "\"I've got the car packing handled, Love. Relax and focus on your book.\" [Vocalizing the Boundary]", bundle: 'pro' },
       ]
     },
   ],
