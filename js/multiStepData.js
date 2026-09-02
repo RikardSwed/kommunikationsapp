@@ -8332,4 +8332,325 @@ const multiStepCollections = {
       ]
     },
   ],
+  seenandtrusted1thesafetyshereads: [
+    {
+      name: "From Heat to Ground",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
+      description: "For an argument that has escalated past usefulness and needs bringing down without either of you conceding the point.\n\n1. **Not Against You** — say the bond is not in play, so the limit that follows cannot be read as leaving\n2. **The Held Boundary** — stop the conversation, with a time you are coming back\n3. **Opening the Door** — come back and ask what is still there\n\nWhy just this order: the boundary is the frightening part, so it has to come after she has heard that you are staying. And the question only works once the heat is out — asked mid-fight it lands as a demand.\n\nWhat people do instead: they leave first and explain afterwards, which teaches her that a raised voice is followed by an absence.\n\nMindset: say you are staying, then stop, then ask.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "An argument about money has been going for twenty minutes and you are both saying things sharper than you mean.",
+          steps: [
+            { front: "Not Against You — she has gone quiet and is watching your face.", back: "\"I'm angry about the spending. I'm not against you and I'm not leaving.\"" },
+            { front: "The Held Boundary — she starts on last year's overdraft.", back: "\"I'm stopping. I love you. Twenty minutes and I'll be back at this table.\"" },
+            { front: "Opening the Door — you come back and sit down.", back: "\"Right. What's still sitting with you from that?\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "She made a sharp joke about you at dinner and the drive home has been silent.",
+          steps: [
+            { front: "Not Against You — you park and neither of you moves.", back: "\"I'm not sulking at you. I'm sore about the joke and I'd rather say it than sit here.\"" },
+            { front: "The Held Boundary — she starts to explain why it wasn't a big deal.", back: "\"I don't want to argue about whether it was fair. Not tonight. Tomorrow, properly.\"" },
+            { front: "Opening the Door — the next evening, after supper.", back: "\"Yesterday. What was going on for you before you said it?\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A disagreement about the children's screen time has turned into an argument about who is the stricter parent.",
+          steps: [
+            { front: "Not Against You — she says you always make her the bad one.", back: "\"We're on the same side of this. It genuinely doesn't sound like it right now.\"" },
+            { front: "The Held Boundary — the children are still awake upstairs.", back: "\"Not with them listening. After lights out, and we do finish it.\"" },
+            { front: "Opening the Door — an hour later, the house is quiet.", back: "\"What's the bit about this that actually gets to you?\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "When You Dropped It",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
+      description: "For the situation where you are the one who broke something — a promise, a plan, a piece of trust — and she is on the other side of it.\n\n1. **The Kept Word** — own the miss plainly and name what happens now\n2. **Steady Under Load** — take the consequence off her rather than leaving her with it\n3. **Opening the Door** — ask what the miss actually did to her\n\nWhy just this order: an apology with no repair is words, so the action has to come before the feelings. But the question has to come last, because asking how she feels before you have fixed anything reads as buying your way out with interest.\n\nWhat people do instead: they explain the reason, which invites an argument about whether the reason was good enough, and the original thing stays broken.\n\nMindset: own it, carry it, then ask what it cost her.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You forgot to take your daughter to the dentist and the appointment is gone.",
+          steps: [
+            { front: "The Kept Word — she finds the reminder text on the counter.", back: "\"That was mine and I dropped it. No excuse.\"" },
+            { front: "Steady Under Load — she reaches for her phone to rebook.", back: "(You take the phone.) \"Leave it. I'll rebook and I'll take her.\"" },
+            { front: "Opening the Door — later that evening.", back: "\"What did it land as, when you saw the text? I'd rather know.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You said you would be home for dinner twice this week and you have missed both.",
+          steps: [
+            { front: "The Kept Word — she has already eaten and is reading.", back: "\"Twice this week. I said it and I didn't do it. Tuesdays and Thursdays are blocked from now on.\"" },
+            { front: "Steady Under Load — the kitchen has not been cleared.", back: "(You start on the kitchen.) \"Sit. This one's mine.\"" },
+            { front: "Opening the Door — you sit down opposite her.", back: "\"Is it the dinners, or is it that I said I'd be here?\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "The insurance lapsed because you never renewed it, and she found out from a letter.",
+          steps: [
+            { front: "The Kept Word — she puts the letter in front of you.", back: "\"That's mine. I let it lapse and I didn't check. It's back on today.\"" },
+            { front: "Steady Under Load — she starts working out what else might be uncovered.", back: "\"I'll go through the lot tonight and give you a list of what's live. You don't need to look.\"" },
+            { front: "Opening the Door — the list is done and on the table.", back: "\"What's the worry underneath this one? It isn't really the paperwork, is it.\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "The Hard Week",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
+      description: "For the stretch where too much has landed at once and she is holding most of it.\n\n1. **Opening the Door** — find out which part is actually heaviest before you touch anything\n2. **Steady Under Load** — take that part off her completely\n3. **The Kept Word** — say exactly what you have taken and when it will be done\n\nWhy just this order: helping before asking usually means helping with the visible thing rather than the heavy thing, and she still cannot put it down. And the last step is what lets her stop checking — without a stated when, she keeps the task in her head anyway.\n\nWhat people do instead: they ask \"what can I do\", which hands the management back to her, and she now has to allocate you as well as everything else.\n\nMindset: ask which part, take that part, say when.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "Work, her mother's illness and the house move have all landed in the same two weeks.",
+          steps: [
+            { front: "Opening the Door — she is sitting at the table not doing anything.", back: "\"Of everything on you right now, which one is the heaviest?\"" },
+            { front: "Steady Under Load — she says it is the move.", back: "\"Then the move is mine. Boxes, van, the address changes, all of it.\"" },
+            { front: "The Kept Word — she looks unconvinced.", back: "\"Van's booked for the tenth. Address changes done by Friday. I'll tell you when each one lands.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Your son has been off school for four days and she has taken all of it.",
+          steps: [
+            { front: "Opening the Door — she is on her third rearranged meeting.", back: "\"What's actually breaking here — the work, or the being the one who always stays?\"" },
+            { front: "Steady Under Load — she says it is the second one.", back: "\"Then I'm taking tomorrow and Thursday. Not helping with them. Taking them.\"" },
+            { front: "The Kept Word — she starts to say it is fine.", back: "\"It's in my calendar and I've told my team. You'll hear nothing more about it from me.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "The presents, the food, the families and the travel are all sitting with her again.",
+          steps: [
+            { front: "Opening the Door — she is writing a list at eleven at night.", back: "\"Which bit of Christmas do you actually dread?\"" },
+            { front: "Steady Under Load — she says it is the two sets of parents.", back: "\"Both families are mine this year. I'll do the calls and the dates.\"" },
+            { front: "The Kept Word — she asks when.", back: "\"Calls this week, dates fixed by Sunday. I'll tell you the plan rather than ask you to check it.\"" },
+          ]
+        },
+      ]
+    },
+  ],
+  seenandtrusted2careshedidnotaskf: [
+    {
+      name: "Landing Her",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
+      description: "For the moment she comes home wrecked and you want to be useful without getting it wrong.\n\n1. **No Fix, Just Here** — find out what happened before touching anything\n2. **The Unasked Move** — take the evening off her, having heard what the actual weight was\n3. **Looking At Her** — end on something about her rather than about the day\n\nWhy just this order: acting first solves the visible problem and misses the real one. Once you know what the weight is, the action lands as care rather than as tidying. And the compliment only works at the end, when it is not being used to cheer her up out of a feeling.\n\nWhat people do instead: they start with the kitchen. She gets a clean kitchen and the sense that nobody asked.\n\nMindset: ask, then act, then say what I see.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "She comes in at seven, drops her bag in the hall and sits down in her coat.",
+          steps: [
+            { front: "No Fix, Just Here — she says it was a bad one and stops there.", back: "\"Tell me the whole thing. I'm not going to try and solve it.\"" },
+            { front: "The Unasked Move — it turns out the day was fine and the week is the problem.", back: "\"Then tonight is mine. Food, kids, kitchen. You don't move.\"" },
+            { front: "Looking At Her — she is calmer and slightly embarrassed at having gone quiet.", back: "\"You handled a horrible week better than I would have. Also you look good in that coat you've been wearing for an hour.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "She has been on calls since seven in the morning and has eaten nothing.",
+          steps: [
+            { front: "The Unasked Move — she is between meetings with eight minutes.", back: "(You put a plate down beside her.) \"Eat that. Don't talk to me.\"" },
+            { front: "No Fix, Just Here — the last call finishes and she looks hollowed out.", back: "\"What was the worst of it? I'm just asking, not fixing.\"" },
+            { front: "Looking At Her — she says she was rubbish in the three o'clock.", back: "\"You weren't. And even if you were, you're not the meeting.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "She has done every drop-off and pick-up for two weeks because of your work trip.",
+          steps: [
+            { front: "No Fix, Just Here — she says it was fine and her face says otherwise.", back: "\"It clearly wasn't fine. What was the worst day?\"" },
+            { front: "Off Her Plate — she says the mornings are what break her.", back: "\"Mornings are mine from Monday. Not this week — permanently.\"" },
+            { front: "Proof She Was On Your Mind — later that evening.", back: "\"Saturday's booked. Your sister's got the kids. You don't have to arrange a thing.\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Seen Before Asked",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
+      description: "For a stretch where nothing is wrong and she has gone quiet and slightly flat.\n\n1. **Proof She Was On Your Mind** — something small that shows she occupies space when she is not in the room\n2. **Looking At Her** — say the specific thing you see, unattached to anything she has done\n3. **The Unasked Move** — take something without being asked, so the words have a fact behind them\n\nWhy just this order: the gesture opens the door, the words go through it, and the action stops the whole thing reading as a charm offensive. Reversed, the doing comes first and the words afterwards sound like an explanation for the doing.\n\nWhat people do instead: nothing, for months, and then something enormous that arrives as an apology.\n\nMindset: small, then said, then done.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "Nothing is wrong. She has been polite and slightly distant for two weeks.",
+          steps: [
+            { front: "Proof She Was On Your Mind — mid-afternoon on a Wednesday.", back: "\"No reason. Just thinking about you.\"" },
+            { front: "Looking At Her — that evening, in the kitchen.", back: "\"You've been miles away and I still can't stop looking at you.\"" },
+            { front: "The Unasked Move — Saturday morning.", back: "\"I've got the whole day with the kids. Go out, don't come back till you want to.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "It is coming up and she has stopped mentioning it, which is its own message.",
+          steps: [
+            { front: "Proof She Was On Your Mind — a week beforehand.", back: "\"Twelfth is sorted. Sitter's booked, table's booked, you need do nothing.\"" },
+            { front: "Looking At Her — on the night itself.", back: "\"Twelve years and I'd still walk across a room for you.\"" },
+            { front: "The Unasked Move — the next morning.", back: "\"Stay in bed. I've got the school run and I've made you coffee.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "She has said, without heat, that she does not expect you to notice things any more.",
+          steps: [
+            { front: "The Unasked Move — the following week, twice, without comment.", back: "\"Bins and the car are done. Don't think about either.\"" },
+            { front: "Proof She Was On Your Mind — the thing she mentioned once in spring.", back: "\"You said this in April. I finally got round to it.\"" },
+            { front: "Looking At Her — when she says you did not have to.", back: "\"I know. That's the point. And you're the best thing in this house.\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "The Long Week",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
+      description: "For a stretch of pressure where she is functioning but running on empty, and one nice evening will not touch it.\n\n1. **Off Her Plate** — take a whole category so the load actually drops\n2. **The Unasked Move** — keep doing it without being reminded, which is where most of these fail\n3. **No Fix, Just Here** — at the end of it, ask what it was actually like\n\nWhy just this order: the structural change has to come first, because a conversation about a load you have not reduced is just sympathy. The follow-through is what turns a gesture into a fact. And the question comes last, when there is room for an honest answer.\n\nWhat people do instead: they take something over loudly, do it twice, and hand it back without saying so.\n\nMindset: take it, keep it, then ask.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "Her father needs constant arranging and she is doing all of it around a full-time job.",
+          steps: [
+            { front: "Off Her Plate — she is on hold to a care agency during her lunch break.", back: "\"Give me the whole admin side. Calls, appointments, forms. You keep the visits.\"" },
+            { front: "The Unasked Move — three weeks later, without being asked.", back: "\"This month's appointments are booked and the forms went in Tuesday.\"" },
+            { front: "No Fix, Just Here — a quiet evening at the end of it.", back: "\"We've talked about the logistics for a month. What's it actually been like?\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "She has six weeks of a brutal project and everything at home is landing on her anyway.",
+          steps: [
+            { front: "Off Her Plate — at the start of it.", back: "\"For six weeks the house is mine. Food, kids, school, all of it. You do the job.\"" },
+            { front: "The Unasked Move — week four, when the novelty has gone.", back: "\"I've done next week's shop and the parents' evening. Nothing's coming your way.\"" },
+            { front: "No Fix, Just Here — when it is over.", back: "\"It's done. Tell me the bit you haven't told anyone.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "She is doing nights, and the days have blurred into each other.",
+          steps: [
+            { front: "Off Her Plate — the second week.", back: "\"Everything that isn't feeding is mine. You don't cook, shop or clean until further notice.\"" },
+            { front: "The Unasked Move — a fortnight in.", back: "(You take the baby at five in the morning.) \"Go back to sleep. Two hours.\"" },
+            { front: "Looking At Her — later that week, when she says she looks a wreck.", back: "\"You look like someone doing the hardest thing I've watched anyone do. Also I fancy you.\"" },
+          ]
+        },
+      ]
+    },
+  ],
+  seenandtrusted3askingtobetrusted: [
+    {
+      name: "From Irritation to Ask",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
+      description: "For the moment you notice you are annoyed and the first sentence out of your mouth would make everything worse.\n\n1. **The Four Questions** — translate the accusation into the need, before speaking\n2. **Name It Early** — say it now, at its current size, rather than banking it\n3. **Letting It Land** — when she responds well, take it instead of staying braced\n\nWhy just this order: translating first is what makes early speaking safe — said early in its raw form, an accusation just arrives sooner. And the third step matters more than it looks: if she gives you what you asked for and you stay cold, she learns that asking you what is wrong leads nowhere.\n\nWhat people do instead: they wait until the feeling is big enough to justify the tone, by which point the tone is the only thing anyone hears.\n\nMindset: translate, then say it, then take the answer.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You have done a lot this week, nobody has said anything, and you are starting to feel invisible.",
+          steps: [
+            { front: "The Four Questions — you catch the first version forming.", back: "\"My first version of this was 'nothing I do registers'. That's not what I mean.\"" },
+            { front: "Name It Early — you say it the same evening.", back: "\"Small thing. I'd like to hear it when I get something right — this week I did a lot and it went past.\"" },
+            { front: "Letting It Land — she says she had noticed and had not said.", back: "\"Thank you. I'll take that rather than pretending it doesn't matter.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "She made a joke about your work in front of friends and it is still there two hours later.",
+          steps: [
+            { front: "The Four Questions — in the car on the way home.", back: "\"I want to say this as what it is, not as a character assessment.\"" },
+            { front: "Name It Early — before you go to bed.", back: "\"The joke about my job — I laughed at the time and I didn't like it.\"" },
+            { front: "Letting It Land — she apologises properly.", back: "\"That's enough for me. Thank you.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "The same small thing has happened three times and you have said nothing each time.",
+          steps: [
+            { front: "The Four Questions — before raising it.", back: "\"The honest version is I want to be asked. Not a list, one thing.\"" },
+            { front: "Name It Early — naming the pattern rather than the third instance.", back: "\"This is the third time and I've said nothing twice, which is on me. Here it is.\"" },
+            { front: "Ask Before You Decide — agreeing what happens next time.", back: "\"Next time, ask me before it's settled. That's all it takes.\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Reclaiming the Task",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
+      description: "For a job that has become a proxy war — you are doing it, she is supervising it, and both of you are irritated.\n\n1. **Room to Do It My Way** — ask for the method, not for her to admit she was wrong\n2. **Ask Before You Decide** — settle how this category works from now on, not just today\n3. **Letting It Land** — when she backs off, notice it out loud\n\nWhy just this order: the immediate ask stops today's version; the second step is what stops it recurring next week, and skipping it means having the same conversation monthly. And acknowledging the retreat is what makes it stick — an unremarked concession quietly reverses.\n\nWhat people do instead: they win the argument about the correct method, which settles the dishwasher and none of the actual question.\n\nMindset: room today, an agreement for next time, and a thank you when it comes.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You are building the wardrobe and she is reading the instructions over your shoulder.",
+          steps: [
+            { front: "Room to Do It My Way — she starts on step four.", back: "\"I've got it. Go and do something else — I'll shout when it's up.\"" },
+            { front: "Ask Before You Decide — later, calmly.", back: "\"When I take a job, I want the whole thing. Tell me what you want it to end up like and leave me the middle.\"" },
+            { front: "Letting It Land — she stays out of the next one.", back: "\"You left me to it with the shelves. I noticed, and it made a difference.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You loaded the dishwasher and she emptied and reloaded it in front of you.",
+          steps: [
+            { front: "Room to Do It My Way — as it happens.", back: "\"If it's getting redone, I'd rather not do it at all. Give it to me or keep it.\"" },
+            { front: "The Four Questions — when she says it is not personal.", back: "\"It isn't about the dishwasher. It's about being treated like someone who can do things.\"" },
+            { front: "Letting It Land — she says she had not seen it that way.", back: "\"Thank you for taking that seriously. That's all I wanted.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You have offered to organise the weekend with your parents and she keeps checking the arrangements.",
+          steps: [
+            { front: "Room to Do It My Way — the second check-in.", back: "\"It's handled. My family, my job — you'll get the times when they're fixed.\"" },
+            { front: "Ask Before You Decide — agreeing the boundary.", back: "\"Anything to do with my side of the family, I'd like to run. You'll hear about it when it's done.\"" },
+            { front: "Letting It Land — she says she trusts you with it.", back: "\"Good. I'll take that.\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "When You Have Already Withdrawn",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
+      description: "For the state where nothing was said, you have gone cold, and she can feel it but cannot name it.\n\n1. **Name It Early** — start by naming the withdrawal itself, which is now the biggest fact in the room\n2. **The Four Questions** — translate what is underneath it into a request\n3. **Ask Before You Decide** — agree the specific change that stops the next round\n\nWhy just this order: the coldness has to be named first, because until it is she is talking to a wall and guessing at why. Then the need, then the arrangement. Reversed, the request arrives from behind the silence and reads as a condition for you thawing.\n\nWhat people do instead: they wait to be asked what is wrong, answer \"nothing\", and let her carry the atmosphere.\n\nMindset: name the silence, then what it was hiding, then what happens next time.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You have been distant since Sunday, she has asked twice, and you have said nothing is wrong.",
+          steps: [
+            { front: "Name It Early — you open it yourself.", back: "\"I've been cold since Sunday and I've said nothing is wrong twice. Both of those were untrue.\"" },
+            { front: "The Four Questions — you say the underneath version.", back: "\"What's actually going on is I felt overruled about the car and I didn't say so.\"" },
+            { front: "Ask Before You Decide — you name the fix.", back: "\"Next time something like that comes up, ask me before it's settled.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Something happened at lunch, you said nothing, and the whole evening has been flat.",
+          steps: [
+            { front: "Name It Early — before bed.", back: "\"I've been off all evening and it started at lunchtime. I should have said so then.\"" },
+            { front: "The Four Questions — naming the need rather than the incident.", back: "\"It isn't really about lunch. I want to feel like you're glad I'm around.\"" },
+            { front: "Letting It Land — she says she is, and means it.", back: "\"Then I'm going to take that and stop testing it.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You have been half-present for weeks and both of you have adapted to it.",
+          steps: [
+            { front: "Name It Early — starting from where you actually are.", back: "\"I've been somewhere else for about a month and we've both been polite about it.\"" },
+            { front: "The Four Questions — the honest ask.", back: "\"I want to feel wanted here rather than useful. That's the whole of it.\"" },
+            { front: "Ask Before You Decide — building something concrete.", back: "\"Let's fix a night a week that's ours, and neither of us gives it away without asking.\"" },
+          ]
+        },
+      ]
+    },
+  ],
 };

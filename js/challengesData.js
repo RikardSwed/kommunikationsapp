@@ -5543,4 +5543,250 @@ const challengesCollections = {
       ]
     },
   ],
+  seenandtrusted1thesafetyshereads: [
+    {
+      name: "The Cold Front",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "She has gone quiet. Not shouting, not crying — flat. Short answers, no eye contact, everything technically fine.\n\nWhat goes wrong here is that the silence reads as a request to be left alone, and leaving her alone is the one move that confirms what she is afraid of.\n\nThe strategies that bite: **Opening the Door**, because the door is the whole problem and it opens from your side. **Not Against You**, when what she is actually testing is whether the coldness has made you go somewhere. **The Held Boundary**, on the rarer occasion when the silence has become a punishment rather than a state.\n\nAvoid: matching it. Going quiet back turns a bad evening into a bad fortnight.\n\nMindset: her silence is the door being left ajar, not shut.",
+      inputs: [
+        { q: "She has answered three questions in a row with one word.", a: "\"Three one-word answers. I'd rather have the long version.\" [Opening the Door]", bundle: 'pro' },
+        { q: "She turns away from you in bed without saying goodnight.", a: "\"I'm not going to make you talk. I'm here in the morning and I'm not sulking.\" [Not Against You]", bundle: 'pro' },
+        { q: "She says \"I'm fine\" in a tone that closes the subject.", a: "\"All right. Fine's allowed. I'll ask again tomorrow.\" [Opening the Door]", bundle: 'pro' },
+        { q: "The silence has run into a third day and is clearly doing work.", a: "\"I've given it two days. I won't do a third one pretending this is normal. I want to hear it.\" [The Held Boundary]", bundle: 'pro' },
+        { q: "She is in the same room but has not looked up from her phone in an hour.", a: "(You sit down near her without the television on.) \"What's the thing you're not saying?\" [Opening the Door]", bundle: 'pro' },
+        { q: "You have asked what is wrong and she has said nothing twice.", a: "\"Then I'll stop asking. It's not because I stopped caring — say the word and I'm here.\" [Not Against You]", bundle: 'pro' },
+        { q: "She gives you a flat \"whatever you want\" about the weekend.", a: "\"That's not a preference, that's a shrug. What's underneath it?\" [Opening the Door]", bundle: 'pro' },
+        { q: "You notice you have started being careful and cheerful to manage her mood.", a: "\"I've been jollying you along all evening and it's not working for either of us. What's going on?\" [Opening the Door]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "When You Are the Problem",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "You did the thing. Forgot it, broke it, said it, or let it slide — and she is hurt, and she is right.\n\nWhat goes wrong here is the explanation. The reason for the failure is genuinely interesting to you and completely irrelevant to her, and offering it turns her hurt into a debate she now has to win.\n\nThe strategies that bite: **The Kept Word**, which owns it and names what happens next instead of why it happened. **Steady Under Load**, which takes the consequence rather than leaving her to clear it up. **Opening the Door**, once the repair is real, to find out what it actually cost.\n\nAvoid: apologising in a way that asks her to comfort you about how bad you feel.\n\nMindset: the reason is for me, the repair is for her.",
+      inputs: [
+        { q: "You forgot her work event and she went alone.", a: "\"I forgot. That's the whole of it — no version of that is better.\" [The Kept Word]", bundle: 'pro' },
+        { q: "You said something cutting in front of her friend.", a: "\"What I said was out of order. I'm not going to explain what I meant by it.\" [The Kept Word]", bundle: 'pro' },
+        { q: "She is clearing up the mess your mistake created.", a: "(You take over the clearing up.) \"Leave it. Mine to sort.\" [Steady Under Load]", bundle: 'pro' },
+        { q: "You start to say \"but you know how the week has been\".", a: "\"I was about to give you the reason. You don't need it. It's on me and it changes from now.\" [The Kept Word]", bundle: 'pro' },
+        { q: "You have apologised and she is still cold two hours later.", a: "\"I'm not going to keep saying sorry at you. When you're ready I want to hear what it did.\" [Opening the Door]", bundle: 'pro' },
+        { q: "The consequence of your mistake will land on her tomorrow.", a: "\"Tomorrow's phone calls are mine. You shouldn't be paying for this twice.\" [Steady Under Load]", bundle: 'pro' },
+        { q: "You notice yourself feeling worse than she does and wanting her to fix it.", a: "\"I feel wretched about this and that's mine to sit with. What do you need?\" [Opening the Door]", bundle: 'pro' },
+        { q: "It is the same mistake as last time.", a: "\"Second time. An apology's cheap on a repeat — here's the actual change.\" [The Kept Word]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Overload",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "The list has got longer than the week. Work, children, her parents, the house — and she is the one holding the whole map in her head.\n\nWhat goes wrong here is helping. Asking what you can do, or doing a visible task well, both leave the management with her, and management is the part that is crushing.\n\nThe strategies that bite: **Steady Under Load**, which takes an entire area rather than a task. **Opening the Door**, to find out which part is heavy rather than which part is obvious. **The Kept Word**, because a thing she has to check on is still a thing she is carrying.\n\nAvoid: \"just tell me what you need.\" It is generous and it hands her more work.\n\nMindset: take the whole thing, or you have taken nothing.",
+      inputs: [
+        { q: "She is making a list at eleven at night and has not stopped moving since six.", a: "\"Which one on that list do you dread most?\" [Opening the Door]", bundle: 'pro' },
+        { q: "You are about to ask what you can do to help.", a: "\"I'm not going to ask what to do. I'm taking the school run and the shopping this week.\" [Steady Under Load]", bundle: 'pro' },
+        { q: "She has taken every sick day for the children this year.", a: "\"Next one's mine. Not as a favour — as the default.\" [Steady Under Load]", bundle: 'pro' },
+        { q: "You did the task she asked for and she still looks no lighter.", a: "\"The bins are done and you look exactly the same. So it wasn't the bins. What is it?\" [Opening the Door]", bundle: 'pro' },
+        { q: "She keeps asking whether you have done the thing you took on.", a: "\"You're checking because checking has been necessary before. I'll report in without being asked.\" [The Kept Word]", bundle: 'pro' },
+        { q: "Both sets of parents want something the same weekend.", a: "\"Mine are mine. I'll ring them tonight and you'll never hear about it.\" [Steady Under Load]", bundle: 'pro' },
+        { q: "She says she is fine and has not sat down all evening.", a: "(You take the basket out of her hands.) \"Sit for five minutes. Then tell me what today was.\" [Opening the Door]", bundle: 'pro' },
+        { q: "You took something on last month and it is still not done.", a: "\"The loft's been mine since March and it's still there. Saturday, and I'll tell you when it's clear.\" [The Kept Word]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Rising Heat",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "The argument is climbing. Your voice has changed, your chest is tight, and you can feel the next sentence forming before you have chosen it.\n\nWhat goes wrong here is that your temperature becomes her problem — she stops arguing the point and starts monitoring you, which is the specific thing that costs her safety.\n\nThe strategies that bite: **Not Against You**, said early, so that the volume is not carrying a threat with it. **The Held Boundary**, to stop it before you say the thing you cannot take back. **Opening the Door**, afterwards, once you can hear an answer.\n\nAvoid: pushing through to finish the point. Nothing said past that line is going to be received anyway.\n\nMindset: she can hear me angry; she should never have to watch me for what I might do.",
+      inputs: [
+        { q: "Your voice has risen and she has taken half a step back.", a: "\"I'm loud and I'm not dangerous. Angry about the thing, not at you.\" [Not Against You]", bundle: 'pro' },
+        { q: "You can feel the sentence forming that would end the argument by wounding her.", a: "\"I'm going to stop. I've got something cruel loaded and I'm not going to use it.\" [The Held Boundary]", bundle: 'pro' },
+        { q: "She has started apologising for things she does not actually think she did.", a: "\"You're managing me. Don't. I'd rather have the argument than the appeasement.\" [Not Against You]", bundle: 'pro' },
+        { q: "You slammed a cupboard and saw her flinch.", a: "\"That was me being angry at a cupboard, and it still frightened you. It won't happen again.\" [Not Against You]", bundle: 'pro' },
+        { q: "You are twenty minutes in and going in circles.", a: "\"We're not getting anywhere and I'm getting hot. Half an hour, then back.\" [The Held Boundary]", bundle: 'pro' },
+        { q: "You said you needed twenty minutes and it has been twenty minutes.", a: "(You come back into the room and sit down.) \"I'm here. Go on.\" [The Held Boundary]", bundle: 'pro' },
+        { q: "The row is over and she is being very pleasant and very careful.", a: "\"You're being careful with me. What do you need to hear?\" [Opening the Door]", bundle: 'pro' },
+        { q: "You notice you have been silently furious for two days without saying so.", a: "\"I've been cold since Tuesday and I never said why. That's not fair on you — here it is.\" [Not Against You]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Testing the Ground",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "She asks the safety question sideways. \"Do you even want to be here?\" \"You'd probably be happier on your own.\" \"Is there something you're not telling me?\"\n\nWhat goes wrong here is answering the surface. The literal question is not the question, so a reasonable answer to it lands as a dodge, and the third one arrives.\n\nThe strategies that bite: **Not Against You**, which answers the real question directly and briefly. **Opening the Door**, to find out what made her need to ask today. **The Kept Word**, because the answer she trusts is the pattern, not the sentence.\n\nAvoid: irritation at being asked again. The asking is the symptom, and being annoyed at a symptom makes it worse.\n\nMindset: answer the question underneath, and answer it short.",
+      inputs: [
+        { q: "She asks whether you would be happier without all of this.", a: "\"No. Straight answer, no clause after it.\" [Not Against You]", bundle: 'pro' },
+        { q: "She asks if there is something you are not telling her.", a: "\"There isn't. And something made you ask today — what was it?\" [Opening the Door]", bundle: 'pro' },
+        { q: "She says you have seemed distant for weeks.", a: "\"I have been. It's work, it isn't you, and I should have said so three weeks ago.\" [Not Against You]", bundle: 'pro' },
+        { q: "It is the third time this month she has asked a version of the same question.", a: "\"Three times now. I'll keep answering it — but let's find what's making it come back.\" [Opening the Door]", bundle: 'pro' },
+        { q: "You feel irritated at being asked to reassure her again.", a: "\"My honest first reaction was irritation, and that's mine to deal with. The answer is still yes, I'm here.\" [Not Against You]", bundle: 'pro' },
+        { q: "She asks whether you still find her attractive.", a: "\"Yes. And I've been rubbish at showing it, which is why you're having to ask.\" [Not Against You]", bundle: 'pro' },
+        { q: "She brings it up right as you are falling asleep.", a: "\"I'm not going to answer that half-asleep and badly. Tomorrow, first thing, properly.\" [The Held Boundary]", bundle: 'pro' },
+        { q: "She says she does not know where she stands with you.", a: "\"Then I've been unclear for a while. Say what you've been reading and I'll tell you what's true.\" [Opening the Door]", bundle: 'pro' },
+      ]
+    },
+  ],
+  seenandtrusted2careshedidnotaskf: [
+    {
+      name: "The Hands-Full Moment",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "She is doing three things at once and visibly at the edge of what she can hold. Nobody has asked for anything. There is a two-minute window in which help is worth something.\n\nWhat goes wrong here is the question. \"What do you want me to do?\" hands the whole problem back to her at exactly the moment she has no capacity to answer it — she now has to manage you as well.\n\nThe strategies that bite: **The Unasked Move**, which picks one obvious thing and does it. **Off Her Plate**, when the same moment keeps recurring and the fix is structural rather than tonight. **No Fix, Just Here**, in the version where the hands are full of something that is not a task.\n\nAvoid: narrating what you are about to do. Do the thing.\n\nMindset: in the window, pick something and move.",
+      inputs: [
+        { q: "She is on the phone, holding the baby, and something is boiling over.", a: "(You take the pan off and lift the baby out of her arms.) \"Go in the other room.\" [The Unasked Move]", bundle: 'pro' },
+        { q: "You are about to ask what she wants you to do.", a: "\"Ignore me — I'll work it out. Carry on.\" [The Unasked Move]", bundle: 'pro' },
+        { q: "The same five o'clock chaos happens every single weekday.", a: "\"Five to seven is mine from now on, every day. You don't come downstairs unless you want to.\" [Off Her Plate]", bundle: 'pro' },
+        { q: "She is dealing with a crying child and you can see she is nearly gone herself.", a: "\"I've got him. Go outside for ten minutes.\" [The Unasked Move]", bundle: 'pro' },
+        { q: "She snaps at you while you are trying to help.", a: "\"Fine. I'm not going anywhere and I'll keep going with the kitchen.\" [No Fix, Just Here]", bundle: 'pro' },
+        { q: "You have helped for twenty minutes and are waiting to be thanked.", a: "\"Nothing needed. Genuinely.\" [The Unasked Move]", bundle: 'pro' },
+        { q: "The morning routine collapses again and she is holding all of it.", a: "\"Mornings are mine. Not helping with — mine. From Monday.\" [Off Her Plate]", bundle: 'pro' },
+        { q: "She has both hands full and asks you to grab her phone.", a: "(You bring the phone, then stay and take the bag off her shoulder too.) \"That as well.\" [The Unasked Move]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Bad Day",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Something has gone wrong out in the world — work, family, a friend — and she is upset about it. You did not cause it and you cannot fix it.\n\nWhat goes wrong here is that the situation looks like a problem, so you treat it as one. The advice is good, the analysis is sound, and it lands as a message that she should have handled it better.\n\nThe strategies that bite: **No Fix, Just Here**, which is the whole answer most of the time. **The Unasked Move**, once she has been heard, to remove tonight's practical load. **Looking At Her**, at the end, when what is bruised is her sense of herself rather than the situation.\n\nAvoid: \"at least\". Every sentence starting with it is a small correction of her feeling.\n\nMindset: hear it all the way to the end before doing anything with it.",
+      inputs: [
+        { q: "She has been passed over for something at work.", a: "\"That's genuinely unfair. Tell me all of it before I say anything else.\" [No Fix, Just Here]", bundle: 'pro' },
+        { q: "You have started three sentences with \"you should just\".", a: "\"I keep telling you what to do. Start again and I'll listen properly.\" [No Fix, Just Here]", bundle: 'pro' },
+        { q: "She has fallen out with a close friend and is going over it repeatedly.", a: "\"Go over it as many times as you want. I'm not bored of it.\" [No Fix, Just Here]", bundle: 'pro' },
+        { q: "She has finished talking and is sitting there flattened.", a: "\"Right. Don't move — I'm cooking and doing bedtime.\" [The Unasked Move]", bundle: 'pro' },
+        { q: "She says maybe she is just not good enough for the job.", a: "\"You're one of the two or three most capable people I know. Today doesn't change that.\" [Looking At Her]", bundle: 'pro' },
+        { q: "You feel useless because there is nothing you can do about it.", a: "\"I can't do anything about this one. I can sit here, so I'm sitting here.\" [No Fix, Just Here]", bundle: 'pro' },
+        { q: "She tells you the same story for the third time this week.", a: "\"It's obviously still sitting there. What's the part you keep landing on?\" [No Fix, Just Here]", bundle: 'pro' },
+        { q: "She apologises for going on about it.", a: "\"Don't. This is what I'm for.\" [No Fix, Just Here]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Invisible Stretch",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Nothing is wrong. Nobody is arguing. She has become slightly less present, slightly more polite, and the last six months have been logistics.\n\nWhat goes wrong here is the diagnosis: because there is no problem, you conclude there is nothing to do. Meanwhile she has quietly moved from being a woman in a relationship to being the person who runs a household with you.\n\nThe strategies that bite: **Looking At Her**, which is aimed exactly at this. **Proof She Was On Your Mind**, which supplies the evidence that she exists for you outside the house. **The Unasked Move**, so that the words are not the only thing happening.\n\nAvoid: thanking her for everything she does. It is warm, it is true, and it confirms the exact thing that is wrong.\n\nMindset: the risk here is not conflict, it is being appreciated as staff.",
+      inputs: [
+        { q: "You realise your last three compliments were all about the house.", a: "\"Nothing to do with any of that. You're funny and I like being near you.\" [Looking At Her]", bundle: 'pro' },
+        { q: "You have not been out, just the two of you, since the spring.", a: "\"Second Saturday. Booked, sitter sorted. Say nothing, just come.\" [Proof She Was On Your Mind]", bundle: 'pro' },
+        { q: "She says she does not really know what she is like any more.", a: "\"You're sharper than you were at thirty and you argue better than anyone I work with.\" [Looking At Her]", bundle: 'pro' },
+        { q: "Every conversation this week has been about the calendar.", a: "\"We've talked about logistics for four days. Tell me something that isn't the diary.\" [No Fix, Just Here]", bundle: 'pro' },
+        { q: "You are away and it is the middle of the day.", a: "\"Not asking for anything. Just thinking about you.\" [Proof She Was On Your Mind]", bundle: 'pro' },
+        { q: "She dresses up for a work event and you notice you did not say anything.", a: "\"I didn't say it earlier and I should have. You looked properly good.\" [Looking At Her]", bundle: 'pro' },
+        { q: "She says you never look at her any more.", a: "\"You're right, I stopped saying it out loud. I haven't stopped looking.\" [Looking At Her]", bundle: 'pro' },
+        { q: "You want to change something and do not know where to start.", a: "\"Sunday's mine — kids, food, everything. Go and do something that's yours.\" [The Unasked Move]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Badly Packaged Ask",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "She has raised something real, and raised it as a complaint. There is a request buried in there and it is wrapped in \"you never\" and \"I always\".\n\nWhat goes wrong here is that you answer the packaging. The word \"never\" is factually wrong, you can prove it, and the argument you win leaves the actual request unheard and now radioactive.\n\nThe strategies that bite: **No Fix, Just Here**, to hear the request under the complaint. **Off Her Plate** or **The Unasked Move**, to answer it with a change rather than a defence.\n\nAvoid: correcting the exaggeration. You will be right, and it will cost you the information.\n\nMindset: there is a real request in there; find it before defending myself.",
+      inputs: [
+        { q: "She says you never help with anything in this house.", a: "\"The 'never' isn't the point and I'm going to skip it. What's the thing you most want off you?\" [No Fix, Just Here]", bundle: 'pro' },
+        { q: "You have started listing everything you did last week.", a: "\"I'm building a case at you. Forget the list — say the thing again.\" [No Fix, Just Here]", bundle: 'pro' },
+        { q: "She says she is basically a single parent.", a: "\"That's a hard thing to say out loud. Which part of the week feels most like that?\" [No Fix, Just Here]", bundle: 'pro' },
+        { q: "The complaint turns out to be about the mornings specifically.", a: "\"Then mornings are mine. Permanently, from Monday.\" [Off Her Plate]", bundle: 'pro' },
+        { q: "She says she always has to ask twice.", a: "\"You do, and asking is the bit that costs you. I'll take the noticing as well.\" [The Unasked Move]", bundle: 'pro' },
+        { q: "You feel unfairly attacked and want to say so.", a: "\"I've got a defence and I'm putting it down for now. Finish what you were saying.\" [No Fix, Just Here]", bundle: 'pro' },
+        { q: "She raises it again three weeks later.", a: "\"Then I haven't actually changed it. What's still landing on you?\" [No Fix, Just Here]", bundle: 'pro' },
+        { q: "She says she should not have to spell it out.", a: "\"You shouldn't, and until I'm better at noticing, spelling it out gets it done faster.\" [No Fix, Just Here]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Over-Care",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "You have taken so much that you have started deciding for her. Somewhere between carrying the load and managing her life, the care turned into supervision.\n\nWhat goes wrong here is that it feels like the good version of the problem — you are doing more, not less. But a woman who is protected from every decision loses her footing in her own life, and the gratitude curdles into something closer to being handled.\n\nThe strategies that bite: **Off Her Plate**, used precisely — you take the load, not the choice. **No Fix, Just Here**, when the pull is to solve something that is hers to solve. **Looking At Her**, which sees a capable adult rather than a person to be looked after.\n\nAvoid: taking a decision she did not hand you, however obvious the right answer is.\n\nMindset: I carry the weight; she keeps the choices.",
+      inputs: [
+        { q: "You booked the holiday, chose the dates and told her afterwards.", a: "\"I should have given you the choice. Two options, you pick, I'll do all the arranging.\" [Off Her Plate]", bundle: 'pro' },
+        { q: "She is struggling with a work decision and you have a clear view.", a: "\"I've got an opinion if you want it. If you don't, I'm happy just listening.\" [No Fix, Just Here]", bundle: 'pro' },
+        { q: "You have started managing her relationship with her mother.", a: "\"That one's yours. I'll back whatever you decide and I'll stop steering it.\" [No Fix, Just Here]", bundle: 'pro' },
+        { q: "You realise you have been answering questions people ask her.", a: "\"Sorry — that was yours to answer and I talked over you.\" [Looking At Her]", bundle: 'pro' },
+        { q: "She says she feels like one of your projects.", a: "\"That's a fair hit. I'll take the jobs off you and leave the decisions alone.\" [Off Her Plate]", bundle: 'pro' },
+        { q: "You want to protect her from bad news about money.", a: "\"It's not good this month. You should know the same as me — I'm handling it, not hiding it.\" [Off Her Plate]", bundle: 'pro' },
+        { q: "You are about to redo something she did, because your way is better.", a: "(You leave it exactly as she did it.) \"It's fine as it is.\" [Looking At Her]", bundle: 'pro' },
+        { q: "She makes a choice you think is wrong.", a: "\"I'd have gone the other way and it's your call. I'm not going to sulk about it.\" [No Fix, Just Here]", bundle: 'pro' },
+      ]
+    },
+  ],
+  seenandtrusted3askingtobetrusted: [
+    {
+      name: "The Correction",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "She has told you how to do something you were already doing. It is small, it is probably well meant, and it lands on the exact spot that says you are not trusted to manage it.\n\nWhat goes wrong here is the size of the reaction. The disproportion is real — it was a comment about a saucepan — and it makes your case look absurd, so you either swallow it or explode later about something else.\n\nThe strategies that bite: **Room to Do It My Way**, which asks for what you want rather than arguing the standard. **Name It Early**, so this instance gets a sentence rather than becoming instance one of nine. **The Four Questions**, when the reaction is out of proportion and the real need is underneath it.\n\nAvoid: the word \"always\". It converts a request into a charge that she can disprove.\n\nMindset: ask for the room, not for an admission.",
+      inputs: [
+        { q: "She tells you how to chop the onions.", a: "\"I've got the onions. Go and sit down.\" [Room to Do It My Way]", bundle: 'pro' },
+        { q: "You feel a wave of anger far bigger than the comment deserves.", a: "\"That reaction was too big for onions, so it isn't about onions. Give me a minute.\" [The Four Questions]", bundle: 'pro' },
+        { q: "It is the third correction today and you have said nothing about the first two.", a: "\"Third one today. I've let two go and I'd rather say something at three than at ten.\" [Name It Early]", bundle: 'pro' },
+        { q: "She says she was only trying to help.", a: "\"I know. What helps is being left to it.\" [Room to Do It My Way]", bundle: 'pro' },
+        { q: "You want to list every time she has done this.", a: "\"I've got a list and the list is the problem. One example, tonight's.\" [Name It Early]", bundle: 'pro' },
+        { q: "She corrects you in front of the children.", a: "\"Not in front of them. Tell me afterwards and I'll listen properly.\" [Name It Early]", bundle: 'pro' },
+        { q: "She is right about the method and you still do not want the instruction.", a: "\"You're right and I'd still rather do it my way and be slower at it.\" [Room to Do It My Way]", bundle: 'pro' },
+        { q: "You have started doing things badly so she takes them over.", a: "\"I've been half-doing this so you'd take it back. That's finished — it's mine.\" [Room to Do It My Way]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Motive Read",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "She has read something you did in the worst available way — lazy, selfish, uncaring — and she is arguing with a version of you that does not exist.\n\nWhat goes wrong here is the defence. Explaining your motive turns the conversation into a trial about your character, which nobody wins, and which leaves whatever actually upset her untouched.\n\nThe strategies that bite: **The Four Questions**, to find what you need rather than what you need to prove. **Name It Early**, so being read badly is said once rather than stored. **Letting It Land**, when she revises the reading.\n\nAvoid: opening with \"that's not what I meant\". Whatever follows it stops being heard.\n\nMindset: her reading hurt; winning the argument about my motives will not fix it.",
+      inputs: [
+        { q: "She says you did not help because you did not want to.", a: "\"Being read that way stings and I want to say so. Then tell me what you needed.\" [Name It Early]", bundle: 'pro' },
+        { q: "You are three minutes into explaining what you were actually thinking.", a: "\"I'm defending my character and it isn't the point. What did it cost you?\" [The Four Questions]", bundle: 'pro' },
+        { q: "She assumes the worst about something for the second time this month.", a: "\"What I want is the benefit of the doubt. That's the actual ask.\" [The Four Questions]", bundle: 'pro' },
+        { q: "She says she can see now that you were not doing that.", a: "\"Thank you. That's genuinely a relief and I'll leave it there.\" [Letting It Land]", bundle: 'pro' },
+        { q: "You want to point out that she does the same thing.", a: "\"I've got a counter-example and I'm not going to use it. This one's mine to answer.\" [Name It Early]", bundle: 'pro' },
+        { q: "She reads a silence as sulking when you were thinking.", a: "\"I was working something out, not punishing you. I'll say that out loud next time.\" [Name It Early]", bundle: 'pro' },
+        { q: "You feel the urge to withdraw rather than keep defending.", a: "\"I'm about to go quiet, which will confirm what you already think. So: I'm hurt by it.\" [Name It Early]", bundle: 'pro' },
+        { q: "She apologises for the assumption and you want to stay wounded.", a: "\"I could stay in this and I'm not going to. Taken.\" [Letting It Land]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Unnoticed Stretch",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "You have been doing a lot — quietly, well, for weeks — and nobody has said anything. You do not want a medal, and you have started to feel like furniture.\n\nWhat goes wrong here is the shape of the eventual complaint. It arrives as \"nothing I do is ever good enough\", which is a statement about her, is easy to disprove, and cannot be answered with anything except an argument.\n\nThe strategies that bite: **The Four Questions**, to convert that into something answerable. **Name It Early**, before the invisibility has built into a case. **Letting It Land**, because there is no point asking for appreciation you deflect on arrival.\n\nAvoid: hinting. A hint that has to be decoded is not a request, and being decoded wrongly makes it worse.\n\nMindset: ask for the thing I actually want, in the smallest words available.",
+      inputs: [
+        { q: "You are about to say that nothing you do is ever noticed.", a: "\"The version I want to say is: tell me when I get something right.\" [The Four Questions]", bundle: 'pro' },
+        { q: "It has been a fortnight and you have started keeping score.", a: "\"I've been counting, which means I should have said something a week ago.\" [Name It Early]", bundle: 'pro' },
+        { q: "She thanks you and you say it was nothing.", a: "\"Actually — I'll take that. It wasn't nothing.\" [Letting It Land]", bundle: 'pro' },
+        { q: "You have been dropping hints for a week.", a: "\"I've been hinting. Here's the plain version: I'd like to hear it when something goes well.\" [The Four Questions]", bundle: 'pro' },
+        { q: "You feel pathetic for wanting to be appreciated.", a: "\"It feels needy to ask and I'm asking anyway. It matters more than I'd like it to.\" [Name It Early]", bundle: 'pro' },
+        { q: "She says she thought you knew.", a: "\"I did know, and hearing it is a different thing from knowing it.\" [The Four Questions]", bundle: 'pro' },
+        { q: "She starts saying it and you make a joke each time.", a: "\"I keep batting these away. I'm going to stop — say it again.\" [Letting It Land]", bundle: 'pro' },
+        { q: "You want appreciation for something you have not actually finished.", a: "\"I'm fishing for credit on a job that's half done. I'll finish it first.\" [Name It Early]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Cold Turn",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "You have gone quiet. Not shouting, not leaving — just less present, less warm, and technically fine. It is a strategy, even if it does not feel chosen.\n\nWhat goes wrong here is that the silence works, in the short term. It registers, she becomes careful around you, and the atmosphere does the complaining. Nothing has been said, so nothing can be answered, and the price is paid by both of you in a currency neither of you names.\n\nThe strategies that bite: **Name It Early**, applied to the withdrawal itself, because it is now the biggest thing in the room. **The Four Questions**, to find what the silence was standing in for. **Ask Before You Decide**, to set up the arrangement that makes the next round unnecessary.\n\nAvoid: answering \"nothing\" when she asks. It is the sentence that makes the silence permanent.\n\nMindset: my silence is a message she can feel and cannot read.",
+      inputs: [
+        { q: "She asks what is wrong and you say nothing is.", a: "\"That was untrue. Something is, and I want a minute to work out how to say it.\" [Name It Early]", bundle: 'pro' },
+        { q: "You have been cold for two days and are half enjoying that it registers.", a: "\"I've been making a point without making it. Here's the actual thing.\" [Name It Early]", bundle: 'pro' },
+        { q: "You cannot work out what the silence is about.", a: "\"I know I've gone somewhere. I don't know why yet — I'd rather work it out with you than in the shed.\" [The Four Questions]", bundle: 'pro' },
+        { q: "She has started walking on eggshells around you.", a: "\"You're managing my mood and that isn't fair on you. I'll say what's going on.\" [Name It Early]", bundle: 'pro' },
+        { q: "The silence has become the normal state of the house.", a: "\"This has been the temperature for a month and we've both stopped noticing. I want to change it.\" [Name It Early]", bundle: 'pro' },
+        { q: "You know exactly what it is and it feels too small to justify three days of this.", a: "\"It's a small thing that I turned into three days. The small thing is this.\" [The Four Questions]", bundle: 'pro' },
+        { q: "She asks how to stop it happening again.", a: "\"Ask me before things get settled. Most of my silences start there.\" [Ask Before You Decide]", bundle: 'pro' },
+        { q: "She responds warmly when you finally say it.", a: "\"That's better than I expected and I'm going to take it rather than stay braced.\" [Letting It Land]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Spiral",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "The loop where she feels unsteady, so she checks and manages more; you feel less trusted, so you withdraw; and the withdrawal makes her feel less steady. Neither of you started it and both of you are keeping it running.\n\nWhat goes wrong here is the search for the cause. Working out who moved first is a genuinely interesting question and it is unanswerable, and every hour spent on it is an hour the loop keeps turning.\n\nThe strategies that bite: **Name It Early**, to describe the loop out loud rather than argue about its origin. **The Four Questions**, to say what you need in a form that does not require her to be wrong. **Ask Before You Decide**, to change the mechanics rather than the diagnosis.\n\nAvoid: making your move conditional on hers. \"I'll stop withdrawing when she stops checking\" keeps the wheel turning at exactly the same speed.\n\nMindset: my half is the only half I can move.",
+      inputs: [
+        { q: "You can see the whole pattern and want to explain it to her as evidence.", a: "\"We're in a loop. I'm not saying that to win it — I'm saying it because I want out.\" [Name It Early]", bundle: 'pro' },
+        { q: "You are certain she started it.", a: "\"Who started it isn't answerable. My half is the going quiet, and I can move that.\" [Name It Early]", bundle: 'pro' },
+        { q: "She checks up on something and you feel the pull to go cold.", a: "\"I'm about to disappear for a day over this. Instead: I want this one left to me.\" [The Four Questions]", bundle: 'pro' },
+        { q: "You want to wait and see whether she changes first.", a: "\"If I wait for her, we're both waiting. I'll go first.\" [Name It Early]", bundle: 'pro' },
+        { q: "She says she only checks because you go quiet.", a: "\"That's probably true both ways round. Let's change the mechanics instead of the history.\" [Ask Before You Decide]", bundle: 'pro' },
+        { q: "You have both been over the same argument four times.", a: "\"The argument isn't the problem, the loop is. What's the one thing that would break it?\" [The Four Questions]", bundle: 'pro' },
+        { q: "She takes a step towards you and you are still braced.", a: "\"You just moved and I nearly ignored it. I noticed, and thank you.\" [Letting It Land]", bundle: 'pro' },
+        { q: "You want a rule that fixes it permanently.", a: "\"One rule: anything that affects both of us gets asked about before it's settled.\" [Ask Before You Decide]", bundle: 'pro' },
+      ]
+    },
+  ],
 };

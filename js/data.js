@@ -8990,6 +8990,252 @@ const collections = {
       ]
     },
   ],
+  seenandtrusted1thesafetyshereads: [
+    {
+      name: "The Kept Word",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
+      description: "Doing what you said you would do, and saying so yourself when it changes — before she has to ask. Not grand promises; the small ones nobody wrote down.\n\nIt works because reliability is the only thing that can be checked. She cannot verify what you feel, but she can verify whether the tyre got changed and whether you said something when it did not. Every kept word is one less thing she has to hold in her head.\n\nTypical phrases: • \"I said Thursday. It has to move to Saturday, and I've already told your mother.\" • \"That's mine. I'll have it done before we leave.\" • \"I forgot. Not an excuse — it's on my list for tomorrow morning and I'll tell you when it's done.\"\n\nTwo variants of the move:\n\n1. **Doing it without the reminder** — the thing gets done before it becomes a conversation. \"The forms went in this morning.\"\n2. **Flagging the change early** — the moment you know it will slip, she hears it from you. \"I'm not going to make the six o'clock. I'll be there by seven and I've told them.\"\n\nMindset: she cannot feel what I intend, only what I actually do.",
+      inputs: [
+        { q: "You said you would sort the car insurance this week and it is Thursday evening.", a: "(You do it before she asks.) \"Insurance is done. Renewed for a year.\"", bundle: 'free' },
+        { q: "You are going to be an hour late home and she is holding dinner.", a: "\"I'm going to be an hour later than I said. Eat without me — I'll heat mine up.\"", bundle: 'free' },
+        { q: "You promised to call the plumber on Monday and it is now Wednesday.", a: "\"I said Monday and I didn't do it. I'm calling at nine tomorrow, and I'll tell you what they say.\"", bundle: 'free' },
+        { q: "A work trip you agreed to skip has become unavoidable.", a: "\"The Lisbon trip is back on and I can't get out of it. I know what I said. Let's work out the week now, not the night before.\"", bundle: 'free' },
+        { q: "She asks, for the second time, whether you booked the appointment.", a: "\"I booked it on Tuesday. Ninth of next month, two o'clock — it's in your calendar too.\"", bundle: 'free' },
+        { q: "You agreed to be home for bedtime three nights a week and you have managed one.", a: "\"One out of three isn't what I said. Tuesday and Thursday are blocked from now on, and I'll move meetings rather than move those.\"", bundle: 'pro' },
+        { q: "You realise mid-week you will not finish the thing you took on, and nobody has noticed yet.", a: "\"I'm not going to get the garage done this weekend. I'd rather say it now than have you find out on Sunday.\"", bundle: 'pro' },
+        { q: "She has stopped asking about a task you keep not doing.", a: "\"You've stopped asking about the shed. That's worse than you asking. It's happening Saturday.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Not Against You",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
+      description: "Saying out loud, while the argument is still going, that the disagreement is not a threat to the relationship. It is a sentence about the ground, not about the topic.\n\nIt works because in a fight she is often running two conversations at once — the one about the dishwasher, and a quieter one asking *are we still a we*. Answering the second one directly frees both of you to actually have the first.\n\nTypical phrases: • \"I'm angry about what happened. I'm not angry at you and I'm not going anywhere.\" • \"We're on the same side of this, even though it doesn't sound like it.\" • \"I want to sort this out with you, not win it.\"\n\nThree variants of the move:\n\n1. **Separating the heat from the bond** — you are visibly angry and you say what the anger is not. \"I'm furious about the money. That's it. Nothing else is in question.\"\n2. **Refusing the exit** — she reaches for the worst reading and you close it. \"You're asking if I'm done. I'm not done. I'm annoyed, which is a different thing.\"\n3. **Naming the shared side** — mid-argument, you put the problem outside the two of you. \"This is us against the schedule, not us against each other.\"\n\nMindset: she can hear anger without fear as long as she can hear that I am still here.",
+      inputs: [
+        { q: "You are ten minutes into an argument about money and your voice has risen.", a: "\"I'm angry about the spending. I'm not against you, and I'm not leaving this room.\"", bundle: 'free' },
+        { q: "She says, in the middle of a fight: \"Maybe you'd be happier without all this.\"", a: "\"No. I'm annoyed about tonight. That's the whole list.\"", bundle: 'free' },
+        { q: "You disagree hard about how to handle her sister.", a: "\"We want the same thing here. We're arguing about the route, not the destination.\"", bundle: 'free' },
+        { q: "She has gone very quiet and is watching your face.", a: "\"I'm still cross. You're not in trouble with me. Those are two different things.\"", bundle: 'free' },
+        { q: "An argument about the kids has drifted into who is the worse parent.", a: "\"Stop. We're on the same side of this and we've both lost sight of it.\"", bundle: 'free' },
+        { q: "You need to say something hard and you can see her bracing for it.", a: "\"What I'm about to say is going to be uncomfortable. It isn't a threat, and nothing changes because of it.\"", bundle: 'pro' },
+        { q: "She apologises quickly for something small, clearly to make the mood end.", a: "\"You don't have to smooth this. I'm not withdrawing. We can be annoyed and fine at the same time.\"", bundle: 'pro' },
+        { q: "You have said something sharp and watched it land badly.", a: "\"That came out harder than I meant. I'm still frustrated, and I'm still with you.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Held Boundary",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
+      description: "Ending a conversation that has stopped working, and saying the attachment in the same breath as the limit. The limit is what stops the damage; the attachment is what stops the limit from reading as abandonment.\n\nIt works because a predictable line is safer than a man who absorbs everything and then goes off. She learns where the edges are, and edges she can see are not frightening.\n\nTypical phrases: • \"I'm not carrying on while we're talking to each other like this. I love you. We'll pick it up when we can do it better.\" • \"I'm going to stop here and come back in twenty minutes. I'm coming back.\" • \"I won't be spoken to like that. I do want to hear the rest of it.\"\n\nTwo variants of the move:\n\n1. **The limit with a return time** — the line comes with a stated point when you are back. \"I'm out for half an hour. Nine o'clock, kitchen, I'll be there.\"\n2. **The limit without leaving** — you stay in the room and stop the behaviour. \"I'm still here. I'm just not doing this part.\"\n\nMindset: a line she can see coming is safer than a patience that runs out without warning.",
+      inputs: [
+        { q: "The argument has turned into name-calling on both sides.", a: "\"I'm stopping. I love you and I want to finish this — not like this. Half an hour.\"", bundle: 'free' },
+        { q: "She brings up something from three years ago to win the point.", a: "\"I'm not going back there tonight. I'll stay on tonight's thing for as long as you want.\"", bundle: 'free' },
+        { q: "You have been talking in circles for forty minutes and both of you are exhausted.", a: "\"We're not getting anywhere and we're both wrecked. Bed. Tomorrow, properly.\"", bundle: 'free' },
+        { q: "She is being sarcastic and you can feel yourself starting to match it.", a: "\"I'm going to stop before I start doing it back. Give me ten minutes.\"", bundle: 'free' },
+        { q: "The children are in the next room and the volume has climbed.", a: "\"Not with them awake. After they're down, and we do finish it.\"", bundle: 'free' },
+        { q: "She follows you into the next room to keep going.", a: "\"I know you want to finish. I can't do it well right now, and I'd rather be late than cruel. Nine o'clock.\"", bundle: 'pro' },
+        { q: "You said you would come back in twenty minutes and it is now twenty minutes.", a: "(You come back and sit down.) \"Right. I'm here. Where were we?\"", bundle: 'pro' },
+        { q: "She tells you that walking away is the thing that hurts most.", a: "\"That's fair, and it's why I say when I'm coming back. Leaving without a time is what I'll stop doing.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Steady Under Load",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
+      description: "Functioning when the week goes wrong, so that she is not the only one holding it. Mostly this is action rather than speech: making the calls, absorbing the disruption, and telling her only what she needs in order to stop tracking it.\n\nIt works because one of the quieter questions she is asking is *if something happens, am I on my own with it*. That question is answered by what you do in a bad week, not by reassurance in a good one.\n\nTypical phrases: • \"I've got the school and the insurance. You don't need to do anything today.\" • \"I'll deal with your mother's appointment. Give me her number.\" • \"Two things went wrong today. Both are handled.\"\n\nThree variants of the move:\n\n1. **Taking the whole errand** — not helping with it, having it. \"The car's mine. You won't hear about it again until it's back.\"\n2. **Reporting only the ending** — she hears the outcome, not the running commentary. \"Sorted. It took three calls and it's done.\"\n3. **Absorbing the change** — the plan breaks and you rebuild it before she has to. \"Nursery's shut Friday. I've moved my morning. It's covered.\"\n\nMindset: in a bad week she should have fewer things to carry, not more things to hear about.",
+      inputs: [
+        { q: "The boiler has failed and she has a full day of work.", a: "\"I'm on the boiler. Go to work — I'll message you when someone's booked.\"", bundle: 'free' },
+        { q: "Her mother has been taken into hospital and she is trying to arrange cover for the children.", a: "\"Go. I've got the children, the school and the weekend. Text me when you know more.\"", bundle: 'free' },
+        { q: "A bill has been paid twice and she is on hold with the bank between meetings.", a: "(You take the phone.) \"Give it here. I'll sit on hold.\"", bundle: 'free' },
+        { q: "Two things have gone wrong today and she does not know about either.", a: "\"Two things went sideways today. Both are dealt with. You don't need the details unless you want them.\"", bundle: 'free' },
+        { q: "A holiday you booked has been cancelled by the airline.", a: "\"Flights are gone. I'm rebooking now — I'll show you two options tonight, not twelve.\"", bundle: 'free' },
+        { q: "You are also having a hard week and you can feel yourself wanting to compare notes.", a: "\"Mine's been rough too, and I'll tell you about it Sunday. Today I've got the practical stuff.\"", bundle: 'pro' },
+        { q: "She keeps checking whether you have actually done the thing you took on.", a: "\"It's done. I know you've been let down on this before, so I'll tell you when things land from now on.\"", bundle: 'pro' },
+        { q: "The problem is genuinely beyond you and you can feel the pull to pretend otherwise.", a: "\"I can't fix this one on my own. Here's what I've done, here's what's left, and here's what I need from you.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Opening the Door",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
+      description: "Asking a real question when she signals that something is going on inside, and then staying in the room for the answer. It is a short strategy: one question, then silence and attention.\n\nIt works because the signal is usually small and easy to miss on purpose. A sigh, a flat answer, a face that does not match the words. Asking turns her private weather into something you are in together — and the asking counts even when the answer is \"nothing\".\n\nTypical phrases: • \"You seem somewhere else. What's going on?\" • \"Come here. What happened?\" • \"That's the second time you've sighed. Tell me.\"\n\nThree variants of the move:\n\n1. **Naming what you noticed** — you say the observation, not a diagnosis. \"You've been quiet since the phone call.\"\n2. **Asking the smaller question** — not *what's wrong* but something answerable. \"What was the worst part of today?\"\n3. **Staying after the first answer** — she says \"nothing\" and you do not immediately leave. \"All right. I'm here if it turns into something.\"\n\nMindset: the question is worth asking even when the answer is nothing.",
+      inputs: [
+        { q: "She has been unusually quiet since a phone call this afternoon.", a: "\"You've been somewhere else since that call. What's going on?\"", bundle: 'free' },
+        { q: "She says the day was \"fine\" in a voice that says otherwise.", a: "\"Fine like fine, or fine like you don't want to get into it?\"", bundle: 'free' },
+        { q: "She sighs for the third time while doing the washing-up.", a: "(You put the tea towel down.) \"That's three sighs. Tell me.\"", bundle: 'free' },
+        { q: "She comes in and drops her bag without saying anything.", a: "\"Come here first. What happened?\"", bundle: 'free' },
+        { q: "She is scrolling and clearly not reading anything.", a: "\"What's the worst part of today? Just the worst bit.\"", bundle: 'free' },
+        { q: "You ask and she says \"nothing\", and you can tell it isn't nothing.", a: "\"All right. I'm not going to dig. I'll be here when it turns into something.\"", bundle: 'pro' },
+        { q: "She starts to tell you and you notice yourself getting ready to solve it.", a: "\"Keep going. I'm not going to try to fix it, I want to hear the whole thing.\"", bundle: 'pro' },
+        { q: "She mentioned something that worried her a week ago and has not raised it since.", a: "\"You said something last week about the scan. Where did that land?\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  seenandtrusted2careshedidnotaskf: [
+    {
+      name: "The Unasked Move",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
+      description: "Noticing something that needs doing and doing it, without a request, a hint or an announcement. The strategy is almost entirely action; the speech, if any, is one short line afterwards.\n\nIt works because the asking is the expensive part. When she has to notice the thing, decide it matters, work out how to raise it without sounding like a complaint, and then wait — the help arrives having already cost her most of what it was worth. Initiative is the difference between a partner and a well-managed employee.\n\nTypical phrases: • \"Bins are done, don't think about them.\" • \"I saw the light on the boiler. It's booked for Tuesday.\" • \"I've already handled it.\"\n\nThree variants of the move:\n\n1. **Seeing and doing** — the thing gets done in silence and she finds it. The car has fuel in it, the form is submitted, the fridge is full.\n2. **Seeing and saying, then doing** — you name what you noticed so she knows it registered. \"You've done bedtime four nights running. Tonight's mine.\"\n3. **Standing orders** — a recurring thing becomes permanently yours, so it stops appearing on her list at all. \"Sunday shop is mine from now on. Every week.\"\n\nMindset: help she had to ask for has already cost her the thing she wanted.",
+      inputs: [
+        { q: "She has done the school run every morning this week and has an early meeting tomorrow.", a: "\"I'm doing drop-off tomorrow. It's in my calendar — go straight to your meeting.\"", bundle: 'free' },
+        { q: "You notice the milk is nearly out while she is on the phone.", a: "(You put your shoes on and go.) \"Milk and bread. Back in ten.\"", bundle: 'free' },
+        { q: "She has mentioned twice that the hallway light is flickering.", a: "\"The hallway light is fixed. I got the bulbs while I was out.\"", bundle: 'free' },
+        { q: "You see her scrolling through holiday options at eleven at night, exhausted.", a: "\"Close that. I'll shortlist three by Thursday and you pick.\"", bundle: 'free' },
+        { q: "Her car has been low on fuel for two days.", a: "(You fill it on your way back from work.) \"Your car's full. Nothing to do in the morning.\"", bundle: 'free' },
+        { q: "You realise you have never once been the person who books the dentist.", a: "\"Dentist appointments are mine from now on — all four of us. You'll just get told the dates.\"", bundle: 'pro' },
+        { q: "She is about to start the washing-up after cooking.", a: "\"You cooked. Sit down — I'm not doing this as a favour, it's just how it works.\"", bundle: 'pro' },
+        { q: "You notice she has stopped mentioning something because she assumes nothing will happen.", a: "\"You stopped asking about the shelves. That's on me. They're up this weekend.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Off Her Plate",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
+      description: "Taking an entire area of responsibility permanently, so it leaves her head rather than moving to a shared list. Not helping with it — owning it, including the remembering.\n\nIt works because the exhausting part is rarely the task. It is holding the whole map: what needs doing, by when, and whether anyone else is tracking it. A job you \"help with\" is still hers, because she is still the one who knows when it is due. A job you own disappears from her map entirely.\n\nTypical phrases: • \"Insurance and the car are mine. You'll never need to think about either.\" • \"Don't put it on the list. It isn't on the list any more — it's mine.\" • \"I know when it's due. You don't have to.\"\n\nTwo variants of the move:\n\n1. **Naming the whole territory** — you take a category, not an instance. \"All the school admin. Forms, trips, parents' evenings. Mine.\"\n2. **Refusing the handover back** — she checks in, and instead of a status report you close the loop for good. \"You don't have to check. If something's wrong with it, I'll be the one telling you.\"\n\nMindset: if she still has to remember it, I have not taken it.",
+      inputs: [
+        { q: "She keeps a mental list of every bill, renewal and deadline in the house.", a: "\"Give me the whole money side — bills, renewals, insurance. All of it, permanently.\"", bundle: 'free' },
+        { q: "She asks whether you have booked the boiler service.", a: "\"Booked. And you don't have to ask about that one again — it's mine now, every year.\"", bundle: 'free' },
+        { q: "Her mother's birthday is coming up and she is the one who always organises it.", a: "\"I'll do your mum's birthday this year. Card, present, the lot. Tell me nothing.\"", bundle: 'free' },
+        { q: "You have been \"helping with\" the laundry for years.", a: "\"Helping isn't working. Laundry's mine from Monday — washing, drying, putting away.\"", bundle: 'free' },
+        { q: "She is holding both sets of parents' Christmas arrangements in her head.", a: "\"My family is my job. I'll do the calls and give you the dates when they're fixed.\"", bundle: 'free' },
+        { q: "You took something on and then asked her three questions about how to do it.", a: "\"I'm not going to keep asking you how. I'll work it out and you'll get the result.\"", bundle: 'pro' },
+        { q: "You realise you took on the fun half and left her the admin.", a: "\"I've taken the trips and left you the forms. That's backwards. Forms are mine too.\"", bundle: 'pro' },
+        { q: "She starts to explain the system she has been using for it.", a: "\"Show me once, then it's off you. I'd rather do it slightly differently than have you supervising.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "No Fix, Just Here",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
+      description: "Staying with what she is feeling instead of solving it. You listen, you say what you heard, and you deliberately do not offer the answer that is already forming in your head.\n\nIt works because a solution offered too early answers a question she did not ask, and it quietly says the feeling was the problem. Being tended to — having someone stand in it with you — is a different need from being fixed, and it is not met by advice, however good.\n\nTypical phrases: • \"That sounds exhausting.\" • \"Do you want me to help with it, or do you just want me here?\" • \"I'm not going to try to solve that. Tell me the rest.\"\n\nThree variants of the move:\n\n1. **Asking which one it is** — you stop guessing and ask outright. \"Solutions or company?\"\n2. **Reflecting and stopping** — you say what you heard and then leave a silence rather than filling it. \"So you did the whole thing on your own and then got told it was late.\"\n3. **Staying in it physically** — you put the phone down, sit, and let it take as long as it takes.\n\nMindset: the answer in my head can wait; it will still be there in twenty minutes.",
+      inputs: [
+        { q: "She is describing a difficult day at work and you can already see the solution.", a: "\"That sounds like a horrible day. Tell me the rest before I say anything useful.\"", bundle: 'free' },
+        { q: "She is upset about a friend and you do not know whether to advise.", a: "\"Do you want me to help you think about it, or do you just want me to listen?\"", bundle: 'free' },
+        { q: "She starts crying about something that seems small to you.", a: "(You sit down next to her and put your phone face down.) \"I'm here. Take as long as you want.\"", bundle: 'free' },
+        { q: "You have interrupted with a suggestion and watched her deflate.", a: "\"Sorry — I jumped to fixing it. Go back to where you were.\"", bundle: 'free' },
+        { q: "She has been talking for ten minutes and has not asked you anything.", a: "\"That's a lot to be carrying on your own. What's the heaviest part of it?\"", bundle: 'free' },
+        { q: "She is complaining about something you think she is partly responsible for.", a: "\"I've got an opinion on that and I'm going to hold on to it. Right now I just want to hear it.\"", bundle: 'pro' },
+        { q: "You feel useless because you cannot make it better.", a: "\"I can't fix this one. I can sit with you in it, which is what I'm doing.\"", bundle: 'pro' },
+        { q: "She is upset about something you also find upsetting and you can feel the urge to compare.", a: "\"I've got my own version of this and it can wait. Yours first.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Proof She Was On Your Mind",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
+      description: "A small concrete thing that could only exist if you had been thinking about her while she was not there. Mostly action; the object or the act says it, not a speech.\n\nIt works because words about love are cheap and easy to produce on demand. Something you had to notice, remember and act on when she was not in the room is evidence, not sentiment — and it is evidence of the thing she most wants to know, which is that she occupies space in your life when she is out of sight.\n\nTypical phrases: • \"I saw this and thought of you.\" • \"I booked Saturday. Your mum has the kids.\" • \"You said you liked that one in September.\"\n\nThree variants of the move:\n\n1. **The remembered detail** — something she mentioned once, acted on much later. The book she named in passing, the shop she liked.\n2. **The arranged time** — the evening is not proposed, it is already organised, including the parts that usually stop it happening.\n3. **The message with nothing attached** — something sent mid-day that asks nothing of her.\n\nMindset: the point is not the thing; it is that I was thinking about her when she could not see it.",
+      inputs: [
+        { q: "She mentioned in passing months ago that she missed a particular kind of coffee.", a: "(You order it and leave it on the counter for her to find.) \"Found the one you liked.\"", bundle: 'free' },
+        { q: "You are away for work and it is the middle of the afternoon.", a: "\"Not asking anything — just thinking about you. Talk tonight.\"", bundle: 'free' },
+        { q: "You want to take her out and know the logistics usually kill it.", a: "\"Saturday. Your mum's got the kids from five, table's booked for seven. You don't have to arrange anything.\"", bundle: 'free' },
+        { q: "She has a difficult meeting today that she mentioned last week.", a: "\"Good luck with the ten o'clock. I've been thinking about it all morning.\"", bundle: 'free' },
+        { q: "You pass a shop she likes on your way home.", a: "(You stop and buy the small thing she pointed at last month.) \"You looked at these in the summer.\"", bundle: 'free' },
+        { q: "You realise every date you have had this year was suggested by her.", a: "\"I'm taking the next three. You'll get told the date and the time, nothing else.\"", bundle: 'pro' },
+        { q: "She says you never surprise her and you feel accused.", a: "\"You're right, and I'm not going to argue it. Watch the next month.\"", bundle: 'pro' },
+        { q: "You want to do something big to make up for a long stretch of nothing.", a: "\"Not a grand gesture. Just Thursday, and then the Thursday after that.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Looking At Her",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
+      description: "Saying what you actually see in her, as a person rather than as a function. Not \"thank you for everything you do\" — the specific thing you noticed about who she is.\n\nIt works because she can spend years being seen as a role: the one who organises, the one who remembers, the mother. Appreciation aimed at the role confirms the role. Being seen as funny, or sharp, or attractive, or good at something that has nothing to do with the household is a different currency entirely, and it is the one that runs out fastest.\n\nTypical phrases: • \"You were properly funny tonight.\" • \"I like watching you when you're arguing about something you care about.\" • \"You look good. Not in a hint way — you just do.\"\n\nThree variants of the move:\n\n1. **The specific compliment** — one thing, precisely named. Not \"you look nice\" but the actual thing you noticed.\n2. **The non-domestic praise** — something about her mind, humour or skill that has nothing to do with what she does for the family.\n3. **Looking, and letting her catch you** — you actually stop and look at her instead of talking about it.\n\nMindset: praising what she does for me confirms the job; noticing who she is confirms her.",
+      inputs: [
+        { q: "She has made everyone laugh at dinner.", a: "\"You were the funniest person at that table by a distance.\"", bundle: 'free' },
+        { q: "She is getting ready and asks how she looks.", a: "\"Really good. That colour and the way you've done your hair — I'd have looked twice at you in a room.\"", bundle: 'free' },
+        { q: "You realise the last three compliments you gave were about things she did for the household.", a: "\"Nothing to do with the house — you're the sharpest person I know and I don't say it.\"", bundle: 'free' },
+        { q: "She has just handled a difficult phone call about her father.", a: "\"That was hard and you were good at it. Not efficient — kind.\"", bundle: 'free' },
+        { q: "She walks into the room in the middle of an ordinary Tuesday.", a: "(You stop what you are doing and look at her for a moment.) \"Sorry. Just looking.\"", bundle: 'free' },
+        { q: "She deflects a compliment and changes the subject.", a: "\"You can put it down if you want. I'm still saying it.\"", bundle: 'pro' },
+        { q: "You feel awkward saying something out loud that you think all the time.", a: "\"This is going to sound like a line and I mean it: you're the best thing in this house.\"", bundle: 'pro' },
+        { q: "She says she feels invisible lately.", a: "\"Then I've stopped saying things out loud that I still think. That's mine to fix, starting now.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  seenandtrusted3askingtobetrusted: [
+    {
+      name: "Name It Early",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
+      description: "Saying the small thing while it is still small, before it has collected three weeks of evidence and turned into a case against her.\n\nIt works because the version that comes out late is never the original complaint. It arrives with a list, a tone and a conclusion about her character, and she now has to defend herself rather than answer the request. The same sentence said on day one is almost nothing; said on day thirty it is a judgment.\n\nTypical phrases: • \"Small thing, and I'd rather say it now than in a month.\" • \"That landed badly and I don't want to sit on it.\" • \"This is a one-out-of-ten irritation. I'm saying it while it's still a one.\"\n\nThree variants of the move:\n\n1. **Flagging the size** — you say how big it is, so she is not braced for something worse. \"This is minor. It's still worth saying.\"\n2. **The same-day version** — it gets said the evening it happens rather than banked. \"About earlier, in the kitchen.\"\n3. **Naming the pattern once** — the third time it happens, you name the pattern rather than the third instance. \"This is the third time and I've said nothing twice. That's on me.\"\n\nMindset: what I do not say today, I will say badly later.",
+      inputs: [
+        { q: "She corrected you in front of friends and it stung more than you expected.", a: "\"Small thing from earlier — when you corrected me at the table, I'd rather you hadn't. That's all of it.\"", bundle: 'free' },
+        { q: "You have been mildly irritated about the same thing for four days.", a: "\"It's been four days and it's still there, so it's worth saying: the way the weekend got planned without me.\"", bundle: 'free' },
+        { q: "She made a joke about your job that you did not like.", a: "\"The thing you said about my work — I laughed and I didn't like it.\"", bundle: 'free' },
+        { q: "You notice you have started rehearsing an argument in the car.", a: "\"I've been having this out with you in my head all week. Let's just have it properly.\"", bundle: 'free' },
+        { q: "Something bothered you an hour ago and you can feel yourself deciding to let it go.", a: "\"I nearly let this go. It's a small one: I wanted you to ask me before you said yes.\"", bundle: 'free' },
+        { q: "You are about to raise five things at once.", a: "\"I've got a list, which means I've left it too long. I'm going to say one thing tonight and that's it.\"", bundle: 'pro' },
+        { q: "The thing is small enough that raising it feels petty.", a: "\"This is petty and it's still bothering me, which means it isn't only petty.\"", bundle: 'pro' },
+        { q: "She asks why you did not say something at the time.", a: "\"Because I thought it would pass. It didn't, and next time I'll say it on the day.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Room to Do It My Way",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
+      description: "Asking for the method rather than arguing about the standard. You take the task on and ask for it not to be supervised, without making the request a complaint about her.\n\nIt works because the fight is almost never about whether the job gets done. It is about competence — whether you are treated as someone who can do it. Arguing over the correct way to load the dishwasher is a proxy war. Naming the actual need ends it faster than winning it.\n\nTypical phrases: • \"It'll be done. Let me do it my way.\" • \"I'd rather get it slightly wrong on my own than right with you watching.\" • \"Give me the outcome you want and leave me the route.\"\n\nThree variants of the move:\n\n1. **Taking it fully** — you claim the whole job, including its consequences. \"It's mine. If it goes wrong, that's on me.\"\n2. **Asking for the outcome, not the method** — you request the destination and decline the map. \"Tell me what good looks like, then let me get there.\"\n3. **Naming the supervision, once** — you say what the watching does, without a list of examples. \"When you stand over it, I stop trying.\"\n\nMindset: I am asking for room, not arguing about the right way to do it.",
+      inputs: [
+        { q: "She is standing behind you telling you how to pack the car.", a: "\"It'll all fit. Go and get your coffee — I'll shout when it's done.\"", bundle: 'free' },
+        { q: "She redid the thing you had already done.", a: "\"If it's going to be redone, I'd rather not do it. Give it to me properly or keep it.\"", bundle: 'free' },
+        { q: "She asks for the third time whether you have thought about a detail.", a: "\"I've got it. Genuinely. Let me run this one.\"", bundle: 'free' },
+        { q: "You are cooking and she is adjusting things behind you.", a: "\"Out of the kitchen. It'll be good and it'll be different to yours.\"", bundle: 'free' },
+        { q: "She wants a plan for the day out and you would rather just go.", a: "\"Give me the two things that have to happen. I'll build the rest as we go.\"", bundle: 'free' },
+        { q: "You realise you have been doing things badly on purpose so she takes them back.", a: "\"I've been half-doing this so you'd take it off me. That stops — it's mine and I'll do it properly.\"", bundle: 'pro' },
+        { q: "She says her way is faster and she is right.", a: "\"Yours is faster. Mine is mine, and I'll be quicker at it in a month.\"", bundle: 'pro' },
+        { q: "You want to say she is controlling and can hear how that will land.", a: "\"I'm not going to call you controlling. I'm going to say what I want: this one on my own.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Four Questions",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
+      description: "A short internal sequence you run before speaking, so what comes out is a request instead of an accusation. What am I feeling? What am I missing? What would concretely help? Can I ask for it without making her guilty?\n\nIt works because the raw version and the useful version of the same need sound completely different. \"Nothing I do is ever good enough\" and \"I'd like to hear when I get something right\" come from the identical place, and only one of them can be answered.\n\nTypical phrases: • \"Give me a second — I want to say this properly.\" • \"What I actually want is...\" • \"That's not a complaint about you, it's a thing I'm missing.\"\n\nThree variants of the move:\n\n1. **Running it silently first** — you pause, do the four steps in your head, and speak once.\n2. **Running it out loud** — you narrate the translation as you go. \"My first version of this was 'you never listen'. What I mean is I want ten minutes at the end of the day.\"\n3. **Converting hers** — she says the accusatory version and you answer the request underneath it rather than the packaging.\n\nMindset: the accusation and the request are the same need; only one of them can be answered.",
+      inputs: [
+        { q: "You are about to say \"nothing I do is good enough for you.\"", a: "\"What I actually want is to hear it when I get something right. That's the whole thing.\"", bundle: 'free' },
+        { q: "You are about to say \"stop controlling me.\"", a: "\"I'd like to solve this one my own way, even if it's slower.\"", bundle: 'free' },
+        { q: "You are about to go cold for the evening instead of saying anything.", a: "\"I miss the feeling that you're pleased I'm in the room. That's what's going on with me.\"", bundle: 'free' },
+        { q: "You have said the sharp version and watched it land.", a: "\"That came out as an attack. Let me do it again: I want more of your attention in the evenings.\"", bundle: 'free' },
+        { q: "You feel something and cannot yet name it.", a: "\"Give me a minute. I know I'm annoyed and I don't know what about yet — I'd rather work it out than fire it at you.\"", bundle: 'free' },
+        { q: "The honest answer to \"what would help?\" feels too small to say out loud.", a: "\"It's a small ask and it's the real one: say goodbye properly when you leave in the mornings.\"", bundle: 'pro' },
+        { q: "You realise your request would make her feel guilty however you said it.", a: "\"This isn't a charge. Nothing's gone wrong — I just want more of something.\"", bundle: 'pro' },
+        { q: "She has said the accusatory version to you.", a: "\"Under that there's something you want. Tell me that bit and I'll work with it.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Letting It Land",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
+      description: "Taking appreciation, warmth or desire without deflecting it — receiving it visibly rather than batting it away with a joke or a correction.\n\nIt works because a man who reliably deflects teaches her to stop offering. Every deflection is a small message that the effort was misplaced, and after enough of them the warmth stops arriving. Being well received is a need on both sides; the ability to receive is what keeps it in circulation.\n\nTypical phrases: • \"Thank you. I'll take that.\" • \"That's good to hear. I'm not going to say anything clever about it.\" • \"I liked that. Say it again sometime.\"\n\nTwo variants of the move:\n\n1. **Taking it plainly** — no joke, no counter-compliment, no correction of the facts. Just the acknowledgement.\n2. **Saying what it did** — you tell her the effect, which is what makes her do it again. \"That landed. I've been in a bad week and that helped.\"\n\nMindset: deflecting it teaches her to stop offering it.",
+      inputs: [
+        { q: "She says you were good with the children today.", a: "\"Thanks. I'll take that — it's been a hard week.\"", bundle: 'free' },
+        { q: "She compliments something you are privately unsure about.", a: "\"I wasn't sure about it, so that's good to hear.\"", bundle: 'free' },
+        { q: "She says she is proud of you and you feel the urge to make a joke.", a: "(You stay quiet and look at her for a second.) \"That means a lot. Thank you.\"", bundle: 'free' },
+        { q: "She thanks you for something you think was nothing.", a: "\"You're welcome. I'd have said it was nothing — I'll stop doing that.\"", bundle: 'free' },
+        { q: "She initiates something physical and you are half in your head about work.", a: "\"Give me thirty seconds to put work down, because I want this.\"", bundle: 'free' },
+        { q: "She says something warm and you immediately return the compliment to move on.", a: "\"Hang on — I did that thing where I hand it straight back. Let me just take it.\"", bundle: 'pro' },
+        { q: "She notices you have been trying harder lately.", a: "\"I have been. It's good that you saw it.\"", bundle: 'pro' },
+        { q: "You realise you cannot remember the last time you accepted a compliment without qualifying it.", a: "\"I qualify everything you say to me. From now on I'm just going to say thank you.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ask Before You Decide",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
+      description: "Requesting a say in something before it is settled, rather than objecting to it afterwards. The move is small and specific: you ask to be in the decision, at the point where being in it is still possible.\n\nIt works because most resentment about influence is really about timing. Being consulted after the plan exists is not influence, it is a review, and objecting then makes you the obstacle. Asking to be in it beforehand costs one sentence and removes the whole argument that follows.\n\nTypical phrases: • \"Before that's fixed — I want a say in it.\" • \"Ask me before you answer them, not after.\" • \"Don't sort it and then tell me. Sort it with me.\"\n\nTwo variants of the move:\n\n1. **Claiming the decision in advance** — you name the category and ask to be in it from now on. \"Anything about the money, I want to be in the room.\"\n2. **Stopping the settled version** — the plan already exists, and you say so without pretending otherwise. \"This is already decided, isn't it. I'd have liked to be asked.\"\n\nMindset: influence asked for beforehand is a partnership; influence claimed afterwards is an obstruction.",
+      inputs: [
+        { q: "She is about to accept a weekend invitation on behalf of both of you.", a: "\"Check with me before you say yes. I'll almost always be fine with it — I just want to be asked.\"", bundle: 'free' },
+        { q: "She has planned the whole holiday and is now showing you.", a: "\"It looks good, and I'd have liked to be in it earlier. Next one we plan together from the start.\"", bundle: 'free' },
+        { q: "A decision about the children's schooling is being made and you have been informed rather than consulted.", a: "\"This one's big enough that I want a real say. Can we start it again together?\"", bundle: 'free' },
+        { q: "She mentions in passing that she has told her mother you will be there.", a: "\"I'd rather not be committed before I know about it. Ask me first and it's usually a yes.\"", bundle: 'free' },
+        { q: "You can see a decision forming that you will have opinions about.", a: "\"Before this gets settled — I've got a view and I'd like to say it now rather than complain later.\"", bundle: 'free' },
+        { q: "You notice you have been going along with things and complaining afterwards.", a: "\"I've been agreeing and then sulking. That's my fault. I'll say things at the front from now on.\"", bundle: 'pro' },
+        { q: "She says you never seem to care about these decisions.", a: "\"I do care and I've been quiet, so that's fair. I want in on the next one.\"", bundle: 'pro' },
+        { q: "You want a say and you also do not want to do the work.", a: "\"If I want a vote on this I should carry some of it. Give me the part I'd be arguing about.\"", bundle: 'pro' },
+      ]
+    },
+  ],
 };
 
 // ─── COLLECTIONS MODE DATA ───────────────────────────────────────────────────
@@ -12932,6 +13178,156 @@ const collectionsModeData = {
         { q: "You see a member caught in a clear pattern of lying to their family.", a: "\"I love you too much to stay silent about how this lying is hurting their home.\" [Direct Confrontation]", bundle: 'pro' },
         { q: "A brother laughed in your face when you went to apologize, and you want to defend yourself.", a: "\"I want to make this right, but if you are not ready, I will wait.\" [Pursuing Peace]", bundle: 'pro' },
         { q: "Your opponent is struggling with heavy packages and you want to walk past them.", a: "\"Let me carry those packages to your car for you. It's no trouble.\" [Overcoming With Good]", bundle: 'pro' },
+      ]
+    },
+  ],
+  seenandtrusted1thesafetyshereads: [
+    {
+      name: "The Storm and the Ground",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Choosing between **Not Against You**, **The Held Boundary** and **Opening the Door** when the temperature in the room has gone up.\n\n• **Not Against You** — she is bracing, and needs to hear that the bond is not in play\n• **The Held Boundary** — the conversation has turned corrosive and needs to stop\n• **Opening the Door** — the heat has passed and something is still sitting there\n\nThe deciding question: is she frightened, is the talk doing damage, or is it over and unfinished?\n\nThe usual wrong choice is the boundary too early — stopping the conversation before she has heard that you are staying, which is the exact shape of the thing she is afraid of.\n\nMindset: stop the damage, but say you are staying first.",
+      inputs: [
+        { q: "Her voice has gone thin and she keeps asking what you mean.", a: "\"I'm angry about the money and nothing else is in question. I'm not going anywhere.\" [Not Against You]", bundle: 'pro' },
+        { q: "You have both started saying things to wound rather than to be understood.", a: "\"I'm stopping. I love you. Half an hour and we come back to it.\" [The Held Boundary]", bundle: 'pro' },
+        { q: "The argument ended an hour ago and she has been quiet since.", a: "\"That was ugly earlier. What's still sitting with you?\" [Opening the Door]", bundle: 'pro' },
+        { q: "She asks, mid-fight, whether you actually want to be married.", a: "\"Yes. I'm furious about tonight. Those two things are both true.\" [Not Against You]", bundle: 'pro' },
+        { q: "She is mocking your tone back at you and you can feel yourself about to match it.", a: "\"I'm going to stop before I start doing that back. Ten minutes.\" [The Held Boundary]", bundle: 'pro' },
+        { q: "A row about the holiday has been over for two days and something is still off.", a: "\"We never actually finished Tuesday, did we. What's left of it for you?\" [Opening the Door]", bundle: 'pro' },
+        { q: "You need to raise something difficult and can see her already tensing.", a: "\"This is going to be uncomfortable and it changes nothing about us.\" [Not Against You]", bundle: 'pro' },
+        { q: "She has brought up an old grievance to win the current one.", a: "\"I'm not going back there tonight. I'll stay on this one as long as you like.\" [The Held Boundary]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Weight She Should Not Carry Alone",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Choosing between **Steady Under Load**, **The Kept Word** and **Opening the Door** when the practical side of life is pressing on her.\n\n• **Steady Under Load** — something has gone wrong and needs taking off her entirely\n• **The Kept Word** — the thing was already yours, and what matters is that it lands\n• **Opening the Door** — you do not yet know which part is the heavy part\n\nThe deciding question: is this a fire, a promise, or a fog?\n\nThe usual wrong choice is taking over the wrong thing — solving the visible errand while the thing actually pressing on her goes unmentioned.\n\nMindset: ask before you carry, or you will carry the wrong thing well.",
+      inputs: [
+        { q: "The washing machine has flooded the kitchen and she has a presentation at ten.", a: "\"Go. Kitchen's mine. I'll send you a photo when it's dry.\" [Steady Under Load]", bundle: 'pro' },
+        { q: "You said you would handle the tax forms and the deadline is Friday.", a: "\"Forms went in this morning. That's finished.\" [The Kept Word]", bundle: 'pro' },
+        { q: "She is snappy about small things and you cannot tell which thing is the real one.", a: "\"Something's heavier than the dishwasher. What is it?\" [Opening the Door]", bundle: 'pro' },
+        { q: "Her father has had a fall and she is trying to arrange everything from work.", a: "\"Send me the numbers. I'll make the calls and give you the summary tonight.\" [Steady Under Load]", bundle: 'pro' },
+        { q: "She asks a second time whether the appointment got booked.", a: "\"Booked Tuesday, ninth at two, it's in your calendar.\" [The Kept Word]", bundle: 'pro' },
+        { q: "She says she is fine but has not sat down all evening.", a: "(You take the laundry basket off her.) \"What's the one that's actually bothering you?\" [Opening the Door]", bundle: 'pro' },
+        { q: "A childcare arrangement has collapsed for Friday.", a: "\"Nursery's shut. I've moved my morning, it's covered. Nothing for you to do.\" [Steady Under Load]", bundle: 'pro' },
+        { q: "You realise mid-week that the thing you took on will not be done in time.", a: "\"The garage isn't happening this weekend. Saying it now rather than Sunday.\" [The Kept Word]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "All Five Strategies",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Everything in this pack mixed together, with no warning about which moment you are in — **The Kept Word**, **Not Against You**, **The Held Boundary**, **Steady Under Load** and **Opening the Door**.\n\n• Something practical has gone wrong → carry it or confirm it\n• Something between you has gone wrong → ground it or stop it\n• Something is going on in her and you do not know what → ask\n\nThe deciding question: is the pressure coming from the world, from the two of you, or from inside her?\n\nThe usual wrong choice is treating a bad mood as a practical problem — fixing an errand when what is needed is a question.\n\nMindset: work out where the weather is coming from before you reach for anything.",
+      inputs: [
+        { q: "She has been short with you all evening and the house is otherwise fine.", a: "\"Nothing's actually wrong with the evening, so it's something else. What is it?\" [Opening the Door]", bundle: 'pro' },
+        { q: "You are late for the third time this month and she has not said anything about it.", a: "\"Third time this month. You've stopped mentioning it, which is worse. It stops here.\" [The Kept Word]", bundle: 'pro' },
+        { q: "The row has reached the point where she is crying and you are still making your case.", a: "\"I'm stopping. I love you. Twenty minutes and I'll be back at this table.\" [The Held Boundary]", bundle: 'pro' },
+        { q: "Her car has failed its MOT and she has three days of meetings.", a: "\"Keys. I'll deal with the garage and get you a hire car by tomorrow.\" [Steady Under Load]", bundle: 'pro' },
+        { q: "She asks whether you are happy, apropos of nothing.", a: "\"Yes. I've been distracted, not unhappy — and I can see how that reads.\" [Not Against You]", bundle: 'pro' },
+        { q: "She mentions offhand that she is dreading Thursday.", a: "\"What's Thursday? Tell me the bit you're dreading.\" [Opening the Door]", bundle: 'pro' },
+        { q: "You lost your temper yesterday and she has been careful around you since.", a: "\"You've been walking on eggshells since yesterday. I don't want to be someone you manage.\" [Not Against You]", bundle: 'pro' },
+        { q: "Both of your parents need something this weekend and she is holding both calendars.", a: "\"I'll take mine and I'll take the Saturday driving. You keep Sunday.\" [Steady Under Load]", bundle: 'pro' },
+      ]
+    },
+  ],
+  seenandtrusted2careshedidnotaskf: [
+    {
+      name: "When She Is Spent",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Choosing between **The Unasked Move**, **Off Her Plate** and **No Fix, Just Here** when she has run out — of hours, of patience, or of both.\n\n• **The Unasked Move** — there is a specific thing in front of you that you can just do\n• **Off Her Plate** — the problem is the ongoing load, not tonight's version of it\n• **No Fix, Just Here** — the weight is emotional, and taking a task will miss it entirely\n\nThe deciding question: is this evening heavy, is her year heavy, or is she heavy?\n\nThe usual wrong choice is doing the dishes at a woman who needed you to sit down. The task gets solved and the loneliness gets confirmed.\n\nMindset: work out whether she needs a pair of hands or a pair of ears.",
+      inputs: [
+        { q: "She comes in late from work, drops her bag and does not take her coat off.", a: "\"Sit. Food's twenty minutes and I've done the kitchen.\" [The Unasked Move]", bundle: 'pro' },
+        { q: "She says she is tired of being the one who remembers everything.", a: "\"Then let's take a whole category off you. Money and the car — mine from tonight.\" [Off Her Plate]", bundle: 'pro' },
+        { q: "She is describing an awful day and has not asked you anything.", a: "\"That's a horrible day. Keep going — I'm not going to try to solve it.\" [No Fix, Just Here]", bundle: 'pro' },
+        { q: "The children are in bed and she is standing in a kitchen that needs doing.", a: "(You take the tea towel out of her hand.) \"Go and lie down. This is mine.\" [The Unasked Move]", bundle: 'pro' },
+        { q: "She says the same thing has been on her list for a month.", a: "\"Then it comes off your list. Not shared — off. I'll deal with it.\" [Off Her Plate]", bundle: 'pro' },
+        { q: "She starts crying about something small at the end of a long week.", a: "\"It's not about the shopping, is it. Tell me the rest.\" [No Fix, Just Here]", bundle: 'pro' },
+        { q: "She is doing bedtime for the fifth night running.", a: "\"Tonight's mine, and Thursday. Go and have a bath.\" [The Unasked Move]", bundle: 'pro' },
+        { q: "She is doing all the admin for her father's care while working full time.", a: "\"Give me the appointments and the phone calls. You keep the visits.\" [Off Her Plate]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Making Her Feel Chosen",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Choosing between **Proof She Was On Your Mind**, **Looking At Her** and **The Unasked Move** when nothing is wrong and something has still gone quiet.\n\n• **Proof She Was On Your Mind** — the gap is that she does not feel thought about when apart\n• **Looking At Her** — the gap is that she feels seen as a function rather than a person\n• **The Unasked Move** — the gap is that she is always the one initiating\n\nThe deciding question: does she feel unthought-of, unseen, or unchosen?\n\nThe usual wrong choice is a compliment about how much she does. It is meant as praise and lands as a job appraisal.\n\nMindset: she has plenty of evidence that she is useful and not much that she is wanted.",
+      inputs: [
+        { q: "You are away for three days and she has not heard from you since morning.", a: "\"Nothing needed. Just thinking about you.\" [Proof She Was On Your Mind]", bundle: 'pro' },
+        { q: "She has been in the same clothes for two days and looks flattened.", a: "\"You still stop me when you walk in. Even in that jumper.\" [Looking At Her]", bundle: 'pro' },
+        { q: "Every evening out this year has been organised by her.", a: "\"Friday. Booked, sitter sorted, seven o'clock. Nothing for you to do.\" [Proof She Was On Your Mind]", bundle: 'pro' },
+        { q: "She makes a joke that genuinely lands.", a: "\"You are so much funnier than me and I never say it.\" [Looking At Her]", bundle: 'pro' },
+        { q: "You notice she has been carrying the whole weekend on her own.", a: "\"Sunday's mine — food, kids, all of it. You've got the day.\" [The Unasked Move]", bundle: 'pro' },
+        { q: "She mentioned an author once, months ago, in passing.", a: "(You buy the book and leave it on her side of the bed.) \"You said this one, in the summer.\" [Proof She Was On Your Mind]", bundle: 'pro' },
+        { q: "She says she feels like the house manager rather than your wife.", a: "\"Then I've been talking to the manager. I'm talking to you — you look good and you're the person I'd pick.\" [Looking At Her]", bundle: 'pro' },
+        { q: "She is getting ready to go out and you are on your phone.", a: "(You put it down and watch her.) \"You look properly good.\" [Looking At Her]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "All Five Strategies",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "All five moves in this pack, mixed with no signpost — **The Unasked Move**, **Off Her Plate**, **No Fix, Just Here**, **Proof She Was On Your Mind** and **Looking At Her**.\n\n• Something needs doing → do it, or take the whole category\n• Something is being felt → stay in it rather than fix it\n• Nothing is wrong and something is missing → be thought about, or be seen\n\nThe deciding question: is she carrying, feeling, or fading?\n\nThe usual wrong choice is reaching for a task in every situation, because a task is the one that always has an obvious next step.\n\nMindset: not every gap in the room is a job.",
+      inputs: [
+        { q: "She sighs at the sink and says nothing.", a: "(You take over the sink.) \"Go and sit. I've got this.\" [The Unasked Move]", bundle: 'pro' },
+        { q: "She tells you she is dreading tomorrow.", a: "\"What's the bit you're dreading? I'm not going to fix it, I just want to know.\" [No Fix, Just Here]", bundle: 'pro' },
+        { q: "You realise she has organised every social thing this year.", a: "\"Next month is mine. Three things, already booked.\" [Proof She Was On Your Mind]", bundle: 'pro' },
+        { q: "She says she has forgotten what she is like outside this house.", a: "\"You're funny, you're stubborn about the right things, and you argue better than anyone I work with.\" [Looking At Her]", bundle: 'pro' },
+        { q: "She is drowning in her father's care admin.", a: "\"Appointments and paperwork come to me. Permanently.\" [Off Her Plate]", bundle: 'pro' },
+        { q: "She is upset and you have started three sentences with \"you should\".", a: "\"I keep telling you what to do. Start again — I'll shut up.\" [No Fix, Just Here]", bundle: 'pro' },
+        { q: "She asks whether you booked the thing you said you would.", a: "\"Booked, and you won't have to ask about that category again.\" [Off Her Plate]", bundle: 'pro' },
+        { q: "She walks past you on an ordinary weekday morning.", a: "\"You look good today. That's all — carry on.\" [Looking At Her]", bundle: 'pro' },
+      ]
+    },
+  ],
+  seenandtrusted3askingtobetrusted: [
+    {
+      name: "Before It Goes Cold",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Choosing between **Name It Early**, **The Four Questions** and **Ask Before You Decide** at the point where something has started to bother you and nothing has been said yet.\n\n• **Name It Early** — the thing is small and specific and just needs saying\n• **The Four Questions** — you know you are bothered and the first version out of your mouth would be an accusation\n• **Ask Before You Decide** — the issue is that you are not in something you should be in\n\nThe deciding question: is this a moment, a muddle, or a pattern of not being asked?\n\nThe usual wrong choice is the accusation, fired early. Speed is right and the packaging is wrong, and the packaging is what gets answered.\n\nMindset: say it soon and say it as a request.",
+      inputs: [
+        { q: "She corrected you in front of her sister and it is still sitting there an hour later.", a: "\"Small thing: when you corrected me in front of Anna, I'd rather you hadn't.\" [Name It Early]", bundle: 'pro' },
+        { q: "You are about to say that she never appreciates anything you do.", a: "\"What I actually want is to be told when I get something right.\" [The Four Questions]", bundle: 'pro' },
+        { q: "She has arranged next Saturday without mentioning it to you.", a: "\"Ask me before you answer them, not after. It's usually a yes and I want to be asked.\" [Ask Before You Decide]", bundle: 'pro' },
+        { q: "You have been quietly annoyed since Tuesday about something minor.", a: "\"It's four days old and still there, so I'm saying it now rather than in a month.\" [Name It Early]", bundle: 'pro' },
+        { q: "You feel something strongly and cannot name what it is.", a: "\"Give me a minute. I'm annoyed and I want to work out what about before I aim it at you.\" [The Four Questions]", bundle: 'pro' },
+        { q: "A decision about money is being made and you have been told rather than asked.", a: "\"Anything to do with the money, I want to be in the room before it's settled.\" [Ask Before You Decide]", bundle: 'pro' },
+        { q: "You notice you have started rehearsing the argument in the shower.", a: "\"I've been arguing with you in my head for a week. Let's do it properly instead.\" [Name It Early]", bundle: 'pro' },
+        { q: "You want to say she is controlling and can hear how it will land.", a: "\"I'd like to do this one my own way, even if it's slower. That's the whole request.\" [The Four Questions]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "When She Is Managing You",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Choosing between **Room to Do It My Way**, **Ask Before You Decide** and **The Four Questions** when the problem is that you are being handled rather than trusted.\n\n• **Room to Do It My Way** — a task is being supervised\n• **Ask Before You Decide** — a decision is being made around you\n• **The Four Questions** — the feeling is bigger than any single instance and needs translating first\n\nThe deciding question: is she doing my job, making my choices, or is this a mood I have not decoded yet?\n\nThe usual wrong choice is the word \"controlling\". It is the shortest description and it turns a request for room into a charge she must answer.\n\nMindset: ask for what I want, not for her to stop being who she is.",
+      inputs: [
+        { q: "She is watching you assemble the furniture and commenting.", a: "\"It'll be standing in an hour. Go and do something else.\" [Room to Do It My Way]", bundle: 'pro' },
+        { q: "She has already answered on your behalf about the weekend.", a: "\"Next time, check with me first. That's it.\" [Ask Before You Decide]", bundle: 'pro' },
+        { q: "You feel small and managed and cannot point to one thing.", a: "\"I can't name the incident. What I want is to be treated like someone who can handle things.\" [The Four Questions]", bundle: 'pro' },
+        { q: "She redid the job you had finished.", a: "\"If it's getting redone I'd rather not start it. Give it to me or keep it.\" [Room to Do It My Way]", bundle: 'pro' },
+        { q: "She has picked the school, the dates and the plan and is telling you now.", a: "\"This is already decided, isn't it. I'd have liked to be in it.\" [Ask Before You Decide]", bundle: 'pro' },
+        { q: "You are about to say that she treats you like one of the children.", a: "\"That's going to land as an insult. What I mean is: I want to be trusted with this.\" [The Four Questions]", bundle: 'pro' },
+        { q: "She asks a fourth time whether you have remembered.", a: "\"I've got it. Asking again makes it less likely, not more.\" [Room to Do It My Way]", bundle: 'pro' },
+        { q: "You have started agreeing to things you do not agree with to avoid the discussion.", a: "\"I've been saying yes and meaning no. From now on I'll say it at the front.\" [Ask Before You Decide]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "All Five Strategies",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "All five moves mixed with no signpost — **Name It Early**, **Room to Do It My Way**, **The Four Questions**, **Letting It Land** and **Ask Before You Decide**.\n\n• Something small has happened → say it now\n• Something is being done for you or around you → ask for room or for a say\n• Something warm is being offered → take it\n• You cannot name what is wrong → translate before speaking\n\nThe deciding question: am I missing room, a say, a word, or clarity about my own state?\n\nThe usual wrong choice is silence, in all four cases. It is the only move that guarantees the next version is worse.\n\nMindset: every one of these costs one sentence now and a fortnight later.",
+      inputs: [
+        { q: "She says she is proud of how you handled your father.", a: "\"Thank you. I'm going to take that instead of making a joke about it.\" [Letting It Land]", bundle: 'pro' },
+        { q: "She has committed you to Sunday without asking.", a: "\"Ask me first next time. It's nearly always a yes.\" [Ask Before You Decide]", bundle: 'pro' },
+        { q: "Something she said at dinner is still bothering you at bedtime.", a: "\"The thing about my job earlier — I laughed and I didn't like it.\" [Name It Early]", bundle: 'pro' },
+        { q: "She is telling you how to do a job you have taken on.", a: "\"Give me the outcome. Leave me the route.\" [Room to Do It My Way]", bundle: 'pro' },
+        { q: "You are about to accuse her of never noticing anything you do.", a: "\"The real version is: I'd like to hear it when I get something right.\" [The Four Questions]", bundle: 'pro' },
+        { q: "She thanks you warmly and you feel yourself reaching for a deflection.", a: "\"That landed properly. Thank you.\" [Letting It Land]", bundle: 'pro' },
+        { q: "You have gone quiet and cold and she has noticed.", a: "\"I'm doing the silent thing. What I want is ten minutes of your attention in the evening.\" [The Four Questions]", bundle: 'pro' },
+        { q: "A big decision is forming and you have said nothing.", a: "\"Before this gets settled, I want to be in it rather than object to it later.\" [Ask Before You Decide]", bundle: 'pro' },
       ]
     },
   ],

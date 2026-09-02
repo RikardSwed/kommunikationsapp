@@ -4803,4 +4803,250 @@ const mindsetCollections = {
       ]
     },
   ],
+  seenandtrusted1thesafetyshereads: [
+    {
+      name: "Her Worry",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If she is anxious about something, I have failed at making her feel safe.\"\n\nWhat is true instead: her emotional regulation is partly her own work. Your job is to be reliable and interested, not to organise your life so that she never feels uncertain.\n\nWhy it feels right: her anxiety often arrives pointed at you, and the fastest way to make it stop is to accept the charge and start managing it.\n\nWhat it costs: you end up walking on eggshells around her moods, which makes you less honest, and less honest is less safe.\n\nMindset: I am responsible for being trustworthy, not for her never worrying.",
+      inputs: [
+        { q: "She is catastrophising about a decision I made and I feel I have to fix her mood.", a: "I can be steady and interested without taking on the job of regulating her.", bundle: 'pro' },
+        { q: "I have started editing what I tell her to avoid setting her off.", a: "Editing myself makes me less predictable, which is the opposite of safety.", bundle: 'pro' },
+        { q: "She is anxious and I feel accused just by being in the room.", a: "Her anxiety is not a verdict on me. I can stay without pleading guilty.", bundle: 'pro' },
+        { q: "I want her to stop worrying so that I can relax.", a: "Wanting her calm for my sake is not care. I can be present while she is not calm.", bundle: 'pro' },
+        { q: "I keep reassuring her and it never seems to be enough.", a: "Reassurance does not settle a pattern. What settles it is a year of doing what I said.", bundle: 'pro' },
+        { q: "I feel like a failure because she is still uneasy after everything I have done.", a: "My reliability is the input. Her sense of safety builds on its own timescale.", bundle: 'pro' },
+        { q: "She worries about money even though the numbers are fine.", a: "I can show her the numbers and still not be able to hand her the feeling.", bundle: 'pro' },
+        { q: "I have started making decisions based on what will upset her least.", a: "Decisions made to avoid her reaction stop being mine, and she can tell.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Anger",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Any anger from me makes her feel unsafe, so I should stay level.\"\n\nWhat is true instead: she can hear you angry without fear, as long as she can see you have full control of yourself.\n\nWhy it feels right: you have seen her flinch, and the conclusion that anger itself is the problem is both obvious and comfortable.\n\nWhat it costs: emotional sterility. You go flat instead of honest, resentment collects, and when it finally arrives it arrives badly — which is the thing she actually fears.\n\nMindset: controlled anger is safe; swallowed anger is a fuse.",
+      inputs: [
+        { q: "I am furious and I have decided to say nothing about it.", a: "Silence now is a larger version of this conversation later.", bundle: 'pro' },
+        { q: "I think being angry means I have lost the argument.", a: "Anger is information about what matters to me. It is not a verdict on my case.", bundle: 'pro' },
+        { q: "I raise my voice and immediately feel like a bully.", a: "Volume is not violence. What frightens her is unpredictability, not decibels.", bundle: 'pro' },
+        { q: "I want to be the man who never gets angry.", a: "A man who never gets angry has either no boundaries or a hidden ledger.", bundle: 'pro' },
+        { q: "She flinched, so I decided never to bring it up again.", a: "The lesson is to say it differently, not to stop saying it.", bundle: 'pro' },
+        { q: "I go very quiet and cold instead of saying I am angry.", a: "Cold is harder to read than loud, and she has to guess. Guessing is what costs her.", bundle: 'pro' },
+        { q: "I have been irritable for a week without naming a single thing.", a: "Naming one thing badly beats radiating it accurately for a week.", bundle: 'pro' },
+        { q: "I think she should be able to tell that I am upset.", a: "She can tell I am upset. She cannot tell whether it is aimed at her.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Limits",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If she feels safe with me, it means she gets her way.\"\n\nWhat is true instead: a predictable limit creates more safety than a man who yields until he suddenly does not.\n\nWhy it feels right: giving in ends the discomfort now, and the room goes calm, and calm looks like safety from the inside.\n\nWhat it costs: she stops knowing where the edges are. A man with no visible limits eventually produces one out of nowhere, and unpredictability is exactly what she is scanning for.\n\nMindset: she can lean on a line she can see coming.",
+      inputs: [
+        { q: "I agreed to something I do not want because the argument was tiring.", a: "A yes I resent will arrive as a no later, at a worse moment.", bundle: 'pro' },
+        { q: "I think saying no to her is the opposite of making her feel secure.", a: "A reliable no is what makes my yes worth anything.", bundle: 'pro' },
+        { q: "I have said yes to three things this week that I did not want.", a: "I am building a bill, and she has no idea it exists.", bundle: 'pro' },
+        { q: "Setting a limit feels like I am punishing her.", a: "A limit with warmth attached is not a punishment. Leaving without one is.", bundle: 'pro' },
+        { q: "I gave in and then went cold for the rest of the evening.", a: "The coldness is the no I did not say. Saying it plainly would have cost her less.", bundle: 'pro' },
+        { q: "I worry that stopping a conversation is a form of abandoning her.", a: "Stopping with a stated return time is the opposite of abandonment.", bundle: 'pro' },
+        { q: "I keep the peace by never raising the thing that bothers me.", a: "That is not peace, it is a delay, and she is paying interest on it too.", bundle: 'pro' },
+        { q: "I think a good man absorbs more than he says.", a: "Absorbing has a capacity. Past it, everything comes out at once and frightens her.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Promises",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"The small things I forget are not a big deal — she knows what I actually care about.\"\n\nWhat is true instead: reliability is not a background quality, it is the whole evidence. She cannot check what you feel; she can check whether the thing got done.\n\nWhy it feels right: each individual miss really is small, and you know your own intentions, so the gap between them and the record is invisible from where you stand.\n\nWhat it costs: she starts keeping track. The tracking is exhausting, and the exhaustion arrives as nagging, which you then experience as disrespect.\n\nMindset: she cannot see my intentions, only my record.",
+      inputs: [
+        { q: "I forgot something small again and she made a face about it.", a: "To her it is not the errand. It is the fourth data point.", bundle: 'pro' },
+        { q: "I think she is making too much of a missed phone call.", a: "She is not counting phone calls. She is reading whether my word means anything.", bundle: 'pro' },
+        { q: "I meant to do it and the week got away from me.", a: "Meaning to do it lives entirely inside my head. Nothing about it reaches her.", bundle: 'pro' },
+        { q: "She checks whether I have done something and I feel supervised.", a: "The checking is downstream of a pattern. I built it and I can unbuild it.", bundle: 'pro' },
+        { q: "I said I would do it, then did most of it, and think that counts.", a: "Most of it means she still has to hold the rest, which is what she was trying to put down.", bundle: 'pro' },
+        { q: "I keep saying yes to things I will not get to.", a: "A no now is worth more to her than a yes I will quietly not honour.", bundle: 'pro' },
+        { q: "She has stopped asking me about the thing I never did.", a: "Her giving up on asking is worse news than her nagging.", bundle: 'pro' },
+        { q: "I fixed the big thing, so the small ones should be forgiven.", a: "The big thing was one afternoon. The small ones are every week.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Distance",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Going quiet for a bit is harmless. I just need some space to think.\"\n\nWhat is true instead: an unexplained disappearance is the single most destabilising thing you can do, and the explanation costs one sentence.\n\nWhy it feels right: you genuinely do process better alone, and announcing it feels like making a production out of something private.\n\nWhat it costs: she has to work out where you went and why, and the answers she reaches on her own are worse than the truth. Space without a signpost reads as withdrawal of the relationship.\n\nMindset: take the space and say that you are taking it.",
+      inputs: [
+        { q: "I have been in my own head for two days and said nothing about it.", a: "One sentence would have turned two days of guessing into a fact.", bundle: 'pro' },
+        { q: "I think announcing that I need space is dramatic.", a: "\"I need a couple of hours in my head, it isn't about you\" takes four seconds.", bundle: 'pro' },
+        { q: "I withdraw when I am hurt and expect her to notice why.", a: "She notices. She just has to invent the reason, and she will invent a worse one.", bundle: 'pro' },
+        { q: "I go quiet to signal that something is wrong.", a: "Silence is a poor signal. It transmits that something is wrong and nothing else.", bundle: 'pro' },
+        { q: "She asks what is going on and I say nothing, meaning I do not want to discuss it yet.", a: "\"Not yet\" is a real answer. \"Nothing\" is a locked door with the lights on.", bundle: 'pro' },
+        { q: "I disappear into work when things get difficult at home.", a: "Being busy is a respectable-looking way of leaving the room.", bundle: 'pro' },
+        { q: "I think she should give me the benefit of the doubt when I am quiet.", a: "The benefit of the doubt runs out faster than I think, and I can just tell her instead.", bundle: 'pro' },
+        { q: "I stayed silent to avoid a fight and the evening went cold anyway.", a: "I did not avoid the fight. I moved it, and made it about my silence as well.", bundle: 'pro' },
+      ]
+    },
+  ],
+  seenandtrusted2careshedidnotaskf: [
+    {
+      name: "Initiative",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If she wants something done she can ask me — I'm not a mind reader.\"\n\nWhat is true instead: the asking is most of the cost. By the time she has noticed, decided it matters and worked out how to say it without sounding like a complaint, she has done the expensive part alone.\n\nWhy it feels right: it sounds fair, and it is even true in a narrow sense. You genuinely cannot read her mind, and you would genuinely have done it if asked.\n\nWhat it costs: she becomes the manager of a household with one employee. Being managed is exhausting; being the manager is worse.\n\nMindset: noticing is part of the job, not an optional extra.",
+      inputs: [
+        { q: "I said \"just tell me what you need doing\" and felt reasonable about it.", a: "Knowing what needs doing is the work. Volunteering for the easy half is not help.", bundle: 'pro' },
+        { q: "I did the thing the moment she asked and expected that to count.", a: "It counts less than she hoped, because she still had to carry it as far as my ears.", bundle: 'pro' },
+        { q: "I think it is unfair to be blamed for not noticing something.", a: "Nobody is blaming me for a bad memory. She is telling me she is tired of being the one who remembers.", bundle: 'pro' },
+        { q: "I genuinely did not see it.", a: "Then the fix is to look more often, not to explain that I was not looking.", bundle: 'pro' },
+        { q: "I wait for her to ask so that I get it right rather than doing the wrong thing.", a: "Getting it slightly wrong on my own initiative costs her far less than getting it perfectly right on hers.", bundle: 'pro' },
+        { q: "She stopped asking and I assumed things had got better.", a: "She stopped asking because asking cost more than doing it herself. That is worse, not better.", bundle: 'pro' },
+        { q: "I want a list so I know where I stand.", a: "A list means she still owns the whole thing and I own a few tasks on it.", bundle: 'pro' },
+        { q: "I think she should be grateful when I do help.", a: "Gratitude for doing half of my own life is a strange thing to be waiting for.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Solving",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If she tells me a problem, she wants me to solve it. That's what I'm for.\"\n\nWhat is true instead: being tended to and being fixed are two different needs, and only one of them is met by advice.\n\nWhy it feels right: solving is what you are good at, it is what you would want, and it feels like the useful thing to offer instead of sitting there uselessly.\n\nWhat it costs: she learns that telling you something means being given a task list. So she stops telling you the things that have no solution, which is most of the things that matter.\n\nMindset: my solution will keep; her telling me might not.",
+      inputs: [
+        { q: "She starts describing a problem and I am already forming the answer.", a: "The answer will still be there in twenty minutes. She might not still be talking.", bundle: 'pro' },
+        { q: "I feel useless just sitting there while she is upset.", a: "Sitting there is the thing being asked for. Useless is what it feels like from the inside, not what it is.", bundle: 'pro' },
+        { q: "I have offered the same advice three times and she has not taken it.", a: "If it did not land three times, advice was never what was wanted.", bundle: 'pro' },
+        { q: "She says she just wants to vent and I find that pointless.", a: "Venting is the process. It looks pointless from outside and it does the work.", bundle: 'pro' },
+        { q: "I want to point out the part where she made it worse for herself.", a: "True, and unwanted right now. It will still be true when she is not raw.", bundle: 'pro' },
+        { q: "I gave the solution and she got annoyed, which seems unfair.", a: "She heard \"the feeling is the problem\". That is not what I meant and it is what arrived.", bundle: 'pro' },
+        { q: "I ask what she wants and it feels like a cop-out.", a: "Asking is not a cop-out. Guessing wrong and calling it care would be.", bundle: 'pro' },
+        { q: "She has stopped telling me about her work.", a: "I have made telling me expensive. That is the thing to notice.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Her Looks",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"She knows I find her attractive. I married her — I shouldn't have to keep saying it.\"\n\nWhat is true instead: she cannot hear what you are not saying, and the version of her that most needs seeing is the one that has been buried under years of being useful.\n\nWhy it feels right: it is true that you think it. From inside your head, a thing you think constantly feels like a thing you have said.\n\nWhat it costs: she is seen all day as a mother, a colleague and a set of responsibilities. If she is not seen as a woman anywhere, that part of her quietly closes, and neither of you can name what went.\n\nMindset: what stays in my head does not reach her.",
+      inputs: [
+        { q: "I think it every day and I say it a few times a year.", a: "The gap between those two numbers is the whole problem, and it is entirely mine to close.", bundle: 'pro' },
+        { q: "Saying it out loud feels forced now.", a: "Awkward and true beats smooth and absent. It gets easier by the fourth time.", bundle: 'pro' },
+        { q: "I compliment her and she brushes it off, so I stop.", a: "She brushed off the first one after two years of silence. Say the second one.", bundle: 'pro' },
+        { q: "I tell her the house looks great and she seems flat about it.", a: "I praised the work. She was hoping to be seen, not appraised.", bundle: 'pro' },
+        { q: "I feel like a compliment now would sound like I want something.", a: "That is only true because I have let them become currency. The cure is more of them, not fewer.", bundle: 'pro' },
+        { q: "She has just had a baby and I think she does not want to hear it.", a: "She has never needed it more. She will decide whether to believe it; my job is to say it.", bundle: 'pro' },
+        { q: "I think she should get that from herself, not from me.", a: "She does carry her own. Mine is not a substitute for it and it is not nothing either.", bundle: 'pro' },
+        { q: "I only notice how she looks when she has made an effort.", a: "The Tuesday-morning version is the one that would mean the most.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mind-Reading",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If I have to be told what she needs, it doesn't count.\"\n\nWhat is true instead: being told is normal. The thing that counts is what happens afterwards — whether you keep needing to be told the same thing.\n\nWhy it feels right: the romantic version has him simply knowing, and being instructed feels like failing a test you wanted to pass on talent.\n\nWhat it costs: you either avoid asking, and get it wrong, or you sulk when she tells you, and she learns not to. Both roads end with her doing it herself.\n\nMindset: being told once is information; being told five times is the failure.",
+      inputs: [
+        { q: "She tells me exactly what she wants and I feel deflated.", a: "She just saved me a month of guessing. That is generosity, not a criticism.", bundle: 'pro' },
+        { q: "I want to be the man who just knows.", a: "The man who just knows got there by asking a lot, early, and remembering.", bundle: 'pro' },
+        { q: "I did it because she asked, and it felt hollow.", a: "It felt hollow to me and it did not to her. My feeling is not the measure.", bundle: 'pro' },
+        { q: "I would rather do nothing than do the wrong thing.", a: "Nothing is the wrong thing, done reliably.", bundle: 'pro' },
+        { q: "I feel patronised when she explains how she wants it.", a: "She is describing her own preference in her own house. That is not a lesson about my competence.", bundle: 'pro' },
+        { q: "She has told me the same thing three times.", a: "Three times is my score, not hers. Write it down and stop needing the fourth.", bundle: 'pro' },
+        { q: "I ask her what she needs and it feels like admitting defeat.", a: "Asking narrows the search. Refusing to ask is not skill, it is pride with a cost attached.", bundle: 'pro' },
+        { q: "I want credit for finally getting it right.", a: "The credit is that she stops having to track it. That is the whole prize.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Rescue",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"A good man carries everything, so she never has to worry about anything.\"\n\nWhat is true instead: taking the load is care; taking the decisions is management. She is an adult with her own competence, and protecting her from her own life removes the thing she stands on.\n\nWhy it feels right: it is the generous-sounding version of the problem. More is being done, by you, at cost to you — it feels like the opposite of selfishness.\n\nWhat it costs: she stops being a partner and becomes a dependent, then resents it without being able to say why. And you burn out doing a job nobody asked you to take.\n\nMindset: I carry the weight; she keeps the choices.",
+      inputs: [
+        { q: "I decided something for her because I knew the right answer.", a: "Being right is not the same as it being mine to decide.", bundle: 'pro' },
+        { q: "I keep bad news from her to protect her from worrying.", a: "Managed information is the opposite of safety. She will feel the shape of what I am hiding.", bundle: 'pro' },
+        { q: "I am exhausted from carrying everything and slightly proud of it.", a: "The pride is the tell. This stopped being about her a while ago.", bundle: 'pro' },
+        { q: "She says she feels handled and I think that is ungrateful.", a: "Handled is exactly what over-care feels like from inside. That is useful information, not an insult.", bundle: 'pro' },
+        { q: "I want to fix a problem in her family that she has not asked me to touch.", a: "Her family is hers. Support is offered; takeover is not.", bundle: 'pro' },
+        { q: "I redo things she has done because my way is better.", a: "Doing it my way is not care. It is a small correction, repeated daily.", bundle: 'pro' },
+        { q: "I think she cannot cope with the difficult stuff.", a: "She coped for years before I was there. My job is to lighten it, not to replace her.", bundle: 'pro' },
+        { q: "I have taken so much that I have started resenting her for it.", a: "I took more than was asked and sent her the bill. Time to hand some back and say so.", bundle: 'pro' },
+      ]
+    },
+  ],
+  seenandtrusted3askingtobetrusted: [
+    {
+      name: "Asking",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If I have to ask for it, it doesn't count.\"\n\nWhat is true instead: nearly everything worth having in a relationship has to be asked for once. What would not count is having to ask for the same thing forever — and that only happens when the first ask never gets made properly.\n\nWhy it feels right: the wanted version has her simply knowing, and asking feels like collecting something you had to beg for.\n\nWhat it costs: you wait, she does not guess, and the disappointment collects until it comes out as a verdict on her rather than a request.\n\nMindset: asked for once and given freely is the normal shape of this.",
+      inputs: [
+        { q: "I want her to notice without being told.", a: "She is not withholding it. She does not know it is missing.", bundle: 'pro' },
+        { q: "She gave me exactly what I asked for and it felt hollow.", a: "The hollowness is mine and it fades. The alternative is not getting it at all.", bundle: 'pro' },
+        { q: "Asking feels like admitting I am needy.", a: "Everyone needs this. The only choice is whether it gets said or leaks.", bundle: 'pro' },
+        { q: "I have been waiting a month for her to work it out.", a: "A month of waiting has produced nothing except a worse mood in me.", bundle: 'pro' },
+        { q: "I dropped a hint and she missed it.", a: "A hint is a test. She failed a test she did not know she was sitting.", bundle: 'pro' },
+        { q: "I think a good relationship would not need this kind of conversation.", a: "Good relationships are the ones where these conversations happen early and briefly.", bundle: 'pro' },
+        { q: "I asked once and nothing changed, so I have stopped asking.", a: "Once is a request, twice is a pattern being established. Stopping after one is quitting early.", bundle: 'pro' },
+        { q: "I am embarrassed by how small the thing I want is.", a: "Small is good. Small is easy to give and easy to do again tomorrow.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Withdrawal",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If I go quiet, she will work out that something is wrong.\"\n\nWhat is true instead: she will work out that something is wrong and have no idea what. All the silence transmits is a threat with no content.\n\nWhy it feels right: it does register. The temperature drops, she becomes attentive, and it feels like being heard without the exposure of speaking.\n\nWhat it costs: she starts managing your moods instead of talking to you, and you get attention for being difficult rather than for what you actually wanted.\n\nMindset: silence gets me noticed and never gets me answered.",
+      inputs: [
+        { q: "I have gone cold and part of me wants her to notice.", a: "She has noticed. She cannot answer a message with no words in it.", bundle: 'pro' },
+        { q: "She asked what was wrong and I said nothing.", a: "That was the moment. I closed the only door that was open.", bundle: 'pro' },
+        { q: "I think saying it out loud would make me look weak.", a: "Radiating it for three days is the more visible version of the same thing.", bundle: 'pro' },
+        { q: "Going quiet is the only thing that gets a reaction.", a: "It gets a reaction to my mood. Nothing about the actual problem changes.", bundle: 'pro' },
+        { q: "I want her to ask again so that I can finally say it.", a: "Making her ask three times is a charge I am adding to a request.", bundle: 'pro' },
+        { q: "I do not know what is wrong, so I cannot say anything.", a: "\"I don't know what's wrong and I know I'm off\" is a complete sentence and it opens everything.", bundle: 'pro' },
+        { q: "The silence has lasted so long that raising it now would be embarrassing.", a: "Naming it late is awkward for ten minutes. Not naming it is another fortnight.", bundle: 'pro' },
+        { q: "She has started tiptoeing around me and I quite like the care.", a: "That care is fear. It is a poor substitute for the thing I actually wanted.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Her Motive",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"When she checks up on me, it means she does not respect me.\"\n\nWhat is true instead: her checking is usually about her own unsteadiness, not a verdict on your competence. It still needs addressing — and it is a different problem with a different answer.\n\nWhy it feels right: it lands on the spot that hurts, and the interpretation arrives instantly and fully formed.\n\nWhat it costs: you answer a contempt that was not there, she is bewildered by the size of it, and the actual request — for room — never gets made.\n\nMindset: the checking is usually her nerves, not her opinion of me.",
+      inputs: [
+        { q: "She asked twice whether I had done it and I heard contempt.", a: "I heard contempt. What was said was a question. Those are not the same thing.", bundle: 'pro' },
+        { q: "She corrects small things constantly and it feels like a running assessment.", a: "It may be anxiety with a to-do list attached. Either way, what I want is room, and I can ask for that.", bundle: 'pro' },
+        { q: "I want to accuse her of thinking I am useless.", a: "I would be arguing with a thought I assigned her. Better to say what I want instead.", bundle: 'pro' },
+        { q: "She hovers when I do something and I go cold.", a: "Cold answers a crime she has not committed. A sentence answers the actual situation.", bundle: 'pro' },
+        { q: "I think if she trusted me she would not need to ask.", a: "Trust gets built by things going well repeatedly, not by her deciding to feel it.", bundle: 'pro' },
+        { q: "Her lack of confidence in me is obvious.", a: "What is obvious is her behaviour. The reason for it is a guess I keep treating as fact.", bundle: 'pro' },
+        { q: "I want her to admit she does not think I am capable.", a: "Winning that admission would give me nothing. Being left to it would give me everything.", bundle: 'pro' },
+        { q: "I feel like a teenager being supervised.", a: "The feeling is real and the label is mine. \"Leave this one to me\" is the whole fix.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Being Wanted",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Needing to feel wanted by her is not a very manly thing to need.\"\n\nWhat is true instead: being well received — welcomed, desired, glad-you-are-here — is a real need, and unmet it does more damage than almost anything else on this list.\n\nWhy it feels right: the strong version of a man does not need to be welcomed, and admitting you do feels like handing over something that can be used.\n\nWhat it costs: you never ask, so it never arrives, and the disappointment reappears as coldness or as fault-finding about something else entirely.\n\nMindset: wanting to be wanted is not weakness; hiding it is what causes the damage.",
+      inputs: [
+        { q: "I want to say I miss her being pleased to see me and it sounds pathetic.", a: "It sounds honest. Pathetic is going cold for a month instead.", bundle: 'pro' },
+        { q: "I think I should be able to run on my own approval.", a: "I do run on my own approval. Hers is not the fuel, and its absence still registers.", bundle: 'pro' },
+        { q: "She is warm to me and I make a joke to break it.", a: "The joke is a small refusal. She will make fewer offers.", bundle: 'pro' },
+        { q: "I have started picking at small things instead of saying what I miss.", a: "The fault-finding is the ask, badly disguised. Say the ask.", bundle: 'pro' },
+        { q: "Wanting her to desire me feels like something I should have grown out of.", a: "Nobody grows out of it. Some people just stop mentioning it.", bundle: 'pro' },
+        { q: "I feel like a stranger in my own house and cannot say so.", a: "\"I want to feel like you're glad I'm here\" is one sentence and it changes the room.", bundle: 'pro' },
+        { q: "If I ask to be wanted, any warmth afterwards will feel manufactured.", a: "She will not fake this. And practised warmth becomes real warmth faster than absence does.", bundle: 'pro' },
+        { q: "I am waiting for her to want me first.", a: "We are both waiting, in different rooms, for the same thing.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Fault",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"This loop is mostly her doing, so it is mostly hers to fix.\"\n\nWhat is true instead: the loop runs on two halves, and yours is the only one you can operate. Moving it first is not a concession, it is the only available lever.\n\nWhy it feels right: the sequence really may have started with her. You can trace it, and the tracing is satisfying.\n\nWhat it costs: two people wait for each other to go first, and the waiting is itself the pattern continuing. Nothing moves for a year.\n\nMindset: the only half I can move is mine.",
+      inputs: [
+        { q: "I can prove she started it.", a: "I probably can. The proof does not move anything.", bundle: 'pro' },
+        { q: "Going first feels like accepting blame for the whole thing.", a: "Going first is not a confession. It is the only move available to me.", bundle: 'pro' },
+        { q: "I have decided to wait and see whether she changes.", a: "She is doing the same, which is the loop, running.", bundle: 'pro' },
+        { q: "I want the pattern acknowledged before I do anything differently.", a: "Acknowledgement is far easier to get after something has changed than before.", bundle: 'pro' },
+        { q: "I keep score of who has made more effort.", a: "Keeping score is one of my halves. It is also one I can put down.", bundle: 'pro' },
+        { q: "If I stop withdrawing and she keeps checking, I will have lost.", a: "There is no scoreboard. There is a house that either warms up or does not.", bundle: 'pro' },
+        { q: "She does the same things back and it feels unfair.", a: "Fair is not the goal. Out of the loop is the goal.", bundle: 'pro' },
+        { q: "I want a rule that makes it impossible for this to happen again.", a: "One rule helps: anything affecting us both gets asked about before it is settled.", bundle: 'pro' },
+      ]
+    },
+  ],
 };

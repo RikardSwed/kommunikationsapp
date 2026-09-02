@@ -709,6 +709,9 @@ applyInputCounterVisibility();
     integratedmaster: { label: 'The Integrated Masterclass', minLevel: 'complete' },
     counseling1: { label: 'Biblical Counseling 1 — Personal Restoration', minLevel: 'complete' },
     counseling2: { label: 'Biblical Counseling 2 — Conflict and Reconciliation', minLevel: 'complete' },
+    seenandtrusted1thesafetyshereads: { label: 'Seen and Trusted 1 — The Safety She Reads For', minLevel: 'complete' },
+    seenandtrusted2careshedidnotaskf: { label: 'Seen and Trusted 2 — Care She Did Not Ask For', minLevel: 'complete' },
+    seenandtrusted3askingtobetrusted: { label: 'Seen and Trusted 3 — Asking to Be Trusted', minLevel: 'complete' },
   };
 
   // ── PROGRAM_CONFIG (v1.26.81) ─────────────────────────────────────────
@@ -2983,6 +2986,48 @@ const BUNDLE_DEFS = {
     },
   ],
   counseling2: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  seenandtrusted1thesafetyshereads: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  seenandtrusted2careshedidnotaskf: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  seenandtrusted3askingtobetrusted: [
     {
       id: 'free',
       tier: 'free',

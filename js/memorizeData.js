@@ -8261,4 +8261,430 @@ const memorizeCollections = {
       ]
     },
   ],
+  seenandtrusted1thesafetyshereads: [
+    {
+      name: "Core Idea",
+      description: "What a woman is often scanning for in a relationship, and the five things a man can actually do about it.\n\n1. The Kept Word\n2. Not Against You\n3. The Held Boundary\n4. Steady Under Load\n5. Opening the Door\n\nThree of them are what you do; two are what you say when the ground shifts.",
+      cards: [
+        { q: "What is the question this pack is built around?", a: "The quiet one she is often running underneath the visible conversation: am I safe, am I loved, and are we together or alone in this?", bundle: 'free' },
+        { q: "What are the five strategies in this pack?", a: "The Kept Word, Not Against You, The Held Boundary, Steady Under Load, and Opening the Door.", bundle: 'free' },
+        { q: "Why can safety not be given by reassurance alone?", a: "Because she cannot verify what you feel. She can only verify what you did, which is why reliability carries the weight.", bundle: 'free' },
+        { q: "What are the six kinds of safety this pack draws on?", a: "Emotional, relational, reliability, romantic, practical and physical.", bundle: 'free' },
+        { q: "Which two strategies are mostly action rather than speech?", a: "The Kept Word and Steady Under Load.", bundle: 'free' },
+        { q: "Why is a predictable limit safer than endless patience?", a: "Because patience with no visible edge eventually produces an explosion she could not see coming, and unpredictability is the thing she is scanning for.", bundle: 'pro' },
+        { q: "What does this pack say a man should NOT try to do?", a: "Make her free of all worry. Her emotional regulation is partly her own work; his part is being reliable and interested.", bundle: 'pro' },
+        { q: "What is the difference between controlled anger and emotional sterility?", a: "Controlled anger says what is true and stays in charge of itself. Sterility says nothing and collects a bill.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Kept Word",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"The Kept Word\"?", a: "Doing what you said, and telling her yourself when it changes — before she has to ask.", bundle: 'free' },
+        { q: "Why does this strategy work?", a: "Because it is the only part of you she can actually check. Intentions are invisible; a renewed insurance policy is not.", bundle: 'free' },
+        { q: "What are the two variants of \"The Kept Word\"?", a: "Doing it without the reminder, and flagging the change early.", bundle: 'free' },
+        { q: "Why is flagging a change early part of keeping your word?", a: "Because the promise she is relying on is not just the task, it is that she will not be surprised by it failing.", bundle: 'free' },
+        { q: "What is the cost of a promise that quietly lapses?", a: "She starts tracking, and the tracking arrives as nagging, which you then experience as disrespect.", bundle: 'free' },
+        { q: "Why is her giving up on asking worse news than her nagging?", a: "Because nagging means she still expects something. Silence means she has stopped.", bundle: 'pro' },
+        { q: "What should replace the reason when you have missed something?", a: "What happens now. The reason is for you; the repair is for her.", bundle: 'pro' },
+        { q: "Why does \"most of it\" not count?", a: "Because she still has to hold the remainder, which was the part she was trying to put down.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Not Against You",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"Not Against You\"?", a: "Saying out loud, during the argument, that the disagreement is not a threat to the relationship.", bundle: 'free' },
+        { q: "Why does this strategy work?", a: "Because she is often running two conversations at once, and answering the quieter one frees you both to have the loud one properly.", bundle: 'free' },
+        { q: "What are the three variants of \"Not Against You\"?", a: "Separating the heat from the bond, refusing the exit, and naming the shared side.", bundle: 'free' },
+        { q: "What is \"refusing the exit\"?", a: "Closing down the worst reading when she reaches for it — answering \"are you done with me\" with a plain no rather than a clause.", bundle: 'free' },
+        { q: "Why should the answer to a safety question be short?", a: "Because a long answer sounds like a case being built, and a case can be lost.", bundle: 'free' },
+        { q: "What does it mean when she starts apologising for things she does not think she did?", a: "She has moved from arguing to managing you. That is the point to say the bond is not in play.", bundle: 'pro' },
+        { q: "Why is being irritated at a repeated reassurance request counterproductive?", a: "The asking is the symptom. Irritation at a symptom produces more of it.", bundle: 'pro' },
+        { q: "When is the best moment to use this strategy?", a: "Early — before the boundary, and before she has had time to fill the silence with her own worst version.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Held Boundary",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"The Held Boundary\"?", a: "Ending a conversation that has stopped working, with the attachment said in the same breath as the limit.", bundle: 'free' },
+        { q: "Why does the attachment have to be in the same sentence?", a: "Because a limit on its own has the same shape as leaving, and that shape is what she is afraid of.", bundle: 'free' },
+        { q: "What are the two variants of \"The Held Boundary\"?", a: "The limit with a return time, and the limit without leaving the room.", bundle: 'free' },
+        { q: "Why does a stated return time matter so much?", a: "Because it converts an absence into an appointment. She is waiting for something rather than wondering.", bundle: 'free' },
+        { q: "What does this strategy protect that patience does not?", a: "Predictability. She learns where the edges are, and visible edges are not frightening.", bundle: 'free' },
+        { q: "What has to happen after you say you will be back in twenty minutes?", a: "You come back in twenty minutes. The strategy is the return, not the exit.", bundle: 'pro' },
+        { q: "When does a limit read as punishment?", a: "When it arrives without warmth, or without a time, or in place of a conversation you have been avoiding for weeks.", bundle: 'pro' },
+        { q: "Why is stopping better than pushing through to finish the point?", a: "Because nothing said past that line is being received, and some of it cannot be taken back.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Steady Under Load",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"Steady Under Load\"?", a: "Functioning when the week goes wrong, so that she is not the only one holding it — mostly by action rather than speech.", bundle: 'free' },
+        { q: "Why does this strategy work?", a: "Because \"if something happens, am I on my own with it\" is answered by a bad week, not by reassurance in a good one.", bundle: 'free' },
+        { q: "What are the three variants of \"Steady Under Load\"?", a: "Taking the whole errand, reporting only the ending, and absorbing the change.", bundle: 'free' },
+        { q: "What is the difference between helping with something and taking it?", a: "Helping leaves the management with her. Taking it means she can stop thinking about it entirely.", bundle: 'free' },
+        { q: "Why report only the outcome?", a: "Because a running commentary keeps the problem in her head, which is the thing you were trying to remove.", bundle: 'free' },
+        { q: "Why is \"just tell me what you need\" a weak offer?", a: "It is generous and it hands her more work — she now has to allocate you as well as everything else.", bundle: 'pro' },
+        { q: "What should you do when the problem is genuinely beyond you?", a: "Say so, with what you have done, what is left, and what you need. Pretending is a worse failure than the limit.", bundle: 'pro' },
+        { q: "What does taking a whole area rather than a task change for her?", a: "She can put down the map, not just one errand on it.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Opening the Door",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"Opening the Door\"?", a: "Asking a real question when she signals something is going on, and staying in the room for the answer.", bundle: 'free' },
+        { q: "Why does this strategy work?", a: "Because the signal is small and easy to miss on purpose, and asking turns her private weather into something you are in together.", bundle: 'free' },
+        { q: "What are the three variants of \"Opening the Door\"?", a: "Naming what you noticed, asking the smaller question, and staying after the first answer.", bundle: 'free' },
+        { q: "Why ask a smaller question than \"what's wrong\"?", a: "Because \"what's wrong\" is hard to answer honestly. \"What was the worst part of today\" can be answered in one sentence.", bundle: 'free' },
+        { q: "Does the question still count if the answer is \"nothing\"?", a: "Yes. The asking is the thing being noticed, not the answer.", bundle: 'free' },
+        { q: "What is the risk of asking and then immediately solving?", a: "She stops telling you things, because telling you costs her a solution she did not want.", bundle: 'pro' },
+        { q: "What does \"naming what you noticed\" avoid?", a: "A diagnosis. \"You've been quiet since the call\" is an observation she can correct; \"you're upset about your sister\" is a verdict she has to argue with.", bundle: 'pro' },
+        { q: "Why does asking about something she mentioned a week ago land so hard?", a: "It proves the thing stayed in your head without her maintaining it there.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **The Storm and the Ground** — the temperature has risen: do you ground it, stop it, or reopen it?\n• **Weight She Should Not Carry Alone** — the practical load: is it a fire, a promise, or a fog?\n• **All Five Strategies** — everything mixed, with no warning about which moment you are in\n\nOne question decides most of it: is the pressure coming from the world, from the two of you, or from inside her?",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "The Storm and the Ground, Weight She Should Not Carry Alone, and All Five Strategies.", bundle: 'pro' },
+        { q: "What does \"The Storm and the Ground\" make you choose between?", a: "Not Against You, The Held Boundary and Opening the Door — grounding the fight, stopping it, or reopening it afterwards.", bundle: 'pro' },
+        { q: "What is the usual wrong choice in \"The Storm and the Ground\"?", a: "The boundary too early — stopping the conversation before she has heard you are staying, which is the exact shape of what she fears.", bundle: 'pro' },
+        { q: "What does \"Weight She Should Not Carry Alone\" make you choose between?", a: "Steady Under Load, The Kept Word and Opening the Door.", bundle: 'pro' },
+        { q: "What is the usual wrong choice under load?", a: "Taking over the visible errand while the thing actually pressing on her goes unmentioned.", bundle: 'pro' },
+        { q: "What single question sorts most of \"All Five Strategies\"?", a: "Where the weather is coming from — the world, the two of you, or inside her.", bundle: 'pro' },
+        { q: "Which strategy appears in all three collections?", a: "Opening the Door.", bundle: 'pro' },
+        { q: "Why does Opening the Door appear so often?", a: "Because most wrong choices in this pack come from acting before knowing which problem you are in.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n• **From Heat to Ground** — Not Against You → The Held Boundary → Opening the Door\n• **When You Dropped It** — The Kept Word → Steady Under Load → Opening the Door\n• **The Hard Week** — Opening the Door → Steady Under Load → The Kept Word\n\nIn each one, the order is what stops a good move from landing as the wrong thing.",
+      cards: [
+        { q: "What are the three sequences in this pack?", a: "From Heat to Ground, When You Dropped It, and The Hard Week.", bundle: 'pro' },
+        { q: "What is the order in \"From Heat to Ground\"?", a: "Not Against You, then The Held Boundary, then Opening the Door.", bundle: 'pro' },
+        { q: "Why must \"Not Against You\" come before the boundary?", a: "Because the boundary is the frightening part, and it can only be heard as a limit rather than as leaving once she knows you are staying.", bundle: 'pro' },
+        { q: "What is the order in \"When You Dropped It\"?", a: "The Kept Word, then Steady Under Load, then Opening the Door.", bundle: 'pro' },
+        { q: "Why does the repair come before the question in \"When You Dropped It\"?", a: "Because asking how she feels before fixing anything reads as buying your way out with interest.", bundle: 'pro' },
+        { q: "What is the order in \"The Hard Week\"?", a: "Opening the Door, then Steady Under Load, then The Kept Word.", bundle: 'pro' },
+        { q: "Why does the question come first in \"The Hard Week\"?", a: "Because helping before asking means helping with the visible thing rather than the heavy one, and she still cannot put it down.", bundle: 'pro' },
+        { q: "Why does \"The Hard Week\" end with a stated when?", a: "Without one she keeps the task in her head anyway, which means nothing was actually taken off her.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenges in this pack, and what each one is organised around:\n\n• **The Cold Front** — she has gone flat and everything is technically fine\n• **When You Are the Problem** — you did the thing, and she is right\n• **The Overload** — the list has got longer than the week\n• **Rising Heat** — your own temperature has become the issue\n• **Testing the Ground** — she asks the safety question sideways\n\nEach one starts from the situation rather than from the strategy.",
+      cards: [
+        { q: "What are the five challenges in this pack?", a: "The Cold Front, When You Are the Problem, The Overload, Rising Heat, and Testing the Ground.", bundle: 'pro' },
+        { q: "What goes wrong in \"The Cold Front\"?", a: "The silence reads as a request to be left alone, and leaving her alone confirms the thing she is afraid of.", bundle: 'pro' },
+        { q: "What goes wrong in \"When You Are the Problem\"?", a: "The explanation. The reason is interesting to you and irrelevant to her, and offering it turns her hurt into a debate.", bundle: 'pro' },
+        { q: "What goes wrong in \"The Overload\"?", a: "Helping. Doing a visible task well leaves the management with her, and the management is the crushing part.", bundle: 'pro' },
+        { q: "What goes wrong in \"Rising Heat\"?", a: "Your temperature becomes her problem — she stops arguing and starts monitoring you.", bundle: 'pro' },
+        { q: "What goes wrong in \"Testing the Ground\"?", a: "Answering the surface question. The literal question is not the question, so a reasonable answer lands as a dodge.", bundle: 'pro' },
+        { q: "Which challenge is about something you did rather than something she is doing?", a: "When You Are the Problem — and, in a different way, Rising Heat.", bundle: 'pro' },
+        { q: "What is the one thing to avoid in \"The Cold Front\"?", a: "Matching it. Going quiet back turns a bad evening into a bad fortnight.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "These are the mindsets you practise in this pack:\n\n• **Her Worry** — her anxiety is not automatically a verdict on you\n• **Anger** — controlled anger is safe; swallowed anger is a fuse\n• **Limits** — a visible line is safer than patience with no edge\n• **Promises** — she cannot see intentions, only the record\n• **Distance** — take the space, and say that you are taking it\n\nIn every one, the belief that gets in the way feels like consideration from the inside.",
+      cards: [
+        { q: "What are the five mindsets in this pack?", a: "Her Worry, Anger, Limits, Promises, and Distance.", bundle: 'pro' },
+        { q: "What is the core block in \"Her Worry\"?", a: "Believing that any anxiety of hers is evidence that you have failed, which turns into managing her moods instead of being honest.", bundle: 'pro' },
+        { q: "What is true instead in the \"Anger\" mindset?", a: "She can hear you angry without fear, provided she can see you are in full control of yourself.", bundle: 'pro' },
+        { q: "What is the core block in \"Limits\"?", a: "Believing that safety means she gets her way, when a predictable limit does more for safety than yielding does.", bundle: 'pro' },
+        { q: "What is true instead in the \"Promises\" mindset?", a: "Reliability is not a background quality, it is the whole visible evidence.", bundle: 'pro' },
+        { q: "What does the \"Distance\" mindset cost when unexamined?", a: "She has to invent the reason for your absence, and the version she invents is worse than the truth.", bundle: 'pro' },
+        { q: "What do all five of these beliefs have in common?", a: "Each one sounds like restraint or consideration from the inside, and each one removes information she needs.", bundle: 'pro' },
+        { q: "Which two mindsets are about what you withhold rather than what you do?", a: "Anger and Distance — one swallows the feeling, the other swallows the explanation.", bundle: 'pro' },
+      ]
+    },
+  ],
+  seenandtrusted2careshedidnotaskf: [
+    {
+      name: "Core Idea",
+      description: "What \"being taken care of\" actually consists of, and the five things a man can do about it.\n\n1. The Unasked Move\n2. Off Her Plate\n3. No Fix, Just Here\n4. Proof She Was On Your Mind\n5. Looking At Her\n\nThree are about load; two are about being seen. Most men are better at the first three.",
+      cards: [
+        { q: "What is the question this pack is built around?", a: "What \"being taken care of\" actually means in practice, when it is not a mood or a slogan but a set of things a man does.", bundle: 'free' },
+        { q: "What are the five strategies in this pack?", a: "The Unasked Move, Off Her Plate, No Fix, Just Here, Proof She Was On Your Mind, and Looking At Her.", bundle: 'free' },
+        { q: "Why is the asking itself expensive?", a: "Because noticing the thing, deciding it matters and finding a way to raise it without sounding like a complaint is most of the work, and she does that part alone.", bundle: 'free' },
+        { q: "Which two strategies are about being seen rather than being helped?", a: "Proof She Was On Your Mind and Looking At Her.", bundle: 'free' },
+        { q: "What is the difference between helping with a job and owning it?", a: "Owning it includes the remembering. If she still has to track when it is due, it has not left her.", bundle: 'free' },
+        { q: "Where does care turn into management?", a: "At the point where he starts taking her decisions rather than her load. Carrying the weight is care; choosing for her is supervision.", bundle: 'pro' },
+        { q: "Why does thanking her for everything she does often land badly?", a: "Because it praises the role. Being appreciated as staff is the exact thing that has gone wrong.", bundle: 'pro' },
+        { q: "What does this pack say about solving her problems?", a: "Being tended to and being fixed are different needs, and only one of them is met by advice.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Unasked Move",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"The Unasked Move\"?", a: "Noticing something that needs doing and doing it, with no request, hint or announcement.", bundle: 'free' },
+        { q: "Why does this strategy work?", a: "Because the request is the expensive part. Help that arrives after being asked for has already cost her most of its value.", bundle: 'free' },
+        { q: "What are the three variants of \"The Unasked Move\"?", a: "Seeing and doing, seeing and saying then doing, and standing orders.", bundle: 'free' },
+        { q: "What is a \"standing order\" in this strategy?", a: "A recurring job that becomes permanently yours, so it stops appearing on her list at all.", bundle: 'free' },
+        { q: "What should you not do after an unasked move?", a: "Wait to be thanked. Fishing for the reaction turns the gift into an invoice.", bundle: 'free' },
+        { q: "Why is \"just tell me what you need\" not the same as helping?", a: "Because knowing what needs doing is the work. Volunteering for the easy half leaves the management with her.", bundle: 'pro' },
+        { q: "What does it mean when she stops asking?", a: "That asking has become more expensive than doing it herself. It reads as peace and it is withdrawal.", bundle: 'pro' },
+        { q: "Why is getting it slightly wrong on your own initiative better than getting it right on hers?", a: "Because the initiative is the part she cannot do for you, and it is the part she is tired of supplying.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Off Her Plate",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"Off Her Plate\"?", a: "Taking an entire category of responsibility permanently, including the remembering, so it leaves her head.", bundle: 'free' },
+        { q: "Why does this strategy work?", a: "Because the exhausting part is holding the map — what needs doing, by when, and whether anyone else is tracking it.", bundle: 'free' },
+        { q: "What are the two variants of \"Off Her Plate\"?", a: "Naming the whole territory, and refusing the handover back.", bundle: 'free' },
+        { q: "What is \"refusing the handover back\"?", a: "When she checks in, closing the loop for good rather than giving a status report: if something is wrong with it, you will be the one telling her.", bundle: 'free' },
+        { q: "How do you know whether you have actually taken something?", a: "If she still has to remember it, you have not taken it.", bundle: 'free' },
+        { q: "Why is a category better than a task?", a: "A task comes back next week. A category never appears on her list again.", bundle: 'pro' },
+        { q: "What is the common failure when taking something over?", a: "Asking her three questions about how to do it, which puts the supervision straight back on her.", bundle: 'pro' },
+        { q: "What is the trap of taking on the enjoyable half?", a: "You end up with the trips and the outings, and she keeps the forms and the deadlines, which is the half that weighs.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "No Fix, Just Here",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"No Fix, Just Here\"?", a: "Staying with what she is feeling — listening, reflecting, and deliberately not offering the solution already forming in your head.", bundle: 'free' },
+        { q: "Why does this strategy work?", a: "Because a solution offered early answers a question she did not ask and implies the feeling was the problem.", bundle: 'free' },
+        { q: "What are the three variants of \"No Fix, Just Here\"?", a: "Asking which one it is, reflecting and stopping, and staying in it physically.", bundle: 'free' },
+        { q: "What is the simplest version of this strategy?", a: "Asking outright whether she wants help thinking about it or wants company.", bundle: 'free' },
+        { q: "Why should you leave a silence after reflecting back what you heard?", a: "Because filling it is where the advice creeps in, and the silence is where the rest of it comes out.", bundle: 'free' },
+        { q: "What happens when telling you something reliably produces a task list?", a: "She stops telling you the things that have no solution, which is most of the things that matter.", bundle: 'pro' },
+        { q: "What should you do with the criticism you are holding back?", a: "Keep it. It will still be true later, when she is not raw, and it costs nothing to wait.", bundle: 'pro' },
+        { q: "Why does \"at least\" cause trouble?", a: "Because every sentence starting with it is a small correction of her feeling.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Proof She Was On Your Mind",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"Proof She Was On Your Mind\"?", a: "A small concrete thing that could only exist if you had been thinking about her while she was not there.", bundle: 'free' },
+        { q: "Why does this strategy work?", a: "Because words about love can be produced on demand. Something you had to notice, remember and act on is evidence rather than sentiment.", bundle: 'free' },
+        { q: "What are the three variants of this strategy?", a: "The remembered detail, the arranged time, and the message with nothing attached.", bundle: 'free' },
+        { q: "What makes \"the arranged time\" different from suggesting an evening out?", a: "The logistics that usually kill it are already handled, so she is invited rather than recruited.", bundle: 'free' },
+        { q: "Why does the size of the gesture not matter much?", a: "Because the point is not the thing. It is that she occupied space in your life when she could not see it.", bundle: 'free' },
+        { q: "Why is a grand gesture after a long gap the wrong repair?", a: "Because it arrives as an apology for the gap. Thursday, and then the Thursday after, does more.", bundle: 'pro' },
+        { q: "What does it mean if every date this year was her idea?", a: "That she has been the one holding the relationship as well as the household.", bundle: 'pro' },
+        { q: "What is a \"message with nothing attached\"?", a: "Something sent mid-day that asks nothing of her — no logistics, no question, no task.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Looking At Her",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"Looking At Her\"?", a: "Saying what you actually see in her as a person rather than as a function.", bundle: 'free' },
+        { q: "Why does this strategy work?", a: "Because appreciation aimed at the role confirms the role. Being seen as funny, sharp or attractive is a different currency, and the one that runs out first.", bundle: 'free' },
+        { q: "What are the three variants of \"Looking At Her\"?", a: "The specific compliment, the non-domestic praise, and looking and letting her catch you.", bundle: 'free' },
+        { q: "Why is \"thank you for everything you do\" a weak move here?", a: "Because it is warm, true, and confirms exactly the thing that has gone wrong — that she is seen as staff.", bundle: 'free' },
+        { q: "What makes a compliment specific enough to land?", a: "Naming the actual thing you noticed rather than the general category. Not \"you look nice\" but which part.", bundle: 'free' },
+        { q: "What should you do when she brushes off a compliment?", a: "Say it anyway and say the next one. The deflection is usually about the drought, not the sentence.", bundle: 'pro' },
+        { q: "Why does the ordinary Tuesday version matter more than the dressed-up version?", a: "Because being noticed when she has made no effort is the part that says she is seen rather than assessed.", bundle: 'pro' },
+        { q: "What closes down when a woman is never seen as a woman anywhere?", a: "That part of her quietly shuts, and neither of them can name afterwards what went.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **When She Is Spent** — she has run out: is it a job, a load, or a feeling?\n• **Making Her Feel Chosen** — nothing is wrong and something has gone quiet\n• **All Five Strategies** — everything mixed, with no signpost\n\nOne question sorts most of it: is she carrying, feeling, or fading?",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "When She Is Spent, Making Her Feel Chosen, and All Five Strategies.", bundle: 'pro' },
+        { q: "What does \"When She Is Spent\" make you choose between?", a: "The Unasked Move, Off Her Plate and No Fix, Just Here.", bundle: 'pro' },
+        { q: "What is the deciding question in \"When She Is Spent\"?", a: "Whether this evening is heavy, her year is heavy, or she is heavy.", bundle: 'pro' },
+        { q: "What is the usual wrong choice when she is spent?", a: "Doing the dishes at a woman who needed you to sit down — the task gets solved and the loneliness gets confirmed.", bundle: 'pro' },
+        { q: "What does \"Making Her Feel Chosen\" make you choose between?", a: "Proof She Was On Your Mind, Looking At Her and The Unasked Move.", bundle: 'pro' },
+        { q: "What is the usual wrong choice in \"Making Her Feel Chosen\"?", a: "A compliment about how much she does, which is meant as praise and lands as a job appraisal.", bundle: 'pro' },
+        { q: "What single question sorts most of \"All Five Strategies\"?", a: "Whether she is carrying, feeling, or fading.", bundle: 'pro' },
+        { q: "Which strategy appears in all three collections?", a: "The Unasked Move.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n• **Landing Her** — No Fix, Just Here → The Unasked Move → Looking At Her\n• **Seen Before Asked** — Proof She Was On Your Mind → Looking At Her → The Unasked Move\n• **The Long Week** — Off Her Plate → The Unasked Move → No Fix, Just Here\n\nIn each one the order is what stops a good move from arriving as the wrong message.",
+      cards: [
+        { q: "What are the three sequences in this pack?", a: "Landing Her, Seen Before Asked, and The Long Week.", bundle: 'pro' },
+        { q: "What is the order in \"Landing Her\"?", a: "No Fix, Just Here, then The Unasked Move, then Looking At Her.", bundle: 'pro' },
+        { q: "Why does the question come before the action in \"Landing Her\"?", a: "Because acting first solves the visible problem and misses the real weight. She gets a clean kitchen and the sense that nobody asked.", bundle: 'pro' },
+        { q: "Why does the compliment come last in \"Landing Her\"?", a: "Because said earlier it is being used to cheer her out of a feeling, which is a way of ending the feeling rather than hearing it.", bundle: 'pro' },
+        { q: "What is the order in \"Seen Before Asked\"?", a: "Proof She Was On Your Mind, then Looking At Her, then The Unasked Move.", bundle: 'pro' },
+        { q: "Why does the action come last in \"Seen Before Asked\"?", a: "Because doing first makes the words sound like an explanation for the doing. The action instead becomes the proof behind them.", bundle: 'pro' },
+        { q: "What is the order in \"The Long Week\"?", a: "Off Her Plate, then The Unasked Move, then No Fix, Just Here.", bundle: 'pro' },
+        { q: "Why must the structural change come first in \"The Long Week\"?", a: "Because a conversation about a load you have not actually reduced is just sympathy.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenges in this pack, and what each one is organised around:\n\n• **The Hands-Full Moment** — a two-minute window in which help is worth something\n• **The Bad Day** — something out in the world went wrong and cannot be fixed by you\n• **The Invisible Stretch** — nothing is wrong and six months have been logistics\n• **The Badly Packaged Ask** — a real request wrapped in \"you never\"\n• **Over-Care** — the carrying has turned into supervision\n\nFour of them look like nothing is happening. That is what makes them hard.",
+      cards: [
+        { q: "What are the five challenges in this pack?", a: "The Hands-Full Moment, The Bad Day, The Invisible Stretch, The Badly Packaged Ask, and Over-Care.", bundle: 'pro' },
+        { q: "What goes wrong in \"The Hands-Full Moment\"?", a: "Asking what she wants you to do, which hands the problem back at the moment she has no capacity to answer it.", bundle: 'pro' },
+        { q: "What goes wrong in \"The Bad Day\"?", a: "Treating a situation that looks like a problem as one, so good advice lands as a message that she should have handled it better.", bundle: 'pro' },
+        { q: "What is the specific miss in \"The Invisible Stretch\"?", a: "Concluding that because there is no problem there is nothing to do, while she quietly becomes the person who runs a household with you.", bundle: 'pro' },
+        { q: "What goes wrong in \"The Badly Packaged Ask\"?", a: "Answering the packaging. The \"never\" is wrong, you can prove it, and winning that leaves the real request unheard.", bundle: 'pro' },
+        { q: "What is the one thing to avoid in \"Over-Care\"?", a: "Taking a decision she did not hand you, however obvious the right answer looks.", bundle: 'pro' },
+        { q: "What do \"The Invisible Stretch\" and \"Over-Care\" have in common?", a: "Both feel like the good version of the situation from the inside — nothing is wrong, or more is being done.", bundle: 'pro' },
+        { q: "What single instruction covers \"The Hands-Full Moment\"?", a: "In the window, pick something and move.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "The five beliefs this pack works on, in the man's own voice:\n\n• **Initiative** — \"if she wants something done she can ask me\"\n• **Solving** — \"if she tells me a problem, she wants it solved\"\n• **Her Looks** — \"she knows I find her attractive, I shouldn't have to keep saying it\"\n• **Mind-Reading** — \"if I have to be told what she needs, it doesn't count\"\n• **Rescue** — \"a good man carries everything so she never has to worry\"\n\nEach one sounds fair, reasonable or generous from the inside. That is why they survive.",
+      cards: [
+        { q: "What are the five mindsets in this pack?", a: "Initiative, Solving, Her Looks, Mind-Reading, and Rescue.", bundle: 'pro' },
+        { q: "What is true instead of \"she can just ask me\"?", a: "The asking is most of the cost. Noticing, deciding it matters and raising it without sounding like a complaint is work she does alone.", bundle: 'pro' },
+        { q: "What is true instead of \"if she tells me a problem she wants it solved\"?", a: "Being tended to and being fixed are different needs, and only one is met by advice.", bundle: 'pro' },
+        { q: "What is true instead of \"she knows I find her attractive\"?", a: "She cannot hear what you are not saying, and the version of her that most needs seeing is the one buried under being useful.", bundle: 'pro' },
+        { q: "What is true instead of \"if I have to be told, it doesn't count\"?", a: "Being told once is information. Being told five times is the failure.", bundle: 'pro' },
+        { q: "What is true instead of \"a good man carries everything\"?", a: "Taking the load is care; taking the decisions is management, and it removes the thing she stands on.", bundle: 'pro' },
+        { q: "What do all five of these beliefs have in common?", a: "Each one lets him off the hook for paying attention, and each one sounds like fairness, modesty or generosity from the inside.", bundle: 'pro' },
+        { q: "Which two of these beliefs pull in opposite directions?", a: "Initiative and Rescue — one does too little noticing, the other does so much that it takes over her life.", bundle: 'pro' },
+      ]
+    },
+  ],
+  seenandtrusted3askingtobetrusted: [
+    {
+      name: "Core Idea",
+      description: "What a man needs in a relationship, and how to ask for it in a way that can actually be answered.\n\n1. Name It Early\n2. Room to Do It My Way\n3. The Four Questions\n4. Letting It Land\n5. Ask Before You Decide\n\nFour are about asking. One is about being able to receive the answer.",
+      cards: [
+        { q: "What is the question this pack is built around?", a: "How a man names what he needs — competence, room, appreciation, a say, being wanted — in a form that can be answered rather than defended against.", bundle: 'free' },
+        { q: "What are the five strategies in this pack?", a: "Name It Early, Room to Do It My Way, The Four Questions, Letting It Land, and Ask Before You Decide.", bundle: 'free' },
+        { q: "Why does the pack build a strategy out of four questions asked before speaking?", a: "Because the first sentence out of a man's mouth is usually a verdict on her, and the pause is what turns it into something she can act on.", bundle: 'free' },
+        { q: "Why does the same need sound so different depending on how it is said?", a: "Because the raw version is a verdict on her and the translated version is a request. Only one of them can be answered.", bundle: 'free' },
+        { q: "Which strategy is about receiving rather than asking?", a: "Letting It Land.", bundle: 'free' },
+        { q: "What is the loop this pack describes?", a: "She feels unsteady so she manages more; he feels less trusted so he withdraws; the withdrawal makes her less steady. It runs on both halves.", bundle: 'pro' },
+        { q: "Why is working out who started the loop a dead end?", a: "Because the question is unanswerable and each half is only operable by the person in it.", bundle: 'pro' },
+        { q: "What does silence actually transmit?", a: "That something is wrong, with no content attached. She gets a message she can feel and cannot read.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Name It Early",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"Name It Early\"?", a: "Saying the small thing while it is still small, before it collects evidence and turns into a case.", bundle: 'free' },
+        { q: "Why does this strategy work?", a: "Because the late version is never the original complaint — it arrives with a list, a tone and a conclusion about her character.", bundle: 'free' },
+        { q: "What are the three variants of \"Name It Early\"?", a: "Flagging the size, the same-day version, and naming the pattern once.", bundle: 'free' },
+        { q: "What is \"flagging the size\"?", a: "Saying how big the thing is as you raise it, so she is not braced for something worse than what is coming.", bundle: 'free' },
+        { q: "What does it mean when you have a list?", a: "That you left it too long. The list itself is the evidence of the delay.", bundle: 'free' },
+        { q: "Why is \"naming the pattern once\" better than raising the third instance?", a: "Because the third instance is trivial on its own, and arguing it lets the pattern stay unnamed.", bundle: 'pro' },
+        { q: "What should you say when she asks why you did not mention it at the time?", a: "That you thought it would pass, it did not, and you will say it on the day next time.", bundle: 'pro' },
+        { q: "Why does raising something petty still count?", a: "Because if it is still bothering you after four days, it is not only petty.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Room to Do It My Way",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"Room to Do It My Way\"?", a: "Asking for the method rather than arguing about the standard — taking the job and asking not to be supervised.", bundle: 'free' },
+        { q: "Why does this strategy work?", a: "Because the fight is not about whether the job gets done. It is about being treated as someone who can do it.", bundle: 'free' },
+        { q: "What are the three variants of this strategy?", a: "Taking it fully, asking for the outcome rather than the method, and naming the supervision once.", bundle: 'free' },
+        { q: "What does \"taking it fully\" include?", a: "The consequences. If it goes wrong, that is yours too.", bundle: 'free' },
+        { q: "Why is arguing about the correct method a losing move?", a: "Because it is a proxy war. You can win the argument about the dishwasher and settle nothing.", bundle: 'free' },
+        { q: "Why avoid the word \"controlling\"?", a: "Because it is the shortest description and it converts a request for room into a charge she has to answer.", bundle: 'pro' },
+        { q: "What does doing a job badly on purpose actually achieve?", a: "It gets the job taken back and confirms the exact thing you were objecting to.", bundle: 'pro' },
+        { q: "What should you say when her way genuinely is faster?", a: "That hers is faster and yours is yours, and you will be quicker at it in a month.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Four Questions",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"The Four Questions\"?", a: "Running a short internal sequence before speaking, so what comes out is a request rather than an accusation.", bundle: 'free' },
+        { q: "What are the four questions in order?", a: "What am I feeling? What am I missing? What would concretely help? Can I ask for it without making her guilty?", bundle: 'free' },
+        { q: "What are the three variants of this strategy?", a: "Running it silently first, running it out loud, and converting hers.", bundle: 'free' },
+        { q: "What does \"nothing I do is good enough\" translate into?", a: "A request to hear it when you get something right.", bundle: 'free' },
+        { q: "What does \"stop controlling me\" translate into?", a: "A request to solve this one your own way, even if it is slower.", bundle: 'free' },
+        { q: "What does going cold for the evening translate into?", a: "Missing the feeling that she is glad you are in the room.", bundle: 'pro' },
+        { q: "What is \"converting hers\"?", a: "Answering the request underneath her accusation rather than the packaging it arrived in.", bundle: 'pro' },
+        { q: "Why is the fourth question — asking without making her guilty — the hardest one?", a: "Because most requests can be phrased as a failure on her part, and phrasing it that way is what makes it unanswerable.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Letting It Land",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"Letting It Land\"?", a: "Taking appreciation, warmth or desire without deflecting it — receiving it visibly instead of batting it away.", bundle: 'free' },
+        { q: "Why does this strategy work?", a: "Because a man who reliably deflects teaches her to stop offering, and after enough deflections the warmth stops arriving.", bundle: 'free' },
+        { q: "What are the two variants of \"Letting It Land\"?", a: "Taking it plainly, and saying what it did.", bundle: 'free' },
+        { q: "What counts as a deflection?", a: "A joke, a counter-compliment, or a correction of the facts. Anything that hands it straight back.", bundle: 'free' },
+        { q: "What makes \"saying what it did\" powerful?", a: "It tells her the effect, which is the information that makes her do it again.", bundle: 'free' },
+        { q: "Why is this the step people skip in a repair conversation?", a: "Because they are still braced. Staying cold after getting what you asked for teaches her that asking leads nowhere.", bundle: 'pro' },
+        { q: "What is the point of asking for appreciation you cannot receive?", a: "There is none. The asking and the receiving are one strategy in two halves.", bundle: 'pro' },
+        { q: "What is the smallest complete version of this move?", a: "\"Thank you. I'll take that.\" No joke attached.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ask Before You Decide",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"Ask Before You Decide\"?", a: "Requesting a say in something before it is settled, rather than objecting to it afterwards.", bundle: 'free' },
+        { q: "Why does this strategy work?", a: "Because most resentment about influence is really about timing. Being consulted after the plan exists is a review, not influence.", bundle: 'free' },
+        { q: "What are the two variants of this strategy?", a: "Claiming the decision in advance, and stopping the settled version.", bundle: 'free' },
+        { q: "What is \"claiming the decision in advance\"?", a: "Naming a whole category — money, the children, the calendar — and asking to be in it from now on.", bundle: 'free' },
+        { q: "Why does objecting afterwards make things worse?", a: "Because it makes you the obstacle to a plan that already exists, rather than a partner in making it.", bundle: 'free' },
+        { q: "What is the cost of agreeing and then sulking?", a: "She learns that your yes means nothing, and you learn that your say never counts. Both are self-inflicted.", bundle: 'pro' },
+        { q: "What should accompany a request for a vote?", a: "A share of the work. Wanting influence without carrying any of it is a weak position and she will feel it.", bundle: 'pro' },
+        { q: "How do you name a decision that is already made?", a: "Plainly, without pretending otherwise: this is already decided, and you would have liked to be asked.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Before It Goes Cold** — something has started to bother you and nothing has been said\n• **When She Is Managing You** — the problem is being handled rather than trusted\n• **All Five Strategies** — everything mixed, with no signpost\n\nOne question sorts most of it: am I missing room, a say, a word, or clarity about my own state?",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "Before It Goes Cold, When She Is Managing You, and All Five Strategies.", bundle: 'pro' },
+        { q: "What does \"Before It Goes Cold\" make you choose between?", a: "Name It Early, The Four Questions and Ask Before You Decide.", bundle: 'pro' },
+        { q: "What is the deciding question in \"Before It Goes Cold\"?", a: "Whether this is a moment, a muddle, or a pattern of not being asked.", bundle: 'pro' },
+        { q: "What is the usual wrong choice in \"Before It Goes Cold\"?", a: "The accusation, fired early. The speed is right and the packaging is wrong, and the packaging is what gets answered.", bundle: 'pro' },
+        { q: "What does \"When She Is Managing You\" make you choose between?", a: "Room to Do It My Way, Ask Before You Decide and The Four Questions.", bundle: 'pro' },
+        { q: "What is the usual wrong choice when she is managing you?", a: "The word \"controlling\", which turns a request for room into a charge she has to defend.", bundle: 'pro' },
+        { q: "What is the usual wrong choice in \"All Five Strategies\"?", a: "Silence, in every case. It is the only move that guarantees the next version is worse.", bundle: 'pro' },
+        { q: "Which strategy appears in all three collections?", a: "The Four Questions.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n• **From Irritation to Ask** — The Four Questions → Name It Early → Letting It Land\n• **Reclaiming the Task** — Room to Do It My Way → Ask Before You Decide → Letting It Land\n• **When You Have Already Withdrawn** — Name It Early → The Four Questions → Ask Before You Decide\n\nTwo of the three end by receiving something. That is the step most men drop.",
+      cards: [
+        { q: "What are the three sequences in this pack?", a: "From Irritation to Ask, Reclaiming the Task, and When You Have Already Withdrawn.", bundle: 'pro' },
+        { q: "What is the order in \"From Irritation to Ask\"?", a: "The Four Questions, then Name It Early, then Letting It Land.", bundle: 'pro' },
+        { q: "Why must the translation come before speaking early?", a: "Because an untranslated complaint said early just arrives sooner. The translation is what makes speaking early safe.", bundle: 'pro' },
+        { q: "Why does \"From Irritation to Ask\" end with Letting It Land?", a: "Because if she gives you what you asked for and you stay cold, she learns that asking what is wrong leads nowhere.", bundle: 'pro' },
+        { q: "What is the order in \"Reclaiming the Task\"?", a: "Room to Do It My Way, then Ask Before You Decide, then Letting It Land.", bundle: 'pro' },
+        { q: "Why is the second step of \"Reclaiming the Task\" necessary?", a: "Because the first step only stops today's version. Without an agreement for the category, the conversation repeats monthly.", bundle: 'pro' },
+        { q: "What is the order in \"When You Have Already Withdrawn\"?", a: "Name It Early, then The Four Questions, then Ask Before You Decide.", bundle: 'pro' },
+        { q: "Why must the withdrawal be named first?", a: "Because until it is, she is talking to a wall and guessing why, and any request from behind the silence reads as a condition for thawing.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenges in this pack, and what each one is organised around:\n\n• **The Correction** — being told how to do something you were already doing\n• **The Motive Read** — being interpreted in the worst available way\n• **The Unnoticed Stretch** — working hard, quietly, with nothing said\n• **The Cold Turn** — the withdrawal that works in the short term and costs in the long\n• **The Spiral** — the two-sided loop of managing and withdrawing\n\nFour of them tempt you into proving something. None of them is settled by proof.",
+      cards: [
+        { q: "What are the five challenges in this pack?", a: "The Correction, The Motive Read, The Unnoticed Stretch, The Cold Turn, and The Spiral.", bundle: 'pro' },
+        { q: "What goes wrong in \"The Correction\"?", a: "The size of the reaction. It was a comment about a saucepan, the disproportion makes your case look absurd, and you either swallow it or explode later about something else.", bundle: 'pro' },
+        { q: "What is the specific miss in \"The Motive Read\"?", a: "Defending your motive, which turns it into a trial about your character and leaves whatever actually upset her untouched.", bundle: 'pro' },
+        { q: "What goes wrong in \"The Unnoticed Stretch\"?", a: "The complaint arrives as \"nothing I do is good enough\" — a statement about her, easy to disprove, impossible to answer.", bundle: 'pro' },
+        { q: "What is the one thing to avoid in \"The Cold Turn\"?", a: "Answering \"nothing\" when she asks. It is the sentence that makes the silence permanent.", bundle: 'pro' },
+        { q: "What is the one thing to avoid in \"The Spiral\"?", a: "Making your move conditional on hers. Waiting for her to change first keeps the wheel turning at the same speed.", bundle: 'pro' },
+        { q: "What does \"The Unnoticed Stretch\" say about hinting?", a: "A hint that has to be decoded is not a request, and being decoded wrongly makes it worse.", bundle: 'pro' },
+        { q: "What do \"The Correction\" and \"The Motive Read\" have in common?", a: "In both, the instinct is to establish that you are right, and being right changes nothing about what you actually want.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "The five beliefs this pack works on, in the man's own voice:\n\n• **Asking** — \"if I have to ask for it, it doesn't count\"\n• **Withdrawal** — \"if I go quiet, she'll work out that something is wrong\"\n• **Her Motive** — \"when she checks up on me, it means she doesn't respect me\"\n• **Being Wanted** — \"needing to feel wanted isn't a very manly thing to need\"\n• **Fault** — \"this loop is mostly her doing, so it's mostly hers to fix\"\n\nEach of them ends in the same place: nothing gets said, and nothing changes.",
+      cards: [
+        { q: "What are the five mindsets in this pack?", a: "Asking, Withdrawal, Her Motive, Being Wanted, and Fault.", bundle: 'pro' },
+        { q: "What is true instead of \"if I have to ask, it doesn't count\"?", a: "Nearly everything worth having has to be asked for once. Having to ask forever is the real failure, and it starts with the first ask never being made.", bundle: 'pro' },
+        { q: "What is true instead of \"if I go quiet she'll work it out\"?", a: "She will work out that something is wrong and have no idea what. Silence transmits a threat with no content.", bundle: 'pro' },
+        { q: "What is true instead of \"her checking means she doesn't respect me\"?", a: "The checking is usually about her own unsteadiness rather than a verdict on your competence — a different problem with a different answer.", bundle: 'pro' },
+        { q: "What is true instead of \"needing to feel wanted isn't manly\"?", a: "Being well received is a real need, and unmet it does more damage than almost anything else on the list.", bundle: 'pro' },
+        { q: "What is true instead of \"the loop is mostly hers to fix\"?", a: "The loop runs on two halves and yours is the only one you can operate. Going first is not a concession, it is the only lever.", bundle: 'pro' },
+        { q: "What do all five of these beliefs have in common?", a: "Each one gives you a reason not to say anything, and each one sounds like self-respect from the inside.", bundle: 'pro' },
+        { q: "Why is a hint a test?", a: "Because she is being marked on something she does not know she is sitting, and failing it costs her goodwill she never spent.", bundle: 'pro' },
+      ]
+    },
+  ],
 };
