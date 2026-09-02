@@ -2006,25 +2006,82 @@ const mindsetCollections = {
   masculine1: [
     {
       name: "She is your Oracle",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "Viewing her criticism not as an attack, but as information about where you have stopped being present or true.\nWhen you accept her as your Oracle, you stop defending and start looking for the kernel of truth in what she says.",
       inputs: [
         { q: "She complains about something trivial.", a: "What could be true here? Is she reflecting a blind spot in me right now?", bundle: 'pro' },
         { q: "I feel unfairly accused.", a: "Instead of correcting the facts, ask: Where have I stopped leading or loving her in this situation?", bundle: 'pro' },
         { q: "Her emotions seem completely illogical.", a: "Her emotions aren't a problem to be solved logically; they're a signal I need to listen to.", bundle: 'pro' },
         { q: "I just want her to be \"normal.\"", a: "Her emotional storms are the flip side of the fire and passion I love about her.", bundle: 'pro' },
+        { q: "I feel like she's just attacking me out of malice.", a: "Her attack is a clumsy expression of pain. If I look deeper, I can find the kernel of truth.", bundle: 'pro' },
+        { q: "She complains that I forgot the milk again.", a: "It's not about the milk; to her, it's about whether she is top of mind for me.", bundle: 'pro' },
+        { q: "She says my plans are always disorganized.", a: "She is reflecting my lack of focus and attention. I need to tighten up on my presence.", bundle: 'pro' },
+        { q: "She is questioning my ability to handle our finances.", a: "She is feeling unsafe because of my passivity. I need to step up and provide the structure she needs.", bundle: 'pro' },
       ]
     },
     {
       name: "What I Want Matters",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "The posture that your own truth and needs are fundamental to your ability to lead.\nBeing \"nice\" by not having an opinion isn't leadership; it's abdicating the frame.",
       inputs: [
         { q: "I'm afraid my opinion will start a fight.", a: "Speaking my truth is the most loving thing I can do for the relationship long-term.", bundle: 'pro' },
         { q: "I think I'm being \"easy-going\" when I say \"you choose.\"", a: "I'm not easy-going; I'm being lazy. Choosing is a gift of structure.", bundle: 'pro' },
         { q: "I feel selfish when I set a boundary.", a: "A little healthy selfishness makes me a more stable man she can actually trust.", bundle: 'pro' },
+        { q: "I should let her choose everything so she stays happy.", a: "Deferring to her is abdication, not love. My expressed desire is what creates the polarity she craves.", bundle: 'pro' },
+        { q: "If I say \"no\" to her request, she'll think I'm mean.", a: "Having a strong \"no\" is the only way she can trust my \"yes\".", bundle: 'pro' },
+        { q: "I don't want to impose my preferences on the family.", a: "Stating what I want provides a point of orientation. It settles her nervous system.", bundle: 'pro' },
+        { q: "I feel guilty for spending money on my own hobbies.", a: "A Masculine leader must attend to his own basic needs first in order to serve others.", bundle: 'pro' },
+        { q: "I'll just say \"whatever you want\" to avoid the decision-making effort.", a: "\"Whatever you want\" is the default of a pleaser. Choosing is a gift of structure.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Nice Guy Pleasing",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The belief that being harmless, needless, and pleasing is the path to love and peace.\n\nWhat is true instead: hiding your needs is manipulative and kills polarity.\n\nIt feels right because you avoid immediate conflict and feel like a \"good boy\" who honors women.\n\nBut it costs you her respect; she cannot relax with a man who has no boundaries or backbone.\n\nMindset: a little healthy selfishness makes me a stable man she can actually trust.",
+      inputs: [
+        { q: "I should hide my anger so I don't upset the peace.", a: "Suppressing my anger turns me into a victim. I will share my truth cleanly instead.", bundle: 'pro' },
+        { q: "If I always agree with her, she'll feel loved.", a: "Agreement out of fear breeds resentment. She wants to be with a man, not a yes-man.", bundle: 'pro' },
+        { q: "Having no opinions makes me easy-to-manage and pleasant.", a: "Being formless makes her feel unpartnered and unsafe. My clarity is sexy.", bundle: 'pro' },
+        { q: "I want her approval before I make any personal choice.", a: "Seeking her permission turns her into my surrogate mother. I lead myself first.", bundle: 'pro' },
+        { q: "I'll do all the chores so she'll finally want to have sex with me.", a: "Choreplay is a covert contract that kills attraction. I do chores for myself, not to earn sex.", bundle: 'pro' },
+        { q: "I'm afraid she will leave if I show my true power.", a: "If my power scares her off, then she was never ready for a Masculine partner.", bundle: 'pro' },
+        { q: "I should apologize for the sins of all males to show I'm good.", a: "Profuse apologies out of guilt are weak. I honor her through my actions, not my shame.", bundle: 'pro' },
+        { q: "I feel like a \"bad boy\" when I put my needs first.", a: "What I want matters. Caring for myself is how I build the capacity to lead.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Feminine Tsunamis",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The belief that her intense emotional outbursts are an attack on your character that you must fix or escape.\n\nWhat is true instead: her intensity is an organic storm that wants your grounded containment.\n\nIt feels right because her words are full of blame and shaming, which triggers your childhood wounds of being \"in trouble.\" But getting defensive or running away proves to her nervous system that you cannot hold space for her.\n\nMindset: her storm is a transient wave; I am the Oak that stands unmoved.",
+      inputs: [
+        { q: "Her messy emotions are proof that our relationship is broken.", a: "Her emotions are just energy in motion. They will pass if I stay grounded and present.", bundle: 'pro' },
+        { q: "I need to explain my good intentions so she'll stop being mad.", a: "Explaining during an outburst is like talking French to an English speaker. Hear the pain first.", bundle: 'pro' },
+        { q: "If she is shouting, it means I am failing as a husband.", a: "She is testing my solidity. Settle my nervous system and hold the space.", bundle: 'pro' },
+        { q: "I should tell her she's being completely illogical and crazy.", a: "She wishes she weren't in this state. Telling her she's crazy only enrages her further.", bundle: 'pro' },
+        { q: "I want to run out of the house to escape the snot bubbles and rage.", a: "Staying in the fire is what Masculine leadership requires. Breathe and stay present.", bundle: 'pro' },
+        { q: "I must find a logical solution to her complaint immediately.", a: "Feelings first, facts later. Settle her heart first, then deal with the facts.", bundle: 'pro' },
+        { q: "She expects me to agree with all her accusations.", a: "Hear the pain, not the blame. I don't have to agree with her story to empathize with her hurt.", bundle: 'pro' },
+        { q: "I feel like a victim when she is throwing wild emotions at me.", a: "I am not a victim. I am the leader, and I am responsible for the connection.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Relational Conflict",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The belief that winning the argument or protecting your ego is more important than restoring the connection.\n\nWhat is true instead: taking responsibility for the resolution is the ultimate display of leadership.\n\nIt feels right because your defenses want to protect your \"goodness\" and prove you were right.\n\nBut it costs you her trust and shuts down her heart; she needs to feel met, not defeated.\n\nMindset: I will put the connection before my fear or ego.",
+      inputs: [
+        { q: "I won't apologize until she admits her part of the mistake.", a: "A leader doesn't wait for others to go first. I will own my part cleanly now.", bundle: 'pro' },
+        { q: "I should give her the cold shoulder to show her she hurt me.", a: "The silent treatment is a child's defense. I will stay engaged and state my boundaries.", bundle: 'pro' },
+        { q: "I need to win this fight so I don't lose my status.", a: "Relational conflict isn't about win/lose. Winning an argument at the cost of connection is a loss.", bundle: 'pro' },
+        { q: "She should get over her hurt because it was an accident.", a: "Disinviting her or making mistakes hurts her nervous system. My clumsiness has consequences.", bundle: 'pro' },
+        { q: "If I ask for a do-over, she'll think I'm weak.", a: "It takes a strong man to admit he was clumsy. A do-over pulls the plug on conflict.", bundle: 'pro' },
+        { q: "I want to list all the things I've done right to prove I'm good.", a: "Resting on my laurels means nothing to her in the moment. Polarity lives in the present.", bundle: 'pro' },
+        { q: "She should fix her own emotional problems on her own.", a: "If I don't like how she is being, I can lead her into a different state.", bundle: 'pro' },
+        { q: "Hiding my true feelings will keep the relationship safe.", a: "She is an Oracle. She senses my shut-down heart and it breaks her trust. I will speak inarguably.", bundle: 'pro' },
       ]
     },
   ],

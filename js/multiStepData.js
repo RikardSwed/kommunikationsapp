@@ -3822,9 +3822,9 @@ const multiStepCollections = {
   masculine1: [
     {
       name: "Conflict to Connection",
-      guideFront: "What she said, and the strategy you respond with.",
-      guideBack: "How it could sound.",
-      description: "A sequence to turn a fight around: Hear the Pain → Do-Over → Tangible Action.\nFirst, you give her \"emotional oxygen,\" then you correct your own mistake, and finally, you offer a concrete solution.",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
+      description: "A sequence to turn a fight around: Hear the Pain, Not the Blame → The Do-Over → Narrowing the Scope.\nFirst, you give her \"emotional oxygen,\" then you correct your own mistake, and finally, you offer a concrete solution.",
       inputs: [
         {
           bundle: 'pro',
@@ -3832,7 +3832,95 @@ const multiStepCollections = {
           steps: [
             { front: "Hear the Pain — she snaps: \"You never care about what I need!\"", back: "\"I hear that you feel alone and let down in this, and I understand that.\"" },
             { front: "Do-Over — she still looks skeptical.", back: "\"Can I have a do-over? I see I've been irresponsible and I want to show you I take you seriously.\"" },
-            { front: "Tangible Action — you offer a concrete solution.", back: "\"I'll fix it right now, and going forward I'll put our household tasks in my calendar.\"" },
+            { front: "Narrowing the Scope — you offer a concrete solution.", back: "\"I'll fix it right now, and going forward I'll put our household tasks in my calendar.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You promised to have a focused dinner date, but you keep looking at your phone. She gets upset and tells you that you are selfish.",
+          steps: [
+            { front: "Hear the Pain — she snaps: \"Your work is always more important than me!\"", back: "\"I hear that you're feeling forgotten and unimportant right now, and I see how much that hurts.\"" },
+            { front: "The Do-Over — you want to defend yourself.", back: "\"Wait, can we have a do-over? I was defending my phone use instead of being present with you. I'm putting it away.\"" },
+            { front: "The \"When You...\" Stem — you share your anxiety cleanly.", back: "\"When I get these work alerts, I feel anxious about failing at my job, but I'm choosing to focus on us now.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You come home to a chaotic house. She starts criticizing you for not helping enough.",
+          steps: [
+            { front: "Hear the Pain — she snaps: \"I have to do everything around here while you just relax!\"", back: "\"I hear how completely exhausted and overwhelmed you are with the house right now.\"" },
+            { front: "The Do-Over — you feel the urge to lecture her on efficiency.", back: "\"Let's do a do-over. I started listing my own chores instead of hearing how hard this is for you.\"" },
+            { front: "Narrowing the Scope — you provide immediate structure.", back: "\"Let's sit down and handle this pile together for 20 minutes right now.\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Lead the Dance",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
+      description: "Setting direction and providing structure to reduce her decision-making burden: Narrowing the Scope → The \"When You...\" Stem → Narrowing the Scope. It works because you proactively narrow the wide-open scope of decisions, share your truth inarguably, and then drive a clear proposal forward.\n\n• Narrowing the Scope — reduce uncertainty by proposing limited options\n• The \"When You...\" Stem — state your boundaries and preferences clearly\n• Narrowing the Scope — guide the final decision with decisive clarity\n\nMindset: your clarity is a gift of structure you give her, not a burden you place on her.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "She is stressed about the upcoming weekend and keeps asking \"What are we doing?\" in an anxious tone.",
+          steps: [
+            { front: "Narrowing the Scope — she asks: \"Are we going to be stuck at home all day?\".", back: "\"I suggest we do a hike on Saturday morning and relax Sunday. Does that work for you?\"" },
+            { front: "The \"When You...\" Stem — she complains that the hike will be too tiring.", back: "\"When you worry about the energy, I feel anxious about planning, but I want us to have an adventure.\"" },
+            { front: "Narrowing the Scope — she is still hesitant.", back: "\"I've researched these two short trails. Let's choose the lake trail—it's only an hour.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "She is obsessing over the logistics of the house and trying to manage your schedule.",
+          steps: [
+            { front: "The \"When You...\" Stem — she hands you a list of chores.", back: "\"When I get a long list of tasks without warning, I feel pressured and I want to withdraw.\"" },
+            { front: "Narrowing the Scope — she sighs and looks frustrated.", back: "\"I'll handle the garage and the lawn on Saturday morning. Does that cover the main things?\"" },
+            { front: "Narrowing the Scope — she asks what she should do.", back: "\"You focus on the kitchen prep. I'll take care of the rest so you don't have to think about it.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You need to have a serious talk about the budget because she has been spending heavily.",
+          steps: [
+            { front: "Narrowing the Scope — you initiate the conversation.", back: "\"Let's sit down for 15 minutes tonight to plan our monthly savings goal.\"" },
+            { front: "The \"When You...\" Stem — she gets defensive: \"You're always trying to control my spending!\".", back: "\"When we don't have a clear savings target, I feel worried about our future stability, and I need safety.\"" },
+            { front: "Narrowing the Scope — she softens and agrees.", back: "\"I've run the numbers. We can save either 500 or 800 this month. What works best for our budget?\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Weather the Storm",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
+      description: "Standing strong in the face of her powerful emotional tsunamis: Hear the Pain, Not the Blame → Refusing the Rejection → The \"When You...\" Stem. It works because you refuse to get hooked by her accusations, hold a safe container through her storm, and then speak your truth from a grounded place.\n\n• Hear the Pain, Not the Blame — ignore the toxic surface to meet her underlying hurt\n• Refusing the Rejection — stay present even if she tells you to leave\n• The \"When You...\" Stem — share your own boundaries without defensiveness\n\nMindset: be more committed to the connection than you are afraid of her intensity.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You had to cancel plans with her at the last minute because of an urgent work issue. She is furious.",
+          steps: [
+            { front: "Hear the Pain — she shouts: \"You always let me down! You only care about yourself!\".", back: "\"I hear how incredibly disappointed and let down you are right now, and I'm sorry.\"" },
+            { front: "Refusing the Rejection — she turns her back and says: \"Just go away! I don't want to talk to you.\"", back: "\"I'm going to stay right here with you. I'm not running away from this.\"" },
+            { front: "The \"When You...\" Stem — she cries in frustration.", back: "\"When I have to choose between work and you, I feel torn and anxious, but you are my priority.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "She is emotional and angry about how you handled your child's study habits, accusing you of being a bad father.",
+          steps: [
+            { front: "Hear the Pain — she snaps: \"You don't care about our son's future at all!\".", back: "\"I hear your deep fear for our son, and I know how much you want him to succeed.\"" },
+            { front: "Refusing the Rejection — she walks away to the kitchen: \"You're impossible to talk to.\"", back: "(Follow her, and lean against the counter.) \"I'm not walking away from this. Take the time you need.\"" },
+            { front: "The \"When You...\" Stem — she looks up at you, still tense.", back: "\"When you call me a bad father, I feel deeply hurt and defensive, but I want us to lead together.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "She is feeling insecure and tests your commitment by asking if you are bored of her.",
+          steps: [
+            { front: "Hear the Pain — she says sarcastically: \"I'm sure you'd rather be with someone younger.\"", back: "\"I hear that you're feeling insecure about my love right now, and it hurts me to see you doubt.\"" },
+            { front: "Refusing the Rejection — she pulls away when you try to hold her: \"Don't touch me.\"", back: "(Let your hands drop, and stay where you are.) \"All right. I'm still here.\"" },
+            { front: "The \"When You...\" Stem — she softens slightly.", back: "\"When you pull away from me, I feel disconnected, but I am completely devoted to you.\"" },
           ]
         },
       ]

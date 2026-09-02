@@ -2432,13 +2432,82 @@ const challengesCollections = {
   masculine1: [
     {
       name: "The Cold Shoulder",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response (strategy in brackets).",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "When she withdraws, becomes silent, or tries to reject connection. The challenge is not to respond in kind, but to remain present.\nHere we primarily use Refusing Rejection and Hear the Pain to re-establish contact.",
       inputs: [
-        { q: "She stares at the wall and only answers with single words.", a: "\"I see that you're hurt. I'll sit here with you for a bit until you're ready to talk.\" (Refusing Rejection)", bundle: 'pro' },
-        { q: "She pulls her hand away when you try to hold it.", a: "\"I notice you feel far away from me right now. What's happening inside?\" (Hear the Pain)", bundle: 'pro' },
-        { q: "She sends a short, cold text: \"Don't call me.\"", a: "\"I hear that you need space. I love you and I'm here when you've landed.\" (Refusing Rejection)", bundle: 'pro' },
+        { q: "She stares at the wall and only answers with single words.", a: "\"I see that you're hurt. I'll sit here with you for a bit until you're ready to talk.\" [Refusing the Rejection]", bundle: 'pro' },
+        { q: "She pulls her hand away when you try to hold it.", a: "\"I notice you feel far away from me right now. What's happening inside?\" [Hear the Pain, Not the Blame]", bundle: 'pro' },
+        { q: "She sends a short, cold text: \"Don't call me.\"", a: "\"I hear that you need space. I love you and I'm here when you've landed.\" [Refusing the Rejection]", bundle: 'pro' },
+        { q: "She slams the bedroom door and refuses to let you in.", a: "(Sit down outside the door.) \"I'm right here. I'll wait until you're ready to let me in.\" [Refusing the Rejection]", bundle: 'pro' },
+        { q: "You ask what's wrong and she sighs heavily, looking away in silence.", a: "(Sit down next to her and stay.) \"You don't have to say anything. I'm just going to sit here with you.\" [Refusing the Rejection]", bundle: 'pro' },
+        { q: "She responds to your text with a cold: \"Whatever.\"", a: "\"I hear that you're feeling checked out right now, but I'm here when you want to connect.\" [Hear the Pain, Not the Blame]", bundle: 'pro' },
+        { q: "She gets out of the car and walks off during a tense silence.", a: "(Follow at an easy distance, no hurry.) \"I'm walking with you. You don't have to talk.\" [Refusing the Rejection]", bundle: 'pro' },
+        { q: "She says: \"There's no point in talking anymore. It's useless.\"", a: "\"It sounds like you're feeling completely hopeless about us right now.\" [Hear the Pain, Not the Blame]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Verbal Attacks",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "When she blasts you with messy, toxic emotions—blame, sarcasm, or shaming. The challenge is to settle your nervous system, stay present, and hear the underlying pain instead of reacting defensively.\n\n• Hear the Pain, Not the Blame — meet her emotions with empathy\n• The \"When You...\" Stem — own your feelings cleanly without counter-attacking\n\nThe key question is: are you reacting to her words or meeting her heart?\n\nMindset: see the little girl behind the raging woman to stay grounded in your presence.",
+      inputs: [
+        { q: "She shouts: \"You always ruin everything, you are so lazy!\"", a: "\"I hear that you're feeling completely overwhelmed and let down by me right now.\" [Hear the Pain, Not the Blame]", bundle: 'pro' },
+        { q: "She snaps sarcastically: \"I guess work is more important than your family.\"", a: "\"I hear how much you're hurting because I've been away so much.\" [Hear the Pain, Not the Blame]", bundle: 'pro' },
+        { q: "She accuses you of being selfish during a heated argument.", a: "\"When you call me selfish, I feel criticized and defensive, but I want to understand your pain.\" [The \"When You...\" Stem]", bundle: 'pro' },
+        { q: "She screams: \"Why can't you ever listen to what I'm saying?!\"", a: "\"It sounds like you're feeling completely unheard and alone in this.\" [Hear the Pain, Not the Blame]", bundle: 'pro' },
+        { q: "She brings up a mistake you made three years ago to shame you.", a: "\"I hear how much pain you're still carrying from that mistake.\" [Hear the Pain, Not the Blame]", bundle: 'pro' },
+        { q: "She tells you: \"You are the most insensitive man I've ever met.\"", a: "\"When you say that, I feel hurt and I want to close off, but I'm staying here to listen.\" [The \"When You...\" Stem]", bundle: 'pro' },
+        { q: "She lashes out in anger: \"You don't care about my feelings!\"", a: "\"I hear that you're feeling unloved and unsafe with me right now.\" [Hear the Pain, Not the Blame]", bundle: 'pro' },
+        { q: "She throws a wild accusation at you that is factually wrong.", a: "(Ignore the facts) \"I hear how frustrated and angry you are with me.\" [Hear the Pain, Not the Blame]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Decision Paralysis",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "When she is overwhelmed by the burden of uncertainty and decisions, which forces her into her Masculine energy. The challenge is to provide clarity and structure by narrowing the scope and stating your preferences.\n\n• Narrowing the Scope — simplify the world by presenting limited choices\n• The \"When You...\" Stem — share your own preferences clearly to give her orientation\n\nThe key question is: are you leaving her in uncertainty, or are you offering structure?\n\nMindset: your clarity is a gift of structure you give her, not a burden you place on her.",
+      inputs: [
+        { q: "She is exhausted and staring at a travel website, unable to pick a flight.", a: "\"I've chosen these two flight times. Which one works best for you?\" [Narrowing the Scope]", bundle: 'pro' },
+        { q: "She asks: \"What should we do with our savings this year?\"", a: "\"I've researched these two investment options. Let's look at them together.\" [Narrowing the Scope]", bundle: 'pro' },
+        { q: "She is struggling to choose between two career paths and looking stressed.", a: "\"When I see you struggle with this, I want to support you. Let's talk through just these two options.\" [Narrowing the Scope]", bundle: 'pro' },
+        { q: "She is trying to organize the family calendar and looks overwhelmed.", a: "\"I suggest we keep Saturday free and visit your parents on Sunday. Does that work?\" [Narrowing the Scope]", bundle: 'pro' },
+        { q: "She asks what you want to buy her for her birthday.", a: "\"I’d love to get you that necklace you liked, but let’s choose between these two styles.\" [Narrowing the Scope]", bundle: 'pro' },
+        { q: "She is obsessing over the details of a party menu.", a: "\"I suggest we do the chicken and the salad. I'll take care of the shopping.\" [Narrowing the Scope]", bundle: 'pro' },
+        { q: "She asks: \"Where do you want us to live next year?\"", a: "\"My preference is to stay in this neighborhood, but I want us to choose together.\" [The \"When You...\" Stem]", bundle: 'pro' },
+        { q: "She is paralyzed by too many choices for the kids' camp.", a: "\"Let's choose between the soccer camp or the art camp. What do you think?\" [Narrowing the Scope]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Testing Solidity",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "When she tests your boundaries, your devotion, or your capacity to handle intensity. The challenge is to stand independently in your own power, not dependent on her approval.\n\n• Refusing the Rejection — stay committed to the connection under pressure\n• The \"When You...\" Stem — hold your boundaries without being domineering\n\nThe key question is: are you backing down for short-term harmony or holding your frame?\n\nMindset: be more committed to the connection than you are afraid of her intensity.",
+      inputs: [
+        { q: "She says: \"It's over, I think we should just break up!\" in the middle of a fight.", a: "\"I hear that you're feeling completely hopeless right now. I'm not giving up on us.\" [Refusing the Rejection]", bundle: 'pro' },
+        { q: "She tries to \"push your buttons\" by criticizing your style in front of others.", a: "\"When you criticize me in public, I feel disrespected. I need you to stop.\" [The \"When You...\" Stem]", bundle: 'pro' },
+        { q: "She pulls her hand away and says: \"I don't need your help.\"", a: "(Stay where you are, eyes on hers.) \"I know. I'm offering anyway.\" [Refusing the Rejection]", bundle: 'pro' },
+        { q: "She says sarcastically: \"I'm sure you'd rather be single.\"", a: "\"I love you and I've chosen to be here with you. I'm not going anywhere.\" [Refusing the Rejection]", bundle: 'pro' },
+        { q: "She is trying to \"veto\" your scheduled gym time to test your resolve.", a: "\"Staying in shape is essential for me. I'm going to the gym now, and we'll connect at seven.\" [The \"When You...\" Stem]", bundle: 'pro' },
+        { q: "She demands to know: \"Why do you always have to have your own way?\".", a: "\"When you say that, I feel pressured to give up my truth, but this decision is important to me.\" [The \"When You...\" Stem]", bundle: 'pro' },
+        { q: "She rolls her eyes and mocks a boundary you just set.", a: "\"My boundary on this stands. I won't participate in a conversation where I'm mocked.\" [The \"When You...\" Stem]", bundle: 'pro' },
+        { q: "She shuts down and tells you: \"I don't care what you do.\"", a: "\"I see you're shutting down because you're hurt. I'm staying here with you.\" [Refusing the Rejection]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Meaningless Friction",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "When an interaction has gone wrong due to clumsiness, poor phrasing, or sudden defensiveness. The challenge is to have the humility and presence to pull the plug on the conflict.\n\n• The Do-Over — ask to start the interaction over cleanly\n• The \"When You...\" Stem — reset the dynamic by sharing your vulnerability\n\nThe key question is: are you continuing the ping-pong fight or inviting a clean reset?\n\nMindset: it takes a strong man to admit he was clumsy.",
+      inputs: [
+        { q: "You hear yourself explaining, for the third time, why your version of the evening is the reasonable one.", a: "\"Can we have a do-over? I'm arguing to win instead of listening.\" [The Do-Over]", bundle: 'pro' },
+        { q: "You accidentally snapped back at her in a harsh, defensive tone.", a: "\"I'm sorry, that tone came out completely wrong. Can we start over? I want to hear you.\" [The Do-Over]", bundle: 'pro' },
+        { q: "You find yourself arguing about who does more chores around the house.", a: "\"Stop, let's do a do-over. I don't want us to fight about chores, I want us to be a team.\" [The Do-Over]", bundle: 'pro' },
+        { q: "You lied to avoid a minor conflict and now feel the weight of it.", a: "\"I just said something that wasn't true because I was anxious. Can we redo that conversation?\" [The Do-Over]", bundle: 'pro' },
+        { q: "She misunderstood your playful tease and became deeply hurt.", a: "\"That landed totally wrong. Can we have a do-over? My intention was just to be playful.\" [The Do-Over]", bundle: 'pro' },
+        { q: "You notice you've physically withdrawn to your phone to escape her mood.", a: "\"I just checked out because I got anxious. Can I come back and start over?\" [The Do-Over]", bundle: 'pro' },
+        { q: "You feel yourself getting defensive about her feedback.", a: "\"When you criticize my driving, I notice I start getting defensive. Can we try this talk again?\" [The Do-Over]", bundle: 'pro' },
+        { q: "You are stuck in a stiff, sterile conversation with no spark.", a: "\"This doesn't feel like us. Let's take a break and then have a do-over from our hearts.\" [The Do-Over]", bundle: 'pro' },
       ]
     },
   ],

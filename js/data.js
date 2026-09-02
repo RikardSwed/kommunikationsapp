@@ -3619,8 +3619,8 @@ const collections = {
   masculine1: [
     {
       name: "Hear the Pain, Not the Blame",
-      guideFront: "Use Hear the Pain to respond when...",
-      guideBack: "A possible response.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "Ignoring the toxic surface of a complaint—blame, sarcasm, or insults—to hear the underlying vulnerability and pain.\nBy focusing on the pain instead of facts or logic, your natural care for her kicks in instead of your defensive instincts.\n\n• \"I hear that you’re feeling alone in this.\"\n• \"It sounds like you’ve had a really heavy day.\"\n• \"Tell me more about how you’re hurting right now.\"\n\nUnderlying Categories:\n1. The Verbal Attack — ignore the words and meet the emotion.\n2. The Emotional Tsunami — recognize that facts cannot stop an ocean wave of intensity.\n\nMindset: See the little girl behind the raging woman to stay grounded in your presence.",
       inputs: [
         { q: "She shouts: \"You never think of me, you just work all the time!\"", a: "\"I hear that you’re feeling forgotten, and it hurts me to hear that.\"", bundle: 'free' },
@@ -3635,8 +3635,8 @@ const collections = {
     },
     {
       name: "Narrowing the Scope",
-      guideFront: "Present a clear proposal when...",
-      guideBack: "A possible proposal.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "Proactively reducing the decision-making burden for your partner by presenting limited options instead of open questions.\nUncertainty and decisions force her into her Masculine energy; your clarity allows her to relax into her Feminine.\n\n• \"Should we do Mexican or Sushi tonight?\"\n• \"I suggest we leave at nine, does that work for you?\"\n\nVariants:\n1. Presenting options — give 2–3 concrete choices.\n2. Stating a preference — say what you want, but remain open.\n3. Asking for objections — provide a plan and ask if anything conflicts.\n\nMindset: Your clarity is a gift of structure you give her, not a burden you place on her.",
       inputs: [
         { q: "It's time to decide on dinner and she seems exhausted.", a: "\"I'm choosing between Italian and Thai tonight. Which do you prefer?\"", bundle: 'free' },
@@ -3651,8 +3651,8 @@ const collections = {
     },
     {
       name: "The Do-Over",
-      guideFront: "Request a do-over when...",
-      guideBack: "A possible request.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "Having the humility and presence to interrupt an interaction that has gone wrong and ask to \"do it over\" to act more in line with your intention.\nIt is an elegant way to pull the plug on meaningless conflicts that arise from clumsiness or poor phrasing.\n\n• \"Can we have a do-over? I realize I just got defensive.\"\n• \"Let me try that again, that came out completely wrong.\"\n\nVariants:\n1. For your own reactivity — when you notice you've \"fallen into the trap.\"\n2. For misunderstandings — when you see she has misinterpreted your meaning.\n\nMindset: It takes a strong man to admit he was clumsy.",
       inputs: [
         { q: "You notice you've just started lecturing her on how to solve her problems.", a: "\"Wait, can we have a do-over? I noticed I'm trying to fix everything instead of just listening.\"", bundle: 'free' },
@@ -3667,8 +3667,8 @@ const collections = {
     },
     {
       name: "The \"When You...\" Stem",
-      guideFront: "Share your internal state when...",
-      guideBack: "An inarguable statement.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "Using a specific template (Observation + Feeling) to share your inner state without accusations, demands, or \"victim mentality.\"\nBy only speaking to your own experience, you create an \"inarguable\" truth that doesn't trigger her defenses as easily.\n\n• \"When you [observation], I feel [emotion] in my body.\"\n• \"I notice I'm thinking [thought] when you do [observation].\"\n\nVariants:\n1. Sharing vulnerability — tell her about your fear or insecurity.\n2. Owning anger — telling her you are angry without attacking her.\n\nMindset: What you want and feel matters—expressing it is an act of love.",
       inputs: [
         { q: "She hasn't replied to your texts all day.", a: "\"When I don't hear from you all day, I feel unimportant, and that scares me a bit.\"", bundle: 'free' },
@@ -3683,8 +3683,8 @@ const collections = {
     },
     {
       name: "Refusing the Rejection",
-      guideFront: "Keep the connection open when...",
-      guideBack: "A steady presence.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "Steadfastly refusing to accept a unilateral shutdown of connection (e.g., when she says \"Go away!\") by staying present and offering safety.\nShe is often testing your devotion; by not being scared off by her intensity, you build deep trust.\n\n• \"I'm not going anywhere.\"\n• \"I see you're hurting. I'm right here when you're ready.\"\n\nVariants:\n1. During silence — remain physically in the room without pressuring her.\n2. During the \"Go!\" — give her physical space but send a loving confirmation.\n\nMindset: Be more committed to the connection than you are afraid of her intensity.",
       inputs: [
         { q: "She screams: \"Get out! Leave me alone!\"", a: "\"I'll give you some space, but I'll be in the next room if you need me. I'm not leaving you.\"", bundle: 'free' },
@@ -10621,26 +10621,50 @@ const collectionsModeData = {
   masculine1: [
     {
       name: "Leading Through the Storm",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response (strategy in brackets).",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Hear the Pain, The Do-Over, and Refusing Rejection. These strategies help you maintain connection when emotions are at their peak.\nThe focus is on not being swept away by reactivity, but instead being the stable rock she can lean against.",
       inputs: [
-        { q: "She accuses you of never listening.", a: "\"I hear that you feel unheard, and that hurts me.\" (Hear the Pain)", bundle: 'pro' },
-        { q: "You notice you've just started shouting back at her.", a: "\"Sorry, can we have a do-over? I don't want us to talk to each other like this.\" (The Do-Over)", bundle: 'pro' },
-        { q: "She turns her back and walks into the bedroom mid-sentence.", a: "(Follow her calmly, sit on the edge of the bed, and show you're still there). (Refusing Rejection)", bundle: 'pro' },
-        { q: "She says you are \"just like your father.\"", a: "\"It sounds like you're really afraid I'm going to let you down.\" (Hear the Pain)", bundle: 'pro' },
+        { q: "She accuses you of never listening.", a: "\"I hear that you feel unheard, and that hurts me.\" [Hear the Pain, Not the Blame]", bundle: 'pro' },
+        { q: "You notice you've just started shouting back at her.", a: "\"Sorry, can we have a do-over? I don't want us to talk to each other like this.\" [The Do-Over]", bundle: 'pro' },
+        { q: "She turns her back and walks into the bedroom mid-sentence.", a: "(Follow her calmly, sit on the edge of the bed, and show you're still there). [Refusing the Rejection]", bundle: 'pro' },
+        { q: "She says you are \"just like your father.\"", a: "\"It sounds like you're really afraid I'm going to let you down.\" [Hear the Pain, Not the Blame]", bundle: 'pro' },
+        { q: "She yells: \"I can't stand looking at you right now! Get out!\"", a: "\"I'll give you some space, but I'll be in the next room if you need me. I'm not leaving you.\" [Refusing the Rejection]", bundle: 'pro' },
+        { q: "You realize you are starting to defend your schedule and argue.", a: "\"Can we have a do-over? I'm getting defensive when I just want to hear what's bothering you.\" [The Do-Over]", bundle: 'pro' },
+        { q: "She snaps: \"You never care about how hard my day was!\"", a: "\"I hear that you're feeling completely alone and exhausted today.\" [Hear the Pain, Not the Blame]", bundle: 'pro' },
+        { q: "She slams the door after an argument and goes quiet.", a: "(Stay where she can see you.) \"I'm not going anywhere. I'll be right here when you want me.\" [Refusing the Rejection]", bundle: 'pro' },
       ]
     },
     {
       name: "Clarity and Truth",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response (strategy in brackets).",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Narrowing the Scope and the \"When You...\" Stem. Use these to create structure and honesty in daily life.\nThe goal is to reduce her decision-making burden and increase your own transparency so she knows where you stand.",
       inputs: [
-        { q: "You are picking a movie and she can't decide.", a: "\"I'm choosing between this documentary and the comedy. What do you say?\" (Narrowing the Scope)", bundle: 'pro' },
-        { q: "You feel irritated by the tone she's using with you.", a: "\"When you use that tone, I feel criticized and I want to withdraw.\" (The \"When You...\" Stem)", bundle: 'pro' },
-        { q: "She asks what you should do for vacation next year.", a: "\"I'd love to go to the mountains, but I want to hear what you're dreaming of too.\" (Narrowing the Scope)", bundle: 'pro' },
-        { q: "You forgot to buy milk despite promising.", a: "\"I dropped the ball. I'm going to start putting these tasks on my work list from now on.\" (Responsibility/Action)", bundle: 'pro' },
+        { q: "You are picking a movie and she can't decide.", a: "\"I'm choosing between this documentary and the comedy. What do you say?\" [Narrowing the Scope]", bundle: 'pro' },
+        { q: "You feel irritated by the tone she's using with you.", a: "\"When you use that tone, I feel criticized and I want to withdraw.\" [The \"When You...\" Stem]", bundle: 'pro' },
+        { q: "She asks what you should do for vacation next year.", a: "\"I'd love to go to the mountains, but I want to hear what you're dreaming of too.\" [Narrowing the Scope]", bundle: 'pro' },
+        { q: "You forgot to buy milk despite promising.", a: "\"I dropped the ball. I'm going to start putting these tasks on my work list from now on.\" [Narrowing the Scope]", bundle: 'pro' },
+        { q: "She demands to know why you haven't booked the plumber yet.", a: "\"When you push me about the chores, I feel anxious and pressured. I'll handle it on Thursday.\" [The \"When You...\" Stem]", bundle: 'pro' },
+        { q: "You are at a restaurant and she is staring at a huge menu, overwhelmed.", a: "\"I'm choosing between the salmon and the steak. What looks good to you?\" [Narrowing the Scope]", bundle: 'pro' },
+        { q: "You notice you are hiding your frustration about her spending.", a: "\"When I see the credit card bill, I feel worried about our budget, and I want to talk about it.\" [The \"When You...\" Stem]", bundle: 'pro' },
+        { q: "She asks: \"What do you want to do for dinner tonight?\"", a: "\"I'm choosing between getting sushi or making pasta. What's your preference?\" [Narrowing the Scope]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Own Your Frame",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Choosing between The Do-Over, The \"When You...\" Stem, and Narrowing the Scope to maintain a grounded posture during daily interactions. It works because instead of collapsing into passive niceness, you either own your clumsiness, share your inarguable truth, or provide clear options.\n\n• The Do-Over — when you have been clumsy or reactive\n• The \"When You...\" Stem — when you need to share your truth inarguably\n• Narrowing the Scope — when you need to provide structure instead of deferring\n\nThe key question is: do you need to correct a mistake, state where you stand, or drive a decision?\n\nMindset: a little healthy selfishness makes me a more stable man she can actually trust.",
+      inputs: [
+        { q: "You realize you've been lecturing her about how to handle her boss.", a: "\"Can we have a do-over? I noticed I'm trying to solve your problems instead of just being here.\" [The Do-Over]", bundle: 'pro' },
+        { q: "She asks where you want to go for your anniversary.", a: "\"I've researched these two hotels for the weekend. Which one do you prefer?\" [Narrowing the Scope]", bundle: 'pro' },
+        { q: "You feel a strong urge to please her by agreeing to an event you hate.", a: "\"When you ask me to go to that event, I feel pressured to say yes, but my truth is I need to rest.\" [The \"When You...\" Stem]", bundle: 'pro' },
+        { q: "You accidentally made a sarcastic joke that hurt her feelings.", a: "\"I'm sorry, that was clumsy of me. Can we start over? I want to say that properly.\" [The Do-Over]", bundle: 'pro' },
+        { q: "She is overwhelmed by too many choices for the kids' weekend activities.", a: "\"Let's choose between the park on Saturday or the museum on Sunday. What do you say?\" [Narrowing the Scope]", bundle: 'pro' },
+        { q: "She hasn't responded to your text in hours and you feel anxious.", a: "\"When I don't hear back from you, I notice I start thinking you're mad at me, and I feel tense.\" [The \"When You...\" Stem]", bundle: 'pro' },
+        { q: "You notice your voice is becoming harsh and demanding.", a: "\"Can I get a do-over? My tone came out really harsh just now, and that's not what I intended.\" [The Do-Over]", bundle: 'pro' },
+        { q: "She asks for your opinion on a minor decision she is obsessing over.", a: "\"I like the blue one better. That's my preference.\" [Narrowing the Scope]", bundle: 'pro' },
       ]
     },
   ],
