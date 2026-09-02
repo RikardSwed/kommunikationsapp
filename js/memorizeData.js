@@ -3691,7 +3691,7 @@ const memorizeCollections = {
   ],
   masculine3: [
     {
-      name: "Depth and Embodiment",
+      name: "Core Idea",
       guideFront: "A question about the method.",
       guideBack: "The answer.",
       description: "The advanced mechanics of training the nervous system and leading through vulnerability.",
@@ -3702,6 +3702,134 @@ const memorizeCollections = {
         { q: "What is the \"Oracle\" role of the Feminine?", a: "To reflect back to the man where he is out of integrity, heart, or presence.", bundle: 'pro' },
         { q: "How do you decouple \"wanting\" from \"getting\"?", a: "By becoming a connoisseur of the pleasure of desire itself, regardless of the outcome.", bundle: 'pro' },
         { q: "What is \"Provocation Meditation\"?", a: "Using triggering thoughts to intentionally stoke anxiety, then practicing staying grounded while in the fire.", bundle: 'pro' },
+        { q: "What does this pack train that the earlier ones do not?", a: "What to do with your own nervous system — pausing, feeling, and slowing down — rather than what to say to her.", bundle: 'free' },
+        { q: "Why do all five strategies in this pack start inside you?", a: "Because a reactive system cannot lead. Each one settles you first, and the words follow from that.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Intentional Pause",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"The Intentional Pause\"?", a: "Requesting a temporary break in a conversation when you feel your nervous system becoming reactive.", bundle: 'free' },
+        { q: "Why does this strategy work?", a: "It prevents your reactive defenses from taking over and ensures you can return with presence.", bundle: 'free' },
+        { q: "What is the \"Reactive Override\" trigger?", a: "When you feel a massive surge of anger and want to shout back or withdraw.", bundle: 'free' },
+        { q: "What is the \"Numb and Dumb\" trigger?", a: "When you feel your mind starting to lock up, freeze, or go completely silent.", bundle: 'free' },
+        { q: "What is the watchword for the \"Intentional Pause\"?", a: "Being the \"Watcher\" who can see the drama from the outside and choose a different path.", bundle: 'free' },
+        { q: "What should you do for the first 5 seconds of an urge to storm out?", a: "Stay in the room for at least 5 seconds before calmly declaring a pause.", bundle: 'pro' },
+        { q: "How does a pause help your partner?", a: "It creates a safe container where the intensity can clear instead of turning toxic.", bundle: 'pro' },
+        { q: "What is the goal when returning from a pause?", a: "Re-engaging with full presence and speaking from your heartspace.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Direct Sexual Initiation",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"Direct Sexual Initiation\"?", a: "Proactively and honestly owning your sexual desire as an act of leadership.", bundle: 'free' },
+        { q: "Why does this strategy work?", a: "Because her Feminine energy relaxes when she knows you have a clear direction and desire.", bundle: 'free' },
+        { q: "What is the \"Seduction Date\" variant?", a: "Proposing a specific, pre-planned time for intimacy so she can warm up mentally.", bundle: 'free' },
+        { q: "What is the \"Direct Command\" variant?", a: "Using mild dominance to set the frame, such as telling her to get in the shower.", bundle: 'free' },
+        { q: "What is the \"friend\" energy warning?", a: "If you are desexualized for weeks, you must break the pattern with bold, eye-contact initiation.", bundle: 'free' },
+        { q: "Why is \"seeking permission\" a mistake in the bedroom?", a: "Because it communicates anxiety and dependency, which instantly depolarizes attraction.", bundle: 'pro' },
+        { q: "How does owning your sexuality affect her?", a: "The more you unabashedly own your desire, the more uninhibited she can become.", bundle: 'pro' },
+        { q: "What are the two core requirements for a woman to open sexually?", a: "That the conditions exist for her to feel safe, and that she is warmed up slowly.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sharing the Fear Underneath",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"Sharing the Fear Underneath\"?", a: "Identifying the vulnerable fear or need fueling your anger and sharing it directly.", bundle: 'free' },
+        { q: "Why does this strategy work?", a: "It creates an inarguable statement that stops defensiveness and invites heart connection.", bundle: 'free' },
+        { q: "What is the \"Rejection/Abandonment\" underlying fear?", a: "The subconscious worry that her anger or withdrawal means she is leaving you.", bundle: 'free' },
+        { q: "What is the \"Inadequacy\" underlying fear?", a: "The subconscious worry that you are not \"man enough\" or competent to lead.", bundle: 'free' },
+        { q: "What sentence stem can you use to share vulnerability?", a: "\"When you [observation], it makes me feel [emotion] in my body.\"", bundle: 'free' },
+        { q: "What separates sharing a fear from complaining about it?", a: "A share ends. A complaint waits for her to do something about it.", bundle: 'pro' },
+        { q: "What does a Masculine man do with his raw pain?", a: "He shares it and he stops, bearing the pain himself without demanding she fix it.", bundle: 'pro' },
+        { q: "How does vulnerable sharing affect an emotional partner?", a: "It bypasses her defenses, halts her accusations, and opens up her compassion.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Slowing Down the Sequence",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"Slowing Down the Sequence\"?", a: "Meditatively slowing down every physical and energetic movement during intimacy.", bundle: 'free' },
+        { q: "Why does this strategy work?", a: "The Feminine physiology requires time and slow, steady pressure to feel safe enough to open.", bundle: 'free' },
+        { q: "What is the \"Slow Body Movements\" technique?", a: "Approaching, rolling, or changing positions in bed with three times slower movement.", bundle: 'free' },
+        { q: "What is the \"Synchronized Breathing\" technique?", a: "Using slow, audible belly breaths to synchronize your nervous systems.", bundle: 'free' },
+        { q: "What is the primary complaint of women in the sexual arena?", a: "That men go too fast—they grope or initiate without slow energetic warming.", bundle: 'free' },
+        { q: "What are the tools of \"Sensation Play\"?", a: "Fists on the sacrum, drumming, spanking, or hair pulling to bring her into her body.", bundle: 'pro' },
+        { q: "Why does \"Restraint\" (swaddling) induce surrender?", a: "Because constricting her movement takes away choice, which can make her feel safe.", bundle: 'pro' },
+        { q: "How does \"Dirty Talk\" help polarity?", a: "It connects your spoken words to your gut-level desire, establishing your confidence and command.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Heartful \"Ouch\"",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"The Heartful 'Ouch'\"?", a: "Responding to a verbal attack by dropping into your heart and simply naming the pain.", bundle: 'free' },
+        { q: "Why does this strategy work?", a: "It proves you are present and impacted, which is far more powerful than an intellectual rebuttal.", bundle: 'free' },
+        { q: "What is \"The Simple Ouch\" variant?", a: "A one-word acknowledgment of impact that halts her momentum without starting an argument.", bundle: 'free' },
+        { q: "What is \"The Invitation to Heart\" variant?", a: "Calling her back to respect and heart space: \"I want to hear you, but I don't want to be insulted.\"", bundle: 'free' },
+        { q: "Why do men naturally defend and explain?", a: "Because the Masculine wiring wants to do it right, and her unhappiness feels like proof of failure.", bundle: 'free' },
+        { q: "What is the \"being love\" commitment?", a: "Choosing to remain in your heart and contain the storm even when she temporarily cannot.", bundle: 'pro' },
+        { q: "How does getting defensive affect her nervous system?", a: "It signals that you are reactive and unable to handle her emotional intensity.", bundle: 'pro' },
+        { q: "What does \"The Heartful 'Ouch'\" demonstrate to her?", a: "That you have a strong spine but keep your heart wide open to her under pressure.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• The Heart and the Fire — peak conflict: do you pause to settle, voice the fear underneath, or name the ouch?\n• Leading the Polarity — intimate connection: do you initiate sex directly or slow down the sequence?\n• Settle and Connect — daily friction: do you request a pause, share vulnerability, or meet attacks with impact?\n\nOne question decides nearly all of it: what did the other person just do?",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "The Heart and the Fire, Leading the Polarity, and Settle and Connect.", bundle: 'pro' },
+        { q: "What is the core purpose of \"The Heart and the Fire\"?", a: "To maintain grounded presence during high-stakes conflict when the urge to run or fight is strongest.", bundle: 'pro' },
+        { q: "What does \"Leading the Polarity\" teach you to manage?", a: "Seduction and sexual leadership, restoring the physical juice through bold, slowed-down presence.", bundle: 'pro' },
+        { q: "What is the focus of \"Settle and Connect\"?", a: "Navigating daily friction with vulnerable truth and emotional regulation instead of defensive debates.", bundle: 'pro' },
+        { q: "When do you choose \"The Heartful 'Ouch'\" over \"Sharing the Fear Underneath\"?", a: "When she launches a direct, shaming verbal attack and you need to show she has impacted you.", bundle: 'pro' },
+        { q: "When do you choose \"The Intentional Pause\" over \"The Heartful 'Ouch'\"?", a: "When you feel your own system getting so reactive that you are about to shout or withdraw.", bundle: 'pro' },
+        { q: "Why does \"Settle and Connect\" include \"The Intentional Pause\"?", a: "Because stopping the reactive loop is the first step to protecting the container.", bundle: 'pro' },
+        { q: "What is the default when you are stuck on which collection strategy to use?", a: "Direct, vulnerable truth—sharing the fear underneath cleanly without demands.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. The Brave Lead — The Intentional Pause → Sharing the Fear Underneath → The Heartful \"Ouch\" → Direct Sexual Initiation\n2. Settle and Share — The Intentional Pause → Sharing the Fear Underneath → The Heartful \"Ouch\"\n3. The Intimate Lead — Direct Sexual Initiation → Slowing Down the Sequence\n\nIn each one, the order of the steps is what re-establishes safety and polarity.",
+      cards: [
+        { q: "What are the three sequences in this pack?", a: "The Brave Lead, Settle and Share, and The Intimate Lead.", bundle: 'pro' },
+        { q: "What is the order in \"The Brave Lead\"?", a: "Intentional Pause, then Sharing the Fear, then Heartful \"Ouch\", and finally Direct Initiation.", bundle: 'pro' },
+        { q: "Why does \"The Intentional Pause\" come first in \"The Brave Lead\"?", a: "Because you must regulate your own system before you can speak your vulnerable truth cleanly.", bundle: 'pro' },
+        { q: "What is the order in \"Settle and Share\"?", a: "The Intentional Pause, then Sharing the Fear Underneath, and finally The Heartful \"Ouch\".", bundle: 'pro' },
+        { q: "Why does \"Sharing the Fear Underneath\" precede \"The Heartful 'Ouch'\" in \"Settle and Share\"?", a: "Because expressing your raw vulnerability first is what creates the container for her to soften.", bundle: 'pro' },
+        { q: "What is the order in \"The Intimate Lead\"?", a: "Direct Sexual Initiation, then Slowing Down the Sequence.", bundle: 'pro' },
+        { q: "What does \"The Intimate Lead\" train you to do?", a: "Take bold sexual charge of the bedroom while immediately slowing down the pace to build arousal.", bundle: 'pro' },
+        { q: "What does \"Settle and Share\" train you to do?", a: "Turn a toxic shouting match around by stopping the fight and sharing your unarguable heart.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenges to master in this pack:\n\n• High Intensity Attacks — when she goes for the jugular in conflict\n• The Silent Shutdown — when she retreats into cold silence or withdrawal\n• Sexual Rejections — when she declines intimacy or tests your resolve\n• Validation Traps — when you get caught in approval-seeking loops\n• Insults and Shaming — when her emotional expression becomes toxic\n\nEach category has its own way of testing your Masculine solidity.",
+      cards: [
+        { q: "What are the five challenges in this pack?", a: "High Intensity Attacks, The Silent Shutdown, Sexual Rejections, Validation Traps, and Insults and Shaming.", bundle: 'pro' },
+        { q: "How do you handle \"The Silent Shutdown\"?", a: "By staying present and voicing your fear underneath instead of giving her the cold shoulder back.", bundle: 'pro' },
+        { q: "What is the core danger during \"Sexual Rejections\"?", a: "Collapsing into a whiny nice guy who begs for permission or retreats in passive anger.", bundle: 'pro' },
+        { q: "What is the best strategy to resolve \"High Intensity Attacks\"?", a: "Applying \"The Intentional Pause\" to regulate yourself and \"The Heartful 'Ouch'\" to name the impact.", bundle: 'pro' },
+        { q: "How do you handle \"Validation Traps\"?", a: "By recognizing your fear of her disapproval and sharing the fear underneath without demanding she change.", bundle: 'pro' },
+        { q: "How do you escape \"Insults and Shaming\"?", a: "By ignoring her toxic story to meet her underlying pain, while holding a firm boundary on respect.", bundle: 'pro' },
+        { q: "What is she really seeking when she throws these challenges at you?", a: "Proof that you are a solid rock who can contain her intensity and lead her back to connection.", bundle: 'pro' },
+        { q: "Which strategy handles both \"The Silent Shutdown\" and \"Insults and Shaming\"?", a: "The Heartful \"Ouch\"—staying present and vulnerable instead of getting defensive.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "These are the mindsets you practise in this pack:\n\n• Fear is just Resistance — fear is your subconscious resisting a possibility\n• The Oracle of Heart — seeing her emotional storm as intuitive data about your presence\n• Sexual Desire — owning your desire is a gift of polarity, not a burden on her\n• Vulnerability — dropping into your heart is the ultimate display of grounding\n• Slowing Down — decelerating physical movement builds the safety her body needs\n\nIn every one, the belief that gets in the way feels like safety from the inside.",
+      cards: [
+        { q: "What are the five mindsets in this pack?", a: "Fear is just Resistance, The Oracle of Heart, Sexual Desire, Vulnerability, and Slowing Down.", bundle: 'pro' },
+        { q: "What does \"Fear is just Resistance\" teach you?", a: "To challenge the belief that her anger or rejection is unsurvivable.", bundle: 'pro' },
+        { q: "What does \"The Oracle of Heart\" teach you?", a: "To stop defending and look for the kernel of truth in her complaints.", bundle: 'pro' },
+        { q: "What is the trap of the \"Sexual Desire\" mindset?", a: "Making tentative, indirect bids for sex to avoid the ego-pain of a direct \"No.\"", bundle: 'pro' },
+        { q: "What is the truth behind the \"Vulnerability\" mindset?", a: "That sharing your raw fear without demands is a position of immense power.", bundle: 'pro' },
+        { q: "What is the rule of the \"Slowing Down\" mindset?", a: "Move her with control, not force or speed; let her Feminine warm up slowly.", bundle: 'pro' },
+        { q: "Why is \"seeking permission\" a mistake?", a: "It turns your partner into a surrogate mother and makes her lose respect for your spine.", bundle: 'pro' },
+        { q: "What do all five of these beliefs have in common?", a: "Each one is a way of not being present — speeding up, hiding, defending — and each one feels like protection from the inside.", bundle: 'pro' },
       ]
     },
   ],

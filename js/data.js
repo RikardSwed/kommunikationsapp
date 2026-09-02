@@ -10725,9 +10725,14 @@ const collectionsModeData = {
       guideBack: "A possible response (strategy in brackets).",
       description: "Intentional Pause, Sharing the Fear, and the Heartful \"Ouch.\" These are for the \"fire\" of interpersonal conflict.\nThey help you stay grounded when the stakes are high and the urge to run or fight is at its peak.",
       inputs: [
-        { q: "She says something that strikes your deepest insecurity.", a: "\"Ouch. When you say that, I feel a lot of shame and fear.\" (Ouch / Fear Underneath)", bundle: 'pro' },
-        { q: "You are so angry you feel your rants becoming toxic.", a: "\"I need an intentional pause. I'm getting reactive and I want to hear you.\" (Intentional Pause)", bundle: 'pro' },
-        { q: "She asks \"Why are you being so weird?\" after a fight.", a: "\"I'm feeling scared that you're going to leave me after that argument.\" (Fear Underneath)", bundle: 'pro' },
+        { q: "She says something that strikes your deepest insecurity.", a: "\"Ouch. When you say that, I feel a lot of shame and fear.\" [The Heartful \"Ouch\"]", bundle: 'pro' },
+        { q: "You are so angry you feel your rants becoming toxic.", a: "\"I need an intentional pause. I'm getting reactive and I want to hear you.\" [The Intentional Pause]", bundle: 'pro' },
+        { q: "She asks \"Why are you being so weird?\" after a fight.", a: "\"I'm feeling scared that you're going to leave me after that argument.\" [Sharing the Fear Underneath]", bundle: 'pro' },
+        { q: "She brings up an old mistake in front of your friends to win an argument.", a: "\"Ouch. That really hurts to hear in front of others.\" [The Heartful \"Ouch\"]", bundle: 'pro' },
+        { q: "You feel a massive wave of panic because she is ignoring you.", a: "\"Baby, can we pause for a second? I feel my nervous system getting reactive.\" [The Intentional Pause]", bundle: 'pro' },
+        { q: "She yells that you are useless during a heated argument about chores.", a: "\"I want to hear your frustration, but I need ten minutes to settle my system.\" [The Intentional Pause]", bundle: 'pro' },
+        { q: "You find yourself wanting to defend your career choices aggressively.", a: "\"When you criticize my job, I feel anxious that I'm not enough for you.\" [Sharing the Fear Underneath]", bundle: 'pro' },
+        { q: "She snaps: \"You never help with anything!\"", a: "\"Ouch. That hits a really sore spot for me.\" [The Heartful \"Ouch\"]", bundle: 'pro' },
       ]
     },
     {
@@ -10736,9 +10741,30 @@ const collectionsModeData = {
       guideBack: "A possible response (strategy in brackets).",
       description: "Direct Sexual Initiation and Slowing Down the Sequence. Use these to restore the \"juice\" and depth in your intimacy.\nLeadership in the bedroom is the gift of direction that allows her to surrender and open.",
       inputs: [
-        { q: "You want to invite her into sexuality but the energy is \"flat.\"", a: "\"Baby, come here. Breathe with me for two minutes.\" (Slowing Down / Presence)", bundle: 'pro' },
-        { q: "You’ve been \"pleasing\" her all day and want to step back into your power.", a: "\"Put that dress on. I'm taking you to that new spot tonight.\" (Direct Initiation / Structure)", bundle: 'pro' },
+        { q: "You want to invite her into sexuality but the energy is \"flat.\"", a: "\"Baby, come here. Breathe with me for two minutes.\" [Slowing Down the Sequence]", bundle: 'pro' },
+        { q: "You’ve been \"pleasing\" her all day and want to step back into your power.", a: "\"Put that dress on. I'm taking you to that new spot tonight.\" [Direct Sexual Initiation]", bundle: 'pro' },
         { q: "You are in bed together and want to deepen the arousal.", a: "(Intentionally move three times slower and maintain steady eye contact). (Slowing Down)", bundle: 'pro' },
+        { q: "It is Saturday afternoon and you want to lead her into the bedroom.", a: "\"Baby, let's get in bed together at 1 p.m. today.\" [Direct Sexual Initiation]", bundle: 'pro' },
+        { q: "She is highly stressed from work and looking tense.", a: "\"I've created a container for us tonight—no world talk allowed.\" [Direct Sexual Initiation]", bundle: 'pro' },
+        { q: "You are massaging her back and want to slow the momentum.", a: "(Use a flat, open hand and move three times slower than feels natural). [Slowing Down the Sequence]", bundle: 'pro' },
+        { q: "She is looking stunning and you want to initiate intimacy.", a: "\"You look incredible. I'm going to take my time with you tonight.\" [Direct Sexual Initiation]", bundle: 'pro' },
+        { q: "You are in an embrace and want to harmonize your systems.", a: "\"Breathe with me, Love. Just follow my breath.\" [Slowing Down the Sequence]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Settle and Connect",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "The Intentional Pause, Sharing the Fear Underneath, and The Heartful \"Ouch\". These are your tools for navigating the fire of relationship conflict. By prioritizing emotional regulation and vulnerability over defense, you create the safety she needs to drop her armor.\n\n• The Intentional Pause — step back when reactivity rises\n• Sharing the Fear Underneath — speak the raw, unarguable truth\n• The Heartful \"Ouch\" — meet attacks with grounded impact\n\nThe key question is: are you trying to win the argument, or are you prioritizing the connection?\n\nMindset: choosing to be love even when she temporarily cannot.",
+      inputs: [
+        { q: "She blasts you with anger about a broken promise.", a: "\"Baby, I'm getting triggered. Let's pause for ten minutes so I can stay present with you.\" [The Intentional Pause]", bundle: 'pro' },
+        { q: "You notice your voice pitch rising and your body clenching during her rant.", a: "\"I need a do-over, but first I need a three-minute pause to settle.\" [The Intentional Pause]", bundle: 'pro' },
+        { q: "She makes a sarcastic comment about your parenting style.", a: "\"When you challenge me like that, I feel like you don't trust my lead, and that's hard.\" [Sharing the Fear Underneath]", bundle: 'pro' },
+        { q: "You feel the nice guy urge to hide a mistake you made.", a: "\"I'm afraid to tell you this because I'm scared you'll be disappointed in me.\" [Sharing the Fear Underneath]", bundle: 'pro' },
+        { q: "She insults your character during a disagreement.", a: "\"That hurts. I'm interested in your pain, but I don't want to be insulted.\" [The Heartful \"Ouch\"]", bundle: 'pro' },
+        { q: "She mocks your parent's advice in an argument.", a: "\"Ouch. That strikes a deep nerve for me.\" [The Heartful \"Ouch\"]", bundle: 'pro' },
+        { q: "You feel a massive urge to shout back at her criticism.", a: "\"Baby, can we pause for a second? I feel myself getting reactive.\" [The Intentional Pause]", bundle: 'pro' },
+        { q: "She is cold and distant, and you feel the panic of abandonment.", a: "\"I'm pulling away because I'm feeling hurt and I don't feel like I have your support.\" [Sharing the Fear Underneath]", bundle: 'pro' },
       ]
     },
   ],

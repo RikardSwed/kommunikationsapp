@@ -2177,6 +2177,11 @@ const mindsetCollections = {
         { q: "I'm afraid she'll leave me if I set this boundary.", a: "\"She might leave. It would be painful, but I will survive and be fine.\"", bundle: 'pro' },
         { q: "I'm scared to initiate sex because she might say no.", a: "\"Rejection doesn't define me. I can want what I want and be okay with her 'No'.\"", bundle: 'pro' },
         { q: "I'm afraid of the intensity of her anger.", a: "\"Her anger is just energy. I can withstand this fire and die with dignity in this visualization.\"", bundle: 'pro' },
+        { q: "I'm terrified of telling her about my financial mistake.", a: "She might be disappointed, but sharing my truth is how I maintain my integrity.", bundle: 'pro' },
+        { q: "I feel anxious when we have a long silence in the bedroom.", a: "The silence is a container for presence, not a sign of failure. Settle my system.", bundle: 'pro' },
+        { q: "I'm scared she'll laugh at me if I try a direct initiation line.", a: "Owning my desire is my job; how she receives it is hers. I will stand strong.", bundle: 'pro' },
+        { q: "I feel panic when she slams the door and goes silent.", a: "Her shutdown is just weather. I don't need to fix it immediately to be okay.", bundle: 'pro' },
+        { q: "I'm afraid to slow down our intimacy because I might lose my erection.", a: "My erection is not the goal. Staying connected in my body is where true pleasure lives.", bundle: 'pro' },
       ]
     },
     {
@@ -2188,6 +2193,59 @@ const mindsetCollections = {
         { q: "She's being \"crazy\" and illogical again.", a: "\"What is the kernel of truth here? Where have I stopped being present or leading her?\"", bundle: 'pro' },
         { q: "I feel the urge to \"Fix the Facts.\"", a: "\"Feelings first, facts later. Logic is for work; heart is for her.\"", bundle: 'pro' },
         { q: "She is complaining about a \"small thing\" I forgot.", a: "\"To her, this is about care and protection, not logistics. I'll hear the pain, not the blame.\"", bundle: 'pro' },
+        { q: "She complains that I didn't check in on her sick mother.", a: "She is reflecting that she doesn't feel top of mind for me. I will track her world better.", bundle: 'pro' },
+        { q: "She says we never spend real quality time together.", a: "She senses my lack of focus and attention. I need to tighten up on my presence.", bundle: 'pro' },
+        { q: "She yells that she has to do everything around the house.", a: "She feels lonely and unpartnered. I will bring my own ideas and structure to the table.", bundle: 'pro' },
+        { q: "She criticizes my driving when we are lost.", a: "She is feeling unsafe in my lead. I will hold space for her anxiety and settle.", bundle: 'pro' },
+        { q: "She is snapping at me about a minor logistical detail.", a: "She is venting her deeper anxiety. I will ignore the blame to meet her underlying pain.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sexual Desire",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"I shouldn't initiate sex directly because she might feel pressured, or she might reject me.\"\n\n**What is true instead:** owning your sexual desire cleanly is a gift of polarity and structure, not a burden you place on her.\n\n**Why it feels right:** make tentative, indirect bids because you protect your ego from direct rejection and avoid conflict.\n\n**What it costs:** her respect, leaving her to drift in indecisiveness and forcing her into her Masculine energy.\n\nMindset: my desire is a gift of structure and polarity.",
+      inputs: [
+        { q: "I should wait for her to signal she is in the mood before I initiate.", a: "A woman can't follow where I don't lead. I will own my desire boldly today.", bundle: 'pro' },
+        { q: "If I state my sexual longing directly, she'll think I'm being selfish.", a: "Women want to be loved and led. Stating my desire clearly settles her nervous system.", bundle: 'pro' },
+        { q: "I feel a lot of shame about wanting sex more than she does.", a: "My desire is clean and Masculine. I can want what I want without needing her permission.", bundle: 'pro' },
+        { q: "I want to ask \"Can we have sex tonight?\" to feel safe.", a: "Asking for permission is a pleaser habit. I will propose a Seduction Date instead.", bundle: 'pro' },
+        { q: "I feel like a predator for wanting to touch her naked body.", a: "Unabashedly owning my sexuality is what allows her to relax into her own wild nature.", bundle: 'pro' },
+        { q: "I'm tempted to do chores just to earn sex later.", a: "Choreplay is a covert contract that kills polarity. I do chores for myself, not for sex.", bundle: 'pro' },
+        { q: "I should accept a low-sex relationship because she is busy.", a: "I have a right to a healthy sex life. I will take responsibility for leading us back to pleasure.", bundle: 'pro' },
+        { q: "I feel awkward using a direct command line to lead her.", a: "Taking sexual charge is my gift of leadership to her. I will trust my instincts.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Vulnerability",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If I reveal my real fear or shame, she'll see me as weak and lose all respect for me.\"\n\n**What is true instead:** dropping into your heart and sharing the truth underneath is the ultimate display of grounding and power.\n\n**Why it feels right:** it feels safer to stay in your logical, defensive mind and pretend 'I'm fine' to protect your good-guy self-image.\n\n**What it costs:** connection, leaving her feeling catastrophically unmet and abandoned in her pain.\n\nMindset: a strong man knows and shares his emotions without needing anyone else to change.",
+      inputs: [
+        { q: "I should hide my fear of being abandoned to look strong.", a: "Sharing my fear underneath is an act of courage that opens her heart to connect.", bundle: 'pro' },
+        { q: "I need to explain my good intentions immediately so she doesn't think I'm bad.", a: "My scramble to explain comes from my own anxiety. I will tolerate the hurt and listen.", bundle: 'pro' },
+        { q: "I must hide my career insecurities so she trusts my lead.", a: "Hiding the real me behind a false self precludes true honesty. I will own my shame.", bundle: 'pro' },
+        { q: "If I share my pain, I am being a whiny, needy victim.", a: "If I need her to change to make my pain stop, I am weak. If I just share and stop, I am powerful.", bundle: 'pro' },
+        { q: "I want to use a 'Fuck You' silence to make her feel guilty.", a: "Withdrawal is a boy's defense mechanism. A Masculine leader stays in the fire.", bundle: 'pro' },
+        { q: "I feel like she is doing this to me and she is the one who has to fix it.", a: "I am not a victim. I may not be the problem, but my leadership is the solution.", bundle: 'pro' },
+        { q: "I should just suppress my anger and keep things peaceful.", a: "Suppressing my emotions leaks out as toxic anxiety. I will welcome and share my anger cleanly.", bundle: 'pro' },
+        { q: "I'm afraid that sharing my hurt makes me look like a child.", a: "Pretending 'I'm fine' is the path of a child. Standing strong in my truth is the path of a man.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Slowing Down",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"I need to rush to the goal of sex before the mood evaporates or she changes her mind.\"\n\n**What is true instead:** decelerating every physical movement during intimacy builds the emotional safety her Feminine physiology requires to open.\n\n**Why it feels right:** it feels right to move fast because your male physiology turns on instantly and seeks immediate physical release.\n\n**What it costs:** her trust, leaving her feeling rushed, objectified, and physically closed to you.\n\nMindset: move her with control, not force or speed.",
+      inputs: [
+        { q: "I want to go straight to yoni stimulation because we are in bed.", a: "The Feminine can't be rushed. I will take my time and warm her up slowly.", bundle: 'pro' },
+        { q: "I feel the urge to speed up my touch because she sighed.", a: "I will slow my hands to three times slower than natural to deepen the connection.", bundle: 'pro' },
+        { q: "I'm afraid that slowing down will kill her arousal.", a: "Slowing down is what creates the container for her to relax and go wild. Breathe.", bundle: 'pro' },
+        { q: "I should focus on achieving my orgasm as fast as possible.", a: "I will get out of my head and stay attuned to her body and her breath.", bundle: 'pro' },
+        { q: "I want to ask \"Is this okay?\" every time I move.", a: "I will trust my instincts and lead, adjusting immediately if I feel her retract.", bundle: 'pro' },
+        { q: "I feel the urge to move rapidly when her body starts to open.", a: "Her opening requires slow, steady pressure. I will move her with control.", bundle: 'pro' },
+        { q: "I want to use music as a forced-Pavlovian cue for sex.", a: "Seduction dates and heart connection are what open her, not mechanical tricks.", bundle: 'pro' },
+        { q: "I feel impatient with her slow physical warming process.", a: "Her vulnerability is exposed in sex. I will approach quietly as a doe to the river.", bundle: 'pro' },
       ]
     },
   ],

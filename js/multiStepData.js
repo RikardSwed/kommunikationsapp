@@ -4053,6 +4053,93 @@ const multiStepCollections = {
             { front: "Direct Initiation — (Later that evening, the air is clear)", back: "\"I've missed you today. Come here and let's just breathe together.\"" },
           ]
         },
+        {
+          bundle: 'pro',
+          situation: "You are getting ready for your anniversary dinner, but you start fighting about finances. She screams that you are irresponsible.",
+          steps: [
+            { front: "The Intentional Pause — you feel a massive wave of anger.", back: "\"Baby, I'm getting triggered. Let's pause for ten minutes so I can stay present with you.\"" },
+            { front: "Sharing the Fear Underneath — you meet her in the living room after ten minutes.", back: "\"When you call me irresponsible, I feel a lot of shame. I worry that you think less of me.\"" },
+            { front: "The Heartful \"Ouch\" — she snaps back defensively that she has to worry about everything.", back: "\"Ouch. That really hurts to hear.\"" },
+            { front: "Direct Sexual Initiation — later that night, the connection is restored.", back: "\"I've missed your body. Come here.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You are packing the car for a trip, but she is highly anxious and snaps that you always ruin their holidays.",
+          steps: [
+            { front: "The Intentional Pause — you notice yourself clenching.", back: "\"I want to be your rock, but I need to breathe for a minute. Can we take a short break?\"" },
+            { front: "Sharing the Fear Underneath — you re-engage on the porch.", back: "\"When you say I ruin everything, I feel like you don't trust my lead, and that's hard for me.\"" },
+            { front: "The Heartful \"Ouch\" — she dismisses you coldly.", back: "\"That comment hurt me. I'm going to take a minute so I don't react.\"" },
+            { front: "Direct Sexual Initiation — that evening at the cabin, the tension has melted.", back: "\"You look absolutely hot tonight. Put your phone away—no world talk allowed.\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Settle and Share",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
+      description: "The Intentional Pause → Sharing the Fear Underneath → The Heartful \"Ouch\". This sequence trains you to halt escalating conflict, ground your nervous system, and re-establish heart connection through vulnerable truth.\n\n1. The Intentional Pause — step back to stop the reactive loop\n2. Sharing the Fear Underneath — speak from your heartspace about what is actually threatened\n3. The Heartful \"Ouch\" — acknowledge her attacks without defending or shut-downs\n\nWhy just this order: you must stop the storm before you can speak your truth, and you must own your vulnerability before you can receive her feedback cleanly. What people do instead: they argue, shout, and withdraw into cold silence, which breaks trust. Mindset: a strong man rules his emotional world by staying present.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You come home to a chaotic living room. She is exhausted and starts screaming that you are lazy and never help.",
+          steps: [
+            { front: "The Intentional Pause — you feel the urge to shout back.", back: "\"Baby, I'm getting triggered. Let's pause for ten minutes so I can stay present with you.\"" },
+            { front: "Sharing the Fear Underneath — you re-engage in the kitchen.", back: "\"When you say I never help, I feel anxious that I'm failing as your partner.\"" },
+            { front: "The Heartful \"Ouch\" — she snaps that she's just tired of doing everything.", back: "\"Ouch. I hear how much you're hurting right now.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You are discussing a large purchase, but she gets highly emotional and accuses you of only caring about your own hobbies.",
+          steps: [
+            { front: "The Intentional Pause — you feel yourself clenching up.", back: "\"I'm losing my presence. Let's take a short break and try again in ten minutes.\"" },
+            { front: "Sharing the Fear Underneath — you sit down close to her.", back: "\"When we fight about money, I feel anxious about our security, and I worry I can't provide.\"" },
+            { front: "The Heartful \"Ouch\" — she rolls her eyes and sighs heavily.", back: "\"Ouch. That hits a really sore spot for me.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "She is furious about how you disciplined your son, accusing you of being too harsh and uncaring.",
+          steps: [
+            { front: "The Intentional Pause — you feel your mind starting to lock up.", back: "\"I want to hear you, but I need ten minutes to settle my system so I don't react.\"" },
+            { front: "Sharing the Fear Underneath — you meet her in the bedroom.", back: "\"When you say I'm uncaring, I feel deeply hurt and scared that you don't respect my parenting.\"" },
+            { front: "The Heartful \"Ouch\" — she tells you that she doesn't trust your judgment.", back: "\"That really hurts to hear, Love. But I'm listening.\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "The Intimate Lead",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
+      description: "Direct Sexual Initiation → Slowing Down the Sequence. This sequence trains you to take bold sexual charge while decelerating the interaction to build safety and deep energetic arousal.\n\n1. Direct Sexual Initiation — own your desire cleanly without tentative begging\n2. Slowing Down the Sequence — move three times slower than natural to build safety\n\nWhy just this order: you must assert your direction first so she knows where you are heading, and then slow down so her Feminine physiology can catch up and open. What people do instead: they grope her indirectly, seek permission, and then rush straight to intercourse. Mindset: my desire is a gift of structure and polarity.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "The relationship has felt like a \"roommate\" dynamic for weeks. You decide to take bold action on a Sunday afternoon.",
+          steps: [
+            { front: "Direct Sexual Initiation — you hold eye contact and take her hand.", back: "\"I've missed your body, Love. Let's get in bed together right now.\"" },
+            { front: "Slowing Down the Sequence — you are on the bed and begin to embrace her.", back: "(Approach her lips three times slower than usual, letting the tension build)." },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You are out at a nice restaurant. She looks incredibly beautiful, and you want to build sexual tension.",
+          steps: [
+            { front: "Direct Sexual Initiation — you look her in the eye across the table.", back: "\"You look absolutely hot in that dress. I can't wait to get you home and have my way with you.\"" },
+            { front: "Slowing Down the Sequence — you arrive home and pull her close.", back: "(Touch her face with slow, steady pressure, moving your hands at a crawl)." },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "She is stressed after a long day at the office, endlessly planning her tomorrow. You decide to lead her into her body.",
+          steps: [
+            { front: "Direct Sexual Initiation — you gently take her phone from her hands.", back: "\"Put your phone away. I've created a container for us tonight—no world talk allowed.\"" },
+            { front: "Slowing Down the Sequence — you invite her to lay down.", back: "(Use a flat, open hand to massage her shoulders, moving three times slower than natural)." },
+          ]
+        },
       ]
     },
   ],
