@@ -3846,6 +3846,148 @@ const memorizeCollections = {
         { q: "What is \"Still-Facing\" in a relationship?", a: "When a partner shuts down or gives no reaction, creating a deep sense of disconnection and threat..", bundle: 'pro' },
         { q: "What is a \"Reality Test\"?", a: "Using your physical environment to realize you are safe, decoupling from internal anxiety static..", bundle: 'pro' },
         { q: "Why is \"Fixing the Facts\" a failure of leadership?", a: "Because it's an intellectual response to an emotional need—it fails to meet her heart..", bundle: 'pro' },
+        { q: "What is Viktor Frankl's quote about the space?", a: "\"Between stimulus and response there is a space. In that space lies our power to choose.\"", bundle: 'pro' },
+        { q: "What defines \"second-order change\"?", a: "Consciously changing the underlying dynamic of a relationship rather than just targeting behavior.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Core Idea",
+      description: "The core principles of restoring your Masculine core to inspire trust, lust, and devotion in a strong woman.\n\n• Respond vs. React — choosing your response rather than living reactively\n• Provide Structure — reducing uncertainty and simplifying decisions\n• Create Safety — providing physical, financial, and emotional safety\n\nMindset: things will be different only when you are different; you are the solution.",
+      cards: [
+        { q: "What does this pack add to the three elements of the blueprint?", a: "The part underneath them — the anxiety that makes a man react instead of respond in the first place.", bundle: 'free' },
+        { q: "Why is anxiety the root of every non-Masculine behaviour?", a: "Because contraction, collapse, defence, distraction and blame are all ways of making an unpleasant feeling stop.", bundle: 'free' },
+        { q: "What is \"second-order change\" in this pack?", a: "Changing what happens inside you, rather than changing what you say. The behaviour follows.", bundle: 'free' },
+        { q: "Why is a woman's nagging actually a positive signal?", a: "It is an indicator that she is still \"in\" and wants you to step up; silence means she has given up.", bundle: 'free' },
+        { q: "Who is responsible for resolving relationship conflict?", a: "You are. Whether or not you are the problem, your Masculine leadership is the solution.", bundle: 'free' },
+        { q: "What does \"frame\" mean in a relationship?", a: "The decision-making structure and boundaries; in the absence of yours, she must provide her own.", bundle: 'pro' },
+        { q: "What is the primary benefit of gender equality for Polarity?", a: "It allows Polarity to emerge by choice rather than compulsion.", bundle: 'pro' },
+        { q: "What happens to a woman when she has to make all the decisions?", a: "She is forced into her Masculine energy, which leads to irritability and sexual closure.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Sign-Seeking Pause",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"The Sign-Seeking Pause\"?", a: "Noticing when you are \"leaning in\" for approval and intentionally pausing to regain grounding.", bundle: 'free' },
+        { q: "What are you trying to release during this pause?", a: "Your subconscious need for her immediate approval, agreement, or softening.", bundle: 'free' },
+        { q: "What does \"leaning in\" energetically mean?", a: "Trying too hard in a conversation to seek validation and make her like you.", bundle: 'free' },
+        { q: "What is the primary indicator of a Sign-Seeking impulse?", a: "Anxiously scanning her face for signs of her reaction after you speak or act.", bundle: 'free' },
+        { q: "How does this strategy build your Masculine core?", a: "It decouples your emotional well-being from her immediate, transient reactions.", bundle: 'free' },
+        { q: "Why is being \"opinionless\" depolarizing to the Feminine?", a: "It leaves her formless and forced into her Masculine to create the structure she needs.", bundle: 'pro' },
+        { q: "What is the mindset of \"The Sign-Seeking Pause\"?", a: "Your well-being is dictated by your own values, not by her assessment of you.", bundle: 'pro' },
+        { q: "How do you handle a partner's \"still-faced\" non-reaction?", a: "Breathe and settle into the lack of expression without trying to \"fix\" or please.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Converting Anger to Protection",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"Converting Anger to Protection\"?", a: "Using the intensity of your anger to set clear, respectful boundaries instead of blaming.", bundle: 'free' },
+        { q: "Why is anger considered a Masculine ally?", a: "Because it makes you crystal clear on what you love, what you fear, and what you need to protect.", bundle: 'free' },
+        { q: "What is the typical dysfunctional reaction to anger?", a: "Blaming, shouting back, or physical and energetic contraction.", bundle: 'free' },
+        { q: "What does expressing anger with \"quiet intensity\" convey?", a: "The seriousness of your boundaries while staying cleanly connected to her.", bundle: 'free' },
+        { q: "What happens if you chronically suppress your anger?", a: "You won't be able to set boundaries, training people to disregard your needs.", bundle: 'free' },
+        { q: "What is the mindset of \"Converting Anger to Protection\"?", a: "You can feel the savagery of anger within you without acting like a savage.", bundle: 'pro' },
+        { q: "What lies underneath the surface of your anger?", a: "An underlying fear of something being threatened, and a deep relational need.", bundle: 'pro' },
+        { q: "How does sharing the underlying fear of your anger affect your partner?", a: "It bypasses her defenses, halts her attacks, and opens up her compassion.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Provocation Reality Test",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"The Provocation Reality Test\"?", a: "Grounding your nervous system by checking your physical environment to realize you are safe.", bundle: 'free' },
+        { q: "Why does your body-mind go into a threat state?", a: "It perceives emotional challenges (rejection, shame, abandonment) as survival threats.", bundle: 'free' },
+        { q: "What is the physical response to a perceived threat?", a: "Breath constriction, jaw clenching, mind locking, and muscle tension.", bundle: 'free' },
+        { q: "How do you perform a basic Reality Test?", a: "Look at the sky, feel the chair beneath you, breathe, and realize you are physically safe.", bundle: 'free' },
+        { q: "What does taming your anxiety yield?", a: "A profound, organic change in your ability to respond rather than react under pressure.", bundle: 'free' },
+        { q: "What does \"Provocation Meditation\" train?", a: "Your capacity to connect your intentions to your actions while in a triggered state.", bundle: 'pro' },
+        { q: "Why is basic meditation alone insufficient for relationship fire?", a: "Because a wise man on a mountain must learn to stay grounded when his partner is breathing fire.", bundle: 'pro' },
+        { q: "What are the two steps of doing a Reality Test in conflict?", a: "Recognize the anxiety static, then use your physical environment to decouple from the story.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Identifying the Shadow Strategy",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"Identifying the Shadow Strategy\"?", a: "Naming which of the five dysfunctional strategies you are using to avoid anxiety.", bundle: 'free' },
+        { q: "What are the 5 Dysfunctional Anxiety Strategies?", a: "Contraction, Collapse, Defense, Distraction, and Blame.", bundle: 'free' },
+        { q: "What characterizes the \"Contraction\" strategy?", a: "Physical or energetic withdrawal, avoiding eye contact, and using the silent treatment.", bundle: 'free' },
+        { q: "What characterizes the \"Collapse\" strategy?", a: "Giving up your needs, sycophantically pleasing, and saying \"whatever you want\" as a victim.", bundle: 'free' },
+        { q: "What characterizes the \"Defense\" strategy?", a: "Getting defensive, explaining your motivations, and trying to \"correct the facts\".", bundle: 'free' },
+        { q: "What characterizes the \"Distraction\" strategy?", a: "Moving rapidly, phone scrolling, or using addictions to avoid feeling anxiety.", bundle: 'pro' },
+        { q: "What is the mindset of \"Identifying the Shadow Strategy\"?", a: "These behaviors are just your body-mind's unconscious way to make the anxiety stop.", bundle: 'pro' },
+        { q: "Why does naming your shadow strategy take away its power?", a: "It brings conscious awareness to an automatic reaction, allowing you to return to leadership.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Passing the Leader's Test",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"Passing the Leader's Test\"?", a: "Staying grounded and holding your pose when her intensity increases after you set a limit.", bundle: 'free' },
+        { q: "Why does a woman test her partner's solidity?", a: "To ascertain that he is worthy of leading, so she can safely open her heart and body.", bundle: 'free' },
+        { q: "What is \"token resistance\"?", a: "A mild, playful testing of your sureness where you should gently but firmly persist.", bundle: 'free' },
+        { q: "Why shouldn't you look for immediate reward when passing a test?", a: "Because she may appear angrier initially; her trust and opening will come later.", bundle: 'free' },
+        { q: "What does \"holding the pose\" mean?", a: "Maintaining your steady stance and connection without caving, getting defensive, or running.", bundle: 'free' },
+        { q: "What is the ultimate consequence when a man fails his partner's tests?", a: "She stays in her head, loses respect, and refuses to open sexually.", bundle: 'pro' },
+        { q: "Why is a partner's emotional test an opportunity?", a: "It is an avenue to display your Masculine solidity and earn her deep devotion.", bundle: 'pro' },
+        { q: "What is the mindset behind \"Passing the Leader's Test\"?", a: "The day she stops calling you out is the day she has given up on you.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• The Internal Anchor — mastering your internal state: do you pause for sign-seeking, ground with a reality test, or identify your shadow?\n• Protective Leadership — external boundaries: do you convert anger to protection, hold your pose, or provide structure?\n• Choosing Solidity — daily friction: do you reset your approval-seeking, state your preferences, or stand strong?\n\nOne question decides nearly all of it: what did she just do?",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "The Internal Anchor, Protective Leadership, and Choosing Solidity.", bundle: 'pro' },
+        { q: "What is the core focus of \"The Internal Anchor\"?", a: "Nailing your internal alignment and grounding before attempting to lead externally.", bundle: 'pro' },
+        { q: "What is the core focus of \"Protective Leadership\"?", a: "Establishing clear boundaries and holding the container of the relationship safe.", bundle: 'pro' },
+        { q: "What is the core focus of \"Choosing Solidity\"?", a: "Overcoming daily approval-seeking habits by choosing conscious Masculine posture.", bundle: 'pro' },
+        { q: "When do you choose \"The Sign-Seeking Pause\" over \"Passing the Leader's Test\"?", a: "When you are proactively seeking her approval rather than holding your ground under her active storm.", bundle: 'pro' },
+        { q: "When do you choose \"Converting Anger to Protection\"?", a: "When her behavior crosses your boundaries and you need the clean energy of anger to protect the relationship.", bundle: 'pro' },
+        { q: "Why must internal grounding precede external leadership?", a: "Because without an internal anchor, your external direction will feel like anxious control.", bundle: 'pro' },
+        { q: "What do all three collections train you to do?", a: "Stop seeking validation and start serving the relationship powerfully through grounded presence.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n• Taming the Trigger — Sign-Seeking Pause → Reality Test → Identifying Shadow → Grounded Lead\n• Passing the Solidity Test — Provocation Reality Test → Identifying Shadow → Passing the Leader's Test\n• Reclaiming the Frame — Sign-Seeking Pause → Converting Anger to Protection → Passing the Leader's Test\n\nIn each sequence, the order of the steps is what re-establishes safety and polarity.",
+      cards: [
+        { q: "What are the three sequences in this pack?", a: "Taming the Trigger, Passing the Solidity Test, and Reclaiming the Frame.", bundle: 'pro' },
+        { q: "Why does \"Taming the Trigger\" start with \"The Sign-Seeking Pause\"?", a: "Because you must first stop seeking her validation before you can ground your nervous system.", bundle: 'pro' },
+        { q: "What is the order in \"Passing the Solidity Test\"?", a: "The Provocation Reality Test, then Identifying the Shadow Strategy, and finally Passing the Leader's Test.", bundle: 'pro' },
+        { q: "Why does \"Passing the Solidity Test\" end with \"Passing the Leader's Test\"?", a: "Because after grounding and stopping your defenses, you must stand firm in her active storm.", bundle: 'pro' },
+        { q: "What is the order in \"Reclaiming the Frame\"?", a: "The Sign-Seeking Pause, then Converting Anger to Protection, and finally Passing the Leader's Test.", bundle: 'pro' },
+        { q: "Why does \"Converting Anger to Protection\" come before \"Passing the Leader's Test\" in \"Reclaiming the Frame\"?", a: "Because you must set a clean boundary first before you can hold the pose against her reaction.", bundle: 'pro' },
+        { q: "What does \"Passing the Solidity Test\" train you to do?", a: "Contain her active emotional tsunamis by staying grounded and unmoved.", bundle: 'pro' },
+        { q: "What does \"Reclaiming the Frame\" train you to do?", a: "Stop caving to her micromanagement and assert your own desires and limits cleanly.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenges to master in this pack:\n\n• The Permission Trap — when you find yourself editing your truth or caving to stay safe\n• The Emotional Tsunami — when she blasts you with chaotic emotions and blame\n• High-Alert Panic — when your own nervous system goes into survival mode\n• The Disrespect Test — when she tests your boundaries with shaming or sarcasm\n• Chronic Avoidance — when you use phone scrolling or silence to dodge the fire\n\nEach category has its own way of testing your Masculine solidity.",
+      cards: [
+        { q: "What are the five challenges in this pack?", a: "The Permission Trap, The Emotional Tsunami, High-Alert Panic, The Disrespect Test, and Chronic Avoidance.", bundle: 'pro' },
+        { q: "What is the core danger during \"The Permission Trap\"?", a: "Becoming an emasculated nice guy who abdicates his leadership to avoid conflict.", bundle: 'pro' },
+        { q: "How do you handle \"The Emotional Tsunami\"?", a: "By grounding your body and seeing the pain underneath her blame instead of correcting facts.", bundle: 'pro' },
+        { q: "How do you handle \"High-Alert Panic\"?", a: "By using a Reality Test to calm the body-mind's survival panic.", bundle: 'pro' },
+        { q: "How do you handle \"The Disrespect Test\"?", a: "By using Converting Anger to Protection to establish non-negotiable boundaries cleanly.", bundle: 'pro' },
+        { q: "How do you handle \"Chronic Avoidance\"?", a: "By identifying your shadow strategies (Distraction, Contraction) and choosing presence.", bundle: 'pro' },
+        { q: "What is she really seeking when she throws a challenge at you?", a: "Evidence that you are solid enough to handle her full emotional experience without collapsing.", bundle: 'pro' },
+        { q: "Why is \"Fixing the Facts\" a major mistake in challenges?", a: "Because addressing her emotional expression with cognitive logic never works.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "The five mindsets you practise in this pack:\n\n• The Goal is Leadership, not Agreement — leading her to a better place even if she resists\n• Validation — realizing your well-being is independent of her approval\n• Anger — using anger as a clean force to protect the relationship's culture\n• Safety — realizing her emotional weather is just energy, not a threat\n• Shadows — spotting and stopping your passive Nice Guy habits\n\nIn every one, the belief that gets in the way feels like safety from the inside.",
+      cards: [
+        { q: "What are the five mindsets in this pack?", a: "The Goal is Leadership not Agreement, Validation, Anger, Safety, and Shadows.", bundle: 'pro' },
+        { q: "What does \"The Goal is Leadership, not Agreement\" teach you?", a: "That your job is to lead the couple out of fighting, regardless of her immediate reaction.", bundle: 'pro' },
+        { q: "What is the core block of the \"Validation\" mindset?", a: "Scanning her face for a sign of approval, which turns you into an anxious boy.", bundle: 'pro' },
+        { q: "What is the core block of the \"Anger\" mindset?", a: "Believing that anger is toxic, which leaves you without boundaries or backbone.", bundle: 'pro' },
+        { q: "What is the core block of the \"Safety\" mindset?", a: "Viewing her storm as a threat to your worth, which triggers defensive logic.", bundle: 'pro' },
+        { q: "What is the core block of the \"Shadows\" mindset?", a: "Believing that silence, phone scrolling, or caving keeps the relationship safe.", bundle: 'pro' },
+        { q: "Why does Nice Guy pleasing kill polarity?", a: "It makes you needless and harmless, which causes her to lose all sexual respect.", bundle: 'pro' },
+        { q: "What do all five of these beliefs protect you from?", a: "The discomfort of not knowing whether she approves. Each one buys that relief and pays for it in respect.", bundle: 'pro' },
       ]
     },
   ],

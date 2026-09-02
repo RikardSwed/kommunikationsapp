@@ -4160,6 +4160,96 @@ const multiStepCollections = {
             { front: "Grounded Lead — You share the truth underneath.", back: "\"Ouch. That comment hurts because my career is important to me. I need your support, not mocks.\"." },
           ]
         },
+        {
+          bundle: 'pro',
+          situation: "You proposed a family vacation budget. She rolls her eyes and sighs: \"You always make bad financial decisions, we'll end up broke.\"",
+          steps: [
+            { front: "Sign-Seeking Pause — You feel the urge to plead for her trust.", back: "(Pause. Breathe. Release the need for her instant agreement.)" },
+            { front: "Reality Test — You look around the room to ground yourself.", back: "\"I am physically safe in this room. Her anxiety cannot destroy me.\"" },
+            { front: "Identifying Shadow — You realize you want to defend yourself or walk away.", back: "\"I'm in a Defense strategy, trying to correct her facts. I'm stopping the debate.\"" },
+            { front: "Grounded Lead — You convert your anger to set a clean boundary.", back: "\"I see how anxious you are about our money. But I won't be talked to like I'm irresponsible. Let's make this plan together.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You disciplined your son. She storms in and snaps: \"You're a terrible father, you're ruining him!\"",
+          steps: [
+            { front: "Sign-Seeking Pause — You feel a wave of shame and need her to think you're good.", back: "(Breathe. Settle into yourself. Release the need for her immediate approval.)" },
+            { front: "Reality Test — You feel your body clenching up under her fire.", back: "(Reality Test) \"I am safe. These are just words. I will survive her anger.\"" },
+            { front: "Identifying Shadow — You want to shut down or shout back.", back: "\"I'm in a Contraction strategy, wanting to hide. I choose to stay present in the fire.\"" },
+            { front: "Grounded Lead — You speak the vulnerable truth underneath.", back: "\"That comment hurts because I care deeply about our son. I need us to parent as a team.\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Passing the Solidity Test",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
+      description: "Training you to stand firm during intense emotional storms: The Provocation Reality Test → Identifying the Shadow Strategy → Passing the Leader's Test.\n\n1. The Provocation Reality Test — ground your body to realize you are physically safe\n2. Identifying the Shadow Strategy — spot and stop your urge to contract, collapse, or defend\n3. Passing the Leader's Test — hold the pose and stay committed to the container\n\nWhy just this order: you must ground your nervous system before you can identify your reactive patterns, and you must stop those patterns before you can hold a steady, unshakeable frame.\nWhat people do instead: they panic, shout back, or storm out, which proves to her nervous system that they cannot handle her fire.\nMindset: her storm is transient weather; I am the Oak that stands unmoved.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "During an argument about household chores, she suddenly shouts: \"I can't stand looking at you! Get out of my face!\"",
+          steps: [
+            { front: "The Provocation Reality Test — You feel your jaw clench and your breath constricting.", back: "(Perform a body scan) \"I am clenching. I relax. I am safe in this room.\"" },
+            { front: "Identifying the Shadow Strategy — You want to storm out and give her the cold shoulder.", back: "\"I'm in Contraction, trying to hide. I choose to go back and stay in the fire.\"" },
+            { front: "Passing the Leader's Test — She stares at you, waiting to see if you snap.", back: "(Hold the pose. Breathe deep. Settle into the static of her anger.)" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You tell her you're going to the gym at 6 p.m. She gets upset: \"You're so selfish, you only care about yourself!\"",
+          steps: [
+            { front: "The Provocation Reality Test — You feel a wave of anxiety about her disapproval.", back: "(Reality Test) \"She is just a woman. These are just words. I will survive her anger.\"" },
+            { front: "Identifying the Shadow Strategy — You want to say \"Fine, I won't go\" in a victimized tone.", back: "\"I'm in Collapse, trying to play the victim. I choose to stop and hold my frame.\"" },
+            { front: "Passing the Leader's Test — She rolls her eyes and walks away, trying to goad you.", back: "\"Staying in shape is essential for me. I'm going to the gym now, and we'll connect at seven.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You made a mistake with a booking. She sighs in disgust: \"You always mess things up. I can't trust you.\"",
+          steps: [
+            { front: "The Provocation Reality Test — Your mind races with panic about being inadequate.", back: "(Reality Test) \"I am physically safe. Nothing can really hurt me in this room.\"" },
+            { front: "Identifying the Shadow Strategy — You want to aggressively explain why the booking system was confusing.", back: "\"I'm in Defense, correcting her facts. I stop the logic and stay in my heart.\"" },
+            { front: "Passing the Leader's Test — She watches you coldly, expecting a whiny excuse.", back: "(Hold the pose. Do not look for her approval. Let the tension settle.)" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Reclaiming the Frame",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
+      description: "Using clear boundaries and grounded action to guide her out of anxious control: The Sign-Seeking Pause → Converting Anger to Protection → Passing the Leader's Test.\n\n1. The Sign-Seeking Pause — stop looking for her approval before speaking your truth\n2. Converting Anger to Protection — use your anger as the clean energy to set a firm limit\n3. Passing the Leader's Test — hold the pose when she pushes back against your limit\n\nWhy just this order: you must stop seeking her permission first; only then can you set a clean, non-negotiable boundary, and you must be prepared to hold that boundary when she tests it.\nWhat people do instead: they hint, apologize for having needs, and cave the moment she gets annoyed.\nMindset: a strong man does not need her permission to protect the relationship's culture.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You are at a dinner with friends, and she makes a sharp, sarcastic dig about your income.",
+          steps: [
+            { front: "The Sign-Seeking Pause — You feel the urge to laugh it off or look at her face for approval.", back: "(Pause. Breathe. Release the need for her immediate approval.)" },
+            { front: "Converting Anger to Protection — You feel a rumble of anger and want to snap back.", back: "\"I am angry because respect in front of others is important to me. Let's keep things respectful.\"" },
+            { front: "Passing the Leader's Test — She sighs and rolls her eyes, trying to make you feel like you overreacted.", back: "(Hold the pose. Stay grounded. Do not apologize or get defensive.)" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "She hands you a long list of chores on Saturday morning, telling you exactly when and how to do them.",
+          steps: [
+            { front: "The Sign-Seeking Pause — You feel the urge to anxiously agree just to keep the peace.", back: "(Notice the leaning in. Settle back into your own seat and need nothing.)" },
+            { front: "Converting Anger to Protection — You feel angry about being managed like a child.", back: "\"I care about this house, but I won't be micromanaged. I'll handle my chores on my own timeline.\"" },
+            { front: "Passing the Leader's Test — She gets upset: \"Fine, then I'll just do it all myself!\" to guilt-trip you.", back: "(Hold the pose. Let the drama cycle run its course without caving.)" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "During a heated discussion about holiday plans, she starts yelling and calls you a jerk.",
+          steps: [
+            { front: "The Sign-Seeking Pause — You feel panic and want to desperately please her to make her stop.", back: "(Catch the seeking. Breathe. Release the need for her to soften right now.)" },
+            { front: "Converting Anger to Protection — You use your anger to establish a non-negotiable boundary.", back: "\"I'm angry right now. I love us too much to let us talk to each other this way.\"" },
+            { front: "Passing the Leader's Test — She snaps: \"If you don't like it, then leave!\" to test your commitment.", back: "(Hold the pose. Do not run. Stay present in the fire but hold the line.)" },
+          ]
+        },
       ]
     },
   ],

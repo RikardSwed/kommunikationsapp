@@ -10778,6 +10778,11 @@ const collectionsModeData = {
         { q: "You feel yourself getting \"tongue-tied\" and desperate for her to like you.", a: "(Pause. Sign-seeking check. Internal Reality Test).", bundle: 'pro' },
         { q: "You realize you've been \"Fixing the Facts\" for ten minutes.", a: "\"I'm in the Defense shadow strategy. I choose to hear her pain instead.\" (Identifying the Shadow).", bundle: 'pro' },
         { q: "You feel like the world is ending because she's scowling at you.", a: "(Look at the sun) \"I am physically safe. Her mood is not a threat.\" (Reality Test).", bundle: 'pro' },
+        { q: "You just set a boundary and find yourself desperately waiting for her to smile or nod.", a: "(Pause. Breathe. Release the need for her validation.) [The Sign-Seeking Pause]", bundle: 'pro' },
+        { q: "You feel a massive wave of panic because she slammed the bedroom door.", a: "(Reality Test) \"The room is safe. I am a grown man, and her silence cannot destroy me.\" [The Provocation Reality Test]", bundle: 'pro' },
+        { q: "You notice you're checking your phone or distraction scrolling while she's crying.", a: "\"I'm in Distraction to avoid my anxiety. I'll put this away and listen.\" [Identifying the Shadow Strategy]", bundle: 'pro' },
+        { q: "You are aggressively explaining your intentions to prove you weren't trying to be mean.", a: "\"I'm in Defense. I stop the logic right now and hear her pain instead.\" [Identifying the Shadow Strategy]", bundle: 'pro' },
+        { q: "You feel your chest tighten and your mind racing with \"what if she leaves\" scenarios.", a: "(Reality Test) \"I am physically safe. I am sitting on this chair. I am fine.\" [The Provocation Reality Test]", bundle: 'pro' },
       ]
     },
     {
@@ -10789,6 +10794,27 @@ const collectionsModeData = {
         { q: "She is being toxic, and you feel a surge of anger.", a: "\"I'm angry because our respect is meaningful. I'm setting this boundary...\" (Converting Anger).", bundle: 'pro' },
         { q: "You set a boundary, and she's \"blowing fire\" in response.", a: "(Hold the pose. Refuse to be scared off by her intensity.) (Passing the Test).", bundle: 'pro' },
         { q: "You see her struggling with a task and feel the urge to just let her \"fend for herself.\"", a: "\"I'm taking over this for 20 minutes. Sit down.\" (Structure / Protection).", bundle: 'pro' },
+        { q: "She is mocking your parenting in front of your son, and you feel a rumble of anger.", a: "\"I'm angry right now because respect is important to our family. Let's talk privately.\" [Converting Anger to Protection]", bundle: 'pro' },
+        { q: "You just used a playful tease to break a drama loop, and she lashes out even harder.", a: "(Hold the pose. Settle into her reaction without getting defensive.) [Passing the Leader's Test]", bundle: 'pro' },
+        { q: "You feel a deep wave of anger because she dismissed a budget limit you agreed on.", a: "\"I love our security too much to let this boundary be crossed. We need to reset.\" [Converting Anger to Protection]", bundle: 'pro' },
+        { q: "She screams \"Maybe we should just be apart!\" during a massive blowup.", a: "\"No, we're not doing that. We're going to stay and reconnect.\" [Passing the Leader's Test]", bundle: 'pro' },
+        { q: "She is \"poking the bear\" with constant little jabs to see if you will snap.", a: "(Stay for five more seconds than feels comfortable. Settle into the fire.) [Passing the Leader's Test]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Choosing Solidity",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Choosing between The Sign-Seeking Pause, Identifying the Shadow Strategy, and Passing the Leader's Test to stop approval-seeking habits.\nBy recognizing your anxious patterns, you shift from a boy trying to stay out of trouble to a grounded man.\n\n• The Sign-Seeking Pause — when you are scanning her face for approval or a sign of softening\n• Identifying the Shadow Strategy — when you catch yourself hiding, collapsing, or defending\n• Passing the Leader's Test — when you need to hold the pose under her emotional intensity\n\nThe crucial question is: are you seeking her validation, or are you offering a steady Masculine container?\nMindset: your sureness is its own authority; you do not need her permission to lead.",
+      inputs: [
+        { q: "You feel the urge to sycophantically apologize for something you didn't even do.", a: "\"I'm in Approval Seeking. I stop apologizing and stand my ground.\" [Identifying the Shadow Strategy]", bundle: 'pro' },
+        { q: "You just proposed a plan and find yourself desperately waiting for her to say it's a great idea.", a: "(Catch the sign-seeking. Breathe and settle back into your own seat.) [The Sign-Seeking Pause]", bundle: 'pro' },
+        { q: "You set a boundary about her tone, and she gets even angrier to test your resolve.", a: "(Hold the pose. Settle into her anger without backing down.) [Passing the Leader's Test]", bundle: 'pro' },
+        { q: "You storm out of the kitchen and want to give her the cold shoulder to punish her.", a: "\"I'm in Contraction to avoid my anxiety. I choose to go back and stay present.\" [Identifying the Shadow Strategy]", bundle: 'pro' },
+        { q: "She is silent-faced and giving you no reaction, and you feel the urge to poke for a sign.", a: "(Notice the leaning in. Settle into the lack of expression without trying to fix it.) [The Sign-Seeking Pause]", bundle: 'pro' },
+        { q: "She mocks your attempt to organize the holiday schedule.", a: "(Don't take it personally. It's just a test. Stay grounded and hold the pose.) [Passing the Leader's Test]", bundle: 'pro' },
+        { q: "You find yourself saying \"Fine, whatever you want\" in a heavy, victimized tone.", a: "\"I'm in Collapse right now. I stop being the victim and state my real preference.\" [Identifying the Shadow Strategy]", bundle: 'pro' },
+        { q: "You just made a joke and are anxiously staring at her face to see if she laughs.", a: "(Pause. Breathe into your belly. Release the need for her reaction.) [The Sign-Seeking Pause]", bundle: 'pro' },
       ]
     },
   ],
