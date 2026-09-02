@@ -4004,6 +4004,148 @@ const memorizeCollections = {
         { q: "Why is \"Tracking\" essential for love?", a: "Because the Feminine feels loved when she feels she is a priority in the man's field of attention.", bundle: 'pro' },
         { q: "What is the \"Trifecta\" of emotional oxygen?", a: "Empathy, Responsibility, and Tangible Action.", bundle: 'pro' },
         { q: "What is the primary complaint of women in the sexual arena?", a: "That men go too fast—they don't take the time to lead her slowly into arousal.", bundle: 'pro' },
+        { q: "Why does an equal partnership still need a leader?", a: "Because someone has to carry the logistics and the decisions. Left unclaimed, that job falls to her, and the polarity goes with it.", bundle: 'pro' },
+        { q: "What does \"refusing the rejection\" mean during conflict?", a: "Staying in connection and heart instead of withdrawing or getting defensive when she is angry.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Core Idea",
+      description: "The Masculine Blueprint Part 5, designed to build your role as an organizing force through logistics, safety, and container.\n\n• Drive the Decision — simplify decisions\n• Handle the Burden — take ownership of difficult tasks\n• Track her Priorities — keep her in your field of attention\n• Stabilize the Frame — deliver financial and structural safety\n• Establish the Container — set relational rules of engagement\n\nThey move you from passive drifting into grounded leadership.",
+      cards: [
+        { q: "What is the primary purpose of the fifth part of the blueprint?", a: "To step into your role as an organizing force, providing structure and safety so she can relax.", bundle: 'free' },
+        { q: "What are the three core roles of Masculine strength?", a: "The Provider (stability), the Protector (physical safety), and the Leader (structure).", bundle: 'free' },
+        { q: "Why is being \"easy-going\" or \"opinionless\" depolarizing?", a: "It leaves her formless and forced into her Masculine to create the structure she needs.", bundle: 'free' },
+        { q: "Who is responsible for leading the couple out of conflict?", a: "You are. Whether or not you are the problem, your Masculine leadership is the solution.", bundle: 'free' },
+        { q: "Why does this pack put logistics before feelings?", a: "Because someone braced for the next unpaid bill cannot relax into anything else. The floor comes first.", bundle: 'free' },
+        { q: "What is the cost of being the easy-going partner?", a: "Every decision you decline lands on her, and the pile is what makes her hard.", bundle: 'pro' },
+        { q: "Why is a woman's nagging actually a positive signal?", a: "It is her clumsy expression of longing for you to step up; silence means she has given up.", bundle: 'pro' },
+        { q: "What does this pack ask you to take over?", a: "The hard things — the systems, the money, the calendar, the rules of engagement — as an act of care rather than a chore.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Drive the Decision",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"Drive the Decision\"?", a: "Proactively taking responsibility for moving a situation from uncertainty to a conclusion.", bundle: 'free' },
+        { q: "Why does this strategy work?", a: "It relieves her of the decision-making burden, allowing her nervous system to relax.", bundle: 'free' },
+        { q: "What is the \"Narrowing the Scope\" variant?", a: "Doing the research first and presenting her with 2-3 clear options.", bundle: 'free' },
+        { q: "What is the \"Calling the Ball\" variant?", a: "Making a firm executive decision when she is stuck in neurosis or indecision.", bundle: 'free' },
+        { q: "What is the mindset of \"Drive the Decision\"?", a: "Your clarity is a gift of structure that creates order from disorder.", bundle: 'free' },
+        { q: "Why should you have an opinion even when you think you don't care?", a: "Because her question is a bid for your clarity to help her over the tipping point of uncertainty.", bundle: 'pro' },
+        { q: "What is the \"backseat driving\" test?", a: "Settle into your frame and assure her that you have the logistics handled so she can relax.", bundle: 'pro' },
+        { q: "How does this strategy build deep relational trust?", a: "It proves to her nervous system that you are a proactive leader who handles things.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Handle the Burden",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"Handle the Burden\"?", a: "Identifying logistical \"hard things\" that she finds draining and taking full ownership of them.", bundle: 'free' },
+        { q: "Why does this strategy work?", a: "Because the Feminine feels abandoned when left to deal with difficult systems alone; your action provides emotional oxygen.", bundle: 'free' },
+        { q: "What is the \"Logical Takeover\" variant?", a: "Handling tasks involving complex systems, red tape, or paperwork.", bundle: 'free' },
+        { q: "What is the \"Physical Fix\" variant?", a: "Proactively maintaining the physical container of the relationship, such as the home or car.", bundle: 'free' },
+        { q: "What is the mindset of \"Handle the Burden\"?", a: "You lead by serving her well-being through proactive, action-oriented love.", bundle: 'free' },
+        { q: "Why is procrastination on commitments a massive trust killer?", a: "It signals that her needs are not in your field of attention and she cannot trust your word.", bundle: 'pro' },
+        { q: "What is the \"Trifecta\" of emotional oxygen after a failure?", a: "Empathy first, taking responsibility second, and then offering a tangible action.", bundle: 'pro' },
+        { q: "How does taking over chores help her transition out of work-mind?", a: "It gets her out of her head and back into her body, creating space for polarity.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Track her Priorities",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"Track her Priorities\"?", a: "Keeping her emotional and logistical world in your field of attention by proactively checking in.", bundle: 'free' },
+        { q: "Why does this strategy work?", a: "Because the Feminine heart equates being remembered with being loved; it proves she is a priority.", bundle: 'free' },
+        { q: "What is the \"Emotional Tracking\" variant?", a: "Checking in on her heart, her relationships, and her internal stressors.", bundle: 'free' },
+        { q: "What is the \"Project Tracking\" variant?", a: "Checking in on her goals, her career challenges, and the details she is currently pursuing.", bundle: 'free' },
+        { q: "What is the mindset of \"Track her Priorities\"?", a: "To love her is to keep her needs and her world top-of-mind.", bundle: 'free' },
+        { q: "Why are verbal expressions of love insufficient for the Feminine?", a: "Because they don't take forethought or planning; she needs to see love demonstrated in action.", bundle: 'pro' },
+        { q: "What does a woman feel when her partner never tracks her world?", a: "She feels unloved, lonely, unpartnered, and forgotten in their life together.", bundle: 'pro' },
+        { q: "How do you track her priorities during a highly busy work season?", a: "Commit to a brief, daily 5-minute sync in the morning to keep her world current in your mind.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Stabilize the Frame",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"Stabilize the Frame\"?", a: "Fulfilling the role of the Provider by making responsible, long-term choices that ensure security.", bundle: 'free' },
+        { q: "Why does this strategy work?", a: "Her system cannot relax into playfulness or sexuality if she feels the foundation of her life is unstable.", bundle: 'free' },
+        { q: "What is the \"Financial Lead\" variant?", a: "Taking complete ownership of savings, debt, and investments.", bundle: 'free' },
+        { q: "What is the \"Security Plan\" variant?", a: "Proactively addressing her fears about safety, housing, or the future.", bundle: 'free' },
+        { q: "What is the mindset of \"Stabilize the Frame\"?", a: "Delivering stability is an act of deep Masculine love and responsibility.", bundle: 'free' },
+        { q: "What is the \"shadow side\" of being a good Provider?", a: "Over-identifying with work such that you believe it excuses you from other relationship needs.", bundle: 'pro' },
+        { q: "Why is a strong \"No\" necessary to have a trustworthy \"Yes\"?", a: "Because caving to unreasonable demands out of nice-guy pleasing compromises overall stability.", bundle: 'pro' },
+        { q: "How should you handle a temporary job loss or layoff?", a: "Calm her panic by showing you have a plan and a buffer, keeping the frame stable.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Establish the Container",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"Establish the Container\"?", a: "Defining the culture or the physical and emotional boundaries within which the relationship operates.", bundle: 'free' },
+        { q: "Why does this strategy work?", a: "The Feminine feels safer when there is a known container for her emotions and for the couple's time.", bundle: 'free' },
+        { q: "What is the \"Conflict Rules\" variant?", a: "Establishing clear rules for how you will handle arguments, such as no sleeping disconnected.", bundle: 'free' },
+        { q: "What is the \"Prophylactic Frame\" variant?", a: "Setting a positive, firm intention before a potentially stressful event or trip.", bundle: 'free' },
+        { q: "What is the mindset of \"Establish the Container\"?", a: "Leading her into a healthy container is an act of deep love for the relationship.", bundle: 'free' },
+        { q: "What is the \"No Fighting\" container?", a: "Setting a firm boundary against arguments on date nights or during designated connection times.", bundle: 'pro' },
+        { q: "How do you handle verbal insults or name-calling during arguments?", a: "Pause the fight and state clearly that you won't participate in a disrespectful conversation.", bundle: 'pro' },
+        { q: "Why is setting boundaries considered a Masculine gift?", a: "Because it protects the relationship's dignity and allows her to relax within your frame.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• The Lead on Logistics — external world: do you decide, handle the task, or secure the finances?\n• Providing Action-Oriented Love — daily safety: do you track her world or take tasks off her plate?\n• Holding the Container — connection boundaries: do you track her world, secure the frame, or hold limits?\n\nOne question decides nearly all of it: what did she just do?",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "The Lead on Logistics, Providing Action-Oriented Love, and Holding the Container.", bundle: 'pro' },
+        { q: "What is the core purpose of \"The Lead on Logistics\"?", a: "To act as the organizing force that creates order and security in the external world.", bundle: 'pro' },
+        { q: "What does \"Providing Action-Oriented Love\" teach you?", a: "That tracking her priorities and handling her burdens serve as powerful proxies for love.", bundle: 'pro' },
+        { q: "What is the focus of \"Holding the Container\"?", a: "Navigating emotional safety and relationship boundaries through presence, frame, and limits.", bundle: 'pro' },
+        { q: "When should you choose \"Establish the Container\" over \"Track her Priorities\"?", a: "When her anxious behavior crosses into disrespectful sniping or rule-breaking.", bundle: 'pro' },
+        { q: "When should you choose \"Stabilize the Frame\" over \"Handle the Burden\"?", a: "When her anxiety is about long-term financial security rather than an immediate logistical task.", bundle: 'pro' },
+        { q: "Why does \"The Lead on Logistics\" include \"Drive the Decision\"?", a: "Because driving decisions cuts through her decision fatigue and simplifies her complexity.", bundle: 'pro' },
+        { q: "What is the main trap in Collections?", a: "Remaining opinionless and passive, which abdicates your role and kills polarity.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. From Overwhelmed to Relaxed — Shared Reality → Handle the Burden → Drive the Decision\n2. Securing the Foundation — Track her Priorities → Stabilize the Frame → Establish the Container\n3. Leading the Connection — Track her Priorities → Drive the Decision → Establish the Container\n\nIn each one, the order of the steps is what re-establishes safety and polarity.",
+      cards: [
+        { q: "What are the three sequences in this pack?", a: "From Overwhelmed to Relaxed, Securing the Foundation, and Leading the Connection.", bundle: 'pro' },
+        { q: "Why does \"From Overwhelmed to Relaxed\" start with \"Shared Reality\"?", a: "To identify her logistical stress and make her feel understood before taking over.", bundle: 'pro' },
+        { q: "What is the final step in \"From Overwhelmed to Relaxed\"?", a: "Drive the Decision, to provide clear structure and options for what to do next.", bundle: 'pro' },
+        { q: "What is the order in \"Securing the Foundation\"?", a: "Track her Priorities, then Stabilize the Frame, and finally Establish the Container.", bundle: 'pro' },
+        { q: "Why does \"Stabilize the Frame\" precede \"Establish the Container\" in \"Securing the Foundation\"?", a: "Because offering structural safety must come before you can set firm relational rules.", bundle: 'pro' },
+        { q: "What is the order in \"Leading the Connection\"?", a: "Track her Priorities, then Drive the Decision, and finally Establish the Container.", bundle: 'pro' },
+        { q: "What does \"Leading the Connection\" train you to do?", a: "Transition her from a stressed work-mind into a relaxed, phone-free space of intimacy.", bundle: 'pro' },
+        { q: "Why does \"From Overwhelmed to Relaxed\" succeed?", a: "Because taking charge of details is a tangible gift that melts her anxious control.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenges to master in this pack:\n\n• The Decision Vacuum — when she is forced into her Masculine because you are being passive\n• Relational Disconnect — when she goes flat, silent, or cold\n• Logistical Overwhelm — when she is drowning in hard logistical systems\n• Backseat Micromanagement — when she tries to micromanage you out of anxiety\n• Future Panic — when she feels financially or structurally unsafe\n\nEach category starts from her behavior rather than from your strategy.",
+      cards: [
+        { q: "What are the five challenges in this pack?", a: "The Decision Vacuum, Relational Disconnect, Logistical Overwhelm, Backseat Micromanagement, and Future Panic.", bundle: 'pro' },
+        { q: "How do you handle \"The Decision Vacuum\"?", a: "By stepping up to Drive the Decision and Handle the Burden rather than saying \"whatever you want.\"", bundle: 'pro' },
+        { q: "What is the core danger during \"Relational Disconnect\"?", a: "Reacting with your own contraction, phone-scrolling, or silent treatment, which destroys trust.", bundle: 'pro' },
+        { q: "How do you resolve \"Logistical Overwhelm\"?", a: "By taking full ownership of difficult systems using the Handle the Burden strategy.", bundle: 'pro' },
+        { q: "What is she really testing in \"Backseat Micromanagement\"?", a: "Your solidity — whether you will hold your Masculine frame or cave to her anxious control.", bundle: 'pro' },
+        { q: "How do you escape \"Future Panic\"?", a: "By using Stabilize the Frame to take financial charge and Track her Priorities to check her worries.", bundle: 'pro' },
+        { q: "Which strategy handles both \"The Decision Vacuum\" and \"Backseat Micromanagement\"?", a: "Drive the Decision—taking charge of choices and navigation so she can relax.", bundle: 'pro' },
+        { q: "Why does she throw these challenges at you?", a: "Because she has learned not to expect your lead, or wants to ascertain that you are worthy of trust.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "The five mindsets you practise in this pack:\n\n• Stability is a Gift — reframing the Provider role as a proactive gift of love\n• My Attention is Love — realizing that tracking her priorities builds deep safety\n• Nice Guy — realizing that hiding your needs is manipulative and kills polarity\n• Conflict — realizing her emotional weather is just energy, not a threat\n• Equality — realizing that an equal partnership still needs someone to lead\n\nEach mindset shifts you from reactive avoidance to grounded presence.",
+      cards: [
+        { q: "What are the five mindsets in this pack?", a: "Stability is a Gift, My Attention is Love, Nice Guy, Conflict, and Equality.", bundle: 'pro' },
+        { q: "What does \"Stability is a Gift\" teach you?", a: "That providing structure is a proactive gift of leadership, not a burdensome duty.", bundle: 'pro' },
+        { q: "What is the core block of \"My Attention is Love\"?", a: "Believing that the \"little things\" like forgotten milk don't matter to her heart.", bundle: 'pro' },
+        { q: "What is the core truth behind \"Nice Guy\"?", a: "That hiding your needs turns you into an approval-seeking boy and kills her respect.", bundle: 'pro' },
+        { q: "What is the truth behind \"Conflict\"?", a: "That her emotional outbursts are just weather, and you are physically safe in the fire.", bundle: 'pro' },
+        { q: "What is the rule of \"Equality\"?", a: "An equal partnership is not a leaderless one; offering direction is service, not dominance.", bundle: 'pro' },
+        { q: "Why does \"we are equal\" become a problem in this pack?", a: "Because equal does not mean leaderless. The work still has to be carried, and declining it does not make it disappear.", bundle: 'pro' },
+        { q: "What do all five of these beliefs have in common?", a: "Each one lets you off the hook for leading, and each one sounds like fairness or humility from the inside.", bundle: 'pro' },
       ]
     },
   ],
@@ -4020,6 +4162,134 @@ const memorizeCollections = {
         { q: "What are the four categories of somatic practice?", a: "1. Meditation, 2. Breath, 3. Intensity Expanders, 4. Movement.", bundle: 'pro' },
         { q: "What is the \"Watcher\"?", a: "The conscious, unchanging part of you that can observe thoughts without being run by them.", bundle: 'pro' },
         { q: "What is \"IAM\" (Intentioned Assertive Movement)?", a: "A practice of making fully conscious choices in movement to build deliberateness.", bundle: 'pro' },
+        { q: "Why does modern life trap men in their heads?", a: "Because the constant flow of information through phones and screens overdevelops the thinking mind like an over-exercised muscle.", bundle: 'pro' },
+        { q: "How does waking up the body break the tyranny of the mind?", a: "Physical sensations crowd out the thoughts in your field of attention, giving you a tangible reality to focus on.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Core Idea",
+      description: "The theoretical foundation of somatic mechanics and nervous system regulation to restore your Masculine core.\n\n• Respond vs. React — choosing your response instead of living reactively to threat\n• Provide Structure — taking charge to organize the environment and reduce uncertainty\n• Create Safety — making her feel physically, financially, and emotionally safe\n\nMindset: things will be different only when you are different; you are the solution.",
+      cards: [
+        { q: "What is the space this pack is built on?", a: "The gap between what happens to you and what you do about it. Every strategy here widens that gap.", bundle: 'free' },
+        { q: "What is the main cause of non-Masculine behaviors?", a: "A subconscious sense of threat that triggers anxiety in the body-mind.", bundle: 'free' },
+        { q: "Why does this pack come last in the series?", a: "Because the other five tell you what to do. This one builds the nervous system that can actually do it.", bundle: 'free' },
+        { q: "Why can't you fake Masculine leadership?", a: "Because women are highly perceptive and will see right through superficial behaviors; true power must be built on the inside.", bundle: 'free' },
+        { q: "What does a reactive nervous system cost you in a conflict?", a: "The choice. Under threat the body answers before you do, and the answer is contract, collapse, defend or blame.", bundle: 'free' },
+        { q: "What defines a strong Masculine core?", a: "The capacity of your nervous system to tolerate intensity and anxiety without collapsing or defending.", bundle: 'pro' },
+        { q: "How does embodiment save relationships?", a: "It keeps you present during her emotional storms, allowing you to contain her intensity rather than correcting her facts.", bundle: 'pro' },
+        { q: "Why must you work on yourself rather than the relationship?", a: "Because restoring your Masculine core organically induces her to relax back into her Feminine state.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Watcher",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"The Watcher\"?", a: "Intentionally separating from your thoughts to observe them as arising phenomena rather than reality.", bundle: 'free' },
+        { q: "What does \"The Watcher\" prevent?", a: "It prevents your reactive defense mechanisms from taking over your system during conflict.", bundle: 'free' },
+        { q: "What are you observing during \"The Watcher\"?", a: "Your automatic mental stories, labeling loops, and the physiological impulse to contract, collapse, or defend.", bundle: 'free' },
+        { q: "Why does observing a thought take away its power?", a: "Because you realize you are the unchanging observer of the thought, not the thought itself.", bundle: 'free' },
+        { q: "What is the \"crazy\" label loop?", a: "A story your mind generates to protect you from the anxiety of her active emotional storm.", bundle: 'free' },
+        { q: "How do you perform \"The Watcher's check\" during a code red conflict?", a: "You recognize that your body feels under threat, but verify that you are physically safe and choose to stay present.", bundle: 'pro' },
+        { q: "What is the relationship between \"The Watcher\" and presence?", a: "It brings you out of past and future narratives, allowing you to anchor your attention on what is happening in the now.", bundle: 'pro' },
+        { q: "What is the consequence of failing to step into \"The Watcher\"?", a: "You get swept up in her accusations, get defensive, and try to correct her facts.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ujjayi Breath",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"Ujjayi Breath\"?", a: "Slowing down the flow of breath with a slight constriction of the throat to create an audible sound.", bundle: 'free' },
+        { q: "Why is Ujjayi breath considered your secret weapon?", a: "It settles your body chemistry in real-time and breaks the monopoly of your thoughts.", bundle: 'free' },
+        { q: "What does deep, conscious breathing focus your attention on?", a: "It gives you a strong, physical sensation in the body to crowd out mental narratives.", bundle: 'free' },
+        { q: "How does a systemic unclenched body affect anxiety?", a: "It releases the physical tension that stores and perpetuates anxiety in the nervous system.", bundle: 'free' },
+        { q: "When should you use Ujjayi breathing?", a: "Anytime you feel irritation rising, before starting a difficult talk, or in front of an upset partner.", bundle: 'free' },
+        { q: "Why is Ujjayi breath crucial during intimacy?", a: "It slows down your nervous system, preventing rapid, \"bird-like\" movements.", bundle: 'pro' },
+        { q: "How does leading her in breathing help her?", a: "It synchronizes your nervous systems and invites her Feminine heart to relax and open.", bundle: 'pro' },
+        { q: "What are you doing with your muscles during Ujjayi breath?", a: "Performing a full body scan to notice and deliberately soften clenched areas.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Provocation Visualization",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"Provocation Visualization\"?", a: "Intentionally stoking and amplifying triggering thoughts in meditation to practice staying grounded.", bundle: 'free' },
+        { q: "Why does this strategy work?", a: "It trains your nervous system's capacity to handle anxiety in a simulated environment, which maps over to real life.", bundle: 'free' },
+        { q: "What triggers do you stoke during Provocation Visualization?", a: "Scenarios of her anger, rejection, abandonment, or career failure.", bundle: 'free' },
+        { q: "What are you practicing while triggered in this meditation?", a: "Soothing yourself, recognizing your emotions, holding your posture, and setting boundaries.", bundle: 'free' },
+        { q: "What is the goal of Provocation Visualization?", a: "To connect your conscious intention (the man you want to be) to your action when in a triggered state.", bundle: 'free' },
+        { q: "What is the \"drowning\" visualization?", a: "Imagining yourself unable to escape water, practicing how to mentally surrender into the panic.", bundle: 'pro' },
+        { q: "How does \"dying with dignity\" in visualization help you in conflict?", a: "It grows your capacity to resist the voice that screams at you to defend yourself or run away from her attacks.", bundle: 'pro' },
+        { q: "Why is basic meditation on a mountain insufficient?", a: "Because it is easy to be peaceful in a vacuum; you must learn to ground yourself in the active fire of interrelating.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Conscious Choice (IAM)",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"Conscious Choice (IAM)\"?", a: "Explicitly choosing your next movement or word in your mind before you perform it.", bundle: 'free' },
+        { q: "What does \"IAM\" stand for?", a: "Intentioned Assertive Movement, drawing from Tai Chi and slow, deliberate visualization.", bundle: 'free' },
+        { q: "Why is deliberateness a Masculine quality?", a: "It shows that you are in your power and moving with control, rather than reacting on autopilot.", bundle: 'free' },
+        { q: "What is the \"bird-like\" movement trap?", a: "Rapid, frantic movements and speech fueled by social anxiety and the need for approval.", bundle: 'free' },
+        { q: "How does IAM train you to lead?", a: "By making you comfortable with the sensation of asserting your will and directing others.", bundle: 'free' },
+        { q: "Why is posture important in IAM?", a: "Because slouching is an unconscious way of trying to become invisible; upright posture asserts presence.", bundle: 'pro' },
+        { q: "What role does simulated eye contact play in IAM?", a: "It trains you to maintain full presence while asserting yourself on another.", bundle: 'pro' },
+        { q: "How does deliberate touch affect intimacy?", a: "It provides slow, steady pressure that makes her feel safe and lets polarity emerge.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• The Somatic Toolkit — daily presence: do you observe the thought, settle with breath, or make a conscious choice?\n• Training for Intensity — capacity building: do you visualize the trigger or expand your physical tolerance?\n• Stop, Breathe, and Lead — active conflict: do you step outside the story, regulate your chemistry, or assert your frame?\n\nOne question decides nearly all of it: what did she just do?",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "The Somatic Toolkit, Training for Intensity, and Stop, Breathe, and Lead.", bundle: 'pro' },
+        { q: "What does \"The Somatic Toolkit\" train you to manage?", a: "Your immediate physical presence and grounding during daily interactions.", bundle: 'pro' },
+        { q: "What is the focus of \"Training for Intensity\"?", a: "Expanding your nervous system muscle by deliberately exposing yourself to discomfort.", bundle: 'pro' },
+        { q: "What is the focus of \"Stop, Breathe, and Lead\"?", a: "Navigating active, high-intensity conflict with physical regulation and deliberate action.", bundle: 'pro' },
+        { q: "When do you choose \"The Watcher\" over \"Conscious Choice (IAM)\"?", a: "When you are caught in a mental story and need to observe it before attempting to act.", bundle: 'pro' },
+        { q: "When do you choose \"Ujjayi Breath\" over \"The Watcher\"?", a: "When your heart is racing and you need to physically settle your body chemistry first.", bundle: 'pro' },
+        { q: "Why does \"Stop, Breathe, and Lead\" include \"Conscious Choice (IAM)\"?", a: "Because after stepping outside the story and breathing, you must deliberately lead.", bundle: 'pro' },
+        { q: "What is the default Collections strategy when you are stuck?", a: "The Watcher—observing the reactive story and returning to physical senses.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. The Grounded Response — The Watcher → Ujjayi Breath → Reality Test → Conscious Choice\n2. Proactive Presence — Provocation Visualization → Ujjayi Breath → Conscious Choice (IAM)\n3. The Unswayable Lead — The Watcher → Ujjayi Breath → Conscious Choice (IAM)\n\nIn each one, the order of the steps is what re-establishes safety and polarity.",
+      cards: [
+        { q: "What are the three sequences in this pack?", a: "The Grounded Response, Proactive Presence, and The Unswayable Lead.", bundle: 'pro' },
+        { q: "What is the order in \"The Grounded Response\"?", a: "The Watcher, then Ujjayi Breath, then Reality Test, and finally Conscious Choice.", bundle: 'pro' },
+        { q: "Why does \"The Watcher\" come first in \"The Grounded Response\"?", a: "Because you must stop the reactive mental story before you can settle your physical chemistry.", bundle: 'pro' },
+        { q: "What is the order in \"Proactive Presence\"?", a: "Provocation Visualization, then Ujjayi Breath, and finally Conscious Choice (IAM).", bundle: 'pro' },
+        { q: "Why does \"Provocation Visualization\" precede \"Ujjayi Breath\" in \"Proactive Presence\"?", a: "To stoke the trigger in your mind first, so you can practice breathing through active intensity.", bundle: 'pro' },
+        { q: "What is the order in \"The Unswayable Lead\"?", a: "The Watcher, then Ujjayi Breath, and finally Conscious Choice (IAM).", bundle: 'pro' },
+        { q: "What does \"The Unswayable Lead\" train you to do?", a: "Maintain complete somatic presence during active, public, or disrespectful conflict.", bundle: 'pro' },
+        { q: "Why does \"The Grounded Response\" end with \"Conscious Choice\"?", a: "Because after grounding your system and verifying safety, you must choose your lead.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenges to master in this pack:\n\n• The Story Loop — when your mind gets trapped in defensive logic and planning\n• The Body-Mind Lockdown — when your muscles clench, and your system goes frozen or numb\n• Anxious Hypervigilance — when you hyper-scan her face for reassurance or approval\n• Somatic Panic — when your heart races and you experience survival panic\n• Auto-Pilot Reactivity — when you react with rapid, frantic, or \"bird-like\" movements\n\nEach category has its own way of testing your Masculine solidity.",
+      cards: [
+        { q: "What are the five challenges in this pack?", a: "The Story Loop, The Body-Mind Lockdown, Anxious Hypervigilance, Somatic Panic, and Auto-Pilot Reactivity.", bundle: 'pro' },
+        { q: "How do you handle \"The Story Loop\"?", a: "By using The Watcher to observe the mental narrative and return to your physical senses.", bundle: 'pro' },
+        { q: "What is the core danger during \"The Body-Mind Lockdown\"?", a: "Energetically disappearing in a frozen state instead of bringing presence.", bundle: 'pro' },
+        { q: "How do you resolve \"Anxious Hypervigilance\"?", a: "By catching the sign-seeking impulse and settling back into your own seat.", bundle: 'pro' },
+        { q: "What is the best strategy to resolve \"Somatic Panic\"?", a: "Provocation Visualization—practising surrender in meditation so the real panic has somewhere to land.", bundle: 'pro' },
+        { q: "How do you escape \"Auto-Pilot Reactivity\"?", a: "By using Conscious Choice (IAM) to slow your movements and words to three times slower.", bundle: 'pro' },
+        { q: "What do all five of these challenges have in common?", a: "Each one starts in your own body — a clench, a race, a freeze — before a single word is exchanged.", bundle: 'pro' },
+        { q: "Why is rapid speech a major mistake in challenges?", a: "Because it is fueled by social anxiety, which communicates weakness and a need for validation.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "These are the mindsets you practise in this pack:\n\n• Body Always Exists in the Now — thoughts are past and future stories; body sensations are present truth\n• The Nervous System is a Muscle — somatic capacity is a plastic, trainable skill\n• Triggers — stoking the trigger in practice is the gym that makes you unshakeable\n• Deliberateness — conscious, intended action is the ultimate expression of power\n\nIn every one, the belief that gets in the way feels like safety from the inside.",
+      cards: [
+        { q: "What are the four mindsets in this pack?", a: "Body Always Exists in the Now, The Nervous System is a Muscle, Triggers, and Deliberateness.", bundle: 'pro' },
+        { q: "What does \"Body Always Exists in the Now\" teach you?", a: "That waking up physical body sensations literally crowds out mental stories.", bundle: 'pro' },
+        { q: "What is the core block of \"The Nervous System is a Muscle\"?", a: "Believing that you are \"just a nervous person\" who cannot change.", bundle: 'pro' },
+        { q: "What is the core block of the \"Triggers\" mindset?", a: "Believing you shouldn't visualize stressful things because it makes you feel worse.", bundle: 'pro' },
+        { q: "What is the core block of the \"Deliberateness\" mindset?", a: "Believing that planning your movements and words beforehand feels fake or robotic.", bundle: 'pro' },
+        { q: "Why is \"impulsive authenticity\" a mistake in conflict?", a: "It usually leads to automatic, rapid reactions fueled by childhood anxiety wounds.", bundle: 'pro' },
+        { q: "How does holding physical discomfort expand your capacity?", a: "Increasing physical tolerance maps directly over to your capacity for emotional intensity.", bundle: 'pro' },
+        { q: "What is the ultimate goal of these four mindsets?", a: "To shift your baseline from automatic survival reactivity to grounded, conscious leadership.", bundle: 'pro' },
       ]
     },
   ],

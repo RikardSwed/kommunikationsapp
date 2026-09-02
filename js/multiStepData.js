@@ -4269,6 +4269,94 @@ const multiStepCollections = {
             { front: "Drive the Decision — (15 minutes later)", back: "\"I've cleared the floor. I suggest we order in and watch that movie you liked. Sound good?\"" },
           ]
         },
+        {
+          bundle: 'pro',
+          situation: "She is crying at the kitchen table, surrounded by piles of tax receipts and folders.",
+          steps: [
+            { front: "Shared Reality — she is sobbing and won't look at you.", back: "\"Is this tears because you feel overwhelmed by the tax preparation?\"" },
+            { front: "Handle the Burden — she nods and says \"Yes, it is too much.\"", back: "\"I've got this. Go take a warm bath. I'll organize these folders and enter them into the spreadsheet.\"" },
+            { front: "Drive the Decision — an hour later, the folders are sorted.", back: "\"I've sorted the folders. I suggest we schedule thirty minutes on Saturday to review the final numbers. Sound good?\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "She is frantically trying to clean up water from a leaking pipe under the bathroom sink, looking highly stressed.",
+          steps: [
+            { front: "Shared Reality — she snaps: \"This house is falling apart!\"", back: "\"Are you snapping because you feel alone and overwhelmed in dealing with this leak?\"" },
+            { front: "Handle the Burden — she nods: \"I don't even know how to shut off the valve.\"", back: "\"I've got this, Love. Step back and let me handle the water. I'll take complete ownership of the cleanup.\"" },
+            { front: "Drive the Decision — fifteen minutes later, the water is off.", back: "\"I've shut off the water. I suggest we call the emergency plumber now and let them handle the repair. Does that work?\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Securing the Foundation",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
+      description: "Track her Priorities → Stabilize the Frame → Establish the Container. This sequence trains you to manage her anxieties about the future by tracking her concerns, establishing stability, and setting firm relational boundaries.\n\n1. Track her Priorities — check in on her worries to show she is top of mind\n2. Stabilize the Frame — offer financial or structural plans to create safety\n3. Establish the Container — set clear rules of engagement to protect the relationship\n\nWhy just this order: you must track her worries first so she feels loved; then you offer structural stability, and finally you set a healthy container for connection. What people do instead: they ignore her anxiety until she gets angry, then they fight back and leave the finances unresolved. Mindset: delivering stability and boundaries is an act of deep Masculine love.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "She is looking at the monthly bills, sighing heavily and looking highly anxious about your savings.",
+          steps: [
+            { front: "Track her Priorities — she mutters about the costs.", back: "\"I've noticed you're feeling anxious about our savings lately. What's the biggest concern for you?\"" },
+            { front: "Stabilize the Frame — she says she's scared the bottom will drop out.", back: "\"I hear your fear. I'm creating a clear plan for our savings so you can feel the floor beneath you.\"" },
+            { front: "Establish the Container — she starts complaining that you spend too much on hobbies.", back: "\"No, Baby, we're not fighting about my hobbies. I want to connect. Let's speak from the heart.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Your lease is ending in two months, and she is stressed and constantly browsing rental listings.",
+          steps: [
+            { front: "Track her Priorities — she is endlessly scrolling on her phone at dinner.", back: "\"Are you feeling anxious about where we'll live next? Let me hear what's on your mind.\"" },
+            { front: "Stabilize the Frame — she says she's scared we won't find a safe neighborhood.", back: "\"I've researched the safety and schools in these three areas. Here is my security plan for us.\"" },
+            { front: "Establish the Container — she sighs and says we'll probably end up in a dump.", back: "\"We are going to find a great place. No negative talk on date night—tonight is just for connection.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You just experienced a sudden loss of income, and she is pacing the floor in a panic.",
+          steps: [
+            { front: "Track her Priorities — she looks at you with terror in her eyes.", back: "\"I see how terrified you are about our financial future. Tell me what feels most scary right now.\"" },
+            { front: "Stabilize the Frame — she whispers that we might lose the house.", back: "\"The job is gone, but we have a buffer and I have a plan to get the next one. We are going to be okay.\"" },
+            { front: "Establish the Container — she starts crying and shouting that you should have worked harder.", back: "\"I’m interested in your pain, but I won’t be insulted. Let's take a pause until we can speak from the heart.\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Leading the Connection",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
+      description: "Track her Priorities → Drive the Decision → Establish the Container. This sequence trains you to transition her from a stressed work-mind into a relaxed, connected space by tracking her world, driving plans, and establishing a positive container.\n\n1. Track her Priorities — show her she is top of mind by checking in on her day\n2. Drive the Decision — take charge of the evening's logistics to relieve her decision burden\n3. Establish the Container — set a firm boundary against distraction to protect your time together\n\nWhy just this order: you must validate her daily priorities first; then taking charge of plans allows her to relax, and establishing the container keeps your connection safe. What people do instead: they ask \"what do you want to do?\" and scroll on their phones, which kills polarity. Mindset: leading her into a healthy container is an act of love for the relationship.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "She comes home from an intense, exhausting day at the office, looking highly stressed and irritable.",
+          steps: [
+            { front: "Track her Priorities — she collapses onto the couch.", back: "\"I know you had that big presentation today. Tell me, how did it go?\"" },
+            { front: "Drive the Decision — she sighs and says she's too tired to think about cooking.", back: "\"I suggest we order in sushi and do dinner on the couch. I've already handled the order.\"" },
+            { front: "Establish the Container — she reaches for her phone to check work emails.", back: "\"Phones go in the drawer at eight. This is our time. No world-talk allowed.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "It's Saturday morning, and the day is open-ended and drifting into aimless tension.",
+          steps: [
+            { front: "Track her Priorities — she is quietly tidying up, looking flat.", back: "\"I've noticed you seem a bit distant today. Is there something emotionally alive for you?\"" },
+            { front: "Drive the Decision — she says she's just feeling stuck and aimless.", back: "\"I suggest we hit the beach at noon and do dinner on the way back. I'll pack the cooler.\"" },
+            { front: "Establish the Container — she starts complaining about her lazy brother on the phone.", back: "\"No, Baby, we're not doing family drama today. Let's make this day just about us. Come here.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "She is packing her bags for a business trip, looking highly anxious and second-guessing herself.",
+          steps: [
+            { front: "Track her Priorities — she is frantically checking her packing list.", back: "\"I know you're carrying a lot of stress for this trip. What's the hardest part of it today?\"" },
+            { front: "Drive the Decision — she is overwhelmed by too many clothing options.", back: "\"Let's simplify. I like these two options best. Pack the black suit.\"" },
+            { front: "Establish the Container — she gets snippy with you about where her charger is.", back: "\"No, Baby, we're not fighting right now. I want to connect before you leave. Come back to your heart.\"" },
+          ]
+        },
       ]
     },
   ],
@@ -4287,6 +4375,96 @@ const multiStepCollections = {
             { front: "Ujjayi Breath — you feel your chest clenching.", back: "(Perform one long, audible Ujjayi breath to settle your body chemistry)." },
             { front: "Reality Test — (Open eyes wide)", back: "\"I am sitting on the sofa. I am physically safe. She is just a woman in pain.\"." },
             { front: "Conscious Choice — you decide to speak.", back: "\"I hear that you're feeling alone, Baby. I'm right here.\" (Hear the pain, not the blame)." },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "She is pacing around the kitchen, slamming cabinet doors, and starts shouting that you never clean up after yourself.",
+          steps: [
+            { front: "The Watcher — you feel the urge to defend yourself or get angry.", back: "\"I see the story of unfairness arising in my mind. I don't have to obey it.\"" },
+            { front: "Ujjayi Breath — your chest is tightening.", back: "(Settle your chemistry with a deep, audible Ujjayi breath)." },
+            { front: "Reality Test — you look around the room.", back: "\"I am safe in this kitchen. These are just words. I will stay present.\"" },
+            { front: "Conscious Choice — you decide to respond.", back: "\"I hear you're feeling overwhelmed by the mess, Love. I'm right here with you.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You walk into the bedroom and she gives you a cold, disgusted look, then turns her back to you in silence.",
+          steps: [
+            { front: "The Watcher — you feel a wave of reactive panic or shame.", back: "\"I notice the 'Collapse' strategy trying to take over. I am choosing presence instead.\"" },
+            { front: "Ujjayi Breath — your breathing becomes shallow.", back: "(Perform one long, slow, audible Ujjayi breath to anchor your system)." },
+            { front: "Reality Test — you feel your feet on the ground.", back: "\"I am physically safe in this bedroom. Her silence cannot destroy me.\"" },
+            { front: "Conscious Choice — you step forward.", back: "\"I feel the distance between us, Love. I'm right here when you're ready to talk.\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Proactive Presence",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
+      description: "Provocation Visualization → Ujjayi Breath → Conscious Choice (IAM).\nThis sequence trains you to prepare for intense relational friction by visualizing triggers, regulating your chemistry beforehand, and choosing your posture deliberately.\n\n1. Provocation Visualization — stoke the trigger in meditation to practice grounding\n2. Ujjayi Breath — settle your nervous system before the interaction\n3. Conscious Choice (IAM) — lead with deliberate movements and words\n\nWhy just this order: you must acclimate to the trigger in your mind first, then settle your body chemistry, and finally execute your deliberate actions cleanly.\nWhat people do instead: they walk into the fire unprepared, get triggered instantly, and react on autopilot.\nMindset: a wise man on the mountain must learn to ground himself before the fire starts.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You are preparing to make a highly difficult call to her about a family issue that will likely upset her.",
+          steps: [
+            { front: "Provocation Visualization — you sit with eyes closed before the call.", back: "(See her getting angry in your mind and practice staying grounded)." },
+            { front: "Ujjayi Breath — you feel your heart racing.", back: "(Take three slow, conscious Ujjayi breaths to settle your body chemistry)." },
+            { front: "Conscious Choice (IAM) — you pick up the phone.", back: "\"I am choosing to speak deliberately and with full presence. Let's make this call.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You are about to sit down with her to sync your busy calendars, and you know she is highly anxious about it.",
+          steps: [
+            { front: "Provocation Visualization — you take five minutes alone in your office.", back: "(Envision her irritation and practice holding your steady posture)." },
+            { front: "Ujjayi Breath — you walk into the living room.", back: "(Perform an audible Ujjayi breath to align your nervous system)." },
+            { front: "Conscious Choice (IAM) — you sit down beside her.", back: "\"I am choosing to sit upright, hold steady eye contact, and lead this discussion.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You are driving home from an intense day at work, knowing she is already stressed with the kids.",
+          steps: [
+            { front: "Provocation Visualization — you park the car outside the house.", back: "(Visualize the chaos inside and accept that you will remain unswayable)." },
+            { front: "Ujjayi Breath — you turn off the engine.", back: "(Inhale deeply and use a long Ujjayi exhale to clear your work tension)." },
+            { front: "Conscious Choice (IAM) — you open the front door.", back: "\"I am choosing to walk in slowly, put my phone away, and hold space for her.\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "The Unswayable Lead",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
+      description: "The Watcher → Ujjayi Breath → Conscious Choice (IAM).\nThis sequence trains you to maintain complete somatic presence during active conflict by observing your stories, settling your chemistry, and leading with conscious deliberateness.\n\n1. The Watcher — observe your reactive impulses without obeying them\n2. Ujjayi Breath — slow the flow of breath to break the monopoly of your thoughts\n3. Conscious Choice (IAM) — choose your next physical movement three times slower than usual\n\nWhy just this order: you must step outside the story first, then physically ground your nervous system, and only then move or speak from your Masculine center.\nWhat people do instead: they run with the story of her unfairness, get defensive, and react with rapid, panicked movements.\nMindset: her emotional storm is transient weather; my stillness is the Oak.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You propose a vacation budget. She sighs in disgust: \"You always make bad financial decisions, we'll end up broke.\"",
+          steps: [
+            { front: "The Watcher — you feel the urge to argue or explain.", back: "\"I see the 'Defense' strategy trying to take over. I stop the logic.\"" },
+            { front: "Ujjayi Breath — you feel your heart rate rising.", back: "(Perform one long, audible Ujjayi breath to settle your body chemistry)." },
+            { front: "Conscious Choice (IAM) — you look her in the eye.", back: "\"I choose to hold a steady gaze and speak calmly. I will hold my frame.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "She criticizes your parenting in front of your son, trying to goad you into a fight.",
+          steps: [
+            { front: "The Watcher — you feel a wave of defensive anger rising.", back: "\"I notice the story of being attacked. I choose to remain the observer.\"" },
+            { front: "Ujjayi Breath — your throat feels constricted.", back: "(Breathe deeply into your belly, letting the audible sound anchor you)." },
+            { front: "Conscious Choice (IAM) — you stand tall.", back: "\"I choose to stand with a grounded posture and speak from my heart.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "At a dinner with friends, she makes a sharp, sarcastic dig about your hobbies.",
+          steps: [
+            { front: "The Watcher — you feel the urge to laugh it off or make a sarcastic comeback.", back: "\"I see the urge to please or lash back. I choose to stay present in my center.\"" },
+            { front: "Ujjayi Breath — you feel your body clenching under the table.", back: "(Use a deep Ujjayi breath to soften your muscles and stay calm)." },
+            { front: "Conscious Choice (IAM) — you speak to her privately afterwards.", back: "\"I choose to address the boundary deliberately: respect in front of others is important.\"" },
           ]
         },
       ]

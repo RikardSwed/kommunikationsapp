@@ -10825,9 +10825,14 @@ const collectionsModeData = {
       guideBack: "A possible response (strategy in brackets).",
       description: "Drive the Decision, Handle the Burden, and Stabilize the Frame. Use these for the \"external\" world and the logistics of life.\nThe focus is on being the organizing force that creates order and security.",
       inputs: [
-        { q: "She is grumbling about the taxes being due and her own procrastination.", a: "\"I'll handle the accountant this year. You just give me the receipts.\" (Handle the Burden)", bundle: 'pro' },
-        { q: "You are standing in the airport and she is stressed about where to go.", a: "\"Follow me. We're going to Gate B. I've already checked the board.\" (Drive the Decision)", bundle: 'pro' },
-        { q: "She is asking \"What's the plan for our savings?\" for the third time.", a: "\"I've created a budget and researched these two investment options. Let's look at them tonight.\" (Stabilize the Frame)", bundle: 'pro' },
+        { q: "She is grumbling about the taxes being due and her own procrastination.", a: "\"I'll handle the accountant this year. You just give me the receipts.\" [Handle the Burden]", bundle: 'pro' },
+        { q: "You are standing in the airport and she is stressed about where to go.", a: "\"Follow me. We're going to Gate B. I've already checked the board.\" [Drive the Decision]", bundle: 'pro' },
+        { q: "She is asking \"What's the plan for our savings?\" for the third time.", a: "\"I've created a budget and researched these two investment options. Let's look at them tonight.\" [Stabilize the Frame]", bundle: 'pro' },
+        { q: "She looks completely overwhelmed by the piles of stuff in the small apartment.", a: "\"Sit down. I’m going to bring you items one by one, and you just tell me 'keep' or 'toss'.\" [Handle the Burden]", bundle: 'pro' },
+        { q: "She is stressed about which schools to research for your child.", a: "\"I’ve researched the safety and schools in these three areas. Here is my top pick.\" [Drive the Decision]", bundle: 'pro' },
+        { q: "She is complaining about a sticking door in the laundry room.", a: "\"I noticed that too. I'm fixing it this Saturday morning.\" [Handle the Burden]", bundle: 'pro' },
+        { q: "She is worried about your speculative investments and wants to see a clear plan.", a: "\"I hear your fear. I'm creating a clear plan for our savings so you can feel the floor beneath you.\" [Stabilize the Frame]", bundle: 'pro' },
+        { q: "It's Saturday morning and the day is open-ended and aimless.", a: "\"I suggest we hit the beach at noon and do dinner on the way back. I'll pack the cooler.\" [Drive the Decision]", bundle: 'pro' },
       ]
     },
     {
@@ -10836,9 +10841,30 @@ const collectionsModeData = {
       guideBack: "A possible response (strategy in brackets).",
       description: "Track her Priorities and Handle the Burden. These are mundane acts that serve as \"proxies for love\" to the Feminine.\nIt is the difference between saying \"I love you\" and proving it through your attention.",
       inputs: [
-        { q: "She has been struggling with a broken garage door that you haven't noticed.", a: "\"I saw the door was sticking. I'm fixing it right now so you don't have to wrestle with it anymore.\" (Handle the Burden)", bundle: 'pro' },
-        { q: "Her mother had a difficult doctor's visit today.", a: "\"How did it go with your mom today? I know you were worried about her.\" (Track her Priorities)", bundle: 'pro' },
-        { q: "She is overwhelmed by her work-to-do list.", a: "\"Tell me the top three things on your plate. I'll take [X] off your hands today.\" (Handle the Burden)", bundle: 'pro' },
+        { q: "She has been struggling with a broken garage door that you haven't noticed.", a: "\"I saw the door was sticking. I'm fixing it right now so you don't have to wrestle with it anymore.\" [Handle the Burden]", bundle: 'pro' },
+        { q: "Her mother had a difficult doctor's visit today.", a: "\"How did it go with your mom today? I know you were worried about her.\" [Track her Priorities]", bundle: 'pro' },
+        { q: "She is overwhelmed by her work-to-do list.", a: "\"Tell me the top three things on your plate. I'll take [X] off your hands today.\" [Handle the Burden]", bundle: 'pro' },
+        { q: "You know her friend is going through a very painful divorce.", a: "\"How is she doing today? I know you've been carrying a lot of her stress lately.\" [Track her Priorities]", bundle: 'pro' },
+        { q: "The car is making a strange noise and she is anxious about driving it.", a: "\"I'll take it to the shop on my way to work Monday. I'll handle the communication with them.\" [Handle the Burden]", bundle: 'pro' },
+        { q: "She has been dealing with a highly difficult colleague at her work all week.", a: "\"Did you have to deal with him today? I'm curious how you handled it.\" [Track her Priorities]", bundle: 'pro' },
+        { q: "She is struggling with her business license renewal and dealing with red tape.", a: "\"Let's sit down for thirty minutes. I'll help you plow through the paperwork right now.\" [Handle the Burden]", bundle: 'pro' },
+        { q: "She is preparing for a highly meaningful family gathering this weekend.", a: "\"What's the most important thing I can do to help you feel supported for the party this weekend?\" [Track her Priorities]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Holding the Container",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Track her Priorities, Stabilize the Frame, and Establish the Container. Choose between these when navigating her emotional safety and relationship boundaries.\n\n• Track her Priorities — when she needs to feel seen, remembered, and top of mind\n• Stabilize the Frame — when she is anxious about long-term future and financial security\n• Establish the Container — when she is violating relationship respect or needs firm relational rules\n\nThe crucial question is: are you tracking her world, protecting the future, or defending the relationship culture? The common mistake is trying to comfort her with sweet words when she actually needs you to establish a firm, non-negotiable rule.\n\nMindset: my presence is the ultimate source of safety in her emotional storms.",
+      inputs: [
+        { q: "You are about to go on a trip that has been highly stressful in the past.", a: "\"Baby, we’re going to have fun. No fighting, just relaxation. Can we commit to that?\" [Establish the Container]", bundle: 'pro' },
+        { q: "She is worried about risky spending on a new car and feels unsafe.", a: "\"I hear your fear. I'm creating a clear plan for our savings so you can feel the floor beneath you.\" [Stabilize the Frame]", bundle: 'pro' },
+        { q: "She starts getting snippy and rude with you during a quiet dinner.", a: "\"No, Baby, we’re not fighting right now. I want to connect with you. Come back to your heart.\" [Establish the Container]", bundle: 'pro' },
+        { q: "You notice she has been unusually quiet and flat for the entire day.", a: "\"I've noticed you seem a bit distant. Is there something emotionally alive for you that I can hear about?\" [Track her Priorities]", bundle: 'pro' },
+        { q: "You are setting a boundary against verbal insults during a heated argument.", a: "\"I’m interested in your pain, but I won’t be insulted. Let's take a pause until we can speak from the heart.\" [Establish the Container]", bundle: 'pro' },
+        { q: "She is grieving the loss of her grandmother on the anniversary of her passing.", a: "\"I know today is the anniversary. I'm here for whatever you're feeling today.\" [Track her Priorities]", bundle: 'pro' },
+        { q: "She is pushing you to make a highly reckless financial move with your joint savings.", a: "\"I hear your desire, but as the leader of our stability, I have to say 'No' for now.\" [Stabilize the Frame]", bundle: 'pro' },
+        { q: "You are stuck in a silent treatment cycle after a major fight.", a: "\"I propose we both write five things we appreciate about each other and read them on a walk now.\" [Establish the Container]", bundle: 'pro' },
       ]
     },
   ],
@@ -10849,9 +10875,14 @@ const collectionsModeData = {
       guideBack: "A possible response (strategy in brackets).",
       description: "The Watcher, Ujjayi Breath, and Conscious Choice. These are your \"on-the-spot\" tools for staying present in daily interactions.\nThey break the monopoly of the thinking mind and bring you back into reality.",
       inputs: [
-        { q: "You feel your mind spinning in stories of how \"crazy\" she's being.", a: "(Watcher) \"I notice the 'crazy' label arising. I'm staying with her heart instead.\" (Watcher/Presence)", bundle: 'pro' },
-        { q: "Your nervous system is on high alert because she's silent.", a: "(Ujjayi) (Audible breath to settle chemistry) \"I am fine. I need nothing.\" (Ujjayi/Sign-seeking)", bundle: 'pro' },
-        { q: "You want to leave the room because things are getting prickly.", a: "(Conscious Choice) \"I am choosing to stay and lead us back to connection.\" (Choice/Watcher)", bundle: 'pro' },
+        { q: "You feel your mind spinning in stories of how \"crazy\" she's being.", a: "(Watcher) \"I notice the 'crazy' label arising. I'm staying with her heart instead.\" [The Watcher]", bundle: 'pro' },
+        { q: "Your nervous system is on high alert because she's silent.", a: "(Ujjayi) (Audible breath to settle chemistry) \"I am fine. I need nothing.\" [Ujjayi Breath]", bundle: 'pro' },
+        { q: "You want to leave the room because things are getting prickly.", a: "(Conscious Choice) \"I am choosing to stay and lead us back to connection.\" [Conscious Choice (IAM)]", bundle: 'pro' },
+        { q: "You feel a strong urge to shout back during a heated disagreement.", a: "(Watch the impulse) \"I see the urge to defend myself arising. I'm choosing to stay present instead.\" [The Watcher]", bundle: 'pro' },
+        { q: "You notice your jaw clenching and your breathing stopping as she raises her voice.", a: "(Inhale deeply and perform an audible Ujjayi exhale to settle your chemistry). [Ujjayi Breath]", bundle: 'pro' },
+        { q: "You feel \"numb and dumb\" or frozen while she is ranting.", a: "(Explicit choice) \"I'm choosing to take one conscious breath.\" [Conscious Choice (IAM)]", bundle: 'pro' },
+        { q: "You find yourself checking your phone to avoid an awkward silence.", a: "(Observe the distraction) \"I'm using this phone to bleed off anxiety. I'm putting it down now.\" [The Watcher]", bundle: 'pro' },
+        { q: "You're about to enter her personal space while she's upset.", a: "(Move deliberately) \"I'm going to touch her shoulder now—three times slower than usual.\" [Conscious Choice (IAM)]", bundle: 'pro' },
       ]
     },
     {
@@ -10860,9 +10891,30 @@ const collectionsModeData = {
       guideBack: "A possible response (strategy in brackets).",
       description: "Provocation Visualization and Intensity Expanders. Use these to build the \"nervous system muscle\" that allows you to handle her emotional storms.\nBy suffering a little in practice, you grow the capacity to stay grounded in life.",
       inputs: [
-        { q: "You're practicing a difficult yoga pose or physical hold.", a: "(Map it over) \"This physical pain is like the anxiety of her anger. I can withstand this.\" (Intensity Expansion)", bundle: 'pro' },
-        { q: "You're visualizing a scenario where you lose your status or job.", a: "\"I would be okay. My worth is not my job.\" (Provocation/Reality Test)", bundle: 'pro' },
-        { q: "You're holding your breath and feel the panic rising.", a: "(Surrender) \"I settle into the panic. I die with dignity in this visualization.\" (Somatic Surrender)", bundle: 'pro' },
+        { q: "You're practicing a difficult yoga pose or physical hold.", a: "(Map it over) \"This physical pain is like the anxiety of her anger. I can withstand this.\" [Provocation Visualization]", bundle: 'pro' },
+        { q: "You're visualizing a scenario where you lose your status or job.", a: "\"I would be okay. My worth is not my job.\" [Provocation Visualization]", bundle: 'pro' },
+        { q: "You're holding your breath and feel the panic rising.", a: "(Surrender) \"I settle into the panic. I die with dignity in this visualization.\" [Provocation Visualization]", bundle: 'pro' },
+        { q: "You visualize her giving you \"that look\" of pure disgust during meditation.", a: "(Hold the pose in your mind) \"I accept that she might be angry, and I will be fine.\" [Provocation Visualization]", bundle: 'pro' },
+        { q: "You are meditating and the thought of her leaving you arises.", a: "\"I surrender to the possibility. It would be painful, but I would survive.\" [Provocation Visualization]", bundle: 'pro' },
+        { q: "You imagine approaching a beautiful woman and being rejected.", a: "\"I enjoy the 'wanting' regardless of the 'getting.' I am unswayable.\" [Provocation Visualization]", bundle: 'pro' },
+        { q: "You visualize a man challenging you or cutting the line.", a: "\"I accept the confrontation could happen. I settle into my own power.\" [Provocation Visualization]", bundle: 'pro' },
+        { q: "You are holding a difficult plank and your body is screaming at you to quit.", a: "(Breathe) \"I can tolerate this physical discomfort. Settle my nervous system.\" [Ujjayi Breath]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Stop, Breathe, and Lead",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "The Watcher, Ujjayi Breath, and [Conscious Choice (IAM)]. These are your tools for staying centered when she triggers your defense mechanisms.\nBy prioritizing physical presence and deliberate choice over reactive defense, you maintain your Masculine core.\n\n• The Watcher — step outside the drama to observe your thoughts\n• Ujjayi Breath — settle your body chemistry with conscious breathing\n• [Conscious Choice (IAM)] — move and speak with deliberate intent\n\nThe crucial question is: are you reacting to her storm, or are you choosing your response?\nMindset: choosing grounded presence even when your body screams to run.",
+      inputs: [
+        { q: "She is criticizing your driving and you feel a wave of reactive anger.", a: "(Observe the story) \"I notice my mind creating a story to protect me from the anxiety of her criticism.\" [The Watcher]", bundle: 'pro' },
+        { q: "She just blew fire at you and your heart is racing.", a: "(Settle your chemistry with a slow, audible Ujjayi breath into your belly). [Ujjayi Breath]", bundle: 'pro' },
+        { q: "You feel a surge of shame and want to apologize sycophantically to make the tension stop.", a: "(Watch the collapse) \"I'm seeking approval to end the fire. I'll hold my truth instead.\" [The Watcher]", bundle: 'pro' },
+        { q: "You're about to initiate a highly difficult conversation.", a: "(Take three slow, conscious Ujjayi breaths before you open your mouth). [Ujjayi Breath]", bundle: 'pro' },
+        { q: "You feel the urge to speak rapidly to fill an awkward gap during a fight.", a: "(Explicit choice) \"I am choosing to stay in the silence for five more seconds.\" [Conscious Choice (IAM)]", bundle: 'pro' },
+        { q: "You want to change positions while being intimate with her.", a: "(Move her with control) \"I am rolling her over now. Slow, steady pressure.\" [Conscious Choice (IAM)]", bundle: 'pro' },
+        { q: "You notice yourself slouching or shrinking in the room during her rant.", a: "(Chosen posture) \"I'm choosing to stand upright and occupy my full space.\" [Conscious Choice (IAM)]", bundle: 'pro' },
+        { q: "You want to leave the room because things are getting prickly.", a: "(The Watcher's check) \"My body feels under threat, but I am physically safe. I stay.\" [The Watcher]", bundle: 'pro' },
       ]
     },
   ],

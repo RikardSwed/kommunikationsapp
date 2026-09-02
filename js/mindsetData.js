@@ -2341,6 +2341,11 @@ const mindsetCollections = {
         { q: "I feel like I'm \"doing all the work\" logistically.", a: "\"Providing structure is my gift. When I lead well, she can relax into her radiance.\"", bundle: 'pro' },
         { q: "I think she's a \"capable woman\" so she doesn't need my help.", a: "\"She *can* do it, but she doesn't want to *have* to do it. My lead relieves her burden.\"", bundle: 'pro' },
         { q: "I'm afraid she'll think I'm being \"domineering\" if I make a plan.", a: "\"Leadership is an invitation, not a command. She craves my direction, not my dominance.\"", bundle: 'pro' },
+        { q: "I feel like a domineering jerk when I set a limit on suitcase size.", a: "\"Setting a limit because of the rental car's size is not bullying; it is providing real, loving structure.\"", bundle: 'pro' },
+        { q: "I think parenting decisions should always be joint to stay completely democratic.", a: "\"Egalitarian drifting leaves her lonely and unpartnered. I must bring my own clear perspectives.\"", bundle: 'pro' },
+        { q: "I feel like a controlling tyrant when I propose a structured plan for our savings.", a: "\"Providing structural safety is not tyranny; it is my responsibility as a Provider to ensure the bottom doesn't drop out.\"", bundle: 'pro' },
+        { q: "I hesitate to set clear relational rules of engagement because I worry I am imposing on her autonomy.", a: "\"Relational boundaries are not an imposition; they protect the container so her Feminine heart can feel safe.\"", bundle: 'pro' },
+        { q: "I feel like I am steamrolling her when I make a firm executive decision about our weekend timeline.", a: "\"My clarity is an invitation to ride, not a command. She wants to relax into my direction.\"", bundle: 'pro' },
       ]
     },
     {
@@ -2352,6 +2357,59 @@ const mindsetCollections = {
         { q: "I think the \"little things\" (like the milk) don't matter.", a: "\"To her, it's not about the milk—it's about whether I'm tracking her and our life together.\"", bundle: 'pro' },
         { q: "I'm too busy at work to think about her challenges.", a: "\"If I'm not tracking what's alive for her, she feels forgotten. My attention is a proxy for my love.\"", bundle: 'pro' },
         { q: "I'll just wait for her to ask for help.", a: "\"Waiting to be told what to do is abdicating. Proactive tracking is Masculine leadership.\"", bundle: 'pro' },
+        { q: "I feel a resistance to tracking her family's medical issues because it's not my problem.", a: "\"She needs to feel that she and her loved ones are in my field of attention to feel safe.\"", bundle: 'pro' },
+        { q: "I want to ignore her quiet, flat mood because she isn't actively complaining.", a: "\"Waiting for her to blow up is lazy. Checking in on her heart shows she is my priority.\"", bundle: 'pro' },
+        { q: "I think verbal expressions of \"I love you\" are enough to reassure her.", a: "\"The Feminine needs to see love demonstrated in action. Verbal loops don't build trust.\"", bundle: 'pro' },
+        { q: "I feel underappreciated when I do chores and she still complains about other things.", a: "\"I don't do things to get credit. I provide care because that is who I am and how I choose to live.\"", bundle: 'pro' },
+        { q: "I think she should handle her own emotional stress when she's upset with her friends.", a: "\"She wants me to track her priorities. My focused attention is what allows her to relax.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Nice Guy",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Hiding my needs, caving to her demands, and avoiding conflict is the path to a peaceful relationship.\"\n\n**What is true instead:** hiding your needs is manipulative, turns you into an approval-seeking boy, and kills her respect.\n\n**Why it feels right:** society tells you masculinity is toxic, and you want to be a \"good boy\" who keeps the peace.\n\n**What it costs:** you her trust; she cannot relax with a man who has no backbone or boundaries.\n\n• Nice Guy Pleasing — reclaim your power by owning what you want\n\nMindset: what I want matters, and a strong No is what makes my Yes trustworthy.",
+      inputs: [
+        { q: "I should say \"whatever you want\" when she asks where we should eat.", a: "\"Lukewarm deferral is lame. I will own my desires and propose a clear choice.\"", bundle: 'pro' },
+        { q: "I want to hide my career ambitions because she might feel left behind.", a: "\"Suppressing my drive to protect her comfort only emasculates me. A leader stands by his purpose.\"", bundle: 'pro' },
+        { q: "I want to ask her permission for everything to stay safe and out of trouble.", a: "\"Seeking permission is a pleaser habit that turns her into my mother. I lead myself first.\"", bundle: 'pro' },
+        { q: "I'll agree to pick her up even though it hurts my work because I don't want to disappoint her.", a: "\"If I say yes out of fear of conflict, I will only breed resentment. My time matters.\"", bundle: 'pro' },
+        { q: "I feel like a bad person for putting my needs first sometimes.", a: "\"I cannot serve my family unless I attend to my own basic needs first. Self-care is leadership.\"", bundle: 'pro' },
+        { q: "I'll say yes to her sister's dinner even though I dread it, and hope it earns me some goodwill.", a: "\"Goodwill bought with a resented yes is a loan I will want repaid. I'll say what I actually want.\"", bundle: 'pro' },
+        { q: "I want to apologize profusely for things I didn't do just to calm her down.", a: "\"Sycophantic apologies are weak. I stand my ground in truth and lead.\"", bundle: 'pro' },
+        { q: "If I tell her I want an evening to myself, she'll take it as rejection.", a: "\"A man with no time of his own has nothing to bring back. I'll ask plainly and let her have her reaction.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Conflict",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Her emotional outbursts are a threat to my safety, or proof that I am failing.\"\n\n**What is true instead:** her emotional storm is not an attack; it is just transient weather that wants your grounded containment. It feels right to defend, explain, or withdraw because her blaming triggers your childhood wounds.\n\n**What it costs:** you connection, proving to her nervous system that you are too reactive to handle her fire.\n\n• Relational Conflict — stay grounded as Shiva to contain her storm\n\nMindset: this is just energy; I am physically safe and I can handle this fire.",
+      inputs: [
+        { q: "I need to logically correct her facts immediately so she stops being mad.", a: "\"Feelings first, facts later. Addressing emotion with logic never works. Hear her pain.\"", bundle: 'pro' },
+        { q: "I want to run out of the room or freeze when she blasts me with messy emotions.", a: "\"Withdrawal is a boy's defense. A Masculine leader breathes, stays, and contains the storm.\"", bundle: 'pro' },
+        { q: "When she is this upset I start counting up how unfair the whole thing is.", a: "\"Keeping score is the boy's move. I am the one who can steady this, so I will.\"", bundle: 'pro' },
+        { q: "I think our relationship is completely broken because she is having a conflict.", a: "\"Conflict is an opportunity to display solidity. Settle my nervous system and hold space.\"", bundle: 'pro' },
+        { q: "I want to use the silent treatment to punish her for her angry outburst.", a: "\"The silent treatment is a childish defense. I stay engaged and connected.\"", bundle: 'pro' },
+        { q: "I feel my chest tightening and my breath shallowing as her anger rises.", a: "(Perform a body scan) I am clenching. I relax. I am safe in this room.", bundle: 'pro' },
+        { q: "If I don't agree with her version of events, she'll only get louder.", a: "\"Agreeing to end the noise is a lie she will feel. I can hear the hurt without signing the story.\"", bundle: 'pro' },
+        { q: "I need her to know that I wasn't trying to hurt her.", a: "\"My intentions are mine to know. Her experience is what needs my attention right now.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Equality",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"We are equal partners, so she doesn't need my leadership or direction.\"\n\n**What is true instead:** modern relationships are not improved by having no leader at all.\n\n**Why it feels right:** she is highly competent, independent, and you want to respect her power.\n\n**What it costs:** polarity, forcing her to carry the emotional and logistical burden alone until she gets resentful.\n\nMindset: offering my lead is a gift of service, not an act of dominance.",
+      inputs: [
+        { q: "Since she's a capable woman, I should let her decide where we go on vacation.", a: "\"Leaving her to plan alone makes her feel abandoned. Proactive proposals are my gift of leadership.\"", bundle: 'pro' },
+        { q: "She is a grown-up, so she should call the plumber or handle difficult systems herself.", a: "\"She is capable, but dealing with difficult logistics alone makes her feel unpartnered. I will handle the burden.\"", bundle: 'pro' },
+        { q: "I think she should manage her own family drama and work stress without my interference.", a: "\"Proactive tracking of her world shows she is top of mind. My focused attention is love.\"", bundle: 'pro' },
+        { q: "It feels bossy and controlling to set rules about no phones or no fighting during our dates.", a: "\"Relational boundaries are not control; they protect the connection so she can drop her armor.\"", bundle: 'pro' },
+        { q: "I believe our finances should be handled jointly down to the penny with equal debate.", a: "\"Democratic drifting causes anxiety. Taking ownership of long-term stability is my responsibility as Provider.\"", bundle: 'pro' },
+        { q: "If she wants to go out, she can initiate it; I don't want to force my choice.", a: "\"She craves my direction, not my passivity. I will proactively propose a clear date plan.\"", bundle: 'pro' },
+        { q: "It's her personal work project, so I should stay out of it and let her handle it.", a: "\"Stepping in to help with her hard task is action-oriented love. I will take complete ownership.\"", bundle: 'pro' },
+        { q: "She didn't ask me for help with her business paperwork, so she must have it handled.", a: "\"Waiting to be told what to do is abdicating my leadership. I will proactively offer my support.\"", bundle: 'pro' },
       ]
     },
   ],
@@ -2365,6 +2423,11 @@ const mindsetCollections = {
         { q: "I'm lost in thoughts about what she said yesterday.", a: "\"My thoughts are in the past. My body is in the 'now'. I'll focus on my breath.\".", bundle: 'pro' },
         { q: "I'm worried about what will happen if we keep fighting.", a: "\"Worry is just a future story. I'll feel the ground under my feet. Reality is safe.\".", bundle: 'pro' },
         { q: "I feel \"locked up\" in my head during a conflict.", a: "\"I'll shift my attention to the clenching in my jaw. Somatic sensation is truth; stories are illusions.\".", bundle: 'pro' },
+        { q: "My mind is spinning in stories about how unfair her criticism is.", a: "\"Her anger is just energy in the room. I will feel the breath moving in my chest and ignore the story.\"", bundle: 'pro' },
+        { q: "I am anticipating that our date night will end in a fight.", a: "\"I am projecting a future story. I will feel the solid seat of this chair and return to the present.\"", bundle: 'pro' },
+        { q: "I am replaying her cold tone from this morning over and over in my head.", a: "\"The cold look is in the past. I am here now. I will focus on the feeling of the steering wheel in my hands.\"", bundle: 'pro' },
+        { q: "I feel a massive wave of anxiety when she raises her voice.", a: "\"Anxiety is just an unpleasant physical sensation. I will let it exist in my body without needing to fix it.\"", bundle: 'pro' },
+        { q: "I'm trying to logically analyze why she is acting this way.", a: "\"Logical analysis keeps me in my head. I will drop my attention into my belly and breathe.\"", bundle: 'pro' },
       ]
     },
     {
@@ -2376,6 +2439,43 @@ const mindsetCollections = {
         { q: "I feel like I'm \"just a nervous person\" and can't change.", a: "\"My nervous system is plastic. I can train it to handle this fire, one breath at a time.\".", bundle: 'pro' },
         { q: "I want to quit my meditation or exercise because it's too hard.", a: "\"This resistance is exactly where the growth happens. I'm building my lead.\".", bundle: 'pro' },
         { q: "I'm discouraged that I got reactive again.", a: "\"Training takes months, not days. I'll do a do-over and get back to practice.\".", bundle: 'pro' },
+        { q: "I feel like my body is too weak to withstand her emotional storms.", a: "\"Somatic capacity is built by staying in the fire. Every storm I contain makes me more solid.\"", bundle: 'pro' },
+        { q: "I feel silly visualizing her anger during my daily meditation.", a: "\"Provocation Visualization is how I train the muscle. Suffer a little in practice to be strong in the kitchen.\"", bundle: 'pro' },
+        { q: "I want to skip my daily embodiment practice because I am too tired.", a: "\"Consistency is what rewires the nervous system. Five minutes of Ujjayi now is a deposit in my solidity.\"", bundle: 'pro' },
+        { q: "I'm frustrated that my heart still races when she gets upset.", a: "\"My heart racing is just an automatic reaction. I will train my system to breathe through the arousal.\"", bundle: 'pro' },
+        { q: "I feel like avoiding physical holds or discomfort because they are unpleasant.", a: "\"Discomfort is the gym for my nervous system. I will hold the pose and expand my capacity.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Triggers",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"I shouldn't intentionally visualize stressful things because it just makes me feel worse.\"\n\n**What is true instead:** using visualization to stoke anxiety feels like self-punishment or a waste of energy.\n\n**Why it feels right:** seek only peaceful, calm meditations because you want to escape the stress of daily life.\n\n**What it costs:** you solidity, leaving your nervous system completely unprepared when her active storm hits.\n\nMindset: stoking the trigger in practice is the gym that makes me unshakeable in the kitchen.",
+      inputs: [
+        { q: "I feel resistance to visualizing her angry face during meditation.", a: "\"Avoiding the trigger in my mind ensures I will collapse when it happens in real life. Stoke the fire.\"", bundle: 'pro' },
+        { q: "I worry that imagining bad scenarios will manifest them in my life.", a: "\"Visualization is training my response, not inviting the disaster. I am building somatic capacity.\"", bundle: 'pro' },
+        { q: "I want to keep my meditation completely peaceful and relaxed.", a: "\"Peace is easy in a vacuum. I must learn to ground myself while feeling the intensity.\"", bundle: 'pro' },
+        { q: "I feel a wave of anxiety when I visualize a confrontation.", a: "\"This anxiety is exactly what I am here to acclimate to. Settle my system and stay seated.\"", bundle: 'pro' },
+        { q: "I think visualizing her leaving is too painful to sit with.", a: "\"If I can't survive the thought of her leaving in meditation, I cannot lead with boundaries in real life.\"", bundle: 'pro' },
+        { q: "I want to stop the visualization the moment my heart starts racing.", a: "\"My heart racing is the cue to practice. I will breathe deeply and connect my intention to my action.\"", bundle: 'pro' },
+        { q: "I feel like a poser for practicing my boundaries in an imaginary scenario.", a: "\"Mental rehearsal is how top performers master intensity. I am honing my Masculine core.\"", bundle: 'pro' },
+        { q: "I think this visualization doesn't map over to real life.", a: "\"The nervous system doesn't know the difference between real and imagined threat. The capacity I build here maps over.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Deliberateness",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Choosing my movements and words beforehand feels fake, robotic, and unnatural.\"\n\n**What is true instead:** slowing down and deliberately intending each action feels manipulative or overly controlled.\n\n**Why it feels right:** operate on spontaneous autopilot because we are taught that authenticity is always impulsive.\n\n**What it costs:** you your power, leaving you to move frantic and \"bird-like\" under the influence of social anxiety.\n\nMindset: deliberateness is the ultimate expression of conscious, Masculine power.",
+      inputs: [
+        { q: "I feel fake when I intentionally slow my physical movements down to three times slower.", a: "\"Slowing down is not fake; it breaks the monopoly of my frantic autopilot. Move with control.\"", bundle: 'pro' },
+        { q: "I hesitate to pause and form my words in my mind before speaking.", a: "\"Rushing to speak is a reaction to anxiety. Choosing my words beforehand is a gift of clarity.\"", bundle: 'pro' },
+        { q: "I feel robotic when I practice slow, deliberate movements in bed.", a: "\"Frantic speed is what shuts her down. Deliberate, slow pressure builds safety and energetic polarity.\"", bundle: 'pro' },
+        { q: "I want to let my hands move automatically because it feels more natural.", a: "\"Automatic movement under stress is just anxious fidgeting. I will choose every touch consciously.\"", bundle: 'pro' },
+        { q: "I think pausing for five seconds before responding to her criticism makes me look weak.", a: "\"A rapid response is what a boy does. A Masculine leader takes his seat in the pause.\"", bundle: 'pro' },
+        { q: "I feel awkward holding a steady posture and eye contact when she is upset.", a: "\"Slouching is an unconscious way of trying to become invisible. I choose to stand upright and occupy space.\"", bundle: 'pro' },
+        { q: "I'm tempted to speak rapidly to get my point across before she interrupts.", a: "\"Rapid speech is fueled by social anxiety. I choose to speak with ease and control at a measured pace.\"", bundle: 'pro' },
+        { q: "I feel like planning my physical movements during intimacy is manipulative.", a: "\"My deliberate presence is an invitation to ride, not control. I lead so she can relax.\"", bundle: 'pro' },
       ]
     },
   ],
