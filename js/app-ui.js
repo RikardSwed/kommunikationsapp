@@ -2377,7 +2377,14 @@ if (document.getElementById('dashboardScreen')) showTab('dashboard');
       // a banner says what it costs; being able to look at the contents is the
       // whole reason to list it.
       const prog = programsData.find(p => p.id === card.dataset.progId);
-      if (prog) renderProgramDetail(prog);
+      if (!prog) return;
+      // v1.27.77 - the programme guide runs before the programme screen, once,
+      // on whichever programme the user taps first. Locked ones included: a Pro
+      // programme opens for browsing, and someone looking at a route they
+      // cannot run yet needs the explanation more, not less.
+      const openDetail = () => renderProgramDetail(prog);
+      if (!(window.maybeShowGuide && window.maybeShowGuide('programs-overview', openDetail)))
+        openDetail();
     };
   }
 

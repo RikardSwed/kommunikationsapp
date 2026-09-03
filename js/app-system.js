@@ -1212,15 +1212,17 @@ applyInputCounterVisibility();
       if (curLevel === 'complete') { group.style.display = ''; return; }
       group.style.display = visible ? '' : 'none';
     });
-    // Re-bind clicks on accessible cards in Library Packs tab
-    document.querySelectorAll('#libTabPacks .collection-card[data-key]').forEach(card => {
-      if (!canAccess(card.dataset.key)) return;
-      card.onclick = () => showModeScreen(card.dataset.key, card.dataset.label);
-      let cSY = 0, cMv = false;
-      card.ontouchstart = e => { cSY = e.touches[0].clientY; cMv = false; };
-      card.ontouchmove  = e => { if (Math.abs(e.touches[0].clientY - cSY) > 8) cMv = true; };
-      card.ontouchend   = () => { if (!cMv) showModeScreen(card.dataset.key, card.dataset.label); };
-    });
+    // v1.27.77 - THE RE-BIND THAT USED TO SIT HERE IS GONE.
+    // It set card.onclick/.ontouchend on every accessible card in the Packs
+    // tab, on top of the addEventListener that app-core.js already puts on
+    // all 130 static cards at load. Both fired, so one tap opened the pack
+    // TWICE: two progStartSession calls, two recordPackTrained, and - the
+    // reason it was found - the first open showed the training-modes guide
+    // and marked it seen, and the second open, seeing the flag, ran the
+    // pack intro straight over the top of it. Coming in from the Packs tab
+    // you therefore never saw that guide at all.
+    // The cards are static HTML, so app-core's binding covers every one of
+    // them, and it also sets the navigation context, which this one did not.
     // Group the Packs tab for freemium users (v1.26.71)
     applyLibraryGrouping();
     // Apply mode locks
@@ -6328,6 +6330,52 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
         }
       ]
     },
+    // v1.27.77 - PROGRAMS, explained once. Shown the first time the user taps
+    // any programme card, ahead of the programme screen, and afterwards under
+    // the gear on the home screen.
+    //
+    // It fires on LOCKED programmes too. A Pro programme is browsable on
+    // purpose - being able to look inside is the whole reason it is listed -
+    // and someone looking at a route they cannot run yet needs the
+    // explanation more than someone who can just start it.
+    //
+    // Rikard, 2026-09-03: the guide comes first, the programme screen after.
+    'programs-overview': {
+      title: 'Programs',
+      pages: [
+        {
+          title: 'A route, not a pack',
+          html:
+            P('A pack is a set of strategies you can train in any order. A <strong>program</strong> is a route through several of them, in the order that makes each one easier than it would have been alone.') +
+            P('You do not have to use one. They exist for the times when you know roughly what you want and not where to start.') +
+            Pdim('Everything inside a program is also a normal pack. Nothing is locked away in here.')
+        },
+        {
+          title: 'Parts and checkpoints',
+          html:
+            rows([
+              'A program is split into <strong>Parts</strong>. Each Part is a pack, sometimes two.',
+              'At the end of a Part there is a <strong>checkpoint</strong> &mdash; a short test on what that Part taught.',
+              'Pass it and the next Part opens. <strong>70% is the pass mark</strong>, and the questions are drawn fresh each attempt, so a retake is a different test.',
+            ]) +
+            Pdim('You can retake a checkpoint as often as you like. Nothing is lost by failing one.')
+        },
+        {
+          title: 'What passing gives you',
+          html:
+            P('Passing a Part&rsquo;s checkpoint does two things. It opens the next Part &mdash; and it releases that Part&rsquo;s packs into your library, permanently.') +
+            P('That second one matters more than it sounds. In <strong>Conversation Foundations</strong> the later Parts are Pro packs, and a free user who works through the route earns them one checkpoint at a time.') +
+            Pdim('Once a pack is released it behaves like any other: your library, your favourites, handsfree, all of it.')
+        },
+        {
+          title: 'The ones marked Pro',
+          html:
+            P('A program with a <strong>Pro</strong> badge can still be opened. You can read every Part, see which packs it uses and what each checkpoint asks &mdash; you just cannot run it yet.') +
+            P('That is deliberate. Deciding whether a route is worth it is hard to do from a title alone.') +
+            Pdim('Next: the Parts, and where you are in them.')
+        }
+      ]
+    },
     'training-basics': {
       title: 'How training works',
       pages: [
@@ -6518,9 +6566,16 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
 
   // ── Renderer ─────────────────────────────────────────────────────────────
   // Same shape as the pack intro so the two feel like one mechanism.
-  function render(id, onDone) {
+  // v1.27.77 - which guide is on screen right now, or null. Without it a
+  // second call could draw a new guide over a live one, which is exactly what
+  // the duplicated Packs-tab handler used to do.
+  let openGuide = null;
+
+  function render(id, onDone, onSeen) {
     const g = GUIDES[id];
-    if (!g) { if (onDone) onDone(); return; }
+    if (!g) { if (onDone) onDone(); return false; }
+    if (openGuide) return false;
+    openGuide = id;
     screen.innerHTML =
       '<div class="ob-top"><div class="ob-dots" id="gdDots"></div>' +
       '<button class="ob-skip" id="gdSkipBtn">Skip</button></div>' +
@@ -6558,9 +6613,24 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
       // over while the overlay is still up means the pack intro simply
       // replaces the guide, and the mode screen is not seen until both are
       // finished with.
+      openGuide = null;
+      // v1.27.77 - the flag is written HERE, not when the guide opens. Marking
+      // it seen up front meant a guide that was drawn and then covered counted
+      // as read. Worst case now is that it appears once more.
+      if (onSeen) onSeen();
       if (onDone) {
         screen.innerHTML = '';
         onDone();
+        // v1.27.77 - the handover contract is that the callback draws into
+        // this same screen. If it did not - the pack has no intro of its own,
+        // or the callback opened a different screen - this element would
+        // otherwise stay display:flex and empty, a blank sheet over the whole
+        // app with nothing to tap. Open a pack with no intro as a first-run
+        // user and that is precisely what happened.
+        if (!screen.innerHTML) {
+          screen.style.display = 'none';
+          screen.classList.remove('ob-leaving');
+        }
         return;
       }
       screen.classList.add('ob-leaving');
@@ -6579,6 +6649,7 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
     screen.classList.remove('ob-leaving');
     screen.style.display = 'flex';
     showStep(0);
+    return true;
   }
 
   // Show once, ever. The flag is per guide so adding a fifth one later does
@@ -6591,11 +6662,14 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
   // the training screen is revealed underneath when you close it. The caller
   // uses the return value to suppress the slide-in it would otherwise start.
   function maybeShow(id, onDone) {
+    // A guide is already up. Return true so the caller does NOT run its
+    // fallback - that fallback is what used to draw over the live guide.
+    if (openGuide) return true;
     const key = 'ds_guide_' + id;
     if (localStorage.getItem(key) === 'seen') return false;
-    try { localStorage.setItem(key, 'seen'); } catch (e) {}
-    render(id, onDone);
-    return true;
+    return render(id, onDone, () => {
+      try { localStorage.setItem(key, 'seen'); } catch (e) {}
+    });
   }
 
   window.showGuide = render;
@@ -6604,18 +6678,20 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
   // Replay fran kugghjulet pa hemskarmen. De fyra aldre guiderna nas inifran
   // ett traningslage; den har handlar om valet MELLAN lagena, sa den hor hemma
   // ett steg tidigare.
-  (function bindModeGuideBtn() {
-    const b = document.getElementById('modeGuideBtn');
-    if (!b) return;
-    b.addEventListener('click', e => {
-      e.stopPropagation();
-      const panel = b.closest('.settings-screen') || b.closest('.settings-panel');
-      if (panel && panel.classList) panel.classList.remove('open');
-      const back = document.getElementById('settingsBackBtn');
-      if (back) back.click();
-      setTimeout(() => render('modes-overview'), 60);
+  // v1.27.77 - two rows now, same behaviour: close settings, then draw.
+  [['modeGuideBtn', 'modes-overview'], ['programGuideBtn', 'programs-overview']]
+    .forEach(([btnId, guideId]) => {
+      const b = document.getElementById(btnId);
+      if (!b) return;
+      b.addEventListener('click', e => {
+        e.stopPropagation();
+        const panel = b.closest('.settings-screen') || b.closest('.settings-panel');
+        if (panel && panel.classList) panel.classList.remove('open');
+        const back = document.getElementById('settingsBackBtn');
+        if (back) back.click();
+        setTimeout(() => render(guideId), 60);
+      });
     });
-  })();
   window.DECK_TERM = D;
 
   // ── The rows inside every training settings panel ────────────────────────
