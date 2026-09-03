@@ -5799,7 +5799,7 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
             '<p class="ob-text">Two strategies for size rather than content. Depth is a ' +
             'staircase: one step below what they offered, taken after they take theirs.</p>' +
             '<div class="ob-how">' +
-            '<div class="ob-how-row"><span class="ob-how-num">1</span><p><strong>Match What They Gave</strong> &mdash; a corridor question wants one line; a real one wants more.</p></div>' +
+            '<div class="ob-how-row"><span class="ob-how-num">1</span><p><strong>Match Their Depth</strong> &mdash; a corridor question wants one line; a real one wants more.</p></div>' +
             '<div class="ob-how-row"><span class="ob-how-num">2</span><p><strong>Keep Something Back</strong> &mdash; a partial answer, warmly given, for what you would rather skip.</p></div>' +
             '</div>' +
             '<p class="ob-text ob-text--dim">&ldquo;Weren\u2019t you with someone for years?&rdquo;<br>&rarr; &ldquo;I was. Short version: it ended badly, and I\u2019m not doing the long one tonight.&rdquo;</p>'

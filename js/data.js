@@ -7842,7 +7842,7 @@ const collections = {
       ]
     },
     {
-      name: "Match What They Gave",
+      name: "Match Their Depth",
       guideFront: "Use this strategy when...",
       guideBack: "One way it could sound",
       description: "Answer at roughly the depth they offered. They mention a hard week at work, you mention yours. They tell you their marriage is ending, you do not reply with the printer.\n\nIt works because conversations get deeper in steps, and each step has to be taken by both people. Someone who has just shared something real is checking whether it was safe. A light answer tells them it was not, and they will close the subject and be pleasant for the rest of the evening.\n\nThe mistake runs both ways, though, and the other direction is worse. Answering a polite question with something very personal is not honesty, it is a step nobody offered to take, and it usually ends the conversation faster than the closed answer would have.\n\nTypical phrases: \"That sounds heavy. Mine's been similar, honestly.\", \"That's a lot to be carrying.\", \"I'll match you — I've had a rough few months too.\"\n\nThree sizes to read, and what each is asking for:\n\n1. The polite question — \"how are you?\" in a corridor. Wants one line and a door. Do not go deep here.\n\n2. The real question — they have stopped and are looking at you. Wants something true, one level below the polite answer.\n\n3. The disclosure — they have just told you something significant. Wants you to meet it, or to say plainly that you are listening rather than matching.\n\nMindset: one step at a time, and take it after they do. Depth is a staircase, not a switch.",
@@ -7923,7 +7923,7 @@ const collections = {
     },
     {
       name: "Hand It Back",
-      guideFront: "Use this strategy when...",
+      guideFront: "Turn the attention around when...",
       guideBack: "One way it could sound",
       description: "Return the attention — but only after you have answered. \"That's me. What about you, though?\"\n\nIt works because a conversation needs both people to be curious, and turning the attention around is how it keeps moving. Done at the right moment it feels generous.\n\nDone too early, it is the single most common way people avoid being known. Answering in four words and immediately asking a question looks like interest and functions as a shield: they learn nothing about you, they do all the work, and after a while they stop asking.\n\nThe timing is the whole strategy. Answer first, with something real. Then hand it over.\n\nTypical phrases: \"That's my week. What about yours?\", \"Enough about the greenhouse. How was Denmark?\", \"Your turn — you said something about a new flat?\"\n\nThree good moments to hand it back:\n\n1. After a real answer — the standard, and the only one that costs nothing. Answer, then ask.\n\n2. When they have given you a thread — hand it back into their own material. \"You mentioned Malmö earlier.\"\n\n3. When you have been talking a while — the graceful exit from your own subject. \"I've had a good run at this. Your turn.\"\n\nAnd one to avoid: immediately, before you have said anything. That is not generosity, it is a way of staying out of reach.\n\nMindset: answer first. Handing it back before you have said anything is a way of not being asked again.",
       inputs: [
@@ -8565,7 +8565,7 @@ const collections = {
   assertivecomm1: [
     {
       name: "Broken Record",
-      guideFront: "Use this strategy when...",
+      guideFront: "Repeat your line unchanged when...",
       guideBack: "One way it could sound",
       description: "A skill that teaches verbal persistence by calmly repeating what you want over and over again, without getting angry, loud, or bogged down in irrelevant arguments. It operates like a soft wall. Manipulators expect you to either comply, get defensive, or escalate into an emotional fight. By calmly repeating your core demand, you exhaust their limited bag of evasions and make it clear that you cannot be deflected. It is most difficult when dealing with authority figures or close friends where our childhood training screams that we must be polite, explain our reasons, or answer every question put to us.\n\nTypical phrases: • \"I understand, but...\" • \"That may be, but I still want...\" • \"I hear you, and my decision is...\"\n\nThree variants of the move:\n\n1. Pure persistence — repeating the exact same phrase to block simple commercial pressure: \"I understand, but I am not interested.\"\n\n2. Transition to authority — acknowledging the supervisor's concern before holding the line: \"I know the team is in a bind, but I am not available to work tomorrow.\"\n\n3. Negotiating alternative routes — using persistence to bypass evasions and reach the person in charge: \"I understand you don't have the authority, so please bring me the manager who does.\"\n\nMindset: you have the ultimate right to persist with your desires without explaining them.",
       inputs: [
@@ -8581,7 +8581,7 @@ const collections = {
     },
     {
       name: "Fogging",
-      guideFront: "Use this strategy when...",
+      guideFront: "Agree with what is true when...",
       guideBack: "One way it could sound",
       description: "A skill that teaches you to absorb manipulative criticism by calmly agreeing with whatever is true, probable, or logical in it, while remaining the sole judge of your actions. It operates like a fog bank. When a critic throws a hard verbal rock, it penetrates without hitting a solid striking surface, preventing any ricochet or counter-argument. By offering zero psychological resistance, you instantly defuse their anger and leave their exaggeration standing completely alone. It is hard when the criticism feels deeply personal or unfair, triggering an intense, visceral urge to defend your reputation, correct the critic's perspective, or launch a counter-attack.\n\nTypical phrases: • \"You're probably right.\" • \"I can see why you would think that.\" • \"That's true, I do do that sometimes.\"\n\nThree variants of the move:\n\n1. Agreeing with the truth — accepting a concrete, undeniable fact: \"You're right, I am dressed in my usual way today.\"\n\n2. Agreeing with the odds — accepting a future probability or risk: \"You might be right, I could get more sleep.\"\n\n3. Agreeing in principle — accepting the general logic of their argument without committing to their standard: \"I can understand why you think that, and it makes sense.\"\n\nMindset: criticism is simply information about the critic's standards, not a verdict on your worth.",
       inputs: [
@@ -8597,7 +8597,7 @@ const collections = {
     },
     {
       name: "Negative Assertion",
-      guideFront: "Use this strategy when...",
+      guideFront: "Own the mistake plainly when...",
       guideBack: "One way it could sound",
       description: "A skill that teaches you to strongly and calmly own your real mistakes, errors, and personal shortcomings without over-apologizing, getting defensive, or feeling guilty. It treats mistakes as simple, inefficient human facts rather than moral failures. By completely and cheerfully agreeing with the factual criticism, you instantly dismantle the critic's leverage and stop their attempt to use your guilt to manipulate your future behavior. It is hard when we believe that making a mistake makes us bad or incompetent, prompting us to hide our errors, make submissive excuses, or crawl for forgiveness.\n\nTypical phrases: • \"You're right, I completely missed that.\" • \"That was a careless mistake on my part.\" • \"How embarrassing. I really goofed on that one.\"\n\nThree variants of the move:\n\n1. Owning administrative slips — admitting everyday procedural errors calmly: \"You're right, I forgot to shut down the projector.\"\n\n2. Owning professional goofs — acknowledging real technical or execution mistakes without crawling: \"I did. I completely missed that transposition error.\"\n\n3. Owning personal blunders — admitting social or interpersonal errors with ease: \"You're right, I am late. That's on me.\"\n\nMindset: making a mistake requires correction and responsibility, never psychological atonement.",
       inputs: [
@@ -8613,7 +8613,7 @@ const collections = {
     },
     {
       name: "Negative Inquiry",
-      guideFront: "Use this strategy when...",
+      guideFront: "Invite the criticism when...",
       guideBack: "One way it could sound",
       description: "A skill that teaches you to actively prompt constructive or critical feedback about yourself in a neutral, low-key, non-defensive manner. It forces a critic to explain their vague, emotional complaints, transforming a manipulative attack into a concrete, factual discussion. By pointing the finger at yourself and asking \"what is bad about that?\", you exhaust their emotional energy and clear the ground for a workable compromise. It is hard because our instincts view critical feedback as a hostile threat, making us want to shut down the conversation or attack the critic's own flaws instead of inviting more.\n\nTypical phrases: • \"What is it specifically about my work that you don't like?\" • \"What am I doing that makes me seem unprofessional?\" • \"What is it about my tone that feels difficult?\"\n\nThree variants of the move:\n\n1. Clarifying vague feedback — prompting details on subjective criticisms: \"What specifically about my behavior looked unprofessional?\"\n\n2. Uncovering relationship conflicts — digging into passive-aggressive grumbles with a partner: \"What am I doing or not doing that makes it look like I don't care?\"\n\n3. Inquiring into work performance — seeking specific metrics to improve on the job: \"What specifically about my attitude toward deadlines is causing concern?\"\n\nMindset: more feedback is simply raw data that helps you understand what the other person actually wants.",
       inputs: [
@@ -12458,26 +12458,26 @@ const collectionsModeData = {
       name: "Choosing How Much",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "**Match What They Gave**, **Keep Something Back**, **Name What You Are Into** and **Hand It Back** — the four that decide the size of what you say rather than its content.\n\n• **Match What They Gave** — one step below what they offered, taken after they take theirs\n• **Keep Something Back** — a partial answer, warmly given, for the question you would rather skip\n• **Name What You Are Into** — one line about the thing you care about, then stop\n• **Hand It Back** — after you have answered, never before\n\n**Which one:** read what they offered first. A corridor question wants one line; a disclosure wants you to meet it or say you are staying. Only once you have answered does handing it back count as generosity rather than as a shield.\n\n**Where it goes wrong:** people get it wrong in both directions at once — too little with the people they want to know, and occasionally far too much with someone met an hour ago.\n\nMindset: depth is a staircase. Take one step after they do, and answer before you turn it around.",
+      description: "**Match Their Depth**, **Keep Something Back**, **Name What You Are Into** and **Hand It Back** — the four that decide the size of what you say rather than its content.\n\n• **Match Their Depth** — one step below what they offered, taken after they take theirs\n• **Keep Something Back** — a partial answer, warmly given, for the question you would rather skip\n• **Name What You Are Into** — one line about the thing you care about, then stop\n• **Hand It Back** — after you have answered, never before\n\n**Which one:** read what they offered first. A corridor question wants one line; a disclosure wants you to meet it or say you are staying. Only once you have answered does handing it back count as generosity rather than as a shield.\n\n**Where it goes wrong:** people get it wrong in both directions at once — too little with the people they want to know, and occasionally far too much with someone met an hour ago.\n\nMindset: depth is a staircase. Take one step after they do, and answer before you turn it around.",
       inputs: [
-        { q: "A friend tells you something serious about their health.", a: "\"That's an enormous thing to be carrying. I'd rather hear about it than talk about me.\" [Match What They Gave]", bundle: 'pro' },
+        { q: "A friend tells you something serious about their health.", a: "\"That's an enormous thing to be carrying. I'd rather hear about it than talk about me.\" [Match Their Depth]", bundle: 'pro' },
         { q: "Someone asks about a breakup you would rather not discuss.", a: "\"It ended, and it ended badly. That's the whole of what I've got tonight.\" [Keep Something Back]", bundle: 'pro' },
         { q: "You have answered properly and want to turn it around.", a: "\"So that's my news. What's been happening with you?\" [Hand It Back]", bundle: 'pro' },
-        { q: "You are about to answer a corridor question with something very personal.", a: "\"Busy. Good busy, mostly.\" [Match What They Gave]", bundle: 'pro' },
+        { q: "You are about to answer a corridor question with something very personal.", a: "\"Busy. Good busy, mostly.\" [Match Their Depth]", bundle: 'pro' },
         { q: "Someone asks what you do with your time.", a: "\"Bread, lately. An unreasonable amount of bread.\" [Name What You Are Into]", bundle: 'pro' },
         { q: "You are about to hand it back without having answered.", a: "\"Mine's been a strange one — I'll spare you the details. Yours?\" [Hand It Back]", bundle: 'pro' },
         { q: "You do want to tell them, but not in this room.", a: "\"That's a proper conversation and this is a party. Remind me another time.\" [Keep Something Back]", bundle: 'pro' },
-        { q: "They went one level deeper and you want to meet it.", a: "\"Since you said that — I've not been having a great year either.\" [Match What They Gave]", bundle: 'pro' },
+        { q: "They went one level deeper and you want to meet it.", a: "\"Since you said that — I've not been having a great year either.\" [Match Their Depth]", bundle: 'pro' },
       ]
     },
     {
       name: "All Seven",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "Every strategy in the pack, mixed, in the order real conversations produce them rather than the order they were taught.\n\n• **Give a Detail** · **Answer What They Are Really Asking** · **Say the Small True Thing** — answer the question in front of you\n• **Match What They Gave** · **Keep Something Back** — decide the size\n• **Name What You Are Into** — say what you care about\n• **Hand It Back** — and then move the attention\n\n**Which one:** the useful question is what your answer would leave them with. Nothing to ask about, a job title, or nothing true — each has its own fix. Everything else is a question of size.\n\n**Where it goes wrong:** freezing. Any of the seven beats the four-word answer, and choosing the second-best one instantly beats choosing the best one late.\n\nMindset: attention on you is an offer, not an exam.",
+      description: "Every strategy in the pack, mixed, in the order real conversations produce them rather than the order they were taught.\n\n• **Give a Detail** · **Answer What They Are Really Asking** · **Say the Small True Thing** — answer the question in front of you\n• **Match Their Depth** · **Keep Something Back** — decide the size\n• **Name What You Are Into** — say what you care about\n• **Hand It Back** — and then move the attention\n\n**Which one:** the useful question is what your answer would leave them with. Nothing to ask about, a job title, or nothing true — each has its own fix. Everything else is a question of size.\n\n**Where it goes wrong:** freezing. Any of the seven beats the four-word answer, and choosing the second-best one instantly beats choosing the best one late.\n\nMindset: attention on you is an offer, not an exam.",
       inputs: [
         { q: "Someone asks how the weekend was.", a: "\"Deliberately empty. I have never enjoyed doing nothing more.\" [Give a Detail]", bundle: 'pro' },
-        { q: "A colleague mentions their week has been hard.", a: "\"Same here, if it helps. Mine's been the same shape as yours.\" [Match What They Gave]", bundle: 'pro' },
+        { q: "A colleague mentions their week has been hard.", a: "\"Same here, if it helps. Mine's been the same shape as yours.\" [Match Their Depth]", bundle: 'pro' },
         { q: "You are searching for something worth reporting.", a: "\"Coffee and bad television. That is genuinely the whole report.\" [Say the Small True Thing]", bundle: 'pro' },
         { q: "Someone asks how you know the host.", a: "\"We lived together for two years. I could tell you things.\" [Answer What They Are Really Asking]", bundle: 'pro' },
         { q: "You are about to apologise for the thing you like.", a: "\"Maps. I collect maps. I've decided not to be embarrassed about it.\" [Name What You Are Into]", bundle: 'pro' },

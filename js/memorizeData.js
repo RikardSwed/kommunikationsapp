@@ -6302,9 +6302,9 @@ const memorizeCollections = {
   talkingaboutyourself: [
     {
       name: "Core Idea",
-      description: "Seven strategies for the moment the attention lands on you.\n\n1. **Give a Detail**\n2. **Match What They Gave**\n3. **Say the Small True Thing**\n4. **Answer What They Are Really Asking**\n5. **Name What You Are Into**\n6. **Keep Something Back**\n7. **Hand It Back**\n\nThree answer the question, two decide the size, one names what you care about.",
+      description: "Seven strategies for the moment the attention lands on you.\n\n1. **Give a Detail**\n2. **Match Their Depth**\n3. **Say the Small True Thing**\n4. **Answer What They Are Really Asking**\n5. **Name What You Are Into**\n6. **Keep Something Back**\n7. **Hand It Back**\n\nThree answer the question, two decide the size, one names what you care about.",
       cards: [
-        { q: "What are the seven strategies in this pack?", a: "Give a Detail, Match What They Gave, Say the Small True Thing, Answer What They Are Really Asking, Name What You Are Into, Keep Something Back, Hand It Back.", bundle: 'free' },
+        { q: "What are the seven strategies in this pack?", a: "Give a Detail, Match Their Depth, Say the Small True Thing, Answer What They Are Really Asking, Name What You Are Into, Keep Something Back, Hand It Back.", bundle: 'free' },
         { q: "What are the two ways answering goes wrong?", a: "Giving too little, which puts the whole conversation on them. And giving too much too soon, which outruns what they offered.", bundle: 'free' },
         { q: "What is the mistake underneath both?", a: "Reading the question as a test of how interesting you are, rather than as an invitation to be known.", bundle: 'free' },
         { q: "How do the seven divide?", a: "Three answer the question, two decide the size, one names what you care about, and one hands the attention back.", bundle: 'free' },
@@ -6329,7 +6329,7 @@ const memorizeCollections = {
       ]
     },
     {
-      name: "Match What They Gave",
+      name: "Match Their Depth",
       description: "",
       cards: [
         { q: "What is the rule?", a: "Answer at roughly the depth they offered — one step, taken after they take theirs.", bundle: 'free' },
@@ -6422,13 +6422,13 @@ const memorizeCollections = {
         { q: "Your answer left them nothing to hold. Which strategy?", a: "Give a Detail.", bundle: 'pro' },
         { q: "You gave a job title and it stalled. Which strategy?", a: "Answer What They Are Really Asking.", bundle: 'pro' },
         { q: "You are hunting for something impressive. Which strategy?", a: "Say the Small True Thing.", bundle: 'pro' },
-        { q: "They went one level deeper than usual. Which strategy?", a: "Match What They Gave.", bundle: 'pro' },
+        { q: "They went one level deeper than usual. Which strategy?", a: "Match Their Depth.", bundle: 'pro' },
         { q: "You have answered fully and want the attention to move. Which strategy?", a: "Hand It Back.", bundle: 'pro' },
       ]
     },
     {
       name: "Sequences",
-      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **A First Conversation** — Answer What They Are Really Asking → Give a Detail → Hand It Back → Match What They Gave\n2. **Going a Bit Deeper** — Match What They Gave → Say the Small True Thing → Name What You Are Into → Hand It Back\n3. **A Question You Would Rather Not Answer** — Keep Something Back → Give a Detail → Hand It Back → Match What They Gave\n\nAll three end by handing the attention over, and none of them starts there.",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **A First Conversation** — Answer What They Are Really Asking → Give a Detail → Hand It Back → Match Their Depth\n2. **Going a Bit Deeper** — Match Their Depth → Say the Small True Thing → Name What You Are Into → Hand It Back\n3. **A Question You Would Rather Not Answer** — Keep Something Back → Give a Detail → Hand It Back → Match Their Depth\n\nAll three end by handing the attention over, and none of them starts there.",
       cards: [
         { q: "What is the order in A First Conversation?", a: "Real answer, one detail, hand it back, then match whatever they give you.", bundle: 'pro' },
         { q: "Why does that sequence answer three times before turning it around?", a: "So the handover lands as generosity rather than as escape.", bundle: 'pro' },

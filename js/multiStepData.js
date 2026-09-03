@@ -6667,7 +6667,7 @@ const multiStepCollections = {
       name: "A First Conversation",
       guideFront: "What's happening, and the strategy to use",
       guideBack: "One way it could sound",
-      description: "The standard shape of being asked about yourself by someone you have just met.\n\n1. **Answer What They Are Really Asking** — give the version that is about you\n2. **Give a Detail** — one concrete thing they can pick up\n3. **Hand It Back** — now, and only now, turn it around\n4. **Match What They Gave** — meet whatever they offer in return\n\n**Why this order:** you answer three times before turning it around, which is three more than most people manage when nervous. The handover then lands as generosity rather than escape.\n\n**What people do instead:** answer briefly and immediately ask back. It looks like interest, and after four exchanges they know nothing at all.\n\nMindset: they are not testing you. They are finding out what you are like, and you are allowed to tell them.",
+      description: "The standard shape of being asked about yourself by someone you have just met.\n\n1. **Answer What They Are Really Asking** — give the version that is about you\n2. **Give a Detail** — one concrete thing they can pick up\n3. **Hand It Back** — now, and only now, turn it around\n4. **Match Their Depth** — meet whatever they offer in return\n\n**Why this order:** you answer three times before turning it around, which is three more than most people manage when nervous. The handover then lands as generosity rather than escape.\n\n**What people do instead:** answer briefly and immediately ask back. It looks like interest, and after four exchanges they know nothing at all.\n\nMindset: they are not testing you. They are finding out what you are like, and you are allowed to tell them.",
       inputs: [
         {
           bundle: 'pro',
@@ -6676,7 +6676,7 @@ const multiStepCollections = {
             { front: "Answer What They Are Really Asking — they say, \"So what do you do?\"", back: "\"I teach English. Mostly to sixteen-year-olds, which is as loud as it sounds.\"" },
             { front: "Give a Detail — they say, \"That must be exhausting.\"", back: "\"Some days. This week I mostly argued with a printer, so it's been restful by comparison.\"" },
             { front: "Hand It Back — they laugh.", back: "\"That's me, anyway. How do you know Anna?\"" },
-            { front: "Match What They Gave — they say, \"We worked together for years. I've just left, actually.\"", back: "\"Just left — by choice, or the other kind? I've done both.\"" },
+            { front: "Match Their Depth — they say, \"We worked together for years. I've just left, actually.\"", back: "\"Just left — by choice, or the other kind? I've done both.\"" },
           ]
         },
         {
@@ -6686,7 +6686,7 @@ const multiStepCollections = {
             { front: "Answer What They Are Really Asking — they say, \"You're new, aren't you? Where were you before?\"", back: "\"A smaller place in Malmö. Half the people, twice the meetings.\"" },
             { front: "Give a Detail — they say, \"How's it been so far?\"", back: "\"Good. I've been to the wrong building twice, which is a personal record.\"" },
             { front: "Hand It Back — they say, \"Everyone does that in the first week.\"", back: "\"That's reassuring. How long have you been here?\"" },
-            { front: "Match What They Gave — they say, \"Eleven years. Longer than I meant to be.\"", back: "\"Longer than you meant to — what made you stay?\"" },
+            { front: "Match Their Depth — they say, \"Eleven years. Longer than I meant to be.\"", back: "\"Longer than you meant to — what made you stay?\"" },
           ]
         },
         {
@@ -6696,7 +6696,7 @@ const multiStepCollections = {
             { front: "Answer What They Are Really Asking — they say, \"And which side are you?\"", back: "\"Bride's. We shared a flat for two years, which is how you learn who someone really is.\"" },
             { front: "Give a Detail — they say, \"That's a proper test.\"", back: "\"It is. She once reorganised my bookshelves by colour while I was away for a weekend.\"" },
             { front: "Hand It Back — they say, \"That's a crime.\"", back: "\"It genuinely is. What about you — how do you know them?\"" },
-            { front: "Match What They Gave — they say, \"I'm his cousin. We were close as kids and less so now.\"", back: "\"Less so now — is that distance, or something that happened?\"" },
+            { front: "Match Their Depth — they say, \"I'm his cousin. We were close as kids and less so now.\"", back: "\"Less so now — is that distance, or something that happened?\"" },
           ]
         },
       ]
@@ -6705,13 +6705,13 @@ const multiStepCollections = {
       name: "Going a Bit Deeper",
       guideFront: "What's happening, and the strategy to use",
       guideBack: "One way it could sound",
-      description: "What happens when a light conversation gets an opportunity to become a real one.\n\n1. **Match What They Gave** — they went one level down, so go with them\n2. **Say the Small True Thing** — plainly, without the full weight\n3. **Name What You Are Into** — the thing that is actually helping or occupying you\n4. **Hand It Back** — and give them the same opening they gave you\n\n**Why this order:** the first step is the decision, and it is theirs as much as yours. Nothing dramatic follows: one honest answer, one thing you care about, and the door held open on the way out.\n\n**What people do instead:** stay breezy through the opening, which quietly answers the question they were really asking — whether it was safe.\n\nMindset: they opened a door. Walking through it is the whole move, and it is smaller than it feels.",
+      description: "What happens when a light conversation gets an opportunity to become a real one.\n\n1. **Match Their Depth** — they went one level down, so go with them\n2. **Say the Small True Thing** — plainly, without the full weight\n3. **Name What You Are Into** — the thing that is actually helping or occupying you\n4. **Hand It Back** — and give them the same opening they gave you\n\n**Why this order:** the first step is the decision, and it is theirs as much as yours. Nothing dramatic follows: one honest answer, one thing you care about, and the door held open on the way out.\n\n**What people do instead:** stay breezy through the opening, which quietly answers the question they were really asking — whether it was safe.\n\nMindset: they opened a door. Walking through it is the whole move, and it is smaller than it feels.",
       inputs: [
         {
           bundle: 'pro',
           situation: "A friend you see every few months says, more seriously than usual, that the year has been harder than they let on.",
           steps: [
-            { front: "Match What They Gave — they say, \"It's been a lot, honestly.\"", back: "\"I'll match you rather than be breezy — mine's been heavy too.\"" },
+            { front: "Match Their Depth — they say, \"It's been a lot, honestly.\"", back: "\"I'll match you rather than be breezy — mine's been heavy too.\"" },
             { front: "Say the Small True Thing — they say, \"You never say that.\"", back: "\"I know. Nothing dramatic. Just a long stretch of getting through weeks.\"" },
             { front: "Name What You Are Into — they say, \"What's been helping?\"", back: "\"Running, weirdly. I'm terrible at it and it's the best hour of the day.\"" },
             { front: "Hand It Back — they say, \"That's not what I expected from you.\"", back: "\"It surprised me too. What's been getting you through?\"" },
@@ -6721,7 +6721,7 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "You are walking back from a meeting and the conversation has gone past the usual small talk.",
           steps: [
-            { front: "Match What They Gave — they say, \"I'm not sure I want to be doing this in five years.\"", back: "\"I think about that more than I admit, honestly.\"" },
+            { front: "Match Their Depth — they say, \"I'm not sure I want to be doing this in five years.\"", back: "\"I think about that more than I admit, honestly.\"" },
             { front: "Say the Small True Thing — they say, \"Really? You always seem settled.\"", back: "\"I'm settled. I'm just not certain, which turns out to be different.\"" },
             { front: "Name What You Are Into — they say, \"So what would you rather be doing?\"", back: "\"Something with my hands, probably. I've got very into fixing bikes I can't fix.\"" },
             { front: "Hand It Back — they say, \"That's oddly specific.\"", back: "\"It really is. What's yours, if you could pick?\"" },
@@ -6731,7 +6731,7 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "You are having a drink with someone you used to see weekly and now see twice a year. They have just said the years went quickly.",
           steps: [
-            { front: "Match What They Gave — they say, \"I don't know where the last five years went, honestly.\"", back: "\"Nor do I. And I've noticed I stopped telling anyone much about them.\"" },
+            { front: "Match Their Depth — they say, \"I don't know where the last five years went, honestly.\"", back: "\"Nor do I. And I've noticed I stopped telling anyone much about them.\"" },
             { front: "Say the Small True Thing — they say, \"That doesn't sound like you.\"", back: "\"It isn't, particularly. I got quiet somewhere around the second year and never undid it.\"" },
             { front: "Name What You Are Into — they say, \"So what are you doing with yourself?\"", back: "\"Bread, embarrassingly. It's the only thing I do that has nothing to do with anyone else.\"" },
             { front: "Hand It Back — they say, \"That's a very you answer.\"", back: "\"I'll take that. What have you got that's just yours?\"" },
@@ -6743,7 +6743,7 @@ const multiStepCollections = {
       name: "A Question You Would Rather Not Answer",
       guideFront: "What's happening, and the strategy to use",
       guideBack: "One way it could sound",
-      description: "How to close one subject without closing the conversation.\n\n1. **Keep Something Back** — the partial answer, given warmly\n2. **Give a Detail** — fill the gap with something else true about you\n3. **Hand It Back** — move the attention on\n4. **Match What They Gave** — and meet whatever they bring\n\n**Why this order:** keeping something back leaves a gap, and the gap is what makes it awkward. So the next step fills it rather than letting it sit. Then the attention moves, and the moment passes without anyone having to apologise for anything.\n\n**What people do instead:** decline and stop, which leaves the other person holding an apology they were not owed and a silence they now have to fix.\n\nMindset: a closed door is fine. An empty room afterwards is what makes it strange.",
+      description: "How to close one subject without closing the conversation.\n\n1. **Keep Something Back** — the partial answer, given warmly\n2. **Give a Detail** — fill the gap with something else true about you\n3. **Hand It Back** — move the attention on\n4. **Match Their Depth** — and meet whatever they bring\n\n**Why this order:** keeping something back leaves a gap, and the gap is what makes it awkward. So the next step fills it rather than letting it sit. Then the attention moves, and the moment passes without anyone having to apologise for anything.\n\n**What people do instead:** decline and stop, which leaves the other person holding an apology they were not owed and a silence they now have to fix.\n\nMindset: a closed door is fine. An empty room afterwards is what makes it strange.",
       inputs: [
         {
           bundle: 'pro',
@@ -6752,7 +6752,7 @@ const multiStepCollections = {
             { front: "Keep Something Back — they say, \"Weren't you with someone for years?\"", back: "\"I was. Short version: it ended badly and I'm not doing the long one tonight.\"" },
             { front: "Give a Detail — they say, \"Sorry, I shouldn't have asked.\"", back: "\"You absolutely should, it's a normal question. I've just been busy repainting a flat instead of thinking about it.\"" },
             { front: "Hand It Back — they say, \"Repainting is very therapeutic.\"", back: "\"It's the only reason the flat looks like this. Have you done yours?\"" },
-            { front: "Match What They Gave — they say, \"We've been meaning to for three years.\"", back: "\"Three years is nothing. Mine was eleven before I picked up a brush.\"" },
+            { front: "Match Their Depth — they say, \"We've been meaning to for three years.\"", back: "\"Three years is nothing. Mine was eleven before I picked up a brush.\"" },
           ]
         },
         {
@@ -6762,7 +6762,7 @@ const multiStepCollections = {
             { front: "Keep Something Back — they say, \"Everything alright at home? You've seemed off.\"", back: "\"I'd rather keep that one outside work, if that's alright.\"" },
             { front: "Give a Detail — they say, \"Of course. Sorry.\"", back: "\"Nothing to be sorry about. Work-wise I'm fine — the Friday report is the only thing biting.\"" },
             { front: "Hand It Back — they say, \"Let me know if that needs moving.\"", back: "\"I might. How's your end of it looking?\"" },
-            { front: "Match What They Gave — they say, \"Honestly? Also a strange few months.\"", back: "\"Then we're even. I'll take a strange few months over a dull ten years.\"" },
+            { front: "Match Their Depth — they say, \"Honestly? Also a strange few months.\"", back: "\"Then we're even. I'll take a strange few months over a dull ten years.\"" },
           ]
         },
         {
@@ -6772,7 +6772,7 @@ const multiStepCollections = {
             { front: "Keep Something Back — they say, \"So what are they paying you these days?\"", back: "\"I'm going to be boring about that one. It's enough, and that's as far as I go.\"" },
             { front: "Give a Detail — they say, \"Fair enough, fair enough.\"", back: "\"The interesting bit isn't the money anyway — I've ended up running the whole southern region, which nobody planned.\"" },
             { front: "Hand It Back — they say, \"Since when?\"", back: "\"March. It's been a steep few months. How's the shop going?\"" },
-            { front: "Match What They Gave — they say, \"Quieter than I'd like, if I'm honest.\"", back: "\"Quieter how? Fewer people, or the same people spending less?\"" },
+            { front: "Match Their Depth — they say, \"Quieter than I'd like, if I'm honest.\"", back: "\"Quieter how? Fewer people, or the same people spending less?\"" },
           ]
         },
       ]
