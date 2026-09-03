@@ -8845,7 +8845,7 @@ const collections = {
   counseling1: [
     {
       name: "Spurring Obedience",
-      guideFront: "Use this strategy when...",
+      guideFront: "Ask for the action first when...",
       guideBack: "One way it could sound",
       description: "Helping a brother or sister in the congregation do their biblical duty regardless of how they feel in the moment. Action must precede and shape feeling.\nIt works because feelings follow actions. Pity parties and listlessness only grow larger when we wait for motivation to arrive. Stepping out in faith to perform a small duty breaks the downward spiral.\n\n• Typical phrases:\n• \"What is one small step we can take together today?\"\n• \"Obedience doesn't require energy first.\"\n• \"Prayer is about obedience, not your mood.\"\n\nThree variants of the move:\n\n1. The Action Step — focusing on one tiny, immediate chore to get moving: \"What is one chore in the kitchen we can do right now?\"\n\n2. The Schedule Lock — planning a fixed time for the duty and keeping it: \"What day next week can you come, so we can put it in the calendar?\"\n\n3. The Grace Reminder — acting in faith on the promise of God’s strength: \"God gives us strength as we obey. Let’s take the first step and find out.\"\n\nMindset: feelings are followers, not leaders.",
       inputs: [
@@ -8861,7 +8861,7 @@ const collections = {
     },
     {
       name: "Righteous Replacement",
-      guideFront: "Use this strategy when...",
+      guideFront: "Name what goes in its place when...",
       guideBack: "One way it could sound",
       description: "Helping a fellow believer put off a sinful habit of mind or speech and immediately put on the biblical equivalent. A vacuum in the soul always invites the old sin back.\nIt works because true change is two-factored. It is not enough to stop gossiping or worrying; we must replace those patterns with active edification and prayer.\n\n• Typical phrases:\n• \"We must put this off and put something on.\"\n• \"What is one concrete blessing we can thank God for?\"\n• \"Instead of rehashing it, let's...\"\n\nThree variants of the move:\n\n1. The Speech Trade — replacing bitter words or gossip with active encouragement: \"What good thing can we say about him instead?\"\n\n2. The Thought Trade — replacing anxious brooding with thanksgiving: \"What is one concrete blessing we can stop and thank God for right now?\"\n\n3. The Service Trade — replacing self-pitying isolation with practical help: \"Who is one person we can go and serve today?\"\n\nMindset: change is not just putting off, it is putting on.",
       inputs: [
@@ -8877,7 +8877,7 @@ const collections = {
     },
     {
       name: "Clarifying the Facts",
-      guideFront: "Use this strategy when...",
+      guideFront: "Ask what and how when...",
       guideBack: "One way it could sound",
       description: "Asking objective what and how questions rather than why questions to help a struggling friend look at their situation through the lens of Scripture.\nIt works because why questions invite defensive speculation and excuse-making. Fact-seeking questions force a friend to see the concrete reality of what they did and when it began.\n\n• Typical phrases:\n• \"What specifically happened?\"\n• \"What did they actually say?\"\n• \"When did this start?\"\n\nThree variants of the move:\n\n1. The What Swap — asking what happened rather than why they feel that way: \"What specifically happened this week that made you feel that way?\"\n\n2. The Timing Check — finding out exactly when the trouble started: \"When did this heavy feeling actually start?\"\n\n3. The Action Audit — asking what they actually did in the situation: \"What concrete steps did you take yesterday?\"\n\nMindset: our hearts are deceitful; we must seek the objective facts.",
       inputs: [
@@ -8893,7 +8893,7 @@ const collections = {
     },
     {
       name: "Challenging Self-Pity",
-      guideFront: "Use this strategy when...",
+      guideFront: "Decline to agree when...",
       guideBack: "One way it could sound",
       description: "Refusing to play along with a friend's self-destructive pity party, and instead pointing them to Christ's sufficient grace and their own responsibility.\nIt works because coddling self-pity only deepens the downward spiral. Poking a trial balloon with truth helps a friend confess their concrete sin rather than drowning in vague self-deprecation.\n\n• Typical phrases:\n• \"You are not a hopeless failure.\"\n• \"Christ's blood is sufficient.\"\n• \"What is the specific sin we need to confess?\"\n\nThree variants of the move:\n\n1. The Pity Party Stop — stopping the \"I am a failure\" talk with a call to name something concrete: \"You are not a hopeless failure. What is the specific sin we need to confess?\"\n\n2. The Grace Pivot — pointing to a payment that has already been made: \"Forgiveness is God’s promise, not your feeling.\"\n\n3. The Responsibility Call — moving them to what they can actually do today: \"What is the next step of duty we can take?\"\n\nMindset: self-pity is a subtle form of pride that resists grace.",
       inputs: [
@@ -8909,7 +8909,7 @@ const collections = {
     },
     {
       name: "Gentle Restoration",
-      guideFront: "Use this strategy when...",
+      guideFront: "Name your own weakness first when...",
       guideBack: "One way it could sound",
       description: "Approaching a brother or sister caught in a trespass with deep humility and gentleness, acknowledging your own vulnerability to the same temptations.\nIt works because pride breeds resistance. When we level the field by admitting we also need help, we can carry their burden together and guide them back to usefulness.\n\n• Typical phrases:\n• \"I'm no better than you.\"\n• \"I might need your help next week.\"\n• \"Let's carry this together.\"\n\nThree variants of the move:\n\n1. The Leveling Statement — admitting your own weakness first to disarm defensiveness: \"I might need your help next week, brother.\"\n\n2. The Burden Share — stepping into the mess to help them out of the trap: \"You don’t have to carry it alone. Let’s take the first small step today.\"\n\n3. The Self-Watch — keeping an eye on your own heart lest you be tempted: \"I’m here because I care about your soul, not to police you.\"\n\nMindset: restoration is about making a broken vessel useful again.",
       inputs: [
@@ -8927,7 +8927,7 @@ const collections = {
   counseling2: [
     {
       name: "Sorting Responsibilities",
-      guideFront: "Use this strategy when...",
+      guideFront: "Start with your own part when...",
       guideBack: "One way it could sound",
       description: "Refusing to participate in blameshifting and taking the log out of your own eye first. We must own our response to others regardless of how much we were pushed, because we are ultimately responsible to God for our own behavior.\n\n• Typical phrases:\n• \"I need to look at my own part first.\"\n• \"I can't control their actions, only my response.\"\n• \"What did I do to make this worse?\"\n\nThree variants of the move:\n\n1. The Eden check — stopping the reflex to pass the blame to others. \"I am not going to blame my spouse for my own angry reaction.\"\n2. The resentment audit — confessing the bitterness you nursed in response to being wronged. \"Even though you hurt me, I sinned by harboring bitterness against you.\"\n3. The arrow swap — actively redirecting the focus of the fight from their failure to your own. \"Let's stop talking about what you did, and let me confess where I failed you.\"\n\nMindset: you cannot be pushed into sin; your response is your own responsibility.",
       inputs: [
@@ -8959,7 +8959,7 @@ const collections = {
     },
     {
       name: "Pursuing Peace",
-      guideFront: "Use this strategy when...",
+      guideFront: "Make the first move when...",
       guideBack: "One way it could sound",
       description: "Seeking reconciliation actively and doing everything on your side to live at peace, without compromising biblical truth. We must take the initiative to make things right even when we believe we are the offended party.\n\n• Typical phrases:\n• \"I want us to be at peace.\"\n• \"Please forgive me for my part in this.\"\n• \"How can we make this right?\"\n\nThree variants of the move:\n\n1. The soft return — stopping a verbal fight by refusing to hit back and offering a soft answer instead. \"I don't want to fight with you; let's find a way to work this out.\"\n2. The love cover — choosing to let minor slights and personal offenses go without keeping a record. \"That minor comment doesn't matter; I am letting it go in love.\"\n3. The clean border — establishing your own peaceful stance when the other person refuses to reconcile. \"I want to make this right, but if you are not ready, I will wait.\"\n\nMindset: reconciliation is always your move, regardless of who started the fight.",
       inputs: [
@@ -8975,7 +8975,7 @@ const collections = {
     },
     {
       name: "Overcoming With Good",
-      guideFront: "Use this strategy when...",
+      guideFront: "Meet a practical need when...",
       guideBack: "One way it could sound",
       description: "Overcoming hostile attacks by aggressively meeting the practical needs of your enemy and speaking blessings in return for curses. We do not conquer evil by matching it, but by using the far more powerful weapon of active goodness.\n\n• Typical phrases:\n• \"How can I help you today?\"\n• \"I want to pray for your blessing.\"\n• \"Let me carry that for you.\"\n\nThree variants of the move:\n\n1. The practical surprise — actively serving someone who is currently mistreating or opposing you. \"I know we are in a hard conflict, but let me help you load those heavy boxes.\"\n2. The verbal blessing — responding to a verbal attack with kind words and sincere well-wishes. \"I know you are angry with me, but I genuinely pray that God blesses your work today.\"\n3. The prayer swap — offering to pray out loud for the welfare and salvation of your tormentor. \"Instead of defending myself, let's stop and let me pray for God's grace on your life.\"\n\nMindset: evil is conquered by goodness, not by retaliation.",
       inputs: [
