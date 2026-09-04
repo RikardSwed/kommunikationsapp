@@ -3619,8 +3619,8 @@ const collections = {
   masculine1: [
     {
       name: "Hear the Pain, Not the Blame",
-      guideFront: "Use this strategy when...",
-      guideBack: "One way it could sound",
+      guideFront: "Name the hurt underneath when...",
+      guideBack: "A possible observation",
       description: "Ignoring the toxic surface of a complaint—blame, sarcasm, or insults—to hear the underlying vulnerability and pain.\nBy focusing on the pain instead of facts or logic, your natural care for her kicks in instead of your defensive instincts.\n\n• \"I hear that you’re feeling alone in this.\"\n• \"It sounds like you’ve had a really heavy day.\"\n• \"Tell me more about how you’re hurting right now.\"\n\nUnderlying Categories:\n1. The Verbal Attack — ignore the words and meet the emotion.\n2. The Emotional Tsunami — recognize that facts cannot stop an ocean wave of intensity.\n\nMindset: See the little girl behind the raging woman to stay grounded in your presence.",
       inputs: [
         { q: "She shouts: \"You never think of me, you just work all the time!\"", a: "\"I hear that you’re feeling forgotten, and it hurts me to hear that.\"", bundle: 'free' },
@@ -3635,8 +3635,8 @@ const collections = {
     },
     {
       name: "Narrowing the Scope",
-      guideFront: "Use this strategy when...",
-      guideBack: "One way it could sound",
+      guideFront: "Present a clear proposal when...",
+      guideBack: "A possible proposal",
       description: "Proactively reducing the decision-making burden for your partner by presenting limited options instead of open questions.\nUncertainty and decisions force her into her Masculine energy; your clarity allows her to relax into her Feminine.\n\n• \"Should we do Mexican or Sushi tonight?\"\n• \"I suggest we leave at nine, does that work for you?\"\n\nVariants:\n1. Presenting options — give 2–3 concrete choices.\n2. Stating a preference — say what you want, but remain open.\n3. Asking for objections — provide a plan and ask if anything conflicts.\n\nMindset: Your clarity is a gift of structure you give her, not a burden you place on her.",
       inputs: [
         { q: "It's time to decide on dinner and she seems exhausted.", a: "\"I'm choosing between Italian and Thai tonight. Which do you prefer?\"", bundle: 'free' },
@@ -3651,8 +3651,8 @@ const collections = {
     },
     {
       name: "The Do-Over",
-      guideFront: "Use this strategy when...",
-      guideBack: "One way it could sound",
+      guideFront: "Ask to start again when...",
+      guideBack: "A possible request",
       description: "Having the humility and presence to interrupt an interaction that has gone wrong and ask to \"do it over\" to act more in line with your intention.\nIt is an elegant way to pull the plug on meaningless conflicts that arise from clumsiness or poor phrasing.\n\n• \"Can we have a do-over? I realize I just got defensive.\"\n• \"Let me try that again, that came out completely wrong.\"\n\nVariants:\n1. For your own reactivity — when you notice you've \"fallen into the trap.\"\n2. For misunderstandings — when you see she has misinterpreted your meaning.\n\nMindset: It takes a strong man to admit he was clumsy.",
       inputs: [
         { q: "You notice you've just started lecturing her on how to solve her problems.", a: "\"Wait, can we have a do-over? I noticed I'm trying to fix everything instead of just listening.\"", bundle: 'free' },
@@ -3667,8 +3667,8 @@ const collections = {
     },
     {
       name: "The \"When You...\" Stem",
-      guideFront: "Use this strategy when...",
-      guideBack: "One way it could sound",
+      guideFront: "Share your internal state when...",
+      guideBack: "An inarguable statement",
       description: "Using a specific template (Observation + Feeling) to share your inner state without accusations, demands, or \"victim mentality.\"\nBy only speaking to your own experience, you create an \"inarguable\" truth that doesn't trigger her defenses as easily.\n\n• \"When you [observation], I feel [emotion] in my body.\"\n• \"I notice I'm thinking [thought] when you do [observation].\"\n\nVariants:\n1. Sharing vulnerability — tell her about your fear or insecurity.\n2. Owning anger — telling her you are angry without attacking her.\n\nMindset: What you want and feel matters—expressing it is an act of love.",
       inputs: [
         { q: "She hasn't replied to your texts all day.", a: "\"When I don't hear from you all day, I feel unimportant, and that scares me a bit.\"", bundle: 'free' },
@@ -3683,7 +3683,7 @@ const collections = {
     },
     {
       name: "Refusing the Rejection",
-      guideFront: "Use this strategy when...",
+      guideFront: "Keep the connection open when...",
       guideBack: "One way it could sound",
       description: "Steadfastly refusing to accept a unilateral shutdown of connection (e.g., when she says \"Go away!\") by staying present and offering safety.\nShe is often testing your devotion; by not being scared off by her intensity, you build deep trust.\n\n• \"I'm not going anywhere.\"\n• \"I see you're hurting. I'm right here when you're ready.\"\n\nVariants:\n1. During silence — remain physically in the room without pressuring her.\n2. During the \"Go!\" — give her physical space but send a loving confirmation.\n\nMindset: Be more committed to the connection than you are afraid of her intensity.",
       inputs: [
@@ -8990,88 +8990,6 @@ const collections = {
       ]
     },
   ],
-  seenandtrusted1thesafetyshereads: [
-    {
-      name: "The Kept Word",
-      guideFront: "Use this strategy when...",
-      guideBack: "One way it could sound",
-      description: "Doing what you said you would do, and saying so yourself when it changes — before she has to ask. Not grand promises; the small ones nobody wrote down.\n\nIt works because reliability is the only thing that can be checked. She cannot verify what you feel, but she can verify whether the tyre got changed and whether you said something when it did not. Every kept word is one less thing she has to hold in her head.\n\nTypical phrases: • \"I said Thursday. It has to move to Saturday, and I've already told your mother.\" • \"That's mine. I'll have it done before we leave.\" • \"I forgot. Not an excuse — it's on my list for tomorrow morning and I'll tell you when it's done.\"\n\nTwo variants of the move:\n\n1. **Doing it without the reminder** — the thing gets done before it becomes a conversation. \"The forms went in this morning.\"\n2. **Flagging the change early** — the moment you know it will slip, she hears it from you. \"I'm not going to make the six o'clock. I'll be there by seven and I've told them.\"\n\nMindset: she cannot feel what I intend, only what I actually do.",
-      inputs: [
-        { q: "You said you would sort the car insurance this week and it is Thursday evening.", a: "(You do it before she asks.) \"Insurance is done. Renewed for a year.\"", bundle: 'free' },
-        { q: "You are going to be an hour late home and she is holding dinner.", a: "\"I'm going to be an hour later than I said. Eat without me — I'll heat mine up.\"", bundle: 'free' },
-        { q: "You promised to call the plumber on Monday and it is now Wednesday.", a: "\"I said Monday and I didn't do it. I'm calling at nine tomorrow, and I'll tell you what they say.\"", bundle: 'free' },
-        { q: "A work trip you agreed to skip has become unavoidable.", a: "\"The Lisbon trip is back on and I can't get out of it. I know what I said. Let's work out the week now, not the night before.\"", bundle: 'free' },
-        { q: "She asks, for the second time, whether you booked the appointment.", a: "\"I booked it on Tuesday. Ninth of next month, two o'clock — it's in your calendar too.\"", bundle: 'free' },
-        { q: "You agreed to be home for bedtime three nights a week and you have managed one.", a: "\"One out of three isn't what I said. Tuesday and Thursday are blocked from now on, and I'll move meetings rather than move those.\"", bundle: 'pro' },
-        { q: "You realise mid-week you will not finish the thing you took on, and nobody has noticed yet.", a: "\"I'm not going to get the garage done this weekend. I'd rather say it now than have you find out on Sunday.\"", bundle: 'pro' },
-        { q: "She has stopped asking about a task you keep not doing.", a: "\"You've stopped asking about the shed. That's worse than you asking. It's happening Saturday.\"", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Not Against You",
-      guideFront: "Use this strategy when...",
-      guideBack: "One way it could sound",
-      description: "Saying out loud, while the argument is still going, that the disagreement is not a threat to the relationship. It is a sentence about the ground, not about the topic.\n\nIt works because in a fight she is often running two conversations at once — the one about the dishwasher, and a quieter one asking *are we still a we*. Answering the second one directly frees both of you to actually have the first.\n\nTypical phrases: • \"I'm angry about what happened. I'm not angry at you and I'm not going anywhere.\" • \"We're on the same side of this, even though it doesn't sound like it.\" • \"I want to sort this out with you, not win it.\"\n\nThree variants of the move:\n\n1. **Separating the heat from the bond** — you are visibly angry and you say what the anger is not. \"I'm furious about the money. That's it. Nothing else is in question.\"\n2. **Refusing the exit** — she reaches for the worst reading and you close it. \"You're asking if I'm done. I'm not done. I'm annoyed, which is a different thing.\"\n3. **Naming the shared side** — mid-argument, you put the problem outside the two of you. \"This is us against the schedule, not us against each other.\"\n\nMindset: she can hear anger without fear as long as she can hear that I am still here.",
-      inputs: [
-        { q: "You are ten minutes into an argument about money and your voice has risen.", a: "\"I'm angry about the spending. I'm not against you, and I'm not leaving this room.\"", bundle: 'free' },
-        { q: "She says, in the middle of a fight: \"Maybe you'd be happier without all this.\"", a: "\"No. I'm annoyed about tonight. That's the whole list.\"", bundle: 'free' },
-        { q: "You disagree hard about how to handle her sister.", a: "\"We want the same thing here. We're arguing about the route, not the destination.\"", bundle: 'free' },
-        { q: "She has gone very quiet and is watching your face.", a: "\"I'm still cross. You're not in trouble with me. Those are two different things.\"", bundle: 'free' },
-        { q: "An argument about the kids has drifted into who is the worse parent.", a: "\"Stop. We're on the same side of this and we've both lost sight of it.\"", bundle: 'free' },
-        { q: "You need to say something hard and you can see her bracing for it.", a: "\"What I'm about to say is going to be uncomfortable. It isn't a threat, and nothing changes because of it.\"", bundle: 'pro' },
-        { q: "She apologises quickly for something small, clearly to make the mood end.", a: "\"You don't have to smooth this. I'm not withdrawing. We can be annoyed and fine at the same time.\"", bundle: 'pro' },
-        { q: "You have said something sharp and watched it land badly.", a: "\"That came out harder than I meant. I'm still frustrated, and I'm still with you.\"", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "The Held Boundary",
-      guideFront: "Use this strategy when...",
-      guideBack: "One way it could sound",
-      description: "Ending a conversation that has stopped working, and saying the attachment in the same breath as the limit. The limit is what stops the damage; the attachment is what stops the limit from reading as abandonment.\n\nIt works because a predictable line is safer than a man who absorbs everything and then goes off. She learns where the edges are, and edges she can see are not frightening.\n\nTypical phrases: • \"I'm not carrying on while we're talking to each other like this. I love you. We'll pick it up when we can do it better.\" • \"I'm going to stop here and come back in twenty minutes. I'm coming back.\" • \"I won't be spoken to like that. I do want to hear the rest of it.\"\n\nTwo variants of the move:\n\n1. **The limit with a return time** — the line comes with a stated point when you are back. \"I'm out for half an hour. Nine o'clock, kitchen, I'll be there.\"\n2. **The limit without leaving** — you stay in the room and stop the behaviour. \"I'm still here. I'm just not doing this part.\"\n\nMindset: a line she can see coming is safer than a patience that runs out without warning.",
-      inputs: [
-        { q: "The argument has turned into name-calling on both sides.", a: "\"I'm stopping. I love you and I want to finish this — not like this. Half an hour.\"", bundle: 'free' },
-        { q: "She brings up something from three years ago to win the point.", a: "\"I'm not going back there tonight. I'll stay on tonight's thing for as long as you want.\"", bundle: 'free' },
-        { q: "You have been talking in circles for forty minutes and both of you are exhausted.", a: "\"We're not getting anywhere and we're both wrecked. Bed. Tomorrow, properly.\"", bundle: 'free' },
-        { q: "She is being sarcastic and you can feel yourself starting to match it.", a: "\"I'm going to stop before I start doing it back. Give me ten minutes.\"", bundle: 'free' },
-        { q: "The children are in the next room and the volume has climbed.", a: "\"Not with them awake. After they're down, and we do finish it.\"", bundle: 'free' },
-        { q: "She follows you into the next room to keep going.", a: "\"I know you want to finish. I can't do it well right now, and I'd rather be late than cruel. Nine o'clock.\"", bundle: 'pro' },
-        { q: "You said you would come back in twenty minutes and it is now twenty minutes.", a: "(You come back and sit down.) \"Right. I'm here. Where were we?\"", bundle: 'pro' },
-        { q: "She tells you that walking away is the thing that hurts most.", a: "\"That's fair, and it's why I say when I'm coming back. Leaving without a time is what I'll stop doing.\"", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Steady Under Load",
-      guideFront: "Use this strategy when...",
-      guideBack: "One way it could sound",
-      description: "Functioning when the week goes wrong, so that she is not the only one holding it. Mostly this is action rather than speech: making the calls, absorbing the disruption, and telling her only what she needs in order to stop tracking it.\n\nIt works because one of the quieter questions she is asking is *if something happens, am I on my own with it*. That question is answered by what you do in a bad week, not by reassurance in a good one.\n\nTypical phrases: • \"I've got the school and the insurance. You don't need to do anything today.\" • \"I'll deal with your mother's appointment. Give me her number.\" • \"Two things went wrong today. Both are handled.\"\n\nThree variants of the move:\n\n1. **Taking the whole errand** — not helping with it, having it. \"The car's mine. You won't hear about it again until it's back.\"\n2. **Reporting only the ending** — she hears the outcome, not the running commentary. \"Sorted. It took three calls and it's done.\"\n3. **Absorbing the change** — the plan breaks and you rebuild it before she has to. \"Nursery's shut Friday. I've moved my morning. It's covered.\"\n\nMindset: in a bad week she should have fewer things to carry, not more things to hear about.",
-      inputs: [
-        { q: "The boiler has failed and she has a full day of work.", a: "\"I'm on the boiler. Go to work — I'll message you when someone's booked.\"", bundle: 'free' },
-        { q: "Her mother has been taken into hospital and she is trying to arrange cover for the children.", a: "\"Go. I've got the children, the school and the weekend. Text me when you know more.\"", bundle: 'free' },
-        { q: "A bill has been paid twice and she is on hold with the bank between meetings.", a: "(You take the phone.) \"Give it here. I'll sit on hold.\"", bundle: 'free' },
-        { q: "Two things have gone wrong today and she does not know about either.", a: "\"Two things went sideways today. Both are dealt with. You don't need the details unless you want them.\"", bundle: 'free' },
-        { q: "A holiday you booked has been cancelled by the airline.", a: "\"Flights are gone. I'm rebooking now — I'll show you two options tonight, not twelve.\"", bundle: 'free' },
-        { q: "You are also having a hard week and you can feel yourself wanting to compare notes.", a: "\"Mine's been rough too, and I'll tell you about it Sunday. Today I've got the practical stuff.\"", bundle: 'pro' },
-        { q: "She keeps checking whether you have actually done the thing you took on.", a: "\"It's done. I know you've been let down on this before, so I'll tell you when things land from now on.\"", bundle: 'pro' },
-        { q: "The problem is genuinely beyond you and you can feel the pull to pretend otherwise.", a: "\"I can't fix this one on my own. Here's what I've done, here's what's left, and here's what I need from you.\"", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Opening the Door",
-      guideFront: "Use this strategy when...",
-      guideBack: "One way it could sound",
-      description: "Asking a real question when she signals that something is going on inside, and then staying in the room for the answer. It is a short strategy: one question, then silence and attention.\n\nIt works because the signal is usually small and easy to miss on purpose. A sigh, a flat answer, a face that does not match the words. Asking turns her private weather into something you are in together — and the asking counts even when the answer is \"nothing\".\n\nTypical phrases: • \"You seem somewhere else. What's going on?\" • \"Come here. What happened?\" • \"That's the second time you've sighed. Tell me.\"\n\nThree variants of the move:\n\n1. **Naming what you noticed** — you say the observation, not a diagnosis. \"You've been quiet since the phone call.\"\n2. **Asking the smaller question** — not *what's wrong* but something answerable. \"What was the worst part of today?\"\n3. **Staying after the first answer** — she says \"nothing\" and you do not immediately leave. \"All right. I'm here if it turns into something.\"\n\nMindset: the question is worth asking even when the answer is nothing.",
-      inputs: [
-        { q: "She has been unusually quiet since a phone call this afternoon.", a: "\"You've been somewhere else since that call. What's going on?\"", bundle: 'free' },
-        { q: "She says the day was \"fine\" in a voice that says otherwise.", a: "\"Fine like fine, or fine like you don't want to get into it?\"", bundle: 'free' },
-        { q: "She sighs for the third time while doing the washing-up.", a: "(You put the tea towel down.) \"That's three sighs. Tell me.\"", bundle: 'free' },
-        { q: "She comes in and drops her bag without saying anything.", a: "\"Come here first. What happened?\"", bundle: 'free' },
-        { q: "She is scrolling and clearly not reading anything.", a: "\"What's the worst part of today? Just the worst bit.\"", bundle: 'free' },
-        { q: "You ask and she says \"nothing\", and you can tell it isn't nothing.", a: "\"All right. I'm not going to dig. I'll be here when it turns into something.\"", bundle: 'pro' },
-        { q: "She starts to tell you and you notice yourself getting ready to solve it.", a: "\"Keep going. I'm not going to try to fix it, I want to hear the whole thing.\"", bundle: 'pro' },
-        { q: "She mentioned something that worried her a week ago and has not raised it since.", a: "\"You said something last week about the scan. Where did that land?\"", bundle: 'pro' },
-      ]
-    },
-  ],
   seenandtrusted2careshedidnotaskf: [
     {
       name: "The Unasked Move",
@@ -9233,6 +9151,88 @@ const collections = {
         { q: "You notice you have been going along with things and complaining afterwards.", a: "\"I've been agreeing and then sulking. That's my fault. I'll say things at the front from now on.\"", bundle: 'pro' },
         { q: "She says you never seem to care about these decisions.", a: "\"I do care and I've been quiet, so that's fair. I want in on the next one.\"", bundle: 'pro' },
         { q: "You want a say and you also do not want to do the work.", a: "\"If I want a vote on this I should carry some of it. Give me the part I'd be arguing about.\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  seenandtrusted1thesafetyshereads: [
+    {
+      name: "The Kept Word",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
+      description: "Doing what you said you would do, and saying so yourself when it changes — before she has to ask. Not grand promises; the small ones nobody wrote down.\n\nIt works because reliability is the only thing that can be checked. She cannot verify what you feel, but she can verify whether the tyre got changed and whether you said something when it did not. Every kept word is one less thing she has to hold in her head.\n\nTypical phrases: • \"I said Thursday. It has to move to Saturday, and I've already told your mother.\" • \"That's mine. I'll have it done before we leave.\" • \"I forgot. Not an excuse — it's on my list for tomorrow morning and I'll tell you when it's done.\"\n\nTwo variants of the move:\n\n1. **Doing it without the reminder** — the thing gets done before it becomes a conversation. \"The forms went in this morning.\"\n2. **Flagging the change early** — the moment you know it will slip, she hears it from you. \"I'm not going to make the six o'clock. I'll be there by seven and I've told them.\"\n\nMindset: she cannot feel what I intend, only what I actually do.",
+      inputs: [
+        { q: "You said you would sort the car insurance this week and it is Thursday evening.", a: "(You do it before she asks.) \"Insurance is done. Renewed for a year.\"", bundle: 'free' },
+        { q: "You are going to be an hour late home and she is holding dinner.", a: "\"I'm going to be an hour later than I said. Eat without me — I'll heat mine up.\"", bundle: 'free' },
+        { q: "You promised to call the plumber on Monday and it is now Wednesday.", a: "\"I said Monday and I didn't do it. I'm calling at nine tomorrow, and I'll tell you what they say.\"", bundle: 'free' },
+        { q: "A work trip you agreed to skip has become unavoidable.", a: "\"The Lisbon trip is back on and I can't get out of it. I know what I said. Let's work out the week now, not the night before.\"", bundle: 'free' },
+        { q: "She asks, for the second time, whether you booked the appointment.", a: "\"I booked it on Tuesday. Ninth of next month, two o'clock — it's in your calendar too.\"", bundle: 'free' },
+        { q: "You agreed to be home for bedtime three nights a week and you have managed one.", a: "\"One out of three isn't what I said. Tuesday and Thursday are blocked from now on, and I'll move meetings rather than move those.\"", bundle: 'pro' },
+        { q: "You realise mid-week you will not finish the thing you took on, and nobody has noticed yet.", a: "\"I'm not going to get the garage done this weekend. I'd rather say it now than have you find out on Sunday.\"", bundle: 'pro' },
+        { q: "She has stopped asking about a task you keep not doing.", a: "\"You've stopped asking about the shed. That's worse than you asking. It's happening Saturday.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Not Against You",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
+      description: "Saying out loud, while the argument is still going, that the disagreement is not a threat to the relationship. It is a sentence about the ground, not about the topic.\n\nIt works because in a fight she is often running two conversations at once — the one about the dishwasher, and a quieter one asking *are we still a we*. Answering the second one directly frees both of you to actually have the first.\n\nTypical phrases: • \"I'm angry about what happened. I'm not angry at you and I'm not going anywhere.\" • \"We're on the same side of this, even though it doesn't sound like it.\" • \"I want to sort this out with you, not win it.\"\n\nThree variants of the move:\n\n1. **Separating the heat from the bond** — you are visibly angry and you say what the anger is not. \"I'm furious about the money. That's it. Nothing else is in question.\"\n2. **Refusing the exit** — she reaches for the worst reading and you close it. \"You're asking if I'm done. I'm not done. I'm annoyed, which is a different thing.\"\n3. **Naming the shared side** — mid-argument, you put the problem outside the two of you. \"This is us against the schedule, not us against each other.\"\n\nMindset: she can hear anger without fear as long as she can hear that I am still here.",
+      inputs: [
+        { q: "You are ten minutes into an argument about money and your voice has risen.", a: "\"I'm angry about the spending. I'm not against you, and I'm not leaving this room.\"", bundle: 'free' },
+        { q: "She says, in the middle of a fight: \"Maybe you'd be happier without all this.\"", a: "\"No. I'm annoyed about tonight. That's the whole list.\"", bundle: 'free' },
+        { q: "You disagree hard about how to handle her sister.", a: "\"We want the same thing here. We're arguing about the route, not the destination.\"", bundle: 'free' },
+        { q: "She has gone very quiet and is watching your face.", a: "\"I'm still cross. You're not in trouble with me. Those are two different things.\"", bundle: 'free' },
+        { q: "An argument about the kids has drifted into who is the worse parent.", a: "\"Stop. We're on the same side of this and we've both lost sight of it.\"", bundle: 'free' },
+        { q: "You need to say something hard and you can see her bracing for it.", a: "\"What I'm about to say is going to be uncomfortable. It isn't a threat, and nothing changes because of it.\"", bundle: 'pro' },
+        { q: "She apologises quickly for something small, clearly to make the mood end.", a: "\"You don't have to smooth this. I'm not withdrawing. We can be annoyed and fine at the same time.\"", bundle: 'pro' },
+        { q: "You have said something sharp and watched it land badly.", a: "\"That came out harder than I meant. I'm still frustrated, and I'm still with you.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Held Boundary",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
+      description: "Ending a conversation that has stopped working, and saying the attachment in the same breath as the limit. The limit is what stops the damage; the attachment is what stops the limit from reading as abandonment.\n\nIt works because a predictable line is safer than a man who absorbs everything and then goes off. She learns where the edges are, and edges she can see are not frightening.\n\nTypical phrases: • \"I'm not carrying on while we're talking to each other like this. I love you. We'll pick it up when we can do it better.\" • \"I'm going to stop here and come back in twenty minutes. I'm coming back.\" • \"I won't be spoken to like that. I do want to hear the rest of it.\"\n\nTwo variants of the move:\n\n1. **The limit with a return time** — the line comes with a stated point when you are back. \"I'm out for half an hour. Nine o'clock, kitchen, I'll be there.\"\n2. **The limit without leaving** — you stay in the room and stop the behaviour. \"I'm still here. I'm just not doing this part.\"\n\nMindset: a line she can see coming is safer than a patience that runs out without warning.",
+      inputs: [
+        { q: "The argument has turned into name-calling on both sides.", a: "\"I'm stopping. I love you and I want to finish this — not like this. Half an hour.\"", bundle: 'free' },
+        { q: "She brings up something from three years ago to win the point.", a: "\"I'm not going back there tonight. I'll stay on tonight's thing for as long as you want.\"", bundle: 'free' },
+        { q: "You have been talking in circles for forty minutes and both of you are exhausted.", a: "\"We're not getting anywhere and we're both wrecked. Bed. Tomorrow, properly.\"", bundle: 'free' },
+        { q: "She is being sarcastic and you can feel yourself starting to match it.", a: "\"I'm going to stop before I start doing it back. Give me ten minutes.\"", bundle: 'free' },
+        { q: "The children are in the next room and the volume has climbed.", a: "\"Not with them awake. After they're down, and we do finish it.\"", bundle: 'free' },
+        { q: "She follows you into the next room to keep going.", a: "\"I know you want to finish. I can't do it well right now, and I'd rather be late than cruel. Nine o'clock.\"", bundle: 'pro' },
+        { q: "You said you would come back in twenty minutes and it is now twenty minutes.", a: "(You come back and sit down.) \"Right. I'm here. Where were we?\"", bundle: 'pro' },
+        { q: "She tells you that walking away is the thing that hurts most.", a: "\"That's fair, and it's why I say when I'm coming back. Leaving without a time is what I'll stop doing.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Steady Under Load",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
+      description: "Functioning when the week goes wrong, so that she is not the only one holding it. Mostly this is action rather than speech: making the calls, absorbing the disruption, and telling her only what she needs in order to stop tracking it.\n\nIt works because one of the quieter questions she is asking is *if something happens, am I on my own with it*. That question is answered by what you do in a bad week, not by reassurance in a good one.\n\nTypical phrases: • \"I've got the school and the insurance. You don't need to do anything today.\" • \"I'll deal with your mother's appointment. Give me her number.\" • \"Two things went wrong today. Both are handled.\"\n\nThree variants of the move:\n\n1. **Taking the whole errand** — not helping with it, having it. \"The car's mine. You won't hear about it again until it's back.\"\n2. **Reporting only the ending** — she hears the outcome, not the running commentary. \"Sorted. It took three calls and it's done.\"\n3. **Absorbing the change** — the plan breaks and you rebuild it before she has to. \"Nursery's shut Friday. I've moved my morning. It's covered.\"\n\nMindset: in a bad week she should have fewer things to carry, not more things to hear about.",
+      inputs: [
+        { q: "The boiler has failed and she has a full day of work.", a: "\"I'm on the boiler. Go to work — I'll message you when someone's booked.\"", bundle: 'free' },
+        { q: "Her mother has been taken into hospital and she is trying to arrange cover for the children.", a: "\"Go. I've got the children, the school and the weekend. Text me when you know more.\"", bundle: 'free' },
+        { q: "A bill has been paid twice and she is on hold with the bank between meetings.", a: "(You take the phone.) \"Give it here. I'll sit on hold.\"", bundle: 'free' },
+        { q: "Two things have gone wrong today and she does not know about either.", a: "\"Two things went sideways today. Both are dealt with. You don't need the details unless you want them.\"", bundle: 'free' },
+        { q: "A holiday you booked has been cancelled by the airline.", a: "\"Flights are gone. I'm rebooking now — I'll show you two options tonight, not twelve.\"", bundle: 'free' },
+        { q: "You are also having a hard week and you can feel yourself wanting to compare notes.", a: "\"Mine's been rough too, and I'll tell you about it Sunday. Today I've got the practical stuff.\"", bundle: 'pro' },
+        { q: "She keeps checking whether you have actually done the thing you took on.", a: "\"It's done. I know you've been let down on this before, so I'll tell you when things land from now on.\"", bundle: 'pro' },
+        { q: "The problem is genuinely beyond you and you can feel the pull to pretend otherwise.", a: "\"I can't fix this one on my own. Here's what I've done, here's what's left, and here's what I need from you.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Opening the Door",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
+      description: "Asking a real question when she signals that something is going on inside, and then staying in the room for the answer. It is a short strategy: one question, then silence and attention.\n\nIt works because the signal is usually small and easy to miss on purpose. A sigh, a flat answer, a face that does not match the words. Asking turns her private weather into something you are in together — and the asking counts even when the answer is \"nothing\".\n\nTypical phrases: • \"You seem somewhere else. What's going on?\" • \"Come here. What happened?\" • \"That's the second time you've sighed. Tell me.\"\n\nThree variants of the move:\n\n1. **Naming what you noticed** — you say the observation, not a diagnosis. \"You've been quiet since the phone call.\"\n2. **Asking the smaller question** — not *what's wrong* but something answerable. \"What was the worst part of today?\"\n3. **Staying after the first answer** — she says \"nothing\" and you do not immediately leave. \"All right. I'm here if it turns into something.\"\n\nMindset: the question is worth asking even when the answer is nothing.",
+      inputs: [
+        { q: "She has been unusually quiet since a phone call this afternoon.", a: "\"You've been somewhere else since that call. What's going on?\"", bundle: 'free' },
+        { q: "She says the day was \"fine\" in a voice that says otherwise.", a: "\"Fine like fine, or fine like you don't want to get into it?\"", bundle: 'free' },
+        { q: "She sighs for the third time while doing the washing-up.", a: "(You put the tea towel down.) \"That's three sighs. Tell me.\"", bundle: 'free' },
+        { q: "She comes in and drops her bag without saying anything.", a: "\"Come here first. What happened?\"", bundle: 'free' },
+        { q: "She is scrolling and clearly not reading anything.", a: "\"What's the worst part of today? Just the worst bit.\"", bundle: 'free' },
+        { q: "You ask and she says \"nothing\", and you can tell it isn't nothing.", a: "\"All right. I'm not going to dig. I'll be here when it turns into something.\"", bundle: 'pro' },
+        { q: "She starts to tell you and you notice yourself getting ready to solve it.", a: "\"Keep going. I'm not going to try to fix it, I want to hear the whole thing.\"", bundle: 'pro' },
+        { q: "She mentioned something that worried her a week ago and has not raised it since.", a: "\"You said something last week about the scan. Where did that land?\"", bundle: 'pro' },
       ]
     },
   ],
@@ -13181,56 +13181,6 @@ const collectionsModeData = {
       ]
     },
   ],
-  seenandtrusted1thesafetyshereads: [
-    {
-      name: "The Storm and the Ground",
-      guideFront: "Choose a strategy when...",
-      guideBack: "One way it could sound",
-      description: "Choosing between **Not Against You**, **The Held Boundary** and **Opening the Door** when the temperature in the room has gone up.\n\n• **Not Against You** — she is bracing, and needs to hear that the bond is not in play\n• **The Held Boundary** — the conversation has turned corrosive and needs to stop\n• **Opening the Door** — the heat has passed and something is still sitting there\n\nThe deciding question: is she frightened, is the talk doing damage, or is it over and unfinished?\n\nThe usual wrong choice is the boundary too early — stopping the conversation before she has heard that you are staying, which is the exact shape of the thing she is afraid of.\n\nMindset: stop the damage, but say you are staying first.",
-      inputs: [
-        { q: "Her voice has gone thin and she keeps asking what you mean.", a: "\"I'm angry about the money and nothing else is in question. I'm not going anywhere.\" [Not Against You]", bundle: 'pro' },
-        { q: "You have both started saying things to wound rather than to be understood.", a: "\"I'm stopping. I love you. Half an hour and we come back to it.\" [The Held Boundary]", bundle: 'pro' },
-        { q: "The argument ended an hour ago and she has been quiet since.", a: "\"That was ugly earlier. What's still sitting with you?\" [Opening the Door]", bundle: 'pro' },
-        { q: "She asks, mid-fight, whether you actually want to be married.", a: "\"Yes. I'm furious about tonight. Those two things are both true.\" [Not Against You]", bundle: 'pro' },
-        { q: "She is mocking your tone back at you and you can feel yourself about to match it.", a: "\"I'm going to stop before I start doing that back. Ten minutes.\" [The Held Boundary]", bundle: 'pro' },
-        { q: "A row about the holiday has been over for two days and something is still off.", a: "\"We never actually finished Tuesday, did we. What's left of it for you?\" [Opening the Door]", bundle: 'pro' },
-        { q: "You need to raise something difficult and can see her already tensing.", a: "\"This is going to be uncomfortable and it changes nothing about us.\" [Not Against You]", bundle: 'pro' },
-        { q: "She has brought up an old grievance to win the current one.", a: "\"I'm not going back there tonight. I'll stay on this one as long as you like.\" [The Held Boundary]", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Weight She Should Not Carry Alone",
-      guideFront: "Choose a strategy when...",
-      guideBack: "One way it could sound",
-      description: "Choosing between **Steady Under Load**, **The Kept Word** and **Opening the Door** when the practical side of life is pressing on her.\n\n• **Steady Under Load** — something has gone wrong and needs taking off her entirely\n• **The Kept Word** — the thing was already yours, and what matters is that it lands\n• **Opening the Door** — you do not yet know which part is the heavy part\n\nThe deciding question: is this a fire, a promise, or a fog?\n\nThe usual wrong choice is taking over the wrong thing — solving the visible errand while the thing actually pressing on her goes unmentioned.\n\nMindset: ask before you carry, or you will carry the wrong thing well.",
-      inputs: [
-        { q: "The washing machine has flooded the kitchen and she has a presentation at ten.", a: "\"Go. Kitchen's mine. I'll send you a photo when it's dry.\" [Steady Under Load]", bundle: 'pro' },
-        { q: "You said you would handle the tax forms and the deadline is Friday.", a: "\"Forms went in this morning. That's finished.\" [The Kept Word]", bundle: 'pro' },
-        { q: "She is snappy about small things and you cannot tell which thing is the real one.", a: "\"Something's heavier than the dishwasher. What is it?\" [Opening the Door]", bundle: 'pro' },
-        { q: "Her father has had a fall and she is trying to arrange everything from work.", a: "\"Send me the numbers. I'll make the calls and give you the summary tonight.\" [Steady Under Load]", bundle: 'pro' },
-        { q: "She asks a second time whether the appointment got booked.", a: "\"Booked Tuesday, ninth at two, it's in your calendar.\" [The Kept Word]", bundle: 'pro' },
-        { q: "She says she is fine but has not sat down all evening.", a: "(You take the laundry basket off her.) \"What's the one that's actually bothering you?\" [Opening the Door]", bundle: 'pro' },
-        { q: "A childcare arrangement has collapsed for Friday.", a: "\"Nursery's shut. I've moved my morning, it's covered. Nothing for you to do.\" [Steady Under Load]", bundle: 'pro' },
-        { q: "You realise mid-week that the thing you took on will not be done in time.", a: "\"The garage isn't happening this weekend. Saying it now rather than Sunday.\" [The Kept Word]", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "All Five Strategies",
-      guideFront: "Choose a strategy when...",
-      guideBack: "One way it could sound",
-      description: "Everything in this pack mixed together, with no warning about which moment you are in — **The Kept Word**, **Not Against You**, **The Held Boundary**, **Steady Under Load** and **Opening the Door**.\n\n• Something practical has gone wrong → carry it or confirm it\n• Something between you has gone wrong → ground it or stop it\n• Something is going on in her and you do not know what → ask\n\nThe deciding question: is the pressure coming from the world, from the two of you, or from inside her?\n\nThe usual wrong choice is treating a bad mood as a practical problem — fixing an errand when what is needed is a question.\n\nMindset: work out where the weather is coming from before you reach for anything.",
-      inputs: [
-        { q: "She has been short with you all evening and the house is otherwise fine.", a: "\"Nothing's actually wrong with the evening, so it's something else. What is it?\" [Opening the Door]", bundle: 'pro' },
-        { q: "You are late for the third time this month and she has not said anything about it.", a: "\"Third time this month. You've stopped mentioning it, which is worse. It stops here.\" [The Kept Word]", bundle: 'pro' },
-        { q: "The row has reached the point where she is crying and you are still making your case.", a: "\"I'm stopping. I love you. Twenty minutes and I'll be back at this table.\" [The Held Boundary]", bundle: 'pro' },
-        { q: "Her car has failed its MOT and she has three days of meetings.", a: "\"Keys. I'll deal with the garage and get you a hire car by tomorrow.\" [Steady Under Load]", bundle: 'pro' },
-        { q: "She asks whether you are happy, apropos of nothing.", a: "\"Yes. I've been distracted, not unhappy — and I can see how that reads.\" [Not Against You]", bundle: 'pro' },
-        { q: "She mentions offhand that she is dreading Thursday.", a: "\"What's Thursday? Tell me the bit you're dreading.\" [Opening the Door]", bundle: 'pro' },
-        { q: "You lost your temper yesterday and she has been careful around you since.", a: "\"You've been walking on eggshells since yesterday. I don't want to be someone you manage.\" [Not Against You]", bundle: 'pro' },
-        { q: "Both of your parents need something this weekend and she is holding both calendars.", a: "\"I'll take mine and I'll take the Saturday driving. You keep Sunday.\" [Steady Under Load]", bundle: 'pro' },
-      ]
-    },
-  ],
   seenandtrusted2careshedidnotaskf: [
     {
       name: "When She Is Spent",
@@ -13328,6 +13278,56 @@ const collectionsModeData = {
         { q: "She thanks you warmly and you feel yourself reaching for a deflection.", a: "\"That landed properly. Thank you.\" [Letting It Land]", bundle: 'pro' },
         { q: "You have gone quiet and cold and she has noticed.", a: "\"I'm doing the silent thing. What I want is ten minutes of your attention in the evening.\" [The Four Questions]", bundle: 'pro' },
         { q: "A big decision is forming and you have said nothing.", a: "\"Before this gets settled, I want to be in it rather than object to it later.\" [Ask Before You Decide]", bundle: 'pro' },
+      ]
+    },
+  ],
+  seenandtrusted1thesafetyshereads: [
+    {
+      name: "The Storm and the Ground",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Choosing between **Not Against You**, **The Held Boundary** and **Opening the Door** when the temperature in the room has gone up.\n\n• **Not Against You** — she is bracing, and needs to hear that the bond is not in play\n• **The Held Boundary** — the conversation has turned corrosive and needs to stop\n• **Opening the Door** — the heat has passed and something is still sitting there\n\nThe deciding question: is she frightened, is the talk doing damage, or is it over and unfinished?\n\nThe usual wrong choice is the boundary too early — stopping the conversation before she has heard that you are staying, which is the exact shape of the thing she is afraid of.\n\nMindset: stop the damage, but say you are staying first.",
+      inputs: [
+        { q: "Her voice has gone thin and she keeps asking what you mean.", a: "\"I'm angry about the money and nothing else is in question. I'm not going anywhere.\" [Not Against You]", bundle: 'pro' },
+        { q: "You have both started saying things to wound rather than to be understood.", a: "\"I'm stopping. I love you. Half an hour and we come back to it.\" [The Held Boundary]", bundle: 'pro' },
+        { q: "The argument ended an hour ago and she has been quiet since.", a: "\"That was ugly earlier. What's still sitting with you?\" [Opening the Door]", bundle: 'pro' },
+        { q: "She asks, mid-fight, whether you actually want to be married.", a: "\"Yes. I'm furious about tonight. Those two things are both true.\" [Not Against You]", bundle: 'pro' },
+        { q: "She is mocking your tone back at you and you can feel yourself about to match it.", a: "\"I'm going to stop before I start doing that back. Ten minutes.\" [The Held Boundary]", bundle: 'pro' },
+        { q: "A row about the holiday has been over for two days and something is still off.", a: "\"We never actually finished Tuesday, did we. What's left of it for you?\" [Opening the Door]", bundle: 'pro' },
+        { q: "You need to raise something difficult and can see her already tensing.", a: "\"This is going to be uncomfortable and it changes nothing about us.\" [Not Against You]", bundle: 'pro' },
+        { q: "She has brought up an old grievance to win the current one.", a: "\"I'm not going back there tonight. I'll stay on this one as long as you like.\" [The Held Boundary]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Weight She Should Not Carry Alone",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Choosing between **Steady Under Load**, **The Kept Word** and **Opening the Door** when the practical side of life is pressing on her.\n\n• **Steady Under Load** — something has gone wrong and needs taking off her entirely\n• **The Kept Word** — the thing was already yours, and what matters is that it lands\n• **Opening the Door** — you do not yet know which part is the heavy part\n\nThe deciding question: is this a fire, a promise, or a fog?\n\nThe usual wrong choice is taking over the wrong thing — solving the visible errand while the thing actually pressing on her goes unmentioned.\n\nMindset: ask before you carry, or you will carry the wrong thing well.",
+      inputs: [
+        { q: "The washing machine has flooded the kitchen and she has a presentation at ten.", a: "\"Go. Kitchen's mine. I'll send you a photo when it's dry.\" [Steady Under Load]", bundle: 'pro' },
+        { q: "You said you would handle the tax forms and the deadline is Friday.", a: "\"Forms went in this morning. That's finished.\" [The Kept Word]", bundle: 'pro' },
+        { q: "She is snappy about small things and you cannot tell which thing is the real one.", a: "\"Something's heavier than the dishwasher. What is it?\" [Opening the Door]", bundle: 'pro' },
+        { q: "Her father has had a fall and she is trying to arrange everything from work.", a: "\"Send me the numbers. I'll make the calls and give you the summary tonight.\" [Steady Under Load]", bundle: 'pro' },
+        { q: "She asks a second time whether the appointment got booked.", a: "\"Booked Tuesday, ninth at two, it's in your calendar.\" [The Kept Word]", bundle: 'pro' },
+        { q: "She says she is fine but has not sat down all evening.", a: "(You take the laundry basket off her.) \"What's the one that's actually bothering you?\" [Opening the Door]", bundle: 'pro' },
+        { q: "A childcare arrangement has collapsed for Friday.", a: "\"Nursery's shut. I've moved my morning, it's covered. Nothing for you to do.\" [Steady Under Load]", bundle: 'pro' },
+        { q: "You realise mid-week that the thing you took on will not be done in time.", a: "\"The garage isn't happening this weekend. Saying it now rather than Sunday.\" [The Kept Word]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "All Five Strategies",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Everything in this pack mixed together, with no warning about which moment you are in — **The Kept Word**, **Not Against You**, **The Held Boundary**, **Steady Under Load** and **Opening the Door**.\n\n• Something practical has gone wrong → carry it or confirm it\n• Something between you has gone wrong → ground it or stop it\n• Something is going on in her and you do not know what → ask\n\nThe deciding question: is the pressure coming from the world, from the two of you, or from inside her?\n\nThe usual wrong choice is treating a bad mood as a practical problem — fixing an errand when what is needed is a question.\n\nMindset: work out where the weather is coming from before you reach for anything.",
+      inputs: [
+        { q: "She has been short with you all evening and the house is otherwise fine.", a: "\"Nothing's actually wrong with the evening, so it's something else. What is it?\" [Opening the Door]", bundle: 'pro' },
+        { q: "You are late for the third time this month and she has not said anything about it.", a: "\"Third time this month. You've stopped mentioning it, which is worse. It stops here.\" [The Kept Word]", bundle: 'pro' },
+        { q: "The row has reached the point where she is crying and you are still making your case.", a: "\"I'm stopping. I love you. Twenty minutes and I'll be back at this table.\" [The Held Boundary]", bundle: 'pro' },
+        { q: "Her car has failed its MOT and she has three days of meetings.", a: "\"Keys. I'll deal with the garage and get you a hire car by tomorrow.\" [Steady Under Load]", bundle: 'pro' },
+        { q: "She asks whether you are happy, apropos of nothing.", a: "\"Yes. I've been distracted, not unhappy — and I can see how that reads.\" [Not Against You]", bundle: 'pro' },
+        { q: "She mentions offhand that she is dreading Thursday.", a: "\"What's Thursday? Tell me the bit you're dreading.\" [Opening the Door]", bundle: 'pro' },
+        { q: "You lost your temper yesterday and she has been careful around you since.", a: "\"You've been walking on eggshells since yesterday. I don't want to be someone you manage.\" [Not Against You]", bundle: 'pro' },
+        { q: "Both of your parents need something this weekend and she is holding both calendars.", a: "\"I'll take mine and I'll take the Saturday driving. You keep Sunday.\" [Steady Under Load]", bundle: 'pro' },
       ]
     },
   ],
