@@ -8261,148 +8261,6 @@ const memorizeCollections = {
       ]
     },
   ],
-  seenandtrusted1thesafetyshereads: [
-    {
-      name: "Core Idea",
-      description: "What a woman is often scanning for in a relationship, and the five things a man can actually do about it.\n\n1. The Kept Word\n2. Not Against You\n3. The Held Boundary\n4. Steady Under Load\n5. Opening the Door\n\nThree of them are what you do; two are what you say when the ground shifts.",
-      cards: [
-        { q: "What is the question this pack is built around?", a: "The quiet one she is often running underneath the visible conversation: am I safe, am I loved, and are we together or alone in this?", bundle: 'free' },
-        { q: "What are the five strategies in this pack?", a: "The Kept Word, Not Against You, The Held Boundary, Steady Under Load, and Opening the Door.", bundle: 'free' },
-        { q: "Why can safety not be given by reassurance alone?", a: "Because she cannot verify what you feel. She can only verify what you did, which is why reliability carries the weight.", bundle: 'free' },
-        { q: "What are the six kinds of safety this pack draws on?", a: "Emotional, relational, reliability, romantic, practical and physical.", bundle: 'free' },
-        { q: "Which two strategies are mostly action rather than speech?", a: "The Kept Word and Steady Under Load.", bundle: 'free' },
-        { q: "Why is a predictable limit safer than endless patience?", a: "Because patience with no visible edge eventually produces an explosion she could not see coming, and unpredictability is the thing she is scanning for.", bundle: 'pro' },
-        { q: "What does this pack say a man should NOT try to do?", a: "Make her free of all worry. Her emotional regulation is partly her own work; his part is being reliable and interested.", bundle: 'pro' },
-        { q: "What is the difference between controlled anger and emotional sterility?", a: "Controlled anger says what is true and stays in charge of itself. Sterility says nothing and collects a bill.", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "The Kept Word",
-      description: "",
-      cards: [
-        { q: "What is the core move of \"The Kept Word\"?", a: "Doing what you said, and telling her yourself when it changes — before she has to ask.", bundle: 'free' },
-        { q: "Why does this strategy work?", a: "Because it is the only part of you she can actually check. Intentions are invisible; a renewed insurance policy is not.", bundle: 'free' },
-        { q: "What are the two variants of \"The Kept Word\"?", a: "Doing it without the reminder, and flagging the change early.", bundle: 'free' },
-        { q: "Why is flagging a change early part of keeping your word?", a: "Because the promise she is relying on is not just the task, it is that she will not be surprised by it failing.", bundle: 'free' },
-        { q: "What is the cost of a promise that quietly lapses?", a: "She starts tracking, and the tracking arrives as nagging, which you then experience as disrespect.", bundle: 'free' },
-        { q: "Why is her giving up on asking worse news than her nagging?", a: "Because nagging means she still expects something. Silence means she has stopped.", bundle: 'pro' },
-        { q: "What should replace the reason when you have missed something?", a: "What happens now. The reason is for you; the repair is for her.", bundle: 'pro' },
-        { q: "Why does \"most of it\" not count?", a: "Because she still has to hold the remainder, which was the part she was trying to put down.", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Not Against You",
-      description: "",
-      cards: [
-        { q: "What is the core move of \"Not Against You\"?", a: "Saying out loud, during the argument, that the disagreement is not a threat to the relationship.", bundle: 'free' },
-        { q: "Why does this strategy work?", a: "Because she is often running two conversations at once, and answering the quieter one frees you both to have the loud one properly.", bundle: 'free' },
-        { q: "What are the three variants of \"Not Against You\"?", a: "Separating the heat from the bond, refusing the exit, and naming the shared side.", bundle: 'free' },
-        { q: "What is \"refusing the exit\"?", a: "Closing down the worst reading when she reaches for it — answering \"are you done with me\" with a plain no rather than a clause.", bundle: 'free' },
-        { q: "Why should the answer to a safety question be short?", a: "Because a long answer sounds like a case being built, and a case can be lost.", bundle: 'free' },
-        { q: "What does it mean when she starts apologising for things she does not think she did?", a: "She has moved from arguing to managing you. That is the point to say the bond is not in play.", bundle: 'pro' },
-        { q: "Why is being irritated at a repeated reassurance request counterproductive?", a: "The asking is the symptom. Irritation at a symptom produces more of it.", bundle: 'pro' },
-        { q: "When is the best moment to use this strategy?", a: "Early — before the boundary, and before she has had time to fill the silence with her own worst version.", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "The Held Boundary",
-      description: "",
-      cards: [
-        { q: "What is the core move of \"The Held Boundary\"?", a: "Ending a conversation that has stopped working, with the attachment said in the same breath as the limit.", bundle: 'free' },
-        { q: "Why does the attachment have to be in the same sentence?", a: "Because a limit on its own has the same shape as leaving, and that shape is what she is afraid of.", bundle: 'free' },
-        { q: "What are the two variants of \"The Held Boundary\"?", a: "The limit with a return time, and the limit without leaving the room.", bundle: 'free' },
-        { q: "Why does a stated return time matter so much?", a: "Because it converts an absence into an appointment. She is waiting for something rather than wondering.", bundle: 'free' },
-        { q: "What does this strategy protect that patience does not?", a: "Predictability. She learns where the edges are, and visible edges are not frightening.", bundle: 'free' },
-        { q: "What has to happen after you say you will be back in twenty minutes?", a: "You come back in twenty minutes. The strategy is the return, not the exit.", bundle: 'pro' },
-        { q: "When does a limit read as punishment?", a: "When it arrives without warmth, or without a time, or in place of a conversation you have been avoiding for weeks.", bundle: 'pro' },
-        { q: "Why is stopping better than pushing through to finish the point?", a: "Because nothing said past that line is being received, and some of it cannot be taken back.", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Steady Under Load",
-      description: "",
-      cards: [
-        { q: "What is the core move of \"Steady Under Load\"?", a: "Functioning when the week goes wrong, so that she is not the only one holding it — mostly by action rather than speech.", bundle: 'free' },
-        { q: "Why does this strategy work?", a: "Because \"if something happens, am I on my own with it\" is answered by a bad week, not by reassurance in a good one.", bundle: 'free' },
-        { q: "What are the three variants of \"Steady Under Load\"?", a: "Taking the whole errand, reporting only the ending, and absorbing the change.", bundle: 'free' },
-        { q: "What is the difference between helping with something and taking it?", a: "Helping leaves the management with her. Taking it means she can stop thinking about it entirely.", bundle: 'free' },
-        { q: "Why report only the outcome?", a: "Because a running commentary keeps the problem in her head, which is the thing you were trying to remove.", bundle: 'free' },
-        { q: "Why is \"just tell me what you need\" a weak offer?", a: "It is generous and it hands her more work — she now has to allocate you as well as everything else.", bundle: 'pro' },
-        { q: "What should you do when the problem is genuinely beyond you?", a: "Say so, with what you have done, what is left, and what you need. Pretending is a worse failure than the limit.", bundle: 'pro' },
-        { q: "What does taking a whole area rather than a task change for her?", a: "She can put down the map, not just one errand on it.", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Opening the Door",
-      description: "",
-      cards: [
-        { q: "What is the core move of \"Opening the Door\"?", a: "Asking a real question when she signals something is going on, and staying in the room for the answer.", bundle: 'free' },
-        { q: "Why does this strategy work?", a: "Because the signal is small and easy to miss on purpose, and asking turns her private weather into something you are in together.", bundle: 'free' },
-        { q: "What are the three variants of \"Opening the Door\"?", a: "Naming what you noticed, asking the smaller question, and staying after the first answer.", bundle: 'free' },
-        { q: "Why ask a smaller question than \"what's wrong\"?", a: "Because \"what's wrong\" is hard to answer honestly. \"What was the worst part of today\" can be answered in one sentence.", bundle: 'free' },
-        { q: "Does the question still count if the answer is \"nothing\"?", a: "Yes. The asking is the thing being noticed, not the answer.", bundle: 'free' },
-        { q: "What is the risk of asking and then immediately solving?", a: "She stops telling you things, because telling you costs her a solution she did not want.", bundle: 'pro' },
-        { q: "What does \"naming what you noticed\" avoid?", a: "A diagnosis. \"You've been quiet since the call\" is an observation she can correct; \"you're upset about your sister\" is a verdict she has to argue with.", bundle: 'pro' },
-        { q: "Why does asking about something she mentioned a week ago land so hard?", a: "It proves the thing stayed in your head without her maintaining it there.", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Collections",
-      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **The Storm and the Ground** — the temperature has risen: do you ground it, stop it, or reopen it?\n• **Weight She Should Not Carry Alone** — the practical load: is it a fire, a promise, or a fog?\n• **All Five Strategies** — everything mixed, with no warning about which moment you are in\n\nOne question decides most of it: is the pressure coming from the world, from the two of you, or from inside her?",
-      cards: [
-        { q: "What are the three collections in this pack?", a: "The Storm and the Ground, Weight She Should Not Carry Alone, and All Five Strategies.", bundle: 'pro' },
-        { q: "What does \"The Storm and the Ground\" make you choose between?", a: "Not Against You, The Held Boundary and Opening the Door — grounding the fight, stopping it, or reopening it afterwards.", bundle: 'pro' },
-        { q: "What is the usual wrong choice in \"The Storm and the Ground\"?", a: "The boundary too early — stopping the conversation before she has heard you are staying, which is the exact shape of what she fears.", bundle: 'pro' },
-        { q: "What does \"Weight She Should Not Carry Alone\" make you choose between?", a: "Steady Under Load, The Kept Word and Opening the Door.", bundle: 'pro' },
-        { q: "What is the usual wrong choice under load?", a: "Taking over the visible errand while the thing actually pressing on her goes unmentioned.", bundle: 'pro' },
-        { q: "What single question sorts most of \"All Five Strategies\"?", a: "Where the weather is coming from — the world, the two of you, or inside her.", bundle: 'pro' },
-        { q: "Which strategy appears in all three collections?", a: "Opening the Door.", bundle: 'pro' },
-        { q: "Why does Opening the Door appear so often?", a: "Because most wrong choices in this pack come from acting before knowing which problem you are in.", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Sequences",
-      description: "The three sequences in this pack, and the order each one runs in:\n\n• **From Heat to Ground** — Not Against You → The Held Boundary → Opening the Door\n• **When You Dropped It** — The Kept Word → Steady Under Load → Opening the Door\n• **The Hard Week** — Opening the Door → Steady Under Load → The Kept Word\n\nIn each one, the order is what stops a good move from landing as the wrong thing.",
-      cards: [
-        { q: "What are the three sequences in this pack?", a: "From Heat to Ground, When You Dropped It, and The Hard Week.", bundle: 'pro' },
-        { q: "What is the order in \"From Heat to Ground\"?", a: "Not Against You, then The Held Boundary, then Opening the Door.", bundle: 'pro' },
-        { q: "Why must \"Not Against You\" come before the boundary?", a: "Because the boundary is the frightening part, and it can only be heard as a limit rather than as leaving once she knows you are staying.", bundle: 'pro' },
-        { q: "What is the order in \"When You Dropped It\"?", a: "The Kept Word, then Steady Under Load, then Opening the Door.", bundle: 'pro' },
-        { q: "Why does the repair come before the question in \"When You Dropped It\"?", a: "Because asking how she feels before fixing anything reads as buying your way out with interest.", bundle: 'pro' },
-        { q: "What is the order in \"The Hard Week\"?", a: "Opening the Door, then Steady Under Load, then The Kept Word.", bundle: 'pro' },
-        { q: "Why does the question come first in \"The Hard Week\"?", a: "Because helping before asking means helping with the visible thing rather than the heavy one, and she still cannot put it down.", bundle: 'pro' },
-        { q: "Why does \"The Hard Week\" end with a stated when?", a: "Without one she keeps the task in her head anyway, which means nothing was actually taken off her.", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Challenges",
-      description: "The five challenges in this pack, and what each one is organised around:\n\n• **The Cold Front** — she has gone flat and everything is technically fine\n• **When You Are the Problem** — you did the thing, and she is right\n• **The Overload** — the list has got longer than the week\n• **Rising Heat** — your own temperature has become the issue\n• **Testing the Ground** — she asks the safety question sideways\n\nEach one starts from the situation rather than from the strategy.",
-      cards: [
-        { q: "What are the five challenges in this pack?", a: "The Cold Front, When You Are the Problem, The Overload, Rising Heat, and Testing the Ground.", bundle: 'pro' },
-        { q: "What goes wrong in \"The Cold Front\"?", a: "The silence reads as a request to be left alone, and leaving her alone confirms the thing she is afraid of.", bundle: 'pro' },
-        { q: "What goes wrong in \"When You Are the Problem\"?", a: "The explanation. The reason is interesting to you and irrelevant to her, and offering it turns her hurt into a debate.", bundle: 'pro' },
-        { q: "What goes wrong in \"The Overload\"?", a: "Helping. Doing a visible task well leaves the management with her, and the management is the crushing part.", bundle: 'pro' },
-        { q: "What goes wrong in \"Rising Heat\"?", a: "Your temperature becomes her problem — she stops arguing and starts monitoring you.", bundle: 'pro' },
-        { q: "What goes wrong in \"Testing the Ground\"?", a: "Answering the surface question. The literal question is not the question, so a reasonable answer lands as a dodge.", bundle: 'pro' },
-        { q: "Which challenge is about something you did rather than something she is doing?", a: "When You Are the Problem — and, in a different way, Rising Heat.", bundle: 'pro' },
-        { q: "What is the one thing to avoid in \"The Cold Front\"?", a: "Matching it. Going quiet back turns a bad evening into a bad fortnight.", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Mindset",
-      description: "These are the mindsets you practise in this pack:\n\n• **Her Worry** — her anxiety is not automatically a verdict on you\n• **Anger** — controlled anger is safe; swallowed anger is a fuse\n• **Limits** — a visible line is safer than patience with no edge\n• **Promises** — she cannot see intentions, only the record\n• **Distance** — take the space, and say that you are taking it\n\nIn every one, the belief that gets in the way feels like consideration from the inside.",
-      cards: [
-        { q: "What are the five mindsets in this pack?", a: "Her Worry, Anger, Limits, Promises, and Distance.", bundle: 'pro' },
-        { q: "What is the core block in \"Her Worry\"?", a: "Believing that any anxiety of hers is evidence that you have failed, which turns into managing her moods instead of being honest.", bundle: 'pro' },
-        { q: "What is true instead in the \"Anger\" mindset?", a: "She can hear you angry without fear, provided she can see you are in full control of yourself.", bundle: 'pro' },
-        { q: "What is the core block in \"Limits\"?", a: "Believing that safety means she gets her way, when a predictable limit does more for safety than yielding does.", bundle: 'pro' },
-        { q: "What is true instead in the \"Promises\" mindset?", a: "Reliability is not a background quality, it is the whole visible evidence.", bundle: 'pro' },
-        { q: "What does the \"Distance\" mindset cost when unexamined?", a: "She has to invent the reason for your absence, and the version she invents is worse than the truth.", bundle: 'pro' },
-        { q: "What do all five of these beliefs have in common?", a: "Each one sounds like restraint or consideration from the inside, and each one removes information she needs.", bundle: 'pro' },
-        { q: "Which two mindsets are about what you withhold rather than what you do?", a: "Anger and Distance — one swallows the feeling, the other swallows the explanation.", bundle: 'pro' },
-      ]
-    },
-  ],
   seenandtrusted2careshedidnotaskf: [
     {
       name: "Core Idea",
@@ -8684,6 +8542,162 @@ const memorizeCollections = {
         { q: "What is true instead of \"the loop is mostly hers to fix\"?", a: "The loop runs on two halves and yours is the only one you can operate. Going first is not a concession, it is the only lever.", bundle: 'pro' },
         { q: "What do all five of these beliefs have in common?", a: "Each one gives you a reason not to say anything, and each one sounds like self-respect from the inside.", bundle: 'pro' },
         { q: "Why is a hint a test?", a: "Because she is being marked on something she does not know she is sitting, and failing it costs her goodwill she never spent.", bundle: 'pro' },
+      ]
+    },
+  ],
+  seenandtrusted1thesafetyshereads: [
+    {
+      name: "Core Idea",
+      description: "What a woman is often scanning for in a relationship, and the five things a man can actually do about it.\n\n1. The Kept Word\n2. Not Against You\n3. The Held Boundary\n4. Steady Under Load\n5. Opening the Door\n\nThree of them are what you do; two are what you say when the ground shifts.",
+      cards: [
+        { q: "What is the question this pack is built around?", a: "The quiet one she is often running underneath the visible conversation: am I safe, am I loved, and are we together or alone in this?", bundle: 'free' },
+        { q: "What are the five strategies in this pack?", a: "The Kept Word, Not Against You, The Held Boundary, Steady Under Load, and Opening the Door.", bundle: 'free' },
+        { q: "Why can safety not be given by reassurance alone?", a: "Because she cannot verify what you feel. She can only verify what you did, which is why reliability carries the weight.", bundle: 'free' },
+        { q: "What are the six kinds of safety this pack draws on?", a: "Emotional, relational, reliability, romantic, practical and physical.", bundle: 'free' },
+        { q: "Which two strategies are mostly action rather than speech?", a: "The Kept Word and Steady Under Load.", bundle: 'free' },
+        { q: "Why is a predictable limit safer than endless patience?", a: "Because patience with no visible edge eventually produces an explosion she could not see coming, and unpredictability is the thing she is scanning for.", bundle: 'pro' },
+        { q: "What does this pack say a man should NOT try to do?", a: "Make her free of all worry. Her emotional regulation is partly her own work; his part is being reliable and interested.", bundle: 'pro' },
+        { q: "What is the difference between controlled anger and emotional sterility?", a: "Controlled anger says what is true and stays in charge of itself. Sterility says nothing and collects a bill.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Kept Word",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"The Kept Word\"?", a: "Doing what you said, and telling her yourself when it changes — before she has to ask.", bundle: 'free' },
+        { q: "Why does this strategy work?", a: "Because it is the only part of you she can actually check. Intentions are invisible; a renewed insurance policy is not.", bundle: 'free' },
+        { q: "What are the two variants of \"The Kept Word\"?", a: "Doing it without the reminder, and flagging the change early.", bundle: 'free' },
+        { q: "Why is flagging a change early part of keeping your word?", a: "Because the promise she is relying on is not just the task, it is that she will not be surprised by it failing.", bundle: 'free' },
+        { q: "What is the cost of a promise that quietly lapses?", a: "She starts tracking, and the tracking arrives as nagging, which you then experience as disrespect.", bundle: 'free' },
+        { q: "Why is her giving up on asking worse news than her nagging?", a: "Because nagging means she still expects something. Silence means she has stopped.", bundle: 'pro' },
+        { q: "What should replace the reason when you have missed something?", a: "What happens now. The reason is for you; the repair is for her.", bundle: 'pro' },
+        { q: "Why does \"most of it\" not count?", a: "Because she still has to hold the remainder, which was the part she was trying to put down.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Not Against You",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"Not Against You\"?", a: "Saying out loud, during the argument, that the disagreement is not a threat to the relationship.", bundle: 'free' },
+        { q: "Why does this strategy work?", a: "Because she is often running two conversations at once, and answering the quieter one frees you both to have the loud one properly.", bundle: 'free' },
+        { q: "What are the three variants of \"Not Against You\"?", a: "Separating the heat from the bond, refusing the exit, and naming the shared side.", bundle: 'free' },
+        { q: "What is \"refusing the exit\"?", a: "Closing down the worst reading when she reaches for it — answering \"are you done with me\" with a plain no rather than a clause.", bundle: 'free' },
+        { q: "Why should the answer to a safety question be short?", a: "Because a long answer sounds like a case being built, and a case can be lost.", bundle: 'free' },
+        { q: "What does it mean when she starts apologising for things she does not think she did?", a: "She has moved from arguing to managing you. That is the point to say the bond is not in play.", bundle: 'pro' },
+        { q: "Why is being irritated at a repeated reassurance request counterproductive?", a: "The asking is the symptom. Irritation at a symptom produces more of it.", bundle: 'pro' },
+        { q: "When is the best moment to use this strategy?", a: "Early — before the boundary, and before she has had time to fill the silence with her own worst version.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Held Boundary",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"The Held Boundary\"?", a: "Ending a conversation that has stopped working, with the attachment said in the same breath as the limit.", bundle: 'free' },
+        { q: "Why does the attachment have to be in the same sentence?", a: "Because a limit on its own has the same shape as leaving, and that shape is what she is afraid of.", bundle: 'free' },
+        { q: "What are the two variants of \"The Held Boundary\"?", a: "The limit with a return time, and the limit without leaving the room.", bundle: 'free' },
+        { q: "Why does a stated return time matter so much?", a: "Because it converts an absence into an appointment. She is waiting for something rather than wondering.", bundle: 'free' },
+        { q: "What does this strategy protect that patience does not?", a: "Predictability. She learns where the edges are, and visible edges are not frightening.", bundle: 'free' },
+        { q: "What has to happen after you say you will be back in twenty minutes?", a: "You come back in twenty minutes. The strategy is the return, not the exit.", bundle: 'pro' },
+        { q: "When does a limit read as punishment?", a: "When it arrives without warmth, or without a time, or in place of a conversation you have been avoiding for weeks.", bundle: 'pro' },
+        { q: "Why is stopping better than pushing through to finish the point?", a: "Because nothing said past that line is being received, and some of it cannot be taken back.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Steady Under Load",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"Steady Under Load\"?", a: "Functioning when the week goes wrong, so that she is not the only one holding it — mostly by action rather than speech.", bundle: 'free' },
+        { q: "Why does this strategy work?", a: "Because \"if something happens, am I on my own with it\" is answered by a bad week, not by reassurance in a good one.", bundle: 'free' },
+        { q: "What are the three variants of \"Steady Under Load\"?", a: "Taking the whole errand, reporting only the ending, and absorbing the change.", bundle: 'free' },
+        { q: "What is the difference between helping with something and taking it?", a: "Helping leaves the management with her. Taking it means she can stop thinking about it entirely.", bundle: 'free' },
+        { q: "Why report only the outcome?", a: "Because a running commentary keeps the problem in her head, which is the thing you were trying to remove.", bundle: 'free' },
+        { q: "Why is \"just tell me what you need\" a weak offer?", a: "It is generous and it hands her more work — she now has to allocate you as well as everything else.", bundle: 'pro' },
+        { q: "What should you do when the problem is genuinely beyond you?", a: "Say so, with what you have done, what is left, and what you need. Pretending is a worse failure than the limit.", bundle: 'pro' },
+        { q: "What does taking a whole area rather than a task change for her?", a: "She can put down the map, not just one errand on it.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Opening the Door",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"Opening the Door\"?", a: "Asking a real question when she signals something is going on, and staying in the room for the answer.", bundle: 'free' },
+        { q: "Why does this strategy work?", a: "Because the signal is small and easy to miss on purpose, and asking turns her private weather into something you are in together.", bundle: 'free' },
+        { q: "What are the three variants of \"Opening the Door\"?", a: "Naming what you noticed, asking the smaller question, and staying after the first answer.", bundle: 'free' },
+        { q: "Why ask a smaller question than \"what's wrong\"?", a: "Because \"what's wrong\" is hard to answer honestly. \"What was the worst part of today\" can be answered in one sentence.", bundle: 'free' },
+        { q: "Does the question still count if the answer is \"nothing\"?", a: "Yes. The asking is the thing being noticed, not the answer.", bundle: 'free' },
+        { q: "What is the risk of asking and then immediately solving?", a: "She stops telling you things, because telling you costs her a solution she did not want.", bundle: 'pro' },
+        { q: "What does \"naming what you noticed\" avoid?", a: "A diagnosis. \"You've been quiet since the call\" is an observation she can correct; \"you're upset about your sister\" is a verdict she has to argue with.", bundle: 'pro' },
+        { q: "Why does asking about something she mentioned a week ago land so hard?", a: "It proves the thing stayed in your head without her maintaining it there.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "What She Reads For",
+      description: "The six kinds of safety the pack is built on, and the question each one is really asking:\n\n• Emotional — can I show what is going on inside me without being mocked or left?\n• Relational — are we still a we, even when we are fighting?\n• Reliability — can I trust what you say, and that you do what you promised?\n• Romantic — do you still want me, and is our exclusivity real?\n• Practical — will you function when life gets hard, or do I carry it all?\n• Physical — can you be angry without me having to be afraid of you?\n\nMost of what goes wrong is answering the wrong one.",
+      cards: [
+        { q: "What question is emotional safety asking?", a: "Can I show what is going on inside me without being mocked or left? Opening the Door is the move that answers it.", bundle: 'pro' },
+        { q: "What question is relational safety asking?", a: "Are we still a we, even when we are fighting? Not Against You answers it directly, in the middle of the argument.", bundle: 'pro' },
+        { q: "What question is reliability asking?", a: "Can I trust what you say, and that you do what you promised? The Kept Word answers this one and nothing else does.", bundle: 'pro' },
+        { q: "What question is romantic safety asking?", a: "Do you still want me, and is our exclusivity real? It is the one this pack does least about, because it is answered by attention over time rather than by a line.", bundle: 'pro' },
+        { q: "What question is practical safety asking?", a: "Will you function when life gets hard, or do I carry it all? Steady Under Load is the whole of the answer.", bundle: 'pro' },
+        { q: "What question is physical safety asking?", a: "Can you be angry without me having to be afraid of you? The Held Boundary answers it by making the limit visible before the temper is.", bundle: 'pro' },
+        { q: "Which kind do most men assume is the only one?", a: "Physical. It is the one they are sure they have already provided, and it is usually not the one that is missing.", bundle: 'pro' },
+        { q: "Why does it matter which kind is missing?", a: "Because the moves are not interchangeable. A practical answer to a relational question — sorting an errand when she asked whether you are still on her side — reads as a dodge.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **The Storm and the Ground** — the temperature has risen: do you ground it, stop it, or reopen it?\n• **Weight She Should Not Carry Alone** — the practical load: is it a fire, a promise, or a fog?\n• **All Five Strategies** — everything mixed, with no warning about which moment you are in\n\nOne question decides most of it: is the pressure coming from the world, from the two of you, or from inside her?",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "The Storm and the Ground, Weight She Should Not Carry Alone, and All Five Strategies.", bundle: 'pro' },
+        { q: "What does \"The Storm and the Ground\" make you choose between?", a: "Not Against You, The Held Boundary and Opening the Door — grounding the fight, stopping it, or reopening it afterwards.", bundle: 'pro' },
+        { q: "What is the usual wrong choice in \"The Storm and the Ground\"?", a: "The boundary too early — stopping the conversation before she has heard you are staying, which is the exact shape of what she fears.", bundle: 'pro' },
+        { q: "What does \"Weight She Should Not Carry Alone\" make you choose between?", a: "Steady Under Load, The Kept Word and Opening the Door.", bundle: 'pro' },
+        { q: "What is the usual wrong choice under load?", a: "Taking over the visible errand while the thing actually pressing on her goes unmentioned.", bundle: 'pro' },
+        { q: "What single question sorts most of \"All Five Strategies\"?", a: "Where the weather is coming from — the world, the two of you, or inside her.", bundle: 'pro' },
+        { q: "Which strategy appears in all three collections?", a: "Opening the Door.", bundle: 'pro' },
+        { q: "Why does Opening the Door appear so often?", a: "Because most wrong choices in this pack come from acting before knowing which problem you are in.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n• **From Heat to Ground** — Not Against You → The Held Boundary → Opening the Door\n• **When You Dropped It** — The Kept Word → Steady Under Load → Opening the Door\n• **The Hard Week** — Opening the Door → Steady Under Load → The Kept Word\n\nIn each one, the order is what stops a good move from landing as the wrong thing.",
+      cards: [
+        { q: "What are the three sequences in this pack?", a: "From Heat to Ground, When You Dropped It, and The Hard Week.", bundle: 'pro' },
+        { q: "What is the order in \"From Heat to Ground\"?", a: "Not Against You, then The Held Boundary, then Opening the Door.", bundle: 'pro' },
+        { q: "Why must \"Not Against You\" come before the boundary?", a: "Because the boundary is the frightening part, and it can only be heard as a limit rather than as leaving once she knows you are staying.", bundle: 'pro' },
+        { q: "What is the order in \"When You Dropped It\"?", a: "The Kept Word, then Steady Under Load, then Opening the Door.", bundle: 'pro' },
+        { q: "Why does the repair come before the question in \"When You Dropped It\"?", a: "Because asking how she feels before fixing anything reads as buying your way out with interest.", bundle: 'pro' },
+        { q: "What is the order in \"The Hard Week\"?", a: "Opening the Door, then Steady Under Load, then The Kept Word.", bundle: 'pro' },
+        { q: "Why does the question come first in \"The Hard Week\"?", a: "Because helping before asking means helping with the visible thing rather than the heavy one, and she still cannot put it down.", bundle: 'pro' },
+        { q: "Why does \"The Hard Week\" end with a stated when?", a: "Without one she keeps the task in her head anyway, which means nothing was actually taken off her.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenges in this pack, and what each one is organised around:\n\n• **The Cold Front** — she has gone flat and everything is technically fine\n• **When You Are the Problem** — you did the thing, and she is right\n• **The Overload** — the list has got longer than the week\n• **Rising Heat** — your own temperature has become the issue\n• **Testing the Ground** — she asks the safety question sideways\n\nEach one starts from the situation rather than from the strategy.",
+      cards: [
+        { q: "What are the five challenges in this pack?", a: "The Cold Front, When You Are the Problem, The Overload, Rising Heat, and Testing the Ground.", bundle: 'pro' },
+        { q: "What goes wrong in \"The Cold Front\"?", a: "The silence reads as a request to be left alone, and leaving her alone confirms the thing she is afraid of.", bundle: 'pro' },
+        { q: "What goes wrong in \"When You Are the Problem\"?", a: "The explanation. The reason is interesting to you and irrelevant to her, and offering it turns her hurt into a debate.", bundle: 'pro' },
+        { q: "What goes wrong in \"The Overload\"?", a: "Helping. Doing a visible task well leaves the management with her, and the management is the crushing part.", bundle: 'pro' },
+        { q: "What goes wrong in \"Rising Heat\"?", a: "Your temperature becomes her problem — she stops arguing and starts monitoring you.", bundle: 'pro' },
+        { q: "What goes wrong in \"Testing the Ground\"?", a: "Answering the surface question. The literal question is not the question, so a reasonable answer lands as a dodge.", bundle: 'pro' },
+        { q: "Which challenge is about something you did rather than something she is doing?", a: "When You Are the Problem — and, in a different way, Rising Heat.", bundle: 'pro' },
+        { q: "What is the one thing to avoid in \"The Cold Front\"?", a: "Matching it. Going quiet back turns a bad evening into a bad fortnight.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "These are the mindsets you practise in this pack:\n\n• **Her Worry** — her anxiety is not automatically a verdict on you\n• **Anger** — controlled anger is safe; swallowed anger is a fuse\n• **Limits** — a visible line is safer than patience with no edge\n• **Promises** — she cannot see intentions, only the record\n• **Distance** — take the space, and say that you are taking it\n\nIn every one, the belief that gets in the way feels like consideration from the inside.",
+      cards: [
+        { q: "What are the five mindsets in this pack?", a: "Her Worry, Anger, Limits, Promises, and Distance.", bundle: 'pro' },
+        { q: "What is the core block in \"Her Worry\"?", a: "Believing that any anxiety of hers is evidence that you have failed, which turns into managing her moods instead of being honest.", bundle: 'pro' },
+        { q: "What is true instead in the \"Anger\" mindset?", a: "She can hear you angry without fear, provided she can see you are in full control of yourself.", bundle: 'pro' },
+        { q: "What is the core block in \"Limits\"?", a: "Believing that safety means she gets her way, when a predictable limit does more for safety than yielding does.", bundle: 'pro' },
+        { q: "What is true instead in the \"Promises\" mindset?", a: "Reliability is not a background quality, it is the whole visible evidence.", bundle: 'pro' },
+        { q: "What does the \"Distance\" mindset cost when unexamined?", a: "She has to invent the reason for your absence, and the version she invents is worse than the truth.", bundle: 'pro' },
+        { q: "What do all five of these beliefs have in common?", a: "Each one sounds like restraint or consideration from the inside, and each one removes information she needs.", bundle: 'pro' },
+        { q: "Which two mindsets are about what you withhold rather than what you do?", a: "Anger and Distance — one swallows the feeling, the other swallows the explanation.", bundle: 'pro' },
       ]
     },
   ],
