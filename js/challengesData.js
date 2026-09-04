@@ -623,8 +623,8 @@ const challengesCollections = {
   reactingtounexpectedstatements: [
     {
       name: "They Said Something You Object To",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Something has been said that you find wrong, unkind or offensive, and you have no prepared response — which is exactly when people either say nothing and regret it, or say something sharp and regret that.\n\nThe pause is worth more here than anywhere. A named second, or an honest \"I don't know what to say to that\", both register that it landed without committing you to a fight you have not thought about.\n\nWhether to take it further is a separate decision, and it is a much better one made tomorrow than in the moment.\n\nMindset: register it now, decide later. Both halves matter.",
       inputs: [
         { q: "Someone says something you find genuinely objectionable.", a: "\"I don't know what to say to that, honestly.\" [Say You Don't Know What to Say]", bundle: 'pro' },
@@ -636,8 +636,8 @@ const challengesCollections = {
     },
     {
       name: "They Told You Something Personal",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Someone discloses something significant — an illness, a loss, a relationship, something they have been carrying — and there is a strong pull towards saying something adequate.\n\nAdequacy is the wrong target. Nobody expects the right words, and the hollow ones are worse than none. What people remember is who stayed in the conversation.\n\nIf it is bigger than a conversation between the two of you, saying so kindly and pointing towards real support is the right move rather than a failure of nerve.\n\nMindset: present beats eloquent. Say the true small thing and stay.",
       inputs: [
         { q: "Someone tells you something serious about their health.", a: "\"I don't know what to say. I'm really glad you told me, though.\" [Say You Don't Know What to Say]", bundle: 'pro' },
@@ -649,8 +649,8 @@ const challengesCollections = {
     },
     {
       name: "An Opinion You Strongly Disagree With",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Someone states a view you find plainly wrong, and the argument assembles itself before you have decided whether to have it.\n\nArguing from surprise is the worst version of arguing: the case is unprepared, the tone is sharper than intended, and it is the tone that gets remembered. A question buys you information and time at once, and it very often turns out that the position is not quite what the sentence suggested.\n\nDeciding whether it is worth discussing is a legitimate separate step, and this pack ends where Disagreeing begins.\n\nMindset: find out what they actually think before deciding whether to argue with it.",
       inputs: [
         { q: "Someone states a view you think is plainly wrong.", a: "\"How did you land on that? I'm genuinely curious.\" [Ask What Prompted It]", bundle: 'pro' },
@@ -662,8 +662,8 @@ const challengesCollections = {
     },
     {
       name: "You Reacted Before You Thought",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Something came out — a laugh, a dismissal, a sharper answer than you meant — before you had decided anything.\n\nGoing back is easy and rare. Name it as a reaction rather than a view, say what you actually think now, and if it landed badly say so plainly instead of hoping it passed unnoticed.\n\nMindset: correcting a first reaction is the most credible thing you can do afterwards.",
       inputs: [
         { q: "You laughed out of surprise at the wrong moment.", a: "\"Sorry — that was surprise, not amusement. Let me start again.\" [Say You Need a Second]", bundle: 'pro' },
@@ -675,8 +675,8 @@ const challengesCollections = {
     },
     {
       name: "It Happened in Front of People",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "An audience changes everything. There is pressure to produce a response immediately, silence is more conspicuous, and anything you say is heard by people who have no context.\n\nAlmost always the right move is the smallest one: a short honest holding line in the room, and the real conversation afterwards. Nobody thinks less of someone who says they will come back to it; plenty of people regret what they said in the moment.\n\nMindset: small in the room, real afterwards.",
       inputs: [
         { q: "Something lands in a meeting and everyone looks at you.", a: "\"I'd want to think about that before I answer.\" [Come Back to It Later]", bundle: 'pro' },
@@ -1561,8 +1561,8 @@ const challengesCollections = {
   apologizing1: [
     {
       name: "The Non-Apology",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "\"I'm sorry you feel that way.\" \"I'm sorry, but you did the same thing.\" \"Fine, I'm sorry.\" All three contain the word sorry and none is an apology, and everybody can hear the difference immediately.\n\nWhat they share is that they protect you. The first relocates the problem into the other person's feelings, the second trades, and the third apologises for having to be in the conversation.\n\nThe fix is always the same: apologise for the thing you did, with no conditional and nothing attached.\n\nMindset: if the sentence protects you, it is not an apology yet.",
       inputs: [
         { q: "You are about to say \"I'm sorry you feel that way\".", a: "\"I'm sorry I said it. Not that you're upset — that I said it.\" [Apologise for What You Did]", bundle: 'pro' },
@@ -1574,8 +1574,8 @@ const challengesCollections = {
     },
     {
       name: "Over-Apologising",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Apologising four times, at length, for something small. It feels like taking responsibility and usually does the opposite — the other person ends up reassuring you, which quietly makes your mistake into their job.\n\nIt also devalues the currency. Someone who apologises constantly is harder to believe when it matters, because the size of the apology has stopped carrying information.\n\nMindset: once, properly, and then stop. Repeating it is asking to be forgiven again.",
       inputs: [
         { q: "You have apologised twice and they have said it is fine twice.", a: "\"Right — I'll stop apologising. Thanks.\" [Say Sorry Simply]", bundle: 'pro' },
@@ -1587,8 +1587,8 @@ const challengesCollections = {
     },
     {
       name: "The Plan Is Empty",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "\"I'll be more careful.\" \"It won't happen again.\" \"I'll try harder.\" All of them sound like a commitment and none can be checked, which means neither of you will know whether anything changed.\n\nTo someone who has heard you apologise before, an uncheckable plan is the same as no plan. A small specific one is worth far more, precisely because it can be seen to happen or not happen.\n\nMindset: promise something someone could watch you do.",
       inputs: [
         { q: "You are about to say \"I'll be more careful\".", a: "\"I'll put it in the calendar while we're talking. That's the actual change.\" [Say What You'll Do Differently]", bundle: 'pro' },
@@ -1600,8 +1600,8 @@ const challengesCollections = {
     },
     {
       name: "You Do Not Think You Were Wrong",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "You have annoyed someone and you still think your position was right. This is handled worst by apologising vaguely for nothing in particular in the hope that it passes.\n\nThere is nearly always something genuinely yours: the timing, the tone, the audience, the fact that they found out from someone else. Apologise for that specifically and hold the substance separately. It is honest, and it works far better than an apology you do not mean.\n\nIf literally nothing is yours, say that kindly rather than performing regret you do not feel.\n\nMindset: apologise for your part precisely. Do not apologise for all of it to end the conversation.",
       inputs: [
         { q: "You stand by the decision but not how you said it.", a: "\"The tone was wrong and I'm sorry for it. The decision I'd still make.\" [Apologise for What You Did]", bundle: 'pro' },
@@ -1613,8 +1613,8 @@ const challengesCollections = {
     },
     {
       name: "It Needs More Than This",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Some apologies are beyond the everyday version. Somebody was genuinely hurt, it has been sitting there for days, or the same thing has happened repeatedly and a quick sorry has already been tried.\n\nThe short version is not wrong in those cases — it is simply not enough, and delivering it more sincerely does not fix that. What is missing is showing that you understood what it was like for them before you apologise at all.\n\nMindset: when the short version keeps bouncing off, the problem is the size, not the sincerity.",
       inputs: [
         { q: "You have apologised twice and it clearly has not landed.", a: "\"Saying sorry isn't doing it. Can we sit down with it properly?\" [Choose the Size]", bundle: 'pro' },
@@ -1762,8 +1762,8 @@ const challengesCollections = {
   persuasionandinfluence1: [
     {
       name: "They Have Not Engaged",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "They are not against it. They have not thought about it at all, and a well-made argument lands on nothing because there is no question in their mind yet.\n\nMake it their business before you make the case. A benefit that touches something they already care about, or a cost they are already paying without noticing, creates the question your reasoning can then answer.\n\nMindset: no interest is not disagreement, and it needs a different strategy.",
       inputs: [
         { q: "They shrug and say it makes no difference to them.", a: "\"It'd be the difference between a calm October and the usual one.\" [Show the Benefit to Them]", bundle: 'pro' },
@@ -1775,8 +1775,8 @@ const challengesCollections = {
     },
     {
       name: "They Think Nothing Is the Safe Option",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Every proposal is compared against carrying on as before, and carrying on as before is almost always imagined as free. It is not — it is simply a cost everyone has stopped noticing.\n\nMaking the current cost visible is often the whole argument, and it changes the question from whether the new thing is worth doing to whether it is worth more than what is already being spent.\n\nMindset: name what the status quo costs, plainly, and let them compare properly.",
       inputs: [
         { q: "They say the current way works fine.", a: "\"It works because someone rescues it every time. That's the cost.\" [Name the Cost of Doing Nothing]", bundle: 'pro' },
@@ -1788,8 +1788,8 @@ const challengesCollections = {
     },
     {
       name: "They Doubt It Would Work",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "They accept there is a problem and do not believe your solution would fix it, or that it is realistic at all.\n\nArgument does not shift this — evidence does. A first-hand account asks them to concede nothing, which is exactly why it moves people who have already resisted your reasoning.\n\nMindset: when the argument has failed, stop arguing and say what happened.",
       inputs: [
         { q: "They say it sounds good in theory.", a: "\"The team upstairs switched last year and they've not gone back.\" [Tell What Happened to You]", bundle: 'pro' },
@@ -1801,8 +1801,8 @@ const challengesCollections = {
     },
     {
       name: "You Are the One Who Should Move",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "You set out to persuade and they turn out to be right, or they raise something you cannot answer.\n\nContinuing from momentum is how people end up defending positions they no longer hold. Saying so plainly costs nothing and is the thing that makes your next argument worth listening to.\n\nMindset: changing your mind in public is what makes people willing to be persuaded by you.",
       inputs: [
         { q: "They raise something you did not know.", a: "\"Then the reason I've been giving doesn't hold. I didn't know that.\" [Give a Reason]", bundle: 'pro' },
@@ -1814,8 +1814,8 @@ const challengesCollections = {
     },
     {
       name: "The Case Is Not Honest",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Persuasion goes wrong long before it becomes manipulation. It starts with a number you have not checked, a benefit you have invented for them, or a cost you have made sound worse than it is.\n\nEach of those works in the moment and fails permanently when checked, because it takes everything true you said with it.\n\nMindset: say the version you would be comfortable having them overhear you explain.",
       inputs: [
         { q: "A statistic would really help and you do not have one.", a: "\"I don't have a figure. What I do have is what happened to us in April.\" [Give a Reason]", bundle: 'pro' },
@@ -2030,8 +2030,8 @@ const challengesCollections = {
   respondingtopassiveaggression: [
     {
       name: "In Front of Other People",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "A remark made with an audience is a different situation from the same remark made privately. Naming it publicly puts the other person on the spot and often costs you more than the original comment did.\n\nThe reliable pattern: keep it light in the room, and take it up privately afterwards if it matters. The audience makes the surface strategies stronger and the under-the-surface ones riskier.\n\nMindset: light in public, direct in private.",
       inputs: [
         { q: "A colleague makes a pointed comment about your work in a meeting.", a: "\"I read the summary — which bit should I look at?\" [Answer It Straight]", bundle: 'pro' },
@@ -2043,8 +2043,8 @@ const challengesCollections = {
     },
     {
       name: "They Have Power Over You",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "A manager, a teacher, a client. The under-the-surface strategies carry more risk here, and \"say how it lands\" can be heard as a complaint about a superior rather than a report about a remark.\n\nKeep to the surface strategies in the moment. If it needs raising, do it privately, keep it to one specific instance rather than a pattern, and stay on the effect on the work rather than on their behaviour.\n\nMindset: surface in the moment, specific and private if you raise it at all.",
       inputs: [
         { q: "A manager makes a sarcastic remark about your timing.", a: "\"It did run late. I'll get the next one in earlier.\" [Answer It Straight]", bundle: 'pro' },
@@ -2056,8 +2056,8 @@ const challengesCollections = {
     },
     {
       name: "You Cannot Tell If It Was One",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Tone is unreliable, text is worse, and people differ enormously in how blunt they sound. A fair proportion of remarks read as passive-aggressive were nothing of the sort.\n\nAsking is the honest way through, and it works precisely because it does not accuse. If you are wrong, you have asked a harmless question; if you are right, you have opened the conversation without a fight.\n\nMindset: check before you conclude. The cost of asking is nothing.",
       inputs: [
         { q: "A message reads as sharp and you cannot tell.", a: "\"Can't read tone in messages — did you mean that as a nudge or am I imagining it?\" [Ask What They Mean]", bundle: 'pro' },
@@ -2069,8 +2069,8 @@ const challengesCollections = {
     },
     {
       name: "It Is a Pattern",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "One remark and a habit are different problems, and answering the habit one remark at a time never works — each individual instance is too small to justify a conversation, which is exactly what keeps it going.\n\nA pattern needs to be raised as a pattern: privately, calmly, with two or three specific examples rather than a general accusation, and with what you would prefer instead.\n\nMindset: raise the pattern, not the latest instance.",
       inputs: [
         { q: "It has happened repeatedly and you keep letting it go.", a: "\"This keeps happening and I keep saying nothing. I'd like to sort it properly.\" [Say How It Lands]", bundle: 'pro' },
@@ -2082,8 +2082,8 @@ const challengesCollections = {
     },
     {
       name: "You Want to Hit Back",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "A well-aimed remark produces an immediate urge to answer in kind, and the reply is usually right there, fully formed.\n\nThe cost is that you have joined in. From that point it is no longer someone being unpleasant at you — it is two people doing it to each other, and there is no version of that conversation you leave feeling good about.\n\nMindset: the sharp reply is available all evening. You can always use it later, and you almost never will.",
       inputs: [
         { q: "You have a perfect cutting reply ready.", a: "\"Thanks. It did take longer than I expected.\" [Answer It Straight]", bundle: 'pro' },
@@ -2097,8 +2097,8 @@ const challengesCollections = {
   makingrequests: [
     {
       name: "You Have Been Hinting for Weeks",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The request exists, but it has only ever come out as an observation, a sigh, or a question that was really a request in disguise. Nothing has changed, and by now there is a layer of resentment on top.\n\nThe resentment is the problem to handle first, because it will come out in the tone. The other person has not refused you — they have not been asked. From where they are standing, this is the first they have heard of it.\n\nAsk Instead of Hinting is the move. Make It Specific matters more than usual here, since a long-hinted request has usually grown vague in your own head too.\n\nMindset: say it once, plainly, without the history attached.",
       inputs: [
         { q: "You have mentioned it three times and nothing has changed.", a: "\"Could you do your washing up the same evening from now on?\" [Ask Instead of Hinting]", bundle: 'pro' },
@@ -2110,8 +2110,8 @@ const challengesCollections = {
     },
     {
       name: "They Have Power Over You",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "A manager, a landlord, a teacher, anyone whose no has consequences. The instinct is to pad the request until it is barely there, or to skip asking altogether and be quietly aggrieved.\n\nThe strategies do not change, but two of them carry more weight. Make It Specific, because a busy person with authority answers a clear question and postpones a vague one. And Follow Up Once, because your request is genuinely more likely to be lost than refused.\n\nLeaving room to refuse still applies, and it costs you nothing: they already have the power to say no. Saying it out loud only makes you easier to say yes to.\n\nMindset: a clear question from someone junior is a relief to answer, not a demand.",
       inputs: [
         { q: "You want to ask your manager for a change to your hours.", a: "\"Could I start at ten on Wednesdays from next month?\" [Ask Instead of Hinting]", bundle: 'pro' },
@@ -2123,8 +2123,8 @@ const challengesCollections = {
     },
     {
       name: "You Feel You Have Asked Too Much Lately",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "They have helped twice this month and you need something again. The usual response is to not ask, then manage badly, then be resentful that nobody offered.\n\nThe accounting is worth questioning. People generally track favours far more loosely than the person asking does, and being asked is not experienced as a debt by most of them.\n\nWhat genuinely helps is naming it once and then leaving the exit wide open. Say that you know you have asked a lot, ask anyway, and make the no easy.\n\nMindset: name it, ask anyway, and let them decide. That decision is not yours to make on their behalf.",
       inputs: [
         { q: "They have already helped twice this month.", a: "\"I've asked you a lot lately. Could you do one more thing on Saturday?\" [Ask Instead of Hinting]", bundle: 'pro' },
@@ -2136,8 +2136,8 @@ const challengesCollections = {
     },
     {
       name: "They Said No, or Said Nothing",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The answer came back negative, or it did not come back at all. This is where requests turn into something else — a sulk, an argument, or a third message with an edge on it.\n\nSilence gets one follow-up, framed as a missed message rather than an accusation, and asking for a yes or no is often more useful than asking for the thing.\n\nA refusal gets one sentence and no renegotiation. Suggesting another day the moment they refuse is a second ask, and it makes the first no feel like it was not heard.\n\nMindset: you are protecting the next request, not rescuing this one.",
       inputs: [
         { q: "Three days of silence after your message.", a: "\"You've probably not seen this — did you get a chance to look?\" [Follow Up Once]", bundle: 'pro' },
@@ -2149,8 +2149,8 @@ const challengesCollections = {
     },
     {
       name: "It Is Not Actually a Request",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The place where this pack is the wrong tool. Some things are not favours: work someone is paid to do, a promise already made to you, your share of something shared, or a rule being broken.\n\nWrapping those in the language of a request muddles them. \"Could you possibly, if it's not too much trouble, do the thing you agreed to in March\" invites a no that should not be available, and it teaches both of you that the agreement was optional.\n\nSay it plainly and drop the exit. Making It Specific still helps, and so does one short reason. Leave Room to Refuse does not — that is the part to remove.\n\nAnd the reverse case: if you are dressing up a demand as a request because you want the appearance of choice, that is worse than either. Ask, or state it. Not both.\n\nMindset: a favour can be refused. An agreement is not a favour. Know which one you are holding.",
       inputs: [
         { q: "They agreed to it in March and nothing has happened.", a: "\"This isn't a favour — we agreed it in March. When can you have it done?\" [Make It Specific]", bundle: 'pro' },
@@ -2164,8 +2164,8 @@ const challengesCollections = {
   sayingno: [
     {
       name: "The No Is Not Clear",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "\"I'm not sure I can.\" \"Probably not.\" \"Let me see.\" Each of these feels kinder than a no and is not an answer, which means the request comes back and the second refusal is harder than the first.\n\nThe kindest version of a no is the clearest one. It lets the person go and ask someone else, which is what they actually need.\n\nMindset: vagueness is not gentleness. It just moves the cost onto them.",
       inputs: [
         { q: "You said \"probably not\" and they are still expecting an answer.", a: "\"Sorry, I was vague. It's a no.\" [Say No Simply]", bundle: 'pro' },
@@ -2177,8 +2177,8 @@ const challengesCollections = {
     },
     {
       name: "You Feel Guilty",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The refusal is reasonable and you feel bad anyway. That feeling is not evidence that you should have said yes; it is usually just the discomfort of disappointing someone.\n\nThe useful separation: their disappointment is real, and it is not the same as you having done something wrong. A no can be entirely kind and still leave someone unhappy about it.\n\nMindset: you can leave someone disappointed without having wronged them.",
       inputs: [
         { q: "You said no and feel terrible about it.", a: "\"I know it's not what you wanted, and I still can't.\" [Show You Understand First]", bundle: 'pro' },
@@ -2190,8 +2190,8 @@ const challengesCollections = {
     },
     {
       name: "They Have Power Over You",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "A manager, a teacher, a client. Some requests from them are not really requests, and pretending otherwise helps nobody.\n\nWhere the answer genuinely is yours to give, the shape changes rather than the substance: fuller acknowledgement, a reason tied to the work rather than to preference, and an alternative that shows you are solving their problem rather than declining it.\n\nIf it is something they are entitled to ask, this is not the right pack.\n\nMindset: same answer, different framing — and be honest about which requests are actually optional.",
       inputs: [
         { q: "A manager asks you to take on something outside your capacity.", a: "\"I can do it, but not alongside the March work. Which would you rather I dropped?\" [Offer What You Can Do]", bundle: 'pro' },
@@ -2203,8 +2203,8 @@ const challengesCollections = {
     },
     {
       name: "You Have Said Yes Too Often",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "They are asking because you always say yes, and the pattern has become an expectation. A single no now lands harder than it would have the first time — which is exactly why saying it is overdue rather than unfair.\n\nNaming the pattern is optional but usually helps. It explains the change, which stops the no reading as a change of feeling about them.\n\nMindset: the difficulty of this no is the cost of the previous ones. It gets cheaper from here.",
       inputs: [
         { q: "They are surprised because you always say yes.", a: "\"I know, I usually do. This time I can't.\" [Say No Simply]", bundle: 'pro' },
@@ -2216,8 +2216,8 @@ const challengesCollections = {
     },
     {
       name: "You Should Actually Say Yes",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Not every request should be declined. Sometimes you promised, sometimes it is your job, sometimes the person has done a great deal for you and this is the one time they have asked.\n\nThe strategies in this pack are for requests you are entitled to refuse. Used on an obligation they become a polite way of avoiding something, and the other person often cannot tell the difference — which makes it worse rather than better.\n\nMindset: check whether this is a request you may decline or a commitment you are dodging.",
       inputs: [
         { q: "You promised and you are looking for a way out.", a: "\"I said I would, so I will.\" [Say No Simply]", bundle: 'pro' },
@@ -2426,88 +2426,6 @@ const challengesCollections = {
         { q: "You are the only one still in character.", a: "\"Okay, out of character now. Genuinely, that's a pain.\" (break character)", bundle: 'pro' },
         { q: "You have one good line left and want to end on it.", a: "\"Two pounds an hour, final offer. Right, moving on.\" (land it and get out)", bundle: 'pro' },
         { q: "The bit went well and you can feel the temptation to keep going.", a: "\"I'll stop while I'm ahead. What's the plan?\" (break character)", bundle: 'pro' },
-      ]
-    },
-  ],
-  masculine1: [
-    {
-      name: "The Cold Shoulder",
-      guideFront: "Choose a strategy when...",
-      guideBack: "One way it could sound",
-      description: "When she withdraws, becomes silent, or tries to reject connection. The challenge is not to respond in kind, but to remain present.\nHere we primarily use Refusing Rejection and Hear the Pain to re-establish contact.",
-      inputs: [
-        { q: "She stares at the wall and only answers with single words.", a: "\"I see that you're hurt. I'll sit here with you for a bit until you're ready to talk.\" [Refusing the Rejection]", bundle: 'pro' },
-        { q: "She pulls her hand away when you try to hold it.", a: "\"I notice you feel far away from me right now. What's happening inside?\" [Hear the Pain, Not the Blame]", bundle: 'pro' },
-        { q: "She sends a short, cold text: \"Don't call me.\"", a: "\"I hear that you need space. I love you and I'm here when you've landed.\" [Refusing the Rejection]", bundle: 'pro' },
-        { q: "She slams the bedroom door and refuses to let you in.", a: "(Sit down outside the door.) \"I'm right here. I'll wait until you're ready to let me in.\" [Refusing the Rejection]", bundle: 'pro' },
-        { q: "You ask what's wrong and she sighs heavily, looking away in silence.", a: "(Sit down next to her and stay.) \"You don't have to say anything. I'm just going to sit here with you.\" [Refusing the Rejection]", bundle: 'pro' },
-        { q: "She responds to your text with a cold: \"Whatever.\"", a: "\"I hear that you're feeling checked out right now, but I'm here when you want to connect.\" [Hear the Pain, Not the Blame]", bundle: 'pro' },
-        { q: "She gets out of the car and walks off during a tense silence.", a: "(Follow at an easy distance, no hurry.) \"I'm walking with you. You don't have to talk.\" [Refusing the Rejection]", bundle: 'pro' },
-        { q: "She says: \"There's no point in talking anymore. It's useless.\"", a: "\"It sounds like you're feeling completely hopeless about us right now.\" [Hear the Pain, Not the Blame]", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Verbal Attacks",
-      guideFront: "Choose a strategy when...",
-      guideBack: "One way it could sound",
-      description: "When she blasts you with messy, toxic emotions—blame, sarcasm, or shaming. The challenge is to settle your nervous system, stay present, and hear the underlying pain instead of reacting defensively.\n\n• Hear the Pain, Not the Blame — meet her emotions with empathy\n• The \"When You...\" Stem — own your feelings cleanly without counter-attacking\n\nThe key question is: are you reacting to her words or meeting her heart?\n\nMindset: see the little girl behind the raging woman to stay grounded in your presence.",
-      inputs: [
-        { q: "She shouts: \"You always ruin everything, you are so lazy!\"", a: "\"I hear that you're feeling completely overwhelmed and let down by me right now.\" [Hear the Pain, Not the Blame]", bundle: 'pro' },
-        { q: "She snaps sarcastically: \"I guess work is more important than your family.\"", a: "\"I hear how much you're hurting because I've been away so much.\" [Hear the Pain, Not the Blame]", bundle: 'pro' },
-        { q: "She accuses you of being selfish during a heated argument.", a: "\"When you call me selfish, I feel criticized and defensive, but I want to understand your pain.\" [The \"When You...\" Stem]", bundle: 'pro' },
-        { q: "She screams: \"Why can't you ever listen to what I'm saying?!\"", a: "\"It sounds like you're feeling completely unheard and alone in this.\" [Hear the Pain, Not the Blame]", bundle: 'pro' },
-        { q: "She brings up a mistake you made three years ago to shame you.", a: "\"I hear how much pain you're still carrying from that mistake.\" [Hear the Pain, Not the Blame]", bundle: 'pro' },
-        { q: "She tells you: \"You are the most insensitive man I've ever met.\"", a: "\"When you say that, I feel hurt and I want to close off, but I'm staying here to listen.\" [The \"When You...\" Stem]", bundle: 'pro' },
-        { q: "She lashes out in anger: \"You don't care about my feelings!\"", a: "\"I hear that you're feeling unloved and unsafe with me right now.\" [Hear the Pain, Not the Blame]", bundle: 'pro' },
-        { q: "She throws a wild accusation at you that is factually wrong.", a: "(Ignore the facts) \"I hear how frustrated and angry you are with me.\" [Hear the Pain, Not the Blame]", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Decision Paralysis",
-      guideFront: "Choose a strategy when...",
-      guideBack: "One way it could sound",
-      description: "When she is overwhelmed by the burden of uncertainty and decisions, which forces her into her Masculine energy. The challenge is to provide clarity and structure by narrowing the scope and stating your preferences.\n\n• Narrowing the Scope — simplify the world by presenting limited choices\n• The \"When You...\" Stem — share your own preferences clearly to give her orientation\n\nThe key question is: are you leaving her in uncertainty, or are you offering structure?\n\nMindset: your clarity is a gift of structure you give her, not a burden you place on her.",
-      inputs: [
-        { q: "She is exhausted and staring at a travel website, unable to pick a flight.", a: "\"I've chosen these two flight times. Which one works best for you?\" [Narrowing the Scope]", bundle: 'pro' },
-        { q: "She asks: \"What should we do with our savings this year?\"", a: "\"I've researched these two investment options. Let's look at them together.\" [Narrowing the Scope]", bundle: 'pro' },
-        { q: "She is struggling to choose between two career paths and looking stressed.", a: "\"When I see you struggle with this, I want to support you. Let's talk through just these two options.\" [Narrowing the Scope]", bundle: 'pro' },
-        { q: "She is trying to organize the family calendar and looks overwhelmed.", a: "\"I suggest we keep Saturday free and visit your parents on Sunday. Does that work?\" [Narrowing the Scope]", bundle: 'pro' },
-        { q: "She asks what you want to buy her for her birthday.", a: "\"I’d love to get you that necklace you liked, but let’s choose between these two styles.\" [Narrowing the Scope]", bundle: 'pro' },
-        { q: "She is obsessing over the details of a party menu.", a: "\"I suggest we do the chicken and the salad. I'll take care of the shopping.\" [Narrowing the Scope]", bundle: 'pro' },
-        { q: "She asks: \"Where do you want us to live next year?\"", a: "\"My preference is to stay in this neighborhood, but I want us to choose together.\" [The \"When You...\" Stem]", bundle: 'pro' },
-        { q: "She is paralyzed by too many choices for the kids' camp.", a: "\"Let's choose between the soccer camp or the art camp. What do you think?\" [Narrowing the Scope]", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Testing Solidity",
-      guideFront: "Choose a strategy when...",
-      guideBack: "One way it could sound",
-      description: "When she tests your boundaries, your devotion, or your capacity to handle intensity. The challenge is to stand independently in your own power, not dependent on her approval.\n\n• Refusing the Rejection — stay committed to the connection under pressure\n• The \"When You...\" Stem — hold your boundaries without being domineering\n\nThe key question is: are you backing down for short-term harmony or holding your frame?\n\nMindset: be more committed to the connection than you are afraid of her intensity.",
-      inputs: [
-        { q: "She says: \"It's over, I think we should just break up!\" in the middle of a fight.", a: "\"I hear that you're feeling completely hopeless right now. I'm not giving up on us.\" [Refusing the Rejection]", bundle: 'pro' },
-        { q: "She tries to \"push your buttons\" by criticizing your style in front of others.", a: "\"When you criticize me in public, I feel disrespected. I need you to stop.\" [The \"When You...\" Stem]", bundle: 'pro' },
-        { q: "She pulls her hand away and says: \"I don't need your help.\"", a: "(Stay where you are, eyes on hers.) \"I know. I'm offering anyway.\" [Refusing the Rejection]", bundle: 'pro' },
-        { q: "She says sarcastically: \"I'm sure you'd rather be single.\"", a: "\"I love you and I've chosen to be here with you. I'm not going anywhere.\" [Refusing the Rejection]", bundle: 'pro' },
-        { q: "She is trying to \"veto\" your scheduled gym time to test your resolve.", a: "\"Staying in shape is essential for me. I'm going to the gym now, and we'll connect at seven.\" [The \"When You...\" Stem]", bundle: 'pro' },
-        { q: "She demands to know: \"Why do you always have to have your own way?\".", a: "\"When you say that, I feel pressured to give up my truth, but this decision is important to me.\" [The \"When You...\" Stem]", bundle: 'pro' },
-        { q: "She rolls her eyes and mocks a boundary you just set.", a: "\"My boundary on this stands. I won't participate in a conversation where I'm mocked.\" [The \"When You...\" Stem]", bundle: 'pro' },
-        { q: "She shuts down and tells you: \"I don't care what you do.\"", a: "\"I see you're shutting down because you're hurt. I'm staying here with you.\" [Refusing the Rejection]", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Meaningless Friction",
-      guideFront: "Choose a strategy when...",
-      guideBack: "One way it could sound",
-      description: "When an interaction has gone wrong due to clumsiness, poor phrasing, or sudden defensiveness. The challenge is to have the humility and presence to pull the plug on the conflict.\n\n• The Do-Over — ask to start the interaction over cleanly\n• The \"When You...\" Stem — reset the dynamic by sharing your vulnerability\n\nThe key question is: are you continuing the ping-pong fight or inviting a clean reset?\n\nMindset: it takes a strong man to admit he was clumsy.",
-      inputs: [
-        { q: "You hear yourself explaining, for the third time, why your version of the evening is the reasonable one.", a: "\"Can we have a do-over? I'm arguing to win instead of listening.\" [The Do-Over]", bundle: 'pro' },
-        { q: "You accidentally snapped back at her in a harsh, defensive tone.", a: "\"I'm sorry, that tone came out completely wrong. Can we start over? I want to hear you.\" [The Do-Over]", bundle: 'pro' },
-        { q: "You find yourself arguing about who does more chores around the house.", a: "\"Stop, let's do a do-over. I don't want us to fight about chores, I want us to be a team.\" [The Do-Over]", bundle: 'pro' },
-        { q: "You lied to avoid a minor conflict and now feel the weight of it.", a: "\"I just said something that wasn't true because I was anxious. Can we redo that conversation?\" [The Do-Over]", bundle: 'pro' },
-        { q: "She misunderstood your playful tease and became deeply hurt.", a: "\"That landed totally wrong. Can we have a do-over? My intention was just to be playful.\" [The Do-Over]", bundle: 'pro' },
-        { q: "You notice you've physically withdrawn to your phone to escape her mood.", a: "\"I just checked out because I got anxious. Can I come back and start over?\" [The Do-Over]", bundle: 'pro' },
-        { q: "You feel yourself getting defensive about her feedback.", a: "\"When you criticize my driving, I notice I start getting defensive. Can we try this talk again?\" [The Do-Over]", bundle: 'pro' },
-        { q: "You are stuck in a stiff, sterile conversation with no spark.", a: "\"This doesn't feel like us. Let's take a break and then have a do-over from our hearts.\" [The Do-Over]", bundle: 'pro' },
       ]
     },
   ],
@@ -3266,8 +3184,8 @@ const challengesCollections = {
   setupquestion: [
     {
       name: "The Interview",
-      guideFront: "What has gone wrong here?",
-      guideBack: "A possible response, with the type in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "You have asked three questions in a row and given nothing back, and the other person has started giving shorter answers. The training is to notice the pattern early and answer your own question before you ask another one.\n\nWhat it usually looks like:\n\n• Their answers are getting shorter each time.\n• You have learned four things about them and they know nothing about you.\n• You are already thinking about the next question while they are still answering.\n\nTwo ways through:\n1. Answer the last one yourself — the direct repair. \"I should say mine — I came for the same reason.\"\n2. Name it lightly — costs nothing and usually gets a laugh. \"I'm interrogating you. Your turn to ask me something.\"\n\nMindset: the fix is not a better question. It is your own answer to the one you already asked.",
       inputs: [
         { q: "You have asked three questions and answered none of them.", a: "\"I've been interrogating you. Mine's the same, for what it's worth — I signed up to get better at this.\" (purpose)", bundle: 'pro' },
@@ -3279,8 +3197,8 @@ const challengesCollections = {
     },
     {
       name: "The Question That Was Not Wanted",
-      guideFront: "What has gone wrong here?",
-      guideBack: "A possible response, with the type in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "You asked a real question and got the ritual answer — \"fine, thanks\" — and a closed door. The training is to notice they answered the greeting rather than the question, and to give your own honest answer as the way back in rather than asking again.\n\nWhat it usually looks like:\n\n• \"Fine, thanks\" delivered without a pause.\n• They answered the words rather than the question.\n• Asking again would be pushing, and you can feel it.\n\nTwo ways through:\n1. Answer it yourself honestly — turns a closed door into an open one. \"I'm shattered, since you didn't ask.\"\n2. Switch type — move from Status to something concrete. \"What are you working on at the moment?\"\n\nMindset: they may not have realised the question was real. Going first with your own answer is what tells them it was.",
       inputs: [
         { q: "You asked how they were and got \"fine, thanks\" and a pause.", a: "\"I'll go first, then — I'm shattered and mildly grumpy. How's your week actually been?\" (status)", bundle: 'pro' },
@@ -3292,8 +3210,8 @@ const challengesCollections = {
     },
     {
       name: "The Blank Answer",
-      guideFront: "What has gone wrong here?",
-      guideBack: "A possible response, with the type in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "You asked what they have been up to and got \"not much\" — not from rudeness, but because the question was too wide to answer. The training is to narrow it rather than repeat it.\n\nWhat it usually looks like:\n\n• \"Not much, you?\" and nothing else.\n• A shrug and a real effort to think of something.\n• You have asked the widest possible version of the question.\n\nTwo ways through:\n1. Narrow it — \"are you reading anything?\" beats \"what's new?\" every time.\n2. Answer yours first, small — a concrete example shows the size of answer you meant.\n\nMindset: \"not much\" is almost never a refusal. It is a question that was too big to answer, and the fix is a smaller one.",
       inputs: [
         { q: "You asked what is new and got \"not much\".", a: "\"Fair. Are you watching anything at the moment? I've started something terrible and I can't stop.\" (action)", bundle: 'pro' },
@@ -3305,8 +3223,8 @@ const challengesCollections = {
     },
     {
       name: "The Group Question",
-      guideFront: "What has gone wrong here?",
-      guideBack: "A possible response, with the type in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "You are with three or four people and a question aimed at nobody in particular lands on nobody. The training is to aim it at one person, or to answer it yourself first so the group has a shape to copy.\n\nWhat it usually looks like:\n\n• You ask the group and everybody waits for somebody else.\n• The question dies in the middle of the table.\n• One person answers out of politeness and it stops there.\n\nTwo ways through:\n1. Aim it — use a name or look at one person. \"How about you, Sara?\"\n2. Answer first, then hand it on — gives the table a model and a size. \"I'll start. Mine was...\"\n\nMindset: a question to everyone is a question to no one. Name someone, or go first yourself.",
       inputs: [
         { q: "You asked the whole table and nobody answered.", a: "\"I'll start, then — I came because a friend dragged me. How about you two?\" (purpose)", bundle: 'pro' },
@@ -3318,8 +3236,8 @@ const challengesCollections = {
     },
     {
       name: "You Ran Out After One",
-      guideFront: "What has gone wrong here?",
-      guideBack: "A possible response, with the type in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The question worked, they answered, you answered, and then the whole thing stopped. The training is to build the next question out of their answer rather than reaching down the list for a fresh type.\n\nWhat it usually looks like:\n\n• A good exchange, and then silence.\n• You are mentally scanning the five types for another one.\n• Neither of you has picked up anything the other said.\n\nTwo ways through:\n1. Use a word from their answer — the next question is already inside it.\n2. Change type on purpose — a Status answer opens straight onto an Action question.\n\nMindset: you do not need a new question. You need the one that was in their last answer.",
       inputs: [
         { q: "You both answered and then it went quiet.", a: "\"You said you'd come straight from work — what is it you do?\" (action)", bundle: 'pro' },
@@ -5543,88 +5461,6 @@ const challengesCollections = {
       ]
     },
   ],
-  seenandtrusted1thesafetyshereads: [
-    {
-      name: "The Cold Front",
-      guideFront: "Choose a strategy when...",
-      guideBack: "One way it could sound",
-      description: "She has gone quiet. Not shouting, not crying — flat. Short answers, no eye contact, everything technically fine.\n\nWhat goes wrong here is that the silence reads as a request to be left alone, and leaving her alone is the one move that confirms what she is afraid of.\n\nThe strategies that bite: **Opening the Door**, because the door is the whole problem and it opens from your side. **Not Against You**, when what she is actually testing is whether the coldness has made you go somewhere. **The Held Boundary**, on the rarer occasion when the silence has become a punishment rather than a state.\n\nAvoid: matching it. Going quiet back turns a bad evening into a bad fortnight.\n\nMindset: her silence is the door being left ajar, not shut.",
-      inputs: [
-        { q: "She has answered three questions in a row with one word.", a: "\"Three one-word answers. I'd rather have the long version.\" [Opening the Door]", bundle: 'pro' },
-        { q: "She turns away from you in bed without saying goodnight.", a: "\"I'm not going to make you talk. I'm here in the morning and I'm not sulking.\" [Not Against You]", bundle: 'pro' },
-        { q: "She says \"I'm fine\" in a tone that closes the subject.", a: "\"All right. Fine's allowed. I'll ask again tomorrow.\" [Opening the Door]", bundle: 'pro' },
-        { q: "The silence has run into a third day and is clearly doing work.", a: "\"I've given it two days. I won't do a third one pretending this is normal. I want to hear it.\" [The Held Boundary]", bundle: 'pro' },
-        { q: "She is in the same room but has not looked up from her phone in an hour.", a: "(You sit down near her without the television on.) \"What's the thing you're not saying?\" [Opening the Door]", bundle: 'pro' },
-        { q: "You have asked what is wrong and she has said nothing twice.", a: "\"Then I'll stop asking. It's not because I stopped caring — say the word and I'm here.\" [Not Against You]", bundle: 'pro' },
-        { q: "She gives you a flat \"whatever you want\" about the weekend.", a: "\"That's not a preference, that's a shrug. What's underneath it?\" [Opening the Door]", bundle: 'pro' },
-        { q: "You notice you have started being careful and cheerful to manage her mood.", a: "\"I've been jollying you along all evening and it's not working for either of us. What's going on?\" [Opening the Door]", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "When You Are the Problem",
-      guideFront: "Choose a strategy when...",
-      guideBack: "One way it could sound",
-      description: "You did the thing. Forgot it, broke it, said it, or let it slide — and she is hurt, and she is right.\n\nWhat goes wrong here is the explanation. The reason for the failure is genuinely interesting to you and completely irrelevant to her, and offering it turns her hurt into a debate she now has to win.\n\nThe strategies that bite: **The Kept Word**, which owns it and names what happens next instead of why it happened. **Steady Under Load**, which takes the consequence rather than leaving her to clear it up. **Opening the Door**, once the repair is real, to find out what it actually cost.\n\nAvoid: apologising in a way that asks her to comfort you about how bad you feel.\n\nMindset: the reason is for me, the repair is for her.",
-      inputs: [
-        { q: "You forgot her work event and she went alone.", a: "\"I forgot. That's the whole of it — no version of that is better.\" [The Kept Word]", bundle: 'pro' },
-        { q: "You said something cutting in front of her friend.", a: "\"What I said was out of order. I'm not going to explain what I meant by it.\" [The Kept Word]", bundle: 'pro' },
-        { q: "She is clearing up the mess your mistake created.", a: "(You take over the clearing up.) \"Leave it. Mine to sort.\" [Steady Under Load]", bundle: 'pro' },
-        { q: "You start to say \"but you know how the week has been\".", a: "\"I was about to give you the reason. You don't need it. It's on me and it changes from now.\" [The Kept Word]", bundle: 'pro' },
-        { q: "You have apologised and she is still cold two hours later.", a: "\"I'm not going to keep saying sorry at you. When you're ready I want to hear what it did.\" [Opening the Door]", bundle: 'pro' },
-        { q: "The consequence of your mistake will land on her tomorrow.", a: "\"Tomorrow's phone calls are mine. You shouldn't be paying for this twice.\" [Steady Under Load]", bundle: 'pro' },
-        { q: "You notice yourself feeling worse than she does and wanting her to fix it.", a: "\"I feel wretched about this and that's mine to sit with. What do you need?\" [Opening the Door]", bundle: 'pro' },
-        { q: "It is the same mistake as last time.", a: "\"Second time. An apology's cheap on a repeat — here's the actual change.\" [The Kept Word]", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "The Overload",
-      guideFront: "Choose a strategy when...",
-      guideBack: "One way it could sound",
-      description: "The list has got longer than the week. Work, children, her parents, the house — and she is the one holding the whole map in her head.\n\nWhat goes wrong here is helping. Asking what you can do, or doing a visible task well, both leave the management with her, and management is the part that is crushing.\n\nThe strategies that bite: **Steady Under Load**, which takes an entire area rather than a task. **Opening the Door**, to find out which part is heavy rather than which part is obvious. **The Kept Word**, because a thing she has to check on is still a thing she is carrying.\n\nAvoid: \"just tell me what you need.\" It is generous and it hands her more work.\n\nMindset: take the whole thing, or you have taken nothing.",
-      inputs: [
-        { q: "She is making a list at eleven at night and has not stopped moving since six.", a: "\"Which one on that list do you dread most?\" [Opening the Door]", bundle: 'pro' },
-        { q: "You are about to ask what you can do to help.", a: "\"I'm not going to ask what to do. I'm taking the school run and the shopping this week.\" [Steady Under Load]", bundle: 'pro' },
-        { q: "She has taken every sick day for the children this year.", a: "\"Next one's mine. Not as a favour — as the default.\" [Steady Under Load]", bundle: 'pro' },
-        { q: "You did the task she asked for and she still looks no lighter.", a: "\"The bins are done and you look exactly the same. So it wasn't the bins. What is it?\" [Opening the Door]", bundle: 'pro' },
-        { q: "She keeps asking whether you have done the thing you took on.", a: "\"You're checking because checking has been necessary before. I'll report in without being asked.\" [The Kept Word]", bundle: 'pro' },
-        { q: "Both sets of parents want something the same weekend.", a: "\"Mine are mine. I'll ring them tonight and you'll never hear about it.\" [Steady Under Load]", bundle: 'pro' },
-        { q: "She says she is fine and has not sat down all evening.", a: "(You take the basket out of her hands.) \"Sit for five minutes. Then tell me what today was.\" [Opening the Door]", bundle: 'pro' },
-        { q: "You took something on last month and it is still not done.", a: "\"The loft's been mine since March and it's still there. Saturday, and I'll tell you when it's clear.\" [The Kept Word]", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Rising Heat",
-      guideFront: "Choose a strategy when...",
-      guideBack: "One way it could sound",
-      description: "The argument is climbing. Your voice has changed, your chest is tight, and you can feel the next sentence forming before you have chosen it.\n\nWhat goes wrong here is that your temperature becomes her problem — she stops arguing the point and starts monitoring you, which is the specific thing that costs her safety.\n\nThe strategies that bite: **Not Against You**, said early, so that the volume is not carrying a threat with it. **The Held Boundary**, to stop it before you say the thing you cannot take back. **Opening the Door**, afterwards, once you can hear an answer.\n\nAvoid: pushing through to finish the point. Nothing said past that line is going to be received anyway.\n\nMindset: she can hear me angry; she should never have to watch me for what I might do.",
-      inputs: [
-        { q: "Your voice has risen and she has taken half a step back.", a: "\"I'm loud and I'm not dangerous. Angry about the thing, not at you.\" [Not Against You]", bundle: 'pro' },
-        { q: "You can feel the sentence forming that would end the argument by wounding her.", a: "\"I'm going to stop. I've got something cruel loaded and I'm not going to use it.\" [The Held Boundary]", bundle: 'pro' },
-        { q: "She has started apologising for things she does not actually think she did.", a: "\"You're managing me. Don't. I'd rather have the argument than the appeasement.\" [Not Against You]", bundle: 'pro' },
-        { q: "You slammed a cupboard and saw her flinch.", a: "\"That was me being angry at a cupboard, and it still frightened you. It won't happen again.\" [Not Against You]", bundle: 'pro' },
-        { q: "You are twenty minutes in and going in circles.", a: "\"We're not getting anywhere and I'm getting hot. Half an hour, then back.\" [The Held Boundary]", bundle: 'pro' },
-        { q: "You said you needed twenty minutes and it has been twenty minutes.", a: "(You come back into the room and sit down.) \"I'm here. Go on.\" [The Held Boundary]", bundle: 'pro' },
-        { q: "The row is over and she is being very pleasant and very careful.", a: "\"You're being careful with me. What do you need to hear?\" [Opening the Door]", bundle: 'pro' },
-        { q: "You notice you have been silently furious for two days without saying so.", a: "\"I've been cold since Tuesday and I never said why. That's not fair on you — here it is.\" [Not Against You]", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Testing the Ground",
-      guideFront: "Choose a strategy when...",
-      guideBack: "One way it could sound",
-      description: "She asks the safety question sideways. \"Do you even want to be here?\" \"You'd probably be happier on your own.\" \"Is there something you're not telling me?\"\n\nWhat goes wrong here is answering the surface. The literal question is not the question, so a reasonable answer to it lands as a dodge, and the third one arrives.\n\nThe strategies that bite: **Not Against You**, which answers the real question directly and briefly. **Opening the Door**, to find out what made her need to ask today. **The Kept Word**, because the answer she trusts is the pattern, not the sentence.\n\nAvoid: irritation at being asked again. The asking is the symptom, and being annoyed at a symptom makes it worse.\n\nMindset: answer the question underneath, and answer it short.",
-      inputs: [
-        { q: "She asks whether you would be happier without all of this.", a: "\"No. Straight answer, no clause after it.\" [Not Against You]", bundle: 'pro' },
-        { q: "She asks if there is something you are not telling her.", a: "\"There isn't. And something made you ask today — what was it?\" [Opening the Door]", bundle: 'pro' },
-        { q: "She says you have seemed distant for weeks.", a: "\"I have been. It's work, it isn't you, and I should have said so three weeks ago.\" [Not Against You]", bundle: 'pro' },
-        { q: "It is the third time this month she has asked a version of the same question.", a: "\"Three times now. I'll keep answering it — but let's find what's making it come back.\" [Opening the Door]", bundle: 'pro' },
-        { q: "You feel irritated at being asked to reassure her again.", a: "\"My honest first reaction was irritation, and that's mine to deal with. The answer is still yes, I'm here.\" [Not Against You]", bundle: 'pro' },
-        { q: "She asks whether you still find her attractive.", a: "\"Yes. And I've been rubbish at showing it, which is why you're having to ask.\" [Not Against You]", bundle: 'pro' },
-        { q: "She brings it up right as you are falling asleep.", a: "\"I'm not going to answer that half-asleep and badly. Tomorrow, first thing, properly.\" [The Held Boundary]", bundle: 'pro' },
-        { q: "She says she does not know where she stands with you.", a: "\"Then I've been unclear for a while. Say what you've been reading and I'll tell you what's true.\" [Opening the Door]", bundle: 'pro' },
-      ]
-    },
-  ],
   seenandtrusted2careshedidnotaskf: [
     {
       name: "The Hands-Full Moment",
@@ -5786,6 +5622,170 @@ const challengesCollections = {
         { q: "You have both been over the same argument four times.", a: "\"The argument isn't the problem, the loop is. What's the one thing that would break it?\" [The Four Questions]", bundle: 'pro' },
         { q: "She takes a step towards you and you are still braced.", a: "\"You just moved and I nearly ignored it. I noticed, and thank you.\" [Letting It Land]", bundle: 'pro' },
         { q: "You want a rule that fixes it permanently.", a: "\"One rule: anything that affects both of us gets asked about before it's settled.\" [Ask Before You Decide]", bundle: 'pro' },
+      ]
+    },
+  ],
+  seenandtrusted1thesafetyshereads: [
+    {
+      name: "The Cold Front",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "She has gone quiet. Not shouting, not crying — flat. Short answers, no eye contact, everything technically fine.\n\nWhat goes wrong here is that the silence reads as a request to be left alone, and leaving her alone is the one move that confirms what she is afraid of.\n\nThe strategies that bite: **Opening the Door**, because the door is the whole problem and it opens from your side. **Not Against You**, when what she is actually testing is whether the coldness has made you go somewhere. **The Held Boundary**, on the rarer occasion when the silence has become a punishment rather than a state.\n\nAvoid: matching it. Going quiet back turns a bad evening into a bad fortnight.\n\nMindset: her silence is the door being left ajar, not shut.",
+      inputs: [
+        { q: "She has answered three questions in a row with one word.", a: "\"Three one-word answers. I'd rather have the long version.\" [Opening the Door]", bundle: 'pro' },
+        { q: "She turns away from you in bed without saying goodnight.", a: "\"I'm not going to make you talk. I'm here in the morning and I'm not sulking.\" [Not Against You]", bundle: 'pro' },
+        { q: "She says \"I'm fine\" in a tone that closes the subject.", a: "\"All right. Fine's allowed. I'll ask again tomorrow.\" [Opening the Door]", bundle: 'pro' },
+        { q: "The silence has run into a third day and is clearly doing work.", a: "\"I've given it two days. I won't do a third one pretending this is normal. I want to hear it.\" [The Held Boundary]", bundle: 'pro' },
+        { q: "She is in the same room but has not looked up from her phone in an hour.", a: "(You sit down near her without the television on.) \"What's the thing you're not saying?\" [Opening the Door]", bundle: 'pro' },
+        { q: "You have asked what is wrong and she has said nothing twice.", a: "\"Then I'll stop asking. It's not because I stopped caring — say the word and I'm here.\" [Not Against You]", bundle: 'pro' },
+        { q: "She gives you a flat \"whatever you want\" about the weekend.", a: "\"That's not a preference, that's a shrug. What's underneath it?\" [Opening the Door]", bundle: 'pro' },
+        { q: "You notice you have started being careful and cheerful to manage her mood.", a: "\"I've been jollying you along all evening and it's not working for either of us. What's going on?\" [Opening the Door]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "When You Are the Problem",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "You did the thing. Forgot it, broke it, said it, or let it slide — and she is hurt, and she is right.\n\nWhat goes wrong here is the explanation. The reason for the failure is genuinely interesting to you and completely irrelevant to her, and offering it turns her hurt into a debate she now has to win.\n\nThe strategies that bite: **The Kept Word**, which owns it and names what happens next instead of why it happened. **Steady Under Load**, which takes the consequence rather than leaving her to clear it up. **Opening the Door**, once the repair is real, to find out what it actually cost.\n\nAvoid: apologising in a way that asks her to comfort you about how bad you feel.\n\nMindset: the reason is for me, the repair is for her.",
+      inputs: [
+        { q: "You forgot her work event and she went alone.", a: "\"I forgot. That's the whole of it — no version of that is better.\" [The Kept Word]", bundle: 'pro' },
+        { q: "You said something cutting in front of her friend.", a: "\"What I said was out of order. I'm not going to explain what I meant by it.\" [The Kept Word]", bundle: 'pro' },
+        { q: "She is clearing up the mess your mistake created.", a: "(You take over the clearing up.) \"Leave it. Mine to sort.\" [Steady Under Load]", bundle: 'pro' },
+        { q: "You start to say \"but you know how the week has been\".", a: "\"I was about to give you the reason. You don't need it. It's on me and it changes from now.\" [The Kept Word]", bundle: 'pro' },
+        { q: "You have apologised and she is still cold two hours later.", a: "\"I'm not going to keep saying sorry at you. When you're ready I want to hear what it did.\" [Opening the Door]", bundle: 'pro' },
+        { q: "The consequence of your mistake will land on her tomorrow.", a: "\"Tomorrow's phone calls are mine. You shouldn't be paying for this twice.\" [Steady Under Load]", bundle: 'pro' },
+        { q: "You notice yourself feeling worse than she does and wanting her to fix it.", a: "\"I feel wretched about this and that's mine to sit with. What do you need?\" [Opening the Door]", bundle: 'pro' },
+        { q: "It is the same mistake as last time.", a: "\"Second time. An apology's cheap on a repeat — here's the actual change.\" [The Kept Word]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Overload",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "The list has got longer than the week. Work, children, her parents, the house — and she is the one holding the whole map in her head.\n\nWhat goes wrong here is helping. Asking what you can do, or doing a visible task well, both leave the management with her, and management is the part that is crushing.\n\nThe strategies that bite: **Steady Under Load**, which takes an entire area rather than a task. **Opening the Door**, to find out which part is heavy rather than which part is obvious. **The Kept Word**, because a thing she has to check on is still a thing she is carrying.\n\nAvoid: \"just tell me what you need.\" It is generous and it hands her more work.\n\nMindset: take the whole thing, or you have taken nothing.",
+      inputs: [
+        { q: "She is making a list at eleven at night and has not stopped moving since six.", a: "\"Which one on that list do you dread most?\" [Opening the Door]", bundle: 'pro' },
+        { q: "You are about to ask what you can do to help.", a: "\"I'm not going to ask what to do. I'm taking the school run and the shopping this week.\" [Steady Under Load]", bundle: 'pro' },
+        { q: "She has taken every sick day for the children this year.", a: "\"Next one's mine. Not as a favour — as the default.\" [Steady Under Load]", bundle: 'pro' },
+        { q: "You did the task she asked for and she still looks no lighter.", a: "\"The bins are done and you look exactly the same. So it wasn't the bins. What is it?\" [Opening the Door]", bundle: 'pro' },
+        { q: "She keeps asking whether you have done the thing you took on.", a: "\"You're checking because checking has been necessary before. I'll report in without being asked.\" [The Kept Word]", bundle: 'pro' },
+        { q: "Both sets of parents want something the same weekend.", a: "\"Mine are mine. I'll ring them tonight and you'll never hear about it.\" [Steady Under Load]", bundle: 'pro' },
+        { q: "She says she is fine and has not sat down all evening.", a: "(You take the basket out of her hands.) \"Sit for five minutes. Then tell me what today was.\" [Opening the Door]", bundle: 'pro' },
+        { q: "You took something on last month and it is still not done.", a: "\"The loft's been mine since March and it's still there. Saturday, and I'll tell you when it's clear.\" [The Kept Word]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Rising Heat",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "The argument is climbing. Your voice has changed, your chest is tight, and you can feel the next sentence forming before you have chosen it.\n\nWhat goes wrong here is that your temperature becomes her problem — she stops arguing the point and starts monitoring you, which is the specific thing that costs her safety.\n\nThe strategies that bite: **Not Against You**, said early, so that the volume is not carrying a threat with it. **The Held Boundary**, to stop it before you say the thing you cannot take back. **Opening the Door**, afterwards, once you can hear an answer.\n\nAvoid: pushing through to finish the point. Nothing said past that line is going to be received anyway.\n\nMindset: she can hear me angry; she should never have to watch me for what I might do.",
+      inputs: [
+        { q: "Your voice has risen and she has taken half a step back.", a: "\"I'm loud and I'm not dangerous. Angry about the thing, not at you.\" [Not Against You]", bundle: 'pro' },
+        { q: "You can feel the sentence forming that would end the argument by wounding her.", a: "\"I'm going to stop. I've got something cruel loaded and I'm not going to use it.\" [The Held Boundary]", bundle: 'pro' },
+        { q: "She has started apologising for things she does not actually think she did.", a: "\"You're managing me. Don't. I'd rather have the argument than the appeasement.\" [Not Against You]", bundle: 'pro' },
+        { q: "You slammed a cupboard and saw her flinch.", a: "\"That was me being angry at a cupboard, and it still frightened you. It won't happen again.\" [Not Against You]", bundle: 'pro' },
+        { q: "You are twenty minutes in and going in circles.", a: "\"We're not getting anywhere and I'm getting hot. Half an hour, then back.\" [The Held Boundary]", bundle: 'pro' },
+        { q: "You said you needed twenty minutes and it has been twenty minutes.", a: "(You come back into the room and sit down.) \"I'm here. Go on.\" [The Held Boundary]", bundle: 'pro' },
+        { q: "The row is over and she is being very pleasant and very careful.", a: "\"You're being careful with me. What do you need to hear?\" [Opening the Door]", bundle: 'pro' },
+        { q: "You notice you have been silently furious for two days without saying so.", a: "\"I've been cold since Tuesday and I never said why. That's not fair on you — here it is.\" [Not Against You]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Testing the Ground",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "She asks the safety question sideways. \"Do you even want to be here?\" \"You'd probably be happier on your own.\" \"Is there something you're not telling me?\"\n\nWhat goes wrong here is answering the surface. The literal question is not the question, so a reasonable answer to it lands as a dodge, and the third one arrives.\n\nThe strategies that bite: **Not Against You**, which answers the real question directly and briefly. **Opening the Door**, to find out what made her need to ask today. **The Kept Word**, because the answer she trusts is the pattern, not the sentence.\n\nAvoid: irritation at being asked again. The asking is the symptom, and being annoyed at a symptom makes it worse.\n\nMindset: answer the question underneath, and answer it short.",
+      inputs: [
+        { q: "She asks whether you would be happier without all of this.", a: "\"No. Straight answer, no clause after it.\" [Not Against You]", bundle: 'pro' },
+        { q: "She asks if there is something you are not telling her.", a: "\"There isn't. And something made you ask today — what was it?\" [Opening the Door]", bundle: 'pro' },
+        { q: "She says you have seemed distant for weeks.", a: "\"I have been. It's work, it isn't you, and I should have said so three weeks ago.\" [Not Against You]", bundle: 'pro' },
+        { q: "It is the third time this month she has asked a version of the same question.", a: "\"Three times now. I'll keep answering it — but let's find what's making it come back.\" [Opening the Door]", bundle: 'pro' },
+        { q: "You feel irritated at being asked to reassure her again.", a: "\"My honest first reaction was irritation, and that's mine to deal with. The answer is still yes, I'm here.\" [Not Against You]", bundle: 'pro' },
+        { q: "She asks whether you still find her attractive.", a: "\"Yes. And I've been rubbish at showing it, which is why you're having to ask.\" [Not Against You]", bundle: 'pro' },
+        { q: "She brings it up right as you are falling asleep.", a: "\"I'm not going to answer that half-asleep and badly. Tomorrow, first thing, properly.\" [The Held Boundary]", bundle: 'pro' },
+        { q: "She says she does not know where she stands with you.", a: "\"Then I've been unclear for a while. Say what you've been reading and I'll tell you what's true.\" [Opening the Door]", bundle: 'pro' },
+      ]
+    },
+  ],
+  masculine1: [
+    {
+      name: "The Cold Shoulder",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "When she withdraws, becomes silent, or tries to reject connection. The challenge is not to respond in kind, but to remain present.\nHere we primarily use Refusing Rejection and Hear the Pain to re-establish contact.",
+      inputs: [
+        { q: "She stares at the wall and only answers with single words.", a: "\"I see that you're hurt. I'll sit here with you for a bit until you're ready to talk.\" [Refusing the Rejection]", bundle: 'pro' },
+        { q: "She pulls her hand away when you try to hold it.", a: "\"I notice you feel far away from me right now. What's happening inside?\" [Hear the Pain, Not the Blame]", bundle: 'pro' },
+        { q: "She sends a short, cold text: \"Don't call me.\"", a: "\"I hear that you need space. I love you and I'm here when you've landed.\" [Refusing the Rejection]", bundle: 'pro' },
+        { q: "She slams the bedroom door and refuses to let you in.", a: "(Sit down outside the door.) \"I'm right here. I'll wait until you're ready to let me in.\" [Refusing the Rejection]", bundle: 'pro' },
+        { q: "You ask what's wrong and she sighs heavily, looking away in silence.", a: "(Sit down next to her and stay.) \"You don't have to say anything. I'm just going to sit here with you.\" [Refusing the Rejection]", bundle: 'pro' },
+        { q: "She responds to your text with a cold: \"Whatever.\"", a: "\"I hear that you're feeling checked out right now, but I'm here when you want to connect.\" [Hear the Pain, Not the Blame]", bundle: 'pro' },
+        { q: "She gets out of the car and walks off during a tense silence.", a: "(Follow at an easy distance, no hurry.) \"I'm walking with you. You don't have to talk.\" [Refusing the Rejection]", bundle: 'pro' },
+        { q: "She says: \"There's no point in talking anymore. It's useless.\"", a: "\"It sounds like you're feeling completely hopeless about us right now.\" [Hear the Pain, Not the Blame]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Verbal Attacks",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "When she blasts you with messy, toxic emotions—blame, sarcasm, or shaming. The challenge is to settle your nervous system, stay present, and hear the underlying pain instead of reacting defensively.\n\n• Hear the Pain, Not the Blame — meet her emotions with empathy\n• The \"When You...\" Stem — own your feelings cleanly without counter-attacking\n\nThe key question is: are you reacting to her words or meeting her heart?\n\nMindset: see the little girl behind the raging woman to stay grounded in your presence.",
+      inputs: [
+        { q: "She shouts: \"You always ruin everything, you are so lazy!\"", a: "\"I hear that you're feeling completely overwhelmed and let down by me right now.\" [Hear the Pain, Not the Blame]", bundle: 'pro' },
+        { q: "She snaps sarcastically: \"I guess work is more important than your family.\"", a: "\"I hear how much you're hurting because I've been away so much.\" [Hear the Pain, Not the Blame]", bundle: 'pro' },
+        { q: "She accuses you of being selfish during a heated argument.", a: "\"When you call me selfish, I feel criticized and defensive, but I want to understand your pain.\" [The \"When You...\" Stem]", bundle: 'pro' },
+        { q: "She screams: \"Why can't you ever listen to what I'm saying?!\"", a: "\"It sounds like you're feeling completely unheard and alone in this.\" [Hear the Pain, Not the Blame]", bundle: 'pro' },
+        { q: "She brings up a mistake you made three years ago to shame you.", a: "\"I hear how much pain you're still carrying from that mistake.\" [Hear the Pain, Not the Blame]", bundle: 'pro' },
+        { q: "She tells you: \"You are the most insensitive man I've ever met.\"", a: "\"When you say that, I feel hurt and I want to close off, but I'm staying here to listen.\" [The \"When You...\" Stem]", bundle: 'pro' },
+        { q: "She lashes out in anger: \"You don't care about my feelings!\"", a: "\"I hear that you're feeling unloved and unsafe with me right now.\" [Hear the Pain, Not the Blame]", bundle: 'pro' },
+        { q: "She throws a wild accusation at you that is factually wrong.", a: "(Ignore the facts) \"I hear how frustrated and angry you are with me.\" [Hear the Pain, Not the Blame]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Decision Paralysis",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "When she is overwhelmed by the burden of uncertainty and decisions, which forces her into her Masculine energy. The challenge is to provide clarity and structure by narrowing the scope and stating your preferences.\n\n• Narrowing the Scope — simplify the world by presenting limited choices\n• The \"When You...\" Stem — share your own preferences clearly to give her orientation\n\nThe key question is: are you leaving her in uncertainty, or are you offering structure?\n\nMindset: your clarity is a gift of structure you give her, not a burden you place on her.",
+      inputs: [
+        { q: "She is exhausted and staring at a travel website, unable to pick a flight.", a: "\"I've chosen these two flight times. Which one works best for you?\" [Narrowing the Scope]", bundle: 'pro' },
+        { q: "She asks: \"What should we do with our savings this year?\"", a: "\"I've researched these two investment options. Let's look at them together.\" [Narrowing the Scope]", bundle: 'pro' },
+        { q: "She is struggling to choose between two career paths and looking stressed.", a: "\"When I see you struggle with this, I want to support you. Let's talk through just these two options.\" [Narrowing the Scope]", bundle: 'pro' },
+        { q: "She is trying to organize the family calendar and looks overwhelmed.", a: "\"I suggest we keep Saturday free and visit your parents on Sunday. Does that work?\" [Narrowing the Scope]", bundle: 'pro' },
+        { q: "She asks what you want to buy her for her birthday.", a: "\"I’d love to get you that necklace you liked, but let’s choose between these two styles.\" [Narrowing the Scope]", bundle: 'pro' },
+        { q: "She is obsessing over the details of a party menu.", a: "\"I suggest we do the chicken and the salad. I'll take care of the shopping.\" [Narrowing the Scope]", bundle: 'pro' },
+        { q: "She asks: \"Where do you want us to live next year?\"", a: "\"My preference is to stay in this neighborhood, but I want us to choose together.\" [The \"When You...\" Stem]", bundle: 'pro' },
+        { q: "She is paralyzed by too many choices for the kids' camp.", a: "\"Let's choose between the soccer camp or the art camp. What do you think?\" [Narrowing the Scope]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Testing Solidity",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "When she tests your boundaries, your devotion, or your capacity to handle intensity. The challenge is to stand independently in your own power, not dependent on her approval.\n\n• Refusing the Rejection — stay committed to the connection under pressure\n• The \"When You...\" Stem — hold your boundaries without being domineering\n\nThe key question is: are you backing down for short-term harmony or holding your frame?\n\nMindset: be more committed to the connection than you are afraid of her intensity.",
+      inputs: [
+        { q: "She says: \"It's over, I think we should just break up!\" in the middle of a fight.", a: "\"I hear that you're feeling completely hopeless right now. I'm not giving up on us.\" [Refusing the Rejection]", bundle: 'pro' },
+        { q: "She tries to \"push your buttons\" by criticizing your style in front of others.", a: "\"When you criticize me in public, I feel disrespected. I need you to stop.\" [The \"When You...\" Stem]", bundle: 'pro' },
+        { q: "She pulls her hand away and says: \"I don't need your help.\"", a: "(Stay where you are, eyes on hers.) \"I know. I'm offering anyway.\" [Refusing the Rejection]", bundle: 'pro' },
+        { q: "She says sarcastically: \"I'm sure you'd rather be single.\"", a: "\"I love you and I've chosen to be here with you. I'm not going anywhere.\" [Refusing the Rejection]", bundle: 'pro' },
+        { q: "She is trying to \"veto\" your scheduled gym time to test your resolve.", a: "\"Staying in shape is essential for me. I'm going to the gym now, and we'll connect at seven.\" [The \"When You...\" Stem]", bundle: 'pro' },
+        { q: "She demands to know: \"Why do you always have to have your own way?\".", a: "\"When you say that, I feel pressured to give up my truth, but this decision is important to me.\" [The \"When You...\" Stem]", bundle: 'pro' },
+        { q: "She rolls her eyes and mocks a boundary you just set.", a: "\"My boundary on this stands. I won't participate in a conversation where I'm mocked.\" [The \"When You...\" Stem]", bundle: 'pro' },
+        { q: "She shuts down and tells you: \"I don't care what you do.\"", a: "\"I see you're shutting down because you're hurt. I'm staying here with you.\" [Refusing the Rejection]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Meaningless Friction",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "When an interaction has gone wrong due to clumsiness, poor phrasing, or sudden defensiveness. The challenge is to have the humility and presence to pull the plug on the conflict.\n\n• The Do-Over — ask to start the interaction over cleanly\n• The \"When You...\" Stem — reset the dynamic by sharing your vulnerability\n\nThe key question is: are you continuing the ping-pong fight or inviting a clean reset?\n\nMindset: it takes a strong man to admit he was clumsy.",
+      inputs: [
+        { q: "You hear yourself explaining, for the third time, why your version of the evening is the reasonable one.", a: "\"Can we have a do-over? I'm arguing to win instead of listening.\" [The Do-Over]", bundle: 'pro' },
+        { q: "You accidentally snapped back at her in a harsh, defensive tone.", a: "\"I'm sorry, that tone came out completely wrong. Can we start over? I want to hear you.\" [The Do-Over]", bundle: 'pro' },
+        { q: "You find yourself arguing about who does more chores around the house.", a: "\"Stop, let's do a do-over. I don't want us to fight about chores, I want us to be a team.\" [The Do-Over]", bundle: 'pro' },
+        { q: "You lied to avoid a minor conflict and now feel the weight of it.", a: "\"I just said something that wasn't true because I was anxious. Can we redo that conversation?\" [The Do-Over]", bundle: 'pro' },
+        { q: "She misunderstood your playful tease and became deeply hurt.", a: "\"That landed totally wrong. Can we have a do-over? My intention was just to be playful.\" [The Do-Over]", bundle: 'pro' },
+        { q: "You notice you've physically withdrawn to your phone to escape her mood.", a: "\"I just checked out because I got anxious. Can I come back and start over?\" [The Do-Over]", bundle: 'pro' },
+        { q: "You feel yourself getting defensive about her feedback.", a: "\"When you criticize my driving, I notice I start getting defensive. Can we try this talk again?\" [The Do-Over]", bundle: 'pro' },
+        { q: "You are stuck in a stiff, sterile conversation with no spark.", a: "\"This doesn't feel like us. Let's take a break and then have a do-over from our hearts.\" [The Do-Over]", bundle: 'pro' },
       ]
     },
   ],

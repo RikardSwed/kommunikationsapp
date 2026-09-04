@@ -1140,8 +1140,6 @@ const memorizeCollections = {
   reactingtounexpectedstatements: [
     {
       name: "Core Idea",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The shape of the pack: five ways to stay in a conversation honestly before you know what you think.",
       cards: [
         { q: "What are the five strategies in this pack?", a: "Say you need a second, say you don't know what to say, ask what prompted it, answer the part you can, come back to it later.", bundle: 'free' },
@@ -1154,8 +1152,6 @@ const memorizeCollections = {
     },
     {
       name: "Say You Need a Second",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "Making the pause visible.",
       cards: [
         { q: "What is the difference between a silent pause and a named one?", a: "A silent one gets filled in by the other person, usually as disapproval.", bundle: 'free' },
@@ -1168,8 +1164,6 @@ const memorizeCollections = {
     },
     {
       name: "Say You Don't Know What to Say",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The honest admission, which is a complete answer.",
       cards: [
         { q: "Why is this more welcome than a stock response?", a: "It is true, and the alternatives — a hollow phrase, a change of subject, an invented opinion — are all worse.", bundle: 'free' },
@@ -1182,8 +1176,6 @@ const memorizeCollections = {
     },
     {
       name: "Ask What Prompted It",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The question about the person rather than the words.",
       cards: [
         { q: "How is this different from asking what they mean?", a: "That question is about the words; this one is about the person and the moment.", bundle: 'free' },
@@ -1196,8 +1188,6 @@ const memorizeCollections = {
     },
     {
       name: "Answer the Part You Can",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The partial honest response.",
       cards: [
         { q: "Why is a partial answer usually available?", a: "Unexpected statements are several things at once, and you almost always have a view on some of it.", bundle: 'free' },
@@ -1210,8 +1200,6 @@ const memorizeCollections = {
     },
     {
       name: "Come Back to It Later",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The deferral, and the return that makes it worth anything.",
       cards: [
         { q: "What is the condition on deferring?", a: "That you actually come back, on a named day.", bundle: 'free' },
@@ -2254,8 +2242,6 @@ const memorizeCollections = {
   apologizing1: [
     {
       name: "Core Idea",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The shape of the pack: an everyday apology in four moves.",
       cards: [
         { q: "What are the four strategies in this pack?", a: "Choose the size, say sorry simply, apologise for what you did, say what you'll do differently.", bundle: 'free' },
@@ -2268,8 +2254,6 @@ const memorizeCollections = {
     },
     {
       name: "Choose the Size",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The judgement that comes before everything else.",
       cards: [
         { q: "What is wrong with a full apology for something trivial?", a: "It makes the other person manage your discomfort.", bundle: 'free' },
@@ -2282,8 +2266,6 @@ const memorizeCollections = {
     },
     {
       name: "Say Sorry Simply",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The short version, which most things need.",
       cards: [
         { q: "What makes a short apology work?", a: "Being unqualified — no explanation, no \"but\", no context.", bundle: 'free' },
@@ -2296,8 +2278,6 @@ const memorizeCollections = {
     },
     {
       name: "Apologise for What You Did",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The specific, unconditional apology.",
       cards: [
         { q: "What makes an apology specific enough?", a: "Naming exactly what you did, not a general expression of regret.", bundle: 'free' },
@@ -2310,8 +2290,6 @@ const memorizeCollections = {
     },
     {
       name: "Say What You'll Do Differently",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The part that costs you something.",
       cards: [
         { q: "Why is this the most important part to someone let down before?", a: "It is the only part that is not words about the past.", bundle: 'free' },
@@ -2457,8 +2435,6 @@ const memorizeCollections = {
   persuasionandinfluence1: [
     {
       name: "Core Idea",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The shape of the pack: four strategies that put something on the table.",
       cards: [
         { q: "What are the four strategies in this pack?", a: "Show the benefit to them, give a reason, name the cost of doing nothing, tell what happened to you.", bundle: 'free' },
@@ -2471,8 +2447,6 @@ const memorizeCollections = {
     },
     {
       name: "Show the Benefit to Them",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The strategy that answers \"what does this do for me\".",
       cards: [
         { q: "What does this strategy name?", a: "What improves for them specifically if it happens.", bundle: 'free' },
@@ -2485,8 +2459,6 @@ const memorizeCollections = {
     },
     {
       name: "Give a Reason",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The strategy that turns a request into something to consider.",
       cards: [
         { q: "How many reasons should you give?", a: "One, properly. Three invites them to argue with the weakest.", bundle: 'free' },
@@ -2499,8 +2471,6 @@ const memorizeCollections = {
     },
     {
       name: "Name the Cost of Doing Nothing",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The strategy that makes the comparison honest.",
       cards: [
         { q: "Why is the cost of the status quo usually invisible?", a: "Everyone has been paying it long enough to stop noticing.", bundle: 'free' },
@@ -2513,8 +2483,6 @@ const memorizeCollections = {
     },
     {
       name: "Tell What Happened to You",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The strategy that asks the listener to concede nothing.",
       cards: [
         { q: "Why does a first-hand account slip past resistance?", a: "They are not agreeing with an argument, they are hearing what happened.", bundle: 'free' },
@@ -2843,8 +2811,6 @@ const memorizeCollections = {
   respondingtopassiveaggression: [
     {
       name: "Core Idea",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The shape of the pack: six responses, split between staying on the surface and going underneath.",
       cards: [
         { q: "What are the six strategies in this pack?", a: "Answer it straight, ask what they mean, name the feeling, say how it lands, hold your point, let it go.", bundle: 'free' },
@@ -2857,8 +2823,6 @@ const memorizeCollections = {
     },
     {
       name: "Answer It Straight",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The least costly response available.",
       cards: [
         { q: "What does this strategy do?", a: "Responds to the surface as though the remark were sincere, so the barb has nothing to attach to.", bundle: 'free' },
@@ -2871,8 +2835,6 @@ const memorizeCollections = {
     },
     {
       name: "Ask What They Mean",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The strategy that removes deniability.",
       cards: [
         { q: "Why does asking work?", a: "They either say what they meant, which is the conversation you needed, or they back off, which ends it.", bundle: 'free' },
@@ -2885,8 +2847,6 @@ const memorizeCollections = {
     },
     {
       name: "Name the Feeling",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The strategy that gives the grievance a direct route out.",
       cards: [
         { q: "What is usually underneath passive aggression?", a: "A real grievance that could not find a direct route out.", bundle: 'free' },
@@ -2899,8 +2859,6 @@ const memorizeCollections = {
     },
     {
       name: "Say How It Lands",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The one response they cannot deny.",
       cards: [
         { q: "Why can they not argue with this?", a: "They can argue about what they meant, not about how it landed on you.", bundle: 'free' },
@@ -2913,8 +2871,6 @@ const memorizeCollections = {
     },
     {
       name: "Hold Your Point",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The strategy for when a remark is a way of not answering the question.",
       cards: [
         { q: "What is this strategy protecting?", a: "The decision that still needs making.", bundle: 'free' },
@@ -2927,8 +2883,6 @@ const memorizeCollections = {
     },
     {
       name: "Let It Go",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The strategy of deciding not to respond.",
       cards: [
         { q: "What makes letting go a strategy rather than avoidance?", a: "That you decided, rather than not daring.", bundle: 'free' },
@@ -2943,8 +2897,6 @@ const memorizeCollections = {
   makingrequests: [
     {
       name: "Core Idea",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The shape of the pack: what makes a request work, and the two ways it fails.",
       cards: [
         { q: "What are the seven strategies in this pack?", a: "Ask Instead of Hinting, Make It Specific, Give One Short Reason, Leave Room to Refuse, Ask for Help, Follow Up Once, Take a No Well.", bundle: 'free' },
@@ -2956,8 +2908,6 @@ const memorizeCollections = {
     },
     {
       name: "Ask Instead of Hinting",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "Turning the hint into a question.",
       cards: [
         { q: "What is wrong with a hint?", a: "It asks the other person to work out what you want and then decide — and most people fail the first part.", bundle: 'free' },
@@ -2969,8 +2919,6 @@ const memorizeCollections = {
     },
     {
       name: "Make It Specific",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "Size, timing, and what it involves.",
       cards: [
         { q: "What three things should be specific?", a: "The size, the when, and what it actually involves.", bundle: 'free' },
@@ -2982,8 +2930,6 @@ const memorizeCollections = {
     },
     {
       name: "Give One Short Reason",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "One sentence of why, and no more.",
       cards: [
         { q: "How many reasons?", a: "One. Two sounds like a case, three sounds like you are talking yourself into it.", bundle: 'free' },
@@ -2995,8 +2941,6 @@ const memorizeCollections = {
     },
     {
       name: "Leave Room to Refuse",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "Making the exit visible.",
       cards: [
         { q: "What is the move?", a: "Say the exit out loud — \"say if it doesn't work.\"", bundle: 'free' },
@@ -3008,8 +2952,6 @@ const memorizeCollections = {
     },
     {
       name: "Ask for Help",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The harder ask, and how to make it answerable.",
       cards: [
         { q: "What two things make asking for help hard, and what fixes them?", a: "Asking a room asks nobody, so name a person. \"Help with everything\" is unanswerable, so name the piece.", bundle: 'free' },
@@ -3021,8 +2963,6 @@ const memorizeCollections = {
     },
     {
       name: "Follow Up Once",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "What to do with silence.",
       cards: [
         { q: "How many follow-ups?", a: "One. Then silence counts as a no.", bundle: 'free' },
@@ -3034,8 +2974,6 @@ const memorizeCollections = {
     },
     {
       name: "Take a No Well",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "Accepting the answer you asked for.",
       cards: [
         { q: "What are the three parts?", a: "Say it is fine and mean it, do not ask for the reason, do not renegotiate.", bundle: 'free' },
@@ -3049,8 +2987,6 @@ const memorizeCollections = {
   sayingno: [
     {
       name: "Core Idea",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The shape of the pack: three short ways to decline, two that make it a fuller answer, and one that comes before all of them.",
       cards: [
         { q: "What are the six strategies in this pack?", a: "Say no simply, soften the delivery, give a short reason, show you understand first, offer what you can do, ask for time first.", bundle: 'free' },
@@ -3063,8 +2999,6 @@ const memorizeCollections = {
     },
     {
       name: "Say No Simply",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The plainest version, and the hardest.",
       cards: [
         { q: "Why does a short no work better than a long one?", a: "It is unambiguous, and ambiguity is what makes people ask again.", bundle: 'free' },
@@ -3077,8 +3011,6 @@ const memorizeCollections = {
     },
     {
       name: "Soften the Delivery",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "Warmth without vagueness.",
       cards: [
         { q: "What is the line this strategy must hold?", a: "Soften the delivery, never the answer.", bundle: 'free' },
@@ -3091,8 +3023,6 @@ const memorizeCollections = {
     },
     {
       name: "Give a Short Reason",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The courtesy that removes the reading that you are judging them.",
       cards: [
         { q: "What does a reason remove?", a: "The reading that the no is a judgement of the request or the person.", bundle: 'free' },
@@ -3105,8 +3035,6 @@ const memorizeCollections = {
     },
     {
       name: "Show You Understand First",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The step that makes someone feel heard even when refused.",
       cards: [
         { q: "What is the sting in being refused, usually?", a: "Not the refusal — the sense that the request was not taken seriously.", bundle: 'free' },
@@ -3119,8 +3047,6 @@ const memorizeCollections = {
     },
     {
       name: "Offer What You Can Do",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The step that keeps you helpful while the answer stays no.",
       cards: [
         { q: "What are the two conditions on an alternative?", a: "It must be something you will actually do, and it must come after the no.", bundle: 'free' },
@@ -3133,8 +3059,6 @@ const memorizeCollections = {
     },
     {
       name: "Ask for Time First",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The move that prevents most regretted yeses.",
       cards: [
         { q: "When are most regretted yeses said?", a: "On the spot, under mild social pressure, before thinking.", bundle: 'free' },
@@ -3384,150 +3308,6 @@ const memorizeCollections = {
         { q: "What does it sound like?", a: "\"Homework? Nah, I'll sell it on eBay instead.\"", bundle: 'free' },
         { q: "What is the actual joke?", a: "The confidence, not the plan. A workaround that might work stops being funny and becomes a suggestion.", bundle: 'pro' },
         { q: "When does it stop being playful?", a: "When the rule actually matters. Then it sounds like you mean it.", bundle: 'pro' },
-      ]
-    },
-  ],
-  masculine1: [
-    {
-      name: "Core Idea",
-      guideFront: "",
-      guideBack: "",
-      description: "The three elements of the Blueprint that form the base of Masculine leadership.",
-      cards: [
-        { q: "What are the three elements of The Masculine Blueprint?", a: "1. Respond vs. React, 2. Provide Structure, 3. Create Safety.", bundle: 'free' },
-        { q: "What is the difference between old and new masculinity?", a: "The old was about control and dominance; the new is about clarity and leadership.", bundle: 'free' },
-        { q: "What happens when a man abdicates the frame?", a: "The woman is forced into her Masculine energy to create the structure she needs, which kills attraction.", bundle: 'free' },
-        { q: "What is an \"Oracle\" in this context?", a: "The woman's capacity to reflect back where the man has stopped being present, true, or loving.", bundle: 'pro' },
-        { q: "What is the rule of \"facts\" during emotional intensity?", a: "Feelings first, facts later. Never try to \"fix the facts\" while she is in affect.", bundle: 'pro' },
-        { q: "What is the root cause of all non-Masculine behaviors?", a: "A perceived sense of threat, which creates an unpleasant energy of anxiety in the body.", bundle: 'pro' },
-        { q: "What are the three sources of safety a man must provide?", a: "Physical safety (as a Protector), financial safety (as a Provider), and emotional safety.", bundle: 'pro' },
-        { q: "What does Polarity require in an intimate relationship?", a: "One partner in the Masculine pole and one in the Feminine pole, creating the sexy dance of opposites.", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Hear the Pain, Not the Blame",
-      description: "",
-      cards: [
-        { q: "What is the core move of \"Hear the Pain, Not the Blame\"?", a: "Ignoring the toxic surface of her complaint to focus on her underlying vulnerability and hurt.", bundle: 'free' },
-        { q: "Why does this strategy work?", a: "It prevents you from getting defensive and allows your natural care to kick in instead.", bundle: 'free' },
-        { q: "What is the \"toxic surface\" of her complaint?", a: "Accusations, sarcasm, shaming, or blaming.", bundle: 'free' },
-        { q: "What does getting defensive show her?", a: "That you are reacting out of your own anxiety and cannot handle her emotional experience.", bundle: 'free' },
-        { q: "What is the first stage of engaging with an emotional woman?", a: "Holding space for her emotion without trying to analyze, fix, or change it.", bundle: 'free' },
-        { q: "What is the \"Feelings First, Facts Later\" rule?", a: "Hear her pain first, and temporarily ignore her story; respond to the facts only after she has settled.", bundle: 'pro' },
-        { q: "Why is trying to reason with an emotional woman useless?", a: "Addressing emotion with cognitive reasoning is like speaking French to an English speaker—it won't get through.", bundle: 'pro' },
-        { q: "What is the target of \"Hear the Pain, Not the Blame\"?", a: "To give her the \"emotional oxygen\" she needs so her heart can soften and open.", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Narrowing the Scope",
-      description: "",
-      cards: [
-        { q: "What is the core move of \"Narrowing the Scope\"?", a: "Proactively reducing her decision-making burden by presenting limited options.", bundle: 'free' },
-        { q: "Why does this strategy work?", a: "Making decisions forces her into her Masculine energy; your structure allows her to relax into her Feminine.", bundle: 'free' },
-        { q: "What are the three variants of \"Narrowing the Scope\"?", a: "Presenting 2-3 concrete options, stating a preference, or proposing a plan and asking for objections.", bundle: 'free' },
-        { q: "Why is \"whatever you want\" a mistake?", a: "It is a pleaser response that abdicates your role as an organizing force in her life.", bundle: 'free' },
-        { q: "What does the Masculine offering of structure do?", a: "It simplifies the world's complexity, reduces uncertainty, and drives progress.", bundle: 'free' },
-        { q: "What is the \"Plow Horse\" trap of the Provider?", a: "Thinking that working hard and earning money gives you a pass to ignore her emotional or structural needs.", bundle: 'pro' },
-        { q: "How do you handle a domain where she is more competent (like cooking)?", a: "Proactively ask for her guidance: \"Baby, tell me what to do!\" to add structure to her lead.", bundle: 'pro' },
-        { q: "How does \"Narrowing the Scope\" help her relax?", a: "It temporarily relieves her of the decision-making burden, which works like magic to settle her nervous system.", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "The Do-Over",
-      description: "",
-      cards: [
-        { q: "What is the core move of \"The Do-Over\"?", a: "Humbling yourself to stop an interaction that has gone wrong and asking to start again.", bundle: 'free' },
-        { q: "Why does this strategy work?", a: "It is an elegant way to pull the plug on meaningless conflicts before they escalate.", bundle: 'free' },
-        { q: "When should you request a do-over?", a: "When you notice you've gotten defensive, started lecturing, or used a harsh tone.", bundle: 'free' },
-        { q: "What are the two variants of \"The Do-Over\"?", a: "Resetting after your own reactivity, or resetting when she has misunderstood your intentions.", bundle: 'free' },
-        { q: "Why is a do-over an act of strength?", a: "Because it takes a strong, centered man to admit he was clumsy and prioritize the connection.", bundle: 'free' },
-        { q: "What should you say when requesting a do-over?", a: "\"Can we have a do-over? I messed up and got defensive, and I want to try again.\"", bundle: 'pro' },
-        { q: "How does a do-over affect her trust?", a: "She notices your relational skill and appreciates your leadership instead of staying in her defense.", bundle: 'pro' },
-        { q: "When is a do-over most useful?", a: "During minor friction and misunderstandings, before the conflict becomes a \"code red\" issue.", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "The \"When You...\" Stem",
-      description: "",
-      cards: [
-        { q: "What is the template for \"The 'When You...' Stem\"?", a: "When you, plus a plain observation, then I feel, plus the emotion in your body.", bundle: 'free' },
-        { q: "Why does this strategy work?", a: "It creates an inarguable statement that shares your truth without triggering her defenses.", bundle: 'free' },
-        { q: "What makes an observation \"inarguable\"?", a: "It is a simple statement of fact, with no analysis, judgment, or labels attached.", bundle: 'free' },
-        { q: "What are the two variants of this strategy?", a: "Sharing vulnerability (fear or insecurity) or owning anger cleanly without attack.", bundle: 'free' },
-        { q: "What is the \"Victim Mentality\" to avoid?", a: "Sharing your emotions while needing her to change in order to make your feelings stop.", bundle: 'free' },
-        { q: "What is the difference between \"sharing\" and \"demanding\"?", a: "The Masculine man shares his emotions and stops, bearing the pain himself without needing her to change.", bundle: 'pro' },
-        { q: "Why does \"blaming\" kill polarity?", a: "It signals to her nervous system that you won't be okay unless she molds herself to protect your wounds.", bundle: 'pro' },
-        { q: "What is \"speaking inarguably\"?", a: "Stating only what is true for your own experience instead of characterizing her motivations.", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Refusing the Rejection",
-      description: "",
-      cards: [
-        { q: "What is the core move of \"Refusing the Rejection\"?", a: "Steadfastly refusing to accept a temporary shutdown of connection by staying present.", bundle: 'free' },
-        { q: "Why does this strategy work?", a: "It proves your devotion and solidity, showing her that her intensity cannot scare you off.", bundle: 'free' },
-        { q: "What are the two variants of \"Refusing the Rejection\"?", a: "Staying physically nearby during silence, or giving her space during a \"Go!\" while sending love.", bundle: 'free' },
-        { q: "What is she often doing when she tells you to go away?", a: "Testing your commitment to see if you will stand strong or run and hide.", bundle: 'free' },
-        { q: "What should you do when she pulls away physically?", a: "Back off physically but maintain your eye contact, grounding, and loving presence.", bundle: 'free' },
-        { q: "What should you text when she hangs up the phone?", a: "\"I see you're upset. I'm here when you want to finish talking.\"", bundle: 'pro' },
-        { q: "Why is staying in the fire necessary?", a: "Because her trust in you grows when she sees that you can contain her intense emotions.", bundle: 'pro' },
-        { q: "What is the core mindset of \"Refusing the Rejection\"?", a: "Be more committed to the connection than you are afraid of her intensity.", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Collections",
-      description: "The three collections in this pack, and what each one makes you choose between:\n\n• Leading Through the Storm — peak emotional moments: do you hear her pain, reset with a do-over, or refuse the rejection?\n• Clarity and Truth — daily structure: do you narrow the scope of a decision or speak inarguably with the stem?\n• Own Your Frame — daily friction: do you correct a mistake, state your boundary, or propose a clear option?\n\nOne question decides nearly all of it: what did she just do?",
-      cards: [
-        { q: "What are the three collections in this pack?", a: "Leading Through the Storm, Clarity and Truth, and Own Your Frame.", bundle: 'pro' },
-        { q: "What does \"Leading Through the Storm\" help you do?", a: "Maintain connection and hold a safe container when her emotions are at their peak.", bundle: 'pro' },
-        { q: "What does \"Clarity and Truth\" help you do?", a: "Create daily structure and transparency so she knows where you stand and can relax.", bundle: 'pro' },
-        { q: "What does \"Own Your Frame\" help you do?", a: "Navigate daily friction with humility and presence instead of collapsing.", bundle: 'pro' },
-        { q: "When do you choose \"Hear the Pain, Not the Blame\"?", a: "When she blasts you with messy emotions and accusations, and you need to find the hurt underneath.", bundle: 'pro' },
-        { q: "When do you choose \"The Do-Over\"?", a: "When you've been clumsy or defensive, and you need a clean reset of the interaction.", bundle: 'pro' },
-        { q: "When do you choose \"The 'When You...' Stem\"?", a: "When you need to express your boundaries or vulnerability without launching a counter-attack.", bundle: 'pro' },
-        { q: "When do you choose \"Narrowing the Scope\"?", a: "When she is overwhelmed by decisions and you need to provide a clear point of orientation.", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Sequences",
-      description: "The three sequences in this pack, and the order each one runs in:\n\n• Conflict to Connection — Hear the Pain, Not the Blame → The Do-Over → Narrowing the Scope\n• Lead the Dance — Narrowing the Scope → The \"When You...\" Stem → Narrowing the Scope\n• Weather the Storm — Hear the Pain, Not the Blame → Refusing the Rejection → The \"When You...\" Stem\n\nIn each one, the order is doing the work to re-establish safety and polarity.",
-      cards: [
-        { q: "What are the three sequences in this pack?", a: "Conflict to Connection, Lead the Dance, and Weather the Storm.", bundle: 'pro' },
-        { q: "What is the order in \"Conflict to Connection\"?", a: "Hear the Pain, Not the Blame, then The Do-Over, and finally Narrowing the Scope.", bundle: 'pro' },
-        { q: "Why does \"Hear the Pain\" come first in \"Conflict to Connection\"?", a: "Because her nervous system must receive emotional oxygen before any facts or solutions can get through.", bundle: 'pro' },
-        { q: "What is the order in \"Lead the Dance\"?", a: "Narrowing the Scope, then The \"When You...\" Stem, and finally Narrowing the Scope.", bundle: 'pro' },
-        { q: "What is the order in \"Weather the Storm\"?", a: "Hear the Pain, then Refusing the Rejection, and finally The \"When You...\" Stem.", bundle: 'pro' },
-        { q: "Why does \"Weather the Storm\" end with \"The 'When You...' Stem\"?", a: "Because once you've stood strong in her storm, you must share your own truth and boundaries cleanly.", bundle: 'pro' },
-        { q: "What does \"Conflict to Connection\" train you to do?", a: "Turn a heated fight around by validating her, owning your mistakes, and offering a concrete fix.", bundle: 'pro' },
-        { q: "What does \"Lead the Dance\" train you to do?", a: "Take back the lead in daily logistics without being domineering or steamrolling her.", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Challenges",
-      description: "The five challenges in this pack, and what each one is organised around:\n\n• The Cold Shoulder — when she withdraws or becomes silent\n• Verbal Attacks — when she blasts you with blame, sarcasm, or shaming\n• Decision Paralysis — when she is overwhelmed by uncertainty and decisions\n• Testing Solidity — when she tests your boundaries or your devotion\n• Meaningless Friction — when an interaction went wrong through clumsiness or defensiveness\n\nEach category starts from the problem rather than from the strategy.",
-      cards: [
-        { q: "What are the five challenges in this pack?", a: "The Cold Shoulder, Verbal Attacks, Decision Paralysis, Testing Solidity, and Meaningless Friction.", bundle: 'pro' },
-        { q: "What is the danger during \"The Cold Shoulder\"?", a: "Reacting in kind by withdrawing, giving her the silent treatment, and waiting for her to repair.", bundle: 'pro' },
-        { q: "How do you handle \"Verbal Attacks\"?", a: "By ignoring her blame to focus on her underlying pain, refusing to defend or correct the facts.", bundle: 'pro' },
-        { q: "How do you handle \"Decision Paralysis\"?", a: "By being proactive to synthesize information and propose a limited, clear set of options.", bundle: 'pro' },
-        { q: "How do you handle \"Testing Solidity\"?", a: "By maintaining your grounding, \"holding the pose,\" and refusing to back down out of fear or a need for approval.", bundle: 'pro' },
-        { q: "How do you handle \"Meaningless Friction\"?", a: "By having the humility to request a do-over and reset the conversation cleanly.", bundle: 'pro' },
-        { q: "Which strategy resolves most of \"The Cold Shoulder\"?", a: "Refusing the Rejection—staying present and offering a steady, loving container.", bundle: 'pro' },
-        { q: "What is she really seeking when she throws a challenge at you?", a: "Evidence that you are strong enough to stand up TO her, so she can trust you to stand up FOR her.", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Mindset",
-      description: "The five mindsets in this pack, and the area each one is about:\n\n• She is your Oracle — her criticism as information rather than attack\n• What I Want Matters — your own truth and needs\n• Nice Guy Pleasing — the belief that being harmless keeps you safe\n• Feminine Tsunamis — her intense emotional storms\n• Relational Conflict — what you put first when a fight starts\n\nEach one names a belief that stops people, and what is true instead.",
-      cards: [
-        { q: "What are the five mindsets in this pack?", a: "She is your Oracle, What I Want Matters, Nice Guy Pleasing, Feminine Tsunamis, and Relational Conflict.", bundle: 'pro' },
-        { q: "What does \"She is your Oracle\" teach you?", a: "To stop defending and look for the kernel of truth in her complaints.", bundle: 'pro' },
-        { q: "What does \"What I Want Matters\" teach you?", a: "That being \"nice\" by having no opinion is abdicating the frame and kills attraction.", bundle: 'pro' },
-        { q: "What is the trap of \"Nice Guy Pleasing\"?", a: "Believing that being harmless and needless will keep you safe, which actually breeds resentment.", bundle: 'pro' },
-        { q: "What is the truth behind \"Feminine Tsunamis\"?", a: "Her emotional storms are not a problem to be solved logically, but a wave that wants containment.", bundle: 'pro' },
-        { q: "What is the rule of \"Relational Conflict\"?", a: "Put the connection before your fear or ego; take responsibility for the resolution.", bundle: 'pro' },
-        { q: "Why is \"seeking permission\" a mistake?", a: "It turns your partner into a surrogate mother and makes her lose respect for you.", bundle: 'pro' },
-        { q: "Why is a little healthy selfishness necessary?", a: "Because you cannot serve others until you attend to your own basic needs.", bundle: 'pro' },
       ]
     },
   ],
@@ -8698,6 +8478,148 @@ const memorizeCollections = {
         { q: "What does the \"Distance\" mindset cost when unexamined?", a: "She has to invent the reason for your absence, and the version she invents is worse than the truth.", bundle: 'pro' },
         { q: "What do all five of these beliefs have in common?", a: "Each one sounds like restraint or consideration from the inside, and each one removes information she needs.", bundle: 'pro' },
         { q: "Which two mindsets are about what you withhold rather than what you do?", a: "Anger and Distance — one swallows the feeling, the other swallows the explanation.", bundle: 'pro' },
+      ]
+    },
+  ],
+  masculine1: [
+    {
+      name: "Core Idea",
+      description: "The three elements of the Blueprint that form the base of Masculine leadership.",
+      cards: [
+        { q: "What are the three elements of The Masculine Blueprint?", a: "1. Respond vs. React, 2. Provide Structure, 3. Create Safety.", bundle: 'free' },
+        { q: "What is the difference between old and new masculinity?", a: "The old was about control and dominance; the new is about clarity and leadership.", bundle: 'free' },
+        { q: "What happens when a man abdicates the frame?", a: "The woman is forced into her Masculine energy to create the structure she needs, which kills attraction.", bundle: 'free' },
+        { q: "What is an \"Oracle\" in this context?", a: "The woman's capacity to reflect back where the man has stopped being present, true, or loving.", bundle: 'pro' },
+        { q: "What is the rule of \"facts\" during emotional intensity?", a: "Feelings first, facts later. Never try to \"fix the facts\" while she is in affect.", bundle: 'pro' },
+        { q: "What is the root cause of all non-Masculine behaviors?", a: "A perceived sense of threat, which creates an unpleasant energy of anxiety in the body.", bundle: 'pro' },
+        { q: "What are the three sources of safety a man must provide?", a: "Physical safety (as a Protector), financial safety (as a Provider), and emotional safety.", bundle: 'pro' },
+        { q: "What does Polarity require in an intimate relationship?", a: "One partner in the Masculine pole and one in the Feminine pole, creating the sexy dance of opposites.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Hear the Pain, Not the Blame",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"Hear the Pain, Not the Blame\"?", a: "Ignoring the toxic surface of her complaint to focus on her underlying vulnerability and hurt.", bundle: 'free' },
+        { q: "Why does this strategy work?", a: "It prevents you from getting defensive and allows your natural care to kick in instead.", bundle: 'free' },
+        { q: "What is the \"toxic surface\" of her complaint?", a: "Accusations, sarcasm, shaming, or blaming.", bundle: 'free' },
+        { q: "What does getting defensive show her?", a: "That you are reacting out of your own anxiety and cannot handle her emotional experience.", bundle: 'free' },
+        { q: "What is the first stage of engaging with an emotional woman?", a: "Holding space for her emotion without trying to analyze, fix, or change it.", bundle: 'free' },
+        { q: "What is the \"Feelings First, Facts Later\" rule?", a: "Hear her pain first, and temporarily ignore her story; respond to the facts only after she has settled.", bundle: 'pro' },
+        { q: "Why is trying to reason with an emotional woman useless?", a: "Addressing emotion with cognitive reasoning is like speaking French to an English speaker—it won't get through.", bundle: 'pro' },
+        { q: "What is the target of \"Hear the Pain, Not the Blame\"?", a: "To give her the \"emotional oxygen\" she needs so her heart can soften and open.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Narrowing the Scope",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"Narrowing the Scope\"?", a: "Proactively reducing her decision-making burden by presenting limited options.", bundle: 'free' },
+        { q: "Why does this strategy work?", a: "Making decisions forces her into her Masculine energy; your structure allows her to relax into her Feminine.", bundle: 'free' },
+        { q: "What are the three variants of \"Narrowing the Scope\"?", a: "Presenting 2-3 concrete options, stating a preference, or proposing a plan and asking for objections.", bundle: 'free' },
+        { q: "Why is \"whatever you want\" a mistake?", a: "It is a pleaser response that abdicates your role as an organizing force in her life.", bundle: 'free' },
+        { q: "What does the Masculine offering of structure do?", a: "It simplifies the world's complexity, reduces uncertainty, and drives progress.", bundle: 'free' },
+        { q: "What is the \"Plow Horse\" trap of the Provider?", a: "Thinking that working hard and earning money gives you a pass to ignore her emotional or structural needs.", bundle: 'pro' },
+        { q: "How do you handle a domain where she is more competent (like cooking)?", a: "Proactively ask for her guidance: \"Baby, tell me what to do!\" to add structure to her lead.", bundle: 'pro' },
+        { q: "How does \"Narrowing the Scope\" help her relax?", a: "It temporarily relieves her of the decision-making burden, which works like magic to settle her nervous system.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Do-Over",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"The Do-Over\"?", a: "Humbling yourself to stop an interaction that has gone wrong and asking to start again.", bundle: 'free' },
+        { q: "Why does this strategy work?", a: "It is an elegant way to pull the plug on meaningless conflicts before they escalate.", bundle: 'free' },
+        { q: "When should you request a do-over?", a: "When you notice you've gotten defensive, started lecturing, or used a harsh tone.", bundle: 'free' },
+        { q: "What are the two variants of \"The Do-Over\"?", a: "Resetting after your own reactivity, or resetting when she has misunderstood your intentions.", bundle: 'free' },
+        { q: "Why is a do-over an act of strength?", a: "Because it takes a strong, centered man to admit he was clumsy and prioritize the connection.", bundle: 'free' },
+        { q: "What should you say when requesting a do-over?", a: "\"Can we have a do-over? I messed up and got defensive, and I want to try again.\"", bundle: 'pro' },
+        { q: "How does a do-over affect her trust?", a: "She notices your relational skill and appreciates your leadership instead of staying in her defense.", bundle: 'pro' },
+        { q: "When is a do-over most useful?", a: "During minor friction and misunderstandings, before the conflict becomes a \"code red\" issue.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The \"When You...\" Stem",
+      description: "",
+      cards: [
+        { q: "What is the template for \"The 'When You...' Stem\"?", a: "When you, plus a plain observation, then I feel, plus the emotion in your body.", bundle: 'free' },
+        { q: "Why does this strategy work?", a: "It creates an inarguable statement that shares your truth without triggering her defenses.", bundle: 'free' },
+        { q: "What makes an observation \"inarguable\"?", a: "It is a simple statement of fact, with no analysis, judgment, or labels attached.", bundle: 'free' },
+        { q: "What are the two variants of this strategy?", a: "Sharing vulnerability (fear or insecurity) or owning anger cleanly without attack.", bundle: 'free' },
+        { q: "What is the \"Victim Mentality\" to avoid?", a: "Sharing your emotions while needing her to change in order to make your feelings stop.", bundle: 'free' },
+        { q: "What is the difference between \"sharing\" and \"demanding\"?", a: "The Masculine man shares his emotions and stops, bearing the pain himself without needing her to change.", bundle: 'pro' },
+        { q: "Why does \"blaming\" kill polarity?", a: "It signals to her nervous system that you won't be okay unless she molds herself to protect your wounds.", bundle: 'pro' },
+        { q: "What is \"speaking inarguably\"?", a: "Stating only what is true for your own experience instead of characterizing her motivations.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Refusing the Rejection",
+      description: "",
+      cards: [
+        { q: "What is the core move of \"Refusing the Rejection\"?", a: "Steadfastly refusing to accept a temporary shutdown of connection by staying present.", bundle: 'free' },
+        { q: "Why does this strategy work?", a: "It proves your devotion and solidity, showing her that her intensity cannot scare you off.", bundle: 'free' },
+        { q: "What are the two variants of \"Refusing the Rejection\"?", a: "Staying physically nearby during silence, or giving her space during a \"Go!\" while sending love.", bundle: 'free' },
+        { q: "What is she often doing when she tells you to go away?", a: "Testing your commitment to see if you will stand strong or run and hide.", bundle: 'free' },
+        { q: "What should you do when she pulls away physically?", a: "Back off physically but maintain your eye contact, grounding, and loving presence.", bundle: 'free' },
+        { q: "What should you text when she hangs up the phone?", a: "\"I see you're upset. I'm here when you want to finish talking.\"", bundle: 'pro' },
+        { q: "Why is staying in the fire necessary?", a: "Because her trust in you grows when she sees that you can contain her intense emotions.", bundle: 'pro' },
+        { q: "What is the core mindset of \"Refusing the Rejection\"?", a: "Be more committed to the connection than you are afraid of her intensity.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• Leading Through the Storm — peak emotional moments: do you hear her pain, reset with a do-over, or refuse the rejection?\n• Clarity and Truth — daily structure: do you narrow the scope of a decision or speak inarguably with the stem?\n• Own Your Frame — daily friction: do you correct a mistake, state your boundary, or propose a clear option?\n\nOne question decides nearly all of it: what did she just do?",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "Leading Through the Storm, Clarity and Truth, and Own Your Frame.", bundle: 'pro' },
+        { q: "What does \"Leading Through the Storm\" help you do?", a: "Maintain connection and hold a safe container when her emotions are at their peak.", bundle: 'pro' },
+        { q: "What does \"Clarity and Truth\" help you do?", a: "Create daily structure and transparency so she knows where you stand and can relax.", bundle: 'pro' },
+        { q: "What does \"Own Your Frame\" help you do?", a: "Navigate daily friction with humility and presence instead of collapsing.", bundle: 'pro' },
+        { q: "When do you choose \"Hear the Pain, Not the Blame\"?", a: "When she blasts you with messy emotions and accusations, and you need to find the hurt underneath.", bundle: 'pro' },
+        { q: "When do you choose \"The Do-Over\"?", a: "When you've been clumsy or defensive, and you need a clean reset of the interaction.", bundle: 'pro' },
+        { q: "When do you choose \"The 'When You...' Stem\"?", a: "When you need to express your boundaries or vulnerability without launching a counter-attack.", bundle: 'pro' },
+        { q: "When do you choose \"Narrowing the Scope\"?", a: "When she is overwhelmed by decisions and you need to provide a clear point of orientation.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n• Conflict to Connection — Hear the Pain, Not the Blame → The Do-Over → Narrowing the Scope\n• Lead the Dance — Narrowing the Scope → The \"When You...\" Stem → Narrowing the Scope\n• Weather the Storm — Hear the Pain, Not the Blame → Refusing the Rejection → The \"When You...\" Stem\n\nIn each one, the order is doing the work to re-establish safety and polarity.",
+      cards: [
+        { q: "What are the three sequences in this pack?", a: "Conflict to Connection, Lead the Dance, and Weather the Storm.", bundle: 'pro' },
+        { q: "What is the order in \"Conflict to Connection\"?", a: "Hear the Pain, Not the Blame, then The Do-Over, and finally Narrowing the Scope.", bundle: 'pro' },
+        { q: "Why does \"Hear the Pain\" come first in \"Conflict to Connection\"?", a: "Because her nervous system must receive emotional oxygen before any facts or solutions can get through.", bundle: 'pro' },
+        { q: "What is the order in \"Lead the Dance\"?", a: "Narrowing the Scope, then The \"When You...\" Stem, and finally Narrowing the Scope.", bundle: 'pro' },
+        { q: "What is the order in \"Weather the Storm\"?", a: "Hear the Pain, then Refusing the Rejection, and finally The \"When You...\" Stem.", bundle: 'pro' },
+        { q: "Why does \"Weather the Storm\" end with \"The 'When You...' Stem\"?", a: "Because once you've stood strong in her storm, you must share your own truth and boundaries cleanly.", bundle: 'pro' },
+        { q: "What does \"Conflict to Connection\" train you to do?", a: "Turn a heated fight around by validating her, owning your mistakes, and offering a concrete fix.", bundle: 'pro' },
+        { q: "What does \"Lead the Dance\" train you to do?", a: "Take back the lead in daily logistics without being domineering or steamrolling her.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five challenges in this pack, and what each one is organised around:\n\n• The Cold Shoulder — when she withdraws or becomes silent\n• Verbal Attacks — when she blasts you with blame, sarcasm, or shaming\n• Decision Paralysis — when she is overwhelmed by uncertainty and decisions\n• Testing Solidity — when she tests your boundaries or your devotion\n• Meaningless Friction — when an interaction went wrong through clumsiness or defensiveness\n\nEach category starts from the problem rather than from the strategy.",
+      cards: [
+        { q: "What are the five challenges in this pack?", a: "The Cold Shoulder, Verbal Attacks, Decision Paralysis, Testing Solidity, and Meaningless Friction.", bundle: 'pro' },
+        { q: "What is the danger during \"The Cold Shoulder\"?", a: "Reacting in kind by withdrawing, giving her the silent treatment, and waiting for her to repair.", bundle: 'pro' },
+        { q: "How do you handle \"Verbal Attacks\"?", a: "By ignoring her blame to focus on her underlying pain, refusing to defend or correct the facts.", bundle: 'pro' },
+        { q: "How do you handle \"Decision Paralysis\"?", a: "By being proactive to synthesize information and propose a limited, clear set of options.", bundle: 'pro' },
+        { q: "How do you handle \"Testing Solidity\"?", a: "By maintaining your grounding, \"holding the pose,\" and refusing to back down out of fear or a need for approval.", bundle: 'pro' },
+        { q: "How do you handle \"Meaningless Friction\"?", a: "By having the humility to request a do-over and reset the conversation cleanly.", bundle: 'pro' },
+        { q: "Which strategy resolves most of \"The Cold Shoulder\"?", a: "Refusing the Rejection—staying present and offering a steady, loving container.", bundle: 'pro' },
+        { q: "What is she really seeking when she throws a challenge at you?", a: "Evidence that you are strong enough to stand up TO her, so she can trust you to stand up FOR her.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "The five mindsets in this pack, and the area each one is about:\n\n• She is your Oracle — her criticism as information rather than attack\n• What I Want Matters — your own truth and needs\n• Nice Guy Pleasing — the belief that being harmless keeps you safe\n• Feminine Tsunamis — her intense emotional storms\n• Relational Conflict — what you put first when a fight starts\n\nEach one names a belief that stops people, and what is true instead.",
+      cards: [
+        { q: "What are the five mindsets in this pack?", a: "She is your Oracle, What I Want Matters, Nice Guy Pleasing, Feminine Tsunamis, and Relational Conflict.", bundle: 'pro' },
+        { q: "What does \"She is your Oracle\" teach you?", a: "To stop defending and look for the kernel of truth in her complaints.", bundle: 'pro' },
+        { q: "What does \"What I Want Matters\" teach you?", a: "That being \"nice\" by having no opinion is abdicating the frame and kills attraction.", bundle: 'pro' },
+        { q: "What is the trap of \"Nice Guy Pleasing\"?", a: "Believing that being harmless and needless will keep you safe, which actually breeds resentment.", bundle: 'pro' },
+        { q: "What is the truth behind \"Feminine Tsunamis\"?", a: "Her emotional storms are not a problem to be solved logically, but a wave that wants containment.", bundle: 'pro' },
+        { q: "What is the rule of \"Relational Conflict\"?", a: "Put the connection before your fear or ego; take responsibility for the resolution.", bundle: 'pro' },
+        { q: "Why is \"seeking permission\" a mistake?", a: "It turns your partner into a surrogate mother and makes her lose respect for you.", bundle: 'pro' },
+        { q: "Why is a little healthy selfishness necessary?", a: "Because you cannot serve others until you attend to your own basic needs.", bundle: 'pro' },
       ]
     },
   ],

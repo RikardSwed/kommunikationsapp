@@ -1609,8 +1609,8 @@ const multiStepCollections = {
   reactingtounexpectedstatements: [
     {
       name: "From Blank to Something Real",
-      guideFront: "What they said, and the strategy to answer it with.",
-      guideBack: "One way it could sound.",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
       description: "The usual arc: surprise, an honest pause, a question, and something partial and true. It rarely ends in a full answer, and it does not need to.\n\nEach step front carries what they said and names the strategy. Notice that at no point does the answer become complete — the conversation works anyway.\n\nMindset: the aim is to stay in it honestly, not to arrive at a verdict.",
       inputs: [
         {
@@ -1637,8 +1637,8 @@ const multiStepCollections = {
     },
     {
       name: "When It Is Personal",
-      guideFront: "What they said, and the strategy to answer it with.",
-      guideBack: "One way it could sound.",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
       description: "Someone tells you something significant about themselves, out of nowhere. This is the version people handle worst, because the urge to say the right thing is strongest and the risk of saying something hollow is highest.\n\nThe move throughout is to be honest about not having words, and to make it clear that the not-knowing is about you rather than about them.\n\nMindset: they need you present, not eloquent. Say the true small thing.",
       inputs: [
         {
@@ -1665,8 +1665,8 @@ const multiStepCollections = {
     },
     {
       name: "When You Answered Too Fast",
-      guideFront: "What they said, and the strategy to answer it with.",
-      guideBack: "One way it could sound.",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
       description: "The reaction arrives before the thought, and something has come out of your mouth that you did not mean or would not defend.\n\nGoing back is straightforward and almost nobody does it. Say that the first answer was a reaction, say what you actually think now, and — if it landed badly — say that plainly rather than hoping it passed.\n\nMindset: a corrected first reaction is worth more than a well-managed one, because it shows you were thinking rather than performing.",
       inputs: [
         {
@@ -2727,8 +2727,8 @@ const multiStepCollections = {
   apologizing1: [
     {
       name: "The Everyday Apology",
-      guideFront: "The step you are on — say your version out loud.",
-      guideBack: "One way it could sound.",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
       description: "The whole thing for an ordinary mistake: sorry, what you did, what changes. Under ten seconds, and it settles the matter.\n\nThis one is a monologue — you say it as a continuous piece. Read the step, say your own version out loud, then turn the card.\n\nThe order matters less here than in a serious apology, but the ending does not: stopping after the sorry leaves them with your regret and no reason to expect anything different.\n\nMindset: short, specific, and finished with a plan.",
       inputs: [
         {
@@ -2753,8 +2753,8 @@ const multiStepCollections = {
     },
     {
       name: "The Quick One",
-      guideFront: "The step you are on — say your version out loud.",
-      guideBack: "One way it could sound.",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
       description: "Most apologies are three words and a short exchange. This drills that — say it, deal with what comes back, and get out without inflating it.\n\nThe discipline is stopping. Adding an explanation turns a short apology into a defence, and adding the full treatment to something trivial makes the other person responsible for managing your discomfort.\n\nMindset: say it, let them answer, move on. Do not upgrade a small thing mid-sentence.",
       inputs: [
         {
@@ -2779,8 +2779,8 @@ const multiStepCollections = {
     },
     {
       name: "When It Is Bigger Than You Thought",
-      guideFront: "The step you are on — say your version out loud.",
-      guideBack: "One way it could sound.",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
       description: "You treated something as small and it turns out it was not. The other person is more affected than you expected, or has been sitting on it.\n\nThe move is to change the size out loud rather than carry on with the version you had prepared. That correction is itself part of the apology, and it lands better than any amount of the small version delivered more sincerely.\n\nMindset: notice, say that you had it wrong, and start again at the right size.",
       inputs: [
         {
@@ -2969,8 +2969,8 @@ const multiStepCollections = {
   persuasionandinfluence1: [
     {
       name: "Building the Case",
-      guideFront: "What they said, and the strategy to answer it with.",
-      guideBack: "One way it could sound.",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
       description: "A case made in stages, each one answering what they actually said rather than continuing your own list.\n\nEach step front carries their reply and names the strategy. Notice how the order follows them: benefit while they are uninterested, reason once they engage, cost of doing nothing when they defend the status quo, and your own experience when they doubt it is workable.\n\nMindset: their last answer chooses your next strategy.",
       inputs: [
         {
@@ -2997,8 +2997,8 @@ const multiStepCollections = {
     },
     {
       name: "When They Are Not Interested",
-      guideFront: "What they said, and the strategy to answer it with.",
-      guideBack: "One way it could sound.",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
       description: "The hardest audience is not the one who disagrees — it is the one who has not thought about it and does not intend to.\n\nAn argument lands on nothing when there is no question in their mind. The move is to make it their business first, which usually means the benefit or the cost, and only then give the reasoning.\n\nMindset: create the question before you answer it.",
       inputs: [
         {
@@ -3025,8 +3025,8 @@ const multiStepCollections = {
     },
     {
       name: "When You Should Not Win",
-      guideFront: "What they said, and the strategy to answer it with.",
-      guideBack: "One way it could sound.",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
       description: "Sometimes you set out to persuade someone and find out mid-conversation that they are right, or that you cannot answer their objection.\n\nThis combo practises noticing and saying so. It is the thing that makes people willing to be persuaded by you next time — someone who has visibly changed their mind under a good argument is worth listening to.\n\nMindset: the point is the better answer. Sometimes it is theirs.",
       inputs: [
         {
@@ -3314,8 +3314,8 @@ const multiStepCollections = {
   respondingtopassiveaggression: [
     {
       name: "Staying Level",
-      guideFront: "What they said, and the strategy to answer it with.",
-      guideBack: "One way it could sound.",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
       description: "A run of remarks answered without escalation. This is the most common real shape: not one dig but three or four across a conversation, each inviting you to react.\n\nEach step front carries what they said and names the strategy. Notice that the responses get no sharper as the remarks continue — that flatness is what stops the conversation turning into an argument.\n\nMindset: the temperature is yours to set. Answer the fourth one exactly as you answered the first.",
       inputs: [
         {
@@ -3342,8 +3342,8 @@ const multiStepCollections = {
     },
     {
       name: "Bringing It Into the Open",
-      guideFront: "What they said, and the strategy to answer it with.",
-      guideBack: "One way it could sound.",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
       description: "Taking a remark under the surface, in the order that works: ask, then acknowledge what comes out, then say what you would prefer.\n\nThe risky moment is the first one. A question asked with an edge starts an argument, and a question asked neutrally gets an answer — the same words, two completely different conversations.\n\nMindset: ask like you want the answer, and then actually listen to it.",
       inputs: [
         {
@@ -3370,8 +3370,8 @@ const multiStepCollections = {
     },
     {
       name: "When You Should Not Take the Bait",
-      guideFront: "What they said, and the strategy to answer it with.",
-      guideBack: "One way it could sound.",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
       description: "Some remarks are an invitation to a row, and the person making them is looking for one. Engaging is exactly what turns a bad moment into a bad afternoon.\n\nThis combo practises declining, several times, without either giving in or getting sharp. It ends with leaving rather than resolving, because resolution is not always available and not always yours to produce.\n\nMindset: you can decline every round. Nothing obliges you to have this argument today.",
       inputs: [
         {
@@ -3400,8 +3400,8 @@ const multiStepCollections = {
   makingrequests: [
     {
       name: "The Whole Request",
-      guideFront: "What they said, and the strategy to answer it with.",
-      guideBack: "One way it could sound.",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
       description: "Ask Instead of Hinting, then Make It Specific, then Give One Short Reason, then Leave Room to Refuse. The four parts of a request, in the order they come out of your mouth.\n\nNotice how short each step is. The whole thing is four sentences, and three of them are answers to questions the other person has already started asking silently: how big is it, why does it matter, and can I say no.\n\nMindset: two of these steps make it answerable and one makes it refusable. The first one is just saying it at all.",
       inputs: [
         {
@@ -3428,8 +3428,8 @@ const multiStepCollections = {
     },
     {
       name: "Asking for Help",
-      guideFront: "What they said, and the strategy to answer it with.",
-      guideBack: "One way it could sound.",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
       description: "Ask for Help, then Make It Specific, then Leave Room to Refuse, then Take a No Well. The harder version, because it starts with admitting something.\n\nThe first step is the whole difficulty. After that it behaves like any other request — which is the point of putting it in a sequence. Naming the piece you are stuck on turns \"I'm drowning\" into something a person can actually do on a Tuesday.\n\nMindset: asking early is a small ask. The sequence gets much harder if you leave it three weeks.",
       inputs: [
         {
@@ -3456,8 +3456,8 @@ const multiStepCollections = {
     },
     {
       name: "When Nothing Comes Back",
-      guideFront: "What they said, and the strategy to answer it with.",
-      guideBack: "One way it could sound.",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
       description: "Follow Up Once, then Make It Specific, then Leave Room to Refuse, then Take a No Well. What to do with silence.\n\nThe order matters more here than anywhere. People who follow up badly go straight from silence to grievance; this sequence goes from silence to a plain question, then to something easier to answer, then to accepting whatever comes back.\n\nMindset: one follow-up. After that, silence is an answer, and it is allowed to be.",
       inputs: [
         {
@@ -3486,8 +3486,8 @@ const multiStepCollections = {
   sayingno: [
     {
       name: "The Full No",
-      guideFront: "The step you are on — say your version out loud.",
-      guideBack: "One way it could sound.",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
       description: "The complete version, in the order that makes it land: show you understand, say no clearly, give the reason, offer what you can do.\n\nThis one is a monologue — you are saying it as a continuous piece before they respond. Read the step, say your own version out loud, then turn the card.\n\nThe order carries the weight. Understanding first means the no arrives to someone who feels heard. The reason after the no means it explains rather than negotiates. And the alternative last means it is a gift rather than an opening bid.\n\nMindset: each step earns the next. The alternative only works if the no came first.",
       inputs: [
         {
@@ -3514,8 +3514,8 @@ const multiStepCollections = {
     },
     {
       name: "When They Push Back",
-      guideFront: "The step you are on — say your version out loud.",
-      guideBack: "One way it could sound.",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
       description: "A no is often not accepted first time. The other person explains again, or looks disappointed, or asks whether you are sure.\n\nThis is an exchange rather than a monologue. Each front carries what they said. The move throughout is to acknowledge briefly and keep the answer unchanged — and to notice the moment where you are about to say yes simply to end the discomfort.\n\nIf it goes further than this, holding a line under sustained pressure is its own skill and its own pack.\n\nMindset: the answer does not change because they asked again.",
       inputs: [
         {
@@ -3542,8 +3542,8 @@ const multiStepCollections = {
     },
     {
       name: "Not Answering Yet",
-      guideFront: "The step you are on — say your version out loud.",
-      guideBack: "One way it could sound.",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
       description: "The move that prevents most regretted yeses: not answering in the moment at all.\n\nThe pattern is short — ask for time, name when you will answer, and then actually answer. The last step is the one people skip, and skipping it turns a considered delay into avoidance that costs the other person a chance to ask someone else.\n\nMindset: buy the time, then use it, then answer on the day you said.",
       inputs: [
         {
@@ -3814,113 +3814,6 @@ const multiStepCollections = {
             { front: "Step 1 · Play it straight — they say: \"Stand back. I fix these with my hands.\"", back: "\"Okay. It's the paper tray, I think.\"" },
             { front: "Step 2 · Stay straight — they say: \"I've fixed hundreds of these.\"", back: "\"Great. It's still the paper tray.\"" },
             { front: "Step 3 · Let them land it — the printer starts", back: "\"Extraordinary. Genuinely. Well done.\"" },
-          ]
-        },
-      ]
-    },
-  ],
-  masculine1: [
-    {
-      name: "Conflict to Connection",
-      guideFront: "What's happening, and the strategy to use",
-      guideBack: "One way it could sound",
-      description: "A sequence to turn a fight around: Hear the Pain, Not the Blame → The Do-Over → Narrowing the Scope.\nFirst, you give her \"emotional oxygen,\" then you correct your own mistake, and finally, you offer a concrete solution.",
-      inputs: [
-        {
-          bundle: 'pro',
-          situation: "You forgot to fix something in the house she's asked about for weeks. She is now furious and calling you \"irresponsible.\"",
-          steps: [
-            { front: "Hear the Pain — she snaps: \"You never care about what I need!\"", back: "\"I hear that you feel alone and let down in this, and I understand that.\"" },
-            { front: "Do-Over — she still looks skeptical.", back: "\"Can I have a do-over? I see I've been irresponsible and I want to show you I take you seriously.\"" },
-            { front: "Narrowing the Scope — you offer a concrete solution.", back: "\"I'll fix it right now, and going forward I'll put our household tasks in my calendar.\"" },
-          ]
-        },
-        {
-          bundle: 'pro',
-          situation: "You promised to have a focused dinner date, but you keep looking at your phone. She gets upset and tells you that you are selfish.",
-          steps: [
-            { front: "Hear the Pain — she snaps: \"Your work is always more important than me!\"", back: "\"I hear that you're feeling forgotten and unimportant right now, and I see how much that hurts.\"" },
-            { front: "The Do-Over — you want to defend yourself.", back: "\"Wait, can we have a do-over? I was defending my phone use instead of being present with you. I'm putting it away.\"" },
-            { front: "The \"When You...\" Stem — you share your anxiety cleanly.", back: "\"When I get these work alerts, I feel anxious about failing at my job, but I'm choosing to focus on us now.\"" },
-          ]
-        },
-        {
-          bundle: 'pro',
-          situation: "You come home to a chaotic house. She starts criticizing you for not helping enough.",
-          steps: [
-            { front: "Hear the Pain — she snaps: \"I have to do everything around here while you just relax!\"", back: "\"I hear how completely exhausted and overwhelmed you are with the house right now.\"" },
-            { front: "The Do-Over — you feel the urge to lecture her on efficiency.", back: "\"Let's do a do-over. I started listing my own chores instead of hearing how hard this is for you.\"" },
-            { front: "Narrowing the Scope — you provide immediate structure.", back: "\"Let's sit down and handle this pile together for 20 minutes right now.\"" },
-          ]
-        },
-      ]
-    },
-    {
-      name: "Lead the Dance",
-      guideFront: "What's happening, and the strategy to use",
-      guideBack: "One way it could sound",
-      description: "Setting direction and providing structure to reduce her decision-making burden: Narrowing the Scope → The \"When You...\" Stem → Narrowing the Scope. It works because you proactively narrow the wide-open scope of decisions, share your truth inarguably, and then drive a clear proposal forward.\n\n• Narrowing the Scope — reduce uncertainty by proposing limited options\n• The \"When You...\" Stem — state your boundaries and preferences clearly\n• Narrowing the Scope — guide the final decision with decisive clarity\n\nMindset: your clarity is a gift of structure you give her, not a burden you place on her.",
-      inputs: [
-        {
-          bundle: 'pro',
-          situation: "She is stressed about the upcoming weekend and keeps asking \"What are we doing?\" in an anxious tone.",
-          steps: [
-            { front: "Narrowing the Scope — she asks: \"Are we going to be stuck at home all day?\".", back: "\"I suggest we do a hike on Saturday morning and relax Sunday. Does that work for you?\"" },
-            { front: "The \"When You...\" Stem — she complains that the hike will be too tiring.", back: "\"When you worry about the energy, I feel anxious about planning, but I want us to have an adventure.\"" },
-            { front: "Narrowing the Scope — she is still hesitant.", back: "\"I've researched these two short trails. Let's choose the lake trail—it's only an hour.\"" },
-          ]
-        },
-        {
-          bundle: 'pro',
-          situation: "She is obsessing over the logistics of the house and trying to manage your schedule.",
-          steps: [
-            { front: "The \"When You...\" Stem — she hands you a list of chores.", back: "\"When I get a long list of tasks without warning, I feel pressured and I want to withdraw.\"" },
-            { front: "Narrowing the Scope — she sighs and looks frustrated.", back: "\"I'll handle the garage and the lawn on Saturday morning. Does that cover the main things?\"" },
-            { front: "Narrowing the Scope — she asks what she should do.", back: "\"You focus on the kitchen prep. I'll take care of the rest so you don't have to think about it.\"" },
-          ]
-        },
-        {
-          bundle: 'pro',
-          situation: "You need to have a serious talk about the budget because she has been spending heavily.",
-          steps: [
-            { front: "Narrowing the Scope — you initiate the conversation.", back: "\"Let's sit down for 15 minutes tonight to plan our monthly savings goal.\"" },
-            { front: "The \"When You...\" Stem — she gets defensive: \"You're always trying to control my spending!\".", back: "\"When we don't have a clear savings target, I feel worried about our future stability, and I need safety.\"" },
-            { front: "Narrowing the Scope — she softens and agrees.", back: "\"I've run the numbers. We can save either 500 or 800 this month. What works best for our budget?\"" },
-          ]
-        },
-      ]
-    },
-    {
-      name: "Weather the Storm",
-      guideFront: "What's happening, and the strategy to use",
-      guideBack: "One way it could sound",
-      description: "Standing strong in the face of her powerful emotional tsunamis: Hear the Pain, Not the Blame → Refusing the Rejection → The \"When You...\" Stem. It works because you refuse to get hooked by her accusations, hold a safe container through her storm, and then speak your truth from a grounded place.\n\n• Hear the Pain, Not the Blame — ignore the toxic surface to meet her underlying hurt\n• Refusing the Rejection — stay present even if she tells you to leave\n• The \"When You...\" Stem — share your own boundaries without defensiveness\n\nMindset: be more committed to the connection than you are afraid of her intensity.",
-      inputs: [
-        {
-          bundle: 'pro',
-          situation: "You had to cancel plans with her at the last minute because of an urgent work issue. She is furious.",
-          steps: [
-            { front: "Hear the Pain — she shouts: \"You always let me down! You only care about yourself!\".", back: "\"I hear how incredibly disappointed and let down you are right now, and I'm sorry.\"" },
-            { front: "Refusing the Rejection — she turns her back and says: \"Just go away! I don't want to talk to you.\"", back: "\"I'm going to stay right here with you. I'm not running away from this.\"" },
-            { front: "The \"When You...\" Stem — she cries in frustration.", back: "\"When I have to choose between work and you, I feel torn and anxious, but you are my priority.\"" },
-          ]
-        },
-        {
-          bundle: 'pro',
-          situation: "She is emotional and angry about how you handled your child's study habits, accusing you of being a bad father.",
-          steps: [
-            { front: "Hear the Pain — she snaps: \"You don't care about our son's future at all!\".", back: "\"I hear your deep fear for our son, and I know how much you want him to succeed.\"" },
-            { front: "Refusing the Rejection — she walks away to the kitchen: \"You're impossible to talk to.\"", back: "(Follow her, and lean against the counter.) \"I'm not walking away from this. Take the time you need.\"" },
-            { front: "The \"When You...\" Stem — she looks up at you, still tense.", back: "\"When you call me a bad father, I feel deeply hurt and defensive, but I want us to lead together.\"" },
-          ]
-        },
-        {
-          bundle: 'pro',
-          situation: "She is feeling insecure and tests your commitment by asking if you are bored of her.",
-          steps: [
-            { front: "Hear the Pain — she says sarcastically: \"I'm sure you'd rather be with someone younger.\"", back: "\"I hear that you're feeling insecure about my love right now, and it hurts me to see you doubt.\"" },
-            { front: "Refusing the Rejection — she pulls away when you try to hold her: \"Don't touch me.\"", back: "(Let your hands drop, and stay where you are.) \"All right. I'm still here.\"" },
-            { front: "The \"When You...\" Stem — she softens slightly.", back: "\"When you pull away from me, I feel disconnected, but I am completely devoted to you.\"" },
           ]
         },
       ]
@@ -4956,8 +4849,8 @@ const multiStepCollections = {
   setupquestion: [
     {
       name: "Ask, Listen, Answer",
-      guideFront: "Ask, listen properly, then answer it yourself.",
-      guideBack: "A line you could say at this step.",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
       description: "The whole move in three beats: ask the question, actually listen to the answer, then give your own. The third step is the one people drop, and dropping it is what turns a good opener into an interview. Steps: 1) Ask — a question about something you want to talk about, 2) Listen — react to what they actually said, 3) Answer — give your own answer to the same question.\n\nThe shape of the whole thing:\n1. \"What made you sign up for this?\"\n2. \"Six months of meaning to — that sounds familiar.\"\n3. \"I came because I finally ran out of excuses.\"\n\nWhy this order: asking first shows interest and costs you nothing, and answering afterwards is what makes it mutual. Reverse it and you have a Setup Statement, which is a different pack.\n\nMindset: step 3 is not optional. A question you never answer yourself is an interview, and people can feel the difference within about two exchanges.",
       inputs: [
         {
@@ -4982,8 +4875,8 @@ const multiStepCollections = {
     },
     {
       name: "Question into Story",
-      guideFront: "Ask, listen properly, then answer it yourself.",
-      guideBack: "A line you could say at this step.",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
       description: "Ask a background question, follow the detail they give you, and then give a piece of your own instead of moving on. Good when you want the conversation to deepen rather than bounce. Steps: 1) Ask — where they have come from, 2) Follow — pick up one detail and go further, 3) Match — give a piece of your own at the same size.\n\nThe shape of the whole thing:\n1. \"How do you know everyone here?\"\n2. \"You grew up together? Okay, I need one embarrassing story.\"\n3. \"I've known the host about a year and I'm still the new one.\"\n\nWhy this order: a background question almost always produces a story rather than a word, and matching it with something of your own is what stops you being the one who asks all the questions.\n\nMindset: follow one detail properly, then match it. Two questions in a row without anything of yours in between is where it starts to feel like an interview.",
       inputs: [
         {
@@ -5008,8 +4901,8 @@ const multiStepCollections = {
     },
     {
       name: "When the First One Stalls",
-      guideFront: "Ask, listen properly, then answer it yourself.",
-      guideBack: "A line you could say at this step.",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
       description: "You asked, they gave you almost nothing, and the temptation is to ask the same question again in different words. Three beats get out of it instead. Steps: 1) Answer your own question, small and concrete, 2) Ask again — narrower, and about something specific, 3) Follow whatever comes back.\n\nThe shape of the whole thing:\n1. \"Mine's been dull, honestly — mostly a spreadsheet.\"\n2. \"Have you got anything on the go at the moment?\"\n3. \"A greenhouse? In this weather?\"\n\nWhy this order: your own small answer shows the size of answer you meant, which is usually what was missing. Then a narrower question is answerable without any effort, and the third step is just following what they gave you.\n\nMindset: never ask the same question twice. Go first yourself, then make it smaller.",
       inputs: [
         {
@@ -8332,113 +8225,6 @@ const multiStepCollections = {
       ]
     },
   ],
-  seenandtrusted1thesafetyshereads: [
-    {
-      name: "From Heat to Ground",
-      guideFront: "What's happening, and the strategy to use",
-      guideBack: "One way it could sound",
-      description: "For an argument that has escalated past usefulness and needs bringing down without either of you conceding the point.\n\n1. **Not Against You** — say the bond is not in play, so the limit that follows cannot be read as leaving\n2. **The Held Boundary** — stop the conversation, with a time you are coming back\n3. **Opening the Door** — come back and ask what is still there\n\nWhy just this order: the boundary is the frightening part, so it has to come after she has heard that you are staying. And the question only works once the heat is out — asked mid-fight it lands as a demand.\n\nWhat people do instead: they leave first and explain afterwards, which teaches her that a raised voice is followed by an absence.\n\nMindset: say you are staying, then stop, then ask.",
-      inputs: [
-        {
-          bundle: 'pro',
-          situation: "An argument about money has been going for twenty minutes and you are both saying things sharper than you mean.",
-          steps: [
-            { front: "Not Against You — she has gone quiet and is watching your face.", back: "\"I'm angry about the spending. I'm not against you and I'm not leaving.\"" },
-            { front: "The Held Boundary — she starts on last year's overdraft.", back: "\"I'm stopping. I love you. Twenty minutes and I'll be back at this table.\"" },
-            { front: "Opening the Door — you come back and sit down.", back: "\"Right. What's still sitting with you from that?\"" },
-          ]
-        },
-        {
-          bundle: 'pro',
-          situation: "She made a sharp joke about you at dinner and the drive home has been silent.",
-          steps: [
-            { front: "Not Against You — you park and neither of you moves.", back: "\"I'm not sulking at you. I'm sore about the joke and I'd rather say it than sit here.\"" },
-            { front: "The Held Boundary — she starts to explain why it wasn't a big deal.", back: "\"I don't want to argue about whether it was fair. Not tonight. Tomorrow, properly.\"" },
-            { front: "Opening the Door — the next evening, after supper.", back: "\"Yesterday. What was going on for you before you said it?\"" },
-          ]
-        },
-        {
-          bundle: 'pro',
-          situation: "A disagreement about the children's screen time has turned into an argument about who is the stricter parent.",
-          steps: [
-            { front: "Not Against You — she says you always make her the bad one.", back: "\"We're on the same side of this. It genuinely doesn't sound like it right now.\"" },
-            { front: "The Held Boundary — the children are still awake upstairs.", back: "\"Not with them listening. After lights out, and we do finish it.\"" },
-            { front: "Opening the Door — an hour later, the house is quiet.", back: "\"What's the bit about this that actually gets to you?\"" },
-          ]
-        },
-      ]
-    },
-    {
-      name: "When You Dropped It",
-      guideFront: "What's happening, and the strategy to use",
-      guideBack: "One way it could sound",
-      description: "For the situation where you are the one who broke something — a promise, a plan, a piece of trust — and she is on the other side of it.\n\n1. **The Kept Word** — own the miss plainly and name what happens now\n2. **Steady Under Load** — take the consequence off her rather than leaving her with it\n3. **Opening the Door** — ask what the miss actually did to her\n\nWhy just this order: an apology with no repair is words, so the action has to come before the feelings. But the question has to come last, because asking how she feels before you have fixed anything reads as buying your way out with interest.\n\nWhat people do instead: they explain the reason, which invites an argument about whether the reason was good enough, and the original thing stays broken.\n\nMindset: own it, carry it, then ask what it cost her.",
-      inputs: [
-        {
-          bundle: 'pro',
-          situation: "You forgot to take your daughter to the dentist and the appointment is gone.",
-          steps: [
-            { front: "The Kept Word — she finds the reminder text on the counter.", back: "\"That was mine and I dropped it. No excuse.\"" },
-            { front: "Steady Under Load — she reaches for her phone to rebook.", back: "(You take the phone.) \"Leave it. I'll rebook and I'll take her.\"" },
-            { front: "Opening the Door — later that evening.", back: "\"What did it land as, when you saw the text? I'd rather know.\"" },
-          ]
-        },
-        {
-          bundle: 'pro',
-          situation: "You said you would be home for dinner twice this week and you have missed both.",
-          steps: [
-            { front: "The Kept Word — she has already eaten and is reading.", back: "\"Twice this week. I said it and I didn't do it. Tuesdays and Thursdays are blocked from now on.\"" },
-            { front: "Steady Under Load — the kitchen has not been cleared.", back: "(You start on the kitchen.) \"Sit. This one's mine.\"" },
-            { front: "Opening the Door — you sit down opposite her.", back: "\"Is it the dinners, or is it that I said I'd be here?\"" },
-          ]
-        },
-        {
-          bundle: 'pro',
-          situation: "The insurance lapsed because you never renewed it, and she found out from a letter.",
-          steps: [
-            { front: "The Kept Word — she puts the letter in front of you.", back: "\"That's mine. I let it lapse and I didn't check. It's back on today.\"" },
-            { front: "Steady Under Load — she starts working out what else might be uncovered.", back: "\"I'll go through the lot tonight and give you a list of what's live. You don't need to look.\"" },
-            { front: "Opening the Door — the list is done and on the table.", back: "\"What's the worry underneath this one? It isn't really the paperwork, is it.\"" },
-          ]
-        },
-      ]
-    },
-    {
-      name: "The Hard Week",
-      guideFront: "What's happening, and the strategy to use",
-      guideBack: "One way it could sound",
-      description: "For the stretch where too much has landed at once and she is holding most of it.\n\n1. **Opening the Door** — find out which part is actually heaviest before you touch anything\n2. **Steady Under Load** — take that part off her completely\n3. **The Kept Word** — say exactly what you have taken and when it will be done\n\nWhy just this order: helping before asking usually means helping with the visible thing rather than the heavy thing, and she still cannot put it down. And the last step is what lets her stop checking — without a stated when, she keeps the task in her head anyway.\n\nWhat people do instead: they ask \"what can I do\", which hands the management back to her, and she now has to allocate you as well as everything else.\n\nMindset: ask which part, take that part, say when.",
-      inputs: [
-        {
-          bundle: 'pro',
-          situation: "Work, her mother's illness and the house move have all landed in the same two weeks.",
-          steps: [
-            { front: "Opening the Door — she is sitting at the table not doing anything.", back: "\"Of everything on you right now, which one is the heaviest?\"" },
-            { front: "Steady Under Load — she says it is the move.", back: "\"Then the move is mine. Boxes, van, the address changes, all of it.\"" },
-            { front: "The Kept Word — she looks unconvinced.", back: "\"Van's booked for the tenth. Address changes done by Friday. I'll tell you when each one lands.\"" },
-          ]
-        },
-        {
-          bundle: 'pro',
-          situation: "Your son has been off school for four days and she has taken all of it.",
-          steps: [
-            { front: "Opening the Door — she is on her third rearranged meeting.", back: "\"What's actually breaking here — the work, or the being the one who always stays?\"" },
-            { front: "Steady Under Load — she says it is the second one.", back: "\"Then I'm taking tomorrow and Thursday. Not helping with them. Taking them.\"" },
-            { front: "The Kept Word — she starts to say it is fine.", back: "\"It's in my calendar and I've told my team. You'll hear nothing more about it from me.\"" },
-          ]
-        },
-        {
-          bundle: 'pro',
-          situation: "The presents, the food, the families and the travel are all sitting with her again.",
-          steps: [
-            { front: "Opening the Door — she is writing a list at eleven at night.", back: "\"Which bit of Christmas do you actually dread?\"" },
-            { front: "Steady Under Load — she says it is the two sets of parents.", back: "\"Both families are mine this year. I'll do the calls and the dates.\"" },
-            { front: "The Kept Word — she asks when.", back: "\"Calls this week, dates fixed by Sunday. I'll tell you the plan rather than ask you to check it.\"" },
-          ]
-        },
-      ]
-    },
-  ],
   seenandtrusted2careshedidnotaskf: [
     {
       name: "Landing Her",
@@ -8648,6 +8434,220 @@ const multiStepCollections = {
             { front: "Name It Early — starting from where you actually are.", back: "\"I've been somewhere else for about a month and we've both been polite about it.\"" },
             { front: "The Four Questions — the honest ask.", back: "\"I want to feel wanted here rather than useful. That's the whole of it.\"" },
             { front: "Ask Before You Decide — building something concrete.", back: "\"Let's fix a night a week that's ours, and neither of us gives it away without asking.\"" },
+          ]
+        },
+      ]
+    },
+  ],
+  seenandtrusted1thesafetyshereads: [
+    {
+      name: "From Heat to Ground",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
+      description: "For an argument that has escalated past usefulness and needs bringing down without either of you conceding the point.\n\n1. **Not Against You** — say the bond is not in play, so the limit that follows cannot be read as leaving\n2. **The Held Boundary** — stop the conversation, with a time you are coming back\n3. **Opening the Door** — come back and ask what is still there\n\nWhy just this order: the boundary is the frightening part, so it has to come after she has heard that you are staying. And the question only works once the heat is out — asked mid-fight it lands as a demand.\n\nWhat people do instead: they leave first and explain afterwards, which teaches her that a raised voice is followed by an absence.\n\nMindset: say you are staying, then stop, then ask.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "An argument about money has been going for twenty minutes and you are both saying things sharper than you mean.",
+          steps: [
+            { front: "Not Against You — she has gone quiet and is watching your face.", back: "\"I'm angry about the spending. I'm not against you and I'm not leaving.\"" },
+            { front: "The Held Boundary — she starts on last year's overdraft.", back: "\"I'm stopping. I love you. Twenty minutes and I'll be back at this table.\"" },
+            { front: "Opening the Door — you come back and sit down.", back: "\"Right. What's still sitting with you from that?\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "She made a sharp joke about you at dinner and the drive home has been silent.",
+          steps: [
+            { front: "Not Against You — you park and neither of you moves.", back: "\"I'm not sulking at you. I'm sore about the joke and I'd rather say it than sit here.\"" },
+            { front: "The Held Boundary — she starts to explain why it wasn't a big deal.", back: "\"I don't want to argue about whether it was fair. Not tonight. Tomorrow, properly.\"" },
+            { front: "Opening the Door — the next evening, after supper.", back: "\"Yesterday. What was going on for you before you said it?\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "A disagreement about the children's screen time has turned into an argument about who is the stricter parent.",
+          steps: [
+            { front: "Not Against You — she says you always make her the bad one.", back: "\"We're on the same side of this. It genuinely doesn't sound like it right now.\"" },
+            { front: "The Held Boundary — the children are still awake upstairs.", back: "\"Not with them listening. After lights out, and we do finish it.\"" },
+            { front: "Opening the Door — an hour later, the house is quiet.", back: "\"What's the bit about this that actually gets to you?\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "When You Dropped It",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
+      description: "For the situation where you are the one who broke something — a promise, a plan, a piece of trust — and she is on the other side of it.\n\n1. **The Kept Word** — own the miss plainly and name what happens now\n2. **Steady Under Load** — take the consequence off her rather than leaving her with it\n3. **Opening the Door** — ask what the miss actually did to her\n\nWhy just this order: an apology with no repair is words, so the action has to come before the feelings. But the question has to come last, because asking how she feels before you have fixed anything reads as buying your way out with interest.\n\nWhat people do instead: they explain the reason, which invites an argument about whether the reason was good enough, and the original thing stays broken.\n\nMindset: own it, carry it, then ask what it cost her.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You forgot to take your daughter to the dentist and the appointment is gone.",
+          steps: [
+            { front: "The Kept Word — she finds the reminder text on the counter.", back: "\"That was mine and I dropped it. No excuse.\"" },
+            { front: "Steady Under Load — she reaches for her phone to rebook.", back: "(You take the phone.) \"Leave it. I'll rebook and I'll take her.\"" },
+            { front: "Opening the Door — later that evening.", back: "\"What did it land as, when you saw the text? I'd rather know.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You said you would be home for dinner twice this week and you have missed both.",
+          steps: [
+            { front: "The Kept Word — she has already eaten and is reading.", back: "\"Twice this week. I said it and I didn't do it. Tuesdays and Thursdays are blocked from now on.\"" },
+            { front: "Steady Under Load — the kitchen has not been cleared.", back: "(You start on the kitchen.) \"Sit. This one's mine.\"" },
+            { front: "Opening the Door — you sit down opposite her.", back: "\"Is it the dinners, or is it that I said I'd be here?\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "The insurance lapsed because you never renewed it, and she found out from a letter.",
+          steps: [
+            { front: "The Kept Word — she puts the letter in front of you.", back: "\"That's mine. I let it lapse and I didn't check. It's back on today.\"" },
+            { front: "Steady Under Load — she starts working out what else might be uncovered.", back: "\"I'll go through the lot tonight and give you a list of what's live. You don't need to look.\"" },
+            { front: "Opening the Door — the list is done and on the table.", back: "\"What's the worry underneath this one? It isn't really the paperwork, is it.\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "The Hard Week",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
+      description: "For the stretch where too much has landed at once and she is holding most of it.\n\n1. **Opening the Door** — find out which part is actually heaviest before you touch anything\n2. **Steady Under Load** — take that part off her completely\n3. **The Kept Word** — say exactly what you have taken and when it will be done\n\nWhy just this order: helping before asking usually means helping with the visible thing rather than the heavy thing, and she still cannot put it down. And the last step is what lets her stop checking — without a stated when, she keeps the task in her head anyway.\n\nWhat people do instead: they ask \"what can I do\", which hands the management back to her, and she now has to allocate you as well as everything else.\n\nMindset: ask which part, take that part, say when.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "Work, her mother's illness and the house move have all landed in the same two weeks.",
+          steps: [
+            { front: "Opening the Door — she is sitting at the table not doing anything.", back: "\"Of everything on you right now, which one is the heaviest?\"" },
+            { front: "Steady Under Load — she says it is the move.", back: "\"Then the move is mine. Boxes, van, the address changes, all of it.\"" },
+            { front: "The Kept Word — she looks unconvinced.", back: "\"Van's booked for the tenth. Address changes done by Friday. I'll tell you when each one lands.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Your son has been off school for four days and she has taken all of it.",
+          steps: [
+            { front: "Opening the Door — she is on her third rearranged meeting.", back: "\"What's actually breaking here — the work, or the being the one who always stays?\"" },
+            { front: "Steady Under Load — she says it is the second one.", back: "\"Then I'm taking tomorrow and Thursday. Not helping with them. Taking them.\"" },
+            { front: "The Kept Word — she starts to say it is fine.", back: "\"It's in my calendar and I've told my team. You'll hear nothing more about it from me.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "The presents, the food, the families and the travel are all sitting with her again.",
+          steps: [
+            { front: "Opening the Door — she is writing a list at eleven at night.", back: "\"Which bit of Christmas do you actually dread?\"" },
+            { front: "Steady Under Load — she says it is the two sets of parents.", back: "\"Both families are mine this year. I'll do the calls and the dates.\"" },
+            { front: "The Kept Word — she asks when.", back: "\"Calls this week, dates fixed by Sunday. I'll tell you the plan rather than ask you to check it.\"" },
+          ]
+        },
+      ]
+    },
+  ],
+  masculine1: [
+    {
+      name: "Conflict to Connection",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
+      description: "A sequence to turn a fight around: Hear the Pain, Not the Blame → The Do-Over → Narrowing the Scope.\nFirst, you give her \"emotional oxygen,\" then you correct your own mistake, and finally, you offer a concrete solution.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You forgot to fix something in the house she's asked about for weeks. She is now furious and calling you \"irresponsible.\"",
+          steps: [
+            { front: "Hear the Pain — she snaps: \"You never care about what I need!\"", back: "\"I hear that you feel alone and let down in this, and I understand that.\"" },
+            { front: "Do-Over — she still looks skeptical.", back: "\"Can I have a do-over? I see I've been irresponsible and I want to show you I take you seriously.\"" },
+            { front: "Narrowing the Scope — you offer a concrete solution.", back: "\"I'll fix it right now, and going forward I'll put our household tasks in my calendar.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You promised to have a focused dinner date, but you keep looking at your phone. She gets upset and tells you that you are selfish.",
+          steps: [
+            { front: "Hear the Pain — she snaps: \"Your work is always more important than me!\"", back: "\"I hear that you're feeling forgotten and unimportant right now, and I see how much that hurts.\"" },
+            { front: "The Do-Over — you want to defend yourself.", back: "\"Wait, can we have a do-over? I was defending my phone use instead of being present with you. I'm putting it away.\"" },
+            { front: "The \"When You...\" Stem — you share your anxiety cleanly.", back: "\"When I get these work alerts, I feel anxious about failing at my job, but I'm choosing to focus on us now.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You come home to a chaotic house. She starts criticizing you for not helping enough.",
+          steps: [
+            { front: "Hear the Pain — she snaps: \"I have to do everything around here while you just relax!\"", back: "\"I hear how completely exhausted and overwhelmed you are with the house right now.\"" },
+            { front: "The Do-Over — you feel the urge to lecture her on efficiency.", back: "\"Let's do a do-over. I started listing my own chores instead of hearing how hard this is for you.\"" },
+            { front: "Narrowing the Scope — you provide immediate structure.", back: "\"Let's sit down and handle this pile together for 20 minutes right now.\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Lead the Dance",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
+      description: "Setting direction and providing structure to reduce her decision-making burden: Narrowing the Scope → The \"When You...\" Stem → Narrowing the Scope. It works because you proactively narrow the wide-open scope of decisions, share your truth inarguably, and then drive a clear proposal forward.\n\n• Narrowing the Scope — reduce uncertainty by proposing limited options\n• The \"When You...\" Stem — state your boundaries and preferences clearly\n• Narrowing the Scope — guide the final decision with decisive clarity\n\nMindset: your clarity is a gift of structure you give her, not a burden you place on her.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "She is stressed about the upcoming weekend and keeps asking \"What are we doing?\" in an anxious tone.",
+          steps: [
+            { front: "Narrowing the Scope — she asks: \"Are we going to be stuck at home all day?\".", back: "\"I suggest we do a hike on Saturday morning and relax Sunday. Does that work for you?\"" },
+            { front: "The \"When You...\" Stem — she complains that the hike will be too tiring.", back: "\"When you worry about the energy, I feel anxious about planning, but I want us to have an adventure.\"" },
+            { front: "Narrowing the Scope — she is still hesitant.", back: "\"I've researched these two short trails. Let's choose the lake trail—it's only an hour.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "She is obsessing over the logistics of the house and trying to manage your schedule.",
+          steps: [
+            { front: "The \"When You...\" Stem — she hands you a list of chores.", back: "\"When I get a long list of tasks without warning, I feel pressured and I want to withdraw.\"" },
+            { front: "Narrowing the Scope — she sighs and looks frustrated.", back: "\"I'll handle the garage and the lawn on Saturday morning. Does that cover the main things?\"" },
+            { front: "Narrowing the Scope — she asks what she should do.", back: "\"You focus on the kitchen prep. I'll take care of the rest so you don't have to think about it.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You need to have a serious talk about the budget because she has been spending heavily.",
+          steps: [
+            { front: "Narrowing the Scope — you initiate the conversation.", back: "\"Let's sit down for 15 minutes tonight to plan our monthly savings goal.\"" },
+            { front: "The \"When You...\" Stem — she gets defensive: \"You're always trying to control my spending!\".", back: "\"When we don't have a clear savings target, I feel worried about our future stability, and I need safety.\"" },
+            { front: "Narrowing the Scope — she softens and agrees.", back: "\"I've run the numbers. We can save either 500 or 800 this month. What works best for our budget?\"" },
+          ]
+        },
+      ]
+    },
+    {
+      name: "Weather the Storm",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
+      description: "Standing strong in the face of her powerful emotional tsunamis: Hear the Pain, Not the Blame → Refusing the Rejection → The \"When You...\" Stem. It works because you refuse to get hooked by her accusations, hold a safe container through her storm, and then speak your truth from a grounded place.\n\n• Hear the Pain, Not the Blame — ignore the toxic surface to meet her underlying hurt\n• Refusing the Rejection — stay present even if she tells you to leave\n• The \"When You...\" Stem — share your own boundaries without defensiveness\n\nMindset: be more committed to the connection than you are afraid of her intensity.",
+      inputs: [
+        {
+          bundle: 'pro',
+          situation: "You had to cancel plans with her at the last minute because of an urgent work issue. She is furious.",
+          steps: [
+            { front: "Hear the Pain — she shouts: \"You always let me down! You only care about yourself!\".", back: "\"I hear how incredibly disappointed and let down you are right now, and I'm sorry.\"" },
+            { front: "Refusing the Rejection — she turns her back and says: \"Just go away! I don't want to talk to you.\"", back: "\"I'm going to stay right here with you. I'm not running away from this.\"" },
+            { front: "The \"When You...\" Stem — she cries in frustration.", back: "\"When I have to choose between work and you, I feel torn and anxious, but you are my priority.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "She is emotional and angry about how you handled your child's study habits, accusing you of being a bad father.",
+          steps: [
+            { front: "Hear the Pain — she snaps: \"You don't care about our son's future at all!\".", back: "\"I hear your deep fear for our son, and I know how much you want him to succeed.\"" },
+            { front: "Refusing the Rejection — she walks away to the kitchen: \"You're impossible to talk to.\"", back: "(Follow her, and lean against the counter.) \"I'm not walking away from this. Take the time you need.\"" },
+            { front: "The \"When You...\" Stem — she looks up at you, still tense.", back: "\"When you call me a bad father, I feel deeply hurt and defensive, but I want us to lead together.\"" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "She is feeling insecure and tests your commitment by asking if you are bored of her.",
+          steps: [
+            { front: "Hear the Pain — she says sarcastically: \"I'm sure you'd rather be with someone younger.\"", back: "\"I hear that you're feeling insecure about my love right now, and it hurts me to see you doubt.\"" },
+            { front: "Refusing the Rejection — she pulls away when you try to hold her: \"Don't touch me.\"", back: "(Let your hands drop, and stay where you are.) \"All right. I'm still here.\"" },
+            { front: "The \"When You...\" Stem — she softens slightly.", back: "\"When you pull away from me, I feel disconnected, but I am completely devoted to you.\"" },
           ]
         },
       ]

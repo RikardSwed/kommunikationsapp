@@ -1229,8 +1229,8 @@ const collections = {
   reactingtounexpectedstatements: [
     {
       name: "Say You Need a Second",
-      guideFront: "Say you need a second when...",
-      guideBack: "A possible response.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "Ask for the pause out loud instead of taking it silently. \"Give me a second with that.\"\n\nIt works because the pause happens either way — the difference is whether the other person knows what it is. A silent pause gets filled in by them, usually as disapproval, or as you having an answer you are choosing not to say. Six words remove all of that.\n\nIt also buys you a genuinely useful amount of time. Two or three seconds is enough to notice what you actually think, which is almost always better than the first thing that arrives.\n\nTypical phrases: \"Give me a second with that.\", \"Hang on, let me think.\", \"That's a lot — let me catch up.\", \"I want to answer that properly, give me a moment.\"\n\nFour ways to ask for it:\n\n1. The plain request — shortest. \"Give me a second.\"\n\n2. Say why you are pausing — turns it into an act of care. \"I want to answer that properly rather than just react.\"\n\n3. Name the size of it — for things that genuinely are a lot. \"That's quite a big thing to have just said. Let me catch up.\"\n\n4. Ask for it and then take it — the difficult half. Say the words, then actually be quiet.\n\nMindset: the silent version of this is happening anyway. Saying it out loud is what makes it read as consideration rather than coldness.",
       inputs: [
         { q: "Someone says something that stops you completely.", a: "\"Give me a second with that.\"", bundle: 'free' },
@@ -1245,8 +1245,8 @@ const collections = {
     },
     {
       name: "Say You Don't Know What to Say",
-      guideFront: "Say you don't know what to say when...",
-      guideBack: "A possible response.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "Admit it plainly. \"I honestly don't know what to say to that.\"\n\nIt works because it is nearly always true, and because it is far more welcome than the alternatives — a hollow response, a change of subject, or an opinion you have not thought about and will regret.\n\nIt is also disarming in a way people do not expect. Someone who has just said something difficult, surprising or provocative is bracing for a reaction, and honest bewilderment is not one of the ones they prepared for. It usually opens the conversation rather than ending it.\n\nTypical phrases: \"I don't know what to say to that.\", \"I've got no idea how to answer that.\", \"You've floored me a bit.\", \"I don't have a good response and I'd rather not fake one.\"\n\nFour ways to say it:\n\n1. Plainly — the standard. \"I don't know what to say.\"\n\n2. Say you would rather not fake it — makes the honesty explicit. \"I could give you a stock answer. I'd rather just say I don't know.\"\n\n3. Name the effect — for things that landed hard. \"You've properly floored me there.\"\n\n4. Admit it and stay — the important half. Say it, and do not leave the conversation.\n\nMindset: this is a complete answer, not a failure to produce one. Say it and stay in the room.",
       inputs: [
         { q: "A friend tells you something serious and unexpected.", a: "\"I don't know what to say. I'm glad you told me, though.\"", bundle: 'free' },
@@ -1261,8 +1261,8 @@ const collections = {
     },
     {
       name: "Ask What Prompted It",
-      guideFront: "Ask what prompted it when...",
-      guideBack: "A possible response.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "Ask why they said it, rather than what they meant. \"What made you think of that?\" \"Where's that come from?\"\n\nIt works because it is the fastest way to get useful information without committing to a position. You learn what is actually going on — which is often quite different from what the statement sounded like — and you do it while genuinely not having decided anything.\n\nIt is different from asking what someone means. That question is about the words; this one is about the person and the moment. It usually produces a much longer answer, and the answer is usually the interesting part.\n\nTypical phrases: \"What made you say that?\", \"Where's that come from?\", \"What's brought this on?\", \"How did you land on that?\"\n\nFour ways to ask:\n\n1. What prompted it now — the standard. \"What's made you think about that?\"\n\n2. How they got there — invites the reasoning or the story. \"How did you come round to that?\"\n\n3. Whether something has happened — for statements that come from nowhere. \"Has something happened?\"\n\n4. Ask with genuine curiosity — the only version that works. Anything with an edge is a challenge in disguise.\n\nMindset: ask about the person, not the sentence. \"What do you mean\" checks the words; \"what made you say that\" opens the situation.",
       inputs: [
         { q: "A friend announces a large decision out of nowhere.", a: "\"What's brought this on? I want the whole story.\"", bundle: 'free' },
@@ -1277,8 +1277,8 @@ const collections = {
     },
     {
       name: "Answer the Part You Can",
-      guideFront: "Answer the part you can when...",
-      guideBack: "A possible response.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "Respond to whichever piece you do have something honest to say about, and be open that the rest will have to wait.\n\nIt works because unexpected statements are usually several things at once — a fact, an implication, an opinion, and an invitation to react. You rarely have a view on all of it, and you almost always have one on some of it.\n\nIt also keeps you in the conversation. A partial honest answer is warmer than silence and far more useful than a complete answer you have invented.\n\nTypical phrases: \"I can answer part of that.\", \"On the first bit, yes. On the rest I don't know.\", \"What I can say is…\", \"I'm clear about X. Y I'd have to think about.\"\n\nFour ways to answer partly:\n\n1. Name which part you can take — clearly. \"On whether it's a good idea, no view yet. On whether it's possible, definitely.\"\n\n2. Answer the factual bit — often the only piece you are sure of. \"It is Thursday, yes. What I think about it is another matter.\"\n\n3. Say what you feel, not what you think — sometimes all you have. \"I don't know what I think. I do know it made me uneasy.\"\n\n4. Say what you are sure is not the case — the negative version. \"I don't know the answer. I do know it isn't your fault.\"\n\nMindset: partial and true beats complete and invented. Say which part is which.",
       inputs: [
         { q: "A friend asks what you think about a big decision they just announced.", a: "\"I don't know what I think yet. I do know I'm glad you told me.\"", bundle: 'free' },
@@ -1293,8 +1293,8 @@ const collections = {
     },
     {
       name: "Come Back to It Later",
-      guideFront: "Come back to it later when...",
-      guideBack: "A possible response.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "Say that you want to think about it and will return to it — and then actually do.\n\nIt works because some things genuinely cannot be answered well in the moment, and pretending otherwise produces a response neither of you can rely on. It also removes the pressure of the audience, the moment and the surprise, all of which push towards a reaction rather than a view.\n\nThe condition is the return. A deferral without a time is avoidance, and the other person is left waiting for something that never comes — which is worse than a poor answer in the moment.\n\nTypical phrases: \"Can I think about that and come back to you?\", \"I'd like to sit with it. Tomorrow?\", \"Ask me again at the weekend.\", \"I'll have thought about it by Thursday.\"\n\nFour ways to defer:\n\n1. Name when you will return — essential. \"Let me think about it. I'll say something tomorrow.\"\n\n2. Say why you are not answering now — makes it honest rather than evasive. \"I'd give you a reaction rather than an answer if I did it now.\"\n\n3. Ask for their timing — practical and considerate. \"When do you need me to have a view?\"\n\n4. Come back unprompted — the part that makes it worth anything. Raise it yourself, on the day you said.\n\nMindset: give a time and keep it. Deferring is only better than a bad answer if the return actually happens.",
       inputs: [
         { q: "You are asked something big and want to answer it well.", a: "\"Can I think about it and come back to you tomorrow?\"", bundle: 'free' },
@@ -2409,8 +2409,8 @@ const collections = {
   apologizing1: [
     {
       name: "Choose the Size",
-      guideFront: "Choose the size when...",
-      guideBack: "A possible response.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "Decide before you speak whether this needs three words or a proper conversation. Getting it wrong in either direction damages the apology.\n\nA long apology for something small is uncomfortable for the other person — it makes them the injured party in something they had already forgotten, and it turns your discomfort into their problem. A three-word apology for something that genuinely hurt someone reads as wanting it dealt with rather than repaired.\n\nThe rough test: **did it affect them, or did it just embarrass you?** Embarrassment gets a short apology. Actual effect on another person gets a real one.\n\nTypical phrases: \"Sorry about that.\", \"Can I talk to you about yesterday?\", \"Small thing, but…\", \"Have you got ten minutes?\"\n\nFour things that decide the size:\n\n1. Did it land on them, or only on you — the main test. Your embarrassment is not their injury.\n\n2. Have they mentioned it — if they raised it, it matters to them, whatever you think.\n\n3. Is it the first time — a repeated small thing has become a big thing.\n\n4. Is it still sitting there — if things have been odd for days, it needs the full version.\n\nMindset: match the depth to the harm, and signal which one is coming. \"Sorry about that\" and \"can I talk to you about yesterday\" prepare people very differently.",
       inputs: [
         { q: "You bumped someone's chair walking past.", a: "\"Sorry about that.\"", bundle: 'free' },
@@ -2425,8 +2425,8 @@ const collections = {
     },
     {
       name: "Say Sorry Simply",
-      guideFront: "Say sorry simply when...",
-      guideBack: "A possible response.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "Apologise in one short sentence with nothing attached. \"Sorry — I forgot.\" \"My bad.\"\n\nIt works because most things that need an apology are small, and a small thing given a long apology becomes heavier than it was. The short version keeps it the right size, which is usually what lets both of you move on within seconds.\n\nWhat makes it work is that it is **unqualified**. No explanation, no \"but\", no context. The moment you add why, you have started defending yourself, and a defended apology is not a short one any more.\n\nTypical phrases: \"Sorry about that.\", \"My bad.\", \"I didn't mean to — sorry.\", \"I shouldn't have said that.\"\n\nFour ways to keep it short:\n\n1. Plain sorry — nothing attached. \"Sorry about that.\"\n\n2. Sorry plus the thing — shows you know what for. \"Sorry, I forgot to send it.\"\n\n3. Owning it lightly — responsibility without ceremony. \"That was me. My bad.\"\n\n4. Sorry plus the fix — the strongest short version. \"Sorry — sending it now.\"\n\nMindset: no \"but\". A short apology with an explanation attached is a defence with the word sorry in front of it.",
       inputs: [
         { q: "You forgot to send something you said you would.", a: "\"Sorry — I completely forgot. Sending it now.\"", bundle: 'free' },
@@ -2441,8 +2441,8 @@ const collections = {
     },
     {
       name: "Apologise for What You Did",
-      guideFront: "Apologise for what you did when...",
-      guideBack: "A possible response.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "Say sorry, and say what for, specifically. \"I'm sorry I didn't send it. I said Tuesday and I forgot.\"\n\nIt works because specificity is the proof. Anyone can say sorry; naming exactly what you did wrong shows you have understood it and are not hoping a general gesture will cover it.\n\nThree words make it not an apology at all: **if**, **but**, and **you**. \"Sorry if that was annoying\" makes it conditional. \"Sorry, but I was busy\" trades. \"Sorry you were upset\" relocates the problem into their feelings. All three protect you, and everyone can hear it.\n\nTypical phrases: \"I'm sorry for…\", \"I shouldn't have…\", \"That was my fault.\", \"I was wrong to…\"\n\nFour ways to apologise properly:\n\n1. Sorry for the specific action — the standard. \"I'm sorry I didn't reply.\"\n\n2. Sorry plus what you should have done — stronger, because it shows you know the alternative. \"I'm sorry I forgot. I should have written it down when you told me.\"\n\n3. Own the part that is yours — for situations where it is not all yours. \"The tone was mine and I'm sorry for it. The decision I'd still defend.\"\n\n4. Say it was wrong, not just unfortunate — no hedging. \"That was out of order.\"\n\nMindset: no \"if\", no \"but\", no \"you\". If the sentence protects you, it is not an apology yet.",
       inputs: [
         { q: "You forgot something you had promised to do.", a: "\"I'm sorry I forgot. You'd told me and I still didn't write it down.\"", bundle: 'free' },
@@ -2457,8 +2457,8 @@ const collections = {
     },
     {
       name: "Say What You'll Do Differently",
-      guideFront: "Say what you'll do differently when...",
-      guideBack: "A possible response.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "Name what will change. \"I'll put it in the calendar while you're telling me, rather than trusting my memory.\"\n\nIt works because it is the only part of an apology that costs you anything in the future. Everything before it is words about the past, and a person who has been let down more than once has learned that words about the past are cheap.\n\nThe plan should be **specific and small enough to be believed.** \"I'll be better\" promises nothing. \"I'll write it down while you're saying it\" is checkable, which is what makes it worth something.\n\nTypical phrases: \"Next time I'll…\", \"What I'll do differently is…\", \"I'm going to…\", \"If it happens again, tell me and I'll…\"\n\nFour kinds of plan:\n\n1. A concrete behaviour change — the standard. \"I'll put it in the calendar while we're talking.\"\n\n2. A different response in the same moment — for things you did in the heat of it. \"Next time I'll say I need five minutes rather than carrying on.\"\n\n3. Give them a way to stop it — hands them some control. \"If I start doing it again, just say the word.\"\n\n4. Say what you will not do — sometimes clearer than a positive plan. \"I won't bring it up in front of other people again.\"\n\nMindset: small enough to be believed, specific enough to be checked. Then do it — the plan is only worth anything the second time.",
       inputs: [
         { q: "You keep forgetting things people tell you.", a: "\"I'm going to write it down while you're saying it. That's the bit I don't do.\"", bundle: 'free' },
@@ -2607,8 +2607,8 @@ const collections = {
   persuasionandinfluence1: [
     {
       name: "Show the Benefit to Them",
-      guideFront: "Present the benefit when...",
-      guideBack: "A possible response.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "Say what the other person gets out of it. Not why the idea is good in general — what improves for them specifically if it happens.\n\nIt works because people evaluate a proposal by what it costs and returns for them, and most proposals are presented entirely from the proposer's side. Naming their side is often the only thing that was missing.\n\nThe version that lands is specific and true. A vague benefit sounds like sales talk; a concrete one they can picture does the work on its own. And if there genuinely is no benefit for them, saying so honestly is better than inventing one.\n\nTypical phrases: \"It'd mean you could…\", \"The good bit for you is…\", \"That way you wouldn't have to…\", \"It saves you the…\"\n\nFour ways to name the benefit:\n\n1. What they gain — the direct version. \"You'd get the whole of Friday back.\"\n\n2. What they avoid — often stronger, because losses feel bigger than gains. \"You wouldn't have to chase anyone for it.\"\n\n3. What it makes possible later — for slower payoffs. \"It means we could actually start in January.\"\n\n4. Admit there is none for them — honest, and it buys credibility. \"There's nothing in this for you, to be fair. I'm asking as a favour.\"\n\nMindset: their side, not yours. If you cannot say what they get, you have not finished thinking about the proposal.",
       inputs: [
         { q: "You want a colleague to start a task earlier than planned.", a: "\"If we start next week, you'd not be doing it in the same fortnight as the audit.\"", bundle: 'free' },
@@ -2623,8 +2623,8 @@ const collections = {
     },
     {
       name: "Give a Reason",
-      guideFront: "Give your reason when...",
-      guideBack: "A possible response.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "Say why. One reason, plainly, so the proposal is something to think about rather than just something you want.\n\nIt works because a request with a reason attached is treated differently from a bare request — it invites consideration instead of a yes-or-no reflex. Even an ordinary reason changes the shape of the conversation.\n\nKeep it honest. If you have a real number or a real experience, use it and say where it came from. If you do not, say what you actually think and why — a stated opinion is fine. Inventing evidence is the one thing that cannot be repaired, because when it is checked, everything else you said goes with it.\n\nTypical phrases: \"The reason I'd say that is…\", \"It's because…\", \"What makes me think it'd work is…\", \"I've seen it work when…\"\n\nFour kinds of reason:\n\n1. From experience — yours or the group's. \"We tried it the other way in March and lost a week.\"\n\n2. From a consequence — where each option leads. \"If we leave it to Friday, nobody's around to fix it.\"\n\n3. From something they have not accounted for — the missing piece. \"The night shift can't access that system at all.\"\n\n4. Honestly marked as opinion — when you have no evidence. \"I've got no proof. It just feels like the safer order to me.\"\n\nMindset: one reason, properly. Three reasons invites them to argue with the weakest.",
       inputs: [
         { q: "You want the group to start earlier.", a: "\"If we start next week we've got slack for when something goes wrong. Something always does.\"", bundle: 'free' },
@@ -2639,8 +2639,8 @@ const collections = {
     },
     {
       name: "Name the Cost of Doing Nothing",
-      guideFront: "Name the cost of doing nothing when...",
-      guideBack: "A possible response.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "Say what carrying on as before actually costs. The status quo always has a price, and it is invisible precisely because everyone is used to paying it.\n\nIt works because most proposals are compared against an imagined free alternative — changing nothing. Once the current cost is said out loud, the comparison becomes fair: not \"is this worth doing\" but \"is this worth more than what we are already losing\".\n\nSay it plainly and without drama. An exaggerated cost invites an argument about the exaggeration, and the real one is nearly always enough on its own.\n\nTypical phrases: \"At the moment we're losing…\", \"The way it is now costs us…\", \"If nothing changes, we'll be doing this again in…\", \"Doing nothing isn't free.\"\n\nFour ways to name it:\n\n1. Count what it costs now — the strongest, if you can count it. \"It's about two hours a week between the three of us.\"\n\n2. Name the repeat — for things that keep recurring. \"We'll have the same conversation again in March.\"\n\n3. Name who is carrying it — often the most persuasive. \"It lands on whoever's on shift, and they can't do anything about it.\"\n\n4. Say what it stops you doing — the opportunity cost. \"While we're firefighting this, nobody's touching the actual backlog.\"\n\nMindset: nothing is not a neutral option. Say what it costs, then let them compare properly.",
       inputs: [
         { q: "The group prefers to leave a process as it is.", a: "\"The way it is now, we redo the last section every single time.\"", bundle: 'free' },
@@ -2655,8 +2655,8 @@ const collections = {
     },
     {
       name: "Tell What Happened to You",
-      guideFront: "Give your own example when...",
-      guideBack: "A possible response.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "Give a short account of a time you did it, or saw it done. \"I tried it that way last year and spent the whole of December fixing it.\"\n\nIt works because a first-hand account is concrete, hard to argue with, and does not require the listener to concede anything. They are not agreeing with your argument; they are hearing what happened.\n\nKeep it short — two or three sentences. It is a piece of evidence, not a story for its own sake, and a long one stops being persuasive and starts being an anecdote people wait out.\n\nTypical phrases: \"I tried that once and…\", \"Last year we did exactly this…\", \"The one time I did it the other way…\", \"I used to think that too, until…\"\n\nFour ways to use it:\n\n1. The time it worked — the straightforward version. \"I did it this way in the spring and it took half as long.\"\n\n2. The time it did not — usually stronger, because it costs you something. \"I did it the other way and it was a disaster.\"\n\n3. The time you were wrong — the most persuasive of all. \"I argued against this for a month. Then I covered a shift and understood it.\"\n\n4. What you saw someone else do — when you have no direct case. \"The other team switched last year. They've not gone back.\"\n\nMindset: two or three sentences, then stop. If they want the rest they will ask.",
       inputs: [
         { q: "You want to support an approach you have used.", a: "\"I did it this way in the spring. It took about half the time.\"", bundle: 'free' },
@@ -3031,8 +3031,8 @@ const collections = {
   respondingtopassiveaggression: [
     {
       name: "Answer It Straight",
-      guideFront: "Answer it straight when...",
-      guideBack: "A possible response.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "Respond to the surface of what was said, as though it had been meant sincerely. \"Nice job finishing that… finally.\" — \"Thanks. It took longer than I expected.\"\n\nIt works because a passive-aggressive remark needs you to react to the part that was not said. Take the words at face value and the barb has nothing to attach to. Nobody can complain that you answered what they actually said.\n\nIt is also the least costly response available. No confrontation, no accusation, nothing to escalate — and it very often ends the pattern faster than naming it would, because the remark simply did not work.\n\nTypical phrases: \"Thanks.\", \"Yes, it did take a while.\", \"Good idea, I'll do that.\", \"That's true, actually.\"\n\nFour ways to answer straight:\n\n1. Accept the surface compliment — even when it clearly was not one. \"Thanks, glad it helped.\"\n\n2. Agree with the literal content — when it happens to be true. \"It did take longer than I said. You're right.\"\n\n3. Answer the buried question — treat the dig as an enquiry. \"Yes, it's finished. It's in the shared folder.\"\n\n4. Take the suggestion seriously — the driest version. \"Starting earlier — I'll do that next time.\"\n\nMindset: you are not pretending not to notice. You are choosing not to make it a thing, which is a different and stronger position.",
       inputs: [
         { q: "A colleague says, \"Nice job finishing that… finally.\"", a: "\"Thanks. It took longer than I expected.\"", bundle: 'free' },
@@ -3047,8 +3047,8 @@ const collections = {
     },
     {
       name: "Ask What They Mean",
-      guideFront: "Ask what they mean when...",
-      guideBack: "A possible response.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "Ask them to say the thing plainly. \"What do you mean by that?\" — and then wait.\n\nIt works because passive aggression depends on deniability. The remark is designed to land without being answerable, and a straight question removes that: they either say what they meant, which is the conversation you actually needed, or they back off, which ends it.\n\nThe delivery decides everything. Asked with genuine curiosity it is an invitation; asked with an edge it is a challenge, and you will get a fight instead of an answer. If you cannot ask it neutrally, use a different strategy.\n\nTypical phrases: \"What do you mean?\", \"Say a bit more?\", \"Sorry, I'm not sure how to take that.\", \"Is there something you'd rather say directly?\"\n\nFour ways to ask:\n\n1. The plain question — short and neutral. \"What do you mean by that?\"\n\n2. Admit you cannot read it — takes any accusation out. \"I genuinely can't tell how you meant that.\"\n\n3. Ask for the direct version — more pointed, still fair. \"Is there something you'd rather just say?\"\n\n4. Ask and then be quiet — the silence does most of the work. Ask once, then wait.\n\nMindset: ask it like you actually want the answer. If your tone says \"go on, I dare you\", you have started an argument rather than a conversation.",
       inputs: [
         { q: "A colleague says, \"Well, some of us had time to prepare.\"", a: "\"What do you mean by that?\"", bundle: 'free' },
@@ -3063,8 +3063,8 @@ const collections = {
     },
     {
       name: "Name the Feeling",
-      guideFront: "Name the feeling when...",
-      guideBack: "A possible response.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "Say what you think they are feeling, without agreeing with how they said it. \"You sound properly fed up with this. What's going on?\"\n\nIt works because most passive aggression is a real grievance that could not find a direct route out. Naming the feeling gives it one, and someone whose frustration has been acknowledged usually stops needing to express it sideways.\n\nThere is a line worth holding. You are recognising a feeling, not accepting the accusation inside it — \"I can see you're annoyed\" is not \"you're right to say that to me\". Keeping those separate is what stops this becoming appeasement.\n\nTypical phrases: \"You sound frustrated.\", \"I can see this has been annoying.\", \"It sounds like this has been building.\", \"You're clearly not happy with how it went.\"\n\nFour ways to name it:\n\n1. Name the feeling plainly — the standard. \"You sound pretty fed up.\"\n\n2. Name it and ask — turns it into an opening. \"You seem annoyed. Is it about the deadline?\"\n\n3. Name what it is probably about — when you can guess. \"I think this is about last Friday rather than the report.\"\n\n4. Acknowledge and redirect — the version that keeps things moving. \"I can see you're frustrated. Let's sort the actual problem.\"\n\nMindset: acknowledge the feeling, not the delivery. Those are two different things and you can accept one while declining the other.",
       inputs: [
         { q: "A colleague says, \"I guess I'm the only one who cares about this.\"", a: "\"You sound properly fed up. What's going on?\"", bundle: 'free' },
@@ -3079,8 +3079,8 @@ const collections = {
     },
     {
       name: "Say How It Lands",
-      guideFront: "Say how it lands when...",
-      guideBack: "A possible response.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "Tell them the effect the remark had on you. \"When it's said like that, I don't know how to answer it.\"\n\nIt works because it is the one response they cannot deny. They can argue about what they meant; they cannot argue about how it landed on you, because you are the only authority on that.\n\nKeep it about the effect rather than about them. \"I feel uncomfortable when that tone is used\" is a report; \"you're being passive-aggressive\" is a diagnosis, and diagnoses get argued with for twenty minutes while nothing improves.\n\nTypical phrases: \"When it's said like that, I…\", \"That lands as…\", \"I don't know how to take that.\", \"I'd find it easier if you just told me.\"\n\nFour ways to say it:\n\n1. Name the effect — the standard. \"That lands as a dig, and I don't know how to answer it.\"\n\n2. Say what you would prefer — pairs the report with a route out. \"I'd honestly rather you just told me you were annoyed.\"\n\n3. Keep it to this instance — not a character verdict. \"That one landed badly. Not a big thing, but I'd rather say it.\"\n\n4. Own that you might be misreading — leaves them a way to clarify. \"That came across as a dig. Maybe I've got it wrong.\"\n\nMindset: describe the effect, not the person. The moment you name what they are, the conversation becomes about whether that is true.",
       inputs: [
         { q: "A colleague makes a sarcastic comment in a meeting.", a: "\"When it's put like that, I don't really know how to answer.\"", bundle: 'free' },
@@ -3095,8 +3095,8 @@ const collections = {
     },
     {
       name: "Hold Your Point",
-      guideFront: "Hold your point when...",
-      guideBack: "A possible response.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "Acknowledge briefly and return to the thing that actually needs deciding. \"I hear you. We still need this finished by Thursday.\"\n\nIt works because a passive-aggressive remark is often a way of not answering the question. Following it — defending yourself, arguing about the tone, explaining your history — takes the conversation somewhere it can stay indefinitely, and the original point never gets settled.\n\nThe pattern is short acknowledgement, then the point, in the same words each time. Anything longer becomes an argument about the remark rather than a conversation about the work.\n\nTypical phrases: \"I understand, and we still need to…\", \"Maybe. The question is still…\", \"That may be true. What I need is…\", \"Noted. Back to Thursday.\"\n\nFour ways to hold it:\n\n1. Acknowledge, then the point — the core move. \"I hear you. It still needs to be done by Thursday.\"\n\n2. Concede the true part, keep the point — takes the argument away. \"You're right that I was late. I still need an answer on this.\"\n\n3. Park the other thing openly — for grievances worth a real conversation. \"That's worth talking about properly. Not now, though.\"\n\n4. Repeat it in the same words — when they try again. Same sentence, same tone.\n\nMindset: do not follow it. Every sentence you spend on the remark is a sentence not spent on the decision.",
       inputs: [
         { q: "A colleague responds to a request with a dig about the past.", a: "\"I hear you. We still need this finished by Thursday.\"", bundle: 'free' },
@@ -3111,8 +3111,8 @@ const collections = {
     },
     {
       name: "Let It Go",
-      guideFront: "Let it go when...",
-      guideBack: "A possible response.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "Decide not to respond. Carry on with what you were doing, or answer a different part of the conversation entirely.\n\nIt works because not every remark deserves a response, and treating each one as something to be handled is exhausting for you and gives each one more weight than it had. Some things are best left where they fall.\n\nThis is a choice, not avoidance — and the difference is whether you have decided or simply not dared. A remark you let go and forget is fine. A remark you let go and then think about all evening is one you should probably have answered.\n\nTypical phrases: nothing at all, or something entirely unrelated. \"Anyway — what time's the meeting?\"\n\nFour ways to let it go:\n\n1. Say nothing and carry on — the simplest. Continue with what you were saying.\n\n2. Move to something else — gives the room somewhere to go. \"Anyway, what time are we starting?\"\n\n3. A neutral noise and onwards — acknowledges without engaging. \"Mm. So, Thursday.\"\n\n4. Decide to raise it later instead — not letting go, deferring on purpose. \"I'll mention that to her when it's calmer.\"\n\nMindset: choose it rather than default to it. Ask yourself whether you will still be thinking about it in an hour, and if the answer is yes, use one of the other five.",
       inputs: [
         { q: "Someone makes a small dig you genuinely do not care about.", a: "(carry on with what you were saying)", bundle: 'free' },
@@ -3129,8 +3129,8 @@ const collections = {
   makingrequests: [
     {
       name: "Ask Instead of Hinting",
-      guideFront: "Ask instead of hinting when...",
-      guideBack: "A possible response.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "Turn the hint, the sigh or the complaint into an actual request. Not \"the bins are overflowing again\" — \"could you take the bins out tonight?\"\n\nIt works because a hint asks the other person to do two jobs: work out what you want, and then decide whether to do it. Most people fail the first one entirely. They hear a comment about bins, agree that the bins are full, and carry on with their evening — and you conclude that they knew and did not care.\n\nHinting also protects you from hearing no, which is exactly why it is so tempting and so useless. A hint cannot be refused, but it cannot be granted either.\n\nTypical phrases: \"Could you take the bins out tonight?\", \"I'd like you to take Thursday's meeting.\", \"Can you have a look at this before five?\"\n\nThree hints, and what each becomes:\n\n1. The observation — \"the kitchen's a state again.\" Becomes: \"could you do your washing up the same evening?\"\n\n2. The sigh about yourself — \"I'm completely swamped this week.\" Becomes: \"could you take two of these off me?\"\n\n3. The question that is not one — \"are you busy Saturday?\" Becomes: \"could you give me an hour on Saturday?\"\n\nMindset: they cannot read your mind, and they are not refusing something they never heard. Say the sentence.",
       inputs: [
         { q: "You have mentioned the bins three times this week.", a: "\"Could you take the bins out tonight?\"", bundle: 'free' },
@@ -3145,8 +3145,8 @@ const collections = {
     },
     {
       name: "Make It Specific",
-      guideFront: "Make it specific when...",
-      guideBack: "A possible response.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "Say what, when, and how big. \"Could you help with the move?\" is unanswerable. \"Could you give me two hours on Saturday morning?\" can be said yes to.\n\nIt works because a vague request is a blank cheque, and people do not sign blank cheques. Faced with \"could you help sometime\", the other person has to imagine the worst version — a whole weekend, a van, four flights of stairs — and answer that. Naming the size removes the worst version from the room.\n\nIt also removes the second-guessing later. Half the resentment that comes out of favours is about a request that turned out to be four times what the other person had agreed to.\n\nTypical phrases: \"Two hours on Saturday morning.\", \"One meeting, this Thursday, and it's already prepared.\", \"Ten minutes, not a whole review.\"\n\nThree things to make specific, in the order they matter:\n\n1. The size — how long, how much, how many. \"It's one wardrobe, not a whole flat.\"\n\n2. The when — a date beats \"sometime\". \"Thursday at two.\"\n\n3. What it involves — the part they will imagine wrongly. \"You wouldn't have to drive. Just carry.\"\n\nMindset: you are not being demanding by being precise. You are making it possible to say yes.",
       inputs: [
         { q: "You are about to ask someone to \"help with the move sometime\".", a: "\"Could you give me two hours on Saturday morning? It's one van load.\"", bundle: 'free' },
@@ -3161,8 +3161,8 @@ const collections = {
     },
     {
       name: "Give One Short Reason",
-      guideFront: "Give one short reason when...",
-      guideBack: "A possible response.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "Add a single sentence saying why. \"Could you take Thursday? I'm at a funeral.\" Then stop.\n\nIt works because a reason gives the request a shape. Without one, the other person has to guess how much it matters, and most people guess low. With one, they can weigh it — and people are far more willing to help when they know what they are helping with.\n\nOne is the number. Two reasons start to sound like a case, three sound like you are talking yourself into it, and by then the other person is evaluating your justification rather than answering your question.\n\nTypical phrases: \"I'm away that day.\", \"I've got nobody else to ask.\", \"It's the only evening I can do.\"\n\nThree kinds of reason, and one to avoid:\n\n1. The practical one — shortest and best. \"I'm out of the country.\"\n\n2. The honest one about you — costs a little more, works better with people who know you. \"I'm not coping with this week.\"\n\n3. The one that says why THEM — flattering without being flattery. \"You're the only one who's seen the old version.\"\n\nAvoid the guilt reason. \"After everything I've done for you\" is not a reason, it is a bill, and it changes a request into a debt.\n\nMindset: notice the difference from saying no. When you decline, reasons invite argument. When you ask, one reason invites help.",
       inputs: [
         { q: "You are asking a colleague to cover a day.", a: "\"Could you take Thursday? I'm at a funeral.\"", bundle: 'free' },
@@ -3177,8 +3177,8 @@ const collections = {
     },
     {
       name: "Leave Room to Refuse",
-      guideFront: "Leave room to refuse when...",
-      guideBack: "A possible response.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "Say the exit out loud. \"Say if it doesn't work — I'll ask someone else.\"\n\nIt works because a request that cannot be refused is not a request. If the other person cannot say no without a cost, their yes tells you nothing, and you will not find out it was a reluctant one until it turns into resentment three weeks later.\n\nIt also, counterintuitively, makes people more likely to help. Pressure produces compliance and quiet irritation; a genuine choice produces a real yes. The exit is what makes the difference between the two.\n\nTypical phrases: \"Say if you can't.\", \"No is completely fine.\", \"Don't rearrange anything for me.\", \"I'm asking, not expecting.\"\n\nThree ways to leave the door open:\n\n1. Name the exit — the standard. \"Say if it doesn't work.\"\n\n2. Say what you will do if they say no — removes the sense that you are stuck. \"If you can't, I'll ask Petra.\"\n\n3. Ask once and then be quiet — the hardest part. The pressure people feel usually comes from the silence being filled with more reasons.\n\nMindset: you want a yes you can trust. That means the no has to be genuinely available.",
       inputs: [
         { q: "You are asking a favour of someone who finds it hard to refuse.", a: "\"Could you take Thursday? Say if it doesn't work — that's completely fine.\"", bundle: 'free' },
@@ -3193,8 +3193,8 @@ const collections = {
     },
     {
       name: "Ask for Help",
-      guideFront: "Ask for help when...",
-      guideBack: "A possible response.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "Say that you need help, to one named person, before it becomes a crisis. \"I'm stuck on this. Could you take a look?\"\n\nIt works because the alternative — struggling quietly and hoping someone notices — almost never works and costs far more when it fails. Most people are glad to be asked. Being the person someone turns to is not a burden; it is a compliment, and it is how people become close.\n\nThe two things that make it hard are both fixable. Asking a room asks nobody, so name a person. And \"I need help with everything\" is unanswerable, so name the piece.\n\nTypical phrases: \"I'm stuck. Could you look at this with me?\", \"I've got too much on. Could you take the Friday report?\", \"I don't know how to do this bit. Can you show me?\"\n\nThree ways in, from easiest to hardest:\n\n1. Ask about a piece — smallest and most answerable. \"Could you show me how the export works?\"\n\n2. Admit you do not know — the one people avoid, and the one that saves the most time. \"I've never done one of these. Can you walk me through it?\"\n\n3. Say you are struggling — for when it is bigger than a task. \"I'm not managing at the moment. Could we talk?\"\n\nMindset: asking early is a small ask. Asking late is a rescue. The same person would rather do the first.",
       inputs: [
         { q: "You have been stuck on something for two hours.", a: "\"I'm stuck on this. Could you look at it with me for ten minutes?\"", bundle: 'free' },
@@ -3209,8 +3209,8 @@ const collections = {
     },
     {
       name: "Follow Up Once",
-      guideFront: "Follow up once when...",
-      guideBack: "A possible response.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "When a request has gone unanswered, ask again, plainly, one time. \"Did you get a chance to think about Thursday?\"\n\nIt works because most unanswered requests are not refusals. They are messages read in a corridor and forgotten. Asking again is not pestering — it is telling them the question is still open, which they usually appreciate.\n\nOnce is the discipline. The second follow-up changes what you are asking about: it stops being about Thursday and starts being about whether they are ignoring you, and now there are two problems.\n\nTypical phrases: \"Did you get a chance to look at Thursday?\", \"Bringing this back up — could you take it?\", \"Still need an answer on this, whenever suits.\"\n\nThree ways to bring it back:\n\n1. Assume it was missed — the friendly default, and usually true. \"You might not have seen this.\"\n\n2. Ask for a yes or a no, not the thing itself — often what actually unsticks it. \"Just tell me either way and I'll plan around it.\"\n\n3. Give it a deadline — when you genuinely need one. \"I need to know by Thursday, then I'll sort it another way.\"\n\nMindset: one follow-up, then treat silence as a no and move on. Not as a grievance — as an answer.",
       inputs: [
         { q: "You asked three days ago and heard nothing.", a: "\"Bringing this back up — did you get a chance to think about Thursday?\"", bundle: 'free' },
@@ -3225,8 +3225,8 @@ const collections = {
     },
     {
       name: "Take a No Well",
-      guideFront: "Take a no well when...",
-      guideBack: "A possible response.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "Accept the refusal, in one sentence, without a sulk or a second attempt. \"No problem at all — thanks for saying.\"\n\nIt works because how you take a no decides what asking costs next time. If a refusal produces silence, coldness or a follow-up argument, the other person learns that saying no to you is expensive — and after that, either they avoid you or they say yes to things they resent.\n\nTaking it well also protects the request itself. A no that is accepted cleanly leaves the door open for the next one; a no that is fought turns a favour into a conflict about the relationship.\n\nTypical phrases: \"No problem, thanks for saying.\", \"That's fine — I'll sort it.\", \"Fair enough. Don't worry about it.\"\n\nThree parts:\n\n1. Say it is fine, and mean it. One sentence. Not four.\n\n2. Do not ask for the reason. If they wanted to give one they would have.\n\n3. Do not renegotiate. If they said no to Saturday, \"what about Sunday?\" is a second ask, and it should wait for another day.\n\nMindset: they answered the question you asked. That is what asking is for.",
       inputs: [
         { q: "A colleague says they cannot take Thursday.", a: "\"No problem at all. Thanks for coming back to me.\"", bundle: 'free' },
@@ -3243,8 +3243,8 @@ const collections = {
   sayingno: [
     {
       name: "Say No Simply",
-      guideFront: "Say no simply when...",
-      guideBack: "A possible response.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "Decline plainly, in one short sentence, with nothing attached. \"No, I can't do that.\" \"Sorry, I can't.\"\n\nIt works because a short no is unambiguous, and ambiguity is what makes people ask again. A long refusal with explanations and hedges reads as a maybe, which means the request comes back — and the second refusal is harder than the first would have been.\n\nThe discomfort is real and brief. The alternative is a conversation that goes on for ten minutes and ends in the same place, or worse, in a yes you did not mean.\n\nTypical phrases: \"No, sorry.\", \"I can't, I'm afraid.\", \"That's not going to work for me.\", \"No — but thanks for asking.\"\n\nFour ways to keep it simple:\n\n1. The plain no — shortest and clearest. \"No, I can't.\"\n\n2. No plus thanks — warm without softening the answer. \"No, but thank you for thinking of me.\"\n\n3. No without an apology — for when you have nothing to be sorry about. \"That doesn't work for me.\"\n\n4. No and stop talking — the hardest part. Say it, then leave the silence alone.\n\nMindset: the sentence after the no is where most people talk themselves back into a yes. Say it and stop.",
       inputs: [
         { q: "A classmate asks to copy your homework.", a: "\"No, sorry.\"", bundle: 'free' },
@@ -3259,8 +3259,8 @@ const collections = {
     },
     {
       name: "Soften the Delivery",
-      guideFront: "Soften the delivery when...",
-      guideBack: "A possible response.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "Keep the refusal exactly as firm, and warm up how it is said. \"Unfortunately I can't.\" \"I'm really sorry, but no.\"\n\nIt works because most people hear tone before content. A softening word costs you nothing and makes the same answer land as consideration rather than rejection, which matters when you will see this person again tomorrow.\n\nThe line to hold: soften the **delivery**, never the **answer**. \"I'm not sure I can\" and \"probably not\" sound gentle and are actually unclear, which invites another ask. \"I'm really sorry, but I can't\" is gentle and completely clear.\n\nTypical phrases: \"Unfortunately…\", \"I'm really sorry, but…\", \"I wish I could, but…\", \"I'd love to, but I can't.\"\n\nFour ways to soften:\n\n1. A softening word in front — the standard. \"Unfortunately, I can't.\"\n\n2. Say you wish you could — only when true. \"I'd genuinely like to, and I can't.\"\n\n3. Thank them for asking — turns a refusal into a recognised offer. \"Thanks for thinking of me. I can't, though.\"\n\n4. Warm tone, unchanged words — often the whole thing. The same sentence, said kindly.\n\nMindset: soft in how, hard in what. A soft answer is not the same as a softened answer.",
       inputs: [
         { q: "A friend invites you to something you cannot face.", a: "\"I'd love to, but I can't this time.\"", bundle: 'free' },
@@ -3275,8 +3275,8 @@ const collections = {
     },
     {
       name: "Give a Short Reason",
-      guideFront: "Give a short reason when...",
-      guideBack: "A possible response.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "Add one brief reason so the refusal is about your circumstances rather than about them. \"I can't — I've got something on Friday.\"\n\nIt works because a bare no can be read as a judgement of the request or the person, and a reason removes that reading instantly. It is also simply courteous with people you are close to, who would reasonably expect to know.\n\nOne reason, briefly. A detailed justification invites problem-solving — they find you a different time, they offer to wait — and then you are negotiating about your reason instead of holding your answer.\n\nTypical phrases: \"I can't — I've got…\", \"Not this week, I'm…\", \"That's the day I…\", \"I've already committed to…\"\n\nFour kinds of short reason:\n\n1. A prior commitment — the simplest and least arguable. \"I've already said yes to something else.\"\n\n2. Capacity — honest and general. \"I've got too much on to do it properly.\"\n\n3. A preference, owned as one — surprisingly effective. \"I'd just rather not, if I'm honest.\"\n\n4. No reason, said openly — when the reason is private. \"I'd rather not go into it. The answer's no.\"\n\nMindset: one sentence. If the reason takes explaining, you have handed them something to solve.",
       inputs: [
         { q: "A friend asks you to help move house on Saturday.", a: "\"I can't — I've already got something on Saturday.\"", bundle: 'free' },
@@ -3291,8 +3291,8 @@ const collections = {
     },
     {
       name: "Show You Understand First",
-      guideFront: "Show you understand first when...",
-      guideBack: "A possible response.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "Say that you have understood what they are asking and why it matters, before you decline. \"I can see this deadline is a real problem for you.\"\n\nIt works because the sting in being refused is usually not the refusal — it is the sense that the request was not taken seriously. One sentence of recognition removes that, and it is what makes someone feel heard even when they do not get what they asked for.\n\nKeep it short and true. A long sympathetic preamble is worse than none, because the other person can hear a no coming and has to sit through the wind-up.\n\nTypical phrases: \"I can see why you'd ask.\", \"I know this puts you in a difficult spot.\", \"That sounds like a real headache.\", \"I understand it's important.\"\n\nFour ways to show it:\n\n1. Name their situation — plainly. \"I know you're stuck for someone.\"\n\n2. Say the request is reasonable — when it is. \"It's a completely fair thing to ask.\"\n\n3. Name what it costs them — the strongest version. \"This means you'll have to find someone else at short notice, and I know that's a pain.\"\n\n4. Acknowledge and move straight on — no pause for negotiation. \"I can see it's urgent. I still can't.\"\n\nMindset: acknowledge in one sentence, then say no in the next. Anything longer and they hear the wind-up rather than the recognition.",
       inputs: [
         { q: "A colleague needs someone to cover a shift urgently.", a: "\"I know you're stuck for someone. I can't do it, though.\"", bundle: 'free' },
@@ -3307,8 +3307,8 @@ const collections = {
     },
     {
       name: "Offer What You Can Do",
-      guideFront: "Offer what you can do when...",
-      guideBack: "A possible response.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "Say what you are able to do instead. \"I can't take the whole thing. I could look at the first section on Thursday.\"\n\nIt works because it keeps you helpful while your answer stays no. The other person leaves with something real rather than only a refusal, and the relationship takes none of the damage a bare no sometimes causes.\n\nTwo conditions. The offer must be something you will **actually do**, or it is worse than no offer at all. And it must come **after** the no, not instead of it — an alternative offered first sounds like an opening position, and they will negotiate towards the original request.\n\nTypical phrases: \"I can't do X. I could do Y.\", \"Not that, but I could…\", \"What I can offer is…\", \"I'm not able to, but here's what might help.\"\n\nFour kinds of alternative:\n\n1. A smaller piece — the most common. \"Not the whole day. I could do the morning.\"\n\n2. A different form of help — not what was asked, but useful. \"I can't lend you money. I'll help you go through the bills.\"\n\n3. A different time — when the objection is timing rather than the thing. \"Not this month. Ask me again in the new year.\"\n\n4. Point them somewhere better — when someone else is the answer. \"I'm the wrong person for this. Priya's done it before.\"\n\nMindset: only offer what you will do. And offer it once — an alternative repeated becomes a negotiation.",
       inputs: [
         { q: "You cannot help with a whole task.", a: "\"I can't take the whole thing. I could look at the first part on Thursday.\"", bundle: 'free' },
@@ -3323,8 +3323,8 @@ const collections = {
     },
     {
       name: "Ask for Time First",
-      guideFront: "Ask for time first when...",
-      guideBack: "A possible response.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "Do not answer at all yet. \"Let me check and come back to you this afternoon.\"\n\nIt works because most regretted yeses are said on the spot, under mild social pressure, before the person has thought about what they are agreeing to. Removing the pressure of the moment is often all it takes to produce an honest answer instead of a polite one.\n\nIt also makes the eventual no easier for both of you. An answer that arrives after consideration is much harder to argue with than one given instantly, because it has visibly been thought about.\n\nUse it honestly. Buying time in order to avoid saying no is just a slower no, and it costs the other person the chance to ask someone else.\n\nTypical phrases: \"Let me check and come back to you.\", \"Can I think about it and tell you tomorrow?\", \"I don't want to answer that off the top of my head.\", \"Give me until Friday.\"\n\nFour ways to ask for time:\n\n1. Name when you will answer — essential, or it becomes avoidance. \"I'll tell you by Thursday.\"\n\n2. Say why you are not answering now — honest and disarming. \"I say yes to things too quickly. Let me think about this one.\"\n\n3. Ask what their deadline is — practical and considerate. \"When do you need to know by?\"\n\n4. Signal which way you are leaning — kind, when you already know. \"Probably not, but let me look properly before I say.\"\n\nMindset: give a time and keep it. Delay without a date is avoidance, and the other person pays for it.",
       inputs: [
         { q: "You are asked something on the spot and feel pressure to say yes.", a: "\"Let me check and come back to you this afternoon.\"", bundle: 'free' },
@@ -5297,8 +5297,8 @@ const collections = {
   setupquestion: [
     {
       name: "Opinion Question",
-      guideFront: "You want to talk about something. Ask them first.",
-      guideBack: "One way to ask it — and the answer you give once they have gone.",
+      guideFront: "Use this strategy when...",
+      guideBack: "The question, then your own",
       description: "Ask what they think about something, listen, then say what you think. The question comes first, which is what makes it feel like interest rather than an announcement — and your own answer comes second, which is what stops it being an interview. Example: \"What did you make of that?\" and then, when they have said their bit, \"I liked it more than I expected to.\"\n\nThree strengths of question, from easiest to answer to most inviting:\n1. The closed one with an opening — \"Did you like it?\" gets a yes, and yes is a start.\n2. The open one — \"What did you make of it?\" gets a sentence.\n3. The one that offers a side — \"Was it just me or did it drag?\" gives them something to agree or disagree with.\n\nAsk about something present. An opinion question about a thing you can both see needs no setting up, and neither of you has to know anything.\n\nMindset: you asked because you want to talk about it too. Say your own answer afterwards — otherwise you have run an interview and learned nothing about each other.",
       inputs: [
         { q: "A film has just finished and the room is quiet.", a: "\"What did you make of that?\" — then your own: \"I liked it more than I expected to.\"", bundle: 'free' },
@@ -5313,8 +5313,8 @@ const collections = {
     },
     {
       name: "Purpose Question",
-      guideFront: "You want to talk about something. Ask them first.",
-      guideBack: "One way to ask it — and the answer you give once they have gone.",
+      guideFront: "Use this strategy when...",
+      guideBack: "The question, then your own",
       description: "Ask why they are here or what they are after, then say why you came. It is the easiest of the five, because everybody in a room has a reason to be in it, and nobody has to be interesting to answer. Example: \"What brought you along tonight?\" and then, \"A friend talked me into it, honestly.\"\n\nThree ways to ask it:\n1. The plain one — \"What brings you here?\"\n2. The one about how they arrived at it — \"How did you end up doing this?\"\n3. The one that assumes nothing — \"Is this your first one of these?\"\n\nIt works everywhere people have gathered on purpose: a class, a club, a course, an event, a shared table.\n\nMindset: nobody has to invent anything to answer this one. That is what makes it the safest opener in the pack — and your own reason, said afterwards, is what makes it a conversation.",
       inputs: [
         { q: "First evening of a course where nobody knows anybody.", a: "\"What made you sign up for this?\" — then your own: \"I finally ran out of excuses, basically.\"", bundle: 'free' },
@@ -5329,8 +5329,8 @@ const collections = {
     },
     {
       name: "Status Question",
-      guideFront: "You want to talk about something. Ask them first.",
-      guideBack: "One way to ask it — and the answer you give once they have gone.",
+      guideFront: "Use this strategy when...",
+      guideBack: "The question, then your own",
       description: "Ask how they are right now — properly, not as a greeting — and then answer it yourself. Asked first, it reads as noticing them; answered afterwards, it stops being a check-up. Example: \"How are you holding up today?\" and then, \"I'm running on about four hours' sleep, so not brilliantly.\"\n\nThree ways to ask it so it gets a real answer:\n1. Attach it to the moment — \"Long week for you too?\"\n2. Ask about a specific thing — \"How are you feeling about this afternoon?\"\n3. Mark it as the real question — \"How are you, actually?\"\n\nYour own answer is what makes it safe to have been honest. If they say they are tired and you say nothing back, they have given you something and got nothing.\n\nMindset: the ritual \"how are you\" expects \"fine\". This one expects an answer, which means you have to be ready to give one too.",
       inputs: [
         { q: "You meet a friend of a friend at the start of a long day.", a: "\"How are you holding up today?\" — then your own: \"I'm running on very little sleep, honestly.\"", bundle: 'free' },
@@ -5345,8 +5345,8 @@ const collections = {
     },
     {
       name: "Action Question",
-      guideFront: "You want to talk about something. Ask them first.",
-      guideBack: "One way to ask it — and the answer you give once they have gone.",
+      guideFront: "Use this strategy when...",
+      guideBack: "The question, then your own",
       description: "Ask what they are doing or working on, then say what you are in the middle of. It is the question that gets the most concrete answers, because people can always say what they are doing even when they cannot say what is new. Example: \"What are you working on at the moment?\" and then, \"I'm trying to learn the guitar, badly.\"\n\nThree ways to ask it:\n1. Right now — \"What are you working on?\"\n2. Lately — \"Have you picked anything up recently?\"\n3. Narrow it — \"Are you reading anything at the moment?\"\n\nNarrowing helps more than it looks. \"What's new?\" is a blank page; \"are you reading anything?\" is a question anyone can answer in four words.\n\nMindset: ask for a concrete thing, not an interesting one. And have your own concrete thing ready — this is the question where \"not much\" from you kills what you just started.",
       inputs: [
         { q: "Catching up with someone you have not seen in a while.", a: "\"What have you been up to lately?\" — then your own: \"I've started running in the mornings, which is new for me.\"", bundle: 'free' },
@@ -5361,8 +5361,8 @@ const collections = {
     },
     {
       name: "Background Question",
-      guideFront: "You want to talk about something. Ask them first.",
-      guideBack: "One way to ask it — and the answer you give once they have gone.",
+      guideFront: "Use this strategy when...",
+      guideBack: "The question, then your own",
       description: "Ask where they have come from or what happened before this, then say the same about yourself. It is the question that most reliably produces a small story rather than a word, because everybody came from somewhere. Example: \"Where have you come from?\" and then, \"I came straight from work and I'm starving.\"\n\nThree ways to ask it:\n1. The journey — \"Did you come far?\"\n2. The immediate before — \"Where have you come from?\"\n3. The connection — \"How do you know everyone here?\"\n\nThe third one is the most useful at weddings, dinners and parties, where the honest answer is always a story and it is always about somebody in the room.\n\nMindset: this is the question with the highest chance of an actual anecdote. Ask it, listen for the detail, and then give one of your own.",
       inputs: [
         { q: "You arrive at an evening event a little flustered.", a: "\"Where have you come from?\" — then your own: \"Straight from the office, still catching my breath.\"", bundle: 'free' },
@@ -8189,7 +8189,7 @@ const collections = {
   changingtopics: [
     {
       name: "Linking",
-      guideFront: "Use this strategy when...",
+      guideFront: "Bridge from their own words when...",
       guideBack: "One way it could sound",
       description: "Catch a word or detail from what they just said and use it as a bridge to a new topic. It feels smooth because the switch grows out of their own words. Example: they mention a work trip to Rome — \"Rome! That reminds me, have you travelled much this year?\"\n\nThree kinds of word worth catching:\n\n1. A place — \"Rome! Have you travelled much this year?\"\n\n2. A person — \"Your sister's a nurse? My cousin just started training.\"\n\n3. A feeling or a time — \"You said exhausting — has the whole year been like that?\"\n\nCatch it while it is fresh. A word from two minutes ago works; a word from ten minutes ago sounds like you were waiting for an opening.\n\nMindset: this is the smoothest of the six because the switch grows out of their own words. Done well, nobody notices a change happened at all.",
       inputs: [
@@ -8221,7 +8221,7 @@ const collections = {
     },
     {
       name: "Finding Common Ground",
-      guideFront: "Use this strategy when...",
+      guideFront: "Relate first, then turn when...",
       guideBack: "One way it could sound",
       description: "Use a shared experience as the stepping stone — \"that's like when I…\" — so your relating to them opens the new direction. Example: they mention hiking — \"That's like the time I got completely lost on a trail. Do you get out much?\"\n\nThree ways to relate before you turn:\n\n1. A matching story — \"That's like the time I got completely lost on a trail.\"\n\n2. A matching feeling — \"I know that exact dread. I had it before my driving test.\"\n\n3. A matching habit — \"Same, I do that every Sunday without fail.\"\n\nThe relating has to be genuine. A manufactured \"oh, me too\" is transparent, and it makes the topic change look like an escape.\n\nMindset: this one warms the conversation before it turns it. You are not just switching subject, you are telling them you recognised something.",
       inputs: [
@@ -8237,7 +8237,7 @@ const collections = {
     },
     {
       name: "Random or Light Switch",
-      guideFront: "Use this strategy when...",
+      guideFront: "Announce the change when...",
       guideBack: "One way it could sound",
       description: "Change the subject openly with a bit of humour or spontaneity — no bridge needed. You flag the switch and keep it playful, so it feels light instead of jarring. Example: \"Okay, before we solve world peace — seen anything good on TV lately?\"\n\nThree ways to flag the switch:\n\n1. Name it and joke about it — \"Okay, before we solve world peace — seen anything good lately?\"\n\n2. Admit the swerve — \"Completely unrelated, but I have to ask —\"\n\n3. Blame yourself — \"My brain has jumped somewhere else entirely. Sorry. Have you—\"\n\nFlagging is what makes it work. An unflagged jump is jarring; a flagged one is just honest, and usually gets a laugh.\n\nMindset: you do not always need a bridge. Sometimes announcing the switch is warmer than pretending there was a smooth link.",
       inputs: [
@@ -8269,7 +8269,7 @@ const collections = {
     },
     {
       name: "Respectful Exit",
-      guideFront: "Use this strategy when...",
+      guideFront: "Close the topic warmly when...",
       guideBack: "One way it could sound",
       description: "When a topic's been covered or keeps repeating, close it politely and open something new. You signal you valued it, then move on cleanly. Example: \"I think we've done that one justice! So — what else is going on with you?\"\n\nThree ways to close it warmly:\n\n1. Give it credit — \"I think we've done that one justice!\"\n\n2. Name the loop kindly — \"We could go round on this all night, couldn't we?\"\n\n3. Draw a friendly line — \"Let's park that one. What else is going on with you?\"\n\nWarmth is what makes it respectful. The same words said flatly are a dismissal; said with a smile they are a shared decision, and most people are relieved somebody said it first.\n\nSay it once and clearly. A hint on a topic this sticky gets absorbed and the subject carries straight on, and a second hint starts to feel as though something is wrong between you. Being plain is the kinder version.\n\nMindset: letting a topic end is part of a good conversation. Your job is flow, not endurance.",
       inputs: [
@@ -8351,7 +8351,7 @@ const collections = {
     },
     {
       name: "Say It Where It Counts",
-      guideFront: "Use this strategy when...",
+      guideFront: "Choose public or private when...",
       guideBack: "One way it could sound",
       description: "Decide who else hears it. The same sentence weighs differently said quietly at a desk and said in a room with eleven other people.\n\nIt works because public praise does something private praise cannot: it changes what everyone else thinks, not just what they think. Saying \"that was Sara's idea\" in a meeting is worth more to Sara than saying it to Sara.\n\nBut it cuts both ways. Public praise puts someone on the spot, and for a shy person or a private one it can be a cost rather than a gift. Praise about appearance almost always belongs in private. So does anything they might not want the room to know they needed.\n\nTypical phrases: \"Before we move on — that was Sara's idea.\", \"Can I say this in front of everyone or would you rather I didn't?\", \"I wanted to say this without an audience.\"\n\nThree calls to make:\n\n1. Public, for work and credit. Say the name, say what they did, and move on before it becomes a speech.\n\n2. Private, for anything personal — appearance, character, anything they might rather not have discussed.\n\n3. In writing, when it should outlast the moment. A message can be read again on a bad day; a remark cannot.\n\nMindset: ask who the compliment is for. If it is for them, it goes where they will be comfortable, not where you will be seen giving it.",
       inputs: [
@@ -9605,8 +9605,8 @@ const collectionsModeData = {
   reactingtounexpectedstatements: [
     {
       name: "Buying the Moment",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Saying you need a second, admitting you do not know what to say, and coming back to it later — the three that openly delay.\n\nThey differ only in how much time they buy. A second, for the moment of surprise. An honest admission, when a second will not be enough. And a return tomorrow, when the thing genuinely needs thinking about.\n\nAll three work for the same reason: the delay is visible. A silent pause is read as disapproval or evasion; a named one is read as taking it seriously.\n\nMindset: say that you are pausing. The pause itself is not the problem — the silence around it is.",
       inputs: [
         { q: "Someone says something that stops you completely.", a: "\"Give me a second with that.\" [Say You Need a Second]", bundle: 'pro' },
@@ -9620,8 +9620,8 @@ const collectionsModeData = {
     },
     {
       name: "Saying Something Now",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Asking what prompted it and answering the part you can — the two that let you say something real without having decided anything.\n\nUse the question when you want information rather than to respond; it moves the conversation forward and buys time at once. Use the partial answer when they are waiting for something from you and you do have a piece of it.\n\nBoth are honest ways of staying in a conversation you are not ready for, which is the whole problem this pack exists for.\n\nMindset: you do not need a view to say something true.",
       inputs: [
         { q: "A friend announces a large decision out of nowhere.", a: "\"What's brought this on? I want the whole story.\" [Ask What Prompted It]", bundle: 'pro' },
@@ -9635,8 +9635,8 @@ const collectionsModeData = {
     },
     {
       name: "All Five",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The full set. All of them do the same job — keeping you in the conversation honestly while you work out what you think — and the choice is mostly about how much time you need and whether they are waiting for something.\n\nA rough guide: a second, if that is all it takes. An admission, if it is bigger than that. A question, if you want to know more before deciding anything. A partial answer, if they are waiting and you have a piece. And tomorrow, if it genuinely needs thinking about.\n\nWhat none of them is: pretending to have a view. That is the thing this pack exists to replace.\n\nMindset: honest and incomplete, every time, over complete and invented.",
       inputs: [
         { q: "Someone says something that lands like a brick.", a: "\"Give me a second with that.\" [Say You Need a Second]", bundle: 'pro' },
@@ -10259,8 +10259,8 @@ const collectionsModeData = {
   apologizing1: [
     {
       name: "Small or Real",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Choosing the size and saying sorry simply — the two that cover almost every apology you will ever make.\n\nThe test that decides between them is whether it landed on them or only on you. A trodden foot, a forgotten attachment, a mistimed joke nobody minded: short. Something that changed someone's day, or that they have mentioned, or that has happened before: real, and that is what the other pack is for.\n\nThe failure runs both ways. A full apology for a trivial thing makes the other person manage your discomfort. A brief one for something that genuinely hurt reads as wanting it dealt with rather than repaired.\n\nMindset: match the depth to the harm, not to your own embarrassment.",
       inputs: [
         { q: "You bumped into someone in the corridor.", a: "\"Sorry about that.\" [Say Sorry Simply]", bundle: 'pro' },
@@ -10274,8 +10274,8 @@ const collectionsModeData = {
     },
     {
       name: "Sorry and Then What",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Apologising for what you did and saying what you will do differently — the two that make an apology worth something rather than pleasant.\n\nThe specific apology is the proof that you understood it. The plan is the only part that costs you anything going forward, and to anyone who has heard you apologise before, it is the only part with information in it.\n\nTogether they answer the two questions the other person actually has: do you know what you did, and is it going to happen again?\n\nMindset: name it, then change it. Either alone is half an apology.",
       inputs: [
         { q: "You forgot something you had promised.", a: "\"I'm sorry I forgot. You told me and I didn't write it down.\" [Apologise for What You Did]", bundle: 'pro' },
@@ -10289,8 +10289,8 @@ const collectionsModeData = {
     },
     {
       name: "All Four",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The full set for an everyday apology. Most need one or two of these; a slightly bigger one uses all four in order.\n\nA rough shape: decide the size, apologise plainly, name what you actually did, and say what changes. That is a complete apology for anything that did not genuinely hurt someone — and for the things that did, the other pack takes over.\n\nThe commonest damage is stopping after the sorry. It is the exposed part, and the plan is what makes the sorry worth anything at all.\n\nMindset: sorry is where it starts, not where it finishes.",
       inputs: [
         { q: "You forgot something and it caused a small problem.", a: "\"Sorry — I completely forgot.\" [Say Sorry Simply]", bundle: 'pro' },
@@ -10399,8 +10399,8 @@ const collectionsModeData = {
   persuasionandinfluence1: [
     {
       name: "Their Side or Yours",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Showing the benefit and telling what happened to you — the two strategies that come from opposite directions.\n\nThe benefit is about them and their week. What happened to you is about you and yours, and it asks them to concede nothing at all, which is why it slips past resistance that an argument would meet.\n\nReach for the benefit when they have no stake in the question. Reach for what happened when they have already heard the argument and are unmoved.\n\nMindset: one at a time. Two in a row starts to sound like a pitch.",
       inputs: [
         { q: "A colleague has no obvious stake in the change you are proposing.", a: "\"You'd stop getting the Friday emails asking where it is.\" [Show the Benefit to Them]", bundle: 'pro' },
@@ -10414,8 +10414,8 @@ const collectionsModeData = {
     },
     {
       name: "Two Sides of the Same Argument",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Giving a reason and naming the cost of doing nothing — the pair that makes a fair comparison possible.\n\nA reason says why the new thing is worth doing. The cost of doing nothing says what the old thing is already taking. Most proposals are argued entirely with the first, which is why they lose to an imagined free alternative.\n\nTogether they turn the question from \"is this worth it\" into \"is this worth more than what we are already paying\". That is a much easier question to win, and a more honest one.\n\nMindset: nothing is not free. If you only argue the upside, you are comparing against a fantasy.",
       inputs: [
         { q: "Someone asks what makes you say the timing is risky.", a: "\"If it slips to Friday, nobody's around to fix it.\" [Give a Reason]", bundle: 'pro' },
@@ -10429,8 +10429,8 @@ const collectionsModeData = {
     },
     {
       name: "All Four",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The full set. Each of these puts something on the table, and the choice depends on why they have not agreed yet.\n\nA rough guide: if they have not engaged at all, show the benefit. If they are weighing it, give a reason. If they think doing nothing is free, name what it costs. And if they have heard the argument and are unmoved, tell them what happened to you.\n\nThe failure they all share is volume. Four cases made in a row is a presentation, and people brace against presentations.\n\nMindset: one, then listen. Their reaction tells you which to reach for next.",
       inputs: [
         { q: "You want to raise a change with someone who has not thought about it.", a: "\"You'd get the whole of Friday back.\" [Show the Benefit to Them]", bundle: 'pro' },
@@ -10587,8 +10587,8 @@ const collectionsModeData = {
   respondingtopassiveaggression: [
     {
       name: "Staying on the Surface",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Answering it straight, holding your point and letting it go — the three strategies that decline the invitation without naming anything.\n\nThey share a logic: a passive-aggressive remark needs you to react to what was not said. All three refuse that, and all three cost almost nothing — no confrontation, nothing to escalate, nothing the other person can object to.\n\nChoose between them by what the moment needs. If there is something to answer, answer it straight. If there is a decision waiting, hold your point. If there is neither, let it go.\n\nMindset: not reacting to the subtext is a response, and often the strongest one available.",
       inputs: [
         { q: "A colleague says, \"Nice job finishing that… finally.\"", a: "\"Thanks. It took longer than I expected.\" [Answer It Straight]", bundle: 'pro' },
@@ -10602,8 +10602,8 @@ const collectionsModeData = {
     },
     {
       name: "Bringing It Into the Open",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Asking what they mean, naming the feeling and saying how it lands — the three strategies that go under the surface.\n\nUse them when the pattern matters: it keeps happening, it is affecting the work, or the relationship is one where things ought to be sayable directly.\n\nThey differ in who is the subject. Asking what they mean puts it on their words. Naming the feeling puts it on their state. Saying how it lands puts it on your experience — and that last one is the only one they cannot argue with, because you are the sole authority on it.\n\nMindset: go under the surface when the remark is a symptom of something worth solving.",
       inputs: [
         { q: "A colleague says, \"Well, some of us had time to prepare.\"", a: "\"What do you mean by that?\" [Ask What They Mean]", bundle: 'pro' },
@@ -10617,8 +10617,8 @@ const collectionsModeData = {
     },
     {
       name: "All Six",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The full set. Almost any remark could take several of these, and the choice depends less on what was said than on what you want to happen next.\n\nA rough guide: if you want it to stop mattering, answer it straight or let it go. If a decision is waiting, hold your point. If you want the real conversation, ask what they mean or name the feeling. If it is a pattern you want changed, say how it lands.\n\nThe thing that decides most cases: is this a one-off from someone having a bad day, or a habit that is shaping how you work together?\n\nMindset: choose by what you want next, not by how annoying the remark was.",
       inputs: [
         { q: "A one-off dig from someone clearly having a rough day.", a: "\"Mm. So, Thursday.\" [Let It Go]", bundle: 'pro' },
@@ -10634,8 +10634,8 @@ const collectionsModeData = {
   makingrequests: [
     {
       name: "Making the Ask",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Ask Instead of Hinting, Make It Specific, Give One Short Reason, Leave Room to Refuse and Ask for Help — everything that happens before the other person answers.\n\nThey stack rather than compete, so choosing between them means noticing which part is missing. If you have not said it at all, ask instead of hinting. If you have said it but they cannot picture it, make it specific. If they cannot tell how much it matters, give one short reason. If they cannot comfortably refuse, leave room. And if what you need is not a favour but a hand, ask for help.\n\nThe whole request is usually two sentences. It is the parts left out that cause the trouble, not the length.\n\nMindset: make it answerable, and make it refusable. Those are the two jobs.",
       inputs: [
         { q: "You have mentioned the bins three times this week.", a: "\"Could you take the bins out tonight?\" [Ask Instead of Hinting]", bundle: 'pro' },
@@ -10649,8 +10649,8 @@ const collectionsModeData = {
     },
     {
       name: "After You Have Asked",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Follow Up Once, Take a No Well and Leave Room to Refuse — the part almost nobody practises, and the part that decides whether asking stays easy between you.\n\nThe rule is short. Silence gets one follow-up, then counts as a no. A no gets one sentence of acceptance and no renegotiation. And an exit offered before the answer is what makes both of those calm rather than tense.\n\nWhat you are protecting here is the next request, not this one.\n\nMindset: their answer is theirs. Your job ended when you asked.",
       inputs: [
         { q: "You asked three days ago and heard nothing.", a: "\"Bringing this back up — did you get a chance to think about it?\" [Follow Up Once]", bundle: 'pro' },
@@ -10664,8 +10664,8 @@ const collectionsModeData = {
     },
     {
       name: "All Seven",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Every strategy in the pack, mixed, in the order real situations arrive rather than the order they were taught.\n\nThe seven fall into three groups. Four build the request: say it, size it, explain it once, and leave the exit open. One is the harder version of asking, for when you need help rather than a favour. Two happen after — the single follow-up, and taking the answer.\n\nIf you are unsure which you need, ask what is missing. Almost every failed request is missing one of the four, or skipping one of the two at the end.\n\nMindset: a good request is answerable and refusable. Everything here serves one of those two.",
       inputs: [
         { q: "You are about to ask \"are you busy Saturday?\"", a: "\"Could you give me an hour on Saturday? It's one wardrobe.\" [Ask Instead of Hinting]", bundle: 'pro' },
@@ -10681,8 +10681,8 @@ const collectionsModeData = {
   sayingno: [
     {
       name: "The Short Versions",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Saying no simply, softening the delivery and giving a short reason — the three that handle almost every everyday refusal in one sentence.\n\nThey differ in what they add. Nothing, warmth, or a reason. The plain no is clearest and hardest; softening costs nothing and helps with people you will see tomorrow; a short reason removes the reading that you are judging the request.\n\nThe one thing all three share: clarity. \"I'm not sure I can\" belongs to none of them, because it is not an answer.\n\nMindset: whatever you add, the answer stays unmistakable.",
       inputs: [
         { q: "A classmate asks to copy your homework.", a: "\"No, sorry.\" [Say No Simply]", bundle: 'pro' },
@@ -10696,8 +10696,8 @@ const collectionsModeData = {
     },
     {
       name: "The Fuller No",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Showing you understand first and offering what you can do — the two that turn a refusal into a proper answer.\n\nUse them when the request mattered, when the person is in a genuine bind, or when the relationship needs the no to land well. They are what makes someone feel heard even though they did not get what they asked for.\n\nThe order is not optional. Understanding comes before the no, the alternative comes after it. Reverse either and the whole thing reads as a negotiation rather than an answer.\n\nMindset: recognition first, refusal second, alternative last.",
       inputs: [
         { q: "A colleague is stuck for someone to cover a shift.", a: "\"I know you're stuck. I can't do it, though.\" [Show You Understand First]", bundle: 'pro' },
@@ -10711,8 +10711,8 @@ const collectionsModeData = {
     },
     {
       name: "All Six",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The full set. Most refusals need one or two of these; a difficult one needs four in order.\n\nA rough guide: if it is small, say no simply. If you will see them tomorrow, soften it. If a bare no would read as a judgement, give a reason. If it mattered to them, show you understand first. If you can do something, offer it after the no. And if you are being asked on the spot, ask for time before any of it.\n\nThe failure that runs through all of them is the unclear no — the hedge, the maybe, the vague \"I'll see\". It feels kinder in the moment and costs everyone more.\n\nMindset: whichever you choose, the person should leave knowing the answer.",
       inputs: [
         { q: "You are asked on the spot and can feel yourself about to agree.", a: "\"Let me check and come back to you this afternoon.\" [Ask for Time First]", bundle: 'pro' },
@@ -11468,8 +11468,8 @@ const collectionsModeData = {
   setupquestion: [
     {
       name: "Ask About Now",
-      guideFront: "Which question fits this moment?",
-      guideBack: "A possible question, with the type in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "A choice between the two questions that work off what is already in front of you: Opinion (there is something present to have a view on) and Status (the mood is the most honest thing available). Opinion fits when you can both see the thing; Status fits when the state of the room, or of them, is what you would actually notice. Example: in front of a painting an Opinion question lands; at the end of a visibly rough day a Status one does.\n\nThe two options:\n1. Opinion Question — there is something present to react to. \"What do you make of this?\"\n2. Status Question — the mood is worth asking about. \"How are you holding up today?\"\n\nLook before you choose. If there is a thing you are both looking at, ask about the thing; if the room has a feeling, ask about that.\n\nMindset: both of these read the moment rather than importing a subject. That is what stops them sounding rehearsed.",
       inputs: [
         { q: "You are both looking at the same painting in a gallery.", a: "\"What do you make of this one?\" (opinion)", bundle: 'pro' },
@@ -11482,8 +11482,8 @@ const collectionsModeData = {
     },
     {
       name: "Ask About Them",
-      guideFront: "Which question fits this moment?",
-      guideBack: "A possible question, with the type in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "A choice between the three questions that ask them for something of their own: Purpose (why they are here), Action (what they are doing) and Background (where they came from). All three work when there is nothing present to react to — pick whichever the situation makes obvious. Example: at a new class, Purpose is the natural one; at a wedding, Background is.\n\nThe three options:\n1. Purpose Question — you are both somewhere on purpose. \"What brought you along?\"\n2. Action Question — you want something concrete. \"What are you working on at the moment?\"\n3. Background Question — a small story is likely. \"How do you know everyone here?\"\n\nChoose by the situation rather than by preference: a course suggests Purpose, a catch-up suggests Action, a party full of strangers suggests Background.\n\nMindset: you always have all three. That is the point of the group — you are never actually stuck for a question.",
       inputs: [
         { q: "First evening of a course where nobody knows anybody.", a: "\"What made you sign up for this?\" (purpose)", bundle: 'pro' },
@@ -11496,8 +11496,8 @@ const collectionsModeData = {
     },
     {
       name: "Choosing Your Question",
-      guideFront: "Which question fits this moment?",
-      guideBack: "A possible question, with the type in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The full choice between all five types. Most moments could take several, but one usually fits without effort: Opinion when there is something to react to, Purpose when you are both new somewhere, Status when the mood is the obvious thing, Action when you want a concrete thread, and Background when a small story is likely. Example: at a quiet party near the food, \"have you tried these?\" costs less than \"why did you come?\".\n\nThe five, with the cue for each:\n1. Opinion — something is in front of you both. \"What do you make of this?\"\n2. Purpose — you are both here on purpose. \"What brought you along?\"\n3. Status — the mood is worth asking about. \"How are you holding up?\"\n4. Action — you want a concrete thread. \"What are you working on?\"\n5. Background — a small story is likely. \"Where have you come from?\"\n\nMindset: there is no wrong one, only a more natural one. And whichever you pick, the second half is the same — you answer it too.",
       inputs: [
         { q: "You are both looking at the same painting in a gallery.", a: "\"What do you make of this one?\" (opinion)", bundle: 'pro' },
