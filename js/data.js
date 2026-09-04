@@ -3616,88 +3616,6 @@ const collections = {
       ]
     },
   ],
-  masculine1: [
-    {
-      name: "Hear the Pain, Not the Blame",
-      guideFront: "Name the hurt underneath when...",
-      guideBack: "A possible observation",
-      description: "Ignoring the toxic surface of a complaint—blame, sarcasm, or insults—to hear the underlying vulnerability and pain.\nBy focusing on the pain instead of facts or logic, your natural care for her kicks in instead of your defensive instincts.\n\n• \"I hear that you’re feeling alone in this.\"\n• \"It sounds like you’ve had a really heavy day.\"\n• \"Tell me more about how you’re hurting right now.\"\n\nUnderlying Categories:\n1. The Verbal Attack — ignore the words and meet the emotion.\n2. The Emotional Tsunami — recognize that facts cannot stop an ocean wave of intensity.\n\nMindset: See the little girl behind the raging woman to stay grounded in your presence.",
-      inputs: [
-        { q: "She shouts: \"You never think of me, you just work all the time!\"", a: "\"I hear that you’re feeling forgotten, and it hurts me to hear that.\"", bundle: 'free' },
-        { q: "She snaps: \"Why can't you ever do anything right!?\"", a: "\"It sounds like you're feeling really disappointed in me right now.\"", bundle: 'free' },
-        { q: "She says sarcastically: \"I hope you had fun at golf while I slaved away at home.\"", a: "\"I hear how tough your day has been. Tell me more about what was hardest.\"", bundle: 'free' },
-        { q: "She accuses you of something you didn't actually do.", a: "(Ignore the facts) \"I hear how frustrated you are. Tell me more about what feels wrong.\"", bundle: 'free' },
-        { q: "She brings up old mistakes to prove you are \"irresponsible.\"", a: "\"It sounds like you're carrying a lot of pain from what happened in the past.\"", bundle: 'free' },
-        { q: "She is so angry that her words become incoherent or messy.", a: "\"I'm right here. I see you're having a hard time. Tell me what's happening inside.\"", bundle: 'pro' },
-        { q: "She accuses you of being a \"bad father.\"", a: "\"I hear your fear for the children's sake. It's important to me to understand that.\"", bundle: 'pro' },
-        { q: "You feel a strong urge to correct her factual errors in the middle of her outburst.", a: "(Stay silent, hear the pain first—the facts can wait until later).", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Narrowing the Scope",
-      guideFront: "Present a clear proposal when...",
-      guideBack: "A possible proposal",
-      description: "Proactively reducing the decision-making burden for your partner by presenting limited options instead of open questions.\nUncertainty and decisions force her into her Masculine energy; your clarity allows her to relax into her Feminine.\n\n• \"Should we do Mexican or Sushi tonight?\"\n• \"I suggest we leave at nine, does that work for you?\"\n\nVariants:\n1. Presenting options — give 2–3 concrete choices.\n2. Stating a preference — say what you want, but remain open.\n3. Asking for objections — provide a plan and ask if anything conflicts.\n\nMindset: Your clarity is a gift of structure you give her, not a burden you place on her.",
-      inputs: [
-        { q: "It's time to decide on dinner and she seems exhausted.", a: "\"I'm choosing between Italian and Thai tonight. Which do you prefer?\"", bundle: 'free' },
-        { q: "You are planning a summer vacation together.", a: "\"Here are three places I've researched. Do you have any objections to any of them?\"", bundle: 'free' },
-        { q: "She asks: \"What do you want to do this weekend?\"", a: "\"I’d love to go on that hike, but I’m open to your suggestions too.\"", bundle: 'free' },
-        { q: "You are going to a party and she isn't sure what to wear.", a: "\"I love it when you wear that red dress. Wear that!\"", bundle: 'free' },
-        { q: "A logistical detail needs solving, such as picking up a package.", a: "\"I’ll handle the package on my way home so you don't have to think about it.\"", bundle: 'free' },
-        { q: "She seems paralyzed by too many choices or options.", a: "\"Hey, let's do this: we leave now and we'll decide on the way.\"", bundle: 'pro' },
-        { q: "She asks for your opinion on something you don't really care about (e.g., drapes).", a: "(Form an opinion and choose one to give her a point of orientation).", bundle: 'pro' },
-        { q: "She has a difficult task she keeps putting off.", a: "\"Let's sit down and we'll work on this together for 20 minutes right now.\"", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "The Do-Over",
-      guideFront: "Ask to start again when...",
-      guideBack: "A possible request",
-      description: "Having the humility and presence to interrupt an interaction that has gone wrong and ask to \"do it over\" to act more in line with your intention.\nIt is an elegant way to pull the plug on meaningless conflicts that arise from clumsiness or poor phrasing.\n\n• \"Can we have a do-over? I realize I just got defensive.\"\n• \"Let me try that again, that came out completely wrong.\"\n\nVariants:\n1. For your own reactivity — when you notice you've \"fallen into the trap.\"\n2. For misunderstandings — when you see she has misinterpreted your meaning.\n\nMindset: It takes a strong man to admit he was clumsy.",
-      inputs: [
-        { q: "You notice you've just started lecturing her on how to solve her problems.", a: "\"Wait, can we have a do-over? I noticed I'm trying to fix everything instead of just listening.\"", bundle: 'free' },
-        { q: "You accidentally said something sarcastic that hurt her feelings.", a: "\"I'm sorry, that was clumsy. Can we start over? I really want to hear you.\"", bundle: 'free' },
-        { q: "You are stuck in a \"ping-pong\" fight about who does more chores.", a: "\"Stop, can we have a do-over? I don't want to fight about this, I want us to be a team.\"", bundle: 'free' },
-        { q: "You notice your tone of voice has become harsh and accusing.", a: "\"I hear how I'm sounding. Can I try that again with a softer tone?\"", bundle: 'free' },
-        { q: "She misunderstood your joke and became angry.", a: "\"That landed totally wrong. Can we do a do-over? My intention was just to be playful.\"", bundle: 'free' },
-        { q: "You just physically or energetically withdrew from a fight but regret it.", a: "\"I just walked away because I got scared. Can I come back and start over?\"", bundle: 'pro' },
-        { q: "You notice you lied to avoid a conflict.", a: "\"I just said something that wasn't true because I was afraid. Can we redo that conversation?\"", bundle: 'pro' },
-        { q: "The interaction feels stiff and de-polarized.", a: "\"This doesn't feel like us. Let's take a break and then have a do-over where we meet in the heart.\"", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "The \"When You...\" Stem",
-      guideFront: "Share your internal state when...",
-      guideBack: "An inarguable statement",
-      description: "Using a specific template (Observation + Feeling) to share your inner state without accusations, demands, or \"victim mentality.\"\nBy only speaking to your own experience, you create an \"inarguable\" truth that doesn't trigger her defenses as easily.\n\n• \"When you [observation], I feel [emotion] in my body.\"\n• \"I notice I'm thinking [thought] when you do [observation].\"\n\nVariants:\n1. Sharing vulnerability — tell her about your fear or insecurity.\n2. Owning anger — telling her you are angry without attacking her.\n\nMindset: What you want and feel matters—expressing it is an act of love.",
-      inputs: [
-        { q: "She hasn't replied to your texts all day.", a: "\"When I don't hear from you all day, I feel unimportant, and that scares me a bit.\"", bundle: 'free' },
-        { q: "She complains that your house is too small.", a: "\"When you complain about the house, I think you're criticizing my ability to provide, and that hurts.\"", bundle: 'free' },
-        { q: "She interrupted you in front of your friends.", a: "\"When you cut me off while I'm telling a story, I don't feel respected.\"", bundle: 'free' },
-        { q: "You feel angry because she is late again.", a: "\"I feel angry when you arrive late, because it makes me think our time isn't important to you.\"", bundle: 'free' },
-        { q: "You haven't been sexually intimate for a long time.", a: "\"When we don't have physical contact for a while, I feel unattractive and disconnected from you.\"", bundle: 'free' },
-        { q: "You want to say you're angry without starting a war.", a: "\"I'm angry right now because [thing] is important to me. What I need is [need].\"", bundle: 'pro' },
-        { q: "You notice you are starting to shut down emotionally.", a: "\"I notice I'm starting to withdraw because I'm feeling criticized right now.\"", bundle: 'pro' },
-        { q: "She is pressuring you to change your opinion.", a: "\"I hear what you want, but my truth is that I prefer X. It feels important to me to hold onto that.\"", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Refusing the Rejection",
-      guideFront: "Keep the connection open when...",
-      guideBack: "One way it could sound",
-      description: "Steadfastly refusing to accept a unilateral shutdown of connection (e.g., when she says \"Go away!\") by staying present and offering safety.\nShe is often testing your devotion; by not being scared off by her intensity, you build deep trust.\n\n• \"I'm not going anywhere.\"\n• \"I see you're hurting. I'm right here when you're ready.\"\n\nVariants:\n1. During silence — remain physically in the room without pressuring her.\n2. During the \"Go!\" — give her physical space but send a loving confirmation.\n\nMindset: Be more committed to the connection than you are afraid of her intensity.",
-      inputs: [
-        { q: "She screams: \"Get out! Leave me alone!\"", a: "\"I'll give you some space, but I'll be in the next room if you need me. I'm not leaving you.\"", bundle: 'free' },
-        { q: "She gives you the \"cold shoulder\" and refuses to speak.", a: "(Stay nearby, maintain your grounding, and show you aren't afraid of the silence).", bundle: 'free' },
-        { q: "She hangs up the phone in the middle of a conversation.", a: "(Wait a moment, then text: \"I see you're upset. I'm here when you want to finish talking.\")", bundle: 'free' },
-        { q: "She says \"I hate you!\" in the heat of the moment.", a: "\"I hear your pain. I love you and I'm standing right here with you.\"", bundle: 'free' },
-        { q: "She pulls away physically when you try to touch her.", a: "(Back off physically but maintain eye contact and your loving presence).", bundle: 'free' },
-        { q: "She tests you by being deliberately provocative.", a: "(Maintain your calm, \"hold the pose,\" and respond with loving curiosity instead of anger).", bundle: 'pro' },
-        { q: "She says: \"It's over, I can't take any more!\"", a: "\"I hear that you're despairing right now. Let's talk more tomorrow when we've both slept.\"", bundle: 'pro' },
-        { q: "You feel a huge impulse to storm out of the house during a fight.", a: "(Stay in the fire. Breathe. Refuse to let your fear drive you).", bundle: 'pro' },
-      ]
-    },
-  ],
   masculine2: [
     {
       name: "Feelings First, Facts Later",
@@ -8417,7 +8335,7 @@ const collections = {
     },
     {
       name: "Say the Bigger One",
-      guideFront: "Use this strategy when...",
+      guideFront: "Name the character behind it when...",
       guideBack: "One way it could sound",
       description: "Sometimes the compliment is not about what they did but about who they are — and that one is worth saying out loud, rarely and properly.\n\nIt works because almost nobody hears it. People are told their work is good and their jacket is nice; they are hardly ever told that they are kind, or brave, or that being around them is easy. Those sentences are remembered for decades, and the reason they are remembered is that they are so rarely said.\n\nRarely is the discipline. Said often it becomes wallpaper, and said in passing it sounds like a line. This one wants a quiet moment and a plain voice.\n\nTypical phrases: \"You're one of the kinder people I know.\", \"You are very easy to be around, and that is not a small thing.\", \"I don't think you know how much people rely on you.\"\n\nThree ways to do it without it being strange:\n\n1. Attach it to evidence — the safest by far. \"You drove two hours for someone who would not have done it for you. That is who you are.\"\n\n2. Say it is overdue — removes the pressure of the moment. \"I should have said this years ago.\"\n\n3. Say it and stop — no question afterwards, no expectation of a reply. Let it sit.\n\nMindset: this one is not a nicety, it is a piece of information about their life. Give it once and mean it.",
       inputs: [
@@ -8483,7 +8401,7 @@ const collections = {
   responsivehumour: [
     {
       name: "Exaggeration",
-      guideFront: "Use this strategy when...",
+      guideFront: "Make it enormous when...",
       guideBack: "One way it could sound",
       description: "Take what they said and make it enormous. \"I'm hungry.\" — \"I haven't eaten since the dinosaurs went extinct.\"\n\nIt works because everyone can hear that the size is wrong, and the gap between the real thing and the enormous version is the joke. Nobody has to decode anything. It is the most forgiving of the five, which is why it is the one to start with.\n\nThe scale is the whole technique. A small exaggeration sounds like a complaint; a ridiculous one is obviously play. If you are worried it is too much, it is probably not enough.\n\nTypical phrases: \"I haven't eaten since the dinosaurs went extinct.\", \"This is the single greatest thing that has ever happened to anyone.\", \"I've been waiting here so long I have grandchildren.\"\n\nThree things worth exaggerating:\n\n1. Your own state — hunger, tiredness, panic. Safest, because the target is you.\n\n2. The situation you are both in — the queue, the weather, the meeting. Also safe, because you are both in it.\n\n3. Their claim, agreed with too enthusiastically — \"three tests? That's basically a war crime.\" Careful here: it is warm only if you are clearly on their side.\n\nMindset: go bigger than feels sensible. The size is the signal that you are playing.",
       inputs: [
@@ -8499,7 +8417,7 @@ const collections = {
     },
     {
       name: "Understatement",
-      guideFront: "Use this strategy when...",
+      guideFront: "Make it tiny when...",
       guideBack: "One way it could sound",
       description: "Take what they said and make it tiny. \"I ran a marathon.\" — \"That's a bit of a walk.\"\n\nIt works for the same reason exaggeration does, in reverse: the size is obviously wrong, and everyone can hear it. But it lands differently. Exaggeration is loud and warm; understatement is dry, and it flatters the other person, because treating their achievement as ordinary is a way of saying it is not.\n\nIt is the most useful of the five with people you do not know well, because it is quiet. Nobody has to perform anything and it is over in four words.\n\nTypical phrases: \"That's a bit of a walk.\", \"So, a mild inconvenience then.\", \"I imagine that was mildly annoying.\", \"Not the worst week you've had.\"\n\nThree places it works best:\n\n1. On something impressive — the classic, and the most flattering. \"You built the whole thing? Bit of a project.\"\n\n2. On something disastrous — sympathy in dry clothing. \"So the week has been going well, then.\"\n\n3. On something obvious — see also Deliberate Misunderstanding. \"It's raining.\" — \"I did notice a bit of moisture.\"\n\nMindset: say it flat. Understatement is entirely in the delivery — the words do almost none of the work.",
       inputs: [
@@ -8515,7 +8433,7 @@ const collections = {
     },
     {
       name: "Misdirection",
-      guideFront: "Use this strategy when...",
+      guideFront: "Agree, then twist the ending when...",
       guideBack: "One way it could sound",
       description: "Start out agreeing, then twist the ending. \"My computer is so fast.\" — \"Yes, I saw it running down the street yesterday.\"\n\nIt works because the first half sets up an expectation and the second half breaks it. The listener follows you into a normal sentence, and the last few words go somewhere else entirely. It is the closest of the five to a joke in the traditional sense.\n\nThe order is the whole thing. The twist has to be last, and everything before it has to sound completely ordinary. Signal it early and there is nothing to break.\n\nTypical phrases: \"Yes, and…\", \"Absolutely. Which is why…\", \"I know exactly what you mean. Last week I…\"\n\nThree ways to set up the turn:\n\n1. Agree, then take the word literally in another sense — the easiest. \"Fast? I saw it running down the street.\"\n\n2. Agree, then reveal a ridiculous reason. \"Of course you're tired. You've been awake since Tuesday, allegedly.\"\n\n3. Agree, then land somewhere unrelated. \"That's a great point, and it reminds me that I have no idea what we're talking about.\"\n\nMindset: ordinary, ordinary, then sideways. Keep a straight face until after the last word.",
       inputs: [
@@ -8531,7 +8449,7 @@ const collections = {
     },
     {
       name: "Deliberate Misunderstanding",
-      guideFront: "Use this strategy when...",
+      guideFront: "Pretend you took it literally when...",
       guideBack: "One way it could sound",
       description: "Pretend you took it the wrong way. \"It's raining outside.\" — \"Really? Inside my house it's completely dry.\"\n\nIt works because both of you know exactly what was meant, and the pretending is the joke. It is not confusion, it is a performance of confusion, and it only lands if it is obviously deliberate.\n\nThat is also the risk. Done with a straight face and no warmth it reads as pedantry, or as not listening. The delivery has to say *I am playing* while the words say something else.\n\nTypical phrases: \"Really? Not where I'm standing.\", \"Wait — you meant the other one?\", \"Oh, I thought you meant…\"\n\nThree kinds of misunderstanding:\n\n1. Take the literal sense — the standard. \"It's raining outside.\" — \"Inside it's fine.\"\n\n2. Take the other meaning of a word — the sharpest, when a word offers two. \"I'm reading a lot at the moment.\" — \"Out loud? To strangers?\"\n\n3. Take the whole statement as being about something else. \"This room is too dark.\" — \"The room is fine, it's your outlook.\"\n\nMindset: the point is not to seem confused. It is to be obviously, cheerfully wrong on purpose.",
       inputs: [
@@ -8547,7 +8465,7 @@ const collections = {
     },
     {
       name: "Irony",
-      guideFront: "Use this strategy when...",
+      guideFront: "Say the opposite when...",
       guideBack: "One way it could sound",
       description: "Say the opposite of what you mean, and let your tone carry it. \"It's raining again.\" — \"Excellent. My favourite.\"\n\nIt works because the words and the delivery disagree, and the listener enjoys resolving the gap. It is the most economical of the five — often three words — and the most adult, which is why it is everywhere in ordinary conversation without anyone calling it humour.\n\nIt is also the one that needs the most care. Irony delivered flat to someone who does not know you can be taken at face value, and irony aimed at something they are proud of stops being funny immediately.\n\nTypical phrases: \"Oh, wonderful.\", \"Yes, that's exactly what I was hoping for.\", \"Can't wait.\", \"Perfect timing.\"\n\nFour things worth being ironic about:\n\n1. Your own failures — the safest by a wide margin. \"I've handled that beautifully.\"\n\n2. Your own successes, played down — self-irony rather than self-praise. \"Yes, I'm basically an expert now. Two attempts.\"\n\n3. A shared inconvenience — the weather, the queue, the timetable. \"Three tests. Lovely.\"\n\n4. Something obviously good, called bad — the lightest form, and the one that reads as warmth. \"A whole week off. How will I cope.\"\n\nAnd the rule from the same notes: aim for exaggeration or contrast, keep it short, and never at someone's expense. Irony about a person, delivered dry, is sarcasm — a different thing, and not what this pack teaches.\n\nMindset: the words say one thing, you say another. Keep it short enough that nobody has to work.",
       inputs: [
@@ -8582,7 +8500,7 @@ const collections = {
     {
       name: "Fogging",
       guideFront: "Agree with what is true when...",
-      guideBack: "One way it could sound",
+      guideBack: "A partial agreement",
       description: "A skill that teaches you to absorb manipulative criticism by calmly agreeing with whatever is true, probable, or logical in it, while remaining the sole judge of your actions. It operates like a fog bank. When a critic throws a hard verbal rock, it penetrates without hitting a solid striking surface, preventing any ricochet or counter-argument. By offering zero psychological resistance, you instantly defuse their anger and leave their exaggeration standing completely alone. It is hard when the criticism feels deeply personal or unfair, triggering an intense, visceral urge to defend your reputation, correct the critic's perspective, or launch a counter-attack.\n\nTypical phrases: • \"You're probably right.\" • \"I can see why you would think that.\" • \"That's true, I do do that sometimes.\"\n\nThree variants of the move:\n\n1. Agreeing with the truth — accepting a concrete, undeniable fact: \"You're right, I am dressed in my usual way today.\"\n\n2. Agreeing with the odds — accepting a future probability or risk: \"You might be right, I could get more sleep.\"\n\n3. Agreeing in principle — accepting the general logic of their argument without committing to their standard: \"I can understand why you think that, and it makes sense.\"\n\nMindset: criticism is simply information about the critic's standards, not a verdict on your worth.",
       inputs: [
         { q: "A critical coworker tells you that you are dressed in your usual sloppy manner.", a: "\"You're right, I am dressed in my usual way today.\"", bundle: 'free' },
@@ -8598,7 +8516,7 @@ const collections = {
     {
       name: "Negative Assertion",
       guideFront: "Own the mistake plainly when...",
-      guideBack: "One way it could sound",
+      guideBack: "A calm admission",
       description: "A skill that teaches you to strongly and calmly own your real mistakes, errors, and personal shortcomings without over-apologizing, getting defensive, or feeling guilty. It treats mistakes as simple, inefficient human facts rather than moral failures. By completely and cheerfully agreeing with the factual criticism, you instantly dismantle the critic's leverage and stop their attempt to use your guilt to manipulate your future behavior. It is hard when we believe that making a mistake makes us bad or incompetent, prompting us to hide our errors, make submissive excuses, or crawl for forgiveness.\n\nTypical phrases: • \"You're right, I completely missed that.\" • \"That was a careless mistake on my part.\" • \"How embarrassing. I really goofed on that one.\"\n\nThree variants of the move:\n\n1. Owning administrative slips — admitting everyday procedural errors calmly: \"You're right, I forgot to shut down the projector.\"\n\n2. Owning professional goofs — acknowledging real technical or execution mistakes without crawling: \"I did. I completely missed that transposition error.\"\n\n3. Owning personal blunders — admitting social or interpersonal errors with ease: \"You're right, I am late. That's on me.\"\n\nMindset: making a mistake requires correction and responsibility, never psychological atonement.",
       inputs: [
         { q: "Your partner points out that you forgot to write down a check in the family ledger again.", a: "\"You're right. That was a dumb thing for me to do again.\"", bundle: 'free' },
@@ -8614,7 +8532,7 @@ const collections = {
     {
       name: "Negative Inquiry",
       guideFront: "Invite the criticism when...",
-      guideBack: "One way it could sound",
+      guideBack: "A curious question",
       description: "A skill that teaches you to actively prompt constructive or critical feedback about yourself in a neutral, low-key, non-defensive manner. It forces a critic to explain their vague, emotional complaints, transforming a manipulative attack into a concrete, factual discussion. By pointing the finger at yourself and asking \"what is bad about that?\", you exhaust their emotional energy and clear the ground for a workable compromise. It is hard because our instincts view critical feedback as a hostile threat, making us want to shut down the conversation or attack the critic's own flaws instead of inviting more.\n\nTypical phrases: • \"What is it specifically about my work that you don't like?\" • \"What am I doing that makes me seem unprofessional?\" • \"What is it about my tone that feels difficult?\"\n\nThree variants of the move:\n\n1. Clarifying vague feedback — prompting details on subjective criticisms: \"What specifically about my behavior looked unprofessional?\"\n\n2. Uncovering relationship conflicts — digging into passive-aggressive grumbles with a partner: \"What am I doing or not doing that makes it look like I don't care?\"\n\n3. Inquiring into work performance — seeking specific metrics to improve on the job: \"What specifically about my attitude toward deadlines is causing concern?\"\n\nMindset: more feedback is simply raw data that helps you understand what the other person actually wants.",
       inputs: [
         { q: "A coworker sighs and tells you that you appeared very unprofessional during the client call.", a: "\"What is it specifically about my behavior that looked unprofessional?\"", bundle: 'free' },
@@ -9233,6 +9151,88 @@ const collections = {
         { q: "You ask and she says \"nothing\", and you can tell it isn't nothing.", a: "\"All right. I'm not going to dig. I'll be here when it turns into something.\"", bundle: 'pro' },
         { q: "She starts to tell you and you notice yourself getting ready to solve it.", a: "\"Keep going. I'm not going to try to fix it, I want to hear the whole thing.\"", bundle: 'pro' },
         { q: "She mentioned something that worried her a week ago and has not raised it since.", a: "\"You said something last week about the scan. Where did that land?\"", bundle: 'pro' },
+      ]
+    },
+  ],
+  masculine1: [
+    {
+      name: "Hear the Pain, Not the Blame",
+      guideFront: "Name the hurt underneath when...",
+      guideBack: "A possible observation",
+      description: "Ignoring the toxic surface of a complaint—blame, sarcasm, or insults—to hear the underlying vulnerability and pain.\nBy focusing on the pain instead of facts or logic, your natural care for her kicks in instead of your defensive instincts.\n\n• \"I hear that you’re feeling alone in this.\"\n• \"It sounds like you’ve had a really heavy day.\"\n• \"Tell me more about how you’re hurting right now.\"\n\nUnderlying Categories:\n1. The Verbal Attack — ignore the words and meet the emotion.\n2. The Emotional Tsunami — recognize that facts cannot stop an ocean wave of intensity.\n\nMindset: See the little girl behind the raging woman to stay grounded in your presence.",
+      inputs: [
+        { q: "She shouts: \"You never think of me, you just work all the time!\"", a: "\"I hear that you’re feeling forgotten, and it hurts me to hear that.\"", bundle: 'free' },
+        { q: "She snaps: \"Why can't you ever do anything right!?\"", a: "\"It sounds like you're feeling really disappointed in me right now.\"", bundle: 'free' },
+        { q: "She says sarcastically: \"I hope you had fun at golf while I slaved away at home.\"", a: "\"I hear how tough your day has been. Tell me more about what was hardest.\"", bundle: 'free' },
+        { q: "She accuses you of something you didn't actually do.", a: "(Ignore the facts) \"I hear how frustrated you are. Tell me more about what feels wrong.\"", bundle: 'free' },
+        { q: "She brings up old mistakes to prove you are \"irresponsible.\"", a: "\"It sounds like you're carrying a lot of pain from what happened in the past.\"", bundle: 'free' },
+        { q: "She is so angry that her words become incoherent or messy.", a: "\"I'm right here. I see you're having a hard time. Tell me what's happening inside.\"", bundle: 'pro' },
+        { q: "She accuses you of being a \"bad father.\"", a: "\"I hear your fear for the children's sake. It's important to me to understand that.\"", bundle: 'pro' },
+        { q: "You feel a strong urge to correct her factual errors in the middle of her outburst.", a: "(Stay silent, hear the pain first—the facts can wait until later).", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Narrowing the Scope",
+      guideFront: "Present a clear proposal when...",
+      guideBack: "A possible proposal",
+      description: "Proactively reducing the decision-making burden for your partner by presenting limited options instead of open questions.\nUncertainty and decisions force her into her Masculine energy; your clarity allows her to relax into her Feminine.\n\n• \"Should we do Mexican or Sushi tonight?\"\n• \"I suggest we leave at nine, does that work for you?\"\n\nVariants:\n1. Presenting options — give 2–3 concrete choices.\n2. Stating a preference — say what you want, but remain open.\n3. Asking for objections — provide a plan and ask if anything conflicts.\n\nMindset: Your clarity is a gift of structure you give her, not a burden you place on her.",
+      inputs: [
+        { q: "It's time to decide on dinner and she seems exhausted.", a: "\"I'm choosing between Italian and Thai tonight. Which do you prefer?\"", bundle: 'free' },
+        { q: "You are planning a summer vacation together.", a: "\"Here are three places I've researched. Do you have any objections to any of them?\"", bundle: 'free' },
+        { q: "She asks: \"What do you want to do this weekend?\"", a: "\"I’d love to go on that hike, but I’m open to your suggestions too.\"", bundle: 'free' },
+        { q: "You are going to a party and she isn't sure what to wear.", a: "\"I love it when you wear that red dress. Wear that!\"", bundle: 'free' },
+        { q: "A logistical detail needs solving, such as picking up a package.", a: "\"I’ll handle the package on my way home so you don't have to think about it.\"", bundle: 'free' },
+        { q: "She seems paralyzed by too many choices or options.", a: "\"Hey, let's do this: we leave now and we'll decide on the way.\"", bundle: 'pro' },
+        { q: "She asks for your opinion on something you don't really care about (e.g., drapes).", a: "(Form an opinion and choose one to give her a point of orientation).", bundle: 'pro' },
+        { q: "She has a difficult task she keeps putting off.", a: "\"Let's sit down and we'll work on this together for 20 minutes right now.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The Do-Over",
+      guideFront: "Ask to start again when...",
+      guideBack: "A possible request",
+      description: "Having the humility and presence to interrupt an interaction that has gone wrong and ask to \"do it over\" to act more in line with your intention.\nIt is an elegant way to pull the plug on meaningless conflicts that arise from clumsiness or poor phrasing.\n\n• \"Can we have a do-over? I realize I just got defensive.\"\n• \"Let me try that again, that came out completely wrong.\"\n\nVariants:\n1. For your own reactivity — when you notice you've \"fallen into the trap.\"\n2. For misunderstandings — when you see she has misinterpreted your meaning.\n\nMindset: It takes a strong man to admit he was clumsy.",
+      inputs: [
+        { q: "You notice you've just started lecturing her on how to solve her problems.", a: "\"Wait, can we have a do-over? I noticed I'm trying to fix everything instead of just listening.\"", bundle: 'free' },
+        { q: "You accidentally said something sarcastic that hurt her feelings.", a: "\"I'm sorry, that was clumsy. Can we start over? I really want to hear you.\"", bundle: 'free' },
+        { q: "You are stuck in a \"ping-pong\" fight about who does more chores.", a: "\"Stop, can we have a do-over? I don't want to fight about this, I want us to be a team.\"", bundle: 'free' },
+        { q: "You notice your tone of voice has become harsh and accusing.", a: "\"I hear how I'm sounding. Can I try that again with a softer tone?\"", bundle: 'free' },
+        { q: "She misunderstood your joke and became angry.", a: "\"That landed totally wrong. Can we do a do-over? My intention was just to be playful.\"", bundle: 'free' },
+        { q: "You just physically or energetically withdrew from a fight but regret it.", a: "\"I just walked away because I got scared. Can I come back and start over?\"", bundle: 'pro' },
+        { q: "You notice you lied to avoid a conflict.", a: "\"I just said something that wasn't true because I was afraid. Can we redo that conversation?\"", bundle: 'pro' },
+        { q: "The interaction feels stiff and de-polarized.", a: "\"This doesn't feel like us. Let's take a break and then have a do-over where we meet in the heart.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "The \"When You...\" Stem",
+      guideFront: "Share your internal state when...",
+      guideBack: "An inarguable statement",
+      description: "Using a specific template (Observation + Feeling) to share your inner state without accusations, demands, or \"victim mentality.\"\nBy only speaking to your own experience, you create an \"inarguable\" truth that doesn't trigger her defenses as easily.\n\n• \"When you [observation], I feel [emotion] in my body.\"\n• \"I notice I'm thinking [thought] when you do [observation].\"\n\nVariants:\n1. Sharing vulnerability — tell her about your fear or insecurity.\n2. Owning anger — telling her you are angry without attacking her.\n\nMindset: What you want and feel matters—expressing it is an act of love.",
+      inputs: [
+        { q: "She hasn't replied to your texts all day.", a: "\"When I don't hear from you all day, I feel unimportant, and that scares me a bit.\"", bundle: 'free' },
+        { q: "She complains that your house is too small.", a: "\"When you complain about the house, I think you're criticizing my ability to provide, and that hurts.\"", bundle: 'free' },
+        { q: "She interrupted you in front of your friends.", a: "\"When you cut me off while I'm telling a story, I don't feel respected.\"", bundle: 'free' },
+        { q: "You feel angry because she is late again.", a: "\"I feel angry when you arrive late, because it makes me think our time isn't important to you.\"", bundle: 'free' },
+        { q: "You haven't been sexually intimate for a long time.", a: "\"When we don't have physical contact for a while, I feel unattractive and disconnected from you.\"", bundle: 'free' },
+        { q: "You want to say you're angry without starting a war.", a: "\"I'm angry right now because [thing] is important to me. What I need is [need].\"", bundle: 'pro' },
+        { q: "You notice you are starting to shut down emotionally.", a: "\"I notice I'm starting to withdraw because I'm feeling criticized right now.\"", bundle: 'pro' },
+        { q: "She is pressuring you to change your opinion.", a: "\"I hear what you want, but my truth is that I prefer X. It feels important to me to hold onto that.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Refusing the Rejection",
+      guideFront: "Keep the connection open when...",
+      guideBack: "One way it could sound",
+      description: "Steadfastly refusing to accept a unilateral shutdown of connection (e.g., when she says \"Go away!\") by staying present and offering safety.\nShe is often testing your devotion; by not being scared off by her intensity, you build deep trust.\n\n• \"I'm not going anywhere.\"\n• \"I see you're hurting. I'm right here when you're ready.\"\n\nVariants:\n1. During silence — remain physically in the room without pressuring her.\n2. During the \"Go!\" — give her physical space but send a loving confirmation.\n\nMindset: Be more committed to the connection than you are afraid of her intensity.",
+      inputs: [
+        { q: "She screams: \"Get out! Leave me alone!\"", a: "\"I'll give you some space, but I'll be in the next room if you need me. I'm not leaving you.\"", bundle: 'free' },
+        { q: "She gives you the \"cold shoulder\" and refuses to speak.", a: "(Stay nearby, maintain your grounding, and show you aren't afraid of the silence).", bundle: 'free' },
+        { q: "She hangs up the phone in the middle of a conversation.", a: "(Wait a moment, then text: \"I see you're upset. I'm here when you want to finish talking.\")", bundle: 'free' },
+        { q: "She says \"I hate you!\" in the heat of the moment.", a: "\"I hear your pain. I love you and I'm standing right here with you.\"", bundle: 'free' },
+        { q: "She pulls away physically when you try to touch her.", a: "(Back off physically but maintain eye contact and your loving presence).", bundle: 'free' },
+        { q: "She tests you by being deliberately provocative.", a: "(Maintain your calm, \"hold the pose,\" and respond with loving curiosity instead of anger).", bundle: 'pro' },
+        { q: "She says: \"It's over, I can't take any more!\"", a: "\"I hear that you're despairing right now. Let's talk more tomorrow when we've both slept.\"", bundle: 'pro' },
+        { q: "You feel a huge impulse to storm out of the house during a fight.", a: "(Stay in the fire. Breathe. Refuse to let your fear drive you).", bundle: 'pro' },
       ]
     },
   ],
@@ -10861,56 +10861,6 @@ const collectionsModeData = {
         { q: "They say: \"It's raining outside.\"", a: "\"Take my coat, my umbrella, my shoes. I'll manage.\" (the super generous one)", bundle: 'pro' },
         { q: "They say: \"The meeting's been moved to Friday.\"", a: "\"Is it though? I never saw an invite. I see no invite.\" (the rule breaker)", bundle: 'pro' },
         { q: "They say: \"My laptop died.\"", a: "\"Yours died and mine is fine, and now I live with that guilt.\" (the mock-offended one)", bundle: 'pro' },
-      ]
-    },
-  ],
-  masculine1: [
-    {
-      name: "Leading Through the Storm",
-      guideFront: "Choose a strategy when...",
-      guideBack: "One way it could sound",
-      description: "Hear the Pain, The Do-Over, and Refusing Rejection. These strategies help you maintain connection when emotions are at their peak.\nThe focus is on not being swept away by reactivity, but instead being the stable rock she can lean against.",
-      inputs: [
-        { q: "She accuses you of never listening.", a: "\"I hear that you feel unheard, and that hurts me.\" [Hear the Pain, Not the Blame]", bundle: 'pro' },
-        { q: "You notice you've just started shouting back at her.", a: "\"Sorry, can we have a do-over? I don't want us to talk to each other like this.\" [The Do-Over]", bundle: 'pro' },
-        { q: "She turns her back and walks into the bedroom mid-sentence.", a: "(Follow her calmly, sit on the edge of the bed, and show you're still there). [Refusing the Rejection]", bundle: 'pro' },
-        { q: "She says you are \"just like your father.\"", a: "\"It sounds like you're really afraid I'm going to let you down.\" [Hear the Pain, Not the Blame]", bundle: 'pro' },
-        { q: "She yells: \"I can't stand looking at you right now! Get out!\"", a: "\"I'll give you some space, but I'll be in the next room if you need me. I'm not leaving you.\" [Refusing the Rejection]", bundle: 'pro' },
-        { q: "You realize you are starting to defend your schedule and argue.", a: "\"Can we have a do-over? I'm getting defensive when I just want to hear what's bothering you.\" [The Do-Over]", bundle: 'pro' },
-        { q: "She snaps: \"You never care about how hard my day was!\"", a: "\"I hear that you're feeling completely alone and exhausted today.\" [Hear the Pain, Not the Blame]", bundle: 'pro' },
-        { q: "She slams the door after an argument and goes quiet.", a: "(Stay where she can see you.) \"I'm not going anywhere. I'll be right here when you want me.\" [Refusing the Rejection]", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Clarity and Truth",
-      guideFront: "Choose a strategy when...",
-      guideBack: "One way it could sound",
-      description: "Narrowing the Scope and the \"When You...\" Stem. Use these to create structure and honesty in daily life.\nThe goal is to reduce her decision-making burden and increase your own transparency so she knows where you stand.",
-      inputs: [
-        { q: "You are picking a movie and she can't decide.", a: "\"I'm choosing between this documentary and the comedy. What do you say?\" [Narrowing the Scope]", bundle: 'pro' },
-        { q: "You feel irritated by the tone she's using with you.", a: "\"When you use that tone, I feel criticized and I want to withdraw.\" [The \"When You...\" Stem]", bundle: 'pro' },
-        { q: "She asks what you should do for vacation next year.", a: "\"I'd love to go to the mountains, but I want to hear what you're dreaming of too.\" [Narrowing the Scope]", bundle: 'pro' },
-        { q: "You forgot to buy milk despite promising.", a: "\"I dropped the ball. I'm going to start putting these tasks on my work list from now on.\" [Narrowing the Scope]", bundle: 'pro' },
-        { q: "She demands to know why you haven't booked the plumber yet.", a: "\"When you push me about the chores, I feel anxious and pressured. I'll handle it on Thursday.\" [The \"When You...\" Stem]", bundle: 'pro' },
-        { q: "You are at a restaurant and she is staring at a huge menu, overwhelmed.", a: "\"I'm choosing between the salmon and the steak. What looks good to you?\" [Narrowing the Scope]", bundle: 'pro' },
-        { q: "You notice you are hiding your frustration about her spending.", a: "\"When I see the credit card bill, I feel worried about our budget, and I want to talk about it.\" [The \"When You...\" Stem]", bundle: 'pro' },
-        { q: "She asks: \"What do you want to do for dinner tonight?\"", a: "\"I'm choosing between getting sushi or making pasta. What's your preference?\" [Narrowing the Scope]", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Own Your Frame",
-      guideFront: "Choose a strategy when...",
-      guideBack: "One way it could sound",
-      description: "Choosing between The Do-Over, The \"When You...\" Stem, and Narrowing the Scope to maintain a grounded posture during daily interactions. It works because instead of collapsing into passive niceness, you either own your clumsiness, share your inarguable truth, or provide clear options.\n\n• The Do-Over — when you have been clumsy or reactive\n• The \"When You...\" Stem — when you need to share your truth inarguably\n• Narrowing the Scope — when you need to provide structure instead of deferring\n\nThe key question is: do you need to correct a mistake, state where you stand, or drive a decision?\n\nMindset: a little healthy selfishness makes me a more stable man she can actually trust.",
-      inputs: [
-        { q: "You realize you've been lecturing her about how to handle her boss.", a: "\"Can we have a do-over? I noticed I'm trying to solve your problems instead of just being here.\" [The Do-Over]", bundle: 'pro' },
-        { q: "She asks where you want to go for your anniversary.", a: "\"I've researched these two hotels for the weekend. Which one do you prefer?\" [Narrowing the Scope]", bundle: 'pro' },
-        { q: "You feel a strong urge to please her by agreeing to an event you hate.", a: "\"When you ask me to go to that event, I feel pressured to say yes, but my truth is I need to rest.\" [The \"When You...\" Stem]", bundle: 'pro' },
-        { q: "You accidentally made a sarcastic joke that hurt her feelings.", a: "\"I'm sorry, that was clumsy of me. Can we start over? I want to say that properly.\" [The Do-Over]", bundle: 'pro' },
-        { q: "She is overwhelmed by too many choices for the kids' weekend activities.", a: "\"Let's choose between the park on Saturday or the museum on Sunday. What do you say?\" [Narrowing the Scope]", bundle: 'pro' },
-        { q: "She hasn't responded to your text in hours and you feel anxious.", a: "\"When I don't hear back from you, I notice I start thinking you're mad at me, and I feel tense.\" [The \"When You...\" Stem]", bundle: 'pro' },
-        { q: "You notice your voice is becoming harsh and demanding.", a: "\"Can I get a do-over? My tone came out really harsh just now, and that's not what I intended.\" [The Do-Over]", bundle: 'pro' },
-        { q: "She asks for your opinion on a minor decision she is obsessing over.", a: "\"I like the blue one better. That's my preference.\" [Narrowing the Scope]", bundle: 'pro' },
       ]
     },
   ],
@@ -13328,6 +13278,56 @@ const collectionsModeData = {
         { q: "She mentions offhand that she is dreading Thursday.", a: "\"What's Thursday? Tell me the bit you're dreading.\" [Opening the Door]", bundle: 'pro' },
         { q: "You lost your temper yesterday and she has been careful around you since.", a: "\"You've been walking on eggshells since yesterday. I don't want to be someone you manage.\" [Not Against You]", bundle: 'pro' },
         { q: "Both of your parents need something this weekend and she is holding both calendars.", a: "\"I'll take mine and I'll take the Saturday driving. You keep Sunday.\" [Steady Under Load]", bundle: 'pro' },
+      ]
+    },
+  ],
+  masculine1: [
+    {
+      name: "Leading Through the Storm",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Hear the Pain, The Do-Over, and Refusing Rejection. These strategies help you maintain connection when emotions are at their peak.\nThe focus is on not being swept away by reactivity, but instead being the stable rock she can lean against.",
+      inputs: [
+        { q: "She accuses you of never listening.", a: "\"I hear that you feel unheard, and that hurts me.\" [Hear the Pain, Not the Blame]", bundle: 'pro' },
+        { q: "You notice you've just started shouting back at her.", a: "\"Sorry, can we have a do-over? I don't want us to talk to each other like this.\" [The Do-Over]", bundle: 'pro' },
+        { q: "She turns her back and walks into the bedroom mid-sentence.", a: "(Follow her calmly, sit on the edge of the bed, and show you're still there). [Refusing the Rejection]", bundle: 'pro' },
+        { q: "She says you are \"just like your father.\"", a: "\"It sounds like you're really afraid I'm going to let you down.\" [Hear the Pain, Not the Blame]", bundle: 'pro' },
+        { q: "She yells: \"I can't stand looking at you right now! Get out!\"", a: "\"I'll give you some space, but I'll be in the next room if you need me. I'm not leaving you.\" [Refusing the Rejection]", bundle: 'pro' },
+        { q: "You realize you are starting to defend your schedule and argue.", a: "\"Can we have a do-over? I'm getting defensive when I just want to hear what's bothering you.\" [The Do-Over]", bundle: 'pro' },
+        { q: "She snaps: \"You never care about how hard my day was!\"", a: "\"I hear that you're feeling completely alone and exhausted today.\" [Hear the Pain, Not the Blame]", bundle: 'pro' },
+        { q: "She slams the door after an argument and goes quiet.", a: "(Stay where she can see you.) \"I'm not going anywhere. I'll be right here when you want me.\" [Refusing the Rejection]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Clarity and Truth",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Narrowing the Scope and the \"When You...\" Stem. Use these to create structure and honesty in daily life.\nThe goal is to reduce her decision-making burden and increase your own transparency so she knows where you stand.",
+      inputs: [
+        { q: "You are picking a movie and she can't decide.", a: "\"I'm choosing between this documentary and the comedy. What do you say?\" [Narrowing the Scope]", bundle: 'pro' },
+        { q: "You feel irritated by the tone she's using with you.", a: "\"When you use that tone, I feel criticized and I want to withdraw.\" [The \"When You...\" Stem]", bundle: 'pro' },
+        { q: "She asks what you should do for vacation next year.", a: "\"I'd love to go to the mountains, but I want to hear what you're dreaming of too.\" [Narrowing the Scope]", bundle: 'pro' },
+        { q: "You forgot to buy milk despite promising.", a: "\"I dropped the ball. I'm going to start putting these tasks on my work list from now on.\" [Narrowing the Scope]", bundle: 'pro' },
+        { q: "She demands to know why you haven't booked the plumber yet.", a: "\"When you push me about the chores, I feel anxious and pressured. I'll handle it on Thursday.\" [The \"When You...\" Stem]", bundle: 'pro' },
+        { q: "You are at a restaurant and she is staring at a huge menu, overwhelmed.", a: "\"I'm choosing between the salmon and the steak. What looks good to you?\" [Narrowing the Scope]", bundle: 'pro' },
+        { q: "You notice you are hiding your frustration about her spending.", a: "\"When I see the credit card bill, I feel worried about our budget, and I want to talk about it.\" [The \"When You...\" Stem]", bundle: 'pro' },
+        { q: "She asks: \"What do you want to do for dinner tonight?\"", a: "\"I'm choosing between getting sushi or making pasta. What's your preference?\" [Narrowing the Scope]", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Own Your Frame",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "Choosing between The Do-Over, The \"When You...\" Stem, and Narrowing the Scope to maintain a grounded posture during daily interactions. It works because instead of collapsing into passive niceness, you either own your clumsiness, share your inarguable truth, or provide clear options.\n\n• The Do-Over — when you have been clumsy or reactive\n• The \"When You...\" Stem — when you need to share your truth inarguably\n• Narrowing the Scope — when you need to provide structure instead of deferring\n\nThe key question is: do you need to correct a mistake, state where you stand, or drive a decision?\n\nMindset: a little healthy selfishness makes me a more stable man she can actually trust.",
+      inputs: [
+        { q: "You realize you've been lecturing her about how to handle her boss.", a: "\"Can we have a do-over? I noticed I'm trying to solve your problems instead of just being here.\" [The Do-Over]", bundle: 'pro' },
+        { q: "She asks where you want to go for your anniversary.", a: "\"I've researched these two hotels for the weekend. Which one do you prefer?\" [Narrowing the Scope]", bundle: 'pro' },
+        { q: "You feel a strong urge to please her by agreeing to an event you hate.", a: "\"When you ask me to go to that event, I feel pressured to say yes, but my truth is I need to rest.\" [The \"When You...\" Stem]", bundle: 'pro' },
+        { q: "You accidentally made a sarcastic joke that hurt her feelings.", a: "\"I'm sorry, that was clumsy of me. Can we start over? I want to say that properly.\" [The Do-Over]", bundle: 'pro' },
+        { q: "She is overwhelmed by too many choices for the kids' weekend activities.", a: "\"Let's choose between the park on Saturday or the museum on Sunday. What do you say?\" [Narrowing the Scope]", bundle: 'pro' },
+        { q: "She hasn't responded to your text in hours and you feel anxious.", a: "\"When I don't hear back from you, I notice I start thinking you're mad at me, and I feel tense.\" [The \"When You...\" Stem]", bundle: 'pro' },
+        { q: "You notice your voice is becoming harsh and demanding.", a: "\"Can I get a do-over? My tone came out really harsh just now, and that's not what I intended.\" [The Do-Over]", bundle: 'pro' },
+        { q: "She asks for your opinion on a minor decision she is obsessing over.", a: "\"I like the blue one better. That's my preference.\" [Narrowing the Scope]", bundle: 'pro' },
       ]
     },
   ],
