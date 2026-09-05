@@ -131,17 +131,38 @@ function scenarioMoveList(inp) {
   return names.map((n, i) => (i + 1) + '. ' + n).join('\n');
 }
 
-// Removes the leading move name from a step front — "Fogging — they claim you
-// are disorganized." becomes "they claim you are disorganized." The split
-// mirrors scenarioMoveList exactly, including the "Step 1." prefix it tolerates,
-// so the two can never disagree about where the name ends. A front with no dash
-// IS the name (v1.27.40) and is left alone: stripping it would empty the card.
-function stripMoveName(front) {
+// Splits a step front into the move's name and the task that follows it —
+// "Fogging — they claim you are disorganized." becomes
+// { name: 'Fogging', rest: 'they claim you are disorganized.' }.
+// The split mirrors scenarioMoveList exactly, including the "Step 1." prefix it
+// tolerates, so the two can never disagree about where the name ends. A front
+// with no dash IS the name (v1.27.40) and yields no split: stripping it would
+// empty the card, so { name: '', rest: front } is returned and nothing moves.
+function splitMoveName(front) {
   const parts = String(front || '').split(/\s+[\u2014\u2013]\s+/);
-  if (parts.length < 2) return front;
-  const drop = /^(step|steg)\s*\d+\.?$/i.test(parts[0].trim()) ? 2 : 1;
-  if (parts.length <= drop) return front;
-  return parts.slice(drop).join(' \u2014 ').trim();
+  if (parts.length < 2) return { name: '', rest: front };
+  const stepNo = /^(step|steg)\s*\d+\.?$/i.test(parts[0].trim());
+  const drop = stepNo ? 2 : 1;
+  if (parts.length <= drop) return { name: '', rest: front };
+  // "Step 1 \u00b7 Identify the behaviour" is a numbered move name, and the number
+  // is scaffolding for the writer rather than something worth putting in a
+  // bracket on the card. Dropped from the NAME only; scenarioMoveList still
+  // shows the fronts as the pack wrote them.
+  const name = parts[drop - 1].trim()
+    .replace(/^(step|steg)\s*\d+\s*[\u00b7.:\u2013\u2014-]\s*/i, '')
+    .trim();
+  return { name, rest: parts.slice(drop).join(' \u2014 ').trim() };
+}
+
+// Puts the move's name back on the card, in brackets at the end of the line it
+// belongs to — the same shape the other modes already use for their labels.
+// Skipped when the back already ends in a bracket, so a pack that wrote its own
+// label is never given a second one.
+function withMoveTag(back, name) {
+  const t = String(back || '').trim();
+  if (!t || !name) return back;
+  if (/\][\s.]*$/.test(t)) return back;
+  return t + ' [' + name + ']';
 }
 
 function buildFlowSequence(combo) {
@@ -184,22 +205,34 @@ function buildFlowSequence(combo) {
       guideFront: inp.guideFront || 'The scenario',
       guideBack:  inp.guideBack  || 'The steps, in order',
     });
-    (inp.steps || []).forEach(s => seq.push({
-      // v1.27.87 — a step whose OWN guide front names the move does not need
-      // the move named on the card as well. In Single Strategy the strategy
+    (inp.steps || []).forEach(s => {
+      // v1.27.87 — a step whose OWN guide front says what to do does not need
+      // the move named on the front as well. In Single Strategy the strategy
       // name sits above the card, so a guide like "Agree with what is true
       // when..." completes a sentence the trainee can already see. In
       // Sequences nothing sits above it, which is why the name was written
       // into the front — and why it becomes a duplicate the moment the step
-      // carries the strategy's own guide. Stripped for DISPLAY only: the data
-      // keeps the name, because scenarioMoveList reads it to build the list on
-      // the scenario card, handsfree reads the same objects, and the export
-      // round-trip is defined on the stored front.
-      type: 'step', front: s.guideFront ? stripMoveName(s.front) : s.front, back: s.back,
-      // Per-card guide text (v1.26.32) — carried through so the engine
-      // can override the strategy default for individual steps.
-      guideFront: s.guideFront, guideBack: s.guideBack,
-    }));
+      // carries a guide that explains the move.
+      //
+      // v1.27.88 — the name is not discarded, it MOVES: off the front, where
+      // it answered the question before it was asked, and onto the back in
+      // brackets, where it names what you just did. The front is then purely
+      // the stimulus, which is the thing the trainee is meant to react to.
+      //
+      // DISPLAY ONLY. The data keeps the name in the front, because
+      // scenarioMoveList reads it to build the list on the scenario card,
+      // handsfree reads these same objects, and the export round-trip is
+      // defined on the stored front. Nothing here is written back.
+      const m = s.guideFront ? splitMoveName(s.front) : { name: '', rest: s.front };
+      seq.push({
+        type: 'step',
+        front: m.name ? m.rest : s.front,
+        back:  m.name ? withMoveTag(s.back, m.name) : s.back,
+        // Per-card guide text (v1.26.32) — carried through so the engine
+        // can override the strategy default for individual steps.
+        guideFront: s.guideFront, guideBack: s.guideBack,
+      });
+    });
   });
   return seq;
 }
