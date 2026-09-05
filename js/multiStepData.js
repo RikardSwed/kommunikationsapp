@@ -7521,27 +7521,27 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "Your manager drops a draft budget on your desk and sighs: \"This is completely unrealistic.\"",
           steps: [
-            { front: "Fogging — the supervisor points to the total cost.", back: "\"You're right, the total cost is higher than we planned.\"" },
-            { front: "Negative Inquiry — they wait for you to explain the numbers.", back: "\"What specific items in the budget look unrealistic to you?\"" },
-            { front: "Negative Inquiry — they claim the software license costs are far too high.", back: "\"What is it about the license costs that feels too high for this project?\"" },
+            { front: "Fogging — the supervisor points to the total cost.", back: "\"You're right, the total cost is higher than we planned.\"", guideFront: "Agree with what is true when...", guideBack: "A partial agreement" },
+            { front: "Negative Inquiry — they wait for you to explain the numbers.", back: "\"What specific items in the budget look unrealistic to you?\"", guideFront: "Invite the criticism when...", guideBack: "A curious question" },
+            { front: "Negative Inquiry — they claim the software license costs are far too high.", back: "\"What is it about the license costs that feels too high for this project?\"", guideFront: "Invite the criticism when...", guideBack: "A curious question" },
           ]
         },
         {
           bundle: 'pro',
           situation: "A senior colleague looks at your project board and mutters: \"This timeline is a disaster.\"",
           steps: [
-            { front: "Fogging — they claim you'll never hit the launch date.", back: "\"You could be right, hitting that date will be very tight.\"" },
-            { front: "Negative Inquiry — they stare at the milestones.", back: "\"Which specific milestones do you feel are most at risk?\"" },
-            { front: "Negative Inquiry — they say the review phases are too slow.", back: "\"What is it about the speed of our review phases that worries you most?\"" },
+            { front: "Fogging — they claim you'll never hit the launch date.", back: "\"You could be right, hitting that date will be very tight.\"", guideFront: "Agree with what is true when...", guideBack: "A partial agreement" },
+            { front: "Negative Inquiry — they stare at the milestones.", back: "\"Which specific milestones do you feel are most at risk?\"", guideFront: "Invite the criticism when...", guideBack: "A curious question" },
+            { front: "Negative Inquiry — they say the review phases are too slow.", back: "\"What is it about the speed of our review phases that worries you most?\"", guideFront: "Invite the criticism when...", guideBack: "A curious question" },
           ]
         },
         {
           bundle: 'pro',
           situation: "A supervisor hands back your slides and says: \"This looks like a high school student made it.\"",
           steps: [
-            { front: "Fogging — they claim the layout looks incredibly sloppy.", back: "\"You might be right, the formatting could definitely be cleaner.\"" },
-            { front: "Negative Inquiry — they throw their hands up.", back: "\"What specifically about the layout looks sloppy to you?\"" },
-            { front: "Negative Inquiry — they mutter that the color choices are unprofessional.", back: "\"What is it about the colors that feels unprofessional for this client?\"" },
+            { front: "Fogging — they claim the layout looks incredibly sloppy.", back: "\"You might be right, the formatting could definitely be cleaner.\"", guideFront: "Agree with what is true when...", guideBack: "A partial agreement" },
+            { front: "Negative Inquiry — they throw their hands up.", back: "\"What specifically about the layout looks sloppy to you?\"", guideFront: "Invite the criticism when...", guideBack: "A curious question" },
+            { front: "Negative Inquiry — they mutter that the color choices are unprofessional.", back: "\"What is it about the colors that feels unprofessional for this client?\"", guideFront: "Invite the criticism when...", guideBack: "A curious question" },
           ]
         },
       ]
@@ -7556,27 +7556,27 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "A coworker storms into your office: \"Thanks to your laziness, the client didn't get their proposal on Saturday!\"",
           steps: [
-            { front: "Fogging — they claim you are always completely disorganized.", back: "\"You could be right, I am disorganized sometimes.\"" },
-            { front: "Negative Inquiry — they fume about the weekend disaster.", back: "\"What specifically happened on Saturday with the proposal?\"" },
-            { front: "Negative Assertion — they explain that you locked the files in your desk instead of leaving them out.", back: "\"Oh, my God. I forgot to leave the file out. That was an incredibly stupid thing of me to do.\"" },
+            { front: "Fogging — they claim you are always completely disorganized.", back: "\"You could be right, I am disorganized sometimes.\"", guideFront: "Agree with what is true when...", guideBack: "A partial agreement" },
+            { front: "Negative Inquiry — they fume about the weekend disaster.", back: "\"What specifically happened on Saturday with the proposal?\"", guideFront: "Invite the criticism when...", guideBack: "A curious question" },
+            { front: "Negative Assertion — they explain that you locked the files in your desk instead of leaving them out.", back: "\"Oh, my God. I forgot to leave the file out. That was an incredibly stupid thing of me to do.\"", guideFront: "Own the mistake plainly when...", guideBack: "A calm admission" },
           ]
         },
         {
           bundle: 'pro',
           situation: "Your manager calls you: \"Your terrible communication has ruined our relationship with the logistics team!\"",
           steps: [
-            { front: "Fogging — they claim you never check your messages.", back: "\"You might be right, I don't check my inbox as often as I should.\"" },
-            { front: "Negative Inquiry — they pace around.", back: "\"What specifically happened with the logistics team's delivery?\"" },
-            { front: "Negative Assertion — they state that you missed the 10:00 AM approval deadline.", back: "\"You're right, I missed that approval deadline completely. That's my mistake.\"" },
+            { front: "Fogging — they claim you never check your messages.", back: "\"You might be right, I don't check my inbox as often as I should.\"", guideFront: "Agree with what is true when...", guideBack: "A partial agreement" },
+            { front: "Negative Inquiry — they pace around.", back: "\"What specifically happened with the logistics team's delivery?\"", guideFront: "Invite the criticism when...", guideBack: "A curious question" },
+            { front: "Negative Assertion — they state that you missed the 10:00 AM approval deadline.", back: "\"You're right, I missed that approval deadline completely. That's my mistake.\"", guideFront: "Own the mistake plainly when...", guideBack: "A calm admission" },
           ]
         },
         {
           bundle: 'pro',
           situation: "An associate snaps: \"You ruin every piece of equipment you touch in the lab!\"",
           steps: [
-            { front: "Fogging — they claim you are far too impatient.", back: "\"That's probably true, I do get impatient sometimes.\"" },
-            { front: "Negative Inquiry — they point to the workstation.", back: "\"What specifically is broken on the lab workstation?\"" },
-            { front: "Negative Assertion — they note that you left the calibration setting on high overnight.", back: "\"You're right, I left the setting on high. That was very careless of me.\"" },
+            { front: "Fogging — they claim you are far too impatient.", back: "\"That's probably true, I do get impatient sometimes.\"", guideFront: "Agree with what is true when...", guideBack: "A partial agreement" },
+            { front: "Negative Inquiry — they point to the workstation.", back: "\"What specifically is broken on the lab workstation?\"", guideFront: "Invite the criticism when...", guideBack: "A curious question" },
+            { front: "Negative Assertion — they note that you left the calibration setting on high overnight.", back: "\"You're right, I left the setting on high. That was very careless of me.\"", guideFront: "Own the mistake plainly when...", guideBack: "A calm admission" },
           ]
         },
       ]
@@ -7591,27 +7591,27 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "Your supervisor brings back a spreadsheet with a mistake and continues to lecture you after you have corrected it.",
           steps: [
-            { front: "Negative Assertion — they point to the transposition error.", back: "\"You're right, I made a transposition error on that line. That was my mistake.\"" },
-            { front: "Broken Record — they sigh that you must be checked up on constantly.", back: "\"I understand your concern, but I have corrected the sheet now.\"" },
-            { front: "Broken Record — they mutter that this is typical of your work.", back: "\"I see how you feel, but the sheet is correct now and I am moving on to the next task.\"" },
+            { front: "Negative Assertion — they point to the transposition error.", back: "\"You're right, I made a transposition error on that line. That was my mistake.\"", guideFront: "Own the mistake plainly when...", guideBack: "A calm admission" },
+            { front: "Broken Record — they sigh that you must be checked up on constantly.", back: "\"I understand your concern, but I have corrected the sheet now.\"", guideFront: "Repeat your line unchanged when...", guideBack: "One way it could sound" },
+            { front: "Broken Record — they mutter that this is typical of your work.", back: "\"I see how you feel, but the sheet is correct now and I am moving on to the next task.\"", guideFront: "Repeat your line unchanged when...", guideBack: "One way it could sound" },
           ]
         },
         {
           bundle: 'pro',
           situation: "A colleague keeps grumbling about you being ten minutes late to a planning session.",
           steps: [
-            { front: "Negative Assertion — they stare at you as you sit down.", back: "\"You're right, I am ten minutes late. That's my fault entirely.\"" },
-            { front: "Broken Record — they continue to complain that the whole schedule is ruined.", back: "\"I understand it's irritating to wait, but I want to start the agenda now.\"" },
-            { front: "Broken Record — they grumble that you must think your time is more valuable than theirs.", back: "\"I understand you're annoyed, but I want to focus on the agenda now.\"" },
+            { front: "Negative Assertion — they stare at you as you sit down.", back: "\"You're right, I am ten minutes late. That's my fault entirely.\"", guideFront: "Own the mistake plainly when...", guideBack: "A calm admission" },
+            { front: "Broken Record — they continue to complain that the whole schedule is ruined.", back: "\"I understand it's irritating to wait, but I want to start the agenda now.\"", guideFront: "Repeat your line unchanged when...", guideBack: "One way it could sound" },
+            { front: "Broken Record — they grumble that you must think your time is more valuable than theirs.", back: "\"I understand you're annoyed, but I want to focus on the agenda now.\"", guideFront: "Repeat your line unchanged when...", guideBack: "One way it could sound" },
           ]
         },
         {
           bundle: 'pro',
           situation: "A developer keeps bringing up a coding error you made last week in front of the team.",
           steps: [
-            { front: "Negative Assertion — they point to the patched line.", back: "\"That was a sloppy mistake on my part, yes. I'm glad we caught it.\"" },
-            { front: "Broken Record — they complain that the team had to stay late to patch it.", back: "\"I know the team stayed late, and I want to make sure we follow the new review process from now on.\"" },
-            { front: "Broken Record — they sigh that you are always rushing your code.", back: "\"I see what you mean, but I want to focus on today's deployment now.\"" },
+            { front: "Negative Assertion — they point to the patched line.", back: "\"That was a sloppy mistake on my part, yes. I'm glad we caught it.\"", guideFront: "Own the mistake plainly when...", guideBack: "A calm admission" },
+            { front: "Broken Record — they complain that the team had to stay late to patch it.", back: "\"I know the team stayed late, and I want to make sure we follow the new review process from now on.\"", guideFront: "Repeat your line unchanged when...", guideBack: "One way it could sound" },
+            { front: "Broken Record — they sigh that you are always rushing your code.", back: "\"I see what you mean, but I want to focus on today's deployment now.\"", guideFront: "Repeat your line unchanged when...", guideBack: "One way it could sound" },
           ]
         },
       ]

@@ -131,6 +131,19 @@ function scenarioMoveList(inp) {
   return names.map((n, i) => (i + 1) + '. ' + n).join('\n');
 }
 
+// Removes the leading move name from a step front — "Fogging — they claim you
+// are disorganized." becomes "they claim you are disorganized." The split
+// mirrors scenarioMoveList exactly, including the "Step 1." prefix it tolerates,
+// so the two can never disagree about where the name ends. A front with no dash
+// IS the name (v1.27.40) and is left alone: stripping it would empty the card.
+function stripMoveName(front) {
+  const parts = String(front || '').split(/\s+[\u2014\u2013]\s+/);
+  if (parts.length < 2) return front;
+  const drop = /^(step|steg)\s*\d+\.?$/i.test(parts[0].trim()) ? 2 : 1;
+  if (parts.length <= drop) return front;
+  return parts.slice(drop).join(' \u2014 ').trim();
+}
+
 function buildFlowSequence(combo) {
   const seq = [];
   // Filter inputs by active bundle before flattening to cards.
@@ -172,7 +185,17 @@ function buildFlowSequence(combo) {
       guideBack:  inp.guideBack  || 'The steps, in order',
     });
     (inp.steps || []).forEach(s => seq.push({
-      type: 'step', front: s.front, back: s.back,
+      // v1.27.87 — a step whose OWN guide front names the move does not need
+      // the move named on the card as well. In Single Strategy the strategy
+      // name sits above the card, so a guide like "Agree with what is true
+      // when..." completes a sentence the trainee can already see. In
+      // Sequences nothing sits above it, which is why the name was written
+      // into the front — and why it becomes a duplicate the moment the step
+      // carries the strategy's own guide. Stripped for DISPLAY only: the data
+      // keeps the name, because scenarioMoveList reads it to build the list on
+      // the scenario card, handsfree reads the same objects, and the export
+      // round-trip is defined on the stored front.
+      type: 'step', front: s.guideFront ? stripMoveName(s.front) : s.front, back: s.back,
       // Per-card guide text (v1.26.32) — carried through so the engine
       // can override the strategy default for individual steps.
       guideFront: s.guideFront, guideBack: s.guideBack,
