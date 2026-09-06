@@ -967,8 +967,8 @@ const collections = {
   apologizing2: [
     {
       name: "Name What They Felt",
-      guideFront: "Name what they felt when...",
-      guideBack: "A possible response.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "Say what you think it was like for them. \"I can see that upset you.\" \"You must have felt completely stranded.\"\n\nIt works because it is the first evidence that you have thought about them rather than about how to get out of this. Before anything else, the person who was hurt wants to know that the effect on them registered — and until it has, an apology sounds like a formality.\n\nComing from the person who caused it, this move carries weight it would not otherwise have. It is also why the order matters: naming their feeling and then never apologising is worse than saying nothing, because it looks like technique.\n\nTypical phrases: \"I can see that upset you.\", \"That must have been frustrating.\", \"You must have felt…\", \"I think that hurt you more than I realised.\"\n\nFour ways to name it:\n\n1. Say what you observed — safest, because it is about what you saw. \"You went very quiet afterwards.\"\n\n2. Name the likely feeling — the standard version. \"That must have been really frustrating.\"\n\n3. Name the size of it — acknowledges it was not small. \"I think that hurt more than I understood at the time.\"\n\n4. Ask rather than assume — when you genuinely do not know. \"How did that land for you? I don't want to guess.\"\n\nMindset: their feeling, not your intention. What you meant belongs much later, if at all.",
       inputs: [
         { q: "You snapped at a friend and they went quiet.", a: "\"You went quiet after that, and I don't blame you.\"", bundle: 'free' },
@@ -983,8 +983,8 @@ const collections = {
     },
     {
       name: "Show You Understand Why",
-      guideFront: "Show you understand why when...",
-      guideBack: "A possible response.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "Say why it makes sense that they felt that way. Not just that they were upset — why anyone in their position would have been.\n\nIt works because it is the difference between being heard and being humoured. \"I can see you were upset\" acknowledges a fact. \"Of course you were — you'd rearranged your whole afternoon\" says the feeling was reasonable, which is what people are actually waiting for.\n\nThis is the step that stops an apology sounding like management. It requires you to have actually reconstructed their side, which cannot be faked in a sentence.\n\nTypical phrases: \"I understand why that was frustrating.\", \"Of course you were — anyone would be.\", \"That makes complete sense, given that…\", \"You'd every reason to be annoyed.\"\n\nFour ways to show understanding:\n\n1. Name their reasoning — the mechanism, not just the feeling. \"You'd moved two things to be there, and then I didn't show up.\"\n\n2. Say anyone would have — normalises it. \"Anyone would have been annoyed by that.\"\n\n3. Connect it to what they had said before — proves you were listening. \"You'd told me it mattered and I still did it.\"\n\n4. Name what they were entitled to expect — the strongest version. \"You had every reason to think I'd be there. I said I would.\"\n\nMindset: say why it was reasonable, not just that it happened. That is the whole difference.",
       inputs: [
         { q: "You let a friend down after they rearranged things.", a: "\"You moved two things to make it work, and then I didn't turn up. Of course you were annoyed.\"", bundle: 'free' },
@@ -999,8 +999,8 @@ const collections = {
     },
     {
       name: "Say Their Feelings Matter",
-      guideFront: "Say their feelings matter when...",
-      guideBack: "A possible response.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "Say that how they feel is important to you. \"It matters to me that you feel respected.\" \"I don't want to be someone who leaves you standing about.\"\n\nIt works because it moves the apology from the incident to the relationship. Everything before this is about what happened; this step says why you are bothering to have the conversation at all.\n\nIt is the step people find most exposing, and the one that does the most. It is also very easy to say badly — anything abstract sounds like a script. The version that lands names the specific thing you do not want to be.\n\nTypical phrases: \"It matters to me that…\", \"I don't want to be the person who…\", \"You're more important to me than…\", \"I care how this leaves you.\"\n\nFour ways to say it:\n\n1. Name what matters — plain and direct. \"It matters to me that you feel listened to.\"\n\n2. Name what you do not want to be — often more honest and less abstract. \"I don't want to be the friend who's always cancelling.\"\n\n3. Say why the relationship matters more than the thing — good for arguments. \"I'd rather be wrong about this than have it sit between us.\"\n\n4. Say it plainly and shortly — sometimes the whole step is one sentence. \"You matter more to me than the point I was making.\"\n\nMindset: specific and short. Anything general sounds rehearsed, and rehearsed is the last thing this step can afford.",
       inputs: [
         { q: "You keep cancelling on a friend.", a: "\"I don't want to be the friend who always bails.\"", bundle: 'free' },
@@ -1015,8 +1015,8 @@ const collections = {
     },
     {
       name: "Apologise for What You Did",
-      guideFront: "Apologise for what you did when...",
-      guideBack: "A possible response.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "Now say sorry — and say what for, specifically. \"I'm sorry for raising my voice. I should have stayed calm.\"\n\nIt works because specificity is the proof. Anyone can say sorry; naming exactly what you did wrong shows you have understood it and are not hoping to get away with a general gesture.\n\nThis is step four rather than step one for a reason. By now they can hear it, because you have shown you understand what it was like. An apology delivered first, before any of that, is usually heard as wanting the conversation to be over.\n\nTypical phrases: \"I'm sorry for…\", \"I shouldn't have…\", \"That was my fault.\", \"I was wrong to…\"\n\nFour ways to apologise properly:\n\n1. Sorry for the specific action — the standard. \"I'm sorry for going through your things.\"\n\n2. Sorry plus what you should have done — stronger, because it shows you know the alternative. \"I'm sorry I raised my voice. I should have said I needed a minute.\"\n\n3. Own the part that is yours — for situations where it is not all yours. \"The tone was mine and I'm sorry for it. The decision I'd still defend.\"\n\n4. Say it was wrong, not just unfortunate — no hedging. \"That was out of order, and I knew it at the time.\"\n\nMindset: no \"if\", no \"but\", no \"you\". \"Sorry if you were upset\" and \"sorry, but you did too\" are not apologies, and everyone can hear that instantly.",
       inputs: [
         { q: "You raised your voice in an argument.", a: "\"I'm sorry I shouted. I should have said I needed a minute.\"", bundle: 'free' },
@@ -1031,8 +1031,8 @@ const collections = {
     },
     {
       name: "Say What You'll Do Differently",
-      guideFront: "Say what you'll do differently when...",
-      guideBack: "A possible response.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "Name what will change. \"Next time I'll take a pause before reacting.\" \"I'll put it in the calendar the moment you tell me.\"\n\nIt works because it is the only part of an apology that costs you something in the future. Everything before it is words about the past, and a person who has been let down more than once has learned that words about the past are cheap.\n\nThe plan should be **specific and small enough to be believed.** \"I'll be better\" promises nothing. \"I'll write it down while you're saying it\" is checkable, which is what makes it worth something.\n\nTypical phrases: \"Next time I'll…\", \"What I'll do differently is…\", \"I'm going to…\", \"If it happens again, tell me and I'll…\"\n\nFour kinds of plan:\n\n1. A concrete behaviour change — the standard. \"I'll put it in the calendar while we're talking.\"\n\n2. A different response in the same moment — for things you did in the heat of it. \"Next time I'll say I need five minutes rather than carrying on.\"\n\n3. Give them a way to stop it — hands them some control. \"If I start doing it again, just say the word and I'll stop.\"\n\n4. Say what you will not do — sometimes clearer than a positive plan. \"I won't bring it up in front of other people again.\"\n\nMindset: small enough to be believed, specific enough to be checked. Then do it — the plan is only worth anything the second time.",
       inputs: [
         { q: "You raised your voice in an argument.", a: "\"Next time I'll say I need five minutes rather than carrying on.\"", bundle: 'free' },
@@ -3423,8 +3423,8 @@ const collections = {
   conflictemotions: [
     {
       name: "Say What Happened",
-      guideFront: "Say what happened when...",
-      guideBack: "A possible response.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "Describe the event plainly, with no interpretation attached. \"When the door was left unlocked last night…\" — not \"when you were careless again\".\n\nIt works because the facts are the one part nobody can argue with. The moment an interpretation goes in, the conversation becomes about whether that interpretation is fair, and the feeling you were about to express never gets heard.\n\nThe test is the same one that works everywhere: could a camera have recorded it? A camera can record an unlocked door, a late arrival, a message that came at eleven. It cannot record carelessness, thoughtlessness or not caring.\n\nTypical phrases: \"When you…\", \"Last night, when…\", \"The message came at eleven, and…\", \"When the dishes were still there this morning…\"\n\nFour ways to keep it factual:\n\n1. The single event — one occasion, dated. \"When you got in at half seven on Tuesday.\"\n\n2. What you observed — only what you saw or heard. \"The door was unlocked when I came down.\"\n\n3. The pattern with instances — for repeated things, still countable. \"It's been three times this month.\"\n\n4. Cut the adverb — the interpretation usually hides in one word. \"You said it\" rather than \"you snapped it\".\n\nMindset: no \"always\", no \"never\", no character words. Those turn an account into a charge.",
       inputs: [
         { q: "Your partner left the front door unlocked.", a: "\"When I came down this morning the front door was unlocked.\"", bundle: 'free' },
@@ -3439,8 +3439,8 @@ const collections = {
     },
     {
       name: "Name Your Feeling",
-      guideFront: "Name your feeling when...",
-      guideBack: "A possible response.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "Say what you felt, in one accurate word, owned as yours. \"I felt frustrated.\" \"I was worried.\"\n\nIt works because a named feeling is information the other person did not have. Most conflicts run on guesses about each other's state, and the guesses are usually wrong — people read anger where there was fear, or indifference where there was hurt.\n\nTwo things make it land. Choose a word that is actually accurate rather than the nearest big one, and say \"I felt\" rather than \"you made me feel\" — the second is a description of them, and it will be argued with.\n\nTypical phrases: \"I felt…\", \"I was…\", \"What I felt was…\", \"That left me feeling…\"\n\nFour ways to name it:\n\n1. The plain feeling word — the standard. \"I felt annoyed.\"\n\n2. The more accurate word — often smaller than the first one you reach for. \"Not angry, actually. Disappointed.\"\n\n3. Two feelings at once — common and honest. \"I was worried, and a bit annoyed with myself for worrying.\"\n\n4. The feeling under the obvious one — worth reaching for. \"It came out as irritation. Underneath it I was scared.\"\n\nMindset: \"I felt\" and not \"you made me feel\". One is something you know; the other is a claim about them.",
       inputs: [
         { q: "Your partner left the door unlocked and you found it.", a: "\"I felt uneasy about it all morning.\"", bundle: 'free' },
@@ -3455,8 +3455,8 @@ const collections = {
     },
     {
       name: "Say What You Need",
-      guideFront: "Say what you need when...",
-      guideBack: "A possible response.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "Name the thing the feeling points at. Respect, safety, cooperation, trust, privacy, being kept in the loop. \"…because I need to know the house is locked before I sleep.\"\n\nIt works because a feeling on its own is a report, and a need is something that can be met. It also moves the conversation from what went wrong to what would be right, which is the only direction anything gets solved in.\n\nThis is the piece people leave out, and its absence is why so many conflicts repeat. Both people know there was an argument; neither knows what was actually being asked for.\n\nTypical phrases: \"…because I need…\", \"What matters to me is…\", \"The thing I care about here is…\", \"It's about…\"\n\nFour kinds of need:\n\n1. Safety — the most direct. \"I need to feel the house is secure.\"\n\n2. Respect or consideration — the commonest in small conflicts. \"I need my things looked after.\"\n\n3. Cooperation or reliability — for shared work. \"I need to be able to plan around what we agreed.\"\n\n4. Being included or informed — quiet but frequent. \"I need to know before other people do.\"\n\nMindset: name the need, not the person's fault. \"I need to be kept in the loop\" and \"you shut me out\" point at the same thing and go to completely different places.",
       inputs: [
         { q: "You felt uneasy about the unlocked door.", a: "\"…because I need to know the house is locked before I go to sleep.\"", bundle: 'free' },
@@ -3471,8 +3471,8 @@ const collections = {
     },
     {
       name: "Make a Request",
-      guideFront: "Make a request when...",
-      guideBack: "A possible response.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "Say what you would like to happen. \"Could you check the door before you come up?\"\n\nIt works because a feeling and a need together still leave the other person guessing about what to do. Many people, having heard that they upset someone, respond with an apology and no change — not out of indifference, but because nobody said what the change was.\n\nThe request should be **specific, small and doable**. \"Be more considerate\" is not a request; \"text me if you're going to be more than half an hour late\" is something a person can actually do tomorrow.\n\nTypical phrases: \"Could you…?\", \"What I'd like is…\", \"Would you be able to…?\", \"Next time, could we…?\"\n\nFour ways to make it:\n\n1. One concrete action — the standard. \"Could you check it before you come up?\"\n\n2. A request about next time — puts it in the future, where nobody has failed. \"Next time, could you tell me before the meeting rather than in it?\"\n\n3. Ask what would work for them — better when it involves them changing something. \"What would make that easy for you to do?\"\n\n4. A request rather than a rule — leaves them free to answer. \"That's what I'd like. Is that workable?\"\n\nMindset: a request is something they can say no to. If it cannot be declined, it is a demand, and it will be treated as one.",
       inputs: [
         { q: "You have said the door being unlocked left you uneasy.", a: "\"Could you check it before you come up? That's all I'd need.\"", bundle: 'free' },
@@ -3487,8 +3487,8 @@ const collections = {
     },
     {
       name: "Ask What They Felt",
-      guideFront: "Ask what they felt when...",
-      guideBack: "A possible response.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "Ask for their side. \"What was it like from where you were standing?\"\n\nIt works because a conflict has two people in it, and a conversation where only one person's experience is described is not a conversation. It is a well-constructed statement of grievance, and the other person will spend it waiting for their turn rather than listening.\n\nAsking also very often changes what you thought had happened. The lateness had a reason, the interruption was not deliberate, the message was sent and did not arrive. None of that removes your feeling — and all of it changes what to do next.\n\nTypical phrases: \"What was going on for you?\", \"How did that look from your side?\", \"What did you make of it?\", \"Was there something I'm missing?\"\n\nFour ways to ask:\n\n1. Ask for their experience — the standard. \"What was it like from your side?\"\n\n2. Ask what was going on — invites the reason rather than a defence. \"Was something else happening that day?\"\n\n3. Ask how your part landed — brave and usually productive. \"How did I come across in that?\"\n\n4. Ask and then be quiet — the silence is the question.\n\nMindset: ask before you have decided what they will say. A question asked with the answer already prepared is not a question.",
       inputs: [
         { q: "You have said your piece and it is their turn.", a: "\"What was it like from where you were?\"", bundle: 'free' },
@@ -9464,8 +9464,8 @@ const collectionsModeData = {
   apologizing2: [
     {
       name: "Their Side First",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Naming what they felt, showing you understand why and saying their feelings matter — the three steps that come before the word sorry.\n\nThis is the part people skip, and skipping it is why so many sincere apologies fail. An apology that arrives before any of this is heard as a request to move on, however genuinely it is meant.\n\nThe three build on each other. Naming the feeling shows it registered. Showing why it was reasonable stops it sounding like management. Saying it matters explains why you are having the conversation at all.\n\nMindset: get to sorry once they can tell you have understood. Not before.",
       inputs: [
         { q: "A friend has been quiet since you let them down.", a: "\"You've been quiet since Thursday, and I don't blame you.\" [Name What They Felt]", bundle: 'pro' },
@@ -9479,8 +9479,8 @@ const collectionsModeData = {
     },
     {
       name: "The Apology Itself",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Apologising for what you did and saying what will change — the two that carry the actual repair, once the understanding is in place.\n\nThey answer the two questions the other person has: do you know what you did, and is it going to happen again? Neither can be answered with a general expression of regret.\n\nIn this pack they come fourth and fifth rather than first. The same words, said before the understanding, are heard as wanting the conversation to end.\n\nMindset: specific about the past, checkable about the future.",
       inputs: [
         { q: "You have shown you understand and it is time to apologise.", a: "\"I'm sorry I shouted. I should have said I needed a minute.\" [Apologise for What You Did]", bundle: 'pro' },
@@ -9494,8 +9494,8 @@ const collectionsModeData = {
     },
     {
       name: "All Five",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The full set, in order: what they felt, why it was reasonable, why they matter, sorry for the specific thing, and what changes.\n\nThe order is the whole design. Sorry sits at position four, not one, because by then they can hear it.\n\nThe commonest damage is stopping early — doing the understanding beautifully and then never actually apologising, which looks like technique; or apologising and skipping the plan, which is where anyone who has been let down twice stops believing you.\n\nMindset: if you start it, finish it. The last step is the one that costs you something.",
       inputs: [
         { q: "Things have been strained since an argument on Friday.", a: "\"You've barely spoken to me since, and I understand why.\" [Name What They Felt]", bundle: 'pro' },
@@ -10774,8 +10774,8 @@ const collectionsModeData = {
   conflictemotions: [
     {
       name: "Your Side",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Saying what happened, naming your feeling and saying what you need — the three that build your account of it.\n\nEach guards against a different failure. The event guards against arguing about interpretation. The feeling guards against the other person guessing your state and guessing wrong. The need guards against the whole thing being a complaint with nothing to solve.\n\nTogether they make one sentence that is honest, specific and impossible to dismiss — which is the point.\n\nMindset: event, feeling, need. Leave one out and the conversation stalls in a predictable way.",
       inputs: [
         { q: "You are about to say \"you're so careless with the house\".", a: "\"When I came down this morning the front door was unlocked.\" [Say What Happened]", bundle: 'pro' },
@@ -10789,8 +10789,8 @@ const collectionsModeData = {
     },
     {
       name: "Making It a Conversation",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Making a request and asking what they felt — the two that turn an account into an exchange.\n\nThey answer the two ways a well-expressed feeling still fails. Without a request, the other person knows you are unhappy and does not know what to do. Without their side, you have delivered a statement and they have waited it out.\n\nBoth hand something over: the request hands them something to do, and the question hands them the floor.\n\nMindset: say your piece, then give them theirs. It is not finished until they have spoken.",
       inputs: [
         { q: "You have named the feeling and the need and they look stuck.", a: "\"Could you check it before you come up? That's all I'd need.\" [Make a Request]", bundle: 'pro' },
@@ -10804,8 +10804,8 @@ const collectionsModeData = {
     },
     {
       name: "All Five",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The full set. A whole exchange uses all of them, roughly in order, though the request often moves depending on how they respond.\n\nA rough shape: what happened, what you felt, what you need, what you would like, and then their side. The last one is not optional — it is what stops the other four being a speech.\n\nThe commonest damage is stopping after the feeling. It is the most exposed moment and the easiest place to run out of nerve, and it leaves the other person holding something they cannot do anything with.\n\nMindset: if you start it, finish it. The need and the request are what make the feeling useful.",
       inputs: [
         { q: "You want to raise something without it starting a row.", a: "\"When I came down this morning the door was unlocked.\" [Say What Happened]", bundle: 'pro' },

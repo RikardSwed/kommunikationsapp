@@ -868,8 +868,6 @@ const memorizeCollections = {
   apologizing2: [
     {
       name: "Core Idea",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The shape of the pack: five steps in an order that decides whether the apology works.",
       cards: [
         { q: "What are the five steps in this pack?", a: "Name what they felt, show you understand why, say their feelings matter, apologise for what you did, say what you'll do differently.", bundle: 'free' },
@@ -882,8 +880,6 @@ const memorizeCollections = {
     },
     {
       name: "Name What They Felt",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The first step — evidence that the effect on them registered.",
       cards: [
         { q: "What does this step prove?", a: "That you have thought about them rather than about getting out of the conversation.", bundle: 'free' },
@@ -896,8 +892,6 @@ const memorizeCollections = {
     },
     {
       name: "Show You Understand Why",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The step that separates being heard from being humoured.",
       cards: [
         { q: "What is the difference between this step and the one before?", a: "The first says the feeling registered; this says it was reasonable.", bundle: 'free' },
@@ -910,8 +904,6 @@ const memorizeCollections = {
     },
     {
       name: "Say Their Feelings Matter",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The step that moves the apology from the incident to the relationship.",
       cards: [
         { q: "What does this step explain?", a: "Why you are bothering to have the conversation at all.", bundle: 'free' },
@@ -924,8 +916,6 @@ const memorizeCollections = {
     },
     {
       name: "Apologise for What You Did",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The actual apology, specific and unconditional.",
       cards: [
         { q: "What makes an apology specific enough?", a: "Naming exactly what you did, not a general expression of regret.", bundle: 'free' },
@@ -938,8 +928,6 @@ const memorizeCollections = {
     },
     {
       name: "Say What You'll Do Differently",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The step that costs you something in future.",
       cards: [
         { q: "Why is this the most important step to someone let down before?", a: "It is the only part that is not words about the past.", bundle: 'free' },
@@ -3117,8 +3105,6 @@ const memorizeCollections = {
   conflictemotions: [
     {
       name: "Core Idea",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The shape of the pack: four steps that build one expression, plus the move that makes it a conversation.",
       cards: [
         { q: "What are the five strategies in this pack?", a: "Say what happened, name your feeling, say what you need, make a request, ask what they felt.", bundle: 'free' },
@@ -3131,8 +3117,6 @@ const memorizeCollections = {
     },
     {
       name: "Say What Happened",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The factual foundation.",
       cards: [
         { q: "What is the test for a factual account?", a: "Could a camera have recorded it?", bundle: 'free' },
@@ -3145,8 +3129,6 @@ const memorizeCollections = {
     },
     {
       name: "Name Your Feeling",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The information the other person did not have.",
       cards: [
         { q: "Why is naming a feeling useful in a conflict?", a: "Most conflicts run on guesses about each other's state, and the guesses are usually wrong.", bundle: 'free' },
@@ -3159,8 +3141,6 @@ const memorizeCollections = {
     },
     {
       name: "Say What You Need",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The move that makes a feeling solvable.",
       cards: [
         { q: "What is the difference between a feeling and a need?", a: "A feeling is a report; a need is something that can be met.", bundle: 'free' },
@@ -3173,8 +3153,6 @@ const memorizeCollections = {
     },
     {
       name: "Make a Request",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The move that gives them something to do.",
       cards: [
         { q: "What does a feeling and a need still leave missing?", a: "What you would actually like to happen.", bundle: 'free' },
@@ -3187,8 +3165,6 @@ const memorizeCollections = {
     },
     {
       name: "Ask What They Felt",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The move that makes it an exchange.",
       cards: [
         { q: "Why does a conflict conversation need this?", a: "Otherwise only one person's experience is described, and the other waits for their turn instead of listening.", bundle: 'free' },

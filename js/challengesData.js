@@ -422,8 +422,8 @@ const challengesCollections = {
   apologizing2: [
     {
       name: "You Went Straight to Sorry",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "You apologised first, before showing any understanding, and it did not land. This is the commonest failure in a serious apology and it does not feel like a failure — it feels like getting straight to the point.\n\nWhat the other person heard was a request to move on. The fix is to go back and do the part you skipped, out loud, rather than repeating the apology more sincerely.\n\nMindset: it is not that the sorry was wrong. It arrived too early.",
       inputs: [
         { q: "You apologised and it clearly did not land.", a: "\"I jumped to sorry. Let me go back — you must have felt completely stranded.\" [Name What They Felt]", bundle: 'pro' },
@@ -435,8 +435,8 @@ const challengesCollections = {
     },
     {
       name: "You Do Not Think You Were Wrong",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "You have hurt someone and you still think your position was right. This is the situation people handle worst, usually by apologising for nothing in particular in the hope that it passes.\n\nThere is nearly always something genuinely yours: the timing, the tone, the audience, the fact that they found out from someone else. Apologise for that specifically and hold the substance separately. It is honest, and it works far better than an apology you do not mean.\n\nIf literally nothing is yours, say that kindly rather than performing regret you do not feel.\n\nMindset: apologise for your part precisely. Do not apologise for the whole thing to end the conversation.",
       inputs: [
         { q: "You stand by the decision but not how you said it.", a: "\"The tone was wrong and I'm sorry for it. The decision I'd still make the same.\" [Apologise for What You Did]", bundle: 'pro' },
@@ -448,8 +448,8 @@ const challengesCollections = {
     },
     {
       name: "They Do Not Accept It",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "You have apologised well and it has not been accepted. Perhaps not yet, perhaps not ever.\n\nAn apology is offered, not transacted. Pressing for acceptance — repeating it, listing how sincere it was, pointing out that you have apologised — turns repair into pressure and makes the whole thing about your need to be forgiven.\n\nWhat you can control is the plan and whether you keep it. That is what changes things over weeks, not the conversation itself.\n\nMindset: you can apologise. You cannot make it enough. Let the change do the rest.",
       inputs: [
         { q: "They say sorry does not fix it.", a: "\"It doesn't. I'm not expecting it to.\" [Name What They Felt]", bundle: 'pro' },
@@ -461,8 +461,8 @@ const challengesCollections = {
     },
     {
       name: "It Sounds Like a Script",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The steps are useful and they can be heard as steps. Someone who notices you working through a structure will trust the whole thing less, not more.\n\nWhat causes it is almost always abstraction — general phrases about feelings and respect that could have been said to anyone. The cure is specifics: their actual afternoon, the actual room, the actual thing you did.\n\nMindset: if the sentence could be said to anybody, it will sound like a technique.",
       inputs: [
         { q: "You are about to say \"I understand that made you feel disrespected\".", a: "\"You'd moved two things to be there, and I didn't turn up.\" [Show You Understand Why]", bundle: 'pro' },
@@ -474,8 +474,8 @@ const challengesCollections = {
     },
     {
       name: "This Should Have Been Quicker",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Not everything needs five steps. Running the full version over a forgotten attachment makes the other person the injured party in something they had already forgotten, and turns your discomfort into their problem.\n\nThe size test still applies here: did it land on them, or did it only embarrass you? If it is the second, the everyday version is the right tool and this pack is the wrong one.\n\nMindset: the full apology is for things that actually hurt someone.",
       inputs: [
         { q: "You are about to run five steps over something small.", a: "\"Sorry — that was my fault. Doing it now.\" [Apologise for What You Did]", bundle: 'pro' },
@@ -2298,8 +2298,8 @@ const challengesCollections = {
   conflictemotions: [
     {
       name: "The Account Has a Judgement In It",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "\"I felt hurt when you were dismissive.\" It looks like a feeling statement and it contains a verdict, and the other person will answer the verdict rather than the feeling.\n\nThe interpretation usually hides in a single word — an adverb, an adjective, or a verb that describes intent. Strip it out and the same sentence becomes something nobody can argue with.\n\nMindset: could a camera have recorded it? If not, it is a conclusion.",
       inputs: [
         { q: "You are about to say \"when you were dismissive\".", a: "\"When you answered before I'd finished the sentence.\" [Say What Happened]", bundle: 'pro' },
@@ -2311,8 +2311,8 @@ const challengesCollections = {
     },
     {
       name: "You Stopped After the Feeling",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "You said what happened and how you felt, and then stopped — because that was the exposed part and the nerve ran out.\n\nWhat you have left them with is a problem and no solution. Many people respond to that with an apology and no change, not out of indifference but because nobody said what the change was.\n\nThe need and the request are the useful half. They are also the easier half to say.\n\nMindset: the hard part is over. Finish it.",
       inputs: [
         { q: "You have said how you felt and gone quiet.", a: "\"…because I need to be able to plan around what we agreed.\" [Say What You Need]", bundle: 'pro' },
@@ -2324,8 +2324,8 @@ const challengesCollections = {
     },
     {
       name: "It Is Not the Moment",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Mid-argument, in front of other people, at half past eleven at night, or when either of you is too tired to do it well.\n\nExpressing a feeling badly is worse than expressing it late, because the botched version becomes the thing you both remember. Choosing a moment is not avoidance as long as you name when you will come back to it.\n\nMindset: pick the moment, and say when.",
       inputs: [
         { q: "You are in the middle of a row and about to add this.", a: "\"I want to say something about last night. Not now, though — tomorrow.\" [Say What Happened]", bundle: 'pro' },
@@ -2337,8 +2337,8 @@ const challengesCollections = {
     },
     {
       name: "They Counter With Their Own",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "You raise something and they immediately raise something of theirs. Sometimes it is deflection; often it is a real grievance that has been waiting.\n\nEither way, trying to do both at once means neither gets heard. Concede what is fair, keep yours on the table, and offer theirs a proper turn rather than dismissing it.\n\nMindset: one at a time, and genuinely come back to theirs.",
       inputs: [
         { q: "They answer your point with a grievance of their own.", a: "\"That's fair, and it's a separate thing. Can we do this one first?\" [Say What You Need]", bundle: 'pro' },
@@ -2350,8 +2350,8 @@ const challengesCollections = {
     },
     {
       name: "You Might Be Wrong About It",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "They answer, and it turns out the message was sent, the lateness had a reason, or the interruption was not what you thought.\n\nThe feeling was still real, and the account of what happened has changed. Both of those are true at once, and saying so is not backing down — it is what makes your next account believable.\n\nMindset: update the facts, keep the feeling, and say which is which.",
       inputs: [
         { q: "Their explanation changes what you thought happened.", a: "\"That's not what I thought had happened. That does change it.\" [Ask What They Felt]", bundle: 'pro' },

@@ -1322,8 +1322,8 @@ const multiStepCollections = {
   apologizing2: [
     {
       name: "The Full Five Steps",
-      guideFront: "The step you are on — say your version out loud.",
-      guideBack: "One way it could sound.",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
       description: "The whole apology, start to finish: what they felt, why it was reasonable, why they matter, sorry for the specific thing, and what will change.\n\nThis one is a monologue. You are saying it as a continuous piece, and each card is the next step. Read the step, say your own version out loud, then turn the card.\n\nNotice where sorry sits. It is the fourth thing, not the first, and that ordering is the pack's central idea: an apology delivered before you have shown you understand is heard as wanting the conversation to end.\n\nMindset: each step earns the next. The plan at the end is what makes the rest worth believing.",
       inputs: [
         {
@@ -1352,55 +1352,55 @@ const multiStepCollections = {
     },
     {
       name: "When They Are Still Angry",
-      guideFront: "The step you are on — say your version out loud.",
-      guideBack: "One way it could sound.",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
       description: "An apology does not always resolve things on delivery. Sometimes the other person is still angry, does not accept it yet, or wants to say more before they are ready to move.\n\nThis is an exchange rather than a monologue. The move throughout is to stay in it without defending yourself and without pressing for the apology to be accepted. An apology is offered, not transacted — and the moment you start arguing that it was a good apology, it stops being one.\n\nMindset: let them be angry at you for a bit. That is part of it, not a sign it failed.",
       inputs: [
         {
           bundle: 'pro',
           situation: "You have apologised properly and the other person is still visibly angry.",
           steps: [
-            { front: "Name What They Felt — they say, \"You can't just say sorry and make it fine.\"", back: "\"No. I'm not expecting it to be fine because I said something.\"" },
-            { front: "Show You Understand Why — they say, \"You've done this before.\"", back: "\"You're right, and that's exactly why sorry on its own isn't worth much here.\"" },
-            { front: "Say What You'll Do Differently — they say, \"So what's actually different?\"", back: "\"It goes in the calendar when you tell me, not in my head. You'll be able to see whether it works.\"" },
-            { front: "Say Their Feelings Matter — they say, \"We'll see.\"", back: "\"Fair. I'd rather you were sceptical than pretend it's fine.\"" },
+            { front: "Name What They Felt — they say, \"You can't just say sorry and make it fine.\"", back: "\"No. I'm not expecting it to be fine because I said something.\"", guideFront: "Say what it was like for them when...", guideBack: "An attempt at their experience" },
+            { front: "Show You Understand Why — they say, \"You've done this before.\"", back: "\"You're right, and that's exactly why sorry on its own isn't worth much here.\"", guideFront: "Say why it makes sense when...", guideBack: "The reason it was fair to feel that" },
+            { front: "Say What You'll Do Differently — they say, \"So what's actually different?\"", back: "\"It goes in the calendar when you tell me, not in my head. You'll be able to see whether it works.\"", guideFront: "Name what will change when...", guideBack: "One checkable change" },
+            { front: "Say Their Feelings Matter — they say, \"We'll see.\"", back: "\"Fair. I'd rather you were sceptical than pretend it's fine.\"", guideFront: "Say that how they feel matters when...", guideBack: "A statement that it counts" },
           ]
         },
         {
           bundle: 'pro',
           situation: "You have apologised for one thing and the conversation has widened into two or three other grievances.",
           steps: [
-            { front: "Name What They Felt — they say, \"And it's not just this. It's the whole way you talk to me sometimes.\"", back: "\"That's a bigger thing than I came in here with, and it sounds like it's been building.\"" },
-            { front: "Show You Understand Why — they say, \"It has, actually.\"", back: "\"Then this one's probably the small version of something else. I'd rather hear the whole thing.\"" },
-            { front: "Apologise for What You Did — they say, \"I don't know where to start.\"", back: "\"Start anywhere. I'm sorry for yesterday regardless — that one I'm clear about.\"" },
-            { front: "Say Their Feelings Matter — they say, \"Okay. Give me a minute.\"", back: "\"Take it. I'm not going anywhere.\"" },
+            { front: "Name What They Felt — they say, \"And it's not just this. It's the whole way you talk to me sometimes.\"", back: "\"That's a bigger thing than I came in here with, and it sounds like it's been building.\"", guideFront: "Say what it was like for them when...", guideBack: "An attempt at their experience" },
+            { front: "Show You Understand Why — they say, \"It has, actually.\"", back: "\"Then this one's probably the small version of something else. I'd rather hear the whole thing.\"", guideFront: "Say why it makes sense when...", guideBack: "The reason it was fair to feel that" },
+            { front: "Apologise for What You Did — they say, \"I don't know where to start.\"", back: "\"Start anywhere. I'm sorry for yesterday regardless — that one I'm clear about.\"", guideFront: "Say sorry, and what for when...", guideBack: "The apology, with the act named" },
+            { front: "Say Their Feelings Matter — they say, \"Okay. Give me a minute.\"", back: "\"Take it. I'm not going anywhere.\"", guideFront: "Say that how they feel matters when...", guideBack: "A statement that it counts" },
           ]
         },
       ]
     },
     {
       name: "When It Was a Long Time Ago",
-      guideFront: "The step you are on — say your version out loud.",
-      guideBack: "One way it could sound.",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
       description: "Something from months or years back is still sitting there. Raising it feels strange, and there is a real risk of reopening something the other person has put down.\n\nAcknowledging the delay is what makes it work, and asking before you launch is the courtesy that separates repair from imposing. Some people would rather leave it, and that answer has to be genuinely available.\n\nMindset: name the delay, ask before you open it, and accept the answer.",
       inputs: [
         {
           bundle: 'pro',
           situation: "Something happened two years ago that you have never apologised for, and it has been on your mind.",
           steps: [
-            { front: "Say Their Feelings Matter — you raise it out of nowhere.", back: "\"This is very late and you may have put it down entirely. Can I bring something up?\"" },
-            { front: "Name What They Felt — they say, \"Go on.\"", back: "\"I think that whole thing left you feeling like I'd chosen someone else over you.\"" },
-            { front: "Apologise for What You Did — they say, \"That's about right, yes.\"", back: "\"I'm sorry. I should have said something at the time and I didn't.\"" },
-            { front: "Say What You'll Do Differently — they say, \"It was a long time ago.\"", back: "\"It was. I'd still rather be the person who says it late than not at all.\"" },
+            { front: "Say Their Feelings Matter — you raise it out of nowhere.", back: "\"This is very late and you may have put it down entirely. Can I bring something up?\"", guideFront: "Say that how they feel matters when...", guideBack: "A statement that it counts" },
+            { front: "Name What They Felt — they say, \"Go on.\"", back: "\"I think that whole thing left you feeling like I'd chosen someone else over you.\"", guideFront: "Say what it was like for them when...", guideBack: "An attempt at their experience" },
+            { front: "Apologise for What You Did — they say, \"That's about right, yes.\"", back: "\"I'm sorry. I should have said something at the time and I didn't.\"", guideFront: "Say sorry, and what for when...", guideBack: "The apology, with the act named" },
+            { front: "Say What You'll Do Differently — they say, \"It was a long time ago.\"", back: "\"It was. I'd still rather be the person who says it late than not at all.\"", guideFront: "Name what will change when...", guideBack: "One checkable change" },
           ]
         },
         {
           bundle: 'pro',
           situation: "You have raised something old and the other person does not want to reopen it.",
           steps: [
-            { front: "Name What They Felt — they say, \"I'd honestly rather leave it.\"", back: "\"That's fair. I don't want to make you go back there for my benefit.\"" },
-            { front: "Apologise for What You Did — they say, \"It's fine, really.\"", back: "\"Then one sentence and I'll stop: I was in the wrong, and I'm sorry.\"" },
-            { front: "Say Their Feelings Matter — they say, \"Thank you. Genuinely.\"", back: "\"That's all I wanted to say. It's been bothering me for a long time.\"" },
+            { front: "Name What They Felt — they say, \"I'd honestly rather leave it.\"", back: "\"That's fair. I don't want to make you go back there for my benefit.\"", guideFront: "Say what it was like for them when...", guideBack: "An attempt at their experience" },
+            { front: "Apologise for What You Did — they say, \"It's fine, really.\"", back: "\"Then one sentence and I'll stop: I was in the wrong, and I'm sorry.\"", guideFront: "Say sorry, and what for when...", guideBack: "The apology, with the act named" },
+            { front: "Say Their Feelings Matter — they say, \"Thank you. Genuinely.\"", back: "\"That's all I wanted to say. It's been bothering me for a long time.\"", guideFront: "Say that how they feel matters when...", guideBack: "A statement that it counts" },
           ]
         },
       ]
@@ -3522,20 +3522,20 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "You have said no to covering a shift. Your colleague is not letting it go.",
           steps: [
-            { front: "Show You Understand First — they say, \"There's genuinely nobody else.\"", back: "\"I know, and I'm not pretending that's easy.\"" },
-            { front: "Say No Simply — they say, \"So you can't help me out at all?\"", back: "\"Not with the shift, no.\"" },
-            { front: "Offer What You Can Do — they say, \"Right. Great.\"", back: "\"I can ring round the others for you this afternoon, if that's useful.\"" },
-            { front: "Say No Simply — they say, \"It's the shift I need, though.\"", back: "\"I understand. It's still a no from me.\"" },
+            { front: "Show You Understand First — they say, \"There's genuinely nobody else.\"", back: "\"I know, and I'm not pretending that's easy.\"", guideFront: "Say you have understood, then refuse when...", guideBack: "Understanding, then the no" },
+            { front: "Say No Simply — they say, \"So you can't help me out at all?\"", back: "\"Not with the shift, no.\"", guideFront: "Decline in one short sentence when...", guideBack: "The refusal, on its own" },
+            { front: "Offer What You Can Do — they say, \"Right. Great.\"", back: "\"I can ring round the others for you this afternoon, if that's useful.\"", guideFront: "Say what you can do instead when...", guideBack: "The smaller thing, with its edges" },
+            { front: "Say No Simply — they say, \"It's the shift I need, though.\"", back: "\"I understand. It's still a no from me.\"", guideFront: "Decline in one short sentence when...", guideBack: "The refusal, on its own" },
           ]
         },
         {
           bundle: 'pro',
           situation: "You have declined an invitation and your friend is visibly let down.",
           steps: [
-            { front: "Show You Understand First — they say, \"You never come to anything any more.\"", back: "\"That's fair, actually. I've said no to the last two.\"" },
-            { front: "Give a Short Reason — they say, \"So what is it?\"", back: "\"I'm just flat out at the moment. It's nothing to do with you.\"" },
-            { front: "Offer What You Can Do — they say, \"Alright.\"", back: "\"Can we do something the week after? I'd properly like to.\"" },
-            { front: "Say No Simply — they say, \"You'll cancel that too.\"", back: "\"Maybe I will. This one I'm still saying no to, though.\"" },
+            { front: "Show You Understand First — they say, \"You never come to anything any more.\"", back: "\"That's fair, actually. I've said no to the last two.\"", guideFront: "Say you have understood, then refuse when...", guideBack: "Understanding, then the no" },
+            { front: "Give a Short Reason — they say, \"So what is it?\"", back: "\"I'm just flat out at the moment. It's nothing to do with you.\"", guideFront: "Add one brief reason when...", guideBack: "A reason about your circumstances" },
+            { front: "Offer What You Can Do — they say, \"Alright.\"", back: "\"Can we do something the week after? I'd properly like to.\"", guideFront: "Say what you can do instead when...", guideBack: "The smaller thing, with its edges" },
+            { front: "Say No Simply — they say, \"You'll cancel that too.\"", back: "\"Maybe I will. This one I'm still saying no to, though.\"", guideFront: "Decline in one short sentence when...", guideBack: "The refusal, on its own" },
           ]
         },
       ]
@@ -3654,8 +3654,8 @@ const multiStepCollections = {
   conflictemotions: [
     {
       name: "The Whole Thing",
-      guideFront: "The step you are on — say your version out loud.",
-      guideBack: "One way it could sound.",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
       description: "The full expression: what happened, what you felt, what you need, what you would like, and then their side.\n\nThe first four are a monologue — you say them as one continuous piece before they answer. Read the step, say your own version out loud, then turn the card.\n\nThe order does real work. The event first means nothing is arguable yet. The feeling second means it arrives attached to something concrete. The need third turns it from a complaint into something solvable, and the request fourth gives them somewhere to go.\n\nMindset: each step earns the next. Stopping after the feeling is where most of these go wrong.",
       inputs: [
         {
@@ -3684,56 +3684,56 @@ const multiStepCollections = {
     },
     {
       name: "When It Gets Warm",
-      guideFront: "The step you are on — say your version out loud.",
-      guideBack: "One way it could sound.",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
       description: "They defend themselves, or counter with something of their own, or the conversation heats up.\n\nThis is an exchange rather than a monologue. The move throughout is to concede what is fair, keep your own account unchanged, and return to the need — which is the part that cannot be argued with, because it is a statement about you.\n\nMindset: do not defend the account. Return to what you need.",
       inputs: [
         {
           bundle: 'pro',
           situation: "You have raised the unlocked door and your partner responds with a grievance of their own.",
           steps: [
-            { front: "Say What Happened — they say, \"You leave the hob on constantly.\"", back: "\"I do, sometimes. This one's about the door.\"" },
-            { front: "Name Your Feeling — they say, \"So mine doesn't count?\"", back: "\"It does. I felt uneasy about the door, and I'd like to talk about the hob separately.\"" },
-            { front: "Say What You Need — they say, \"It's always one rule for you.\"", back: "\"I need to be able to raise one thing without it becoming a list.\"" },
-            { front: "Ask What They Felt — they say, \"Fine. Go on then.\"", back: "\"No — say the hob thing. I'd rather hear it than have it stored up.\"" },
+            { front: "Say What Happened — they say, \"You leave the hob on constantly.\"", back: "\"I do, sometimes. This one's about the door.\"", guideFront: "Describe the event with nothing added when...", guideBack: "The bare facts, no reading" },
+            { front: "Name Your Feeling — they say, \"So mine doesn't count?\"", back: "\"It does. I felt uneasy about the door, and I'd like to talk about the hob separately.\"", guideFront: "Say what you felt, in one word when...", guideBack: "One feeling, owned" },
+            { front: "Say What You Need — they say, \"It's always one rule for you.\"", back: "\"I need to be able to raise one thing without it becoming a list.\"", guideFront: "Name what the feeling points at when...", guideBack: "The need underneath" },
+            { front: "Ask What They Felt — they say, \"Fine. Go on then.\"", back: "\"No — say the hob thing. I'd rather hear it than have it stored up.\"", guideFront: "Ask for their side when...", guideBack: "A question about their version" },
           ]
         },
         {
           bundle: 'pro',
           situation: "You have said how something made you feel and they think the reaction is out of proportion.",
           steps: [
-            { front: "Name Your Feeling — they say, \"It's not that big a deal.\"", back: "\"Maybe not to you. It's what I felt, though.\"" },
-            { front: "Say What You Need — they say, \"You're making a thing out of nothing.\"", back: "\"It's a small thing that's about a bigger one. I need to feel planned around.\"" },
-            { front: "Make a Request — they say, \"So what do you want me to do?\"", back: "\"Just a message when you know you'll be late. That's it.\"" },
-            { front: "Ask What They Felt — they say, \"Alright, I can do that.\"", back: "\"And is there something in this from your side? You've seemed stretched.\"" },
+            { front: "Name Your Feeling — they say, \"It's not that big a deal.\"", back: "\"Maybe not to you. It's what I felt, though.\"", guideFront: "Say what you felt, in one word when...", guideBack: "One feeling, owned" },
+            { front: "Say What You Need — they say, \"You're making a thing out of nothing.\"", back: "\"It's a small thing that's about a bigger one. I need to feel planned around.\"", guideFront: "Name what the feeling points at when...", guideBack: "The need underneath" },
+            { front: "Make a Request — they say, \"So what do you want me to do?\"", back: "\"Just a message when you know you'll be late. That's it.\"", guideFront: "Say what you would like to happen when...", guideBack: "A request you could act on" },
+            { front: "Ask What They Felt — they say, \"Alright, I can do that.\"", back: "\"And is there something in this from your side? You've seemed stretched.\"", guideFront: "Ask for their side when...", guideBack: "A question about their version" },
           ]
         },
       ]
     },
     {
       name: "When They Bring It to You",
-      guideFront: "The step you are on — say your version out loud.",
-      guideBack: "One way it could sound.",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
       description: "The same skill from the other chair. Someone is expressing a feeling to you, and what you do in the first thirty seconds decides whether it becomes a conversation or a row.\n\nThe moves are simple and hard: do not defend yet, find the need under the feeling, and ask before you explain. Your explanation is probably true, and it will land far better after they have been heard than instead of it.\n\nMindset: their account first, your side second. Both get said — the order is what matters.",
       inputs: [
         {
           bundle: 'pro',
           situation: "A friend tells you they were hurt that you cancelled on them again.",
           steps: [
-            { front: "Ask What They Felt — they say, \"It's the third time you've cancelled.\"", back: "\"Say the rest. What was it like when the message came?\"" },
-            { front: "Say What They Need — they say, \"Like I'm the one who always fits round you.\"", back: "\"So it's about being planned around rather than about Saturday.\"" },
-            { front: "Name Your Feeling — they say, \"Yes. Exactly that.\"", back: "\"That's fair, and I feel pretty rubbish hearing it, which probably means it's true.\"" },
-            { front: "Make a Request — they say, \"I'm not trying to make you feel bad.\"", back: "\"I know. Can we put something in the diary now, so it's not me proposing and cancelling?\"" },
+            { front: "Ask What They Felt — they say, \"It's the third time you've cancelled.\"", back: "\"Say the rest. What was it like when the message came?\"", guideFront: "Ask for their side when...", guideBack: "A question about their version" },
+            { front: "Say What They Need — they say, \"Like I'm the one who always fits round you.\"", back: "\"So it's about being planned around rather than about Saturday.\"", guideFront: "Name what their feeling points at when...", guideBack: "Their need, said back" },
+            { front: "Name Your Feeling — they say, \"Yes. Exactly that.\"", back: "\"That's fair, and I feel pretty rubbish hearing it, which probably means it's true.\"", guideFront: "Say what you felt, in one word when...", guideBack: "One feeling, owned" },
+            { front: "Make a Request — they say, \"I'm not trying to make you feel bad.\"", back: "\"I know. Can we put something in the diary now, so it's not me proposing and cancelling?\"", guideFront: "Say what you would like to happen when...", guideBack: "A request you could act on" },
           ]
         },
         {
           bundle: 'pro',
           situation: "A colleague says they felt undermined by something you said in a meeting.",
           steps: [
-            { front: "Ask What They Felt — they say, \"That comment in the meeting wasn't great.\"", back: "\"Tell me what it was like from your side.\"" },
-            { front: "Say What They Need — they say, \"It made it look like I hadn't checked.\"", back: "\"So it's about how it looked to the room, more than the point itself.\"" },
-            { front: "Name Your Feeling — they say, \"Yes, mostly.\"", back: "\"That wasn't what I meant, and I can see it did that. I'm annoyed with myself, honestly.\"" },
-            { front: "Make a Request — they say, \"I just didn't want to let it sit.\"", back: "\"I'm glad you didn't. Tell me in the moment next time if you can — I'd rather fix it there.\"" },
+            { front: "Ask What They Felt — they say, \"That comment in the meeting wasn't great.\"", back: "\"Tell me what it was like from your side.\"", guideFront: "Ask for their side when...", guideBack: "A question about their version" },
+            { front: "Say What They Need — they say, \"It made it look like I hadn't checked.\"", back: "\"So it's about how it looked to the room, more than the point itself.\"", guideFront: "Name what their feeling points at when...", guideBack: "Their need, said back" },
+            { front: "Name Your Feeling — they say, \"Yes, mostly.\"", back: "\"That wasn't what I meant, and I can see it did that. I'm annoyed with myself, honestly.\"", guideFront: "Say what you felt, in one word when...", guideBack: "One feeling, owned" },
+            { front: "Make a Request — they say, \"I just didn't want to let it sit.\"", back: "\"I'm glad you didn't. Tell me in the moment next time if you can — I'd rather fix it there.\"", guideFront: "Say what you would like to happen when...", guideBack: "A request you could act on" },
           ]
         },
       ]
@@ -5017,18 +5017,18 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "A colleague wants to keep a deadline you think should move.",
           steps: [
-            { front: "Step 1 · Say it back", back: "\"So you'd keep the date where it is.\"" },
-            { front: "Step 2 · Grant the true part", back: "\"And you're right that moving it means telling the client twice.\"" },
-            { front: "Step 3 · Differ, with a reason", back: "\"I'd still move it — the last two slipped anyway, and we told them late.\"" },
+            { front: "Step 1 · Say it back", back: "\"So you'd keep the date where it is.\"", guideFront: "Say their view back when...", guideBack: "Their view, in your words" },
+            { front: "Step 2 · Grant the true part", back: "\"And you're right that moving it means telling the client twice.\"", guideFront: "Grant the part that is true when...", guideBack: "The concession, before the difference" },
+            { front: "Step 3 · Differ, with a reason", back: "\"I'd still move it — the last two slipped anyway, and we told them late.\"", guideFront: "Differ, and say why when...", guideBack: "Your view, with the reason attached" },
           ]
         },
         {
           bundle: 'pro',
           situation: "A friend argues that phones should be banned in schools.",
           steps: [
-            { front: "Step 1 · Say it back", back: "\"You'd take them off them entirely during the day.\"" },
-            { front: "Step 2 · Grant the true part", back: "\"And it's true the lessons I've seen go best are the ones where they're away.\"" },
-            { front: "Step 3 · Differ, with a reason", back: "\"I'd keep them in the bag rather than confiscate, because the fight over it costs more than the phones do.\"" },
+            { front: "Step 1 · Say it back", back: "\"You'd take them off them entirely during the day.\"", guideFront: "Say their view back when...", guideBack: "Their view, in your words" },
+            { front: "Step 2 · Grant the true part", back: "\"And it's true the lessons I've seen go best are the ones where they're away.\"", guideFront: "Grant the part that is true when...", guideBack: "The concession, before the difference" },
+            { front: "Step 3 · Differ, with a reason", back: "\"I'd keep them in the bag rather than confiscate, because the fight over it costs more than the phones do.\"", guideFront: "Differ, and say why when...", guideBack: "Your view, with the reason attached" },
           ]
         },
       ]
@@ -5043,18 +5043,18 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "Someone says the whole system is broken.",
           steps: [
-            { front: "Step 1 · Notice the vague part", back: "(broken could mean failing, slow, or badly designed)" },
-            { front: "Step 2 · Ask which version", back: "\"Which bit — the booking, or what happens after?\"" },
-            { front: "Step 3 · Answer that version", back: "\"The booking I'd defend. What happens after is genuinely a mess, agreed.\"" },
+            { front: "Step 1 · Notice the vague part", back: "\"Hang on — broken could mean a few different things there.\"", guideFront: "Name the vague word when...", guideBack: "The ambiguity, said out loud" },
+            { front: "Step 2 · Ask which version", back: "\"Which bit — the booking, or what happens after?\"", guideFront: "Ask which one they mean when...", guideBack: "A question with the options in it" },
+            { front: "Step 3 · Answer that version", back: "\"The booking I'd defend. What happens after is genuinely a mess, agreed.\"", guideFront: "Answer the version they meant when...", guideBack: "An answer to the real claim" },
           ]
         },
         {
           bundle: 'pro',
           situation: "A friend says nobody should work from home.",
           steps: [
-            { front: "Step 1 · Notice the vague part", back: "(nobody, ever, or in their specific job?)" },
-            { front: "Step 2 · Ask which version", back: "\"As a rule everywhere, or in your place specifically?\"" },
-            { front: "Step 3 · Answer that version", back: "\"In your place I'd probably agree. As a rule I'd push back hard.\"" },
+            { front: "Step 1 · Notice the vague part", back: "\"Nobody is doing a lot of work in that sentence.\"", guideFront: "Name the vague word when...", guideBack: "The ambiguity, said out loud" },
+            { front: "Step 2 · Ask which version", back: "\"As a rule everywhere, or in your place specifically?\"", guideFront: "Ask which one they mean when...", guideBack: "A question with the options in it" },
+            { front: "Step 3 · Answer that version", back: "\"In your place I'd probably agree. As a rule I'd push back hard.\"", guideFront: "Answer the version they meant when...", guideBack: "An answer to the real claim" },
           ]
         },
       ]
@@ -5069,18 +5069,18 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "A discussion with a colleague has become fast and clipped.",
           steps: [
-            { front: "Step 1 · Name it jointly", back: "\"We're both getting a bit sharp about this.\"" },
-            { front: "Step 2 · Split off the hot part", back: "\"Can we leave the budget aside for ten minutes?\"" },
-            { front: "Step 3 · Agree the rest", back: "\"Because I think we agree on the timing and the scope, and that's most of it.\"" },
+            { front: "Step 1 · Name it jointly", back: "\"We're both getting a bit sharp about this.\"", guideFront: "Name the heat, as both of you when...", guideBack: "A shared observation, not an accusation" },
+            { front: "Step 2 · Split off the hot part", back: "\"Can we leave the budget aside for ten minutes?\"", guideFront: "Set the hot part aside when...", guideBack: "A proposal to park one piece" },
+            { front: "Step 3 · Agree the rest", back: "\"Because I think we agree on the timing and the scope, and that's most of it.\"", guideFront: "Name what you agree on when...", guideBack: "The common ground, stated" },
           ]
         },
         {
           bundle: 'pro',
           situation: "A discussion with a friend has drifted towards something personal.",
           steps: [
-            { front: "Step 1 · Name it jointly", back: "\"This has stopped being about the thing, hasn't it.\"" },
-            { front: "Step 2 · Split off the hot part", back: "\"I'd rather not do the other bit today.\"" },
-            { front: "Step 3 · Agree the rest", back: "\"On the actual question I think we're closer than it sounded.\"" },
+            { front: "Step 1 · Name it jointly", back: "\"This has stopped being about the thing, hasn't it.\"", guideFront: "Name the heat, as both of you when...", guideBack: "A shared observation, not an accusation" },
+            { front: "Step 2 · Split off the hot part", back: "\"I'd rather not do the other bit today.\"", guideFront: "Set the hot part aside when...", guideBack: "A proposal to park one piece" },
+            { front: "Step 3 · Agree the rest", back: "\"On the actual question I think we're closer than it sounded.\"", guideFront: "Name what you agree on when...", guideBack: "The common ground, stated" },
           ]
         },
       ]

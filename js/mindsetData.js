@@ -434,8 +434,8 @@ const mindsetCollections = {
   apologizing2: [
     {
       name: "Sorry Comes After Understanding",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "The instinct is to lead with the apology and explain afterwards. It feels like the fastest route to resolution, and it is the reason so many sincere apologies land badly.\n\nAn apology that arrives before any understanding is heard as a request: please let this be over. The same words, said after you have shown you know what it was like for them, are heard as repair. Nothing changes except the order.\n\nMindset: earn the word sorry, then say it.",
       inputs: [
         { q: "I should just say sorry and get it over with.", a: "\"Get it over with\" is exactly what they'll hear. Do their side first.", bundle: 'pro' },
@@ -443,12 +443,15 @@ const mindsetCollections = {
         { q: "Talking about their feelings first feels like a technique.", a: "It is one, and it's the honest one — you're finding out before you speak.", bundle: 'pro' },
         { q: "It's quicker to apologise straight away.", a: "Quicker for you. That's what they'll notice.", bundle: 'pro' },
         { q: "I don't know what they felt.", a: "Then ask. That's a better first sentence than sorry.", bundle: 'pro' },
+        { q: "We've been standing here a while and I still haven't said sorry.", a: "The sorry lands better late than early. Finish the understanding first.", bundle: 'pro' },
+        { q: "They keep explaining and I want to cut to the apology.", a: "The explaining IS the thing you're apologising for missing. Let it run.", bundle: 'pro' },
+        { q: "Understanding first feels like stalling.", a: "Stalling is hoping it passes. This is doing the work in order.", bundle: 'pro' },
       ]
     },
     {
       name: "Specific Beats Sincere",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "Sincerity is not something you can transmit by trying harder. What actually communicates it is detail — the fact that you know which afternoon it was, what they had rearranged, what the room was like when you said it.\n\nThat is why an apology full of feeling words often lands worse than a plain one full of particulars. The particulars are the evidence that you thought about it.\n\nMindset: say the specific thing. The sincerity comes with it.",
       inputs: [
         { q: "I need them to know I really mean it.", a: "Name what actually happened. That's what \"really means it\" sounds like.", bundle: 'pro' },
@@ -456,12 +459,15 @@ const mindsetCollections = {
         { q: "I don't remember the details well enough.", a: "Then ask about them. That conversation is itself the apology working.", bundle: 'pro' },
         { q: "The details feel like dwelling on it.", a: "The details are how they know you were paying attention.", bundle: 'pro' },
         { q: "A general apology covers everything.", a: "It covers nothing. General is what people say when they haven't thought.", bundle: 'pro' },
+        { q: "Naming exactly what I did makes it sound worse.", a: "It sounds accurate. Vague makes it sound like you haven't looked at it.", bundle: 'pro' },
+        { q: "There were three things and I don't know which one to name.", a: "Name all three, briefly. Picking one for them is another thing to apologise for.", bundle: 'pro' },
+        { q: "They interrupted to say it's fine before I got specific.", a: "Say the specific one anyway. That's the part they'll keep.", bundle: 'pro' },
       ]
     },
     {
       name: "The Plan Is the Proof",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "Anyone can say sorry. The only part of an apology that costs you anything in the future is the sentence about what will be different — and to someone who has been let down before, that is the only part with any information in it.\n\nThat is also why it must be small. \"I'll be better\" promises nothing and cannot be checked. \"I'll write it down while you're telling me\" is something they can watch happen or not happen.\n\nMindset: end with something checkable, then do it.",
       inputs: [
         { q: "The apology should be enough on its own.", a: "The first time, maybe. After that, only the change counts.", bundle: 'pro' },
@@ -469,12 +475,15 @@ const mindsetCollections = {
         { q: "Saying what I'll do sounds like I'm managing them.", a: "It sounds like you've thought about it. That's the opposite of managing.", bundle: 'pro' },
         { q: "I'll just try harder, that's the plan.", a: "That's not a plan, it's a feeling. What will you actually do differently?", bundle: 'pro' },
         { q: "They should be able to trust me without a plan.", a: "They should. A checkable sentence is how trust gets rebuilt after it's been dented.", bundle: 'pro' },
+        { q: "The change I'd promise is embarrassingly small.", a: "Small and kept is the whole point. Grand and broken is what got you here.", bundle: 'pro' },
+        { q: "I want to check I can actually do it first.", a: "Then say that, and come back with it tomorrow. Don't leave the apology open-ended.", bundle: 'pro' },
+        { q: "A plan makes it sound like it'll happen again.", a: "It sounds like you've considered whether it could. That's reassurance, not warning.", bundle: 'pro' },
       ]
     },
     {
       name: "Do Not Make Them Comfort You",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "A long, distressed apology puts the other person in a difficult position: the injured party ends up reassuring the person who caused the injury. It feels like remorse and it functions as a demand.\n\nThe generous version is clear, specific, and does not require them to make you feel better. Your discomfort is real and it is yours to carry.\n\nMindset: apologise once, properly, and manage your own regret.",
       inputs: [
         { q: "I need them to know how badly I feel about it.", a: "They need to know you understood. How bad you feel is yours to handle.", bundle: 'pro' },
@@ -482,6 +491,25 @@ const mindsetCollections = {
         { q: "They said it's fine but I don't think they mean it.", a: "Ask once, plainly. Then take the answer.", bundle: 'pro' },
         { q: "I feel terrible and I want to say so.", a: "One sentence. Then stop, so they don't have to look after you.", bundle: 'pro' },
         { q: "It'd be cold to just say it and move on.", a: "Clear and specific isn't cold. Prolonged is what becomes uncomfortable.", bundle: 'pro' },
+        { q: "I'm close to tears and they can see it.", a: "Say the apology and stop. They shouldn't have to manage your face as well.", bundle: 'pro' },
+        { q: "I want them to know I've barely slept over this.", a: "That's for someone else to hear. Here it becomes their job to reassure you.", bundle: 'pro' },
+        { q: "They're comforting me and I'm letting them.", a: "Notice it and hand it back. \"This isn't for you to carry — I'm sorry, and that's it.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "I Would Be Guessing",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "Saying what you think it was like for them feels presumptuous — as though you are telling them their own experience, and getting it wrong would make an apology worse than no apology.\n\nBut naming it is not a claim to know. It is an attempt, offered out loud, and a wrong attempt is easy to correct: they say \"it wasn't that, it was this\", and now you have the real thing, which is exactly what you were after. The version that cannot be corrected is the one you never said.\n\nMindset: guess out loud and let them fix it. A wrong guess opens the subject; silence closes it.",
+      inputs: [
+        { q: "I'd be putting words in their mouth.", a: "You'd be offering words they can swap. \"Was it more like—?\" makes that explicit.", bundle: 'pro' },
+        { q: "If I get it wrong it'll make things worse.", a: "Getting it wrong and being corrected is a conversation. Saying nothing isn't.", bundle: 'pro' },
+        { q: "They should tell me how they felt.", a: "They may not have the words either. Going first is the favour.", bundle: 'pro' },
+        { q: "I genuinely have no idea what upset them.", a: "Then say that, and ask. \"I can see it landed badly and I don't want to guess wrong.\"", bundle: 'pro' },
+        { q: "Naming it sounds like a technique from a book.", a: "Only if the words aren't yours. Say it plainly and it just sounds like attention.", bundle: 'pro' },
+        { q: "What if they say I'm making it about me?", a: "Then keep the sentence about them. \"You must have felt—\" has no \"I\" in it.", bundle: 'pro' },
+        { q: "I know what they felt but saying it feels invasive.", a: "It's the opposite. Not saying it leaves them to carry it alone.", bundle: 'pro' },
+        { q: "They already told me, so repeating it is pointless.", a: "Repeating it is how they find out it arrived. That's not nothing.", bundle: 'pro' },
       ]
     },
   ],
@@ -2047,6 +2075,9 @@ const mindsetCollections = {
         { q: "\"Probably not\" gives them a gentle landing.", a: "It gives them a maybe. They'll ask again, and you'll say no again.", bundle: 'pro' },
         { q: "I don't want to disappoint them straight away.", a: "You'll disappoint them later instead, with less warning.", bundle: 'pro' },
         { q: "Maybe something will change and I'll be able to.", a: "Then say no now and offer if it changes. Don't hold them on a maybe.", bundle: 'pro' },
+        { q: "I said \"let me think about it\" and I've already decided.", a: "Then you've booked a second conversation neither of you needs. Say it now.", bundle: 'pro' },
+        { q: "They asked in front of other people.", a: "Same answer, same words. An audience doesn't change what's true.", bundle: 'pro' },
+        { q: "A clear no from me will start an argument.", a: "A vague one starts three. Clear is the version that ends it.", bundle: 'pro' },
       ]
     },
     {
@@ -2060,6 +2091,9 @@ const mindsetCollections = {
         { q: "My reason isn't good enough to justify it.", a: "It doesn't have to justify anything. \"I'd rather not\" is a real answer.", bundle: 'pro' },
         { q: "Giving a reason is only polite.", a: "Often, yes. Just know that every reason is something they can solve.", bundle: 'pro' },
         { q: "They asked why. I have to answer.", a: "\"I'd rather not go into it\" answers the question honestly.", bundle: 'pro' },
+        { q: "The real reason is one I'd rather not say.", a: "Then don't. \"I can't this time\" is complete and true.", bundle: 'pro' },
+        { q: "They gave me a long explanation, so I owe them one.", a: "You owe them an answer. Length isn't a debt.", bundle: 'pro' },
+        { q: "Without a reason it sounds like I couldn't be bothered.", a: "Warmth carries that, not reasons. Say it kindly and briefly.", bundle: 'pro' },
       ]
     },
     {
@@ -2073,6 +2107,9 @@ const mindsetCollections = {
         { q: "If I don't answer now I'll have to have the conversation twice.", a: "Once briefly and once honestly beats once badly.", bundle: 'pro' },
         { q: "I already know the answer, so I may as well say it.", a: "Then say it. The pause is for when you don't know.", bundle: 'pro' },
         { q: "I'll say yes now and get out of it later.", a: "That's a worse conversation than this one, and it's coming.", bundle: 'pro' },
+        { q: "Asking for time is just delaying the awkward part.", a: "Only if you don't come back. Name the hour and keep it.", bundle: 'pro' },
+        { q: "They need an answer today.", a: "Then say \"by four\", not \"soon\". A time is what makes the pause fair.", bundle: 'pro' },
+        { q: "I took time and now it's harder to say no.", a: "Harder for a second. And the no is better for having been considered.", bundle: 'pro' },
       ]
     },
     {
@@ -2086,6 +2123,41 @@ const mindsetCollections = {
         { q: "A better person would help.", a: "A better person would also be allowed to say no to this one.", bundle: 'pro' },
         { q: "They'll think I don't care about them.", a: "One no doesn't outweigh everything else. It really doesn't.", bundle: 'pro' },
         { q: "I'll do it resentfully rather than say no.", a: "They'd rather have the no. Resentful help is worse for both of you.", bundle: 'pro' },
+        { q: "They went quiet and I started explaining more.", a: "Quiet is them adjusting. More words is you apologising for existing.", bundle: 'pro' },
+        { q: "I said no and now I'm avoiding them.", a: "That's what turns a refusal into a rift. Talk to them about something else today.", bundle: 'pro' },
+        { q: "They said \"fine\" in a way that wasn't fine.", a: "You can ask about that. What you can't do is take the no back to fix it.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Understanding First Sounds Like a Yes",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "Saying \"I can see this really matters to you\" before you refuse feels like raising their hopes on purpose — a warm sentence that makes the cold one worse when it lands two seconds later.\n\nIt does the reverse. A no that arrives after being understood is a no about your circumstances; a no that arrives cold reads as a judgement about the request, and often about the person making it. The warm sentence is not a delay before the refusal. It is what stops the refusal being about them.\n\nMindset: understand first, refuse second, and do not leave a gap between them.",
+      inputs: [
+        { q: "Being warm first makes the no crueller.", a: "It makes the no smaller. Cold refusals are the ones people remember badly.", bundle: 'pro' },
+        { q: "They'll think I'm about to agree.", a: "Not if the no follows immediately. \"I can see why — and I still can't.\"", bundle: 'pro' },
+        { q: "It's kinder to be quick about it.", a: "Quick and cold isn't kind, it's efficient. Two seconds buys the difference.", bundle: 'pro' },
+        { q: "I don't actually think their request is reasonable.", a: "Then understand the need behind it. That part is nearly always reasonable.", bundle: 'pro' },
+        { q: "Saying I understand commits me to something.", a: "It commits you to nothing. Understanding and agreeing are different acts.", bundle: 'pro' },
+        { q: "It sounds like a line from a customer service script.", a: "Then say it in your own words about this specific thing. Scripts are general; this isn't.", bundle: 'pro' },
+        { q: "They'll use my understanding as an argument.", a: "Some will. \"I do understand, and the answer is still no\" closes that.", bundle: 'pro' },
+        { q: "I already know they'll take it badly.", a: "All the more reason. The warm half is what they'll have left afterwards.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "A Half Offer Is Worse Than Nothing",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "Offering the part you can do feels like a consolation prize — not the help they wanted, faintly insulting to hand over, and a way of getting talked into the rest by increments.\n\nBut most requests are bigger than they need to be, and the part you can do is often the part that was actually stuck. The offer also does something a bare no cannot: it says the refusal was about capacity rather than about them, and it says it with evidence instead of a sentence.\n\nMindset: name the piece you can do, and name its edges. The edges are what stop it growing.",
+      inputs: [
+        { q: "Half of what they asked for is no use to them.", a: "You don't know that. Say what you can do and let them decide.", bundle: 'pro' },
+        { q: "If I offer something they'll push for more.", a: "Only if the offer has no edges. \"The first section, Thursday, and that's my limit.\"", bundle: 'pro' },
+        { q: "A partial offer looks like I'm being stingy.", a: "A flat no with nothing attached is what looks stingy. The offer is the generous half.", bundle: 'pro' },
+        { q: "I'd rather do it properly or not at all.", a: "That's your standard, not their need. Ask which part they actually need doing.", bundle: 'pro' },
+        { q: "They'll be disappointed by the smaller version.", a: "Less disappointed than by nothing. And they can still say no to it.", bundle: 'pro' },
+        { q: "I can't think of anything I could offer instead.", a: "Then say so plainly. A no with \"I've thought about it\" attached is still a better no.", bundle: 'pro' },
+        { q: "Offering an alternative undoes my refusal.", a: "It defines it. This much yes, and no further — that's a clearer answer than either alone.", bundle: 'pro' },
+        { q: "I offered and now I'm doing more than I meant to.", a: "That's the edges failing, not the offer. Name the limit out loud next time.", bundle: 'pro' },
       ]
     },
   ],
@@ -2142,8 +2214,8 @@ const mindsetCollections = {
   conflictemotions: [
     {
       name: "A Feeling Points at a Need",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "Feelings in conflict are not noise to be got past. They are signals, and each one points at something that matters to you — being respected, being safe, being able to rely on an arrangement.\n\nThat is why naming the need changes everything. A feeling on its own is a report about a bad moment. A need is something the two of you can actually do something about, and it is usually smaller and more reasonable than the argument suggested.\n\nMindset: ask what the feeling is protecting. That is the thing to say out loud.",
       inputs: [
         { q: "Talking about feelings makes it worse.", a: "A feeling without a need does. Add the need and it becomes solvable.", bundle: 'pro' },
@@ -2151,12 +2223,15 @@ const mindsetCollections = {
         { q: "I don't know why it bothered me so much.", a: "Then say that, and work it out out loud. That's allowed.", bundle: 'pro' },
         { q: "They should just know what I need.", a: "They can't. Most people are guessing, and most guesses are wrong.", bundle: 'pro' },
         { q: "Saying what I need sounds demanding.", a: "\"I need to know the house is locked\" isn't a demand. It's information.", bundle: 'pro' },
+        { q: "I know the feeling but not what it's pointing at.", a: "Ask what would have to be true for it to go away. That's the need.", bundle: 'pro' },
+        { q: "The need sounds too abstract to say out loud.", a: "Then say the concrete version. \"Being told beforehand\" is a need.", bundle: 'pro' },
+        { q: "Naming a need gives them power over me.", a: "It gives them the information. Guessing is what leaves you both stuck.", bundle: 'pro' },
       ]
     },
     {
       name: "Describe, Do Not Diagnose",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "The most common way a reasonable point becomes a row is a single word — dismissive, careless, thoughtless. Each one is a claim about who the other person is, and people defend who they are far harder than they defend what they did.\n\nThe description without the verdict is almost always enough. It is also harder to write and easier to hear.\n\nMindset: say what happened. Leave out what it means about them.",
       inputs: [
         { q: "But they were being careless.", a: "Maybe. \"The door was unlocked\" gets you further than \"you were careless\".", bundle: 'pro' },
@@ -2164,12 +2239,15 @@ const mindsetCollections = {
         { q: "I want them to know how it came across.", a: "Say how it landed on you. That's not the same as naming what they are.", bundle: 'pro' },
         { q: "Sugar-coating it lets them off.", a: "Precision isn't sugar-coating. It's the version they can't dodge.", bundle: 'pro' },
         { q: "They know exactly what they did.", a: "Then it costs nothing to say it plainly and skip the adjective.", bundle: 'pro' },
+        { q: "My description already has a judgement buried in it.", a: "Strip the adverbs. \"You left it unlocked\" — no \"again\", no \"just\".", bundle: 'pro' },
+        { q: "The plain version sounds like I don't mind.", a: "The feeling sentence is where the minding goes. Keep them separate.", bundle: 'pro' },
+        { q: "They'll deny the facts as well.", a: "Then you're discussing what happened, which is solvable. Motives aren't.", bundle: 'pro' },
       ]
     },
     {
       name: "Finish the Sentence",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "The exposed part of this is saying how you felt, and once that is out there is a strong pull to stop — the difficult thing has been said, and the rest feels like piling on.\n\nBut the rest is the useful part. The need explains why it mattered and the request says what would help, and without them you have handed someone a problem with no handle on it. That is how the same conflict comes back in a month.\n\nMindset: the hard bit is done. The rest is the easy half, and it is the half that changes anything.",
       inputs: [
         { q: "I've said how I feel, that should be enough.", a: "It tells them there's a problem. It doesn't tell them what would fix it.", bundle: 'pro' },
@@ -2177,12 +2255,15 @@ const mindsetCollections = {
         { q: "They apologised, so it's resolved.", a: "An apology without a change means the same conversation in a month.", bundle: 'pro' },
         { q: "I don't want to tell them what to do.", a: "You're asking, not telling. They can say no, and that's the difference.", bundle: 'pro' },
         { q: "It'd be easier to leave it there.", a: "It is, tonight. It isn't in March when it happens again.", bundle: 'pro' },
+        { q: "The request is obvious once I've said the rest.", a: "Obvious to you. Unstated requests are the ones that go unmet.", bundle: 'pro' },
+        { q: "I've said three things, a fourth is too much.", a: "The fourth is the only one that changes anything. Say it.", bundle: 'pro' },
+        { q: "I don't know what I want them to do.", a: "Then say that and ask. \"I don't know what the fix is — can we work it out?\"", bundle: 'pro' },
       ]
     },
     {
       name: "They Have a Version Too",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "Preparing what to say is useful, and it has a cost: by the time you speak you have a complete account in your head, and it feels finished.\n\nBut they were there as well, and their version usually contains something yours does not — a reason, a piece of context, or something you did that you had not noticed. Asking does not weaken your case. It is the only way to end up with an accurate one.\n\nMindset: you have half of what happened. Ask for the other half.",
       inputs: [
         { q: "I know what happened, I was there.", a: "You were there for your half. Ask about theirs.", bundle: 'pro' },
@@ -2190,6 +2271,25 @@ const mindsetCollections = {
         { q: "If I ask, I'll lose my thread.", a: "Say your bit first, then ask. That's the order.", bundle: 'pro' },
         { q: "They'll just turn it round on me.", a: "Some will. Most say something you hadn't got.", bundle: 'pro' },
         { q: "I don't want to hear that I was in the wrong too.", a: "You probably were, a bit. Hearing it is cheaper than not knowing it.", bundle: 'pro' },
+        { q: "I asked and their version was completely different.", a: "Good. Now you know what you were actually disagreeing about.", bundle: 'pro' },
+        { q: "If I ask now it'll look like I've backed off.", a: "It looks like you're finished with your half. That's not the same thing.", bundle: 'pro' },
+        { q: "I'll ask once I've finished making my case.", a: "That's the right order. Just don't let \"finished\" keep moving.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "One Word Is Not Enough",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"I felt frustrated\" sounds thin next to what it was actually like, so the sentence gets abandoned halfway and replaced by a description of what they did — which is the one move guaranteed to start an argument about the facts instead of a conversation about the effect.\n\nThe single word is not a summary of the experience. It is the only part of the sentence they cannot dispute. \"You were careless\" is arguable; \"I was worried\" is not, and it is the thing that actually needs to be heard.\n\nMindset: one accurate word, owned. It is small because that is what makes it unarguable.",
+      inputs: [
+        { q: "\"Frustrated\" doesn't cover half of it.", a: "It doesn't have to. It has to be true and unarguable, and it is both.", bundle: 'pro' },
+        { q: "They need to understand how big this was for me.", a: "Size comes across in your face and your saying it at all. The word just names it.", bundle: 'pro' },
+        { q: "I can't find the right word.", a: "Take the nearest one. \"Something like let down\" is a real sentence.", bundle: 'pro' },
+        { q: "Saying one word makes it sound trivial.", a: "It makes it precise. Trivial is what a long description turns into.", bundle: 'pro' },
+        { q: "It's more accurate to say what they did.", a: "Accurate and arguable. Your feeling is accurate and not arguable — use that.", bundle: 'pro' },
+        { q: "I felt about four things at once.", a: "Say the one underneath. There's usually one the others are standing on.", bundle: 'pro' },
+        { q: "They'll say I shouldn't have felt that.", a: "Then they're arguing with something they can't reach. Hold the word and go on.", bundle: 'pro' },
+        { q: "My word sounds dramatic out loud.", a: "Then pick the plainer one. Plain and true beats dramatic and hedged.", bundle: 'pro' },
       ]
     },
   ],
