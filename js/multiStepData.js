@@ -6566,30 +6566,30 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "A friend introduces you to someone and then immediately disappears to find drinks.",
           steps: [
-            { front: "Answer What They Are Really Asking — they say, \"So what do you do?\"", back: "\"I teach English. Mostly to sixteen-year-olds, which is as loud as it sounds.\"" },
-            { front: "Give a Detail — they say, \"That must be exhausting.\"", back: "\"Some days. This week I mostly argued with a printer, so it's been restful by comparison.\"" },
-            { front: "Hand It Back — they laugh.", back: "\"That's me, anyway. How do you know Anna?\"" },
-            { front: "Match Their Depth — they say, \"We worked together for years. I've just left, actually.\"", back: "\"Just left — by choice, or the other kind? I've done both.\"" },
+            { front: "Answer What They Are Really Asking — they say, \"So what do you do?\"", back: "\"I teach English. Mostly to sixteen-year-olds, which is as loud as it sounds.\"", guideFront: "Give the personal version when...", guideBack: "An answer about you" },
+            { front: "Give a Detail — they say, \"That must be exhausting.\"", back: "\"Some days. This week I mostly argued with a printer, so it's been restful by comparison.\"", guideFront: "Add one concrete thing when...", guideBack: "The answer, plus one detail" },
+            { front: "Hand It Back — they laugh.", back: "\"That's me, anyway. How do you know Anna?\"", guideFront: "Turn the attention around when...", guideBack: "A question back to them" },
+            { front: "Match Their Depth — they say, \"We worked together for years. I've just left, actually.\"", back: "\"Just left — by choice, or the other kind? I've done both.\"", guideFront: "Give as much as they gave when...", guideBack: "An answer of the same size" },
           ]
         },
         {
           bundle: 'pro',
           situation: "Someone from another team sits down opposite you in the canteen and starts talking.",
           steps: [
-            { front: "Answer What They Are Really Asking — they say, \"You're new, aren't you? Where were you before?\"", back: "\"A smaller place in Malmö. Half the people, twice the meetings.\"" },
-            { front: "Give a Detail — they say, \"How's it been so far?\"", back: "\"Good. I've been to the wrong building twice, which is a personal record.\"" },
-            { front: "Hand It Back — they say, \"Everyone does that in the first week.\"", back: "\"That's reassuring. How long have you been here?\"" },
-            { front: "Match Their Depth — they say, \"Eleven years. Longer than I meant to be.\"", back: "\"Longer than you meant to — what made you stay?\"" },
+            { front: "Answer What They Are Really Asking — they say, \"You're new, aren't you? Where were you before?\"", back: "\"A smaller place in Malmö. Half the people, twice the meetings.\"", guideFront: "Give the personal version when...", guideBack: "An answer about you" },
+            { front: "Give a Detail — they say, \"How's it been so far?\"", back: "\"Good. I've been to the wrong building twice, which is a personal record.\"", guideFront: "Add one concrete thing when...", guideBack: "The answer, plus one detail" },
+            { front: "Hand It Back — they say, \"Everyone does that in the first week.\"", back: "\"That's reassuring. How long have you been here?\"", guideFront: "Turn the attention around when...", guideBack: "A question back to them" },
+            { front: "Match Their Depth — they say, \"Eleven years. Longer than I meant to be.\"", back: "\"Longer than you meant to — what made you stay?\"", guideFront: "Give as much as they gave when...", guideBack: "An answer of the same size" },
           ]
         },
         {
           bundle: 'pro',
           situation: "You have been placed at a table with people you do not know, and the person beside you turns to you as the starters arrive.",
           steps: [
-            { front: "Answer What They Are Really Asking — they say, \"And which side are you?\"", back: "\"Bride's. We shared a flat for two years, which is how you learn who someone really is.\"" },
-            { front: "Give a Detail — they say, \"That's a proper test.\"", back: "\"It is. She once reorganised my bookshelves by colour while I was away for a weekend.\"" },
-            { front: "Hand It Back — they say, \"That's a crime.\"", back: "\"It genuinely is. What about you — how do you know them?\"" },
-            { front: "Match Their Depth — they say, \"I'm his cousin. We were close as kids and less so now.\"", back: "\"Less so now — is that distance, or something that happened?\"" },
+            { front: "Answer What They Are Really Asking — they say, \"And which side are you?\"", back: "\"Bride's. We shared a flat for two years, which is how you learn who someone really is.\"", guideFront: "Give the personal version when...", guideBack: "An answer about you" },
+            { front: "Give a Detail — they say, \"That's a proper test.\"", back: "\"It is. She once reorganised my bookshelves by colour while I was away for a weekend.\"", guideFront: "Add one concrete thing when...", guideBack: "The answer, plus one detail" },
+            { front: "Hand It Back — they say, \"That's a crime.\"", back: "\"It genuinely is. What about you — how do you know them?\"", guideFront: "Turn the attention around when...", guideBack: "A question back to them" },
+            { front: "Match Their Depth — they say, \"I'm his cousin. We were close as kids and less so now.\"", back: "\"Less so now — is that distance, or something that happened?\"", guideFront: "Give as much as they gave when...", guideBack: "An answer of the same size" },
           ]
         },
       ]
@@ -6604,30 +6604,30 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "A friend you see every few months says, more seriously than usual, that the year has been harder than they let on.",
           steps: [
-            { front: "Match Their Depth — they say, \"It's been a lot, honestly.\"", back: "\"I'll match you rather than be breezy — mine's been heavy too.\"" },
-            { front: "Say the Small True Thing — they say, \"You never say that.\"", back: "\"I know. Nothing dramatic. Just a long stretch of getting through weeks.\"" },
-            { front: "Name What You Are Into — they say, \"What's been helping?\"", back: "\"Running, weirdly. I'm terrible at it and it's the best hour of the day.\"" },
-            { front: "Hand It Back — they say, \"That's not what I expected from you.\"", back: "\"It surprised me too. What's been getting you through?\"" },
+            { front: "Match Their Depth — they say, \"It's been a lot, honestly.\"", back: "\"I'll match you rather than be breezy — mine's been heavy too.\"", guideFront: "Give as much as they gave when...", guideBack: "An answer of the same size" },
+            { front: "Say the Small True Thing — they say, \"You never say that.\"", back: "\"I know. Nothing dramatic. Just a long stretch of getting through weeks.\"", guideFront: "Say what is actually true when...", guideBack: "The honest version" },
+            { front: "Name What You Are Into — they say, \"What's been helping?\"", back: "\"Running, weirdly. I'm terrible at it and it's the best hour of the day.\"", guideFront: "Say what you care about when...", guideBack: "An enthusiasm, said plainly" },
+            { front: "Hand It Back — they say, \"That's not what I expected from you.\"", back: "\"It surprised me too. What's been getting you through?\"", guideFront: "Turn the attention around when...", guideBack: "A question back to them" },
           ]
         },
         {
           bundle: 'pro',
           situation: "You are walking back from a meeting and the conversation has gone past the usual small talk.",
           steps: [
-            { front: "Match Their Depth — they say, \"I'm not sure I want to be doing this in five years.\"", back: "\"I think about that more than I admit, honestly.\"" },
-            { front: "Say the Small True Thing — they say, \"Really? You always seem settled.\"", back: "\"I'm settled. I'm just not certain, which turns out to be different.\"" },
-            { front: "Name What You Are Into — they say, \"So what would you rather be doing?\"", back: "\"Something with my hands, probably. I've got very into fixing bikes I can't fix.\"" },
-            { front: "Hand It Back — they say, \"That's oddly specific.\"", back: "\"It really is. What's yours, if you could pick?\"" },
+            { front: "Match Their Depth — they say, \"I'm not sure I want to be doing this in five years.\"", back: "\"I think about that more than I admit, honestly.\"", guideFront: "Give as much as they gave when...", guideBack: "An answer of the same size" },
+            { front: "Say the Small True Thing — they say, \"Really? You always seem settled.\"", back: "\"I'm settled. I'm just not certain, which turns out to be different.\"", guideFront: "Say what is actually true when...", guideBack: "The honest version" },
+            { front: "Name What You Are Into — they say, \"So what would you rather be doing?\"", back: "\"Something with my hands, probably. I've got very into fixing bikes I can't fix.\"", guideFront: "Say what you care about when...", guideBack: "An enthusiasm, said plainly" },
+            { front: "Hand It Back — they say, \"That's oddly specific.\"", back: "\"It really is. What's yours, if you could pick?\"", guideFront: "Turn the attention around when...", guideBack: "A question back to them" },
           ]
         },
         {
           bundle: 'pro',
           situation: "You are having a drink with someone you used to see weekly and now see twice a year. They have just said the years went quickly.",
           steps: [
-            { front: "Match Their Depth — they say, \"I don't know where the last five years went, honestly.\"", back: "\"Nor do I. And I've noticed I stopped telling anyone much about them.\"" },
-            { front: "Say the Small True Thing — they say, \"That doesn't sound like you.\"", back: "\"It isn't, particularly. I got quiet somewhere around the second year and never undid it.\"" },
-            { front: "Name What You Are Into — they say, \"So what are you doing with yourself?\"", back: "\"Bread, embarrassingly. It's the only thing I do that has nothing to do with anyone else.\"" },
-            { front: "Hand It Back — they say, \"That's a very you answer.\"", back: "\"I'll take that. What have you got that's just yours?\"" },
+            { front: "Match Their Depth — they say, \"I don't know where the last five years went, honestly.\"", back: "\"Nor do I. And I've noticed I stopped telling anyone much about them.\"", guideFront: "Give as much as they gave when...", guideBack: "An answer of the same size" },
+            { front: "Say the Small True Thing — they say, \"That doesn't sound like you.\"", back: "\"It isn't, particularly. I got quiet somewhere around the second year and never undid it.\"", guideFront: "Say what is actually true when...", guideBack: "The honest version" },
+            { front: "Name What You Are Into — they say, \"So what are you doing with yourself?\"", back: "\"Bread, embarrassingly. It's the only thing I do that has nothing to do with anyone else.\"", guideFront: "Say what you care about when...", guideBack: "An enthusiasm, said plainly" },
+            { front: "Hand It Back — they say, \"That's a very you answer.\"", back: "\"I'll take that. What have you got that's just yours?\"", guideFront: "Turn the attention around when...", guideBack: "A question back to them" },
           ]
         },
       ]
@@ -6642,30 +6642,30 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "Someone at a dinner asks, perfectly innocently, what happened with your last relationship.",
           steps: [
-            { front: "Keep Something Back — they say, \"Weren't you with someone for years?\"", back: "\"I was. Short version: it ended badly and I'm not doing the long one tonight.\"" },
-            { front: "Give a Detail — they say, \"Sorry, I shouldn't have asked.\"", back: "\"You absolutely should, it's a normal question. I've just been busy repainting a flat instead of thinking about it.\"" },
-            { front: "Hand It Back — they say, \"Repainting is very therapeutic.\"", back: "\"It's the only reason the flat looks like this. Have you done yours?\"" },
-            { front: "Match Their Depth — they say, \"We've been meaning to for three years.\"", back: "\"Three years is nothing. Mine was eleven before I picked up a brush.\"" },
+            { front: "Keep Something Back — they say, \"Weren't you with someone for years?\"", back: "\"I was. Short version: it ended badly and I'm not doing the long one tonight.\"", guideFront: "Give the short version when...", guideBack: "A true answer, kept short" },
+            { front: "Give a Detail — they say, \"Sorry, I shouldn't have asked.\"", back: "\"You absolutely should, it's a normal question. I've just been busy repainting a flat instead of thinking about it.\"", guideFront: "Add one concrete thing when...", guideBack: "The answer, plus one detail" },
+            { front: "Hand It Back — they say, \"Repainting is very therapeutic.\"", back: "\"It's the only reason the flat looks like this. Have you done yours?\"", guideFront: "Turn the attention around when...", guideBack: "A question back to them" },
+            { front: "Match Their Depth — they say, \"We've been meaning to for three years.\"", back: "\"Three years is nothing. Mine was eleven before I picked up a brush.\"", guideFront: "Give as much as they gave when...", guideBack: "An answer of the same size" },
           ]
         },
         {
           bundle: 'pro',
           situation: "In an otherwise ordinary conversation, a manager asks about something personal you would rather keep outside work.",
           steps: [
-            { front: "Keep Something Back — they say, \"Everything alright at home? You've seemed off.\"", back: "\"I'd rather keep that one outside work, if that's alright.\"" },
-            { front: "Give a Detail — they say, \"Of course. Sorry.\"", back: "\"Nothing to be sorry about. Work-wise I'm fine — the Friday report is the only thing biting.\"" },
-            { front: "Hand It Back — they say, \"Let me know if that needs moving.\"", back: "\"I might. How's your end of it looking?\"" },
-            { front: "Match Their Depth — they say, \"Honestly? Also a strange few months.\"", back: "\"Then we're even. I'll take a strange few months over a dull ten years.\"" },
+            { front: "Keep Something Back — they say, \"Everything alright at home? You've seemed off.\"", back: "\"I'd rather keep that one outside work, if that's alright.\"", guideFront: "Give the short version when...", guideBack: "A true answer, kept short" },
+            { front: "Give a Detail — they say, \"Of course. Sorry.\"", back: "\"Nothing to be sorry about. Work-wise I'm fine — the Friday report is the only thing biting.\"", guideFront: "Add one concrete thing when...", guideBack: "The answer, plus one detail" },
+            { front: "Hand It Back — they say, \"Let me know if that needs moving.\"", back: "\"I might. How's your end of it looking?\"", guideFront: "Turn the attention around when...", guideBack: "A question back to them" },
+            { front: "Match Their Depth — they say, \"Honestly? Also a strange few months.\"", back: "\"Then we're even. I'll take a strange few months over a dull ten years.\"", guideFront: "Give as much as they gave when...", guideBack: "An answer of the same size" },
           ]
         },
         {
           bundle: 'pro',
           situation: "At a family gathering, a relative asks directly what you earn now, in front of two other people.",
           steps: [
-            { front: "Keep Something Back — they say, \"So what are they paying you these days?\"", back: "\"I'm going to be boring about that one. It's enough, and that's as far as I go.\"" },
-            { front: "Give a Detail — they say, \"Fair enough, fair enough.\"", back: "\"The interesting bit isn't the money anyway — I've ended up running the whole southern region, which nobody planned.\"" },
-            { front: "Hand It Back — they say, \"Since when?\"", back: "\"March. It's been a steep few months. How's the shop going?\"" },
-            { front: "Match Their Depth — they say, \"Quieter than I'd like, if I'm honest.\"", back: "\"Quieter how? Fewer people, or the same people spending less?\"" },
+            { front: "Keep Something Back — they say, \"So what are they paying you these days?\"", back: "\"I'm going to be boring about that one. It's enough, and that's as far as I go.\"", guideFront: "Give the short version when...", guideBack: "A true answer, kept short" },
+            { front: "Give a Detail — they say, \"Fair enough, fair enough.\"", back: "\"The interesting bit isn't the money anyway — I've ended up running the whole southern region, which nobody planned.\"", guideFront: "Add one concrete thing when...", guideBack: "The answer, plus one detail" },
+            { front: "Hand It Back — they say, \"Since when?\"", back: "\"March. It's been a steep few months. How's the shop going?\"", guideFront: "Turn the attention around when...", guideBack: "A question back to them" },
+            { front: "Match Their Depth — they say, \"Quieter than I'd like, if I'm honest.\"", back: "\"Quieter how? Fewer people, or the same people spending less?\"", guideFront: "Give as much as they gave when...", guideBack: "An answer of the same size" },
           ]
         },
       ]
@@ -6968,27 +6968,27 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "A friend is telling you about a group project at school that fell apart, and you can tell they have been waiting to say it.",
           steps: [
-            { front: "Loop Back or Rephrase — they say: \"That project was a nightmare from start to finish.\"", back: "\"So it wasn't one bad bit — it was the whole thing.\"" },
-            { front: "Ask Follow-up Questions — they say: \"Yeah. Every stage.\"", back: "\"What was the worst part of it?\"" },
-            { front: "Loop Back or Rephrase — they say: \"Honestly, the deadline moving with no warning.\"", back: "\"So it was the not being told, more than the extra work.\"" },
+            { front: "Loop Back or Rephrase — they say: \"That project was a nightmare from start to finish.\"", back: "\"So it wasn't one bad bit — it was the whole thing.\"", guideFront: "Repeat back in your words when...", guideBack: "Their point, in your words" },
+            { front: "Ask Follow-up Questions — they say: \"Yeah. Every stage.\"", back: "\"What was the worst part of it?\"", guideFront: "Ask for more when...", guideBack: "A question about what they said" },
+            { front: "Loop Back or Rephrase — they say: \"Honestly, the deadline moving with no warning.\"", back: "\"So it was the not being told, more than the extra work.\"", guideFront: "Repeat back in your words when...", guideBack: "Their point, in your words" },
           ]
         },
         {
           bundle: 'pro',
           situation: "A colleague has stopped by your desk and mentioned, half casually, that a decision was made without them.",
           steps: [
-            { front: "Loop Back or Rephrase — they say: \"It's not the work, it's that nobody asked me.\"", back: "\"So it's the being left out of it, more than the job itself.\"" },
-            { front: "Ask Follow-up Questions — they say: \"Exactly that.\"", back: "\"How did you find out in the end?\"" },
-            { front: "Loop Back or Rephrase — they say: \"From the client, of all people.\"", back: "\"So you heard it from outside before anyone inside told you. That's worse.\"" },
+            { front: "Loop Back or Rephrase — they say: \"It's not the work, it's that nobody asked me.\"", back: "\"So it's the being left out of it, more than the job itself.\"", guideFront: "Repeat back in your words when...", guideBack: "Their point, in your words" },
+            { front: "Ask Follow-up Questions — they say: \"Exactly that.\"", back: "\"How did you find out in the end?\"", guideFront: "Ask for more when...", guideBack: "A question about what they said" },
+            { front: "Loop Back or Rephrase — they say: \"From the client, of all people.\"", back: "\"So you heard it from outside before anyone inside told you. That's worse.\"", guideFront: "Repeat back in your words when...", guideBack: "Their point, in your words" },
           ]
         },
         {
           bundle: 'pro',
           situation: "Someone is describing a weekend at their parents' that they had been dreading and which went about as expected.",
           steps: [
-            { front: "Loop Back or Rephrase — they say: \"Two days and we were back to the same argument by Saturday lunch.\"", back: "\"So it took less than a day to land where it always lands.\"" },
-            { front: "Ask Follow-up Questions — they say: \"It always does.\"", back: "\"What sets it off, usually?\"" },
-            { front: "Loop Back or Rephrase — they say: \"Anything about my job, really.\"", back: "\"So it's not the argument, it's that your job is the thing they reach for.\"" },
+            { front: "Loop Back or Rephrase — they say: \"Two days and we were back to the same argument by Saturday lunch.\"", back: "\"So it took less than a day to land where it always lands.\"", guideFront: "Repeat back in your words when...", guideBack: "Their point, in your words" },
+            { front: "Ask Follow-up Questions — they say: \"It always does.\"", back: "\"What sets it off, usually?\"", guideFront: "Ask for more when...", guideBack: "A question about what they said" },
+            { front: "Loop Back or Rephrase — they say: \"Anything about my job, really.\"", back: "\"So it's not the argument, it's that your job is the thing they reach for.\"", guideFront: "Repeat back in your words when...", guideBack: "Their point, in your words" },
           ]
         },
       ]
@@ -7003,27 +7003,27 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "A friend has started telling you about a week at work that has clearly been building up for a while.",
           steps: [
-            { front: "Ask Follow-up Questions — they say: \"I was so frustrated I nearly walked out.\"", back: "\"What was going through your head at that point?\"" },
-            { front: "Loop Back or Rephrase — they say: \"Mostly that nobody would even notice.\"", back: "\"So the frustrating bit is feeling like it wouldn't register either way.\"" },
-            { front: "Relate Through Sharing — they say: \"That's it, yeah.\"", back: "\"I know that exact feeling. I've stood in a corridor counting to ten before now.\"" },
+            { front: "Ask Follow-up Questions — they say: \"I was so frustrated I nearly walked out.\"", back: "\"What was going through your head at that point?\"", guideFront: "Ask for more when...", guideBack: "A question about what they said" },
+            { front: "Loop Back or Rephrase — they say: \"Mostly that nobody would even notice.\"", back: "\"So the frustrating bit is feeling like it wouldn't register either way.\"", guideFront: "Repeat back in your words when...", guideBack: "Their point, in your words" },
+            { front: "Relate Through Sharing — they say: \"That's it, yeah.\"", back: "\"I know that exact feeling. I've stood in a corridor counting to ten before now.\"", guideFront: "Offer something of your own when...", guideBack: "A time it happened to you" },
           ]
         },
         {
           bundle: 'pro',
           situation: "Someone has mentioned, almost in passing, that they finished something they have been working at for a long time.",
           steps: [
-            { front: "Ask Follow-up Questions — they say: \"I finally got the certificate last week.\"", back: "\"How long had you been working towards that?\"" },
-            { front: "Loop Back or Rephrase — they say: \"Two years, on and off. Mostly on.\"", back: "\"So that's two years of evenings, finished.\"" },
-            { front: "Relate Through Sharing — they say: \"Feels strange, actually.\"", back: "\"It does. I remember just sitting in the car for a while afterwards.\"" },
+            { front: "Ask Follow-up Questions — they say: \"I finally got the certificate last week.\"", back: "\"How long had you been working towards that?\"", guideFront: "Ask for more when...", guideBack: "A question about what they said" },
+            { front: "Loop Back or Rephrase — they say: \"Two years, on and off. Mostly on.\"", back: "\"So that's two years of evenings, finished.\"", guideFront: "Repeat back in your words when...", guideBack: "Their point, in your words" },
+            { front: "Relate Through Sharing — they say: \"Feels strange, actually.\"", back: "\"It does. I remember just sitting in the car for a while afterwards.\"", guideFront: "Offer something of your own when...", guideBack: "A time it happened to you" },
           ]
         },
         {
           bundle: 'pro',
           situation: "Someone you have not seen for months is telling you about moving somewhere they knew nobody.",
           steps: [
-            { front: "Ask Follow-up Questions — they say: \"It's been six months and I still don't really know anyone.\"", back: "\"What's the part that's been hardest to get going?\"" },
-            { front: "Loop Back or Rephrase — they say: \"There's nowhere you just end up. You have to arrange everything.\"", back: "\"So it's not that people are unfriendly — there's just no accidental version.\"" },
-            { front: "Relate Through Sharing — they say: \"That's exactly it.\"", back: "\"I moved for a job once and it took a year. It's the Tuesdays that get you.\"" },
+            { front: "Ask Follow-up Questions — they say: \"It's been six months and I still don't really know anyone.\"", back: "\"What's the part that's been hardest to get going?\"", guideFront: "Ask for more when...", guideBack: "A question about what they said" },
+            { front: "Loop Back or Rephrase — they say: \"There's nowhere you just end up. You have to arrange everything.\"", back: "\"So it's not that people are unfriendly — there's just no accidental version.\"", guideFront: "Repeat back in your words when...", guideBack: "Their point, in your words" },
+            { front: "Relate Through Sharing — they say: \"That's exactly it.\"", back: "\"I moved for a job once and it took a year. It's the Tuesdays that get you.\"", guideFront: "Offer something of your own when...", guideBack: "A time it happened to you" },
           ]
         },
       ]
@@ -7038,27 +7038,27 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "A friend has just told you that a group they were part of stopped including them, and it is still going on.",
           steps: [
-            { front: "Loop Back or Rephrase — they say: \"Then the whole group just stopped replying.\"", back: "\"So you were suddenly on your own with it, with no warning at all.\"" },
-            { front: "Loop Back or Rephrase — they say: \"And nobody's said anything since.\"", back: "\"It's the silence afterwards that's doing the damage, isn't it.\"" },
-            { front: "Ask Follow-up Questions — they nod and look away.", back: "\"Has anyone actually spoken to you about it since?\"" },
+            { front: "Loop Back or Rephrase — they say: \"Then the whole group just stopped replying.\"", back: "\"So you were suddenly on your own with it, with no warning at all.\"", guideFront: "Repeat back in your words when...", guideBack: "Their point, in your words" },
+            { front: "Loop Back or Rephrase — they say: \"And nobody's said anything since.\"", back: "\"It's the silence afterwards that's doing the damage, isn't it.\"", guideFront: "Repeat back in your words when...", guideBack: "Their point, in your words" },
+            { front: "Ask Follow-up Questions — they nod and look away.", back: "\"Has anyone actually spoken to you about it since?\"", guideFront: "Ask for more when...", guideBack: "A question about what they said" },
           ]
         },
         {
           bundle: 'pro',
           situation: "Someone is describing something that has clearly knocked them, while insisting at every turn that it is not a problem.",
           steps: [
-            { front: "Loop Back or Rephrase — they say: \"It's fine, honestly. It's just been a lot.\"", back: "\"It sounds less fine and more relentless, from where I'm sitting.\"" },
-            { front: "Loop Back or Rephrase — they say: \"It's been going on for months.\"", back: "\"Months of it. That's not a bad week, that's a stretch.\"" },
-            { front: "Ask Follow-up Questions — they let out a breath.", back: "\"What's the part that's hardest to keep doing?\"" },
+            { front: "Loop Back or Rephrase — they say: \"It's fine, honestly. It's just been a lot.\"", back: "\"It sounds less fine and more relentless, from where I'm sitting.\"", guideFront: "Repeat back in your words when...", guideBack: "Their point, in your words" },
+            { front: "Loop Back or Rephrase — they say: \"It's been going on for months.\"", back: "\"Months of it. That's not a bad week, that's a stretch.\"", guideFront: "Repeat back in your words when...", guideBack: "Their point, in your words" },
+            { front: "Ask Follow-up Questions — they let out a breath.", back: "\"What's the part that's hardest to keep doing?\"", guideFront: "Ask for more when...", guideBack: "A question about what they said" },
           ]
         },
         {
           bundle: 'pro',
           situation: "Someone has told you something that happened this morning, and they are still working out what they think about it.",
           steps: [
-            { front: "Loop Back or Rephrase — they say: \"They told me at nine and I've been sitting here since.\"", back: "\"So you've had four hours and no idea what to do with them.\"" },
-            { front: "Loop Back or Rephrase — they say: \"I don't even know who to tell.\"", back: "\"That's its own thing, isn't it. Not just the news, but having to hand it on.\"" },
-            { front: "Ask Follow-up Questions — they shrug.", back: "\"Is there anything that would help in the next hour?\"" },
+            { front: "Loop Back or Rephrase — they say: \"They told me at nine and I've been sitting here since.\"", back: "\"So you've had four hours and no idea what to do with them.\"", guideFront: "Repeat back in your words when...", guideBack: "Their point, in your words" },
+            { front: "Loop Back or Rephrase — they say: \"I don't even know who to tell.\"", back: "\"That's its own thing, isn't it. Not just the news, but having to hand it on.\"", guideFront: "Repeat back in your words when...", guideBack: "Their point, in your words" },
+            { front: "Ask Follow-up Questions — they shrug.", back: "\"Is there anything that would help in the next hour?\"", guideFront: "Ask for more when...", guideBack: "A question about what they said" },
           ]
         },
       ]
