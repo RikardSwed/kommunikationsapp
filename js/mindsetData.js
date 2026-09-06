@@ -542,8 +542,8 @@ const mindsetCollections = {
   endingconversations: [
     {
       name: "The Ending Is What They Remember",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "People remember how a conversation finished far more clearly than what was in the middle of it. A good ten minutes closed abruptly is remembered as odd; a flat ten minutes closed warmly is remembered as fine.\n\nThat is an unusually good deal. Eight seconds of attention at the end does more for how you are remembered than anything you could have said earlier.\n\nMindset: spend the last eight seconds properly. They count more than the rest.",
       inputs: [
         { q: "The conversation went well, so the ending doesn't matter much.", a: "It matters most. It's the part they'll actually remember.", bundle: 'pro' },
@@ -551,12 +551,15 @@ const mindsetCollections = {
         { q: "I'll just drift away, it's easier.", a: "Drifting is the thing people find strange. Four words prevent it.", bundle: 'pro' },
         { q: "They won't notice how it ended.", a: "It's the one bit everyone notices, usually without knowing why.", bundle: 'pro' },
         { q: "A proper goodbye takes too long.", a: "About eight seconds. Time it once and see.", bundle: 'pro' },
+        { q: "I said something clumsy earlier, so the whole thing is spoilt.", a: "Close it warmly and the clumsy bit stops being the last thing there.", bundle: 'pro' },
+        { q: "I'm tired and I just want out.", a: "Eight seconds. You have eight seconds even when you're tired.", bundle: 'pro' },
+        { q: "We ended fine — I said goodbye.", a: "Did you say anything about them, or only about leaving? That's the difference.", bundle: 'pro' },
       ]
     },
     {
       name: "You Do Not Need Permission",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "A surprising number of conversations run twenty minutes longer than either person wanted, because both are waiting for the other to end it. Each assumes leaving would be rude, and neither knows the other is thinking the same thing.\n\nEnding a conversation is not a rejection and does not require the other person's agreement. You are allowed to go.\n\nMindset: somebody has to end it, and it is usually a relief when they do.",
       inputs: [
         { q: "It would be rude to end it.", a: "Ending conversations is normal. Trapping someone in one isn't.", bundle: 'pro' },
@@ -564,12 +567,15 @@ const mindsetCollections = {
         { q: "I should wait for a natural gap.", a: "There often isn't one. That's why \"right, I'd better get on\" exists.", bundle: 'pro' },
         { q: "They're enjoying it, so I can't leave.", a: "You can leave and say you enjoyed it. Both are true at once.", bundle: 'pro' },
         { q: "I'll stay another ten minutes to be polite.", a: "They may well be waiting for you to go. Very often they are.", bundle: 'pro' },
+        { q: "They started the conversation, so it's theirs to end.", a: "Nobody owns it. Whoever needs to go, goes.", bundle: 'pro' },
+        { q: "They're mid-sentence, I can't go now.", a: "Wait for the full stop, then go. That's the whole courtesy.", bundle: 'pro' },
+        { q: "I've tried twice and they keep going.", a: "Then say it plainly instead of hinting. Hints are what got you here.", bundle: 'pro' },
       ]
     },
     {
       name: "A Reason Can Be Small",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "People invent elaborate reasons for leaving, or stay because they cannot think of a good enough one. But nobody examines your reason. They only need something to attach the ending to, so that it is about your day rather than about them.\n\n\"I should get on\" does the whole job. So does \"I've got a couple of things to sort\".\n\nMindset: any reason works. It only has to exist, not to be impressive.",
       inputs: [
         { q: "I need a proper excuse to leave.", a: "You need a sentence. \"I should get on\" is a sentence.", bundle: 'pro' },
@@ -577,12 +583,15 @@ const mindsetCollections = {
         { q: "I'd have to lie to get out of this.", a: "You wouldn't. \"I want to catch a few other people\" is true and fine.", bundle: 'pro' },
         { q: "My reason isn't important enough.", a: "Importance isn't the point. Existence is.", bundle: 'pro' },
         { q: "If I say I have to go they'll ask where.", a: "They almost never do. And \"just something I need to sort\" answers it.", bundle: 'pro' },
+        { q: "My reason is just that I want to go.", a: "\"I should get on\" is that reason, said politely. It's allowed.", bundle: 'pro' },
+        { q: "I gave a reason last time we spoke too.", a: "Nobody is keeping a tally. Give it again.", bundle: 'pro' },
+        { q: "A reason sounds like an excuse.", a: "An excuse defends something. A reason just points at your day.", bundle: 'pro' },
       ]
     },
     {
       name: "Leaving Well Protects the Next Time",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "Every ending is also a setup. An abrupt exit makes the next conversation slightly harder to start; a warm one means the next meeting begins somewhere further along.\n\nThat is why the moves in this pack are worth the seconds they cost. Wishing someone well about something specific, or offering to hear the rest on Thursday, is not politeness for its own sake — it is what makes the next conversation easy.\n\nMindset: end in a way that makes the next one easier to begin.",
       inputs: [
         { q: "I'll see them tomorrow anyway, so it doesn't matter.", a: "Tomorrow starts wherever today finished. Finish it well.", bundle: 'pro' },
@@ -590,6 +599,57 @@ const mindsetCollections = {
         { q: "Saying \"let's pick this up\" sounds like a line.", a: "Only if you don't mean it. If you do, it's the best thing you can leave behind.", bundle: 'pro' },
         { q: "I don't know them well enough for a warm goodbye.", a: "\"It was nice talking to you\" fits any level of knowing someone.", bundle: 'pro' },
         { q: "I've left it awkwardly with them before.", a: "Then this ending is the repair. It's cheaper than you think.", bundle: 'pro' },
+        { q: "I'm not sure I want a next conversation with this person.", a: "Then end it warmly anyway. It costs eight seconds and keeps the door yours to choose.", bundle: 'pro' },
+        { q: "We disagreed, so a warm ending would be false.", a: "\"Good to talk it through\" is true even when you didn't agree.", bundle: 'pro' },
+        { q: "I'll make it up to them next time.", a: "Next time starts from how this one ended. Do it now, it's cheaper.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "A Phrase Is Not Enough",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Right, see you later\" feels too thin to end anything with — four words that seem to skip past the whole conversation. So people reach for something bigger, and while they are composing it the moment passes and they are still standing there.\n\nBut the short phrase is not a summary of the conversation. It is a signal that the conversation is over, and it is understood as one instantly. Everything warm you want to add goes in front of it, not instead of it.\n\nMindset: the phrase is the door. Say the warm thing first, then use it.",
+      inputs: [
+        { q: "\"See you later\" is too abrupt to end on.", a: "It isn't the ending, it's the last four words of it. Put something warm in front.", bundle: 'pro' },
+        { q: "I need to say something that matches how good the talk was.", a: "One sentence about the talk, then the phrase. Anything longer starts a new conversation.", bundle: 'pro' },
+        { q: "The phrase sounds insincere.", a: "It's a signal, not a claim. Nobody hears \"take care\" as a promise.", bundle: 'pro' },
+        { q: "I'm still working out how to put it.", a: "While you work on it you're still standing there. Use the phrase and go.", bundle: 'pro' },
+        { q: "They deserve more than a stock line.", a: "They get more — the reason and the warm sentence. The stock line just closes it.", bundle: 'pro' },
+        { q: "If I say it too soon it'll seem like I want to escape.", a: "Say the warm thing first and it reads as an ending, not an escape.", bundle: 'pro' },
+        { q: "We've said goodbye and neither of us has moved.", a: "That's what the phrase is for. Say it and take the step.", bundle: 'pro' },
+        { q: "Everyone uses the same three phrases.", a: "That's why they work. A phrase nobody recognises has to be explained.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Later Means Never",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Let's pick this up tomorrow\" is what people say when they mean no, so offering it feels like telling a small lie — and the ones who would never lie simply do not say it, and the conversation ends without the topic being protected.\n\nThe line is not the problem. The line followed by nothing is the problem. Said by someone who then messages on Thursday, it is one of the strongest things you can leave behind: the conversation ended, the subject did not.\n\nMindset: only offer it when you mean it, and then actually do it. That is the whole rule.",
+      inputs: [
+        { q: "\"Let's continue this later\" sounds like a brush-off.", a: "Only from people who never follow up. Follow up once and it stops sounding like one.", bundle: 'pro' },
+        { q: "I can't promise I'll have time.", a: "Then say when. \"Thursday, if I get through this week\" is honest and still an offer.", bundle: 'pro' },
+        { q: "They'll have forgotten by tomorrow.", a: "They won't have. People remember the ones who said they'd come back.", bundle: 'pro' },
+        { q: "It feels presumptuous to assume they want to continue.", a: "You're offering, not booking. They can let it drop.", bundle: 'pro' },
+        { q: "I said it last time and never followed up.", a: "Then follow up now, late. Late is recoverable. Twice is not.", bundle: 'pro' },
+        { q: "The topic wasn't important enough to reopen.", a: "If it was worth ten minutes it's worth one message.", bundle: 'pro' },
+        { q: "I'd rather just end it cleanly.", a: "This is the clean ending. It closes the conversation and keeps the subject.", bundle: 'pro' },
+        { q: "What if they take it as a real appointment?", a: "Then you have one. That's not the disaster it feels like.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Saying It Was Good Is Too Much",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"It was nice talking to you\" and \"good luck with the move\" both feel like more than the relationship can carry — sentimental with a colleague, over-familiar with a stranger. So people leave them out and end on the reason alone, which is correct and slightly cold.\n\nNeither line claims anything. One says the last ten minutes were pleasant; the other says you were listening well enough to remember what is coming for them. Both are small, and both are the reason someone is easy to talk to a second time.\n\nMindset: it is a smaller thing to say than it feels. Say it and go.",
+      inputs: [
+        { q: "\"It was nice talking to you\" is too much for a colleague.", a: "It's what people say at the end of a conversation. Nobody has ever found it strange.", bundle: 'pro' },
+        { q: "I barely know them.", a: "Then it fits perfectly. It's a comment on ten minutes, not on the friendship.", bundle: 'pro' },
+        { q: "It'll sound like I'm buttering them up.", a: "Not if you leave straight after. Flattery stays to see how it landed.", bundle: 'pro' },
+        { q: "I can't remember what they said was coming up.", a: "Then use the general one. \"Have a good weekend\" costs nothing and still lands.", bundle: 'pro' },
+        { q: "We didn't really talk about anything.", a: "You still spent ten minutes. \"Good to see you\" is true of that.", bundle: 'pro' },
+        { q: "A compliment on the way out looks like angling for something.", a: "Angling looks like staying. Saying it and leaving looks like meaning it.", bundle: 'pro' },
+        { q: "It feels forced if I plan to say it.", a: "Everyone plans it. Nobody can hear the difference.", bundle: 'pro' },
+        { q: "I said the reason, that's enough.", a: "The reason explains you. The warm line is the part that's about them.", bundle: 'pro' },
       ]
     },
   ],
@@ -1528,8 +1588,8 @@ const mindsetCollections = {
   disagreeing: [
     {
       name: "Disagreement Is Not Conflict",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "Many people avoid disagreeing because they experience it as the first step towards a row. But two people holding different views is the ordinary state of things, and saying so out loud is usually the least dramatic way to handle it.\n\nThe conflict, when it comes, is nearly always about how it was said or how late it surfaced — not about the difference itself.\n\nMindset: a stated difference is calmer than an unstated one.",
       inputs: [
         { q: "If I disagree it'll turn into an argument.", a: "Unstated disagreements turn into arguments. Stated ones usually turn into conversations.", bundle: 'pro' },
@@ -1537,12 +1597,15 @@ const mindsetCollections = {
         { q: "They'll think I'm difficult.", a: "They'll think you have a view. That's what people in a discussion are supposed to have.", bundle: 'pro' },
         { q: "Agreeing keeps things pleasant.", a: "Until the decision goes ahead and you have to live with it.", bundle: 'pro' },
         { q: "I hate confrontation.", a: "This isn't confrontation. \"I see it differently\" is a normal sentence.", bundle: 'pro' },
+        { q: "We've been getting on well and I don't want to spoil it.", a: "Getting on well is what makes a disagreement safe. Use the goodwill, don't hoard it.", bundle: 'pro' },
+        { q: "Last time I disagreed with them it went badly.", a: "Check what actually went badly — the difference, or how it was raised.", bundle: 'pro' },
+        { q: "I can feel myself getting worked up.", a: "Then the words matter more, not less. \"I see it differently\" and nothing sharper.", bundle: 'pro' },
       ]
     },
     {
       name: "You Do Not Have to Win",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "Treating a disagreement as something to be won turns the other person into an opponent, and opponents defend rather than think. It also makes it very hard for you to change your own mind, because doing so starts to feel like losing.\n\nThe aim is a better shared picture. Sometimes that means they move, sometimes you do, and often both of you end up somewhere neither started.\n\nMindset: the good outcome is a better answer, not your answer.",
       inputs: [
         { q: "I need to make them see I'm right.", a: "You need to put your view where they can see it. What they do with it is theirs.", bundle: 'pro' },
@@ -1550,12 +1613,15 @@ const mindsetCollections = {
         { q: "They haven't accepted my point yet.", a: "They've heard it. Acceptance isn't owed to you on the same day.", bundle: 'pro' },
         { q: "I want the last word.", a: "The last word costs more than it's worth almost every time.", bundle: 'pro' },
         { q: "Backing down now would look weak.", a: "Changing your mind in public is the thing that makes people trust you later.", bundle: 'pro' },
+        { q: "There are other people listening, so I can't drop it.", a: "An audience makes conceding look better, not worse. They can all see who moved.", bundle: 'pro' },
+        { q: "I've got one more argument I haven't used.", a: "Ask whether it adds something or just adds length. Usually it's length.", bundle: 'pro' },
+        { q: "They've gone quiet, so I think I've got them.", a: "Quiet is often just done. Ask what they think now rather than pressing.", bundle: 'pro' },
       ]
     },
     {
       name: "Say It Early",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "A disagreement raised at the start is a contribution. The same disagreement raised after a decision is made is an obstacle, and it costs the other person work they have already done.\n\nThe discomfort of speaking up early is small and brief. The cost of speaking up late is carried by everyone.\n\nMindset: the awkward moment gets more expensive the longer you wait.",
       inputs: [
         { q: "I'll wait and see if anyone else says it.", a: "They're waiting too. Somebody has to go first.", bundle: 'pro' },
@@ -1563,12 +1629,15 @@ const mindsetCollections = {
         { q: "Everyone's already agreed.", a: "Then one sentence is all it takes, and the room can decide with it.", bundle: 'pro' },
         { q: "I'll mention it afterwards, privately.", a: "Sometimes right. But not if the decision gets made in the room.", bundle: 'pro' },
         { q: "I don't want to derail the meeting.", a: "A ten-second objection isn't a derailment. A rework in April is.", bundle: 'pro' },
+        { q: "I want to think it through properly first.", a: "Say the half-formed version now. \"Something about this bothers me, give me a day\" holds the door.", bundle: 'pro' },
+        { q: "I'm the most junior person here.", a: "Then yours is the view nobody else can supply. Ten seconds is all it takes.", bundle: 'pro' },
+        { q: "I only realised I disagreed afterwards.", a: "That happens. Raise it the same day and it's still early.", bundle: 'pro' },
       ]
     },
     {
       name: "Their View Came From Somewhere",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "When someone holds a view that seems obviously wrong, the useful question is not how they could think that but what they have seen that you have not. Almost every opinion has a real experience behind it.\n\nAsking about that experience is more effective than arguing against the conclusion, and it occasionally turns out that they are right.\n\nMindset: look for the reason behind the position, not the flaw in it.",
       inputs: [
         { q: "How can they possibly think that?", a: "Something led them there. Ask what it was — it's usually the most interesting part.", bundle: 'pro' },
@@ -1576,6 +1645,9 @@ const mindsetCollections = {
         { q: "I've already heard all their arguments.", a: "You've heard the arguments. You may not have heard the experience underneath them.", bundle: 'pro' },
         { q: "There's no good reason to hold that view.", a: "There's a reason. It may not be a good one, but knowing it changes what you say next.", bundle: 'pro' },
         { q: "Asking questions will look like I'm conceding.", a: "It looks like you're interested. That's what makes people listen back.", bundle: 'pro' },
+        { q: "They're only saying it because of who they heard it from.", a: "Maybe. Ask anyway — you'll find out whether that's true or just convenient.", bundle: 'pro' },
+        { q: "I asked and the answer was vague.", a: "Then ask about a time rather than a reason. Experiences come out clearer than principles.", bundle: 'pro' },
+        { q: "Understanding it would mean half agreeing with it.", a: "Understanding a view and holding it are different things. You can do the first cheaply.", bundle: 'pro' },
       ]
     },
   ],
@@ -2971,8 +3043,8 @@ const mindsetCollections = {
   discussing: [
     {
       name: "Not Trying to Win",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "The pack-wide stance: a discussion is not a contest with a result, and treating it as one is what produces every failure in the pack. The aim is that both people understand the question better than they did — which is compatible with disagreeing at the end. Example of the shift — instead of hunting for the argument they cannot answer, you look for the part you have not understood.\n\nThe three thoughts that cause the trouble:\n1. \"One of us has to be right\" — you can both be, about different parts.\n2. \"If I concede I lose\" — conceding accurately is what makes the rest of you believable.\n3. \"It ended without agreement, so it failed\" — most good discussions do.\n\nMindset: the outcome to aim for is two people who understand it better. Agreement is optional and often unavailable.",
       inputs: [
         { q: "You are looking for the argument they cannot answer.", a: "\"That's a competition move. What's the bit I haven't understood yet?\"", bundle: 'pro' },
@@ -2980,12 +3052,15 @@ const mindsetCollections = {
         { q: "You feel a small pleasure when they cannot reply.", a: "\"That feeling means I've stopped discussing. Back to the actual question.\"", bundle: 'pro' },
         { q: "You want the last word.", a: "\"The last word is worth nothing tomorrow. What do I actually want them to leave with?\"", bundle: 'pro' },
         { q: "You are keeping score.", a: "\"There isn't a score. There's what we each think, and whether it's moved.\"", bundle: 'pro' },
+        { q: "Other people are listening and you want to look right.", a: "\"They're watching how I handle it, not who lands the last point.\"", bundle: 'pro' },
+        { q: "You are rehearsing the story you will tell about this later.", a: "\"If I'm already writing the version where I won, I've stopped listening.\"", bundle: 'pro' },
+        { q: "They conceded a point and you pressed the advantage.", a: "\"That's the moment to slow down, not speed up. They just did the hard thing.\"", bundle: 'pro' },
       ]
     },
     {
       name: "Say It As Yours",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "The stance behind every Me-Focus move: an opinion stated as a fact invites a fight about the fact. \"I think\" is not a hedge — it is the accurate description of what you are saying, and it makes the other person's disagreement cheap rather than confrontational. Example of the shift — instead of \"that's obviously wrong\", you say \"I see it differently, and here's why\".\n\nWhere it goes wrong:\n1. You dress a preference up as a principle to make it harder to argue with.\n2. You say \"people think\" when you mean \"I think\".\n3. You avoid the opinion entirely and then resent not being heard.\n\nMindset: own it. It is more honest, and it is harder to argue with — you are the authority on what you think.",
       inputs: [
         { q: "You are about to present your view as an obvious fact.", a: "\"It's my view. Saying so makes it easier for them to say theirs.\"", bundle: 'pro' },
@@ -2993,12 +3068,15 @@ const mindsetCollections = {
         { q: "You have not stated a position and feel unheard.", a: "\"Nobody can respond to something I haven't said. Put it on the table.\"", bundle: 'pro' },
         { q: "You are dressing a preference up as a principle.", a: "\"It's a preference and that's allowed. Preferences are real reasons.\"", bundle: 'pro' },
         { q: "You worry your view is not well enough thought through.", a: "\"Half-formed and honest is fine. 'I lean this way, not strongly' is a real position.\"", bundle: 'pro' },
+        { q: "You are quoting research you half remember.", a: "\"Say what I actually know. 'I read something like that' is honest and still useful.\"", bundle: 'pro' },
+        { q: "Saying 'I think' makes it sound weak.", a: "\"It makes it accurate. Weak is a claim I can't back when someone pushes.\"", bundle: 'pro' },
+        { q: "You are speaking for a group who is not in the room.", a: "\"Say mine and let them speak for themselves. Borrowed numbers aren't strength.\"", bundle: 'pro' },
       ]
     },
     {
       name: "Listen to Hear, Not to Reply",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "The stance behind every You-Focus move: while someone is talking you are either taking it in or you are queueing, and the two feel identical from the inside. The qualification you needed usually arrives in their last sentence, which is exactly the sentence you talk over. Example of the shift — instead of holding your reply ready, you follow to the end and then think.\n\nWhere it shows up:\n1. You have your answer ready before they have finished the point.\n2. You interrupt and the interrupted point comes back twice as long.\n3. You cannot summarise what they said, only whether you agreed with it.\n\nMindset: whatever you were going to say will still be there in eight seconds, and it will usually be better for the wait.",
       inputs: [
         { q: "Your reply is ready and they are still talking.", a: "\"It'll keep. The last quarter is where the interesting part usually is.\"", bundle: 'pro' },
@@ -3006,12 +3084,15 @@ const mindsetCollections = {
         { q: "You interrupted and the point came back at twice the length.", a: "\"That's what interrupting costs. Cheaper to wait.\"", bundle: 'pro' },
         { q: "A pause tempts you to jump in.", a: "\"A pause is thinking, not an invitation.\"", bundle: 'pro' },
         { q: "You are certain you disagree before they have finished.", a: "\"Certain before the end is a sign I'm arguing with a prediction.\"", bundle: 'pro' },
+        { q: "They are repeating themselves and you have got it.", a: "\"Repeating usually means they don't think it landed. Say it back and they'll stop.\"", bundle: 'pro' },
+        { q: "You are nodding along while thinking about something else.", a: "\"Nodding isn't listening. Come back to the sentence they're on.\"", bundle: 'pro' },
+        { q: "They said something wrong early and you stopped following.", a: "\"I've been arguing with sentence two for a minute. What's happened since?\"", bundle: 'pro' },
       ]
     },
     {
       name: "Changing Your Mind Is a Result",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "The stance about outcomes: being persuaded is not a defeat, it is the discussion doing the thing discussions are for. Saying so out loud costs a moment of discomfort and buys something considerable — people are far more willing to discuss anything with someone who has been seen to move. Example of the shift — instead of quietly adjusting your view and defending it anyway, you say which part changed your mind.\n\nWhere the resistance shows up:\n1. You keep arguing a position you have already left.\n2. You concede silently and let them think they lost.\n3. You look for a smaller point to be right about instead.\n\nMindset: say it plainly, and name what did it. \"The bit about the night shift changed my mind\" is an answer and a compliment at the same time.",
       inputs: [
         { q: "You are defending a position you no longer hold.", a: "\"Say it out loud. Arguing for something I don't believe wastes both of us.\"", bundle: 'pro' },
@@ -3019,6 +3100,41 @@ const mindsetCollections = {
         { q: "You want to concede quietly and move on.", a: "\"Name the part that did it. That's the useful half of conceding.\"", bundle: 'pro' },
         { q: "Only some of their case moved you.", a: "\"Then say which. Half a concession, accurately placed, beats a vague one.\"", bundle: 'pro' },
         { q: "You changed your mind an hour after the discussion.", a: "\"Tell them tomorrow. Late is fine — silent isn't.\"", bundle: 'pro' },
+        { q: "You moved but you do not want them to get the credit.", a: "\"Naming what moved me costs nothing and makes them listen next time.\"", bundle: 'pro' },
+        { q: "You have argued this position publicly for years.", a: "\"Then moving is worth more, not less. Long-held is not the same as right.\"", bundle: 'pro' },
+        { q: "They were rude about it and you do not want to reward that.", a: "\"The point can be right and the delivery wrong. Take the point, mention the delivery separately.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Saying It Back Is Conceding",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "Putting someone's position into your own words feels like handing it strength — as though repeating it out loud makes it more true, or signals that you are half persuaded before you have said anything of your own.\n\nIt does the reverse. Their view stated accurately by you is their view with nowhere left to hide, and the disagreement that follows lands on the real thing rather than a version of it. It also removes the escape route where they say you have misunderstood them.\n\nMindset: state it accurately and the disagreement gets sharper, not softer.",
+      inputs: [
+        { q: "Repeating their point makes it sound stronger.", a: "\"It makes it clearer. Clear is what I need before I can disagree with it.\"", bundle: 'pro' },
+        { q: "If I say it back they'll think I agree.", a: "\"Then say the next sentence. 'That's your view, and here's where I part from it.'\"", bundle: 'pro' },
+        { q: "I've understood them, so saying it back is a waste of time.", a: "\"Then it costs one sentence to prove it. And half the time I find I hadn't.\"", bundle: 'pro' },
+        { q: "It sounds like a technique.", a: "\"Only if I do it in a voice. Say it plainly and it's just checking.\"", bundle: 'pro' },
+        { q: "I'd be summarising their argument for them.", a: "\"That's the point. Now we're both looking at the same thing.\"", bundle: 'pro' },
+        { q: "They'll correct my version and we'll lose ten minutes.", a: "\"Those ten minutes were going to be lost later, in the wrong place.\"", bundle: 'pro' },
+        { q: "Their view is confused, I can't say it back cleanly.", a: "\"Then say the confused version and ask. That's more useful than guessing.\"", bundle: 'pro' },
+        { q: "I said it back and they said 'exactly'. Now what?", a: "\"Now disagree with something they've confirmed. That's the strongest position there is.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Asking Looks Like I Missed It",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "A clarifying question in the middle of a discussion feels like an admission — that you were not following, or were not quick enough. So people answer the version of the point they assumed, and the next ten minutes are two people arguing about different things.\n\nAsking is not a confession of inattention. Most sentences worth discussing carry two or three possible meanings, and the speaker rarely knows which one arrived. The question is the cheapest thing in the discussion and it prevents the most expensive thing.\n\nMindset: ask before you answer. Answering the wrong version costs far more than asking.",
+      inputs: [
+        { q: "Asking will make it look like I wasn't listening.", a: "\"It looks like I was listening closely enough to notice two meanings.\"", bundle: 'pro' },
+        { q: "I'm fairly sure I know which one they mean.", a: "\"Fairly sure is where the ten wasted minutes start. It's one sentence to check.\"", bundle: 'pro' },
+        { q: "It'll break their flow.", a: "\"Better than letting them build three more points on something I've misread.\"", bundle: 'pro' },
+        { q: "A question in the middle of an argument is a debating trick.", a: "\"It is when it's rhetorical. 'Which do you mean' isn't.\"", bundle: 'pro' },
+        { q: "They'll think I'm being pedantic.", a: "\"Pedantic is arguing about the word. Asking which one they meant is the opposite.\"", bundle: 'pro' },
+        { q: "I asked once already in this conversation.", a: "\"Then ask again. Nobody has ever been annoyed by being understood.\"", bundle: 'pro' },
+        { q: "I'll work it out from what comes next.", a: "\"Sometimes. And sometimes what comes next depends on which one it was.\"", bundle: 'pro' },
+        { q: "If I ask, I have to admit I don't know.", a: "\"You don't know. That's true whether you say it or not.\"", bundle: 'pro' },
       ]
     },
   ],

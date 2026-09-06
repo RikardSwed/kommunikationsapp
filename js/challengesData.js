@@ -556,8 +556,8 @@ const challengesCollections = {
   endingconversations: [
     {
       name: "They Will Not Let You Go",
-      guideFront: "What makes this ending hard?",
-      guideBack: "A possible ending, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "You have signalled twice and the conversation is still going. Each attempt that fails makes the next one feel ruder, and people often give up and stay for another ten minutes rather than escalate.\n\nThe escalation is the kind move. A clear sentence with no gap after it — no trailing \"so…\", no pause for them to fill — ends things more comfortably than four soft attempts.\n\nMindset: clearer, not louder. And do not leave a pause at the end.",
       inputs: [
         { q: "Your soft exit phrase was ignored completely.", a: "\"I do actually have to go — I've got something on at four.\" [Give a Reason]", bundle: 'pro' },
@@ -569,8 +569,8 @@ const challengesCollections = {
     },
     {
       name: "You Have No Real Reason",
-      guideFront: "What makes this ending hard?",
-      guideBack: "A possible ending, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Sometimes you just want to go. Nothing is waiting, nothing starts at four, and inventing something feels dishonest while saying nothing feels rude.\n\nYou do not need a reason to end a conversation, and the vague ones exist for exactly this. \"I should get on\" is both true and sufficient, because nobody is auditing it. At an event, moving on is the expected behaviour and needs no justification at all.\n\nMindset: wanting to go is a reason. \"I should get on\" covers it.",
       inputs: [
         { q: "Nothing is waiting for you but you want to leave.", a: "\"I should probably get on.\" [Give a Reason]", bundle: 'pro' },
@@ -582,8 +582,8 @@ const challengesCollections = {
     },
     {
       name: "Ending a Difficult Conversation",
-      guideFront: "What makes this ending hard?",
-      guideBack: "A possible ending, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Leaving a heavy conversation is delicate, because the ending can read as escape — as though you have heard enough and would like to be elsewhere.\n\nTwo things make it safe. Name what was said before you leave, so it is clear you are not walking away from it. And offer a genuine continuation, which turns your departure into an interval rather than a full stop. This is also the one place where the joke is entirely wrong.\n\nMindset: acknowledge, then offer more. Never close a hard conversation with a light exit.",
       inputs: [
         { q: "Someone has told you something difficult and you have to leave.", a: "\"I'm glad you told me. Can we carry this on properly tomorrow?\" [Offer to Continue Later]", bundle: 'pro' },
@@ -595,8 +595,8 @@ const challengesCollections = {
     },
     {
       name: "Leaving a Group",
-      guideFront: "What makes this ending hard?",
-      guideBack: "A possible ending, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Leaving several people at once is harder than leaving one, because there is no obvious gap and a goodbye can feel like an announcement.\n\nTwo approaches work. The quiet one: say it to the person nearest you and move, without stopping the group. The open one: one short sentence to everybody, and then actually go — the mistake is announcing a departure and then remaining for ten minutes, which makes the second attempt strange.\n\nMindset: say it once, to one person or to everyone, and then move.",
       inputs: [
         { q: "You want to slip away from a group mid-conversation.", a: "\"I'm going to head off — night, all.\" [Use an Exit Phrase]", bundle: 'pro' },
@@ -608,8 +608,8 @@ const challengesCollections = {
     },
     {
       name: "They Ended It On You",
-      guideFront: "What makes this ending hard?",
-      guideBack: "A possible ending, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "You are the one being left. Somebody has given a reason and started to go, and how you respond decides whether the ending is comfortable.\n\nThe move is to release them quickly and warmly. Holding someone with one last question when they have already said they are leaving is the exact thing this pack teaches you not to do to others.\n\nMindset: let them go easily, and put the warmth in the release.",
       inputs: [
         { q: "They say they have to leave.", a: "\"Of course — go. Good to see you.\" [Say Something Positive About the Talk]", bundle: 'pro' },
@@ -1695,8 +1695,8 @@ const challengesCollections = {
   disagreeing: [
     {
       name: "They Take It Personally",
-      guideFront: "What kind of trouble is this disagreement in?",
-      guideBack: "A possible response, with the move in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "You disagreed with an idea and they heard a judgement about them. The conversation stops being about the question and starts being about the relationship.\n\nThe move is to separate the two explicitly — say what you are not saying — and then return to the point without dropping it.\n\nMindset: naming the split out loud usually works. People rarely think to do it.",
       inputs: [
         { q: "They say, \"So you think I'm wrong about everything.\"", a: "\"Not everything, and not you. This one thing, and I might be the wrong one.\" [Separate person from point]", bundle: 'pro' },
@@ -1708,8 +1708,8 @@ const challengesCollections = {
     },
     {
       name: "You Are Outnumbered",
-      guideFront: "What kind of trouble is this disagreement in?",
-      guideBack: "A possible response, with the move in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Everyone else in the room has agreed and you have not. The pull to stay quiet is strong, and the disagreement gets more awkward the longer you leave it.\n\nSignal early and keep it short. A single clear sentence is much easier for a group to absorb than a late, elaborate objection.\n\nMindset: you are adding information the room does not have. That is worth ten seconds of discomfort.",
       inputs: [
         { q: "Everyone has nodded and you have not.", a: "\"Can I be the awkward one? I'm not sure about this.\" [Signal early]", bundle: 'pro' },
@@ -1721,8 +1721,8 @@ const challengesCollections = {
     },
     {
       name: "They Will Not Give a Reason",
-      guideFront: "What kind of trouble is this disagreement in?",
-      guideBack: "A possible response, with the move in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "They restate their position more firmly instead of explaining it. Repeating your own reason back at them produces the same loop at a higher volume.\n\nAsk a question instead. A genuine question about their reasoning changes the shape of the exchange more reliably than any further argument of yours.\n\nMindset: curiosity is the only thing that reliably unsticks a stuck disagreement.",
       inputs: [
         { q: "They say \"it just is\" for the second time.", a: "\"What would you point at if you had to convince someone neutral?\" [Ask for the reason]", bundle: 'pro' },
@@ -1734,8 +1734,8 @@ const challengesCollections = {
     },
     {
       name: "You Might Be Wrong",
-      guideFront: "What kind of trouble is this disagreement in?",
-      guideBack: "A possible response, with the move in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Partway through you notice your reason is weaker than you thought, or they have said something you cannot answer. Continuing to argue from momentum is how people end up defending positions they no longer hold.\n\nSay so. Concede the part that has gone, keep the part that has not, and be specific about which is which.\n\nMindset: changing your mind in public is the thing that makes people trust your agreement later.",
       inputs: [
         { q: "Their answer is better than your objection.", a: "\"That's a fair answer. I'll drop that one.\" [Concede cleanly]", bundle: 'pro' },
@@ -1747,8 +1747,8 @@ const challengesCollections = {
     },
     {
       name: "It Is Not Worth It",
-      guideFront: "What kind of trouble is this disagreement in?",
-      guideBack: "A possible response, with the move in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Not every difference of view needs airing. Some are too small, some are on someone else's territory, and some come at a moment when nobody has the energy.\n\nChoosing not to disagree is a legitimate move, but it works best when it is a choice rather than an avoidance. And it should be a real letting go, not a silence that turns into resentment.\n\nMindset: pick the disagreements that change something.",
       inputs: [
         { q: "The difference is real but changes nothing.", a: "\"I'd have done it differently, but it genuinely doesn't matter. Go ahead.\" [Let it go openly]", bundle: 'pro' },
@@ -3318,8 +3318,8 @@ const challengesCollections = {
   discussing: [
     {
       name: "Two Monologues",
-      guideFront: "What has gone wrong in this discussion?",
-      guideBack: "A possible response, with the move in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Both of you are stating positions and neither is taking anything in. It looks like a discussion and functions as two speeches delivered alternately. The repair is a You-Focus move — say their view back, and mean it.\n\nWhat it usually looks like:\n\n• Each turn starts with \"but\" or \"yeah, but\".\n• Neither of you has repeated anything the other said.\n• You could not summarise their position if asked.\n\nTwo ways through:\n1. Say their view back — the fastest way to break the pattern.\n2. Ask a real question — one you do not know the answer to.\n\nMindset: if you could not state their position in a sentence, you are not discussing. You are taking turns.",
       inputs: [
         { q: "Every turn starts with \"yeah, but\".", a: "\"I've been saying 'yeah but' for five minutes. Let me actually say your side back.\" [say it back]", bundle: 'pro' },
@@ -3331,8 +3331,8 @@ const challengesCollections = {
     },
     {
       name: "Arguing About Different Things",
-      guideFront: "What has gone wrong in this discussion?",
-      guideBack: "A possible response, with the move in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Ten minutes in, it turns out you meant different things by the same word, and most of the disagreement was never real. The repair is a clarifying question — and it should have come first.\n\nWhat it usually looks like:\n\n• The disagreement feels bigger than the subject.\n• One of you keeps saying \"that's not what I mean\".\n• A key word is doing a lot of unexamined work.\n\nTwo ways through:\n1. Narrow the word — \"all of it, or part of it?\"\n2. Ask for a case — an abstraction becomes discussable the moment it has an example in it.\n\nMindset: check what they mean before you disagree with what you heard. Half of all heated discussions are this.",
       inputs: [
         { q: "They keep saying \"that's not what I mean\".", a: "\"Then I've got the wrong end. What DO you mean by it, in one sentence?\" [narrow it]", bundle: 'pro' },
@@ -3344,8 +3344,8 @@ const challengesCollections = {
     },
     {
       name: "It Got Personal",
-      guideFront: "What has gone wrong in this discussion?",
-      guideBack: "A possible response, with the move in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The discussion has moved from the subject to the people, and the next thing said will be about character rather than about the question. The repair is to name it as a shared thing and take the heat out before anything else.\n\nWhat it usually looks like:\n\n• \"You always…\" has appeared.\n• Someone has brought in something from another day.\n• The tone changed and neither of you acknowledged it.\n\nTwo ways through:\n1. Name it as \"we\" — never as \"you\".\n2. Stop the discussion rather than win it — \"let's come back to this.\"\n\nMindset: winning an exchange with someone you will see tomorrow is not winning.",
       inputs: [
         { q: "\"You always do this\" has just been said.", a: "\"We've moved off the subject. Can we go back to the actual question?\" [name it as we]", bundle: 'pro' },
@@ -3357,8 +3357,8 @@ const challengesCollections = {
     },
     {
       name: "The Floor Is Not Shared",
-      guideFront: "What has gone wrong in this discussion?",
-      guideBack: "A possible response, with the move in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "One person has had almost all the airtime — sometimes you, sometimes them, sometimes a third person in a group. The repair depends on which, but both versions are the same move: put the balance back deliberately.\n\nWhat it usually looks like:\n\n• You have spoken for four minutes without a pause.\n• Or: you have said almost nothing and are now resentful about it.\n• In a group, the quietest person has said one sentence.\n\nTwo ways through:\n1. Hand it over explicitly — \"I've had a good run at this. What do you think?\"\n2. Take your turn explicitly — \"Can I have thirty seconds? I've not said much.\"\n\nMindset: airtime is part of the discussion, not a side effect of it. Notice it and say something.",
       inputs: [
         { q: "You have been talking for four minutes.", a: "\"I've had a good run at that. What's your read on it?\" [hand it over]", bundle: 'pro' },
@@ -3370,8 +3370,8 @@ const challengesCollections = {
     },
     {
       name: "You Have Changed Your Mind",
-      guideFront: "What has gone wrong in this discussion?",
-      guideBack: "A possible response, with the move in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Somewhere in the discussion they have convinced you, and now saying so feels like losing. It is not, and saying it plainly is the single most useful thing that can happen in a discussion — it is also what makes people willing to have the next one with you.\n\nWhat it usually looks like:\n\n• You are defending a position you no longer hold.\n• You are looking for a small point to be right about instead.\n• You want to concede but only quietly.\n\nTwo ways through:\n1. Say it plainly and name what changed it — \"the bit about the night shift did it\".\n2. Concede the part, not the whole — if only some of it moved you, say which.\n\nMindset: changing your mind is the discussion working. Concede out loud, and name what did it — that is a compliment as well as an answer.",
       inputs: [
         { q: "They have convinced you and you are still arguing.", a: "\"I'm defending something I don't think any more. You're right about the shift cover.\" [say it plainly]", bundle: 'pro' },

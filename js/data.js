@@ -1115,8 +1115,8 @@ const collections = {
   endingconversations: [
     {
       name: "Use an Exit Phrase",
-      guideFront: "You want to leave. Say it out loud.",
-      guideBack: "One way it could sound.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "The short standard phrase that closes the door. \"Right, see you later.\" \"Take care.\" \"Have a good one.\" It carries almost no information, and that is exactly its job: it tells the other person the conversation is over without saying anything that could restart it.\n\nIt works because it is instantly recognised. Nobody has to interpret \"take care\" — everyone knows what it means, which is why it can end a conversation in two words when a longer sentence would open a new one.\n\nAlmost always it comes **last**, after the reason or the warm bit. On its own it is abrupt; on the end of a proper close it is the full stop.\n\nTypical phrases: \"See you later.\", \"Take care.\", \"Have a good one.\", \"Right — I'll let you go.\"\n\nFour kinds of exit phrase:\n\n1. The plain one — works everywhere. \"See you later.\"\n\n2. The warm one — the same length, slightly kinder. \"Take care.\"\n\n3. The one that hands them the exit — polite and very common. \"Anyway, I'll let you get on.\"\n\n4. The forward-looking one — for people you will see again. \"See you Thursday, then.\"\n\nMindset: keep it short and mean it. An exit phrase followed by another sentence is not an exit phrase.",
       inputs: [
         { q: "You have finished chatting with a neighbour on the stairs.", a: "\"Right — see you later.\"", bundle: 'free' },
@@ -1131,8 +1131,8 @@ const collections = {
     },
     {
       name: "Give a Reason",
-      guideFront: "You want to leave. Say it out loud.",
-      guideBack: "One way it could sound.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "Say why you have to go. A class, a bus, a call, food in the oven, someone waiting. The reason turns leaving from a judgement about the conversation into a fact about your day.\n\nIt works because it answers the question the other person would otherwise ask themselves. Without a reason, an ending can be read as boredom; with one, it is just logistics.\n\nThe reason does **not** have to be dramatic or even very good. \"I should get on\" is a reason. People accept almost anything, because they are not actually auditing you — they only need something to attach the ending to.\n\nTypical phrases: \"I have to get to a class.\", \"I need to catch my bus.\", \"I should get back to it.\", \"I've got someone waiting.\"\n\nFour kinds of reason:\n\n1. A time-bound one — the strongest, because it explains the urgency. \"I need to catch the ten past.\"\n\n2. An obligation — simple and unarguable. \"I've got a call in five minutes.\"\n\n3. A vague one — surprisingly effective. \"I should probably get on.\"\n\n4. Someone else — takes it out of your hands entirely. \"I've left someone waiting outside.\"\n\nMindset: one reason, briefly. Explaining it in detail sounds like an excuse and keeps the conversation going.",
       inputs: [
         { q: "You have to be somewhere in a few minutes.", a: "\"I need to get going — I've got a class at two.\"", bundle: 'free' },
@@ -1147,8 +1147,8 @@ const collections = {
     },
     {
       name: "Offer to Continue Later",
-      guideFront: "You want to leave. Say it out loud.",
-      guideBack: "One way it could sound.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "Signal that the conversation is ending but the topic is not. \"Let's pick this up tomorrow.\" \"Tell me the rest on Thursday.\" \"Message me and we'll sort it.\"\n\nIt works because it separates two things the other person might otherwise hear together: you are leaving, and you are not leaving *them*. That is what makes it possible to end something mid-flow without it feeling like a rejection.\n\nIt also does something no other ending does — it creates the next conversation. An ending with a forward hook means the next time you meet there is already something to talk about.\n\nTypical phrases: \"Let's pick this up next week.\", \"Tell me the rest on Thursday.\", \"We'll carry on with this.\", \"Message me and we'll sort something.\"\n\nFour ways to offer more later:\n\n1. Name the next time — the strongest version. \"Tell me the rest on Thursday.\"\n\n2. Leave it open but real — softer, still genuine. \"We'll pick this up.\"\n\n3. Hand them the follow-up — puts it in their hands. \"Send me the link and I'll have a proper look.\"\n\n4. Say what you want to hear more about — flattering and specific. \"I want to hear how the interview goes.\"\n\nMindset: only offer it if it is true. A continuation you never intend to honour is worse than a plain goodbye.",
       inputs: [
         { q: "You are mid-topic with a colleague and have to leave.", a: "\"Let's pick this up tomorrow — I want to hear the rest.\"", bundle: 'free' },
@@ -1163,8 +1163,8 @@ const collections = {
     },
     {
       name: "Say Something Positive About the Talk",
-      guideFront: "You want to leave. Say it out loud.",
-      guideBack: "One way it could sound.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "Say that the conversation was good. \"It was nice talking to you.\" \"I enjoyed that.\" \"That was really useful, thank you.\"\n\nIt works because it tells the other person how to remember the exchange. People are surprisingly uncertain about whether a conversation went well, and a single sentence at the end settles it — which is why this one small move does more for how you are remembered than anything you said in the middle.\n\nIt is also the move that makes an ending safe. Nobody reads \"it was good to talk to you\" as boredom.\n\nTypical phrases: \"It was nice talking to you.\", \"I really enjoyed that.\", \"That was useful, thanks.\", \"Good to see you.\"\n\nFour ways to say it:\n\n1. The standard one — plain and always works. \"It was nice talking to you.\"\n\n2. Name what was good — much stronger. \"That thing you said about the timing — really useful.\"\n\n3. Say it was better than expected — honest and disarming. \"I was dreading this and it was actually good fun.\"\n\n4. Thank them for something specific — turns a compliment into recognition. \"Thanks for talking me through that. It was starting to keep me up.\"\n\nMindset: say it as you leave, not in the middle. It is a closing move, and it works because it is the last thing.",
       inputs: [
         { q: "You have had a good chat with someone new.", a: "\"It was really nice talking to you.\"", bundle: 'free' },
@@ -1179,8 +1179,8 @@ const collections = {
     },
     {
       name: "Wish Them Well",
-      guideFront: "You want to leave. Say it out loud.",
-      guideBack: "One way it could sound.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "Send them off towards whatever is next. \"Good luck with the exam.\" \"Hope the move goes smoothly.\" \"Enjoy the rest of your evening.\"\n\nIt works because it proves you were listening. To wish someone well about something specific, you have to have registered what they said — and that registers back.\n\nThe generic version works too, but the specific version is one of the cheapest ways there is to be remembered warmly. It costs four extra words.\n\nTypical phrases: \"Good luck with it.\", \"Hope it goes well.\", \"Enjoy the rest of your evening.\", \"Hope your week calms down.\"\n\nFour ways to wish them well:\n\n1. The general one — always available. \"Have a good evening.\"\n\n2. The specific one — much better, and requires only that you listened. \"Good luck with the presentation tomorrow.\"\n\n3. Wishing about a difficulty — carries real warmth. \"Hope things settle down at home.\"\n\n4. Wishing about something good — easy to forget and very welcome. \"Enjoy the weekend away.\"\n\nMindset: use something they told you. That is what turns a farewell into being remembered.",
       inputs: [
         { q: "A friend mentioned an exam tomorrow.", a: "\"Good luck with the exam.\"", bundle: 'free' },
@@ -1195,8 +1195,8 @@ const collections = {
     },
     {
       name: "Leave With One Last Question",
-      guideFront: "You want to leave. Say it out loud.",
-      guideBack: "One way it could sound.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "Say you have to go, and then ask one more thing before you do. \"I have to run in a minute, but before I go — what happened with the flat in the end?\"\n\nIt works because it says two things at once: I am leaving, and this conversation mattered enough that I am spending my last thirty seconds on it. That combination is unusual, and people notice it.\n\nIt is also the move that lets you end a conversation you are enjoying without the ending reading as an escape. The reason comes first, which is what makes the question a gift rather than a delay.\n\nTypical phrases: \"I have to go in a minute, but before I do…\", \"One last thing before I run —\", \"I'm going to have to head off, but I've been meaning to ask…\"\n\nFour ways to do it:\n\n1. Reason first, then the question — the order matters, and this is the whole move. \"I've got to go — but quickly, how did the interview go?\"\n\n2. Return to something from earlier — proves you were listening. \"Before I go, you mentioned the course. Are you doing it?\"\n\n3. Ask about the thing they lit up about — the warmest version. \"One thing before I run — you clearly love that boat. What is it?\"\n\n4. Ask something that can be answered in a sentence — keeps the exit real. \"Quick one before I go: is Thursday still on?\"\n\nMindset: give the reason first, and pick a question with a short answer. Otherwise you have not ended the conversation, you have extended it.",
       inputs: [
         { q: "You must leave but something they said earlier stuck with you.", a: "\"I've got to run — but quickly, what happened with the flat?\"", bundle: 'free' },
@@ -1211,8 +1211,8 @@ const collections = {
     },
     {
       name: "End on a Joke",
-      guideFront: "You want to leave. Say it out loud.",
-      guideBack: "One way it could sound.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "Close with something playful. The classic pattern is the mock refusal: they say \"see you later\" and you answer \"no, never again\" with a grin. Or \"right, that's enough of you for one day.\" Or \"same time next week for more of this nonsense.\"\n\nIt works because a joke at the end leaves the exchange feeling warm and easy, and it makes the goodbye memorable in a way that \"take care\" never will.\n\nIt carries the most risk of the seven, and one condition makes it safe: **it needs an established warmth.** Between friends and easy colleagues it is affectionate. With a stranger, a mock insult is just an insult, and after anything heavy it lands as dismissal.\n\nTypical phrases: \"No, never again.\" (smiling), \"Right, I've had enough of you.\", \"Same time next week for more of this?\", \"You've been a delight. Mostly.\"\n\nFour ways to end on a joke:\n\n1. The mock refusal — the classic. They say \"see you tomorrow\", you say \"we'll see.\"\n\n2. Mock relief at leaving — obviously untrue, which is what makes it read as affection. \"Finally. I've been trying to escape for an hour.\"\n\n3. Exaggerate the goodbye — theatrical rather than pointed. \"Farewell. Think of me often.\"\n\n4. Book the next one as a joke — warm and forward-looking at once. \"Same corridor, same time, more complaining?\"\n\nMindset: only where the warmth is already there. If you are unsure whether it will land, use one of the other six — they all work.",
       inputs: [
         { q: "A friend says \"see you later\" as you part.", a: "\"No, never again.\" (grinning)", bundle: 'free' },
@@ -2541,8 +2541,8 @@ const collections = {
   disagreeing: [
     {
       name: "Signal the Disagreement",
-      guideFront: "They have said what they think. You see it differently.",
-      guideBack: "One way to say it — clear about the difference, easy on the person.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "Mark that a different view is coming before you give it. One short phrase does the work: it tells the other person that what follows is a disagreement, not a misunderstanding, and it does so without any heat.\n\nIt works because most defensiveness comes from surprise. A signalled disagreement lands as a contribution; an unsignalled one can feel like a correction. This is not softening for the sake of politeness — it is the sentence that keeps the conversation open.\n\nTypical phrases: \"I see it differently\", \"I'm not sure I agree\", \"I'd say the opposite, actually\", \"That's interesting — my experience is different\"\n\nFour ways to signal:\n\n1. Name it plainly — no hedging, no apology. \"I see that differently.\"\n\n2. Acknowledge first, then turn — take their point seriously before your own. \"I get why you'd say that. I still land somewhere else.\"\n\n3. Own it as yours — frame it as your view rather than the truth. \"For me it's the other way round.\"\n\n4. Signal interest, not conflict — treat the difference as the interesting part. \"Oh, we're opposite on this. Say more about why?\"\n\nMindset: you are not asking permission to disagree. You are telling them what kind of sentence is coming next.",
       inputs: [
         { q: "A friend says nobody needs more than six hours of sleep.", a: "\"I'm not sure I agree with that one — I'm useless on six.\"", bundle: 'free' },
@@ -2557,8 +2557,8 @@ const collections = {
     },
     {
       name: "Give Your Reason",
-      guideFront: "They have said what they think. You see it differently.",
-      guideBack: "One way to say it — clear about the difference, easy on the person.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "Say why you see it differently. A disagreement without a reason is just a position, and positions cannot be discussed — they can only be repeated at each other.\n\nIt works because a reason gives the other person something to engage with. They can agree with your reason, challenge it, or discover they had not considered it. All three move the conversation somewhere; a bare \"I disagree\" moves it nowhere.\n\nTypical phrases: \"The reason I'd say that is…\", \"For me it comes down to…\", \"What makes me think otherwise is…\", \"It's because…\"\n\nFour kinds of reason:\n\n1. From your own experience — the most honest and the hardest to argue with. \"I've tried it both ways and the second one was much worse for me.\"\n\n2. From a consequence — where the thing leads. \"If we do that, the same question comes back in a month.\"\n\n3. From a value — what you think matters here. \"I'd rather be slow and get it right than fast and redo it.\"\n\n4. From something they have not accounted for — the missing piece. \"That works, but not for the people on the early shift.\"\n\nMindset: give one reason properly rather than three quickly. Three reasons invite them to argue with the weakest.",
       inputs: [
         { q: "A friend says early mornings are the best time to work.", a: "\"For me it's the opposite — I'm not properly awake until about eleven.\"", bundle: 'free' },
@@ -2573,8 +2573,8 @@ const collections = {
     },
     {
       name: "Offer a Different Perspective",
-      guideFront: "They have said what they think. You see it differently.",
-      guideBack: "One way to say it — clear about the difference, easy on the person.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "Give them another way of looking at the thing rather than a verdict on their way. You are widening the picture, not scoring the two views against each other.\n\nIt works because it is much easier to accept an addition than a contradiction. \"There's another way to look at it\" invites someone to step sideways; \"you're wrong\" invites them to dig in.\n\nTypical phrases: \"Another way to look at it…\", \"From where I sit…\", \"It might also be that…\", \"There's a version of this where…\"\n\nFour ways to open a different view:\n\n1. Change the frame — same facts, different lens. \"You're seeing it as a cost. I'd call it the price of not doing it twice.\"\n\n2. Change the timescale — short term against long term. \"It's slower this month. It's much faster from March onwards.\"\n\n3. Change whose eyes — look from someone else's position. \"That's true for us. For a new person it's confusing.\"\n\n4. Accept part and separate the rest — keep what is right, isolate the difference. \"The problem is real. It's the solution I'd do differently.\"\n\nMindset: you are adding a view to the table, not removing theirs from it.",
       inputs: [
         { q: "A friend says a long commute is wasted time.", a: "\"Another way to look at it — it's the only hour of the day nobody can ask me anything.\"", bundle: 'free' },
@@ -2589,8 +2589,8 @@ const collections = {
     },
     {
       name: "Add an Example",
-      guideFront: "They have said what they think. You see it differently.",
-      guideBack: "One way to say it — clear about the difference, easy on the person.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "Support your view with one concrete instance. A single real example does more than a further paragraph of reasoning, because it gives the other person something to picture and check against their own experience.\n\nKeep it to one, and keep it short. This pack uses examples as support; building and choosing examples properly is its own skill and belongs elsewhere.\n\nTypical phrases: \"For instance…\", \"Last week, for example…\", \"I had one where…\", \"Take the…\"\n\nFour kinds of example:\n\n1. Something that happened to you — specific, dated, small. \"Last winter I tried that and ended up doing it twice.\"\n\n2. Something you both know — shared ground you can point at. \"Like the booking system. Same idea, same result.\"\n\n3. A case where their view holds and one where it does not — mark the boundary. \"It works for the regulars. It fell apart with the new intake.\"\n\n4. A small hypothetical — when you have no real case. \"Say someone joins next week and reads that page. What do they do?\"\n\nMindset: one clear example, then stop. A second one usually weakens the first.",
       inputs: [
         { q: "You have said you need more than six hours of sleep.", a: "\"Last week I tried it for four nights and I was hopeless by Thursday.\"", bundle: 'free' },
@@ -5461,8 +5461,8 @@ const collections = {
   discussing: [
     {
       name: "Say What You Think",
-      guideFront: "You are ten minutes into a discussion. What does this moment need?",
-      guideBack: "One thing you could say here.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "State your view plainly and as yours. Not \"people say\" or \"it's obviously\", but \"I think\" — which is both more honest and much harder to argue with, because you are the authority on what you think. Example: \"I think homework is useful, mostly because it makes the gaps visible.\"\n\nIt works because a discussion needs two positions in it, and a great many stall because one person never actually said theirs. Hedged into invisibility, an opinion cannot be responded to, and the other person ends up talking to themselves.\n\nOwning it does something else too. \"You're wrong about homework\" starts a fight; \"I see it differently\" starts a discussion, and the difference is entirely in whose sentence it is.\n\nTypical phrases: \"I think…\", \"My view is…\", \"I'd say…\", \"I see it differently, actually.\"\n\nThree ways to say it:\n\n1. The plain view — shortest and clearest. \"I think it's worth doing.\"\n\n2. The view with its weight — tells them how firmly you hold it. \"I lean that way, but not strongly.\"\n\n3. The honest uncertainty — a real position, not a dodge. \"I genuinely don't know. I'm somewhere in the middle.\"\n\nMindset: say it as yours. An opinion presented as a fact invites a fight about the fact; an opinion presented as an opinion invites a conversation about the subject.",
       inputs: [
         { q: "Everyone is talking around the question and nobody has said what they think.", a: "\"I'll go first — I think phones in class are a bigger problem than we admit.\"", bundle: 'free' },
@@ -5477,8 +5477,8 @@ const collections = {
     },
     {
       name: "Give the Reason Behind It",
-      guideFront: "You are ten minutes into a discussion. What does this moment need?",
-      guideBack: "One thing you could say here.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "Say why you think it, in one sentence. Not an example and not evidence — the reasoning that got you there. Example: \"I think the deadline should move, because the last two slipped for exactly the same reason.\"\n\nIt works because a bare opinion is a wall and a reason is a door. Once the reasoning is visible the other person can engage with the actual disagreement, which is usually narrower than the positions suggest — very often you both want the same thing and differ about one step.\n\nOne reason, said plainly. Three reasons sounds like a case being made, and the moment it sounds like a case, the other person starts looking for the weakest one.\n\nTypical phrases: \"…because…\", \"What makes me think that is…\", \"The reason I'd say that is…\", \"It's mostly that…\"\n\nThree kinds of reason:\n\n1. The cause — what leads to what. \"If we leave it to Friday, nobody's here to fix it.\"\n\n2. The principle — the rule you are applying. \"I'd rather be slightly early than slightly wrong.\"\n\n3. The honest one — sometimes it is a preference, and saying so is stronger than dressing it up. \"Partly I just don't enjoy the other way.\"\n\nMindset: give them your reasoning, not your conclusion twice. Repeating a view more firmly is not an argument, it is a volume control.",
       inputs: [
         { q: "You said what you think and they asked why.", a: "\"Mostly because the last two both slipped for the same reason. Feels like a pattern.\"", bundle: 'free' },
@@ -5493,8 +5493,8 @@ const collections = {
     },
     {
       name: "Say Their View Back",
-      guideFront: "You are ten minutes into a discussion. What does this moment need?",
-      guideBack: "One thing you could say here.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "Put their position into your own words before you respond to it. It costs one sentence and it does two things: it proves you were listening, and it catches the misunderstanding that half of all disagreements turn out to be. Example: \"So you're saying it's not the homework itself, it's how much of it there is.\"\n\nIt works because most people spend a discussion feeling not-quite-heard, and repeating themselves louder is what that feeling produces. Someone who has just been understood accurately stops needing to make the same point again, and the discussion moves.\n\nIt also protects you. Answer what they actually said and you never have the conversation where you spend four minutes disagreeing with something they never claimed.\n\nTypical phrases: \"So what you're saying is…\", \"You think the problem is…\", \"Let me check I've got this…\", \"From where you're sitting…\"\n\nThree ways to do it:\n\n1. The position — plainly. \"You'd keep the deadline where it is.\"\n\n2. The reason behind it — stronger, because it shows you know why. \"You'd keep it because moving it means telling everyone twice.\"\n\n3. The bit they care about most — the deepest version. \"The thing you're actually protecting is the team's Friday.\"\n\nMindset: get it right rather than get it over with. If they correct you, that correction is the most useful sentence in the discussion.",
       inputs: [
         { q: "They have made a long point and you want to respond.", a: "\"Before I answer — you're saying the amount is the problem, not the homework itself?\"", bundle: 'free' },
@@ -5509,8 +5509,8 @@ const collections = {
     },
     {
       name: "Ask What They Mean",
-      guideFront: "You are ten minutes into a discussion. What does this moment need?",
-      guideBack: "One thing you could say here.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "Ask a clarifying question before you respond to something ambiguous. \"When you say homework is pointless — all of it, or the busywork?\" It takes six words and it prevents most of the wasted arguing in any discussion. Example: they say the system is broken; you ask which part.\n\nIt works because general words hide specific disagreements. Two people can use the same sentence and mean completely different things by it, and neither of them finds out until ten minutes have gone.\n\nAsk it as a question, not as a trap. \"Do you mean all subjects, or just some?\" is curiosity; \"so you're saying ALL homework is pointless?\" is a cross-examination wearing the same words.\n\nTypical phrases: \"When you say X, do you mean…?\", \"Which part specifically?\", \"Say a bit more about…\", \"Can you give me the version with an example in it?\"\n\nThree kinds of clarifying question:\n\n1. Narrow the word — the most useful. \"All of it, or the pointless parts?\"\n\n2. Ask for the specific case — turns an abstraction into something discussable. \"Can you give me an example of when that happened?\"\n\n3. Check the strength — people rarely mean the extreme version. \"Is that a strong view or a lean?\"\n\nMindset: ask before you argue. Half the disagreements that get properly heated are two people defending things the other never said.",
       inputs: [
         { q: "They said the system is broken.", a: "\"Which bit specifically? Booking, or what happens after?\"", bundle: 'free' },
@@ -5525,8 +5525,8 @@ const collections = {
     },
     {
       name: "Let Them Finish",
-      guideFront: "You are ten minutes into a discussion. What does this moment need?",
-      guideBack: "One thing you could say here.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "Do not speak until they have stopped. Not as good manners, but because the last quarter of what someone says is where the qualification lives — the \"although\", the \"except when\", the bit that would have made your interruption unnecessary. Example: you are certain you disagree, and the sentence you were waiting to argue with ends with \"…though that's probably only true at scale\".\n\nIt works because interruption costs more than it saves. Every interrupted point gets made again, usually at greater length, and the person making it now has two things to say — the original point and the fact that you cut in.\n\nThe hard part is not silence, it is what happens in your head during the silence. If you are composing your reply while they talk, you are not listening — you are queueing.\n\nTypical phrases: nothing. Or: \"Sorry, go on.\", \"You weren't finished.\", \"Say the rest first.\"\n\nThree parts:\n\n1. Wait for the end of the sentence — not the end of the breath.\n\n2. Then wait a beat longer — the qualification usually arrives here.\n\n3. If you cut in anyway, hand it back — \"sorry, finish yours\" costs nothing and repairs it completely.\n\nMindset: listen to hear, not to reply. Whatever you were going to say will still be there in eight seconds, and it will probably be better.",
       inputs: [
         { q: "You are certain you disagree and they are still talking.", a: "(wait — the qualification usually comes in the last sentence)", bundle: 'free' },
@@ -5541,8 +5541,8 @@ const collections = {
     },
     {
       name: "Keep the Temperature Down",
-      guideFront: "You are ten minutes into a discussion. What does this moment need?",
-      guideBack: "One thing you could say here.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "Notice when a discussion is heating and do something about it before anyone says something they will have to walk back. The book calls it staying calm; the useful version is a set of specific moves, because \"stay calm\" is advice nobody can follow in the moment. Example: \"We're both getting sharp about this. Can we take the money bit separately?\"\n\nIt works because heat destroys the thing the discussion was for. Two people who are annoyed stop hearing each other's reasons entirely, and everything after that point is wasted breath, however good the arguments are.\n\nThe reliable signals are physical rather than verbal: talking faster, talking over, the same point getting louder, a laugh that is not quite a laugh.\n\nTypical phrases: \"We're getting heated — can we slow down?\", \"I'm going to stop and think.\", \"Can we park that bit?\", \"I've gone sharp, sorry.\"\n\nThree moves that work:\n\n1. Name it, jointly — \"we're\" rather than \"you're\". \"We're both getting sharp about this.\"\n\n2. Slow yourself visibly — a pause, a breath, a \"let me think about that for a second\".\n\n3. Split it — take the hot part out and settle the rest. \"Leave the cost aside. Do we agree on the rest?\"\n\nAnd one to avoid: telling the other person to calm down. It has never once worked.\n\nMindset: the goal is to still be talking in ten minutes. Winning an exchange with somebody you will see tomorrow is not winning.",
       inputs: [
         { q: "You are both talking faster and slightly over each other.", a: "\"We're getting heated — can we slow down a bit?\"", bundle: 'free' },
@@ -9558,8 +9558,8 @@ const collectionsModeData = {
   endingconversations: [
     {
       name: "The Quick Exit",
-      guideFront: "How should this one end?",
-      guideBack: "A possible ending, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The reason and the exit phrase — the two moves that do the mechanical work of ending. Between them they cover almost every ordinary goodbye.\n\nUse them when the conversation is short, functional, or already winding down, and when nothing needs protecting. A shop, a corridor, a lift, a neighbour on the stairs.\n\nThe reason usually comes first and the exit phrase last. Reversed, the reason sounds like an afterthought and reopens the conversation.\n\nMindset: reason, then exit phrase. That order is most of the skill.",
       inputs: [
         { q: "You are late for something and talking to a neighbour.", a: "\"I've got to run — I'm already late.\" [Give a Reason]", bundle: 'pro' },
@@ -9573,8 +9573,8 @@ const collectionsModeData = {
     },
     {
       name: "The Warm Exit",
-      guideFront: "How should this one end?",
-      guideBack: "A possible ending, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Saying something positive, wishing them well, and offering to continue later — the three moves that make an ending feel like the opposite of a rejection.\n\nUse them when the conversation mattered, when the relationship matters, or when you are leaving mid-flow and do not want that to be misread. Any one of the three is usually enough; all three together is a proper goodbye.\n\nThe choice between them is about direction. The positive one looks back at the talk you have just had. Wishing them well looks forward at their day. Offering to continue looks forward at the two of you.\n\nMindset: pick the direction that fits. Then leave — warmth does not need three sentences.",
       inputs: [
         { q: "You have had a genuinely good conversation with someone new.", a: "\"It was really nice talking to you.\" [Say Something Positive About the Talk]", bundle: 'pro' },
@@ -9588,8 +9588,8 @@ const collectionsModeData = {
     },
     {
       name: "All Seven",
-      guideFront: "How should this one end?",
-      guideBack: "A possible ending, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The full set. Real endings almost always use two or three together — a reason and an exit phrase at minimum, plus something warm when it matters.\n\nA rough guide: the reason and the exit phrase are the frame, and everything else goes between them. The positive one and wishing them well are the standard warmth. Offering to continue is for conversations that were not finished. The last question is for conversations you are enjoying. The joke is for people you know well.\n\nThe one that fails most often is the exit phrase on its own, with nothing before it. It is not rude exactly, but it is abrupt in a way people notice.\n\nMindset: two or three, in order, ending with the exit phrase.",
       inputs: [
         { q: "You are enjoying a conversation but genuinely have to leave.", a: "\"I've got to run — but quickly, how did the move go?\" [Leave With One Last Question]", bundle: 'pro' },
@@ -10352,8 +10352,8 @@ const collectionsModeData = {
   disagreeing: [
     {
       name: "Opening the Difference",
-      guideFront: "What would actually move this disagreement forward?",
-      guideBack: "A possible response, with the move in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Signal the Disagreement and Give Your Reason — the two moves that get a difference of view onto the table properly.\n\nSignal first when the disagreement will be a surprise, or when the other person has been speaking as though everyone agrees. Go straight to the reason when the disagreement is already obvious and the signal would just delay things.\n\nMindset: get the difference named early. Disagreements go worst when they surface late.",
       inputs: [
         { q: "A colleague has been presenting a plan as settled and you do not agree.", a: "\"Before we move on — I'm not with you on this bit.\" [Signal the Disagreement]", bundle: 'pro' },
@@ -10367,8 +10367,8 @@ const collectionsModeData = {
     },
     {
       name: "Widening It",
-      guideFront: "What would actually move this disagreement forward?",
-      guideBack: "A possible response, with the move in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Offer a Different Perspective and Add an Example — the two moves that make a disagreement generative rather than binary.\n\nReach for perspective when the other person is treating their view as the only sensible one. Reach for an example when they have understood your view and simply do not believe it.\n\nMindset: the aim is a better picture, not a winner.",
       inputs: [
         { q: "A colleague treats the extra step as pure overhead.", a: "\"It's overhead this week. It's also why nothing's gone out wrong since June.\" [Offer a Different Perspective]", bundle: 'pro' },
@@ -10382,8 +10382,8 @@ const collectionsModeData = {
     },
     {
       name: "All Four",
-      guideFront: "What would actually move this disagreement forward?",
-      guideBack: "A possible response, with the move in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The full set. Real disagreements move between all four moves, and the skill is noticing which one the moment needs.\n\nA useful order when the disagreement is fresh: signal, reason, then perspective or example depending on whether they have misunderstood you or simply do not agree. But it is a starting shape, not a script.\n\nMindset: answer what they actually said, not the strongest version of their view you can imagine.",
       inputs: [
         { q: "A friend says you should never turn down work.", a: "\"I'd disagree with 'never', at least.\" [Signal the Disagreement]", bundle: 'pro' },
@@ -11560,8 +11560,8 @@ const collectionsModeData = {
   discussing: [
     {
       name: "Me-Focus",
-      guideFront: "Does this moment need you, or them?",
-      guideBack: "A possible response, with the focus in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The book's first half — the moves where you supply something: saying what you think, owning it as yours, and giving the reason behind it. These are what a discussion needs when nobody has actually put a position on the table, or when you have been agreeing along for so long that the other person has nothing to push against.\n\nThe two options:\n1. Say What You Think — put a position in the room. \"I think it's the wrong call.\"\n2. Give the Reason Behind It — the sentence after it. \"Because the last two slipped the same way.\"\n\nReach for these when the discussion is polite and going nowhere. That is almost always a shortage of positions rather than a shortage of goodwill.\n\nMindset: a discussion with only one view in it is not a discussion. Supply yours.",
       inputs: [
         { q: "Everyone is being agreeable and nothing is being discussed.", a: "\"I'll put something on the table — I think we're solving the wrong problem.\" [me]", bundle: 'pro' },
@@ -11574,8 +11574,8 @@ const collectionsModeData = {
     },
     {
       name: "You-Focus",
-      guideFront: "Does this moment need you, or them?",
-      guideBack: "A possible response, with the focus in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The book's second half — the moves where you take something in: saying their view back, asking what they mean, and letting them finish. These are what the discussion needs when it has started to circle, when the same point keeps coming back, or when you are not certain you are arguing about the same thing.\n\nThe three options:\n1. Say Their View Back — before you answer it. \"So you'd keep the deadline.\"\n2. Ask What They Mean — before you disagree with it. \"All of it, or the busywork?\"\n3. Let Them Finish — the qualification lives in the last quarter.\n\nThe tell that you need one of these is repetition. When someone says the same thing a third time, they do not think you have heard it, and no counter-argument will fix that.\n\nMindset: someone who has been understood accurately stops repeating themselves. That is the fastest thing that can happen to a stuck discussion.",
       inputs: [
         { q: "They have made the same point three times.", a: "\"I don't think I've shown you I heard this. It's about who carries the cost, isn't it.\" [you]", bundle: 'pro' },
@@ -11588,8 +11588,8 @@ const collectionsModeData = {
     },
     {
       name: "Reading the Room",
-      guideFront: "Does this moment need you, or them?",
-      guideBack: "A possible response, with the focus in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The full choice, including the temperature move. A discussion needs different things at different moments: a position when there is none, a reason when the positions are stuck, understanding when someone is repeating themselves, a question when a word is doing too much work, silence when they are still talking, and a hand on the brake when it is heating up.\n\nThe six, with the cue for each:\n1. Say What You Think — nobody has said anything. \"I think…\"\n2. Give the Reason Behind It — the positions are stuck. \"Because…\"\n3. Say Their View Back — they keep repeating themselves. \"So you're saying…\"\n4. Ask What They Mean — a word is hiding a disagreement. \"Which part?\"\n5. Let Them Finish — you are itching to reply. (nothing)\n6. Keep the Temperature Down — it is getting fast and sharp. \"Can we slow down?\"\n\nMindset: the balance is the skill. Two people doing only Me-Focus have two monologues; two doing only You-Focus have nothing to discuss.",
       inputs: [
         { q: "Nobody has put a view on the table and the conversation is dying.", a: "\"I'll start — I think the deadline should move.\" [me]", bundle: 'pro' },

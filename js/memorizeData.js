@@ -1026,8 +1026,6 @@ const memorizeCollections = {
   endingconversations: [
     {
       name: "Core Idea",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The shape of the pack: seven closing moves that are meant to be combined, and the order that makes them work.",
       cards: [
         { q: "What are the seven moves in this pack?", a: "Exit phrase, give a reason, offer to continue later, say something positive, wish them well, leave with one last question, end on a joke.", bundle: 'free' },
@@ -1040,8 +1038,6 @@ const memorizeCollections = {
     },
     {
       name: "Use an Exit Phrase",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The two-word full stop.",
       cards: [
         { q: "What is an exit phrase doing?", a: "Signalling the end in words that carry no new information, so nothing can restart.", bundle: 'free' },
@@ -1054,8 +1050,6 @@ const memorizeCollections = {
     },
     {
       name: "Give a Reason",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The move that makes leaving about your day rather than about them.",
       cards: [
         { q: "What does a reason do?", a: "It turns leaving from a judgement about the conversation into a fact about your day.", bundle: 'free' },
@@ -1068,8 +1062,6 @@ const memorizeCollections = {
     },
     {
       name: "Offer to Continue Later",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The move that separates leaving from leaving them.",
       cards: [
         { q: "What does this move separate?", a: "That you are leaving, and that you are not leaving them.", bundle: 'free' },
@@ -1082,8 +1074,6 @@ const memorizeCollections = {
     },
     {
       name: "Say Something Positive About the Talk",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The move that tells them how to remember it.",
       cards: [
         { q: "What does this move do?", a: "Tells the other person how to remember the exchange.", bundle: 'free' },
@@ -1096,8 +1086,6 @@ const memorizeCollections = {
     },
     {
       name: "Wish Them Well",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The move that proves you were listening.",
       cards: [
         { q: "What does a specific well-wish prove?", a: "That you registered what they said.", bundle: 'free' },
@@ -1110,8 +1098,6 @@ const memorizeCollections = {
     },
     {
       name: "Leave With One Last Question",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The move that ends a conversation by proving it mattered.",
       cards: [
         { q: "What two things does this move say at once?", a: "That you are leaving, and that the conversation mattered enough to spend your last seconds on.", bundle: 'free' },
@@ -1124,8 +1110,6 @@ const memorizeCollections = {
     },
     {
       name: "End on a Joke",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The warmest ending and the riskiest.",
       cards: [
         { q: "What is the classic pattern?", a: "The mock refusal — they say \"see you later\", you say \"no, never again\", smiling.", bundle: 'free' },
@@ -2363,8 +2347,6 @@ const memorizeCollections = {
   disagreeing: [
     {
       name: "Core Idea",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The shape of the pack: four moves, mirroring Agreeing, and the principle that disagreement is a contribution rather than a contest.",
       cards: [
         { q: "What are the four moves in this pack?", a: "Signal the Disagreement, Give Your Reason, Offer a Different Perspective, Add an Example.", bundle: 'free' },
@@ -2377,8 +2359,6 @@ const memorizeCollections = {
     },
     {
       name: "Signal the Disagreement",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The short phrase that tells them what kind of sentence is coming.",
       cards: [
         { q: "What does signalling actually do?", a: "Tells them a different view is coming, so it lands as a contribution rather than a correction.", bundle: 'free' },
@@ -2391,8 +2371,6 @@ const memorizeCollections = {
     },
     {
       name: "Give Your Reason",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The move that makes a disagreement discussable.",
       cards: [
         { q: "Why is a disagreement without a reason a problem?", a: "Positions can only be repeated at each other; reasons can be discussed.", bundle: 'free' },
@@ -2405,8 +2383,6 @@ const memorizeCollections = {
     },
     {
       name: "Offer a Different Perspective",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The move that widens the picture instead of contradicting it.",
       cards: [
         { q: "What is this move doing?", a: "Adding a way of looking at the thing, not passing a verdict on theirs.", bundle: 'free' },
@@ -2419,8 +2395,6 @@ const memorizeCollections = {
     },
     {
       name: "Add an Example",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The move that makes a view concrete — one instance, kept short.",
       cards: [
         { q: "How many examples should you give?", a: "One. A second usually weakens the first.", bundle: 'free' },
@@ -4791,8 +4765,6 @@ const memorizeCollections = {
   discussing: [
     {
       name: "Core Idea",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The two halves and what holds them together.",
       cards: [
         { q: "What are the two halves of a discussion?", a: "Me-Focus — saying what you think and why. You-Focus — taking in what they think.", bundle: 'free' },
@@ -4805,8 +4777,6 @@ const memorizeCollections = {
     },
     {
       name: "Say What You Think",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The theory behind putting a position on the table.",
       cards: [
         { q: "Why say \"I think\" rather than stating it as fact?", a: "An opinion presented as a fact invites a fight about the fact; presented as an opinion it invites a conversation about the subject.", bundle: 'free' },
@@ -4819,8 +4789,6 @@ const memorizeCollections = {
     },
     {
       name: "Give the Reason Behind It",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The theory behind saying why.",
       cards: [
         { q: "What is a bare opinion, and what is a reason?", a: "A wall and a door.", bundle: 'free' },
@@ -4833,8 +4801,6 @@ const memorizeCollections = {
     },
     {
       name: "Say Their View Back",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The theory behind restating a position.",
       cards: [
         { q: "What does saying their view back do?", a: "Proves you were listening, and catches the misunderstanding that half of all disagreements turn out to be.", bundle: 'free' },
@@ -4847,8 +4813,6 @@ const memorizeCollections = {
     },
     {
       name: "Ask What They Mean",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The theory behind clarifying.",
       cards: [
         { q: "When should you ask a clarifying question?", a: "Before you respond to anything ambiguous — it takes six words and saves four minutes.", bundle: 'free' },
@@ -4861,8 +4825,6 @@ const memorizeCollections = {
     },
     {
       name: "Let Them Finish",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The theory behind not interrupting.",
       cards: [
         { q: "Why let them finish, beyond politeness?", a: "The last quarter is where the qualification lives — the \"although\" that would have made your interruption unnecessary.", bundle: 'free' },
@@ -4875,8 +4837,6 @@ const memorizeCollections = {
     },
     {
       name: "Keep the Temperature Down",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The theory behind staying calm, in moves rather than advice.",
       cards: [
         { q: "Why does heat matter in a discussion?", a: "Two annoyed people stop hearing each other's reasons, so everything after that point is wasted however good the arguments are.", bundle: 'free' },

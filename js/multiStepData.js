@@ -1523,45 +1523,45 @@ const multiStepCollections = {
   endingconversations: [
     {
       name: "The Full Close",
-      guideFront: "Where you are in the close, and the move to make next.",
-      guideBack: "One way it could sound.",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
       description: "The moves stacked in their natural order: reason, something warm, and the exit phrase last. This is what an ordinary good goodbye is actually made of, and it takes about eight seconds.\n\nThe order is doing real work. The reason explains the ending, the warm bit protects it, and the exit phrase closes it. Move the exit phrase anywhere but last and the conversation reopens.\n\nMindset: reason, warmth, exit. Then actually go.",
       inputs: [
         {
           bundle: 'pro',
           situation: "A colleague has spent twenty minutes talking you through something you were stuck on. You have a meeting starting.",
           steps: [
-            { front: "Step 1 · Give a Reason — say why you are going.", back: "\"I've got to get to a call at eleven.\"", guideFront: "One reason, briefly. Detail sounds like an excuse." },
-            { front: "Step 2 · Say Something Positive — they say, \"No problem, go.\"", back: "\"That was genuinely useful, though. I've been stuck on it for two days.\"" },
-            { front: "Step 3 · Offer to Continue Later — they say, \"Any time. Shout if it breaks again.\"", back: "\"I might. Can I grab you Thursday if the other bit's still odd?\"" },
-            { front: "Step 4 · Use an Exit Phrase — they say, \"Course. I'm around all day.\"", back: "\"Perfect. Thanks again — see you Thursday.\"" },
+            { front: "Step 1 · Give a Reason — they finish explaining and sit back.", back: "\"I've got to get to a call at eleven.\"", guideFront: "One reason, briefly. Detail sounds like an excuse." },
+            { front: "Step 2 · Say Something Positive — they say, \"No problem, go.\"", back: "\"That was genuinely useful, though. I've been stuck on it for two days.\"", guideFront: "Say the conversation was good when...", guideBack: "A word about the last ten minutes" },
+            { front: "Step 3 · Offer to Continue Later — they say, \"Any time. Shout if it breaks again.\"", back: "\"I might. Can I grab you Thursday if the other bit's still odd?\"", guideFront: "Offer to pick it up later when...", guideBack: "A door left open, with a time" },
+            { front: "Step 4 · Use an Exit Phrase — they say, \"Course. I'm around all day.\"", back: "\"Perfect. Thanks again — see you Thursday.\"", guideFront: "Close it with the standard phrase when...", guideBack: "The short line that ends it" },
           ]
         },
         {
           bundle: 'pro',
           situation: "You have been talking to someone you have just met at an event for ten minutes. It has been good, and you want to move on without it seeming like an escape.",
           steps: [
-            { front: "Step 1 · Say Something Positive — start with the warmth this time.", back: "\"This has been much better than the last one of these I came to.\"", guideFront: "The positive one looks back at the talk you just had." },
-            { front: "Step 2 · Give a Reason — they say, \"Ha — low bar, but I'll take it.\"", back: "\"I should probably do a lap and talk to some other people.\"" },
-            { front: "Step 3 · Offer to Continue Later — they say, \"Of course, go on.\"", back: "\"If you're still here at the end, come and find me.\"" },
-            { front: "Step 4 · Use an Exit Phrase — they say, \"I will do.\"", back: "\"Good. Enjoy the rest of it.\"" },
+            { front: "Step 1 · Say Something Positive — there is a natural pause and people are moving on.", back: "\"This has been much better than the last one of these I came to.\"", guideFront: "The positive one looks back at the talk you just had." },
+            { front: "Step 2 · Give a Reason — they say, \"Ha — low bar, but I'll take it.\"", back: "\"I should probably do a lap and talk to some other people.\"", guideFront: "Say why you have to go when...", guideBack: "A reason, however small" },
+            { front: "Step 3 · Offer to Continue Later — they say, \"Of course, go on.\"", back: "\"If you're still here at the end, come and find me.\"", guideFront: "Offer to pick it up later when...", guideBack: "A door left open, with a time" },
+            { front: "Step 4 · Use an Exit Phrase — they say, \"I will do.\"", back: "\"Good. Enjoy the rest of it.\"", guideFront: "Close it with the standard phrase when...", guideBack: "The short line that ends it" },
           ]
         },
       ]
     },
     {
       name: "When They Keep Talking",
-      guideFront: "Where you are in the close, and the move to make next.",
-      guideBack: "One way it could sound.",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
       description: "You have signalled that you are leaving and the conversation carries on anyway. This is the situation most people find hardest, because each failed attempt makes the next one feel ruder.\n\nThe move is to escalate in small steps rather than repeat the same signal. Softness first, then a clearer reason, then a firm and friendly close that does not leave a gap. The kindest version is also the clearest one — a soft signal repeated four times is more uncomfortable for both of you than one firm sentence.\n\nMindset: each attempt slightly clearer than the last. Do not leave a pause at the end.",
       inputs: [
         {
           bundle: 'pro',
           situation: "You are on the stairs with a neighbour. You need to leave. They have been talking for five minutes and show no sign of stopping.",
           steps: [
-            { front: "Step 1 · Use an Exit Phrase — start soft and see if it lands.", back: "\"Right — I'd better let you get on.\"", guideFront: "Softest version first. It often works." },
-            { front: "Step 2 · Give a Reason — they carry straight on with a new topic.", back: "\"I do have to run, actually — I've got something in the oven.\"" },
-            { front: "Step 3 · Wish Them Well — they say, \"Oh, of course. Just quickly though —\"", back: "\"Sorry, I really can't. Hope the builders sort it out for you.\"" },
+            { front: "Step 1 · Use an Exit Phrase — they pause for breath on the stairs.", back: "\"Right — I'd better let you get on.\"", guideFront: "Softest version first. It often works." },
+            { front: "Step 2 · Give a Reason — they carry straight on with a new topic.", back: "\"I do have to run, actually — I've got something in the oven.\"", guideFront: "Say why you have to go when...", guideBack: "A reason, however small" },
+            { front: "Step 3 · Wish Them Well — they say, \"Oh, of course. Just quickly though —\"", back: "\"Sorry, I really can't. Hope the builders sort it out for you.\"", guideFront: "Send them towards what is next when...", guideBack: "A wish about their day" },
             { front: "Step 4 · Use an Exit Phrase — they say, \"Right, right. Well, see you.\"", back: "\"See you later.\"", guideFront: "Close it and go. Do not leave a pause." },
           ]
         },
@@ -1569,38 +1569,38 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "A colleague has been at your desk for fifteen minutes. You have work to finish and they are still going.",
           steps: [
-            { front: "Step 1 · Give a Reason — be straightforward, it is a work context.", back: "\"I'm going to have to get back to this, I'm afraid.\"", guideFront: "A reason is enough. You do not owe an apology." },
-            { front: "Step 2 · Offer to Continue Later — they say, \"Sure, sure. One more thing though —\"", back: "\"Can we do the rest after lunch? I want to give it proper attention.\"" },
-            { front: "Step 3 · Say Something Positive — they say, \"Fine, yeah. It's not urgent.\"", back: "\"It's a good question, that's the thing. I just can't do it justice right now.\"" },
-            { front: "Step 4 · Use an Exit Phrase — they say, \"No worries. Later, then.\"", back: "\"Great — see you after lunch.\"" },
+            { front: "Step 1 · Give a Reason — they are still at your desk and show no sign of moving.", back: "\"I'm going to have to get back to this, I'm afraid.\"", guideFront: "A reason is enough. You do not owe an apology." },
+            { front: "Step 2 · Offer to Continue Later — they say, \"Sure, sure. One more thing though —\"", back: "\"Can we do the rest after lunch? I want to give it proper attention.\"", guideFront: "Offer to pick it up later when...", guideBack: "A door left open, with a time" },
+            { front: "Step 3 · Say Something Positive — they say, \"Fine, yeah. It's not urgent.\"", back: "\"It's a good question, that's the thing. I just can't do it justice right now.\"", guideFront: "Say the conversation was good when...", guideBack: "A word about the last ten minutes" },
+            { front: "Step 4 · Use an Exit Phrase — they say, \"No worries. Later, then.\"", back: "\"Great — see you after lunch.\"", guideFront: "Close it with the standard phrase when...", guideBack: "The short line that ends it" },
           ]
         },
       ]
     },
     {
       name: "Ending Something You Enjoyed",
-      guideFront: "Where you are in the close, and the move to make next.",
-      guideBack: "One way it could sound.",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
       description: "Leaving a conversation that is going well is harder than leaving a dull one, because ending it can look like you did not feel the same way.\n\nThe answer is to make the ending say so explicitly. A reason plus a positive comment plus a genuine offer of more removes any ambiguity, and the last question is the strongest move available — it proves the conversation mattered by spending your final seconds on it.\n\nMindset: say the ending is about your day, not about them. Then prove it.",
       inputs: [
         {
           bundle: 'pro',
           situation: "You have been talking to a friend at a bus stop and yours has just appeared. They were halfway through telling you something.",
           steps: [
-            { front: "Step 1 · Give a Reason — the reason is arriving right now, so name it.", back: "\"That's my bus, of all the timing.\"", guideFront: "Reason first. It explains everything after it." },
-            { front: "Step 2 · Leave With One Last Question — they say, \"Typical. Go on, go.\"", back: "\"Quickly though — did she take the job or not?\"" },
-            { front: "Step 3 · Offer to Continue Later — they say, \"She did. It's a whole thing, I'll tell you properly.\"", back: "\"Do. Tell me the rest on Thursday, I want the whole story.\"" },
-            { front: "Step 4 · Use an Exit Phrase — they say, \"It's a good one, honestly.\"", back: "\"Right, I'm running. See you Thursday.\"" },
+            { front: "Step 1 · Give a Reason — your bus comes round the corner mid-sentence.", back: "\"That's my bus, of all the timing.\"", guideFront: "Reason first. It explains everything after it." },
+            { front: "Step 2 · Leave With One Last Question — they say, \"Typical. Go on, go.\"", back: "\"Quickly though — did she take the job or not?\"", guideFront: "Say you must go, then ask one more thing when...", guideBack: "A last question, on your way out" },
+            { front: "Step 3 · Offer to Continue Later — they say, \"She did. It's a whole thing, I'll tell you properly.\"", back: "\"Do. Tell me the rest on Thursday, I want the whole story.\"", guideFront: "Offer to pick it up later when...", guideBack: "A door left open, with a time" },
+            { front: "Step 4 · Use an Exit Phrase — they say, \"It's a good one, honestly.\"", back: "\"Right, I'm running. See you Thursday.\"", guideFront: "Close it with the standard phrase when...", guideBack: "The short line that ends it" },
           ]
         },
         {
           bundle: 'pro',
           situation: "At a course, you have been talking to someone through the whole break and it has been the best part of the day. The session is restarting.",
           steps: [
-            { front: "Step 1 · Say Something Positive — name it plainly before the moment passes.", back: "\"That's the most fun I've had today, and I include the actual course in that.\"", guideFront: "Say it as you leave. It only works as the last thing." },
-            { front: "Step 2 · Give a Reason — they say, \"Ha. It's not a high bar.\"", back: "\"We should probably go back in before they notice.\"" },
-            { front: "Step 3 · Offer to Continue Later — they say, \"Suppose so. Same time tomorrow?\"", back: "\"Definitely. Find me at the first break.\"" },
-            { front: "Step 4 · End on a Joke — they say, \"It's a date.\"", back: "\"Steady on. See you in there.\"" },
+            { front: "Step 1 · Say Something Positive — the break is ending and people are going back in.", back: "\"That's the most fun I've had today, and I include the actual course in that.\"", guideFront: "Say it as you leave. It only works as the last thing." },
+            { front: "Step 2 · Give a Reason — they say, \"Ha. It's not a high bar.\"", back: "\"We should probably go back in before they notice.\"", guideFront: "Say why you have to go when...", guideBack: "A reason, however small" },
+            { front: "Step 3 · Offer to Continue Later — they say, \"Suppose so. Same time tomorrow?\"", back: "\"Definitely. Find me at the first break.\"", guideFront: "Offer to pick it up later when...", guideBack: "A door left open, with a time" },
+            { front: "Step 4 · End on a Joke — they say, \"It's a date.\"", back: "\"Steady on. See you in there.\"", guideFront: "Close with something playful when...", guideBack: "A parting joke" },
           ]
         },
       ]
@@ -2887,8 +2887,8 @@ const multiStepCollections = {
   disagreeing: [
     {
       name: "The Full Disagreement",
-      guideFront: "They have responded. Keep the disagreement going without heat.",
-      guideBack: "A line you could say at this step.",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
       description: "Signal, reason, perspective, example — the shape a disagreement takes when the other person is engaging with you properly.\n\nEach step should answer what they actually said. The commonest failure is running your own four moves regardless of their replies, which turns a conversation into two speeches.\n\nMindset: stay on their sentence, not on your next point.",
       inputs: [
         {
@@ -2915,8 +2915,8 @@ const multiStepCollections = {
     },
     {
       name: "When They Push Back Hard",
-      guideFront: "They have responded. Keep the disagreement going without heat.",
-      guideBack: "A line you could say at this step.",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
       description: "Sometimes a disagreement gets warm. The other person raises their voice slightly, restates their point more firmly, or treats your difference as a personal challenge.\n\nThe move is to lower the temperature without abandoning your view. Acknowledge what is fair in what they said, keep your own sentence, and do not match their volume.\n\nMindset: you can hold a position and be easy to talk to at the same time.",
       inputs: [
         {
@@ -2941,8 +2941,8 @@ const multiStepCollections = {
     },
     {
       name: "When You Change Your Mind",
-      guideFront: "They have responded. Keep the disagreement going without heat.",
-      guideBack: "A line you could say at this step.",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
       description: "Sometimes their reason is better than yours. Conceding is a move in a disagreement, not a defeat, and doing it cleanly makes people far more willing to hear you the next time.\n\nSay what changed your mind. That is what separates a real change of view from giving up to end the conversation.\n\nMindset: being persuaded is a good outcome. It means the conversation worked.",
       inputs: [
         {
@@ -5009,8 +5009,8 @@ const multiStepCollections = {
   discussing: [
     {
       name: "Back, Then Differ",
-      guideFront: "Take the discussion one step at a time.",
-      guideBack: "A line you could say at this step.",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
       description: "The core discussion move: say their position back, acknowledge the true part, and only then give yours. Steps: 1) Say it back — in your own words, 2) Grant what is right — the part you actually agree with, 3) Differ — your view and one reason.\n\nThe shape of the whole thing:\n1. \"So you'd keep the date where it is.\"\n2. \"And you're right that moving it means telling everyone twice.\"\n3. \"I'd still move it, because the last two slipped anyway and we told them late.\"\n\nWhy this order: a disagreement that arrives after accurate understanding is heard as a contribution. The same sentence first is heard as not having listened.\n\nMindset: the concession in step 2 is not a tactic. If you cannot find anything true in their position, you have probably not understood it yet.",
       inputs: [
         {
@@ -5035,8 +5035,8 @@ const multiStepCollections = {
     },
     {
       name: "Ask Before You Argue",
-      guideFront: "Take the discussion one step at a time.",
-      guideBack: "A line you could say at this step.",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
       description: "When something they said is ambiguous, clarify before responding — it very often turns out you were about to argue with something they do not think. Steps: 1) Notice the vague word, 2) Ask which version, 3) Answer the version they actually meant.\n\nThe shape of the whole thing:\n1. (they said \"homework is pointless\")\n2. \"All of it, or the filler?\"\n3. \"The filler I completely agree with. The rest I'd keep.\"\n\nWhy this order: general words hide specific disagreements, and the specific one is usually much smaller and much easier to settle.\n\nMindset: six words of clarification save four minutes of arguing about a position nobody holds.",
       inputs: [
         {
@@ -5061,8 +5061,8 @@ const multiStepCollections = {
     },
     {
       name: "When It Heats Up",
-      guideFront: "Take the discussion one step at a time.",
-      guideBack: "A line you could say at this step.",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
       description: "The discussion has gone fast and sharp. Name it jointly, take the hot part out, and settle what is left — which is nearly always most of it. Steps: 1) Name it as \"we\", 2) Split off the hot part, 3) Agree the rest.\n\nThe shape of the whole thing:\n1. \"We're both getting sharp about this.\"\n2. \"Can we leave the money bit aside for a minute?\"\n3. \"Because I think we agree on everything else, and it'd be good to say so.\"\n\nWhy this order: naming it jointly removes the accusation, splitting removes the heat, and agreeing the rest gives you both something to stand on before you go back to the difficult part.\n\nMindset: never tell the other person to calm down. Say \"we\", or say what you are doing yourself.",
       inputs: [
         {
