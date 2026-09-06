@@ -6682,20 +6682,20 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "You have taken a seat at a two-day course. The person next to you is unpacking a notebook. Nothing has started yet and there is about ten minutes to fill.",
           steps: [
-            { front: "Simple Greeting — nothing has happened yet, so start with the smallest possible thing.", back: "\"Morning.\"", guideFront: "The smallest opener. Just a signal that you are open to talking." },
-            { front: "Introduce Yourself — they look up and say, \"Morning.\"", back: "\"I'm... Looks like we're neighbours for two days.\"" },
-            { front: "Ask About the Situation — they say, \"Hanna. Yeah, apparently so.\"", back: "\"Have you done one of these before? I don't know how they run it.\"" },
-            { front: "Comment on the Situation — they say, \"I did the one last spring. It's mostly group work.\"", back: "\"Group work, right. That explains the tables being like this.\"" },
+            { front: "Simple Greeting — they settle into the chair beside you.", back: "\"Morning.\"", guideFront: "The smallest opener. Just a signal that you are open to talking." },
+            { front: "Introduce Yourself — they look up and say, \"Morning.\"", back: "\"I'm... Looks like we're neighbours for two days.\"", guideFront: "Say your name when...", guideBack: "Your name, and a reason for theirs" },
+            { front: "Ask About the Situation — they say, \"Hanna. Yeah, apparently so.\"", back: "\"Have you done one of these before? I don't know how they run it.\"", guideFront: "Ask about what is happening when...", guideBack: "A question, not a remark" },
+            { front: "Comment on the Situation — they say, \"I did the one last spring. It's mostly group work.\"", back: "\"Group work, right. That explains the tables being like this.\"", guideFront: "Remark on what is happening when...", guideBack: "An observation, not a question" },
           ]
         },
         {
           bundle: 'pro',
           situation: "You are in a slow queue outside a venue. The person in front of you keeps looking down the line. It is cold and nothing is moving.",
           steps: [
-            { front: "Comment on the Situation — you have never met, so open with what you can both see.", back: "\"This isn't moving at all, is it.\"", guideFront: "No question yet. Give them something they can pick up or let go." },
-            { front: "Ask About the Situation — they turn round and say, \"Twenty minutes now.\"", back: "\"Do you know if there's more than one door open?\"" },
-            { front: "Comment on the Situation — they say, \"I think there's another one round the side.\"", back: "\"Of course there is. And nobody's told anyone.\"" },
-            { front: "Introduce Yourself — they laugh and say, \"Standard, really.\"", back: "\"I should introduce myself, if we're going to be here all night. I'm...\"" },
+            { front: "Comment on the Situation — they turn round and look down the line again.", back: "\"This isn't moving at all, is it.\"", guideFront: "No question yet. Give them something they can pick up or let go." },
+            { front: "Ask About the Situation — they turn round and say, \"Twenty minutes now.\"", back: "\"Do you know if there's more than one door open?\"", guideFront: "Ask about what is happening when...", guideBack: "A question, not a remark" },
+            { front: "Comment on the Situation — they say, \"I think there's another one round the side.\"", back: "\"Of course there is. And nobody's told anyone.\"", guideFront: "Remark on what is happening when...", guideBack: "An observation, not a question" },
+            { front: "Introduce Yourself — they laugh and say, \"Standard, really.\"", back: "\"I should introduce myself, if we're going to be here all night. I'm...\"", guideFront: "Say your name when...", guideBack: "Your name, and a reason for theirs" },
           ]
         },
         {
@@ -6703,9 +6703,9 @@ const multiStepCollections = {
           situation: "You are at a table of eight at a wedding reception. You know the couple and nobody else. People are sitting down and reading the menu cards.",
           steps: [
             { front: "Simple Greeting — everyone is settling and nobody has spoken yet.", back: "\"Evening.\"", guideFront: "Say it to the person beside you, not to the table." },
-            { front: "Ask About the Situation — they say, \"Evening. Long day already, isn't it.\"", back: "\"It is. Do you know if there are speeches before the food or after?\"" },
-            { front: "Comment on the Situation — they say, \"After, I think. That's the civilised way round.\"", back: "\"Much better. Speeches on an empty stomach are a hard watch.\"" },
-            { front: "Introduce Yourself — they laugh and say, \"I've sat through a few.\"", back: "\"I'm... — I'm on the bride's side, badly out of my depth.\"" },
+            { front: "Ask About the Situation — they say, \"Evening. Long day already, isn't it.\"", back: "\"It is. Do you know if there are speeches before the food or after?\"", guideFront: "Ask about what is happening when...", guideBack: "A question, not a remark" },
+            { front: "Comment on the Situation — they say, \"After, I think. That's the civilised way round.\"", back: "\"Much better. Speeches on an empty stomach are a hard watch.\"", guideFront: "Remark on what is happening when...", guideBack: "An observation, not a question" },
+            { front: "Introduce Yourself — they laugh and say, \"I've sat through a few.\"", back: "\"I'm... — I'm on the bride's side, badly out of my depth.\"", guideFront: "Say your name when...", guideBack: "Your name, and a reason for theirs" },
           ]
         },
       ]
@@ -6720,9 +6720,9 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "You are in the lift with a neighbour you have seen many times and never spoken to. It is six floors.",
           steps: [
-            { front: "Simple Greeting — nothing yet, so start small.", back: "\"Morning.\"", guideFront: "Start at the bottom. There is nowhere further down to go." },
-            { front: "Comment on the Situation — they say, \"Morning,\" and look at the floor numbers.", back: "\"Slow lift, this one.\"" },
-            { front: "Ask About the Situation — they say, \"Mm.\"", back: "\"Are you on the fifth? I always see you get out around there.\"" },
+            { front: "Simple Greeting — the doors close and it is six floors.", back: "\"Morning.\"", guideFront: "Start at the bottom. There is nowhere further down to go." },
+            { front: "Comment on the Situation — they say, \"Morning,\" and look at the floor numbers.", back: "\"Slow lift, this one.\"", guideFront: "Remark on what is happening when...", guideBack: "An observation, not a question" },
+            { front: "Ask About the Situation — they say, \"Mm.\"", back: "\"Are you on the fifth? I always see you get out around there.\"", guideFront: "Ask about what is happening when...", guideBack: "A question, not a remark" },
             { front: "Simple Greeting — they say, \"Fourth,\" and go back to their phone.", back: "\"Ah, right. Have a good one.\"", guideFront: "Two flat replies is an answer. Leave it warmly, not coldly." },
           ]
         },
@@ -6730,10 +6730,10 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "You are waiting for a machine. The person using it is between sets, looking at their phone.",
           steps: [
-            { front: "Ask About the Situation — you need to know if it is free, so ask.", back: "\"Are you still on this, or is it free?\"", guideFront: "A real question you actually need answered." },
-            { front: "Comment on the Situation — they say, \"Two more sets, sorry.\"", back: "\"No rush. It's rammed in here tonight.\"" },
-            { front: "Ask About the Situation — they say, \"Always is on a Tuesday.\"", back: "\"Is it? I've only ever come at the weekend. Is there a quiet night?\"" },
-            { front: "Introduce Yourself — they say, \"Thursdays are dead. That's when I'd come.\"", back: "\"Good to know. I should say — I'm...\"" },
+            { front: "Ask About the Situation — they are between sets, looking at their phone.", back: "\"Are you still on this, or is it free?\"", guideFront: "A real question you actually need answered." },
+            { front: "Comment on the Situation — they say, \"Two more sets, sorry.\"", back: "\"No rush. It's rammed in here tonight.\"", guideFront: "Remark on what is happening when...", guideBack: "An observation, not a question" },
+            { front: "Ask About the Situation — they say, \"Always is on a Tuesday.\"", back: "\"Is it? I've only ever come at the weekend. Is there a quiet night?\"", guideFront: "Ask about what is happening when...", guideBack: "A question, not a remark" },
+            { front: "Introduce Yourself — they say, \"Thursdays are dead. That's when I'd come.\"", back: "\"Good to know. I should say — I'm...\"", guideFront: "Say your name when...", guideBack: "Your name, and a reason for theirs" },
           ]
         },
         {
@@ -6741,8 +6741,8 @@ const multiStepCollections = {
           situation: "You are waiting for the doors to open among parents you half recognise. One of them is standing near you, looking at their phone.",
           steps: [
             { front: "Comment on the Situation — the doors are late again and you are standing next to each other.", back: "\"They've never once opened these on time.\"", guideFront: "An observation, not a question. Easy to ignore." },
-            { front: "Ask About the Situation — they glance up and say, \"No.\"", back: "\"Is it always this late, or is today special?\"" },
-            { front: "Comment on the Situation — they say, \"Always,\" and look back down.", back: "\"Right. I'll stop rushing, then.\"" },
+            { front: "Ask About the Situation — they glance up and say, \"No.\"", back: "\"Is it always this late, or is today special?\"", guideFront: "Ask about what is happening when...", guideBack: "A question, not a remark" },
+            { front: "Comment on the Situation — they say, \"Always,\" and look back down.", back: "\"Right. I'll stop rushing, then.\"", guideFront: "Remark on what is happening when...", guideBack: "An observation, not a question" },
             { front: "Simple Greeting — they smile faintly and say nothing more.", back: "\"Have a good one.\"", guideFront: "They were polite, not interested. Leave it there and try again another day." },
           ]
         },
@@ -6758,20 +6758,20 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "It is your first time at a local club. People are setting out chairs. Nobody has noticed you yet.",
           steps: [
-            { front: "Introduce Yourself — you are new here and nobody knows you, so say so.", back: "\"Hi — it's my first time here. I'm...\"", guideFront: "Being new is the reason. Lead with it." },
-            { front: "Ask About the Situation — they say, \"Oh, welcome. I'm Bea.\"", back: "\"Is there anything I should know before we start?\"" },
-            { front: "Comment on the Situation — they say, \"Not really. We just get going and see who turns up.\"", back: "\"That suits me. I was worried there'd be a form.\"" },
-            { front: "Ask About the Situation — they say, \"Ha. No forms here.\"", back: "\"How many usually come on a Tuesday?\"" },
+            { front: "Introduce Yourself — someone puts down a chair near you.", back: "\"Hi — it's my first time here. I'm...\"", guideFront: "Being new is the reason. Lead with it." },
+            { front: "Ask About the Situation — they say, \"Oh, welcome. I'm Bea.\"", back: "\"Is there anything I should know before we start?\"", guideFront: "Ask about what is happening when...", guideBack: "A question, not a remark" },
+            { front: "Comment on the Situation — they say, \"Not really. We just get going and see who turns up.\"", back: "\"That suits me. I was worried there'd be a form.\"", guideFront: "Remark on what is happening when...", guideBack: "An observation, not a question" },
+            { front: "Ask About the Situation — they say, \"Ha. No forms here.\"", back: "\"How many usually come on a Tuesday?\"", guideFront: "Ask about what is happening when...", guideBack: "A question, not a remark" },
           ]
         },
         {
           bundle: 'pro',
           situation: "It is your first morning. You are in the kitchen and one colleague is waiting for the kettle.",
           steps: [
-            { front: "Simple Greeting — you have never met, so start with hello.", back: "\"Morning.\"", guideFront: "The smallest thing first. Everything else can follow it." },
-            { front: "Introduce Yourself — they say, \"Morning — you're new, aren't you?\"", back: "\"I am, yeah. Started today. I'm...\"" },
-            { front: "Ask About the Situation — they say, \"Ah, welcome. I'm Tom, I'm on the other team.\"", back: "\"Is there anything about this place I should know on day one?\"" },
-            { front: "Comment on the Situation — they say, \"Don't trust the second kettle. It takes about a year.\"", back: "\"Noted. That's the most useful thing anyone's told me today.\"" },
+            { front: "Simple Greeting — they are waiting for the kettle and glance over.", back: "\"Morning.\"", guideFront: "The smallest thing first. Everything else can follow it." },
+            { front: "Introduce Yourself — they say, \"Morning — you're new, aren't you?\"", back: "\"I am, yeah. Started today. I'm...\"", guideFront: "Say your name when...", guideBack: "Your name, and a reason for theirs" },
+            { front: "Ask About the Situation — they say, \"Ah, welcome. I'm Tom, I'm on the other team.\"", back: "\"Is there anything about this place I should know on day one?\"", guideFront: "Ask about what is happening when...", guideBack: "A question, not a remark" },
+            { front: "Comment on the Situation — they say, \"Don't trust the second kettle. It takes about a year.\"", back: "\"Noted. That's the most useful thing anyone's told me today.\"", guideFront: "Remark on what is happening when...", guideBack: "An observation, not a question" },
           ]
         },
         {
@@ -6779,9 +6779,9 @@ const multiStepCollections = {
           situation: "You have joined a course six weeks in. Everyone else has settled into their seats and their pairs. There is one free chair.",
           steps: [
             { front: "Ask About the Situation — you do not know if the seat is taken.", back: "\"Is anyone sitting here?\"", guideFront: "A practical question first. It gets you a foothold before anything else." },
-            { front: "Introduce Yourself — they move a bag and say, \"All yours.\"", back: "\"Thanks. I'm... — I've joined late, so I'm about six weeks behind.\"" },
-            { front: "Ask About the Situation — they say, \"Oh, you'll catch up. I'm Ines.\"", back: "\"Is there anything from the first weeks I should read?\"" },
-            { front: "Comment on the Situation — they say, \"Honestly, just the handout. Nobody's read the rest.\"", back: "\"That's a relief. I'd braced myself for a reading list.\"" },
+            { front: "Introduce Yourself — they move a bag and say, \"All yours.\"", back: "\"Thanks. I'm... — I've joined late, so I'm about six weeks behind.\"", guideFront: "Say your name when...", guideBack: "Your name, and a reason for theirs" },
+            { front: "Ask About the Situation — they say, \"Oh, you'll catch up. I'm Ines.\"", back: "\"Is there anything from the first weeks I should read?\"", guideFront: "Ask about what is happening when...", guideBack: "A question, not a remark" },
+            { front: "Comment on the Situation — they say, \"Honestly, just the handout. Nobody's read the rest.\"", back: "\"That's a relief. I'd braced myself for a reading list.\"", guideFront: "Remark on what is happening when...", guideBack: "An observation, not a question" },
           ]
         },
       ]
