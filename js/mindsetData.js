@@ -1933,6 +1933,9 @@ const mindsetCollections = {
         { q: "I don't want to put them in an awkward position.", a: "Being asked isn't awkward. Being hinted at for a fortnight is.", bundle: 'pro' },
         { q: "If they wanted to help they'd have offered.", a: "They'd have to notice first. Nobody's watching you that closely.", bundle: 'pro' },
         { q: "It's easier to just do it.", a: "It is today. Notice what it costs by Thursday.", bundle: 'pro' },
+        { q: "They're more senior than me.", a: "Senior people get asked things. That's most of what the role is.", bundle: 'pro' },
+        { q: "I've asked them for something recently.", a: "Then say so and ask anyway. \"I know I asked last week\" costs five words.", bundle: 'pro' },
+        { q: "They'll feel they can't say no to me.", a: "Then say the no out loud for them. That's what the exit sentence is for.", bundle: 'pro' },
       ]
     },
     {
@@ -1946,6 +1949,9 @@ const mindsetCollections = {
         { q: "I've made it obvious.", a: "Obvious to you. From where they're standing it was a comment about the kitchen.", bundle: 'pro' },
         { q: "They should have noticed by now.", a: "They noticed the bins were full. That's not the same as knowing you want them to go.", bundle: 'pro' },
         { q: "Saying it out loud makes it a big thing.", a: "One sentence is the smallest version this can take. The silent version is the big one.", bundle: 'pro' },
+        { q: "Asking directly would spoil it.", a: "Only for a present. For everything else, asking is how it happens at all.", bundle: 'pro' },
+        { q: "I've been dropping hints for weeks.", a: "Weeks of hints and no result is the evidence. Say the sentence.", bundle: 'pro' },
+        { q: "If I have to ask, the answer doesn't count.", a: "It counts the same. What doesn't count is the thing that never happened.", bundle: 'pro' },
       ]
     },
     {
@@ -1959,6 +1965,9 @@ const mindsetCollections = {
         { q: "They need to know how much I need this.", a: "One sentence says that. The fourth one says something else.", bundle: 'pro' },
         { q: "They'd only say no because they don't realise.", a: "Then say the thing they don't realise, once, and stop. That's the whole move.", bundle: 'pro' },
         { q: "I'll ask when they're in a good mood.", a: "That's timing, not pressure. Fine. Just don't call it consideration if it's cornering.", bundle: 'pro' },
+        { q: "Giving them an out sounds like I don't mean it.", a: "It sounds like you'd rather have a real answer than a reluctant one.", bundle: 'pro' },
+        { q: "They said yes but I could hear the hesitation.", a: "Ask again with the exit attached. A checked yes is worth more than a fast one.", bundle: 'pro' },
+        { q: "I need this, so I can't make it optional.", a: "It is optional whether you say so or not. Saying so just makes the yes reliable.", bundle: 'pro' },
       ]
     },
     {
@@ -1972,6 +1981,57 @@ const mindsetCollections = {
         { q: "I'm not asking them again.", a: "Then the no cost them something, and they'll know. Is that what you wanted?", bundle: 'pro' },
         { q: "I want to know why, at least.", a: "You want the reason to be good enough. It doesn't have to be.", bundle: 'pro' },
         { q: "It's embarrassing to have asked now.", a: "To you, for an hour. To them it was a question they answered.", bundle: 'pro' },
+        { q: "I can feel myself going cold with them.", a: "They answered the question you asked. Notice the sulk and drop it.", bundle: 'pro' },
+        { q: "They said no to me and yes to someone else.", a: "Different ask, different week. You don't have the whole picture and don't need it.", bundle: 'pro' },
+        { q: "Now I'll have to ask someone I know less well.", a: "Which is how you end up knowing them better. That's not a cost.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Being Vague Is Being Polite",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Could you help with the move at some point?\" feels considerate — it leaves them room, it does not pin them down, it is not demanding. So the request goes out soft, and the softness is exactly what makes it impossible to answer.\n\nNobody can say yes to an unbounded ask. What, when, and how big is not a demand; it is the information they need in order to agree, and leaving it out moves the work of defining the request onto the person you are asking.\n\nMindset: the specific version is the kind one. It is the one they can say yes to.",
+      inputs: [
+        { q: "Naming a time makes it sound like a demand.", a: "It makes it answerable. \"Two hours on Saturday\" is a question with a shape.", bundle: 'pro' },
+        { q: "I don't want to box them in.", a: "You're boxing yourself in. They can always propose a different day.", bundle: 'pro' },
+        { q: "I'm not sure yet how much I need.", a: "Then say the range. \"Somewhere between one and three hours\" is still specific.", bundle: 'pro' },
+        { q: "If I say how big it is they'll say no.", a: "Better a no now than a yes to something they'd never have agreed to.", bundle: 'pro' },
+        { q: "It's easier to ask small and expand later.", a: "That's the thing people never forgive. Ask for the real size once.", bundle: 'pro' },
+        { q: "They know what I mean.", a: "They know roughly. Roughly is what turns into the wrong Saturday.", bundle: 'pro' },
+        { q: "A vague ask leaves the relationship intact if they refuse.", a: "It leaves nothing to refuse. That's not kindness, it's avoidance.", bundle: 'pro' },
+        { q: "Being precise makes it feel transactional.", a: "Being precise makes it easy. Transactional is keeping score afterwards.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Asking Twice Is Nagging",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "A request goes unanswered and the second ask feels like pressure — as though repeating it says you do not trust them, or turns a favour into a chase. So it goes unsaid, and silence quietly becomes a no that neither of you decided.\n\nMost unanswered requests were not refused. They were seen on a phone, filed for later, and lost. One plain follow-up is not pressure; it is the thing that lets them give you an actual answer, which is what you asked for in the first place.\n\nMindset: ask once more, plainly, and then let it go. Once is not nagging — it is finishing the question.",
+      inputs: [
+        { q: "They didn't answer, so the answer is no.", a: "Or they forgot. You cannot tell the difference without asking.", bundle: 'pro' },
+        { q: "Bringing it up again would be pestering.", a: "Once is not pestering. Three times, with a tone, is.", bundle: 'pro' },
+        { q: "If they wanted to they'd have said yes.", a: "People who want to also lose messages. Give them the chance.", bundle: 'pro' },
+        { q: "I'd rather just find someone else.", a: "Fine — but tell them that, or you've made a decision they never got a say in.", bundle: 'pro' },
+        { q: "It's been so long it would be awkward.", a: "\"Coming back to this one\" removes the awkwardness in four words.", bundle: 'pro' },
+        { q: "I'll hint at it instead of asking again.", a: "A hint is what got no answer the first time.", bundle: 'pro' },
+        { q: "What if the second ask annoys them?", a: "Then you've learnt something. It almost never does.", bundle: 'pro' },
+        { q: "I followed up and still nothing.", a: "Then take the silence as the answer and say so kindly. That's the end of it.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Needing Help Is the Admission",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "Saying \"I'm stuck\" feels like a report on your competence rather than a request, so it gets postponed — and it keeps getting postponed until the thing is no longer a question anyone can help with, only a problem everyone has to deal with.\n\nThe admission people actually remember is the late one. Asking early is a small, ordinary sentence about a task; asking after the deadline is a sentence about a failure, and by then the help available is worth much less.\n\nMindset: early it is a question, late it is a confession. Ask while it is still a question.",
+      inputs: [
+        { q: "Asking says I can't do my job.", a: "Asking says you noticed early. That's the part people rate.", bundle: 'pro' },
+        { q: "I ought to be able to crack this on my own.", a: "Probably, given a week. Do you have a week?", bundle: 'pro' },
+        { q: "I'll give it one more day.", a: "You said that yesterday. Name the day you'll ask, and keep it.", bundle: 'pro' },
+        { q: "Everyone's busy, I don't want to add to it.", a: "A twenty-minute question now beats a rescue in a fortnight.", bundle: 'pro' },
+        { q: "I don't want to look like I need hand-holding.", a: "Ask one named person one specific thing. That is the opposite of hand-holding.", bundle: 'pro' },
+        { q: "They'll wonder why I didn't ask sooner.", a: "Then they'd have preferred sooner. That settles it — ask now.", bundle: 'pro' },
+        { q: "It's not bad enough to bother anyone yet.", a: "\"Not bad enough yet\" is the window. After it, it's bad enough to bother everyone.", bundle: 'pro' },
+        { q: "I've already left it too long.", a: "Then today is the earliest it can be. Later is the only worse option.", bundle: 'pro' },
       ]
     },
   ],
@@ -2989,8 +3049,8 @@ const mindsetCollections = {
   givingcounterexamples: [
     {
       name: "Not Wrong, Just Not Always",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "The pack-wide stance: the target of a counter-example is the word \"always\", not the sentence. You are making a claim the right size rather than knocking it over, and that is a much smaller thing to ask of somebody. Example of the shift — instead of \"that's not true\", you are aiming at \"that's true most of the time\".\n\nThe three thoughts that cause the trouble:\n1. \"If I have an exception, they're wrong\" — they are usually right, with an edge.\n2. \"One of us has to be correct\" — the useful outcome is a narrower claim you both hold.\n3. \"I need a strong example\" — you need a true one, and small is fine.\n\nMindset: you are taking the word always out. When it is gone, you are finished — do not keep going.",
       inputs: [
         { q: "You feel you have to prove the whole claim wrong.", a: "\"I don't. I just want the word 'always' out of it, and then I'm done.\"", bundle: 'pro' },
@@ -2998,12 +3058,15 @@ const mindsetCollections = {
         { q: "They have conceded 'usually' and you want to keep going.", a: "\"That was the whole goal. Anything more is me arguing for fun.\"", bundle: 'pro' },
         { q: "You realise they were mostly right.", a: "\"Mostly right is the normal outcome. My job was the edge, not the middle.\"", bundle: 'pro' },
         { q: "You want them to admit the claim was wrong.", a: "\"It wasn't wrong. It was too wide, and now it isn't. That's the win.\"", bundle: 'pro' },
+        { q: "You have a second example lined up.", a: "\"The word is already out. A second one turns a correction into a case.\"", bundle: 'pro' },
+        { q: "They said 'fair enough' and you kept talking.", a: "\"'Fair enough' is the finish line. Anything after it is for me, not for them.\"", bundle: 'pro' },
+        { q: "The claim is still mostly standing.", a: "\"It was mostly right. Mostly standing is the correct outcome.\"", bundle: 'pro' },
       ]
     },
     {
       name: "Widen, Do Not Win",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "The stance about what a counter-example is for: it makes the discussion bigger, not the other person smaller. Used to score a point it produces defensiveness and nothing else; used to widen, it usually produces agreement within a sentence or two. Example of the shift — instead of hunting for the case that will end the argument, you offer the case that adds a room to it.\n\nWhere it goes wrong:\n1. You save your best example for the moment it will land hardest.\n2. You feel a small pleasure when they cannot answer.\n3. You keep going after they have already moved.\n\nMindset: the counter-example is a door, not a hit. If nobody has learned anything, it was an argument in disguise.",
       inputs: [
         { q: "You are enjoying having the better example.", a: "\"That feeling is the sign I've stopped discussing and started competing.\"", bundle: 'pro' },
@@ -3011,12 +3074,15 @@ const mindsetCollections = {
         { q: "They have already softened their claim and you have more to say.", a: "\"They moved. My job here is finished.\"", bundle: 'pro' },
         { q: "You are choosing the example that will be hardest to answer.", a: "\"Hardest to answer is not the same as most useful. Which one actually shows the edge?\"", bundle: 'pro' },
         { q: "Nobody has learned anything but you are ahead.", a: "\"Then it was an argument in disguise. Widen it or drop it.\"", bundle: 'pro' },
+        { q: "There are other people listening.", a: "\"An audience makes a door look like a hit. Say it smaller, not bigger.\"", bundle: 'pro' },
+        { q: "They got defensive and you pressed on.", a: "\"Defensive means it landed as an attack. Back up and offer the smaller claim.\"", bundle: 'pro' },
+        { q: "You want them to say you were right.", a: "\"That's the win talking. The result is a better picture, not a verdict.\"", bundle: 'pro' },
       ]
     },
     {
       name: "Concede First",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "The stance about order: the sentence before the exception decides how the exception is heard. Six words of agreement turn a contradiction into a contribution, and they cost nothing because the general case usually is right. Example of the shift — instead of opening with \"actually\", you open with \"usually, yes\".\n\nWhere the hesitation shows up:\n1. You feel that conceding weakens your point — it is what makes it hearable.\n2. You want to get the exception out before you lose your nerve.\n3. You think agreement will be read as backing down.\n\nMindset: \"usually, yes — though…\" is the whole technique. Everything else in this pack is what goes after the dash.",
       inputs: [
         { q: "You are about to open with 'actually'.", a: "\"Swap it for 'usually, yes'. Same sentence after it, completely different conversation.\"", bundle: 'pro' },
@@ -3024,12 +3090,15 @@ const mindsetCollections = {
         { q: "You want to say the exception before you lose your nerve.", a: "\"Six words of agreement first. The exception will still be there.\"", bundle: 'pro' },
         { q: "You feel the concession is dishonest because you disagree.", a: "\"I don't disagree with most of it. Saying so is accurate, not diplomatic.\"", bundle: 'pro' },
         { q: "You have opened with the exception and it went badly.", a: "\"Same content, wrong order. Concede, then except — it's the whole technique.\"", bundle: 'pro' },
+        { q: "You conceded and they took it as full agreement.", a: "\"Then the 'though' came too late or too quietly. Same sentence, no pause.\"", bundle: 'pro' },
+        { q: "The general claim is barely true at all.", a: "\"Then concede the small true part. There is almost always one.\"", bundle: 'pro' },
+        { q: "Conceding first slows the whole thing down.", a: "\"By four words. It saves the ten minutes of defending that would follow.\"", bundle: 'pro' },
       ]
     },
     {
       name: "I Don't Have One",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "The stance about honesty: not having an example is an ordinary situation with an ordinary sentence attached, and inventing one is the only failure in this pack that cannot be walked back. Example of the shift — instead of reaching for a figure that feels right, you say you have not got one and ask instead.\n\nWhere it goes wrong:\n1. A number that feels about right becomes a number you stated.\n2. \"I read somewhere\" stands in for a source you cannot name.\n3. A story you half remember gets told as something you saw.\n\nMindset: \"I don't have a case to point at\" costs you a sentence. An invented one costs you everything else you said.",
       inputs: [
         { q: "You are about to quote a statistic you cannot source.", a: "\"'I think it's around a third, but don't quote me' is allowed. Inventing it is not.\"", bundle: 'pro' },
@@ -3037,6 +3106,25 @@ const mindsetCollections = {
         { q: "You have no example and feel you need one.", a: "\"Then I ask. 'Can you think of anyone it hasn't been true for?' does the same job.\"", bundle: 'pro' },
         { q: "The invented version would be so much better than the real one.", a: "\"Better and unusable. One check and everything else I said goes with it.\"", bundle: 'pro' },
         { q: "You want to round a figure into something more convincing.", a: "\"Hedge it out loud instead. 'About a third, don't quote me' is honest and still useful.\"", bundle: 'pro' },
+        { q: "Saying you have nothing ends your side of it.", a: "\"It ends the claim, not the point. 'I can't back that up' is still a position.\"", bundle: 'pro' },
+        { q: "You are sure you read it somewhere.", a: "\"Somewhere is not a source. Say you think you read it, and say that you are unsure.\"", bundle: 'pro' },
+        { q: "They will assume you are conceding entirely.", a: "\"Then say the rest out loud. 'No example, but I still doubt the always.'\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "A Made-Up Case Doesn't Count",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "Inventing the case a claim cannot handle feels like cheating. Nothing happened, nobody was there, and offering it seems weaker than a real story — so people who cannot remember a real one say nothing at all.\n\nBut a hypothetical is not evidence and was never meant to be. It is a test of the claim's own shape: if \"people always come round eventually\" cannot survive the case you just described, the word doing the damage is *always*, and you have found it without needing anything to have happened.\n\nMindset: you are testing the rule, not producing a witness. Say it as the test it is.",
+      inputs: [
+        { q: "I'd be making it up, which isn't fair.", a: "You're not claiming it happened. \"Say someone did X — what then?\" is a question, not a claim.", bundle: 'pro' },
+        { q: "They'll just say that's not realistic.", a: "Then ask which part. Either it's realistic and the rule bends, or you learn where the line is.", bundle: 'pro' },
+        { q: "A real example would be much stronger.", a: "Usually. But an invented one you can shape beats a real one you half remember.", bundle: 'pro' },
+        { q: "It feels like a debating trick.", a: "Tricks hide what they're doing. Say \"I'm testing it, not arguing\" and it's transparent.", bundle: 'pro' },
+        { q: "I can't think of a case that would break it.", a: "Then the claim might be sound. That's a real finding, not a failure.", bundle: 'pro' },
+        { q: "They'll accuse me of moving the goalposts.", a: "Not if you keep it inside their own claim. Use their words and change one thing.", bundle: 'pro' },
+        { q: "Hypotheticals make discussions abstract.", a: "Make it concrete then. A name, a place, a Tuesday — invented but specific.", bundle: 'pro' },
+        { q: "If it never happened it proves nothing.", a: "It isn't proving. It's asking whether the rule survives the ordinary case.", bundle: 'pro' },
       ]
     },
   ],
@@ -4066,8 +4154,8 @@ const mindsetCollections = {
   startingconversations2: [
     {
       name: "Being Asked Is a Compliment",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "Most people avoid asking for small favours because it feels like an imposition — as though a stranger's time were being taken. But being asked for something small is one of the more pleasant things that happens in an ordinary day. You are treated as competent, trusted or knowledgeable, and it takes four seconds.\n\nWatch what happens when someone asks you. You almost certainly do not resent it.\n\nMindset: a small request is a gift as often as it is a cost.",
       inputs: [
         { q: "I don't want to bother them.", a: "A four-second favour isn't a bother. Think how you feel when someone asks you.", bundle: 'pro' },
@@ -4075,12 +4163,15 @@ const mindsetCollections = {
         { q: "They're busy, it's not fair to ask.", a: "Then ask something that takes four seconds and thank them properly.", bundle: 'pro' },
         { q: "I'll look incompetent.", a: "You'll look like someone who asks rather than stands there guessing.", bundle: 'pro' },
         { q: "They might say no.", a: "Then they say no, and you have lost nothing at all.", bundle: 'pro' },
+        { q: "I've already asked them something today.", a: "Twice in a day is normal. Nobody counts.", bundle: 'pro' },
+        { q: "I could look it up instead of asking.", a: "You could. But looking it up gets you the answer, not the conversation.", bundle: 'pro' },
+        { q: "They helped and now I owe them.", a: "You owe them a thank-you. That's the whole debt.", bundle: 'pro' },
       ]
     },
     {
       name: "Say the Useful Thing",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "People notice a broken machine, a shorter queue, a locked door — and say nothing, because speaking to a stranger feels like more of an event than staying quiet does.\n\nBut offering information is the least intrusive thing you can do. It has an obvious reason, it costs them nothing, and even when it goes no further you have made someone's next ten minutes easier.\n\nMindset: if you know something they would want to know, that is reason enough to speak.",
       inputs: [
         { q: "They'll probably work it out themselves.", a: "Probably, in ten minutes. You could save them the ten minutes.", bundle: 'pro' },
@@ -4088,12 +4179,15 @@ const mindsetCollections = {
         { q: "They might already know.", a: "Then they say \"oh, thanks\" and you've lost two seconds.", bundle: 'pro' },
         { q: "It feels like showing off that I know.", a: "It feels like that from inside. From outside it's just helpful.", bundle: 'pro' },
         { q: "I'd have to go over there to say it.", a: "Yes. That's the whole thing you're practising.", bundle: 'pro' },
+        { q: "It's a small thing, hardly worth saying.", a: "Small and useful now beats important and too late.", bundle: 'pro' },
+        { q: "They didn't ask, so it's unsolicited.", a: "Most useful things are. \"The other queue's shorter\" has never offended anyone.", bundle: 'pro' },
+        { q: "I told them and they already knew.", a: "Then it cost four seconds and they know you were looking out for them.", bundle: 'pro' },
       ]
     },
     {
       name: "Remembering Is the Whole Gift",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "People consistently underestimate what it does to be asked a specific question about their own life. Not \"how are you\" but \"how did Thursday go\" — the second one says you were listening, and that you thought about them at some point when they were not there.\n\nIt is a small effort with an unusually large return, and it is the opener people most often skip in favour of a greeting.\n\nMindset: if you remember something, use it. That is what remembering is for.",
       inputs: [
         { q: "They probably don't want to be asked about it.", a: "Most people very much do. Being remembered is rare enough to be noticeable.", bundle: 'pro' },
@@ -4101,12 +4195,15 @@ const mindsetCollections = {
         { q: "I might have the details wrong.", a: "Then ask loosely. Getting it half right still shows you listened.", bundle: 'pro' },
         { q: "A general \"how are you\" is easier.", a: "It is, and it gets \"fine\". That's the trade you're making.", bundle: 'pro' },
         { q: "I don't want to seem like I've been thinking about them.", a: "You listened once. That's all it shows, and it's a good thing to show.", bundle: 'pro' },
+        { q: "I remember it went badly for them.", a: "Then ask carefully rather than not at all. \"How did that end up?\" leaves them room.", bundle: 'pro' },
+        { q: "I only remember half of it.", a: "Say the half. \"Was it Lisbon, or am I inventing that?\" works fine.", bundle: 'pro' },
+        { q: "They'll think I was keeping track of them.", a: "They'll think you listened. Nobody has ever been unsettled by that.", bundle: 'pro' },
       ]
     },
     {
       name: "You Need Something Real",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "Every opener in this pack depends on something being true — a genuine request, a genuine piece of information, a shared thing that actually happened, a thread you actually remember. That is what makes them work, and it is also their limit.\n\nWhen none of them is true, the honest move is not to manufacture one. It is to use a plainer opener, or to say nothing. Manufactured common ground is easy to spot and worse than a simple hello.\n\nMindset: use the opener that is true. If none is, there are simpler ones.",
       inputs: [
         { q: "I'll invent a question so I've got a reason to talk to them.", a: "Or just say hello. It's more honest and it works better.", bundle: 'pro' },
@@ -4114,6 +4211,9 @@ const mindsetCollections = {
         { q: "A made-up reason is better than no reason.", a: "It isn't. People hear the difference, even if they can't name it.", bundle: 'pro' },
         { q: "I need a better opener than \"hi\".", a: "You don't. You need to say something, and \"hi\" is something.", bundle: 'pro' },
         { q: "If I can't find common ground I shouldn't approach.", a: "Common ground is usually built in the conversation, not before it.", bundle: 'pro' },
+        { q: "The real thing I could say is boring.", a: "Boring and true starts conversations. Interesting and false ends them.", bundle: 'pro' },
+        { q: "I've used the same real opener twice with them.", a: "Then use a different real one. There are always more than you think.", bundle: 'pro' },
+        { q: "Nothing true has happened between us.", a: "Then you are both standing somewhere. That is true and it is enough.", bundle: 'pro' },
       ]
     },
   ],

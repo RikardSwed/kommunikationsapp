@@ -5379,8 +5379,8 @@ const collections = {
   givingcounterexamples: [
     {
       name: "Your Own Exception",
-      guideFront: "Someone has said something a bit too general. Take the \"always\" out of it.",
-      guideBack: "One counter-example that would do the job — concede first, then the exception.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "Say the time it did not work like that for you. It is the strongest counter-example available to almost anyone, because it happened, it is yours, and nobody can tell you it did not. Example: \"Exercise usually does help — I trained hard all last week and still felt awful.\"\n\nIt works because a general claim survives an argument easily and does not survive a real case. You are not asking them to accept a principle; you are reporting an afternoon.\n\nConcede first. \"Exercise usually helps\" costs you nothing, keeps them on your side, and makes the exception land as information rather than as contradiction.\n\nTypical phrases: \"I thought that too, but for me…\", \"Usually, yes — though when I…\", \"That was true for me until…\", \"I did exactly that and…\"\n\nThree kinds of personal exception:\n\n1. The single occasion — one time, dated and small. \"I revised for a week for that one and still failed it.\"\n\n2. The time you believed the claim yourself — the most disarming, because you were on their side. \"I said the same thing for years. Then I tried it.\"\n\n3. The way round you found — an exception that also offers something. \"I never managed it in the mornings. Evenings turned out fine.\"\n\nMindset: you are adding a case, not overturning a rule. Say the general thing is usually right, then say what happened to you.",
       inputs: [
         { q: "\"Exercise always makes you happy.\"", a: "\"It usually does, yeah. I trained hard all last week and still felt flat.\"", bundle: 'free' },
@@ -5395,8 +5395,8 @@ const collections = {
     },
     {
       name: "The One You Have Seen",
-      guideFront: "Someone has said something a bit too general. Take the \"always\" out of it.",
-      guideBack: "One counter-example that would do the job — concede first, then the exception.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "Point at a case you have watched happen, or one that most people have. Not your own life, but something observable — a person, a place, a situation both of you can check against experience. Example: \"Most early risers are productive, sure. The best person on my old team started at eleven every day.\"\n\nIt works because it is checkable without being personal. They do not have to take your word for it in the way they do with an opinion, and they cannot argue with it in the way they can with a principle.\n\nKeep it recognisable. A counter-example nobody can picture is just a claim of your own, and now there are two claims in the room instead of one.\n\nTypical phrases: \"Actually, I've seen it go the other way…\", \"There's at least one I know of…\", \"That's not been true at…\", \"Most people, maybe. Not…\"\n\nThree kinds:\n\n1. Someone you have watched — the clearest. \"My old boss never answered emails and was the most effective person there.\"\n\n2. A place where it works differently — good for claims about how things must be done. \"The Malmö office has done it the other way for years.\"\n\n3. The common counter-case — one most people have seen. \"Everyone knows one person who revises nothing and does fine.\"\n\nMindset: pick something they could picture or check. An example only you can see is not evidence, it is a second opinion.",
       inputs: [
         { q: "\"People who wake up early are always more productive.\"", a: "\"Often, yes. The best person on my old team never started before eleven.\"", bundle: 'free' },
@@ -5411,8 +5411,8 @@ const collections = {
     },
     {
       name: "Where It Would Break",
-      guideFront: "Someone has said something a bit too general. Take the \"always\" out of it.",
-      guideBack: "One counter-example that would do the job — concede first, then the exception.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "Invent the case the claim cannot handle, and walk them through it. You are not saying it happened — you are asking them to try the rule somewhere it does not fit. Example: \"Say someone works nights. Does the early-start rule still hold?\"\n\nIt works when you have no real case to hand, and it is honest to say so. It also avoids the argument about whether your example is representative, because you are not claiming it is real.\n\nMark it as imagined. \"Say someone…\" is honest; presenting an invention as something that happened is the one move in this pack that cannot be repaired.\n\nTypical phrases: \"Imagine someone who…\", \"Say it were…\", \"What about a case where…\", \"Does that still hold if…\"\n\nThree ways to build it:\n\n1. The one person the rule forgets — the standard. \"Say someone works nights. Then what?\"\n\n2. Push it to the edge — until the shape shows. \"If everyone did it, there'd be forty people asking the same question.\"\n\n3. Turn it round — flip who it happens to. \"Imagine it was your own work being reviewed that way.\"\n\nMindset: an imagined case tests a rule without arguing about facts. Say plainly that it is imagined, and it stays a test rather than a claim.",
       inputs: [
         { q: "\"Everyone should start their day at six.\"", a: "\"Say someone works nights. Does the rule still hold, or is it really about a routine?\"", bundle: 'free' },
@@ -5427,8 +5427,8 @@ const collections = {
     },
     {
       name: "The Known Exception",
-      guideFront: "Someone has said something a bit too general. Take the \"always\" out of it.",
-      guideBack: "One counter-example that would do the job — concede first, then the exception.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "Use a case both of you already know — a well-known person, a famous event, a story everyone recognises. You get the whole example for free, because you only have to point at it. Example: \"Most people who fail that many times give up, true. Not the ones we've all heard of.\"\n\nIt works through recognition rather than explanation, which makes it the fastest of the five. It is also the least personal, so it works with people you barely know and in rooms where your own life is not the subject.\n\nTwo cautions. If you have to explain the reference, it was not shared — pick another one. And describe what actually happened rather than putting words in a real person's mouth.\n\nTypical phrases: \"Even…\", \"Same as when…\", \"Remember the…\", \"There's a famous one, actually…\"\n\nThree kinds:\n\n1. The public case — an event most people recognise. \"Same as the vaccine timeline. Everyone said years.\"\n\n2. The known person — used for what they did, not for who they are. \"Plenty of authors were rejected a dozen times first.\"\n\n3. The story that carries the idea — a fable or a plot, when the real case is missing. \"It's the tortoise and the hare, basically.\"\n\nMindset: point, do not explain. The moment a shared example needs a paragraph of setup, it has stopped being shared.",
       inputs: [
         { q: "\"If a book gets rejected, it wasn't good enough.\"", a: "\"Mostly the market's right. Plenty of famous ones were turned down a dozen times first.\"", bundle: 'free' },
@@ -5443,8 +5443,8 @@ const collections = {
     },
     {
       name: "What the Numbers Say",
-      guideFront: "Someone has said something a bit too general. Take the \"always\" out of it.",
-      guideBack: "One counter-example that would do the job — concede first, then the exception.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "Answer a general claim with a figure, a measurement or a finding — and only one you actually know. Used honestly it is the strongest counter-example there is; used loosely it is the fastest way to lose the argument and your credibility with it. Example: \"Some research puts night owls just as high on output, though I'd want to check the number before you quote me.\"\n\nThe rule that makes this safe is the same as in Giving Examples: use a number you know and say where it came from. If you do not have one, say so and use a different type. An invented figure is worse than none, because when it is checked, every other thing you said goes with it.\n\nTypical phrases: \"I counted, and…\", \"The report put it at…\", \"Roughly a third, though don't quote me…\", \"It's tens, not hundreds.\"\n\nThree ways to use it honestly:\n\n1. Something you counted yourself — small and verifiable. \"I logged it for a fortnight. Nine days out of fourteen it went the other way.\"\n\n2. A figure with its source attached. \"The staff survey had it at about a third.\"\n\n3. A hedged estimate, marked as one. \"Something like a quarter. I'd check before repeating that.\"\n\nMindset: never invent a number to win a point about nuance. \"I don't have a figure, but I know one person it wasn't true for\" is a better sentence than a made-up statistic.",
       inputs: [
         { q: "\"Nobody uses the old system any more.\"", a: "\"I counted on Monday. Eleven people opened it that week.\"", bundle: 'free' },
@@ -7925,8 +7925,8 @@ const collections = {
   startingconversations2: [
     {
       name: "Ask for Help",
-      guideFront: "You are about to say the first thing. Say it out loud.",
-      guideBack: "One way it could sound.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "Ask them for something small — to pass you a thing, to hold a door, to tell you how something works, to keep an eye on your bag. You are not opening with conversation at all; you are opening with a task, and the conversation comes free with it.\n\nIt works for a reason that sounds backwards: people like being asked. A small request gives the other person a role — the person who knows, the person who helps — which is far easier to occupy than the role of stranger being talked at. And it gives them something concrete to do rather than something to think of.\n\nThe request has to be genuinely small. The point is that saying yes costs almost nothing, so almost nobody says no, and you are talking within seconds.\n\nTypical phrases: \"Could you pass me…?\", \"Sorry, do you know how…?\", \"Would you mind keeping an eye on…?\", \"Can you help me with this for a second?\"\n\nFour ways to ask:\n\n1. A physical favour — the smallest kind. \"Could you pass me one of those?\"\n\n2. Local knowledge — asking them to be the one who knows. \"Do you know how this machine works? I've pressed everything.\"\n\n3. A second pair of hands — brief and obviously finite. \"Could you hold this for a second while I get the lid off?\"\n\n4. Watching something — implies trust, which people like being given. \"Would you mind keeping an eye on my bag for two minutes?\"\n\nMindset: keep it small enough that yes is the easy answer, and thank them properly — that thank you is the second half of the opener.",
       inputs: [
         { q: "You are at a table and the water jug is at the other end.", a: "\"Could you pass me the water when you get a chance?\"", bundle: 'free' },
@@ -7941,8 +7941,8 @@ const collections = {
     },
     {
       name: "Offer Something Useful",
-      guideFront: "You are about to say the first thing. Say it out loud.",
-      guideBack: "One way it could sound.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "Give them a piece of information they can use right now. The other queue is shorter, that machine takes coins, the front door is locked so you have to go round, the second half is better than the first. You are not making conversation — you are being helpful, and the conversation follows.\n\nIt works because it inverts the usual opening. Instead of asking something of a stranger, you give them something, which means there is nothing for them to weigh up. It also gives you an obvious reason to have spoken, which removes the awkwardness of having approached at all.\n\nKeep it to what is actually useful. Unsolicited advice about how someone should live is a different thing entirely and lands very differently.\n\nTypical phrases: \"Just so you know…\", \"There's a shorter one round the corner.\", \"That one's out of order, by the way.\", \"If you press it twice it works.\"\n\nFour ways to offer something useful:\n\n1. A shortcut — the most welcome kind. \"There's a second queue round the side and nobody's found it.\"\n\n2. A warning — saves them a wasted trip. \"That machine's been eating cards all week. I'd use the other one.\"\n\n3. How something works — the thing you learned the hard way. \"You have to hold it down until it beeps twice. Took me a while.\"\n\n4. What is coming — insider information about the situation. \"They usually open the second door about ten minutes in.\"\n\nMindset: offer it and let go. If they only say thanks, you have still made their day slightly easier, and that was worth doing on its own.",
       inputs: [
         { q: "Someone joins a long queue and there is a shorter one nearby.", a: "\"There's a second till open round the corner, if you want it.\"", bundle: 'free' },
@@ -7957,8 +7957,8 @@ const collections = {
     },
     {
       name: "Mention a Shared Experience",
-      guideFront: "You are about to say the first thing. Say it out loud.",
-      guideBack: "One way it could sound.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "Talk about the thing you have both just been through. The test that has just finished, the meeting you both sat in, the traffic on the way, the delay, the training session. It is the single most reliable opener between two people who do not know each other but have just done the same thing.\n\nIt works because it needs no introduction. They know exactly what you are referring to, they already have opinions about it, and you are giving them permission to say what they were probably already thinking.\n\nThe best version names something specific rather than the event as a whole. \"That was long\" is fine; \"I lost the will during the third slide\" gives them something to answer.\n\nTypical phrases: \"That was tough, wasn't it?\", \"Well, that was long.\", \"How did you find that?\", \"I did not expect that last bit.\"\n\nFour ways to use a shared experience:\n\n1. Give your verdict — and invite theirs by implication. \"That was harder than I expected.\"\n\n2. Ask for theirs first — slightly more generous. \"How did you find that?\"\n\n3. Name a specific moment — much better than the whole event. \"The bit at the end where he asked for questions and nobody moved.\"\n\n4. Say what you were thinking during it — small self-disclosure, easy to match. \"I spent the whole hour trying to work out if I was in the right room.\"\n\nMindset: they went through it too. You are not informing them, you are comparing notes, and that is a conversation between equals.",
       inputs: [
         { q: "You come out of a difficult exam next to someone else.", a: "\"Well. That was not what I revised for.\"", bundle: 'free' },
@@ -7973,8 +7973,8 @@ const collections = {
     },
     {
       name: "Pick Up a Shared Thread",
-      guideFront: "You are about to say the first thing. Say it out loud.",
-      guideBack: "One way it could sound.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "Ask about something already running between you. Their project, their trip, the thing they mentioned last week, how the move went, whether the exam happened. It is the opener for people you already know a little and have not spoken to for a while.\n\nIt works because it costs the other person nothing to answer and proves something no other opener proves: that you remembered. That is a small thing to do and a surprisingly large thing to receive.\n\nIt is also the opener most often missed. People default to a greeting with someone they half know, when a single specific question would have started an actual conversation.\n\nTypical phrases: \"How's the… going?\", \"Did you ever…?\", \"How did the… go in the end?\", \"Whatever happened with…?\"\n\nFour ways to pick up a thread:\n\n1. Ask how the ongoing thing is going — the standard version. \"How's the extension coming along?\"\n\n2. Ask how a specific event went — better, because it has an answer. \"How did the interview go?\"\n\n3. Follow up on something they worried about — this one carries weight. \"Did your mum's appointment go alright?\"\n\n4. Return to a topic you both enjoyed — picks the conversation back up mid-air. \"Did you ever finish that series you were telling me about?\"\n\nMindset: specific beats general every time. \"How's things?\" gets \"fine\"; \"how did Thursday go?\" gets an answer.",
       inputs: [
         { q: "A colleague mentioned last week that they were moving house.", a: "\"How did the move go in the end?\"", bundle: 'free' },
@@ -11514,8 +11514,8 @@ const collectionsModeData = {
   givingcounterexamples: [
     {
       name: "When You Are the Evidence",
-      guideFront: "Which kind of counter-example fits here?",
-      guideBack: "A possible counter-example, with the type in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Your own exception and honest numbers — the two types where you are the source and can stand behind every word of it.\n\nUse them when it matters that you are believed: when the other person is sceptical, when the stakes are real, or when the claim is about something you have actually lived through.\n\nMindset: these two survive being questioned. Reach for them when you might be.",
       inputs: [
         { q: "\"Nobody manages to keep a new habit past January.\"", a: "\"Most don't. I've run four mornings a week since last February.\" [Your Own Exception]", bundle: 'pro' },
@@ -11528,8 +11528,8 @@ const collectionsModeData = {
     },
     {
       name: "When They Already Know It",
-      guideFront: "Which kind of counter-example fits here?",
-      guideBack: "A possible counter-example, with the type in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The one you have seen and the known exception — the two types that work through recognition. Neither needs establishing, so both are fast, and neither requires the other person to take your word for anything.\n\nUse them when you want the point to land immediately, when your own life is not the subject, or when you barely know the person you are talking to.\n\nMindset: these cost the listener nothing to accept. That is their whole advantage — and it is why they are the safest to use with a stranger.",
       inputs: [
         { q: "\"Early risers are always the productive ones.\"", a: "\"The best person on my old team never started before eleven.\" [The One You Have Seen]", bundle: 'pro' },
@@ -11542,8 +11542,8 @@ const collectionsModeData = {
     },
     {
       name: "All Five",
-      guideFront: "Which kind of counter-example fits here?",
-      guideBack: "A possible counter-example, with the type in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The full choice. Most claims can be answered several ways, but one usually costs least: your own exception when you lived it, the one you have seen when you watched it, the imagined case when you have neither, the known exception when the room already knows it, and numbers when you actually have one.\n\nThe five, with the cue for each:\n1. Your Own Exception — it happened to you. \"I did exactly that and…\"\n2. The One You Have Seen — you watched it. \"There's at least one I know of…\"\n3. Where It Would Break — you have no case, and say so. \"Say someone…\"\n4. The Known Exception — you both already know it. \"Even…\"\n5. What the Numbers Say — you have a real figure. \"I counted, and…\"\n\nMindset: pick the cheapest true one. The point is to take \"always\" out of the claim, not to win the exchange.",
       inputs: [
         { q: "\"Exercise always makes you feel better.\"", a: "\"It usually does. I trained all last week and still felt flat.\" [Your Own Exception]", bundle: 'pro' },
@@ -12490,8 +12490,8 @@ const collectionsModeData = {
   startingconversations2: [
     {
       name: "Give or Ask",
-      guideFront: "Which opener fits this moment?",
-      guideBack: "A possible opener, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Asking for help and offering something useful. Both work by giving the other person a role rather than a topic, and the choice between them is simply which direction the useful thing is travelling.\n\nAsk when you genuinely need something, or when they are clearly the one who knows. Offer when you have information they do not and would want. The one thing that does not work is manufacturing either: an invented request or unwanted advice both land as what they are.\n\nMindset: the request or the offer has to be real. If it is not, use a different opener.",
       inputs: [
         { q: "Someone is feeding coins into a machine you know is broken.", a: "\"That one's been out all week, sorry. The one by the door works.\" [Offer Something Useful]", bundle: 'pro' },
@@ -12505,8 +12505,8 @@ const collectionsModeData = {
     },
     {
       name: "What You Already Share",
-      guideFront: "Which opener fits this moment?",
-      guideBack: "A possible opener, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The shared experience and the shared thread. Both draw on common ground; the difference is when the ground was laid.\n\nA shared experience is something you have both just been through, and it works with a complete stranger — you need no history at all, only the same hour. A shared thread needs history: something you know about them from before, which you are picking back up.\n\nThe rule is simple. If you have never spoken to them, use the experience. If you have, use the thread — it is the stronger of the two, because remembering is worth more than agreeing.\n\nMindset: with someone you half know, always reach for the thread. It is the opener people most often waste.",
       inputs: [
         { q: "You come out of a long talk beside a total stranger.", a: "\"How did you find that?\" [Mention a Shared Experience]", bundle: 'pro' },
@@ -12520,8 +12520,8 @@ const collectionsModeData = {
     },
     {
       name: "All Four",
-      guideFront: "Which opener fits this moment?",
-      guideBack: "A possible opener, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The full set. All four need something more than being in the same room, and picking between them is really a question of what you actually have with this person.\n\nA rough guide: if you know something about them from before, use the thread. If you have just been through something together, use the experience. If you need something, ask. If you know something they would want to know, offer.\n\nIf none of the four applies — a complete stranger, nothing shared, nothing needed — that is what the first pack of openers is for. Not every moment has common ground in it.\n\nMindset: pick the one that is true. A manufactured opener is worse than a plain hello.",
       inputs: [
         { q: "You have both just walked out of the same exam.", a: "\"That was not what I revised for.\" [Mention a Shared Experience]", bundle: 'pro' },

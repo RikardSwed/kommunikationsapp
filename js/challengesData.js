@@ -3251,8 +3251,8 @@ const challengesCollections = {
   givingcounterexamples: [
     {
       name: "It Landed As Contradiction",
-      guideFront: "What has gone wrong with this counter-example?",
-      guideBack: "A possible response, with the move in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Your example was fine, but it arrived without the concession, so it read as \"you're wrong\" rather than \"not always\". The repair is to put the general case back in and let the exception stay an exception.\n\nWhat it usually looks like:\n\n• They have gone defensive and started restating the claim.\n• You said \"actually\" or \"that's not true\" first.\n• The conversation is now about the claim rather than about the subject.\n\nTwo ways through:\n1. Concede late — better than never. \"You're right in general, that's the bit I skipped.\"\n2. Shrink your own point out loud — \"I only meant it isn't universal.\"\n\nMindset: \"actually\" is the word that turns an example into a correction. Take it out and the same sentence lands completely differently.",
       inputs: [
         { q: "You said \"actually, that's not true\" and they went defensive.", a: "\"That came out wrong. You're right in general — I only meant it isn't universal.\" [concede late]", bundle: 'pro' },
@@ -3264,8 +3264,8 @@ const challengesCollections = {
     },
     {
       name: "One Case, Big Conclusion",
-      guideFront: "What has gone wrong with this counter-example?",
-      guideBack: "A possible response, with the move in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "You used a single exception as if it settled the whole question, and they noticed. The repair is to say what one case actually shows — that the claim is a tendency and not a rule — which is a smaller thing and much easier to agree with.\n\nWhat it usually looks like:\n\n• \"That's one person\" and they are right.\n• You are defending your example rather than your point.\n• You said \"so it's not true\" when you meant \"so it's not always true\".\n\nTwo ways through:\n1. Name what one case proves — \"it makes it 'usually' rather than 'always'\".\n2. Offer the narrower claim and take the agreement — \"most people, I'd sign up to.\"\n\nMindset: an exception removes the word always. It does not remove the sentence.",
       inputs: [
         { q: "They said \"that's just one person\" and it is a fair hit.", a: "\"It is one. One's enough to make it 'usually' rather than 'always', though.\" [what one case shows]", bundle: 'pro' },
@@ -3277,8 +3277,8 @@ const challengesCollections = {
     },
     {
       name: "The Example Is Invented",
-      guideFront: "What has gone wrong with this counter-example?",
-      guideBack: "A possible response, with the move in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "You reached for a figure or a case you do not actually have, or you are about to. The repair is to say so before it is checked, and to use a type you can stand behind instead.\n\nWhat it usually looks like:\n\n• You have said \"I read somewhere\" and cannot say where.\n• The number felt right rather than known.\n• You are hoping nobody asks for the source.\n\nTwo ways through:\n1. Withdraw it immediately — costs a sentence, saves the rest of your credibility.\n2. Swap the type — an imagined case, marked as imagined, does the same job honestly.\n\nMindset: a made-up example is the one mistake that spreads. When it is checked, everything else you said goes with it.",
       inputs: [
         { q: "You quoted a statistic you cannot actually source.", a: "\"I shouldn't have said that as a fact — I don't have the number. Let me find it.\" [withdraw]", bundle: 'pro' },
@@ -3290,8 +3290,8 @@ const challengesCollections = {
     },
     {
       name: "They Cannot Picture It",
-      guideFront: "What has gone wrong with this counter-example?",
-      guideBack: "A possible response, with the move in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Your example is real but it means nothing to them — a person they do not know, a place they have not been. The repair is to swap it for something they can check against their own experience.\n\nWhat it usually looks like:\n\n• They nod and the point does not land.\n• You have had to explain who the person is.\n• The example needed two sentences of setup.\n\nTwo ways through:\n1. Swap to the common counter-case — \"everyone knows one person who…\"\n2. Swap to a known exception — a public case needs no introduction at all.\n\nMindset: if you have to explain the example, it is doing less work than the claim it is answering.",
       inputs: [
         { q: "You named a colleague they have never met.", a: "\"Bad example — you don't know him. Everyone knows one person who revises nothing and does fine.\" [common counter-case]", bundle: 'pro' },
@@ -3303,8 +3303,8 @@ const challengesCollections = {
     },
     {
       name: "The Claim Is About Someone Present",
-      guideFront: "What has gone wrong with this counter-example?",
-      guideBack: "A possible response, with the move in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The general statement is really about a person in the room, and any counter-example is going to be heard as taking sides. The repair is to move it off people entirely, or to say plainly that this is not really a general question.\n\nWhat it usually looks like:\n\n• \"People who do X are always Y\" and someone present does X.\n• The room has gone quiet in a specific way.\n• Your example would name or clearly point at somebody.\n\nTwo ways through:\n1. Move it off people — use an imagined case or a public one instead.\n2. Name what is happening, lightly — \"I don't think we're talking about people in general here.\"\n\nMindset: a counter-example about someone in the room is not a counter-example. It is a comment about them, and it will be received as one.",
       inputs: [
         { q: "The claim is clearly aimed at someone sitting there.", a: "\"Let's take it off people. Say someone works nights — does the rule still hold?\" [imagined case]", bundle: 'pro' },
@@ -4428,8 +4428,8 @@ const challengesCollections = {
   startingconversations2: [
     {
       name: "You Do Not Actually Need Anything",
-      guideFront: "What makes this opening hard?",
-      guideBack: "A possible opener, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Asking for help works because the request is real. Invent one and it usually shows — the question is slightly too easy, or you do not listen properly to the answer, and the whole thing reads as a device.\n\nEither find something you genuinely do want to know, which is more often available than it seems, or switch to an opener that does not require a pretext.\n\nMindset: if you would not ask it with nobody around, do not ask it now.",
       inputs: [
         { q: "You want to talk to them but you know how the machine works.", a: "\"Busy in here tonight, isn't it.\" [Mention a Shared Experience]", bundle: 'pro' },
@@ -4441,8 +4441,8 @@ const challengesCollections = {
     },
     {
       name: "The Offer Is Not Wanted",
-      guideFront: "What makes this opening hard?",
-      guideBack: "A possible opener, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Offering useful information is welcome; offering an opinion about what someone should do is not, and the line between them is easy to cross without noticing.\n\nThe test is whether the information is about the situation or about them. \"The other queue is shorter\" is about the situation. \"You'd be better off doing it a different way\" is about them, and it arrives as a correction.\n\nMindset: give facts about the place, not verdicts about the person.",
       inputs: [
         { q: "You are about to tell someone they are doing something the wrong way.", a: "\"That door sticks, by the way — you have to pull first.\" [Offer Something Useful]", bundle: 'pro' },
@@ -4454,8 +4454,8 @@ const challengesCollections = {
     },
     {
       name: "You Cannot Remember the Thread",
-      guideFront: "What makes this opening hard?",
-      guideBack: "A possible opener, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "You know they told you something. You cannot remember whether it was a house move, a job interview or a hospital appointment, and asking about the wrong one would be worse than asking about nothing.\n\nAdmitting the gap works far better than people expect. \"You told me something last time and I have lost it\" is honest, mildly self-deprecating, and gets you the thread back from them.\n\nMindset: half-remembering and saying so beats pretending, and it beats saying nothing.",
       inputs: [
         { q: "You know something was going on but not what.", a: "\"You told me something last time and I've completely lost it. What was happening?\" [Pick Up a Shared Thread]", bundle: 'pro' },
@@ -4467,8 +4467,8 @@ const challengesCollections = {
     },
     {
       name: "The Thread Might Be Painful",
-      guideFront: "What makes this opening hard?",
-      guideBack: "A possible opener, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Some ongoing things are difficult — an illness, a job that might have gone, a relationship, an application that may not have worked. Asking is usually right, because being asked is better than being avoided, but how you ask matters.\n\nLeave them a way out. A question with an easy exit lets them say \"fine, thanks\" and move on, and lets them say more if they want to. Do not ask across a room, and do not ask twice if the first answer was short.\n\nMindset: ask gently, once, and let their answer decide the size of the conversation.",
       inputs: [
         { q: "Someone was waiting on medical results.", a: "\"How have you been? You had things going on last time we spoke.\" [Pick Up a Shared Thread]", bundle: 'pro' },
@@ -4480,8 +4480,8 @@ const challengesCollections = {
     },
     {
       name: "The Shared Experience Was Bad",
-      guideFront: "What makes this opening hard?",
-      guideBack: "A possible opener, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Sometimes the thing you have both just been through was genuinely unpleasant rather than mildly annoying — a difficult meeting, bad news, someone being told off in front of everyone.\n\nThe light comment that works after a long queue does not work here. Either say something plainly and briefly, or say nothing and let the situation be what it is. The failure mode is jokey small talk over something that actually mattered.\n\nMindset: match the weight. If it was heavy, one honest sentence beats a light one.",
       inputs: [
         { q: "You have both come out of a meeting where bad news was announced.", a: "\"That was a lot to take in. Are you alright?\" [Mention a Shared Experience]", bundle: 'pro' },

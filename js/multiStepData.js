@@ -3408,20 +3408,20 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "You need Thursday off at short notice and one colleague is the obvious person to ask, though they are busy too.",
           steps: [
-            { front: "Ask Instead of Hinting — you have been mentioning Thursday for two days.", back: "\"Could you take my Thursday meeting?\"" },
-            { front: "Make It Specific — they say, \"Depends what's involved.\"", back: "\"It's the ten o'clock, one hour, and the slides are already done.\"" },
-            { front: "Give One Short Reason — they say, \"Why can't you do it?\"", back: "\"I'm at a funeral.\"" },
-            { front: "Leave Room to Refuse — they say, \"Right. Let me think.\"", back: "\"Of course — and say if it doesn't work. I'll ask Petra otherwise.\"" },
+            { front: "Ask Instead of Hinting — you have been mentioning Thursday for two days.", back: "\"Could you take my Thursday meeting?\"", guideFront: "Turn the hint into a request when...", guideBack: "An actual request, not a complaint" },
+            { front: "Make It Specific — they say, \"Depends what's involved.\"", back: "\"It's the ten o'clock, one hour, and the slides are already done.\"", guideFront: "Say what, when and how big when...", guideBack: "A request with a shape" },
+            { front: "Give One Short Reason — they say, \"Why can't you do it?\"", back: "\"I'm at a funeral.\"", guideFront: "Add one sentence saying why when...", guideBack: "A single reason, then a full stop" },
+            { front: "Leave Room to Refuse — they say, \"Right. Let me think.\"", back: "\"Of course — and say if it doesn't work. I'll ask Petra otherwise.\"", guideFront: "Say the exit out loud when...", guideBack: "The way out, offered" },
           ]
         },
         {
           bundle: 'pro',
           situation: "You are moving a few things on Saturday and one friend has a car, but they have helped you twice already this year.",
           steps: [
-            { front: "Ask Instead of Hinting — you have been talking about the move for ten minutes.", back: "\"Could you help me shift a wardrobe on Saturday?\"" },
-            { front: "Make It Specific — they say, \"How long are we talking?\"", back: "\"Two hours, morning, and it's one van load.\"" },
-            { front: "Give One Short Reason — they say, \"Why not the removal people?\"", back: "\"It's the one thing that wouldn't fit in the van.\"" },
-            { front: "Leave Room to Refuse — they say, \"I might have something on.\"", back: "\"Then don't move it. Honestly, no is fine — I'd rather know than have you rearrange things.\"" },
+            { front: "Ask Instead of Hinting — you have been talking about the move for ten minutes.", back: "\"Could you help me shift a wardrobe on Saturday?\"", guideFront: "Turn the hint into a request when...", guideBack: "An actual request, not a complaint" },
+            { front: "Make It Specific — they say, \"How long are we talking?\"", back: "\"Two hours, morning, and it's one van load.\"", guideFront: "Say what, when and how big when...", guideBack: "A request with a shape" },
+            { front: "Give One Short Reason — they say, \"Why not the removal people?\"", back: "\"It's the one thing that wouldn't fit in the van.\"", guideFront: "Add one sentence saying why when...", guideBack: "A single reason, then a full stop" },
+            { front: "Leave Room to Refuse — they say, \"I might have something on.\"", back: "\"Then don't move it. Honestly, no is fine — I'd rather know than have you rearrange things.\"", guideFront: "Say the exit out loud when...", guideBack: "The way out, offered" },
           ]
         },
       ]
@@ -3436,20 +3436,20 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "You have been stuck on the same task since yesterday morning and have told nobody.",
           steps: [
-            { front: "Ask for Help — a colleague asks how it is going.", back: "\"Badly, honestly. I'm stuck and I've been stuck a while.\"" },
-            { front: "Make It Specific — they say, \"Stuck on what?\"", back: "\"The export step. Could you sit with me for ten minutes and watch me do it?\"" },
-            { front: "Leave Room to Refuse — they say, \"I'm quite buried today.\"", back: "\"Then not today. Tomorrow works, or I'll ask Jonas.\"" },
-            { front: "Take a No Well — they say, \"Ask Jonas, he built it.\"", back: "\"Good idea — thanks. That's more useful than an hour of me guessing.\"" },
+            { front: "Ask for Help — a colleague asks how it is going.", back: "\"Badly, honestly. I'm stuck and I've been stuck a while.\"", guideFront: "Say you are stuck, to one person when...", guideBack: "A named ask for help" },
+            { front: "Make It Specific — they say, \"Stuck on what?\"", back: "\"The export step. Could you sit with me for ten minutes and watch me do it?\"", guideFront: "Say what, when and how big when...", guideBack: "A request with a shape" },
+            { front: "Leave Room to Refuse — they say, \"I'm quite buried today.\"", back: "\"Then not today. Tomorrow works, or I'll ask Jonas.\"", guideFront: "Say the exit out loud when...", guideBack: "The way out, offered" },
+            { front: "Take a No Well — they say, \"Ask Jonas, he built it.\"", back: "\"Good idea — thanks. That's more useful than an hour of me guessing.\"", guideFront: "Accept it in one sentence when...", guideBack: "A clean acceptance" },
           ]
         },
         {
           bundle: 'pro',
           situation: "Things have been hard for a couple of months and you have been saying you are fine.",
           steps: [
-            { front: "Ask for Help — they ask how you have been.", back: "\"Not great. I've been saying fine for about two months and it isn't true.\"" },
-            { front: "Make It Specific — they say, \"What can I do?\"", back: "\"Could you call me on Sunday evenings? That's the worst bit of the week.\"" },
-            { front: "Leave Room to Refuse — they say, \"Sundays are a bit chaotic here.\"", back: "\"Then say so — I'd rather have a real day than a promised one.\"" },
-            { front: "Take a No Well — they say, \"Could we do Mondays instead?\"", back: "\"Mondays is better than nothing by miles. Thank you.\"" },
+            { front: "Ask for Help — they ask how you have been.", back: "\"Not great. I've been saying fine for about two months and it isn't true.\"", guideFront: "Say you are stuck, to one person when...", guideBack: "A named ask for help" },
+            { front: "Make It Specific — they say, \"What can I do?\"", back: "\"Could you call me on Sunday evenings? That's the worst bit of the week.\"", guideFront: "Say what, when and how big when...", guideBack: "A request with a shape" },
+            { front: "Leave Room to Refuse — they say, \"Sundays are a bit chaotic here.\"", back: "\"Then say so — I'd rather have a real day than a promised one.\"", guideFront: "Say the exit out loud when...", guideBack: "The way out, offered" },
+            { front: "Take a No Well — they say, \"Could we do Mondays instead?\"", back: "\"Mondays is better than nothing by miles. Thank you.\"", guideFront: "Accept it in one sentence when...", guideBack: "A clean acceptance" },
           ]
         },
       ]
@@ -3464,20 +3464,20 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "You asked a colleague something on Monday and it is now Thursday with no reply.",
           steps: [
-            { front: "Follow Up Once — you pass them in the kitchen.", back: "\"Bringing this back up — did you see my message about the Friday slot?\"" },
-            { front: "Make It Specific — they say, \"I saw it, I've not had a chance to think.\"", back: "\"It's one hour on Friday afternoon and nothing to prepare.\"" },
-            { front: "Leave Room to Refuse — they say, \"It's a bad week, to be honest.\"", back: "\"Then say no and I'll stop asking. I'd genuinely rather that.\"" },
-            { front: "Take a No Well — they say, \"It's a no, sorry.\"", back: "\"No problem at all. Thanks for telling me straight.\"" },
+            { front: "Follow Up Once — you pass them in the kitchen.", back: "\"Bringing this back up — did you see my message about the Friday slot?\"", guideFront: "Ask again, plainly, one time when...", guideBack: "The same question, second time" },
+            { front: "Make It Specific — they say, \"I saw it, I've not had a chance to think.\"", back: "\"It's one hour on Friday afternoon and nothing to prepare.\"", guideFront: "Say what, when and how big when...", guideBack: "A request with a shape" },
+            { front: "Leave Room to Refuse — they say, \"It's a bad week, to be honest.\"", back: "\"Then say no and I'll stop asking. I'd genuinely rather that.\"", guideFront: "Say the exit out loud when...", guideBack: "The way out, offered" },
+            { front: "Take a No Well — they say, \"It's a no, sorry.\"", back: "\"No problem at all. Thanks for telling me straight.\"", guideFront: "Accept it in one sentence when...", guideBack: "A clean acceptance" },
           ]
         },
         {
           bundle: 'pro',
           situation: "You asked a friend about something three weeks ago and every reply has been a version of \"soon\".",
           steps: [
-            { front: "Follow Up Once — they say, \"I've still not got round to it.\"", back: "\"That's alright. Can I get an actual answer, though, rather than another soon?\"" },
-            { front: "Make It Specific — they say, \"What is it you need again?\"", back: "\"An hour, any evening next week, to go through the photos.\"" },
-            { front: "Leave Room to Refuse — they say, \"I don't know what my week looks like.\"", back: "\"Then a no is completely fine. I'll do it myself, it just takes longer.\"" },
-            { front: "Take a No Well — they say, \"Let's say no for now.\"", back: "\"Fair enough — thanks for being straight rather than leaving it hanging.\"" },
+            { front: "Follow Up Once — they say, \"I've still not got round to it.\"", back: "\"That's alright. Can I get an actual answer, though, rather than another soon?\"", guideFront: "Ask again, plainly, one time when...", guideBack: "The same question, second time" },
+            { front: "Make It Specific — they say, \"What is it you need again?\"", back: "\"An hour, any evening next week, to go through the photos.\"", guideFront: "Say what, when and how big when...", guideBack: "A request with a shape" },
+            { front: "Leave Room to Refuse — they say, \"I don't know what my week looks like.\"", back: "\"Then a no is completely fine. I'll do it myself, it just takes longer.\"", guideFront: "Say the exit out loud when...", guideBack: "The way out, offered" },
+            { front: "Take a No Well — they say, \"Let's say no for now.\"", back: "\"Fair enough — thanks for being straight rather than leaving it hanging.\"", guideFront: "Accept it in one sentence when...", guideBack: "A clean acceptance" },
           ]
         },
       ]
@@ -4929,78 +4929,78 @@ const multiStepCollections = {
   givingcounterexamples: [
     {
       name: "Concede, Except, Stop",
-      guideFront: "They have made the claim. Take the \"always\" out without taking the point away.",
-      guideBack: "A line you could say at this step.",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
       description: "The whole move in three beats: agree with the general case, give one exception, and then stop talking. The third step is the one people drop, and dropping it is what turns a counter-example into an argument. Steps: 1) Concede — say the claim is usually right, 2) Except — one case where it was not, 3) Stop — let them do something with it.\n\nThe shape of the whole thing:\n1. \"Exercise usually does help, yeah.\"\n2. \"I trained hard all last week and still felt awful.\"\n3. (nothing — let them answer)\n\nWhy this order: conceding first means the exception arrives as information rather than as opposition, and stopping afterwards leaves them room to adjust their own claim, which they will do far more readily than they will accept yours.\n\nMindset: the silence after the exception is doing work. Fill it with a second example and you have started arguing.",
       inputs: [
         {
           bundle: 'pro',
           situation: "A friend says exercise always makes you happier.",
           steps: [
-            { front: "Step 1 · Concede — agree with the general case", back: "\"It usually does, honestly.\"" },
-            { front: "Step 2 · Except — one case, yours", back: "\"I trained hard all last week and felt flat the whole time.\"" },
-            { front: "Step 3 · Stop — leave it with them", back: "\"Anyway. Might just have been the week.\"" },
+            { front: "Step 1 · Concede — agree with the general case", back: "\"It usually does, honestly.\"", guideFront: "Agree with the general case when...", guideBack: "The concession, said plainly" },
+            { front: "Step 2 · Except — one case, yours", back: "\"I trained hard all last week and felt flat the whole time.\"", guideFront: "Give the one case that does not fit when...", guideBack: "The exception, on its own" },
+            { front: "Step 3 · Stop — leave it with them", back: "\"Anyway. Might just have been the week.\"", guideFront: "Leave it with them when...", guideBack: "A closing line, and no more" },
           ]
         },
         {
           bundle: 'pro',
           situation: "A colleague says nobody uses the old system any more.",
           steps: [
-            { front: "Step 1 · Concede — the direction is right", back: "\"It's definitely on the way out.\"" },
-            { front: "Step 2 · Except — a real number", back: "\"I counted Monday, though. Eleven people opened it that week.\"" },
-            { front: "Step 3 · Stop — hand the decision back", back: "\"So it's eleven people we'd need to move.\"" },
+            { front: "Step 1 · Concede — the direction is right", back: "\"It's definitely on the way out.\"", guideFront: "Agree with the general case when...", guideBack: "The concession, said plainly" },
+            { front: "Step 2 · Except — a real number", back: "\"I counted Monday, though. Eleven people opened it that week.\"", guideFront: "Give the one case that does not fit when...", guideBack: "The exception, on its own" },
+            { front: "Step 3 · Stop — hand the decision back", back: "\"So it's eleven people we'd need to move.\"", guideFront: "Leave it with them when...", guideBack: "A closing line, and no more" },
           ]
         },
       ]
     },
     {
       name: "When They Defend the Rule",
-      guideFront: "They have made the claim. Take the \"always\" out without taking the point away.",
-      guideBack: "A line you could say at this step.",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
       description: "They have answered your exception by explaining it away — \"that's different\", \"that's one person\". The move is to agree that it is one case, and to say what it means, which is narrower than they think you meant. Steps: 1) Agree it is one case, 2) Say what one case shows, 3) Offer the smaller version of their claim.\n\nThe shape of the whole thing:\n1. \"You're right, it's one person.\"\n2. \"One is enough to make it 'usually' rather than 'always', though.\"\n3. \"Which is probably what we both actually think.\"\n\nWhy this order: an exception does not disprove a rule, and pretending it does is what loses the argument. Conceding that immediately, and then naming what it does show, gets you the narrower claim, which was all you wanted.\n\nMindset: you are not trying to knock the claim over. You are trying to get the word \"always\" out of it, and then you are finished.",
       inputs: [
         {
           bundle: 'pro',
           situation: "You gave a counter-example and they said \"that's just one person\".",
           steps: [
-            { front: "Step 1 · Agree — concede the size", back: "\"It is just one, you're right.\"" },
-            { front: "Step 2 · What it shows — narrow, not nothing", back: "\"It makes it a strong tendency rather than a rule.\"" },
-            { front: "Step 3 · Offer the smaller claim", back: "\"'Most people' I'd agree with completely.\"" },
+            { front: "Step 1 · Agree — concede the size", back: "\"It is just one, you're right.\"", guideFront: "Grant the point they are defending when...", guideBack: "The concession, said plainly" },
+            { front: "Step 2 · What it shows — narrow, not nothing", back: "\"It makes it a strong tendency rather than a rule.\"", guideFront: "Say what the exception narrows when...", guideBack: "What the claim becomes" },
+            { front: "Step 3 · Offer the smaller claim", back: "\"'Most people' I'd agree with completely.\"", guideFront: "Offer the version you would agree with when...", guideBack: "The narrower claim, offered" },
           ]
         },
         {
           bundle: 'pro',
           situation: "They say your example is a special case that does not count.",
           steps: [
-            { front: "Step 1 · Agree — it is unusual", back: "\"It is unusual, I'll give you that.\"" },
-            { front: "Step 2 · What it shows — the rule has an edge", back: "\"It means there's a group it doesn't cover, and I think it's bigger than one.\"" },
-            { front: "Step 3 · Offer the smaller claim", back: "\"Would you go with 'for most people, most of the time'?\"" },
+            { front: "Step 1 · Agree — it is unusual", back: "\"It is unusual, I'll give you that.\"", guideFront: "Grant the point they are defending when...", guideBack: "The concession, said plainly" },
+            { front: "Step 2 · What it shows — the rule has an edge", back: "\"It means there's a group it doesn't cover, and I think it's bigger than one.\"", guideFront: "Say what the exception narrows when...", guideBack: "What the claim becomes" },
+            { front: "Step 3 · Offer the smaller claim", back: "\"Would you go with 'for most people, most of the time'?\"", guideFront: "Offer the version you would agree with when...", guideBack: "The narrower claim, offered" },
           ]
         },
       ]
     },
     {
       name: "When You Do Not Have One",
-      guideFront: "They have made the claim. Take the \"always\" out without taking the point away.",
-      guideBack: "A line you could say at this step.",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
       description: "Something in the claim is too broad but you have no case to hand. Rather than inventing one, say what you doubt and turn it into a question — which often produces the counter-example from them. Steps: 1) Name the part you doubt, 2) Say you have no example, 3) Ask.\n\nThe shape of the whole thing:\n1. \"I'd believe that for most people.\"\n2. \"I've got no case to point at, though.\"\n3. \"Can you think of anyone it hasn't been true for?\"\n\nWhy this order: admitting you have nothing costs almost nothing and buys a great deal of credibility, and the question does the work an invented example would have done badly.\n\nMindset: \"I don't have an example\" is a perfectly good sentence. An invented one is the only move here that cannot be repaired.",
       inputs: [
         {
           bundle: 'pro',
           situation: "A sweeping claim you doubt, and nothing concrete comes to mind.",
           steps: [
-            { front: "Step 1 · Name the doubt", back: "\"I'd believe that for most people, not for everyone.\"" },
-            { front: "Step 2 · Say you have nothing", back: "\"I can't point at a case, to be fair.\"" },
-            { front: "Step 3 · Ask", back: "\"Can you think of anyone it hasn't been true for?\"" },
+            { front: "Step 1 · Name the doubt", back: "\"I'd believe that for most people, not for everyone.\"", guideFront: "Say plainly that you are not sure when...", guideBack: "An honest doubt, without a case" },
+            { front: "Step 2 · Say you have nothing", back: "\"I can't point at a case, to be fair.\"", guideFront: "Admit you have no example when...", guideBack: "An admission, not a retreat" },
+            { front: "Step 3 · Ask", back: "\"Can you think of anyone it hasn't been true for?\"", guideFront: "Hand the question back to them when...", guideBack: "A question, not a verdict" },
           ]
         },
         {
           bundle: 'pro',
           situation: "A number is quoted at you and you doubt it but have nothing to put against it.",
           steps: [
-            { front: "Step 1 · Name the doubt", back: "\"That figure sounds higher than I'd have guessed.\"" },
-            { front: "Step 2 · Say you have nothing", back: "\"I've got no counter-number, to be clear.\"" },
-            { front: "Step 3 · Ask", back: "\"Where's it from? I'd like to look at the same thing you're looking at.\"" },
+            { front: "Step 1 · Name the doubt", back: "\"That figure sounds higher than I'd have guessed.\"", guideFront: "Say plainly that you are not sure when...", guideBack: "An honest doubt, without a case" },
+            { front: "Step 2 · Say you have nothing", back: "\"I've got no counter-number, to be clear.\"", guideFront: "Admit you have no example when...", guideBack: "An admission, not a retreat" },
+            { front: "Step 3 · Ask", back: "\"Where's it from? I'd like to look at the same thing you're looking at.\"", guideFront: "Hand the question back to them when...", guideBack: "A question, not a verdict" },
           ]
         },
       ]
@@ -6790,8 +6790,8 @@ const multiStepCollections = {
   startingconversations2: [
     {
       name: "From a Favour Into a Conversation",
-      guideFront: "What they gave back, and the opener to use next.",
-      guideBack: "One way it could sound.",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
       description: "A request or an offer gets you talking, but it also ends by itself: the favour is done, they say no problem, and the exchange is over unless you do something with it.\n\nThis combo practises the second move — turning a completed small transaction into an actual conversation, usually by picking up the situation or something they said while helping.\n\nEach step front carries what they said back, and names the opener to use next.\n\nMindset: the favour buys you about ten seconds of goodwill. Use them.",
       inputs: [
         {
@@ -6799,9 +6799,9 @@ const multiStepCollections = {
           situation: "You are on a machine you have not used before and cannot work out the weight pin. Someone is on the machine next to you, between sets.",
           steps: [
             { front: "Step 1 · Ask for Help — you genuinely do not know how it works, so ask.", back: "\"Sorry — do you know how you change the weight on this one?\"", guideFront: "A real request. Small enough that yes is easy." },
-            { front: "Step 2 · Mention a Shared Experience — they lean over, show you, and say, \"It's a stiff one, that.\"", back: "\"Cheers. I've been standing here looking at it for a while, if I'm honest.\"" },
-            { front: "Step 3 · Ask for Help — they laugh and say, \"We've all done it.\"", back: "\"While I've got you — is there a trick to the one behind you as well?\"" },
-            { front: "Step 4 · Pick Up a Shared Thread — they say, \"That one's easier. Same pin, other side.\"", back: "\"Good. I'm here Tuesdays, so I'll probably be asking you again.\"" },
+            { front: "Step 2 · Mention a Shared Experience — they lean over, show you, and say, \"It's a stiff one, that.\"", back: "\"Cheers. I've been standing here looking at it for a while, if I'm honest.\"", guideFront: "Talk about what you both just had when...", guideBack: "A remark about the thing you shared" },
+            { front: "Step 3 · Ask for Help — they laugh and say, \"We've all done it.\"", back: "\"While I've got you — is there a trick to the one behind you as well?\"", guideFront: "Ask them for something small when...", guideBack: "A small request" },
+            { front: "Step 4 · Pick Up a Shared Thread — they say, \"That one's easier. Same pin, other side.\"", back: "\"Good. I'm here Tuesdays, so I'll probably be asking you again.\"", guideFront: "Ask about the thing already running when...", guideBack: "A question about something ongoing" },
           ]
         },
         {
@@ -6809,17 +6809,17 @@ const multiStepCollections = {
           situation: "You are outside a venue. A long queue has formed at the main door, and you know there is a second entrance round the side. Someone joins the line behind you.",
           steps: [
             { front: "Step 1 · Offer Something Useful — you know something they would want to know.", back: "\"There's a second door round the side, if you'd rather. Hardly anyone's found it.\"", guideFront: "Give it and let go. Thanks is a complete outcome." },
-            { front: "Step 2 · Mention a Shared Experience — they say, \"Oh — cheers. Are you going round?\"", back: "\"I might. I did this last year and stood here forty minutes.\"" },
-            { front: "Step 3 · Offer Something Useful — they say, \"Forty minutes? God.\"", back: "\"They also open the bar before the doors, so the queue in there is worse. Go straight through.\"" },
-            { front: "Step 4 · Pick Up a Shared Thread — they say, \"You've done this properly, haven't you.\"", back: "\"Third time. Have you been before, or is this the first?\"" },
+            { front: "Step 2 · Mention a Shared Experience — they say, \"Oh — cheers. Are you going round?\"", back: "\"I might. I did this last year and stood here forty minutes.\"", guideFront: "Talk about what you both just had when...", guideBack: "A remark about the thing you shared" },
+            { front: "Step 3 · Offer Something Useful — they say, \"Forty minutes? God.\"", back: "\"They also open the bar before the doors, so the queue in there is worse. Go straight through.\"", guideFront: "Give them something they can use when...", guideBack: "A piece of information" },
+            { front: "Step 4 · Pick Up a Shared Thread — they say, \"You've done this properly, haven't you.\"", back: "\"Third time. Have you been before, or is this the first?\"", guideFront: "Ask about the thing already running when...", guideBack: "A question about something ongoing" },
           ]
         },
       ]
     },
     {
       name: "Picking Someone Back Up",
-      guideFront: "What they gave back, and the opener to use next.",
-      guideBack: "One way it could sound.",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
       description: "With someone you already half know, the opening is not the hard part — remembering is. The combo drills the pattern of coming back to something specific and then following where their answer goes.\n\nThe first step is always the thread, because it is the strongest opener available with someone you know a little. After that, what they give you decides.\n\nMindset: the specific question is the whole move. \"How's things\" and \"how did Thursday go\" are not the same opener.",
       inputs: [
         {
@@ -6827,9 +6827,9 @@ const multiStepCollections = {
           situation: "A colleague you speak to occasionally is making tea in the kitchen. Last time you spoke they were about to hand in something big.",
           steps: [
             { front: "Step 1 · Pick Up a Shared Thread — you remember what they were in the middle of, so use it.", back: "\"Did the report get finished in the end? You were nearly there last time.\"", guideFront: "Specific beats general. Name the thing." },
-            { front: "Step 2 · Mention a Shared Experience — they say, \"Handed it in Friday. Barely.\"", back: "\"You had the same week as me, then. Mine went in about an hour before the deadline.\"" },
-            { front: "Step 3 · Ask for Help — they say, \"Everyone's had a horrible month.\"", back: "\"Actually, while you're here — do you know who signs these off now? I asked two people and got two answers.\"" },
-            { front: "Step 4 · Offer Something Useful — they say, \"It's Priya now. Changed in January.\"", back: "\"Right, thanks. And if you're doing another one — the template's changed, the old one gets bounced back.\"" },
+            { front: "Step 2 · Mention a Shared Experience — they say, \"Handed it in Friday. Barely.\"", back: "\"You had the same week as me, then. Mine went in about an hour before the deadline.\"", guideFront: "Talk about what you both just had when...", guideBack: "A remark about the thing you shared" },
+            { front: "Step 3 · Ask for Help — they say, \"Everyone's had a horrible month.\"", back: "\"Actually, while you're here — do you know who signs these off now? I asked two people and got two answers.\"", guideFront: "Ask them for something small when...", guideBack: "A small request" },
+            { front: "Step 4 · Offer Something Useful — they say, \"It's Priya now. Changed in January.\"", back: "\"Right, thanks. And if you're doing another one — the template's changed, the old one gets bounced back.\"", guideFront: "Give them something they can use when...", guideBack: "A piece of information" },
           ]
         },
         {
@@ -6837,17 +6837,17 @@ const multiStepCollections = {
           situation: "You are putting the bins out. A neighbour you speak to occasionally comes out at the same time. Last time you spoke their car was in the garage.",
           steps: [
             { front: "Step 1 · Pick Up a Shared Thread — something was in progress last time, so ask about it.", back: "\"Did you get the car back in the end?\"", guideFront: "Specific beats general. Name the thing." },
-            { front: "Step 2 · Mention a Shared Experience — they say, \"Two weeks and four hundred quid. Don't ask.\"", back: "\"That's the going rate, isn't it. Mine was the same last spring.\"" },
-            { front: "Step 3 · Offer Something Useful — they say, \"Is there anywhere better round here?\"", back: "\"There's a place on the industrial estate. Half what I paid at the main dealer, and quicker.\"" },
-            { front: "Step 4 · Pick Up a Shared Thread — they say, \"I'll write that down.\"", back: "\"Do. And how's the extension going? Is that still happening?\"" },
+            { front: "Step 2 · Mention a Shared Experience — they say, \"Two weeks and four hundred quid. Don't ask.\"", back: "\"That's the going rate, isn't it. Mine was the same last spring.\"", guideFront: "Talk about what you both just had when...", guideBack: "A remark about the thing you shared" },
+            { front: "Step 3 · Offer Something Useful — they say, \"Is there anywhere better round here?\"", back: "\"There's a place on the industrial estate. Half what I paid at the main dealer, and quicker.\"", guideFront: "Give them something they can use when...", guideBack: "A piece of information" },
+            { front: "Step 4 · Pick Up a Shared Thread — they say, \"I'll write that down.\"", back: "\"Do. And how's the extension going? Is that still happening?\"", guideFront: "Ask about the thing already running when...", guideBack: "A question about something ongoing" },
           ]
         },
       ]
     },
     {
       name: "When the Favour Is All They Wanted",
-      guideFront: "What they gave back, and the opener to use next.",
-      guideBack: "One way it could sound.",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
       description: "Not every helpful exchange is an opening. Sometimes a person answers your question, or takes your tip, and quite clearly wants to get on with their day.\n\nThis combo practises reading that and stopping well — which matters more here than in the other openers, because a request creates a small obligation and pushing past a polite answer turns a favour into an imposition.\n\nBoth scenarios end with a clean exit rather than a conversation. That is a successful outcome, not a failed one.\n\nMindset: they helped you. Do not charge them interest.",
       inputs: [
         {
@@ -6855,7 +6855,7 @@ const multiStepCollections = {
           situation: "You cannot find something in a large shop. A member of staff is restocking a shelf nearby, working quickly.",
           steps: [
             { front: "Step 1 · Ask for Help — you need to know where something is.", back: "\"Sorry — do you know where the batteries are?\"", guideFront: "A real request. Keep it small." },
-            { front: "Step 2 · Mention a Shared Experience — they point and say, \"Aisle six, bottom shelf.\"", back: "\"Thanks. I've walked past it twice, obviously.\"" },
+            { front: "Step 2 · Mention a Shared Experience — they point and say, \"Aisle six, bottom shelf.\"", back: "\"Thanks. I've walked past it twice, obviously.\"", guideFront: "Talk about what you both just had when...", guideBack: "A remark about the thing you shared" },
             { front: "Step 3 · Read it and stop — they say, \"Everyone does,\" and turn back to the shelf.", back: "\"Cheers. Have a good one.\"", guideFront: "They answered and went back to work. That is the whole exchange." },
           ]
         },
@@ -6864,7 +6864,7 @@ const multiStepCollections = {
           situation: "You are waiting for a train. Someone is standing at the far end of the platform where the train does not stop today.",
           steps: [
             { front: "Step 1 · Offer Something Useful — they are about to be in the wrong place.", back: "\"It's only four carriages today — it stops down that end.\"", guideFront: "Give it and let go." },
-            { front: "Step 2 · Mention a Shared Experience — they say, \"Oh, thanks,\" and start walking down.", back: "\"They've been doing it all week. Caught me out on Monday.\"" },
+            { front: "Step 2 · Mention a Shared Experience — they say, \"Oh, thanks,\" and start walking down.", back: "\"They've been doing it all week. Caught me out on Monday.\"", guideFront: "Talk about what you both just had when...", guideBack: "A remark about the thing you shared" },
             { front: "Step 3 · Read it and stop — they say, \"Right, thanks again,\" and put their headphones back in.", back: "\"No problem.\"", guideFront: "Headphones back in is an answer. Take it warmly." },
           ]
         },

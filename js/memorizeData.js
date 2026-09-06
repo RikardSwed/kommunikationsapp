@@ -4679,8 +4679,6 @@ const memorizeCollections = {
   givingcounterexamples: [
     {
       name: "Core Idea",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The concept behind counter-examples and the five types.",
       cards: [
         { q: "What is a counter-example?", a: "A case that shows a general statement is not always true — it takes the word \"always\" out without taking the claim away.", bundle: 'free' },
@@ -4693,8 +4691,6 @@ const memorizeCollections = {
     },
     {
       name: "Your Own Exception",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The theory behind the personal type.",
       cards: [
         { q: "What is a personal counter-example?", a: "The time it did not work that way for you — one occasion, told small.", bundle: 'free' },
@@ -4707,8 +4703,6 @@ const memorizeCollections = {
     },
     {
       name: "The One You Have Seen",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The theory behind the observed type.",
       cards: [
         { q: "What is an observed counter-example?", a: "A case you have watched happen — a person, a place, a situation — rather than one from your own life.", bundle: 'free' },
@@ -4721,8 +4715,6 @@ const memorizeCollections = {
     },
     {
       name: "Where It Would Break",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The theory behind the imagined type.",
       cards: [
         { q: "What is an imagined counter-example?", a: "A case you invent to test whether the rule holds — \"say someone works nights\".", bundle: 'free' },
@@ -4735,8 +4727,6 @@ const memorizeCollections = {
     },
     {
       name: "The Known Exception",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The theory behind the shared type.",
       cards: [
         { q: "What is a known counter-example?", a: "A case you both already recognise — a public event, a well-known person, a familiar story.", bundle: 'free' },
@@ -4749,8 +4739,6 @@ const memorizeCollections = {
     },
     {
       name: "What the Numbers Say",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The theory behind the statistical type.",
       cards: [
         { q: "When is a number safe to use as a counter-example?", a: "When you actually know it and can say where it came from.", bundle: 'free' },
@@ -6340,8 +6328,6 @@ const memorizeCollections = {
   startingconversations2: [
     {
       name: "Core Idea",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The shape of the pack: four openers that use common ground, and what each one needs to be true.",
       cards: [
         { q: "What are the four openers in this pack?", a: "Ask for help, offer something useful, mention a shared experience, pick up a shared thread.", bundle: 'free' },
@@ -6354,8 +6340,6 @@ const memorizeCollections = {
     },
     {
       name: "Ask for Help",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The opener that starts with a task instead of a topic.",
       cards: [
         { q: "Why does asking for a small favour work as an opener?", a: "People like being asked — it gives them a role that is easier than being a stranger talked at.", bundle: 'free' },
@@ -6368,8 +6352,6 @@ const memorizeCollections = {
     },
     {
       name: "Offer Something Useful",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The opener that gives instead of asking.",
       cards: [
         { q: "What does this opener do that the others do not?", a: "It gives the other person something, so there is nothing for them to weigh up.", bundle: 'free' },
@@ -6382,8 +6364,6 @@ const memorizeCollections = {
     },
     {
       name: "Mention a Shared Experience",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The most reliable opener between strangers who have just done the same thing.",
       cards: [
         { q: "Why does a shared experience need no introduction?", a: "They know exactly what you mean and already have opinions about it.", bundle: 'free' },
@@ -6396,8 +6376,6 @@ const memorizeCollections = {
     },
     {
       name: "Pick Up a Shared Thread",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The opener for people you already know a little.",
       cards: [
         { q: "What does this opener prove that no other one does?", a: "That you remembered.", bundle: 'free' },
