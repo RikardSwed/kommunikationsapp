@@ -1691,6 +1691,9 @@ const mindsetCollections = {
         { q: "There's nothing in it for them, so I can't use this.", a: "Then say that. \"I'm asking a favour\" is honest and works.", bundle: 'pro' },
         { q: "It feels manipulative to think about what they want.", a: "It's the opposite. Ignoring what they want is the manipulative version.", bundle: 'pro' },
         { q: "I don't know what they'd get out of it.", a: "Then ask. That question alone often improves the proposal.", bundle: 'pro' },
+        { q: "I'd have to guess what matters to them.", a: "Then ask. \"What would make this worth doing from where you sit?\"", bundle: 'pro' },
+        { q: "The benefit to them is small compared to the point.", a: "Small and theirs beats large and yours. Say the small one.", bundle: 'pro' },
+        { q: "They'd see straight through it.", a: "Only if it isn't true. Say a real benefit and there's nothing to see through.", bundle: 'pro' },
       ]
     },
     {
@@ -1704,6 +1707,9 @@ const mindsetCollections = {
         { q: "It's not that bad, so I can't argue this.", a: "Small and constant is a real cost. Say the size honestly and let it stand.", bundle: 'pro' },
         { q: "Pointing out the cost sounds like criticising them.", a: "Then name where it lands rather than who caused it.", bundle: 'pro' },
         { q: "They already know it's a bit annoying.", a: "Knowing it's annoying isn't the same as knowing what it adds up to.", bundle: 'pro' },
+        { q: "Naming the cost sounds like a threat.", a: "A threat is what you'll do. A cost is what's already happening.", bundle: 'pro' },
+        { q: "The cost is mostly to me, not to them.", a: "Then say that plainly. Your cost is a real fact and it's allowed to matter.", bundle: 'pro' },
+        { q: "I can't put a number on it.", a: "Then describe a week. \"Two mornings, every week\" is a cost without a number.", bundle: 'pro' },
       ]
     },
     {
@@ -1717,6 +1723,9 @@ const mindsetCollections = {
         { q: "If I stop they'll think I've run out.", a: "They'll think you said your piece. That's a stronger position.", bundle: 'pro' },
         { q: "Silence after one case feels thin.", a: "That silence is them considering it. Let it happen.", bundle: 'pro' },
         { q: "I want to cover every angle.", a: "Cover the one they're standing on. They'll tell you which it is.", bundle: 'pro' },
+        { q: "They asked a question, so I gave them three more reasons.", a: "They asked one question. Answer that one and stop.", bundle: 'pro' },
+        { q: "My best argument is the third one.", a: "Then lead with it. Nobody is obliged to wait through two weaker ones.", bundle: 'pro' },
+        { q: "The silence after my case is unbearable.", a: "That's them thinking. Filling it is how a good case turns into a pitch.", bundle: 'pro' },
       ]
     },
     {
@@ -1730,6 +1739,9 @@ const mindsetCollections = {
         { q: "I know what's best here.", a: "Possibly. They still get to decide, and pretending otherwise is the line.", bundle: 'pro' },
         { q: "A number would help, and roughly right is close enough.", a: "Roughly right is wrong when it's checked, and it takes the rest with it.", bundle: 'pro' },
         { q: "I'd be embarrassed if they knew why I put it that way.", a: "That's your answer. Say the version you wouldn't be embarrassed about.", bundle: 'pro' },
+        { q: "I left out the part that weakens my case.", a: "Then you've won something you'd have to defend later. Put it back in.", bundle: 'pro' },
+        { q: "They'd never agree if they knew the full picture.", a: "That's your answer about whether to do it this way.", bundle: 'pro' },
+        { q: "A bit of pressure would get this over the line.", a: "And it would be over the line. Make the case and let them decide.", bundle: 'pro' },
       ]
     },
   ],
@@ -1907,6 +1919,9 @@ const mindsetCollections = {
         { q: "Someone has to call this out.", a: "Sometimes. Not necessarily now, and not necessarily in front of everyone.", bundle: 'pro' },
         { q: "I should show that I noticed.", a: "You can notice without responding. Those are different things.", bundle: 'pro' },
         { q: "They'll just keep doing it.", a: "Then it's a pattern, and a pattern gets one proper conversation rather than four small ones.", bundle: 'pro' },
+        { q: "Not reacting means they win.", a: "There's nothing to win. The remark only works if it gets a rise.", bundle: 'pro' },
+        { q: "I reacted and now I feel stupid about it.", a: "Everyone does sometimes. The next one is a fresh chance to not.", bundle: 'pro' },
+        { q: "Other people are watching to see what I do.", a: "They're watching whether you stay steady. That's the only thing being judged.", bundle: 'pro' },
       ]
     },
     {
@@ -1920,6 +1935,9 @@ const mindsetCollections = {
         { q: "I should deal with each one as it comes.", a: "That's their mood becoming your job. Choose the ones that matter.", bundle: 'pro' },
         { q: "Not saying anything feels like avoiding it.", a: "Only if you didn't decide. Deciding is the difference.", bundle: 'pro' },
         { q: "They'll think I didn't notice.", a: "Almost certainly they'll think you noticed and weren't bothered.", bundle: 'pro' },
+        { q: "There have been four of these this week.", a: "Then pick the one worth naming and let the other three go. You can't take them all.", bundle: 'pro' },
+        { q: "Letting it go feels like a decision I'll regret.", a: "Decide it out loud to yourself. A chosen silence sits differently from a swallowed one.", bundle: 'pro' },
+        { q: "If I let this one pass I'll have to let them all pass.", a: "No. Choosing is the skill, and it works one remark at a time.", bundle: 'pro' },
       ]
     },
     {
@@ -1933,6 +1951,9 @@ const mindsetCollections = {
         { q: "Saying it directly feels like too big a deal.", a: "It's usually smaller than the hint. Hints get discussed for days.", bundle: 'pro' },
         { q: "If I say it straight it'll cause an argument.", a: "The indirect version causes a longer one, later, about something else.", bundle: 'pro' },
         { q: "I did the sighing thing again.", a: "Go back and say the actual sentence. It's not too late to be direct.", bundle: 'pro' },
+        { q: "A sigh isn't the same as a dig.", a: "It arrives the same way. If you want something, say it in words.", bundle: 'pro' },
+        { q: "They'd take the direct version badly.", a: "They'd take it once. The indirect version they take a dozen times.", bundle: 'pro' },
+        { q: "I hinted and they missed it, so I hinted harder.", a: "That's the ladder. Step off it and say the sentence.", bundle: 'pro' },
       ]
     },
     {
@@ -1946,6 +1967,41 @@ const mindsetCollections = {
         { q: "Why should I do the work of finding out what's wrong?", a: "You shouldn't have to. It's often the fastest way to make it stop.", bundle: 'pro' },
         { q: "There's no excuse for talking to people like that.", a: "There isn't. There's usually a reason, and the reason is worth knowing.", bundle: 'pro' },
         { q: "They should just say it.", a: "Yes. And a lot of people can't, until someone makes it easy.", bundle: 'pro' },
+        { q: "Looking for the real thing means excusing the remark.", a: "Understanding it isn't excusing it. You can do both and neither cancels out.", bundle: 'pro' },
+        { q: "I asked what was wrong and got 'nothing'.", a: "Common. Say you're around later and leave it. The door being open is the move.", bundle: 'pro' },
+        { q: "I'm not their therapist.", a: "You're not. One question is not therapy — it's a colleague asking.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Taking It Straight Is Letting It Go",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "Answering the surface of a barbed remark — treating \"nice of you to join us\" as though it were simply nice — feels like pretending you did not notice. It looks from the inside like being walked over.\n\nIt is the opposite. The remark was built to be deniable; answering it straight takes the deniability and hands it back. They cannot say \"I was only joking\" about a reply that took them at their word, and the sting has nowhere to land. It also costs you nothing, which is the part that makes it repeatable.\n\nMindset: taking it at face value is not missing it. It is declining the version they offered.",
+      inputs: [
+        { q: "If I answer it straight they'll think I didn't notice.", a: "They'll know you noticed. That's what makes the plain answer land.", bundle: 'pro' },
+        { q: "It's letting them get away with it.", a: "There's nothing to get away with once you've removed the barb by ignoring it.", bundle: 'pro' },
+        { q: "I'd be pretending, and I'm bad at pretending.", a: "You're not pretending. You're choosing which half of the sentence to answer.", bundle: 'pro' },
+        { q: "They'll do it again if I don't push back.", a: "They do it again when it works. A flat answer is what stops it working.", bundle: 'pro' },
+        { q: "Everyone else can hear it and I'll look naive.", a: "The room reads a calm answer as unbothered, not as naive. Every time.", bundle: 'pro' },
+        { q: "It'd feel better to say something sharp back.", a: "For four seconds. Then you're the one who escalated.", bundle: 'pro' },
+        { q: "Answering straight means I have to do what they asked.", a: "No. Answer the tone straight and the request on its merits.", bundle: 'pro' },
+        { q: "I did it and they said it again, louder.", a: "Then it isn't deniable any more. Now you can name it.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Telling Them How It Lands Is Complaining",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "Saying \"when it's put like that I don't know how to answer\" feels like handing them exactly what they wanted — evidence that it got to you — and like whinging about a remark small enough that noticing it seems disproportionate.\n\nBut it is the only move that describes something they cannot dispute. They can deny the intention, deny the tone, deny the whole thing; they cannot deny what happened to you. And most of the time the remark was not built for a reaction, it was built because the plain sentence felt impossible — which the plain sentence from you makes easier.\n\nMindset: name the effect, not the motive. The effect is yours and it is not arguable.",
+      inputs: [
+        { q: "Saying it got to me gives them what they wanted.", a: "Most of them wanted to be heard, not to score. Saying the effect gives them that instead.", bundle: 'pro' },
+        { q: "It's too small a thing to make a point of.", a: "Small and repeated is the whole pattern. One sentence now beats a speech in March.", bundle: 'pro' },
+        { q: "They'll say I'm too sensitive.", a: "Then you're discussing your reaction, not their remark. Say it once and go back to the task.", bundle: 'pro' },
+        { q: "I'd rather not admit it bothered me.", a: "\"I don't know how to answer that\" isn't an admission. It's a description.", bundle: 'pro' },
+        { q: "It sounds like I'm asking them to be nicer.", a: "You're telling them what happened. What they do with it is theirs.", bundle: 'pro' },
+        { q: "If I say it out loud it becomes a whole conversation.", a: "Sometimes. That conversation is cheaper than six more months of remarks.", bundle: 'pro' },
+        { q: "I should just be less affected by it.", a: "Perhaps. Meanwhile the sentence works whether you've managed that or not.", bundle: 'pro' },
+        { q: "I said it and they got defensive.", a: "Defensive is not the same as unheard. Let it sit and carry on.", bundle: 'pro' },
       ]
     },
   ],
@@ -3104,6 +3160,9 @@ const mindsetCollections = {
         { q: "You freeze because nothing you'd say seems worth saying.", a: "\"I don't have to say anything yet. I just have to ask.\"", bundle: 'pro' },
         { q: "You are having a flat day and feel you have nothing to offer.", a: "\"Curiosity works on a flat day. Being interesting does not, and is not needed.\"", bundle: 'pro' },
         { q: "You are waiting for the right moment to say something good.", a: "\"There isn't one. There's a question about the room, and it works now.\"", bundle: 'pro' },
+        { q: "Asking first means they set the subject.", a: "They set the first subject. You set the second, with your own answer.", bundle: 'pro' },
+        { q: "I asked and they gave me almost nothing.", a: "Then answer it yourself anyway. Your answer is the second question.", bundle: 'pro' },
+        { q: "It feels like I'm interviewing them.", a: "An interview is questions with no answers. Give yours and it stops being one.", bundle: 'pro' },
       ]
     },
     {
@@ -3117,6 +3176,9 @@ const mindsetCollections = {
         { q: "You are about to reply with 'yeah, same'.", a: "\"'Same' is not an answer. What is actually true for me here?\"", bundle: 'pro' },
         { q: "Their answer was long and yours would be short.", a: "\"Roughly their size. Much shorter reads as a brush-off, much longer takes the floor.\"", bundle: 'pro' },
         { q: "You asked because you wanted to talk about it, then did not.", a: "\"That was the whole reason I asked. Say it.\"", bundle: 'pro' },
+        { q: "Talking about myself right after feels like hijacking it.", a: "It's the other half of what you asked. Without it they've been interviewed.", bundle: 'pro' },
+        { q: "My answer is duller than theirs.", a: "Duller and true is what makes it an exchange. They aren't grading it.", bundle: 'pro' },
+        { q: "They didn't ask me back.", a: "Most people don't. Say it anyway — that's what the pattern is for.", bundle: 'pro' },
       ]
     },
     {
@@ -3130,6 +3192,9 @@ const mindsetCollections = {
         { q: "You worry the question is too simple.", a: "\"Simple is the point. The conversation happens in their answer, not in my question.\"", bundle: 'pro' },
         { q: "You want the question to show you are perceptive.", a: "\"A question that shows off is a question about me. Ask the plain one.\"", bundle: 'pro' },
         { q: "You think they have been asked this a hundred times.", a: "\"They have, and they can answer it without thinking. That is exactly why it works.\"", bundle: 'pro' },
+        { q: "The obvious question is what everyone asks them.", a: "And everyone stops at the answer. Asking the second one is where you differ.", bundle: 'pro' },
+        { q: "I want the question to be worth their time.", a: "The one that gets a real answer is worth their time. That's usually the plain one.", bundle: 'pro' },
+        { q: "I've thought of a much better angle but the moment's gone.", a: "The plain one was available four seconds ago. Use it next time and think later.", bundle: 'pro' },
       ]
     },
     {
@@ -3143,6 +3208,25 @@ const mindsetCollections = {
         { q: "The conversation stopped after one good exchange.", a: "\"That was one door. There are four more, and one is inside what they just said.\"", bundle: 'pro' },
         { q: "The setting seems too dull to open anything.", a: "\"Dull settings are the easiest — everyone in a dull room has noticed it.\"", bundle: 'pro' },
         { q: "You feel you have used up your questions with this person.", a: "\"I've used up the ones I planned. The ones in their answers are unlimited.\"", bundle: 'pro' },
+        { q: "We've covered work, and that was my one topic.", a: "There are four other kinds. What they're here for, how they are, what happened before.", bundle: 'pro' },
+        { q: "This person and I have nothing left to ask each other.", a: "You've used one type on repeat. Switch the type, not the person.", bundle: 'pro' },
+        { q: "The room is empty and there's nothing in it.", a: "Then ask about outside it. Where they came from is always available.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "How Are You Is Not a Question",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"How are you\" has been worn down into a greeting, so asking it as an actual question feels either odd or heavy — as though you were demanding a real answer from someone who only nodded at you.\n\nBut the words are not the problem; the delivery is. Asked while walking past, it is a greeting. Asked while stopping, with a second of silence after it, it is a question, and most people can tell the difference instantly. It is also the only opener that works when nothing has happened and there is nothing in the room to comment on.\n\nMindset: stop, ask it, and leave the pause. The pause is what turns it back into a question.",
+      inputs: [
+        { q: "\"How are you\" is just something people say.", a: "It is, until you stop walking. Then it's a question, and they hear that.", bundle: 'pro' },
+        { q: "They'll only say 'fine' anyway.", a: "Wait two seconds after the fine. That's where the real answer lives.", bundle: 'pro' },
+        { q: "Asking properly is too intense for a corridor.", a: "Not with the ordinary words. It's the wording that would be intense, not the asking.", bundle: 'pro' },
+        { q: "I don't want to open something I can't close.", a: "You can close it. \"Glad it's not just me — right, back to it.\"", bundle: 'pro' },
+        { q: "It's a lazy question.", a: "It's the one that works on a day when nothing else does. That isn't laziness.", bundle: 'pro' },
+        { q: "I asked and they gave me the whole thing.", a: "Then it worked. Listen, say your own version, and let it end naturally.", bundle: 'pro' },
+        { q: "They asked me first and I said fine automatically.", a: "Go back. \"Actually, since you asked—\" is allowed thirty seconds later.", bundle: 'pro' },
+        { q: "I should ask something more interesting.", a: "More interesting to you. Ask this one and answer it yourself, and it's plenty.", bundle: 'pro' },
       ]
     },
   ],

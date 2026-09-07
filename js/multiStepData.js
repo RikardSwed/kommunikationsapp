@@ -2977,20 +2977,20 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "You think a task should start next week rather than in three weeks. Your colleague owns it and has not thought about it.",
           steps: [
-            { front: "Show the Benefit to Them — they have not engaged with the question.", back: "\"If we start next week, you'd not be doing it in the same fortnight as the audit.\"" },
-            { front: "Give a Reason — they say, \"Is that actually a problem?\"", back: "\"It was in March. The audit ate the week and the report went out unchecked.\"" },
-            { front: "Name the Cost of Doing Nothing — they say, \"We managed, though.\"", back: "\"We did, by losing a weekend. That's the bit that keeps happening.\"" },
-            { front: "Tell What Happened to You — they say, \"It'd be a scramble to start now.\"", back: "\"I moved one of these forward last year. It took a morning to set up, not a week.\"" },
+            { front: "Show the Benefit to Them — they have not engaged with the question.", back: "\"If we start next week, you'd not be doing it in the same fortnight as the audit.\"", guideFront: "Say what they get out of it when...", guideBack: "The gain, from their side" },
+            { front: "Give a Reason — they say, \"Is that actually a problem?\"", back: "\"It was in March. The audit ate the week and the report went out unchecked.\"", guideFront: "Say why, in one sentence when...", guideBack: "A single reason" },
+            { front: "Name the Cost of Doing Nothing — they say, \"We managed, though.\"", back: "\"We did, by losing a weekend. That's the bit that keeps happening.\"", guideFront: "Say what carrying on costs when...", guideBack: "The price of the status quo" },
+            { front: "Tell What Happened to You — they say, \"It'd be a scramble to start now.\"", back: "\"I moved one of these forward last year. It took a morning to set up, not a week.\"", guideFront: "Give a short account of a time when...", guideBack: "A short account of one time" },
           ]
         },
         {
           bundle: 'pro',
           situation: "Your study group divides the work the same way every time, and the last section always gets rushed.",
           steps: [
-            { front: "Name the Cost of Doing Nothing — they are about to split it the usual way.", back: "\"Every time we do it like this, the last section gets done at midnight.\"" },
-            { front: "Give a Reason — they say, \"It's worked so far.\"", back: "\"It's worked because someone rescues it. That someone was you last time.\"" },
-            { front: "Show the Benefit to Them — they say, \"So what would you change?\"", back: "\"You'd get the research half, which is the bit you're quick at.\"" },
-            { front: "Tell What Happened to You — they say, \"Would that actually be faster?\"", back: "\"We tried it that way in the autumn group. We finished two days early.\"" },
+            { front: "Name the Cost of Doing Nothing — they are about to split it the usual way.", back: "\"Every time we do it like this, the last section gets done at midnight.\"", guideFront: "Say what carrying on costs when...", guideBack: "The price of the status quo" },
+            { front: "Give a Reason — they say, \"It's worked so far.\"", back: "\"It's worked because someone rescues it. That someone was you last time.\"", guideFront: "Say why, in one sentence when...", guideBack: "A single reason" },
+            { front: "Show the Benefit to Them — they say, \"So what would you change?\"", back: "\"You'd get the research half, which is the bit you're quick at.\"", guideFront: "Say what they get out of it when...", guideBack: "The gain, from their side" },
+            { front: "Tell What Happened to You — they say, \"Would that actually be faster?\"", back: "\"We tried it that way in the autumn group. We finished two days early.\"", guideFront: "Give a short account of a time when...", guideBack: "A short account of one time" },
           ]
         },
       ]
@@ -3005,20 +3005,20 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "You are raising something with a colleague whose work is only indirectly affected.",
           steps: [
-            { front: "Show the Benefit to Them — they say, \"That's not really my area.\"", back: "\"It's not, directly. It'd save you the chasing every Friday, though.\"" },
-            { front: "Name the Cost of Doing Nothing — they say, \"The chasing's not that bad.\"", back: "\"Twenty minutes a week for two years. It adds up to more than the fix.\"" },
-            { front: "Give a Reason — they say, \"Alright. Why hasn't anyone done it?\"", back: "\"Because it's nobody's job. That's the actual problem.\"" },
-            { front: "Tell What Happened to You — they say, \"And you think it's fixable?\"", back: "\"The other team fixed theirs in an afternoon. I watched them do it.\"" },
+            { front: "Show the Benefit to Them — they say, \"That's not really my area.\"", back: "\"It's not, directly. It'd save you the chasing every Friday, though.\"", guideFront: "Say what they get out of it when...", guideBack: "The gain, from their side" },
+            { front: "Name the Cost of Doing Nothing — they say, \"The chasing's not that bad.\"", back: "\"Twenty minutes a week for two years. It adds up to more than the fix.\"", guideFront: "Say what carrying on costs when...", guideBack: "The price of the status quo" },
+            { front: "Give a Reason — they say, \"Alright. Why hasn't anyone done it?\"", back: "\"Because it's nobody's job. That's the actual problem.\"", guideFront: "Say why, in one sentence when...", guideBack: "A single reason" },
+            { front: "Tell What Happened to You — they say, \"And you think it's fixable?\"", back: "\"The other team fixed theirs in an afternoon. I watched them do it.\"", guideFront: "Give a short account of a time when...", guideBack: "A short account of one time" },
           ]
         },
         {
           bundle: 'pro',
           situation: "You think a friend would enjoy something and they are politely uninterested.",
           steps: [
-            { front: "Show the Benefit to Them — they say, \"It's not really my thing.\"", back: "\"You've been saying you want to meet more people. It's about the easiest way to do that.\"" },
-            { front: "Tell What Happened to You — they say, \"I'd not know anyone.\"", back: "\"Nor did I. I stood by the door for ten minutes and then it was fine.\"" },
-            { front: "Name the Cost of Doing Nothing — they say, \"Maybe another time.\"", back: "\"That's what you said about the last one. It's been a quiet few months.\"" },
-            { front: "Give a Reason — they say, \"That's fair, actually.\"", back: "\"That's the only reason I keep mentioning it. Nothing else.\"" },
+            { front: "Show the Benefit to Them — they say, \"It's not really my thing.\"", back: "\"You've been saying you want to meet more people. It's about the easiest way to do that.\"", guideFront: "Say what they get out of it when...", guideBack: "The gain, from their side" },
+            { front: "Tell What Happened to You — they say, \"I'd not know anyone.\"", back: "\"Nor did I. I stood by the door for ten minutes and then it was fine.\"", guideFront: "Give a short account of a time when...", guideBack: "A short account of one time" },
+            { front: "Name the Cost of Doing Nothing — they say, \"Maybe another time.\"", back: "\"That's what you said about the last one. It's been a quiet few months.\"", guideFront: "Say what carrying on costs when...", guideBack: "The price of the status quo" },
+            { front: "Give a Reason — they say, \"That's fair, actually.\"", back: "\"That's the only reason I keep mentioning it. Nothing else.\"", guideFront: "Say why, in one sentence when...", guideBack: "A single reason" },
           ]
         },
       ]
@@ -3033,18 +3033,18 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "You have been arguing for an earlier start and they raise something you did not know.",
           steps: [
-            { front: "Give a Reason — they say, \"The data doesn't arrive until the twelfth.\"", back: "\"It doesn't? Then the reason I've been giving doesn't hold.\"" },
-            { front: "Name the Cost of Doing Nothing — they say, \"So we're stuck with the dates.\"", back: "\"For this one, yes. I'd still want it flagged before next year's.\"" },
-            { front: "Tell What Happened to You — they say, \"Would that make a difference?\"", back: "\"It did the last time we raised something early. They moved the supplier deadline.\"" },
+            { front: "Give a Reason — they say, \"The data doesn't arrive until the twelfth.\"", back: "\"It doesn't? Then the reason I've been giving doesn't hold.\"", guideFront: "Say why, in one sentence when...", guideBack: "A single reason" },
+            { front: "Name the Cost of Doing Nothing — they say, \"So we're stuck with the dates.\"", back: "\"For this one, yes. I'd still want it flagged before next year's.\"", guideFront: "Say what carrying on costs when...", guideBack: "The price of the status quo" },
+            { front: "Tell What Happened to You — they say, \"Would that make a difference?\"", back: "\"It did the last time we raised something early. They moved the supplier deadline.\"", guideFront: "Give a short account of a time when...", guideBack: "A short account of one time" },
           ]
         },
         {
           bundle: 'pro',
           situation: "Partway through you notice you want to win rather than to get the right outcome.",
           steps: [
-            { front: "Give a Reason — they say, \"You've been on this twenty minutes.\"", back: "\"I have. And I think I'm arguing because I started, not because I'm right.\"" },
-            { front: "Show the Benefit to Them — they say, \"So what do you actually think?\"", back: "\"Honestly, that your version costs you less and I hadn't weighed that.\"" },
-            { front: "Name the Cost of Doing Nothing — they say, \"So we leave it?\"", back: "\"Leave it. The only thing I'd keep is a note to look at it again in the spring.\"" },
+            { front: "Give a Reason — they say, \"You've been on this twenty minutes.\"", back: "\"I have. And I think I'm arguing because I started, not because I'm right.\"", guideFront: "Say why, in one sentence when...", guideBack: "A single reason" },
+            { front: "Show the Benefit to Them — they say, \"So what do you actually think?\"", back: "\"Honestly, that your version costs you less and I hadn't weighed that.\"", guideFront: "Say what they get out of it when...", guideBack: "The gain, from their side" },
+            { front: "Name the Cost of Doing Nothing — they say, \"So we leave it?\"", back: "\"Leave it. The only thing I'd keep is a note to look at it again in the spring.\"", guideFront: "Say what carrying on costs when...", guideBack: "The price of the status quo" },
           ]
         },
       ]
@@ -3322,20 +3322,20 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "You have asked a colleague to get something to you by Thursday. They are annoyed about the timescale but not saying so directly.",
           steps: [
-            { front: "Answer It Straight — they say, \"Well, it must be nice to be able to set deadlines.\"", back: "\"It's not my call either, to be honest. Thursday's what we've been given.\"" },
-            { front: "Hold Your Point — they say, \"Some of us have actual work as well.\"", back: "\"I know you're stretched. I still need it by Thursday.\"" },
-            { front: "Name the Feeling — they say, \"Fine. It'll be whatever it'll be.\"", back: "\"You sound properly fed up with this. Is it the timing or the whole thing?\"" },
-            { front: "Hold Your Point — they say, \"It's just the constant last-minute stuff.\"", back: "\"That's worth raising properly, and I'd back you on it. For now — can you do Thursday?\"" },
+            { front: "Answer It Straight — they say, \"Well, it must be nice to be able to set deadlines.\"", back: "\"It's not my call either, to be honest. Thursday's what we've been given.\"", guideFront: "Take it at face value when...", guideBack: "A plain answer to the surface" },
+            { front: "Hold Your Point — they say, \"Some of us have actual work as well.\"", back: "\"I know you're stretched. I still need it by Thursday.\"", guideFront: "Acknowledge, then return to it when...", guideBack: "A brief nod and the point again" },
+            { front: "Name the Feeling — they say, \"Fine. It'll be whatever it'll be.\"", back: "\"You sound properly fed up with this. Is it the timing or the whole thing?\"", guideFront: "Say what you think they feel when...", guideBack: "The feeling, named without agreeing" },
+            { front: "Hold Your Point — they say, \"It's just the constant last-minute stuff.\"", back: "\"That's worth raising properly, and I'd back you on it. For now — can you do Thursday?\"", guideFront: "Acknowledge, then return to it when...", guideBack: "A brief nod and the point again" },
           ]
         },
         {
           bundle: 'pro',
           situation: "You are visiting family and a relative keeps making small pointed comments about how rarely you come.",
           steps: [
-            { front: "Answer It Straight — they say, \"Nice of you to fit us in.\"", back: "\"It's good to be here. How've you been?\"" },
-            { front: "Let It Go — they say, \"I suppose we're lucky to get an afternoon.\"", back: "\"Mm. Is the garden yours or has someone been helping?\"" },
-            { front: "Name the Feeling — they say, \"I just think family should see each other more.\"", back: "\"It sounds like you've been missing having people around.\"" },
-            { front: "Say How It Lands — they say, \"Well. Yes, if I'm honest.\"", back: "\"I'd much rather have that version than the comments. Then I know what's actually going on.\"" },
+            { front: "Answer It Straight — they say, \"Nice of you to fit us in.\"", back: "\"It's good to be here. How've you been?\"", guideFront: "Take it at face value when...", guideBack: "A plain answer to the surface" },
+            { front: "Let It Go — they say, \"I suppose we're lucky to get an afternoon.\"", back: "\"Mm. Is the garden yours or has someone been helping?\"", guideFront: "Decide not to respond when...", guideBack: "Something else entirely" },
+            { front: "Name the Feeling — they say, \"I just think family should see each other more.\"", back: "\"It sounds like you've been missing having people around.\"", guideFront: "Say what you think they feel when...", guideBack: "The feeling, named without agreeing" },
+            { front: "Say How It Lands — they say, \"Well. Yes, if I'm honest.\"", back: "\"I'd much rather have that version than the comments. Then I know what's actually going on.\"", guideFront: "Tell them the effect it had when...", guideBack: "What it did to you, plainly" },
           ]
         },
       ]
@@ -3350,20 +3350,20 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "A friend has been short with you all evening and insists nothing is wrong.",
           steps: [
-            { front: "Ask What They Mean — they say, \"No, it's fine. Do whatever you want.\"", back: "\"That doesn't sound fine. What would you rather do?\"" },
-            { front: "Name the Feeling — they say, \"It doesn't matter. It never does.\"", back: "\"That sounds like something that's been building for a while.\"" },
-            { front: "Ask What They Mean — they say, \"Forget it. I'm being stupid.\"", back: "\"You're not. Tell me the actual thing — I'd rather know.\"" },
-            { front: "Say How It Lands — they say, \"You always decide and I go along with it.\"", back: "\"Right. I'd genuinely rather you told me that in the moment than went quiet on me.\"" },
+            { front: "Ask What They Mean — they say, \"No, it's fine. Do whatever you want.\"", back: "\"That doesn't sound fine. What would you rather do?\"", guideFront: "Ask them to say it plainly when...", guideBack: "A question, then silence" },
+            { front: "Name the Feeling — they say, \"It doesn't matter. It never does.\"", back: "\"That sounds like something that's been building for a while.\"", guideFront: "Say what you think they feel when...", guideBack: "The feeling, named without agreeing" },
+            { front: "Ask What They Mean — they say, \"Forget it. I'm being stupid.\"", back: "\"You're not. Tell me the actual thing — I'd rather know.\"", guideFront: "Ask them to say it plainly when...", guideBack: "A question, then silence" },
+            { front: "Say How It Lands — they say, \"You always decide and I go along with it.\"", back: "\"Right. I'd genuinely rather you told me that in the moment than went quiet on me.\"", guideFront: "Tell them the effect it had when...", guideBack: "What it did to you, plainly" },
           ]
         },
         {
           bundle: 'pro',
           situation: "A colleague has been making sarcastic remarks for weeks. You have decided to say something.",
           steps: [
-            { front: "Say How It Lands — you catch them alone after a meeting.", back: "\"Can I say something? When things get said like that in a meeting, I don't know how to answer them.\"" },
-            { front: "Ask What They Mean — they say, \"I'm just joking. You're being sensitive.\"", back: "\"Maybe. Is there something underneath it, though? It's happened a fair bit.\"" },
-            { front: "Name the Feeling — they say, \"Honestly? I'm fed up with how the work's split.\"", back: "\"That sounds like it's been sitting there a while.\"" },
-            { front: "Say How It Lands — they say, \"It has, a bit.\"", back: "\"Then I'd much rather hear that. I can do something with that — I can't do anything with a joke.\"" },
+            { front: "Say How It Lands — you catch them alone after a meeting.", back: "\"Can I say something? When things get said like that in a meeting, I don't know how to answer them.\"", guideFront: "Tell them the effect it had when...", guideBack: "What it did to you, plainly" },
+            { front: "Ask What They Mean — they say, \"I'm just joking. You're being sensitive.\"", back: "\"Maybe. Is there something underneath it, though? It's happened a fair bit.\"", guideFront: "Ask them to say it plainly when...", guideBack: "A question, then silence" },
+            { front: "Name the Feeling — they say, \"Honestly? I'm fed up with how the work's split.\"", back: "\"That sounds like it's been sitting there a while.\"", guideFront: "Say what you think they feel when...", guideBack: "The feeling, named without agreeing" },
+            { front: "Say How It Lands — they say, \"It has, a bit.\"", back: "\"Then I'd much rather hear that. I can do something with that — I can't do anything with a joke.\"", guideFront: "Tell them the effect it had when...", guideBack: "What it did to you, plainly" },
           ]
         },
       ]
@@ -3378,20 +3378,20 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "In a meeting, a colleague makes a pointed comment about your work in front of the group.",
           steps: [
-            { front: "Answer It Straight — they say, \"Well, some of us managed to read the whole document.\"", back: "\"I read the summary. Which bit should I look at?\"" },
-            { front: "Hold Your Point — they say, \"The bit everyone else managed.\"", back: "\"I'll go through it after. Can we come back to the decision?\"" },
-            { front: "Let It Go — they make a face at the person next to them.", back: "(carry on with the agenda)" },
-            { front: "Say How It Lands — you catch them afterwards, privately.", back: "\"That was uncomfortable in front of everyone. If there's a problem I'd rather hear it directly.\"" },
+            { front: "Answer It Straight — they say, \"Well, some of us managed to read the whole document.\"", back: "\"I read the summary. Which bit should I look at?\"", guideFront: "Take it at face value when...", guideBack: "A plain answer to the surface" },
+            { front: "Hold Your Point — they say, \"The bit everyone else managed.\"", back: "\"I'll go through it after. Can we come back to the decision?\"", guideFront: "Acknowledge, then return to it when...", guideBack: "A brief nod and the point again" },
+            { front: "Let It Go — they make a face at the person next to them.", back: "(carry on with the agenda)", guideFront: "Decide not to respond when...", guideBack: "Something else entirely" },
+            { front: "Say How It Lands — you catch them afterwards, privately.", back: "\"That was uncomfortable in front of everyone. If there's a problem I'd rather hear it directly.\"", guideFront: "Tell them the effect it had when...", guideBack: "What it did to you, plainly" },
           ]
         },
         {
           bundle: 'pro',
           situation: "A family member is clearly spoiling for a row and is using digs to start one.",
           steps: [
-            { front: "Let It Go — they say something pointed about your choices.", back: "(say nothing — carry on)" },
-            { front: "Answer It Straight — they say, \"I suppose you know best, as usual.\"", back: "\"I don't, mostly. But I'm happy with this one.\"" },
-            { front: "Hold Your Point — they say, \"You never listen to anybody.\"", back: "\"Maybe. I'm still not going to argue about it tonight.\"" },
-            { front: "Let It Go — they say, \"Typical.\"", back: "\"I'm going to go and put the kettle on.\"" },
+            { front: "Let It Go — they say something pointed about your choices.", back: "(say nothing — carry on)", guideFront: "Decide not to respond when...", guideBack: "Something else entirely" },
+            { front: "Answer It Straight — they say, \"I suppose you know best, as usual.\"", back: "\"I don't, mostly. But I'm happy with this one.\"", guideFront: "Take it at face value when...", guideBack: "A plain answer to the surface" },
+            { front: "Hold Your Point — they say, \"You never listen to anybody.\"", back: "\"Maybe. I'm still not going to argue about it tonight.\"", guideFront: "Acknowledge, then return to it when...", guideBack: "A brief nod and the point again" },
+            { front: "Let It Go — they say, \"Typical.\"", back: "\"I'm going to go and put the kettle on.\"", guideFront: "Decide not to respond when...", guideBack: "Something else entirely" },
           ]
         },
       ]
@@ -4857,18 +4857,18 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "You have just sat down next to someone before a workshop starts.",
           steps: [
-            { front: "Step 1 · Ask — you decide to open with a question", back: "\"What made you sign up for this one?\"" },
-            { front: "Step 2 · Listen — they say \"my manager sent me, for a project\"", back: "\"A project — what are you actually building?\"" },
-            { front: "Step 3 · Answer — give them yours too", back: "\"I came to steal ideas, honestly. Mine's a mess.\"" },
+            { front: "Step 1 · Ask — you decide to open with a question", back: "\"What made you sign up for this one?\"", guideFront: "Put the question first when...", guideBack: "The question, before your own view" },
+            { front: "Step 2 · Listen — they say \"my manager sent me, for a project\"", back: "\"A project — what are you actually building?\"", guideFront: "Take in the whole answer when...", guideBack: "A short sign you heard it" },
+            { front: "Step 3 · Answer — give them yours too", back: "\"I came to steal ideas, honestly. Mine's a mess.\"", guideFront: "Give your own answer now when...", guideBack: "Your answer, after theirs" },
           ]
         },
         {
           bundle: 'pro',
           situation: "A friend of a friend at a party, both of you a bit tired.",
           steps: [
-            { front: "Step 1 · Ask — the mood is the obvious thing", back: "\"How's your evening going so far?\"" },
-            { front: "Step 2 · Listen — they say \"I came straight from a night shift\"", back: "\"A night shift and then this? That's commitment.\"" },
-            { front: "Step 3 · Answer — say where you are too", back: "\"I nearly bailed on tonight. Low-energy day.\"" },
+            { front: "Step 1 · Ask — the mood is the obvious thing", back: "\"How's your evening going so far?\"", guideFront: "Put the question first when...", guideBack: "The question, before your own view" },
+            { front: "Step 2 · Listen — they say \"I came straight from a night shift\"", back: "\"A night shift and then this? That's commitment.\"", guideFront: "Take in the whole answer when...", guideBack: "A short sign you heard it" },
+            { front: "Step 3 · Answer — say where you are too", back: "\"I nearly bailed on tonight. Low-energy day.\"", guideFront: "Give your own answer now when...", guideBack: "Your answer, after theirs" },
           ]
         },
       ]
@@ -4883,18 +4883,18 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "Arriving at a dinner where you only know the host.",
           steps: [
-            { front: "Step 1 · Ask — you want a thread, not a yes", back: "\"How do you know everyone here?\"" },
-            { front: "Step 2 · Follow — they say \"I grew up with the host\"", back: "\"Grew up together? I need one embarrassing story.\"" },
-            { front: "Step 3 · Match — give them yours", back: "\"I've known him a year and I'm still the new one.\"" },
+            { front: "Step 1 · Ask — you want a thread, not a yes", back: "\"How do you know everyone here?\"", guideFront: "Put the question first when...", guideBack: "The question, before your own view" },
+            { front: "Step 2 · Follow — they say \"I grew up with the host\"", back: "\"Grew up together? I need one embarrassing story.\"", guideFront: "Go into what they just gave you when...", guideBack: "A question built on their answer" },
+            { front: "Step 3 · Match — give them yours", back: "\"I've known him a year and I'm still the new one.\"", guideFront: "Answer at the size they answered when...", guideBack: "Your own version, same size" },
           ]
         },
         {
           bundle: 'pro',
           situation: "A colleague you have never spoken to properly, waiting for a lift.",
           steps: [
-            { front: "Step 1 · Ask — where they came from", back: "\"Have you been here long? I've never worked out who's new.\"" },
-            { front: "Step 2 · Follow — they say \"eleven years, on and off\"", back: "\"On and off? What made you leave, and what brought you back?\"" },
-            { front: "Step 3 · Match — give a piece the same size", back: "\"I'm three months in and still guessing at half the names.\"" },
+            { front: "Step 1 · Ask — where they came from", back: "\"Have you been here long? I've never worked out who's new.\"", guideFront: "Put the question first when...", guideBack: "The question, before your own view" },
+            { front: "Step 2 · Follow — they say \"eleven years, on and off\"", back: "\"On and off? What made you leave, and what brought you back?\"", guideFront: "Go into what they just gave you when...", guideBack: "A question built on their answer" },
+            { front: "Step 3 · Match — give a piece the same size", back: "\"I'm three months in and still guessing at half the names.\"", guideFront: "Answer at the size they answered when...", guideBack: "Your own version, same size" },
           ]
         },
       ]
@@ -4909,18 +4909,18 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "You asked how their week has been and got \"fine, you?\"",
           steps: [
-            { front: "Step 1 · Answer yours, small", back: "\"Dull, honestly. Mostly a spreadsheet I don't understand.\"" },
-            { front: "Step 2 · Ask again, narrower", back: "\"Have you got anything on the go outside work?\"" },
-            { front: "Step 3 · Follow it", back: "\"A greenhouse? In this weather? How's that going?\"" },
+            { front: "Step 1 · Answer yours, small", back: "\"Dull, honestly. Mostly a spreadsheet I don't understand.\"", guideFront: "Give a short version of your own when...", guideBack: "A brief answer of your own" },
+            { front: "Step 2 · Ask again, narrower", back: "\"Have you got anything on the go outside work?\"", guideFront: "Narrow it to the part that interests you when...", guideBack: "A second, smaller question" },
+            { front: "Step 3 · Follow it", back: "\"A greenhouse? In this weather? How's that going?\"", guideFront: "Go into what they just gave you when...", guideBack: "A question built on their answer" },
           ]
         },
         {
           bundle: 'pro',
           situation: "A neighbour you barely know, both taking bins out.",
           steps: [
-            { front: "Step 1 · Answer yours, small", back: "\"I've had a week of it — the boiler's gone again.\"" },
-            { front: "Step 2 · Ask again, narrower", back: "\"Has yours held up? I assume they're all the same age.\"" },
-            { front: "Step 3 · Follow it", back: "\"Replaced the whole thing? Who did you get to do it?\"" },
+            { front: "Step 1 · Answer yours, small", back: "\"I've had a week of it — the boiler's gone again.\"", guideFront: "Give a short version of your own when...", guideBack: "A brief answer of your own" },
+            { front: "Step 2 · Ask again, narrower", back: "\"Has yours held up? I assume they're all the same age.\"", guideFront: "Narrow it to the part that interests you when...", guideBack: "A second, smaller question" },
+            { front: "Step 3 · Follow it", back: "\"Replaced the whole thing? Who did you get to do it?\"", guideFront: "Go into what they just gave you when...", guideBack: "A question built on their answer" },
           ]
         },
       ]

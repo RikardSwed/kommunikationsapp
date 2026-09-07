@@ -5298,7 +5298,7 @@ const collections = {
     {
       name: "Opinion Question",
       guideFront: "Use this strategy when...",
-      guideBack: "The question, then your own",
+      guideBack: "One way it could sound",
       description: "Ask what they think about something, listen, then say what you think. The question comes first, which is what makes it feel like interest rather than an announcement — and your own answer comes second, which is what stops it being an interview. Example: \"What did you make of that?\" and then, when they have said their bit, \"I liked it more than I expected to.\"\n\nThree strengths of question, from easiest to answer to most inviting:\n1. The closed one with an opening — \"Did you like it?\" gets a yes, and yes is a start.\n2. The open one — \"What did you make of it?\" gets a sentence.\n3. The one that offers a side — \"Was it just me or did it drag?\" gives them something to agree or disagree with.\n\nAsk about something present. An opinion question about a thing you can both see needs no setting up, and neither of you has to know anything.\n\nMindset: you asked because you want to talk about it too. Say your own answer afterwards — otherwise you have run an interview and learned nothing about each other.",
       inputs: [
         { q: "A film has just finished and the room is quiet.", a: "\"What did you make of that?\" — then your own: \"I liked it more than I expected to.\"", bundle: 'free' },
@@ -5314,7 +5314,7 @@ const collections = {
     {
       name: "Purpose Question",
       guideFront: "Use this strategy when...",
-      guideBack: "The question, then your own",
+      guideBack: "One way it could sound",
       description: "Ask why they are here or what they are after, then say why you came. It is the easiest of the five, because everybody in a room has a reason to be in it, and nobody has to be interesting to answer. Example: \"What brought you along tonight?\" and then, \"A friend talked me into it, honestly.\"\n\nThree ways to ask it:\n1. The plain one — \"What brings you here?\"\n2. The one about how they arrived at it — \"How did you end up doing this?\"\n3. The one that assumes nothing — \"Is this your first one of these?\"\n\nIt works everywhere people have gathered on purpose: a class, a club, a course, an event, a shared table.\n\nMindset: nobody has to invent anything to answer this one. That is what makes it the safest opener in the pack — and your own reason, said afterwards, is what makes it a conversation.",
       inputs: [
         { q: "First evening of a course where nobody knows anybody.", a: "\"What made you sign up for this?\" — then your own: \"I finally ran out of excuses, basically.\"", bundle: 'free' },
@@ -5330,7 +5330,7 @@ const collections = {
     {
       name: "Status Question",
       guideFront: "Use this strategy when...",
-      guideBack: "The question, then your own",
+      guideBack: "One way it could sound",
       description: "Ask how they are right now — properly, not as a greeting — and then answer it yourself. Asked first, it reads as noticing them; answered afterwards, it stops being a check-up. Example: \"How are you holding up today?\" and then, \"I'm running on about four hours' sleep, so not brilliantly.\"\n\nThree ways to ask it so it gets a real answer:\n1. Attach it to the moment — \"Long week for you too?\"\n2. Ask about a specific thing — \"How are you feeling about this afternoon?\"\n3. Mark it as the real question — \"How are you, actually?\"\n\nYour own answer is what makes it safe to have been honest. If they say they are tired and you say nothing back, they have given you something and got nothing.\n\nMindset: the ritual \"how are you\" expects \"fine\". This one expects an answer, which means you have to be ready to give one too.",
       inputs: [
         { q: "You meet a friend of a friend at the start of a long day.", a: "\"How are you holding up today?\" — then your own: \"I'm running on very little sleep, honestly.\"", bundle: 'free' },
@@ -5346,7 +5346,7 @@ const collections = {
     {
       name: "Action Question",
       guideFront: "Use this strategy when...",
-      guideBack: "The question, then your own",
+      guideBack: "One way it could sound",
       description: "Ask what they are doing or working on, then say what you are in the middle of. It is the question that gets the most concrete answers, because people can always say what they are doing even when they cannot say what is new. Example: \"What are you working on at the moment?\" and then, \"I'm trying to learn the guitar, badly.\"\n\nThree ways to ask it:\n1. Right now — \"What are you working on?\"\n2. Lately — \"Have you picked anything up recently?\"\n3. Narrow it — \"Are you reading anything at the moment?\"\n\nNarrowing helps more than it looks. \"What's new?\" is a blank page; \"are you reading anything?\" is a question anyone can answer in four words.\n\nMindset: ask for a concrete thing, not an interesting one. And have your own concrete thing ready — this is the question where \"not much\" from you kills what you just started.",
       inputs: [
         { q: "Catching up with someone you have not seen in a while.", a: "\"What have you been up to lately?\" — then your own: \"I've started running in the mornings, which is new for me.\"", bundle: 'free' },
@@ -5362,7 +5362,7 @@ const collections = {
     {
       name: "Background Question",
       guideFront: "Use this strategy when...",
-      guideBack: "The question, then your own",
+      guideBack: "One way it could sound",
       description: "Ask where they have come from or what happened before this, then say the same about yourself. It is the question that most reliably produces a small story rather than a word, because everybody came from somewhere. Example: \"Where have you come from?\" and then, \"I came straight from work and I'm starving.\"\n\nThree ways to ask it:\n1. The journey — \"Did you come far?\"\n2. The immediate before — \"Where have you come from?\"\n3. The connection — \"How do you know everyone here?\"\n\nThe third one is the most useful at weddings, dinners and parties, where the honest answer is always a story and it is always about somebody in the room.\n\nMindset: this is the question with the highest chance of an actual anecdote. Ask it, listen for the detail, and then give one of your own.",
       inputs: [
         { q: "You arrive at an evening event a little flustered.", a: "\"Where have you come from?\" — then your own: \"Straight from the office, still catching my breath.\"", bundle: 'free' },
