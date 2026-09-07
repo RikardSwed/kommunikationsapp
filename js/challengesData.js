@@ -565,6 +565,9 @@ const challengesCollections = {
         { q: "They say \"one more thing\" for the third time.", a: "\"Sorry, I really can't. Let's do the rest tomorrow.\" [Offer to Continue Later]", bundle: 'pro' },
         { q: "You are already backing away and they keep talking.", a: "\"I'm going to have to stop you there. Take care.\" [Use an Exit Phrase]", bundle: 'pro' },
         { q: "You have been standing with your coat on for five minutes.", a: "\"Right, I'm going before I miss it entirely. See you.\" [Use an Exit Phrase]", bundle: 'pro' },
+        { q: "They follow you towards the door still talking.", a: "\"Walk me out then — but I'm getting in the car at ten past.\" [Give a Reason]", bundle: 'pro' },
+        { q: "Every time you close it they open something new.", a: "\"You're too interesting. I'm leaving before you start another one.\" [End on a Joke]", bundle: 'pro' },
+        { q: "You have said goodbye twice and are still standing there.", a: "\"Right — before I go, how did the interview end up?\" [Leave With One Last Question]", bundle: 'pro' },
       ]
     },
     {
@@ -578,6 +581,9 @@ const challengesCollections = {
         { q: "You are about to invent an appointment that does not exist.", a: "\"Right — I'll let you get on.\" [Use an Exit Phrase]", bundle: 'pro' },
         { q: "The conversation has simply run out and you both know it.", a: "\"Anyway. Good to see you — have a good one.\" [Wish Them Well]", bundle: 'pro' },
         { q: "You want to leave a group without a reason.", a: "\"I'm going to find a drink. Back in a bit.\" [Give a Reason]", bundle: 'pro' },
+        { q: "You are tired and that is the whole of it.", a: "\"I'm going to call it. Good to see you.\" [Use an Exit Phrase]", bundle: 'pro' },
+        { q: "You want to leave but would like to hear one thing first.", a: "\"I have to head off in a minute — but what happened with the flat?\" [Leave With One Last Question]", bundle: 'pro' },
+        { q: "You feel you need permission and nobody is giving it.", a: "\"Right, I'll let you get on. Enjoy the rest of it.\" [Wish Them Well]", bundle: 'pro' },
       ]
     },
     {
@@ -591,6 +597,9 @@ const challengesCollections = {
         { q: "A hard conversation has reached its natural end.", a: "\"Thank you for telling me. I mean that.\" [Say Something Positive About the Talk]", bundle: 'pro' },
         { q: "You are worried about them as you leave.", a: "\"Look after yourself. I'll message you this evening.\" [Wish Them Well]", bundle: 'pro' },
         { q: "You are about to end it with a joke out of awkwardness.", a: "\"Take care. I'll check in tomorrow.\" [Use an Exit Phrase]", bundle: 'pro' },
+        { q: "They have gone quiet and you do not want to leave on the silence.", a: "\"I'm going to go — not because of any of this. Talk tomorrow?\" [Offer to Continue Later]", bundle: 'pro' },
+        { q: "You said you would help and now you are leaving.", a: "\"I meant what I said about Thursday. I'll be there.\" [Offer to Continue Later]", bundle: 'pro' },
+        { q: "They thank you for listening and you do not know what to do with it.", a: "\"You'd have done the same. Look after yourself.\" [Wish Them Well]", bundle: 'pro' },
       ]
     },
     {
@@ -604,6 +613,9 @@ const challengesCollections = {
         { q: "You announced you were leaving and then stayed.", a: "\"Right, this time I mean it. Night.\" [End on a Joke]", bundle: 'pro' },
         { q: "You want to leave a group where you know one person well.", a: "\"I'm going to go. Message me about Saturday.\" [Offer to Continue Later]", bundle: 'pro' },
         { q: "A group at work is chatting and you need to get back.", a: "\"I'll leave you to it — I've got things to finish.\" [Give a Reason]", bundle: 'pro' },
+        { q: "You are the first to leave and nobody else is moving.", a: "\"Someone has to go first. I'll take it. Night, all.\" [End on a Joke]", bundle: 'pro' },
+        { q: "You have been talking to one person while the group waits.", a: "\"I'll let you get back to everyone. Good to talk.\" [Say Something Positive About the Talk]", bundle: 'pro' },
+        { q: "You are leaving a group where you barely know anyone.", a: "\"I'm going to head off — nice to have met you all.\" [Say Something Positive About the Talk]", bundle: 'pro' },
       ]
     },
     {
@@ -617,6 +629,9 @@ const challengesCollections = {
         { q: "They apologise for having to leave.", a: "\"Don't apologise. Good luck with the rest of your day.\" [Wish Them Well]", bundle: 'pro' },
         { q: "They are clearly trying to leave and being too polite about it.", a: "\"You've got that look. Go on, off you go.\" [End on a Joke]", bundle: 'pro' },
         { q: "They leave mid-topic and you would like to finish it.", a: "\"We'll pick this up. Take care.\" [Offer to Continue Later]", bundle: 'pro' },
+        { q: "They end it just as you were getting to the point.", a: "\"Go — I'll send you the rest in a message.\" [Offer to Continue Later]", bundle: 'pro' },
+        { q: "They leave abruptly and you are not sure why.", a: "\"No problem at all. Hope the rest of it goes fine.\" [Wish Them Well]", bundle: 'pro' },
+        { q: "They end it and you have one thing you actually need to know.", a: "\"Before you go — is Friday still on?\" [Leave With One Last Question]", bundle: 'pro' },
       ]
     },
   ],
@@ -632,6 +647,9 @@ const challengesCollections = {
         { q: "You want to understand before deciding how to respond.", a: "\"What made you say that?\" [Ask What Prompted It]", bundle: 'pro' },
         { q: "You can name your reaction but not your position.", a: "\"I don't have an argument ready. It did make me uncomfortable.\" [Answer the Part You Can]", bundle: 'pro' },
         { q: "It needs saying properly and this is not the moment.", a: "\"I want to come back to that. Not here, though.\" [Come Back to It Later]", bundle: 'pro' },
+        { q: "They say it lightly, as though it were obvious.", a: "\"That's said very casually. Where's it from?\" [Ask What Prompted It]", bundle: 'pro' },
+        { q: "You can feel yourself about to perform outrage.", a: "\"Hang on. I want to answer that properly, not quickly.\" [Say You Need a Second]", bundle: 'pro' },
+        { q: "You object to the framing but not the underlying point.", a: "\"The underlying thing I'd discuss. The way you put it I wouldn't.\" [Answer the Part You Can]", bundle: 'pro' },
       ]
     },
     {
@@ -645,6 +663,9 @@ const challengesCollections = {
         { q: "You want to hear the whole thing rather than react to the headline.", a: "\"Tell me properly, if you want to. How long has this been going on?\" [Ask What Prompted It]", bundle: 'pro' },
         { q: "You need a moment before you can respond at all.", a: "\"God. Give me a second — I wasn't expecting that.\" [Say You Need a Second]", bundle: 'pro' },
         { q: "You want to make sure the conversation continues.", a: "\"Can I check in with you next week? Not to fix anything.\" [Come Back to It Later]", bundle: 'pro' },
+        { q: "They tell you and then immediately change the subject.", a: "\"We can leave it — but I heard it, and I'd like to come back to it.\" [Come Back to It Later]", bundle: 'pro' },
+        { q: "They tell you something you already half suspected.", a: "\"I wondered. I'm glad you've said it out loud.\" [Answer the Part You Can]", bundle: 'pro' },
+        { q: "You are worried anything you say will sound rehearsed.", a: "\"I've got no good sentence for this. I'm here, though.\" [Say You Don't Know What to Say]", bundle: 'pro' },
       ]
     },
     {
@@ -658,6 +679,9 @@ const challengesCollections = {
         { q: "The statement probably sounded worse than the position is.", a: "\"Say more. I'd rather hear the whole thing than react to the headline.\" [Ask What Prompted It]", bundle: 'pro' },
         { q: "You agree with part of it and not the rest.", a: "\"The first bit I'd agree with. The rest I'd want to think about.\" [Answer the Part You Can]", bundle: 'pro' },
         { q: "It is worth discussing but not here and not now.", a: "\"I'd like to come back to that properly sometime.\" [Come Back to It Later]", bundle: 'pro' },
+        { q: "They say it to test whether you will react.", a: "\"You might be fishing. Either way — what makes you think it?\" [Ask What Prompted It]", bundle: 'pro' },
+        { q: "Other people are agreeing and you are not.", a: "\"I'm the odd one out here. Give me a minute with it.\" [Say You Need a Second]", bundle: 'pro' },
+        { q: "You have heard the view before and never asked about it.", a: "\"I've never actually asked you why you think that. Why do you?\" [Ask What Prompted It]", bundle: 'pro' },
       ]
     },
     {
@@ -671,6 +695,9 @@ const challengesCollections = {
         { q: "You sounded certain and were not.", a: "\"I sounded clear. I wasn't — that was a reaction.\" [Say You Don't Know What to Say]", bundle: 'pro' },
         { q: "You want to replace the reaction with what you actually think.", a: "\"The first half I do agree with. The second half I still don't know.\" [Answer the Part You Can]", bundle: 'pro' },
         { q: "You said something sharper than you meant.", a: "\"That came out harder than I meant it. What did you mean by it?\" [Ask What Prompted It]", bundle: 'pro' },
+        { q: "You went quiet and they read it as disapproval.", a: "\"That was me thinking, not judging. Sorry — say it again?\" [Say You Need a Second]", bundle: 'pro' },
+        { q: "You agreed too readily and now regret it.", a: "\"I said yes too fast yesterday. Can we go back to it?\" [Come Back to It Later]", bundle: 'pro' },
+        { q: "You gave advice when they wanted none.", a: "\"I jumped to fixing it. What did you actually want from telling me?\" [Ask What Prompted It]", bundle: 'pro' },
       ]
     },
     {
@@ -684,6 +711,9 @@ const challengesCollections = {
         { q: "The silence is becoming conspicuous.", a: "\"Give me a second — I'm thinking.\" [Say You Need a Second]", bundle: 'pro' },
         { q: "You can answer the practical part in the room.", a: "\"The dates I can answer. The rest I'd want to come back on.\" [Answer the Part You Can]", bundle: 'pro' },
         { q: "You catch them privately afterwards.", a: "\"What you said in there — what was behind it?\" [Ask What Prompted It]", bundle: 'pro' },
+        { q: "Someone puts you on the spot about a decision.", a: "\"I'll answer that properly by the end of the day.\" [Come Back to It Later]", bundle: 'pro' },
+        { q: "They say something about you in front of the team.", a: "\"That's worth talking about. Can we do it after?\" [Come Back to It Later]", bundle: 'pro' },
+        { q: "You want to say the honest thing but not all of it here.", a: "\"Some of it I can answer now. The rest I'd rather do properly.\" [Answer the Part You Can]", bundle: 'pro' },
       ]
     },
   ],
@@ -766,6 +796,9 @@ const challengesCollections = {
         { q: "The meeting is running out and the decision has not been made.", a: "\"I have to stop you — we've got four minutes and this is the bit that matters.\" (say why it matters)", bundle: 'pro' },
         { q: "Everyone else has stopped trying to get in.", a: "\"Sorry, can I come in? I think a few of us have things to add.\" (signal the interruption)", bundle: 'pro' },
         { q: "You are on a call and there is no visual way to signal.", a: "\"Sorry to cut across — can I add something?\" (signal the interruption)", bundle: 'pro' },
+        { q: "They pause to breathe and you miss it every time.", a: "\"Right there — can I take that gap?\" (signal the interruption)", bundle: 'pro' },
+        { q: "Two people are going back and forth and there is no third slot.", a: "\"Can I be the third voice for a second?\" (signal the interruption)", bundle: 'pro' },
+        { q: "You have been waiting so long you have forgotten the point.", a: "(at the next full stop) \"Sorry — I had something and I'm losing it.\" (wait for a natural pause)", bundle: 'pro' },
       ]
     },
     {
@@ -779,6 +812,9 @@ const challengesCollections = {
         { q: "Someone is about to redo work that is already finished.", a: "\"Hate to interrupt, but that's already been done.\" (say why it matters)", bundle: 'pro' },
         { q: "You have to leave soon and have something to contribute.", a: "\"Jumping in because I have to go in ten — can I say one thing?\" (say why it matters)", bundle: 'pro' },
         { q: "You need in fast and there is no time for a full run-up.", a: "\"Sorry — important one.\" (signal the interruption)", bundle: 'pro' },
+        { q: "They are describing a plan that depends on something already cancelled.", a: "\"Stopping you there — that meeting was cancelled this morning.\" (say why it matters)", bundle: 'pro' },
+        { q: "The client is about to be told something that is not true.", a: "\"One second before that goes out — the figure changed.\" (say why it matters)", bundle: 'pro' },
+        { q: "You are about to lose the chance to say it at all.", a: "\"Sorry — last chance for me to say this.\" (signal the interruption)", bundle: 'pro' },
       ]
     },
     {
@@ -792,6 +828,9 @@ const challengesCollections = {
         { q: "The wrong assumption is about to become a decision.", a: "\"Let me stop you before you build on that.\" (say why it matters)", bundle: 'pro' },
         { q: "You need to correct someone senior without it landing badly.", a: "\"You've clearly thought this through. One thing on the numbers though.\" (acknowledge the speaker first)", bundle: 'pro' },
         { q: "Everyone has noticed the error and nobody has said anything.", a: "\"Can I check one thing before we go further?\" (signal the interruption)", bundle: 'pro' },
+        { q: "They have attributed something to the wrong person.", a: "\"Small one — that was Priya's, not mine.\" (signal the interruption)", bundle: 'pro' },
+        { q: "The correction will take longer than the interruption.", a: "\"There's a thing here worth ten minutes. Can we come back to it properly?\" (say why it matters)", bundle: 'pro' },
+        { q: "You corrected them once and they have repeated it.", a: "\"I did mention this — it's the March figure, not February.\" (say why it matters)", bundle: 'pro' },
       ]
     },
     {
@@ -805,6 +844,9 @@ const challengesCollections = {
         { q: "Nobody else in the room has interrupted and you would be first.", a: "\"Sorry — may I add something here?\" (signal the interruption)", bundle: 'pro' },
         { q: "You have information they do not and it changes the picture.", a: "\"I only stop you because I've got something that changes this.\" (say why it matters)", bundle: 'pro' },
         { q: "You would rather drop your point than take the risk.", a: "(at the next pause) \"One thing I could add there, if it helps.\" (wait for a natural pause)", bundle: 'pro' },
+        { q: "They ask a rhetorical question and you have the answer.", a: "\"That one I can actually answer, if it helps.\" (acknowledge the speaker first)", bundle: 'pro' },
+        { q: "They are about to commit the team to something you cannot deliver.", a: "\"Before that's promised — can I say what's involved?\" (say why it matters)", bundle: 'pro' },
+        { q: "You want in but do not want to seem to be scoring a point.", a: "\"Not disagreeing — adding, if there's room.\" (acknowledge the speaker first)", bundle: 'pro' },
       ]
     },
     {
@@ -818,6 +860,9 @@ const challengesCollections = {
         { q: "You are the only person in the room who has interrupted.", a: "\"I've done this twice now, so I'll be quick.\" (use humour)", bundle: 'pro' },
         { q: "Your second point is genuinely more important than the first.", a: "\"I know, twice — but this one actually changes the plan.\" (say why it matters)", bundle: 'pro' },
         { q: "You realise mid-sentence that you have cut across someone again.", a: "\"And I've done it again. Sorry — go on.\" (use humour)", bundle: 'pro' },
+        { q: "You have cut in twice and someone quieter has not spoken at all.", a: "\"I'll stop — I think Anna was going to say something.\" (acknowledge the speaker first)", bundle: 'pro' },
+        { q: "You are about to interrupt out of impatience rather than need.", a: "(say nothing, wait) \"Go on — sorry.\" (wait for a natural pause)", bundle: 'pro' },
+        { q: "Your third one is small and you know it.", a: "\"This one's tiny and then I'll be quiet for an hour.\" (use humour)", bundle: 'pro' },
       ]
     },
   ],
@@ -833,6 +878,9 @@ const challengesCollections = {
         { q: "One person keeps finishing your sentences for you.", a: "\"Close, but let me say it my way — I'm nearly there.\" (acknowledge and continue)", bundle: 'pro' },
         { q: "Someone jumps in the instant you pause for breath.", a: "\"That pause wasn't the end — give me one more line.\" (reinforce the boundary)", bundle: 'pro' },
         { q: "The same person talks over you again after you asked them to wait.", a: "\"I did mean it about finishing — thirty seconds, then you're up.\" (reinforce the boundary)", bundle: 'pro' },
+        { q: "You asked them to wait and they waited four seconds.", a: "\"Four seconds. I'll take it — but let me actually finish.\" (use humour)", bundle: 'pro' },
+        { q: "They interrupt you but nobody else in the room.", a: "\"I notice it's mostly me you do this to. Let me have this one.\" (reinforce the boundary)", bundle: 'pro' },
+        { q: "It is a friend and you do not want to make it a thing.", a: "\"You do this, you know. Go on then — but I'm finishing after.\" (use humour)", bundle: 'pro' },
       ]
     },
     {
@@ -846,6 +894,9 @@ const challengesCollections = {
         { q: "A teammate excitedly finishes your idea for you.", a: "\"Ha, exactly — let me just say the rest my way.\" (use humour)", bundle: 'pro' },
         { q: "Someone interrupts to add an eager \"yes, and—\".", a: "\"Save the 'and' one sec — I'm nearly at it.\" (invite them in after)", bundle: 'pro' },
         { q: "A friend keeps bursting in because they're loving the story.", a: "\"You're going to love the ending — let me get us there!\" (use humour)", bundle: 'pro' },
+        { q: "They interrupt with something genuinely better than your point.", a: "\"That's better than where I was going. Take it.\" (let it go and reclaim)", bundle: 'pro' },
+        { q: "They keep saying \"yes, exactly\" over the top of you.", a: "\"I can tell you agree. Let me get to the bit you'll agree with more.\" (use humour)", bundle: 'pro' },
+        { q: "Their excitement has taken the story somewhere else.", a: "\"We'll get there — I've got one more bit first.\" (invite them in after)", bundle: 'pro' },
       ]
     },
     {
@@ -859,6 +910,9 @@ const challengesCollections = {
         { q: "You start to speak and two louder voices roll over you.", a: "\"Hold on — let me finish this one, it won't take long.\" (reinforce the boundary)", bundle: 'pro' },
         { q: "Your contribution got lost in the crosstalk.", a: "\"One thing before we move on — I hadn't finished my point.\" (let it go and reclaim)", bundle: 'pro' },
         { q: "Every time you start, someone else grabs the floor.", a: "\"Let me actually get a full sentence out — then it's open.\" (reinforce the boundary)", bundle: 'pro' },
+        { q: "You have tried twice and the room has not noticed.", a: "\"Third attempt — can I have thirty seconds?\" (reinforce the boundary)", bundle: 'pro' },
+        { q: "Someone else notices and tries to hand it back to you.", a: "\"Thanks — yes, what I was getting at was —\" (let it go and reclaim)", bundle: 'pro' },
+        { q: "The point stopped mattering while you waited.", a: "\"Mine's gone stale now. Carry on.\" (let it go and reclaim)", bundle: 'pro' },
       ]
     },
     {
@@ -872,6 +926,9 @@ const challengesCollections = {
         { q: "Someone more senior redirects before you're done.", a: "\"Happy to go there — one moment to close this off.\" (acknowledge and continue)", bundle: 'pro' },
         { q: "Your boss jumps in and the room defers to them.", a: "\"…circling back, the point I was making was —\" (let it go and reclaim)", bundle: 'pro' },
         { q: "A senior person interrupts with a correction.", a: "\"Good catch — let me finish the main point, then the detail.\" (acknowledge and continue)", bundle: 'pro' },
+        { q: "They interrupt to agree with you and then take the point over.", a: "\"That's it exactly — and the part I hadn't got to was —\" (acknowledge and continue)", bundle: 'pro' },
+        { q: "They cut in and the room is now looking at them.", a: "(wait, then) \"To close mine off — it was the timing I was worried about.\" (let it go and reclaim)", bundle: 'pro' },
+        { q: "You need to finish and they are clearly not going to stop.", a: "\"I'll send the rest in writing so it doesn't get lost.\" (let it go and reclaim)", bundle: 'pro' },
       ]
     },
     {
@@ -885,6 +942,9 @@ const challengesCollections = {
         { q: "They interrupt with an unrelated question and never come back.", a: "\"Happy to answer — right after I finish this thought.\" (reinforce the boundary)", bundle: 'pro' },
         { q: "Your idea gets abandoned after someone jumps in.", a: "\"Let me resurface that — I think it's still the key thing.\" (let it go and reclaim)", bundle: 'pro' },
         { q: "An interruption changes the subject completely.", a: "\"Quick one — can we finish my point before we switch?\" (reinforce the boundary)", bundle: 'pro' },
+        { q: "The new subject is more urgent than yours.", a: "\"That's bigger — deal with that. Mine can wait.\" (let it go and reclaim)", bundle: 'pro' },
+        { q: "Everyone has forgotten there was an earlier point.", a: "\"One from before we moved — can I finish it?\" (reinforce the boundary)", bundle: 'pro' },
+        { q: "They interrupted with a question you can answer in four words.", a: "\"Yes, Thursday. Right — where I was —\" (acknowledge and continue)", bundle: 'pro' },
       ]
     },
   ],
