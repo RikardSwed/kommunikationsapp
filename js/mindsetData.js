@@ -1856,8 +1856,8 @@ const mindsetCollections = {
   brokenrecord: [
     {
       name: "You Do Not Owe a Reason",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "Offering a reason feels like the decent thing to do — it treats the other person as reasonable and shows you are not being arbitrary. In the middle of pressure it does the opposite: it hands them the terms of the argument.\n\nOnce a reason is on the table, the question stops being what you decided and becomes whether your reason is good enough. That is a question the other person now gets to answer, and they will answer it in their favour.\n\nMindset: a decision that is yours to make does not require a justification. \"I'd rather not\" is complete.",
       inputs: [
         { q: "It's rude not to explain myself.", a: "It's normal. \"I'd rather not\" is a complete sentence between adults.", bundle: 'pro' },
@@ -1865,12 +1865,15 @@ const mindsetCollections = {
         { q: "They'll think I'm hiding something.", a: "They might. That's cheaper than an hour of negotiating your reason.", bundle: 'pro' },
         { q: "I've got a genuinely good reason, why not use it?", a: "Because they'll work around it, and then you'll need a second one.", bundle: 'pro' },
         { q: "Not explaining feels cold.", a: "Then acknowledge them warmly and still don't explain. The two are separate.", bundle: 'pro' },
+        { q: "They asked me directly why.", a: "A question doesn't create a debt. \"I'd rather not go into it\" is an answer.", bundle: 'pro' },
+        { q: "Refusing to explain will make them angrier.", a: "Briefly, maybe. Explaining hands them the thing to argue with for an hour.", bundle: 'pro' },
+        { q: "I gave a reason and now we're discussing the reason.", a: "That's what reasons do. Go back to the line and leave it there.", bundle: 'pro' },
       ]
     },
     {
       name: "Repetition Is Not Rudeness",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "Saying the same sentence four times feels obstinate and slightly absurd, which is why most people rephrase instead — and rephrasing is exactly what keeps the conversation alive.\n\nFrom the outside it does not read as rude. It reads as settled. The other person is not offended by the repetition; they are informed by it, and most stop after the third identical answer because there is visibly nowhere left to go.\n\nMindset: the sameness is the message. It says this is not being decided right now.",
       inputs: [
         { q: "Saying the same thing again is obviously annoying.", a: "Less annoying than fifteen more minutes of it. Repetition is the short route.", bundle: 'pro' },
@@ -1878,12 +1881,15 @@ const mindsetCollections = {
         { q: "They'll think I'm not listening.", a: "That's what the acknowledgement is for. One clause, then the same line.", bundle: 'pro' },
         { q: "It feels like a power play.", a: "It's the opposite — it's the version with no argument and no raised voice in it.", bundle: 'pro' },
         { q: "Surely I should engage with what they're saying.", a: "You can hear it without answering it. Those are different things.", bundle: 'pro' },
+        { q: "I've said it four times and I feel absurd.", a: "You feel it. They hear a settled answer. Those are different experiences.", bundle: 'pro' },
+        { q: "Changing the words slightly would sound more human.", a: "And it opens a new sentence to argue with. Keep it human in the tone instead.", bundle: 'pro' },
+        { q: "They said \"you keep saying the same thing\".", a: "\"I do, because it hasn't changed.\" That's a complete reply.", bundle: 'pro' },
       ]
     },
     {
       name: "Their Discomfort Is Not Your Emergency",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "The hardest part of holding a line is not the argument. It is watching someone be disappointed, frustrated or upset and knowing you could end it instantly by giving in.\n\nThat impulse is decent and it is also the mechanism by which people end up doing things they had decided not to do. Someone else's disappointment is uncomfortable and it is survivable, for both of you.\n\nMindset: you are allowed to leave someone disappointed. That is not the same as having wronged them.",
       inputs: [
         { q: "They're really upset — I should just say yes.", a: "You'd be solving your discomfort, not theirs. And you'd resent it by Thursday.", bundle: 'pro' },
@@ -1891,12 +1897,15 @@ const mindsetCollections = {
         { q: "I'm being unkind.", a: "You're declining a request. Those aren't the same thing.", bundle: 'pro' },
         { q: "They'll be angry with me.", a: "Possibly, briefly. Doing it resentfully lasts longer.", bundle: 'pro' },
         { q: "A better person would help.", a: "A better person would also be allowed to say no to this one.", bundle: 'pro' },
+        { q: "They started crying and I nearly folded.", a: "Stay warm, keep the line. Comfort and agreement are different things to offer.", bundle: 'pro' },
+        { q: "I'll say yes and sort it out later.", a: "Later you'll have the same conversation plus a broken promise.", bundle: 'pro' },
+        { q: "Someone else is watching and I look cold.", a: "A calm repeated line reads as steady. Nobody has ever read it as cold.", bundle: 'pro' },
       ]
     },
     {
       name: "Calm Is the Technique",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "The words matter far less than the delivery. The same sentence, said with a sigh or a sharpened edge, tells the other person that you are close to breaking or that this has become a fight — and both invite more pressure.\n\nFlat, level and unbothered is what says the decision is not in play. It is also what keeps the relationship intact, because nothing has been said that either of you has to apologise for later.\n\nMindset: nothing to prove, nothing to defend. Just the same sentence, said the same way.",
       inputs: [
         { q: "I'm getting annoyed and it's showing.", a: "Shorten the sentence. Short is easier to say calmly than long.", bundle: 'pro' },
@@ -1904,6 +1913,73 @@ const mindsetCollections = {
         { q: "A bit of sarcasm would make my point.", a: "It would start an argument. Then it's about your tone, not your answer.", bundle: 'pro' },
         { q: "I want them to know how frustrating this is.", a: "Say it plainly once, if you must. Do not let it into the line.", bundle: 'pro' },
         { q: "If I'm too calm they won't take it seriously.", a: "Calm repetition is taken far more seriously than heat. It reads as settled.", bundle: 'pro' },
+        { q: "My voice went up on the fourth repeat.", a: "Notice it, drop it back, say the line once more flat. That's the whole repair.", bundle: 'pro' },
+        { q: "Staying level feels like letting them off.", a: "It's what makes the line hold. Heat is the thing that gives them something to answer.", bundle: 'pro' },
+        { q: "They accused me of being cold about it.", a: "Then warm the acknowledgement, not the line. \"I know this is hard — and still no.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "I'll Know What to Say",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "Deciding the exact sentence beforehand feels like over-preparing for something that has not happened yet — and slightly false, as though you were rehearsing a part rather than having a conversation. The words will come when they are needed.\n\nThey will. What comes is three sentences instead of one, and one of them carries a hedge you did not intend to offer. The line decided in a calm room is the only version written by you rather than by the pressure.\n\nMindset: write the sentence before you need it. Under pressure you will not compose, you will improvise, and improvised lines negotiate.",
+      inputs: [
+        { q: "Deciding the words in advance feels like rehearsing.", a: "One sentence isn't a rehearsal. It's the only part you can't invent later.", bundle: 'pro' },
+        { q: "I don't know yet what they'll ask for.", a: "You know what your answer is. Write that, not a reply to a question you haven't heard.", bundle: 'pro' },
+        { q: "A prepared line will sound stiff.", a: "It sounds calm. Stiff is what improvising under pressure actually sounds like.", bundle: 'pro' },
+        { q: "I'll adapt it depending on how they take it.", a: "That's the trap. Adapting is how \"no\" turns into \"not this month, probably\".", bundle: 'pro' },
+        { q: "My line has three parts to it.", a: "Then it isn't a line yet. Cut it until one sentence carries the whole position.", bundle: 'pro' },
+        { q: "I've decided the reasons, that's the same thing.", a: "Reasons are what they'll argue with. Decide the position instead.", bundle: 'pro' },
+        { q: "It's only a small conversation.", a: "Small conversations are where people say yes by accident. Ten seconds of deciding covers it.", bundle: 'pro' },
+        { q: "I'd feel silly writing it down.", a: "Say it out loud once in the car. That's the whole preparation.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "This One Deserves an Answer",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "When the first line of persuasion fails, the next one usually arrives dressed as a different subject — fairness, what happened last year, what someone else did. It genuinely sounds like a new point, so declining to engage with it feels like dodging.\n\nBut each new frame restarts the conversation, and answering it moves you from your position to theirs. The question is not whether the point is interesting. It is whether answering it gets you any closer to the thing you already decided, and it does not — it hands them a fresh subject to be right about.\n\nMindset: notice the switch and do not take it. The line is the answer to all of them.",
+      inputs: [
+        { q: "That's a completely different point, I should address it.", a: "It's a different route to the same request. The line answers all the routes.", bundle: 'pro' },
+        { q: "If I don't respond they'll think I can't.", a: "They'll notice you didn't move. That reads as settled, not stuck.", bundle: 'pro' },
+        { q: "They've raised something that isn't fair to leave.", a: "Then say you'll talk about it separately. Not now, not attached to this.", bundle: 'pro' },
+        { q: "It would be rude to ignore what they just said.", a: "Acknowledge it in four words, then repeat. That isn't ignoring.", bundle: 'pro' },
+        { q: "They brought up something true about me.", a: "True and irrelevant here. \"That's fair — and I'm still not going to.\"", bundle: 'pro' },
+        { q: "I answered one and now there are four more.", a: "That's the pattern arriving on schedule. Stop answering and the supply dries up.", bundle: 'pro' },
+        { q: "This new argument is actually a good one.", a: "Then hear it another day, from the start. Not as the fifth attempt at this.", bundle: 'pro' },
+        { q: "If I don't engage the conversation just stalls.", a: "Stalling is the point. A stalled persuasion attempt is one that has finished.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "A Compromise Is a Loss",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "Offering something after repeating a line five times feels like the repetition failing at the last moment — as though everything before it was a bluff you have now folded on.\n\nIt depends entirely on what the line was about. A position of principle has nothing to trade; a practical constraint nearly always does, and the version you offer is the one that works for you rather than the one they asked for. Offered from a line you held, it reads as generous. Offered from a line you were about to drop, it reads as caving — which is why the order matters more than the offer.\n\nMindset: hold first, offer second. Offering from a held position is not the same act as giving in.",
+      inputs: [
+        { q: "Offering anything undoes all the repeating.", a: "Not if the offer is yours, not theirs. You're adding, not conceding.", bundle: 'pro' },
+        { q: "They'll think the repetition was just a negotiating tactic.", a: "Then say which part is fixed. \"The money is a no. The lift I can do.\"", bundle: 'pro' },
+        { q: "If I had something to offer I should have said so earlier.", a: "Earlier it becomes the new starting point and they negotiate from there.", bundle: 'pro' },
+        { q: "A half-measure will just annoy them.", a: "Some. Most people would rather have the half than the nothing.", bundle: 'pro' },
+        { q: "My position is practical, but offering feels weak anyway.", a: "Weakness is moving your line. An offer beside it isn't a move.", bundle: 'pro' },
+        { q: "They'll come back and ask for more.", a: "Then the line is still there, and you repeat it. That's what it's for.", bundle: 'pro' },
+        { q: "I can't think of anything workable.", a: "Then there isn't one. Say so plainly and stay on the line.", bundle: 'pro' },
+        { q: "I offered and they turned it down.", a: "Fine. You've now given them two answers and neither was yes.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Stopping Is Giving Up",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "Ending the conversation while they are still asking feels like walking out of an unfinished argument — as though the technique only worked if they eventually agreed, and leaving without that means it did not work.\n\nAgreement was never the target. The point of repeating a line is that your answer stays the same however many times it is asked, and there is a number of times after which repeating adds nothing at all. Stopping is the last move in the sequence, not the absence of one.\n\nMindset: name the end and take it. The conversation finishing is what a held line looks like from outside.",
+      inputs: [
+        { q: "I can't leave while they're still not happy.", a: "Their being happy was never yours to deliver. The answer was.", bundle: 'pro' },
+        { q: "If I end it now nothing has been resolved.", a: "It has. They asked, you answered, and the answer didn't change.", bundle: 'pro' },
+        { q: "They'll bring it up again tomorrow.", a: "Then you say the line tomorrow. That's cheaper than an hour tonight.", bundle: 'pro' },
+        { q: "Ending it makes me the one who walked away.", a: "\"I'm going to leave it there\" is an ending, not a walk-out. Say it warmly.", bundle: 'pro' },
+        { q: "One more round might do it.", a: "Round six has never done it. Notice that you're the one still hoping.", bundle: 'pro' },
+        { q: "It feels harsh to stop when they're upset.", a: "Staying longer doesn't help them. It just puts you both in it for another twenty minutes.", bundle: 'pro' },
+        { q: "I don't know how to close it.", a: "\"We're going round now. I'll leave it there.\" Then change the subject or go.", bundle: 'pro' },
+        { q: "Stopping means I have to be the bad one.", a: "Somebody has to end it. The one who ends it kindly isn't the bad one.", bundle: 'pro' },
       ]
     },
   ],

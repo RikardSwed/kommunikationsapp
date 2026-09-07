@@ -2645,8 +2645,6 @@ const memorizeCollections = {
   brokenrecord: [
     {
       name: "Core Idea",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The shape of the technique: hold one sentence calmly, and know where the judgement lies.",
       cards: [
         { q: "What are the eight parts of this technique?", a: "Decide your line, acknowledge and repeat, keep the same words, don't give reasons, don't follow the new argument, keep the tone flat, offer a workable compromise, know when to stop.", bundle: 'free' },
@@ -2659,8 +2657,6 @@ const memorizeCollections = {
     },
     {
       name: "Decide Your Line",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The preparation, which decides how the rest goes.",
       cards: [
         { q: "What three properties does a good line have?", a: "Short, about you rather than them, and containing no reason.", bundle: 'free' },
@@ -2673,8 +2669,6 @@ const memorizeCollections = {
     },
     {
       name: "Acknowledge, Then Repeat",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The core move.",
       cards: [
         { q: "What does the acknowledgement prevent?", a: "The other person repeating themselves louder because they think you have not understood.", bundle: 'free' },
@@ -2687,8 +2681,6 @@ const memorizeCollections = {
     },
     {
       name: "Keep the Same Words",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "Why the technique has its name.",
       cards: [
         { q: "Why repeat the exact wording?", a: "Every rephrasing is a new sentence, and a new sentence can be argued with.", bundle: 'free' },
@@ -2701,8 +2693,6 @@ const memorizeCollections = {
     },
     {
       name: "Don't Give Reasons",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The part that decides whether the technique works.",
       cards: [
         { q: "What happens to every reason you give?", a: "It becomes something to solve, disprove or work around.", bundle: 'free' },
@@ -2715,8 +2705,6 @@ const memorizeCollections = {
     },
     {
       name: "Don't Follow the New Argument",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The move for when they change tack.",
       cards: [
         { q: "What is a \"new argument\" usually?", a: "The same request wearing a different coat.", bundle: 'free' },
@@ -2729,8 +2717,6 @@ const memorizeCollections = {
     },
     {
       name: "Keep the Tone Flat",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The delivery, which matters more than the words.",
       cards: [
         { q: "What does tone tell the other person?", a: "Whether you are being worn down or standing firm.", bundle: 'free' },
@@ -2743,8 +2729,6 @@ const memorizeCollections = {
     },
     {
       name: "Offer a Workable Compromise",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "What stops the technique becoming a wall.",
       cards: [
         { q: "What is the test for whether to compromise?", a: "Whether your self-respect is involved — would saying yes to a modified version leave you feeling used?", bundle: 'free' },
@@ -2757,8 +2741,6 @@ const memorizeCollections = {
     },
     {
       name: "Know When to Stop",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The endpoint, which is part of the technique.",
       cards: [
         { q: "What two things signal the end?", a: "You have repeated the line three or four times with no change, or they have moved from persuading to pressuring.", bundle: 'free' },

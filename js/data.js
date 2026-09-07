@@ -2853,8 +2853,8 @@ const collections = {
   brokenrecord: [
     {
       name: "Decide Your Line",
-      guideFront: "They are pushing. Hold the line — say it out loud.",
-      guideBack: "One way it could sound.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "Before the conversation, decide the one sentence you are going to repeat. Not the reasons, not the explanation — the position, in the fewest words that are still clear.\n\nIt works because you will say this sentence four or five times, and a line chosen under pressure is almost always too long, too apologetic, or too specific. A line chosen in advance is short, calm, and repeatable without sounding worse each time.\n\nThe best lines share three properties: they are **short**, they are **about you** rather than about them, and they contain **no reason**. \"I'm not lending money at the moment\" holds up. \"I can't really afford it right now because of the car thing\" invites a negotiation about the car.\n\nTypical phrases: \"I'm not going to do that.\", \"I'd like to stick with my plan.\", \"That doesn't work for me.\", \"I'm not lending money.\"\n\nFour things a good line needs:\n\n1. Short enough to repeat — if it takes a breath and a half, it is too long. \"No, I'm not doing Saturday.\"\n\n2. About you, not about them — a statement of your position, not a judgement of their request. \"I'm not free\" rather than \"that's a big ask\".\n\n3. No reason in it — the moment a reason is inside the line, the line is arguable. \"I'm not coming\" rather than \"I'm too tired to come\".\n\n4. Something you can say calmly at the fifth repetition — test it by imagining saying it five times. Anything sharp gets sharper.\n\nMindset: choose it before you need it. Ten seconds of preparation is worth more than any amount of quick thinking mid-pressure.",
       inputs: [
         { q: "A friend is going to ask you to lend them money again.", a: "\"I'm not lending money at the moment.\"", bundle: 'free' },
@@ -2875,8 +2875,8 @@ const collections = {
     },
     {
       name: "Acknowledge, Then Repeat",
-      guideFront: "They are pushing. Hold the line — say it out loud.",
-      guideBack: "One way it could sound.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "Show you heard them, briefly, then say your line again. \"I understand it's frustrating — I'm still not going to be able to.\"\n\nIt works because it removes the most common escalation, which is the other person repeating themselves louder because they think you have not understood. One clause of acknowledgement takes that away.\n\nThe acknowledgement must be **short**. A sentence, not a paragraph. Long sympathy reads as a softening, and a softening reads as an opening — the other person hears that you are on the way to yes and pushes harder, which is worse for both of you.\n\nTypical phrases: \"I understand, but…\", \"I hear you, and…\", \"That might be true, and…\", \"I can see why you'd want that. I'm still not…\"\n\nFour ways to acknowledge briefly:\n\n1. Name their position — shows you followed it. \"I know you're stuck for someone. I still can't do Saturday.\"\n\n2. Concede what is true — takes the argument away without conceding the position. \"You're right that I did it last time. I'm not doing it this time.\"\n\n3. Acknowledge the feeling — for when they are annoyed rather than arguing. \"I can see you're frustrated. My answer's the same.\"\n\n4. Acknowledge and move straight on — no pause for a reply. \"Fair enough — I'm still not going to.\"\n\nMindset: acknowledge in one clause, then the line. If the acknowledgement is longer than the line, you have started negotiating.",
       inputs: [
         { q: "A friend says they are desperate and have no one else to ask.", a: "\"I know you're in a bind. I'm still not lending money.\"", bundle: 'free' },
@@ -2897,8 +2897,8 @@ const collections = {
     },
     {
       name: "Keep the Same Words",
-      guideFront: "They are pushing. Hold the line — say it out loud.",
-      guideBack: "One way it could sound.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "Repeat the line in the same wording rather than rephrasing it. \"I'm not lending money\" stays \"I'm not lending money\" — not \"I really can't stretch to it\", not \"it's just not a good time\".\n\nIt works because every rephrasing is a new sentence, and a new sentence can be argued with. Rephrase four times and you have given the other person four different positions to test, one of which will be weaker than the others.\n\nSameness also does something to the conversation without any hostility in it: it signals, without saying so, that this is settled rather than under discussion. That is the entire reason the technique has its name.\n\nTypical phrases: the same short line, each time, in the same words.\n\nFour things sameness does:\n\n1. Removes new material — nothing fresh to attack. Each rephrasing hands them something.\n\n2. Signals settledness — repetition says \"this is not being decided right now\" more clearly than any argument.\n\n3. Keeps you calm — you are not composing, so you have attention left for your tone.\n\n4. Ends things faster — most people stop after the third identical answer, because there is visibly nowhere to go.\n\nMindset: resist the urge to say it better. Saying it differently is heard as saying it less firmly.",
       inputs: [
         { q: "You have said \"I'm not lending money\" once and they push again.", a: "\"I'm not lending money.\"", bundle: 'free' },
@@ -2919,8 +2919,8 @@ const collections = {
     },
     {
       name: "Don't Give Reasons",
-      guideFront: "They are pushing. Hold the line — say it out loud.",
-      guideBack: "One way it could sound.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "Do not explain why. Give the position, not the justification.\n\nThis is the part people find hardest and the part that decides whether the technique works. A reason feels like the polite thing to offer — but every reason you give becomes something to solve, disprove or work around. Say you are busy, and they find you a time. Say you cannot afford it, and they offer to wait for payday. Say you are tired, and they say it will be an early night.\n\nWorse, offering a reason quietly changes the question. It moves the conversation from *what you have decided* to *whether your reason is good enough* — and that is a question the other person now gets a vote on.\n\nTypical phrases: \"I'd rather not go into it.\", \"It's just not something I'm doing.\", \"No particular reason — I'm just not.\", \"I'm not going to explain it, but the answer's no.\"\n\nFour ways to hold without reasons:\n\n1. State it as a preference — needs no justification by definition. \"I'd rather not.\"\n\n2. Decline to explain, openly — honest and surprisingly effective. \"I'm not going to get into why. The answer's no.\"\n\n3. Say it is not about anything — removes the search for a cause. \"It's nothing you've done. I'm just not able to.\"\n\n4. Answer the reason-hunting question with the line — do not take the bait. \"Why not?\" — \"I'm just not able to.\"\n\nMindset: you do not owe a reason for a decision that is yours to make. A reason is a door, and you are choosing not to open it.",
       inputs: [
         { q: "A friend asks why you will not lend them the money.", a: "\"I'd rather not get into it. I'm just not lending at the moment.\"", bundle: 'free' },
@@ -2941,8 +2941,8 @@ const collections = {
     },
     {
       name: "Don't Follow the New Argument",
-      guideFront: "They are pushing. Hold the line — say it out loud.",
-      guideBack: "One way it could sound.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "When one line of persuasion fails, people switch to another. The request becomes about fairness, then about the past, then about what kind of person you are. Each new argument invites you to answer it, and answering is how you lose the thread.\n\nIt works because the new argument is not really a new argument — it is the same request wearing a different coat. Answering it moves you onto ground the other person chose, and you can be kept there indefinitely.\n\nThe move is to not engage with the content at all. Acknowledge it exists, and give the line.\n\nTypical phrases: \"That's a separate thing.\", \"Maybe so — the answer's still no.\", \"We can talk about that another time. I'm not doing this one.\", \"I'm not going to argue it.\"\n\nFour kinds of switch, and the same answer:\n\n1. To fairness — \"you did it for him\". Answer: \"I did. I'm not doing this one.\"\n\n2. To the past — \"you always do this\". Answer: \"That's a bigger conversation. Today, I'm not able to.\"\n\n3. To your character — \"you've got so mean lately\". Answer: \"Maybe. The answer's still no.\"\n\n4. To consequences — \"we'll have to cancel then\". Answer: \"I understand. I'm still not able to.\"\n\nMindset: notice the switch and name nothing. Every new topic answered is another five minutes.",
       inputs: [
         { q: "They say you helped someone else last month.", a: "\"I did. I'm not doing it this time.\"", bundle: 'free' },
@@ -2963,8 +2963,8 @@ const collections = {
     },
     {
       name: "Keep the Tone Flat",
-      guideFront: "They are pushing. Hold the line — say it out loud.",
-      guideBack: "One way it could sound.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "Say the line the same way each time — calm, level, no edge. The technique fails not when the words change but when the delivery does.\n\nIt works because tone is what tells the other person whether you are being worn down or standing firm. A line delivered with a sigh says you are close to breaking. A line delivered with sarcasm turns a boundary into a fight, and once it is a fight, the subject stops being your decision.\n\nIn practice, tone lives in a few specific words. \"As I already said\" is an accusation. \"Like I told you\" is a scoring point. \"Honestly…\" is exasperation. Strip them out and the same sentence lands as steady rather than annoyed.\n\nTypical phrases: the line itself, with nothing added — no \"obviously\", no \"as I said\", no sigh.\n\nFour things that leak tone:\n\n1. \"As I already said\" — turns repetition into a complaint. Just say the line.\n\n2. Sarcasm or exaggeration — \"oh, so I'm the villain now\". Converts the conversation into an argument.\n\n3. Volume and speed — getting faster or louder signals you are rattled, whatever the words say.\n\n4. Over-apologising — \"I'm so sorry, I feel terrible\" invites more pressure, because distress looks like movement.\n\nMindset: the calm is the technique. The words only work if the delivery says the decision is not in play.",
       inputs: [
         { q: "You are on the fourth repetition and getting irritated.", a: "\"I'm not able to do it.\"", bundle: 'free' },
@@ -2985,8 +2985,8 @@ const collections = {
     },
     {
       name: "Offer a Workable Compromise",
-      guideFront: "They are pushing. Hold the line — say it out loud.",
-      guideBack: "One way it could sound.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "When your position is about a practical matter rather than a principle, offer something that works for you. \"I can't lend you money. I can help you look at the numbers if that would be useful.\"\n\nIt works because it stops the technique becoming a wall. Holding a line matters; holding it when a reasonable alternative exists is stubbornness, and the other person is right to find it frustrating.\n\nThe test is whether your **self-respect** is involved. If saying yes to a modified version would leave you feeling used or overridden, do not compromise — repeat the line. If it would simply be a different arrangement that suits you, offering it is generous and usually ends the conversation.\n\nOffer it **once**, and only after the line has held. A compromise offered early is heard as the first concession in a negotiation.\n\nTypical phrases: \"I can't do X. I could do Y.\", \"Not that, but I could…\", \"What I can offer is…\", \"That doesn't work for me. Would … help?\"\n\nFour kinds of compromise:\n\n1. Smaller version — same thing, less of it. \"I can't do the whole weekend. I could do Saturday morning.\"\n\n2. Different form of help — not what was asked, but useful. \"I'm not lending money. I'll happily help you sort out the bills.\"\n\n3. Different time — when the objection is timing rather than the thing. \"Not this month. Ask me again in the new year.\"\n\n4. Naming what you would say yes to — hands them a real route. \"If it were a lift rather than the whole day, that I could do.\"\n\nMindset: compromise where the principle is not at stake, and hold where it is. Knowing which is which is the actual skill.",
       inputs: [
         { q: "A friend needs money and you will not lend it.", a: "\"I'm not lending money. I'll help you go through what's owed, if that's useful.\"", bundle: 'free' },
@@ -3007,8 +3007,8 @@ const collections = {
     },
     {
       name: "Know When to Stop",
-      guideFront: "They are pushing. Hold the line — say it out loud.",
-      guideBack: "One way it could sound.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "The technique has an endpoint. Repetition works because it is finite — at some point you stop repeating and end the conversation instead.\n\nIt works because indefinite repetition is exhausting for both people and eventually becomes its own kind of aggression. Ending it — saying that the answer will not change and that you are going to leave it there — is what turns holding a line into a completed conversation rather than a siege.\n\nTwo things signal the end: you have said the line three or four times with nothing changing, or the other person has moved from persuading to pressuring. Either is enough.\n\nTypical phrases: \"I'm going to leave it there.\", \"We're going round in circles — the answer isn't going to change.\", \"I'm not going to keep saying it.\", \"Let's talk about something else.\"\n\nFour ways to end it:\n\n1. Name the loop — accurate and hard to argue with. \"We're going round in circles.\"\n\n2. Say the answer is final — clear rather than harsh. \"It's not going to change, so I'm going to stop repeating myself.\"\n\n3. Change the subject deliberately — for people you will keep talking to. \"Right — that's settled. How's the new job?\"\n\n4. Leave the conversation — when it has stopped being a conversation. \"I'm going to go. We can talk another time.\"\n\nMindset: ending it is part of the technique, not a failure of it. A line held four times and then closed is stronger than a line held forever.",
       inputs: [
         { q: "You have repeated your line four times with no change.", a: "\"We're going round in circles. The answer isn't going to change.\"", bundle: 'free' },
@@ -10540,8 +10540,8 @@ const collectionsModeData = {
   brokenrecord: [
     {
       name: "Before It Starts",
-      guideFront: "What does holding this line need right now?",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Deciding your line and keeping the same words — the preparation half of the technique, and the part that decides how the rest goes.\n\nA line chosen in advance is short, has no reason in it, and can still be said calmly on the fifth attempt. A line invented under pressure is usually long, apologetic and specific, which means it hands the other person something to work with.\n\nKeeping the same words is the same principle continued into the conversation: every rephrasing is a new sentence, and a new sentence can be argued with.\n\nMindset: ten seconds of preparation beats any amount of quick thinking mid-pressure.",
       inputs: [
         { q: "You know you will be asked to cover a shift tomorrow.", a: "\"I can't do extra shifts this month.\" [Decide Your Line]", bundle: 'pro' },
@@ -10555,8 +10555,8 @@ const collectionsModeData = {
     },
     {
       name: "Under Pressure",
-      guideFront: "What does holding this line need right now?",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Acknowledging without conceding, refusing to give reasons, not following the new argument, and keeping the tone flat — the four moves for the middle of the conversation.\n\nThey defend against the four standard pressures: being told you have not understood, being asked to justify yourself, being moved onto new ground, and being wound up until you say something you regret.\n\nThe one that decides everything is refusing to give reasons. A reason moves the conversation from what you decided to whether your reason is good enough — and the other person now gets a vote.\n\nMindset: acknowledge, hold, do not explain, do not follow.",
       inputs: [
         { q: "They say you cannot possibly understand how urgent it is.", a: "\"I know you're stuck. I'm still not able to.\" [Acknowledge, Then Repeat]", bundle: 'pro' },
@@ -10570,8 +10570,8 @@ const collectionsModeData = {
     },
     {
       name: "All Eight",
-      guideFront: "What does holding this line need right now?",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The full technique. Most of it is one move repeated, and the judgement lies at the two ends — choosing the line before, and choosing when to stop.\n\nA rough shape: decide the line, acknowledge and repeat, hold the wording, refuse reasons, ignore the switches, keep the tone level, offer a compromise if the principle allows one, and close it when repetition has done its work.\n\nThe two failures are opposite. Softening — the line gets longer, the reasons appear, the tone wobbles. And walling — repeating a line when a reasonable compromise exists, or when you are actually in the wrong.\n\nMindset: hold what is yours to hold, and be honest about what is not.",
       inputs: [
         { q: "You know the request is coming this afternoon.", a: "\"I'm not lending money at the moment.\" [Decide Your Line]", bundle: 'pro' },

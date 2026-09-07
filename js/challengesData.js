@@ -1963,8 +1963,8 @@ const challengesCollections = {
   brokenrecord: [
     {
       name: "You Are Wearing Down",
-      guideFront: "What makes holding this line hard?",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The fifth repetition is harder than the first. The line starts getting longer, an apology creeps in, a reason appears, and eventually you hear yourself half-agreeing to something you had decided against.\n\nWhat has changed is not your position but your stamina — and the other person can hear it, which is why the pushing continues. The answer is to make the line shorter rather than longer, and to move to the endpoint sooner.\n\nMindset: when you feel yourself softening, shorten the sentence and close the conversation.",
       inputs: [
         { q: "Your line is getting longer with each repetition.", a: "\"No. Same answer.\" [Keep the Same Words]", bundle: 'pro' },
@@ -1976,8 +1976,8 @@ const challengesCollections = {
     },
     {
       name: "They Have a Genuinely New Point",
-      guideFront: "What makes holding this line hard?",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Occasionally the other person says something you had not considered, and it actually changes the picture. The technique is not supposed to make you immune to information.\n\nThe distinction is between a new *argument* and new *facts*. \"You're being unfair\" is an argument, and the technique handles it. \"The deadline moved to Friday, so it's two hours not two days\" is a fact, and refusing to hear it is stubbornness rather than assertiveness.\n\nChanging your mind for a good reason is not losing. Say so clearly, so it is a decision rather than a collapse.\n\nMindset: hold against pressure, update on information. Know which one you have just been given.",
       inputs: [
         { q: "They tell you something that genuinely changes the situation.", a: "\"That's new information and it does change it. Let me think.\" [Know When to Stop]", bundle: 'pro' },
@@ -1989,8 +1989,8 @@ const challengesCollections = {
     },
     {
       name: "They Have Power Over You",
-      guideFront: "What makes holding this line hard?",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "A manager, a teacher, a landlord, anyone who can affect your circumstances. The technique still works, and the wording has to change: the same flat repetition that reads as calm between equals can read as insubordination when it goes upwards.\n\nTwo adjustments. Keep the acknowledgement slightly fuller, so it is clear you understand the position you are in. And where you would simply repeat, add what you *can* do, which turns holding a line into problem-solving rather than refusal.\n\nIf the request is one they are entitled to make, this is not the right technique at all.\n\nMindset: hold the position, soften the frame, and offer what you can.",
       inputs: [
         { q: "A manager wants you to take on something outside your hours.", a: "\"I understand it needs doing. I'm not able to do it this week — I could look at it Monday.\" [Offer a Workable Compromise]", bundle: 'pro' },
@@ -2002,8 +2002,8 @@ const challengesCollections = {
     },
     {
       name: "You Should Actually Move",
-      guideFront: "What makes holding this line hard?",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The technique is for protecting a decision that is genuinely yours to make. It is not for avoiding accountability, and it is worth being honest with yourself about which one is happening.\n\nIf someone is asking you to keep a promise, correct a mistake, or take responsibility for something you did, repeating a line is not assertiveness — it is stonewalling, and it does real damage to the relationship.\n\nThe test: is this a request I am entitled to decline, or an obligation I am trying not to face?\n\nMindset: use it to hold your own decisions. Never use it to avoid a fair claim on you.",
       inputs: [
         { q: "They are asking you to do something you promised.", a: "\"You're right, I said I would. I'll do it this week.\" [Know When to Stop]", bundle: 'pro' },
@@ -2015,8 +2015,8 @@ const challengesCollections = {
     },
     {
       name: "It Keeps Coming Back",
-      guideFront: "What makes holding this line hard?",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "You held the line, closed the conversation, and a week later it is back. This is common with people who read a closed conversation as a pause.\n\nThe move is to shorten each subsequent round rather than restart the whole exchange. The first time deserved acknowledgement and a proper close; the fourth time deserves one sentence.\n\nIf it keeps returning, name the pattern rather than the request. That is a different conversation, and it is the one that actually needs having.\n\nMindset: shorter every time, and eventually talk about the asking rather than the ask.",
       inputs: [
         { q: "They raise it again a week later.", a: "\"Same answer as last week.\" [Keep the Same Words]", bundle: 'pro' },

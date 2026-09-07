@@ -3226,8 +3226,8 @@ const multiStepCollections = {
   brokenrecord: [
     {
       name: "The Classic Loop",
-      guideFront: "What they pushed with, and the move to answer it.",
-      guideBack: "One way it could sound.",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
       description: "The technique as it actually runs: they push, you acknowledge and repeat, they switch tack, you repeat again, and after three or four rounds it ends.\n\nEach step front carries what they said and names the move. Watch how the arguments change while your answer does not — that contrast is the whole mechanism, and it is why the technique works without any confrontation in it.\n\nMindset: the arguments will change. Your sentence will not.",
       inputs: [
         {
@@ -3235,10 +3235,10 @@ const multiStepCollections = {
           situation: "A friend has asked to borrow a significant amount. You have decided the answer is no, and your line is \"I'm not lending money at the moment.\"",
           steps: [
             { front: "Step 1 · Acknowledge, Then Repeat — they say, \"I'm really stuck. I wouldn't ask otherwise.\"", back: "\"I know you wouldn't. I'm not lending money at the moment.\"", guideFront: "One clause of acknowledgement, then the line." },
-            { front: "Step 2 · Don't Give Reasons — they say, \"Why not? Is it because of last time?\"", back: "\"It's nothing to do with last time. I'm just not lending at the moment.\"" },
-            { front: "Step 3 · Don't Follow the New Argument — they say, \"You lent Tom money in the summer.\"", back: "\"I did. I'm not doing it this time.\"" },
-            { front: "Step 4 · Keep the Tone Flat — they say, \"This is really unlike you.\"", back: "\"Maybe. I'm not lending money at the moment.\"" },
-            { front: "Step 5 · Know When to Stop — they say, \"I don't know what I'm going to do.\"", back: "\"We're going round in circles now. The answer isn't going to change — but I'll help you look at what's owed if you want.\"" },
+            { front: "Step 2 · Don't Give Reasons — they say, \"Why not? Is it because of last time?\"", back: "\"It's nothing to do with last time. I'm just not lending at the moment.\"", guideFront: "Give the position, not the why when...", guideBack: "The position, with nothing attached" },
+            { front: "Step 3 · Don't Follow the New Argument — they say, \"You lent Tom money in the summer.\"", back: "\"I did. I'm not doing it this time.\"", guideFront: "Stay on your line when the subject moves when...", guideBack: "The same line, on a new subject" },
+            { front: "Step 4 · Keep the Tone Flat — they say, \"This is really unlike you.\"", back: "\"Maybe. I'm not lending money at the moment.\"", guideFront: "Say it level, however they say theirs when...", guideBack: "The line, said calmly" },
+            { front: "Step 5 · Know When to Stop — they say, \"I don't know what I'm going to do.\"", back: "\"We're going round in circles now. The answer isn't going to change — but I'll help you look at what's owed if you want.\"", guideFront: "End the conversation when...", guideBack: "A closing line" },
           ]
         },
         {
@@ -3246,18 +3246,18 @@ const multiStepCollections = {
           situation: "You are returning a faulty item within the return period. The assistant is resisting. Your line is \"I'd like a refund, please.\"",
           steps: [
             { front: "Step 1 · Acknowledge, Then Repeat — they say, \"We normally only do exchanges.\"", back: "\"I understand that's the usual policy. I'd like a refund, please.\"", guideFront: "Acknowledge the policy, repeat the request." },
-            { front: "Step 2 · Keep the Same Words — they say, \"I can offer you a credit note.\"", back: "\"I'd like a refund, please.\"" },
-            { front: "Step 3 · Don't Give Reasons — they say, \"Can I ask what was wrong with it?\"", back: "\"It stopped working. I'd like a refund, please.\"" },
-            { front: "Step 4 · Don't Follow the New Argument — they say, \"You've had it three weeks, though.\"", back: "\"Within the return period, yes. I'd like a refund, please.\"" },
-            { front: "Step 5 · Know When to Stop — they say, \"I'll have to check with the manager.\"", back: "\"That's fine. I'll wait.\"" },
+            { front: "Step 2 · Keep the Same Words — they say, \"I can offer you a credit note.\"", back: "\"I'd like a refund, please.\"", guideFront: "Use the same wording again when...", guideBack: "The line, word for word" },
+            { front: "Step 3 · Don't Give Reasons — they say, \"Can I ask what was wrong with it?\"", back: "\"It stopped working. I'd like a refund, please.\"", guideFront: "Give the position, not the why when...", guideBack: "The position, with nothing attached" },
+            { front: "Step 4 · Don't Follow the New Argument — they say, \"You've had it three weeks, though.\"", back: "\"Within the return period, yes. I'd like a refund, please.\"", guideFront: "Stay on your line when the subject moves when...", guideBack: "The same line, on a new subject" },
+            { front: "Step 5 · Know When to Stop — they say, \"I'll have to check with the manager.\"", back: "\"That's fine. I'll wait.\"", guideFront: "End the conversation when...", guideBack: "A closing line" },
           ]
         },
       ]
     },
     {
       name: "When a Compromise Is Right",
-      guideFront: "What they pushed with, and the move to answer it.",
-      guideBack: "One way it could sound.",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
       description: "Not every held line should stay held. When the objection is practical rather than a matter of principle, offering something that genuinely works for you ends the conversation better than repetition does.\n\nThe order matters. Hold the line first, so the compromise is not read as the first concession in a negotiation. Offer it once, and be clear it is the whole offer rather than an opening bid.\n\nMindset: hold, then offer — and only if the alternative genuinely suits you.",
       inputs: [
         {
@@ -3265,9 +3265,9 @@ const multiStepCollections = {
           situation: "A relative wants you to spend all Saturday helping with a move. You do not want to lose the day. Your line is \"I can't do the whole day.\"",
           steps: [
             { front: "Step 1 · Acknowledge, Then Repeat — they say, \"It's only one day and we really need the help.\"", back: "\"I know it's a big job. I can't do the whole day.\"", guideFront: "Hold first. Do not open with the compromise." },
-            { front: "Step 2 · Don't Give Reasons — they say, \"What have you got on that's so important?\"", back: "\"Nothing I want to move. I can't do the whole day.\"" },
-            { front: "Step 3 · Offer a Workable Compromise — they say, \"So you won't help at all.\"", back: "\"I didn't say that. I can do the morning — nine till one.\"" },
-            { front: "Step 4 · Know When to Stop — they say, \"Could you not stretch to the afternoon?\"", back: "\"The morning is the offer. Take it or leave it, and either's fine.\"" },
+            { front: "Step 2 · Don't Give Reasons — they say, \"What have you got on that's so important?\"", back: "\"Nothing I want to move. I can't do the whole day.\"", guideFront: "Give the position, not the why when...", guideBack: "The position, with nothing attached" },
+            { front: "Step 3 · Offer a Workable Compromise — they say, \"So you won't help at all.\"", back: "\"I didn't say that. I can do the morning — nine till one.\"", guideFront: "Offer what works for you instead when...", guideBack: "Your own alternative, offered" },
+            { front: "Step 4 · Know When to Stop — they say, \"Could you not stretch to the afternoon?\"", back: "\"The morning is the offer. Take it or leave it, and either's fine.\"", guideFront: "End the conversation when...", guideBack: "A closing line" },
           ]
         },
         {
@@ -3275,27 +3275,27 @@ const multiStepCollections = {
           situation: "A colleague wants to hand you a piece of work that is not yours. Your line is \"I'm not able to take that on.\"",
           steps: [
             { front: "Step 1 · Acknowledge, Then Repeat — they say, \"You're the only one who knows the system.\"", back: "\"I know it's awkward. I'm not able to take that on.\"", guideFront: "Acknowledge, then the line. Nothing more." },
-            { front: "Step 2 · Don't Follow the New Argument — they say, \"It'll take you twenty minutes.\"", back: "\"It might. I'm not able to take it on.\"" },
-            { front: "Step 3 · Offer a Workable Compromise — they say, \"Then it just won't get done.\"", back: "\"I can't do it. I could sit with you for ten minutes and show you how.\"" },
-            { front: "Step 4 · Know When to Stop — they say, \"That's not really the same.\"", back: "\"It's what I can offer. Let me know if you want it.\"" },
+            { front: "Step 2 · Don't Follow the New Argument — they say, \"It'll take you twenty minutes.\"", back: "\"It might. I'm not able to take it on.\"", guideFront: "Stay on your line when the subject moves when...", guideBack: "The same line, on a new subject" },
+            { front: "Step 3 · Offer a Workable Compromise — they say, \"Then it just won't get done.\"", back: "\"I can't do it. I could sit with you for ten minutes and show you how.\"", guideFront: "Offer what works for you instead when...", guideBack: "Your own alternative, offered" },
+            { front: "Step 4 · Know When to Stop — they say, \"That's not really the same.\"", back: "\"It's what I can offer. Let me know if you want it.\"", guideFront: "End the conversation when...", guideBack: "A closing line" },
           ]
         },
       ]
     },
     {
       name: "When They Escalate",
-      guideFront: "What they pushed with, and the move to answer it.",
-      guideBack: "One way it could sound.",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
       description: "Sometimes persuasion turns into pressure — raised voice, guilt, or an implication about what kind of person you are.\n\nThe move is the same as before, only more so: shorter answers, flatter tone, no engagement with the accusation. And a clearer endpoint, because a conversation that has become pressure is one to leave rather than to win.\n\nIf someone is trying to make you feel bad in order to change your answer, naming it plainly and once is fair, and then leaving is fair too.\n\nMindset: do not match their volume, do not answer the accusation, and end it sooner than you would otherwise.",
       inputs: [
         {
           bundle: 'pro',
           situation: "A relative has moved from asking to saying you are selfish and that the family always ends up disappointed.",
           steps: [
-            { front: "Step 1 · Don't Follow the New Argument — they say, \"You're so selfish these days.\"", back: "\"Maybe. The answer's still no.\"" },
-            { front: "Step 2 · Keep the Tone Flat — they say, \"Everyone else manages to make time.\"", back: "\"I'm not able to do it.\"" },
+            { front: "Step 1 · Don't Follow the New Argument — they say, \"You're so selfish these days.\"", back: "\"Maybe. The answer's still no.\"", guideFront: "Stay on your line when the subject moves when...", guideBack: "The same line, on a new subject" },
+            { front: "Step 2 · Keep the Tone Flat — they say, \"Everyone else manages to make time.\"", back: "\"I'm not able to do it.\"", guideFront: "Say it level, however they say theirs when...", guideBack: "The line, said calmly" },
             { front: "Step 3 · Name it once — they say, \"I suppose we just don't matter any more.\"", back: "\"I don't think that's fair, and I don't think making me feel bad is going to change my answer.\"", guideFront: "Say it once, plainly. Do not argue it." },
-            { front: "Step 4 · Know When to Stop — they say, \"Fine. Whatever.\"", back: "\"I'm going to leave it there. I'll call you in the week.\"" },
+            { front: "Step 4 · Know When to Stop — they say, \"Fine. Whatever.\"", back: "\"I'm going to leave it there. I'll call you in the week.\"", guideFront: "End the conversation when...", guideBack: "A closing line" },
           ]
         },
         {
@@ -3303,9 +3303,9 @@ const multiStepCollections = {
           situation: "Someone has started shouting because you will not change your position.",
           steps: [
             { front: "Step 1 · Keep the Tone Flat — they raise their voice.", back: "\"I'm not going to do it.\"", guideFront: "Do not match the volume. Slower and quieter, not louder." },
-            { front: "Step 2 · Acknowledge, Then Repeat — they say, \"You're not even listening to me!\"", back: "\"I have listened. My answer's the same.\"" },
-            { front: "Step 3 · Name it once — they carry on shouting.", back: "\"I'm not going to talk about it while you're shouting at me.\"" },
-            { front: "Step 4 · Know When to Stop — they say, \"So you're just walking off.\"", back: "\"I am. We can talk when it's calmer.\"" },
+            { front: "Step 2 · Acknowledge, Then Repeat — they say, \"You're not even listening to me!\"", back: "\"I have listened. My answer's the same.\"", guideFront: "Show you heard, then say it again when...", guideBack: "A brief nod, then the line" },
+            { front: "Step 3 · Name it once — they carry on shouting.", back: "\"I'm not going to talk about it while you're shouting at me.\"", guideFront: "Name what is happening, once when...", guideBack: "One observation, then back to the line" },
+            { front: "Step 4 · Know When to Stop — they say, \"So you're just walking off.\"", back: "\"I am. We can talk when it's calmer.\"", guideFront: "End the conversation when...", guideBack: "A closing line" },
           ]
         },
       ]
