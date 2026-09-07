@@ -1393,8 +1393,8 @@ const collections = {
   howtointerrupt: [
     {
       name: "Wait for a Natural Pause",
-      guideFront: "You need to get in — do it this way.",
-      guideBack: "One way to say it.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "Hold your point until the speaker reaches a break of their own, and go in there rather than across them.\n\nThis is the cheapest interruption there is, because from the outside it barely reads as one. The same sentence that feels rude mid-clause feels like ordinary turn-taking two seconds later.\n\nTypical shapes:\n\n• \"If I could just jump in for a moment…\"\n• \"Can I say something there?\"\n• \"Sorry — quick thing on that.\"\n\nThree kinds of pause worth waiting for:\n1. The breath — they finish a sentence and inhale. Two or three words is all you get.\n2. The full stop — they finish a whole thought and their pitch drops.\n3. The hand-off — they turn to someone else, or say \"anyway\" or \"so\".\n\nThe pause is almost always closer than it feels. Most people leave one every ten to fifteen seconds, and the wait feels much longer from the inside than it looks from the outside.\n\nMindset: patience is a strategy, not a failure to act. Ten seconds of waiting buys you an interruption nobody has to forgive.",
       inputs: [
         { q: "Someone is explaining the plan and you have spotted a problem with the dates.", a: "(at their next full stop) \"Can I jump in on the dates?\"", bundle: 'free' },
@@ -1409,8 +1409,8 @@ const collections = {
     },
     {
       name: "Signal the Interruption",
-      guideFront: "You need to get in — do it this way.",
-      guideBack: "One way to say it.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "Give a short verbal cue before you say anything of substance, so the speaker gets a moment to close their sentence instead of being cut off mid-word.\n\nThis is the whole difference between interrupting and talking over someone. The signal costs you two words and it hands them control of exactly when they stop, which is what makes it land as polite rather than pushy.\n\nTypical shapes:\n\n• \"Excuse me, may I add something?\"\n• \"Sorry — can I jump in?\"\n• \"Hang on, quick thing.\"\n\nThree strengths of signal:\n1. The ask — \"May I add something?\" You are requesting the floor.\n2. The announcement — \"Can I jump in here.\" You are taking it, warmly.\n3. The bare cue — \"Sorry —\" and a small gesture. Fastest, and enough between people who know each other.\n\nMatch the strength to the room. In a formal meeting the ask is right; among friends the bare cue is plenty and the full ask sounds oddly stiff.\n\nMindset: you are not asking permission to exist. You are giving them a second's warning, which is the courtesy that makes the rest of it fine.",
       inputs: [
         { q: "You need to get into a group discussion and there is no pause coming.", a: "\"Excuse me — may I add something here?\"", bundle: 'free' },
@@ -1425,8 +1425,8 @@ const collections = {
     },
     {
       name: "Acknowledge the Speaker First",
-      guideFront: "You need to get in — do it this way.",
-      guideBack: "One way to say it.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "Before you say your own thing, show that you actually heard theirs — one clause about their point, then yours.\n\nAn interruption that starts with their idea reads as building; one that starts with yours reads as replacing. It is the same information either way, and the order changes how the whole room hears it.\n\nTypical shapes:\n\n• \"I see your point, and I'd like to add…\"\n• \"That's a good point — and there's something else.\"\n• \"Right, and the bit that follows from that is…\"\n\nThree things you can acknowledge:\n1. Their point — \"That's exactly the problem, and there's another one.\"\n2. Their effort — \"You've clearly thought about this. One thing though.\"\n3. The part you agree with — \"The second half I completely agree with.\"\n\nIt has to be specific to be worth anything. \"Good point, but…\" said without naming the point is transparently a run-up, and everyone can hear it.\n\nMindset: this is what proves you were listening rather than waiting. An interrupter who was clearly just waiting for a gap gets forgiven once; one who was listening gets welcomed.",
       inputs: [
         { q: "Someone has made a point you agree with and you want to extend it.", a: "\"I see your point — and I'd like to add something to it.\"", bundle: 'free' },
@@ -1441,8 +1441,8 @@ const collections = {
     },
     {
       name: "Say Why It Matters",
-      guideFront: "You need to get in — do it this way.",
-      guideBack: "One way to say it.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "Attach a reason to the interruption — why this cannot wait until they have finished.\n\nAn interruption with no stated reason is just you wanting to talk. With a reason it becomes a service, and the speaker usually stops willingly rather than being stopped.\n\nTypical shapes:\n\n• \"I hate to interrupt, but this is important for what we're discussing.\"\n• \"Sorry — I only stop you because we're about to run out of time.\"\n• \"Can I check one thing, or I'll be lost for the rest of it?\"\n\nThree reasons that genuinely earn an interruption:\n1. It is time-sensitive — \"We've got four minutes and this decides it.\"\n2. They are working from something wrong — \"The date moved, so that plan won't hold.\"\n3. You cannot follow without it — \"Sorry, who is Anna? I've lost the thread.\"\n\nThe third one is the most under-used. Admitting you are lost feels exposing, and it is almost always the interruption the rest of the room was also waiting for.\n\nMindset: give the reason and the interruption stops being rude. You are not taking the floor, you are explaining why it needed taking.",
       inputs: [
         { q: "A meeting is running out of time and the decision has not been made.", a: "\"Sorry to cut in — we've got four minutes and this is the bit that decides it.\"", bundle: 'free' },
@@ -1457,8 +1457,8 @@ const collections = {
     },
     {
       name: "Use Humour",
-      guideFront: "You need to get in — do it this way.",
-      guideBack: "One way to say it.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "Make the interruption itself the joke, so the interruption arrives as lightness instead of as a correction.\n\nThis is the optional one, and when it works it is the cheapest of the five — nobody has to be gracious about it, because it did not feel like an interruption at all.\n\nTypical shapes:\n\n• \"I just have to jump in here before my brain explodes!\"\n• \"Sorry, I've been holding this in for a full minute.\"\n• \"I'm going to be rude for four seconds.\"\n\nThree ways to make it light:\n1. Mock urgency — \"I have to say this before I forget it, which is imminent.\"\n2. Mock apology — \"I'm going to be terribly rude now. Ready?\"\n3. Playing on your own eagerness — \"You can see me twitching, can't you?\"\n\nRead the room first. Humour needs a warm room; the same line into a tense meeting is worse than a plain interruption, because now you have interrupted and misjudged.\n\nMindset: the joke has to be at your own expense, not theirs. A joke about how long they have been talking is a criticism wearing a hat, and everyone can see the hat.",
       inputs: [
         { q: "A friend is mid-story and you are bursting with something related.", a: "\"I have to jump in before my brain explodes.\"", bundle: 'free' },
@@ -1475,8 +1475,8 @@ const collections = {
   handleinterruptions: [
     {
       name: "Acknowledge and Continue",
-      guideFront: "Someone just cut in — keep your calm and your point.",
-      guideBack: "One way to handle it.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "Briefly show you noticed the interruption, then keep going with your point. A quick nod to them stops it feeling like you're steamrolling, while you still finish. Example: they cut in — \"I see you want to add something — let me just finish this bit.\"\n\nThree ways to acknowledge without stopping:\n1. Name what they want — \"I see you want to add something — let me just finish this bit.\"\n2. Give it a place in the future — \"Good point, hold it for one second.\"\n3. A gesture and one word — \"One sec —\" and keep going.\n\nThe whole move lives in about two seconds. Any longer and you have effectively handed the floor over anyway.\n\nMindset: the nod is what stops it feeling like steamrolling. Carrying on without it is what makes people push harder.",
       inputs: [
         { q: "Mid-sentence in class, a classmate jumps in: \"Oh, that reminds me—\"", a: "\"One sec — let me finish this thought, then I'm all ears.\"", bundle: 'free' },
@@ -1491,8 +1491,8 @@ const collections = {
     },
     {
       name: "Invite Them In After",
-      guideFront: "Someone just cut in — keep your calm and your point.",
-      guideBack: "One way to handle it.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "Promise the interrupter a turn the moment you're done, so you can finish without seeming to shut them out. It buys you the floor by offering it back. Example: \"Hold that thought — you're next, one sec.\"\n\nThree ways to promise the turn:\n1. Name them as next — \"Hold that thought — you're next, one sec.\"\n2. Park their point by name — \"I want to hear the budget bit. Thirty seconds and it's yours.\"\n3. Set the moment — \"Let me land this, then tell me what you're thinking.\"\n\nThe promise only works if you keep it. Come back to them unprompted and the same person interrupts less next time.\n\nMindset: you buy the floor by offering it back. Refusing outright makes people cut in again; promising a turn makes them wait.",
       inputs: [
         { q: "A colleague keeps trying to jump in while you speak.", a: "\"I promise you're next — give me one more line.\"", bundle: 'free' },
@@ -1507,8 +1507,8 @@ const collections = {
     },
     {
       name: "Reinforce the Boundary",
-      guideFront: "Someone just cut in — keep your calm and your point.",
-      guideBack: "One way to handle it.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "When it keeps happening or turns dismissive, calmly state your need to finish. Firm but friendly — no apology, no heat. Example: \"I'd like to finish my point before we move on.\"\n\nThree strengths, in order:\n1. A plain request — \"I'd like to finish my point.\"\n2. Naming the pattern — \"That's twice now. Let me get to the end.\"\n3. Setting the terms — \"I'll be a minute, then it's all yours.\"\n\nFirm but friendly means no apology and no heat. \"Sorry, could I maybe just...\" invites the next interruption rather than stopping it.\n\nMindset: finishing your sentence is fair, not rude. Asking for it needs no apology and no raised voice.",
       inputs: [
         { q: "The same person has interrupted you three times now.", a: "\"I'd really like to finish a thought before we move on.\"", bundle: 'free' },
@@ -1523,8 +1523,8 @@ const collections = {
     },
     {
       name: "Use Humour",
-      guideFront: "Someone just cut in — keep your calm and your point.",
-      guideBack: "One way to handle it.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "Lighten the moment to hold the floor without tension — a playful line keeps it warm while you finish. Example: \"Hold that thought, I'm just getting to the good part!\"\n\nThree kinds of line that hold the floor:\n1. Mock urgency — \"Hold that thought, I'm just getting to the good part!\"\n2. Self-deprecation — \"Let me finish, it took me all week to prepare this.\"\n3. Playing along — \"Two of us talking, one of us listening. Guess which.\"\n\nIt has to be warm, not sharp. A joke at the interrupter's expense is a boundary in disguise, and everyone in the room hears it as one.\n\nMindset: humour buys the floor without spending any goodwill. It is the cheapest of the five moves when it lands.",
       inputs: [
         { q: "A friend interrupts right before your punchline.", a: "\"Hey — I'm literally one sentence from the good part!\"", bundle: 'free' },
@@ -1539,8 +1539,8 @@ const collections = {
     },
     {
       name: "Let It Go and Reclaim",
-      guideFront: "Someone just cut in — keep your calm and your point.",
-      guideBack: "One way to handle it.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "Sometimes fighting the interruption costs more than it's worth — let it happen, then calmly return to your point afterwards. Example: after the detour — \"Anyway, as I was saying…\"\n\nThree ways to come back:\n1. The plain return — \"Anyway, as I was saying…\"\n2. Name where you stopped — \"Back to the timeline — I was at the second week.\"\n3. Ask for the door — \"Can I finish the thing from before?\"\n\nThe reclaim is the half people skip. Letting it go without coming back is not a strategy, it is just losing the point quietly.\n\nMindset: you do not have to win every interruption. Giving way on purpose is a choice rather than a defeat — as long as you return.",
       inputs: [
         { q: "Someone interrupts with an urgent point and the room follows it.", a: "\"…anyway, coming back to what I was saying —\"", bundle: 'free' },
@@ -1903,8 +1903,8 @@ const collections = {
   storytellingwiththesixws: [
     {
       name: "What — the Main Event",
-      guideFront: "You are telling this story — supply this part of it.",
-      guideBack: "One way it could sound.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "The one thing that happened. Said plainly, in a sentence, without any of the run-up attached.\n\nThis is the load-bearing W. Everything else in the story exists to make this sentence land, and a listener who cannot tell you what happened has not been given a story — only a description of an afternoon.\n\nTypical shapes:\n\n• \"I lost my homework.\"\n• \"I ended up on stage by mistake.\"\n• \"We missed the last train home.\"\n\nThree ways to state the event:\n1. The bare headline — \"I lost my homework.\"\n2. The change — \"I went in expecting nothing and came out with the job.\"\n3. The outcome — \"And that is how I ended up carrying a wardrobe up four flights.\"\n\nSay it early. The most common storytelling mistake is three minutes of setup before anything happens, by which point the listener has stopped waiting.\n\nMindset: the event does not have to be dramatic. It has to be clear. A small thing told sharply beats a big thing told vaguely.",
       inputs: [
         { q: "You are telling the story of the day you lost your homework.", a: "\"So I lost my homework. Not forgot it — actually lost it.\"", bundle: 'free' },
@@ -1919,8 +1919,8 @@ const collections = {
     },
     {
       name: "How — the Process",
-      guideFront: "You are telling this story — supply this part of it.",
-      guideBack: "One way it could sound.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "The way it happened, step by step — the middle of the story, where the listener actually lives.\n\nIf What is the headline, How is the article. This is where a story stops being an announcement and starts being something worth listening to, because it is the part the listener can follow along with.\n\nTypical shapes:\n\n• \"I forgot it in my locker and could not find it.\"\n• \"First the taxi did not turn up, then the second one got lost.\"\n• \"I just kept going until my arms gave out.\"\n\nThree ways to tell the how:\n1. Step by step — \"I checked my bag, then my locker, then the whole hallway.\"\n2. The one crucial detail — \"The only thing I did not check was the one place it was.\"\n3. The manner — \"Very slowly, and very badly.\"\n\nGive two or three beats, not fifteen. The How is where stories get too long, and a listener who has to track nine steps stops tracking anything.\n\nMindset: this is the part people are actually listening to. Rush the How and you have delivered a summary instead of a story.",
       inputs: [
         { q: "You are telling the story of losing your homework.", a: "\"I checked my bag, then my locker, then the whole hallway. Nothing.\"", bundle: 'free' },
@@ -1935,8 +1935,8 @@ const collections = {
     },
     {
       name: "Why — the Reason",
-      guideFront: "You are telling this story — supply this part of it.",
-      guideBack: "One way it could sound.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "The cause, the motive or the problem underneath — why any of it happened at all.\n\nThis is the W that turns events into a story. Without it you have a sequence of things that occurred; with it the listener understands the person it happened to, which is what they were actually interested in.\n\nTypical shapes:\n\n• \"I was in a hurry and did not check carefully.\"\n• \"I had wanted to try it for years and finally ran out of excuses.\"\n• \"Because I was too embarrassed to ask anyone.\"\n\nThree kinds of why:\n1. The cause — \"I was rushing, so I did not look properly.\"\n2. The motivation — \"I had been putting it off for two years.\"\n3. The problem — \"The whole thing hinged on a booking nobody had made.\"\n\nIt is also the W people leave out most often. When a story gets \"so what?\" from a listener, a missing Why is usually the reason.\n\nMindset: the Why is where you show up in your own story. It is the difference between reporting an event and telling one.",
       inputs: [
         { q: "You are telling the story of losing your homework.", a: "\"I was in a rush that morning and did not check properly.\"", bundle: 'free' },
@@ -1951,8 +1951,8 @@ const collections = {
     },
     {
       name: "When — the Time",
-      guideFront: "You are telling this story — supply this part of it.",
-      guideBack: "One way it could sound.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "When it happened — the point in time, the stretch of time, or the bit of timing that made it what it was.\n\nWhen is usually the smallest of the six, and it does two jobs: it tells the listener this is a real event rather than a general observation, and it occasionally carries the whole point.\n\nTypical shapes:\n\n• \"It happened yesterday afternoon.\"\n• \"This was about four years ago now.\"\n• \"About thirty seconds before the bell went.\"\n\nThree kinds of when:\n1. The point in time — \"Yesterday afternoon.\" \"Last summer.\"\n2. The stretch — \"It went on for about six hours.\"\n3. The timing that matters — \"The day before the deadline, of course.\"\n\nThe third kind is worth hunting for. \"On a Tuesday\" is furniture; \"the morning of the interview\" is part of the story.\n\nMindset: one clause is plenty. When earns its place by being specific, not by being detailed.",
       inputs: [
         { q: "You are telling the story of losing your homework.", a: "\"This was yesterday, about ten minutes before the lesson.\"", bundle: 'free' },
@@ -1967,8 +1967,8 @@ const collections = {
     },
     {
       name: "Where — the Setting",
-      guideFront: "You are telling this story — supply this part of it.",
-      guideBack: "One way it could sound.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "The place it happened, given with enough detail that the listener can picture it.\n\nWhere is what lets someone see the story instead of just following it. It costs one sentence and it is the difference between a listener imagining a scene and a listener imagining nothing at all.\n\nTypical shapes:\n\n• \"It was in the school hallway.\"\n• \"In a tiny kitchen with about four people in it.\"\n• \"Middle of nowhere, at a bus stop with no timetable.\"\n\nThree kinds of where:\n1. The plain location — \"In the school hallway.\"\n2. The detail that sets the scene — \"A hallway full of people trying to get past me.\"\n3. The place that IS the point — \"In the queue. That was the problem.\"\n\nPick one detail rather than three. A single concrete thing does more work than a full description, and it does it faster.\n\nMindset: you are not describing a room, you are giving the listener somewhere to stand. One detail and they will build the rest themselves.",
       inputs: [
         { q: "You are telling the story of losing your homework.", a: "\"In the hallway outside the science block, with everyone pushing past.\"", bundle: 'free' },
@@ -1983,8 +1983,8 @@ const collections = {
     },
     {
       name: "Who — the People",
-      guideFront: "You are telling this story — supply this part of it.",
-      guideBack: "One way it could sound.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "Who was there — the people, and what they did about it.\n\nWho is what makes a story happen to somebody rather than merely occur. It also carries the most reliable source of warmth in the whole pack: another person reacting is nearly always more interesting than the event itself.\n\nTypical shapes:\n\n• \"My teacher was waiting, and my best friend tried to help.\"\n• \"Just me and a very unimpressed taxi driver.\"\n• \"About six people who all knew each other and none of them me.\"\n\nThree ways to bring people in:\n1. Everyone involved — \"Me, my brother, and a man from the council.\"\n2. The one who mattered — \"There was one woman who just took over and sorted it.\"\n3. The audience — \"And about thirty people watching, which was the problem.\"\n\nIntroduce them before you use them. A name that arrives with no explanation makes the listener stop and work out who you mean, and while they are doing that they are not listening.\n\nMindset: people are the most interesting thing in any story. If yours feels flat, there is usually a person in it you have not brought properly onto the page.",
       inputs: [
         { q: "You are telling the story of losing your homework.", a: "\"My teacher was standing there waiting, and my mate was crawling around under the lockers.\"", bundle: 'free' },
@@ -2475,8 +2475,8 @@ const collections = {
   agreeing: [
     {
       name: "Signal the Agreement",
-      guideFront: "Someone has given an opinion you share — agree and add to it.",
-      guideBack: "One way to say it.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "Signalling means making it unmistakable that you are on their side — a short, warm confirmation before you add anything of your own.\n\nIt sounds small, but it is what makes everything after it land as agreement rather than as you taking over. Skip it and even a supportive point can read like a correction.\n\nTypical signals:\n\n• \"I totally agree.\"\n• \"That's so true.\"\n• \"Exactly.\"\n\nThree strengths of signal:\n1. Full agreement — \"Completely agree, yes.\"\n2. Shared feeling — \"I feel exactly the same.\"\n3. Recognition — \"You've just described my whole week.\"\n\nMindset: warmth does the work here, not vocabulary. A plain \"yes, exactly\" said like you mean it beats a clever line said flatly.",
       inputs: [
         { q: "A friend says: \"I love when it rains.\"", a: "\"Same here, honestly. Completely with you on that.\"", bundle: 'free' },
@@ -2491,8 +2491,8 @@ const collections = {
     },
     {
       name: "Add a Personal Experience",
-      guideFront: "Someone has given an opinion you share — agree and add to it.",
-      guideBack: "One way to say it.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "You agree, then back it with something that actually happened to you — a habit, a memory, a small scene from your own life.\n\nYour own experience is the easiest kind of support to give, because you do not have to argue for it. It is simply true, and it makes the agreement concrete instead of merely polite.\n\nTypical shapes:\n\n• \"Same here — I always...\"\n• \"I feel the same way. Last week I...\"\n• \"Definitely. I've done that for years.\"\n\nThree kinds of experience to reach for:\n1. A habit — \"I read by the window every time it rains.\"\n2. A one-off memory — \"I tried it once and never went back.\"\n3. A long-running pattern — \"I've slept six hours a night for about ten years.\"\n\nMindset: it does not have to be impressive. A small ordinary detail proves you mean it far better than a big claim does.",
       inputs: [
         { q: "A friend says: \"I love when it rains.\"", a: "\"Same here — I always end up reading by the window when it does.\"", bundle: 'free' },
@@ -2507,8 +2507,8 @@ const collections = {
     },
     {
       name: "Give an Explanation",
-      guideFront: "Someone has given an opinion you share — agree and add to it.",
-      guideBack: "One way to say it.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "You agree, then say why it makes sense — the reason behind the opinion, rather than an example of it.\n\nThis is the move that turns agreement into support. You are handing them an argument they can use, which is why it feels generous rather than like an echo.\n\nTypical shapes:\n\n• \"I totally agree — another reason is...\"\n• \"I feel the same way, because...\"\n• \"I agree, especially when...\"\n\nThree ways to explain:\n1. Add a reason they did not mention — \"Another reason is you make fewer mistakes.\"\n2. Name the mechanism — \"It works because your head gets a proper break.\"\n3. Narrow to where it is most true — \"I agree, especially when you're tired.\"\n\nMindset: you are adding to their case, not proving you understand it better than they do. Keep the reason short — one clause is usually enough.",
       inputs: [
         { q: "A classmate says: \"You should always listen to your teacher.\"", a: "\"Agreed — another reason is you avoid the mistakes everyone else makes.\"", bundle: 'free' },
@@ -2523,8 +2523,8 @@ const collections = {
     },
     {
       name: "Expand the Idea",
-      guideFront: "Someone has given an opinion you share — agree and add to it.",
-      guideBack: "One way to say it.",
+      guideFront: "Use this strategy when...",
+      guideBack: "One way it could sound",
       description: "You agree, then push the thought one step further — a related point that goes beyond what they actually said.\n\nThis is the move that keeps a conversation moving instead of closing it. An experience or a reason supports their point; an expansion hands them something new to react to.\n\nTypical shapes:\n\n• \"Exactly, and you could also say...\"\n• \"That's so true, and also...\"\n• \"Yes — and the same goes for...\"\n\nThree ways to expand:\n1. Take it further — \"And sometimes taking your time gets a better result altogether.\"\n2. Apply it somewhere else — \"The same is true at work, not just at home.\"\n3. Name what follows from it — \"Which is probably why nobody sleeps well in summer.\"\n\nMindset: one step, not five. An expansion that lands next door keeps the topic alive; one that lands three streets away has quietly changed the subject.",
       inputs: [
         { q: "Someone says: \"I think you should never hurry.\"", a: "\"Exactly, and sometimes taking your time gets a better result anyway.\"", bundle: 'free' },
@@ -9698,8 +9698,8 @@ const collectionsModeData = {
   howtointerrupt: [
     {
       name: "Wait or Signal",
-      guideFront: "What kind of way in does this need?",
-      guideBack: "A possible line, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The first decision when you have something to say: is a pause coming, or do you have to make one?\n\nRead whether the speaker is heading towards a break. If they are finishing a thought, wait the two seconds — it costs nothing and reads as ordinary turn-taking. If they have been going for four minutes with no gap, waiting is no longer patience, it is silence.\n\nThe two options:\n1. Wait for a Natural Pause — a break is coming. \"Can I jump in on the dates?\"\n2. Signal the Interruption — none is coming. \"Excuse me, may I add something?\"\n\nGetting this wrong in either direction has a cost: cutting across someone who was two words from a full stop is needlessly rude, and waiting out a monologue means your point arrives after the moment for it has gone.\n\nMindset: waiting is the default and signalling is the tool. Reach for the tool when the default has clearly stopped working.",
       inputs: [
         { q: "The speaker is finishing a sentence and their pitch is dropping.", a: "(at the full stop) \"Can I jump in on the dates?\" (wait for a natural pause)", bundle: 'pro' },
@@ -9712,8 +9712,8 @@ const collectionsModeData = {
     },
     {
       name: "Warmth or Reason",
-      guideFront: "What kind of way in does this need?",
-      guideBack: "A possible line, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Once you are in, the choice about what to lead with — their point, or your reason.\n\nBoth make an interruption acceptable, but they do different jobs. Acknowledging is about the relationship: it tells the speaker you were listening. Giving a reason is about the content: it tells the room why this could not wait.\n\nThe two options:\n1. Acknowledge the Speaker First — the risk is looking like you were not listening. \"I see your point, and I'd like to add…\"\n2. Say Why It Matters — the risk is looking like you just wanted to talk. \"Sorry, we've got four minutes and this decides it.\"\n\nA rough rule: acknowledge when the interruption is about the same subject, give the reason when you are changing direction. And when the stakes are high, do both.\n\nMindset: an unexplained interruption is the one people remember badly. Either half — warmth or reason — is usually enough to prevent that.",
       inputs: [
         { q: "Someone has made a point you want to extend.", a: "\"I see your point — and there's something else that follows from it.\" (acknowledge the speaker first)", bundle: 'pro' },
@@ -9726,8 +9726,8 @@ const collectionsModeData = {
     },
     {
       name: "Any Way In",
-      guideFront: "What kind of way in does this need?",
-      guideBack: "A possible line, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The full choice between all five moves.\n\nMost moments could take several, but one usually fits best. What decides it is how much room the speaker is leaving, how warm the room is, and whether your point is an addition or a correction.\n\nThe five, with the cue for each:\n1. Wait for a Natural Pause — a break is coming. \"Can I jump in there?\"\n2. Signal the Interruption — none is coming. \"Excuse me, may I add something?\"\n3. Acknowledge the Speaker First — you are building on their point. \"I see your point, and…\"\n4. Say Why It Matters — you are changing direction, or it cannot wait. \"Sorry, this is time-sensitive.\"\n5. Use Humour — the room is warm and you want it to stay that way. \"Before my brain explodes.\"\n\nMindset: interrupting is not rude. Interrupting badly is. All five of these are versions of the same courtesy — letting the speaker know what is happening to their turn.",
       inputs: [
         { q: "The speaker is two words from a full stop and you have a question.", a: "(at the stop) \"Sorry, quick one on that last bit.\" (wait for a natural pause)", bundle: 'pro' },
@@ -9744,8 +9744,8 @@ const collectionsModeData = {
   handleinterruptions: [
     {
       name: "Soft or Firm",
-      guideFront: "Which move fits this interruption?",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "A choice between the two everyday responses: Acknowledge and Continue (a light nod, then keep going — for a first or well-meaning interruption) and Reinforce the Boundary (calmly state your need to finish — for a repeated or dismissive one). Soft for the first time; firm when it keeps happening. Example: a friend's excited cut-in gets an Acknowledge (\"let me just finish this bit\"), while a third interruption gets a Boundary (\"I'd like to finish before we move on\").\n\nThe two options:\n1. Acknowledge and Continue — first time, or well-meant. \"Let me just finish this bit.\"\n2. Reinforce the Boundary — repeated, or dismissive. \"I'd like to finish my point before we move on.\"\n\nThe tell is the count, not the tone: once is an accident, three times is a pattern. Going firm on the first cut-in reads as touchy; staying soft on the fourth reads as a doormat.\n\nMindset: escalate slowly, and only as far as you need. Starting soft leaves you somewhere to go.",
       inputs: [
         { q: "A colleague cuts in for the first time, keen to add something.", a: "\"I see you've got something — let me land this first.\" (acknowledge and continue)", bundle: 'pro' },
@@ -9758,8 +9758,8 @@ const collectionsModeData = {
     },
     {
       name: "Hold or Release",
-      guideFront: "Which move fits this interruption?",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "A choice between keeping the floor and giving it up for now: Invite Them In After (hold your point but promise them the very next turn) and Let It Go and Reclaim (let the interruption happen, then return to your thread). Hold when you can finish in a sentence; release when stopping it would cost more than it's worth. Example: an eager interrupter gets a Hold (\"you're next, one sec\"), while an urgent side-point gets a Release (\"go ahead — then, as I was saying…\").\n\nThe two options:\n1. Invite Them In After — you can land it in a sentence. \"You're next, one sec.\"\n2. Let It Go and Reclaim — stopping them costs more than the point is worth. \"Anyway, as I was saying…\"\n\nAsk yourself how far from the end you actually were. Close to it, hold; a paragraph away, release and come back later.\n\nMindset: the floor is not a prize. Releasing it deliberately and returning calmly reads as more confident than clinging on.",
       inputs: [
         { q: "A colleague keeps trying to jump in while you speak.", a: "\"You're next — give me one more line.\" (invite them in after)", bundle: 'pro' },
@@ -9772,8 +9772,8 @@ const collectionsModeData = {
     },
     {
       name: "Handling Any Interruption",
-      guideFront: "Which move fits this interruption?",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The full choice between all five moves. Each interruption could be met several ways, but one usually fits best: Acknowledge for an everyday cut-in, Invite Them In when they're eager, Reinforce when it repeats, Humour when it's friendly and light, and Let It Go when fighting it isn't worth it. Reading which one the moment needs is the whole skill. Example: a boss interrupting mid-presentation calls for a respectful Acknowledge, not a boundary — matching the move to the moment is the point.\n\nThe five, with the cue for each:\n1. Acknowledge and Continue — an everyday cut-in. \"Let me just finish this bit.\"\n2. Invite Them In After — they are eager. \"You're next, one sec.\"\n3. Reinforce the Boundary — it keeps happening. \"I'd like to finish my point.\"\n4. Use Humour — it is friendly and light. \"I'm just getting to the good part!\"\n5. Let It Go and Reclaim — fighting it is not worth it. \"Anyway, as I was saying…\"\n\nMindset: all five of them work. Picking the wrong strength for the moment is what causes the friction, not the interruption itself.",
       inputs: [
         { q: "A classmate jumps in mid-sentence, excited.", a: "\"Hold that — you're up the second I finish.\" (invite them in after)", bundle: 'pro' },
@@ -10024,8 +10024,8 @@ const collectionsModeData = {
   storytellingwiththesixws: [
     {
       name: "The Story Spine",
-      guideFront: "Which W does this story need?",
-      guideBack: "A possible line, with the W in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The three W's that carry the story rather than decorate it.\n\nIf you only have thirty seconds, these are the three to spend it on. A story with What, How and Why is a complete story; one missing any of the three has a hole a listener will notice even if they cannot name it.\n\nThe three options:\n1. What — the main event. \"I lost my homework.\"\n2. How — the process. \"I checked my bag, my locker, the whole hallway.\"\n3. Why — the reason underneath. \"I was in a rush and did not check properly.\"\n\nThe order matters less than the presence. Whichever way round you tell them, a listener needs all three before the story is finished.\n\nMindset: these are the three that do the work. When you have to cut, cut from the other three first.",
       inputs: [
         { q: "You have set the scene and nothing has happened yet.", a: "\"So I lost my homework. Not forgot it — actually lost it.\" (what)", bundle: 'pro' },
@@ -10038,8 +10038,8 @@ const collectionsModeData = {
     },
     {
       name: "The Scene",
-      guideFront: "Which W does this story need?",
-      guideBack: "A possible line, with the W in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The three W's that place the story rather than drive it.\n\nThese are the ones that let a listener see it. They are also the ones you can afford to drop when time is short — which is exactly why people forget them entirely and end up telling stories nobody can picture.\n\nThe three options:\n1. When — the time. \"About ten minutes before the lesson.\"\n2. Where — the setting. \"In the hallway outside the science block.\"\n3. Who — the people. \"My teacher was waiting, and my mate was under the lockers.\"\n\nOne clause each is usually the right amount. These W's set a scene; they are not the scene.\n\nMindset: cheap and powerful. Three short clauses turn a report into something the listener can actually watch.",
       inputs: [
         { q: "The story is clear but the listener cannot picture any of it.", a: "\"In the hallway outside the science block, with everyone pushing past.\" (where)", bundle: 'pro' },
@@ -10052,8 +10052,8 @@ const collectionsModeData = {
     },
     {
       name: "Which W Is Missing",
-      guideFront: "Which W does this story need?",
-      guideBack: "A possible line, with the W in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The full set of six, used as a diagnostic rather than a checklist.\n\nMost stories that fall flat are missing one specific thing, and the six W's are a fast way to find which. The listener's reaction usually tells you which one to reach for.\n\nThe six, and the symptom each one fixes:\n1. What — they are waiting for something to happen. \"I lost my homework.\"\n2. How — it jumped from problem to ending. \"I checked my bag, then my locker.\"\n3. Why — they said \"and?\" at the end. \"I was in a rush and did not check.\"\n4. When — it sounds like a habit, not an event. \"This was yesterday.\"\n5. Where — they cannot picture any of it. \"In the hallway outside the science block.\"\n6. Who — a name turned up with no owner. \"My mate Sam, who was under the lockers.\"\n\nMindset: a flat story is almost never a boring story. It is usually a story with one missing W, and finding it takes a few seconds.",
       inputs: [
         { q: "You have been talking for a while and nothing has happened yet.", a: "\"So I called my teacher mum. Out loud. In front of everyone.\" (what)", bundle: 'pro' },
@@ -10306,8 +10306,8 @@ const collectionsModeData = {
   agreeing: [
     {
       name: "Experience or Reason",
-      guideFront: "Which way of agreeing fits this one?",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The choice between the two ways of BACKING an opinion you share.\n\nWhat decides it is simply what you have to hand. If the opinion is about something you have actually lived, use it. If not, you can almost always say why it makes sense.\n\nThe two options:\n1. Add a Personal Experience — you have done the thing. \"Same here, I read by the window every time it rains.\"\n2. Give an Explanation — you have a reason instead. \"Agreed, there's something about the sound that makes everything calmer.\"\n\nExperience is warmer and harder to argue with; explanation is available even when you have no story at all.\n\nMindset: never stay silent because you lack a story. A reason counts just as much.",
       inputs: [
         { q: "A friend says: \"I love when it rains.\"", a: "\"Same here — I always end up reading by the window.\" (add a personal experience)", bundle: 'pro' },
@@ -10320,8 +10320,8 @@ const collectionsModeData = {
     },
     {
       name: "Back It Up or Take It Further",
-      guideFront: "Which way of agreeing fits this one?",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The choice between supporting the point and moving past it.\n\nRead whether the opinion still needs help. If it was just stated and hangs there unsupported, back it up. If it is already obvious and everyone agrees, backing it up again adds nothing — take it somewhere.\n\nThe two options:\n1. Give an Explanation — supports what they said. \"Agreed, because rushing is how things get missed.\"\n2. Expand the Idea — goes beyond it. \"Exactly, and sometimes taking your time gets a better result anyway.\"\n\nThe tell is usually the energy: a point that has landed and gone quiet wants an expansion, not more support.\n\nMindset: agreeing does not have to end a topic. The expansion is what gives them somewhere to go next.",
       inputs: [
         { q: "Someone states an opinion and waits to see if anyone backs them.", a: "\"I feel the same, because rushing is how things get missed.\" (give an explanation)", bundle: 'pro' },
@@ -10334,8 +10334,8 @@ const collectionsModeData = {
     },
     {
       name: "Any Way of Agreeing",
-      guideFront: "Which way of agreeing fits this one?",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The full choice between all four moves.\n\nMost opinions could take several, but one usually fits best. Signal first if nothing has been said yet; then pick your contribution based on what you actually have — a story, a reason, or a further thought.\n\nThe four, with the cue for each:\n1. Signal the Agreement — nothing said yet, and warmth is what is needed. \"Couldn't agree more.\"\n2. Add a Personal Experience — you have lived it. \"I've done six hours for years.\"\n3. Give an Explanation — you have a reason. \"Another reason is you make fewer mistakes.\"\n4. Expand the Idea — the point is already made. \"And the same goes for work, not just home.\"\n\nMindset: the one thing that never works is agreeing and stopping. Pick any of the three contributions, but pick one.",
       inputs: [
         { q: "A friend says: \"Mornings are the best part of the day.\"", a: "\"You've just described my whole routine.\" (signal the agreement)", bundle: 'pro' },

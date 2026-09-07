@@ -1748,80 +1748,80 @@ const multiStepCollections = {
   howtointerrupt: [
     {
       name: "The Polite Cut-In",
-      guideFront: "Take the next step in getting in.",
-      guideBack: "One line you could say here.",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
       description: "The full version, for when the interruption matters and the room is formal enough that how you do it will be noticed. Steps: 1) Wait for a Natural Pause — go in at their break, 2) Signal the Interruption — give them a second to stop, 3) Acknowledge the Speaker First — show you were listening, 4) Say Why It Matters — then say why it could not wait.\n\nFour steps sounds like a lot for one interruption, but the first three are about six words in total. What they buy is an interruption nobody has to be gracious about.\n\nThe shape of the whole thing:\n1. (wait for the full stop)\n2. \"Sorry — can I come in there?\"\n3. \"Everything up to the timeline I'm with you on.\"\n4. \"It's just that the date moved, so that part won't hold.\"\n\nMindset: the three short steps before your point are what make the point land. Skip them and the same content arrives as an objection.",
       inputs: [
         {
           bundle: 'pro',
           situation: "A colleague is presenting a plan built on a date that has since changed.",
           steps: [
-            { front: "Step 1 · Wait for the break — they are mid-sentence, heading for a full stop", back: "(wait) \"…\"" },
-            { front: "Step 2 · Signal it — they finish the sentence and pause", back: "\"Sorry — can I come in there?\"" },
-            { front: "Step 3 · Acknowledge them — they stop and look over", back: "\"Everything up to the timeline I'm completely with you on.\"" },
-            { front: "Step 4 · Say why — they wait for the point", back: "\"It's just that the date moved last week, so that part won't hold.\"" },
+            { front: "Step 1 · Wait for the break — they are mid-sentence, heading for a full stop", back: "(wait) \"…\"", guideFront: "Go in at their own pause when...", guideBack: "A point made in the gap" },
+            { front: "Step 2 · Signal it — they finish the sentence and pause", back: "\"Sorry — can I come in there?\"", guideFront: "Give a short cue before the point when...", guideBack: "Two words before the substance" },
+            { front: "Step 3 · Acknowledge them — they stop and look over", back: "\"Everything up to the timeline I'm completely with you on.\"", guideFront: "Give their point its due when...", guideBack: "One clause about theirs" },
+            { front: "Step 4 · Say why — they wait for the point", back: "\"It's just that the date moved last week, so that part won't hold.\"", guideFront: "Say why it cannot wait when...", guideBack: "The reason it cannot wait" },
           ]
         },
         {
           bundle: 'pro',
           situation: "In a class discussion someone is explaining a topic and has missed something important.",
           steps: [
-            { front: "Step 1 · Wait for the break — they are building to the end of a point", back: "(wait) \"…\"" },
-            { front: "Step 2 · Signal it — they reach the full stop", back: "\"Can I add something there?\"" },
-            { front: "Step 3 · Acknowledge them — the room turns", back: "\"That's exactly the main reason, I think.\"" },
-            { front: "Step 4 · Say why — you have the floor", back: "\"There's a second one though, and it's the one that usually gets missed.\"" },
+            { front: "Step 1 · Wait for the break — they are building to the end of a point", back: "(wait) \"…\"", guideFront: "Go in at their own pause when...", guideBack: "A point made in the gap" },
+            { front: "Step 2 · Signal it — they reach the full stop", back: "\"Can I add something there?\"", guideFront: "Give a short cue before the point when...", guideBack: "Two words before the substance" },
+            { front: "Step 3 · Acknowledge them — the room turns", back: "\"That's exactly the main reason, I think.\"", guideFront: "Give their point its due when...", guideBack: "One clause about theirs" },
+            { front: "Step 4 · Say why — you have the floor", back: "\"There's a second one though, and it's the one that usually gets missed.\"", guideFront: "Say why it cannot wait when...", guideBack: "The reason it cannot wait" },
           ]
         },
       ]
     },
     {
       name: "When There Is No Pause",
-      guideFront: "Take the next step in getting in.",
-      guideBack: "One line you could say here.",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
       description: "The version for a monologue that is not going to stop on its own. Steps: 1) Signal the Interruption — make the break yourself, 2) Say Why It Matters — justify it immediately, 3) Acknowledge the Speaker First — and give them the floor back.\n\nThe order is deliberately different. When you have had to make your own gap, the justification cannot wait — it has to arrive in the same breath, or the interruption sits there unexplained.\n\nWhy the acknowledgement moves to the end:\n1. Signal — a warm cue is all you have time for.\n2. Reason — this is what converts the interruption from rude to necessary.\n3. Acknowledge — offering the floor back is what stops it becoming a takeover.\n\nMindset: the third step is the one that matters most here. An interruption you hand back is a contribution; one you keep is a takeover.",
       inputs: [
         {
           bundle: 'pro',
           situation: "Someone has been talking for four minutes and the meeting is running out of time.",
           steps: [
-            { front: "Step 1 · Make the gap — there has been no pause at all", back: "\"Sorry — can I jump in?\"" },
-            { front: "Step 2 · Say why straight away — they stop, slightly surprised", back: "\"We've got about four minutes and this is the bit that decides it.\"" },
-            { front: "Step 3 · Hand it back — you have said your piece", back: "\"That's all from me — you were partway through, sorry. Carry on.\"" },
+            { front: "Step 1 · Make the gap — there has been no pause at all", back: "\"Sorry — can I jump in?\"", guideFront: "Create the opening yourself when...", guideBack: "A short cue that makes room" },
+            { front: "Step 2 · Say why straight away — they stop, slightly surprised", back: "\"We've got about four minutes and this is the bit that decides it.\"", guideFront: "Attach the reason at once when...", guideBack: "The reason it cannot wait" },
+            { front: "Step 3 · Hand it back — you have said your piece", back: "\"That's all from me — you were partway through, sorry. Carry on.\"", guideFront: "Return the floor when...", guideBack: "A handover, by name" },
           ]
         },
         {
           bundle: 'pro',
           situation: "A friend is deep in a long explanation and you have completely lost the thread.",
           steps: [
-            { front: "Step 1 · Make the gap — there is no natural break coming", back: "\"Hang on, hang on.\"" },
-            { front: "Step 2 · Say why straight away — they pause", back: "\"Sorry, who's Anna? I lost the thread about a minute ago.\"" },
-            { front: "Step 3 · Hand it back — they explain", back: "\"Right, got it. Sorry — go on, you were mid-thing.\"" },
+            { front: "Step 1 · Make the gap — there is no natural break coming", back: "\"Hang on, hang on.\"", guideFront: "Create the opening yourself when...", guideBack: "A short cue that makes room" },
+            { front: "Step 2 · Say why straight away — they pause", back: "\"Sorry, who's Anna? I lost the thread about a minute ago.\"", guideFront: "Attach the reason at once when...", guideBack: "The reason it cannot wait" },
+            { front: "Step 3 · Hand it back — they explain", back: "\"Right, got it. Sorry — go on, you were mid-thing.\"", guideFront: "Return the floor when...", guideBack: "A handover, by name" },
           ]
         },
       ]
     },
     {
       name: "The Light Way In",
-      guideFront: "Take the next step in getting in.",
-      guideBack: "One line you could say here.",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
       description: "The warm version, for friends and relaxed rooms. Steps: 1) Use Humour — make the interruption itself the joke, 2) Acknowledge the Speaker First — then show you were actually listening, 3) Say Why It Matters — and land the point.\n\nThe joke does the work of the signal here. It tells the speaker something is coming and makes it impossible to take badly, which is why this is the cheapest version when the room allows it.\n\nWhat each step is doing:\n1. Humour — buys the floor without anyone having to be gracious.\n2. Acknowledgement — stops the joke being all there was.\n3. Reason — the point still has to be worth the interruption.\n\nMindset: the joke has to be at your own expense. Make it about how long they have been talking and you have criticised them, not lightened it.",
       inputs: [
         {
           bundle: 'pro',
           situation: "A friend is telling a long story and you have something that fits perfectly.",
           steps: [
-            { front: "Step 1 · Make it light — they are mid-flow", back: "\"I have to jump in before my brain explodes.\"" },
-            { front: "Step 2 · Show you were listening — they laugh and stop", back: "\"The bit about the taxi is exactly it, though.\"" },
-            { front: "Step 3 · Land the point — they wait", back: "\"The same thing happened to me, and I have never recovered.\"" },
+            { front: "Step 1 · Make it light — they are mid-flow", back: "\"I have to jump in before my brain explodes.\"", guideFront: "Let the interruption be the joke when...", guideBack: "A light way in" },
+            { front: "Step 2 · Show you were listening — they laugh and stop", back: "\"The bit about the taxi is exactly it, though.\"", guideFront: "Name their point first when...", guideBack: "One clause about theirs" },
+            { front: "Step 3 · Land the point — they wait", back: "\"The same thing happened to me, and I have never recovered.\"", guideFront: "Say the thing you came in for when...", guideBack: "The point itself, briefly" },
           ]
         },
         {
           bundle: 'pro',
           situation: "A relaxed team meeting where you have been waiting to speak for a while.",
           steps: [
-            { front: "Step 1 · Make it light — nobody has offered you the floor", back: "\"You can probably see me twitching over here.\"" },
-            { front: "Step 2 · Show you were listening — the room turns", back: "\"The second option is the one I'd go for too.\"" },
-            { front: "Step 3 · Land the point — you have it", back: "\"It just needs the deadline moving, or it won't work at all.\"" },
+            { front: "Step 1 · Make it light — nobody has offered you the floor", back: "\"You can probably see me twitching over here.\"", guideFront: "Let the interruption be the joke when...", guideBack: "A light way in" },
+            { front: "Step 2 · Show you were listening — the room turns", back: "\"The second option is the one I'd go for too.\"", guideFront: "Name their point first when...", guideBack: "One clause about theirs" },
+            { front: "Step 3 · Land the point — you have it", back: "\"It just needs the deadline moving, or it won't work at all.\"", guideFront: "Say the thing you came in for when...", guideBack: "The point itself, briefly" },
           ]
         },
       ]
@@ -1830,51 +1830,51 @@ const multiStepCollections = {
   handleinterruptions: [
     {
       name: "When They Keep Cutting In",
-      guideFront: "React to the interruption, using this step's move.",
-      guideBack: "One line you could say here.",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
       description: "Handle an interruption that escalates: start gentle, firm up when it repeats, then hand over cleanly. Steps: 1) Acknowledge and Continue — note it and keep going, 2) Reinforce the Boundary — when they cut in again, 3) Invite Them In After — finish and give them the floor.\n\nThe shape of the whole thing:\n1. \"I see you want to add something — let me just finish this bit.\"\n2. \"That's twice now. Let me get to the end.\"\n3. \"Right, that's me. What were you going to say?\"\n\nWhy this order: firm on the first cut-in reads as touchy, and soft on the third reads as an invitation. The hand-over at the end is what keeps the whole thing friendly.\n\nMindset: escalate one notch at a time, and always finish by giving them the floor. That is what stops a boundary turning into a fight.",
       inputs: [
         {
           bundle: 'pro',
           situation: "You're making a point in a team meeting and a colleague keeps jumping in.",
           steps: [
-            { front: "Step 1 · Acknowledge and keep going — they cut in: \"Yeah but we tried that—\"", back: "\"Let me just finish this bit — then I want to hear it.\"" },
-            { front: "Step 2 · Firm up the boundary — they cut in again before you're done: \"I really think—\"", back: "\"Hold on — I'd like to actually finish this one.\"" },
-            { front: "Step 3 · Hand it over cleanly — you land your point and they're still keen", back: "\"Okay — that's me done. Now, what were you going to say?\"" },
+            { front: "Step 1 · Acknowledge and keep going — they cut in: \"Yeah but we tried that—\"", back: "\"Let me just finish this bit — then I want to hear it.\"", guideFront: "Nod to them and continue when...", guideBack: "A brief nod, then the thread" },
+            { front: "Step 2 · Firm up the boundary — they cut in again before you're done: \"I really think—\"", back: "\"Hold on — I'd like to actually finish this one.\"", guideFront: "State plainly that you need to finish when...", guideBack: "A calm, unapologetic line" },
+            { front: "Step 3 · Hand it over cleanly — you land your point and they're still keen", back: "\"Okay — that's me done. Now, what were you going to say?\"", guideFront: "Give them the floor properly when...", guideBack: "A clean handover" },
           ]
         },
       ]
     },
     {
       name: "Let It Go, Then Reclaim",
-      guideFront: "React to the interruption, using this step's move.",
-      guideBack: "One line you could say here.",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
       description: "When an interruption is urgent, give way and come back rather than fight it. Steps: 1) Let It Go — allow the urgent cut-in, 2) Reclaim — return to your thread once it settles, 3) Invite Them In After — finish and bring them back.\n\nThe shape of the whole thing:\n1. Say nothing, and let the urgent point land.\n2. \"Anyway, back to the timeline — I was at the second week.\"\n3. \"That's my bit. You had something earlier?\"\n\nWhy this order: some interruptions really are more urgent than your sentence. Giving way costs nothing as long as you come back, and coming back is the step people forget.\n\nMindset: letting it go is only half the move. Without the reclaim you have not chosen anything — you have simply lost the point.",
       inputs: [
         {
           bundle: 'pro',
           situation: "You're mid-explanation when someone bursts in with an urgent side point.",
           steps: [
-            { front: "Step 1 · Let it happen — they cut across: \"Sorry, but did everyone see the email?\"", back: "\"Go ahead — deal with that first.\"" },
-            { front: "Step 2 · Reclaim your thread — the email chat winds down", back: "\"Right — coming back to what I was explaining earlier —\"" },
-            { front: "Step 3 · Bring them back in — you finish and they'd wanted to add something", back: "\"…and that's the idea. You had a thought earlier?\"" },
+            { front: "Step 1 · Let it happen — they cut across: \"Sorry, but did everyone see the email?\"", back: "\"Go ahead — deal with that first.\"", guideFront: "Let it run rather than fight it when...", guideBack: "Nothing, for now" },
+            { front: "Step 2 · Reclaim your thread — the email chat winds down", back: "\"Right — coming back to what I was explaining earlier —\"", guideFront: "Go back to where you were when...", guideBack: "The thread, picked up again" },
+            { front: "Step 3 · Bring them back in — you finish and they'd wanted to add something", back: "\"…and that's the idea. You had a thought earlier?\"", guideFront: "Give them the turn you promised when...", guideBack: "The handover, by name" },
           ]
         },
       ]
     },
     {
       name: "Rescue the Punchline",
-      guideFront: "React to the interruption, using this step's move.",
-      guideBack: "One line you could say here.",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
       description: "Keep the floor for a story with humour, then land it. Steps: 1) Use Humour — deflect the cut-in playfully, 2) Acknowledge and Continue — note them and press on, 3) land it and share the floor.\n\nThe shape of the whole thing:\n1. \"Hold that thought, I'm just getting to the good part!\"\n2. \"I see you — two more lines, I promise.\"\n3. Land it, then: \"Right, go on — what were you saying?\"\n\nWhy this order: humour saves the first cut-in cheaply, but it wears out fast. A second one needs a straight acknowledgement, and handing the floor over afterwards is what keeps the room warm.\n\nMindset: a story that has to be fought for stops being funny. Keep it light, land it, then get out of the way.",
       inputs: [
         {
           bundle: 'pro',
           situation: "You're telling a story and a friend keeps stepping on the build-up.",
           steps: [
-            { front: "Step 1 · Deflect with humour — they jump in: \"Oh I know where this is going—\"", back: "\"Hey, no spoilers from the front row — let me get there!\"" },
-            { front: "Step 2 · Acknowledge and continue — they grin but open their mouth again", back: "\"One sec — the good bit needs me to finish it.\"" },
-            { front: "Step 3 · Land it and share the floor — you deliver the ending", back: "\"…and that's the twist. Okay — what were you going to guess?\"" },
+            { front: "Step 1 · Deflect with humour — they jump in: \"Oh I know where this is going—\"", back: "\"Hey, no spoilers from the front row — let me get there!\"", guideFront: "Lighten it and hold the floor when...", guideBack: "A warm line that keeps the turn" },
+            { front: "Step 2 · Acknowledge and continue — they grin but open their mouth again", back: "\"One sec — the good bit needs me to finish it.\"", guideFront: "Nod to them and continue when...", guideBack: "A brief nod, then the thread" },
+            { front: "Step 3 · Land it and share the floor — you deliver the ending", back: "\"…and that's the twist. Okay — what were you going to guess?\"", guideFront: "Finish, then open it up when...", guideBack: "The last line, then an invitation" },
           ]
         },
       ]
@@ -2296,86 +2296,86 @@ const multiStepCollections = {
   storytellingwiththesixws: [
     {
       name: "The Full Six",
-      guideFront: "Keep building the story — this part next.",
-      guideBack: "One way this part could sound.",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
       description: "All six W's in a natural telling order. Steps: 1) When — place it in time, 2) Where — set the scene, 3) Who — bring the people in, 4) What — the event, 5) How — the process, 6) Why — the reason underneath.\n\nThe six W's have no fixed order. This one works because the scene arrives before the event, so the listener has somewhere to put it when it lands.\n\nThe shape of the whole thing:\n1. \"This was yesterday, about ten minutes before the lesson.\"\n2. \"In the hallway outside the science block.\"\n3. \"My teacher was standing there waiting.\"\n4. \"And I had lost my homework.\"\n5. \"I checked my bag, my locker, the whole hallway.\"\n6. \"I had been in a rush that morning and had not checked properly.\"\n\nMindset: six sentences is a complete story. Most people either use two of them or forty, and the six-sentence version beats both.",
       inputs: [
         {
           bundle: 'pro',
           situation: "You are telling a friend about the day you lost your homework.",
           steps: [
-            { front: "Step 1 · When — they ask what happened at school", back: "\"This was yesterday, about ten minutes before the lesson.\"" },
-            { front: "Step 2 · Where — they are listening", back: "\"I was in the hallway outside the science block, everyone pushing past.\"" },
-            { front: "Step 3 · Who — set the people up", back: "\"My teacher was already standing there waiting for it.\"" },
-            { front: "Step 4 · What — land the event", back: "\"And I had lost my homework. Not forgotten it. Lost it.\"" },
-            { front: "Step 5 · How — the search", back: "\"I went through my bag, then my locker, then basically the whole corridor.\"" },
-            { front: "Step 6 · Why — the reason", back: "\"I had been in a rush that morning and just never checked.\"" },
+            { front: "Step 1 · When — they ask what happened at school", back: "\"This was yesterday, about ten minutes before the lesson.\"", guideFront: "Place it in time when...", guideBack: "The timing that mattered" },
+            { front: "Step 2 · Where — they are listening", back: "\"I was in the hallway outside the science block, everyone pushing past.\"", guideFront: "Say where it happened when...", guideBack: "The setting, in a clause" },
+            { front: "Step 3 · Who — set the people up", back: "\"My teacher was already standing there waiting for it.\"", guideFront: "Say who was there and what they did when...", guideBack: "The people who mattered" },
+            { front: "Step 4 · What — land the event", back: "\"And I had lost my homework. Not forgotten it. Lost it.\"", guideFront: "Say the thing that happened when...", guideBack: "The event, in one sentence" },
+            { front: "Step 5 · How — the search", back: "\"I went through my bag, then my locker, then basically the whole corridor.\"", guideFront: "Take them through it step by step when...", guideBack: "The middle, as it went" },
+            { front: "Step 6 · Why — the reason", back: "\"I had been in a rush that morning and just never checked.\"", guideFront: "Say the reason underneath when...", guideBack: "The cause or the motive" },
           ]
         },
         {
           bundle: 'pro',
           situation: "You are telling someone about the holiday where the hotel did not exist.",
           steps: [
-            { front: "Step 1 · When — they ask how the trip was", back: "\"We landed at about eleven at night, which did not help.\"" },
-            { front: "Step 2 · Where — set the scene", back: "\"The taxi dropped us at an empty gravel lot on the edge of town.\"" },
-            { front: "Step 3 · Who — bring the people in", back: "\"Just us, and a driver who clearly wanted to be somewhere else.\"" },
-            { front: "Step 4 · What — land the event", back: "\"The hotel we had booked did not exist.\"" },
-            { front: "Step 5 · How — the process", back: "\"He pointed at the lot, said the name, shrugged, and drove off.\"" },
-            { front: "Step 6 · Why — the reason", back: "\"Turned out the booking had never actually gone through.\"" },
+            { front: "Step 1 · When — they ask how the trip was", back: "\"We landed at about eleven at night, which did not help.\"", guideFront: "Place it in time when...", guideBack: "The timing that mattered" },
+            { front: "Step 2 · Where — set the scene", back: "\"The taxi dropped us at an empty gravel lot on the edge of town.\"", guideFront: "Say where it happened when...", guideBack: "The setting, in a clause" },
+            { front: "Step 3 · Who — bring the people in", back: "\"Just us, and a driver who clearly wanted to be somewhere else.\"", guideFront: "Say who was there and what they did when...", guideBack: "The people who mattered" },
+            { front: "Step 4 · What — land the event", back: "\"The hotel we had booked did not exist.\"", guideFront: "Say the thing that happened when...", guideBack: "The event, in one sentence" },
+            { front: "Step 5 · How — the process", back: "\"He pointed at the lot, said the name, shrugged, and drove off.\"", guideFront: "Take them through it step by step when...", guideBack: "The middle, as it went" },
+            { front: "Step 6 · Why — the reason", back: "\"Turned out the booking had never actually gone through.\"", guideFront: "Say the reason underneath when...", guideBack: "The cause or the motive" },
           ]
         },
       ]
     },
     {
       name: "The Short Version",
-      guideFront: "Keep building the story — this part next.",
-      guideBack: "One way this part could sound.",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
       description: "Three or four W's are often enough. Steps: 1) What — lead with the event, 2) How — two beats of process, 3) Why — the reason underneath.\n\nThis is the version for a conversation rather than a floor. When you have thirty seconds, or when the story is a contribution to someone else's topic rather than the main event, the spine on its own does the job.\n\nWhy these three:\n1. What — without it there is no story, only atmosphere.\n2. How — without it the story is an announcement.\n3. Why — without it the listener says \"and?\"\n\nMindset: knowing what to leave out is the skill. Dropping When, Where and Who is a decision, not a failure.",
       inputs: [
         {
           bundle: 'pro',
           situation: "Someone mentions bad first days at work and you have a story that fits.",
           steps: [
-            { front: "Step 1 · What — lead with it", back: "\"On my first day I sat in the wrong meeting for forty minutes.\"" },
-            { front: "Step 2 · How — two beats", back: "\"I nodded along the whole time, until someone finally asked who I was.\"" },
-            { front: "Step 3 · Why — the reason", back: "\"Nobody had told me where to go and I was too embarrassed to ask.\"" },
+            { front: "Step 1 · What — lead with it", back: "\"On my first day I sat in the wrong meeting for forty minutes.\"", guideFront: "Say the thing that happened when...", guideBack: "The event, in one sentence" },
+            { front: "Step 2 · How — two beats", back: "\"I nodded along the whole time, until someone finally asked who I was.\"", guideFront: "Take them through it step by step when...", guideBack: "The middle, as it went" },
+            { front: "Step 3 · Why — the reason", back: "\"Nobody had told me where to go and I was too embarrassed to ask.\"", guideFront: "Say the reason underneath when...", guideBack: "The cause or the motive" },
           ]
         },
         {
           bundle: 'pro',
           situation: "The conversation turns to embarrassing moments and you have one.",
           steps: [
-            { front: "Step 1 · What — lead with it", back: "\"I once called my teacher mum. Out loud.\"" },
-            { front: "Step 2 · How — two beats", back: "\"It was out before I could stop it, and then I heard myself say it.\"" },
-            { front: "Step 3 · Why — the reason", back: "\"I was exhausted, and she had been talking to me exactly like my mum does.\"" },
+            { front: "Step 1 · What — lead with it", back: "\"I once called my teacher mum. Out loud.\"", guideFront: "Say the thing that happened when...", guideBack: "The event, in one sentence" },
+            { front: "Step 2 · How — two beats", back: "\"It was out before I could stop it, and then I heard myself say it.\"", guideFront: "Take them through it step by step when...", guideBack: "The middle, as it went" },
+            { front: "Step 3 · Why — the reason", back: "\"I was exhausted, and she had been talking to me exactly like my mum does.\"", guideFront: "Say the reason underneath when...", guideBack: "The cause or the motive" },
           ]
         },
       ]
     },
     {
       name: "Hook First",
-      guideFront: "Keep building the story — this part next.",
-      guideBack: "One way this part could sound.",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
       description: "The version that leads with the event instead of building up to it. Steps: 1) What — open on the event, 2) Where and When — fill the scene in behind it, 3) Who — bring the people in, 4) How — then tell it properly.\n\nUse this when the event is strong enough to carry the opening, or when you are not certain you have the room's attention yet. Starting with the event buys you the time to set the scene afterwards.\n\nWhy the order is reversed:\n1. What first — a strong event earns you thirty seconds of patience.\n2. Scene second — now they have a reason to care where it happened.\n3. Who and How — the story proper, told to people who are already in.\n\nMindset: setup only holds attention you already have. If you are not sure you have it, lead with the event and backfill.",
       inputs: [
         {
           bundle: 'pro',
           situation: "You want to tell a story to a group that is half distracted.",
           steps: [
-            { front: "Step 1 · What — open on it", back: "\"I locked myself out of my own flat for six hours.\"" },
-            { front: "Step 2 · Scene — fill it in", back: "\"February, going dark, sitting on the front step with a bag of shopping.\"" },
-            { front: "Step 3 · Who — bring them in", back: "\"A neighbour I had never once spoken to came out and made me tea.\"" },
-            { front: "Step 4 · How — tell it properly", back: "\"I had tried the letting agent, the spare key, everything. Wrong jacket.\"" },
+            { front: "Step 1 · What — open on it", back: "\"I locked myself out of my own flat for six hours.\"", guideFront: "Say the thing that happened when...", guideBack: "The event, in one sentence" },
+            { front: "Step 2 · Scene — fill it in", back: "\"February, going dark, sitting on the front step with a bag of shopping.\"", guideFront: "Set the place before it starts when...", guideBack: "The setting, in a clause" },
+            { front: "Step 3 · Who — bring them in", back: "\"A neighbour I had never once spoken to came out and made me tea.\"", guideFront: "Say who was there and what they did when...", guideBack: "The people who mattered" },
+            { front: "Step 4 · How — tell it properly", back: "\"I had tried the letting agent, the spare key, everything. Wrong jacket.\"", guideFront: "Take them through it step by step when...", guideBack: "The middle, as it went" },
           ]
         },
         {
           bundle: 'pro',
           situation: "You want to tell the story of meeting your best friend.",
           steps: [
-            { front: "Step 1 · What — open on it", back: "\"I met my best friend because we were both complaining about the same bus.\"" },
-            { front: "Step 2 · Scene — fill it in", back: "\"First week of the course, at a bus stop with a broken timetable.\"" },
-            { front: "Step 3 · Who — bring them in", back: "\"A complete stranger who is now the person I speak to most.\"" },
-            { front: "Step 4 · How — tell it properly", back: "\"We said the exact same thing at the exact same time, and that was that.\"" },
+            { front: "Step 1 · What — open on it", back: "\"I met my best friend because we were both complaining about the same bus.\"", guideFront: "Say the thing that happened when...", guideBack: "The event, in one sentence" },
+            { front: "Step 2 · Scene — fill it in", back: "\"First week of the course, at a bus stop with a broken timetable.\"", guideFront: "Set the place before it starts when...", guideBack: "The setting, in a clause" },
+            { front: "Step 3 · Who — bring them in", back: "\"A complete stranger who is now the person I speak to most.\"", guideFront: "Say who was there and what they did when...", guideBack: "The people who mattered" },
+            { front: "Step 4 · How — tell it properly", back: "\"We said the exact same thing at the exact same time, and that was that.\"", guideFront: "Take them through it step by step when...", guideBack: "The middle, as it went" },
           ]
         },
       ]
@@ -2807,78 +2807,78 @@ const multiStepCollections = {
   agreeing: [
     {
       name: "Agree and Back It Up",
-      guideFront: "Take the next step in agreeing.",
-      guideBack: "One line you could say here.",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
       description: "The basic shape of a full agreeing turn. Steps: 1) Signal the Agreement — make it clear you are with them, 2) Add a Personal Experience — back it with something from your own life, 3) Expand the Idea — push it one step further.\n\nEach step does one job. The signal buys goodwill, the experience makes it real, and the expansion gives the conversation somewhere to go.\n\nThe shape of the whole thing:\n1. \"Same here, completely.\"\n2. \"I read by the window every time it rains.\"\n3. \"And it's the one kind of weather where staying in feels earned.\"\n\nMindset: the third step is the one people skip. Without it the agreement is warm but finished.",
       inputs: [
         {
           bundle: 'pro',
           situation: "A friend states an opinion about the weather that you happen to share.",
           steps: [
-            { front: "Step 1 · Signal you agree — they say: \"I love when it rains.\"", back: "\"Same here, honestly. Completely with you.\"" },
-            { front: "Step 2 · Back it with your own life — they say: \"Everyone thinks I'm strange for it.\"", back: "\"Not at all. I read by the window every single time it rains.\"" },
-            { front: "Step 3 · Take it one step further — they laugh and wait for more", back: "\"And it's the one kind of weather where staying in actually feels earned.\"" },
+            { front: "Step 1 · Signal you agree — they say: \"I love when it rains.\"", back: "\"Same here, honestly. Completely with you.\"", guideFront: "Make the agreement unmistakable when...", guideBack: "A short, warm confirmation" },
+            { front: "Step 2 · Back it with your own life — they say: \"Everyone thinks I'm strange for it.\"", back: "\"Not at all. I read by the window every single time it rains.\"", guideFront: "Add something that happened to you when...", guideBack: "A small scene of your own" },
+            { front: "Step 3 · Take it one step further — they laugh and wait for more", back: "\"And it's the one kind of weather where staying in actually feels earned.\"", guideFront: "Push the thought one step further when...", guideBack: "A related point, beside theirs" },
           ]
         },
         {
           bundle: 'pro',
           situation: "A colleague says something about sleep that matches your own habits.",
           steps: [
-            { front: "Step 1 · Signal you agree — they say: \"You only need six hours of sleep.\"", back: "\"I'd say that's about right.\"" },
-            { front: "Step 2 · Back it with your own life — they say: \"People never believe me.\"", back: "\"I've done six for about ten years now and I'm fine on it.\"" },
-            { front: "Step 3 · Take it one step further — they nod, waiting", back: "\"And the regular time matters more than the number, I think.\"" },
+            { front: "Step 1 · Signal you agree — they say: \"You only need six hours of sleep.\"", back: "\"I'd say that's about right.\"", guideFront: "Make the agreement unmistakable when...", guideBack: "A short, warm confirmation" },
+            { front: "Step 2 · Back it with your own life — they say: \"People never believe me.\"", back: "\"I've done six for about ten years now and I'm fine on it.\"", guideFront: "Add something that happened to you when...", guideBack: "A small scene of your own" },
+            { front: "Step 3 · Take it one step further — they nod, waiting", back: "\"And the regular time matters more than the number, I think.\"", guideFront: "Push the thought one step further when...", guideBack: "A related point, beside theirs" },
           ]
         },
       ]
     },
     {
       name: "Agree with a Reason",
-      guideFront: "Take the next step in agreeing.",
-      guideBack: "One line you could say here.",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
       description: "The version for opinions you share but have never lived. Steps: 1) Signal the Agreement — confirm you are with them, 2) Give an Explanation — say why it makes sense, 3) Expand the Idea — apply it somewhere they did not.\n\nUse this whenever you have no story to tell. A reason is always available, which makes this the version that works everywhere.\n\nWhere each step is doing its work:\n1. Signal — stops the reason sounding like a correction.\n2. Explanation — hands them an argument they can reuse.\n3. Expansion — moves it from their case to a wider one.\n\nMindset: having no personal experience is not a reason to stay quiet. Explaining why someone is right is a real contribution.",
       inputs: [
         {
           bundle: 'pro',
           situation: "A classmate states an opinion about school that you agree with in principle.",
           steps: [
-            { front: "Step 1 · Signal you agree — they say: \"You should always listen to your teacher.\"", back: "\"Completely agree, yes.\"" },
-            { front: "Step 2 · Say why it makes sense — they say: \"People act like it's optional.\"", back: "\"Another reason is you avoid the mistakes everyone else makes.\"" },
-            { front: "Step 3 · Apply it wider — they seem keen to keep going", back: "\"And the same goes for anyone who's done the job longer than you.\"" },
+            { front: "Step 1 · Signal you agree — they say: \"You should always listen to your teacher.\"", back: "\"Completely agree, yes.\"", guideFront: "Make the agreement unmistakable when...", guideBack: "A short, warm confirmation" },
+            { front: "Step 2 · Say why it makes sense — they say: \"People act like it's optional.\"", back: "\"Another reason is you avoid the mistakes everyone else makes.\"", guideFront: "Give the reason behind the opinion when...", guideBack: "The reasoning, not an example" },
+            { front: "Step 3 · Apply it wider — they seem keen to keep going", back: "\"And the same goes for anyone who's done the job longer than you.\"", guideFront: "Take it to a bigger case when...", guideBack: "The same idea, one size up" },
           ]
         },
         {
           bundle: 'pro',
           situation: "A colleague complains about the working week in a way you recognise.",
           steps: [
-            { front: "Step 1 · Signal you agree — they say: \"Long meetings kill the whole day.\"", back: "\"So true.\"" },
-            { front: "Step 2 · Say why it makes sense — they say: \"I can't put my finger on why.\"", back: "\"It's the back-to-back part — you never get a reset in between.\"" },
-            { front: "Step 3 · Apply it wider — they look like they want more", back: "\"And the recovery afterwards ends up costing more than the meeting did.\"" },
+            { front: "Step 1 · Signal you agree — they say: \"Long meetings kill the whole day.\"", back: "\"So true.\"", guideFront: "Make the agreement unmistakable when...", guideBack: "A short, warm confirmation" },
+            { front: "Step 2 · Say why it makes sense — they say: \"I can't put my finger on why.\"", back: "\"It's the back-to-back part — you never get a reset in between.\"", guideFront: "Give the reason behind the opinion when...", guideBack: "The reasoning, not an example" },
+            { front: "Step 3 · Apply it wider — they look like they want more", back: "\"And the recovery afterwards ends up costing more than the meeting did.\"", guideFront: "Take it to a bigger case when...", guideBack: "The same idea, one size up" },
           ]
         },
       ]
     },
     {
       name: "Keep It Going",
-      guideFront: "Take the next step in agreeing.",
-      guideBack: "One line you could say here.",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
       description: "Agreeing as a back-and-forth rather than a single turn. Steps: 1) Signal the Agreement — get on their side, 2) Expand the Idea — hand them something new, 3) Add a Personal Experience — once they have picked it up, meet them with your own.\n\nThe order is deliberately reversed here. By expanding before you tell your own story, you invite them to speak second rather than closing the topic yourself.\n\nWhat makes it work:\n1. Signal — short, so the expansion arrives quickly.\n2. Expansion — a new angle is easier to answer than a finished story.\n3. Experience — lands better once they have added their own piece.\n\nMindset: agreeing is a shared activity. The best version ends with both of you having said something.",
       inputs: [
         {
           bundle: 'pro',
           situation: "A friend offers an opinion about pace of life that you share.",
           steps: [
-            { front: "Step 1 · Signal you agree — they say: \"I think you should never hurry.\"", back: "\"That's so true.\"" },
-            { front: "Step 2 · Hand them a new angle — they wait to see if you mean it", back: "\"And sometimes taking your time gets a better result anyway.\"" },
-            { front: "Step 3 · Meet them with your own — they say: \"Exactly, I've started leaving earlier for things.\"", back: "\"Same. Every time I rush in the morning I forget something.\"" },
+            { front: "Step 1 · Signal you agree — they say: \"I think you should never hurry.\"", back: "\"That's so true.\"", guideFront: "Make the agreement unmistakable when...", guideBack: "A short, warm confirmation" },
+            { front: "Step 2 · Hand them a new angle — they wait to see if you mean it", back: "\"And sometimes taking your time gets a better result anyway.\"", guideFront: "Push the thought one step further when...", guideBack: "A related point, beside theirs" },
+            { front: "Step 3 · Meet them with your own — they say: \"Exactly, I've started leaving earlier for things.\"", back: "\"Same. Every time I rush in the morning I forget something.\"", guideFront: "Add something that happened to you when...", guideBack: "A small scene of your own" },
           ]
         },
         {
           bundle: 'pro',
           situation: "A neighbour makes a point about walking that you happen to agree with.",
           steps: [
-            { front: "Step 1 · Signal you agree — they say: \"Walking is underrated.\"", back: "\"Couldn't agree more.\"" },
-            { front: "Step 2 · Hand them a new angle — they seem pleased someone said so", back: "\"It's the only exercise you can do while thinking about something else.\"" },
-            { front: "Step 3 · Meet them with your own — they say: \"That's exactly why I do it.\"", back: "\"Same here. I started walking to work last spring and I'd never go back.\"" },
+            { front: "Step 1 · Signal you agree — they say: \"Walking is underrated.\"", back: "\"Couldn't agree more.\"", guideFront: "Make the agreement unmistakable when...", guideBack: "A short, warm confirmation" },
+            { front: "Step 2 · Hand them a new angle — they seem pleased someone said so", back: "\"It's the only exercise you can do while thinking about something else.\"", guideFront: "Push the thought one step further when...", guideBack: "A related point, beside theirs" },
+            { front: "Step 3 · Meet them with your own — they say: \"That's exactly why I do it.\"", back: "\"Same here. I started walking to work last spring and I'd never go back.\"", guideFront: "Add something that happened to you when...", guideBack: "A small scene of your own" },
           ]
         },
       ]

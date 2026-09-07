@@ -757,8 +757,8 @@ const challengesCollections = {
   howtointerrupt: [
     {
       name: "There Is No Pause",
-      guideFront: "What makes this one hard to get into?",
-      guideBack: "A possible line, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "They have been talking for minutes without leaving a single gap, and every time you draw breath they carry on.\n\nThe training is to notice when waiting has stopped being patience. Past a certain point the pause is not coming, and continuing to wait is not politeness — it is just not speaking.\n\nWhat it usually looks like:\n\n• Four minutes with no full stop you could use.\n• You start to speak and they keep going.\n• Everyone else has given up trying too.\n\nTwo ways through:\n1. Signal the Interruption — make the gap yourself, warmly. \"Sorry — can I jump in?\"\n2. Say Why It Matters — and justify it in the same breath. \"We've got four minutes and this decides it.\"\n\nMindset: making your own gap is a legitimate move, not a failure of manners. What makes it rude is doing it without a signal or a reason, not doing it at all.",
       inputs: [
         { q: "Four minutes and not one usable full stop.", a: "\"Sorry — can I jump in for a second?\" (signal the interruption)", bundle: 'pro' },
@@ -770,8 +770,8 @@ const challengesCollections = {
     },
     {
       name: "It Cannot Wait",
-      guideFront: "What makes this one hard to get into?",
-      guideBack: "A possible line, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Something is about to be decided wrongly, or the time is about to run out, and waiting politely means the moment is gone.\n\nThe training is to let the urgency carry the interruption rather than apologising your way in. A stated reason does more than three sorries.\n\nWhat it usually looks like:\n\n• A decision forming on a wrong assumption.\n• Two minutes left and the real question untouched.\n• Someone about to redo work that is already done.\n\nTwo ways through:\n1. Say Why It Matters — lead with the reason, not the apology. \"Let me stop you before you build on that.\"\n2. Signal the Interruption — one cue, then straight to it. \"Sorry — important one.\"\n\nMindset: an interruption that saves everyone ten minutes is a favour. Sitting on it to be polite is the more expensive choice.",
       inputs: [
         { q: "A decision is forming on a fact that has changed.", a: "\"Let me stop you before you build on that — the numbers came back different.\" (say why it matters)", bundle: 'pro' },
@@ -783,8 +783,8 @@ const challengesCollections = {
     },
     {
       name: "You Have to Correct Something",
-      guideFront: "What makes this one hard to get into?",
-      guideBack: "A possible line, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "They are wrong about a fact, and the longer they build on it the more awkward the correction becomes.\n\nThe training is to correct the fact without it landing as a correction of the person. The acknowledgement before it is what does that, and it costs one clause.\n\nWhat it usually looks like:\n\n• A wrong date, number or name being built on.\n• A whole plan resting on it.\n• Everyone else visibly noticing and saying nothing.\n\nTwo ways through:\n1. Acknowledge the Speaker First — grant what is right before you touch what is not. \"Everything up to the timeline I'm with you on.\"\n2. Say Why It Matters — frame it as saving them, not catching them. \"I'm stopping you so you don't build on it.\"\n\nMindset: correct early and it is information; correct late and it is an embarrassment. The kind thing is to interrupt sooner.",
       inputs: [
         { q: "A plan is being built on a date that has moved.", a: "\"Everything up to the timeline I'm with you on — but the date moved.\" (acknowledge the speaker first)", bundle: 'pro' },
@@ -796,8 +796,8 @@ const challengesCollections = {
     },
     {
       name: "Interrupting Someone Senior",
-      guideFront: "What makes this one hard to get into?",
-      guideBack: "A possible line, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The person talking has more standing than you, and a cut-in that would be nothing between peers feels risky here.\n\nThe training is to notice that the risk is mostly in the delivery, not in the act. A signalled, reasoned interruption from a junior person reads as engagement; an unsignalled one reads as overstepping.\n\nWhat makes it hard:\n\n• The power gap makes any interruption feel like a challenge.\n• Nobody else is interrupting, so you would be first.\n• You would rather lose the point than take the risk.\n\nTwo ways through:\n1. Wait for a Natural Pause — the safest version, and usually available. \"Can I come in on that?\"\n2. Acknowledge the Speaker First — lead with their point, not yours. \"That's the part I'd want to build on.\"\n\nMindset: staying silent has a cost too. Interrupting well is one of the clearest ways to look like someone who is actually in the conversation.",
       inputs: [
         { q: "Your manager is mid-explanation and you have a real objection.", a: "(at the full stop) \"Can I come in on that?\" (wait for a natural pause)", bundle: 'pro' },
@@ -809,8 +809,8 @@ const challengesCollections = {
     },
     {
       name: "You Have Already Interrupted Once",
-      guideFront: "What makes this one hard to get into?",
-      guideBack: "A possible line, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "You cut in five minutes ago, and a second one starts to look like a pattern rather than a moment.\n\nThe training is to notice the count. The second interruption is judged much more harshly than the first, so it needs either a better reason or a lighter touch.\n\nWhat it usually looks like:\n\n• You are aware of it before you have opened your mouth.\n• A flicker of impatience the last time you did it.\n• You are the only one who has interrupted at all.\n\nTwo ways through:\n1. Use Humour — name it yourself before anyone else does. \"Me again. I'm aware of it.\"\n2. Wait for a Natural Pause — earn this one by waiting properly for it.\n\nMindset: naming your own pattern buys you a great deal of goodwill. Pretending you have not noticed is what makes people count.",
       inputs: [
         { q: "You are about to interrupt for the second time in five minutes.", a: "\"Me again. I'm aware of it.\" (use humour)", bundle: 'pro' },
@@ -824,8 +824,8 @@ const challengesCollections = {
   handleinterruptions: [
     {
       name: "The Serial Interrupter",
-      guideFront: "What kind of interruption is this?",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "One person who keeps cutting you off — again and again, sometimes finishing your sentences. The training is to recognise the pattern (it's not a one-off) and meet it with a calm, repeatable boundary, handing them a turn afterwards so it stays friendly. Best handled with Reinforce the Boundary and Invite Them In After.\n\nWhat it usually looks like:\n\n• The same person, three or four times in one conversation.\n• They finish your sentences for you.\n• You have started shortening what you say just to get it in.\n\nTwo ways through:\n1. Reinforce the Boundary — name the pattern calmly. \"That's twice now. Let me get to the end.\"\n2. Invite Them In After — give them the turn they clearly want. \"You're next, one sec.\"\n\nMindset: it is a pattern, not an accident, so a one-off response will not fix it. Most serial interrupters are not hostile — they simply have not noticed.",
       inputs: [
         { q: "The same colleague has now cut you off three times in one meeting.", a: "\"I'd really like to finish one point without a break — then it's yours.\" (reinforce the boundary)", bundle: 'pro' },
@@ -837,8 +837,8 @@ const challengesCollections = {
     },
     {
       name: "Interrupted by Enthusiasm",
-      guideFront: "What kind of interruption is this?",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The cut-in comes from excitement, not rudeness — they agree, they relate, they're keen. The training is to notice it's well-meant and keep it warm: acknowledge the energy and hold your line lightly, or promise them the next turn. Best handled with Acknowledge and Continue, Invite Them In After, and Use Humour.\n\nWhat it usually looks like:\n\n• They agree loudly before you have finished the sentence.\n• They relate it to their own thing straight away.\n• The energy is up and nobody means any harm.\n\nTwo ways through:\n1. Acknowledge and Continue — meet the energy and keep going. \"Yes, exactly — and the other half of it is…\"\n2. Use Humour — hold the floor without cooling the room. \"I'm just getting to the good part!\"\n\nMindset: do not treat warmth as rudeness. Coming down hard on an enthusiastic cut-in costs you more than the interrupted sentence was worth.",
       inputs: [
         { q: "A friend cuts in, thrilled: \"Oh that happened to me too!\"", a: "\"Love it — hold that, I want to hear it the second I'm done.\" (invite them in after)", bundle: 'pro' },
@@ -850,8 +850,8 @@ const challengesCollections = {
     },
     {
       name: "Talked Over in a Group",
-      guideFront: "What kind of interruption is this?",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Not one interrupter but several — crosstalk buries your point before you finish, and the group moves on. The training is to spot that the room, not one person, is the obstacle, and either hold the floor firmly or let it go and reclaim your thread when a gap opens. Best handled with Reinforce the Boundary and Let It Go and Reclaim.\n\nWhat it usually looks like:\n\n• Two or three people talking at once.\n• Your point gets buried and the group moves on.\n• Nobody notices that you stopped.\n\nTwo ways through:\n1. Reinforce the Boundary — claim the floor plainly. \"Hang on — I'd like to finish that thought.\"\n2. Let It Go and Reclaim — wait for the gap, then come back. \"Going back a step — the thing about the timeline.\"\n\nMindset: the room is the obstacle, not one person, so there is nobody to take it up with. Volume rarely helps; a short pause and a plain claim usually does.",
       inputs: [
         { q: "Three people are talking and your point keeps getting buried.", a: "\"Can I jump back in? I didn't get to finish earlier.\" (let it go and reclaim)", bundle: 'pro' },
@@ -863,8 +863,8 @@ const challengesCollections = {
     },
     {
       name: "Interrupted by Someone Senior",
-      guideFront: "What kind of interruption is this?",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "A boss, teacher, or elder cuts in — and the power gap makes a hard boundary feel risky. The training is to hold your point respectfully rather than back down: acknowledge them, ask to finish, or let it pass and reclaim, all without heat. Best handled with Acknowledge and Continue and Let It Go and Reclaim.\n\nWhat makes it hard:\n\n• The power gap makes a firm boundary feel risky.\n• Backing down every time teaches them to keep doing it.\n• Everyone else in the room is watching how you take it.\n\nTwo ways through:\n1. Acknowledge and Continue — hold your point respectfully. \"Absolutely — and the bit I hadn't got to is…\"\n2. Let It Go and Reclaim — give way, then return once it settles. \"Coming back to the earlier point, if that's alright.\"\n\nMindset: respectfully holding your point is not insubordination. Asking to finish, calmly and without heat, reads as confidence rather than challenge.",
       inputs: [
         { q: "Your manager cuts in before you finish presenting.", a: "\"Absolutely — let me just complete this part so it's clear.\" (acknowledge and continue)", bundle: 'pro' },
@@ -876,8 +876,8 @@ const challengesCollections = {
     },
     {
       name: "Interrupted and Derailed",
-      guideFront: "What kind of interruption is this?",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The cut-in doesn't just stop you — it changes the subject, and your point never comes back on its own. The training is to notice the topic has been hijacked and steer back to your unfinished thread, firmly if needed. Best handled with Let It Go and Reclaim and Reinforce the Boundary.\n\nWhat it usually looks like:\n\n• The cut-in changes the subject entirely.\n• Ten minutes later your point still has not come back.\n• Nobody remembers you were mid-sentence, including you.\n\nTwo ways through:\n1. Let It Go and Reclaim — wait for the lull, then steer back. \"Before we move on — I hadn't finished the thing about costs.\"\n2. Reinforce the Boundary — stop the drift as it happens. \"Can we come back to that? I was still on the first bit.\"\n\nMindset: a derailed point never returns on its own. If you do not bring it back it is gone — and it was probably the reason you spoke up.",
       inputs: [
         { q: "Someone interrupts and the whole topic shifts away from your point.", a: "\"Before we lose it — I hadn't finished what I was saying.\" (let it go and reclaim)", bundle: 'pro' },
@@ -1226,8 +1226,8 @@ const challengesCollections = {
   storytellingwiththesixws: [
     {
       name: "You Buried the Event",
-      guideFront: "What has gone wrong with this story?",
-      guideBack: "A possible fix, with the W in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Two minutes in and the listener still does not know what actually happened — you are still explaining the background.\n\nThe training is to notice the moment their attention goes, and to get the event out immediately rather than finishing the run-up you had planned.\n\nWhat it usually looks like:\n\n• A long setup with no event in sight.\n• \"Anyway, so —\" arriving for the third time.\n• Someone asking \"sorry, what happened?\"\n\nTwo ways through:\n1. What — say it now, out of order if necessary. \"Anyway — I lost the whole thing.\"\n2. How — skip straight to the middle. \"Long story short, it ended up under the lockers.\"\n\nMindset: you can always backfill. Nobody has ever minded a story that started at the event and explained itself afterwards.",
       inputs: [
         { q: "Two minutes of background and nothing has happened yet.", a: "\"Anyway — the short version is I lost my homework completely.\" (what)", bundle: 'pro' },
@@ -1239,8 +1239,8 @@ const challengesCollections = {
     },
     {
       name: "They Said \"And?\"",
-      guideFront: "What has gone wrong with this story?",
-      guideBack: "A possible fix, with the W in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "You finished the story and got a polite pause. Everything happened, nothing landed.\n\nThe training is to recognise this specific symptom as a missing Why. The events were clear; what was missing was any reason to care about them, which is usually you.\n\nWhat it usually sounds like:\n\n• \"Right… and then what?\"\n• A polite nod and a change of subject.\n• \"Huh.\"\n\nTwo ways through:\n1. Why — say what it meant or what caused it. \"I had failed three times, so it actually meant something.\"\n2. Who — put a person and their reaction in. \"The examiner had failed me twice before and clearly remembered.\"\n\nMindset: a story without a Why is a report. The listener is not asking for a better event, they are asking what it was like to be you in it.",
       inputs: [
         { q: "You finished and got a polite pause.", a: "\"I had failed three times before that, so it actually meant something.\" (why)", bundle: 'pro' },
@@ -1252,8 +1252,8 @@ const challengesCollections = {
     },
     {
       name: "They Cannot Picture It",
-      guideFront: "What has gone wrong with this story?",
-      guideBack: "A possible fix, with the W in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "They are following the story but seeing nothing. It is all events and no scene.\n\nThe training is to notice that you have given a sequence without a setting, and to spend one clause on the place before carrying on.\n\nWhat it usually looks like:\n\n• The whole story happens in a vacuum.\n• You realise you never said where you were.\n• It sounds like it could have happened anywhere.\n\nTwo ways through:\n1. Where — one concrete detail, not a description. \"A hallway full of people trying to get past me.\"\n2. When — anchor it as a real moment. \"February, and it was already going dark.\"\n\nMindset: one detail and the listener builds the rest themselves. You are giving them somewhere to stand, not describing a room.",
       inputs: [
         { q: "The story is clear but happening nowhere in particular.", a: "\"This was in the hallway outside the science block, everyone pushing past.\" (where)", bundle: 'pro' },
@@ -1265,8 +1265,8 @@ const challengesCollections = {
     },
     {
       name: "Who Is This Person?",
-      guideFront: "What has gone wrong with this story?",
-      guideBack: "A possible fix, with the W in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "You have used a name three times and the listener has no idea who they are, so they have stopped following and started guessing.\n\nThe training is to introduce people the first time they appear, in about four words, and to keep the cast small.\n\nWhat it usually looks like:\n\n• A name arriving with no explanation.\n• Four people in the story and no way to tell them apart.\n• \"Sorry, who is Sam?\"\n\nTwo ways through:\n1. Who — introduce them as they arrive. \"My mate Sam, who was crawling under the lockers.\"\n2. Who, trimmed — cut the cast to the ones who matter. \"There were others there, but really it was just me and the driver.\"\n\nMindset: a listener working out who someone is has stopped listening to the story. Four words of introduction buys back the whole rest of it.",
       inputs: [
         { q: "You have said a name three times with no introduction.", a: "\"Sam — my mate from school, the one who was under the lockers.\" (who)", bundle: 'pro' },
@@ -1278,8 +1278,8 @@ const challengesCollections = {
     },
     {
       name: "It Is Going On Too Long",
-      guideFront: "What has gone wrong with this story?",
-      guideBack: "A possible fix, with the W in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "You are somewhere in the middle, the story has grown a subplot, and you can feel it sagging.\n\nThe training is to cut rather than to speed up. Talking faster makes a long story a fast long story; dropping W's makes it a short one.\n\nWhat it usually looks like:\n\n• A second story growing inside the first.\n• Nine steps in the How where three would do.\n• \"Anyway, that is not important —\" said out loud.\n\nTwo ways through:\n1. What — jump to the outcome and land it. \"Anyway — we never did find it.\"\n2. How, trimmed — two beats instead of nine. \"Long story short, it took about six hours.\"\n\nMindset: the six W's are a menu, not a checklist. Three or four told well beats all six told exhaustively.",
       inputs: [
         { q: "A second story has started growing inside the first.", a: "\"That is a whole other thing — anyway, we never did find it.\" (what)", bundle: 'pro' },
@@ -1628,8 +1628,8 @@ const challengesCollections = {
   agreeing: [
     {
       name: "You Agree But Have Nothing to Add",
-      guideFront: "What makes this one hard to agree with?",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "You genuinely share the opinion, but your head is empty — no story, no clever reason, nothing.\n\nThe training is to notice that this is the most common agreeing problem, and that it has a standard fix: a reason is always available even when a story is not. You do not need material, you need one clause.\n\nWhat it usually feels like:\n\n• \"Yeah, totally\" and then a blank.\n• Wanting to agree but not trusting it is enough.\n• Waiting for something good enough to say, and losing the moment.\n\nTwo ways through:\n1. Give an Explanation — say why it makes sense, in one clause. \"Agreed, it just makes everything calmer.\"\n2. Signal the Agreement — if even that will not come, at least land the signal warmly. \"Couldn't agree more.\"\n\nMindset: a warm signal plus one short reason is a complete contribution. Nobody is grading the reason.",
       inputs: [
         { q: "You agree with an opinion but have no experience of it at all.", a: "\"Agreed — it just makes everything calmer, doesn't it?\" (give an explanation)", bundle: 'pro' },
@@ -1641,8 +1641,8 @@ const challengesCollections = {
     },
     {
       name: "You Only Half Agree",
-      guideFront: "What makes this one hard to agree with?",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "You agree with part of it and not the rest, and a full-throated \"totally!\" would be a small lie.\n\nThe training is to find the part you actually mean and agree with that honestly, instead of either faking it or swinging into disagreement. Narrowing is a real agreeing move, not a dodge.\n\nWhat it usually sounds like:\n\n• An opinion stated more strongly than you would put it.\n• A rule that holds in some situations and not others.\n• Something true of them but not of everyone.\n\nTwo ways through:\n1. Give an Explanation, narrowed — \"I agree, especially when...\" names exactly where you are with them.\n2. Add a Personal Experience — tell the part of it you have actually lived, which is honest by definition.\n\nNote: if you do not agree at all, this is the wrong pack — that is a different skill.\n\nMindset: partial agreement said honestly is worth more than full agreement said vaguely. \"Especially when\" is a whole sentence of honesty.",
       inputs: [
         { q: "Someone says: \"You should always listen to your teacher.\" You'd say usually, not always.", a: "\"I agree, especially when it's something they've actually done themselves.\" (give an explanation)", bundle: 'pro' },
@@ -1654,8 +1654,8 @@ const challengesCollections = {
     },
     {
       name: "Agreeing Without Sounding Like an Echo",
-      guideFront: "What makes this one hard to agree with?",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "You have said \"yeah\", \"exactly\" and \"so true\" three times in a row, and it has started to sound like you are not listening.\n\nThe training is to notice the pattern in yourself. Pure signalling is warm the first time and empty by the third — every agreement needs something of yours attached.\n\nWhat it usually sounds like:\n\n• Three signals in a row with nothing between them.\n• Agreeing so fast it reads as automatic.\n• The other person carrying the whole conversation.\n\nTwo ways through:\n1. Add a Personal Experience — the fastest way to prove you are actually in it.\n2. Expand the Idea — a new angle can only come from someone who was listening.\n\nMindset: the signal is the doorway, not the room. If you only ever signal, you are being agreeable rather than agreeing.",
       inputs: [
         { q: "You have said \"exactly\" three times in a row.", a: "\"Same, actually — I did that for years and it stuck.\" (add a personal experience)", bundle: 'pro' },
@@ -1667,8 +1667,8 @@ const challengesCollections = {
     },
     {
       name: "An Opinion You Know Nothing About",
-      guideFront: "What makes this one hard to agree with?",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "You agree in spirit — they sound right and you have no reason to doubt them — but the subject is completely outside your experience.\n\nThe training is to agree without pretending to knowledge you do not have. Faking familiarity is the one thing that will get caught.\n\nWhat it usually sounds like:\n\n• A hobby, a job or a place you have no contact with.\n• A claim you cannot evaluate but instinctively believe.\n• Something everyone else in the room clearly knows about.\n\nTwo ways through:\n1. Signal the Agreement — honest warmth needs no expertise. \"That sounds exactly right.\"\n2. Expand the Idea — agree with the shape of it and apply it to something you DO know.\n\nMindset: you can agree with a principle without knowing the field. Just do not dress it up as experience.",
       inputs: [
         { q: "The opinion is about a hobby you have never tried.", a: "\"That sounds exactly right, from everything I've heard.\" (signal the agreement)", bundle: 'pro' },
@@ -1680,8 +1680,8 @@ const challengesCollections = {
     },
     {
       name: "Agreeing in a Group",
-      guideFront: "What makes this one hard to agree with?",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Three people have already agreed, and yours would be the fourth \"yes\" in a row — which adds nothing and slightly flattens the conversation.\n\nThe training is to skip the signal that has already been said three times and go straight to a contribution nobody else has made.\n\nWhat makes it different:\n\n• The signal has been used up by the people before you.\n• Repeating the same reason makes the whole group sound like one person.\n• Silence, on the other hand, reads as disagreement.\n\nTwo ways through:\n1. Expand the Idea — the only move that is guaranteed not to repeat anyone.\n2. Add a Personal Experience — yours is yours, so it cannot have been said already.\n\nMindset: in a group, the value of agreeing is in what you add, not in the agreeing itself.",
       inputs: [
         { q: "Three people have already said they agree.", a: "\"And the same goes for weekends, which nobody's mentioned.\" (expand the idea)", bundle: 'pro' },
