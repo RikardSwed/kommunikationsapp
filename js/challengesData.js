@@ -9,14 +9,14 @@ const challengesCollections = {
       guideBack: "A possible response, with the strategy in brackets.",
       description: "Group situations where getting or keeping a turn is genuinely difficult — the fast meeting with no gaps, the senior voice nobody interrupts, the call where you cannot catch anyone's eye, the person who talks over you every single time. The point is to notice which obstacle you are actually facing, because the fix differs: a room with no gaps needs you to start anyway, while a room that keeps taking your turn needs you to hold it.",
       inputs: [
-        { q: "The conversation moves so fast there is never a gap.", a: "\"Can I jump in on that —\" said at normal volume, starting mid-flow. (taking the floor)", bundle: 'pro' },
-        { q: "A senior colleague has held the floor for several minutes.", a: "\"That's useful — and it connects to something I've been sitting on.\" (taking the floor)", bundle: 'pro' },
-        { q: "You are on a call and cannot use eye contact to claim a turn.", a: "\"Sorry — jumping in. I have one thing on the timeline.\" (taking the floor)", bundle: 'pro' },
-        { q: "The same person has cut you off three times in one meeting.", a: "\"I like that you want to add things — but let me get to the end of this one.\" (handling interruptions)", bundle: 'pro' },
-        { q: "You start speaking and someone starts at the same moment.", a: "\"Go ahead — then I've got one.\" (handling interruptions)", bundle: 'pro' },
-        { q: "You are asked for input and everyone turns to look at you.", a: "\"Two things. First the deadline, then the budget. The deadline is the real problem.\" (taking the floor)", bundle: 'pro' },
-        { q: "Someone interrupts out of enthusiasm rather than rudeness.", a: "\"Wait — you'll get to say it in about ten seconds, I promise.\" (handling interruptions)", bundle: 'pro' },
-        { q: "Two colleagues are going back and forth and you see a third option.", a: "\"Can I offer a third way? Both of those assume we ship in March.\" (taking the floor)", bundle: 'pro' },
+        { q: "The conversation moves so fast there is never a gap.", a: "\"Can I jump in on that —\" said at normal volume, starting mid-flow. [Taking the Floor]", bundle: 'pro' },
+        { q: "A senior colleague has held the floor for several minutes.", a: "\"That's useful — and it connects to something I've been sitting on.\" [Taking the Floor]", bundle: 'pro' },
+        { q: "You are on a call and cannot use eye contact to claim a turn.", a: "\"Sorry — jumping in. I have one thing on the timeline.\" [Taking the Floor]", bundle: 'pro' },
+        { q: "The same person has cut you off three times in one meeting.", a: "\"I like that you want to add things — but let me get to the end of this one.\" [Handling Interruptions]", bundle: 'pro' },
+        { q: "You start speaking and someone starts at the same moment.", a: "\"Go ahead — then I've got one.\" [Handling Interruptions]", bundle: 'pro' },
+        { q: "You are asked for input and everyone turns to look at you.", a: "\"Two things. First the deadline, then the budget. The deadline is the real problem.\" [Taking the Floor]", bundle: 'pro' },
+        { q: "Someone interrupts out of enthusiasm rather than rudeness.", a: "\"Wait — you'll get to say it in about ten seconds, I promise.\" [Handling Interruptions]", bundle: 'pro' },
+        { q: "Two colleagues are going back and forth and you see a third option.", a: "\"Can I offer a third way? Both of those assume we ship in March.\" [Taking the Floor]", bundle: 'pro' },
       ]
     },
   ],
@@ -27,14 +27,14 @@ const challengesCollections = {
       guideBack: "A possible response, with the strategy in brackets.",
       description: "The requests where a plain no feels too blunt but a yes would cost you something — the favour asked in front of other people, the third ask this month, the one from someone who never says no to you. The point is to notice what makes each one awkward, because humour only helps when the awkwardness is about tone. When the request is serious to the person asking, neither move is the right tool and a plain answer is kinder.",
       inputs: [
-        { q: "A friend asks for a lift at an hour that ruins your evening.", a: "\"At that hour? I'll need to be paid in breakfast.\" (playful protest)", bundle: 'pro' },
-        { q: "Someone asks you to do a tedious task you have done many times.", a: "\"Ah yes. My life's work. Let me get my equipment.\" (playful protest)", bundle: 'pro' },
-        { q: "You are asked for a favour in front of other people.", a: "\"You're doing this with witnesses? Bold.\" (playful protest)", bundle: 'pro' },
-        { q: "Someone asks for something you genuinely have no skill for.", a: "\"I have no spatial ability whatsoever. The wall would end up worse.\" (faked incompetence)", bundle: 'pro' },
-        { q: "A child asks you to do something fiddly for the fourth time.", a: "\"Those buttons are beyond me. I've never worked out the system.\" (faked incompetence)", bundle: 'pro' },
-        { q: "Someone asks for a favour that really is a bit much.", a: "\"I want it on record that I know exactly how big this is.\" (playful protest)", bundle: 'pro' },
-        { q: "A friend who never refuses you asks for something inconvenient.", a: "\"For you? Fine. Under protest, but fine.\" (playful protest)", bundle: 'pro' },
-        { q: "Someone asks for help with something where you would genuinely make it worse.", a: "\"I'm afraid I'm entirely untrained in this area.\" (faked incompetence)", bundle: 'pro' },
+        { q: "A friend asks for a lift at an hour that ruins your evening.", a: "\"At that hour? I'll need to be paid in breakfast.\" [Playful Protest]", bundle: 'pro' },
+        { q: "Someone asks you to do a tedious task you have done many times.", a: "\"Ah yes. My life's work. Let me get my equipment.\" [Playful Protest]", bundle: 'pro' },
+        { q: "You are asked for a favour in front of other people.", a: "\"You're doing this with witnesses? Bold.\" [Playful Protest]", bundle: 'pro' },
+        { q: "Someone asks for something you genuinely have no skill for.", a: "\"I have no spatial ability whatsoever. The wall would end up worse.\" [Faked Incompetence]", bundle: 'pro' },
+        { q: "A child asks you to do something fiddly for the fourth time.", a: "\"Those buttons are beyond me. I've never worked out the system.\" [Faked Incompetence]", bundle: 'pro' },
+        { q: "Someone asks for a favour that really is a bit much.", a: "\"I want it on record that I know exactly how big this is.\" [Playful Protest]", bundle: 'pro' },
+        { q: "A friend who never refuses you asks for something inconvenient.", a: "\"For you? Fine. Under protest, but fine.\" [Playful Protest]", bundle: 'pro' },
+        { q: "Someone asks for help with something where you would genuinely make it worse.", a: "\"I'm afraid I'm entirely untrained in this area.\" [Faked Incompetence]", bundle: 'pro' },
       ]
     },
   ],
@@ -82,14 +82,14 @@ const challengesCollections = {
       guideBack: "A possible response, with the strategy in brackets.",
       description: "Conversations that have stalled, drifted, or tipped out of balance — the flat patch after a topic ends, the technical thread you cannot follow, the moment you realise you have been talking for five minutes. The point is to recognise which kind of stuck you are in and reach for the move that fits. Topic Shift handles drift and flat patches, Story to Question fixes an unbalanced floor, and Question to Story opens up a conversation that has gone one-word.",
       inputs: [
-        { q: "The conversation has been about the weather for three exchanges.", a: "\"I've decided weather talk is the warm-up. So what's actually been going on with you?\" (topic shift)", bundle: 'pro' },
-        { q: "A topic ends and nobody starts a new one.", a: "\"Right — new subject. What's the best thing that's happened to you this week?\" (topic shift)", bundle: 'pro' },
-        { q: "You realise you have been talking about yourself for several minutes.", a: "\"…and that's the short version. Your turn — what have you been up to?\" (story to question)", bundle: 'pro' },
-        { q: "A group is deep in a technical topic you cannot follow.", a: "\"I'm lost on the details — but what got you into this in the first place?\" (topic shift)", bundle: 'pro' },
-        { q: "They are giving one-word answers to everything you ask.", a: "\"I'll go first, then. My week has been completely ridiculous.\" (question to story)", bundle: 'pro' },
-        { q: "The conversation has drifted into gossip you would rather not take part in.", a: "\"I'm the wrong person for this one. Tell me how the house move is going instead.\" (topic shift)", bundle: 'pro' },
-        { q: "You asked a question, they answered in one sentence, and then nothing.", a: "\"That reminds me — same thing happened to me last year, and it went badly.\" (question to story)", bundle: 'pro' },
-        { q: "The conversation is pleasant but completely on the surface.", a: "\"Can I skip ahead? I'd rather hear what you're actually excited about.\" (topic shift)", bundle: 'pro' },
+        { q: "The conversation has been about the weather for three exchanges.", a: "\"I've decided weather talk is the warm-up. So what's actually been going on with you?\" [Topic Shift]", bundle: 'pro' },
+        { q: "A topic ends and nobody starts a new one.", a: "\"Right — new subject. What's the best thing that's happened to you this week?\" [Topic Shift]", bundle: 'pro' },
+        { q: "You realise you have been talking about yourself for several minutes.", a: "\"…and that's the short version. Your turn — what have you been up to?\" [Story to Question]", bundle: 'pro' },
+        { q: "A group is deep in a technical topic you cannot follow.", a: "\"I'm lost on the details — but what got you into this in the first place?\" [Topic Shift]", bundle: 'pro' },
+        { q: "They are giving one-word answers to everything you ask.", a: "\"I'll go first, then. My week has been completely ridiculous.\" [Question to Story]", bundle: 'pro' },
+        { q: "The conversation has drifted into gossip you would rather not take part in.", a: "\"I'm the wrong person for this one. Tell me how the house move is going instead.\" [Topic Shift]", bundle: 'pro' },
+        { q: "You asked a question, they answered in one sentence, and then nothing.", a: "\"That reminds me — same thing happened to me last year, and it went badly.\" [Question to Story]", bundle: 'pro' },
+        { q: "The conversation is pleasant but completely on the surface.", a: "\"Can I skip ahead? I'd rather hear what you're actually excited about.\" [Topic Shift]", bundle: 'pro' },
       ]
     },
   ],
@@ -379,10 +379,10 @@ const challengesCollections = {
       guideBack: "A possible response, with the type in brackets.",
       description: "They give you almost nothing back — short, closed replies, then silence. The training is to notice you need a warmer, easier setup that hands them a concrete thread, rather than repeating the same opener. Best handled with an Action or Background setup.\n\nWhat it usually looks like:\n\n• \"Fine, thanks.\" and nothing after it.\n• Closed replies to everything you try.\n• You have asked twice and got two words back.\n\nTwo ways through:\n1. Action Setup — hand them something concrete to react to. \"I'm learning guitar — are you working on anything?\"\n2. Background Setup — give them a thread with a detail in it. \"I got the wrong bus and walked — how did you get here?\"\n\nMindset: repeating the same kind of opener louder will not help. Change what you are handing them, not how hard you are handing it.",
       inputs: [
-        { q: "Your first setup got a one-word answer and then silence.", a: "\"Fair enough — I'll go first properly. I'm getting back into reading. Are you into books at all?\" (action)", bundle: 'pro' },
-        { q: "They keep giving short, closed replies.", a: "\"No pressure to chat, I'm bad at this too. I've just started running — do you do anything to unwind?\" (action)", bundle: 'pro' },
-        { q: "You opened, they answered, and it's gone quiet again.", a: "\"I came from work and my brain's fried. Where are you coming from?\" (background)", bundle: 'pro' },
-        { q: "Every question gets a \"yeah\" and nothing more.", a: "\"I'll make it easy — I'm here for the free coffee, honestly. What about you?\" (purpose)", bundle: 'pro' },
+        { q: "Your first setup got a one-word answer and then silence.", a: "\"Fair enough — I'll go first properly. I'm getting back into reading. Are you into books at all?\" [Action Setup]", bundle: 'pro' },
+        { q: "They keep giving short, closed replies.", a: "\"No pressure to chat, I'm bad at this too. I've just started running — do you do anything to unwind?\" [Action Setup]", bundle: 'pro' },
+        { q: "You opened, they answered, and it's gone quiet again.", a: "\"I came from work and my brain's fried. Where are you coming from?\" [Background Setup]", bundle: 'pro' },
+        { q: "Every question gets a \"yeah\" and nothing more.", a: "\"I'll make it easy — I'm here for the free coffee, honestly. What about you?\" [Purpose Setup]", bundle: 'pro' },
       ]
     },
     {
@@ -391,9 +391,9 @@ const challengesCollections = {
       guideBack: "A possible response, with the type in brackets.",
       description: "The mood is low and the energy's gone — nobody's really talking. The training is to notice the mood is the most honest thing to name, and open with a Status setup that invites them to say how they are. Best handled with a Status setup.\n\nWhat it usually looks like:\n\n• A long silence nobody wants to be the one to break.\n• Everyone on their phone or looking at the door.\n• Small talk that keeps dying after one exchange.\n\nTwo ways through:\n1. Status Setup — name the mood honestly. \"Quiet one tonight, isn't it — how's your week been?\"\n2. Opinion Setup — react to something present. \"This music is doing nothing for the room, is it?\"\n\nMindset: in a flat room the mood is the most honest thing available. Naming it is a relief to everyone, because they were all thinking it.",
       inputs: [
-        { q: "The whole room feels flat and low-energy.", a: "\"Everyone looks how I feel right now, honestly. Long week for you too?\" (status)", bundle: 'pro' },
-        { q: "Nobody's talking and the mood is heavy.", a: "\"I'm running on empty today, not going to lie. How's your day been?\" (status)", bundle: 'pro' },
-        { q: "It's early and everyone's half-asleep.", a: "\"I need three more coffees to be a person. You holding up?\" (status)", bundle: 'pro' },
+        { q: "The whole room feels flat and low-energy.", a: "\"Everyone looks how I feel right now, honestly. Long week for you too?\" [Status Setup]", bundle: 'pro' },
+        { q: "Nobody's talking and the mood is heavy.", a: "\"I'm running on empty today, not going to lie. How's your day been?\" [Status Setup]", bundle: 'pro' },
+        { q: "It's early and everyone's half-asleep.", a: "\"I need three more coffees to be a person. You holding up?\" [Status Setup]", bundle: 'pro' },
       ]
     },
     {
@@ -402,9 +402,9 @@ const challengesCollections = {
       guideBack: "A possible response, with the type in brackets.",
       description: "You've blanked — the pressure to say something clever has locked you up. The training is to drop the need to impress and open with a simple, honest Purpose setup. Best handled with a Purpose setup.\n\nWhat it usually feels like:\n\n• You have gone blank standing right next to someone.\n• Everything you think of sounds stupid in your head.\n• The pause has gone on long enough to be its own problem.\n\nTwo ways through:\n1. Purpose Setup — the lowest-effort honest opener there is. \"I came to meet a few people — what brought you?\"\n2. Status Setup — name the awkwardness itself. \"I never know how to start these — how's it going?\"\n\nMindset: the block is the need to be clever, not a lack of things to say. Drop the requirement and an ordinary sentence is enough.",
       inputs: [
-        { q: "You've frozen and can't think of anything clever.", a: "\"I've got nothing smart to open with, so — I'm here for the free food. You?\" (purpose)", bundle: 'pro' },
-        { q: "Your mind goes blank the second you should speak.", a: "\"Okay, no clever line — I just came to meet a few people. What brings you?\" (purpose)", bundle: 'pro' },
-        { q: "You feel pressure to say something impressive.", a: "\"I'll skip the small talk — I'm honestly just here to enjoy this. Are you?\" (opinion)", bundle: 'pro' },
+        { q: "You've frozen and can't think of anything clever.", a: "\"I've got nothing smart to open with, so — I'm here for the free food. You?\" [Purpose Setup]", bundle: 'pro' },
+        { q: "Your mind goes blank the second you should speak.", a: "\"Okay, no clever line — I just came to meet a few people. What brings you?\" [Purpose Setup]", bundle: 'pro' },
+        { q: "You feel pressure to say something impressive.", a: "\"I'll skip the small talk — I'm honestly just here to enjoy this. Are you?\" [Opinion Setup]", bundle: 'pro' },
       ]
     },
     {
@@ -413,9 +413,9 @@ const challengesCollections = {
       guideBack: "A possible response, with the type in brackets.",
       description: "They're only half there — on their phone, glancing around, not really tuned in. The training is to offer a small, vivid hook that's easy to react to rather than a flat opener. Best handled with a Background or Action setup.\n\nWhat it usually looks like:\n\n• They are on their phone or scanning the room.\n• They answer without really turning towards you.\n• You get agreement but no actual attention.\n\nTwo ways through:\n1. Background Setup — offer something vivid enough to look up for. \"I got the wrong bus and walked twenty minutes.\"\n2. Action Setup — give them something specific to react to. \"I'm halfway through redoing a kitchen and regretting it.\"\n\nMindset: a flat opener gets flat attention. Something small and vivid is easier to react to than something polite.",
       inputs: [
-        { q: "The person is clearly distracted by their phone.", a: "\"I'll compete with the phone — I just got back from Portugal. Been anywhere good lately?\" (background)", bundle: 'pro' },
-        { q: "They keep glancing around the room.", a: "\"Busy in here, right? I nearly didn't find a seat. Where did you come in from?\" (background)", bundle: 'pro' },
-        { q: "They seem only half in the conversation.", a: "\"I'll be quick and interesting, promise — I've just started climbing. Do you do anything like that?\" (action)", bundle: 'pro' },
+        { q: "The person is clearly distracted by their phone.", a: "\"I'll compete with the phone — I just got back from Portugal. Been anywhere good lately?\" [Background Setup]", bundle: 'pro' },
+        { q: "They keep glancing around the room.", a: "\"Busy in here, right? I nearly didn't find a seat. Where did you come in from?\" [Background Setup]", bundle: 'pro' },
+        { q: "They seem only half in the conversation.", a: "\"I'll be quick and interesting, promise — I've just started climbing. Do you do anything like that?\" [Action Setup]", bundle: 'pro' },
       ]
     },
   ],
@@ -724,11 +724,11 @@ const challengesCollections = {
       guideBack: "A possible question, with the strategy in brackets.",
       description: "They reply in three words and hand you nothing back — no detail to build on. The training is to read it as a material problem rather than a rejection: go back to easy factual questions until something usable appears, then link to it. Best handled with Start with Simple Questions and Link and Go Deeper.\n\nWhat it usually sounds like:\n\n• \"Yeah, fine.\" and nothing after it.\n• One-word answers to everything you try.\n• \"It was alright I suppose.\"\n\nTwo ways through:\n1. Start with Simple Questions — go easier, not deeper. \"Okay, easier one — where did you grow up?\"\n2. Link and Go Deeper — use the one word they did give. \"You said alright — what would have made it good?\"\n\nMindset: read it as a material problem, not a rejection. Short answers usually mean they have not warmed up yet, not that they want you to stop.",
       inputs: [
-        { q: "You ask how their weekend was and get: \"Yeah, fine.\"", a: "\"Did you get to do anything, or was it all admin?\" (start with simple questions)", bundle: 'pro' },
-        { q: "They answer every question with one word.", a: "\"Okay, easier one — where did you grow up?\" (start with simple questions)", bundle: 'pro' },
-        { q: "They say: \"It was alright I suppose.\" and stop.", a: "\"You said alright — what would have made it good?\" (link and go deeper)", bundle: 'pro' },
-        { q: "A new colleague gives you almost nothing to work with.", a: "\"What were you doing before you came here?\" (start with simple questions)", bundle: 'pro' },
-        { q: "They answer: \"Work. That is about it.\"", a: "\"You said that is about it — is work eating everything at the moment?\" (link and go deeper)", bundle: 'pro' },
+        { q: "You ask how their weekend was and get: \"Yeah, fine.\"", a: "\"Did you get to do anything, or was it all admin?\" [Start with Simple Questions]", bundle: 'pro' },
+        { q: "They answer every question with one word.", a: "\"Okay, easier one — where did you grow up?\" [Start with Simple Questions]", bundle: 'pro' },
+        { q: "They say: \"It was alright I suppose.\" and stop.", a: "\"You said alright — what would have made it good?\" [Link and Go Deeper]", bundle: 'pro' },
+        { q: "A new colleague gives you almost nothing to work with.", a: "\"What were you doing before you came here?\" [Start with Simple Questions]", bundle: 'pro' },
+        { q: "They answer: \"Work. That is about it.\"", a: "\"You said that is about it — is work eating everything at the moment?\" [Link and Go Deeper]", bundle: 'pro' },
       ]
     },
     {
@@ -737,11 +737,11 @@ const challengesCollections = {
       guideBack: "A possible question, with the strategy in brackets.",
       description: "You want to ask something real, but you have known them four minutes and a big question would land as intrusive. The training is to notice you have not earned it yet and go one notch deeper instead of five. Best handled with Start with Simple Questions and Link and Go Deeper.\n\nWhat it usually looks like:\n\n• You have known them four minutes.\n• They mention something heavy in passing, very early.\n• You want to ask about family, health or money.\n\nTwo ways through:\n1. Start with Simple Questions — build the runway first. \"What made you come along tonight?\"\n2. Link and Go Deeper — go one notch deeper, not five. \"You said lately — is it a busy stretch?\"\n\nMindset: the question will still be there in ten minutes. Depth that arrives before trust does reads as prying, however kindly it is meant.",
       inputs: [
-        { q: "You have just met and want to ask something meaningful.", a: "\"What made you come along tonight?\" (start with simple questions)", bundle: 'pro' },
-        { q: "You are tempted to ask a stranger about their family.", a: "\"Have you lived around here long?\" (start with simple questions)", bundle: 'pro' },
-        { q: "They mention a divorce in passing, five minutes in.", a: "\"You said you moved recently — how is the new place?\" (link and go deeper)", bundle: 'pro' },
-        { q: "A colleague you barely know mentions being tired lately.", a: "\"You said lately — is it a busy stretch at work?\" (link and go deeper)", bundle: 'pro' },
-        { q: "You want to ask a big values question but it is far too early.", a: "\"What do you do when you are not at things like this?\" (start with simple questions)", bundle: 'pro' },
+        { q: "You have just met and want to ask something meaningful.", a: "\"What made you come along tonight?\" [Start with Simple Questions]", bundle: 'pro' },
+        { q: "You are tempted to ask a stranger about their family.", a: "\"Have you lived around here long?\" [Start with Simple Questions]", bundle: 'pro' },
+        { q: "They mention a divorce in passing, five minutes in.", a: "\"You said you moved recently — how is the new place?\" [Link and Go Deeper]", bundle: 'pro' },
+        { q: "A colleague you barely know mentions being tired lately.", a: "\"You said lately — is it a busy stretch at work?\" [Link and Go Deeper]", bundle: 'pro' },
+        { q: "You want to ask a big values question but it is far too early.", a: "\"What do you do when you are not at things like this?\" [Start with Simple Questions]", bundle: 'pro' },
       ]
     },
     {
@@ -750,11 +750,11 @@ const challengesCollections = {
       guideBack: "A possible question, with the strategy in brackets.",
       description: "They open a door onto something painful or private, and your next question decides whether they feel safe. The training is to let them set the depth — ask what it was like rather than for details, or step back to something lighter. Best handled with Explore Experiences and Start with Simple Questions.\n\nWhat it usually sounds like:\n\n• An illness, a death or a rift mentioned in passing.\n• \"It's been a strange year, honestly.\"\n• They touch on something and then change the subject.\n\nTwo ways through:\n1. Explore Experiences — ask what it was like, not for details. \"What was that time like for you?\"\n2. Start with Simple Questions — take the exit they offered. \"Fair enough. What were you saying about the new job?\"\n\nMindset: let them set the depth. Asking what something was like leaves them free to answer in one sentence or twenty.",
       inputs: [
-        { q: "They mention: \"That was around the time my mum was ill.\"", a: "\"That is a lot at once — what was that time like for you?\" (explore experiences)", bundle: 'pro' },
-        { q: "They say: \"I do not really speak to my brother anymore.\"", a: "\"How long has that been the way of things?\" (explore experiences)", bundle: 'pro' },
-        { q: "They mention losing a job and go quiet.", a: "\"Sounds like a rough stretch. What are you doing now?\" (start with simple questions)", bundle: 'pro' },
-        { q: "They say: \"It has been a strange year, honestly.\"", a: "\"You said strange — good strange or hard strange?\" (link and go deeper)", bundle: 'pro' },
-        { q: "They touch on their health and then change the subject.", a: "\"Fair enough. What were you saying about the new job?\" (start with simple questions)", bundle: 'pro' },
+        { q: "They mention: \"That was around the time my mum was ill.\"", a: "\"That is a lot at once — what was that time like for you?\" [Explore Experiences]", bundle: 'pro' },
+        { q: "They say: \"I do not really speak to my brother anymore.\"", a: "\"How long has that been the way of things?\" [Explore Experiences]", bundle: 'pro' },
+        { q: "They mention losing a job and go quiet.", a: "\"Sounds like a rough stretch. What are you doing now?\" [Start with Simple Questions]", bundle: 'pro' },
+        { q: "They say: \"It has been a strange year, honestly.\"", a: "\"You said strange — good strange or hard strange?\" [Link and Go Deeper]", bundle: 'pro' },
+        { q: "They touch on their health and then change the subject.", a: "\"Fair enough. What were you saying about the new job?\" [Start with Simple Questions]", bundle: 'pro' },
       ]
     },
     {
@@ -763,11 +763,11 @@ const challengesCollections = {
       guideBack: "A possible question, with the strategy in brackets.",
       description: "You have asked four questions in a row and it has turned into a questionnaire — they answer, you fire again. The training is to hear the rhythm and fix it with linking, so the next question clearly comes out of what they just said instead of off a list in your head. Best handled with Link and Go Deeper and Explore Experiences.\n\nWhat it usually sounds like:\n\n• Four questions in a row with no reaction from you.\n• They answer, you immediately fire the next one.\n• They start giving shorter answers and look slightly cornered.\n\nTwo ways through:\n1. Link and Go Deeper — make the question come out of their answer. \"You said you did it for years — what kept you there?\"\n2. Explore Experiences — react first, then ask. \"That one surprised me — what was the reaction at home?\"\n\nMindset: what makes it an interview is not the number of questions, it is that none of them came from the answers.",
       inputs: [
-        { q: "You have asked four questions in a row with no reaction from you.", a: "\"You said you did it for years — what kept you there?\" (link and go deeper)", bundle: 'pro' },
-        { q: "Your questions are starting to feel like a list.", a: "\"Wait, go back — the boat thing. How did that start?\" (link and go deeper)", bundle: 'pro' },
-        { q: "They give short answers and look slightly cornered.", a: "\"Sorry, I am firing questions. What was the trip like, though?\" (explore experiences)", bundle: 'pro' },
-        { q: "You realise you have not reacted to a single answer yet.", a: "\"That one surprised me — what was the reaction at home?\" (explore experiences)", bundle: 'pro' },
-        { q: "It has become question, answer, next question.", a: "\"You mentioned the village earlier — what pulled you away from it?\" (link and go deeper)", bundle: 'pro' },
+        { q: "You have asked four questions in a row with no reaction from you.", a: "\"You said you did it for years — what kept you there?\" [Link and Go Deeper]", bundle: 'pro' },
+        { q: "Your questions are starting to feel like a list.", a: "\"Wait, go back — the boat thing. How did that start?\" [Link and Go Deeper]", bundle: 'pro' },
+        { q: "They give short answers and look slightly cornered.", a: "\"Sorry, I am firing questions. What was the trip like, though?\" [Explore Experiences]", bundle: 'pro' },
+        { q: "You realise you have not reacted to a single answer yet.", a: "\"That one surprised me — what was the reaction at home?\" [Explore Experiences]", bundle: 'pro' },
+        { q: "It has become question, answer, next question.", a: "\"You mentioned the village earlier — what pulled you away from it?\" [Link and Go Deeper]", bundle: 'pro' },
       ]
     },
     {
@@ -776,11 +776,11 @@ const challengesCollections = {
       guideBack: "A possible question, with the strategy in brackets.",
       description: "The obvious questions are used up and your head is empty. The training is to stop hunting for a new subject and mine what they already told you — pick any detail from earlier and open it up. Best handled with Link and Go Deeper and Explore Values.\n\nWhat it usually looks like:\n\n• Work, home and the weekend are all covered.\n• A pause where neither of you speaks.\n• You start hunting for a brand new subject.\n\nTwo ways through:\n1. Link and Go Deeper — mine something from earlier. \"Earlier you said you had just moved — what made you pick here?\"\n2. Explore Values — go wide instead of new. \"What is the part of your week you actually look forward to?\"\n\nMindset: you do not need a new topic, you need one word from the last twenty minutes. They have already given you more material than you used.",
       inputs: [
-        { q: "You have covered work, home and the weekend and have nothing left.", a: "\"Earlier you said you had just moved — what made you pick here?\" (link and go deeper)", bundle: 'pro' },
-        { q: "The conversation goes quiet and your mind is blank.", a: "\"What is the part of your week you actually look forward to?\" (explore values)", bundle: 'pro' },
-        { q: "You have asked everything obvious about their job.", a: "\"You said you fell into it — what would you do instead?\" (link and go deeper)", bundle: 'pro' },
-        { q: "They finish an answer and neither of you speaks.", a: "\"What matters most to you outside all of that?\" (explore values)", bundle: 'pro' },
-        { q: "You are stuck for anything to ask next.", a: "\"You mentioned your brother earlier — what is he like?\" (link and go deeper)", bundle: 'pro' },
+        { q: "You have covered work, home and the weekend and have nothing left.", a: "\"Earlier you said you had just moved — what made you pick here?\" [Link and Go Deeper]", bundle: 'pro' },
+        { q: "The conversation goes quiet and your mind is blank.", a: "\"What is the part of your week you actually look forward to?\" [Explore Values]", bundle: 'pro' },
+        { q: "You have asked everything obvious about their job.", a: "\"You said you fell into it — what would you do instead?\" [Link and Go Deeper]", bundle: 'pro' },
+        { q: "They finish an answer and neither of you speaks.", a: "\"What matters most to you outside all of that?\" [Explore Values]", bundle: 'pro' },
+        { q: "You are stuck for anything to ask next.", a: "\"You mentioned your brother earlier — what is he like?\" [Link and Go Deeper]", bundle: 'pro' },
       ]
     },
   ],
@@ -791,14 +791,14 @@ const challengesCollections = {
       guideBack: "One way it could sound",
       description: "They have been talking for minutes without leaving a single gap, and every time you draw breath they carry on.\n\nThe training is to notice when waiting has stopped being patience. Past a certain point the pause is not coming, and continuing to wait is not politeness — it is just not speaking.\n\nWhat it usually looks like:\n\n• Four minutes with no full stop you could use.\n• You start to speak and they keep going.\n• Everyone else has given up trying too.\n\nTwo ways through:\n1. Signal the Interruption — make the gap yourself, warmly. \"Sorry — can I jump in?\"\n2. Say Why It Matters — and justify it in the same breath. \"We've got four minutes and this decides it.\"\n\nMindset: making your own gap is a legitimate move, not a failure of manners. What makes it rude is doing it without a signal or a reason, not doing it at all.",
       inputs: [
-        { q: "Four minutes and not one usable full stop.", a: "\"Sorry — can I jump in for a second?\" (signal the interruption)", bundle: 'pro' },
-        { q: "You start to speak twice and they carry straight on.", a: "\"Hang on, hang on — one thing.\" (signal the interruption)", bundle: 'pro' },
-        { q: "The meeting is running out and the decision has not been made.", a: "\"I have to stop you — we've got four minutes and this is the bit that matters.\" (say why it matters)", bundle: 'pro' },
-        { q: "Everyone else has stopped trying to get in.", a: "\"Sorry, can I come in? I think a few of us have things to add.\" (signal the interruption)", bundle: 'pro' },
-        { q: "You are on a call and there is no visual way to signal.", a: "\"Sorry to cut across — can I add something?\" (signal the interruption)", bundle: 'pro' },
-        { q: "They pause to breathe and you miss it every time.", a: "\"Right there — can I take that gap?\" (signal the interruption)", bundle: 'pro' },
-        { q: "Two people are going back and forth and there is no third slot.", a: "\"Can I be the third voice for a second?\" (signal the interruption)", bundle: 'pro' },
-        { q: "You have been waiting so long you have forgotten the point.", a: "(at the next full stop) \"Sorry — I had something and I'm losing it.\" (wait for a natural pause)", bundle: 'pro' },
+        { q: "Four minutes and not one usable full stop.", a: "\"Sorry — can I jump in for a second?\" [Signal the Interruption]", bundle: 'pro' },
+        { q: "You start to speak twice and they carry straight on.", a: "\"Hang on, hang on — one thing.\" [Signal the Interruption]", bundle: 'pro' },
+        { q: "The meeting is running out and the decision has not been made.", a: "\"I have to stop you — we've got four minutes and this is the bit that matters.\" [Say Why It Matters]", bundle: 'pro' },
+        { q: "Everyone else has stopped trying to get in.", a: "\"Sorry, can I come in? I think a few of us have things to add.\" [Signal the Interruption]", bundle: 'pro' },
+        { q: "You are on a call and there is no visual way to signal.", a: "\"Sorry to cut across — can I add something?\" [Signal the Interruption]", bundle: 'pro' },
+        { q: "They pause to breathe and you miss it every time.", a: "\"Right there — can I take that gap?\" [Signal the Interruption]", bundle: 'pro' },
+        { q: "Two people are going back and forth and there is no third slot.", a: "\"Can I be the third voice for a second?\" [Signal the Interruption]", bundle: 'pro' },
+        { q: "You have been waiting so long you have forgotten the point.", a: "(at the next full stop) \"Sorry — I had something and I'm losing it.\" [Wait for a Natural Pause]", bundle: 'pro' },
       ]
     },
     {
@@ -807,14 +807,14 @@ const challengesCollections = {
       guideBack: "One way it could sound",
       description: "Something is about to be decided wrongly, or the time is about to run out, and waiting politely means the moment is gone.\n\nThe training is to let the urgency carry the interruption rather than apologising your way in. A stated reason does more than three sorries.\n\nWhat it usually looks like:\n\n• A decision forming on a wrong assumption.\n• Two minutes left and the real question untouched.\n• Someone about to redo work that is already done.\n\nTwo ways through:\n1. Say Why It Matters — lead with the reason, not the apology. \"Let me stop you before you build on that.\"\n2. Signal the Interruption — one cue, then straight to it. \"Sorry — important one.\"\n\nMindset: an interruption that saves everyone ten minutes is a favour. Sitting on it to be polite is the more expensive choice.",
       inputs: [
-        { q: "A decision is forming on a fact that has changed.", a: "\"Let me stop you before you build on that — the numbers came back different.\" (say why it matters)", bundle: 'pro' },
-        { q: "Two minutes left and the real question has not been asked.", a: "\"Sorry to cut in — we haven't touched the thing we came for.\" (say why it matters)", bundle: 'pro' },
-        { q: "Someone is about to redo work that is already finished.", a: "\"Hate to interrupt, but that's already been done.\" (say why it matters)", bundle: 'pro' },
-        { q: "You have to leave soon and have something to contribute.", a: "\"Jumping in because I have to go in ten — can I say one thing?\" (say why it matters)", bundle: 'pro' },
-        { q: "You need in fast and there is no time for a full run-up.", a: "\"Sorry — important one.\" (signal the interruption)", bundle: 'pro' },
-        { q: "They are describing a plan that depends on something already cancelled.", a: "\"Stopping you there — that meeting was cancelled this morning.\" (say why it matters)", bundle: 'pro' },
-        { q: "The client is about to be told something that is not true.", a: "\"One second before that goes out — the figure changed.\" (say why it matters)", bundle: 'pro' },
-        { q: "You are about to lose the chance to say it at all.", a: "\"Sorry — last chance for me to say this.\" (signal the interruption)", bundle: 'pro' },
+        { q: "A decision is forming on a fact that has changed.", a: "\"Let me stop you before you build on that — the numbers came back different.\" [Say Why It Matters]", bundle: 'pro' },
+        { q: "Two minutes left and the real question has not been asked.", a: "\"Sorry to cut in — we haven't touched the thing we came for.\" [Say Why It Matters]", bundle: 'pro' },
+        { q: "Someone is about to redo work that is already finished.", a: "\"Hate to interrupt, but that's already been done.\" [Say Why It Matters]", bundle: 'pro' },
+        { q: "You have to leave soon and have something to contribute.", a: "\"Jumping in because I have to go in ten — can I say one thing?\" [Say Why It Matters]", bundle: 'pro' },
+        { q: "You need in fast and there is no time for a full run-up.", a: "\"Sorry — important one.\" [Signal the Interruption]", bundle: 'pro' },
+        { q: "They are describing a plan that depends on something already cancelled.", a: "\"Stopping you there — that meeting was cancelled this morning.\" [Say Why It Matters]", bundle: 'pro' },
+        { q: "The client is about to be told something that is not true.", a: "\"One second before that goes out — the figure changed.\" [Say Why It Matters]", bundle: 'pro' },
+        { q: "You are about to lose the chance to say it at all.", a: "\"Sorry — last chance for me to say this.\" [Signal the Interruption]", bundle: 'pro' },
       ]
     },
     {
@@ -823,14 +823,14 @@ const challengesCollections = {
       guideBack: "One way it could sound",
       description: "They are wrong about a fact, and the longer they build on it the more awkward the correction becomes.\n\nThe training is to correct the fact without it landing as a correction of the person. The acknowledgement before it is what does that, and it costs one clause.\n\nWhat it usually looks like:\n\n• A wrong date, number or name being built on.\n• A whole plan resting on it.\n• Everyone else visibly noticing and saying nothing.\n\nTwo ways through:\n1. Acknowledge the Speaker First — grant what is right before you touch what is not. \"Everything up to the timeline I'm with you on.\"\n2. Say Why It Matters — frame it as saving them, not catching them. \"I'm stopping you so you don't build on it.\"\n\nMindset: correct early and it is information; correct late and it is an embarrassment. The kind thing is to interrupt sooner.",
       inputs: [
-        { q: "A plan is being built on a date that has moved.", a: "\"Everything up to the timeline I'm with you on — but the date moved.\" (acknowledge the speaker first)", bundle: 'pro' },
-        { q: "Someone has a name or a number wrong and keeps using it.", a: "\"Sorry — small thing, it's actually the March figure. Carry on.\" (say why it matters)", bundle: 'pro' },
-        { q: "The wrong assumption is about to become a decision.", a: "\"Let me stop you before you build on that.\" (say why it matters)", bundle: 'pro' },
-        { q: "You need to correct someone senior without it landing badly.", a: "\"You've clearly thought this through. One thing on the numbers though.\" (acknowledge the speaker first)", bundle: 'pro' },
-        { q: "Everyone has noticed the error and nobody has said anything.", a: "\"Can I check one thing before we go further?\" (signal the interruption)", bundle: 'pro' },
-        { q: "They have attributed something to the wrong person.", a: "\"Small one — that was Priya's, not mine.\" (signal the interruption)", bundle: 'pro' },
-        { q: "The correction will take longer than the interruption.", a: "\"There's a thing here worth ten minutes. Can we come back to it properly?\" (say why it matters)", bundle: 'pro' },
-        { q: "You corrected them once and they have repeated it.", a: "\"I did mention this — it's the March figure, not February.\" (say why it matters)", bundle: 'pro' },
+        { q: "A plan is being built on a date that has moved.", a: "\"Everything up to the timeline I'm with you on — but the date moved.\" [Acknowledge the Speaker First]", bundle: 'pro' },
+        { q: "Someone has a name or a number wrong and keeps using it.", a: "\"Sorry — small thing, it's actually the March figure. Carry on.\" [Say Why It Matters]", bundle: 'pro' },
+        { q: "The wrong assumption is about to become a decision.", a: "\"Let me stop you before you build on that.\" [Say Why It Matters]", bundle: 'pro' },
+        { q: "You need to correct someone senior without it landing badly.", a: "\"You've clearly thought this through. One thing on the numbers though.\" [Acknowledge the Speaker First]", bundle: 'pro' },
+        { q: "Everyone has noticed the error and nobody has said anything.", a: "\"Can I check one thing before we go further?\" [Signal the Interruption]", bundle: 'pro' },
+        { q: "They have attributed something to the wrong person.", a: "\"Small one — that was Priya's, not mine.\" [Signal the Interruption]", bundle: 'pro' },
+        { q: "The correction will take longer than the interruption.", a: "\"There's a thing here worth ten minutes. Can we come back to it properly?\" [Say Why It Matters]", bundle: 'pro' },
+        { q: "You corrected them once and they have repeated it.", a: "\"I did mention this — it's the March figure, not February.\" [Say Why It Matters]", bundle: 'pro' },
       ]
     },
     {
@@ -839,14 +839,14 @@ const challengesCollections = {
       guideBack: "One way it could sound",
       description: "The person talking has more standing than you, and a cut-in that would be nothing between peers feels risky here.\n\nThe training is to notice that the risk is mostly in the delivery, not in the act. A signalled, reasoned interruption from a junior person reads as engagement; an unsignalled one reads as overstepping.\n\nWhat makes it hard:\n\n• The power gap makes any interruption feel like a challenge.\n• Nobody else is interrupting, so you would be first.\n• You would rather lose the point than take the risk.\n\nTwo ways through:\n1. Wait for a Natural Pause — the safest version, and usually available. \"Can I come in on that?\"\n2. Acknowledge the Speaker First — lead with their point, not yours. \"That's the part I'd want to build on.\"\n\nMindset: staying silent has a cost too. Interrupting well is one of the clearest ways to look like someone who is actually in the conversation.",
       inputs: [
-        { q: "Your manager is mid-explanation and you have a real objection.", a: "(at the full stop) \"Can I come in on that?\" (wait for a natural pause)", bundle: 'pro' },
-        { q: "You want to add something without it reading as a challenge.", a: "\"That's the part I'd want to build on, actually.\" (acknowledge the speaker first)", bundle: 'pro' },
-        { q: "Nobody else in the room has interrupted and you would be first.", a: "\"Sorry — may I add something here?\" (signal the interruption)", bundle: 'pro' },
-        { q: "You have information they do not and it changes the picture.", a: "\"I only stop you because I've got something that changes this.\" (say why it matters)", bundle: 'pro' },
-        { q: "You would rather drop your point than take the risk.", a: "(at the next pause) \"One thing I could add there, if it helps.\" (wait for a natural pause)", bundle: 'pro' },
-        { q: "They ask a rhetorical question and you have the answer.", a: "\"That one I can actually answer, if it helps.\" (acknowledge the speaker first)", bundle: 'pro' },
-        { q: "They are about to commit the team to something you cannot deliver.", a: "\"Before that's promised — can I say what's involved?\" (say why it matters)", bundle: 'pro' },
-        { q: "You want in but do not want to seem to be scoring a point.", a: "\"Not disagreeing — adding, if there's room.\" (acknowledge the speaker first)", bundle: 'pro' },
+        { q: "Your manager is mid-explanation and you have a real objection.", a: "(at the full stop) \"Can I come in on that?\" [Wait for a Natural Pause]", bundle: 'pro' },
+        { q: "You want to add something without it reading as a challenge.", a: "\"That's the part I'd want to build on, actually.\" [Acknowledge the Speaker First]", bundle: 'pro' },
+        { q: "Nobody else in the room has interrupted and you would be first.", a: "\"Sorry — may I add something here?\" [Signal the Interruption]", bundle: 'pro' },
+        { q: "You have information they do not and it changes the picture.", a: "\"I only stop you because I've got something that changes this.\" [Say Why It Matters]", bundle: 'pro' },
+        { q: "You would rather drop your point than take the risk.", a: "(at the next pause) \"One thing I could add there, if it helps.\" [Wait for a Natural Pause]", bundle: 'pro' },
+        { q: "They ask a rhetorical question and you have the answer.", a: "\"That one I can actually answer, if it helps.\" [Acknowledge the Speaker First]", bundle: 'pro' },
+        { q: "They are about to commit the team to something you cannot deliver.", a: "\"Before that's promised — can I say what's involved?\" [Say Why It Matters]", bundle: 'pro' },
+        { q: "You want in but do not want to seem to be scoring a point.", a: "\"Not disagreeing — adding, if there's room.\" [Acknowledge the Speaker First]", bundle: 'pro' },
       ]
     },
     {
@@ -855,14 +855,14 @@ const challengesCollections = {
       guideBack: "One way it could sound",
       description: "You cut in five minutes ago, and a second one starts to look like a pattern rather than a moment.\n\nThe training is to notice the count. The second interruption is judged much more harshly than the first, so it needs either a better reason or a lighter touch.\n\nWhat it usually looks like:\n\n• You are aware of it before you have opened your mouth.\n• A flicker of impatience the last time you did it.\n• You are the only one who has interrupted at all.\n\nTwo ways through:\n1. Use Humour — name it yourself before anyone else does. \"Me again. I'm aware of it.\"\n2. Wait for a Natural Pause — earn this one by waiting properly for it.\n\nMindset: naming your own pattern buys you a great deal of goodwill. Pretending you have not noticed is what makes people count.",
       inputs: [
-        { q: "You are about to interrupt for the second time in five minutes.", a: "\"Me again. I'm aware of it.\" (use humour)", bundle: 'pro' },
-        { q: "You noticed a flicker of impatience the last time you cut in.", a: "(wait for the full stop) \"Sorry — one more from me.\" (wait for a natural pause)", bundle: 'pro' },
-        { q: "You are the only person in the room who has interrupted.", a: "\"I've done this twice now, so I'll be quick.\" (use humour)", bundle: 'pro' },
-        { q: "Your second point is genuinely more important than the first.", a: "\"I know, twice — but this one actually changes the plan.\" (say why it matters)", bundle: 'pro' },
-        { q: "You realise mid-sentence that you have cut across someone again.", a: "\"And I've done it again. Sorry — go on.\" (use humour)", bundle: 'pro' },
-        { q: "You have cut in twice and someone quieter has not spoken at all.", a: "\"I'll stop — I think Anna was going to say something.\" (acknowledge the speaker first)", bundle: 'pro' },
-        { q: "You are about to interrupt out of impatience rather than need.", a: "(say nothing, wait) \"Go on — sorry.\" (wait for a natural pause)", bundle: 'pro' },
-        { q: "Your third one is small and you know it.", a: "\"This one's tiny and then I'll be quiet for an hour.\" (use humour)", bundle: 'pro' },
+        { q: "You are about to interrupt for the second time in five minutes.", a: "\"Me again. I'm aware of it.\" [Use Humour]", bundle: 'pro' },
+        { q: "You noticed a flicker of impatience the last time you cut in.", a: "(wait for the full stop) \"Sorry — one more from me.\" [Wait for a Natural Pause]", bundle: 'pro' },
+        { q: "You are the only person in the room who has interrupted.", a: "\"I've done this twice now, so I'll be quick.\" [Use Humour]", bundle: 'pro' },
+        { q: "Your second point is genuinely more important than the first.", a: "\"I know, twice — but this one actually changes the plan.\" [Say Why It Matters]", bundle: 'pro' },
+        { q: "You realise mid-sentence that you have cut across someone again.", a: "\"And I've done it again. Sorry — go on.\" [Use Humour]", bundle: 'pro' },
+        { q: "You have cut in twice and someone quieter has not spoken at all.", a: "\"I'll stop — I think Anna was going to say something.\" [Acknowledge the Speaker First]", bundle: 'pro' },
+        { q: "You are about to interrupt out of impatience rather than need.", a: "(say nothing, wait) \"Go on — sorry.\" [Wait for a Natural Pause]", bundle: 'pro' },
+        { q: "Your third one is small and you know it.", a: "\"This one's tiny and then I'll be quiet for an hour.\" [Use Humour]", bundle: 'pro' },
       ]
     },
   ],
@@ -873,14 +873,14 @@ const challengesCollections = {
       guideBack: "One way it could sound",
       description: "One person who keeps cutting you off — again and again, sometimes finishing your sentences. The training is to recognise the pattern (it's not a one-off) and meet it with a calm, repeatable boundary, handing them a turn afterwards so it stays friendly. Best handled with Reinforce the Boundary and Invite Them In After.\n\nWhat it usually looks like:\n\n• The same person, three or four times in one conversation.\n• They finish your sentences for you.\n• You have started shortening what you say just to get it in.\n\nTwo ways through:\n1. Reinforce the Boundary — name the pattern calmly. \"That's twice now. Let me get to the end.\"\n2. Invite Them In After — give them the turn they clearly want. \"You're next, one sec.\"\n\nMindset: it is a pattern, not an accident, so a one-off response will not fix it. Most serial interrupters are not hostile — they simply have not noticed.",
       inputs: [
-        { q: "The same colleague has now cut you off three times in one meeting.", a: "\"I'd really like to finish one point without a break — then it's yours.\" (reinforce the boundary)", bundle: 'pro' },
-        { q: "A friend interrupts every couple of sentences as you talk.", a: "\"Tell you what — let me get through this, and I'll hand straight over.\" (invite them in after)", bundle: 'pro' },
-        { q: "One person keeps finishing your sentences for you.", a: "\"Close, but let me say it my way — I'm nearly there.\" (acknowledge and continue)", bundle: 'pro' },
-        { q: "Someone jumps in the instant you pause for breath.", a: "\"That pause wasn't the end — give me one more line.\" (reinforce the boundary)", bundle: 'pro' },
-        { q: "The same person talks over you again after you asked them to wait.", a: "\"I did mean it about finishing — thirty seconds, then you're up.\" (reinforce the boundary)", bundle: 'pro' },
-        { q: "You asked them to wait and they waited four seconds.", a: "\"Four seconds. I'll take it — but let me actually finish.\" (use humour)", bundle: 'pro' },
-        { q: "They interrupt you but nobody else in the room.", a: "\"I notice it's mostly me you do this to. Let me have this one.\" (reinforce the boundary)", bundle: 'pro' },
-        { q: "It is a friend and you do not want to make it a thing.", a: "\"You do this, you know. Go on then — but I'm finishing after.\" (use humour)", bundle: 'pro' },
+        { q: "The same colleague has now cut you off three times in one meeting.", a: "\"I'd really like to finish one point without a break — then it's yours.\" [Reinforce the Boundary]", bundle: 'pro' },
+        { q: "A friend interrupts every couple of sentences as you talk.", a: "\"Tell you what — let me get through this, and I'll hand straight over.\" [Invite Them In After]", bundle: 'pro' },
+        { q: "One person keeps finishing your sentences for you.", a: "\"Close, but let me say it my way — I'm nearly there.\" [Acknowledge and Continue]", bundle: 'pro' },
+        { q: "Someone jumps in the instant you pause for breath.", a: "\"That pause wasn't the end — give me one more line.\" [Reinforce the Boundary]", bundle: 'pro' },
+        { q: "The same person talks over you again after you asked them to wait.", a: "\"I did mean it about finishing — thirty seconds, then you're up.\" [Reinforce the Boundary]", bundle: 'pro' },
+        { q: "You asked them to wait and they waited four seconds.", a: "\"Four seconds. I'll take it — but let me actually finish.\" [Use Humour]", bundle: 'pro' },
+        { q: "They interrupt you but nobody else in the room.", a: "\"I notice it's mostly me you do this to. Let me have this one.\" [Reinforce the Boundary]", bundle: 'pro' },
+        { q: "It is a friend and you do not want to make it a thing.", a: "\"You do this, you know. Go on then — but I'm finishing after.\" [Use Humour]", bundle: 'pro' },
       ]
     },
     {
@@ -889,14 +889,14 @@ const challengesCollections = {
       guideBack: "One way it could sound",
       description: "The cut-in comes from excitement, not rudeness — they agree, they relate, they're keen. The training is to notice it's well-meant and keep it warm: acknowledge the energy and hold your line lightly, or promise them the next turn. Best handled with Acknowledge and Continue, Invite Them In After, and Use Humour.\n\nWhat it usually looks like:\n\n• They agree loudly before you have finished the sentence.\n• They relate it to their own thing straight away.\n• The energy is up and nobody means any harm.\n\nTwo ways through:\n1. Acknowledge and Continue — meet the energy and keep going. \"Yes, exactly — and the other half of it is…\"\n2. Use Humour — hold the floor without cooling the room. \"I'm just getting to the good part!\"\n\nMindset: do not treat warmth as rudeness. Coming down hard on an enthusiastic cut-in costs you more than the interrupted sentence was worth.",
       inputs: [
-        { q: "A friend cuts in, thrilled: \"Oh that happened to me too!\"", a: "\"Love it — hold that, I want to hear it the second I'm done.\" (invite them in after)", bundle: 'pro' },
-        { q: "Someone jumps in agreeing loudly before you finish.", a: "\"Right? Let me land the point, then pile on with me.\" (acknowledge and continue)", bundle: 'pro' },
-        { q: "A teammate excitedly finishes your idea for you.", a: "\"Ha, exactly — let me just say the rest my way.\" (use humour)", bundle: 'pro' },
-        { q: "Someone interrupts to add an eager \"yes, and—\".", a: "\"Save the 'and' one sec — I'm nearly at it.\" (invite them in after)", bundle: 'pro' },
-        { q: "A friend keeps bursting in because they're loving the story.", a: "\"You're going to love the ending — let me get us there!\" (use humour)", bundle: 'pro' },
-        { q: "They interrupt with something genuinely better than your point.", a: "\"That's better than where I was going. Take it.\" (let it go and reclaim)", bundle: 'pro' },
-        { q: "They keep saying \"yes, exactly\" over the top of you.", a: "\"I can tell you agree. Let me get to the bit you'll agree with more.\" (use humour)", bundle: 'pro' },
-        { q: "Their excitement has taken the story somewhere else.", a: "\"We'll get there — I've got one more bit first.\" (invite them in after)", bundle: 'pro' },
+        { q: "A friend cuts in, thrilled: \"Oh that happened to me too!\"", a: "\"Love it — hold that, I want to hear it the second I'm done.\" [Invite Them In After]", bundle: 'pro' },
+        { q: "Someone jumps in agreeing loudly before you finish.", a: "\"Right? Let me land the point, then pile on with me.\" [Acknowledge and Continue]", bundle: 'pro' },
+        { q: "A teammate excitedly finishes your idea for you.", a: "\"Ha, exactly — let me just say the rest my way.\" [Use Humour]", bundle: 'pro' },
+        { q: "Someone interrupts to add an eager \"yes, and—\".", a: "\"Save the 'and' one sec — I'm nearly at it.\" [Invite Them In After]", bundle: 'pro' },
+        { q: "A friend keeps bursting in because they're loving the story.", a: "\"You're going to love the ending — let me get us there!\" [Use Humour]", bundle: 'pro' },
+        { q: "They interrupt with something genuinely better than your point.", a: "\"That's better than where I was going. Take it.\" [Let It Go and Reclaim]", bundle: 'pro' },
+        { q: "They keep saying \"yes, exactly\" over the top of you.", a: "\"I can tell you agree. Let me get to the bit you'll agree with more.\" [Use Humour]", bundle: 'pro' },
+        { q: "Their excitement has taken the story somewhere else.", a: "\"We'll get there — I've got one more bit first.\" [Invite Them In After]", bundle: 'pro' },
       ]
     },
     {
@@ -905,14 +905,14 @@ const challengesCollections = {
       guideBack: "One way it could sound",
       description: "Not one interrupter but several — crosstalk buries your point before you finish, and the group moves on. The training is to spot that the room, not one person, is the obstacle, and either hold the floor firmly or let it go and reclaim your thread when a gap opens. Best handled with Reinforce the Boundary and Let It Go and Reclaim.\n\nWhat it usually looks like:\n\n• Two or three people talking at once.\n• Your point gets buried and the group moves on.\n• Nobody notices that you stopped.\n\nTwo ways through:\n1. Reinforce the Boundary — claim the floor plainly. \"Hang on — I'd like to finish that thought.\"\n2. Let It Go and Reclaim — wait for the gap, then come back. \"Going back a step — the thing about the timeline.\"\n\nMindset: the room is the obstacle, not one person, so there is nobody to take it up with. Volume rarely helps; a short pause and a plain claim usually does.",
       inputs: [
-        { q: "Three people are talking and your point keeps getting buried.", a: "\"Can I jump back in? I didn't get to finish earlier.\" (let it go and reclaim)", bundle: 'pro' },
-        { q: "The group moved on before you completed your idea.", a: "\"Quick rewind — I still want to land what I started.\" (let it go and reclaim)", bundle: 'pro' },
-        { q: "You start to speak and two louder voices roll over you.", a: "\"Hold on — let me finish this one, it won't take long.\" (reinforce the boundary)", bundle: 'pro' },
-        { q: "Your contribution got lost in the crosstalk.", a: "\"One thing before we move on — I hadn't finished my point.\" (let it go and reclaim)", bundle: 'pro' },
-        { q: "Every time you start, someone else grabs the floor.", a: "\"Let me actually get a full sentence out — then it's open.\" (reinforce the boundary)", bundle: 'pro' },
-        { q: "You have tried twice and the room has not noticed.", a: "\"Third attempt — can I have thirty seconds?\" (reinforce the boundary)", bundle: 'pro' },
-        { q: "Someone else notices and tries to hand it back to you.", a: "\"Thanks — yes, what I was getting at was —\" (let it go and reclaim)", bundle: 'pro' },
-        { q: "The point stopped mattering while you waited.", a: "\"Mine's gone stale now. Carry on.\" (let it go and reclaim)", bundle: 'pro' },
+        { q: "Three people are talking and your point keeps getting buried.", a: "\"Can I jump back in? I didn't get to finish earlier.\" [Let It Go and Reclaim]", bundle: 'pro' },
+        { q: "The group moved on before you completed your idea.", a: "\"Quick rewind — I still want to land what I started.\" [Let It Go and Reclaim]", bundle: 'pro' },
+        { q: "You start to speak and two louder voices roll over you.", a: "\"Hold on — let me finish this one, it won't take long.\" [Reinforce the Boundary]", bundle: 'pro' },
+        { q: "Your contribution got lost in the crosstalk.", a: "\"One thing before we move on — I hadn't finished my point.\" [Let It Go and Reclaim]", bundle: 'pro' },
+        { q: "Every time you start, someone else grabs the floor.", a: "\"Let me actually get a full sentence out — then it's open.\" [Reinforce the Boundary]", bundle: 'pro' },
+        { q: "You have tried twice and the room has not noticed.", a: "\"Third attempt — can I have thirty seconds?\" [Reinforce the Boundary]", bundle: 'pro' },
+        { q: "Someone else notices and tries to hand it back to you.", a: "\"Thanks — yes, what I was getting at was —\" [Let It Go and Reclaim]", bundle: 'pro' },
+        { q: "The point stopped mattering while you waited.", a: "\"Mine's gone stale now. Carry on.\" [Let It Go and Reclaim]", bundle: 'pro' },
       ]
     },
     {
@@ -921,14 +921,14 @@ const challengesCollections = {
       guideBack: "One way it could sound",
       description: "A boss, teacher, or elder cuts in — and the power gap makes a hard boundary feel risky. The training is to hold your point respectfully rather than back down: acknowledge them, ask to finish, or let it pass and reclaim, all without heat. Best handled with Acknowledge and Continue and Let It Go and Reclaim.\n\nWhat makes it hard:\n\n• The power gap makes a firm boundary feel risky.\n• Backing down every time teaches them to keep doing it.\n• Everyone else in the room is watching how you take it.\n\nTwo ways through:\n1. Acknowledge and Continue — hold your point respectfully. \"Absolutely — and the bit I hadn't got to is…\"\n2. Let It Go and Reclaim — give way, then return once it settles. \"Coming back to the earlier point, if that's alright.\"\n\nMindset: respectfully holding your point is not insubordination. Asking to finish, calmly and without heat, reads as confidence rather than challenge.",
       inputs: [
-        { q: "Your manager cuts in before you finish presenting.", a: "\"Absolutely — let me just complete this part so it's clear.\" (acknowledge and continue)", bundle: 'pro' },
-        { q: "A senior colleague talks over your suggestion.", a: "\"I'll fold that in — can I finish the thought first?\" (acknowledge and continue)", bundle: 'pro' },
-        { q: "Someone more senior redirects before you're done.", a: "\"Happy to go there — one moment to close this off.\" (acknowledge and continue)", bundle: 'pro' },
-        { q: "Your boss jumps in and the room defers to them.", a: "\"…circling back, the point I was making was —\" (let it go and reclaim)", bundle: 'pro' },
-        { q: "A senior person interrupts with a correction.", a: "\"Good catch — let me finish the main point, then the detail.\" (acknowledge and continue)", bundle: 'pro' },
-        { q: "They interrupt to agree with you and then take the point over.", a: "\"That's it exactly — and the part I hadn't got to was —\" (acknowledge and continue)", bundle: 'pro' },
-        { q: "They cut in and the room is now looking at them.", a: "(wait, then) \"To close mine off — it was the timing I was worried about.\" (let it go and reclaim)", bundle: 'pro' },
-        { q: "You need to finish and they are clearly not going to stop.", a: "\"I'll send the rest in writing so it doesn't get lost.\" (let it go and reclaim)", bundle: 'pro' },
+        { q: "Your manager cuts in before you finish presenting.", a: "\"Absolutely — let me just complete this part so it's clear.\" [Acknowledge and Continue]", bundle: 'pro' },
+        { q: "A senior colleague talks over your suggestion.", a: "\"I'll fold that in — can I finish the thought first?\" [Acknowledge and Continue]", bundle: 'pro' },
+        { q: "Someone more senior redirects before you're done.", a: "\"Happy to go there — one moment to close this off.\" [Acknowledge and Continue]", bundle: 'pro' },
+        { q: "Your boss jumps in and the room defers to them.", a: "\"…circling back, the point I was making was —\" [Let It Go and Reclaim]", bundle: 'pro' },
+        { q: "A senior person interrupts with a correction.", a: "\"Good catch — let me finish the main point, then the detail.\" [Acknowledge and Continue]", bundle: 'pro' },
+        { q: "They interrupt to agree with you and then take the point over.", a: "\"That's it exactly — and the part I hadn't got to was —\" [Acknowledge and Continue]", bundle: 'pro' },
+        { q: "They cut in and the room is now looking at them.", a: "(wait, then) \"To close mine off — it was the timing I was worried about.\" [Let It Go and Reclaim]", bundle: 'pro' },
+        { q: "You need to finish and they are clearly not going to stop.", a: "\"I'll send the rest in writing so it doesn't get lost.\" [Let It Go and Reclaim]", bundle: 'pro' },
       ]
     },
     {
@@ -937,14 +937,14 @@ const challengesCollections = {
       guideBack: "One way it could sound",
       description: "The cut-in doesn't just stop you — it changes the subject, and your point never comes back on its own. The training is to notice the topic has been hijacked and steer back to your unfinished thread, firmly if needed. Best handled with Let It Go and Reclaim and Reinforce the Boundary.\n\nWhat it usually looks like:\n\n• The cut-in changes the subject entirely.\n• Ten minutes later your point still has not come back.\n• Nobody remembers you were mid-sentence, including you.\n\nTwo ways through:\n1. Let It Go and Reclaim — wait for the lull, then steer back. \"Before we move on — I hadn't finished the thing about costs.\"\n2. Reinforce the Boundary — stop the drift as it happens. \"Can we come back to that? I was still on the first bit.\"\n\nMindset: a derailed point never returns on its own. If you do not bring it back it is gone — and it was probably the reason you spoke up.",
       inputs: [
-        { q: "Someone interrupts and the whole topic shifts away from your point.", a: "\"Before we lose it — I hadn't finished what I was saying.\" (let it go and reclaim)", bundle: 'pro' },
-        { q: "A cut-in sends the conversation off on a tangent.", a: "\"Let me pull us back for one sec — my point still stands.\" (let it go and reclaim)", bundle: 'pro' },
-        { q: "They interrupt with an unrelated question and never come back.", a: "\"Happy to answer — right after I finish this thought.\" (reinforce the boundary)", bundle: 'pro' },
-        { q: "Your idea gets abandoned after someone jumps in.", a: "\"Let me resurface that — I think it's still the key thing.\" (let it go and reclaim)", bundle: 'pro' },
-        { q: "An interruption changes the subject completely.", a: "\"Quick one — can we finish my point before we switch?\" (reinforce the boundary)", bundle: 'pro' },
-        { q: "The new subject is more urgent than yours.", a: "\"That's bigger — deal with that. Mine can wait.\" (let it go and reclaim)", bundle: 'pro' },
-        { q: "Everyone has forgotten there was an earlier point.", a: "\"One from before we moved — can I finish it?\" (reinforce the boundary)", bundle: 'pro' },
-        { q: "They interrupted with a question you can answer in four words.", a: "\"Yes, Thursday. Right — where I was —\" (acknowledge and continue)", bundle: 'pro' },
+        { q: "Someone interrupts and the whole topic shifts away from your point.", a: "\"Before we lose it — I hadn't finished what I was saying.\" [Let It Go and Reclaim]", bundle: 'pro' },
+        { q: "A cut-in sends the conversation off on a tangent.", a: "\"Let me pull us back for one sec — my point still stands.\" [Let It Go and Reclaim]", bundle: 'pro' },
+        { q: "They interrupt with an unrelated question and never come back.", a: "\"Happy to answer — right after I finish this thought.\" [Reinforce the Boundary]", bundle: 'pro' },
+        { q: "Your idea gets abandoned after someone jumps in.", a: "\"Let me resurface that — I think it's still the key thing.\" [Let It Go and Reclaim]", bundle: 'pro' },
+        { q: "An interruption changes the subject completely.", a: "\"Quick one — can we finish my point before we switch?\" [Reinforce the Boundary]", bundle: 'pro' },
+        { q: "The new subject is more urgent than yours.", a: "\"That's bigger — deal with that. Mine can wait.\" [Let It Go and Reclaim]", bundle: 'pro' },
+        { q: "Everyone has forgotten there was an earlier point.", a: "\"One from before we moved — can I finish it?\" [Reinforce the Boundary]", bundle: 'pro' },
+        { q: "They interrupted with a question you can answer in four words.", a: "\"Yes, Thursday. Right — where I was —\" [Acknowledge and Continue]", bundle: 'pro' },
       ]
     },
   ],
@@ -955,11 +955,11 @@ const challengesCollections = {
       guideBack: "A possible response, with the strategy in brackets.",
       description: "They are upset about something you think they have misread, and validating feels like signing up to a version of events you do not accept.\n\nThe training is to notice that none of the three moves actually commits you to anything. A feeling is true whether or not the belief behind it is, and a route can be reasonable even when it ends somewhere you would not have gone.\n\nWhat it usually looks like:\n\n• They are angry at someone you think did nothing wrong.\n• Their account leaves out something that changes it.\n• You can already see the part they have got backwards.\n\nTwo ways through:\n1. Reflect the Feeling — the feeling is a fact regardless. \"That sounds like it really got to you.\"\n2. Acknowledge the Perspective — validate the route, not the destination. \"With what you knew, I can see how you got there.\"\n\nMindset: validation is about acknowledging, not agreeing. You can say all of this honestly and then say what you think, and it will land far better for having come second.",
       inputs: [
-        { q: "They are furious with someone you think did nothing wrong.", a: "\"That clearly landed badly. I can hear how much it's annoyed you.\" (reflect the feeling)", bundle: 'pro' },
-        { q: "Their account leaves out something that changes the picture.", a: "\"From where you're sitting, that makes sense.\" (acknowledge the perspective)", bundle: 'pro' },
-        { q: "You can see the part they have got backwards.", a: "\"With what you knew at the time, that's the obvious read.\" (acknowledge the perspective)", bundle: 'pro' },
-        { q: "You want to correct the facts before anything else.", a: "\"That sounds genuinely frustrating. Can I ask about one bit of it?\" (reflect the feeling)", bundle: 'pro' },
-        { q: "They ask outright whether you agree.", a: "\"I see it a bit differently. But I can see exactly how you got there.\" (acknowledge the perspective)", bundle: 'pro' },
+        { q: "They are furious with someone you think did nothing wrong.", a: "\"That clearly landed badly. I can hear how much it's annoyed you.\" [Reflect the Feeling]", bundle: 'pro' },
+        { q: "Their account leaves out something that changes the picture.", a: "\"From where you're sitting, that makes sense.\" [Acknowledge the Perspective]", bundle: 'pro' },
+        { q: "You can see the part they have got backwards.", a: "\"With what you knew at the time, that's the obvious read.\" [Acknowledge the Perspective]", bundle: 'pro' },
+        { q: "You want to correct the facts before anything else.", a: "\"That sounds genuinely frustrating. Can I ask about one bit of it?\" [Reflect the Feeling]", bundle: 'pro' },
+        { q: "They ask outright whether you agree.", a: "\"I see it a bit differently. But I can see exactly how you got there.\" [Acknowledge the Perspective]", bundle: 'pro' },
       ]
     },
     {
@@ -968,11 +968,11 @@ const challengesCollections = {
       guideBack: "A possible response, with the strategy in brackets.",
       description: "You validated somebody and they took it as taking their side, which was not what you meant and is now awkward to walk back.\n\nThe training is to be specific about what you are validating. Vague warmth reads as endorsement; naming the object — the feeling, the reaction, the reasoning — makes the boundary clear without any coldness.\n\nWhat it usually looks like:\n\n• \"Exactly! You see it too!\" when you do not.\n• Your validation quoted back to somebody else as support.\n• A dispute where both sides now think you are with them.\n\nTwo ways through:\n1. Reflect the Feeling, specifically — put the feeling in the sentence. \"I can see why that upset you\" rather than \"that's terrible\".\n2. Acknowledge the Perspective, specifically — \"I can see your reasoning\" rather than \"you're right\".\n\nMindset: name the object. \"That's completely understandable\" is ambiguous; \"your frustration is completely understandable\" is not, and it is no less warm.",
       inputs: [
-        { q: "They say: \"Exactly! So you agree she was out of line?\"", a: "\"I can see why it upset you. I don't know enough about her side to judge it.\" (reflect the feeling)", bundle: 'pro' },
-        { q: "Your validation gets quoted to somebody else as support.", a: "\"What I said was that your reasoning made sense, and it does.\" (acknowledge the perspective)", bundle: 'pro' },
-        { q: "You are about to say something vague and warm.", a: "\"Your frustration is completely understandable.\" (reflect the feeling)", bundle: 'pro' },
-        { q: "Both people in a dispute think you are on their side.", a: "\"I think both of you had fair reasons. That's not me dodging it.\" (acknowledge the perspective)", bundle: 'pro' },
-        { q: "They are building your comment into a case.", a: "\"I meant the feeling, not the verdict. Those are different.\" (reflect the feeling)", bundle: 'pro' },
+        { q: "They say: \"Exactly! So you agree she was out of line?\"", a: "\"I can see why it upset you. I don't know enough about her side to judge it.\" [Reflect the Feeling]", bundle: 'pro' },
+        { q: "Your validation gets quoted to somebody else as support.", a: "\"What I said was that your reasoning made sense, and it does.\" [Acknowledge the Perspective]", bundle: 'pro' },
+        { q: "You are about to say something vague and warm.", a: "\"Your frustration is completely understandable.\" [Reflect the Feeling]", bundle: 'pro' },
+        { q: "Both people in a dispute think you are on their side.", a: "\"I think both of you had fair reasons. That's not me dodging it.\" [Acknowledge the Perspective]", bundle: 'pro' },
+        { q: "They are building your comment into a case.", a: "\"I meant the feeling, not the verdict. Those are different.\" [Reflect the Feeling]", bundle: 'pro' },
       ]
     },
     {
@@ -981,11 +981,11 @@ const challengesCollections = {
       guideBack: "A possible response, with the strategy in brackets.",
       description: "Two people you both know are in conflict, and each of them wants your validation to mean the other one was wrong.\n\nThe training is that validating both is not a contradiction. Two people can each have had entirely reasonable reactions to the same event, and saying so to both is honest rather than evasive.\n\nWhat it usually looks like:\n\n• Both of them telling you the story separately.\n• \"You can see what I mean, though, right?\"\n• A pull to agree with whoever is in front of you.\n\nTwo ways through:\n1. Acknowledge the Perspective — the move that scales to two people. \"I can see how you both got where you got.\"\n2. Normalise the Reaction — also symmetrical. \"Anyone would have found that frustrating.\"\n\nMindset: validating both is not fence-sitting. It is the accurate answer most of the time, and pretending otherwise to whoever is in the room costs you both friendships eventually.",
       inputs: [
-        { q: "They ask: \"You can see what I mean, though, right?\"", a: "\"I can see how you got there, honestly. Both of you had a fair read.\" (acknowledge the perspective)", bundle: 'pro' },
-        { q: "Both of them have told you the story separately.", a: "\"You'd both be annoyed in the other's position. That's the frustrating part.\" (normalise the reaction)", bundle: 'pro' },
-        { q: "You feel the pull to agree with whoever is in front of you.", a: "\"Your reasoning holds up. I'd say the same about hers, for what it's worth.\" (acknowledge the perspective)", bundle: 'pro' },
-        { q: "They push you for a verdict on the other person.", a: "\"I'm not going to referee it. What you felt was completely reasonable, though.\" (reflect the feeling)", bundle: 'pro' },
-        { q: "They say: \"So you're on her side.\"", a: "\"I'm not on a side. I think you were both reacting in ways that make sense.\" (acknowledge the perspective)", bundle: 'pro' },
+        { q: "They ask: \"You can see what I mean, though, right?\"", a: "\"I can see how you got there, honestly. Both of you had a fair read.\" [Acknowledge the Perspective]", bundle: 'pro' },
+        { q: "Both of them have told you the story separately.", a: "\"You'd both be annoyed in the other's position. That's the frustrating part.\" [Normalise the Reaction]", bundle: 'pro' },
+        { q: "You feel the pull to agree with whoever is in front of you.", a: "\"Your reasoning holds up. I'd say the same about hers, for what it's worth.\" [Acknowledge the Perspective]", bundle: 'pro' },
+        { q: "They push you for a verdict on the other person.", a: "\"I'm not going to referee it. What you felt was completely reasonable, though.\" [Reflect the Feeling]", bundle: 'pro' },
+        { q: "They say: \"So you're on her side.\"", a: "\"I'm not on a side. I think you were both reacting in ways that make sense.\" [Acknowledge the Perspective]", bundle: 'pro' },
       ]
     },
     {
@@ -994,11 +994,11 @@ const challengesCollections = {
       guideBack: "A possible response, with the strategy in brackets.",
       description: "You said something validating and it landed as a greetings card — \"everything happens for a reason\", \"at least you tried\".\n\nThe training is specificity. A platitude is validation with the details removed, and the details are the entire proof that you were listening rather than reaching for a phrase.\n\nWhat it usually sounds like:\n\n• \"Everything happens for a reason.\"\n• \"At least you learned something.\"\n• \"That's just how it goes sometimes.\"\n\nTwo ways through:\n1. Reflect the Feeling, with the specifics in it — \"A whole week of dreading it. That's exhausting.\"\n2. Acknowledge the Perspective, with the specifics in it — \"You had a deadline that day. Waiting would have cost more.\"\n\nMindset: the detail is the validation. Anything you could have said before they finished talking is not going to land, however kindly it is meant.",
       inputs: [
-        { q: "You are about to say \"everything happens for a reason\".", a: "\"A whole week of dreading it. That's exhausting on its own.\" (reflect the feeling)", bundle: 'pro' },
-        { q: "You catch yourself reaching for \"at least you tried\".", a: "\"You went for it with no guarantee. That took something.\" (acknowledge the perspective)", bundle: 'pro' },
-        { q: "Your response could have been said to anyone.", a: "\"The bit that would get me is finding out from the client.\" (reflect the feeling)", bundle: 'pro' },
-        { q: "They visibly deflate after something you said.", a: "\"Sorry, that was a bit generic. What actually happened with the meeting?\" (reflect the feeling)", bundle: 'pro' },
-        { q: "You do not know the details well enough to be specific.", a: "\"Tell me the part that's bothering you most and I'll shut up.\" (reflect the feeling)", bundle: 'pro' },
+        { q: "You are about to say \"everything happens for a reason\".", a: "\"A whole week of dreading it. That's exhausting on its own.\" [Reflect the Feeling]", bundle: 'pro' },
+        { q: "You catch yourself reaching for \"at least you tried\".", a: "\"You went for it with no guarantee. That took something.\" [Acknowledge the Perspective]", bundle: 'pro' },
+        { q: "Your response could have been said to anyone.", a: "\"The bit that would get me is finding out from the client.\" [Reflect the Feeling]", bundle: 'pro' },
+        { q: "They visibly deflate after something you said.", a: "\"Sorry, that was a bit generic. What actually happened with the meeting?\" [Reflect the Feeling]", bundle: 'pro' },
+        { q: "You do not know the details well enough to be specific.", a: "\"Tell me the part that's bothering you most and I'll shut up.\" [Reflect the Feeling]", bundle: 'pro' },
       ]
     },
     {
@@ -1009,7 +1009,7 @@ const challengesCollections = {
       inputs: [
         { q: "They say: \"You don't understand.\"", a: "\"Probably not. What am I missing?\" (ask what you got wrong)", bundle: 'pro' },
         { q: "They say: \"Don't just tell me it's fine.\"", a: "\"Fair. I'm not trying to smooth it over — what's the actual problem with it?\" (ask what you got wrong)", bundle: 'pro' },
-        { q: "They say: \"You're only saying that.\"", a: "\"What would you want me to see here?\" (acknowledge the perspective)", bundle: 'pro' },
+        { q: "They say: \"You're only saying that.\"", a: "\"What would you want me to see here?\" [Acknowledge the Perspective]", bundle: 'pro' },
         { q: "Your reflection of the feeling landed wrong.", a: "\"Wrong word, maybe. What would you call it?\" (ask what you got wrong)", bundle: 'pro' },
         { q: "They brush off a normalising line.", a: "\"Okay. I don't think you're overreacting, but I'll stop saying so.\" (ask what you got wrong)", bundle: 'pro' },
       ]
@@ -1094,6 +1094,9 @@ const challengesCollections = {
         { q: "You have listed three adjectives and none has landed.", a: "\"Forget all that — the giveaway is the cracked corner on the lid.\" [Give the distinguishing feature]", bundle: 'pro' },
         { q: "You said \"it's just a normal one\".", a: "\"Sorry, that's no help. It's the round sort, not the flat sort.\" [Narrow the category]", bundle: 'pro' },
         { q: "They ask \"which one?\" for the third time.", a: "\"The one right next to the door. That's the quickest way to say it.\" [Switch to position]", bundle: 'pro' },
+        { q: "You said \"over there\" and they are looking the wrong way.", a: "\"Behind you, second shelf down, next to the kettle.\" [Where You Find It]", bundle: 'pro' },
+        { q: "You said \"the big one\" and there are three big ones.", a: "\"The tallest of the three — about up to your elbow.\" [Size and Shape]", bundle: 'pro' },
+        { q: "You described the type but not which one.", a: "\"It's the matt black one. The others are all shiny.\" [Material, Texture and Colour]", bundle: 'pro' },
       ]
     },
     {
@@ -1107,6 +1110,9 @@ const challengesCollections = {
         { q: "You have described colour, size, material and age with no pause.", a: "\"Does that sound like anything you've seen?\" [Stop and check]", bundle: 'pro' },
         { q: "You realise you have not said the one thing that identifies it.", a: "\"None of that matters, actually. It's the only one with a wooden handle.\" [Lead with the giveaway]", bundle: 'pro' },
         { q: "They look overwhelmed before you have finished.", a: "\"Short version: big, green, patched. That's enough to spot it.\" [Offer the short version]", bundle: 'pro' },
+        { q: "You are giving details in the order you notice them, not the order that helps.", a: "\"Start here: it's a red notebook. Everything else is detail.\" [Name and Main Details]", bundle: 'pro' },
+        { q: "They have started looking before you finished.", a: "\"Go — it's the one you'd use for opening tins.\" [What It Is For]", bundle: 'pro' },
+        { q: "You have given four details and they have not moved.", a: "\"One thing to hold on to: it's A5, about the size of your hand.\" [Size and Shape]", bundle: 'pro' },
       ]
     },
     {
@@ -1120,6 +1126,9 @@ const challengesCollections = {
         { q: "They press for the brand.", a: "\"No idea on the brand. I could tell you the shape though.\" [Redirect to what you have]", bundle: 'pro' },
         { q: "You half remember and it might be wrong.", a: "\"I think it was green — don't rule out a blue one on my say-so.\" [Flag the uncertainty]", bundle: 'pro' },
         { q: "You realise mid-sentence you have described something else.", a: "\"Sorry, I'm describing the old one. The new one is smaller and grey.\" [Correct it immediately]", bundle: 'pro' },
+        { q: "You remember what it is not, but not what it is.", a: "\"Not the black one — something paler, cream or grey.\" [Material, Texture and Colour]", bundle: 'pro' },
+        { q: "You cannot remember any of it except what it does.", a: "\"No idea what it looks like. It's the thing that clamps the pipe.\" [What It Is For]", bundle: 'pro' },
+        { q: "You remember one detail vividly and nothing else.", a: "\"There's a dent in the lid. That'll be quicker than anything else I could say.\" [Name and Main Details]", bundle: 'pro' },
       ]
     },
     {
@@ -1133,6 +1142,9 @@ const challengesCollections = {
         { q: "They cannot picture the place.", a: "\"Imagine a train station, but the roof is glass and it's full of market stalls.\" [Known thing, one change]", bundle: 'pro' },
         { q: "Your comparison did not land either.", a: "\"Different angle — it's a tool for opening things that are stuck.\" [Switch to purpose]", bundle: 'pro' },
         { q: "They say \"I have no idea what you mean\".", a: "\"Fair enough. I'll show you a picture — it'll take two seconds.\" [Stop describing, show it]", bundle: 'pro' },
+        { q: "They know a related thing but not this one.", a: "\"You know a colander? Same job, but for squeezing rather than draining.\" [What It Is For]", bundle: 'pro' },
+        { q: "The comparison is close but the size is wrong.", a: "\"Like a wheelbarrow, but you'd carry it in one hand.\" [Size and Shape]", bundle: 'pro' },
+        { q: "They cannot picture the material at all.", a: "\"Heavier than it looks — cast iron, cold to hold.\" [Material, Texture and Colour]", bundle: 'pro' },
       ]
     },
     {
@@ -1146,6 +1158,9 @@ const challengesCollections = {
         { q: "You are about to describe someone's body.", a: "\"Easier way — she's the one carrying the blue folder.\" [Choose a neutral marker]", bundle: 'pro' },
         { q: "You are telling a friend who to look out for at the station.", a: "\"Tall, grey coat, and he'll be the one holding a bike helmet.\" [Clothing plus object]", bundle: 'pro' },
         { q: "The only detail you can think of is a personal one.", a: "\"I'll message you when I see him — easier than describing.\" [Decline the description]", bundle: 'pro' },
+        { q: "They are in a crowd and everyone is dressed the same.", a: "\"Third from the left, right under the clock.\" [Where You Find It]", bundle: 'pro' },
+        { q: "You realise the detail you were going to use is the wrong thing to say.", a: "\"She's the one by the window with the red lanyard.\" [Material, Texture and Colour]", bundle: 'pro' },
+        { q: "They have moved since you described them.", a: "\"Forget where — he's the tallest person in the room.\" [Size and Shape]", bundle: 'pro' },
       ]
     },
   ],
@@ -1161,6 +1176,9 @@ const challengesCollections = {
         { q: "They say \"I know\" flatly, twice.", a: "\"Fair enough. Tell me where you actually got stuck and I'll start there.\" [Hand it back]", bundle: 'pro' },
         { q: "You realise they wrote the thing you're explaining.", a: "\"I've just explained your own system to you. Go on then — what did I get wrong?\" [Own it lightly]", bundle: 'pro' },
         { q: "They're nodding along politely but clearly ahead of you.", a: "\"I'm labouring this. Shall I skip to the bit about why it changed?\" [Skip forward]", bundle: 'pro' },
+        { q: "They know the thing but not the change you made to it.", a: "\"Then just the new bit — it saves as you go now.\" [Say What It Is]", bundle: 'pro' },
+        { q: "They asked, but only to check you knew.", a: "\"It's the thing that stops two people editing the same row.\" [Say Why It Matters]", bundle: 'pro' },
+        { q: "You are explaining it because you enjoy explaining it.", a: "\"Short version: it's a shared list. That's the whole of it.\" [Say What It Is]", bundle: 'pro' },
       ]
     },
     {
@@ -1174,6 +1192,9 @@ const challengesCollections = {
         { q: "You're four minutes in and haven't said what it's for.", a: "\"I've buried the point. It's for the mornings when you can't get up.\" [Jump to Why]", bundle: 'pro' },
         { q: "They interrupt with \"sorry, what does it do again?\"", a: "\"Good question — I never said. It logs the temperature every ten minutes.\" [Answer plainly]", bundle: 'pro' },
         { q: "You notice you've used three words they wouldn't know.", a: "\"Ignore all that. In plain terms, it's a switch that turns itself off.\" [Drop the jargon]", bundle: 'pro' },
+        { q: "You have said \"and then\" five times.", a: "\"You press it, it books the room. That's the mechanism.\" [Explain How It Works]", bundle: 'pro' },
+        { q: "They asked a yes-or-no question.", a: "\"Yes. It's a timer that turns the heating off.\" [Say What It Is]", bundle: 'pro' },
+        { q: "You are explaining the exceptions before the rule.", a: "\"Normally you just scan it and it opens.\" [Explain How It Works]", bundle: 'pro' },
       ]
     },
     {
@@ -1187,6 +1208,9 @@ const challengesCollections = {
         { q: "An expert asked and you've started from the very beginning.", a: "\"You'll know all this — shall I skip to what we changed?\" [Go up a level]", bundle: 'pro' },
         { q: "They say \"I'm not technical\" before you've said anything.", a: "\"That's fine, there's nothing technical in it. It's a list and a button.\" [Reassure, then plain]", bundle: 'pro' },
         { q: "They use a technical word correctly and you'd been simplifying.", a: "\"Ah, you're further in than I thought. Then the short version is it caches locally.\" [Match them]", bundle: 'pro' },
+        { q: "A child has asked and you started with the mechanism.", a: "\"It's a box that keeps food cold.\" [Say What It Is]", bundle: 'pro' },
+        { q: "They know the parts but not what it is for.", a: "\"It's there so nobody has to remember to do it on a Sunday.\" [Say Why It Matters]", bundle: 'pro' },
+        { q: "You simplified and they clearly know more than you assumed.", a: "\"Then the interesting bit — it reads the meter rather than the clock.\" [Explain How It Works]", bundle: 'pro' },
       ]
     },
     {
@@ -1200,6 +1224,9 @@ const challengesCollections = {
         { q: "They say, \"Sounds like more work than it saves.\"", a: "\"It is, for the first week. After that it's about ten minutes a day back.\" [Acknowledge the cost]", bundle: 'pro' },
         { q: "They ask what's wrong with the old way.", a: "\"Nothing, honestly, until two people need it at once. That's the whole difference.\" [Name the trigger]", bundle: 'pro' },
         { q: "They say, \"This feels like a solution looking for a problem.\"", a: "\"Sometimes it is. Do you ever lose track of what you promised people? If not, skip it.\" [Ask before selling]", bundle: 'pro' },
+        { q: "They have decided it is not for them before you finish.", a: "\"It's for the week when two people are off at once.\" [Say Why It Matters]", bundle: 'pro' },
+        { q: "They want to know what happens if they ignore it.", a: "\"It matters the day someone works a weekend on an old version.\" [Say Why It Matters]", bundle: 'pro' },
+        { q: "They cannot see what it does differently.", a: "\"It checks the date before it sends. That's the only change.\" [Explain How It Works]", bundle: 'pro' },
       ]
     },
     {
@@ -1213,6 +1240,9 @@ const challengesCollections = {
         { q: "You know who does know.", a: "\"Ask Sam — that's their bit and they'll explain it properly in a minute.\" [Hand over]", bundle: 'pro' },
         { q: "You half remember and it might be wrong.", a: "\"I think it's monthly, but check it — I've got maybe seventy per cent confidence in that.\" [Flag the confidence]", bundle: 'pro' },
         { q: "They press for a definite answer you don't have.", a: "\"I can find out by tomorrow. I'd rather give you the right one than a fast one.\" [Offer to find out]", bundle: 'pro' },
+        { q: "You know what it does but not how.", a: "\"It ends up in the shared folder. How it gets there I couldn't tell you.\" [Say What It Is]", bundle: 'pro' },
+        { q: "You know the mechanism but not why anyone wanted it.", a: "\"It runs every night at two. Why two, I've never asked.\" [Explain How It Works]", bundle: 'pro' },
+        { q: "You explained it confidently and have since realised you were wrong.", a: "\"I said it was monthly. It's weekly — that changes the point of it.\" [Say Why It Matters]", bundle: 'pro' },
       ]
     },
   ],
@@ -1290,11 +1320,14 @@ const challengesCollections = {
       guideBack: "One way it could sound",
       description: "Two minutes in and the listener still does not know what actually happened — you are still explaining the background.\n\nThe training is to notice the moment their attention goes, and to get the event out immediately rather than finishing the run-up you had planned.\n\nWhat it usually looks like:\n\n• A long setup with no event in sight.\n• \"Anyway, so —\" arriving for the third time.\n• Someone asking \"sorry, what happened?\"\n\nTwo ways through:\n1. What — say it now, out of order if necessary. \"Anyway — I lost the whole thing.\"\n2. How — skip straight to the middle. \"Long story short, it ended up under the lockers.\"\n\nMindset: you can always backfill. Nobody has ever minded a story that started at the event and explained itself afterwards.",
       inputs: [
-        { q: "Two minutes of background and nothing has happened yet.", a: "\"Anyway — the short version is I lost my homework completely.\" (what)", bundle: 'pro' },
-        { q: "They ask \"sorry, what actually happened?\"", a: "\"We arrived at the hotel and it did not exist.\" (what)", bundle: 'pro' },
-        { q: "You can see attention going and you are still setting up.", a: "\"Skipping ahead — I ended up sitting on the step for six hours.\" (what)", bundle: 'pro' },
-        { q: "You have explained the whole context twice over.", a: "\"Right, the actual thing: I called my teacher mum, in front of everyone.\" (what)", bundle: 'pro' },
-        { q: "You are three sentences from the event and losing them.", a: "\"I will come back to why — first, I got the job.\" (what)", bundle: 'pro' },
+        { q: "Two minutes of background and nothing has happened yet.", a: "\"Anyway — the short version is I lost my homework completely.\" [What — the Main Event]", bundle: 'pro' },
+        { q: "They ask \"sorry, what actually happened?\"", a: "\"We arrived at the hotel and it did not exist.\" [What — the Main Event]", bundle: 'pro' },
+        { q: "You can see attention going and you are still setting up.", a: "\"Skipping ahead — I ended up sitting on the step for six hours.\" [What — the Main Event]", bundle: 'pro' },
+        { q: "You have explained the whole context twice over.", a: "\"Right, the actual thing: I called my teacher mum, in front of everyone.\" [What — the Main Event]", bundle: 'pro' },
+        { q: "You are three sentences from the event and losing them.", a: "\"I will come back to why — first, I got the job.\" [What — the Main Event]", bundle: 'pro' },
+        { q: "You have introduced four people and nothing has happened.", a: "\"Anyway — the point is the car was gone.\" [What — the Main Event]", bundle: 'pro' },
+        { q: "You are explaining why you were there instead of what happened there.", a: "\"Doesn't matter why. What happened was they'd double-booked us.\" [What — the Main Event]", bundle: 'pro' },
+        { q: "Someone else starts talking because you have not got anywhere.", a: "\"Thirty seconds — I did actually get locked in.\" [What — the Main Event]", bundle: 'pro' },
       ]
     },
     {
@@ -1303,11 +1336,14 @@ const challengesCollections = {
       guideBack: "One way it could sound",
       description: "You finished the story and got a polite pause. Everything happened, nothing landed.\n\nThe training is to recognise this specific symptom as a missing Why. The events were clear; what was missing was any reason to care about them, which is usually you.\n\nWhat it usually sounds like:\n\n• \"Right… and then what?\"\n• A polite nod and a change of subject.\n• \"Huh.\"\n\nTwo ways through:\n1. Why — say what it meant or what caused it. \"I had failed three times, so it actually meant something.\"\n2. Who — put a person and their reaction in. \"The examiner had failed me twice before and clearly remembered.\"\n\nMindset: a story without a Why is a report. The listener is not asking for a better event, they are asking what it was like to be you in it.",
       inputs: [
-        { q: "You finished and got a polite pause.", a: "\"I had failed three times before that, so it actually meant something.\" (why)", bundle: 'pro' },
-        { q: "The events were clear but nothing landed.", a: "\"The whole thing hinged on a booking nobody had ever made.\" (why)", bundle: 'pro' },
-        { q: "They nodded and changed the subject.", a: "\"I had been saying I would do it for two years and finally got sick of hearing myself.\" (why)", bundle: 'pro' },
-        { q: "Your story sounds like a list of things that occurred.", a: "\"There was one woman who just took over and sorted the whole thing.\" (who)", bundle: 'pro' },
-        { q: "You told it well but it feels like it was about nobody.", a: "\"I was too embarrassed to ask anyone, which is the actual reason.\" (why)", bundle: 'pro' },
+        { q: "You finished and got a polite pause.", a: "\"I had failed three times before that, so it actually meant something.\" [Why — the Reason]", bundle: 'pro' },
+        { q: "The events were clear but nothing landed.", a: "\"The whole thing hinged on a booking nobody had ever made.\" [Why — the Reason]", bundle: 'pro' },
+        { q: "They nodded and changed the subject.", a: "\"I had been saying I would do it for two years and finally got sick of hearing myself.\" [Why — the Reason]", bundle: 'pro' },
+        { q: "Your story sounds like a list of things that occurred.", a: "\"There was one woman who just took over and sorted the whole thing.\" [Who — the People]", bundle: 'pro' },
+        { q: "You told it well but it feels like it was about nobody.", a: "\"I was too embarrassed to ask anyone, which is the actual reason.\" [Why — the Reason]", bundle: 'pro' },
+        { q: "The story is complete but has no reason behind it.", a: "\"I'd promised myself I'd never ask him for anything.\" [Why — the Reason]", bundle: 'pro' },
+        { q: "You told it and realised you did not know why you were telling it.", a: "\"It's stuck with me because nobody said a word about it afterwards.\" [Why — the Reason]", bundle: 'pro' },
+        { q: "They ask what the point was.", a: "\"That was the day I stopped volunteering for things.\" [Why — the Reason]", bundle: 'pro' },
       ]
     },
     {
@@ -1316,11 +1352,14 @@ const challengesCollections = {
       guideBack: "One way it could sound",
       description: "They are following the story but seeing nothing. It is all events and no scene.\n\nThe training is to notice that you have given a sequence without a setting, and to spend one clause on the place before carrying on.\n\nWhat it usually looks like:\n\n• The whole story happens in a vacuum.\n• You realise you never said where you were.\n• It sounds like it could have happened anywhere.\n\nTwo ways through:\n1. Where — one concrete detail, not a description. \"A hallway full of people trying to get past me.\"\n2. When — anchor it as a real moment. \"February, and it was already going dark.\"\n\nMindset: one detail and the listener builds the rest themselves. You are giving them somewhere to stand, not describing a room.",
       inputs: [
-        { q: "The story is clear but happening nowhere in particular.", a: "\"This was in the hallway outside the science block, everyone pushing past.\" (where)", bundle: 'pro' },
-        { q: "You realise you never said where you were.", a: "\"An empty gravel lot where the hotel was supposed to be.\" (where)", bundle: 'pro' },
-        { q: "It sounds like it could have happened anywhere, any time.", a: "\"Last period on a Friday, when everyone was half asleep.\" (when)", bundle: 'pro' },
-        { q: "You want them to see the room before the event lands.", a: "\"A glass meeting room where everyone already knew each other.\" (where)", bundle: 'pro' },
-        { q: "The scene is missing and the story feels thin.", a: "\"One of those climbing places in an old warehouse, all echo and chalk dust.\" (where)", bundle: 'pro' },
+        { q: "The story is clear but happening nowhere in particular.", a: "\"This was in the hallway outside the science block, everyone pushing past.\" [Where — the Setting]", bundle: 'pro' },
+        { q: "You realise you never said where you were.", a: "\"An empty gravel lot where the hotel was supposed to be.\" [Where — the Setting]", bundle: 'pro' },
+        { q: "It sounds like it could have happened anywhere, any time.", a: "\"Last period on a Friday, when everyone was half asleep.\" [When — the Time]", bundle: 'pro' },
+        { q: "You want them to see the room before the event lands.", a: "\"A glass meeting room where everyone already knew each other.\" [Where — the Setting]", bundle: 'pro' },
+        { q: "The scene is missing and the story feels thin.", a: "\"One of those climbing places in an old warehouse, all echo and chalk dust.\" [Where — the Setting]", bundle: 'pro' },
+        { q: "You said \"at work\" and they have never been there.", a: "\"An open-plan floor where you can hear everything.\" [Where — the Setting]", bundle: 'pro' },
+        { q: "The time of day would explain the whole thing.", a: "\"Half six in the morning, before anyone else was in.\" [When — the Time]", bundle: 'pro' },
+        { q: "You have described the people but not the room.", a: "\"Twelve of us round a table built for eight.\" [Where — the Setting]", bundle: 'pro' },
       ]
     },
     {
@@ -1329,11 +1368,14 @@ const challengesCollections = {
       guideBack: "One way it could sound",
       description: "You have used a name three times and the listener has no idea who they are, so they have stopped following and started guessing.\n\nThe training is to introduce people the first time they appear, in about four words, and to keep the cast small.\n\nWhat it usually looks like:\n\n• A name arriving with no explanation.\n• Four people in the story and no way to tell them apart.\n• \"Sorry, who is Sam?\"\n\nTwo ways through:\n1. Who — introduce them as they arrive. \"My mate Sam, who was crawling under the lockers.\"\n2. Who, trimmed — cut the cast to the ones who matter. \"There were others there, but really it was just me and the driver.\"\n\nMindset: a listener working out who someone is has stopped listening to the story. Four words of introduction buys back the whole rest of it.",
       inputs: [
-        { q: "You have said a name three times with no introduction.", a: "\"Sam — my mate from school, the one who was under the lockers.\" (who)", bundle: 'pro' },
-        { q: "There are four people in the story and no way to tell them apart.", a: "\"Really it was just me and one very unimpressed taxi driver.\" (who)", bundle: 'pro' },
-        { q: "They ask who someone is, mid-story.", a: "\"A neighbour I had never spoken to before that day.\" (who)", bundle: 'pro' },
-        { q: "The people in your story have no reactions.", a: "\"My teacher just carried on as if nothing had happened, which made it worse.\" (who)", bundle: 'pro' },
-        { q: "You realise the interesting person has not appeared yet.", a: "\"The examiner had failed me twice already and clearly remembered me.\" (who)", bundle: 'pro' },
+        { q: "You have said a name three times with no introduction.", a: "\"Sam — my mate from school, the one who was under the lockers.\" [Who — the People]", bundle: 'pro' },
+        { q: "There are four people in the story and no way to tell them apart.", a: "\"Really it was just me and one very unimpressed taxi driver.\" [Who — the People]", bundle: 'pro' },
+        { q: "They ask who someone is, mid-story.", a: "\"A neighbour I had never spoken to before that day.\" [Who — the People]", bundle: 'pro' },
+        { q: "The people in your story have no reactions.", a: "\"My teacher just carried on as if nothing had happened, which made it worse.\" [Who — the People]", bundle: 'pro' },
+        { q: "You realise the interesting person has not appeared yet.", a: "\"The examiner had failed me twice already and clearly remembered me.\" [Who — the People]", bundle: 'pro' },
+        { q: "The person matters but you have called them \"someone\".", a: "\"The site manager — who had already told us twice.\" [Who — the People]", bundle: 'pro' },
+        { q: "You have described what they did but not who they are to you.", a: "\"My brother, who has never once been early.\" [Who — the People]", bundle: 'pro' },
+        { q: "There are two people and the listener has merged them.", a: "\"Two different people — the driver and the man who owned the van.\" [Who — the People]", bundle: 'pro' },
       ]
     },
     {
@@ -1342,11 +1384,14 @@ const challengesCollections = {
       guideBack: "One way it could sound",
       description: "You are somewhere in the middle, the story has grown a subplot, and you can feel it sagging.\n\nThe training is to cut rather than to speed up. Talking faster makes a long story a fast long story; dropping W's makes it a short one.\n\nWhat it usually looks like:\n\n• A second story growing inside the first.\n• Nine steps in the How where three would do.\n• \"Anyway, that is not important —\" said out loud.\n\nTwo ways through:\n1. What — jump to the outcome and land it. \"Anyway — we never did find it.\"\n2. How, trimmed — two beats instead of nine. \"Long story short, it took about six hours.\"\n\nMindset: the six W's are a menu, not a checklist. Three or four told well beats all six told exhaustively.",
       inputs: [
-        { q: "A second story has started growing inside the first.", a: "\"That is a whole other thing — anyway, we never did find it.\" (what)", bundle: 'pro' },
-        { q: "You are nine steps into the How and it is sagging.", a: "\"Long story short, six hours on a doorstep in February.\" (how)", bundle: 'pro' },
-        { q: "You hear yourself say \"anyway, that is not important\".", a: "\"Right, the actual point: the booking had never gone through.\" (why)", bundle: 'pro' },
-        { q: "You have included every detail and the story has flattened.", a: "\"Skipping most of it — I got there, and I got the job.\" (what)", bundle: 'pro' },
-        { q: "You can feel them waiting for it to end.", a: "\"Two attempts, then it just clicked. That was the whole thing.\" (how)", bundle: 'pro' },
+        { q: "A second story has started growing inside the first.", a: "\"That is a whole other thing — anyway, we never did find it.\" [What — the Main Event]", bundle: 'pro' },
+        { q: "You are nine steps into the How and it is sagging.", a: "\"Long story short, six hours on a doorstep in February.\" [How — the Process]", bundle: 'pro' },
+        { q: "You hear yourself say \"anyway, that is not important\".", a: "\"Right, the actual point: the booking had never gone through.\" [Why — the Reason]", bundle: 'pro' },
+        { q: "You have included every detail and the story has flattened.", a: "\"Skipping most of it — I got there, and I got the job.\" [What — the Main Event]", bundle: 'pro' },
+        { q: "You can feel them waiting for it to end.", a: "\"Two attempts, then it just clicked. That was the whole thing.\" [How — the Process]", bundle: 'pro' },
+        { q: "You have started explaining a detail nobody asked about.", a: "\"That doesn't matter — the point is we missed it by four minutes.\" [What — the Main Event]", bundle: 'pro' },
+        { q: "You realise the interesting part is still three minutes away.", a: "\"Skipping to it: the hotel had burnt down.\" [What — the Main Event]", bundle: 'pro' },
+        { q: "The middle has three steps that could be one.", a: "\"Two buses and a long walk later, I got there.\" [How — the Process]", bundle: 'pro' },
       ]
     },
   ],
@@ -1429,6 +1474,9 @@ const challengesCollections = {
         { q: "You only have criticism and are looking for something nice first.", a: "\"I've got one thing that didn't work. Can I just say that bit?\" [Drop the wrapper]", bundle: 'pro' },
         { q: "They flinch when you start with a compliment.", a: "\"This one isn't leading anywhere. It's just the thing you did well.\" [Say what it isn't]", bundle: 'pro' },
         { q: "You want to encourage and correct at once.", a: "\"Keep the structure. That's the whole note for today.\" [Give one note]", bundle: 'pro' },
+        { q: "The correction is urgent and the praise is real.", a: "\"The pacing was right the whole way through.\" [Identify the Positive Behaviour]", bundle: 'pro' },
+        { q: "You said the good thing and then kept talking.", a: "\"I should have stopped there. It made the room actually listen.\" [Highlight the Impact]", bundle: 'pro' },
+        { q: "You are praising to soften something they can already see coming.", a: "\"Separately from the notes — thank you for turning it round so fast.\" [Express Appreciation]", bundle: 'pro' },
       ]
     },
     {
@@ -1442,6 +1490,9 @@ const challengesCollections = {
         { q: "They ask directly if it was good and it was not.", a: "\"Parts of it. The opening works. I'd want to talk about the middle.\" [Answer honestly]", bundle: 'pro' },
         { q: "You have already over-praised and they are relying on it.", a: "\"I was too generous on Tuesday. Let me give you a straighter version.\" [Correct it]", bundle: 'pro' },
         { q: "You are about to say something you do not mean.", a: "\"I won't pretend it landed. What I do think is that it was worth trying.\" [Praise the attempt]", bundle: 'pro' },
+        { q: "They want to hear it was brilliant and it was competent.", a: "\"You got it in on the day you said. That's the bit I'd point at.\" [Identify the Positive Behaviour]", bundle: 'pro' },
+        { q: "Everyone else has praised it and you disagree.", a: "\"What I can say honestly is that the research under it is solid.\" [Identify the Positive Behaviour]", bundle: 'pro' },
+        { q: "The only true praise is about the effort, not the result.", a: "\"That took three evenings and I noticed. Thank you.\" [Express Appreciation]", bundle: 'pro' },
       ]
     },
     {
@@ -1455,6 +1506,9 @@ const challengesCollections = {
         { q: "They took your vague offer literally and asked for a lot.", a: "\"I can do the first two. The rest I'd not manage well.\" [Scale it honestly]", bundle: 'pro' },
         { q: "You want to help but genuinely have no time.", a: "\"I can't take any of it on this month. I can point you at who could.\" [Offer what you have]", bundle: 'pro' },
         { q: "You are offering mainly to seem supportive.", a: "\"Actually, I'd not get to it. Better you ask someone with the time.\" [Withdraw honestly]", bundle: 'pro' },
+        { q: "You want to offer something but do not know what would help.", a: "\"I've got an hour on Friday. What would be most useful?\" [Offer Support]", bundle: 'pro' },
+        { q: "You offered and they have not taken it up.", a: "\"Friday's still there if you want it — an hour, whenever.\" [Offer Support]", bundle: 'pro' },
+        { q: "You are about to promise something conditional on things going well.", a: "\"Thursday, regardless of how the week goes. I'll be there.\" [Offer Support]", bundle: 'pro' },
       ]
     },
     {
@@ -1468,6 +1522,9 @@ const challengesCollections = {
         { q: "They credit the whole thing to someone else.", a: "\"They helped. The bit I mean is the part you did.\" [Narrow to their part]", bundle: 'pro' },
         { q: "They laugh it off every time.", a: "\"I know you'll wave that away. I'm saying it anyway.\" [Say it and let it go]", bundle: 'pro' },
         { q: "They say you are only being kind.", a: "\"I'd have said nothing if I didn't mean it. That's how I work.\" [Answer the doubt]", bundle: 'pro' },
+        { q: "They have been told the opposite by someone else.", a: "\"I can only tell you what I saw — the second half held the room.\" [Highlight the Impact]", bundle: 'pro' },
+        { q: "They ask you to prove it.", a: "\"The bit where you rewrote the middle. That's the specific thing.\" [Identify the Positive Behaviour]", bundle: 'pro' },
+        { q: "They accept it out loud and clearly do not mean it.", a: "\"Take it or don't — I'd like to see you do the next one too.\" [Encourage Future Efforts]", bundle: 'pro' },
       ]
     },
     {
@@ -1481,6 +1538,9 @@ const challengesCollections = {
         { q: "Praising one person might read as a dig at the others.", a: "\"The group got this done, and Sam's summary is what held it together.\" [Praise the whole, name the part]", bundle: 'pro' },
         { q: "You are not sure whether they would want it said publicly.", a: "\"Would it be alright if I mentioned this on Thursday?\" [Ask first]", bundle: 'pro' },
         { q: "You praised someone publicly and they looked stricken.", a: "\"I've put you on the spot — sorry. I'll be more careful next time.\" [Repair it]", bundle: 'pro' },
+        { q: "You want them to get the credit but not the attention.", a: "\"The best part of this came from Sara.\" [Identify the Positive Behaviour]", bundle: 'pro' },
+        { q: "Someone senior is in the room and it might read as performance.", a: "\"It changed how the client read the whole thing.\" [Highlight the Impact]", bundle: 'pro' },
+        { q: "They did the work but someone else presented it.", a: "\"That section was Nadia's, and it's the one that landed.\" [Highlight the Impact]", bundle: 'pro' },
       ]
     },
   ],
@@ -1558,11 +1618,11 @@ const challengesCollections = {
       guideBack: "A possible response, with the step in brackets.",
       description: "The criticism does not match what you think happened, and every instinct says to correct the record immediately.\n\nThe training is to notice that defending first destroys everything that comes after it. You run the same steps — you simply put your disagreement at Reflect Openly rather than at the front.\n\nWhat it usually sounds like:\n\n• \"You never...\" when you know you have.\n• A version of events with one detail plainly wrong.\n• Blame for something that was not yours.\n\nTwo ways through:\n1. Show You Understand Their View — describe how it looked to them without agreeing. \"I can see it feels one-sided from where you're standing.\"\n2. Reflect Openly — then say plainly that you see it differently. \"That's not quite how I remember it.\"\n\nMindset: being understood is not urgent. It will still be available in thirty seconds, and it lands far better once they feel heard.",
       inputs: [
-        { q: "They say: \"You never help with any of this.\" You know you did last week.", a: "\"I can see it feels one-sided from where you're standing.\" (show you understand their view)", bundle: 'pro' },
-        { q: "You are blamed for a delay that was not yours.", a: "\"I understand why it looked like it came from my end.\" (show you understand their view)", bundle: 'pro' },
-        { q: "They say: \"You didn't tell anyone.\" You told them on Thursday.", a: "\"I did send it, but clearly it didn't reach you — that's the same problem.\" (reflect openly)", bundle: 'pro' },
-        { q: "A criticism includes a detail that is simply wrong.", a: "\"That's not quite how I remember it, but I want to hear the rest.\" (reflect openly)", bundle: 'pro' },
-        { q: "You are told you were dismissive when you thought you were being efficient.", a: "\"I see it differently, but I'd rather understand than argue about it.\" (reflect openly)", bundle: 'pro' },
+        { q: "They say: \"You never help with any of this.\" You know you did last week.", a: "\"I can see it feels one-sided from where you're standing.\" [Show You Understand Their View]", bundle: 'pro' },
+        { q: "You are blamed for a delay that was not yours.", a: "\"I understand why it looked like it came from my end.\" [Show You Understand Their View]", bundle: 'pro' },
+        { q: "They say: \"You didn't tell anyone.\" You told them on Thursday.", a: "\"I did send it, but clearly it didn't reach you — that's the same problem.\" [Reflect Openly]", bundle: 'pro' },
+        { q: "A criticism includes a detail that is simply wrong.", a: "\"That's not quite how I remember it, but I want to hear the rest.\" [Reflect Openly]", bundle: 'pro' },
+        { q: "You are told you were dismissive when you thought you were being efficient.", a: "\"I see it differently, but I'd rather understand than argue about it.\" [Reflect Openly]", bundle: 'pro' },
       ]
     },
     {
@@ -1571,11 +1631,11 @@ const challengesCollections = {
       guideBack: "A possible response, with the step in brackets.",
       description: "The feedback arrives with an audience — a meeting, a group chat, the dinner table — so you are managing the criticism and your face at the same time.\n\nThe training is to keep it short in public and move the real conversation somewhere private. Composure in the room is worth more than winning the point.\n\nWhat makes it hard:\n\n• Everyone is watching how you take it, not just what you say.\n• Defending yourself looks worse in public than in private.\n• Silence gets read as guilt.\n\nTwo ways through:\n1. The Short Response — take it calmly and briefly, in front of everyone. \"Fair — noted.\"\n2. Look Ahead — offer to pick it up properly afterwards. \"Let's go through it after this.\"\n\nMindset: the room is judging your composure, not the criticism. Taking it well in public is the whole win.",
       inputs: [
-        { q: "Your manager criticises your work in front of the whole team.", a: "\"Fair — let me come back to you on that.\" (the short response)", bundle: 'pro' },
-        { q: "A relative brings up your mistake at the dinner table.", a: "\"You're right, I did. Anyway, how was your week?\" (the short response)", bundle: 'pro' },
-        { q: "Someone criticises your idea in a group chat everyone reads.", a: "\"Good points. I'll work through them and come back.\" (look ahead)", bundle: 'pro' },
-        { q: "A colleague corrects you publicly in a meeting.", a: "\"Thanks — noted.\" (the short response)", bundle: 'pro' },
-        { q: "You are told off in front of people and want to explain yourself.", a: "\"Let's go through it properly after this.\" (look ahead)", bundle: 'pro' },
+        { q: "Your manager criticises your work in front of the whole team.", a: "\"Fair — let me come back to you on that.\" [The Short Response]", bundle: 'pro' },
+        { q: "A relative brings up your mistake at the dinner table.", a: "\"You're right, I did. Anyway, how was your week?\" [The Short Response]", bundle: 'pro' },
+        { q: "Someone criticises your idea in a group chat everyone reads.", a: "\"Good points. I'll work through them and come back.\" [Look Ahead]", bundle: 'pro' },
+        { q: "A colleague corrects you publicly in a meeting.", a: "\"Thanks — noted.\" [The Short Response]", bundle: 'pro' },
+        { q: "You are told off in front of people and want to explain yourself.", a: "\"Let's go through it properly after this.\" [Look Ahead]", bundle: 'pro' },
       ]
     },
     {
@@ -1584,11 +1644,11 @@ const challengesCollections = {
       guideBack: "A possible response, with the step in brackets.",
       description: "You are told something is wrong but not what — \"you're just not really engaged\", \"the tone was off\". There is nothing concrete to acknowledge or act on.\n\nThe training is to resist filling the gap yourself. Guessing what they mean usually means agreeing to something they never actually said.\n\nWhat it usually sounds like:\n\n• \"Your attitude has been a bit off lately.\"\n• \"That wasn't really up to standard.\"\n• \"People have been saying things.\"\n\nTwo ways through:\n1. Reflect Openly — say honestly that you cannot use it yet. \"I want to take that seriously, but I'm not sure what you're seeing.\"\n2. Look Ahead — ask them into the fix so the next version is specific. \"Give me one example and I'll know what to change.\"\n\nMindset: asking what they mean is not a challenge. You cannot act on feedback you cannot picture.",
       inputs: [
-        { q: "They say: \"Your attitude has been a bit off lately.\"", a: "\"I want to take that seriously, but I'm not sure what you're seeing.\" (reflect openly)", bundle: 'pro' },
-        { q: "Your work is called \"not quite up to standard\" with no detail.", a: "\"I'd like to fix it — which part missed?\" (look ahead)", bundle: 'pro' },
-        { q: "They say: \"People have been saying things.\"", a: "\"That's hard to do anything with as it stands.\" (reflect openly)", bundle: 'pro' },
-        { q: "A colleague says your tone was wrong but will not say where.", a: "\"Next time it happens, will you flag the actual line?\" (look ahead)", bundle: 'pro' },
-        { q: "You get a general complaint with no example attached.", a: "\"Give me one example and I'll know what to change.\" (look ahead)", bundle: 'pro' },
+        { q: "They say: \"Your attitude has been a bit off lately.\"", a: "\"I want to take that seriously, but I'm not sure what you're seeing.\" [Reflect Openly]", bundle: 'pro' },
+        { q: "Your work is called \"not quite up to standard\" with no detail.", a: "\"I'd like to fix it — which part missed?\" [Look Ahead]", bundle: 'pro' },
+        { q: "They say: \"People have been saying things.\"", a: "\"That's hard to do anything with as it stands.\" [Reflect Openly]", bundle: 'pro' },
+        { q: "A colleague says your tone was wrong but will not say where.", a: "\"Next time it happens, will you flag the actual line?\" [Look Ahead]", bundle: 'pro' },
+        { q: "You get a general complaint with no example attached.", a: "\"Give me one example and I'll know what to change.\" [Look Ahead]", bundle: 'pro' },
       ]
     },
     {
@@ -1597,11 +1657,11 @@ const challengesCollections = {
       guideBack: "A possible response, with the step in brackets.",
       description: "It is true, you already knew it, and hearing it out loud stings. This is the category where people either go cold or over-apologise.\n\nThe training is to stay in the conversation without collapsing into it. You are allowed to be affected and still be composed.\n\nWhat it usually sounds like:\n\n• The thing you have already been told by someone else.\n• The thing you already dislike about yourself.\n• Something said kindly that still lands hard.\n\nTwo ways through:\n1. Acknowledge the Feedback — one honest line, without the pile-on. \"Yeah. That one's not new to me.\"\n2. Reflect Openly — say it landed, and take the time you need. \"That landed. I need a minute with it.\"\n\nMindset: being affected is not losing. Over-apologising makes the other person manage your feelings instead of their own point.",
       inputs: [
-        { q: "They name the exact thing you already dislike about yourself.", a: "\"Yeah. That one's not new to me.\" (acknowledge the feedback)", bundle: 'pro' },
-        { q: "A friend says something true and kind and it still stings.", a: "\"That landed. I need a minute with it.\" (reflect openly)", bundle: 'pro' },
-        { q: "You feel yourself starting to over-apologise.", a: "\"Thank you for saying it. I'll think about it properly.\" (acknowledge the feedback)", bundle: 'pro' },
-        { q: "The criticism is something a previous manager said too.", a: "\"It's the second time I've heard that, which tells me something.\" (reflect openly)", bundle: 'pro' },
-        { q: "You want to go cold and end the conversation.", a: "\"I'm taking it in, I'm just quiet. Give me a second.\" (reflect openly)", bundle: 'pro' },
+        { q: "They name the exact thing you already dislike about yourself.", a: "\"Yeah. That one's not new to me.\" [Acknowledge the Feedback]", bundle: 'pro' },
+        { q: "A friend says something true and kind and it still stings.", a: "\"That landed. I need a minute with it.\" [Reflect Openly]", bundle: 'pro' },
+        { q: "You feel yourself starting to over-apologise.", a: "\"Thank you for saying it. I'll think about it properly.\" [Acknowledge the Feedback]", bundle: 'pro' },
+        { q: "The criticism is something a previous manager said too.", a: "\"It's the second time I've heard that, which tells me something.\" [Reflect Openly]", bundle: 'pro' },
+        { q: "You want to go cold and end the conversation.", a: "\"I'm taking it in, I'm just quiet. Give me a second.\" [Reflect Openly]", bundle: 'pro' },
       ]
     },
     {
@@ -1610,11 +1670,11 @@ const challengesCollections = {
       guideBack: "A possible response, with the step in brackets.",
       description: "You have had this feedback before, you said you would change it, and here it is again. Now there are two problems: the behaviour and the broken promise.\n\nThe training is to skip the parts that will sound hollow the second time. Another warm acknowledgement without a change will make it worse.\n\nWhat makes it different:\n\n• Your last promise is now evidence against you.\n• They are checking whether you take it seriously at all.\n• A repeated apology reads as a stalling tactic.\n\nTwo ways through:\n1. Reflect Openly — name the pattern out loud yourself, before they do. \"It's a pattern, not a one-off.\"\n2. Look Ahead — make the new promise smaller and more specific than the last one. \"I'll put it in the calendar rather than rely on remembering.\"\n\nMindset: naming your own repeat is what restores your credibility. Pretending it is the first time is what destroys it.",
       inputs: [
-        { q: "They say: \"We talked about this last month.\"", a: "\"You did, and it happened again. That's on me.\" (reflect openly)", bundle: 'pro' },
-        { q: "You promised to change this and have not.", a: "\"I said I'd fix it and I didn't. Let me make it smaller this time.\" (look ahead)", bundle: 'pro' },
-        { q: "The same lateness comes up for the third time.", a: "\"It's a pattern, not a one-off. I can hear that.\" (reflect openly)", bundle: 'pro' },
-        { q: "They sound tired of having to raise it.", a: "\"I'll put it in the calendar rather than rely on remembering.\" (look ahead)", bundle: 'pro' },
-        { q: "You want to explain why this time was different.", a: "\"There's a reason, but it's the third reason, so it doesn't count for much.\" (reflect openly)", bundle: 'pro' },
+        { q: "They say: \"We talked about this last month.\"", a: "\"You did, and it happened again. That's on me.\" [Reflect Openly]", bundle: 'pro' },
+        { q: "You promised to change this and have not.", a: "\"I said I'd fix it and I didn't. Let me make it smaller this time.\" [Look Ahead]", bundle: 'pro' },
+        { q: "The same lateness comes up for the third time.", a: "\"It's a pattern, not a one-off. I can hear that.\" [Reflect Openly]", bundle: 'pro' },
+        { q: "They sound tired of having to raise it.", a: "\"I'll put it in the calendar rather than rely on remembering.\" [Look Ahead]", bundle: 'pro' },
+        { q: "You want to explain why this time was different.", a: "\"There's a reason, but it's the third reason, so it doesn't count for much.\" [Reflect Openly]", bundle: 'pro' },
       ]
     },
   ],
@@ -1692,11 +1752,11 @@ const challengesCollections = {
       guideBack: "One way it could sound",
       description: "You genuinely share the opinion, but your head is empty — no story, no clever reason, nothing.\n\nThe training is to notice that this is the most common agreeing problem, and that it has a standard fix: a reason is always available even when a story is not. You do not need material, you need one clause.\n\nWhat it usually feels like:\n\n• \"Yeah, totally\" and then a blank.\n• Wanting to agree but not trusting it is enough.\n• Waiting for something good enough to say, and losing the moment.\n\nTwo ways through:\n1. Give an Explanation — say why it makes sense, in one clause. \"Agreed, it just makes everything calmer.\"\n2. Signal the Agreement — if even that will not come, at least land the signal warmly. \"Couldn't agree more.\"\n\nMindset: a warm signal plus one short reason is a complete contribution. Nobody is grading the reason.",
       inputs: [
-        { q: "You agree with an opinion but have no experience of it at all.", a: "\"Agreed — it just makes everything calmer, doesn't it?\" (give an explanation)", bundle: 'pro' },
-        { q: "You say \"yeah, totally\" and then go blank.", a: "\"Especially when you're tired — that's when it really shows.\" (give an explanation)", bundle: 'pro' },
-        { q: "You are waiting for something impressive to say.", a: "\"Couldn't agree more, honestly.\" (signal the agreement)", bundle: 'pro' },
-        { q: "Someone shares an opinion about a hobby you have never tried.", a: "\"That makes sense to me. You'd get a proper break from everything else.\" (give an explanation)", bundle: 'pro' },
-        { q: "The opinion is one you hold but have never thought about.", a: "\"Same here. I've never questioned it, which probably says something.\" (signal the agreement)", bundle: 'pro' },
+        { q: "You agree with an opinion but have no experience of it at all.", a: "\"Agreed — it just makes everything calmer, doesn't it?\" [Give an Explanation]", bundle: 'pro' },
+        { q: "You say \"yeah, totally\" and then go blank.", a: "\"Especially when you're tired — that's when it really shows.\" [Give an Explanation]", bundle: 'pro' },
+        { q: "You are waiting for something impressive to say.", a: "\"Couldn't agree more, honestly.\" [Signal the Agreement]", bundle: 'pro' },
+        { q: "Someone shares an opinion about a hobby you have never tried.", a: "\"That makes sense to me. You'd get a proper break from everything else.\" [Give an Explanation]", bundle: 'pro' },
+        { q: "The opinion is one you hold but have never thought about.", a: "\"Same here. I've never questioned it, which probably says something.\" [Signal the Agreement]", bundle: 'pro' },
       ]
     },
     {
@@ -1705,11 +1765,11 @@ const challengesCollections = {
       guideBack: "One way it could sound",
       description: "You agree with part of it and not the rest, and a full-throated \"totally!\" would be a small lie.\n\nThe training is to find the part you actually mean and agree with that honestly, instead of either faking it or swinging into disagreement. Narrowing is a real agreeing move, not a dodge.\n\nWhat it usually sounds like:\n\n• An opinion stated more strongly than you would put it.\n• A rule that holds in some situations and not others.\n• Something true of them but not of everyone.\n\nTwo ways through:\n1. Give an Explanation, narrowed — \"I agree, especially when...\" names exactly where you are with them.\n2. Add a Personal Experience — tell the part of it you have actually lived, which is honest by definition.\n\nNote: if you do not agree at all, this is the wrong pack — that is a different skill.\n\nMindset: partial agreement said honestly is worth more than full agreement said vaguely. \"Especially when\" is a whole sentence of honesty.",
       inputs: [
-        { q: "Someone says: \"You should always listen to your teacher.\" You'd say usually, not always.", a: "\"I agree, especially when it's something they've actually done themselves.\" (give an explanation)", bundle: 'pro' },
-        { q: "The opinion is stated more strongly than you would put it.", a: "\"I'm with you on most of that — definitely on the mornings part.\" (give an explanation)", bundle: 'pro' },
-        { q: "Someone says: \"You only need six hours of sleep.\" It works for them, not you.", a: "\"It clearly works for you. I've found it depends on how regular they are.\" (add a personal experience)", bundle: 'pro' },
-        { q: "You agree with the feeling but not the rule.", a: "\"The feeling, absolutely. I've had exactly that on a Sunday afternoon.\" (add a personal experience)", bundle: 'pro' },
-        { q: "A claim is true in some situations but not all.", a: "\"Agreed, especially at home. Work's a bit different.\" (give an explanation)", bundle: 'pro' },
+        { q: "Someone says: \"You should always listen to your teacher.\" You'd say usually, not always.", a: "\"I agree, especially when it's something they've actually done themselves.\" [Give an Explanation]", bundle: 'pro' },
+        { q: "The opinion is stated more strongly than you would put it.", a: "\"I'm with you on most of that — definitely on the mornings part.\" [Give an Explanation]", bundle: 'pro' },
+        { q: "Someone says: \"You only need six hours of sleep.\" It works for them, not you.", a: "\"It clearly works for you. I've found it depends on how regular they are.\" [Add a Personal Experience]", bundle: 'pro' },
+        { q: "You agree with the feeling but not the rule.", a: "\"The feeling, absolutely. I've had exactly that on a Sunday afternoon.\" [Add a Personal Experience]", bundle: 'pro' },
+        { q: "A claim is true in some situations but not all.", a: "\"Agreed, especially at home. Work's a bit different.\" [Give an Explanation]", bundle: 'pro' },
       ]
     },
     {
@@ -1718,11 +1778,11 @@ const challengesCollections = {
       guideBack: "One way it could sound",
       description: "You have said \"yeah\", \"exactly\" and \"so true\" three times in a row, and it has started to sound like you are not listening.\n\nThe training is to notice the pattern in yourself. Pure signalling is warm the first time and empty by the third — every agreement needs something of yours attached.\n\nWhat it usually sounds like:\n\n• Three signals in a row with nothing between them.\n• Agreeing so fast it reads as automatic.\n• The other person carrying the whole conversation.\n\nTwo ways through:\n1. Add a Personal Experience — the fastest way to prove you are actually in it.\n2. Expand the Idea — a new angle can only come from someone who was listening.\n\nMindset: the signal is the doorway, not the room. If you only ever signal, you are being agreeable rather than agreeing.",
       inputs: [
-        { q: "You have said \"exactly\" three times in a row.", a: "\"Same, actually — I did that for years and it stuck.\" (add a personal experience)", bundle: 'pro' },
-        { q: "Your agreement is starting to sound automatic.", a: "\"And it's probably why nobody sleeps properly in summer.\" (expand the idea)", bundle: 'pro' },
-        { q: "The other person is carrying the whole conversation.", a: "\"That's happened to me too. Last winter, exactly the same thing.\" (add a personal experience)", bundle: 'pro' },
-        { q: "You agree so quickly it reads as not listening.", a: "\"Yes — and the same goes for weekends, not just weekdays.\" (expand the idea)", bundle: 'pro' },
-        { q: "You realise you have added nothing for several minutes.", a: "\"I've done that for about ten years now and never questioned it.\" (add a personal experience)", bundle: 'pro' },
+        { q: "You have said \"exactly\" three times in a row.", a: "\"Same, actually — I did that for years and it stuck.\" [Add a Personal Experience]", bundle: 'pro' },
+        { q: "Your agreement is starting to sound automatic.", a: "\"And it's probably why nobody sleeps properly in summer.\" [Expand the Idea]", bundle: 'pro' },
+        { q: "The other person is carrying the whole conversation.", a: "\"That's happened to me too. Last winter, exactly the same thing.\" [Add a Personal Experience]", bundle: 'pro' },
+        { q: "You agree so quickly it reads as not listening.", a: "\"Yes — and the same goes for weekends, not just weekdays.\" [Expand the Idea]", bundle: 'pro' },
+        { q: "You realise you have added nothing for several minutes.", a: "\"I've done that for about ten years now and never questioned it.\" [Add a Personal Experience]", bundle: 'pro' },
       ]
     },
     {
@@ -1731,11 +1791,11 @@ const challengesCollections = {
       guideBack: "One way it could sound",
       description: "You agree in spirit — they sound right and you have no reason to doubt them — but the subject is completely outside your experience.\n\nThe training is to agree without pretending to knowledge you do not have. Faking familiarity is the one thing that will get caught.\n\nWhat it usually sounds like:\n\n• A hobby, a job or a place you have no contact with.\n• A claim you cannot evaluate but instinctively believe.\n• Something everyone else in the room clearly knows about.\n\nTwo ways through:\n1. Signal the Agreement — honest warmth needs no expertise. \"That sounds exactly right.\"\n2. Expand the Idea — agree with the shape of it and apply it to something you DO know.\n\nMindset: you can agree with a principle without knowing the field. Just do not dress it up as experience.",
       inputs: [
-        { q: "The opinion is about a hobby you have never tried.", a: "\"That sounds exactly right, from everything I've heard.\" (signal the agreement)", bundle: 'pro' },
-        { q: "Everyone else in the room clearly knows the subject and you don't.", a: "\"I'll take your word for it — and it's the same in my line of work.\" (expand the idea)", bundle: 'pro' },
-        { q: "You believe them but cannot judge the claim.", a: "\"I'd guess you're right. It matches how most things work.\" (signal the agreement)", bundle: 'pro' },
-        { q: "You are tempted to pretend you know the field.", a: "\"I don't know it well, but that principle holds everywhere I've seen it.\" (expand the idea)", bundle: 'pro' },
-        { q: "The opinion is about a job you have no contact with.", a: "\"Makes complete sense. I imagine it's like that anywhere with deadlines.\" (expand the idea)", bundle: 'pro' },
+        { q: "The opinion is about a hobby you have never tried.", a: "\"That sounds exactly right, from everything I've heard.\" [Signal the Agreement]", bundle: 'pro' },
+        { q: "Everyone else in the room clearly knows the subject and you don't.", a: "\"I'll take your word for it — and it's the same in my line of work.\" [Expand the Idea]", bundle: 'pro' },
+        { q: "You believe them but cannot judge the claim.", a: "\"I'd guess you're right. It matches how most things work.\" [Signal the Agreement]", bundle: 'pro' },
+        { q: "You are tempted to pretend you know the field.", a: "\"I don't know it well, but that principle holds everywhere I've seen it.\" [Expand the Idea]", bundle: 'pro' },
+        { q: "The opinion is about a job you have no contact with.", a: "\"Makes complete sense. I imagine it's like that anywhere with deadlines.\" [Expand the Idea]", bundle: 'pro' },
       ]
     },
     {
@@ -1744,11 +1804,11 @@ const challengesCollections = {
       guideBack: "One way it could sound",
       description: "Three people have already agreed, and yours would be the fourth \"yes\" in a row — which adds nothing and slightly flattens the conversation.\n\nThe training is to skip the signal that has already been said three times and go straight to a contribution nobody else has made.\n\nWhat makes it different:\n\n• The signal has been used up by the people before you.\n• Repeating the same reason makes the whole group sound like one person.\n• Silence, on the other hand, reads as disagreement.\n\nTwo ways through:\n1. Expand the Idea — the only move that is guaranteed not to repeat anyone.\n2. Add a Personal Experience — yours is yours, so it cannot have been said already.\n\nMindset: in a group, the value of agreeing is in what you add, not in the agreeing itself.",
       inputs: [
-        { q: "Three people have already said they agree.", a: "\"And the same goes for weekends, which nobody's mentioned.\" (expand the idea)", bundle: 'pro' },
-        { q: "The reason you were going to give has just been given.", a: "\"That happened to me last month, almost exactly.\" (add a personal experience)", bundle: 'pro' },
-        { q: "You would be the fourth person to say \"so true\".", a: "\"It's the only exercise you can do while thinking about something else.\" (expand the idea)", bundle: 'pro' },
-        { q: "Staying quiet would look like you disagree.", a: "\"Same here — I've done it for years without thinking about it.\" (add a personal experience)", bundle: 'pro' },
-        { q: "The whole table agrees and the topic is going quiet.", a: "\"Which is probably why nobody sleeps properly in summer.\" (expand the idea)", bundle: 'pro' },
+        { q: "Three people have already said they agree.", a: "\"And the same goes for weekends, which nobody's mentioned.\" [Expand the Idea]", bundle: 'pro' },
+        { q: "The reason you were going to give has just been given.", a: "\"That happened to me last month, almost exactly.\" [Add a Personal Experience]", bundle: 'pro' },
+        { q: "You would be the fourth person to say \"so true\".", a: "\"It's the only exercise you can do while thinking about something else.\" [Expand the Idea]", bundle: 'pro' },
+        { q: "Staying quiet would look like you disagree.", a: "\"Same here — I've done it for years without thinking about it.\" [Add a Personal Experience]", bundle: 'pro' },
+        { q: "The whole table agrees and the topic is going quiet.", a: "\"Which is probably why nobody sleeps properly in summer.\" [Expand the Idea]", bundle: 'pro' },
       ]
     },
   ],
@@ -2295,11 +2355,11 @@ const challengesCollections = {
       guideBack: "A possible response, with the move in brackets.",
       description: "Something is clearly going on, and every word you try on is slightly wrong — so you say nothing and it stays stuck.\n\nThe training is to stop hunting for the perfect label. Describing what actually happened to you is a complete thing to say, and the word almost always turns up once the body has been described.\n\nWhat it usually feels like:\n\n• \"I don't know, I'm just… off.\"\n• Every word you try sounds either too big or too small.\n• You end up saying \"fine\" because it is the only word that fits nothing.\n\nTwo ways through:\n1. Describe the Signals — start from the body. \"I've been replaying it all afternoon, which usually means something.\"\n2. Label the Emotion, roughly — an approximate word beats none. \"Something in the region of let down.\"\n\nMindset: precision comes second. An honest approximation gets the conversation started, and you can correct it three sentences later.",
       inputs: [
-        { q: "Something is clearly bothering you but no word fits.", a: "\"I've been replaying it all afternoon, which usually means something.\" (describe the signals)", bundle: 'pro' },
-        { q: "Every word you try on sounds too dramatic.", a: "\"Not upset exactly. Something in the region of let down.\" (label the emotion)", bundle: 'pro' },
-        { q: "You are about to say \"I'm fine\" for the third time.", a: "\"I'm not fine, I just haven't got the word yet. Give me a minute.\" (regulate out loud)", bundle: 'pro' },
-        { q: "You feel awful and cannot explain why.", a: "\"My chest is tight and I can't settle to anything. That's all I've got.\" (describe the signals)", bundle: 'pro' },
-        { q: "Someone asks what is wrong and you go blank.", a: "\"Something about this morning is still sitting with me.\" (name the situation)", bundle: 'pro' },
+        { q: "Something is clearly bothering you but no word fits.", a: "\"I've been replaying it all afternoon, which usually means something.\" [Describe the Signals]", bundle: 'pro' },
+        { q: "Every word you try on sounds too dramatic.", a: "\"Not upset exactly. Something in the region of let down.\" [Label the Emotion]", bundle: 'pro' },
+        { q: "You are about to say \"I'm fine\" for the third time.", a: "\"I'm not fine, I just haven't got the word yet. Give me a minute.\" [Regulate Out Loud]", bundle: 'pro' },
+        { q: "You feel awful and cannot explain why.", a: "\"My chest is tight and I can't settle to anything. That's all I've got.\" [Describe the Signals]", bundle: 'pro' },
+        { q: "Someone asks what is wrong and you go blank.", a: "\"Something about this morning is still sitting with me.\" [Name the Situation]", bundle: 'pro' },
       ]
     },
     {
@@ -2308,11 +2368,11 @@ const challengesCollections = {
       guideBack: "A possible response, with the move in brackets.",
       description: "It is peaking, and anything you say in the next minute will come out sharper or shakier than you mean it to.\n\nThe training is to recognise the peak as a real thing rather than a failure of willpower, and to buy time out loud instead of pushing through and regretting it.\n\nWhat it usually looks like:\n\n• A reply forming that you can already tell is too sharp.\n• Your voice about to go, mid-sentence.\n• The conversation moving faster than you can think.\n\nTwo ways through:\n1. Regulate Out Loud — ask for the pause, and say why. \"Can we come back to this after lunch?\"\n2. Describe the Signals — if you can manage one sentence, make it this one. \"I'm shaking a bit, so give me a second.\"\n\nMindset: a pause you name is not a walk-out. Saying \"I need ten minutes\" keeps the conversation alive; leaving without a word ends it.",
       inputs: [
-        { q: "You can feel a sharp reply forming.", a: "\"Let me take a breath — I don't want to say this badly.\" (regulate out loud)", bundle: 'pro' },
-        { q: "Your voice is about to go and you would rather it did not.", a: "\"Give me a second. I'm more worked up about this than I expected.\" (describe the signals)", bundle: 'pro' },
-        { q: "The argument is moving faster than you can think.", a: "\"Can we pause? I want to answer properly rather than quickly.\" (regulate out loud)", bundle: 'pro' },
-        { q: "You are about to send a message you might regret.", a: "\"I'm going to leave this until the morning before I reply.\" (regulate out loud)", bundle: 'pro' },
-        { q: "You need to step away but do not want it read as storming off.", a: "\"I'm not walking out — I just need ten minutes and I'll come back.\" (regulate out loud)", bundle: 'pro' },
+        { q: "You can feel a sharp reply forming.", a: "\"Let me take a breath — I don't want to say this badly.\" [Regulate Out Loud]", bundle: 'pro' },
+        { q: "Your voice is about to go and you would rather it did not.", a: "\"Give me a second. I'm more worked up about this than I expected.\" [Describe the Signals]", bundle: 'pro' },
+        { q: "The argument is moving faster than you can think.", a: "\"Can we pause? I want to answer properly rather than quickly.\" [Regulate Out Loud]", bundle: 'pro' },
+        { q: "You are about to send a message you might regret.", a: "\"I'm going to leave this until the morning before I reply.\" [Regulate Out Loud]", bundle: 'pro' },
+        { q: "You need to step away but do not want it read as storming off.", a: "\"I'm not walking out — I just need ten minutes and I'll come back.\" [Regulate Out Loud]", bundle: 'pro' },
       ]
     },
     {
@@ -2321,11 +2381,11 @@ const challengesCollections = {
       guideBack: "A possible response, with the move in brackets.",
       description: "You could say \"I'm nervous about this\", and something in you is certain that saying it will cost you standing in the room.\n\nThe training is to notice that the opposite is usually true. Naming a feeling calmly reads as self-possession; the version everyone can see but nobody has mentioned is what actually looks shaky.\n\nWhat it usually sounds like from the inside:\n\n• \"If I say I'm nervous they'll think I can't handle it.\"\n• \"This is unprofessional.\"\n• \"Nobody else seems to need to say this.\"\n\nTwo ways through:\n1. Label the Emotion, plainly — no apology attached. \"I'm a bit nervous about this one.\"\n2. Regulate Out Loud — pair the feeling with what you are doing about it. \"I'm nervous, so I'm going to take it slowly.\"\n\nMindset: the feeling is already in the room, in your voice and your hands. Naming it puts you in charge of the story about it.",
       inputs: [
-        { q: "You want to say you are nervous but it feels unprofessional.", a: "\"I'm a bit nervous about this one, so bear with me.\" (label the emotion)", bundle: 'pro' },
-        { q: "You think admitting the feeling will cost you standing.", a: "\"I'm nervous, which is why I'm going to take it slowly.\" (regulate out loud)", bundle: 'pro' },
-        { q: "Everyone else seems calm and you do not want to be the one who says it.", a: "\"Is it just me finding this one nerve-wracking?\" (label the emotion)", bundle: 'pro' },
-        { q: "Your hands are visibly shaking and you are pretending they are not.", a: "\"My hands are going — ignore them, I'm fine to carry on.\" (describe the signals)", bundle: 'pro' },
-        { q: "You feel you should push through without mentioning it.", a: "\"Quick pause and some water, then I'll be much better.\" (regulate out loud)", bundle: 'pro' },
+        { q: "You want to say you are nervous but it feels unprofessional.", a: "\"I'm a bit nervous about this one, so bear with me.\" [Label the Emotion]", bundle: 'pro' },
+        { q: "You think admitting the feeling will cost you standing.", a: "\"I'm nervous, which is why I'm going to take it slowly.\" [Regulate Out Loud]", bundle: 'pro' },
+        { q: "Everyone else seems calm and you do not want to be the one who says it.", a: "\"Is it just me finding this one nerve-wracking?\" [Label the Emotion]", bundle: 'pro' },
+        { q: "Your hands are visibly shaking and you are pretending they are not.", a: "\"My hands are going — ignore them, I'm fine to carry on.\" [Describe the Signals]", bundle: 'pro' },
+        { q: "You feel you should push through without mentioning it.", a: "\"Quick pause and some water, then I'll be much better.\" [Regulate Out Loud]", bundle: 'pro' },
       ]
     },
     {
@@ -2334,11 +2394,11 @@ const challengesCollections = {
       guideBack: "A possible response, with the move in brackets.",
       description: "You said how you felt and got \"you're overreacting\" or \"that's not what happened\" back.\n\nThe training is to hold the label without escalating into proving it. Your feeling is not a claim about the world that needs evidence — it is a report on you, and it stays true whether or not they accept it.\n\nWhat it usually sounds like:\n\n• \"You're being oversensitive.\"\n• \"That's not what I meant, so you shouldn't feel that.\"\n• \"It wasn't a big deal.\"\n\nTwo ways through:\n1. Label the Emotion again, unchanged — no louder, no softer. \"It might not have been a big deal. I still felt embarrassed.\"\n2. Describe the Signals — give them the evidence rather than the argument. \"I know how it looked. I was awake at three thinking about it.\"\n\nMindset: you are not asking permission to feel it. Repeating it calmly once is enough — a second round of proving turns a description into a case.",
       inputs: [
-        { q: "They say: \"You're overreacting.\"", a: "\"Maybe. I still felt embarrassed, and that's what I wanted to say.\" (label the emotion)", bundle: 'pro' },
-        { q: "They say: \"That's not what I meant.\"", a: "\"I believe you. It still landed the way it landed.\" (label the emotion)", bundle: 'pro' },
-        { q: "They say: \"It wasn't a big deal.\"", a: "\"It might not have been. I was still awake at three thinking about it.\" (describe the signals)", bundle: 'pro' },
-        { q: "You feel yourself about to argue the facts to justify the feeling.", a: "\"I don't want to argue the details. I just wanted you to know how it felt.\" (name the situation)", bundle: 'pro' },
-        { q: "They dismiss it and you can feel yourself getting heated.", a: "\"Let's leave it there for now — I'd rather not push it into a row.\" (regulate out loud)", bundle: 'pro' },
+        { q: "They say: \"You're overreacting.\"", a: "\"Maybe. I still felt embarrassed, and that's what I wanted to say.\" [Label the Emotion]", bundle: 'pro' },
+        { q: "They say: \"That's not what I meant.\"", a: "\"I believe you. It still landed the way it landed.\" [Label the Emotion]", bundle: 'pro' },
+        { q: "They say: \"It wasn't a big deal.\"", a: "\"It might not have been. I was still awake at three thinking about it.\" [Describe the Signals]", bundle: 'pro' },
+        { q: "You feel yourself about to argue the facts to justify the feeling.", a: "\"I don't want to argue the details. I just wanted you to know how it felt.\" [Name the Situation]", bundle: 'pro' },
+        { q: "They dismiss it and you can feel yourself getting heated.", a: "\"Let's leave it there for now — I'd rather not push it into a row.\" [Regulate Out Loud]", bundle: 'pro' },
       ]
     },
     {
@@ -2347,11 +2407,11 @@ const challengesCollections = {
       guideBack: "A possible response, with the move in brackets.",
       description: "You offered someone a word and it missed — they were not angry, or not hurt, or not whatever you said.\n\nThe training is to treat the miss as progress rather than an embarrassment. A wrong label is often the thing that makes someone find the right one, and how you take the correction decides whether they keep going.\n\nWhat it usually sounds like:\n\n• \"No, not angry.\"\n• \"That's not it at all.\"\n• A pause, and then them changing the subject.\n\nTwo ways through:\n1. Label Their Emotion again, more openly — hand the word back to them. \"Fair enough. What would you call it?\"\n2. Describe the Signals you noticed — say what you were reading, not what you concluded. \"You went quiet, that's all I was going on.\"\n\nMindset: you were guessing, and they know that. Taking the correction easily is what keeps the door open; defending your guess is what closes it.",
       inputs: [
-        { q: "They say: \"No, not angry.\"", a: "\"Fair enough. What would you call it?\" (label their emotion)", bundle: 'pro' },
-        { q: "Your label lands badly and they go quiet.", a: "\"Sorry — I was going on the fact that you went quiet. I might have read it wrong.\" (describe the signals)", bundle: 'pro' },
-        { q: "You realise mid-sentence that you have misjudged it.", a: "\"Ignore me, I'm guessing. Tell me what it actually was.\" (label their emotion)", bundle: 'pro' },
-        { q: "They correct you and you feel the urge to defend the guess.", a: "\"You're right, that's a better word for it.\" (label their emotion)", bundle: 'pro' },
-        { q: "You have offered two words and neither fit.", a: "\"I'll stop guessing. What was the worst part of it?\" (label their emotion)", bundle: 'pro' },
+        { q: "They say: \"No, not angry.\"", a: "\"Fair enough. What would you call it?\" [Label Their Emotion]", bundle: 'pro' },
+        { q: "Your label lands badly and they go quiet.", a: "\"Sorry — I was going on the fact that you went quiet. I might have read it wrong.\" [Describe the Signals]", bundle: 'pro' },
+        { q: "You realise mid-sentence that you have misjudged it.", a: "\"Ignore me, I'm guessing. Tell me what it actually was.\" [Label Their Emotion]", bundle: 'pro' },
+        { q: "They correct you and you feel the urge to defend the guess.", a: "\"You're right, that's a better word for it.\" [Label Their Emotion]", bundle: 'pro' },
+        { q: "You have offered two words and neither fit.", a: "\"I'll stop guessing. What was the worst part of it?\" [Label Their Emotion]", bundle: 'pro' },
       ]
     },
   ],
@@ -3248,11 +3308,11 @@ const challengesCollections = {
       guideBack: "One way it could sound",
       description: "You have asked three questions in a row and given nothing back, and the other person has started giving shorter answers. The training is to notice the pattern early and answer your own question before you ask another one.\n\nWhat it usually looks like:\n\n• Their answers are getting shorter each time.\n• You have learned four things about them and they know nothing about you.\n• You are already thinking about the next question while they are still answering.\n\nTwo ways through:\n1. Answer the last one yourself — the direct repair. \"I should say mine — I came for the same reason.\"\n2. Name it lightly — costs nothing and usually gets a laugh. \"I'm interrogating you. Your turn to ask me something.\"\n\nMindset: the fix is not a better question. It is your own answer to the one you already asked.",
       inputs: [
-        { q: "You have asked three questions and answered none of them.", a: "\"I've been interrogating you. Mine's the same, for what it's worth — I signed up to get better at this.\" (purpose)", bundle: 'pro' },
-        { q: "Their answers are getting shorter with each question.", a: "\"I'll stop asking and give you something. I'm halfway through moving flat and it's chaos.\" (action)", bundle: 'pro' },
-        { q: "You realise they know nothing about you.", a: "\"You've had all the questions. I came straight from work and I'm still winding down.\" (background)", bundle: 'pro' },
-        { q: "You have asked a fourth question without giving anything back.", a: "\"Right — my turn to be useful. I've been here twice and I still don't know where the coffee is.\" (status)", bundle: 'pro' },
-        { q: "You catch yourself planning the next question mid-answer.", a: "\"Say that last bit again. I stopped listening and started planning, which is rude of me.\" (status)", bundle: 'pro' },
+        { q: "You have asked three questions and answered none of them.", a: "\"I've been interrogating you. Mine's the same, for what it's worth — I signed up to get better at this.\" [Purpose Question]", bundle: 'pro' },
+        { q: "Their answers are getting shorter with each question.", a: "\"I'll stop asking and give you something. I'm halfway through moving flat and it's chaos.\" [Action Question]", bundle: 'pro' },
+        { q: "You realise they know nothing about you.", a: "\"You've had all the questions. I came straight from work and I'm still winding down.\" [Background Question]", bundle: 'pro' },
+        { q: "You have asked a fourth question without giving anything back.", a: "\"Right — my turn to be useful. I've been here twice and I still don't know where the coffee is.\" [Status Question]", bundle: 'pro' },
+        { q: "You catch yourself planning the next question mid-answer.", a: "\"Say that last bit again. I stopped listening and started planning, which is rude of me.\" [Status Question]", bundle: 'pro' },
       ]
     },
     {
@@ -3261,11 +3321,11 @@ const challengesCollections = {
       guideBack: "One way it could sound",
       description: "You asked a real question and got the ritual answer — \"fine, thanks\" — and a closed door. The training is to notice they answered the greeting rather than the question, and to give your own honest answer as the way back in rather than asking again.\n\nWhat it usually looks like:\n\n• \"Fine, thanks\" delivered without a pause.\n• They answered the words rather than the question.\n• Asking again would be pushing, and you can feel it.\n\nTwo ways through:\n1. Answer it yourself honestly — turns a closed door into an open one. \"I'm shattered, since you didn't ask.\"\n2. Switch type — move from Status to something concrete. \"What are you working on at the moment?\"\n\nMindset: they may not have realised the question was real. Going first with your own answer is what tells them it was.",
       inputs: [
-        { q: "You asked how they were and got \"fine, thanks\" and a pause.", a: "\"I'll go first, then — I'm shattered and mildly grumpy. How's your week actually been?\" (status)", bundle: 'pro' },
-        { q: "The real question got the ritual answer.", a: "\"Fair enough. I'm running on four hours' sleep, which explains most things about me today.\" (status)", bundle: 'pro' },
-        { q: "They clearly want the light version.", a: "\"What are you working on at the moment? I'm deep in a spreadsheet I don't understand.\" (action)", bundle: 'pro' },
-        { q: "They gave the polite version and moved straight on.", a: "\"Mine's less polite — this week has been a mess. What's yours actually been like?\" (status)", bundle: 'pro' },
-        { q: "You want to reopen it without asking the same thing twice.", a: "\"I won't ask again. I'll just say I'm knackered and see whether that's contagious.\" (status)", bundle: 'pro' },
+        { q: "You asked how they were and got \"fine, thanks\" and a pause.", a: "\"I'll go first, then — I'm shattered and mildly grumpy. How's your week actually been?\" [Status Question]", bundle: 'pro' },
+        { q: "The real question got the ritual answer.", a: "\"Fair enough. I'm running on four hours' sleep, which explains most things about me today.\" [Status Question]", bundle: 'pro' },
+        { q: "They clearly want the light version.", a: "\"What are you working on at the moment? I'm deep in a spreadsheet I don't understand.\" [Action Question]", bundle: 'pro' },
+        { q: "They gave the polite version and moved straight on.", a: "\"Mine's less polite — this week has been a mess. What's yours actually been like?\" [Status Question]", bundle: 'pro' },
+        { q: "You want to reopen it without asking the same thing twice.", a: "\"I won't ask again. I'll just say I'm knackered and see whether that's contagious.\" [Status Question]", bundle: 'pro' },
       ]
     },
     {
@@ -3274,11 +3334,11 @@ const challengesCollections = {
       guideBack: "One way it could sound",
       description: "You asked what they have been up to and got \"not much\" — not from rudeness, but because the question was too wide to answer. The training is to narrow it rather than repeat it.\n\nWhat it usually looks like:\n\n• \"Not much, you?\" and nothing else.\n• A shrug and a real effort to think of something.\n• You have asked the widest possible version of the question.\n\nTwo ways through:\n1. Narrow it — \"are you reading anything?\" beats \"what's new?\" every time.\n2. Answer yours first, small — a concrete example shows the size of answer you meant.\n\nMindset: \"not much\" is almost never a refusal. It is a question that was too big to answer, and the fix is a smaller one.",
       inputs: [
-        { q: "You asked what is new and got \"not much\".", a: "\"Fair. Are you watching anything at the moment? I've started something terrible and I can't stop.\" (action)", bundle: 'pro' },
-        { q: "They cannot think of anything to say they have been doing.", a: "\"Mine's small too — I repainted a wardrobe badly. Have you got anything on the go?\" (action)", bundle: 'pro' },
-        { q: "The question was too wide and they went blank.", a: "\"Let me narrow that. Been anywhere at all this summer? I got as far as my mother's.\" (background)", bundle: 'pro' },
-        { q: "They said \"not much\" and looked slightly apologetic about it.", a: "\"Nobody has an answer to that one. Eaten anything good lately? I had a genuinely bad kebab.\" (action)", bundle: 'pro' },
-        { q: "You asked about the whole year and got nothing back.", a: "\"Too big a question. Last weekend — did you do anything at all? I moved a sofa.\" (action)", bundle: 'pro' },
+        { q: "You asked what is new and got \"not much\".", a: "\"Fair. Are you watching anything at the moment? I've started something terrible and I can't stop.\" [Action Question]", bundle: 'pro' },
+        { q: "They cannot think of anything to say they have been doing.", a: "\"Mine's small too — I repainted a wardrobe badly. Have you got anything on the go?\" [Action Question]", bundle: 'pro' },
+        { q: "The question was too wide and they went blank.", a: "\"Let me narrow that. Been anywhere at all this summer? I got as far as my mother's.\" [Background Question]", bundle: 'pro' },
+        { q: "They said \"not much\" and looked slightly apologetic about it.", a: "\"Nobody has an answer to that one. Eaten anything good lately? I had a genuinely bad kebab.\" [Action Question]", bundle: 'pro' },
+        { q: "You asked about the whole year and got nothing back.", a: "\"Too big a question. Last weekend — did you do anything at all? I moved a sofa.\" [Action Question]", bundle: 'pro' },
       ]
     },
     {
@@ -3287,11 +3347,11 @@ const challengesCollections = {
       guideBack: "One way it could sound",
       description: "You are with three or four people and a question aimed at nobody in particular lands on nobody. The training is to aim it at one person, or to answer it yourself first so the group has a shape to copy.\n\nWhat it usually looks like:\n\n• You ask the group and everybody waits for somebody else.\n• The question dies in the middle of the table.\n• One person answers out of politeness and it stops there.\n\nTwo ways through:\n1. Aim it — use a name or look at one person. \"How about you, Sara?\"\n2. Answer first, then hand it on — gives the table a model and a size. \"I'll start. Mine was...\"\n\nMindset: a question to everyone is a question to no one. Name someone, or go first yourself.",
       inputs: [
-        { q: "You asked the whole table and nobody answered.", a: "\"I'll start, then — I came because a friend dragged me. How about you two?\" (purpose)", bundle: 'pro' },
-        { q: "The question landed in the middle of a group and died.", a: "\"Let me aim that better. Sara, how do you know everyone here?\" (background)", bundle: 'pro' },
-        { q: "One person answered politely and it stopped.", a: "\"That's a good one. Mine's less impressive — I've been rewatching the same series for a month.\" (action)", bundle: 'pro' },
-        { q: "Two people started answering at once and both stopped.", a: "\"You go — and then I'll tell you why I'm actually here.\" (purpose)", bundle: 'pro' },
-        { q: "The quietest person at the table still has not spoken.", a: "\"I haven't heard from you yet. How did you end up at this one?\" (purpose)", bundle: 'pro' },
+        { q: "You asked the whole table and nobody answered.", a: "\"I'll start, then — I came because a friend dragged me. How about you two?\" [Purpose Question]", bundle: 'pro' },
+        { q: "The question landed in the middle of a group and died.", a: "\"Let me aim that better. Sara, how do you know everyone here?\" [Background Question]", bundle: 'pro' },
+        { q: "One person answered politely and it stopped.", a: "\"That's a good one. Mine's less impressive — I've been rewatching the same series for a month.\" [Action Question]", bundle: 'pro' },
+        { q: "Two people started answering at once and both stopped.", a: "\"You go — and then I'll tell you why I'm actually here.\" [Purpose Question]", bundle: 'pro' },
+        { q: "The quietest person at the table still has not spoken.", a: "\"I haven't heard from you yet. How did you end up at this one?\" [Purpose Question]", bundle: 'pro' },
       ]
     },
     {
@@ -3300,11 +3360,11 @@ const challengesCollections = {
       guideBack: "One way it could sound",
       description: "The question worked, they answered, you answered, and then the whole thing stopped. The training is to build the next question out of their answer rather than reaching down the list for a fresh type.\n\nWhat it usually looks like:\n\n• A good exchange, and then silence.\n• You are mentally scanning the five types for another one.\n• Neither of you has picked up anything the other said.\n\nTwo ways through:\n1. Use a word from their answer — the next question is already inside it.\n2. Change type on purpose — a Status answer opens straight onto an Action question.\n\nMindset: you do not need a new question. You need the one that was in their last answer.",
       inputs: [
-        { q: "You both answered and then it went quiet.", a: "\"You said you'd come straight from work — what is it you do?\" (action)", bundle: 'pro' },
-        { q: "You are scanning for a fresh question type.", a: "\"Go back a bit — you said you nearly didn't come. Why nearly?\" (purpose)", bundle: 'pro' },
-        { q: "The exchange worked and then stopped dead.", a: "\"You said Gothenburg. Is that where you're from, or just where you were?\" (background)", bundle: 'pro' },
-        { q: "A status answer has nowhere obvious to go.", a: "\"Busy with what, though? I like knowing what's keeping people up.\" (action)", bundle: 'pro' },
-        { q: "Neither of you picked anything up from the other.", a: "\"I'm going back one — the bit about the course. What made you pick that one?\" (purpose)", bundle: 'pro' },
+        { q: "You both answered and then it went quiet.", a: "\"You said you'd come straight from work — what is it you do?\" [Action Question]", bundle: 'pro' },
+        { q: "You are scanning for a fresh question type.", a: "\"Go back a bit — you said you nearly didn't come. Why nearly?\" [Purpose Question]", bundle: 'pro' },
+        { q: "The exchange worked and then stopped dead.", a: "\"You said Gothenburg. Is that where you're from, or just where you were?\" [Background Question]", bundle: 'pro' },
+        { q: "A status answer has nowhere obvious to go.", a: "\"Busy with what, though? I like knowing what's keeping people up.\" [Action Question]", bundle: 'pro' },
+        { q: "Neither of you picked anything up from the other.", a: "\"I'm going back one — the bit about the course. What made you pick that one?\" [Purpose Question]", bundle: 'pro' },
       ]
     },
   ],
