@@ -7777,7 +7777,7 @@ const collections = {
     },
     {
       name: "The Small True Thing",
-      guideFront: "Say what is actually true when...",
+      guideFront: "Answer without polishing it when...",
       guideBack: "The honest version",
       description: "Say what is actually true, at whatever size it happens to be, instead of hunting for something impressive. \"I've been watching a lot of terrible television\" is a better answer than a polished one.\n\nIt works because people are not measuring how eventful your life is. They are finding out what you are like, and specificity is what tells them. \"Not much\" reveals nothing. \"Mostly repainting a wardrobe badly\" reveals a person.\n\nIt also solves the paralysis. The reason people say \"nothing much\" is that they are searching for something worth reporting and failing to find it. There is nothing to find, because that was never the standard.\n\nTypical phrases: \"Nothing dramatic — mostly repainting a wardrobe badly.\", \"I've been going to bed at nine and I'm not sorry.\", \"Honestly? Terrible television and too much coffee.\"\n\nThree sizes, and all three are fine:\n\n1. Ordinary and specific — the default, and the most useful. \"I've been trying to fix a bike I don't know how to fix.\"\n\n2. Mildly embarrassing — costs nothing and buys a lot of warmth. \"I've watched the same series twice this month.\"\n\n3. Actually difficult — say it plainly and without the full weight, so they can decide whether to go there. \"It's been a hard few weeks, honestly. Nothing I can't handle.\"\n\nMindset: the bar is true and specific, not interesting. Nobody is grading this.",
       inputs: [

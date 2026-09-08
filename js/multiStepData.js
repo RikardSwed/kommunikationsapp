@@ -6605,7 +6605,7 @@ const multiStepCollections = {
           situation: "A friend you see every few months says, more seriously than usual, that the year has been harder than they let on.",
           steps: [
             { front: "Match Their Depth — they say, \"It's been a lot, honestly.\"", back: "\"I'll match you rather than be breezy — mine's been heavy too.\"", guideFront: "Give as much as they gave when...", guideBack: "An answer of the same size" },
-            { front: "The Small True Thing — they say, \"You never say that.\"", back: "\"I know. Nothing dramatic. Just a long stretch of getting through weeks.\"", guideFront: "Say what is actually true when...", guideBack: "The honest version" },
+            { front: "The Small True Thing — they say, \"You never say that.\"", back: "\"I know. Nothing dramatic. Just a long stretch of getting through weeks.\"", guideFront: "Answer without polishing it when...", guideBack: "The honest version" },
             { front: "What You're Into — they say, \"What's been helping?\"", back: "\"Running, weirdly. I'm terrible at it and it's the best hour of the day.\"", guideFront: "Say what you care about when...", guideBack: "An enthusiasm, said plainly" },
             { front: "Hand It Back — they say, \"That's not what I expected from you.\"", back: "\"It surprised me too. What's been getting you through?\"", guideFront: "Turn the attention around when...", guideBack: "A question back to them" },
           ]
@@ -6615,7 +6615,7 @@ const multiStepCollections = {
           situation: "You are walking back from a meeting and the conversation has gone past the usual small talk.",
           steps: [
             { front: "Match Their Depth — they say, \"I'm not sure I want to be doing this in five years.\"", back: "\"I think about that more than I admit, honestly.\"", guideFront: "Give as much as they gave when...", guideBack: "An answer of the same size" },
-            { front: "The Small True Thing — they say, \"Really? You always seem settled.\"", back: "\"I'm settled. I'm just not certain, which turns out to be different.\"", guideFront: "Say what is actually true when...", guideBack: "The honest version" },
+            { front: "The Small True Thing — they say, \"Really? You always seem settled.\"", back: "\"I'm settled. I'm just not certain, which turns out to be different.\"", guideFront: "Answer without polishing it when...", guideBack: "The honest version" },
             { front: "What You're Into — they say, \"So what would you rather be doing?\"", back: "\"Something with my hands, probably. I've got very into fixing bikes I can't fix.\"", guideFront: "Say what you care about when...", guideBack: "An enthusiasm, said plainly" },
             { front: "Hand It Back — they say, \"That's oddly specific.\"", back: "\"It really is. What's yours, if you could pick?\"", guideFront: "Turn the attention around when...", guideBack: "A question back to them" },
           ]
@@ -6625,7 +6625,7 @@ const multiStepCollections = {
           situation: "You are having a drink with someone you used to see weekly and now see twice a year. They have just said the years went quickly.",
           steps: [
             { front: "Match Their Depth — they say, \"I don't know where the last five years went, honestly.\"", back: "\"Nor do I. And I've noticed I stopped telling anyone much about them.\"", guideFront: "Give as much as they gave when...", guideBack: "An answer of the same size" },
-            { front: "The Small True Thing — they say, \"That doesn't sound like you.\"", back: "\"It isn't, particularly. I got quiet somewhere around the second year and never undid it.\"", guideFront: "Say what is actually true when...", guideBack: "The honest version" },
+            { front: "The Small True Thing — they say, \"That doesn't sound like you.\"", back: "\"It isn't, particularly. I got quiet somewhere around the second year and never undid it.\"", guideFront: "Answer without polishing it when...", guideBack: "The honest version" },
             { front: "What You're Into — they say, \"So what are you doing with yourself?\"", back: "\"Bread, embarrassingly. It's the only thing I do that has nothing to do with anyone else.\"", guideFront: "Say what you care about when...", guideBack: "An enthusiasm, said plainly" },
             { front: "Hand It Back — they say, \"That's a very you answer.\"", back: "\"I'll take that. What have you got that's just yours?\"", guideFront: "Turn the attention around when...", guideBack: "A question back to them" },
           ]
