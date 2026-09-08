@@ -7483,8 +7483,8 @@ const collections = {
   firststrategies: [
     {
       name: "Opening Statement",
-      guideFront: "Use this strategy when...",
-      guideBack: "One way it could sound",
+      guideFront: "Start with a remark when...",
+      guideBack: "A remark about the room",
       description: "Say something instead of asking something. \"That queue is not moving.\" \"I have no idea what half of these are.\"\n\nIt works because a question hands the other person a job. They have to think of an answer, and if they are shy or tired or busy, the easiest answer is a short one — which ends the conversation you just started. A statement hands them material instead. They can agree, disagree, add to it, or laugh, and any of those is a conversation.\n\nIt also lets them out politely. Someone who does not want to talk can smile and say nothing, and nobody has been rude. An unanswered question is awkward; an unanswered remark is not.\n\nTypical phrases: \"This place is busier than I expected.\", \"I've been staring at this menu for five minutes.\", \"That's a serious amount of cake for one meeting.\"\n\nThree kinds of statement, and they are the ones you will use most:\n\n1. Something you are both looking at — the safest, because it is true for both of you. \"That painting is enormous.\"\n\n2. Something about you, right now — gives them something personal without asking for anything. \"I've come to the wrong building twice already.\"\n\n3. A small opinion — invites the most, risks the most. \"I think the old one was better.\"\n\nMindset: you are not performing. You are putting one true, ordinary sentence on the table for someone else to pick up.",
       inputs: [
         { q: "You are standing next to someone in a long queue.", a: "\"This queue has not moved in five minutes.\"", bundle: 'free' },
@@ -7499,8 +7499,8 @@ const collections = {
     },
     {
       name: "Follow the Thread",
-      guideFront: "Use this strategy when...",
-      guideBack: "One way it could sound",
+      guideFront: "Pick one detail and ask when...",
+      guideBack: "A question built on one detail",
       description: "Take one word out of what they just said and go into it. They say \"we drove back from Malmö on Sunday\" — you take Malmö, or the driving, or the Sunday.\n\nIt works because people put more into a sentence than they expect anyone to notice. Picking one piece up shows you were listening, and it saves you from the real problem in conversation, which is not shyness but having nothing to say next. You do not need something new. They just gave you three things.\n\nThe mistake it replaces is waiting for your turn. Most conversations stall because both people are searching for a fresh subject while a perfectly good one is lying between them.\n\nTypical phrases: \"Malmö — what were you doing down there?\", \"You said 'finally' — has it been dragging on?\", \"Back to what, though?\"\n\nThree threads worth pulling:\n\n1. The concrete detail — the place, the object, the number. Easiest, always works. \"Three hours? What was the traffic like?\"\n\n2. The odd word — the one that carries feeling. \"You said you 'survived' it.\"\n\n3. The thing they skipped past — often the interesting one. \"Wait, go back — you moved house in the same month?\"\n\nMindset: the next thing to say is already in what they said. Listen for the noun, not for a gap.",
       inputs: [
         { q: "They say they got back from Malmö on Sunday.", a: "\"Malmö — what took you down there?\"", bundle: 'free' },
@@ -7563,8 +7563,8 @@ const collections = {
     },
     {
       name: "Answer With a Hook",
-      guideFront: "Use this strategy when...",
-      guideBack: "One way it could sound",
+      guideFront: "Add something to ask about when...",
+      guideBack: "Something for them to ask about",
       description: "When someone asks about you, answer with something they can ask about. Not \"fine\" — \"good, though I've spent the whole week arguing with a printer.\"\n\nIt works because the person asking is trying to start a conversation, and a closed answer leaves them with nothing. They then have to think of a new question, which is work, and after two of those most people give up. A hook does their next move for them.\n\nIt also solves the problem people mean when they say they are bad at small talk. They are usually good at asking and empty at answering — so every conversation runs on their questions until they run out.\n\nTypical phrases: \"Good — busy week, mostly in a good way.\", \"Fine, apart from the drive.\", \"I'm alright. Slightly obsessed with a new thing, if I'm honest.\"\n\nThree sizes of hook:\n\n1. One extra detail — the smallest version, and enough. \"Good. Long week.\"\n\n2. A small complaint or oddity — invites the most, because people love a story. \"Fine, except I've locked myself out twice.\"\n\n3. Something you actually care about — for people you want to know better. \"Good. I've started running again, which is going badly.\"\n\nMindset: give them something to work with. The point is not to be interesting; it is to leave a door open.",
       inputs: [
         { q: "Someone asks how your week has been.", a: "\"Good — long, though. I've spent most of it arguing with a printer.\"", bundle: 'free' },
@@ -7776,9 +7776,9 @@ const collections = {
       ]
     },
     {
-      name: "Say the Small True Thing",
-      guideFront: "Use this strategy when...",
-      guideBack: "One way it could sound",
+      name: "The Small True Thing",
+      guideFront: "Answer without polishing it when...",
+      guideBack: "The honest version",
       description: "Say what is actually true, at whatever size it happens to be, instead of hunting for something impressive. \"I've been watching a lot of terrible television\" is a better answer than a polished one.\n\nIt works because people are not measuring how eventful your life is. They are finding out what you are like, and specificity is what tells them. \"Not much\" reveals nothing. \"Mostly repainting a wardrobe badly\" reveals a person.\n\nIt also solves the paralysis. The reason people say \"nothing much\" is that they are searching for something worth reporting and failing to find it. There is nothing to find, because that was never the standard.\n\nTypical phrases: \"Nothing dramatic — mostly repainting a wardrobe badly.\", \"I've been going to bed at nine and I'm not sorry.\", \"Honestly? Terrible television and too much coffee.\"\n\nThree sizes, and all three are fine:\n\n1. Ordinary and specific — the default, and the most useful. \"I've been trying to fix a bike I don't know how to fix.\"\n\n2. Mildly embarrassing — costs nothing and buys a lot of warmth. \"I've watched the same series twice this month.\"\n\n3. Actually difficult — say it plainly and without the full weight, so they can decide whether to go there. \"It's been a hard few weeks, honestly. Nothing I can't handle.\"\n\nMindset: the bar is true and specific, not interesting. Nobody is grading this.",
       inputs: [
         { q: "Someone asks what you have been up to and nothing has happened.", a: "\"Nothing dramatic. Mostly repainting a wardrobe, badly.\"", bundle: 'free' },
@@ -7792,9 +7792,9 @@ const collections = {
       ]
     },
     {
-      name: "Answer What They Are Really Asking",
-      guideFront: "Use this strategy when...",
-      guideBack: "One way it could sound",
+      name: "The Real Question",
+      guideFront: "Give the personal version when...",
+      guideBack: "The version about you",
       description: "Give the version of the answer that is about you, not the official one. \"What do you do?\" is not a request for a job title.\n\nIt works because the literal answer is usually the least useful one available. \"I'm a project manager\" tells them what to call you and nothing else, and it is very hard to ask a follow-up question about a job title. What they are actually asking is what your days are like, and whether there is anything in there worth talking about.\n\nThe same applies to most standard questions. \"Where are you from?\" is asking what shaped you. \"How long have you been here?\" is asking whether you feel settled.\n\nTypical phrases: \"On paper I'm a teacher. In practice I spend most of the day negotiating.\", \"Officially, admin. Actually, I fix things nobody else wants to.\", \"I'm from a small place you won't have heard of, which explains a lot about me.\"\n\nThree ways to give the real answer:\n\n1. Add what it is actually like — one clause after the title. \"I teach English. Mostly to teenagers, which is as loud as it sounds.\"\n\n2. Give the part you find interesting — even if it is a small part of the job. \"Technically accounting. The bit I like is the detective work.\"\n\n3. Answer the person, not the form — for questions about where you are from, how long you have been somewhere, how you know the host. \"I moved here for someone and stayed for the city.\"\n\nMindset: they are not filling in a form. Give them the version they can ask a second question about.",
       inputs: [
         { q: "Someone asks what you do.", a: "\"I teach English. Mostly to teenagers, which is as loud as it sounds.\"", bundle: 'free' },
@@ -7808,9 +7808,9 @@ const collections = {
       ]
     },
     {
-      name: "Name What You Are Into",
-      guideFront: "Use this strategy when...",
-      guideBack: "One way it could sound",
+      name: "What You're Into",
+      guideFront: "Say what you care about when...",
+      guideBack: "An enthusiasm, said plainly",
       description: "Say the thing you actually care about, plainly, and then stop talking. \"I've got quite into bread. Not in a normal way.\"\n\nIt works because enthusiasm is the most attractive thing most people have, and it is the thing they hide hardest. The fear is being boring, so the interest gets buried under an apology — \"it's a bit sad, but\" — which tells the other person that this is not something to ask about.\n\nThe stopping is the discipline. What people are actually worried about is not the enthusiasm, it is the lecture, and those are different things. Name it, give one line, and let them decide whether to open it.\n\nTypical phrases: \"I've got very into bread lately.\", \"I'm a bit obsessed with maps, if I'm honest.\", \"I've started running, which is going badly and I love it.\"\n\nThree parts:\n\n1. Name it without apologising. Not \"this is going to sound stupid, but\". Just the thing.\n\n2. One line about it — enough to be a handle, not enough to be a talk. \"It's mostly about the timing, it turns out.\"\n\n3. Stop. If they are interested they will ask, and then you get to say the rest with an audience that wants it.\n\nMindset: the enthusiasm is not the risk. The unrequested twenty minutes is. Say it, then let them choose.",
       inputs: [
         { q: "Someone asks what you do with your time.", a: "\"I've got very into bread lately. Not in a normal amount.\"", bundle: 'free' },
@@ -8056,7 +8056,7 @@ const collections = {
   ],
   showunderstanding: [
     {
-      name: "Ask Follow-up Questions",
+      name: "Follow-up Question",
       guideFront: "Use this strategy when...",
       guideBack: "One way it could sound",
       description: "You show understanding by asking for more — a question that could only come from someone who was listening to that particular sentence.\n\nIt works because a follow-up question is proof of attention in a way that agreement never is. \"That sounds hard\" can be said by someone who heard nothing. \"What did your manager actually say?\" cannot.\n\nThis is also the move that keeps the floor with them. They are still telling it, and a question is permission to carry on.\n\nTypical phrases: \"Can you tell me more about that?\", \"What were you feeling at that moment?\", \"What happened after that?\"\n\nThree kinds of follow-up, and they do different jobs:\n\n1. More of the same — widens the picture. \"What else went wrong with it?\"\n\n2. The moment — goes inward, to what it was like. \"What was going through your head right then?\"\n\n3. What came next — moves the story on. \"So what happened after you sent it?\"\n\nAim it at the specific thing, not the topic. \"Tell me about school\" is a subject change; \"what did the teacher actually say?\" is a follow-up.\n\nMindset: this is the move for when the story is not finished. Asking keeps them going, which is usually what somebody mid-story actually wants.",
@@ -8072,9 +8072,9 @@ const collections = {
       ]
     },
     {
-      name: "Loop Back or Rephrase",
-      guideFront: "Use this strategy when...",
-      guideBack: "One way it could sound",
+      name: "Loop Back",
+      guideFront: "Repeat it in your words when...",
+      guideBack: "Their point, in your words",
       description: "You say their point back in your own words, so they can hear that it arrived intact — or correct you if it did not.\n\nIt works because almost nothing else in a conversation lets somebody find out whether they have been understood. They can guess from your face. A loop tells them.\n\nIt sounds like it adds nothing, which is why it is the most underrated move here. What it actually does is finish something the other person started and could not finish alone.\n\nTypical phrases: \"So what you're saying is...\", \"I hear that you felt frustrated when that happened.\", \"You mean the situation was hard because...\"\n\nThree kinds of loop:\n\n1. The summary — the shape of the whole thing. \"So the deadline moved and nobody told you.\"\n\n2. The feeling named — the part they did not say out loud. \"That sounds like it was more embarrassing than annoying.\"\n\n3. The check — offered as a question, so they can fix it. \"Have I got that right? It's the not being asked that bothers you.\"\n\nUse your own words, not theirs. Repeating someone's exact sentence back is parroting; rephrasing it proves the idea went in rather than the syllables.\n\nMindset: being slightly wrong is useful here. \"No, not annoyed — disappointed\" is somebody getting closer to their own point, which is exactly what you were offering.",
       inputs: [
         { q: "They say: \"That project was honestly a nightmare from start to finish.\"", a: "\"So it wasn't one bad bit — it was the whole thing.\"", bundle: 'free' },
@@ -8089,8 +8089,8 @@ const collections = {
     },
     {
       name: "Relate Through Sharing",
-      guideFront: "Use this strategy when...",
-      guideBack: "One way it could sound",
+      guideFront: "Match it with your own when...",
+      guideBack: "A time it happened to you",
       description: "You show understanding by offering something of your own — a time you felt the same, thought the same, or wanted the same thing.\n\nIt works because it tells somebody they are not the only person this has happened to, which is a different comfort from being understood and sometimes a bigger one.\n\nIt is also the move with the shortest fuse. Done badly it is the conversational equivalent of taking the microphone, and the difference between the two is mostly length.\n\nTypical phrases: \"I know exactly what you mean, something similar happened to me...\", \"I felt the same way when...\", \"That reminds me of a time when I...\"\n\nThree ways to relate, in rising order of how safe they are:\n\n1. The matching value — safest, because it says nothing about you. \"I'd have wanted to be asked too.\"\n\n2. The matching feeling — names the same experience without a story attached. \"I know that specific kind of frustration.\"\n\n3. The matching experience — warmest and riskiest, because it comes with events. \"I had almost exactly that with a group project.\"\n\nKeep it short and hand it straight back. Two sentences of yours, then a question or a pause. The moment it grows a middle, you have taken over.\n\nMindset: the point is connection, not comparison. \"The same thing happened to me but worse\" is not relating, it is competing, and everyone can hear the difference.",
       inputs: [
         { q: "They say: \"That project was honestly a nightmare from start to finish.\"", a: "\"I had almost exactly that last year. It's a special kind of awful.\"", bundle: 'free' },
@@ -12392,15 +12392,15 @@ const collectionsModeData = {
       name: "When They Ask About You",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "**Give a Detail**, **Answer What They Are Really Asking** and **Say the Small True Thing** — the three for an ordinary question landing on you.\n\n• **Give a Detail** — fixes the dead end, where your answer leaves them nothing to hold\n• **Answer What They Are Really Asking** — fixes the literal answer, where you gave a job title instead of a person\n• **Say the Small True Thing** — fixes the search, where you are hunting for something impressive and stalling\n\n**Which one:** ask what your answer would leave them with. Nothing to ask about means give a detail. A job title means answer what they were really asking. Nothing true means say the small thing.\n\n**Where it goes wrong:** all three failures produce the same four-word answer, so they look identical from the outside. Naming which one you just did is how you stop doing it.\n\nMindset: answer the person, with something true and specific, and leave a handle on it.",
+      description: "**Give a Detail**, **The Real Question** and **The Small True Thing** — the three for an ordinary question landing on you.\n\n• **Give a Detail** — fixes the dead end, where your answer leaves them nothing to hold\n• **The Real Question** — fixes the literal answer, where you gave a job title instead of a person\n• **The Small True Thing** — fixes the search, where you are hunting for something impressive and stalling\n\n**Which one:** ask what your answer would leave them with. Nothing to ask about means give a detail. A job title means answer what they were really asking. Nothing true means say the small thing.\n\n**Where it goes wrong:** all three failures produce the same four-word answer, so they look identical from the outside. Naming which one you just did is how you stop doing it.\n\nMindset: answer the person, with something true and specific, and leave a handle on it.",
       inputs: [
         { q: "Someone asks how your week has been.", a: "\"Long, but good. Half of it went on a printer that hates me.\" [Give a Detail]", bundle: 'pro' },
-        { q: "Someone asks what you do.", a: "\"I teach. Sixteen-year-olds, mostly, which is exactly as loud as it sounds.\" [Answer What They Are Really Asking]", bundle: 'pro' },
-        { q: "Someone asks what you have been up to and nothing has happened.", a: "\"Honestly nothing. I repainted a wardrobe and did it badly.\" [Say the Small True Thing]", bundle: 'pro' },
+        { q: "Someone asks what you do.", a: "\"I teach. Sixteen-year-olds, mostly, which is exactly as loud as it sounds.\" [The Real Question]", bundle: 'pro' },
+        { q: "Someone asks what you have been up to and nothing has happened.", a: "\"Honestly nothing. I repainted a wardrobe and did it badly.\" [The Small True Thing]", bundle: 'pro' },
         { q: "You are about to answer \"fine\" and stop there.", a: "\"Fine — although the drive here took two hours longer than it should have.\" [Give a Detail]", bundle: 'pro' },
-        { q: "You gave your job title and the conversation stalled.", a: "\"That's what's on the contract. Most days it's email and apologising.\" [Answer What They Are Really Asking]", bundle: 'pro' },
-        { q: "The true answer is slightly embarrassing.", a: "\"I've rewatched the same series. Twice. In one month.\" [Say the Small True Thing]", bundle: 'pro' },
-        { q: "Someone asks where you are from.", a: "\"Somewhere very small, two hours north. It explains a lot about me.\" [Answer What They Are Really Asking]", bundle: 'pro' },
+        { q: "You gave your job title and the conversation stalled.", a: "\"That's what's on the contract. Most days it's email and apologising.\" [The Real Question]", bundle: 'pro' },
+        { q: "The true answer is slightly embarrassing.", a: "\"I've rewatched the same series. Twice. In one month.\" [The Small True Thing]", bundle: 'pro' },
+        { q: "Someone asks where you are from.", a: "\"Somewhere very small, two hours north. It explains a lot about me.\" [The Real Question]", bundle: 'pro' },
         { q: "They ask about your weekend and you did one small thing.", a: "\"I finally fixed the shed door. It has taken me four years.\" [Give a Detail]", bundle: 'pro' },
       ]
     },
@@ -12408,13 +12408,13 @@ const collectionsModeData = {
       name: "Choosing How Much",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "**Match Their Depth**, **Keep Something Back**, **Name What You Are Into** and **Hand It Back** — the four that decide the size of what you say rather than its content.\n\n• **Match Their Depth** — one step below what they offered, taken after they take theirs\n• **Keep Something Back** — a partial answer, warmly given, for the question you would rather skip\n• **Name What You Are Into** — one line about the thing you care about, then stop\n• **Hand It Back** — after you have answered, never before\n\n**Which one:** read what they offered first. A corridor question wants one line; a disclosure wants you to meet it or say you are staying. Only once you have answered does handing it back count as generosity rather than as a shield.\n\n**Where it goes wrong:** people get it wrong in both directions at once — too little with the people they want to know, and occasionally far too much with someone met an hour ago.\n\nMindset: depth is a staircase. Take one step after they do, and answer before you turn it around.",
+      description: "**Match Their Depth**, **Keep Something Back**, **What You're Into** and **Hand It Back** — the four that decide the size of what you say rather than its content.\n\n• **Match Their Depth** — one step below what they offered, taken after they take theirs\n• **Keep Something Back** — a partial answer, warmly given, for the question you would rather skip\n• **What You're Into** — one line about the thing you care about, then stop\n• **Hand It Back** — after you have answered, never before\n\n**Which one:** read what they offered first. A corridor question wants one line; a disclosure wants you to meet it or say you are staying. Only once you have answered does handing it back count as generosity rather than as a shield.\n\n**Where it goes wrong:** people get it wrong in both directions at once — too little with the people they want to know, and occasionally far too much with someone met an hour ago.\n\nMindset: depth is a staircase. Take one step after they do, and answer before you turn it around.",
       inputs: [
         { q: "A friend tells you something serious about their health.", a: "\"That's an enormous thing to be carrying. I'd rather hear about it than talk about me.\" [Match Their Depth]", bundle: 'pro' },
         { q: "Someone asks about a breakup you would rather not discuss.", a: "\"It ended, and it ended badly. That's the whole of what I've got tonight.\" [Keep Something Back]", bundle: 'pro' },
         { q: "You have answered properly and want to turn it around.", a: "\"So that's my news. What's been happening with you?\" [Hand It Back]", bundle: 'pro' },
         { q: "You are about to answer a corridor question with something very personal.", a: "\"Busy. Good busy, mostly.\" [Match Their Depth]", bundle: 'pro' },
-        { q: "Someone asks what you do with your time.", a: "\"Bread, lately. An unreasonable amount of bread.\" [Name What You Are Into]", bundle: 'pro' },
+        { q: "Someone asks what you do with your time.", a: "\"Bread, lately. An unreasonable amount of bread.\" [What You're Into]", bundle: 'pro' },
         { q: "You are about to hand it back without having answered.", a: "\"Mine's been a strange one — I'll spare you the details. Yours?\" [Hand It Back]", bundle: 'pro' },
         { q: "You do want to tell them, but not in this room.", a: "\"That's a proper conversation and this is a party. Remind me another time.\" [Keep Something Back]", bundle: 'pro' },
         { q: "They went one level deeper and you want to meet it.", a: "\"Since you said that — I've not been having a great year either.\" [Match Their Depth]", bundle: 'pro' },
@@ -12424,16 +12424,16 @@ const collectionsModeData = {
       name: "All Seven",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "Every strategy in the pack, mixed, in the order real conversations produce them rather than the order they were taught.\n\n• **Give a Detail** · **Answer What They Are Really Asking** · **Say the Small True Thing** — answer the question in front of you\n• **Match Their Depth** · **Keep Something Back** — decide the size\n• **Name What You Are Into** — say what you care about\n• **Hand It Back** — and then move the attention\n\n**Which one:** the useful question is what your answer would leave them with. Nothing to ask about, a job title, or nothing true — each has its own fix. Everything else is a question of size.\n\n**Where it goes wrong:** freezing. Any of the seven beats the four-word answer, and choosing the second-best one instantly beats choosing the best one late.\n\nMindset: attention on you is an offer, not an exam.",
+      description: "Every strategy in the pack, mixed, in the order real conversations produce them rather than the order they were taught.\n\n• **Give a Detail** · **The Real Question** · **The Small True Thing** — answer the question in front of you\n• **Match Their Depth** · **Keep Something Back** — decide the size\n• **What You're Into** — say what you care about\n• **Hand It Back** — and then move the attention\n\n**Which one:** the useful question is what your answer would leave them with. Nothing to ask about, a job title, or nothing true — each has its own fix. Everything else is a question of size.\n\n**Where it goes wrong:** freezing. Any of the seven beats the four-word answer, and choosing the second-best one instantly beats choosing the best one late.\n\nMindset: attention on you is an offer, not an exam.",
       inputs: [
         { q: "Someone asks how the weekend was.", a: "\"Deliberately empty. I have never enjoyed doing nothing more.\" [Give a Detail]", bundle: 'pro' },
         { q: "A colleague mentions their week has been hard.", a: "\"Same here, if it helps. Mine's been the same shape as yours.\" [Match Their Depth]", bundle: 'pro' },
-        { q: "You are searching for something worth reporting.", a: "\"Coffee and bad television. That is genuinely the whole report.\" [Say the Small True Thing]", bundle: 'pro' },
-        { q: "Someone asks how you know the host.", a: "\"We lived together for two years. I could tell you things.\" [Answer What They Are Really Asking]", bundle: 'pro' },
-        { q: "You are about to apologise for the thing you like.", a: "\"Maps. I collect maps. I've decided not to be embarrassed about it.\" [Name What You Are Into]", bundle: 'pro' },
+        { q: "You are searching for something worth reporting.", a: "\"Coffee and bad television. That is genuinely the whole report.\" [The Small True Thing]", bundle: 'pro' },
+        { q: "Someone asks how you know the host.", a: "\"We lived together for two years. I could tell you things.\" [The Real Question]", bundle: 'pro' },
+        { q: "You are about to apologise for the thing you like.", a: "\"Maps. I collect maps. I've decided not to be embarrassed about it.\" [What You're Into]", bundle: 'pro' },
         { q: "A question comes up you would rather not answer at all.", a: "\"I'm going to duck that one, if you don't mind. Nothing to do with you.\" [Keep Something Back]", bundle: 'pro' },
         { q: "You have been talking about your own thing for a while.", a: "\"Right, I've taken up enough of that. Tell me about the flat.\" [Hand It Back]", bundle: 'pro' },
-        { q: "Someone asks how you are and you have been saying \"fine\" for weeks.", a: "\"I keep saying fine. It hasn't been true since about March.\" [Say the Small True Thing]", bundle: 'pro' },
+        { q: "Someone asks how you are and you have been saying \"fine\" for weeks.", a: "\"I keep saying fine. It hasn't been true since about March.\" [The Small True Thing]", bundle: 'pro' },
       ]
     },
   ],
@@ -12586,15 +12586,15 @@ const collectionsModeData = {
       name: "Finished or Not",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "**Ask Follow-up Questions**, **Loop Back or Rephrase** and **Relate Through Sharing** — chosen by where they are in the story.\n\n• **Ask Follow-up Questions** — the story is still moving and they want to keep going\n• **Loop Back or Rephrase** — they have landed something and stopped\n• **Relate Through Sharing** — the whole thing is out and has been understood\n\n**Which one:** listen to the pause. A short breath means carry on, so ask. A longer one, especially after something that cost them a little to say, means they have arrived somewhere — reflect it. Once it has been reflected and the air has cleared, your own version is welcome.\n\n**Where it goes wrong:** asking after they have finished. A question at the end of a story reads as being asked to keep performing, and it is the most common way a good conversation gets one turn too long.\n\nMindset: a question asks them to do more work. A loop does the work for them. After something difficult, do the work.",
+      description: "**Follow-up Question**, **Loop Back** and **Relate Through Sharing** — chosen by where they are in the story.\n\n• **Follow-up Question** — the story is still moving and they want to keep going\n• **Loop Back** — they have landed something and stopped\n• **Relate Through Sharing** — the whole thing is out and has been understood\n\n**Which one:** listen to the pause. A short breath means carry on, so ask. A longer one, especially after something that cost them a little to say, means they have arrived somewhere — reflect it. Once it has been reflected and the air has cleared, your own version is welcome.\n\n**Where it goes wrong:** asking after they have finished. A question at the end of a story reads as being asked to keep performing, and it is the most common way a good conversation gets one turn too long.\n\nMindset: a question asks them to do more work. A loop does the work for them. After something difficult, do the work.",
       inputs: [
-        { q: "They are mid-story and clearly not finished.", a: "\"What did you do when you realised?\" [Ask Follow-up Questions]", bundle: 'pro' },
-        { q: "They finish a hard sentence and go quiet.", a: "\"So you were suddenly doing it alone, with no warning.\" [Loop Back or Rephrase]", bundle: 'pro' },
-        { q: "They mention something in passing and carry straight on.", a: "\"Sorry — what did your manager actually say?\" [Ask Follow-up Questions]", bundle: 'pro' },
-        { q: "They have just admitted something they find embarrassing.", a: "\"So it's the being left out of it, more than the job.\" [Loop Back or Rephrase]", bundle: 'pro' },
+        { q: "They are mid-story and clearly not finished.", a: "\"What did you do when you realised?\" [Follow-up Question]", bundle: 'pro' },
+        { q: "They finish a hard sentence and go quiet.", a: "\"So you were suddenly doing it alone, with no warning.\" [Loop Back]", bundle: 'pro' },
+        { q: "They mention something in passing and carry straight on.", a: "\"Sorry — what did your manager actually say?\" [Follow-up Question]", bundle: 'pro' },
+        { q: "They have just admitted something they find embarrassing.", a: "\"So it's the being left out of it, more than the job.\" [Loop Back]", bundle: 'pro' },
         { q: "They have finished, been understood, and the mood has settled.", a: "\"I had almost exactly that last year. Special kind of awful.\" [Relate Through Sharing]", bundle: 'pro' },
-        { q: "They are describing a sequence of events and pause for breath.", a: "\"And then what?\" [Ask Follow-up Questions]", bundle: 'pro' },
-        { q: "They give you a tangled explanation and stop, looking tired.", a: "\"Let me check I've got it — the plan changed twice and you found out last?\" [Loop Back or Rephrase]", bundle: 'pro' },
+        { q: "They are describing a sequence of events and pause for breath.", a: "\"And then what?\" [Follow-up Question]", bundle: 'pro' },
+        { q: "They give you a tangled explanation and stop, looking tired.", a: "\"Let me check I've got it — the plan changed twice and you found out last?\" [Loop Back]", bundle: 'pro' },
         { q: "They have said the whole thing and you both sat with it a moment.", a: "\"I do that at three in the morning, reliably.\" [Relate Through Sharing]", bundle: 'pro' },
       ]
     },
@@ -12602,32 +12602,32 @@ const collectionsModeData = {
       name: "Raw or Settled",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "The same three strategies, chosen by how fresh the feeling is rather than how far the story has got.\n\n• **Loop Back or Rephrase** — while it is still raw, stay entirely with them\n• **Ask Follow-up Questions** — once it has cooled a little, ask about the part that matters\n• **Relate Through Sharing** — only once it has settled, and briefly\n\n**Which one:** raw means they are still inside the feeling, and the only safe move is to reflect it. Settled means they can look at it from outside, and then a question opens it up and a shared experience warms it. The two cues do come apart: somebody can finish a story and still be raw, and that is the moment to loop rather than relate.\n\n**Where it goes wrong:** relating too early. Somebody who has not finished being heard does not want to hear about your version yet, however well it matches — and the better it matches, the more it takes.\n\nMindset: when in doubt, stay with them. Nobody has ever regretted being reflected back one time too many.",
+      description: "The same three strategies, chosen by how fresh the feeling is rather than how far the story has got.\n\n• **Loop Back** — while it is still raw, stay entirely with them\n• **Follow-up Question** — once it has cooled a little, ask about the part that matters\n• **Relate Through Sharing** — only once it has settled, and briefly\n\n**Which one:** raw means they are still inside the feeling, and the only safe move is to reflect it. Settled means they can look at it from outside, and then a question opens it up and a shared experience warms it. The two cues do come apart: somebody can finish a story and still be raw, and that is the moment to loop rather than relate.\n\n**Where it goes wrong:** relating too early. Somebody who has not finished being heard does not want to hear about your version yet, however well it matches — and the better it matches, the more it takes.\n\nMindset: when in doubt, stay with them. Nobody has ever regretted being reflected back one time too many.",
       inputs: [
-        { q: "They are halfway through something difficult and clearly still in it.", a: "\"So it's the not being told that's the worst part.\" [Loop Back or Rephrase]", bundle: 'pro' },
-        { q: "They say something raw and you have a similar story ready.", a: "\"That's a lot to have been carrying on your own.\" [Loop Back or Rephrase]", bundle: 'pro' },
-        { q: "They have told it before and can talk about it calmly now.", a: "\"What would you do differently if it came round again?\" [Ask Follow-up Questions]", bundle: 'pro' },
+        { q: "They are halfway through something difficult and clearly still in it.", a: "\"So it's the not being told that's the worst part.\" [Loop Back]", bundle: 'pro' },
+        { q: "They say something raw and you have a similar story ready.", a: "\"That's a lot to have been carrying on your own.\" [Loop Back]", bundle: 'pro' },
+        { q: "They have told it before and can talk about it calmly now.", a: "\"What would you do differently if it came round again?\" [Follow-up Question]", bundle: 'pro' },
         { q: "They say: \"Everyone else seems to find it easy.\"", a: "\"They really don't. I spent a year assuming the same.\" [Relate Through Sharing]", bundle: 'pro' },
-        { q: "They are still working out what they think as they speak.", a: "\"Something about it landed harder than its size would suggest.\" [Loop Back or Rephrase]", bundle: 'pro' },
+        { q: "They are still working out what they think as they speak.", a: "\"Something about it landed harder than its size would suggest.\" [Loop Back]", bundle: 'pro' },
         { q: "They have shared a win and are pleased with it.", a: "\"That feeling is brilliant. I remember sitting in the car afterwards.\" [Relate Through Sharing]", bundle: 'pro' },
-        { q: "They mention an old disappointment lightly, in passing.", a: "\"What happened with that in the end?\" [Ask Follow-up Questions]", bundle: 'pro' },
-        { q: "They finish, go quiet, and the quiet is not comfortable yet.", a: "\"That sounds like it's still sitting with you.\" [Loop Back or Rephrase]", bundle: 'pro' },
+        { q: "They mention an old disappointment lightly, in passing.", a: "\"What happened with that in the end?\" [Follow-up Question]", bundle: 'pro' },
+        { q: "They finish, go quiet, and the quiet is not comfortable yet.", a: "\"That sounds like it's still sitting with you.\" [Loop Back]", bundle: 'pro' },
       ]
     },
     {
       name: "All Three Moves",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "The full choice with no cue given, which is what this whole exercise is for.\n\n• **Ask Follow-up Questions** — the story is unfinished. \"What happened after that?\"\n• **Loop Back or Rephrase** — they have landed something. \"So it's the being left out that stings.\"\n• **Relate Through Sharing** — they have been heard, and warmth is what is left. \"I know that feeling exactly.\"\n\n**Which one:** the rule is one at a time, so the skill is not knowing the three moves — it is reading which one the moment wants, fast enough to use it. A rough order for anything difficult: loop first, ask second, relate last.\n\n**Where it goes wrong:** most people do it backwards and lead with their own story, because relating is the most enjoyable of the three to do. Choose it for them rather than for you.\n\nMindset: one at a time. Stacking all three is not three times as understanding; it is a performance about you managing the conversation.",
+      description: "The full choice with no cue given, which is what this whole exercise is for.\n\n• **Follow-up Question** — the story is unfinished. \"What happened after that?\"\n• **Loop Back** — they have landed something. \"So it's the being left out that stings.\"\n• **Relate Through Sharing** — they have been heard, and warmth is what is left. \"I know that feeling exactly.\"\n\n**Which one:** the rule is one at a time, so the skill is not knowing the three moves — it is reading which one the moment wants, fast enough to use it. A rough order for anything difficult: loop first, ask second, relate last.\n\n**Where it goes wrong:** most people do it backwards and lead with their own story, because relating is the most enjoyable of the three to do. Choose it for them rather than for you.\n\nMindset: one at a time. Stacking all three is not three times as understanding; it is a performance about you managing the conversation.",
       inputs: [
-        { q: "They are mid-story with more to tell.", a: "\"What was the worst part of it?\" [Ask Follow-up Questions]", bundle: 'pro' },
-        { q: "They have just said something that cost them a little to say.", a: "\"So you sat on it rather than say anything.\" [Loop Back or Rephrase]", bundle: 'pro' },
+        { q: "They are mid-story with more to tell.", a: "\"What was the worst part of it?\" [Follow-up Question]", bundle: 'pro' },
+        { q: "They have just said something that cost them a little to say.", a: "\"So you sat on it rather than say anything.\" [Loop Back]", bundle: 'pro' },
         { q: "They have finished and the air has cleared.", a: "\"I do that too. It always seems easier not to mention it.\" [Relate Through Sharing]", bundle: 'pro' },
-        { q: "They mention a detail you did not follow.", a: "\"Sorry, who pulled you aside?\" [Ask Follow-up Questions]", bundle: 'pro' },
-        { q: "They say \"it's fine, honestly\" and it clearly is not.", a: "\"It sounds less fine and more relentless, from here.\" [Loop Back or Rephrase]", bundle: 'pro' },
-        { q: "They share a win they are proud of.", a: "\"How long had you been working towards that?\" [Ask Follow-up Questions]", bundle: 'pro' },
+        { q: "They mention a detail you did not follow.", a: "\"Sorry, who pulled you aside?\" [Follow-up Question]", bundle: 'pro' },
+        { q: "They say \"it's fine, honestly\" and it clearly is not.", a: "\"It sounds less fine and more relentless, from here.\" [Loop Back]", bundle: 'pro' },
+        { q: "They share a win they are proud of.", a: "\"How long had you been working towards that?\" [Follow-up Question]", bundle: 'pro' },
         { q: "They say they keep replaying what they should have said.", a: "\"I do that at three in the morning, reliably.\" [Relate Through Sharing]", bundle: 'pro' },
-        { q: "They give a long tangled account and stop.", a: "\"Let me check — the deadline moved and nobody told you?\" [Loop Back or Rephrase]", bundle: 'pro' },
+        { q: "They give a long tangled account and stop.", a: "\"Let me check — the deadline moved and nobody told you?\" [Loop Back]", bundle: 'pro' },
       ]
     },
   ],

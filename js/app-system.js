@@ -641,7 +641,6 @@ applyInputCounterVisibility();
     listeningthroughquestions: { label: 'Listening Through Questions', minLevel: 'program' }, // Listening in Depth, Part 2
     showunderstanding2: { label: 'Show Understanding — Pt. 2', minLevel: 'program' },         // Listening in Depth, Part 3
     storybanter: { label: 'Story Banter', minLevel: 'program' },                              // Humour, Part 3
-    masculine1: { label: 'The Masculine Blueprint – Part 1', minLevel: 'complete' },
     masculine2: { label: 'The Masculine Blueprint – Part 2', minLevel: 'complete' },
     masculine3: { label: 'The Masculine Blueprint – Part 3', minLevel: 'complete' },
     masculine4: { label: 'The Masculine Blueprint – Part 4', minLevel: 'complete' },
@@ -709,9 +708,10 @@ applyInputCounterVisibility();
     integratedmaster: { label: 'The Integrated Masterclass', minLevel: 'complete' },
     counseling1: { label: 'Biblical Counseling 1 — Personal Restoration', minLevel: 'complete' },
     counseling2: { label: 'Biblical Counseling 2 — Conflict and Reconciliation', minLevel: 'complete' },
-    seenandtrusted1thesafetyshereads: { label: 'Seen and Trusted 1 — The Safety She Reads For', minLevel: 'complete' },
     seenandtrusted2careshedidnotaskf: { label: 'Seen and Trusted 2 — Care She Did Not Ask For', minLevel: 'complete' },
     seenandtrusted3askingtobetrusted: { label: 'Seen and Trusted 3 — Asking to Be Trusted', minLevel: 'complete' },
+    seenandtrusted1thesafetyshereads: { label: 'Seen and Trusted 1 — The Safety She Reads For', minLevel: 'complete' },
+    masculine1: { label: 'The Masculine Blueprint – Part 1', minLevel: 'complete' },
   };
 
   // ── PROGRAM_CONFIG (v1.26.81) ─────────────────────────────────────────
@@ -2013,20 +2013,6 @@ const BUNDLE_DEFS = {
       description: '',
     },
   ],
-  masculine1: [
-    {
-      id: 'free',
-      tier: 'free',
-      name: 'Free Bundle',
-      description: '',
-    },
-    {
-      id: 'pro',
-      tier: 'pro',
-      name: 'Pro Bundle',
-      description: '',
-    },
-  ],
   masculine2: [
     {
       id: 'free',
@@ -3001,20 +2987,6 @@ const BUNDLE_DEFS = {
       description: '',
     },
   ],
-  seenandtrusted1thesafetyshereads: [
-    {
-      id: 'free',
-      tier: 'free',
-      name: 'Free Bundle',
-      description: '',
-    },
-    {
-      id: 'pro',
-      tier: 'pro',
-      name: 'Pro Bundle',
-      description: '',
-    },
-  ],
   seenandtrusted2careshedidnotaskf: [
     {
       id: 'free',
@@ -3030,6 +3002,34 @@ const BUNDLE_DEFS = {
     },
   ],
   seenandtrusted3askingtobetrusted: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  seenandtrusted1thesafetyshereads: [
+    {
+      id: 'free',
+      tier: 'free',
+      name: 'Free Bundle',
+      description: '',
+    },
+    {
+      id: 'pro',
+      tier: 'pro',
+      name: 'Pro Bundle',
+      description: '',
+    },
+  ],
+  masculine1: [
     {
       id: 'free',
       tier: 'free',
@@ -5587,14 +5587,14 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
             '<p class="ob-text">Three ways to make it visible &mdash; and you use ' +
             '<strong>one</strong> at a time.</p>' +
             '<div class="ob-how">' +
-            '<div class="ob-how-row"><span class="ob-how-num">1</span><p><strong>Ask Follow-up Questions</strong> &mdash; ask what only a listener could ask.</p></div>' +
-            '<div class="ob-how-row"><span class="ob-how-num">2</span><p><strong>Loop Back or Rephrase</strong> &mdash; say their point back in your own words.</p></div>' +
+            '<div class="ob-how-row"><span class="ob-how-num">1</span><p><strong>Follow-up Question</strong> &mdash; ask what only a listener could ask.</p></div>' +
+            '<div class="ob-how-row"><span class="ob-how-num">2</span><p><strong>Loop Back</strong> &mdash; say their point back in your own words.</p></div>' +
             '<div class="ob-how-row"><span class="ob-how-num">3</span><p><strong>Relate Through Sharing</strong> &mdash; offer something of your own.</p></div>' +
             '</div>' +
             '<p class="ob-text ob-text--dim">The next pages explain each one, and how to choose.</p>'
         },
         {
-          title: 'Ask Follow-up Questions',
+          title: 'Follow-up Question',
           html:
             '<p class="ob-text">Ask for more &mdash; a question that could only come from ' +
             'someone who was actually listening.</p>' +
@@ -5603,7 +5603,7 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
             '<p class="ob-text ob-text--dim">&ldquo;It\u2019s been a lot since the move.&rdquo;<br>&rarr; &ldquo;A lot how &mdash; the flat, or everything at once?&rdquo;</p>'
         },
         {
-          title: 'Loop Back or Rephrase',
+          title: 'Loop Back',
           html:
             '<p class="ob-text">Say their point back in your own words, so they can hear that ' +
             'it arrived intact &mdash; or correct you before it costs anyone anything.</p>' +
@@ -5790,8 +5790,8 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
             'Each one fixes a different way the answer dies.</p>' +
             '<div class="ob-how">' +
             '<div class="ob-how-row"><span class="ob-how-num">1</span><p><strong>Give a Detail</strong> &mdash; answer, then add one concrete thing they can pick up.</p></div>' +
-            '<div class="ob-how-row"><span class="ob-how-num">2</span><p><strong>Answer What They Are Really Asking</strong> &mdash; the version about you, not the job title.</p></div>' +
-            '<div class="ob-how-row"><span class="ob-how-num">3</span><p><strong>Say the Small True Thing</strong> &mdash; true and specific beats impressive.</p></div>' +
+            '<div class="ob-how-row"><span class="ob-how-num">2</span><p><strong>The Real Question</strong> &mdash; the version about you, not the job title.</p></div>' +
+            '<div class="ob-how-row"><span class="ob-how-num">3</span><p><strong>The Small True Thing</strong> &mdash; true and specific beats impressive.</p></div>' +
             '</div>' +
             '<p class="ob-text ob-text--dim">&ldquo;How was your week?&rdquo;<br>&rarr; &ldquo;Good &mdash; long, though. I spent most of it arguing with a printer.&rdquo;</p>'
         },
@@ -5807,7 +5807,7 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
             '<p class="ob-text ob-text--dim">&ldquo;Weren\u2019t you with someone for years?&rdquo;<br>&rarr; &ldquo;I was. Short version: it ended badly, and I\u2019m not doing the long one tonight.&rdquo;</p>'
         },
         {
-          title: 'Name What You Are Into',
+          title: "What You're Into",
           html:
             '<p class="ob-text">Say the thing you actually care about, plainly, and then stop ' +
             'talking.</p>' +

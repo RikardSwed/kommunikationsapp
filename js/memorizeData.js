@@ -5988,9 +5988,9 @@ const memorizeCollections = {
   talkingaboutyourself: [
     {
       name: "Core Idea",
-      description: "Seven strategies for the moment the attention lands on you.\n\n1. **Give a Detail**\n2. **Match Their Depth**\n3. **Say the Small True Thing**\n4. **Answer What They Are Really Asking**\n5. **Name What You Are Into**\n6. **Keep Something Back**\n7. **Hand It Back**\n\nThree answer the question, two decide the size, one names what you care about.",
+      description: "Seven strategies for the moment the attention lands on you.\n\n1. **Give a Detail**\n2. **Match Their Depth**\n3. **The Small True Thing**\n4. **The Real Question**\n5. **What You're Into**\n6. **Keep Something Back**\n7. **Hand It Back**\n\nThree answer the question, two decide the size, one names what you care about.",
       cards: [
-        { q: "What are the seven strategies in this pack?", a: "Give a Detail, Match Their Depth, Say the Small True Thing, Answer What They Are Really Asking, Name What You Are Into, Keep Something Back, Hand It Back.", bundle: 'free' },
+        { q: "What are the seven strategies in this pack?", a: "Give a Detail, Match Their Depth, The Small True Thing, The Real Question, What You're Into, Keep Something Back, Hand It Back.", bundle: 'free' },
         { q: "What are the two ways answering goes wrong?", a: "Giving too little, which puts the whole conversation on them. And giving too much too soon, which outruns what they offered.", bundle: 'free' },
         { q: "What is the mistake underneath both?", a: "Reading the question as a test of how interesting you are, rather than as an invitation to be known.", bundle: 'free' },
         { q: "How do the seven divide?", a: "Three answer the question, two decide the size, one names what you care about, and one hands the attention back.", bundle: 'free' },
@@ -6029,7 +6029,7 @@ const memorizeCollections = {
       ]
     },
     {
-      name: "Say the Small True Thing",
+      name: "The Small True Thing",
       description: "",
       cards: [
         { q: "What is the standard for a good answer?", a: "True and specific. Not interesting.", bundle: 'free' },
@@ -6043,7 +6043,7 @@ const memorizeCollections = {
       ]
     },
     {
-      name: "Answer What They Are Really Asking",
+      name: "The Real Question",
       description: "",
       cards: [
         { q: "What is \"what do you do?\" actually asking?", a: "What your days are like, and whether there is anything in there worth talking about.", bundle: 'free' },
@@ -6057,7 +6057,7 @@ const memorizeCollections = {
       ]
     },
     {
-      name: "Name What You Are Into",
+      name: "What You're Into",
       description: "",
       cards: [
         { q: "What are the three parts?", a: "Name it without apologising, give one line, then stop.", bundle: 'free' },
@@ -6106,15 +6106,15 @@ const memorizeCollections = {
         { q: "What does When They Ask About You sort by?", a: "What your answer would leave them with — nothing to ask about, a job title, or nothing true.", bundle: 'pro' },
         { q: "What does Choosing How Much sort by?", a: "Size rather than content — how much they offered, and whether you want to answer at all.", bundle: 'pro' },
         { q: "Your answer left them nothing to hold. Which strategy?", a: "Give a Detail.", bundle: 'pro' },
-        { q: "You gave a job title and it stalled. Which strategy?", a: "Answer What They Are Really Asking.", bundle: 'pro' },
-        { q: "You are hunting for something impressive. Which strategy?", a: "Say the Small True Thing.", bundle: 'pro' },
+        { q: "You gave a job title and it stalled. Which strategy?", a: "The Real Question.", bundle: 'pro' },
+        { q: "You are hunting for something impressive. Which strategy?", a: "The Small True Thing.", bundle: 'pro' },
         { q: "They went one level deeper than usual. Which strategy?", a: "Match Their Depth.", bundle: 'pro' },
         { q: "You have answered fully and want the attention to move. Which strategy?", a: "Hand It Back.", bundle: 'pro' },
       ]
     },
     {
       name: "Sequences",
-      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **A First Conversation** — Answer What They Are Really Asking → Give a Detail → Hand It Back → Match Their Depth\n2. **Going a Bit Deeper** — Match Their Depth → Say the Small True Thing → Name What You Are Into → Hand It Back\n3. **A Question You Would Rather Not Answer** — Keep Something Back → Give a Detail → Hand It Back → Match Their Depth\n\nAll three end by handing the attention over, and none of them starts there.",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **A First Conversation** — The Real Question → Give a Detail → Hand It Back → Match Their Depth\n2. **Going a Bit Deeper** — Match Their Depth → The Small True Thing → What You're Into → Hand It Back\n3. **A Question You Would Rather Not Answer** — Keep Something Back → Give a Detail → Hand It Back → Match Their Depth\n\nAll three end by handing the attention over, and none of them starts there.",
       cards: [
         { q: "What is the order in A First Conversation?", a: "Real answer, one detail, hand it back, then match whatever they give you.", bundle: 'pro' },
         { q: "Why does that sequence answer three times before turning it around?", a: "So the handover lands as generosity rather than as escape.", bundle: 'pro' },
@@ -6420,10 +6420,10 @@ const memorizeCollections = {
   showunderstanding: [
     {
       name: "Core Idea",
-      description: "Three moves that between them cover almost everything somebody needs after they have told you something.\n\n1. **Ask Follow-up Questions**\n2. **Loop Back or Rephrase**\n3. **Relate Through Sharing**\n\nAsk when the story is unfinished, reflect when it has landed, share once it has been heard. One at a time.",
+      description: "Three moves that between them cover almost everything somebody needs after they have told you something.\n\n1. **Follow-up Question**\n2. **Loop Back**\n3. **Relate Through Sharing**\n\nAsk when the story is unfinished, reflect when it has landed, share once it has been heard. One at a time.",
       cards: [
         { q: "What is the goal of showing understanding?", a: "Actively demonstrating that you followed what someone said — not just listening quietly.", bundle: 'free' },
-        { q: "What are the three moves in this pack?", a: "Ask Follow-up Questions, Loop Back or Rephrase, and Relate Through Sharing.", bundle: 'free' },
+        { q: "What are the three moves in this pack?", a: "Follow-up Question, Loop Back, and Relate Through Sharing.", bundle: 'free' },
         { q: "How many should you use at once?", a: "One. Stacking them makes the response about you managing the conversation.", bundle: 'free' },
         { q: "Is understanding the same as agreeing?", a: "No. You can fully understand someone and disagree with them a minute later.", bundle: 'free' },
         { q: "What decides which of the three to use?", a: "Where they are — still telling it, just landed it, or finished and settled.", bundle: 'free' },
@@ -6433,10 +6433,10 @@ const memorizeCollections = {
       ]
     },
     {
-      name: "Ask Follow-up Questions",
+      name: "Follow-up Question",
       description: "",
       cards: [
-        { q: "What is Ask Follow-up Questions?", a: "Asking something that could only come from someone who was listening to that particular sentence.", bundle: 'free' },
+        { q: "What is Follow-up Question?", a: "Asking something that could only come from someone who was listening to that particular sentence.", bundle: 'free' },
         { q: "What does it sound like?", a: "\"Can you tell me more about that?\" / \"What were you feeling at that moment?\"", bundle: 'free' },
         { q: "When is it the right move?", a: "When the story isn't finished. Asking keeps them going.", bundle: 'free' },
         { q: "What are the three kinds of follow-up?", a: "More of the same, the moment itself, or what came next.", bundle: 'free' },
@@ -6447,10 +6447,10 @@ const memorizeCollections = {
       ]
     },
     {
-      name: "Loop Back or Rephrase",
+      name: "Loop Back",
       description: "",
       cards: [
-        { q: "What is Loop Back or Rephrase?", a: "Saying their point back in your own words, so they can hear that it arrived — or correct you.", bundle: 'free' },
+        { q: "What is Loop Back?", a: "Saying their point back in your own words, so they can hear that it arrived — or correct you.", bundle: 'free' },
         { q: "What does it sound like?", a: "\"So what you're saying is...\" / \"I hear that you felt frustrated when that happened.\"", bundle: 'free' },
         { q: "Why your own words rather than theirs?", a: "Repeating their exact sentence is parroting. Rephrasing proves the idea went in.", bundle: 'free' },
         { q: "What are the three kinds of loop?", a: "The summary, the feeling named, or the check.", bundle: 'free' },
@@ -6482,15 +6482,15 @@ const memorizeCollections = {
         { q: "What does Finished or Not read?", a: "The pause. A short breath means carry on; a longer one means they have landed something.", bundle: 'pro' },
         { q: "What does Raw or Settled read?", a: "How fresh the feeling is — whether they are still inside it or can look at it from outside.", bundle: 'pro' },
         { q: "Can the two cues disagree?", a: "Yes. Somebody can finish a story and still be raw, and then you loop rather than relate.", bundle: 'pro' },
-        { q: "They are mid-story and not finished. Which move?", a: "Ask Follow-up Questions — a question is permission to carry on.", bundle: 'pro' },
-        { q: "They have just said something that cost them. Which move?", a: "Loop Back or Rephrase — reflect it rather than asking for more.", bundle: 'pro' },
+        { q: "They are mid-story and not finished. Which move?", a: "Follow-up Question — a question is permission to carry on.", bundle: 'pro' },
+        { q: "They have just said something that cost them. Which move?", a: "Loop Back — reflect it rather than asking for more.", bundle: 'pro' },
         { q: "They have finished and the air has cleared. Which move?", a: "Relate Through Sharing, briefly.", bundle: 'pro' },
         { q: "Why is there no two-strategy collection in this pack?", a: "Two is a comparison, not a choice. A collection makes you pick between at least three.", bundle: 'pro' },
       ]
     },
     {
       name: "Sequences",
-      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **Loop, Then Ask** — Loop Back or Rephrase → Ask Follow-up Questions → Loop Back or Rephrase\n2. **Ask, Then Relate** — Ask Follow-up Questions → Loop Back or Rephrase → Relate Through Sharing\n3. **Loop, Loop, Ask** — Loop Back or Rephrase → Loop Back or Rephrase → Ask Follow-up Questions\n\nIn each one the order is doing the work, not the individual moves.",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **Loop, Then Ask** — Loop Back → Follow-up Question → Loop Back\n2. **Ask, Then Relate** — Follow-up Question → Loop Back → Relate Through Sharing\n3. **Loop, Loop, Ask** — Loop Back → Loop Back → Follow-up Question\n\nIn each one the order is doing the work, not the individual moves.",
       cards: [
         { q: "What is the order in Loop, Then Ask?", a: "Loop back, ask a follow-up, then loop back again on the new part.", bundle: 'pro' },
         { q: "Why does the loop come before the question?", a: "A question after a loop feels like interest. On its own it can feel like being interviewed.", bundle: 'pro' },
