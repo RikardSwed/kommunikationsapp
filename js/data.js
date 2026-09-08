@@ -7483,7 +7483,7 @@ const collections = {
   firststrategies: [
     {
       name: "Opening Statement",
-      guideFront: "Start with a remark when...",
+      guideFront: "Start with a statement when...",
       guideBack: "A remark about the room",
       description: "Say something instead of asking something. \"That queue is not moving.\" \"I have no idea what half of these are.\"\n\nIt works because a question hands the other person a job. They have to think of an answer, and if they are shy or tired or busy, the easiest answer is a short one — which ends the conversation you just started. A statement hands them material instead. They can agree, disagree, add to it, or laugh, and any of those is a conversation.\n\nIt also lets them out politely. Someone who does not want to talk can smile and say nothing, and nobody has been rude. An unanswered question is awkward; an unanswered remark is not.\n\nTypical phrases: \"This place is busier than I expected.\", \"I've been staring at this menu for five minutes.\", \"That's a serious amount of cake for one meeting.\"\n\nThree kinds of statement, and they are the ones you will use most:\n\n1. Something you are both looking at — the safest, because it is true for both of you. \"That painting is enormous.\"\n\n2. Something about you, right now — gives them something personal without asking for anything. \"I've come to the wrong building twice already.\"\n\n3. A small opinion — invites the most, risks the most. \"I think the old one was better.\"\n\nMindset: you are not performing. You are putting one true, ordinary sentence on the table for someone else to pick up.",
       inputs: [
@@ -7515,8 +7515,8 @@ const collections = {
     },
     {
       name: "Say It Back",
-      guideFront: "Use this strategy when...",
-      guideBack: "One way it could sound",
+      guideFront: "Repeat back in your words when...",
+      guideBack: "Their point, in your words",
       description: "Repeat what you understood before you answer. \"So the deadline moved and nobody told you.\" Then answer.\n\nIt works for two reasons at once. It proves you were listening, which is most of what people want. And it gives you a few seconds to think — you are talking, so the silence is filled, but you have not committed to anything yet.\n\nIt is also the fastest way to find out you had it wrong. Half the arguments people have are about two different versions of what was said, and saying it back catches that before it costs anyone an evening.\n\nTypical phrases: \"So what you're saying is...\", \"Let me check I've got this...\", \"So the problem is the timing, not the work itself.\"\n\nThree ways to do it:\n\n1. Short and plain — the standard. \"So it's moved to Friday.\"\n\n2. Name the part that matters — shows you got the point, not just the words. \"So the issue is that nobody asked you.\"\n\n3. Check rather than state — invites the correction. \"Have I got that right?\"\n\nMindset: say it back in your own words, not theirs. Repeating their exact sentence sounds like a technique. Rewording it proves you understood.",
       inputs: [
         { q: "A colleague explains a problem with several parts.", a: "\"So the deadline moved and nobody told you until today.\"", bundle: 'free' },
@@ -7531,8 +7531,8 @@ const collections = {
     },
     {
       name: "Ask Plainly",
-      guideFront: "Use this strategy when...",
-      guideBack: "One way it could sound",
+      guideFront: "Say what you want when...",
+      guideBack: "A plain request",
       description: "Say what you want, in one sentence, without building up to it. \"Could you take the Thursday meeting?\" Then stop talking.\n\nIt works because the long run-up is what makes a request awkward, not the request. Three sentences of apology before the ask tell the other person that you think you are imposing — so by the time it arrives, they think so too.\n\nStopping afterwards matters as much as starting cleanly. Most people ask well and then fill the silence with reasons, which turns a simple question into a case that can be argued with.\n\nTypical phrases: \"Could you take Thursday?\", \"I'd like to swap weekends if that works.\", \"Can you have a look at this before five?\"\n\nThree parts, all short:\n\n1. Say it as a question, not a hint. \"Are you around Thursday?\" is a hint. \"Could you take Thursday?\" is a request.\n\n2. Make it specific — a vague ask is hard to say yes to. What, and when.\n\n3. Stop. Let them answer. The silence is theirs, not a gap you need to fill.\n\nMindset: asking is normal. You are giving them the chance to say yes, and leaving them free to say no.",
       inputs: [
         { q: "You need a colleague to cover a meeting.", a: "\"Could you take the Thursday meeting? I'm away.\"", bundle: 'free' },
@@ -7547,8 +7547,8 @@ const collections = {
     },
     {
       name: "A Friendly No",
-      guideFront: "Use this strategy when...",
-      guideBack: "One way it could sound",
+      guideFront: "Say no clearly and warmly when...",
+      guideBack: "A clear no, warmly said",
       description: "Say no clearly, warmly, and without a pile of reasons. \"I can't this time — thanks for asking.\"\n\nIt works because the warmth and the clarity do different jobs, and people usually swap one for the other. Soften the no and it stops being a no: \"probably not\", \"I'll see\" and \"maybe\" all cost the other person a week of waiting. Sharpen it and it lands as a rejection of them.\n\nThe reasons are the trap. Every reason you add is something the other person can solve, and now you are negotiating a decision you had already made. One short reason is friendly. Three is an invitation to argue.\n\nTypical phrases: \"I can't, sorry — thanks for asking.\", \"Not this time.\", \"I'd like to, but I can't take anything else on this month.\"\n\nThree parts, and the order matters:\n\n1. Something warm — one clause, not a paragraph. \"Thanks for thinking of me.\"\n\n2. The word no, or something that plainly means it. Not \"probably not\".\n\n3. At most one reason, and only if you want to give one. You do not owe anyone the reason.\n\nMindset: soften the delivery, never the answer. A clear no given kindly is a favour — it lets them ask someone else today.",
       inputs: [
         { q: "A colleague asks you to take on another task.", a: "\"I can't take anything else on this month, sorry.\"", bundle: 'free' },
@@ -7563,8 +7563,8 @@ const collections = {
     },
     {
       name: "Answer With a Hook",
-      guideFront: "Add something to ask about when...",
-      guideBack: "Something for them to ask about",
+      guideFront: "Answer and add something to ask about when...",
+      guideBack: "An answer that invites a question",
       description: "When someone asks about you, answer with something they can ask about. Not \"fine\" — \"good, though I've spent the whole week arguing with a printer.\"\n\nIt works because the person asking is trying to start a conversation, and a closed answer leaves them with nothing. They then have to think of a new question, which is work, and after two of those most people give up. A hook does their next move for them.\n\nIt also solves the problem people mean when they say they are bad at small talk. They are usually good at asking and empty at answering — so every conversation runs on their questions until they run out.\n\nTypical phrases: \"Good — busy week, mostly in a good way.\", \"Fine, apart from the drive.\", \"I'm alright. Slightly obsessed with a new thing, if I'm honest.\"\n\nThree sizes of hook:\n\n1. One extra detail — the smallest version, and enough. \"Good. Long week.\"\n\n2. A small complaint or oddity — invites the most, because people love a story. \"Fine, except I've locked myself out twice.\"\n\n3. Something you actually care about — for people you want to know better. \"Good. I've started running again, which is going badly.\"\n\nMindset: give them something to work with. The point is not to be interesting; it is to leave a door open.",
       inputs: [
         { q: "Someone asks how your week has been.", a: "\"Good — long, though. I've spent most of it arguing with a printer.\"", bundle: 'free' },
@@ -7745,8 +7745,8 @@ const collections = {
   talkingaboutyourself: [
     {
       name: "Give a Detail",
-      guideFront: "Use this strategy when...",
-      guideBack: "One way it could sound",
+      guideFront: "Add a detail when...",
+      guideBack: "The answer, plus one detail",
       description: "Answer the question, then add one concrete thing. Not \"busy\" — \"busy, mostly moving a greenhouse in the rain.\"\n\nIt works because a closed answer is a dead end for the other person. They asked in order to get a conversation, and now they have to invent a fresh question with nothing to build it from. Two of those in a row and most people conclude you would rather not talk, which is almost never what you meant.\n\nOne detail is the whole technique. It does not have to be interesting, and trying to make it interesting is what stops people using it. The detail is a handle, not a performance.\n\nTypical phrases: \"Good — long, though. The week had a lot in it.\", \"Fine, apart from the drive.\", \"Busy. Mostly moving a greenhouse, oddly.\"\n\nThree details that always work:\n\n1. The concrete thing — an object, a place, a number. Easiest to ask about. \"We drove back from Aarhus on Sunday.\"\n\n2. The small mishap — invites the most, because people love a story with a problem in it. \"Fine, except I've locked myself out twice this week.\"\n\n3. The odd contrast — the bit that does not fit. \"Quiet week. Which is strange, because it started with a funeral.\"\n\nMindset: you are not being asked to be interesting. You are being asked to leave a door open.",
       inputs: [
         { q: "Someone asks how your week has been.", a: "\"Good — long, though. I've spent most of it arguing with a printer.\"", bundle: 'free' },
@@ -7761,8 +7761,8 @@ const collections = {
     },
     {
       name: "Match Their Depth",
-      guideFront: "Use this strategy when...",
-      guideBack: "One way it could sound",
+      guideFront: "Give as much as they gave when...",
+      guideBack: "An answer of the same size",
       description: "Answer at roughly the depth they offered. They mention a hard week at work, you mention yours. They tell you their marriage is ending, you do not reply with the printer.\n\nIt works because conversations get deeper in steps, and each step has to be taken by both people. Someone who has just shared something real is checking whether it was safe. A light answer tells them it was not, and they will close the subject and be pleasant for the rest of the evening.\n\nThe mistake runs both ways, though, and the other direction is worse. Answering a polite question with something very personal is not honesty, it is a step nobody offered to take, and it usually ends the conversation faster than the closed answer would have.\n\nTypical phrases: \"That sounds heavy. Mine's been similar, honestly.\", \"That's a lot to be carrying.\", \"I'll match you — I've had a rough few months too.\"\n\nThree sizes to read, and what each is asking for:\n\n1. The polite question — \"how are you?\" in a corridor. Wants one line and a door. Do not go deep here.\n\n2. The real question — they have stopped and are looking at you. Wants something true, one level below the polite answer.\n\n3. The disclosure — they have just told you something significant. Wants you to meet it, or to say plainly that you are listening rather than matching.\n\nMindset: one step at a time, and take it after they do. Depth is a staircase, not a switch.",
       inputs: [
         { q: "A colleague mentions their week has been hard.", a: "\"Sounds like it. Mine's been the same kind of week, honestly.\"", bundle: 'free' },
@@ -7777,7 +7777,7 @@ const collections = {
     },
     {
       name: "The Small True Thing",
-      guideFront: "Answer without polishing it when...",
+      guideFront: "Say what is actually true when...",
       guideBack: "The honest version",
       description: "Say what is actually true, at whatever size it happens to be, instead of hunting for something impressive. \"I've been watching a lot of terrible television\" is a better answer than a polished one.\n\nIt works because people are not measuring how eventful your life is. They are finding out what you are like, and specificity is what tells them. \"Not much\" reveals nothing. \"Mostly repainting a wardrobe badly\" reveals a person.\n\nIt also solves the paralysis. The reason people say \"nothing much\" is that they are searching for something worth reporting and failing to find it. There is nothing to find, because that was never the standard.\n\nTypical phrases: \"Nothing dramatic — mostly repainting a wardrobe badly.\", \"I've been going to bed at nine and I'm not sorry.\", \"Honestly? Terrible television and too much coffee.\"\n\nThree sizes, and all three are fine:\n\n1. Ordinary and specific — the default, and the most useful. \"I've been trying to fix a bike I don't know how to fix.\"\n\n2. Mildly embarrassing — costs nothing and buys a lot of warmth. \"I've watched the same series twice this month.\"\n\n3. Actually difficult — say it plainly and without the full weight, so they can decide whether to go there. \"It's been a hard few weeks, honestly. Nothing I can't handle.\"\n\nMindset: the bar is true and specific, not interesting. Nobody is grading this.",
       inputs: [
@@ -7794,7 +7794,7 @@ const collections = {
     {
       name: "The Real Question",
       guideFront: "Give the personal version when...",
-      guideBack: "The version about you",
+      guideBack: "An answer about you",
       description: "Give the version of the answer that is about you, not the official one. \"What do you do?\" is not a request for a job title.\n\nIt works because the literal answer is usually the least useful one available. \"I'm a project manager\" tells them what to call you and nothing else, and it is very hard to ask a follow-up question about a job title. What they are actually asking is what your days are like, and whether there is anything in there worth talking about.\n\nThe same applies to most standard questions. \"Where are you from?\" is asking what shaped you. \"How long have you been here?\" is asking whether you feel settled.\n\nTypical phrases: \"On paper I'm a teacher. In practice I spend most of the day negotiating.\", \"Officially, admin. Actually, I fix things nobody else wants to.\", \"I'm from a small place you won't have heard of, which explains a lot about me.\"\n\nThree ways to give the real answer:\n\n1. Add what it is actually like — one clause after the title. \"I teach English. Mostly to teenagers, which is as loud as it sounds.\"\n\n2. Give the part you find interesting — even if it is a small part of the job. \"Technically accounting. The bit I like is the detective work.\"\n\n3. Answer the person, not the form — for questions about where you are from, how long you have been somewhere, how you know the host. \"I moved here for someone and stayed for the city.\"\n\nMindset: they are not filling in a form. Give them the version they can ask a second question about.",
       inputs: [
         { q: "Someone asks what you do.", a: "\"I teach English. Mostly to teenagers, which is as loud as it sounds.\"", bundle: 'free' },
@@ -7825,8 +7825,8 @@ const collections = {
     },
     {
       name: "Keep Something Back",
-      guideFront: "Use this strategy when...",
-      guideBack: "One way it could sound",
+      guideFront: "Give the short version when...",
+      guideBack: "A true answer, kept short",
       description: "Answer a question you would rather not answer, without either lying or opening the whole subject. \"That's a long story I'm not up for tonight — short version, it ended badly.\"\n\nIt works because the two obvious options are both bad. Stonewalling makes the thing enormous and makes the other person feel they trod on something. Answering fully, when you did not want to, is how people end up telling near-strangers things they regret at two in the morning.\n\nThe middle option is a partial answer given warmly. It says the door is closed without saying that you mind being asked, and most people take it gracefully because you gave them something rather than nothing.\n\nTypical phrases: \"Short version: it ended badly.\", \"I'll skip that one, if that's alright.\", \"Ask me again when we know each other better.\", \"That's a whole evening's answer and this is a party.\"\n\nThree ways to keep it:\n\n1. The short version — give the headline and stop. \"We're not in touch. That's about all there is to it.\"\n\n2. Name the boundary warmly — the clearest, and fine with anyone. \"I'd rather not go into that one. Nothing to do with you.\"\n\n3. Move it rather than close it — for people you do want to tell, later. \"Ask me again when we're not in a room full of people.\"\n\nMindset: you can give them something without giving them everything. A door left ajar is not a wall.",
       inputs: [
         { q: "Someone asks about a breakup you do not want to discuss.", a: "\"Short version: it ended badly. That's probably enough for a Tuesday.\"", bundle: 'free' },
@@ -7842,7 +7842,7 @@ const collections = {
     {
       name: "Hand It Back",
       guideFront: "Turn the attention around when...",
-      guideBack: "One way it could sound",
+      guideBack: "A question back to them",
       description: "Return the attention — but only after you have answered. \"That's me. What about you, though?\"\n\nIt works because a conversation needs both people to be curious, and turning the attention around is how it keeps moving. Done at the right moment it feels generous.\n\nDone too early, it is the single most common way people avoid being known. Answering in four words and immediately asking a question looks like interest and functions as a shield: they learn nothing about you, they do all the work, and after a while they stop asking.\n\nThe timing is the whole strategy. Answer first, with something real. Then hand it over.\n\nTypical phrases: \"That's my week. What about yours?\", \"Enough about the greenhouse. How was Denmark?\", \"Your turn — you said something about a new flat?\"\n\nThree good moments to hand it back:\n\n1. After a real answer — the standard, and the only one that costs nothing. Answer, then ask.\n\n2. When they have given you a thread — hand it back into their own material. \"You mentioned Malmö earlier.\"\n\n3. When you have been talking a while — the graceful exit from your own subject. \"I've had a good run at this. Your turn.\"\n\nAnd one to avoid: immediately, before you have said anything. That is not generosity, it is a way of staying out of reach.\n\nMindset: answer first. Handing it back before you have said anything is a way of not being asked again.",
       inputs: [
         { q: "You have answered properly and want to turn it around.", a: "\"That's my week, anyway. What about yours?\"", bundle: 'free' },
@@ -7859,8 +7859,8 @@ const collections = {
   startingconversations1: [
     {
       name: "Simple Greeting",
-      guideFront: "Use this strategy when...",
-      guideBack: "One way it could sound",
+      guideFront: "Say hello and nothing else when...",
+      guideBack: "A greeting, on its own",
       description: "Say hello. Nothing more. A greeting is not really a question and it is not really information — it is a signal that you are willing to talk, and it puts the next move in the other person's hands without any pressure.\n\nIt works because it is the lowest-risk opener there is. Nobody has ever been offended by \"morning\". If they answer with anything more than a word, the conversation has started; if they do not, nothing has been lost and nothing was awkward.\n\nTypical phrases: \"Hi, how are you?\", \"Morning\", \"Alright?\", \"Hello — long queue, isn't it\"\n\nFour ways to greet:\n\n1. The plain greeting — no addition at all. \"Morning.\" Often the right amount when you pass someone daily.\n\n2. Greeting plus their name — much warmer for one extra word. \"Morning, Sara.\"\n\n3. The ritual question — \"how are you\" used as a greeting, not a real question. Expect \"fine, you?\" and treat that as the door opening.\n\n4. Greeting plus a small hook — one clause that gives them something to answer if they want. \"Hi — busy in here today.\"\n\nMindset: a greeting is an offer, not a demand. If they only nod back, that is a complete and acceptable outcome.",
       inputs: [
         { q: "You pass a neighbour on the stairs for the third time this week.", a: "\"Morning.\"", bundle: 'free' },
@@ -7875,8 +7875,8 @@ const collections = {
     },
     {
       name: "Introduce Yourself",
-      guideFront: "Use this strategy when...",
-      guideBack: "One way it could sound",
+      guideFront: "Say your name when...",
+      guideBack: "Your name, and a reason for theirs",
       description: "Say your name and give them a reason to say theirs. This is the opener that turns a stranger into someone you have met, and it does something no other opener does: it makes the second conversation easy, because there is no longer a first one to get through.\n\nIt works because it removes the most common obstacle in a room full of people — not knowing whether you are allowed to talk. Saying your name answers that for both of you.\n\nThe trick is to give a small piece of context along with the name, so they have something to reply to besides their own name.\n\nTypical phrases: \"I don't think we've met — I'm...\", \"Hi — I work with the design team. I'm...\", \"We haven't been introduced, have we? I'm...\"\n\nFour ways to introduce yourself:\n\n1. Name only — short and clear, works everywhere. \"Hi, I'm...\"\n\n2. Name plus your connection to this room — gives them the frame. \"I'm... — and I'm here with the school group.\"\n\n3. Name plus a reason you are talking to them — takes the strangeness out. \"I'm... I think we're both waiting for the same person.\"\n\n4. Naming the fact that you have not met — useful when you might have. \"Have we actually met? I'm never sure. I'm...\"\n\nMindset: say it early rather than late. Introducing yourself after twenty minutes of talking is much more awkward than doing it in the first ten seconds.",
       inputs: [
         { q: "You arrive at a party where you only know the host.", a: "\"I don't think we've met — I'm...\"", bundle: 'free' },
@@ -7891,8 +7891,8 @@ const collections = {
     },
     {
       name: "Comment on the Situation",
-      guideFront: "Use this strategy when...",
-      guideBack: "One way it could sound",
+      guideFront: "Remark on what is happening when...",
+      guideBack: "An observation, not a question",
       description: "Say something about the thing you are both in. The room, the queue, the weather, the delay, the noise, the food. You are not asking anything — you are putting a shared observation into the air and letting them pick it up.\n\nIt works because the situation is the one thing you are guaranteed to have in common. You do not need to know anything about the person, and they do not need to know anything about you: the evidence is right there in front of both of you.\n\nA comment is lower pressure than a question, because it does not require an answer. That makes it the safest opener with a stranger who might not want to talk.\n\nTypical phrases: \"It's really crowded today.\", \"This is taking a while.\", \"Nice place, this.\", \"I wonder why it always takes so long here.\"\n\nFour ways to comment on the situation:\n\n1. State what you both see — plain and factual. \"It's much busier than last week.\"\n\n2. React to it — put a small feeling on it. \"This queue is testing me a bit.\"\n\n3. Wonder out loud — invites an answer without asking for one. \"I wonder why they only ever open one till.\"\n\n4. Compare it to before — useful if you have both been here before. \"It was half this size last time.\"\n\nMindset: it is meant to be ordinary. The comment does not have to be interesting; it has to be shared.",
       inputs: [
         { q: "You are in a long queue with one other person behind you.", a: "\"This is moving slowly, isn't it.\"", bundle: 'free' },
@@ -7907,8 +7907,8 @@ const collections = {
     },
     {
       name: "Ask About the Situation",
-      guideFront: "Use this strategy when...",
-      guideBack: "One way it could sound",
+      guideFront: "Ask about what is happening when...",
+      guideBack: "A question, not a remark",
       description: "Ask them something about where you both are. When it starts, where the room is, whether they know how it works, whether this is their first time. It is the question form of the previous move, and it does one extra thing: it gives them a reason to speak.\n\nIt works because the question is easy to answer and obviously genuine. Nobody thinks you are prying when you ask what time the thing begins, and answering costs them nothing.\n\nIt is also the opener with the highest reply rate. A comment can be met with a nod; a question almost always gets words back — and words are what you need.\n\nTypical phrases: \"Do you know when it starts?\", \"Is this the right queue?\", \"Have you been to one of these before?\", \"Do you know how this works?\"\n\nFour ways to ask about the situation:\n\n1. Practical information — the simplest and most natural. \"Do you know if there's a break?\"\n\n2. Whether they have done this before — opens the door to more. \"Is this your first one of these?\"\n\n3. How something works — invites them to be helpful. \"Do you know if we're supposed to sign in?\"\n\n4. Checking your own assumption — gives them something easy to confirm. \"This is the queue for the front section, isn't it?\"\n\nMindset: ask the question you actually want answered. A real question sounds different from an invented one, and people can hear the difference immediately.",
       inputs: [
         { q: "You arrive at an event and are not sure where to go.", a: "\"Do you know if we're meant to sign in somewhere?\"", bundle: 'free' },
@@ -8057,8 +8057,8 @@ const collections = {
   showunderstanding: [
     {
       name: "Follow-up Question",
-      guideFront: "Use this strategy when...",
-      guideBack: "One way it could sound",
+      guideFront: "Ask about what they just said when...",
+      guideBack: "A question about their last sentence",
       description: "You show understanding by asking for more — a question that could only come from someone who was listening to that particular sentence.\n\nIt works because a follow-up question is proof of attention in a way that agreement never is. \"That sounds hard\" can be said by someone who heard nothing. \"What did your manager actually say?\" cannot.\n\nThis is also the move that keeps the floor with them. They are still telling it, and a question is permission to carry on.\n\nTypical phrases: \"Can you tell me more about that?\", \"What were you feeling at that moment?\", \"What happened after that?\"\n\nThree kinds of follow-up, and they do different jobs:\n\n1. More of the same — widens the picture. \"What else went wrong with it?\"\n\n2. The moment — goes inward, to what it was like. \"What was going through your head right then?\"\n\n3. What came next — moves the story on. \"So what happened after you sent it?\"\n\nAim it at the specific thing, not the topic. \"Tell me about school\" is a subject change; \"what did the teacher actually say?\" is a follow-up.\n\nMindset: this is the move for when the story is not finished. Asking keeps them going, which is usually what somebody mid-story actually wants.",
       inputs: [
         { q: "They say: \"That project was honestly a nightmare from start to finish.\"", a: "\"What was the worst part of it?\"", bundle: 'free' },
@@ -8073,7 +8073,7 @@ const collections = {
     },
     {
       name: "Loop Back",
-      guideFront: "Repeat it in your words when...",
+      guideFront: "Say their point back in your words when...",
       guideBack: "Their point, in your words",
       description: "You say their point back in your own words, so they can hear that it arrived intact — or correct you if it did not.\n\nIt works because almost nothing else in a conversation lets somebody find out whether they have been understood. They can guess from your face. A loop tells them.\n\nIt sounds like it adds nothing, which is why it is the most underrated move here. What it actually does is finish something the other person started and could not finish alone.\n\nTypical phrases: \"So what you're saying is...\", \"I hear that you felt frustrated when that happened.\", \"You mean the situation was hard because...\"\n\nThree kinds of loop:\n\n1. The summary — the shape of the whole thing. \"So the deadline moved and nobody told you.\"\n\n2. The feeling named — the part they did not say out loud. \"That sounds like it was more embarrassing than annoying.\"\n\n3. The check — offered as a question, so they can fix it. \"Have I got that right? It's the not being asked that bothers you.\"\n\nUse your own words, not theirs. Repeating someone's exact sentence back is parroting; rephrasing it proves the idea went in rather than the syllables.\n\nMindset: being slightly wrong is useful here. \"No, not annoyed — disappointed\" is somebody getting closer to their own point, which is exactly what you were offering.",
       inputs: [
@@ -8089,7 +8089,7 @@ const collections = {
     },
     {
       name: "Relate Through Sharing",
-      guideFront: "Match it with your own when...",
+      guideFront: "Offer a time it happened to you when...",
       guideBack: "A time it happened to you",
       description: "You show understanding by offering something of your own — a time you felt the same, thought the same, or wanted the same thing.\n\nIt works because it tells somebody they are not the only person this has happened to, which is a different comfort from being understood and sometimes a bigger one.\n\nIt is also the move with the shortest fuse. Done badly it is the conversational equivalent of taking the microphone, and the difference between the two is mostly length.\n\nTypical phrases: \"I know exactly what you mean, something similar happened to me...\", \"I felt the same way when...\", \"That reminds me of a time when I...\"\n\nThree ways to relate, in rising order of how safe they are:\n\n1. The matching value — safest, because it says nothing about you. \"I'd have wanted to be asked too.\"\n\n2. The matching feeling — names the same experience without a story attached. \"I know that specific kind of frustration.\"\n\n3. The matching experience — warmest and riskiest, because it comes with events. \"I had almost exactly that with a group project.\"\n\nKeep it short and hand it straight back. Two sentences of yours, then a question or a pause. The moment it grows a middle, you have taken over.\n\nMindset: the point is connection, not comparison. \"The same thing happened to me but worse\" is not relating, it is competing, and everyone can hear the difference.",
       inputs: [
