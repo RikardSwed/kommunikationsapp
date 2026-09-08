@@ -3433,6 +3433,9 @@ const challengesCollections = {
         { q: "You realise they know nothing about you.", a: "\"You've had all the questions. I came straight from work and I'm still winding down.\" [Background Question]", bundle: 'pro' },
         { q: "You have asked a fourth question without giving anything back.", a: "\"Right — my turn to be useful. I've been here twice and I still don't know where the coffee is.\" [Status Question]", bundle: 'pro' },
         { q: "You catch yourself planning the next question mid-answer.", a: "\"Say that last bit again. I stopped listening and started planning, which is rude of me.\" [Status Question]", bundle: 'pro' },
+        { q: "You have not offered a single opinion of your own.", a: "\"I'll go first this time — I thought the second half dragged. Did you?\" [Opinion Question]", bundle: 'pro' },
+        { q: "You are asking things you do not actually want to know.", a: "\"Ignore that one, I was filling space. What did you make of the venue?\" [Opinion Question]", bundle: 'pro' },
+        { q: "They have answered five questions and asked none.", a: "\"You've been very patient with me. I'm here because I never leave the house otherwise.\" [Purpose Question]", bundle: 'pro' },
       ]
     },
     {
@@ -3446,6 +3449,9 @@ const challengesCollections = {
         { q: "They clearly want the light version.", a: "\"What are you working on at the moment? I'm deep in a spreadsheet I don't understand.\" [Action Question]", bundle: 'pro' },
         { q: "They gave the polite version and moved straight on.", a: "\"Mine's less polite — this week has been a mess. What's yours actually been like?\" [Status Question]", bundle: 'pro' },
         { q: "You want to reopen it without asking the same thing twice.", a: "\"I won't ask again. I'll just say I'm knackered and see whether that's contagious.\" [Status Question]", bundle: 'pro' },
+        { q: "They gave a one-word answer and looked away.", a: "\"I'll leave that one. What did you think of the talk, though?\" [Opinion Question]", bundle: 'pro' },
+        { q: "You asked something personal too early.", a: "\"Too nosy, sorry. Safer ground — how did you hear about this?\" [Background Question]", bundle: 'pro' },
+        { q: "The honest question got a joke back.", a: "\"Fair enough. Mine's honest anyway: I nearly didn't come tonight.\" [Purpose Question]", bundle: 'pro' },
       ]
     },
     {
@@ -3459,6 +3465,9 @@ const challengesCollections = {
         { q: "The question was too wide and they went blank.", a: "\"Let me narrow that. Been anywhere at all this summer? I got as far as my mother's.\" [Background Question]", bundle: 'pro' },
         { q: "They said \"not much\" and looked slightly apologetic about it.", a: "\"Nobody has an answer to that one. Eaten anything good lately? I had a genuinely bad kebab.\" [Action Question]", bundle: 'pro' },
         { q: "You asked about the whole year and got nothing back.", a: "\"Too big a question. Last weekend — did you do anything at all? I moved a sofa.\" [Action Question]", bundle: 'pro' },
+        { q: "They cannot think of an opinion either.", a: "\"I'll put one up and you can knock it down — I thought it was overrated.\" [Opinion Question]", bundle: 'pro' },
+        { q: "You asked about work and got \"the usual\".", a: "\"What's the usual, though? I genuinely don't know what your days look like.\" [Action Question]", bundle: 'pro' },
+        { q: "The blank is because they have only just arrived.", a: "\"You've only just walked in. How did you get here — far to come?\" [Background Question]", bundle: 'pro' },
       ]
     },
     {
@@ -3472,6 +3481,9 @@ const challengesCollections = {
         { q: "One person answered politely and it stopped.", a: "\"That's a good one. Mine's less impressive — I've been rewatching the same series for a month.\" [Action Question]", bundle: 'pro' },
         { q: "Two people started answering at once and both stopped.", a: "\"You go — and then I'll tell you why I'm actually here.\" [Purpose Question]", bundle: 'pro' },
         { q: "The quietest person at the table still has not spoken.", a: "\"I haven't heard from you yet. How did you end up at this one?\" [Purpose Question]", bundle: 'pro' },
+        { q: "You want something the whole table can answer in one line.", a: "\"Quick one for everyone: better in here or out on the terrace?\" [Opinion Question]", bundle: 'pro' },
+        { q: "The group is split into two conversations and you are in neither.", a: "\"What have I missed on that side? I've been stuck on parking talk.\" [Status Question]", bundle: 'pro' },
+        { q: "Someone has just joined the group mid-conversation.", a: "\"You've arrived at a strange point. We're deciding whether the new place is any good — what's your verdict?\" [Opinion Question]", bundle: 'pro' },
       ]
     },
     {
@@ -3485,6 +3497,9 @@ const challengesCollections = {
         { q: "The exchange worked and then stopped dead.", a: "\"You said Gothenburg. Is that where you're from, or just where you were?\" [Background Question]", bundle: 'pro' },
         { q: "A status answer has nowhere obvious to go.", a: "\"Busy with what, though? I like knowing what's keeping people up.\" [Action Question]", bundle: 'pro' },
         { q: "Neither of you picked anything up from the other.", a: "\"I'm going back one — the bit about the course. What made you pick that one?\" [Purpose Question]", bundle: 'pro' },
+        { q: "You have swapped facts and neither of you said what you thought.", a: "\"So is it actually any good, or just convenient?\" [Opinion Question]", bundle: 'pro' },
+        { q: "They mentioned something in passing that you skipped over.", a: "\"You said 'again' — have you done this one before?\" [Background Question]", bundle: 'pro' },
+        { q: "An opinion answer has nowhere obvious to go.", a: "\"What would you change about it, if it were yours?\" [Opinion Question]", bundle: 'pro' },
       ]
     },
   ],
@@ -3500,6 +3515,9 @@ const challengesCollections = {
         { q: "The exchange has become about who is right.", a: "\"I've made this bigger than it was. My point was only about the edge case.\" [shrink the point]", bundle: 'pro' },
         { q: "They repeat the claim more firmly than before.", a: "\"That's on me — I led with the objection instead of the agreement. You're right about most cases.\" [concede late]", bundle: 'pro' },
         { q: "You can hear that your tone did the damage rather than the words.", a: "\"Let me say that again properly. Usually it works exactly as you said. I ran into one week where it didn't.\" [concede late]", bundle: 'pro' },
+        { q: "You opened with the exception instead of the agreement.", a: "\"Let me reorder that. I think you're right — and I'm the odd one out on it.\" [Your Own Exception]", bundle: 'pro' },
+        { q: "They have taken your example as a challenge to them personally.", a: "\"This isn't about you. I'm just the one case I happen to know from the inside.\" [Your Own Exception]", bundle: 'pro' },
+        { q: "You want the exception to sound like curiosity rather than correction.", a: "\"Where do you think it stops working? I keep hitting the same edge.\" [Where It Would Break]", bundle: 'pro' },
       ]
     },
     {
@@ -3513,6 +3531,9 @@ const challengesCollections = {
         { q: "You are defending the example rather than the point.", a: "\"Forget my case. Would you say 'nearly always' rather than 'always'?\" [narrower claim]", bundle: 'pro' },
         { q: "You said \"so it's not true\" and meant \"so it's not always true\".", a: "\"Wrong word from me. Not always — that's all I meant.\" [what one case shows]", bundle: 'pro' },
         { q: "They ask how many exceptions you actually know of.", a: "\"One I've lived and one I've watched. Not enough for a rule, enough to lose the 'always'.\" [what one case shows]", bundle: 'pro' },
+        { q: "You have one story and want to know if it is more than one.", a: "\"Is there a number on this anywhere? One case from me isn't much.\" [What the Numbers Say]", bundle: 'pro' },
+        { q: "They say your example is unusual and they are right.", a: "\"It is unusual. That's the point of it — the rule should still cover the unusual.\" [Where It Would Break]", bundle: 'pro' },
+        { q: "You want to keep the exception without denting the general claim.", a: "\"Nine times out of ten you're right. I'm interested in the tenth.\" [Where It Would Break]", bundle: 'pro' },
       ]
     },
     {
@@ -3526,6 +3547,9 @@ const challengesCollections = {
         { q: "They ask where your figure came from.", a: "\"Honestly, I can't source it. Treat it as a hunch until I check.\" [withdraw]", bundle: 'pro' },
         { q: "You said \"I read somewhere\" and cannot say where.", a: "\"I can't stand that one up, so ignore it. Here's one I can: I counted it myself last month.\" [swap the type]", bundle: 'pro' },
         { q: "A number that felt right has become a number you stated.", a: "\"I gave that as a fact and it was a guess. Let me get the real one before we go further.\" [withdraw]", bundle: 'pro' },
+        { q: "You are about to describe something you only half remember.", a: "\"I'd be making up the details. Here's one I did watch happen, start to finish.\" [The One You Have Seen]", bundle: 'pro' },
+        { q: "The invented case is doing work a real one should do.", a: "\"That's hypothetical. The real version is my old team, and it went the other way.\" [The One You Have Seen]", bundle: 'pro' },
+        { q: "You want a case that neither of you has to take on trust.", a: "\"Take the obvious one — every second person knows someone it didn't work for.\" [The Known Exception]", bundle: 'pro' },
       ]
     },
     {
@@ -3539,6 +3563,9 @@ const challengesCollections = {
         { q: "They nodded politely and the point did not land.", a: "\"That one's too far from here. Think of the recall last year — three days, whole product.\" [known exception]", bundle: 'pro' },
         { q: "You had to explain who the person in your example was.", a: "\"If I have to introduce him, he's the wrong example. Everyone knows one person who does the opposite.\" [common counter-case]", bundle: 'pro' },
         { q: "The reference turned out not to be shared at all.", a: "\"Forget that one. Simpler version: plenty of famous books were turned down a dozen times.\" [known exception]", bundle: 'pro' },
+        { q: "Your example needs three sentences of background.", a: "\"Simpler: it fell over completely the week the deliveries stopped.\" [Where It Would Break]", bundle: 'pro' },
+        { q: "The example is from a world they do not work in.", a: "\"Different industry, same shape — think of any shop the week before Christmas.\" [The Known Exception]", bundle: 'pro' },
+        { q: "You want them to see it rather than take your word for it.", a: "\"I watched this happen twice last year, both times the same way.\" [The One You Have Seen]", bundle: 'pro' },
       ]
     },
     {
@@ -3552,6 +3579,9 @@ const challengesCollections = {
         { q: "The generalisation has landed on someone in the room.", a: "\"I don't think this is really a general question, is it. Should we say the actual thing?\" [name it lightly]", bundle: 'pro' },
         { q: "Your counter-example would obviously be about the person sitting there.", a: "\"I'll keep mine out of it. Say someone had a reason we don't know about — does the rule still hold?\" [imagined case]", bundle: 'pro' },
         { q: "The room has gone quiet in that specific way.", a: "\"Let's move this off individuals. In general I'd agree with you, and there are edges.\" [name it lightly]", bundle: 'pro' },
+        { q: "The safest counter-example is your own life.", a: "\"I'll use myself — I did exactly that, and it didn't go how you'd expect.\" [Your Own Exception]", bundle: 'pro' },
+        { q: "You want a case with nobody in the room attached to it.", a: "\"There's the famous one everybody quotes. Same argument, no one here in it.\" [The Known Exception]", bundle: 'pro' },
+        { q: "The generalisation would be easier to test with a figure than a person.", a: "\"Do we actually know how common that is? I'd rather argue with a number than a person.\" [What the Numbers Say]", bundle: 'pro' },
       ]
     },
   ],
@@ -3567,6 +3597,9 @@ const challengesCollections = {
         { q: "Both of you have made the same point twice.", a: "\"We're both repeating. What would change your mind on this?\" [real question]", bundle: 'pro' },
         { q: "You are waiting to speak rather than listening.", a: "\"I've been queuing rather than listening. What was the last bit?\" [say it back]", bundle: 'pro' },
         { q: "The exchange is polite and going nowhere.", a: "\"Can I ask what you'd do if it were entirely your call?\" [real question]", bundle: 'pro' },
+        { q: "Neither of you has given a reason, only a position.", a: "\"Here's why I think it, which we haven't done yet: the last two times it cost us a week.\" [Give the Reason Behind It]", bundle: 'pro' },
+        { q: "You have interrupted twice in a row.", a: "\"Sorry — go on. I'll wait for the end this time.\" [Let Them Finish]", bundle: 'pro' },
+        { q: "You are restating your view louder rather than differently.", a: "\"Let me put your side first: you think the timing is the whole problem.\" [Say Their View Back]", bundle: 'pro' },
       ]
     },
     {
@@ -3580,6 +3613,9 @@ const challengesCollections = {
         { q: "A key word is carrying too much weight.", a: "\"Give me a case where that happened. I'll follow it much better with an example.\" [ask for a case]", bundle: 'pro' },
         { q: "You realise you have been arguing against a position they never took.", a: "\"I've been arguing with something you didn't say. Sorry — start again?\" [narrow it]", bundle: 'pro' },
         { q: "You suspect you actually agree.", a: "\"I think we might be saying the same thing in different words. Test it on me?\" [narrow it]", bundle: 'pro' },
+        { q: "They used a word you are not sure you read the same way.", a: "\"When you say 'unreliable' — do you mean late, or wrong?\" [Ask What They Mean]", bundle: 'pro' },
+        { q: "You have been answering the strongest version rather than theirs.", a: "\"Say your actual point again. I've been arguing with a tougher version of it.\" [Say Their View Back]", bundle: 'pro' },
+        { q: "They have not finished the thought and you have already replied.", a: "\"You weren't done, were you. Finish it and I'll shut up.\" [Let Them Finish]", bundle: 'pro' },
       ]
     },
     {
@@ -3593,6 +3629,9 @@ const challengesCollections = {
         { q: "You are about to say something you would have to take back.", a: "\"I'm going to stop before I say something daft. Give me ten minutes.\" [stop it]", bundle: 'pro' },
         { q: "The tone has changed and nobody has said so.", a: "\"This has gone a bit tense, hasn't it. I'd rather say that than pretend.\" [name it as we]", bundle: 'pro' },
         { q: "You want to win more than you want to be right.", a: "\"I've stopped listening and started competing. That's on me.\" [name it as we]", bundle: 'pro' },
+        { q: "You are both talking faster than you were five minutes ago.", a: "\"We've both sped up. Can we go back to normal speed?\" [Keep the Temperature Down]", bundle: 'pro' },
+        { q: "They have said something sharp and you have not reacted yet.", a: "\"I'll let that one go by. Back to the rota.\" [Keep the Temperature Down]", bundle: 'pro' },
+        { q: "You want to disagree without it sounding like a verdict on them.", a: "\"I see it differently, and I don't think you're being unreasonable.\" [Say What You Think]", bundle: 'pro' },
       ]
     },
     {
@@ -3606,6 +3645,9 @@ const challengesCollections = {
         { q: "The quietest person in the group has said one sentence.", a: "\"Sara, you've been quiet — what do you make of it?\" [hand it over]", bundle: 'pro' },
         { q: "Someone keeps talking over the same person.", a: "\"Hang on, she was still going. You were saying?\" [hand it over]", bundle: 'pro' },
         { q: "You keep starting to speak and being cut off.", a: "\"Third time I've tried to say this — give me twenty seconds.\" [take your turn]", bundle: 'pro' },
+        { q: "You have agreed with everything and said nothing of your own.", a: "\"I've been nodding along. For what it's worth, I'd do the opposite.\" [Say What You Think]", bundle: 'pro' },
+        { q: "They pause and you are not sure whether they are finished.", a: "\"Is there more? I'd rather wait than cut across you.\" [Let Them Finish]", bundle: 'pro' },
+        { q: "You have a view and everyone in the room outranks you.", a: "\"Different read from me, for what it's worth: I'd hold off a month.\" [Say What You Think]", bundle: 'pro' },
       ]
     },
     {
@@ -3619,6 +3661,9 @@ const challengesCollections = {
         { q: "Only half of their case moved you.", a: "\"The cost argument I'll give you. The timing one I still don't buy.\" [concede the part]", bundle: 'pro' },
         { q: "Conceding feels like losing in front of others.", a: "\"I've come round to your view on this, for the record.\" [say it plainly]", bundle: 'pro' },
         { q: "You want to concede but only quietly.", a: "\"Say the bit about the night shift again — that's the part that landed.\" [name what did it]", bundle: 'pro' },
+        { q: "You have changed your mind and cannot say why yet.", a: "\"Say the middle part again — something in there moved me and I want to hear it twice.\" [Ask What They Mean]", bundle: 'pro' },
+        { q: "You are still against it but your reason has gone.", a: "\"I've run out of reasons and I'm still uneasy. That's not much of an argument.\" [Give the Reason Behind It]", bundle: 'pro' },
+        { q: "They have conceded a point and you are pressing on anyway.", a: "\"You've already given me that one. I'll stop pushing at it.\" [Keep the Temperature Down]", bundle: 'pro' },
       ]
     },
   ],
@@ -4677,6 +4722,9 @@ const challengesCollections = {
         { q: "There is something you have genuinely wondered about this place.", a: "\"Do you know if it's always this busy on a Tuesday?\" [Ask for Help]", bundle: 'pro' },
         { q: "You have nothing to ask but you do know something they might want.", a: "\"The far end's usually emptier, if you're looking for space.\" [Offer Something Useful]", bundle: 'pro' },
         { q: "You have just realised your question was a pretext and they answered it seriously.", a: "\"Thanks — sorry, I think I did know that. It's been a long day.\" [Ask for Help]", bundle: 'pro' },
+        { q: "You want an opener and there is genuinely something you do not know.", a: "\"Do you know if they do food after nine here?\" [Ask for Help]", bundle: 'pro' },
+        { q: "You are standing next to someone waiting for the same thing.", a: "\"Have you been waiting long? I've lost track.\" [Mention a Shared Experience]", bundle: 'pro' },
+        { q: "The only true question you have is a very small one.", a: "\"Is that the queue, or are people just standing there?\" [Ask for Help]", bundle: 'pro' },
       ]
     },
     {
@@ -4690,6 +4738,9 @@ const challengesCollections = {
         { q: "You offered a tip and they looked mildly irritated.", a: "\"Sorry, unsolicited advice. Ignore me.\" [Offer Something Useful]", bundle: 'pro' },
         { q: "You want to help but they know more about this than you do.", a: "\"You've done this before, haven't you? Is there a trick I'm missing?\" [Ask for Help]", bundle: 'pro' },
         { q: "You start to give advice about their life rather than the situation.", a: "\"None of my business, though. How's it going otherwise?\" [Pick Up a Shared Thread]", bundle: 'pro' },
+        { q: "You have something useful and no idea whether they want it.", a: "\"Might be no use — there's a shorter way round the back if you're heading out.\" [Offer Something Useful]", bundle: 'pro' },
+        { q: "They took the tip and clearly want the conversation over.", a: "\"Good to see you anyway. I'll let you get on.\" [Pick Up a Shared Thread]", bundle: 'pro' },
+        { q: "You would rather be useful than clever and nothing comes to mind.", a: "\"Do you want a hand with those?\" [Offer Something Useful]", bundle: 'pro' },
       ]
     },
     {
@@ -4703,6 +4754,9 @@ const challengesCollections = {
         { q: "You are about to guess and might guess wrong.", a: "\"Refresh me — was it the interview or the move that was happening?\" [Pick Up a Shared Thread]", bundle: 'pro' },
         { q: "You remember nothing at all about them.", a: "\"How's your week been? Properly, not the polite version.\" [Mention a Shared Experience]", bundle: 'pro' },
         { q: "You realise mid-sentence you have mixed them up with someone else.", a: "\"That's someone else entirely, isn't it. Sorry. What have you been up to?\" [Pick Up a Shared Thread]", bundle: 'pro' },
+        { q: "You remember their face and nothing else.", a: "\"We've met — I'm terrible with this. Remind me where?\" [Ask for Help]", bundle: 'pro' },
+        { q: "You remember the detail but not whether they told you or someone else.", a: "\"Someone told me about the allotment and I think it was you. Was it?\" [Pick Up a Shared Thread]", bundle: 'pro' },
+        { q: "The last conversation was months ago and could have gone anywhere.", a: "\"It's been ages. What's changed since?\" [Pick Up a Shared Thread]", bundle: 'pro' },
       ]
     },
     {
@@ -4716,6 +4770,9 @@ const challengesCollections = {
         { q: "They gave a very short answer and you were going to ask more.", a: "\"Fair enough. Are you around for the rest of the week?\" [Pick Up a Shared Thread]", bundle: 'pro' },
         { q: "You are in a group and the thread is a private one.", a: "\"Good to see you — how was the weekend?\" [Mention a Shared Experience]", bundle: 'pro' },
         { q: "They said it did not go well and you do not know what to say.", a: "\"That's rough. Do you want to talk about it or would you rather not?\" [Pick Up a Shared Thread]", bundle: 'pro' },
+        { q: "You want to open the door without pushing it.", a: "\"How are things? Say 'fine' if that's easier.\" [Pick Up a Shared Thread]", bundle: 'pro' },
+        { q: "You know something happened and you were not told directly.", a: "\"I heard a bit. I won't pry — but I'm here if it's useful.\" [Offer Something Useful]", bundle: 'pro' },
+        { q: "Others are in earshot and you want to keep it ordinary.", a: "\"Long week, this one. Are you around later?\" [Mention a Shared Experience]", bundle: 'pro' },
       ]
     },
     {
@@ -4729,6 +4786,9 @@ const challengesCollections = {
         { q: "You want to acknowledge it without making them discuss it.", a: "\"Not the morning any of us wanted. I'm around if you want a coffee.\" [Offer Something Useful]", bundle: 'pro' },
         { q: "You are about to make a joke about something that was not funny.", a: "\"That was grim, actually.\" [Mention a Shared Experience]", bundle: 'pro' },
         { q: "They clearly do not want to talk about it.", a: "\"Say no more. Are you off after this?\" [Pick Up a Shared Thread]", bundle: 'pro' },
+        { q: "Nobody has said out loud that it was bad.", a: "\"Nobody's mentioned it, which is making it worse. That was rough.\" [Mention a Shared Experience]", bundle: 'pro' },
+        { q: "You want to check on them without an audience.", a: "\"Walking out? I'll come with you.\" [Offer Something Useful]", bundle: 'pro' },
+        { q: "You were both there and you are not sure they saw it the same way.", a: "\"How did that land with you? I couldn't read the room at all.\" [Ask for Help]", bundle: 'pro' },
       ]
     },
   ],
