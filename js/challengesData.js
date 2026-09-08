@@ -1690,6 +1690,9 @@ const challengesCollections = {
         { q: "You said \"fine, I'm sorry\" in the middle of an argument.", a: "\"That wasn't an apology, that was me wanting to stop. Let me do it properly.\" [Choose the Size]", bundle: 'pro' },
         { q: "You are about to say \"sorry if that upset anyone\".", a: "\"I'm sorry for the message I sent yesterday. It was unfair to Priya.\" [Apologise for What You Did]", bundle: 'pro' },
         { q: "You catch yourself explaining instead of apologising.", a: "\"I'm doing the explanation again. The short version is I was wrong.\" [Say Sorry Simply]", bundle: 'pro' },
+        { q: "You are about to say \"sorry, that's just how I am\".", a: "\"I'm sorry I snapped. That's on me, not on how I'm built.\" [Apologise for What You Did]", bundle: 'pro' },
+        { q: "You want to apologise without naming what you did.", a: "\"I'm sorry I forgot the pickup. Not 'for the mix-up' — I forgot it.\" [Apologise for What You Did]", bundle: 'pro' },
+        { q: "You are about to blame the circumstances.", a: "\"The traffic was bad and I still should have called. Sorry.\" [Say Sorry Simply]", bundle: 'pro' },
       ]
     },
     {
@@ -1703,6 +1706,9 @@ const challengesCollections = {
         { q: "They have started reassuring you and comforting you.", a: "\"You don't need to make me feel better about it. It was my mistake.\" [Apologise for What You Did]", bundle: 'pro' },
         { q: "You are apologising for something that affected nobody.", a: "(say nothing) [Choose the Size]", bundle: 'pro' },
         { q: "You apologise reflexively for things that are not yours.", a: "\"Actually, that one wasn't me. But it's sorted now.\" [Choose the Size]", bundle: 'pro' },
+        { q: "You have apologised in three separate messages.", a: "\"Last one from me: sorry. Now I'll stop.\" [Say Sorry Simply]", bundle: 'pro' },
+        { q: "You are apologising to someone who has not noticed anything.", a: "\"Anyway — where were we?\" [Choose the Size]", bundle: 'pro' },
+        { q: "You stood on someone's foot getting off the bus.", a: "\"Sorry.\" — and carry on walking. [Choose the Size]", bundle: 'pro' },
       ]
     },
     {
@@ -1716,6 +1722,9 @@ const challengesCollections = {
         { q: "They ask what will be different this time.", a: "\"A reminder two days before. Last time it was in my head, which is why it failed.\" [Say What You'll Do Differently]", bundle: 'pro' },
         { q: "You genuinely do not know how to prevent it.", a: "\"I don't know what would stop it. Have you got an idea? I'd take it.\" [Say What You'll Do Differently]", bundle: 'pro' },
         { q: "You made a plan last time and did not keep it.", a: "\"I said that last time and didn't do it. So this time it's written down.\" [Say What You'll Do Differently]", bundle: 'pro' },
+        { q: "You are about to promise something you cannot control.", a: "\"I can't promise the trains. I can promise I'll leave at seven.\" [Say What You'll Do Differently]", bundle: 'pro' },
+        { q: "Your plan is a feeling rather than an action.", a: "\"Not 'I'll focus more' — I'll put my phone in the drawer.\" [Say What You'll Do Differently]", bundle: 'pro' },
+        { q: "The change is small and you are embarrassed by it.", a: "\"It's just a reminder on the Sunday. Small, but it's the thing that failed.\" [Say What You'll Do Differently]", bundle: 'pro' },
       ]
     },
     {
@@ -1729,6 +1738,9 @@ const challengesCollections = {
         { q: "You are about to apologise for something you do not regret.", a: "\"I can see it landed badly. I'm not going to pretend I'd do it differently.\" [Choose the Size]", bundle: 'pro' },
         { q: "They want you to agree you were wrong and you do not.", a: "\"I don't think I was wrong about the thing. I do think I handled it badly.\" [Apologise for What You Did]", bundle: 'pro' },
         { q: "Nothing about it is yours at all.", a: "\"I'm sorry it's landed like this. I don't think I did anything I'd change, and I'd rather say that.\" [Choose the Size]", bundle: 'pro' },
+        { q: "You would do the same again but said it badly.", a: "\"I'm sorry for how I put it in front of everyone.\" [Apologise for What You Did]", bundle: 'pro' },
+        { q: "They want a full apology and only part of it is yours.", a: "\"The lateness was mine and I'm sorry. The rest I'd want to talk about.\" [Choose the Size]", bundle: 'pro' },
+        { q: "You are being pressed to apologise for something you did not do.", a: "\"I'm not going to say sorry for that. I am sorry it's landed badly.\" [Say Sorry Simply]", bundle: 'pro' },
       ]
     },
     {
@@ -1742,6 +1754,9 @@ const challengesCollections = {
         { q: "Someone was genuinely hurt rather than inconvenienced.", a: "\"This is bigger than a quick sorry. Have you got ten minutes?\" [Choose the Size]", bundle: 'pro' },
         { q: "You are about to give the short version to something serious.", a: "\"I'm not going to do this in a corridor. Can I find you later?\" [Choose the Size]", bundle: 'pro' },
         { q: "The same thing has happened three times.", a: "\"I keep apologising for this and it keeps happening. That's the thing to talk about.\" [Say What You'll Do Differently]", bundle: 'pro' },
+        { q: "You are about to apologise by text for something that needs a conversation.", a: "\"This isn't a message thing. Can I ring you tonight?\" [Choose the Size]", bundle: 'pro' },
+        { q: "The apology needs to go to more than one person.", a: "\"I'll say this to Anna as well — it was her afternoon I wasted.\" [Choose the Size]", bundle: 'pro' },
+        { q: "They ask what you are actually going to do about it.", a: "\"Fair question. From Monday it goes in the shared calendar, not my head.\" [Say What You'll Do Differently]", bundle: 'pro' },
       ]
     },
   ],
@@ -1757,6 +1772,9 @@ const challengesCollections = {
         { q: "You are waiting for something impressive to say.", a: "\"Couldn't agree more, honestly.\" [Signal the Agreement]", bundle: 'pro' },
         { q: "Someone shares an opinion about a hobby you have never tried.", a: "\"That makes sense to me. You'd get a proper break from everything else.\" [Give an Explanation]", bundle: 'pro' },
         { q: "The opinion is one you hold but have never thought about.", a: "\"Same here. I've never questioned it, which probably says something.\" [Signal the Agreement]", bundle: 'pro' },
+        { q: "You agree and the only reason you have is obvious.", a: "\"Obvious reason, but it's the right one — you sleep better.\" [Give an Explanation]", bundle: 'pro' },
+        { q: "You want to agree without repeating their sentence back.", a: "\"Completely. And it's cheaper than the alternative, which helps.\" [Expand the Idea]", bundle: 'pro' },
+        { q: "You have agreed and the pause is getting long.", a: "\"No argument from me at all.\" [Signal the Agreement]", bundle: 'pro' },
       ]
     },
     {
@@ -1770,6 +1788,9 @@ const challengesCollections = {
         { q: "Someone says: \"You only need six hours of sleep.\" It works for them, not you.", a: "\"It clearly works for you. I've found it depends on how regular they are.\" [Add a Personal Experience]", bundle: 'pro' },
         { q: "You agree with the feeling but not the rule.", a: "\"The feeling, absolutely. I've had exactly that on a Sunday afternoon.\" [Add a Personal Experience]", bundle: 'pro' },
         { q: "A claim is true in some situations but not all.", a: "\"Agreed, especially at home. Work's a bit different.\" [Give an Explanation]", bundle: 'pro' },
+        { q: "You agree with the conclusion but got there another way.", a: "\"Same answer, different route — for me it's the noise, not the cost.\" [Give an Explanation]", bundle: 'pro' },
+        { q: "It is true for them and untested for you.", a: "\"I'd believe that. I've only ever done it the other way.\" [Signal the Agreement]", bundle: 'pro' },
+        { q: "You agree today and would not have a year ago.", a: "\"I'd have argued with you about this last year, and now I'd agree.\" [Add a Personal Experience]", bundle: 'pro' },
       ]
     },
     {
@@ -1783,6 +1804,9 @@ const challengesCollections = {
         { q: "The other person is carrying the whole conversation.", a: "\"That's happened to me too. Last winter, exactly the same thing.\" [Add a Personal Experience]", bundle: 'pro' },
         { q: "You agree so quickly it reads as not listening.", a: "\"Yes — and the same goes for weekends, not just weekdays.\" [Expand the Idea]", bundle: 'pro' },
         { q: "You realise you have added nothing for several minutes.", a: "\"I've done that for about ten years now and never questioned it.\" [Add a Personal Experience]", bundle: 'pro' },
+        { q: "You have agreed three times and want a different way in.", a: "\"Which also explains why nobody books the early one.\" [Expand the Idea]", bundle: 'pro' },
+        { q: "The obvious agreement has already been said twice.", a: "\"I did exactly that last spring and it worked out.\" [Add a Personal Experience]", bundle: 'pro' },
+        { q: "You want to agree and give them something back.", a: "\"Yes — and it's the reason the afternoons are calmer too.\" [Expand the Idea]", bundle: 'pro' },
       ]
     },
     {
@@ -1796,6 +1820,9 @@ const challengesCollections = {
         { q: "You believe them but cannot judge the claim.", a: "\"I'd guess you're right. It matches how most things work.\" [Signal the Agreement]", bundle: 'pro' },
         { q: "You are tempted to pretend you know the field.", a: "\"I don't know it well, but that principle holds everywhere I've seen it.\" [Expand the Idea]", bundle: 'pro' },
         { q: "The opinion is about a job you have no contact with.", a: "\"Makes complete sense. I imagine it's like that anywhere with deadlines.\" [Expand the Idea]", bundle: 'pro' },
+        { q: "You can see the principle but not the field.", a: "\"I don't know the work, but that's true of every job I've had.\" [Give an Explanation]", bundle: 'pro' },
+        { q: "They have said something you have only read about.", a: "\"That matches everything I've read, for what that's worth.\" [Signal the Agreement]", bundle: 'pro' },
+        { q: "You want to agree without pretending to expertise.", a: "\"I'll take your word for it — you're the one who's done it.\" [Signal the Agreement]", bundle: 'pro' },
       ]
     },
     {
@@ -1809,6 +1836,9 @@ const challengesCollections = {
         { q: "You would be the fourth person to say \"so true\".", a: "\"It's the only exercise you can do while thinking about something else.\" [Expand the Idea]", bundle: 'pro' },
         { q: "Staying quiet would look like you disagree.", a: "\"Same here — I've done it for years without thinking about it.\" [Add a Personal Experience]", bundle: 'pro' },
         { q: "The whole table agrees and the topic is going quiet.", a: "\"Which is probably why nobody sleeps properly in summer.\" [Expand the Idea]", bundle: 'pro' },
+        { q: "You want to back someone who is being talked over.", a: "\"I'm with Marta on this, and for the same reason.\" [Signal the Agreement]", bundle: 'pro' },
+        { q: "The group has agreed and nobody has said why.", a: "\"We all agree — I think it's because it takes the decision off one person.\" [Give an Explanation]", bundle: 'pro' },
+        { q: "You agree and can add the one case nobody has mentioned.", a: "\"Same, and it goes double for the people working from home.\" [Expand the Idea]", bundle: 'pro' },
       ]
     },
   ],
@@ -1824,6 +1854,9 @@ const challengesCollections = {
         { q: "They say, \"You always do this.\"", a: "\"That's worth talking about separately. Can we finish this bit first?\" [Park it, don't drop it]", bundle: 'pro' },
         { q: "They start defending themselves rather than the idea.", a: "\"You don't need to defend yourself here — I'm only stuck on the date.\" [Narrow the target]", bundle: 'pro' },
         { q: "You realise your disagreement sounded like a correction.", a: "\"Let me say that better. I think it works, and I'd start it later.\" [Restate more precisely]", bundle: 'pro' },
+        { q: "They hear the disagreement as a judgement on their competence.", a: "\"This isn't about you doing it badly. I'd land somewhere different on the date.\" [Signal the Disagreement]", bundle: 'pro' },
+        { q: "You need to disagree with someone who is already having a bad week.", a: "\"I see it differently, and it's a small difference.\" [Signal the Disagreement]", bundle: 'pro' },
+        { q: "The heat is rising and you want to lower it without conceding.", a: "\"Here's why I'd hesitate — the last two both slipped.\" [Give Your Reason]", bundle: 'pro' },
       ]
     },
     {
@@ -1837,6 +1870,9 @@ const challengesCollections = {
         { q: "They ask if everyone is agreed and you are not.", a: "\"Not quite. One thing I'd want to flag before we go ahead.\" [Answer honestly]", bundle: 'pro' },
         { q: "You have said your piece and the room has moved past it.", a: "\"That's fine — I've said it, and I'm happy to go with the group.\" [Disagree and commit]", bundle: 'pro' },
         { q: "Someone says \"we all think this\".", a: "\"Most of us. I'd put myself down as unconvinced rather than opposed.\" [Correct the record]", bundle: 'pro' },
+        { q: "You are the only one who has worked on the old version.", a: "\"I've done it both ways. The old one broke on handover twice.\" [Add an Example]", bundle: 'pro' },
+        { q: "Agreeing would be easier and you would regret it.", a: "\"I'd see it differently, and I'd rather say so now than in March.\" [Signal the Disagreement]", bundle: 'pro' },
+        { q: "The room has decided and you want it on the record.", a: "\"Happy to go with it. My reason for doubting is the timing.\" [Give Your Reason]", bundle: 'pro' },
       ]
     },
     {
@@ -1850,6 +1886,9 @@ const challengesCollections = {
         { q: "They say \"everyone knows that\".", a: "\"Maybe I don't. Talk me through it — where does it come from?\" [Ask plainly]", bundle: 'pro' },
         { q: "You are both restating for the third time.", a: "\"We're going round. What would change your mind?\" [Change the question]", bundle: 'pro' },
         { q: "They dismiss your reason without answering it.", a: "\"Which part of that doesn't hold, for you?\" [Ask them to be specific]", bundle: 'pro' },
+        { q: "They give a reason that is really a restatement.", a: "\"Another way to look at it — what if the delay is the cheaper option?\" [Offer a Different Perspective]", bundle: 'pro' },
+        { q: "You have asked twice and got nothing usable.", a: "\"Let me put a case to you: the payroll one, last year.\" [Add an Example]", bundle: 'pro' },
+        { q: "They will not explain and the decision is close.", a: "\"I'll say mine then. I think Friday costs us the weekend.\" [Give Your Reason]", bundle: 'pro' },
       ]
     },
     {
@@ -1863,6 +1902,9 @@ const challengesCollections = {
         { q: "Half your objection stands and half does not.", a: "\"You've answered the cost part. The timing part I'd still push on.\" [Split it]", bundle: 'pro' },
         { q: "You want to keep arguing mainly because you started.", a: "\"Honestly, I think I'm just defending my first answer. Ignore me on this one.\" [Name it and stop]", bundle: 'pro' },
         { q: "They ask if you are convinced.", a: "\"Mostly. Give me till tomorrow — I want to sit with it.\" [Ask for time]", bundle: 'pro' },
+        { q: "Your example turns out not to fit.", a: "\"That case isn't the same as this one. I'll withdraw it.\" [Add an Example]", bundle: 'pro' },
+        { q: "You still disagree but can no longer say why.", a: "\"I can't give you a reason any more. Something still bothers me.\" [Signal the Disagreement]", bundle: 'pro' },
+        { q: "They have answered your reason and you have another.", a: "\"Fair. The other thing is what happens when two people are off.\" [Give Your Reason]", bundle: 'pro' },
       ]
     },
     {
@@ -1876,6 +1918,9 @@ const challengesCollections = {
         { q: "Everyone is tired and it is late.", a: "\"I've got a different view but it'll keep. Can we pick it up tomorrow?\" [Defer to a better moment]", bundle: 'pro' },
         { q: "You notice you are about to argue for the sake of it.", a: "\"Actually, ignore that. I'm arguing because it's Tuesday.\" [Withdraw honestly]", bundle: 'pro' },
         { q: "You said nothing and it is still bothering you a day later.", a: "\"Can I go back to yesterday? I said nothing and I should have.\" [Reopen it properly]", bundle: 'pro' },
+        { q: "The disagreement is real but the stakes are tiny.", a: "\"I'd do it the other way. Not enough to argue about, though.\" [Signal the Disagreement]", bundle: 'pro' },
+        { q: "You want to register it once and drop it.", a: "\"For the record I'd have waited a fortnight. That's all I'll say.\" [Give Your Reason]", bundle: 'pro' },
+        { q: "You have made the point twice and nothing has moved.", a: "\"I've said my bit. You've heard a different angle and you still prefer yours.\" [Offer a Different Perspective]", bundle: 'pro' },
       ]
     },
   ],
@@ -1891,6 +1936,9 @@ const challengesCollections = {
         { q: "They have not read what you sent.", a: "\"Short version: we redo the last section every single time.\" [Name the Cost of Doing Nothing]", bundle: 'pro' },
         { q: "They say they do not have a view.", a: "\"When we did it the other way in March it cost us a week. That's my whole case.\" [Tell What Happened to You]", bundle: 'pro' },
         { q: "You have been making the case to someone with no stake.", a: "\"There's genuinely nothing in it for you. I'm asking as a favour.\" [Show the Benefit to Them]", bundle: 'pro' },
+        { q: "They are listening politely and clearly waiting for you to finish.", a: "\"One thing and I'll stop: it takes the Friday panic off you.\" [Show the Benefit to Them]", bundle: 'pro' },
+        { q: "They asked why you care so much.", a: "\"Because I did it the other way for a year and lost most of my Sundays.\" [Tell What Happened to You]", bundle: 'pro' },
+        { q: "They agree it is a problem but not their problem.", a: "\"It's the reason your requests come in late. That's the connection.\" [Show the Benefit to Them]", bundle: 'pro' },
       ]
     },
     {
@@ -1904,6 +1952,9 @@ const challengesCollections = {
         { q: "Nobody wants to reopen the question.", a: "\"If we leave it, we'll be having this conversation again in March.\" [Name the Cost of Doing Nothing]", bundle: 'pro' },
         { q: "You are about to overstate the cost.", a: "\"It's not a crisis. It's twenty minutes a week and it never stops.\" [Name the Cost of Doing Nothing]", bundle: 'pro' },
         { q: "The cost lands on someone not in the room.", a: "\"We don't feel it. The night team does, and they can't change it.\" [Name the Cost of Doing Nothing]", bundle: 'pro' },
+        { q: "They think doing nothing is free because nothing breaks.", a: "\"Nothing breaks because Priya fixes it every Thursday.\" [Name the Cost of Doing Nothing]", bundle: 'pro' },
+        { q: "They would rather decide next quarter.", a: "\"Then it's another quarter of the same afternoon every month.\" [Name the Cost of Doing Nothing]", bundle: 'pro' },
+        { q: "They say the risk of changing is higher than the risk of staying.", a: "\"It might be. Staying costs about a day a month, and we know that number.\" [Name the Cost of Doing Nothing]", bundle: 'pro' },
       ]
     },
     {
@@ -1917,6 +1968,9 @@ const challengesCollections = {
         { q: "They say it has been tried before.", a: "\"It was, and it failed on the handover. That's the bit that's different now.\" [Give a Reason]", bundle: 'pro' },
         { q: "They ask whether you have actually seen it work.", a: "\"I did it in the spring. It took half the time.\" [Tell What Happened to You]", bundle: 'pro' },
         { q: "They say your situation was different.", a: "\"It was, in some ways. The part that's the same is the timing.\" [Tell What Happened to You]", bundle: 'pro' },
+        { q: "They want to know what happens when it goes wrong.", a: "\"It did go wrong for me once. It cost an hour, not a day.\" [Tell What Happened to You]", bundle: 'pro' },
+        { q: "They think your team is not comparable.", a: "\"We're smaller, true. The bit that transfers is the handover.\" [Tell What Happened to You]", bundle: 'pro' },
+        { q: "They believe it but cannot see themselves doing it.", a: "\"You'd have it running before lunch. That was my whole setup.\" [Show the Benefit to Them]", bundle: 'pro' },
       ]
     },
     {
@@ -1930,6 +1984,9 @@ const challengesCollections = {
         { q: "Half your case survives and half does not.", a: "\"You've answered the cost part. The timing I'd still push on.\" [Give a Reason]", bundle: 'pro' },
         { q: "Their version turns out to be cheaper for them.", a: "\"Yours costs you less and I hadn't weighed that properly.\" [Show the Benefit to Them]", bundle: 'pro' },
         { q: "You want to concede without abandoning it entirely.", a: "\"You're right for this year. It'll still be an afternoon a month until we look again.\" [Name the Cost of Doing Nothing]", bundle: 'pro' },
+        { q: "Their objection is one you had not considered at all.", a: "\"I hadn't thought about the night shift. That changes my reason.\" [Give a Reason]", bundle: 'pro' },
+        { q: "You realise your example does not support what you claimed.", a: "\"My case was smaller than this one. It doesn't prove what I said it did.\" [Tell What Happened to You]", bundle: 'pro' },
+        { q: "They are right about the cost and you were guessing.", a: "\"I said an afternoon. I don't actually know — I was estimating.\" [Name the Cost of Doing Nothing]", bundle: 'pro' },
       ]
     },
     {
@@ -1943,6 +2000,9 @@ const challengesCollections = {
         { q: "You are inventing a benefit for them because you need one.", a: "\"There isn't much in it for you, honestly. I'm asking as a favour.\" [Show the Benefit to Them]", bundle: 'pro' },
         { q: "You are about to imply your experience was more typical than it was.", a: "\"That was one case, and my situation was easier than yours.\" [Tell What Happened to You]", bundle: 'pro' },
         { q: "You realise you have overstated something.", a: "\"I said that more strongly than I can back up. Let me put it accurately.\" [Give a Reason]", bundle: 'pro' },
+        { q: "You are about to leave out the part that weakens it.", a: "\"The thing against it is the first month, which is genuinely worse.\" [Give a Reason]", bundle: 'pro' },
+        { q: "You are about to say \"everyone is doing it\".", a: "\"One other team does it. That's the whole evidence.\" [Tell What Happened to You]", bundle: 'pro' },
+        { q: "The benefit you are naming is mostly yours.", a: "\"Honestly, most of the gain is mine. Yours is that I stop asking.\" [Show the Benefit to Them]", bundle: 'pro' },
       ]
     },
   ],
@@ -2092,6 +2152,9 @@ const challengesCollections = {
         { q: "You can feel yourself about to give in to end the discomfort.", a: "\"I'm going to leave it there before I say something I don't mean.\" [Know When to Stop]", bundle: 'pro' },
         { q: "You have started offering reasons you had decided not to give.", a: "\"I don't want to get into the reasons. The answer's no.\" [Don't Give Reasons]", bundle: 'pro' },
         { q: "You are on the sixth round.", a: "\"We're going in circles. It isn't going to change.\" [Know When to Stop]", bundle: 'pro' },
+        { q: "Your voice has gone up and you can hear it.", a: "\"No, that doesn't work for me.\" — said flatter than the last one. [Keep the Tone Flat]", bundle: 'pro' },
+        { q: "You have started explaining yourself mid-sentence.", a: "\"It doesn't work for me. That's the whole of it.\" [Don't Give Reasons]", bundle: 'pro' },
+        { q: "They look hurt and you want to soften the line.", a: "\"I know it's a nuisance. It still doesn't work for me.\" [Acknowledge, Then Repeat]", bundle: 'pro' },
       ]
     },
     {
@@ -2105,6 +2168,9 @@ const challengesCollections = {
         { q: "You have decided to change your answer.", a: "\"I've changed my mind, and it's because of the timing, not because you pushed.\" [Decide Your Line]", bundle: 'pro' },
         { q: "They present an opinion as though it were a new fact.", a: "\"That's still how you see it rather than something new. My answer's the same.\" [Don't Follow the New Argument]", bundle: 'pro' },
         { q: "You want time rather than an immediate answer.", a: "\"I'm not going to decide that here. I'll tell you tomorrow.\" [Know When to Stop]", bundle: 'pro' },
+        { q: "They point out something you had actually got wrong.", a: "\"That part I did have wrong. Doesn't change the answer, but thank you.\" [Acknowledge, Then Repeat]", bundle: 'pro' },
+        { q: "The new point is real but only makes it slightly easier.", a: "\"That helps. Not enough to make it a yes.\" [Acknowledge, Then Repeat]", bundle: 'pro' },
+        { q: "What they have added would work if the timing changed.", a: "\"Not this month. Ask me again in October and it's a different answer.\" [Offer a Workable Compromise]", bundle: 'pro' },
       ]
     },
     {
@@ -2118,6 +2184,9 @@ const challengesCollections = {
         { q: "You are asked why not, and would rather not say.", a: "\"I'd rather not go into the details, but I'm not available this week.\" [Don't Give Reasons]", bundle: 'pro' },
         { q: "The request is entirely reasonable and within their rights.", a: "\"That's fair — I'll do it.\" [Know When to Stop]", bundle: 'pro' },
         { q: "You are being pressured into something you think is wrong.", a: "\"I'm not comfortable doing that. I'd want to put my position in writing.\" [Decide Your Line]", bundle: 'pro' },
+        { q: "They ask whether you are refusing outright.", a: "\"I'm saying I can't take it on this week. That's not the same as no.\" [Decide Your Line]", bundle: 'pro' },
+        { q: "They start listing everything else you have turned down.", a: "\"We can go through that separately. This week I can't take it on.\" [Don't Follow the New Argument]", bundle: 'pro' },
+        { q: "They keep pushing and you can hear yourself getting sharp.", a: "\"I can't take it on this week.\" — same words, same volume. [Keep the Tone Flat]", bundle: 'pro' },
       ]
     },
     {
@@ -2131,6 +2200,9 @@ const challengesCollections = {
         { q: "You are repeating a line to avoid an uncomfortable truth.", a: "\"I'm holding a line I shouldn't be. You've got a point.\" [Know When to Stop]", bundle: 'pro' },
         { q: "The request is reasonable and you just do not fancy it.", a: "\"I don't want to, and that's not a good enough reason. I'll do it.\" [Know When to Stop]", bundle: 'pro' },
         { q: "It is genuinely your decision to make and you are sure.", a: "\"I've thought about it. My answer's no.\" [Decide Your Line]", bundle: 'pro' },
+        { q: "You are repeating the line because backing down feels like losing.", a: "\"Actually — you're right. I'll do it.\" [Know When to Stop]", bundle: 'pro' },
+        { q: "You have run out of reasons and are still repeating.", a: "\"I've got nothing left to say that isn't just the same sentence. So: fine.\" [Know When to Stop]", bundle: 'pro' },
+        { q: "They have asked three times and each time you liked it slightly more.", a: "\"I've been saying no out of habit. Actually — yes, let's do it.\" [Know When to Stop]", bundle: 'pro' },
       ]
     },
     {
@@ -2144,6 +2216,9 @@ const challengesCollections = {
         { q: "They say things might have changed.", a: "\"They haven't. My answer's the same.\" [Keep the Same Words]", bundle: 'pro' },
         { q: "You want to name the pattern rather than the request.", a: "\"I'd rather talk about why this keeps coming back than about the thing itself.\" [Know When to Stop]", bundle: 'pro' },
         { q: "They bring it up in front of other people.", a: "\"We've talked about this. I'll say the same thing I said before: no.\" [Keep the Tone Flat]", bundle: 'pro' },
+        { q: "They have asked in a different way, hoping for a different answer.", a: "\"Different question, same answer. I can't do it.\" [Keep the Same Words]", bundle: 'pro' },
+        { q: "You gave a reason last time and they have been arguing with it since.", a: "\"Let's leave the reason out of it. The answer is no.\" [Don't Give Reasons]", bundle: 'pro' },
+        { q: "Someone else asks you on their behalf.", a: "\"I've already given him an answer. It's still no.\" [Keep the Same Words]", bundle: 'pro' },
       ]
     },
   ],
@@ -2159,6 +2234,9 @@ const challengesCollections = {
         { q: "The group is waiting to see whether you react.", a: "\"Noted. Can we come back to the decision?\" [Hold Your Point]", bundle: 'pro' },
         { q: "You want to raise it afterwards rather than in the room.", a: "(say nothing now, and catch them privately later) [Let It Go]", bundle: 'pro' },
         { q: "You are with them privately after the meeting.", a: "\"That was uncomfortable with everyone there. If there's a problem I'd rather hear it directly.\" [Say How It Lands]", bundle: 'pro' },
+        { q: "The dig is dressed up as a joke and everyone laughed.", a: "\"Fair. Anyway — the numbers are on page two.\" [Answer It Straight]", bundle: 'pro' },
+        { q: "They say \"no offence\" before the comment.", a: "\"None taken. What did you mean by it?\" [Ask What They Mean]", bundle: 'pro' },
+        { q: "You want to shut it down without making a scene of it.", a: "\"That one had a bit of an edge. Let's park it.\" [Say How It Lands]", bundle: 'pro' },
       ]
     },
     {
@@ -2172,6 +2250,9 @@ const challengesCollections = {
         { q: "You want to raise one specific instance privately.", a: "\"Could I mention something from yesterday? The comment in the meeting made it hard to answer.\" [Say How It Lands]", bundle: 'pro' },
         { q: "You cannot tell whether the remark was aimed at you.", a: "\"I might be reading that wrong — did you mean the report or the timing?\" [Ask What They Mean]", bundle: 'pro' },
         { q: "It is a bad day and nothing needs saying.", a: "(let it pass) [Let It Go]", bundle: 'pro' },
+        { q: "They praise you in a way that is clearly not praise.", a: "\"Thanks. Was there something in there you want done differently?\" [Ask What They Mean]", bundle: 'pro' },
+        { q: "The remark is about something you already fixed.", a: "\"That was Tuesday. It's been running since Wednesday.\" [Answer It Straight]", bundle: 'pro' },
+        { q: "They keep repeating it until you agree.", a: "\"I've heard it. I still think the deadline was the problem.\" [Hold Your Point]", bundle: 'pro' },
       ]
     },
     {
@@ -2185,6 +2266,9 @@ const challengesCollections = {
         { q: "You are about to respond to something you may have imagined.", a: "\"I honestly can't tell how you meant that.\" [Ask What They Mean]", bundle: 'pro' },
         { q: "You want to leave room for having misread it.", a: "\"That came across as a dig — maybe I've got it wrong.\" [Say How It Lands]", bundle: 'pro' },
         { q: "It is ambiguous and it does not matter.", a: "(let it pass) [Let It Go]", bundle: 'pro' },
+        { q: "They have gone quiet since the meeting.", a: "\"You've been quiet since this morning. Anything in it?\" [Name the Feeling]", bundle: 'pro' },
+        { q: "It only sounded sharp when you read it back later.", a: "\"Got it, thanks.\" — reply to the message, not to the reading of it. [Let It Go]", bundle: 'pro' },
+        { q: "They are new and you do not know their normal yet.", a: "\"I can't read you yet. Was that a dig or just how you talk?\" [Ask What They Mean]", bundle: 'pro' },
       ]
     },
     {
@@ -2198,6 +2282,9 @@ const challengesCollections = {
         { q: "They say you are being oversensitive.", a: "\"Maybe I am. Is there something underneath it, though?\" [Ask What They Mean]", bundle: 'pro' },
         { q: "You suspect a real grievance is driving it.", a: "\"I think something's actually annoying you. I'd rather hear it straight.\" [Name the Feeling]", bundle: 'pro' },
         { q: "Nothing changes after you have raised it.", a: "\"I've said this before and it's carried on. I'm going to stop responding to it.\" [Hold Your Point]", bundle: 'pro' },
+        { q: "They are fine one-to-one and pointed in a group.", a: "\"You're different with me in a room full of people. I'd rather have this version.\" [Name the Feeling]", bundle: 'pro' },
+        { q: "You have decided to raise it and want to open properly.", a: "\"There's something going on between us and I'd like to know what.\" [Name the Feeling]", bundle: 'pro' },
+        { q: "They agree it is a pattern and blame you for it.", a: "\"Some of it might be me. The comments are still yours.\" [Hold Your Point]", bundle: 'pro' },
       ]
     },
     {
@@ -2211,6 +2298,9 @@ const challengesCollections = {
         { q: "You have already snapped back once.", a: "\"That was sharper than I meant. Can we start that again?\" [Say How It Lands]", bundle: 'pro' },
         { q: "You want to be honest that it landed rather than score a point.", a: "\"That one got me, I'll admit. What did you actually mean?\" [Ask What They Mean]", bundle: 'pro' },
         { q: "You are too wound up to answer well.", a: "\"I'm going to leave that for now. Let's talk later.\" [Let It Go]", bundle: 'pro' },
+        { q: "The reply in your head is better than anything they said.", a: "\"Mm.\" — and let the good line go unsaid. [Let It Go]", bundle: 'pro' },
+        { q: "You want them to know it landed without paying it back.", a: "\"That stung a bit, if I'm honest.\" [Say How It Lands]", bundle: 'pro' },
+        { q: "You have started composing the message you will not send.", a: "\"Can we talk tomorrow? I'm not going to be useful tonight.\" [Let It Go]", bundle: 'pro' },
       ]
     },
   ],
@@ -2226,6 +2316,9 @@ const challengesCollections = {
         { q: "They say they had no idea it bothered you.", a: "\"That's fair — I hinted instead of asking. Could you handle Wednesdays?\" [Ask Instead of Hinting]", bundle: 'pro' },
         { q: "The request has gone vague in your own head.", a: "\"What I actually want is one thing: the bins out on Tuesday nights.\" [Make It Specific]", bundle: 'pro' },
         { q: "You want it to be genuinely open rather than an accusation.", a: "\"Say if that doesn't work for you — I'd rather sort it another way than have it simmer.\" [Leave Room to Refuse]", bundle: 'pro' },
+        { q: "You are about to sigh loudly and hope they notice.", a: "\"Could you take the bins out on Thursdays? That's the ask.\" [Ask Instead of Hinting]", bundle: 'pro' },
+        { q: "You have been saying \"someone should\" for a month.", a: "\"I'd like you to do it. Someone means you and I should have said so.\" [Ask Instead of Hinting]", bundle: 'pro' },
+        { q: "You want to say what the change would actually look like.", a: "\"Out the night before, back in Friday morning. That's all of it.\" [Make It Specific]", bundle: 'pro' },
       ]
     },
     {
@@ -2239,6 +2332,9 @@ const challengesCollections = {
         { q: "They ask why, and there is a real reason.", a: "\"It's the only way I can do the school run that day.\" [Give One Short Reason]", bundle: 'pro' },
         { q: "Two weeks have passed with no answer.", a: "\"Coming back to this once — is it a no, or a not yet?\" [Follow Up Once]", bundle: 'pro' },
         { q: "They say it is not possible.", a: "\"Understood. Thanks for giving me a straight answer.\" [Take a No Well]", bundle: 'pro' },
+        { q: "You are asking for something nobody else has had.", a: "\"I know it's not standard. I'd still like to ask for it.\" [Ask Instead of Hinting]", bundle: 'pro' },
+        { q: "You have one reason and it is a personal one.", a: "\"It's a childcare thing — Thursdays are the problem.\" [Give One Short Reason]", bundle: 'pro' },
+        { q: "You want to be clear it is a request and not a complaint.", a: "\"This isn't a grievance. It's a request, and you can say no.\" [Leave Room to Refuse]", bundle: 'pro' },
       ]
     },
     {
@@ -2252,6 +2348,9 @@ const challengesCollections = {
         { q: "You are keeping score in your head and it is making you awkward.", a: "\"Two hours, Saturday morning. That's it.\" [Make It Specific]", bundle: 'pro' },
         { q: "You would rather struggle than ask again.", a: "\"I'm asking now rather than after it's gone wrong.\" [Ask for Help]", bundle: 'pro' },
         { q: "They say no this time.", a: "\"Completely fair. You've done plenty.\" [Take a No Well]", bundle: 'pro' },
+        { q: "You need help and would rather do it badly alone.", a: "\"I'm stuck on this. Could you look at it with me for ten minutes?\" [Ask for Help]", bundle: 'pro' },
+        { q: "You are about to bury the ask in an apology.", a: "\"Small favour: could you pick me up at six?\" [Ask Instead of Hinting]", bundle: 'pro' },
+        { q: "You want to say why this one matters more than the last.", a: "\"This one I actually can't do on my own — it needs two people.\" [Give One Short Reason]", bundle: 'pro' },
       ]
     },
     {
@@ -2265,6 +2364,9 @@ const challengesCollections = {
         { q: "You want the decision more than the favour.", a: "\"Just tell me either way and I'll plan around it.\" [Follow Up Once]", bundle: 'pro' },
         { q: "You have followed up once and heard nothing at all.", a: "(treat it as a no and sort it another way) [Follow Up Once]", bundle: 'pro' },
         { q: "The no was clear and you can feel yourself going cold.", a: "\"Fair enough — thanks for saying. I'll sort it.\" [Take a No Well]", bundle: 'pro' },
+        { q: "They said no and you want to know if it is a permanent one.", a: "\"Fine either way — is that a no for now or a no in general?\" [Take a No Well]", bundle: 'pro' },
+        { q: "You want to chase without it reading as pressure.", a: "\"Just bumping this — no rush, I only need to know either way by Friday.\" [Follow Up Once]", bundle: 'pro' },
+        { q: "They said yes and then went quiet for a fortnight.", a: "\"Are we still on for Saturday? Happy to drop it if not.\" [Follow Up Once]", bundle: 'pro' },
       ]
     },
     {
@@ -2278,6 +2380,9 @@ const challengesCollections = {
         { q: "It is their job and you are apologising for mentioning it.", a: "\"I need the figures by Thursday. It's not a favour, so I'll stop apologising.\" [Give One Short Reason]", bundle: 'pro' },
         { q: "You want their agreement but you have already decided.", a: "(say what is happening — do not dress a decision as a question) [Ask Instead of Hinting]", bundle: 'pro' },
         { q: "You genuinely are asking, and they think you are instructing.", a: "\"To be clear, this one is a real ask. No is available.\" [Leave Room to Refuse]", bundle: 'pro' },
+        { q: "You are phrasing a deadline as a favour.", a: "\"This one isn't optional, so I'll say it straight: it needs to be in by Friday.\" [Ask Instead of Hinting]", bundle: 'pro' },
+        { q: "You want to be honest that there is only one answer.", a: "\"I'm telling you rather than asking. It's already been decided upstairs.\" [Ask Instead of Hinting]", bundle: 'pro' },
+        { q: "They keep hearing your request as an order.", a: "\"No is genuinely fine here. I'd rather you said it than did it grudgingly.\" [Leave Room to Refuse]", bundle: 'pro' },
       ]
     },
   ],
@@ -2293,6 +2398,9 @@ const challengesCollections = {
         { q: "You want it clear and still kind.", a: "\"I'm really sorry, but no.\" [Soften the Delivery]", bundle: 'pro' },
         { q: "You genuinely do need to check something first.", a: "\"Let me check and tell you by tomorrow.\" [Ask for Time First]", bundle: 'pro' },
         { q: "They have asked again because your answer was unclear.", a: "\"That's my fault — I wasn't clear. The answer's no.\" [Say No Simply]", bundle: 'pro' },
+        { q: "You are hoping they will work it out from your tone.", a: "\"I'm going to say no to this one.\" [Say No Simply]", bundle: 'pro' },
+        { q: "The no is clear and it has come out colder than you meant.", a: "\"No from me — and thanks for thinking of me, I mean that.\" [Soften the Delivery]", bundle: 'pro' },
+        { q: "You have said no by not replying for a week.", a: "\"Sorry for the silence. The answer's no.\" [Say No Simply]", bundle: 'pro' },
       ]
     },
     {
@@ -2306,6 +2414,9 @@ const challengesCollections = {
         { q: "You want to acknowledge the cost to them.", a: "\"This does land badly for you and I'm sorry about that.\" [Show You Understand First]", bundle: 'pro' },
         { q: "You are apologising repeatedly for a reasonable no.", a: "\"I'll stop apologising. It's just a no.\" [Say No Simply]", bundle: 'pro' },
         { q: "There is something small you could genuinely offer.", a: "\"I can't do the day. I could do an hour on Sunday.\" [Offer What You Can Do]", bundle: 'pro' },
+        { q: "You want them to know you did think about it.", a: "\"I did sit with this one. It's still a no.\" [Show You Understand First]", bundle: 'pro' },
+        { q: "You are about to add a reason that is not the real one.", a: "\"I just don't want to. That's the honest version.\" [Give a Short Reason]", bundle: 'pro' },
+        { q: "There is a smaller version of it you would happily do.", a: "\"Not the whole weekend. I'll do the Saturday morning.\" [Offer What You Can Do]", bundle: 'pro' },
       ]
     },
     {
@@ -2319,6 +2430,9 @@ const challengesCollections = {
         { q: "You are asked in a meeting and want to answer properly.", a: "\"Let me look at what's already booked and come back to you today.\" [Ask for Time First]", bundle: 'pro' },
         { q: "The reason is personal and you would rather not explain.", a: "\"I'd rather not go into the details, but I'm not available this week.\" [Give a Short Reason]", bundle: 'pro' },
         { q: "The request is entirely within their rights.", a: "\"That's fair. I'll do it.\" [Say No Simply]", bundle: 'pro' },
+        { q: "You are asked in front of the team and cannot think.", a: "\"Let me look at the week and come back to you this afternoon.\" [Ask for Time First]", bundle: 'pro' },
+        { q: "Saying yes would mean something else slips.", a: "\"I can take it if the report moves to next week. Otherwise it's a no.\" [Offer What You Can Do]", bundle: 'pro' },
+        { q: "You want to decline and stay obviously willing in general.", a: "\"Not this one — but keep asking me, I'd like the next one.\" [Soften the Delivery]", bundle: 'pro' },
       ]
     },
     {
@@ -2332,6 +2446,9 @@ const challengesCollections = {
         { q: "They point out that you did it last time.", a: "\"I did, and I shouldn't have taken it on then either.\" [Give a Short Reason]", bundle: 'pro' },
         { q: "You want to change what is expected going forward.", a: "\"I'm going to be saying no to these more often. It's nothing to do with you.\" [Give a Short Reason]", bundle: 'pro' },
         { q: "You can feel the old reflex and want to stop it.", a: "\"Let me think about it rather than answering straight away.\" [Ask for Time First]", bundle: 'pro' },
+        { q: "They assume it is a yes and have already told other people.", a: "\"I think this got ahead of itself. I'm not going to be able to do it.\" [Say No Simply]", bundle: 'pro' },
+        { q: "You want to say no now without relitigating every past yes.", a: "\"I know I usually do. Not this time.\" [Show You Understand First]", bundle: 'pro' },
+        { q: "You have said yes and want to take it back the same day.", a: "\"I said yes too fast this morning. I need to change that to a no.\" [Say No Simply]", bundle: 'pro' },
       ]
     },
     {
@@ -2345,6 +2462,9 @@ const challengesCollections = {
         { q: "You do not want to and there is no good reason.", a: "\"I'd rather not, and that's not a good enough reason. I'll do it.\" [Say No Simply]", bundle: 'pro' },
         { q: "You could do it but it would be inconvenient.", a: "\"I can do it. It'll be Thursday rather than tomorrow.\" [Offer What You Can Do]", bundle: 'pro' },
         { q: "It genuinely is yours to decline and you are sure.", a: "\"I've thought about it and it's a no.\" [Say No Simply]", bundle: 'pro' },
+        { q: "They have covered for you twice this year.", a: "\"You've picked me up twice. This one's mine.\" [Show You Understand First]", bundle: 'pro' },
+        { q: "You want to say no and the only reason is that you are tired.", a: "\"Give me until tomorrow — I'll answer properly when I'm not knackered.\" [Ask for Time First]", bundle: 'pro' },
+        { q: "You are calling it a boundary when it is really a preference.", a: "\"That's not a boundary, it's a preference. I'll do it.\" [Give a Short Reason]", bundle: 'pro' },
       ]
     },
   ],
