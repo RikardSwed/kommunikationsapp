@@ -1025,7 +1025,7 @@ const memorizeCollections = {
       ]
     },
     {
-      name: "Use an Exit Phrase",
+      name: "The Exit Phrase",
       description: "The two-word full stop.",
       cards: [
         { q: "What is an exit phrase doing?", a: "Signalling the end in words that carry no new information, so nothing can restart.", bundle: 'free' },
@@ -1049,7 +1049,7 @@ const memorizeCollections = {
       ]
     },
     {
-      name: "Offer to Continue Later",
+      name: "The Rain Check",
       description: "The move that separates leaving from leaving them.",
       cards: [
         { q: "What does this move separate?", a: "That you are leaving, and that you are not leaving them.", bundle: 'free' },
@@ -1061,7 +1061,7 @@ const memorizeCollections = {
       ]
     },
     {
-      name: "Say Something Positive About the Talk",
+      name: "Praise the Talk",
       description: "The move that tells them how to remember it.",
       cards: [
         { q: "What does this move do?", a: "Tells the other person how to remember the exchange.", bundle: 'free' },
@@ -1085,7 +1085,7 @@ const memorizeCollections = {
       ]
     },
     {
-      name: "Leave With One Last Question",
+      name: "One Last Question",
       description: "The move that ends a conversation by proving it mattered.",
       cards: [
         { q: "What two things does this move say at once?", a: "That you are leaving, and that the conversation mattered enough to spend your last seconds on.", bundle: 'free' },
@@ -1097,7 +1097,7 @@ const memorizeCollections = {
       ]
     },
     {
-      name: "End on a Joke",
+      name: "The Parting Joke",
       description: "The warmest ending and the riskiest.",
       cards: [
         { q: "What is the classic pattern?", a: "The mock refusal — they say \"see you later\", you say \"no, never again\", smiling.", bundle: 'free' },
@@ -1123,7 +1123,7 @@ const memorizeCollections = {
       ]
     },
     {
-      name: "Say You Need a Second",
+      name: "Name the Pause",
       description: "Making the pause visible.",
       cards: [
         { q: "What is the difference between a silent pause and a named one?", a: "A silent one gets filled in by the other person, usually as disapproval.", bundle: 'free' },
@@ -1135,7 +1135,7 @@ const memorizeCollections = {
       ]
     },
     {
-      name: "Say You Don't Know What to Say",
+      name: "Admit the Blank",
       description: "The honest admission, which is a complete answer.",
       cards: [
         { q: "Why is this more welcome than a stock response?", a: "It is true, and the alternatives — a hollow phrase, a change of subject, an invented opinion — are all worse.", bundle: 'free' },
@@ -1159,7 +1159,7 @@ const memorizeCollections = {
       ]
     },
     {
-      name: "Answer the Part You Can",
+      name: "Answer Part of It",
       description: "The partial honest response.",
       cards: [
         { q: "Why is a partial answer usually available?", a: "Unexpected statements are several things at once, and you almost always have a view on some of it.", bundle: 'free' },
@@ -1171,7 +1171,7 @@ const memorizeCollections = {
       ]
     },
     {
-      name: "Come Back to It Later",
+      name: "Park It",
       description: "The deferral, and the return that makes it worth anything.",
       cards: [
         { q: "What is the condition on deferring?", a: "That you actually come back, on a named day.", bundle: 'free' },
@@ -1326,7 +1326,7 @@ const memorizeCollections = {
       description: "The concept behind handling interruptions and the full set of moves.",
       cards: [
         { q: "What's the core goal when you're interrupted?", a: "Regain your space without escalating — stay calm, firm but friendly.", bundle: 'free' },
-        { q: "What are the five moves for handling an interruption?", a: "Acknowledge and Continue, Invite Them In After, Reinforce the Boundary, Use Humour, Let It Go and Reclaim.", bundle: 'free' },
+        { q: "What are the five moves for handling an interruption?", a: "Acknowledge and Continue, Their Turn Next, Reinforce the Boundary, Use Humour, Pick It Up After.", bundle: 'free' },
         { q: "What's the mindset shift that makes it easier?", a: "Don't take it personally — read the interruption as a signal (excited, confused, impatient), not an attack.", bundle: 'free' },
         { q: "Why does tone matter more than the exact words?", a: "Firm-but-friendly holds the floor; sounding defensive or irritated escalates it and loses the room.", bundle: 'free' },
         { q: "How do you pick which move to use?", a: "Read the cut-in — everyday → Acknowledge; repeat/dismissive → Boundary; friendly → Humour; not worth the fight → Let It Go.", bundle: 'pro' },
@@ -1346,10 +1346,10 @@ const memorizeCollections = {
       ]
     },
     {
-      name: "Invite Them In After",
+      name: "Their Turn Next",
       description: "The theory behind holding the floor by promising the next turn.",
       cards: [
-        { q: "What is Invite Them In After?", a: "You promise the interrupter the very next turn, so you finish without shutting them out.", bundle: 'free' },
+        { q: "What is Their Turn Next?", a: "You promise the interrupter the very next turn, so you finish without shutting them out.", bundle: 'free' },
         { q: "Why does it work?", a: "It buys you the floor by offering it back — they wait because they know they're up.", bundle: 'free' },
         { q: "When does it fit?", a: "When someone's keen to jump in and you just need one more sentence.", bundle: 'free' },
         { q: "What makes the promise credible?", a: "Actually hand over when you're done (\"okay — what were you going to say?\"), or it won't work next time.", bundle: 'pro' },
@@ -1378,10 +1378,10 @@ const memorizeCollections = {
       ]
     },
     {
-      name: "Let It Go and Reclaim",
+      name: "Pick It Up After",
       description: "The theory behind yielding on purpose and coming back.",
       cards: [
-        { q: "What is Let It Go and Reclaim?", a: "Allowing the interruption to happen, then calmly returning to your point.", bundle: 'free' },
+        { q: "What is Pick It Up After?", a: "Allowing the interruption to happen, then calmly returning to your point.", bundle: 'free' },
         { q: "When does it fit?", a: "When fighting it would cost more than it's worth — an urgent cut-in, a senior person, crosstalk.", bundle: 'free' },
         { q: "What's the reclaim line?", a: "A short bridge back: \"As I was saying…\" / \"Coming back to my point…\".", bundle: 'free' },
         { q: "Why is letting go sometimes the strong move?", a: "You keep your composure and your point, without a needless power struggle.", bundle: 'pro' },
@@ -2249,7 +2249,7 @@ const memorizeCollections = {
       ]
     },
     {
-      name: "Apologise for What You Did",
+      name: "What You Did",
       description: "The specific, unconditional apology.",
       cards: [
         { q: "What makes an apology specific enough?", a: "Naming exactly what you did, not a general expression of regret.", bundle: 'free' },
@@ -2261,7 +2261,7 @@ const memorizeCollections = {
       ]
     },
     {
-      name: "Say What You'll Do Differently",
+      name: "The Plan",
       description: "The part that costs you something.",
       cards: [
         { q: "Why is this the most important part to someone let down before?", a: "It is the only part that is not words about the past.", bundle: 'free' },
@@ -2408,7 +2408,7 @@ const memorizeCollections = {
       ]
     },
     {
-      name: "Show the Benefit to Them",
+      name: "What They Get",
       description: "The strategy that answers \"what does this do for me\".",
       cards: [
         { q: "What does this strategy name?", a: "What improves for them specifically if it happens.", bundle: 'free' },
@@ -2432,7 +2432,7 @@ const memorizeCollections = {
       ]
     },
     {
-      name: "Name the Cost of Doing Nothing",
+      name: "The Cost of Doing Nothing",
       description: "The strategy that makes the comparison honest.",
       cards: [
         { q: "Why is the cost of the status quo usually invisible?", a: "Everyone has been paying it long enough to stop noticing.", bundle: 'free' },
@@ -2444,7 +2444,7 @@ const memorizeCollections = {
       ]
     },
     {
-      name: "Tell What Happened to You",
+      name: "Your Own Story",
       description: "The strategy that asks the listener to concede nothing.",
       cards: [
         { q: "Why does a first-hand account slip past resistance?", a: "They are not agreeing with an argument, they are hearing what happened.", bundle: 'free' },
@@ -2692,7 +2692,7 @@ const memorizeCollections = {
       ]
     },
     {
-      name: "Don't Give Reasons",
+      name: "Just the Position",
       description: "The part that decides whether the technique works.",
       cards: [
         { q: "What happens to every reason you give?", a: "It becomes something to solve, disprove or work around.", bundle: 'free' },
@@ -2704,7 +2704,7 @@ const memorizeCollections = {
       ]
     },
     {
-      name: "Don't Follow the New Argument",
+      name: "Stay on Your Line",
       description: "The move for when they change tack.",
       cards: [
         { q: "What is a \"new argument\" usually?", a: "The same request wearing a different coat.", bundle: 'free' },
@@ -2843,7 +2843,7 @@ const memorizeCollections = {
       name: "Core Idea",
       description: "The shape of the pack: what makes a request work, and the two ways it fails.",
       cards: [
-        { q: "What are the seven strategies in this pack?", a: "Ask Instead of Hinting, Make It Specific, Give One Short Reason, Leave Room to Refuse, Ask for Help, Follow Up Once, Take a No Well.", bundle: 'free' },
+        { q: "What are the seven strategies in this pack?", a: "The Actual Request, Make It Specific, Give One Short Reason, Leave Room to Refuse, Ask for Help, Follow Up Once, Take a No Well.", bundle: 'free' },
         { q: "What are the two jobs of a good request?", a: "It has to be answerable, and it has to be refusable.", bundle: 'free' },
         { q: "What are the two ways a request fails?", a: "It cannot be answered — vague, hinted, aimed at the wrong person. Or it cannot be refused, in which case it is a demand with a polite tone.", bundle: 'free' },
         { q: "What is the asymmetry between asking and declining?", a: "When you ask, one short reason helps. When you decline, reasons invite argument.", bundle: 'pro' },
@@ -2851,7 +2851,7 @@ const memorizeCollections = {
       ]
     },
     {
-      name: "Ask Instead of Hinting",
+      name: "The Actual Request",
       description: "Turning the hint into a question.",
       cards: [
         { q: "What is wrong with a hint?", a: "It asks the other person to work out what you want and then decide — and most people fail the first part.", bundle: 'free' },
@@ -2978,7 +2978,7 @@ const memorizeCollections = {
       ]
     },
     {
-      name: "Show You Understand First",
+      name: "Understand First",
       description: "The step that makes someone feel heard even when refused.",
       cards: [
         { q: "What is the sting in being refused, usually?", a: "Not the refusal — the sense that the request was not taken seriously.", bundle: 'free' },
@@ -2990,7 +2990,7 @@ const memorizeCollections = {
       ]
     },
     {
-      name: "Offer What You Can Do",
+      name: "The Half Yes",
       description: "The step that keeps you helpful while the answer stays no.",
       cards: [
         { q: "What are the two conditions on an alternative?", a: "It must be something you will actually do, and it must come after the no.", bundle: 'free' },
@@ -5988,9 +5988,9 @@ const memorizeCollections = {
   talkingaboutyourself: [
     {
       name: "Core Idea",
-      description: "Seven strategies for the moment the attention lands on you.\n\n1. **Give a Detail**\n2. **Match Their Depth**\n3. **The Small True Thing**\n4. **The Real Question**\n5. **What You're Into**\n6. **Keep Something Back**\n7. **Hand It Back**\n\nThree answer the question, two decide the size, one names what you care about.",
+      description: "Seven strategies for the moment the attention lands on you.\n\n1. **Give a Detail**\n2. **Match Their Depth**\n3. **True, Not Impressive**\n4. **Behind the Question**\n5. **What You're Into**\n6. **Keep Something Back**\n7. **Hand It Back**\n\nThree answer the question, two decide the size, one names what you care about.",
       cards: [
-        { q: "What are the seven strategies in this pack?", a: "Give a Detail, Match Their Depth, The Small True Thing, The Real Question, What You're Into, Keep Something Back, Hand It Back.", bundle: 'free' },
+        { q: "What are the seven strategies in this pack?", a: "Give a Detail, Match Their Depth, True, Not Impressive, Behind the Question, What You're Into, Keep Something Back, Hand It Back.", bundle: 'free' },
         { q: "What are the two ways answering goes wrong?", a: "Giving too little, which puts the whole conversation on them. And giving too much too soon, which outruns what they offered.", bundle: 'free' },
         { q: "What is the mistake underneath both?", a: "Reading the question as a test of how interesting you are, rather than as an invitation to be known.", bundle: 'free' },
         { q: "How do the seven divide?", a: "Three answer the question, two decide the size, one names what you care about, and one hands the attention back.", bundle: 'free' },
@@ -6029,7 +6029,7 @@ const memorizeCollections = {
       ]
     },
     {
-      name: "The Small True Thing",
+      name: "True, Not Impressive",
       description: "",
       cards: [
         { q: "What is the standard for a good answer?", a: "True and specific. Not interesting.", bundle: 'free' },
@@ -6043,7 +6043,7 @@ const memorizeCollections = {
       ]
     },
     {
-      name: "The Real Question",
+      name: "Behind the Question",
       description: "",
       cards: [
         { q: "What is \"what do you do?\" actually asking?", a: "What your days are like, and whether there is anything in there worth talking about.", bundle: 'free' },
@@ -6106,15 +6106,15 @@ const memorizeCollections = {
         { q: "What does When They Ask About You sort by?", a: "What your answer would leave them with — nothing to ask about, a job title, or nothing true.", bundle: 'pro' },
         { q: "What does Choosing How Much sort by?", a: "Size rather than content — how much they offered, and whether you want to answer at all.", bundle: 'pro' },
         { q: "Your answer left them nothing to hold. Which strategy?", a: "Give a Detail.", bundle: 'pro' },
-        { q: "You gave a job title and it stalled. Which strategy?", a: "The Real Question.", bundle: 'pro' },
-        { q: "You are hunting for something impressive. Which strategy?", a: "The Small True Thing.", bundle: 'pro' },
+        { q: "You gave a job title and it stalled. Which strategy?", a: "Behind the Question.", bundle: 'pro' },
+        { q: "You are hunting for something impressive. Which strategy?", a: "True, Not Impressive.", bundle: 'pro' },
         { q: "They went one level deeper than usual. Which strategy?", a: "Match Their Depth.", bundle: 'pro' },
         { q: "You have answered fully and want the attention to move. Which strategy?", a: "Hand It Back.", bundle: 'pro' },
       ]
     },
     {
       name: "Sequences",
-      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **A First Conversation** — The Real Question → Give a Detail → Hand It Back → Match Their Depth\n2. **Going a Bit Deeper** — Match Their Depth → The Small True Thing → What You're Into → Hand It Back\n3. **A Question You Would Rather Not Answer** — Keep Something Back → Give a Detail → Hand It Back → Match Their Depth\n\nAll three end by handing the attention over, and none of them starts there.",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **A First Conversation** — Behind the Question → Give a Detail → Hand It Back → Match Their Depth\n2. **Going a Bit Deeper** — Match Their Depth → True, Not Impressive → What You're Into → Hand It Back\n3. **A Question You Would Rather Not Answer** — Keep Something Back → Give a Detail → Hand It Back → Match Their Depth\n\nAll three end by handing the attention over, and none of them starts there.",
       cards: [
         { q: "What is the order in A First Conversation?", a: "Real answer, one detail, hand it back, then match whatever they give you.", bundle: 'pro' },
         { q: "Why does that sequence answer three times before turning it around?", a: "So the handover lands as generosity rather than as escape.", bundle: 'pro' },
@@ -6676,12 +6676,12 @@ const memorizeCollections = {
   changingtopics: [
     {
       name: "Core Idea",
-      description: "Six ways to change the subject without it feeling like an interruption.\n\n1. **Linking**\n2. **Acknowledge and Redirect**\n3. **Finding Common Ground**\n4. **Random or Light Switch**\n5. **Steering Away from Sensitive Topics**\n6. **Respectful Exit**\n\nThree build a bridge from the old subject; three close it first.",
+      description: "Six ways to change the subject without it feeling like an interruption.\n\n1. **The Bridge**\n2. **Acknowledge and Redirect**\n3. **Common Ground**\n4. **The Random Switch**\n5. **Steer Away**\n6. **Respectful Exit**\n\nThree build a bridge from the old subject; three close it first.",
       cards: [
-        { q: "What are the six moves in this pack?", a: "Linking, Acknowledge and Redirect, Finding Common Ground, Random or Light Switch, Steering Away from Sensitive Topics, and Respectful Exit.", bundle: 'free' },
+        { q: "What are the six moves in this pack?", a: "The Bridge, Acknowledge and Redirect, Common Ground, The Random Switch, Steer Away, and Respectful Exit.", bundle: 'free' },
         { q: "What do people actually notice about a topic change?", a: "Not the change — the gap where it happened.", bundle: 'free' },
         { q: "How is this pack different from Exploring a Topic?", a: "There you stay in the subject. Here you leave it.", bundle: 'free' },
-        { q: "Which is the smoothest of the six, and why?", a: "Linking. The new subject grows out of their own words.", bundle: 'free' },
+        { q: "Which is the smoothest of the six, and why?", a: "The Bridge. The new subject grows out of their own words.", bundle: 'free' },
         { q: "Do you always need a bridge?", a: "No. A flagged switch is honest, and only an unflagged one is jarring.", bundle: 'free' },
         { q: "What are the two questions that sort nearly every moment?", a: "Does the old topic need closing first, and is there anything in it to build from?", bundle: 'pro' },
         { q: "What is the worst option available?", a: "Doing nothing. A subject that has died and not been replaced is the most uncomfortable moment in a conversation.", bundle: 'pro' },
@@ -6689,7 +6689,7 @@ const memorizeCollections = {
       ]
     },
     {
-      name: "Linking",
+      name: "The Bridge",
       description: "",
       cards: [
         { q: "What is the move?", a: "Catch a word or detail from what they just said and use it as a bridge to a new topic.", bundle: 'free' },
@@ -6717,7 +6717,7 @@ const memorizeCollections = {
       ]
     },
     {
-      name: "Finding Common Ground",
+      name: "Common Ground",
       description: "",
       cards: [
         { q: "What is the move?", a: "Use a shared experience as the stepping stone, so relating to them opens the new direction.", bundle: 'free' },
@@ -6725,13 +6725,13 @@ const memorizeCollections = {
         { q: "What has to be true of the relating?", a: "It has to be genuine. A manufactured \"me too\" is transparent.", bundle: 'free' },
         { q: "What does a fake one make the switch look like?", a: "An escape.", bundle: 'free' },
         { q: "What does this move do that the others do not?", a: "It warms the conversation before it turns it.", bundle: 'free' },
-        { q: "When is it better than Linking?", a: "When there is no single word to catch but you recognise the situation.", bundle: 'pro' },
+        { q: "When is it better than The Bridge?", a: "When there is no single word to catch but you recognise the situation.", bundle: 'pro' },
         { q: "What do you do after you have related?", a: "Turn it into a question, so the new direction belongs to both of you.", bundle: 'pro' },
         { q: "Why does it work so well after a stall?", a: "Whatever small thing they gave you is enough to relate to, and relating is easier than bridging.", bundle: 'pro' },
       ]
     },
     {
-      name: "Random or Light Switch",
+      name: "The Random Switch",
       description: "",
       cards: [
         { q: "What is the move?", a: "Change the subject openly, with humour or spontaneity, and no bridge.", bundle: 'free' },
@@ -6745,7 +6745,7 @@ const memorizeCollections = {
       ]
     },
     {
-      name: "Steering Away from Sensitive Topics",
+      name: "Steer Away",
       description: "",
       cards: [
         { q: "What is the move?", a: "Acknowledge the uncomfortable subject briefly, then guide gently toward safer ground.", bundle: 'free' },
@@ -6774,21 +6774,21 @@ const memorizeCollections = {
     },
     {
       name: "Collections",
-      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Is There a Bridge** — Linking, Finding Common Ground or Random or Light Switch\n• **Closing the Old One** — Acknowledge and Redirect, Respectful Exit or Steering Away from Sensitive Topics\n• **Reading the Room** — all six, no cue given\n\nThe first asks what you can build from. The second asks what kind of ending the old subject needs.",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Is There a Bridge** — The Bridge, Common Ground or The Random Switch\n• **Closing the Old One** — Acknowledge and Redirect, Respectful Exit or Steer Away\n• **Reading the Room** — all six, no cue given\n\nThe first asks what you can build from. The second asks what kind of ending the old subject needs.",
       cards: [
         { q: "What are the three collections in this pack?", a: "Is There a Bridge, Closing the Old One, and Reading the Room.", bundle: 'pro' },
         { q: "What does Is There a Bridge read?", a: "What they last said — a concrete noun, a shared situation, or neither.", bundle: 'pro' },
         { q: "What does Closing the Old One read?", a: "What kind of ending the subject needs — a nod, a naming, or an acknowledgement.", bundle: 'pro' },
-        { q: "They mentioned a place you can catch. Which move?", a: "Linking.", bundle: 'pro' },
-        { q: "They described a situation you have been in yourself. Which move?", a: "Finding Common Ground.", bundle: 'pro' },
+        { q: "They mentioned a place you can catch. Which move?", a: "The Bridge.", bundle: 'pro' },
+        { q: "They described a situation you have been in yourself. Which move?", a: "Common Ground.", bundle: 'pro' },
         { q: "The subject is on its third lap. Which move?", a: "Respectful Exit.", bundle: 'pro' },
-        { q: "The subject is raw rather than finished. Which move?", a: "Steering Away from Sensitive Topics.", bundle: 'pro' },
+        { q: "The subject is raw rather than finished. Which move?", a: "Steer Away.", bundle: 'pro' },
         { q: "Why is there no two-strategy collection in this pack?", a: "Two is a comparison, not a choice. A collection makes you pick between at least three.", bundle: 'pro' },
       ]
     },
     {
       name: "Sequences",
-      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **Sensitive to Safe** — Steering Away → Random or Light Switch → Finding Common Ground\n2. **Exhausted to Fresh** — Respectful Exit → Linking → Acknowledge and Redirect\n3. **Stalled to Started** — Random or Light Switch → Finding Common Ground → Linking\n\nAll three end by making the new subject take hold, not just by opening it.",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **Sensitive to Safe** — Steering Away → The Random Switch → Common Ground\n2. **Exhausted to Fresh** — Respectful Exit → The Bridge → Acknowledge and Redirect\n3. **Stalled to Started** — The Random Switch → Common Ground → The Bridge\n\nAll three end by making the new subject take hold, not just by opening it.",
       cards: [
         { q: "What is the order in Sensitive to Safe?", a: "Defuse without engaging, offer somewhere safer, then pick up whatever they give you.", bundle: 'pro' },
         { q: "Why acknowledge before steering?", a: "It is what stops the steer looking like avoidance.", bundle: 'pro' },
@@ -6796,7 +6796,7 @@ const memorizeCollections = {
         { q: "What is the order in Exhausted to Fresh?", a: "Close the done topic warmly, pivot off something they said earlier, then open it properly.", bundle: 'pro' },
         { q: "Where is the bridge in Exhausted to Fresh?", a: "Behind you. There is almost always a detail from ten minutes ago that never got followed up.", bundle: 'pro' },
         { q: "What is the order in Stalled to Started?", a: "Flag a switch, relate to whatever comes back, then catch a word from their answer.", bundle: 'pro' },
-        { q: "Why does Stalled to Started end with Linking?", a: "Catching a word from their answer is what stops it stalling a second time.", bundle: 'pro' },
+        { q: "Why does Stalled to Started end with The Bridge?", a: "Catching a word from their answer is what stops it stalling a second time.", bundle: 'pro' },
         { q: "What do all three have in common?", a: "They do not stop at opening a new subject. They make it take hold.", bundle: 'pro' },
       ]
     },
@@ -6832,9 +6832,9 @@ const memorizeCollections = {
   complimenting: [
     {
       name: "Core Idea",
-      description: "Seven ways to say a true thing to someone about themselves.\n\n1. **Name What You Noticed**\n2. **Compliment the Choice, Not the Luck**\n3. **Say Why It Landed**\n4. **Say the Bigger One**\n5. **Say It Where It Counts**\n6. **Take a Compliment**\n7. **Answer It, Don't Return It**\n\nFive give. Two receive, and those two happen to you unprepared.",
+      description: "Seven ways to say a true thing to someone about themselves.\n\n1. **The Specific Thing**\n2. **Choice, Not Luck**\n3. **Why It Landed**\n4. **Who They Are**\n5. **Where It Counts**\n6. **Take a Compliment**\n7. **Hold Yours Back**\n\nFive give. Two receive, and those two happen to you unprepared.",
       cards: [
-        { q: "What are the seven strategies in this pack?", a: "Name What You Noticed, Compliment the Choice Not the Luck, Say Why It Landed, Say the Bigger One, Say It Where It Counts, Take a Compliment, Answer It Don't Return It.", bundle: 'free' },
+        { q: "What are the seven strategies in this pack?", a: "The Specific Thing, Compliment the Choice Not the Luck, Why It Landed, Who They Are, Where It Counts, Take a Compliment, Answer It Don't Return It.", bundle: 'free' },
         { q: "What is a compliment, in one line?", a: "Information the other person does not have — nobody sees themselves from outside.", bundle: 'free' },
         { q: "What are the two ways a compliment fails?", a: "Too vague to be believed, or too much to be received.", bundle: 'free' },
         { q: "Which two strategies are about receiving?", a: "Take a Compliment, and Answer It Don't Return It.", bundle: 'free' },
@@ -6845,7 +6845,7 @@ const memorizeCollections = {
       ]
     },
     {
-      name: "Name What You Noticed",
+      name: "The Specific Thing",
       description: "",
       cards: [
         { q: "What is the move?", a: "Say the specific thing you saw, not the category it belongs to.", bundle: 'free' },
@@ -6859,7 +6859,7 @@ const memorizeCollections = {
       ]
     },
     {
-      name: "Compliment the Choice, Not the Luck",
+      name: "Choice, Not Luck",
       description: "",
       cards: [
         { q: "What is the rule?", a: "Praise what they did or chose, not what they were handed.", bundle: 'free' },
@@ -6873,7 +6873,7 @@ const memorizeCollections = {
       ]
     },
     {
-      name: "Say Why It Landed",
+      name: "Why It Landed",
       description: "",
       cards: [
         { q: "What do you add?", a: "What it did to you — the part they cannot see.", bundle: 'free' },
@@ -6887,7 +6887,7 @@ const memorizeCollections = {
       ]
     },
     {
-      name: "Say the Bigger One",
+      name: "Who They Are",
       description: "",
       cards: [
         { q: "What makes this one different?", a: "It is about who they are, not what they did — and almost nobody ever hears it.", bundle: 'free' },
@@ -6901,7 +6901,7 @@ const memorizeCollections = {
       ]
     },
     {
-      name: "Say It Where It Counts",
+      name: "Where It Counts",
       description: "",
       cards: [
         { q: "What does public praise do that private praise cannot?", a: "It changes what everyone else thinks, not only what they think.", bundle: 'free' },
@@ -6929,7 +6929,7 @@ const memorizeCollections = {
       ]
     },
     {
-      name: "Answer It, Don't Return It",
+      name: "Hold Yours Back",
       description: "",
       cards: [
         { q: "What is wrong with returning it immediately?", a: "It cancels both — it reads as a transaction, and neither person has been told anything.", bundle: 'free' },
@@ -6944,16 +6944,16 @@ const memorizeCollections = {
     },
     {
       name: "Collections",
-      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **What Are You Praising** — Name What You Noticed, Compliment the Choice or Say Why It Landed\n• **How Far and Who Hears** — Say the Bigger One, Say It Where It Counts or Name What You Noticed\n• **One Is Coming At You** — Take a Compliment, Answer It Don't Return It or Say Why It Landed\n\nThe first asks what goes in the sentence. The second asks how large it should be and who should hear it. The third is the receiving half.",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **What Are You Praising** — The Specific Thing, Compliment the Choice or Why It Landed\n• **How Far and Who Hears** — Who They Are, Where It Counts or The Specific Thing\n• **One Is Coming At You** — Take a Compliment, Answer It Don't Return It or Why It Landed\n\nThe first asks what goes in the sentence. The second asks how large it should be and who should hear it. The third is the receiving half.",
       cards: [
         { q: "What are the three collections in this pack?", a: "What Are You Praising, How Far and Who Hears, and One Is Coming At You.", bundle: 'pro' },
         { q: "What does What Are You Praising read?", a: "What you actually have — a moment you saw, a decision they made, or an effect on you.", bundle: 'pro' },
         { q: "What two dials does How Far and Who Hears set?", a: "Size and audience.", bundle: 'pro' },
-        { q: "You can quote the exact moment. Which move?", a: "Name What You Noticed.", bundle: 'pro' },
-        { q: "What you admire is something they decided, not something they were given. Which move?", a: "Compliment the Choice, Not the Luck.", bundle: 'pro' },
-        { q: "They are shy and the room is large. Which move?", a: "Say It Where It Counts — afterwards, not now.", bundle: 'pro' },
-        { q: "They just praised you and you have one ready to fire back. Which move?", a: "Answer It, Don't Return It.", bundle: 'pro' },
-        { q: "Which strategy appears in two collections, and why?", a: "Name What You Noticed — it is the detail that both the giving questions eventually need.", bundle: 'pro' },
+        { q: "You can quote the exact moment. Which move?", a: "The Specific Thing.", bundle: 'pro' },
+        { q: "What you admire is something they decided, not something they were given. Which move?", a: "Choice, Not Luck.", bundle: 'pro' },
+        { q: "They are shy and the room is large. Which move?", a: "Where It Counts — afterwards, not now.", bundle: 'pro' },
+        { q: "They just praised you and you have one ready to fire back. Which move?", a: "Hold Yours Back.", bundle: 'pro' },
+        { q: "Which strategy appears in two collections, and why?", a: "The Specific Thing — it is the detail that both the giving questions eventually need.", bundle: 'pro' },
       ]
     },
     {

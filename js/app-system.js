@@ -5790,8 +5790,8 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
             'Each one fixes a different way the answer dies.</p>' +
             '<div class="ob-how">' +
             '<div class="ob-how-row"><span class="ob-how-num">1</span><p><strong>Give a Detail</strong> &mdash; answer, then add one concrete thing they can pick up.</p></div>' +
-            '<div class="ob-how-row"><span class="ob-how-num">2</span><p><strong>The Real Question</strong> &mdash; the version about you, not the job title.</p></div>' +
-            '<div class="ob-how-row"><span class="ob-how-num">3</span><p><strong>The Small True Thing</strong> &mdash; true and specific beats impressive.</p></div>' +
+            '<div class="ob-how-row"><span class="ob-how-num">2</span><p><strong>Behind the Question</strong> &mdash; the version about you, not the job title.</p></div>' +
+            '<div class="ob-how-row"><span class="ob-how-num">3</span><p><strong>True, Not Impressive</strong> &mdash; true and specific beats impressive.</p></div>' +
             '</div>' +
             '<p class="ob-text ob-text--dim">&ldquo;How was your week?&rdquo;<br>&rarr; &ldquo;Good &mdash; long, though. I spent most of it arguing with a printer.&rdquo;</p>'
         },
@@ -5921,8 +5921,8 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
             '<p class="ob-text">The smoothest two, because the new subject grows out of their ' +
             'own words.</p>' +
             '<div class="ob-how">' +
-            '<div class="ob-how-row"><span class="ob-how-num">1</span><p><strong>Linking</strong> &mdash; catch one word and use it as the bridge.</p></div>' +
-            '<div class="ob-how-row"><span class="ob-how-num">2</span><p><strong>Finding Common Ground</strong> &mdash; &ldquo;that&rsquo;s like when I&hellip;&rdquo;, and the new direction opens itself.</p></div>' +
+            '<div class="ob-how-row"><span class="ob-how-num">1</span><p><strong>The Bridge</strong> &mdash; catch one word and use it as the bridge.</p></div>' +
+            '<div class="ob-how-row"><span class="ob-how-num">2</span><p><strong>Common Ground</strong> &mdash; &ldquo;that&rsquo;s like when I&hellip;&rdquo;, and the new direction opens itself.</p></div>' +
             '</div>' +
             '<p class="ob-text ob-text--dim">&ldquo;I was up late finishing a report.&rdquo;<br>&rarr; &ldquo;Late nights &mdash; that reminds me, have you had any proper time off lately?&rdquo;</p>'
         },
@@ -5940,7 +5940,7 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
         {
           title: 'No Bridge At All',
           html:
-            '<p class="ob-text"><strong>Random or Light Switch</strong> &mdash; change the ' +
+            '<p class="ob-text"><strong>The Random Switch</strong> &mdash; change the ' +
             'subject openly, and say that you are doing it.</p>' +
             '<p class="ob-text">Naming the switch is what makes it work. An unannounced jump ' +
             'is jarring; an announced one is just a bit of lightness, and everyone is usually ' +
@@ -5950,7 +5950,7 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
         {
           title: 'When It Gets Uncomfortable',
           html:
-            '<p class="ob-text"><strong>Steering Away from Sensitive Topics</strong> &mdash; ' +
+            '<p class="ob-text"><strong>Steer Away</strong> &mdash; ' +
             'acknowledge it, then offer safer ground.</p>' +
             '<p class="ob-text">The acknowledgement is the part people skip, and it is the part ' +
             'that matters. Moving on without it reads as not having noticed, which is worse ' +

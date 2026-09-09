@@ -932,7 +932,7 @@ const mindsetCollections = {
       name: "Yielding Is Losing",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
-      description: "The stance behind Let It Go and Reclaim: you don't have to win every interruption, and giving way on purpose isn't losing. Example of the shift — instead of fighting for the floor, you let it pass and calmly come back to your point.\n\nWhere it goes wrong:\n1. You fight for a point that was never worth the friction.\n2. You give way and then never come back to it.\n3. You treat every interruption as a test you have to pass.\n\nMindset: you do not have to win every interruption. Giving way on purpose and returning calmly is stronger than clinging on — but only if you actually return.",
+      description: "The stance behind Pick It Up After: you don't have to win every interruption, and giving way on purpose isn't losing. Example of the shift — instead of fighting for the floor, you let it pass and calmly come back to your point.\n\nWhere it goes wrong:\n1. You fight for a point that was never worth the friction.\n2. You give way and then never come back to it.\n3. You treat every interruption as a test you have to pass.\n\nMindset: you do not have to win every interruption. Giving way on purpose and returning calmly is stronger than clinging on — but only if you actually return.",
       inputs: [
         { q: "You feel you have to win every interruption.", a: "\"I don't have to win it. Sometimes letting it go and coming back is the stronger move.\"", bundle: 'pro' },
         { q: "You give up on your point once it's been talked over.", a: "\"My point didn't stop being worth saying just because someone talked over it.\"", bundle: 'pro' },
