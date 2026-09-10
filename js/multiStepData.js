@@ -4848,83 +4848,110 @@ const multiStepCollections = {
   ],
   setupquestion: [
     {
-      name: "Ask, Listen, Answer",
+      name: "Ask, Listen, Share",
       guideFront: "What's happening, and the strategy to use",
       guideBack: "One way it could sound",
-      description: "The whole move in three beats: ask the question, actually listen to the answer, then give your own. The third step is the one people drop, and dropping it is what turns a good opener into an interview. Steps: 1) Ask — a question about something you want to talk about, 2) Listen — react to what they actually said, 3) Answer — give your own answer to the same question.\n\nThe shape of the whole thing:\n1. \"What made you sign up for this?\"\n2. \"Six months of meaning to — that sounds familiar.\"\n3. \"I came because I finally ran out of excuses.\"\n\nWhy this order: asking first shows interest and costs you nothing, and answering afterwards is what makes it mutual. Reverse it and you have a Setup Statement, which is a different pack.\n\nMindset: step 3 is not optional. A question you never answer yourself is an interview, and people can feel the difference within about two exchanges.",
+      description: "One question type, taken apart into its three beats. Ask it, react to what they actually said, then give your own version without being asked.\n\nThe third beat is the one people drop, and dropping it is what turns a good opener into an interview. It is also the beat the pack is named after: the question is a setup for something of your own.\n\nEach scenario here runs a different question type \u2014 Purpose, Status, Action \u2014 so the beats stay the same while the subject changes.\n\nMindset: step three is not optional. A question you never answer yourself is an interview, and people feel the difference within two exchanges.",
       inputs: [
         {
           bundle: 'pro',
-          situation: "You have just sat down next to someone before a workshop starts.",
+          situation: "A workshop is about to start and you have just sat down next to someone. A Purpose Question.",
           steps: [
-            { front: "Step 1 · Ask — you decide to open with a question", back: "\"What made you sign up for this one?\"", guideFront: "Put the question first when...", guideBack: "The question, before your own view" },
-            { front: "Step 2 · Listen — they say \"my manager sent me, for a project\"", back: "\"A project — what are you actually building?\"", guideFront: "Take in the whole answer when...", guideBack: "A short sign you heard it" },
-            { front: "Step 3 · Answer — give them yours too", back: "\"I came to steal ideas, honestly. Mine's a mess.\"", guideFront: "Give your own answer now when...", guideBack: "Your answer, after theirs" },
+            { front: "Ask \u2014 you decide to open with a question", back: "\"What made you sign up for this one?\"", guideFront: "Put the question first when...", guideBack: "A question, before your own version" },
+            { front: "Listen \u2014 they say \"my manager sent me, for a project\"", back: "\"A project \u2014 what are you actually building?\"", guideFront: "Take one word from their answer when...", guideBack: "A second question built on theirs" },
+            { front: "Share \u2014 give them yours, unasked", back: "\"I came to steal ideas, honestly. Mine's a mess.\"", guideFront: "Give your own without being asked when...", guideBack: "Your version, unprompted" },
           ]
         },
         {
           bundle: 'pro',
-          situation: "A friend of a friend at a party, both of you a bit tired.",
+          situation: "You are at an evening event and the person beside you looks tired. A Status Question.",
           steps: [
-            { front: "Step 1 · Ask — the mood is the obvious thing", back: "\"How's your evening going so far?\"", guideFront: "Put the question first when...", guideBack: "The question, before your own view" },
-            { front: "Step 2 · Listen — they say \"I came straight from a night shift\"", back: "\"A night shift and then this? That's commitment.\"", guideFront: "Take in the whole answer when...", guideBack: "A short sign you heard it" },
-            { front: "Step 3 · Answer — say where you are too", back: "\"I nearly bailed on tonight. Low-energy day.\"", guideFront: "Give your own answer now when...", guideBack: "Your answer, after theirs" },
+            { front: "Ask \u2014 the mood is the obvious thing", back: "\"How's your evening going so far?\"", guideFront: "Put the question first when...", guideBack: "A question, before your own version" },
+            { front: "Listen \u2014 they say \"I came straight from a night shift\"", back: "\"A night shift and then this? That's commitment.\"", guideFront: "Take one word from their answer when...", guideBack: "A second question built on theirs" },
+            { front: "Share \u2014 say where you are too", back: "\"I nearly bailed on tonight. Low-energy day.\"", guideFront: "Give your own without being asked when...", guideBack: "Your version, unprompted" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "You want something concrete from someone you have only just met. An Action Question.",
+          steps: [
+            { front: "Ask \u2014 you want something concrete", back: "\"What are you working on at the moment?\"", guideFront: "Put the question first when...", guideBack: "A question, before your own version" },
+            { front: "Listen \u2014 they say \"a rebrand, six months in\"", back: "\"Six months? Is that the fun part or the grim part?\"", guideFront: "Take one word from their answer when...", guideBack: "A second question built on theirs" },
+            { front: "Share \u2014 hand yours over", back: "\"Mine's a spreadsheet I inherited and don't understand.\"", guideFront: "Give your own without being asked when...", guideBack: "Your version, unprompted" },
           ]
         },
       ]
     },
     {
-      name: "Question into Story",
+      name: "Changing the Question",
       guideFront: "What's happening, and the strategy to use",
       guideBack: "One way it could sound",
-      description: "Ask a background question, follow the detail they give you, and then give a piece of your own instead of moving on. Good when you want the conversation to deepen rather than bounce. Steps: 1) Ask — where they have come from, 2) Follow — pick up one detail and go further, 3) Match — give a piece of your own at the same size.\n\nThe shape of the whole thing:\n1. \"How do you know everyone here?\"\n2. \"You grew up together? Okay, I need one embarrassing story.\"\n3. \"I've known the host about a year and I'm still the new one.\"\n\nWhy this order: a background question almost always produces a story rather than a word, and matching it with something of your own is what stops you being the one who asks all the questions.\n\nMindset: follow one detail properly, then match it. Two questions in a row without anything of yours in between is where it starts to feel like an interview.",
+      description: "Three whole setups in a row, each a different question type. Every card carries the question and your own answer together, exactly as Single Strategy trains it.\n\nWhat this scenario teaches is the switch: when one question type has given what it has, you move to another rather than pushing the same one further. Background runs out fast. Action runs out slowly. Opinion can be reopened almost any time.\n\nMindset: you are not looking for the perfect question. You are looking for the next one.",
       inputs: [
         {
           bundle: 'pro',
-          situation: "Arriving at a dinner where you only know the host.",
+          situation: "You have just been introduced to someone at a party and know nothing about them.",
           steps: [
-            { front: "Step 1 · Ask — you want a thread, not a yes", back: "\"How do you know everyone here?\"", guideFront: "Put the question first when...", guideBack: "The question, before your own view" },
-            { front: "Step 2 · Follow — they say \"I grew up with the host\"", back: "\"Grew up together? I need one embarrassing story.\"", guideFront: "Go into what they just gave you when...", guideBack: "A question built on their answer" },
-            { front: "Step 3 · Match — give them yours", back: "\"I've known him a year and I'm still the new one.\"", guideFront: "Answer at the size they answered when...", guideBack: "Your own version, same size" },
+            { front: "Background Question \u2014 you know nothing about them", back: "\"How do you know everyone here? I've known him a year and I'm still the new one.\"", guideFront: "Ask what led up to now when...", guideBack: "Their run-up, then yours" },
+            { front: "Action Question \u2014 the first one gave you a thread", back: "\"What's keeping you busy at the moment? Mine's a house that keeps breaking.\"", guideFront: "Ask what they are in the middle of when...", guideBack: "What they are doing, then yours" },
+            { front: "Opinion Question \u2014 go to something you both can see", back: "\"What did you make of the venue? I think it's louder than anyone planned.\"", guideFront: "Ask what they think first when...", guideBack: "Their view, then yours" },
           ]
         },
         {
           bundle: 'pro',
-          situation: "A colleague you have never spoken to properly, waiting for a lift.",
+          situation: "Someone you half know at a work event, where the small talk has already been done.",
           steps: [
-            { front: "Step 1 · Ask — where they came from", back: "\"Have you been here long? I've never worked out who's new.\"", guideFront: "Put the question first when...", guideBack: "The question, before your own view" },
-            { front: "Step 2 · Follow — they say \"eleven years, on and off\"", back: "\"On and off? What made you leave, and what brought you back?\"", guideFront: "Go into what they just gave you when...", guideBack: "A question built on their answer" },
-            { front: "Step 3 · Match — give a piece the same size", back: "\"I'm three months in and still guessing at half the names.\"", guideFront: "Answer at the size they answered when...", guideBack: "Your own version, same size" },
+            { front: "Status Question \u2014 start with right now", back: "\"How's your week been, properly? Mine's been four hours' sleep a night.\"", guideFront: "Ask how they are, properly, when...", guideBack: "Their honest answer, then yours" },
+            { front: "Purpose Question \u2014 ask why they are here", back: "\"What brought you along tonight? I came because a friend wouldn't let me not.\"", guideFront: "Ask why they came when...", guideBack: "Their reason, then yours" },
+            { front: "Action Question \u2014 move off work entirely", back: "\"What are you into outside all this? I've got very into bread, unreasonably.\"", guideFront: "Ask what they are in the middle of when...", guideBack: "What they are doing, then yours" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Standing with a drink beside someone who has also run out of things to say.",
+          steps: [
+            { front: "Opinion Question \u2014 something in the room", back: "\"Better in here or out on the terrace? I'd take the cold, personally.\"", guideFront: "Ask what they think first when...", guideBack: "Their view, then yours" },
+            { front: "Background Question \u2014 how long they have been around", back: "\"Have you been coming long? Three months for me, still guessing at names.\"", guideFront: "Ask what led up to now when...", guideBack: "Their run-up, then yours" },
+            { front: "Status Question \u2014 how it is landing for them", back: "\"How are you finding it so far? I'm enjoying it more than I expected to.\"", guideFront: "Ask how they are, properly, when...", guideBack: "Their honest answer, then yours" },
           ]
         },
       ]
     },
     {
-      name: "When the First One Stalls",
+      name: "A Real Conversation",
       guideFront: "What's happening, and the strategy to use",
       guideBack: "One way it could sound",
-      description: "You asked, they gave you almost nothing, and the temptation is to ask the same question again in different words. Three beats get out of it instead. Steps: 1) Answer your own question, small and concrete, 2) Ask again — narrower, and about something specific, 3) Follow whatever comes back.\n\nThe shape of the whole thing:\n1. \"Mine's been dull, honestly — mostly a spreadsheet.\"\n2. \"Have you got anything on the go at the moment?\"\n3. \"A greenhouse? In this weather?\"\n\nWhy this order: your own small answer shows the size of answer you meant, which is usually what was missing. Then a narrower question is answerable without any effort, and the third step is just following what they gave you.\n\nMindset: never ask the same question twice. Go first yourself, then make it smaller.",
+      description: "Beats and question types in the same scenario, which is how it actually goes. A question gives nothing, so you share first instead. A share opens a subject, so you ask into it. Then you follow what they said.\n\nThis is the only deck in the pack where a scenario card's step list is mixed \u2014 Share, then Action Question, then Listen. That mix is the point: a setup question is one whole move in one card and three beats in the next, depending on what the conversation needs.\n\nMindset: the order is not fixed. Only the mutuality is.",
       inputs: [
         {
           bundle: 'pro',
-          situation: "You asked how their week has been and got \"fine, you?\"",
+          situation: "Your first question got a flat answer and the conversation is about to die.",
           steps: [
-            { front: "Step 1 · Answer yours, small", back: "\"Dull, honestly. Mostly a spreadsheet I don't understand.\"", guideFront: "Give a short version of your own when...", guideBack: "A brief answer of your own" },
-            { front: "Step 2 · Ask again, narrower", back: "\"Have you got anything on the go outside work?\"", guideFront: "Narrow it to the part that interests you when...", guideBack: "A second, smaller question" },
-            { front: "Step 3 · Follow it", back: "\"A greenhouse? In this weather? How's that going?\"", guideFront: "Go into what they just gave you when...", guideBack: "A question built on their answer" },
+            { front: "Share \u2014 the first question got nothing", back: "\"Dull, honestly. Mostly a spreadsheet I don't understand.\"", guideFront: "Give your own without being asked when...", guideBack: "Your version, unprompted" },
+            { front: "Action Question \u2014 ask again, narrower", back: "\"Have you got anything on the go outside work? Mine's the greenhouse.\"", guideFront: "Ask what they are in the middle of when...", guideBack: "What they are doing, then yours" },
+            { front: "Listen \u2014 they say \"a greenhouse, actually\"", back: "\"A greenhouse? In this weather? How's that going?\"", guideFront: "Take one word from their answer when...", guideBack: "A second question built on theirs" },
           ]
         },
         {
           bundle: 'pro',
-          situation: "A neighbour you barely know, both taking bins out.",
+          situation: "You would rather not open with a question at all, so you go first yourself.",
           steps: [
-            { front: "Step 1 · Answer yours, small", back: "\"I've had a week of it — the boiler's gone again.\"", guideFront: "Give a short version of your own when...", guideBack: "A brief answer of your own" },
-            { front: "Step 2 · Ask again, narrower", back: "\"Has yours held up? I assume they're all the same age.\"", guideFront: "Narrow it to the part that interests you when...", guideBack: "A second, smaller question" },
-            { front: "Step 3 · Follow it", back: "\"Replaced the whole thing? Who did you get to do it?\"", guideFront: "Go into what they just gave you when...", guideBack: "A question built on their answer" },
+            { front: "Share \u2014 open with your own", back: "\"I've had a week of it \u2014 the boiler's gone again.\"", guideFront: "Give your own without being asked when...", guideBack: "Your version, unprompted" },
+            { front: "Status Question \u2014 ask into the same ground", back: "\"Has yours held up? I assume they're all the same age.\"", guideFront: "Ask how they are, properly, when...", guideBack: "Their honest answer, then yours" },
+            { front: "Listen \u2014 they say \"replaced it last year\"", back: "\"Replaced the whole thing? Who did you get to do it?\"", guideFront: "Take one word from their answer when...", guideBack: "A second question built on theirs" },
+          ]
+        },
+        {
+          bundle: 'pro',
+          situation: "Three turns into a conversation that is going well and you want to keep it moving.",
+          steps: [
+            { front: "Purpose Question \u2014 open on why", back: "\"What made you come to this one? I was told it was worth it.\"", guideFront: "Ask why they came when...", guideBack: "Their reason, then yours" },
+            { front: "Listen \u2014 they say \"I've been to three\"", back: "\"Three? So you know which bits to skip.\"", guideFront: "Take one word from their answer when...", guideBack: "A second question built on theirs" },
+            { front: "Opinion Question \u2014 go to a view", back: "\"Which one was best? I've only got this one to compare.\"", guideFront: "Ask what they think first when...", guideBack: "Their view, then yours" },
           ]
         },
       ]
-    },
+    }
   ],
   givingcounterexamples: [
     {
