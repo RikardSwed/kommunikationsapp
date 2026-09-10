@@ -1756,20 +1756,20 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "A colleague is presenting a plan built on a date that has since changed.",
           steps: [
-            { front: "Step 1 · Wait for the break — they are mid-sentence, heading for a full stop", back: "(wait) \"…\"", guideFront: "Go in at their own pause when...", guideBack: "A point made in the gap" },
-            { front: "Step 2 · Signal it — they finish the sentence and pause", back: "\"Sorry — can I come in there?\"", guideFront: "Give a short cue before the point when...", guideBack: "Two words before the substance" },
-            { front: "Step 3 · Acknowledge them — they stop and look over", back: "\"Everything up to the timeline I'm completely with you on.\"", guideFront: "Give their point its due when...", guideBack: "One clause about theirs" },
-            { front: "Step 4 · Say why — they wait for the point", back: "\"It's just that the date moved last week, so that part won't hold.\"", guideFront: "Say why it cannot wait when...", guideBack: "The reason it cannot wait" },
+            { front: "Step 1 · The Natural Pause — they are mid-sentence, heading for a full stop", back: "(wait) \"…\"", guideFront: "Hold it until they break when...", guideBack: "A point held until the gap" },
+            { front: "Step 2 · Signal the Interruption — they finish the sentence and pause", back: "\"Sorry — can I come in there?\"", guideFront: "Give a short cue first when...", guideBack: "A word before the point" },
+            { front: "Step 3 · Their Point First — they stop and look over", back: "\"Everything up to the timeline I'm completely with you on.\"", guideFront: "Repeat their point, then yours when...", guideBack: "One line about theirs, then yours" },
+            { front: "Step 4 · Why It Cannot Wait — they wait for the point", back: "\"It's just that the date moved last week, so that part won't hold.\"", guideFront: "Attach a reason to it when...", guideBack: "The reason for cutting in" },
           ]
         },
         {
           bundle: 'pro',
           situation: "In a class discussion someone is explaining a topic and has missed something important.",
           steps: [
-            { front: "Step 1 · Wait for the break — they are building to the end of a point", back: "(wait) \"…\"", guideFront: "Go in at their own pause when...", guideBack: "A point made in the gap" },
-            { front: "Step 2 · Signal it — they reach the full stop", back: "\"Can I add something there?\"", guideFront: "Give a short cue before the point when...", guideBack: "Two words before the substance" },
-            { front: "Step 3 · Acknowledge them — the room turns", back: "\"That's exactly the main reason, I think.\"", guideFront: "Give their point its due when...", guideBack: "One clause about theirs" },
-            { front: "Step 4 · Say why — you have the floor", back: "\"There's a second one though, and it's the one that usually gets missed.\"", guideFront: "Say why it cannot wait when...", guideBack: "The reason it cannot wait" },
+            { front: "Step 1 · The Natural Pause — they are building to the end of a point", back: "(wait) \"…\"", guideFront: "Hold it until they break when...", guideBack: "A point held until the gap" },
+            { front: "Step 2 · Signal the Interruption — they reach the full stop", back: "\"Can I add something there?\"", guideFront: "Give a short cue first when...", guideBack: "A word before the point" },
+            { front: "Step 3 · Their Point First — the room turns", back: "\"That's exactly the main reason, I think.\"", guideFront: "Repeat their point, then yours when...", guideBack: "One line about theirs, then yours" },
+            { front: "Step 4 · Why It Cannot Wait — you have the floor", back: "\"There's a second one though, and it's the one that usually gets missed.\"", guideFront: "Attach a reason to it when...", guideBack: "The reason for cutting in" },
           ]
         },
       ]
@@ -1784,18 +1784,18 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "Someone has been talking for four minutes and the meeting is running out of time.",
           steps: [
-            { front: "Step 1 · Make the gap — there has been no pause at all", back: "\"Sorry — can I jump in?\"", guideFront: "Create the opening yourself when...", guideBack: "A short cue that makes room" },
-            { front: "Step 2 · Say why straight away — they stop, slightly surprised", back: "\"We've got about four minutes and this is the bit that decides it.\"", guideFront: "Attach the reason at once when...", guideBack: "The reason it cannot wait" },
-            { front: "Step 3 · Hand it back — you have said your piece", back: "\"That's all from me — you were partway through, sorry. Carry on.\"", guideFront: "Return the floor when...", guideBack: "A handover, by name" },
+            { front: "Step 1 · The Natural Pause — there has been no pause at all", back: "\"Sorry — can I jump in?\"", guideFront: "Hold it until they break when...", guideBack: "A point held until the gap" },
+            { front: "Step 2 · Why It Cannot Wait — they stop, slightly surprised", back: "\"We've got about four minutes and this is the bit that decides it.\"", guideFront: "Attach a reason to it when...", guideBack: "The reason for cutting in" },
+            { front: "Step 3 · Get Out Cleanly — you have said your piece", back: "\"That's all from me — you were partway through, sorry. Carry on.\"", guideFront: "Say your bit, then give the floor back when...", guideBack: "Your point, then the floor returned" },
           ]
         },
         {
           bundle: 'pro',
           situation: "A friend is deep in a long explanation and you have completely lost the thread.",
           steps: [
-            { front: "Step 1 · Make the gap — there is no natural break coming", back: "\"Hang on, hang on.\"", guideFront: "Create the opening yourself when...", guideBack: "A short cue that makes room" },
-            { front: "Step 2 · Say why straight away — they pause", back: "\"Sorry, who's Anna? I lost the thread about a minute ago.\"", guideFront: "Attach the reason at once when...", guideBack: "The reason it cannot wait" },
-            { front: "Step 3 · Hand it back — they explain", back: "\"Right, got it. Sorry — go on, you were mid-thing.\"", guideFront: "Return the floor when...", guideBack: "A handover, by name" },
+            { front: "Step 1 · The Natural Pause — there is no natural break coming", back: "\"Hang on, hang on.\"", guideFront: "Hold it until they break when...", guideBack: "A point held until the gap" },
+            { front: "Step 2 · Why It Cannot Wait — they pause", back: "\"Sorry, who's Anna? I lost the thread about a minute ago.\"", guideFront: "Attach a reason to it when...", guideBack: "The reason for cutting in" },
+            { front: "Step 3 · Get Out Cleanly — they explain", back: "\"Right, got it. Sorry — go on, you were mid-thing.\"", guideFront: "Say your bit, then give the floor back when...", guideBack: "Your point, then the floor returned" },
           ]
         },
       ]
@@ -1810,18 +1810,18 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "A friend is telling a long story and you have something that fits perfectly.",
           steps: [
-            { front: "Step 1 · Make it light — they are mid-flow", back: "\"I have to jump in before my brain explodes.\"", guideFront: "Let the interruption be the joke when...", guideBack: "A light way in" },
-            { front: "Step 2 · Show you were listening — they laugh and stop", back: "\"The bit about the taxi is exactly it, though.\"", guideFront: "Name their point first when...", guideBack: "One clause about theirs" },
-            { front: "Step 3 · Land the point — they wait", back: "\"The same thing happened to me, and I have never recovered.\"", guideFront: "Say the thing you came in for when...", guideBack: "The point itself, briefly" },
+            { front: "Step 1 · Use Humour — they are mid-flow", back: "\"I have to jump in before my brain explodes.\"", guideFront: "Make the interruption the joke when...", guideBack: "A cut-in that lands as a joke" },
+            { front: "Step 2 · Their Point First — they laugh and stop", back: "\"The bit about the taxi is exactly it, though.\"", guideFront: "Repeat their point, then yours when...", guideBack: "One line about theirs, then yours" },
+            { front: "Step 3 · Get Out Cleanly — they wait", back: "\"The same thing happened to me, and I have never recovered.\"", guideFront: "Say your bit, then give the floor back when...", guideBack: "Your point, then the floor returned" },
           ]
         },
         {
           bundle: 'pro',
           situation: "A relaxed team meeting where you have been waiting to speak for a while.",
           steps: [
-            { front: "Step 1 · Make it light — nobody has offered you the floor", back: "\"You can probably see me twitching over here.\"", guideFront: "Let the interruption be the joke when...", guideBack: "A light way in" },
-            { front: "Step 2 · Show you were listening — the room turns", back: "\"The second option is the one I'd go for too.\"", guideFront: "Name their point first when...", guideBack: "One clause about theirs" },
-            { front: "Step 3 · Land the point — you have it", back: "\"It just needs the deadline moving, or it won't work at all.\"", guideFront: "Say the thing you came in for when...", guideBack: "The point itself, briefly" },
+            { front: "Step 1 · Use Humour — nobody has offered you the floor", back: "\"You can probably see me twitching over here.\"", guideFront: "Make the interruption the joke when...", guideBack: "A cut-in that lands as a joke" },
+            { front: "Step 2 · Their Point First — the room turns", back: "\"The second option is the one I'd go for too.\"", guideFront: "Repeat their point, then yours when...", guideBack: "One line about theirs, then yours" },
+            { front: "Step 3 · Get Out Cleanly — you have it", back: "\"It just needs the deadline moving, or it won't work at all.\"", guideFront: "Say your bit, then give the floor back when...", guideBack: "Your point, then the floor returned" },
           ]
         },
       ]
@@ -1838,9 +1838,9 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "You're making a point in a team meeting and a colleague keeps jumping in.",
           steps: [
-            { front: "Step 1 · Acknowledge and keep going — they cut in: \"Yeah but we tried that—\"", back: "\"Let me just finish this bit — then I want to hear it.\"", guideFront: "Nod to them and continue when...", guideBack: "A brief nod, then the thread" },
-            { front: "Step 2 · Firm up the boundary — they cut in again before you're done: \"I really think—\"", back: "\"Hold on — I'd like to actually finish this one.\"", guideFront: "State plainly that you need to finish when...", guideBack: "A calm, unapologetic line" },
-            { front: "Step 3 · Hand it over cleanly — you land your point and they're still keen", back: "\"Okay — that's me done. Now, what were you going to say?\"", guideFront: "Give them the floor properly when...", guideBack: "A clean handover" },
+            { front: "Step 1 · Acknowledge and Continue — they cut in: \"Yeah but we tried that—\"", back: "\"Let me just finish this bit — then I want to hear it.\"", guideFront: "Show you noticed, then carry on when...", guideBack: "Two seconds, then straight on" },
+            { front: "Step 2 · Reinforce the Boundary — they cut in again before you're done: \"I really think—\"", back: "\"Hold on — I'd like to actually finish this one.\"", guideFront: "State that you want to finish when...", guideBack: "A calm, firm request" },
+            { front: "Step 3 · Their Turn Next — you land your point and they're still keen", back: "\"Okay — that's me done. Now, what were you going to say?\"", guideFront: "Promise them the floor when...", guideBack: "A promise of the next turn" },
           ]
         },
       ]
@@ -1855,9 +1855,9 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "You're mid-explanation when someone bursts in with an urgent side point.",
           steps: [
-            { front: "Step 1 · Let it happen — they cut across: \"Sorry, but did everyone see the email?\"", back: "\"Go ahead — deal with that first.\"", guideFront: "Let it run rather than fight it when...", guideBack: "Nothing, for now" },
-            { front: "Step 2 · Reclaim your thread — the email chat winds down", back: "\"Right — coming back to what I was explaining earlier —\"", guideFront: "Go back to where you were when...", guideBack: "The thread, picked up again" },
-            { front: "Step 3 · Bring them back in — you finish and they'd wanted to add something", back: "\"…and that's the idea. You had a thought earlier?\"", guideFront: "Give them the turn you promised when...", guideBack: "The handover, by name" },
+            { front: "Step 1 · Pick It Up After — they cut across: \"Sorry, but did everyone see the email?\"", back: "\"Go ahead — deal with that first.\"", guideFront: "Let it happen, then come back when...", guideBack: "Your point, picked up afterwards" },
+            { front: "Step 2 · Pick It Up After — the email chat winds down", back: "\"Right — coming back to what I was explaining earlier —\"", guideFront: "Let it happen, then come back when...", guideBack: "Your point, picked up afterwards" },
+            { front: "Step 3 · Their Turn Next — you finish and they'd wanted to add something", back: "\"…and that's the idea. You had a thought earlier?\"", guideFront: "Promise them the floor when...", guideBack: "A promise of the next turn" },
           ]
         },
       ]
@@ -1872,9 +1872,9 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "You're telling a story and a friend keeps stepping on the build-up.",
           steps: [
-            { front: "Step 1 · Deflect with humour — they jump in: \"Oh I know where this is going—\"", back: "\"Hey, no spoilers from the front row — let me get there!\"", guideFront: "Lighten it and hold the floor when...", guideBack: "A warm line that keeps the turn" },
-            { front: "Step 2 · Acknowledge and continue — they grin but open their mouth again", back: "\"One sec — the good bit needs me to finish it.\"", guideFront: "Nod to them and continue when...", guideBack: "A brief nod, then the thread" },
-            { front: "Step 3 · Land it and share the floor — you deliver the ending", back: "\"…and that's the twist. Okay — what were you going to guess?\"", guideFront: "Finish, then open it up when...", guideBack: "The last line, then an invitation" },
+            { front: "Step 1 · Use Humour — they jump in: \"Oh I know where this is going—\"", back: "\"Hey, no spoilers from the front row — let me get there!\"", guideFront: "Lighten it and keep the floor when...", guideBack: "A playful line that holds the turn" },
+            { front: "Step 2 · Acknowledge and Continue — they grin but open their mouth again", back: "\"One sec — the good bit needs me to finish it.\"", guideFront: "Show you noticed, then carry on when...", guideBack: "Two seconds, then straight on" },
+            { front: "Step 3 · Their Turn Next — you deliver the ending", back: "\"…and that's the twist. Okay — what were you going to guess?\"", guideFront: "Promise them the floor when...", guideBack: "A promise of the next turn" },
           ]
         },
       ]
@@ -2304,24 +2304,24 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "You are telling a friend about the day you lost your homework.",
           steps: [
-            { front: "Step 1 · When — they ask what happened at school", back: "\"This was yesterday, about ten minutes before the lesson.\"", guideFront: "Place it in time when...", guideBack: "The timing that mattered" },
-            { front: "Step 2 · Where — they are listening", back: "\"I was in the hallway outside the science block, everyone pushing past.\"", guideFront: "Say where it happened when...", guideBack: "The setting, in a clause" },
-            { front: "Step 3 · Who — set the people up", back: "\"My teacher was already standing there waiting for it.\"", guideFront: "Say who was there and what they did when...", guideBack: "The people who mattered" },
-            { front: "Step 4 · What — land the event", back: "\"And I had lost my homework. Not forgotten it. Lost it.\"", guideFront: "Say the thing that happened when...", guideBack: "The event, in one sentence" },
-            { front: "Step 5 · How — the search", back: "\"I went through my bag, then my locker, then basically the whole corridor.\"", guideFront: "Take them through it step by step when...", guideBack: "The middle, as it went" },
-            { front: "Step 6 · Why — the reason", back: "\"I had been in a rush that morning and just never checked.\"", guideFront: "Say the reason underneath when...", guideBack: "The cause or the motive" },
+            { front: "Step 1 · When — they ask what happened at school", back: "\"This was yesterday, about ten minutes before the lesson.\"", guideFront: "Name the moment it happened when...", guideBack: "The moment, or the stretch" },
+            { front: "Step 2 · Where — they are listening", back: "\"I was in the hallway outside the science block, everyone pushing past.\"", guideFront: "Describe the place briefly when...", guideBack: "Somewhere they can picture" },
+            { front: "Step 3 · Who — set the people up", back: "\"My teacher was already standing there waiting for it.\"", guideFront: "Name everyone involved when...", guideBack: "The people, and what they did" },
+            { front: "Step 4 · What — land the event", back: "\"And I had lost my homework. Not forgotten it. Lost it.\"", guideFront: "Say the one thing that happened when...", guideBack: "The event, without the run-up" },
+            { front: "Step 5 · How — the search", back: "\"I went through my bag, then my locker, then basically the whole corridor.\"", guideFront: "Describe it step by step when...", guideBack: "The steps, as they happened" },
+            { front: "Step 6 · Why — the reason", back: "\"I had been in a rush that morning and just never checked.\"", guideFront: "Name the cause underneath when...", guideBack: "The motive, or the problem" },
           ]
         },
         {
           bundle: 'pro',
           situation: "You are telling someone about the holiday where the hotel did not exist.",
           steps: [
-            { front: "Step 1 · When — they ask how the trip was", back: "\"We landed at about eleven at night, which did not help.\"", guideFront: "Place it in time when...", guideBack: "The timing that mattered" },
-            { front: "Step 2 · Where — set the scene", back: "\"The taxi dropped us at an empty gravel lot on the edge of town.\"", guideFront: "Say where it happened when...", guideBack: "The setting, in a clause" },
-            { front: "Step 3 · Who — bring the people in", back: "\"Just us, and a driver who clearly wanted to be somewhere else.\"", guideFront: "Say who was there and what they did when...", guideBack: "The people who mattered" },
-            { front: "Step 4 · What — land the event", back: "\"The hotel we had booked did not exist.\"", guideFront: "Say the thing that happened when...", guideBack: "The event, in one sentence" },
-            { front: "Step 5 · How — the process", back: "\"He pointed at the lot, said the name, shrugged, and drove off.\"", guideFront: "Take them through it step by step when...", guideBack: "The middle, as it went" },
-            { front: "Step 6 · Why — the reason", back: "\"Turned out the booking had never actually gone through.\"", guideFront: "Say the reason underneath when...", guideBack: "The cause or the motive" },
+            { front: "Step 1 · When — they ask how the trip was", back: "\"We landed at about eleven at night, which did not help.\"", guideFront: "Name the moment it happened when...", guideBack: "The moment, or the stretch" },
+            { front: "Step 2 · Where — set the scene", back: "\"The taxi dropped us at an empty gravel lot on the edge of town.\"", guideFront: "Describe the place briefly when...", guideBack: "Somewhere they can picture" },
+            { front: "Step 3 · Who — bring the people in", back: "\"Just us, and a driver who clearly wanted to be somewhere else.\"", guideFront: "Name everyone involved when...", guideBack: "The people, and what they did" },
+            { front: "Step 4 · What — land the event", back: "\"The hotel we had booked did not exist.\"", guideFront: "Say the one thing that happened when...", guideBack: "The event, without the run-up" },
+            { front: "Step 5 · How — the process", back: "\"He pointed at the lot, said the name, shrugged, and drove off.\"", guideFront: "Describe it step by step when...", guideBack: "The steps, as they happened" },
+            { front: "Step 6 · Why — the reason", back: "\"Turned out the booking had never actually gone through.\"", guideFront: "Name the cause underneath when...", guideBack: "The motive, or the problem" },
           ]
         },
       ]
@@ -2336,18 +2336,18 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "Someone mentions bad first days at work and you have a story that fits.",
           steps: [
-            { front: "Step 1 · What — lead with it", back: "\"On my first day I sat in the wrong meeting for forty minutes.\"", guideFront: "Say the thing that happened when...", guideBack: "The event, in one sentence" },
-            { front: "Step 2 · How — two beats", back: "\"I nodded along the whole time, until someone finally asked who I was.\"", guideFront: "Take them through it step by step when...", guideBack: "The middle, as it went" },
-            { front: "Step 3 · Why — the reason", back: "\"Nobody had told me where to go and I was too embarrassed to ask.\"", guideFront: "Say the reason underneath when...", guideBack: "The cause or the motive" },
+            { front: "Step 1 · What — lead with it", back: "\"On my first day I sat in the wrong meeting for forty minutes.\"", guideFront: "Say the one thing that happened when...", guideBack: "The event, without the run-up" },
+            { front: "Step 2 · How — two beats", back: "\"I nodded along the whole time, until someone finally asked who I was.\"", guideFront: "Describe it step by step when...", guideBack: "The steps, as they happened" },
+            { front: "Step 3 · Why — the reason", back: "\"Nobody had told me where to go and I was too embarrassed to ask.\"", guideFront: "Name the cause underneath when...", guideBack: "The motive, or the problem" },
           ]
         },
         {
           bundle: 'pro',
           situation: "The conversation turns to embarrassing moments and you have one.",
           steps: [
-            { front: "Step 1 · What — lead with it", back: "\"I once called my teacher mum. Out loud.\"", guideFront: "Say the thing that happened when...", guideBack: "The event, in one sentence" },
-            { front: "Step 2 · How — two beats", back: "\"It was out before I could stop it, and then I heard myself say it.\"", guideFront: "Take them through it step by step when...", guideBack: "The middle, as it went" },
-            { front: "Step 3 · Why — the reason", back: "\"I was exhausted, and she had been talking to me exactly like my mum does.\"", guideFront: "Say the reason underneath when...", guideBack: "The cause or the motive" },
+            { front: "Step 1 · What — lead with it", back: "\"I once called my teacher mum. Out loud.\"", guideFront: "Say the one thing that happened when...", guideBack: "The event, without the run-up" },
+            { front: "Step 2 · How — two beats", back: "\"It was out before I could stop it, and then I heard myself say it.\"", guideFront: "Describe it step by step when...", guideBack: "The steps, as they happened" },
+            { front: "Step 3 · Why — the reason", back: "\"I was exhausted, and she had been talking to me exactly like my mum does.\"", guideFront: "Name the cause underneath when...", guideBack: "The motive, or the problem" },
           ]
         },
       ]
@@ -2362,20 +2362,20 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "You want to tell a story to a group that is half distracted.",
           steps: [
-            { front: "Step 1 · What — open on it", back: "\"I locked myself out of my own flat for six hours.\"", guideFront: "Say the thing that happened when...", guideBack: "The event, in one sentence" },
-            { front: "Step 2 · Scene — fill it in", back: "\"February, going dark, sitting on the front step with a bag of shopping.\"", guideFront: "Set the place before it starts when...", guideBack: "The setting, in a clause" },
-            { front: "Step 3 · Who — bring them in", back: "\"A neighbour I had never once spoken to came out and made me tea.\"", guideFront: "Say who was there and what they did when...", guideBack: "The people who mattered" },
-            { front: "Step 4 · How — tell it properly", back: "\"I had tried the letting agent, the spare key, everything. Wrong jacket.\"", guideFront: "Take them through it step by step when...", guideBack: "The middle, as it went" },
+            { front: "Step 1 · What — open on it", back: "\"I locked myself out of my own flat for six hours.\"", guideFront: "Say the one thing that happened when...", guideBack: "The event, without the run-up" },
+            { front: "Step 2 · Where — fill it in", back: "\"February, going dark, sitting on the front step with a bag of shopping.\"", guideFront: "Describe the place briefly when...", guideBack: "Somewhere they can picture" },
+            { front: "Step 3 · Who — bring them in", back: "\"A neighbour I had never once spoken to came out and made me tea.\"", guideFront: "Name everyone involved when...", guideBack: "The people, and what they did" },
+            { front: "Step 4 · How — tell it properly", back: "\"I had tried the letting agent, the spare key, everything. Wrong jacket.\"", guideFront: "Describe it step by step when...", guideBack: "The steps, as they happened" },
           ]
         },
         {
           bundle: 'pro',
           situation: "You want to tell the story of meeting your best friend.",
           steps: [
-            { front: "Step 1 · What — open on it", back: "\"I met my best friend because we were both complaining about the same bus.\"", guideFront: "Say the thing that happened when...", guideBack: "The event, in one sentence" },
-            { front: "Step 2 · Scene — fill it in", back: "\"First week of the course, at a bus stop with a broken timetable.\"", guideFront: "Set the place before it starts when...", guideBack: "The setting, in a clause" },
-            { front: "Step 3 · Who — bring them in", back: "\"A complete stranger who is now the person I speak to most.\"", guideFront: "Say who was there and what they did when...", guideBack: "The people who mattered" },
-            { front: "Step 4 · How — tell it properly", back: "\"We said the exact same thing at the exact same time, and that was that.\"", guideFront: "Take them through it step by step when...", guideBack: "The middle, as it went" },
+            { front: "Step 1 · What — open on it", back: "\"I met my best friend because we were both complaining about the same bus.\"", guideFront: "Say the one thing that happened when...", guideBack: "The event, without the run-up" },
+            { front: "Step 2 · Where — fill it in", back: "\"First week of the course, at a bus stop with a broken timetable.\"", guideFront: "Describe the place briefly when...", guideBack: "Somewhere they can picture" },
+            { front: "Step 3 · Who — bring them in", back: "\"A complete stranger who is now the person I speak to most.\"", guideFront: "Name everyone involved when...", guideBack: "The people, and what they did" },
+            { front: "Step 4 · How — tell it properly", back: "\"We said the exact same thing at the exact same time, and that was that.\"", guideFront: "Describe it step by step when...", guideBack: "The steps, as they happened" },
           ]
         },
       ]
@@ -2478,22 +2478,22 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "A classmate has just handed in a project they rewrote three times over three weeks. It turned out well. You are walking out of the room together.",
           steps: [
-            { front: "Step 1 · Identify the behaviour — name the exact thing she did, not the result.", back: "You rewrote that middle section three times until it worked.", guideFront: "Name the action, not the person." },
-            { front: "Step 2 · Highlight the impact — say what that changed about the project.", back: "It's the part that makes the whole thing make sense now.", guideFront: "What changed because of it?" },
-            { front: "Step 3 · Express appreciation — thank her for the part that helped you.", back: "And thanks for talking me through it as well — that's how I got mine sorted.", guideFront: "Plain thanks, with the reason attached." },
-            { front: "Step 4 · Encourage — point at the next thing she could take on.", back: "Take the harder option next term. You'd start it knowing what the middle feels like.", guideFront: "One next step, concrete." },
-            { front: "Step 5 · Offer support — name one thing you will actually do.", back: "Send me the outline in October and I'll read it before you hand it in.", guideFront: "Small and certain beats large and vague." },
+            { front: "Step 1 · Name the Positive Action — name the exact thing she did, not the result.", back: "You rewrote that middle section three times until it worked.", guideFront: "Describe what they did when...", guideBack: "The action, not a verdict" },
+            { front: "Step 2 · Highlight the Impact — say what that changed about the project.", back: "It's the part that makes the whole thing make sense now.", guideFront: "Say what it changed when...", guideBack: "The effect, as evidence" },
+            { front: "Step 3 · Express Appreciation — thank her for the part that helped you.", back: "And thanks for talking me through it as well — that's how I got mine sorted.", guideFront: "Say thank you, and what for when...", guideBack: "Thanks, with a reason attached" },
+            { front: "Step 4 · Keep Going — point at the next thing she could take on.", back: "Take the harder option next term. You'd start it knowing what the middle feels like.", guideFront: "Encourage the next attempt when...", guideBack: "An invitation to keep going" },
+            { front: "Step 5 · Offer Support — name one thing you will actually do.", back: "Send me the outline in October and I'll read it before you hand it in.", guideFront: "Name what you will actually do when...", guideBack: "A concrete offer, not a wish" },
           ]
         },
         {
           bundle: 'pro',
           situation: "A colleague has just put the phone down after twenty minutes with a shouting customer. She stayed calm the whole way through. It is the two of you in the office.",
           steps: [
-            { front: "Step 1 · Identify the behaviour — name the specific thing she did on the call.", back: "You slowed right down when she started shouting.", guideFront: "Name the action, not the person." },
-            { front: "Step 2 · Highlight the impact — say what that changed.", back: "That's the whole reason she's still a customer.", guideFront: "What changed because of it?" },
-            { front: "Step 3 · Express appreciation — thank her for taking a call you would rather not have.", back: "Thank you for picking that one up. I'd have handled it worse.", guideFront: "Plain thanks, with the reason attached." },
-            { front: "Step 4 · Encourage — tell her what to do with it next time.", back: "Take the next one too if it comes. You clearly know how.", guideFront: "One next step, concrete." },
-            { front: "Step 5 · Offer support — name one thing you will actually do.", back: "And come and get me if one goes past ten minutes. I'll sit with you.", guideFront: "Small and certain beats large and vague." },
+            { front: "Step 1 · Name the Positive Action — name the specific thing she did on the call.", back: "You slowed right down when she started shouting.", guideFront: "Describe what they did when...", guideBack: "The action, not a verdict" },
+            { front: "Step 2 · Highlight the Impact — say what that changed.", back: "That's the whole reason she's still a customer.", guideFront: "Say what it changed when...", guideBack: "The effect, as evidence" },
+            { front: "Step 3 · Express Appreciation — thank her for taking a call you would rather not have.", back: "Thank you for picking that one up. I'd have handled it worse.", guideFront: "Say thank you, and what for when...", guideBack: "Thanks, with a reason attached" },
+            { front: "Step 4 · Keep Going — tell her what to do with it next time.", back: "Take the next one too if it comes. You clearly know how.", guideFront: "Encourage the next attempt when...", guideBack: "An invitation to keep going" },
+            { front: "Step 5 · Offer Support — name one thing you will actually do.", back: "And come and get me if one goes past ten minutes. I'll sit with you.", guideFront: "Name what you will actually do when...", guideBack: "A concrete offer, not a wish" },
           ]
         },
       ]
@@ -2508,18 +2508,18 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "A friend did well at something and is putting it entirely down to luck.",
           steps: [
-            { front: "Step 1 · Identify the behaviour — they say, \"I just got lucky with the questions.\"", back: "You'd prepared for four topics. That's not luck, that's coverage." },
-            { front: "Step 2 · Highlight the impact — they say, \"Anyone would have done that.\"", back: "Most people prepare one. That's the difference between a pass and that mark." },
-            { front: "Step 4 · Encourage — they say, \"Suppose so.\"", back: "Do the same before the next one. That's the thing worth repeating." },
+            { front: "Step 1 · Name the Positive Action — they say, \"I just got lucky with the questions.\"", back: "You'd prepared for four topics. That's not luck, that's coverage.", guideFront: "Describe what they did when...", guideBack: "The action, not a verdict" },
+            { front: "Step 2 · Highlight the Impact — they say, \"Anyone would have done that.\"", back: "Most people prepare one. That's the difference between a pass and that mark.", guideFront: "Say what it changed when...", guideBack: "The effect, as evidence" },
+            { front: "Step 4 · Keep Going — they say, \"Suppose so.\"", back: "Do the same before the next one. That's the thing worth repeating.", guideFront: "Encourage the next attempt when...", guideBack: "An invitation to keep going" },
           ]
         },
         {
           bundle: 'pro',
           situation: "A colleague finished a hard piece of work and is playing it down.",
           steps: [
-            { front: "Step 1 · Identify the behaviour — they say, \"It was fine, anyone could have done it.\"", back: "Nobody did, though, and you did it with the brief changing twice." },
-            { front: "Step 2 · Highlight the impact — they say, \"It wasn't that hard really.\"", back: "We can start in January instead of March. That's what it did." },
-            { front: "Step 5 · Offer support — they say, \"Alright, thank you.\"", back: "Do the next one the same way, and shout if you want a second pair of eyes." },
+            { front: "Step 1 · Name the Positive Action — they say, \"It was fine, anyone could have done it.\"", back: "Nobody did, though, and you did it with the brief changing twice.", guideFront: "Describe what they did when...", guideBack: "The action, not a verdict" },
+            { front: "Step 2 · Highlight the Impact — they say, \"It wasn't that hard really.\"", back: "We can start in January instead of March. That's what it did.", guideFront: "Say what it changed when...", guideBack: "The effect, as evidence" },
+            { front: "Step 5 · Offer Support — they say, \"Alright, thank you.\"", back: "Do the next one the same way, and shout if you want a second pair of eyes.", guideFront: "Name what you will actually do when...", guideBack: "A concrete offer, not a wish" },
           ]
         },
       ]
@@ -2534,19 +2534,19 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "A friend is two months into learning something and is ready to stop.",
           steps: [
-            { front: "Step 1 · Identify the behaviour — they say, \"I'm just not getting anywhere.\"", back: "It's slow going, I know. And you've stopped counting the beats out loud — that was impossible in April.", guideFront: "Acknowledge it, then name the thing that HAS changed." },
-            { front: "Step 2 · Highlight the impact — they say, \"That's a tiny thing.\"", back: "It's the thing everything after it depends on. That's what progress looks like from inside." },
-            { front: "Step 4 · Encourage — they say, \"It doesn't feel like it.\"", back: "Go back to ten minutes a day rather than stopping altogether." },
-            { front: "Step 5 · Offer support — they say, \"Maybe.\"", back: "Come to mine on Sunday. We'll do half an hour and it'll feel different." },
+            { front: "Step 1 · Name the Positive Action — they say, \"I'm just not getting anywhere.\"", back: "It's slow going, I know. And you've stopped counting the beats out loud — that was impossible in April.", guideFront: "Describe what they did when...", guideBack: "The action, not a verdict" },
+            { front: "Step 2 · Highlight the Impact — they say, \"That's a tiny thing.\"", back: "It's the thing everything after it depends on. That's what progress looks like from inside.", guideFront: "Say what it changed when...", guideBack: "The effect, as evidence" },
+            { front: "Step 4 · Keep Going — they say, \"It doesn't feel like it.\"", back: "Go back to ten minutes a day rather than stopping altogether.", guideFront: "Encourage the next attempt when...", guideBack: "An invitation to keep going" },
+            { front: "Step 5 · Offer Support — they say, \"Maybe.\"", back: "Come to mine on Sunday. We'll do half an hour and it'll feel different.", guideFront: "Name what you will actually do when...", guideBack: "A concrete offer, not a wish" },
           ]
         },
         {
           bundle: 'pro',
           situation: "A classmate worked hard on something and got a disappointing mark.",
           steps: [
-            { front: "Step 1 · Identify the behaviour — they say, \"All that for nothing.\"", back: "It's a rotten result, and I'm not going to pretend otherwise. You can explain that whole topic now.", guideFront: "Acknowledge it, then name what they can now do." },
-            { front: "Step 2 · Highlight the impact — they say, \"That's not what I was working for.\"", back: "No. It's still yours, and it's the bit that carries into next term." },
-            { front: "Step 5 · Offer support — they say, \"I don't want to look at it again.\"", back: "Not today. Ask me in a fortnight and we'll go through it together." },
+            { front: "Step 1 · Name the Positive Action — they say, \"All that for nothing.\"", back: "It's a rotten result, and I'm not going to pretend otherwise. You can explain that whole topic now.", guideFront: "Describe what they did when...", guideBack: "The action, not a verdict" },
+            { front: "Step 2 · Highlight the Impact — they say, \"That's not what I was working for.\"", back: "No. It's still yours, and it's the bit that carries into next term.", guideFront: "Say what it changed when...", guideBack: "The effect, as evidence" },
+            { front: "Step 5 · Offer Support — they say, \"I don't want to look at it again.\"", back: "Not today. Ask me in a fortnight and we'll go through it together.", guideFront: "Name what you will actually do when...", guideBack: "A concrete offer, not a wish" },
           ]
         },
       ]
@@ -2815,18 +2815,18 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "A friend states an opinion about the weather that you happen to share.",
           steps: [
-            { front: "Step 1 · Signal you agree — they say: \"I love when it rains.\"", back: "\"Same here, honestly. Completely with you.\"", guideFront: "Make the agreement unmistakable when...", guideBack: "A short, warm confirmation" },
-            { front: "Step 2 · Back it with your own life — they say: \"Everyone thinks I'm strange for it.\"", back: "\"Not at all. I read by the window every single time it rains.\"", guideFront: "Add something that happened to you when...", guideBack: "A small scene of your own" },
-            { front: "Step 3 · Take it one step further — they laugh and wait for more", back: "\"And it's the one kind of weather where staying in actually feels earned.\"", guideFront: "Push the thought one step further when...", guideBack: "A related point, beside theirs" },
+            { front: "Step 1 · Signal the Agreement — they say: \"I love when it rains.\"", back: "\"Same here, honestly. Completely with you.\"", guideFront: "Say you are with them first when...", guideBack: "A short, warm confirmation" },
+            { front: "Step 2 · Add a Personal Experience — they say: \"Everyone thinks I'm strange for it.\"", back: "\"Not at all. I read by the window every single time it rains.\"", guideFront: "Back it with something that happened when...", guideBack: "A moment from your own life" },
+            { front: "Step 3 · Expand the Idea — they laugh and wait for more", back: "\"And it's the one kind of weather where staying in actually feels earned.\"", guideFront: "Push the thought one step on when...", guideBack: "A point beyond what they said" },
           ]
         },
         {
           bundle: 'pro',
           situation: "A colleague says something about sleep that matches your own habits.",
           steps: [
-            { front: "Step 1 · Signal you agree — they say: \"You only need six hours of sleep.\"", back: "\"I'd say that's about right.\"", guideFront: "Make the agreement unmistakable when...", guideBack: "A short, warm confirmation" },
-            { front: "Step 2 · Back it with your own life — they say: \"People never believe me.\"", back: "\"I've done six for about ten years now and I'm fine on it.\"", guideFront: "Add something that happened to you when...", guideBack: "A small scene of your own" },
-            { front: "Step 3 · Take it one step further — they nod, waiting", back: "\"And the regular time matters more than the number, I think.\"", guideFront: "Push the thought one step further when...", guideBack: "A related point, beside theirs" },
+            { front: "Step 1 · Signal the Agreement — they say: \"You only need six hours of sleep.\"", back: "\"I'd say that's about right.\"", guideFront: "Say you are with them first when...", guideBack: "A short, warm confirmation" },
+            { front: "Step 2 · Add a Personal Experience — they say: \"People never believe me.\"", back: "\"I've done six for about ten years now and I'm fine on it.\"", guideFront: "Back it with something that happened when...", guideBack: "A moment from your own life" },
+            { front: "Step 3 · Expand the Idea — they nod, waiting", back: "\"And the regular time matters more than the number, I think.\"", guideFront: "Push the thought one step on when...", guideBack: "A point beyond what they said" },
           ]
         },
       ]
@@ -2841,18 +2841,18 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "A classmate states an opinion about school that you agree with in principle.",
           steps: [
-            { front: "Step 1 · Signal you agree — they say: \"You should always listen to your teacher.\"", back: "\"Completely agree, yes.\"", guideFront: "Make the agreement unmistakable when...", guideBack: "A short, warm confirmation" },
-            { front: "Step 2 · Say why it makes sense — they say: \"People act like it's optional.\"", back: "\"Another reason is you avoid the mistakes everyone else makes.\"", guideFront: "Give the reason behind the opinion when...", guideBack: "The reasoning, not an example" },
-            { front: "Step 3 · Apply it wider — they seem keen to keep going", back: "\"And the same goes for anyone who's done the job longer than you.\"", guideFront: "Take it to a bigger case when...", guideBack: "The same idea, one size up" },
+            { front: "Step 1 · Signal the Agreement — they say: \"You should always listen to your teacher.\"", back: "\"Completely agree, yes.\"", guideFront: "Say you are with them first when...", guideBack: "A short, warm confirmation" },
+            { front: "Step 2 · Why It Makes Sense — they say: \"People act like it's optional.\"", back: "\"Another reason is you avoid the mistakes everyone else makes.\"", guideFront: "Add the reason behind it when...", guideBack: "The reasoning, not an example" },
+            { front: "Step 3 · Expand the Idea — they seem keen to keep going", back: "\"And the same goes for anyone who's done the job longer than you.\"", guideFront: "Push the thought one step on when...", guideBack: "A point beyond what they said" },
           ]
         },
         {
           bundle: 'pro',
           situation: "A colleague complains about the working week in a way you recognise.",
           steps: [
-            { front: "Step 1 · Signal you agree — they say: \"Long meetings kill the whole day.\"", back: "\"So true.\"", guideFront: "Make the agreement unmistakable when...", guideBack: "A short, warm confirmation" },
-            { front: "Step 2 · Say why it makes sense — they say: \"I can't put my finger on why.\"", back: "\"It's the back-to-back part — you never get a reset in between.\"", guideFront: "Give the reason behind the opinion when...", guideBack: "The reasoning, not an example" },
-            { front: "Step 3 · Apply it wider — they look like they want more", back: "\"And the recovery afterwards ends up costing more than the meeting did.\"", guideFront: "Take it to a bigger case when...", guideBack: "The same idea, one size up" },
+            { front: "Step 1 · Signal the Agreement — they say: \"Long meetings kill the whole day.\"", back: "\"So true.\"", guideFront: "Say you are with them first when...", guideBack: "A short, warm confirmation" },
+            { front: "Step 2 · Why It Makes Sense — they say: \"I can't put my finger on why.\"", back: "\"It's the back-to-back part — you never get a reset in between.\"", guideFront: "Add the reason behind it when...", guideBack: "The reasoning, not an example" },
+            { front: "Step 3 · Expand the Idea — they look like they want more", back: "\"And the recovery afterwards ends up costing more than the meeting did.\"", guideFront: "Push the thought one step on when...", guideBack: "A point beyond what they said" },
           ]
         },
       ]
@@ -2867,18 +2867,18 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "A friend offers an opinion about pace of life that you share.",
           steps: [
-            { front: "Step 1 · Signal you agree — they say: \"I think you should never hurry.\"", back: "\"That's so true.\"", guideFront: "Make the agreement unmistakable when...", guideBack: "A short, warm confirmation" },
-            { front: "Step 2 · Hand them a new angle — they wait to see if you mean it", back: "\"And sometimes taking your time gets a better result anyway.\"", guideFront: "Push the thought one step further when...", guideBack: "A related point, beside theirs" },
-            { front: "Step 3 · Meet them with your own — they say: \"Exactly, I've started leaving earlier for things.\"", back: "\"Same. Every time I rush in the morning I forget something.\"", guideFront: "Add something that happened to you when...", guideBack: "A small scene of your own" },
+            { front: "Step 1 · Signal the Agreement — they say: \"I think you should never hurry.\"", back: "\"That's so true.\"", guideFront: "Say you are with them first when...", guideBack: "A short, warm confirmation" },
+            { front: "Step 2 · Expand the Idea — they wait to see if you mean it", back: "\"And sometimes taking your time gets a better result anyway.\"", guideFront: "Push the thought one step on when...", guideBack: "A point beyond what they said" },
+            { front: "Step 3 · Add a Personal Experience — they say: \"Exactly, I've started leaving earlier for things.\"", back: "\"Same. Every time I rush in the morning I forget something.\"", guideFront: "Back it with something that happened when...", guideBack: "A moment from your own life" },
           ]
         },
         {
           bundle: 'pro',
           situation: "A neighbour makes a point about walking that you happen to agree with.",
           steps: [
-            { front: "Step 1 · Signal you agree — they say: \"Walking is underrated.\"", back: "\"Couldn't agree more.\"", guideFront: "Make the agreement unmistakable when...", guideBack: "A short, warm confirmation" },
-            { front: "Step 2 · Hand them a new angle — they seem pleased someone said so", back: "\"It's the only exercise you can do while thinking about something else.\"", guideFront: "Push the thought one step further when...", guideBack: "A related point, beside theirs" },
-            { front: "Step 3 · Meet them with your own — they say: \"That's exactly why I do it.\"", back: "\"Same here. I started walking to work last spring and I'd never go back.\"", guideFront: "Add something that happened to you when...", guideBack: "A small scene of your own" },
+            { front: "Step 1 · Signal the Agreement — they say: \"Walking is underrated.\"", back: "\"Couldn't agree more.\"", guideFront: "Say you are with them first when...", guideBack: "A short, warm confirmation" },
+            { front: "Step 2 · Expand the Idea — they seem pleased someone said so", back: "\"It's the only exercise you can do while thinking about something else.\"", guideFront: "Push the thought one step on when...", guideBack: "A point beyond what they said" },
+            { front: "Step 3 · Add a Personal Experience — they say: \"That's exactly why I do it.\"", back: "\"Same here. I started walking to work last spring and I'd never go back.\"", guideFront: "Back it with something that happened when...", guideBack: "A moment from your own life" },
           ]
         },
       ]

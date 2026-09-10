@@ -1524,7 +1524,7 @@ const challengesCollections = {
         { q: "They say you are only being kind.", a: "\"I'd have said nothing if I didn't mean it. That's how I work.\" [Answer the doubt]", bundle: 'pro' },
         { q: "They have been told the opposite by someone else.", a: "\"I can only tell you what I saw — the second half held the room.\" [Highlight the Impact]", bundle: 'pro' },
         { q: "They ask you to prove it.", a: "\"The bit where you rewrote the middle. That's the specific thing.\" [Name the Positive Action]", bundle: 'pro' },
-        { q: "They accept it out loud and clearly do not mean it.", a: "\"Take it or don't — I'd like to see you do the next one too.\" [Point Forward]", bundle: 'pro' },
+        { q: "They accept it out loud and clearly do not mean it.", a: "\"Take it or don't — I'd like to see you do the next one too.\" [Keep Going]", bundle: 'pro' },
       ]
     },
     {

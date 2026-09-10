@@ -1319,6 +1319,20 @@ const memorizeCollections = {
         { q: "Why is it the cheapest move when it works?", a: "Nobody has to be gracious about it, because it didn't feel like an interruption.", bundle: 'pro' },
       ]
     },
+    {
+      name: "Get Out Cleanly",
+      description: "Saying the thing you interrupted for, and then handing the floor back on purpose.",
+      cards: [
+        { q: "What does Get Out Cleanly cover?", a: "The exit — landing your point and then giving the floor back. The other five moves are all about getting in.", bundle: 'free' },
+        { q: "Why does the hand-back matter?", a: "An interruption is a loan, not a transfer. Keeping the floor turns it into a takeover in their memory.", bundle: 'free' },
+        { q: "What are the two halves of the move?", a: "Landing the point, and handing the floor back.", bundle: 'free' },
+        { q: "What goes wrong when people skip the landing?", a: "The interruption collapses into an apology and never delivers what it was for.", bundle: 'pro' },
+        { q: "What is the shortest hand-back?", a: "Four words and a gesture — \"anyway, sorry, go on\".", bundle: 'pro' },
+        { q: "What does naming where they were prove?", a: "That you were still listening while you spoke.", bundle: 'pro' },
+        { q: "Why hand back by name in a group?", a: "Because the floor otherwise drifts to whoever speaks next, not back to the person you cut off.", bundle: 'pro' },
+        { q: "What is the mindset line for this move?", a: "Say it, then give it back. An interruption you do not close is the one they remember.", bundle: 'pro' },
+      ]
+    },
   ],
   handleinterruptions: [
     {
@@ -1999,7 +2013,7 @@ const memorizeCollections = {
       ]
     },
     {
-      name: "Point Forward",
+      name: "Keep Going",
       guideFront: "",
       guideBack: "",
       description: "Step four — pointing forward.",

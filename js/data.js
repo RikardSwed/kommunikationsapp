@@ -1471,6 +1471,22 @@ const collections = {
         { q: "You want to interrupt a friendly ramble without deflating it.", a: "\"Beautiful. Completely unrelated question.\"", bundle: 'pro' },
       ]
     },
+    {
+      name: "Get Out Cleanly",
+      guideFront: "Say your bit, then give the floor back when...",
+      guideBack: "Your point, then the floor returned",
+      description: "Say the thing you interrupted for, and then hand the floor back on purpose. The five moves before this one are all about getting in; this is the only one about getting out, and it is the half most people skip.\n\nIt works because an interruption is a loan, not a transfer. If you take the floor and keep it, the interruption becomes a takeover in the other person's memory, however politely you got in. If you take it, use it, and give it back with a sentence, they usually cannot remember being interrupted at all.\n\nThe two halves both matter. Landing the point means actually saying the thing — a lot of interruptions collapse into an apology and never deliver what they were for, which wastes everyone's time and teaches you that interrupting does not work. Handing it back means naming that they were mid-sentence and inviting them on.\n\nTypical phrases: \"That's all from me — you were partway through, sorry. Carry on.\", \"Right, got it. Go on, you were mid-thing.\", \"That's my bit. Back to you.\"\n\nThree ways to hand it back:\n\n1. Name where they were — \"you were on the second point.\" It proves you were still listening while you spoke.\n\n2. Give it back with a hand gesture and four words — \"anyway, sorry, go on.\" The shortest version, and usually enough.\n\n3. Ask them to continue by name — \"Sara, you were saying.\" Strongest in a group, where the floor can otherwise drift to whoever speaks next.\n\nMindset: say it, then give it back. An interruption you do not close is the one they remember.",
+      inputs: [
+        { q: "You have said your piece and they were partway through.", a: "\"That's all from me — you were partway through, sorry. Carry on.\"", bundle: 'free' },
+        { q: "They answered your question and you want them to continue.", a: "\"Right, got it. Sorry — go on, you were mid-thing.\"", bundle: 'free' },
+        { q: "You interrupted and then apologised without saying the thing.", a: "\"Sorry — and the actual point was that the deadline has to move.\"", bundle: 'free' },
+        { q: "You are in a group and the floor could drift to anyone.", a: "\"That's my bit. Sara, you were saying.\"", bundle: 'free' },
+        { q: "You want the shortest possible hand-back.", a: "\"Anyway — sorry, go on.\"", bundle: 'free' },
+        { q: "You can name exactly where they were when you cut in.", a: "\"You were on the second point. Back to that.\"", bundle: 'pro' },
+        { q: "Your point took longer than you meant it to.", a: "\"That was longer than I promised. Over to you.\"", bundle: 'pro' },
+        { q: "They have lost their thread because of you.", a: "\"I've derailed you. Where were you before I jumped in?\"", bundle: 'pro' },
+      ]
+    },
   ],
   handleinterruptions: [
     {
@@ -2162,7 +2178,7 @@ const collections = {
       ]
     },
     {
-      name: "Point Forward",
+      name: "Keep Going",
       guideFront: "Encourage the next attempt when...",
       guideBack: "An invitation to keep going",
       description: "Point forward. Praise says something was good; encouragement says there is more of it available and that you should keep going. The two are close but not the same, and people often need the second more.\n\nIt works because the moment after a small success is when most people stop. The thing is done, the pressure is off, and the next attempt has no deadline attached. A specific nudge right then is worth more than the same words a month later.\n\nTypical phrases: \"Keep up the good work!\", \"I believe you can do it\", \"You've improved a lot in…\", \"Do that again next time\"\n\nFour ways to encourage:\n\n1. Name the thing to repeat — make the success reusable. \"Do the same opening next time. That's the bit that worked.\"\n\n2. Point at the next step — small and concrete. \"You should put your name down for the longer one.\"\n\n3. Show the progress — where they were, where they are. \"You couldn't get through a paragraph in September. That was ten minutes.\"\n\n4. Express belief, lightly — confidence without pressure. \"You'll be doing these without notes by summer, I reckon.\"\n\nMindset: keep the belief specific. \"I believe in you\" is warm; \"you'll manage the questions, you already did today\" is warm and usable.",
@@ -10123,10 +10139,10 @@ const collectionsModeData = {
       inputs: [
         { q: "A classmate finished a difficult assignment.", a: "\"You did a great job on that — the last section especially.\" [Identify the Behaviour]", bundle: 'pro' },
         { q: "Someone gave a confident presentation.", a: "\"I'm really impressed by how you handled the questions at the end.\" [Identify the Behaviour]", bundle: 'pro' },
-        { q: "A friend has been practising something for weeks.", a: "\"You have improved a lot in this. Compare it to your first go.\" [Point Forward]", bundle: 'pro' },
-        { q: "A teammate is heading into something difficult.", a: "\"I believe you can do it. You've done harder than this.\" [Point Forward]", bundle: 'pro' },
+        { q: "A friend has been practising something for weeks.", a: "\"You have improved a lot in this. Compare it to your first go.\" [Keep Going]", bundle: 'pro' },
+        { q: "A teammate is heading into something difficult.", a: "\"I believe you can do it. You've done harder than this.\" [Keep Going]", bundle: 'pro' },
         { q: "Someone's contribution changed the result.", a: "\"That was amazing because it's the reason we finished on time.\" [Highlight the Impact]", bundle: 'pro' },
-        { q: "A friend is partway through a long effort.", a: "\"Keep up the good work — you're further than you think.\" [Point Forward]", bundle: 'pro' },
+        { q: "A friend is partway through a long effort.", a: "\"Keep up the good work — you're further than you think.\" [Keep Going]", bundle: 'pro' },
         { q: "Someone helped you out of a difficulty.", a: "\"Thank you for that. You saved me a whole evening.\" [Express Appreciation]", bundle: 'pro' },
       ]
     },
@@ -10139,7 +10155,7 @@ const collectionsModeData = {
         { q: "A classmate has finished a project they struggled with.", a: "\"You rewrote the middle section three times until it worked.\" [Identify the Behaviour]", bundle: 'pro' },
         { q: "You want to show why that mattered.", a: "\"That's the part that makes the whole thing make sense now.\" [Highlight the Impact]", bundle: 'pro' },
         { q: "They helped you understand your own part better.", a: "\"Thanks for talking me through it as well. That helped me.\" [Express Appreciation]", bundle: 'pro' },
-        { q: "They are wondering whether to take the harder option next term.", a: "\"Take it. You'd start it knowing what the middle feels like.\" [Point Forward]", bundle: 'pro' },
+        { q: "They are wondering whether to take the harder option next term.", a: "\"Take it. You'd start it knowing what the middle feels like.\" [Keep Going]", bundle: 'pro' },
         { q: "They look slightly daunted by that idea.", a: "\"And send me the outline in October — I'll read it.\" [Offer Support]", bundle: 'pro' },
         { q: "A friend has been kind to someone having a hard time.", a: "\"You checked on her three days running.\" [Identify the Behaviour]", bundle: 'pro' },
         { q: "You want to say what it did.", a: "\"She came back to the group because of that.\" [Highlight the Impact]", bundle: 'pro' },
@@ -10154,7 +10170,7 @@ const collectionsModeData = {
         { q: "A colleague ran a good meeting and does not seem to know why it worked.", a: "\"You named the disagreement out loud instead of letting it circle.\" [Identify the Behaviour]", bundle: 'pro' },
         { q: "They shrug it off as luck.", a: "\"We finished early with a decision. That's not luck, that's the agenda.\" [Highlight the Impact]", bundle: 'pro' },
         { q: "They covered something for you while you were away.", a: "\"Thank you for holding that. I came back to nothing on fire.\" [Express Appreciation]", bundle: 'pro' },
-        { q: "They are unsure about chairing the next one.", a: "\"Do it. You already know the bit that makes it work.\" [Point Forward]", bundle: 'pro' },
+        { q: "They are unsure about chairing the next one.", a: "\"Do it. You already know the bit that makes it work.\" [Keep Going]", bundle: 'pro' },
         { q: "They say the next one has a harder agenda.", a: "\"Send it to me the day before and I'll look at the running order.\" [Offer Support]", bundle: 'pro' },
         { q: "A friend overcame something they had been avoiding.", a: "\"You made the call you'd been putting off since March.\" [Identify the Behaviour]", bundle: 'pro' },
         { q: "They say it was not a big deal.", a: "\"You've slept properly for a week. It was a big deal.\" [Highlight the Impact]", bundle: 'pro' },

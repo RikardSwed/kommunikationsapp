@@ -894,6 +894,22 @@ const mindsetCollections = {
         { q: "There's no time to acknowledge, I have to be quick.", a: "Four words is quick. It's the apology afterwards that costs time.", bundle: 'pro' },
       ]
     },
+    {
+      name: "Handing It Back Undoes It",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "The belief that giving the floor back cancels what you just said — so having interrupted, you keep talking, and the interruption turns into a takeover.\n\nWhat is true instead: the hand-back is what makes the interruption survivable. People forgive being cut off; they do not forgive being replaced. Four words at the end — \"anyway, sorry, go on\" — buy the whole thing.\n\nWhy it feels right: letting go of the floor does feel like conceding, especially if the point landed badly. Holding on feels like finishing the job.\n\nWhat it costs: the point you fought your way in to make gets remembered as the moment you talked over someone.\n\nMindset: say it, then give it back. The giving back is part of the move, not the end of it.",
+      inputs: [
+        { q: "If I hand it back it looks like I shouldn't have interrupted.", a: "The opposite. Handing it back is what makes the interruption reasonable.", bundle: 'pro' },
+        { q: "I've fought my way in, I may as well finish properly.", a: "You can finish and still give it back. Those are two seconds apart.", bundle: 'pro' },
+        { q: "They'll carry on without me anyway.", a: "Then nothing is lost. If they don't, you have just handed them the room.", bundle: 'pro' },
+        { q: "Saying sorry again at the end is too much apologising.", a: "It isn't an apology. \"Go on, you were mid-thing\" is an instruction.", bundle: 'pro' },
+        { q: "I interrupted and then apologised without saying the thing.", a: "That's the worst version — the cost with none of the benefit. Say it, then hand back.", bundle: 'pro' },
+        { q: "Giving the floor back means I lose the argument.", a: "It means you finish the sentence and they finish theirs. Nobody loses a floor.", bundle: 'pro' },
+        { q: "If I stop talking someone else will jump in first.", a: "Name who you are handing to. \"Sara, you were saying\" settles it.", bundle: 'pro' },
+        { q: "The point only works if I keep going until they agree.", a: "Agreement doesn't come from holding the floor. It comes from them getting theirs back.", bundle: 'pro' },
+      ]
+    },
   ],
   handleinterruptions: [
     {
