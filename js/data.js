@@ -1688,7 +1688,7 @@ const collections = {
   ],
   describethings: [
     {
-      name: "The Anchor",
+      name: "Name and Main Details",
       guideFront: "Say what it is, plus one feature when...",
       guideBack: "The name, and what marks it out",
       description: "Start by saying what the thing is and giving the one or two features that separate it from everything similar. This is the anchor the rest of the description hangs on. Without it the listener is assembling a picture with no frame around it.\n\nIt works because a name plus one distinguishing detail is usually enough for someone to narrow the field from thousands of possibilities to a handful. Everything after that is refinement.\n\nTypical phrases: \"It's a…\", \"It's the kind with…\", \"The main thing is…\", \"The one that…\"\n\nFour ways to name and pin something down:\n\n1. Name plus category — say the word and the family it belongs to. \"It's a rucksack, one of the tall narrow ones.\"\n\n2. The distinguishing feature — the detail that rules out everything else. \"It's a black umbrella, but the handle is wooden. That's the bit people notice.\"\n\n3. The nearest familiar thing — when you do not know the word. \"It's like a peeler, but with two blades instead of one.\"\n\n4. What is missing — sometimes the absence is the identifier. \"It's a jacket with no hood. That's the only one like it on the rack.\"\n\nMindset: pick the detail that eliminates the most alternatives, not the one you find most interesting.",
@@ -2475,8 +2475,8 @@ const collections = {
   agreeing: [
     {
       name: "Signal the Agreement",
-      guideFront: "Use this strategy when...",
-      guideBack: "One way it could sound",
+      guideFront: "Say you are with them first when...",
+      guideBack: "A short, warm confirmation",
       description: "Signalling means making it unmistakable that you are on their side — a short, warm confirmation before you add anything of your own.\n\nIt sounds small, but it is what makes everything after it land as agreement rather than as you taking over. Skip it and even a supportive point can read like a correction.\n\nTypical signals:\n\n• \"I totally agree.\"\n• \"That's so true.\"\n• \"Exactly.\"\n\nThree strengths of signal:\n1. Full agreement — \"Completely agree, yes.\"\n2. Shared feeling — \"I feel exactly the same.\"\n3. Recognition — \"You've just described my whole week.\"\n\nMindset: warmth does the work here, not vocabulary. A plain \"yes, exactly\" said like you mean it beats a clever line said flatly.",
       inputs: [
         { q: "A friend says: \"I love when it rains.\"", a: "\"Same here, honestly. Completely with you on that.\"", bundle: 'free' },
@@ -2491,8 +2491,8 @@ const collections = {
     },
     {
       name: "Add a Personal Experience",
-      guideFront: "Use this strategy when...",
-      guideBack: "One way it could sound",
+      guideFront: "Back it with something that happened when...",
+      guideBack: "A moment from your own life",
       description: "You agree, then back it with something that actually happened to you — a habit, a memory, a small scene from your own life.\n\nYour own experience is the easiest kind of support to give, because you do not have to argue for it. It is simply true, and it makes the agreement concrete instead of merely polite.\n\nTypical shapes:\n\n• \"Same here — I always...\"\n• \"I feel the same way. Last week I...\"\n• \"Definitely. I've done that for years.\"\n\nThree kinds of experience to reach for:\n1. A habit — \"I read by the window every time it rains.\"\n2. A one-off memory — \"I tried it once and never went back.\"\n3. A long-running pattern — \"I've slept six hours a night for about ten years.\"\n\nMindset: it does not have to be impressive. A small ordinary detail proves you mean it far better than a big claim does.",
       inputs: [
         { q: "A friend says: \"I love when it rains.\"", a: "\"Same here — I always end up reading by the window when it does.\"", bundle: 'free' },
@@ -2506,9 +2506,9 @@ const collections = {
       ]
     },
     {
-      name: "Give an Explanation",
-      guideFront: "Use this strategy when...",
-      guideBack: "One way it could sound",
+      name: "Why It Makes Sense",
+      guideFront: "Add the reason behind it when...",
+      guideBack: "The reasoning, not an example",
       description: "You agree, then say why it makes sense — the reason behind the opinion, rather than an example of it.\n\nThis is the move that turns agreement into support. You are handing them an argument they can use, which is why it feels generous rather than like an echo.\n\nTypical shapes:\n\n• \"I totally agree — another reason is...\"\n• \"I feel the same way, because...\"\n• \"I agree, especially when...\"\n\nThree ways to explain:\n1. Add a reason they did not mention — \"Another reason is you make fewer mistakes.\"\n2. Name the mechanism — \"It works because your head gets a proper break.\"\n3. Narrow to where it is most true — \"I agree, especially when you're tired.\"\n\nMindset: you are adding to their case, not proving you understand it better than they do. Keep the reason short — one clause is usually enough.",
       inputs: [
         { q: "A classmate says: \"You should always listen to your teacher.\"", a: "\"Agreed — another reason is you avoid the mistakes everyone else makes.\"", bundle: 'free' },
@@ -2523,8 +2523,8 @@ const collections = {
     },
     {
       name: "Expand the Idea",
-      guideFront: "Use this strategy when...",
-      guideBack: "One way it could sound",
+      guideFront: "Push the thought one step on when...",
+      guideBack: "A point beyond what they said",
       description: "You agree, then push the thought one step further — a related point that goes beyond what they actually said.\n\nThis is the move that keeps a conversation moving instead of closing it. An experience or a reason supports their point; an expansion hands them something new to react to.\n\nTypical shapes:\n\n• \"Exactly, and you could also say...\"\n• \"That's so true, and also...\"\n• \"Yes — and the same goes for...\"\n\nThree ways to expand:\n1. Take it further — \"And sometimes taking your time gets a better result altogether.\"\n2. Apply it somewhere else — \"The same is true at work, not just at home.\"\n3. Name what follows from it — \"Which is probably why nobody sleeps well in summer.\"\n\nMindset: one step, not five. An expansion that lands next door keeps the topic alive; one that lands three streets away has quietly changed the subject.",
       inputs: [
         { q: "Someone says: \"I think you should never hurry.\"", a: "\"Exactly, and sometimes taking your time gets a better result anyway.\"", bundle: 'free' },
@@ -2541,8 +2541,8 @@ const collections = {
   disagreeing: [
     {
       name: "Signal the Disagreement",
-      guideFront: "Use this strategy when...",
-      guideBack: "One way it could sound",
+      guideFront: "Mark that a different view is coming when...",
+      guideBack: "A phrase that flags what follows",
       description: "Mark that a different view is coming before you give it. One short phrase does the work: it tells the other person that what follows is a disagreement, not a misunderstanding, and it does so without any heat.\n\nIt works because most defensiveness comes from surprise. A signalled disagreement lands as a contribution; an unsignalled one can feel like a correction. This is not softening for the sake of politeness — it is the sentence that keeps the conversation open.\n\nTypical phrases: \"I see it differently\", \"I'm not sure I agree\", \"I'd say the opposite, actually\", \"That's interesting — my experience is different\"\n\nFour ways to signal:\n\n1. Name it plainly — no hedging, no apology. \"I see that differently.\"\n\n2. Acknowledge first, then turn — take their point seriously before your own. \"I get why you'd say that. I still land somewhere else.\"\n\n3. Own it as yours — frame it as your view rather than the truth. \"For me it's the other way round.\"\n\n4. Signal interest, not conflict — treat the difference as the interesting part. \"Oh, we're opposite on this. Say more about why?\"\n\nMindset: you are not asking permission to disagree. You are telling them what kind of sentence is coming next.",
       inputs: [
         { q: "A friend says nobody needs more than six hours of sleep.", a: "\"I'm not sure I agree with that one — I'm useless on six.\"", bundle: 'free' },
@@ -2557,8 +2557,8 @@ const collections = {
     },
     {
       name: "Give Your Reason",
-      guideFront: "Use this strategy when...",
-      guideBack: "One way it could sound",
+      guideFront: "Say why you see it differently when...",
+      guideBack: "The thinking behind your view",
       description: "Say why you see it differently. A disagreement without a reason is just a position, and positions cannot be discussed — they can only be repeated at each other.\n\nIt works because a reason gives the other person something to engage with. They can agree with your reason, challenge it, or discover they had not considered it. All three move the conversation somewhere; a bare \"I disagree\" moves it nowhere.\n\nTypical phrases: \"The reason I'd say that is…\", \"For me it comes down to…\", \"What makes me think otherwise is…\", \"It's because…\"\n\nFour kinds of reason:\n\n1. From your own experience — the most honest and the hardest to argue with. \"I've tried it both ways and the second one was much worse for me.\"\n\n2. From a consequence — where the thing leads. \"If we do that, the same question comes back in a month.\"\n\n3. From a value — what you think matters here. \"I'd rather be slow and get it right than fast and redo it.\"\n\n4. From something they have not accounted for — the missing piece. \"That works, but not for the people on the early shift.\"\n\nMindset: give one reason properly rather than three quickly. Three reasons invite them to argue with the weakest.",
       inputs: [
         { q: "A friend says early mornings are the best time to work.", a: "\"For me it's the opposite — I'm not properly awake until about eleven.\"", bundle: 'free' },
@@ -2572,9 +2572,9 @@ const collections = {
       ]
     },
     {
-      name: "Offer a Different Perspective",
-      guideFront: "Use this strategy when...",
-      guideBack: "One way it could sound",
+      name: "A Wider Picture",
+      guideFront: "Widen it rather than judge it when...",
+      guideBack: "Another angle, not a verdict",
       description: "Give them another way of looking at the thing rather than a verdict on their way. You are widening the picture, not scoring the two views against each other.\n\nIt works because it is much easier to accept an addition than a contradiction. \"There's another way to look at it\" invites someone to step sideways; \"you're wrong\" invites them to dig in.\n\nTypical phrases: \"Another way to look at it…\", \"From where I sit…\", \"It might also be that…\", \"There's a version of this where…\"\n\nFour ways to open a different view:\n\n1. Change the frame — same facts, different lens. \"You're seeing it as a cost. I'd call it the price of not doing it twice.\"\n\n2. Change the timescale — short term against long term. \"It's slower this month. It's much faster from March onwards.\"\n\n3. Change whose eyes — look from someone else's position. \"That's true for us. For a new person it's confusing.\"\n\n4. Accept part and separate the rest — keep what is right, isolate the difference. \"The problem is real. It's the solution I'd do differently.\"\n\nMindset: you are adding a view to the table, not removing theirs from it.",
       inputs: [
         { q: "A friend says a long commute is wasted time.", a: "\"Another way to look at it — it's the only hour of the day nobody can ask me anything.\"", bundle: 'free' },
@@ -2589,8 +2589,8 @@ const collections = {
     },
     {
       name: "Add an Example",
-      guideFront: "Use this strategy when...",
-      guideBack: "One way it could sound",
+      guideFront: "Point at one real instance when...",
+      guideBack: "One case, briefly told",
       description: "Support your view with one concrete instance. A single real example does more than a further paragraph of reasoning, because it gives the other person something to picture and check against their own experience.\n\nKeep it to one, and keep it short. This pack uses examples as support; building and choosing examples properly is its own skill and belongs elsewhere.\n\nTypical phrases: \"For instance…\", \"Last week, for example…\", \"I had one where…\", \"Take the…\"\n\nFour kinds of example:\n\n1. Something that happened to you — specific, dated, small. \"Last winter I tried that and ended up doing it twice.\"\n\n2. Something you both know — shared ground you can point at. \"Like the booking system. Same idea, same result.\"\n\n3. A case where their view holds and one where it does not — mark the boundary. \"It works for the regulars. It fell apart with the new intake.\"\n\n4. A small hypothetical — when you have no real case. \"Say someone joins next week and reads that page. What do they do?\"\n\nMindset: one clear example, then stop. A second one usually weakens the first.",
       inputs: [
         { q: "You have said you need more than six hours of sleep.", a: "\"Last week I tried it for four nights and I was hopeless by Thursday.\"", bundle: 'free' },
@@ -3031,8 +3031,8 @@ const collections = {
   respondingtopassiveaggression: [
     {
       name: "Answer It Straight",
-      guideFront: "Use this strategy when...",
-      guideBack: "One way it could sound",
+      guideFront: "Take it at face value when...",
+      guideBack: "A sincere reply to an insincere line",
       description: "Respond to the surface of what was said, as though it had been meant sincerely. \"Nice job finishing that… finally.\" — \"Thanks. It took longer than I expected.\"\n\nIt works because a passive-aggressive remark needs you to react to the part that was not said. Take the words at face value and the barb has nothing to attach to. Nobody can complain that you answered what they actually said.\n\nIt is also the least costly response available. No confrontation, no accusation, nothing to escalate — and it very often ends the pattern faster than naming it would, because the remark simply did not work.\n\nTypical phrases: \"Thanks.\", \"Yes, it did take a while.\", \"Good idea, I'll do that.\", \"That's true, actually.\"\n\nFour ways to answer straight:\n\n1. Accept the surface compliment — even when it clearly was not one. \"Thanks, glad it helped.\"\n\n2. Agree with the literal content — when it happens to be true. \"It did take longer than I said. You're right.\"\n\n3. Answer the buried question — treat the dig as an enquiry. \"Yes, it's finished. It's in the shared folder.\"\n\n4. Take the suggestion seriously — the driest version. \"Starting earlier — I'll do that next time.\"\n\nMindset: you are not pretending not to notice. You are choosing not to make it a thing, which is a different and stronger position.",
       inputs: [
         { q: "A colleague says, \"Nice job finishing that… finally.\"", a: "\"Thanks. It took longer than I expected.\"", bundle: 'free' },
@@ -3047,8 +3047,8 @@ const collections = {
     },
     {
       name: "Ask What They Mean",
-      guideFront: "Use this strategy when...",
-      guideBack: "One way it could sound",
+      guideFront: "Make them say it plainly when...",
+      guideBack: "A question, then silence",
       description: "Ask them to say the thing plainly. \"What do you mean by that?\" — and then wait.\n\nIt works because passive aggression depends on deniability. The remark is designed to land without being answerable, and a straight question removes that: they either say what they meant, which is the conversation you actually needed, or they back off, which ends it.\n\nThe delivery decides everything. Asked with genuine curiosity it is an invitation; asked with an edge it is a challenge, and you will get a fight instead of an answer. If you cannot ask it neutrally, use a different strategy.\n\nTypical phrases: \"What do you mean?\", \"Say a bit more?\", \"Sorry, I'm not sure how to take that.\", \"Is there something you'd rather say directly?\"\n\nFour ways to ask:\n\n1. The plain question — short and neutral. \"What do you mean by that?\"\n\n2. Admit you cannot read it — takes any accusation out. \"I genuinely can't tell how you meant that.\"\n\n3. Ask for the direct version — more pointed, still fair. \"Is there something you'd rather just say?\"\n\n4. Ask and then be quiet — the silence does most of the work. Ask once, then wait.\n\nMindset: ask it like you actually want the answer. If your tone says \"go on, I dare you\", you have started an argument rather than a conversation.",
       inputs: [
         { q: "A colleague says, \"Well, some of us had time to prepare.\"", a: "\"What do you mean by that?\"", bundle: 'free' },
@@ -3063,8 +3063,8 @@ const collections = {
     },
     {
       name: "Name the Feeling",
-      guideFront: "Use this strategy when...",
-      guideBack: "One way it could sound",
+      guideFront: "Say what you think is going on when...",
+      guideBack: "A guess at what is underneath",
       description: "Say what you think they are feeling, without agreeing with how they said it. \"You sound properly fed up with this. What's going on?\"\n\nIt works because most passive aggression is a real grievance that could not find a direct route out. Naming the feeling gives it one, and someone whose frustration has been acknowledged usually stops needing to express it sideways.\n\nThere is a line worth holding. You are recognising a feeling, not accepting the accusation inside it — \"I can see you're annoyed\" is not \"you're right to say that to me\". Keeping those separate is what stops this becoming appeasement.\n\nTypical phrases: \"You sound frustrated.\", \"I can see this has been annoying.\", \"It sounds like this has been building.\", \"You're clearly not happy with how it went.\"\n\nFour ways to name it:\n\n1. Name the feeling plainly — the standard. \"You sound pretty fed up.\"\n\n2. Name it and ask — turns it into an opening. \"You seem annoyed. Is it about the deadline?\"\n\n3. Name what it is probably about — when you can guess. \"I think this is about last Friday rather than the report.\"\n\n4. Acknowledge and redirect — the version that keeps things moving. \"I can see you're frustrated. Let's sort the actual problem.\"\n\nMindset: acknowledge the feeling, not the delivery. Those are two different things and you can accept one while declining the other.",
       inputs: [
         { q: "A colleague says, \"I guess I'm the only one who cares about this.\"", a: "\"You sound properly fed up. What's going on?\"", bundle: 'free' },
@@ -3079,8 +3079,8 @@ const collections = {
     },
     {
       name: "Say How It Lands",
-      guideFront: "Use this strategy when...",
-      guideBack: "One way it could sound",
+      guideFront: "Tell them the effect it had when...",
+      guideBack: "The effect, without the accusation",
       description: "Tell them the effect the remark had on you. \"When it's said like that, I don't know how to answer it.\"\n\nIt works because it is the one response they cannot deny. They can argue about what they meant; they cannot argue about how it landed on you, because you are the only authority on that.\n\nKeep it about the effect rather than about them. \"I feel uncomfortable when that tone is used\" is a report; \"you're being passive-aggressive\" is a diagnosis, and diagnoses get argued with for twenty minutes while nothing improves.\n\nTypical phrases: \"When it's said like that, I…\", \"That lands as…\", \"I don't know how to take that.\", \"I'd find it easier if you just told me.\"\n\nFour ways to say it:\n\n1. Name the effect — the standard. \"That lands as a dig, and I don't know how to answer it.\"\n\n2. Say what you would prefer — pairs the report with a route out. \"I'd honestly rather you just told me you were annoyed.\"\n\n3. Keep it to this instance — not a character verdict. \"That one landed badly. Not a big thing, but I'd rather say it.\"\n\n4. Own that you might be misreading — leaves them a way to clarify. \"That came across as a dig. Maybe I've got it wrong.\"\n\nMindset: describe the effect, not the person. The moment you name what they are, the conversation becomes about whether that is true.",
       inputs: [
         { q: "A colleague makes a sarcastic comment in a meeting.", a: "\"When it's put like that, I don't really know how to answer.\"", bundle: 'free' },
@@ -3095,8 +3095,8 @@ const collections = {
     },
     {
       name: "Hold Your Point",
-      guideFront: "Use this strategy when...",
-      guideBack: "One way it could sound",
+      guideFront: "Acknowledge, then return to the task when...",
+      guideBack: "A brief nod, then the business",
       description: "Acknowledge briefly and return to the thing that actually needs deciding. \"I hear you. We still need this finished by Thursday.\"\n\nIt works because a passive-aggressive remark is often a way of not answering the question. Following it — defending yourself, arguing about the tone, explaining your history — takes the conversation somewhere it can stay indefinitely, and the original point never gets settled.\n\nThe pattern is short acknowledgement, then the point, in the same words each time. Anything longer becomes an argument about the remark rather than a conversation about the work.\n\nTypical phrases: \"I understand, and we still need to…\", \"Maybe. The question is still…\", \"That may be true. What I need is…\", \"Noted. Back to Thursday.\"\n\nFour ways to hold it:\n\n1. Acknowledge, then the point — the core move. \"I hear you. It still needs to be done by Thursday.\"\n\n2. Concede the true part, keep the point — takes the argument away. \"You're right that I was late. I still need an answer on this.\"\n\n3. Park the other thing openly — for grievances worth a real conversation. \"That's worth talking about properly. Not now, though.\"\n\n4. Repeat it in the same words — when they try again. Same sentence, same tone.\n\nMindset: do not follow it. Every sentence you spend on the remark is a sentence not spent on the decision.",
       inputs: [
         { q: "A colleague responds to a request with a dig about the past.", a: "\"I hear you. We still need this finished by Thursday.\"", bundle: 'free' },
@@ -3111,8 +3111,8 @@ const collections = {
     },
     {
       name: "Let It Go",
-      guideFront: "Use this strategy when...",
-      guideBack: "One way it could sound",
+      guideFront: "Decide not to respond when...",
+      guideBack: "Nothing said, on purpose",
       description: "Decide not to respond. Carry on with what you were doing, or answer a different part of the conversation entirely.\n\nIt works because not every remark deserves a response, and treating each one as something to be handled is exhausting for you and gives each one more weight than it had. Some things are best left where they fall.\n\nThis is a choice, not avoidance — and the difference is whether you have decided or simply not dared. A remark you let go and forget is fine. A remark you let go and then think about all evening is one you should probably have answered.\n\nTypical phrases: nothing at all, or something entirely unrelated. \"Anyway — what time's the meeting?\"\n\nFour ways to let it go:\n\n1. Say nothing and carry on — the simplest. Continue with what you were saying.\n\n2. Move to something else — gives the room somewhere to go. \"Anyway, what time are we starting?\"\n\n3. A neutral noise and onwards — acknowledges without engaging. \"Mm. So, Thursday.\"\n\n4. Decide to raise it later instead — not letting go, deferring on purpose. \"I'll mention that to her when it's calmer.\"\n\nMindset: choose it rather than default to it. Ask yourself whether you will still be thinking about it in an hour, and if the answer is yes, use one of the other five.",
       inputs: [
         { q: "Someone makes a small dig you genuinely do not care about.", a: "(carry on with what you were saying)", bundle: 'free' },
@@ -5379,8 +5379,8 @@ const collections = {
   givingcounterexamples: [
     {
       name: "Your Own Exception",
-      guideFront: "Use this strategy when...",
-      guideBack: "One way it could sound",
+      guideFront: "Use the time it failed you when...",
+      guideBack: "One case you lived",
       description: "Say the time it did not work like that for you. It is the strongest counter-example available to almost anyone, because it happened, it is yours, and nobody can tell you it did not. Example: \"Exercise usually does help — I trained hard all last week and still felt awful.\"\n\nIt works because a general claim survives an argument easily and does not survive a real case. You are not asking them to accept a principle; you are reporting an afternoon.\n\nConcede first. \"Exercise usually helps\" costs you nothing, keeps them on your side, and makes the exception land as information rather than as contradiction.\n\nTypical phrases: \"I thought that too, but for me…\", \"Usually, yes — though when I…\", \"That was true for me until…\", \"I did exactly that and…\"\n\nThree kinds of personal exception:\n\n1. The single occasion — one time, dated and small. \"I revised for a week for that one and still failed it.\"\n\n2. The time you believed the claim yourself — the most disarming, because you were on their side. \"I said the same thing for years. Then I tried it.\"\n\n3. The way round you found — an exception that also offers something. \"I never managed it in the mornings. Evenings turned out fine.\"\n\nMindset: you are adding a case, not overturning a rule. Say the general thing is usually right, then say what happened to you.",
       inputs: [
         { q: "\"Exercise always makes you happy.\"", a: "\"It usually does, yeah. I trained hard all last week and still felt flat.\"", bundle: 'free' },
@@ -5394,9 +5394,9 @@ const collections = {
       ]
     },
     {
-      name: "The One You Have Seen",
-      guideFront: "Use this strategy when...",
-      guideBack: "One way it could sound",
+      name: "Seen It Happen",
+      guideFront: "Point at a case you watched when...",
+      guideBack: "A case you observed",
       description: "Point at a case you have watched happen, or one that most people have. Not your own life, but something observable — a person, a place, a situation both of you can check against experience. Example: \"Most early risers are productive, sure. The best person on my old team started at eleven every day.\"\n\nIt works because it is checkable without being personal. They do not have to take your word for it in the way they do with an opinion, and they cannot argue with it in the way they can with a principle.\n\nKeep it recognisable. A counter-example nobody can picture is just a claim of your own, and now there are two claims in the room instead of one.\n\nTypical phrases: \"Actually, I've seen it go the other way…\", \"There's at least one I know of…\", \"That's not been true at…\", \"Most people, maybe. Not…\"\n\nThree kinds:\n\n1. Someone you have watched — the clearest. \"My old boss never answered emails and was the most effective person there.\"\n\n2. A place where it works differently — good for claims about how things must be done. \"The Malmö office has done it the other way for years.\"\n\n3. The common counter-case — one most people have seen. \"Everyone knows one person who revises nothing and does fine.\"\n\nMindset: pick something they could picture or check. An example only you can see is not evidence, it is a second opinion.",
       inputs: [
         { q: "\"People who wake up early are always more productive.\"", a: "\"Often, yes. The best person on my old team never started before eleven.\"", bundle: 'free' },
@@ -5411,8 +5411,8 @@ const collections = {
     },
     {
       name: "Where It Would Break",
-      guideFront: "Use this strategy when...",
-      guideBack: "One way it could sound",
+      guideFront: "Invent the case it cannot handle when...",
+      guideBack: "A test case, imagined",
       description: "Invent the case the claim cannot handle, and walk them through it. You are not saying it happened — you are asking them to try the rule somewhere it does not fit. Example: \"Say someone works nights. Does the early-start rule still hold?\"\n\nIt works when you have no real case to hand, and it is honest to say so. It also avoids the argument about whether your example is representative, because you are not claiming it is real.\n\nMark it as imagined. \"Say someone…\" is honest; presenting an invention as something that happened is the one move in this pack that cannot be repaired.\n\nTypical phrases: \"Imagine someone who…\", \"Say it were…\", \"What about a case where…\", \"Does that still hold if…\"\n\nThree ways to build it:\n\n1. The one person the rule forgets — the standard. \"Say someone works nights. Then what?\"\n\n2. Push it to the edge — until the shape shows. \"If everyone did it, there'd be forty people asking the same question.\"\n\n3. Turn it round — flip who it happens to. \"Imagine it was your own work being reviewed that way.\"\n\nMindset: an imagined case tests a rule without arguing about facts. Say plainly that it is imagined, and it stays a test rather than a claim.",
       inputs: [
         { q: "\"Everyone should start their day at six.\"", a: "\"Say someone works nights. Does the rule still hold, or is it really about a routine?\"", bundle: 'free' },
@@ -5427,8 +5427,8 @@ const collections = {
     },
     {
       name: "The Known Exception",
-      guideFront: "Use this strategy when...",
-      guideBack: "One way it could sound",
+      guideFront: "Use one you both already know when...",
+      guideBack: "A case with no setup needed",
       description: "Use a case both of you already know — a well-known person, a famous event, a story everyone recognises. You get the whole example for free, because you only have to point at it. Example: \"Most people who fail that many times give up, true. Not the ones we've all heard of.\"\n\nIt works through recognition rather than explanation, which makes it the fastest of the five. It is also the least personal, so it works with people you barely know and in rooms where your own life is not the subject.\n\nTwo cautions. If you have to explain the reference, it was not shared — pick another one. And describe what actually happened rather than putting words in a real person's mouth.\n\nTypical phrases: \"Even…\", \"Same as when…\", \"Remember the…\", \"There's a famous one, actually…\"\n\nThree kinds:\n\n1. The public case — an event most people recognise. \"Same as the vaccine timeline. Everyone said years.\"\n\n2. The known person — used for what they did, not for who they are. \"Plenty of authors were rejected a dozen times first.\"\n\n3. The story that carries the idea — a fable or a plot, when the real case is missing. \"It's the tortoise and the hare, basically.\"\n\nMindset: point, do not explain. The moment a shared example needs a paragraph of setup, it has stopped being shared.",
       inputs: [
         { q: "\"If a book gets rejected, it wasn't good enough.\"", a: "\"Mostly the market's right. Plenty of famous ones were turned down a dozen times first.\"", bundle: 'free' },
@@ -5443,8 +5443,8 @@ const collections = {
     },
     {
       name: "What the Numbers Say",
-      guideFront: "Use this strategy when...",
-      guideBack: "One way it could sound",
+      guideFront: "Answer with a figure you know when...",
+      guideBack: "A number, honestly held",
       description: "Answer a general claim with a figure, a measurement or a finding — and only one you actually know. Used honestly it is the strongest counter-example there is; used loosely it is the fastest way to lose the argument and your credibility with it. Example: \"Some research puts night owls just as high on output, though I'd want to check the number before you quote me.\"\n\nThe rule that makes this safe is the same as in Giving Examples: use a number you know and say where it came from. If you do not have one, say so and use a different type. An invented figure is worse than none, because when it is checked, every other thing you said goes with it.\n\nTypical phrases: \"I counted, and…\", \"The report put it at…\", \"Roughly a third, though don't quote me…\", \"It's tens, not hundreds.\"\n\nThree ways to use it honestly:\n\n1. Something you counted yourself — small and verifiable. \"I logged it for a fortnight. Nine days out of fourteen it went the other way.\"\n\n2. A figure with its source attached. \"The staff survey had it at about a third.\"\n\n3. A hedged estimate, marked as one. \"Something like a quarter. I'd check before repeating that.\"\n\nMindset: never invent a number to win a point about nuance. \"I don't have a figure, but I know one person it wasn't true for\" is a better sentence than a made-up statistic.",
       inputs: [
         { q: "\"Nobody uses the old system any more.\"", a: "\"I counted on Monday. Eleven people opened it that week.\"", bundle: 'free' },
@@ -5460,9 +5460,9 @@ const collections = {
   ],
   discussing: [
     {
-      name: "Say What You Think",
-      guideFront: "Use this strategy when...",
-      guideBack: "One way it could sound",
+      name: "Your Own View",
+      guideFront: "Claim it as your own when...",
+      guideBack: "An opinion, plainly owned",
       description: "State your view plainly and as yours. Not \"people say\" or \"it's obviously\", but \"I think\" — which is both more honest and much harder to argue with, because you are the authority on what you think. Example: \"I think homework is useful, mostly because it makes the gaps visible.\"\n\nIt works because a discussion needs two positions in it, and a great many stall because one person never actually said theirs. Hedged into invisibility, an opinion cannot be responded to, and the other person ends up talking to themselves.\n\nOwning it does something else too. \"You're wrong about homework\" starts a fight; \"I see it differently\" starts a discussion, and the difference is entirely in whose sentence it is.\n\nTypical phrases: \"I think…\", \"My view is…\", \"I'd say…\", \"I see it differently, actually.\"\n\nThree ways to say it:\n\n1. The plain view — shortest and clearest. \"I think it's worth doing.\"\n\n2. The view with its weight — tells them how firmly you hold it. \"I lean that way, but not strongly.\"\n\n3. The honest uncertainty — a real position, not a dodge. \"I genuinely don't know. I'm somewhere in the middle.\"\n\nMindset: say it as yours. An opinion presented as a fact invites a fight about the fact; an opinion presented as an opinion invites a conversation about the subject.",
       inputs: [
         { q: "Everyone is talking around the question and nobody has said what they think.", a: "\"I'll go first — I think phones in class are a bigger problem than we admit.\"", bundle: 'free' },
@@ -5476,9 +5476,9 @@ const collections = {
       ]
     },
     {
-      name: "Give the Reason Behind It",
-      guideFront: "Use this strategy when...",
-      guideBack: "One way it could sound",
+      name: "The Reasoning",
+      guideFront: "Say how you got there when...",
+      guideBack: "The thinking, not the evidence",
       description: "Say why you think it, in one sentence. Not an example and not evidence — the reasoning that got you there. Example: \"I think the deadline should move, because the last two slipped for exactly the same reason.\"\n\nIt works because a bare opinion is a wall and a reason is a door. Once the reasoning is visible the other person can engage with the actual disagreement, which is usually narrower than the positions suggest — very often you both want the same thing and differ about one step.\n\nOne reason, said plainly. Three reasons sounds like a case being made, and the moment it sounds like a case, the other person starts looking for the weakest one.\n\nTypical phrases: \"…because…\", \"What makes me think that is…\", \"The reason I'd say that is…\", \"It's mostly that…\"\n\nThree kinds of reason:\n\n1. The cause — what leads to what. \"If we leave it to Friday, nobody's here to fix it.\"\n\n2. The principle — the rule you are applying. \"I'd rather be slightly early than slightly wrong.\"\n\n3. The honest one — sometimes it is a preference, and saying so is stronger than dressing it up. \"Partly I just don't enjoy the other way.\"\n\nMindset: give them your reasoning, not your conclusion twice. Repeating a view more firmly is not an argument, it is a volume control.",
       inputs: [
         { q: "You said what you think and they asked why.", a: "\"Mostly because the last two both slipped for the same reason. Feels like a pattern.\"", bundle: 'free' },
@@ -5492,9 +5492,9 @@ const collections = {
       ]
     },
     {
-      name: "Say Their View Back",
-      guideFront: "Use this strategy when...",
-      guideBack: "One way it could sound",
+      name: "Play It Back",
+      guideFront: "Put their position in your words when...",
+      guideBack: "Their view, in your words",
       description: "Put their position into your own words before you respond to it. It costs one sentence and it does two things: it proves you were listening, and it catches the misunderstanding that half of all disagreements turn out to be. Example: \"So you're saying it's not the homework itself, it's how much of it there is.\"\n\nIt works because most people spend a discussion feeling not-quite-heard, and repeating themselves louder is what that feeling produces. Someone who has just been understood accurately stops needing to make the same point again, and the discussion moves.\n\nIt also protects you. Answer what they actually said and you never have the conversation where you spend four minutes disagreeing with something they never claimed.\n\nTypical phrases: \"So what you're saying is…\", \"You think the problem is…\", \"Let me check I've got this…\", \"From where you're sitting…\"\n\nThree ways to do it:\n\n1. The position — plainly. \"You'd keep the deadline where it is.\"\n\n2. The reason behind it — stronger, because it shows you know why. \"You'd keep it because moving it means telling everyone twice.\"\n\n3. The bit they care about most — the deepest version. \"The thing you're actually protecting is the team's Friday.\"\n\nMindset: get it right rather than get it over with. If they correct you, that correction is the most useful sentence in the discussion.",
       inputs: [
         { q: "They have made a long point and you want to respond.", a: "\"Before I answer — you're saying the amount is the problem, not the homework itself?\"", bundle: 'free' },
@@ -5509,8 +5509,8 @@ const collections = {
     },
     {
       name: "Ask What They Mean",
-      guideFront: "Use this strategy when...",
-      guideBack: "One way it could sound",
+      guideFront: "Ask before you answer it when...",
+      guideBack: "A question about one word",
       description: "Ask a clarifying question before you respond to something ambiguous. \"When you say homework is pointless — all of it, or the busywork?\" It takes six words and it prevents most of the wasted arguing in any discussion. Example: they say the system is broken; you ask which part.\n\nIt works because general words hide specific disagreements. Two people can use the same sentence and mean completely different things by it, and neither of them finds out until ten minutes have gone.\n\nAsk it as a question, not as a trap. \"Do you mean all subjects, or just some?\" is curiosity; \"so you're saying ALL homework is pointless?\" is a cross-examination wearing the same words.\n\nTypical phrases: \"When you say X, do you mean…?\", \"Which part specifically?\", \"Say a bit more about…\", \"Can you give me the version with an example in it?\"\n\nThree kinds of clarifying question:\n\n1. Narrow the word — the most useful. \"All of it, or the pointless parts?\"\n\n2. Ask for the specific case — turns an abstraction into something discussable. \"Can you give me an example of when that happened?\"\n\n3. Check the strength — people rarely mean the extreme version. \"Is that a strong view or a lean?\"\n\nMindset: ask before you argue. Half the disagreements that get properly heated are two people defending things the other never said.",
       inputs: [
         { q: "They said the system is broken.", a: "\"Which bit specifically? Booking, or what happens after?\"", bundle: 'free' },
@@ -5525,8 +5525,8 @@ const collections = {
     },
     {
       name: "Let Them Finish",
-      guideFront: "Use this strategy when...",
-      guideBack: "One way it could sound",
+      guideFront: "Wait for the full stop when...",
+      guideBack: "Silence, until they stop",
       description: "Do not speak until they have stopped. Not as good manners, but because the last quarter of what someone says is where the qualification lives — the \"although\", the \"except when\", the bit that would have made your interruption unnecessary. Example: you are certain you disagree, and the sentence you were waiting to argue with ends with \"…though that's probably only true at scale\".\n\nIt works because interruption costs more than it saves. Every interrupted point gets made again, usually at greater length, and the person making it now has two things to say — the original point and the fact that you cut in.\n\nThe hard part is not silence, it is what happens in your head during the silence. If you are composing your reply while they talk, you are not listening — you are queueing.\n\nTypical phrases: nothing. Or: \"Sorry, go on.\", \"You weren't finished.\", \"Say the rest first.\"\n\nThree parts:\n\n1. Wait for the end of the sentence — not the end of the breath.\n\n2. Then wait a beat longer — the qualification usually arrives here.\n\n3. If you cut in anyway, hand it back — \"sorry, finish yours\" costs nothing and repairs it completely.\n\nMindset: listen to hear, not to reply. Whatever you were going to say will still be there in eight seconds, and it will probably be better.",
       inputs: [
         { q: "You are certain you disagree and they are still talking.", a: "(wait — the qualification usually comes in the last sentence)", bundle: 'free' },
@@ -5541,8 +5541,8 @@ const collections = {
     },
     {
       name: "Keep the Temperature Down",
-      guideFront: "Use this strategy when...",
-      guideBack: "One way it could sound",
+      guideFront: "Cool it before anyone overshoots when...",
+      guideBack: "A line that lowers the heat",
       description: "Notice when a discussion is heating and do something about it before anyone says something they will have to walk back. The book calls it staying calm; the useful version is a set of specific moves, because \"stay calm\" is advice nobody can follow in the moment. Example: \"We're both getting sharp about this. Can we take the money bit separately?\"\n\nIt works because heat destroys the thing the discussion was for. Two people who are annoyed stop hearing each other's reasons entirely, and everything after that point is wasted breath, however good the arguments are.\n\nThe reliable signals are physical rather than verbal: talking faster, talking over, the same point getting louder, a laugh that is not quite a laugh.\n\nTypical phrases: \"We're getting heated — can we slow down?\", \"I'm going to stop and think.\", \"Can we park that bit?\", \"I've gone sharp, sorry.\"\n\nThree moves that work:\n\n1. Name it, jointly — \"we're\" rather than \"you're\". \"We're both getting sharp about this.\"\n\n2. Slow yourself visibly — a pause, a breath, a \"let me think about that for a second\".\n\n3. Split it — take the hot part out and settle the rest. \"Leave the cost aside. Do we agree on the rest?\"\n\nAnd one to avoid: telling the other person to calm down. It has never once worked.\n\nMindset: the goal is to still be talking in ten minutes. Winning an exchange with somebody you will see tomorrow is not winning.",
       inputs: [
         { q: "You are both talking faster and slightly over each other.", a: "\"We're getting heated — can we slow down a bit?\"", bundle: 'free' },
@@ -9887,13 +9887,13 @@ const collectionsModeData = {
       guideBack: "One way it could sound",
       description: "The moves that help someone pick the thing out: name and main details, size and shape, what it is for. These are the details that narrow the field.\n\nUse them when the listener is going to have to identify the object — in a shop, in a lost property office, in a crowded room.\n\nMindset: ask yourself what would make them say \"oh, that one\".",
       inputs: [
-        { q: "You are describing a lost coat to someone about to go and look for it.", a: "\"Long navy wool coat, and one button is a different colour from the rest.\" [The Anchor]", bundle: 'pro' },
+        { q: "You are describing a lost coat to someone about to go and look for it.", a: "\"Long navy wool coat, and one button is a different colour from the rest.\" [Name and Main Details]", bundle: 'pro' },
         { q: "They ask how big the missing case is.", a: "\"Cabin size — the kind that just fits in the overhead locker.\" [Size and Shape]", bundle: 'pro' },
         { q: "They ask what the strange tool in your kitchen is.", a: "\"It's for stripping leaves off herb stalks. That's genuinely all it does.\" [What It Is For]", bundle: 'pro' },
-        { q: "You are describing which of two similar chairs you mean.", a: "\"The one with arms. The other has none — that's the only difference.\" [The Anchor]", bundle: 'pro' },
+        { q: "You are describing which of two similar chairs you mean.", a: "\"The one with arms. The other has none — that's the only difference.\" [Name and Main Details]", bundle: 'pro' },
         { q: "Someone is looking for a box you mentioned and cannot find it.", a: "\"It's about the size of a microwave, so you're looking for something big.\" [Size and Shape]", bundle: 'pro' },
         { q: "A shop assistant asks what you need it to do.", a: "\"It's for getting into a bike tyre without tools. A tyre lever, I think.\" [What It Is For]", bundle: 'pro' },
-        { q: "You are describing your car in a car park.", a: "\"Small silver hatchback with a bike rack on the back. The rack is the giveaway.\" [The Anchor]", bundle: 'pro' },
+        { q: "You are describing your car in a car park.", a: "\"Small silver hatchback with a bike rack on the back. The rack is the giveaway.\" [Name and Main Details]", bundle: 'pro' },
       ]
     },
     {
@@ -9917,7 +9917,7 @@ const collectionsModeData = {
       guideBack: "One way it could sound",
       description: "The full set. Any of the five moves could be the useful one, and the skill is choosing rather than listing.\n\nA good description is rarely all five. It is usually two or three, picked because they are the ones this listener needs.\n\nMindset: describing everything is the same as describing nothing. Choose.",
       inputs: [
-        { q: "Someone is going to your flat to fetch something and asks what to look for.", a: "\"Small black notebook with an elastic band round it.\" [The Anchor]", bundle: 'pro' },
+        { q: "Someone is going to your flat to fetch something and asks what to look for.", a: "\"Small black notebook with an elastic band round it.\" [Name and Main Details]", bundle: 'pro' },
         { q: "They ask where in the flat it is.", a: "\"On the desk, under the lamp, probably with a pen on top of it.\" [Where You Find It]", bundle: 'pro' },
         { q: "They ask how they will know it is the right one.", a: "\"It's the size of a passport, and quite fat — it's nearly full.\" [Size and Shape]", bundle: 'pro' },
         { q: "You are describing a plant to someone at a garden centre.", a: "\"It's for a north-facing window that gets almost no sun.\" [What It Is For]", bundle: 'pro' },
@@ -10308,27 +10308,27 @@ const collectionsModeData = {
       name: "Experience or Reason",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "The choice between the two ways of BACKING an opinion you share.\n\nWhat decides it is simply what you have to hand. If the opinion is about something you have actually lived, use it. If not, you can almost always say why it makes sense.\n\nThe two options:\n1. Add a Personal Experience — you have done the thing. \"Same here, I read by the window every time it rains.\"\n2. Give an Explanation — you have a reason instead. \"Agreed, there's something about the sound that makes everything calmer.\"\n\nExperience is warmer and harder to argue with; explanation is available even when you have no story at all.\n\nMindset: never stay silent because you lack a story. A reason counts just as much.",
+      description: "The choice between the two ways of BACKING an opinion you share.\n\nWhat decides it is simply what you have to hand. If the opinion is about something you have actually lived, use it. If not, you can almost always say why it makes sense.\n\nThe two options:\n1. Add a Personal Experience — you have done the thing. \"Same here, I read by the window every time it rains.\"\n2. Why It Makes Sense — you have a reason instead. \"Agreed, there's something about the sound that makes everything calmer.\"\n\nExperience is warmer and harder to argue with; explanation is available even when you have no story at all.\n\nMindset: never stay silent because you lack a story. A reason counts just as much.",
       inputs: [
         { q: "A friend says: \"I love when it rains.\"", a: "\"Same here — I always end up reading by the window.\" [Add a Personal Experience]", bundle: 'pro' },
-        { q: "A classmate says: \"You should always listen to your teacher.\"", a: "\"Agreed — another reason is you avoid the mistakes everyone else makes.\" [Give an Explanation]", bundle: 'pro' },
+        { q: "A classmate says: \"You should always listen to your teacher.\"", a: "\"Agreed — another reason is you avoid the mistakes everyone else makes.\" [Why It Makes Sense]", bundle: 'pro' },
         { q: "Someone says: \"You only need six hours of sleep.\"", a: "\"I've done six for years and I'm fine on it.\" [Add a Personal Experience]", bundle: 'pro' },
-        { q: "A colleague says: \"I don't like the colour grey.\"", a: "\"Same, especially in a room with no windows — it flattens everything.\" [Give an Explanation]", bundle: 'pro' },
+        { q: "A colleague says: \"I don't like the colour grey.\"", a: "\"Same, especially in a room with no windows — it flattens everything.\" [Why It Makes Sense]", bundle: 'pro' },
         { q: "A friend says: \"Walking is underrated.\"", a: "\"Completely. I started walking to work last spring and never went back.\" [Add a Personal Experience]", bundle: 'pro' },
-        { q: "Someone says: \"I think you should never hurry.\"", a: "\"I feel the same, because rushing is how things get missed.\" [Give an Explanation]", bundle: 'pro' },
+        { q: "Someone says: \"I think you should never hurry.\"", a: "\"I feel the same, because rushing is how things get missed.\" [Why It Makes Sense]", bundle: 'pro' },
       ]
     },
     {
       name: "Back It Up or Take It Further",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "The choice between supporting the point and moving past it.\n\nRead whether the opinion still needs help. If it was just stated and hangs there unsupported, back it up. If it is already obvious and everyone agrees, backing it up again adds nothing — take it somewhere.\n\nThe two options:\n1. Give an Explanation — supports what they said. \"Agreed, because rushing is how things get missed.\"\n2. Expand the Idea — goes beyond it. \"Exactly, and sometimes taking your time gets a better result anyway.\"\n\nThe tell is usually the energy: a point that has landed and gone quiet wants an expansion, not more support.\n\nMindset: agreeing does not have to end a topic. The expansion is what gives them somewhere to go next.",
+      description: "The choice between supporting the point and moving past it.\n\nRead whether the opinion still needs help. If it was just stated and hangs there unsupported, back it up. If it is already obvious and everyone agrees, backing it up again adds nothing — take it somewhere.\n\nThe two options:\n1. Why It Makes Sense — supports what they said. \"Agreed, because rushing is how things get missed.\"\n2. Expand the Idea — goes beyond it. \"Exactly, and sometimes taking your time gets a better result anyway.\"\n\nThe tell is usually the energy: a point that has landed and gone quiet wants an expansion, not more support.\n\nMindset: agreeing does not have to end a topic. The expansion is what gives them somewhere to go next.",
       inputs: [
-        { q: "Someone states an opinion and waits to see if anyone backs them.", a: "\"I feel the same, because rushing is how things get missed.\" [Give an Explanation]", bundle: 'pro' },
+        { q: "Someone states an opinion and waits to see if anyone backs them.", a: "\"I feel the same, because rushing is how things get missed.\" [Why It Makes Sense]", bundle: 'pro' },
         { q: "Everyone has already agreed and the point is hanging there.", a: "\"Exactly, and sometimes taking your time gets a better result anyway.\" [Expand the Idea]", bundle: 'pro' },
-        { q: "A friend says: \"I love being in dark rooms.\"", a: "\"I agree. Your eyes stop working so hard and you actually relax.\" [Give an Explanation]", bundle: 'pro' },
+        { q: "A friend says: \"I love being in dark rooms.\"", a: "\"I agree. Your eyes stop working so hard and you actually relax.\" [Why It Makes Sense]", bundle: 'pro' },
         { q: "A colleague's point has landed and the conversation goes quiet.", a: "\"Yes — and it's probably why nobody sleeps properly in summer.\" [Expand the Idea]", bundle: 'pro' },
-        { q: "Someone says: \"Long meetings kill the whole day.\"", a: "\"Agreed, especially when they're back to back and you never reset.\" [Give an Explanation]", bundle: 'pro' },
+        { q: "Someone says: \"Long meetings kill the whole day.\"", a: "\"Agreed, especially when they're back to back and you never reset.\" [Why It Makes Sense]", bundle: 'pro' },
         { q: "A classmate says: \"You should always listen to your teacher.\"", a: "\"True — and the same goes for anyone who's done the job longer.\" [Expand the Idea]", bundle: 'pro' },
       ]
     },
@@ -10336,16 +10336,16 @@ const collectionsModeData = {
       name: "Any Way of Agreeing",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "The full choice between all four moves.\n\nMost opinions could take several, but one usually fits best. Signal first if nothing has been said yet; then pick your contribution based on what you actually have — a story, a reason, or a further thought.\n\nThe four, with the cue for each:\n1. Signal the Agreement — nothing said yet, and warmth is what is needed. \"Couldn't agree more.\"\n2. Add a Personal Experience — you have lived it. \"I've done six hours for years.\"\n3. Give an Explanation — you have a reason. \"Another reason is you make fewer mistakes.\"\n4. Expand the Idea — the point is already made. \"And the same goes for work, not just home.\"\n\nMindset: the one thing that never works is agreeing and stopping. Pick any of the three contributions, but pick one.",
+      description: "The full choice between all four moves.\n\nMost opinions could take several, but one usually fits best. Signal first if nothing has been said yet; then pick your contribution based on what you actually have — a story, a reason, or a further thought.\n\nThe four, with the cue for each:\n1. Signal the Agreement — nothing said yet, and warmth is what is needed. \"Couldn't agree more.\"\n2. Add a Personal Experience — you have lived it. \"I've done six hours for years.\"\n3. Why It Makes Sense — you have a reason. \"Another reason is you make fewer mistakes.\"\n4. Expand the Idea — the point is already made. \"And the same goes for work, not just home.\"\n\nMindset: the one thing that never works is agreeing and stopping. Pick any of the three contributions, but pick one.",
       inputs: [
         { q: "A friend says: \"Mornings are the best part of the day.\"", a: "\"You've just described my whole routine.\" [Signal the Agreement]", bundle: 'pro' },
         { q: "Someone says: \"You only need six hours of sleep.\"", a: "\"I'd agree. I've done six for years and I'm fine on it.\" [Add a Personal Experience]", bundle: 'pro' },
-        { q: "A classmate says: \"You should always listen to your teacher.\"", a: "\"Agreed — you avoid the mistakes everyone else makes.\" [Give an Explanation]", bundle: 'pro' },
+        { q: "A classmate says: \"You should always listen to your teacher.\"", a: "\"Agreed — you avoid the mistakes everyone else makes.\" [Why It Makes Sense]", bundle: 'pro' },
         { q: "Someone says: \"I think you should never hurry.\"", a: "\"Exactly, and sometimes taking your time gets a better result anyway.\" [Expand the Idea]", bundle: 'pro' },
         { q: "A colleague says: \"I love rock music.\"", a: "\"Me too. First gig I went to was in a basement and I've been hooked since.\" [Add a Personal Experience]", bundle: 'pro' },
         { q: "A friend says: \"People should be kinder to strangers.\"", a: "\"Couldn't agree more.\" [Signal the Agreement]", bundle: 'pro' },
         { q: "Someone says: \"Cooking at home beats eating out.\"", a: "\"Agreed, and you end up eating things you'd never think to order.\" [Expand the Idea]", bundle: 'pro' },
-        { q: "A colleague says: \"I don't like the colour grey.\"", a: "\"Same, especially in a room with no windows.\" [Give an Explanation]", bundle: 'pro' },
+        { q: "A colleague says: \"I don't like the colour grey.\"", a: "\"Same, especially in a room with no windows.\" [Why It Makes Sense]", bundle: 'pro' },
       ]
     },
   ],
@@ -10369,15 +10369,15 @@ const collectionsModeData = {
       name: "Widening It",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "Offer a Different Perspective and Add an Example — the two moves that make a disagreement generative rather than binary.\n\nReach for perspective when the other person is treating their view as the only sensible one. Reach for an example when they have understood your view and simply do not believe it.\n\nMindset: the aim is a better picture, not a winner.",
+      description: "A Wider Picture and Add an Example — the two moves that make a disagreement generative rather than binary.\n\nReach for perspective when the other person is treating their view as the only sensible one. Reach for an example when they have understood your view and simply do not believe it.\n\nMindset: the aim is a better picture, not a winner.",
       inputs: [
-        { q: "A colleague treats the extra step as pure overhead.", a: "\"It's overhead this week. It's also why nothing's gone out wrong since June.\" [Offer a Different Perspective]", bundle: 'pro' },
+        { q: "A colleague treats the extra step as pure overhead.", a: "\"It's overhead this week. It's also why nothing's gone out wrong since June.\" [A Wider Picture]", bundle: 'pro' },
         { q: "They say they still do not see it happening in practice.", a: "\"The payroll thing last year. Went out unchecked and cost us a weekend.\" [Add an Example]", bundle: 'pro' },
-        { q: "A friend says a decision is obviously a mistake.", a: "\"For some people it would be. For others it's the only way they'd ever move.\" [Offer a Different Perspective]", bundle: 'pro' },
+        { q: "A friend says a decision is obviously a mistake.", a: "\"For some people it would be. For others it's the only way they'd ever move.\" [A Wider Picture]", bundle: 'pro' },
         { q: "They ask if you actually know anyone it worked for.", a: "\"My cousin. Moved with no plan at all and it was the best thing she did.\" [Add an Example]", bundle: 'pro' },
-        { q: "Someone frames the choice as either-or.", a: "\"I don't think it's either. It's a trade, and we pick which side to pay on.\" [Offer a Different Perspective]", bundle: 'pro' },
+        { q: "Someone frames the choice as either-or.", a: "\"I don't think it's either. It's a trade, and we pick which side to pay on.\" [A Wider Picture]", bundle: 'pro' },
         { q: "They ask you to be concrete about the risk.", a: "\"Say someone joins on the Monday and reads that page. What do they do?\" [Add an Example]", bundle: 'pro' },
-        { q: "A colleague says the old way was fine for everyone.", a: "\"It was fine for us. It wasn't fine for anyone arriving new.\" [Offer a Different Perspective]", bundle: 'pro' },
+        { q: "A colleague says the old way was fine for everyone.", a: "\"It was fine for us. It wasn't fine for anyone arriving new.\" [A Wider Picture]", bundle: 'pro' },
       ]
     },
     {
@@ -10388,7 +10388,7 @@ const collectionsModeData = {
       inputs: [
         { q: "A friend says you should never turn down work.", a: "\"I'd disagree with 'never', at least.\" [Signal the Disagreement]", bundle: 'pro' },
         { q: "They ask what is wrong with taking everything offered.", a: "\"You end up doing the easy things badly instead of one thing well.\" [Give Your Reason]", bundle: 'pro' },
-        { q: "They say that sounds like an excuse for turning things down.", a: "\"Or it's choosing. Saying no to one thing is what makes room for the other.\" [Offer a Different Perspective]", bundle: 'pro' },
+        { q: "They say that sounds like an excuse for turning things down.", a: "\"Or it's choosing. Saying no to one thing is what makes room for the other.\" [A Wider Picture]", bundle: 'pro' },
         { q: "They ask if you have actually ever regretted saying yes.", a: "\"The two-week job in March. I said yes and let the main thing slide for a month.\" [Add an Example]", bundle: 'pro' },
         { q: "A colleague says everyone is happy with the change.", a: "\"Not everyone. I'm not, for one.\" [Signal the Disagreement]", bundle: 'pro' },
         { q: "They ask what is not working for you.", a: "\"The handover step. It assumes both people are in on the same day.\" [Give Your Reason]", bundle: 'pro' },
@@ -11532,25 +11532,25 @@ const collectionsModeData = {
       guideBack: "One way it could sound",
       description: "The one you have seen and the known exception — the two types that work through recognition. Neither needs establishing, so both are fast, and neither requires the other person to take your word for anything.\n\nUse them when you want the point to land immediately, when your own life is not the subject, or when you barely know the person you are talking to.\n\nMindset: these cost the listener nothing to accept. That is their whole advantage — and it is why they are the safest to use with a stranger.",
       inputs: [
-        { q: "\"Early risers are always the productive ones.\"", a: "\"The best person on my old team never started before eleven.\" [The One You Have Seen]", bundle: 'pro' },
+        { q: "\"Early risers are always the productive ones.\"", a: "\"The best person on my old team never started before eleven.\" [Seen It Happen]", bundle: 'pro' },
         { q: "\"If a book gets rejected, it wasn't good enough.\"", a: "\"Plenty of famous ones were turned down a dozen times.\" [The Known Exception]", bundle: 'pro' },
         { q: "\"Big organisations can never move fast.\"", a: "\"That recall last year took three days, whole product.\" [The Known Exception]", bundle: 'pro' },
-        { q: "\"Nobody keeps a hobby they start late.\"", a: "\"My neighbour took up cello at fifty and still plays daily.\" [The One You Have Seen]", bundle: 'pro' },
+        { q: "\"Nobody keeps a hobby they start late.\"", a: "\"My neighbour took up cello at fifty and still plays daily.\" [Seen It Happen]", bundle: 'pro' },
         { q: "\"Nothing important happens quickly.\"", a: "\"The vaccine timeline, and everyone had said years.\" [The Known Exception]", bundle: 'pro' },
-        { q: "\"Open-plan always kills concentration.\"", a: "\"The team downstairs asked to stay open-plan when they got the choice.\" [The One You Have Seen]", bundle: 'pro' },
+        { q: "\"Open-plan always kills concentration.\"", a: "\"The team downstairs asked to stay open-plan when they got the choice.\" [Seen It Happen]", bundle: 'pro' },
       ]
     },
     {
       name: "All Five",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "The full choice. Most claims can be answered several ways, but one usually costs least: your own exception when you lived it, the one you have seen when you watched it, the imagined case when you have neither, the known exception when the room already knows it, and numbers when you actually have one.\n\nThe five, with the cue for each:\n1. Your Own Exception — it happened to you. \"I did exactly that and…\"\n2. The One You Have Seen — you watched it. \"There's at least one I know of…\"\n3. Where It Would Break — you have no case, and say so. \"Say someone…\"\n4. The Known Exception — you both already know it. \"Even…\"\n5. What the Numbers Say — you have a real figure. \"I counted, and…\"\n\nMindset: pick the cheapest true one. The point is to take \"always\" out of the claim, not to win the exchange.",
+      description: "The full choice. Most claims can be answered several ways, but one usually costs least: your own exception when you lived it, the one you have seen when you watched it, the imagined case when you have neither, the known exception when the room already knows it, and numbers when you actually have one.\n\nThe five, with the cue for each:\n1. Your Own Exception — it happened to you. \"I did exactly that and…\"\n2. Seen It Happen — you watched it. \"There's at least one I know of…\"\n3. Where It Would Break — you have no case, and say so. \"Say someone…\"\n4. The Known Exception — you both already know it. \"Even…\"\n5. What the Numbers Say — you have a real figure. \"I counted, and…\"\n\nMindset: pick the cheapest true one. The point is to take \"always\" out of the claim, not to win the exchange.",
       inputs: [
         { q: "\"Exercise always makes you feel better.\"", a: "\"It usually does. I trained all last week and still felt flat.\" [Your Own Exception]", bundle: 'pro' },
         { q: "\"Everyone should start at six.\"", a: "\"Say someone works nights. Does the rule survive that?\" [Where It Would Break]", bundle: 'pro' },
         { q: "\"The favourite always wins.\"", a: "\"Nearly always — which is why we remember the ones that didn't.\" [The Known Exception]", bundle: 'pro' },
         { q: "\"Nobody opens the newsletter.\"", a: "\"About a third do, per the last report.\" [What the Numbers Say]", bundle: 'pro' },
-        { q: "\"Nobody sticks with an instrument as an adult.\"", a: "\"My neighbour started cello at fifty and still plays.\" [The One You Have Seen]", bundle: 'pro' },
+        { q: "\"Nobody sticks with an instrument as an adult.\"", a: "\"My neighbour started cello at fifty and still plays.\" [Seen It Happen]", bundle: 'pro' },
         { q: "\"Working alone is always worse.\"", a: "\"The one thing I did alone is the only thing I finished on time.\" [Your Own Exception]", bundle: 'pro' },
         { q: "\"All rules should apply to everyone equally.\"", a: "\"Imagine someone ten minutes late once, for a good reason.\" [Where It Would Break]", bundle: 'pro' },
         { q: "\"Everyone agrees about this.\"", a: "\"The survey had it at two-thirds. Majority, not everyone.\" [What the Numbers Say]", bundle: 'pro' },
@@ -11562,7 +11562,7 @@ const collectionsModeData = {
       name: "Me-Focus",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "The book's first half — the moves where you supply something: saying what you think, owning it as yours, and giving the reason behind it. These are what a discussion needs when nobody has actually put a position on the table, or when you have been agreeing along for so long that the other person has nothing to push against.\n\nThe two options:\n1. Say What You Think — put a position in the room. \"I think it's the wrong call.\"\n2. Give the Reason Behind It — the sentence after it. \"Because the last two slipped the same way.\"\n\nReach for these when the discussion is polite and going nowhere. That is almost always a shortage of positions rather than a shortage of goodwill.\n\nMindset: a discussion with only one view in it is not a discussion. Supply yours.",
+      description: "The book's first half — the moves where you supply something: saying what you think, owning it as yours, and giving the reason behind it. These are what a discussion needs when nobody has actually put a position on the table, or when you have been agreeing along for so long that the other person has nothing to push against.\n\nThe two options:\n1. Your Own View — put a position in the room. \"I think it's the wrong call.\"\n2. The Reasoning — the sentence after it. \"Because the last two slipped the same way.\"\n\nReach for these when the discussion is polite and going nowhere. That is almost always a shortage of positions rather than a shortage of goodwill.\n\nMindset: a discussion with only one view in it is not a discussion. Supply yours.",
       inputs: [
         { q: "Everyone is being agreeable and nothing is being discussed.", a: "\"I'll put something on the table — I think we're solving the wrong problem.\" [me]", bundle: 'pro' },
         { q: "They asked why you think that.", a: "\"Because the last two both slipped for the same reason. It looks like a pattern.\" [me]", bundle: 'pro' },
@@ -11576,7 +11576,7 @@ const collectionsModeData = {
       name: "You-Focus",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "The book's second half — the moves where you take something in: saying their view back, asking what they mean, and letting them finish. These are what the discussion needs when it has started to circle, when the same point keeps coming back, or when you are not certain you are arguing about the same thing.\n\nThe three options:\n1. Say Their View Back — before you answer it. \"So you'd keep the deadline.\"\n2. Ask What They Mean — before you disagree with it. \"All of it, or the busywork?\"\n3. Let Them Finish — the qualification lives in the last quarter.\n\nThe tell that you need one of these is repetition. When someone says the same thing a third time, they do not think you have heard it, and no counter-argument will fix that.\n\nMindset: someone who has been understood accurately stops repeating themselves. That is the fastest thing that can happen to a stuck discussion.",
+      description: "The book's second half — the moves where you take something in: saying their view back, asking what they mean, and letting them finish. These are what the discussion needs when it has started to circle, when the same point keeps coming back, or when you are not certain you are arguing about the same thing.\n\nThe three options:\n1. Play It Back — before you answer it. \"So you'd keep the deadline.\"\n2. Ask What They Mean — before you disagree with it. \"All of it, or the busywork?\"\n3. Let Them Finish — the qualification lives in the last quarter.\n\nThe tell that you need one of these is repetition. When someone says the same thing a third time, they do not think you have heard it, and no counter-argument will fix that.\n\nMindset: someone who has been understood accurately stops repeating themselves. That is the fastest thing that can happen to a stuck discussion.",
       inputs: [
         { q: "They have made the same point three times.", a: "\"I don't think I've shown you I heard this. It's about who carries the cost, isn't it.\" [you]", bundle: 'pro' },
         { q: "You are about to disagree with something ambiguous.", a: "\"When you say it's not working — failing, or just slow?\" [you]", bundle: 'pro' },
@@ -11590,7 +11590,7 @@ const collectionsModeData = {
       name: "Reading the Room",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "The full choice, including the temperature move. A discussion needs different things at different moments: a position when there is none, a reason when the positions are stuck, understanding when someone is repeating themselves, a question when a word is doing too much work, silence when they are still talking, and a hand on the brake when it is heating up.\n\nThe six, with the cue for each:\n1. Say What You Think — nobody has said anything. \"I think…\"\n2. Give the Reason Behind It — the positions are stuck. \"Because…\"\n3. Say Their View Back — they keep repeating themselves. \"So you're saying…\"\n4. Ask What They Mean — a word is hiding a disagreement. \"Which part?\"\n5. Let Them Finish — you are itching to reply. (nothing)\n6. Keep the Temperature Down — it is getting fast and sharp. \"Can we slow down?\"\n\nMindset: the balance is the skill. Two people doing only Me-Focus have two monologues; two doing only You-Focus have nothing to discuss.",
+      description: "The full choice, including the temperature move. A discussion needs different things at different moments: a position when there is none, a reason when the positions are stuck, understanding when someone is repeating themselves, a question when a word is doing too much work, silence when they are still talking, and a hand on the brake when it is heating up.\n\nThe six, with the cue for each:\n1. Your Own View — nobody has said anything. \"I think…\"\n2. The Reasoning — the positions are stuck. \"Because…\"\n3. Play It Back — they keep repeating themselves. \"So you're saying…\"\n4. Ask What They Mean — a word is hiding a disagreement. \"Which part?\"\n5. Let Them Finish — you are itching to reply. (nothing)\n6. Keep the Temperature Down — it is getting fast and sharp. \"Can we slow down?\"\n\nMindset: the balance is the skill. Two people doing only Me-Focus have two monologues; two doing only You-Focus have nothing to discuss.",
       inputs: [
         { q: "Nobody has put a view on the table and the conversation is dying.", a: "\"I'll start — I think the deadline should move.\" [me]", bundle: 'pro' },
         { q: "They have said the same thing three times.", a: "\"You're saying it costs more than it saves, and I've not acknowledged that.\" [you]", bundle: 'pro' },

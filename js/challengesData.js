@@ -1110,7 +1110,7 @@ const challengesCollections = {
         { q: "You have described colour, size, material and age with no pause.", a: "\"Does that sound like anything you've seen?\" [Stop and check]", bundle: 'pro' },
         { q: "You realise you have not said the one thing that identifies it.", a: "\"None of that matters, actually. It's the only one with a wooden handle.\" [Lead with the giveaway]", bundle: 'pro' },
         { q: "They look overwhelmed before you have finished.", a: "\"Short version: big, green, patched. That's enough to spot it.\" [Offer the short version]", bundle: 'pro' },
-        { q: "You are giving details in the order you notice them, not the order that helps.", a: "\"Start here: it's a red notebook. Everything else is detail.\" [The Anchor]", bundle: 'pro' },
+        { q: "You are giving details in the order you notice them, not the order that helps.", a: "\"Start here: it's a red notebook. Everything else is detail.\" [Name and Main Details]", bundle: 'pro' },
         { q: "They have started looking before you finished.", a: "\"Go — it's the one you'd use for opening tins.\" [What It Is For]", bundle: 'pro' },
         { q: "You have given four details and they have not moved.", a: "\"One thing to hold on to: it's A5, about the size of your hand.\" [Size and Shape]", bundle: 'pro' },
       ]
@@ -1128,7 +1128,7 @@ const challengesCollections = {
         { q: "You realise mid-sentence you have described something else.", a: "\"Sorry, I'm describing the old one. The new one is smaller and grey.\" [Correct it immediately]", bundle: 'pro' },
         { q: "You remember what it is not, but not what it is.", a: "\"Not the black one — something paler, cream or grey.\" [Material, Texture and Colour]", bundle: 'pro' },
         { q: "You cannot remember any of it except what it does.", a: "\"No idea what it looks like. It's the thing that clamps the pipe.\" [What It Is For]", bundle: 'pro' },
-        { q: "You remember one detail vividly and nothing else.", a: "\"There's a dent in the lid. That'll be quicker than anything else I could say.\" [The Anchor]", bundle: 'pro' },
+        { q: "You remember one detail vividly and nothing else.", a: "\"There's a dent in the lid. That'll be quicker than anything else I could say.\" [Name and Main Details]", bundle: 'pro' },
       ]
     },
     {
@@ -1765,14 +1765,14 @@ const challengesCollections = {
       name: "You Agree But Have Nothing to Add",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "You genuinely share the opinion, but your head is empty — no story, no clever reason, nothing.\n\nThe training is to notice that this is the most common agreeing problem, and that it has a standard fix: a reason is always available even when a story is not. You do not need material, you need one clause.\n\nWhat it usually feels like:\n\n• \"Yeah, totally\" and then a blank.\n• Wanting to agree but not trusting it is enough.\n• Waiting for something good enough to say, and losing the moment.\n\nTwo ways through:\n1. Give an Explanation — say why it makes sense, in one clause. \"Agreed, it just makes everything calmer.\"\n2. Signal the Agreement — if even that will not come, at least land the signal warmly. \"Couldn't agree more.\"\n\nMindset: a warm signal plus one short reason is a complete contribution. Nobody is grading the reason.",
+      description: "You genuinely share the opinion, but your head is empty — no story, no clever reason, nothing.\n\nThe training is to notice that this is the most common agreeing problem, and that it has a standard fix: a reason is always available even when a story is not. You do not need material, you need one clause.\n\nWhat it usually feels like:\n\n• \"Yeah, totally\" and then a blank.\n• Wanting to agree but not trusting it is enough.\n• Waiting for something good enough to say, and losing the moment.\n\nTwo ways through:\n1. Why It Makes Sense — say why it makes sense, in one clause. \"Agreed, it just makes everything calmer.\"\n2. Signal the Agreement — if even that will not come, at least land the signal warmly. \"Couldn't agree more.\"\n\nMindset: a warm signal plus one short reason is a complete contribution. Nobody is grading the reason.",
       inputs: [
-        { q: "You agree with an opinion but have no experience of it at all.", a: "\"Agreed — it just makes everything calmer, doesn't it?\" [Give an Explanation]", bundle: 'pro' },
-        { q: "You say \"yeah, totally\" and then go blank.", a: "\"Especially when you're tired — that's when it really shows.\" [Give an Explanation]", bundle: 'pro' },
+        { q: "You agree with an opinion but have no experience of it at all.", a: "\"Agreed — it just makes everything calmer, doesn't it?\" [Why It Makes Sense]", bundle: 'pro' },
+        { q: "You say \"yeah, totally\" and then go blank.", a: "\"Especially when you're tired — that's when it really shows.\" [Why It Makes Sense]", bundle: 'pro' },
         { q: "You are waiting for something impressive to say.", a: "\"Couldn't agree more, honestly.\" [Signal the Agreement]", bundle: 'pro' },
-        { q: "Someone shares an opinion about a hobby you have never tried.", a: "\"That makes sense to me. You'd get a proper break from everything else.\" [Give an Explanation]", bundle: 'pro' },
+        { q: "Someone shares an opinion about a hobby you have never tried.", a: "\"That makes sense to me. You'd get a proper break from everything else.\" [Why It Makes Sense]", bundle: 'pro' },
         { q: "The opinion is one you hold but have never thought about.", a: "\"Same here. I've never questioned it, which probably says something.\" [Signal the Agreement]", bundle: 'pro' },
-        { q: "You agree and the only reason you have is obvious.", a: "\"Obvious reason, but it's the right one — you sleep better.\" [Give an Explanation]", bundle: 'pro' },
+        { q: "You agree and the only reason you have is obvious.", a: "\"Obvious reason, but it's the right one — you sleep better.\" [Why It Makes Sense]", bundle: 'pro' },
         { q: "You want to agree without repeating their sentence back.", a: "\"Completely. And it's cheaper than the alternative, which helps.\" [Expand the Idea]", bundle: 'pro' },
         { q: "You have agreed and the pause is getting long.", a: "\"No argument from me at all.\" [Signal the Agreement]", bundle: 'pro' },
       ]
@@ -1781,14 +1781,14 @@ const challengesCollections = {
       name: "You Only Half Agree",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "You agree with part of it and not the rest, and a full-throated \"totally!\" would be a small lie.\n\nThe training is to find the part you actually mean and agree with that honestly, instead of either faking it or swinging into disagreement. Narrowing is a real agreeing move, not a dodge.\n\nWhat it usually sounds like:\n\n• An opinion stated more strongly than you would put it.\n• A rule that holds in some situations and not others.\n• Something true of them but not of everyone.\n\nTwo ways through:\n1. Give an Explanation, narrowed — \"I agree, especially when...\" names exactly where you are with them.\n2. Add a Personal Experience — tell the part of it you have actually lived, which is honest by definition.\n\nNote: if you do not agree at all, this is the wrong pack — that is a different skill.\n\nMindset: partial agreement said honestly is worth more than full agreement said vaguely. \"Especially when\" is a whole sentence of honesty.",
+      description: "You agree with part of it and not the rest, and a full-throated \"totally!\" would be a small lie.\n\nThe training is to find the part you actually mean and agree with that honestly, instead of either faking it or swinging into disagreement. Narrowing is a real agreeing move, not a dodge.\n\nWhat it usually sounds like:\n\n• An opinion stated more strongly than you would put it.\n• A rule that holds in some situations and not others.\n• Something true of them but not of everyone.\n\nTwo ways through:\n1. Why It Makes Sense, narrowed — \"I agree, especially when...\" names exactly where you are with them.\n2. Add a Personal Experience — tell the part of it you have actually lived, which is honest by definition.\n\nNote: if you do not agree at all, this is the wrong pack — that is a different skill.\n\nMindset: partial agreement said honestly is worth more than full agreement said vaguely. \"Especially when\" is a whole sentence of honesty.",
       inputs: [
-        { q: "Someone says: \"You should always listen to your teacher.\" You'd say usually, not always.", a: "\"I agree, especially when it's something they've actually done themselves.\" [Give an Explanation]", bundle: 'pro' },
-        { q: "The opinion is stated more strongly than you would put it.", a: "\"I'm with you on most of that — definitely on the mornings part.\" [Give an Explanation]", bundle: 'pro' },
+        { q: "Someone says: \"You should always listen to your teacher.\" You'd say usually, not always.", a: "\"I agree, especially when it's something they've actually done themselves.\" [Why It Makes Sense]", bundle: 'pro' },
+        { q: "The opinion is stated more strongly than you would put it.", a: "\"I'm with you on most of that — definitely on the mornings part.\" [Why It Makes Sense]", bundle: 'pro' },
         { q: "Someone says: \"You only need six hours of sleep.\" It works for them, not you.", a: "\"It clearly works for you. I've found it depends on how regular they are.\" [Add a Personal Experience]", bundle: 'pro' },
         { q: "You agree with the feeling but not the rule.", a: "\"The feeling, absolutely. I've had exactly that on a Sunday afternoon.\" [Add a Personal Experience]", bundle: 'pro' },
-        { q: "A claim is true in some situations but not all.", a: "\"Agreed, especially at home. Work's a bit different.\" [Give an Explanation]", bundle: 'pro' },
-        { q: "You agree with the conclusion but got there another way.", a: "\"Same answer, different route — for me it's the noise, not the cost.\" [Give an Explanation]", bundle: 'pro' },
+        { q: "A claim is true in some situations but not all.", a: "\"Agreed, especially at home. Work's a bit different.\" [Why It Makes Sense]", bundle: 'pro' },
+        { q: "You agree with the conclusion but got there another way.", a: "\"Same answer, different route — for me it's the noise, not the cost.\" [Why It Makes Sense]", bundle: 'pro' },
         { q: "It is true for them and untested for you.", a: "\"I'd believe that. I've only ever done it the other way.\" [Signal the Agreement]", bundle: 'pro' },
         { q: "You agree today and would not have a year ago.", a: "\"I'd have argued with you about this last year, and now I'd agree.\" [Add a Personal Experience]", bundle: 'pro' },
       ]
@@ -1820,7 +1820,7 @@ const challengesCollections = {
         { q: "You believe them but cannot judge the claim.", a: "\"I'd guess you're right. It matches how most things work.\" [Signal the Agreement]", bundle: 'pro' },
         { q: "You are tempted to pretend you know the field.", a: "\"I don't know it well, but that principle holds everywhere I've seen it.\" [Expand the Idea]", bundle: 'pro' },
         { q: "The opinion is about a job you have no contact with.", a: "\"Makes complete sense. I imagine it's like that anywhere with deadlines.\" [Expand the Idea]", bundle: 'pro' },
-        { q: "You can see the principle but not the field.", a: "\"I don't know the work, but that's true of every job I've had.\" [Give an Explanation]", bundle: 'pro' },
+        { q: "You can see the principle but not the field.", a: "\"I don't know the work, but that's true of every job I've had.\" [Why It Makes Sense]", bundle: 'pro' },
         { q: "They have said something you have only read about.", a: "\"That matches everything I've read, for what that's worth.\" [Signal the Agreement]", bundle: 'pro' },
         { q: "You want to agree without pretending to expertise.", a: "\"I'll take your word for it — you're the one who's done it.\" [Signal the Agreement]", bundle: 'pro' },
       ]
@@ -1837,7 +1837,7 @@ const challengesCollections = {
         { q: "Staying quiet would look like you disagree.", a: "\"Same here — I've done it for years without thinking about it.\" [Add a Personal Experience]", bundle: 'pro' },
         { q: "The whole table agrees and the topic is going quiet.", a: "\"Which is probably why nobody sleeps properly in summer.\" [Expand the Idea]", bundle: 'pro' },
         { q: "You want to back someone who is being talked over.", a: "\"I'm with Marta on this, and for the same reason.\" [Signal the Agreement]", bundle: 'pro' },
-        { q: "The group has agreed and nobody has said why.", a: "\"We all agree — I think it's because it takes the decision off one person.\" [Give an Explanation]", bundle: 'pro' },
+        { q: "The group has agreed and nobody has said why.", a: "\"We all agree — I think it's because it takes the decision off one person.\" [Why It Makes Sense]", bundle: 'pro' },
         { q: "You agree and can add the one case nobody has mentioned.", a: "\"Same, and it goes double for the people working from home.\" [Expand the Idea]", bundle: 'pro' },
       ]
     },
@@ -1886,7 +1886,7 @@ const challengesCollections = {
         { q: "They say \"everyone knows that\".", a: "\"Maybe I don't. Talk me through it — where does it come from?\" [Ask plainly]", bundle: 'pro' },
         { q: "You are both restating for the third time.", a: "\"We're going round. What would change your mind?\" [Change the question]", bundle: 'pro' },
         { q: "They dismiss your reason without answering it.", a: "\"Which part of that doesn't hold, for you?\" [Ask them to be specific]", bundle: 'pro' },
-        { q: "They give a reason that is really a restatement.", a: "\"Another way to look at it — what if the delay is the cheaper option?\" [Offer a Different Perspective]", bundle: 'pro' },
+        { q: "They give a reason that is really a restatement.", a: "\"Another way to look at it — what if the delay is the cheaper option?\" [A Wider Picture]", bundle: 'pro' },
         { q: "You have asked twice and got nothing usable.", a: "\"Let me put a case to you: the payroll one, last year.\" [Add an Example]", bundle: 'pro' },
         { q: "They will not explain and the decision is close.", a: "\"I'll say mine then. I think Friday costs us the weekend.\" [Give Your Reason]", bundle: 'pro' },
       ]
@@ -1920,7 +1920,7 @@ const challengesCollections = {
         { q: "You said nothing and it is still bothering you a day later.", a: "\"Can I go back to yesterday? I said nothing and I should have.\" [Reopen it properly]", bundle: 'pro' },
         { q: "The disagreement is real but the stakes are tiny.", a: "\"I'd do it the other way. Not enough to argue about, though.\" [Signal the Disagreement]", bundle: 'pro' },
         { q: "You want to register it once and drop it.", a: "\"For the record I'd have waited a fortnight. That's all I'll say.\" [Give Your Reason]", bundle: 'pro' },
-        { q: "You have made the point twice and nothing has moved.", a: "\"I've said my bit. You've heard a different angle and you still prefer yours.\" [Offer a Different Perspective]", bundle: 'pro' },
+        { q: "You have made the point twice and nothing has moved.", a: "\"I've said my bit. You've heard a different angle and you still prefer yours.\" [A Wider Picture]", bundle: 'pro' },
       ]
     },
   ],
@@ -3547,8 +3547,8 @@ const challengesCollections = {
         { q: "They ask where your figure came from.", a: "\"Honestly, I can't source it. Treat it as a hunch until I check.\" [withdraw]", bundle: 'pro' },
         { q: "You said \"I read somewhere\" and cannot say where.", a: "\"I can't stand that one up, so ignore it. Here's one I can: I counted it myself last month.\" [swap the type]", bundle: 'pro' },
         { q: "A number that felt right has become a number you stated.", a: "\"I gave that as a fact and it was a guess. Let me get the real one before we go further.\" [withdraw]", bundle: 'pro' },
-        { q: "You are about to describe something you only half remember.", a: "\"I'd be making up the details. Here's one I did watch happen, start to finish.\" [The One You Have Seen]", bundle: 'pro' },
-        { q: "The invented case is doing work a real one should do.", a: "\"That's hypothetical. The real version is my old team, and it went the other way.\" [The One You Have Seen]", bundle: 'pro' },
+        { q: "You are about to describe something you only half remember.", a: "\"I'd be making up the details. Here's one I did watch happen, start to finish.\" [Seen It Happen]", bundle: 'pro' },
+        { q: "The invented case is doing work a real one should do.", a: "\"That's hypothetical. The real version is my old team, and it went the other way.\" [Seen It Happen]", bundle: 'pro' },
         { q: "You want a case that neither of you has to take on trust.", a: "\"Take the obvious one — every second person knows someone it didn't work for.\" [The Known Exception]", bundle: 'pro' },
       ]
     },
@@ -3565,7 +3565,7 @@ const challengesCollections = {
         { q: "The reference turned out not to be shared at all.", a: "\"Forget that one. Simpler version: plenty of famous books were turned down a dozen times.\" [known exception]", bundle: 'pro' },
         { q: "Your example needs three sentences of background.", a: "\"Simpler: it fell over completely the week the deliveries stopped.\" [Where It Would Break]", bundle: 'pro' },
         { q: "The example is from a world they do not work in.", a: "\"Different industry, same shape — think of any shop the week before Christmas.\" [The Known Exception]", bundle: 'pro' },
-        { q: "You want them to see it rather than take your word for it.", a: "\"I watched this happen twice last year, both times the same way.\" [The One You Have Seen]", bundle: 'pro' },
+        { q: "You want them to see it rather than take your word for it.", a: "\"I watched this happen twice last year, both times the same way.\" [Seen It Happen]", bundle: 'pro' },
       ]
     },
     {
@@ -3597,9 +3597,9 @@ const challengesCollections = {
         { q: "Both of you have made the same point twice.", a: "\"We're both repeating. What would change your mind on this?\" [real question]", bundle: 'pro' },
         { q: "You are waiting to speak rather than listening.", a: "\"I've been queuing rather than listening. What was the last bit?\" [say it back]", bundle: 'pro' },
         { q: "The exchange is polite and going nowhere.", a: "\"Can I ask what you'd do if it were entirely your call?\" [real question]", bundle: 'pro' },
-        { q: "Neither of you has given a reason, only a position.", a: "\"Here's why I think it, which we haven't done yet: the last two times it cost us a week.\" [Give the Reason Behind It]", bundle: 'pro' },
+        { q: "Neither of you has given a reason, only a position.", a: "\"Here's why I think it, which we haven't done yet: the last two times it cost us a week.\" [The Reasoning]", bundle: 'pro' },
         { q: "You have interrupted twice in a row.", a: "\"Sorry — go on. I'll wait for the end this time.\" [Let Them Finish]", bundle: 'pro' },
-        { q: "You are restating your view louder rather than differently.", a: "\"Let me put your side first: you think the timing is the whole problem.\" [Say Their View Back]", bundle: 'pro' },
+        { q: "You are restating your view louder rather than differently.", a: "\"Let me put your side first: you think the timing is the whole problem.\" [Play It Back]", bundle: 'pro' },
       ]
     },
     {
@@ -3614,7 +3614,7 @@ const challengesCollections = {
         { q: "You realise you have been arguing against a position they never took.", a: "\"I've been arguing with something you didn't say. Sorry — start again?\" [narrow it]", bundle: 'pro' },
         { q: "You suspect you actually agree.", a: "\"I think we might be saying the same thing in different words. Test it on me?\" [narrow it]", bundle: 'pro' },
         { q: "They used a word you are not sure you read the same way.", a: "\"When you say 'unreliable' — do you mean late, or wrong?\" [Ask What They Mean]", bundle: 'pro' },
-        { q: "You have been answering the strongest version rather than theirs.", a: "\"Say your actual point again. I've been arguing with a tougher version of it.\" [Say Their View Back]", bundle: 'pro' },
+        { q: "You have been answering the strongest version rather than theirs.", a: "\"Say your actual point again. I've been arguing with a tougher version of it.\" [Play It Back]", bundle: 'pro' },
         { q: "They have not finished the thought and you have already replied.", a: "\"You weren't done, were you. Finish it and I'll shut up.\" [Let Them Finish]", bundle: 'pro' },
       ]
     },
@@ -3631,7 +3631,7 @@ const challengesCollections = {
         { q: "You want to win more than you want to be right.", a: "\"I've stopped listening and started competing. That's on me.\" [name it as we]", bundle: 'pro' },
         { q: "You are both talking faster than you were five minutes ago.", a: "\"We've both sped up. Can we go back to normal speed?\" [Keep the Temperature Down]", bundle: 'pro' },
         { q: "They have said something sharp and you have not reacted yet.", a: "\"I'll let that one go by. Back to the rota.\" [Keep the Temperature Down]", bundle: 'pro' },
-        { q: "You want to disagree without it sounding like a verdict on them.", a: "\"I see it differently, and I don't think you're being unreasonable.\" [Say What You Think]", bundle: 'pro' },
+        { q: "You want to disagree without it sounding like a verdict on them.", a: "\"I see it differently, and I don't think you're being unreasonable.\" [Your Own View]", bundle: 'pro' },
       ]
     },
     {
@@ -3645,9 +3645,9 @@ const challengesCollections = {
         { q: "The quietest person in the group has said one sentence.", a: "\"Sara, you've been quiet — what do you make of it?\" [hand it over]", bundle: 'pro' },
         { q: "Someone keeps talking over the same person.", a: "\"Hang on, she was still going. You were saying?\" [hand it over]", bundle: 'pro' },
         { q: "You keep starting to speak and being cut off.", a: "\"Third time I've tried to say this — give me twenty seconds.\" [take your turn]", bundle: 'pro' },
-        { q: "You have agreed with everything and said nothing of your own.", a: "\"I've been nodding along. For what it's worth, I'd do the opposite.\" [Say What You Think]", bundle: 'pro' },
+        { q: "You have agreed with everything and said nothing of your own.", a: "\"I've been nodding along. For what it's worth, I'd do the opposite.\" [Your Own View]", bundle: 'pro' },
         { q: "They pause and you are not sure whether they are finished.", a: "\"Is there more? I'd rather wait than cut across you.\" [Let Them Finish]", bundle: 'pro' },
-        { q: "You have a view and everyone in the room outranks you.", a: "\"Different read from me, for what it's worth: I'd hold off a month.\" [Say What You Think]", bundle: 'pro' },
+        { q: "You have a view and everyone in the room outranks you.", a: "\"Different read from me, for what it's worth: I'd hold off a month.\" [Your Own View]", bundle: 'pro' },
       ]
     },
     {
@@ -3662,7 +3662,7 @@ const challengesCollections = {
         { q: "Conceding feels like losing in front of others.", a: "\"I've come round to your view on this, for the record.\" [say it plainly]", bundle: 'pro' },
         { q: "You want to concede but only quietly.", a: "\"Say the bit about the night shift again — that's the part that landed.\" [name what did it]", bundle: 'pro' },
         { q: "You have changed your mind and cannot say why yet.", a: "\"Say the middle part again — something in there moved me and I want to hear it twice.\" [Ask What They Mean]", bundle: 'pro' },
-        { q: "You are still against it but your reason has gone.", a: "\"I've run out of reasons and I'm still uneasy. That's not much of an argument.\" [Give the Reason Behind It]", bundle: 'pro' },
+        { q: "You are still against it but your reason has gone.", a: "\"I've run out of reasons and I'm still uneasy. That's not much of an argument.\" [The Reasoning]", bundle: 'pro' },
         { q: "They have conceded a point and you are pressing on anyway.", a: "\"You've already given me that one. I'll stop pushing at it.\" [Keep the Temperature Down]", bundle: 'pro' },
       ]
     },

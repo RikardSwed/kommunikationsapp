@@ -1531,7 +1531,7 @@ const memorizeCollections = {
       guideBack: "",
       description: "The shape of the pack: five description moves covering everything worth saying about an object, and the discipline of choosing between them.",
       cards: [
-        { q: "What are the five moves in this pack?", a: "The Anchor, Size and Shape, Material Texture and Colour, Where You Find It, What It Is For.", bundle: 'free' },
+        { q: "What are the five moves in this pack?", a: "Name and Main Details, Size and Shape, Material Texture and Colour, Where You Find It, What It Is For.", bundle: 'free' },
         { q: "What is the goal of describing, as opposed to explaining?", a: "That the listener can picture it — not that they understand why it matters.", bundle: 'free' },
         { q: "How many moves does a good description usually use?", a: "Two or three, chosen — not all five.", bundle: 'free' },
         { q: "What decides which details to give?", a: "What the listener is going to do with the description.", bundle: 'pro' },
@@ -1540,7 +1540,7 @@ const memorizeCollections = {
       ]
     },
     {
-      name: "The Anchor",
+      name: "Name and Main Details",
       guideFront: "",
       guideBack: "",
       description: "The anchor move that gives the listener a frame.",
@@ -2279,7 +2279,7 @@ const memorizeCollections = {
       description: "The concept behind agreeing and the full set of moves.",
       cards: [
         { q: "What is the goal when you agree with someone?", a: "Show you're with them AND add something — a reason, an experience, or a further idea.", bundle: 'free' },
-        { q: "What are the four moves in this pack?", a: "Signal the Agreement, Add a Personal Experience, Give an Explanation, Expand the Idea.", bundle: 'free' },
+        { q: "What are the four moves in this pack?", a: "Signal the Agreement, Add a Personal Experience, Why It Makes Sense, Expand the Idea.", bundle: 'free' },
         { q: "What are the two halves of a full agreeing turn?", a: "The signal that you agree, then the contribution that gives it substance.", bundle: 'free' },
         { q: "What is the one thing that never works?", a: "Agreeing and stopping. \"Yeah, totally\" on its own adds nothing.", bundle: 'free' },
         { q: "How do you choose your contribution?", a: "Take what you have — a story if you've lived it, a reason if you haven't, an expansion if the point is already made.", bundle: 'pro' },
@@ -2310,10 +2310,10 @@ const memorizeCollections = {
       ]
     },
     {
-      name: "Give an Explanation",
+      name: "Why It Makes Sense",
       description: "The theory behind saying why the opinion makes sense.",
       cards: [
-        { q: "What is Give an Explanation?", a: "Agreeing, then saying why it makes sense — the reason rather than an example.", bundle: 'free' },
+        { q: "What is Why It Makes Sense?", a: "Agreeing, then saying why it makes sense — the reason rather than an example.", bundle: 'free' },
         { q: "What does it sound like?", a: "\"Another reason is...\" / \"I feel the same way, because...\" / \"I agree, especially when...\"", bundle: 'free' },
         { q: "When is it the right move?", a: "Whenever you share the opinion but have no experience of it to offer.", bundle: 'free' },
         { q: "What are the three ways to explain?", a: "Add a reason they didn't mention, name the mechanism, or narrow to where it's most true.", bundle: 'pro' },
@@ -2337,7 +2337,7 @@ const memorizeCollections = {
       name: "Core Idea",
       description: "The shape of the pack: four moves, mirroring Agreeing, and the principle that disagreement is a contribution rather than a contest.",
       cards: [
-        { q: "What are the four moves in this pack?", a: "Signal the Disagreement, Give Your Reason, Offer a Different Perspective, Add an Example.", bundle: 'free' },
+        { q: "What are the four moves in this pack?", a: "Signal the Disagreement, Give Your Reason, A Wider Picture, Add an Example.", bundle: 'free' },
         { q: "Which pack is this the mirror of?", a: "Agreeing — same four-move shape.", bundle: 'free' },
         { q: "What is the aim of a disagreement, according to this pack?", a: "A better shared picture, not a winner.", bundle: 'free' },
         { q: "Why signal before disagreeing?", a: "Because most defensiveness comes from surprise, not from the disagreement itself.", bundle: 'pro' },
@@ -2370,7 +2370,7 @@ const memorizeCollections = {
       ]
     },
     {
-      name: "Offer a Different Perspective",
+      name: "A Wider Picture",
       description: "The move that widens the picture instead of contradicting it.",
       cards: [
         { q: "What is this move doing?", a: "Adding a way of looking at the thing, not passing a verdict on theirs.", bundle: 'free' },
@@ -4660,7 +4660,7 @@ const memorizeCollections = {
       ]
     },
     {
-      name: "The One You Have Seen",
+      name: "Seen It Happen",
       description: "The theory behind the observed type.",
       cards: [
         { q: "What is an observed counter-example?", a: "A case you have watched happen — a person, a place, a situation — rather than one from your own life.", bundle: 'free' },
@@ -4722,7 +4722,7 @@ const memorizeCollections = {
       ]
     },
     {
-      name: "Say What You Think",
+      name: "Your Own View",
       description: "The theory behind putting a position on the table.",
       cards: [
         { q: "Why say \"I think\" rather than stating it as fact?", a: "An opinion presented as a fact invites a fight about the fact; presented as an opinion it invites a conversation about the subject.", bundle: 'free' },
@@ -4734,7 +4734,7 @@ const memorizeCollections = {
       ]
     },
     {
-      name: "Give the Reason Behind It",
+      name: "The Reasoning",
       description: "The theory behind saying why.",
       cards: [
         { q: "What is a bare opinion, and what is a reason?", a: "A wall and a door.", bundle: 'free' },
@@ -4746,7 +4746,7 @@ const memorizeCollections = {
       ]
     },
     {
-      name: "Say Their View Back",
+      name: "Play It Back",
       description: "The theory behind restating a position.",
       cards: [
         { q: "What does saying their view back do?", a: "Proves you were listening, and catches the misunderstanding that half of all disagreements turn out to be.", bundle: 'free' },

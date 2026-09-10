@@ -2835,7 +2835,7 @@ const multiStepCollections = {
       name: "Agree with a Reason",
       guideFront: "What's happening, and the strategy to use",
       guideBack: "One way it could sound",
-      description: "The version for opinions you share but have never lived. Steps: 1) Signal the Agreement — confirm you are with them, 2) Give an Explanation — say why it makes sense, 3) Expand the Idea — apply it somewhere they did not.\n\nUse this whenever you have no story to tell. A reason is always available, which makes this the version that works everywhere.\n\nWhere each step is doing its work:\n1. Signal — stops the reason sounding like a correction.\n2. Explanation — hands them an argument they can reuse.\n3. Expansion — moves it from their case to a wider one.\n\nMindset: having no personal experience is not a reason to stay quiet. Explaining why someone is right is a real contribution.",
+      description: "The version for opinions you share but have never lived. Steps: 1) Signal the Agreement — confirm you are with them, 2) Why It Makes Sense — say why it makes sense, 3) Expand the Idea — apply it somewhere they did not.\n\nUse this whenever you have no story to tell. A reason is always available, which makes this the version that works everywhere.\n\nWhere each step is doing its work:\n1. Signal — stops the reason sounding like a correction.\n2. Explanation — hands them an argument they can reuse.\n3. Expansion — moves it from their case to a wider one.\n\nMindset: having no personal experience is not a reason to stay quiet. Explaining why someone is right is a real contribution.",
       inputs: [
         {
           bundle: 'pro',
@@ -3322,20 +3322,20 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "You have asked a colleague to get something to you by Thursday. They are annoyed about the timescale but not saying so directly.",
           steps: [
-            { front: "Answer It Straight — they say, \"Well, it must be nice to be able to set deadlines.\"", back: "\"It's not my call either, to be honest. Thursday's what we've been given.\"", guideFront: "Take it at face value when...", guideBack: "A plain answer to the surface" },
-            { front: "Hold Your Point — they say, \"Some of us have actual work as well.\"", back: "\"I know you're stretched. I still need it by Thursday.\"", guideFront: "Acknowledge, then return to it when...", guideBack: "A brief nod and the point again" },
-            { front: "Name the Feeling — they say, \"Fine. It'll be whatever it'll be.\"", back: "\"You sound properly fed up with this. Is it the timing or the whole thing?\"", guideFront: "Say what you think they feel when...", guideBack: "The feeling, named without agreeing" },
-            { front: "Hold Your Point — they say, \"It's just the constant last-minute stuff.\"", back: "\"That's worth raising properly, and I'd back you on it. For now — can you do Thursday?\"", guideFront: "Acknowledge, then return to it when...", guideBack: "A brief nod and the point again" },
+            { front: "Answer It Straight — they say, \"Well, it must be nice to be able to set deadlines.\"", back: "\"It's not my call either, to be honest. Thursday's what we've been given.\"", guideFront: "Take it at face value when...", guideBack: "A sincere reply to an insincere line" },
+            { front: "Hold Your Point — they say, \"Some of us have actual work as well.\"", back: "\"I know you're stretched. I still need it by Thursday.\"", guideFront: "Acknowledge, then return to the task when...", guideBack: "A brief nod, then the business" },
+            { front: "Name the Feeling — they say, \"Fine. It'll be whatever it'll be.\"", back: "\"You sound properly fed up with this. Is it the timing or the whole thing?\"", guideFront: "Say what you think is going on when...", guideBack: "A guess at what is underneath" },
+            { front: "Hold Your Point — they say, \"It's just the constant last-minute stuff.\"", back: "\"That's worth raising properly, and I'd back you on it. For now — can you do Thursday?\"", guideFront: "Acknowledge, then return to the task when...", guideBack: "A brief nod, then the business" },
           ]
         },
         {
           bundle: 'pro',
           situation: "You are visiting family and a relative keeps making small pointed comments about how rarely you come.",
           steps: [
-            { front: "Answer It Straight — they say, \"Nice of you to fit us in.\"", back: "\"It's good to be here. How've you been?\"", guideFront: "Take it at face value when...", guideBack: "A plain answer to the surface" },
-            { front: "Let It Go — they say, \"I suppose we're lucky to get an afternoon.\"", back: "\"Mm. Is the garden yours or has someone been helping?\"", guideFront: "Decide not to respond when...", guideBack: "Something else entirely" },
-            { front: "Name the Feeling — they say, \"I just think family should see each other more.\"", back: "\"It sounds like you've been missing having people around.\"", guideFront: "Say what you think they feel when...", guideBack: "The feeling, named without agreeing" },
-            { front: "Say How It Lands — they say, \"Well. Yes, if I'm honest.\"", back: "\"I'd much rather have that version than the comments. Then I know what's actually going on.\"", guideFront: "Tell them the effect it had when...", guideBack: "What it did to you, plainly" },
+            { front: "Answer It Straight — they say, \"Nice of you to fit us in.\"", back: "\"It's good to be here. How've you been?\"", guideFront: "Take it at face value when...", guideBack: "A sincere reply to an insincere line" },
+            { front: "Let It Go — they say, \"I suppose we're lucky to get an afternoon.\"", back: "\"Mm. Is the garden yours or has someone been helping?\"", guideFront: "Decide not to respond when...", guideBack: "Nothing said, on purpose" },
+            { front: "Name the Feeling — they say, \"I just think family should see each other more.\"", back: "\"It sounds like you've been missing having people around.\"", guideFront: "Say what you think is going on when...", guideBack: "A guess at what is underneath" },
+            { front: "Say How It Lands — they say, \"Well. Yes, if I'm honest.\"", back: "\"I'd much rather have that version than the comments. Then I know what's actually going on.\"", guideFront: "Tell them the effect it had when...", guideBack: "The effect, without the accusation" },
           ]
         },
       ]
@@ -3350,20 +3350,20 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "A friend has been short with you all evening and insists nothing is wrong.",
           steps: [
-            { front: "Ask What They Mean — they say, \"No, it's fine. Do whatever you want.\"", back: "\"That doesn't sound fine. What would you rather do?\"", guideFront: "Ask them to say it plainly when...", guideBack: "A question, then silence" },
-            { front: "Name the Feeling — they say, \"It doesn't matter. It never does.\"", back: "\"That sounds like something that's been building for a while.\"", guideFront: "Say what you think they feel when...", guideBack: "The feeling, named without agreeing" },
-            { front: "Ask What They Mean — they say, \"Forget it. I'm being stupid.\"", back: "\"You're not. Tell me the actual thing — I'd rather know.\"", guideFront: "Ask them to say it plainly when...", guideBack: "A question, then silence" },
-            { front: "Say How It Lands — they say, \"You always decide and I go along with it.\"", back: "\"Right. I'd genuinely rather you told me that in the moment than went quiet on me.\"", guideFront: "Tell them the effect it had when...", guideBack: "What it did to you, plainly" },
+            { front: "Ask What They Mean — they say, \"No, it's fine. Do whatever you want.\"", back: "\"That doesn't sound fine. What would you rather do?\"", guideFront: "Make them say it plainly when...", guideBack: "A question, then silence" },
+            { front: "Name the Feeling — they say, \"It doesn't matter. It never does.\"", back: "\"That sounds like something that's been building for a while.\"", guideFront: "Say what you think is going on when...", guideBack: "A guess at what is underneath" },
+            { front: "Ask What They Mean — they say, \"Forget it. I'm being stupid.\"", back: "\"You're not. Tell me the actual thing — I'd rather know.\"", guideFront: "Make them say it plainly when...", guideBack: "A question, then silence" },
+            { front: "Say How It Lands — they say, \"You always decide and I go along with it.\"", back: "\"Right. I'd genuinely rather you told me that in the moment than went quiet on me.\"", guideFront: "Tell them the effect it had when...", guideBack: "The effect, without the accusation" },
           ]
         },
         {
           bundle: 'pro',
           situation: "A colleague has been making sarcastic remarks for weeks. You have decided to say something.",
           steps: [
-            { front: "Say How It Lands — you catch them alone after a meeting.", back: "\"Can I say something? When things get said like that in a meeting, I don't know how to answer them.\"", guideFront: "Tell them the effect it had when...", guideBack: "What it did to you, plainly" },
-            { front: "Ask What They Mean — they say, \"I'm just joking. You're being sensitive.\"", back: "\"Maybe. Is there something underneath it, though? It's happened a fair bit.\"", guideFront: "Ask them to say it plainly when...", guideBack: "A question, then silence" },
-            { front: "Name the Feeling — they say, \"Honestly? I'm fed up with how the work's split.\"", back: "\"That sounds like it's been sitting there a while.\"", guideFront: "Say what you think they feel when...", guideBack: "The feeling, named without agreeing" },
-            { front: "Say How It Lands — they say, \"It has, a bit.\"", back: "\"Then I'd much rather hear that. I can do something with that — I can't do anything with a joke.\"", guideFront: "Tell them the effect it had when...", guideBack: "What it did to you, plainly" },
+            { front: "Say How It Lands — you catch them alone after a meeting.", back: "\"Can I say something? When things get said like that in a meeting, I don't know how to answer them.\"", guideFront: "Tell them the effect it had when...", guideBack: "The effect, without the accusation" },
+            { front: "Ask What They Mean — they say, \"I'm just joking. You're being sensitive.\"", back: "\"Maybe. Is there something underneath it, though? It's happened a fair bit.\"", guideFront: "Make them say it plainly when...", guideBack: "A question, then silence" },
+            { front: "Name the Feeling — they say, \"Honestly? I'm fed up with how the work's split.\"", back: "\"That sounds like it's been sitting there a while.\"", guideFront: "Say what you think is going on when...", guideBack: "A guess at what is underneath" },
+            { front: "Say How It Lands — they say, \"It has, a bit.\"", back: "\"Then I'd much rather hear that. I can do something with that — I can't do anything with a joke.\"", guideFront: "Tell them the effect it had when...", guideBack: "The effect, without the accusation" },
           ]
         },
       ]
@@ -3378,20 +3378,20 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "In a meeting, a colleague makes a pointed comment about your work in front of the group.",
           steps: [
-            { front: "Answer It Straight — they say, \"Well, some of us managed to read the whole document.\"", back: "\"I read the summary. Which bit should I look at?\"", guideFront: "Take it at face value when...", guideBack: "A plain answer to the surface" },
-            { front: "Hold Your Point — they say, \"The bit everyone else managed.\"", back: "\"I'll go through it after. Can we come back to the decision?\"", guideFront: "Acknowledge, then return to it when...", guideBack: "A brief nod and the point again" },
-            { front: "Let It Go — they make a face at the person next to them.", back: "(carry on with the agenda)", guideFront: "Decide not to respond when...", guideBack: "Something else entirely" },
-            { front: "Say How It Lands — you catch them afterwards, privately.", back: "\"That was uncomfortable in front of everyone. If there's a problem I'd rather hear it directly.\"", guideFront: "Tell them the effect it had when...", guideBack: "What it did to you, plainly" },
+            { front: "Answer It Straight — they say, \"Well, some of us managed to read the whole document.\"", back: "\"I read the summary. Which bit should I look at?\"", guideFront: "Take it at face value when...", guideBack: "A sincere reply to an insincere line" },
+            { front: "Hold Your Point — they say, \"The bit everyone else managed.\"", back: "\"I'll go through it after. Can we come back to the decision?\"", guideFront: "Acknowledge, then return to the task when...", guideBack: "A brief nod, then the business" },
+            { front: "Let It Go — they make a face at the person next to them.", back: "(carry on with the agenda)", guideFront: "Decide not to respond when...", guideBack: "Nothing said, on purpose" },
+            { front: "Say How It Lands — you catch them afterwards, privately.", back: "\"That was uncomfortable in front of everyone. If there's a problem I'd rather hear it directly.\"", guideFront: "Tell them the effect it had when...", guideBack: "The effect, without the accusation" },
           ]
         },
         {
           bundle: 'pro',
           situation: "A family member is clearly spoiling for a row and is using digs to start one.",
           steps: [
-            { front: "Let It Go — they say something pointed about your choices.", back: "(say nothing — carry on)", guideFront: "Decide not to respond when...", guideBack: "Something else entirely" },
-            { front: "Answer It Straight — they say, \"I suppose you know best, as usual.\"", back: "\"I don't, mostly. But I'm happy with this one.\"", guideFront: "Take it at face value when...", guideBack: "A plain answer to the surface" },
-            { front: "Hold Your Point — they say, \"You never listen to anybody.\"", back: "\"Maybe. I'm still not going to argue about it tonight.\"", guideFront: "Acknowledge, then return to it when...", guideBack: "A brief nod and the point again" },
-            { front: "Let It Go — they say, \"Typical.\"", back: "\"I'm going to go and put the kettle on.\"", guideFront: "Decide not to respond when...", guideBack: "Something else entirely" },
+            { front: "Let It Go — they say something pointed about your choices.", back: "(say nothing — carry on)", guideFront: "Decide not to respond when...", guideBack: "Nothing said, on purpose" },
+            { front: "Answer It Straight — they say, \"I suppose you know best, as usual.\"", back: "\"I don't, mostly. But I'm happy with this one.\"", guideFront: "Take it at face value when...", guideBack: "A sincere reply to an insincere line" },
+            { front: "Hold Your Point — they say, \"You never listen to anybody.\"", back: "\"Maybe. I'm still not going to argue about it tonight.\"", guideFront: "Acknowledge, then return to the task when...", guideBack: "A brief nod, then the business" },
+            { front: "Let It Go — they say, \"Typical.\"", back: "\"I'm going to go and put the kettle on.\"", guideFront: "Decide not to respond when...", guideBack: "Nothing said, on purpose" },
           ]
         },
       ]
