@@ -6798,20 +6798,20 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "You are on a machine you have not used before and cannot work out the weight pin. Someone is on the machine next to you, between sets.",
           steps: [
-            { front: "Step 1 · Ask for Help — you genuinely do not know how it works, so ask.", back: "\"Sorry — do you know how you change the weight on this one?\"", guideFront: "A real request. Small enough that yes is easy." },
-            { front: "Step 2 · Mention a Shared Experience — they lean over, show you, and say, \"It's a stiff one, that.\"", back: "\"Cheers. I've been standing here looking at it for a while, if I'm honest.\"", guideFront: "Talk about what you both just had when...", guideBack: "A remark about the thing you shared" },
-            { front: "Step 3 · Ask for Help — they laugh and say, \"We've all done it.\"", back: "\"While I've got you — is there a trick to the one behind you as well?\"", guideFront: "Ask them for something small when...", guideBack: "A small request" },
-            { front: "Step 4 · Pick Up a Shared Thread — they say, \"That one's easier. Same pin, other side.\"", back: "\"Good. I'm here Tuesdays, so I'll probably be asking you again.\"", guideFront: "Ask about the thing already running when...", guideBack: "A question about something ongoing" },
+            { front: "Step 1 · Ask for Help — you genuinely do not know how it works, so ask.", back: "\"Sorry — do you know how you change the weight on this one?\"", guideFront: "Ask for something small when...", guideBack: "A small favour, asked for" },
+            { front: "Step 2 · Mention a Shared Experience — they lean over, show you, and say, \"It's a stiff one, that.\"", back: "\"Cheers. I've been standing here looking at it for a while, if I'm honest.\"", guideFront: "Name what you both just went through when...", guideBack: "Something you were both part of" },
+            { front: "Step 3 · Ask for Help — they laugh and say, \"We've all done it.\"", back: "\"While I've got you — is there a trick to the one behind you as well?\"", guideFront: "Ask for something small when...", guideBack: "A small favour, asked for" },
+            { front: "Step 4 · The Shared Thread — they say, \"That one's easier. Same pin, other side.\"", back: "\"Good. I'm here Tuesdays, so I'll probably be asking you again.\"", guideFront: "Ask about the ongoing thing when...", guideBack: "A question about what is still going on" },
           ]
         },
         {
           bundle: 'pro',
           situation: "You are outside a venue. A long queue has formed at the main door, and you know there is a second entrance round the side. Someone joins the line behind you.",
           steps: [
-            { front: "Step 1 · Offer Something Useful — you know something they would want to know.", back: "\"There's a second door round the side, if you'd rather. Hardly anyone's found it.\"", guideFront: "Give it and let go. Thanks is a complete outcome." },
-            { front: "Step 2 · Mention a Shared Experience — they say, \"Oh — cheers. Are you going round?\"", back: "\"I might. I did this last year and stood here forty minutes.\"", guideFront: "Talk about what you both just had when...", guideBack: "A remark about the thing you shared" },
-            { front: "Step 3 · Offer Something Useful — they say, \"Forty minutes? God.\"", back: "\"They also open the bar before the doors, so the queue in there is worse. Go straight through.\"", guideFront: "Give them something they can use when...", guideBack: "A piece of information" },
-            { front: "Step 4 · Pick Up a Shared Thread — they say, \"You've done this properly, haven't you.\"", back: "\"Third time. Have you been before, or is this the first?\"", guideFront: "Ask about the thing already running when...", guideBack: "A question about something ongoing" },
+            { front: "Step 1 · Offer Something Useful — you know something they would want to know.", back: "\"There's a second door round the side, if you'd rather. Hardly anyone's found it.\"", guideFront: "Tell them what you know when...", guideBack: "A fact they can act on" },
+            { front: "Step 2 · Mention a Shared Experience — they say, \"Oh — cheers. Are you going round?\"", back: "\"I might. I did this last year and stood here forty minutes.\"", guideFront: "Name what you both just went through when...", guideBack: "Something you were both part of" },
+            { front: "Step 3 · Offer Something Useful — they say, \"Forty minutes? God.\"", back: "\"They also open the bar before the doors, so the queue in there is worse. Go straight through.\"", guideFront: "Tell them what you know when...", guideBack: "A fact they can act on" },
+            { front: "Step 4 · The Shared Thread — they say, \"You've done this properly, haven't you.\"", back: "\"Third time. Have you been before, or is this the first?\"", guideFront: "Ask about the ongoing thing when...", guideBack: "A question about what is still going on" },
           ]
         },
       ]
@@ -6826,20 +6826,20 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "A colleague you speak to occasionally is making tea in the kitchen. Last time you spoke they were about to hand in something big.",
           steps: [
-            { front: "Step 1 · Pick Up a Shared Thread — you remember what they were in the middle of, so use it.", back: "\"Did the report get finished in the end? You were nearly there last time.\"", guideFront: "Specific beats general. Name the thing." },
-            { front: "Step 2 · Mention a Shared Experience — they say, \"Handed it in Friday. Barely.\"", back: "\"You had the same week as me, then. Mine went in about an hour before the deadline.\"", guideFront: "Talk about what you both just had when...", guideBack: "A remark about the thing you shared" },
-            { front: "Step 3 · Ask for Help — they say, \"Everyone's had a horrible month.\"", back: "\"Actually, while you're here — do you know who signs these off now? I asked two people and got two answers.\"", guideFront: "Ask them for something small when...", guideBack: "A small request" },
-            { front: "Step 4 · Offer Something Useful — they say, \"It's Priya now. Changed in January.\"", back: "\"Right, thanks. And if you're doing another one — the template's changed, the old one gets bounced back.\"", guideFront: "Give them something they can use when...", guideBack: "A piece of information" },
+            { front: "Step 1 · The Shared Thread — you remember what they were in the middle of, so use it.", back: "\"Did the report get finished in the end? You were nearly there last time.\"", guideFront: "Ask about the ongoing thing when...", guideBack: "A question about what is still going on" },
+            { front: "Step 2 · Mention a Shared Experience — they say, \"Handed it in Friday. Barely.\"", back: "\"You had the same week as me, then. Mine went in about an hour before the deadline.\"", guideFront: "Name what you both just went through when...", guideBack: "Something you were both part of" },
+            { front: "Step 3 · Ask for Help — they say, \"Everyone's had a horrible month.\"", back: "\"Actually, while you're here — do you know who signs these off now? I asked two people and got two answers.\"", guideFront: "Ask for something small when...", guideBack: "A small favour, asked for" },
+            { front: "Step 4 · Offer Something Useful — they say, \"It's Priya now. Changed in January.\"", back: "\"Right, thanks. And if you're doing another one — the template's changed, the old one gets bounced back.\"", guideFront: "Tell them what you know when...", guideBack: "A fact they can act on" },
           ]
         },
         {
           bundle: 'pro',
           situation: "You are putting the bins out. A neighbour you speak to occasionally comes out at the same time. Last time you spoke their car was in the garage.",
           steps: [
-            { front: "Step 1 · Pick Up a Shared Thread — something was in progress last time, so ask about it.", back: "\"Did you get the car back in the end?\"", guideFront: "Specific beats general. Name the thing." },
-            { front: "Step 2 · Mention a Shared Experience — they say, \"Two weeks and four hundred quid. Don't ask.\"", back: "\"That's the going rate, isn't it. Mine was the same last spring.\"", guideFront: "Talk about what you both just had when...", guideBack: "A remark about the thing you shared" },
-            { front: "Step 3 · Offer Something Useful — they say, \"Is there anywhere better round here?\"", back: "\"There's a place on the industrial estate. Half what I paid at the main dealer, and quicker.\"", guideFront: "Give them something they can use when...", guideBack: "A piece of information" },
-            { front: "Step 4 · Pick Up a Shared Thread — they say, \"I'll write that down.\"", back: "\"Do. And how's the extension going? Is that still happening?\"", guideFront: "Ask about the thing already running when...", guideBack: "A question about something ongoing" },
+            { front: "Step 1 · The Shared Thread — something was in progress last time, so ask about it.", back: "\"Did you get the car back in the end?\"", guideFront: "Ask about the ongoing thing when...", guideBack: "A question about what is still going on" },
+            { front: "Step 2 · Mention a Shared Experience — they say, \"Two weeks and four hundred quid. Don't ask.\"", back: "\"That's the going rate, isn't it. Mine was the same last spring.\"", guideFront: "Name what you both just went through when...", guideBack: "Something you were both part of" },
+            { front: "Step 3 · Offer Something Useful — they say, \"Is there anywhere better round here?\"", back: "\"There's a place on the industrial estate. Half what I paid at the main dealer, and quicker.\"", guideFront: "Tell them what you know when...", guideBack: "A fact they can act on" },
+            { front: "Step 4 · The Shared Thread — they say, \"I'll write that down.\"", back: "\"Do. And how's the extension going? Is that still happening?\"", guideFront: "Ask about the ongoing thing when...", guideBack: "A question about what is still going on" },
           ]
         },
       ]
@@ -6854,8 +6854,8 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "You cannot find something in a large shop. A member of staff is restocking a shelf nearby, working quickly.",
           steps: [
-            { front: "Step 1 · Ask for Help — you need to know where something is.", back: "\"Sorry — do you know where the batteries are?\"", guideFront: "A real request. Keep it small." },
-            { front: "Step 2 · Mention a Shared Experience — they point and say, \"Aisle six, bottom shelf.\"", back: "\"Thanks. I've walked past it twice, obviously.\"", guideFront: "Talk about what you both just had when...", guideBack: "A remark about the thing you shared" },
+            { front: "Step 1 · Ask for Help — you need to know where something is.", back: "\"Sorry — do you know where the batteries are?\"", guideFront: "Ask for something small when...", guideBack: "A small favour, asked for" },
+            { front: "Step 2 · Mention a Shared Experience — they point and say, \"Aisle six, bottom shelf.\"", back: "\"Thanks. I've walked past it twice, obviously.\"", guideFront: "Name what you both just went through when...", guideBack: "Something you were both part of" },
             { front: "Step 3 · Read it and stop — they say, \"Everyone does,\" and turn back to the shelf.", back: "\"Cheers. Have a good one.\"", guideFront: "They answered and went back to work. That is the whole exchange." },
           ]
         },
@@ -6863,8 +6863,8 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "You are waiting for a train. Someone is standing at the far end of the platform where the train does not stop today.",
           steps: [
-            { front: "Step 1 · Offer Something Useful — they are about to be in the wrong place.", back: "\"It's only four carriages today — it stops down that end.\"", guideFront: "Give it and let go." },
-            { front: "Step 2 · Mention a Shared Experience — they say, \"Oh, thanks,\" and start walking down.", back: "\"They've been doing it all week. Caught me out on Monday.\"", guideFront: "Talk about what you both just had when...", guideBack: "A remark about the thing you shared" },
+            { front: "Step 1 · Offer Something Useful — they are about to be in the wrong place.", back: "\"It's only four carriages today — it stops down that end.\"", guideFront: "Tell them what you know when...", guideBack: "A fact they can act on" },
+            { front: "Step 2 · Mention a Shared Experience — they say, \"Oh, thanks,\" and start walking down.", back: "\"They've been doing it all week. Caught me out on Monday.\"", guideFront: "Name what you both just went through when...", guideBack: "Something you were both part of" },
             { front: "Step 3 · Read it and stop — they say, \"Right, thanks again,\" and put their headphones back in.", back: "\"No problem.\"", guideFront: "Headphones back in is an answer. Take it warmly." },
           ]
         },
@@ -7104,14 +7104,14 @@ const multiStepCollections = {
       name: "The Rescue",
       guideFront: "What's happening, and the strategy to use",
       guideBack: "One way it could sound",
-      description: "For a subject that is running out, so silence does not end it.\n\n1. **Build on Their Point** — squeeze the last life out of the thread\n2. **Expand to a Related Subtopic** — step sideways into something close by\n3. **Ask an Open Question** — hand the new angle to the group\n\n**Why this order:** squeezing first means you do not abandon a topic that still had something in it. Ending on a question hands the new angle to everyone instead of keeping it — a sideways step you then answer yourself is just you changing the subject.\n\n**What people do instead:** wait. Silence is not the natural end of a topic, it is usually the end of one thread inside it, and once the silence has landed whatever comes next has to restart the whole thing.\n\nMindset: reach for the next room before you leave the house.",
+      description: "For a subject that is running out, so silence does not end it.\n\n1. **Build on Their Point** — squeeze the last life out of the thread\n2. **Expand to a Subtopic** — step sideways into something close by\n3. **Ask an Open Question** — hand the new angle to the group\n\n**Why this order:** squeezing first means you do not abandon a topic that still had something in it. Ending on a question hands the new angle to everyone instead of keeping it — a sideways step you then answer yourself is just you changing the subject.\n\n**What people do instead:** wait. Silence is not the natural end of a topic, it is usually the end of one thread inside it, and once the silence has landed whatever comes next has to restart the whole thing.\n\nMindset: reach for the next room before you leave the house.",
       inputs: [
         {
           bundle: 'pro',
           situation: "The group has been talking about gardening for a while and the answers are getting shorter.",
           steps: [
             { front: "Build on Their Point — someone says: \"That is about all I grow, really.\"", back: "\"You said that is about all — was there anything you gave up on?\"" },
-            { front: "Expand to a Related Subtopic — they say: \"Courgettes. Never again.\"", back: "\"Does anyone keep plants indoors? Mine never survive the winter.\"" },
+            { front: "Expand to a Subtopic — they say: \"Courgettes. Never again.\"", back: "\"Does anyone keep plants indoors? Mine never survive the winter.\"" },
             { front: "Ask an Open Question — someone says: \"I have about ten and they all look terrible.\"", back: "\"What is it that kills them — the light, or just forgetting?\"" },
           ]
         },
@@ -7120,7 +7120,7 @@ const multiStepCollections = {
           situation: "Someone has finished describing a trip and the table has gone quiet in the way that means the subject is done.",
           steps: [
             { front: "Build on Their Point — they say: \"So that was pretty much the whole two weeks.\"", back: "\"You said pretty much — was there a day that went badly?\"" },
-            { front: "Expand to a Related Subtopic — they say: \"The last one. We missed the ferry.\"", back: "\"Does anyone actually enjoy the travelling part, or only the arriving?\"" },
+            { front: "Expand to a Subtopic — they say: \"The last one. We missed the ferry.\"", back: "\"Does anyone actually enjoy the travelling part, or only the arriving?\"" },
             { front: "Ask an Open Question — someone says: \"I quite like airports, weirdly.\"", back: "\"Go on — what is there to like about an airport?\"" },
           ]
         },
@@ -7129,7 +7129,7 @@ const multiStepCollections = {
           situation: "A team lunch has covered the new system thoroughly and nobody has anything left to add.",
           steps: [
             { front: "Build on Their Point — someone says: \"I think we have said everything about it.\"", back: "\"You said everything — is there a bit nobody has actually used yet?\"" },
-            { front: "Expand to a Related Subtopic — they say: \"The reporting side. Nobody has touched it.\"", back: "\"What was the last thing that got rolled out here and actually stuck?\"" },
+            { front: "Expand to a Subtopic — they say: \"The reporting side. Nobody has touched it.\"", back: "\"What was the last thing that got rolled out here and actually stuck?\"" },
             { front: "Ask an Open Question — someone says: \"The booking system, maybe.\"", back: "\"What made that one work when the others did not?\"" },
           ]
         },
@@ -7405,30 +7405,30 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "Two of you are in a classroom before anyone else arrives, with nothing much to talk about.",
           steps: [
-            { front: "Understatement — they say, \"This room is too dark.\"", back: "\"Mildly cave-like, yes.\"", guideFront: "Make it tiny when...", guideBack: "One way it could sound" },
-            { front: "Exaggeration — they say, \"And we have three tests next week.\"", back: "\"Three? That's not a week, that's a sentence.\"", guideFront: "Make it enormous when...", guideBack: "One way it could sound" },
-            { front: "Irony — they say, \"I'm really looking forward to it.\"", back: "\"Obviously. Best week of the year.\"", guideFront: "Say the opposite when...", guideBack: "One way it could sound" },
-            { front: "Deliberate Misunderstanding — they say, \"At least it's lunch in five minutes.\"", back: "\"Five minutes? I'll never last. Tell my family I tried.\"", guideFront: "Pretend you took it literally when...", guideBack: "One way it could sound" },
+            { front: "Understatement — they say, \"This room is too dark.\"", back: "\"Mildly cave-like, yes.\"", guideFront: "Make it tiny when...", guideBack: "The same thing, made small" },
+            { front: "Exaggeration — they say, \"And we have three tests next week.\"", back: "\"Three? That's not a week, that's a sentence.\"", guideFront: "Make it enormous when...", guideBack: "The same thing, ten times bigger" },
+            { front: "Irony — they say, \"I'm really looking forward to it.\"", back: "\"Obviously. Best week of the year.\"", guideFront: "Say the opposite when...", guideBack: "The opposite, carried by tone" },
+            { front: "Deliberate Misunderstanding — they say, \"At least it's lunch in five minutes.\"", back: "\"Five minutes? I'll never last. Tell my family I tried.\"", guideFront: "Pretend you took it literally when...", guideBack: "The literal reading, played straight" },
           ]
         },
         {
           bundle: 'pro',
           situation: "A colleague is listing small annoyances and clearly wants company rather than solutions.",
           steps: [
-            { front: "Exaggeration — they say, \"I couldn't sleep, my neighbour was making noise.\"", back: "\"Is your neighbour a marching band? It sounds like a marching band.\"", guideFront: "Make it enormous when...", guideBack: "One way it could sound" },
-            { front: "Understatement — they say, \"And then the car wouldn't start.\"", back: "\"So the morning has been going well.\"", guideFront: "Make it tiny when...", guideBack: "One way it could sound" },
-            { front: "Misdirection — they say, \"At least my computer's fast.\"", back: "\"I know. I saw it running down the street yesterday.\"", guideFront: "Agree, then twist the ending when...", guideBack: "One way it could sound" },
-            { front: "Irony — they say, \"You're a great help.\"", back: "\"I'm known for it. People come from miles.\"", guideFront: "Say the opposite when...", guideBack: "One way it could sound" },
+            { front: "Exaggeration — they say, \"I couldn't sleep, my neighbour was making noise.\"", back: "\"Is your neighbour a marching band? It sounds like a marching band.\"", guideFront: "Make it enormous when...", guideBack: "The same thing, ten times bigger" },
+            { front: "Understatement — they say, \"And then the car wouldn't start.\"", back: "\"So the morning has been going well.\"", guideFront: "Make it tiny when...", guideBack: "The same thing, made small" },
+            { front: "Misdirection — they say, \"At least my computer's fast.\"", back: "\"I know. I saw it running down the street yesterday.\"", guideFront: "Agree, then twist the ending when...", guideBack: "A sentence that turns at the end" },
+            { front: "Irony — they say, \"You're a great help.\"", back: "\"I'm known for it. People come from miles.\"", guideFront: "Say the opposite when...", guideBack: "The opposite, carried by tone" },
           ]
         },
         {
           bundle: 'pro',
           situation: "You are standing with someone you have never met, waiting for a lift that is taking its time.",
           steps: [
-            { front: "Understatement — they say, \"It's slow, this one.\"", back: "\"Bit unhurried, yes.\"", guideFront: "Make it tiny when...", guideBack: "One way it could sound" },
-            { front: "Deliberate Misunderstanding — they say, \"It's stuck on the fourth floor.\"", back: "\"Stuck? Maybe it likes it up there.\"", guideFront: "Pretend you took it literally when...", guideBack: "One way it could sound" },
-            { front: "Exaggeration — they say, \"I've got a meeting at ten.\"", back: "\"I had one at ten. I've since retired.\"", guideFront: "Make it enormous when...", guideBack: "One way it could sound" },
-            { front: "Irony — the doors finally open.", back: "\"Worth the wait. Genuinely moving.\"", guideFront: "Say the opposite when...", guideBack: "One way it could sound" },
+            { front: "Understatement — they say, \"It's slow, this one.\"", back: "\"Bit unhurried, yes.\"", guideFront: "Make it tiny when...", guideBack: "The same thing, made small" },
+            { front: "Deliberate Misunderstanding — they say, \"It's stuck on the fourth floor.\"", back: "\"Stuck? Maybe it likes it up there.\"", guideFront: "Pretend you took it literally when...", guideBack: "The literal reading, played straight" },
+            { front: "Exaggeration — they say, \"I've got a meeting at ten.\"", back: "\"I had one at ten. I've since retired.\"", guideFront: "Make it enormous when...", guideBack: "The same thing, ten times bigger" },
+            { front: "Irony — the doors finally open.", back: "\"Worth the wait. Genuinely moving.\"", guideFront: "Say the opposite when...", guideBack: "The opposite, carried by tone" },
           ]
         },
       ]
@@ -7443,30 +7443,30 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "A friend is very pleased with a new laptop and keeps mentioning how quick it is.",
           steps: [
-            { front: "Misdirection — they say, \"This thing is so fast.\"", back: "\"I know. I saw it running down the street yesterday.\"", guideFront: "Agree, then twist the ending when...", guideBack: "One way it could sound" },
-            { front: "Exaggeration — they say, \"You're an idiot.\"", back: "\"It overtook a bus. I waved. It didn't wave back — too busy.\"", guideFront: "Make it enormous when...", guideBack: "One way it could sound" },
-            { front: "Understatement — they say, \"It's just a laptop.\"", back: "\"Sure. A modest little machine with Olympic ambitions.\"", guideFront: "Make it tiny when...", guideBack: "One way it could sound" },
-            { front: "Irony — they say, \"I'm never telling you anything again.\"", back: "\"Very wise. I've been nothing but unsupportive.\"", guideFront: "Say the opposite when...", guideBack: "One way it could sound" },
+            { front: "Misdirection — they say, \"This thing is so fast.\"", back: "\"I know. I saw it running down the street yesterday.\"", guideFront: "Agree, then twist the ending when...", guideBack: "A sentence that turns at the end" },
+            { front: "Exaggeration — they say, \"You're an idiot.\"", back: "\"It overtook a bus. I waved. It didn't wave back — too busy.\"", guideFront: "Make it enormous when...", guideBack: "The same thing, ten times bigger" },
+            { front: "Understatement — they say, \"It's just a laptop.\"", back: "\"Sure. A modest little machine with Olympic ambitions.\"", guideFront: "Make it tiny when...", guideBack: "The same thing, made small" },
+            { front: "Irony — they say, \"I'm never telling you anything again.\"", back: "\"Very wise. I've been nothing but unsupportive.\"", guideFront: "Say the opposite when...", guideBack: "The opposite, carried by tone" },
           ]
         },
         {
           bundle: 'pro',
           situation: "You and someone you barely know are in a queue that has not moved for several minutes.",
           steps: [
-            { front: "Exaggeration — the queue does not move.", back: "\"I've been here so long I have grandchildren.\"", guideFront: "Make it enormous when...", guideBack: "One way it could sound" },
-            { front: "Understatement — they say, \"It is quite slow.\"", back: "\"Bit sluggish, yes.\"", guideFront: "Make it tiny when...", guideBack: "One way it could sound" },
-            { front: "Misdirection — they say, \"I have somewhere to be at two.\"", back: "\"So did I. It was last Tuesday.\"", guideFront: "Agree, then twist the ending when...", guideBack: "One way it could sound" },
-            { front: "Irony — the queue moves one step.", back: "\"Ah. Progress. I'll write to someone.\"", guideFront: "Say the opposite when...", guideBack: "One way it could sound" },
+            { front: "Exaggeration — the queue does not move.", back: "\"I've been here so long I have grandchildren.\"", guideFront: "Make it enormous when...", guideBack: "The same thing, ten times bigger" },
+            { front: "Understatement — they say, \"It is quite slow.\"", back: "\"Bit sluggish, yes.\"", guideFront: "Make it tiny when...", guideBack: "The same thing, made small" },
+            { front: "Misdirection — they say, \"I have somewhere to be at two.\"", back: "\"So did I. It was last Tuesday.\"", guideFront: "Agree, then twist the ending when...", guideBack: "A sentence that turns at the end" },
+            { front: "Irony — the queue moves one step.", back: "\"Ah. Progress. I'll write to someone.\"", guideFront: "Say the opposite when...", guideBack: "The opposite, carried by tone" },
           ]
         },
         {
           bundle: 'pro',
           situation: "It has rained for nine days and a colleague mentions it for the fourth time this week.",
           steps: [
-            { front: "Irony — they say, \"Still raining.\"", back: "\"Marvellous. I was hoping for a tenth day.\"", guideFront: "Say the opposite when...", guideBack: "One way it could sound" },
-            { front: "Deliberate Misunderstanding — they say, \"It's supposed to clear on Friday.\"", back: "\"Supposed to by whom? Is somebody in charge of this?\"", guideFront: "Pretend you took it literally when...", guideBack: "One way it could sound" },
-            { front: "Exaggeration — they say, \"The forecast, obviously.\"", back: "\"The forecast has been wrong so consistently it's begun to feel deliberate.\"", guideFront: "Make it enormous when...", guideBack: "One way it could sound" },
-            { front: "Understatement — they say, \"You've thought about this a lot.\"", back: "\"A little. Nine days is a fair amount of thinking time.\"", guideFront: "Make it tiny when...", guideBack: "One way it could sound" },
+            { front: "Irony — they say, \"Still raining.\"", back: "\"Marvellous. I was hoping for a tenth day.\"", guideFront: "Say the opposite when...", guideBack: "The opposite, carried by tone" },
+            { front: "Deliberate Misunderstanding — they say, \"It's supposed to clear on Friday.\"", back: "\"Supposed to by whom? Is somebody in charge of this?\"", guideFront: "Pretend you took it literally when...", guideBack: "The literal reading, played straight" },
+            { front: "Exaggeration — they say, \"The forecast, obviously.\"", back: "\"The forecast has been wrong so consistently it's begun to feel deliberate.\"", guideFront: "Make it enormous when...", guideBack: "The same thing, ten times bigger" },
+            { front: "Understatement — they say, \"You've thought about this a lot.\"", back: "\"A little. Nine days is a fair amount of thinking time.\"", guideFront: "Make it tiny when...", guideBack: "The same thing, made small" },
           ]
         },
       ]
@@ -7481,30 +7481,30 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "You make an ironic reply and the other person takes it completely at face value.",
           steps: [
-            { front: "Irony — they say, \"We have three tests next week.\"", back: "\"Lovely. I was hoping for a quiet week.\"", guideFront: "Say the opposite when...", guideBack: "One way it could sound" },
-            { front: "Understatement — they say, \"Really? I think it's awful.\"", back: "\"That was me agreeing with you, badly.\"", guideFront: "Make it tiny when...", guideBack: "One way it could sound" },
-            { front: "Exaggeration — they say, \"Oh — right.\"", back: "\"To be clear, I'd rather do anything else. Anything.\"", guideFront: "Make it enormous when...", guideBack: "One way it could sound" },
-            { front: "Misdirection — they say, \"Same, honestly.\"", back: "\"Good. I've already planned my entire week around avoiding it.\"", guideFront: "Agree, then twist the ending when...", guideBack: "One way it could sound" },
+            { front: "Irony — they say, \"We have three tests next week.\"", back: "\"Lovely. I was hoping for a quiet week.\"", guideFront: "Say the opposite when...", guideBack: "The opposite, carried by tone" },
+            { front: "Understatement — they say, \"Really? I think it's awful.\"", back: "\"That was me agreeing with you, badly.\"", guideFront: "Make it tiny when...", guideBack: "The same thing, made small" },
+            { front: "Exaggeration — they say, \"Oh — right.\"", back: "\"To be clear, I'd rather do anything else. Anything.\"", guideFront: "Make it enormous when...", guideBack: "The same thing, ten times bigger" },
+            { front: "Misdirection — they say, \"Same, honestly.\"", back: "\"Good. I've already planned my entire week around avoiding it.\"", guideFront: "Agree, then twist the ending when...", guideBack: "A sentence that turns at the end" },
           ]
         },
         {
           bundle: 'pro',
           situation: "You reach for a joke and realise mid-sentence that they are genuinely upset about it.",
           steps: [
-            { front: "Understatement — they say, \"My week has been a disaster.\"", back: "\"Sounds mildly inconvenient.\"", guideFront: "Make it tiny when...", guideBack: "One way it could sound" },
-            { front: "Deliberate Misunderstanding — they say, \"No, it's actually been really bad.\"", back: "\"Right — tell me what happened.\"", guideFront: "Pretend you took it literally when...", guideBack: "One way it could sound" },
-            { front: "Exaggeration — later, once they have finished.", back: "\"For what it's worth, that is the worst week I've heard about this year.\"", guideFront: "Make it enormous when...", guideBack: "One way it could sound" },
-            { front: "Irony — they say, \"Thanks, that helps.\"", back: "\"I'm here to help. Famously.\"", guideFront: "Say the opposite when...", guideBack: "One way it could sound" },
+            { front: "Understatement — they say, \"My week has been a disaster.\"", back: "\"Sounds mildly inconvenient.\"", guideFront: "Make it tiny when...", guideBack: "The same thing, made small" },
+            { front: "Deliberate Misunderstanding — they say, \"No, it's actually been really bad.\"", back: "\"Right — tell me what happened.\"", guideFront: "Pretend you took it literally when...", guideBack: "The literal reading, played straight" },
+            { front: "Exaggeration — later, once they have finished.", back: "\"For what it's worth, that is the worst week I've heard about this year.\"", guideFront: "Make it enormous when...", guideBack: "The same thing, ten times bigger" },
+            { front: "Irony — they say, \"Thanks, that helps.\"", back: "\"I'm here to help. Famously.\"", guideFront: "Say the opposite when...", guideBack: "The opposite, carried by tone" },
           ]
         },
         {
           bundle: 'pro',
           situation: "You say something you thought was funny to a group of four and not one person responds.",
           steps: [
-            { front: "Understatement — the silence lasts a beat too long.", back: "\"Anyway. Small moment for me there.\"", guideFront: "Make it tiny when...", guideBack: "One way it could sound" },
-            { front: "Misdirection — someone changes the subject to the timetable.", back: "\"Right, the timetable. My favourite work of fiction.\"", guideFront: "Agree, then twist the ending when...", guideBack: "One way it could sound" },
-            { front: "Exaggeration — they say, \"It has changed again.\"", back: "\"Third time this term. At this point it's just a rumour.\"", guideFront: "Make it enormous when...", guideBack: "One way it could sound" },
-            { front: "Irony — they say, \"You're in a mood today.\"", back: "\"I'm delightful. Everyone says so.\"", guideFront: "Say the opposite when...", guideBack: "One way it could sound" },
+            { front: "Understatement — the silence lasts a beat too long.", back: "\"Anyway. Small moment for me there.\"", guideFront: "Make it tiny when...", guideBack: "The same thing, made small" },
+            { front: "Misdirection — someone changes the subject to the timetable.", back: "\"Right, the timetable. My favourite work of fiction.\"", guideFront: "Agree, then twist the ending when...", guideBack: "A sentence that turns at the end" },
+            { front: "Exaggeration — they say, \"It has changed again.\"", back: "\"Third time this term. At this point it's just a rumour.\"", guideFront: "Make it enormous when...", guideBack: "The same thing, ten times bigger" },
+            { front: "Irony — they say, \"You're in a mood today.\"", back: "\"I'm delightful. Everyone says so.\"", guideFront: "Say the opposite when...", guideBack: "The opposite, carried by tone" },
           ]
         },
       ]

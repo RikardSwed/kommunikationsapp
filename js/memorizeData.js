@@ -6333,7 +6333,7 @@ const memorizeCollections = {
       ]
     },
     {
-      name: "Pick Up a Shared Thread",
+      name: "The Shared Thread",
       description: "The opener for people you already know a little.",
       cards: [
         { q: "What does this opener prove that no other one does?", a: "That you remembered.", bundle: 'free' },
@@ -6534,9 +6534,9 @@ const memorizeCollections = {
   exploringatopic: [
     {
       name: "Core Idea",
-      description: "Five moves for staying inside a subject instead of hopping out of it.\n\n1. **Ask an Open Question**\n2. **Share a Related Experience**\n3. **Build on Their Point**\n4. **Expand to a Related Subtopic**\n5. **Share, Then Invite**\n\nTwo feed the topic, two go deeper or sideways, and one hands it on.",
+      description: "Five moves for staying inside a subject instead of hopping out of it.\n\n1. **Ask an Open Question**\n2. **Share a Related Experience**\n3. **Build on Their Point**\n4. **Expand to a Subtopic**\n5. **Share, Then Invite**\n\nTwo feed the topic, two go deeper or sideways, and one hands it on.",
       cards: [
-        { q: "What are the five moves in this pack?", a: "Ask an Open Question, Share a Related Experience, Build on Their Point, Expand to a Related Subtopic, and Share, Then Invite.", bundle: 'free' },
+        { q: "What are the five moves in this pack?", a: "Ask an Open Question, Share a Related Experience, Build on Their Point, Expand to a Subtopic, and Share, Then Invite.", bundle: 'free' },
         { q: "What is this pack for?", a: "Keeping a subject alive without changing it.", bundle: 'free' },
         { q: "How is it different from Changing Topics?", a: "Here you stay. Expand goes one step sideways, never away.", bundle: 'free' },
         { q: "Do you need to know about the subject to take part?", a: "No. A question is a full contribution.", bundle: 'free' },
@@ -6589,7 +6589,7 @@ const memorizeCollections = {
       ]
     },
     {
-      name: "Expand to a Related Subtopic",
+      name: "Expand to a Subtopic",
       description: "",
       cards: [
         { q: "When do you use it?", a: "When the current thread is running out.", bundle: 'free' },
@@ -6632,7 +6632,7 @@ const memorizeCollections = {
     },
     {
       name: "Sequences",
-      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **The Full Loop** — Ask an Open Question → Build on Their Point → Share, Then Invite\n2. **The Rescue** — Build on Their Point → Expand to a Related Subtopic → Ask an Open Question\n3. **The Open Door** — Share a Related Experience → Share, Then Invite → Build on Their Point\n\nEach one ends by handing something to the group rather than keeping it.",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **The Full Loop** — Ask an Open Question → Build on Their Point → Share, Then Invite\n2. **The Rescue** — Build on Their Point → Expand to a Subtopic → Ask an Open Question\n3. **The Open Door** — Share a Related Experience → Share, Then Invite → Build on Their Point\n\nEach one ends by handing something to the group rather than keeping it.",
       cards: [
         { q: "What is the order in The Full Loop?", a: "Ask, build on the answer, then add your own bit and pass it on.", bundle: 'pro' },
         { q: "Why does The Full Loop end with a hand-off?", a: "Otherwise the whole thing turns into an interview.", bundle: 'pro' },

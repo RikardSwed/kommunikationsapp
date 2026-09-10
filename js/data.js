@@ -5297,8 +5297,8 @@ const collections = {
   setupquestion: [
     {
       name: "Opinion Question",
-      guideFront: "Use this strategy when...",
-      guideBack: "One way it could sound",
+      guideFront: "Ask what they think first when...",
+      guideBack: "Their view, then yours",
       description: "Ask what they think about something, listen, then say what you think. The question comes first, which is what makes it feel like interest rather than an announcement — and your own answer comes second, which is what stops it being an interview. Example: \"What did you make of that?\" and then, when they have said their bit, \"I liked it more than I expected to.\"\n\nThree strengths of question, from easiest to answer to most inviting:\n1. The closed one with an opening — \"Did you like it?\" gets a yes, and yes is a start.\n2. The open one — \"What did you make of it?\" gets a sentence.\n3. The one that offers a side — \"Was it just me or did it drag?\" gives them something to agree or disagree with.\n\nAsk about something present. An opinion question about a thing you can both see needs no setting up, and neither of you has to know anything.\n\nMindset: you asked because you want to talk about it too. Say your own answer afterwards — otherwise you have run an interview and learned nothing about each other.",
       inputs: [
         { q: "A film has just finished and the room is quiet.", a: "\"What did you make of that?\" — then your own: \"I liked it more than I expected to.\"", bundle: 'free' },
@@ -5313,8 +5313,8 @@ const collections = {
     },
     {
       name: "Purpose Question",
-      guideFront: "Use this strategy when...",
-      guideBack: "One way it could sound",
+      guideFront: "Ask why they came when...",
+      guideBack: "Their reason, then yours",
       description: "Ask why they are here or what they are after, then say why you came. It is the easiest of the five, because everybody in a room has a reason to be in it, and nobody has to be interesting to answer. Example: \"What brought you along tonight?\" and then, \"A friend talked me into it, honestly.\"\n\nThree ways to ask it:\n1. The plain one — \"What brings you here?\"\n2. The one about how they arrived at it — \"How did you end up doing this?\"\n3. The one that assumes nothing — \"Is this your first one of these?\"\n\nIt works everywhere people have gathered on purpose: a class, a club, a course, an event, a shared table.\n\nMindset: nobody has to invent anything to answer this one. That is what makes it the safest opener in the pack — and your own reason, said afterwards, is what makes it a conversation.",
       inputs: [
         { q: "First evening of a course where nobody knows anybody.", a: "\"What made you sign up for this?\" — then your own: \"I finally ran out of excuses, basically.\"", bundle: 'free' },
@@ -5329,8 +5329,8 @@ const collections = {
     },
     {
       name: "Status Question",
-      guideFront: "Use this strategy when...",
-      guideBack: "One way it could sound",
+      guideFront: "Ask how they are, properly, when...",
+      guideBack: "Their honest answer, then yours",
       description: "Ask how they are right now — properly, not as a greeting — and then answer it yourself. Asked first, it reads as noticing them; answered afterwards, it stops being a check-up. Example: \"How are you holding up today?\" and then, \"I'm running on about four hours' sleep, so not brilliantly.\"\n\nThree ways to ask it so it gets a real answer:\n1. Attach it to the moment — \"Long week for you too?\"\n2. Ask about a specific thing — \"How are you feeling about this afternoon?\"\n3. Mark it as the real question — \"How are you, actually?\"\n\nYour own answer is what makes it safe to have been honest. If they say they are tired and you say nothing back, they have given you something and got nothing.\n\nMindset: the ritual \"how are you\" expects \"fine\". This one expects an answer, which means you have to be ready to give one too.",
       inputs: [
         { q: "You meet a friend of a friend at the start of a long day.", a: "\"How are you holding up today?\" — then your own: \"I'm running on very little sleep, honestly.\"", bundle: 'free' },
@@ -5345,8 +5345,8 @@ const collections = {
     },
     {
       name: "Action Question",
-      guideFront: "Use this strategy when...",
-      guideBack: "One way it could sound",
+      guideFront: "Ask what they are in the middle of when...",
+      guideBack: "What they are doing, then yours",
       description: "Ask what they are doing or working on, then say what you are in the middle of. It is the question that gets the most concrete answers, because people can always say what they are doing even when they cannot say what is new. Example: \"What are you working on at the moment?\" and then, \"I'm trying to learn the guitar, badly.\"\n\nThree ways to ask it:\n1. Right now — \"What are you working on?\"\n2. Lately — \"Have you picked anything up recently?\"\n3. Narrow it — \"Are you reading anything at the moment?\"\n\nNarrowing helps more than it looks. \"What's new?\" is a blank page; \"are you reading anything?\" is a question anyone can answer in four words.\n\nMindset: ask for a concrete thing, not an interesting one. And have your own concrete thing ready — this is the question where \"not much\" from you kills what you just started.",
       inputs: [
         { q: "Catching up with someone you have not seen in a while.", a: "\"What have you been up to lately?\" — then your own: \"I've started running in the mornings, which is new for me.\"", bundle: 'free' },
@@ -5361,8 +5361,8 @@ const collections = {
     },
     {
       name: "Background Question",
-      guideFront: "Use this strategy when...",
-      guideBack: "One way it could sound",
+      guideFront: "Ask what led up to now when...",
+      guideBack: "Their run-up, then yours",
       description: "Ask where they have come from or what happened before this, then say the same about yourself. It is the question that most reliably produces a small story rather than a word, because everybody came from somewhere. Example: \"Where have you come from?\" and then, \"I came straight from work and I'm starving.\"\n\nThree ways to ask it:\n1. The journey — \"Did you come far?\"\n2. The immediate before — \"Where have you come from?\"\n3. The connection — \"How do you know everyone here?\"\n\nThe third one is the most useful at weddings, dinners and parties, where the honest answer is always a story and it is always about somebody in the room.\n\nMindset: this is the question with the highest chance of an actual anecdote. Ask it, listen for the detail, and then give one of your own.",
       inputs: [
         { q: "You arrive at an evening event a little flustered.", a: "\"Where have you come from?\" — then your own: \"Straight from the office, still catching my breath.\"", bundle: 'free' },
@@ -7925,8 +7925,8 @@ const collections = {
   startingconversations2: [
     {
       name: "Ask for Help",
-      guideFront: "Use this strategy when...",
-      guideBack: "One way it could sound",
+      guideFront: "Ask for something small when...",
+      guideBack: "A small favour, asked for",
       description: "Ask them for something small — to pass you a thing, to hold a door, to tell you how something works, to keep an eye on your bag. You are not opening with conversation at all; you are opening with a task, and the conversation comes free with it.\n\nIt works for a reason that sounds backwards: people like being asked. A small request gives the other person a role — the person who knows, the person who helps — which is far easier to occupy than the role of stranger being talked at. And it gives them something concrete to do rather than something to think of.\n\nThe request has to be genuinely small. The point is that saying yes costs almost nothing, so almost nobody says no, and you are talking within seconds.\n\nTypical phrases: \"Could you pass me…?\", \"Sorry, do you know how…?\", \"Would you mind keeping an eye on…?\", \"Can you help me with this for a second?\"\n\nFour ways to ask:\n\n1. A physical favour — the smallest kind. \"Could you pass me one of those?\"\n\n2. Local knowledge — asking them to be the one who knows. \"Do you know how this machine works? I've pressed everything.\"\n\n3. A second pair of hands — brief and obviously finite. \"Could you hold this for a second while I get the lid off?\"\n\n4. Watching something — implies trust, which people like being given. \"Would you mind keeping an eye on my bag for two minutes?\"\n\nMindset: keep it small enough that yes is the easy answer, and thank them properly — that thank you is the second half of the opener.",
       inputs: [
         { q: "You are at a table and the water jug is at the other end.", a: "\"Could you pass me the water when you get a chance?\"", bundle: 'free' },
@@ -7941,8 +7941,8 @@ const collections = {
     },
     {
       name: "Offer Something Useful",
-      guideFront: "Use this strategy when...",
-      guideBack: "One way it could sound",
+      guideFront: "Tell them what you know when...",
+      guideBack: "A fact they can act on",
       description: "Give them a piece of information they can use right now. The other queue is shorter, that machine takes coins, the front door is locked so you have to go round, the second half is better than the first. You are not making conversation — you are being helpful, and the conversation follows.\n\nIt works because it inverts the usual opening. Instead of asking something of a stranger, you give them something, which means there is nothing for them to weigh up. It also gives you an obvious reason to have spoken, which removes the awkwardness of having approached at all.\n\nKeep it to what is actually useful. Unsolicited advice about how someone should live is a different thing entirely and lands very differently.\n\nTypical phrases: \"Just so you know…\", \"There's a shorter one round the corner.\", \"That one's out of order, by the way.\", \"If you press it twice it works.\"\n\nFour ways to offer something useful:\n\n1. A shortcut — the most welcome kind. \"There's a second queue round the side and nobody's found it.\"\n\n2. A warning — saves them a wasted trip. \"That machine's been eating cards all week. I'd use the other one.\"\n\n3. How something works — the thing you learned the hard way. \"You have to hold it down until it beeps twice. Took me a while.\"\n\n4. What is coming — insider information about the situation. \"They usually open the second door about ten minutes in.\"\n\nMindset: offer it and let go. If they only say thanks, you have still made their day slightly easier, and that was worth doing on its own.",
       inputs: [
         { q: "Someone joins a long queue and there is a shorter one nearby.", a: "\"There's a second till open round the corner, if you want it.\"", bundle: 'free' },
@@ -7957,8 +7957,8 @@ const collections = {
     },
     {
       name: "Mention a Shared Experience",
-      guideFront: "Use this strategy when...",
-      guideBack: "One way it could sound",
+      guideFront: "Name what you both just went through when...",
+      guideBack: "Something you were both part of",
       description: "Talk about the thing you have both just been through. The test that has just finished, the meeting you both sat in, the traffic on the way, the delay, the training session. It is the single most reliable opener between two people who do not know each other but have just done the same thing.\n\nIt works because it needs no introduction. They know exactly what you are referring to, they already have opinions about it, and you are giving them permission to say what they were probably already thinking.\n\nThe best version names something specific rather than the event as a whole. \"That was long\" is fine; \"I lost the will during the third slide\" gives them something to answer.\n\nTypical phrases: \"That was tough, wasn't it?\", \"Well, that was long.\", \"How did you find that?\", \"I did not expect that last bit.\"\n\nFour ways to use a shared experience:\n\n1. Give your verdict — and invite theirs by implication. \"That was harder than I expected.\"\n\n2. Ask for theirs first — slightly more generous. \"How did you find that?\"\n\n3. Name a specific moment — much better than the whole event. \"The bit at the end where he asked for questions and nobody moved.\"\n\n4. Say what you were thinking during it — small self-disclosure, easy to match. \"I spent the whole hour trying to work out if I was in the right room.\"\n\nMindset: they went through it too. You are not informing them, you are comparing notes, and that is a conversation between equals.",
       inputs: [
         { q: "You come out of a difficult exam next to someone else.", a: "\"Well. That was not what I revised for.\"", bundle: 'free' },
@@ -7972,9 +7972,9 @@ const collections = {
       ]
     },
     {
-      name: "Pick Up a Shared Thread",
-      guideFront: "Use this strategy when...",
-      guideBack: "One way it could sound",
+      name: "The Shared Thread",
+      guideFront: "Ask about the ongoing thing when...",
+      guideBack: "A question about what is still going on",
       description: "Ask about something already running between you. Their project, their trip, the thing they mentioned last week, how the move went, whether the exam happened. It is the opener for people you already know a little and have not spoken to for a while.\n\nIt works because it costs the other person nothing to answer and proves something no other opener proves: that you remembered. That is a small thing to do and a surprisingly large thing to receive.\n\nIt is also the opener most often missed. People default to a greeting with someone they half know, when a single specific question would have started an actual conversation.\n\nTypical phrases: \"How's the… going?\", \"Did you ever…?\", \"How did the… go in the end?\", \"Whatever happened with…?\"\n\nFour ways to pick up a thread:\n\n1. Ask how the ongoing thing is going — the standard version. \"How's the extension coming along?\"\n\n2. Ask how a specific event went — better, because it has an answer. \"How did the interview go?\"\n\n3. Follow up on something they worried about — this one carries weight. \"Did your mum's appointment go alright?\"\n\n4. Return to a topic you both enjoyed — picks the conversation back up mid-air. \"Did you ever finish that series you were telling me about?\"\n\nMindset: specific beats general every time. \"How's things?\" gets \"fine\"; \"how did Thursday go?\" gets an answer.",
       inputs: [
         { q: "A colleague mentioned last week that they were moving house.", a: "\"How did the move go in the end?\"", bundle: 'free' },
@@ -8107,8 +8107,8 @@ const collections = {
   exploringatopic: [
     {
       name: "Ask an Open Question",
-      guideFront: "Use this strategy when...",
-      guideBack: "One way it could sound",
+      guideFront: "Ask something they cannot answer briefly when...",
+      guideBack: "A what, how or why",
       description: "Keep the topic going by asking something that cannot be answered with yes or no — a what, how or why about the subject in hand. It works even when you know nothing about it. Example: the group is talking about gardening — \"What do you actually grow out there?\"\n\nQuestions that open a topic up nearly always start with one of three words, and each one pulls a different kind of answer:\n\n1. What — pulls facts and detail. \"What do you actually grow out there?\"\n\n2. How — pulls process and story. \"How long did it take before it started working?\"\n\n3. Why — pulls reasons and feeling. \"Why did you pick that one over the others?\"\n\nUse what when you know nothing and need material, how when you want them to tell it properly, and why when the topic is ready to go a bit deeper.\n\nMindset: not knowing the subject is not a reason to stay quiet. A question is a full contribution, and the people who do know are usually glad to be asked.",
       inputs: [
         { q: "The group is talking about gardening and you know nothing about it.", a: "\"What do you actually grow out there?\"", bundle: 'free' },
@@ -8123,8 +8123,8 @@ const collections = {
     },
     {
       name: "Share a Related Experience",
-      guideFront: "Use this strategy when...",
-      guideBack: "One way it could sound",
+      guideFront: "Add your own piece of the subject when...",
+      guideBack: "Your part of the same topic",
       description: "Add your own piece to the topic — a story, a habit or an opinion of yours that sits inside the same subject. It does not have to be impressive, only related. Example: they are talking about balcony gardening — \"I tried herbs on the windowsill and the basil lasted about a week.\"\n\nThree kinds of thing you can put in:\n\n1. A story — something that happened once. \"We did that coast a few years back.\"\n\n2. A habit — something you do. \"I get through a whole audiobook a week.\"\n\n3. An opinion — what you make of it. \"There's a tiny Thai place I keep dragging people to.\"\n\nThe only test is whether it sits inside the same subject — close enough that nobody has to ask how you got there.\n\nMindset: it does not have to be impressive. Small ordinary experiences are what most good conversations are made of.",
       inputs: [
         { q: "Someone talks about growing vegetables on their balcony.", a: "\"I tried herbs on the windowsill — the basil lasted about a week.\"", bundle: 'free' },
@@ -8139,8 +8139,8 @@ const collections = {
     },
     {
       name: "Build on Their Point",
-      guideFront: "Use this strategy when...",
-      guideBack: "One way it could sound",
+      guideFront: "Go one step further into theirs when...",
+      guideBack: "Their point, taken further",
       description: "Take what someone just said and go one step further into it instead of starting something new. Pick up their word, add to it, or ask about the next layer down. Example: they mention growing vegetables — \"You said most of them — what is the one thing that never works?\"\n\nThree ways to go one layer down:\n\n1. Pick up one of their words — \"You said most — what never works?\"\n\n2. Offer the next distinction — \"Was it the sound or the crowd?\"\n\n3. Add to it and hand it back — \"That venue ruins everything. Which night were you there?\"\n\nThe word worth picking up is usually the vaguest one in their sentence — most, strange, awful, fine. That is where the detail is hiding.\n\nMindset: this is the move that proves you were listening. It costs nothing, and it is the one people notice.",
       inputs: [
         { q: "Someone says: \"I grow most of our vegetables in the summer.\"", a: "\"You said most — what is the one thing that never works?\"", bundle: 'free' },
@@ -8154,9 +8154,9 @@ const collections = {
       ]
     },
     {
-      name: "Expand to a Related Subtopic",
-      guideFront: "Use this strategy when...",
-      guideBack: "One way it could sound",
+      name: "Expand to a Subtopic",
+      guideFront: "Step sideways into something close by when...",
+      guideBack: "A neighbouring subject, not a new one",
       description: "When the current thread is running out, step sideways into something close by rather than away from the topic. Gardening moves to indoor plants; sport moves from playing to watching. Example: the balcony garden talk dries up — \"Does anyone keep plants indoors? Mine never survive.\"\n\nThree directions the sideways step can take:\n\n1. Same subject, new setting — gardening outdoors becomes plants indoors.\n\n2. Doing it becomes watching it — playing football becomes following it.\n\n3. The thing becomes the things around it — dogs becomes vets, cooking becomes eating out.\n\nHow far is too far: if people have to stop and ask what you are talking about, that was not an expansion, it was a new topic.\n\nMindset: a fading topic usually has more in it than it looks. Reach for the next room before you leave the house.",
       inputs: [
         { q: "The talk about balcony gardening is running out of steam.", a: "\"Does anyone keep plants indoors? Mine never survive the winter.\"", bundle: 'free' },
@@ -8171,8 +8171,8 @@ const collections = {
     },
     {
       name: "Share, Then Invite",
-      guideFront: "Use this strategy when...",
-      guideBack: "One way it could sound",
+      guideFront: "Say your bit, then hand it on when...",
+      guideBack: "One part you, one part them",
       description: "Say your own bit and then hand the ball straight on, so you contribute without holding the floor. One part you, one part them. Example: \"I love cooking Italian food. What is your favourite thing to cook?\"\n\nThree ways to hand it on:\n\n1. To the group — \"That's just me though. What do you two think?\"\n\n2. To one person by name — \"Anna, you actually cook. What would you make?\"\n\n3. Back to the speaker — \"Enough about mine. How bad is yours?\"\n\nUse a name when someone has been quiet. An open invitation is easy to let somebody else answer, because it belongs to nobody; a named one is not, and that is the whole reason it works.\n\nThe size of the question matters as much as the name. Somebody who has been silent for ten minutes cannot answer \"so what do you think about all this\" — that is a spotlight, and the safe reply is that they agree with everyone. \"Do you cook at all?\" is answerable in three words, and three words is a way back in.\n\nMindset: holding the floor is not winning. The conversation people remember well is the one that got shared out.",
       inputs: [
         { q: "You have just given your opinion and the group goes quiet.", a: "\"That is just me, though. What do you two think?\"", bundle: 'free' },
@@ -8402,7 +8402,7 @@ const collections = {
     {
       name: "Exaggeration",
       guideFront: "Make it enormous when...",
-      guideBack: "One way it could sound",
+      guideBack: "The same thing, ten times bigger",
       description: "Take what they said and make it enormous. \"I'm hungry.\" — \"I haven't eaten since the dinosaurs went extinct.\"\n\nIt works because everyone can hear that the size is wrong, and the gap between the real thing and the enormous version is the joke. Nobody has to decode anything. It is the most forgiving of the five, which is why it is the one to start with.\n\nThe scale is the whole technique. A small exaggeration sounds like a complaint; a ridiculous one is obviously play. If you are worried it is too much, it is probably not enough.\n\nTypical phrases: \"I haven't eaten since the dinosaurs went extinct.\", \"This is the single greatest thing that has ever happened to anyone.\", \"I've been waiting here so long I have grandchildren.\"\n\nThree things worth exaggerating:\n\n1. Your own state — hunger, tiredness, panic. Safest, because the target is you.\n\n2. The situation you are both in — the queue, the weather, the meeting. Also safe, because you are both in it.\n\n3. Their claim, agreed with too enthusiastically — \"three tests? That's basically a war crime.\" Careful here: it is warm only if you are clearly on their side.\n\nMindset: go bigger than feels sensible. The size is the signal that you are playing.",
       inputs: [
         { q: "\"I'm so hungry.\"", a: "\"I haven't eaten since the dinosaurs went extinct.\"", bundle: 'free' },
@@ -8418,7 +8418,7 @@ const collections = {
     {
       name: "Understatement",
       guideFront: "Make it tiny when...",
-      guideBack: "One way it could sound",
+      guideBack: "The same thing, made small",
       description: "Take what they said and make it tiny. \"I ran a marathon.\" — \"That's a bit of a walk.\"\n\nIt works for the same reason exaggeration does, in reverse: the size is obviously wrong, and everyone can hear it. But it lands differently. Exaggeration is loud and warm; understatement is dry, and it flatters the other person, because treating their achievement as ordinary is a way of saying it is not.\n\nIt is the most useful of the five with people you do not know well, because it is quiet. Nobody has to perform anything and it is over in four words.\n\nTypical phrases: \"That's a bit of a walk.\", \"So, a mild inconvenience then.\", \"I imagine that was mildly annoying.\", \"Not the worst week you've had.\"\n\nThree places it works best:\n\n1. On something impressive — the classic, and the most flattering. \"You built the whole thing? Bit of a project.\"\n\n2. On something disastrous — sympathy in dry clothing. \"So the week has been going well, then.\"\n\n3. On something obvious — see also Deliberate Misunderstanding. \"It's raining.\" — \"I did notice a bit of moisture.\"\n\nMindset: say it flat. Understatement is entirely in the delivery — the words do almost none of the work.",
       inputs: [
         { q: "\"I ran a marathon on Sunday.\"", a: "\"That's a bit of a walk.\"", bundle: 'free' },
@@ -8434,7 +8434,7 @@ const collections = {
     {
       name: "Misdirection",
       guideFront: "Agree, then twist the ending when...",
-      guideBack: "One way it could sound",
+      guideBack: "A sentence that turns at the end",
       description: "Start out agreeing, then twist the ending. \"My computer is so fast.\" — \"Yes, I saw it running down the street yesterday.\"\n\nIt works because the first half sets up an expectation and the second half breaks it. The listener follows you into a normal sentence, and the last few words go somewhere else entirely. It is the closest of the five to a joke in the traditional sense.\n\nThe order is the whole thing. The twist has to be last, and everything before it has to sound completely ordinary. Signal it early and there is nothing to break.\n\nTypical phrases: \"Yes, and…\", \"Absolutely. Which is why…\", \"I know exactly what you mean. Last week I…\"\n\nThree ways to set up the turn:\n\n1. Agree, then take the word literally in another sense — the easiest. \"Fast? I saw it running down the street.\"\n\n2. Agree, then reveal a ridiculous reason. \"Of course you're tired. You've been awake since Tuesday, allegedly.\"\n\n3. Agree, then land somewhere unrelated. \"That's a great point, and it reminds me that I have no idea what we're talking about.\"\n\nMindset: ordinary, ordinary, then sideways. Keep a straight face until after the last word.",
       inputs: [
         { q: "\"My computer is super fast.\"", a: "\"I know. I saw it running down the street yesterday.\"", bundle: 'free' },
@@ -8450,7 +8450,7 @@ const collections = {
     {
       name: "Deliberate Misunderstanding",
       guideFront: "Pretend you took it literally when...",
-      guideBack: "One way it could sound",
+      guideBack: "The literal reading, played straight",
       description: "Pretend you took it the wrong way. \"It's raining outside.\" — \"Really? Inside my house it's completely dry.\"\n\nIt works because both of you know exactly what was meant, and the pretending is the joke. It is not confusion, it is a performance of confusion, and it only lands if it is obviously deliberate.\n\nThat is also the risk. Done with a straight face and no warmth it reads as pedantry, or as not listening. The delivery has to say *I am playing* while the words say something else.\n\nTypical phrases: \"Really? Not where I'm standing.\", \"Wait — you meant the other one?\", \"Oh, I thought you meant…\"\n\nThree kinds of misunderstanding:\n\n1. Take the literal sense — the standard. \"It's raining outside.\" — \"Inside it's fine.\"\n\n2. Take the other meaning of a word — the sharpest, when a word offers two. \"I'm reading a lot at the moment.\" — \"Out loud? To strangers?\"\n\n3. Take the whole statement as being about something else. \"This room is too dark.\" — \"The room is fine, it's your outlook.\"\n\nMindset: the point is not to seem confused. It is to be obviously, cheerfully wrong on purpose.",
       inputs: [
         { q: "\"It's raining outside.\"", a: "\"Really? Inside it's completely dry.\"", bundle: 'free' },
@@ -8466,7 +8466,7 @@ const collections = {
     {
       name: "Irony",
       guideFront: "Say the opposite when...",
-      guideBack: "One way it could sound",
+      guideBack: "The opposite, carried by tone",
       description: "Say the opposite of what you mean, and let your tone carry it. \"It's raining again.\" — \"Excellent. My favourite.\"\n\nIt works because the words and the delivery disagree, and the listener enjoys resolving the gap. It is the most economical of the five — often three words — and the most adult, which is why it is everywhere in ordinary conversation without anyone calling it humour.\n\nIt is also the one that needs the most care. Irony delivered flat to someone who does not know you can be taken at face value, and irony aimed at something they are proud of stops being funny immediately.\n\nTypical phrases: \"Oh, wonderful.\", \"Yes, that's exactly what I was hoping for.\", \"Can't wait.\", \"Perfect timing.\"\n\nFour things worth being ironic about:\n\n1. Your own failures — the safest by a wide margin. \"I've handled that beautifully.\"\n\n2. Your own successes, played down — self-irony rather than self-praise. \"Yes, I'm basically an expert now. Two attempts.\"\n\n3. A shared inconvenience — the weather, the queue, the timetable. \"Three tests. Lovely.\"\n\n4. Something obviously good, called bad — the lightest form, and the one that reads as warmth. \"A whole week off. How will I cope.\"\n\nAnd the rule from the same notes: aim for exaggeration or contrast, keep it short, and never at someone's expense. Irony about a person, delivered dry, is sarcasm — a different thing, and not what this pack teaches.\n\nMindset: the words say one thing, you say another. Keep it short enough that nobody has to work.",
       inputs: [
         { q: "\"We have three tests next week.\"", a: "\"Lovely. I was hoping for a quiet week.\"", bundle: 'free' },
@@ -12510,11 +12510,11 @@ const collectionsModeData = {
       description: "The shared experience and the shared thread. Both draw on common ground; the difference is when the ground was laid.\n\nA shared experience is something you have both just been through, and it works with a complete stranger — you need no history at all, only the same hour. A shared thread needs history: something you know about them from before, which you are picking back up.\n\nThe rule is simple. If you have never spoken to them, use the experience. If you have, use the thread — it is the stronger of the two, because remembering is worth more than agreeing.\n\nMindset: with someone you half know, always reach for the thread. It is the opener people most often waste.",
       inputs: [
         { q: "You come out of a long talk beside a total stranger.", a: "\"How did you find that?\" [Mention a Shared Experience]", bundle: 'pro' },
-        { q: "A colleague you speak to occasionally mentioned an interview last month.", a: "\"How did the interview go, in the end?\" [Pick Up a Shared Thread]", bundle: 'pro' },
+        { q: "A colleague you speak to occasionally mentioned an interview last month.", a: "\"How did the interview go, in the end?\" [The Shared Thread]", bundle: 'pro' },
         { q: "You and a stranger have both been stuck on the same delayed train.", a: "\"Well, that went beautifully.\" [Mention a Shared Experience]", bundle: 'pro' },
-        { q: "Someone at your club was midway through a project last time.", a: "\"How's the bike coming on?\" [Pick Up a Shared Thread]", bundle: 'pro' },
+        { q: "Someone at your club was midway through a project last time.", a: "\"How's the bike coming on?\" [The Shared Thread]", bundle: 'pro' },
         { q: "You have both just finished a hard session at the gym.", a: "\"That was rough. I'll be paying for that tomorrow.\" [Mention a Shared Experience]", bundle: 'pro' },
-        { q: "A neighbour told you weeks ago they were waiting on test results.", a: "\"Did you hear back about the results? You mentioned it before.\" [Pick Up a Shared Thread]", bundle: 'pro' },
+        { q: "A neighbour told you weeks ago they were waiting on test results.", a: "\"Did you hear back about the results? You mentioned it before.\" [The Shared Thread]", bundle: 'pro' },
         { q: "You sat through the same very long meeting as someone you have never met.", a: "\"The bit at the end where nobody asked anything — that was painful.\" [Mention a Shared Experience]", bundle: 'pro' },
       ]
     },
@@ -12525,10 +12525,10 @@ const collectionsModeData = {
       description: "The full set. All four need something more than being in the same room, and picking between them is really a question of what you actually have with this person.\n\nA rough guide: if you know something about them from before, use the thread. If you have just been through something together, use the experience. If you need something, ask. If you know something they would want to know, offer.\n\nIf none of the four applies — a complete stranger, nothing shared, nothing needed — that is what the first pack of openers is for. Not every moment has common ground in it.\n\nMindset: pick the one that is true. A manufactured opener is worse than a plain hello.",
       inputs: [
         { q: "You have both just walked out of the same exam.", a: "\"That was not what I revised for.\" [Mention a Shared Experience]", bundle: 'pro' },
-        { q: "A colleague you know slightly said last week they were moving house.", a: "\"How did the move go?\" [Pick Up a Shared Thread]", bundle: 'pro' },
+        { q: "A colleague you know slightly said last week they were moving house.", a: "\"How did the move go?\" [The Shared Thread]", bundle: 'pro' },
         { q: "You are new somewhere and cannot make the coffee machine work.", a: "\"Is there a trick to this thing? I've pressed everything.\" [Ask for Help]", bundle: 'pro' },
         { q: "A stranger is heading for a door you know is locked.", a: "\"That one's locked — you have to go round the side.\" [Offer Something Useful]", bundle: 'pro' },
-        { q: "Someone at your class had a driving test last week.", a: "\"Did you pass? You had it on Thursday, didn't you.\" [Pick Up a Shared Thread]", bundle: 'pro' },
+        { q: "Someone at your class had a driving test last week.", a: "\"Did you pass? You had it on Thursday, didn't you.\" [The Shared Thread]", bundle: 'pro' },
         { q: "You are both waiting for a train that has been cancelled.", a: "\"Second time this week for me. You?\" [Mention a Shared Experience]", bundle: 'pro' },
         { q: "You are carrying a box and cannot reach the door handle.", a: "\"Could you get that for me?\" [Ask for Help]", bundle: 'pro' },
       ]
@@ -12652,15 +12652,15 @@ const collectionsModeData = {
       name: "Alive or Fading",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "**Build on Their Point**, **Expand to a Related Subtopic** and **Ask an Open Question** — the three chosen by how much life is left in the thread.\n\n• **Build on Their Point** — it is still going, so go one layer down\n• **Ask an Open Question** — it has slowed but not stopped, so open it back up\n• **Expand to a Related Subtopic** — it is finished, so step sideways\n\n**Which one:** read the energy rather than the clock. Long answers and follow-up questions mean deepen; short answers mean open it up again; a pause after \"yeah, that's about it\" means step sideways.\n\n**Where it goes wrong:** widening too early throws away a topic that still had life in it, and widening too late means the sideways step has to restart a conversation from silence.\n\nMindset: a thread ending is not the topic ending. There is usually one more room in the same house.",
+      description: "**Build on Their Point**, **Expand to a Subtopic** and **Ask an Open Question** — the three chosen by how much life is left in the thread.\n\n• **Build on Their Point** — it is still going, so go one layer down\n• **Ask an Open Question** — it has slowed but not stopped, so open it back up\n• **Expand to a Subtopic** — it is finished, so step sideways\n\n**Which one:** read the energy rather than the clock. Long answers and follow-up questions mean deepen; short answers mean open it up again; a pause after \"yeah, that's about it\" means step sideways.\n\n**Where it goes wrong:** widening too early throws away a topic that still had life in it, and widening too late means the sideways step has to restart a conversation from silence.\n\nMindset: a thread ending is not the topic ending. There is usually one more room in the same house.",
       inputs: [
         { q: "Someone says: \"I grow most of our vegetables in summer.\"", a: "\"You said most — what's the one thing that never works?\" [Build on Their Point]", bundle: 'pro' },
-        { q: "The gardening talk has run out of steam.", a: "\"Does anyone keep plants indoors? Mine never survive.\" [Expand to a Related Subtopic]", bundle: 'pro' },
+        { q: "The gardening talk has run out of steam.", a: "\"Does anyone keep plants indoors? Mine never survive.\" [Expand to a Subtopic]", bundle: 'pro' },
         { q: "A friend says: \"The gig was great but the venue was awful.\"", a: "\"Was it the sound or the crowd that ruined it?\" [Build on Their Point]", bundle: 'pro' },
-        { q: "The group has said everything there is about the album.", a: "\"Are they any good live? I've never seen them.\" [Expand to a Related Subtopic]", bundle: 'pro' },
+        { q: "The group has said everything there is about the album.", a: "\"Are they any good live? I've never seen them.\" [Expand to a Subtopic]", bundle: 'pro' },
         { q: "The answers have gone short but nobody has changed the subject.", a: "\"What got you all into it in the first place?\" [Ask an Open Question]", bundle: 'pro' },
         { q: "Someone says: \"We walk a lot more since we got the dog.\"", a: "\"Do you have a route you always end up taking?\" [Build on Their Point]", bundle: 'pro' },
-        { q: "The conversation about playing football has covered everything.", a: "\"Do you watch as much as you play, or is that a different thing?\" [Expand to a Related Subtopic]", bundle: 'pro' },
+        { q: "The conversation about playing football has covered everything.", a: "\"Do you watch as much as you play, or is that a different thing?\" [Expand to a Subtopic]", bundle: 'pro' },
         { q: "The topic has slowed and you would rather not lose it.", a: "\"Before we drop this — what's the part nobody warns you about?\" [Ask an Open Question]", bundle: 'pro' },
       ]
     },
@@ -12668,12 +12668,12 @@ const collectionsModeData = {
       name: "Keeping Any Topic Alive",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "All five moves, with no cue given, which is what a real group conversation is like.\n\n• **Ask an Open Question** — you have nothing of your own\n• **Share a Related Experience** — you do\n• **Build on Their Point** — the thread still has life\n• **Expand to a Related Subtopic** — it is fading\n• **Share, Then Invite** — you have been holding the floor\n\n**Which one:** most moments would take several, and one usually fits best. Reading what the group needs — material, depth, a new angle, or a turn for somebody else — is the whole skill.\n\n**Where it goes wrong:** answering your own question. After you have talked for a minute the right move is not another point of yours, it is handing it over.\n\nMindset: a good group conversation is not about being the most interesting person in it. It is about keeping the ball in the air.",
+      description: "All five moves, with no cue given, which is what a real group conversation is like.\n\n• **Ask an Open Question** — you have nothing of your own\n• **Share a Related Experience** — you do\n• **Build on Their Point** — the thread still has life\n• **Expand to a Subtopic** — it is fading\n• **Share, Then Invite** — you have been holding the floor\n\n**Which one:** most moments would take several, and one usually fits best. Reading what the group needs — material, depth, a new angle, or a turn for somebody else — is the whole skill.\n\n**Where it goes wrong:** answering your own question. After you have talked for a minute the right move is not another point of yours, it is handing it over.\n\nMindset: a good group conversation is not about being the most interesting person in it. It is about keeping the ball in the air.",
       inputs: [
         { q: "The group is discussing something you know nothing about.", a: "\"What got you into it in the first place?\" [Ask an Open Question]", bundle: 'pro' },
         { q: "Someone says: \"The new office layout is strange.\"", a: "\"It is. Is it the noise, or that nobody knows where to sit?\" [Build on Their Point]", bundle: 'pro' },
         { q: "You have been talking about your own training routine for a while.", a: "\"Anyway, that is mine. What does yours look like?\" [Share, Then Invite]", bundle: 'pro' },
-        { q: "The topic of cooking dinner has run its course.", a: "\"What about eating out — anywhere good round here?\" [Expand to a Related Subtopic]", bundle: 'pro' },
+        { q: "The topic of cooking dinner has run its course.", a: "\"What about eating out — anywhere good round here?\" [Expand to a Subtopic]", bundle: 'pro' },
         { q: "The table is comparing terrible first jobs.", a: "\"Petrol station, night shift. I learned to sleep upright.\" [Share a Related Experience]", bundle: 'pro' },
         { q: "Someone mentions they have started running in the mornings.", a: "\"How long was it before it stopped being awful?\" [Ask an Open Question]", bundle: 'pro' },
         { q: "One person at the table has said nothing about the topic.", a: "\"I'm useless at this one. Anna, you cook — what would you make?\" [Share, Then Invite]", bundle: 'pro' },
