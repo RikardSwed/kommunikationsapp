@@ -3517,7 +3517,7 @@ const challengesCollections = {
         { q: "You can hear that your tone did the damage rather than the words.", a: "\"Let me say that again properly. Usually it works exactly as you said. I ran into one week where it didn't.\" [concede late]", bundle: 'pro' },
         { q: "You opened with the exception instead of the agreement.", a: "\"Let me reorder that. I think you're right — and I'm the odd one out on it.\" [Your Own Exception]", bundle: 'pro' },
         { q: "They have taken your example as a challenge to them personally.", a: "\"This isn't about you. I'm just the one case I happen to know from the inside.\" [Your Own Exception]", bundle: 'pro' },
-        { q: "You want the exception to sound like curiosity rather than correction.", a: "\"Where do you think it stops working? I keep hitting the same edge.\" [Where It Would Break]", bundle: 'pro' },
+        { q: "You want the exception to sound like curiosity rather than correction.", a: "\"Where do you think it stops working? I keep hitting the same edge.\" [Ask for Theirs]", bundle: 'pro' },
       ]
     },
     {
@@ -3527,8 +3527,8 @@ const challengesCollections = {
       description: "You used a single exception as if it settled the whole question, and they noticed. The repair is to say what one case actually shows — that the claim is a tendency and not a rule — which is a smaller thing and much easier to agree with.\n\nWhat it usually looks like:\n\n• \"That's one person\" and they are right.\n• You are defending your example rather than your point.\n• You said \"so it's not true\" when you meant \"so it's not always true\".\n\nTwo ways through:\n1. Name what one case proves — \"it makes it 'usually' rather than 'always'\".\n2. Offer the narrower claim and take the agreement — \"most people, I'd sign up to.\"\n\nMindset: an exception removes the word always. It does not remove the sentence.",
       inputs: [
         { q: "They said \"that's just one person\" and it is a fair hit.", a: "\"It is one. One's enough to make it 'usually' rather than 'always', though.\" [what one case shows]", bundle: 'pro' },
-        { q: "You realise you claimed too much from your example.", a: "\"I overstated it. 'Most people, most of the time' is what I actually think.\" [narrower claim]", bundle: 'pro' },
-        { q: "You are defending the example rather than the point.", a: "\"Forget my case. Would you say 'nearly always' rather than 'always'?\" [narrower claim]", bundle: 'pro' },
+        { q: "You realise you claimed too much from your example.", a: "\"I overstated it. 'Most people, most of the time' is what I actually think.\" [The Smaller Claim]", bundle: 'pro' },
+        { q: "You are defending the example rather than the point.", a: "\"Forget my case. Would you say 'nearly always' rather than 'always'?\" [The Smaller Claim]", bundle: 'pro' },
         { q: "You said \"so it's not true\" and meant \"so it's not always true\".", a: "\"Wrong word from me. Not always — that's all I meant.\" [what one case shows]", bundle: 'pro' },
         { q: "They ask how many exceptions you actually know of.", a: "\"One I've lived and one I've watched. Not enough for a rule, enough to lose the 'always'.\" [what one case shows]", bundle: 'pro' },
         { q: "You have one story and want to know if it is more than one.", a: "\"Is there a number on this anywhere? One case from me isn't much.\" [What the Numbers Say]", bundle: 'pro' },

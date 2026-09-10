@@ -4984,7 +4984,7 @@ const multiStepCollections = {
       name: "When They Defend the Rule",
       guideFront: "What's happening, and the strategy to use",
       guideBack: "One way it could sound",
-      description: "They have answered your exception by explaining it away — \"that's different\", \"that's one person\". The move is to agree that it is one case, and to say what it means, which is narrower than they think you meant. Steps: 1) Agree it is one case, 2) Say what one case shows, 3) Offer the smaller version of their claim.\n\nThe shape of the whole thing:\n1. \"You're right, it's one person.\"\n2. \"One is enough to make it 'usually' rather than 'always', though.\"\n3. \"Which is probably what we both actually think.\"\n\nWhy this order: an exception does not disprove a rule, and pretending it does is what loses the argument. Conceding that immediately, and then naming what it does show, gets you the narrower claim, which was all you wanted.\n\nMindset: you are not trying to knock the claim over. You are trying to get the word \"always\" out of it, and then you are finished.",
+      description: "They have answered your exception by explaining it away — \"that's different\", \"that's one person\". The move is to agree that it is one case, and to say what it means, which is narrower than they think you meant. Steps: 1) Agree it is one case, 2) Say what one case shows, 3) The Smaller Claim.\n\nThe shape of the whole thing:\n1. \"You're right, it's one person.\"\n2. \"One is enough to make it 'usually' rather than 'always', though.\"\n3. \"Which is probably what we both actually think.\"\n\nWhy this order: an exception does not disprove a rule, and pretending it does is what loses the argument. Conceding that immediately, and then naming what it does show, gets you the narrower claim, which was all you wanted.\n\nMindset: you are not trying to knock the claim over. You are trying to get the word \"always\" out of it, and then you are finished.",
       inputs: [
         {
           bundle: 'pro',
@@ -4992,7 +4992,7 @@ const multiStepCollections = {
           steps: [
             { front: "Step 1 · Agree — concede the size", back: "\"It is just one, you're right.\"", guideFront: "Grant the point they are defending when...", guideBack: "The concession, said plainly" },
             { front: "Step 2 · What it shows — narrow, not nothing", back: "\"It makes it a strong tendency rather than a rule.\"", guideFront: "Say what the exception narrows when...", guideBack: "What the claim becomes" },
-            { front: "Step 3 · Offer the smaller claim", back: "\"'Most people' I'd agree with completely.\"", guideFront: "Offer the version you would agree with when...", guideBack: "The narrower claim, offered" },
+            { front: "Step 3 · The Smaller Claim — the version you would both sign up to", back: "\"'Most people' I'd agree with completely.\"", guideFront: "Offer the version you both accept when...", guideBack: "A narrower claim, agreed" },
           ]
         },
         {
@@ -5001,7 +5001,7 @@ const multiStepCollections = {
           steps: [
             { front: "Step 1 · Agree — it is unusual", back: "\"It is unusual, I'll give you that.\"", guideFront: "Grant the point they are defending when...", guideBack: "The concession, said plainly" },
             { front: "Step 2 · What it shows — the rule has an edge", back: "\"It means there's a group it doesn't cover, and I think it's bigger than one.\"", guideFront: "Say what the exception narrows when...", guideBack: "What the claim becomes" },
-            { front: "Step 3 · Offer the smaller claim", back: "\"Would you go with 'for most people, most of the time'?\"", guideFront: "Offer the version you would agree with when...", guideBack: "The narrower claim, offered" },
+            { front: "Step 3 · The Smaller Claim — the version you would both sign up to", back: "\"Would you go with 'for most people, most of the time'?\"", guideFront: "Offer the version you both accept when...", guideBack: "A narrower claim, agreed" },
           ]
         },
       ]
@@ -5010,7 +5010,7 @@ const multiStepCollections = {
       name: "When You Do Not Have One",
       guideFront: "What's happening, and the strategy to use",
       guideBack: "One way it could sound",
-      description: "Something in the claim is too broad but you have no case to hand. Rather than inventing one, say what you doubt and turn it into a question — which often produces the counter-example from them. Steps: 1) Name the part you doubt, 2) Say you have no example, 3) Ask.\n\nThe shape of the whole thing:\n1. \"I'd believe that for most people.\"\n2. \"I've got no case to point at, though.\"\n3. \"Can you think of anyone it hasn't been true for?\"\n\nWhy this order: admitting you have nothing costs almost nothing and buys a great deal of credibility, and the question does the work an invented example would have done badly.\n\nMindset: \"I don't have an example\" is a perfectly good sentence. An invented one is the only move here that cannot be repaired.",
+      description: "Something in the claim is too broad but you have no case to hand. Rather than inventing one, say what you doubt and turn it into a question — which often produces the counter-example from them. Steps: 1) Name the part you doubt, 2) Say you have no example, 3) Ask for Theirs — hand the search to them.\n\nThe shape of the whole thing:\n1. \"I'd believe that for most people.\"\n2. \"I've got no case to point at, though.\"\n3. \"Can you think of anyone it hasn't been true for?\"\n\nWhy this order: admitting you have nothing costs almost nothing and buys a great deal of credibility, and the question does the work an invented example would have done badly.\n\nMindset: \"I don't have an example\" is a perfectly good sentence. An invented one is the only move here that cannot be repaired.",
       inputs: [
         {
           bundle: 'pro',
@@ -5018,7 +5018,7 @@ const multiStepCollections = {
           steps: [
             { front: "Step 1 · Name the doubt", back: "\"I'd believe that for most people, not for everyone.\"", guideFront: "Say plainly that you are not sure when...", guideBack: "An honest doubt, without a case" },
             { front: "Step 2 · Say you have nothing", back: "\"I can't point at a case, to be fair.\"", guideFront: "Admit you have no example when...", guideBack: "An admission, not a retreat" },
-            { front: "Step 3 · Ask", back: "\"Can you think of anyone it hasn't been true for?\"", guideFront: "Hand the question back to them when...", guideBack: "A question, not a verdict" },
+            { front: "Step 3 · Ask for Theirs — hand the search to them", back: "\"Can you think of anyone it hasn't been true for?\"", guideFront: "Ask them to find the exception when...", guideBack: "A question that hands them the search" },
           ]
         },
         {
@@ -5027,7 +5027,7 @@ const multiStepCollections = {
           steps: [
             { front: "Step 1 · Name the doubt", back: "\"That figure sounds higher than I'd have guessed.\"", guideFront: "Say plainly that you are not sure when...", guideBack: "An honest doubt, without a case" },
             { front: "Step 2 · Say you have nothing", back: "\"I've got no counter-number, to be clear.\"", guideFront: "Admit you have no example when...", guideBack: "An admission, not a retreat" },
-            { front: "Step 3 · Ask", back: "\"Where's it from? I'd like to look at the same thing you're looking at.\"", guideFront: "Hand the question back to them when...", guideBack: "A question, not a verdict" },
+            { front: "Step 3 · Ask for Theirs — hand the search to them", back: "\"Where's it from? And is there a group you'd say it doesn't cover?\"", guideFront: "Ask them to find the exception when...", guideBack: "A question that hands them the search" },
           ]
         },
       ]

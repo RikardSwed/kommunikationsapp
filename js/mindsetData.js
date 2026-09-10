@@ -3543,7 +3543,39 @@ const mindsetCollections = {
         { q: "If it never happened it proves nothing.", a: "It isn't proving. It's asking whether the rule survives the ordinary case.", bundle: 'pro' },
       ]
     },
-  ],
+      {
+      name: "Narrowing Isn't Backing Down",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "Offering a smaller version of their claim looks like a retreat and is the opposite. You are not withdrawing the exception \u2014 you are putting it inside a sentence they can say yes to. Example of the shift \u2014 instead of defending your case against \"that's just one person\", you offer \"does 'usually' work instead of 'always'?\".\n\nWhere the resistance shows up:\n1. A version they can accept feels like letting them keep the point.\n2. You want the claim admitted wrong, not adjusted.\n3. Defending your example feels braver than narrowing theirs.\n\nMindset: the narrowed sentence is the one you both believe.",
+      inputs: [
+        { q: "Offering a smaller version feels like giving in.", a: "\"I'm not dropping the exception. I'm putting it somewhere they can agree with it.\"", bundle: 'pro' },
+        { q: "You want them to admit the claim was wrong.", a: "\"It was too wide. 'Usually' fixes that, and they can say it without losing face.\"", bundle: 'pro' },
+        { q: "You are defending your example against 'that's just one person'.", a: "\"It is just one. Arguing that costs me the point I actually want.\"", bundle: 'pro' },
+        { q: "Narrowing feels like doing their work for them.", a: "\"It is their work. That's why they'll accept it.\"", bundle: 'pro' },
+        { q: "They accepted 'usually' and it felt anticlimactic.", a: "\"That was the sentence I was after. Quiet endings are the good ones.\"", bundle: 'pro' },
+        { q: "You would rather keep going than settle for 'most people'.", a: "\"'Most people' is what I think too. There's nothing left to want.\"", bundle: 'pro' },
+        { q: "The narrowed claim still sounds mostly like theirs.", a: "\"It should. They were mostly right \u2014 I only ever wanted the edges out.\"", bundle: 'pro' },
+        { q: "You are worried a smaller claim looks like a weaker point.", a: "\"A claim I can defend beats one I can't. Small and true is the strong version.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Asking Doesn't Mean You Have Nothing",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "Asking them to find the exception looks like an admission that you cannot, and it is usually the strongest move on the table: a person who tests their own claim from the inside is far harder to dismiss. Example of the shift \u2014 instead of staying quiet because you have no case, you ask \"can you think of anyone it hasn't been true for?\".\n\nWhere it goes wrong:\n1. You think a question hands them control.\n2. You say nothing rather than admit you have no example.\n3. You ask it as a trap, and they hear the trap.\n\nMindset: you are both looking at the same claim. Ask like you want the answer.",
+      inputs: [
+        { q: "You have no example and feel you have to stay quiet.", a: "\"Then ask. 'Can you think of anyone it hasn't been true for?' does the same job.\"", bundle: 'pro' },
+        { q: "Asking feels like admitting you cannot argue.", a: "\"It admits I haven't got a case. It doesn't admit they're right.\"", bundle: 'pro' },
+        { q: "You are asking it to catch them out.", a: "\"They'll hear that. Ask it like I want the answer \u2014 and I do.\"", bundle: 'pro' },
+        { q: "A question feels like handing them the floor.", a: "\"They already have the claim. The question makes them look at it.\"", bundle: 'pro' },
+        { q: "They know far more about it than you do.", a: "\"That's the reason to ask, not the reason not to. They'll find the edges faster.\"", bundle: 'pro' },
+        { q: "You want to know whether it is a view or a wall.", a: "\"'What would change your mind?' answers that in one sentence.\"", bundle: 'pro' },
+        { q: "Asking them to argue the other side feels like a game.", a: "\"It's the fastest way to hear what they actually think. Say why I'm asking.\"", bundle: 'pro' },
+        { q: "They answered with an exception and you were about to press on.", a: "\"They just did it themselves. That's better than anything I had.\"", bundle: 'pro' },
+      ]
+    },
+],
   discussing: [
     {
       name: "Not Trying to Win",

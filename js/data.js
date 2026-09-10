@@ -5473,6 +5473,38 @@ const collections = {
         { q: "\"Costs have doubled.\"", a: "\"I don't have the figure to hand, so I won't guess. I'll pull it before we decide.\"", bundle: 'pro' },
       ]
     },
+    {
+      name: "The Smaller Claim",
+      guideFront: "Offer the version you both accept when...",
+      guideBack: "A narrower claim, agreed",
+      description: "When your counter-example is met with \"that's just one person\" or \"that's a special case\", the useful move is not to defend the example harder. It is to offer a smaller version of their claim \u2014 one your exception fits inside.\n\nIt works because most sweeping claims are nearly true. \"Always\" is wrong and \"usually\" is right, and the person saying it would have said \"usually\" if they had been choosing carefully. Handing them the careful version is not a defeat for either of you; it is the sentence you both actually believe.\n\nIt also ends the argument, which defending the example does not. A counter-example invites another counter-counter-example. A narrowed claim has nothing to argue with.\n\nTypical phrases: \"Does 'usually' work instead of 'always'?\", \"'Most people, most of the time' I'd agree with completely.\", \"The middle of it I'll give you. It's the edges I'd take out.\"\n\nThree ways to narrow it:\n\n1. Swap the quantifier \u2014 always becomes usually, everyone becomes most people, never becomes rarely. The smallest possible edit, and often enough.\n\n2. Name the group it does not cover \u2014 \"it holds except for people on shifts.\" This keeps the rule and adds a door.\n\n3. Ask them for their own careful version \u2014 \"what's the version you'd defend if I pushed?\" People almost always narrow it themselves, and then it is theirs.\n\nMindset: you are not trying to win the claim. You are trying to find the sentence that is true.",
+      inputs: [
+        { q: "They say \"that's just one person\".", a: "\"It is just one. Does 'usually' work instead of 'always'?\"", bundle: 'free' },
+        { q: "They say your example is a special case.", a: "\"It is unusual. So it holds except for that group \u2014 can we say that?\"", bundle: 'free' },
+        { q: "You are about to defend your example harder.", a: "\"I'll drop my case. Would you go with 'most people'?\"", bundle: 'free' },
+        { q: "You want to end it without either of you losing.", a: "\"'Nearly always' I'd sign up to completely.\"", bundle: 'free' },
+        { q: "You only doubt the edges of the claim.", a: "\"The middle of it I agree with. It's the edges I'd take out.\"", bundle: 'free' },
+        { q: "You have made your point and they have gone quiet.", a: "\"It's a strong tendency, which is most of what you were saying anyway.\"", bundle: 'pro' },
+        { q: "They keep restating the original claim unchanged.", a: "\"Tell me the version you'd defend if I pushed. I'll probably agree with it.\"", bundle: 'pro' },
+        { q: "Your exception is real but genuinely small.", a: "\"It's a small exception. 'Almost always' covers both of us.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ask for Theirs",
+      guideFront: "Ask them to find the exception when...",
+      guideBack: "A question that hands them the search",
+      description: "When you doubt a sweeping claim but have no case of your own, ask the person making it to look for one.\n\nIt does three things at once, and the third is the reason to use it even when you do have an example. It gets you information you did not have. It makes them test their own claim from the inside, which is harder to dismiss than being tested from outside. And it turns a two-sided argument into a shared search \u2014 you are both looking at the same question instead of at each other.\n\nThe last version of it is the strongest and the least used: ask them to argue the other side. Someone who has just made a case for something can usually make the case against it too, and hearing them do it tells you more about what they actually think than another round of disagreement would.\n\nTypical phrases: \"Can you think of anyone it hasn't been true for?\", \"Is there a case where you'd say it doesn't hold?\", \"Argue the other side for me for a second.\"\n\nThree ways to hand over the search:\n\n1. Ask for the exception \u2014 \"does it have edges?\" The simplest version, and it costs them nothing to answer.\n\n2. Ask what would change their mind \u2014 this finds out whether the claim is a view or a wall.\n\n3. Ask them to argue against themselves \u2014 the one that produces something neither of you expected.\n\nMindset: not having a case is not a reason to go quiet. It is a reason to ask a better question.",
+      inputs: [
+        { q: "A sweeping claim you doubt, and nothing concrete comes to mind.", a: "\"Can you think of anyone it hasn't been true for?\"", bundle: 'free' },
+        { q: "A number is quoted and you have no counter-number.", a: "\"Where's it from? I'd like to look at the same thing you're looking at.\"", bundle: 'free' },
+        { q: "You want them to test their own rule.", a: "\"Is there a case where you'd say it doesn't hold?\"", bundle: 'free' },
+        { q: "They know the area far better than you do.", a: "\"You know this world better than me. What's the version that breaks it?\"", bundle: 'free' },
+        { q: "You want to know whether it is a view or a wall.", a: "\"What would have to be true for you to change your mind on it?\"", bundle: 'free' },
+        { q: "The claim has been stated as a rule with no edges.", a: "\"Does it have edges? I can't see them from here.\"", bundle: 'pro' },
+        { q: "You have no case at all and want to say so honestly.", a: "\"I've got no counter-example. I just don't quite believe the 'always'.\"", bundle: 'pro' },
+        { q: "You would rather understand them than beat them.", a: "\"Argue the other side for me for a second. What would that person say?\"", bundle: 'pro' },
+      ]
+    },
   ],
   discussing: [
     {
@@ -11572,7 +11604,23 @@ const collectionsModeData = {
         { q: "\"Everyone agrees about this.\"", a: "\"The survey had it at two-thirds. Majority, not everyone.\" [What the Numbers Say]", bundle: 'pro' },
       ]
     },
-  ],
+      {
+      name: "When the Example Is Not Enough",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
+      description: "The two moves for when the example is not the problem. One is for when your case is disputed — you stop defending it and offer a smaller version of their claim instead. The other is for when you have no case at all — you ask them to find the exception.\n\nBoth end the exchange rather than extend it, which is what the five example types cannot always do: a counter-example invites a counter-counter-example, and a narrowed claim or an honest question does not.\n\nMindset: the aim was never the example. It was the sentence you both believe.",
+      inputs: [
+        { q: "\"That's just one person, though.\"", a: "\"It is just one. Does 'usually' work instead of 'always'?\" [The Smaller Claim]", bundle: 'pro' },
+        { q: "\"Everyone gets used to it eventually.\"", a: "\"I've got no case to point at. Can you think of anyone who hasn't?\" [Ask for Theirs]", bundle: 'pro' },
+        { q: "\"Your example is a special case.\"", a: "\"It is unusual. So it holds except for that group — can we say that?\" [The Smaller Claim]", bundle: 'pro' },
+        { q: "\"The rule works for everybody.\"", a: "\"Does it have edges? I can't see them from here.\" [Ask for Theirs]", bundle: 'pro' },
+        { q: "\"Nobody is happy with the new one.\"", a: "\"'Most people' I'd sign up to completely.\" [The Smaller Claim]", bundle: 'pro' },
+        { q: "\"It has never once failed.\"", a: "\"What would have to happen for you to say it had?\" [Ask for Theirs]", bundle: 'pro' },
+        { q: "\"I still think the claim stands as it is.\"", a: "\"Tell me the version you'd defend if I pushed. I'll probably agree with it.\" [The Smaller Claim]", bundle: 'pro' },
+        { q: "\"You clearly know more about this than me.\"", a: "\"Other way round. Argue the other side for me — what would that person say?\" [Ask for Theirs]", bundle: 'pro' },
+      ]
+    },
+],
   discussing: [
     {
       name: "Me-Focus",

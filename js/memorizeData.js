@@ -4659,6 +4659,8 @@ const memorizeCollections = {
         { q: "What does one exception actually prove?", a: "That the claim is a tendency rather than a rule. It does not make the claim false.", bundle: 'free' },
         { q: "What turns a counter-example into an argument?", a: "Leaving out the concession, or carrying on after they have already narrowed their claim.", bundle: 'pro' },
         { q: "When should you not give one at all?", a: "When the general statement is really about someone in the room — then it is a comment about them, however it is phrased.", bundle: 'pro' },
+        { q: "Which two strategies are not types of example?", a: "The smaller claim and asking for theirs — one narrows the statement, the other hands the search back to them.", bundle: 'pro' },
+        { q: "What do you do when you have no example at all?", a: "Say so, and ask them to find one. Inventing an example is the only mistake here that cannot be repaired.", bundle: 'pro' },
       ]
     },
     {
@@ -4721,7 +4723,31 @@ const memorizeCollections = {
         { q: "What is the better sentence than a made-up statistic?", a: "\"I don't have a figure, but I know one person it wasn't true for.\"", bundle: 'pro' },
       ]
     },
-  ],
+      {
+      name: "The Smaller Claim",
+      description: "The theory behind narrowing what they said.",
+      cards: [
+        { q: "What is the smaller claim?", a: "A narrower version of their own statement \u2014 one your exception fits inside, so there is nothing left to argue about.", bundle: 'free' },
+        { q: "When do you reach for it?", a: "When your counter-example is met with \"that's just one person\" or \"that's a special case\".", bundle: 'free' },
+        { q: "Name two ways to narrow a claim.", a: "Any two of: swap the quantifier, name the group it does not cover, ask them for their own careful version.", bundle: 'free' },
+        { q: "Why is it better than defending your example?", a: "A counter-example invites another counter-example. A narrowed claim has nothing to argue with.", bundle: 'pro' },
+        { q: "What is the smallest possible version of the move?", a: "Changing one word \u2014 always to usually, everyone to most people, never to rarely.", bundle: 'pro' },
+        { q: "Why ask them for the careful version?", a: "People almost always narrow it themselves, and then the sentence is theirs rather than a concession to you.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Ask for Theirs",
+      description: "The theory behind handing the search over.",
+      cards: [
+        { q: "What is this strategy?", a: "Asking the person making the claim to find the exception themselves.", bundle: 'free' },
+        { q: "When is it the right choice?", a: "When you doubt a sweeping claim but have no case of your own to point at.", bundle: 'free' },
+        { q: "Name two ways to hand over the search.", a: "Any two of: ask for the exception, ask what would change their mind, ask them to argue the other side.", bundle: 'free' },
+        { q: "What three things does it do at once?", a: "It gets you information, it makes them test the claim from the inside, and it turns two sides into one shared question.", bundle: 'pro' },
+        { q: "Why is being tested from the inside different?", a: "An exception someone finds in their own claim is much harder for them to dismiss than one handed to them.", bundle: 'pro' },
+        { q: "What does \"what would change your mind?\" tell you?", a: "Whether you are talking to a view or to a wall.", bundle: 'pro' },
+      ]
+    },
+],
   discussing: [
     {
       name: "Core Idea",
