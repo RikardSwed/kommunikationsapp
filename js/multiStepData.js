@@ -2057,20 +2057,20 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "You have left a bag on a train. The person behind the desk asks you to describe it.",
           steps: [
-            { front: "They ask what you have lost.", back: "A rucksack — dark green canvas, with a yellow patch on the front pocket." },
-            { front: "They say, \"We have a few green ones. How big?\"", back: "About the size of a cabin case, but soft. It slumps when it's empty." },
-            { front: "They say, \"Anything unusual about it?\"", back: "One strap has been repaired with black thread. It's fairly obvious up close." },
-            { front: "They say, \"And what was in it?\"", back: "A laptop in a grey sleeve, a blue notebook, and a phone charger." },
+            { front: "Name and Main Details — They ask what you have lost.", back: "A rucksack — dark green canvas, with a yellow patch on the front pocket.", guideFront: "Say what it is, plus one feature when...", guideBack: "The name, and what marks it out" },
+            { front: "Size and Shape — They say, \"We have a few green ones. How big?\"", back: "About the size of a cabin case, but soft. It slumps when it's empty.", guideFront: "Give the dimensions and the form when...", guideBack: "How big, and what shape" },
+            { front: "Material, Texture and Colour — They say, \"Anything unusual about it?\"", back: "One strap has been repaired with black thread. It's fairly obvious up close.", guideFront: "Say what it is made of when...", guideBack: "The feel of the thing" },
+            { front: "What It Is For — They say, \"And what was in it?\"", back: "A laptop in a grey sleeve, a blue notebook, and a phone charger.", guideFront: "Name the use it has when...", guideBack: "The purpose, as a clue" },
           ]
         },
         {
           bundle: 'pro',
           situation: "You are in a garden centre and the plant you want has no label. You describe it to an assistant.",
           steps: [
-            { front: "They ask what you are after.", back: "Something for a windowsill that gets almost no direct sun." },
-            { front: "They say, \"Do you know what you had before?\"", back: "I don't know the name. Big waxy leaves, dark green, almost like plastic to touch." },
-            { front: "They say, \"How tall did it get?\"", back: "About knee height, and wide rather than tall. It spread sideways." },
-            { front: "They say, \"Sounds like a cast iron plant. Come and look.\"", back: "That's the one. That's exactly the leaf shape." },
+            { front: "What It Is For — They ask what you are after.", back: "Something for a windowsill that gets almost no direct sun.", guideFront: "Name the use it has when...", guideBack: "The purpose, as a clue" },
+            { front: "Material, Texture and Colour — They say, \"Do you know what you had before?\"", back: "I don't know the name. Big waxy leaves, dark green, almost like plastic to touch.", guideFront: "Say what it is made of when...", guideBack: "The feel of the thing" },
+            { front: "Size and Shape — They say, \"How tall did it get?\"", back: "About knee height, and wide rather than tall. It spread sideways.", guideFront: "Give the dimensions and the form when...", guideBack: "How big, and what shape" },
+            { front: "Name and Main Details — They say, \"Sounds like a cast iron plant. Come and look.\"", back: "That's the one. That's exactly the leaf shape.", guideFront: "Say what it is, plus one feature when...", guideBack: "The name, and what marks it out" },
           ]
         },
       ]
@@ -2085,18 +2085,18 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "You need a specific tool and have no idea what it is called in this language.",
           steps: [
-            { front: "The assistant asks what you are looking for.", back: "I don't know the word. It's for getting a nail back out of wood." },
-            { front: "They say, \"A hammer?\"", back: "Almost — but the other end. The split end, the bit you pull with." },
-            { front: "They say, \"Ah, claw hammer. What size?\"", back: "Something one hand can use. About as long as my forearm." },
+            { front: "What It Is For — The assistant asks what you are looking for.", back: "I don't know the word. It's for getting a nail back out of wood.", guideFront: "Name the use it has when...", guideBack: "The purpose, as a clue" },
+            { front: "Size and Shape — They say, \"A hammer?\"", back: "Almost — but the other end. The split end, the bit you pull with.", guideFront: "Give the dimensions and the form when...", guideBack: "How big, and what shape" },
+            { front: "Size and Shape — They say, \"Ah, claw hammer. What size?\"", back: "Something one hand can use. About as long as my forearm.", guideFront: "Give the dimensions and the form when...", guideBack: "How big, and what shape" },
           ]
         },
         {
           bundle: 'pro',
           situation: "You are ordering and cannot remember what the dish is called.",
           steps: [
-            { front: "The waiter asks what you would like.", back: "Sorry — I don't know the name. It's the thing with rice wrapped in a vine leaf." },
-            { front: "They say, \"Hot or cold?\"", back: "Cold. They come in little rolls, about the size of my thumb." },
-            { front: "They say, \"With lemon?\"", back: "Yes, that's it. Six of those, please." },
+            { front: "Name and Main Details — The waiter asks what you would like.", back: "Sorry — I don't know the name. It's the thing with rice wrapped in a vine leaf.", guideFront: "Say what it is, plus one feature when...", guideBack: "The name, and what marks it out" },
+            { front: "Size and Shape — They say, \"Hot or cold?\"", back: "Cold. They come in little rolls, about the size of my thumb.", guideFront: "Give the dimensions and the form when...", guideBack: "How big, and what shape" },
+            { front: "What It Is For — They say, \"With lemon?\"", back: "Yes, that's it. Six of those, please.", guideFront: "Name the use it has when...", guideBack: "The purpose, as a clue" },
           ]
         },
       ]
@@ -2111,18 +2111,18 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "A friend is at your flat feeding the cat and cannot find the food.",
           steps: [
-            { front: "They say they cannot find the cat food.", back: "Tall cupboard to the left of the fridge, second shelf up." },
-            { front: "They say, \"There's nothing that looks like cat food.\"", back: "It's not in a bag — it's in a big glass jar with a metal clip lid." },
-            { front: "They say, \"Found a jar. It's got dry brown stuff in it.\"", back: "That's it. Scoop's inside, one scoop is enough." },
+            { front: "Where You Find It — They say they cannot find the cat food.", back: "Tall cupboard to the left of the fridge, second shelf up.", guideFront: "Place it in its surroundings when...", guideBack: "Its usual spot, and its age" },
+            { front: "Material, Texture and Colour — They say, \"There's nothing that looks like cat food.\"", back: "It's not in a bag — it's in a big glass jar with a metal clip lid.", guideFront: "Say what it is made of when...", guideBack: "The feel of the thing" },
+            { front: "What It Is For — They say, \"Found a jar. It's got dry brown stuff in it.\"", back: "That's it. Scoop's inside, one scoop is enough.", guideFront: "Name the use it has when...", guideBack: "The purpose, as a clue" },
           ]
         },
         {
           bundle: 'pro',
           situation: "A plumber on the phone needs to know where your water shut-off is.",
           steps: [
-            { front: "They ask where the stopcock is.", back: "Under the kitchen sink, right at the back." },
-            { front: "They say, \"I'm looking under there and I can't see it.\"", back: "It's behind the bin — you have to pull that out first. It's low, near the floor." },
-            { front: "They say, \"Got something brass down here.\"", back: "That's it. Small brass tap, turns clockwise to shut." },
+            { front: "Where You Find It — They ask where the stopcock is.", back: "Under the kitchen sink, right at the back.", guideFront: "Place it in its surroundings when...", guideBack: "Its usual spot, and its age" },
+            { front: "Where You Find It — They say, \"I'm looking under there and I can't see it.\"", back: "It's behind the bin — you have to pull that out first. It's low, near the floor.", guideFront: "Place it in its surroundings when...", guideBack: "Its usual spot, and its age" },
+            { front: "Material, Texture and Colour — They say, \"Got something brass down here.\"", back: "That's it. Small brass tap, turns clockwise to shut.", guideFront: "Say what it is made of when...", guideBack: "The feel of the thing" },
           ]
         },
       ]
@@ -2139,20 +2139,20 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "A colleague leans over and says, \"Everyone keeps talking about this tracking thing. What even is it?\"",
           steps: [
-            { front: "They ask what it is.", back: "It's a timer, basically. You start it when you begin a job and stop it when you're done." },
-            { front: "They say, \"Right — so I just leave it running all day?\"", back: "No, one job at a time. Start it, do the thing, stop it, pick the next one." },
-            { front: "They say, \"Sounds like extra admin, honestly.\"", back: "It saves the Friday hour, though. Nobody has to reconstruct the week from memory any more." },
-            { front: "They say, \"Fair. And if I forget to start it?\"", back: "You can add it afterwards. It's not policing anything — it's just so the week is written down somewhere." },
+            { front: "What It Is — They ask what it is.", back: "It's a timer, basically. You start it when you begin a job and stop it when you're done.", guideFront: "Give it a category and a shape when...", guideBack: "The name, and what you would see" },
+            { front: "How It Works — They say, \"Right — so I just leave it running all day?\"", back: "No, one job at a time. Start it, do the thing, stop it, pick the next one.", guideFront: "Take them through it in order when...", guideBack: "The steps, in order" },
+            { front: "Why It Matters — They say, \"Sounds like extra admin, honestly.\"", back: "It saves the Friday hour, though. Nobody has to reconstruct the week from memory any more.", guideFront: "Name the problem it solves when...", guideBack: "The problem, or what would be worse" },
+            { front: "How It Works — They say, \"Fair. And if I forget to start it?\"", back: "You can add it afterwards. It's not policing anything — it's just so the week is written down somewhere.", guideFront: "Take them through it in order when...", guideBack: "The steps, in order" },
           ]
         },
         {
           bundle: 'pro',
           situation: "Your parent has been told to \"put the photos in the cloud\" and has no idea what that means.",
           steps: [
-            { front: "They ask what the cloud actually is.", back: "It's just someone else's computer, kept somewhere safe. Your photos get a copy on it." },
-            { front: "They say, \"So they're not on my phone any more?\"", back: "They still are. It's a copy, not a move — the phone keeps its own." },
-            { front: "They say, \"And how would I put them there?\"", back: "It's already doing it when you're on wifi. There's nothing to press." },
-            { front: "They say, \"Then why do I need it at all?\"", back: "So if the phone breaks or goes missing, the photos don't go with it. That's really the whole point." },
+            { front: "What It Is — They ask what the cloud actually is.", back: "It's just someone else's computer, kept somewhere safe. Your photos get a copy on it.", guideFront: "Give it a category and a shape when...", guideBack: "The name, and what you would see" },
+            { front: "How It Works — They say, \"So they're not on my phone any more?\"", back: "They still are. It's a copy, not a move — the phone keeps its own.", guideFront: "Take them through it in order when...", guideBack: "The steps, in order" },
+            { front: "How It Works — They say, \"And how would I put them there?\"", back: "It's already doing it when you're on wifi. There's nothing to press.", guideFront: "Take them through it in order when...", guideBack: "The steps, in order" },
+            { front: "Why It Matters — They say, \"Then why do I need it at all?\"", back: "So if the phone breaks or goes missing, the photos don't go with it. That's really the whole point.", guideFront: "Name the problem it solves when...", guideBack: "The problem, or what would be worse" },
           ]
         },
       ]
@@ -2167,18 +2167,18 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "A friend says, \"I know what a slow cooker is and I know why people like them. I just don't know what to actually do with it.\"",
           steps: [
-            { front: "They ask what to do with it.", back: "Everything goes in cold, in the morning, and you don't touch it again." },
-            { front: "They say, \"Don't I need to brown the meat first?\"", back: "You can, and it tastes better. But it works fine if you don't." },
-            { front: "They say, \"How long, though?\"", back: "Eight hours on low is the safe answer for almost anything." },
+            { front: "How It Works — They ask what to do with it.", back: "Everything goes in cold, in the morning, and you don't touch it again.", guideFront: "Take them through it in order when...", guideBack: "The steps, in order" },
+            { front: "How It Works — They say, \"Don't I need to brown the meat first?\"", back: "You can, and it tastes better. But it works fine if you don't.", guideFront: "Take them through it in order when...", guideBack: "The steps, in order" },
+            { front: "How It Works — They say, \"How long, though?\"", back: "Eight hours on low is the safe answer for almost anything.", guideFront: "Take them through it in order when...", guideBack: "The steps, in order" },
           ]
         },
         {
           bundle: 'pro',
           situation: "A colleague says, \"I've been filling in the handover form every Friday. I don't actually know why we do it.\"",
           steps: [
-            { front: "They ask what the point is.", back: "It's for whoever picks up your work when you're off. It's the only thing they'd have." },
-            { front: "They say, \"But people barely read them.\"", back: "They read them the week someone's ill. That's the week it matters." },
-            { front: "They say, \"So how much detail does it need?\"", back: "Enough that a stranger could carry on. Usually four or five lines." },
+            { front: "Why It Matters — They ask what the point is.", back: "It's for whoever picks up your work when you're off. It's the only thing they'd have.", guideFront: "Name the problem it solves when...", guideBack: "The problem, or what would be worse" },
+            { front: "Why It Matters — They say, \"But people barely read them.\"", back: "They read them the week someone's ill. That's the week it matters.", guideFront: "Name the problem it solves when...", guideBack: "The problem, or what would be worse" },
+            { front: "How It Works — They say, \"So how much detail does it need?\"", back: "Enough that a stranger could carry on. Usually four or five lines.", guideFront: "Take them through it in order when...", guideBack: "The steps, in order" },
           ]
         },
       ]
@@ -2193,19 +2193,19 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "A friend asks you to explain how the heat pump you had installed actually works. You know roughly, not exactly.",
           steps: [
-            { front: "They ask how it works.", back: "It pulls warmth out of the outside air and moves it inside. There's a gas in it that does the moving." },
-            { front: "They say, \"How can there be warmth outside when it's freezing?\"", back: "There still is, apparently, even below zero. I couldn't tell you the physics of it properly." },
-            { front: "They say, \"So does it use much electricity?\"", back: "Less than the old boiler used gas, on our bills. That much I've actually seen." },
-            { front: "They say, \"Would you recommend it?\"", back: "For our house, yes. I'd want to know your insulation first, and that I genuinely don't know about." },
+            { front: "How It Works — They ask how it works.", back: "It pulls warmth out of the outside air and moves it inside. There's a gas in it that does the moving.", guideFront: "Take them through it in order when...", guideBack: "The steps, in order" },
+            { front: "How It Works — They say, \"How can there be warmth outside when it's freezing?\"", back: "There still is, apparently, even below zero. I couldn't tell you the physics of it properly.", guideFront: "Take them through it in order when...", guideBack: "The steps, in order" },
+            { front: "Why It Matters — They say, \"So does it use much electricity?\"", back: "Less than the old boiler used gas, on our bills. That much I've actually seen.", guideFront: "Name the problem it solves when...", guideBack: "The problem, or what would be worse" },
+            { front: "Why It Matters — They say, \"Would you recommend it?\"", back: "For our house, yes. I'd want to know your insulation first, and that I genuinely don't know about.", guideFront: "Name the problem it solves when...", guideBack: "The problem, or what would be worse" },
           ]
         },
         {
           bundle: 'pro',
           situation: "A colleague asks how the invoicing system works. You use one screen of it and nothing else.",
           steps: [
-            { front: "They ask how invoicing works.", back: "I can tell you the bit I do — I raise the invoice and send it. Everything after that is finance." },
-            { front: "They say, \"And how do you raise one?\"", back: "New invoice, pick the client, add the lines, save. It goes into a queue from there." },
-            { front: "They say, \"How long until it's actually paid?\"", back: "No idea, honestly. Ask Priya — she's the one who'd know." },
+            { front: "What It Is — They ask how invoicing works.", back: "I can tell you the bit I do — I raise the invoice and send it. Everything after that is finance.", guideFront: "Give it a category and a shape when...", guideBack: "The name, and what you would see" },
+            { front: "How It Works — They say, \"And how do you raise one?\"", back: "New invoice, pick the client, add the lines, save. It goes into a queue from there.", guideFront: "Take them through it in order when...", guideBack: "The steps, in order" },
+            { front: "How It Works — They say, \"How long until it's actually paid?\"", back: "No idea, honestly. Ask Priya — she's the one who'd know.", guideFront: "Take them through it in order when...", guideBack: "The steps, in order" },
           ]
         },
       ]
@@ -2895,20 +2895,20 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "A colleague says the change should go live on Friday so it settles over the weekend.",
           steps: [
-            { front: "They say Friday is the obvious day.", back: "I'd say the opposite, actually — Friday's the one day I'd avoid." },
-            { front: "They say, \"Why? Nothing's happening at the weekend.\"", back: "That's the problem. If it breaks, nobody's here until Monday." },
-            { front: "They say, \"It's a small change, it won't break.\"", back: "Probably not. But Tuesday costs us nothing and takes the risk away entirely." },
-            { front: "They say, \"Has that actually happened?\"", back: "The payroll one last year. Went out on a Friday and we lost the weekend to it." },
+            { front: "Signal the Disagreement — They say Friday is the obvious day.", back: "I'd say the opposite, actually — Friday's the one day I'd avoid.", guideFront: "Mark that a different view is coming when...", guideBack: "A phrase that flags what follows" },
+            { front: "Give Your Reason — They say, \"Why? Nothing's happening at the weekend.\"", back: "That's the problem. If it breaks, nobody's here until Monday.", guideFront: "Say why you see it differently when...", guideBack: "The thinking behind your view" },
+            { front: "A Wider Picture — They say, \"It's a small change, it won't break.\"", back: "Probably not. But Tuesday costs us nothing and takes the risk away entirely.", guideFront: "Widen it rather than judge it when...", guideBack: "Another angle, not a verdict" },
+            { front: "Add an Example — They say, \"Has that actually happened?\"", back: "The payroll one last year. Went out on a Friday and we lost the weekend to it.", guideFront: "Point at one real instance when...", guideBack: "One case, briefly told" },
           ]
         },
         {
           bundle: 'pro',
           situation: "A friend says giving up on things is a bad habit and you should always see them through.",
           steps: [
-            { front: "They say you should always finish what you start.", back: "I used to think that. I'd disagree with the \"always\" now." },
-            { front: "They say, \"So you just quit when it gets hard?\"", back: "Not when it's hard. When it's clearly the wrong thing, which is different." },
-            { front: "They say, \"That sounds like a convenient line.\"", back: "Maybe. Another way to see it — finishing everything means never choosing anything." },
-            { front: "They say, \"Give me an actual example.\"", back: "The course I did two years ago. I finished it out of stubbornness and used none of it." },
+            { front: "Signal the Disagreement — They say you should always finish what you start.", back: "I used to think that. I'd disagree with the \"always\" now.", guideFront: "Mark that a different view is coming when...", guideBack: "A phrase that flags what follows" },
+            { front: "Give Your Reason — They say, \"So you just quit when it gets hard?\"", back: "Not when it's hard. When it's clearly the wrong thing, which is different.", guideFront: "Say why you see it differently when...", guideBack: "The thinking behind your view" },
+            { front: "A Wider Picture — They say, \"That sounds like a convenient line.\"", back: "Maybe. Another way to see it — finishing everything means never choosing anything.", guideFront: "Widen it rather than judge it when...", guideBack: "Another angle, not a verdict" },
+            { front: "Add an Example — They say, \"Give me an actual example.\"", back: "The course I did two years ago. I finished it out of stubbornness and used none of it.", guideFront: "Point at one real instance when...", guideBack: "One case, briefly told" },
           ]
         },
       ]
@@ -2923,18 +2923,18 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "You have questioned a plan and your colleague has taken it as criticism of them.",
           steps: [
-            { front: "They say, \"So you think I haven't thought about this.\"", back: "Not at all — I think you have. I just land somewhere different on the timing." },
-            { front: "They say, \"It feels like you're against everything I suggest.\"", back: "That's fair to raise. This one I'd back with a different start date, not scrap." },
-            { front: "They say, \"Fine. What date, then?\"", back: "Tuesday. Same plan, two days later, and someone's around if it wobbles." },
+            { front: "Signal the Disagreement — They say, \"So you think I haven't thought about this.\"", back: "Not at all — I think you have. I just land somewhere different on the timing.", guideFront: "Mark that a different view is coming when...", guideBack: "A phrase that flags what follows" },
+            { front: "A Wider Picture — They say, \"It feels like you're against everything I suggest.\"", back: "That's fair to raise. This one I'd back with a different start date, not scrap.", guideFront: "Widen it rather than judge it when...", guideBack: "Another angle, not a verdict" },
+            { front: "Give Your Reason — They say, \"Fine. What date, then?\"", back: "Tuesday. Same plan, two days later, and someone's around if it wobbles.", guideFront: "Say why you see it differently when...", guideBack: "The thinking behind your view" },
           ]
         },
         {
           bundle: 'pro',
           situation: "A disagreement about something minor has got louder than it deserves.",
           steps: [
-            { front: "They say, \"Why are you making this into a thing?\"", back: "I'm not trying to. I do see it differently, but it's not worth either of us getting cross." },
-            { front: "They say, \"It's just objectively better my way.\"", back: "Might be. I'd still do it the other way, and I don't think either of us is wrong exactly." },
-            { front: "They say, \"So we just leave it?\"", back: "Happily. It's not the kind of thing anyone has to win." },
+            { front: "Signal the Disagreement — They say, \"Why are you making this into a thing?\"", back: "I'm not trying to. I do see it differently, but it's not worth either of us getting cross.", guideFront: "Mark that a different view is coming when...", guideBack: "A phrase that flags what follows" },
+            { front: "A Wider Picture — They say, \"It's just objectively better my way.\"", back: "Might be. I'd still do it the other way, and I don't think either of us is wrong exactly.", guideFront: "Widen it rather than judge it when...", guideBack: "Another angle, not a verdict" },
+            { front: "A Wider Picture — They say, \"So we just leave it?\"", back: "Happily. It's not the kind of thing anyone has to win.", guideFront: "Widen it rather than judge it when...", guideBack: "Another angle, not a verdict" },
           ]
         },
       ]
@@ -2949,18 +2949,18 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "You disagreed with a colleague's plan, and their answer has actually convinced you.",
           steps: [
-            { front: "They explain the constraint you had not known about.", back: "Ah — I didn't know the deadline was fixed. That changes it." },
-            { front: "They say, \"So you're okay with Friday now?\"", back: "Yes. If it can't move, Friday's the least bad option." },
-            { front: "They say, \"You were pretty against it.\"", back: "I was, on the information I had. The fixed date is the bit I was missing." },
+            { front: "A Wider Picture — They explain the constraint you had not known about.", back: "Ah — I didn't know the deadline was fixed. That changes it.", guideFront: "Widen it rather than judge it when...", guideBack: "Another angle, not a verdict" },
+            { front: "Give Your Reason — They say, \"So you're okay with Friday now?\"", back: "Yes. If it can't move, Friday's the least bad option.", guideFront: "Say why you see it differently when...", guideBack: "The thinking behind your view" },
+            { front: "Give Your Reason — They say, \"You were pretty against it.\"", back: "I was, on the information I had. The fixed date is the bit I was missing.", guideFront: "Say why you see it differently when...", guideBack: "The thinking behind your view" },
           ]
         },
         {
           bundle: 'pro',
           situation: "A friend has answered your objection well, but one part of your concern still stands.",
           steps: [
-            { front: "They answer your main objection convincingly.", back: "Okay, you've changed my mind on the cost. I was wrong about that." },
-            { front: "They say, \"So you're on board?\"", back: "Mostly. The timing bit I'd still argue about." },
-            { front: "They say, \"What's left on timing?\"", back: "Only that it lands the same week as everything else. Small thing, but real." },
+            { front: "A Wider Picture — They answer your main objection convincingly.", back: "Okay, you've changed my mind on the cost. I was wrong about that.", guideFront: "Widen it rather than judge it when...", guideBack: "Another angle, not a verdict" },
+            { front: "Give Your Reason — They say, \"So you're on board?\"", back: "Mostly. The timing bit I'd still argue about.", guideFront: "Say why you see it differently when...", guideBack: "The thinking behind your view" },
+            { front: "Add an Example — They say, \"What's left on timing?\"", back: "Only that it lands the same week as everything else. Small thing, but real.", guideFront: "Point at one real instance when...", guideBack: "One case, briefly told" },
           ]
         },
       ]
