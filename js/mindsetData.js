@@ -3382,7 +3382,7 @@ const mindsetCollections = {
   ],
   setupquestion: [
     {
-      name: "The Asking-First Mindset",
+      name: "You Don't Have to Be Interesting",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
       description: "The pack-wide stance: asking first is the cheapest way into a conversation, because it puts no pressure on you to be interesting. You only need to be curious, and curiosity is available even on a bad day. Example of the shift — instead of hunting for something worth saying, you ask about the thing you wanted to talk about anyway.\n\nThe three thoughts that cause the trouble:\n1. \"I need something worth saying\" — you need a question, and you already have one.\n2. \"Asking is intrusive\" — an ordinary question about the room is not an interrogation.\n3. \"They'll think I'm prying\" — people are far more often glad to be asked than they are offended.\n\nMindset: you do not have to be interesting to open a conversation. You have to be interested, and then say your own bit afterwards.",
@@ -3398,7 +3398,7 @@ const mindsetCollections = {
       ]
     },
     {
-      name: "The Answer-It-Too Mindset",
+      name: "Questions Alone Make an Interview",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
       description: "The stance that separates this from an interview: the question was never only for them. You asked because you wanted to talk about it, so your own answer is part of the move rather than an optional extra. Example of the shift — instead of moving to the next question, you say your own answer to the one you just asked.\n\nWhere it goes wrong:\n1. You ask a second question before you have answered the first.\n2. You answer with \"yeah, same\" and hand it straight back.\n3. You are so relieved the attention is on them that you keep it there.\n\nMindset: a question you never answer yourself is an interview. Give your version, at roughly the size of theirs.",
@@ -3414,7 +3414,7 @@ const mindsetCollections = {
       ]
     },
     {
-      name: "The Ordinary Question Mindset",
+      name: "The Boring Question Works",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
       description: "The stance about which questions are good enough: the ordinary ones work. \"What brings you here\" has opened more conversations than any clever alternative, and its ordinariness is exactly why it is easy to answer. Example of the shift — instead of discarding the obvious question as too boring, you ask it and listen properly.\n\nWhere the hesitation shows up:\n1. You reject the obvious question because everyone asks it.\n2. You look for an original angle and the moment passes.\n3. You judge your question by how it sounds rather than by how easy it is to answer.\n\nMindset: judge a question by how easy it is to answer, not by how it sounds. The interesting part is their answer, and what you do with it.",

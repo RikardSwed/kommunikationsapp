@@ -122,7 +122,14 @@ function scenarioMoveList(inp) {
     const parts = String(s.front || '').split(/\s+[—–]\s+/);
     const first = parts[0].trim();
     const second = parts.length > 1 ? parts[1].trim() : '';
-    const name = /^(step|steg)\s*\d+\.?$/i.test(first) ? second : first;
+    const name = (/^(step|steg)\s*\d+\.?$/i.test(first) ? second : first)
+      // v1.28.43 — "Step 1 · Concede" is scaffolding plus a name, and the list
+      // already numbers its own rows, so the prefix rendered as "1. Step 1 ·
+      // Concede". splitMoveName has always stripped it for the bracket; the two
+      // must agree, or the list and the back name the same step differently.
+      // 878 steps across 47 packs are written in that form.
+      .replace(/^(step|steg)\s*\d+\s*[·.:–—-]\s*/i, '')
+      .trim();
     // A whole sentence is a description, not a move. 60 characters is well
     // clear of the longest real strategy name in the library.
     return (name && name.length <= 60) ? name : '';

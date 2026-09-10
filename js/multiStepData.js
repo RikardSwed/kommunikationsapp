@@ -4965,7 +4965,7 @@ const multiStepCollections = {
           situation: "A friend says exercise always makes you happier.",
           steps: [
             { front: "Step 1 · Concede — agree with the general case", back: "\"It usually does, honestly.\"", guideFront: "Agree with the general case when...", guideBack: "The concession, said plainly" },
-            { front: "Step 2 · Except — one case, yours", back: "\"I trained hard all last week and felt flat the whole time.\"", guideFront: "Give the one case that does not fit when...", guideBack: "The exception, on its own" },
+            { front: "Step 2 · Your Own Exception — the general case is agreed, and yours does not fit it.", back: "\"I trained hard all last week and felt flat the whole time.\"", guideFront: "Use the time it failed you when...", guideBack: "One case you lived" },
             { front: "Step 3 · Stop — leave it with them", back: "\"Anyway. Might just have been the week.\"", guideFront: "Leave it with them when...", guideBack: "A closing line, and no more" },
           ]
         },
@@ -4974,7 +4974,7 @@ const multiStepCollections = {
           situation: "A colleague says nobody uses the old system any more.",
           steps: [
             { front: "Step 1 · Concede — the direction is right", back: "\"It's definitely on the way out.\"", guideFront: "Agree with the general case when...", guideBack: "The concession, said plainly" },
-            { front: "Step 2 · Except — a real number", back: "\"I counted Monday, though. Eleven people opened it that week.\"", guideFront: "Give the one case that does not fit when...", guideBack: "The exception, on its own" },
+            { front: "Step 2 · What the Numbers Say — you have a figure you actually counted.", back: "\"I counted Monday, though. Eleven people opened it that week.\"", guideFront: "Answer with a figure you know when...", guideBack: "A number, honestly held" },
             { front: "Step 3 · Stop — hand the decision back", back: "\"So it's eleven people we'd need to move.\"", guideFront: "Leave it with them when...", guideBack: "A closing line, and no more" },
           ]
         },
@@ -5016,8 +5016,8 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "A sweeping claim you doubt, and nothing concrete comes to mind.",
           steps: [
-            { front: "Step 1 · Name the doubt", back: "\"I'd believe that for most people, not for everyone.\"", guideFront: "Say plainly that you are not sure when...", guideBack: "An honest doubt, without a case" },
-            { front: "Step 2 · Say you have nothing", back: "\"I can't point at a case, to be fair.\"", guideFront: "Admit you have no example when...", guideBack: "An admission, not a retreat" },
+            { front: "Step 1 · Name the doubt — the claim is wider than you believe.", back: "\"I'd believe that for most people, not for everyone.\"", guideFront: "Say plainly that you are not sure when...", guideBack: "An honest doubt, without a case" },
+            { front: "Step 2 · Say you have nothing — they wait for the case you have not got.", back: "\"I can't point at a case, to be fair.\"", guideFront: "Admit you have no example when...", guideBack: "An admission, not a retreat" },
             { front: "Step 3 · Ask for Theirs — hand the search to them", back: "\"Can you think of anyone it hasn't been true for?\"", guideFront: "Ask them to find the exception when...", guideBack: "A question that hands them the search" },
           ]
         },
@@ -5025,8 +5025,8 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "A number is quoted at you and you doubt it but have nothing to put against it.",
           steps: [
-            { front: "Step 1 · Name the doubt", back: "\"That figure sounds higher than I'd have guessed.\"", guideFront: "Say plainly that you are not sure when...", guideBack: "An honest doubt, without a case" },
-            { front: "Step 2 · Say you have nothing", back: "\"I've got no counter-number, to be clear.\"", guideFront: "Admit you have no example when...", guideBack: "An admission, not a retreat" },
+            { front: "Step 1 · Name the doubt — the figure is higher than you would have guessed.", back: "\"That figure sounds higher than I'd have guessed.\"", guideFront: "Say plainly that you are not sure when...", guideBack: "An honest doubt, without a case" },
+            { front: "Step 2 · Say you have nothing — they wait for a number of your own.", back: "\"I've got no counter-number, to be clear.\"", guideFront: "Admit you have no example when...", guideBack: "An admission, not a retreat" },
             { front: "Step 3 · Ask for Theirs — hand the search to them", back: "\"Where's it from? And is there a group you'd say it doesn't cover?\"", guideFront: "Ask them to find the exception when...", guideBack: "A question that hands them the search" },
           ]
         },
@@ -5044,18 +5044,18 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "A colleague wants to keep a deadline you think should move.",
           steps: [
-            { front: "Step 1 · Say it back", back: "\"So you'd keep the date where it is.\"", guideFront: "Say their view back when...", guideBack: "Their view, in your words" },
-            { front: "Step 2 · Grant the true part", back: "\"And you're right that moving it means telling the client twice.\"", guideFront: "Grant the part that is true when...", guideBack: "The concession, before the difference" },
-            { front: "Step 3 · Differ, with a reason", back: "\"I'd still move it — the last two slipped anyway, and we told them late.\"", guideFront: "Differ, and say why when...", guideBack: "Your view, with the reason attached" },
+            { front: "Step 1 · Play It Back — they have just made the case for keeping the date.", back: "\"So you'd keep the date where it is.\"", guideFront: "Put their position in your words when...", guideBack: "Their view, in your words" },
+            { front: "Step 2 · Grant the true part — one piece of their case is plainly right.", back: "\"And you're right that moving it means telling the client twice.\"", guideFront: "Grant the part that is true when...", guideBack: "The concession, before the difference" },
+            { front: "Step 3 · Your Own View — they are waiting to hear where you stand.", back: "\"I'd still move it — the last two slipped anyway, and we told them late.\"", guideFront: "Claim it as your own when...", guideBack: "An opinion, plainly owned" },
           ]
         },
         {
           bundle: 'pro',
           situation: "A friend argues that phones should be banned in schools.",
           steps: [
-            { front: "Step 1 · Say it back", back: "\"You'd take them off them entirely during the day.\"", guideFront: "Say their view back when...", guideBack: "Their view, in your words" },
-            { front: "Step 2 · Grant the true part", back: "\"And it's true the lessons I've seen go best are the ones where they're away.\"", guideFront: "Grant the part that is true when...", guideBack: "The concession, before the difference" },
-            { front: "Step 3 · Differ, with a reason", back: "\"I'd keep them in the bag rather than confiscate, because the fight over it costs more than the phones do.\"", guideFront: "Differ, and say why when...", guideBack: "Your view, with the reason attached" },
+            { front: "Step 1 · Play It Back — they have finished making the case for a ban.", back: "\"You'd take them off them entirely during the day.\"", guideFront: "Put their position in your words when...", guideBack: "Their view, in your words" },
+            { front: "Step 2 · Grant the true part — part of it matches what you have seen yourself.", back: "\"And it's true the lessons I've seen go best are the ones where they're away.\"", guideFront: "Grant the part that is true when...", guideBack: "The concession, before the difference" },
+            { front: "Step 3 · Your Own View — they ask what you would do instead.", back: "\"I'd keep them in the bag rather than confiscate, because the fight over it costs more than the phones do.\"", guideFront: "Claim it as your own when...", guideBack: "An opinion, plainly owned" },
           ]
         },
       ]
@@ -5070,18 +5070,18 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "Someone says the whole system is broken.",
           steps: [
-            { front: "Step 1 · Notice the vague part", back: "\"Hang on — broken could mean a few different things there.\"", guideFront: "Name the vague word when...", guideBack: "The ambiguity, said out loud" },
-            { front: "Step 2 · Ask which version", back: "\"Which bit — the booking, or what happens after?\"", guideFront: "Ask which one they mean when...", guideBack: "A question with the options in it" },
-            { front: "Step 3 · Answer that version", back: "\"The booking I'd defend. What happens after is genuinely a mess, agreed.\"", guideFront: "Answer the version they meant when...", guideBack: "An answer to the real claim" },
+            { front: "Step 1 · Notice the vague part — \"the whole system is broken.\"", back: "\"Hang on — broken could mean a few different things there.\"", guideFront: "Name the vague word when...", guideBack: "The ambiguity, said out loud" },
+            { front: "Step 2 · Ask What They Mean — the word could cover several different things.", back: "\"Which bit — the booking, or what happens after?\"", guideFront: "Ask before you answer it when...", guideBack: "A question about one word" },
+            { front: "Step 3 · Your Own View — they name the part they actually meant.", back: "\"The booking I'd defend. What happens after is genuinely a mess, agreed.\"", guideFront: "Claim it as your own when...", guideBack: "An opinion, plainly owned" },
           ]
         },
         {
           bundle: 'pro',
           situation: "A friend says nobody should work from home.",
           steps: [
-            { front: "Step 1 · Notice the vague part", back: "\"Nobody is doing a lot of work in that sentence.\"", guideFront: "Name the vague word when...", guideBack: "The ambiguity, said out loud" },
-            { front: "Step 2 · Ask which version", back: "\"As a rule everywhere, or in your place specifically?\"", guideFront: "Ask which one they mean when...", guideBack: "A question with the options in it" },
-            { front: "Step 3 · Answer that version", back: "\"In your place I'd probably agree. As a rule I'd push back hard.\"", guideFront: "Answer the version they meant when...", guideBack: "An answer to the real claim" },
+            { front: "Step 1 · Notice the vague part — \"nobody should work from home.\"", back: "\"Nobody is doing a lot of work in that sentence.\"", guideFront: "Name the vague word when...", guideBack: "The ambiguity, said out loud" },
+            { front: "Step 2 · Ask What They Mean — the claim could be a rule or a local complaint.", back: "\"As a rule everywhere, or in your place specifically?\"", guideFront: "Ask before you answer it when...", guideBack: "A question about one word" },
+            { front: "Step 3 · Your Own View — they say they mean their own workplace.", back: "\"In your place I'd probably agree. As a rule I'd push back hard.\"", guideFront: "Claim it as your own when...", guideBack: "An opinion, plainly owned" },
           ]
         },
       ]
@@ -5096,18 +5096,18 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "A discussion with a colleague has become fast and clipped.",
           steps: [
-            { front: "Step 1 · Name it jointly", back: "\"We're both getting a bit sharp about this.\"", guideFront: "Name the heat, as both of you when...", guideBack: "A shared observation, not an accusation" },
-            { front: "Step 2 · Split off the hot part", back: "\"Can we leave the budget aside for ten minutes?\"", guideFront: "Set the hot part aside when...", guideBack: "A proposal to park one piece" },
-            { front: "Step 3 · Agree the rest", back: "\"Because I think we agree on the timing and the scope, and that's most of it.\"", guideFront: "Name what you agree on when...", guideBack: "The common ground, stated" },
+            { front: "Step 1 · Keep the Temperature Down — the exchange has got fast and clipped.", back: "\"We're both getting a bit sharp about this.\"", guideFront: "Cool it before anyone overshoots when...", guideBack: "A line that lowers the heat" },
+            { front: "Step 2 · Split off the hot part — the budget is the piece doing the damage.", back: "\"Can we leave the budget aside for ten minutes?\"", guideFront: "Set the hot part aside when...", guideBack: "A proposal to park one piece" },
+            { front: "Step 3 · Agree the rest — the heat is out and the question is still there.", back: "\"Because I think we agree on the timing and the scope, and that's most of it.\"", guideFront: "Name what you agree on when...", guideBack: "The common ground, stated" },
           ]
         },
         {
           bundle: 'pro',
           situation: "A discussion with a friend has drifted towards something personal.",
           steps: [
-            { front: "Step 1 · Name it jointly", back: "\"This has stopped being about the thing, hasn't it.\"", guideFront: "Name the heat, as both of you when...", guideBack: "A shared observation, not an accusation" },
-            { front: "Step 2 · Split off the hot part", back: "\"I'd rather not do the other bit today.\"", guideFront: "Set the hot part aside when...", guideBack: "A proposal to park one piece" },
-            { front: "Step 3 · Agree the rest", back: "\"On the actual question I think we're closer than it sounded.\"", guideFront: "Name what you agree on when...", guideBack: "The common ground, stated" },
+            { front: "Step 1 · Keep the Temperature Down — it has drifted onto something personal.", back: "\"This has stopped being about the thing, hasn't it.\"", guideFront: "Cool it before anyone overshoots when...", guideBack: "A line that lowers the heat" },
+            { front: "Step 2 · Split off the hot part — the personal thread is the piece to park.", back: "\"I'd rather not do the other bit today.\"", guideFront: "Set the hot part aside when...", guideBack: "A proposal to park one piece" },
+            { front: "Step 3 · Agree the rest — you are closer than the argument sounded.", back: "\"On the actual question I think we're closer than it sounded.\"", guideFront: "Name what you agree on when...", guideBack: "The common ground, stated" },
           ]
         },
       ]
