@@ -1256,7 +1256,7 @@ const memorizeCollections = {
       description: "The concept behind interrupting well and the full set of moves.",
       cards: [
         { q: "What is the goal when you interrupt?", a: "To interject respectfully and effectively, without offending the speaker or dominating the conversation.", bundle: 'free' },
-        { q: "What are the five moves in this pack?", a: "Wait for a Natural Pause, Signal the Interruption, Acknowledge the Speaker First, Say Why It Matters, Use Humour.", bundle: 'free' },
+        { q: "What are the five moves in this pack?", a: "The Natural Pause, Signal the Interruption, Their Point First, Why It Cannot Wait, Use Humour.", bundle: 'free' },
         { q: "Is interrupting rude?", a: "Cutting across someone is. A signalled, reasoned interruption is ordinary turn-taking.", bundle: 'free' },
         { q: "What is the cheapest interruption there is?", a: "Waiting two seconds for a natural pause — from the outside it barely reads as an interruption at all.", bundle: 'free' },
         { q: "What makes an interruption land badly?", a: "No signal and no reason. The content is rarely the problem.", bundle: 'pro' },
@@ -1265,10 +1265,10 @@ const memorizeCollections = {
       ]
     },
     {
-      name: "Wait for a Natural Pause",
+      name: "The Natural Pause",
       description: "The theory behind the patient version.",
       cards: [
-        { q: "What is Wait for a Natural Pause?", a: "Holding your point until the speaker reaches a break of their own, and going in there.", bundle: 'free' },
+        { q: "What is The Natural Pause?", a: "Holding your point until the speaker reaches a break of their own, and going in there.", bundle: 'free' },
         { q: "What does it sound like?", a: "\"If I could just jump in for a moment…\" said at their full stop.", bundle: 'free' },
         { q: "What are the three kinds of pause?", a: "The breath, the full stop, and the hand-off — when they turn to someone else or say \"anyway\".", bundle: 'free' },
         { q: "How long do you usually have to wait?", a: "Less than it feels. Most people leave a gap every ten to fifteen seconds.", bundle: 'pro' },
@@ -1287,10 +1287,10 @@ const memorizeCollections = {
       ]
     },
     {
-      name: "Acknowledge the Speaker First",
+      name: "Their Point First",
       description: "The theory behind leading with their point.",
       cards: [
-        { q: "What is Acknowledge the Speaker First?", a: "One clause about their point before yours, so the interruption reads as building rather than replacing.", bundle: 'free' },
+        { q: "What is Their Point First?", a: "One clause about their point before yours, so the interruption reads as building rather than replacing.", bundle: 'free' },
         { q: "What does it sound like?", a: "\"I see your point, and I'd like to add…\"", bundle: 'free' },
         { q: "What three things can you acknowledge?", a: "Their point, their effort, or the part you agree with.", bundle: 'free' },
         { q: "What makes it work?", a: "Being specific. \"Good point, but…\" without naming the point is transparently a run-up.", bundle: 'pro' },
@@ -1298,10 +1298,10 @@ const memorizeCollections = {
       ]
     },
     {
-      name: "Say Why It Matters",
+      name: "Why It Cannot Wait",
       description: "The theory behind giving a reason.",
       cards: [
-        { q: "What is Say Why It Matters?", a: "Attaching a reason to the interruption — why it couldn't wait until they'd finished.", bundle: 'free' },
+        { q: "What is Why It Cannot Wait?", a: "Attaching a reason to the interruption — why it couldn't wait until they'd finished.", bundle: 'free' },
         { q: "What does it sound like?", a: "\"I hate to interrupt, but this is important for what we're discussing.\"", bundle: 'free' },
         { q: "What three reasons earn an interruption?", a: "It's time-sensitive, they're working from something wrong, or you can't follow without it.", bundle: 'free' },
         { q: "Which reason is most under-used?", a: "\"I've lost the thread.\" It feels exposing and it's usually the whole room's question.", bundle: 'pro' },
@@ -1527,11 +1527,11 @@ const memorizeCollections = {
   describethings: [
     {
       name: "Core Idea",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
+      guideFront: "",
+      guideBack: "",
       description: "The shape of the pack: five description moves covering everything worth saying about an object, and the discipline of choosing between them.",
       cards: [
-        { q: "What are the five moves in this pack?", a: "Name and Main Details, Size and Shape, Material Texture and Colour, Where You Find It, What It Is For.", bundle: 'free' },
+        { q: "What are the five moves in this pack?", a: "The Anchor, Size and Shape, Material Texture and Colour, Where You Find It, What It Is For.", bundle: 'free' },
         { q: "What is the goal of describing, as opposed to explaining?", a: "That the listener can picture it — not that they understand why it matters.", bundle: 'free' },
         { q: "How many moves does a good description usually use?", a: "Two or three, chosen — not all five.", bundle: 'free' },
         { q: "What decides which details to give?", a: "What the listener is going to do with the description.", bundle: 'pro' },
@@ -1540,9 +1540,9 @@ const memorizeCollections = {
       ]
     },
     {
-      name: "Name and Main Details",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
+      name: "The Anchor",
+      guideFront: "",
+      guideBack: "",
       description: "The anchor move that gives the listener a frame.",
       cards: [
         { q: "What should the first detail do?", a: "Eliminate the most alternatives.", bundle: 'free' },
@@ -1555,8 +1555,8 @@ const memorizeCollections = {
     },
     {
       name: "Size and Shape",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
+      guideFront: "",
+      guideBack: "",
       description: "The move that lets someone imagine holding it or standing next to it.",
       cards: [
         { q: "Why are exact measurements often useless in conversation?", a: "Most people cannot picture a number of centimetres.", bundle: 'free' },
@@ -1569,8 +1569,8 @@ const memorizeCollections = {
     },
     {
       name: "Material, Texture and Colour",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
+      guideFront: "",
+      guideBack: "",
       description: "The sensory move that makes a description feel real.",
       cards: [
         { q: "What is wrong with saying just \"blue\"?", a: "It covers an enormous range. Add a qualifier — dark navy, almost black.", bundle: 'free' },
@@ -1583,8 +1583,8 @@ const memorizeCollections = {
     },
     {
       name: "Where You Find It",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
+      guideFront: "",
+      guideBack: "",
       description: "The move that places the object in a world.",
       cards: [
         { q: "What three kinds of detail does this move cover?", a: "Location, surroundings and age.", bundle: 'free' },
@@ -1597,8 +1597,8 @@ const memorizeCollections = {
     },
     {
       name: "What It Is For",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
+      guideFront: "",
+      guideBack: "",
       description: "The purpose move — an identifying detail, not an argument.",
       cards: [
         { q: "Why is purpose an efficient description?", a: "It narrows the field faster than appearance does.", bundle: 'free' },
@@ -1613,8 +1613,8 @@ const memorizeCollections = {
   explainthings: [
     {
       name: "Core Idea",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
+      guideFront: "",
+      guideBack: "",
       description: "The shape of the whole pack: three question words, and the discipline of noticing which one is actually missing.",
       cards: [
         { q: "What are the three moves in this pack?", a: "What It Is, How It Works, Why It Matters.", bundle: 'free' },
@@ -1626,9 +1626,9 @@ const memorizeCollections = {
       ]
     },
     {
-      name: "Say What It Is",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
+      name: "What It Is",
+      guideFront: "",
+      guideBack: "",
       description: "The move that gives the listener something concrete to hold.",
       cards: [
         { q: "What does \"What It Is\" answer?", a: "If this were in front of you, what would you be looking at?", bundle: 'free' },
@@ -1640,9 +1640,9 @@ const memorizeCollections = {
       ]
     },
     {
-      name: "Explain How It Works",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
+      name: "How It Works",
+      guideFront: "",
+      guideBack: "",
       description: "The move that turns understanding into doing.",
       cards: [
         { q: "What is the test for a good How explanation?", a: "Someone could follow it and end up doing the right thing.", bundle: 'free' },
@@ -1654,9 +1654,9 @@ const memorizeCollections = {
       ]
     },
     {
-      name: "Say Why It Matters",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
+      name: "Why It Matters",
+      guideFront: "",
+      guideBack: "",
       description: "The move that turns a clear explanation into one someone cares about.",
       cards: [
         { q: "What does \"Why It Matters\" name?", a: "The problem the thing solves, or what would be worse without it.", bundle: 'free' },
@@ -1944,8 +1944,8 @@ const memorizeCollections = {
   praiseandencouragement: [
     {
       name: "Core Idea",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
+      guideFront: "",
+      guideBack: "",
       description: "The shape of the pack: a five-step guide for praise, and the rules that make it land.",
       cards: [
         { q: "What are the five steps in this pack?", a: "Identify the positive behaviour, highlight the impact, express appreciation, encourage future efforts, offer support.", bundle: 'free' },
@@ -1957,9 +1957,9 @@ const memorizeCollections = {
       ]
     },
     {
-      name: "Identify the Positive Behaviour",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
+      name: "Name the Positive Action",
+      guideFront: "",
+      guideBack: "",
       description: "Step one — praise as information rather than mood.",
       cards: [
         { q: "Why is specific praise better than general praise?", a: "It tells them what to do again. General praise is only a mood.", bundle: 'free' },
@@ -1972,8 +1972,8 @@ const memorizeCollections = {
     },
     {
       name: "Highlight the Impact",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
+      guideFront: "",
+      guideBack: "",
       description: "Step two — the effect, which turns a compliment into evidence.",
       cards: [
         { q: "What does this step describe?", a: "What the action did — to the outcome, to other people, or to you.", bundle: 'free' },
@@ -1986,8 +1986,8 @@ const memorizeCollections = {
     },
     {
       name: "Express Appreciation",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
+      guideFront: "",
+      guideBack: "",
       description: "Step three — the warmth step, and the one most often skipped.",
       cards: [
         { q: "What does this step add that the first two do not?", a: "Warmth — the first two are about the work, this one is about the relationship.", bundle: 'free' },
@@ -1999,9 +1999,9 @@ const memorizeCollections = {
       ]
     },
     {
-      name: "Encourage Future Efforts",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
+      name: "Point Forward",
+      guideFront: "",
+      guideBack: "",
       description: "Step four — pointing forward.",
       cards: [
         { q: "When do most people stop?", a: "Just after a small success, when the pressure is off and the next attempt has no deadline.", bundle: 'free' },
@@ -2014,8 +2014,8 @@ const memorizeCollections = {
     },
     {
       name: "Offer Support",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
+      guideFront: "",
+      guideBack: "",
       description: "Step five — turning goodwill into something they can rely on.",
       cards: [
         { q: "What does the support step do that encouragement alone does not?", a: "It removes a real obstacle instead of putting the whole task back on them.", bundle: 'free' },

@@ -1392,9 +1392,9 @@ const collections = {
   ],
   howtointerrupt: [
     {
-      name: "Wait for a Natural Pause",
-      guideFront: "Use this strategy when...",
-      guideBack: "One way it could sound",
+      name: "The Natural Pause",
+      guideFront: "Hold it until they break when...",
+      guideBack: "A point held until the gap",
       description: "Hold your point until the speaker reaches a break of their own, and go in there rather than across them.\n\nThis is the cheapest interruption there is, because from the outside it barely reads as one. The same sentence that feels rude mid-clause feels like ordinary turn-taking two seconds later.\n\nTypical shapes:\n\n• \"If I could just jump in for a moment…\"\n• \"Can I say something there?\"\n• \"Sorry — quick thing on that.\"\n\nThree kinds of pause worth waiting for:\n1. The breath — they finish a sentence and inhale. Two or three words is all you get.\n2. The full stop — they finish a whole thought and their pitch drops.\n3. The hand-off — they turn to someone else, or say \"anyway\" or \"so\".\n\nThe pause is almost always closer than it feels. Most people leave one every ten to fifteen seconds, and the wait feels much longer from the inside than it looks from the outside.\n\nMindset: patience is a strategy, not a failure to act. Ten seconds of waiting buys you an interruption nobody has to forgive.",
       inputs: [
         { q: "Someone is explaining the plan and you have spotted a problem with the dates.", a: "(at their next full stop) \"Can I jump in on the dates?\"", bundle: 'free' },
@@ -1409,8 +1409,8 @@ const collections = {
     },
     {
       name: "Signal the Interruption",
-      guideFront: "Use this strategy when...",
-      guideBack: "One way it could sound",
+      guideFront: "Give a short cue first when...",
+      guideBack: "A word before the point",
       description: "Give a short verbal cue before you say anything of substance, so the speaker gets a moment to close their sentence instead of being cut off mid-word.\n\nThis is the whole difference between interrupting and talking over someone. The signal costs you two words and it hands them control of exactly when they stop, which is what makes it land as polite rather than pushy.\n\nTypical shapes:\n\n• \"Excuse me, may I add something?\"\n• \"Sorry — can I jump in?\"\n• \"Hang on, quick thing.\"\n\nThree strengths of signal:\n1. The ask — \"May I add something?\" You are requesting the floor.\n2. The announcement — \"Can I jump in here.\" You are taking it, warmly.\n3. The bare cue — \"Sorry —\" and a small gesture. Fastest, and enough between people who know each other.\n\nMatch the strength to the room. In a formal meeting the ask is right; among friends the bare cue is plenty and the full ask sounds oddly stiff.\n\nMindset: you are not asking permission to exist. You are giving them a second's warning, which is the courtesy that makes the rest of it fine.",
       inputs: [
         { q: "You need to get into a group discussion and there is no pause coming.", a: "\"Excuse me — may I add something here?\"", bundle: 'free' },
@@ -1424,9 +1424,9 @@ const collections = {
       ]
     },
     {
-      name: "Acknowledge the Speaker First",
-      guideFront: "Use this strategy when...",
-      guideBack: "One way it could sound",
+      name: "Their Point First",
+      guideFront: "Repeat their point, then yours when...",
+      guideBack: "One line about theirs, then yours",
       description: "Before you say your own thing, show that you actually heard theirs — one clause about their point, then yours.\n\nAn interruption that starts with their idea reads as building; one that starts with yours reads as replacing. It is the same information either way, and the order changes how the whole room hears it.\n\nTypical shapes:\n\n• \"I see your point, and I'd like to add…\"\n• \"That's a good point — and there's something else.\"\n• \"Right, and the bit that follows from that is…\"\n\nThree things you can acknowledge:\n1. Their point — \"That's exactly the problem, and there's another one.\"\n2. Their effort — \"You've clearly thought about this. One thing though.\"\n3. The part you agree with — \"The second half I completely agree with.\"\n\nIt has to be specific to be worth anything. \"Good point, but…\" said without naming the point is transparently a run-up, and everyone can hear it.\n\nMindset: this is what proves you were listening rather than waiting. An interrupter who was clearly just waiting for a gap gets forgiven once; one who was listening gets welcomed.",
       inputs: [
         { q: "Someone has made a point you agree with and you want to extend it.", a: "\"I see your point — and I'd like to add something to it.\"", bundle: 'free' },
@@ -1440,9 +1440,9 @@ const collections = {
       ]
     },
     {
-      name: "Say Why It Matters",
-      guideFront: "Use this strategy when...",
-      guideBack: "One way it could sound",
+      name: "Why It Cannot Wait",
+      guideFront: "Attach a reason to it when...",
+      guideBack: "The reason for cutting in",
       description: "Attach a reason to the interruption — why this cannot wait until they have finished.\n\nAn interruption with no stated reason is just you wanting to talk. With a reason it becomes a service, and the speaker usually stops willingly rather than being stopped.\n\nTypical shapes:\n\n• \"I hate to interrupt, but this is important for what we're discussing.\"\n• \"Sorry — I only stop you because we're about to run out of time.\"\n• \"Can I check one thing, or I'll be lost for the rest of it?\"\n\nThree reasons that genuinely earn an interruption:\n1. It is time-sensitive — \"We've got four minutes and this decides it.\"\n2. They are working from something wrong — \"The date moved, so that plan won't hold.\"\n3. You cannot follow without it — \"Sorry, who is Anna? I've lost the thread.\"\n\nThe third one is the most under-used. Admitting you are lost feels exposing, and it is almost always the interruption the rest of the room was also waiting for.\n\nMindset: give the reason and the interruption stops being rude. You are not taking the floor, you are explaining why it needed taking.",
       inputs: [
         { q: "A meeting is running out of time and the decision has not been made.", a: "\"Sorry to cut in — we've got four minutes and this is the bit that decides it.\"", bundle: 'free' },
@@ -1457,8 +1457,8 @@ const collections = {
     },
     {
       name: "Use Humour",
-      guideFront: "Use this strategy when...",
-      guideBack: "One way it could sound",
+      guideFront: "Make the interruption the joke when...",
+      guideBack: "A cut-in that lands as a joke",
       description: "Make the interruption itself the joke, so the interruption arrives as lightness instead of as a correction.\n\nThis is the optional one, and when it works it is the cheapest of the five — nobody has to be gracious about it, because it did not feel like an interruption at all.\n\nTypical shapes:\n\n• \"I just have to jump in here before my brain explodes!\"\n• \"Sorry, I've been holding this in for a full minute.\"\n• \"I'm going to be rude for four seconds.\"\n\nThree ways to make it light:\n1. Mock urgency — \"I have to say this before I forget it, which is imminent.\"\n2. Mock apology — \"I'm going to be terribly rude now. Ready?\"\n3. Playing on your own eagerness — \"You can see me twitching, can't you?\"\n\nRead the room first. Humour needs a warm room; the same line into a tense meeting is worse than a plain interruption, because now you have interrupted and misjudged.\n\nMindset: the joke has to be at your own expense, not theirs. A joke about how long they have been talking is a criticism wearing a hat, and everyone can see the hat.",
       inputs: [
         { q: "A friend is mid-story and you are bursting with something related.", a: "\"I have to jump in before my brain explodes.\"", bundle: 'free' },
@@ -1688,9 +1688,9 @@ const collections = {
   ],
   describethings: [
     {
-      name: "Name and Main Details",
-      guideFront: "They cannot see it. Give them enough to picture it.",
-      guideBack: "One way to say it — concrete, specific, no guessing games.",
+      name: "The Anchor",
+      guideFront: "Say what it is, plus one feature when...",
+      guideBack: "The name, and what marks it out",
       description: "Start by saying what the thing is and giving the one or two features that separate it from everything similar. This is the anchor the rest of the description hangs on. Without it the listener is assembling a picture with no frame around it.\n\nIt works because a name plus one distinguishing detail is usually enough for someone to narrow the field from thousands of possibilities to a handful. Everything after that is refinement.\n\nTypical phrases: \"It's a…\", \"It's the kind with…\", \"The main thing is…\", \"The one that…\"\n\nFour ways to name and pin something down:\n\n1. Name plus category — say the word and the family it belongs to. \"It's a rucksack, one of the tall narrow ones.\"\n\n2. The distinguishing feature — the detail that rules out everything else. \"It's a black umbrella, but the handle is wooden. That's the bit people notice.\"\n\n3. The nearest familiar thing — when you do not know the word. \"It's like a peeler, but with two blades instead of one.\"\n\n4. What is missing — sometimes the absence is the identifier. \"It's a jacket with no hood. That's the only one like it on the rack.\"\n\nMindset: pick the detail that eliminates the most alternatives, not the one you find most interesting.",
       inputs: [
         { q: "You are at lost property describing the bag you left on the train.", a: "\"It's a dark green canvas rucksack, and there's a big yellow patch sewn on the front pocket.\"", bundle: 'free' },
@@ -1705,8 +1705,8 @@ const collections = {
     },
     {
       name: "Size and Shape",
-      guideFront: "They cannot see it. Give them enough to picture it.",
-      guideBack: "One way to say it — concrete, specific, no guessing games.",
+      guideFront: "Give the dimensions and the form when...",
+      guideBack: "How big, and what shape",
       description: "Give the listener the dimensions and the form. Size and shape do more work than almost any other detail, because they let someone imagine holding the thing or standing next to it.\n\nAbsolute measurements are often useless in conversation — most people cannot picture twenty-two centimetres. Comparisons to the body or to common objects are far more reliable.\n\nTypical phrases: \"About the size of…\", \"It's roughly this long\", \"It's shaped like…\", \"It's flat, about as thick as…\"\n\nFour ways to give size and shape:\n\n1. Compare to a body part — the most portable ruler there is. \"About as long as your forearm.\"\n\n2. Compare to a common object — a phone, a credit card, a door, a car. \"Roughly the size of a shoebox, a bit shallower.\"\n\n3. Name the shape directly — round, square, tapered, curved, L-shaped. \"It's L-shaped, and the short arm is the bit that goes in the wall.\"\n\n4. Give the proportion — sometimes the ratio matters more than the size. \"It's twice as long as it is wide, which is why it doesn't fit the drawer.\"\n\nMindset: if they cannot hold their hands apart to show it, you have not given them the size.",
       inputs: [
         { q: "A friend asks how big the parcel you are expecting is.", a: "\"About the size of a shoebox, maybe a bit flatter.\"", bundle: 'free' },
@@ -1721,8 +1721,8 @@ const collections = {
     },
     {
       name: "Material, Texture and Colour",
-      guideFront: "They cannot see it. Give them enough to picture it.",
-      guideBack: "One way to say it — concrete, specific, no guessing games.",
+      guideFront: "Say what it is made of when...",
+      guideBack: "The feel of the thing",
       description: "What it is made of, how it feels, and what colour it is. These are the details that make a description feel real rather than diagrammatic, and they are the ones people most often leave out.\n\nColour especially rewards precision. \"Blue\" covers an enormous range; \"dark navy, almost black\" narrows it instantly. The same goes for texture: \"rough\" is vague, \"like sandpaper\" is not.\n\nTypical phrases: \"It's made of…\", \"It feels…\", \"It's a sort of…\", \"Not bright — more of a…\"\n\nFour ways to describe surface:\n\n1. Material — metal, wood, plastic, fabric, glass, and which kind. \"Plastic, but the soft rubbery sort.\"\n\n2. Texture by feel — what your hand notices. \"Smooth on top, ridged underneath so it doesn't slip.\"\n\n3. Colour with a qualifier — never just the colour name. \"Green, but a dull olive green, not a bright one.\"\n\n4. Finish — shiny, matte, worn, new, chipped. \"It's had a hard life. The paint's come off the corners.\"\n\nMindset: one precise colour or texture beats three vague adjectives.",
       inputs: [
         { q: "You are describing a jumper you want to buy again.", a: "\"Thick wool, quite scratchy actually, and a sort of mustard yellow.\"", bundle: 'free' },
@@ -1737,8 +1737,8 @@ const collections = {
     },
     {
       name: "Where You Find It",
-      guideFront: "They cannot see it. Give them enough to picture it.",
-      guideBack: "One way to say it — concrete, specific, no guessing games.",
+      guideFront: "Place it in its surroundings when...",
+      guideBack: "Its usual spot, and its age",
       description: "Location, surroundings and age. Where the thing normally sits, what is next to it, and how old or worn it is. These place the object in a world instead of leaving it floating.\n\nSurroundings are the most under-used of the three. Naming what is next to something is often the fastest way to make it findable — for a lost item, a shop shelf, or a spot on a map.\n\nTypical phrases: \"It's usually kept…\", \"Next to the…\", \"You'll find it near…\", \"It's old — it's been there years.\"\n\nFour ways to place something:\n\n1. Its usual home — where it lives when nobody is using it. \"It normally hangs on the back of the kitchen door.\"\n\n2. What is beside it — the landmark method. \"It's on the shelf right under the kettle, next to the tea.\"\n\n3. Where you would look for one — for things the listener would have to buy or find. \"Same aisle as the batteries, usually near the bottom.\"\n\n4. Age and wear — how long it has been around and how it shows. \"It's ancient. The label's gone and one corner is chipped.\"\n\nMindset: for anything someone has to actually find, the neighbour is worth more than the address.",
       inputs: [
         { q: "You are telling someone where the spare key is.", a: "\"In the drawer by the fridge, under the takeaway menus.\"", bundle: 'free' },
@@ -1753,8 +1753,8 @@ const collections = {
     },
     {
       name: "What It Is For",
-      guideFront: "They cannot see it. Give them enough to picture it.",
-      guideBack: "One way to say it — concrete, specific, no guessing games.",
+      guideFront: "Name the use it has when...",
+      guideBack: "The purpose, as a clue",
       description: "Say what the thing is used for. In a description this is an identifying detail, not an argument — you are helping someone recognise it, not persuading them to want one.\n\nIt is often the single most efficient line in a description, because purpose narrows the field faster than appearance. Someone who cannot picture your object at all will still recognise \"the thing you open jars with\".\n\nTypical phrases: \"It's for…\", \"You use it when…\", \"It's the thing you…\", \"It's what you'd use to…\"\n\nFour ways to give purpose:\n\n1. The direct use — one verb, one object. \"It's for cutting herbs.\"\n\n2. The moment you reach for it — when in life it appears. \"It's the thing you use when the jar won't open.\"\n\n3. What it replaces — describe by the alternative. \"It does the job a stepladder would, but it folds flat.\"\n\n4. What it is used for in practice — which is often not what it was sold for. \"It's technically a bread knife. I only use it for cake.\"\n\nMindset: purpose is here to help them recognise it. Why they should care is a different pack.",
       inputs: [
         { q: "You are describing a kitchen tool by what it does.", a: "\"It's for getting the stone out of an avocado. One job, and it does it well.\"", bundle: 'free' },
@@ -1770,9 +1770,9 @@ const collections = {
   ],
   explainthings: [
     {
-      name: "Say What It Is",
-      guideFront: "Someone needs to understand this. Give them the piece they are missing.",
-      guideBack: "One way to say it — short, concrete, no jargon.",
+      name: "What It Is",
+      guideFront: "Give it a category and a shape when...",
+      guideBack: "The name, and what you would see",
       description: "Give the thing a name and a shape. You say what category it belongs to and what someone would actually see or notice about it. This is not the same as saying what it is for — that is Why It Matters — and it is not the steps for using it, which is How It Works. What It Is answers one question only: if I put this in front of you, what would you be looking at?\n\nIt works because a listener cannot follow anything abstract until they have something concrete to hang it on. Give them the object first, and every later sentence has somewhere to land.\n\nTypical phrases: \"It's basically a…\", \"It's a kind of…\", \"It has two parts…\", \"Think of it like…\", \"It's about the size of…\"\n\nFour ways to say what something is:\n\n1. Name and category — put it in a group the listener already knows. \"It's a kind of savings account, just one you can't touch for five years.\"\n\n2. Parts — break it into the pieces you can point at. \"There's a screen on the front and a little wheel on the side, and that's it.\"\n\n3. What it looks like — material, size, colour, weight, anything visible. \"It's a flat metal thing, about as long as your hand, and heavier than you'd expect.\"\n\n4. Comparison to something known — borrow a thing they already understand. \"It's like a group chat, but only one person can post.\"\n\nMindset: you are not trying to be complete. You are trying to give them one clear picture they can hold while you say the rest.",
       inputs: [
         { q: "Your neighbour asks what a podcast is.", a: "\"It's basically a radio show you download. Someone talks, sometimes two people, and you listen whenever you want.\"", bundle: 'free' },
@@ -1786,9 +1786,9 @@ const collections = {
       ]
     },
     {
-      name: "Explain How It Works",
-      guideFront: "Someone needs to understand this. Give them the piece they are missing.",
-      guideBack: "One way to say it — short, concrete, no jargon.",
+      name: "How It Works",
+      guideFront: "Take them through it in order when...",
+      guideBack: "The steps, in order",
       description: "Take the listener through what happens, in order. Either the steps a person takes, or what the thing does once it is running. The test is that someone could follow your sentence and end up doing the right thing.\n\nIt works because most confusion is not about what something is, it is about what you are supposed to do with it. A step in the right order removes more confusion than a paragraph of definition.\n\nTypical phrases: \"First you…, then…\", \"You hold it like this and…\", \"It takes X and turns it into Y\", \"The only bit that matters is…\"\n\nFour ways to explain how something works:\n\n1. Step by step — small steps, in order, in the order they happen. \"You put the card in, wait for the beep, then take it out and the door opens.\"\n\n2. The one move that matters — skip the rest and give the step people actually get wrong. \"The whole thing is holding the button down until it flashes twice. Everything else is automatic.\"\n\n3. What you do versus what it does — separate the person's job from the machine's job. \"You choose the temperature. It handles everything after that.\"\n\n4. Where people go wrong — explain by naming the mistake. \"Most people press it twice. Press it once and just wait.\"\n\nMindset: talk about doing, not about the thing. If your sentence has no verb in it, you are still describing, not explaining.",
       inputs: [
         { q: "Someone asks how a dishwasher tablet works.", a: "\"You drop it in the little hatch and close it. The hatch opens partway through the cycle and it dissolves then.\"", bundle: 'free' },
@@ -1802,9 +1802,9 @@ const collections = {
       ]
     },
     {
-      name: "Say Why It Matters",
-      guideFront: "Someone needs to understand this. Give them the piece they are missing.",
-      guideBack: "One way to say it — short, concrete, no jargon.",
+      name: "Why It Matters",
+      guideFront: "Name the problem it solves when...",
+      guideBack: "The problem, or what would be worse",
       description: "Name the problem the thing solves, or what would be worse without it. This is the part people skip, and it is usually the part that makes the listener care. What It Is and How It Works can both be perfectly clear and still leave someone thinking \"fine, but so what\".\n\nIt works because attention follows relevance. Once someone can see which of their own problems this touches, they will follow the detail on their own.\n\nTypical phrases: \"It saves you from…\", \"The point is…\", \"Without it you'd have to…\", \"It's useful when…\"\n\nFour ways to say why something matters:\n\n1. The problem it solves — name the annoyance directly. \"It stops you having to type the password every single time.\"\n\n2. Life without it — describe the old way. \"Before this you'd have to ring round four people to find out. Now it's one message.\"\n\n3. Who it is for — make the relevance concrete by naming the person. \"If you cook a lot it's brilliant. If you don't, honestly, skip it.\"\n\n4. The single benefit — one thing, the one that lands. \"It's about twenty minutes a day. That's all, but it's twenty minutes.\"\n\nMindset: say why it matters to THEM, not why it matters in general. The same object is worth explaining differently to two different people.",
       inputs: [
         { q: "A friend asks why you bother with a paper calendar.", a: "\"I can see the whole month at once. On a phone I only ever see today, and then I'm surprised by everything.\"", bundle: 'free' },
@@ -1903,8 +1903,8 @@ const collections = {
   storytellingwiththesixws: [
     {
       name: "What — the Main Event",
-      guideFront: "Use this strategy when...",
-      guideBack: "One way it could sound",
+      guideFront: "Say the one thing that happened when...",
+      guideBack: "The event, without the run-up",
       description: "The one thing that happened. Said plainly, in a sentence, without any of the run-up attached.\n\nThis is the load-bearing W. Everything else in the story exists to make this sentence land, and a listener who cannot tell you what happened has not been given a story — only a description of an afternoon.\n\nTypical shapes:\n\n• \"I lost my homework.\"\n• \"I ended up on stage by mistake.\"\n• \"We missed the last train home.\"\n\nThree ways to state the event:\n1. The bare headline — \"I lost my homework.\"\n2. The change — \"I went in expecting nothing and came out with the job.\"\n3. The outcome — \"And that is how I ended up carrying a wardrobe up four flights.\"\n\nSay it early. The most common storytelling mistake is three minutes of setup before anything happens, by which point the listener has stopped waiting.\n\nMindset: the event does not have to be dramatic. It has to be clear. A small thing told sharply beats a big thing told vaguely.",
       inputs: [
         { q: "You are telling the story of the day you lost your homework.", a: "\"So I lost my homework. Not forgot it — actually lost it.\"", bundle: 'free' },
@@ -1919,8 +1919,8 @@ const collections = {
     },
     {
       name: "How — the Process",
-      guideFront: "Use this strategy when...",
-      guideBack: "One way it could sound",
+      guideFront: "Describe it step by step when...",
+      guideBack: "The steps, as they happened",
       description: "The way it happened, step by step — the middle of the story, where the listener actually lives.\n\nIf What is the headline, How is the article. This is where a story stops being an announcement and starts being something worth listening to, because it is the part the listener can follow along with.\n\nTypical shapes:\n\n• \"I forgot it in my locker and could not find it.\"\n• \"First the taxi did not turn up, then the second one got lost.\"\n• \"I just kept going until my arms gave out.\"\n\nThree ways to tell the how:\n1. Step by step — \"I checked my bag, then my locker, then the whole hallway.\"\n2. The one crucial detail — \"The only thing I did not check was the one place it was.\"\n3. The manner — \"Very slowly, and very badly.\"\n\nGive two or three beats, not fifteen. The How is where stories get too long, and a listener who has to track nine steps stops tracking anything.\n\nMindset: this is the part people are actually listening to. Rush the How and you have delivered a summary instead of a story.",
       inputs: [
         { q: "You are telling the story of losing your homework.", a: "\"I checked my bag, then my locker, then the whole hallway. Nothing.\"", bundle: 'free' },
@@ -1935,8 +1935,8 @@ const collections = {
     },
     {
       name: "Why — the Reason",
-      guideFront: "Use this strategy when...",
-      guideBack: "One way it could sound",
+      guideFront: "Name the cause underneath when...",
+      guideBack: "The motive, or the problem",
       description: "The cause, the motive or the problem underneath — why any of it happened at all.\n\nThis is the W that turns events into a story. Without it you have a sequence of things that occurred; with it the listener understands the person it happened to, which is what they were actually interested in.\n\nTypical shapes:\n\n• \"I was in a hurry and did not check carefully.\"\n• \"I had wanted to try it for years and finally ran out of excuses.\"\n• \"Because I was too embarrassed to ask anyone.\"\n\nThree kinds of why:\n1. The cause — \"I was rushing, so I did not look properly.\"\n2. The motivation — \"I had been putting it off for two years.\"\n3. The problem — \"The whole thing hinged on a booking nobody had made.\"\n\nIt is also the W people leave out most often. When a story gets \"so what?\" from a listener, a missing Why is usually the reason.\n\nMindset: the Why is where you show up in your own story. It is the difference between reporting an event and telling one.",
       inputs: [
         { q: "You are telling the story of losing your homework.", a: "\"I was in a rush that morning and did not check properly.\"", bundle: 'free' },
@@ -1951,8 +1951,8 @@ const collections = {
     },
     {
       name: "When — the Time",
-      guideFront: "Use this strategy when...",
-      guideBack: "One way it could sound",
+      guideFront: "Name the moment it happened when...",
+      guideBack: "The moment, or the stretch",
       description: "When it happened — the point in time, the stretch of time, or the bit of timing that made it what it was.\n\nWhen is usually the smallest of the six, and it does two jobs: it tells the listener this is a real event rather than a general observation, and it occasionally carries the whole point.\n\nTypical shapes:\n\n• \"It happened yesterday afternoon.\"\n• \"This was about four years ago now.\"\n• \"About thirty seconds before the bell went.\"\n\nThree kinds of when:\n1. The point in time — \"Yesterday afternoon.\" \"Last summer.\"\n2. The stretch — \"It went on for about six hours.\"\n3. The timing that matters — \"The day before the deadline, of course.\"\n\nThe third kind is worth hunting for. \"On a Tuesday\" is furniture; \"the morning of the interview\" is part of the story.\n\nMindset: one clause is plenty. When earns its place by being specific, not by being detailed.",
       inputs: [
         { q: "You are telling the story of losing your homework.", a: "\"This was yesterday, about ten minutes before the lesson.\"", bundle: 'free' },
@@ -1967,8 +1967,8 @@ const collections = {
     },
     {
       name: "Where — the Setting",
-      guideFront: "Use this strategy when...",
-      guideBack: "One way it could sound",
+      guideFront: "Describe the place briefly when...",
+      guideBack: "Somewhere they can picture",
       description: "The place it happened, given with enough detail that the listener can picture it.\n\nWhere is what lets someone see the story instead of just following it. It costs one sentence and it is the difference between a listener imagining a scene and a listener imagining nothing at all.\n\nTypical shapes:\n\n• \"It was in the school hallway.\"\n• \"In a tiny kitchen with about four people in it.\"\n• \"Middle of nowhere, at a bus stop with no timetable.\"\n\nThree kinds of where:\n1. The plain location — \"In the school hallway.\"\n2. The detail that sets the scene — \"A hallway full of people trying to get past me.\"\n3. The place that IS the point — \"In the queue. That was the problem.\"\n\nPick one detail rather than three. A single concrete thing does more work than a full description, and it does it faster.\n\nMindset: you are not describing a room, you are giving the listener somewhere to stand. One detail and they will build the rest themselves.",
       inputs: [
         { q: "You are telling the story of losing your homework.", a: "\"In the hallway outside the science block, with everyone pushing past.\"", bundle: 'free' },
@@ -1983,8 +1983,8 @@ const collections = {
     },
     {
       name: "Who — the People",
-      guideFront: "Use this strategy when...",
-      guideBack: "One way it could sound",
+      guideFront: "Name everyone involved when...",
+      guideBack: "The people, and what they did",
       description: "Who was there — the people, and what they did about it.\n\nWho is what makes a story happen to somebody rather than merely occur. It also carries the most reliable source of warmth in the whole pack: another person reacting is nearly always more interesting than the event itself.\n\nTypical shapes:\n\n• \"My teacher was waiting, and my best friend tried to help.\"\n• \"Just me and a very unimpressed taxi driver.\"\n• \"About six people who all knew each other and none of them me.\"\n\nThree ways to bring people in:\n1. Everyone involved — \"Me, my brother, and a man from the council.\"\n2. The one who mattered — \"There was one woman who just took over and sorted it.\"\n3. The audience — \"And about thirty people watching, which was the problem.\"\n\nIntroduce them before you use them. A name that arrives with no explanation makes the listener stop and work out who you mean, and while they are doing that they are not listening.\n\nMindset: people are the most interesting thing in any story. If yours feels flat, there is usually a person in it you have not brought properly onto the page.",
       inputs: [
         { q: "You are telling the story of losing your homework.", a: "\"My teacher was standing there waiting, and my mate was crawling around under the lockers.\"", bundle: 'free' },
@@ -2114,9 +2114,9 @@ const collections = {
   ],
   praiseandencouragement: [
     {
-      name: "Identify the Positive Behaviour",
-      guideFront: "Something here was good. Say so, so they can hear it.",
-      guideBack: "One way to say it — specific, genuine, no \"but\" on the end.",
+      name: "Name the Positive Action",
+      guideFront: "Describe what they did when...",
+      guideBack: "The action, not a verdict",
       description: "Point at the specific thing they did. Not a verdict on them, but a description of the action. \"You did a great job\" becomes \"you kept the whole thing to four slides\" — and the second one tells them what to do again.\n\nIt works because specific praise is information. A general compliment is a mood, and moods fade by the afternoon; a named action can be repeated deliberately.\n\nThe rule underneath it is simple: be specific rather than general. \"I liked your strong opening\" instead of \"good job\".\n\nTypical phrases: \"You did a great job on…\", \"I'm really impressed by…\", \"The bit that worked was…\", \"I noticed you…\"\n\nFour ways to be specific:\n\n1. The moment — one identifiable point in time. \"When the projector failed you just carried on talking. That was the whole thing.\"\n\n2. The choice they made — the decision behind the action. \"You asked what we needed before you started building it.\"\n\n3. The thing they did not do — often the harder achievement. \"You didn't fill the silence. That's why she kept talking.\"\n\n4. The skill it shows — name the ability, not the person. \"That's good structure. Answer first, reasoning after.\"\n\nMindset: praise the action, not the character. \"You're brilliant\" gives them nothing to use.",
       inputs: [
         { q: "A classmate has worked hard on a school project.", a: "\"You did a great job on the research part — every claim in there had a source.\"", bundle: 'free' },
@@ -2131,8 +2131,8 @@ const collections = {
     },
     {
       name: "Highlight the Impact",
-      guideFront: "Something here was good. Say so, so they can hear it.",
-      guideBack: "One way to say it — specific, genuine, no \"but\" on the end.",
+      guideFront: "Say what it changed when...",
+      guideBack: "The effect, as evidence",
       description: "Say what it did — the effect on the work, on the group, or on you. This is the step that turns a compliment into evidence, because effects are checkable and verdicts are not.\n\nIt works because it side-steps the awkwardness of praise between equals. You are not grading anyone; you are reporting what happened as a result.\n\nTypical phrases: \"That was amazing because…\", \"It meant that…\", \"Because you did that…\", \"The effect was…\"\n\nFour ways to name the impact:\n\n1. On the outcome — what would not have happened otherwise. \"We'd have handed that in with the wrong figures. You caught it.\"\n\n2. On other people — what it did for the group. \"Once you said you were confused, three other people admitted they were too.\"\n\n3. On you — the most personal and often the most valued. \"I stopped worrying about it the moment you took it on.\"\n\n4. On what comes next — the door it opened. \"That means we can actually start next week instead of next month.\"\n\nMindset: this is the move for praising someone senior to you, or anyone who waves compliments away. An effect is much harder to be modest about.",
       inputs: [
         { q: "A classmate's part of the project held everything together.", a: "\"That was amazing because it meant the rest of us knew what to write.\"", bundle: 'free' },
@@ -2147,8 +2147,8 @@ const collections = {
     },
     {
       name: "Express Appreciation",
-      guideFront: "Something here was good. Say so, so they can hear it.",
-      guideBack: "One way to say it — specific, genuine, no \"but\" on the end.",
+      guideFront: "Say thank you, and what for when...",
+      guideBack: "Thanks, with a reason attached",
       description: "Say thank you, and say what for. This is the warmth step, and it is the one most often skipped by people who are otherwise good at giving feedback — they describe the action and the effect accurately and never quite say that they are glad.\n\nIt works because it changes what the praise is doing. The first two steps are about the work; this one is about the relationship, and it is what makes someone feel noticed rather than assessed.\n\nSincerity matters more than polish here. A plain \"thank you, that helped a lot\" beats an elaborate compliment that sounds prepared.\n\nTypical phrases: \"Thank you for…\", \"I really appreciate that you…\", \"I'm glad you…\", \"That was kind of you\"\n\nFour ways to express appreciation:\n\n1. Plain thanks with the reason attached — the simplest and most reliable. \"Thanks for staying late. That would have taken me until midnight alone.\"\n\n2. Say what it meant to you — the personal register. \"It mattered that you asked. I'd been sitting on it all week.\"\n\n3. Appreciate the choice, not just the help — they did not have to. \"You didn't have to take that on. I noticed that you did.\"\n\n4. Name it as kindness — for things done for someone else. \"That was a kind thing to do, and I don't think she'd have asked.\"\n\nMindset: genuine beats polished. If it sounds slightly awkward and it is true, say it anyway.",
       inputs: [
         { q: "A friend helped you with something difficult.", a: "\"Thank you for sitting with me through that. I'd have given up on my own.\"", bundle: 'free' },
@@ -2162,9 +2162,9 @@ const collections = {
       ]
     },
     {
-      name: "Encourage Future Efforts",
-      guideFront: "Something here was good. Say so, so they can hear it.",
-      guideBack: "One way to say it — specific, genuine, no \"but\" on the end.",
+      name: "Point Forward",
+      guideFront: "Encourage the next attempt when...",
+      guideBack: "An invitation to keep going",
       description: "Point forward. Praise says something was good; encouragement says there is more of it available and that you should keep going. The two are close but not the same, and people often need the second more.\n\nIt works because the moment after a small success is when most people stop. The thing is done, the pressure is off, and the next attempt has no deadline attached. A specific nudge right then is worth more than the same words a month later.\n\nTypical phrases: \"Keep up the good work!\", \"I believe you can do it\", \"You've improved a lot in…\", \"Do that again next time\"\n\nFour ways to encourage:\n\n1. Name the thing to repeat — make the success reusable. \"Do the same opening next time. That's the bit that worked.\"\n\n2. Point at the next step — small and concrete. \"You should put your name down for the longer one.\"\n\n3. Show the progress — where they were, where they are. \"You couldn't get through a paragraph in September. That was ten minutes.\"\n\n4. Express belief, lightly — confidence without pressure. \"You'll be doing these without notes by summer, I reckon.\"\n\nMindset: keep the belief specific. \"I believe in you\" is warm; \"you'll manage the questions, you already did today\" is warm and usable.",
       inputs: [
         { q: "A friend enjoyed their first attempt at something.", a: "\"Keep going with that. Book the next one while you still feel like this.\"", bundle: 'free' },
@@ -2179,8 +2179,8 @@ const collections = {
     },
     {
       name: "Offer Support",
-      guideFront: "Something here was good. Say so, so they can hear it.",
-      guideBack: "One way to say it — specific, genuine, no \"but\" on the end.",
+      guideFront: "Name what you will actually do when...",
+      guideBack: "A concrete offer, not a wish",
       description: "Make the encouragement practical. Say what you will actually do — read the draft, come along, cover the shift, be at the back of the room. This is the step that turns goodwill into something the other person can rely on.\n\nIt works because encouragement alone puts the whole task back on them. An offer removes one real obstacle, and it also proves the praise was sincere: people rarely offer their own time for something they were only being polite about.\n\nOnly offer what you will genuinely do. A support offer that quietly evaporates costs more than never having made it.\n\nTypical phrases: \"If you want, I could…\", \"Give me a shout if…\", \"I'll be there\", \"Want me to look at it first?\"\n\nFour ways to offer support:\n\n1. A concrete task — one specific thing, small enough to be certain. \"Send me the draft on Wednesday and I'll read it.\"\n\n2. Your presence — often the whole offer. \"I'll sit at the back. You can look at me if it goes wrong.\"\n\n3. An open door with a handle on it — availability made specific. \"Any time before Friday, just message me. I'll be around.\"\n\n4. Removing an obstacle — take one thing off them. \"I'll do the booking bit so you can just prepare.\"\n\nMindset: be specific about what you are offering. \"Let me know if you need anything\" is almost never taken up.",
       inputs: [
         { q: "A friend is preparing for a presentation.", a: "\"If you want, I could listen to it once before Thursday.\"", bundle: 'free' },
@@ -9700,13 +9700,13 @@ const collectionsModeData = {
       name: "Wait or Signal",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "The first decision when you have something to say: is a pause coming, or do you have to make one?\n\nRead whether the speaker is heading towards a break. If they are finishing a thought, wait the two seconds — it costs nothing and reads as ordinary turn-taking. If they have been going for four minutes with no gap, waiting is no longer patience, it is silence.\n\nThe two options:\n1. Wait for a Natural Pause — a break is coming. \"Can I jump in on the dates?\"\n2. Signal the Interruption — none is coming. \"Excuse me, may I add something?\"\n\nGetting this wrong in either direction has a cost: cutting across someone who was two words from a full stop is needlessly rude, and waiting out a monologue means your point arrives after the moment for it has gone.\n\nMindset: waiting is the default and signalling is the tool. Reach for the tool when the default has clearly stopped working.",
+      description: "The first decision when you have something to say: is a pause coming, or do you have to make one?\n\nRead whether the speaker is heading towards a break. If they are finishing a thought, wait the two seconds — it costs nothing and reads as ordinary turn-taking. If they have been going for four minutes with no gap, waiting is no longer patience, it is silence.\n\nThe two options:\n1. The Natural Pause — a break is coming. \"Can I jump in on the dates?\"\n2. Signal the Interruption — none is coming. \"Excuse me, may I add something?\"\n\nGetting this wrong in either direction has a cost: cutting across someone who was two words from a full stop is needlessly rude, and waiting out a monologue means your point arrives after the moment for it has gone.\n\nMindset: waiting is the default and signalling is the tool. Reach for the tool when the default has clearly stopped working.",
       inputs: [
-        { q: "The speaker is finishing a sentence and their pitch is dropping.", a: "(at the full stop) \"Can I jump in on the dates?\" [Wait for a Natural Pause]", bundle: 'pro' },
+        { q: "The speaker is finishing a sentence and their pitch is dropping.", a: "(at the full stop) \"Can I jump in on the dates?\" [The Natural Pause]", bundle: 'pro' },
         { q: "Someone has been talking for four minutes with no gap at all.", a: "\"Excuse me — may I add something here?\" [Signal the Interruption]", bundle: 'pro' },
-        { q: "Someone says \"anyway\" and turns towards the group.", a: "\"Before we move on — can I add something?\" [Wait for a Natural Pause]", bundle: 'pro' },
+        { q: "Someone says \"anyway\" and turns towards the group.", a: "\"Before we move on — can I add something?\" [The Natural Pause]", bundle: 'pro' },
         { q: "Two people are going back and forth and there is no way in.", a: "\"Sorry, both of you — can I say one thing?\" [Signal the Interruption]", bundle: 'pro' },
-        { q: "The speaker pauses to look something up.", a: "\"While you find it — can I say one thing?\" [Wait for a Natural Pause]", bundle: 'pro' },
+        { q: "The speaker pauses to look something up.", a: "\"While you find it — can I say one thing?\" [The Natural Pause]", bundle: 'pro' },
         { q: "You are on a call and nobody can see you waiting to speak.", a: "\"Sorry to cut across — can I add something?\" [Signal the Interruption]", bundle: 'pro' },
       ]
     },
@@ -9714,30 +9714,30 @@ const collectionsModeData = {
       name: "Warmth or Reason",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "Once you are in, the choice about what to lead with — their point, or your reason.\n\nBoth make an interruption acceptable, but they do different jobs. Acknowledging is about the relationship: it tells the speaker you were listening. Giving a reason is about the content: it tells the room why this could not wait.\n\nThe two options:\n1. Acknowledge the Speaker First — the risk is looking like you were not listening. \"I see your point, and I'd like to add…\"\n2. Say Why It Matters — the risk is looking like you just wanted to talk. \"Sorry, we've got four minutes and this decides it.\"\n\nA rough rule: acknowledge when the interruption is about the same subject, give the reason when you are changing direction. And when the stakes are high, do both.\n\nMindset: an unexplained interruption is the one people remember badly. Either half — warmth or reason — is usually enough to prevent that.",
+      description: "Once you are in, the choice about what to lead with — their point, or your reason.\n\nBoth make an interruption acceptable, but they do different jobs. Acknowledging is about the relationship: it tells the speaker you were listening. Giving a reason is about the content: it tells the room why this could not wait.\n\nThe two options:\n1. Their Point First — the risk is looking like you were not listening. \"I see your point, and I'd like to add…\"\n2. Why It Cannot Wait — the risk is looking like you just wanted to talk. \"Sorry, we've got four minutes and this decides it.\"\n\nA rough rule: acknowledge when the interruption is about the same subject, give the reason when you are changing direction. And when the stakes are high, do both.\n\nMindset: an unexplained interruption is the one people remember badly. Either half — warmth or reason — is usually enough to prevent that.",
       inputs: [
-        { q: "Someone has made a point you want to extend.", a: "\"I see your point — and there's something else that follows from it.\" [Acknowledge the Speaker First]", bundle: 'pro' },
-        { q: "A meeting is about to run out of time on the key decision.", a: "\"Sorry — four minutes left and this is the bit that decides it.\" [Say Why It Matters]", bundle: 'pro' },
-        { q: "Someone is planning around a date that has changed.", a: "\"I have to stop you — the date moved, so that won't hold.\" [Say Why It Matters]", bundle: 'pro' },
-        { q: "You disagree but do not want it to become a fight.", a: "\"The second half I completely agree with. Can I push back on the first?\" [Acknowledge the Speaker First]", bundle: 'pro' },
-        { q: "You have lost track of who someone is and cannot follow along.", a: "\"Sorry, quick one — who is Anna? I've lost the thread.\" [Say Why It Matters]", bundle: 'pro' },
-        { q: "Someone junior has made a rough but useful start.", a: "\"That's a really useful start — let me build on it.\" [Acknowledge the Speaker First]", bundle: 'pro' },
+        { q: "Someone has made a point you want to extend.", a: "\"I see your point — and there's something else that follows from it.\" [Their Point First]", bundle: 'pro' },
+        { q: "A meeting is about to run out of time on the key decision.", a: "\"Sorry — four minutes left and this is the bit that decides it.\" [Why It Cannot Wait]", bundle: 'pro' },
+        { q: "Someone is planning around a date that has changed.", a: "\"I have to stop you — the date moved, so that won't hold.\" [Why It Cannot Wait]", bundle: 'pro' },
+        { q: "You disagree but do not want it to become a fight.", a: "\"The second half I completely agree with. Can I push back on the first?\" [Their Point First]", bundle: 'pro' },
+        { q: "You have lost track of who someone is and cannot follow along.", a: "\"Sorry, quick one — who is Anna? I've lost the thread.\" [Why It Cannot Wait]", bundle: 'pro' },
+        { q: "Someone junior has made a rough but useful start.", a: "\"That's a really useful start — let me build on it.\" [Their Point First]", bundle: 'pro' },
       ]
     },
     {
       name: "Any Way In",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "The full choice between all five moves.\n\nMost moments could take several, but one usually fits best. What decides it is how much room the speaker is leaving, how warm the room is, and whether your point is an addition or a correction.\n\nThe five, with the cue for each:\n1. Wait for a Natural Pause — a break is coming. \"Can I jump in there?\"\n2. Signal the Interruption — none is coming. \"Excuse me, may I add something?\"\n3. Acknowledge the Speaker First — you are building on their point. \"I see your point, and…\"\n4. Say Why It Matters — you are changing direction, or it cannot wait. \"Sorry, this is time-sensitive.\"\n5. Use Humour — the room is warm and you want it to stay that way. \"Before my brain explodes.\"\n\nMindset: interrupting is not rude. Interrupting badly is. All five of these are versions of the same courtesy — letting the speaker know what is happening to their turn.",
+      description: "The full choice between all five moves.\n\nMost moments could take several, but one usually fits best. What decides it is how much room the speaker is leaving, how warm the room is, and whether your point is an addition or a correction.\n\nThe five, with the cue for each:\n1. The Natural Pause — a break is coming. \"Can I jump in there?\"\n2. Signal the Interruption — none is coming. \"Excuse me, may I add something?\"\n3. Their Point First — you are building on their point. \"I see your point, and…\"\n4. Why It Cannot Wait — you are changing direction, or it cannot wait. \"Sorry, this is time-sensitive.\"\n5. Use Humour — the room is warm and you want it to stay that way. \"Before my brain explodes.\"\n\nMindset: interrupting is not rude. Interrupting badly is. All five of these are versions of the same courtesy — letting the speaker know what is happening to their turn.",
       inputs: [
-        { q: "The speaker is two words from a full stop and you have a question.", a: "(at the stop) \"Sorry, quick one on that last bit.\" [Wait for a Natural Pause]", bundle: 'pro' },
+        { q: "The speaker is two words from a full stop and you have a question.", a: "(at the stop) \"Sorry, quick one on that last bit.\" [The Natural Pause]", bundle: 'pro' },
         { q: "A friend is mid-story and you are bursting with something related.", a: "\"I have to jump in before my brain explodes.\" [Use Humour]", bundle: 'pro' },
-        { q: "Someone is about to redo work that is already finished.", a: "\"Hate to interrupt, but that's already been done.\" [Say Why It Matters]", bundle: 'pro' },
-        { q: "A colleague has explained the problem well but missed a cause.", a: "\"That's exactly the problem. There's another bit of it too.\" [Acknowledge the Speaker First]", bundle: 'pro' },
+        { q: "Someone is about to redo work that is already finished.", a: "\"Hate to interrupt, but that's already been done.\" [Why It Cannot Wait]", bundle: 'pro' },
+        { q: "A colleague has explained the problem well but missed a cause.", a: "\"That's exactly the problem. There's another bit of it too.\" [Their Point First]", bundle: 'pro' },
         { q: "A formal discussion where you need the floor and none is offered.", a: "\"If I could just come in on that.\" [Signal the Interruption]", bundle: 'pro' },
         { q: "You have already interrupted once and need in again.", a: "\"Me again. I'm aware of it.\" [Use Humour]", bundle: 'pro' },
-        { q: "Someone is heading towards a conclusion built on a wrong number.", a: "\"Let me stop you before you build on that — the numbers came back different.\" [Say Why It Matters]", bundle: 'pro' },
-        { q: "The speaker turns to someone else and you want in first.", a: "\"Actually, before we move on — can I add something?\" [Wait for a Natural Pause]", bundle: 'pro' },
+        { q: "Someone is heading towards a conclusion built on a wrong number.", a: "\"Let me stop you before you build on that — the numbers came back different.\" [Why It Cannot Wait]", bundle: 'pro' },
+        { q: "The speaker turns to someone else and you want in first.", a: "\"Actually, before we move on — can I add something?\" [The Natural Pause]", bundle: 'pro' },
       ]
     },
   ],
@@ -9883,23 +9883,23 @@ const collectionsModeData = {
   describethings: [
     {
       name: "Recognising It",
-      guideFront: "Which detail would actually help them here?",
-      guideBack: "A possible response, with the move in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The moves that help someone pick the thing out: name and main details, size and shape, what it is for. These are the details that narrow the field.\n\nUse them when the listener is going to have to identify the object — in a shop, in a lost property office, in a crowded room.\n\nMindset: ask yourself what would make them say \"oh, that one\".",
       inputs: [
-        { q: "You are describing a lost coat to someone about to go and look for it.", a: "\"Long navy wool coat, and one button is a different colour from the rest.\" [Name and Main Details]", bundle: 'pro' },
+        { q: "You are describing a lost coat to someone about to go and look for it.", a: "\"Long navy wool coat, and one button is a different colour from the rest.\" [The Anchor]", bundle: 'pro' },
         { q: "They ask how big the missing case is.", a: "\"Cabin size — the kind that just fits in the overhead locker.\" [Size and Shape]", bundle: 'pro' },
         { q: "They ask what the strange tool in your kitchen is.", a: "\"It's for stripping leaves off herb stalks. That's genuinely all it does.\" [What It Is For]", bundle: 'pro' },
-        { q: "You are describing which of two similar chairs you mean.", a: "\"The one with arms. The other has none — that's the only difference.\" [Name and Main Details]", bundle: 'pro' },
+        { q: "You are describing which of two similar chairs you mean.", a: "\"The one with arms. The other has none — that's the only difference.\" [The Anchor]", bundle: 'pro' },
         { q: "Someone is looking for a box you mentioned and cannot find it.", a: "\"It's about the size of a microwave, so you're looking for something big.\" [Size and Shape]", bundle: 'pro' },
         { q: "A shop assistant asks what you need it to do.", a: "\"It's for getting into a bike tyre without tools. A tyre lever, I think.\" [What It Is For]", bundle: 'pro' },
-        { q: "You are describing your car in a car park.", a: "\"Small silver hatchback with a bike rack on the back. The rack is the giveaway.\" [Name and Main Details]", bundle: 'pro' },
+        { q: "You are describing your car in a car park.", a: "\"Small silver hatchback with a bike rack on the back. The rack is the giveaway.\" [The Anchor]", bundle: 'pro' },
       ]
     },
     {
       name: "Painting the Picture",
-      guideFront: "Which detail would actually help them here?",
-      guideBack: "A possible response, with the move in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The moves that make something vivid rather than merely identifiable: size and shape, material, texture and colour, where you find it.\n\nUse them when the listener does not need to find the thing, only to imagine it — a story, a place you visited, something you are describing for the pleasure of it.\n\nMindset: one precise sensory detail does more than five general ones.",
       inputs: [
         { q: "A friend asks what the café you liked was like.", a: "\"Tiny. Four tables, and you had to turn sideways to get past the counter.\" [Size and Shape]", bundle: 'pro' },
@@ -9913,11 +9913,11 @@ const collectionsModeData = {
     },
     {
       name: "All Five",
-      guideFront: "Which detail would actually help them here?",
-      guideBack: "A possible response, with the move in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The full set. Any of the five moves could be the useful one, and the skill is choosing rather than listing.\n\nA good description is rarely all five. It is usually two or three, picked because they are the ones this listener needs.\n\nMindset: describing everything is the same as describing nothing. Choose.",
       inputs: [
-        { q: "Someone is going to your flat to fetch something and asks what to look for.", a: "\"Small black notebook with an elastic band round it.\" [Name and Main Details]", bundle: 'pro' },
+        { q: "Someone is going to your flat to fetch something and asks what to look for.", a: "\"Small black notebook with an elastic band round it.\" [The Anchor]", bundle: 'pro' },
         { q: "They ask where in the flat it is.", a: "\"On the desk, under the lamp, probably with a pen on top of it.\" [Where You Find It]", bundle: 'pro' },
         { q: "They ask how they will know it is the right one.", a: "\"It's the size of a passport, and quite fat — it's nearly full.\" [Size and Shape]", bundle: 'pro' },
         { q: "You are describing a plant to someone at a garden centre.", a: "\"It's for a north-facing window that gets almost no sun.\" [What It Is For]", bundle: 'pro' },
@@ -9930,8 +9930,8 @@ const collectionsModeData = {
   explainthings: [
     {
       name: "What and How",
-      guideFront: "Which piece is missing here — what it is, how it works, or why it matters?",
-      guideBack: "A possible response, with the move in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The two moves that carry practical explanations. Someone is holding a thing, or standing in front of a screen, and needs to know what they are looking at and what to do with it.\n\nThe choice between them is simple: if they cannot picture it yet, say what it is. If they can see it but do not know what to do, explain how it works.\n\nMindset: watch their hands. If they are reaching for it, they need How. If they are frowning at it, they need What.",
       inputs: [
         { q: "A guest picks up your induction hob scraper and turns it over, puzzled.", a: "\"It's a little razor blade in a plastic handle — that's for burnt-on bits.\" [What It Is]", bundle: 'pro' },
@@ -9945,8 +9945,8 @@ const collectionsModeData = {
     },
     {
       name: "How and Why",
-      guideFront: "Which piece is missing here — what it is, how it works, or why it matters?",
-      guideBack: "A possible response, with the move in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The two moves that carry persuasion-adjacent explanations. Someone can already picture the thing. What they are missing is either the method or the point.\n\nIf they are willing but stuck, they need How. If they are unconvinced, no amount of How will help — they need Why.\n\nMindset: resistance is almost never a request for more detail. If they push back, switch to Why.",
       inputs: [
         { q: "A colleague says they still don't see the point of the daily stand-up.", a: "\"It's mostly so nobody spends a day blocked on something someone else could unblock in a minute.\" [Why It Matters]", bundle: 'pro' },
@@ -9960,8 +9960,8 @@ const collectionsModeData = {
     },
     {
       name: "All Three",
-      guideFront: "Which piece is missing here — what it is, how it works, or why it matters?",
-      guideBack: "A possible response, with the move in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The full set. Any of the three moves could be right, and the skill is hearing which one is actually missing.\n\nA good rule: listen to the shape of their question. \"What's that?\" wants What. \"How do I…?\" wants How. \"But why would I…?\" wants Why. And when someone asks nothing at all but looks lost, start with What.\n\nMindset: answer the question they asked, not the one you find most interesting to answer.",
       inputs: [
         { q: "A new colleague asks what the ticket system is.", a: "\"It's a list of jobs with a name on each one. Every request becomes a ticket.\" [What It Is]", bundle: 'pro' },
@@ -10117,29 +10117,29 @@ const collectionsModeData = {
   praiseandencouragement: [
     {
       name: "Ready-Made Phrases",
-      guideFront: "What kind of praise would actually help this person right now?",
-      guideBack: "A possible response, with the step in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Praise built from common phrases rather than improvised. \"You did a great job on…\", \"I'm really impressed by…\", \"Keep up the good work\", \"That was amazing because…\", \"You have improved a lot in…\", \"I believe you can do it.\"\n\nThe phrases carry the shape; your job is to finish the sentence with something specific. A ready-made opening with a specific ending is far better than either half alone.\n\nMindset: the phrase is the frame. The specific bit after it is the actual praise.",
       inputs: [
         { q: "A classmate finished a difficult assignment.", a: "\"You did a great job on that — the last section especially.\" [Identify the Behaviour]", bundle: 'pro' },
         { q: "Someone gave a confident presentation.", a: "\"I'm really impressed by how you handled the questions at the end.\" [Identify the Behaviour]", bundle: 'pro' },
-        { q: "A friend has been practising something for weeks.", a: "\"You have improved a lot in this. Compare it to your first go.\" [Encourage Future Efforts]", bundle: 'pro' },
-        { q: "A teammate is heading into something difficult.", a: "\"I believe you can do it. You've done harder than this.\" [Encourage Future Efforts]", bundle: 'pro' },
+        { q: "A friend has been practising something for weeks.", a: "\"You have improved a lot in this. Compare it to your first go.\" [Point Forward]", bundle: 'pro' },
+        { q: "A teammate is heading into something difficult.", a: "\"I believe you can do it. You've done harder than this.\" [Point Forward]", bundle: 'pro' },
         { q: "Someone's contribution changed the result.", a: "\"That was amazing because it's the reason we finished on time.\" [Highlight the Impact]", bundle: 'pro' },
-        { q: "A friend is partway through a long effort.", a: "\"Keep up the good work — you're further than you think.\" [Encourage Future Efforts]", bundle: 'pro' },
+        { q: "A friend is partway through a long effort.", a: "\"Keep up the good work — you're further than you think.\" [Point Forward]", bundle: 'pro' },
         { q: "Someone helped you out of a difficulty.", a: "\"Thank you for that. You saved me a whole evening.\" [Express Appreciation]", bundle: 'pro' },
       ]
     },
     {
       name: "Following the Guide",
-      guideFront: "What kind of praise would actually help this person right now?",
-      guideBack: "A possible response, with the step in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The five steps used in order: behaviour, impact, appreciation, encouragement, support. Not every occasion needs all five, but the order works because each step earns the next.\n\nSkipping straight to encouragement is the commonest failure. \"Keep it up!\" lands on nothing if you have not said what \"it\" is.\n\nMindset: name the thing before you cheer for it.",
       inputs: [
         { q: "A classmate has finished a project they struggled with.", a: "\"You rewrote the middle section three times until it worked.\" [Identify the Behaviour]", bundle: 'pro' },
         { q: "You want to show why that mattered.", a: "\"That's the part that makes the whole thing make sense now.\" [Highlight the Impact]", bundle: 'pro' },
         { q: "They helped you understand your own part better.", a: "\"Thanks for talking me through it as well. That helped me.\" [Express Appreciation]", bundle: 'pro' },
-        { q: "They are wondering whether to take the harder option next term.", a: "\"Take it. You'd start it knowing what the middle feels like.\" [Encourage Future Efforts]", bundle: 'pro' },
+        { q: "They are wondering whether to take the harder option next term.", a: "\"Take it. You'd start it knowing what the middle feels like.\" [Point Forward]", bundle: 'pro' },
         { q: "They look slightly daunted by that idea.", a: "\"And send me the outline in October — I'll read it.\" [Offer Support]", bundle: 'pro' },
         { q: "A friend has been kind to someone having a hard time.", a: "\"You checked on her three days running.\" [Identify the Behaviour]", bundle: 'pro' },
         { q: "You want to say what it did.", a: "\"She came back to the group because of that.\" [Highlight the Impact]", bundle: 'pro' },
@@ -10147,14 +10147,14 @@ const collectionsModeData = {
     },
     {
       name: "All Five",
-      guideFront: "What kind of praise would actually help this person right now?",
-      guideBack: "A possible response, with the step in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The full set, chosen rather than sequenced. This is praise improvised, and improvising well means picking the step this person actually needs.\n\nA rough guide: if they do not know what worked, name the behaviour. If they are brushing it off, give the impact. If they helped you, say thank you. If they might stop, encourage. If they are facing something hard next, offer something concrete.\n\nMindset: the aim is that they can hear it and use it, not that you said something nice.",
       inputs: [
         { q: "A colleague ran a good meeting and does not seem to know why it worked.", a: "\"You named the disagreement out loud instead of letting it circle.\" [Identify the Behaviour]", bundle: 'pro' },
         { q: "They shrug it off as luck.", a: "\"We finished early with a decision. That's not luck, that's the agenda.\" [Highlight the Impact]", bundle: 'pro' },
         { q: "They covered something for you while you were away.", a: "\"Thank you for holding that. I came back to nothing on fire.\" [Express Appreciation]", bundle: 'pro' },
-        { q: "They are unsure about chairing the next one.", a: "\"Do it. You already know the bit that makes it work.\" [Encourage Future Efforts]", bundle: 'pro' },
+        { q: "They are unsure about chairing the next one.", a: "\"Do it. You already know the bit that makes it work.\" [Point Forward]", bundle: 'pro' },
         { q: "They say the next one has a harder agenda.", a: "\"Send it to me the day before and I'll look at the running order.\" [Offer Support]", bundle: 'pro' },
         { q: "A friend overcame something they had been avoiding.", a: "\"You made the call you'd been putting off since March.\" [Identify the Behaviour]", bundle: 'pro' },
         { q: "They say it was not a big deal.", a: "\"You've slept properly for a week. It was a big deal.\" [Highlight the Impact]", bundle: 'pro' },

@@ -1750,7 +1750,7 @@ const multiStepCollections = {
       name: "The Polite Cut-In",
       guideFront: "What's happening, and the strategy to use",
       guideBack: "One way it could sound",
-      description: "The full version, for when the interruption matters and the room is formal enough that how you do it will be noticed. Steps: 1) Wait for a Natural Pause — go in at their break, 2) Signal the Interruption — give them a second to stop, 3) Acknowledge the Speaker First — show you were listening, 4) Say Why It Matters — then say why it could not wait.\n\nFour steps sounds like a lot for one interruption, but the first three are about six words in total. What they buy is an interruption nobody has to be gracious about.\n\nThe shape of the whole thing:\n1. (wait for the full stop)\n2. \"Sorry — can I come in there?\"\n3. \"Everything up to the timeline I'm with you on.\"\n4. \"It's just that the date moved, so that part won't hold.\"\n\nMindset: the three short steps before your point are what make the point land. Skip them and the same content arrives as an objection.",
+      description: "The full version, for when the interruption matters and the room is formal enough that how you do it will be noticed. Steps: 1) The Natural Pause — go in at their break, 2) Signal the Interruption — give them a second to stop, 3) Their Point First — show you were listening, 4) Why It Cannot Wait — then say why it could not wait.\n\nFour steps sounds like a lot for one interruption, but the first three are about six words in total. What they buy is an interruption nobody has to be gracious about.\n\nThe shape of the whole thing:\n1. (wait for the full stop)\n2. \"Sorry — can I come in there?\"\n3. \"Everything up to the timeline I'm with you on.\"\n4. \"It's just that the date moved, so that part won't hold.\"\n\nMindset: the three short steps before your point are what make the point land. Skip them and the same content arrives as an objection.",
       inputs: [
         {
           bundle: 'pro',
@@ -1778,7 +1778,7 @@ const multiStepCollections = {
       name: "When There Is No Pause",
       guideFront: "What's happening, and the strategy to use",
       guideBack: "One way it could sound",
-      description: "The version for a monologue that is not going to stop on its own. Steps: 1) Signal the Interruption — make the break yourself, 2) Say Why It Matters — justify it immediately, 3) Acknowledge the Speaker First — and give them the floor back.\n\nThe order is deliberately different. When you have had to make your own gap, the justification cannot wait — it has to arrive in the same breath, or the interruption sits there unexplained.\n\nWhy the acknowledgement moves to the end:\n1. Signal — a warm cue is all you have time for.\n2. Reason — this is what converts the interruption from rude to necessary.\n3. Acknowledge — offering the floor back is what stops it becoming a takeover.\n\nMindset: the third step is the one that matters most here. An interruption you hand back is a contribution; one you keep is a takeover.",
+      description: "The version for a monologue that is not going to stop on its own. Steps: 1) Signal the Interruption — make the break yourself, 2) Why It Cannot Wait — justify it immediately, 3) Their Point First — and give them the floor back.\n\nThe order is deliberately different. When you have had to make your own gap, the justification cannot wait — it has to arrive in the same breath, or the interruption sits there unexplained.\n\nWhy the acknowledgement moves to the end:\n1. Signal — a warm cue is all you have time for.\n2. Reason — this is what converts the interruption from rude to necessary.\n3. Acknowledge — offering the floor back is what stops it becoming a takeover.\n\nMindset: the third step is the one that matters most here. An interruption you hand back is a contribution; one you keep is a takeover.",
       inputs: [
         {
           bundle: 'pro',
@@ -1804,7 +1804,7 @@ const multiStepCollections = {
       name: "The Light Way In",
       guideFront: "What's happening, and the strategy to use",
       guideBack: "One way it could sound",
-      description: "The warm version, for friends and relaxed rooms. Steps: 1) Use Humour — make the interruption itself the joke, 2) Acknowledge the Speaker First — then show you were actually listening, 3) Say Why It Matters — and land the point.\n\nThe joke does the work of the signal here. It tells the speaker something is coming and makes it impossible to take badly, which is why this is the cheapest version when the room allows it.\n\nWhat each step is doing:\n1. Humour — buys the floor without anyone having to be gracious.\n2. Acknowledgement — stops the joke being all there was.\n3. Reason — the point still has to be worth the interruption.\n\nMindset: the joke has to be at your own expense. Make it about how long they have been talking and you have criticised them, not lightened it.",
+      description: "The warm version, for friends and relaxed rooms. Steps: 1) Use Humour — make the interruption itself the joke, 2) Their Point First — then show you were actually listening, 3) Why It Cannot Wait — and land the point.\n\nThe joke does the work of the signal here. It tells the speaker something is coming and makes it impossible to take badly, which is why this is the cheapest version when the room allows it.\n\nWhat each step is doing:\n1. Humour — buys the floor without anyone having to be gracious.\n2. Acknowledgement — stops the joke being all there was.\n3. Reason — the point still has to be worth the interruption.\n\nMindset: the joke has to be at your own expense. Make it about how long they have been talking and you have criticised them, not lightened it.",
       inputs: [
         {
           bundle: 'pro',
@@ -2049,8 +2049,8 @@ const multiStepCollections = {
   describethings: [
     {
       name: "Building It Up",
-      guideFront: "They have said something. Add the detail they still need.",
-      guideBack: "A line you could say at this step.",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
       description: "Name first, then narrow with the details that matter most for this listener. Each answer should remove possibilities rather than simply add words.\n\nWatch what the listener does with each detail. If they ask a follow-up, that tells you exactly which category to reach for next.\n\nMindset: let their questions choose your order.",
       inputs: [
         {
@@ -2077,8 +2077,8 @@ const multiStepCollections = {
     },
     {
       name: "When You Do Not Know the Word",
-      guideFront: "They have said something. Add the detail they still need.",
-      guideBack: "A line you could say at this step.",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
       description: "Describing your way around a missing word is a real conversational skill and not a failure. Purpose usually gets you there fastest, then shape, then the nearest familiar object.\n\nThe move to avoid is stopping. A slightly clumsy description that lands is better than a pause waiting for a word that is not coming.\n\nMindset: talk around it. The word is not the point; being understood is.",
       inputs: [
         {
@@ -2103,8 +2103,8 @@ const multiStepCollections = {
     },
     {
       name: "They Cannot Find It",
-      guideFront: "They have said something. Add the detail they still need.",
-      guideBack: "A line you could say at this step.",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
       description: "When someone is actively searching, appearance matters less than position. Surroundings, height and neighbours do the work.\n\nEach step should move them physically. If your last sentence did not change where they are standing or looking, it was decoration.\n\nMindset: describe the route, not the object.",
       inputs: [
         {
@@ -2131,8 +2131,8 @@ const multiStepCollections = {
   explainthings: [
     {
       name: "The Full Explanation",
-      guideFront: "They have said something. Take the explanation one step further.",
-      guideBack: "A line you could say at this step.",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
       description: "What It Is, then How It Works, then Why It Matters, in that order. It is the order that works when someone starts from nothing, because each step gives them what they need to follow the next one.\n\nThe temptation is to open with Why, because that is the part you find interesting. Resist it — Why lands on nothing when the listener still cannot picture the object.\n\nMindset: pause after each step. If they nod, go on. If they frown, stay where you are.",
       inputs: [
         {
@@ -2159,8 +2159,8 @@ const multiStepCollections = {
     },
     {
       name: "When They Only Need One Piece",
-      guideFront: "They have said something. Take the explanation one step further.",
-      guideBack: "A line you could say at this step.",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
       description: "Not every explanation needs all three moves. Someone often already has two of them and is missing exactly one. Giving them the full tour is a way of not listening.\n\nThe skill here is hearing which piece is missing and answering only that — then stopping, and letting them ask for more if they want it.\n\nMindset: the shortest correct answer is a kindness. You can always add.",
       inputs: [
         {
@@ -2185,8 +2185,8 @@ const multiStepCollections = {
     },
     {
       name: "Explaining Something You Half Understand",
-      guideFront: "They have said something. Take the explanation one step further.",
-      guideBack: "A line you could say at this step.",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
       description: "You will be asked to explain things you only partly know. The move is to give the part you are sure about, mark clearly where your knowledge stops, and not fill the gap with something that sounds right.\n\nSaying \"I don't know that bit\" costs you almost nothing and protects the listener from carrying away a confident mistake.\n\nMindset: being trusted is worth more than sounding complete.",
       inputs: [
         {
@@ -2470,8 +2470,8 @@ const multiStepCollections = {
   praiseandencouragement: [
     {
       name: "The Full Five Steps",
-      guideFront: "The step you are on — say it out loud.",
-      guideBack: "One way it could sound.",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
       description: "All five steps, run start to finish: behaviour, impact, appreciation, encouragement, support. Used whole it is what a really good piece of praise sounds like — specific, warm, and ending with something concrete rather than a slogan.\n\nThis one is a monologue. Nobody interrupts you; the whole thing is one continuous piece of speech, and each card is the next step of it. Read the step on the front, say your own version out loud, then turn the card to see one way it could have gone.\n\nMindset: each step earns the next. Do not jump to the cheerleading.",
       inputs: [
         {
@@ -2500,8 +2500,8 @@ const multiStepCollections = {
     },
     {
       name: "Praise That Gets Deflected",
-      guideFront: "What they just said, and the step to answer it with.",
-      guideBack: "One way it could sound.",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
       description: "Most people deflect. They minimise, they credit someone else, they change the subject. The instinct is to repeat the compliment more emphatically, which makes both of you uncomfortable.\n\nUnlike the five-step combo, this one is a real exchange — each front carries what they just said, and the step tells you which move answers it. The step numbers are the five from the guide, used out of order: pick the one that answers what they actually said. The move is to shift from verdict to fact. Impact and specific behaviour are much harder to wave away than a judgement, because there is nothing to be modest about.\n\nMindset: do not argue about whether they are good. Report what happened.",
       inputs: [
         {
@@ -2526,8 +2526,8 @@ const multiStepCollections = {
     },
     {
       name: "Encouraging Someone Who Is Struggling",
-      guideFront: "What they just said, and the step to answer it with.",
-      guideBack: "One way it could sound.",
+      guideFront: "What's happening, and the strategy to use",
+      guideBack: "One way it could sound",
       description: "When someone is disheartened, praise can sound like you have not understood how bad it feels. The order matters: acknowledge the situation first, then be specific about what genuinely was good, and only then look forward and offer something.\n\nThis is an exchange too — they push back at each step, and what they say decides which move comes next. The step numbers are the five from the guide, and a real conversation rarely runs 1 to 5 in order: use the one the moment needs. Acknowledging how it feels is not one of the five — fold it into the first line rather than making it a move of its own.\n\nNothing here should be untrue. Praise that stretches is worse than silence, because it tells them your good opinion is not worth much.\n\nMindset: honest and small beats generous and vague.",
       inputs: [
         {
