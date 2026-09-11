@@ -3930,6 +3930,84 @@ if (resetFirstRunBtn) resetFirstRunBtn.addEventListener('click', () => {
 // twice; the developer list is simply the unfiltered one.
 const WHATS_NEW = [
   {
+    version: 'v1.28.43', date: 'September 2026', title: 'Sequences say which move you just made',
+    items: [
+      'Every step in a Sequence now names the strategy it uses, and the name appears on the back of the card in brackets once you have answered — so the front is only the situation, and you find out afterwards what the move was called.',
+      'Scenario cards list the moves in order before you start. In several packs that list was empty and the card would not turn at all. It does now.',
+      '<strong>Discussing</strong> was the worst of them: not one of its six scenarios used a strategy the pack teaches. Five steps now carry their real names — <em>Play It Back</em>, <em>Your Own View</em>, <em>Ask What They Mean</em>, <em>Keep the Temperature Down</em>.',
+    ],
+  },
+  {
+    version: 'v1.28.43', date: 'September 2026', title: 'Two ways a step could go unnamed', audience: 'dev',
+    items: [
+      '<code>splitMoveName</code> splits a step front at the em dash. A front written without one returns no name at all — the card showed the writer’s instruction as its front and got no bracket, and nothing flagged it. 22 steps were written that way.',
+      '<code>scenarioMoveList</code> built the list from the fronts as written while <code>splitMoveName</code> stripped the <code>Step 1 ·</code> scaffolding for the bracket, so the list read <em>1. Step 1 · Concede</em> and the back read <em>[Concede]</em>. 878 steps across 47 packs use that prefix. Both now strip it, and <strong>test-flow.js</strong> asserts the rule so they cannot drift apart again.',
+      'The measure worth keeping: <strong>192 of 195 scenarios</strong> in the pro and freemium packs now contain at least one strategy step. The three that do not are Setup Question’s first deck, where the phase exception applies.',
+    ],
+  },
+  {
+    version: 'v1.28.44', date: 'September 2026', title: 'Where the library actually stands', audience: 'dev',
+    items: [
+      'Complete across all Pro and freemium packs: <strong>Single Strategy</strong>, <strong>Challenges</strong>, <strong>Mindset</strong> (bar 24 cards), strategy names, guide texts and sequence step names.',
+      'Outstanding volume: <strong>Collections 60 cards</strong>, <strong>Sequences 57 scenarios</strong> (the third scenario is missing in most decks), <strong>Memorize 825 cards</strong>. Eight of twenty-eight packs are finished outright.',
+      '<strong>Apologizing — Pt. 2</strong> still uses <em>Apologise for What You Did</em> and <em>Say What You’ll Do Differently</em>, renamed in Pt. 1 only. It sits at Extended, outside the Pro sweep, so anyone owning both sees one strategy under two names.',
+      'Describe Things, Explain Things and Praise and Encouragement have Challenges labels naming the move rather than the strategy — a boundary question for the read-through pass, not a format error.',
+    ],
+  },
+  {
+    version: 'v1.28.42', date: 'September 2026', title: 'Giving Counter Examples has two more strategies',
+    items: [
+      '<strong>The Smaller Claim</strong> — for when your example is met with “that’s just one person”. Instead of defending the example, you offer a narrower version of their claim that yours fits inside, and there is nothing left to argue about.',
+      '<strong>Ask for Theirs</strong> — for when you doubt a sweeping claim but have no case of your own. You ask the person who made it to find the exception. It gets you information, and it is much harder to dismiss a hole someone finds in their own argument.',
+      'Both come with their own cards in every training mode, and a fourth collection that makes you choose between them.',
+    ],
+  },
+  {
+    version: 'v1.28.41', date: 'September 2026', title: 'Setup Question, three ways',
+    items: [
+      'A setup question is a question you answer yourself. Its three Sequence decks now practise that in three different resolutions: <strong>Ask, Listen, Share</strong> breaks one question into its three beats, <strong>Changing the Question</strong> treats each question type as a whole move, and <strong>A Real Conversation</strong> mixes them the way it actually goes.',
+      'The pack went from six scenarios to nine.',
+    ],
+  },
+  {
+    version: 'v1.28.39', date: 'September 2026', title: 'How to Interrupt: getting out again',
+    items: [
+      'The pack had five strategies for getting <em>into</em> a conversation and none for getting out of it. <strong>Get Out Cleanly</strong> is the sixth — saying your piece and handing the floor back, so the interruption ends as a contribution rather than a takeover.',
+    ],
+  },
+  {
+    version: 'v1.28.38', date: 'September 2026', title: 'Shorter strategy names, and a guide on every card',
+    items: [
+      'Fifty-six strategies across twenty-nine packs have been renamed. Long descriptions like <em>Answer What They Are Really Asking</em> have become names you can actually say — <em>Behind the Question</em> — and the meaning moved into the guide text under the card instead.',
+      'Every card now carries two short lines: what the move is for, and what the answer should be. <em>Offer the version you both accept when…</em> / <em>A narrower claim, agreed.</em>',
+      '<strong>Ratings and notes you left on a renamed deck will not follow it.</strong> The cards are the same; only the name changed.',
+    ],
+  },
+  {
+    version: 'v1.28.36', date: 'September 2026', title: 'What the tooling learned this month', audience: 'dev',
+    items: [
+      '<strong>check-pack.js</strong> §11b-VII rule 4 was flagging every back containing <em>answer</em>, including <em>An answer of the same size</em> where the qualifier carries the whole meaning. It now flags only the bare noun standing last. No pack text changed.',
+      '<strong>514 card labels normalised</strong> (v1.28.18) from lower-case parentheses to bracketed strategy names — <code>(signal the interruption)</code> to <code>[Signal the Interruption]</code> — across thirteen packs. Stage directions in parentheses were left alone; the conversion only fired when the label matched a strategy the pack actually has.',
+      '<strong>test-flow.js</strong> had encoded a bug as a fixture — <em>“expected at least one scenario with no derivable list”</em> — and failed when the bug was fixed. Rewritten to test the rule across the whole library. An assertion that names one pack as an example of a defect dies with the defect.',
+      'Run <strong>verify-build.js</strong> <em>after</em> the version bump, not before. It checks <code>VERSION</code> against the <code>?v=</code> cache-bust tags in index.html, and run early it passes on the old pair while sixteen stale tags ship.',
+    ],
+  },
+  {
+    version: 'v1.28.30', date: 'September 2026', title: 'Challenges, filled out everywhere',
+    items: [
+      'Three hundred new Challenges cards across twenty packs. Every Pro pack now has all five kinds of thing-that-goes-wrong, with eight cards each — the mode is complete across the library.',
+      'The new cards lean on the strategies that had almost no Challenges coverage, so the choice you are asked to make is a real one more often.',
+    ],
+  },
+  {
+    version: 'v1.28.07', date: 'September 2026', title: 'Mindset, complete in every Pro pack',
+    items: [
+      'A hundred new Mindset cards, and fifteen decks renamed from the training mode to the thought that actually stops people — <em>The Interrupting Mindset</em> is now <em>Interrupting Is Always Rude</em>, which is the sentence you are arguing with.',
+      'Five new decks, including two that name something rarely said out loud: that inviting someone in feels like losing the floor, and that a joke feels like it undercuts your point.',
+      'Ratings on the renamed Mindset decks do not carry over.',
+    ],
+  },
+  {
     version: 'v1.27.50', date: 'August 2026', title: 'Assertive Communication, in two parts',
     items: [
       '<strong>Assertive Communication</strong>, free. The four moves Manuel J. Smith taught for the moment somebody is criticising, pressuring or guilt-tripping you: <em>Broken Record</em>, <em>Fogging</em>, <em>Negative Assertion</em> and <em>Negative Inquiry</em>.',
