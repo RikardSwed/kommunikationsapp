@@ -4532,6 +4532,54 @@ const mindsetCollections = {
         { q: "Being guarded is safer than getting it wrong.", a: "Safer, and it costs you every friendship that would have gone further.", bundle: 'pro' },
       ]
     },
+    {
+      name: "The Official Answer",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"They asked what I do. The job title is the answer.\"\n\n**What is true instead:** the literal answer is the least useful one available. A title tells them what to call you and gives them nothing to ask about.\n\n**Why it feels right:** it is accurate, short, and exactly what the question asked for. Nobody can accuse you of going on.\n\n**What it costs:** the conversation stops there and it looks deliberate. They asked in order to find something to talk about, and you handed them a form.\n\nMindset: they are not filling in a form. Give them the version they can ask about.",
+      inputs: [
+        { q: "They asked what I do, so I should tell them what I do.", a: "Tell them, then add one clause about what the days are actually like.", bundle: 'pro' },
+        { q: "The extra bit is me going on about myself.", a: "One clause isn't going on. It's the handle they asked for.", bundle: 'pro' },
+        { q: "My job title really is the most interesting thing about it.", a: "Then it's the one thing they can't ask a question about. Give them the ordinary part instead.", bundle: 'pro' },
+        { q: "If I answer differently they'll think I'm being evasive.", a: "Nobody has ever thought that about \"I teach — mostly teenagers, which is as loud as it sounds\".", bundle: 'pro' },
+        { q: "Where I'm from is just a place name.", a: "It's also what shaped you. That's the half they were asking about.", bundle: 'pro' },
+        { q: "They'd have asked a follow-up if they wanted one.", a: "There was nothing to follow. A title is a full stop.", bundle: 'pro' },
+        { q: "The real version takes too long to explain.", a: "One sentence. \"Officially admin, actually I fix what nobody else wants to.\"", bundle: 'pro' },
+        { q: "It sounds like I'm making the job out to be more than it is.", a: "The opposite — you're describing it rather than labelling it. That's smaller, not bigger.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Too Into It",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"Nobody wants to hear about it, and if I start I won't know when to stop.\"\n\n**What is true instead:** the enthusiasm is not the risk. The unrequested twenty minutes is, and those are two different things.\n\n**Why it feels right:** everyone has sat through a monologue about something they did not care about, and nobody wants to be that person.\n\n**What it costs:** the apology in front of it tells them not to ask. So they don't, and the thing you are most alive about never comes up.\n\nMindset: name it, one line, stop. They get to decide whether to open it.",
+      inputs: [
+        { q: "It's a niche thing. Nobody's interested.", a: "They're not interested in the subject. They're interested in someone being lit up about something.", bundle: 'pro' },
+        { q: "I should say it's a bit sad before I mention it.", a: "That apology is the part they'll remember. Drop it and just name the thing.", bundle: 'pro' },
+        { q: "If I start talking about it I'll go on for twenty minutes.", a: "Then give one line and stop. The stopping is the whole skill.", bundle: 'pro' },
+        { q: "They'd only be asking to be polite.", a: "Give them one line and find out. Polite interest turns real surprisingly often.", bundle: 'pro' },
+        { q: "It's not an impressive thing to be into.", a: "Nobody is scoring the hobby. They're reading how you talk about it.", bundle: 'pro' },
+        { q: "I'd rather ask about theirs.", a: "Do, afterwards. Yours first is what makes the trade a fair one.", bundle: 'pro' },
+        { q: "It's hard to explain to someone who doesn't do it.", a: "One sentence about why you like it needs no expertise at all.", bundle: 'pro' },
+        { q: "I've bored people with this before.", a: "Probably at minute nine, not minute one. Name it and hand the choice over.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "No Is Not an Answer",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
+      description: "\"If someone asks me something I have to answer it. Saying no would make it into a thing.\"\n\n**What is true instead:** a partial answer, given warmly, is a complete move. It closes the door without saying you mind being asked.\n\n**Why it feels right:** a flat refusal really does make the subject bigger, and the other person really does feel they trod on something.\n\n**What it costs:** it leaves two options and both are bad — stonewalling, or telling a near-stranger something you regret at two in the morning.\n\nMindset: you can give them something without giving them everything.",
+      inputs: [
+        { q: "If they asked, I owe them an answer.", a: "You owe them a reply. The headline is a reply.", bundle: 'pro' },
+        { q: "Saying I'd rather not will make it a huge thing.", a: "Said warmly it lasts four seconds. It's the silence that makes it huge.", bundle: 'pro' },
+        { q: "I've started now, so I have to finish.", a: "\"That's a whole evening's answer and this is a party\" works at any point.", bundle: 'pro' },
+        { q: "They'll think I don't trust them.", a: "Add the four words that fix it: nothing to do with you.", bundle: 'pro' },
+        { q: "It's easier to just tell them everything.", a: "It is, tonight. Ask yourself on the way home whether it still is.", bundle: 'pro' },
+        { q: "If I don't answer they'll assume the worst.", a: "The short version stops that. Give the headline and nothing under it.", bundle: 'pro' },
+        { q: "I can't say \"not now\" to someone I like.", a: "Those are exactly the people you can say it to. \"Ask me again when we know each other better.\"", bundle: 'pro' },
+        { q: "Changing the subject is the only way out.", a: "It's the one they notice. Naming the boundary is the one they don't mind.", bundle: 'pro' },
+      ]
+    },
   ],
   startingconversations1: [
     {
