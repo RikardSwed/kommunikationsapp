@@ -2228,11 +2228,13 @@ const memorizeCollections = {
   apologizing1: [
     {
       name: "Core Idea",
-      description: "The shape of the pack: an everyday apology in four moves.",
+      description: "An everyday apology in four moves: decide the size, say sorry plainly, name what you actually did, and say what will be different.\n\nMost apologies need one or two of them. Anything that genuinely hurt someone belongs to the fuller pack.",
       cards: [
         { q: "What are the four strategies in this pack?", a: "Choose the size, say sorry simply, apologise for what you did, say what you'll do differently.", bundle: 'free' },
         { q: "What is the test for the size?", a: "Did it land on them, or did it only embarrass you?", bundle: 'free' },
         { q: "What is the rule about \"but\"?", a: "There isn't one. The word deletes everything before it.", bundle: 'free' },
+        { q: "What is the shortest complete apology?", a: "Sorry, what you did, and what changes. Under ten seconds.", bundle: 'free' },
+        { q: "Where do most apologies stop?", a: "After the sorry. That is the exposed part, and the plan is what makes it worth anything.", bundle: 'free' },
         { q: "What are the two questions an apology has to answer?", a: "Do you know what you did, and is it going to happen again?", bundle: 'pro' },
         { q: "Which part costs you anything in the future?", a: "The plan.", bundle: 'pro' },
         { q: "When is this pack not enough?", a: "When somebody was genuinely hurt — then the fuller version takes over.", bundle: 'pro' },
@@ -2240,11 +2242,12 @@ const memorizeCollections = {
     },
     {
       name: "Choose the Size",
-      description: "The judgement that comes before everything else.",
       cards: [
         { q: "What is wrong with a full apology for something trivial?", a: "It makes the other person manage your discomfort.", bundle: 'free' },
         { q: "What is wrong with a short apology for something that hurt?", a: "It reads as wanting it dealt with rather than repaired.", bundle: 'free' },
         { q: "Name two things that raise the size.", a: "Any two of: they mentioned it, it has happened before, it is still sitting there days later.", bundle: 'free' },
+        { q: "Whose embarrassment does not count?", a: "Yours. Embarrassment gets a short apology; an actual effect on another person gets a real one.", bundle: 'free' },
+        { q: "When does a repeated small thing change size?", a: "As soon as it is repeated. A small thing that keeps happening has become a big one.", bundle: 'free' },
         { q: "Why does signalling the size matter?", a: "\"Sorry about that\" and \"can I talk to you about yesterday\" prepare people very differently.", bundle: 'pro' },
         { q: "What do you do if a brief apology clearly was not enough?", a: "Go back and do it properly — \"I brushed that off, can we do it again?\"", bundle: 'pro' },
         { q: "What is the mindset line for this move?", a: "Match the depth to the harm, not to your own embarrassment.", bundle: 'pro' },
@@ -2252,11 +2255,12 @@ const memorizeCollections = {
     },
     {
       name: "Say Sorry Simply",
-      description: "The short version, which most things need.",
       cards: [
         { q: "What makes a short apology work?", a: "Being unqualified — no explanation, no \"but\", no context.", bundle: 'free' },
         { q: "Name two ways to keep it short.", a: "Any two of: plain sorry, sorry plus the thing, owning it lightly, sorry plus the fix.", bundle: 'free' },
         { q: "What happens when you add an explanation?", a: "It becomes a defence with the word sorry in front of it.", bundle: 'free' },
+        { q: "How long is a short apology?", a: "One sentence with nothing attached. \"Sorry — I forgot.\"", bundle: 'free' },
+        { q: "Why does a long apology make a small thing worse?", a: "It makes the thing heavier than it was, and then the other person has to manage it.", bundle: 'free' },
         { q: "What is the strongest short version?", a: "Sorry plus the fix — \"sorry, sending it now\".", bundle: 'pro' },
         { q: "What is the discipline after a short apology?", a: "Stopping. Do not upgrade a small thing mid-sentence.", bundle: 'pro' },
         { q: "Why is doing it immediately better than doing it well?", a: "Every apology gets harder the longer it waits.", bundle: 'pro' },
@@ -2264,11 +2268,12 @@ const memorizeCollections = {
     },
     {
       name: "What You Did",
-      description: "The specific, unconditional apology.",
       cards: [
         { q: "What makes an apology specific enough?", a: "Naming exactly what you did, not a general expression of regret.", bundle: 'free' },
         { q: "What three words make it not an apology?", a: "\"If\", \"but\" and \"you\" — as in \"sorry if\", \"sorry but\", \"sorry you felt\".", bundle: 'free' },
         { q: "Name two ways to apologise properly.", a: "Any two of: sorry for the specific action, sorry plus what you should have done, own the part that is yours, say it was wrong rather than unfortunate.", bundle: 'free' },
+        { q: "Why is specificity the proof?", a: "Anyone can say sorry. Naming exactly what you did shows you have understood it.", bundle: 'free' },
+        { q: "What is wrong with \"sorry you were upset\"?", a: "It relocates the problem into their feelings. Nothing in it is about what you did.", bundle: 'free' },
         { q: "What do the three non-apologies have in common?", a: "Each one protects you.", bundle: 'pro' },
         { q: "How do you apologise when you still think you were right?", a: "Precisely for your part — the tone, the timing, the audience — and hold the substance separately.", bundle: 'pro' },
         { q: "What do you do if literally nothing is yours?", a: "Say so kindly rather than performing regret you do not feel.", bundle: 'pro' },
@@ -2276,14 +2281,71 @@ const memorizeCollections = {
     },
     {
       name: "The Plan",
-      description: "The part that costs you something.",
       cards: [
         { q: "Why is this the most important part to someone let down before?", a: "It is the only part that is not words about the past.", bundle: 'free' },
         { q: "How specific should the plan be?", a: "Small enough to be believed, specific enough to be checked.", bundle: 'free' },
         { q: "Name two kinds of plan.", a: "Any two of: a concrete behaviour change, a different response in the same moment, giving them a way to stop it, saying what you will not do.", bundle: 'free' },
+        { q: "What does a plan sound like?", a: "\"I'll put it in the calendar while you're telling me, rather than trusting my memory.\"", bundle: 'free' },
+        { q: "When is the plan actually worth something?", a: "The second time. Until you have been seen to keep it, it is still only words.", bundle: 'free' },
         { q: "What is wrong with \"I'll be more careful\"?", a: "It cannot be checked, so neither of you will know whether anything changed.", bundle: 'pro' },
         { q: "Why does giving them a way to stop it work well?", a: "It hands them some control instead of asking them to trust and wait.", bundle: 'pro' },
         { q: "What do you say when it is the second time you have apologised for the same thing?", a: "Name that fact — \"I said this last time and nothing changed, so this time it's written down\".", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Small or Real** — the size, before anything else\n• **Sorry and Then What** — the specific apology, and the plan\n• **All Four** — no cue given, which is the real thing\n\nThe first is a judgement about the situation. The second is about what an apology has to contain. The third makes you do both at once.",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "Small or Real, Sorry and Then What, and All Four.", bundle: 'pro' },
+        { q: "What does Small or Real make you read?", a: "Whether it landed on them, or only on you.", bundle: 'pro' },
+        { q: "What does Sorry and Then What pair up?", a: "The specific apology and the plan — the two questions the other person actually has.", bundle: 'pro' },
+        { q: "You bumped into someone in a corridor. Which move?", a: "Say Sorry Simply. Three words, and it is finished.", bundle: 'pro' },
+        { q: "You have cancelled on the same friend four times. Which move?", a: "Choose the Size. This one has stopped being small.", bundle: 'pro' },
+        { q: "They ask whether it will happen again. Which move?", a: "The Plan — and it has to be something they could watch you do.", bundle: 'pro' },
+        { q: "Why does All Four mix them with no cue?", a: "Because real apologies arrive without a label. Choosing is the skill.", bundle: 'pro' },
+        { q: "What is the commonest wrong choice in this pack?", a: "The full treatment for something trivial. It hands your discomfort to the other person.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **The Everyday Apology** — Say Sorry Simply → What You Did → The Plan\n2. **The Quick One** — the same opening, plus the discipline of stopping\n3. **When It Is Bigger Than You Thought** — Choose the Size → What You Did → The Plan\n\nThe first two differ only in whether you keep talking. The third begins by correcting the size out loud.",
+      cards: [
+        { q: "What is the order in The Everyday Apology?", a: "Sorry, then what you did, then what changes.", bundle: 'pro' },
+        { q: "Why does the plan come last?", a: "It is the only part about the future. First, it makes the apology sound like a negotiation.", bundle: 'pro' },
+        { q: "What is being drilled in The Quick One?", a: "Stopping. Say it, take what comes back, and get out without inflating it.", bundle: 'pro' },
+        { q: "What goes wrong if you keep talking after a short apology?", a: "It turns into a defence, or it upgrades a small thing into a big one.", bundle: 'pro' },
+        { q: "What starts When It Is Bigger Than You Thought?", a: "Choose the Size — saying out loud that you had the size wrong.", bundle: 'pro' },
+        { q: "Why is that correction itself part of the apology?", a: "It shows you noticed, and that lands better than the small version delivered more sincerely.", bundle: 'pro' },
+        { q: "What do all three sequences end with?", a: "The Plan. Sorry is where it starts, not where it finishes.", bundle: 'pro' },
+        { q: "Which step do people skip in all three?", a: "The plan. It is the only one that costs anything later.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five things that go wrong in an everyday apology:\n\n• **The Non-Apology** — the word sorry, protecting you\n• **Over-Apologising** — four times, at length, for something small\n• **The Plan Is Empty** — a promise nobody could check\n• **You Do Not Think You Were Wrong** — regret you do not feel\n• **It Needs More Than This** — the short version bouncing off\n\nFour of the five are about protecting yourself rather than about them.",
+      cards: [
+        { q: "What are the five challenge categories in this pack?", a: "The Non-Apology, Over-Apologising, The Plan Is Empty, You Do Not Think You Were Wrong, and It Needs More Than This.", bundle: 'pro' },
+        { q: "What do the three non-apologies have in common?", a: "Each protects you — by relocating it, by trading, or by apologising for being in the conversation.", bundle: 'pro' },
+        { q: "Why does apologising four times make it worse?", a: "The other person ends up reassuring you, which turns your mistake into their job.", bundle: 'pro' },
+        { q: "What does constant apologising cost you?", a: "Belief. The size of your apology stops carrying any information.", bundle: 'pro' },
+        { q: "What is wrong with \"it won't happen again\"?", a: "Nobody can check it, so neither of you will know whether anything changed.", bundle: 'pro' },
+        { q: "You still think your position was right. What do you apologise for?", a: "Your part, precisely — the timing, the tone, the audience — and you hold the substance separately.", bundle: 'pro' },
+        { q: "What if literally nothing is yours?", a: "Say so kindly. A performed apology is worse than an honest disagreement.", bundle: 'pro' },
+        { q: "The short version keeps bouncing off. What is missing?", a: "The size, not the sincerity. Showing you understood what it was like for them comes first.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "The four beliefs that get in the way here:\n\n• **No \"But\"** — the context and the apology in one breath\n• **The Plan Is the Proof** — sorry is the whole apology\n• **Small Things Get Small Apologies** — it should match how bad I feel\n• **Say It Straight Away** — I will do it properly later\n\nEach one is a reasonable thought that produces the wrong sentence.",
+      cards: [
+        { q: "What are the four mindset areas in this pack?", a: "No \"But\", The Plan Is the Proof, Small Things Get Small Apologies, and Say It Straight Away.", bundle: 'pro' },
+        { q: "What does the word \"but\" do to an apology?", a: "Deletes everything before it. What is left is a defence with sorry in front of it.", bundle: 'pro' },
+        { q: "Where does the context go, if it genuinely matters?", a: "In a separate sentence, at a different moment, once the apology has landed.", bundle: 'pro' },
+        { q: "Why is the plan the proof?", a: "It is the only part that costs you anything in the future. The rest is words about the past.", bundle: 'pro' },
+        { q: "Should the apology match the harm or your feelings about it?", a: "The harm. Your discomfort is yours to carry.", bundle: 'pro' },
+        { q: "What happens when it matches how bad you feel instead?", a: "They have to reassure you, which is the opposite of what an apology is for.", bundle: 'pro' },
+        { q: "Why does waiting make an apology harder?", a: "By the time you get to it you have to explain the delay as well as the thing.", bundle: 'pro' },
+        { q: "When is doing it badly better than doing it well?", a: "Now rather than next week. The awkward version today beats the polished version late.", bundle: 'pro' },
       ]
     },
   ],
