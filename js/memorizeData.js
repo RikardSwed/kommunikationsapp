@@ -1629,11 +1629,13 @@ const memorizeCollections = {
       name: "Core Idea",
       guideFront: "",
       guideBack: "",
-      description: "The shape of the whole pack: three question words, and the discipline of noticing which one is actually missing.",
+      description: "Three moves, one question word each: What It Is, How It Works, Why It Matters.\n\nWhen someone starts from nothing the order is What, then How, then Why. The skill is hearing which one is actually missing, and answering only that.",
       cards: [
         { q: "What are the three moves in this pack?", a: "What It Is, How It Works, Why It Matters.", bundle: 'free' },
         { q: "Which question word does each move answer?", a: "What, How and Why.", bundle: 'free' },
         { q: "What is the usual order when someone starts from nothing?", a: "What, then How, then Why.", bundle: 'free' },
+        { q: "How do you tell which move someone needs?", a: "The shape of their question. \"What's that?\" wants What; \"how do I…?\" wants How; \"but why would I…?\" wants Why.", bundle: 'free' },
+        { q: "What do you do when they ask nothing and just look lost?", a: "Start with What. Give them something concrete to hold.", bundle: 'free' },
         { q: "Why is What usually first?", a: "Because nothing abstract lands until the listener can picture the thing.", bundle: 'pro' },
         { q: "What is the test of a good explanation?", a: "Whether the other person can now do it or picture it — not how much you covered.", bundle: 'pro' },
         { q: "What does the pack say to do when someone pushes back?", a: "Switch to Why. Resistance is not a request for more detail.", bundle: 'pro' },
@@ -1643,11 +1645,12 @@ const memorizeCollections = {
       name: "What It Is",
       guideFront: "",
       guideBack: "",
-      description: "The move that gives the listener something concrete to hold.",
       cards: [
         { q: "What does \"What It Is\" answer?", a: "If this were in front of you, what would you be looking at?", bundle: 'free' },
         { q: "Name two of the four ways to say what something is.", a: "Any two of: name and category, parts, what it looks like, comparison to something known.", bundle: 'free' },
         { q: "What is the quickest way to make something unfamiliar familiar?", a: "Compare it to something the listener already knows.", bundle: 'free' },
+        { q: "What does a comparison borrow?", a: "Something they already understand. \"It's like a group chat, but only one person can post.\"", bundle: 'free' },
+        { q: "What does naming the parts do?", a: "Breaks it into pieces you could point at. \"A screen on the front and a little wheel on the side, and that's it.\"", bundle: 'free' },
         { q: "What is \"What It Is\" NOT?", a: "It's not what the thing is for, and it's not the steps for using it.", bundle: 'pro' },
         { q: "Why start with the visible details?", a: "Because concrete things give the abstract sentences somewhere to land.", bundle: 'pro' },
         { q: "What is the mindset line for this move?", a: "You're not being complete — you're giving one clear picture they can hold.", bundle: 'pro' },
@@ -1657,11 +1660,12 @@ const memorizeCollections = {
       name: "How It Works",
       guideFront: "",
       guideBack: "",
-      description: "The move that turns understanding into doing.",
       cards: [
         { q: "What is the test for a good How explanation?", a: "Someone could follow it and end up doing the right thing.", bundle: 'free' },
         { q: "Name two of the four ways to explain how something works.", a: "Any two of: step by step, the one move that matters, what you do versus what it does, where people go wrong.", bundle: 'free' },
         { q: "What kind of word should a How sentence contain?", a: "A verb — something someone actually does.", bundle: 'free' },
+        { q: "Why does one step in the right order beat a definition?", a: "Most confusion is not about what something is. It is about what you are supposed to do with it.", bundle: 'free' },
+        { q: "How big should the steps be?", a: "Small, and in the order they actually happen.", bundle: 'free' },
         { q: "Why is naming the common mistake a way of explaining?", a: "Because most confusion is about what to do, and the mistake marks exactly where people go wrong.", bundle: 'pro' },
         { q: "What does \"the one move that matters\" mean?", a: "Skip the rest and give only the step people actually get wrong.", bundle: 'pro' },
         { q: "What separates the person's job from the thing's job?", a: "Saying explicitly what you do and what it handles by itself.", bundle: 'pro' },
@@ -1671,14 +1675,71 @@ const memorizeCollections = {
       name: "Why It Matters",
       guideFront: "",
       guideBack: "",
-      description: "The move that turns a clear explanation into one someone cares about.",
       cards: [
         { q: "What does \"Why It Matters\" name?", a: "The problem the thing solves, or what would be worse without it.", bundle: 'free' },
         { q: "Name two of the four ways to say why something matters.", a: "Any two of: the problem it solves, life without it, who it's for, the single benefit.", bundle: 'free' },
         { q: "Which move is most often skipped?", a: "Why It Matters.", bundle: 'free' },
+        { q: "Why does this move make people care?", a: "Attention follows relevance. Once they see which of their problems it touches, they follow the detail on their own.", bundle: 'free' },
+        { q: "What does \"life without it\" sound like?", a: "Describing the old way. \"Before this you'd ring round four people. Now it's one message.\"", bundle: 'free' },
         { q: "Why does the pack say to make Why specific to the listener?", a: "Because the same object is worth explaining differently to two different people.", bundle: 'pro' },
         { q: "What is an honest answer when there is no benefit for this person?", a: "That they probably don't need it.", bundle: 'pro' },
         { q: "What does a clear explanation still lack without Why?", a: "A reason for the listener to care — \"fine, but so what\".", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **What and How** — practical explanations, where they can see the thing\n• **How and Why** — they can picture it, and are missing the method or the point\n• **All Three** — no cue given, which is the real thing\n\nEach one is really a question about what the listener is already holding.",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "What and How, How and Why, and All Three.", bundle: 'pro' },
+        { q: "What does What and How cover?", a: "Practical explanations — someone holding a thing, or standing in front of a screen.", bundle: 'pro' },
+        { q: "They are frowning at it. Which move?", a: "What It Is. They cannot picture it yet.", bundle: 'pro' },
+        { q: "They are reaching for it. Which move?", a: "How It Works. They can see it and do not know what to do.", bundle: 'pro' },
+        { q: "What does How and Why cover?", a: "Someone who can already picture the thing and is missing either the method or the point.", bundle: 'pro' },
+        { q: "They are willing but stuck. Which move?", a: "How It Works.", bundle: 'pro' },
+        { q: "They push back on the idea. Which move?", a: "Why It Matters. Resistance is almost never a request for more detail.", bundle: 'pro' },
+        { q: "What is the rule in All Three?", a: "Answer the question they asked, not the one you find most interesting to answer.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and what each one runs:\n\n1. **The Full Explanation** — What → How → Why, for someone starting from nothing\n2. **When They Only Need One Piece** — answering the missing one and stopping\n3. **Explaining Something You Half Understand** — marking where your knowledge ends\n\nThe first is the order. The other two are about restraint — saying less, and saying what you do not know.",
+      cards: [
+        { q: "What is the order in The Full Explanation?", a: "What It Is, then How It Works, then Why It Matters.", bundle: 'pro' },
+        { q: "Why not open with Why?", a: "It lands on nothing while the listener still cannot picture the object.", bundle: 'pro' },
+        { q: "What do you do between the steps?", a: "Pause. If they nod, go on. If they frown, stay where you are.", bundle: 'pro' },
+        { q: "What is being practised in When They Only Need One Piece?", a: "Hearing which piece is missing, and answering only that.", bundle: 'pro' },
+        { q: "Why is the full tour a way of not listening?", a: "They already had two of the three. You gave them the version you had ready.", bundle: 'pro' },
+        { q: "What is the move when you only half understand it?", a: "Give the part you are sure about, mark the edge clearly, and do not fill the gap.", bundle: 'pro' },
+        { q: "Why does marking the edge cost so little?", a: "It makes everything inside the edge more trustworthy.", bundle: 'pro' },
+        { q: "What does a confident wrong answer do?", a: "Travels further than an uncertain one, because the listener cannot tell the difference.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five things that go wrong when you explain something:\n\n• **They Already Know** — you are halfway in before you notice\n• **Too Much Detail** — curious, then glazed\n• **The Wrong Level** — patronising, or nodding at nothing\n• **But Why Would I Need That** — clear, and they still do not care\n• **You Don't Fully Know** — the plausible gap-filler\n\nFour of the five are about misreading the listener rather than the subject.",
+      cards: [
+        { q: "What are the five challenge categories in this pack?", a: "They Already Know, Too Much Detail, The Wrong Level, But Why Would I Need That, and You Don't Fully Know.", bundle: 'pro' },
+        { q: "You realise halfway that they knew this already. What do you do?", a: "Hand it back. Ask what they already have, and pick up from there.", bundle: 'pro' },
+        { q: "What usually causes the glaze?", a: "What, at four levels of depth, before you reached How.", bundle: 'pro' },
+        { q: "How do you recover from too much detail?", a: "Stop and offer the one-sentence version. It is usually what they wanted.", bundle: 'pro' },
+        { q: "How do you avoid pitching at the wrong level?", a: "Ask rather than guess, and make the asking sound like conversation rather than a test.", bundle: 'pro' },
+        { q: "They understood it perfectly and still do not care. What is wrong?", a: "Nothing about the comprehension. Switch to Why, made specific to them.", bundle: 'pro' },
+        { q: "What if there genuinely is no reason for this person?", a: "Say so. \"You probably don't need it\" is a fine answer.", bundle: 'pro' },
+        { q: "What is the dangerous move when you only partly know?", a: "Filling the gap with something plausible. They cannot tell, and they carry it away as fact.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "The four beliefs that get in the way here:\n\n• **Explaining Is Not Performing** — sounding like someone who knows\n• **Their Confusion Is Information** — a frown is a verdict on me\n• **Short Is Not Rude** — a brief answer is dismissive\n• **You Are Allowed Not To Know** — I should have an answer\n\nAll four pull in the same direction: longer, more complete, and less use to the listener.",
+      cards: [
+        { q: "What are the four mindset areas in this pack?", a: "Explaining Is Not Performing, Their Confusion Is Information, Short Is Not Rude, and You Are Allowed Not To Know.", bundle: 'pro' },
+        { q: "What does wanting to sound knowledgeable pull you towards?", a: "Completeness, jargon and length — all three of which make the listener understand less.", bundle: 'pro' },
+        { q: "What is an explanation actually measured by?", a: "Whether the other person can now do or picture the thing.", bundle: 'pro' },
+        { q: "What does a frown tell you?", a: "Which of the three moves you skipped. It is data, not a verdict.", bundle: 'pro' },
+        { q: "What do embarrassment and impatience both produce?", a: "The same words again, slightly louder.", bundle: 'pro' },
+        { q: "Why do people over-explain out of politeness?", a: "A short answer feels dismissive. The effect is the opposite of what was intended.", bundle: 'pro' },
+        { q: "What does a short answer respect?", a: "Their time and their intelligence. If they want more they will ask, and the asking tells you what to add.", bundle: 'pro' },
+        { q: "Why is the boundary of your knowledge part of the explanation?", a: "Marking it makes everything inside it more trustworthy.", bundle: 'pro' },
       ]
     },
   ],
@@ -2352,12 +2413,13 @@ const memorizeCollections = {
   agreeing: [
     {
       name: "Core Idea",
-      description: "The concept behind agreeing and the full set of moves.",
+      description: "Four moves for agreeing well: signal that you are with them, then add something of your own — an experience, a reason, or a further thought.\n\nThe signal on its own is not agreement. The one thing that never works is agreeing and stopping.",
       cards: [
         { q: "What is the goal when you agree with someone?", a: "Show you're with them AND add something — a reason, an experience, or a further idea.", bundle: 'free' },
         { q: "What are the four moves in this pack?", a: "Signal the Agreement, Add a Personal Experience, Why It Makes Sense, Expand the Idea.", bundle: 'free' },
         { q: "What are the two halves of a full agreeing turn?", a: "The signal that you agree, then the contribution that gives it substance.", bundle: 'free' },
         { q: "What is the one thing that never works?", a: "Agreeing and stopping. \"Yeah, totally\" on its own adds nothing.", bundle: 'free' },
+        { q: "Why is the signal on its own not enough?", a: "It is the doorway, not the room. Three warm signals in a row read as not listening.", bundle: 'free' },
         { q: "How do you choose your contribution?", a: "Take what you have — a story if you've lived it, a reason if you haven't, an expansion if the point is already made.", bundle: 'pro' },
         { q: "What should you do before responding at all?", a: "Listen to the whole statement, so you agree with what they actually said.", bundle: 'pro' },
         { q: "What if you only half agree?", a: "Narrow it. \"I agree, especially when...\" is honest agreement, not a dodge.", bundle: 'pro' },
@@ -2365,57 +2427,123 @@ const memorizeCollections = {
     },
     {
       name: "Signal the Agreement",
-      description: "The theory behind the opening confirmation.",
       cards: [
         { q: "What is Signal the Agreement?", a: "A short, warm confirmation that you're on their side, before you add anything.", bundle: 'free' },
         { q: "What does it sound like?", a: "\"I totally agree.\" / \"That's so true.\" / \"Exactly.\"", bundle: 'free' },
         { q: "Why bother with it?", a: "It makes what follows land as agreement rather than as a correction.", bundle: 'free' },
+        { q: "What are the three strengths of signal?", a: "Full agreement, shared feeling, or recognition — \"you've just described my whole week\".", bundle: 'free' },
+        { q: "What happens if you skip it?", a: "Even a supportive point can read like a correction.", bundle: 'free' },
         { q: "What matters more than the words?", a: "Warmth. A plain \"yes, exactly\" said like you mean it beats a clever line said flatly.", bundle: 'pro' },
         { q: "What is the failure mode?", a: "Only ever signalling — by the third \"so true\" it sounds like you've stopped listening.", bundle: 'pro' },
+        { q: "What is this move doing that the other three are not?", a: "Buying goodwill. It is the only one that is purely about being on their side.", bundle: 'pro' },
       ]
     },
     {
       name: "Add a Personal Experience",
-      description: "The theory behind backing agreement with your own life.",
       cards: [
         { q: "What is Add a Personal Experience?", a: "Agreeing, then backing it with something that actually happened to you.", bundle: 'free' },
         { q: "What does it sound like?", a: "\"Same here — I always...\" / \"I've done that for years.\"", bundle: 'free' },
         { q: "Why is it the easiest support to give?", a: "You don't have to argue for it. It's simply true.", bundle: 'free' },
+        { q: "When is this the move to reach for?", a: "When the opinion is about something you have actually lived.", bundle: 'free' },
+        { q: "Why does it make the agreement concrete?", a: "It turns a polite yes into something that happened.", bundle: 'free' },
         { q: "What three kinds of experience can you reach for?", a: "A habit, a one-off memory, or a long-running pattern.", bundle: 'pro' },
         { q: "How impressive does it need to be?", a: "Not at all. A small ordinary detail proves you mean it better than a big claim.", bundle: 'pro' },
+        { q: "What is the failure mode?", a: "Reaching for something impressive instead of something true, and finding nothing to say.", bundle: 'pro' },
       ]
     },
     {
       name: "Why It Makes Sense",
-      description: "The theory behind saying why the opinion makes sense.",
       cards: [
         { q: "What is Why It Makes Sense?", a: "Agreeing, then saying why it makes sense — the reason rather than an example.", bundle: 'free' },
         { q: "What does it sound like?", a: "\"Another reason is...\" / \"I feel the same way, because...\" / \"I agree, especially when...\"", bundle: 'free' },
         { q: "When is it the right move?", a: "Whenever you share the opinion but have no experience of it to offer.", bundle: 'free' },
+        { q: "How long should the reason be?", a: "One clause is usually enough.", bundle: 'free' },
+        { q: "Why does this feel generous rather than like an echo?", a: "You are handing them an argument they can use.", bundle: 'free' },
         { q: "What are the three ways to explain?", a: "Add a reason they didn't mention, name the mechanism, or narrow to where it's most true.", bundle: 'pro' },
         { q: "What is the failure mode?", a: "Explaining at length — it starts to sound like you understand their point better than they do.", bundle: 'pro' },
+        { q: "Why is this the version that works everywhere?", a: "A reason is always available. A story is not.", bundle: 'pro' },
       ]
     },
     {
       name: "Expand the Idea",
-      description: "The theory behind pushing the thought one step further.",
       cards: [
         { q: "What is Expand the Idea?", a: "Agreeing, then adding a related point that goes beyond what they said.", bundle: 'free' },
         { q: "What does it sound like?", a: "\"Exactly, and you could also say...\" / \"Yes — and the same goes for...\"", bundle: 'free' },
         { q: "How is it different from the other two moves?", a: "They support the point. An expansion gives the other person something new to react to.", bundle: 'free' },
+        { q: "When is an expansion the right move?", a: "When the point is already made and everyone agrees. More support adds nothing.", bundle: 'free' },
+        { q: "What is the tell that a point wants expanding?", a: "The energy. A point that has landed and gone quiet wants somewhere to go.", bundle: 'free' },
         { q: "What are the three ways to expand?", a: "Take it further, apply it somewhere else, or name what follows from it.", bundle: 'pro' },
         { q: "How far is too far?", a: "One step, not five. If they have to catch up, you've changed the subject.", bundle: 'pro' },
+        { q: "What turns an expansion into competing?", a: "Hoping they notice you thought of it. Done warmly, it hands them the ball.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Experience or Reason** — which kind of backing you actually have\n• **Back It Up or Take It Further** — support the point, or move past it\n• **Any Way of Agreeing** — no cue given, which is the real thing\n\nThe first reads what you have. The second reads whether the point still needs help.",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "Experience or Reason, Back It Up or Take It Further, and Any Way of Agreeing.", bundle: 'pro' },
+        { q: "What decides between experience and reason?", a: "Simply what you have to hand. If you have lived it, use it.", bundle: 'pro' },
+        { q: "You share the opinion but have never lived it. Which move?", a: "Why It Makes Sense. A reason is always available.", bundle: 'pro' },
+        { q: "What does Back It Up or Take It Further read?", a: "Whether the opinion still needs help, or has already landed.", bundle: 'pro' },
+        { q: "Everyone has agreed and the point is hanging there. Which move?", a: "Expand the Idea. More support adds nothing now.", bundle: 'pro' },
+        { q: "The opinion was just stated and hangs there unsupported. Which move?", a: "Back it up — your own experience, or the reason behind it.", bundle: 'pro' },
+        { q: "What does Any Way of Agreeing add that the other two do not?", a: "No cue. You read the moment and pick, which is what real agreeing is.", bundle: 'pro' },
+        { q: "What is the one choice that never works?", a: "Agreeing and stopping. Pick any of the three contributions, but pick one.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **Agree and Back It Up** — signal → experience → expansion\n2. **Agree with a Reason** — signal → reason → expansion, for opinions you have not lived\n3. **Keep It Going** — signal → expansion → experience, deliberately reversed\n\nThe third changes the order on purpose, so that they get to speak before you have finished.",
+      cards: [
+        { q: "What is the order in Agree and Back It Up?", a: "Signal, then your own experience, then one step further.", bundle: 'pro' },
+        { q: "What does each step do there?", a: "The signal buys goodwill, the experience makes it real, the expansion gives it somewhere to go.", bundle: 'pro' },
+        { q: "Which step do people skip?", a: "The expansion. Without it the agreement is warm but finished.", bundle: 'pro' },
+        { q: "What is Agree with a Reason for?", a: "Opinions you share but have never lived. It works everywhere, because a reason is always available.", bundle: 'pro' },
+        { q: "Why does the signal come before the reason?", a: "It stops the reason sounding like a correction.", bundle: 'pro' },
+        { q: "Why is Keep It Going reversed?", a: "Expanding before your own story invites them to speak second rather than closing the topic yourself.", bundle: 'pro' },
+        { q: "Why is a new angle easier to answer than a finished story?", a: "A story is complete. An angle has a gap in it.", bundle: 'pro' },
+        { q: "What does the best version of agreeing end with?", a: "Both of you having said something.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five things that get in the way of agreeing well:\n\n• **You Agree But Have Nothing to Add** — the blank after \"yeah, totally\"\n• **You Only Half Agree** — a full yes would be a small lie\n• **Agreeing Without Sounding Like an Echo** — three signals in a row\n• **An Opinion You Know Nothing About** — agreement without expertise\n• **Agreeing in a Group** — the fourth yes\n\nFour of the five are about having nothing to add, or too little.",
+      cards: [
+        { q: "What are the five challenge categories in this pack?", a: "You Agree But Have Nothing to Add, You Only Half Agree, Agreeing Without Sounding Like an Echo, An Opinion You Know Nothing About, and Agreeing in a Group.", bundle: 'pro' },
+        { q: "Your head is empty and you genuinely agree. What is the fix?", a: "One clause of why it makes sense. You do not need material, you need a reason.", bundle: 'pro' },
+        { q: "You agree with part of it and not the rest. What do you do?", a: "Narrow it honestly. \"I agree, especially when…\" is a whole sentence of honesty.", bundle: 'pro' },
+        { q: "When is half-agreeing the wrong pack?", a: "When you do not agree at all. That is a different skill.", bundle: 'pro' },
+        { q: "You have said \"exactly\" three times. What is the way out?", a: "Your own experience, or an expansion — either can only come from someone who was listening.", bundle: 'pro' },
+        { q: "The subject is completely outside your experience. How do you agree?", a: "Warmly, without dressing it up as experience — or expand it into something you do know.", bundle: 'pro' },
+        { q: "Three people have already agreed. What is the move?", a: "Skip the signal and go straight to something nobody else has said.", bundle: 'pro' },
+        { q: "Why does silence in a group read badly?", a: "It reads as disagreement, even when it is not.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "The four beliefs that get in the way here:\n\n• **Agreeing Is Passive** — only disagreement is interesting\n• **I Have My Example Ready** — composing before they have finished\n• **Mine Is Too Ordinary** — my life is not material\n• **Mine Should Be Better** — the expansion as a way of going one better\n\nThe first keeps people silent. The other three spoil the contribution once it arrives.",
+      cards: [
+        { q: "What are the four mindset areas in this pack?", a: "Agreeing Is Passive, I Have My Example Ready, Mine Is Too Ordinary, and Mine Should Be Better.", bundle: 'pro' },
+        { q: "What does the belief that agreeing is passive produce?", a: "Silence, or an objection you do not actually hold.", bundle: 'pro' },
+        { q: "Does agreeing mean you have no opinion of your own?", a: "The contribution is your opinion. That is the point of adding one.", bundle: 'pro' },
+        { q: "What goes wrong if you compose while they are still talking?", a: "You agree with the topic rather than their actual point, and your addition quietly corrects them.", bundle: 'pro' },
+        { q: "How ordinary can a personal experience be?", a: "Completely. \"I read by the window\" is plenty.", bundle: 'pro' },
+        { q: "Does it have to be recent, or a story?", a: "Neither. A habit from years ago works, and a single detail counts as an experience.", bundle: 'pro' },
+        { q: "What is the tell that an expansion has become competing?", a: "Hoping they notice you thought of it, rather than hoping they take it further.", bundle: 'pro' },
+        { q: "How do you know the expansion worked?", a: "They run with it.", bundle: 'pro' },
       ]
     },
   ],
   disagreeing: [
     {
       name: "Core Idea",
-      description: "The shape of the pack: four moves, mirroring Agreeing, and the principle that disagreement is a contribution rather than a contest.",
+      description: "Four moves for putting a different view on the table: signal it, give one reason, widen the picture, add an example.\n\nIt mirrors Agreeing move for move. The aim is a better shared picture, not a winner.",
       cards: [
         { q: "What are the four moves in this pack?", a: "Signal the Disagreement, Give Your Reason, A Wider Picture, Add an Example.", bundle: 'free' },
         { q: "Which pack is this the mirror of?", a: "Agreeing — same four-move shape.", bundle: 'free' },
         { q: "What is the aim of a disagreement, according to this pack?", a: "A better shared picture, not a winner.", bundle: 'free' },
+        { q: "What does a disagreement need before it can be discussed?", a: "A reason. A bare position can only be repeated at the other person.", bundle: 'free' },
+        { q: "When is the best moment to raise a disagreement?", a: "Early. The same point after a decision costs everyone the work already done.", bundle: 'free' },
         { q: "Why signal before disagreeing?", a: "Because most defensiveness comes from surprise, not from the disagreement itself.", bundle: 'pro' },
         { q: "What usually causes the conflict in a disagreement?", a: "How it was said, or how late it surfaced — not the difference itself.", bundle: 'pro' },
         { q: "When is choosing not to disagree the right move?", a: "When the difference changes nothing, or it is someone else's call — and only if you can genuinely let it go.", bundle: 'pro' },
@@ -2423,11 +2551,12 @@ const memorizeCollections = {
     },
     {
       name: "Signal the Disagreement",
-      description: "The short phrase that tells them what kind of sentence is coming.",
       cards: [
         { q: "What does signalling actually do?", a: "Tells them a different view is coming, so it lands as a contribution rather than a correction.", bundle: 'free' },
         { q: "Give two signalling phrases.", a: "Any two of: \"I see it differently\", \"I'm not sure I agree\", \"I'd say the opposite\", \"my experience is different\".", bundle: 'free' },
         { q: "What does it mean to own it as yours?", a: "Frame it as your view rather than as the truth — \"for me it's the other way round\".", bundle: 'free' },
+        { q: "When is a signal most worth it?", a: "When the disagreement will be a surprise, or they have been talking as though everyone agrees.", bundle: 'free' },
+        { q: "What does an unsignalled disagreement feel like?", a: "A correction. The defensiveness comes from the surprise, not from the difference.", bundle: 'free' },
         { q: "What is the mindset line for this move?", a: "You are not asking permission to disagree — you are saying what comes next.", bundle: 'pro' },
         { q: "How do you acknowledge and still turn?", a: "Take their point seriously first, then state your own — \"I get why you'd say that. I still land elsewhere.\"", bundle: 'pro' },
         { q: "How do you signal interest rather than conflict?", a: "Treat the difference as the interesting part — \"we're opposite on this, say more?\"", bundle: 'pro' },
@@ -2435,11 +2564,12 @@ const memorizeCollections = {
     },
     {
       name: "Give Your Reason",
-      description: "The move that makes a disagreement discussable.",
       cards: [
         { q: "Why is a disagreement without a reason a problem?", a: "Positions can only be repeated at each other; reasons can be discussed.", bundle: 'free' },
         { q: "Name two kinds of reason.", a: "Any two of: from your own experience, from a consequence, from a value, from something they have not accounted for.", bundle: 'free' },
         { q: "How many reasons should you give?", a: "One, properly.", bundle: 'free' },
+        { q: "What does a reason give the other person?", a: "Something to engage with — to agree with, to challenge, or to find they had not considered.", bundle: 'free' },
+        { q: "What does a reason from a value sound like?", a: "What you think matters here. \"I'd rather be slow and get it right than fast and redo it.\"", bundle: 'free' },
         { q: "Why not give three reasons at once?", a: "It invites them to argue with the weakest one.", bundle: 'pro' },
         { q: "Why is a reason from your own experience strong?", a: "It is honest and hard to argue with — it happened to you.", bundle: 'pro' },
         { q: "What does \"from a consequence\" mean?", a: "Saying where the thing leads rather than what is wrong with it now.", bundle: 'pro' },
@@ -2447,11 +2577,12 @@ const memorizeCollections = {
     },
     {
       name: "A Wider Picture",
-      description: "The move that widens the picture instead of contradicting it.",
       cards: [
         { q: "What is this move doing?", a: "Adding a way of looking at the thing, not passing a verdict on theirs.", bundle: 'free' },
         { q: "Name two ways to open a different view.", a: "Any two of: change the frame, change the timescale, change whose eyes, accept part and separate the rest.", bundle: 'free' },
         { q: "Why is an addition easier to accept than a contradiction?", a: "A contradiction invites people to dig in; an addition invites them to step sideways.", bundle: 'free' },
+        { q: "What does changing the frame mean?", a: "Same facts, different lens. \"You're seeing it as a cost; I'd call it the price of not doing it twice.\"", bundle: 'free' },
+        { q: "When is perspective the right move rather than an example?", a: "When they are treating their view as the only sensible one.", bundle: 'free' },
         { q: "What does \"change the timescale\" look like?", a: "Short term against long term — slower this month, faster from March.", bundle: 'pro' },
         { q: "What does \"change whose eyes\" mean?", a: "Looking from someone else's position — true for us, confusing for a new person.", bundle: 'pro' },
         { q: "How do you accept part and separate the rest?", a: "Keep what is right and isolate the difference — \"the problem is real, it's the solution I'd change\".", bundle: 'pro' },
@@ -2459,25 +2590,84 @@ const memorizeCollections = {
     },
     {
       name: "Add an Example",
-      description: "The move that makes a view concrete — one instance, kept short.",
       cards: [
         { q: "How many examples should you give?", a: "One. A second usually weakens the first.", bundle: 'free' },
         { q: "Name two kinds of example.", a: "Any two of: something that happened to you, something you both know, a case where their view holds and one where it does not, a small hypothetical.", bundle: 'free' },
         { q: "What is the boundary against Giving Examples?", a: "Here the example is one supporting line; building and choosing examples is its own skill.", bundle: 'free' },
+        { q: "How long should the example be?", a: "One or two sentences. Anything with a middle has become a story.", bundle: 'free' },
+        { q: "When is an example the right move rather than perspective?", a: "When they have understood your view and simply do not believe it.", bundle: 'free' },
         { q: "Why does one example beat more reasoning?", a: "It gives them something to picture and check against their own experience.", bundle: 'pro' },
         { q: "What makes a personal example work?", a: "Being specific and small — dated, concrete, one instance.", bundle: 'pro' },
         { q: "When is a hypothetical the right choice?", a: "When you have no real case — \"say someone joins next week and reads that page\".", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Opening the Difference** — signal, or go straight to the reason\n• **Widening It** — perspective, or a concrete case\n• **All Four** — no cue given, which is the real thing\n\nThe first is about getting the difference named. The second is about what to do once it is on the table.",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "Opening the Difference, Widening It, and All Four.", bundle: 'pro' },
+        { q: "What does Opening the Difference make you choose between?", a: "Signalling first, or going straight to the reason.", bundle: 'pro' },
+        { q: "When do you skip the signal?", a: "When the disagreement is already obvious and the signal would only delay things.", bundle: 'pro' },
+        { q: "What does Widening It make you choose between?", a: "A wider picture, and a concrete example.", bundle: 'pro' },
+        { q: "They are treating their view as the only sensible one. Which move?", a: "A Wider Picture — give them somewhere to step sideways.", bundle: 'pro' },
+        { q: "They have understood you and simply do not believe you. Which move?", a: "Add an Example. One real case, kept short.", bundle: 'pro' },
+        { q: "What is the starting shape in All Four?", a: "Signal, reason, then perspective or example — but it is a shape, not a script.", bundle: 'pro' },
+        { q: "What decides between perspective and example at the end?", a: "Whether they have misunderstood you, or simply disagree.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **The Full Disagreement** — signal → reason → wider picture → example\n2. **When They Push Back Hard** — signal → wider picture → reason, at a lower volume\n3. **When You Change Your Mind** — wider picture → reason → example, conceding cleanly\n\nThe first is the shape. The other two are what it looks like when the conversation gets warm, or when they turn out to be right.",
+      cards: [
+        { q: "What is the order in The Full Disagreement?", a: "Signal, reason, wider picture, example.", bundle: 'pro' },
+        { q: "What is the commonest failure in that sequence?", a: "Running your own four moves regardless of their replies. That is two speeches, not a conversation.", bundle: 'pro' },
+        { q: "What changes in When They Push Back Hard?", a: "Perspective comes before the reason, and you do not match their volume.", bundle: 'pro' },
+        { q: "How do you hold a position and stay easy to talk to?", a: "Acknowledge what is fair in what they said, and leave your own sentence unchanged.", bundle: 'pro' },
+        { q: "What is the point of When You Change Your Mind?", a: "Conceding is a move in a disagreement, not a defeat.", bundle: 'pro' },
+        { q: "What separates a real change of mind from giving up?", a: "Saying what changed it. Without that it reads as ending the conversation.", bundle: 'pro' },
+        { q: "Why does conceding cleanly help you later?", a: "People are far more willing to hear you next time if your agreement means something.", bundle: 'pro' },
+        { q: "What do all three sequences have in common?", a: "Every step answers what they actually said, rather than continuing your own list.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five things that get in the way of disagreeing well:\n\n• **They Take It Personally** — the idea and the person get merged\n• **You Are Outnumbered** — everyone else has already agreed\n• **They Will Not Give a Reason** — the position, louder\n• **You Might Be Wrong** — arguing from momentum\n• **It Is Not Worth It** — the difference that changes nothing\n\nThree of the five are about what you do when the disagreement stops going well.",
+      cards: [
+        { q: "What are the five challenge categories in this pack?", a: "They Take It Personally, You Are Outnumbered, They Will Not Give a Reason, You Might Be Wrong, and It Is Not Worth It.", bundle: 'pro' },
+        { q: "They heard your disagreement as a judgement about them. What do you do?", a: "Separate the two out loud — say what you are not saying — and then return to the point.", bundle: 'pro' },
+        { q: "Everyone else in the room has agreed. What is the move?", a: "Signal early and keep it short. A late, elaborate objection is much harder for a group to absorb.", bundle: 'pro' },
+        { q: "Why is it worth ten seconds of discomfort to be the only one?", a: "You are adding information the room does not have.", bundle: 'pro' },
+        { q: "They keep restating instead of explaining. What works?", a: "A genuine question about their reasoning. Repeating your own reason produces the same loop, louder.", bundle: 'pro' },
+        { q: "You notice mid-argument that your reason is weaker than you thought.", a: "Say so. Concede the part that has gone, and be specific about what has not.", bundle: 'pro' },
+        { q: "Why is changing your mind in public useful?", a: "It is what makes people trust your agreement later.", bundle: 'pro' },
+        { q: "When is choosing not to disagree a legitimate move?", a: "When it is a choice rather than an avoidance, and when you can genuinely let it go.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "The four beliefs that get in the way here:\n\n• **Disagreement Is Not Conflict** — saying so is the first step to a row\n• **You Do Not Have to Win** — this is something to be won\n• **Say It Early** — I will raise it once I am sure\n• **Their View Came From Somewhere** — how could anyone think that\n\nEach one is a reasonable thought that produces either silence or a contest.",
+      cards: [
+        { q: "What are the four mindset areas in this pack?", a: "Disagreement Is Not Conflict, You Do Not Have to Win, Say It Early, and Their View Came From Somewhere.", bundle: 'pro' },
+        { q: "Why is a stated difference calmer than an unstated one?", a: "Two people holding different views is the ordinary state of things. It is the silence that builds.", bundle: 'pro' },
+        { q: "What does treating a disagreement as winnable do to the other person?", a: "Makes them an opponent, and opponents defend rather than think.", bundle: 'pro' },
+        { q: "What does it do to you?", a: "Makes it very hard to change your own mind, because that starts to feel like losing.", bundle: 'pro' },
+        { q: "When does a disagreement stop being a contribution?", a: "After the decision. Then it is an obstacle, and it costs them work they have already done.", bundle: 'pro' },
+        { q: "How expensive is the awkward moment?", a: "Small and brief now. Carried by everyone if you wait.", bundle: 'pro' },
+        { q: "Someone holds a view that seems obviously wrong. What is the useful question?", a: "Not how they could think that, but what they have seen that you have not.", bundle: 'pro' },
+        { q: "Why ask about the experience rather than argue with the conclusion?", a: "It works better, and occasionally it turns out they are right.", bundle: 'pro' },
       ]
     },
   ],
   persuasionandinfluence1: [
     {
       name: "Core Idea",
-      description: "The shape of the pack: four strategies that put something on the table.",
+      description: "Four strategies for making a case: name what they get, give one reason, say what doing nothing costs, and tell them what happened to you.\n\nEach puts material on the table rather than working on their resistance. One at a time, then listen.",
       cards: [
         { q: "What are the four strategies in this pack?", a: "Show the benefit to them, give a reason, name the cost of doing nothing, tell what happened to you.", bundle: 'free' },
         { q: "What do all four have in common?", a: "Each puts material on the table, rather than working on the other person's resistance.", bundle: 'free' },
         { q: "What decides which one to use?", a: "Why they have not agreed yet — not which strategy is strongest.", bundle: 'free' },
+        { q: "What do you use when they think changing nothing is free?", a: "The cost of doing nothing. Say what the current way is already taking.", bundle: 'free' },
+        { q: "Why not make all four cases at once?", a: "Four in a row is a presentation, and people brace against presentations.", bundle: 'free' },
         { q: "What do you use when they have not engaged at all?", a: "The benefit, or the cost of doing nothing — something has to make it their business.", bundle: 'pro' },
         { q: "What do you use when they have heard the argument and are unmoved?", a: "What happened to you, because it asks them to concede nothing.", bundle: 'pro' },
         { q: "Where does influence stop and pressure begin?", a: "When their interest is only in your framing, not really in your case.", bundle: 'pro' },
@@ -2485,11 +2675,12 @@ const memorizeCollections = {
     },
     {
       name: "What They Get",
-      description: "The strategy that answers \"what does this do for me\".",
       cards: [
         { q: "What does this strategy name?", a: "What improves for them specifically if it happens.", bundle: 'free' },
         { q: "Name two kinds of benefit.", a: "Any two of: what they gain, what they avoid, what it makes possible later, admitting there is none.", bundle: 'free' },
         { q: "Why is what they avoid often stronger than what they gain?", a: "Losses feel bigger than gains.", bundle: 'free' },
+        { q: "What makes a benefit land?", a: "Being specific and true. A vague one sounds like sales talk.", bundle: 'free' },
+        { q: "When is this the move to reach for?", a: "When they have no stake in the question at all.", bundle: 'free' },
         { q: "What do you do when there is genuinely nothing in it for them?", a: "Say so — you are asking a favour, not making a case.", bundle: 'pro' },
         { q: "What is the test before you speak?", a: "Whether you can say what they get. If not, the proposal is not finished.", bundle: 'pro' },
         { q: "Why do most proposals miss this?", a: "They are presented entirely from the proposer's side.", bundle: 'pro' },
@@ -2497,11 +2688,12 @@ const memorizeCollections = {
     },
     {
       name: "Give a Reason",
-      description: "The strategy that turns a request into something to consider.",
       cards: [
         { q: "How many reasons should you give?", a: "One, properly. Three invites them to argue with the weakest.", bundle: 'free' },
         { q: "Name two kinds of reason.", a: "Any two of: from experience, from a consequence, from something they have not accounted for, honestly marked as opinion.", bundle: 'free' },
         { q: "What do you do when you have no evidence?", a: "Say so, and give your view as a view.", bundle: 'free' },
+        { q: "What is the strongest kind of reason?", a: "One from experience — yours or the group's. \"We tried it the other way in March and lost a week.\"", bundle: 'free' },
+        { q: "What does a reason from a consequence sound like?", a: "Where each option leads. \"If we leave it to Friday, nobody's around to fix it.\"", bundle: 'free' },
         { q: "Why is inventing evidence unrecoverable?", a: "When it is checked, everything else you said goes with it.", bundle: 'pro' },
         { q: "How do you quote something you read?", a: "With its source, and marked as their number rather than yours.", bundle: 'pro' },
         { q: "What does a reason change about a request?", a: "It invites consideration instead of a yes-or-no reflex.", bundle: 'pro' },
@@ -2509,11 +2701,12 @@ const memorizeCollections = {
     },
     {
       name: "The Cost of Doing Nothing",
-      description: "The strategy that makes the comparison honest.",
       cards: [
         { q: "Why is the cost of the status quo usually invisible?", a: "Everyone has been paying it long enough to stop noticing.", bundle: 'free' },
         { q: "What question does this strategy change?", a: "From \"is this worth doing\" to \"is this worth more than what we're already losing\".", bundle: 'free' },
         { q: "Name two ways to name the cost.", a: "Any two of: count what it costs now, name the repeat, name who is carrying it, say what it stops you doing.", bundle: 'free' },
+        { q: "What are most proposals compared against?", a: "An imagined free alternative in which nothing changes and nothing is spent.", bundle: 'free' },
+        { q: "What does the opportunity-cost version sound like?", a: "What it stops you doing. \"While we're firefighting this, nobody's touching the backlog.\"", bundle: 'free' },
         { q: "Why should the cost be stated without drama?", a: "An exaggerated cost invites an argument about the exaggeration.", bundle: 'pro' },
         { q: "Which version is often the most persuasive?", a: "Naming who is carrying it, especially when they are not in the room.", bundle: 'pro' },
         { q: "What is the mindset line for this strategy?", a: "Doing nothing is not a neutral option — it is a cost you are used to.", bundle: 'pro' },
@@ -2521,14 +2714,71 @@ const memorizeCollections = {
     },
     {
       name: "Your Own Story",
-      description: "The strategy that asks the listener to concede nothing.",
       cards: [
         { q: "Why does a first-hand account slip past resistance?", a: "They are not agreeing with an argument, they are hearing what happened.", bundle: 'free' },
         { q: "How long should it be?", a: "Two or three sentences.", bundle: 'free' },
         { q: "Name two versions of it.", a: "Any two of: the time it worked, the time it did not, the time you were wrong, what you saw someone else do.", bundle: 'free' },
+        { q: "When is this the move to reach for?", a: "When they have heard the argument and are unmoved.", bundle: 'free' },
+        { q: "What do you use when you have no case of your own?", a: "What you saw someone else do. \"The other team switched last year and haven't gone back.\"", bundle: 'free' },
         { q: "Which version is most persuasive?", a: "The time you were wrong — it costs you something.", bundle: 'pro' },
         { q: "What happens if the account runs long?", a: "It stops being evidence and becomes an anecdote people wait out.", bundle: 'pro' },
         { q: "What do you say when they claim your case was different?", a: "Concede the differences and name the part that is the same.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Their Side or Yours** — the benefit to them, or what happened to you\n• **Two Sides of the Same Argument** — the reason, and what nothing costs\n• **All Four** — no cue given, which is the real thing\n\nThe first two are pairs that come from opposite directions. The third makes you read why they have not agreed.",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "Their Side or Yours, Two Sides of the Same Argument, and All Four.", bundle: 'pro' },
+        { q: "Why are the benefit and your own story opposite directions?", a: "One is about them and their week. The other is about you, and asks them to concede nothing.", bundle: 'pro' },
+        { q: "They have no stake in the question. Which move?", a: "What They Get. Make it their business before you make the case.", bundle: 'pro' },
+        { q: "They have heard the argument and are unmoved. Which move?", a: "Your Own Story. Stop arguing and say what happened.", bundle: 'pro' },
+        { q: "What do the reason and the cost of doing nothing do together?", a: "They make a fair comparison possible — is this worth more than what we are already paying?", bundle: 'pro' },
+        { q: "Why do most proposals lose to doing nothing?", a: "They argue only the upside, against an alternative that is imagined as free.", bundle: 'pro' },
+        { q: "What decides your move in All Four?", a: "Why they have not agreed yet, not which strategy is strongest.", bundle: 'pro' },
+        { q: "What is the failure all four share?", a: "Volume. One case, then listen.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and what each one runs:\n\n1. **Building the Case** — benefit → reason → cost of nothing → your own story\n2. **When They Are Not Interested** — benefit or cost first, reasoning afterwards\n3. **When You Should Not Win** — noticing mid-conversation that they are right\n\nIn all three, their last answer chooses your next strategy rather than your own list.",
+      cards: [
+        { q: "What is the order in Building the Case?", a: "Benefit while they are uninterested, reason once they engage, cost of nothing when they defend the status quo, your own story when they doubt it.", bundle: 'pro' },
+        { q: "What chooses the next strategy in that sequence?", a: "Their last answer, not the order you had planned.", bundle: 'pro' },
+        { q: "Who is the hardest audience?", a: "Not the one who disagrees — the one who has not thought about it and does not intend to.", bundle: 'pro' },
+        { q: "Why does an argument land on nothing there?", a: "There is no question in their mind yet for it to answer.", bundle: 'pro' },
+        { q: "What comes first with someone uninterested?", a: "The benefit or the cost. Something has to make it their business.", bundle: 'pro' },
+        { q: "What is being practised in When You Should Not Win?", a: "Noticing that they are right, and saying so.", bundle: 'pro' },
+        { q: "Why is that worth practising?", a: "Someone who has visibly changed their mind under a good argument is worth listening to next time.", bundle: 'pro' },
+        { q: "What happens if you argue on from momentum?", a: "You end up defending a position you no longer hold.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five things that go wrong when you are making a case:\n\n• **They Have Not Engaged** — no interest is not disagreement\n• **They Think Nothing Is the Safe Option** — the invisible cost\n• **They Doubt It Would Work** — argument has already failed\n• **You Are the One Who Should Move** — momentum, not conviction\n• **The Case Is Not Honest** — a number you have not checked\n\nThe first three are about them. The last two are about you.",
+      cards: [
+        { q: "What are the five challenge categories in this pack?", a: "They Have Not Engaged, They Think Nothing Is the Safe Option, They Doubt It Would Work, You Are the One Who Should Move, and The Case Is Not Honest.", bundle: 'pro' },
+        { q: "Why is no interest different from disagreement?", a: "There is nothing to answer yet. It needs a different strategy, not a better argument.", bundle: 'pro' },
+        { q: "How do you make the status quo comparable?", a: "Say what it costs, plainly. That is often the whole argument.", bundle: 'pro' },
+        { q: "They accept the problem and doubt your fix. What works?", a: "Evidence, not argument. A first-hand account asks them to concede nothing.", bundle: 'pro' },
+        { q: "You cannot answer their objection. What do you do?", a: "Say so. Continuing from momentum is how people defend positions they no longer hold.", bundle: 'pro' },
+        { q: "Where does persuasion start going wrong?", a: "Long before manipulation — at a number you have not checked, or a benefit you invented for them.", bundle: 'pro' },
+        { q: "Why does an invented benefit fail permanently?", a: "When it is checked, it takes everything true you said with it.", bundle: 'pro' },
+        { q: "What is the honesty test?", a: "Say the version you would be comfortable having them overhear you explain.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "The four beliefs that get in the way here:\n\n• **Their Side Is the Argument** — my reasons are the case\n• **Nothing Is Not Free** — the status quo costs nothing\n• **One Case at a Time** — if one argument fails, add another\n• **Where Influence Stops** — winning is the point\n\nThe first three are about what you say. The last is about why you are saying it.",
+      cards: [
+        { q: "What are the four mindset areas in this pack?", a: "Their Side Is the Argument, Nothing Is Not Free, One Case at a Time, and Where Influence Stops.", bundle: 'pro' },
+        { q: "Why is the version in your head the least persuasive one?", a: "It is entirely from your side — what you need and what you have worked out.", bundle: 'pro' },
+        { q: "What question should you answer before you speak?", a: "And what does this do for them?", bundle: 'pro' },
+        { q: "What do you do when there is nothing in it for them?", a: "Know it, and ask a favour instead of making a case.", bundle: 'pro' },
+        { q: "Why is naming the current cost not a scare tactic?", a: "It is what makes the comparison honest, and it is the piece most commonly missing.", bundle: 'pro' },
+        { q: "What does adding a second and third argument hide?", a: "Which one was working. A single case followed by silence tells you far more.", bundle: 'pro' },
+        { q: "What is the test for where influence stops?", a: "Does their interest appear in your case, or only in your framing of it?", bundle: 'pro' },
+        { q: "What is influence, then?", a: "Making a good case easy to accept. Not getting your way.", bundle: 'pro' },
       ]
     },
   ],
@@ -6388,11 +6638,13 @@ const memorizeCollections = {
   startingconversations2: [
     {
       name: "Core Idea",
-      description: "The shape of the pack: four openers that use common ground, and what each one needs to be true.",
+      description: "Four openers that use something you already share: ask for a small favour, offer something useful, mention what you have both just been through, or pick up a thread from last time.\n\nEach one needs something to be true. When none of them is, use a plainer opener.",
       cards: [
         { q: "What are the four openers in this pack?", a: "Ask for help, offer something useful, mention a shared experience, pick up a shared thread.", bundle: 'free' },
         { q: "What do all four have in common?", a: "Each needs something real — a genuine request, real information, a shared event or a remembered thread.", bundle: 'free' },
         { q: "Which of the four works with a complete stranger?", a: "Asking for help, offering something useful, and a shared experience. The thread needs history.", bundle: 'free' },
+        { q: "What does asking for a favour open with?", a: "A task, not a topic. The conversation comes free with it.", bundle: 'free' },
+        { q: "Why is a specific question better than a greeting?", a: "\"How's things\" gets \"fine\". \"How did Thursday go\" gets an answer.", bundle: 'free' },
         { q: "Why do asking and offering both work?", a: "They give the other person a role rather than a topic — someone who helps, or someone being helped.", bundle: 'pro' },
         { q: "What is the strongest opener with someone you half know?", a: "A shared thread, because remembering is worth more than agreeing.", bundle: 'pro' },
         { q: "What should you do when none of the four is true?", a: "Use a plainer opener. Manufactured common ground is worse than a simple hello.", bundle: 'pro' },
@@ -6400,11 +6652,12 @@ const memorizeCollections = {
     },
     {
       name: "Ask for Help",
-      description: "The opener that starts with a task instead of a topic.",
       cards: [
         { q: "Why does asking for a small favour work as an opener?", a: "People like being asked — it gives them a role that is easier than being a stranger talked at.", bundle: 'free' },
         { q: "How small should the request be?", a: "Small enough that yes is the easy answer.", bundle: 'free' },
         { q: "Name two kinds of small request.", a: "Any two of: a physical favour, local knowledge, a second pair of hands, watching something.", bundle: 'free' },
+        { q: "Why does the request have to be small?", a: "So that saying yes costs almost nothing, and almost nobody says no.", bundle: 'free' },
+        { q: "What kind of request is local knowledge?", a: "Asking them to be the one who knows. \"Do you know how this machine works?\"", bundle: 'free' },
         { q: "What is the second half of this opener?", a: "Thanking them properly.", bundle: 'pro' },
         { q: "Why does asking someone to watch your bag work well?", a: "It implies trust, which people like being given.", bundle: 'pro' },
         { q: "What is the test for whether the request is real?", a: "Whether you would ask it if nobody were around.", bundle: 'pro' },
@@ -6412,11 +6665,12 @@ const memorizeCollections = {
     },
     {
       name: "Offer Something Useful",
-      description: "The opener that gives instead of asking.",
       cards: [
         { q: "What does this opener do that the others do not?", a: "It gives the other person something, so there is nothing for them to weigh up.", bundle: 'free' },
         { q: "Name two kinds of useful offer.", a: "Any two of: a shortcut, a warning, how something works, what is coming.", bundle: 'free' },
         { q: "What is the mindset line for this move?", a: "Offer it and let go — thanks is a complete outcome.", bundle: 'free' },
+        { q: "What kind of thing is worth offering?", a: "Something about the situation they can use right now — a shortcut, a warning, how it works.", bundle: 'free' },
+        { q: "Why is it the least intrusive opener?", a: "It costs them nothing and needs no answer. A thanks is a complete outcome.", bundle: 'free' },
         { q: "Where is the line between useful and unwanted?", a: "Information about the situation is welcome; a verdict about the person arrives as a correction.", bundle: 'pro' },
         { q: "Why does this opener remove awkwardness?", a: "It gives you an obvious reason for having spoken at all.", bundle: 'pro' },
         { q: "What do you say if a tip lands badly?", a: "Name it lightly and let it go — \"sorry, unsolicited advice, ignore me\".", bundle: 'pro' },
@@ -6424,11 +6678,12 @@ const memorizeCollections = {
     },
     {
       name: "Mention a Shared Experience",
-      description: "The most reliable opener between strangers who have just done the same thing.",
       cards: [
         { q: "Why does a shared experience need no introduction?", a: "They know exactly what you mean and already have opinions about it.", bundle: 'free' },
         { q: "What makes a better version of this opener?", a: "Naming something specific rather than the event as a whole.", bundle: 'free' },
         { q: "Name two ways to use a shared experience.", a: "Any two of: give your verdict, ask for theirs first, name a specific moment, say what you were thinking during it.", bundle: 'free' },
+        { q: "When does this opener work?", a: "With a complete stranger, as long as you have both just been through the same thing.", bundle: 'free' },
+        { q: "What is the strongest version of it?", a: "Naming a specific moment. \"The bit at the end where he asked for questions and nobody moved.\"", bundle: 'free' },
         { q: "What is the mindset line for this move?", a: "You are comparing notes, not informing them — it is a conversation between equals.", bundle: 'pro' },
         { q: "What do you do when the shared experience was genuinely bad?", a: "Match the weight. One honest sentence, or nothing — not jokey small talk.", bundle: 'pro' },
         { q: "Which is more generous, giving your verdict or asking for theirs?", a: "Asking for theirs first.", bundle: 'pro' },
@@ -6436,14 +6691,71 @@ const memorizeCollections = {
     },
     {
       name: "The Shared Thread",
-      description: "The opener for people you already know a little.",
       cards: [
         { q: "What does this opener prove that no other one does?", a: "That you remembered.", bundle: 'free' },
         { q: "Why is \"how did Thursday go\" better than \"how's things\"?", a: "Specific questions have answers. General ones get \"fine\".", bundle: 'free' },
         { q: "Name two kinds of thread.", a: "Any two of: the ongoing thing, a specific event, something they were worried about, a topic you both enjoyed.", bundle: 'free' },
+        { q: "Who is this opener for?", a: "People you already know a little and have not spoken to for a while.", bundle: 'free' },
+        { q: "Which kind of thread carries the most weight?", a: "Following up on something they were worried about.", bundle: 'free' },
         { q: "What do you do when you cannot remember what the thread was?", a: "Say so — \"you told me something last time and I've lost it\" gets it back from them.", bundle: 'pro' },
         { q: "How do you ask about a thread that might be painful?", a: "Gently, once, with an easy way out, and not across a room.", bundle: 'pro' },
         { q: "Which opener do people most often waste?", a: "The thread — they greet someone they half know instead of asking one specific question.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Give or Ask** — which direction the useful thing travels\n• **What You Already Share** — a shared hour, or a shared history\n• **All Four** — no cue given, which is the real thing\n\nEvery choice here is really a question about what you actually have with this person.",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "Give or Ask, What You Already Share, and All Four.", bundle: 'pro' },
+        { q: "What do asking and offering have in common?", a: "Both give the other person a role rather than a topic.", bundle: 'pro' },
+        { q: "You cannot work something out and they clearly can. Which move?", a: "Ask for Help. The request is real, which is what makes it work.", bundle: 'pro' },
+        { q: "What separates the shared experience from the shared thread?", a: "When the ground was laid. One needs the same hour, the other needs history.", bundle: 'pro' },
+        { q: "You have never spoken and you both just sat through the same talk. Which move?", a: "Mention a Shared Experience.", bundle: 'pro' },
+        { q: "A colleague you half know mentioned an interview last month. Which move?", a: "The Shared Thread. It is the stronger of the two, because remembering beats agreeing.", bundle: 'pro' },
+        { q: "None of the four is true. What then?", a: "A plainer opener. Not every moment has common ground in it.", bundle: 'pro' },
+        { q: "What is worse than a simple hello?", a: "A manufactured opener. An invented request or unwanted advice both land as what they are.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and what each one practises:\n\n1. **From a Favour Into a Conversation** — turning a finished transaction into a talk\n2. **Picking Someone Back Up** — the thread first, then wherever their answer goes\n3. **When the Favour Is All They Wanted** — reading it and stopping well\n\nThe third ends without a conversation on purpose. That is a successful outcome, not a failed one.",
+      cards: [
+        { q: "What do the three sequences in this pack practise?", a: "Turning a favour into a conversation, picking someone back up, and reading when to stop.", bundle: 'pro' },
+        { q: "Why does a favour end by itself?", a: "The task is done and they say no problem. The exchange is over unless you do something with it.", bundle: 'pro' },
+        { q: "How much goodwill does the favour buy?", a: "About ten seconds. Use them.", bundle: 'pro' },
+        { q: "What is always the first step in Picking Someone Back Up?", a: "The thread. It is the strongest opener available with someone you know a little.", bundle: 'pro' },
+        { q: "What decides the rest of that sequence?", a: "Whatever they give you in their answer.", bundle: 'pro' },
+        { q: "What is being practised in When the Favour Is All They Wanted?", a: "Stopping well. A request creates a small obligation, and pushing past a polite answer turns a favour into an imposition.", bundle: 'pro' },
+        { q: "How do you know the favour was all they wanted?", a: "They answer, they thank you, and they turn back to what they were doing.", bundle: 'pro' },
+        { q: "What is the mindset line for that one?", a: "They helped you. Do not charge them interest.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five things that go wrong with these openers:\n\n• **You Do Not Actually Need Anything** — an invented request\n• **The Offer Is Not Wanted** — a verdict dressed as information\n• **You Cannot Remember the Thread** — the gap you are embarrassed by\n• **The Thread Might Be Painful** — asking about something difficult\n• **The Shared Experience Was Bad** — a light comment over a heavy thing\n\nFour of the five come from the opener not being quite true.",
+      cards: [
+        { q: "What are the five challenge categories in this pack?", a: "You Do Not Actually Need Anything, The Offer Is Not Wanted, You Cannot Remember the Thread, The Thread Might Be Painful, and The Shared Experience Was Bad.", bundle: 'pro' },
+        { q: "How does an invented request give itself away?", a: "The question is slightly too easy, or you do not listen properly to the answer.", bundle: 'pro' },
+        { q: "What is the test for a real request?", a: "Whether you would ask it with nobody around.", bundle: 'pro' },
+        { q: "Where is the line between useful and unwanted?", a: "Information about the situation is welcome. A verdict about the person arrives as a correction.", bundle: 'pro' },
+        { q: "You know they told you something and cannot remember what. What do you say?", a: "\"You told me something last time and I've lost it.\" It gets the thread back from them.", bundle: 'pro' },
+        { q: "How do you ask about a thread that might be painful?", a: "Gently, once, with an easy way out — and not across a room.", bundle: 'pro' },
+        { q: "What if the first answer is short?", a: "Take it. Do not ask twice.", bundle: 'pro' },
+        { q: "The shared experience was genuinely unpleasant. What works?", a: "One honest sentence, or nothing. The failure is jokey small talk over something that mattered.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "The four beliefs that get in the way here:\n\n• **Being Asked Is a Compliment** — a request is an imposition\n• **Say the Useful Thing** — speaking to a stranger is an event\n• **Remembering Is the Whole Gift** — a greeting is enough\n• **You Need Something Real** — any opener will do if it is delivered well\n\nThe first three keep people quiet. The last is the limit on all four openers.",
+      cards: [
+        { q: "What are the four mindset areas in this pack?", a: "Being Asked Is a Compliment, Say the Useful Thing, Remembering Is the Whole Gift, and You Need Something Real.", bundle: 'pro' },
+        { q: "Why does asking for a small favour feel worse than it is?", a: "It feels like taking someone's time. In practice you are treating them as competent or trusted.", bundle: 'pro' },
+        { q: "What is the check on that belief?", a: "Watch what happens when someone asks you. You almost certainly do not resent it.", bundle: 'pro' },
+        { q: "Why do people say nothing about the broken machine?", a: "Speaking to a stranger feels like more of an event than staying quiet does.", bundle: 'pro' },
+        { q: "What does offering information cost the other person?", a: "Nothing — and even when it goes no further, you have made their next ten minutes easier.", bundle: 'pro' },
+        { q: "What does a specific question say that a greeting does not?", a: "That you were listening, and that you thought about them when they were not there.", bundle: 'pro' },
+        { q: "What is the limit on every opener in this pack?", a: "Each depends on something being true. That is what makes them work.", bundle: 'pro' },
+        { q: "What is the honest move when none of them is true?", a: "Use a plainer opener, or say nothing. Manufactured common ground is easy to spot.", bundle: 'pro' },
       ]
     },
   ],
