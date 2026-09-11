@@ -1014,11 +1014,13 @@ const memorizeCollections = {
   endingconversations: [
     {
       name: "Core Idea",
-      description: "The shape of the pack: seven closing moves that are meant to be combined, and the order that makes them work.",
+      description: "Seven closing moves that are meant to be combined rather than chosen between: the exit phrase, a reason, a rain check, praise for the talk, a well-wish, one last question, and a joke.\n\nA real ending stacks two to four of them, and the exit phrase always comes last.",
       cards: [
         { q: "What are the seven moves in this pack?", a: "Exit phrase, give a reason, offer to continue later, say something positive, wish them well, leave with one last question, end on a joke.", bundle: 'free' },
         { q: "Are these alternatives or components?", a: "Components. A real ending usually stacks two to four of them.", bundle: 'free' },
         { q: "What is the natural order?", a: "Reason, then something warm, then the exit phrase last.", bundle: 'free' },
+        { q: "Which move fails most often?", a: "The exit phrase on its own, with nothing before it. Abrupt in a way people notice.", bundle: 'free' },
+        { q: "How long does a good ending take?", a: "About eight seconds. That is the whole cost.", bundle: 'free' },
         { q: "Why does the exit phrase come last?", a: "It is the full stop. Anywhere else and the conversation reopens.", bundle: 'pro' },
         { q: "What is the minimum for a good ending?", a: "A reason and an exit phrase.", bundle: 'pro' },
         { q: "Why does the ending matter more than the middle?", a: "People remember how a conversation finished far more clearly than what was in it.", bundle: 'pro' },
@@ -1026,11 +1028,12 @@ const memorizeCollections = {
     },
     {
       name: "The Exit Phrase",
-      description: "The two-word full stop.",
       cards: [
         { q: "What is an exit phrase doing?", a: "Signalling the end in words that carry no new information, so nothing can restart.", bundle: 'free' },
         { q: "Where does it belong in an ending?", a: "Last.", bundle: 'free' },
         { q: "Name two kinds of exit phrase.", a: "Any two of: the plain one, the warm one, the one that hands them the exit, the forward-looking one.", bundle: 'free' },
+        { q: "Why does an exit phrase carry no information?", a: "So that nothing in it can restart the conversation.", bundle: 'free' },
+        { q: "What is the forward-looking version?", a: "For people you will see again. \"See you Thursday, then.\"", bundle: 'free' },
         { q: "What is wrong with an exit phrase on its own?", a: "Nothing rude exactly, but it is abrupt in a way people notice.", bundle: 'pro' },
         { q: "What does \"I'll let you get on\" do?", a: "Hands them the exit, so leaving looks like a courtesy to them.", bundle: 'pro' },
         { q: "What is the mindset line for this move?", a: "An exit phrase followed by another sentence is not an exit phrase.", bundle: 'pro' },
@@ -1038,11 +1041,12 @@ const memorizeCollections = {
     },
     {
       name: "Give a Reason",
-      description: "The move that makes leaving about your day rather than about them.",
       cards: [
         { q: "What does a reason do?", a: "It turns leaving from a judgement about the conversation into a fact about your day.", bundle: 'free' },
         { q: "How good does the reason have to be?", a: "Not good at all. It only has to exist.", bundle: 'free' },
         { q: "Name two kinds of reason.", a: "Any two of: time-bound, an obligation, a vague one, someone else waiting.", bundle: 'free' },
+        { q: "What question does a reason answer?", a: "The one they would otherwise ask themselves — whether you were bored.", bundle: 'free' },
+        { q: "What is the version that takes it out of your hands?", a: "Someone else. \"I've left someone waiting outside.\"", bundle: 'free' },
         { q: "Why is a time-bound reason strongest?", a: "It explains the urgency as well as the ending.", bundle: 'pro' },
         { q: "What happens if you explain the reason in detail?", a: "It sounds like an excuse and keeps the conversation going.", bundle: 'pro' },
         { q: "What do you say when you have no reason at all?", a: "\"I should probably get on.\" Wanting to go is a reason.", bundle: 'pro' },
@@ -1050,11 +1054,12 @@ const memorizeCollections = {
     },
     {
       name: "The Rain Check",
-      description: "The move that separates leaving from leaving them.",
       cards: [
         { q: "What does this move separate?", a: "That you are leaving, and that you are not leaving them.", bundle: 'free' },
         { q: "What does it create that no other ending does?", a: "The next conversation.", bundle: 'free' },
         { q: "Name two ways to offer more later.", a: "Any two of: name the next time, leave it open but real, hand them the follow-up, say what you want to hear more about.", bundle: 'free' },
+        { q: "What does it sound like?", a: "\"Tell me the rest on Thursday.\" \"Message me and we'll sort something.\"", bundle: 'free' },
+        { q: "What does handing them the follow-up look like?", a: "Putting it in their hands. \"Send me the link and I'll have a proper look.\"", bundle: 'free' },
         { q: "What is the condition on this move?", a: "Only offer it if it is true. An unhonoured continuation is worse than a plain goodbye.", bundle: 'pro' },
         { q: "Which version is strongest?", a: "Naming the next time — \"tell me the rest on Thursday\".", bundle: 'pro' },
         { q: "When is this move especially useful?", a: "When you have to leave mid-flow and do not want it read as rejection.", bundle: 'pro' },
@@ -1062,11 +1067,12 @@ const memorizeCollections = {
     },
     {
       name: "Praise the Talk",
-      description: "The move that tells them how to remember it.",
       cards: [
         { q: "What does this move do?", a: "Tells the other person how to remember the exchange.", bundle: 'free' },
         { q: "When should you say it?", a: "As you leave. It works because it is the last thing.", bundle: 'free' },
         { q: "Name two ways to say it.", a: "Any two of: the standard one, name what was good, say it was better than expected, thank them for something specific.", bundle: 'free' },
+        { q: "What does it sound like?", a: "\"It was nice talking to you.\" \"That was useful, thanks.\"", bundle: 'free' },
+        { q: "What is the disarming version?", a: "Saying it was better than expected. \"I was dreading this and it was actually good fun.\"", bundle: 'free' },
         { q: "Why does this move make an ending safe?", a: "Nobody reads \"it was good to talk to you\" as boredom.", bundle: 'pro' },
         { q: "What makes the strongest version?", a: "Naming what specifically was good.", bundle: 'pro' },
         { q: "Why are people uncertain about how a conversation went?", a: "Because almost nobody says. One sentence at the end settles it.", bundle: 'pro' },
@@ -1074,11 +1080,12 @@ const memorizeCollections = {
     },
     {
       name: "Wish Them Well",
-      description: "The move that proves you were listening.",
       cards: [
         { q: "What does a specific well-wish prove?", a: "That you registered what they said.", bundle: 'free' },
         { q: "What does the specific version cost?", a: "About four extra words.", bundle: 'free' },
         { q: "Name two kinds of well-wish.", a: "Any two of: the general one, the specific one, wishing about a difficulty, wishing about something good.", bundle: 'free' },
+        { q: "What does it sound like?", a: "\"Good luck with the presentation tomorrow.\" \"Hope your week calms down.\"", bundle: 'free' },
+        { q: "Which version is easiest to forget?", a: "Wishing them well about something good — a holiday, a weekend away. Very welcome and rarely said.", bundle: 'free' },
         { q: "What is the mindset line for this move?", a: "Use something they told you — that is what turns a farewell into being remembered.", bundle: 'pro' },
         { q: "Which version carries the most warmth?", a: "Wishing them well about something difficult they mentioned.", bundle: 'pro' },
         { q: "Is the generic version still worth using?", a: "Yes. It works. It just does far less than the specific one.", bundle: 'pro' },
@@ -1086,11 +1093,12 @@ const memorizeCollections = {
     },
     {
       name: "One Last Question",
-      description: "The move that ends a conversation by proving it mattered.",
       cards: [
         { q: "What two things does this move say at once?", a: "That you are leaving, and that the conversation mattered enough to spend your last seconds on.", bundle: 'free' },
         { q: "What order do the parts go in?", a: "Reason first, then the question.", bundle: 'free' },
         { q: "What kind of question should it be?", a: "One that can be answered in a sentence.", bundle: 'free' },
+        { q: "What does it sound like?", a: "\"I've got to go — but quickly, how did the interview go?\"", bundle: 'free' },
+        { q: "Which version is the warmest?", a: "Asking about the thing they lit up about. \"You clearly love that boat. What is it?\"", bundle: 'free' },
         { q: "Why must the reason come first?", a: "It makes the question a gift rather than a delay.", bundle: 'pro' },
         { q: "When is this move most useful?", a: "When you are enjoying a conversation and do not want the ending to read as escape.", bundle: 'pro' },
         { q: "What goes wrong if the question is too big?", a: "You have not ended the conversation, you have extended it.", bundle: 'pro' },
@@ -1098,14 +1106,71 @@ const memorizeCollections = {
     },
     {
       name: "The Parting Joke",
-      description: "The warmest ending and the riskiest.",
       cards: [
         { q: "What is the classic pattern?", a: "The mock refusal — they say \"see you later\", you say \"no, never again\", smiling.", bundle: 'free' },
         { q: "What condition makes this move safe?", a: "An established warmth. With a stranger a mock insult is just an insult.", bundle: 'free' },
         { q: "Name two ways to end on a joke.", a: "Any two of: the mock refusal, mock relief at leaving, exaggerating the goodbye, booking the next one as a joke.", bundle: 'free' },
+        { q: "Why is it the riskiest of the seven?", a: "With a stranger a mock insult is just an insult, and after anything heavy it lands as dismissal.", bundle: 'free' },
+        { q: "What does booking the next one as a joke sound like?", a: "\"Same corridor, same time, more complaining?\"", bundle: 'free' },
         { q: "When is this move definitely wrong?", a: "After a difficult conversation, where it lands as dismissal.", bundle: 'pro' },
         { q: "Why does mock relief read as affection?", a: "Because it is so obviously untrue.", bundle: 'pro' },
         { q: "What should you do if you are unsure it will land?", a: "Use one of the other six. They all work.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **The Quick Exit** — the reason and the exit phrase, the mechanical half\n• **The Warm Exit** — the three moves that stop an ending reading as rejection\n• **All Seven** — no cue given, which is the real thing\n\nThe first is for endings where nothing needs protecting. The second is for the ones where something does.",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "The Quick Exit, The Warm Exit, and All Seven.", bundle: 'pro' },
+        { q: "Which two moves do the mechanical work?", a: "Give a Reason and The Exit Phrase. Between them they cover almost every ordinary goodbye.", bundle: 'pro' },
+        { q: "What is the order in The Quick Exit?", a: "Reason first, exit phrase last. Reversed, the reason sounds like an afterthought.", bundle: 'pro' },
+        { q: "Which three moves make up The Warm Exit?", a: "Praise the Talk, Wish Them Well, and The Rain Check.", bundle: 'pro' },
+        { q: "What separates those three?", a: "Direction. One looks back at the talk, one forward at their day, one forward at the two of you.", bundle: 'pro' },
+        { q: "A shop, a corridor, a lift. Which collection?", a: "The Quick Exit. Nothing needs protecting.", bundle: 'pro' },
+        { q: "You are leaving mid-flow and do not want it misread. Which move?", a: "The Rain Check. It says you are leaving, not leaving them.", bundle: 'pro' },
+        { q: "What is the rough shape in All Seven?", a: "The reason and the exit phrase are the frame, and everything else goes between them.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and what each one runs:\n\n1. **The Full Close** — reason, something warm, exit phrase last\n2. **When They Keep Talking** — escalating in small steps rather than repeating the signal\n3. **Ending Something You Enjoyed** — making the ending say it was about your day\n\nThe second is the one people find hardest, because each failed attempt makes the next feel ruder.",
+      cards: [
+        { q: "What is the order in The Full Close?", a: "Reason, warmth, exit phrase. Then actually go.", bundle: 'pro' },
+        { q: "What is each part doing there?", a: "The reason explains the ending, the warm bit protects it, and the exit phrase closes it.", bundle: 'pro' },
+        { q: "What happens if the exit phrase is not last?", a: "The conversation reopens.", bundle: 'pro' },
+        { q: "What is the move when they keep talking?", a: "Escalate in small steps. Each attempt slightly clearer than the last.", bundle: 'pro' },
+        { q: "Why is the clearest version also the kindest?", a: "A soft signal repeated four times is more uncomfortable for both of you than one firm sentence.", bundle: 'pro' },
+        { q: "What must you not leave at the end of that one?", a: "A pause. No trailing \"so…\" for them to fill.", bundle: 'pro' },
+        { q: "Why is leaving a good conversation harder than a dull one?", a: "Ending it can look like you did not feel the same way.", bundle: 'pro' },
+        { q: "What is the strongest move there?", a: "The last question. It proves the conversation mattered by spending your final seconds on it.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five things that make an ending hard:\n\n• **They Will Not Let You Go** — two signals and it is still going\n• **You Have No Real Reason** — nothing is actually waiting\n• **Ending a Difficult Conversation** — leaving reads as escape\n• **Leaving a Group** — no obvious gap, and a goodbye becomes an announcement\n• **They Ended It On You** — you are the one being left\n\nThe last one is the same skill, from the other side.",
+      cards: [
+        { q: "What are the five challenge categories in this pack?", a: "They Will Not Let You Go, You Have No Real Reason, Ending a Difficult Conversation, Leaving a Group, and They Ended It On You.", bundle: 'pro' },
+        { q: "Why do people give up and stay another ten minutes?", a: "Each attempt that fails makes the next one feel ruder.", bundle: 'pro' },
+        { q: "What does escalating actually mean here?", a: "Clearer, not louder. And no pause at the end.", bundle: 'pro' },
+        { q: "You just want to go and nothing is waiting. What do you say?", a: "\"I should get on.\" Wanting to go is a reason, and nobody is auditing it.", bundle: 'pro' },
+        { q: "What makes leaving a heavy conversation safe?", a: "Naming what was said before you go, and offering a genuine continuation.", bundle: 'pro' },
+        { q: "Which move is entirely wrong there?", a: "The joke. It lands as dismissal.", bundle: 'pro' },
+        { q: "What are the two ways to leave a group?", a: "Quietly, to the person nearest you — or one short sentence to everybody, and then actually go.", bundle: 'pro' },
+        { q: "Somebody is leaving you. What is the move?", a: "Release them quickly and warmly. Holding them with one last question is what this pack teaches you not to do.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "The seven beliefs that get in the way here:\n\n• **The Ending Is What They Remember** — the middle is what counts\n• **You Do Not Need Permission** — leaving is a rejection\n• **A Reason Can Be Small** — it has to be a good one\n• **Leaving Well Protects the Next Time** — the ending is just admin\n• **A Phrase Is Not Enough** — four words cannot close this\n• **Later Means Never** — offering more is a small lie\n• **Saying It Was Good Is Too Much** — warmth the relationship cannot carry\n\nThe last three block the three warm moves specifically.",
+      cards: [
+        { q: "What are the seven mindset areas in this pack?", a: "The Ending Is What They Remember, You Do Not Need Permission, A Reason Can Be Small, Leaving Well Protects the Next Time, A Phrase Is Not Enough, Later Means Never, and Saying It Was Good Is Too Much.", bundle: 'pro' },
+        { q: "Why is the ending an unusually good deal?", a: "Eight seconds at the end does more for how you are remembered than anything you said earlier.", bundle: 'pro' },
+        { q: "Why do conversations run twenty minutes longer than either person wanted?", a: "Both are waiting for the other to end it, and each assumes leaving would be rude.", bundle: 'pro' },
+        { q: "Does anyone examine your reason?", a: "No. They only need something to attach the ending to.", bundle: 'pro' },
+        { q: "What is every ending also?", a: "A setup. A warm one means the next meeting begins somewhere further along.", bundle: 'pro' },
+        { q: "Is the short phrase a summary of the conversation?", a: "No — a signal that it is over. Everything warm goes in front of it, not instead of it.", bundle: 'pro' },
+        { q: "What is the actual problem with \"let's pick this up tomorrow\"?", a: "Not the line. The line followed by nothing.", bundle: 'pro' },
+        { q: "Does \"it was nice talking to you\" claim anything?", a: "No. It says the last ten minutes were pleasant. It is a smaller thing to say than it feels.", bundle: 'pro' },
       ]
     },
   ],
@@ -1316,12 +1381,13 @@ const memorizeCollections = {
   howtointerrupt: [
     {
       name: "Core Idea",
-      description: "The concept behind interrupting well and the full set of moves.",
+      description: "Six moves for interrupting well: wait for the pause, signal first, lead with their point, give the reason, use humour, and hand the floor back.\n\nInterrupting is not rude. Interrupting badly is — and what makes it bad is no signal and no reason, almost never the content.",
       cards: [
         { q: "What is the goal when you interrupt?", a: "To interject respectfully and effectively, without offending the speaker or dominating the conversation.", bundle: 'free' },
         { q: "What are the five moves in this pack?", a: "The Natural Pause, Signal the Interruption, Their Point First, Why It Cannot Wait, Use Humour.", bundle: 'free' },
         { q: "Is interrupting rude?", a: "Cutting across someone is. A signalled, reasoned interruption is ordinary turn-taking.", bundle: 'free' },
         { q: "What is the cheapest interruption there is?", a: "Waiting two seconds for a natural pause — from the outside it barely reads as an interruption at all.", bundle: 'free' },
+        { q: "Which move is about getting out rather than in?", a: "Get Out Cleanly. The other five are all about getting in, and it is the half most people skip.", bundle: 'free' },
         { q: "What makes an interruption land badly?", a: "No signal and no reason. The content is rarely the problem.", bundle: 'pro' },
         { q: "How do you know when waiting has stopped working?", a: "When there has been no usable pause for minutes. Then the pause isn't coming and you have to make one.", bundle: 'pro' },
         { q: "What is the other failure mode?", a: "Dominating. If you've interrupted twice and nobody else has once, the next move is to wait.", bundle: 'pro' },
@@ -1329,62 +1395,71 @@ const memorizeCollections = {
     },
     {
       name: "The Natural Pause",
-      description: "The theory behind the patient version.",
       cards: [
         { q: "What is The Natural Pause?", a: "Holding your point until the speaker reaches a break of their own, and going in there.", bundle: 'free' },
         { q: "What does it sound like?", a: "\"If I could just jump in for a moment…\" said at their full stop.", bundle: 'free' },
         { q: "What are the three kinds of pause?", a: "The breath, the full stop, and the hand-off — when they turn to someone else or say \"anyway\".", bundle: 'free' },
+        { q: "What is the hand-off?", a: "When they turn to someone else, or say \"anyway\" or \"so\".", bundle: 'free' },
+        { q: "Why does the wait feel longer than it is?", a: "It feels much longer from the inside than it looks from the outside.", bundle: 'free' },
         { q: "How long do you usually have to wait?", a: "Less than it feels. Most people leave a gap every ten to fifteen seconds.", bundle: 'pro' },
         { q: "Why is it worth the wait?", a: "The same sentence that feels rude mid-clause feels like normal turn-taking two seconds later.", bundle: 'pro' },
+        { q: "Is patience a strategy, or a failure to act?", a: "A strategy. Ten seconds of waiting buys an interruption nobody has to forgive.", bundle: 'pro' },
       ]
     },
     {
       name: "Signal the Interruption",
-      description: "The theory behind the verbal cue.",
       cards: [
         { q: "What is Signal the Interruption?", a: "A short verbal cue before your actual point, so the speaker can close their sentence.", bundle: 'free' },
         { q: "What does it sound like?", a: "\"Excuse me, may I add something?\" / \"Sorry — can I jump in?\"", bundle: 'free' },
         { q: "Why does it make an interruption polite?", a: "It hands the speaker control of exactly when they stop.", bundle: 'free' },
+        { q: "What is the bare cue?", a: "\"Sorry —\" and a small gesture. Fastest, and enough between people who know each other.", bundle: 'free' },
+        { q: "How do you pick the strength?", a: "By the room. In a formal meeting the full ask is right; among friends it sounds oddly stiff.", bundle: 'free' },
         { q: "What are the three strengths of signal?", a: "The ask, the announcement, and the bare cue — matched to how formal the room is.", bundle: 'pro' },
         { q: "What is the failure mode?", a: "Over-apologising. One \"sorry\" is a signal; three makes the interruption bigger than it was.", bundle: 'pro' },
+        { q: "Are you asking permission?", a: "No. You are giving them a second's warning, which is the courtesy that makes the rest of it fine.", bundle: 'pro' },
       ]
     },
     {
       name: "Their Point First",
-      description: "The theory behind leading with their point.",
       cards: [
         { q: "What is Their Point First?", a: "One clause about their point before yours, so the interruption reads as building rather than replacing.", bundle: 'free' },
         { q: "What does it sound like?", a: "\"I see your point, and I'd like to add…\"", bundle: 'free' },
         { q: "What three things can you acknowledge?", a: "Their point, their effort, or the part you agree with.", bundle: 'free' },
+        { q: "Why does the order change how the room hears it?", a: "Starting with their idea reads as building. Starting with yours reads as replacing.", bundle: 'free' },
+        { q: "What does acknowledging their effort sound like?", a: "\"You've clearly thought about this. One thing though.\"", bundle: 'free' },
         { q: "What makes it work?", a: "Being specific. \"Good point, but…\" without naming the point is transparently a run-up.", bundle: 'pro' },
         { q: "What does it prove?", a: "That you were listening rather than waiting for a gap.", bundle: 'pro' },
+        { q: "What does an interrupter who was clearly just waiting get?", a: "Forgiven, once. One who was listening gets welcomed.", bundle: 'pro' },
       ]
     },
     {
       name: "Why It Cannot Wait",
-      description: "The theory behind giving a reason.",
       cards: [
         { q: "What is Why It Cannot Wait?", a: "Attaching a reason to the interruption — why it couldn't wait until they'd finished.", bundle: 'free' },
         { q: "What does it sound like?", a: "\"I hate to interrupt, but this is important for what we're discussing.\"", bundle: 'free' },
         { q: "What three reasons earn an interruption?", a: "It's time-sensitive, they're working from something wrong, or you can't follow without it.", bundle: 'free' },
+        { q: "What does a stated reason turn an interruption into?", a: "A service. The speaker usually stops willingly rather than being stopped.", bundle: 'free' },
+        { q: "What does the second reason sound like?", a: "They are working from something wrong. \"The date moved, so that plan won't hold.\"", bundle: 'free' },
         { q: "Which reason is most under-used?", a: "\"I've lost the thread.\" It feels exposing and it's usually the whole room's question.", bundle: 'pro' },
         { q: "What does a stated reason change?", a: "The speaker stops willingly rather than being stopped. It becomes a service, not a grab.", bundle: 'pro' },
+        { q: "Why is \"I've lost the thread\" so effective?", a: "It is almost always the interruption the rest of the room was also waiting for.", bundle: 'pro' },
       ]
     },
     {
       name: "Use Humour",
-      description: "The theory behind the light version.",
       cards: [
         { q: "What is Use Humour here?", a: "Making the interruption itself the joke, so it arrives as lightness instead of a correction.", bundle: 'free' },
         { q: "What does it sound like?", a: "\"I just have to jump in here before my brain explodes!\"", bundle: 'free' },
         { q: "When should you not use it?", a: "In a tense room. Then it's worse than a plain interruption — you've interrupted and misjudged.", bundle: 'free' },
+        { q: "What are the three ways to make it light?", a: "Mock urgency, mock apology, or playing on your own eagerness.", bundle: 'free' },
+        { q: "What do you read before using it?", a: "The room. Humour needs a warm one.", bundle: 'free' },
         { q: "Who does the joke have to be about?", a: "You. A joke about how long they've been talking is a criticism wearing a hat.", bundle: 'pro' },
         { q: "Why is it the cheapest move when it works?", a: "Nobody has to be gracious about it, because it didn't feel like an interruption.", bundle: 'pro' },
+        { q: "What happens if the joke is about them?", a: "It is a criticism wearing a hat, and everyone can see the hat.", bundle: 'pro' },
       ]
     },
     {
       name: "Get Out Cleanly",
-      description: "Saying the thing you interrupted for, and then handing the floor back on purpose.",
       cards: [
         { q: "What does Get Out Cleanly cover?", a: "The exit — landing your point and then giving the floor back. The other five moves are all about getting in.", bundle: 'free' },
         { q: "Why does the hand-back matter?", a: "An interruption is a loan, not a transfer. Keeping the floor turns it into a takeover in their memory.", bundle: 'free' },
@@ -1394,6 +1469,62 @@ const memorizeCollections = {
         { q: "What does naming where they were prove?", a: "That you were still listening while you spoke.", bundle: 'pro' },
         { q: "Why hand back by name in a group?", a: "Because the floor otherwise drifts to whoever speaks next, not back to the person you cut off.", bundle: 'pro' },
         { q: "What is the mindset line for this move?", a: "Say it, then give it back. An interruption you do not close is the one they remember.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Wait or Signal** — is a pause coming, or do you have to make one?\n• **Warmth or Reason** — lead with their point, or with why it could not wait\n• **Any Way In** — no cue given, which is the real thing\n\nThe first is the decision before you speak. The second is the decision once you are in.",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "Wait or Signal, Warmth or Reason, and Any Way In.", bundle: 'pro' },
+        { q: "What does Wait or Signal read?", a: "Whether the speaker is heading towards a break of their own.", bundle: 'pro' },
+        { q: "When does waiting stop being patience?", a: "When there has been no gap for minutes. After that it is just not speaking.", bundle: 'pro' },
+        { q: "What does cutting across someone two words from a full stop cost?", a: "It is needlessly rude, and the wait was two seconds.", bundle: 'pro' },
+        { q: "What do the two moves in Warmth or Reason each do?", a: "Acknowledging is about the relationship. The reason is about the content.", bundle: 'pro' },
+        { q: "The interruption is about the same subject. Which move?", a: "Their Point First.", bundle: 'pro' },
+        { q: "You are changing direction. Which move?", a: "Why It Cannot Wait.", bundle: 'pro' },
+        { q: "What decides it in Any Way In?", a: "How much room the speaker leaves, how warm the room is, and whether your point adds or corrects.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **The Polite Cut-In** — pause → signal → their point → the reason\n2. **When There Is No Pause** — signal → reason → hand it back, in that order\n3. **The Light Way In** — humour → their point → the reason\n\nThe second reverses the usual order on purpose: when you made the gap yourself, the justification cannot wait.",
+      cards: [
+        { q: "What is the order in The Polite Cut-In?", a: "Wait for the break, signal, name their point, then say why it could not wait.", bundle: 'pro' },
+        { q: "How long do the first three steps take?", a: "About six words in total.", bundle: 'pro' },
+        { q: "What do they buy?", a: "An interruption nobody has to be gracious about.", bundle: 'pro' },
+        { q: "Why is the order different in When There Is No Pause?", a: "You made the gap yourself, so the justification has to arrive in the same breath.", bundle: 'pro' },
+        { q: "Which step matters most there?", a: "The hand-back. An interruption you hand back is a contribution; one you keep is a takeover.", bundle: 'pro' },
+        { q: "What does the joke replace in The Light Way In?", a: "The signal. It tells the speaker something is coming and makes it impossible to take badly.", bundle: 'pro' },
+        { q: "Why does the acknowledgement still come after the joke?", a: "It stops the joke being all there was.", bundle: 'pro' },
+        { q: "What do all three have to end with?", a: "A point that was worth the interruption.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five situations that make interrupting hard:\n\n• **There Is No Pause** — four minutes with no gap\n• **It Cannot Wait** — the moment is about to pass\n• **You Have to Correct Something** — a wrong fact being built on\n• **Interrupting Someone Senior** — the power gap\n• **You Have Already Interrupted Once** — the second one is judged harder\n\nIn four of the five, the risk is in the delivery rather than in the act.",
+      cards: [
+        { q: "What are the five challenge categories in this pack?", a: "There Is No Pause, It Cannot Wait, You Have to Correct Something, Interrupting Someone Senior, and You Have Already Interrupted Once.", bundle: 'pro' },
+        { q: "How do you know waiting has stopped being patience?", a: "Four minutes with no full stop you could use, and everyone else has given up trying too.", bundle: 'pro' },
+        { q: "Is making your own gap a failure of manners?", a: "No. What makes it rude is doing it without a signal or a reason.", bundle: 'pro' },
+        { q: "What does an interruption that saves everyone ten minutes count as?", a: "A favour. Sitting on it to be polite is the more expensive choice.", bundle: 'pro' },
+        { q: "How do you correct a fact without correcting the person?", a: "One clause of acknowledgement first. Grant what is right before you touch what is not.", bundle: 'pro' },
+        { q: "Why interrupt sooner when someone is wrong?", a: "Correct early and it is information. Correct late and it is an embarrassment.", bundle: 'pro' },
+        { q: "Where is the risk when the speaker is senior?", a: "In the delivery, not the act. A signalled, reasoned interruption reads as engagement.", bundle: 'pro' },
+        { q: "It is your second interruption. What buys you goodwill?", a: "Naming your own pattern before anyone else does. \"Me again. I'm aware of it.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "The six beliefs that get in the way here:\n\n• **Interrupting Is Always Rude** — the flat rule that keeps things unsaid\n• **It Is All or Nothing** — silence, or barging in\n• **Too Basic to Ask** — my point is not important enough\n• **I Have Taken Too Much Room** — the opposite failure\n• **They Will Think I Wasn't Listening** — the cut-in as proof\n• **Handing It Back Undoes It** — giving the floor back cancels the point\n\nFive push towards silence. One pushes the other way, and it is there on purpose.",
+      cards: [
+        { q: "What are the six mindset areas in this pack?", a: "Interrupting Is Always Rude, It Is All or Nothing, Too Basic to Ask, I Have Taken Too Much Room, They Will Think I Wasn't Listening, and Handing It Back Undoes It.", bundle: 'pro' },
+        { q: "Is conversation a queue?", a: "No. Turn-taking is negotiated constantly, and a signalled interruption is part of how it works.", bundle: 'pro' },
+        { q: "What is the third option between silence and barging in?", a: "A two-word cue that lets the speaker choose when to stop.", bundle: 'pro' },
+        { q: "Who is the worst judge of whether your point matters?", a: "You. And by the time that argument is settled, the moment has gone.", bundle: 'pro' },
+        { q: "What should you watch if interrupting comes easily to you?", a: "The count, the hand-back, and whether there was a reason at all.", bundle: 'pro' },
+        { q: "What turns an interruption into a response?", a: "Naming their point before you make yours. A response cannot be an accusation of not listening.", bundle: 'pro' },
+        { q: "What do people forgive, and what do they not?", a: "Being cut off, yes. Being replaced, no.", bundle: 'pro' },
+        { q: "What does holding onto the floor cost you?", a: "The point you fought your way in to make gets remembered as the moment you talked over someone.", bundle: 'pro' },
       ]
     },
   ],
@@ -2026,12 +2157,13 @@ const memorizeCollections = {
   storytellingwiththesixws: [
     {
       name: "Core Idea",
-      description: "The concept behind the six W's and the full set.",
+      description: "Six questions a complete story answers: What, How, Why, When, Where and Who.\n\nWhat, How and Why carry the story; the other three set the scene. Three or four are often enough — a flat story is usually a missing W rather than a boring event.",
       cards: [
         { q: "What are the six W's?", a: "What, How, Why, When, Where, Who.", bundle: 'free' },
         { q: "What is the goal of the six W's?", a: "To tell a clear, interesting story about a real event by making sure the basic questions get answered.", bundle: 'free' },
         { q: "Which three carry the story?", a: "What, How and Why — the spine. The other three set the scene.", bundle: 'free' },
         { q: "Do you have to use all six?", a: "No. Three or four are often enough — the more you include, the clearer it gets, but longer isn't better.", bundle: 'free' },
+        { q: "Is storytelling a talent?", a: "Here it is six questions with answers. A good story is one where they are answered; a bad one is where three are not.", bundle: 'free' },
         { q: "How do you fix a story that fell flat?", a: "Work out which W is missing. A flat story is usually a missing W, not a boring event.", bundle: 'pro' },
         { q: "What is the most commonly missed W?", a: "Why. It's the one that turns a sequence of events into a story.", bundle: 'pro' },
         { q: "What is the most common structural mistake?", a: "Burying the event — too much setup before anything happens.", bundle: 'pro' },
@@ -2039,68 +2171,136 @@ const memorizeCollections = {
     },
     {
       name: "What — the Main Event",
-      description: "The theory behind the event itself.",
       cards: [
         { q: "What does the What give you?", a: "The one thing that happened, said plainly in a sentence.", bundle: 'free' },
         { q: "What does it sound like?", a: "\"I lost my homework.\" / \"We missed the last train.\"", bundle: 'free' },
         { q: "Why say it early?", a: "Long setup with no event is the fastest way to lose a listener.", bundle: 'free' },
+        { q: "Which is the load-bearing W?", a: "What. Everything else in the story exists to make that one sentence land.", bundle: 'free' },
+        { q: "What has a listener been given if they cannot say what happened?", a: "Not a story — a description of an afternoon.", bundle: 'free' },
         { q: "What are the three ways to state the event?", a: "The bare headline, the change, or the outcome.", bundle: 'pro' },
         { q: "Does the event need to be dramatic?", a: "No — it needs to be clear. Small told sharply beats big told vaguely.", bundle: 'pro' },
+        { q: "What does the outcome version sound like?", a: "\"And that is how I ended up carrying a wardrobe up four flights.\"", bundle: 'pro' },
       ]
     },
     {
       name: "How — the Process",
-      description: "The theory behind the middle of the story.",
       cards: [
         { q: "What does the How give you?", a: "The way it happened, step by step — the part the listener follows along with.", bundle: 'free' },
         { q: "What does it sound like?", a: "\"I checked my bag, then my locker, then the whole hallway.\"", bundle: 'free' },
         { q: "How many beats should it have?", a: "Two or three. Nine steps is where stories get too long.", bundle: 'free' },
+        { q: "If What is the headline, what is How?", a: "The article. The part the listener actually lives in.", bundle: 'free' },
+        { q: "What does the manner version sound like?", a: "\"Very slowly, and very badly.\"", bundle: 'free' },
         { q: "What are the three ways to tell the how?", a: "Step by step, the one crucial detail, or the manner.", bundle: 'pro' },
         { q: "What happens if you rush it?", a: "You've delivered a summary instead of a story. The How is what people are actually listening to.", bundle: 'pro' },
+        { q: "What happens to a listener tracking nine steps?", a: "They stop tracking anything.", bundle: 'pro' },
       ]
     },
     {
       name: "Why — the Reason",
-      description: "The theory behind the reason underneath.",
       cards: [
         { q: "What does the Why give you?", a: "The cause, the motive or the problem underneath — why any of it happened.", bundle: 'free' },
         { q: "What does it sound like?", a: "\"I was in a hurry and didn't check carefully.\"", bundle: 'free' },
         { q: "What is the symptom of a missing Why?", a: "The listener says \"and?\" at the end.", bundle: 'free' },
+        { q: "What does the Why turn a sequence of events into?", a: "A story. Without it they understand what occurred but not the person it happened to.", bundle: 'free' },
+        { q: "What does the problem version sound like?", a: "\"The whole thing hinged on a booking nobody had made.\"", bundle: 'free' },
         { q: "What are the three kinds of why?", a: "The cause, the motivation, or the problem.", bundle: 'pro' },
         { q: "Why does it matter so much?", a: "It's where you show up in your own story — the difference between reporting an event and telling one.", bundle: 'pro' },
+        { q: "What is the listener asking for when they say \"and?\"", a: "Not a better event. What it was like to be you in it.", bundle: 'pro' },
       ]
     },
     {
       name: "When — the Time",
-      description: "The theory behind placing the story in time.",
       cards: [
         { q: "What does the When give you?", a: "The point in time, the stretch of time, or the bit of timing that mattered.", bundle: 'free' },
         { q: "What does it sound like?", a: "\"It happened yesterday afternoon.\" / \"About thirty seconds before the bell.\"", bundle: 'free' },
         { q: "How long should it be?", a: "One clause. It earns its place by being specific, not detailed.", bundle: 'free' },
+        { q: "What two jobs does When do?", a: "Tells them this is a real event rather than a general observation — and occasionally carries the whole point.", bundle: 'free' },
+        { q: "What does the stretch version sound like?", a: "\"It went on for about six hours.\"", bundle: 'free' },
         { q: "What are the three kinds of when?", a: "The point in time, the stretch, or the timing that matters.", bundle: 'pro' },
         { q: "Which kind is worth hunting for?", a: "The timing that matters. \"On a Tuesday\" is furniture; \"the morning of the interview\" is part of the story.", bundle: 'pro' },
+        { q: "What is the difference between furniture and story?", a: "\"On a Tuesday\" is furniture. \"The morning of the interview\" is part of the story.", bundle: 'pro' },
       ]
     },
     {
       name: "Where — the Setting",
-      description: "The theory behind the setting.",
       cards: [
         { q: "What does the Where give you?", a: "The place, given with enough detail that the listener can picture it.", bundle: 'free' },
         { q: "What does it sound like?", a: "\"In the school hallway, with everyone pushing past.\"", bundle: 'free' },
         { q: "How much detail?", a: "One concrete thing. The listener builds the rest themselves.", bundle: 'free' },
+        { q: "Why is Where the cheapest of the six?", a: "One clause, often three words, and it does more work than another sentence of explanation.", bundle: 'free' },
+        { q: "What does the place that IS the point sound like?", a: "\"In the queue. That was the problem.\"", bundle: 'free' },
         { q: "What are the three kinds of where?", a: "The plain location, the detail that sets the scene, or the place that IS the point.", bundle: 'pro' },
         { q: "What is the symptom of a missing Where?", a: "They're following the story but seeing nothing — it could have happened anywhere.", bundle: 'pro' },
+        { q: "What are you actually giving the listener?", a: "Somewhere to stand. You are not describing a room.", bundle: 'pro' },
       ]
     },
     {
       name: "Who — the People",
-      description: "The theory behind the people in the story.",
       cards: [
         { q: "What does the Who give you?", a: "The people involved, and what they did about it.", bundle: 'free' },
         { q: "What does it sound like?", a: "\"My teacher was waiting, and my best friend tried to help.\"", bundle: 'free' },
         { q: "When do you introduce someone?", a: "The first time they appear, in about four words.", bundle: 'free' },
+        { q: "What does Who make a story do?", a: "Happen to somebody, rather than merely occur.", bundle: 'free' },
+        { q: "What does the audience version sound like?", a: "\"And about thirty people watching, which was the problem.\"", bundle: 'free' },
         { q: "What are the three ways to bring people in?", a: "Everyone involved, the one who mattered, or the audience.", bundle: 'pro' },
         { q: "Why is Who the most reliable source of warmth?", a: "Another person reacting is nearly always more interesting than the event itself.", bundle: 'pro' },
+        { q: "Your story feels flat. Where do you look first?", a: "For a person in it you have not brought properly onto the page.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **The Story Spine** — What, How and Why, the three that carry it\n• **The Scene** — When, Where and Who, the three that place it\n• **Which W Is Missing** — the full six, used as a diagnostic\n\nThe third is not a checklist. It is a way of finding the one W a flat story is missing.",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "The Story Spine, The Scene, and Which W Is Missing.", bundle: 'pro' },
+        { q: "Which three W's carry the story?", a: "What, How and Why.", bundle: 'pro' },
+        { q: "What happens if one of the spine W's is missing?", a: "The story has a hole the listener notices even if they cannot name it.", bundle: 'pro' },
+        { q: "Which three place the story?", a: "When, Where and Who.", bundle: 'pro' },
+        { q: "Why do people forget the scene W's entirely?", a: "They are the ones you can afford to drop when time is short — so they get dropped every time.", bundle: 'pro' },
+        { q: "How much is each scene W worth?", a: "One clause. They set a scene; they are not the scene.", bundle: 'pro' },
+        { q: "They said \"and?\" at the end. Which W is missing?", a: "Why.", bundle: 'pro' },
+        { q: "A name turned up with no owner. Which W is missing?", a: "Who — introduced about four words too late.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **The Full Six** — When → Where → Who → What → How → Why\n2. **The Short Version** — the spine alone, for a conversation rather than a floor\n3. **Hook First** — the event first, and the scene filled in behind it\n\nThe six W's have no fixed order. These are three that work, for three different moments.",
+      cards: [
+        { q: "What is the order in The Full Six?", a: "When, Where, Who, then What, How and Why.", bundle: 'pro' },
+        { q: "Why does the scene come before the event there?", a: "So the listener has somewhere to put the event when it lands.", bundle: 'pro' },
+        { q: "How long is that whole story?", a: "Six sentences. Most people use either two or forty, and six beats both.", bundle: 'pro' },
+        { q: "What is The Short Version for?", a: "A conversation rather than a floor — thirty seconds, or a contribution to someone else's topic.", bundle: 'pro' },
+        { q: "What does each spine W prevent?", a: "Without What there is only atmosphere; without How it is an announcement; without Why they say \"and?\"", bundle: 'pro' },
+        { q: "When do you use Hook First?", a: "When the event is strong enough to open on, or when you are not sure you have the room.", bundle: 'pro' },
+        { q: "What does leading with the event buy you?", a: "Thirty seconds of patience, which is the time to set the scene afterwards.", bundle: 'pro' },
+        { q: "What does setup do to attention you do not have?", a: "Nothing. Setup only holds attention you already have.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five ways a story goes wrong:\n\n• **You Buried the Event** — two minutes in and nothing has happened\n• **They Said \"And?\"** — everything happened, nothing landed\n• **They Cannot Picture It** — all events, no scene\n• **Who Is This Person?** — a name with no owner\n• **It Is Going On Too Long** — a subplot has grown inside it\n\nEach one names a missing W, which is why they are quick to fix mid-telling.",
+      cards: [
+        { q: "What are the five challenge categories in this pack?", a: "You Buried the Event, They Said \"And?\", They Cannot Picture It, Who Is This Person?, and It Is Going On Too Long.", bundle: 'pro' },
+        { q: "You are two minutes in with no event. What do you do?", a: "Say it now, out of order if necessary. \"Anyway — I lost the whole thing.\"", bundle: 'pro' },
+        { q: "Has anyone ever minded a story that started at the event?", a: "No. You can always backfill.", bundle: 'pro' },
+        { q: "The story got a polite pause. What is missing?", a: "The Why. The events were clear; the reason to care was not.", bundle: 'pro' },
+        { q: "They are following but seeing nothing. What is missing?", a: "The Where. One concrete detail, not a description.", bundle: 'pro' },
+        { q: "When do you introduce a person?", a: "The first time they appear, in about four words.", bundle: 'pro' },
+        { q: "What is a listener doing while they work out who someone is?", a: "Not listening to the story.", bundle: 'pro' },
+        { q: "The story is sagging. Do you speed up or cut?", a: "Cut. Talking faster only makes it a fast long story.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "The six beliefs that get in the way here:\n\n• **I Am Not a Storyteller** — it takes a talent I do not have\n• **I Would Not Know Where to Start** — storytelling is inspiration\n• **Nothing Happens to Me** — my material is not good enough\n• **It All Needs to Be In** — use the whole structure every time\n• **They Need the Background First** — the event makes no sense without it\n• **The Place Doesn't Matter** — setting is padding\n\nThe first three stop stories being told. The last three make them worse once they are.",
+      cards: [
+        { q: "What are the six mindset areas in this pack?", a: "I Am Not a Storyteller, I Would Not Know Where to Start, Nothing Happens to Me, It All Needs to Be In, They Need the Background First, and The Place Doesn't Matter.", bundle: 'pro' },
+        { q: "Is the material usually the problem?", a: "Rarely. Structure is, and structure is learnable in an afternoon.", bundle: 'pro' },
+        { q: "What do the six questions replace?", a: "Inspiration, a memory for detail, and the nerve to start without knowing the ending.", bundle: 'pro' },
+        { q: "Where are your stories already?", a: "Small failures, first times, and ordinary days with one odd thing in them.", bundle: 'pro' },
+        { q: "What is the difference between a good teller and a tiring one?", a: "Almost entirely what they chose not to say.", bundle: 'pro' },
+        { q: "Why does background land badly at the start?", a: "Until something has happened, it is a list of facts about strangers.", bundle: 'pro' },
+        { q: "When does background become interesting?", a: "Once there is something for it to be behind.", bundle: 'pro' },
+        { q: "How long is the shortest useful Where?", a: "Three words. It is the shortest of the six and the one people miss most.", bundle: 'pro' },
       ]
     },
   ],
@@ -3228,11 +3428,13 @@ const memorizeCollections = {
   brokenrecord: [
     {
       name: "Core Idea",
-      description: "The shape of the technique: hold one sentence calmly, and know where the judgement lies.",
+      description: "Eight parts of one technique: decide the line, acknowledge and repeat, keep the same words, give no reasons, do not follow the switch, keep the tone flat, offer a compromise where the principle allows, and know when to stop.\n\nMost of it is one move repeated. The judgement lies at the two ends.",
       cards: [
         { q: "What are the eight parts of this technique?", a: "Decide your line, acknowledge and repeat, keep the same words, don't give reasons, don't follow the new argument, keep the tone flat, offer a workable compromise, know when to stop.", bundle: 'free' },
         { q: "What is the technique for?", a: "Holding a position under pressure without arguing, and keeping the conversation calm.", bundle: 'free' },
         { q: "Which part decides whether it works?", a: "Not giving reasons.", bundle: 'free' },
+        { q: "How much of the technique is new material?", a: "Almost none. It is one sentence, repeated, with the delivery held steady.", bundle: 'free' },
+        { q: "What is the test before you use it at all?", a: "Whether this is a decision that is yours to make, or an obligation you are trying not to face.", bundle: 'free' },
         { q: "Where does the judgement lie?", a: "At the two ends — choosing the line beforehand, and choosing when to stop.", bundle: 'pro' },
         { q: "What are the two opposite failures?", a: "Softening (longer line, reasons, wobbly tone) and walling (repeating when a compromise exists or when you are in the wrong).", bundle: 'pro' },
         { q: "What is the technique NOT for?", a: "Avoiding a fair claim on you — a promise, a mistake, or something you are responsible for.", bundle: 'pro' },
@@ -3240,11 +3442,12 @@ const memorizeCollections = {
     },
     {
       name: "Decide Your Line",
-      description: "The preparation, which decides how the rest goes.",
       cards: [
         { q: "What three properties does a good line have?", a: "Short, about you rather than them, and containing no reason.", bundle: 'free' },
         { q: "Why choose the line in advance?", a: "A line chosen under pressure is too long, too apologetic or too specific.", bundle: 'free' },
         { q: "What is the test for a line?", a: "Whether you could still say it calmly on the fifth repetition.", bundle: 'free' },
+        { q: "How short is short enough?", a: "If it takes a breath and a half, it is too long.", bundle: 'free' },
+        { q: "What does \"about you rather than them\" mean?", a: "A statement of your position, not a judgement of their request. \"I'm not free\", not \"that's a big ask\".", bundle: 'free' },
         { q: "Why must the reason stay out of the line?", a: "A reason inside the line makes the line arguable.", bundle: 'pro' },
         { q: "Turn \"I can't afford it because of the car\" into a line.", a: "\"I'm not lending money at the moment.\"", bundle: 'pro' },
         { q: "How long should preparation take?", a: "About ten seconds — and it beats any amount of quick thinking mid-pressure.", bundle: 'pro' },
@@ -3252,11 +3455,12 @@ const memorizeCollections = {
     },
     {
       name: "Acknowledge, Then Repeat",
-      description: "The core move.",
       cards: [
         { q: "What does the acknowledgement prevent?", a: "The other person repeating themselves louder because they think you have not understood.", bundle: 'free' },
         { q: "How long should the acknowledgement be?", a: "One clause. Shorter than the line itself.", bundle: 'free' },
         { q: "Name two ways to acknowledge briefly.", a: "Any two of: name their position, concede what is true, acknowledge the feeling, acknowledge and move straight on.", bundle: 'free' },
+        { q: "What does it sound like?", a: "\"I understand it's frustrating — I'm still not going to be able to.\"", bundle: 'free' },
+        { q: "How do you acknowledge a feeling rather than an argument?", a: "\"I can see you're frustrated. My answer's the same.\"", bundle: 'free' },
         { q: "What happens if the acknowledgement gets long?", a: "It reads as softening, which reads as an opening, and the pushing increases.", bundle: 'pro' },
         { q: "How do you concede a fair point without conceding the position?", a: "Agree with the fact and repeat the line — \"that's true, I did. I'm not doing it this time.\"", bundle: 'pro' },
         { q: "What is the sign you have started negotiating?", a: "The acknowledgement has become longer than the line.", bundle: 'pro' },
@@ -3264,11 +3468,12 @@ const memorizeCollections = {
     },
     {
       name: "Keep the Same Words",
-      description: "Why the technique has its name.",
       cards: [
         { q: "Why repeat the exact wording?", a: "Every rephrasing is a new sentence, and a new sentence can be argued with.", bundle: 'free' },
         { q: "What does sameness signal?", a: "That this is settled rather than under discussion.", bundle: 'free' },
         { q: "Why do most people rephrase instead?", a: "Repeating feels obstinate, so they try to say it better — which keeps the conversation alive.", bundle: 'free' },
+        { q: "What do four rephrasings hand them?", a: "Four different positions to test, one of which will be weaker than the others.", bundle: 'free' },
+        { q: "Why does sameness keep you calm?", a: "You are not composing, so you have attention left for your tone.", bundle: 'free' },
         { q: "Name two things sameness does beyond removing new material.", a: "Any two of: signals settledness, keeps you calm because you are not composing, ends things faster.", bundle: 'pro' },
         { q: "How is rephrasing heard?", a: "As saying it less firmly.", bundle: 'pro' },
         { q: "What do you say when they point out you keep repeating yourself?", a: "\"I do, because it's still the answer.\"", bundle: 'pro' },
@@ -3276,11 +3481,12 @@ const memorizeCollections = {
     },
     {
       name: "Just the Position",
-      description: "The part that decides whether the technique works.",
       cards: [
         { q: "What happens to every reason you give?", a: "It becomes something to solve, disprove or work around.", bundle: 'free' },
         { q: "What does offering a reason change about the conversation?", a: "It moves it from what you decided to whether your reason is good enough.", bundle: 'free' },
         { q: "Name two ways to hold without reasons.", a: "Any two of: state it as a preference, decline to explain openly, say it is not about anything, answer the reason-hunting question with the line.", bundle: 'free' },
+        { q: "What happens if you say you are busy?", a: "They find you a time. Every reason becomes something to solve.", bundle: 'free' },
+        { q: "What does declining to explain sound like?", a: "\"I'm not going to get into why. The answer's no.\"", bundle: 'free' },
         { q: "What do you say if you have already given a reason and they are solving it?", a: "\"Even if that weren't the case, I'd still say no.\"", bundle: 'pro' },
         { q: "What is the mindset line for this move?", a: "A reason is a door, and you are choosing not to open it.", bundle: 'pro' },
         { q: "What do you say when they demand a proper explanation?", a: "\"I'm not going to explain it. The answer's still no.\"", bundle: 'pro' },
@@ -3288,11 +3494,12 @@ const memorizeCollections = {
     },
     {
       name: "Stay on Your Line",
-      description: "The move for when they change tack.",
       cards: [
         { q: "What is a \"new argument\" usually?", a: "The same request wearing a different coat.", bundle: 'free' },
         { q: "What happens if you answer it?", a: "You move onto ground they chose, and can be kept there indefinitely.", bundle: 'free' },
         { q: "Name two kinds of switch.", a: "Any two of: to fairness, to the past, to your character, to consequences.", bundle: 'free' },
+        { q: "What does a switch to the past sound like, and what answers it?", a: "\"You always do this.\" — \"That's a bigger conversation. Today, I'm not able to.\"", bundle: 'free' },
+        { q: "What does a switch to consequences sound like?", a: "\"We'll have to cancel then.\" — \"I understand. I'm still not able to.\"", bundle: 'free' },
         { q: "What do you say to \"you did it for him\"?", a: "\"I did. I'm not doing this one.\"", bundle: 'pro' },
         { q: "What do you say to \"you've got so mean lately\"?", a: "\"Maybe. The answer's still no.\"", bundle: 'pro' },
         { q: "How do you handle a completely separate grievance raised mid-conversation?", a: "Park it — \"that's a separate thing and we can talk about it another day.\"", bundle: 'pro' },
@@ -3300,11 +3507,12 @@ const memorizeCollections = {
     },
     {
       name: "Keep the Tone Flat",
-      description: "The delivery, which matters more than the words.",
       cards: [
         { q: "What does tone tell the other person?", a: "Whether you are being worn down or standing firm.", bundle: 'free' },
         { q: "Name two things that leak tone.", a: "Any two of: \"as I already said\", sarcasm, volume and speed, over-apologising.", bundle: 'free' },
         { q: "What does a sigh before the line communicate?", a: "That you are close to breaking.", bundle: 'free' },
+        { q: "Where does tone actually live?", a: "In a few specific words. \"As I already said\" is an accusation; \"like I told you\" is a scoring point.", bundle: 'free' },
+        { q: "What do volume and speed signal?", a: "That you are rattled, whatever the words say.", bundle: 'free' },
         { q: "Why is sarcasm particularly damaging here?", a: "It turns a boundary into a fight, and then the subject is your tone rather than your decision.", bundle: 'pro' },
         { q: "Why does over-apologising invite more pressure?", a: "Distress looks like movement.", bundle: 'pro' },
         { q: "What should you do when they raise their voice?", a: "Go slower and quieter, not louder. \"I'm not going to shout about it.\"", bundle: 'pro' },
@@ -3312,11 +3520,12 @@ const memorizeCollections = {
     },
     {
       name: "Offer a Workable Compromise",
-      description: "What stops the technique becoming a wall.",
       cards: [
         { q: "What is the test for whether to compromise?", a: "Whether your self-respect is involved — would saying yes to a modified version leave you feeling used?", bundle: 'free' },
         { q: "When should the compromise be offered?", a: "Once, and only after the line has held.", bundle: 'free' },
         { q: "Name two kinds of compromise.", a: "Any two of: a smaller version, a different form of help, a different time, naming what you would say yes to.", bundle: 'free' },
+        { q: "What does it stop the technique becoming?", a: "A wall. Holding a line when a reasonable alternative exists is stubbornness.", bundle: 'free' },
+        { q: "What does naming what you would say yes to sound like?", a: "\"If it were a lift rather than the whole day, that I could do.\"", bundle: 'free' },
         { q: "What happens if you offer a compromise early?", a: "It is heard as the first concession in a negotiation.", bundle: 'pro' },
         { q: "What do you say if they treat the compromise as an opening bid?", a: "\"That's not a starting point, it's the whole offer.\"", bundle: 'pro' },
         { q: "Why does refusing to compromise sometimes deserve the other person's frustration?", a: "Because holding a line when a reasonable alternative exists is stubbornness rather than assertiveness.", bundle: 'pro' },
@@ -3324,14 +3533,71 @@ const memorizeCollections = {
     },
     {
       name: "Know When to Stop",
-      description: "The endpoint, which is part of the technique.",
       cards: [
         { q: "What two things signal the end?", a: "You have repeated the line three or four times with no change, or they have moved from persuading to pressuring.", bundle: 'free' },
         { q: "Name two ways to end it.", a: "Any two of: name the loop, say the answer is final, change the subject deliberately, leave the conversation.", bundle: 'free' },
         { q: "Why does the technique need an endpoint?", a: "Indefinite repetition exhausts both people and becomes its own kind of aggression.", bundle: 'free' },
+        { q: "Why is ending it part of the technique?", a: "Repetition works because it is finite. Indefinite repetition becomes its own kind of aggression.", bundle: 'free' },
+        { q: "What does naming the loop sound like?", a: "\"We're going round in circles — the answer isn't going to change.\"", bundle: 'free' },
         { q: "What do you do when it comes back a week later?", a: "Shorten each round rather than restarting — eventually talk about the pattern rather than the request.", bundle: 'pro' },
         { q: "What is the difference between new information and a new argument?", a: "You hold against pressure and update on facts. Refusing real information is stubbornness.", bundle: 'pro' },
         { q: "How do you change your mind without it looking like a collapse?", a: "Say why clearly — \"I've changed my mind, and it's because of the timing, not because you pushed.\"", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Before It Starts** — the preparation half, decided in a calm room\n• **Under Pressure** — the four moves for the middle of the conversation\n• **All Eight** — no cue given, which is the real thing\n\nThe two failures are opposite: softening, and walling. All Eight is where you have to avoid both.",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "Before It Starts, Under Pressure, and All Eight.", bundle: 'pro' },
+        { q: "Which two moves are the preparation half?", a: "Decide Your Line and Keep the Same Words.", bundle: 'pro' },
+        { q: "Why do those two belong together?", a: "Both are about the wording — chosen in advance, then left alone.", bundle: 'pro' },
+        { q: "Which four moves are for the middle?", a: "Acknowledge Then Repeat, Just the Position, Stay on Your Line, and Keep the Tone Flat.", bundle: 'pro' },
+        { q: "Which four pressures do those defend against?", a: "Being told you have not understood, being asked to justify yourself, being moved onto new ground, and being wound up.", bundle: 'pro' },
+        { q: "Which of the four decides everything?", a: "Just the Position. A reason hands them a vote.", bundle: 'pro' },
+        { q: "What does softening look like?", a: "The line gets longer, the reasons appear, the tone wobbles.", bundle: 'pro' },
+        { q: "What does walling look like?", a: "Repeating a line when a reasonable compromise exists, or when you are actually in the wrong.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and what each one runs:\n\n1. **The Classic Loop** — they push, you repeat, they switch tack, and after three or four rounds it ends\n2. **When a Compromise Is Right** — hold first, then offer once\n3. **When They Escalate** — shorter answers, flatter tone, and an earlier endpoint\n\nIn all three the arguments change and your sentence does not. That contrast is the whole mechanism.",
+      cards: [
+        { q: "What are the three sequences in this pack?", a: "The Classic Loop, When a Compromise Is Right, and When They Escalate.", bundle: 'pro' },
+        { q: "What is the mechanism in The Classic Loop?", a: "The arguments change while your answer does not.", bundle: 'pro' },
+        { q: "Why does the technique need no confrontation in it?", a: "Nothing is being argued. The same sentence simply arrives again.", bundle: 'pro' },
+        { q: "What is the order when a compromise is right?", a: "Hold the line first, then offer. Once.", bundle: 'pro' },
+        { q: "Why does the order matter more than the offer?", a: "Offered from a held line it reads as generous. Offered early it is the first concession in a negotiation.", bundle: 'pro' },
+        { q: "What changes when persuasion turns into pressure?", a: "Shorter answers, flatter tone, and no engagement with the accusation.", bundle: 'pro' },
+        { q: "Is naming it fair?", a: "Once, plainly — and then leaving is fair too.", bundle: 'pro' },
+        { q: "When do you end an escalating one?", a: "Sooner than you otherwise would. It has stopped being a conversation to win.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five things that test the technique:\n\n• **You Are Wearing Down** — the fifth repetition is harder than the first\n• **They Have a Genuinely New Point** — facts, not an argument\n• **They Have Power Over You** — flat repetition reads differently upwards\n• **You Should Actually Move** — a fair claim rather than a request\n• **It Keeps Coming Back** — a closed conversation read as a pause\n\nTwo of the five are about knowing when not to use it at all.",
+      cards: [
+        { q: "What are the five challenge categories in this pack?", a: "You Are Wearing Down, They Have a Genuinely New Point, They Have Power Over You, You Should Actually Move, and It Keeps Coming Back.", bundle: 'pro' },
+        { q: "What changes when you are wearing down?", a: "Not your position — your stamina. And they can hear it, which is why the pushing continues.", bundle: 'pro' },
+        { q: "What do you do about it?", a: "Make the line shorter rather than longer, and move to the endpoint sooner.", bundle: 'pro' },
+        { q: "What is the difference between a new argument and new facts?", a: "\"You're being unfair\" is an argument. \"The deadline moved to Friday\" is a fact, and refusing to hear it is stubbornness.", bundle: 'pro' },
+        { q: "How do you change your mind without it looking like a collapse?", a: "Say why, clearly. Then it is a decision rather than a give-in.", bundle: 'pro' },
+        { q: "What two adjustments does a power gap need?", a: "A slightly fuller acknowledgement, and adding what you can do rather than only repeating.", bundle: 'pro' },
+        { q: "What is the test before using the technique at all?", a: "Is this a request I am entitled to decline, or an obligation I am trying not to face?", bundle: 'pro' },
+        { q: "It came back a week later. What do you do?", a: "Shorten each round. And if it keeps returning, name the pattern rather than the request.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "The eight beliefs that get in the way here:\n\n• **You Do Not Owe a Reason** — a decision needs justifying\n• **Repetition Is Not Rudeness** — saying it again is obstinate\n• **Their Discomfort Is Not Your Emergency** — I could end this instantly\n• **Calm Is the Technique** — the words are what matter\n• **I'll Know What to Say** — preparing is over-preparing\n• **This One Deserves an Answer** — the new point is a real point\n• **A Compromise Is a Loss** — offering means the line failed\n• **Stopping Is Giving Up** — leaving without agreement is losing\n\nEach one produces a specific leak in the line.",
+      cards: [
+        { q: "What are the eight mindset areas in this pack?", a: "You Do Not Owe a Reason, Repetition Is Not Rudeness, Their Discomfort Is Not Your Emergency, Calm Is the Technique, I'll Know What to Say, This One Deserves an Answer, A Compromise Is a Loss, and Stopping Is Giving Up.", bundle: 'pro' },
+        { q: "What does a reason hand the other person?", a: "The terms of the argument, and a vote on whether it is good enough.", bundle: 'pro' },
+        { q: "How does repetition actually read from outside?", a: "As settled. People are informed by it rather than offended, and most stop after the third identical answer.", bundle: 'pro' },
+        { q: "What is the hardest part of holding a line?", a: "Watching someone be disappointed and knowing you could end it instantly.", bundle: 'pro' },
+        { q: "What does an improvised line do?", a: "It negotiates. Under pressure you will not compose, you will improvise.", bundle: 'pro' },
+        { q: "Why is the new frame not worth answering?", a: "It gets you no closer to what you already decided. It hands them a fresh subject to be right about.", bundle: 'pro' },
+        { q: "When is a compromise not caving?", a: "When it comes from a line you held, and it is the version that works for you.", bundle: 'pro' },
+        { q: "Was agreement ever the target?", a: "No. Your answer staying the same was. Stopping is the last move, not the absence of one.", bundle: 'pro' },
       ]
     },
   ],
@@ -3424,90 +3690,163 @@ const memorizeCollections = {
   makingrequests: [
     {
       name: "Core Idea",
-      description: "The shape of the pack: what makes a request work, and the two ways it fails.",
+      description: "Seven strategies for asking: say it rather than hint, make it specific, give one short reason, leave the exit open, ask for help by name, follow up once, and take the answer.\n\nA good request is answerable and refusable. Those are the two jobs, and the two ways it fails.",
       cards: [
         { q: "What are the seven strategies in this pack?", a: "The Actual Request, Make It Specific, Give One Short Reason, Leave Room to Refuse, Ask for Help, Follow Up Once, Take a No Well.", bundle: 'free' },
         { q: "What are the two jobs of a good request?", a: "It has to be answerable, and it has to be refusable.", bundle: 'free' },
         { q: "What are the two ways a request fails?", a: "It cannot be answered — vague, hinted, aimed at the wrong person. Or it cannot be refused, in which case it is a demand with a polite tone.", bundle: 'free' },
+        { q: "How long is a whole request, usually?", a: "Two sentences. It is the parts left out that cause the trouble, not the length.", bundle: 'free' },
+        { q: "Which strategies come after the answer?", a: "Follow Up Once and Take a No Well — the part almost nobody practises.", bundle: 'free' },
         { q: "What is the asymmetry between asking and declining?", a: "When you ask, one short reason helps. When you decline, reasons invite argument.", bundle: 'pro' },
         { q: "Where does this pack end and Broken Record begin?", a: "Here the answer is theirs to give. Broken Record is for holding a line under pressure.", bundle: 'pro' },
+        { q: "What are you protecting when you take a no well?", a: "The next request, not this one.", bundle: 'pro' },
       ]
     },
     {
       name: "The Actual Request",
-      description: "Turning the hint into a question.",
       cards: [
         { q: "What is wrong with a hint?", a: "It asks the other person to work out what you want and then decide — and most people fail the first part.", bundle: 'free' },
         { q: "Why is hinting so tempting?", a: "A hint cannot be refused. It also cannot be granted.", bundle: 'free' },
         { q: "What are the three usual hints?", a: "The observation, the sigh about yourself, and the question that is really a request.", bundle: 'free' },
+        { q: "What does \"are you busy Saturday?\" become?", a: "\"Could you give me an hour on Saturday?\"", bundle: 'free' },
+        { q: "What does the sigh about yourself become?", a: "\"Could you take two of these off me?\"", bundle: 'free' },
         { q: "What does a complaint become when you turn it into a request?", a: "\"The kitchen's a state\" becomes \"could you do your washing up the same evening?\"", bundle: 'pro' },
         { q: "Why does hinting produce resentment?", a: "You experience it as a refusal. They never heard a question.", bundle: 'pro' },
+        { q: "What are they not refusing?", a: "Something they never heard. Say the sentence.", bundle: 'pro' },
       ]
     },
     {
       name: "Make It Specific",
-      description: "Size, timing, and what it involves.",
       cards: [
         { q: "What three things should be specific?", a: "The size, the when, and what it actually involves.", bundle: 'free' },
         { q: "Why is a vague request hard to say yes to?", a: "They have to imagine the worst version and answer that one.", bundle: 'free' },
         { q: "What does being precise actually do?", a: "It makes yes possible. It is not being demanding.", bundle: 'free' },
+        { q: "What is a vague request, from their side?", a: "A blank cheque. And people do not sign blank cheques.", bundle: 'free' },
+        { q: "Which part do people imagine wrongly?", a: "What it involves. \"You wouldn't have to drive. Just carry.\"", bundle: 'free' },
         { q: "Where does resentment about favours usually come from?", a: "A request that turned out to be several times the size the other person agreed to.", bundle: 'pro' },
         { q: "What if you do not know the size yet?", a: "Say so, and come back when you do.", bundle: 'pro' },
+        { q: "Which of the three matters most?", a: "The size. How long, how much, how many.", bundle: 'pro' },
       ]
     },
     {
       name: "Give One Short Reason",
-      description: "One sentence of why, and no more.",
       cards: [
         { q: "How many reasons?", a: "One. Two sounds like a case, three sounds like you are talking yourself into it.", bundle: 'free' },
         { q: "What does a reason do for a request?", a: "It gives it a shape, so they can tell how much it matters. Without one, most people guess low.", bundle: 'free' },
         { q: "What are the three kinds of reason?", a: "The practical one, the honest one about you, and the one that says why this person.", bundle: 'free' },
+        { q: "What happens without a reason?", a: "They have to guess how much it matters, and most people guess low.", bundle: 'free' },
+        { q: "What does the reason that says why them sound like?", a: "\"You're the only one who's seen the old version.\"", bundle: 'free' },
         { q: "Which reason should never be used?", a: "The guilt reason. \"After everything I've done for you\" is a bill, not a reason.", bundle: 'pro' },
         { q: "Why do reasons help here but hurt when saying no?", a: "Asking, a reason explains the request. Declining, it hands them something to solve.", bundle: 'pro' },
+        { q: "What is the honest reason about you?", a: "\"I'm not coping with this week.\" It costs more, and works better with people who know you.", bundle: 'pro' },
       ]
     },
     {
       name: "Leave Room to Refuse",
-      description: "Making the exit visible.",
       cards: [
         { q: "What is the move?", a: "Say the exit out loud — \"say if it doesn't work.\"", bundle: 'free' },
         { q: "Why does a request need a refusable no?", a: "Otherwise their yes tells you nothing, and you find out it was reluctant weeks later.", bundle: 'free' },
         { q: "What are the three ways to leave the door open?", a: "Name the exit, say what you will do if they refuse, and then be quiet.", bundle: 'free' },
+        { q: "What is a request that cannot be refused?", a: "Not a request. A demand with a polite tone.", bundle: 'free' },
+        { q: "What does saying what you will do if they refuse achieve?", a: "It removes the sense that you are stuck. \"If you can't, I'll ask Petra.\"", bundle: 'free' },
         { q: "Why does leaving room make yes MORE likely?", a: "Pressure produces compliance and quiet irritation. A real choice produces a real yes.", bundle: 'pro' },
         { q: "Where does the pressure people feel usually come from?", a: "The silence after the ask, filled with more reasons.", bundle: 'pro' },
+        { q: "What is the hardest part of this move?", a: "Asking once, and then being quiet.", bundle: 'pro' },
       ]
     },
     {
       name: "Ask for Help",
-      description: "The harder ask, and how to make it answerable.",
       cards: [
         { q: "What two things make asking for help hard, and what fixes them?", a: "Asking a room asks nobody, so name a person. \"Help with everything\" is unanswerable, so name the piece.", bundle: 'free' },
         { q: "What are the three ways in?", a: "Ask about a piece, admit you do not know, or say you are struggling.", bundle: 'free' },
         { q: "Why ask early?", a: "Asking early is a small ask. Asking late is a rescue.", bundle: 'free' },
+        { q: "Why name one person?", a: "Asking a room asks nobody.", bundle: 'free' },
+        { q: "What is the smallest and most answerable version?", a: "Asking about one piece. \"Could you show me how the export works?\"", bundle: 'free' },
         { q: "What is wrong with struggling quietly until someone notices?", a: "Nobody is watching that closely, and it costs far more when it fails.", bundle: 'pro' },
         { q: "How do most people experience being asked for help?", a: "As a compliment. Being the person someone turns to is how people become close.", bundle: 'pro' },
+        { q: "Which version saves the most time and gets avoided most?", a: "Admitting you do not know. \"I've never done one of these.\"", bundle: 'pro' },
       ]
     },
     {
       name: "Follow Up Once",
-      description: "What to do with silence.",
       cards: [
         { q: "How many follow-ups?", a: "One. Then silence counts as a no.", bundle: 'free' },
         { q: "What is an unanswered request usually?", a: "Not a refusal — a message read in a corridor and forgotten.", bundle: 'free' },
         { q: "What are the three ways to bring it back?", a: "Assume it was missed, ask for a yes or no rather than the thing, or give it a real deadline.", bundle: 'free' },
+        { q: "What is the friendly default?", a: "Assume it was missed. \"You might not have seen this.\"", bundle: 'free' },
+        { q: "What often unsticks it faster than asking again?", a: "Asking for a yes or a no, rather than for the thing itself.", bundle: 'free' },
         { q: "What changes with the second follow-up?", a: "It stops being about Thursday and starts being about whether they are ignoring you.", bundle: 'pro' },
         { q: "What is often more useful than asking for the favour again?", a: "Asking for a decision either way, so you can plan.", bundle: 'pro' },
+        { q: "What is silence, after one follow-up?", a: "An answer. Not a grievance.", bundle: 'pro' },
       ]
     },
     {
       name: "Take a No Well",
-      description: "Accepting the answer you asked for.",
       cards: [
         { q: "What are the three parts?", a: "Say it is fine and mean it, do not ask for the reason, do not renegotiate.", bundle: 'free' },
         { q: "Why does it matter how you take a no?", a: "It decides what asking costs next time — for both of you.", bundle: 'free' },
         { q: "What happens if a no is expensive to give you?", a: "You get avoidance, or yeses people resent.", bundle: 'free' },
+        { q: "How long is the acceptance?", a: "One sentence. Not four.", bundle: 'free' },
+        { q: "Why not ask for the reason?", a: "If they had wanted to give one, they would have.", bundle: 'free' },
         { q: "Why is \"what about Sunday?\" a mistake?", a: "It is a second ask, and it makes the first no feel unheard.", bundle: 'pro' },
         { q: "What does accepting a no cleanly protect?", a: "The next request.", bundle: 'pro' },
+        { q: "What does a fought no turn a favour into?", a: "A conflict about the relationship.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Making the Ask** — everything that happens before they answer\n• **After You Have Asked** — the follow-up, and taking the answer\n• **All Seven** — no cue given, which is the real thing\n\nThe first group stacks rather than competes: choosing means noticing which part is missing.",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "Making the Ask, After You Have Asked, and All Seven.", bundle: 'pro' },
+        { q: "Why do the moves in Making the Ask not compete?", a: "They stack. Choosing between them means noticing which part is missing.", bundle: 'pro' },
+        { q: "You have been hinting and not asking. Which move?", a: "The Actual Request. Say the sentence.", bundle: 'pro' },
+        { q: "They cannot picture it. Which move?", a: "Make It Specific — the size, the when, and what it involves.", bundle: 'pro' },
+        { q: "They cannot tell how much it matters. Which move?", a: "Give One Short Reason.", bundle: 'pro' },
+        { q: "They cannot comfortably refuse. Which move?", a: "Leave Room to Refuse. Say the exit out loud.", bundle: 'pro' },
+        { q: "What is the rule in After You Have Asked?", a: "Silence gets one follow-up, then counts as a no. A no gets one sentence and no renegotiation.", bundle: 'pro' },
+        { q: "What is almost every failed request missing?", a: "One of the four building moves, or one of the two at the end.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **The Whole Request** — say it → size it → one reason → leave the exit\n2. **Asking for Help** — the harder version, because it starts with admitting something\n3. **When Nothing Comes Back** — silence, to a plain question, to accepting the answer\n\nThe third is where people go wrong most: they go straight from silence to grievance.",
+      cards: [
+        { q: "What is the order in The Whole Request?", a: "Say it, make it specific, give one short reason, leave room to refuse.", bundle: 'pro' },
+        { q: "What are the last three steps answering?", a: "Questions they have already started asking silently: how big, why it matters, and can I say no.", bundle: 'pro' },
+        { q: "How long is the whole thing?", a: "Four sentences.", bundle: 'pro' },
+        { q: "What is the hard step in Asking for Help?", a: "The first one. After that it behaves like any other request.", bundle: 'pro' },
+        { q: "What does naming the piece do?", a: "Turns \"I'm drowning\" into something a person can actually do on a Tuesday.", bundle: 'pro' },
+        { q: "What does the sequence look like if you leave it three weeks?", a: "Much harder. Asking early is a small ask; asking late is a rescue.", bundle: 'pro' },
+        { q: "What is the path in When Nothing Comes Back?", a: "Silence, to a plain question, to something easier to answer, to accepting whatever comes back.", bundle: 'pro' },
+        { q: "What do people who follow up badly do instead?", a: "Go straight from silence to grievance.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five things that make asking hard:\n\n• **You Have Been Hinting for Weeks** — resentment on top of an unasked question\n• **They Have Power Over You** — a no with consequences\n• **You Feel You Have Asked Too Much Lately** — accounting nobody else is doing\n• **They Said No, or Said Nothing** — where requests turn into something else\n• **It Is Not Actually a Request** — the wrong tool entirely\n\nThe last one is the check to run before any of the others.",
+      cards: [
+        { q: "What are the five challenge categories in this pack?", a: "You Have Been Hinting for Weeks, They Have Power Over You, You Feel You Have Asked Too Much Lately, They Said No or Said Nothing, and It Is Not Actually a Request.", bundle: 'pro' },
+        { q: "You have hinted for weeks. What has to be handled first?", a: "The resentment, because it will come out in the tone. From where they stand, this is the first they have heard of it.", bundle: 'pro' },
+        { q: "Which two moves carry more weight when they have power over you?", a: "Make It Specific, and Follow Up Once. Your request is more likely to be lost than refused.", bundle: 'pro' },
+        { q: "Does leaving room to refuse cost you anything upwards?", a: "Nothing. They already have the power to say no — saying it out loud just makes you easier to say yes to.", bundle: 'pro' },
+        { q: "Who tracks favours more closely, you or them?", a: "You. Most people track them far more loosely than the person asking does.", bundle: 'pro' },
+        { q: "You have asked a lot lately. What is the move?", a: "Name it once, ask anyway, and leave the exit wide open. That decision is not yours to make for them.", bundle: 'pro' },
+        { q: "When is this pack the wrong tool?", a: "When it is not a favour — paid work, a promise already made, your share of something shared, a rule being broken.", bundle: 'pro' },
+        { q: "What do you remove in that case?", a: "Leave Room to Refuse. Say it plainly and drop the exit.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "The seven beliefs that get in the way here:\n\n• **Asking Is Not Imposing** — a request puts them in a difficult position\n• **They Cannot Read Your Mind** — someone who cared would work it out\n• **A Refusable Request Is the Only Real One** — make the no hard\n• **Their No Costs You Nothing** — the refusal was about me\n• **Being Vague Is Being Polite** — pinning it down is demanding\n• **Asking Twice Is Nagging** — the second ask is pressure\n• **Needing Help Is the Admission** — \"I'm stuck\" is a report on my competence\n\nFour of them stop the question being asked at all.",
+      cards: [
+        { q: "What are the seven mindset areas in this pack?", a: "Asking Is Not Imposing, They Cannot Read Your Mind, A Refusable Request Is the Only Real One, Their No Costs You Nothing, Being Vague Is Being Polite, Asking Twice Is Nagging, and Needing Help Is the Admission.", bundle: 'pro' },
+        { q: "What is harder on the other person than a question?", a: "A hint, a sigh and a quiet struggle. Now they are being managed rather than asked.", bundle: 'pro' },
+        { q: "What is the most reliable source of resentment in close relationships?", a: "The belief that someone who cared would have worked it out.", bundle: 'pro' },
+        { q: "What does a yes produced by pressure come back as?", a: "Coldness, a favour called in, or a person who stops answering your messages.", bundle: 'pro' },
+        { q: "What does a cool reaction to a refusal teach them?", a: "That saying no to you is expensive. After that you get avoidance, or yeses people resent.", bundle: 'pro' },
+        { q: "Why is the vague version not the kind one?", a: "Nobody can say yes to an unbounded ask. It moves the work of defining the request onto them.", bundle: 'pro' },
+        { q: "What is one plain follow-up?", a: "Not pressure — the thing that lets them give you an actual answer.", bundle: 'pro' },
+        { q: "What is the difference between asking early and asking late?", a: "Early it is a question about a task. Late it is a sentence about a failure.", bundle: 'pro' },
       ]
     },
   ],
