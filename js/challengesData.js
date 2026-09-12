@@ -622,7 +622,7 @@ const challengesCollections = {
       name: "They Ended It On You",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "You are the one being left. Somebody has given a reason and started to go, and how you respond decides whether the ending is comfortable.\n\nThe move is to release them quickly and warmly. Holding someone with one last question when they have already said they are leaving is the exact thing this pack teaches you not to do to others.\n\nMindset: let them go easily, and put the warmth in the release.",
+      description: "You are the one being left. Somebody has given a reason and started to go, and how you respond decides whether the ending is comfortable.\n\nWhat it usually looks like:\n\n• They have said the reason and are half turned already.\n• You have one more thing and it would take four minutes.\n• The pause after their exit line is yours to fill or not.\n\nTwo ways through:\n1. Praise the Talk — one sentence, and let them go. \"That was good, thanks.\"\n2. Wish Them Well — send them off with the thing they are going to. \"Good luck with the afternoon.\"\n\nMindset: let them go easily, and put the warmth in the release. Holding someone with one last question when they have already said they are leaving is the thing this pack teaches you not to do.",
       inputs: [
         { q: "They say they have to leave.", a: "\"Of course — go. Good to see you.\" [Praise the Talk]", bundle: 'pro' },
         { q: "They are leaving and you had one more thing to say.", a: "\"Go, go. I'll message you the rest.\" [The Rain Check]", bundle: 'pro' },
@@ -688,7 +688,7 @@ const challengesCollections = {
       name: "You Reacted Before You Thought",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "Something came out — a laugh, a dismissal, a sharper answer than you meant — before you had decided anything.\n\nGoing back is easy and rare. Name it as a reaction rather than a view, say what you actually think now, and if it landed badly say so plainly instead of hoping it passed unnoticed.\n\nMindset: correcting a first reaction is the most credible thing you can do afterwards.",
+      description: "Something came out — a laugh, a dismissal, a sharper answer than you meant — before you had decided anything.\n\nWhat it usually looks like:\n\n• You hear your own tone a second after it lands.\n• They have gone quiet in a way they were not before.\n• You are hoping it passed unnoticed. It did not.\n\nTwo ways through:\n1. Name it as a reaction rather than a view — \"that was a reaction, not an opinion. Give me a minute.\"\n2. Say what you actually think now, and if it landed badly say so plainly.\n\nMindset: correcting a first reaction is the most credible thing you can do afterwards. Going back is easy and rare.",
       inputs: [
         { q: "You laughed out of surprise at the wrong moment.", a: "\"Sorry — that was surprise, not amusement. Let me start again.\" [Name the Pause]", bundle: 'pro' },
         { q: "You dismissed something and have changed your mind.", a: "\"Can I come back to yesterday? I answered too fast.\" [Park It]", bundle: 'pro' },
@@ -1781,7 +1781,7 @@ const challengesCollections = {
       name: "You Only Half Agree",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "You agree with part of it and not the rest, and a full-throated \"totally!\" would be a small lie.\n\nThe training is to find the part you actually mean and agree with that honestly, instead of either faking it or swinging into disagreement. Narrowing is a real agreeing move, not a dodge.\n\nWhat it usually sounds like:\n\n• An opinion stated more strongly than you would put it.\n• A rule that holds in some situations and not others.\n• Something true of them but not of everyone.\n\nTwo ways through:\n1. Why It Makes Sense, narrowed — \"I agree, especially when...\" names exactly where you are with them.\n2. Add a Personal Experience — tell the part of it you have actually lived, which is honest by definition.\n\nNote: if you do not agree at all, this is the wrong pack — that is a different skill.\n\nMindset: partial agreement said honestly is worth more than full agreement said vaguely. \"Especially when\" is a whole sentence of honesty.",
+      description: "You agree with part of it and not the rest, and a full-throated \"totally!\" would be a small lie.\n\nThe training is to find the part you actually mean and agree with that honestly. Narrowing is a real agreeing move, not a dodge.\n\nWhat it usually sounds like:\n\n• An opinion stated more strongly than you would put it.\n• A rule that holds in some situations and not others.\n• Something true of them but not of everyone.\n\nTwo ways through:\n1. Why It Makes Sense, narrowed — \"I agree, especially when…\" names exactly where you are with them.\n2. Add a Personal Experience — the part you have actually lived is honest by definition.\n\nMindset: partial agreement said honestly is worth more than full agreement said vaguely. If you do not agree at all, this is the wrong pack.",
       inputs: [
         { q: "Someone says: \"You should always listen to your teacher.\" You'd say usually, not always.", a: "\"I agree, especially when it's something they've actually done themselves.\" [Why It Makes Sense]", bundle: 'pro' },
         { q: "The opinion is stated more strongly than you would put it.", a: "\"I'm with you on most of that — definitely on the mornings part.\" [Why It Makes Sense]", bundle: 'pro' },
@@ -1961,7 +1961,7 @@ const challengesCollections = {
       name: "They Doubt It Would Work",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "They accept there is a problem and do not believe your solution would fix it, or that it is realistic at all.\n\nArgument does not shift this — evidence does. A first-hand account asks them to concede nothing, which is exactly why it moves people who have already resisted your reasoning.\n\nMindset: when the argument has failed, stop arguing and say what happened.",
+      description: "They accept there is a problem and do not believe your solution would fix it, or that it is realistic at all.\n\nWhat it usually looks like:\n\n• \"In theory, maybe. Not here.\"\n• They agree with every word and do nothing.\n• A new reason it cannot work arrives for each one you answer.\n\nTwo ways through:\n1. Your Own Story — a first-hand account asks them to concede nothing, which is exactly why it moves people who have already resisted your reasoning.\n2. What They Get, narrowed — name the smallest version that would clearly work and let them check that one instead.\n\nMindset: when the argument has failed, stop arguing and say what happened.",
       inputs: [
         { q: "They say it sounds good in theory.", a: "\"The team upstairs switched last year and they've not gone back.\" [Your Own Story]", bundle: 'pro' },
         { q: "They think the change would be enormous.", a: "\"I moved across in a morning. I'd expected a week.\" [Your Own Story]", bundle: 'pro' },
@@ -1977,7 +1977,7 @@ const challengesCollections = {
       name: "You Are the One Who Should Move",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "You set out to persuade and they turn out to be right, or they raise something you cannot answer.\n\nContinuing from momentum is how people end up defending positions they no longer hold. Saying so plainly costs nothing and is the thing that makes your next argument worth listening to.\n\nMindset: changing your mind in public is what makes people willing to be persuaded by you.",
+      description: "You set out to persuade and they turn out to be right, or they raise something you cannot answer.\n\nWhat it usually looks like:\n\n• You are looking for a smaller point to win instead.\n• You have stopped listening and started waiting.\n• The reason you came in with has already been answered.\n\nTwo ways through:\n1. Say it plainly and name what did it — \"the bit about the night shift is the part I hadn't thought about.\"\n2. Concede the part, not the whole — if only one of your reasons has gone, say which one.\n\nMindset: changing your mind in public is what makes people willing to be persuaded by you. Continuing from momentum is how people end up defending positions they no longer hold.",
       inputs: [
         { q: "They raise something you did not know.", a: "\"Then the reason I've been giving doesn't hold. I didn't know that.\" [Give a Reason]", bundle: 'pro' },
         { q: "You notice you are arguing because you started.", a: "\"I think I'm defending my first answer rather than the idea.\" [Give a Reason]", bundle: 'pro' },
@@ -1993,7 +1993,7 @@ const challengesCollections = {
       name: "The Case Is Not Honest",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "Persuasion goes wrong long before it becomes manipulation. It starts with a number you have not checked, a benefit you have invented for them, or a cost you have made sound worse than it is.\n\nEach of those works in the moment and fails permanently when checked, because it takes everything true you said with it.\n\nMindset: say the version you would be comfortable having them overhear you explain.",
+      description: "Persuasion goes wrong long before it becomes manipulation. It starts with a number you have not checked, a benefit you have invented for them, or a cost you have made sound worse than it is.\n\nWhat it usually looks like:\n\n• A figure you half remember and would not want checked.\n• A benefit that is really yours, described as theirs.\n• A consequence you have quietly moved from possible to likely.\n\nTwo ways through:\n1. Mark it as what it is — \"I think it's about a third, but don't quote me.\"\n2. Drop it and use Your Own Story instead — what actually happened needs no inflation.\n\nMindset: say the version you would be comfortable having them overhear you explain. Each shortcut works in the moment and fails when checked — and takes everything true with it.",
       inputs: [
         { q: "A statistic would really help and you do not have one.", a: "\"I don't have a figure. What I do have is what happened to us in April.\" [Give a Reason]", bundle: 'pro' },
         { q: "You are about to inflate what the current situation costs.", a: "\"It's an afternoon a month. Not a disaster, just relentless.\" [The Cost of Doing Nothing]", bundle: 'pro' },
@@ -2391,7 +2391,7 @@ const challengesCollections = {
       name: "The No Is Not Clear",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "\"I'm not sure I can.\" \"Probably not.\" \"Let me see.\" Each of these feels kinder than a no and is not an answer, which means the request comes back and the second refusal is harder than the first.\n\nThe kindest version of a no is the clearest one. It lets the person go and ask someone else, which is what they actually need.\n\nMindset: vagueness is not gentleness. It just moves the cost onto them.",
+      description: "\"I'm not sure I can.\" \"Probably not.\" \"Let me see.\" Each of these feels kinder than a no and is not an answer, which means the request comes back and the second refusal is harder than the first.\n\nWhat it usually looks like:\n\n• You said \"probably not\" and they heard \"maybe\".\n• The same ask arrives again a week later.\n• You are relieved it is not settled, and they are still waiting.\n\nTwo ways through:\n1. Say No Simply — \"Sorry, I was vague. It's a no.\"\n2. Ask for Time First — if you genuinely do not know yet, say when you will.\n\nMindset: vagueness is not gentleness. It just moves the cost onto them. The kindest version of a no is the clearest one — it lets the person go and ask someone else.",
       inputs: [
         { q: "You said \"probably not\" and they are still expecting an answer.", a: "\"Sorry, I was vague. It's a no.\" [Say No Simply]", bundle: 'pro' },
         { q: "You are about to say \"I'll see what I can do\".", a: "\"I can't, I'm afraid.\" [Say No Simply]", bundle: 'pro' },

@@ -3604,11 +3604,13 @@ const memorizeCollections = {
   respondingtopassiveaggression: [
     {
       name: "Core Idea",
-      description: "The shape of the pack: six responses, split between staying on the surface and going underneath.",
+      description: "Six responses in two halves: three that stay on the surface — answer it straight, hold your point, let it go — and three that go underneath: ask what they mean, name the feeling, say how it lands.\n\nChoose by what you want to happen next, not by how annoying the remark was.",
       cards: [
         { q: "What are the six strategies in this pack?", a: "Answer it straight, ask what they mean, name the feeling, say how it lands, hold your point, let it go.", bundle: 'free' },
         { q: "Which three stay on the surface?", a: "Answer it straight, hold your point, let it go.", bundle: 'free' },
         { q: "Which three go underneath?", a: "Ask what they mean, name the feeling, say how it lands.", bundle: 'free' },
+        { q: "What is a passive-aggressive remark asking you to do?", a: "React to the part that was not said.", bundle: 'free' },
+        { q: "Which question decides most cases?", a: "Whether this is a one-off from someone having a bad day, or a habit that is shaping how you work together.", bundle: 'free' },
         { q: "What does a passive-aggressive remark depend on?", a: "Deniability — it is built to land without being answerable.", bundle: 'pro' },
         { q: "What should decide which strategy you use?", a: "What you want to happen next, not how annoying the remark was.", bundle: 'pro' },
         { q: "What is the difference between one remark and a pattern?", a: "A pattern gets one proper conversation, not four small ones.", bundle: 'pro' },
@@ -3616,11 +3618,12 @@ const memorizeCollections = {
     },
     {
       name: "Answer It Straight",
-      description: "The least costly response available.",
       cards: [
         { q: "What does this strategy do?", a: "Responds to the surface as though the remark were sincere, so the barb has nothing to attach to.", bundle: 'free' },
         { q: "Name two ways to do it.", a: "Any two of: accept the surface compliment, agree with the literal content, answer the buried question, take the suggestion seriously.", bundle: 'free' },
         { q: "Why can nobody object to this response?", a: "You answered what they actually said.", bundle: 'free' },
+        { q: "What does taking the suggestion seriously sound like?", a: "The driest version. \"Starting earlier — I'll do that next time.\"", bundle: 'free' },
+        { q: "What does answering the buried question sound like?", a: "Treating the dig as an enquiry. \"Yes, it's finished. It's in the shared folder.\"", bundle: 'free' },
         { q: "Is this pretending not to notice?", a: "No — it is choosing not to make it a thing, which is a different position.", bundle: 'pro' },
         { q: "Why does it often end the pattern faster than naming it?", a: "Because the remark simply did not work.", bundle: 'pro' },
         { q: "What do you do when the remark contains something true?", a: "Concede that part plainly — it costs nothing and takes the argument away.", bundle: 'pro' },
@@ -3628,11 +3631,12 @@ const memorizeCollections = {
     },
     {
       name: "Ask What They Mean",
-      description: "The strategy that removes deniability.",
       cards: [
         { q: "Why does asking work?", a: "They either say what they meant, which is the conversation you needed, or they back off, which ends it.", bundle: 'free' },
         { q: "What decides whether this lands?", a: "The delivery — curious is an invitation, edged is a challenge.", bundle: 'free' },
         { q: "Name two ways to ask.", a: "Any two of: the plain question, admit you cannot read it, ask for the direct version, ask and then be quiet.", bundle: 'free' },
+        { q: "What does asking for the direct version sound like?", a: "\"Is there something you'd rather just say?\" More pointed, still fair.", bundle: 'free' },
+        { q: "What are the two outcomes, and are either bad?", a: "They say what they meant, or they back off. One is the conversation you needed; the other ends it.", bundle: 'free' },
         { q: "What should you do if you cannot ask it neutrally?", a: "Use a different strategy.", bundle: 'pro' },
         { q: "Why is \"I can't tell how you meant that\" useful?", a: "It takes any accusation out of the question.", bundle: 'pro' },
         { q: "What does most of the work after you ask?", a: "The silence. Ask once, then wait.", bundle: 'pro' },
@@ -3640,11 +3644,12 @@ const memorizeCollections = {
     },
     {
       name: "Name the Feeling",
-      description: "The strategy that gives the grievance a direct route out.",
       cards: [
         { q: "What is usually underneath passive aggression?", a: "A real grievance that could not find a direct route out.", bundle: 'free' },
         { q: "What line must you hold with this strategy?", a: "Recognising a feeling is not accepting the accusation inside it.", bundle: 'free' },
         { q: "Name two ways to name it.", a: "Any two of: name the feeling plainly, name it and ask, name what it is probably about, acknowledge and redirect.", bundle: 'free' },
+        { q: "What does naming it and asking sound like?", a: "\"You seem annoyed. Is it about the deadline?\" It turns the naming into an opening.", bundle: 'free' },
+        { q: "What does acknowledge-and-redirect sound like?", a: "\"I can see you're frustrated. Let's sort the actual problem.\"", bundle: 'free' },
         { q: "How do you acknowledge without appeasing?", a: "\"I can see you're annoyed. I don't think it's fair, but I can see it.\"", bundle: 'pro' },
         { q: "Why does naming the feeling often stop the sideways expression?", a: "Someone whose frustration has been acknowledged stops needing to express it indirectly.", bundle: 'pro' },
         { q: "What are you acknowledging, and what are you not?", a: "The feeling, not the delivery.", bundle: 'pro' },
@@ -3652,11 +3657,12 @@ const memorizeCollections = {
     },
     {
       name: "Say How It Lands",
-      description: "The one response they cannot deny.",
       cards: [
         { q: "Why can they not argue with this?", a: "They can argue about what they meant, not about how it landed on you.", bundle: 'free' },
         { q: "What is the difference between a report and a diagnosis?", a: "\"That lands as a dig\" is a report; \"you're being passive-aggressive\" is a diagnosis, and diagnoses get argued with.", bundle: 'free' },
         { q: "Name two ways to say it.", a: "Any two of: name the effect, say what you would prefer, keep it to this instance, own that you might be misreading.", bundle: 'free' },
+        { q: "What does keeping it to this instance sound like?", a: "\"That one landed badly. Not a big thing, but I'd rather say it.\"", bundle: 'free' },
+        { q: "Why leave room that you might be misreading?", a: "It leaves them a way to clarify. \"That came across as a dig. Maybe I've got it wrong.\"", bundle: 'free' },
         { q: "Why pair the effect with a preference?", a: "It gives them a route out rather than just a complaint.", bundle: 'pro' },
         { q: "How do you raise a pattern rather than an instance?", a: "Privately, calmly, with two or three specific examples and what you would prefer instead.", bundle: 'pro' },
         { q: "When is this strategy riskiest?", a: "With someone who has power over you — it can be heard as a complaint about a superior.", bundle: 'pro' },
@@ -3664,11 +3670,12 @@ const memorizeCollections = {
     },
     {
       name: "Hold Your Point",
-      description: "The strategy for when a remark is a way of not answering the question.",
       cards: [
         { q: "What is this strategy protecting?", a: "The decision that still needs making.", bundle: 'free' },
         { q: "What is the pattern?", a: "Short acknowledgement, then the point, in the same words each time.", bundle: 'free' },
         { q: "Name two ways to hold it.", a: "Any two of: acknowledge then the point, concede the true part and keep the point, park the other thing openly, repeat it in the same words.", bundle: 'free' },
+        { q: "What does parking it openly sound like?", a: "\"That's worth talking about properly. Not now, though.\"", bundle: 'free' },
+        { q: "What happens if the acknowledgement runs long?", a: "It becomes an argument about the remark rather than a conversation about the work.", bundle: 'free' },
         { q: "Why does following the remark cost you?", a: "Every sentence spent on the remark is a sentence not spent on the decision.", bundle: 'pro' },
         { q: "What do you say when you catch yourself defending yourself?", a: "Name it and return — \"I'm defending myself and that's not the point.\"", bundle: 'pro' },
         { q: "What is the boundary against the Broken Record pack?", a: "There the whole conversation is holding a line. Here it is one of six responses, kept short.", bundle: 'pro' },
@@ -3676,14 +3683,71 @@ const memorizeCollections = {
     },
     {
       name: "Let It Go",
-      description: "The strategy of deciding not to respond.",
       cards: [
         { q: "What makes letting go a strategy rather than avoidance?", a: "That you decided, rather than not daring.", bundle: 'free' },
         { q: "What is the test?", a: "Whether you will still be thinking about it in an hour.", bundle: 'free' },
         { q: "Name two ways to let it go.", a: "Any two of: say nothing and carry on, move to something else, a neutral noise and onwards, decide to raise it later.", bundle: 'free' },
+        { q: "What does a neutral noise and onwards sound like?", a: "\"Mm. So, Thursday.\" It acknowledges without engaging.", bundle: 'free' },
+        { q: "What is deferring on purpose?", a: "Not letting go — deciding to raise it later. \"I'll mention that to her when it's calmer.\"", bundle: 'free' },
         { q: "What does treating every remark as something to handle cost you?", a: "It turns other people's moods into your workload.", bundle: 'pro' },
         { q: "What do you do if you let something go and it keeps bothering you?", a: "Go back to it. Later is fine.", bundle: 'pro' },
         { q: "What will people usually assume if you do not react?", a: "That you noticed and were not bothered.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Staying on the Surface** — the three that decline the invitation without naming anything\n• **Bringing It Into the Open** — the three that go underneath, and who each one is about\n• **All Six** — no cue given, which is the real thing\n\nThe surface three cost almost nothing. The under-the-surface three cost something, and are worth it when the pattern matters.",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "Staying on the Surface, Bringing It Into the Open, and All Six.", bundle: 'pro' },
+        { q: "Which three stay on the surface?", a: "Answer It Straight, Hold Your Point, and Let It Go.", bundle: 'pro' },
+        { q: "How do you choose between those three?", a: "By what the moment needs — something to answer, a decision waiting, or neither.", bundle: 'pro' },
+        { q: "Which three go under the surface?", a: "Ask What They Mean, Name the Feeling, and Say How It Lands.", bundle: 'pro' },
+        { q: "What is the difference between those three?", a: "Who the subject is: their words, their state, or your experience.", bundle: 'pro' },
+        { q: "Which of them can they not argue with?", a: "Say How It Lands. You are the sole authority on how it landed.", bundle: 'pro' },
+        { q: "You want it to stop mattering. Which moves?", a: "Answer It Straight, or Let It Go.", bundle: 'pro' },
+        { q: "It is a pattern you want changed. Which move?", a: "Say How It Lands.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and what each one runs:\n\n1. **Staying Level** — three or four remarks across one conversation, answered without escalation\n2. **Bringing It Into the Open** — ask, acknowledge what comes out, say what you would prefer\n3. **When You Should Not Take the Bait** — declining several rounds, and then leaving\n\nThe first is the most common real shape: not one dig, but a run of them.",
+      cards: [
+        { q: "What are the three sequences in this pack?", a: "Staying Level, Bringing It Into the Open, and When You Should Not Take the Bait.", bundle: 'pro' },
+        { q: "What is the most common real shape?", a: "Not one dig but three or four across a conversation, each inviting you to react.", bundle: 'pro' },
+        { q: "What stops it turning into an argument?", a: "The flatness. Answer the fourth one exactly as you answered the first.", bundle: 'pro' },
+        { q: "What is the order in Bringing It Into the Open?", a: "Ask, acknowledge what comes out, then say what you would prefer.", bundle: 'pro' },
+        { q: "Where is the risky moment there?", a: "The first step. The same words asked with an edge or asked neutrally are two completely different conversations.", bundle: 'pro' },
+        { q: "What does the third sequence practise?", a: "Declining, several times, without either giving in or getting sharp.", bundle: 'pro' },
+        { q: "How does it end?", a: "By leaving rather than resolving. Resolution is not always available and not always yours to produce.", bundle: 'pro' },
+        { q: "How many rounds can you decline?", a: "Every one. Nothing obliges you to have this argument today.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five situations that change the answer:\n\n• **In Front of Other People** — an audience changes what it costs\n• **They Have Power Over You** — a manager, a teacher, a client\n• **You Cannot Tell If It Was One** — tone is unreliable, text is worse\n• **It Is a Pattern** — a habit answered one remark at a time\n• **You Want to Hit Back** — the reply is right there, fully formed\n\nThe first two both push you towards the surface strategies, for different reasons.",
+      cards: [
+        { q: "What are the five challenge categories in this pack?", a: "In Front of Other People, They Have Power Over You, You Cannot Tell If It Was One, It Is a Pattern, and You Want to Hit Back.", bundle: 'pro' },
+        { q: "What is the rule with an audience?", a: "Light in public, direct in private.", bundle: 'pro' },
+        { q: "What does naming it publicly cost?", a: "Often more than the original comment did — it puts the other person on the spot.", bundle: 'pro' },
+        { q: "They have power over you. What do you keep to?", a: "The surface strategies in the moment. If it needs raising, privately, one instance, and on the effect on the work.", bundle: 'pro' },
+        { q: "You cannot tell whether it was a dig. What is the honest way through?", a: "Ask. It works precisely because it does not accuse, and the cost of asking is nothing.", bundle: 'pro' },
+        { q: "Why does answering a habit one remark at a time never work?", a: "Each instance is too small to justify a conversation — which is exactly what keeps it going.", bundle: 'pro' },
+        { q: "How do you raise a pattern?", a: "Privately, calmly, with two or three specific examples rather than a general accusation, and with what you would prefer instead.", bundle: 'pro' },
+        { q: "What does the sharp reply cost?", a: "You have joined in. From there it is two people doing it to each other.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "The six beliefs that get in the way here:\n\n• **The Reaction Is the Point** — the remark deserves an answer\n• **You Can Choose Not to Answer** — leaving one unanswered accepts it\n• **Say It Plainly Yourself** — indirectness is something other people do\n• **There Is Usually Something Real Underneath** — it is just unpleasantness\n• **Taking It Straight Is Letting It Go** — answering the surface is being walked over\n• **Telling Them How It Lands Is Complaining** — saying it got to you hands them the win",
+      cards: [
+        { q: "What are the six mindset areas in this pack?", a: "The Reaction Is the Point, You Can Choose Not to Answer, Say It Plainly Yourself, There Is Usually Something Real Underneath, Taking It Straight Is Letting It Go, and Telling Them How It Lands Is Complaining.", bundle: 'pro' },
+        { q: "What is the whole mechanism of a passive-aggressive remark?", a: "It is built to provoke a reaction it can then deny provoking. That is why it is indirect in the first place.", bundle: 'pro' },
+        { q: "Do you owe a reaction?", a: "Not to something that was not said.", bundle: 'pro' },
+        { q: "What does handling every remark turn into?", a: "Other people's moods becoming your workload.", bundle: 'pro' },
+        { q: "What is the most useful thing in this pack?", a: "Not a way of handling other people's indirectness — noticing your own.", bundle: 'pro' },
+        { q: "Why do people say it sideways?", a: "The direct version felt too big, or too risky, or they were not sure they were entitled to it.", bundle: 'pro' },
+        { q: "What are you holding both of at once?", a: "That the way it was said is not fine, and the thing it was about may well be.", bundle: 'pro' },
+        { q: "What does answering it straight take away from them?", a: "The deniability. They cannot say \"I was only joking\" about a reply that took them at their word.", bundle: 'pro' },
       ]
     },
   ],
@@ -5541,13 +5605,13 @@ const memorizeCollections = {
   setupquestion: [
     {
       name: "Core Idea",
-      description: "The concept behind setup questions and the five types.",
+      description: "Five types of question that set up something of your own: Opinion, Purpose, Status, Action and Background.\n\nAsk it, listen, then answer it yourself. The third beat is the one people drop, and dropping it turns a good opener into an interview.",
       cards: [
         { q: "What is a setup question?", a: "You ask the other person a question about something you want to talk about, listen to their answer, and then give your own answer to the same question.", bundle: 'free' },
         { q: "How is it different from a setup statement?", a: "Only the order. A setup statement says your bit first and then asks; a setup question asks first and answers afterwards.", bundle: 'free' },
         { q: "What are the five types of setup question?", a: "Opinion, Purpose, Status, Action, Background.", bundle: 'free' },
         { q: "What is the step people drop?", a: "Answering it themselves. Without that it is an interview, not a conversation.", bundle: 'free' },
-        { q: "What do you do when a question gets \"not much\"?", a: "Narrow it rather than repeat it — \"are you reading anything?\" is answerable where \"what's new?\" is not.", bundle: 'pro' },
+        { q: "What do you do when a question gets \"not much\"?", a: "Narrow it rather than repeat it — \"are you reading anything?\" is answerable where \"what's new?\" is not.", bundle: 'free' },
         { q: "What is the through-line of all five types?", a: "Each one asks about something you also want to talk about, so you always have your own answer ready.", bundle: 'pro' },
         { q: "How big should your own answer be?", a: "Roughly the size of theirs. Much shorter reads as a brush-off; much longer takes the floor.", bundle: 'pro' },
         { q: "What do you do when a conversation stops after one good exchange?", a: "Build the next question out of their answer rather than reaching for a new type.", bundle: 'pro' },
@@ -5555,10 +5619,12 @@ const memorizeCollections = {
     },
     {
       name: "Opinion Question",
-      description: "The theory behind the Opinion type.",
       cards: [
         { q: "What is an Opinion question?", a: "You ask what they think about something, then say what you think.", bundle: 'free' },
         { q: "When does an Opinion question fit best?", a: "When there is something present to have a view on — a film, the food, the venue, the event itself.", bundle: 'free' },
+        { q: "What are the three strengths of opinion question?", a: "The closed one with an opening, the open one, and the one that offers a side.", bundle: 'free' },
+        { q: "What does the one that offers a side sound like?", a: "\"Was it just me or did it drag?\" It gives them something to agree or disagree with.", bundle: 'free' },
+        { q: "What have you run if you never give your own answer?", a: "An interview — and you have learned nothing about each other.", bundle: 'free' },
         { q: "Why ask before giving your own view?", a: "It reads as interest rather than an announcement, and they answer without having to agree with you first.", bundle: 'pro' },
         { q: "Is a closed opinion question wasted?", a: "No. \"Did you like it?\" gets a yes, and a yes is somewhere to start.", bundle: 'pro' },
         { q: "What makes an opinion question easy to answer?", a: "That you are both looking at the thing. Nobody has to remember or invent anything.", bundle: 'pro' },
@@ -5566,10 +5632,12 @@ const memorizeCollections = {
     },
     {
       name: "Purpose Question",
-      description: "The theory behind the Purpose type.",
       cards: [
         { q: "What is a Purpose question?", a: "You ask why they are here or what they are after, then say why you came.", bundle: 'free' },
         { q: "Why is it the safest of the five?", a: "Everybody in the room has a reason to be there, so nobody has to invent anything to answer.", bundle: 'free' },
+        { q: "What are the three ways to ask it?", a: "The plain one, the one about how they arrived at it, and the one that assumes nothing.", bundle: 'free' },
+        { q: "What does the one that assumes nothing sound like?", a: "\"Is this your first one of these?\"", bundle: 'free' },
+        { q: "What makes it a conversation rather than an opener?", a: "Your own reason, said afterwards.", bundle: 'free' },
         { q: "Where does a Purpose question work best?", a: "Anywhere people have gathered on purpose — a class, a club, a course, an event, a shared table.", bundle: 'pro' },
         { q: "What is the most useful follow-up to a purpose answer?", a: "The \"nearly\" — what almost stopped them coming. It is where the real answer usually is.", bundle: 'pro' },
         { q: "Why does it work on a whole group?", a: "Everyone present shares the reason, so anybody at the table can pick it up.", bundle: 'pro' },
@@ -5577,10 +5645,12 @@ const memorizeCollections = {
     },
     {
       name: "Status Question",
-      description: "The theory behind the Status type.",
       cards: [
         { q: "What is a Status question?", a: "You ask how they are right now — properly, not as a greeting — and then answer it yourself.", bundle: 'free' },
         { q: "How do you stop it getting the ritual answer?", a: "Attach it to the moment or to a specific thing, and answer it yourself if they give you \"fine\".", bundle: 'free' },
+        { q: "What are the three ways to get a real answer?", a: "Attach it to the moment, ask about a specific thing, or mark it as the real question.", bundle: 'free' },
+        { q: "What does marking it as the real question sound like?", a: "\"How are you, actually?\"", bundle: 'free' },
+        { q: "What does the ritual \"how are you\" expect?", a: "\"Fine.\" This one expects an answer, which means you have to be ready to give one too.", bundle: 'free' },
         { q: "Why does your own answer matter most with this type?", a: "They have just been honest about their state. If nothing comes back, they gave something and got nothing.", bundle: 'pro' },
         { q: "What does \"fine, thanks\" actually mean?", a: "Usually that they answered the greeting rather than the question — not that the door is shut.", bundle: 'pro' },
         { q: "What is the way back in after a ritual answer?", a: "Your own honest answer. Going first is what tells them the question was real.", bundle: 'pro' },
@@ -5588,10 +5658,12 @@ const memorizeCollections = {
     },
     {
       name: "Action Question",
-      description: "The theory behind the Action type.",
       cards: [
         { q: "What is an Action question?", a: "You ask what they are doing or working on, then say what you are in the middle of.", bundle: 'free' },
         { q: "Why narrow the question?", a: "\"What's new?\" is a blank page; \"are you reading anything?\" is answerable in four words.", bundle: 'free' },
+        { q: "What are the three ways to ask it?", a: "Right now, lately, or narrowed to a specific thing.", bundle: 'free' },
+        { q: "Why does it get the most concrete answers?", a: "People can always say what they are doing, even when they cannot say what is new.", bundle: 'free' },
+        { q: "What kills the conversation you just started?", a: "\"Not much\" from you. Have your own concrete thing ready.", bundle: 'free' },
         { q: "Why is Action the best repair for a stalled opener?", a: "A concrete activity is the easiest thing in the world to answer, even for someone who has gone blank.", bundle: 'pro' },
         { q: "What does \"not much\" usually tell you?", a: "That the question was too big to answer, not that they do not want to talk.", bundle: 'pro' },
         { q: "How do you show the size of answer you meant?", a: "Give a small concrete one of your own first.", bundle: 'pro' },
@@ -5599,10 +5671,12 @@ const memorizeCollections = {
     },
     {
       name: "Background Question",
-      description: "The theory behind the Background type.",
       cards: [
         { q: "What is a Background question?", a: "You ask where they have come from or what happened before this, then say the same about yourself.", bundle: 'free' },
         { q: "Why does it produce more than a word?", a: "Everybody came from somewhere, so the honest answer is usually a small story.", bundle: 'free' },
+        { q: "What are the three ways to ask it?", a: "The journey, the immediate before, and the connection.", bundle: 'free' },
+        { q: "Which one is best at a wedding or a dinner?", a: "The connection. \"How do you know everyone here?\"", bundle: 'free' },
+        { q: "What do you listen for in the answer?", a: "The detail — and then you give one of your own.", bundle: 'free' },
         { q: "Which version works best at a party or a wedding?", a: "\"How do you know everyone here?\" — the answer is always a story, and it is always about someone in the room.", bundle: 'pro' },
         { q: "What do you do with the story you get?", a: "Follow one detail, then match it with a piece of your own at the same size.", bundle: 'pro' },
         { q: "Why is it the best type for deepening rather than bouncing?", a: "It produces a story rather than a word, and a story has somewhere to go.", bundle: 'pro' },
@@ -5610,20 +5684,79 @@ const memorizeCollections = {
     },
     {
       name: "Choosing and Repairing",
-      description: "How to pick a type, and what to do when one does not land.",
+      description: "How to pick a type and what to do when one does not land. The choice is made by the situation rather than by preference — something present suggests Opinion, a gathering suggests Purpose, a mood suggests Status — and the repairs are nearly always the same two moves: go first with your own answer, or make the question smaller.\n\nThere is no wrong question here, only a more natural one.",
       cards: [
         { q: "How do you choose which of the five to ask?", a: "By what the situation makes obvious — something present suggests Opinion, a gathering suggests Purpose, a mood suggests Status.", bundle: 'free' },
         { q: "Is there a wrong question?", a: "No, only a more natural one. The bigger mistake is not answering it yourself.", bundle: 'free' },
         { q: "What is the fix when it has become an interview?", a: "Not a better question — your own answer to the one you already asked.", bundle: 'pro' },
         { q: "What do you do with a question that lands on a whole group?", a: "Aim it at one person by name, or answer it yourself first so the table has a shape to copy.", bundle: 'pro' },
         { q: "What should you never do when a question stalls?", a: "Ask the same one again in different words. Go first yourself, then make it narrower.", bundle: 'pro' },
+        { q: "Which two types read the moment rather than importing a subject?", a: "Opinion and Status. That is what stops them sounding rehearsed.", bundle: 'pro' },
+        { q: "Which three ask them for something of their own?", a: "Purpose, Action and Background — the ones that work when there is nothing present to react to.", bundle: 'pro' },
+        { q: "Which types run out fast, and which slowly?", a: "Background runs out fast, Action runs out slowly, and Opinion can be reopened almost any time.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Ask About Now** — Opinion or Status, the two that work off what is already in front of you\n• **Ask About Them** — Purpose, Action or Background, for when nothing is\n• **Choosing Your Question** — all five, no cue given\n\nLook before you choose: if there is a thing you are both looking at, ask about the thing; if the room has a feeling, ask about that.",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "Ask About Now, Ask About Them, and Choosing Your Question.", bundle: 'pro' },
+        { q: "Which two types are in Ask About Now?", a: "Opinion and Status.", bundle: 'pro' },
+        { q: "You are both in front of a painting. Which move?", a: "Opinion Question. There is something present to have a view on.", bundle: 'pro' },
+        { q: "It has visibly been a rough day. Which move?", a: "Status Question. The mood is the most honest thing available.", bundle: 'pro' },
+        { q: "Which three types are in Ask About Them?", a: "Purpose, Action and Background.", bundle: 'pro' },
+        { q: "A new class, a wedding, a catch-up — which each?", a: "Purpose at the class, Background at the wedding, Action at the catch-up.", bundle: 'pro' },
+        { q: "Why is being stuck for a question nearly always a failure to look?", a: "You always have all three of those. That is the point of the group.", bundle: 'pro' },
+        { q: "Whichever you pick, what is the second half?", a: "The same every time — you answer it too.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and what each one runs:\n\n1. **Ask, Listen, Share** — one question type taken apart into its three beats\n2. **Changing the Question** — three whole setups in a row, each a different type\n3. **A Real Conversation** — beats and types mixed in the same scenario\n\nThe third is the only scenario list in the library that mixes the two, and the mix is the point.",
+      cards: [
+        { q: "What are the three beats in Ask, Listen, Share?", a: "Ask the question, react to what they actually said, then give your own version without being asked.", bundle: 'pro' },
+        { q: "Which beat do people drop?", a: "The third. It is also the beat the pack is named after.", bundle: 'pro' },
+        { q: "How fast do people feel the difference?", a: "Within two exchanges.", bundle: 'pro' },
+        { q: "What does Changing the Question teach?", a: "The switch — when one type has given what it has, you move to another rather than pushing the same one further.", bundle: 'pro' },
+        { q: "What are you looking for, if not the perfect question?", a: "The next one.", bundle: 'pro' },
+        { q: "What is the step list in A Real Conversation?", a: "Share, then Action Question, then Listen — beats and types in the same scenario.", bundle: 'pro' },
+        { q: "Why is a setup question sometimes one card and sometimes three?", a: "Because it is one whole move or three beats, depending on what the conversation needs.", bundle: 'pro' },
+        { q: "What is fixed about the order?", a: "Nothing. Only the mutuality is.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five ways a setup question goes wrong:\n\n• **The Interview** — three questions in a row and nothing back\n• **The Question That Was Not Wanted** — you got the ritual answer\n• **The Blank Answer** — \"not much\", because the question was too wide\n• **The Group Question** — aimed at nobody, landed on nobody\n• **You Ran Out After One** — a good exchange, then silence\n\nIn four of the five the repair is your own answer, not a better question.",
+      cards: [
+        { q: "What are the five challenge categories in this pack?", a: "The Interview, The Question That Was Not Wanted, The Blank Answer, The Group Question, and You Ran Out After One.", bundle: 'pro' },
+        { q: "Their answers are getting shorter. What is the fix?", a: "Not a better question — your own answer to the one you already asked.", bundle: 'pro' },
+        { q: "How do you name the interview lightly?", a: "\"I'm interrogating you. Your turn to ask me something.\"", bundle: 'pro' },
+        { q: "You got \"fine, thanks\". What does it usually mean?", a: "They answered the greeting rather than the question. The door is not shut.", bundle: 'pro' },
+        { q: "What tells them the question was real?", a: "Your own honest answer, given first. \"I'm shattered, since you didn't ask.\"", bundle: 'pro' },
+        { q: "Is \"not much\" a refusal?", a: "Almost never. It is a question that was too big to answer, and the fix is a smaller one.", bundle: 'pro' },
+        { q: "A question died in the middle of the table. What now?", a: "Aim it at one person by name, or answer it yourself first so the group has a shape to copy.", bundle: 'pro' },
+        { q: "The conversation stopped after one exchange. Where is the next question?", a: "Inside their last answer. Use a word from it.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "The five beliefs that get in the way here:\n\n• **You Don't Have to Be Interesting** — I need something worth saying\n• **Questions Alone Make an Interview** — the question was only for them\n• **The Boring Question Works** — the obvious one is too dull to ask\n• **The Whole Room Is Askable** — there is nothing here to ask about\n• **How Are You Is Not a Question** — those words are only a greeting\n\nThe first and third stop the question being asked; the second stops it becoming a conversation.",
+      cards: [
+        { q: "What are the five mindset areas in this pack?", a: "You Don't Have to Be Interesting, Questions Alone Make an Interview, The Boring Question Works, The Whole Room Is Askable, and How Are You Is Not a Question.", bundle: 'pro' },
+        { q: "What do you have to be, if not interesting?", a: "Interested — and then say your own bit afterwards. Curiosity is available even on a bad day.", bundle: 'pro' },
+        { q: "What are the two ways the mutuality leaks?", a: "Asking a second question before answering the first, and \"yeah, same\" handed straight back.", bundle: 'pro' },
+        { q: "How should you judge a question?", a: "By how easy it is to answer, not by how it sounds.", bundle: 'pro' },
+        { q: "Which question has opened more conversations than any clever alternative?", a: "\"What brings you here?\" Its ordinariness is exactly why it is easy to answer.", bundle: 'pro' },
+        { q: "What do you do when nothing occurs to you?", a: "Run the list. Five doors, and at least one is always open.", bundle: 'pro' },
+        { q: "What separates the greeting from the question?", a: "The delivery. Walking past, it is a greeting; stopping, with a second of silence after it, it is a question.", bundle: 'pro' },
+        { q: "When is Status the only opener available?", a: "When nothing has happened and there is nothing in the room to comment on.", bundle: 'pro' },
       ]
     },
   ],
   givingcounterexamples: [
     {
       name: "Core Idea",
-      description: "The concept behind counter-examples and the five types.",
+      description: "Five kinds of counter-example — your own, one you have seen, an imagined case, a known one, and a number — plus two moves for when the example is not the problem.\n\nThe target is the word \"always\", never the sentence. Concede, give one case, and stop.",
       cards: [
         { q: "What is a counter-example?", a: "A case that shows a general statement is not always true — it takes the word \"always\" out without taking the claim away.", bundle: 'free' },
         { q: "What are the five types?", a: "Your own exception, one you have seen, an imagined case where it breaks, a known exception, and what the numbers say.", bundle: 'free' },
@@ -5637,11 +5770,12 @@ const memorizeCollections = {
     },
     {
       name: "Your Own Exception",
-      description: "The theory behind the personal type.",
       cards: [
         { q: "What is a personal counter-example?", a: "The time it did not work that way for you — one occasion, told small.", bundle: 'free' },
         { q: "Why is it strong?", a: "It happened, it is yours, and nobody can tell you it did not.", bundle: 'free' },
         { q: "What has to come before it?", a: "The concession — say the general case is usually right, then give your exception.", bundle: 'free' },
+        { q: "What does the concession cost you?", a: "Nothing. \"Exercise usually helps\" is true, and it makes the exception land as information.", bundle: 'free' },
+        { q: "What are you reporting, rather than arguing?", a: "An afternoon. A general claim survives an argument and does not survive a real case.", bundle: 'free' },
         { q: "Which version is the most disarming?", a: "The time you believed the claim yourself, and then found out otherwise.", bundle: 'pro' },
         { q: "How big should the incident be?", a: "One occasion, small and specific. A summary of ten is weaker than one that is dated.", bundle: 'pro' },
         { q: "What do you do when they say your case is not typical?", a: "Agree that it is one case, and say what one case shows — that the claim is a tendency, not a rule.", bundle: 'pro' },
@@ -5649,11 +5783,12 @@ const memorizeCollections = {
     },
     {
       name: "Seen It Happen",
-      description: "The theory behind the observed type.",
       cards: [
         { q: "What is an observed counter-example?", a: "A case you have watched happen — a person, a place, a situation — rather than one from your own life.", bundle: 'free' },
         { q: "What does it have to be?", a: "Recognisable. An example nobody can picture is just a second opinion.", bundle: 'free' },
         { q: "Name two kinds.", a: "Any two of: someone you have watched, a place where it works differently, the common counter-case most people have seen.", bundle: 'free' },
+        { q: "Why is it checkable in a way an opinion is not?", a: "They do not have to take your word for it, and they cannot argue with it as they would with a principle.", bundle: 'free' },
+        { q: "What does a place that works differently answer?", a: "Claims about how things must be done. \"The Malmö office has done it the other way for years.\"", bundle: 'free' },
         { q: "When is this the better choice than your own experience?", a: "When your own life is not the subject, or when you barely know the person you are talking to.", bundle: 'pro' },
         { q: "What is the common counter-case?", a: "The exception nearly everyone has seen for themselves — \"everyone knows one person who revises nothing and does fine\".", bundle: 'pro' },
         { q: "Why is it easier to accept than a personal one?", a: "They can check it against their own experience instead of taking your word for it.", bundle: 'pro' },
@@ -5661,11 +5796,12 @@ const memorizeCollections = {
     },
     {
       name: "Where It Would Break",
-      description: "The theory behind the imagined type.",
       cards: [
         { q: "What is an imagined counter-example?", a: "A case you invent to test whether the rule holds — \"say someone works nights\".", bundle: 'free' },
         { q: "What must you always do with it?", a: "Mark it as imagined. Presenting an invention as something that happened cannot be repaired.", bundle: 'free' },
         { q: "Name two ways to build one.", a: "Any two of: the person the rule forgets, pushing it to the edge, turning it round onto them.", bundle: 'free' },
+        { q: "What does \"say someone…\" do?", a: "Marks the case as imagined, which keeps it a test of the rule rather than a claim about the world.", bundle: 'free' },
+        { q: "What does turning it round mean?", a: "Flipping who it happens to. \"Imagine it was your own work being reviewed that way.\"", bundle: 'free' },
         { q: "When is it the right type?", a: "When you have no real case, and it is more honest to test the rule than to dress a guess up as experience.", bundle: 'pro' },
         { q: "What is its advantage over a real case?", a: "Nobody can argue about whether it is representative, because you never claimed it was real.", bundle: 'pro' },
         { q: "Which claims does it suit best?", a: "Rules stated for everybody — it finds the person the rule forgot.", bundle: 'pro' },
@@ -5673,11 +5809,12 @@ const memorizeCollections = {
     },
     {
       name: "The Known Exception",
-      description: "The theory behind the shared type.",
       cards: [
         { q: "What is a known counter-example?", a: "A case you both already recognise — a public event, a well-known person, a familiar story.", bundle: 'free' },
         { q: "How do you know it was not shared?", a: "You had to explain it.", bundle: 'free' },
         { q: "Why is it the fastest of the five?", a: "You only have to point at it. Recognition does the work that explanation would.", bundle: 'free' },
+        { q: "Point, or explain?", a: "Point. The moment a shared example needs a paragraph of setup, it has stopped being shared.", bundle: 'free' },
+        { q: "How do you use a known person safely?", a: "For what they did, not for who they are.", bundle: 'free' },
         { q: "What is the second caution with it?", a: "Describe what actually happened rather than putting words into a real person's mouth.", bundle: 'pro' },
         { q: "When is this type the safest choice?", a: "With people you barely know, because it says nothing about your own life or theirs.", bundle: 'pro' },
         { q: "What can you use when there is no real public case?", a: "A story that carries the idea — a fable or a familiar plot — as long as you do not present it as evidence.", bundle: 'pro' },
@@ -5685,11 +5822,12 @@ const memorizeCollections = {
     },
     {
       name: "What the Numbers Say",
-      description: "The theory behind the statistical type.",
       cards: [
         { q: "When is a number safe to use as a counter-example?", a: "When you actually know it and can say where it came from.", bundle: 'free' },
         { q: "What do you do if you have no figure?", a: "Say so, and use a different type.", bundle: 'free' },
         { q: "Name two honest ways to use a number.", a: "Any two of: something you counted yourself, a figure with its source attached, a hedged estimate marked as one.", bundle: 'free' },
+        { q: "What is the rule that makes a number safe?", a: "Use one you know, and say where it came from.", bundle: 'free' },
+        { q: "What does a hedged estimate sound like?", a: "\"Something like a quarter. I'd check before repeating that.\"", bundle: 'free' },
         { q: "Why is an invented figure worse than none?", a: "When it is checked, everything else you said goes with it.", bundle: 'pro' },
         { q: "What does \"tens, not hundreds\" do?", a: "Gives the order of magnitude when the exact number does not matter — and it is often the number that changes the decision.", bundle: 'pro' },
         { q: "What is the better sentence than a made-up statistic?", a: "\"I don't have a figure, but I know one person it wasn't true for.\"", bundle: 'pro' },
@@ -5697,11 +5835,12 @@ const memorizeCollections = {
     },
       {
       name: "The Smaller Claim",
-      description: "The theory behind narrowing what they said.",
       cards: [
         { q: "What is the smaller claim?", a: "A narrower version of their own statement \u2014 one your exception fits inside, so there is nothing left to argue about.", bundle: 'free' },
         { q: "When do you reach for it?", a: "When your counter-example is met with \"that's just one person\" or \"that's a special case\".", bundle: 'free' },
         { q: "Name two ways to narrow a claim.", a: "Any two of: swap the quantifier, name the group it does not cover, ask them for their own careful version.", bundle: 'free' },
+        { q: "Why are most sweeping claims nearly true?", a: "\"Always\" is wrong and \"usually\" is right — and they would have said usually if they had been choosing carefully.", bundle: 'free' },
+        { q: "What does naming the group it misses do?", a: "Keeps the rule and adds a door. \"It holds except for people on shifts.\"", bundle: 'free' },
         { q: "Why is it better than defending your example?", a: "A counter-example invites another counter-example. A narrowed claim has nothing to argue with.", bundle: 'pro' },
         { q: "What is the smallest possible version of the move?", a: "Changing one word \u2014 always to usually, everyone to most people, never to rarely.", bundle: 'pro' },
         { q: "Why ask them for the careful version?", a: "People almost always narrow it themselves, and then the sentence is theirs rather than a concession to you.", bundle: 'pro' },
@@ -5709,25 +5848,84 @@ const memorizeCollections = {
     },
     {
       name: "Ask for Theirs",
-      description: "The theory behind handing the search over.",
       cards: [
         { q: "What is this strategy?", a: "Asking the person making the claim to find the exception themselves.", bundle: 'free' },
         { q: "When is it the right choice?", a: "When you doubt a sweeping claim but have no case of your own to point at.", bundle: 'free' },
         { q: "Name two ways to hand over the search.", a: "Any two of: ask for the exception, ask what would change their mind, ask them to argue the other side.", bundle: 'free' },
+        { q: "What is the strongest and least used version?", a: "Asking them to argue the other side.", bundle: 'free' },
+        { q: "Is having no case a reason to go quiet?", a: "No. It is a reason to ask a better question.", bundle: 'free' },
         { q: "What three things does it do at once?", a: "It gets you information, it makes them test the claim from the inside, and it turns two sides into one shared question.", bundle: 'pro' },
         { q: "Why is being tested from the inside different?", a: "An exception someone finds in their own claim is much harder for them to dismiss than one handed to them.", bundle: 'pro' },
         { q: "What does \"what would change your mind?\" tell you?", a: "Whether you are talking to a view or to a wall.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The four collections in this pack, and what each one makes you choose between:\n\n• **When You Are the Evidence** — your own exception and honest numbers, where you are the source\n• **When They Already Know It** — the seen one and the known one, which work by recognition\n• **All Five** — no cue given, which is the real thing\n• **When the Example Is Not Enough** — the two moves that end the exchange rather than extend it",
+      cards: [
+        { q: "What are the four collections in this pack?", a: "When You Are the Evidence, When They Already Know It, All Five, and When the Example Is Not Enough.", bundle: 'pro' },
+        { q: "Which two types are you the source of?", a: "Your Own Exception and What the Numbers Say.", bundle: 'pro' },
+        { q: "They are sceptical and the stakes are real. Which collection?", a: "When You Are the Evidence. Those two survive being questioned.", bundle: 'pro' },
+        { q: "Which two work through recognition?", a: "Seen It Happen and The Known Exception. Neither needs establishing.", bundle: 'pro' },
+        { q: "You barely know the person. Which collection?", a: "When They Already Know It. Your own life is not the subject, and they cost the listener nothing to accept.", bundle: 'pro' },
+        { q: "What is the rule in All Five?", a: "Pick the cheapest true one.", bundle: 'pro' },
+        { q: "Your case is being disputed. Which move?", a: "The Smaller Claim. Stop defending the example and offer a narrower version of their claim.", bundle: 'pro' },
+        { q: "Why do those last two end the exchange?", a: "A counter-example invites a counter-counter-example. A narrowed claim or an honest question does not.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **Concede, Except, Stop** — the whole move in three beats\n2. **When They Defend the Rule** — they explained your exception away\n3. **When You Do Not Have One** — name the doubt, admit you have no case, hand over the search\n\nThe third beat is the one people drop, and dropping it is what turns a counter-example into an argument.",
+      cards: [
+        { q: "What are the three beats in Concede, Except, Stop?", a: "Agree the claim is usually right, give one exception, and then stop talking.", bundle: 'pro' },
+        { q: "Which beat do people drop?", a: "The third. Stopping.", bundle: 'pro' },
+        { q: "What is the silence doing?", a: "Leaving them room to adjust their own claim — which they do far more readily than they accept yours.", bundle: 'pro' },
+        { q: "They said \"that's one person\". What is the order?", a: "Agree it is one case, say what one case shows, then offer the smaller claim.", bundle: 'pro' },
+        { q: "Why concede that immediately?", a: "An exception does not disprove a rule, and pretending it does is what loses the argument.", bundle: 'pro' },
+        { q: "What does one case show?", a: "That it is \"usually\" rather than \"always\" — which is all you wanted.", bundle: 'pro' },
+        { q: "What is the order when you have no case?", a: "Name the part you doubt, say you have no example, then ask them to find one.", bundle: 'pro' },
+        { q: "What does admitting you have nothing buy?", a: "A great deal of credibility, for almost no cost.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five ways a counter-example goes wrong:\n\n• **It Landed As Contradiction** — the concession was missing\n• **One Case, Big Conclusion** — one exception used as if it settled it\n• **The Example Is Invented** — a figure or a case you do not have\n• **They Cannot Picture It** — real, but it means nothing to them\n• **The Claim Is About Someone Present** — not a general question at all\n\nOnly one of the five cannot be repaired once it is out.",
+      cards: [
+        { q: "What are the five challenge categories in this pack?", a: "It Landed As Contradiction, One Case Big Conclusion, The Example Is Invented, They Cannot Picture It, and The Claim Is About Someone Present.", bundle: 'pro' },
+        { q: "Which word turns an example into a correction?", a: "\"Actually\". Take it out and the same sentence lands completely differently.", bundle: 'pro' },
+        { q: "You skipped the concession. Can you still put it back?", a: "Yes — late is better than never. \"You're right in general, that's the bit I skipped.\"", bundle: 'pro' },
+        { q: "You said \"so it's not true\". What did you mean?", a: "\"So it's not always true.\" An exception removes the word always; it does not remove the sentence.", bundle: 'pro' },
+        { q: "You cannot name the source. What is the move?", a: "Withdraw it immediately. It costs a sentence and saves the rest of your credibility.", bundle: 'pro' },
+        { q: "Which repair is not available here?", a: "None, for an invented case that has been checked. Everything else you said goes with it.", bundle: 'pro' },
+        { q: "You had to explain who the person was. What now?", a: "Swap it — for the common counter-case, or for a public one that needs no introduction.", bundle: 'pro' },
+        { q: "The claim is really about someone in the room. What do you do?", a: "Move it off people entirely, or say lightly that this is not a general question.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "The seven beliefs that get in the way here:\n\n• **Not Wrong, Just Not Always** — an exception means they are wrong\n• **Widen, Do Not Win** — the example is for scoring\n• **Concede First** — agreeing weakens the point\n• **I Don't Have One** — having no case means saying nothing\n• **A Made-Up Case Doesn't Count** — a hypothetical is weaker than a story\n• **Narrowing Isn't Backing Down** — offering a smaller claim is a retreat\n• **Asking Doesn't Mean You Have Nothing** — a question hands them control",
+      cards: [
+        { q: "What are the seven mindset areas in this pack?", a: "Not Wrong Just Not Always, Widen Do Not Win, Concede First, I Don't Have One, A Made-Up Case Doesn't Count, Narrowing Isn't Backing Down, and Asking Doesn't Mean You Have Nothing.", bundle: 'pro' },
+        { q: "What are you actually aiming at?", a: "\"That's true most of the time\" — not \"that's not true\".", bundle: 'pro' },
+        { q: "What are the three signs it became an argument in disguise?", a: "Saving your best example for impact, enjoying that they cannot answer, and carrying on after they have already moved.", bundle: 'pro' },
+        { q: "How much agreement does the concession need?", a: "About six words. \"Usually, yes — though…\" is the whole technique.", bundle: 'pro' },
+        { q: "What does an invented example cost?", a: "Everything else you said. \"I don't have a case to point at\" costs one sentence.", bundle: 'pro' },
+        { q: "Is a hypothetical evidence?", a: "No, and it was never meant to be. It tests the claim's own shape.", bundle: 'pro' },
+        { q: "Why is narrowing not a retreat?", a: "You are not withdrawing the exception — you are putting it inside a sentence they can say yes to.", bundle: 'pro' },
+        { q: "How should the question be asked?", a: "Like you want the answer. Asked as a trap, they hear the trap.", bundle: 'pro' },
       ]
     },
 ],
   discussing: [
     {
       name: "Core Idea",
-      description: "The two halves and what holds them together.",
+      description: "Six moves in two halves: say what you think and why (Me-Focus), and take in what they think — play it back, ask what they mean, let them finish (You-Focus). Plus one for the heat.\n\nThe balance is the skill, held over ten minutes rather than one exchange.",
       cards: [
         { q: "What are the two halves of a discussion?", a: "Me-Focus — saying what you think and why. You-Focus — taking in what they think.", bundle: 'free' },
         { q: "What is the skill the pack actually trains?", a: "The balance between the two, kept up over a longer stretch rather than in a single exchange.", bundle: 'free' },
         { q: "What happens if both people only do Me-Focus?", a: "Two monologues delivered alternately.", bundle: 'free' },
+        { q: "Which half is the fix for a polite discussion going nowhere?", a: "Me-Focus. That is a shortage of positions, not of goodwill.", bundle: 'free' },
+        { q: "Which half is the fix for one that keeps circling?", a: "You-Focus. Repetition means they do not think you have heard it, and no counter-argument fixes that.", bundle: 'free' },
         { q: "What happens if both people only do You-Focus?", a: "Nothing to discuss — nobody has put a position on the table.", bundle: 'pro' },
         { q: "Does a discussion have to end in agreement?", a: "No. The outcome to aim for is that both understand the question better, which is compatible with still disagreeing.", bundle: 'pro' },
         { q: "How is this different from Agreeing and Disagreeing?", a: "Those are single moves. This is keeping the whole thing going for ten minutes.", bundle: 'pro' },
@@ -5735,11 +5933,12 @@ const memorizeCollections = {
     },
     {
       name: "Your Own View",
-      description: "The theory behind putting a position on the table.",
       cards: [
         { q: "Why say \"I think\" rather than stating it as fact?", a: "An opinion presented as a fact invites a fight about the fact; presented as an opinion it invites a conversation about the subject.", bundle: 'free' },
         { q: "What is the commonest reason a discussion stalls politely?", a: "Nobody has actually said what they think, so there is nothing to respond to.", bundle: 'free' },
-        { q: "What does saying the weight of your view do?", a: "Tells them how hard to push back — \"I lean that way, not strongly\" is useful information.", bundle: 'pro' },
+        { q: "What does the plain version sound like?", a: "\"I think it's worth doing.\" Shortest and clearest of the three.", bundle: 'free' },
+        { q: "What does \"you're wrong about homework\" become?", a: "\"I see it differently.\" The difference is entirely in whose sentence it is.", bundle: 'free' },
+        { q: "What does saying the weight of your view do?", a: "Tells them how hard to push back — \"I lean that way, not strongly\" is useful information.", bundle: 'free' },
         { q: "Is \"I don't know what I think\" a position?", a: "Yes, and an honest one. It is different from avoiding the question.", bundle: 'pro' },
         { q: "Why is owning it harder to argue with?", a: "You are the authority on what you think. Nobody can correct you about it.", bundle: 'pro' },
         { q: "What is the risk of dressing a preference as a principle?", a: "It makes the disagreement bigger than it is, and a preference is a perfectly good reason anyway.", bundle: 'pro' },
@@ -5747,23 +5946,25 @@ const memorizeCollections = {
     },
     {
       name: "The Reasoning",
-      description: "The theory behind saying why.",
       cards: [
         { q: "What is a bare opinion, and what is a reason?", a: "A wall and a door.", bundle: 'free' },
         { q: "How many reasons should you give?", a: "One, plainly. Three sounds like a case, and then they look for the weakest.", bundle: 'free' },
+        { q: "What does the cause version sound like?", a: "What leads to what. \"If we leave it to Friday, nobody's here to fix it.\"", bundle: 'free' },
+        { q: "What does the principle version sound like?", a: "The rule you are applying. \"I'd rather be slightly early than slightly wrong.\"", bundle: 'free' },
         { q: "What often turns out to be true once both reasons are visible?", a: "That you want the same thing and differ about one step.", bundle: 'pro' },
         { q: "What is the difference from Giving Examples?", a: "An example illustrates; a reason explains why you hold the view.", bundle: 'pro' },
-        { q: "Is \"partly I just prefer it\" a legitimate reason?", a: "Yes, and saying so is stronger than dressing it up as something else.", bundle: 'pro' },
+        { q: "Is \"partly I just prefer it\" a legitimate reason?", a: "Yes, and saying so is stronger than dressing it up as something else.", bundle: 'free' },
         { q: "What is repeating your conclusion more firmly?", a: "A volume control, not an argument.", bundle: 'pro' },
       ]
     },
     {
       name: "Play It Back",
-      description: "The theory behind restating a position.",
       cards: [
         { q: "What does saying their view back do?", a: "Proves you were listening, and catches the misunderstanding that half of all disagreements turn out to be.", bundle: 'free' },
         { q: "What does someone do when they feel unheard?", a: "Repeats the same point, usually louder.", bundle: 'free' },
-        { q: "What is the strongest version of it?", a: "Naming what they are actually protecting, not just their position.", bundle: 'pro' },
+        { q: "How long does it cost?", a: "One sentence.", bundle: 'free' },
+        { q: "Get it right, or get it over with?", a: "Right. Their correction is the most useful sentence in the discussion.", bundle: 'free' },
+        { q: "What is the strongest version of it?", a: "Naming what they are actually protecting, not just their position.", bundle: 'free' },
         { q: "What if they correct your version?", a: "That correction is the most useful sentence in the discussion.", bundle: 'pro' },
         { q: "How does it protect you?", a: "You never spend four minutes disagreeing with something they never claimed.", bundle: 'pro' },
         { q: "Does it mean you agree?", a: "No. You can restate a position accurately and then disagree with all of it.", bundle: 'pro' },
@@ -5771,23 +5972,25 @@ const memorizeCollections = {
     },
     {
       name: "Ask What They Mean",
-      description: "The theory behind clarifying.",
       cards: [
         { q: "When should you ask a clarifying question?", a: "Before you respond to anything ambiguous — it takes six words and saves four minutes.", bundle: 'free' },
         { q: "What do general words hide?", a: "Specific disagreements. Two people can use the same sentence and mean different things.", bundle: 'free' },
+        { q: "What does narrowing the word sound like?", a: "\"All of it, or the busywork?\" The most useful of the three.", bundle: 'free' },
+        { q: "Ask, or argue?", a: "Ask first. Half the heated disagreements are two people defending things the other never said.", bundle: 'free' },
         { q: "What is the difference between a question and a cross-examination?", a: "\"Do you mean all of it, or some?\" is curiosity. \"So you're saying ALL of it?\" is a trap in the same words.", bundle: 'pro' },
-        { q: "Name two kinds of clarifying question.", a: "Any two of: narrow the word, ask for a specific case, check the strength of the view.", bundle: 'pro' },
+        { q: "Name two kinds of clarifying question.", a: "Any two of: narrow the word, ask for a specific case, check the strength of the view.", bundle: 'free' },
         { q: "Why ask for a case?", a: "An abstraction becomes discussable the moment it has an example in it.", bundle: 'pro' },
         { q: "Why check the strength?", a: "People rarely mean the extreme version, and you would argue differently against each.", bundle: 'pro' },
       ]
     },
     {
       name: "Let Them Finish",
-      description: "The theory behind not interrupting.",
       cards: [
         { q: "Why let them finish, beyond politeness?", a: "The last quarter is where the qualification lives — the \"although\" that would have made your interruption unnecessary.", bundle: 'free' },
         { q: "What does an interruption cost?", a: "The point gets made again, longer, and now they have two things to say.", bundle: 'free' },
-        { q: "What is the hard part of it?", a: "Not the silence — what happens in your head during it. Composing a reply is queueing, not listening.", bundle: 'pro' },
+        { q: "Where does the qualification live?", a: "In the last quarter — the \"although\", the \"except when\".", bundle: 'free' },
+        { q: "Wait for the end of the sentence, or the breath?", a: "The sentence. And then a beat longer.", bundle: 'free' },
+        { q: "What is the hard part of it?", a: "Not the silence — what happens in your head during it. Composing a reply is queueing, not listening.", bundle: 'free' },
         { q: "What is a pause mid-sentence?", a: "Thinking. Not an invitation.", bundle: 'pro' },
         { q: "You interrupted anyway. What repairs it?", a: "\"Sorry, finish yours\" — it costs nothing and repairs it completely.", bundle: 'pro' },
         { q: "What is the test that you were listening?", a: "Whether you could summarise their point, not whether you agreed with it.", bundle: 'pro' },
@@ -5795,14 +5998,71 @@ const memorizeCollections = {
     },
     {
       name: "Keep the Temperature Down",
-      description: "The theory behind staying calm, in moves rather than advice.",
       cards: [
         { q: "Why does heat matter in a discussion?", a: "Two annoyed people stop hearing each other's reasons, so everything after that point is wasted however good the arguments are.", bundle: 'free' },
         { q: "What are the reliable signals?", a: "Physical ones — talking faster, talking over, the same point getting louder.", bundle: 'free' },
-        { q: "Name the three moves that work.", a: "Name it jointly as \"we\", slow yourself visibly, and split the hot part off from the rest.", bundle: 'pro' },
+        { q: "Why is \"stay calm\" not usable advice?", a: "Nobody can follow it in the moment. The useful version is a set of specific moves.", bundle: 'free' },
+        { q: "What does splitting it sound like?", a: "\"Leave the cost aside. Do we agree on the rest?\"", bundle: 'free' },
+        { q: "Name the three moves that work.", a: "Name it jointly as \"we\", slow yourself visibly, and split the hot part off from the rest.", bundle: 'free' },
         { q: "What should you never do?", a: "Tell the other person to calm down. It has never once worked.", bundle: 'pro' },
         { q: "Why \"we\" rather than \"you\"?", a: "\"You're getting heated\" is an accusation and adds heat. \"We're getting sharp\" is an observation you are inside.", bundle: 'pro' },
         { q: "What is the goal to hold on to?", a: "Still be talking in ten minutes. Winning an exchange with somebody you will see tomorrow is not winning.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Collections",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Me-Focus** — the moves where you supply something: a view, and the reason for it\n• **You-Focus** — the moves where you take something in: playing it back, clarifying, letting them finish\n• **Reading the Room** — the full six, including the temperature move\n\nThe balance is the skill: two people doing only one half have either two monologues or nothing to discuss.",
+      cards: [
+        { q: "What are the three collections in this pack?", a: "Me-Focus, You-Focus, and Reading the Room.", bundle: 'pro' },
+        { q: "Which two moves are Me-Focus?", a: "Your Own View and The Reasoning.", bundle: 'pro' },
+        { q: "The discussion is polite and going nowhere. Which collection?", a: "Me-Focus. That is a shortage of positions, not of goodwill.", bundle: 'pro' },
+        { q: "Which three moves are You-Focus?", a: "Play It Back, Ask What They Mean, and Let Them Finish.", bundle: 'pro' },
+        { q: "What is the tell that you need one of those?", a: "Repetition. Someone saying the same thing a third time does not think you have heard it.", bundle: 'pro' },
+        { q: "A word is doing too much work. Which move?", a: "Ask What They Mean.", bundle: 'pro' },
+        { q: "It is getting fast and sharp. Which move?", a: "Keep the Temperature Down.", bundle: 'pro' },
+        { q: "What do two people doing only You-Focus have?", a: "Nothing to discuss — nobody has put a position on the table.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Sequences",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **Back, Then Differ** — say it back → grant what is right → your view and one reason\n2. **Ask Before You Argue** — notice the vague word → ask which version → answer that one\n3. **When It Heats Up** — name it as \"we\" → split the hot part off → agree the rest\n\nIn all three the disagreement comes last, and arrives as a contribution rather than as not having listened.",
+      cards: [
+        { q: "What is the order in Back, Then Differ?", a: "Say their position back, grant the part that is right, then give your view and one reason.", bundle: 'pro' },
+        { q: "Why does the disagreement have to come last?", a: "After accurate understanding it is heard as a contribution. The same sentence first is heard as not having listened.", bundle: 'pro' },
+        { q: "Is the concession in step two a tactic?", a: "No. If you cannot find anything true in their position, you have probably not understood it yet.", bundle: 'pro' },
+        { q: "What is the order in Ask Before You Argue?", a: "Notice the vague word, ask which version they mean, and answer that version.", bundle: 'pro' },
+        { q: "What do six words of clarification save?", a: "Four minutes of arguing about a position nobody holds.", bundle: 'pro' },
+        { q: "What is the order when it heats up?", a: "Name it as \"we\", split the hot part off, then agree the rest.", bundle: 'pro' },
+        { q: "What does each of those three steps remove?", a: "Naming it jointly removes the accusation, splitting removes the heat, and agreeing the rest gives you both something to stand on.", bundle: 'pro' },
+        { q: "What must you never do there?", a: "Tell the other person to calm down. Say \"we\", or say what you are doing yourself.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Challenges",
+      description: "The five ways a discussion goes wrong:\n\n• **Two Monologues** — two speeches delivered alternately\n• **Arguing About Different Things** — the same word, two meanings\n• **It Got Personal** — the subject became the people\n• **The Floor Is Not Shared** — one person has had the airtime\n• **You Have Changed Your Mind** — and saying so feels like losing\n\nThe last one is not a failure at all, which is why it sits with the other four.",
+      cards: [
+        { q: "What are the five challenge categories in this pack?", a: "Two Monologues, Arguing About Different Things, It Got Personal, The Floor Is Not Shared, and You Have Changed Your Mind.", bundle: 'pro' },
+        { q: "What is the test that you are discussing rather than taking turns?", a: "Whether you could state their position in a sentence.", bundle: 'pro' },
+        { q: "Every turn starts with \"yeah, but\". What is the repair?", a: "A You-Focus move — say their view back, and mean it.", bundle: 'pro' },
+        { q: "The disagreement feels bigger than the subject. What is happening?", a: "A key word is doing a lot of unexamined work, and you mean different things by it.", bundle: 'pro' },
+        { q: "\"You always…\" has appeared. What is the repair?", a: "Name it as a shared thing and take the heat out — never as \"you\".", bundle: 'pro' },
+        { q: "You have said almost nothing and are resentful. What do you do?", a: "Take your turn explicitly. \"Can I have thirty seconds? I've not said much.\"", bundle: 'pro' },
+        { q: "You have spoken for four minutes. What do you do?", a: "Hand it over explicitly. \"I've had a good run at this. What do you think?\"", bundle: 'pro' },
+        { q: "They convinced you. What is the move?", a: "Say so plainly and name what changed it. It is an answer and a compliment at the same time.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "Mindset",
+      description: "The six beliefs that get in the way here:\n\n• **Not Trying to Win** — a discussion is a contest with a result\n• **Say It As Yours** — \"I think\" is a hedge\n• **Listen to Hear, Not to Reply** — holding your answer ready is listening\n• **Changing Your Mind Is a Result** — being persuaded is a defeat\n• **Saying It Back Is Conceding** — repeating their view strengthens it\n• **Asking Looks Like I Missed It** — a clarifying question admits inattention\n\nThe first sets the stance; the other five are where it leaks.",
+      cards: [
+        { q: "What are the six mindset areas in this pack?", a: "Not Trying to Win, Say It As Yours, Listen to Hear Not to Reply, Changing Your Mind Is a Result, Saying It Back Is Conceding, and Asking Looks Like I Missed It.", bundle: 'pro' },
+        { q: "What is the outcome to aim for?", a: "Two people who understand the question better. Agreement is optional and often unavailable.", bundle: 'pro' },
+        { q: "Is \"I think\" a hedge?", a: "No — it is the accurate description of what you are saying, and it makes their disagreement cheap rather than confrontational.", bundle: 'pro' },
+        { q: "What are you doing if you are not taking it in?", a: "Queueing. The two feel identical from the inside.", bundle: 'pro' },
+        { q: "What does conceding silently cost you?", a: "The thing that makes people willing to discuss anything with you — being seen to move.", bundle: 'pro' },
+        { q: "What does stating their view accurately actually do?", a: "Leaves it nowhere to hide, and removes the escape route where they say you have misunderstood.", bundle: 'pro' },
+        { q: "How many meanings does a sentence worth discussing usually carry?", a: "Two or three — and the speaker rarely knows which one arrived.", bundle: 'pro' },
+        { q: "Which is cheaper, asking or answering the wrong version?", a: "Asking. It is the cheapest thing in the discussion and prevents the most expensive thing.", bundle: 'pro' },
       ]
     },
   ],

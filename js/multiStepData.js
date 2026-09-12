@@ -1641,7 +1641,7 @@ const multiStepCollections = {
       name: "From Blank to Something Real",
       guideFront: "What's happening, and the strategy to use",
       guideBack: "One way it could sound",
-      description: "The usual arc: surprise, an honest pause, a question, and something partial and true. It rarely ends in a full answer, and it does not need to.\n\nEach step front carries what they said and names the strategy. Notice that at no point does the answer become complete — the conversation works anyway.\n\nMindset: the aim is to stay in it honestly, not to arrive at a verdict.",
+      description: "The usual arc: surprise, an honest pause, a question, and something partial and true. Steps: 1) Name the Pause — buy the second you need, 2) Ask What Prompted It — get the story rather than guess it, 3) Answer Part of It — say the bit you do know, 4) Park It — promise a real answer later.\n\nThe shape of the whole thing:\n1. \"Right. Give me a second with that.\"\n2. \"I don't think anything yet. What's brought it on?\"\n3. \"I didn't know it was that long. The rest I'll catch up on.\"\n4. \"Ask me at the weekend and I'll have an actual view.\"\n\nWhy this order: at no point does the answer become complete, and the conversation works anyway. Each step is honest about how far you have got.\n\nMindset: stay in it honestly rather than arrive at a verdict.",
       inputs: [
         {
           bundle: 'pro',
@@ -3350,7 +3350,7 @@ const multiStepCollections = {
       name: "When They Are Not Interested",
       guideFront: "What's happening, and the strategy to use",
       guideBack: "One way it could sound",
-      description: "The hardest audience is not the one who disagrees — it is the one who has not thought about it and does not intend to.\n\nAn argument lands on nothing when there is no question in their mind. The move is to make it their business first, which usually means the benefit or the cost, and only then give the reasoning.\n\nMindset: create the question before you answer it.",
+      description: "The hardest audience is not the one who disagrees but the one who has not thought about it. Steps: 1) What They Get — make it their business, 2) The Cost of Doing Nothing — say what waiting costs, 3) Give a Reason, 4) Your Own Story — the part they cannot argue with.\n\nThe shape of the whole thing:\n1. \"It'd save you the chasing every Friday.\"\n2. \"Twenty minutes a week for two years. It adds up.\"\n3. \"It's nobody's job. That's the actual problem.\"\n4. \"The other team fixed theirs in an afternoon. I watched it.\"\n\nWhy this order: an argument lands on nothing when there is no question in their mind. The benefit or the cost creates it; the reasoning then has somewhere to go.\n\nMindset: create the question before you answer it.",
       inputs: [
         {
           bundle: 'pro',
@@ -3755,7 +3755,7 @@ const multiStepCollections = {
       name: "Bringing It Into the Open",
       guideFront: "What's happening, and the strategy to use",
       guideBack: "One way it could sound",
-      description: "Taking a remark under the surface, in the order that works: ask, then acknowledge what comes out, then say what you would prefer.\n\nThe risky moment is the first one. A question asked with an edge starts an argument, and a question asked neutrally gets an answer — the same words, two completely different conversations.\n\nMindset: ask like you want the answer, and then actually listen to it.",
+      description: "Taking a remark under the surface, in the order that works. Steps: 1) Ask What They Mean — neutrally, and then wait, 2) Name the Feeling — acknowledge what comes out, 3) Say How It Lands — say what you would prefer instead.\n\nThe shape of the whole thing:\n1. \"What do you mean by that?\"\n2. \"You sound properly fed up. Is it about the deadline?\"\n3. \"I'd honestly rather you just told me you were annoyed.\"\n\nWhy this order: the risky moment is the first one. A question asked with an edge starts an argument and a question asked neutrally gets an answer — the same words, two completely different conversations.\n\nMindset: ask like you want the answer, and then actually listen to it.",
       inputs: [
         {
           bundle: 'pro',
@@ -4025,7 +4025,7 @@ const multiStepCollections = {
       name: "Not Answering Yet",
       guideFront: "What's happening, and the strategy to use",
       guideBack: "One way it could sound",
-      description: "The move that prevents most regretted yeses: not answering in the moment at all.\n\nThe pattern is short — ask for time, name when you will answer, and then actually answer. The last step is the one people skip, and skipping it turns a considered delay into avoidance that costs the other person a chance to ask someone else.\n\nMindset: buy the time, then use it, then answer on the day you said.",
+      description: "The move that prevents most regretted yeses: not answering in the moment at all. Steps: 1) Ask for Time First — do not answer in the room, 2) Ask for Time First — name when, 3) Understand First — show you know what you are turning down, 4) Say No Simply — give the answer you promised.\n\nThe shape of the whole thing:\n1. \"Let me look at what I've got on and come back to you.\"\n2. \"I'll tell you by end of play tomorrow.\"\n3. \"I know you need someone, and it's not an easy one to fill.\"\n4. \"I'm not going to be able to take it on.\"\n\nWhy this order: the last step is the one people skip, and skipping it turns a considered delay into avoidance.\n\nMindset: buy the time, use it, and answer on the day you said.",
       inputs: [
         {
           bundle: 'pro',
