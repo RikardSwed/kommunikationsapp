@@ -1154,7 +1154,7 @@ const challengesCollections = {
       description: "Describing people carries a risk objects do not: some details are useful and neutral, others reduce someone to a characteristic or land as a judgement.\n\nClothing, position and what someone is doing are reliable and disappear the moment the person is found. Comments on body, attractiveness or the like are neither necessary nor kind.\n\nMindset: describe what they are wearing and where they are standing, not what they look like as a person.",
       inputs: [
         { q: "You need to point someone out across a room.", a: "\"Green jacket, standing by the coffee machine.\" [Where You Find It]", bundle: 'pro' },
-        { q: "They ask which of two people you mean.", a: "\"The one who's talking. The other one's on their phone.\" [What they are doing]", bundle: 'pro' },
+        { q: "They ask which of two people you mean.", a: "\"The one who's talking. The other one's on their phone.\" [Name and Main Details]", bundle: 'pro' },
         { q: "You are about to describe someone's body.", a: "\"Easier way — she's the one carrying the blue folder.\" [Name and Main Details]", bundle: 'pro' },
         { q: "You are telling a friend who to look out for at the station.", a: "\"Tall, grey coat, and he'll be the one holding a bike helmet.\" [Material, Texture and Colour]", bundle: 'pro' },
         { q: "The only detail you can think of is a personal one.", a: "\"I'll message you when I see him — easier than describing.\" [Decline the description]", bundle: 'pro' },
@@ -1467,7 +1467,7 @@ const challengesCollections = {
       name: "The Praise Has a But",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "\"That was great, but…\" — and everything before the \"but\" is deleted. The listener hears only the criticism, and learns that your praise is a warning sign.\n\nIf both need saying, separate them: praise now, the other thing later, with real space in between. If only the criticism matters, give the criticism and skip the wrapper.\n\nMindset: praise used as packaging stops working as praise.",
+      description: "\"That was great, but…\" — and everything before the \"but\" is deleted. The listener hears only the criticism, and learns that your praise is a warning sign.\n\nWhat it usually looks like:\n\n• The word \"but\" arrives within one sentence of the praise.\n• You are praising in order to soften something else.\n• They brace rather than relax when you start.\n\nTwo ways through:\n1. Name the Positive Action on its own — praise now, the other thing later, with real space in between.\n2. Keep Going, narrowed — say the one part worth repeating and stop there.\n\nMindset: praise used as packaging stops working as praise. If only the criticism matters, give the criticism and skip the wrapper.",
       inputs: [
         { q: "You are about to say \"great, but\".", a: "\"That was good, and I'll say it on its own. We'll do the other bit tomorrow.\" [Name the Positive Action]", bundle: 'pro' },
         { q: "You have already said it and they have visibly deflated.", a: "\"I've buried the good part. The opening genuinely worked — the rest can wait.\" [Name the Positive Action]", bundle: 'pro' },
@@ -1499,7 +1499,7 @@ const challengesCollections = {
       name: "The Offer You Will Not Keep",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "The support step goes wrong when the offer is bigger than what you will actually do. \"Let me know if you need anything\" costs nothing and is almost never taken up; \"I'll read it Wednesday\" is a promise, and it has to be kept.\n\nAn offer that evaporates is worse than no offer, because they built on it.\n\nMindset: offer small and certain rather than large and vague.",
+      description: "The support step goes wrong when the offer is bigger than what you will actually do. \"Let me know if you need anything\" costs nothing and is almost never taken up; \"I'll read it Wednesday\" is a promise, and it has to be kept.\n\nWhat it usually looks like:\n\n• The offer has no day, no size and no next step in it.\n• You said it warmly and have not thought about it since.\n• They mention it a week later and you have to think.\n\nTwo ways through:\n1. Offer Support, made concrete — a day, a thing, a size.\n2. Offer Support, scaled down — name the part you can do, and who could do the rest.\n\nMindset: offer small and certain rather than large and vague. An offer that evaporates is worse than no offer, because they built on it.",
       inputs: [
         { q: "You are about to say \"let me know if you need anything\".", a: "\"Send me the draft on Wednesday and I'll read it.\" [Offer Support]", bundle: 'pro' },
         { q: "You offered something and cannot now do it.", a: "\"I said I'd read it Wednesday and I can't. Thursday morning, definitely.\" [Offer Support]", bundle: 'pro' },
@@ -1515,7 +1515,7 @@ const challengesCollections = {
       name: "They Do Not Believe It",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "Some people cannot take praise. It bounces off, or it makes them uncomfortable enough that they leave. Repeating it more emphatically makes it worse.\n\nGo smaller and more factual. A tiny specific observation is easier to accept than a large warm verdict, and an impact is easier still.\n\nMindset: shrink the praise until it fits through.",
+      description: "Some people cannot take praise. It bounces off, or it makes them uncomfortable enough that they leave. Repeating it more emphatically makes it worse.\n\nWhat it usually looks like:\n\n• \"It was nothing\", \"anyone would have\", \"it was mostly Sam\".\n• They change the subject within a sentence.\n• You say it again louder and they get further away.\n\nTwo ways through:\n1. Highlight the Impact — a fact about what changed is harder to wave away than a verdict about them.\n2. Name the Positive Action, made small — one specific observation, and then stop.\n\nMindset: shrink the praise until it fits through. A tiny specific observation is easier to accept than a large warm verdict.",
       inputs: [
         { q: "They say \"not really\" and change the subject.", a: "\"Fine — I'll just say the meeting ended early with a decision.\" [Highlight the Impact]", bundle: 'pro' },
         { q: "They look physically uncomfortable.", a: "\"I'll stop. One thing though: the opening worked.\" [Name the Positive Action]", bundle: 'pro' },
@@ -1531,7 +1531,7 @@ const challengesCollections = {
       name: "Praise in Front of Others",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "Public praise is powerful and awkward in roughly equal measure. It can single someone out, embarrass a shy person, or read to everyone else as a comparison with them.\n\nPublic for the thing anyone would be glad to have noticed, private for anything personal, effortful or close to a difficulty. When in doubt, ask.\n\nMindset: praise publicly for the work, privately for the person.",
+      description: "Public praise is powerful and awkward in roughly equal measure. It can single someone out, embarrass a shy person, or read to everyone else as a comparison with them.\n\nWhat it usually looks like:\n\n• The room goes quiet and they look at the table.\n• The thing you are praising cost them something private.\n• Two other people did similar work and are standing there.\n\nTwo ways through:\n1. Name the Positive Action, kept to the work — public for the thing anyone would be glad to have noticed.\n2. Highlight the Impact for the group, and save the personal half for afterwards.\n\nMindset: praise publicly for the work, privately for the person. When in doubt, ask first.",
       inputs: [
         { q: "You want to praise someone shy in front of the class.", a: "\"I'll mention the project and leave it there — the rest I'll say after.\" [Name the Positive Action]", bundle: 'pro' },
         { q: "The achievement involved a personal struggle.", a: "\"That's yours to share or not. I'll just say the work was good.\" [Name the Positive Action]", bundle: 'pro' },
@@ -3542,11 +3542,11 @@ const challengesCollections = {
       guideBack: "One way it could sound",
       description: "You reached for a figure or a case you do not actually have, or you are about to. The repair is to say so before it is checked, and to use a type you can stand behind instead.\n\nWhat it usually looks like:\n\n• You have said \"I read somewhere\" and cannot say where.\n• The number felt right rather than known.\n• You are hoping nobody asks for the source.\n\nTwo ways through:\n1. Withdraw it immediately — costs a sentence, saves the rest of your credibility.\n2. Swap the type — an imagined case, marked as imagined, does the same job honestly.\n\nMindset: a made-up example is the one mistake that spreads. When it is checked, everything else you said goes with it.",
       inputs: [
-        { q: "You quoted a statistic you cannot actually source.", a: "\"I shouldn't have said that as a fact — I don't have the number. Let me find it.\" [withdraw]", bundle: 'pro' },
+        { q: "You quoted a statistic you cannot actually source.", a: "\"I shouldn't have said that as a fact — I don't have the number. Let me find it.\" [What the Numbers Say]", bundle: 'pro' },
         { q: "You are about to invent a case that would prove your point.", a: "\"I don't have a real one. But imagine someone who works nights — does the rule hold?\" [Where It Would Break]", bundle: 'pro' },
-        { q: "They ask where your figure came from.", a: "\"Honestly, I can't source it. Treat it as a hunch until I check.\" [withdraw]", bundle: 'pro' },
+        { q: "They ask where your figure came from.", a: "\"Honestly, I can't source it. Treat it as a hunch until I check.\" [What the Numbers Say]", bundle: 'pro' },
         { q: "You said \"I read somewhere\" and cannot say where.", a: "\"I can't stand that one up, so ignore it. Here's one I can: I counted it myself last month.\" [What the Numbers Say]", bundle: 'pro' },
-        { q: "A number that felt right has become a number you stated.", a: "\"I gave that as a fact and it was a guess. Let me get the real one before we go further.\" [withdraw]", bundle: 'pro' },
+        { q: "A number that felt right has become a number you stated.", a: "\"I gave that as a fact and it was a guess. Let me get the real one before we go further.\" [What the Numbers Say]", bundle: 'pro' },
         { q: "You are about to describe something you only half remember.", a: "\"I'd be making up the details. Here's one I did watch happen, start to finish.\" [Seen It Happen]", bundle: 'pro' },
         { q: "The invented case is doing work a real one should do.", a: "\"That's hypothetical. The real version is my old team, and it went the other way.\" [Seen It Happen]", bundle: 'pro' },
         { q: "You want a case that neither of you has to take on trust.", a: "\"Take the obvious one — every second person knows someone it didn't work for.\" [The Known Exception]", bundle: 'pro' },
@@ -3578,7 +3578,7 @@ const challengesCollections = {
         { q: "Your best example would obviously point at a person present.", a: "\"I've got one, and it's too close to home to be useful. There's a public one that's better.\" [The Known Exception]", bundle: 'pro' },
         { q: "The generalisation has landed on someone in the room.", a: "\"I don't think this is really a general question, is it. Should we say the actual thing?\" [name it lightly]", bundle: 'pro' },
         { q: "Your counter-example would obviously be about the person sitting there.", a: "\"I'll keep mine out of it. Say someone had a reason we don't know about — does the rule still hold?\" [Where It Would Break]", bundle: 'pro' },
-        { q: "The room has gone quiet in that specific way.", a: "\"Let's move this off individuals. In general I'd agree with you, and there are edges.\" [name it lightly]", bundle: 'pro' },
+        { q: "The room has gone quiet in that specific way.", a: "\"Let's move this off individuals. In general I'd agree with you, and there are edges.\" [The Smaller Claim]", bundle: 'pro' },
         { q: "The safest counter-example is your own life.", a: "\"I'll use myself — I did exactly that, and it didn't go how you'd expect.\" [Your Own Exception]", bundle: 'pro' },
         { q: "You want a case with nobody in the room attached to it.", a: "\"There's the famous one everybody quotes. Same argument, no one here in it.\" [The Known Exception]", bundle: 'pro' },
         { q: "The generalisation would be easier to test with a figure than a person.", a: "\"Do we actually know how common that is? I'd rather argue with a number than a person.\" [What the Numbers Say]", bundle: 'pro' },

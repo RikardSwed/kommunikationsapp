@@ -1456,7 +1456,7 @@ const mindsetCollections = {
       name: "Genuine Beats Perfect",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
-      description: "Focus on being genuine rather than perfect. Your tone and sincerity matter more than flawless words, and most unspoken praise is unspoken because the person was still composing it.\n\nA slightly clumsy true sentence lands. A polished one that sounds prepared does not.\n\nMindset: say the imperfect version now rather than the perfect version never.",
+      description: "Focus on being genuine rather than perfect. Your tone and sincerity matter more than flawless words, and most unspoken praise is unspoken because the person was still composing it.\n\nThe three thoughts that cause the trouble:\n1. \"I'll say it properly later\" — later is where praise goes to die.\n2. \"It'll sound forced\" — a clumsy true sentence lands; a polished one that sounds prepared does not.\n3. \"They already know\" — they do not, and it costs nothing to say.\n\nMindset: say the imperfect version now rather than the perfect version never.",
       inputs: [
         { q: "I'll say it once I've worked out how to put it.", a: "You won't. Say the rough version while it's still true of today.", bundle: 'pro' },
         { q: "It'll come out wrong.", a: "Then it'll come out honest. That's what people actually hear.", bundle: 'pro' },

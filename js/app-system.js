@@ -3930,6 +3930,22 @@ if (resetFirstRunBtn) resetFirstRunBtn.addEventListener('click', () => {
 // twice; the developer list is simply the unfiltered one.
 const WHATS_NEW = [
   {
+    version: 'v1.28.52', date: 'September 2026', title: 'Memorize is finished in every Pro pack',
+    items: [
+      'Every Pro and freemium pack now has a Memorize deck for each of its strategies <em>and</em> one for each of the other five modes — Collections, Sequences, Challenges and Mindset — so the theory behind a collection or a challenge can be learned rather than only met in practice.',
+      'The strategy decks went from six cards to eight, and the extra two in each are free.',
+      '<strong>921 new cards in 20 packs</strong>, the last of them Giving Counter Examples, Discussing, Setup Question and Responding to Passive Aggression.',
+    ],
+  },
+  {
+    version: 'v1.28.52', date: 'September 2026', title: 'All six modes complete across the core library', audience: 'dev',
+    items: [
+      'Single Strategy, Collections, Sequences, Challenges, Mindset and Memorize are now at full volume in all 29 Pro and freemium packs. The volume sweep that began at v1.28.45 is closed: <strong>Collections 68 cards, Sequences 60 scenarios, Mindset 3 decks, Memorize 921 cards and 80 new mode decks.</strong>',
+      'What remains is the read-through pass, not volume: descriptions against the templates, deck names, and whether the strategy boundaries hold. Most of the outstanding <strong>check-pack</strong> errors live there — Challenges labels that name the move rather than the strategy (Describe Things, Explain Things, Praise and Encouragement, Disagreeing, Giving Counter Examples, Discussing), and §9b-3 stage-direction backs in Single Strategy.',
+      'Known deviations, flagged rather than changed: <strong>How to Interrupt / Get Out Cleanly</strong> is split 3 free + 5 pro instead of 5 + 3; <strong>Giving Counter Examples / Core Idea</strong> is 4 + 4; <strong>Broken Record</strong> has 14 cards per Single deck against a spec of 8; <strong>First Strategies</strong> has its Collections cards on free.',
+    ],
+  },
+  {
     version: 'v1.28.43', date: 'September 2026', title: 'Sequences say which move you just made',
     items: [
       'Every step in a Sequence now names the strategy it uses, and the name appears on the back of the card in brackets once you have answered — so the front is only the situation, and you find out afterwards what the move was called.',
@@ -4248,6 +4264,93 @@ const WHATS_NEW = [
   },
 ];
 
+// ── WHATS_NEW_USER ───────────────────────────────────────────────────────────
+// v1.28.55, Rikards beslut. Den användarvända listan är INTE ett filtrerat
+// WHATS_NEW längre — den är en egen, kurerad lista, och de två redigeras efter
+// helt olika regler.
+//
+//   WHATS_NEW      — utvecklarloggen. Varje version, varje fynd, all detalj.
+//                    Syns bara i developer settings. Rör den som förut.
+//   WHATS_NEW_USER — vad användaren ser. Nya funktioner som är värda att bli
+//                    glad över, sammanfattade över längre tid.
+//
+// Redigeringsregler för den här listan, i Rikards ord: *"kort, imponerande och
+// enkelt att följa"*. Alltså:
+//
+//   • En post per TEMA eller PERIOD, inte per version. `version` utelämnas när
+//     posten spänner över flera — då visas bara månaden.
+//   • Högst tre punkter per post, och varje punkt är en funktion man kan
+//     använda, inte en ändring som gjorts.
+//   • Förbättringar buntas allmänt ("pack improvements"), aldrig uppräknade.
+//   • Inga erkännanden av hur något var trasigt förut, inga siffror på hur
+//     mycket som var fel, inga varningar om vad som går förlorat.
+//   • Lägg bara till när något nytt är värt att öppna appen för. De flesta
+//     versioner ska ALDRIG stå här.
+const WHATS_NEW_USER = [
+  {
+    date: 'September 2026', title: 'Six ways to train, in every Pro pack',
+    items: [
+      'Single Strategy, Collections, Sequences, Challenges, Mindset and Memorize are now filled out in full across every Pro and freemium pack — whichever mode you reach for, the material is there.',
+      '<strong>Memorize</strong> has grown the most: a deck for every strategy, and one for each of the other modes, so the thinking behind a collection or a challenge is something you can learn rather than only run into.',
+      'Pack improvements throughout, including new strategies in the packs whose material called for them.',
+    ],
+  },
+  {
+    date: 'September 2026', title: 'Every card tells you what the move was',
+    items: [
+      'Each card now carries two short lines: what the move is for, and what your answer should sound like.',
+      'In <strong>Sequences</strong>, the back of a card names the strategy you just used, and the scenario card lists the moves in order before you start.',
+      'Strategy names across the library are short enough to carry in your head — <em>Behind the Question</em> rather than a sentence describing it.',
+    ],
+  },
+  {
+    version: 'v1.27.50', date: 'August 2026', title: 'Assertive Communication, in two parts',
+    items: [
+      '<strong>Assertive Communication</strong>, free. The four moves Manuel J. Smith taught for the moment somebody is criticising, pressuring or guilt-tripping you: Broken Record, Fogging, Negative Assertion and Negative Inquiry.',
+      '<strong>Part 2 — Social &amp; Equal Connections</strong>, in the Extended store. Catching the details people drop without being asked, saying what you actually feel, and declaring a want with no excuse attached.',
+      'Part 1 is what to do when it is coming at you. Part 2 is what to do first.',
+    ],
+  },
+  {
+    date: 'August 2026', title: 'A much bigger library',
+    items: [
+      '38 new packs across every topic — Saying No, Making Requests, Giving Criticism, Deep Questions, Persuasion, Storytelling and thirty more.',
+      'Free to train with: <strong>First Strategies</strong>, with every mode unlocked so you can see what the others are, plus <strong>Show Understanding</strong> and <strong>Starting Conversations — Pt. 1</strong>.',
+      'The Extended store is open to browse: read what each pack contains and what it will cost.',
+    ],
+  },
+  {
+    date: 'August 2026', title: 'Programmes to work through',
+    items: [
+      'Six programmes: <strong>Conversation Foundations</strong>, free through Part 2, alongside Say It Well, Warmth &amp; Connection, Opening a Conversation, Persuasion &amp; Negotiation and Humour.',
+      'Packs you earn by passing a checkpoint stay yours — they appear in the Library, Topics and search all at once.',
+      '<strong>Difficult Conversations</strong> is available as a programme of its own.',
+    ],
+  },
+  {
+    date: 'August 2026', title: 'Finding things, keeping notes, unlocking packs',
+    items: [
+      'Search is ranked and tells you why each result turned up — and it covers topics, so “repair” finds the Apologizing packs even where the word is on no card.',
+      'Keep a note on a pack or a programme, not just on a card. Notes come along in the export.',
+      'Settings has <strong>Have an access code?</strong> — one kind raises your level for a period, the other opens named packs. Several can run at once, each with its own end date.',
+    ],
+  },
+  {
+    date: 'July 2026', title: 'Progress you can look back at',
+    items: [
+      'A calendar over a week, two weeks or a month, shaded by how much you trained. Tap any day, week or the title to see what you practised.',
+      'Or switch to bars for minutes per day.',
+    ],
+  },
+  {
+    date: 'July 2026', title: 'Every pack opens with an introduction',
+    items: [
+      'A short introduction to a pack’s strategies before you start. Tap the pack name above the training modes to read it again.',
+      'The Recommended row on the home screen updates itself from the topics you have actually been training.',
+    ],
+  },
+];
+
 (function initWhatsNew() {
   const btn     = document.getElementById('whatsNewBtn');
   const overlay = document.getElementById('whatsNewOverlay');
@@ -4259,7 +4362,11 @@ const WHATS_NEW = [
   // v1.26.97 \u2014 rendered per opening rather than once, because the same
   // overlay now shows two different lists. 'dev' shows everything.
   function render(mode) {
-    const entries = mode === 'dev' ? WHATS_NEW : WHATS_NEW.filter(e => e.audience !== 'dev');
+    // v1.28.55: två listor, inte en filtrerad. Dev-läget visar hela
+    // utvecklarloggen som förut; användarläget visar den kurerade listan.
+    // `audience: 'dev'` har därmed ingen effekt längre — taggen står kvar i
+    // WHATS_NEW eftersom den fortfarande märker ut posterna i dev-vyn.
+    const entries = mode === 'dev' ? WHATS_NEW : WHATS_NEW_USER;
     if (title) title.innerHTML = mode === 'dev' ? 'What&rsquo;s new \u2014 all entries' : 'What&rsquo;s new';
     body.innerHTML = entries.map(e =>
       '<div class="whatsnew-entry">'

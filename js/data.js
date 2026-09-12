@@ -10207,7 +10207,7 @@ const collectionsModeData = {
       name: "Following the Guide",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "The five steps used in order: behaviour, impact, appreciation, encouragement, support. Not every occasion needs all five, but the order works because each step earns the next.\n\nSkipping straight to encouragement is the commonest failure. \"Keep it up!\" lands on nothing if you have not said what \"it\" is.\n\nMindset: name the thing before you cheer for it.",
+      description: "The five steps used in order: behaviour, impact, appreciation, encouragement, support. Not every occasion needs all five, but the order works because each step earns the next.\n\nThe five, in order:\n1. Name the Positive Action — what they actually did. \"You rewrote the opening.\"\n2. Highlight the Impact — what it changed. \"The meeting ended early.\"\n3. Express Appreciation — what it meant to you. \"That saved me an afternoon.\"\n4. Keep Going — the part worth repeating. \"Do that again next time.\"\n5. Offer Support — something concrete. \"Send me the next one on Wednesday.\"\n\nSkipping straight to encouragement is the commonest failure. \"Keep it up!\" lands on nothing if you have not said what \"it\" is.\n\nMindset: name the thing before you cheer for it.",
       inputs: [
         { q: "A classmate has finished a project they struggled with.", a: "\"You rewrote the middle section three times until it worked.\" [Name the Positive Action]", bundle: 'pro' },
         { q: "You want to show why that mattered.", a: "\"That's the part that makes the whole thing make sense now.\" [Highlight the Impact]", bundle: 'pro' },
