@@ -3930,6 +3930,14 @@ if (resetFirstRunBtn) resetFirstRunBtn.addEventListener('click', () => {
 // twice; the developer list is simply the unfiltered one.
 const WHATS_NEW = [
   {
+    version: 'v1.28.61', date: 'September 2026', title: 'The inherited back-guide — a test in three decks', audience: 'dev',
+    items: [
+      'The back-guide in Collections and Challenges is the mode default (<em>One way it could sound</em>) in all 233 core decks, while the card already names its strategy in brackets. The idea under test: on the back the strategy is known, so the card can carry that strategy\'s own Single Strategy guide instead. <strong>Three decks now do</strong> — Discussing / It Got Personal (single-strategy, the easy case), First Strategies / Read and Reply (four strategies, all guides fit) and Discussing / Two Monologues (mixed, and it contains the known misfits).',
+      'No engine work was needed. <code>mode-engine.js</code> has resolved <code>(card.guideBack || deck.guideBack)</code> in every mode since v1.26.32, in training, hands-free and the editor alike; only sequences had used it. Per-card guides are therefore authorable today in all six modes.',
+      'Three Single Strategy guides were rewritten first, because the test showed them too narrow for <em>their own</em> decks: <strong>Opening Statement</strong> <em>A remark about the room</em> → <em>A comment on the situation</em> (the deck\'s description names three kinds of statement and only one is the room); <strong>Ask What They Mean</strong> <em>A question about one word</em> → <em>A question that narrows it</em> (one of its eight cards was about a word); <strong>Let Them Finish</strong> <em>Silence, until they stop</em> → <em>Silence, or handing it back</em> (four of eight are spoken lines). The six sequence steps that had copied the old wording follow.',
+    ],
+  },
+  {
     version: 'v1.28.52', date: 'September 2026', title: 'Memorize is finished in every Pro pack',
     items: [
       'Every Pro and freemium pack now has a Memorize deck for each of its strategies <em>and</em> one for each of the other five modes — Collections, Sequences, Challenges and Mindset — so the theory behind a collection or a challenge can be learned rather than only met in practice.',

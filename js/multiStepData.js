@@ -5598,7 +5598,7 @@ const multiStepCollections = {
           situation: "Someone says the whole system is broken.",
           steps: [
             { front: "Step 1 · Notice the vague part — \"the whole system is broken.\"", back: "\"Hang on — broken could mean a few different things there.\"", guideFront: "Name the vague word when...", guideBack: "The ambiguity, said out loud" },
-            { front: "Step 2 · Ask What They Mean — the word could cover several different things.", back: "\"Which bit — the booking, or what happens after?\"", guideFront: "Ask before you answer it when...", guideBack: "A question about one word" },
+            { front: "Step 2 · Ask What They Mean — the word could cover several different things.", back: "\"Which bit — the booking, or what happens after?\"", guideFront: "Ask before you answer it when...", guideBack: "A question that narrows it" },
             { front: "Step 3 · Your Own View — they name the part they actually meant.", back: "\"The booking I'd defend. What happens after is genuinely a mess, agreed.\"", guideFront: "Claim it as your own when...", guideBack: "An opinion, plainly owned" },
           ]
         },
@@ -5607,7 +5607,7 @@ const multiStepCollections = {
           situation: "A friend says nobody should work from home.",
           steps: [
             { front: "Step 1 · Notice the vague part — \"nobody should work from home.\"", back: "\"Nobody is doing a lot of work in that sentence.\"", guideFront: "Name the vague word when...", guideBack: "The ambiguity, said out loud" },
-            { front: "Step 2 · Ask What They Mean — the claim could be a rule or a local complaint.", back: "\"As a rule everywhere, or in your place specifically?\"", guideFront: "Ask before you answer it when...", guideBack: "A question about one word" },
+            { front: "Step 2 · Ask What They Mean — the claim could be a rule or a local complaint.", back: "\"As a rule everywhere, or in your place specifically?\"", guideFront: "Ask before you answer it when...", guideBack: "A question that narrows it" },
             { front: "Step 3 · Your Own View — they say they mean their own workplace.", back: "\"In your place I'd probably agree. As a rule I'd push back hard.\"", guideFront: "Claim it as your own when...", guideBack: "An opinion, plainly owned" },
           ]
         },
@@ -5616,7 +5616,7 @@ const multiStepCollections = {
           situation: "A colleague says the new process is a waste of time.",
           steps: [
             { front: "Step 1 · Notice the vague part — \"the new process is a waste of time.\"", back: "\"The new process is about four different things, though.\"", guideFront: "Name the vague word when...", guideBack: "The ambiguity, said out loud" },
-            { front: "Step 2 · Ask What They Mean — the phrase could cover several steps.", back: "\"Which bit — the form, or the sign-off?\"", guideFront: "Ask before you answer it when...", guideBack: "A question about one word" },
+            { front: "Step 2 · Ask What They Mean — the phrase could cover several steps.", back: "\"Which bit — the form, or the sign-off?\"", guideFront: "Ask before you answer it when...", guideBack: "A question that narrows it" },
             { front: "Step 3 · Your Own View — they name the part they actually meant.", back: "\"The sign-off I'd defend. The form I'd bin tomorrow, and I'd say so in writing.\"", guideFront: "Claim it as your own when...", guideBack: "An opinion, plainly owned" },
           ]
         },
@@ -6808,7 +6808,7 @@ const multiStepCollections = {
           bundle: 'free',
           situation: "You are on a platform with one other person, both looking at a board that has said \"delayed\" for fifteen minutes.",
           steps: [
-            { front: "Opening Statement — the board changes to \"delayed\" again.", back: "\"That's the second time it's done that.\"", guideFront: "Start with a statement when...", guideBack: "A remark about the room" },
+            { front: "Opening Statement — the board changes to \"delayed\" again.", back: "\"That's the second time it's done that.\"", guideFront: "Start with a statement when...", guideBack: "A comment on the situation" },
             { front: "Follow the Thread — they say, \"I've got a connection in Gothenburg I'm going to miss.\"", back: "\"Gothenburg — is it work, or are you escaping?\"", guideFront: "Pick one detail and ask when...", guideBack: "A question built on one detail" },
             { front: "Answer With a Hook — they say, \"Work, sadly. You?\"", back: "\"Home, luckily. I've been at a course all week that I understood about half of.\"", guideFront: "Answer and add something to ask about when...", guideBack: "An answer that invites a question" },
             { front: "Follow the Thread — they say, \"What kind of course?\"", back: "\"Communication, of all things. You said you do this run a lot — is it always like this?\"", guideFront: "Pick one detail and ask when...", guideBack: "A question built on one detail" },
@@ -6818,7 +6818,7 @@ const multiStepCollections = {
           bundle: 'free',
           situation: "You are holding a coffee at the edge of a room where everyone else seems to have arrived together.",
           steps: [
-            { front: "Opening Statement — someone stops beside you at the same table.", back: "\"There is a startling amount of cake for a Tuesday.\"", guideFront: "Start with a statement when...", guideBack: "A remark about the room" },
+            { front: "Opening Statement — someone stops beside you at the same table.", back: "\"There is a startling amount of cake for a Tuesday.\"", guideFront: "Start with a statement when...", guideBack: "A comment on the situation" },
             { front: "Follow the Thread — they say, \"They always overdo it at these. I've been to four.\"", back: "\"Four — so you actually know what happens after lunch?\"", guideFront: "Pick one detail and ask when...", guideBack: "A question built on one detail" },
             { front: "Answer With a Hook — they say, \"Sadly yes. Is this your first?\"", back: "\"First one. I said yes in March, when March-me had no idea how busy I'd be.\"", guideFront: "Answer and add something to ask about when...", guideBack: "An answer that invites a question" },
             { front: "Follow the Thread — they say, \"That's how they get you.\"", back: "\"You said you'd done four, though. What made you keep coming back?\"", guideFront: "Pick one detail and ask when...", guideBack: "A question built on one detail" },
@@ -6828,7 +6828,7 @@ const multiStepCollections = {
           bundle: 'free',
           situation: "You are standing among parents you half-recognise, none of whom you have ever spoken to, and the doors are late.",
           steps: [
-            { front: "Opening Statement — the doors have been shut for five minutes past the hour.", back: "\"They have never once opened these on time.\"", guideFront: "Start with a statement when...", guideBack: "A remark about the room" },
+            { front: "Opening Statement — the doors have been shut for five minutes past the hour.", back: "\"They have never once opened these on time.\"", guideFront: "Start with a statement when...", guideBack: "A comment on the situation" },
             { front: "Follow the Thread — they say, \"Every day since September. I've stopped rushing.\"", back: "\"Since September — is this your first year here as well?\"", guideFront: "Pick one detail and ask when...", guideBack: "A question built on one detail" },
             { front: "Answer With a Hook — they say, \"Third. You?\"", back: "\"First. I've spent the whole term working out which gate is which.\"", guideFront: "Answer and add something to ask about when...", guideBack: "An answer that invites a question" },
             { front: "Follow the Thread — they say, \"It took me about a year.\"", back: "\"A year? Please tell me there's a trick to it.\"", guideFront: "Pick one detail and ask when...", guideBack: "A question built on one detail" },

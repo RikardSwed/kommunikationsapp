@@ -5574,7 +5574,7 @@ const collections = {
     {
       name: "Ask What They Mean",
       guideFront: "Ask before you answer it when...",
-      guideBack: "A question about one word",
+      guideBack: "A question that narrows it",
       description: "Ask a clarifying question before you respond to something ambiguous. \"When you say homework is pointless — all of it, or the busywork?\" It takes six words and it prevents most of the wasted arguing in any discussion. Example: they say the system is broken; you ask which part.\n\nIt works because general words hide specific disagreements. Two people can use the same sentence and mean completely different things by it, and neither of them finds out until ten minutes have gone.\n\nAsk it as a question, not as a trap. \"Do you mean all subjects, or just some?\" is curiosity; \"so you're saying ALL homework is pointless?\" is a cross-examination wearing the same words.\n\nTypical phrases: \"When you say X, do you mean…?\", \"Which part specifically?\", \"Say a bit more about…\", \"Can you give me the version with an example in it?\"\n\nThree kinds of clarifying question:\n\n1. Narrow the word — the most useful. \"All of it, or the pointless parts?\"\n\n2. Ask for the specific case — turns an abstraction into something discussable. \"Can you give me an example of when that happened?\"\n\n3. Check the strength — people rarely mean the extreme version. \"Is that a strong view or a lean?\"\n\nMindset: ask before you argue. Half the disagreements that get properly heated are two people defending things the other never said.",
       inputs: [
         { q: "They said the system is broken.", a: "\"Which bit specifically? Booking, or what happens after?\"", bundle: 'free' },
@@ -5590,7 +5590,7 @@ const collections = {
     {
       name: "Let Them Finish",
       guideFront: "Wait for the full stop when...",
-      guideBack: "Silence, until they stop",
+      guideBack: "Silence, or handing it back",
       description: "Do not speak until they have stopped. Not as good manners, but because the last quarter of what someone says is where the qualification lives — the \"although\", the \"except when\", the bit that would have made your interruption unnecessary. Example: you are certain you disagree, and the sentence you were waiting to argue with ends with \"…though that's probably only true at scale\".\n\nIt works because interruption costs more than it saves. Every interrupted point gets made again, usually at greater length, and the person making it now has two things to say — the original point and the fact that you cut in.\n\nThe hard part is not silence, it is what happens in your head during the silence. If you are composing your reply while they talk, you are not listening — you are queueing.\n\nTypical phrases: nothing. Or: \"Sorry, go on.\", \"You weren't finished.\", \"Say the rest first.\"\n\nThree parts:\n\n1. Wait for the end of the sentence — not the end of the breath.\n\n2. Then wait a beat longer — the qualification usually arrives here.\n\n3. If you cut in anyway, hand it back — \"sorry, finish yours\" costs nothing and repairs it completely.\n\nMindset: listen to hear, not to reply. Whatever you were going to say will still be there in eight seconds, and it will probably be better.",
       inputs: [
         { q: "You are certain you disagree and they are still talking.", a: "(wait — the qualification usually comes in the last sentence)", bundle: 'free' },
@@ -7548,7 +7548,7 @@ const collections = {
     {
       name: "Opening Statement",
       guideFront: "Start with a statement when...",
-      guideBack: "A remark about the room",
+      guideBack: "A comment on the situation",
       description: "Say something instead of asking something. \"That queue is not moving.\" \"I have no idea what half of these are.\"\n\nIt works because a question hands the other person a job. They have to think of an answer, and if they are shy or tired or busy, the easiest answer is a short one — which ends the conversation you just started. A statement hands them material instead. They can agree, disagree, add to it, or laugh, and any of those is a conversation.\n\nIt also lets them out politely. Someone who does not want to talk can smile and say nothing, and nobody has been rude. An unanswered question is awkward; an unanswered remark is not.\n\nTypical phrases: \"This place is busier than I expected.\", \"I've been staring at this menu for five minutes.\", \"That's a serious amount of cake for one meeting.\"\n\nThree kinds of statement, and they are the ones you will use most:\n\n1. Something you are both looking at — the safest, because it is true for both of you. \"That painting is enormous.\"\n\n2. Something about you, right now — gives them something personal without asking for anything. \"I've come to the wrong building twice already.\"\n\n3. A small opinion — invites the most, risks the most. \"I think the old one was better.\"\n\nMindset: you are not performing. You are putting one true, ordinary sentence on the table for someone else to pick up.",
       inputs: [
         { q: "You are standing next to someone in a long queue.", a: "\"This queue has not moved in five minutes.\"", bundle: 'free' },
@@ -12405,14 +12405,14 @@ const collectionsModeData = {
       guideBack: "One way it could sound",
       description: "**Follow the Thread**, **Say It Back**, **A Friendly No** and **Answer With a Hook** — the four for when someone has already spoken and it is your turn.\n\n• **Follow the Thread** — they told you something\n• **Say It Back** — they told you something complicated or upsetting\n• **A Friendly No** — they asked for something you cannot do\n• **Answer With a Hook** — they asked about you\n\n**Which one:** what did they just do? That single question decides nearly every card in this deck, and the four answers do not overlap.\n\n**Where it goes wrong:** following the thread on something that needed saying back first. Picking up a detail from a tangled story moves the conversation on before the person has been understood — and they will bring it back.\n\nMindset: only one of the four is about you. That is why a conversation built on these rarely feels like an interview.",
       inputs: [
-        { q: "They mention they got back from Malmö on Sunday.", a: "\"Malmö — what took you down there?\" [Follow the Thread]", bundle: 'free' },
-        { q: "A colleague explains a problem with several moving parts.", a: "\"So the deadline moved and nobody told you until today.\" [Say It Back]", bundle: 'free' },
-        { q: "Someone asks how your week has been.", a: "\"Good — long, though. I've spent it arguing with a printer.\" [Answer With a Hook]", bundle: 'free' },
-        { q: "A friend asks you to help with something you cannot do.", a: "\"I can't this time, sorry. Thanks for asking, though.\" [A Friendly No]", bundle: 'free' },
-        { q: "A friend is upset and the story is tangled.", a: "\"Let me check I've got this — she said yes, then changed her mind?\" [Say It Back]", bundle: 'free' },
-        { q: "Someone asks what you do.", a: "\"I teach English. Mostly to teenagers, which is as loud as it sounds.\" [Answer With a Hook]", bundle: 'free' },
-        { q: "They said something in passing and moved on.", a: "\"Hang on, go back — you did what on Saturday?\" [Follow the Thread]", bundle: 'free' },
-        { q: "A neighbour asks if you can take a delivery in every day this week.", a: "\"I can't do every day, sorry — thanks for asking, though.\" [A Friendly No]", bundle: 'free' },
+        { q: "They mention they got back from Malmö on Sunday.", a: "\"Malmö — what took you down there?\" [Follow the Thread]", guideBack: "A question built on one detail", bundle: 'free' },
+        { q: "A colleague explains a problem with several moving parts.", a: "\"So the deadline moved and nobody told you until today.\" [Say It Back]", guideBack: "Their point, in your words", bundle: 'free' },
+        { q: "Someone asks how your week has been.", a: "\"Good — long, though. I've spent it arguing with a printer.\" [Answer With a Hook]", guideBack: "An answer that invites a question", bundle: 'free' },
+        { q: "A friend asks you to help with something you cannot do.", a: "\"I can't this time, sorry. Thanks for asking, though.\" [A Friendly No]", guideBack: "A clear no, warmly said", bundle: 'free' },
+        { q: "A friend is upset and the story is tangled.", a: "\"Let me check I've got this — she said yes, then changed her mind?\" [Say It Back]", guideBack: "Their point, in your words", bundle: 'free' },
+        { q: "Someone asks what you do.", a: "\"I teach English. Mostly to teenagers, which is as loud as it sounds.\" [Answer With a Hook]", guideBack: "An answer that invites a question", bundle: 'free' },
+        { q: "They said something in passing and moved on.", a: "\"Hang on, go back — you did what on Saturday?\" [Follow the Thread]", guideBack: "A question built on one detail", bundle: 'free' },
+        { q: "A neighbour asks if you can take a delivery in every day this week.", a: "\"I can't do every day, sorry — thanks for asking, though.\" [A Friendly No]", guideBack: "A clear no, warmly said", bundle: 'free' },
       ]
     },
     {
