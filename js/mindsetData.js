@@ -1118,7 +1118,7 @@ const mindsetCollections = {
       name: "Detail Is Kindness",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
-      description: "Vague descriptions feel efficient — you are not taking up much of someone's time. In practice they cost the listener far more, because they have to ask three follow-up questions or go and look at the wrong thing.\n\nOne good detail up front saves both of you the round trip.\n\nMindset: being specific is the considerate option, not the fussy one.",
+      description: "Vague descriptions feel efficient — you are not taking up much of someone's time. In practice they cost the listener far more, because they have to ask three follow-up questions or go and look at the wrong thing.\n\nWhere it shows up:\n1. You round \"dark green with a dent in the lid\" down to \"a green one\".\n2. You leave the size out because you are not sure of the number.\n3. You stop early so as not to go on about it.\n\nMindset: being specific is the considerate option, not the fussy one. One good detail up front saves both of you the round trip.",
       inputs: [
         { q: "They don't need all that detail.", a: "They need one detail. Choose the right one and it's shorter, not longer.", bundle: 'pro' },
         { q: "I'm being fussy describing it this precisely.", a: "You're saving them from finding the wrong thing.", bundle: 'pro' },
@@ -1134,7 +1134,7 @@ const mindsetCollections = {
       name: "Choose, Do Not List",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
-      description: "With ten possible categories there is a pull to run through all of them, as if completeness were the goal. It is not. The goal is that the listener ends up with a picture, and too many details blur it.\n\nTwo or three well-chosen categories beat ten recited ones every time.\n\nMindset: pick the details this person needs, and leave the rest out.",
+      description: "With six categories to hand there is a pull to run through all of them, as if completeness were the goal. It is not. The goal is that the listener ends up with a picture, and too many details blur it.\n\nWhere it goes wrong:\n1. You give every category in order rather than the two that matter.\n2. You add a detail because you have it, not because they need it.\n3. You keep describing after they have already found the thing.\n\nMindset: pick the details this person needs, and leave the rest out. Two or three well-chosen categories beat six recited ones every time.",
       inputs: [
         { q: "If I leave something out they might miss it.", a: "If you put everything in, they'll miss all of it.", bundle: 'pro' },
         { q: "I should be thorough.", a: "Be useful. Thorough and useful are different targets.", bundle: 'pro' },
@@ -1176,6 +1176,20 @@ const mindsetCollections = {
         { q: "Numbers sound more precise, so I should use those.", a: "Only if you know them. An unfamiliar number is harder to picture than a comparison.", bundle: 'pro' },
         { q: "They asked for the dimensions specifically.", a: "Then give a range. \"Somewhere between a book and a laptop\" is a dimension.", bundle: 'pro' },
         { q: "I said \"medium-sized\" and it meant nothing.", a: "Medium compared to what? Add the second half and it starts working.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "A Comparison Is Cheating",
+      description: "Saying \"it's like a garlic press, but bigger\" feels like a shortcut — as though you have handed over somebody else's description instead of writing your own, and a proper answer would name the thing's own size, colour and material.\n\nBut a comparison is not a substitute for describing. It is the one move that works when the listener has nothing to build with. Five precise details about an object nobody has ever seen still leave them with nothing; one familiar object and one change leaves them with a picture.\n\nMindset: borrow the picture. It is not lazy, it is the fastest route into somebody else's head.",
+      inputs: [
+        { q: "You have never seen the thing they are describing and they keep listing details.", a: "\"Give me something to hang it on. What's it closest to?\"", bundle: 'pro' },
+        { q: "You catch yourself avoiding a comparison because it feels like cheating.", a: "\"It's basically a wheelbarrow with a lid. That's the quickest way to say it.\"", bundle: 'pro' },
+        { q: "You have given three exact details and they still look blank.", a: "\"Let me do that differently — think of a suitcase, but soft and with wheels at one end.\"", bundle: 'pro' },
+        { q: "Someone apologises for comparing their town to yours.", a: "\"No, that's helpful. I know exactly what you mean now.\"", bundle: 'pro' },
+        { q: "You are worried the comparison is not quite accurate.", a: "\"It's roughly a mandolin. Not exactly, but close enough to picture.\"", bundle: 'pro' },
+        { q: "You want to describe a job to someone outside the field.", a: "\"It's like being a translator, except the two sides are both speaking English.\"", bundle: 'pro' },
+        { q: "You are describing a place and reaching for adjectives.", a: "\"Think of your gran's front room, but four times the size.\"", bundle: 'pro' },
+        { q: "They say \"I still can't picture it\" after your third attempt.", a: "\"What's the nearest thing you have seen? I'll start from there.\"", bundle: 'pro' },
       ]
     },
   ],

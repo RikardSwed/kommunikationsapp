@@ -2193,7 +2193,7 @@ const multiStepCollections = {
       name: "Building It Up",
       guideFront: "What's happening, and the strategy to use",
       guideBack: "One way it could sound",
-      description: "Name first, then narrow with the details that matter most for this listener. Each answer should remove possibilities rather than simply add words.\n\nWatch what the listener does with each detail. If they ask a follow-up, that tells you exactly which category to reach for next.\n\nMindset: let their questions choose your order.",
+      description: "Name first, then narrow with the details that matter most for this listener. Steps: 1) Name and Main Details — what it is, plus one feature, 2) the category their follow-up asks for, 3) the one that settles it.\n\nThe shape of the whole thing:\n1. \"It's a rucksack — the green one with the yellow patch.\"\n2. \"About the size of a carry-on, taller than it is wide.\"\n3. \"It's the only one with a side pocket.\"\n\nWhy this order: each answer should remove possibilities rather than simply add words, and their follow-up question tells you exactly which category to reach for next.\n\nMindset: let their questions choose your order.",
       inputs: [
         {
           bundle: 'pro',
@@ -2231,7 +2231,7 @@ const multiStepCollections = {
       name: "When You Do Not Know the Word",
       guideFront: "What's happening, and the strategy to use",
       guideBack: "One way it could sound",
-      description: "Describing your way around a missing word is a real conversational skill and not a failure. Purpose usually gets you there fastest, then shape, then the nearest familiar object.\n\nThe move to avoid is stopping. A slightly clumsy description that lands is better than a pause waiting for a word that is not coming.\n\nMindset: talk around it. The word is not the point; being understood is.",
+      description: "Describing your way around a missing word is a real conversational skill and not a failure. Steps: 1) What It Is For — purpose gets you there fastest, 2) Size and Shape — then the form, 3) What It Is Like — then the nearest familiar thing.\n\nThe shape of the whole thing:\n1. \"I don't know the word. It's for getting a nail back out of wood.\"\n2. \"Almost — but the other end. The split end, the bit you pull with.\"\n3. \"Like a hammer, only the back of it does the work.\"\n\nWhy this order: purpose narrows the field faster than appearance, and a comparison closes the gap when the first two have not.\n\nMindset: talk around it. The word is not the point; being understood is, and the move to avoid is stopping.",
       inputs: [
         {
           bundle: 'pro',
@@ -2266,7 +2266,7 @@ const multiStepCollections = {
       name: "They Cannot Find It",
       guideFront: "What's happening, and the strategy to use",
       guideBack: "One way it could sound",
-      description: "When someone is actively searching, appearance matters less than position. Surroundings, height and neighbours do the work.\n\nEach step should move them physically. If your last sentence did not change where they are standing or looking, it was decoration.\n\nMindset: describe the route, not the object.",
+      description: "When someone is actively searching, appearance matters less than position. Steps: 1) Where You Find It — the room and the surface, 2) Where You Find It again, narrowed to the neighbours, 3) Name and Main Details — the detail that confirms it.\n\nThe shape of the whole thing:\n1. \"It's in the kitchen, on the shelf above the kettle.\"\n2. \"Second shelf, behind the tins.\"\n3. \"Dark green lid. You'll know it when you see it.\"\n\nWhy this order: each step should move them physically. If your last sentence did not change where they are standing or looking, it was decoration.\n\nMindset: describe the route, not the object.",
       inputs: [
         {
           bundle: 'pro',

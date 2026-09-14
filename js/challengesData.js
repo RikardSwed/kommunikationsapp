@@ -1087,7 +1087,7 @@ const challengesCollections = {
       name: "Too Vague",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "Every word is technically true and none of it helps. \"It's a bag. It's blue. It's normal sized.\" The listener is no closer than before you started.\n\nThe fix is one precise detail in place of three general ones — a comparison, a distinguishing feature, an exact colour.\n\nMindset: if your description could fit fifty objects, you have not described anything.",
+      description: "Every word is technically true and none of it helps. \"It's a bag. It's blue. It's normal sized.\" The listener is no closer than before you started.\n\nWhat it usually looks like:\n\n• Your description would fit fifty objects.\n• Three general words where one precise one would do.\n• They nod, and then ask the same question again.\n\nTwo ways through:\n1. Name and Main Details — one distinguishing feature beats three categories. \"The giveaway is the cracked corner on the lid.\"\n2. Material, Texture and Colour, made exact — \"dark blue, almost navy\" rather than \"blue\".\n\nMindset: if your description could fit fifty objects, you have not described anything.",
       inputs: [
         { q: "You have said \"it's blue\" and they still look blank.", a: "\"Dark blue, almost navy. Not a bright blue.\" [Material, Texture and Colour]", bundle: 'pro' },
         { q: "You said \"medium sized\" and they ask what that means.", a: "\"About the size of a loaf of bread.\" [Size and Shape]", bundle: 'pro' },
@@ -1103,7 +1103,7 @@ const challengesCollections = {
       name: "Too Much At Once",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "The opposite failure. You give all ten categories in one breath and the listener cannot hold any of it. Long descriptions do not build a picture; they overwrite it.\n\nGive two or three details, then stop and let them ask. Their question tells you which category is actually missing.\n\nMindset: a description is a conversation, not a paragraph.",
+      description: "The opposite failure. You give every category in one breath and the listener cannot hold any of it. Long descriptions do not build a picture; they overwrite it.\n\nWhat it usually looks like:\n\n• Four categories before they have said anything.\n• They have stopped tracking and are waiting for you to finish.\n• You are still talking after the thing has been identified.\n\nTwo ways through:\n1. Name and Main Details, cut to two — \"green rucksack, yellow patch. Start there.\"\n2. Give two details and stop. Their question tells you which category is actually missing.\n\nMindset: a description is a conversation, not a paragraph.",
       inputs: [
         { q: "You are six details in and they have gone quiet.", a: "\"I'm giving you too much. Green rucksack, yellow patch. Start there.\" [Name and Main Details]", bundle: 'pro' },
         { q: "They say \"hang on, go back\".", a: "\"Sure — which bit? I'll do that one properly.\" [Hand them the choice]", bundle: 'pro' },
@@ -1119,7 +1119,7 @@ const challengesCollections = {
       name: "You Cannot Remember the Detail",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "You are describing something and the crucial detail is simply gone. Guessing is tempting and actively harmful — a wrong colour sends someone looking for the wrong thing.\n\nSay what you are sure of, mark what you are not, and offer a different category instead.\n\nMindset: an honest gap is more useful than a confident guess.",
+      description: "You are describing something and the crucial detail is simply gone. Guessing is tempting and actively harmful — a wrong colour sends someone looking for the wrong thing.\n\nWhat it usually looks like:\n\n• You are about to say a colour you are not sure of.\n• The category you reached for first is the one you cannot fill.\n• \"I think it was green\" is on its way out of your mouth.\n\nTwo ways through:\n1. Swap category — say what you are sure of instead. \"No idea on the brand. I could tell you the shape though.\"\n2. Mark the uncertainty out loud — \"I think it was green, but don't rule out a blue one on my say-so.\"\n\nMindset: an honest gap is more useful than a confident guess.",
       inputs: [
         { q: "You cannot remember the colour.", a: "\"I genuinely can't remember the colour. But it's the only one with a side pocket.\" [Name and Main Details]", bundle: 'pro' },
         { q: "You are about to guess a size.", a: "\"I'd be guessing on size. It fits in a rucksack, that much I know.\" [Size and Shape]", bundle: 'pro' },
@@ -1135,11 +1135,11 @@ const challengesCollections = {
       name: "They Have Never Seen One",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "Some descriptions fail because the listener has no reference point at all — an unfamiliar object, a food they have never eaten, a place nothing like anywhere they have been.\n\nComparison is the way in. Find the nearest thing they do know and describe the difference from there.\n\nMindset: build from something they already have in their head.",
+      description: "Some descriptions fail because the listener has no reference point at all — an unfamiliar object, a food they have never eaten, a place nothing like anywhere they have been.\n\nWhat it usually looks like:\n\n• Every detail you give lands on nothing.\n• They can repeat your words back and still not picture it.\n• You are describing parts of a thing they cannot assemble.\n\nTwo ways through:\n1. What It Is Like — find the nearest thing they do know and describe the difference from there.\n2. What It Is For — purpose is recognisable even when appearance is not.\n\nMindset: build from something they already have in their head.",
       inputs: [
-        { q: "They have never seen the object at all.", a: "\"Think of a garlic press, but bigger and for potatoes.\" [Compare and adjust]", bundle: 'pro' },
-        { q: "They ask what a food tastes like.", a: "\"Somewhere between a pear and an apple, but softer than both.\" [Place it between two knowns]", bundle: 'pro' },
-        { q: "They cannot picture the place.", a: "\"Imagine a train station, but the roof is glass and it's full of market stalls.\" [Known thing, one change]", bundle: 'pro' },
+        { q: "They have never seen the object at all.", a: "\"Think of a garlic press, but bigger and for potatoes.\" [What It Is Like]", bundle: 'pro' },
+        { q: "They ask what a food tastes like.", a: "\"Somewhere between a pear and an apple, but softer than both.\" [What It Is Like]", bundle: 'pro' },
+        { q: "They cannot picture the place.", a: "\"Imagine a train station, but the roof is glass and it's full of market stalls.\" [What It Is Like]", bundle: 'pro' },
         { q: "Your comparison did not land either.", a: "\"Different angle — it's a tool for opening things that are stuck.\" [What It Is For]", bundle: 'pro' },
         { q: "They say \"I have no idea what you mean\".", a: "\"Fair enough. I'll show you a picture — it'll take two seconds.\" [Stop describing, show it]", bundle: 'pro' },
         { q: "They know a related thing but not this one.", a: "\"You know a colander? Same job, but for squeezing rather than draining.\" [What It Is For]", bundle: 'pro' },

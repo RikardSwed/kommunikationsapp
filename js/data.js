@@ -1783,6 +1783,22 @@ const collections = {
         { q: "Someone asks what you use an old object for now.", a: "\"It was a butter dish. These days it holds the keys by the door.\"", bundle: 'pro' },
       ]
     },
+    {
+      name: "What It Is Like",
+      guideFront: "Compare it to something they know when...",
+      guideBack: "A known thing, one change",
+      description: "Describe the thing by comparing it to something the other person already knows, and then say how it differs. It is the fastest way to put a picture in somebody's head, because you are borrowing one they already have.\n\nIt reaches the case the other five cannot: when they have never seen one. Size, colour and purpose all assume the listener can assemble a thing out of parts. A comparison hands them a finished thing and asks for one change.\n\nTypical phrases: \"Think of a…, but…\", \"It's like a… except…\", \"Somewhere between a… and a…\", \"Same idea as a…, only…\"\n\nFour ways to compare:\n\n1. The known thing, one change — the standard. \"Think of a garlic press, but bigger and for potatoes.\"\n\n2. Between two knowns — for anything that sits in a gap. \"Somewhere between a pear and an apple, but softer than both.\"\n\n3. The familiar setting, altered — for places rather than objects. \"Imagine a train station, but the roof is glass and it's full of market stalls.\"\n\n4. Same job, different shape — when the use is shared and the look is not. \"It does what a whisk does. It just looks nothing like one.\"\n\nPick something they have actually met. A comparison to a second thing they do not know leaves them with two unknowns instead of one.\n\nMindset: you are borrowing a picture they already have. One change is usually enough — a second change starts taking the picture apart again.",
+      inputs: [
+        { q: "You are describing a kitchen tool nobody in the room has seen.", a: "\"Think of a garlic press, but bigger and for potatoes.\"", bundle: 'free' },
+        { q: "Someone asks what an unfamiliar fruit is like.", a: "\"Somewhere between a pear and an apple, but softer than both.\"", bundle: 'free' },
+        { q: "You are describing a market hall to someone who has never been.", a: "\"Imagine a train station, but the roof is glass and it's full of market stalls.\"", bundle: 'free' },
+        { q: "A colleague asks what a tool on your desk does.", a: "\"It does what a whisk does. It just looks nothing like one.\"", bundle: 'free' },
+        { q: "You are describing an instrument they have not heard of.", a: "\"It's like a small guitar with four strings. Held the same way, tuned differently.\"", bundle: 'free' },
+        { q: "You compare it to something and they have not heard of that either.", a: "\"Forget that one. Closer to home — it's a wheelbarrow with a lid.\"", bundle: 'pro' },
+        { q: "You are describing a room in a house they have never visited.", a: "\"Same shape as your kitchen, only the window's at the far end and there's no door to the hall.\"", bundle: 'pro' },
+        { q: "Someone asks what a job involves.", a: "\"A bit like teaching, except the class changes every hour and nobody has to be there.\"", bundle: 'pro' },
+      ]
+    },
   ],
   explainthings: [
     {
@@ -9947,7 +9963,7 @@ const collectionsModeData = {
       name: "Recognising It",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "The moves that help someone pick the thing out: name and main details, size and shape, what it is for. These are the details that narrow the field.\n\nUse them when the listener is going to have to identify the object — in a shop, in a lost property office, in a crowded room.\n\nMindset: ask yourself what would make them say \"oh, that one\".",
+      description: "The three moves that get something identified fastest: what it is with one feature that marks it out, how big it is, and what it is used for. Purpose narrows the field faster than appearance does — someone who cannot picture your object at all will still recognise \"the thing you open jars with\".\n\nThe three options:\n1. Name and Main Details — the name, and what marks it out. \"The green rucksack with the yellow patch.\"\n2. Size and Shape — how big, and what form. \"About the size of a passport, and quite fat.\"\n3. What It Is For — the purpose, as a clue. \"It's the thing you use when the jar won't open.\"\n\nUse them when the listener has to find the thing, point at it, or pick it out of several — a lost item, a shop, a room with four similar objects in it.\n\nMindset: identification is a different job from imagination. Ask which one they need.",
       inputs: [
         { q: "You are describing a lost coat to someone about to go and look for it.", a: "\"Long navy wool coat, and one button is a different colour from the rest.\" [Name and Main Details]", bundle: 'pro' },
         { q: "They ask how big the missing case is.", a: "\"Cabin size — the kind that just fits in the overhead locker.\" [Size and Shape]", bundle: 'pro' },
@@ -9963,7 +9979,7 @@ const collectionsModeData = {
       name: "Painting the Picture",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "The moves that make something vivid rather than merely identifiable: size and shape, material, texture and colour, where you find it.\n\nUse them when the listener does not need to find the thing, only to imagine it — a story, a place you visited, something you are describing for the pleasure of it.\n\nMindset: one precise sensory detail does more than five general ones.",
+      description: "The moves that make something vivid rather than merely identifiable: size and shape, material, texture and colour, where you find it, and the comparison that hands them a finished picture to adjust.\n\nUse them when the listener does not need to find the thing, only to imagine it — a story, a place you visited, something you are describing for the pleasure of it.\n\nThe four options:\n1. Size and Shape — how big, and what form. \"About the size of a loaf of bread.\"\n2. Material, Texture and Colour — the feel of it. \"Dark blue, almost navy.\"\n3. Where You Find It — its usual spot, and its age. \"Original floors, everything a bit worn.\"\n4. What It Is Like — borrow a picture they have. \"Imagine a train station, but the roof is glass.\"\n\nMindset: one precise sensory detail does more than five general ones.",
       inputs: [
         { q: "A friend asks what the café you liked was like.", a: "\"Tiny. Four tables, and you had to turn sideways to get past the counter.\" [Size and Shape]", bundle: 'pro' },
         { q: "They ask what made it feel nice.", a: "\"Everything was dark wood, and worn smooth where people had leaned on it.\" [Material, Texture and Colour]", bundle: 'pro' },
@@ -9971,15 +9987,15 @@ const collectionsModeData = {
         { q: "You are describing the beach you walked on.", a: "\"Not sand — flat grey stones, and they clacked under your feet.\" [Material, Texture and Colour]", bundle: 'pro' },
         { q: "They ask how big the hotel room was.", a: "\"You could touch both walls standing in the middle. Genuinely.\" [Size and Shape]", bundle: 'pro' },
         { q: "You are describing a jacket you saw and want.", a: "\"Deep green, almost bottle green, and a soft matte fabric — not shiny at all.\" [Material, Texture and Colour]", bundle: 'pro' },
-        { q: "They ask what the old market hall felt like.", a: "\"Very old. Iron beams, glass roof, and everything a bit sooty.\" [Where You Find It]", bundle: 'pro' },
+        { q: "They ask what the old market hall felt like.", a: "\"Think of a train station, but the roof is glass and it's full of market stalls.\" [What It Is Like]", bundle: 'pro' },
         { q: "A friend asks where the restaurant you keep mentioning is.", a: "\"Top of the hill, past the school, with a blue door.\" [Where You Find It]", bundle: 'pro' },
       ]
     },
     {
-      name: "All Five",
+      name: "All Six",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "The full set. Any of the five moves could be the useful one, and the skill is choosing rather than listing.\n\nA good description is rarely all five. It is usually two or three, picked because they are the ones this listener needs.\n\nMindset: describing everything is the same as describing nothing. Choose.",
+      description: "The full set, and the choice is the skill. Any of the six moves could be the useful one, and the good description is rarely all of them — it is two or three, picked because they are the ones this listener needs.\n\nThe six, with the cue for each:\n1. Name and Main Details — they need to identify it. \"It's the round sort, not the flat sort.\"\n2. Size and Shape — they need to picture it. \"About the size of a loaf of bread.\"\n3. Material, Texture and Colour — the feel of it matters. \"Dark blue, almost navy.\"\n4. Where You Find It — position will find it faster. \"The one next to the door.\"\n5. What It Is For — purpose narrows faster than appearance. \"It's for opening jars.\"\n6. What It Is Like — they have never seen one. \"Think of a garlic press, but bigger.\"\n\nMindset: describing everything is the same as describing nothing. Choose.",
       inputs: [
         { q: "Someone is going to your flat to fetch something and asks what to look for.", a: "\"Small black notebook with an elastic band round it.\" [Name and Main Details]", bundle: 'pro' },
         { q: "They ask where in the flat it is.", a: "\"On the desk, under the lamp, probably with a pen on top of it.\" [Where You Find It]", bundle: 'pro' },
@@ -9987,7 +10003,7 @@ const collectionsModeData = {
         { q: "You are describing a plant to someone at a garden centre.", a: "\"It's for a north-facing window that gets almost no sun.\" [What It Is For]", bundle: 'pro' },
         { q: "They ask what the plant you already have looks like.", a: "\"Big waxy leaves, dark green, and they feel almost like plastic.\" [Material, Texture and Colour]", bundle: 'pro' },
         { q: "A friend asks about the flat you are viewing.", a: "\"Two rooms, and the second one is barely wider than the bed.\" [Size and Shape]", bundle: 'pro' },
-        { q: "They ask what state it was in.", a: "\"Old but looked after. Original floors, and everything a bit worn at the edges.\" [Where You Find It]", bundle: 'pro' },
+        { q: "They ask what state it was in.", a: "\"Like your old place before you did it up — sound, but everything a bit worn.\" [What It Is Like]", bundle: 'pro' },
         { q: "Someone asks what the odd hook by your front door is for.", a: "\"Coats, in theory. It holds the dog lead and nothing else.\" [What It Is For]", bundle: 'pro' },
       ]
     },

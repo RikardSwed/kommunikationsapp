@@ -1805,11 +1805,11 @@ const memorizeCollections = {
       name: "Core Idea",
       guideFront: "",
       guideBack: "",
-      description: "Five description moves, covering everything worth saying about an object: what it is, how big, what it is made of, where it lives, and what it is for.\n\nA good description uses two or three of them, chosen for this listener. Describing everything is the same as describing nothing.",
+      description: "Six description moves, covering everything worth saying about an object: what it is, how big, what it is made of, where it lives, what it is for, and what it is like.\n\nA good description uses two or three of them, chosen for this listener. Describing everything is the same as describing nothing.",
       cards: [
-        { q: "What are the five moves in this pack?", a: "Name and Main Details, Size and Shape, Material Texture and Colour, Where You Find It, What It Is For.", bundle: 'free' },
+        { q: "What are the six moves in this pack?", a: "Name and Main Details, Size and Shape, Material Texture and Colour, Where You Find It, What It Is For, What It Is Like.", bundle: 'free' },
         { q: "What is the goal of describing, as opposed to explaining?", a: "That the listener can picture it — not that they understand why it matters.", bundle: 'free' },
-        { q: "How many moves does a good description usually use?", a: "Two or three, chosen — not all five.", bundle: 'free' },
+        { q: "How many moves does a good description usually use?", a: "Two or three, chosen — not all six.", bundle: 'free' },
         { q: "Which two moves narrow the field fastest?", a: "Name and Main Details, and What It Is For. Purpose narrows faster than appearance.", bundle: 'free' },
         { q: "What tells you which move to reach for next?", a: "Their follow-up question. It names the category that is actually missing.", bundle: 'free' },
         { q: "What decides which details to give?", a: "What the listener is going to do with the description.", bundle: 'pro' },
@@ -1894,16 +1894,16 @@ const memorizeCollections = {
     },
     {
       name: "Collections",
-      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Recognising It** — the moves that let someone pick the thing out\n• **Painting the Picture** — the moves that let someone imagine it\n• **All Five** — no cue given, which is the real thing\n\nThe first two split on one question: does the listener have to find it, or only see it?",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Recognising It** — the moves that let someone pick the thing out\n• **Painting the Picture** — the moves that let someone imagine it\n• **All Six** — no cue given, which is the real thing\n\nThe first two split on one question: does the listener have to find it, or only see it?",
       cards: [
-        { q: "What are the three collections in this pack?", a: "Recognising It, Painting the Picture, and All Five.", bundle: 'pro' },
+        { q: "What are the three collections in this pack?", a: "Recognising It, Painting the Picture, and All Six.", bundle: 'pro' },
         { q: "What question splits the first two?", a: "Whether the listener has to find the thing, or only imagine it.", bundle: 'pro' },
         { q: "Which moves are in Recognising It?", a: "Name and Main Details, Size and Shape, and What It Is For.", bundle: 'pro' },
-        { q: "Which moves are in Painting the Picture?", a: "Size and Shape, Material Texture and Colour, and Where You Find It.", bundle: 'pro' },
+        { q: "Which moves are in Painting the Picture?", a: "Size and Shape, Material Texture and Colour, Where You Find It, and What It Is Like.", bundle: 'pro' },
         { q: "They are about to go and look for it. Which moves?", a: "The ones that narrow the field — the name, the size, and what it is for.", bundle: 'pro' },
         { q: "You are describing a café you liked. Which moves?", a: "The sensory ones. They do not need to find it, only to see it.", bundle: 'pro' },
         { q: "What is the test in Recognising It?", a: "What would make them say \"oh, that one\".", bundle: 'pro' },
-        { q: "What does All Five train?", a: "Choosing rather than listing. A good description is two or three moves, not five.", bundle: 'pro' },
+        { q: "What does All Six train?", a: "Choosing rather than listing. A good description is two or three moves, not six.", bundle: 'pro' },
       ]
     },
     {
@@ -1946,6 +1946,19 @@ const memorizeCollections = {
         { q: "Where do most weak descriptions come from?", a: "Describing a memory rather than a thing — the label you filed it under.", bundle: 'pro' },
         { q: "What does the paralysis about exactness produce?", a: "\"A biggish dark one.\" The size, the colour and the material all disappear at once.", bundle: 'pro' },
         { q: "What does being wrong by five centimetres cost?", a: "Nothing. Leaving the size out costs the whole picture.", bundle: 'pro' },
+      ]
+    },
+    {
+      name: "What It Is Like",
+      cards: [
+        { q: "What is a comparison, as a description move?", a: "Naming something they already know, and then saying how this one differs.", bundle: 'free' },
+        { q: "Which case does it reach that the others cannot?", a: "When they have never seen one. The other moves assume the listener can assemble a thing out of parts.", bundle: 'free' },
+        { q: "Name two ways to compare.", a: "Any two of: the known thing with one change, between two knowns, a familiar setting altered, same job different shape.", bundle: 'free' },
+        { q: "What does the standard version sound like?", a: "\"Think of a garlic press, but bigger and for potatoes.\"", bundle: 'free' },
+        { q: "How many changes should the comparison carry?", a: "One, usually. A second change starts taking the picture apart again.", bundle: 'free' },
+        { q: "What is the one test the comparison has to pass?", a: "They have actually met the thing you are comparing it to.", bundle: 'pro' },
+        { q: "What happens if they do not know your comparison either?", a: "They have two unknowns instead of one, and you have made it worse.", bundle: 'pro' },
+        { q: "What does \"same job, different shape\" do?", a: "Compares by use rather than by looks. \"It does what a whisk does. It just looks nothing like one.\"", bundle: 'pro' },
       ]
     },
   ],
