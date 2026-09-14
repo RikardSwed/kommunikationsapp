@@ -3930,6 +3930,14 @@ if (resetFirstRunBtn) resetFirstRunBtn.addEventListener('click', () => {
 // twice; the developer list is simply the unfiltered one.
 const WHATS_NEW = [
   {
+    version: 'v1.28.62', date: 'September 2026', title: 'Guide text has three settings, not two', audience: 'dev',
+    items: [
+      'The training-screen setting <em>Show guide text</em> is now a pair: <strong>Show detailed guide text</strong> (the strategy\'s own line, and a card\'s own line where one exists) and <strong>Show simple guide text</strong> (the mode\'s general pair, the same on every card). They are mutually exclusive, and turning both off hides guides entirely — the old off state. Both card modes and all six hands-free modes.',
+      'Detailed is the state a new user starts in, because a beginner needs the most guidance. Existing users keep what they had: the stored key is absent for anyone who had guides on, which reads as detailed, and <code>off</code> still reads as off. No migration.',
+      'The mode defaults are resolved away at export time, so the app could not recover them — each mode config now declares its own <code>baseGuide</code> pair. Sequences\' situation card carries its own, since it is not a step. Memorize has no guides in either state.',
+    ],
+  },
+  {
     version: 'v1.28.61', date: 'September 2026', title: 'The inherited back-guide — a test in three decks', audience: 'dev',
     items: [
       'The back-guide in Collections and Challenges is the mode default (<em>One way it could sound</em>) in all 233 core decks, while the card already names its strategy in brackets. The idea under test: on the back the strategy is known, so the card can carry that strategy\'s own Single Strategy guide instead. <strong>Three decks now do</strong> — Discussing / It Got Personal (single-strategy, the easy case), First Strategies / Read and Reply (four strategies, all guides fit) and Discussing / Two Monologues (mixed, and it contains the known misfits).',
