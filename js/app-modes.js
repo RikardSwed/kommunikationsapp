@@ -10,6 +10,7 @@
 // ─── SINGLE STRATEGY ──────────────────────────────────────────────────────────
 DS.createCardMode({
   id: 'modeFlashcard',
+  baseGuide: ['Use this strategy when...', 'One way it could sound'],
   screenId: 'trainingScreen',
   els: {
     card: 'card', inner: 'cardInner', title: 'strategyName',
@@ -38,6 +39,7 @@ DS.createCardMode({
 // ─── MEMORIZE ─────────────────────────────────────────────────────────────────
 DS.createCardMode({
   id: 'modeMemorize',
+  baseGuide: ['', ''],
   screenId: 'memScreen',
   els: {
     card: 'memCard', inner: 'memCardInner', title: 'memStrategyName',
@@ -211,6 +213,9 @@ function buildFlowSequence(combo) {
       plain: inp.situation,
       guideFront: inp.guideFront || 'The scenario',
       guideBack:  inp.guideBack  || 'The steps, in order',
+      // Scenariokortet är inte ett steg, så det enkla guideläget (v1.28.62)
+      // ska visa scenariots eget par, inte deckets.
+      baseGuide: ['The scenario', 'The steps, in order'],
     });
     (inp.steps || []).forEach(s => {
       // v1.27.87 — a step whose OWN guide front says what to do does not need
@@ -246,6 +251,7 @@ function buildFlowSequence(combo) {
 
 DS.createCardMode({
   id: 'modeFlow',
+  baseGuide: ["What's happening, and the strategy to use", 'One way it could sound'],
   screenId: 'flowScreen',
   els: {
     card: 'flowCard', inner: 'flowCardInner', title: 'flowComboName',
@@ -274,6 +280,7 @@ DS.createCardMode({
 // ─── CHALLENGES ───────────────────────────────────────────────────────────────
 DS.createCardMode({
   id: 'modeChallenges',
+  baseGuide: ['Choose a strategy when...', 'One way it could sound'],
   screenId: 'challScreen',
   els: {
     card: 'challCard', inner: 'challCardInner', title: 'challName',
@@ -299,6 +306,7 @@ DS.createCardMode({
 // ─── MINDSET ──────────────────────────────────────────────────────────────────
 DS.createCardMode({
   id: 'modeMindset',
+  baseGuide: ['A limiting thought', 'A way to reset it'],
   screenId: 'mindScreen',
   els: {
     card: 'mindCard', inner: 'mindCardInner', title: 'mindName',
@@ -323,6 +331,7 @@ DS.createCardMode({
 // ─── COLLECTIONS ──────────────────────────────────────────────────────────────
 DS.createCardMode({
   id: 'modeCollections',
+  baseGuide: ['Choose a strategy when...', 'One way it could sound'],
   screenId: 'collScreen',
   els: {
     card: 'collCard', inner: 'collCardInner', title: 'collName',
@@ -354,6 +363,8 @@ DS.openTrainingSettings = function () {
   if (panel && window.renderBundleSection && activeCollectionKey) {
     renderBundleSection(panel, activeCollectionKey);
   }
+  // v1.28.63 — spegla det lagrade guidevalet varje gång luckan öppnas.
+  if (DS.syncGuideToggles) DS.syncGuideToggles();
   document.getElementById('settingsOverlay').classList.add('open');
 };
 

@@ -117,6 +117,7 @@ initHandsfreeVoicePickers();
 // ─── HANDSFREE: SINGLE STRATEGY ───────────────────────────────────────────────
 DS.createHandsfreeMode({
   id: 'modeHandsfree',
+  baseGuide: ['Use this strategy when...', 'One way it could sound'],
   screenId: 'hfScreen',
   prefix: 'hf',
   els: {
@@ -136,6 +137,7 @@ DS.createHandsfreeMode({
 // ─── HANDSFREE: MEMORIZE ──────────────────────────────────────────────────────
 DS.createHandsfreeMode({
   id: 'modeHandsfreeMemorize',
+  baseGuide: ['', ''],
   screenId: 'hfMemScreen',
   prefix: 'hfMem',
   els: {
@@ -160,6 +162,7 @@ DS.createHandsfreeMode({
 // ─── HANDSFREE: CHALLENGES ────────────────────────────────────────────────────
 DS.createHandsfreeMode({
   id: 'modeHandsfreeChallenges',
+  baseGuide: ['Choose a strategy when...', 'One way it could sound'],
   screenId: 'hfChallScreen',
   prefix: 'hfChall',
   els: {
@@ -179,6 +182,7 @@ DS.createHandsfreeMode({
 // ─── HANDSFREE: SEQUENCES ─────────────────────────────────────────────────────
 DS.createHandsfreeMode({
   id: 'modeHandsfreeSequences',
+  baseGuide: ["What's happening, and the strategy to use", 'One way it could sound'],
   screenId: 'hfFlowScreen',
   prefix: 'hfFlow',
   els: {
@@ -214,6 +218,7 @@ DS.createHandsfreeMode({
 // ─── HANDSFREE: MINDSET ───────────────────────────────────────────────────────
 DS.createHandsfreeMode({
   id: 'modeHandsfreeMindset',
+  baseGuide: ['A limiting thought', 'A way to reset it'],
   screenId: 'hfMindScreen',
   prefix: 'hfMind',
   els: {
@@ -233,6 +238,7 @@ DS.createHandsfreeMode({
 // ─── HANDSFREE: COLLECTIONS ───────────────────────────────────────────────────
 DS.createHandsfreeMode({
   id: 'modeHandsfreeCollections',
+  baseGuide: ['Choose a strategy when...', 'One way it could sound'],
   screenId: 'hfCollScreen',
   prefix: 'hfColl',
   els: {

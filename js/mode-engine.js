@@ -318,7 +318,31 @@ const DS = (function () {
     // remembered per pack AND per mode: absence of the key means ON.
     const guideKey = () => 'guideText:' + cfg.id + ':' +
       (typeof activeCollectionKey !== 'undefined' ? activeCollectionKey : '');
-    function guideEnabled() { return localStorage.getItem(guideKey()) !== 'off'; }
+    // v1.28.62 — TRE lägen i stället för två. Nyckelns värde:
+    //   saknas / 'specific'  detaljerad: kortets egen guide, annars deckets
+    //   'default'            enkel: lägets allmänna par, samma på varje kort
+    //   'off'                inga guider alls
+    // Gamla användare har antingen inget värde (= på = detaljerad, vilket är
+    // rätt) eller 'off'. Ingen migrering behövs.
+    function guideMode() {
+      const v = localStorage.getItem(guideKey());
+      return (v === 'off' || v === 'default') ? v : 'specific';
+    }
+    function guideEnabled() { return guideMode() !== 'off'; }
+    // Det enkla läget hämtar parametern från kortet först (scenariokortet i
+    // Sequences har ett eget par) och annars från lägeskonfigurationen.
+    function guideTextsFor(g, it) {
+      const m = guideMode();
+      if (m === 'off') return ['', ''];
+      if (m === 'default') {
+        const d = (it && it.baseGuide) || cfg.baseGuide || ['', ''];
+        return [d[0] || '', d[1] || ''];
+      }
+      return [
+        (it && it.guideFront) || (g && g.guideFront) || '',
+        (it && it.guideBack)  || (g && g.guideBack)  || '',
+      ];
+    }
     function guideElFor(anchor) {
       if (!anchor || !anchor.parentNode) return null;
       const prev = anchor.previousElementSibling;
@@ -332,31 +356,43 @@ const DS = (function () {
       // Per-card guide text (v1.26.32): the card's own guideFront/guideBack
       // wins when present; otherwise the strategy-level value applies
       // (which the editor has already resolved against the mode default).
-      const on = guideEnabled();
+      // v1.28.62: vilket par som gäller avgörs nu av guideMode().
+      const [tf, tb] = guideTextsFor(g, it);
       const gf = guideElFor(els.front), gb = guideElFor(els.back);
-      if (gf) {
-        const t = on ? ((it && it.guideFront) || (g && g.guideFront) || '') : '';
-        gf.textContent = t; gf.style.display = t ? '' : 'none';
-      }
-      if (gb) {
-        const t = on ? ((it && it.guideBack) || (g && g.guideBack) || '') : '';
-        gb.textContent = t; gb.style.display = t ? '' : 'none';
-      }
+      if (gf) { gf.textContent = tf; gf.style.display = tf ? '' : 'none'; }
+      if (gb) { gb.textContent = tb; gb.style.display = tb ? '' : 'none'; }
     }
-    mode._setGuide = function (on) {
-      if (on) localStorage.removeItem(guideKey());
-      else localStorage.setItem(guideKey(), 'off');
+    mode._setGuide = function (m) {
+      if (m === 'specific') localStorage.removeItem(guideKey());
+      else localStorage.setItem(guideKey(), m);
+      mode._syncGuideToggles();
       render();
     };
-    // One shared toggle in #settingsOverlay dispatches to the active mode
-    const guideToggle = $('showGuideText');
-    if (guideToggle && !guideToggle._guideBound) {
-      guideToggle._guideBound = true;
-      guideToggle.addEventListener('change', function () {
-        const m = window._guideActiveMode;
-        if (m && m._setGuide) m._setGuide(this.checked);
+    // De två reglagen är varandras motsatser: högst ett kan vara på, och
+    // båda av betyder inga guider.
+    mode._syncGuideToggles = function () {
+      const m = guideMode();
+      const a = $('showGuideText'), b = $('showGuideTextBasic');
+      if (a) a.checked = (m === 'specific');
+      if (b) b.checked = (m === 'default');
+    };
+    // v1.28.63 — settingsluckan frågar efter den här när den öppnas, så att
+    // krysset alltid speglar det lagrade valet även om ett klick missats.
+    DS.syncGuideToggles = function () {
+      const m = window._guideActiveMode;
+      if (m && m._syncGuideToggles) m._syncGuideToggles();
+    };
+    // Two shared toggles in #settingsOverlay dispatch to the active mode
+    [['showGuideText', 'specific'], ['showGuideTextBasic', 'default']]
+      .forEach(([elId, wanted]) => {
+        const t = $(elId);
+        if (!t || t._guideBound) return;
+        t._guideBound = true;
+        t.addEventListener('change', function () {
+          const m = window._guideActiveMode;
+          if (m && m._setGuide) m._setGuide(this.checked ? wanted : 'off');
+        });
       });
-    }
 
     // ── Render ─────────────────────────────────────────────────────────────
     function render() {
@@ -510,8 +546,7 @@ const DS = (function () {
       mode.gi = 0; mode.ii = 0;
       // Guide toggle reflects the persisted choice for THIS pack + mode
       window._guideActiveMode = mode;
-      const gt = $('showGuideText');
-      if (gt) gt.checked = guideEnabled();
+      mode._syncGuideToggles();
       navToTraining(cfg.screenId);
       render();
     };
@@ -521,6 +556,9 @@ const DS = (function () {
     mode.reload = function () {
       mode.groups = cfg.getGroups() || [];
       if (!mode.groups.length) return;
+      // v1.28.63 — samma anspråk som show(). Utan den här raden kunde reglagen
+      // skriva till ett läge användaren inte längre tittar på.
+      window._guideActiveMode = mode;
       buildOrders();
       mode.gi = Math.min(mode.gi, mode.groups.length - 1);
       mode.ii = Math.min(mode.ii, mode.itemOrders[mode.groupOrder[mode.gi]].length - 1);
@@ -924,7 +962,24 @@ const DS = (function () {
     // absence means ON, 'off' means the user disabled it for this pack.
     const guideKey = () => 'guideText:' + cfg.id + ':' +
       (typeof activeCollectionKey !== 'undefined' ? activeCollectionKey : '');
-    const guideEnabled = () => localStorage.getItem(guideKey()) !== 'off';
+    // v1.28.62 — samma tre lägen som kortlägena, se kommentaren där.
+    function guideMode() {
+      const v = localStorage.getItem(guideKey());
+      return (v === 'off' || v === 'default') ? v : 'specific';
+    }
+    const guideEnabled = () => guideMode() !== 'off';
+    function guideTextsFor(g, it) {
+      const m = guideMode();
+      if (m === 'off') return ['', ''];
+      if (m === 'default') {
+        const d = (it && it.baseGuide) || cfg.baseGuide || ['', ''];
+        return [d[0] || '', d[1] || ''];
+      }
+      return [
+        (it && it.guideFront) || (g && g.guideFront) || '',
+        (it && it.guideBack)  || (g && g.guideBack)  || '',
+      ];
+    }
     function guideElFor(anchor) {
       if (!anchor || !anchor.parentNode) return null;
       const prev = anchor.previousElementSibling;
@@ -936,23 +991,30 @@ const DS = (function () {
     }
     function renderGuide(g, it) {
       // Per-card guide text (v1.26.32) — same resolution as card modes.
-      const on = guideEnabled();
+      const [tf, tb] = guideTextsFor(g, it);
       const gf = guideElFor(els.front), gb = guideElFor(els.back);
-      if (gf) {
-        const t = on ? ((it && it.guideFront) || (g && g.guideFront) || '') : '';
-        gf.textContent = t; gf.style.display = t ? '' : 'none';
-      }
-      if (gb) {
-        const t = on ? ((it && it.guideBack) || (g && g.guideBack) || '') : '';
-        gb.textContent = t; gb.style.display = t ? '' : 'none';
-      }
+      if (gf) { gf.textContent = tf; gf.style.display = tf ? '' : 'none'; }
+      if (gb) { gb.textContent = tb; gb.style.display = tb ? '' : 'none'; }
     }
-    const guideToggleHf = $(p + 'GuideText');
-    if (guideToggleHf) guideToggleHf.addEventListener('change', () => {
-      if (guideToggleHf.checked) localStorage.removeItem(guideKey());
-      else localStorage.setItem(guideKey(), 'off');
-      renderGuide(group(), mode._lastItem);
-    });
+    function syncGuideTogglesHf() {
+      const m = guideMode();
+      const a = $(p + 'GuideText'), b = $(p + 'GuideTextBasic');
+      if (a) a.checked = (m === 'specific');
+      if (b) b.checked = (m === 'default');
+    }
+    mode._syncGuideToggles = syncGuideTogglesHf;
+    [[p + 'GuideText', 'specific'], [p + 'GuideTextBasic', 'default']]
+      .forEach(([elId, wanted]) => {
+        const t = $(elId);
+        if (!t) return;
+        t.addEventListener('change', function () {
+          const m2 = this.checked ? wanted : 'off';
+          if (m2 === 'specific') localStorage.removeItem(guideKey());
+          else localStorage.setItem(guideKey(), m2);
+          syncGuideTogglesHf();
+          renderGuide(group(), mode._lastItem);
+        });
+      });
 
     function settings() {
       const v = id => $(id);
@@ -1157,10 +1219,10 @@ const DS = (function () {
           const it = list[iOrder[ii2]];
           const front = cfg.itemFront(it, g);
           const back  = cfg.itemBack(it, g);
-          const effGF = (it && it.guideFront) || g.guideFront;
-          const effGB = (it && it.guideBack)  || g.guideBack;
-          const gFront = (s.guideText && effGF) ? dsSpokenGuide(effGF) : '';
-          const gBack  = (s.guideText && effGB) ? dsSpokenGuide(effGB) : '';
+          // v1.28.62 — guideTextsFor() bär redan av/enkel/detaljerad.
+          const [effGF, effGB] = guideTextsFor(g, it);
+          const gFront = effGF ? dsSpokenGuide(effGF) : '';
+          const gBack  = effGB ? dsSpokenGuide(effGB) : '';
 
           push(gFront + front, 'front', s.thinkPause * 1000, realGi, ii2, firstOfGroup, gTitle);
           firstOfGroup = false;
@@ -1339,10 +1401,10 @@ const DS = (function () {
           const back  = cfg.itemBack(it, g);
           // Guide text is spoken as a lead-in to each side when enabled.
           // Per-card guide (v1.26.32) overrides the strategy default.
-          const effGF = (it && it.guideFront) || g.guideFront;
-          const effGB = (it && it.guideBack)  || g.guideBack;
-          const gFront = (s.guideText && effGF) ? dsSpokenGuide(effGF) : '';
-          const gBack  = (s.guideText && effGB) ? dsSpokenGuide(effGB) : '';
+          // v1.28.62 — guideTextsFor() bär redan av/enkel/detaljerad.
+          const [effGF, effGB] = guideTextsFor(g, it);
+          const gFront = effGF ? dsSpokenGuide(effGF) : '';
+          const gBack  = effGB ? dsSpokenGuide(effGB) : '';
 
           showCard(front, back, false, it);
           await speak(gFront + front, s);

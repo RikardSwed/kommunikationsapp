@@ -3930,6 +3930,14 @@ if (resetFirstRunBtn) resetFirstRunBtn.addEventListener('click', () => {
 // twice; the developer list is simply the unfiltered one.
 const WHATS_NEW = [
   {
+    version: 'v1.28.63', date: 'September 2026', title: 'The guide-text pair, wired properly', audience: 'dev',
+    items: [
+      'The two guide toggles now claim the settings overlay from <code>reload()</code> as well as <code>show()</code>, and the overlay re-reads the stored choice every time it opens (<code>DS.syncGuideToggles</code>). Before, a mode entered by any path that did not call <code>show()</code> left <code>_guideActiveMode</code> pointing at a mode the user had left, so a click could write under the wrong key or do nothing at all.',
+      'New test harness: <code>tools/dom-shim.js</code> plus <code>tools/test-guidemode.js</code> load the real <code>mode-engine.js</code> and click the real toggles, instead of reading the source for the right-looking strings. jsdom still cannot be installed here, and the shim is the smallest thing that makes the engine runnable — 15 assertions, and the two toggles can no longer both be on after a sync.',
+      'v1.28.62 shipped with all 44 source-reading guide tests green, which is exactly why the wiring gap got through. Tests that read code prove the code says something; only a test that runs it proves the code does something.',
+    ],
+  },
+  {
     version: 'v1.28.62', date: 'September 2026', title: 'Guide text has three settings, not two', audience: 'dev',
     items: [
       'The training-screen setting <em>Show guide text</em> is now a pair: <strong>Show detailed guide text</strong> (the strategy\'s own line, and a card\'s own line where one exists) and <strong>Show simple guide text</strong> (the mode\'s general pair, the same on every card). They are mutually exclusive, and turning both off hides guides entirely — the old off state. Both card modes and all six hands-free modes.',
