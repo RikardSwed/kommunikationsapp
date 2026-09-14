@@ -3930,6 +3930,14 @@ if (resetFirstRunBtn) resetFirstRunBtn.addEventListener('click', () => {
 // twice; the developer list is simply the unfiltered one.
 const WHATS_NEW = [
   {
+    version: 'v1.28.64', date: 'September 2026', title: 'Every card in Collections and Challenges carries its own back-guide', audience: 'dev',
+    items: [
+      '<strong>1774 cards</strong> across 225 decks in the 29 core packs now inherit the back-guide of the strategy their bracket names, instead of the mode default <em>One way it could sound</em>. The front guide stays general — on the front the move has not been chosen yet. Only two cards were left untouched, the known loose pair in Describe Things. Written up as §11b-IX of the Mönsterbibliotek, which amends §11b-II rather than overturning it.',
+      '<strong>Twenty Single Strategy guides were rewritten first</strong>, because a guide that misses its own cards would otherwise have been copied 1774 times. All twenty were found by measuring each guide against its own eight backs: <em>Wish Them Well</em> said "towards their evening" on eight cards where none was about the evening; <em>What It Is</em> said "what you would see" over explanations of things you cannot see; <em>Offer a Workable Compromise</em> said "costs you nothing" over an offer of an hour. 110 sequence steps that had copied the old wording followed.',
+      'A pattern worth recording: <strong>three silence guides in a row proved too narrow.</strong> Let Them Finish, Let It Go and Give a Short Reason all described the silent case as though it were the whole move, while most of their cards are lines you actually say.',
+    ],
+  },
+  {
     version: 'v1.28.63', date: 'September 2026', title: 'The guide-text pair, wired properly', audience: 'dev',
     items: [
       'The two guide toggles now claim the settings overlay from <code>reload()</code> as well as <code>show()</code>, and the overlay re-reads the stored choice every time it opens (<code>DS.syncGuideToggles</code>). Before, a mode entered by any path that did not call <code>show()</code> left <code>_guideActiveMode</code> pointing at a mode the user had left, so a click could write under the wrong key or do nothing at all.',
