@@ -10013,7 +10013,7 @@ const collectionsModeData = {
       name: "What and How",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "The two moves that carry practical explanations. Someone is holding a thing, or standing in front of a screen, and needs to know what they are looking at and what to do with it.\n\nThe choice between them is simple: if they cannot picture it yet, say what it is. If they can see it but do not know what to do, explain how it works.\n\nMindset: watch their hands. If they are reaching for it, they need How. If they are frowning at it, they need What.",
+      description: "The two moves that carry practical explanations. Someone is holding a thing, or standing in front of a screen, and needs to know what they are looking at and what to do with it.\n\nThe two options:\n1. What It Is — they cannot picture it yet. \"It's a shared list two people can edit at once.\"\n2. How It Works — they can see it but do not know what to do. \"You press it, it books the room.\"\n\nThe choice is simple, and their body usually gives it away before their question does.\n\nMindset: watch their hands. If they are reaching for it, they need How. If they are frowning at it, they need What.",
       inputs: [
         { q: "A guest picks up your induction hob scraper and turns it over, puzzled.", a: "\"It's a little razor blade in a plastic handle — that's for burnt-on bits.\" [What It Is]", bundle: 'pro' },
         { q: "A guest is holding the scraper and looking at the hob.", a: "\"Hold it almost flat against the glass and push. Don't tilt it or it'll scratch.\" [How It Works]", bundle: 'pro' },
@@ -10029,7 +10029,7 @@ const collectionsModeData = {
       name: "How and Why",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "The two moves that carry persuasion-adjacent explanations. Someone can already picture the thing. What they are missing is either the method or the point.\n\nIf they are willing but stuck, they need How. If they are unconvinced, no amount of How will help — they need Why.\n\nMindset: resistance is almost never a request for more detail. If they push back, switch to Why.",
+      description: "The two moves that carry persuasion-adjacent explanations. Someone can already picture the thing. What they are missing is either the method or the point.\n\nThe two options:\n1. How It Works — they are willing but stuck. \"It checks the date before it sends.\"\n2. Why It Matters — they are unconvinced. \"It matters the day someone works a weekend on an old version.\"\n\nThe two are not interchangeable, and reaching for the wrong one is the commonest way an explanation stalls: more mechanism aimed at someone who is not persuaded makes them less persuaded, not more.\n\nMindset: resistance is almost never a request for more detail. If they push back, switch to Why.",
       inputs: [
         { q: "A colleague says they still don't see the point of the daily stand-up.", a: "\"It's mostly so nobody spends a day blocked on something someone else could unblock in a minute.\" [Why It Matters]", bundle: 'pro' },
         { q: "A colleague is happy to do the stand-up but doesn't know what to say in it.", a: "\"Three things — what you did, what you're doing, and anything you're stuck on. Thirty seconds.\" [How It Works]", bundle: 'pro' },
@@ -10045,7 +10045,7 @@ const collectionsModeData = {
       name: "All Three",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "The full set. Any of the three moves could be right, and the skill is hearing which one is actually missing.\n\nA good rule: listen to the shape of their question. \"What's that?\" wants What. \"How do I…?\" wants How. \"But why would I…?\" wants Why. And when someone asks nothing at all but looks lost, start with What.\n\nMindset: answer the question they asked, not the one you find most interesting to answer.",
+      description: "The full set. Any of the three moves could be right, and the skill is hearing which one is actually missing.\n\nThe three, with the cue for each:\n1. What It Is — \"What's that?\", or nothing at all and a lost expression.\n2. How It Works — \"How do I…?\", or they are reaching for it.\n3. Why It Matters — \"But why would I…?\", or they have understood and shrugged.\n\nA good rule: listen to the shape of their question rather than its words. And when someone asks nothing at all but looks lost, start with What.\n\nMindset: answer the question they asked, not the one you find most interesting to answer.",
       inputs: [
         { q: "A new colleague asks what the ticket system is.", a: "\"It's a list of jobs with a name on each one. Every request becomes a ticket.\" [What It Is]", bundle: 'pro' },
         { q: "The new colleague has the ticket system open and asks how to pick something up.", a: "\"Find one with nobody assigned, click your own name into the box, and move it to In Progress.\" [How It Works]", bundle: 'pro' },

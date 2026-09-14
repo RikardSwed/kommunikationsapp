@@ -2341,7 +2341,7 @@ const multiStepCollections = {
       name: "When They Only Need One Piece",
       guideFront: "What's happening, and the strategy to use",
       guideBack: "One way it could sound",
-      description: "Not every explanation needs all three moves. Someone often already has two of them and is missing exactly one. Giving them the full tour is a way of not listening.\n\nThe skill here is hearing which piece is missing and answering only that — then stopping, and letting them ask for more if they want it.\n\nMindset: the shortest correct answer is a kindness. You can always add.",
+      description: "Not every explanation needs all three moves. Someone often already has two of them and is missing exactly one. Steps: 1) hear which piece is missing, 2) give that one, 3) stop.\n\nThe shape of the whole thing:\n1. (they say \"I know what it is, I just don't get what it's for\")\n2. \"It's for the mornings when you can't get up.\"\n3. (nothing — let them ask if they want more)\n\nWhy this order: giving the full tour is a way of not listening. The third step is the one people drop, and dropping it turns an answer back into a lecture.\n\nMindset: the shortest correct answer is a kindness. You can always add.",
       inputs: [
         {
           bundle: 'pro',
@@ -2376,7 +2376,7 @@ const multiStepCollections = {
       name: "Explaining Something You Half Understand",
       guideFront: "What's happening, and the strategy to use",
       guideBack: "One way it could sound",
-      description: "You will be asked to explain things you only partly know. The move is to give the part you are sure about, mark clearly where your knowledge stops, and not fill the gap with something that sounds right.\n\nSaying \"I don't know that bit\" costs you almost nothing and protects the listener from carrying away a confident mistake.\n\nMindset: being trusted is worth more than sounding complete.",
+      description: "You will be asked to explain things you only partly know. Steps: 1) give the piece you are sure about, 2) mark where your knowledge stops, 3) say what would settle it.\n\nThe shape of the whole thing:\n1. \"It ends up in the shared folder, every night.\"\n2. \"How it gets there I couldn't tell you.\"\n3. \"Sam would know — I can ask her this afternoon.\"\n\nWhy this order: the sure part first means the listener leaves with something. The gap named second stops them carrying away a guess as a fact.\n\nMindset: being trusted is worth more than sounding complete.",
       inputs: [
         {
           bundle: 'pro',

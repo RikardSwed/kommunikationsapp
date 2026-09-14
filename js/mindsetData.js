@@ -1214,7 +1214,7 @@ const mindsetCollections = {
       name: "Their Confusion Is Information",
       guideFront: "A limiting thought",
       guideBack: "A way to reset it",
-      description: "When someone does not follow, the instinct is to feel either embarrassed or impatient. Both push you to repeat yourself in the same words, slightly louder.\n\nConfusion is not a verdict on you. It is a signal telling you which of the three moves you skipped.\n\nMindset: a frown is data. Read it and change the move.",
+      description: "When someone does not follow, the instinct is to feel either embarrassed or impatient. Both push you to repeat yourself in the same words, slightly louder.\n\nThe three thoughts that cause the trouble:\n1. \"I've explained this badly\" — you have explained the wrong one of the three, which is a different problem.\n2. \"They're not trying\" — a frown is effort, not resistance.\n3. \"If I say it again it'll land\" — the same words at the same level land the same way.\n\nMindset: a frown is data. It tells you which of the three moves you skipped — read it and change the move.",
       inputs: [
         { q: "They didn't get it. I've explained it badly.", a: "You've explained one part. Ask which part didn't land and give that one.", bundle: 'pro' },
         { q: "I've said this three times and they still don't follow.", a: "Then it isn't a repetition problem. Try a different move — probably Why.", bundle: 'pro' },
