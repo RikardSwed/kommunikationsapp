@@ -10452,7 +10452,7 @@ const collectionsModeData = {
       name: "Opening the Difference",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "Signal the Disagreement and Give Your Reason — the two moves that get a difference of view onto the table properly.\n\nSignal first when the disagreement will be a surprise, or when the other person has been speaking as though everyone agrees. Go straight to the reason when the disagreement is already obvious and the signal would just delay things.\n\nMindset: get the difference named early. Disagreements go worst when they surface late.",
+      description: "Signal the Disagreement and Give Your Reason — the two moves that get a difference of view onto the table properly.\n\nThe two options:\n1. Signal the Disagreement — the difference will be a surprise, or they have been speaking as though everyone agrees. \"Can I be the awkward one? I'm not sure about this.\"\n2. Give Your Reason — the disagreement is already obvious and a signal would only delay things. \"The last two both slipped at handover.\"\n\nThe order between them is the whole choice. Signal first and the reason arrives as a contribution; lead with the reason when there is nothing left to signal.\n\nMindset: get the difference named early. Disagreements go worst when they surface late.",
       inputs: [
         { q: "A colleague has been presenting a plan as settled and you do not agree.", a: "\"Before we move on — I'm not with you on this bit.\" [Signal the Disagreement]", bundle: 'pro' },
         { q: "They ask why you are hesitating.", a: "\"Because we'd be starting it the same week three people are away.\" [Give Your Reason]", bundle: 'pro' },
@@ -10468,7 +10468,7 @@ const collectionsModeData = {
       name: "Widening It",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "A Wider Picture and Add an Example — the two moves that make a disagreement generative rather than binary.\n\nReach for perspective when the other person is treating their view as the only sensible one. Reach for an example when they have understood your view and simply do not believe it.\n\nMindset: the aim is a better picture, not a winner.",
+      description: "A Wider Picture and Add an Example — the two moves that make a disagreement generative rather than binary.\n\nThe two options:\n1. A Wider Picture — they are treating their view as the only sensible one. \"Different angle: this is a staffing question, not a calendar one.\"\n2. Add an Example — they have understood your view and simply do not believe it. \"We tried it in March and it cost a week.\"\n\nThe test is what is missing on their side. A frame is for somebody who cannot see that another view exists; a case is for somebody who can and is unconvinced.\n\nMindset: the aim is a better picture, not a winner.",
       inputs: [
         { q: "A colleague treats the extra step as pure overhead.", a: "\"It's overhead this week. It's also why nothing's gone out wrong since June.\" [A Wider Picture]", bundle: 'pro' },
         { q: "They say they still do not see it happening in practice.", a: "\"The payroll thing last year. Went out unchecked and cost us a weekend.\" [Add an Example]", bundle: 'pro' },
@@ -10484,7 +10484,7 @@ const collectionsModeData = {
       name: "All Four",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "The full set. Real disagreements move between all four moves, and the skill is noticing which one the moment needs.\n\nA useful order when the disagreement is fresh: signal, reason, then perspective or example depending on whether they have misunderstood you or simply do not agree. But it is a starting shape, not a script.\n\nMindset: answer what they actually said, not the strongest version of their view you can imagine.",
+      description: "The full set. Real disagreements move between all four moves, and the skill is noticing which one the moment needs.\n\nThe four, with the cue for each:\n1. Signal the Disagreement — nobody knows yet that you differ.\n2. Give Your Reason — they know you differ and not why.\n3. A Wider Picture — they think theirs is the only view available.\n4. Add an Example — they understand you and do not believe you.\n\nA useful order when the disagreement is fresh: signal, reason, then perspective or example depending on whether they have misunderstood you or simply do not agree. It is a starting shape, not a script.\n\nMindset: answer what they actually said, not the strongest version of their view you can imagine.",
       inputs: [
         { q: "A friend says you should never turn down work.", a: "\"I'd disagree with 'never', at least.\" [Signal the Disagreement]", bundle: 'pro' },
         { q: "They ask what is wrong with taking everything offered.", a: "\"You end up doing the easy things badly instead of one thing well.\" [Give Your Reason]", bundle: 'pro' },

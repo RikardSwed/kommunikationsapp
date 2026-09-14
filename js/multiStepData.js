@@ -3202,7 +3202,7 @@ const multiStepCollections = {
       name: "The Full Disagreement",
       guideFront: "What's happening, and the strategy to use",
       guideBack: "One way it could sound",
-      description: "Signal, reason, perspective, example — the shape a disagreement takes when the other person is engaging with you properly.\n\nEach step should answer what they actually said. The commonest failure is running your own four moves regardless of their replies, which turns a conversation into two speeches.\n\nMindset: stay on their sentence, not on your next point.",
+      description: "The shape a disagreement takes when the other person is engaging with you properly. Steps: 1) Signal the Disagreement, 2) Give Your Reason, 3) A Wider Picture, 4) Add an Example.\n\nThe shape of the whole thing:\n1. \"I see it differently, and it's a small difference.\"\n2. \"The last two both slipped at handover.\"\n3. \"It might be a staffing question rather than a calendar one.\"\n4. \"We tried it in March and it cost a week.\"\n\nWhy this order: each step answers what they actually said. The commonest failure is running your own four moves regardless of their replies, which turns a conversation into two speeches.\n\nMindset: stay on their sentence, not on your next point.",
       inputs: [
         {
           bundle: 'pro',
@@ -3275,7 +3275,7 @@ const multiStepCollections = {
       name: "When You Change Your Mind",
       guideFront: "What's happening, and the strategy to use",
       guideBack: "One way it could sound",
-      description: "Sometimes their reason is better than yours. Conceding is a move in a disagreement, not a defeat, and doing it cleanly makes people far more willing to hear you the next time.\n\nSay what changed your mind. That is what separates a real change of view from giving up to end the conversation.\n\nMindset: being persuaded is a good outcome. It means the conversation worked.",
+      description: "Sometimes their reason is better than yours. Conceding is a move in a disagreement, not a defeat. Steps: 1) Give Your Reason, narrowed to what survived, 2) Signal the Disagreement at its new size, 3) say what changed your mind.\n\nThe shape of the whole thing:\n1. \"You've answered the cost. What's left is the handover.\"\n2. \"And honestly that's a preference now, not an argument.\"\n3. \"The March example is the bit that moved me.\"\n\nWhy this order: naming what changed your mind is what separates a real change of view from giving up to end the conversation.\n\nMindset: being persuaded is a good outcome. It means the conversation worked.",
       inputs: [
         {
           bundle: 'pro',
