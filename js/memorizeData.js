@@ -1242,7 +1242,7 @@ const memorizeCollections = {
       ]
     },
     {
-      name: "Park It",
+      name: "Promise a Return",
       cards: [
         { q: "What is the condition on deferring?", a: "That you actually come back, on a named day.", bundle: 'free' },
         { q: "Name two ways to defer.", a: "Any two of: name when you will return, say why you are not answering now, ask for their timing, come back unprompted.", bundle: 'free' },
@@ -1259,7 +1259,7 @@ const memorizeCollections = {
       description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Buying the Moment** — the three that openly delay\n• **Saying Something Now** — the two that say something real without deciding anything\n• **All Five** — no cue given, which is the real thing\n\nThe first splits on how much time you need. The second on whether they are waiting for something from you.",
       cards: [
         { q: "What are the three collections in this pack?", a: "Buying the Moment, Saying Something Now, and All Five.", bundle: 'pro' },
-        { q: "Which three moves openly delay?", a: "Name the Pause, Admit the Blank, and Park It.", bundle: 'pro' },
+        { q: "Which three moves openly delay?", a: "Name the Pause, Admit the Blank, and Promise a Return.", bundle: 'pro' },
         { q: "What separates those three from each other?", a: "Only how much time they buy — a second, an honest admission, or a return tomorrow.", bundle: 'pro' },
         { q: "Why do all three work?", a: "The delay is visible. A silent pause is read as disapproval; a named one as taking it seriously.", bundle: 'pro' },
         { q: "You want information rather than to respond. Which move?", a: "Ask What Prompted It. It moves the conversation forward and buys time at once.", bundle: 'pro' },
@@ -1387,7 +1387,7 @@ const memorizeCollections = {
         { q: "What are the five moves in this pack?", a: "The Natural Pause, Signal the Interruption, Their Point First, Why It Cannot Wait, Use Humour.", bundle: 'free' },
         { q: "Is interrupting rude?", a: "Cutting across someone is. A signalled, reasoned interruption is ordinary turn-taking.", bundle: 'free' },
         { q: "What is the cheapest interruption there is?", a: "Waiting two seconds for a natural pause — from the outside it barely reads as an interruption at all.", bundle: 'free' },
-        { q: "Which move is about getting out rather than in?", a: "Get Out Cleanly. The other five are all about getting in, and it is the half most people skip.", bundle: 'free' },
+        { q: "Which move is about getting out rather than in?", a: "Return the Floor. The other five are all about getting in, and it is the half most people skip.", bundle: 'free' },
         { q: "What makes an interruption land badly?", a: "No signal and no reason. The content is rarely the problem.", bundle: 'pro' },
         { q: "How do you know when waiting has stopped working?", a: "When there has been no usable pause for minutes. Then the pause isn't coming and you have to make one.", bundle: 'pro' },
         { q: "What is the other failure mode?", a: "Dominating. If you've interrupted twice and nobody else has once, the next move is to wait.", bundle: 'pro' },
@@ -1459,9 +1459,9 @@ const memorizeCollections = {
       ]
     },
     {
-      name: "Get Out Cleanly",
+      name: "Return the Floor",
       cards: [
-        { q: "What does Get Out Cleanly cover?", a: "The exit — landing your point and then giving the floor back. The other five moves are all about getting in.", bundle: 'free' },
+        { q: "What does Return the Floor cover?", a: "The exit — landing your point and then giving the floor back. The other five moves are all about getting in.", bundle: 'free' },
         { q: "Why does the hand-back matter?", a: "An interruption is a loan, not a transfer. Keeping the floor turns it into a takeover in their memory.", bundle: 'free' },
         { q: "What are the two halves of the move?", a: "Landing the point, and handing the floor back.", bundle: 'free' },
         { q: "What goes wrong when people skip the landing?", a: "The interruption collapses into an apology and never delivers what it was for.", bundle: 'pro' },
@@ -1807,7 +1807,7 @@ const memorizeCollections = {
       guideBack: "",
       description: "Six description moves, covering everything worth saying about an object: what it is, how big, what it is made of, where it lives, what it is for, and what it is like.\n\nA good description uses two or three of them, chosen for this listener. Describing everything is the same as describing nothing.",
       cards: [
-        { q: "What are the six moves in this pack?", a: "Name and Main Details, Size and Shape, Material Texture and Colour, Where You Find It, What It Is For, What It Is Like.", bundle: 'free' },
+        { q: "What are the six moves in this pack?", a: "Name and Main Details, Size and Shape, Material Texture and Colour, Where You Find It, What It Is For, What It Resembles.", bundle: 'free' },
         { q: "What is the goal of describing, as opposed to explaining?", a: "That the listener can picture it — not that they understand why it matters.", bundle: 'free' },
         { q: "How many moves does a good description usually use?", a: "Two or three, chosen — not all six.", bundle: 'free' },
         { q: "Which two moves narrow the field fastest?", a: "Name and Main Details, and What It Is For. Purpose narrows faster than appearance.", bundle: 'free' },
@@ -1899,7 +1899,7 @@ const memorizeCollections = {
         { q: "What are the three collections in this pack?", a: "Recognising It, Painting the Picture, and All Six.", bundle: 'pro' },
         { q: "What question splits the first two?", a: "Whether the listener has to find the thing, or only imagine it.", bundle: 'pro' },
         { q: "Which moves are in Recognising It?", a: "Name and Main Details, Size and Shape, and What It Is For.", bundle: 'pro' },
-        { q: "Which moves are in Painting the Picture?", a: "Size and Shape, Material Texture and Colour, Where You Find It, and What It Is Like.", bundle: 'pro' },
+        { q: "Which moves are in Painting the Picture?", a: "Size and Shape, Material Texture and Colour, Where You Find It, and What It Resembles.", bundle: 'pro' },
         { q: "They are about to go and look for it. Which moves?", a: "The ones that narrow the field — the name, the size, and what it is for.", bundle: 'pro' },
         { q: "You are describing a café you liked. Which moves?", a: "The sensory ones. They do not need to find it, only to see it.", bundle: 'pro' },
         { q: "What is the test in Recognising It?", a: "What would make them say \"oh, that one\".", bundle: 'pro' },
@@ -1949,7 +1949,7 @@ const memorizeCollections = {
       ]
     },
     {
-      name: "What It Is Like",
+      name: "What It Resembles",
       cards: [
         { q: "What is a comparison, as a description move?", a: "Naming something they already know, and then saying how this one differs.", bundle: 'free' },
         { q: "Which case does it reach that the others cannot?", a: "When they have never seen one. The other moves assume the listener can assemble a thing out of parts.", bundle: 'free' },
@@ -5657,7 +5657,7 @@ const memorizeCollections = {
       ]
     },
     {
-      name: "Status Question",
+      name: "Feeling Question",
       cards: [
         { q: "What is a Status question?", a: "You ask how they are right now — properly, not as a greeting — and then answer it yourself.", bundle: 'free' },
         { q: "How do you stop it getting the ritual answer?", a: "Attach it to the moment or to a specific thing, and answer it yourself if they give you \"fine\".", bundle: 'free' },
@@ -5683,7 +5683,7 @@ const memorizeCollections = {
       ]
     },
     {
-      name: "Background Question",
+      name: "Arrival Question",
       cards: [
         { q: "What is a Background question?", a: "You ask where they have come from or what happened before this, then say the same about yourself.", bundle: 'free' },
         { q: "Why does it produce more than a word?", a: "Everybody came from somewhere, so the honest answer is usually a small story.", bundle: 'free' },
@@ -5716,7 +5716,7 @@ const memorizeCollections = {
         { q: "What are the three collections in this pack?", a: "Ask About Now, Ask About Them, and Choosing Your Question.", bundle: 'pro' },
         { q: "Which two types are in Ask About Now?", a: "Opinion and Status.", bundle: 'pro' },
         { q: "You are both in front of a painting. Which move?", a: "Opinion Question. There is something present to have a view on.", bundle: 'pro' },
-        { q: "It has visibly been a rough day. Which move?", a: "Status Question. The mood is the most honest thing available.", bundle: 'pro' },
+        { q: "It has visibly been a rough day. Which move?", a: "Feeling Question. The mood is the most honest thing available.", bundle: 'pro' },
         { q: "Which three types are in Ask About Them?", a: "Purpose, Action and Background.", bundle: 'pro' },
         { q: "A new class, a wedding, a catch-up — which each?", a: "Purpose at the class, Background at the wedding, Action at the catch-up.", bundle: 'pro' },
         { q: "Why is being stuck for a question nearly always a failure to look?", a: "You always have all three of those. That is the point of the group.", bundle: 'pro' },
@@ -5860,7 +5860,7 @@ const memorizeCollections = {
       ]
     },
     {
-      name: "Ask for Theirs",
+      name: "Their Own Exception",
       cards: [
         { q: "What is this strategy?", a: "Asking the person making the claim to find the exception themselves.", bundle: 'free' },
         { q: "When is it the right choice?", a: "When you doubt a sweeping claim but have no case of your own to point at.", bundle: 'free' },
@@ -7623,7 +7623,7 @@ const memorizeCollections = {
       ]
     },
     {
-      name: "The Shared Thread",
+      name: "Pick Up a Previous Thread",
       cards: [
         { q: "What does this opener prove that no other one does?", a: "That you remembered.", bundle: 'free' },
         { q: "Why is \"how did Thursday go\" better than \"how's things\"?", a: "Specific questions have answers. General ones get \"fine\".", bundle: 'free' },
@@ -7644,7 +7644,7 @@ const memorizeCollections = {
         { q: "You cannot work something out and they clearly can. Which move?", a: "Ask for Help. The request is real, which is what makes it work.", bundle: 'pro' },
         { q: "What separates the shared experience from the shared thread?", a: "When the ground was laid. One needs the same hour, the other needs history.", bundle: 'pro' },
         { q: "You have never spoken and you both just sat through the same talk. Which move?", a: "Mention a Shared Experience.", bundle: 'pro' },
-        { q: "A colleague you half know mentioned an interview last month. Which move?", a: "The Shared Thread. It is the stronger of the two, because remembering beats agreeing.", bundle: 'pro' },
+        { q: "A colleague you half know mentioned an interview last month. Which move?", a: "Pick Up a Previous Thread. It is the stronger of the two, because remembering beats agreeing.", bundle: 'pro' },
         { q: "None of the four is true. What then?", a: "A plainer opener. Not every moment has common ground in it.", bundle: 'pro' },
         { q: "What is worse than a simple hello?", a: "A manufactured opener. An invented request or unwanted advice both land as what they are.", bundle: 'pro' },
       ]
@@ -7767,10 +7767,10 @@ const memorizeCollections = {
   showunderstanding: [
     {
       name: "Core Idea",
-      description: "Three moves that between them cover almost everything somebody needs after they have told you something.\n\n1. **Follow-up Question**\n2. **Loop Back**\n3. **Relate Through Sharing**\n\nAsk when the story is unfinished, reflect when it has landed, share once it has been heard. One at a time.",
+      description: "Three moves that between them cover almost everything somebody needs after they have told you something.\n\n1. **Follow-up Question**\n2. **Say It Back**\n3. **Relate Through Sharing**\n\nAsk when the story is unfinished, reflect when it has landed, share once it has been heard. One at a time.",
       cards: [
         { q: "What is the goal of showing understanding?", a: "Actively demonstrating that you followed what someone said — not just listening quietly.", bundle: 'free' },
-        { q: "What are the three moves in this pack?", a: "Follow-up Question, Loop Back, and Relate Through Sharing.", bundle: 'free' },
+        { q: "What are the three moves in this pack?", a: "Follow-up Question, Say It Back, and Relate Through Sharing.", bundle: 'free' },
         { q: "How many should you use at once?", a: "One. Stacking them makes the response about you managing the conversation.", bundle: 'free' },
         { q: "Is understanding the same as agreeing?", a: "No. You can fully understand someone and disagree with them a minute later.", bundle: 'free' },
         { q: "What decides which of the three to use?", a: "Where they are — still telling it, just landed it, or finished and settled.", bundle: 'free' },
@@ -7794,10 +7794,10 @@ const memorizeCollections = {
       ]
     },
     {
-      name: "Loop Back",
+      name: "Say It Back",
       description: "",
       cards: [
-        { q: "What is Loop Back?", a: "Saying their point back in your own words, so they can hear that it arrived — or correct you.", bundle: 'free' },
+        { q: "What is Say It Back?", a: "Saying their point back in your own words, so they can hear that it arrived — or correct you.", bundle: 'free' },
         { q: "What does it sound like?", a: "\"So what you're saying is...\" / \"I hear that you felt frustrated when that happened.\"", bundle: 'free' },
         { q: "Why your own words rather than theirs?", a: "Repeating their exact sentence is parroting. Rephrasing proves the idea went in.", bundle: 'free' },
         { q: "What are the three kinds of loop?", a: "The summary, the feeling named, or the check.", bundle: 'free' },
@@ -7830,14 +7830,14 @@ const memorizeCollections = {
         { q: "What does Raw or Settled read?", a: "How fresh the feeling is — whether they are still inside it or can look at it from outside.", bundle: 'pro' },
         { q: "Can the two cues disagree?", a: "Yes. Somebody can finish a story and still be raw, and then you loop rather than relate.", bundle: 'pro' },
         { q: "They are mid-story and not finished. Which move?", a: "Follow-up Question — a question is permission to carry on.", bundle: 'pro' },
-        { q: "They have just said something that cost them. Which move?", a: "Loop Back — reflect it rather than asking for more.", bundle: 'pro' },
+        { q: "They have just said something that cost them. Which move?", a: "Say It Back — reflect it rather than asking for more.", bundle: 'pro' },
         { q: "They have finished and the air has cleared. Which move?", a: "Relate Through Sharing, briefly.", bundle: 'pro' },
         { q: "Why is there no two-strategy collection in this pack?", a: "Two is a comparison, not a choice. A collection makes you pick between at least three.", bundle: 'pro' },
       ]
     },
     {
       name: "Sequences",
-      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **Loop, Then Ask** — Loop Back → Follow-up Question → Loop Back\n2. **Ask, Then Relate** — Follow-up Question → Loop Back → Relate Through Sharing\n3. **Loop, Loop, Ask** — Loop Back → Loop Back → Follow-up Question\n\nIn each one the order is doing the work, not the individual moves.",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **Loop, Then Ask** — Say It Back → Follow-up Question → Say It Back\n2. **Ask, Then Relate** — Follow-up Question → Say It Back → Relate Through Sharing\n3. **Loop, Loop, Ask** — Say It Back → Say It Back → Follow-up Question\n\nIn each one the order is doing the work, not the individual moves.",
       cards: [
         { q: "What is the order in Loop, Then Ask?", a: "Loop back, ask a follow-up, then loop back again on the new part.", bundle: 'pro' },
         { q: "Why does the loop come before the question?", a: "A question after a loop feels like interest. On its own it can feel like being interviewed.", bundle: 'pro' },
@@ -7881,9 +7881,9 @@ const memorizeCollections = {
   exploringatopic: [
     {
       name: "Core Idea",
-      description: "Five moves for staying inside a subject instead of hopping out of it.\n\n1. **Ask an Open Question**\n2. **Share a Related Experience**\n3. **Build on Their Point**\n4. **Expand to a Subtopic**\n5. **Share, Then Invite**\n\nTwo feed the topic, two go deeper or sideways, and one hands it on.",
+      description: "Five moves for staying inside a subject instead of hopping out of it.\n\n1. **Ask an Open Question**\n2. **Share a Related Experience**\n3. **Build on Their Point**\n4. **Step Sideways**\n5. **Share, Then Invite**\n\nTwo feed the topic, two go deeper or sideways, and one hands it on.",
       cards: [
-        { q: "What are the five moves in this pack?", a: "Ask an Open Question, Share a Related Experience, Build on Their Point, Expand to a Subtopic, and Share, Then Invite.", bundle: 'free' },
+        { q: "What are the five moves in this pack?", a: "Ask an Open Question, Share a Related Experience, Build on Their Point, Step Sideways, and Share, Then Invite.", bundle: 'free' },
         { q: "What is this pack for?", a: "Keeping a subject alive without changing it.", bundle: 'free' },
         { q: "How is it different from Changing Topics?", a: "Here you stay. Expand goes one step sideways, never away.", bundle: 'free' },
         { q: "Do you need to know about the subject to take part?", a: "No. A question is a full contribution.", bundle: 'free' },
@@ -7936,7 +7936,7 @@ const memorizeCollections = {
       ]
     },
     {
-      name: "Expand to a Subtopic",
+      name: "Step Sideways",
       description: "",
       cards: [
         { q: "When do you use it?", a: "When the current thread is running out.", bundle: 'free' },
@@ -7979,7 +7979,7 @@ const memorizeCollections = {
     },
     {
       name: "Sequences",
-      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **The Full Loop** — Ask an Open Question → Build on Their Point → Share, Then Invite\n2. **The Rescue** — Build on Their Point → Expand to a Subtopic → Ask an Open Question\n3. **The Open Door** — Share a Related Experience → Share, Then Invite → Build on Their Point\n\nEach one ends by handing something to the group rather than keeping it.",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **The Full Loop** — Ask an Open Question → Build on Their Point → Share, Then Invite\n2. **The Rescue** — Build on Their Point → Step Sideways → Ask an Open Question\n3. **The Open Door** — Share a Related Experience → Share, Then Invite → Build on Their Point\n\nEach one ends by handing something to the group rather than keeping it.",
       cards: [
         { q: "What is the order in The Full Loop?", a: "Ask, build on the answer, then add your own bit and pass it on.", bundle: 'pro' },
         { q: "Why does The Full Loop end with a hand-off?", a: "Otherwise the whole thing turns into an interview.", bundle: 'pro' },
@@ -8023,9 +8023,9 @@ const memorizeCollections = {
   changingtopics: [
     {
       name: "Core Idea",
-      description: "Six ways to change the subject without it feeling like an interruption.\n\n1. **The Bridge**\n2. **Acknowledge and Redirect**\n3. **Common Ground**\n4. **The Random Switch**\n5. **Steer Away**\n6. **Respectful Exit**\n\nThree build a bridge from the old subject; three close it first.",
+      description: "Six ways to change the subject without it feeling like an interruption.\n\n1. **The Bridge**\n2. **Acknowledge and Redirect**\n3. **Common Ground**\n4. **The Random Switch**\n5. **Steer Away**\n6. **Close and Open**\n\nThree build a bridge from the old subject; three close it first.",
       cards: [
-        { q: "What are the six moves in this pack?", a: "The Bridge, Acknowledge and Redirect, Common Ground, The Random Switch, Steer Away, and Respectful Exit.", bundle: 'free' },
+        { q: "What are the six moves in this pack?", a: "The Bridge, Acknowledge and Redirect, Common Ground, The Random Switch, Steer Away, and Close and Open.", bundle: 'free' },
         { q: "What do people actually notice about a topic change?", a: "Not the change — the gap where it happened.", bundle: 'free' },
         { q: "How is this pack different from Exploring a Topic?", a: "There you stay in the subject. Here you leave it.", bundle: 'free' },
         { q: "Which is the smoothest of the six, and why?", a: "The Bridge. The new subject grows out of their own words.", bundle: 'free' },
@@ -8058,7 +8058,7 @@ const memorizeCollections = {
         { q: "How long should the acknowledgement be?", a: "One short sentence.", bundle: 'free' },
         { q: "What does a long wrap-up sound like?", a: "Building a case for leaving the topic.", bundle: 'free' },
         { q: "What does the little nod do?", a: "Stops the switch feeling abrupt. Without it the new topic reads as \"I wasn't listening.\"", bundle: 'free' },
-        { q: "When is this the right move rather than Respectful Exit?", a: "When the topic has just finished rather than finished a while ago.", bundle: 'pro' },
+        { q: "When is this the right move rather than Close and Open?", a: "When the topic has just finished rather than finished a while ago.", bundle: 'pro' },
         { q: "How does it help when a switch is going to look like dodging?", a: "It shows you heard the thing you are moving on from.", bundle: 'pro' },
         { q: "What is a good wrap for something you genuinely did not enjoy hearing?", a: "Sum it up rather than praise it. \"So it's a waiting game. Makes sense.\"", bundle: 'pro' },
       ]
@@ -8106,7 +8106,7 @@ const memorizeCollections = {
       ]
     },
     {
-      name: "Respectful Exit",
+      name: "Close and Open",
       description: "",
       cards: [
         { q: "When do you use it?", a: "When a topic has been covered, or keeps repeating.", bundle: 'free' },
@@ -8121,21 +8121,21 @@ const memorizeCollections = {
     },
     {
       name: "Collections",
-      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Is There a Bridge** — The Bridge, Common Ground or The Random Switch\n• **Closing the Old One** — Acknowledge and Redirect, Respectful Exit or Steer Away\n• **Reading the Room** — all six, no cue given\n\nThe first asks what you can build from. The second asks what kind of ending the old subject needs.",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **Is There a Bridge** — The Bridge, Common Ground or The Random Switch\n• **Closing the Old One** — Acknowledge and Redirect, Close and Open or Steer Away\n• **Reading the Room** — all six, no cue given\n\nThe first asks what you can build from. The second asks what kind of ending the old subject needs.",
       cards: [
         { q: "What are the three collections in this pack?", a: "Is There a Bridge, Closing the Old One, and Reading the Room.", bundle: 'pro' },
         { q: "What does Is There a Bridge read?", a: "What they last said — a concrete noun, a shared situation, or neither.", bundle: 'pro' },
         { q: "What does Closing the Old One read?", a: "What kind of ending the subject needs — a nod, a naming, or an acknowledgement.", bundle: 'pro' },
         { q: "They mentioned a place you can catch. Which move?", a: "The Bridge.", bundle: 'pro' },
         { q: "They described a situation you have been in yourself. Which move?", a: "Common Ground.", bundle: 'pro' },
-        { q: "The subject is on its third lap. Which move?", a: "Respectful Exit.", bundle: 'pro' },
+        { q: "The subject is on its third lap. Which move?", a: "Close and Open.", bundle: 'pro' },
         { q: "The subject is raw rather than finished. Which move?", a: "Steer Away.", bundle: 'pro' },
         { q: "Why is there no two-strategy collection in this pack?", a: "Two is a comparison, not a choice. A collection makes you pick between at least three.", bundle: 'pro' },
       ]
     },
     {
       name: "Sequences",
-      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **Sensitive to Safe** — Steering Away → The Random Switch → Common Ground\n2. **Exhausted to Fresh** — Respectful Exit → The Bridge → Acknowledge and Redirect\n3. **Stalled to Started** — The Random Switch → Common Ground → The Bridge\n\nAll three end by making the new subject take hold, not just by opening it.",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **Sensitive to Safe** — Steering Away → The Random Switch → Common Ground\n2. **Exhausted to Fresh** — Close and Open → The Bridge → Acknowledge and Redirect\n3. **Stalled to Started** — The Random Switch → Common Ground → The Bridge\n\nAll three end by making the new subject take hold, not just by opening it.",
       cards: [
         { q: "What is the order in Sensitive to Safe?", a: "Defuse without engaging, offer somewhere safer, then pick up whatever they give you.", bundle: 'pro' },
         { q: "Why acknowledge before steering?", a: "It is what stops the steer looking like avoidance.", bundle: 'pro' },
@@ -8179,9 +8179,9 @@ const memorizeCollections = {
   complimenting: [
     {
       name: "Core Idea",
-      description: "Seven ways to say a true thing to someone about themselves.\n\n1. **The Specific Thing**\n2. **Choice, Not Luck**\n3. **Why It Landed**\n4. **Who They Are**\n5. **Where It Counts**\n6. **Take a Compliment**\n7. **Hold Yours Back**\n\nFive give. Two receive, and those two happen to you unprepared.",
+      description: "Seven ways to say a true thing to someone about themselves.\n\n1. **The Specific Thing**\n2. **Choice, Not Luck**\n3. **What It Did**\n4. **Who They Are**\n5. **Where It Counts**\n6. **Take a Compliment**\n7. **Hold Yours Back**\n\nFive give. Two receive, and those two happen to you unprepared.",
       cards: [
-        { q: "What are the seven strategies in this pack?", a: "The Specific Thing, Compliment the Choice Not the Luck, Why It Landed, Who They Are, Where It Counts, Take a Compliment, Answer It Don't Return It.", bundle: 'free' },
+        { q: "What are the seven strategies in this pack?", a: "The Specific Thing, Compliment the Choice Not the Luck, What It Did, Who They Are, Where It Counts, Take a Compliment, Answer It Don't Return It.", bundle: 'free' },
         { q: "What is a compliment, in one line?", a: "Information the other person does not have — nobody sees themselves from outside.", bundle: 'free' },
         { q: "What are the two ways a compliment fails?", a: "Too vague to be believed, or too much to be received.", bundle: 'free' },
         { q: "Which two strategies are about receiving?", a: "Take a Compliment, and Answer It Don't Return It.", bundle: 'free' },
@@ -8220,7 +8220,7 @@ const memorizeCollections = {
       ]
     },
     {
-      name: "Why It Landed",
+      name: "What It Did",
       description: "",
       cards: [
         { q: "What do you add?", a: "What it did to you — the part they cannot see.", bundle: 'free' },
@@ -8291,7 +8291,7 @@ const memorizeCollections = {
     },
     {
       name: "Collections",
-      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **What Are You Praising** — The Specific Thing, Compliment the Choice or Why It Landed\n• **How Far and Who Hears** — Who They Are, Where It Counts or The Specific Thing\n• **One Is Coming At You** — Take a Compliment, Answer It Don't Return It or Why It Landed\n\nThe first asks what goes in the sentence. The second asks how large it should be and who should hear it. The third is the receiving half.",
+      description: "The three collections in this pack, and what each one makes you choose between:\n\n• **What Are You Praising** — The Specific Thing, Compliment the Choice or What It Did\n• **How Far and Who Hears** — Who They Are, Where It Counts or The Specific Thing\n• **One Is Coming At You** — Take a Compliment, Answer It Don't Return It or What It Did\n\nThe first asks what goes in the sentence. The second asks how large it should be and who should hear it. The third is the receiving half.",
       cards: [
         { q: "What are the three collections in this pack?", a: "What Are You Praising, How Far and Who Hears, and One Is Coming At You.", bundle: 'pro' },
         { q: "What does What Are You Praising read?", a: "What you actually have — a moment you saw, a decision they made, or an effect on you.", bundle: 'pro' },

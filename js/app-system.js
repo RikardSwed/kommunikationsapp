@@ -3930,6 +3930,14 @@ if (resetFirstRunBtn) resetFirstRunBtn.addEventListener('click', () => {
 // twice; the developer list is simply the unfiltered one.
 const WHATS_NEW = [
   {
+    version: 'v1.28.67', date: 'September 2026', title: 'Eleven strategies renamed', audience: 'dev',
+    items: [
+      '<strong>278 occurrences across ten packs.</strong> Every one of the eleven names pointed somewhere other than the move it teaches. Five were idioms that mean something else in ordinary English — <em>Respectful Exit</em> reads as leaving the conversation in a pack about staying in it; <em>Get Out Cleanly</em> reads as escaping when the move is handing the floor back. Four pointed at a sibling strategy in the same pack: <em>Expand to a Subtopic</em> described what <em>Build on Their Point</em> does, and its own back-guide had to correct it in writing.',
+      '<strong>Loop Back is now Say It Back</strong>, which the library already used in First Strategies for the same move with the identical back-guide. One move, one name. The pack that misnamed it had written four Challenges cards about handing the floor back rather than paraphrasing — the name, not carelessness, put them there.',
+      'Two renames made a front guide repeat its own strategy name and were rewritten (§11b-VI), and <em>Step Sideways</em> let one of the remaining negating guides go: <em>A neighbouring subject, not a new one</em> became <em>A neighbouring subject</em>, because a clear name does the work the negation was doing.',
+    ],
+  },
+  {
     version: 'v1.28.66', date: 'September 2026', title: 'The D-sweep, applied across nine packs', audience: 'dev',
     items: [
       '<strong>Sixteen cards rewritten and three guides reworded</strong>, all of them found by reading the inherited back-guide against the reply it sits above. Nine packs, all at 0 errors afterwards. Seven cards taught a move their pack does not have and were replaced in place; nine were faithful to their deck but not to the strategy named in the bracket.',
@@ -5821,7 +5829,7 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
             '<strong>one</strong> at a time.</p>' +
             '<div class="ob-how">' +
             '<div class="ob-how-row"><span class="ob-how-num">1</span><p><strong>Follow-up Question</strong> &mdash; ask what only a listener could ask.</p></div>' +
-            '<div class="ob-how-row"><span class="ob-how-num">2</span><p><strong>Loop Back</strong> &mdash; say their point back in your own words.</p></div>' +
+            '<div class="ob-how-row"><span class="ob-how-num">2</span><p><strong>Say It Back</strong> &mdash; say their point back in your own words.</p></div>' +
             '<div class="ob-how-row"><span class="ob-how-num">3</span><p><strong>Relate Through Sharing</strong> &mdash; offer something of your own.</p></div>' +
             '</div>' +
             '<p class="ob-text ob-text--dim">The next pages explain each one, and how to choose.</p>'
@@ -5836,7 +5844,7 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
             '<p class="ob-text ob-text--dim">&ldquo;It\u2019s been a lot since the move.&rdquo;<br>&rarr; &ldquo;A lot how &mdash; the flat, or everything at once?&rdquo;</p>'
         },
         {
-          title: 'Loop Back',
+          title: 'Say It Back',
           html:
             '<p class="ob-text">Say their point back in your own words, so they can hear that ' +
             'it arrived intact &mdash; or correct you before it costs anyone anything.</p>' +
@@ -6166,7 +6174,7 @@ if (clearExtendedBtn) clearExtendedBtn.addEventListener('click', () => {
             'is not standing on top of it.</p>' +
             '<div class="ob-how">' +
             '<div class="ob-how-row"><span class="ob-how-num">1</span><p><strong>Acknowledge and Redirect</strong> &mdash; a short wrap-up, then the new subject.</p></div>' +
-            '<div class="ob-how-row"><span class="ob-how-num">2</span><p><strong>Respectful Exit</strong> &mdash; for a topic that has been covered, or is going round again.</p></div>' +
+            '<div class="ob-how-row"><span class="ob-how-num">2</span><p><strong>Close and Open</strong> &mdash; for a topic that has been covered, or is going round again.</p></div>' +
             '</div>' +
             '<p class="ob-text ob-text--dim">&ldquo;Sounds like an amazing trip &mdash; I think we&rsquo;ve covered it well. So what else is new?&rdquo;</p>'
         },

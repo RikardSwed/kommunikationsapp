@@ -1292,7 +1292,7 @@ const collections = {
       ]
     },
     {
-      name: "Park It",
+      name: "Promise a Return",
       guideFront: "Say you will return to it when...",
       guideBack: "A promise to continue",
       description: "Say that you want to think about it and will return to it — and then actually do.\n\nIt works because some things genuinely cannot be answered well in the moment, and pretending otherwise produces a response neither of you can rely on. It also removes the pressure of the audience, the moment and the surprise, all of which push towards a reaction rather than a view.\n\nThe condition is the return. A deferral without a time is avoidance, and the other person is left waiting for something that never comes — which is worse than a poor answer in the moment.\n\nTypical phrases: \"Can I think about that and come back to you?\", \"I'd like to sit with it. Tomorrow?\", \"Ask me again at the weekend.\", \"I'll have thought about it by Thursday.\"\n\nFour ways to defer:\n\n1. Name when you will return — essential. \"Let me think about it. I'll say something tomorrow.\"\n\n2. Say why you are not answering now — makes it honest rather than evasive. \"I'd give you a reaction rather than an answer if I did it now.\"\n\n3. Ask for their timing — practical and considerate. \"When do you need me to have a view?\"\n\n4. Come back unprompted — the part that makes it worth anything. Raise it yourself, on the day you said.\n\nMindset: give a time and keep it. Deferring is only better than a bad answer if the return actually happens.",
@@ -1472,7 +1472,7 @@ const collections = {
       ]
     },
     {
-      name: "Get Out Cleanly",
+      name: "Return the Floor",
       guideFront: "Say your bit, then give the floor back when...",
       guideBack: "A line handing the floor back",
       description: "Say the thing you interrupted for, and then hand the floor back on purpose. The five moves before this one are all about getting in; this is the only one about getting out, and it is the half most people skip.\n\nIt works because an interruption is a loan, not a transfer. If you take the floor and keep it, the interruption becomes a takeover in the other person's memory, however politely you got in. If you take it, use it, and give it back with a sentence, they usually cannot remember being interrupted at all.\n\nThe two halves both matter. Landing the point means actually saying the thing — a lot of interruptions collapse into an apology and never deliver what they were for, which wastes everyone's time and teaches you that interrupting does not work. Handing it back means naming that they were mid-sentence and inviting them on.\n\nTypical phrases: \"That's all from me — you were partway through, sorry. Carry on.\", \"Right, got it. Go on, you were mid-thing.\", \"That's my bit. Back to you.\"\n\nThree ways to hand it back:\n\n1. Name where they were — \"you were on the second point.\" It proves you were still listening while you spoke.\n\n2. Give it back with a hand gesture and four words — \"anyway, sorry, go on.\" The shortest version, and usually enough.\n\n3. Ask them to continue by name — \"Sara, you were saying.\" Strongest in a group, where the floor can otherwise drift to whoever speaks next.\n\nMindset: say it, then give it back. An interruption you do not close is the one they remember.",
@@ -1784,7 +1784,7 @@ const collections = {
       ]
     },
     {
-      name: "What It Is Like",
+      name: "What It Resembles",
       guideFront: "Compare it to something they know when...",
       guideBack: "A known thing, one change",
       description: "Describe the thing by comparing it to something the other person already knows, and then say how it differs. It is the fastest way to put a picture in somebody's head, because you are borrowing one they already have.\n\nIt reaches the case the other five cannot: when they have never seen one. Size, colour and purpose all assume the listener can assemble a thing out of parts. A comparison hands them a finished thing and asks for one change.\n\nTypical phrases: \"Think of a…, but…\", \"It's like a… except…\", \"Somewhere between a… and a…\", \"Same idea as a…, only…\"\n\nFour ways to compare:\n\n1. The known thing, one change — the standard. \"Think of a garlic press, but bigger and for potatoes.\"\n\n2. Between two knowns — for anything that sits in a gap. \"Somewhere between a pear and an apple, but softer than both.\"\n\n3. The familiar setting, altered — for places rather than objects. \"Imagine a train station, but the roof is glass and it's full of market stalls.\"\n\n4. Same job, different shape — when the use is shared and the look is not. \"It does what a whisk does. It just looks nothing like one.\"\n\nPick something they have actually met. A comparison to a second thing they do not know leaves them with two unknowns instead of one.\n\nMindset: you are borrowing a picture they already have. One change is usually enough — a second change starts taking the picture apart again.",
@@ -5360,7 +5360,7 @@ const collections = {
       ]
     },
     {
-      name: "Status Question",
+      name: "Feeling Question",
       guideFront: "Ask how they are, properly, when...",
       guideBack: "Their honest answer, then yours",
       description: "Ask how they are right now — properly, not as a greeting — and then answer it yourself. Asked first, it reads as noticing them; answered afterwards, it stops being a check-up. Example: \"How are you holding up today?\" and then, \"I'm running on about four hours' sleep, so not brilliantly.\"\n\nThree ways to ask it so it gets a real answer:\n1. Attach it to the moment — \"Long week for you too?\"\n2. Ask about a specific thing — \"How are you feeling about this afternoon?\"\n3. Mark it as the real question — \"How are you, actually?\"\n\nYour own answer is what makes it safe to have been honest. If they say they are tired and you say nothing back, they have given you something and got nothing.\n\nMindset: the ritual \"how are you\" expects \"fine\". This one expects an answer, which means you have to be ready to give one too.",
@@ -5392,7 +5392,7 @@ const collections = {
       ]
     },
     {
-      name: "Background Question",
+      name: "Arrival Question",
       guideFront: "Ask what led up to now when...",
       guideBack: "Their run-up, then yours",
       description: "Ask where they have come from or what happened before this, then say the same about yourself. It is the question that most reliably produces a small story rather than a word, because everybody came from somewhere. Example: \"Where have you come from?\" and then, \"I came straight from work and I'm starving.\"\n\nThree ways to ask it:\n1. The journey — \"Did you come far?\"\n2. The immediate before — \"Where have you come from?\"\n3. The connection — \"How do you know everyone here?\"\n\nThe third one is the most useful at weddings, dinners and parties, where the honest answer is always a story and it is always about somebody in the room.\n\nMindset: this is the question with the highest chance of an actual anecdote. Ask it, listen for the detail, and then give one of your own.",
@@ -5506,7 +5506,7 @@ const collections = {
       ]
     },
     {
-      name: "Ask for Theirs",
+      name: "Their Own Exception",
       guideFront: "Ask them to find the exception when...",
       guideBack: "A question that hands them the search",
       description: "When you doubt a sweeping claim but have no case of your own, ask the person making it to look for one.\n\nIt does three things at once, and the third is the reason to use it even when you do have an example. It gets you information you did not have. It makes them test their own claim from the inside, which is harder to dismiss than being tested from outside. And it turns a two-sided argument into a shared search \u2014 you are both looking at the same question instead of at each other.\n\nThe last version of it is the strongest and the least used: ask them to argue the other side. Someone who has just made a case for something can usually make the case against it too, and hearing them do it tells you more about what they actually think than another round of disagreement would.\n\nTypical phrases: \"Can you think of anyone it hasn't been true for?\", \"Is there a case where you'd say it doesn't hold?\", \"Argue the other side for me for a second.\"\n\nThree ways to hand over the search:\n\n1. Ask for the exception \u2014 \"does it have edges?\" The simplest version, and it costs them nothing to answer.\n\n2. Ask what would change their mind \u2014 this finds out whether the claim is a view or a wall.\n\n3. Ask them to argue against themselves \u2014 the one that produces something neither of you expected.\n\nMindset: not having a case is not a reason to go quiet. It is a reason to ask a better question.",
@@ -8036,7 +8036,7 @@ const collections = {
       ]
     },
     {
-      name: "The Shared Thread",
+      name: "Pick Up a Previous Thread",
       guideFront: "Ask about the ongoing thing when...",
       guideBack: "A question about something they mentioned",
       description: "Ask about something already running between you. Their project, their trip, the thing they mentioned last week, how the move went, whether the exam happened. It is the opener for people you already know a little and have not spoken to for a while.\n\nIt works because it costs the other person nothing to answer and proves something no other opener proves: that you remembered. That is a small thing to do and a surprisingly large thing to receive.\n\nIt is also the opener most often missed. People default to a greeting with someone they half know, when a single specific question would have started an actual conversation.\n\nTypical phrases: \"How's the… going?\", \"Did you ever…?\", \"How did the… go in the end?\", \"Whatever happened with…?\"\n\nFour ways to pick up a thread:\n\n1. Ask how the ongoing thing is going — the standard version. \"How's the extension coming along?\"\n\n2. Ask how a specific event went — better, because it has an answer. \"How did the interview go?\"\n\n3. Follow up on something they worried about — this one carries weight. \"Did your mum's appointment go alright?\"\n\n4. Return to a topic you both enjoyed — picks the conversation back up mid-air. \"Did you ever finish that series you were telling me about?\"\n\nMindset: specific beats general every time. \"How's things?\" gets \"fine\"; \"how did Thursday go?\" gets an answer.",
@@ -8136,7 +8136,7 @@ const collections = {
       ]
     },
     {
-      name: "Loop Back",
+      name: "Say It Back",
       guideFront: "Say their point back in your words when...",
       guideBack: "Their point, in your words",
       description: "You say their point back in your own words, so they can hear that it arrived intact — or correct you if it did not.\n\nIt works because almost nothing else in a conversation lets somebody find out whether they have been understood. They can guess from your face. A loop tells them.\n\nIt sounds like it adds nothing, which is why it is the most underrated move here. What it actually does is finish something the other person started and could not finish alone.\n\nTypical phrases: \"So what you're saying is...\", \"I hear that you felt frustrated when that happened.\", \"You mean the situation was hard because...\"\n\nThree kinds of loop:\n\n1. The summary — the shape of the whole thing. \"So the deadline moved and nobody told you.\"\n\n2. The feeling named — the part they did not say out loud. \"That sounds like it was more embarrassing than annoying.\"\n\n3. The check — offered as a question, so they can fix it. \"Have I got that right? It's the not being asked that bothers you.\"\n\nUse your own words, not theirs. Repeating someone's exact sentence back is parroting; rephrasing it proves the idea went in rather than the syllables.\n\nMindset: being slightly wrong is useful here. \"No, not annoyed — disappointed\" is somebody getting closer to their own point, which is exactly what you were offering.",
@@ -8218,9 +8218,9 @@ const collections = {
       ]
     },
     {
-      name: "Expand to a Subtopic",
-      guideFront: "Step sideways into something close by when...",
-      guideBack: "A neighbouring subject, not a new one",
+      name: "Step Sideways",
+      guideFront: "Try the subject beside it when...",
+      guideBack: "A neighbouring subject",
       description: "When the current thread is running out, step sideways into something close by rather than away from the topic. Gardening moves to indoor plants; sport moves from playing to watching. Example: the balcony garden talk dries up — \"Does anyone keep plants indoors? Mine never survive.\"\n\nThree directions the sideways step can take:\n\n1. Same subject, new setting — gardening outdoors becomes plants indoors.\n\n2. Doing it becomes watching it — playing football becomes following it.\n\n3. The thing becomes the things around it — dogs becomes vets, cooking becomes eating out.\n\nHow far is too far: if people have to stop and ask what you are talking about, that was not an expansion, it was a new topic.\n\nMindset: a fading topic usually has more in it than it looks. Reach for the next room before you leave the house.",
       inputs: [
         { q: "The talk about balcony gardening is running out of steam.", a: "\"Does anyone keep plants indoors? Mine never survive the winter.\"", bundle: 'free' },
@@ -8332,7 +8332,7 @@ const collections = {
       ]
     },
     {
-      name: "Respectful Exit",
+      name: "Close and Open",
       guideFront: "Close the topic warmly when...",
       guideBack: "One way it could sound",
       description: "When a topic's been covered or keeps repeating, close it politely and open something new. You signal you valued it, then move on cleanly. Example: \"I think we've done that one justice! So — what else is going on with you?\"\n\nThree ways to close it warmly:\n\n1. Give it credit — \"I think we've done that one justice!\"\n\n2. Name the loop kindly — \"We could go round on this all night, couldn't we?\"\n\n3. Draw a friendly line — \"Let's park that one. What else is going on with you?\"\n\nWarmth is what makes it respectful. The same words said flatly are a dismissal; said with a smile they are a shared decision, and most people are relieved somebody said it first.\n\nSay it once and clearly. A hint on a topic this sticky gets absorbed and the subject carries straight on, and a second hint starts to feel as though something is wrong between you. Being plain is the kinder version.\n\nMindset: letting a topic end is part of a good conversation. Your job is flow, not endurance.",
@@ -8382,8 +8382,8 @@ const collections = {
       ]
     },
     {
-      name: "Why It Landed",
-      guideFront: "Add what it did to you when...",
+      name: "What It Did",
+      guideFront: "Say the effect on you when...",
       guideBack: "The effect it had on you",
       description: "Add what it did to you. Not just \"that was good\" — \"that was good, and I have been thinking about it since.\"\n\nIt works because the effect is the part they cannot see. They know what they did; they do not know that it changed your afternoon, or that you repeated it to someone else, or that you have used it twice since. That is genuinely new information, and it is the difference between a polite remark and something a person remembers for years.\n\nIt is also unarguable. Someone can wave away \"that was brilliant\" — they cannot wave away \"I went home and told my partner about it.\"\n\nTypical phrases: \"I've been thinking about it since.\", \"I told two people about that.\", \"I've started doing it your way.\", \"It made the whole day easier.\"\n\nThree effects worth reporting:\n\n1. What you did differently — the strongest, because it is proof. \"I've copied that.\"\n\n2. What you felt — simple and true. \"I was relieved when you said it.\"\n\n3. What you told someone else — flattering without being flattery, because it happened.\n\nMindset: they know what they did. What they cannot know is what it did.",
       inputs: [
@@ -9678,10 +9678,10 @@ const collectionsModeData = {
       inputs: [
         { q: "Someone says something that stops you completely.", a: "\"Give me a second with that.\" [Name the Pause]", guideBack: "A request for a second", bundle: 'pro' },
         { q: "A friend tells you something serious you were not expecting.", a: "\"I don't know what to say. I'm glad you told me, though.\" [Admit the Blank]", guideBack: "An honest admission", bundle: 'pro' },
-        { q: "You are asked for a view on something big.", a: "\"Can I think about it and come back to you tomorrow?\" [Park It]", guideBack: "A promise to continue", bundle: 'pro' },
+        { q: "You are asked for a view on something big.", a: "\"Can I think about it and come back to you tomorrow?\" [Promise a Return]", guideBack: "A promise to continue", bundle: 'pro' },
         { q: "You have gone quiet and the silence is stretching.", a: "\"Sorry — I'm thinking, not sulking.\" [Name the Pause]", guideBack: "A request for a second", bundle: 'pro' },
         { q: "You are about to give a hollow automatic reply.", a: "\"I could say something stock. I'd rather say I don't know.\" [Admit the Blank]", guideBack: "An honest admission", bundle: 'pro' },
-        { q: "Answering now would only produce a reaction.", a: "\"You'd get my reaction rather than my view. Give me a day.\" [Park It]", guideBack: "A promise to continue", bundle: 'pro' },
+        { q: "Answering now would only produce a reaction.", a: "\"You'd get my reaction rather than my view. Give me a day.\" [Promise a Return]", guideBack: "A promise to continue", bundle: 'pro' },
         { q: "Someone has said something big and is watching your face.", a: "\"I'm not going to have a good answer straight away.\" [Name the Pause]", guideBack: "A request for a second", bundle: 'pro' },
         { q: "Every response you can think of sounds wrong.", a: "\"Everything I can think of sounds wrong. So: I don't know what to say.\" [Admit the Blank]", guideBack: "An honest admission", bundle: 'pro' },
       ]
@@ -9712,9 +9712,9 @@ const collectionsModeData = {
         { q: "You have taken the second and still have nothing.", a: "\"I honestly don't know what to say.\" [Admit the Blank]", guideBack: "An honest admission", bundle: 'pro' },
         { q: "You want to understand before you respond at all.", a: "\"What made you say it? I'd like the background first.\" [Ask What Prompted It]", guideBack: "A question about the reason", bundle: 'pro' },
         { q: "They are waiting and you have part of an answer.", a: "\"On the practical bit, yes. On the rest, I don't know yet.\" [Answer Part of It]", guideBack: "The half you can speak to", bundle: 'pro' },
-        { q: "It is genuinely too big for a corridor conversation.", a: "\"Can we do this properly tomorrow? I'll have thought by then.\" [Park It]", guideBack: "A promise to continue", bundle: 'pro' },
+        { q: "It is genuinely too big for a corridor conversation.", a: "\"Can we do this properly tomorrow? I'll have thought by then.\" [Promise a Return]", guideBack: "A promise to continue", bundle: 'pro' },
         { q: "Someone is blaming themselves and you cannot fix it.", a: "\"I don't know how the rest works. I do know it isn't your fault.\" [Answer Part of It]", guideBack: "The half you can speak to", bundle: 'pro' },
-        { q: "You said you would come back and the day has arrived.", a: "\"I said I'd come back to Tuesday. Can we?\" [Park It]", guideBack: "A promise to continue", bundle: 'pro' },
+        { q: "You said you would come back and the day has arrived.", a: "\"I said I'd come back to Tuesday. Can we?\" [Promise a Return]", guideBack: "A promise to continue", bundle: 'pro' },
         { q: "Someone drops a piece of news in the middle of something else.", a: "\"Hang on — go back. What's happened?\" [Ask What Prompted It]", guideBack: "A question about the reason", bundle: 'pro' },
       ]
     },
@@ -9979,7 +9979,7 @@ const collectionsModeData = {
       name: "Painting the Picture",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "The moves that make something vivid rather than merely identifiable: size and shape, material, texture and colour, where you find it, and the comparison that hands them a finished picture to adjust.\n\nUse them when the listener does not need to find the thing, only to imagine it — a story, a place you visited, something you are describing for the pleasure of it.\n\nThe four options:\n1. Size and Shape — how big, and what form. \"About the size of a loaf of bread.\"\n2. Material, Texture and Colour — the feel of it. \"Dark blue, almost navy.\"\n3. Where You Find It — its usual spot, and its age. \"Original floors, everything a bit worn.\"\n4. What It Is Like — borrow a picture they have. \"Imagine a train station, but the roof is glass.\"\n\nMindset: one precise sensory detail does more than five general ones.",
+      description: "The moves that make something vivid rather than merely identifiable: size and shape, material, texture and colour, where you find it, and the comparison that hands them a finished picture to adjust.\n\nUse them when the listener does not need to find the thing, only to imagine it — a story, a place you visited, something you are describing for the pleasure of it.\n\nThe four options:\n1. Size and Shape — how big, and what form. \"About the size of a loaf of bread.\"\n2. Material, Texture and Colour — the feel of it. \"Dark blue, almost navy.\"\n3. Where You Find It — its usual spot, and its age. \"Original floors, everything a bit worn.\"\n4. What It Resembles — borrow a picture they have. \"Imagine a train station, but the roof is glass.\"\n\nMindset: one precise sensory detail does more than five general ones.",
       inputs: [
         { q: "A friend asks what the café you liked was like.", a: "\"Tiny. Four tables, and you had to turn sideways to get past the counter.\" [Size and Shape]", guideBack: "How big, and what shape", bundle: 'pro' },
         { q: "They ask what made it feel nice.", a: "\"Everything was dark wood, and worn smooth where people had leaned on it.\" [Material, Texture and Colour]", guideBack: "How it looks and feels", bundle: 'pro' },
@@ -9987,7 +9987,7 @@ const collectionsModeData = {
         { q: "You are describing the beach you walked on.", a: "\"Not sand — flat grey stones, and they clacked under your feet.\" [Material, Texture and Colour]", guideBack: "How it looks and feels", bundle: 'pro' },
         { q: "They ask how big the hotel room was.", a: "\"You could touch both walls standing in the middle. Genuinely.\" [Size and Shape]", guideBack: "How big, and what shape", bundle: 'pro' },
         { q: "You are describing a jacket you saw and want.", a: "\"Deep green, almost bottle green, and a soft matte fabric — not shiny at all.\" [Material, Texture and Colour]", guideBack: "How it looks and feels", bundle: 'pro' },
-        { q: "They ask what the old market hall felt like.", a: "\"Think of a train station, but the roof is glass and it's full of market stalls.\" [What It Is Like]", guideBack: "A known thing, one change", bundle: 'pro' },
+        { q: "They ask what the old market hall felt like.", a: "\"Think of a train station, but the roof is glass and it's full of market stalls.\" [What It Resembles]", guideBack: "A known thing, one change", bundle: 'pro' },
         { q: "A friend asks where the restaurant you keep mentioning is.", a: "\"Top of the hill, past the school, with a blue door.\" [Where You Find It]", guideBack: "Its usual spot, and its age", bundle: 'pro' },
       ]
     },
@@ -9995,7 +9995,7 @@ const collectionsModeData = {
       name: "All Six",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "The full set, and the choice is the skill. Any of the six moves could be the useful one, and the good description is rarely all of them — it is two or three, picked because they are the ones this listener needs.\n\nThe six, with the cue for each:\n1. Name and Main Details — they need to identify it. \"It's the round sort, not the flat sort.\"\n2. Size and Shape — they need to picture it. \"About the size of a loaf of bread.\"\n3. Material, Texture and Colour — the feel of it matters. \"Dark blue, almost navy.\"\n4. Where You Find It — position will find it faster. \"The one next to the door.\"\n5. What It Is For — purpose narrows faster than appearance. \"It's for opening jars.\"\n6. What It Is Like — they have never seen one. \"Think of a garlic press, but bigger.\"\n\nMindset: describing everything is the same as describing nothing. Choose.",
+      description: "The full set, and the choice is the skill. Any of the six moves could be the useful one, and the good description is rarely all of them — it is two or three, picked because they are the ones this listener needs.\n\nThe six, with the cue for each:\n1. Name and Main Details — they need to identify it. \"It's the round sort, not the flat sort.\"\n2. Size and Shape — they need to picture it. \"About the size of a loaf of bread.\"\n3. Material, Texture and Colour — the feel of it matters. \"Dark blue, almost navy.\"\n4. Where You Find It — position will find it faster. \"The one next to the door.\"\n5. What It Is For — purpose narrows faster than appearance. \"It's for opening jars.\"\n6. What It Resembles — they have never seen one. \"Think of a garlic press, but bigger.\"\n\nMindset: describing everything is the same as describing nothing. Choose.",
       inputs: [
         { q: "Someone is going to your flat to fetch something and asks what to look for.", a: "\"Small black notebook with an elastic band round it.\" [Name and Main Details]", guideBack: "The name, and what marks it out", bundle: 'pro' },
         { q: "They ask where in the flat it is.", a: "\"On the desk, under the lamp, probably with a pen on top of it.\" [Where You Find It]", guideBack: "Its usual spot, and its age", bundle: 'pro' },
@@ -10003,7 +10003,7 @@ const collectionsModeData = {
         { q: "You are describing a plant to someone at a garden centre.", a: "\"It's for a north-facing window that gets almost no sun.\" [What It Is For]", guideBack: "The purpose, as a clue", bundle: 'pro' },
         { q: "They ask what the plant you already have looks like.", a: "\"Big waxy leaves, dark green, and they feel almost like plastic.\" [Material, Texture and Colour]", guideBack: "How it looks and feels", bundle: 'pro' },
         { q: "A friend asks about the flat you are viewing.", a: "\"Two rooms, and the second one is barely wider than the bed.\" [Size and Shape]", guideBack: "How big, and what shape", bundle: 'pro' },
-        { q: "They ask what state it was in.", a: "\"Like your old place before you did it up — sound, but everything a bit worn.\" [What It Is Like]", guideBack: "A known thing, one change", bundle: 'pro' },
+        { q: "They ask what state it was in.", a: "\"Like your old place before you did it up — sound, but everything a bit worn.\" [What It Resembles]", guideBack: "A known thing, one change", bundle: 'pro' },
         { q: "Someone asks what the odd hook by your front door is for.", a: "\"Coats, in theory. It holds the dog lead and nothing else.\" [What It Is For]", guideBack: "The purpose, as a clue", bundle: 'pro' },
       ]
     },
@@ -11586,31 +11586,31 @@ const collectionsModeData = {
       name: "Ask About Now",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "A choice between the two questions that work off what is already in front of you: Opinion (there is something present to have a view on) and Status (the mood is the most honest thing available). Opinion fits when you can both see the thing; Status fits when the state of the room, or of them, is what you would actually notice. Example: in front of a painting an Opinion question lands; at the end of a visibly rough day a Status one does.\n\nThe two options:\n1. Opinion Question — there is something present to react to. \"What do you make of this?\"\n2. Status Question — the mood is worth asking about. \"How are you holding up today?\"\n\nLook before you choose. If there is a thing you are both looking at, ask about the thing; if the room has a feeling, ask about that.\n\nMindset: both of these read the moment rather than importing a subject. That is what stops them sounding rehearsed.",
+      description: "A choice between the two questions that work off what is already in front of you: Opinion (there is something present to have a view on) and Status (the mood is the most honest thing available). Opinion fits when you can both see the thing; Status fits when the state of the room, or of them, is what you would actually notice. Example: in front of a painting an Opinion question lands; at the end of a visibly rough day a Status one does.\n\nThe two options:\n1. Opinion Question — there is something present to react to. \"What do you make of this?\"\n2. Feeling Question — the mood is worth asking about. \"How are you holding up today?\"\n\nLook before you choose. If there is a thing you are both looking at, ask about the thing; if the room has a feeling, ask about that.\n\nMindset: both of these read the moment rather than importing a subject. That is what stops them sounding rehearsed.",
       inputs: [
         { q: "You are both looking at the same painting in a gallery.", a: "\"What do you make of this one?\" [Opinion Question]", guideBack: "Their view, then yours", bundle: 'pro' },
-        { q: "You meet someone at the end of a clearly rough day for both of you.", a: "\"How are you holding up today?\" [Status Question]", guideBack: "Their honest answer, then yours", bundle: 'pro' },
+        { q: "You meet someone at the end of a clearly rough day for both of you.", a: "\"How are you holding up today?\" [Feeling Question]", guideBack: "Their honest answer, then yours", bundle: 'pro' },
         { q: "A film has just finished and the room has gone quiet.", a: "\"What did you think of that?\" [Opinion Question]", guideBack: "Their view, then yours", bundle: 'pro' },
-        { q: "The mood in the room is low and everyone is flagging.", a: "\"Long week for you too?\" [Status Question]", guideBack: "Their honest answer, then yours", bundle: 'pro' },
+        { q: "The mood in the room is low and everyone is flagging.", a: "\"Long week for you too?\" [Feeling Question]", guideBack: "Their honest answer, then yours", bundle: 'pro' },
         { q: "Someone sits next to you at a talk that has not started.", a: "\"Have you seen this speaker before?\" [Opinion Question]", guideBack: "Their view, then yours", bundle: 'pro' },
-        { q: "You are both waiting, clearly tired, early in the morning.", a: "\"Are you awake yet? Genuinely.\" [Status Question]", guideBack: "Their honest answer, then yours", bundle: 'pro' },
+        { q: "You are both waiting, clearly tired, early in the morning.", a: "\"Are you awake yet? Genuinely.\" [Feeling Question]", guideBack: "Their honest answer, then yours", bundle: 'pro' },
         { q: "You are both standing in front of a menu neither of you has seen before.", a: "\"What looks good to you?\" [Opinion Question]", guideBack: "Their view, then yours", bundle: 'pro' },
-        { q: "Someone has just come out of a long meeting looking wrung out.", a: "\"Survived it?\" [Status Question]", guideBack: "Their honest answer, then yours", bundle: 'pro' },
+        { q: "Someone has just come out of a long meeting looking wrung out.", a: "\"Survived it?\" [Feeling Question]", guideBack: "Their honest answer, then yours", bundle: 'pro' },
       ]
     },
     {
       name: "Ask About Them",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "A choice between the three questions that ask them for something of their own: Purpose (why they are here), Action (what they are doing) and Background (where they came from). All three work when there is nothing present to react to — pick whichever the situation makes obvious. Example: at a new class, Purpose is the natural one; at a wedding, Background is.\n\nThe three options:\n1. Purpose Question — you are both somewhere on purpose. \"What brought you along?\"\n2. Action Question — you want something concrete. \"What are you working on at the moment?\"\n3. Background Question — a small story is likely. \"How do you know everyone here?\"\n\nChoose by the situation rather than by preference: a course suggests Purpose, a catch-up suggests Action, a party full of strangers suggests Background.\n\nMindset: you always have all three. That is the point of the group — you are never actually stuck for a question.",
+      description: "A choice between the three questions that ask them for something of their own: Purpose (why they are here), Action (what they are doing) and Background (where they came from). All three work when there is nothing present to react to — pick whichever the situation makes obvious. Example: at a new class, Purpose is the natural one; at a wedding, Background is.\n\nThe three options:\n1. Purpose Question — you are both somewhere on purpose. \"What brought you along?\"\n2. Action Question — you want something concrete. \"What are you working on at the moment?\"\n3. Arrival Question — a small story is likely. \"How do you know everyone here?\"\n\nChoose by the situation rather than by preference: a course suggests Purpose, a catch-up suggests Action, a party full of strangers suggests Background.\n\nMindset: you always have all three. That is the point of the group — you are never actually stuck for a question.",
       inputs: [
         { q: "First evening of a course where nobody knows anybody.", a: "\"What made you sign up for this?\" [Purpose Question]", guideBack: "Their reason, then yours", bundle: 'pro' },
         { q: "An old friend asks what is new and you want to turn it round.", a: "\"What have you been up to lately?\" [Action Question]", guideBack: "What they are doing, then yours", bundle: 'pro' },
-        { q: "You sit down next to a stranger at a wedding.", a: "\"How do you know the couple?\" [Background Question]", guideBack: "Their run-up, then yours", bundle: 'pro' },
+        { q: "You sit down next to a stranger at a wedding.", a: "\"How do you know the couple?\" [Arrival Question]", guideBack: "Their run-up, then yours", bundle: 'pro' },
         { q: "You join a volunteering day where everyone is new.", a: "\"How did you end up here?\" [Purpose Question]", guideBack: "Their reason, then yours", bundle: 'pro' },
         { q: "A neighbour is out in the garden as you pass.", a: "\"What are you doing to it?\" [Action Question]", guideBack: "What they are doing, then yours", bundle: 'pro' },
-        { q: "Someone arrives at a dinner having travelled a long way.", a: "\"How far did you come?\" [Background Question]", guideBack: "Their run-up, then yours", bundle: 'pro' },
-        { q: "Someone at the table has an accent you cannot place.", a: "\"Whereabouts are you from originally?\" [Background Question]", guideBack: "Their run-up, then yours", bundle: 'pro' },
+        { q: "Someone arrives at a dinner having travelled a long way.", a: "\"How far did you come?\" [Arrival Question]", guideBack: "Their run-up, then yours", bundle: 'pro' },
+        { q: "Someone at the table has an accent you cannot place.", a: "\"Whereabouts are you from originally?\" [Arrival Question]", guideBack: "Their run-up, then yours", bundle: 'pro' },
         { q: "A friend of a friend says they work in something you have never heard of.", a: "\"What does that actually involve, day to day?\" [Action Question]", guideBack: "What they are doing, then yours", bundle: 'pro' },
       ]
     },
@@ -11622,12 +11622,12 @@ const collectionsModeData = {
       inputs: [
         { q: "You are both looking at the same painting in a gallery.", a: "\"What do you make of this one?\" [Opinion Question]", guideBack: "Their view, then yours", bundle: 'pro' },
         { q: "First evening of a course where nobody knows anybody.", a: "\"What made you sign up?\" [Purpose Question]", guideBack: "Their reason, then yours", bundle: 'pro' },
-        { q: "You meet someone at the end of a rough day for both of you.", a: "\"How are you holding up?\" [Status Question]", guideBack: "Their honest answer, then yours", bundle: 'pro' },
+        { q: "You meet someone at the end of a rough day for both of you.", a: "\"How are you holding up?\" [Feeling Question]", guideBack: "Their honest answer, then yours", bundle: 'pro' },
         { q: "Catching up with someone you have not seen for a year.", a: "\"What have you been up to lately?\" [Action Question]", guideBack: "What they are doing, then yours", bundle: 'pro' },
-        { q: "You sit down next to a stranger at a wedding.", a: "\"How do you know the couple?\" [Background Question]", guideBack: "Their run-up, then yours", bundle: 'pro' },
-        { q: "Standing by the coffee at a work event, silence settling in.", a: "\"How's your day been?\" [Status Question]", guideBack: "Their honest answer, then yours", bundle: 'pro' },
+        { q: "You sit down next to a stranger at a wedding.", a: "\"How do you know the couple?\" [Arrival Question]", guideBack: "Their run-up, then yours", bundle: 'pro' },
+        { q: "Standing by the coffee at a work event, silence settling in.", a: "\"How's your day been?\" [Feeling Question]", guideBack: "Their honest answer, then yours", bundle: 'pro' },
         { q: "Someone sits next to you at a talk that has not started.", a: "\"Have you seen this speaker before?\" [Opinion Question]", guideBack: "Their view, then yours", bundle: 'pro' },
-        { q: "You join a table of strangers at a shared dinner.", a: "\"How do you all know each other?\" [Background Question]", guideBack: "Their run-up, then yours", bundle: 'pro' },
+        { q: "You join a table of strangers at a shared dinner.", a: "\"How do you all know each other?\" [Arrival Question]", guideBack: "Their run-up, then yours", bundle: 'pro' },
       ]
     },
   ],
@@ -11687,13 +11687,13 @@ const collectionsModeData = {
       description: "The two moves for when the example is not the problem. One is for when your case is disputed — you stop defending it and offer a smaller version of their claim instead. The other is for when you have no case at all — you ask them to find the exception.\n\nBoth end the exchange rather than extend it, which is what the five example types cannot always do: a counter-example invites a counter-counter-example, and a narrowed claim or an honest question does not.\n\nMindset: the aim was never the example. It was the sentence you both believe.",
       inputs: [
         { q: "\"That's just one person, though.\"", a: "\"It is just one. Does 'usually' work instead of 'always'?\" [The Smaller Claim]", guideBack: "A narrower claim, agreed", bundle: 'pro' },
-        { q: "\"Everyone gets used to it eventually.\"", a: "\"I've got no case to point at. Can you think of anyone who hasn't?\" [Ask for Theirs]", guideBack: "A question that hands them the search", bundle: 'pro' },
+        { q: "\"Everyone gets used to it eventually.\"", a: "\"I've got no case to point at. Can you think of anyone who hasn't?\" [Their Own Exception]", guideBack: "A question that hands them the search", bundle: 'pro' },
         { q: "\"Your example is a special case.\"", a: "\"It is unusual. So it holds except for that group — can we say that?\" [The Smaller Claim]", guideBack: "A narrower claim, agreed", bundle: 'pro' },
-        { q: "\"The rule works for everybody.\"", a: "\"Does it have edges? I can't see them from here.\" [Ask for Theirs]", guideBack: "A question that hands them the search", bundle: 'pro' },
+        { q: "\"The rule works for everybody.\"", a: "\"Does it have edges? I can't see them from here.\" [Their Own Exception]", guideBack: "A question that hands them the search", bundle: 'pro' },
         { q: "\"Nobody is happy with the new one.\"", a: "\"'Most people' I'd sign up to completely.\" [The Smaller Claim]", guideBack: "A narrower claim, agreed", bundle: 'pro' },
-        { q: "\"It has never once failed.\"", a: "\"What would have to happen for you to say it had?\" [Ask for Theirs]", guideBack: "A question that hands them the search", bundle: 'pro' },
+        { q: "\"It has never once failed.\"", a: "\"What would have to happen for you to say it had?\" [Their Own Exception]", guideBack: "A question that hands them the search", bundle: 'pro' },
         { q: "\"I still think the claim stands as it is.\"", a: "\"Tell me the version you'd defend if I pushed. I'll probably agree with it.\" [The Smaller Claim]", guideBack: "A narrower claim, agreed", bundle: 'pro' },
-        { q: "\"You clearly know more about this than me.\"", a: "\"Other way round. Argue the other side for me — what would that person say?\" [Ask for Theirs]", guideBack: "A question that hands them the search", bundle: 'pro' },
+        { q: "\"You clearly know more about this than me.\"", a: "\"Other way round. Argue the other side for me — what would that person say?\" [Their Own Exception]", guideBack: "A question that hands them the search", bundle: 'pro' },
       ]
     },
 ],
@@ -12656,13 +12656,13 @@ const collectionsModeData = {
       description: "The shared experience and the shared thread. Both draw on common ground; the difference is when the ground was laid.\n\nA shared experience is something you have both just been through, and it works with a complete stranger — you need no history at all, only the same hour. A shared thread needs history: something you know about them from before, which you are picking back up.\n\nThe rule is simple. If you have never spoken to them, use the experience. If you have, use the thread — it is the stronger of the two, because remembering is worth more than agreeing.\n\nMindset: with someone you half know, always reach for the thread. It is the opener people most often waste.",
       inputs: [
         { q: "You come out of a long talk beside a total stranger.", a: "\"How did you find that?\" [Mention a Shared Experience]", guideBack: "Something you were both part of", bundle: 'pro' },
-        { q: "A colleague you speak to occasionally mentioned an interview last month.", a: "\"How did the interview go, in the end?\" [The Shared Thread]", guideBack: "A question about something they mentioned", bundle: 'pro' },
+        { q: "A colleague you speak to occasionally mentioned an interview last month.", a: "\"How did the interview go, in the end?\" [Pick Up a Previous Thread]", guideBack: "A question about something they mentioned", bundle: 'pro' },
         { q: "You and a stranger have both been stuck on the same delayed train.", a: "\"Well, that went beautifully.\" [Mention a Shared Experience]", guideBack: "Something you were both part of", bundle: 'pro' },
-        { q: "Someone at your club was midway through a project last time.", a: "\"How's the bike coming on?\" [The Shared Thread]", guideBack: "A question about something they mentioned", bundle: 'pro' },
+        { q: "Someone at your club was midway through a project last time.", a: "\"How's the bike coming on?\" [Pick Up a Previous Thread]", guideBack: "A question about something they mentioned", bundle: 'pro' },
         { q: "You have both just finished a hard session at the gym.", a: "\"That was rough. I'll be paying for that tomorrow.\" [Mention a Shared Experience]", guideBack: "Something you were both part of", bundle: 'pro' },
-        { q: "A neighbour told you weeks ago they were waiting on test results.", a: "\"Did you hear back about the results? You mentioned it before.\" [The Shared Thread]", guideBack: "A question about something they mentioned", bundle: 'pro' },
+        { q: "A neighbour told you weeks ago they were waiting on test results.", a: "\"Did you hear back about the results? You mentioned it before.\" [Pick Up a Previous Thread]", guideBack: "A question about something they mentioned", bundle: 'pro' },
         { q: "You sat through the same very long meeting as someone you have never met.", a: "\"The bit at the end where nobody asked anything — that was painful.\" [Mention a Shared Experience]", guideBack: "Something you were both part of", bundle: 'pro' },
-        { q: "Someone you met once mentioned they were about to start a new job.", a: "\"You started the new job, didn't you? How's it going?\" [The Shared Thread]", guideBack: "A question about something they mentioned", bundle: 'pro' },
+        { q: "Someone you met once mentioned they were about to start a new job.", a: "\"You started the new job, didn't you? How's it going?\" [Pick Up a Previous Thread]", guideBack: "A question about something they mentioned", bundle: 'pro' },
       ]
     },
     {
@@ -12672,10 +12672,10 @@ const collectionsModeData = {
       description: "The full set. All four need something more than being in the same room, and picking between them is really a question of what you actually have with this person.\n\nA rough guide: if you know something about them from before, use the thread. If you have just been through something together, use the experience. If you need something, ask. If you know something they would want to know, offer.\n\nIf none of the four applies — a complete stranger, nothing shared, nothing needed — that is what the first pack of openers is for. Not every moment has common ground in it.\n\nMindset: pick the one that is true. A manufactured opener is worse than a plain hello.",
       inputs: [
         { q: "You have both just walked out of the same exam.", a: "\"That was not what I revised for.\" [Mention a Shared Experience]", guideBack: "Something you were both part of", bundle: 'pro' },
-        { q: "A colleague you know slightly said last week they were moving house.", a: "\"How did the move go?\" [The Shared Thread]", guideBack: "A question about something they mentioned", bundle: 'pro' },
+        { q: "A colleague you know slightly said last week they were moving house.", a: "\"How did the move go?\" [Pick Up a Previous Thread]", guideBack: "A question about something they mentioned", bundle: 'pro' },
         { q: "You are new somewhere and cannot make the coffee machine work.", a: "\"Is there a trick to this thing? I've pressed everything.\" [Ask for Help]", guideBack: "A small favour, asked for", bundle: 'pro' },
         { q: "A stranger is heading for a door you know is locked.", a: "\"That one's locked — you have to go round the side.\" [Offer Something Useful]", guideBack: "A fact they can act on", bundle: 'pro' },
-        { q: "Someone at your class had a driving test last week.", a: "\"Did you pass? You had it on Thursday, didn't you.\" [The Shared Thread]", guideBack: "A question about something they mentioned", bundle: 'pro' },
+        { q: "Someone at your class had a driving test last week.", a: "\"Did you pass? You had it on Thursday, didn't you.\" [Pick Up a Previous Thread]", guideBack: "A question about something they mentioned", bundle: 'pro' },
         { q: "You are both waiting for a train that has been cancelled.", a: "\"Second time this week for me. You?\" [Mention a Shared Experience]", guideBack: "Something you were both part of", bundle: 'pro' },
         { q: "You are carrying a box and cannot reach the door handle.", a: "\"Could you get that for me?\" [Ask for Help]", guideBack: "A small favour, asked for", bundle: 'pro' },
         { q: "Someone is looking for a seat and you know the back row is empty.", a: "\"There's loads of room at the back, if you want it.\" [Offer Something Useful]", guideBack: "A fact they can act on", bundle: 'pro' },
@@ -12734,15 +12734,15 @@ const collectionsModeData = {
       name: "Finished or Not",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "**Follow-up Question**, **Loop Back** and **Relate Through Sharing** — chosen by where they are in the story.\n\n• **Follow-up Question** — the story is still moving and they want to keep going\n• **Loop Back** — they have landed something and stopped\n• **Relate Through Sharing** — the whole thing is out and has been understood\n\n**Which one:** listen to the pause. A short breath means carry on, so ask. A longer one, especially after something that cost them a little to say, means they have arrived somewhere — reflect it. Once it has been reflected and the air has cleared, your own version is welcome.\n\n**Where it goes wrong:** asking after they have finished. A question at the end of a story reads as being asked to keep performing, and it is the most common way a good conversation gets one turn too long.\n\nMindset: a question asks them to do more work. A loop does the work for them. After something difficult, do the work.",
+      description: "**Follow-up Question**, **Say It Back** and **Relate Through Sharing** — chosen by where they are in the story.\n\n• **Follow-up Question** — the story is still moving and they want to keep going\n• **Say It Back** — they have landed something and stopped\n• **Relate Through Sharing** — the whole thing is out and has been understood\n\n**Which one:** listen to the pause. A short breath means carry on, so ask. A longer one, especially after something that cost them a little to say, means they have arrived somewhere — reflect it. Once it has been reflected and the air has cleared, your own version is welcome.\n\n**Where it goes wrong:** asking after they have finished. A question at the end of a story reads as being asked to keep performing, and it is the most common way a good conversation gets one turn too long.\n\nMindset: a question asks them to do more work. A loop does the work for them. After something difficult, do the work.",
       inputs: [
         { q: "They are mid-story and clearly not finished.", a: "\"What did you do when you realised?\" [Follow-up Question]", guideBack: "A question about their last sentence", bundle: 'pro' },
-        { q: "They finish a hard sentence and go quiet.", a: "\"So you were suddenly doing it alone, with no warning.\" [Loop Back]", guideBack: "Their point, in your words", bundle: 'pro' },
+        { q: "They finish a hard sentence and go quiet.", a: "\"So you were suddenly doing it alone, with no warning.\" [Say It Back]", guideBack: "Their point, in your words", bundle: 'pro' },
         { q: "They mention something in passing and carry straight on.", a: "\"Sorry — what did your manager actually say?\" [Follow-up Question]", guideBack: "A question about their last sentence", bundle: 'pro' },
-        { q: "They have just admitted something they find embarrassing.", a: "\"So it's the being left out of it, more than the job.\" [Loop Back]", guideBack: "Their point, in your words", bundle: 'pro' },
+        { q: "They have just admitted something they find embarrassing.", a: "\"So it's the being left out of it, more than the job.\" [Say It Back]", guideBack: "Their point, in your words", bundle: 'pro' },
         { q: "They have finished, been understood, and the mood has settled.", a: "\"I had almost exactly that last year. Special kind of awful.\" [Relate Through Sharing]", guideBack: "Your own version of it", bundle: 'pro' },
         { q: "They are describing a sequence of events and pause for breath.", a: "\"And then what?\" [Follow-up Question]", guideBack: "A question about their last sentence", bundle: 'pro' },
-        { q: "They give you a tangled explanation and stop, looking tired.", a: "\"Let me check I've got it — the plan changed twice and you found out last?\" [Loop Back]", guideBack: "Their point, in your words", bundle: 'pro' },
+        { q: "They give you a tangled explanation and stop, looking tired.", a: "\"Let me check I've got it — the plan changed twice and you found out last?\" [Say It Back]", guideBack: "Their point, in your words", bundle: 'pro' },
         { q: "They have said the whole thing and you both sat with it a moment.", a: "\"I do that at three in the morning, reliably.\" [Relate Through Sharing]", guideBack: "Your own version of it", bundle: 'pro' },
       ]
     },
@@ -12750,32 +12750,32 @@ const collectionsModeData = {
       name: "Raw or Settled",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "The same three strategies, chosen by how fresh the feeling is rather than how far the story has got.\n\n• **Loop Back** — while it is still raw, stay entirely with them\n• **Follow-up Question** — once it has cooled a little, ask about the part that matters\n• **Relate Through Sharing** — only once it has settled, and briefly\n\n**Which one:** raw means they are still inside the feeling, and the only safe move is to reflect it. Settled means they can look at it from outside, and then a question opens it up and a shared experience warms it. The two cues do come apart: somebody can finish a story and still be raw, and that is the moment to loop rather than relate.\n\n**Where it goes wrong:** relating too early. Somebody who has not finished being heard does not want to hear about your version yet, however well it matches — and the better it matches, the more it takes.\n\nMindset: when in doubt, stay with them. Nobody has ever regretted being reflected back one time too many.",
+      description: "The same three strategies, chosen by how fresh the feeling is rather than how far the story has got.\n\n• **Say It Back** — while it is still raw, stay entirely with them\n• **Follow-up Question** — once it has cooled a little, ask about the part that matters\n• **Relate Through Sharing** — only once it has settled, and briefly\n\n**Which one:** raw means they are still inside the feeling, and the only safe move is to reflect it. Settled means they can look at it from outside, and then a question opens it up and a shared experience warms it. The two cues do come apart: somebody can finish a story and still be raw, and that is the moment to loop rather than relate.\n\n**Where it goes wrong:** relating too early. Somebody who has not finished being heard does not want to hear about your version yet, however well it matches — and the better it matches, the more it takes.\n\nMindset: when in doubt, stay with them. Nobody has ever regretted being reflected back one time too many.",
       inputs: [
-        { q: "They are halfway through something difficult and clearly still in it.", a: "\"So it's the not being told that's the worst part.\" [Loop Back]", guideBack: "Their point, in your words", bundle: 'pro' },
-        { q: "They say something raw and you have a similar story ready.", a: "\"That's a lot to have been carrying on your own.\" [Loop Back]", guideBack: "Their point, in your words", bundle: 'pro' },
+        { q: "They are halfway through something difficult and clearly still in it.", a: "\"So it's the not being told that's the worst part.\" [Say It Back]", guideBack: "Their point, in your words", bundle: 'pro' },
+        { q: "They say something raw and you have a similar story ready.", a: "\"That's a lot to have been carrying on your own.\" [Say It Back]", guideBack: "Their point, in your words", bundle: 'pro' },
         { q: "They have told it before and can talk about it calmly now.", a: "\"What would you do differently if it came round again?\" [Follow-up Question]", guideBack: "A question about their last sentence", bundle: 'pro' },
         { q: "They say: \"Everyone else seems to find it easy.\"", a: "\"They really don't. I spent a year assuming the same.\" [Relate Through Sharing]", guideBack: "Your own version of it", bundle: 'pro' },
-        { q: "They are still working out what they think as they speak.", a: "\"Something about it landed harder than its size would suggest.\" [Loop Back]", guideBack: "Their point, in your words", bundle: 'pro' },
+        { q: "They are still working out what they think as they speak.", a: "\"Something about it landed harder than its size would suggest.\" [Say It Back]", guideBack: "Their point, in your words", bundle: 'pro' },
         { q: "They have shared a win and are pleased with it.", a: "\"That feeling is brilliant. I remember sitting in the car afterwards.\" [Relate Through Sharing]", guideBack: "Your own version of it", bundle: 'pro' },
         { q: "They mention an old disappointment lightly, in passing.", a: "\"What happened with that in the end?\" [Follow-up Question]", guideBack: "A question about their last sentence", bundle: 'pro' },
-        { q: "They finish, go quiet, and the quiet is not comfortable yet.", a: "\"That sounds like it's still sitting with you.\" [Loop Back]", guideBack: "Their point, in your words", bundle: 'pro' },
+        { q: "They finish, go quiet, and the quiet is not comfortable yet.", a: "\"That sounds like it's still sitting with you.\" [Say It Back]", guideBack: "Their point, in your words", bundle: 'pro' },
       ]
     },
     {
       name: "All Three Moves",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "The full choice with no cue given, which is what this whole exercise is for.\n\n• **Follow-up Question** — the story is unfinished. \"What happened after that?\"\n• **Loop Back** — they have landed something. \"So it's the being left out that stings.\"\n• **Relate Through Sharing** — they have been heard, and warmth is what is left. \"I know that feeling exactly.\"\n\n**Which one:** the rule is one at a time, so the skill is not knowing the three moves — it is reading which one the moment wants, fast enough to use it. A rough order for anything difficult: loop first, ask second, relate last.\n\n**Where it goes wrong:** most people do it backwards and lead with their own story, because relating is the most enjoyable of the three to do. Choose it for them rather than for you.\n\nMindset: one at a time. Stacking all three is not three times as understanding; it is a performance about you managing the conversation.",
+      description: "The full choice with no cue given, which is what this whole exercise is for.\n\n• **Follow-up Question** — the story is unfinished. \"What happened after that?\"\n• **Say It Back** — they have landed something. \"So it's the being left out that stings.\"\n• **Relate Through Sharing** — they have been heard, and warmth is what is left. \"I know that feeling exactly.\"\n\n**Which one:** the rule is one at a time, so the skill is not knowing the three moves — it is reading which one the moment wants, fast enough to use it. A rough order for anything difficult: loop first, ask second, relate last.\n\n**Where it goes wrong:** most people do it backwards and lead with their own story, because relating is the most enjoyable of the three to do. Choose it for them rather than for you.\n\nMindset: one at a time. Stacking all three is not three times as understanding; it is a performance about you managing the conversation.",
       inputs: [
         { q: "They are mid-story with more to tell.", a: "\"What was the worst part of it?\" [Follow-up Question]", guideBack: "A question about their last sentence", bundle: 'pro' },
-        { q: "They have just said something that cost them a little to say.", a: "\"So you sat on it rather than say anything.\" [Loop Back]", guideBack: "Their point, in your words", bundle: 'pro' },
+        { q: "They have just said something that cost them a little to say.", a: "\"So you sat on it rather than say anything.\" [Say It Back]", guideBack: "Their point, in your words", bundle: 'pro' },
         { q: "They have finished and the air has cleared.", a: "\"I do that too. It always seems easier not to mention it.\" [Relate Through Sharing]", guideBack: "Your own version of it", bundle: 'pro' },
         { q: "They mention a detail you did not follow.", a: "\"Sorry, who pulled you aside?\" [Follow-up Question]", guideBack: "A question about their last sentence", bundle: 'pro' },
-        { q: "They say \"it's fine, honestly\" and it clearly is not.", a: "\"It sounds less fine and more relentless, from here.\" [Loop Back]", guideBack: "Their point, in your words", bundle: 'pro' },
+        { q: "They say \"it's fine, honestly\" and it clearly is not.", a: "\"It sounds less fine and more relentless, from here.\" [Say It Back]", guideBack: "Their point, in your words", bundle: 'pro' },
         { q: "They share a win they are proud of.", a: "\"How long had you been working towards that?\" [Follow-up Question]", guideBack: "A question about their last sentence", bundle: 'pro' },
         { q: "They say they keep replaying what they should have said.", a: "\"I do that at three in the morning, reliably.\" [Relate Through Sharing]", guideBack: "Your own version of it", bundle: 'pro' },
-        { q: "They give a long tangled account and stop.", a: "\"Let me check — the deadline moved and nobody told you?\" [Loop Back]", guideBack: "Their point, in your words", bundle: 'pro' },
+        { q: "They give a long tangled account and stop.", a: "\"Let me check — the deadline moved and nobody told you?\" [Say It Back]", guideBack: "Their point, in your words", bundle: 'pro' },
       ]
     },
   ],
@@ -12800,15 +12800,15 @@ const collectionsModeData = {
       name: "Alive or Fading",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "**Build on Their Point**, **Expand to a Subtopic** and **Ask an Open Question** — the three chosen by how much life is left in the thread.\n\n• **Build on Their Point** — it is still going, so go one layer down\n• **Ask an Open Question** — it has slowed but not stopped, so open it back up\n• **Expand to a Subtopic** — it is finished, so step sideways\n\n**Which one:** read the energy rather than the clock. Long answers and follow-up questions mean deepen; short answers mean open it up again; a pause after \"yeah, that's about it\" means step sideways.\n\n**Where it goes wrong:** widening too early throws away a topic that still had life in it, and widening too late means the sideways step has to restart a conversation from silence.\n\nMindset: a thread ending is not the topic ending. There is usually one more room in the same house.",
+      description: "**Build on Their Point**, **Step Sideways** and **Ask an Open Question** — the three chosen by how much life is left in the thread.\n\n• **Build on Their Point** — it is still going, so go one layer down\n• **Ask an Open Question** — it has slowed but not stopped, so open it back up\n• **Step Sideways** — it is finished, so step sideways\n\n**Which one:** read the energy rather than the clock. Long answers and follow-up questions mean deepen; short answers mean open it up again; a pause after \"yeah, that's about it\" means step sideways.\n\n**Where it goes wrong:** widening too early throws away a topic that still had life in it, and widening too late means the sideways step has to restart a conversation from silence.\n\nMindset: a thread ending is not the topic ending. There is usually one more room in the same house.",
       inputs: [
         { q: "Someone says: \"I grow most of our vegetables in summer.\"", a: "\"You said most — what's the one thing that never works?\" [Build on Their Point]", guideBack: "Their point, taken further", bundle: 'pro' },
-        { q: "The gardening talk has run out of steam.", a: "\"Does anyone keep plants indoors? Mine never survive.\" [Expand to a Subtopic]", guideBack: "A neighbouring subject, not a new one", bundle: 'pro' },
+        { q: "The gardening talk has run out of steam.", a: "\"Does anyone keep plants indoors? Mine never survive.\" [Step Sideways]", guideBack: "A neighbouring subject", bundle: 'pro' },
         { q: "A friend says: \"The gig was great but the venue was awful.\"", a: "\"Was it the sound or the crowd that ruined it?\" [Build on Their Point]", guideBack: "Their point, taken further", bundle: 'pro' },
-        { q: "The group has said everything there is about the album.", a: "\"Are they any good live? I've never seen them.\" [Expand to a Subtopic]", guideBack: "A neighbouring subject, not a new one", bundle: 'pro' },
+        { q: "The group has said everything there is about the album.", a: "\"Are they any good live? I've never seen them.\" [Step Sideways]", guideBack: "A neighbouring subject", bundle: 'pro' },
         { q: "The answers have gone short but nobody has changed the subject.", a: "\"What got you all into it in the first place?\" [Ask an Open Question]", guideBack: "A what, how or why", bundle: 'pro' },
         { q: "Someone says: \"We walk a lot more since we got the dog.\"", a: "\"Do you have a route you always end up taking?\" [Build on Their Point]", guideBack: "Their point, taken further", bundle: 'pro' },
-        { q: "The conversation about playing football has covered everything.", a: "\"Do you watch as much as you play, or is that a different thing?\" [Expand to a Subtopic]", guideBack: "A neighbouring subject, not a new one", bundle: 'pro' },
+        { q: "The conversation about playing football has covered everything.", a: "\"Do you watch as much as you play, or is that a different thing?\" [Step Sideways]", guideBack: "A neighbouring subject", bundle: 'pro' },
         { q: "The topic has slowed and you would rather not lose it.", a: "\"Before we drop this — what's the part nobody warns you about?\" [Ask an Open Question]", guideBack: "A what, how or why", bundle: 'pro' },
       ]
     },
@@ -12816,12 +12816,12 @@ const collectionsModeData = {
       name: "Keeping Any Topic Alive",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "All five moves, with no cue given, which is what a real group conversation is like.\n\n• **Ask an Open Question** — you have nothing of your own\n• **Share a Related Experience** — you do\n• **Build on Their Point** — the thread still has life\n• **Expand to a Subtopic** — it is fading\n• **Share, Then Invite** — you have been holding the floor\n\n**Which one:** most moments would take several, and one usually fits best. Reading what the group needs — material, depth, a new angle, or a turn for somebody else — is the whole skill.\n\n**Where it goes wrong:** answering your own question. After you have talked for a minute the right move is not another point of yours, it is handing it over.\n\nMindset: a good group conversation is not about being the most interesting person in it. It is about keeping the ball in the air.",
+      description: "All five moves, with no cue given, which is what a real group conversation is like.\n\n• **Ask an Open Question** — you have nothing of your own\n• **Share a Related Experience** — you do\n• **Build on Their Point** — the thread still has life\n• **Step Sideways** — it is fading\n• **Share, Then Invite** — you have been holding the floor\n\n**Which one:** most moments would take several, and one usually fits best. Reading what the group needs — material, depth, a new angle, or a turn for somebody else — is the whole skill.\n\n**Where it goes wrong:** answering your own question. After you have talked for a minute the right move is not another point of yours, it is handing it over.\n\nMindset: a good group conversation is not about being the most interesting person in it. It is about keeping the ball in the air.",
       inputs: [
         { q: "The group is discussing something you know nothing about.", a: "\"What got you into it in the first place?\" [Ask an Open Question]", guideBack: "A what, how or why", bundle: 'pro' },
         { q: "Someone says: \"The new office layout is strange.\"", a: "\"It is. Is it the noise, or that nobody knows where to sit?\" [Build on Their Point]", guideBack: "Their point, taken further", bundle: 'pro' },
         { q: "You have been talking about your own training routine for a while.", a: "\"Anyway, that is mine. What does yours look like?\" [Share, Then Invite]", guideBack: "One part you, one part them", bundle: 'pro' },
-        { q: "The topic of cooking dinner has run its course.", a: "\"What about eating out — anywhere good round here?\" [Expand to a Subtopic]", guideBack: "A neighbouring subject, not a new one", bundle: 'pro' },
+        { q: "The topic of cooking dinner has run its course.", a: "\"What about eating out — anywhere good round here?\" [Step Sideways]", guideBack: "A neighbouring subject", bundle: 'pro' },
         { q: "The table is comparing terrible first jobs.", a: "\"Petrol station, night shift. I learned to sleep upright.\" [Share a Related Experience]", guideBack: "Your part of the same topic", bundle: 'pro' },
         { q: "Someone mentions they have started running in the mornings.", a: "\"How long was it before it stopped being awful?\" [Ask an Open Question]", guideBack: "A what, how or why", bundle: 'pro' },
         { q: "One person at the table has said nothing about the topic.", a: "\"I'm useless at this one. Anna, you cook — what would you make?\" [Share, Then Invite]", guideBack: "One part you, one part them", bundle: 'pro' },
@@ -12850,28 +12850,28 @@ const collectionsModeData = {
       name: "Closing the Old One",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "**Acknowledge and Redirect**, **Respectful Exit** and **Steer Away** — the three that finish the current subject before opening the next one.\n\n• **Acknowledge and Redirect** — one short nod, then the new thing\n• **Respectful Exit** — for a topic that is finished, or on its third lap\n• **Steer Away** — for one that is uncomfortable rather than done\n\n**Which one:** ask what kind of ending it needs. A subject that simply ran its course takes a nod. One that keeps coming back needs naming, warmly. One that is raw needs acknowledging before anything else moves.\n\n**Where it goes wrong:** the wrong size of ending. A cheerful \"right, we've solved the weather\" aimed at something painful is careless, and a solemn acknowledgement of a phone upgrade is odd.\n\nMindset: how you close it decides how the next one lands.",
+      description: "**Acknowledge and Redirect**, **Close and Open** and **Steer Away** — the three that finish the current subject before opening the next one.\n\n• **Acknowledge and Redirect** — one short nod, then the new thing\n• **Close and Open** — for a topic that is finished, or on its third lap\n• **Steer Away** — for one that is uncomfortable rather than done\n\n**Which one:** ask what kind of ending it needs. A subject that simply ran its course takes a nod. One that keeps coming back needs naming, warmly. One that is raw needs acknowledging before anything else moves.\n\n**Where it goes wrong:** the wrong size of ending. A cheerful \"right, we've solved the weather\" aimed at something painful is careless, and a solemn acknowledgement of a phone upgrade is odd.\n\nMindset: how you close it decides how the next one lands.",
       inputs: [
         { q: "A colleague has finished a long story about their car trouble.", a: "\"Glad it's sorted, honestly. By the way — are you around Friday?\" [Acknowledge and Redirect]", guideBack: "A clean handover between subjects", bundle: 'pro' },
-        { q: "The same complaint is coming round for a third lap.", a: "\"I do get it. Let's give it a rest, though — how's everything else?\" [Respectful Exit]", guideBack: "One way it could sound", bundle: 'pro' },
+        { q: "The same complaint is coming round for a third lap.", a: "\"I do get it. Let's give it a rest, though — how's everything else?\" [Close and Open]", guideBack: "One way it could sound", bundle: 'pro' },
         { q: "The chat drifts to someone's breakup and they look uncomfortable.", a: "\"That sounds hard, and we don't have to go into it. How have you been otherwise?\" [Steer Away]", guideBack: "A soft change of direction", bundle: 'pro' },
         { q: "A meeting has drifted into detail nobody needs.", a: "\"I think we've got that covered. Shall we move on?\" [Acknowledge and Redirect]", guideBack: "A clean handover between subjects", bundle: 'pro' },
-        { q: "A debate between two people has clearly run its course.", a: "\"You've both made the case well. Something new — any plans this week?\" [Respectful Exit]", guideBack: "One way it could sound", bundle: 'pro' },
+        { q: "A debate between two people has clearly run its course.", a: "\"You've both made the case well. Something new — any plans this week?\" [Close and Open]", guideBack: "One way it could sound", bundle: 'pro' },
         { q: "A group argument about politics is getting tense.", a: "\"Everyone here feels strongly. Anyway — has anyone been anywhere nice lately?\" [Steer Away]", guideBack: "A soft change of direction", bundle: 'pro' },
         { q: "A friend has finished explaining their new phone in detail.", a: "\"Sounds like a solid upgrade. Anyway — how's the job going?\" [Acknowledge and Redirect]", guideBack: "A clean handover between subjects", bundle: 'pro' },
-        { q: "The catch-up has covered every obvious thing.", a: "\"Right, that's the headlines done. What didn't make the news?\" [Respectful Exit]", guideBack: "One way it could sound", bundle: 'pro' },
+        { q: "The catch-up has covered every obvious thing.", a: "\"Right, that's the headlines done. What didn't make the news?\" [Close and Open]", guideBack: "One way it could sound", bundle: 'pro' },
       ]
     },
     {
       name: "Reading the Room",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "All six moves, with no cue given, which is what a real conversation is like.\n\n• **The Bridge** — there is a word to catch\n• **Common Ground** — you recognise the experience\n• **The Random Switch** — there is nothing to build on\n• **Acknowledge and Redirect** — the subject just finished\n• **Respectful Exit** — it finished a while ago\n• **Steer Away** — it is uncomfortable, not finished\n\n**Which one:** two questions cover nearly all of it. Does the old topic need closing first, and is there anything in it to build the new one from? Everything else is a matter of how warm to make it.\n\n**Where it goes wrong:** doing nothing. A subject that has died and not been replaced is the most uncomfortable moment in any conversation, and it is entirely avoidable.\n\nMindset: changing the subject is steering, not hijacking. Somebody has to do it.",
+      description: "All six moves, with no cue given, which is what a real conversation is like.\n\n• **The Bridge** — there is a word to catch\n• **Common Ground** — you recognise the experience\n• **The Random Switch** — there is nothing to build on\n• **Acknowledge and Redirect** — the subject just finished\n• **Close and Open** — it finished a while ago\n• **Steer Away** — it is uncomfortable, not finished\n\n**Which one:** two questions cover nearly all of it. Does the old topic need closing first, and is there anything in it to build the new one from? Everything else is a matter of how warm to make it.\n\n**Where it goes wrong:** doing nothing. A subject that has died and not been replaced is the most uncomfortable moment in any conversation, and it is entirely avoidable.\n\nMindset: changing the subject is steering, not hijacking. Somebody has to do it.",
       inputs: [
         { q: "They mention they just moved into a new flat.", a: "\"A new place — found anywhere good around there yet?\" [The Bridge]", guideBack: "A new subject grown from their own word", bundle: 'pro' },
         { q: "A relative starts on a divisive subject at dinner.", a: "\"Let's not let that ruin the food. What's everyone been up to?\" [Steer Away]", guideBack: "A soft change of direction", bundle: 'pro' },
         { q: "Someone's wrapped up a long story about their commute.", a: "\"That does sound rough. On another note — plans this weekend?\" [Acknowledge and Redirect]", guideBack: "A clean handover between subjects", bundle: 'pro' },
-        { q: "You've been on the same holiday story for a good while.", a: "\"Sounds like a brilliant trip, and I think we've covered it. What else is new?\" [Respectful Exit]", guideBack: "One way it could sound", bundle: 'pro' },
+        { q: "You've been on the same holiday story for a good while.", a: "\"Sounds like a brilliant trip, and I think we've covered it. What else is new?\" [Close and Open]", guideBack: "One way it could sound", bundle: 'pro' },
         { q: "They mention they've been getting into running.", a: "\"I did the same over summer. Have you got a route you actually like?\" [Common Ground]", guideBack: "A shared experience that opens a new subject", bundle: 'pro' },
         { q: "The energy has dropped flat at a dinner table.", a: "\"Completely random, but — worst haircut you've ever had, go.\" [The Random Switch]", guideBack: "One way it could sound", bundle: 'pro' },
         { q: "They say they've been trying to eat better.", a: "\"Eating better — have you come across any recipes worth stealing?\" [The Bridge]", guideBack: "A new subject grown from their own word", bundle: 'pro' },
@@ -12884,13 +12884,13 @@ const collectionsModeData = {
       name: "What Are You Praising",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "The Specific Thing, Compliment the Choice Not the Luck and Why It Landed — the three that answer the question *what goes in the sentence*.\n\nThey point at different things. A detail you saw. A decision they made. An effect it had on you. Any of the three turns a general remark into something believable, and the commonest failure is picking none of them and saying \"that was great\" instead.\n\nRead what you actually have. If you can quote a moment, name it. If what you admire is something they chose rather than something they were handed, say so. If the thing you have is what it did to you afterwards, that is the strongest of the three and almost nobody uses it.\n\nMindset: generous but general reads as politeness, and politeness is not remembered.",
+      description: "The Specific Thing, Compliment the Choice Not the Luck and What It Did — the three that answer the question *what goes in the sentence*.\n\nThey point at different things. A detail you saw. A decision they made. An effect it had on you. Any of the three turns a general remark into something believable, and the commonest failure is picking none of them and saying \"that was great\" instead.\n\nRead what you actually have. If you can quote a moment, name it. If what you admire is something they chose rather than something they were handed, say so. If the thing you have is what it did to you afterwards, that is the strongest of the three and almost nobody uses it.\n\nMindset: generous but general reads as politeness, and politeness is not remembered.",
       inputs: [
         { q: "A colleague gave a talk and one moment stood out.", a: "\"The bit where you stopped and let the silence sit — that landed.\" [The Specific Thing]", guideBack: "The detail you actually noticed", bundle: 'pro' },
         { q: "You like what someone is wearing.", a: "\"That's a good jacket. It's very you.\" [Choice, Not Luck]", guideBack: "Praise for a decision", bundle: 'pro' },
-        { q: "Their idea changed how you work.", a: "\"I've started doing it your way. It's better.\" [Why It Landed]", guideBack: "The effect it had on you", bundle: 'pro' },
+        { q: "Their idea changed how you work.", a: "\"I've started doing it your way. It's better.\" [What It Did]", guideBack: "The effect it had on you", bundle: 'pro' },
         { q: "You are about to compliment something they were born with.", a: "\"Whoever cuts your hair is good.\" [Choice, Not Luck]", guideBack: "Praise for a decision", bundle: 'pro' },
-        { q: "You told someone else about what they did.", a: "\"I told my partner about it that evening. It was that good.\" [Why It Landed]", guideBack: "The effect it had on you", bundle: 'pro' },
+        { q: "You told someone else about what they did.", a: "\"I told my partner about it that evening. It was that good.\" [What It Did]", guideBack: "The effect it had on you", bundle: 'pro' },
         { q: "You want to name a pattern rather than a moment.", a: "\"You always ask the question everyone else is thinking.\" [The Specific Thing]", guideBack: "The detail you actually noticed", bundle: 'pro' },
         { q: "They made an unpopular call that turned out right.", a: "\"You said no when nobody else would. That was right.\" [Choice, Not Luck]", guideBack: "Praise for a decision", bundle: 'pro' },
         { q: "You are about to say \"that was great\" and leave it there.", a: "\"That was great, and specifically the ending. You didn't oversell it.\" [The Specific Thing]", guideBack: "The detail you actually noticed", bundle: 'pro' },
@@ -12916,7 +12916,7 @@ const collectionsModeData = {
       name: "One Is Coming At You",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "Take a Compliment, Answer It Don't Return It and Why It Landed — the receiving side, which is the half almost nobody practises.\n\nTwo reflexes to beat. Deflecting corrects someone who was being kind to you, and after twice most people stop offering. Returning it instantly cancels both compliments and turns a moment into a transaction.\n\nThe third is what to do when you genuinely do have something to say back: say it later, about something specific, and name it as separate rather than as a return. Same words, ten minutes apart, completely different effect.\n\nMindset: theirs first. Yours keeps.",
+      description: "Take a Compliment, Answer It Don't Return It and What It Did — the receiving side, which is the half almost nobody practises.\n\nTwo reflexes to beat. Deflecting corrects someone who was being kind to you, and after twice most people stop offering. Returning it instantly cancels both compliments and turns a moment into a transaction.\n\nThe third is what to do when you genuinely do have something to say back: say it later, about something specific, and name it as separate rather than as a return. Same words, ten minutes apart, completely different effect.\n\nMindset: theirs first. Yours keeps.",
       inputs: [
         { q: "Someone praises your work and you start explaining why it was not that good.", a: "\"Thank you. That's good to hear.\" [Take a Compliment]", guideBack: "A clean acceptance", bundle: 'pro' },
         { q: "They compliment you and you are already forming one back.", a: "\"Thank you. Genuinely.\" [Hold Yours Back]", guideBack: "A reply that isn't a trade", bundle: 'pro' },
@@ -12924,7 +12924,7 @@ const collectionsModeData = {
         { q: "You do want to praise them back and mean it.", a: "\"I'm not just returning yours — the numbers bit was the best part.\" [Hold Yours Back]", guideBack: "A reply that isn't a trade", bundle: 'pro' },
         { q: "You genuinely agree with what they said.", a: "\"Thanks. I was pleased with that part too.\" [Take a Compliment]", guideBack: "A clean acceptance", bundle: 'pro' },
         { q: "The reflex is to say \"no, you were better\".", a: "\"I'll take it. Thank you.\" [Hold Yours Back]", guideBack: "A reply that isn't a trade", bundle: 'pro' },
-        { q: "Their advice worked and you want to tell them, later and separately.", a: "\"Separately from earlier: I did the thing you said and it worked.\" [Why It Landed]", guideBack: "The effect it had on you", bundle: 'pro' },
+        { q: "Their advice worked and you want to tell them, later and separately.", a: "\"Separately from earlier: I did the thing you said and it worked.\" [What It Did]", guideBack: "The effect it had on you", bundle: 'pro' },
         { q: "The compliment is bigger than you are comfortable with.", a: "\"That's a lot. Thank you — I'll sit with it rather than argue.\" [Take a Compliment]", guideBack: "A clean acceptance", bundle: 'pro' },
       ]
     },
