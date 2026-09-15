@@ -2212,7 +2212,7 @@ const collections = {
     {
       name: "Offer Support",
       guideFront: "Name what you will actually do when...",
-      guideBack: "A concrete offer, not a wish",
+      guideBack: "A specific thing you'll do",
       description: "Make the encouragement practical. Say what you will actually do — read the draft, come along, cover the shift, be at the back of the room. This is the step that turns goodwill into something the other person can rely on.\n\nIt works because encouragement alone puts the whole task back on them. An offer removes one real obstacle, and it also proves the praise was sincere: people rarely offer their own time for something they were only being polite about.\n\nOnly offer what you will genuinely do. A support offer that quietly evaporates costs more than never having made it.\n\nTypical phrases: \"If you want, I could…\", \"Give me a shout if…\", \"I'll be there\", \"Want me to look at it first?\"\n\nFour ways to offer support:\n\n1. A concrete task — one specific thing, small enough to be certain. \"Send me the draft on Wednesday and I'll read it.\"\n\n2. Your presence — often the whole offer. \"I'll sit at the back. You can look at me if it goes wrong.\"\n\n3. An open door with a handle on it — availability made specific. \"Any time before Friday, just message me. I'll be around.\"\n\n4. Removing an obstacle — take one thing off them. \"I'll do the booking bit so you can just prepare.\"\n\nMindset: be specific about what you are offering. \"Let me know if you need anything\" is almost never taken up.",
       inputs: [
         { q: "A friend is preparing for a presentation.", a: "\"If you want, I could listen to it once before Thursday.\"", bundle: 'free' },
@@ -3356,7 +3356,7 @@ const collections = {
     {
       name: "Ask for Time First",
       guideFront: "Delay the answer on purpose when...",
-      guideBack: "A postponement, not a refusal",
+      guideBack: "Time first, then the answer",
       description: "Do not answer at all yet. \"Let me check and come back to you this afternoon.\"\n\nIt works because most regretted yeses are said on the spot, under mild social pressure, before the person has thought about what they are agreeing to. Removing the pressure of the moment is often all it takes to produce an honest answer instead of a polite one.\n\nIt also makes the eventual no easier for both of you. An answer that arrives after consideration is much harder to argue with than one given instantly, because it has visibly been thought about.\n\nUse it honestly. Buying time in order to avoid saying no is just a slower no, and it costs the other person the chance to ask someone else.\n\nTypical phrases: \"Let me check and come back to you.\", \"Can I think about it and tell you tomorrow?\", \"I don't want to answer that off the top of my head.\", \"Give me until Friday.\"\n\nFour ways to ask for time:\n\n1. Name when you will answer — essential, or it becomes avoidance. \"I'll tell you by Thursday.\"\n\n2. Say why you are not answering now — honest and disarming. \"I say yes to things too quickly. Let me think about this one.\"\n\n3. Ask what their deadline is — practical and considerate. \"When do you need to know by?\"\n\n4. Signal which way you are leaning — kind, when you already know. \"Probably not, but let me look properly before I say.\"\n\nMindset: give a time and keep it. Delay without a date is avoidance, and the other person pays for it.",
       inputs: [
         { q: "You are asked something on the spot and feel pressure to say yes.", a: "\"Let me check and come back to you this afternoon.\"", bundle: 'free' },
@@ -8352,7 +8352,7 @@ const collections = {
     {
       name: "The Specific Thing",
       guideFront: "Say the exact detail when...",
-      guideBack: "The detail, not the category",
+      guideBack: "The detail you actually noticed",
       description: "Say the specific thing, not the category. Not \"that was a good talk\" — \"the bit where you stopped and let the silence sit.\"\n\nIt works because specific praise proves you were paying attention, and general praise does not. \"You're so good at this\" could have been said by someone who arrived late and left early. The detail is what makes it believable, and believable is the whole job — an unbelieved compliment does nothing at all.\n\nIt is also easier to say. Naming one thing you noticed is a small, factual sentence. \"You're amazing\" is a claim you then have to defend, and the defending is what makes people avoid the whole business.\n\nTypical phrases: \"The bit where you stopped and let the silence sit — that was good.\", \"You asked her three questions before you said anything about yourself. I noticed.\", \"That colour is doing something.\"\n\nThree things worth naming:\n\n1. A moment — the smallest and safest. \"When you cut in and moved us on, that saved twenty minutes.\"\n\n2. A choice — something they decided rather than something that happened. \"You went with the boring option and you were right.\"\n\n3. A pattern — for people you know well, and the strongest of the three. \"You always ask the question everyone else is thinking.\"\n\nMindset: one specific sentence beats three generous ones. You are reporting something you saw, not handing out a grade.",
       inputs: [
         { q: "A colleague gave a talk that went well.", a: "\"The bit where you stopped and let the silence sit — that landed.\"", bundle: 'free' },
@@ -10216,7 +10216,7 @@ const collectionsModeData = {
         { q: "Someone's contribution changed the result.", a: "\"That was amazing because it's the reason we finished on time.\" [Highlight the Impact]", guideBack: "The effect, as evidence", bundle: 'pro' },
         { q: "A friend is partway through a long effort.", a: "\"Keep up the good work — you're further than you think.\" [Keep Going]", guideBack: "A reason to keep going", bundle: 'pro' },
         { q: "Someone helped you out of a difficulty.", a: "\"Thank you for that. You saved me a whole evening.\" [Express Appreciation]", guideBack: "Thanks, with a reason attached", bundle: 'pro' },
-        { q: "Someone is about to start something and could do with knowing you are there.", a: "\"Let me know if you want a hand with the next bit.\" [Offer Support]", guideBack: "A concrete offer, not a wish", bundle: 'pro' },
+        { q: "Someone is about to start something and could do with knowing you are there.", a: "\"Let me know if you want a hand with the next bit.\" [Offer Support]", guideBack: "A specific thing you'll do", bundle: 'pro' },
       ]
     },
     {
@@ -10229,7 +10229,7 @@ const collectionsModeData = {
         { q: "You want to show why that mattered.", a: "\"That's the part that makes the whole thing make sense now.\" [Highlight the Impact]", guideBack: "The effect, as evidence", bundle: 'pro' },
         { q: "They helped you understand your own part better.", a: "\"Thanks for talking me through it as well. That helped me.\" [Express Appreciation]", guideBack: "Thanks, with a reason attached", bundle: 'pro' },
         { q: "They are wondering whether to take the harder option next term.", a: "\"Take it. You'd start it knowing what the middle feels like.\" [Keep Going]", guideBack: "A reason to keep going", bundle: 'pro' },
-        { q: "They look slightly daunted by that idea.", a: "\"And send me the outline in October — I'll read it.\" [Offer Support]", guideBack: "A concrete offer, not a wish", bundle: 'pro' },
+        { q: "They look slightly daunted by that idea.", a: "\"And send me the outline in October — I'll read it.\" [Offer Support]", guideBack: "A specific thing you'll do", bundle: 'pro' },
         { q: "A friend has been kind to someone having a hard time.", a: "\"You checked on her three days running.\" [Name the Positive Action]", guideBack: "The action, not a verdict", bundle: 'pro' },
         { q: "You want to say what it did.", a: "\"She came back to the group because of that.\" [Highlight the Impact]", guideBack: "The effect, as evidence", bundle: 'pro' },
         { q: "You want to say what her doing that meant to you.", a: "\"Thank you for that. I'd been worrying about her all week.\" [Express Appreciation]", guideBack: "Thanks, with a reason attached", bundle: 'pro' },
@@ -10245,7 +10245,7 @@ const collectionsModeData = {
         { q: "They shrug it off as luck.", a: "\"We finished early with a decision. That's not luck, that's the agenda.\" [Highlight the Impact]", guideBack: "The effect, as evidence", bundle: 'pro' },
         { q: "They covered something for you while you were away.", a: "\"Thank you for holding that. I came back to nothing on fire.\" [Express Appreciation]", guideBack: "Thanks, with a reason attached", bundle: 'pro' },
         { q: "They are unsure about chairing the next one.", a: "\"Do it. You already know the bit that makes it work.\" [Keep Going]", guideBack: "A reason to keep going", bundle: 'pro' },
-        { q: "They say the next one has a harder agenda.", a: "\"Send it to me the day before and I'll look at the running order.\" [Offer Support]", guideBack: "A concrete offer, not a wish", bundle: 'pro' },
+        { q: "They say the next one has a harder agenda.", a: "\"Send it to me the day before and I'll look at the running order.\" [Offer Support]", guideBack: "A specific thing you'll do", bundle: 'pro' },
         { q: "A friend overcame something they had been avoiding.", a: "\"You made the call you'd been putting off since March.\" [Name the Positive Action]", guideBack: "The action, not a verdict", bundle: 'pro' },
         { q: "They say it was not a big deal.", a: "\"You've slept properly for a week. It was a big deal.\" [Highlight the Impact]", guideBack: "The effect, as evidence", bundle: 'pro' },
         { q: "They are wondering whether to keep going with it.", a: "\"Don't stop now. The hard part is behind you.\" [Keep Going]", guideBack: "A reason to keep going", bundle: 'pro' },
@@ -10830,13 +10830,13 @@ const collectionsModeData = {
       guideBack: "One way it could sound",
       description: "The full set. Most refusals need one or two of these; a difficult one needs four in order.\n\nA rough guide: if it is small, say no simply. If you will see them tomorrow, soften it. If a bare no would read as a judgement, give a reason. If it mattered to them, show you understand first. If you can do something, offer it after the no. And if you are being asked on the spot, ask for time before any of it.\n\nThe failure that runs through all of them is the unclear no — the hedge, the maybe, the vague \"I'll see\". It feels kinder in the moment and costs everyone more.\n\nMindset: whichever you choose, the person should leave knowing the answer.",
       inputs: [
-        { q: "You are asked on the spot and can feel yourself about to agree.", a: "\"Let me check and come back to you this afternoon.\" [Ask for Time First]", guideBack: "A postponement, not a refusal", bundle: 'pro' },
+        { q: "You are asked on the spot and can feel yourself about to agree.", a: "\"Let me check and come back to you this afternoon.\" [Ask for Time First]", guideBack: "Time first, then the answer", bundle: 'pro' },
         { q: "A quick request from someone you barely know.", a: "\"No, sorry.\" [Say No Simply]", guideBack: "A plain refusal", bundle: 'pro' },
         { q: "A friend asks for help moving on Saturday.", a: "\"I can't — I've already got something that day.\" [Give a Short Reason]", guideBack: "A short reason, or none given", bundle: 'pro' },
         { q: "A colleague is genuinely stuck and you must still decline.", a: "\"I can see you're in a bind. I can't take it on.\" [Understand First]", guideBack: "Their side, before your no", bundle: 'pro' },
         { q: "You have said no and there is something you could offer.", a: "\"I could do the Thursday handover, if that's any use.\" [The Half Yes]", guideBack: "The part you can take", bundle: 'pro' },
         { q: "You want warmth without changing the answer.", a: "\"Thanks for asking me. It's a no this time.\" [Soften the Delivery]", guideBack: "The same no, said kindly", bundle: 'pro' },
-        { q: "You promised an answer by today.", a: "\"I said I'd tell you today, so: no, I can't.\" [Ask for Time First]", guideBack: "A postponement, not a refusal", bundle: 'pro' },
+        { q: "You promised an answer by today.", a: "\"I said I'd tell you today, so: no, I can't.\" [Ask for Time First]", guideBack: "Time first, then the answer", bundle: 'pro' },
         { q: "They are entitled to know why, and the reason is simple.", a: "\"I can't — I'm already covering for Anna that week.\" [Give a Short Reason]", guideBack: "A short reason, or none given", bundle: 'pro' },
       ]
     },
@@ -12886,14 +12886,14 @@ const collectionsModeData = {
       guideBack: "One way it could sound",
       description: "The Specific Thing, Compliment the Choice Not the Luck and Why It Landed — the three that answer the question *what goes in the sentence*.\n\nThey point at different things. A detail you saw. A decision they made. An effect it had on you. Any of the three turns a general remark into something believable, and the commonest failure is picking none of them and saying \"that was great\" instead.\n\nRead what you actually have. If you can quote a moment, name it. If what you admire is something they chose rather than something they were handed, say so. If the thing you have is what it did to you afterwards, that is the strongest of the three and almost nobody uses it.\n\nMindset: generous but general reads as politeness, and politeness is not remembered.",
       inputs: [
-        { q: "A colleague gave a talk and one moment stood out.", a: "\"The bit where you stopped and let the silence sit — that landed.\" [The Specific Thing]", guideBack: "The detail, not the category", bundle: 'pro' },
+        { q: "A colleague gave a talk and one moment stood out.", a: "\"The bit where you stopped and let the silence sit — that landed.\" [The Specific Thing]", guideBack: "The detail you actually noticed", bundle: 'pro' },
         { q: "You like what someone is wearing.", a: "\"That's a good jacket. It's very you.\" [Choice, Not Luck]", guideBack: "Praise for a decision", bundle: 'pro' },
         { q: "Their idea changed how you work.", a: "\"I've started doing it your way. It's better.\" [Why It Landed]", guideBack: "The effect it had on you", bundle: 'pro' },
         { q: "You are about to compliment something they were born with.", a: "\"Whoever cuts your hair is good.\" [Choice, Not Luck]", guideBack: "Praise for a decision", bundle: 'pro' },
         { q: "You told someone else about what they did.", a: "\"I told my partner about it that evening. It was that good.\" [Why It Landed]", guideBack: "The effect it had on you", bundle: 'pro' },
-        { q: "You want to name a pattern rather than a moment.", a: "\"You always ask the question everyone else is thinking.\" [The Specific Thing]", guideBack: "The detail, not the category", bundle: 'pro' },
+        { q: "You want to name a pattern rather than a moment.", a: "\"You always ask the question everyone else is thinking.\" [The Specific Thing]", guideBack: "The detail you actually noticed", bundle: 'pro' },
         { q: "They made an unpopular call that turned out right.", a: "\"You said no when nobody else would. That was right.\" [Choice, Not Luck]", guideBack: "Praise for a decision", bundle: 'pro' },
-        { q: "You are about to say \"that was great\" and leave it there.", a: "\"That was great, and specifically the ending. You didn't oversell it.\" [The Specific Thing]", guideBack: "The detail, not the category", bundle: 'pro' },
+        { q: "You are about to say \"that was great\" and leave it there.", a: "\"That was great, and specifically the ending. You didn't oversell it.\" [The Specific Thing]", guideBack: "The detail you actually noticed", bundle: 'pro' },
       ]
     },
     {
@@ -12906,7 +12906,7 @@ const collectionsModeData = {
         { q: "A colleague's idea is about to be adopted without credit.", a: "\"Before we move on — that was Sara's idea.\" [Where It Counts]", guideBack: "One way it could sound", bundle: 'pro' },
         { q: "They are shy and you are in a large group.", a: "\"I'll tell you properly afterwards rather than doing it here.\" [Where It Counts]", guideBack: "One way it could sound", bundle: 'pro' },
         { q: "You never say things like this to family.", a: "\"This isn't how we talk to each other, and I'm saying it anyway.\" [Who They Are]", guideBack: "One way it could sound", bundle: 'pro' },
-        { q: "You want to praise appearance at work without it being strange.", a: "\"Good jacket. That's all, carry on.\" [The Specific Thing]", guideBack: "The detail, not the category", bundle: 'pro' },
+        { q: "You want to praise appearance at work without it being strange.", a: "\"Good jacket. That's all, carry on.\" [The Specific Thing]", guideBack: "The detail you actually noticed", bundle: 'pro' },
         { q: "Someone junior did the actual work and is in the room.", a: "\"The whole second half is his. I just held the pen.\" [Where It Counts]", guideBack: "One way it could sound", bundle: 'pro' },
         { q: "You want to anchor a large sentence in something real.", a: "\"You drove two hours for someone who wouldn't have done it for you. That's who you are.\" [Who They Are]", guideBack: "One way it could sound", bundle: 'pro' },
         { q: "You are unsure whether they would want it said publicly.", a: "\"Would you rather I said this in the meeting or just to you?\" [Where It Counts]", guideBack: "One way it could sound", bundle: 'pro' },

@@ -3930,6 +3930,14 @@ if (resetFirstRunBtn) resetFirstRunBtn.addEventListener('click', () => {
 // twice; the developer list is simply the unfiltered one.
 const WHATS_NEW = [
   {
+    version: 'v1.28.66', date: 'September 2026', title: 'The D-sweep, applied across nine packs', audience: 'dev',
+    items: [
+      '<strong>Sixteen cards rewritten and three guides reworded</strong>, all of them found by reading the inherited back-guide against the reply it sits above. Nine packs, all at 0 errors afterwards. Seven cards taught a move their pack does not have and were replaced in place; nine were faithful to their deck but not to the strategy named in the bracket.',
+      '<strong>A guide should say what the back is, not what it is not.</strong> Three of the eighteen collisions were caused by the negation itself — <em>A concrete offer, not a wish</em> over a wish, <em>A postponement, not a refusal</em> over a refusal, <em>The detail, not the category</em> over a card that names no detail. A positive guide can be a little wide; a negating one can be flatly false. The thing to avoid belongs in Challenges, where the learner practises the right move against it.',
+      'Two decks turned out to be following their own descriptions rather than drifting: <em>Show Understanding / Taking the Floor</em> and <em>Starting Conversations / A Flat Reply</em> both had a line assigning a move to a strategy that means something else. The strategies keep their meaning — Loop Back is paraphrasing, Simple Greeting opens — and the decks were brought back into line.',
+    ],
+  },
+  {
     version: 'v1.28.65', date: 'September 2026', title: 'Saying No swaps its fifth challenge', audience: 'dev',
     items: [
       '<strong>You Should Actually Say Yes is out of the pack.</strong> The inherited back-guide exposed it the day it shipped: four of its eight cards answer with a yes while the guide above them read <em>A plain refusal</em>. The deck was not miswritten — it taught something the pack does not, six strategies for declining against one deck about not declining. It is held for a Saying No — Pt. 2, written up as §1c of Innehållsluckor along with its cards and four candidate strategies.',
