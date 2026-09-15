@@ -3930,6 +3930,14 @@ if (resetFirstRunBtn) resetFirstRunBtn.addEventListener('click', () => {
 // twice; the developer list is simply the unfiltered one.
 const WHATS_NEW = [
   {
+    version: 'v1.28.65', date: 'September 2026', title: 'Saying No swaps its fifth challenge', audience: 'dev',
+    items: [
+      '<strong>You Should Actually Say Yes is out of the pack.</strong> The inherited back-guide exposed it the day it shipped: four of its eight cards answer with a yes while the guide above them read <em>A plain refusal</em>. The deck was not miswritten — it taught something the pack does not, six strategies for declining against one deck about not declining. It is held for a Saying No — Pt. 2, written up as §1c of Innehållsluckor along with its cards and four candidate strategies.',
+      '<strong>Its replacement is You Are Put on the Spot</strong> — asked with no warning and no time, in a doorway, in a group chat, in front of other people. It was the real gap among the remaining four, and it is the natural home for Ask for Time First, which the pack had but never built a deck around. All six strategies appear across its eight cards.',
+      'The guard survives the removal, which was the only objection worth testing: <em>They Have Power Over You</em> already ends with "If it is something they are entitled to ask, this is not the right pack", and Core Idea card 7 draws the same kind of boundary. Saying No is at 0 errors, 0 warnings and full volume.',
+    ],
+  },
+  {
     version: 'v1.28.64', date: 'September 2026', title: 'Every card in Collections and Challenges carries its own back-guide', audience: 'dev',
     items: [
       '<strong>1774 cards</strong> across 225 decks in the 29 core packs now inherit the back-guide of the strategy their bracket names, instead of the mode default <em>One way it could sound</em>. The front guide stays general — on the front the move has not been chosen yet. Only two cards were left untouched, the known loose pair in Describe Things. Written up as §11b-IX of the Mönsterbibliotek, which amends §11b-II rather than overturning it.',

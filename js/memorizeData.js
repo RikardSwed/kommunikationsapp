@@ -4050,16 +4050,16 @@ const memorizeCollections = {
     },
     {
       name: "Challenges",
-      description: "The five things that make a no harder than it should be:\n\n• **The No Is Not Clear** — the hedge that feels kinder\n• **You Feel Guilty** — a reasonable refusal that still stings\n• **They Have Power Over You** — a manager, a teacher, a client\n• **You Have Said Yes Too Often** — the pattern that became an expectation\n• **You Should Actually Say Yes** — an obligation rather than a request\n\nThe last one is the check to run before any of the rest.",
+      description: "The five things that make a no harder than it should be:\n\n• **The No Is Not Clear** — the hedge that feels kinder\n• **You Feel Guilty** — a reasonable refusal that still stings\n• **They Have Power Over You** — a manager, a teacher, a client\n• **You Have Said Yes Too Often** — the pattern that became an expectation\n• **You Are Put on the Spot** — no warning, and no time to think\n\nThe first is the one that causes most of the others.",
       cards: [
-        { q: "What are the five challenge categories in this pack?", a: "The No Is Not Clear, You Feel Guilty, They Have Power Over You, You Have Said Yes Too Often, and You Should Actually Say Yes.", bundle: 'pro' },
+        { q: "What are the five challenge categories in this pack?", a: "The No Is Not Clear, You Feel Guilty, They Have Power Over You, You Have Said Yes Too Often, and You Are Put on the Spot.", bundle: 'pro' },
         { q: "Why is vagueness not gentleness?", a: "It moves the cost onto them. They plan around a maybe and are refused anyway, with less time left.", bundle: 'pro' },
         { q: "What does guilt after a reasonable no actually mean?", a: "Usually just the discomfort of disappointing someone. It is not evidence you should have said yes.", bundle: 'pro' },
         { q: "What changes when the person has power over you?", a: "The framing, not the substance — fuller acknowledgement, a reason tied to the work, an alternative that solves their problem.", bundle: 'pro' },
-        { q: "When is this the wrong pack for that situation?", a: "When it is something they are entitled to ask.", bundle: 'pro' },
+        { q: "You are asked with everyone watching. Why not just answer?", a: "Because a rushed yes is the most expensive kind. Name when you will answer instead.", bundle: 'pro' },
         { q: "They are asking because you always say yes. Is the no unfair?", a: "No — overdue. The difficulty of this one is the cost of the previous ones.", bundle: 'pro' },
         { q: "Why does naming the pattern help?", a: "It explains the change, so the no does not read as a change of feeling about them.", bundle: 'pro' },
-        { q: "What is the check before using any of this?", a: "Whether this is a request you may decline, or a commitment you are dodging.", bundle: 'pro' },
+        { q: "What makes being put on the spot difficult?", a: "You are answering before you have thought — not the request itself.", bundle: 'pro' },
       ]
     },
     {

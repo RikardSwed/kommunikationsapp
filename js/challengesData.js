@@ -2452,21 +2452,22 @@ const challengesCollections = {
       ]
     },
     {
-      name: "You Should Actually Say Yes",
+      name: "You Are Put on the Spot",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "Not every request should be declined. Sometimes you promised, sometimes it is your job, sometimes the person has done a great deal for you and this is the one time they have asked.\n\nThe strategies in this pack are for requests you are entitled to refuse. Used on an obligation they become a polite way of avoiding something, and the other person often cannot tell the difference — which makes it worse rather than better.\n\nMindset: check whether this is a request you may decline or a commitment you are dodging.",
+      description: "Someone asks with no warning and no time \u2014 in a doorway, in a group chat, in front of other people. The difficulty is not the request; it is that you are answering before you have thought, and a rushed yes is the most expensive kind.\n\nWhat it usually looks like:\n\n\u2022 A yes arrives before you have heard the whole thing.\n\u2022 Everyone is looking at you and the silence needs filling.\n\u2022 You agree, and spend the walk home working out how to get out of it.\n\nTwo ways through:\n1. Ask for Time First \u2014 this moment is the whole point of the strategy. Name when you will answer.\n2. Say No Simply \u2014 if the answer would be no with a week to think, the surprise has changed nothing.\n\nMindset: being asked quickly does not oblige you to answer quickly. \"I'll tell you tonight\" is a complete sentence.",
       inputs: [
-        { q: "You promised and you are looking for a way out.", a: "\"I said I would, so I will.\" [Say No Simply]", guideBack: "A plain refusal", bundle: 'pro' },
-        { q: "It is genuinely part of what you agreed to do.", a: "\"That's fair enough. I'll get it done.\" [Say No Simply]", guideBack: "A plain refusal", bundle: 'pro' },
-        { q: "You do not want to and there is no good reason.", a: "\"I'd rather not, and that's not a good enough reason. I'll do it.\" [Say No Simply]", guideBack: "A plain refusal", bundle: 'pro' },
-        { q: "You could do it but it would be inconvenient.", a: "\"I can do it. It'll be Thursday rather than tomorrow.\" [The Half Yes]", guideBack: "The part you can take", bundle: 'pro' },
-        { q: "It genuinely is yours to decline and you are sure.", a: "\"I've thought about it and it's a no.\" [Say No Simply]", guideBack: "A plain refusal", bundle: 'pro' },
-        { q: "They have covered for you twice this year.", a: "\"You've picked me up twice. This one's mine.\" [Understand First]", guideBack: "Their side, before your no", bundle: 'pro' },
-        { q: "You want to say no and the only reason is that you are tired.", a: "\"Give me until tomorrow — I'll answer properly when I'm not knackered.\" [Ask for Time First]", guideBack: "A postponement, not a refusal", bundle: 'pro' },
-        { q: "You are calling it a boundary when it is really a preference.", a: "\"That's not a boundary, it's a preference. I'll do it.\" [Give a Short Reason]", guideBack: "A short reason, or none given", bundle: 'pro' },
+        { q: "They ask while you are halfway out of the door.", a: "\"Quick answer, then: no, sorry. It'd be the same one tomorrow.\" [Say No Simply]", guideBack: "A plain refusal", bundle: 'pro' },
+        { q: "You are asked in a group chat and everyone can see it.", a: "\"I'll come back to this tonight, when I've looked at the week.\" [Ask for Time First]", guideBack: "A postponement, not a refusal", bundle: 'pro' },
+        { q: "A yes came out before you had heard the whole thing.", a: "\"Hang on \u2014 I answered before you'd finished. Ask me again in an hour.\" [Ask for Time First]", guideBack: "A postponement, not a refusal", bundle: 'pro' },
+        { q: "Someone has volunteered you and is waiting for you to agree.", a: "\"I've not agreed to that. It's a no from me.\" [Say No Simply]", guideBack: "A plain refusal", bundle: 'pro' },
+        { q: "You have to refuse in front of other people.", a: "\"Sorry to land that in front of everyone \u2014 but it's a no.\" [Soften the Delivery]", guideBack: "The same no, said kindly", bundle: 'pro' },
+        { q: "You want to refuse without it looking like the surprise decided it.", a: "\"It's not because you sprang it on me. I'd have said no either way.\" [Give a Short Reason]", guideBack: "A short reason, or none given", bundle: 'pro' },
+        { q: "You are asked mid-task and could manage a smaller version.", a: "\"Not the whole thing, caught like this. I could look at one part on Friday.\" [The Half Yes]", guideBack: "The part you can take", bundle: 'pro' },
+        { q: "They have had to ask in front of everyone and it was awkward for them too.", a: "\"That can't have been easy to ask in here either. It's still a no.\" [Understand First]", guideBack: "Their side, before your no", bundle: 'pro' },
       ]
     },
+        
   ],
   emotionlabellingandregulation: [
     {
