@@ -1,5 +1,12 @@
 const WHATS_NEW = [
   {
+    version: 'v1.28.72', date: 'September 2026', title: 'The user list gets the guide setting', audience: 'dev',
+    items: [
+      'Nine versions of content work shipped since the user-facing list was last touched, and by the editorial rules almost none of it belongs there — pack improvements are bundled, not enumerated. One thing does: the <strong>detailed / simple guide text</strong> setting is a choice the user makes, so it gets an entry.',
+      'Written to the rules above WHATS_NEW_USER: what you can do with it, not what was wrong before. The rewritten guides are one closing line, not a list.',
+    ],
+  },
+  {
     version: 'v1.28.71', date: 'September 2026', title: 'Sequences get the same kind of guide as every other mode', audience: 'dev',
     items: [
       'The simple-mode front guide in Sequences read <em>What\'s happening, and the strategy to use</em>. Half of it was false — since v1.27.88 the strategy name is deliberately stripped from a step\'s front and moved to the back in brackets — and the other half was redundant, because describing the situation is what every front in the app does. It now reads <strong>Use the planned strategy when…</strong>',
@@ -437,6 +444,14 @@ const WHATS_NEW = [
 //   • Lägg bara till när något nytt är värt att öppna appen för. De flesta
 //     versioner ska ALDRIG stå här.
 const WHATS_NEW_USER = [
+  {
+    date: 'September 2026', title: 'Choose how much the guide tells you',
+    items: [
+      'The training settings now offer <strong>detailed</strong> or <strong>simple</strong> guide text. Detailed names the move — <em>a line that lowers the heat</em>, <em>their point, in your words</em> — so you know what the answer should do before you turn the card. Simple keeps one steady line instead. Turn both off and the cards stand on their own.',
+      'Detailed is on to begin with, and the choice is remembered per pack and per mode, so you can keep the help where you still want it and drop it where you do not.',
+      'The guides themselves were rewritten across the library to say what the card actually does.',
+    ],
+  },
   {
     date: 'September 2026', title: 'Six ways to train, in every Pro pack',
     items: [
