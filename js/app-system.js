@@ -3930,6 +3930,14 @@ if (resetFirstRunBtn) resetFirstRunBtn.addEventListener('click', () => {
 // twice; the developer list is simply the unfiltered one.
 const WHATS_NEW = [
   {
+    version: 'v1.28.69', date: 'September 2026', title: 'Broken Record was never over the spec', audience: 'dev',
+    items: [
+      '<strong>The 48 surplus cards are extra input bundles, not surplus.</strong> Broken Record\'s eight Single decks hold 5 free + 3 pro — exactly the spec — plus three <em>Services</em> and three <em>Family</em> cards each, declared in BUNDLE_DEFS and built on purpose. check-pack counted all fourteen against a spec of eight and had warned about it since the volume sweep. It now counts free + pro only and reports the rest as what they are: <em>Single Strategy: 8 decks, 64 cards (+48 in extra bundles)</em>. Broken Record went from 18 warnings to 2, and no card was deleted. Assertive Communication (workplace, domestic) and Humour Practise (family) were measured the same wrong way.',
+      '<strong>Sequences now quote their lines in every core pack.</strong> Describe Things, Explain Things, Praise and Encouragement and Disagreeing wrote their sequence backs as bare sentences while the rest of the library quoted — 126 steps across twelve decks. It matters most in hands-free, where an unquoted back is ambiguous between a line to say and an instruction to follow. All four packs are at 0 errors and 0 warnings.',
+      '<strong>26 of 27 core packs are now at zero errors and zero warnings.</strong> The one exception is Broken Record, where two reused backs remain — and one of those, the same sentence twice inside Keep the Same Words, is the strategy working as intended.',
+    ],
+  },
+  {
     version: 'v1.28.68', date: 'September 2026', title: 'Two checks were wrong, and the last two loose cards', audience: 'dev',
     items: [
       '<strong>check-pack\'s label reader tested the wrong thing.</strong> A trailing bracket was dismissed as a stage direction when it <em>began</em> with and/then/let/say/pause/stop/wait — so real labels like <code>[say it back]</code> and <code>[stop and check]</code> were invisible. What decides is the position, exactly as the comment beside it always claimed: a reply before the bracket makes it a label. Across the whole library this surfaced only two hidden labels in the core, both in Describe Things, both long known.',
