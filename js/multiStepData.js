@@ -1322,7 +1322,7 @@ const multiStepCollections = {
   apologizing2: [
     {
       name: "The Full Five Steps",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "The whole apology, start to finish: what they felt, why it was reasonable, why they matter, sorry for the specific thing, and what will change.\n\nThis one is a monologue. You are saying it as a continuous piece, and each card is the next step. Read the step, say your own version out loud, then turn the card.\n\nNotice where sorry sits. It is the fourth thing, not the first, and that ordering is the pack's central idea: an apology delivered before you have shown you understand is heard as wanting the conversation to end.\n\nMindset: each step earns the next. The plan at the end is what makes the rest worth believing.",
       inputs: [
@@ -1352,7 +1352,7 @@ const multiStepCollections = {
     },
     {
       name: "When They Are Still Angry",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "An apology does not always resolve things on delivery. Sometimes the other person is still angry, does not accept it yet, or wants to say more before they are ready to move.\n\nThis is an exchange rather than a monologue. The move throughout is to stay in it without defending yourself and without pressing for the apology to be accepted. An apology is offered, not transacted — and the moment you start arguing that it was a good apology, it stops being one.\n\nMindset: let them be angry at you for a bit. That is part of it, not a sign it failed.",
       inputs: [
@@ -1380,7 +1380,7 @@ const multiStepCollections = {
     },
     {
       name: "When It Was a Long Time Ago",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "Something from months or years back is still sitting there. Raising it feels strange, and there is a real risk of reopening something the other person has put down.\n\nAcknowledging the delay is what makes it work, and asking before you launch is the courtesy that separates repair from imposing. Some people would rather leave it, and that answer has to be genuinely available.\n\nMindset: name the delay, ask before you open it, and accept the answer.",
       inputs: [
@@ -1523,7 +1523,7 @@ const multiStepCollections = {
   endingconversations: [
     {
       name: "The Full Close",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "The moves stacked in their natural order: reason, something warm, and the exit phrase last. This is what an ordinary good goodbye is actually made of, and it takes about eight seconds.\n\nThe order is doing real work. The reason explains the ending, the warm bit protects it, and the exit phrase closes it. Move the exit phrase anywhere but last and the conversation reopens.\n\nMindset: reason, warmth, exit. Then actually go.",
       inputs: [
@@ -1561,7 +1561,7 @@ const multiStepCollections = {
     },
     {
       name: "When They Keep Talking",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "You have signalled that you are leaving and the conversation carries on anyway. This is the situation most people find hardest, because each failed attempt makes the next one feel ruder.\n\nThe move is to escalate in small steps rather than repeat the same signal. Softness first, then a clearer reason, then a firm and friendly close that does not leave a gap. The kindest version is also the clearest one — a soft signal repeated four times is more uncomfortable for both of you than one firm sentence.\n\nMindset: each attempt slightly clearer than the last. Do not leave a pause at the end.",
       inputs: [
@@ -1599,7 +1599,7 @@ const multiStepCollections = {
     },
     {
       name: "Ending Something You Enjoyed",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "Leaving a conversation that is going well is harder than leaving a dull one, because ending it can look like you did not feel the same way.\n\nThe answer is to make the ending say so explicitly. A reason plus a positive comment plus a genuine offer of more removes any ambiguity, and the last question is the strongest move available — it proves the conversation mattered by spending your final seconds on it.\n\nMindset: say the ending is about your day, not about them. Then prove it.",
       inputs: [
@@ -1639,7 +1639,7 @@ const multiStepCollections = {
   reactingtounexpectedstatements: [
     {
       name: "From Blank to Something Real",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "The usual arc: surprise, an honest pause, a question, and something partial and true. Steps: 1) Name the Pause — buy the second you need, 2) Ask What Prompted It — get the story rather than guess it, 3) Answer Part of It — say the bit you do know, 4) Promise a Return — promise a real answer later.\n\nThe shape of the whole thing:\n1. \"Right. Give me a second with that.\"\n2. \"I don't think anything yet. What's brought it on?\"\n3. \"I didn't know it was that long. The rest I'll catch up on.\"\n4. \"Ask me at the weekend and I'll have an actual view.\"\n\nWhy this order: at no point does the answer become complete, and the conversation works anyway. Each step is honest about how far you have got.\n\nMindset: stay in it honestly rather than arrive at a verdict.",
       inputs: [
@@ -1677,7 +1677,7 @@ const multiStepCollections = {
     },
     {
       name: "When It Is Personal",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "Someone tells you something significant about themselves, out of nowhere. This is the version people handle worst, because the urge to say the right thing is strongest and the risk of saying something hollow is highest.\n\nThe move throughout is to be honest about not having words, and to make it clear that the not-knowing is about you rather than about them.\n\nMindset: they need you present, not eloquent. Say the true small thing.",
       inputs: [
@@ -1715,7 +1715,7 @@ const multiStepCollections = {
     },
     {
       name: "When You Answered Too Fast",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "The reaction arrives before the thought, and something has come out of your mouth that you did not mean or would not defend.\n\nGoing back is straightforward and almost nobody does it. Say that the first answer was a reaction, say what you actually think now, and — if it landed badly — say that plainly rather than hoping it passed.\n\nMindset: a corrected first reaction is worth more than a well-managed one, because it shows you were thinking rather than performing.",
       inputs: [
@@ -1808,7 +1808,7 @@ const multiStepCollections = {
   howtointerrupt: [
     {
       name: "The Polite Cut-In",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "The full version, for when the interruption matters and the room is formal enough that how you do it will be noticed. Steps: 1) The Natural Pause — go in at their break, 2) Signal the Interruption — give them a second to stop, 3) Their Point First — show you were listening, 4) Why It Cannot Wait — then say why it could not wait.\n\nFour steps sounds like a lot for one interruption, but the first three are about six words in total. What they buy is an interruption nobody has to be gracious about.\n\nThe shape of the whole thing:\n1. (wait for the full stop)\n2. \"Sorry — can I come in there?\"\n3. \"Everything up to the timeline I'm with you on.\"\n4. \"It's just that the date moved, so that part won't hold.\"\n\nMindset: the three short steps before your point are what make the point land. Skip them and the same content arrives as an objection.",
       inputs: [
@@ -1846,7 +1846,7 @@ const multiStepCollections = {
     },
     {
       name: "When There Is No Pause",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "The version for a monologue that is not going to stop on its own. Steps: 1) Signal the Interruption — make the break yourself, 2) Why It Cannot Wait — justify it immediately, 3) Their Point First — and give them the floor back.\n\nThe order is deliberately different. When you have had to make your own gap, the justification cannot wait — it has to arrive in the same breath, or the interruption sits there unexplained.\n\nWhy the acknowledgement moves to the end:\n1. Signal — a warm cue is all you have time for.\n2. Reason — this is what converts the interruption from rude to necessary.\n3. Acknowledge — offering the floor back is what stops it becoming a takeover.\n\nMindset: the third step is the one that matters most here. An interruption you hand back is a contribution; one you keep is a takeover.",
       inputs: [
@@ -1881,7 +1881,7 @@ const multiStepCollections = {
     },
     {
       name: "The Light Way In",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "The warm version, for friends and relaxed rooms. Steps: 1) Use Humour — make the interruption itself the joke, 2) Their Point First — then show you were actually listening, 3) Why It Cannot Wait — and land the point.\n\nThe joke does the work of the signal here. It tells the speaker something is coming and makes it impossible to take badly, which is why this is the cheapest version when the room allows it.\n\nWhat each step is doing:\n1. Humour — buys the floor without anyone having to be gracious.\n2. Acknowledgement — stops the joke being all there was.\n3. Reason — the point still has to be worth the interruption.\n\nMindset: the joke has to be at your own expense. Make it about how long they have been talking and you have criticised them, not lightened it.",
       inputs: [
@@ -1918,7 +1918,7 @@ const multiStepCollections = {
   handleinterruptions: [
     {
       name: "When They Keep Cutting In",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "Handle an interruption that escalates: start gentle, firm up when it repeats, then hand over cleanly. Steps: 1) Acknowledge and Continue — note it and keep going, 2) Reinforce the Boundary — when they cut in again, 3) Their Turn Next — finish and give them the floor.\n\nThe shape of the whole thing:\n1. \"I see you want to add something — let me just finish this bit.\"\n2. \"That's twice now. Let me get to the end.\"\n3. \"Right, that's me. What were you going to say?\"\n\nWhy this order: firm on the first cut-in reads as touchy, and soft on the third reads as an invitation. The hand-over at the end is what keeps the whole thing friendly.\n\nMindset: escalate one notch at a time, and always finish by giving them the floor. That is what stops a boundary turning into a fight.",
       inputs: [
@@ -1953,7 +1953,7 @@ const multiStepCollections = {
     },
     {
       name: "Let It Go, Then Reclaim",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "When an interruption is urgent, give way and come back rather than fight it. Steps: 1) Let It Go — allow the urgent cut-in, 2) Reclaim — return to your thread once it settles, 3) Their Turn Next — finish and bring them back.\n\nThe shape of the whole thing:\n1. Say nothing, and let the urgent point land.\n2. \"Anyway, back to the timeline — I was at the second week.\"\n3. \"That's my bit. You had something earlier?\"\n\nWhy this order: some interruptions really are more urgent than your sentence. Giving way costs nothing as long as you come back, and coming back is the step people forget.\n\nMindset: letting it go is only half the move. Without the reclaim you have not chosen anything — you have simply lost the point.",
       inputs: [
@@ -1988,7 +1988,7 @@ const multiStepCollections = {
     },
     {
       name: "Rescue the Punchline",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "Keep the floor for a story with humour, then land it. Steps: 1) Use Humour — deflect the cut-in playfully, 2) Acknowledge and Continue — note them and press on, 3) land it and share the floor.\n\nThe shape of the whole thing:\n1. \"Hold that thought, I'm just getting to the good part!\"\n2. \"I see you — two more lines, I promise.\"\n3. Land it, then: \"Right, go on — what were you saying?\"\n\nWhy this order: humour saves the first cut-in cheaply, but it wears out fast. A second one needs a straight acknowledgement, and handing the floor over afterwards is what keeps the room warm.\n\nMindset: a story that has to be fought for stops being funny. Keep it light, land it, then get out of the way.",
       inputs: [
@@ -2191,7 +2191,7 @@ const multiStepCollections = {
   describethings: [
     {
       name: "Building It Up",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "Name first, then narrow with the details that matter most for this listener. Steps: 1) Name and Main Details — what it is, plus one feature, 2) the category their follow-up asks for, 3) the one that settles it.\n\nThe shape of the whole thing:\n1. \"It's a rucksack — the green one with the yellow patch.\"\n2. \"About the size of a carry-on, taller than it is wide.\"\n3. \"It's the only one with a side pocket.\"\n\nWhy this order: each answer should remove possibilities rather than simply add words, and their follow-up question tells you exactly which category to reach for next.\n\nMindset: let their questions choose your order.",
       inputs: [
@@ -2229,7 +2229,7 @@ const multiStepCollections = {
     },
     {
       name: "When You Do Not Know the Word",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "Describing your way around a missing word is a real conversational skill and not a failure. Steps: 1) What It Is For — purpose gets you there fastest, 2) Size and Shape — then the form, 3) What It Resembles — then the nearest familiar thing.\n\nThe shape of the whole thing:\n1. \"I don't know the word. It's for getting a nail back out of wood.\"\n2. \"Almost — but the other end. The split end, the bit you pull with.\"\n3. \"Like a hammer, only the back of it does the work.\"\n\nWhy this order: purpose narrows the field faster than appearance, and a comparison closes the gap when the first two have not.\n\nMindset: talk around it. The word is not the point; being understood is, and the move to avoid is stopping.",
       inputs: [
@@ -2264,7 +2264,7 @@ const multiStepCollections = {
     },
     {
       name: "They Cannot Find It",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "When someone is actively searching, appearance matters less than position. Steps: 1) Where You Find It — the room and the surface, 2) Where You Find It again, narrowed to the neighbours, 3) Name and Main Details — the detail that confirms it.\n\nThe shape of the whole thing:\n1. \"It's in the kitchen, on the shelf above the kettle.\"\n2. \"Second shelf, behind the tins.\"\n3. \"Dark green lid. You'll know it when you see it.\"\n\nWhy this order: each step should move them physically. If your last sentence did not change where they are standing or looking, it was decoration.\n\nMindset: describe the route, not the object.",
       inputs: [
@@ -2301,7 +2301,7 @@ const multiStepCollections = {
   explainthings: [
     {
       name: "The Full Explanation",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "What It Is, then How It Works, then Why It Matters, in that order. It is the order that works when someone starts from nothing, because each step gives them what they need to follow the next one.\n\nThe temptation is to open with Why, because that is the part you find interesting. Resist it — Why lands on nothing when the listener still cannot picture the object.\n\nMindset: pause after each step. If they nod, go on. If they frown, stay where you are.",
       inputs: [
@@ -2339,7 +2339,7 @@ const multiStepCollections = {
     },
     {
       name: "When They Only Need One Piece",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "Not every explanation needs all three moves. Someone often already has two of them and is missing exactly one. Steps: 1) hear which piece is missing, 2) give that one, 3) stop.\n\nThe shape of the whole thing:\n1. (they say \"I know what it is, I just don't get what it's for\")\n2. \"It's for the mornings when you can't get up.\"\n3. (nothing — let them ask if they want more)\n\nWhy this order: giving the full tour is a way of not listening. The third step is the one people drop, and dropping it turns an answer back into a lecture.\n\nMindset: the shortest correct answer is a kindness. You can always add.",
       inputs: [
@@ -2374,7 +2374,7 @@ const multiStepCollections = {
     },
     {
       name: "Explaining Something You Half Understand",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "You will be asked to explain things you only partly know. Steps: 1) give the piece you are sure about, 2) mark where your knowledge stops, 3) say what would settle it.\n\nThe shape of the whole thing:\n1. \"It ends up in the shared folder, every night.\"\n2. \"How it gets there I couldn't tell you.\"\n3. \"Sam would know — I can ask her this afternoon.\"\n\nWhy this order: the sure part first means the listener leaves with something. The gap named second stops them carrying away a guess as a fact.\n\nMindset: being trusted is worth more than sounding complete.",
       inputs: [
@@ -2494,7 +2494,7 @@ const multiStepCollections = {
   storytellingwiththesixws: [
     {
       name: "The Full Six",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "All six W's in a natural telling order. Steps: 1) When — place it in time, 2) Where — set the scene, 3) Who — bring the people in, 4) What — the event, 5) How — the process, 6) Why — the reason underneath.\n\nThe six W's have no fixed order. This one works because the scene arrives before the event, so the listener has somewhere to put it when it lands.\n\nThe shape of the whole thing:\n1. \"This was yesterday, about ten minutes before the lesson.\"\n2. \"In the hallway outside the science block.\"\n3. \"My teacher was standing there waiting.\"\n4. \"And I had lost my homework.\"\n5. \"I checked my bag, my locker, the whole hallway.\"\n6. \"I had been in a rush that morning and had not checked properly.\"\n\nMindset: six sentences is a complete story. Most people either use two of them or forty, and the six-sentence version beats both.",
       inputs: [
@@ -2538,7 +2538,7 @@ const multiStepCollections = {
     },
     {
       name: "The Short Version",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "Three or four W's are often enough. Steps: 1) What — lead with the event, 2) How — two beats of process, 3) Why — the reason underneath.\n\nThis is the version for a conversation rather than a floor. When you have thirty seconds, or when the story is a contribution to someone else's topic rather than the main event, the spine on its own does the job.\n\nWhy these three:\n1. What — without it there is no story, only atmosphere.\n2. How — without it the story is an announcement.\n3. Why — without it the listener says \"and?\"\n\nMindset: knowing what to leave out is the skill. Dropping When, Where and Who is a decision, not a failure.",
       inputs: [
@@ -2573,7 +2573,7 @@ const multiStepCollections = {
     },
     {
       name: "Hook First",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "The version that leads with the event instead of building up to it. Steps: 1) What — open on the event, 2) Where and When — fill the scene in behind it, 3) Who — bring the people in, 4) How — then tell it properly.\n\nUse this when the event is strong enough to carry the opening, or when you are not certain you have the room's attention yet. Starting with the event buys you the time to set the scene afterwards.\n\nWhy the order is reversed:\n1. What first — a strong event earns you thirty seconds of patience.\n2. Scene second — now they have a reason to care where it happened.\n3. Who and How — the story proper, told to people who are already in.\n\nMindset: setup only holds attention you already have. If you are not sure you have it, lead with the event and backfill.",
       inputs: [
@@ -2699,7 +2699,7 @@ const multiStepCollections = {
   praiseandencouragement: [
     {
       name: "The Full Five Steps",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "All five steps, run start to finish: behaviour, impact, appreciation, encouragement, support. Used whole it is what a really good piece of praise sounds like — specific, warm, and ending with something concrete rather than a slogan.\n\nThis one is a monologue. Nobody interrupts you; the whole thing is one continuous piece of speech, and each card is the next step of it. Read the step on the front, say your own version out loud, then turn the card to see one way it could have gone.\n\nMindset: each step earns the next. Do not jump to the cheerleading.",
       inputs: [
@@ -2740,7 +2740,7 @@ const multiStepCollections = {
     },
     {
       name: "Praise That Gets Deflected",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "Most people deflect. They minimise, they credit someone else, they change the subject. The instinct is to repeat the compliment more emphatically, which makes both of you uncomfortable.\n\nUnlike the five-step combo, this one is a real exchange — each front carries what they just said, and the step tells you which move answers it. The step numbers are the five from the guide, used out of order: pick the one that answers what they actually said. The move is to shift from verdict to fact. Impact and specific behaviour are much harder to wave away than a judgement, because there is nothing to be modest about.\n\nMindset: do not argue about whether they are good. Report what happened.",
       inputs: [
@@ -2775,7 +2775,7 @@ const multiStepCollections = {
     },
     {
       name: "Encouraging Someone Who Is Struggling",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "When someone is disheartened, praise can sound like you have not understood how bad it feels. The order matters: acknowledge the situation first, then be specific about what genuinely was good, and only then look forward and offer something.\n\nThis is an exchange too — they push back at each step, and what they say decides which move comes next. The step numbers are the five from the guide, and a real conversation rarely runs 1 to 5 in order: use the one the moment needs. Acknowledging how it feels is not one of the five — fold it into the first line rather than making it a move of its own.\n\nNothing here should be untrue. Praise that stretches is worse than silence, because it tells them your good opinion is not worth much.\n\nMindset: honest and small beats generous and vague.",
       inputs: [
@@ -2986,7 +2986,7 @@ const multiStepCollections = {
   apologizing1: [
     {
       name: "The Everyday Apology",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "The whole thing for an ordinary mistake: sorry, what you did, what changes. Under ten seconds, and it settles the matter.\n\nThis one is a monologue — you say it as a continuous piece. Read the step, say your own version out loud, then turn the card.\n\nThe order matters less here than in a serious apology, but the ending does not: stopping after the sorry leaves them with your regret and no reason to expect anything different.\n\nMindset: short, specific, and finished with a plan.",
       inputs: [
@@ -3021,7 +3021,7 @@ const multiStepCollections = {
     },
     {
       name: "The Quick One",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "Most apologies are three words and a short exchange. This drills that — say it, deal with what comes back, and get out without inflating it.\n\nThe discipline is stopping. Adding an explanation turns a short apology into a defence, and adding the full treatment to something trivial makes the other person responsible for managing your discomfort.\n\nMindset: say it, let them answer, move on. Do not upgrade a small thing mid-sentence.",
       inputs: [
@@ -3056,7 +3056,7 @@ const multiStepCollections = {
     },
     {
       name: "When It Is Bigger Than You Thought",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "You treated something as small and it turns out it was not. The other person is more affected than you expected, or has been sitting on it.\n\nThe move is to change the size out loud rather than carry on with the version you had prepared. That correction is itself part of the apology, and it lands better than any amount of the small version delivered more sincerely.\n\nMindset: notice, say that you had it wrong, and start again at the right size.",
       inputs: [
@@ -3093,7 +3093,7 @@ const multiStepCollections = {
   agreeing: [
     {
       name: "Agree and Back It Up",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "The basic shape of a full agreeing turn. Steps: 1) Signal the Agreement — make it clear you are with them, 2) Add a Personal Experience — back it with something from your own life, 3) Expand the Idea — push it one step further.\n\nEach step does one job. The signal buys goodwill, the experience makes it real, and the expansion gives the conversation somewhere to go.\n\nThe shape of the whole thing:\n1. \"Same here, completely.\"\n2. \"I read by the window every time it rains.\"\n3. \"And it's the one kind of weather where staying in feels earned.\"\n\nMindset: the third step is the one people skip. Without it the agreement is warm but finished.",
       inputs: [
@@ -3128,7 +3128,7 @@ const multiStepCollections = {
     },
     {
       name: "Agree with a Reason",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "The version for opinions you share but have never lived. Steps: 1) Signal the Agreement — confirm you are with them, 2) Why It Makes Sense — say why it makes sense, 3) Expand the Idea — apply it somewhere they did not.\n\nUse this whenever you have no story to tell. A reason is always available, which makes this the version that works everywhere.\n\nWhere each step is doing its work:\n1. Signal — stops the reason sounding like a correction.\n2. Explanation — hands them an argument they can reuse.\n3. Expansion — moves it from their case to a wider one.\n\nMindset: having no personal experience is not a reason to stay quiet. Explaining why someone is right is a real contribution.",
       inputs: [
@@ -3163,7 +3163,7 @@ const multiStepCollections = {
     },
     {
       name: "Keep It Going",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "Agreeing as a back-and-forth rather than a single turn. Steps: 1) Signal the Agreement — get on their side, 2) Expand the Idea — hand them something new, 3) Add a Personal Experience — once they have picked it up, meet them with your own.\n\nThe order is deliberately reversed here. By expanding before you tell your own story, you invite them to speak second rather than closing the topic yourself.\n\nWhat makes it work:\n1. Signal — short, so the expansion arrives quickly.\n2. Expansion — a new angle is easier to answer than a finished story.\n3. Experience — lands better once they have added their own piece.\n\nMindset: agreeing is a shared activity. The best version ends with both of you having said something.",
       inputs: [
@@ -3200,7 +3200,7 @@ const multiStepCollections = {
   disagreeing: [
     {
       name: "The Full Disagreement",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "The shape a disagreement takes when the other person is engaging with you properly. Steps: 1) Signal the Disagreement, 2) Give Your Reason, 3) A Wider Picture, 4) Add an Example.\n\nThe shape of the whole thing:\n1. \"I see it differently, and it's a small difference.\"\n2. \"The last two both slipped at handover.\"\n3. \"It might be a staffing question rather than a calendar one.\"\n4. \"We tried it in March and it cost a week.\"\n\nWhy this order: each step answers what they actually said. The commonest failure is running your own four moves regardless of their replies, which turns a conversation into two speeches.\n\nMindset: stay on their sentence, not on your next point.",
       inputs: [
@@ -3238,7 +3238,7 @@ const multiStepCollections = {
     },
     {
       name: "When They Push Back Hard",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "Sometimes a disagreement gets warm. The other person raises their voice slightly, restates their point more firmly, or treats your difference as a personal challenge.\n\nThe move is to lower the temperature without abandoning your view. Acknowledge what is fair in what they said, keep your own sentence, and do not match their volume.\n\nMindset: you can hold a position and be easy to talk to at the same time.",
       inputs: [
@@ -3273,7 +3273,7 @@ const multiStepCollections = {
     },
     {
       name: "When You Change Your Mind",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "Sometimes their reason is better than yours. Conceding is a move in a disagreement, not a defeat. Steps: 1) Give Your Reason, narrowed to what survived, 2) Signal the Disagreement at its new size, 3) say what changed your mind.\n\nThe shape of the whole thing:\n1. \"You've answered the cost. What's left is the handover.\"\n2. \"And honestly that's a preference now, not an argument.\"\n3. \"The March example is the bit that moved me.\"\n\nWhy this order: naming what changed your mind is what separates a real change of view from giving up to end the conversation.\n\nMindset: being persuaded is a good outcome. It means the conversation worked.",
       inputs: [
@@ -3310,7 +3310,7 @@ const multiStepCollections = {
   persuasionandinfluence1: [
     {
       name: "Building the Case",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "A case made in stages, each one answering what they actually said rather than continuing your own list.\n\nEach step front carries their reply and names the strategy. Notice how the order follows them: benefit while they are uninterested, reason once they engage, cost of doing nothing when they defend the status quo, and your own experience when they doubt it is workable.\n\nMindset: their last answer chooses your next strategy.",
       inputs: [
@@ -3348,7 +3348,7 @@ const multiStepCollections = {
     },
     {
       name: "When They Are Not Interested",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "The hardest audience is not the one who disagrees but the one who has not thought about it. Steps: 1) What They Get — make it their business, 2) The Cost of Doing Nothing — say what waiting costs, 3) Give a Reason, 4) Your Own Story — the part they cannot argue with.\n\nThe shape of the whole thing:\n1. \"It'd save you the chasing every Friday.\"\n2. \"Twenty minutes a week for two years. It adds up.\"\n3. \"It's nobody's job. That's the actual problem.\"\n4. \"The other team fixed theirs in an afternoon. I watched it.\"\n\nWhy this order: an argument lands on nothing when there is no question in their mind. The benefit or the cost creates it; the reasoning then has somewhere to go.\n\nMindset: create the question before you answer it.",
       inputs: [
@@ -3386,7 +3386,7 @@ const multiStepCollections = {
     },
     {
       name: "When You Should Not Win",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "Sometimes you set out to persuade someone and find out mid-conversation that they are right, or that you cannot answer their objection.\n\nThis combo practises noticing and saying so. It is the thing that makes people willing to be persuaded by you next time — someone who has visibly changed their mind under a good argument is worth listening to.\n\nMindset: the point is the better answer. Sometimes it is theirs.",
       inputs: [
@@ -3596,7 +3596,7 @@ const multiStepCollections = {
   brokenrecord: [
     {
       name: "The Classic Loop",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "The technique as it actually runs: they push, you acknowledge and repeat, they switch tack, you repeat again, and after three or four rounds it ends.\n\nEach step front carries what they said and names the move. Watch how the arguments change while your answer does not — that contrast is the whole mechanism, and it is why the technique works without any confrontation in it.\n\nMindset: the arguments will change. Your sentence will not.",
       inputs: [
@@ -3637,7 +3637,7 @@ const multiStepCollections = {
     },
     {
       name: "When a Compromise Is Right",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "Not every held line should stay held. When the objection is practical rather than a matter of principle, offering something that genuinely works for you ends the conversation better than repetition does.\n\nThe order matters. Hold the line first, so the compromise is not read as the first concession in a negotiation. Offer it once, and be clear it is the whole offer rather than an opening bid.\n\nMindset: hold, then offer — and only if the alternative genuinely suits you.",
       inputs: [
@@ -3675,7 +3675,7 @@ const multiStepCollections = {
     },
     {
       name: "When They Escalate",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "Sometimes persuasion turns into pressure — raised voice, guilt, or an implication about what kind of person you are.\n\nThe move is the same as before, only more so: shorter answers, flatter tone, no engagement with the accusation. And a clearer endpoint, because a conversation that has become pressure is one to leave rather than to win.\n\nIf someone is trying to make you feel bad in order to change your answer, naming it plainly and once is fair, and then leaving is fair too.\n\nMindset: do not match their volume, do not answer the accusation, and end it sooner than you would otherwise.",
       inputs: [
@@ -3715,7 +3715,7 @@ const multiStepCollections = {
   respondingtopassiveaggression: [
     {
       name: "Staying Level",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "A run of remarks answered without escalation. This is the most common real shape: not one dig but three or four across a conversation, each inviting you to react.\n\nEach step front carries what they said and names the strategy. Notice that the responses get no sharper as the remarks continue — that flatness is what stops the conversation turning into an argument.\n\nMindset: the temperature is yours to set. Answer the fourth one exactly as you answered the first.",
       inputs: [
@@ -3753,7 +3753,7 @@ const multiStepCollections = {
     },
     {
       name: "Bringing It Into the Open",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "Taking a remark under the surface, in the order that works. Steps: 1) Ask What They Mean — neutrally, and then wait, 2) Name the Feeling — acknowledge what comes out, 3) Say How It Lands — say what you would prefer instead.\n\nThe shape of the whole thing:\n1. \"What do you mean by that?\"\n2. \"You sound properly fed up. Is it about the deadline?\"\n3. \"I'd honestly rather you just told me you were annoyed.\"\n\nWhy this order: the risky moment is the first one. A question asked with an edge starts an argument and a question asked neutrally gets an answer — the same words, two completely different conversations.\n\nMindset: ask like you want the answer, and then actually listen to it.",
       inputs: [
@@ -3791,7 +3791,7 @@ const multiStepCollections = {
     },
     {
       name: "When You Should Not Take the Bait",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "Some remarks are an invitation to a row, and the person making them is looking for one. Engaging is exactly what turns a bad moment into a bad afternoon.\n\nThis combo practises declining, several times, without either giving in or getting sharp. It ends with leaving rather than resolving, because resolution is not always available and not always yours to produce.\n\nTwo of the steps are silent on purpose. Let It Go often looks like nothing at all — you say nothing, the meeting carries on, and the dig has nowhere to land.\n\nMindset: you can decline every round. Nothing obliges you to have this argument today.",
       inputs: [
@@ -3831,7 +3831,7 @@ const multiStepCollections = {
   makingrequests: [
     {
       name: "The Whole Request",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "The Actual Request, then Make It Specific, then Give One Short Reason, then Leave Room to Refuse. The four parts of a request, in the order they come out of your mouth.\n\nNotice how short each step is. The whole thing is four sentences, and three of them are answers to questions the other person has already started asking silently: how big is it, why does it matter, and can I say no.\n\nMindset: two of these steps make it answerable and one makes it refusable. The first one is just saying it at all.",
       inputs: [
@@ -3869,7 +3869,7 @@ const multiStepCollections = {
     },
     {
       name: "Asking for Help",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "Ask for Help, then Make It Specific, then Leave Room to Refuse, then Take a No Well. The harder version, because it starts with admitting something.\n\nThe first step is the whole difficulty. After that it behaves like any other request — which is the point of putting it in a sequence. Naming the piece you are stuck on turns \"I'm drowning\" into something a person can actually do on a Tuesday.\n\nMindset: asking early is a small ask. The sequence gets much harder if you leave it three weeks.",
       inputs: [
@@ -3907,7 +3907,7 @@ const multiStepCollections = {
     },
     {
       name: "When Nothing Comes Back",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "Follow Up Once, then Make It Specific, then Leave Room to Refuse, then Take a No Well. What to do with silence.\n\nThe order matters more here than anywhere. People who follow up badly go straight from silence to grievance; this sequence goes from silence to a plain question, then to something easier to answer, then to accepting whatever comes back.\n\nMindset: one follow-up. After that, silence is an answer, and it is allowed to be.",
       inputs: [
@@ -3947,7 +3947,7 @@ const multiStepCollections = {
   sayingno: [
     {
       name: "The Full No",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "The complete version, in the order that makes it land: show you understand, say no clearly, give the reason, offer what you can do.\n\nThis one is a monologue — you are saying it as a continuous piece before they respond. Read the step, say your own version out loud, then turn the card.\n\nThe order carries the weight. Understanding first means the no arrives to someone who feels heard. The reason after the no means it explains rather than negotiates. And the alternative last means it is a gift rather than an opening bid.\n\nMindset: each step earns the next. The alternative only works if the no came first.",
       inputs: [
@@ -3985,7 +3985,7 @@ const multiStepCollections = {
     },
     {
       name: "When They Push Back",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "A no is often not accepted first time. The other person explains again, or looks disappointed, or asks whether you are sure.\n\nThis is an exchange rather than a monologue. Each front carries what they said. The move throughout is to acknowledge briefly and keep the answer unchanged — and to notice the moment where you are about to say yes simply to end the discomfort.\n\nIf it goes further than this, holding a line under sustained pressure is its own skill and its own pack.\n\nMindset: the answer does not change because they asked again.",
       inputs: [
@@ -4023,7 +4023,7 @@ const multiStepCollections = {
     },
     {
       name: "Not Answering Yet",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "The move that prevents most regretted yeses: not answering in the moment at all. Steps: 1) Ask for Time First — do not answer in the room, 2) Ask for Time First — name when, 3) Understand First — show you know what you are turning down, 4) Say No Simply — give the answer you promised.\n\nThe shape of the whole thing:\n1. \"Let me look at what I've got on and come back to you.\"\n2. \"I'll tell you by end of play tomorrow.\"\n3. \"I know you need someone, and it's not an easy one to fill.\"\n4. \"I'm not going to be able to take it on.\"\n\nWhy this order: the last step is the one people skip, and skipping it turns a considered delay into avoidance.\n\nMindset: buy the time, use it, and answer on the day you said.",
       inputs: [
@@ -4145,7 +4145,7 @@ const multiStepCollections = {
   conflictemotions: [
     {
       name: "The Whole Thing",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "The full expression: what happened, what you felt, what you need, what you would like, and then their side.\n\nThe first four are a monologue — you say them as one continuous piece before they answer. Read the step, say your own version out loud, then turn the card.\n\nThe order does real work. The event first means nothing is arguable yet. The feeling second means it arrives attached to something concrete. The need third turns it from a complaint into something solvable, and the request fourth gives them somewhere to go.\n\nMindset: each step earns the next. Stopping after the feeling is where most of these go wrong.",
       inputs: [
@@ -4175,7 +4175,7 @@ const multiStepCollections = {
     },
     {
       name: "When It Gets Warm",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "They defend themselves, or counter with something of their own, or the conversation heats up.\n\nThis is an exchange rather than a monologue. The move throughout is to concede what is fair, keep your own account unchanged, and return to the need — which is the part that cannot be argued with, because it is a statement about you.\n\nMindset: do not defend the account. Return to what you need.",
       inputs: [
@@ -4203,7 +4203,7 @@ const multiStepCollections = {
     },
     {
       name: "When They Bring It to You",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "The same skill from the other chair. Someone is expressing a feeling to you, and what you do in the first thirty seconds decides whether it becomes a conversation or a row.\n\nThe moves are simple and hard: do not defend yet, find the need under the feeling, and ask before you explain. Your explanation is probably true, and it will land far better after they have been heard than instead of it.\n\nMindset: their account first, your side second. Both get said — the order is what matters.",
       inputs: [
@@ -4351,7 +4351,7 @@ const multiStepCollections = {
     },
     {
       name: "From Chaos to Order",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "Getting Shared Reality → Vocalizing the Boundary → The Tangible Action Proposal. This sequence trains you to handle her anxious attempts to manage you: first you check her internal logic, then you set a firm boundary, and finally you take decisive action.\n\n1. Getting Shared Reality — understand her underlying anxiety\n2. Vocalizing the Boundary — stop her from controlling or shaming you\n3. The Tangible Action Proposal — offer a concrete, structured solution\n\nWhy just this order: you must understand the anxiety before setting the boundary, and you must protect respect before offering the solution. What people do instead: they argue about her tone, get defensive, and leave the logistical mess unresolved. Mindset: a woman only tries to control you when she doesn't trust your capacity to lead.",
       inputs: [
@@ -4386,7 +4386,7 @@ const multiStepCollections = {
     },
     {
       name: "Re-Polarizing the Room",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "Feelings First, Facts Later → Leading with Praise → The Tangible Action Proposal. This sequence trains you to melt her shutdown or irritability: first you validate her feelings, then you praise her Feminine radiance, and finally you offer structure.\n\n1. Feelings First, Facts Later — offer emotional oxygen to lower her defenses\n2. Leading with Praise — build polarity by expressing your genuine desire for her\n3. The Tangible Action Proposal — take charge of the solution to relieve her burden\n\nWhy just this order: you must validate her feelings first because logic doesn't work in a storm; then praise re-establishes attraction before you offer the solution. What people do instead: they offer immediate practical fixes while she is upset, which feels like emotional neglect to her. Mindset: do not argue with her weather; be the unswayable Oak that welcomes her storm.",
       inputs: [
@@ -4461,7 +4461,7 @@ const multiStepCollections = {
     },
     {
       name: "Settle and Share",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "The Intentional Pause → Sharing the Fear Underneath → The Heartful \"Ouch\". This sequence trains you to halt escalating conflict, ground your nervous system, and re-establish heart connection through vulnerable truth.\n\n1. The Intentional Pause — step back to stop the reactive loop\n2. Sharing the Fear Underneath — speak from your heartspace about what is actually threatened\n3. The Heartful \"Ouch\" — acknowledge her attacks without defending or shut-downs\n\nWhy just this order: you must stop the storm before you can speak your truth, and you must own your vulnerability before you can receive her feedback cleanly. What people do instead: they argue, shout, and withdraw into cold silence, which breaks trust. Mindset: a strong man rules his emotional world by staying present.",
       inputs: [
@@ -4496,7 +4496,7 @@ const multiStepCollections = {
     },
     {
       name: "The Intimate Lead",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "Direct Sexual Initiation → Slowing Down the Sequence. This sequence trains you to take bold sexual charge while decelerating the interaction to build safety and deep energetic arousal.\n\n1. Direct Sexual Initiation — own your desire cleanly without tentative begging\n2. Slowing Down the Sequence — move three times slower than natural to build safety\n\nWhy just this order: you must assert your direction first so she knows where you are heading, and then slow down so her Feminine physiology can catch up and open. What people do instead: they grope her indirectly, seek permission, and then rush straight to intercourse. Mindset: my desire is a gift of structure and polarity.",
       inputs: [
@@ -4568,7 +4568,7 @@ const multiStepCollections = {
     },
     {
       name: "Passing the Solidity Test",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "Training you to stand firm during intense emotional storms: The Provocation Reality Test → Identifying the Shadow Strategy → Passing the Leader's Test.\n\n1. The Provocation Reality Test — ground your body to realize you are physically safe\n2. Identifying the Shadow Strategy — spot and stop your urge to contract, collapse, or defend\n3. Passing the Leader's Test — hold the pose and stay committed to the container\n\nWhy just this order: you must ground your nervous system before you can identify your reactive patterns, and you must stop those patterns before you can hold a steady, unshakeable frame.\nWhat people do instead: they panic, shout back, or storm out, which proves to her nervous system that they cannot handle her fire.\nMindset: her storm is transient weather; I am the Oak that stands unmoved.",
       inputs: [
@@ -4603,7 +4603,7 @@ const multiStepCollections = {
     },
     {
       name: "Reclaiming the Frame",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "Using clear boundaries and grounded action to guide her out of anxious control: The Sign-Seeking Pause → Converting Anger to Protection → Passing the Leader's Test.\n\n1. The Sign-Seeking Pause — stop looking for her approval before speaking your truth\n2. Converting Anger to Protection — use your anger as the clean energy to set a firm limit\n3. Passing the Leader's Test — hold the pose when she pushes back against your limit\n\nWhy just this order: you must stop seeking her permission first; only then can you set a clean, non-negotiable boundary, and you must be prepared to hold that boundary when she tests it.\nWhat people do instead: they hint, apologize for having needs, and cave the moment she gets annoyed.\nMindset: a strong man does not need her permission to protect the relationship's culture.",
       inputs: [
@@ -4675,7 +4675,7 @@ const multiStepCollections = {
     },
     {
       name: "Securing the Foundation",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "Track her Priorities → Stabilize the Frame → Establish the Container. This sequence trains you to manage her anxieties about the future by tracking her concerns, establishing stability, and setting firm relational boundaries.\n\n1. Track her Priorities — check in on her worries to show she is top of mind\n2. Stabilize the Frame — offer financial or structural plans to create safety\n3. Establish the Container — set clear rules of engagement to protect the relationship\n\nWhy just this order: you must track her worries first so she feels loved; then you offer structural stability, and finally you set a healthy container for connection. What people do instead: they ignore her anxiety until she gets angry, then they fight back and leave the finances unresolved. Mindset: delivering stability and boundaries is an act of deep Masculine love.",
       inputs: [
@@ -4710,7 +4710,7 @@ const multiStepCollections = {
     },
     {
       name: "Leading the Connection",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "Track her Priorities → Drive the Decision → Establish the Container. This sequence trains you to transition her from a stressed work-mind into a relaxed, connected space by tracking her world, driving plans, and establishing a positive container.\n\n1. Track her Priorities — show her she is top of mind by checking in on her day\n2. Drive the Decision — take charge of the evening's logistics to relieve her decision burden\n3. Establish the Container — set a firm boundary against distraction to protect your time together\n\nWhy just this order: you must validate her daily priorities first; then taking charge of plans allows her to relax, and establishing the container keeps your connection safe. What people do instead: they ask \"what do you want to do?\" and scroll on their phones, which kills polarity. Mindset: leading her into a healthy container is an act of love for the relationship.",
       inputs: [
@@ -4785,7 +4785,7 @@ const multiStepCollections = {
     },
     {
       name: "Proactive Presence",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "Provocation Visualization → Ujjayi Breath → Conscious Choice (IAM).\nThis sequence trains you to prepare for intense relational friction by visualizing triggers, regulating your chemistry beforehand, and choosing your posture deliberately.\n\n1. Provocation Visualization — stoke the trigger in meditation to practice grounding\n2. Ujjayi Breath — settle your nervous system before the interaction\n3. Conscious Choice (IAM) — lead with deliberate movements and words\n\nWhy just this order: you must acclimate to the trigger in your mind first, then settle your body chemistry, and finally execute your deliberate actions cleanly.\nWhat people do instead: they walk into the fire unprepared, get triggered instantly, and react on autopilot.\nMindset: a wise man on the mountain must learn to ground himself before the fire starts.",
       inputs: [
@@ -4820,7 +4820,7 @@ const multiStepCollections = {
     },
     {
       name: "The Unswayable Lead",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "The Watcher → Ujjayi Breath → Conscious Choice (IAM).\nThis sequence trains you to maintain complete somatic presence during active conflict by observing your stories, settling your chemistry, and leading with conscious deliberateness.\n\n1. The Watcher — observe your reactive impulses without obeying them\n2. Ujjayi Breath — slow the flow of breath to break the monopoly of your thoughts\n3. Conscious Choice (IAM) — choose your next physical movement three times slower than usual\n\nWhy just this order: you must step outside the story first, then physically ground your nervous system, and only then move or speak from your Masculine center.\nWhat people do instead: they run with the story of her unfairness, get defensive, and react with rapid, panicked movements.\nMindset: her emotional storm is transient weather; my stillness is the Oak.",
       inputs: [
@@ -5340,7 +5340,7 @@ const multiStepCollections = {
   setupquestion: [
     {
       name: "Ask, Listen, Share",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "One question type, taken apart into its three beats. Ask it, react to what they actually said, then give your own version without being asked.\n\nThe third beat is the one people drop, and dropping it is what turns a good opener into an interview. It is also the beat the pack is named after: the question is a setup for something of your own.\n\nEach scenario here runs a different question type \u2014 Purpose, Status, Action \u2014 so the beats stay the same while the subject changes.\n\nMindset: step three is not optional. A question you never answer yourself is an interview, and people feel the difference within two exchanges.",
       inputs: [
@@ -5375,7 +5375,7 @@ const multiStepCollections = {
     },
     {
       name: "Changing the Question",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "Three whole setups in a row, each a different question type. Every card carries the question and your own answer together, exactly as Single Strategy trains it.\n\nWhat this scenario teaches is the switch: when one question type has given what it has, you move to another rather than pushing the same one further. Background runs out fast. Action runs out slowly. Opinion can be reopened almost any time.\n\nMindset: you are not looking for the perfect question. You are looking for the next one.",
       inputs: [
@@ -5410,7 +5410,7 @@ const multiStepCollections = {
     },
     {
       name: "A Real Conversation",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "Beats and question types in the same scenario, which is how it actually goes. A question gives nothing, so you share first instead. A share opens a subject, so you ask into it. Then you follow what they said.\n\nThis is the only deck in the pack where a scenario card's step list is mixed \u2014 Share, then Action Question, then Listen. That mix is the point: a setup question is one whole move in one card and three beats in the next, depending on what the conversation needs.\n\nMindset: the order is not fixed. Only the mutuality is.",
       inputs: [
@@ -5447,7 +5447,7 @@ const multiStepCollections = {
   givingcounterexamples: [
     {
       name: "Concede, Except, Stop",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "The whole move in three beats: agree with the general case, give one exception, and then stop talking. The third step is the one people drop, and dropping it is what turns a counter-example into an argument. Steps: 1) Concede — say the claim is usually right, 2) Except — one case where it was not, 3) Stop — let them do something with it.\n\nThe shape of the whole thing:\n1. \"Exercise usually does help, yeah.\"\n2. \"I trained hard all last week and still felt awful.\"\n3. (nothing — let them answer)\n\nWhy this order: conceding first means the exception arrives as information rather than as opposition, and stopping afterwards leaves them room to adjust their own claim, which they will do far more readily than they will accept yours.\n\nMindset: the silence after the exception is doing work. Fill it with a second example and you have started arguing.",
       inputs: [
@@ -5482,7 +5482,7 @@ const multiStepCollections = {
     },
     {
       name: "When They Defend the Rule",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "They have answered your exception by explaining it away — \"that's different\", \"that's one person\". The move is to agree that it is one case, and to say what it means, which is narrower than they think you meant. Steps: 1) Agree it is one case, 2) Say what one case shows, 3) The Smaller Claim.\n\nThe shape of the whole thing:\n1. \"You're right, it's one person.\"\n2. \"One is enough to make it 'usually' rather than 'always', though.\"\n3. \"Which is probably what we both actually think.\"\n\nWhy this order: an exception does not disprove a rule, and pretending it does is what loses the argument. Conceding that immediately, and then naming what it does show, gets you the narrower claim, which was all you wanted.\n\nMindset: you are not trying to knock the claim over. You are trying to get the word \"always\" out of it, and then you are finished.",
       inputs: [
@@ -5517,7 +5517,7 @@ const multiStepCollections = {
     },
     {
       name: "When You Do Not Have One",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "Something in the claim is too broad but you have no case to hand. Rather than inventing one, say what you doubt and turn it into a question — which often produces the counter-example from them. Steps: 1) Name the part you doubt, 2) Say you have no example, 3) Their Own Exception — hand the search to them.\n\nThe shape of the whole thing:\n1. \"I'd believe that for most people.\"\n2. \"I've got no case to point at, though.\"\n3. \"Can you think of anyone it hasn't been true for?\"\n\nWhy this order: admitting you have nothing costs almost nothing and buys a great deal of credibility, and the question does the work an invented example would have done badly.\n\nMindset: \"I don't have an example\" is a perfectly good sentence. An invented one is the only move here that cannot be repaired.",
       inputs: [
@@ -5554,7 +5554,7 @@ const multiStepCollections = {
   discussing: [
     {
       name: "Back, Then Differ",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "The core discussion move: say their position back, acknowledge the true part, and only then give yours. Steps: 1) Say it back — in your own words, 2) Grant what is right — the part you actually agree with, 3) Differ — your view and one reason.\n\nThe shape of the whole thing:\n1. \"So you'd keep the date where it is.\"\n2. \"And you're right that moving it means telling everyone twice.\"\n3. \"I'd still move it, because the last two slipped anyway and we told them late.\"\n\nWhy this order: a disagreement that arrives after accurate understanding is heard as a contribution. The same sentence first is heard as not having listened.\n\nMindset: the concession in step 2 is not a tactic. If you cannot find anything true in their position, you have probably not understood it yet.",
       inputs: [
@@ -5589,7 +5589,7 @@ const multiStepCollections = {
     },
     {
       name: "Ask Before You Argue",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "When something they said is ambiguous, clarify before responding — it very often turns out you were about to argue with something they do not think. Steps: 1) Notice the vague word, 2) Ask which version, 3) Answer the version they actually meant.\n\nThe shape of the whole thing:\n1. (they said \"homework is pointless\")\n2. \"All of it, or the filler?\"\n3. \"The filler I completely agree with. The rest I'd keep.\"\n\nWhy this order: general words hide specific disagreements, and the specific one is usually much smaller and much easier to settle.\n\nMindset: six words of clarification save four minutes of arguing about a position nobody holds.",
       inputs: [
@@ -5624,7 +5624,7 @@ const multiStepCollections = {
     },
     {
       name: "When It Heats Up",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "The discussion has gone fast and sharp. Name it jointly, take the hot part out, and settle what is left — which is nearly always most of it. Steps: 1) Name it as \"we\", 2) Split off the hot part, 3) Agree the rest.\n\nThe shape of the whole thing:\n1. \"We're both getting sharp about this.\"\n2. \"Can we leave the money bit aside for a minute?\"\n3. \"Because I think we agree on everything else, and it'd be good to say so.\"\n\nWhy this order: naming it jointly removes the accusation, splitting removes the heat, and agreeing the rest gives you both something to stand on before you go back to the difficult part.\n\nMindset: never tell the other person to calm down. Say \"we\", or say what you are doing yourself.",
       inputs: [
@@ -6800,7 +6800,7 @@ const multiStepCollections = {
   firststrategies: [
     {
       name: "The First Conversation",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "Four steps, and it is a whole conversation with a stranger.\n\n1. **Opening Statement** — put something on the table\n2. **Follow the Thread** — take one piece of what they answered\n3. **Answer With a Hook** — they ask about you; leave a door open\n4. **Follow the Thread** — go back into what they said\n\n**Why this order:** the hook has to come after they have spoken, because a hook only works as an answer. Lead with something about yourself and it is a monologue; offer the same sentence when asked and it is an exchange.\n\n**What people do instead:** stop at step 3. Answering a question about yourself and then going quiet is where most first conversations end.\n\nMindset: six sentences, and neither of you had to be interesting.",
       inputs: [
@@ -6838,7 +6838,7 @@ const multiStepCollections = {
     },
     {
       name: "The Half Yes",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "Someone has asked, and the answer is no — or not all of it.\n\n1. **Say It Back** — show you have the whole request\n2. **A Friendly No** — clear, warm, at most one reason\n3. **Ask Plainly** — offer the version you could do\n\n**Why this order:** saying it back first means the no arrives to someone who has been understood, rather than instead of it. And the offer belongs last — made before the no it reads as bargaining, made after it reads as a gift.\n\n**What people do instead:** a reason, then a vague no, then an apology. That leaves the other person unsure whether it was a no at all, and they come back on Thursday.\n\nMindset: understood, declined, and offered something — in that order.",
       inputs: [
@@ -6876,7 +6876,7 @@ const multiStepCollections = {
     },
     {
       name: "The Second Answer",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "You asked, and the answer was not a simple yes.\n\n1. **Ask Plainly** — one sentence, then quiet\n2. **Say It Back** — when they push back, say their objection back\n3. **Follow the Thread** — go into whatever they raised\n\n**Why this order:** saying it back before you argue is what almost nobody does. Repeating the ask louder starts a negotiation; saying their objection back turns a refusal into a conversation — and the reason they gave is usually solvable.\n\n**What people do instead:** ask, hear a no, and ask again with more words. The second version is never more persuasive than the first. It is only longer.\n\nMindset: ask once, then listen. The second thing they say is usually the real one.",
       inputs: [
@@ -6916,7 +6916,7 @@ const multiStepCollections = {
   jfisher1: [
     {
       name: "The Neutral Ground",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "Defuse a direct verbal attack by moving through silence, a repeat request, and an intent check.\n\n1. **Silence** — let their words hang in the air for five to seven seconds.\n2. **Return to Sender** — force them to say the insult again.\n3. **Decoding Intent** — spotlight their motive once they back down or double down.\n\nWhy this order: Silence drains the immediate amydala charge, repetition forces their prefrontal cortex to engage, and the intent check exposes the motive.\n\nMindset: Do not deliver on the same plane of hostility. Move them to your ground.",
       inputs: [
@@ -6951,7 +6951,7 @@ const multiStepCollections = {
     },
     {
       name: "The Clean Deflection",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "Spot a backhanded dig, expose the hidden attitude, and set a firm boundary without ever looking defensive.\n\n1. **Calling Out Subtext** — identify and label the passive-aggressive dig.\n2. **Decoding Intent** — ask if they meant for the comment to sound rude.\n3. **Boundary Consequences** — establish what you will and will not tolerate moving forward.\n\nWhy this order: Exposing the subtext stops the passive-aggressive game, the intent check forces a choice, and the boundary locks your peace in place.\n\nMindset: You are giving them a manual on how to talk to you, not letting them press your remote.",
       inputs: [
@@ -6986,7 +6986,7 @@ const multiStepCollections = {
     },
     {
       name: "The Pause and Reset",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "Recognize an emotional flooding event, voice your limits, and execute a clean, timed checkout before things combust.\n\n1. **Naming the Reaction** — claim your rising adrenaline or physical tension.\n2. **Calling Out Subtext** — note the circular nature of the current argument.\n3. **Checkout** — set a specific time to return when both nervous systems are calm.\n\nWhy this order: Voicing your state stops the reactive momentum, labeling the circle shows the futility, and the checkout preserves the relationship.\n\nMindset: Taking a timeout is not giving up. It is taking responsibility for how you show up.",
       inputs: [
@@ -7023,7 +7023,7 @@ const multiStepCollections = {
   jfisher2: [
     {
       name: "The Reconciliation Runway",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "Restore an estranged or broken relationship by moving through three clear steps: an agreement on facts, removing defenses, and inviting listening.\n\n1. **Agreement on facts (I know)** — state the macro-level reality that both of you must agree on.\n2. **Removing defenses (I'm not)** — eliminate their expected objections before they can raise them.\n3. **Inviting listening (I'm open)** — offer a safe, pressure-free space to listen rather than speak.\n\nWhy this order: The \"I know\" breaks the ice on common ground, the \"I'm not\" disarms their defense mechanism, and the \"I'm open\" shifts the focus entirely to their experience.\n\nMindset: You cannot litigate a relationship back together. Remove the sting first.",
       inputs: [
@@ -7058,7 +7058,7 @@ const multiStepCollections = {
     },
     {
       name: "The Soft Dismiss",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "End a personal or professional relationship with clean, direct transparency instead of a manipulative compliment sandwich.\n\n1. **Eliminate small talk** — skip the pleasantries and weather talk to keep the discussion sincere.\n2. **Label the conversation** — warn their nervous system that a difficult topic is coming.\n3. **Deliver the bad news** — pull off the band-aid quickly with directness and kindness.\n\nWhy this order: Skipping small talk prevents the feeling of deception, labeling the conversation allows them to steady themselves, and immediate delivery respects their dignity.\n\nMindset: The compliment sandwich is hard to chew and impossible to swallow. Be transparent.",
       inputs: [
@@ -7093,7 +7093,7 @@ const multiStepCollections = {
     },
     {
       name: "The Collaborative Pivot",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "Separate the person from the problem by shifting a face-to-face conflict into a side-by-side problem-solving session.\n\n1. **Validate first (I can see)** — acknowledge their perspective or frustration to lower their defenses.\n2. **Objectify the issue** — pull the problem out of their character and put it as a third-person object on the table.\n3. **Invite collaboration (I need help)** — use \"help\" language to turn them from an opponent into a teammate.\n\nWhy this order: Validation stops the immediate fight-or-flight reflex, objectifying the issue removes personal attacks, and asking for help invites mutual ownership.\n\nMindset: An argument is a knot to unravel, not a war to win.",
       inputs: [
@@ -7130,7 +7130,7 @@ const multiStepCollections = {
   talkingaboutyourself: [
     {
       name: "A First Conversation",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "The standard shape of being asked about yourself by someone you have just met.\n\n1. **Behind the Question** — give the version that is about you\n2. **Give a Detail** — one concrete thing they can pick up\n3. **Hand It Back** — now, and only now, turn it around\n4. **Match Their Depth** — meet whatever they offer in return\n\n**Why this order:** you answer three times before turning it around, which is three more than most people manage when nervous. The handover then lands as generosity rather than escape.\n\n**What people do instead:** answer briefly and immediately ask back. It looks like interest, and after four exchanges they know nothing at all.\n\nMindset: they are not testing you. They are finding out what you are like, and you are allowed to tell them.",
       inputs: [
@@ -7168,7 +7168,7 @@ const multiStepCollections = {
     },
     {
       name: "Going a Bit Deeper",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "What happens when a light conversation gets an opportunity to become a real one.\n\n1. **Match Their Depth** — they went one level down, so go with them\n2. **True, Not Impressive** — plainly, without the full weight\n3. **What You're Into** — the thing that is actually helping or occupying you\n4. **Hand It Back** — and give them the same opening they gave you\n\n**Why this order:** the first step is the decision, and it is theirs as much as yours. Nothing dramatic follows: one honest answer, one thing you care about, and the door held open on the way out.\n\n**What people do instead:** stay breezy through the opening, which quietly answers the question they were really asking — whether it was safe.\n\nMindset: they opened a door. Walking through it is the whole move, and it is smaller than it feels.",
       inputs: [
@@ -7206,7 +7206,7 @@ const multiStepCollections = {
     },
     {
       name: "A Question You Would Rather Not Answer",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "How to close one subject without closing the conversation.\n\n1. **Keep Something Back** — the partial answer, given warmly\n2. **Give a Detail** — fill the gap with something else true about you\n3. **Hand It Back** — move the attention on\n4. **Match Their Depth** — and meet whatever they bring\n\n**Why this order:** keeping something back leaves a gap, and the gap is what makes it awkward. So the next step fills it rather than letting it sit. Then the attention moves, and the moment passes without anyone having to apologise for anything.\n\n**What people do instead:** decline and stop, which leaves the other person holding an apology they were not owed and a silence they now have to fix.\n\nMindset: a closed door is fine. An empty room afterwards is what makes it strange.",
       inputs: [
@@ -7246,7 +7246,7 @@ const multiStepCollections = {
   startingconversations1: [
     {
       name: "The First Exchange",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "One opener is rarely a conversation. You say something, they give you a little back, and the whole question is what you do with that little.\n\n1. **Simple Greeting** or **Comment on the Situation** — put something small in the air\n2. **Introduce Yourself** or **Ask About the Situation** — use what came back\n3. **Ask About the Situation** — go into the thing they mentioned\n4. **Comment on the Situation** or **Introduce Yourself** — land it\n\n**Why this order:** smallest to largest, each step built out of the last reply. That is what decides whether a conversation happens — using what came back instead of starting again.\n\n**What people do instead:** deliver a second opener unrelated to the answer, which reads as a series of attempts rather than an exchange.\n\nMindset: whatever they give you, use a piece of it. That is the entire skill.",
       inputs: [
@@ -7284,7 +7284,7 @@ const multiStepCollections = {
     },
     {
       name: "The Second Try",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "Sometimes the reply is one word — the situation most people quietly dread.\n\n1. **Simple Greeting** or **Ask About the Situation** — the opener\n2. **Comment on the Situation** — the flat reply comes back; try a different shape\n3. **Ask About the Situation** — the one that needs more than a word\n4. Read the second reply — carry on if it opened, leave warmly if it did not\n\n**Why this order:** a short answer usually means your opener was easy to answer shortly, so the second move changes shape and the third asks for something a single word cannot cover. The fourth step is the one nobody practises: stopping without it being awkward.\n\n**What people do instead:** stop at the first flat reply, or push through four more.\n\nMindset: give it one more try, and one only. If the second attempt lands flat too, that is a real answer.",
       inputs: [
@@ -7322,7 +7322,7 @@ const multiStepCollections = {
     },
     {
       name: "The Way In",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "Arriving somewhere new — a class, a club, a team, a first day. Openers matter most here, and people freeze hardest, because everyone else appears to know each other already.\n\n1. **Introduce Yourself** or **Simple Greeting** — say who you are, and that you are new\n2. **Ask About the Situation** — how does this work\n3. **Comment on the Situation** — react to what they told you\n4. **Ask About the Situation** — one more, now that it is easy\n\n**Why this order:** being new is a legitimate reason to talk to anyone. Asking how things work then turns a stranger into someone helping you, which is an easier role for both of you than two strangers making conversation.\n\n**What people do instead:** hide the newness, which makes every question sound like one you should already know the answer to.\n\nMindset: being new is a licence. Use it while it lasts.",
       inputs: [
@@ -7362,7 +7362,7 @@ const multiStepCollections = {
   startingconversations2: [
     {
       name: "From a Favour Into a Conversation",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "A request or an offer gets you talking, but it also ends by itself: the favour is done, they say no problem, and the exchange is over unless you do something with it.\n\nThis combo practises the second move — turning a completed small transaction into an actual conversation, usually by picking up the situation or something they said while helping.\n\nEach step front carries what they said back, and names the opener to use next.\n\nMindset: the favour buys you about ten seconds of goodwill. Use them.",
       inputs: [
@@ -7400,7 +7400,7 @@ const multiStepCollections = {
     },
     {
       name: "Picking Someone Back Up",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "With someone you already half know, the opening is not the hard part — remembering is. The combo drills the pattern of coming back to something specific and then following where their answer goes.\n\nThe first step is always the thread, because it is the strongest opener available with someone you know a little. After that, what they give you decides.\n\nMindset: the specific question is the whole move. \"How's things\" and \"how did Thursday go\" are not the same opener.",
       inputs: [
@@ -7438,7 +7438,7 @@ const multiStepCollections = {
     },
     {
       name: "When the Favour Is All They Wanted",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "Not every helpful exchange is an opening. Sometimes a person answers your question, or takes your tip, and quite clearly wants to get on with their day.\n\nThis combo practises reading that and stopping well — which matters more here than in the other openers, because a request creates a small obligation and pushing past a polite answer turns a favour into an imposition.\n\nBoth scenarios end with a clean exit rather than a conversation. That is a successful outcome, not a failed one.\n\nMindset: they helped you. Do not charge them interest.",
       inputs: [
@@ -7561,7 +7561,7 @@ const multiStepCollections = {
   showunderstanding: [
     {
       name: "Loop, Then Ask",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "The safest order for anything difficult, and the one to reach for when you are not sure.\n\n1. **Say It Back** — show it arrived\n2. **Follow-up Question** — now that they feel heard, ask for more\n3. **Say It Back** — reflect the new part\n\n**Why this order:** the loop earns the question. The same question on its own can feel like being interviewed. The second loop matters as much as the first, because the answer is usually the real thing — the first version was the summary.\n\n**What people do instead:** ask straight away, get a short answer, and ask again. Two questions in a row is an interview, and people close down under it.\n\nMindset: loop, ask, loop. It looks repetitive written down and does not feel that way at all in a conversation.",
       inputs: [
@@ -7596,7 +7596,7 @@ const multiStepCollections = {
     },
     {
       name: "Ask, Then Relate",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "The version for a story that is still being told, ending in warmth.\n\n1. **Follow-up Question** — keep them going\n2. **Say It Back** — show what you took from it\n3. **Relate Through Sharing** — and only then bring yourself in\n\n**Why this order:** relating comes last for a reason. Once somebody has told the whole thing and heard it reflected back, your own version arrives as company. Two minutes earlier the identical sentence would have arrived as an interruption.\n\n**What people do instead:** relate first, because the match is obvious the moment they start talking and holding it is uncomfortable. It will still be true in two minutes.\n\nMindset: your story is the dessert, not the main course. It goes at the end, and it should be about a third as long as theirs.",
       inputs: [
@@ -7631,7 +7631,7 @@ const multiStepCollections = {
     },
     {
       name: "Loop, Loop, Ask",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "The version with no relating in it at all, for when somebody is still inside the feeling.\n\n1. **Say It Back** — reflect it\n2. **Say It Back** — reflect the part that matters most\n3. **Follow-up Question** — one gentle question, and then stop\n\n**Why this order:** the first loop catches the events, the second catches what is actually wrong. The question at the end is an offer, not an interview — and stopping there is the point.\n\n**What people do instead:** share their own version, well meant, at the one moment when moving the attention off them costs most. A comparison also invites them to weigh their situation against yours.\n\nMindset: do less than you want to. Two loops and one question is often the whole of what somebody needs from you.",
       inputs: [
@@ -7668,7 +7668,7 @@ const multiStepCollections = {
   exploringatopic: [
     {
       name: "The Full Loop",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "The basic run through a subject: open it, go into the answer, then hand it on.\n\n1. **Ask an Open Question** — open the subject up\n2. **Build on Their Point** — go one layer into their answer\n3. **Share, Then Invite** — add your own bit and pass it on\n\n**Why this order:** the question gives you material, the build proves you used it, and the hand-off stops the whole thing turning into an interview. Three moves is usually enough to get a topic properly going; after that it runs on its own.\n\n**What people do instead:** ask, then ask again. Two questions in a row from the same person is an interview, and the second one gets a shorter answer than the first.\n\nMindset: you are not extracting information. You are getting something started that will keep going without you.",
       inputs: [
@@ -7703,7 +7703,7 @@ const multiStepCollections = {
     },
     {
       name: "The Rescue",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "For a subject that is running out, so silence does not end it.\n\n1. **Build on Their Point** — squeeze the last life out of the thread\n2. **Step Sideways** — step sideways into something close by\n3. **Ask an Open Question** — hand the new angle to the group\n\n**Why this order:** squeezing first means you do not abandon a topic that still had something in it. Ending on a question hands the new angle to everyone instead of keeping it — a sideways step you then answer yourself is just you changing the subject.\n\n**What people do instead:** wait. Silence is not the natural end of a topic, it is usually the end of one thread inside it, and once the silence has landed whatever comes next has to restart the whole thing.\n\nMindset: reach for the next room before you leave the house.",
       inputs: [
@@ -7738,7 +7738,7 @@ const multiStepCollections = {
     },
     {
       name: "The Open Door",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "Keeping the topic alive and sharing it out at the same time.\n\n1. **Share a Related Experience** — put your own piece in\n2. **Share, Then Invite** — hand the floor to whoever has not spoken\n3. **Build on Their Point** — follow up on their answer\n\n**Why this order:** sharing first means the invitation does not arrive out of nowhere. Following up on the answer is what proves it was a real invitation rather than a polite one — and it is the step people skip.\n\n**What people do instead:** ask the quiet person a question and then move on the moment they finish. An invitation nobody follows up on is worse than none at all, because it reads as a box being ticked.\n\nMindset: the third step is the one that counts.",
       inputs: [
@@ -7775,7 +7775,7 @@ const multiStepCollections = {
   changingtopics: [
     {
       name: "Sensitive to Safe",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "Rescuing a conversation that has veered somewhere uncomfortable.\n\n1. **Steer Away** — defuse without engaging\n2. **The Random Switch** — offer somewhere safer to go\n3. **Common Ground** — pick up whatever they give you\n\n**Why this order:** acknowledging first is what stops the steer looking like avoidance. Picking up whatever they offer is what makes the new topic actually take hold — a switch nobody follows through on falls back into the old subject within a minute.\n\n**What people do instead:** jump straight to something light, which reads as not having heard them at all, or engage with the sensitive subject and end up in the argument they were trying to avoid.\n\nMindset: defuse without engaging. You are not refusing to talk about it, you are choosing not to argue about it here.",
       inputs: [
@@ -7810,7 +7810,7 @@ const multiStepCollections = {
     },
     {
       name: "Exhausted to Fresh",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "Moving on from a topic that has been fully covered.\n\n1. **Close and Open** — close the done topic warmly\n2. **The Bridge** — pivot off something they said earlier\n3. **Acknowledge and Redirect** — take their answer and open it properly\n\n**Why this order:** closing warmly first means the new topic does not look like an escape. Pivoting off something they said earlier proves you were listening the whole time — and there is almost always a detail from ten minutes ago that never got followed up.\n\n**What people do instead:** keep the dead topic going out of politeness, which helps nobody, or switch without closing, which reads as boredom.\n\nMindset: mining an earlier detail is the trick. The bridge is usually already behind you.",
       inputs: [
@@ -7845,7 +7845,7 @@ const multiStepCollections = {
     },
     {
       name: "Stalled to Started",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "Saving a conversation that has stopped, with nothing to bridge from.\n\n1. **The Random Switch** — break the silence and say you are doing it\n2. **Common Ground** — relate to whatever comes back\n3. **The Bridge** — catch a word from their answer and go further in\n\n**Why this order:** a stalled conversation has no thread to catch, so stop hunting for one. Relating to whatever they answer turns a rescue into a real conversation, and catching a word from that answer is what stops it stalling a second time.\n\n**What people do instead:** ask a bigger question. A silence is not fixed by making the next thing harder to answer, and \"so what do you do for fun?\" lands on somebody who has already run out of things to say.\n\nMindset: open something fresh and light, and build from their answer instead.",
       inputs: [
@@ -7882,7 +7882,7 @@ const multiStepCollections = {
   complimenting: [
     {
       name: "Small, Then Large",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "The Specific Thing, then What It Did, then Who They Are — with Take a Compliment at the end, because a good compliment usually comes back at you.\n\nThe order is what makes it work. A detail proves you were paying attention. The effect gives them something they could not have known. Only then does the large sentence sound earned rather than like a line — said first, on its own, the same words would land as flattery.\n\nEach step also buys the next one. Once they have accepted the small compliment they are already in the conversation, and the second is easier to say than the first was.\n\nMindset: specific first. The big one only works on top of a small one.",
       inputs: [
@@ -7920,7 +7920,7 @@ const multiStepCollections = {
     },
     {
       name: "Theirs First",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "Take a Compliment, then Answer It Don't Return It, then — later, and separately — The Specific Thing and What It Did.\n\nThe whole point is the gap. Praising them back in the same breath cancels both; praising them ten minutes later, about something specific, counts. Same words, completely different effect, and the only difference is that you let their sentence finish first.\n\nThe hard part is not knowing what to say. It is the silence in the middle, where the reflex wants to fill the space with something about them.\n\nMindset: theirs first. Yours keeps.",
       inputs: [
@@ -7958,7 +7958,7 @@ const multiStepCollections = {
     },
     {
       name: "Credit in a Room",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "Where It Counts, then The Specific Thing, then Compliment the Choice — and Take a Compliment when it comes back.\n\nPublic praise has to be quick and precise or it turns into a speech and embarrasses everyone in it. Name, thing, done. The detail goes in afterwards, quietly, where it can be longer and where they do not have to perform a reaction.\n\nThe last step matters more than it looks. Credit given in public almost always produces a deflection in private, and a deflection is where the whole thing quietly unravels.\n\nMindset: in the room it is about credit. Outside the room it can be about them.",
       inputs: [
@@ -7998,7 +7998,7 @@ const multiStepCollections = {
   responsivehumour: [
     {
       name: "Something Out of Nothing",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "The book's own drill, in four steps. One person makes a plain informational statement; the other answers with one of the five. Then it comes back, and you answer again.\n\nThe setup is deliberately dull — the weather, the timetable, the room. That is the point of the exercise: if you can be funny about white walls, you never need to wait for good material.\n\nWhat the drill trains is not wit but reach. Four ordinary sentences in a row, four different moves, and by the fourth you stop searching for something clever and start reaching for whichever move fits.\n\nMindset: their sentence is the raw material. You are not starting anything.",
       inputs: [
@@ -8036,7 +8036,7 @@ const multiStepCollections = {
     },
     {
       name: "Keeping It Going",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "Two exchanges rather than one. The first joke is easy; what most people miss is that the second one should build on the first rather than start again.\n\nBuilding means staying inside the world the first joke created. If you made their computer a runner, keep it running — do not open a second joke about something else. The staying is what makes it feel like play instead of two people taking turns being funny.\n\nIt also gets easier as it goes. The first move needs an idea; the second and third only need the world you have both already agreed to stand in.\n\nMindset: stay in the same world. The second joke lives inside the first.",
       inputs: [
@@ -8074,7 +8074,7 @@ const multiStepCollections = {
     },
     {
       name: "Missed, Then Back In",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "Understatement, then a plain answer, then back in later. The recovery, which is the part nobody practises.\n\nThe rule is simple and hard: do not explain it. An explained joke is worse than an unnoticed one, and a second attempt at the same joke is worse still. Acknowledge it lightly if at all, answer the thing they actually said, and let the next opening come on its own.\n\nThe last step is the one that matters. Coming back in a minute later — on a new sentence, not the old one — is what turns a miss into nothing at all.\n\nMindset: a joke that misses costs four seconds. Explaining it costs the conversation.",
       inputs: [
@@ -8114,7 +8114,7 @@ const multiStepCollections = {
   assertivecomm1: [
     {
       name: "The Defusal Run",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "A three-step sequence to handle persistent, vague criticism from an authority figure.\n\n• Fogging — absorb the initial hostile strike to defuse the anger\n• Negative Inquiry — prompt for specific details to find the real issue\n• Negative Inquiry — dig deeper into the critic's logic to make them state what they want\n\nWhy this order: fogging first ensures you do not trigger a defensive counter-argument. Once the critic's emotional wave hits a soft wall, they go quiet, allowing you to use inquiry to find the actual problem. Repeating inquiry reveals what they truly want. What people do instead: they argue the initial point, which escalates the conflict into a fight about motives.\n\nMindset: absorb the blow, then make them do the work of explaining.",
       inputs: [
@@ -8149,7 +8149,7 @@ const multiStepCollections = {
     },
     {
       name: "The Full Defense",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "A three-step sequence for when criticism contains both a real error you made and exaggerated emotional attacks.\n\n• Fogging — agree with the critic's emotional stance or opinions to defuse the attack\n• Negative Inquiry — prompt for the concrete details of what actually went wrong\n• Negative Assertion — own the real mistake completely and calmly once it is uncovered\n\nWhy this order: fogging defuses the initial hostile volume so you can hear the facts. Inquiring extracts the actual mistake from the emotional noise. Negatively asserting your error ends the critic's leverage. What people do instead: they deny the whole thing because of the exaggeration, turning a real mistake into a battle over their character.\n\nMindset: separate the emotional noise from the factual error, then kill the leverage by owning the mistake.",
       inputs: [
@@ -8184,7 +8184,7 @@ const multiStepCollections = {
     },
     {
       name: "The Persistent Defusal",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "A three-step sequence to use when a critic refuses to let go of a mistake you have already owned.\n\n• Negative Assertion — own the mistake calmly and clearly\n• Broken Record — repeat your want or your decision to move on\n• Broken Record — hold your line against their persistent attempts to make you crawl\n\nWhy this order: owning the mistake immediately removes their logical argument. When they try to use the error as psychological leverage to keep lecturing you, transitioning to broken record allows you to maintain your dignity and end the nagging. What people do instead: they keep apologizing and explaining, which invites the critic to continue punishing them.\n\nMindset: a mistake requires correction, not eternal atonement.",
       inputs: [
@@ -8221,7 +8221,7 @@ const multiStepCollections = {
   assertivecomm2: [
     {
       name: "The Social Opening",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "A three-step sequence to start a warm, equal conversation with a stranger or acquaintance.\n\n• Free Information — listen to their unprompted cue and ask about it\n• Self-Disclosure — share a personal feeling or detail of your own to match them\n• Free Information — pick up on their next cue to keep the flow balanced\n\nWhy just this order: starting with their information makes them feel heard and valued. Disclosing your own side next prevents the conversation from sounding like an interrogation. Following up on their response keeps the runway clear. What people do instead: they ask a series of questions without sharing anything, making the other person feel investigated and defensive.\n\nMindset: listen first, share second, then explore.",
       inputs: [
@@ -8256,7 +8256,7 @@ const multiStepCollections = {
     },
     {
       name: "The Boundaried No",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "A three-step sequence to decline a request from a close friend or family member while maintaining the relationship.\n\n• Self-Disclosure — share your personal feeling, worry, or state honestly\n• Asserting Wants — state your clear, clean decision without excuses\n• Workable Compromise — offer a practical alternative that respects both sides\n\nWhy just this order: disclosing your feeling first explains you rather than judging them, making the refusal feel personal rather than hostile. Asserting your want clearly prevents them from trying to solve your excuses. Offering a compromise shows you still care about the connection. What people do instead: they invent excuses, which the other person easily dismantles, leaving them trapped in a yes they resent.\n\nMindset: protect your boundaries kindly, then offer what you actually can give.",
       inputs: [
@@ -8291,7 +8291,7 @@ const multiStepCollections = {
     },
     {
       name: "The Workable Deal",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "A three-step sequence to negotiate a major lifestyle change or chore split with a partner or spouse.\n\n• Asserting Wants — declare your core desire or goal clearly and plainly\n• Self-Disclosure — share your feelings, anxieties, or reasons under the goal\n• Workable Compromise — propose a practical, material trade-off to make it work\n\nWhy just this order: declaring the goal first sets a clean direction. Disclosing your feelings underneath ensures they understand this is about your well-being, not an attack on them. Proposing a trade-off shifts them into collaborative problem-solving. What people do instead: they drop hints or grumble about chores, which turns into a shouting match about who does more work.\n\nMindset: state your goal, share your heart, then negotiate the terms.",
       inputs: [
@@ -8328,7 +8328,7 @@ const multiStepCollections = {
   assertivecommadv: [
     {
       name: "The Long Refusal",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "A three-step sequence for the person who does not stop at your first no and keeps finding new angles.\n\n• Fogging — accept whatever is true in their opening push\n• Broken Record — repeat the want, unchanged, when they come back\n• Self-Disclosure — name the feeling underneath once the reasons run out\n\nWhy this order: fogging denies them a fight, the repeat denies them progress, and by the third pass they have usually stopped arguing and started asking why. That is the moment a feeling lands, and not before. What people do instead: they give the feeling first, as a reason, and spend the rest of the conversation defending whether the feeling is fair.\n\nMindset: hold the line long enough that honesty is a gift rather than a defence.",
       inputs: [
@@ -8363,7 +8363,7 @@ const multiStepCollections = {
     },
     {
       name: "The Full Concession",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "A three-step sequence for a request from someone close, where a flat no would cost you more than the request would.\n\n• Fogging — agree with the part of their case that holds\n• Self-Disclosure — say what you actually feel about doing it\n• Workable Compromise — put a concrete alternative on the table\n\nWhy this order: agreement stops them defending their request, the feeling explains without justifying, and the offer arrives when they are listening rather than arguing. What people do instead: they open with the compromise, which is read as an opening bid and negotiated straight back to the original ask.\n\nMindset: concede the argument, keep the boundary, and pay the difference in something you can afford.",
       inputs: [
@@ -8398,7 +8398,7 @@ const multiStepCollections = {
     },
     {
       name: "The Grievance Run",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "A three-step sequence for a partner or old friend who has been storing things up and has finally opened with a vague one.\n\n• Negative Inquiry — ask what is behind the complaint before answering it\n• Negative Assertion — own the real thing plainly once it is named\n• Negative Inquiry — ask for the rest of the list while you are still calm\n\nWhy this order: the first question turns a mood into a fact, the admission removes the fact from the argument, and the second question empties the file instead of leaving items for next month. What people do instead: they answer the vague opener, which means arguing about a mood, which never ends.\n\nMindset: get the whole list out in one calm hour rather than one item a month for a year.",
       inputs: [
@@ -8433,7 +8433,7 @@ const multiStepCollections = {
     },
     {
       name: "The Owned Deal",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "A three-step sequence for when you have genuinely made a mistake and the other person wants both an admission and a solution.\n\n• Fogging — absorb the exaggerated part of the accusation\n• Negative Assertion — own the real error, once it is separated out\n• Workable Compromise — put a concrete repair on the table\n\nWhy this order: fogging keeps the exaggeration from becoming the argument, the admission ends the moral question, and the offer moves the conversation from blame to logistics while they are still listening. What people do instead: they lead with the fix, which reads as buying their way out of an apology they never made.\n\nMindset: separate the exaggeration from the error, own the error, then fix what can be fixed.",
       inputs: [
@@ -8468,7 +8468,7 @@ const multiStepCollections = {
     },
     {
       name: "The Held Deal",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "A three-step sequence for the compromise that gets renegotiated the moment it is agreed.\n\n• Self-Disclosure — say what the limit is and where it comes from\n• Workable Compromise — offer the specific alternative you can live with\n• Broken Record — keep the offer identical when they try to widen it\n\nWhy this order: the disclosure makes the limit personal rather than arbitrary, the offer gives them a real yes, and the repeat protects the offer from becoming an opening bid. What people do instead: they improve the offer each time it is questioned, which teaches the other person that questioning it always works.\n\nMindset: an offer that grows every time it is pushed was never an offer.",
       inputs: [
@@ -8505,7 +8505,7 @@ const multiStepCollections = {
   integratedmaster: [
     {
       name: "The Defusal Run",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "A three-step sequence to handle persistent, vague criticism from an authority figure.\n\n• The Integrated Shield — agree with their criticism and repeat your decision to defuse their initial anger\n• Empathic Inquiry — prompt for specific details of their complaint to find the real issue\n• Empathic Inquiry — dig deeper into their logic to force them to state what they actually want\n\nWhy this order: shielding first ensures you do not trigger a defensive counter-argument. Once the critic's emotional wave hits a soft wall, they go quiet, allowing you to use inquiry to find the actual problem. Repeating inquiry reveals what they truly want.\n\nWhat people do instead: they argue the initial point, which escalates the conflict into a fight about motives.\n\nMindset: absorb the blow, then make them do the work of explaining.",
       inputs: [
@@ -8540,7 +8540,7 @@ const multiStepCollections = {
     },
     {
       name: "The Reconciliation Path",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "A three-step sequence to use when a partner refuses to let go of a mistake you have already owned.\n\n• The Complete Ownership — own the mistake calmly and clearly with an honest disclosure of regret\n• Empathic Inquiry — prompt for further grievances to empty their emotional ledger\n• The Complete Ownership — own any real issues found and pivot directly to a workable deal\n\nWhy this order: owning the mistake immediately removes their logical argument. When they try to use the error as psychological leverage to keep lecturing you, transitioning to empathic inquiry allows you to maintain your dignity and clear the air.\n\nWhat people do instead: they keep apologizing and explaining, which invites the critic to continue punishing them.\n\nMindset: a mistake requires correction, not eternal atonement.",
       inputs: [
@@ -8575,7 +8575,7 @@ const multiStepCollections = {
     },
     {
       name: "The Boundaried No",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "A three-step sequence to decline an invasive request from a close friend or family member while maintaining the relationship.\n\n• Assertive Disclosure — share your personal feeling or worry honestly to explain your state\n• The Integrated Shield — repeat your boundary calmly to block their persistent guilt-trips\n• Assertive Disclosure — hold your line cleanly against their attempts to make you feel guilty\n\nWhy this order: the feeling explains you rather than judging them, so the refusal lands as personal rather than hostile. Shielding next stops them solving your excuses. What people do instead: they invent excuses, which the other person dismantles one by one, leaving them trapped in a yes they resent.\n\nMindset: protect your boundaries kindly, then offer what you actually can give.",
       inputs: [
@@ -8612,7 +8612,7 @@ const multiStepCollections = {
   counseling1: [
     {
       name: "First the Meal, Then the Gospel",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "Getting a drifting or non-believing friend to hear the truth by meeting their immediate burden first, then setting up an order of care.\n\n• Gentle Restoration — meet the immediate burden with humility\n• Clarifying the Facts — secure a commitment and gather data\n• Spurring Obedience — present the truth and call to action\n\nWhy this order: meeting the physical or emotional burden first disarms defensiveness. Naming the Gospel before the burden is lifted reads as a trick; naming it after reads as a gift.\n\nMindset: we must feed the empty stomach before we speak to the soul.",
       inputs: [
@@ -8647,7 +8647,7 @@ const multiStepCollections = {
     },
     {
       name: "Steering a Sinking Friend",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "Guiding a friend out of listlessness or paralyzing guilt by addressing self-pity first, then organizing their days.\n\n• Challenging Self-Pity — break the downward pity spiral\n• Clarifying the Facts — establish the reality of their habits\n• Righteous Replacement — trade the old pattern for righteous action\n\nWhy this order: we cannot establish new habits while self-pity is still protected. We must poke the balloon before we can build the structure.\n\nMindset: we must stop the \"I can't\" before we can show them \"I can\".",
       inputs: [
@@ -8682,7 +8682,7 @@ const multiStepCollections = {
     },
     {
       name: "The Path of Restoration",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "The complete process of biblical restoration (2 Tim 3:16) mapped over several weeks.\n\n• Clarifying the Facts — expose the deviation (Teaching)\n• Challenging Self-Pity — call to repentance (Conviction)\n• Righteous Replacement — stand them straight (Correction)\n• Spurring Obedience — build the habit (Discipline)\n\nWhy this order: we must define the deviation before we can call to repentance, and we must correct the path before we can train the habit.\n\nMindset: restoration is a step-by-step rebuilding of righteousness.",
       inputs: [
@@ -8722,7 +8722,7 @@ const multiStepCollections = {
   counseling2: [
     {
       name: "The Matthew 18 Process",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "The three stages of biblical reconciliation and correction mapped over several weeks to restore a rebellious brother.\n\n• Direct Confrontation — go one-on-one privately to show them their sin\n• Direct Confrontation — take two or three witnesses when they refuse to listen\n• Direct Confrontation — take it to the elders to lay before the church\n\nWhy this order: we must exhaust the private circle before we involve others, protecting their reputation as long as possible.\n\nMindset: discipline is the extreme form of care, aimed at mending a broken vessel.",
       inputs: [
@@ -8757,7 +8757,7 @@ const multiStepCollections = {
     },
     {
       name: "Attacking the Problem",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "Moving a fighting couple or roommates from attacking each other to joint problem-solving over several weeks.\n\n• Sorting Responsibilities — confess your own part first to turn the arrows\n• Pursuing Peace — establish a soft answer to stop the verbal combat\n• Overcoming With Good — meet their practical needs aggressively to break their hostility\n\nWhy this order: you cannot solve the issue while you are still fighting each other. Poking the fire must stop before you can build the bridge.\n\nMindset: our words must be spent on cutting the problem in half, not on dicing people.",
       inputs: [
@@ -8792,7 +8792,7 @@ const multiStepCollections = {
     },
     {
       name: "Opposing Hypocrisy",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "Responding to public compromise or hypocrisy in the church to restore the unity of the Spirit.\n\n• Direct Confrontation — oppose the public compromise openly to his face\n• Pursuing Peace — offer a soft path back to unity in truth\n• Overcoming With Good — seal the reconciliation by meeting their practical needs\n\nWhy this order: public hypocrisy must be checked immediately to protect the church, but we must quickly offer the path of grace to restore the brother.\n\nMindset: we oppose the sin to save the sinner, not to win an argument.",
       inputs: [
@@ -8829,7 +8829,7 @@ const multiStepCollections = {
   seenandtrusted2careshedidnotaskf: [
     {
       name: "Landing Her",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "For the moment she comes home wrecked and you want to be useful without getting it wrong.\n\n1. **No Fix, Just Here** — find out what happened before touching anything\n2. **The Unasked Move** — take the evening off her, having heard what the actual weight was\n3. **Looking At Her** — end on something about her rather than about the day\n\nWhy just this order: acting first solves the visible problem and misses the real one. Once you know what the weight is, the action lands as care rather than as tidying. And the compliment only works at the end, when it is not being used to cheer her up out of a feeling.\n\nWhat people do instead: they start with the kitchen. She gets a clean kitchen and the sense that nobody asked.\n\nMindset: ask, then act, then say what I see.",
       inputs: [
@@ -8864,7 +8864,7 @@ const multiStepCollections = {
     },
     {
       name: "Seen Before Asked",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "For a stretch where nothing is wrong and she has gone quiet and slightly flat.\n\n1. **Proof She Was On Your Mind** — something small that shows she occupies space when she is not in the room\n2. **Looking At Her** — say the specific thing you see, unattached to anything she has done\n3. **The Unasked Move** — take something without being asked, so the words have a fact behind them\n\nWhy just this order: the gesture opens the door, the words go through it, and the action stops the whole thing reading as a charm offensive. Reversed, the doing comes first and the words afterwards sound like an explanation for the doing.\n\nWhat people do instead: nothing, for months, and then something enormous that arrives as an apology.\n\nMindset: small, then said, then done.",
       inputs: [
@@ -8899,7 +8899,7 @@ const multiStepCollections = {
     },
     {
       name: "The Long Week",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "For a stretch of pressure where she is functioning but running on empty, and one nice evening will not touch it.\n\n1. **Off Her Plate** — take a whole category so the load actually drops\n2. **The Unasked Move** — keep doing it without being reminded, which is where most of these fail\n3. **No Fix, Just Here** — at the end of it, ask what it was actually like\n\nWhy just this order: the structural change has to come first, because a conversation about a load you have not reduced is just sympathy. The follow-through is what turns a gesture into a fact. And the question comes last, when there is room for an honest answer.\n\nWhat people do instead: they take something over loudly, do it twice, and hand it back without saying so.\n\nMindset: take it, keep it, then ask.",
       inputs: [
@@ -8936,7 +8936,7 @@ const multiStepCollections = {
   seenandtrusted3askingtobetrusted: [
     {
       name: "From Irritation to Ask",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "For the moment you notice you are annoyed and the first sentence out of your mouth would make everything worse.\n\n1. **The Four Questions** — translate the accusation into the need, before speaking\n2. **Name It Early** — say it now, at its current size, rather than banking it\n3. **Letting It Land** — when she responds well, take it instead of staying braced\n\nWhy just this order: translating first is what makes early speaking safe — said early in its raw form, an accusation just arrives sooner. And the third step matters more than it looks: if she gives you what you asked for and you stay cold, she learns that asking you what is wrong leads nowhere.\n\nWhat people do instead: they wait until the feeling is big enough to justify the tone, by which point the tone is the only thing anyone hears.\n\nMindset: translate, then say it, then take the answer.",
       inputs: [
@@ -8971,7 +8971,7 @@ const multiStepCollections = {
     },
     {
       name: "Reclaiming the Task",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "For a job that has become a proxy war — you are doing it, she is supervising it, and both of you are irritated.\n\n1. **Room to Do It My Way** — ask for the method, not for her to admit she was wrong\n2. **Ask Before You Decide** — settle how this category works from now on, not just today\n3. **Letting It Land** — when she backs off, notice it out loud\n\nWhy just this order: the immediate ask stops today's version; the second step is what stops it recurring next week, and skipping it means having the same conversation monthly. And acknowledging the retreat is what makes it stick — an unremarked concession quietly reverses.\n\nWhat people do instead: they win the argument about the correct method, which settles the dishwasher and none of the actual question.\n\nMindset: room today, an agreement for next time, and a thank you when it comes.",
       inputs: [
@@ -9006,7 +9006,7 @@ const multiStepCollections = {
     },
     {
       name: "When You Have Already Withdrawn",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "For the state where nothing was said, you have gone cold, and she can feel it but cannot name it.\n\n1. **Name It Early** — start by naming the withdrawal itself, which is now the biggest fact in the room\n2. **The Four Questions** — translate what is underneath it into a request\n3. **Ask Before You Decide** — agree the specific change that stops the next round\n\nWhy just this order: the coldness has to be named first, because until it is she is talking to a wall and guessing at why. Then the need, then the arrangement. Reversed, the request arrives from behind the silence and reads as a condition for you thawing.\n\nWhat people do instead: they wait to be asked what is wrong, answer \"nothing\", and let her carry the atmosphere.\n\nMindset: name the silence, then what it was hiding, then what happens next time.",
       inputs: [
@@ -9043,7 +9043,7 @@ const multiStepCollections = {
   seenandtrusted1thesafetyshereads: [
     {
       name: "From Heat to Ground",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "For an argument that has escalated past usefulness and needs bringing down without either of you conceding the point.\n\n1. **Not Against You** — say the bond is not in play, so the limit that follows cannot be read as leaving\n2. **The Held Boundary** — stop the conversation, with a time you are coming back\n3. **Opening the Door** — come back and ask what is still there\n\nWhy just this order: the boundary is the frightening part, so it has to come after she has heard that you are staying. And the question only works once the heat is out — asked mid-fight it lands as a demand.\n\nWhat people do instead: they leave first and explain afterwards, which teaches her that a raised voice is followed by an absence.\n\nMindset: say you are staying, then stop, then ask.",
       inputs: [
@@ -9078,7 +9078,7 @@ const multiStepCollections = {
     },
     {
       name: "When You Dropped It",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "For the situation where you are the one who broke something — a promise, a plan, a piece of trust — and she is on the other side of it.\n\n1. **The Kept Word** — own the miss plainly and name what happens now\n2. **Steady Under Load** — take the consequence off her rather than leaving her with it\n3. **Opening the Door** — ask what the miss actually did to her\n\nWhy just this order: an apology with no repair is words, so the action has to come before the feelings. But the question has to come last, because asking how she feels before you have fixed anything reads as buying your way out with interest.\n\nWhat people do instead: they explain the reason, which invites an argument about whether the reason was good enough, and the original thing stays broken.\n\nMindset: own it, carry it, then ask what it cost her.",
       inputs: [
@@ -9113,7 +9113,7 @@ const multiStepCollections = {
     },
     {
       name: "The Hard Week",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "For the stretch where too much has landed at once and she is holding most of it.\n\n1. **Opening the Door** — find out which part is actually heaviest before you touch anything\n2. **Steady Under Load** — take that part off her completely\n3. **The Kept Word** — say exactly what you have taken and when it will be done\n\nWhy just this order: helping before asking usually means helping with the visible thing rather than the heavy thing, and she still cannot put it down. And the last step is what lets her stop checking — without a stated when, she keeps the task in her head anyway.\n\nWhat people do instead: they ask \"what can I do\", which hands the management back to her, and she now has to allocate you as well as everything else.\n\nMindset: ask which part, take that part, say when.",
       inputs: [
@@ -9150,7 +9150,7 @@ const multiStepCollections = {
   masculine1: [
     {
       name: "Conflict to Connection",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "A sequence to turn a fight around: Hear the Pain, Not the Blame → The Do-Over → Narrowing the Scope.\nFirst, you give her \"emotional oxygen,\" then you correct your own mistake, and finally, you offer a concrete solution.",
       inputs: [
@@ -9185,7 +9185,7 @@ const multiStepCollections = {
     },
     {
       name: "Lead the Dance",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "Setting direction and providing structure to reduce her decision-making burden: Narrowing the Scope → The \"When You...\" Stem → Narrowing the Scope. It works because you proactively narrow the wide-open scope of decisions, share your truth inarguably, and then drive a clear proposal forward.\n\n• Narrowing the Scope — reduce uncertainty by proposing limited options\n• The \"When You...\" Stem — state your boundaries and preferences clearly\n• Narrowing the Scope — guide the final decision with decisive clarity\n\nMindset: your clarity is a gift of structure you give her, not a burden you place on her.",
       inputs: [
@@ -9220,7 +9220,7 @@ const multiStepCollections = {
     },
     {
       name: "Weather the Storm",
-      guideFront: "What's happening, and the strategy to use",
+      guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
       description: "Standing strong in the face of her powerful emotional tsunamis: Hear the Pain, Not the Blame → Refusing the Rejection → The \"When You...\" Stem. It works because you refuse to get hooked by her accusations, hold a safe container through her storm, and then speak your truth from a grounded place.\n\n• Hear the Pain, Not the Blame — ignore the toxic surface to meet her underlying hurt\n• Refusing the Rejection — stay present even if she tells you to leave\n• The \"When You...\" Stem — share your own boundaries without defensiveness\n\nMindset: be more committed to the connection than you are afraid of her intensity.",
       inputs: [

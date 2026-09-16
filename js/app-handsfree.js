@@ -182,7 +182,7 @@ DS.createHandsfreeMode({
 // ─── HANDSFREE: SEQUENCES ─────────────────────────────────────────────────────
 DS.createHandsfreeMode({
   id: 'modeHandsfreeSequences',
-  baseGuide: ["What's happening, and the strategy to use", 'One way it could sound'],
+  baseGuide: ["Use the planned strategy when...", 'One way it could sound'],
   screenId: 'hfFlowScreen',
   prefix: 'hfFlow',
   els: {

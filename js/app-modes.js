@@ -251,7 +251,21 @@ function buildFlowSequence(combo) {
 
 DS.createCardMode({
   id: 'modeFlow',
-  baseGuide: ["What's happening, and the strategy to use", 'One way it could sound'],
+  // v1.28.71 — den gamla raden "What's happening, and the strategy to use"
+  // lovade ett strateginamn som sedan v1.27.88 STRYKS från stegets framsida:
+  // det flyttas till baksidan inom hakparentes, så att framsidan bara är
+  // stimulit. Halva guiden pekade alltså på något som inte fanns.
+  //
+  // Och andra halvan var överflödig. En framsidesguide säger vad man ska GÖRA,
+  // inte att kortet beskriver en situation — det gör varje framsida i appen.
+  // Därför följer Sequences nu samma form som de andra lägena, och de tre
+  // raderna skiljer sig bara i hur draget är bestämt:
+  //   Single Strategy    "Use this strategy when..."      namnet står som decknamn
+  //   Collections/Chall  "Choose a strategy when..."      man väljer själv
+  //   Sequences          "Use the planned strategy when..."  planen har bestämt
+  // Planen står på baksidan av scenariots första kort, där scenarioMoveList
+  // bygger den. Kontrollerat: alla 669 scenarier i kärnan får en draglista.
+  baseGuide: ["Use the planned strategy when...", 'One way it could sound'],
   screenId: 'flowScreen',
   els: {
     card: 'flowCard', inner: 'flowCardInner', title: 'flowComboName',
