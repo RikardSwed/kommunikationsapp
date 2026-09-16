@@ -3930,6 +3930,14 @@ if (resetFirstRunBtn) resetFirstRunBtn.addEventListener('click', () => {
 // twice; the developer list is simply the unfiltered one.
 const WHATS_NEW = [
   {
+    version: 'v1.28.68', date: 'September 2026', title: 'Two checks were wrong, and the last two loose cards', audience: 'dev',
+    items: [
+      '<strong>check-pack\'s label reader tested the wrong thing.</strong> A trailing bracket was dismissed as a stage direction when it <em>began</em> with and/then/let/say/pause/stop/wait — so real labels like <code>[say it back]</code> and <code>[stop and check]</code> were invisible. What decides is the position, exactly as the comment beside it always claimed: a reply before the bracket makes it a label. Across the whole library this surfaced only two hidden labels in the core, both in Describe Things, both long known.',
+      'Those two cards are rewritten. <em>Too Much At Once</em> card 3 and <em>They Have Never Seen One</em> card 5 taught stopping the description and showing a picture — outside what the pack is about — and now use What It Is For and What It Resembles instead. Describe Things is at 0 errors.',
+      'The doubled-word check also flagged correct English: <em>"What is it about that that is bad?"</em>. It now allows <code>that that</code> and <code>had had</code>. And Responding to Passive Aggression declares its two silent sequence steps in the description, the way §9b-3 asks — Let It Go often looks like nothing at all, and the deck now says so.',
+    ],
+  },
+  {
     version: 'v1.28.67', date: 'September 2026', title: 'Eleven strategies renamed', audience: 'dev',
     items: [
       '<strong>278 occurrences across ten packs.</strong> Every one of the eleven names pointed somewhere other than the move it teaches. Five were idioms that mean something else in ordinary English — <em>Respectful Exit</em> reads as leaving the conversation in a pack about staying in it; <em>Get Out Cleanly</em> reads as escaping when the move is handing the floor back. Four pointed at a sibling strategy in the same pack: <em>Expand to a Subtopic</em> described what <em>Build on Their Point</em> does, and its own back-guide had to correct it in writing.',

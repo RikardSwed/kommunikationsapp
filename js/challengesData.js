@@ -1107,7 +1107,7 @@ const challengesCollections = {
       inputs: [
         { q: "You are six details in and they have gone quiet.", a: "\"I'm giving you too much. Green rucksack, yellow patch. Start there.\" [Name and Main Details]", guideBack: "The name, and what marks it out", bundle: 'pro' },
         { q: "They say \"hang on, go back\".", a: "\"The bag. Green, with a yellow patch on the front.\" [Name and Main Details]", guideBack: "The name, and what marks it out", bundle: 'pro' },
-        { q: "You have described colour, size, material and age with no pause.", a: "\"Does that sound like anything you've seen?\" [Stop and check]", bundle: 'pro' },
+        { q: "You have described colour, size, material and age with no pause.", a: "\"Simpler than all that \u2014 it's the bag you carry books in.\" [What It Is For]", guideBack: "The purpose, as a clue", bundle: 'pro' },
         { q: "You realise you have not said the one thing that identifies it.", a: "\"None of that matters, actually. It's the only one with a wooden handle.\" [Name and Main Details]", guideBack: "The name, and what marks it out", bundle: 'pro' },
         { q: "They look overwhelmed before you have finished.", a: "\"Short version: big, green, patched. That's enough to spot it.\" [Name and Main Details]", guideBack: "The name, and what marks it out", bundle: 'pro' },
         { q: "You are giving details in the order you notice them, not the order that helps.", a: "\"Start here: it's a red notebook. Everything else is detail.\" [Name and Main Details]", guideBack: "The name, and what marks it out", bundle: 'pro' },
@@ -1141,7 +1141,7 @@ const challengesCollections = {
         { q: "They ask what a food tastes like.", a: "\"Somewhere between a pear and an apple, but softer than both.\" [What It Resembles]", guideBack: "A known thing, one change", bundle: 'pro' },
         { q: "They cannot picture the place.", a: "\"Imagine a train station, but the roof is glass and it's full of market stalls.\" [What It Resembles]", guideBack: "A known thing, one change", bundle: 'pro' },
         { q: "Your comparison did not land either.", a: "\"Different angle — it's a tool for opening things that are stuck.\" [What It Is For]", guideBack: "The purpose, as a clue", bundle: 'pro' },
-        { q: "They say \"I have no idea what you mean\".", a: "\"Fair enough. I'll show you a picture — it'll take two seconds.\" [Stop describing, show it]", bundle: 'pro' },
+        { q: "They say \"I have no idea what you mean\".", a: "\"Let me start again from something you'd know: it's a metal comb, but for soil.\" [What It Resembles]", guideBack: "A known thing, one change", bundle: 'pro' },
         { q: "They know a related thing but not this one.", a: "\"You know a colander? Same job, but for squeezing rather than draining.\" [What It Is For]", guideBack: "The purpose, as a clue", bundle: 'pro' },
         { q: "The comparison is close but the size is wrong.", a: "\"Like a wheelbarrow, but you'd carry it in one hand.\" [Size and Shape]", guideBack: "How big, and what shape", bundle: 'pro' },
         { q: "They cannot picture the material at all.", a: "\"Heavier than it looks — cast iron, cold to hold.\" [Material, Texture and Colour]", guideBack: "How it looks and feels", bundle: 'pro' },

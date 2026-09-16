@@ -3793,7 +3793,7 @@ const multiStepCollections = {
       name: "When You Should Not Take the Bait",
       guideFront: "What's happening, and the strategy to use",
       guideBack: "One way it could sound",
-      description: "Some remarks are an invitation to a row, and the person making them is looking for one. Engaging is exactly what turns a bad moment into a bad afternoon.\n\nThis combo practises declining, several times, without either giving in or getting sharp. It ends with leaving rather than resolving, because resolution is not always available and not always yours to produce.\n\nMindset: you can decline every round. Nothing obliges you to have this argument today.",
+      description: "Some remarks are an invitation to a row, and the person making them is looking for one. Engaging is exactly what turns a bad moment into a bad afternoon.\n\nThis combo practises declining, several times, without either giving in or getting sharp. It ends with leaving rather than resolving, because resolution is not always available and not always yours to produce.\n\nTwo of the steps are silent on purpose. Let It Go often looks like nothing at all — you say nothing, the meeting carries on, and the dig has nowhere to land.\n\nMindset: you can decline every round. Nothing obliges you to have this argument today.",
       inputs: [
         {
           bundle: 'pro',
