@@ -426,11 +426,11 @@ const challengesCollections = {
       guideBack: "One way it could sound",
       description: "You apologised first, before showing any understanding, and it did not land. This is the commonest failure in a serious apology and it does not feel like a failure — it feels like getting straight to the point.\n\nWhat the other person heard was a request to move on. The fix is to go back and do the part you skipped, out loud, rather than repeating the apology more sincerely.\n\nMindset: it is not that the sorry was wrong. It arrived too early.",
       inputs: [
-        { q: "You apologised and it clearly did not land.", a: "\"I jumped to sorry. Let me go back — you must have felt completely stranded.\" [Name What They Felt]", bundle: 'pro' },
-        { q: "They say \"you always just say sorry\".", a: "\"Fair. I don't think I've ever said I understood why it mattered.\" [Show You Understand Why]", bundle: 'pro' },
-        { q: "You are about to apologise a second time, harder.", a: "\"Saying it louder won't help. What was it actually like for you?\" [Name What They Felt]", bundle: 'pro' },
-        { q: "You have explained your reasons and they are unmoved.", a: "\"I've been explaining and not listening. Tell me how it landed.\" [Name What They Felt]", bundle: 'pro' },
-        { q: "You want to restart the conversation properly.", a: "\"Can I start that again? I did it in the wrong order.\" [Say Their Feelings Matter]", bundle: 'pro' },
+        { q: "You apologised and it clearly did not land.", a: "\"I jumped to sorry. Let me go back — you must have felt completely stranded.\" [Name What They Felt]", guideBack: "Their feeling, named or asked about", bundle: 'pro' },
+        { q: "They say \"you always just say sorry\".", a: "\"Fair. I don't think I've ever said I understood why it mattered.\" [Show You Understand Why]", guideBack: "The reason anyone would have felt it", bundle: 'pro' },
+        { q: "You are about to apologise a second time, harder.", a: "\"Saying it louder won't help. What was it actually like for you?\" [Name What They Felt]", guideBack: "Their feeling, named or asked about", bundle: 'pro' },
+        { q: "You have explained your reasons and they are unmoved.", a: "\"I've been explaining and not listening. Tell me how it landed.\" [Name What They Felt]", guideBack: "Their feeling, named or asked about", bundle: 'pro' },
+        { q: "You want to restart the conversation properly.", a: "\"Can I start that again? I did it in the wrong order.\" [Say Their Feelings Matter]", guideBack: "What you care about, said plainly", bundle: 'pro' },
       ]
     },
     {
@@ -439,11 +439,11 @@ const challengesCollections = {
       guideBack: "One way it could sound",
       description: "You have hurt someone and you still think your position was right. This is the situation people handle worst, usually by apologising for nothing in particular in the hope that it passes.\n\nThere is nearly always something genuinely yours: the timing, the tone, the audience, the fact that they found out from someone else. Apologise for that specifically and hold the substance separately. It is honest, and it works far better than an apology you do not mean.\n\nIf literally nothing is yours, say that kindly rather than performing regret you do not feel.\n\nMindset: apologise for your part precisely. Do not apologise for the whole thing to end the conversation.",
       inputs: [
-        { q: "You stand by the decision but not how you said it.", a: "\"The tone was wrong and I'm sorry for it. The decision I'd still make the same.\" [Apologise for What You Did]", bundle: 'pro' },
-        { q: "You were right but they found out from someone else.", a: "\"You should have heard it from me first. That part's on me.\" [Apologise for What You Did]", bundle: 'pro' },
-        { q: "You are about to apologise for something you do not regret.", a: "\"I can see it landed badly. I'm not going to pretend I'd do it differently, though.\" [Name What They Felt]", bundle: 'pro' },
-        { q: "They want you to agree you were wrong and you do not.", a: "\"I don't think I was wrong about the thing. I do think I handled it badly.\" [Show You Understand Why]", bundle: 'pro' },
-        { q: "Nothing about it is yours at all.", a: "\"I'm sorry it's landed like this. I don't think I did anything I'd change, and I'd rather say that than pretend.\" [Say Their Feelings Matter]", bundle: 'pro' },
+        { q: "You stand by the decision but not how you said it.", a: "\"The tone was wrong and I'm sorry for it. The decision I'd still make the same.\" [Apologise for What You Did]", guideBack: "The apology, with the fact attached", bundle: 'pro' },
+        { q: "You were right but they found out from someone else.", a: "\"You should have heard it from me first. That part's on me.\" [Apologise for What You Did]", guideBack: "The apology, with the fact attached", bundle: 'pro' },
+        { q: "You are about to apologise for something you do not regret.", a: "\"I can see it landed badly. I'm not going to pretend I'd do it differently, though.\" [Name What They Felt]", guideBack: "Their feeling, named or asked about", bundle: 'pro' },
+        { q: "They want you to agree you were wrong and you do not.", a: "\"I don't think I was wrong about the thing. I do think I handled it badly.\" [Show You Understand Why]", guideBack: "The reason anyone would have felt it", bundle: 'pro' },
+        { q: "Nothing about it is yours at all.", a: "\"I'm sorry it's landed like this. I don't think I did anything I'd change, and I'd rather say that than pretend.\" [Say Their Feelings Matter]", guideBack: "What you care about, said plainly", bundle: 'pro' },
       ]
     },
     {
@@ -452,11 +452,11 @@ const challengesCollections = {
       guideBack: "One way it could sound",
       description: "You have apologised well and it has not been accepted. Perhaps not yet, perhaps not ever.\n\nAn apology is offered, not transacted. Pressing for acceptance — repeating it, listing how sincere it was, pointing out that you have apologised — turns repair into pressure and makes the whole thing about your need to be forgiven.\n\nWhat you can control is the plan and whether you keep it. That is what changes things over weeks, not the conversation itself.\n\nMindset: you can apologise. You cannot make it enough. Let the change do the rest.",
       inputs: [
-        { q: "They say sorry does not fix it.", a: "\"It doesn't. I'm not expecting it to.\" [Name What They Felt]", bundle: 'pro' },
-        { q: "They are still angry after a proper apology.", a: "\"You're allowed to be. I'm not asking you to be over it.\" [Say Their Feelings Matter]", bundle: 'pro' },
-        { q: "You are tempted to point out that you have apologised.", a: "\"I'll leave it with you. The bit that matters is what happens next time anyway.\" [Say What You'll Do Differently]", bundle: 'pro' },
-        { q: "They say they need time.", a: "\"Take it. I'm not going to keep bringing it up.\" [Say Their Feelings Matter]", bundle: 'pro' },
-        { q: "They may never accept it.", a: "\"I understand. I'd still rather have said it than not.\" [Apologise for What You Did]", bundle: 'pro' },
+        { q: "They say sorry does not fix it.", a: "\"It doesn't. I'm not expecting it to.\" [Name What They Felt]", guideBack: "Their feeling, named or asked about", bundle: 'pro' },
+        { q: "They are still angry after a proper apology.", a: "\"You're allowed to be. I'm not asking you to be over it.\" [Say Their Feelings Matter]", guideBack: "What you care about, said plainly", bundle: 'pro' },
+        { q: "You are tempted to point out that you have apologised.", a: "\"I'll leave it with you. The bit that matters is what happens next time anyway.\" [Say What You'll Do Differently]", guideBack: "A change someone could watch you make", bundle: 'pro' },
+        { q: "They say they need time.", a: "\"Take it. I'm not going to keep bringing it up.\" [Say Their Feelings Matter]", guideBack: "What you care about, said plainly", bundle: 'pro' },
+        { q: "They may never accept it.", a: "\"I understand. I'd still rather have said it than not.\" [Apologise for What You Did]", guideBack: "The apology, with the fact attached", bundle: 'pro' },
       ]
     },
     {
@@ -465,11 +465,11 @@ const challengesCollections = {
       guideBack: "One way it could sound",
       description: "The steps are useful and they can be heard as steps. Someone who notices you working through a structure will trust the whole thing less, not more.\n\nWhat causes it is almost always abstraction — general phrases about feelings and respect that could have been said to anyone. The cure is specifics: their actual afternoon, the actual room, the actual thing you did.\n\nMindset: if the sentence could be said to anybody, it will sound like a technique.",
       inputs: [
-        { q: "You are about to say \"I understand that made you feel disrespected\".", a: "\"You'd moved two things to be there, and I didn't turn up.\" [Show You Understand Why]", bundle: 'pro' },
-        { q: "Your acknowledgement sounds general.", a: "\"You sat there while eight people watched. That's the bit I'd hate.\" [Name What They Felt]", bundle: 'pro' },
-        { q: "You are about to say something about valuing the relationship.", a: "\"I don't want to be someone you have to double-check on.\" [Say Their Feelings Matter]", bundle: 'pro' },
-        { q: "They say \"this sounds rehearsed\".", a: "\"It is a bit — I've been thinking about how to say it all week.\" [Say Their Feelings Matter]", bundle: 'pro' },
-        { q: "You have used three feeling words and none of them is specific.", a: "\"Let me just say the plain version: I'm sorry I said it in the meeting.\" [Apologise for What You Did]", bundle: 'pro' },
+        { q: "You are about to say \"I understand that made you feel disrespected\".", a: "\"You'd moved two things to be there, and I didn't turn up.\" [Show You Understand Why]", guideBack: "The reason anyone would have felt it", bundle: 'pro' },
+        { q: "Your acknowledgement sounds general.", a: "\"You sat there while eight people watched. That's the bit I'd hate.\" [Name What They Felt]", guideBack: "Their feeling, named or asked about", bundle: 'pro' },
+        { q: "You are about to say something about valuing the relationship.", a: "\"I don't want to be someone you have to double-check on.\" [Say Their Feelings Matter]", guideBack: "What you care about, said plainly", bundle: 'pro' },
+        { q: "They say \"this sounds rehearsed\".", a: "\"It is a bit — I've been thinking about how to say it all week.\" [Say Their Feelings Matter]", guideBack: "What you care about, said plainly", bundle: 'pro' },
+        { q: "You have used three feeling words and none of them is specific.", a: "\"Let me just say the plain version: I'm sorry I said it in the meeting.\" [Apologise for What You Did]", guideBack: "The apology, with the fact attached", bundle: 'pro' },
       ]
     },
     {
@@ -478,11 +478,11 @@ const challengesCollections = {
       guideBack: "One way it could sound",
       description: "Not everything needs five steps. Running the full version over a forgotten attachment makes the other person the injured party in something they had already forgotten, and turns your discomfort into their problem.\n\nThe size test still applies here: did it land on them, or did it only embarrass you? If it is the second, the everyday version is the right tool and this pack is the wrong one.\n\nMindset: the full apology is for things that actually hurt someone.",
       inputs: [
-        { q: "You are about to run five steps over something small.", a: "\"Sorry — that was my fault. Doing it now.\" [Apologise for What You Did]", bundle: 'pro' },
-        { q: "They look uncomfortable at how much you are saying.", a: "\"I'm making this bigger than it is. Sorry, and that's genuinely it.\" [Apologise for What You Did]", bundle: 'pro' },
-        { q: "They keep saying it is fine and they seem to mean it.", a: "\"Then I'll take that. Sorry again and I'll shut up about it.\" [Say What You'll Do Differently]", bundle: 'pro' },
-        { q: "You want to check whether it needs the full version.", a: "\"Is this a small thing or has it been sitting with you?\" [Name What They Felt]", bundle: 'pro' },
-        { q: "It was your embarrassment rather than their injury.", a: "(say the short version, once, and move on) [Apologise for What You Did]", bundle: 'pro' },
+        { q: "You are about to run five steps over something small.", a: "\"Sorry — that was my fault. Doing it now.\" [Apologise for What You Did]", guideBack: "The apology, with the fact attached", bundle: 'pro' },
+        { q: "They look uncomfortable at how much you are saying.", a: "\"I'm making this bigger than it is. Sorry, and that's genuinely it.\" [Apologise for What You Did]", guideBack: "The apology, with the fact attached", bundle: 'pro' },
+        { q: "They keep saying it is fine and they seem to mean it.", a: "\"Then I'll take that. Sorry again and I'll shut up about it.\" [Say What You'll Do Differently]", guideBack: "A change someone could watch you make", bundle: 'pro' },
+        { q: "You want to check whether it needs the full version.", a: "\"Is this a small thing or has it been sitting with you?\" [Name What They Felt]", guideBack: "Their feeling, named or asked about", bundle: 'pro' },
+        { q: "It was your embarrassment rather than their injury.", a: "(say the short version, once, and move on) [Apologise for What You Did]", guideBack: "The apology, with the fact attached", bundle: 'pro' },
       ]
     },
   ],
@@ -493,11 +493,11 @@ const challengesCollections = {
       guideBack: "A possible opener, with the strategy in brackets.",
       description: "A compliment about a choice is a friendly remark. A compliment about someone's body or face is something else, and with a stranger it usually arrives as attention they did not ask for.\n\nThe other risk is direction. A compliment from someone with more power — a manager, a teacher, anyone in charge — lands heavier than the same words between equals, and personal remarks stop being casual.\n\nStick to what they chose, what they did, and what they can take credit for.\n\nMindset: if they could have chosen otherwise, you can compliment it. If not, leave it.",
       inputs: [
-        { q: "You were about to compliment how someone looks.", a: "\"That's a great coat.\" [Compliment Something Specific]", bundle: 'pro' },
-        { q: "You want to say something positive to someone you manage.", a: "\"The way you handled that call was really good. Specifically the slowing down.\" [Compliment Something Specific]", bundle: 'pro' },
-        { q: "A compliment could be read as coming on to them.", a: "\"That was a good question you asked in there.\" [Compliment Something Specific]", bundle: 'pro' },
-        { q: "You realise your remark landed awkwardly.", a: "\"That came out oddly — I meant the jacket's great. Anyway, do you know when this starts?\" [Compliment Something Specific]", bundle: 'pro' },
-        { q: "You genuinely admire something personal about them but barely know them.", a: "\"You're very calm with all this going on. How do you manage that?\" [Ask About Them]", bundle: 'pro' },
+        { q: "You were about to compliment how someone looks.", a: "\"That's a great coat.\" [Compliment Something Specific]", guideBack: "One detail you noticed and liked", bundle: 'pro' },
+        { q: "You want to say something positive to someone you manage.", a: "\"The way you handled that call was really good. Specifically the slowing down.\" [Compliment Something Specific]", guideBack: "One detail you noticed and liked", bundle: 'pro' },
+        { q: "A compliment could be read as coming on to them.", a: "\"That was a good question you asked in there.\" [Compliment Something Specific]", guideBack: "One detail you noticed and liked", bundle: 'pro' },
+        { q: "You realise your remark landed awkwardly.", a: "\"That came out oddly — I meant the jacket's great. Anyway, do you know when this starts?\" [Compliment Something Specific]", guideBack: "One detail you noticed and liked", bundle: 'pro' },
+        { q: "You genuinely admire something personal about them but barely know them.", a: "\"You're very calm with all this going on. How do you manage that?\" [Ask About Them]", guideBack: "A question about who they are", bundle: 'pro' },
       ]
     },
     {
@@ -506,11 +506,11 @@ const challengesCollections = {
       guideBack: "A possible opener, with the strategy in brackets.",
       description: "You guessed and missed. It feels like a small failure and it is almost always the opposite — you have handed them the pleasure of correcting you, and corrections come with explanations attached.\n\nThe only way to make it awkward is to defend the guess or over-apologise. Take it lightly and ask about the real answer.\n\nMindset: \"no, actually…\" is an invitation. Follow it.",
       inputs: [
-        { q: "You guessed they were experienced and it is their first time.", a: "\"You had me fooled. What made you come to this one?\" [Ask About Them]", bundle: 'pro' },
-        { q: "You guessed they were leaving and they had just arrived.", a: "\"Ha — sorry, wrong end of the evening. Do you know people here?\" [Ask About Them]", bundle: 'pro' },
-        { q: "You guessed their role and got it completely wrong.", a: "\"Right, nothing like it then. What is it you actually do?\" [Ask About Them]", bundle: 'pro' },
-        { q: "Your guess about their mood was wrong and slightly unflattering.", a: "\"I've misread that completely, sorry. You're clearly enjoying yourself more than I am.\" [Make a Guess About Them]", bundle: 'pro' },
-        { q: "They correct you and seem to enjoy doing it.", a: "\"Go on then — what gave me the wrong impression?\" [Ask About Them]", bundle: 'pro' },
+        { q: "You guessed they were experienced and it is their first time.", a: "\"You had me fooled. What made you come to this one?\" [Ask About Them]", guideBack: "A question about who they are", bundle: 'pro' },
+        { q: "You guessed they were leaving and they had just arrived.", a: "\"Ha — sorry, wrong end of the evening. Do you know people here?\" [Ask About Them]", guideBack: "A question about who they are", bundle: 'pro' },
+        { q: "You guessed their role and got it completely wrong.", a: "\"Right, nothing like it then. What is it you actually do?\" [Ask About Them]", guideBack: "A question about who they are", bundle: 'pro' },
+        { q: "Your guess about their mood was wrong and slightly unflattering.", a: "\"I've misread that completely, sorry. You're clearly enjoying yourself more than I am.\" [Make a Guess]", guideBack: "A guess they can confirm or fix", bundle: 'pro' },
+        { q: "They correct you and seem to enjoy doing it.", a: "\"Go on then — what gave me the wrong impression?\" [Ask About Them]", guideBack: "A question about who they are", bundle: 'pro' },
       ]
     },
     {
@@ -519,11 +519,11 @@ const challengesCollections = {
       guideBack: "A possible opener, with the strategy in brackets.",
       description: "Four questions in ninety seconds and the other person has stopped answering properly. Nothing you asked was wrong; the problem is that each question started fresh instead of following the last answer.\n\nTwo things fix it. Follow one specific word from what they just said. And give something of your own back — a sentence about you turns interrogation into exchange.\n\nMindset: for every question, give one thing away. That is what makes it a conversation.",
       inputs: [
-        { q: "You have asked three questions in a row and answers are getting shorter.", a: "\"I'm interrogating you. I'll go first — I only came because a friend bailed.\" [Ask About Them]", bundle: 'pro' },
-        { q: "You are about to change subject rather than follow their answer.", a: "\"Go back a second — you said you'd nearly not come. Why?\" [Ask About Them]", bundle: 'pro' },
-        { q: "They have answered everything politely and asked you nothing.", a: "\"I've asked you about six things. Ask me something.\" [Ask About Them]", bundle: 'pro' },
-        { q: "You realise you know a list of facts about them and nothing else.", a: "\"What's the bit of all that you actually enjoy?\" [Ask About Them]", bundle: 'pro' },
-        { q: "They look slightly cornered.", a: "\"Anyway — that jumper's excellent, by the way.\" [Compliment Something Specific]", bundle: 'pro' },
+        { q: "You have asked three questions in a row and answers are getting shorter.", a: "\"I'm interrogating you. I'll go first — I only came because a friend bailed.\" [Ask About Them]", guideBack: "A question about who they are", bundle: 'pro' },
+        { q: "You are about to change subject rather than follow their answer.", a: "\"Go back a second — you said you'd nearly not come. Why?\" [Ask About Them]", guideBack: "A question about who they are", bundle: 'pro' },
+        { q: "They have answered everything politely and asked you nothing.", a: "\"I've asked you about six things. Ask me something.\" [Ask About Them]", guideBack: "A question about who they are", bundle: 'pro' },
+        { q: "You realise you know a list of facts about them and nothing else.", a: "\"What's the bit of all that you actually enjoy?\" [Ask About Them]", guideBack: "A question about who they are", bundle: 'pro' },
+        { q: "They look slightly cornered.", a: "\"Anyway — that jumper's excellent, by the way.\" [Compliment Something Specific]", guideBack: "One detail you noticed and liked", bundle: 'pro' },
       ]
     },
     {
@@ -532,11 +532,11 @@ const challengesCollections = {
       guideBack: "A possible opener, with the strategy in brackets.",
       description: "Short answers, no questions returned, eyes moving around the room. Sometimes that is a person who does not want to talk, and the right response is a warm exit.\n\nBut sometimes it is a person who finds this hard, and a slightly different move helps: a lower-effort question, something concrete rather than personal, or giving something of your own first so they are not the only one exposed.\n\nMindset: try one easier move, then let them be. Both outcomes are fine.",
       inputs: [
-        { q: "They have given two short answers about themselves.", a: "\"Have you been to one of these before?\" [Make a Guess About Them]", bundle: 'pro' },
-        { q: "They seem uncomfortable being asked about themselves.", a: "\"That's a good bag, by the way. Very practical.\" [Compliment Something Specific]", bundle: 'pro' },
-        { q: "You have been doing all the talking and all the asking.", a: "\"I'll stop firing questions. I'm mostly here because I said yes without checking the date.\" [Ask About Them]", bundle: 'pro' },
-        { q: "Two attempts have both landed flat.", a: "\"Anyway — enjoy the rest of it.\" [Ask About Them]", bundle: 'pro' },
-        { q: "They answer well but never ask anything back.", a: "\"Right, your turn. Ask me something.\" [Ask About Them]", bundle: 'pro' },
+        { q: "They have given two short answers about themselves.", a: "\"Have you been to one of these before?\" [Make a Guess]", guideBack: "A guess they can confirm or fix", bundle: 'pro' },
+        { q: "They seem uncomfortable being asked about themselves.", a: "\"That's a good bag, by the way. Very practical.\" [Compliment Something Specific]", guideBack: "One detail you noticed and liked", bundle: 'pro' },
+        { q: "You have been doing all the talking and all the asking.", a: "\"I'll stop firing questions. I'm mostly here because I said yes without checking the date.\" [Ask About Them]", guideBack: "A question about who they are", bundle: 'pro' },
+        { q: "Two attempts have both landed flat.", a: "\"Anyway — enjoy the rest of it.\" [Ask About Them]", guideBack: "A question about who they are", bundle: 'pro' },
+        { q: "They answer well but never ask anything back.", a: "\"Right, your turn. Ask me something.\" [Ask About Them]", guideBack: "A question about who they are", bundle: 'pro' },
       ]
     },
     {
@@ -545,11 +545,11 @@ const challengesCollections = {
       guideBack: "A possible opener, with the strategy in brackets.",
       description: "You asked how they were and got a real answer — something heavy, or the beginning of something heavy. This is the situation the opener exists for and also the point at which it stops being an opener.\n\nWhat helps is small and unglamorous: listen without fixing, do not compare it to your own experience, and offer one concrete thing rather than general availability. What does not help is advice, silver linings, or trying to resolve it while standing in a corridor.\n\nIf it is beyond what a conversation can hold, saying so kindly and pointing towards real support is the right move, not a failure of nerve.\n\nMindset: you are not solving this. You are making sure they are not carrying it alone.",
       inputs: [
-        { q: "They tell you something genuinely difficult.", a: "\"That sounds really hard. I'm glad you said.\" [Ask How They Really Are]", bundle: 'pro' },
-        { q: "You want to say something and everything sounds wrong.", a: "\"I don't have anything useful to say. I'm here, though.\" [Ask How They Really Are]", bundle: 'pro' },
-        { q: "You are about to offer advice they have not asked for.", a: "\"Do you want thoughts, or do you just want to say it out loud?\" [Ask How They Really Are]", bundle: 'pro' },
-        { q: "You want to offer support without it being vague.", a: "\"I'm around Thursday. Shall we get a coffee then, properly?\" [Ask How They Really Are]", bundle: 'pro' },
-        { q: "It sounds like more than a conversation can carry.", a: "\"This sounds like more than I can help with, and I don't want to leave you with it. Is there someone you can talk to properly?\" [Ask How They Really Are]", bundle: 'pro' },
+        { q: "They tell you something genuinely difficult.", a: "\"That sounds really hard. I'm glad you said.\" [Ask How They Really Are]", guideBack: "A real how-are-you", bundle: 'pro' },
+        { q: "You want to say something and everything sounds wrong.", a: "\"I don't have anything useful to say. I'm here, though.\" [Ask How They Really Are]", guideBack: "A real how-are-you", bundle: 'pro' },
+        { q: "You are about to offer advice they have not asked for.", a: "\"Do you want thoughts, or do you just want to say it out loud?\" [Ask How They Really Are]", guideBack: "A real how-are-you", bundle: 'pro' },
+        { q: "You want to offer support without it being vague.", a: "\"I'm around Thursday. Shall we get a coffee then, properly?\" [Ask How They Really Are]", guideBack: "A real how-are-you", bundle: 'pro' },
+        { q: "It sounds like more than a conversation can carry.", a: "\"This sounds like more than I can help with, and I don't want to leave you with it. Is there someone you can talk to properly?\" [Ask How They Really Are]", guideBack: "A real how-are-you", bundle: 'pro' },
       ]
     },
   ],
@@ -1685,13 +1685,13 @@ const challengesCollections = {
       guideBack: "One way it could sound",
       description: "\"I'm sorry you feel that way.\" \"I'm sorry, but you did the same thing.\" \"Fine, I'm sorry.\" All three contain the word sorry and none is an apology, and everybody can hear the difference immediately.\n\nWhat they share is that they protect you. The first relocates the problem into the other person's feelings, the second trades, and the third apologises for having to be in the conversation.\n\nThe fix is always the same: apologise for the thing you did, with no conditional and nothing attached.\n\nMindset: if the sentence protects you, it is not an apology yet.",
       inputs: [
-        { q: "You are about to say \"I'm sorry you feel that way\".", a: "\"I'm sorry I said it. Not that you're upset — that I said it.\" [What You Did]", guideBack: "The apology, with the fact attached", bundle: 'pro' },
-        { q: "You are about to say \"sorry, but you did too\".", a: "\"I'm sorry for my part. We can do the rest separately.\" [What You Did]", guideBack: "The apology, with the fact attached", bundle: 'pro' },
+        { q: "You are about to say \"I'm sorry you feel that way\".", a: "\"I'm sorry I said it. Not that you're upset — that I said it.\" [Apologise for What You Did]", guideBack: "The apology, with the fact attached", bundle: 'pro' },
+        { q: "You are about to say \"sorry, but you did too\".", a: "\"I'm sorry for my part. We can do the rest separately.\" [Apologise for What You Did]", guideBack: "The apology, with the fact attached", bundle: 'pro' },
         { q: "You said \"fine, I'm sorry\" in the middle of an argument.", a: "\"That wasn't an apology, that was me wanting to stop. Let me do it properly.\" [Choose the Size]", guideBack: "Three words, or a conversation", bundle: 'pro' },
-        { q: "You are about to say \"sorry if that upset anyone\".", a: "\"I'm sorry for the message I sent yesterday. It was unfair to Priya.\" [What You Did]", guideBack: "The apology, with the fact attached", bundle: 'pro' },
+        { q: "You are about to say \"sorry if that upset anyone\".", a: "\"I'm sorry for the message I sent yesterday. It was unfair to Priya.\" [Apologise for What You Did]", guideBack: "The apology, with the fact attached", bundle: 'pro' },
         { q: "You catch yourself explaining instead of apologising.", a: "\"I'm doing the explanation again. The short version is I was wrong.\" [Say Sorry Simply]", guideBack: "A bare apology", bundle: 'pro' },
-        { q: "You are about to say \"sorry, that's just how I am\".", a: "\"I'm sorry I snapped. That's on me, not on how I'm built.\" [What You Did]", guideBack: "The apology, with the fact attached", bundle: 'pro' },
-        { q: "You want to apologise without naming what you did.", a: "\"I'm sorry I forgot the pickup. Not 'for the mix-up' — I forgot it.\" [What You Did]", guideBack: "The apology, with the fact attached", bundle: 'pro' },
+        { q: "You are about to say \"sorry, that's just how I am\".", a: "\"I'm sorry I snapped. That's on me, not on how I'm built.\" [Apologise for What You Did]", guideBack: "The apology, with the fact attached", bundle: 'pro' },
+        { q: "You want to apologise without naming what you did.", a: "\"I'm sorry I forgot the pickup. Not 'for the mix-up' — I forgot it.\" [Apologise for What You Did]", guideBack: "The apology, with the fact attached", bundle: 'pro' },
         { q: "You are about to blame the circumstances.", a: "\"The traffic was bad and I still should have called. Sorry.\" [Say Sorry Simply]", guideBack: "A bare apology", bundle: 'pro' },
       ]
     },
@@ -1701,9 +1701,9 @@ const challengesCollections = {
       guideBack: "One way it could sound",
       description: "Apologising four times, at length, for something small. It feels like taking responsibility and usually does the opposite — the other person ends up reassuring you, which quietly makes your mistake into their job.\n\nIt also devalues the currency. Someone who apologises constantly is harder to believe when it matters, because the size of the apology has stopped carrying information.\n\nMindset: once, properly, and then stop. Repeating it is asking to be forgiven again.",
       inputs: [
-        { q: "You have apologised twice and they have said it is fine twice.", a: "\"Sorry \u2014 and here's the useful bit: I'll have it redone before Friday.\" [The Plan]", guideBack: "What happens differently now", bundle: 'pro' },
+        { q: "You have apologised twice and they have said it is fine twice.", a: "\"Sorry \u2014 and here's the useful bit: I'll have it redone before Friday.\" [Say What You'll Do Differently]", guideBack: "What happens differently now", bundle: 'pro' },
         { q: "You are about to apologise a third time for the same thing.", a: "\"I've said sorry and I meant it. I'll leave it there.\" [Choose the Size]", guideBack: "Three words, or a conversation", bundle: 'pro' },
-        { q: "They have started reassuring you and comforting you.", a: "\"You don't need to make me feel better about it. It was my mistake.\" [What You Did]", guideBack: "The apology, with the fact attached", bundle: 'pro' },
+        { q: "They have started reassuring you and comforting you.", a: "\"You don't need to make me feel better about it. It was my mistake.\" [Apologise for What You Did]", guideBack: "The apology, with the fact attached", bundle: 'pro' },
         { q: "You are apologising for something that affected nobody.", a: "(say nothing) [Choose the Size]", guideBack: "Three words, or a conversation", bundle: 'pro' },
         { q: "You apologise reflexively for things that are not yours.", a: "\"Actually, that one wasn't me. But it's sorted now.\" [Choose the Size]", guideBack: "Three words, or a conversation", bundle: 'pro' },
         { q: "You have apologised in three separate messages.", a: "\"Last one from me: sorry. Now I'll stop.\" [Say Sorry Simply]", guideBack: "A bare apology", bundle: 'pro' },
@@ -1717,14 +1717,14 @@ const challengesCollections = {
       guideBack: "One way it could sound",
       description: "\"I'll be more careful.\" \"It won't happen again.\" \"I'll try harder.\" All of them sound like a commitment and none can be checked, which means neither of you will know whether anything changed.\n\nTo someone who has heard you apologise before, an uncheckable plan is the same as no plan. A small specific one is worth far more, precisely because it can be seen to happen or not happen.\n\nMindset: promise something someone could watch you do.",
       inputs: [
-        { q: "You are about to say \"I'll be more careful\".", a: "\"I'll put it in the calendar while we're talking. That's the actual change.\" [The Plan]", guideBack: "A change someone could watch you make", bundle: 'pro' },
-        { q: "You are about to say \"it won't happen again\".", a: "\"It might. What I'll do is text you the moment I know I'm running late.\" [The Plan]", guideBack: "A change someone could watch you make", bundle: 'pro' },
-        { q: "They ask what will be different this time.", a: "\"A reminder two days before. Last time it was in my head, which is why it failed.\" [The Plan]", guideBack: "A change someone could watch you make", bundle: 'pro' },
-        { q: "You genuinely do not know how to prevent it.", a: "\"I don't know what would stop it. Have you got an idea? I'd take it.\" [The Plan]", guideBack: "A change someone could watch you make", bundle: 'pro' },
-        { q: "You made a plan last time and did not keep it.", a: "\"I said that last time and didn't do it. So this time it's written down.\" [The Plan]", guideBack: "A change someone could watch you make", bundle: 'pro' },
-        { q: "You are about to promise something you cannot control.", a: "\"I can't promise the trains. I can promise I'll leave at seven.\" [The Plan]", guideBack: "A change someone could watch you make", bundle: 'pro' },
-        { q: "Your plan is a feeling rather than an action.", a: "\"Not 'I'll focus more' — I'll put my phone in the drawer.\" [The Plan]", guideBack: "A change someone could watch you make", bundle: 'pro' },
-        { q: "The change is small and you are embarrassed by it.", a: "\"It's just a reminder on the Sunday. Small, but it's the thing that failed.\" [The Plan]", guideBack: "A change someone could watch you make", bundle: 'pro' },
+        { q: "You are about to say \"I'll be more careful\".", a: "\"I'll put it in the calendar while we're talking. That's the actual change.\" [Say What You'll Do Differently]", guideBack: "A change someone could watch you make", bundle: 'pro' },
+        { q: "You are about to say \"it won't happen again\".", a: "\"It might. What I'll do is text you the moment I know I'm running late.\" [Say What You'll Do Differently]", guideBack: "A change someone could watch you make", bundle: 'pro' },
+        { q: "They ask what will be different this time.", a: "\"A reminder two days before. Last time it was in my head, which is why it failed.\" [Say What You'll Do Differently]", guideBack: "A change someone could watch you make", bundle: 'pro' },
+        { q: "You genuinely do not know how to prevent it.", a: "\"I don't know what would stop it. Have you got an idea? I'd take it.\" [Say What You'll Do Differently]", guideBack: "A change someone could watch you make", bundle: 'pro' },
+        { q: "You made a plan last time and did not keep it.", a: "\"I said that last time and didn't do it. So this time it's written down.\" [Say What You'll Do Differently]", guideBack: "A change someone could watch you make", bundle: 'pro' },
+        { q: "You are about to promise something you cannot control.", a: "\"I can't promise the trains. I can promise I'll leave at seven.\" [Say What You'll Do Differently]", guideBack: "A change someone could watch you make", bundle: 'pro' },
+        { q: "Your plan is a feeling rather than an action.", a: "\"Not 'I'll focus more' — I'll put my phone in the drawer.\" [Say What You'll Do Differently]", guideBack: "A change someone could watch you make", bundle: 'pro' },
+        { q: "The change is small and you are embarrassed by it.", a: "\"It's just a reminder on the Sunday. Small, but it's the thing that failed.\" [Say What You'll Do Differently]", guideBack: "A change someone could watch you make", bundle: 'pro' },
       ]
     },
     {
@@ -1733,12 +1733,12 @@ const challengesCollections = {
       guideBack: "One way it could sound",
       description: "You have annoyed someone and you still think your position was right. This is handled worst by apologising vaguely for nothing in particular in the hope that it passes.\n\nThere is nearly always something genuinely yours: the timing, the tone, the audience, the fact that they found out from someone else. Apologise for that specifically and hold the substance separately. It is honest, and it works far better than an apology you do not mean.\n\nIf literally nothing is yours, say that kindly rather than performing regret you do not feel.\n\nMindset: apologise for your part precisely. Do not apologise for all of it to end the conversation.",
       inputs: [
-        { q: "You stand by the decision but not how you said it.", a: "\"The tone was wrong and I'm sorry for it. The decision I'd still make.\" [What You Did]", guideBack: "The apology, with the fact attached", bundle: 'pro' },
-        { q: "You were right but they heard it from someone else.", a: "\"You should have heard it from me first. That part's on me.\" [What You Did]", guideBack: "The apology, with the fact attached", bundle: 'pro' },
+        { q: "You stand by the decision but not how you said it.", a: "\"The tone was wrong and I'm sorry for it. The decision I'd still make.\" [Apologise for What You Did]", guideBack: "The apology, with the fact attached", bundle: 'pro' },
+        { q: "You were right but they heard it from someone else.", a: "\"You should have heard it from me first. That part's on me.\" [Apologise for What You Did]", guideBack: "The apology, with the fact attached", bundle: 'pro' },
         { q: "You are about to apologise for something you do not regret.", a: "\"I can see it landed badly. I'm not going to pretend I'd do it differently.\" [Choose the Size]", guideBack: "Three words, or a conversation", bundle: 'pro' },
-        { q: "They want you to agree you were wrong and you do not.", a: "\"I don't think I was wrong about the thing. I do think I handled it badly.\" [What You Did]", guideBack: "The apology, with the fact attached", bundle: 'pro' },
+        { q: "They want you to agree you were wrong and you do not.", a: "\"I don't think I was wrong about the thing. I do think I handled it badly.\" [Apologise for What You Did]", guideBack: "The apology, with the fact attached", bundle: 'pro' },
         { q: "Nothing about it is yours at all.", a: "\"I'm sorry it's landed like this. I don't think I did anything I'd change, and I'd rather say that.\" [Choose the Size]", guideBack: "Three words, or a conversation", bundle: 'pro' },
-        { q: "You would do the same again but said it badly.", a: "\"I'm sorry for how I put it in front of everyone.\" [What You Did]", guideBack: "The apology, with the fact attached", bundle: 'pro' },
+        { q: "You would do the same again but said it badly.", a: "\"I'm sorry for how I put it in front of everyone.\" [Apologise for What You Did]", guideBack: "The apology, with the fact attached", bundle: 'pro' },
         { q: "They want a full apology and only part of it is yours.", a: "\"The lateness was mine and I'm sorry. The rest I'd want to talk about.\" [Choose the Size]", guideBack: "Three words, or a conversation", bundle: 'pro' },
         { q: "You are being pressed to apologise for something you did not do.", a: "\"I'm not going to say sorry for that. I am sorry it's landed badly.\" [Say Sorry Simply]", guideBack: "A bare apology", bundle: 'pro' },
       ]
@@ -1753,10 +1753,10 @@ const challengesCollections = {
         { q: "They have been off with you for several days.", a: "\"This has been sitting there since Friday. I'd rather talk about it than leave it.\" [Choose the Size]", guideBack: "Three words, or a conversation", bundle: 'pro' },
         { q: "Someone was genuinely hurt rather than inconvenienced.", a: "\"This is bigger than a quick sorry. Have you got ten minutes?\" [Choose the Size]", guideBack: "Three words, or a conversation", bundle: 'pro' },
         { q: "You are about to give the short version to something serious.", a: "\"I'm not going to do this in a corridor. Can I find you later?\" [Choose the Size]", guideBack: "Three words, or a conversation", bundle: 'pro' },
-        { q: "The same thing has happened three times.", a: "\"I keep apologising for this and it keeps happening. That's the thing to talk about.\" [The Plan]", guideBack: "A change someone could watch you make", bundle: 'pro' },
+        { q: "The same thing has happened three times.", a: "\"I keep apologising for this and it keeps happening. That's the thing to talk about.\" [Say What You'll Do Differently]", guideBack: "A change someone could watch you make", bundle: 'pro' },
         { q: "You are about to apologise by text for something that needs a conversation.", a: "\"This isn't a message thing. Can I ring you tonight?\" [Choose the Size]", guideBack: "Three words, or a conversation", bundle: 'pro' },
         { q: "The apology needs to go to more than one person.", a: "\"I'll say this to Anna as well — it was her afternoon I wasted.\" [Choose the Size]", guideBack: "Three words, or a conversation", bundle: 'pro' },
-        { q: "They ask what you are actually going to do about it.", a: "\"Fair question. From Monday it goes in the shared calendar, not my head.\" [The Plan]", guideBack: "A change someone could watch you make", bundle: 'pro' },
+        { q: "They ask what you are actually going to do about it.", a: "\"Fair question. From Monday it goes in the shared calendar, not my head.\" [Say What You'll Do Differently]", guideBack: "A change someone could watch you make", bundle: 'pro' },
       ]
     },
   ],
@@ -3375,9 +3375,9 @@ const challengesCollections = {
       guideBack: "A possible response, with the move in brackets.",
       description: "You started summarising and kept going, and by the end you had said more than they did. A summary that takes as long as the original is a repetition with your name on it.\n\nWhat it usually looks like:\n\n• More than three points.\n• You added your own interpretation while summarising.\n• They are waiting politely for you to finish.\n\nTwo ways through:\n1. Cut to three and check — \"the main things are…\"\n2. Hand it straight back — \"have I missed anything?\" ends it properly.\n\nMindset: three clauses and a question. Anything longer and it stops being a summary.",
       inputs: [
-        { q: "Your summary has gone on longer than their account.", a: "\"I'll cut that down: timing, workload, being asked last. Yes?\" [cut to three]", bundle: 'pro' },
+        { q: "Your summary has gone on longer than their account.", a: "\"I'll cut that down: timing, workload, being asked last. Yes?\" [Sum It Up]", guideBack: "Their whole account, in short", bundle: 'pro' },
         { q: "You slipped an interpretation into the summary.", a: "\"That last bit was mine, not yours. Ignore it — have I got the three right?\" [hand it back]", bundle: 'pro' },
-        { q: "You are listing everything they said.", a: "\"What are the three that actually matter here?\" [cut to three]", bundle: 'pro' },
+        { q: "You are listing everything they said.", a: "\"What are the three that actually matter here?\" [Sum It Up]", guideBack: "Their whole account, in short", bundle: 'pro' },
         { q: "They are waiting politely for you to finish.", a: "\"Sorry. Short version — have I missed anything?\" [hand it back]", bundle: 'pro' },
         { q: "You summarised and then answered your own summary.", a: "\"I've answered my version rather than yours. Correct me first.\" [hand it back]", bundle: 'pro' },
       ]
@@ -3388,11 +3388,11 @@ const challengesCollections = {
       guideBack: "A possible response, with the move in brackets.",
       description: "You offered something of your own to show you recognised it, and then kept going. The disclosure was fine; the absence of a way back was not.\n\nWhat it usually looks like:\n\n• Your version is now longer than theirs.\n• They have stopped adding anything.\n• You are on the second or third detail of your own case.\n\nTwo ways through:\n1. Cut it off and return — \"anyway, that's mine. Back to you.\"\n2. Ask them the question your own story raised — turns the detour into a bridge.\n\nMindset: one sentence about you, then back. Length is what turns recognition into a hijack.",
       inputs: [
-        { q: "You are three sentences into your own version.", a: "\"Anyway — that's mine and it's less interesting. Where had you got to?\" [return]", bundle: 'pro' },
-        { q: "They have gone quiet while you talk about yourself.", a: "\"I've taken over. What were you going to say before I jumped in?\" [return]", bundle: 'pro' },
-        { q: "Your story raised a question worth asking them.", a: "\"Mine ended badly, which is why I'm asking — is yours still fixable?\" [bridge]", bundle: 'pro' },
-        { q: "You realise you have matched every point with one of your own.", a: "\"I keep answering with my own version. Tell me about yours properly.\" [return]", bundle: 'pro' },
-        { q: "You want to say more and probably should not.", a: "\"There's more but it's not the point. Yours is the one with a decision in it.\" [return]", bundle: 'pro' },
+        { q: "You are three sentences into your own version.", a: "\"Anyway — that's mine and it's less interesting. Where had you got to?\" [Share and Return]", guideBack: "Your bit, then the floor back to them", bundle: 'pro' },
+        { q: "They have gone quiet while you talk about yourself.", a: "\"I've taken over. What were you going to say before I jumped in?\" [Share and Return]", guideBack: "Your bit, then the floor back to them", bundle: 'pro' },
+        { q: "Your story raised a question worth asking them.", a: "\"Mine ended badly, which is why I'm asking — is yours still fixable?\" [Share and Return]", guideBack: "Your bit, then the floor back to them", bundle: 'pro' },
+        { q: "You realise you have matched every point with one of your own.", a: "\"I keep answering with my own version. Tell me about yours properly.\" [Share and Return]", guideBack: "Your bit, then the floor back to them", bundle: 'pro' },
+        { q: "You want to say more and probably should not.", a: "\"There's more but it's not the point. Yours is the one with a decision in it.\" [Share and Return]", guideBack: "Your bit, then the floor back to them", bundle: 'pro' },
       ]
     },
     {
@@ -4800,11 +4800,11 @@ const challengesCollections = {
       guideBack: "A possible opener, with the strategy in brackets.",
       description: "It lands flat, or it is taken literally, or it accidentally sounds like a criticism of something they said. All three feel much worse from the inside than they look from outside.\n\nThe recovery is always the same shape: short, unbothered, and onwards. Do not explain the joke, do not repeat it louder, and do not deliver a paragraph of apology — that is what turns a two-second miss into an awkward moment.\n\nMindset: acknowledge it in four words if at all, then say something plain.",
       inputs: [
-        { q: "Your dry remark was taken completely seriously.", a: "\"Sorry, that was me being sarcastic badly. It is properly annoying, though.\" [Use Humour or Irony]", bundle: 'pro' },
-        { q: "The joke got nothing at all.", a: "\"Anyway — do you know if there's a break in this?\" [Mention Something That Happened]", bundle: 'pro' },
-        { q: "Your joke could be read as a dig at what they just said.", a: "\"That came out wrong — I meant the situation, not you.\" [Use Humour or Irony]", bundle: 'pro' },
-        { q: "You are about to explain why the joke was funny.", a: "\"Ignore me. Have you been to one of these before?\" [Mention Something That Happened]", bundle: 'pro' },
-        { q: "You made a joke about the event and they organised it.", a: "\"And now I find out you made it. I'll get my coat.\" [Use Humour or Irony]", bundle: 'pro' },
+        { q: "Your dry remark was taken completely seriously.", a: "\"Sorry, that was me being sarcastic badly. It is properly annoying, though.\" [Joke About the Situation]", guideBack: "A dry line about what you're both in", bundle: 'pro' },
+        { q: "The joke got nothing at all.", a: "\"Anyway — do you know if there's a break in this?\" [Bring Something In]", guideBack: "A topic from beyond the room", bundle: 'pro' },
+        { q: "Your joke could be read as a dig at what they just said.", a: "\"That came out wrong — I meant the situation, not you.\" [Joke About the Situation]", guideBack: "A dry line about what you're both in", bundle: 'pro' },
+        { q: "You are about to explain why the joke was funny.", a: "\"Ignore me. Have you been to one of these before?\" [Bring Something In]", guideBack: "A topic from beyond the room", bundle: 'pro' },
+        { q: "You made a joke about the event and they organised it.", a: "\"And now I find out you made it. I'll get my coat.\" [Joke About the Situation]", guideBack: "A dry line about what you're both in", bundle: 'pro' },
       ]
     },
     {
@@ -4813,11 +4813,11 @@ const challengesCollections = {
       guideBack: "A possible opener, with the strategy in brackets.",
       description: "Irony is the opener most likely to fail with someone whose first language is different from yours, or who comes from somewhere the dry register is not standard. Understatement in particular carries almost none of its meaning in the words.\n\nThe fix is not to avoid humour, but to make it visible: exaggeration travels far better than understatement, tone and face have to do more work, and if it does not land, say the plain version straight away without embarrassment.\n\nMindset: exaggeration crosses borders. Dryness often does not.",
       inputs: [
-        { q: "You are about to use dry understatement with someone you have just met.", a: "\"I think we've been queueing so long I've developed a personality.\" [Use Humour or Irony]", bundle: 'pro' },
-        { q: "Your flat, ironic line was taken at face value.", a: "\"Sorry — joke. It is genuinely awful, though.\" [Use Humour or Irony]", bundle: 'pro' },
-        { q: "You are speaking with someone in their second language.", a: "\"This is the slowest queue in the country. Possibly Europe.\" [Use Humour or Irony]", bundle: 'pro' },
-        { q: "They look confused rather than amused.", a: "\"Ignore that. Have you been waiting long?\" [Mention Something That Happened]", bundle: 'pro' },
-        { q: "You want humour that cannot be misread.", a: "\"I've picked the slow queue again. Every single time.\" [Use Humour or Irony]", bundle: 'pro' },
+        { q: "You are about to use dry understatement with someone you have just met.", a: "\"I think we've been queueing so long I've developed a personality.\" [Joke About the Situation]", guideBack: "A dry line about what you're both in", bundle: 'pro' },
+        { q: "Your flat, ironic line was taken at face value.", a: "\"Sorry — joke. It is genuinely awful, though.\" [Joke About the Situation]", guideBack: "A dry line about what you're both in", bundle: 'pro' },
+        { q: "You are speaking with someone in their second language.", a: "\"This is the slowest queue in the country. Possibly Europe.\" [Joke About the Situation]", guideBack: "A dry line about what you're both in", bundle: 'pro' },
+        { q: "They look confused rather than amused.", a: "\"Ignore that. Have you been waiting long?\" [Bring Something In]", guideBack: "A topic from beyond the room", bundle: 'pro' },
+        { q: "You want humour that cannot be misread.", a: "\"I've picked the slow queue again. Every single time.\" [Joke About the Situation]", guideBack: "A dry line about what you're both in", bundle: 'pro' },
       ]
     },
     {
@@ -4826,11 +4826,11 @@ const challengesCollections = {
       guideBack: "A possible opener, with the strategy in brackets.",
       description: "\"I came over because I wanted to talk to you\" is a warm and honest sentence that can also read as interest of a different kind. That is fine when it is true and unwelcome when it is not.\n\nIf you do not intend it that way, anchor the reason in something outside the two of you — being new, knowing nobody, a specific thing they said. Reasons about the situation read as friendliness; reasons about them read as attraction.\n\nMindset: name the reason, and make it about the room rather than about them.",
       inputs: [
-        { q: "You want to say why you came over without it being misread.", a: "\"I don't know anyone here, so I'm working my way round the room. I'm...\" [Say Why You Came Over]", bundle: 'pro' },
-        { q: "You want to compliment the reason without it being personal.", a: "\"You were the only other person taking notes, so I thought I'd risk it.\" [Say Why You Came Over]", bundle: 'pro' },
-        { q: "You realise your opener came out warmer than intended.", a: "\"That sounded odd — I mean I don't know a soul in here.\" [Say Why You Came Over]", bundle: 'pro' },
-        { q: "A colleague might read a personal approach as something else.", a: "\"I've been meaning to say hello since you joined. How's it going so far?\" [Say Why You Came Over]", bundle: 'pro' },
-        { q: "You do mean it that way and want to be honest but light.", a: "\"I'd have regretted not coming over, so — hello. I'm...\" [Say Why You Came Over]", bundle: 'pro' },
+        { q: "You want to say why you came over without it being misread.", a: "\"I don't know anyone here, so I'm working my way round the room. I'm...\" [Say Why You Came Over]", guideBack: "The reason you walked up", bundle: 'pro' },
+        { q: "You want to compliment the reason without it being personal.", a: "\"You were the only other person taking notes, so I thought I'd risk it.\" [Say Why You Came Over]", guideBack: "The reason you walked up", bundle: 'pro' },
+        { q: "You realise your opener came out warmer than intended.", a: "\"That sounded odd — I mean I don't know a soul in here.\" [Say Why You Came Over]", guideBack: "The reason you walked up", bundle: 'pro' },
+        { q: "A colleague might read a personal approach as something else.", a: "\"I've been meaning to say hello since you joined. How's it going so far?\" [Say Why You Came Over]", guideBack: "The reason you walked up", bundle: 'pro' },
+        { q: "You do mean it that way and want to be honest but light.", a: "\"I'd have regretted not coming over, so — hello. I'm...\" [Say Why You Came Over]", guideBack: "The reason you walked up", bundle: 'pro' },
       ]
     },
     {
@@ -4839,11 +4839,11 @@ const challengesCollections = {
       guideBack: "A possible opener, with the strategy in brackets.",
       description: "Saying how you feel works when it is small and current. It stops working when it turns out to be the top of something much larger, and the other person suddenly finds themselves holding it.\n\nIf you notice yourself going further than you meant, the fix is not to backtrack apologetically — that makes it heavier. Name it lightly, put it down, and offer them a way back to ordinary conversation.\n\nMindset: put it down without making a thing of putting it down.",
       inputs: [
-        { q: "You have gone further than you meant with someone you just met.", a: "\"That got heavy quickly. Anyway — have you been here before?\" [Mention Something That Happened]", bundle: 'pro' },
-        { q: "You can see them looking for an exit.", a: "\"Sorry, long week. Ignore me.\" [Say How You Feel]", bundle: 'pro' },
-        { q: "You are about to say something too big for an opener.", a: "\"It's been a long week, put it that way.\" [Say How You Feel]", bundle: 'pro' },
-        { q: "They responded kindly but you feel exposed.", a: "\"Thanks. Right — tell me something more cheerful than that.\" [Mention Something That Happened]", bundle: 'pro' },
-        { q: "You want the small version of something big.", a: "\"I'm running on about four hours' sleep, so I'm not at my sharpest.\" [Say How You Feel]", bundle: 'pro' },
+        { q: "You have gone further than you meant with someone you just met.", a: "\"That got heavy quickly. Anyway — have you been here before?\" [Bring Something In]", guideBack: "A topic from beyond the room", bundle: 'pro' },
+        { q: "You can see them looking for an exit.", a: "\"Sorry, long week. Ignore me.\" [Say How You Feel]", guideBack: "A feeling, said in one line", bundle: 'pro' },
+        { q: "You are about to say something too big for an opener.", a: "\"It's been a long week, put it that way.\" [Say How You Feel]", guideBack: "A feeling, said in one line", bundle: 'pro' },
+        { q: "They responded kindly but you feel exposed.", a: "\"Thanks. Right — tell me something more cheerful than that.\" [Bring Something In]", guideBack: "A topic from beyond the room", bundle: 'pro' },
+        { q: "You want the small version of something big.", a: "\"I'm running on about four hours' sleep, so I'm not at my sharpest.\" [Say How You Feel]", guideBack: "A feeling, said in one line", bundle: 'pro' },
       ]
     },
     {
@@ -4852,11 +4852,11 @@ const challengesCollections = {
       guideBack: "A possible opener, with the strategy in brackets.",
       description: "Bringing something in from outside works when it is small. Major news — a disaster, something political, something genuinely upsetting — is a poor opener with a stranger, not because it does not matter but because you are asking them to have a position in front of someone they have just met.\n\nSave the weight for people you know. With a stranger, the wrong bus and the closed road do more work.\n\nMindset: an opener should be easy to answer. Heavy news is not.",
       inputs: [
-        { q: "The big news of the week is on everyone's mind and you are about to raise it.", a: "\"Did you see they're digging up the high street again?\" [Mention Something That Happened]", bundle: 'pro' },
-        { q: "They raise something heavy and you do not want to debate it with a stranger.", a: "\"It's a lot, that whole thing. Have you come far today?\" [Mention Something That Happened]", bundle: 'pro' },
-        { q: "You want something with no weight at all.", a: "\"I got on the wrong bus this morning and didn't notice for four stops.\" [Mention Something That Happened]", bundle: 'pro' },
-        { q: "Something sad has happened locally and it would be strange not to mention it.", a: "\"Awful business this week. Everyone's a bit quiet, I think.\" [Say How You Feel]", bundle: 'pro' },
-        { q: "You started on something heavy and want to move on gracefully.", a: "\"Anyway. Not a topic for a Tuesday morning. Are you here for the whole day?\" [Mention Something That Happened]", bundle: 'pro' },
+        { q: "The big news of the week is on everyone's mind and you are about to raise it.", a: "\"Did you see they're digging up the high street again?\" [Bring Something In]", guideBack: "A topic from beyond the room", bundle: 'pro' },
+        { q: "They raise something heavy and you do not want to debate it with a stranger.", a: "\"It's a lot, that whole thing. Have you come far today?\" [Bring Something In]", guideBack: "A topic from beyond the room", bundle: 'pro' },
+        { q: "You want something with no weight at all.", a: "\"I got on the wrong bus this morning and didn't notice for four stops.\" [Bring Something In]", guideBack: "A topic from beyond the room", bundle: 'pro' },
+        { q: "Something sad has happened locally and it would be strange not to mention it.", a: "\"Awful business this week. Everyone's a bit quiet, I think.\" [Say How You Feel]", guideBack: "A feeling, said in one line", bundle: 'pro' },
+        { q: "You started on something heavy and want to move on gracefully.", a: "\"Anyway. Not a topic for a Tuesday morning. Are you here for the whole day?\" [Bring Something In]", guideBack: "A topic from beyond the room", bundle: 'pro' },
       ]
     },
   ],

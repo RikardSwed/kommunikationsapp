@@ -969,7 +969,7 @@ const memorizeCollections = {
       ]
     },
     {
-      name: "Make a Guess About Them",
+      name: "Make a Guess",
       guideFront: "A question about the method.",
       guideBack: "The answer.",
       description: "The opener where being wrong works as well as being right.",
@@ -2798,7 +2798,7 @@ const memorizeCollections = {
       ]
     },
     {
-      name: "What You Did",
+      name: "Apologise for What You Did",
       cards: [
         { q: "What makes an apology specific enough?", a: "Naming exactly what you did, not a general expression of regret.", bundle: 'free' },
         { q: "What three words make it not an apology?", a: "\"If\", \"but\" and \"you\" — as in \"sorry if\", \"sorry but\", \"sorry you felt\".", bundle: 'free' },
@@ -2811,7 +2811,7 @@ const memorizeCollections = {
       ]
     },
     {
-      name: "The Plan",
+      name: "Say What You'll Do Differently",
       cards: [
         { q: "Why is this the most important part to someone let down before?", a: "It is the only part that is not words about the past.", bundle: 'free' },
         { q: "How specific should the plan be?", a: "Small enough to be believed, specific enough to be checked.", bundle: 'free' },
@@ -2832,14 +2832,14 @@ const memorizeCollections = {
         { q: "What does Sorry and Then What pair up?", a: "The specific apology and the plan — the two questions the other person actually has.", bundle: 'pro' },
         { q: "You bumped into someone in a corridor. Which move?", a: "Say Sorry Simply. Three words, and it is finished.", bundle: 'pro' },
         { q: "You have cancelled on the same friend four times. Which move?", a: "Choose the Size. This one has stopped being small.", bundle: 'pro' },
-        { q: "They ask whether it will happen again. Which move?", a: "The Plan — and it has to be something they could watch you do.", bundle: 'pro' },
+        { q: "They ask whether it will happen again. Which move?", a: "Say What You'll Do Differently — and it has to be something they could watch you do.", bundle: 'pro' },
         { q: "Why does All Four mix them with no cue?", a: "Because real apologies arrive without a label. Choosing is the skill.", bundle: 'pro' },
         { q: "What is the commonest wrong choice in this pack?", a: "The full treatment for something trivial. It hands your discomfort to the other person.", bundle: 'pro' },
       ]
     },
     {
       name: "Sequences",
-      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **The Everyday Apology** — Say Sorry Simply → What You Did → The Plan\n2. **The Quick One** — the same opening, plus the discipline of stopping\n3. **When It Is Bigger Than You Thought** — Choose the Size → What You Did → The Plan\n\nThe first two differ only in whether you keep talking. The third begins by correcting the size out loud.",
+      description: "The three sequences in this pack, and the order each one runs in:\n\n1. **The Everyday Apology** — Say Sorry Simply → Apologise for What You Did → Say What You'll Do Differently\n2. **The Quick One** — the same opening, plus the discipline of stopping\n3. **When It Is Bigger Than You Thought** — Choose the Size → Apologise for What You Did → Say What You'll Do Differently\n\nThe first two differ only in whether you keep talking. The third begins by correcting the size out loud.",
       cards: [
         { q: "What is the order in The Everyday Apology?", a: "Sorry, then what you did, then what changes.", bundle: 'pro' },
         { q: "Why does the plan come last?", a: "It is the only part about the future. First, it makes the apology sound like a negotiation.", bundle: 'pro' },
@@ -2847,7 +2847,7 @@ const memorizeCollections = {
         { q: "What goes wrong if you keep talking after a short apology?", a: "It turns into a defence, or it upgrades a small thing into a big one.", bundle: 'pro' },
         { q: "What starts When It Is Bigger Than You Thought?", a: "Choose the Size — saying out loud that you had the size wrong.", bundle: 'pro' },
         { q: "Why is that correction itself part of the apology?", a: "It shows you noticed, and that lands better than the small version delivered more sincerely.", bundle: 'pro' },
-        { q: "What do all three sequences end with?", a: "The Plan. Sorry is where it starts, not where it finishes.", bundle: 'pro' },
+        { q: "What do all three sequences end with?", a: "Say What You'll Do Differently. Sorry is where it starts, not where it finishes.", bundle: 'pro' },
         { q: "Which step do people skip in all three?", a: "The plan. It is the only one that costs anything later.", bundle: 'pro' },
       ]
     },
@@ -5534,7 +5534,7 @@ const memorizeCollections = {
       ]
     },
     {
-      name: "Ask If You Got It Right",
+      name: "Check Your Version",
       guideFront: "A question about the method.",
       guideBack: "The answer.",
       description: "The theory behind explicit checking.",
@@ -5547,7 +5547,7 @@ const memorizeCollections = {
       ]
     },
     {
-      name: "Connect It to What They Said Earlier",
+      name: "Link to Earlier",
       guideFront: "A question about the method.",
       guideBack: "The answer.",
       description: "The theory behind carrying a detail forward.",
@@ -5561,7 +5561,7 @@ const memorizeCollections = {
       ]
     },
     {
-      name: "Summarise the Whole Thing Back",
+      name: "Sum It Up",
       guideFront: "A question about the method.",
       guideBack: "The answer.",
       description: "The theory behind the long loop.",
@@ -5575,7 +5575,7 @@ const memorizeCollections = {
       ]
     },
     {
-      name: "Say You Felt That Too",
+      name: "Shared Feeling",
       guideFront: "A question about the method.",
       guideBack: "The answer.",
       description: "The theory behind sharing the feeling.",
@@ -5588,7 +5588,7 @@ const memorizeCollections = {
       ]
     },
     {
-      name: "Name the Value You Share",
+      name: "Shared Value",
       guideFront: "A question about the method.",
       guideBack: "The answer.",
       description: "The theory behind meeting what is underneath.",
@@ -5601,7 +5601,7 @@ const memorizeCollections = {
       ]
     },
     {
-      name: "Share, Then Bring It Back",
+      name: "Share and Return",
       guideFront: "A question about the method.",
       guideBack: "The answer.",
       description: "The theory behind the disclosure that returns.",
@@ -7708,7 +7708,7 @@ const memorizeCollections = {
       ]
     },
     {
-      name: "Use Humour or Irony",
+      name: "Joke About the Situation",
       guideFront: "A question about the method.",
       guideBack: "The answer.",
       description: "The opener that skips three minutes of small talk when it lands.",
@@ -7750,7 +7750,7 @@ const memorizeCollections = {
       ]
     },
     {
-      name: "Mention Something That Happened",
+      name: "Bring Something In",
       guideFront: "A question about the method.",
       guideBack: "The answer.",
       description: "The only opener that is not about the situation, you, or them.",
