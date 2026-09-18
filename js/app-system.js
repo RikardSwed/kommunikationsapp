@@ -3930,6 +3930,14 @@ if (resetFirstRunBtn) resetFirstRunBtn.addEventListener('click', () => {
 // twice; the developer list is simply the unfiltered one.
 const WHATS_NEW = [
   {
+    version: 'v1.28.75', date: 'September 2026', title: 'Bug fix: handsfree could not be opened at all', audience: 'dev',
+    items: [
+      '<strong>Every handsfree mode has been dead since v1.28.62.</strong> Tapping a handsfree card on the mode screen did nothing: <code>mode.show</code> still read the single checkbox <code>guideToggleHf</code>, which that same version had replaced with two (detailed / simple) and <code>syncGuideTogglesHf()</code>. The variable no longer existed, so the line threw a ReferenceError before <code>navToTraining()</code> ran — and a thrown listener is silent, so the screen simply never opened.',
+      'One line fixed. All six handsfree modes open again, and the guide text follows the same three settings as the card modes.',
+      'Why nothing caught it: no suite had ever called a handsfree <code>show()</code>. New <code>tools/test-handsfree.js</code> boots the app, flips the handsfree toggle and clicks all six cards, then checks the guide in detailed, simple and off. It is in <code>tools/run-tests.js</code>, which now runs fourteen suites.',
+    ],
+  },
+  {
     version: 'v1.28.74', date: 'September 2026', title: 'Names and guides, batch 1 of the programme and Extended packs', audience: 'dev',
     items: [
       'First batch of the 23 programme and Extended packs that were never read through: <strong>Apologizing — Pt. 2</strong>, <strong>Starting Conversations — Pt. 3</strong>, <strong>Pt. 4</strong> and <strong>Show Understanding — Pt. 2</strong>. Every strategy now has its own detailed guide pair, and every Collections and Challenges card whose label names a strategy inherits that strategy\'s back guide (164 cards). Sequence steps that name a strategy carry its guide (75 steps).',

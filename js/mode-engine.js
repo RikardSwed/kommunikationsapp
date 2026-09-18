@@ -1583,8 +1583,13 @@ const DS = (function () {
       mode.groups = cfg.getGroups() || [];
       if (!mode.groups.length) return;
       mode.gi = 0; mode.ii = 0;
-      // Guide toggle reflects the persisted choice for THIS pack + mode
-      if (guideToggleHf) guideToggleHf.checked = guideEnabled();
+      // Guide toggle reflects the persisted choice for THIS pack + mode.
+      // v1.28.75 — det här stod kvar på den ENDA gamla kryssrutan
+      // `guideToggleHf`, som v1.28.62 ersatte med två (detaljerad/enkel) och
+      // syncGuideTogglesHf(). Variabeln fanns inte längre, så raden kastade
+      // ReferenceError innan navToTraining() hann köra: handsfree-lägena gick
+      // helt enkelt inte att öppna. Ingen svit körde en handsfree-show.
+      syncGuideTogglesHf();
       hfInfoOpen = false; hideInfo();
       mode.pausedInGroup = null;
       navToTraining(cfg.screenId);
