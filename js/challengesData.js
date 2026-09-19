@@ -377,45 +377,45 @@ const challengesCollections = {
       name: "The One-Word Answerer",
       guideFront: "What kind of hard opener is this?",
       guideBack: "A possible response, with the type in brackets.",
-      description: "They give you almost nothing back — short, closed replies, then silence. The training is to notice you need a warmer, easier setup that hands them a concrete thread, rather than repeating the same opener. Best handled with an Action or Background setup.\n\nWhat it usually looks like:\n\n• \"Fine, thanks.\" and nothing after it.\n• Closed replies to everything you try.\n• You have asked twice and got two words back.\n\nTwo ways through:\n1. Action Setup — hand them something concrete to react to. \"I'm learning guitar — are you working on anything?\"\n2. Background Setup — give them a thread with a detail in it. \"I got the wrong bus and walked — how did you get here?\"\n\nMindset: repeating the same kind of opener louder will not help. Change what you are handing them, not how hard you are handing it.",
+      description: "They give you almost nothing back — short, closed replies, then silence. The training is to notice you need a warmer, easier setup that hands them a concrete thread, rather than repeating the same opener. Best handled with an Action or Arrival setup.\n\nWhat it usually looks like:\n\n• \"Fine, thanks.\" and nothing after it.\n• Closed replies to everything you try.\n• You have asked twice and got two words back.\n\nTwo ways through:\n1. Action Setup — hand them something concrete to react to. \"I'm learning guitar — are you working on anything?\"\n2. Arrival Setup — give them a thread with a detail in it. \"I got the wrong bus and walked — how did you get here?\"\n\nMindset: repeating the same kind of opener louder will not help. Change what you are handing them, not how hard you are handing it.",
       inputs: [
-        { q: "Your first setup got a one-word answer and then silence.", a: "\"Fair enough — I'll go first properly. I'm getting back into reading. Are you into books at all?\" [Action Setup]", bundle: 'pro' },
-        { q: "They keep giving short, closed replies.", a: "\"No pressure to chat, I'm bad at this too. I've just started running — do you do anything to unwind?\" [Action Setup]", bundle: 'pro' },
-        { q: "You opened, they answered, and it's gone quiet again.", a: "\"I came from work and my brain's fried. Where are you coming from?\" [Background Setup]", bundle: 'pro' },
-        { q: "Every question gets a \"yeah\" and nothing more.", a: "\"I'll make it easy — I'm here for the free coffee, honestly. What about you?\" [Purpose Setup]", bundle: 'pro' },
+        { q: "Your first setup got a one-word answer and then silence.", a: "\"Fair enough — I'll go first properly. I'm getting back into reading. Are you into books at all?\" [Action Setup]", guideBack: "What you're doing, then theirs", bundle: 'pro' },
+        { q: "They keep giving short, closed replies.", a: "\"No pressure to chat, I'm bad at this too. I've just started running — do you do anything to unwind?\" [Action Setup]", guideBack: "What you're doing, then theirs", bundle: 'pro' },
+        { q: "You opened, they answered, and it's gone quiet again.", a: "\"I came from work and my brain's fried. Where are you coming from?\" [Arrival Setup]", guideBack: "Your run-up, then theirs", bundle: 'pro' },
+        { q: "Every question gets a \"yeah\" and nothing more.", a: "\"I'll make it easy — I'm here for the free coffee, honestly. What about you?\" [Purpose Setup]", guideBack: "Your reason, then theirs", bundle: 'pro' },
       ]
     },
     {
       name: "The Flat Room",
       guideFront: "What kind of hard opener is this?",
       guideBack: "A possible response, with the type in brackets.",
-      description: "The mood is low and the energy's gone — nobody's really talking. The training is to notice the mood is the most honest thing to name, and open with a Status setup that invites them to say how they are. Best handled with a Status setup.\n\nWhat it usually looks like:\n\n• A long silence nobody wants to be the one to break.\n• Everyone on their phone or looking at the door.\n• Small talk that keeps dying after one exchange.\n\nTwo ways through:\n1. Status Setup — name the mood honestly. \"Quiet one tonight, isn't it — how's your week been?\"\n2. Opinion Setup — react to something present. \"This music is doing nothing for the room, is it?\"\n\nMindset: in a flat room the mood is the most honest thing available. Naming it is a relief to everyone, because they were all thinking it.",
+      description: "The mood is low and the energy's gone — nobody's really talking. The training is to notice the mood is the most honest thing to name, and open with a Feeling setup that invites them to say how they are. Best handled with a Feeling setup.\n\nWhat it usually looks like:\n\n• A long silence nobody wants to be the one to break.\n• Everyone on their phone or looking at the door.\n• Small talk that keeps dying after one exchange.\n\nTwo ways through:\n1. Feeling Setup — name the mood honestly. \"Quiet one tonight, isn't it — how's your week been?\"\n2. Opinion Setup — react to something present. \"This music is doing nothing for the room, is it?\"\n\nMindset: in a flat room the mood is the most honest thing available. Naming it is a relief to everyone, because they were all thinking it.",
       inputs: [
-        { q: "The whole room feels flat and low-energy.", a: "\"Everyone looks how I feel right now, honestly. Long week for you too?\" [Status Setup]", bundle: 'pro' },
-        { q: "Nobody's talking and the mood is heavy.", a: "\"I'm running on empty today, not going to lie. How's your day been?\" [Status Setup]", bundle: 'pro' },
-        { q: "It's early and everyone's half-asleep.", a: "\"I need three more coffees to be a person. You holding up?\" [Status Setup]", bundle: 'pro' },
+        { q: "The whole room feels flat and low-energy.", a: "\"Everyone looks how I feel right now, honestly. Long week for you too?\" [Feeling Setup]", guideBack: "How you are, then how they are", bundle: 'pro' },
+        { q: "Nobody's talking and the mood is heavy.", a: "\"I'm running on empty today, not going to lie. How's your day been?\" [Feeling Setup]", guideBack: "How you are, then how they are", bundle: 'pro' },
+        { q: "It's early and everyone's half-asleep.", a: "\"I need three more coffees to be a person. You holding up?\" [Feeling Setup]", guideBack: "How you are, then how they are", bundle: 'pro' },
       ]
     },
     {
       name: "The Frozen Moment",
       guideFront: "What kind of hard opener is this?",
       guideBack: "A possible response, with the type in brackets.",
-      description: "You've blanked — the pressure to say something clever has locked you up. The training is to drop the need to impress and open with a simple, honest Purpose setup. Best handled with a Purpose setup.\n\nWhat it usually feels like:\n\n• You have gone blank standing right next to someone.\n• Everything you think of sounds stupid in your head.\n• The pause has gone on long enough to be its own problem.\n\nTwo ways through:\n1. Purpose Setup — the lowest-effort honest opener there is. \"I came to meet a few people — what brought you?\"\n2. Status Setup — name the awkwardness itself. \"I never know how to start these — how's it going?\"\n\nMindset: the block is the need to be clever, not a lack of things to say. Drop the requirement and an ordinary sentence is enough.",
+      description: "You've blanked — the pressure to say something clever has locked you up. The training is to drop the need to impress and open with a simple, honest Purpose setup. Best handled with a Purpose setup.\n\nWhat it usually feels like:\n\n• You have gone blank standing right next to someone.\n• Everything you think of sounds stupid in your head.\n• The pause has gone on long enough to be its own problem.\n\nTwo ways through:\n1. Purpose Setup — the lowest-effort honest opener there is. \"I came to meet a few people — what brought you?\"\n2. Feeling Setup — name the awkwardness itself. \"I never know how to start these — how's it going?\"\n\nMindset: the block is the need to be clever, not a lack of things to say. Drop the requirement and an ordinary sentence is enough.",
       inputs: [
-        { q: "You've frozen and can't think of anything clever.", a: "\"I've got nothing smart to open with, so — I'm here for the free food. You?\" [Purpose Setup]", bundle: 'pro' },
-        { q: "Your mind goes blank the second you should speak.", a: "\"Okay, no clever line — I just came to meet a few people. What brings you?\" [Purpose Setup]", bundle: 'pro' },
-        { q: "You feel pressure to say something impressive.", a: "\"I'll skip the small talk — I'm honestly just here to enjoy this. Are you?\" [Opinion Setup]", bundle: 'pro' },
+        { q: "You've frozen and can't think of anything clever.", a: "\"I've got nothing smart to open with, so — I'm here for the free food. You?\" [Purpose Setup]", guideBack: "Your reason, then theirs", bundle: 'pro' },
+        { q: "Your mind goes blank the second you should speak.", a: "\"Okay, no clever line — I just came to meet a few people. What brings you?\" [Purpose Setup]", guideBack: "Your reason, then theirs", bundle: 'pro' },
+        { q: "You feel pressure to say something impressive.", a: "\"I'll skip the small talk — I'm honestly just here to enjoy this. Are you?\" [Opinion Setup]", guideBack: "Your view, then theirs", bundle: 'pro' },
       ]
     },
     {
       name: "The Distracted Person",
       guideFront: "What kind of hard opener is this?",
       guideBack: "A possible response, with the type in brackets.",
-      description: "They're only half there — on their phone, glancing around, not really tuned in. The training is to offer a small, vivid hook that's easy to react to rather than a flat opener. Best handled with a Background or Action setup.\n\nWhat it usually looks like:\n\n• They are on their phone or scanning the room.\n• They answer without really turning towards you.\n• You get agreement but no actual attention.\n\nTwo ways through:\n1. Background Setup — offer something vivid enough to look up for. \"I got the wrong bus and walked twenty minutes.\"\n2. Action Setup — give them something specific to react to. \"I'm halfway through redoing a kitchen and regretting it.\"\n\nMindset: a flat opener gets flat attention. Something small and vivid is easier to react to than something polite.",
+      description: "They're only half there — on their phone, glancing around, not really tuned in. The training is to offer a small, vivid hook that's easy to react to rather than a flat opener. Best handled with an Arrival or Action setup.\n\nWhat it usually looks like:\n\n• They are on their phone or scanning the room.\n• They answer without really turning towards you.\n• You get agreement but no actual attention.\n\nTwo ways through:\n1. Arrival Setup — offer something vivid enough to look up for. \"I got the wrong bus and walked twenty minutes.\"\n2. Action Setup — give them something specific to react to. \"I'm halfway through redoing a kitchen and regretting it.\"\n\nMindset: a flat opener gets flat attention. Something small and vivid is easier to react to than something polite.",
       inputs: [
-        { q: "The person is clearly distracted by their phone.", a: "\"I'll compete with the phone — I just got back from Portugal. Been anywhere good lately?\" [Background Setup]", bundle: 'pro' },
-        { q: "They keep glancing around the room.", a: "\"Busy in here, right? I nearly didn't find a seat. Where did you come in from?\" [Background Setup]", bundle: 'pro' },
-        { q: "They seem only half in the conversation.", a: "\"I'll be quick and interesting, promise — I've just started climbing. Do you do anything like that?\" [Action Setup]", bundle: 'pro' },
+        { q: "The person is clearly distracted by their phone.", a: "\"I'll compete with the phone — I just got back from Portugal. Been anywhere good lately?\" [Arrival Setup]", guideBack: "Your run-up, then theirs", bundle: 'pro' },
+        { q: "They keep glancing around the room.", a: "\"Busy in here, right? I nearly didn't find a seat. Where did you come in from?\" [Arrival Setup]", guideBack: "Your run-up, then theirs", bundle: 'pro' },
+        { q: "They seem only half in the conversation.", a: "\"I'll be quick and interesting, promise — I've just started climbing. Do you do anything like that?\" [Action Setup]", guideBack: "What you're doing, then theirs", bundle: 'pro' },
       ]
     },
   ],
@@ -2013,11 +2013,11 @@ const challengesCollections = {
       guideBack: "A possible response, with the strategy in brackets.",
       description: "They proposed something, you countered, and now the conversation is about whose idea wins rather than what should happen.\n\nOnce someone is defending, more argument makes them defend harder. Take the fight out by conceding the strongest part of their case and putting yours alongside rather than instead.\n\nMindset: leave their idea on the table. People argue for what you are trying to remove.",
       inputs: [
-        { q: "They are defending their approach more firmly than before.", a: "\"Yours is simpler to explain, and that's not nothing. Can I put a middle version next to it?\" [Acknowledge Before Suggesting]", bundle: 'pro' },
-        { q: "They have made a genuinely good point against you.", a: "\"That's the best argument against mine, and I don't have a great answer.\" [Acknowledge Before Suggesting]", bundle: 'pro' },
-        { q: "You are about to say \"yes, but\".", a: "\"The bit you're right about is the cost.\" [Acknowledge Before Suggesting]", bundle: 'pro' },
-        { q: "They ask why yours is better than theirs.", a: "\"Which would you rather be doing the week before the deadline?\" [Ask a Question Instead]", bundle: 'pro' },
-        { q: "It has become about who is right.", a: "\"I'd rather get this right than be right. What would you do?\" [Let Them Decide]", bundle: 'pro' },
+        { q: "They are defending their approach more firmly than before.", a: "\"Yours is simpler to explain, and that's not nothing. Can I put a middle version next to it?\" [Acknowledge Before Suggesting]", guideBack: "What's right about theirs, then yours", bundle: 'pro' },
+        { q: "They have made a genuinely good point against you.", a: "\"That's the best argument against mine, and I don't have a great answer.\" [Acknowledge Before Suggesting]", guideBack: "What's right about theirs, then yours", bundle: 'pro' },
+        { q: "You are about to say \"yes, but\".", a: "\"The bit you're right about is the cost.\" [Acknowledge Before Suggesting]", guideBack: "What's right about theirs, then yours", bundle: 'pro' },
+        { q: "They ask why yours is better than theirs.", a: "\"Which would you rather be doing the week before the deadline?\" [Ask a Question Instead]", guideBack: "A question that leads them there", bundle: 'pro' },
+        { q: "It has become about who is right.", a: "\"I'd rather get this right than be right. What would you do?\" [Let Them Decide]", guideBack: "The choice, left with them", bundle: 'pro' },
       ]
     },
     {
@@ -2026,11 +2026,11 @@ const challengesCollections = {
       guideBack: "A possible response, with the strategy in brackets.",
       description: "They have said your idea sounds good, and nothing happens. This is one of the most common outcomes, and it is almost never about the argument.\n\nThe obstacle is the size of the commitment, or the effort of starting, or something they have not said. Shrink the ask until saying yes costs almost nothing, and find out what is really in the way.\n\nMindset: they already agree. Stop arguing and start removing the obstacle.",
       inputs: [
-        { q: "They said it sounds good three weeks ago and nothing has moved.", a: "\"What's actually in the way? I don't think it's the idea.\" [Ask a Question Instead]", bundle: 'pro' },
-        { q: "The change feels too big to start.", a: "\"Not the whole thing. One team, one month.\" [Make It Easy to Say Yes]", bundle: 'pro' },
-        { q: "They are worried about being stuck with it.", a: "\"If it's worse in a month we go back. Nothing's permanent.\" [Make It Easy to Say Yes]", bundle: 'pro' },
-        { q: "They need someone else's agreement first.", a: "\"Would it help if I wrote it up so you can just forward it?\" [Make It Easy to Say Yes]", bundle: 'pro' },
-        { q: "You have raised it twice and nothing has happened.", a: "\"I'll stop asking. If you want it, tell me and I'll do the setting up.\" [Let Them Decide]", bundle: 'pro' },
+        { q: "They said it sounds good three weeks ago and nothing has moved.", a: "\"What's actually in the way? I don't think it's the idea.\" [Ask a Question Instead]", guideBack: "A question that leads them there", bundle: 'pro' },
+        { q: "The change feels too big to start.", a: "\"Not the whole thing. One team, one month.\" [Make It Easy to Say Yes]", guideBack: "A smaller, safer ask", bundle: 'pro' },
+        { q: "They are worried about being stuck with it.", a: "\"If it's worse in a month we go back. Nothing's permanent.\" [Make It Easy to Say Yes]", guideBack: "A smaller, safer ask", bundle: 'pro' },
+        { q: "They need someone else's agreement first.", a: "\"Would it help if I wrote it up so you can just forward it?\" [Make It Easy to Say Yes]", guideBack: "A smaller, safer ask", bundle: 'pro' },
+        { q: "You have raised it twice and nothing has happened.", a: "\"I'll stop asking. If you want it, tell me and I'll do the setting up.\" [Let Them Decide]", guideBack: "The choice, left with them", bundle: 'pro' },
       ]
     },
     {
@@ -2039,11 +2039,11 @@ const challengesCollections = {
       guideBack: "A possible response, with the strategy in brackets.",
       description: "A question with an obvious right answer is not a question. \"Don't you think it would be better if…\" is an argument with a question mark attached, and everyone can hear it.\n\nIt produces irritation rather than agreement, because the other person is being invited to agree that they were wrong. A real question — one whose answer you would accept even if it went against you — does the opposite.\n\nMindset: if you already know the answer you want, you are not asking.",
       inputs: [
-        { q: "You are about to ask something with only one acceptable answer.", a: "\"What's your read on the timing? I've got a view but I'd rather hear yours.\" [Ask a Question Instead]", bundle: 'pro' },
-        { q: "You want to open the question genuinely.", a: "\"If this goes wrong, where do you think it goes wrong?\" [Ask a Question Instead]", bundle: 'pro' },
-        { q: "They have noticed you are steering.", a: "\"Fair — that was a leading question. Let me just say what I think instead.\" [Acknowledge Before Suggesting]", bundle: 'pro' },
-        { q: "You genuinely do not know the answer.", a: "\"How would you do it, if it were yours?\" [Ask a Question Instead]", bundle: 'pro' },
-        { q: "Their answer goes against you and you want to take it seriously.", a: "\"That's not what I expected. Say more — I might be wrong about this.\" [Acknowledge Before Suggesting]", bundle: 'pro' },
+        { q: "You are about to ask something with only one acceptable answer.", a: "\"What's your read on the timing? I've got a view but I'd rather hear yours.\" [Ask a Question Instead]", guideBack: "A question that leads them there", bundle: 'pro' },
+        { q: "You want to open the question genuinely.", a: "\"If this goes wrong, where do you think it goes wrong?\" [Ask a Question Instead]", guideBack: "A question that leads them there", bundle: 'pro' },
+        { q: "They have noticed you are steering.", a: "\"Fair — that was a leading question. Let me just say what I think instead.\" [Acknowledge Before Suggesting]", guideBack: "What's right about theirs, then yours", bundle: 'pro' },
+        { q: "You genuinely do not know the answer.", a: "\"How would you do it, if it were yours?\" [Ask a Question Instead]", guideBack: "A question that leads them there", bundle: 'pro' },
+        { q: "Their answer goes against you and you want to take it seriously.", a: "\"That's not what I expected. Say more — I might be wrong about this.\" [Acknowledge Before Suggesting]", guideBack: "What's right about theirs, then yours", bundle: 'pro' },
       ]
     },
     {
@@ -2052,11 +2052,11 @@ const challengesCollections = {
       guideBack: "A possible response, with the strategy in brackets.",
       description: "It is their money, their job, their body, their family. You can have a view and you can say it once, and after that continuing is pressure rather than persuasion.\n\nSay what you think, make it easy for them to come back to you, and then genuinely stop. The strongest thing you can do for someone making their own decision is to be the person who did not push.\n\nMindset: one clear go, then hand it over and mean it.",
       inputs: [
-        { q: "A friend is making a choice you think is a mistake.", a: "\"I'd do it differently, and it's completely your call.\" [Let Them Decide]", bundle: 'pro' },
-        { q: "You have already said your piece once.", a: "(say nothing) [Let Them Decide]", bundle: 'pro' },
-        { q: "They ask what you would do.", a: "\"I'd take the other one. But I'd not be the one living with it.\" [Let Them Decide]", bundle: 'pro' },
-        { q: "You want to leave the door open without pressing.", a: "\"If you ever want to talk it through, I'm around. I'll not bring it up again.\" [Let Them Decide]", bundle: 'pro' },
-        { q: "It is their area at work and not yours.", a: "\"It's your bit. I only wanted the other option said out loud once.\" [Acknowledge Before Suggesting]", bundle: 'pro' },
+        { q: "A friend is making a choice you think is a mistake.", a: "\"I'd do it differently, and it's completely your call.\" [Let Them Decide]", guideBack: "The choice, left with them", bundle: 'pro' },
+        { q: "You have already said your piece once.", a: "(say nothing) [Let Them Decide]", guideBack: "The choice, left with them", bundle: 'pro' },
+        { q: "They ask what you would do.", a: "\"I'd take the other one. But I'd not be the one living with it.\" [Let Them Decide]", guideBack: "The choice, left with them", bundle: 'pro' },
+        { q: "You want to leave the door open without pressing.", a: "\"If you ever want to talk it through, I'm around. I'll not bring it up again.\" [Let Them Decide]", guideBack: "The choice, left with them", bundle: 'pro' },
+        { q: "It is their area at work and not yours.", a: "\"It's your bit. I only wanted the other option said out loud once.\" [Acknowledge Before Suggesting]", guideBack: "What's right about theirs, then yours", bundle: 'pro' },
       ]
     },
     {
@@ -2065,11 +2065,11 @@ const challengesCollections = {
       guideBack: "A possible response, with the strategy in brackets.",
       description: "A refusal handled badly closes the subject permanently. Arguing with a no confirms that the person was right to be defensive, and it makes the next conversation harder than this one.\n\nAccepting it out loud costs you nothing and keeps the door open. One honest question afterwards is fair; a second attempt at the same argument is not.\n\nMindset: how you take a no decides whether you get a second conversation.",
       inputs: [
-        { q: "They have said no firmly.", a: "\"Fair enough. You know your own situation better than I do.\" [Acknowledge Before Suggesting]", bundle: 'pro' },
-        { q: "You want to understand the refusal without challenging it.", a: "\"Can I ask what the deciding thing was? Not to argue — I'd just like to know.\" [Ask a Question Instead]", bundle: 'pro' },
-        { q: "You think a smaller version might still work.", a: "\"Would a much smaller version be a different answer, or is it a no to all of it?\" [Make It Easy to Say Yes]", bundle: 'pro' },
-        { q: "You are about to make the same case again.", a: "\"I've made my case and you've said no. I'll leave it.\" [Let Them Decide]", bundle: 'pro' },
-        { q: "You want to leave it somewhere it could return.", a: "\"If anything changes, I'd still be up for it. No pressure either way.\" [Let Them Decide]", bundle: 'pro' },
+        { q: "They have said no firmly.", a: "\"Fair enough. You know your own situation better than I do.\" [Acknowledge Before Suggesting]", guideBack: "What's right about theirs, then yours", bundle: 'pro' },
+        { q: "You want to understand the refusal without challenging it.", a: "\"Can I ask what the deciding thing was? Not to argue — I'd just like to know.\" [Ask a Question Instead]", guideBack: "A question that leads them there", bundle: 'pro' },
+        { q: "You think a smaller version might still work.", a: "\"Would a much smaller version be a different answer, or is it a no to all of it?\" [Make It Easy to Say Yes]", guideBack: "A smaller, safer ask", bundle: 'pro' },
+        { q: "You are about to make the same case again.", a: "\"I've made my case and you've said no. I'll leave it.\" [Let Them Decide]", guideBack: "The choice, left with them", bundle: 'pro' },
+        { q: "You want to leave it somewhere it could return.", a: "\"If anything changes, I'd still be up for it. No pressure either way.\" [Let Them Decide]", guideBack: "The choice, left with them", bundle: 'pro' },
       ]
     },
   ],
@@ -3357,32 +3357,6 @@ const challengesCollections = {
   ],
   showunderstanding2: [
     {
-      name: "You Got It Wrong",
-      guideFront: "What has gone wrong here?",
-      guideBack: "A possible response, with the move in brackets.",
-      description: "You said their view back and it was not their view. This is not a failure — it is what the checking is for — but it needs a light touch, because a wrong version defended is much worse than a wrong version dropped.\n\nWhat it usually looks like:\n\n• \"No, not quite\" and then a longer explanation.\n• You explained why your version was reasonable.\n• They are now correcting you rather than saying their thing.\n\nTwo ways through:\n1. Drop it immediately and ask again — the correction is the useful part.\n2. Name what you had backwards — shows exactly where you were wrong.\n\nMindset: the correction is the point of asking. Do not defend a version you offered precisely so it could be corrected.",
-      inputs: [
-        { q: "They said \"no, not quite\" and you started explaining yourself.", a: "\"Forget my version. Say it again and I'll shut up.\" [drop it]", bundle: 'pro' },
-        { q: "You had the whole thing backwards.", a: "\"So I had it inside out — it's the not-being-asked, not the work.\" [name it]", bundle: 'pro' },
-        { q: "You are about to defend your reading.", a: "\"I'd rather be corrected than right. What's the actual shape of it?\" [drop it]", bundle: 'pro' },
-        { q: "You have got it wrong twice.", a: "\"I keep missing it. Give me the one-sentence version and I'll stop guessing.\" [drop it]", bundle: 'pro' },
-        { q: "They corrected you and moved on quickly.", a: "\"Hang on — say that bit again. That's the part I had wrong.\" [name it]", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "The Summary Became a Speech",
-      guideFront: "What has gone wrong here?",
-      guideBack: "A possible response, with the move in brackets.",
-      description: "You started summarising and kept going, and by the end you had said more than they did. A summary that takes as long as the original is a repetition with your name on it.\n\nWhat it usually looks like:\n\n• More than three points.\n• You added your own interpretation while summarising.\n• They are waiting politely for you to finish.\n\nTwo ways through:\n1. Cut to three and check — \"the main things are…\"\n2. Hand it straight back — \"have I missed anything?\" ends it properly.\n\nMindset: three clauses and a question. Anything longer and it stops being a summary.",
-      inputs: [
-        { q: "Your summary has gone on longer than their account.", a: "\"I'll cut that down: timing, workload, being asked last. Yes?\" [Sum It Up]", guideBack: "Their whole account, in short", bundle: 'pro' },
-        { q: "You slipped an interpretation into the summary.", a: "\"That last bit was mine, not yours. Ignore it — have I got the three right?\" [hand it back]", bundle: 'pro' },
-        { q: "You are listing everything they said.", a: "\"What are the three that actually matter here?\" [Sum It Up]", guideBack: "Their whole account, in short", bundle: 'pro' },
-        { q: "They are waiting politely for you to finish.", a: "\"Sorry. Short version — have I missed anything?\" [hand it back]", bundle: 'pro' },
-        { q: "You summarised and then answered your own summary.", a: "\"I've answered my version rather than yours. Correct me first.\" [hand it back]", bundle: 'pro' },
-      ]
-    },
-    {
       name: "Your Share Became Your Turn",
       guideFront: "What has gone wrong here?",
       guideBack: "A possible response, with the move in brackets.",
@@ -3401,24 +3375,11 @@ const challengesCollections = {
       guideBack: "A possible response, with the move in brackets.",
       description: "You named a shared value in the moment because it was the warm thing to say, and you do not actually hold it. This gets found out, usually in the next conversation, and it costs more than the disagreement would have.\n\nWhat it usually looks like:\n\n• You agreed quickly and slightly too warmly.\n• You are hoping the subject does not come back.\n• You would say something different to somebody else.\n\nTwo ways through:\n1. Separate the value from the conclusion — you can often agree with one honestly.\n2. Say the honest half — \"I'd have minded too, though I'd probably have done nothing about it.\"\n\nMindset: agree with what is true. There is nearly always a true version of agreement available, and it is worth more than the generous one.",
       inputs: [
-        { q: "You agreed with a principle you do not actually hold.", a: "\"Actually, let me be honest — I'd have let that one go. But I can see why you didn't.\" [honest half]", bundle: 'pro' },
-        { q: "You agree with the value but not the conclusion.", a: "\"I'm with you on the principle. Whether leaving is the answer, I'm less sure.\" [separate them]", bundle: 'pro' },
-        { q: "You agreed too quickly to move the conversation on.", a: "\"I said that a bit fast. What I do agree with is the being-told part.\" [honest half]", bundle: 'pro' },
-        { q: "You would say something different to somebody else.", a: "\"I'll say the awkward version: I think they were careless rather than malicious.\" [honest half]", bundle: 'pro' },
-        { q: "They are looking for agreement you cannot give.", a: "\"I can't tell you they were wrong. I can tell you I'd have been just as annoyed.\" [separate them]", bundle: 'pro' },
-      ]
-    },
-    {
-      name: "Checking Turned Into Interrupting",
-      guideFront: "What has gone wrong here?",
-      guideBack: "A possible response, with the move in brackets.",
-      description: "You checked your understanding three times in five minutes and each check stopped them mid-flow. The move is right and the frequency is wrong.\n\nWhat it usually looks like:\n\n• They keep losing their thread.\n• You have summarised twice before the account finished.\n• Every paragraph is followed by \"so what you're saying is…\".\n\nTwo ways through:\n1. Save it for the end of a stretch — checking belongs at a pause, not inside one.\n2. Use a minimal signal instead — \"mm\", a nod, \"right\" keeps them going.\n\nMindset: check at the pauses, not at the commas. One good check beats three that break the flow.",
-      inputs: [
-        { q: "They keep losing their thread after your checks.", a: "(say nothing this time — let them finish the stretch) [save it]", bundle: 'pro' },
-        { q: "You have summarised twice before they finished.", a: "\"Carry on — I'll check I've got it when you've said the lot.\" [save it]", bundle: 'pro' },
-        { q: "Every paragraph gets a \"so what you're saying is\".", a: "\"Mm. Go on.\" [minimal signal]", bundle: 'pro' },
-        { q: "You want to check but they are mid-flow.", a: "(wait for the end of the stretch, then check) [save it]", bundle: 'pro' },
-        { q: "You interrupted a long account with a summary.", a: "\"Sorry, that could have waited. Where were you?\" [save it]", bundle: 'pro' },
+        { q: "You agreed with a principle you do not actually hold.", a: "\"Honestly, I'd have let that one go. What I do share is not wanting to be taken for granted.\" [Shared Value]", guideBack: "The principle you both hold", bundle: 'pro' },
+        { q: "You agree with the value but not the conclusion.", a: "\"I'm with you on the principle. Whether leaving is the answer, I'm less sure.\" [Shared Value]", guideBack: "The principle you both hold", bundle: 'pro' },
+        { q: "You agreed too quickly to move the conversation on.", a: "\"I said that a bit fast. What I do agree with is the being-told part.\" [Shared Value]", guideBack: "The principle you both hold", bundle: 'pro' },
+        { q: "You would say something different to somebody else.", a: "\"I'll say the awkward version: I think it was careless, not malicious. But being told matters to me too.\" [Shared Value]", guideBack: "The principle you both hold", bundle: 'pro' },
+        { q: "They are looking for agreement you cannot give.", a: "\"I can't tell you they were wrong. I can tell you I'd have been just as annoyed.\" [Shared Feeling]", guideBack: "The same emotion, from your side", bundle: 'pro' },
       ]
     },
   ],
@@ -3742,11 +3703,11 @@ const challengesCollections = {
       guideBack: "A possible response, with the move in brackets.",
       description: "They asked what something is, you told them what it is, and it helped nobody — because what they wanted was whether it had anything to do with them. The repair is to give a different W rather than a better version of the same one.\n\nWhat it usually looks like:\n\n• They nod and nothing happens behind it.\n• They ask the same question again in slightly different words.\n• They could see the object while you defined it.\n\nTwo ways through:\n1. Switch to Who or When — the two that answer relevance.\n2. Ask which part they are stuck on — six words, no cost.\n\nMindset: a correct answer that helps nobody is still a failed explanation.",
       inputs: [
-        { q: "You defined the thing and they still look blank.", a: "\"That was the what, and it didn't land. The point is you stop chasing people.\" [switch W]", bundle: 'pro' },
-        { q: "They asked what it is while holding it.", a: "\"You can see what it is — it's for dark mornings, mainly.\" [switch W]", bundle: 'pro' },
-        { q: "They have asked the same question twice.", a: "\"I'm answering the wrong bit. Which part is unclear — what it does, or whether you'd want one?\" [ask]", bundle: 'pro' },
-        { q: "You are about to repeat the definition more slowly.", a: "\"Let me come at it differently: it's for people with more than one calendar.\" [switch W]", bundle: 'pro' },
-        { q: "They asked in a shop, deciding between two.", a: "\"For what you'd use it for, they're the same. The difference only matters if you carry it daily.\" [switch W]", bundle: 'pro' },
+        { q: "You defined the thing and they still look blank.", a: "\"That was the what, and it didn't land. The point is you stop chasing people.\" [The W They Need]", guideBack: "The answer they're really after, or a check", bundle: 'pro' },
+        { q: "They asked what it is while holding it.", a: "\"You can see what it is — it's for dark mornings, mainly.\" [The W They Need]", guideBack: "The answer they're really after, or a check", bundle: 'pro' },
+        { q: "They have asked the same question twice.", a: "\"I'm answering the wrong bit. Which part is unclear — what it does, or whether you'd want one?\" [The W They Need]", guideBack: "The answer they're really after, or a check", bundle: 'pro' },
+        { q: "You are about to repeat the definition more slowly.", a: "\"Let me come at it differently: it's for people with more than one calendar.\" [The W They Need]", guideBack: "The answer they're really after, or a check", bundle: 'pro' },
+        { q: "They asked in a shop, deciding between two.", a: "\"For what you'd use it for, they're the same. The difference only matters if you carry it daily.\" [The W They Need]", guideBack: "The answer they're really after, or a check", bundle: 'pro' },
       ]
     },
     {
@@ -3755,11 +3716,11 @@ const challengesCollections = {
       guideBack: "A possible response, with the move in brackets.",
       description: "You started long, and by the time you reached the useful part they had stopped following. The repair is to stop where you are, give the one-sentence version, and let them ask.\n\nWhat it usually looks like:\n\n• Three \"rights\" in a row.\n• You are two minutes in and have not reached the point.\n• You began with background because it felt thorough.\n\nTwo ways through:\n1. Land it in one sentence — say the short version now, late.\n2. Hand them the choice — \"want the rest, or is that enough?\"\n\nMindset: nobody has ever complained that an explanation was too short. They ask, if it was.",
       inputs: [
-        { q: "They have said \"right\" three times.", a: "\"I'll land this: it's a shared list where every line has one owner.\" [land it]", bundle: 'pro' },
-        { q: "You are two minutes in and still on the background.", a: "\"I've buried the point. The point is it stops things sitting unclaimed.\" [land it]", bundle: 'pro' },
-        { q: "You can hear yourself going on.", a: "\"That's more than you asked for. Do you want the rest or is that plenty?\" [hand them the choice]", bundle: 'pro' },
-        { q: "You started with the history of the thing.", a: "\"Skip all that — what it does is give every task one name against it.\" [land it]", bundle: 'pro' },
-        { q: "Someone asked a small question and got four minutes.", a: "\"Short answer, which I should have led with: yes, and it takes ten seconds.\" [land it]", bundle: 'pro' },
+        { q: "They have said \"right\" three times.", a: "\"I'll land this: it's a shared list where every line has one owner.\" [Short Version First]", guideBack: "One sentence, with more on request", bundle: 'pro' },
+        { q: "You are two minutes in and still on the background.", a: "\"I've buried the point. The point is it stops things sitting unclaimed.\" [Short Version First]", guideBack: "One sentence, with more on request", bundle: 'pro' },
+        { q: "You can hear yourself going on.", a: "\"That's more than you asked for. Do you want the rest or is that plenty?\" [Short Version First]", guideBack: "One sentence, with more on request", bundle: 'pro' },
+        { q: "You started with the history of the thing.", a: "\"Skip all that — what it does is give every task one name against it.\" [Short Version First]", guideBack: "One sentence, with more on request", bundle: 'pro' },
+        { q: "Someone asked a small question and got four minutes.", a: "\"Short answer, which I should have led with: yes, and it takes ten seconds.\" [Short Version First]", guideBack: "One sentence, with more on request", bundle: 'pro' },
       ]
     },
     {
@@ -3768,11 +3729,11 @@ const challengesCollections = {
       guideBack: "A possible response, with the move in brackets.",
       description: "Your explanation makes the thing sound useful to everyone, which is exactly what an advertisement sounds like. The repair is to name who it is not for, which makes the rest believable again.\n\nWhat it usually looks like:\n\n• You have listed four benefits and no drawbacks.\n• They have gone politely non-committal.\n• You would not actually recommend it to them, and you have not said so.\n\nTwo ways through:\n1. Name who it is not for — the honest half of Who.\n2. Say where they sit — directly, even when it is a no.\n\nMindset: an explanation with no \"not for you\" in it is a pitch, and people hear the difference immediately.",
       inputs: [
-        { q: "You have made it sound useful to absolutely everyone.", a: "\"To be fair, if you cook twice a week it's just a big object in a cupboard.\" [who it is not for]", bundle: 'pro' },
-        { q: "They have gone politely non-committal.", a: "\"Honestly, for what you do, I don't think you'd use it.\" [say where they sit]", bundle: 'pro' },
-        { q: "You are describing something you love to someone who would not use it.", a: "\"I'm biased. For your setup it'd be solving a problem you don't have.\" [say where they sit]", bundle: 'pro' },
-        { q: "They ask if they should get one and you are not sure.", a: "\"It depends on one thing — do you carry it daily? If not, no.\" [name the condition]", bundle: 'pro' },
-        { q: "Every sentence has been a benefit.", a: "\"The catch is it takes about a week before it saves you any time at all.\" [name the drawback]", bundle: 'pro' },
+        { q: "You have made it sound useful to absolutely everyone.", a: "\"To be fair, if you cook twice a week it's just a big object in a cupboard.\" [Who It Is For]", guideBack: "Who it suits, and who can skip it", bundle: 'pro' },
+        { q: "They have gone politely non-committal.", a: "\"Honestly, for what you do, I don't think you'd use it.\" [Who It Is For]", guideBack: "Who it suits, and who can skip it", bundle: 'pro' },
+        { q: "You are describing something you love to someone who would not use it.", a: "\"I'm biased. For your setup it'd be solving a problem you don't have.\" [Who It Is For]", guideBack: "Who it suits, and who can skip it", bundle: 'pro' },
+        { q: "They ask if they should get one and you are not sure.", a: "\"It depends on one thing — do you carry it daily? If not, no.\" [Who It Is For]", guideBack: "Who it suits, and who can skip it", bundle: 'pro' },
+        { q: "Every sentence has been a benefit.", a: "\"Honestly, it's for people who can wait a week before it pays off.\" [Who It Is For]", guideBack: "Who it suits, and who can skip it", bundle: 'pro' },
       ]
     },
     {
@@ -3781,11 +3742,11 @@ const challengesCollections = {
       guideBack: "A possible response, with the move in brackets.",
       description: "You have explained the mechanics of something with an unfamiliar shape, and none of it stuck because they had nowhere to put it. The repair is to go back and give the setting and the group first.\n\nWhat it usually looks like:\n\n• They are following each sentence and retaining none of them.\n• You began with how it works.\n• They ask \"but what is it for?\" after a perfectly clear description.\n\nTwo ways through:\n1. Give it neighbours — what it sits between, before, after.\n2. Give the setting first, then the mechanics.\n\nMindset: give it a shelf before you give it a manual.",
       inputs: [
-        { q: "They followed every sentence and retained nothing.", a: "\"Let me place it first: it's an office thing, for teams that share rooms.\" [setting first]", bundle: 'pro' },
-        { q: "You opened with how it works.", a: "\"That's the how. Where it sits is right after the draft, before anyone else reads it.\" [neighbours]", bundle: 'pro' },
-        { q: "They ask what it's for after a clear description.", a: "\"Fair — it belongs to the booking bit. Everything before that stays the same.\" [setting first]", bundle: 'pro' },
-        { q: "The thing has no obvious category.", a: "\"Closest thing is a kitchen timer, but for people rather than food.\" [neighbours]", bundle: 'pro' },
-        { q: "They cannot tell whether it is a tool or a service.", a: "\"It's a service that looks like a tool. That confuses everybody at first.\" [neighbours]", bundle: 'pro' },
+        { q: "They followed every sentence and retained nothing.", a: "\"Let me place it first: it's an office thing, for teams that share rooms.\" [Where It Belongs]", guideBack: "The setting it fits into", bundle: 'pro' },
+        { q: "You opened with how it works.", a: "\"That's the how. Where it sits is right after the draft, before anyone else reads it.\" [Where It Belongs]", guideBack: "The setting it fits into", bundle: 'pro' },
+        { q: "They ask what it's for after a clear description.", a: "\"Fair — it belongs to the booking bit. Everything before that stays the same.\" [Where It Belongs]", guideBack: "The setting it fits into", bundle: 'pro' },
+        { q: "The thing has no obvious category.", a: "\"It sits where a kitchen timer would, but for people rather than food.\" [Where It Belongs]", guideBack: "The setting it fits into", bundle: 'pro' },
+        { q: "They cannot tell whether it is a tool or a service.", a: "\"It belongs with services, even though it looks like a tool.\" [Where It Belongs]", guideBack: "The setting it fits into", bundle: 'pro' },
       ]
     },
     {
@@ -3794,11 +3755,11 @@ const challengesCollections = {
       guideBack: "A possible response, with the move in brackets.",
       description: "You pitched it at the wrong depth — too technical for the person in front of you, or so simplified that it sounded evasive. The repair is to name the level out loud and let them choose.\n\nWhat it usually looks like:\n\n• Their questions are more basic than your answers.\n• Or: they are visibly waiting for you to get past the obvious.\n• You are guessing what they know and guessing wrong in both directions.\n\nTwo ways through:\n1. Ask what they already know — one sentence, and it saves five.\n2. Offer the two versions — \"the simple one or the real one?\"\n\nMindset: you cannot guess someone's starting point reliably. Asking takes six words.",
       inputs: [
-        { q: "Their questions are more basic than your answers.", a: "\"I've pitched this too high. Start again: it's a list, shared between people.\" [simpler]", bundle: 'pro' },
-        { q: "They are waiting for you to get past the obvious.", a: "\"You know all this — skip to the bit that's different, which is the ownership rule.\" [go deeper]", bundle: 'pro' },
-        { q: "You have no idea what they already know.", a: "\"How much of this do you already deal with? I'll start from there.\" [ask]", bundle: 'pro' },
-        { q: "You are explaining to two people with very different backgrounds.", a: "\"I'll do the simple version, and grab me afterwards for the detail.\" [offer both]", bundle: 'pro' },
-        { q: "You simplified so hard it sounded evasive.", a: "\"That was too neat. The honest version is messier — there are two systems and they don't quite agree.\" [go deeper]", bundle: 'pro' },
+        { q: "Their questions are more basic than your answers.", a: "\"I've pitched this too high. Start again: it's a list, shared between people.\" [Short Version First]", guideBack: "One sentence, with more on request", bundle: 'pro' },
+        { q: "They are waiting for you to get past the obvious.", a: "\"You know all this — skip to the bit that's different, which is the ownership rule.\" [Short Version First]", guideBack: "One sentence, with more on request", bundle: 'pro' },
+        { q: "You have no idea what they already know.", a: "\"How much of this do you already deal with? I'll start from there.\" [Short Version First]", guideBack: "One sentence, with more on request", bundle: 'pro' },
+        { q: "You are explaining to two people with very different backgrounds.", a: "\"I'll do the simple version, and grab me afterwards for the detail.\" [Short Version First]", guideBack: "One sentence, with more on request", bundle: 'pro' },
+        { q: "You simplified so hard it sounded evasive.", a: "\"That was too neat. The honest version is messier — there are two systems and they don't quite agree.\" [Short Version First]", guideBack: "One sentence, with more on request", bundle: 'pro' },
       ]
     },
   ],
@@ -5359,14 +5320,14 @@ const challengesCollections = {
       guideBack: "One way it could sound",
       description: "Establishing adult-to-adult relationships with parents who try to use childhood guilt-trips or rules to control your schedule and choices.\n\n• Self-Disclosure — share your feelings of independence and worry honestly\n• Asserting Wants — state your adult decisions clearly without giving excuses\n• Workable Compromise — offer alternative ways to connect that respect your limits\n\nWhat goes wrong: adult children react with childhood excuses or angry shouting, which only validates the parents' belief that they are still irresponsible.\n\nMindset: your schedule is your own decision; you do not need parental permission.",
       inputs: [
-        { q: "Your mother cries on the phone: \"If you really loved us, you would visit every single weekend.\"", a: "\"I love you, Mom, but I don't want to visit every weekend.\" [Asserting Wants]", bundle: 'pro' },
-        { q: "Your father snaps: \"You changed your mind about our holiday plans. That is completely flaky.\"", a: "\"I did change my mind, yes. I have decided to stay home.\" [Asserting Wants]", bundle: 'pro' },
-        { q: "Your parent demands to know why you won't let them manage your savings account.", a: "\"I understand you want to help, but I want to manage my own savings.\" [Asserting Wants]", bundle: 'pro' },
-        { q: "Your mother sighs: \"You're growing so distant from us since you moved out.\"", a: "\"I want my space, but I will call you every Sunday evening to catch up.\" [Workable Compromise]", bundle: 'pro' },
-        { q: "Your father lectures you: \"This career change is completely illogical. You are throwing away your degree.\"", a: "\"I understand you're worried, but I want to try this new path.\" [Asserting Wants]", bundle: 'pro' },
-        { q: "Your mother grumbles: \"If you don't come over this Friday, your father will be devastated.\"", a: "\"I can't come Friday, but I can take you both out for lunch on Sunday.\" [Workable Compromise]", bundle: 'pro' },
-        { q: "Your parent demands to know why you are seeing a therapist.", a: "\"I have some things I want to work through, but I don't want to discuss them.\" [Asserting Wants]", bundle: 'pro' },
-        { q: "Your father mutters: \"You are acting very selfishly by choosing your own schedule.\"", a: "\"I can see why you think that, but I want to prioritize my rest this weekend.\" [Asserting Wants]", bundle: 'pro' },
+        { q: "Your mother cries on the phone: \"If you really loved us, you would visit every single weekend.\"", a: "\"I love you, Mom, but I don't want to visit every weekend.\" [Asserting Wants]", guideBack: "A plain I want or I don't want", bundle: 'pro' },
+        { q: "Your father snaps: \"You changed your mind about our holiday plans. That is completely flaky.\"", a: "\"I did change my mind, yes. I have decided to stay home.\" [Asserting Wants]", guideBack: "A plain I want or I don't want", bundle: 'pro' },
+        { q: "Your parent demands to know why you won't let them manage your savings account.", a: "\"I understand you want to help, but I want to manage my own savings.\" [Asserting Wants]", guideBack: "A plain I want or I don't want", bundle: 'pro' },
+        { q: "Your mother sighs: \"You're growing so distant from us since you moved out.\"", a: "\"I want my space, but I will call you every Sunday evening to catch up.\" [Workable Compromise]", guideBack: "An offer that keeps your limit", bundle: 'pro' },
+        { q: "Your father lectures you: \"This career change is completely illogical. You are throwing away your degree.\"", a: "\"I understand you're worried, but I want to try this new path.\" [Asserting Wants]", guideBack: "A plain I want or I don't want", bundle: 'pro' },
+        { q: "Your mother grumbles: \"If you don't come over this Friday, your father will be devastated.\"", a: "\"I can't come Friday, but I can take you both out for lunch on Sunday.\" [Workable Compromise]", guideBack: "An offer that keeps your limit", bundle: 'pro' },
+        { q: "Your parent demands to know why you are seeing a therapist.", a: "\"I have some things I want to work through, but I don't want to discuss them.\" [Asserting Wants]", guideBack: "A plain I want or I don't want", bundle: 'pro' },
+        { q: "Your father mutters: \"You are acting very selfishly by choosing your own schedule.\"", a: "\"I can see why you think that, but I want to prioritize my rest this weekend.\" [Asserting Wants]", guideBack: "A plain I want or I don't want", bundle: 'pro' },
       ]
     },
     {
@@ -5375,14 +5336,14 @@ const challengesCollections = {
       guideBack: "One way it could sound",
       description: "Negotiating space, borrowing items, and chores with roommates, friends, or colleagues who treat your compliance as a given.\n\n• Asserting Wants — state your boundaries clearly when items or spaces are requested\n• Self-Disclosure — explain your personal feelings or worries about your belongings\n• Workable Compromise — propose balanced trade-offs for shared tasks\n\nWhat goes wrong: roommates drop passive-aggressive hints or agree to chores they never do, leading to a slow buildup of resentment.\n\nMindset: equal relationships require clear boundaries and active negotiation.",
       inputs: [
-        { q: "A roommate asks if they can borrow your favorite camera for their weekend trip.", a: "\"I know you'll be careful, but I don't want to lend my camera out.\" [Asserting Wants]", bundle: 'pro' },
-        { q: "A colleague asks if they can take your shift because they have a concert.", a: "\"I can't cover your shift, I want to keep my evening free.\" [Asserting Wants]", bundle: 'pro' },
-        { q: "A friend grumbles: \"Why won't you let me borrow your car? I'm a safe driver.\"", a: "\"You are safe, but I just feel very anxious when my car is out.\" [Self-Disclosure]", bundle: 'pro' },
-        { q: "A roommate complains that you haven't taken out the bins this week.", a: "\"I can't take them down right now, but I will do it before I leave tomorrow morning.\" [Workable Compromise]", bundle: 'pro' },
-        { q: "A colleague wants to borrow your desk space while theirs is being painted.", a: "\"I don't want to share my desk, but you can use the empty table next to me.\" [Workable Compromise]", bundle: 'pro' },
-        { q: "A friend asks if they can crash on your sofa for two whole weeks.", a: "\"You can stay for three days, but I don't want a long-term guest right now.\" [Workable Compromise]", bundle: 'pro' },
-        { q: "A neighbor asks to borrow your lawnmower, which you just repaired.", a: "\"I don't want to lend my lawnmower, but I can help you mow your front yard on Saturday.\" [Workable Compromise]", bundle: 'pro' },
-        { q: "A roommate demands that you buy the expensive organic milk for the shared fridge.", a: "\"I don't want to pay for organic milk, let's buy our own cartons instead.\" [Workable Compromise]", bundle: 'pro' },
+        { q: "A roommate asks if they can borrow your favorite camera for their weekend trip.", a: "\"I know you'll be careful, but I don't want to lend my camera out.\" [Asserting Wants]", guideBack: "A plain I want or I don't want", bundle: 'pro' },
+        { q: "A colleague asks if they can take your shift because they have a concert.", a: "\"I can't cover your shift, I want to keep my evening free.\" [Asserting Wants]", guideBack: "A plain I want or I don't want", bundle: 'pro' },
+        { q: "A friend grumbles: \"Why won't you let me borrow your car? I'm a safe driver.\"", a: "\"You are safe, but I just feel very anxious when my car is out.\" [Self-Disclosure]", guideBack: "Your own feeling or limit, said openly", bundle: 'pro' },
+        { q: "A roommate complains that you haven't taken out the bins this week.", a: "\"I can't take them down right now, but I will do it before I leave tomorrow morning.\" [Workable Compromise]", guideBack: "An offer that keeps your limit", bundle: 'pro' },
+        { q: "A colleague wants to borrow your desk space while theirs is being painted.", a: "\"I don't want to share my desk, but you can use the empty table next to me.\" [Workable Compromise]", guideBack: "An offer that keeps your limit", bundle: 'pro' },
+        { q: "A friend asks if they can crash on your sofa for two whole weeks.", a: "\"You can stay for three days, but I don't want a long-term guest right now.\" [Workable Compromise]", guideBack: "An offer that keeps your limit", bundle: 'pro' },
+        { q: "A neighbor asks to borrow your lawnmower, which you just repaired.", a: "\"I don't want to lend my lawnmower, but I can help you mow your front yard on Saturday.\" [Workable Compromise]", guideBack: "An offer that keeps your limit", bundle: 'pro' },
+        { q: "A roommate demands that you buy the expensive organic milk for the shared fridge.", a: "\"I don't want to pay for organic milk, let's buy our own cartons instead.\" [Workable Compromise]", guideBack: "An offer that keeps your limit", bundle: 'pro' },
       ]
     },
     {
@@ -5391,14 +5352,14 @@ const challengesCollections = {
       guideBack: "One way it could sound",
       description: "Confidently asserting physical and emotional boundaries under romantic or sexual pressure, and dealing with manipulative \"hurt\" ploys.\n\n• Asserting Wants — declare your boundaries plainly and repeatedly\n• Self-Disclosure — state your true feelings, hesitations, or lack of readiness\n• Workable Compromise — propose romantic alternatives that keep you safe\n\nWhat goes wrong: people feel so pressured by \"hurt\" looks or romantic flattery that they comply with physical acts they do not want.\n\nMindset: your body is your own; you do not owe anyone sexual compliance.",
       inputs: [
-        { q: "A date asks you up to their apartment and starts pulling you toward the bed.", a: "\"I like you, but I don't want to go to bed with you tonight.\" [Asserting Wants]", bundle: 'pro' },
-        { q: "A romantic partner sighs: \"If you really loved me, you wouldn't hesitate.\"", a: "\"I do love you, but I still don't want to rush this.\" [Asserting Wants]", bundle: 'pro' },
-        { q: "A date grumbles: \"Why did you invite me up if you didn't want to sleep with me?\"", a: "\"I understand you're disappointed, but I only wanted to talk and I don't want to have sex tonight.\" [Self-Disclosure]", bundle: 'pro' },
-        { q: "A partner pushes for sex when you feel completely exhausted.", a: "\"I'm just incredibly pooped today and I want to just sleep.\" [Self-Disclosure]", bundle: 'pro' },
-        { q: "A date complains: \"You're so cold and robotic when you say no.\"", a: "\"I can see why you think that, but I still want to stop.\" [Asserting Wants]", bundle: 'pro' },
-        { q: "A partner wants to try group sex, which makes you feel very insecure.", a: "\"I don't want to do group sex, but I want to talk about how we can spice up our own bed.\" [Workable Compromise]", bundle: 'pro' },
-        { q: "A date asks how much you actually like them during a physical push.", a: "\"I really like you, but I am still not sure about making a commitment.\" [Self-Disclosure]", bundle: 'pro' },
-        { q: "A partner wants to go to a nudist beach, but you feel terrified of being exposed.", a: "\"I want to go with you, but I want us to agree to keep our clothes on.\" [Workable Compromise]", bundle: 'pro' },
+        { q: "A date asks you up to their apartment and starts pulling you toward the bed.", a: "\"I like you, but I don't want to go to bed with you tonight.\" [Asserting Wants]", guideBack: "A plain I want or I don't want", bundle: 'pro' },
+        { q: "A romantic partner sighs: \"If you really loved me, you wouldn't hesitate.\"", a: "\"I do love you, but I still don't want to rush this.\" [Asserting Wants]", guideBack: "A plain I want or I don't want", bundle: 'pro' },
+        { q: "A date grumbles: \"Why did you invite me up if you didn't want to sleep with me?\"", a: "\"I understand you're disappointed, but I only wanted to talk and I don't want to have sex tonight.\" [Self-Disclosure]", guideBack: "Your own feeling or limit, said openly", bundle: 'pro' },
+        { q: "A partner pushes for sex when you feel completely exhausted.", a: "\"I'm just incredibly pooped today and I want to just sleep.\" [Self-Disclosure]", guideBack: "Your own feeling or limit, said openly", bundle: 'pro' },
+        { q: "A date complains: \"You're so cold and robotic when you say no.\"", a: "\"I can see why you think that, but I still want to stop.\" [Asserting Wants]", guideBack: "A plain I want or I don't want", bundle: 'pro' },
+        { q: "A partner wants to try group sex, which makes you feel very insecure.", a: "\"I don't want to do group sex, but I want to talk about how we can spice up our own bed.\" [Workable Compromise]", guideBack: "An offer that keeps your limit", bundle: 'pro' },
+        { q: "A date asks how much you actually like them during a physical push.", a: "\"I really like you, but I am still not sure about making a commitment.\" [Self-Disclosure]", guideBack: "Your own feeling or limit, said openly", bundle: 'pro' },
+        { q: "A partner wants to go to a nudist beach, but you feel terrified of being exposed.", a: "\"I want to go with you, but I want us to agree to keep our clothes on.\" [Workable Compromise]", guideBack: "An offer that keeps your limit", bundle: 'pro' },
       ]
     },
     {
@@ -5407,14 +5368,14 @@ const challengesCollections = {
       guideBack: "One way it could sound",
       description: "Confronting stale routines, renegotiating household tasks, and discussing lifestyle changes with a long-term spouse.\n\n• Asserting Wants — state your desires for change and new goals clearly\n• Self-Disclosure — reveal your feelings of resentment, tiredness, or excitement\n• Workable Compromise — negotiate practical trade-offs for chores and schedules\n\nWhat goes wrong: spouses use nagging or silent withdrawal to express dissatisfaction, causing the relationship to drift apart.\n\nMindset: change is healthy; daily cooperation requires active, nondefensive negotiation.",
       inputs: [
-        { q: "Your spouse complains that your sex life is getting extremely routine.", a: "\"You're right, it is routine, and I want us to change how we do things.\" [Asserting Wants]", bundle: 'pro' },
-        { q: "Your partner grumbles about you getting a job because of the busy schedule.", a: "\"I want to work, let's see how we can split the household tasks.\" [Workable Compromise]", bundle: 'pro' },
-        { q: "Your spouse sighs: \"You always find something wrong when I clean the house.\"", a: "\"You're right. I do that, and I guess I've been feeling very stressed lately.\" [Self-Disclosure]", bundle: 'pro' },
-        { q: "Your partner mutters: \"We haven't been out for an evening in months.\"", a: "\"I've been feeling really disconnected too, let's plan a date night for Thursday.\" [Workable Compromise]", bundle: 'pro' },
-        { q: "Your spouse demands: \"Why can't you just let things be? Our routine is fine.\"", a: "\"It might be fine for you, but I feel very trapped in this routine.\" [Self-Disclosure]", bundle: 'pro' },
-        { q: "Your partner complains that they have to do all the grocery shopping.", a: "\"I can take over the grocery shopping if you handle the laundry.\" [Workable Compromise]", bundle: 'pro' },
-        { q: "Your spouse sighs: \"You always bring up past arguments to punish me.\"", a: "\"I guess I do that sometimes. That's a crappy way for me to behave.\" [Self-Disclosure]", bundle: 'pro' },
-        { q: "Your partner grumbles that you are spending too much money on your classes.", a: "\"These classes are very important to me and I want to keep taking them.\" [Asserting Wants]", bundle: 'pro' },
+        { q: "Your spouse complains that your sex life is getting extremely routine.", a: "\"You're right, it is routine, and I want us to change how we do things.\" [Asserting Wants]", guideBack: "A plain I want or I don't want", bundle: 'pro' },
+        { q: "Your partner grumbles about you getting a job because of the busy schedule.", a: "\"I want to work, let's see how we can split the household tasks.\" [Workable Compromise]", guideBack: "An offer that keeps your limit", bundle: 'pro' },
+        { q: "Your spouse sighs: \"You always find something wrong when I clean the house.\"", a: "\"You're right. I do that, and I guess I've been feeling very stressed lately.\" [Self-Disclosure]", guideBack: "Your own feeling or limit, said openly", bundle: 'pro' },
+        { q: "Your partner mutters: \"We haven't been out for an evening in months.\"", a: "\"I've been feeling really disconnected too, let's plan a date night for Thursday.\" [Workable Compromise]", guideBack: "An offer that keeps your limit", bundle: 'pro' },
+        { q: "Your spouse demands: \"Why can't you just let things be? Our routine is fine.\"", a: "\"It might be fine for you, but I feel very trapped in this routine.\" [Self-Disclosure]", guideBack: "Your own feeling or limit, said openly", bundle: 'pro' },
+        { q: "Your partner complains that they have to do all the grocery shopping.", a: "\"I can take over the grocery shopping if you handle the laundry.\" [Workable Compromise]", guideBack: "An offer that keeps your limit", bundle: 'pro' },
+        { q: "Your spouse sighs: \"You always bring up past arguments to punish me.\"", a: "\"I guess I do that sometimes. That's a crappy way for me to behave.\" [Self-Disclosure]", guideBack: "Your own feeling or limit, said openly", bundle: 'pro' },
+        { q: "Your partner grumbles that you are spending too much money on your classes.", a: "\"These classes are very important to me and I want to keep taking them.\" [Asserting Wants]", guideBack: "A plain I want or I don't want", bundle: 'pro' },
       ]
     },
     {
@@ -5423,14 +5384,14 @@ const challengesCollections = {
       guideBack: "One way it could sound",
       description: "Navigating social events, dealing with strangers, and building rapport without feeling the pressure to perform.\n\n• Free Information — listen for unprompted cues to open conversational doors\n• Self-Disclosure — share simple, ordinary details about yourself to build comfort\n• Workable Compromise — find middle grounds in social pressure or group plans\n\nWhat goes wrong: people stay silent because they are trying to think of \"interesting\" things to say, which makes the interaction stall.\n\nMindset: ordinary is the target; give them simple material to work with.",
       inputs: [
-        { q: "A stranger at a wedding reception notes they came all the way from Kalmar.", a: "\"Kalmar — what took you down there?\" [Free Information]", bundle: 'pro' },
-        { q: "Someone asks what you do, and you feel awkward explaining your job.", a: "\"I teach English. Mostly to teenagers, which is exactly as loud as it sounds.\" [Self-Disclosure]", bundle: 'pro' },
-        { q: "A peer at a party asks how your weekend was, and you did nothing.", a: "\"Not much, honestly. I did nothing on purpose and it was excellent.\" [Self-Disclosure]", bundle: 'pro' },
-        { q: "An acquaintance notes they are trying a disastrous new recipe.", a: "\"Disastrous? What happened with the recipe?\" [Free Information]", bundle: 'pro' },
-        { q: "A group wants to go to a very expensive restaurant, but you are budgeting.", a: "\"I want to join you, but I don't want to spend that much. Can we go to the bistro instead?\" [Workable Compromise]", bundle: 'pro' },
-        { q: "A colleague mentions they have a huge collection of festival wristbands.", a: "\"That's a serious collection — which one was the best night?\" [Free Information]", bundle: 'pro' },
-        { q: "Someone asks how your week has been, and you had a printer dispute.", a: "\"Fine — well, fine apart from spending most of it arguing with a printer.\" [Self-Disclosure]", bundle: 'pro' },
-        { q: "An acquaintance wants to stay out late, but you are exhausted.", a: "\"I want to head home now, but let's grab coffee tomorrow morning.\" [Workable Compromise]", bundle: 'pro' },
+        { q: "A stranger at a wedding reception notes they came all the way from Kalmar.", a: "\"Kalmar — what took you down there?\" [Free Information]", guideBack: "A question about what they let slip", bundle: 'pro' },
+        { q: "Someone asks what you do, and you feel awkward explaining your job.", a: "\"I teach English. Mostly to teenagers, which is exactly as loud as it sounds.\" [Self-Disclosure]", guideBack: "Your own feeling or limit, said openly", bundle: 'pro' },
+        { q: "A peer at a party asks how your weekend was, and you did nothing.", a: "\"Not much, honestly. I did nothing on purpose and it was excellent.\" [Self-Disclosure]", guideBack: "Your own feeling or limit, said openly", bundle: 'pro' },
+        { q: "An acquaintance notes they are trying a disastrous new recipe.", a: "\"Disastrous? What happened with the recipe?\" [Free Information]", guideBack: "A question about what they let slip", bundle: 'pro' },
+        { q: "A group wants to go to a very expensive restaurant, but you are budgeting.", a: "\"I want to join you, but I don't want to spend that much. Can we go to the bistro instead?\" [Workable Compromise]", guideBack: "An offer that keeps your limit", bundle: 'pro' },
+        { q: "A colleague mentions they have a huge collection of festival wristbands.", a: "\"That's a serious collection — which one was the best night?\" [Free Information]", guideBack: "A question about what they let slip", bundle: 'pro' },
+        { q: "Someone asks how your week has been, and you had a printer dispute.", a: "\"Fine — well, fine apart from spending most of it arguing with a printer.\" [Self-Disclosure]", guideBack: "Your own feeling or limit, said openly", bundle: 'pro' },
+        { q: "An acquaintance wants to stay out late, but you are exhausted.", a: "\"I want to head home now, but let's grab coffee tomorrow morning.\" [Workable Compromise]", guideBack: "An offer that keeps your limit", bundle: 'pro' },
       ]
     },
   ],

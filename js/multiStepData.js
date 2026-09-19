@@ -1305,13 +1305,13 @@ const multiStepCollections = {
       name: "Statement into Story",
       guideFront: "Say your part, then open it up — and stay with their answer.",
       guideBack: "A line you could say at this step.",
-      description: "Start with a background setup, hand over the question, and then build on the thread they give you rather than resetting. Good when you want the conversation to deepen rather than ping-pong. Steps: 1) Background — where you're coming from, 2) Ask — turn it to them, 3) Build — pick up a detail and go further.\n\nThe shape of the whole thing:\n1. \"I came straight from work and I'm starving.\"\n2. \"Where have you come from?\"\n3. \"Two trains? That's a long way to come for a Tuesday.\"\n\nWhy this order: a background setup gives them a thread rather than a yes or no, and picking up one detail from their answer is what stops the conversation resetting after every exchange.\n\nMindset: aim for depth, not ping-pong. One detail followed properly beats four questions answered briefly.",
+      description: "Start with a background setup, hand over the question, and then build on the thread they give you rather than resetting. Good when you want the conversation to deepen rather than ping-pong. Steps: 1) Arrival — where you're coming from, 2) Ask — turn it to them, 3) Build — pick up a detail and go further.\n\nThe shape of the whole thing:\n1. \"I came straight from work and I'm starving.\"\n2. \"Where have you come from?\"\n3. \"Two trains? That's a long way to come for a Tuesday.\"\n\nWhy this order: a background setup gives them a thread rather than a yes or no, and picking up one detail from their answer is what stops the conversation resetting after every exchange.\n\nMindset: aim for depth, not ping-pong. One detail followed properly beats four questions answered briefly.",
       inputs: [
         {
           bundle: 'pro',
           situation: "Arriving at a dinner where you only know the host.",
           steps: [
-            { front: "Step 1 · Background — you want to open warmly", back: "\"I've come straight from a football match, still buzzing.\"" },
+            { front: "Step 1 · Arrival — you want to open warmly", back: "\"I've come straight from a football match, still buzzing.\"" },
             { front: "Step 2 · Ask — turn it to them", back: "\"How do you know everyone here?\"" },
             { front: "Step 3 · Build — they say \"oh, I grew up with the host\"", back: "\"Grew up together? Okay, I need one embarrassing story.\"" },
           ]
@@ -3431,20 +3431,20 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "You have proposed a change to how a shared process works. The first objection is about the time it would take.",
           steps: [
-            { front: "Acknowledge Before Suggesting — they say, \"It'd take ages to set up.\"", back: "\"It would take a couple of days. That's a real cost and I'm not going to pretend otherwise.\"" },
-            { front: "Ask a Question Instead — they say, \"And who's doing that?\"", back: "\"That's the bit I hadn't worked out. What would make it manageable?\"" },
-            { front: "Make It Easy to Say Yes — they say, \"Not me in October, that's for sure.\"", back: "\"Then not October. What about one team in the new year?\"" },
-            { front: "Let Them Decide — they say, \"That I could look at.\"", back: "\"Have a think over Christmas. I'll not raise it again before then.\"" },
+            { front: "Acknowledge Before Suggesting — they say, \"It'd take ages to set up.\"", back: "\"It would take a couple of days. That's a real cost and I'm not going to pretend otherwise.\"", guideFront: "Grant their point first when...", guideBack: "What's right about theirs, then yours" },
+            { front: "Ask a Question Instead — they say, \"And who's doing that?\"", back: "\"That's the bit I hadn't worked out. What would make it manageable?\"", guideFront: "Let them find it themselves when...", guideBack: "A question that leads them there" },
+            { front: "Make It Easy to Say Yes — they say, \"Not me in October, that's for sure.\"", back: "\"Then not October. What about one team in the new year?\"", guideFront: "Lower the ask when...", guideBack: "A smaller, safer ask" },
+            { front: "Let Them Decide — they say, \"That I could look at.\"", back: "\"Have a think over Christmas. I'll not raise it again before then.\"", guideFront: "Hand the decision over when...", guideBack: "The choice, left with them" },
           ]
         },
         {
           bundle: 'pro',
           situation: "A colleague said your idea was good three weeks ago. Nothing has happened since.",
           steps: [
-            { front: "Ask a Question Instead — you catch them in the kitchen.", back: "\"You said this sounded good a few weeks back. What's actually in the way?\"" },
-            { front: "Acknowledge Before Suggesting — they say, \"Nothing. I just haven't got to it.\"", back: "\"Fair enough — it's not urgent for you and it is for me. That's the whole difference.\"" },
-            { front: "Make It Easy to Say Yes — they say, \"I'd need a proper afternoon for it.\"", back: "\"You wouldn't, actually. Give me twenty minutes and I'll do the setting up.\"" },
-            { front: "Let Them Decide — they say, \"Alright, Thursday?\"", back: "\"Thursday. And if it's still not happening after that, I'll stop asking.\"" },
+            { front: "Ask a Question Instead — you catch them in the kitchen.", back: "\"You said this sounded good a few weeks back. What's actually in the way?\"", guideFront: "Let them find it themselves when...", guideBack: "A question that leads them there" },
+            { front: "Acknowledge Before Suggesting — they say, \"Nothing. I just haven't got to it.\"", back: "\"Fair enough — it's not urgent for you and it is for me. That's the whole difference.\"", guideFront: "Grant their point first when...", guideBack: "What's right about theirs, then yours" },
+            { front: "Make It Easy to Say Yes — they say, \"I'd need a proper afternoon for it.\"", back: "\"You wouldn't, actually. Give me twenty minutes and I'll do the setting up.\"", guideFront: "Lower the ask when...", guideBack: "A smaller, safer ask" },
+            { front: "Let Them Decide — they say, \"Alright, Thursday?\"", back: "\"Thursday. And if it's still not happening after that, I'll stop asking.\"", guideFront: "Hand the decision over when...", guideBack: "The choice, left with them" },
           ]
         },
       ]
@@ -3459,20 +3459,20 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "A friend has said no to an idea you think would suit them.",
           steps: [
-            { front: "Acknowledge Before Suggesting — they say, \"It's just not for me.\"", back: "\"Fair enough. You know yourself better than I do.\"" },
-            { front: "Ask a Question Instead — they say, \"You don't sound convinced.\"", back: "\"I'm not, but that's my problem. What's the bit that puts you off?\"" },
-            { front: "Make It Easy to Say Yes — they say, \"I'd feel like an idiot, mostly.\"", back: "\"Come to one and leave after ten minutes if you hate it. That's the whole offer.\"" },
-            { front: "Let Them Decide — they say, \"Maybe. I'll think about it.\"", back: "\"Do. And if the answer's no I'll shut up about it, promise.\"" },
+            { front: "Acknowledge Before Suggesting — they say, \"It's just not for me.\"", back: "\"Fair enough. You know yourself better than I do.\"", guideFront: "Grant their point first when...", guideBack: "What's right about theirs, then yours" },
+            { front: "Ask a Question Instead — they say, \"You don't sound convinced.\"", back: "\"I'm not, but that's my problem. What's the bit that puts you off?\"", guideFront: "Let them find it themselves when...", guideBack: "A question that leads them there" },
+            { front: "Make It Easy to Say Yes — they say, \"I'd feel like an idiot, mostly.\"", back: "\"Come to one and leave after ten minutes if you hate it. That's the whole offer.\"", guideFront: "Lower the ask when...", guideBack: "A smaller, safer ask" },
+            { front: "Let Them Decide — they say, \"Maybe. I'll think about it.\"", back: "\"Do. And if the answer's no I'll shut up about it, promise.\"", guideFront: "Hand the decision over when...", guideBack: "The choice, left with them" },
           ]
         },
         {
           bundle: 'pro',
           situation: "A decision has gone the other way and you disagree with it.",
           steps: [
-            { front: "Acknowledge Before Suggesting — they say, \"It's decided, I'm afraid.\"", back: "\"Understood. And the reasoning makes sense from where you're sitting.\"" },
-            { front: "Ask a Question Instead — they say, \"You're not happy about it.\"", back: "\"Not entirely. Can I ask what would have made a difference?\"" },
-            { front: "Make It Easy to Say Yes — they say, \"Numbers, probably. Actual ones.\"", back: "\"Then let me bring numbers in March rather than arguing now.\"" },
-            { front: "Let Them Decide — they say, \"That I'd look at.\"", back: "\"Good. I'll leave it there and get on with this one properly.\"" },
+            { front: "Acknowledge Before Suggesting — they say, \"It's decided, I'm afraid.\"", back: "\"Understood. And the reasoning makes sense from where you're sitting.\"", guideFront: "Grant their point first when...", guideBack: "What's right about theirs, then yours" },
+            { front: "Ask a Question Instead — they say, \"You're not happy about it.\"", back: "\"Not entirely. Can I ask what would have made a difference?\"", guideFront: "Let them find it themselves when...", guideBack: "A question that leads them there" },
+            { front: "Make It Easy to Say Yes — they say, \"Numbers, probably. Actual ones.\"", back: "\"Then let me bring numbers in March rather than arguing now.\"", guideFront: "Lower the ask when...", guideBack: "A smaller, safer ask" },
+            { front: "Let Them Decide — they say, \"That I'd look at.\"", back: "\"Good. I'll leave it there and get on with this one properly.\"", guideFront: "Hand the decision over when...", guideBack: "The choice, left with them" },
           ]
         },
       ]
@@ -3487,19 +3487,19 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "You have been making the same case for twenty minutes and something has shifted from persuading to winning.",
           steps: [
-            { front: "Acknowledge Before Suggesting — they say, \"You've been on this a while.\"", back: "\"I have. And I think I'm arguing because I started, not because I'm right.\"" },
-            { front: "Ask a Question Instead — they say, \"So what do you actually think?\"", back: "\"Honestly? I'm not sure any more. What's your read on it?\"" },
-            { front: "Let Them Decide — they say, \"I'd leave it as it is.\"", back: "\"Then let's leave it. I'll stop.\"" },
+            { front: "Acknowledge Before Suggesting — they say, \"You've been on this a while.\"", back: "\"I have. And I think I'm arguing because I started, not because I'm right.\"", guideFront: "Grant their point first when...", guideBack: "What's right about theirs, then yours" },
+            { front: "Ask a Question Instead — they say, \"So what do you actually think?\"", back: "\"Honestly? I'm not sure any more. What's your read on it?\"", guideFront: "Let them find it themselves when...", guideBack: "A question that leads them there" },
+            { front: "Let Them Decide — they say, \"I'd leave it as it is.\"", back: "\"Then let's leave it. I'll stop.\"", guideFront: "Hand the decision over when...", guideBack: "The choice, left with them" },
           ]
         },
         {
           bundle: 'pro',
           situation: "A friend is making a choice about their own life that you think is a mistake.",
           steps: [
-            { front: "Ask a Question Instead — they tell you what they have decided.", back: "\"What's making you lean that way? I'd like to understand it.\"" },
-            { front: "Acknowledge Before Suggesting — they explain their reasoning.", back: "\"That's more thought-through than I'd assumed. I still see it differently.\"" },
-            { front: "Let Them Decide — they say, \"You think I'm wrong.\"", back: "\"I'd do it differently. It's completely your call and I'll back it either way.\"" },
-            { front: "Let Them Decide — they say, \"You don't have to pretend to agree.\"", back: "\"I'm not. I've said my bit once and that's the end of it from me.\"" },
+            { front: "Ask a Question Instead — they tell you what they have decided.", back: "\"What's making you lean that way? I'd like to understand it.\"", guideFront: "Let them find it themselves when...", guideBack: "A question that leads them there" },
+            { front: "Acknowledge Before Suggesting — they explain their reasoning.", back: "\"That's more thought-through than I'd assumed. I still see it differently.\"", guideFront: "Grant their point first when...", guideBack: "What's right about theirs, then yours" },
+            { front: "Let Them Decide — they say, \"You think I'm wrong.\"", back: "\"I'd do it differently. It's completely your call and I'll back it either way.\"", guideFront: "Hand the decision over when...", guideBack: "The choice, left with them" },
+            { front: "Let Them Decide — they say, \"You don't have to pretend to agree.\"", back: "\"I'm not. I've said my bit once and that's the end of it from me.\"", guideFront: "Hand the decision over when...", guideBack: "The choice, left with them" },
           ]
         },
       ]
@@ -8229,27 +8229,27 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "You are standing at a high table next to someone who is looking at a well-worn festival lanyard.",
           steps: [
-            { front: "Free Information — they note they've been to four of these.", back: "\"Four — so you actually know what happens after lunch?\"" },
-            { front: "Self-Disclosure — they say, \"Mostly napping. Is this your first?\"", back: "\"First one. I said yes in March, when I had no idea how busy I'd be.\"" },
-            { front: "Free Information — they laugh and say they're in marketing.", back: "\"Marketing? What specifically do you work on?\"" },
+            { front: "Free Information — they note they've been to four of these.", back: "\"Four — so you actually know what happens after lunch?\"", guideFront: "Follow up a detail they dropped when...", guideBack: "A question about what they let slip" },
+            { front: "Self-Disclosure — they say, \"Mostly napping. Is this your first?\"", back: "\"First one. I said yes in March, when I had no idea how busy I'd be.\"", guideFront: "Share how it is for you when...", guideBack: "Your own feeling or limit, said openly" },
+            { front: "Free Information — they laugh and say they're in marketing.", back: "\"Marketing? What specifically do you work on?\"", guideFront: "Follow up a detail they dropped when...", guideBack: "A question about what they let slip" },
           ]
         },
         {
           bundle: 'pro',
           situation: "A colleague in the breakroom is looking at a picture of a flat loaf of bread on their phone.",
           steps: [
-            { front: "Free Information — they grumble that they spent the whole Saturday on it.", back: "\"A whole Saturday? Is it a very complicated process?\"" },
-            { front: "Self-Disclosure — they say it takes hours of folding.", back: "\"I tried making bread once. It was a complete disaster and tasted like cardboard.\"" },
-            { front: "Free Information — they smile and say they used a sourdough starter.", back: "\"Sourdough? How did you get into making that specifically?\"" },
+            { front: "Free Information — they grumble that they spent the whole Saturday on it.", back: "\"A whole Saturday? Is it a very complicated process?\"", guideFront: "Follow up a detail they dropped when...", guideBack: "A question about what they let slip" },
+            { front: "Self-Disclosure — they say it takes hours of folding.", back: "\"I tried making bread once. It was a complete disaster and tasted like cardboard.\"", guideFront: "Share how it is for you when...", guideBack: "Your own feeling or limit, said openly" },
+            { front: "Free Information — they smile and say they used a sourdough starter.", back: "\"Sourdough? How did you get into making that specifically?\"", guideFront: "Follow up a detail they dropped when...", guideBack: "A question about what they let slip" },
           ]
         },
         {
           bundle: 'pro',
           situation: "You are at the hotel gym at 6:00 AM, and one other person is half-asleep on the exercise bike.",
           steps: [
-            { front: "Free Information — they note they packed their gym clothes by mistake.", back: "\"So you're another one who believed yourself when you packed the gym gear.\"" },
-            { front: "Self-Disclosure — they smile and say they usually sleep in.", back: "\"Same here. I spent ten minutes staring at my shoes before coming down.\"" },
-            { front: "Free Information — they say they are preparing for a hike.", back: "\"A hike? Where are you planning on going?\"" },
+            { front: "Free Information — they note they packed their gym clothes by mistake.", back: "\"So you're another one who believed yourself when you packed the gym gear.\"", guideFront: "Follow up a detail they dropped when...", guideBack: "A question about what they let slip" },
+            { front: "Self-Disclosure — they smile and say they usually sleep in.", back: "\"Same here. I spent ten minutes staring at my shoes before coming down.\"", guideFront: "Share how it is for you when...", guideBack: "Your own feeling or limit, said openly" },
+            { front: "Free Information — they say they are preparing for a hike.", back: "\"A hike? Where are you planning on going?\"", guideFront: "Follow up a detail they dropped when...", guideBack: "A question about what they let slip" },
           ]
         },
       ]
@@ -8264,27 +8264,27 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "A close friend asks to borrow your car for the weekend, which makes you feel very anxious.",
           steps: [
-            { front: "Self-Disclosure — they explain their own car is broken.", back: "\"I know you're a great driver, but I just worry when I lend my car out.\"" },
-            { front: "Asserting Wants — they ask if they can have it just for Saturday.", back: "\"I understand you're in a jam, but I don't want to lend my car today.\"" },
-            { front: "Workable Compromise — they sigh and look stuck.", back: "\"How about if I drive you to the station myself this afternoon?\"" },
+            { front: "Self-Disclosure — they explain their own car is broken.", back: "\"I know you're a great driver, but I just worry when I lend my car out.\"", guideFront: "Share how it is for you when...", guideBack: "Your own feeling or limit, said openly" },
+            { front: "Asserting Wants — they ask if they can have it just for Saturday.", back: "\"I understand you're in a jam, but I don't want to lend my car today.\"", guideFront: "Declare the preference plainly when...", guideBack: "A plain I want or I don't want" },
+            { front: "Workable Compromise — they sigh and look stuck.", back: "\"How about if I drive you to the station myself this afternoon?\"", guideFront: "Find something that works for both when...", guideBack: "An offer that keeps your limit" },
           ]
         },
         {
           bundle: 'pro',
           situation: "You paid for concert tickets weeks ago, your friend has not paid you back, and you want to bring it up.",
           steps: [
-            { front: "Self-Disclosure — you have a natural pause during coffee.", back: "\"I've been feeling a bit awkward about bringing this up, but I need to ask.\"" },
-            { front: "Asserting Wants — they look surprised.", back: "\"I want you to send me your half of the ticket money this week.\"" },
-            { front: "Workable Compromise — they apologize and say they are tight until payday.", back: "\"How about if you send half now and the rest on the 26th?\"" },
+            { front: "Self-Disclosure — you have a natural pause during coffee.", back: "\"I've been feeling a bit awkward about bringing this up, but I need to ask.\"", guideFront: "Share how it is for you when...", guideBack: "Your own feeling or limit, said openly" },
+            { front: "Asserting Wants — they look surprised.", back: "\"I want you to send me your half of the ticket money this week.\"", guideFront: "Declare the preference plainly when...", guideBack: "A plain I want or I don't want" },
+            { front: "Workable Compromise — they apologize and say they are tight until payday.", back: "\"How about if you send half now and the rest on the 26th?\"", guideFront: "Find something that works for both when...", guideBack: "An offer that keeps your limit" },
           ]
         },
         {
           bundle: 'pro',
           situation: "Your parent rings and demands that you come over for a massive family dinner that ruins your free weekend.",
           steps: [
-            { front: "Self-Disclosure — they sigh that you are always busy.", back: "\"I've had a really exhausting month and I've been feeling totally drained.\"" },
-            { front: "Asserting Wants — they complain that everyone else is coming.", back: "\"I understand, but I want to keep this weekend free to rest.\"" },
-            { front: "Workable Compromise — they sound hurt.", back: "\"How about if I come over next Saturday instead and help you with the garden?\"" },
+            { front: "Self-Disclosure — they sigh that you are always busy.", back: "\"I've had a really exhausting month and I've been feeling totally drained.\"", guideFront: "Share how it is for you when...", guideBack: "Your own feeling or limit, said openly" },
+            { front: "Asserting Wants — they complain that everyone else is coming.", back: "\"I understand, but I want to keep this weekend free to rest.\"", guideFront: "Declare the preference plainly when...", guideBack: "A plain I want or I don't want" },
+            { front: "Workable Compromise — they sound hurt.", back: "\"How about if I come over next Saturday instead and help you with the garden?\"", guideFront: "Find something that works for both when...", guideBack: "An offer that keeps your limit" },
           ]
         },
       ]
@@ -8299,27 +8299,27 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "You have been a stay-at-home parent, and you want to start looking for a job.",
           steps: [
-            { front: "Asserting Wants — your partner is reading the news.", back: "\"I want to get a job and start working next month.\"" },
-            { front: "Self-Disclosure — they look worried about the household schedule.", back: "\"I feel like I've been getting very dependent and cramped staying home all day.\"" },
-            { front: "Workable Compromise — they ask who will handle the kids.", back: "\"How about if I do the marketing and the kids take on more chores?\"" },
+            { front: "Asserting Wants — your partner is reading the news.", back: "\"I want to get a job and start working next month.\"", guideFront: "Declare the preference plainly when...", guideBack: "A plain I want or I don't want" },
+            { front: "Self-Disclosure — they look worried about the household schedule.", back: "\"I feel like I've been getting very dependent and cramped staying home all day.\"", guideFront: "Share how it is for you when...", guideBack: "Your own feeling or limit, said openly" },
+            { front: "Workable Compromise — they ask who will handle the kids.", back: "\"How about if I do the marketing and the kids take on more chores?\"", guideFront: "Find something that works for both when...", guideBack: "An offer that keeps your limit" },
           ]
         },
         {
           bundle: 'pro',
           situation: "You are doing almost all the cooking and cleaning, and you want to change the division of labor.",
           steps: [
-            { front: "Asserting Wants — your partner sits down after dinner.", back: "\"I want us to change how we divide the cooking and cleaning.\"" },
-            { front: "Self-Disclosure — they look surprised.", back: "\"I've been feeling extremely stressed and resentful about doing it on my own.\"" },
-            { front: "Workable Compromise — they ask what they should do.", back: "\"How about if I handle the cooking and you take care of the cleaning?\"" },
+            { front: "Asserting Wants — your partner sits down after dinner.", back: "\"I want us to change how we divide the cooking and cleaning.\"", guideFront: "Declare the preference plainly when...", guideBack: "A plain I want or I don't want" },
+            { front: "Self-Disclosure — they look surprised.", back: "\"I've been feeling extremely stressed and resentful about doing it on my own.\"", guideFront: "Share how it is for you when...", guideBack: "Your own feeling or limit, said openly" },
+            { front: "Workable Compromise — they ask what they should do.", back: "\"How about if I handle the cooking and you take care of the cleaning?\"", guideFront: "Find something that works for both when...", guideBack: "An offer that keeps your limit" },
           ]
         },
         {
           bundle: 'pro',
           situation: "Your partner wants to go to bed, but you feel tired and want more emotional connection first.",
           steps: [
-            { front: "Asserting Wants — they lean in for a kiss.", back: "\"I love you, but I don't want to go to bed right now.\"" },
-            { front: "Self-Disclosure — they look slightly hurt.", back: "\"I've been feeling a bit disconnected lately and I want us to just talk first.\"" },
-            { front: "Workable Compromise — they sit back.", back: "\"How about if we put on some music and talk for a bit first?\"" },
+            { front: "Asserting Wants — they lean in for a kiss.", back: "\"I love you, but I don't want to go to bed right now.\"", guideFront: "Declare the preference plainly when...", guideBack: "A plain I want or I don't want" },
+            { front: "Self-Disclosure — they look slightly hurt.", back: "\"I've been feeling a bit disconnected lately and I want us to just talk first.\"", guideFront: "Share how it is for you when...", guideBack: "Your own feeling or limit, said openly" },
+            { front: "Workable Compromise — they sit back.", back: "\"How about if we put on some music and talk for a bit first?\"", guideFront: "Find something that works for both when...", guideBack: "An offer that keeps your limit" },
           ]
         },
       ]

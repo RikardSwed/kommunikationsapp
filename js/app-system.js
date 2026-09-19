@@ -3930,6 +3930,16 @@ if (resetFirstRunBtn) resetFirstRunBtn.addEventListener('click', () => {
 // twice; the developer list is simply the unfiltered one.
 const WHATS_NEW = [
   {
+    version: 'v1.28.76', date: 'September 2026', title: 'Names and guides, batch 2 — and three decks lifted out of Show Understanding 2', audience: 'dev',
+    items: [
+      'Batch 2 of the programme and Extended packs: <strong>Explain Things — Pt. 2</strong>, <strong>Persuasion and Influence — Pt. 2</strong>, <strong>Assertive Communication 2</strong> and <strong>Setup Statement</strong>. All 18 strategies have their own detailed guide pair, 187 Collections and Challenges cards inherit their strategy\'s back guide, and 50 sequence steps carry theirs.',
+      'Renamed: <em>Start Short, Then Go Deeper</em> → <strong>Short Version First</strong> · <em>Answer the W They Actually Asked</em> → <strong>The W They Need</strong> · <em>Status Setup</em> → <strong>Feeling Setup</strong> · <em>Background Setup</em> → <strong>Arrival Setup</strong>, the last two mirroring the rename in Setup Question. The type names in descriptions, memorize decks and sequence steps followed.',
+      '<strong>Explain Things — Pt. 2 had no valid labels at all.</strong> All 44 Collections and Challenges cards carried move names (<em>when</em>, <em>land it</em>, <em>switch W</em>) and four carried Pt. 1\'s strategies. 41 were relabelled, three replies rewritten, and the deck <em>All Six</em> — which deliberately mixed both packs — became <strong>Which W Is Missing</strong>, built from this pack\'s own five.',
+      '<strong>Three challenges decks left Show Understanding 2:</strong> <em>You Got It Wrong</em>, <em>The Summary Became a Speech</em> and <em>Checking Turned Into Interrupting</em>. Each taught a move the pack does not have — misunderstanding, brevity, interrupting — and each is a subject of its own. All fifteen cards are saved in Innehållsluckor §1e as material for future packs. The pack keeps two decks and gets new ones in the volume sweep.',
+      'New rule <strong>§11i</strong>: a pack\'s challenges categories are built from its Single Strategy input cards, grouped by situation. Then every category is provably solvable with the pack\'s own strategies — which is exactly what went wrong above.',
+    ],
+  },
+  {
     version: 'v1.28.75', date: 'September 2026', title: 'Bug fix: handsfree could not be opened at all', audience: 'dev',
     items: [
       '<strong>Every handsfree mode has been dead since v1.28.62.</strong> Tapping a handsfree card on the mode screen did nothing: <code>mode.show</code> still read the single checkbox <code>guideToggleHf</code>, which that same version had replaced with two (detailed / simple) and <code>syncGuideTogglesHf()</code>. The variable no longer existed, so the line threw a ReferenceError before <code>navToTraining()</code> ran — and a thrown listener is silent, so the screen simply never opened.',

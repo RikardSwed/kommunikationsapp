@@ -813,7 +813,7 @@ const memorizeCollections = {
       cards: [
         { q: "What is a setup statement?", a: "You say something yourself first (a statement), then immediately ask the other person about the same thing.", bundle: 'free' },
         { q: "Why say a statement before the question?", a: "It gives the other person something to react to, so they don't start from nothing — and it makes you part of the conversation, not just the interviewer.", bundle: 'free' },
-        { q: "What are the five types of setup statement?", a: "Opinion, Purpose, Status, Action, Background.", bundle: 'free' },
+        { q: "What are the five types of setup statement?", a: "Opinion, Purpose, Feeling, Action, Arrival.", bundle: 'free' },
         { q: "What's the one rule that keeps it working?", a: "Keep the statement short — one sentence — and follow it straight away with a question on the same topic.", bundle: 'free' },
         { q: "What do you do if a setup gets a one-word answer?", a: "Don't repeat the same type — switch to an easier one (often Action) that gives them a concrete thread to grab.", bundle: 'pro' },
         { q: "What's the through-line of all five types?", a: "Each one gives a little of yourself first, then hands the same topic to the other person as a question.", bundle: 'pro' },
@@ -838,10 +838,10 @@ const memorizeCollections = {
       ]
     },
     {
-      name: "Status Setup",
-      description: "The theory behind the Status type.",
+      name: "Feeling Setup",
+      description: "The theory behind the Feeling type.",
       cards: [
-        { q: "What is a Status setup?", a: "You say how you're feeling right now, then ask how they are.", bundle: 'free' },
+        { q: "What is a Feeling setup?", a: "You say how you're feeling right now, then ask how they are.", bundle: 'free' },
         { q: "When does it fit best?", a: "When the mood is worth naming — tired, nervous, upbeat — and naming it invites them to do the same.", bundle: 'free' },
         { q: "Why does naming your state help?", a: "It makes it easy for them to say more than \"fine\" — you've modelled an honest answer first.", bundle: 'pro' },
       ]
@@ -856,10 +856,10 @@ const memorizeCollections = {
       ]
     },
     {
-      name: "Background Setup",
-      description: "The theory behind the Background type.",
+      name: "Arrival Setup",
+      description: "The theory behind the Arrival type.",
       cards: [
-        { q: "What is a Background setup?", a: "You say a bit about what led you here — where you were, what happened before — then ask them.", bundle: 'free' },
+        { q: "What is an Arrival setup?", a: "You say a bit about what led you here — where you were, what happened before — then ask them.", bundle: 'free' },
         { q: "When does it fit best?", a: "When a little story is warmer than a bare question and gives them a thread to pull.", bundle: 'free' },
         { q: "Why does a small story open people up?", a: "It's warmer and more human than a direct question, and it models the kind of answer you're inviting.", bundle: 'pro' },
       ]
@@ -6237,7 +6237,7 @@ const memorizeCollections = {
       ]
     },
     {
-      name: "Start Short, Then Go Deeper",
+      name: "Short Version First",
       guideFront: "A question about the method.",
       guideBack: "The answer.",
       description: "The theory behind levels of detail.",
@@ -6251,7 +6251,7 @@ const memorizeCollections = {
       ]
     },
     {
-      name: "Answer the W They Actually Asked",
+      name: "The W They Need",
       guideFront: "A question about the method.",
       guideBack: "The answer.",
       description: "The theory behind picking the right piece.",
