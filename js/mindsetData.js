@@ -400,8 +400,8 @@ const mindsetCollections = {
   setupstatement: [
     {
       name: "The Setup Statement Mindset",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "The pack-wide stance: you don't have to be interesting to open a conversation, you just have to go first. Giving a little of yourself before you ask lowers the pressure on the other person, so the setup statement works precisely because it isn't clever. Example of the shift — instead of hunting for the perfect question, you say your small true thing and pass it over.\n\nThe three thoughts that cause the trouble:\n1. \"I need something interesting to say\" — you need something true and easy.\n2. \"They'll think I'm intruding\" — most people are relieved someone opened.\n3. \"I should wait for a natural moment\" — the natural moment is the one you make.\n\nMindset: giving a little of yourself before you ask lowers the pressure on them. The setup statement works precisely because it is not clever.",
       inputs: [
         { q: "You feel you need a clever line before you can say anything.", a: "\"I don't need to be interesting. I need to go first. A small true thing is enough.\"", bundle: 'pro' },
@@ -411,8 +411,8 @@ const mindsetCollections = {
     },
     {
       name: "The Going-First Mindset",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "The stance about being the one who speaks first: the right moment is the one you make, and most people are relieved someone else opened. Example of the shift — instead of waiting to be approached, you take the small risk of going first.\n\nWhere the hesitation shows up:\n1. You wait to be approached and then leave having spoken to nobody.\n2. You rehearse an opener until the moment has passed.\n3. You assume everyone else finds this easy.\n\nMindset: the right moment is the one you make. Going first is a small risk that almost always gets met with relief rather than rejection.",
       inputs: [
         { q: "You keep waiting for the 'right moment' to speak.", a: "\"The right moment is the one I make by saying my bit. Waiting is just avoiding.\"", bundle: 'pro' },
@@ -422,8 +422,8 @@ const mindsetCollections = {
     },
     {
       name: "The Reciprocity Mindset",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "The stance about what happens after you open: your job is to hold out the invitation, not to control whether they take it. Example of the shift — instead of reading a flat reply as failure, you offer the door and let them decide.\n\nWhere it goes wrong:\n1. You read a short reply as proof you should not have spoken.\n2. You keep pushing when they have clearly not got the energy.\n3. You judge the opener by their mood rather than by your own move.\n\nMindset: your job is to hold out the invitation, not to control whether they take it. A flat answer is information about their evening, not a verdict on you.",
       inputs: [
         { q: "You're scared the other person won't reciprocate.", a: "\"My job is to open the door. Whether they walk through is not on me.\"", bundle: 'pro' },
@@ -516,8 +516,8 @@ const mindsetCollections = {
   startingconversations3: [
     {
       name: "Attention Is the Gift",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "People overestimate how clever an opener has to be and underestimate what plain attention does. Being noticed — specifically, accurately, out loud — is uncommon enough that it lands regardless of how well you phrase it.\n\nThat is why a four-word compliment about a bag works, and why a specific question about someone's life gets a warmer response than any amount of charm.\n\nMindset: you do not need to be interesting. You need to be paying attention.",
       inputs: [
         { q: "I need to say something impressive.", a: "You need to notice something true. That's a much lower bar and it works better.", bundle: 'pro' },
@@ -529,8 +529,8 @@ const mindsetCollections = {
     },
     {
       name: "Say It Out Loud",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "Most compliments are thought and never said. You notice the coat, the question, the way someone handled a difficult person — and then the moment passes and it starts to feel odd to mention.\n\nThe cost of saying it is about two seconds of mild exposure. The cost of not saying it is that a good thing you noticed simply never existed for the other person.\n\nMindset: if you noticed it and it is true, say it now.",
       inputs: [
         { q: "It'd be weird to say it out of nowhere.", a: "\"That's a great coat\" has never been weird in the history of coats.", bundle: 'pro' },
@@ -542,8 +542,8 @@ const mindsetCollections = {
     },
     {
       name: "Being Wrong Works Too",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "The fear behind not guessing is looking foolish. But a wrong guess is one of the more productive things you can say to a stranger: it gives them something to correct, and corrections come with reasons and stories attached.\n\nWatch what happens. \"No, actually, it's my first time\" is more words and more material than \"yes\" would ever have been.\n\nMindset: aim to be interesting, not accurate.",
       inputs: [
         { q: "What if I guess wrong and look stupid?", a: "Then they correct you and tell you the real answer. That's the opener working.", bundle: 'pro' },
@@ -555,8 +555,8 @@ const mindsetCollections = {
     },
     {
       name: "Only Ask If You Want the Answer",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "\"How are you\" asked in passing is a greeting, and everyone understands it as one. The real version is different: it invites someone to say something true, and that invitation has to be honoured.\n\nAsking it while walking away, or while looking at your phone, or when you have two minutes, is worse than not asking — because you have signalled interest and then withdrawn it, which is a small unkindness the other person will remember.\n\nMindset: ask when you can stay. Otherwise use the greeting version and mean that instead.",
       inputs: [
         { q: "I should ask how they are, they look awful.", a: "Only if you can stop and hear it. If not, say hello properly and come back later.", bundle: 'pro' },
@@ -766,8 +766,8 @@ const mindsetCollections = {
   deepquestions: [
     {
       name: "The Deep Questions Mindset",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "The pack-wide stance: you are not interviewing anyone, you are being curious out loud. Curiosity plus a bit of care is what makes a bigger question feel safe rather than nosy. Example of the shift — instead of wondering whether the question is allowed, you notice that you actually want to know the answer.\n\nThe three thoughts that cause the trouble:\n1. \"This is prying\" — interest is a compliment, not an intrusion.\n2. \"I need a clever question\" — \"what was that like?\" does most of the work.\n3. \"Keeping it light is safer\" — safer, but nothing grows there.\n\nMindset: curiosity plus a bit of care is what makes a bigger question feel safe. You are not interviewing anyone; you are being curious out loud.",
       inputs: [
         { q: "You feel that asking a real question is prying.", a: "\"Curiosity isn't prying. I'm interested in them, and interest is a compliment.\"", bundle: 'pro' },
@@ -778,8 +778,8 @@ const mindsetCollections = {
     },
     {
       name: "The Patience Mindset",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "The stance behind Start with Simple Questions: small talk is not wasted time, it is the runway. You need a few facts on the table before a deeper question has anywhere to land. Example of the shift — instead of rushing to the meaningful bit, you let three easy questions do their job first.\n\nWhere the impatience shows up:\n1. You skip the easy questions because they feel boring.\n2. You ask something big in the first two minutes and it lands flat.\n3. You treat small talk as an obstacle rather than the setup.\n\nMindset: small talk is not the enemy, it is the runway. Depth takes a couple of minutes, and you can afford a couple of minutes.",
       inputs: [
         { q: "You feel small talk is pointless and want to skip it.", a: "\"Small talk isn't the enemy. It's the runway — I need it to get off the ground.\"", bundle: 'pro' },
@@ -790,8 +790,8 @@ const mindsetCollections = {
     },
     {
       name: "The Listening Mindset",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "The stance behind Link and Go Deeper: your next question should come out of what they just said, not off a list in your head. If you are actually listening, the question is already there. Example of the shift — instead of planning your next question while they talk, you catch the one word worth asking about.\n\nWhere the block shows up:\n1. You plan your next question while they are still talking.\n2. You go blank and reach for a brand new topic.\n3. You worry about running out of questions.\n\nMindset: being interested beats being interesting. They keep handing you material — the job is to pick some of it up, not to invent something.",
       inputs: [
         { q: "You plan your next question while they are still talking.", a: "\"If I'm writing my next line, I'm not listening. The best question is hiding in what they just said.\"", bundle: 'pro' },
@@ -802,8 +802,8 @@ const mindsetCollections = {
     },
     {
       name: "The It Is Okay to Ask Mindset",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "The stance behind the three deeper moves — Values, Beliefs and Experiences: asking about what matters to someone is a gift, not an intrusion, as long as they get to choose how much they answer. Example of the shift — instead of swallowing the question, you ask it and let them decide how deep they go.\n\nWhat the fear sounds like from the inside:\n1. \"They'll think I'm being too personal\" — a question leaves them the choice.\n2. \"I need permission to go deeper\" — care is the permission.\n3. \"They'd rather keep it on the surface\" — most people are waiting to be asked something better.\n\nMindset: asking about what matters to someone is a gift, as long as they get to decide how much they answer.",
       inputs: [
         { q: "You swallow the question you actually wanted to ask.", a: "\"The question is allowed. They can always give me the short version.\"", bundle: 'pro' },
@@ -996,8 +996,8 @@ const mindsetCollections = {
   validation: [
     {
       name: "The Validation Mindset",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "The pack-wide stance: validation is about acknowledging, not agreeing.\n\nThis single confusion is why so many people withhold validation from somebody who needs it. They believe that saying \"that makes sense\" concedes the argument, so they say nothing, and the other person reads the silence as judgement.\n\nThe three thoughts that cause the trouble:\n1. \"If I validate this I've agreed with it\" — you have acknowledged it, which is different.\n2. \"But they're wrong about what happened\" — the feeling is still true.\n3. \"It'll be used against me later\" — name the object and it cannot be.\n\nMindset: validating builds trust, lowers defensiveness and makes the conversation possible. None of that requires you to change your own view by a millimetre.",
       inputs: [
         { q: "You hold back validation in case it counts as agreeing.", a: "\"Acknowledging and agreeing are different. I can do the first and keep my view.\"", bundle: 'pro' },
@@ -1008,8 +1008,8 @@ const mindsetCollections = {
     },
     {
       name: "The Reasonable From There Mindset",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "The stance behind Normalise the Reaction: almost every reaction makes sense from inside the situation that produced it.\n\nFrom the outside a reaction can look disproportionate. From the inside, with the history, the tiredness and the three earlier things that week, it is usually the obvious response. Normalising is just saying you can imagine the inside.\n\nWhere the judgement creeps in:\n1. You measure their reaction against the event rather than against their week.\n2. You compare it with how you would have reacted with none of their context.\n3. You think \"I wouldn't have minded\" and treat that as the standard.\n\nMindset: assume there is a reason and you will almost always be right. \"Anyone in your position\" is not a kindness, it is usually just accurate.",
       inputs: [
         { q: "Their reaction looks disproportionate to the event.", a: "\"Measured against their week rather than the event, it probably isn't.\"", bundle: 'pro' },
@@ -1020,8 +1020,8 @@ const mindsetCollections = {
     },
     {
       name: "The Do Not Dismiss Mindset",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "The stance the whole pack rests on: avoid judging or dismissing feelings, even when you see things differently.\n\nThe dismissals rarely arrive as open disagreement. They arrive as small helpful corrections — putting it in perspective, pointing out the bright side, explaining the other person's reasons — and each one quietly says the feeling should not be there.\n\nThree dismissals that do not look like dismissals:\n1. \"At least…\" — anything after it makes the feeling smaller.\n2. \"To be fair, she probably…\" — defending the other person before acknowledging yours.\n3. \"Try not to take it personally\" — instructing them out of a feeling they already have.\n\nMindset: the feeling is already there. Nothing you say will remove it, and everything that tries makes them less likely to tell you the next one.",
       inputs: [
         { q: "You are about to say \"at least…\"", a: "\"Everything after 'at least' shrinks the feeling. Say the first part instead.\"", bundle: 'pro' },
@@ -1032,8 +1032,8 @@ const mindsetCollections = {
     },
     {
       name: "The Specific Beats Kind Mindset",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "The stance about delivery: the detail is what makes validation land.\n\nEvery phrase in this pack can be said sincerely and still bounce, and the reason is almost always that it was general. A validation with no specifics in it could have been said to anybody, and people can hear that instantly.\n\nWhat specificity does:\n1. Proves you listened — you could not have said it before they finished.\n2. Names the object — so it cannot be mistaken for agreement.\n3. Makes it about them rather than about being supportive.\n\nMindset: one detail from their actual story beats three warm sentences. \"A whole week of dreading it\" does more than \"that sounds really hard\".",
       inputs: [
         { q: "Your response could have been said to anyone.", a: "\"Then it'll land like it was. Put one detail of theirs in it.\"", bundle: 'pro' },
@@ -1046,8 +1046,8 @@ const mindsetCollections = {
   supportingconversations: [
     {
       name: "Being Heard Is Usually the Ask",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "When someone brings you a problem, it feels obvious that they want it solved. Often they do not. They want to say it out loud in front of someone who takes it seriously, and to find out what they think by hearing themselves say it.\n\nAnswering the wrong request is the single commonest failure in supportive conversations, and it does not look like a failure from the inside — it looks like being helpful.\n\nMindset: assume they want to be heard until you have evidence otherwise.",
       inputs: [
         { q: "They've told me the problem, so they want a solution.", a: "Often they want a witness. Ask which before you decide.", bundle: 'pro' },
@@ -1059,8 +1059,8 @@ const mindsetCollections = {
     },
     {
       name: "Advice Before Acknowledgement Does Not Land",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "The same suggestion, said at two different moments, has completely opposite effects. Offered before someone feels heard, it says: your feeling is not the point, let's get to the practical bit. Offered afterwards, it is welcome and often exactly what they wanted.\n\nNothing about the advice changes. Only the order does, and the order is free.\n\nMindset: acknowledge first, then suggest. It costs one sentence.",
       inputs: [
         { q: "The practical answer is the useful part.", a: "It is, and it won't be heard until they feel heard.", bundle: 'pro' },
@@ -1072,8 +1072,8 @@ const mindsetCollections = {
     },
     {
       name: "You Do Not Have to Fix It",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "A lot of the discomfort in supporting someone comes from feeling responsible for the outcome — as though if they leave still upset, you have failed.\n\nYou have not. Most things people bring you are not yours to solve, and many are not solvable at all. The measure is whether they felt less alone with it, not whether it went away.\n\nMindset: you are keeping them company in it. That is the whole job.",
       inputs: [
         { q: "I couldn't help, they left as upset as they arrived.", a: "They left having said it to someone. That's the thing that helps.", bundle: 'pro' },
@@ -1085,8 +1085,8 @@ const mindsetCollections = {
     },
     {
       name: "Asking Is Allowed",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "There is an idea that a good friend should simply know what someone needs, and that asking is an admission of failure. It is the opposite: asking is faster, more accurate, and the person almost always appreciates being consulted about their own situation.\n\n\"Do you want ideas or do you want to vent?\" is one of the most useful sentences in this pack, and it takes two seconds.\n\nMindset: ask. Guessing is not more caring, it is just less reliable.",
       inputs: [
         { q: "I should be able to tell what they need.", a: "Sometimes you can. When you can't, asking beats guessing every time.", bundle: 'pro' },
@@ -1180,6 +1180,8 @@ const mindsetCollections = {
     },
     {
       name: "A Comparison Is Cheating",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "Saying \"it's like a garlic press, but bigger\" feels like a shortcut — as though you have handed over somebody else's description instead of writing your own, and a proper answer would name the thing's own size, colour and material.\n\nBut a comparison is not a substitute for describing. It is the one move that works when the listener has nothing to build with. Five precise details about an object nobody has ever seen still leave them with nothing; one familiar object and one change leaves them with a picture.\n\nMindset: borrow the picture. It is not lazy, it is the fastest route into somebody else's head.",
       inputs: [
         { q: "You have never seen the thing they are describing and they keep listing details.", a: "\"Give me something to hang it on. What's it closest to?\"", bundle: 'pro' },
@@ -1262,8 +1264,8 @@ const mindsetCollections = {
   givingexamples: [
     {
       name: "Small Beats Impressive",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "There is a pull towards the dramatic example — the biggest failure, the most striking case, the story with the best ending. But dramatic examples invite the objection that they are exceptional, and exceptional examples prove nothing about the ordinary case.\n\nAn unremarkable example that everyone recognises does more work and costs nothing to defend.\n\nMindset: reach for the ordinary one.",
       inputs: [
         { q: "That example's too boring to make the point.", a: "Boring means nobody will argue about whether it's typical. That's the point.", bundle: 'pro' },
@@ -1275,8 +1277,8 @@ const mindsetCollections = {
     },
     {
       name: "Do Not Invent",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "In the middle of making a point, a convincing detail often arrives ready-made — a number, an incident, a \"studies show\". The temptation is strong precisely because it would work.\n\nEvery invented detail is a debt. When one is checked and found wrong, everything true that you said goes with it, and it goes permanently.\n\nMindset: say \"I don't know\" and reach for something you do.",
       inputs: [
         { q: "A number here would really help the argument.", a: "A wrong one would end the argument, and several future ones.", bundle: 'pro' },
@@ -1288,8 +1290,8 @@ const mindsetCollections = {
     },
     {
       name: "One Is Enough",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "When someone has not agreed yet, the instinct is to add another example. But agreement usually stalls on something other than insufficient illustration — a different value, a missing piece of context, or a concern they have not said out loud.\n\nStacking examples answers a question they have not asked. Asking what the objection is answers the one they have.\n\nMindset: if one good example did not do it, a second one will not either.",
       inputs: [
         { q: "They haven't agreed, so I need another example.", a: "Or you need to know why. Ask.", bundle: 'pro' },
@@ -1301,8 +1303,8 @@ const mindsetCollections = {
     },
     {
       name: "Your Own Life Counts",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "Many people discount their own experience as evidence — it is only one case, it is subjective, other people have proper data. So they reach for a half-remembered statistic instead, which is usually weaker and often wrong.\n\nOne thing that genuinely happened to you, told specifically, is real evidence. It is limited, and saying so is easy.\n\nMindset: what happened to you is worth saying out loud.",
       inputs: [
         { q: "It's just my experience, it doesn't prove anything.", a: "It proves it can happen. Often that's the whole question.", bundle: 'pro' },
@@ -1414,8 +1416,8 @@ const mindsetCollections = {
   storiesinconversation: [
     {
       name: "A Story Is a Contribution, Not a Performance",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "The belief that telling a story means holding the room — that it has to be worth the attention, and that the attention is a test you can fail.\n\nIt produces both failures at once. Some people never tell one, because nothing they have is good enough. Others tell them like a set, and cannot stop halfway or hand the floor on, because stopping would mean it was not worth it.\n\nMindset: you are adding something to a conversation, not taking the stage in one.",
       inputs: [
         { q: "My stories aren't good enough to tell.", a: "They're not auditions. \"Something odd happened at the shop\" is a contribution.", bundle: 'pro' },
@@ -1427,8 +1429,8 @@ const mindsetCollections = {
     },
     {
       name: "The Floor Is Borrowed",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "The forgetting that a story suspends the conversation — for a minute, nobody else can speak, and that minute came out of somebody's evening.\n\nRemembering it is not about being self-conscious. It is what makes the difference between someone whose stories are welcome and someone people brace for: asking rather than taking, naming the length honestly, and giving the turn back at the end.\n\nMindset: borrowed, not taken. Say what you are borrowing it for, and hand it back.",
       inputs: [
         { q: "I shouldn't have to ask permission to talk.", a: "You don't. \"Short one?\" isn't permission, it's telling them what's coming.", bundle: 'pro' },
@@ -1440,8 +1442,8 @@ const mindsetCollections = {
     },
     {
       name: "A Flat Story Costs Nothing",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "The fear of the anticlimax — of getting to the end and having it land on nothing, with everyone politely waiting for a punchline that is not coming.\n\nIt is worth almost nothing. Nobody remembers a story that fell flat; they remember the person who kept going for four more minutes trying to rescue it. The flat ending, said plainly and stopped, is barely noticed at all.\n\nMindset: the anticlimax is free. The rescue attempt is what costs.",
       inputs: [
         { q: "What if it doesn't land?", a: "Then it doesn't, and it's forgotten by the next round of drinks.", bundle: 'pro' },
@@ -1453,8 +1455,8 @@ const mindsetCollections = {
     },
     {
       name: "They Want to Be In It",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "Treating a story as something delivered TO people rather than something happening between them — which is why some tellers cannot be interrupted, cannot cut, and end on a full stop that leaves everyone with nowhere to go.\n\nThe listener wants to react, guess ahead, ask who someone is, and then tell you theirs. All of that is the story working, not the story being spoiled.\n\nMindset: the story is the first half. What they say next is the other half.",
       inputs: [
         { q: "They keep interrupting my story.", a: "Or they're in it. A question three steps ahead is a compliment.", bundle: 'pro' },
@@ -1550,8 +1552,8 @@ const mindsetCollections = {
   givingcriticism: [
     {
       name: "Not Saying It Is Not Kind",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "Staying quiet feels like the considerate option. It rarely is. The other person carries on doing the thing, other people quietly adjust around them, and eventually somebody says it in a much worse way — or nobody does, and they never find out why things went the way they did.\n\nBeing told early, plainly and once is a good deal. It is the version you would want.\n\nMindset: silence is not kindness. It is postponement, usually with interest.",
       inputs: [
         { q: "I don't want to upset them.", a: "They'll be more upset finding out in six months that everyone knew.", bundle: 'pro' },
@@ -1563,8 +1565,8 @@ const mindsetCollections = {
     },
     {
       name: "The Behaviour, Not the Person",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "Under pressure, specific observations turn into character judgements. \"Three deadlines slipped\" becomes \"you're not reliable\" — which feels like the same statement and is not.\n\nOne is a fact with a fix attached. The other is a verdict on who someone is, and it leaves them nothing to do but defend themselves. Everything difficult about giving criticism gets easier if you stay on the first kind.\n\nMindset: if a camera could not have recorded it, do not say it.",
       inputs: [
         { q: "They're just careless, and that's the real problem.", a: "Maybe. What you can say is that there were four typos. Start there.", bundle: 'pro' },
@@ -1576,8 +1578,8 @@ const mindsetCollections = {
     },
     {
       name: "Less Is Usually Enough",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "People preparing to give criticism tend to build a case: examples, history, a structure, an opening. Then they deliver something far heavier than the problem, and the other person leaves thinking they are in serious trouble over a filename.\n\nThe size of the conversation tells the other person how bad it is. Get that wrong and they will not hear the content at all.\n\nMindset: match the size to the problem. Most things are one sentence.",
       inputs: [
         { q: "I should prepare this properly so it lands.", a: "Preparation is good. A ten-minute meeting about a small thing isn't.", bundle: 'pro' },
@@ -1589,8 +1591,8 @@ const mindsetCollections = {
     },
     {
       name: "You Might Be Wrong About Why",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "By the time you raise something, you usually have a theory about the cause — they are not organised, they do not care, they are not listening. The theory is often wrong, and it is nearly always unnecessary.\n\nSomething you cannot see is often in the way: a tool that does not work, an instruction they never got, something at home. Asking is faster than assuming, and it produces a fix rather than an argument.\n\nMindset: describe what you see, ask about the cause, do not supply it.",
       inputs: [
         { q: "I know exactly why they're doing this.", a: "You know what it looks like from outside. Ask about the inside.", bundle: 'pro' },
@@ -1604,8 +1606,8 @@ const mindsetCollections = {
   receivingfeedbackandcriticism: [
     {
       name: "The Receiving-Feedback Mindset",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "The pack-wide stance: feedback is information about something you did, not a verdict on who you are.\n\nAlmost everything that goes wrong when we are criticised comes from treating it as a judgement on our worth. Once it is just information, staying calm stops being an act of will.\n\nThe three thoughts that cause the trouble:\n1. \"They think I'm bad at this\" — it was about one thing you did.\n2. \"I have to answer right now\" — you do not.\n3. \"If I don't defend myself they'll believe it\" — calm is more convincing than defence.\n\nMindset: stay calm and open, even when it is unexpected, and look for the part you can use.",
       inputs: [
         { q: "You hear criticism as a judgement on who you are.", a: "\"This is about something I did, not about my worth. It's information.\"", bundle: 'pro' },
@@ -1616,8 +1618,8 @@ const mindsetCollections = {
     },
     {
       name: "The Thanking Is Not Agreeing Mindset",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "The stance behind Acknowledge the Feedback: a thank-you costs you nothing and commits you to nothing.\n\nMany people refuse to acknowledge criticism because it feels like conceding the point. So they open with a defence, and the conversation goes badly from the first line.\n\nThree things a thank-you is not:\n1. Not agreement — you are thanking them for telling you, not for being right.\n2. Not an apology — that is a separate decision, later.\n3. Not weakness — it is the calmest opening available to you.\n\nMindset: the person who can say \"thanks for telling me\" to something they disagree with is the one in control of the conversation.",
       inputs: [
         { q: "Thanking them feels like admitting they are right.", a: "\"I'm thanking them for telling me, not for being right. Those are different.\"", bundle: 'pro' },
@@ -1628,8 +1630,8 @@ const mindsetCollections = {
     },
     {
       name: "The Understanding Without Agreeing Mindset",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "The stance behind Show You Understand Their View: you can describe someone's view accurately without signing up to it.\n\nThis is the most useful move in the pack, and it is blocked by one fear — that understanding them means losing the argument.\n\nWhere the fear shows up:\n1. You refuse to say \"I see how that looked\" in case it is used against you.\n2. You correct the small facts instead of addressing the feeling.\n3. You wait for them to understand you first, and so do they.\n\nMindset: you do not have to agree with everything to show understanding. And the person who goes first is not the one who loses.",
       inputs: [
         { q: "You worry that understanding them means agreeing with them.", a: "\"I can describe their view accurately and still disagree. Those are separate.\"", bundle: 'pro' },
@@ -1640,8 +1642,8 @@ const mindsetCollections = {
     },
     {
       name: "The No Instant Verdict Mindset",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "The stance behind Reflect Openly: you are not required to know, on the spot, whether the criticism is right.\n\nThe pressure to produce an immediate answer is what pushes people into either a defence they regret or a promise they will not keep.\n\nThree things you are allowed to say:\n1. \"I hadn't seen it that way.\"\n2. \"I'd like to sit with that.\"\n3. \"I see it differently, but I'll think about it.\"\n\nMindset: \"I need to think about this\" is a complete answer, and a confident one. It is not stalling.",
       inputs: [
         { q: "You feel you must decide right now whether they are right.", a: "\"I don't have to have a verdict. 'I'll think about it' is a full answer.\"", bundle: 'pro' },
@@ -1918,8 +1920,8 @@ const mindsetCollections = {
   persuasionandinfluence2: [
     {
       name: "Guide Rather Than Push",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "The instinct when someone disagrees is to argue harder — more reasons, more emphasis, more repetitions. It almost always produces the opposite of what it is aiming at, because pressure creates something to resist.\n\nThe strategies in this pack all work by removing an obstacle rather than by applying force: acknowledgement removes the sense of being corrected, a question removes the need to concede, a smaller ask removes the commitment.\n\nMindset: when it is not working, take something away rather than adding more.",
       inputs: [
         { q: "They're not convinced, so I need a stronger argument.", a: "Or a smaller ask. Try that first — it works more often.", bundle: 'pro' },
@@ -1931,8 +1933,8 @@ const mindsetCollections = {
     },
     {
       name: "One Go, Then Stop",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "People rarely change their minds while being asked. They change them afterwards, in the quiet, without an audience — which is why the most useful thing you can do after making your case is to stop making it.\n\nRepeating a proposal turns it into pressure, and pressure makes agreement feel like a loss. Leaving it alone lets the argument work on its own.\n\nMindset: say it well once, then get out of its way.",
       inputs: [
         { q: "They didn't say yes, so I should try again.", a: "Try again in a week. Not in the next sentence.", bundle: 'pro' },
@@ -1944,8 +1946,8 @@ const mindsetCollections = {
     },
     {
       name: "Nobody Has to Be Wrong",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "A great deal of resistance has nothing to do with the merits. It comes from the fact that agreeing would mean admitting the previous position was mistaken, in front of someone.\n\nEvery strategy in this pack quietly removes that cost. A question lets them arrive at it themselves. An acknowledgement means their idea was never dismissed. A trial means nothing has been conceded yet.\n\nMindset: make it possible to agree without having lost anything.",
       inputs: [
         { q: "They're only disagreeing because they said the opposite yesterday.", a: "Probably. Give them a way to move that isn't a climbdown.", bundle: 'pro' },
@@ -1957,8 +1959,8 @@ const mindsetCollections = {
     },
     {
       name: "Where Influence Stops",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "These strategies work. That is exactly why the line matters: the same moves that make a good idea land can be used to talk someone into something that is not in their interest.\n\nThe test is simple and worth applying honestly. Does their interest actually appear in your case, or only in your framing of it? Would you be comfortable if they could hear you explain why you chose this particular strategy on them?\n\nMindset: influence is making a good case easy to accept. It is not getting your way.",
       inputs: [
         { q: "It's for their own good, so the method doesn't matter.", a: "It does. If it's really for their good, the honest version works.", bundle: 'pro' },
@@ -1972,8 +1974,8 @@ const mindsetCollections = {
   negotiationandcompromise: [
     {
       name: "The Aim Is Not to Win",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "Once a discussion feels like a contest, both people start defending positions rather than looking for answers — and a position defended for ten minutes becomes much harder to leave, regardless of whether it was ever the best one.\n\nThe measure of a negotiation is not who moved less. It is whether the arrangement is one both people will still be happy with in three months.\n\nMindset: the other person is not the opponent. The problem is.",
       inputs: [
         { q: "If I move first I've lost ground.", a: "You've started the trading. Somebody has to, and it usually goes better for them.", bundle: 'pro' },
@@ -1985,8 +1987,8 @@ const mindsetCollections = {
     },
     {
       name: "Positions Hide Needs",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "People arrive with positions — a date, a number, a plan — and those positions are conclusions they have already drawn from something they need. The need is where the room is.\n\nTwo people arguing about a date may want completely different things: one wants time, the other wants not to have an awkward conversation twice. Both are available. Neither is visible while the argument is about the date.\n\nMindset: ask what is underneath before you offer anything.",
       inputs: [
         { q: "We just want different things, there's no solution.", a: "You want different POSITIONS. You may want compatible things underneath.", bundle: 'pro' },
@@ -1998,8 +2000,8 @@ const mindsetCollections = {
     },
     {
       name: "Say What You Want First",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "A surprising number of negotiations are lost by people who never entered them. They soften the preference until it disappears, or wait to see what the other person says, or hope it will be obvious.\n\nSaying plainly what you would like is not aggressive and does not commit you to getting it. It just puts your side on the table, which is the minimum requirement for it being considered at all.\n\nMindset: state it, then be flexible. Not the other way round.",
       inputs: [
         { q: "I'll see what they suggest first.", a: "Then you're negotiating against yourself before anyone's spoken.", bundle: 'pro' },
@@ -2011,8 +2013,8 @@ const mindsetCollections = {
     },
     {
       name: "Check It Twice",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "The moment somebody says \"that'll do\" is the most dangerous moment in a negotiation. Both people are relieved, the conversation is nearly over, and neither wants to reopen it.\n\nBut an agreement nobody is happy with will not be defended. It gets quietly deprioritised, missed, or complained about later — and ten more minutes at the end would have prevented all of it.\n\nMindset: ask once more before you both walk away.",
       inputs: [
         { q: "We've agreed, let's not reopen it.", a: "Ten minutes now beats three months of it not working.", bundle: 'pro' },
@@ -2466,8 +2468,8 @@ const mindsetCollections = {
   emotionlabellingandregulation: [
     {
       name: "The Emotion Labelling Mindset",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "The pack-wide stance: naming a feeling is how you get some distance from it, not how you hand it the wheel.\n\nThere is a common assumption that talking about a feeling makes it bigger. In practice the opposite tends to happen — the unnamed version is the one that runs the afternoon, and putting a word on it turns it into something you are having rather than something you are.\n\nThe three thoughts that cause the trouble:\n1. \"If I name it I'll make it worse\" — usually it shrinks it.\n2. \"Feelings are private\" — the ones affecting a conversation are already in the room.\n3. \"I should be past this by now\" — should has never once changed what somebody feels.\n\nMindset: notice the signals, name it honestly, and respond in a way you will still respect tomorrow. That is the whole exercise.",
       inputs: [
         { q: "You worry that naming the feeling will make it bigger.", a: "\"Naming it usually shrinks it. It's the one I don't name that runs my whole afternoon.\"", bundle: 'pro' },
@@ -2478,8 +2480,8 @@ const mindsetCollections = {
     },
     {
       name: "The No Judgement Mindset",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "The stance behind Label the Emotion: there is no wrong feeling to have, only inaccurate words for it.\n\nMost people do not get stuck on finding the word. They get stuck one step earlier, deciding whether they are allowed to feel it — and by the time that argument is over, the moment has gone.\n\nWhere it shows up:\n1. You downgrade it — \"a bit annoyed\" for something that actually hurt.\n2. You justify it before you have said it — \"I know this is silly, but…\"\n3. You refuse the word because it makes you look bad — jealous, embarrassed, left out.\n\nMindset: label it honestly and without judging yourself for having it. The unflattering words are usually the accurate ones.",
       inputs: [
         { q: "You downgrade \"hurt\" to \"a bit annoyed\" before you say it.", a: "\"The accurate word is usually the one I don't want to use. Use that one.\"", bundle: 'pro' },
@@ -2490,8 +2492,8 @@ const mindsetCollections = {
     },
     {
       name: "The Signals Mindset",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "The stance behind Describe the Signals: your body works it out before you do.\n\nThe tight chest, the replaying, the going quiet — these arrive well ahead of any word, and most people treat them as symptoms to hide rather than as the information they are. Learning your own particular signals is what turns a feeling from an ambush into something you saw coming.\n\nThree things worth knowing about yourself:\n1. Your physical tell — jaw, chest, stomach, hands.\n2. Your mental tell — replaying, going blank, catastrophising.\n3. Your behavioural tell — going quiet, getting brisk, over-explaining.\n\nMindset: the signals are data, not weakness. Knowing your own gives you thirty seconds of warning, and thirty seconds is usually all you need.",
       inputs: [
         { q: "You notice your body reacting and try to ignore it.", a: "\"That's information arriving early. Ignoring it doesn't make it not happen.\"", bundle: 'pro' },
@@ -2502,8 +2504,8 @@ const mindsetCollections = {
     },
     {
       name: "The Offering Not Telling Mindset",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "The stance behind Label Their Emotion: you are handing someone a word to try on, not telling them what they feel.\n\nThe same sentence can be a gift or an imposition depending on how much room you leave. \"You're angry\" is a diagnosis and gets defended against; \"it sounds like you were angry — were you?\" is an offer, and gets thought about.\n\nThe tell is what you do when they say no:\n1. You ask what word they would use — that was an offer.\n2. You explain why you were right — that was a diagnosis.\n3. You go quiet and feel embarrassed — that was a performance.\n\nMindset: being slightly wrong is useful. Someone correcting your word is someone getting closer to their own, which is exactly what you were trying to help with.",
       inputs: [
         { q: "You are confident you know what they are feeling.", a: "\"Even if I'm right, it lands better as a question. Leave them the room.\"", bundle: 'pro' },
@@ -2598,8 +2600,8 @@ const mindsetCollections = {
   rolebasedhumour: [
     {
       name: "The Playing a Role Mindset",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "The pack-wide stance: you are playing a character, not making fun of a person.\n\nThis is the line the whole pack rests on, and it is easier to hold than it sounds. Every role here is somebody slightly ridiculous, and you are volunteering to be them. Nobody in the room is being described except you.\n\nThe three thoughts worth checking:\n1. \"Who is the joke about?\" — it should be the character, which is you.\n2. \"Could this be heard as a comment on them?\" — if yes, pick another role.\n3. \"Would I be happy if they did this back?\" — if not, it is not a bit.\n\nMindset: exaggerate the traits of the role, keep it light, and make sure everyone can stay in the room. The role is a costume, not a mirror held up to somebody else.",
       inputs: [
         { q: "You are about to use a role that describes the person you are talking to.", a: "\"Then it isn't a role, it's a comment. Pick a different one.\"", bundle: 'pro' },
@@ -2610,8 +2612,8 @@ const mindsetCollections = {
     },
     {
       name: "The Commitment Mindset",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "The stance about delivery: half-in is the only way this fails.\n\nA role delivered tentatively is not a small joke, it is a confusing sentence. The words matter far less than whether you said them like you meant them, which is why the same line can be excellent or baffling.\n\nWhere the nerve goes:\n1. You laugh partway through your own line and let the air out of it.\n2. You add a question mark at the end, asking permission retroactively.\n3. You start big and shrink halfway, so it lands as neither.\n\nMindset: commit or say the ordinary thing. Both are good outcomes. A role delivered apologetically is the only bad one.",
       inputs: [
         { q: "You feel yourself softening the line as you say it.", a: "\"Say it properly or say something normal. The half version is the worst one.\"", bundle: 'pro' },
@@ -2622,8 +2624,8 @@ const mindsetCollections = {
     },
     {
       name: "The Costs Me Not Them Mindset",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "The stance about where the line is: the role has to cost you status, never them.\n\nEvery role in this pack is a person with a flaw, and the humour comes from wearing the flaw yourself. The moment the flaw belongs to the person you are talking to, the same words become an insult with a costume on.\n\nThree quick tests:\n1. Who looks ridiculous at the end of the line? It should be you.\n2. Is the object of the joke something they cannot change? Then it is not the joke to make.\n3. Did they just say something sincere? Then no role, whichever one it is.\n\nMindset: the costume is on you. If you find yourself reaching for a role because it describes them rather than you, that is the signal to stop.",
       inputs: [
         { q: "The funniest available role happens to describe them.", a: "\"That's the one to skip. Funny and aimed at them isn't a role.\"", bundle: 'pro' },
@@ -2634,8 +2636,8 @@ const mindsetCollections = {
     },
     {
       name: "The Exit Mindset",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "The stance about getting out: knowing how to end a bit is what makes it safe to start one.\n\nMost people who avoid this kind of humour are not worried about the first line. They are worried about being stuck in it — having committed to a character with no way back to the actual conversation.\n\nThe exits, all of which are short:\n1. Drop it and ask a real question — \"Right, what are you actually going to do?\"\n2. Name the landing — \"That was a swing and a miss. Moving on.\"\n3. Land one absurd line and stop on it deliberately.\n\nMindset: three beats and out, on a laugh rather than after one. Having a planned exit is what lets you commit properly to the entrance.",
       inputs: [
         { q: "You avoid starting a bit in case you get stuck in it.", a: "\"The exit is one sentence. 'Right, seriously though' works every time.\"", bundle: 'pro' },
@@ -3289,8 +3291,8 @@ const mindsetCollections = {
   listeningthroughquestions: [
     {
       name: "The Question Is In Their Answer",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "The pack-wide stance: you never have to invent a question, because their last sentence contains three or four. Looking for a good question is what makes people stop listening — the question you need is already on the table, and finding it only requires attention. Example of the shift — instead of thinking of what to ask next, you listen for the word to pick up.\n\nThe three thoughts that cause the trouble:\n1. \"I need an interesting question\" — you need a question about what they just said.\n2. \"I should think of the next one while they answer\" — that is how you miss it.\n3. \"I've run out of things to ask\" — you have run out of things you thought of in advance.\n\nMindset: listen for the noun, the odd word, or the half-sentence they hurried past. The question is already there.",
       inputs: [
         { q: "You are planning your next question while they are talking.", a: "\"That's how I miss the good one. It's in the sentence they're saying now.\"", bundle: 'pro' },
@@ -3302,8 +3304,8 @@ const mindsetCollections = {
     },
     {
       name: "Following Beats Interviewing",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "The stance that separates this from a questionnaire: a series of unconnected good questions is an interview, and people can feel it within two or three. The measure is not how good each question is but whether each one came out of the previous answer. Example of the shift — instead of moving to your next question, you go one step further into the one they just answered.\n\nWhere it goes wrong:\n1. You have a mental list and you are working through it.\n2. You ask a second question without responding to the first answer.\n3. Their answers get shorter and you ask harder questions in response.\n\nMindset: depth, not coverage. Four questions about one thing is a conversation; four questions about four things is a form.",
       inputs: [
         { q: "You are working through a mental list of questions.", a: "\"Bin the list. What did they just say that I want to know more about?\"", bundle: 'pro' },
@@ -3315,8 +3317,8 @@ const mindsetCollections = {
     },
     {
       name: "Ordinary Questions Work",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "The stance about which questions to use: \"what happened next\" has drawn out more real accounts than any clever alternative, and its ordinariness is exactly why it is easy to answer. The interesting part of a conversation is their answer, not your question. Example of the shift — instead of searching for an original angle, you ask the obvious thing and listen properly.\n\nWhere the hesitation shows up:\n1. You discard the obvious question because it seems too plain.\n2. You look for an original angle while the moment passes.\n3. You judge your question by how it sounds rather than by how easy it is to answer.\n\nMindset: judge a question by how easy it is to answer. Plain to ask and easy to answer is the best trade in conversation.",
       inputs: [
         { q: "You discard a question for being too obvious.", a: "\"Obvious to ask, easy to answer. That trade wins every time.\"", bundle: 'pro' },
@@ -3328,8 +3330,8 @@ const mindsetCollections = {
     },
     {
       name: "One More Question",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "The stance about where to stop: most conversations end one question before the interesting part, because the account reached a natural pause and everybody took it. The extra question costs nothing and is very often where the actual story was. Example of the shift — instead of saying \"oh, nice\" and moving on, you ask the next obvious thing.\n\nWhere it shows up:\n1. Something surprising goes past and you let it.\n2. You accept a fact where there was clearly a story.\n3. You change the subject at the first pause.\n\nMindset: one more question, then move. The pause is not the end of the subject — it is the point where most people stop.",
       inputs: [
         { q: "Something surprising went past and you let it.", a: "\"Go back to it. Even a minute later, 'you said something earlier about…' works.\"", bundle: 'pro' },
@@ -3343,8 +3345,8 @@ const mindsetCollections = {
   showunderstanding2: [
     {
       name: "Understanding Is Checkable",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "The pack-wide stance: understanding is not a private feeling you have while listening, it is a claim that can be tested — and the test costs one sentence. Most people never make it, and spend conversations assuming an accuracy nobody has verified. Example of the shift — instead of nodding because you followed it, you say your version and ask.\n\nThe three thoughts that cause the trouble:\n1. \"I understood, so we're fine\" — they cannot see that you did.\n2. \"Saying it back is patronising\" — it is only patronising if you do not invite the correction.\n3. \"If I check I'll look like I wasn't listening\" — checking is what listening looks like from outside.\n\nMindset: say your version and ask. Being wrong is the useful outcome, and it only arrives if you offer something to correct.",
       inputs: [
         { q: "You understood and see no reason to say so.", a: "\"They can't see inside my head. The check is the only evidence there is.\"", bundle: 'pro' },
@@ -3356,8 +3358,8 @@ const mindsetCollections = {
     },
     {
       name: "Follow the Whole Conversation",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "The stance that separates this pack from the first one: most listening is local — people track the last sentence and forget the rest. Carrying one detail across ten minutes is uncommon enough that it is remembered long after the conversation. Example of the shift — instead of responding only to what was just said, you bring back the thing they mentioned at the start.\n\nWhere it shows up:\n1. You remember the last point and nothing before it.\n2. Two things they said separately are one thing, and neither of you has noticed.\n3. They repeat something because they do not think it landed.\n\nMindset: carry one detail forward. Not everything — one thing, brought back at the right moment, does the whole job.",
       inputs: [
         { q: "You can only remember the last thing they said.", a: "\"Pick one detail from earlier and hold it. One is enough.\"", bundle: 'pro' },
@@ -3369,8 +3371,8 @@ const mindsetCollections = {
     },
     {
       name: "The Feeling, Not the Anecdote",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "The stance about sharing: the useful part of \"I've felt that too\" is the recognition, and the recognition is complete in one sentence. Everything after that sentence is your story, and your story is a different conversation. Example of the shift — instead of telling them about your version, you tell them you have had the feeling and ask about theirs.\n\nWhere it goes wrong:\n1. The detail of your case is genuinely relevant, so you add a second sentence, and then a third.\n2. Matching every point they make with one of your own.\n3. Sharing before you have shown you understood theirs.\n\nMindset: one sentence, then back to them. If your version is longer than theirs, the conversation has changed hands.",
       inputs: [
         { q: "Your own case has details that seem relevant.", a: "\"Relevant to me. One sentence is the whole gift — the rest is my turn.\"", bundle: 'pro' },
@@ -3382,8 +3384,8 @@ const mindsetCollections = {
     },
     {
       name: "Meet the Value, Not Just the Story",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "The stance behind the deepest move here: people explaining a grievance are usually explaining a value — fairness, being consulted, honesty, not letting someone down — and almost nobody says the value out loud. Naming it says you understood the part underneath. Example of the shift — instead of agreeing that the situation was annoying, you say what it was about it that would matter to you too.\n\nWhere it shows up:\n1. You sympathise with the events and miss what they were really telling you.\n2. You agree with a value you do not hold because it is the warm thing to do.\n3. You think agreeing with the value commits you to agreeing with the conclusion.\n\nMindset: name what mattered to them, honestly. You can agree with the value and still doubt the conclusion, and saying both is worth more than agreeing with everything.",
       inputs: [
         { q: "You sympathised with the events and it landed thinly.", a: "\"What were they actually telling me? Usually it's a value, not an incident.\"", bundle: 'pro' },
@@ -3691,8 +3693,8 @@ const mindsetCollections = {
   storybanter: [
     {
       name: "Build, Do Not Perform",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "The pack-wide stance: this is a thing two people make together, and the measure is whether the story kept going, not whether your line was the best one. A person who is trying to be the funniest stops listening, and a person who has stopped listening cannot build on anything. Example of the shift — instead of hunting for your best line, you take their last one seriously.\n\nThe three thoughts that cause the trouble:\n1. \"I need to be funnier than that\" — you need to leave them something.\n2. \"That was a weak turn from me\" — a turn that kept it going is a good turn.\n3. \"It only works if I'm quick\" — the consequence technique needs no speed at all.\n\nMindset: the goal is collaboration, not being the funniest. Two people building beats one person performing at another.",
       inputs: [
         { q: "You are trying to top their last line.", a: "\"Topping it ends it. Building on it keeps it going, which is the actual game.\"", bundle: 'pro' },
@@ -3704,8 +3706,8 @@ const mindsetCollections = {
     },
     {
       name: "Yes, And — Never Yes, But",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "The stance behind the whole form: everything offered is accepted. \"But\" is a correction, and a correction inside an invented story is a small door closing. This is the one rule the form actually has, and it is worth holding absolutely. Example of the shift — instead of pointing out that it would not work, you decide it would.\n\nWhere it goes wrong:\n1. You correct a detail out of pure reflex.\n2. You say \"yes, but\" and think you have agreed.\n3. You treat an impossible idea as a mistake rather than as an offer.\n\nMindset: nothing has to be possible. The only thing that matters is that you build on what you were handed.",
       inputs: [
         { q: "You are about to point out that it would not work.", a: "\"Nothing here works. That's not the point — what happens next?\"", bundle: 'pro' },
@@ -3717,8 +3719,8 @@ const mindsetCollections = {
     },
     {
       name: "Absurd Is Safer Than Clever",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "The stance about what to aim for: an obviously impossible idea cannot be mistaken for a judgement about anyone, and a clever remark can. The bigger and sillier the invention, the more clearly it is play — which is why the safest banter is the least realistic. Example of the shift — instead of a sharp observation, you reach for the ridiculous version.\n\nWhere it shows up:\n1. A remark that is nearly true and therefore nearly a criticism.\n2. Humour aimed at a real weakness, dressed as a story.\n3. Restraint — a cautious exaggeration that reads as a correction.\n\nMindset: go past sensible in one jump. Halfway is where a joke starts sounding like a point.",
       inputs: [
         { q: "Your line is funny because it is nearly true.", a: "\"Nearly true is nearly a criticism. Make it impossible instead.\"", bundle: 'pro' },
@@ -3730,8 +3732,8 @@ const mindsetCollections = {
     },
     {
       name: "Stop While It Is Good",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "The stance about endings: nobody remembers a story that stopped a turn early, and everybody remembers one that went four turns long. Landing it is a move in its own right, not a failure of imagination. Example of the shift — instead of finding one more thing, you say the flat closing line and change the subject.\n\nWhere the pull to continue comes from:\n1. You have one more idea and it feels like a waste not to use it.\n2. Stopping feels like admitting it has run out.\n3. Nobody else has stopped it, so you assume it is still working.\n\nMindset: the goal was the laugh you already had. Land it warmly and go and do something else.",
       inputs: [
         { q: "You have one more idea and the room has moved on.", a: "\"Save it. An unused good line is better than a used late one.\"", bundle: 'pro' },
@@ -3745,8 +3747,8 @@ const mindsetCollections = {
   explainthings2: [
     {
       name: "The Question Under the Question",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "The pack-wide stance: people rarely ask the question they actually want answered. \"What is it?\" almost always means \"would I ever need this?\", and answering the literal version is how clear explanations end up useless. Example of the shift — instead of defining the thing, you tell them when they would reach for it.\n\nThe three thoughts that cause the trouble:\n1. \"They asked what it is\" — they asked what it is *to them*.\n2. \"I should start at the beginning\" — start where their gap is.\n3. \"If I am accurate I have done my job\" — accurate and irrelevant is still a failure.\n\nMindset: answer the question they have, not the one they said. If you cannot tell, ask — it takes six words.",
       inputs: [
         { q: "You gave a correct answer and it landed flat.", a: "\"Correct isn't the standard. Useful is. Which W were they actually missing?\"", bundle: 'pro' },
@@ -3758,8 +3760,8 @@ const mindsetCollections = {
     },
     {
       name: "Short Is Not Rude",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "The stance about length: a one-sentence answer feels dismissive from the inside and generous from the outside. The long version is available if they want it, and they will ask — people always ask about things they are interested in. Example of the shift — instead of proving you know the subject, you give the short version and stop.\n\nWhere the hesitation shows up:\n1. You add detail so it does not sound like you are brushing them off.\n2. You explain the exceptions before anyone has met the rule.\n3. You mistake completeness for helpfulness.\n\nMindset: nobody has ever complained that an explanation was too short. They ask, and then you get to say more with someone who wants it.",
       inputs: [
         { q: "A one-sentence answer feels like brushing them off.", a: "\"It reads as generous from where they're standing. And they'll ask if they want more.\"", bundle: 'pro' },
@@ -3771,8 +3773,8 @@ const mindsetCollections = {
     },
     {
       name: "Say Who It Is Not For",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "The stance about honesty in explaining: the sentence that says \"this probably isn't for you\" is what makes everything else you said believable. It costs a recommendation and buys the listener's trust in every future one. Example of the shift — instead of listing what is good about it, you say plainly where the listener sits.\n\nWhere it goes wrong:\n1. You like the thing, so every sentence is a benefit.\n2. You do not want to be discouraging.\n3. You leave out the catch because they did not ask.\n\nMindset: an explanation with no \"not for you\" in it is a pitch. One honest exclusion makes the rest land.",
       inputs: [
         { q: "Every sentence you have said has been a benefit.", a: "\"Where's the catch? If I can't name one, I'm selling rather than explaining.\"", bundle: 'pro' },
@@ -3784,8 +3786,8 @@ const mindsetCollections = {
     },
     {
       name: "Give It Neighbours",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "The stance about placing things: people file new information by what it sits next to, so an explanation with no neighbours is remembered as a fact rather than as a thing. Naming what comes before it, after it, or beside it does more for memory than any amount of description. Example of the shift — instead of describing the thing in isolation, you say what it sits between.\n\nWhere it shows up:\n1. Something perfectly explained that nobody can recall a day later.\n2. A description that is accurate and floating.\n3. \"But where does it fit?\" asked after a complete answer.\n\nMindset: give it a shelf. Between two things they already know is the easiest place in the world to remember something.",
       inputs: [
         { q: "Your explanation was clear and nobody remembers it.", a: "\"It had nothing next to it. What does it sit between?\"", bundle: 'pro' },
@@ -3799,8 +3801,8 @@ const mindsetCollections = {
   buildingastory: [
     {
       name: "Small Stories Are Enough",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "The pack-wide stance: the size of the event is almost irrelevant. A locked door told sharply lands better than a dramatic week told vaguely, and most of the stories people remember hearing were about nothing much. Example of the shift — instead of waiting for a story worth telling, you tell the small true one that arrived.\n\nThe three thoughts that cause the trouble:\n1. \"Nothing interesting happens to me\" — nothing interesting happens to anybody; the telling is the difference.\n2. \"This isn't a good enough story\" — good enough means true, small and shaped.\n3. \"I'll save it for when it fits better\" — that moment does not come.\n\nMindset: small, true, shaped. That is the whole standard, and everybody clears it several times a week.",
       inputs: [
         { q: "You think nothing interesting happens to you.", a: "\"Nothing interesting happens to anyone. The telling is the whole difference.\"", bundle: 'pro' },
@@ -3812,8 +3814,8 @@ const mindsetCollections = {
     },
     {
       name: "Start Where It Moves",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "The stance about openings: your instinct is to explain first so that everything makes sense, and that instinct costs you the room. Context can be delivered late and often does not need delivering at all — the listener will build most of it themselves. Example of the shift — instead of introducing everyone, you say the first thing that happened.\n\nWhere it goes wrong:\n1. You explain who people are before anything has occurred.\n2. You give the background because you would want it yourself.\n3. You start at the true beginning rather than at the interesting one.\n\nMindset: start where it moves and backfill only what they actually need. Almost nobody has ever asked for more setup.",
       inputs: [
         { q: "You are about to explain who everyone is.", a: "\"Names can wait. What happened?\"", bundle: 'pro' },
@@ -3825,8 +3827,8 @@ const mindsetCollections = {
     },
     {
       name: "The Feeling Is the Story",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "The stance behind the emotional half of the pack: people follow feeling more closely than they follow events, and a story told without any is a report. Naming the feeling once, plainly, does more than any amount of vivid description. Example of the shift — instead of describing the situation more carefully, you say how it felt.\n\nWhere it shows up:\n1. An accurate account that nobody reacts to.\n2. Detail piled on detail in the hope that the feeling arrives on its own.\n3. Playing something down because naming the feeling seems dramatic.\n\nMindset: say the feeling out loud once. The pace, the pauses and the detail all follow from it, and none of them arrive without it.",
       inputs: [
         { q: "The account is accurate and nobody is reacting.", a: "\"Accurate isn't the same as told. How did it feel?\"", bundle: 'pro' },
@@ -3838,8 +3840,8 @@ const mindsetCollections = {
     },
     {
       name: "Finish It on Purpose",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "The stance about endings and lessons: a story is remembered by its last sentence, and most stories are ended by running out rather than by stopping. Deciding to end — and deciding whether there is a takeaway at all — is a move, not an admission that you have nothing left. Example of the shift — instead of winding down, you say the line you told it for and stop.\n\nWhere the trouble comes from:\n1. You have had the laugh and lose interest in the ending.\n2. You add a moral because the ending feels too small.\n3. You keep going because nobody has stopped you.\n\nMindset: say the last line on purpose, and stop. If there is a lesson, one sentence; if there is not, say that instead — it is a better ending than an invented one.",
       inputs: [
         { q: "You have had the laugh and are winding down.", a: "\"The ending is what they'll carry. Say it properly.\"", bundle: 'pro' },
@@ -3853,8 +3855,8 @@ const mindsetCollections = {
   reframing: [
     {
       name: "Every Frame Is a Choice",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "The pack-wide stance: what happened and what it means are two different things, and only the first is fixed. The meaning arrives so fast that it feels like part of the event, which is exactly why it goes unexamined. Example of the shift — instead of accepting the first reading that arrived, you ask what else fits the same facts.\n\nThe three thoughts that cause the trouble:\n1. \"That's just what it means\" — that is the reading that got there first.\n2. \"I'm not spinning it, I'm being realistic\" — the negative frame is also a frame.\n3. \"There's only one way to see this\" — there is at least one more, and it usually fits better.\n\nMindset: separate the event from the conclusion. The event is a sentence; the conclusion is a story, and stories can be rewritten without lying.",
       inputs: [
         { q: "You have accepted the first reading that arrived.", a: "\"First doesn't mean true. What else fits exactly these facts?\"", bundle: 'pro' },
@@ -3866,8 +3868,8 @@ const mindsetCollections = {
     },
     {
       name: "It Has To Be True",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "The stance that keeps this from becoming spin: a reframe has to hold every fact the original one held. The moment it requires leaving something out it stops being a different reading and becomes a request to pretend — and the other person can always tell. Example of the shift — instead of reaching for the encouraging version, you look for the accurate one that happens to be kinder.\n\nWhere it goes wrong:\n1. The upside you name does not cover the cost, and you say it anyway.\n2. You reframe out of discomfort with their feeling rather than out of a real reading.\n3. You would not say the same thing about it in a month.\n\nMindset: truer, not nicer. A reframe that is both is available surprisingly often, and one that is only nicer is worth nothing.",
       inputs: [
         { q: "Your upside does not really cover the cost.", a: "\"Then it isn't a reframe. Say the honest thing instead.\"", bundle: 'pro' },
@@ -3879,8 +3881,8 @@ const mindsetCollections = {
     },
     {
       name: "Not Everything Needs a Better Angle",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "The stance that makes the pack safe to own: some things are bad, some feelings are the correct response, and the reframe is not always the gift it feels like. Offered too early it is heard as being told how to feel, and the result is not comfort but silence next time. Example of the shift — instead of finding the silver lining, you say the thing is bad and ask what would help.\n\nWhere it shows up:\n1. You reach for perspective within an hour of something going wrong.\n2. You cannot sit with somebody being upset without trying to fix it.\n3. You treat a reasonable reaction as a problem to be solved.\n\nMindset: \"that's just bad, and I'm sorry\" is a complete response. Reach for it more often than the four types.",
       inputs: [
         { q: "You want to find the upside within an hour of the event.", a: "\"Too early. Today is for saying it's bad. The angle keeps.\"", bundle: 'pro' },
@@ -3892,8 +3894,8 @@ const mindsetCollections = {
     },
     {
       name: "Offer, Never Impose",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "The stance about delivery: a reframe belongs to the person receiving it, and they get to refuse it. Handed over as the correct view it produces defence of a reading they might not even have liked; handed over as one option it usually gets tried on. Example of the shift — instead of \"you should see it as\", you say \"one way to look at it is\" and then stop.\n\nWhere it goes wrong:\n1. You repeat a reframe that was not taken.\n2. You treat their not taking it as them being stubborn.\n3. You start the sentence with \"you should\".\n\nMindset: offer it once, hold it loosely, let them keep their own. A reframe argued for has stopped being a gift.",
       inputs: [
         { q: "They did not take your reframe.", a: "\"That's allowed. It's their situation and their reading.\"", bundle: 'pro' },
@@ -4730,8 +4732,8 @@ const mindsetCollections = {
   startingconversations4: [
     {
       name: "Somebody Has to Go First",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "In almost every room, several people are waiting for someone else to say the thing. Whoever admits to being nervous, makes the joke about the queue, or says they know nobody here is not exposing themselves — they are doing the thing everyone was hoping somebody would do.\n\nThat is the whole logic of this pack. Going first costs you a few seconds of risk and buys the other person permission.\n\nMindset: the exposure is real and it is brief. What it buys is not.",
       inputs: [
         { q: "Why should it be me who breaks the silence?", a: "Because everyone else is asking the same question. Somebody has to answer it.", bundle: 'pro' },
@@ -4743,8 +4745,8 @@ const mindsetCollections = {
     },
     {
       name: "A Missed Joke Is Cheap",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "People avoid humour with strangers because a joke that fails feels like a small public failure. It is worth measuring what actually happens: a half-smile, two seconds of nothing, and a conversation that continues.\n\nWhat makes it expensive is the response — explaining it, repeating it, apologising at length. Left alone, a missed joke evaporates.\n\nMindset: say it, and if it misses, carry on as though it did not.",
       inputs: [
         { q: "What if the joke doesn't land?", a: "Then nothing happens, and you say something plain instead.", bundle: 'pro' },
@@ -4756,8 +4758,8 @@ const mindsetCollections = {
     },
     {
       name: "Small Feelings, Not Big Ones",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "Saying how you feel is powerful precisely because it is small. \"I'm nervous about this\" invites a matching admission; something much larger invites concern, and concern is a different kind of conversation that a stranger did not sign up for.\n\nThe rule is easy to apply: if it would need explaining, it is too big for an opener. That is not a rule about hiding things — it is about what a first conversation can hold.\n\nMindset: current, small, about this room.",
       inputs: [
         { q: "If I'm being honest I should say the whole thing.", a: "Honest doesn't mean complete. \"It's been a long week\" is entirely honest.", bundle: 'pro' },
@@ -4769,8 +4771,8 @@ const mindsetCollections = {
     },
     {
       name: "The Real Reason Works Best",
-      guideFront: "A thought that gets in the way.",
-      guideBack: "A way to reset it.",
+      guideFront: "A limiting thought",
+      guideBack: "A way to reset it",
       description: "When people finally approach someone, they often reach for a pretext — a question they do not need answered, a comment they do not mean. It feels safer than saying why they actually came over.\n\nBut the pretext is usually visible, and the true reason is almost always more disarming. \"I don't know anybody here\" is not a confession of failure; it is the most ordinary sentence in the world, and it makes the other person relax.\n\nMindset: awkward and true beats smooth and invented.",
       inputs: [
         { q: "I need a reason to go over there.", a: "\"I don't know anyone here\" is a reason, and it happens to be true.", bundle: 'pro' },

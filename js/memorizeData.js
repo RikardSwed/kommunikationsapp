@@ -942,8 +942,6 @@ const memorizeCollections = {
   startingconversations3: [
     {
       name: "Core Idea",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The shape of the pack: four openers that turn the attention onto the other person, and how to calibrate them.",
       cards: [
         { q: "What are the four openers in this pack?", a: "Compliment something specific, make a guess about them, ask about them, ask how they really are.", bundle: 'free' },
@@ -956,8 +954,6 @@ const memorizeCollections = {
     },
     {
       name: "Compliment Something Specific",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The fastest way to make a stranger feel seen.",
       cards: [
         { q: "Why is a specific compliment stronger than a general one?", a: "It proves you were actually paying attention — it could only be said to them.", bundle: 'free' },
@@ -970,8 +966,6 @@ const memorizeCollections = {
     },
     {
       name: "Make a Guess",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The opener where being wrong works as well as being right.",
       cards: [
         { q: "Why does a wrong guess still work?", a: "It gives them something to correct, and corrections come with more words than confirmations.", bundle: 'free' },
@@ -984,8 +978,6 @@ const memorizeCollections = {
     },
     {
       name: "Ask About Them",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The most direct opener — saying plainly that you want to know something about them.",
       cards: [
         { q: "Why does asking about someone work so reliably?", a: "Most people are asked about themselves far less often than they would like.", bundle: 'free' },
@@ -998,8 +990,6 @@ const memorizeCollections = {
     },
     {
       name: "Ask How They Really Are",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The rarest of the four, and the one that carries an obligation.",
       cards: [
         { q: "What makes this different from the ritual \"how are you\"?", a: "It is a real question, usually prompted by something you noticed.", bundle: 'free' },
@@ -1717,8 +1707,6 @@ const memorizeCollections = {
   supportingconversations: [
     {
       name: "Core Idea",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The shape of the pack: five responses, and the judgement about which one this person needs.",
       cards: [
         { q: "What are the five responses in this pack?", a: "Work out what they need, just listen, respond with validation, respond with encouragement, respond with a suggestion.", bundle: 'free' },
@@ -1731,8 +1719,6 @@ const memorizeCollections = {
     },
     {
       name: "Work Out What They Need",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The diagnostic move, and the centre of the pack.",
       cards: [
         { q: "Why do supportive conversations usually fail?", a: "A mismatch rather than a lack of care — advice to someone who wanted acknowledgement, or sympathy to someone who wanted help.", bundle: 'free' },
@@ -1745,8 +1731,6 @@ const memorizeCollections = {
     },
     {
       name: "Just Listen",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The hardest of the five.",
       cards: [
         { q: "Why is saying almost nothing often the most useful response?", a: "Much of what people bring you needs saying out loud rather than handling, and any response interrupts that.", bundle: 'free' },
@@ -1759,8 +1743,6 @@ const memorizeCollections = {
     },
     {
       name: "Respond With Validation",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The correct default when you cannot tell.",
       cards: [
         { q: "Why is validation the safe default?", a: "Nobody is made worse by having their reaction taken seriously, while advice at the wrong moment does damage.", bundle: 'free' },
@@ -1773,8 +1755,6 @@ const memorizeCollections = {
     },
     {
       name: "Respond With Encouragement",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "For when the problem is confidence rather than circumstance.",
       cards: [
         { q: "When is encouragement the right response?", a: "When they know what to do and doubt they can do it.", bundle: 'free' },
@@ -1787,8 +1767,6 @@ const memorizeCollections = {
     },
     {
       name: "Respond With a Suggestion",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "Useful at the right moment, damaging at the wrong one.",
       cards: [
         { q: "What are the two conditions for a suggestion landing?", a: "It comes after acknowledgement, and it works better as a question than an instruction.", bundle: 'free' },
@@ -1803,8 +1781,6 @@ const memorizeCollections = {
   describethings: [
     {
       name: "Core Idea",
-      guideFront: "",
-      guideBack: "",
       description: "Six description moves, covering everything worth saying about an object: what it is, how big, what it is made of, where it lives, what it is for, and what it is like.\n\nA good description uses two or three of them, chosen for this listener. Describing everything is the same as describing nothing.",
       cards: [
         { q: "What are the six moves in this pack?", a: "Name and Main Details, Size and Shape, Material Texture and Colour, Where You Find It, What It Is For, What It Resembles.", bundle: 'free' },
@@ -1819,8 +1795,6 @@ const memorizeCollections = {
     },
     {
       name: "Name and Main Details",
-      guideFront: "",
-      guideBack: "",
       cards: [
         { q: "What should the first detail do?", a: "Eliminate the most alternatives.", bundle: 'free' },
         { q: "What is the \"distinguishing feature\"?", a: "The detail that rules out everything else similar.", bundle: 'free' },
@@ -1834,8 +1808,6 @@ const memorizeCollections = {
     },
     {
       name: "Size and Shape",
-      guideFront: "",
-      guideBack: "",
       cards: [
         { q: "Why are exact measurements often useless in conversation?", a: "Most people cannot picture a number of centimetres.", bundle: 'free' },
         { q: "What is the most portable ruler?", a: "A body part — a hand, a forearm, knee height.", bundle: 'free' },
@@ -1849,8 +1821,6 @@ const memorizeCollections = {
     },
     {
       name: "Material, Texture and Colour",
-      guideFront: "",
-      guideBack: "",
       cards: [
         { q: "What is wrong with saying just \"blue\"?", a: "It covers an enormous range. Add a qualifier — dark navy, almost black.", bundle: 'free' },
         { q: "How should texture be described?", a: "By what the hand notices, or by comparison — like sandpaper.", bundle: 'free' },
@@ -1864,8 +1834,6 @@ const memorizeCollections = {
     },
     {
       name: "Where You Find It",
-      guideFront: "",
-      guideBack: "",
       cards: [
         { q: "What three kinds of detail does this move cover?", a: "Location, surroundings and age.", bundle: 'free' },
         { q: "What is the \"landmark method\"?", a: "Naming what is beside the thing rather than its address.", bundle: 'free' },
@@ -1879,8 +1847,6 @@ const memorizeCollections = {
     },
     {
       name: "What It Is For",
-      guideFront: "",
-      guideBack: "",
       cards: [
         { q: "Why is purpose an efficient description?", a: "It narrows the field faster than appearance does.", bundle: 'free' },
         { q: "What is the boundary against Explain Things?", a: "Here purpose helps them recognise it; there it gives them a reason to care.", bundle: 'free' },
@@ -1965,8 +1931,6 @@ const memorizeCollections = {
   explainthings: [
     {
       name: "Core Idea",
-      guideFront: "",
-      guideBack: "",
       description: "Three moves, one question word each: What It Is, How It Works, Why It Matters.\n\nWhen someone starts from nothing the order is What, then How, then Why. The skill is hearing which one is actually missing, and answering only that.",
       cards: [
         { q: "What are the three moves in this pack?", a: "What It Is, How It Works, Why It Matters.", bundle: 'free' },
@@ -1981,8 +1945,6 @@ const memorizeCollections = {
     },
     {
       name: "What It Is",
-      guideFront: "",
-      guideBack: "",
       cards: [
         { q: "What does \"What It Is\" answer?", a: "If this were in front of you, what would you be looking at?", bundle: 'free' },
         { q: "Name two of the four ways to say what something is.", a: "Any two of: name and category, parts, what it looks like, comparison to something known.", bundle: 'free' },
@@ -1996,8 +1958,6 @@ const memorizeCollections = {
     },
     {
       name: "How It Works",
-      guideFront: "",
-      guideBack: "",
       cards: [
         { q: "What is the test for a good How explanation?", a: "Someone could follow it and end up doing the right thing.", bundle: 'free' },
         { q: "Name two of the four ways to explain how something works.", a: "Any two of: step by step, the one move that matters, what you do versus what it does, where people go wrong.", bundle: 'free' },
@@ -2011,8 +1971,6 @@ const memorizeCollections = {
     },
     {
       name: "Why It Matters",
-      guideFront: "",
-      guideBack: "",
       cards: [
         { q: "What does \"Why It Matters\" name?", a: "The problem the thing solves, or what would be worse without it.", bundle: 'free' },
         { q: "Name two of the four ways to say why something matters.", a: "Any two of: the problem it solves, life without it, who it's for, the single benefit.", bundle: 'free' },
@@ -2084,8 +2042,6 @@ const memorizeCollections = {
   givingexamples: [
     {
       name: "Core Idea",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The shape of the pack: five example types and the rules for choosing between them honestly.",
       cards: [
         { q: "What are the five example types in this pack?", a: "Your own experience, the everyday example, the imagined case, the shared example, numbers and evidence.", bundle: 'free' },
@@ -2098,8 +2054,6 @@ const memorizeCollections = {
     },
     {
       name: "From Your Own Experience",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The type where you are the source.",
       cards: [
         { q: "Why is personal experience persuasive?", a: "It is specific, it is yours, and nobody can tell you it did not happen.", bundle: 'free' },
@@ -2112,8 +2066,6 @@ const memorizeCollections = {
     },
     {
       name: "The Everyday Example",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The type that works by letting the listener check it against their own life.",
       cards: [
         { q: "Why does a common example need no evidence?", a: "The listener checks it against their own experience immediately.", bundle: 'free' },
@@ -2126,8 +2078,6 @@ const memorizeCollections = {
     },
     {
       name: "The Imagined Case",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The type you use when there is no real case, marked clearly as imagined.",
       cards: [
         { q: "What is the imagined case for?", a: "Testing an idea somewhere safe, without arguing about the facts of a real case.", bundle: 'free' },
@@ -2140,8 +2090,6 @@ const memorizeCollections = {
     },
     {
       name: "The Shared Example",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The type that works through recognition rather than explanation.",
       cards: [
         { q: "Why is a shared example fast?", a: "You do not have to establish it, only point at it.", bundle: 'free' },
@@ -2154,8 +2102,6 @@ const memorizeCollections = {
     },
     {
       name: "Numbers and Evidence",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The strongest type when honest, the most damaging when not.",
       cards: [
         { q: "What is the rule for using a number?", a: "Only one you actually know, with its source said.", bundle: 'free' },
@@ -2320,8 +2266,6 @@ const memorizeCollections = {
   storiesinconversation: [
     {
       name: "Core Idea",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The shape of the pack: the social side of telling a story, as opposed to what goes in it.",
       cards: [
         { q: "What are the seven strategies in this pack?", a: "Read the Room First, Ask for the Floor, Answer Don't Outdo, Watch Them While You Tell It, Cut It Loose, Finish on Purpose, Give It Back.", bundle: 'free' },
@@ -2333,8 +2277,6 @@ const memorizeCollections = {
     },
     {
       name: "Read the Room First",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "Whether a story belongs here at all.",
       cards: [
         { q: "What is the question to ask before starting?", a: "Not whether the story is good — whether this moment wants one.", bundle: 'free' },
@@ -2346,8 +2288,6 @@ const memorizeCollections = {
     },
     {
       name: "Ask for the Floor",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "Taking the turn openly, and saying how big it is.",
       cards: [
         { q: "What are the three parts?", a: "Ask or signal, say the size honestly, and say what kind of story it is if that helps.", bundle: 'free' },
@@ -2359,8 +2299,6 @@ const memorizeCollections = {
     },
     {
       name: "Answer, Don't Outdo",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "Following someone else's story without competing.",
       cards: [
         { q: "What is the move?", a: "Tell one that answers theirs rather than beats it — put yours beside theirs, not on top.", bundle: 'free' },
@@ -2372,8 +2310,6 @@ const memorizeCollections = {
     },
     {
       name: "Watch Them While You Tell It",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "Reading the listener mid-story.",
       cards: [
         { q: "What are the three signals?", a: "Questions and reactions mean keep going; repeated \"right\" and \"mm\" mean cut; eyes moving away means land it now.", bundle: 'free' },
@@ -2385,8 +2321,6 @@ const memorizeCollections = {
     },
     {
       name: "Cut It Loose",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "Abandoning a story that is not working.",
       cards: [
         { q: "What is the move?", a: "Abandon it out loud and lightly, instead of finishing out of stubbornness.", bundle: 'free' },
@@ -2398,8 +2332,6 @@ const memorizeCollections = {
     },
     {
       name: "Finish on Purpose",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "Ending on the line you told it for.",
       cards: [
         { q: "What is the rule?", a: "End on the line you told it for, then stop talking.", bundle: 'free' },
@@ -2411,8 +2343,6 @@ const memorizeCollections = {
     },
     {
       name: "Give It Back",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "Handing the floor on at the end.",
       cards: [
         { q: "What is the move?", a: "Hand the floor on when you finish — \"that's mine, has that ever happened to you?\"", bundle: 'free' },
@@ -2426,8 +2356,6 @@ const memorizeCollections = {
   praiseandencouragement: [
     {
       name: "Core Idea",
-      guideFront: "",
-      guideBack: "",
       description: "A five-step guide for praise: name the action, say what it did, say thank you, point forward, and offer something concrete.\n\nNot every occasion needs all five, but the order works because each step earns the next. Praise with a \"but\" attached is heard only as criticism.",
       cards: [
         { q: "What are the five steps in this pack?", a: "Name the positive action, highlight the impact, express appreciation, keep going, offer support.", bundle: 'free' },
@@ -2442,8 +2370,6 @@ const memorizeCollections = {
     },
     {
       name: "Name the Positive Action",
-      guideFront: "",
-      guideBack: "",
       cards: [
         { q: "Why is specific praise better than general praise?", a: "It tells them what to do again. General praise is only a mood.", bundle: 'free' },
         { q: "Give an example of turning general praise into specific praise.", a: "\"I liked your strong opening in the presentation\" instead of \"good job\".", bundle: 'free' },
@@ -2457,8 +2383,6 @@ const memorizeCollections = {
     },
     {
       name: "Highlight the Impact",
-      guideFront: "",
-      guideBack: "",
       cards: [
         { q: "What does this step describe?", a: "What the action did — to the outcome, to other people, or to you.", bundle: 'free' },
         { q: "Name two kinds of impact.", a: "Any two of: on the outcome, on other people, on you, on what comes next.", bundle: 'free' },
@@ -2472,8 +2396,6 @@ const memorizeCollections = {
     },
     {
       name: "Express Appreciation",
-      guideFront: "",
-      guideBack: "",
       cards: [
         { q: "What does this step add that the first two do not?", a: "Warmth — the first two are about the work, this one is about the relationship.", bundle: 'free' },
         { q: "What matters more than perfect words?", a: "Being genuine, and your tone and sincerity.", bundle: 'free' },
@@ -2487,8 +2409,6 @@ const memorizeCollections = {
     },
     {
       name: "Keep Going",
-      guideFront: "",
-      guideBack: "",
       cards: [
         { q: "When do most people stop?", a: "Just after a small success, when the pressure is off and the next attempt has no deadline.", bundle: 'free' },
         { q: "Name two ways to encourage.", a: "Any two of: name the thing to repeat, point at the next step, show the progress, express belief lightly.", bundle: 'free' },
@@ -2502,8 +2422,6 @@ const memorizeCollections = {
     },
     {
       name: "Offer Support",
-      guideFront: "",
-      guideBack: "",
       cards: [
         { q: "What does the support step do that encouragement alone does not?", a: "It removes a real obstacle instead of putting the whole task back on them.", bundle: 'free' },
         { q: "Name two ways to offer support.", a: "Any two of: a concrete task, your presence, an open door with a handle on it, removing an obstacle.", bundle: 'free' },
@@ -2575,8 +2493,6 @@ const memorizeCollections = {
   givingcriticism: [
     {
       name: "Core Idea",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The shape of the pack: a light version, a six-step version, and the judgement about which one this needs.",
       cards: [
         { q: "What are the two versions of criticism in this pack?", a: "The light version — one polite sentence — and the full six-step version, plus the judgement about which one to use.", bundle: 'free' },
@@ -2589,8 +2505,6 @@ const memorizeCollections = {
     },
     {
       name: "Say It Lightly",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The one-sentence version, which most things need.",
       cards: [
         { q: "When is the light version right?", a: "When the thing will not still matter in a month.", bundle: 'free' },
@@ -2603,8 +2517,6 @@ const memorizeCollections = {
     },
     {
       name: "Start With Something Real",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The opening step, and the most abused one.",
       cards: [
         { q: "What must the opening be?", a: "True, and short.", bundle: 'free' },
@@ -2617,8 +2529,6 @@ const memorizeCollections = {
     },
     {
       name: "Name the Behaviour",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "Where \"the behaviour, not the person\" actually lives.",
       cards: [
         { q: "What is the test for a properly named behaviour?", a: "Could a camera have recorded it?", bundle: 'free' },
@@ -2631,8 +2541,6 @@ const memorizeCollections = {
     },
     {
       name: "Explain the Impact",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The step that answers \"so what\".",
       cards: [
         { q: "What question does this step answer?", a: "So what — who is affected, and how.", bundle: 'free' },
@@ -2645,8 +2553,6 @@ const memorizeCollections = {
     },
     {
       name: "Suggest What to Do Instead",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The step that gives them somewhere to go.",
       cards: [
         { q: "Why is criticism without an alternative a problem?", a: "They know they are wrong and do not know what right looks like.", bundle: 'free' },
@@ -2659,8 +2565,6 @@ const memorizeCollections = {
     },
     {
       name: "Say What Improves If They Do",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The step that turns a complaint into a proposal.",
       cards: [
         { q: "What does this step change about the conversation?", a: "It turns a complaint into a proposal — there is now something to gain.", bundle: 'free' },
@@ -2673,8 +2577,6 @@ const memorizeCollections = {
     },
     {
       name: "Encourage and Offer Support",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The closing step, and what they carry out of the room.",
       cards: [
         { q: "Why does the last step matter so much?", a: "It is what they carry out of the room — confidence rather than fault.", bundle: 'free' },
@@ -3255,8 +3157,6 @@ const memorizeCollections = {
   persuasionandinfluence2: [
     {
       name: "Core Idea",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The shape of the pack: four strategies that remove an obstacle rather than adding an argument.",
       cards: [
         { q: "What are the four strategies in this pack?", a: "Ask a question instead, acknowledge before suggesting, make it easy to say yes, let them decide.", bundle: 'free' },
@@ -3269,8 +3169,6 @@ const memorizeCollections = {
     },
     {
       name: "Ask a Question Instead",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The strategy that lets them reach the conclusion themselves.",
       cards: [
         { q: "Why is a conclusion someone reaches themselves held more firmly?", a: "There is nothing to concede, so there is no losing an argument.", bundle: 'free' },
@@ -3283,8 +3181,6 @@ const memorizeCollections = {
     },
     {
       name: "Acknowledge Before Suggesting",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The strategy that stops a proposal being heard as a correction.",
       cards: [
         { q: "How is a proposal without acknowledgement heard?", a: "As a correction — and people defend against corrections.", bundle: 'free' },
@@ -3297,8 +3193,6 @@ const memorizeCollections = {
     },
     {
       name: "Make It Easy to Say Yes",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The strategy that shrinks the ask rather than strengthening the case.",
       cards: [
         { q: "What is most resistance actually about?", a: "The size of the commitment, not disagreement.", bundle: 'free' },
@@ -3311,8 +3205,6 @@ const memorizeCollections = {
     },
     {
       name: "Let Them Decide",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The strategy that separates influence from pressure.",
       cards: [
         { q: "What does naming their freedom remove?", a: "The pressure they are actually pushing against.", bundle: 'free' },
@@ -3327,8 +3219,6 @@ const memorizeCollections = {
   negotiationandcompromise: [
     {
       name: "Core Idea",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The shape of the pack: seven strategies, and the distinction the whole thing rests on.",
       cards: [
         { q: "What are the seven strategies in this pack?", a: "State what you want, show you understood theirs, ask what matters most, offer something that includes both, split it up, say what you cannot move on, refine it together.", bundle: 'free' },
@@ -3341,8 +3231,6 @@ const memorizeCollections = {
     },
     {
       name: "State What You Want",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The opening move, and the one that is most often missing.",
       cards: [
         { q: "Why does a negotiation stall if you never state your preference?", a: "It cannot start until both positions are on the table.", bundle: 'free' },
@@ -3355,8 +3243,6 @@ const memorizeCollections = {
     },
     {
       name: "Show You Understood Theirs",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The move that stops the same argument being repeated louder.",
       cards: [
         { q: "What are the two useful outcomes of saying their position back?", a: "Either you have it confirmed, or you get corrected — both are useful.", bundle: 'free' },
@@ -3369,8 +3255,6 @@ const memorizeCollections = {
     },
     {
       name: "Ask What Matters Most",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The strategy that turns splitting the difference into finding a solution.",
       cards: [
         { q: "What does this strategy find?", a: "The need underneath the position — the part they actually care about.", bundle: 'free' },
@@ -3383,8 +3267,6 @@ const memorizeCollections = {
     },
     {
       name: "Offer Something That Includes Both",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The strategy that builds an arrangement people defend.",
       cards: [
         { q: "Why does a genuine combination hold better than a midpoint?", a: "Both people got something they wanted, so both defend it.", bundle: 'free' },
@@ -3397,8 +3279,6 @@ const memorizeCollections = {
     },
     {
       name: "Split It Up",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The fastest way out of a stuck conversation.",
       cards: [
         { q: "What does splitting reveal?", a: "That you agree on part of it, so the real disagreement is smaller than it looked.", bundle: 'free' },
@@ -3411,8 +3291,6 @@ const memorizeCollections = {
     },
     {
       name: "Say What You Cannot Move On",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The strategy that keeps compromise from becoming slow concession.",
       cards: [
         { q: "Why does a negotiation need limits?", a: "Without them it is a slow concession, and the conceding person ends up resentful.", bundle: 'free' },
@@ -3425,8 +3303,6 @@ const memorizeCollections = {
     },
     {
       name: "Refine It Together",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The strategy that turns a tolerated arrangement into an agreed one.",
       cards: [
         { q: "How should you treat the first solution?", a: "As a draft.", bundle: 'free' },
@@ -5414,8 +5290,6 @@ const memorizeCollections = {
   listeningthroughquestions: [
     {
       name: "Core Idea",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "What the seven question types are for, and how to choose.",
       cards: [
         { q: "What is this pack for?", a: "The questions you ask while somebody is telling you about something that happened to them.", bundle: 'free' },
@@ -5428,8 +5302,6 @@ const memorizeCollections = {
     },
     {
       name: "Ask About the Detail",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The theory behind picking one thing out.",
       cards: [
         { q: "What is the detail question?", a: "Picking one small thing they said — a name, a place, an object, an odd word — and asking about that.", bundle: 'free' },
@@ -5441,8 +5313,6 @@ const memorizeCollections = {
     },
     {
       name: "Ask What Happened Next",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The theory behind the sequence question.",
       cards: [
         { q: "What does the sequence question do?", a: "Turns a verdict into a story — \"it was a nightmare\" becomes something you can follow.", bundle: 'free' },
@@ -5454,8 +5324,6 @@ const memorizeCollections = {
     },
     {
       name: "Ask Why It Happened",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The theory behind the cause question.",
       cards: [
         { q: "What does the why question add?", a: "The explanation — which is where the person appears in their own story rather than being someone things happened to.", bundle: 'free' },
@@ -5467,8 +5335,6 @@ const memorizeCollections = {
     },
     {
       name: "Ask How It Felt",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The theory behind the reaction question.",
       cards: [
         { q: "Why is the feeling question worth asking?", a: "Most accounts are given in facts, and the facts are not what the person is carrying.", bundle: 'free' },
@@ -5480,8 +5346,6 @@ const memorizeCollections = {
     },
     {
       name: "Ask About the Hard Part",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The theory behind the obstacle question.",
       cards: [
         { q: "Why ask about the difficult bit?", a: "Everything worth telling has an obstacle in it, and the obstacle is where the person had to do something.", bundle: 'free' },
@@ -5493,8 +5357,6 @@ const memorizeCollections = {
     },
     {
       name: "Ask How It Looked From Elsewhere",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The theory behind the perspective question.",
       cards: [
         { q: "What does the perspective question do?", a: "Invites them out of the single vantage point the account was given from.", bundle: 'free' },
@@ -5506,8 +5368,6 @@ const memorizeCollections = {
     },
     {
       name: "Ask What They Took From It",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The theory behind the closing question.",
       cards: [
         { q: "What is this question for?", a: "Closing a subject properly rather than letting it trail off.", bundle: 'free' },
@@ -5521,8 +5381,6 @@ const memorizeCollections = {
   showunderstanding2: [
     {
       name: "Core Idea",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "What this pack adds to Show Understanding Pt. 1.",
       cards: [
         { q: "What does Pt. 1 cover?", a: "Three ways to show you heard the last thing — a follow-up question, a rephrase, and sharing a similar experience.", bundle: 'free' },
@@ -5535,8 +5393,6 @@ const memorizeCollections = {
     },
     {
       name: "Check Your Version",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The theory behind explicit checking.",
       cards: [
         { q: "What makes this different from just rephrasing?", a: "The question at the end. It turns a claim about their meaning into an offer they can correct.", bundle: 'free' },
@@ -5548,8 +5404,6 @@ const memorizeCollections = {
     },
     {
       name: "Link to Earlier",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The theory behind carrying a detail forward.",
       cards: [
         { q: "What does connecting prove?", a: "That you have followed the whole conversation, not just the current sentence.", bundle: 'free' },
@@ -5562,8 +5416,6 @@ const memorizeCollections = {
     },
     {
       name: "Sum It Up",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The theory behind the long loop.",
       cards: [
         { q: "When does a summary belong?", a: "At the end of a stretch, not in the middle of one.", bundle: 'free' },
@@ -5576,8 +5428,6 @@ const memorizeCollections = {
     },
     {
       name: "Shared Feeling",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The theory behind sharing the feeling.",
       cards: [
         { q: "What do you share — the feeling or the story?", a: "The feeling. The story is a different conversation.", bundle: 'free' },
@@ -5589,8 +5439,6 @@ const memorizeCollections = {
     },
     {
       name: "Shared Value",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The theory behind meeting what is underneath.",
       cards: [
         { q: "What are people usually explaining when they explain a grievance?", a: "A value — fairness, being consulted, honesty, not letting someone down.", bundle: 'free' },
@@ -5602,8 +5450,6 @@ const memorizeCollections = {
     },
     {
       name: "Share and Return",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The theory behind the disclosure that returns.",
       cards: [
         { q: "Which half of this strategy is the strategy?", a: "The second — the same disclosure is generous when it returns and a hijack when it does not.", bundle: 'free' },
@@ -6082,8 +5928,6 @@ const memorizeCollections = {
   storybanter: [
     {
       name: "The Arc",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The six beats of a banter story, and what each one is for.",
       cards: [
         { q: "What are the six beats of a banter story?", a: "Trigger, invitation, exaggerated response, building together, escalating, and the wrap-up.", bundle: 'free' },
@@ -6096,8 +5940,6 @@ const memorizeCollections = {
     },
     {
       name: "Yes, And",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The theory behind accepting and adding.",
       cards: [
         { q: "What does \"yes, and\" mean in practice?", a: "Accept whatever they added without questioning it, and put one thing on top.", bundle: 'free' },
@@ -6110,8 +5952,6 @@ const memorizeCollections = {
     },
     {
       name: "What If",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The theory behind adding a complication.",
       cards: [
         { q: "What does a \"what if\" add?", a: "A problem — a threat to the plan rather than more of the plan.", bundle: 'free' },
@@ -6124,8 +5964,6 @@ const memorizeCollections = {
     },
     {
       name: "Make It Bigger",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The theory behind exaggeration in a shared story.",
       cards: [
         { q: "What is exaggeration doing here?", a: "Inflating what was just said past the point of sense — the gap between the two is the joke.", bundle: 'free' },
@@ -6138,8 +5976,6 @@ const memorizeCollections = {
     },
     {
       name: "Bring Someone In",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The theory behind adding characters.",
       cards: [
         { q: "What does a new character give the story?", a: "A reaction — and a reaction is the most reliable source of comedy available.", bundle: 'free' },
@@ -6152,8 +5988,6 @@ const memorizeCollections = {
     },
     {
       name: "Then What Happens",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The theory behind following the consequence.",
       cards: [
         { q: "What is the consequence technique?", a: "Following the last idea to what must now happen because of it, rather than inventing something new.", bundle: 'free' },
@@ -6166,8 +6000,6 @@ const memorizeCollections = {
     },
     {
       name: "Solve It Ridiculously",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The theory behind the absurd solution.",
       cards: [
         { q: "What is an absurd solution?", a: "A fix that could not possibly work, delivered as though the only question left is logistics.", bundle: 'free' },
@@ -6182,8 +6014,6 @@ const memorizeCollections = {
   explainthings2: [
     {
       name: "Core Idea",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The six question words, and how the two packs divide them.",
       cards: [
         { q: "What are the six question words?", a: "What, How, Why, When, Where and Who.", bundle: 'free' },
@@ -6196,8 +6026,6 @@ const memorizeCollections = {
     },
     {
       name: "When It Comes Up",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The theory behind the When piece.",
       cards: [
         { q: "What does the When piece answer?", a: "The moment or situation that calls for the thing.", bundle: 'free' },
@@ -6210,8 +6038,6 @@ const memorizeCollections = {
     },
     {
       name: "Where It Belongs",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The theory behind the Where piece.",
       cards: [
         { q: "What does the Where piece answer?", a: "The setting or the point in a process where the thing fits — not where it is physically kept.", bundle: 'free' },
@@ -6224,8 +6050,6 @@ const memorizeCollections = {
     },
     {
       name: "Who It Is For",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The theory behind the Who piece.",
       cards: [
         { q: "What does the Who piece answer?", a: "Which group the thing is built for — and which it is not.", bundle: 'free' },
@@ -6238,8 +6062,6 @@ const memorizeCollections = {
     },
     {
       name: "Short Version First",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The theory behind levels of detail.",
       cards: [
         { q: "What is the correct first answer?", a: "The one-sentence version, in words they already have.", bundle: 'free' },
@@ -6252,8 +6074,6 @@ const memorizeCollections = {
     },
     {
       name: "The W They Need",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The theory behind picking the right piece.",
       cards: [
         { q: "What does \"what is it?\" usually mean?", a: "\"Would I ever need this?\" — the literal answer is rarely the useful one.", bundle: 'free' },
@@ -6268,8 +6088,6 @@ const memorizeCollections = {
   buildingastory: [
     {
       name: "Core Idea",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The shape of a told story, and what this pack covers that the others do not.",
       cards: [
         { q: "What are the four parts of a told story?", a: "The opening, the turn, the resolution, and the takeaway — the last of which is optional.", bundle: 'free' },
@@ -6282,8 +6100,6 @@ const memorizeCollections = {
     },
     {
       name: "Open It in One Sentence",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The theory behind the setup.",
       cards: [
         { q: "How long should the opening be?", a: "One to three sentences.", bundle: 'free' },
@@ -6296,8 +6112,6 @@ const memorizeCollections = {
     },
     {
       name: "Name the Turn",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The theory behind the turning point.",
       cards: [
         { q: "What is the turn?", a: "The moment the ordinary became a story — the problem, the surprise, the decision, the realisation.", bundle: 'free' },
@@ -6310,8 +6124,6 @@ const memorizeCollections = {
     },
     {
       name: "Land the Resolution",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The theory behind the ending.",
       cards: [
         { q: "What does a resolution contain?", a: "What you did, and what happened because of it — in that order.", bundle: 'free' },
@@ -6323,8 +6135,6 @@ const memorizeCollections = {
     },
     {
       name: "Say the Takeaway",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The theory behind the lesson — including when not to have one.",
       cards: [
         { q: "What is the takeaway?", a: "What changed, what you understood, or what you would tell somebody in the same position.", bundle: 'free' },
@@ -6337,8 +6147,6 @@ const memorizeCollections = {
     },
     {
       name: "Pick One Fast",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The theory behind telling one on the spot.",
       cards: [
         { q: "How long should choosing take?", a: "About fifteen seconds. Then start, even if you have not worked out the ending.", bundle: 'free' },
@@ -6351,8 +6159,6 @@ const memorizeCollections = {
     },
     {
       name: "Tell It With the Feeling In It",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The theory behind the emotional telling.",
       cards: [
         { q: "Why does the feeling matter more than the events?", a: "Listeners follow feeling more closely than they follow events. Without it an account is a report.", bundle: 'free' },
@@ -6367,8 +6173,6 @@ const memorizeCollections = {
   reframing: [
     {
       name: "Core Idea",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "What reframing is, and what it is not.",
       cards: [
         { q: "What is reframing?", a: "Taking the same facts and offering a different reading of them — the facts do not move, only the frame around them.", bundle: 'free' },
@@ -6381,8 +6185,6 @@ const memorizeCollections = {
     },
     {
       name: "The Positive Reframe",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The theory behind finding the upside.",
       cards: [
         { q: "What is a positive reframe?", a: "The true upside in something presented as bad — the reading that was available and unused.", bundle: 'free' },
@@ -6394,8 +6196,6 @@ const memorizeCollections = {
     },
     {
       name: "The Context Reframe",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The theory behind moving the setting.",
       cards: [
         { q: "What is a context reframe?", a: "The same behaviour judged in a different setting, where it is an asset rather than a fault.", bundle: 'free' },
@@ -6407,8 +6207,6 @@ const memorizeCollections = {
     },
     {
       name: "The Meaning Reframe",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The theory behind changing the conclusion.",
       cards: [
         { q: "What is a meaning reframe?", a: "Leaving the event exactly as it was and changing what it is taken to mean.", bundle: 'free' },
@@ -6420,8 +6218,6 @@ const memorizeCollections = {
     },
     {
       name: "The Humorous Reframe",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The theory behind using scale.",
       cards: [
         { q: "What does a humorous reframe aim at?", a: "The size of the thing — usually smaller than it is being treated, occasionally absurdly larger.", bundle: 'free' },
@@ -6433,8 +6229,6 @@ const memorizeCollections = {
     },
     {
       name: "Reframe What They Said About You",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The theory behind answering a label.",
       cards: [
         { q: "What is the move when somebody labels you?", a: "Agree with the behaviour, decline the verdict, and give it your own word.", bundle: 'free' },
@@ -6446,8 +6240,6 @@ const memorizeCollections = {
     },
     {
       name: "Offer It, Don't Impose It",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The theory behind delivery.",
       cards: [
         { q: "What has to come before a reframe?", a: "One true sentence acknowledging how it actually is.", bundle: 'free' },
@@ -6459,8 +6251,6 @@ const memorizeCollections = {
     },
     {
       name: "Know When Not To",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The theory behind the limits.",
       cards: [
         { q: "When should you not reframe?", a: "When the thing is genuinely bad, when the feeling has not been heard yet, and when the feeling is the accurate response.", bundle: 'free' },
@@ -7695,8 +7485,6 @@ const memorizeCollections = {
   startingconversations4: [
     {
       name: "Core Idea",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The shape of the pack: four openers where you go first and put something of your own forward.",
       cards: [
         { q: "What are the four openers in this pack?", a: "Use humour or irony, say how you feel, say why you came over, mention something that happened.", bundle: 'free' },
@@ -7709,8 +7497,6 @@ const memorizeCollections = {
     },
     {
       name: "Joke About the Situation",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The opener that skips three minutes of small talk when it lands.",
       cards: [
         { q: "What is the one rule for humour as an opener?", a: "Aim it at the situation, never at the person.", bundle: 'free' },
@@ -7723,8 +7509,6 @@ const memorizeCollections = {
     },
     {
       name: "Say How You Feel",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The opener that gives other people permission.",
       cards: [
         { q: "Why does naming a feeling work as an opener?", a: "Several people feel the same and none has said it, so the first to admit it relieves everyone.", bundle: 'free' },
@@ -7737,8 +7521,6 @@ const memorizeCollections = {
     },
     {
       name: "Say Why You Came Over",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The most honest opener in the set, and the one that works best.",
       cards: [
         { q: "What does naming the approach remove?", a: "The unspoken question of why you are talking to them.", bundle: 'free' },
@@ -7751,8 +7533,6 @@ const memorizeCollections = {
     },
     {
       name: "Bring Something In",
-      guideFront: "A question about the method.",
-      guideBack: "The answer.",
       description: "The only opener that is not about the situation, you, or them.",
       cards: [
         { q: "What does this opener give the other person?", a: "Something to have an opinion about, which is easier than being asked about themselves.", bundle: 'free' },

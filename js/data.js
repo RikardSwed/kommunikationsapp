@@ -9482,8 +9482,8 @@ const collectionsModeData = {
   setupstatement: [
     {
       name: "Read the Moment",
-      guideFront: "Which type fits this moment?",
-      guideBack: "A possible response, with the type in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "A choice between the two setups that respond to what's already in front of you: Opinion (react to something present — the food, the film, the venue) and Feeling (name the mood — tired, nervous, upbeat). Opinion fits when there's a thing to have a view on; Feeling fits when the feeling in the room is the most natural thing to name. Example: by a painting, an Opinion setup lands; at the end of a rough day, a Feeling one does.\n\nThe two options:\n1. Opinion Setup — there is something present to have a view on. \"This playlist is great — what about you?\"\n2. Feeling Setup — the mood in the room is the obvious thing. \"I'm wiped out today — how are you doing?\"\n\nLook around before you choose. If there is a thing in front of you both, react to the thing; if the room itself has a feeling, name that instead.\n\nMindset: both of these read the moment rather than importing a topic. That is what makes them feel natural instead of rehearsed.",
       inputs: [
         { q: "You're both looking at the same painting in a gallery.", a: "\"I can't decide if I love this or hate it. What do you make of it?\" [Opinion Setup]", guideBack: "Your view, then theirs", bundle: 'pro' },
@@ -9496,8 +9496,8 @@ const collectionsModeData = {
     },
     {
       name: "Share About You",
-      guideFront: "Which type fits this moment?",
-      guideBack: "A possible response, with the type in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "A choice between the three setups where you supply your own content: Purpose (why you're here), Action (what you're doing or working on), and Arrival (where you came from). All three give the other person a thread when there's nothing present to react to — pick whichever is true and easy in the moment. Example: at a new class you might open with Purpose (\"here to get better\") or Action (\"just started this\") — either works.\n\nThe three options:\n1. Purpose Setup — why you are here. \"I came to meet a few new people.\"\n2. Action Setup — what you are doing. \"I'm trying to learn the guitar.\"\n3. Arrival Setup — where you came from. \"I came straight from work and I'm starving.\"\n\nThese are for when there is nothing present to react to. Pick whichever is true and requires no thinking — the effort should go into the question, not the setup.\n\nMindset: you always have all three available. That is the point of this group: you are never actually stuck for an opener.",
       inputs: [
         { q: "First evening of a course where nobody knows anybody.", a: "\"I'm here to finally get better at this. What brings you?\" [Purpose Setup]", guideBack: "Your reason, then theirs", bundle: 'pro' },
@@ -9510,8 +9510,8 @@ const collectionsModeData = {
     },
     {
       name: "Choosing Your Setup",
-      guideFront: "Which type fits this moment?",
-      guideBack: "A possible response, with the type in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The full choice between all five setup types. Each moment could be opened several ways, but one usually fits best: Opinion when there's something to react to, Purpose when you're both new to a place, Feeling when the mood is worth naming, Action when you want a concrete thread, and Arrival when a little story fits. Example: at a quiet party near the food, an Opinion setup (\"these are great — what have you tried?\") lands more easily than asking why they came.\n\nThe five, with the cue for each:\n1. Opinion — there is something to react to. \"This playlist is great — what about you?\"\n2. Purpose — you are both new here. \"I came to meet people — what brought you?\"\n3. Feeling — the mood is worth naming. \"I'm wiped out — how are you doing?\"\n4. Action — you want a concrete thread. \"I'm learning guitar — you working on anything?\"\n5. Arrival — a little story fits. \"I came straight from work — where are you coming from?\"\n\nMindset: there is no wrong one, only a more natural one. What matters far more than the choice is that you go first at all.",
       inputs: [
         { q: "You're both looking at the same painting in a gallery.", a: "\"I can't decide if I love this or hate it. What do you make of it?\" [Opinion Setup]", guideBack: "Your view, then theirs", bundle: 'pro' },
@@ -9575,8 +9575,8 @@ const collectionsModeData = {
   startingconversations3: [
     {
       name: "Something You Noticed",
-      guideFront: "Which opener fits this moment?",
-      guideBack: "A possible opener, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The compliment and the guess. Both are observations you hand over: you have noticed something and you are saying it out loud, leaving them to agree, correct or expand.\n\nThe difference is what you do with the observation. A compliment states it as a fact and gives it as a gift. A guess states it as an offer and asks to be checked, which invites more words back.\n\nIf you are confident and it is positive, compliment. If you are unsure, or want them talking, guess — the uncertainty is doing useful work.\n\nMindset: both put your attention on them. That is the gift, whichever form it takes.",
       inputs: [
         { q: "Someone is wearing something you actually like.", a: "\"That's a great jacket. Where's it from?\" [Compliment Something Specific]", guideBack: "One detail you noticed and liked", bundle: 'pro' },
@@ -9590,8 +9590,8 @@ const collectionsModeData = {
     },
     {
       name: "Something You Asked",
-      guideFront: "Which opener fits this moment?",
-      guideBack: "A possible opener, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Asking about their life and asking how they really are. Both are questions about the person, and the difference is time: one is about their life in general, the other is about right now.\n\nAsk about their life when things are ordinary and you want to know them. Ask how they really are when you have noticed something — a mood, a hard week, something coming up — because without that noticing, the question is just the ritual version and gets the ritual answer.\n\nThe second one carries an obligation the first does not. Do not ask it unless you have a few minutes.\n\nMindset: the first question opens a door. The second one asks whether they want to use it.",
       inputs: [
         { q: "You are next to someone at a course and things are perfectly normal.", a: "\"What brought you to this one?\" [Ask About Them]", guideBack: "A question about who they are", bundle: 'pro' },
@@ -9605,8 +9605,8 @@ const collectionsModeData = {
     },
     {
       name: "All Four",
-      guideFront: "Which opener fits this moment?",
-      guideBack: "A possible opener, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The full set. All four turn the attention onto the other person, and choosing between them is really a question of how much attention this moment can carry.\n\nA rough guide: a compliment is the lightest and works anywhere. A guess is light too and gets more back. Asking about their life needs a few minutes. Asking how they really are needs a few minutes and a reason.\n\nThe failure that runs through all four is doing too much at once — a compliment, then a guess, then two questions, and the other person is being interviewed by someone they met ninety seconds ago.\n\nMindset: one move, then listen. The next move should come out of their answer, not out of the list.",
       inputs: [
         { q: "You are next to someone at an event and neither of you has spoken.", a: "\"That's a good bag. Is it as heavy as it looks?\" [Compliment Something Specific]", guideBack: "One detail you noticed and liked", bundle: 'pro' },
@@ -9722,8 +9722,8 @@ const collectionsModeData = {
   deepquestions: [
     {
       name: "Simple or Deep",
-      guideFront: "Which question does this moment call for?",
-      guideBack: "A possible question, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "A choice between the two gears: Start with Simple Questions (easy and factual, when you barely know them and have nothing to work with) and Link and Go Deeper (use a detail they just handed you as a bridge to a bigger question). Simple when the material is thin; link when they have given you something. Example: a stranger at a party gets a simple question (\"how do you know everyone here?\"), while \"I moved here from a tiny village\" gets a link (\"you said tiny — what was that like?\").\n\nThe two options:\n1. Start with Simple Questions — you have nothing to build on. \"So how do you know everyone here?\"\n2. Link and Go Deeper — they just handed you a detail. \"You said tiny — what was that like?\"\n\nThe tell is whether their last answer contained anything with weight in it. If it did, link to it; if it was bare, ask another easy one.\n\nMindset: too early is the same as too much. A big question asked before there is material lands as intrusive rather than interested.",
       inputs: [
         { q: "You have just sat down next to someone you have never met.", a: "\"So how do you know everyone here?\" [Start with Simple Questions]", bundle: 'pro' },
@@ -9736,8 +9736,8 @@ const collectionsModeData = {
     },
     {
       name: "Values, Beliefs or Experiences",
-      guideFront: "Which question does this moment call for?",
-      guideBack: "A possible question, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The three directions a deep question can take, once you have something to work with: Explore Values (what matters and why), Explore Beliefs (what they think is true), Explore Experiences (what happened and what it was like). Let what they said decide — a choice points to values, an opinion points to beliefs, an event points to experiences. Example: \"I turned down a promotion\" is a choice, so it takes a values question (\"what mattered more than the job?\").\n\nThe three options, and what points to each:\n1. Explore Values — they mentioned a choice. \"What mattered more to you than the job?\"\n2. Explore Beliefs — they mentioned an opinion. \"So what do you think decides it?\"\n3. Explore Experiences — they mentioned an event. \"What was the hardest part?\"\n\nWhen more than one would fit, experiences is the safest opening and values the deepest. Beliefs sits between them.\n\nMindset: let their words choose, not your curiosity. The question that follows what they actually said is the one that feels like listening.",
       inputs: [
         { q: "They say: \"I turned down a promotion last year.\"", a: "\"What mattered more to you than the job?\" [Explore Values]", bundle: 'pro' },
@@ -9750,8 +9750,8 @@ const collectionsModeData = {
     },
     {
       name: "Any Deep Question",
-      guideFront: "Which question does this moment call for?",
-      guideBack: "A possible question, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The full choice between all five moves. Most moments could take several, but one usually fits best: simple questions when you have nothing yet, a link when they just gave you a detail, then values, beliefs or experiences depending on whether they mentioned a choice, an opinion or an event. Reading which one the moment is asking for is the whole skill. Example: someone you met two minutes ago gets a simple question, not a values one — the material has to come first.\n\nThe five, with the cue for each:\n1. Start with Simple Questions — you have nothing yet. \"So what brings you here tonight?\"\n2. Link and Go Deeper — they just gave you a detail. \"Since fifteen — what has kept you at it?\"\n3. Explore Values — they mentioned a choice. \"What were you protecting?\"\n4. Explore Beliefs — they mentioned an opinion. \"Do you think that beats being taught it?\"\n5. Explore Experiences — they mentioned an event. \"What was going through your head?\"\n\nMindset: reading which one the moment is asking for is the whole skill. The moves themselves are simple; the timing is what takes practice.",
       inputs: [
         { q: "A stranger sits down next to you and you know nothing about them.", a: "\"So what brings you here tonight?\" [Start with Simple Questions]", bundle: 'pro' },
@@ -9868,8 +9868,8 @@ const collectionsModeData = {
   validation: [
     {
       name: "Feeling or Reaction",
-      guideFront: "What needs validating here?",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The first choice: is it the emotion that needs acknowledging, or their worry about having had it?\n\nThese two look similar and answer different questions. Reflecting says \"I can see what you felt\". Normalising says \"and there is nothing wrong with feeling it\". People who are already comfortable with their feelings only need the first; people apologising for theirs need the second.\n\nThe two options:\n1. Reflect the Feeling — they have said what they feel, plainly. \"That sounds like it properly got under your skin.\"\n2. Normalise the Reaction — they are worried they are overdoing it. \"You're not overreacting. Anyone would have.\"\n\nThe tell is in their wording. \"I was furious\" wants reflecting. \"I'm probably overreacting, but I was furious\" wants normalising, because they have asked you a question.\n\nMindset: when somebody pre-apologises for a feeling, answer the apology first. Reflecting a feeling they are ashamed of leaves the shame exactly where it was.",
       inputs: [
         { q: "They say: \"I was so annoyed I couldn't concentrate afterwards.\"", a: "\"That sounds like it properly got under your skin.\" [Reflect the Feeling]", bundle: 'pro' },
@@ -9882,8 +9882,8 @@ const collectionsModeData = {
     },
     {
       name: "Emotion or Reasoning",
-      guideFront: "What needs validating here?",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The second choice: are they upset, or are they defending a decision?\n\nThis is the one people get wrong most often. Somebody explaining why they made a choice does not want their feelings validated — it lands as being handled. They want to hear that their thinking was sound.\n\nThe two options:\n1. Reflect the Feeling — the emotion is what is on the table. \"That must have been genuinely upsetting.\"\n2. Acknowledge the Perspective — a choice or a view is what is on the table. \"I can see why you approached it that way.\"\n\nListen for what the sentence is doing. \"I felt awful about it\" is a feeling. \"I only did it because they needed an answer\" is a case being made, and a case wants a verdict on the reasoning.\n\nMindset: validating a feeling when somebody is defending a decision reads as changing the subject. Answer the thing they actually put in front of you.",
       inputs: [
         { q: "They say: \"I said yes because they needed an answer that day.\"", a: "\"That makes sense. Waiting would have cost more.\" [Acknowledge the Perspective]", bundle: 'pro' },
@@ -9896,8 +9896,8 @@ const collectionsModeData = {
     },
     {
       name: "Any of the Three",
-      guideFront: "What needs validating here?",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The full choice between the three things you can validate.\n\nThe three moves are not variations of one another — they validate different objects. Getting the right one is mostly a matter of noticing which of the three they have put in front of you.\n\nThe three, with the cue for each:\n1. Reflect the Feeling — they named an emotion. \"That sounds frustrating, and fairly so.\"\n2. Normalise the Reaction — they are worried the emotion is too big. \"Anyone would have felt that.\"\n3. Acknowledge the Perspective — they are defending a choice or a view. \"I see why you did it that way.\"\n\nWhen more than one fits, reflecting is the safest opening and acknowledging the perspective is the one that works when you disagree.\n\nMindset: validation is about acknowledging, not agreeing. All three of these work perfectly well on somebody you think is mistaken.",
       inputs: [
         { q: "They say: \"I burst into tears, which was embarrassing.\"", a: "\"After a day like that? Completely understandable.\" [Normalise the Reaction]", bundle: 'pro' },
@@ -9914,8 +9914,8 @@ const collectionsModeData = {
   supportingconversations: [
     {
       name: "Comfort or Forward",
-      guideFront: "What does this person need from you?",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Validation and listening on one side; encouragement and suggestion on the other. The first pair meets someone where they are. The second pair moves them somewhere.\n\nThe mistake is almost always going forward too early. Someone who has not yet felt heard experiences encouragement as dismissal and a suggestion as impatience, however kindly either is meant.\n\nThe order that works nearly always: meet them first, move second. And often the moving is not needed at all.\n\nMindset: meeting them costs you nothing and is never wrong. Moving them too early undoes it.",
       inputs: [
         { q: "A friend has just started describing something upsetting.", a: "\"That sounds horrible. What happened?\" [Just Listen]", bundle: 'pro' },
@@ -9929,8 +9929,8 @@ const collectionsModeData = {
     },
     {
       name: "Reading the Signals",
-      guideFront: "What does this person need from you?",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Working out what they need, and the option of asking outright. This is the diagnostic half of the pack, and it is where the value is.\n\nThe signals are more readable than people think. \"I don't know what to do\" asks for help. \"I can't believe he said that\" asks for acknowledgement. Someone still in full flow wants to be heard. Someone who has stopped and is looking at you wants a response.\n\nAnd when you cannot tell, asking is faster and more accurate than guessing. It is not a failure of intuition, and almost nobody minds being asked.\n\nMindset: read first, and ask when the reading is unclear.",
       inputs: [
         { q: "They say, \"I honestly don't know what to do about it.\"", a: "\"Shall we look at the options, then?\" [Respond With a Suggestion]", bundle: 'pro' },
@@ -9944,8 +9944,8 @@ const collectionsModeData = {
     },
     {
       name: "All Five",
-      guideFront: "What does this person need from you?",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The full set. In any real supportive conversation you will move between several of these, and the skill is noticing when what they need has changed.\n\nA rough guide: while they are talking, listen. When they stop, validate. If the problem is confidence, encourage. If the problem is not knowing what to do, suggest. If you cannot tell, ask.\n\nThe one thing that runs through all of it: whatever you choose, do it after they have felt heard rather than instead of it.\n\nMindset: one response, then check what it did. Their reaction tells you whether you read it right.",
       inputs: [
         { q: "A colleague starts telling you about a difficult meeting.", a: "\"Mm. What happened?\" [Just Listen]", bundle: 'pro' },
@@ -10061,8 +10061,8 @@ const collectionsModeData = {
   givingexamples: [
     {
       name: "What You Can Vouch For",
-      guideFront: "Which kind of example would land here?",
-      guideBack: "A possible example, with the type in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Your own experience and honest numbers — the two types where you are the source and can stand behind every word.\n\nUse them when credibility matters most: when someone is sceptical, when the stakes are real, or when you have been wrong before and want to be believed now.\n\nMindset: these are the two you can defend under questioning. Use them when you might be questioned.",
       inputs: [
         { q: "A colleague doubts that the delay is a real pattern.", a: "\"I logged it for two weeks. Nine days out of ten it slipped.\" [Numbers and Evidence]", bundle: 'pro' },
@@ -10076,8 +10076,8 @@ const collectionsModeData = {
     },
     {
       name: "What They Already Know",
-      guideFront: "Which kind of example would land here?",
-      guideBack: "A possible example, with the type in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Everyday examples and shared references — the two types that work through recognition. Neither needs establishing, so both are fast.\n\nUse them when you want a point to land immediately, when you are short of time, or when the listener has no reason to take your word for anything.\n\nMindset: these cost the listener nothing. That is their whole advantage.",
       inputs: [
         { q: "You want to show quickly why repeated warnings stop working.", a: "\"It's the boy who cried wolf.\" [The Shared Example]", bundle: 'pro' },
@@ -10091,8 +10091,8 @@ const collectionsModeData = {
     },
     {
       name: "All Five",
-      guideFront: "Which kind of example would land here?",
-      guideBack: "A possible example, with the type in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The full set. The skill is choosing, and the choice is usually decided by what the listener will accept rather than by which example is best.\n\nA rough guide: sceptical listener, use your own experience. Short of time, use an everyday one. No evidence at all, use an imagined case and say so. Strong shared context, use it. A real number in hand, use it and cite it.\n\nMindset: one example, well chosen, then stop. Three examples in a row reads as insecurity.",
       inputs: [
         { q: "You are arguing for a slower rollout to a sceptical manager.", a: "\"The April release went out in two days and cost us a week.\" [From Your Own Experience]", bundle: 'pro' },
@@ -10158,8 +10158,8 @@ const collectionsModeData = {
   storiesinconversation: [
     {
       name: "Before You Start",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Read the Room First, Ask for the Floor and Answer Don't Outdo — everything that happens before the first sentence of the story.\n\nThey answer three different questions. Does a story belong in this moment at all? Have you taken the turn openly, and do they know how long it is? And if someone has just told one, are you answering theirs or beating it?\n\nNearly every complaint about a storyteller comes from this collection rather than from the telling. A story that arrives at the wrong moment, without being asked for, and that outsizes the one before it, would be a problem even if it were told beautifully.\n\nMindset: the floor is borrowed. This is the part where you borrow it properly.",
       inputs: [
         { q: "A friend has just told you something serious about their health.", a: "(no story — stay with them) [Read the Room First]", bundle: 'pro' },
@@ -10173,8 +10173,8 @@ const collectionsModeData = {
     },
     {
       name: "While You Are Telling It",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Watch Them While You Tell It, Cut It Loose, Finish on Purpose and Give It Back — the four for once you have started.\n\nThe first is the one that governs the others. Reading the listener is what tells you whether to keep the detail, cut to the point, or abandon it entirely, and it is the step people skip because looking is uncomfortable when you suspect the answer.\n\nThe last two are about the ending, which is where most stories are lost. Trailing off takes the ending back off; stopping without handing over leaves the conversation stalled.\n\nMindset: the plan was a guess. Adjust while you are in it, and end on purpose.",
       inputs: [
         { q: "They have said \"right\" three times in a row.", a: "\"I'll skip the middle. Long story short, he'd taken the wrong car.\" [Watch Them While You Tell It]", bundle: 'pro' },
@@ -10188,8 +10188,8 @@ const collectionsModeData = {
     },
     {
       name: "All Seven",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Every strategy in the pack, mixed, in the order conversations actually produce them.\n\nThe seven split three and four. Three happen before you speak — whether, how, and in what proportion. Four happen once you are telling it — reading them, cutting, ending, and handing on.\n\nIf you are unsure which you need, the useful question is whose turn it is. Before you start, it is still theirs and you are asking for it. Once you are telling, it is yours and borrowed. When you finish, it goes back.\n\nMindset: a story is a contribution, not a performance.",
       inputs: [
         { q: "The group has been swapping stories for ten minutes.", a: "\"Right, I've got one, and it's worse than all of these.\" [Read the Room First]", bundle: 'pro' },
@@ -10255,8 +10255,8 @@ const collectionsModeData = {
   givingcriticism: [
     {
       name: "Light or Full",
-      guideFront: "Which move does this moment need?",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Choosing the size, and delivering the light version. These two go together because most criticism should be light, and the judgement about when it should not is what stops the light version becoming avoidance.\n\nThe test is whether it will still matter in a month. A one-off, a small habit, a thing they will probably notice themselves — one sentence. A pattern, something affecting other people, something you have already mentioned twice — sit down for it.\n\nThe failure runs both ways. The full process on a filename is humiliating. One light sentence about a serious pattern is a way of feeling you have raised it without actually raising it.\n\nMindset: match the size to the problem, and be honest about which you are avoiding.",
       inputs: [
         { q: "A colleague forgot an attachment for the first time.", a: "\"You've left the attachment off — could you resend?\" [Say It Lightly]", bundle: 'pro' },
@@ -10270,8 +10270,8 @@ const collectionsModeData = {
     },
     {
       name: "The Difficult Middle",
-      guideFront: "Which move does this moment need?",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Naming the behaviour, explaining the impact, and suggesting the alternative — the three steps that carry the actual criticism.\n\nThese are the ones people skip or blur. The behaviour gets softened into a character comment, the impact gets left out because it feels obvious, and the alternative gets replaced with \"just be more careful\", which is not an alternative at all.\n\nEach has its own test. The behaviour: could a camera have recorded it? The impact: so what — who is affected, and how? The alternative: could they try it tomorrow?\n\nMindset: these three are the criticism. Everything else is packaging.",
       inputs: [
         { q: "You are about to say a teammate is disorganised.", a: "\"Three of the last five came in after the date.\" [Name the Behaviour]", bundle: 'pro' },
@@ -10285,8 +10285,8 @@ const collectionsModeData = {
     },
     {
       name: "All Eight",
-      guideFront: "Which move does this moment need?",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The full set. A serious piece of criticism uses the six steps in order; an everyday one uses a single sentence. Choosing which is the first move, and that choice is a strategy in its own right.\n\nA rough guide through the six: open with something true, name what happened, say what it caused, offer an alternative, say what improves, and close with confidence and a real offer. The middle three are the criticism; the outer three are what make it possible to hear.\n\nThe most common damage comes from stopping halfway — naming the behaviour and the impact and then leaving, which is a complaint rather than a conversation.\n\nMindset: if you start the full version, finish it. The last two steps are the ones that make the first four land.",
       inputs: [
         { q: "You have decided this one needs a proper conversation.", a: "\"Can I grab you for ten minutes? Nothing dramatic.\" [Choose the Size]", bundle: 'pro' },
@@ -10302,8 +10302,8 @@ const collectionsModeData = {
   receivingfeedbackandcriticism: [
     {
       name: "Short or Full",
-      guideFront: "Which response does this moment need?",
-      guideBack: "A possible response, with the step in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The first decision when criticism arrives: does this need the full four-step response, or one line?\n\nRead the weight of it. Small, casual, said in passing, no real feeling behind it — one line. Considered, important to them, or about something that keeps happening — run the steps.\n\nThe two options:\n1. The Short Response — \"Fair enough, I'll sort it.\" For a throwaway comment.\n2. Acknowledge the Feedback, opening the full process — \"Thanks for telling me.\" When it deserves a real conversation.\n\nGetting this wrong costs you in both directions: a four-step response to a joke feels heavy, and a one-liner to something someone worked up the nerve to say feels like a brush-off.\n\nMindset: match the size of your answer to the size of the feedback, not to how uncomfortable you feel.",
       inputs: [
         { q: "A colleague mentions in passing: \"That slide was a bit busy.\"", a: "\"Fair enough — I'll trim it.\" [The Short Response]", bundle: 'pro' },
@@ -10316,8 +10316,8 @@ const collectionsModeData = {
     },
     {
       name: "Which Step Comes Next",
-      guideFront: "Which response does this moment need?",
-      guideBack: "A possible response, with the step in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Once you are inside the four-step response, the choice is about position: where are you in the exchange, and what has not been done yet?\n\nThe order is fixed, so the real question is \"what did I just do?\"\n\nThe four steps and the cue for each:\n1. Acknowledge the Feedback — nothing has been said yet. \"Thanks for telling me.\"\n2. Show You Understand Their View — you thanked them, they are still waiting to be understood. \"I can see how that looked.\"\n3. Reflect Openly — they feel understood, and now want to know what you make of it. \"That gives me something to think about.\"\n4. Look Ahead — it has been said, heard and considered. Close it. \"Next time I'll...\"\n\nMindset: skipping straight to Look Ahead is the most common mistake. A promise made before the person feels heard reads as a way of ending the conversation.",
       inputs: [
         { q: "They have just said your report was sloppy. You have said nothing yet.", a: "\"Thanks for telling me.\" [Acknowledge the Feedback]", bundle: 'pro' },
@@ -10332,8 +10332,8 @@ const collectionsModeData = {
     },
     {
       name: "Any Response to Criticism",
-      guideFront: "Which response does this moment need?",
-      guideBack: "A possible response, with the step in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The full choice between all five moves — the four steps plus the one-line version.\n\nMost moments could take several, but one usually fits best. What decides it is the weight of the feedback and where you already are in the exchange.\n\nThe five, with the cue for each:\n1. The Short Response — small or passing feedback. \"Fair enough, I'll sort it.\"\n2. Acknowledge the Feedback — it has just been said. \"Thanks for telling me.\"\n3. Show You Understand Their View — they still need to feel heard. \"I can see how that looked.\"\n4. Reflect Openly — they need to know what you make of it. \"I hadn't seen it that way.\"\n5. Look Ahead — time to close it. \"Next time I'll...\"\n\nMindset: not one of these moves requires you to agree. Every one of them works whether the criticism was fair or not.",
       inputs: [
         { q: "A colleague says in passing: \"That slide was a bit busy.\"", a: "\"Fair enough — I'll trim it.\" [The Short Response]", bundle: 'pro' },
@@ -10550,8 +10550,8 @@ const collectionsModeData = {
   persuasionandinfluence2: [
     {
       name: "Not Making It a Contest",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Asking a question and acknowledging before suggesting — the two strategies that stop a proposal becoming an argument in the first place.\n\nBoth remove the need for the other person to concede anything. A question lets them reach the conclusion themselves, so there is nothing to lose. An acknowledgement stops your idea arriving as a correction of theirs, so there is nothing to defend.\n\nReach for the question when they have not thought it through. Reach for the acknowledgement when they have an idea of their own already on the table.\n\nMindset: nobody has to be wrong for you to be right.",
       inputs: [
         { q: "They have proposed something and you are about to counter it.", a: "\"Yours is much easier to explain, which matters. There's a middle version too.\" [Acknowledge Before Suggesting]", guideBack: "What's right about theirs, then yours", bundle: 'pro' },
@@ -10565,8 +10565,8 @@ const collectionsModeData = {
     },
     {
       name: "Taking the Pressure Off",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Lowering the ask and handing the decision over — the two strategies that work on the size of what you are asking rather than on the case for it.\n\nThey answer the two commonest reasons a good proposal fails. Sometimes the commitment is simply too large to say yes to in one go. Sometimes the person is pushing back against being asked at all, rather than against the idea.\n\nBoth are counter-intuitive: you get further by wanting less, and further still by visibly stopping.\n\nMindset: when the case is made and nothing is happening, ask for less or stop asking.",
       inputs: [
         { q: "They will not commit to changing the whole process.", a: "\"Could we do it for one project and see?\" [Make It Easy to Say Yes]", guideBack: "A smaller, safer ask", bundle: 'pro' },
@@ -10580,8 +10580,8 @@ const collectionsModeData = {
     },
     {
       name: "All Four",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The full set. Each strategy removes a different obstacle, and the skill is noticing which obstacle you are actually facing.\n\nA rough guide: if they have not thought it through, ask a question. If they are defending their own idea, acknowledge it first. If they agree and nothing happens, the commitment is too big. And if they are resisting being asked rather than the idea itself, hand the decision over.\n\nThe thing they share: when a good case has failed, the problem is almost always here rather than in the case.\n\nMindset: take something away rather than adding another argument.",
       inputs: [
         { q: "They are defending their own approach.", a: "\"Yours is simpler to explain, and that's not nothing.\" [Acknowledge Before Suggesting]", guideBack: "What's right about theirs, then yours", bundle: 'pro' },
@@ -10597,8 +10597,8 @@ const collectionsModeData = {
   negotiationandcompromise: [
     {
       name: "Getting It on the Table",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Stating what you want, showing you understood theirs, and asking what matters most — the three strategies that come before any solution.\n\nAlmost every negotiation that goes badly skipped one of them. Nobody said plainly what they wanted, or nobody checked they had understood the other side, or — most often — nobody asked which parts actually mattered, so the whole thing became a contest between two positions.\n\nDo these three properly and the solution is frequently obvious. Skip them and you are guessing.\n\nMindset: the answer usually arrives once both people know what the other actually needs.",
       inputs: [
         { q: "A discussion has started and you have not said your preference.", a: "\"I'd like it in October. That's where I'm starting from.\" [State What You Want]", bundle: 'pro' },
@@ -10612,8 +10612,8 @@ const collectionsModeData = {
     },
     {
       name: "Building the Solution",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Offering something that includes both, splitting it up, and refining it together — the three strategies that make an actual arrangement.\n\nReach for the combination when you know both priorities. Reach for splitting when the disagreement is tangled or stuck, because agreement is nearly always available on part of it. And refine whatever you land on, because a first solution is a draft.\n\nThe failure they all guard against is the same one: settling on a midpoint that neither person wanted, and calling it a compromise.\n\nMindset: build it from what each of you needs, then adjust it until you would both defend it.",
       inputs: [
         { q: "You know what each of you cares about most.", a: "\"So: your date, my scope. That's the bit each of us wanted.\" [Offer Something That Includes Both]", bundle: 'pro' },
@@ -10627,8 +10627,8 @@ const collectionsModeData = {
     },
     {
       name: "All Seven",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The full set. A real negotiation moves through most of them, roughly in order, though the middle three get revisited whenever a solution turns out not to hold.\n\nA rough shape: say what you want, show you have understood theirs, find out what matters most on each side, name any limit, build something from both, split it if it is stuck, and refine what you land on.\n\nThe strategy people most often leave out is asking what matters most — and it is the one that turns splitting the difference into finding a solution.\n\nMindset: the aim is an arrangement you would both defend, not a winner.",
       inputs: [
         { q: "A discussion is starting and nobody has stated a preference.", a: "\"I'd like it in October. That's my starting point.\" [State What You Want]", bundle: 'pro' },
@@ -10844,8 +10844,8 @@ const collectionsModeData = {
   emotionlabellingandregulation: [
     {
       name: "Feeling or Signals",
-      guideFront: "What does this moment need putting into words?",
-      guideBack: "A possible response, with the move in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The choice between naming the feeling and describing what it did to you.\n\nWhat decides it is whether the word is available. Sometimes you know exactly what you felt; sometimes there is only a tight chest and a bad afternoon, and hunting for the perfect word just stalls you.\n\nThe two options:\n1. Label the Emotion — you have the word. \"I think I'm more hurt than annoyed.\"\n2. Describe the Signals — you do not. \"I read the message and my stomach just dropped.\"\n\nThey also work in sequence. Describing the signals is the reliable way to find a word you could not reach directly, so start with the body when the word will not come.\n\nMindset: no word is not the same as no feeling. Describing what happened to you is a complete contribution on its own.",
       inputs: [
         { q: "A friend cancelled again and you know exactly how it landed.", a: "\"I think I'm more hurt than annoyed about it.\" [Label the Emotion]", bundle: 'pro' },
@@ -10858,8 +10858,8 @@ const collectionsModeData = {
     },
     {
       name: "Yours or Theirs",
-      guideFront: "What does this moment need putting into words?",
-      guideBack: "A possible response, with the move in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The choice about whose feeling gets the words right now.\n\nIt is one of the easiest things to get wrong in a conversation. Someone opens up, and within thirty seconds you are describing your own version of the same thing — which is not listening, it is taking a turn.\n\nThe two options:\n1. Label the Emotion — the feeling in the room is yours. \"I'm feeling anxious about this.\"\n2. Label Their Emotion — it is theirs. \"It sounds like you felt disappointed.\"\n\nThe tell is simply who started. If they brought the situation, the words belong to them until they have finished finding theirs.\n\nMindset: your own experience is not the fastest route to understanding someone else's. Offer them a word before you offer them yours.",
       inputs: [
         { q: "A friend has just described being passed over for something.", a: "\"It sounds like that was disappointing. Was it?\" [Label Their Emotion]", bundle: 'pro' },
@@ -10872,8 +10872,8 @@ const collectionsModeData = {
     },
     {
       name: "Any Emotion Move",
-      guideFront: "What does this moment need putting into words?",
-      guideBack: "A possible response, with the move in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The full choice between all five moves.\n\nMost moments could take several, but one usually fits best. What decides it is where you are: at the start of explaining, in the middle of the feeling, or listening to someone else in theirs.\n\nThe five, with the cue for each:\n1. Name the Situation — nothing has been set up yet. \"So this is the third Friday we've moved.\"\n2. Label the Emotion — the word is there. \"More hurt than annoyed, honestly.\"\n3. Describe the Signals — the word is not there. \"My stomach just dropped.\"\n4. Regulate Out Loud — it is peaking now. \"Let me take a breath before I answer.\"\n5. Label Their Emotion — the feeling is theirs. \"It sounds like that was disappointing.\"\n\nMindset: all five are ways of putting something into words that was going to affect the conversation anyway. The choice is only ever which part to say first.",
       inputs: [
         { q: "You need to open a conversation about something that keeps happening.", a: "\"So this is the third Friday in a row we've moved.\" [Name the Situation]", bundle: 'pro' },
@@ -10937,8 +10937,8 @@ const collectionsModeData = {
   rolebasedhumour: [
     {
       name: "Generous or Stingy",
-      guideFront: "Which role gives the better angle here?",
-      guideBack: "A possible line, with the role in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The two opposite exaggerations of the same axis: how much you are willing to give.\n\nBoth work on any statement involving a thing, a need or a favour, and they are worth learning as a pair because the choice is nearly always available.\n\nThe two options:\n1. The Super Generous One — offer absurdly too much. \"Take my house, my car, and my savings too.\"\n2. The Super Stingy One — refuse to part with something worthless. \"Sorry, it's my family treasure.\"\n\nWhat decides it is the mood you want. Generous keeps the room warm and is very hard to take badly; stingy is sharper and slightly funnier, but only when the object is obviously nothing.\n\nMindset: if the thing they mentioned actually matters to them, go generous. Stinginess is only a joke when the withheld object is a biro.",
       inputs: [
         { q: "They say: \"I need a new phone.\"", a: "\"Take mine. And my charger, and my number, and my contacts.\" (the super generous one)", bundle: 'pro' },
@@ -10951,8 +10951,8 @@ const collectionsModeData = {
     },
     {
       name: "Shrink It or Inflate It",
-      guideFront: "Which role gives the better angle here?",
-      guideBack: "A possible line, with the role in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The other axis in the pack: what you do to the size of the problem.\n\nEvery one of the practice statements contains something mildly inconvenient, and there are two comic directions available. You can treat it as nothing whatsoever, or as a catastrophe.\n\nThe two options:\n1. The Invincible Hero — shrink it to nothing. \"Three tests? I'll do them all before lunch.\"\n2. The Mock-Offended One — inflate it enormously. \"Why would you even tell me that?\"\n\nInflating usually gets the bigger laugh and carries the bigger risk, because being theatrically wounded can be misread as commenting on how they feel. Shrinking is the safer of the two.\n\nMindset: read the statement first. If they sound even slightly like they mean it, shrink rather than inflate — the hero role never lands as mockery.",
       inputs: [
         { q: "They say: \"We have three tests next week.\"", a: "\"Three? I'll sit them all on Monday and take the week off.\" (the invincible hero)", bundle: 'pro' },
@@ -10965,8 +10965,8 @@ const collectionsModeData = {
     },
     {
       name: "Any Role",
-      guideFront: "Which role gives the better angle here?",
-      guideBack: "A possible line, with the role in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The full choice between all seven.\n\nAny of them will work on any ordinary statement — that is the whole point of the exercise. But one usually fits best, and the fit depends on what the statement is about.\n\nThe seven, and what each one is best on:\n1. The Bossy Leader — anything involving a plan. \"Nobody move. I have a system.\"\n2. The Lazy One — anything involving effort. \"Maybe tomorrow. Maybe autumn.\"\n3. The Super Generous One — anything involving a need. \"Take mine. Take all of it.\"\n4. The Super Stingy One — anything involving a small object. \"It's a family treasure.\"\n5. The Invincible Hero — anything difficult. \"Is that meant to be hard?\"\n6. The Mock-Offended One — anything mildly critical. \"I'll need a moment.\"\n7. The Rule Breaker — anything involving a rule. \"There's a way round this.\"\n\nMindset: there is no wrong role, only a lazier and a sharper one. The skill being trained is speed of choice, not correctness.",
       inputs: [
         { q: "They say: \"Let's go for a run.\"", a: "\"That sounds like a lot of work. Maybe tomorrow.\" (the lazy one)", bundle: 'pro' },
@@ -11493,8 +11493,8 @@ const collectionsModeData = {
   listeningthroughquestions: [
     {
       name: "Fill In the Story",
-      guideFront: "Which question does this account need?",
-      guideBack: "A possible question, with the type in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The three questions that get the account itself onto the table: the detail, the sequence and the cause. Reach for these when you have been given a verdict rather than a story — \"it was a nightmare\", \"it went fine\" — and you cannot picture any of it yet.\n\nThe three options:\n1. Ask About the Detail — pick one thing out and open it. \"Who's Petra?\"\n2. Ask What Happened Next — get the order. \"What happened after that?\"\n3. Ask Why It Happened — get the cause. \"What made you say yes?\"\n\nThese three cost the other person nothing. They are the safe ones, and they work with anybody at any level of acquaintance.\n\nMindset: you cannot ask about a feeling in a story you cannot picture. Get the shape first.",
       inputs: [
         { q: "They said the whole day was a disaster and stopped there.", a: "\"Take me through it. What went wrong first?\" [what happened next]", bundle: 'pro' },
@@ -11507,8 +11507,8 @@ const collectionsModeData = {
     },
     {
       name: "Go Below the Facts",
-      guideFront: "Which question does this account need?",
-      guideBack: "A possible question, with the type in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The three questions that move from what happened to what it was like: the feeling, the hard part, and the view from somewhere else. These are for when you have the story and the person is still missing from it.\n\nThe three options:\n1. Ask How It Felt — their reaction, at a specific moment. \"What went through your head?\"\n2. Ask About the Hard Part — where they had to do something. \"What was the hardest bit?\"\n3. Ask How It Looked From Elsewhere — the other vantage point. \"How do you think she saw it?\"\n\nThese ask more of the other person, so they belong after the facts rather than instead of them. Asked cold they can feel like an interview about someone's inner life.\n\nMindset: earn these with the first three. A feeling question lands very differently once someone can tell you have followed the story.",
       inputs: [
         { q: "They have given a completely factual account of something big.", a: "\"How was all that, actually? You've told me what happened but not that.\" [how it felt]", bundle: 'pro' },
@@ -11521,8 +11521,8 @@ const collectionsModeData = {
     },
     {
       name: "All Seven",
-      guideFront: "Which question does this account need?",
-      guideBack: "A possible question, with the type in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The full taxonomy. Most accounts are missing one thing at a time, and the skill is hearing which: the shape when you cannot picture it, the reason when the person is absent from it, the feeling when it has been given as facts, the difficulty when it has been given as a summary, another vantage point when it is one-sided, and the conclusion when it is finishing.\n\nThe seven, with the cue for each:\n1. Detail — something in the last sentence is worth opening. \"Who was there?\"\n2. What happened next — you cannot follow the order. \"And then?\"\n3. Why — events without an explanation. \"What made you?\"\n4. How it felt — facts without a person. \"What was your first reaction?\"\n5. The hard part — a summary with no obstacle in it. \"What nearly stopped it?\"\n6. From elsewhere — one vantage point only. \"How did she see it?\"\n7. What they took from it — the subject is finishing. \"What's changed since?\"\n\nMindset: ask the one their last sentence opened, not the next one on the list. That is the whole difference between following and interviewing.",
       inputs: [
         { q: "They mention driving back from Aarhus on Sunday.", a: "\"Who was in the car with you?\" [detail]", bundle: 'pro' },
@@ -11539,8 +11539,8 @@ const collectionsModeData = {
   showunderstanding2: [
     {
       name: "Check and Connect",
-      guideFront: "What would show them you have been following?",
-      guideBack: "A possible response, with the move in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The three moves that prove you have tracked the whole conversation rather than the last sentence: checking that you have it right, connecting to something said earlier, and summarising the lot. All three are about the shape of what they have said rather than about how they feel.\n\nThe three options:\n1. Check Your Version — make the checking explicit. \"Am I getting that right?\"\n2. Link to Earlier — carry a detail forward. \"Earlier you said…\"\n3. Sum It Up — three clauses, at the end. \"So: timing, workload, and being asked last.\"\n\nThese are the safe three. None of them asks the other person for anything, and all three work at any level of acquaintance.\n\nMindset: understanding is not a feeling you have, it is a thing you can be checked on. These three offer the check.",
       inputs: [
         { q: "They have described a work problem at length.", a: "\"So it's not the workload, it's that nobody told you. Am I getting that right?\" [Check Your Version]", guideBack: "Your reading, offered to be corrected", bundle: 'pro' },
@@ -11553,8 +11553,8 @@ const collectionsModeData = {
     },
     {
       name: "Meet Them",
-      guideFront: "What would show them you have been following?",
-      guideBack: "A possible response, with the move in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The three moves that put something of yours next to something of theirs: the shared feeling, the shared value, and the disclosure that returns. These do what checking cannot — they say you have not only followed it, you recognise it.\n\nThe three options:\n1. Shared Feeling — the feeling, one sentence. \"I know that one.\"\n2. Shared Value — the thing underneath. \"Being asked first matters.\"\n3. Share and Return — your case, then straight back to theirs. \"Mine was smaller. What will you do?\"\n\nThese cost airtime, which is why each has a rule attached: keep the feeling to a sentence, only name a value you actually hold, and always hand it back.\n\nMindset: meeting somebody is not the same as taking a turn. The difference is length.",
       inputs: [
         { q: "They describe being left out of a decision.", a: "\"That's a horrible feeling. I've had it.\" [Shared Feeling]", guideBack: "The same emotion, from your side", bundle: 'pro' },
@@ -11567,8 +11567,8 @@ const collectionsModeData = {
     },
     {
       name: "All Six",
-      guideFront: "What would show them you have been following?",
-      guideBack: "A possible response, with the move in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The full set. A conversation usually needs one of them at a time: checking when you might have it wrong, connecting when two things they said belong together, summarising when a long account has ended, the feeling when the facts have been given and the person has not, the value when they are explaining why something mattered, and the return when you have just taken a turn.\n\nThe six, with the cue for each:\n1. Check Your Version — you are not certain. \"Am I getting that right?\"\n2. Connect to Earlier — two things belong together. \"Earlier you said…\"\n3. Summarise — a long account has finished. \"So, three things…\"\n4. Shared Feeling — the reaction is the part they are carrying. \"I know that one.\"\n5. Name the Value — they are explaining why it mattered. \"That matters to me too.\"\n6. Share and Return — you have just spoken about yourself. \"Anyway — yours?\"\n\nMindset: Pt. 1 shows you heard the sentence. These six show you have been following the person.",
       inputs: [
         { q: "You have listened for five minutes without saying anything.", a: "\"Can I say back what I think you're telling me?\" [Check Your Version]", guideBack: "Your reading, offered to be corrected", bundle: 'pro' },
@@ -11750,8 +11750,8 @@ const collectionsModeData = {
   storybanter: [
     {
       name: "Keep It Moving",
-      guideFront: "Which move does the story need right now?",
-      guideBack: "A possible line, with the technique in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The two techniques that keep a story alive without changing its direction: Yes And, which accepts and adds, and Then What Happens, which follows the last idea forward. Between them they cover most turns, and neither requires you to have an idea of your own — you only have to take theirs seriously.\n\nThe two options:\n1. Yes, And — accept and put one thing on top. \"Yes, and the fort needs a doorbell.\"\n2. Then What Happens — follow it forward. \"So the school rings your mum.\"\n\nReach for these when the story is working and you just have to not drop it. Most turns are this.\n\nMindset: neither of these needs an idea. That is why they are the two to have ready when your mind is blank.",
       inputs: [
         { q: "They say you should skip the whole week.", a: "\"Yes, and I'll need three pizzas just for Monday.\" [yes and]", bundle: 'pro' },
@@ -11764,8 +11764,8 @@ const collectionsModeData = {
     },
     {
       name: "Make It Bigger",
-      guideFront: "Which move does the story need right now?",
-      guideBack: "A possible line, with the technique in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The three techniques that raise the stakes: Make It Bigger, which inflates what is already there; What If, which adds a threat; and Bring Someone In, which adds a person with opinions. These are for the moment the story is pleasant and going nowhere.\n\nThe three options:\n1. Make It Bigger — inflate past sense. \"Three pizzas? Enough for the city.\"\n2. What If — add a complication. \"What if your mum comes home?\"\n3. Bring Someone In — a new character with a reaction. \"Then your gran turns up.\"\n\nThe tell that you need one of these is that the last two turns were both agreeable. A story with no problem in it runs out fast.\n\nMindset: pleasant is the enemy. Give it a problem, a person or a bigger number.",
       inputs: [
         { q: "The story has become a list of nice things.", a: "\"What if the neighbours have started a group chat about it?\" [what if]", bundle: 'pro' },
@@ -11778,8 +11778,8 @@ const collectionsModeData = {
     },
     {
       name: "All Six",
-      guideFront: "Which move does the story need right now?",
-      guideBack: "A possible line, with the technique in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The full set. Most turns take more than one, but one is usually obvious: accept and add when the story is working, follow the consequence when you are stuck, inflate when it is too small, complicate when it is too pleasant, add a person when it is too empty, and solve it ridiculously when it has nowhere left to go.\n\nThe six, with the cue for each:\n1. Yes, And — it is working. \"Yes, and…\"\n2. Then What Happens — you are stuck. \"So then…\"\n3. Make It Bigger — it is too small. \"Not three. Three hundred.\"\n4. What If — it is too pleasant. \"What if…?\"\n5. Bring Someone In — it is too empty. \"And then your gran…\"\n6. Solve It Ridiculously — it is cornered. \"Easy, you just…\"\n\nMindset: there is no wrong move, only a dropped one. Any of the six beats a pause where you were trying to think of something clever.",
       inputs: [
         { q: "They have just added a good detail and it is your turn.", a: "\"Yes, and now the fort needs a postcode.\" [yes and]", bundle: 'pro' },
@@ -11795,8 +11795,8 @@ const collectionsModeData = {
   explainthings2: [
     {
       name: "Placing It",
-      guideFront: "Which piece are they missing?",
-      guideBack: "A possible answer, with the piece in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The three that place a thing rather than define it: When it comes up, Where it belongs, and Who it is for. Pt. 1 covers what it is, how it works and why it matters — these three answer the question underneath all of those, which is whether it has anything to do with the person listening.\n\nThe three options:\n1. When — the moment that calls for it. \"It's for when you've asked twice and nothing moved.\"\n2. Where — the setting it fits into. \"It sits after the draft, before anyone else reads it.\"\n3. Who — the group it is built for. \"If you cook most days, yes.\"\n\nMindset: a definition tells them what it is. These three tell them whether it is theirs.",
       inputs: [
         { q: "Someone asks what the escalation process is for.", a: "\"When you've asked twice and nothing has moved.\" [When It Comes Up]", guideBack: "The moment it's for", bundle: 'pro' },
@@ -11809,8 +11809,8 @@ const collectionsModeData = {
     },
     {
       name: "Which W Is Missing",
-      guideFront: "Which piece are they missing?",
-      guideBack: "A possible answer, with the piece in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Someone has asked a question, and the answer that helps is not always the one they asked for. This deck is about giving the piece that is actually missing — the moment, the setting, the group, or simply the short version — rather than starting at the beginning.\n\nThe five options:\n\n1. **When It Comes Up** — the moment that calls for it. \"When you've asked twice and nothing has moved.\"\n\n2. **Where It Belongs** — the setting, or the place in a process. \"Straight after the draft.\"\n\n3. **Who It Is For** — who uses it, and who can skip it. \"It's for beginners.\"\n\n4. **Short Version First** — one sentence, and more only if they want it. \"A radio show you download.\"\n\n5. **The W They Need** — read which piece they are missing and give that one. \"You can see what it is — it's for dark mornings.\"\n\nMindset: one question at a time. Serving all six in order is how an explanation becomes a lecture.",
       inputs: [
         { q: "A neighbour asks what a podcast is.", a: "\"A radio show you download and listen to whenever.\" [Short Version First]", guideBack: "One sentence, with more on request", bundle: 'pro' },
@@ -11824,8 +11824,8 @@ const collectionsModeData = {
     },
     {
       name: "How Much To Say",
-      guideFront: "Which piece are they missing?",
-      guideBack: "A possible answer, with the piece in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "A choice about size rather than content: the one-sentence version, the paragraph that adds the distinguishing detail, or the direct question about which they want. All three come from the same move — start short and add depth only when it is asked for.\n\nThe three options:\n1. One sentence — the correct first answer, every time. \"It's a shared to-do list.\"\n2. The distinguishing detail — the bit that makes it not the obvious thing. \"Every line has exactly one owner.\"\n3. Ask which they want — six words, and it saves both of you. \"Sentence or twenty minutes?\"\n\nMindset: length is a decision, not a habit. Decide it out loud if you cannot read the room.",
       inputs: [
         { q: "Someone asks what your job involves, in a corridor.", a: "\"Short version, I teach English.\" [Short Version First]", guideBack: "One sentence, with more on request", bundle: 'pro' },
@@ -11840,8 +11840,8 @@ const collectionsModeData = {
   buildingastory: [
     {
       name: "The Three Parts",
-      guideFront: "Which part does the story need now?",
-      guideBack: "A possible line, with the part in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The spine of any told story: the opening that makes someone want the next sentence, the turn that makes it a story at all, and the ending that lets it finish. Everything else in the pack sits on top of these three.\n\nThe three options:\n1. Open It in One Sentence — start where it gets interesting. \"Right as I walked in…\"\n2. Name the Turn — the moment the ordinary changed. \"Then I realised I'd left it all at home.\"\n3. Land the Resolution — what you did and how it ended. \"In the end I just asked.\"\n\nIf a story is not working, one of these three is usually missing rather than badly done — most often the turn, and second most often the ending.\n\nMindset: setup, turn, ending. Everything else is decoration on a shape that has to be there.",
       inputs: [
         { q: "You are about to begin with two minutes of background.", a: "\"Skip to it: I locked myself out twice in one day.\" [opening]", bundle: 'pro' },
@@ -11854,8 +11854,8 @@ const collectionsModeData = {
     },
     {
       name: "Making It Land",
-      guideFront: "Which part does the story need now?",
-      guideBack: "A possible line, with the part in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The three that decide how the story is received rather than what it contains: the feeling in the telling, the takeaway at the end, and the judgement to pick something small enough to tell at all. These are the difference between a story that is followed and a story that is enjoyed.\n\nThe three options:\n1. Tell It With the Feeling In It — name it once, out loud. \"I was mortified.\"\n2. Say the Takeaway — if there is one. \"I check the bag now. Every time.\"\n3. Pick One Fast — small, recent, told now. \"Small one, but this happened Tuesday.\"\n\nThe rule that runs through all three is restraint: one feeling word, one takeaway or none at all, one moment rather than a period of your life.\n\nMindset: the shape gets you followed. These three get you listened to.",
       inputs: [
         { q: "The story is being told flat and you can hear it.", a: "\"I should say — I was properly panicking by this point.\" [feeling]", bundle: 'pro' },
@@ -11868,8 +11868,8 @@ const collectionsModeData = {
     },
     {
       name: "All Six",
-      guideFront: "Which part does the story need now?",
-      guideBack: "A possible line, with the part in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The full set. A story usually needs one thing at a time: an opening when you are about to start with background, a turn when nothing has happened yet, an ending when you are trailing off, a feeling when it is being told flat, a takeaway when it has finished and there is something in it, and a fast choice when the moment is about to pass.\n\nThe six, with the cue for each:\n1. Open It in One Sentence — you are about to explain instead of start.\n2. Name the Turn — the events are told and nothing has changed.\n3. Land the Resolution — you are about to say \"anyway, yeah\".\n4. Tell It With the Feeling In It — it is accurate and flat.\n5. Say the Takeaway — it has ended and there is something in it.\n6. Pick One Fast — the moment is going and you are still choosing.\n\nMindset: six parts, one at a time. Nobody assembles a story in order in real conversation — you supply whichever piece is missing.",
       inputs: [
         { q: "You are three sentences into background and nothing has happened.", a: "\"Right — so I got an email yesterday from someone I last saw in 2009.\" [opening]", bundle: 'pro' },
@@ -11885,8 +11885,8 @@ const collectionsModeData = {
   reframing: [
     {
       name: "The Four Types",
-      guideFront: "Which reframe fits this one?",
-      guideBack: "A possible reframe, with the type in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The core set: positive, context, meaning and humorous. Each changes something different — the upside, the setting, the conclusion, or the scale — while leaving the facts alone.\n\nThe four options:\n1. Positive — the true upside that was overlooked. \"We found out in three months, not a year.\"\n2. Context — the same behaviour in a different room. \"Stubborn in a queue, ideal in a negotiation.\"\n3. Meaning — the same event, a different conclusion. \"Or she's had a terrible week.\"\n4. Humorous — the same thing at its actual size. \"You knocked over a glass.\"\n\nChoose by what is wrong with the current frame: a missing upside, a missing setting, an invented conclusion, or a scale error.\n\nMindset: the facts never move. Only the frame around them.",
       inputs: [
         { q: "\"We've wasted three months on this.\"", a: "\"Or we found out in three months rather than in a year.\" [positive]", bundle: 'pro' },
@@ -11899,8 +11899,8 @@ const collectionsModeData = {
     },
     {
       name: "When It Is About You",
-      guideFront: "Which reframe fits this one?",
-      guideBack: "A possible reframe, with the type in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The two moves for something aimed at you: renaming the label somebody has put on you, and changing the meaning you have put on yourself. Both are safe in a way the others are not, because the frame you are changing is your own.\n\nThe two options:\n1. Reframe What They Said About You — accept the behaviour, decline the verdict. \"I'd call it particular.\"\n2. The Meaning Reframe, turned inwards — the conclusion you drew about yourself. \"Nervous means it mattered.\"\n\nArguing with a label keeps you inside it. Renaming it moves the conversation to your word, which is a much better place to be standing.\n\nMindset: agree with the observation, disagree with the verdict. Almost nobody argues with that.",
       inputs: [
         { q: "\"You're always so serious.\"", a: "\"I take the things that matter seriously. I'd rather be that way round.\" [label]", bundle: 'pro' },
@@ -11913,8 +11913,8 @@ const collectionsModeData = {
     },
     {
       name: "Should You At All",
-      guideFront: "Which reframe fits this one?",
-      guideBack: "A possible reframe, with the type in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The two moves that decide whether a reframe belongs in this moment: offering it properly, and recognising when the answer is no. These matter more than the four types, because a well-chosen reframe delivered at the wrong moment does damage that a badly chosen one delivered well does not.\n\nThe two options:\n1. Offer It, Don't Impose It — acknowledge, ask, hold it loosely. \"Want another angle, or not right now?\"\n2. Know When Not To — some things are just bad. \"I'm not going to try to find an upside for this.\"\n\nThe test is simple and worth memorising: has the feeling been heard yet, and would the new reading require leaving something out?\n\nMindset: acknowledge first, offer second, and be willing to have no reframe at all.",
       inputs: [
         { q: "A friend is upset and you can see another reading.", a: "\"That sounds genuinely rubbish. Want another angle, or not right now?\" [offer]", bundle: 'pro' },
@@ -12685,8 +12685,8 @@ const collectionsModeData = {
   startingconversations4: [
     {
       name: "Lightest Touch",
-      guideFront: "Which opener fits this moment?",
-      guideBack: "A possible opener, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Humour and bringing something in from outside. Both put something forward without putting *you* forward — the subject is the queue, the news, the thing that happened on the bus.\n\nUse them when you want to open without exposure, or with someone you have no read on yet. Both work with a complete stranger, and both give an easy exit: they can laugh or nod and nothing has been asked of them.\n\nMindset: these are the two you can use before you know anything about the person.",
       inputs: [
         { q: "You have both been standing in the same queue for twenty minutes.", a: "\"I think we've been here long enough to vote in local elections.\" [Joke About the Situation]", guideBack: "A dry line about what you're both in", bundle: 'pro' },
@@ -12700,8 +12700,8 @@ const collectionsModeData = {
     },
     {
       name: "Something of Yours",
-      guideFront: "Which opener fits this moment?",
-      guideBack: "A possible opener, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Saying how you feel and saying why you came over. Both hand something personal across before you know how it will be received, and both work for the same reason: honesty is disarming.\n\nUse the feeling when there is a shared situation to feel something about — a presentation, a long week, an event you are both at. Use the reason when the strange thing is the approach itself: you are new, you are alone, you have been meaning to speak to them.\n\nThey are the strongest openers in the pack and the ones people avoid most.\n\nMindset: going first is what makes them work. Somebody has to.",
       inputs: [
         { q: "You are both about to do something nerve-racking.", a: "\"I'm quite nervous about this, actually.\" [Say How You Feel]", guideBack: "A feeling, said in one line", bundle: 'pro' },
@@ -12715,8 +12715,8 @@ const collectionsModeData = {
     },
     {
       name: "All Four",
-      guideFront: "Which opener fits this moment?",
-      guideBack: "A possible opener, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The full set. All four go first, and choosing between them is mostly a question of how much you want to put forward.\n\nA rough guide: humour and outside news cost you least. A feeling costs a little more and gets more back. Naming why you came over costs the most and works the best, especially when the approach itself is the awkward part.\n\nThe failure that runs through all four is doing them at someone rather than with them — a joke that needs an audience, a feeling that needs managing, a reason that goes on too long. Say it, then leave room.\n\nMindset: go first, then stop and let them answer.",
       inputs: [
         { q: "You have just walked into a room where you know nobody.", a: "\"I don't know anyone here, so I'm introducing myself to people. I'm...\" [Say Why You Came Over]", guideBack: "The reason you walked up", bundle: 'pro' },

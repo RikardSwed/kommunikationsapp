@@ -375,8 +375,8 @@ const challengesCollections = {
   setupstatement: [
     {
       name: "The One-Word Answerer",
-      guideFront: "What kind of hard opener is this?",
-      guideBack: "A possible response, with the type in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "They give you almost nothing back — short, closed replies, then silence. The training is to notice you need a warmer, easier setup that hands them a concrete thread, rather than repeating the same opener. Best handled with an Action or Arrival setup.\n\nWhat it usually looks like:\n\n• \"Fine, thanks.\" and nothing after it.\n• Closed replies to everything you try.\n• You have asked twice and got two words back.\n\nTwo ways through:\n1. Action Setup — hand them something concrete to react to. \"I'm learning guitar — are you working on anything?\"\n2. Arrival Setup — give them a thread with a detail in it. \"I got the wrong bus and walked — how did you get here?\"\n\nMindset: repeating the same kind of opener louder will not help. Change what you are handing them, not how hard you are handing it.",
       inputs: [
         { q: "Your first setup got a one-word answer and then silence.", a: "\"Fair enough — I'll go first properly. I'm getting back into reading. Are you into books at all?\" [Action Setup]", guideBack: "What you're doing, then theirs", bundle: 'pro' },
@@ -387,8 +387,8 @@ const challengesCollections = {
     },
     {
       name: "The Flat Room",
-      guideFront: "What kind of hard opener is this?",
-      guideBack: "A possible response, with the type in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The mood is low and the energy's gone — nobody's really talking. The training is to notice the mood is the most honest thing to name, and open with a Feeling setup that invites them to say how they are. Best handled with a Feeling setup.\n\nWhat it usually looks like:\n\n• A long silence nobody wants to be the one to break.\n• Everyone on their phone or looking at the door.\n• Small talk that keeps dying after one exchange.\n\nTwo ways through:\n1. Feeling Setup — name the mood honestly. \"Quiet one tonight, isn't it — how's your week been?\"\n2. Opinion Setup — react to something present. \"This music is doing nothing for the room, is it?\"\n\nMindset: in a flat room the mood is the most honest thing available. Naming it is a relief to everyone, because they were all thinking it.",
       inputs: [
         { q: "The whole room feels flat and low-energy.", a: "\"Everyone looks how I feel right now, honestly. Long week for you too?\" [Feeling Setup]", guideBack: "How you are, then how they are", bundle: 'pro' },
@@ -398,8 +398,8 @@ const challengesCollections = {
     },
     {
       name: "The Frozen Moment",
-      guideFront: "What kind of hard opener is this?",
-      guideBack: "A possible response, with the type in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "You've blanked — the pressure to say something clever has locked you up. The training is to drop the need to impress and open with a simple, honest Purpose setup. Best handled with a Purpose setup.\n\nWhat it usually feels like:\n\n• You have gone blank standing right next to someone.\n• Everything you think of sounds stupid in your head.\n• The pause has gone on long enough to be its own problem.\n\nTwo ways through:\n1. Purpose Setup — the lowest-effort honest opener there is. \"I came to meet a few people — what brought you?\"\n2. Feeling Setup — name the awkwardness itself. \"I never know how to start these — how's it going?\"\n\nMindset: the block is the need to be clever, not a lack of things to say. Drop the requirement and an ordinary sentence is enough.",
       inputs: [
         { q: "You've frozen and can't think of anything clever.", a: "\"I've got nothing smart to open with, so — I'm here for the free food. You?\" [Purpose Setup]", guideBack: "Your reason, then theirs", bundle: 'pro' },
@@ -409,8 +409,8 @@ const challengesCollections = {
     },
     {
       name: "The Distracted Person",
-      guideFront: "What kind of hard opener is this?",
-      guideBack: "A possible response, with the type in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "They're only half there — on their phone, glancing around, not really tuned in. The training is to offer a small, vivid hook that's easy to react to rather than a flat opener. Best handled with an Arrival or Action setup.\n\nWhat it usually looks like:\n\n• They are on their phone or scanning the room.\n• They answer without really turning towards you.\n• You get agreement but no actual attention.\n\nTwo ways through:\n1. Arrival Setup — offer something vivid enough to look up for. \"I got the wrong bus and walked twenty minutes.\"\n2. Action Setup — give them something specific to react to. \"I'm halfway through redoing a kitchen and regretting it.\"\n\nMindset: a flat opener gets flat attention. Something small and vivid is easier to react to than something polite.",
       inputs: [
         { q: "The person is clearly distracted by their phone.", a: "\"I'll compete with the phone — I just got back from Portugal. Been anywhere good lately?\" [Arrival Setup]", guideBack: "Your run-up, then theirs", bundle: 'pro' },
@@ -489,8 +489,8 @@ const challengesCollections = {
   startingconversations3: [
     {
       name: "The Compliment Could Land Wrong",
-      guideFront: "What makes this opening hard?",
-      guideBack: "A possible opener, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "A compliment about a choice is a friendly remark. A compliment about someone's body or face is something else, and with a stranger it usually arrives as attention they did not ask for.\n\nThe other risk is direction. A compliment from someone with more power — a manager, a teacher, anyone in charge — lands heavier than the same words between equals, and personal remarks stop being casual.\n\nStick to what they chose, what they did, and what they can take credit for.\n\nMindset: if they could have chosen otherwise, you can compliment it. If not, leave it.",
       inputs: [
         { q: "You were about to compliment how someone looks.", a: "\"That's a great coat.\" [Compliment Something Specific]", guideBack: "One detail you noticed and liked", bundle: 'pro' },
@@ -502,8 +502,8 @@ const challengesCollections = {
     },
     {
       name: "Your Guess Is Wrong",
-      guideFront: "What makes this opening hard?",
-      guideBack: "A possible opener, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "You guessed and missed. It feels like a small failure and it is almost always the opposite — you have handed them the pleasure of correcting you, and corrections come with explanations attached.\n\nThe only way to make it awkward is to defend the guess or over-apologise. Take it lightly and ask about the real answer.\n\nMindset: \"no, actually…\" is an invitation. Follow it.",
       inputs: [
         { q: "You guessed they were experienced and it is their first time.", a: "\"You had me fooled. What made you come to this one?\" [Ask About Them]", guideBack: "A question about who they are", bundle: 'pro' },
@@ -515,8 +515,8 @@ const challengesCollections = {
     },
     {
       name: "It Turns Into an Interview",
-      guideFront: "What makes this opening hard?",
-      guideBack: "A possible opener, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Four questions in ninety seconds and the other person has stopped answering properly. Nothing you asked was wrong; the problem is that each question started fresh instead of following the last answer.\n\nTwo things fix it. Follow one specific word from what they just said. And give something of your own back — a sentence about you turns interrogation into exchange.\n\nMindset: for every question, give one thing away. That is what makes it a conversation.",
       inputs: [
         { q: "You have asked three questions in a row and answers are getting shorter.", a: "\"I'm interrogating you. I'll go first — I only came because a friend bailed.\" [Ask About Them]", guideBack: "A question about who they are", bundle: 'pro' },
@@ -528,8 +528,8 @@ const challengesCollections = {
     },
     {
       name: "They Give You Nothing Back",
-      guideFront: "What makes this opening hard?",
-      guideBack: "A possible opener, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Short answers, no questions returned, eyes moving around the room. Sometimes that is a person who does not want to talk, and the right response is a warm exit.\n\nBut sometimes it is a person who finds this hard, and a slightly different move helps: a lower-effort question, something concrete rather than personal, or giving something of your own first so they are not the only one exposed.\n\nMindset: try one easier move, then let them be. Both outcomes are fine.",
       inputs: [
         { q: "They have given two short answers about themselves.", a: "\"Have you been to one of these before?\" [Make a Guess]", guideBack: "A guess they can confirm or fix", bundle: 'pro' },
@@ -541,8 +541,8 @@ const challengesCollections = {
     },
     {
       name: "They Are Not Okay",
-      guideFront: "What makes this opening hard?",
-      guideBack: "A possible opener, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "You asked how they were and got a real answer — something heavy, or the beginning of something heavy. This is the situation the opener exists for and also the point at which it stops being an opener.\n\nWhat helps is small and unglamorous: listen without fixing, do not compare it to your own experience, and offer one concrete thing rather than general availability. What does not help is advice, silver linings, or trying to resolve it while standing in a corridor.\n\nIf it is beyond what a conversation can hold, saying so kindly and pointing towards real support is the right move, not a failure of nerve.\n\nMindset: you are not solving this. You are making sure they are not carrying it alone.",
       inputs: [
         { q: "They tell you something genuinely difficult.", a: "\"That sounds really hard. I'm glad you said.\" [Ask How They Really Are]", guideBack: "A real how-are-you", bundle: 'pro' },
@@ -720,8 +720,8 @@ const challengesCollections = {
   deepquestions: [
     {
       name: "Short Answers",
-      guideFront: "What kind of moment is this?",
-      guideBack: "A possible question, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "They reply in three words and hand you nothing back — no detail to build on. The training is to read it as a material problem rather than a rejection: go back to easy factual questions until something usable appears, then link to it. Best handled with Start with Simple Questions and Link and Go Deeper.\n\nWhat it usually sounds like:\n\n• \"Yeah, fine.\" and nothing after it.\n• One-word answers to everything you try.\n• \"It was alright I suppose.\"\n\nTwo ways through:\n1. Start with Simple Questions — go easier, not deeper. \"Okay, easier one — where did you grow up?\"\n2. Link and Go Deeper — use the one word they did give. \"You said alright — what would have made it good?\"\n\nMindset: read it as a material problem, not a rejection. Short answers usually mean they have not warmed up yet, not that they want you to stop.",
       inputs: [
         { q: "You ask how their weekend was and get: \"Yeah, fine.\"", a: "\"Did you get to do anything, or was it all admin?\" [Start with Simple Questions]", bundle: 'pro' },
@@ -733,8 +733,8 @@ const challengesCollections = {
     },
     {
       name: "It Feels Too Soon",
-      guideFront: "What kind of moment is this?",
-      guideBack: "A possible question, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "You want to ask something real, but you have known them four minutes and a big question would land as intrusive. The training is to notice you have not earned it yet and go one notch deeper instead of five. Best handled with Start with Simple Questions and Link and Go Deeper.\n\nWhat it usually looks like:\n\n• You have known them four minutes.\n• They mention something heavy in passing, very early.\n• You want to ask about family, health or money.\n\nTwo ways through:\n1. Start with Simple Questions — build the runway first. \"What made you come along tonight?\"\n2. Link and Go Deeper — go one notch deeper, not five. \"You said lately — is it a busy stretch?\"\n\nMindset: the question will still be there in ten minutes. Depth that arrives before trust does reads as prying, however kindly it is meant.",
       inputs: [
         { q: "You have just met and want to ask something meaningful.", a: "\"What made you come along tonight?\" [Start with Simple Questions]", bundle: 'pro' },
@@ -746,8 +746,8 @@ const challengesCollections = {
     },
     {
       name: "A Sensitive Area",
-      guideFront: "What kind of moment is this?",
-      guideBack: "A possible question, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "They open a door onto something painful or private, and your next question decides whether they feel safe. The training is to let them set the depth — ask what it was like rather than for details, or step back to something lighter. Best handled with Explore Experiences and Start with Simple Questions.\n\nWhat it usually sounds like:\n\n• An illness, a death or a rift mentioned in passing.\n• \"It's been a strange year, honestly.\"\n• They touch on something and then change the subject.\n\nTwo ways through:\n1. Explore Experiences — ask what it was like, not for details. \"What was that time like for you?\"\n2. Start with Simple Questions — take the exit they offered. \"Fair enough. What were you saying about the new job?\"\n\nMindset: let them set the depth. Asking what something was like leaves them free to answer in one sentence or twenty.",
       inputs: [
         { q: "They mention: \"That was around the time my mum was ill.\"", a: "\"That is a lot at once — what was that time like for you?\" [Explore Experiences]", bundle: 'pro' },
@@ -759,8 +759,8 @@ const challengesCollections = {
     },
     {
       name: "It Feels Like an Interview",
-      guideFront: "What kind of moment is this?",
-      guideBack: "A possible question, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "You have asked four questions in a row and it has turned into a questionnaire — they answer, you fire again. The training is to hear the rhythm and fix it with linking, so the next question clearly comes out of what they just said instead of off a list in your head. Best handled with Link and Go Deeper and Explore Experiences.\n\nWhat it usually sounds like:\n\n• Four questions in a row with no reaction from you.\n• They answer, you immediately fire the next one.\n• They start giving shorter answers and look slightly cornered.\n\nTwo ways through:\n1. Link and Go Deeper — make the question come out of their answer. \"You said you did it for years — what kept you there?\"\n2. Explore Experiences — react first, then ask. \"That one surprised me — what was the reaction at home?\"\n\nMindset: what makes it an interview is not the number of questions, it is that none of them came from the answers.",
       inputs: [
         { q: "You have asked four questions in a row with no reaction from you.", a: "\"You said you did it for years — what kept you there?\" [Link and Go Deeper]", bundle: 'pro' },
@@ -772,8 +772,8 @@ const challengesCollections = {
     },
     {
       name: "You Have Run Out of Questions",
-      guideFront: "What kind of moment is this?",
-      guideBack: "A possible question, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The obvious questions are used up and your head is empty. The training is to stop hunting for a new subject and mine what they already told you — pick any detail from earlier and open it up. Best handled with Link and Go Deeper and Explore Values.\n\nWhat it usually looks like:\n\n• Work, home and the weekend are all covered.\n• A pause where neither of you speaks.\n• You start hunting for a brand new subject.\n\nTwo ways through:\n1. Link and Go Deeper — mine something from earlier. \"Earlier you said you had just moved — what made you pick here?\"\n2. Explore Values — go wide instead of new. \"What is the part of your week you actually look forward to?\"\n\nMindset: you do not need a new topic, you need one word from the last twenty minutes. They have already given you more material than you used.",
       inputs: [
         { q: "You have covered work, home and the weekend and have nothing left.", a: "\"Earlier you said you had just moved — what made you pick here?\" [Link and Go Deeper]", bundle: 'pro' },
@@ -951,8 +951,8 @@ const challengesCollections = {
   validation: [
     {
       name: "You Think They Are Wrong",
-      guideFront: "What makes this one hard to validate?",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "They are upset about something you think they have misread, and validating feels like signing up to a version of events you do not accept.\n\nThe training is to notice that none of the three moves actually commits you to anything. A feeling is true whether or not the belief behind it is, and a route can be reasonable even when it ends somewhere you would not have gone.\n\nWhat it usually looks like:\n\n• They are angry at someone you think did nothing wrong.\n• Their account leaves out something that changes it.\n• You can already see the part they have got backwards.\n\nTwo ways through:\n1. Reflect the Feeling — the feeling is a fact regardless. \"That sounds like it really got to you.\"\n2. Acknowledge the Perspective — validate the route, not the destination. \"With what you knew, I can see how you got there.\"\n\nMindset: validation is about acknowledging, not agreeing. You can say all of this honestly and then say what you think, and it will land far better for having come second.",
       inputs: [
         { q: "They are furious with someone you think did nothing wrong.", a: "\"That clearly landed badly. I can hear how much it's annoyed you.\" [Reflect the Feeling]", bundle: 'pro' },
@@ -964,8 +964,8 @@ const challengesCollections = {
     },
     {
       name: "It Sounds Like Agreement",
-      guideFront: "What makes this one hard to validate?",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "You validated somebody and they took it as taking their side, which was not what you meant and is now awkward to walk back.\n\nThe training is to be specific about what you are validating. Vague warmth reads as endorsement; naming the object — the feeling, the reaction, the reasoning — makes the boundary clear without any coldness.\n\nWhat it usually looks like:\n\n• \"Exactly! You see it too!\" when you do not.\n• Your validation quoted back to somebody else as support.\n• A dispute where both sides now think you are with them.\n\nTwo ways through:\n1. Reflect the Feeling, specifically — put the feeling in the sentence. \"I can see why that upset you\" rather than \"that's terrible\".\n2. Acknowledge the Perspective, specifically — \"I can see your reasoning\" rather than \"you're right\".\n\nMindset: name the object. \"That's completely understandable\" is ambiguous; \"your frustration is completely understandable\" is not, and it is no less warm.",
       inputs: [
         { q: "They say: \"Exactly! So you agree she was out of line?\"", a: "\"I can see why it upset you. I don't know enough about her side to judge it.\" [Reflect the Feeling]", bundle: 'pro' },
@@ -977,8 +977,8 @@ const challengesCollections = {
     },
     {
       name: "You Are Asked to Pick a Side",
-      guideFront: "What makes this one hard to validate?",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Two people you both know are in conflict, and each of them wants your validation to mean the other one was wrong.\n\nThe training is that validating both is not a contradiction. Two people can each have had entirely reasonable reactions to the same event, and saying so to both is honest rather than evasive.\n\nWhat it usually looks like:\n\n• Both of them telling you the story separately.\n• \"You can see what I mean, though, right?\"\n• A pull to agree with whoever is in front of you.\n\nTwo ways through:\n1. Acknowledge the Perspective — the move that scales to two people. \"I can see how you both got where you got.\"\n2. Normalise the Reaction — also symmetrical. \"Anyone would have found that frustrating.\"\n\nMindset: validating both is not fence-sitting. It is the accurate answer most of the time, and pretending otherwise to whoever is in the room costs you both friendships eventually.",
       inputs: [
         { q: "They ask: \"You can see what I mean, though, right?\"", a: "\"I can see how you got there, honestly. Both of you had a fair read.\" [Acknowledge the Perspective]", bundle: 'pro' },
@@ -990,8 +990,8 @@ const challengesCollections = {
     },
     {
       name: "It Comes Out as a Platitude",
-      guideFront: "What makes this one hard to validate?",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "You said something validating and it landed as a greetings card — \"everything happens for a reason\", \"at least you tried\".\n\nThe training is specificity. A platitude is validation with the details removed, and the details are the entire proof that you were listening rather than reaching for a phrase.\n\nWhat it usually sounds like:\n\n• \"Everything happens for a reason.\"\n• \"At least you learned something.\"\n• \"That's just how it goes sometimes.\"\n\nTwo ways through:\n1. Reflect the Feeling, with the specifics in it — \"A whole week of dreading it. That's exhausting.\"\n2. Acknowledge the Perspective, with the specifics in it — \"You had a deadline that day. Waiting would have cost more.\"\n\nMindset: the detail is the validation. Anything you could have said before they finished talking is not going to land, however kindly it is meant.",
       inputs: [
         { q: "You are about to say \"everything happens for a reason\".", a: "\"A whole week of dreading it. That's exhausting on its own.\" [Reflect the Feeling]", bundle: 'pro' },
@@ -1003,8 +1003,8 @@ const challengesCollections = {
     },
     {
       name: "They Will Not Accept It",
-      guideFront: "What makes this one hard to validate?",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "You validated them and got \"you don't understand\" or \"don't patronise me\" back.\n\nThe training is to take the correction rather than repeat the validation harder. A rejected validation usually means you named the wrong object — the feeling when it was the reasoning, or the reaction when it was the situation.\n\nWhat it usually sounds like:\n\n• \"You don't get it.\"\n• \"Don't just tell me it's fine.\"\n• \"You're only saying that.\"\n\nTwo ways through:\n1. Ask what you got wrong — drop the technique and hand it over. \"What am I missing?\"\n2. Acknowledge the Perspective — often the one that was needed and not given. \"What would you want me to see?\"\n\nMindset: a rejected validation is information, not a failure. Saying it again more warmly is the one response guaranteed not to work.",
       inputs: [
         { q: "They say: \"You don't understand.\"", a: "\"Probably not. What am I missing?\" (ask what you got wrong)", bundle: 'pro' },
@@ -1018,8 +1018,8 @@ const challengesCollections = {
   supportingconversations: [
     {
       name: "You Gave Advice They Did Not Want",
-      guideFront: "What makes supporting them hard here?",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "You offered a solution and something went flat. They said \"yeah, maybe\" and changed the subject, or got slightly short with you.\n\nThe instinct is to explain the suggestion better, which makes it worse. What has happened is that a person who wanted their experience recognised got a problem-solving response, and the effect is to feel unheard by someone who was trying to help.\n\nNaming it is the fastest repair, and it costs nothing.\n\nMindset: stop advising, name it lightly, and go back to acknowledgement.",
       inputs: [
         { q: "You suggested something and they went quiet.", a: "\"I've jumped to fixing it. Do you actually want ideas?\" [Work Out What They Need]", bundle: 'pro' },
@@ -1031,8 +1031,8 @@ const challengesCollections = {
     },
     {
       name: "They Say They Are Fine",
-      guideFront: "What makes supporting them hard here?",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "You have asked and been told everything is fine, and it visibly is not. Pushing feels intrusive; accepting it feels like abandoning them.\n\nThe move is to leave the door open without walking through it. Say what you noticed, say the offer stands, and then let it go. People often come back an hour or a week later, and they only do that if the first attempt did not feel like pressure.\n\nMindset: one gentle attempt, then leave a door. Two attempts is pressure.",
       inputs: [
         { q: "They say \"I'm fine\" and clearly are not.", a: "\"Fair enough. The offer stands if that changes.\" [Respond With Validation]", bundle: 'pro' },
@@ -1044,8 +1044,8 @@ const challengesCollections = {
     },
     {
       name: "You Think They Are Wrong",
-      guideFront: "What makes supporting them hard here?",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "They are upset about something where, from what you can tell, they were the one at fault. Validating feels like collusion; disagreeing feels like kicking someone who is down.\n\nThe distinction that solves it: you can validate the feeling without endorsing the account. \"That sounds like a horrible afternoon\" is true regardless of who caused it, and it costs you nothing.\n\nWhether to say the harder thing depends entirely on whether they ask. If they do, one honest sentence — after acknowledgement, not instead of it.\n\nMindset: validate the feeling, hold your view on the facts, and wait to be asked.",
       inputs: [
         { q: "They are upset and you think they caused it.", a: "\"That sounds like a rotten afternoon, whatever else.\" [Respond With Validation]", bundle: 'pro' },
@@ -1057,8 +1057,8 @@ const challengesCollections = {
     },
     {
       name: "You Have Nothing to Say",
-      guideFront: "What makes supporting them hard here?",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Something genuinely awful has happened and no response you can think of seems adequate. Everything sounds either trite or clumsy, so people often say nothing at all — or, worse, avoid the person.\n\nAdequacy is the wrong target. Nobody expects the right words for a bereavement or a diagnosis. What people remember is who turned up and who did not, and \"I don't know what to say\" is a complete and honest sentence.\n\nMindset: presence beats phrasing. Say the awkward true thing and stay.",
       inputs: [
         { q: "Something terrible has happened and you cannot find any words.", a: "\"I don't know what to say. I'm so sorry.\" [Respond With Validation]", bundle: 'pro' },
@@ -1070,8 +1070,8 @@ const challengesCollections = {
     },
     {
       name: "It Is Beyond You",
-      guideFront: "What makes supporting them hard here?",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Sometimes what someone shares is bigger than a conversation between friends — sustained distress, something frightening, something that has been going on for a long time.\n\nTwo things matter here. Do not try to diagnose or treat it; you are not equipped and it is not what the moment needs. And do not let that stop you responding at all — listening, saying it sounds hard, and staying present are always right.\n\nThen say the honest thing: that this is more than you can help with, and that you would like them to talk to someone who can. Saying that kindly is the responsible move, not a failure of nerve.\n\nMindset: stay, listen, and point towards real help. Both parts matter.",
       inputs: [
         { q: "What they describe sounds like more than a bad patch.", a: "\"This sounds bigger than something you should be carrying on your own.\" [Respond With Validation]", bundle: 'pro' },
@@ -1249,8 +1249,8 @@ const challengesCollections = {
   givingexamples: [
     {
       name: "The Example Is Too Big",
-      guideFront: "What has gone wrong with this example?",
-      guideBack: "A possible response, with the move in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The example is so dramatic that it swallows the point. The listener remembers the story and forgets what it was for, or objects that your case is extreme and therefore proves nothing.\n\nScale down. A small, ordinary example is usually more persuasive than a spectacular one, because nobody has to argue about whether it is representative.\n\nMindset: the example should serve the point, not upstage it.",
       inputs: [
         { q: "You reached for a disaster to illustrate a minor risk.", a: "\"That's an extreme case, granted. The everyday version is just losing an afternoon.\" [Scale it down]", bundle: 'pro' },
@@ -1262,8 +1262,8 @@ const challengesCollections = {
     },
     {
       name: "They Cannot Relate To It",
-      guideFront: "What has gone wrong with this example?",
-      guideBack: "A possible response, with the move in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Your everyday example is not everyday for this person, or the shared reference is not shared. You have explained something familiar with something they do not have.\n\nSwitch to a different type rather than explaining the example. Explaining an example is the clearest sign it was the wrong one.\n\nMindset: the moment you start explaining an example, pick a different one.",
       inputs: [
         { q: "They have not seen the film you used.", a: "\"Doesn't matter — simpler version: warn people about nothing and they stop listening.\" [Drop the reference]", bundle: 'pro' },
@@ -1275,8 +1275,8 @@ const challengesCollections = {
     },
     {
       name: "The Number Is Shaky",
-      guideFront: "What has gone wrong with this example?",
-      guideBack: "A possible response, with the move in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "You have used a figure you are not certain of, or you are about to. This is the failure that does the most damage, because a wrong number does not just fail — it discredits everything around it.\n\nMark the uncertainty before you are asked, or drop the number entirely. Both are stronger than being corrected.\n\nMindset: an honest \"I don't know\" is worth more than any figure you cannot defend.",
       inputs: [
         { q: "You are about to guess at a percentage.", a: "\"I want to say a third, but I genuinely don't know. Let me not put a number on it.\" [Refuse the guess]", bundle: 'pro' },
@@ -1288,8 +1288,8 @@ const challengesCollections = {
     },
     {
       name: "Too Many Examples",
-      guideFront: "What has gone wrong with this example?",
-      guideBack: "A possible response, with the move in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "You have made the point and then given a second example, and a third. Each additional one weakens the set, because the listener starts judging the weakest rather than the strongest.\n\nGive one. Stop. If they need another, they will ask, and their question will tell you which type to reach for.\n\nMindset: the second example is usually for your own comfort, not their understanding.",
       inputs: [
         { q: "You have given three examples and they have gone quiet.", a: "\"I'm piling on. The April one is the only one that matters.\" [Cut back to one]", bundle: 'pro' },
@@ -1301,8 +1301,8 @@ const challengesCollections = {
     },
     {
       name: "The Example Is About Someone Present",
-      guideFront: "What has gone wrong with this example?",
-      guideBack: "A possible response, with the move in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The best illustration of your point is something a person in the room did, and using it would put them on the spot. This happens constantly in teams and in families.\n\nEither abstract it until they are unidentifiable, ask them first, or pick a different example. The point is rarely worth the cost of making someone an exhibit.\n\nMindset: no example is worth embarrassing someone who is sitting there.",
       inputs: [
         { q: "Your best example is a mistake a colleague made last week.", a: "\"There's a recent case I won't name. The pattern is what matters.\" [Abstract it]", bundle: 'pro' },
@@ -1398,8 +1398,8 @@ const challengesCollections = {
   storiesinconversation: [
     {
       name: "They Have Just Told One of Their Own",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The most common moment for a story, and the one where the pull to compete is strongest. Their story ends, yours arrives fully formed, and it is bigger.\n\nAnswer Don't Outdo is the strategy. The size of your story is a decision, not a fact — you can tell the small version of almost anything, and the small version keeps this a conversation rather than a contest.\n\nRead the Room First matters here too, because sometimes the right move is no story at all. Someone who told theirs carefully may want a question about it rather than a matching one.\n\nMindset: theirs still has to be standing when yours is finished.",
       inputs: [
         { q: "Their story ends and yours is bigger.", a: "\"Yours is worse than mine, but you've reminded me of something.\" [Answer, Don't Outdo]", bundle: 'pro' },
@@ -1411,8 +1411,8 @@ const challengesCollections = {
     },
     {
       name: "You Are Telling It to a Group",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "More people means more ways to lose it. Someone is always half-listening, side conversations start, and the story has to work for the person who came in late as well as the one who knows the background.\n\nAsk for the Floor does more work here than anywhere — in a group, nobody has agreed to listen unless somebody asks. And Watch Them While You Tell It becomes watching several people, where the rule is to read the least engaged one rather than the most.\n\nGiving it back matters more too. In a group, a story that ends without a handover leaves an awkward beat that somebody has to fill.\n\nMindset: read the quietest face in the group, not the friendliest one.",
       inputs: [
         { q: "Nobody has agreed to listen and you are about to start.", a: "\"Can I tell you all a short one? Two minutes.\" [Ask for the Floor]", bundle: 'pro' },
@@ -1424,8 +1424,8 @@ const challengesCollections = {
     },
     {
       name: "It Is Not Landing",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "You are inside a story that is not working. The room is polite, you can feel it, and the instinct is to keep going and hope the ending rescues it. It will not.\n\nCut It Loose is the strategy, and the light version is almost always the right one. Naming it is a relief for everyone and usually gets a better reaction than the story would have.\n\nIf you are close to the end, Finish on Purpose instead — give the ending flat, in one sentence, and stop. A flat ending is a proper ending. Trailing off is not.\n\nMindset: abandoning early costs almost nothing. Finishing stubbornly costs a lot.",
       inputs: [
         { q: "Three sentences in and it is clearly not working.", a: "\"This is going nowhere. Anyway — how was Denmark?\" [Cut It Loose]", bundle: 'pro' },
@@ -1437,8 +1437,8 @@ const challengesCollections = {
     },
     {
       name: "Somebody Interrupts or Takes It Over",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Someone cuts in mid-story, or finishes it for you because they were there, or asks a question that jumps three steps ahead. Losing the thread here is normal, and so is quietly resenting it.\n\nThe strategies are the same ones, used differently. Watch Them While You Tell It tells you whether the interruption is interest — in which case take it — or a takeover. Finish on Purpose is how you get the ending back if you still want it. And Give It Back is often the best answer to someone who was clearly waiting for their turn.\n\nA question that jumps ahead is usually a compliment. It means they are in the story far enough to guess.\n\nMindset: an interruption is information about how they are listening, not only about their manners.",
       inputs: [
         { q: "They ask a question that jumps ahead of you.", a: "\"You've guessed it. Yes — that's exactly what happened.\" [Watch Them While You Tell It]", bundle: 'pro' },
@@ -1450,8 +1450,8 @@ const challengesCollections = {
     },
     {
       name: "It Is Not Yours to Tell",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The place where none of this applies. Some stories belong to someone else — a friend's diagnosis, a colleague's divorce, something told to you in confidence, or an anecdote where the funny part is at the expense of somebody who is not in the room.\n\nNo amount of good telling makes those alright, and \"they wouldn't mind\" is a decision you are making on someone else's behalf. The test is simple: would you tell it exactly like this with them sitting here?\n\nRead the Room First is the only strategy that applies, and the answer it gives is no. If you want the material, the honest route is asking the person whether you may tell it.\n\nMindset: a good story is not a good enough reason. It was not given to you for this.",
       inputs: [
         { q: "The funniest part is at the expense of someone not in the room.", a: "(do not tell it — you would not tell it with them here) [Read the Room First]", bundle: 'pro' },
@@ -1547,8 +1547,8 @@ const challengesCollections = {
   givingcriticism: [
     {
       name: "They Get Defensive",
-      guideFront: "What makes this criticism hard?",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Explanations, counter-examples, or a sudden list of everything else they are dealing with. Defensiveness is not usually disagreement — it is someone protecting their standing while they work out how serious this is.\n\nThe move is to lower the stakes rather than press harder. Concede what is fair, restate the one specific fact, and get to the alternative. Arguing about the history is how a ten-minute conversation becomes an hour.\n\nMindset: you are not trying to win the account of the past. You want a different next month.",
       inputs: [
         { q: "They explain that two of the three were not their fault.", a: "\"That's fair on those. The third one still stands, though.\" [Name the Behaviour]", bundle: 'pro' },
@@ -1560,8 +1560,8 @@ const challengesCollections = {
     },
     {
       name: "You Cannot Find a Positive",
-      guideFront: "What makes this criticism hard?",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The work is poor, the effort was not obviously there, and you are about to invent something so the conversation has an opening.\n\nDo not. An invented positive is heard immediately and turns everything after it into theatre. The escape hatch is a neutral observation — something true and non-evaluative about their circumstances. \"You've been covering two roles\" is not praise, and it does exactly the same job.\n\nMindset: neutral and true beats positive and invented, every single time.",
       inputs: [
         { q: "There is nothing about the work you can honestly praise.", a: "\"You've been doing this on your own since March.\" [Start With Something Real]", bundle: 'pro' },
@@ -1573,8 +1573,8 @@ const challengesCollections = {
     },
     {
       name: "You Have Left It Too Long",
-      guideFront: "What makes this criticism hard?",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "It has been happening for months and you have said nothing. Now the list is long, and raising it feels like an ambush — because from their side, it is one.\n\nTwo things help. Acknowledge the delay out loud, which takes most of the unfairness out of it. And do not deliver the whole list: pick the one thing that matters most, because six examples at once is not feedback, it is a case being presented.\n\nMindset: own the delay, pick one thing, and start the clock again from today.",
       inputs: [
         { q: "You are about to raise six months of instances at once.", a: "\"I should have said this months ago, and I didn't. That's on me.\" [Start With Something Real]", bundle: 'pro' },
@@ -1586,8 +1586,8 @@ const challengesCollections = {
     },
     {
       name: "It Is Not Your Place",
-      guideFront: "What makes this criticism hard?",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "They are more senior, or it is not your team, or it is a friend's private business rather than something that affects you.\n\nSometimes the honest answer is to say nothing. When you do speak, the safe ground is the effect on you — you always have standing to describe your own experience — and a light version is almost always the right size.\n\nMindset: you can always describe your own experience. You cannot always assess someone else's work.",
       inputs: [
         { q: "A senior colleague does something that affects your work.", a: "\"Could I ask for the brief in writing? I keep losing bits of it.\" [Say It Lightly]", bundle: 'pro' },
@@ -1599,8 +1599,8 @@ const challengesCollections = {
     },
     {
       name: "Nothing Changes",
-      guideFront: "What makes this criticism hard?",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "They took it well, agreed with everything, and the behaviour is exactly the same three weeks later. This is where most people give up and start working around the person instead.\n\nRaising it a second time is uncomfortable and usually necessary, and the second conversation should be different from the first: shorter, more direct, and explicit that this is the second time. Softening it again teaches that the deadline is negotiable.\n\nMindset: name that it is the second conversation. That fact is the new information.",
       inputs: [
         { q: "Nothing has changed three weeks after a good conversation.", a: "\"We talked about this three weeks ago and it's been the same since.\" [Name the Behaviour]", bundle: 'pro' },
@@ -1614,8 +1614,8 @@ const challengesCollections = {
   receivingfeedbackandcriticism: [
     {
       name: "Feedback That Feels Unfair",
-      guideFront: "What kind of feedback is this?",
-      guideBack: "A possible response, with the step in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The criticism does not match what you think happened, and every instinct says to correct the record immediately.\n\nThe training is to notice that defending first destroys everything that comes after it. You run the same steps — you simply put your disagreement at Reflect Openly rather than at the front.\n\nWhat it usually sounds like:\n\n• \"You never...\" when you know you have.\n• A version of events with one detail plainly wrong.\n• Blame for something that was not yours.\n\nTwo ways through:\n1. Show You Understand Their View — describe how it looked to them without agreeing. \"I can see it feels one-sided from where you're standing.\"\n2. Reflect Openly — then say plainly that you see it differently. \"That's not quite how I remember it.\"\n\nMindset: being understood is not urgent. It will still be available in thirty seconds, and it lands far better once they feel heard.",
       inputs: [
         { q: "They say: \"You never help with any of this.\" You know you did last week.", a: "\"I can see it feels one-sided from where you're standing.\" [Show You Understand Their View]", bundle: 'pro' },
@@ -1627,8 +1627,8 @@ const challengesCollections = {
     },
     {
       name: "Criticism in Front of Others",
-      guideFront: "What kind of feedback is this?",
-      guideBack: "A possible response, with the step in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The feedback arrives with an audience — a meeting, a group chat, the dinner table — so you are managing the criticism and your face at the same time.\n\nThe training is to keep it short in public and move the real conversation somewhere private. Composure in the room is worth more than winning the point.\n\nWhat makes it hard:\n\n• Everyone is watching how you take it, not just what you say.\n• Defending yourself looks worse in public than in private.\n• Silence gets read as guilt.\n\nTwo ways through:\n1. The Short Response — take it calmly and briefly, in front of everyone. \"Fair — noted.\"\n2. Look Ahead — offer to pick it up properly afterwards. \"Let's go through it after this.\"\n\nMindset: the room is judging your composure, not the criticism. Taking it well in public is the whole win.",
       inputs: [
         { q: "Your manager criticises your work in front of the whole team.", a: "\"Fair — let me come back to you on that.\" [The Short Response]", bundle: 'pro' },
@@ -1640,8 +1640,8 @@ const challengesCollections = {
     },
     {
       name: "Vague Criticism",
-      guideFront: "What kind of feedback is this?",
-      guideBack: "A possible response, with the step in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "You are told something is wrong but not what — \"you're just not really engaged\", \"the tone was off\". There is nothing concrete to acknowledge or act on.\n\nThe training is to resist filling the gap yourself. Guessing what they mean usually means agreeing to something they never actually said.\n\nWhat it usually sounds like:\n\n• \"Your attitude has been a bit off lately.\"\n• \"That wasn't really up to standard.\"\n• \"People have been saying things.\"\n\nTwo ways through:\n1. Reflect Openly — say honestly that you cannot use it yet. \"I want to take that seriously, but I'm not sure what you're seeing.\"\n2. Look Ahead — ask them into the fix so the next version is specific. \"Give me one example and I'll know what to change.\"\n\nMindset: asking what they mean is not a challenge. You cannot act on feedback you cannot picture.",
       inputs: [
         { q: "They say: \"Your attitude has been a bit off lately.\"", a: "\"I want to take that seriously, but I'm not sure what you're seeing.\" [Reflect Openly]", bundle: 'pro' },
@@ -1653,8 +1653,8 @@ const challengesCollections = {
     },
     {
       name: "Feedback That Hits a Sore Spot",
-      guideFront: "What kind of feedback is this?",
-      guideBack: "A possible response, with the step in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "It is true, you already knew it, and hearing it out loud stings. This is the category where people either go cold or over-apologise.\n\nThe training is to stay in the conversation without collapsing into it. You are allowed to be affected and still be composed.\n\nWhat it usually sounds like:\n\n• The thing you have already been told by someone else.\n• The thing you already dislike about yourself.\n• Something said kindly that still lands hard.\n\nTwo ways through:\n1. Acknowledge the Feedback — one honest line, without the pile-on. \"Yeah. That one's not new to me.\"\n2. Reflect Openly — say it landed, and take the time you need. \"That landed. I need a minute with it.\"\n\nMindset: being affected is not losing. Over-apologising makes the other person manage your feelings instead of their own point.",
       inputs: [
         { q: "They name the exact thing you already dislike about yourself.", a: "\"Yeah. That one's not new to me.\" [Acknowledge the Feedback]", bundle: 'pro' },
@@ -1666,8 +1666,8 @@ const challengesCollections = {
     },
     {
       name: "The Same Criticism Again",
-      guideFront: "What kind of feedback is this?",
-      guideBack: "A possible response, with the step in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "You have had this feedback before, you said you would change it, and here it is again. Now there are two problems: the behaviour and the broken promise.\n\nThe training is to skip the parts that will sound hollow the second time. Another warm acknowledgement without a change will make it worse.\n\nWhat makes it different:\n\n• Your last promise is now evidence against you.\n• They are checking whether you take it seriously at all.\n• A repeated apology reads as a stalling tactic.\n\nTwo ways through:\n1. Reflect Openly — name the pattern out loud yourself, before they do. \"It's a pattern, not a one-off.\"\n2. Look Ahead — make the new promise smaller and more specific than the last one. \"I'll put it in the calendar rather than rely on remembering.\"\n\nMindset: naming your own repeat is what restores your credibility. Pretending it is the first time is what destroys it.",
       inputs: [
         { q: "They say: \"We talked about this last month.\"", a: "\"You did, and it happened again. That's on me.\" [Reflect Openly]", bundle: 'pro' },
@@ -2009,8 +2009,8 @@ const challengesCollections = {
   persuasionandinfluence2: [
     {
       name: "They Are Defending Their Own Idea",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "They proposed something, you countered, and now the conversation is about whose idea wins rather than what should happen.\n\nOnce someone is defending, more argument makes them defend harder. Take the fight out by conceding the strongest part of their case and putting yours alongside rather than instead.\n\nMindset: leave their idea on the table. People argue for what you are trying to remove.",
       inputs: [
         { q: "They are defending their approach more firmly than before.", a: "\"Yours is simpler to explain, and that's not nothing. Can I put a middle version next to it?\" [Acknowledge Before Suggesting]", guideBack: "What's right about theirs, then yours", bundle: 'pro' },
@@ -2022,8 +2022,8 @@ const challengesCollections = {
     },
     {
       name: "They Agree But Will Not Commit",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "They have said your idea sounds good, and nothing happens. This is one of the most common outcomes, and it is almost never about the argument.\n\nThe obstacle is the size of the commitment, or the effort of starting, or something they have not said. Shrink the ask until saying yes costs almost nothing, and find out what is really in the way.\n\nMindset: they already agree. Stop arguing and start removing the obstacle.",
       inputs: [
         { q: "They said it sounds good three weeks ago and nothing has moved.", a: "\"What's actually in the way? I don't think it's the idea.\" [Ask a Question Instead]", guideBack: "A question that leads them there", bundle: 'pro' },
@@ -2035,8 +2035,8 @@ const challengesCollections = {
     },
     {
       name: "The Question Is Really an Argument",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "A question with an obvious right answer is not a question. \"Don't you think it would be better if…\" is an argument with a question mark attached, and everyone can hear it.\n\nIt produces irritation rather than agreement, because the other person is being invited to agree that they were wrong. A real question — one whose answer you would accept even if it went against you — does the opposite.\n\nMindset: if you already know the answer you want, you are not asking.",
       inputs: [
         { q: "You are about to ask something with only one acceptable answer.", a: "\"What's your read on the timing? I've got a view but I'd rather hear yours.\" [Ask a Question Instead]", guideBack: "A question that leads them there", bundle: 'pro' },
@@ -2048,8 +2048,8 @@ const challengesCollections = {
     },
     {
       name: "It Is Not Yours to Decide",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "It is their money, their job, their body, their family. You can have a view and you can say it once, and after that continuing is pressure rather than persuasion.\n\nSay what you think, make it easy for them to come back to you, and then genuinely stop. The strongest thing you can do for someone making their own decision is to be the person who did not push.\n\nMindset: one clear go, then hand it over and mean it.",
       inputs: [
         { q: "A friend is making a choice you think is a mistake.", a: "\"I'd do it differently, and it's completely your call.\" [Let Them Decide]", guideBack: "The choice, left with them", bundle: 'pro' },
@@ -2061,8 +2061,8 @@ const challengesCollections = {
     },
     {
       name: "They Have Said No",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "A refusal handled badly closes the subject permanently. Arguing with a no confirms that the person was right to be defensive, and it makes the next conversation harder than this one.\n\nAccepting it out loud costs you nothing and keeps the door open. One honest question afterwards is fair; a second attempt at the same argument is not.\n\nMindset: how you take a no decides whether you get a second conversation.",
       inputs: [
         { q: "They have said no firmly.", a: "\"Fair enough. You know your own situation better than I do.\" [Acknowledge Before Suggesting]", guideBack: "What's right about theirs, then yours", bundle: 'pro' },
@@ -2076,8 +2076,8 @@ const challengesCollections = {
   negotiationandcompromise: [
     {
       name: "You Are Conceding Too Fast",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "You agreed quickly, and afterwards you notice you have given up something you minded about. It usually happens for a good reason — you did not want the conversation to be uncomfortable.\n\nThe cost lands later, as resentment about an agreement you technically consented to. Slowing down is not obstruction; it is the thing that makes the agreement genuine.\n\nMindset: an agreement you would resent in a month is not an agreement.",
       inputs: [
         { q: "You are about to agree just to end the discomfort.", a: "\"Give me a minute. I don't want to say yes and regret it on Thursday.\" [Refine It Together]", bundle: 'pro' },
@@ -2089,8 +2089,8 @@ const challengesCollections = {
     },
     {
       name: "They Are Conceding Too Fast",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The other person agrees to everything, and you cannot tell whether they are genuinely relaxed or just avoiding the conversation.\n\nTaking a fast yes at face value is tempting and expensive — an unhappy agreement usually resurfaces later as a missed deadline or a quiet withdrawal of effort.\n\nAsk once more, plainly. Someone who is genuinely relaxed will say so, and someone who is not has been given a way to say it.\n\nMindset: a quick yes is worth one more question.",
       inputs: [
         { q: "They agreed to everything without pushing back once.", a: "\"You've said yes to all of it. Is any of it actually awkward for you?\" [Refine It Together]", bundle: 'pro' },
@@ -2102,8 +2102,8 @@ const challengesCollections = {
     },
     {
       name: "The Midpoint Suits Nobody",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "You have split the difference and produced something neither of you wanted — half the budget, a date in the middle, a plan with the good parts of both removed.\n\nThis is what happens when a solution is built from positions rather than needs. Going back to what each of you actually cares about usually produces something better, and it is worth reopening a settled compromise to get it.\n\nMindset: a fair-looking outcome that nobody wants is not a compromise, it is a stalemate with a handshake.",
       inputs: [
         { q: "The midpoint gives neither of you what you wanted.", a: "\"This gives us both something we didn't ask for. Can we start again from what each of us needs?\" [Offer Something That Includes Both]", bundle: 'pro' },
@@ -2115,8 +2115,8 @@ const challengesCollections = {
     },
     {
       name: "They Will Not Move at All",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "One person is not negotiating. They restate the same position, offer nothing, and treat the conversation as a formality.\n\nTwo things are worth trying: making the disagreement smaller by splitting it, and asking directly what would have to be true for anything to change. If neither works, saying plainly that this is not a negotiation is more useful than continuing to behave as though it were.\n\nMindset: name what is happening rather than keep playing along.",
       inputs: [
         { q: "They have repeated the same position four times.", a: "\"Is there any part of this that's actually open? I'd like to know before I keep going.\" [Ask What Matters Most]", bundle: 'pro' },
@@ -2128,8 +2128,8 @@ const challengesCollections = {
     },
     {
       name: "It Should Not Be a Compromise",
-      guideFront: "Choose a strategy to respond when...",
-      guideBack: "A possible response, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Some things should not be met in the middle. A safety issue, a promise already made to someone else, something that would leave you doing work you think is wrong.\n\nThe strategies in this pack are for genuine trade-offs between two reasonable positions. Applied where a limit belongs, they become a polite route to giving in — and the other person often has no idea, because you never said it was a limit.\n\nMindset: if halfway is not acceptable, say so instead of negotiating towards it.",
       inputs: [
         { q: "The compromise on offer is genuinely unsafe or wrong.", a: "\"This one isn't a negotiation for me. I can't sign off on half of it.\" [Say What You Cannot Move On]", bundle: 'pro' },
@@ -2472,8 +2472,8 @@ const challengesCollections = {
   emotionlabellingandregulation: [
     {
       name: "You Do Not Have the Word Yet",
-      guideFront: "What makes this one hard to put into words?",
-      guideBack: "A possible response, with the move in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Something is clearly going on, and every word you try on is slightly wrong — so you say nothing and it stays stuck.\n\nThe training is to stop hunting for the perfect label. Describing what actually happened to you is a complete thing to say, and the word almost always turns up once the body has been described.\n\nWhat it usually feels like:\n\n• \"I don't know, I'm just… off.\"\n• Every word you try sounds either too big or too small.\n• You end up saying \"fine\" because it is the only word that fits nothing.\n\nTwo ways through:\n1. Describe the Signals — start from the body. \"I've been replaying it all afternoon, which usually means something.\"\n2. Label the Emotion, roughly — an approximate word beats none. \"Something in the region of let down.\"\n\nMindset: precision comes second. An honest approximation gets the conversation started, and you can correct it three sentences later.",
       inputs: [
         { q: "Something is clearly bothering you but no word fits.", a: "\"I've been replaying it all afternoon, which usually means something.\" [Describe the Signals]", bundle: 'pro' },
@@ -2485,8 +2485,8 @@ const challengesCollections = {
     },
     {
       name: "The Feeling Is Too Big Right Now",
-      guideFront: "What makes this one hard to put into words?",
-      guideBack: "A possible response, with the move in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "It is peaking, and anything you say in the next minute will come out sharper or shakier than you mean it to.\n\nThe training is to recognise the peak as a real thing rather than a failure of willpower, and to buy time out loud instead of pushing through and regretting it.\n\nWhat it usually looks like:\n\n• A reply forming that you can already tell is too sharp.\n• Your voice about to go, mid-sentence.\n• The conversation moving faster than you can think.\n\nTwo ways through:\n1. Regulate Out Loud — ask for the pause, and say why. \"Can we come back to this after lunch?\"\n2. Describe the Signals — if you can manage one sentence, make it this one. \"I'm shaking a bit, so give me a second.\"\n\nMindset: a pause you name is not a walk-out. Saying \"I need ten minutes\" keeps the conversation alive; leaving without a word ends it.",
       inputs: [
         { q: "You can feel a sharp reply forming.", a: "\"Let me take a breath — I don't want to say this badly.\" [Regulate Out Loud]", bundle: 'pro' },
@@ -2498,8 +2498,8 @@ const challengesCollections = {
     },
     {
       name: "Naming It Feels Weak",
-      guideFront: "What makes this one hard to put into words?",
-      guideBack: "A possible response, with the move in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "You could say \"I'm nervous about this\", and something in you is certain that saying it will cost you standing in the room.\n\nThe training is to notice that the opposite is usually true. Naming a feeling calmly reads as self-possession; the version everyone can see but nobody has mentioned is what actually looks shaky.\n\nWhat it usually sounds like from the inside:\n\n• \"If I say I'm nervous they'll think I can't handle it.\"\n• \"This is unprofessional.\"\n• \"Nobody else seems to need to say this.\"\n\nTwo ways through:\n1. Label the Emotion, plainly — no apology attached. \"I'm a bit nervous about this one.\"\n2. Regulate Out Loud — pair the feeling with what you are doing about it. \"I'm nervous, so I'm going to take it slowly.\"\n\nMindset: the feeling is already in the room, in your voice and your hands. Naming it puts you in charge of the story about it.",
       inputs: [
         { q: "You want to say you are nervous but it feels unprofessional.", a: "\"I'm a bit nervous about this one, so bear with me.\" [Label the Emotion]", bundle: 'pro' },
@@ -2511,8 +2511,8 @@ const challengesCollections = {
     },
     {
       name: "They Dismissed What You Named",
-      guideFront: "What makes this one hard to put into words?",
-      guideBack: "A possible response, with the move in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "You said how you felt and got \"you're overreacting\" or \"that's not what happened\" back.\n\nThe training is to hold the label without escalating into proving it. Your feeling is not a claim about the world that needs evidence — it is a report on you, and it stays true whether or not they accept it.\n\nWhat it usually sounds like:\n\n• \"You're being oversensitive.\"\n• \"That's not what I meant, so you shouldn't feel that.\"\n• \"It wasn't a big deal.\"\n\nTwo ways through:\n1. Label the Emotion again, unchanged — no louder, no softer. \"It might not have been a big deal. I still felt embarrassed.\"\n2. Describe the Signals — give them the evidence rather than the argument. \"I know how it looked. I was awake at three thinking about it.\"\n\nMindset: you are not asking permission to feel it. Repeating it calmly once is enough — a second round of proving turns a description into a case.",
       inputs: [
         { q: "They say: \"You're overreacting.\"", a: "\"Maybe. I still felt embarrassed, and that's what I wanted to say.\" [Label the Emotion]", bundle: 'pro' },
@@ -2524,8 +2524,8 @@ const challengesCollections = {
     },
     {
       name: "You Got Their Emotion Wrong",
-      guideFront: "What makes this one hard to put into words?",
-      guideBack: "A possible response, with the move in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "You offered someone a word and it missed — they were not angry, or not hurt, or not whatever you said.\n\nThe training is to treat the miss as progress rather than an embarrassment. A wrong label is often the thing that makes someone find the right one, and how you take the correction decides whether they keep going.\n\nWhat it usually sounds like:\n\n• \"No, not angry.\"\n• \"That's not it at all.\"\n• A pause, and then them changing the subject.\n\nTwo ways through:\n1. Label Their Emotion again, more openly — hand the word back to them. \"Fair enough. What would you call it?\"\n2. Describe the Signals you noticed — say what you were reading, not what you concluded. \"You went quiet, that's all I was going on.\"\n\nMindset: you were guessing, and they know that. Taking the correction easily is what keeps the door open; defending your guess is what closes it.",
       inputs: [
         { q: "They say: \"No, not angry.\"", a: "\"Fair enough. What would you call it?\" [Label Their Emotion]", bundle: 'pro' },
@@ -2606,8 +2606,8 @@ const challengesCollections = {
   rolebasedhumour: [
     {
       name: "The Room Is Not Right",
-      guideFront: "What has gone wrong with the bit?",
-      guideBack: "A possible move, with the role or the fix in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "You have a role ready and the room is not warm enough for it — someone is tired, tense, or has just said something they meant.\n\nThe training is to check before you commit rather than after. This is the single most useful skill in the pack.\n\nWhat the tells look like:\n\n• They said the thing flatly, not as an opener.\n• Nobody else in the group is joking yet.\n• The subject is something they have actually complained about before.\n\nTwo ways through:\n1. Drop the role and answer straight — the bit will still be there in ten minutes.\n2. The Lazy One — if you want something light, this is the role that cannot offend, because the joke is entirely on you.\n\nMindset: a bit that lands in the wrong room costs more than the laugh was worth. Reading first is not caution, it is the skill.",
       inputs: [
         { q: "They say \"I forgot my homework\" flatly and look genuinely worried.", a: "\"Ah. Is it a problem, or is it a shrug?\" (drop the role)", bundle: 'pro' },
@@ -2619,8 +2619,8 @@ const challengesCollections = {
     },
     {
       name: "It Landed Badly",
-      guideFront: "What has gone wrong with the bit?",
-      guideBack: "A possible move, with the role or the fix in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "You committed to a role, and the reaction was a flat look rather than a laugh.\n\nThe training is to get out cleanly and quickly. What makes a misfire memorable is not the joke, it is the four seconds afterwards where somebody keeps going or starts explaining.\n\nWhat it usually looks like:\n\n• A small polite smile and a change of subject.\n• Silence that is one beat too long.\n• They answer your in-character line completely straight.\n\nTwo ways through:\n1. Drop character immediately and answer their actual point — no explanation, no apology.\n2. Turn the bit on yourself — acknowledge the misfire once, lightly, and move on.\n\nMindset: never explain the joke and never repeat it louder. One clean exit and the room forgets it inside a minute.",
       inputs: [
         { q: "Your in-character line got a flat look.", a: "\"Anyway — genuinely, do you need a hand with it?\" (drop the role)", bundle: 'pro' },
@@ -2632,8 +2632,8 @@ const challengesCollections = {
     },
     {
       name: "They Took It Personally",
-      guideFront: "What has gone wrong with the bit?",
-      guideBack: "A possible move, with the role or the fix in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The role accidentally landed on something real — they heard a comment about themselves rather than a character.\n\nThe training is to name it and step out at once. This is the one failure in the pack worth being unambiguous about: you drop the bit, you say plainly that you were not talking about them, and you do not do it again in that conversation.\n\nWhere it usually happens:\n\n• The Mock-Offended One, when they had just said something sincere.\n• The Bossy Leader, with someone who feels talked over generally.\n• The Super Stingy One, about something they actually needed.\n\nTwo ways through:\n1. Step out and say so directly — \"That was me being an idiot, not a comment about you.\"\n2. Answer their real point properly, and let the humour go for now.\n\nMindset: this is not a moment for another joke. The repair is plain and short, and then the subject changes.",
       inputs: [
         { q: "You played mock-offended and they had actually meant what they said.", a: "\"Sorry — that was me messing about, not a comment on you.\" (step out)", bundle: 'pro' },
@@ -2645,8 +2645,8 @@ const challengesCollections = {
     },
     {
       name: "You Cannot Commit",
-      guideFront: "What has gone wrong with the bit?",
-      guideBack: "A possible move, with the role or the fix in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "You started the role and delivered it half-heartedly, with a nervous laugh in the middle and a question mark at the end.\n\nThe training is to notice that the delivery is the joke. The same words said with full commitment are funny; said tentatively they are just a confusing sentence.\n\nWhat it usually sounds like:\n\n• A line that trails off before it finishes.\n• A laugh in the middle of your own bit.\n• Going quiet halfway through and abandoning it.\n\nTwo ways through:\n1. Commit to the next line properly, in role, and let it be the whole thing.\n2. The Lazy One — the lowest-commitment role there is, and it works even mumbled.\n\nMindset: half-in is the only way this fails. If you are not going to commit, say the ordinary thing instead — it is a much better outcome than a role delivered apologetically.",
       inputs: [
         { q: "Your line trailed off before it finished.", a: "\"No — properly. I'll be taking over the kitchen from here.\" (commit)", bundle: 'pro' },
@@ -2658,8 +2658,8 @@ const challengesCollections = {
     },
     {
       name: "The Bit Has Run Out",
-      guideFront: "What has gone wrong with the bit?",
-      guideBack: "A possible move, with the role or the fix in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The role got a good laugh, and you are now on the fifth beat of it while the room has quietly moved on.\n\nThe training is to count. Three beats is a bit; the fourth is usually where it turns from funny into something everyone is waiting out.\n\nWhat it usually looks like:\n\n• The laughs are getting smaller each time.\n• You are the only one still in the bit.\n• Someone tries to change the subject and you go back to it.\n\nTwo ways through:\n1. Break character warmly and hand the conversation back with a real question.\n2. Land one final absurd line and get out on it deliberately.\n\nMindset: leave on a laugh, not after one. The best-remembered bits are the ones that ended a beat earlier than they had to.",
       inputs: [
         { q: "You are on the fifth beat and the laughs are shrinking.", a: "\"Right, I'm done. What are you actually going to do about it?\" (break character)", bundle: 'pro' },
@@ -3291,8 +3291,8 @@ const challengesCollections = {
   listeningthroughquestions: [
     {
       name: "It Has Become an Interview",
-      guideFront: "What has gone wrong with the questions here?",
-      guideBack: "A possible response, with the move in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Your questions are good and unconnected — each one comes from your head rather than from their last answer. The other person can feel it within two or three questions, and their answers start getting shorter.\n\nWhat it usually looks like:\n\n• Their answers are getting shorter while your questions stay the same length.\n• You asked something that had nothing to do with what they just said.\n• You have learned four separate facts and followed none of them.\n\nTwo ways through:\n1. Use a word from their last answer — the fastest repair there is.\n2. Give something of your own — a question after a small disclosure lands completely differently.\n\nMindset: the repair is not a better question. It is a question built out of their answer.",
       inputs: [
         { q: "You have asked four unconnected questions and answers are shortening.", a: "\"You said something about the second flat — what happened with that?\" [use their word]", bundle: 'pro' },
@@ -3304,8 +3304,8 @@ const challengesCollections = {
     },
     {
       name: "You Went Deep Too Early",
-      guideFront: "What has gone wrong with the questions here?",
-      guideBack: "A possible response, with the move in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "You asked about feelings before you had the story, and it landed as intrusive rather than interested. The order matters more than the question: the same sentence is welcome once someone can tell you have followed what they said.\n\nWhat it usually looks like:\n\n• A pause, and then a short answer.\n• You asked how something felt about an event you could not picture.\n• You barely know the person and the question was about their inner life.\n\nTwo ways through:\n1. Go back to the facts — ask for the sequence and rebuild.\n2. Narrow it to a moment — \"what did you think when he said it\" is answerable where \"how did you feel about all that\" is not.\n\nMindset: earn the deep questions with the ordinary ones. Three facts, then a feeling.",
       inputs: [
         { q: "You asked how they felt and got a short answer and a pause.", a: "\"Sorry — back up. What actually happened on the Tuesday?\" [back to facts]", bundle: 'pro' },
@@ -3317,8 +3317,8 @@ const challengesCollections = {
     },
     {
       name: "The Question Sounded Like a Judgement",
-      guideFront: "What has gone wrong with the questions here?",
-      guideBack: "A possible response, with the move in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "You asked \"why did you do that?\" and it landed as \"why on earth did you do that?\". The content was fine; the framing carried an accusation. Two words fix it.\n\nWhat it usually looks like:\n\n• They started justifying rather than explaining.\n• You used \"why did you\" rather than \"what made you\".\n• The answer came back defensive and slightly longer than it needed to be.\n\nTwo ways through:\n1. Reframe it — \"what made you…\" asks for a reason, not a defence.\n2. Say the assumption out loud — \"not a criticism, I'd probably have done the same.\"\n\nMindset: \"why did you\" asks them to justify. \"What made you\" asks them to explain. The difference is entirely in the framing.",
       inputs: [
         { q: "They started justifying rather than explaining.", a: "\"Not a criticism — I'd probably have done the same. What made it the right call at the time?\" [say the assumption]", bundle: 'pro' },
@@ -3330,8 +3330,8 @@ const challengesCollections = {
     },
     {
       name: "Nothing Is Coming Back",
-      guideFront: "What has gone wrong with the questions here?",
-      guideBack: "A possible response, with the move in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Your questions are getting one-word answers. Sometimes the person does not want to talk, and that is an answer worth respecting — but more often the questions have been too big, and a smaller one gets a real reply.\n\nWhat it usually looks like:\n\n• \"Fine\", \"yeah\", \"not much\", three times running.\n• Your questions have all been broad ones.\n• They have not asked you anything either.\n\nTwo ways through:\n1. Make it smaller and more concrete — \"what happened next\" beats \"how was it\".\n2. Read it as a no and change register — some conversations are not the moment.\n\nMindset: one-word answers are usually a question that was too big, not a person who does not want to talk. Try smaller once, then let it go.",
       inputs: [
         { q: "Three broad questions have got three short answers.", a: "\"Let me ask something easier — what did you actually do on the Saturday?\" [smaller]", bundle: 'pro' },
@@ -3343,8 +3343,8 @@ const challengesCollections = {
     },
     {
       name: "You Stopped Too Soon",
-      guideFront: "What has gone wrong with the questions here?",
-      guideBack: "A possible response, with the move in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "They gave you an answer with something obviously unfinished in it and you moved on. Half the good material in any conversation is one question past where most people stop.\n\nWhat it usually looks like:\n\n• They said something surprising and you said \"oh, nice\" and changed the subject.\n• A half-sentence went past that clearly had more behind it.\n• You have got a fact where there was a story available.\n\nTwo ways through:\n1. Go back to it — even a minute later. \"You said something earlier about…\"\n2. Ask the obvious next one — \"and then what?\" is usually the question that was waiting.\n\nMindset: one more question. Most conversations end one question before the interesting part.",
       inputs: [
         { q: "They mentioned something surprising and you let it pass.", a: "\"Hang on, go back — you said you'd never actually met him?\" [go back]", bundle: 'pro' },
@@ -3358,8 +3358,8 @@ const challengesCollections = {
   showunderstanding2: [
     {
       name: "Your Share Became Your Turn",
-      guideFront: "What has gone wrong here?",
-      guideBack: "A possible response, with the move in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "You offered something of your own to show you recognised it, and then kept going. The disclosure was fine; the absence of a way back was not.\n\nWhat it usually looks like:\n\n• Your version is now longer than theirs.\n• They have stopped adding anything.\n• You are on the second or third detail of your own case.\n\nTwo ways through:\n1. Cut it off and return — \"anyway, that's mine. Back to you.\"\n2. Ask them the question your own story raised — turns the detour into a bridge.\n\nMindset: one sentence about you, then back. Length is what turns recognition into a hijack.",
       inputs: [
         { q: "You are three sentences into your own version.", a: "\"Anyway — that's mine and it's less interesting. Where had you got to?\" [Share and Return]", guideBack: "Your bit, then the floor back to them", bundle: 'pro' },
@@ -3371,8 +3371,8 @@ const challengesCollections = {
     },
     {
       name: "You Agreed With Something You Do Not Believe",
-      guideFront: "What has gone wrong here?",
-      guideBack: "A possible response, with the move in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "You named a shared value in the moment because it was the warm thing to say, and you do not actually hold it. This gets found out, usually in the next conversation, and it costs more than the disagreement would have.\n\nWhat it usually looks like:\n\n• You agreed quickly and slightly too warmly.\n• You are hoping the subject does not come back.\n• You would say something different to somebody else.\n\nTwo ways through:\n1. Separate the value from the conclusion — you can often agree with one honestly.\n2. Say the honest half — \"I'd have minded too, though I'd probably have done nothing about it.\"\n\nMindset: agree with what is true. There is nearly always a true version of agreement available, and it is worth more than the generous one.",
       inputs: [
         { q: "You agreed with a principle you do not actually hold.", a: "\"Honestly, I'd have let that one go. What I do share is not wanting to be taken for granted.\" [Shared Value]", guideBack: "The principle you both hold", bundle: 'pro' },
@@ -3632,8 +3632,8 @@ const challengesCollections = {
   storybanter: [
     {
       name: "You Blocked It",
-      guideFront: "What has gone wrong in this banter?",
-      guideBack: "A possible response, with the move in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "You answered an invented detail with a fact, and the story stopped. Blocking is almost never meant — it comes out as a reflex to correct something — but the effect is the same, and it is the one failure the form cannot absorb.\n\nWhat it usually looks like:\n\n• \"That wouldn't happen, though.\"\n• \"Well, you couldn't actually do that.\"\n• A small silence, and then somebody changes the subject.\n\nTwo ways through:\n1. Take it back and accept it — out loud, lightly. \"Ignore me. Yes, and…\"\n2. Accept it too hard — over-agree, which repairs the block and is funnier than the original.\n\nMindset: nothing in a made-up story needs to be possible. The only rule is that you build on what you were given.",
       inputs: [
         { q: "You said \"that wouldn't happen\" and the story stopped.", a: "\"Ignore me, I'm being boring. Yes — and the dog has a locker now.\" [take it back]", bundle: 'pro' },
@@ -3645,8 +3645,8 @@ const challengesCollections = {
     },
     {
       name: "It Went Flat",
-      guideFront: "What has gone wrong in this banter?",
-      guideBack: "A possible response, with the move in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The last few turns have all been agreeable and nothing is at stake. The story is pleasant, which is the state it dies in. The repair is a problem, not a better joke.\n\nWhat it usually looks like:\n\n• Two or three turns in a row that just add nice things.\n• Both of you waiting for the other to be funny.\n• The energy has dropped and neither of you has said so.\n\nTwo ways through:\n1. Complicate it — What If, aimed at the situation.\n2. Bring someone in — a new person with a reaction restarts it for free.\n\nMindset: a flat story needs a problem, not a punchline. Give the other person something to be funny about.",
       inputs: [
         { q: "Nothing has gone wrong in the story for three turns.", a: "\"What if your mum's been home the whole time, though?\" [complicate]", bundle: 'pro' },
@@ -3658,8 +3658,8 @@ const challengesCollections = {
     },
     {
       name: "It Got Personal",
-      guideFront: "What has gone wrong in this banter?",
-      guideBack: "A possible response, with the move in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "A complication landed on the person rather than on the situation — a joke about their laziness rather than about the imaginary week off. The form only works while everything absurd is happening to an invented version of things.\n\nWhat it usually looks like:\n\n• The \"what if\" was about them being bad at something.\n• They laughed a beat late, or not quite.\n• The story is suddenly about a real thing.\n\nTwo ways through:\n1. Move the target back to the situation — immediately, without a speech about it.\n2. Turn it on yourself — the fastest repair there is.\n\nMindset: everything in the story is invented, including the version of them in it. The moment it is about the real person, it stops being banter.",
       inputs: [
         { q: "Your complication was really a dig at them.", a: "\"Actually scrap that — what if it's me who gets caught, hiding in your fort?\" [turn it on yourself]", bundle: 'pro' },
@@ -3671,8 +3671,8 @@ const challengesCollections = {
     },
     {
       name: "It Went On Too Long",
-      guideFront: "What has gone wrong in this banter?",
-      guideBack: "A possible response, with the move in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The best moment has passed and you are both still going. Everyone remembers the four extra minutes; nobody remembers a story that stopped one turn early.\n\nWhat it usually looks like:\n\n• The biggest laugh was three turns ago.\n• You are inventing rather than building.\n• Someone has checked their phone.\n\nTwo ways through:\n1. Land it flat — one sentence that closes it, then a change of subject.\n2. Hand it to them to finish — \"how does this end?\" gets a last line and an exit.\n\nMindset: stop while it is still funny. Ending one turn early is invisible; ending three turns late is the thing people remember.",
       inputs: [
         { q: "The biggest laugh was three turns ago.", a: "\"Anyway — that's how you end up moving cities. Right, coffee?\" [land it]", bundle: 'pro' },
@@ -3684,8 +3684,8 @@ const challengesCollections = {
     },
     {
       name: "You Have Nothing",
-      guideFront: "What has gone wrong in this banter?",
-      guideBack: "A possible response, with the move in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "It is your turn, the story is going well, and your mind is completely blank. The mistake is waiting until you think of something clever. Two of the six techniques need no invention at all.\n\nWhat it usually looks like:\n\n• A pause that has gone on a beat too long.\n• You are searching for something funny rather than something next.\n• You say \"yeah\" and the turn passes to nobody.\n\nTwo ways through:\n1. Follow the consequence — \"so then what happens is…\" requires no idea, only their last line.\n2. Ask a playful question — an invitation is always available and always in bounds.\n\nMindset: you do not need an idea. You need a next thing, and their last line already contains one.",
       inputs: [
         { q: "It is your turn and your mind is blank.", a: "\"So then your mum gets home before the boxes do.\" [follow the consequence]", bundle: 'pro' },
@@ -3699,8 +3699,8 @@ const challengesCollections = {
   explainthings2: [
     {
       name: "You Answered the Literal Question",
-      guideFront: "What has gone wrong with this explanation?",
-      guideBack: "A possible response, with the move in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "They asked what something is, you told them what it is, and it helped nobody — because what they wanted was whether it had anything to do with them. The repair is to give a different W rather than a better version of the same one.\n\nWhat it usually looks like:\n\n• They nod and nothing happens behind it.\n• They ask the same question again in slightly different words.\n• They could see the object while you defined it.\n\nTwo ways through:\n1. Switch to Who or When — the two that answer relevance.\n2. Ask which part they are stuck on — six words, no cost.\n\nMindset: a correct answer that helps nobody is still a failed explanation.",
       inputs: [
         { q: "You defined the thing and they still look blank.", a: "\"That was the what, and it didn't land. The point is you stop chasing people.\" [The W They Need]", guideBack: "The answer they're really after, or a check", bundle: 'pro' },
@@ -3712,8 +3712,8 @@ const challengesCollections = {
     },
     {
       name: "The Lecture",
-      guideFront: "What has gone wrong with this explanation?",
-      guideBack: "A possible response, with the move in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "You started long, and by the time you reached the useful part they had stopped following. The repair is to stop where you are, give the one-sentence version, and let them ask.\n\nWhat it usually looks like:\n\n• Three \"rights\" in a row.\n• You are two minutes in and have not reached the point.\n• You began with background because it felt thorough.\n\nTwo ways through:\n1. Land it in one sentence — say the short version now, late.\n2. Hand them the choice — \"want the rest, or is that enough?\"\n\nMindset: nobody has ever complained that an explanation was too short. They ask, if it was.",
       inputs: [
         { q: "They have said \"right\" three times.", a: "\"I'll land this: it's a shared list where every line has one owner.\" [Short Version First]", guideBack: "One sentence, with more on request", bundle: 'pro' },
@@ -3725,8 +3725,8 @@ const challengesCollections = {
     },
     {
       name: "Everybody Benefits",
-      guideFront: "What has gone wrong with this explanation?",
-      guideBack: "A possible response, with the move in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Your explanation makes the thing sound useful to everyone, which is exactly what an advertisement sounds like. The repair is to name who it is not for, which makes the rest believable again.\n\nWhat it usually looks like:\n\n• You have listed four benefits and no drawbacks.\n• They have gone politely non-committal.\n• You would not actually recommend it to them, and you have not said so.\n\nTwo ways through:\n1. Name who it is not for — the honest half of Who.\n2. Say where they sit — directly, even when it is a no.\n\nMindset: an explanation with no \"not for you\" in it is a pitch, and people hear the difference immediately.",
       inputs: [
         { q: "You have made it sound useful to absolutely everyone.", a: "\"To be fair, if you cook twice a week it's just a big object in a cupboard.\" [Who It Is For]", guideBack: "Who it suits, and who can skip it", bundle: 'pro' },
@@ -3738,8 +3738,8 @@ const challengesCollections = {
     },
     {
       name: "No Shelf To Put It On",
-      guideFront: "What has gone wrong with this explanation?",
-      guideBack: "A possible response, with the move in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "You have explained the mechanics of something with an unfamiliar shape, and none of it stuck because they had nowhere to put it. The repair is to go back and give the setting and the group first.\n\nWhat it usually looks like:\n\n• They are following each sentence and retaining none of them.\n• You began with how it works.\n• They ask \"but what is it for?\" after a perfectly clear description.\n\nTwo ways through:\n1. Give it neighbours — what it sits between, before, after.\n2. Give the setting first, then the mechanics.\n\nMindset: give it a shelf before you give it a manual.",
       inputs: [
         { q: "They followed every sentence and retained nothing.", a: "\"Let me place it first: it's an office thing, for teams that share rooms.\" [Where It Belongs]", guideBack: "The setting it fits into", bundle: 'pro' },
@@ -3751,8 +3751,8 @@ const challengesCollections = {
     },
     {
       name: "The Wrong Level of Detail",
-      guideFront: "What has gone wrong with this explanation?",
-      guideBack: "A possible response, with the move in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "You pitched it at the wrong depth — too technical for the person in front of you, or so simplified that it sounded evasive. The repair is to name the level out loud and let them choose.\n\nWhat it usually looks like:\n\n• Their questions are more basic than your answers.\n• Or: they are visibly waiting for you to get past the obvious.\n• You are guessing what they know and guessing wrong in both directions.\n\nTwo ways through:\n1. Ask what they already know — one sentence, and it saves five.\n2. Offer the two versions — \"the simple one or the real one?\"\n\nMindset: you cannot guess someone's starting point reliably. Asking takes six words.",
       inputs: [
         { q: "Their questions are more basic than your answers.", a: "\"I've pitched this too high. Start again: it's a list, shared between people.\" [Short Version First]", guideBack: "One sentence, with more on request", bundle: 'pro' },
@@ -3766,8 +3766,8 @@ const challengesCollections = {
   buildingastory: [
     {
       name: "The Setup Ate the Story",
-      guideFront: "What has gone wrong with this story?",
-      guideBack: "A possible response, with the move in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "You are two minutes in and nothing has happened yet. Everybody who needed to be introduced has been introduced, and the room has quietly gone. It is the most common failure in the pack and it always has the same cause: explaining before starting.\n\nWhat it usually looks like:\n\n• You are still describing who people are.\n• Somebody has said \"right\" twice while you set the scene.\n• The interesting bit is still two sentences away.\n\nTwo ways through:\n1. Jump to the turn — say it now and backfill only what is needed.\n2. Restart the opening out loud — costs nothing and usually gets a laugh.\n\nMindset: context can arrive late. Attention cannot.",
       inputs: [
         { q: "You are two minutes in and nothing has happened.", a: "\"Right, I'm burying this — the point is the lift stopped with four of us in it.\" [jump to the turn]", bundle: 'pro' },
@@ -3779,8 +3779,8 @@ const challengesCollections = {
     },
     {
       name: "There Is No Turn",
-      guideFront: "What has gone wrong with this story?",
-      guideBack: "A possible response, with the move in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "You have told a sequence of events and nothing in it changed. It was a day, described. Sometimes the story genuinely has no turn, and the honest move is to say so rather than keep hoping one arrives.\n\nWhat it usually looks like:\n\n• You are still adding events, hoping one lands.\n• The listener is waiting politely for the point.\n• You have said \"and then\" four times.\n\nTwo ways through:\n1. Find the smallest turn in it — a realisation counts, and so does a decision.\n2. Abandon it lightly — \"this is going nowhere\" is a better ending than eight more sentences.\n\nMindset: if you cannot name the moment it changed, you have an anecdote about a day. That is allowed — just do not tell it as though it has a punchline coming.",
       inputs: [
         { q: "You are adding events hoping one of them lands.", a: "\"None of this is going anywhere, is it. Anyway — how was Denmark?\" [abandon]", bundle: 'pro' },
@@ -3792,8 +3792,8 @@ const challengesCollections = {
     },
     {
       name: "The Ending Got Mumbled",
-      guideFront: "What has gone wrong with this story?",
-      guideBack: "A possible response, with the move in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "You had the laugh you wanted three sentences ago and now you are winding down rather than landing. The ending arrives as an afterthought and the listener cannot tell whether you are finished.\n\nWhat it usually looks like:\n\n• \"…anyway, yeah.\"\n• You explained the ending instead of saying it.\n• Somebody said \"right\" and you both moved on awkwardly.\n\nTwo ways through:\n1. Say the last line on purpose — the one you told it for, put last.\n2. Land it flat — \"so we drove home, that's it\" is a perfectly good ending.\n\nMindset: the ending is what they remember. Say it, then stop talking.",
       inputs: [
         { q: "You are about to say \"anyway, yeah\".", a: "\"…and that's how I ended up carrying a door through town.\" [say the last line]", bundle: 'pro' },
@@ -3805,8 +3805,8 @@ const challengesCollections = {
     },
     {
       name: "The Moral Was Bolted On",
-      guideFront: "What has gone wrong with this story?",
-      guideBack: "A possible response, with the move in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The story was fine and then you added a lesson it did not have. A forced takeaway makes an honest anecdote sound like a parable, and everybody can hear the seam.\n\nWhat it usually looks like:\n\n• \"I suppose what it taught me was…\" after a story about a lift.\n• The lesson is more general than the story.\n• You added it because the ending felt too small.\n\nTwo ways through:\n1. Take it off — say there is no lesson, which is often the better ending.\n2. Swap it for the honest one — usually smaller and more specific than the invented version.\n\nMindset: an ending does not need to mean anything. \"It was just a strange day\" is a complete sentence.",
       inputs: [
         { q: "You have attached a lesson to a story that has none.", a: "\"I was making that mean something. It doesn't. It was just funny.\" [take it off]", bundle: 'pro' },
@@ -3818,8 +3818,8 @@ const challengesCollections = {
     },
     {
       name: "You Missed the Moment",
-      guideFront: "What has gone wrong with this story?",
-      guideBack: "A possible response, with the move in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "You had something worth telling and by the time you had decided which story and how to start it, the conversation had moved. Nearly all missed stories are lost here rather than to a shortage of material.\n\nWhat it usually looks like:\n\n• You are still choosing between two while the subject changes.\n• You wanted the best one rather than the first one.\n• The moment has gone and you are quietly annoyed about it.\n\nTwo ways through:\n1. Take it back — \"going back a bit\" costs nothing and works.\n2. Next time, start before you have finished choosing — the shape will carry it.\n\nMindset: fifteen seconds. Then start, even if you have not worked out the ending yet.",
       inputs: [
         { q: "The subject changed while you were choosing.", a: "\"Going back a bit — this is what your bus thing reminded me of.\" [take it back]", bundle: 'pro' },
@@ -3833,8 +3833,8 @@ const challengesCollections = {
   reframing: [
     {
       name: "It Landed as Denial",
-      guideFront: "What has gone wrong with this reframe?",
-      guideBack: "A possible response, with the move in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The positive reading required leaving something out, and the other person noticed. A reframe that ignores part of the facts is not a reframe; it is a request to pretend, and it costs trust rather than helping.\n\nWhat it usually looks like:\n\n• \"Yes, but you're forgetting that…\"\n• They list the things your reading skipped.\n• The conversation has become about whether it was really that bad.\n\nTwo ways through:\n1. Concede the part you skipped — immediately and without defending it.\n2. Drop the reframe entirely — \"you're right, I was making it smaller than it is.\"\n\nMindset: a reframe has to hold every fact that the original one held. If it does not, it is a nicer story rather than a truer one.",
       inputs: [
         { q: "They pointed out what your reading ignored.", a: "\"You're right — I skipped the money, and the money is the actual problem.\" [concede]", bundle: 'pro' },
@@ -3846,8 +3846,8 @@ const challengesCollections = {
     },
     {
       name: "You Reframed Too Early",
-      guideFront: "What has gone wrong with this reframe?",
-      guideBack: "A possible response, with the move in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The reading was right and the timing was wrong. Offered before the person has been acknowledged, a reframe is heard as being told how to feel, and the effect is that they stop telling you things.\n\nWhat it usually looks like:\n\n• They repeat the complaint, louder, rather than taking the reframe.\n• \"I know, I know\" and then no engagement.\n• It happened within a few minutes of the event.\n\nTwo ways through:\n1. Go back and acknowledge — late is much better than never.\n2. Park it out loud — \"I've got a thought about it, but not today.\"\n\nMindset: acknowledgement first, always. Most reframes that fail were correct and premature.",
       inputs: [
         { q: "They repeated the complaint louder instead of taking your reading.", a: "\"I jumped ahead. That's a genuinely rubbish thing to have happened.\" [acknowledge]", bundle: 'pro' },
@@ -3859,8 +3859,8 @@ const challengesCollections = {
     },
     {
       name: "It Sounded Like a Correction",
-      guideFront: "What has gone wrong with this reframe?",
-      guideBack: "A possible response, with the move in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "The content was fine and the framing made it a lesson. \"You should look at it as…\" tells somebody their reading is wrong, and people defend a reading they have been told is wrong even when they had not much liked it.\n\nWhat it usually looks like:\n\n• You started with \"you should\" or \"you need to\".\n• You presented the reframe as the correct view rather than another one.\n• They have started defending an interpretation they did not care much about.\n\nTwo ways through:\n1. Mark it as one reading — \"one way to look at it\", not \"the way\".\n2. Own the uncertainty — \"I might be wrong about this.\"\n\nMindset: offer, do not correct. \"Here's another way to see it\" and \"you're seeing it wrong\" contain the same information and produce opposite conversations.",
       inputs: [
         { q: "You said \"you should see it as a good thing\".", a: "\"Let me say that better — one way to look at it is that it surfaced early.\" [mark it]", bundle: 'pro' },
@@ -3872,8 +3872,8 @@ const challengesCollections = {
     },
     {
       name: "The Humour Landed on Them",
-      guideFront: "What has gone wrong with this reframe?",
-      guideBack: "A possible response, with the move in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "You aimed the scale joke at their reaction rather than at the size of the thing, and it came out as \"you're overreacting\". The move is only warm when the target is the event.\n\nWhat it usually looks like:\n\n• A laugh that arrived half a beat late, or not at all.\n• The joke implied the feeling was silly.\n• They have gone quiet or become defensive.\n\nTwo ways through:\n1. Repair it plainly — \"that came out as though I was making fun of you\".\n2. Turn the scale on yourself — the fastest available fix.\n\nMindset: shrink the event, never the reaction. The first is a relief and the second is a criticism with a smile on it.",
       inputs: [
         { q: "The laugh came half a beat late.", a: "\"That came out wrong — I was aiming at the glass, not at you.\" [repair]", bundle: 'pro' },
@@ -3885,8 +3885,8 @@ const challengesCollections = {
     },
     {
       name: "Somebody Is Reframing You",
-      guideFront: "What has gone wrong with this reframe?",
-      guideBack: "A possible response, with the move in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "You are on the receiving end — every feeling you report comes back as a lesson or a bright side, and you are starting to stop mentioning things. This is worth having a sentence ready for.\n\nWhat it usually looks like:\n\n• \"At least…\" arrives before you have finished a sentence.\n• You leave feeling worse and cannot say why.\n• You have stopped telling them the difficult things.\n\nTwo ways through:\n1. Ask for what you want instead — \"I'd rather just be annoyed about it for a bit.\"\n2. Say the effect plainly — \"when it gets turned into a lesson I stop wanting to say anything.\"\n\nMindset: you are allowed to decline a reframe. \"I know, and I'm not ready to be sensible about it yet\" is a complete sentence.",
       inputs: [
         { q: "Every complaint comes back as a silver lining.", a: "\"I know there's an upside. I'd like to be fed up about it for one more day first.\" [ask for what you want]", bundle: 'pro' },
@@ -4757,8 +4757,8 @@ const challengesCollections = {
   startingconversations4: [
     {
       name: "The Joke Misfires",
-      guideFront: "What makes this opening hard?",
-      guideBack: "A possible opener, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "It lands flat, or it is taken literally, or it accidentally sounds like a criticism of something they said. All three feel much worse from the inside than they look from outside.\n\nThe recovery is always the same shape: short, unbothered, and onwards. Do not explain the joke, do not repeat it louder, and do not deliver a paragraph of apology — that is what turns a two-second miss into an awkward moment.\n\nMindset: acknowledge it in four words if at all, then say something plain.",
       inputs: [
         { q: "Your dry remark was taken completely seriously.", a: "\"Sorry, that was me being sarcastic badly. It is properly annoying, though.\" [Joke About the Situation]", guideBack: "A dry line about what you're both in", bundle: 'pro' },
@@ -4770,8 +4770,8 @@ const challengesCollections = {
     },
     {
       name: "Irony Across a Language Gap",
-      guideFront: "What makes this opening hard?",
-      guideBack: "A possible opener, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Irony is the opener most likely to fail with someone whose first language is different from yours, or who comes from somewhere the dry register is not standard. Understatement in particular carries almost none of its meaning in the words.\n\nThe fix is not to avoid humour, but to make it visible: exaggeration travels far better than understatement, tone and face have to do more work, and if it does not land, say the plain version straight away without embarrassment.\n\nMindset: exaggeration crosses borders. Dryness often does not.",
       inputs: [
         { q: "You are about to use dry understatement with someone you have just met.", a: "\"I think we've been queueing so long I've developed a personality.\" [Joke About the Situation]", guideBack: "A dry line about what you're both in", bundle: 'pro' },
@@ -4783,8 +4783,8 @@ const challengesCollections = {
     },
     {
       name: "It Sounds Like Flirting",
-      guideFront: "What makes this opening hard?",
-      guideBack: "A possible opener, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "\"I came over because I wanted to talk to you\" is a warm and honest sentence that can also read as interest of a different kind. That is fine when it is true and unwelcome when it is not.\n\nIf you do not intend it that way, anchor the reason in something outside the two of you — being new, knowing nobody, a specific thing they said. Reasons about the situation read as friendliness; reasons about them read as attraction.\n\nMindset: name the reason, and make it about the room rather than about them.",
       inputs: [
         { q: "You want to say why you came over without it being misread.", a: "\"I don't know anyone here, so I'm working my way round the room. I'm...\" [Say Why You Came Over]", guideBack: "The reason you walked up", bundle: 'pro' },
@@ -4796,8 +4796,8 @@ const challengesCollections = {
     },
     {
       name: "You Have Said Too Much",
-      guideFront: "What makes this opening hard?",
-      guideBack: "A possible opener, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Saying how you feel works when it is small and current. It stops working when it turns out to be the top of something much larger, and the other person suddenly finds themselves holding it.\n\nIf you notice yourself going further than you meant, the fix is not to backtrack apologetically — that makes it heavier. Name it lightly, put it down, and offer them a way back to ordinary conversation.\n\nMindset: put it down without making a thing of putting it down.",
       inputs: [
         { q: "You have gone further than you meant with someone you just met.", a: "\"That got heavy quickly. Anyway — have you been here before?\" [Bring Something In]", guideBack: "A topic from beyond the room", bundle: 'pro' },
@@ -4809,8 +4809,8 @@ const challengesCollections = {
     },
     {
       name: "The News Is Too Heavy",
-      guideFront: "What makes this opening hard?",
-      guideBack: "A possible opener, with the strategy in brackets.",
+      guideFront: "Choose a strategy when...",
+      guideBack: "One way it could sound",
       description: "Bringing something in from outside works when it is small. Major news — a disaster, something political, something genuinely upsetting — is a poor opener with a stranger, not because it does not matter but because you are asking them to have a position in front of someone they have just met.\n\nSave the weight for people you know. With a stranger, the wrong bus and the closed road do more work.\n\nMindset: an opener should be easy to answer. Heavy news is not.",
       inputs: [
         { q: "The big news of the week is on everyone's mind and you are about to raise it.", a: "\"Did you see they're digging up the high street again?\" [Bring Something In]", guideBack: "A topic from beyond the room", bundle: 'pro' },

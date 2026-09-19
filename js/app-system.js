@@ -3930,6 +3930,14 @@ if (resetFirstRunBtn) resetFirstRunBtn.addEventListener('click', () => {
 // twice; the developer list is simply the unfiltered one.
 const WHATS_NEW = [
   {
+    version: 'v1.28.77', date: 'September 2026', title: 'Deck-level guide rows cleared across the release scope', audience: 'dev',
+    items: [
+      'A deck could carry its own guide row between the mode\'s row and the card\'s. In the core that layer was cleared long ago; outside it, <strong>405 decks in 21 packs still had one</strong> — including <em>What has gone wrong with this explanation?</em> (a question, and about difficulty — two things rule 6 forbids) and <strong>264 rows ending in "with the strategy in brackets"</strong>, which the label on the card already says.',
+      'All of them now take the mode\'s row: <em>Choose a strategy when… / One way it could sound</em> in Collections and Challenges, <em>Use the planned strategy when…</em> in Sequences, <em>A limiting thought / A way to reset it</em> in Mindset, and nothing at all in Memorize (110 stray rows removed there). Detailed guide text is unaffected: the front comes from the mode, the back from the card\'s own strategy.',
+      'Every deck in all 52 release packs is now on its mode\'s row — 1,272 of 1,272. The one exception found on the way was a Describe Things mindset deck with no guide rows at all.',
+    ],
+  },
+  {
     version: 'v1.28.76', date: 'September 2026', title: 'Names and guides, batch 2 — and three decks lifted out of Show Understanding 2', audience: 'dev',
     items: [
       'Batch 2 of the programme and Extended packs: <strong>Explain Things — Pt. 2</strong>, <strong>Persuasion and Influence — Pt. 2</strong>, <strong>Assertive Communication 2</strong> and <strong>Setup Statement</strong>. All 18 strategies have their own detailed guide pair, 187 Collections and Challenges cards inherit their strategy\'s back guide, and 50 sequence steps carry theirs.',

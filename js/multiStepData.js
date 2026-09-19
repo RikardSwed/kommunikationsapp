@@ -1277,8 +1277,8 @@ const multiStepCollections = {
   setupstatement: [
     {
       name: "Setup, Ask, Stay",
-      guideFront: "Say your part, then open it up — and stay with their answer.",
-      guideBack: "A line you could say at this step.",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
       description: "The full opening move: make your statement, hand over the question, and then actually follow their answer instead of jumping to your next line. The third step is where most openers fail — people ask, then don't listen. Steps: 1) Setup — say your bit, 2) Ask — question on the same thing, 3) Stay — react to what they actually said.\n\nThe shape of the whole thing:\n1. \"I'm trying to learn the guitar at the moment.\"\n2. \"Are you working on anything like that?\"\n3. \"Six months on the piano — what made you pick it up?\"\n\nWhy this order: the statement lowers the pressure, the question hands over the turn, and staying with their answer is what turns an opener into a conversation.\n\nMindset: step 3 is where most openers die. People ask, then stop listening because they are already hunting for the next line.",
       inputs: [
         {
@@ -1303,8 +1303,8 @@ const multiStepCollections = {
     },
     {
       name: "Statement into Story",
-      guideFront: "Say your part, then open it up — and stay with their answer.",
-      guideBack: "A line you could say at this step.",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
       description: "Start with a background setup, hand over the question, and then build on the thread they give you rather than resetting. Good when you want the conversation to deepen rather than ping-pong. Steps: 1) Arrival — where you're coming from, 2) Ask — turn it to them, 3) Build — pick up a detail and go further.\n\nThe shape of the whole thing:\n1. \"I came straight from work and I'm starving.\"\n2. \"Where have you come from?\"\n3. \"Two trains? That's a long way to come for a Tuesday.\"\n\nWhy this order: a background setup gives them a thread rather than a yes or no, and picking up one detail from their answer is what stops the conversation resetting after every exchange.\n\nMindset: aim for depth, not ping-pong. One detail followed properly beats four questions answered briefly.",
       inputs: [
         {
@@ -1409,8 +1409,8 @@ const multiStepCollections = {
   startingconversations3: [
     {
       name: "Open With What You Noticed",
-      guideFront: "What they gave back, and the opener to use next.",
-      guideBack: "One way it could sound.",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
       description: "A compliment or a guess gets you a reply, but both close by themselves — \"thanks\", or \"yes I have\". The work is in what you do with the two seconds afterwards.\n\nThis combo chains an observation into a question about them. Each step front carries what they actually said, and names the opener to use next.\n\nMindset: an observation opens the door. A question is what walks through it.",
       inputs: [
         {
@@ -1437,8 +1437,8 @@ const multiStepCollections = {
     },
     {
       name: "When Your Guess Is Wrong",
-      guideFront: "What they gave back, and the opener to use next.",
-      guideBack: "One way it could sound.",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
       description: "You guess, and you are wrong. It feels for a second like the opener failed — but a correction is more words than a confirmation would have been, and people enjoy putting someone right about themselves.\n\nThe move is to take the correction cheerfully and ask about it. \"No, actually…\" is an invitation, not a rebuff.\n\nMindset: being wrong gave them something to say. That was the job.",
       inputs: [
         {
@@ -1465,8 +1465,8 @@ const multiStepCollections = {
     },
     {
       name: "Asking Without Interviewing",
-      guideFront: "What they gave back, and the opener to use next.",
-      guideBack: "One way it could sound.",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
       description: "The commonest way this pack goes wrong is question after question. Each one is fine on its own, and together they turn a conversation into a form being filled in.\n\nThe fix is to follow their answer instead of moving on. This combo drills that: every step takes a specific word from what they just said and asks about that, and one step gives something of your own back so it is not all one-directional.\n\nMindset: your next question should come out of their last answer. If it does not, you are interviewing.",
       inputs: [
         {
@@ -1493,8 +1493,8 @@ const multiStepCollections = {
     },
     {
       name: "When You Ask How They Really Are",
-      guideFront: "What they gave back, and the opener to use next.",
-      guideBack: "One way it could sound.",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
       description: "This opener sometimes produces a real answer, and what happens next matters more than the question did.\n\nBoth scenarios here practise the same restraint: listen, do not fix, do not compare it to your own situation, and leave the door open. One ends with them saying very little, which is a complete and acceptable outcome.\n\nIf someone is genuinely struggling, this is where an opener stops being the right tool. Ask, listen, and offer something concrete — do not try to solve it standing up.\n\nMindset: you asked in order to hear the answer. Hearing it is the whole job.",
       inputs: [
         {
@@ -1755,8 +1755,8 @@ const multiStepCollections = {
   deepquestions: [
     {
       name: "Warm Up, Then Go Deeper",
-      guideFront: "Ask the question this step calls for.",
-      guideBack: "One question you could ask here.",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
       description: "The basic ladder from small talk to something real. Steps: 1) Start with Simple Questions — get easy facts on the table, 2) Link and Go Deeper — use a detail they gave you as a bridge, 3) Explore Values — ask what it means to them.\n\nThe shape of the whole thing:\n1. \"So how do you know the hosts? And what do you do with your days?\"\n2. \"You teach music — how did you end up doing that?\"\n3. \"What does teaching give you that playing didn't?\"\n\nWhy this order: the simple question produces the material, the link proves you were listening, and only then does a values question have somewhere to stand.\n\nMindset: this is the ladder, and every rung matters. Skip the first two and the third one lands as an interrogation.",
       inputs: [
         {
@@ -1772,8 +1772,8 @@ const multiStepCollections = {
     },
     {
       name: "Follow the Experience",
-      guideFront: "Ask the question this step calls for.",
-      guideBack: "One question you could ask here.",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
       description: "When they mention something that happened, follow it instead of moving on. Steps: 1) Link and Go Deeper — pick up the event they mentioned, 2) Explore Experiences — ask what it was actually like, 3) Explore Values — ask what it left them with.\n\nThe shape of the whole thing:\n1. \"A whole year — what made you decide to?\"\n2. \"What were those months actually like, day to day?\"\n3. \"What did that year change about what matters to you?\"\n\nWhy this order: the event has to be opened before it can be described, and it has to be described before what it meant will come out.\n\nMindset: when someone mentions something big in passing, following it is almost always welcome. People rarely mention those things by accident.",
       inputs: [
         {
@@ -1789,8 +1789,8 @@ const multiStepCollections = {
     },
     {
       name: "From an Opinion to a Belief",
-      guideFront: "Ask the question this step calls for.",
-      guideBack: "One question you could ask here.",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
       description: "When someone drops an opinion in passing, treat it as a door rather than a full stop. Steps: 1) Link and Go Deeper — repeat the opinion back, 2) Explore Beliefs — ask what they think is true, 3) Explore Experiences — ask where the view came from.\n\nThe shape of the whole thing:\n1. \"Most of them — which ones would you keep?\"\n2. \"Do you think that is the meetings, or how we run them?\"\n3. \"What was the job that taught you that?\"\n\nWhy this order: repeating the opinion back invites them to refine it, the belief question gets the principle, and the experience question finds where it came from.\n\nMindset: a strong opinion dropped in passing is a door, not a full stop. Most people are glad someone picked it up.",
       inputs: [
         {
@@ -2025,8 +2025,8 @@ const multiStepCollections = {
   validation: [
     {
       name: "The Full Validation",
-      guideFront: "Take the next step in validating this.",
-      guideBack: "One line you could say here.",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
       description: "All three moves in the order that builds. Steps: 1) Reflect the Feeling — name what they felt, 2) Normalise the Reaction — say it is ordinary, 3) Acknowledge the Perspective — and say their thinking held up.\n\nThe order matters because each step answers a different worry, and they surface in this sequence: what I feel, whether I should feel it, and whether I was stupid.\n\nThe shape of the whole thing:\n1. \"That sounds like it properly got to you.\"\n2. \"Anyone would have been annoyed by that, honestly.\"\n3. \"And you were right to raise it at the time, whatever came of it.\"\n\nMindset: three short sentences is a complete validation. It looks slight written down and it is one of the most useful things you can do for somebody.",
       inputs: [
         {
@@ -2051,8 +2051,8 @@ const multiStepCollections = {
     },
     {
       name: "When You Disagree",
-      guideFront: "Take the next step in validating this.",
-      guideBack: "One line you could say here.",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
       description: "The version for somebody whose conclusion you think is wrong. Steps: 1) Reflect the Feeling — the feeling is true regardless, 2) Acknowledge the Perspective — the route was reasonable even if the destination is not, 3) Normalise the Reaction — and plenty of people would have gone the same way.\n\nNone of these three steps requires you to agree with anything. That is the point of the pack, and this is the combination that proves it.\n\nWhere the honesty sits:\n1. Reflect — a feeling is a fact. Nothing to disagree with.\n2. Acknowledge — you are validating the reasoning, not the conclusion.\n3. Normalise — you are saying it is a common route, not a correct one.\n\nMindset: you can do all three and still say what you think afterwards. Validation first makes the disagreement land as a difference of view rather than as a dismissal.",
       inputs: [
         {
@@ -2077,8 +2077,8 @@ const multiStepCollections = {
     },
     {
       name: "When They Are Defensive",
-      guideFront: "Take the next step in validating this.",
-      guideBack: "One line you could say here.",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
       description: "The version for somebody braced for criticism, where the order is reversed. Steps: 1) Normalise the Reaction — lower the guard first, 2) Reflect the Feeling — now the feeling can be named, 3) Acknowledge the Perspective — and their thinking can be credited.\n\nSomebody expecting a telling-off will not hear a reflected feeling; they are too busy preparing a defence. Normalising first removes the thing they are defending against, and then the other two can land.\n\nWhy the order flips:\n1. Normalise — \"anyone would have\" tells them no attack is coming.\n2. Reflect — with the guard down, naming the feeling is a relief rather than an exposure.\n3. Acknowledge — and now their reasoning can be credited without it sounding like consolation.\n\nMindset: reduce defensiveness first. The most accurate reflection in the world bounces off somebody who is braced for a fight.",
       inputs: [
         {
@@ -2105,8 +2105,8 @@ const multiStepCollections = {
   supportingconversations: [
     {
       name: "Reading It Right",
-      guideFront: "What they said, and the response to try next.",
-      guideBack: "One way it could sound.",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
       description: "A supportive conversation is a series of small readings. They say something, you choose a response, and what they do next tells you whether you read it correctly.\n\nThis combo drills that loop. Each step front carries what they said and names the move to use; watch how the need changes as the conversation goes on — usually from wanting to be heard, towards wanting to think about what to do.\n\nMindset: their reaction to your last response is the information you need for the next one.",
       inputs: [
         {
@@ -2133,8 +2133,8 @@ const multiStepCollections = {
     },
     {
       name: "When You Get It Wrong",
-      guideFront: "What they said, and the response to try next.",
-      guideBack: "One way it could sound.",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
       description: "You offer a suggestion and they go flat. You reassure and they get more frustrated. Misreading is normal and completely recoverable — what makes it worse is carrying on regardless.\n\nThe recovery is short: notice, name it lightly, and switch. Naming it is what turns a misstep into something that actually builds trust, because it shows you were watching them rather than delivering a routine.\n\nMindset: the correction is the skill, not getting it right first time.",
       inputs: [
         {
@@ -2161,8 +2161,8 @@ const multiStepCollections = {
     },
     {
       name: "When They Want Your Honest View",
-      guideFront: "What they said, and the response to try next.",
-      guideBack: "One way it could sound.",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
       description: "Occasionally someone shares something and what they actually want is the truth — including the part where you think they got it wrong.\n\nThe rule is that this needs an invitation. Unasked-for criticism in a supportive conversation is a betrayal of what the conversation was for. Asked-for criticism, given kindly and after acknowledgement, is one of the more valuable things a friend can do.\n\nEven then, keep it small: one thing, said once, and then back to support.\n\nMindset: only if they ask, only after they feel heard, and only one thing.",
       inputs: [
         {
@@ -2412,8 +2412,8 @@ const multiStepCollections = {
   givingexamples: [
     {
       name: "One Point, Several Angles",
-      guideFront: "They have responded. Give the example that answers what they just said.",
-      guideBack: "A line you could say at this step.",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
       description: "A single claim, supported by different example types as the listener pushes on different parts of it. Each example should answer the specific doubt just raised, not repeat the original point louder.\n\nThe most common failure is giving three examples of the same type. If your own experience did not convince them, another story from your life will not either.\n\nMindset: change the type of example, not the volume.",
       inputs: [
         {
@@ -2440,8 +2440,8 @@ const multiStepCollections = {
     },
     {
       name: "When the Example Is Challenged",
-      guideFront: "They have responded. Give the example that answers what they just said.",
-      guideBack: "A line you could say at this step.",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
       description: "Examples get pushed back on — \"that's not typical\", \"that was different\", \"that's just you\". A challenged example is not a failed one; it usually means the listener is engaging.\n\nThe move is to concede what is fair about the challenge and either narrow your claim or bring a different type. Defending a shaky example harder makes the whole argument look shaky.\n\nMindset: give ground on the example, keep the point.",
       inputs: [
         {
@@ -2466,8 +2466,8 @@ const multiStepCollections = {
     },
     {
       name: "When You Have No Example",
-      guideFront: "They have responded. Give the example that answers what they just said.",
-      guideBack: "A line you could say at this step.",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
       description: "Sometimes you believe something and cannot support it. The honest sequence is to say so, offer the imagined case instead, and be clear that it is a way of testing the idea rather than evidence for it.\n\nThis is the sequence that protects everything else you say. A person who says \"I have nothing here\" when they have nothing is believed when they say they have something.\n\nMindset: no example is a fine answer. An invented one is not.",
       inputs: [
         {
@@ -2613,8 +2613,8 @@ const multiStepCollections = {
   storiesinconversation: [
     {
       name: "A Story That Earns Its Place",
-      guideFront: "What they said, and the strategy to answer it with.",
-      guideBack: "One way it could sound.",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
       description: "Read the Room First, then Ask for the Floor, then Finish on Purpose, then Give It Back. The whole social arc of telling one story well.\n\nNothing here is about the story itself. It is about checking that the moment wants one, borrowing the turn openly, ending deliberately, and handing it on — which between them are most of the difference between a good storyteller and a tiring one.\n\nMindset: whether, how big, how it ends, and who goes next. The story looks after itself.",
       inputs: [
         {
@@ -2641,8 +2641,8 @@ const multiStepCollections = {
     },
     {
       name: "Following Someone Else's",
-      guideFront: "What they said, and the strategy to answer it with.",
-      guideBack: "One way it could sound.",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
       description: "Answer Don't Outdo, then Ask for the Floor, then Watch Them While You Tell It, then Give It Back. What to do when someone has just told a story and you have one of your own.\n\nThe first step is the whole risk. The natural reply feels like it should be bigger, and a bigger one quietly shrinks theirs. Everything after that is ordinary care.\n\nMindset: put yours beside theirs, not on top of it.",
       inputs: [
         {
@@ -2669,8 +2669,8 @@ const multiStepCollections = {
     },
     {
       name: "When It Is Not Landing",
-      guideFront: "What they said, and the strategy to answer it with.",
-      guideBack: "One way it could sound.",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
       description: "Watch Them While You Tell It, then Cut It Loose, then Finish on Purpose, then Give It Back. The rescue.\n\nThis is the sequence nobody practises and everybody needs. The whole trick is that abandoning early costs almost nothing and finishing stubbornly costs a lot — and that saying so out loud, lightly, usually gets a better reaction than the story would have.\n\nMindset: nobody remembers a story that did not land. Everybody remembers four extra minutes of one.",
       inputs: [
         {
@@ -2814,8 +2814,8 @@ const multiStepCollections = {
   givingcriticism: [
     {
       name: "The Full Six Steps",
-      guideFront: "The step you are on — say your version out loud.",
-      guideBack: "One way it could sound.",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
       description: "The whole process, start to finish: something real, the behaviour, the impact, the alternative, the upside, and support. This is what a serious piece of criticism sounds like when it is done properly, and it takes under a minute.\n\nThis one is a monologue. You are saying it as a continuous piece before they respond, and each card is the next step of it. Read the step, say your own version out loud, then turn the card.\n\nThe order is doing the work. The positive establishes you are not attacking, the behaviour gives them something concrete, the impact gives the reason, the alternative gives them somewhere to go, the upside makes it worth doing, and the support means they leave with something other than fault.\n\nMindset: each step earns the next. Skipping to the alternative before the impact is why criticism so often sounds like nagging.",
       inputs: [
         {
@@ -2846,8 +2846,8 @@ const multiStepCollections = {
     },
     {
       name: "When They Push Back",
-      guideFront: "The step you are on — say your version out loud.",
-      guideBack: "One way it could sound.",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
       description: "Criticism rarely lands cleanly. People explain, disagree, apologise too much, or turn it into something about you.\n\nThis combo is an exchange rather than a monologue — each front carries what they said, and the step tells you which move answers it. The general shape: acknowledge what is fair in their answer, hold the specific fact, and get to the alternative rather than arguing about the past.\n\nMindset: do not defend the criticism. Return to the behaviour and move forward.",
       inputs: [
         {
@@ -2874,8 +2874,8 @@ const multiStepCollections = {
     },
     {
       name: "The Light Version",
-      guideFront: "The step you are on — say your version out loud.",
-      guideBack: "One way it could sound.",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
       description: "Most criticism is one sentence and a short exchange. This combo drills that — say it lightly, deal with whatever comes back, and get out without turning it into a conversation.\n\nThe discipline here is stopping. Once the light version has been said and received, adding the impact and the alternative turns a ten-second correction into a five-minute one, and the other person will remember it as much bigger than you meant.\n\nMindset: say it, let them answer, and close. Do not upgrade a small thing mid-sentence.",
       inputs: [
         {
@@ -2902,8 +2902,8 @@ const multiStepCollections = {
   receivingfeedbackandcriticism: [
     {
       name: "The Open Response",
-      guideFront: "Take the next step in the response.",
-      guideBack: "One line you could say here.",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
       description: "The full four-step process, in order. Steps: 1) Acknowledge the Feedback — show you heard it, 2) Show You Understand Their View — say how it looked from their side, 3) Reflect Openly — say what you make of it, 4) Look Ahead — say what you will do.\n\nEach step does one job, and the order matters: people need to feel heard before they can hear what you plan to do about it.\n\nThe shape of the whole thing:\n1. \"Thanks for telling me.\"\n2. \"I can see how you'd feel that way.\"\n3. \"That gives me something to think about.\"\n4. \"Next time I'll try to...\"\n\nMindset: you are not on trial. Running the steps is not an admission — it is a calm way of handling a normal part of working and living with people.",
       inputs: [
         {
@@ -2930,8 +2930,8 @@ const multiStepCollections = {
     },
     {
       name: "When You Do Not Agree",
-      guideFront: "Take the next step in the response.",
-      guideBack: "One line you could say here.",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
       description: "The same four steps, used when you think the criticism is wrong. Steps: 1) Acknowledge the Feedback — thank them anyway, 2) Show You Understand Their View — say how it looked from their side, 3) Reflect Openly — say honestly that you see it differently, 4) Look Ahead — offer what you will do anyway.\n\nThe trick is that only step 3 changes. You can run the whole process honestly without ever pretending to agree.\n\nWhere the disagreement goes:\n1. Not in step 1 — thanking them costs you nothing.\n2. Not in step 2 — you are describing their view, not endorsing it.\n3. Here, in step 3 — \"I see it differently, and here is how.\"\n4. Then step 4 — something small you will still do, so it does not end in a standoff.\n\nMindset: disagreeing calmly at step 3 is far stronger than defending at step 1. The steps before it are what make you sound reasonable rather than dismissive.",
       inputs: [
         {
@@ -2958,8 +2958,8 @@ const multiStepCollections = {
     },
     {
       name: "When It Lands Hard",
-      guideFront: "Take the next step in the response.",
-      guideBack: "One line you could say here.",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
       description: "A short version for criticism that hits you emotionally, where finishing the whole process on the spot would mean saying something you regret. Steps: 1) Acknowledge the Feedback — a single line, nothing more, 2) Reflect Openly — say honestly that you need time, 3) Look Ahead — name when you will come back to it.\n\nIt is a legitimate route, not an escape. You are pausing the conversation, not ducking it.\n\nWhat each step is doing here:\n1. Acknowledge — buys the two seconds you need in order not to react.\n2. Reflect Openly — \"I need to think about this\" is an answer, not an avoidance.\n3. Look Ahead — naming when you will come back is what makes the pause honest.\n\nMindset: the goal in this moment is not to respond well. It is to not respond badly, and to keep the door open.",
       inputs: [
         {
@@ -3423,8 +3423,8 @@ const multiStepCollections = {
   persuasionandinfluence2: [
     {
       name: "Removing the Obstacles",
-      guideFront: "What they said, and the strategy to answer it with.",
-      guideBack: "One way it could sound.",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
       description: "A conversation where the case is already made and the work is entirely in clearing what is in the way.\n\nEach step front carries what they said and names the strategy. Watch the shape: acknowledge the objection, find out what is underneath it, shrink the ask, then get out of the way.\n\nMindset: every step here takes something away rather than adding to it.",
       inputs: [
         {
@@ -3451,8 +3451,8 @@ const multiStepCollections = {
     },
     {
       name: "When They Have Decided Against",
-      guideFront: "What they said, and the strategy to answer it with.",
-      guideBack: "One way it could sound.",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
       description: "A firm no is not always final, but arguing with it makes it so. The move is to accept it out loud, ask one honest question, and leave the door open.\n\nBoth scenarios end without agreement, because that is the realistic outcome and because how you leave a refusal decides whether you get a second conversation.\n\nMindset: accept the no properly. That is what makes the door stay open.",
       inputs: [
         {
@@ -3479,8 +3479,8 @@ const multiStepCollections = {
     },
     {
       name: "When You Are Pushing Too Hard",
-      guideFront: "What they said, and the strategy to answer it with.",
-      guideBack: "One way it could sound.",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
       description: "The moment you notice you want to win rather than to get the right outcome. It is a common feeling and rarely acted on, because stopping feels like conceding.\n\nThis combo practises stopping cleanly — naming it, handing the decision over, and meaning it.\n\nMindset: noticing is the whole move. What follows is easy.",
       inputs: [
         {
@@ -3508,8 +3508,8 @@ const multiStepCollections = {
   negotiationandcompromise: [
     {
       name: "From Two Positions to One Solution",
-      guideFront: "What they said, and the strategy to answer it with.",
-      guideBack: "One way it could sound.",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
       description: "The full arc: both positions stated, both understood, priorities found, a solution built from them, and a check that it holds.\n\nEach step front carries what they said and names the strategy. Watch the turn in the middle — the moment the question moves from *which date* to *what the date is protecting* is where the negotiation stops being a contest.\n\nMindset: the solution appears once both needs are visible. Everything before that is positioning.",
       inputs: [
         {
@@ -3538,8 +3538,8 @@ const multiStepCollections = {
     },
     {
       name: "When It Gets Stuck",
-      guideFront: "What they said, and the strategy to answer it with.",
-      guideBack: "One way it could sound.",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
       description: "Negotiations get stuck in recognisable ways: the same two positions repeated, a hidden disagreement about something else, or one person conceding to end it.\n\nThe moves that unstick it are almost always structural rather than persuasive — splitting the problem, going back to what actually matters, or naming what is happening.\n\nMindset: when repeating yourselves, change the shape of the conversation rather than the volume.",
       inputs: [
         {
@@ -3566,8 +3566,8 @@ const multiStepCollections = {
     },
     {
       name: "When You Have a Limit",
-      guideFront: "What they said, and the strategy to answer it with.",
-      guideBack: "One way it could sound.",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
       description: "Sometimes part of your position genuinely cannot move. Handled badly this reads as an ultimatum and ends the negotiation; handled well it makes the rest of it faster, because everyone knows where the walls are.\n\nThe pattern: name the limit early, name how small it is, and be visibly generous everywhere else.\n\nMindset: one limit, said plainly, with everything else genuinely open.",
       inputs: [
         {
@@ -4063,8 +4063,8 @@ const multiStepCollections = {
   emotionlabellingandregulation: [
     {
       name: "The Full Label",
-      guideFront: "Take the next step in putting it into words.",
-      guideBack: "One line you could say here.",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
       description: "The full process, in order. Steps: 1) Name the Situation — say plainly what happened, 2) Label the Emotion — choose the word that matches, 3) Describe the Signals — say what it did to you, 4) Regulate Out Loud — name what you are doing about it.\n\nEach step does one job, and the order is what makes it land. Situation first means the feeling has a context; signals after the word mean the word gets believed.\n\nThe shape of the whole thing:\n1. \"So this is the third Friday we've moved.\"\n2. \"I think I'm more hurt than annoyed.\"\n3. \"I read the message and my stomach just dropped.\"\n4. \"I'd rather say this now than let it sit for another month.\"\n\nMindset: this is not a confrontation, it is a description. Almost nothing in the four steps is arguable, which is exactly why it works.",
       inputs: [
         {
@@ -4091,8 +4091,8 @@ const multiStepCollections = {
     },
     {
       name: "When It Is Rising Now",
-      guideFront: "Take the next step in putting it into words.",
-      guideBack: "One line you could say here.",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
       description: "The version for when the feeling arrives before the words do. Steps: 1) Regulate Out Loud — buy yourself the time first, 2) Label the Emotion — once you can think, say what it is, 3) Name the Situation — then explain what set it off.\n\nThe order is deliberately reversed. In the full process the situation comes first, but when something is peaking you do not have a spare sentence for context — you need the pause before anything else.\n\nWhy each step is where it is:\n1. Regulate — a sharp reply sent now costs more than the whole conversation is worth.\n2. Label — the word is much easier to find thirty seconds later.\n3. Situation — explaining what set it off only helps once you can say it evenly.\n\nMindset: the goal in this moment is not to handle it well. It is to not handle it badly, and to keep the conversation available for later.",
       inputs: [
         {
@@ -4117,8 +4117,8 @@ const multiStepCollections = {
     },
     {
       name: "Helping Someone Else Name It",
-      guideFront: "Take the next step in putting it into words.",
-      guideBack: "One line you could say here.",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
       description: "The listener's version, for when someone else is the one with the feeling. Steps: 1) Label Their Emotion — offer a word to try on, 2) Ask what triggered it — let them locate the moment, 3) Reflect it back — say what you have understood.\n\nThis is the same skill from the other chair. Your job is not to solve anything; it is to hand over words until one of them fits.\n\nWhat each step is doing:\n1. Offering the word — much easier to recognise a feeling than to produce one.\n2. Asking the trigger — moves it from a mood to a moment, which is where it becomes talkable.\n3. Reflecting back — lets them hear it from outside, and lets them correct you.\n\nMindset: being slightly wrong is useful. \"No, not angry — embarrassed\" is them getting closer, which is the whole point of the exercise.",
       inputs: [
         {
@@ -4233,8 +4233,8 @@ const multiStepCollections = {
   rolebasedhumour: [
     {
       name: "Stay in Character",
-      guideFront: "Keep the bit going — this part next.",
-      guideBack: "One way it could sound.",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
       description: "The basic shape of a bit, and the part most people get wrong. Steps: 1) answer in role, 2) hold the role when they react to it, 3) break character warmly and land it.\n\nAlmost nobody fails at step one. What kills a bit is abandoning it the moment the other person reacts, and never getting out of it cleanly at the end.\n\nThe shape of the whole thing:\n1. \"That sounds like too much work. Maybe tomorrow.\"\n2. \"Tomorrow me is a completely different and much stronger person.\"\n3. \"Right, fine, I'll come. What time?\"\n\nStep 3 is the one to practise. Dropping the role yourself, warmly, is what tells the other person the bit is over and the real conversation is back.\n\nMindset: get in, commit, get out. Three beats is a bit; one beat is a line and six is a hostage situation.",
       inputs: [
         {
@@ -4259,8 +4259,8 @@ const multiStepCollections = {
     },
     {
       name: "Escalate the Bit",
-      guideFront: "Keep the bit going — this part next.",
-      guideBack: "One way it could sound.",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
       description: "The version where the same role gets bigger over three beats. Steps: 1) a mild in-role line, 2) push it further, 3) go fully absurd, then out.\n\nThe escalation is what turns a single joke into something people remember. Each beat has to be recognisably the same role, just with the dial turned up.\n\nWhy it works in three:\n1. First beat — establishes the role, small enough to be deniable.\n2. Second beat — confirms it is deliberate, which is where the laugh usually is.\n3. Third beat — absurd enough that it obviously has to end there.\n\nMindset: three is the number. A fourth beat is nearly always the one where the room decides you have taken it further than they wanted to go.",
       inputs: [
         {
@@ -4285,8 +4285,8 @@ const multiStepCollections = {
     },
     {
       name: "Play Along",
-      guideFront: "Keep the bit going — this part next.",
-      guideBack: "One way it could sound.",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
       description: "What to do when somebody starts a role at you. Steps: 1) recognise it and answer in a matching role, 2) hold both roles for a beat, 3) drop out together.\n\nThe classic version of this exercise has you swap roles between rounds. But in real conversation the far more common situation is somebody starting a bit and you deciding whether to join.\n\nHow to match:\n1. Same role — two bossy leaders fighting over a kettle.\n2. Opposite role — their generous against your stingy.\n3. The straight man — stay completely ordinary while they escalate.\n\nThe third is underrated. Playing it completely straight while someone else goes bigger is often funnier than joining them, and it is the version that works when you cannot think of a role.\n\nMindset: joining a bit is a gift. Ignoring one is the only genuinely cold response available here.",
       inputs: [
         {
@@ -5187,8 +5187,8 @@ const multiStepCollections = {
   listeningthroughquestions: [
     {
       name: "Follow the Thread Down",
-      guideFront: "They answer, and you follow. What is the next question?",
-      guideBack: "A question you could ask at this step.",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
       description: "Four questions in a row, each built out of the answer to the last, which is what separates following from interviewing. Steps: 1) Open with a detail from what they said, 2) Ask for the sequence, 3) Ask the reason, 4) Ask the feeling.\n\nThe shape of the whole thing:\n1. \"Who was in the car with you?\"\n2. \"So what happened when you got there?\"\n3. \"What made you stay the extra night?\"\n4. \"How was the drive back, after all that?\"\n\nWhy this order: the shape of the story first, the person second. Each question uses a word from the answer before it, and that is the thing the other person actually notices — not the cleverness of any single question.\n\nMindset: never plan the next question while they are answering. The question you need is inside their answer, and you cannot hear it if you are composing.",
       inputs: [
         {
@@ -5215,8 +5215,8 @@ const multiStepCollections = {
     },
     {
       name: "When You Have Been Given a Verdict",
-      guideFront: "They answer, and you follow. What is the next question?",
-      guideBack: "A question you could ask at this step.",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
       description: "They summarised the whole thing in four words — \"it was a nightmare\" — and there is nothing to follow yet. Three questions turn a verdict into an account. Steps: 1) Ask for the shape, 2) Ask about the hard part, 3) Ask the reason or the feeling, whichever is missing.\n\nThe shape of the whole thing:\n1. \"Take me through it — what went wrong first?\"\n2. \"What was the worst bit?\"\n3. \"What was going through your head at that point?\"\n\nWhy this order: a verdict has no handles. Asking for the sequence gives you something to pick up, the obstacle gives you the story, and only then is there a moment specific enough to ask about a feeling.\n\nMindset: do not ask how someone feels about something you cannot picture. Get the shape first and the rest becomes askable.",
       inputs: [
         {
@@ -5241,8 +5241,8 @@ const multiStepCollections = {
     },
     {
       name: "Closing a Subject Well",
-      guideFront: "They answer, and you follow. What is the next question?",
-      guideBack: "A question you could ask at this step.",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
       description: "The account has reached its end and the conversation could either finish the subject properly or trail off into a pause. Two questions land it. Steps: 1) Ask what changed, 2) Ask what they would tell someone else, 3) Let it end.\n\nThe shape of the whole thing:\n1. \"What's different now, after all that?\"\n2. \"What would you tell someone about to do the same thing?\"\n3. (let the subject finish — do not open a new one on top of it)\n\nWhy this order: the reflective questions belong at the end, where they close the subject rather than deepening it. Asked in the middle they stop the story.\n\nMindset: this is a closing move. Ask it, listen to the answer, and then let the conversation go somewhere else.",
       inputs: [
         {
@@ -5260,8 +5260,8 @@ const multiStepCollections = {
   showunderstanding2: [
     {
       name: "Check, Then Meet",
-      guideFront: "They are talking. Show them you have followed it.",
-      guideBack: "A line you could say at this step.",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
       description: "The order that makes the personal moves land: establish that you have understood before you say anything about yourself. Steps: 1) Check your version, 2) Take the correction, 3) Meet them with the feeling or the value.\n\nThe shape of the whole thing:\n1. \"So it's not the workload — it's that nobody asked you.\"\n2. \"Right, so it's both. The workload made the not-asking worse.\"\n3. \"That's a horrible combination. I've had the second half of it.\"\n\nWhy this order: a disclosure before you have understood is a guess about what they need. After a check that they corrected, it lands as recognition rather than as a change of subject.\n\nMindset: understand first, meet second. In that order the sentence about you is a gift; in the other order it is an interruption.",
       inputs: [
         {
@@ -5286,8 +5286,8 @@ const multiStepCollections = {
     },
     {
       name: "Bring It Together",
-      guideFront: "They are talking. Show them you have followed it.",
-      guideBack: "A line you could say at this step.",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
       description: "Two things they mentioned separately turn out to be one thing. Connect them, check the connection, and let them decide what it means. Steps: 1) Name both, 2) Ask whether they are connected, 3) Let them take it.\n\nThe shape of the whole thing:\n1. \"You said earlier the travel was getting heavy.\"\n2. \"And now the tiredness. Are those the same problem?\"\n3. (say nothing — they are working it out)\n\nWhy this order: naming both before connecting them stops it sounding like a diagnosis. And the silence at the end matters — this move often produces a realisation, and a realisation needs a moment.\n\nMindset: offer the connection, do not conclude it. \"Are those the same thing?\" is a question; \"so obviously it's the travel\" is a verdict.",
       inputs: [
         {
@@ -5312,8 +5312,8 @@ const multiStepCollections = {
     },
     {
       name: "Land a Long One",
-      guideFront: "They are talking. Show them you have followed it.",
-      guideBack: "A line you could say at this step.",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
       description: "They have been talking for a while and it is coming to an end. Summarise, invite the correction, and only then respond. Steps: 1) Summarise in three, 2) Ask what you missed, 3) Respond to the corrected version.\n\nThe shape of the whole thing:\n1. \"So: the timing, the workload, and finding out last.\"\n2. \"Have I missed anything?\"\n3. \"Then the thing I'd want to sort first is the finding-out-last.\"\n\nWhy this order: responding to your own summary before they have corrected it means responding to your version rather than theirs. The correction takes four seconds and changes what you say next surprisingly often.\n\nMindset: summarise, get corrected, then answer. Skipping the middle step is how people end up solving the wrong problem warmly.",
       inputs: [
         {
@@ -5661,8 +5661,8 @@ const multiStepCollections = {
   storybanter: [
     {
       name: "Your Turn to Start",
-      guideFront: "Their line, then your turn. Keep it going.",
-      guideBack: "A line you could say at this step.",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
       description: "The book's six-beat arc with you as the one who opens: you throw out the small complaint, they invite you to say more, you answer absurdly, they build, you escalate, and then somebody lands it. Steps: 1) Trigger, 2) Answer their invitation, 3) Build on what they added, 4) Escalate, 5) Land it.\n\nThe shape of the whole thing:\n1. \"I'm so tired I can't do this.\"\n2. \"Honestly? Going home and getting into bed until Thursday.\"\n3. \"Yes, and three pizzas. Minimum.\"\n4. \"By Friday I'm basically a pizza with a heartbeat.\"\n5. \"And that's how I ended up banned from that place. Anyway.\"\n\nWhy this order: the trigger has to be small and true or the other person has nothing to recognise. Everything after it gets bigger, and the landing is somebody choosing to stop while it is still funny.\n\nMindset: the opening line is the only one that should be realistic. Keep it small — the absurdity is built from it, not stated in it.",
       inputs: [
         {
@@ -5691,8 +5691,8 @@ const multiStepCollections = {
     },
     {
       name: "Their Turn to Start",
-      guideFront: "Their line, then your turn. Keep it going.",
-      guideBack: "A line you could say at this step.",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
       description: "The same arc from the other side — they complain, and you are the one who keeps it going. This is the harder role and the more useful one, because it is the one most people freeze in. Steps: 1) Invite, 2) Build on their answer, 3) Complicate it, 4) Bring someone in, 5) Hand the ending to them.\n\nThe shape of the whole thing:\n1. \"So what are you going to do about it?\"\n2. \"Yes, and you'd need enough pizza to see the week out.\"\n3. \"What if your mum comes home and finds the boxes?\"\n4. \"This is where the dog gives you away, obviously.\"\n5. \"So how does this end? I need to know.\"\n\nWhy this order: your first move is a question, because an invitation costs you no ideas and buys you a whole turn to think. After that you are building on material they have already given you rather than inventing from nothing.\n\nMindset: when it is not your story, ask first. A playful open question is always available and it is never the wrong move.",
       inputs: [
         {
@@ -5721,8 +5721,8 @@ const multiStepCollections = {
     },
     {
       name: "When It Stalls",
-      guideFront: "Their line, then your turn. Keep it going.",
-      guideBack: "A line you could say at this step.",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
       description: "The story has gone flat — the last two turns were pleasant, nobody has added a problem, and there is a pause coming. Three moves get it back, and they are the three you should reach for in order: complicate it, add a person, or follow the consequence. Steps: 1) Notice the flatness, 2) Restart it with a complication, 3) Add a reaction, 4) Land it before it dies twice.\n\nThe shape of the whole thing:\n1. (two agreeable turns in a row, and the energy has gone)\n2. \"What if the neighbours have already noticed, though?\"\n3. \"There's a group chat. You're in it, apparently.\"\n4. \"Anyway. That's how you end up moving cities. Right — coffee?\"\n\nWhy this order: a stalled story does not need a funnier line, it needs a problem. Adding a complication gives both of you something to be funny about again, which a clever remark does not.\n\nMindset: a story that has flattened twice is finished. Land it warmly rather than dragging it — the goal was the laugh you already had.",
       inputs: [
         {
@@ -5751,8 +5751,8 @@ const multiStepCollections = {
   explainthings2: [
     {
       name: "Short, Check, Deeper",
-      guideFront: "Explain it in the order they can take it.",
-      guideBack: "A line you could say at this step.",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
       description: "The three-beat explanation: give the one-sentence version, check whether they want more, and only then go deeper. It is the book's tip made into a habit, and it is what stops an answer becoming a lecture. Steps: 1) Short — one sentence in words they already have, 2) Check — a question or a look, 3) Deeper — the detail, but only if it was wanted.\n\nThe shape of the whole thing:\n1. \"It's a shared to-do list.\"\n2. \"Want the bit that makes it different?\"\n3. \"Every line has exactly one owner, so nothing sits there unclaimed.\"\n\nWhy this order: the short version tells you how interested they are, which is the thing you cannot know in advance. Guessing produces either a lecture or an unhelpfully thin answer.\n\nMindset: the check is the whole strategy. Without it you are just choosing a length at random.",
       inputs: [
         {
@@ -5777,8 +5777,8 @@ const multiStepCollections = {
     },
     {
       name: "Find the Missing W",
-      guideFront: "Explain it in the order they can take it.",
-      guideBack: "A line you could say at this step.",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
       description: "When an explanation has not landed, work out which of the six they are missing rather than repeating the one you already gave. Steps: 1) Notice it did not land, 2) Name what you gave them, 3) Give a different W.\n\nThe shape of the whole thing:\n1. (they still look blank)\n2. \"That was what it is, and it didn't help.\"\n3. \"The point is you stop chasing people for updates.\"\n\nWhy this order: repeating a definition more slowly is the commonest failure in explaining anything, and it is always the same mistake — answering the question you were asked rather than the one they have.\n\nMindset: if it did not land, change the W, not the volume.",
       inputs: [
         {
@@ -5803,8 +5803,8 @@ const multiStepCollections = {
     },
     {
       name: "Place It Before You Detail It",
-      guideFront: "Explain it in the order they can take it.",
-      guideBack: "A line you could say at this step.",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
       description: "For anything with an unfamiliar shape, give the setting and the group first, then the mechanics. Steps: 1) Where it belongs, 2) Who it is for, 3) How it works — the detail, now that it has somewhere to sit.\n\nThe shape of the whole thing:\n1. \"It's an office thing rather than a home thing.\"\n2. \"Mostly for teams where more than two people book the same rooms.\"\n3. \"You claim the slot, and it goes grey for everyone else.\"\n\nWhy this order: mechanics land badly on a listener who has not yet worked out whether the thing has anything to do with them. Place it first, and the how is suddenly worth following.\n\nMindset: give it a shelf before you give it a manual.",
       inputs: [
         {
@@ -5831,8 +5831,8 @@ const multiStepCollections = {
   buildingastory: [
     {
       name: "The Whole Thing, Start to Finish",
-      guideFront: "Build the story one part at a time.",
-      guideBack: "A line you could say at this step.",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
       description: "The book's Complete Storytelling exercise: build a real story out of the four parts and tell it end to end. Steps: 1) Open in one sentence, 2) Name the turn, 3) Land the resolution, 4) Say the takeaway, or say there is not one.\n\nThe shape of the whole thing:\n1. \"Right as I walked in, the fire alarm went off.\"\n2. \"And my laptop was still on the desk, in the room I'd just been locked out of.\"\n3. \"In the end a caretaker let me back in through the car park.\"\n4. \"I email things to myself now. Every single time.\"\n\nWhy this order: the opening buys you attention, the turn earns it, the resolution repays it and the takeaway is the only optional part. Told in this order a story does not need to be dramatic to work.\n\nMindset: four parts, four sentences if you like. A short story with all four beats a long one missing the turn.",
       inputs: [
         {
@@ -5859,8 +5859,8 @@ const multiStepCollections = {
     },
     {
       name: "Told On the Spot",
-      guideFront: "Build the story one part at a time.",
-      guideBack: "A line you could say at this step.",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
       description: "Somebody has said a word and it is your turn. Pick fast, start before you have it all, and let the shape carry you. Steps: 1) Pick the first small one that arrives, 2) Open it, 3) Get to the turn quickly, 4) Land it short.\n\nThe shape of the whole thing:\n1. (prompt: \"food\" — first sushi, not best meal ever)\n2. \"The first time I tried sushi I was so nervous about it.\"\n3. \"And I hated the first piece. Properly hated it.\"\n4. \"Then I ate about nine more. I have no explanation.\"\n\nWhy this order: the picking is the hard part and it has a time limit. Once you have started, the four parts do the work, and the story does not need to be good — it needs to be told while the subject is still live.\n\nMindset: fifteen seconds to choose, then start. A mediocre story told now beats a great one you think of on the way home.",
       inputs: [
         {
@@ -5887,8 +5887,8 @@ const multiStepCollections = {
     },
     {
       name: "Same Story, Different Feeling",
-      guideFront: "Build the story one part at a time.",
-      guideBack: "A line you could say at this step.",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
       description: "The book's flexibility exercise, and the one that teaches most: take one set of events and tell it twice, once as the funny version and once as the honest one. Steps: 1) The events, flat, 2) The funny telling, 3) The honest telling, 4) Notice which one the moment wanted.\n\nThe shape of the whole thing:\n1. (the events: the interview, the wrong building, arriving late)\n2. \"I spent forty minutes in the wrong building. Confidently.\"\n3. \"I've never wanted anything as much as I wanted that job.\"\n4. (same events — one is for a party, one is for a friend)\n\nWhy this order: telling it flat first shows you that the events are not the story. The two versions are built from identical facts, which is the entire lesson: the feeling you put in is the choice, and it should be chosen rather than defaulted to.\n\nMindset: same events, two stories. Knowing both is what lets you pick the one the room can take.",
       inputs: [
         {
@@ -5917,8 +5917,8 @@ const multiStepCollections = {
   reframing: [
     {
       name: "Acknowledge, Ask, Offer",
-      guideFront: "Take it one step at a time.",
-      guideBack: "A line you could say at this step.",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
       description: "The order that makes a reframe welcome rather than irritating. Steps: 1) Say the true hard thing first, 2) Ask whether they want another angle, 3) Offer it once and hold it loosely.\n\nThe shape of the whole thing:\n1. \"That's a horrible way to find out.\"\n2. \"Do you want another way of looking at it, or not right now?\"\n3. \"It'd have surfaced eventually, and better now than after you'd signed.\"\n\nWhy this order: acknowledgement first is what stops the reframe reading as a correction. Asking hands them the choice. Offering once and stopping is what keeps it an offer rather than an argument about whose reading is right.\n\nMindset: if you only remember one thing from this pack, remember this order.",
       inputs: [
         {
@@ -5943,8 +5943,8 @@ const multiStepCollections = {
     },
     {
       name: "Answering a Label",
-      guideFront: "Take it one step at a time.",
-      guideBack: "A line you could say at this step.",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
       description: "Somebody has put a word on you. Three beats and it is over, without an argument. Steps: 1) Agree with the behaviour, 2) Rename it, 3) Own it and move on.\n\nThe shape of the whole thing:\n1. \"That's fair, I do do that.\"\n2. \"I'd call it particular rather than fussy.\"\n3. \"And I'm completely at peace with it. Anyway — what were we saying?\"\n\nWhy this order: agreeing first removes the fight, because they were expecting a denial. Renaming moves the conversation onto your word. Owning it and changing the subject ends it — a reframe you then defend for five minutes has become an argument.\n\nMindset: agree, rename, move on. The third step is what stops it becoming a conversation about you.",
       inputs: [
         {
@@ -5969,8 +5969,8 @@ const multiStepCollections = {
     },
     {
       name: "Deciding Not To",
-      guideFront: "Take it one step at a time.",
-      guideBack: "A line you could say at this step.",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
       description: "You can see a reframe and you are going to hold it. Three beats that leave the person better off than a reframe would have. Steps: 1) Say the thing is bad, 2) Say the feeling fits, 3) Ask what would actually help.\n\nThe shape of the whole thing:\n1. \"That's just bad. I'm not going to try to make it better.\"\n2. \"You're allowed to be as fed up as you are.\"\n3. \"What would actually help right now?\"\n\nWhy this order: naming it as bad is the opposite of a silver lining and it lands as honesty. Saying the feeling fits removes the second problem, which is wondering whether the reaction is reasonable. The question at the end hands them the wheel.\n\nMindset: this combo is the most useful one in the pack in the first hour after something has gone wrong. The reframes can wait a week.",
       inputs: [
         {
@@ -7475,8 +7475,8 @@ const multiStepCollections = {
   startingconversations4: [
     {
       name: "Going First and Staying There",
-      guideFront: "What they gave back, and the opener to use next.",
-      guideBack: "One way it could sound.",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
       description: "When you open with something of your own, the other person usually matches it — but only if you leave room. The commonest mistake is to say the brave thing and then immediately cover it with a joke or a change of subject.\n\nThis combo chains the pack's four openers, and each step front carries what they gave back. Notice how often their reply is a matching disclosure: that is what going first buys you.\n\nMindset: say it, then stop. What they do with it is the conversation.",
       inputs: [
         {
@@ -7503,8 +7503,8 @@ const multiStepCollections = {
     },
     {
       name: "When the Joke Does Not Land",
-      guideFront: "What they gave back, and the opener to use next.",
-      guideBack: "One way it could sound.",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
       description: "You make a joke and get nothing — a polite half-smile, or a blank look, or worse, they take it seriously. This is the risk that stops people using humour at all.\n\nThe recovery is short and cheap: do not explain it, do not repeat it, and do not apologise at length. Move to a plainer opener and carry on as though nothing happened, because from the outside, nothing has.\n\nMindset: a missed joke costs about two seconds. Explaining it costs considerably more.",
       inputs: [
         {
@@ -7531,8 +7531,8 @@ const multiStepCollections = {
     },
     {
       name: "Naming the Approach",
-      guideFront: "What they gave back, and the opener to use next.",
-      guideBack: "One way it could sound.",
+      guideFront: "Use the planned strategy when...",
+      guideBack: "One way it could sound",
       description: "Saying why you came over is the strongest opener in the pack, and the hardest to start. Once it is said, the conversation tends to go quickly, because the awkward part is already out loud and behind you.\n\nBoth scenarios practise the same shape: name the reason, let them respond, and then move to ordinary conversation rather than staying in the meta.\n\nMindset: say why once. Then talk about something else.",
       inputs: [
         {
