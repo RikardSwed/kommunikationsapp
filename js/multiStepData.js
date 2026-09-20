@@ -2113,20 +2113,20 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "A friend has come round and started telling you about a meeting where they were criticised in front of the team.",
           steps: [
-            { front: "Step 1 · Just Listen — they are mid-flow.", back: "\"Mm. And what did he say then?\"", guideFront: "They have not stopped. Do not interrupt with a solution." },
-            { front: "Step 2 · Respond With Validation — they finish and say, \"Anyway. That was my Tuesday.\"", back: "\"That's a horrible thing to have happen with everyone sitting there.\"" },
-            { front: "Step 3 · Respond With Encouragement — they say, \"I just sat there. I should have said something.\"", back: "\"You stayed civil while being talked over. That's harder than answering back.\"" },
-            { front: "Step 4 · Respond With a Suggestion — they say, \"I've got to work with him tomorrow. What do I even do?\"", back: "\"Would it help to say something to him privately first, before you're both in a room?\"" },
+            { front: "Step 1 · Just Listen — they are mid-flow.", back: "\"Mm. And what did he say then?\"", guideFront: "Let them talk when...", guideBack: "A small sign to go on, or silence" },
+            { front: "Step 2 · Respond With Validation — they finish and say, \"Anyway. That was my Tuesday.\"", back: "\"That's a horrible thing to have happen with everyone sitting there.\"", guideFront: "Say the feeling makes sense when...", guideBack: "Why the feeling fits" },
+            { front: "Step 3 · Respond With Encouragement — they say, \"I just sat there. I should have said something.\"", back: "\"You stayed civil while being talked over. That's harder than answering back.\"", guideFront: "Point to what they can handle when...", guideBack: "Evidence they can manage it" },
+            { front: "Step 4 · Respond With a Suggestion — they say, \"I've got to work with him tomorrow. What do I even do?\"", back: "\"Would it help to say something to him privately first, before you're both in a room?\"", guideFront: "Offer one idea when...", guideBack: "An option, offered lightly" },
           ]
         },
         {
           bundle: 'pro',
           situation: "A classmate mentions they are dreading presenting tomorrow. They have done it before and it went reasonably.",
           steps: [
-            { front: "Step 1 · Work Out What They Need — you cannot tell if they want help or reassurance.", back: "\"Are you after tips, or is it more the nerves?\"", guideFront: "Asking is faster and more accurate than guessing." },
-            { front: "Step 2 · Respond With Validation — they say, \"The nerves, mostly. I hate the standing up bit.\"", back: "\"That's the worst part of it, and everyone I know feels the same.\"" },
-            { front: "Step 3 · Respond With Encouragement — they say, \"I always think I'll freeze.\"", back: "\"You did the one in October. You didn't freeze then, and this room's smaller.\"" },
-            { front: "Step 4 · Respond With a Suggestion — they say, \"I suppose that's true.\"", back: "\"Could you get your first sentence completely fixed? Once that's out the rest tends to follow.\"" },
+            { front: "Step 1 · Work Out What They Need — you cannot tell if they want help or reassurance.", back: "\"Are you after tips, or is it more the nerves?\"", guideFront: "Find out what kind of help they want when...", guideBack: "A check on what would help" },
+            { front: "Step 2 · Respond With Validation — they say, \"The nerves, mostly. I hate the standing up bit.\"", back: "\"That's the worst part of it, and everyone I know feels the same.\"", guideFront: "Say the feeling makes sense when...", guideBack: "Why the feeling fits" },
+            { front: "Step 3 · Respond With Encouragement — they say, \"I always think I'll freeze.\"", back: "\"You did the one in October. You didn't freeze then, and this room's smaller.\"", guideFront: "Point to what they can handle when...", guideBack: "Evidence they can manage it" },
+            { front: "Step 4 · Respond With a Suggestion — they say, \"I suppose that's true.\"", back: "\"Could you get your first sentence completely fixed? Once that's out the rest tends to follow.\"", guideFront: "Offer one idea when...", guideBack: "An option, offered lightly" },
           ]
         },
       ]
@@ -2141,20 +2141,20 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "A friend has been describing a difficult situation with their family and you have offered two suggestions.",
           steps: [
-            { front: "Step 1 · Respond With a Suggestion — they have described the problem.", back: "\"Have you thought about talking to her when your brother isn't there?\"", guideFront: "A reasonable suggestion, offered a bit early." },
-            { front: "Step 2 · Work Out What They Need — they say, \"Yeah. Maybe,\" and go quiet.", back: "\"I've jumped straight to fixing it, haven't I. Do you actually want ideas?\"" },
-            { front: "Step 3 · Respond With Validation — they say, \"Not really. I just wanted to say it to someone.\"", back: "\"Fair enough. It sounds exhausting, honestly.\"" },
-            { front: "Step 4 · Just Listen — they say, \"It is. It's been like this for months.\"", back: "\"Go on.\"" },
+            { front: "Step 1 · Respond With a Suggestion — they have described the problem.", back: "\"Have you thought about talking to her when your brother isn't there?\"", guideFront: "Offer one idea when...", guideBack: "An option, offered lightly" },
+            { front: "Step 2 · Work Out What They Need — they say, \"Yeah. Maybe,\" and go quiet.", back: "\"I've jumped straight to fixing it, haven't I. Do you actually want ideas?\"", guideFront: "Find out what kind of help they want when...", guideBack: "A check on what would help" },
+            { front: "Step 3 · Respond With Validation — they say, \"Not really. I just wanted to say it to someone.\"", back: "\"Fair enough. It sounds exhausting, honestly.\"", guideFront: "Say the feeling makes sense when...", guideBack: "Why the feeling fits" },
+            { front: "Step 4 · Just Listen — they say, \"It is. It's been like this for months.\"", back: "\"Go on.\"", guideFront: "Let them talk when...", guideBack: "A small sign to go on, or silence" },
           ]
         },
         {
           bundle: 'pro',
           situation: "A colleague is worried about a decision and you have told them it will be fine.",
           steps: [
-            { front: "Step 1 · Respond With Encouragement — they have described the worry.", back: "\"You'll be fine. You always are with this stuff.\"", guideFront: "A reflex reassurance. Watch what it does." },
-            { front: "Step 2 · Work Out What They Need — they say, \"You keep saying that,\" slightly sharply.", back: "\"You're right, that was a bit automatic. What's actually worrying you?\"" },
-            { front: "Step 3 · Respond With Validation — they say, \"That I'll get it wrong and it'll be on me.\"", back: "\"That's a real thing to be carrying. It would be on you, wouldn't it.\"" },
-            { front: "Step 4 · Respond With a Suggestion — they say, \"Exactly. That's the bit.\"", back: "\"Would it help to put the reasoning in writing? Then the decision isn't just yours in a corridor.\"" },
+            { front: "Step 1 · Respond With Encouragement — they have described the worry.", back: "\"You'll be fine. You always are with this stuff.\"", guideFront: "Point to what they can handle when...", guideBack: "Evidence they can manage it" },
+            { front: "Step 2 · Work Out What They Need — they say, \"You keep saying that,\" slightly sharply.", back: "\"You're right, that was a bit automatic. What's actually worrying you?\"", guideFront: "Find out what kind of help they want when...", guideBack: "A check on what would help" },
+            { front: "Step 3 · Respond With Validation — they say, \"That I'll get it wrong and it'll be on me.\"", back: "\"That's a real thing to be carrying. It would be on you, wouldn't it.\"", guideFront: "Say the feeling makes sense when...", guideBack: "Why the feeling fits" },
+            { front: "Step 4 · Respond With a Suggestion — they say, \"Exactly. That's the bit.\"", back: "\"Would it help to put the reasoning in writing? Then the decision isn't just yours in a corridor.\"", guideFront: "Offer one idea when...", guideBack: "An option, offered lightly" },
           ]
         },
       ]
@@ -2169,20 +2169,20 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "A friend has described an argument with a colleague, and you think they handled part of it badly.",
           steps: [
-            { front: "Step 1 · Respond With Validation — they have finished the account.", back: "\"That sounds like a horrible position to be put in.\"" },
-            { front: "Step 2 · Work Out What They Need — they say, \"Was I out of order, though? Be honest.\"", back: "\"Do you want honest, or do you want me on your side? Both are available.\"" },
+            { front: "Step 1 · Respond With Validation — they have finished the account.", back: "\"That sounds like a horrible position to be put in.\"", guideFront: "Say the feeling makes sense when...", guideBack: "Why the feeling fits" },
+            { front: "Step 2 · Work Out What They Need — they say, \"Was I out of order, though? Be honest.\"", back: "\"Do you want honest, or do you want me on your side? Both are available.\"", guideFront: "Find out what kind of help they want when...", guideBack: "A check on what would help" },
             { front: "Step 3 · Give one honest thing — they say, \"No, honestly. Tell me.\"", back: "\"The situation, no. Sending it at eleven at night, maybe — it'd read as angrier than you meant.\"", guideFront: "One thing, said once. Then stop." },
-            { front: "Step 4 · Respond With Encouragement — they say, \"Yeah. I did think that afterwards.\"", back: "\"You've spotted it yourself, which is most of it. The rest of what you did was fine.\"" },
+            { front: "Step 4 · Respond With Encouragement — they say, \"Yeah. I did think that afterwards.\"", back: "\"You've spotted it yourself, which is most of it. The rest of what you did was fine.\"", guideFront: "Point to what they can handle when...", guideBack: "Evidence they can manage it" },
           ]
         },
         {
           bundle: 'pro',
           situation: "A classmate shows you something they have made and asks what you think. They are clearly hoping it is good.",
           steps: [
-            { front: "Step 1 · Respond With Validation — they hand it over nervously.", back: "\"You've obviously put a lot into this.\"" },
-            { front: "Step 2 · Work Out What They Need — they say, \"Is it any good? Properly.\"", back: "\"Do you want notes, or do you want to know if it works? They're different answers.\"" },
+            { front: "Step 1 · Respond With Validation — they hand it over nervously.", back: "\"You've obviously put a lot into this.\"", guideFront: "Say the feeling makes sense when...", guideBack: "Why the feeling fits" },
+            { front: "Step 2 · Work Out What They Need — they say, \"Is it any good? Properly.\"", back: "\"Do you want notes, or do you want to know if it works? They're different answers.\"", guideFront: "Find out what kind of help they want when...", guideBack: "A check on what would help" },
             { front: "Step 3 · Give one honest thing — they say, \"Notes. I'd rather know now.\"", back: "\"The middle section lost me. Everything either side of it is strong.\"", guideFront: "One thing, specific, and no list." },
-            { front: "Step 4 · Respond With Encouragement — they say, \"I wondered about that bit.\"", back: "\"You were right to wonder. The opening is genuinely good, and that's the hard part.\"" },
+            { front: "Step 4 · Respond With Encouragement — they say, \"I wondered about that bit.\"", back: "\"You were right to wonder. The opening is genuinely good, and that's the hard part.\"", guideFront: "Point to what they can handle when...", guideBack: "Evidence they can manage it" },
           ]
         },
       ]
@@ -4065,7 +4065,7 @@ const multiStepCollections = {
       name: "The Full Label",
       guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
-      description: "The full process, in order. Steps: 1) Name the Situation — say plainly what happened, 2) Label the Emotion — choose the word that matches, 3) Describe the Signals — say what it did to you, 4) Regulate Out Loud — name what you are doing about it.\n\nEach step does one job, and the order is what makes it land. Situation first means the feeling has a context; signals after the word mean the word gets believed.\n\nThe shape of the whole thing:\n1. \"So this is the third Friday we've moved.\"\n2. \"I think I'm more hurt than annoyed.\"\n3. \"I read the message and my stomach just dropped.\"\n4. \"I'd rather say this now than let it sit for another month.\"\n\nMindset: this is not a confrontation, it is a description. Almost nothing in the four steps is arguable, which is exactly why it works.",
+      description: "The full process, in order. Steps: 1) Name the Situation — say plainly what happened, 2) Label the Emotion — choose the word that matches, 3) Describe the Signals — say what it did to you, 4) Announce the Pause — name what you are doing about it.\n\nEach step does one job, and the order is what makes it land. Situation first means the feeling has a context; signals after the word mean the word gets believed.\n\nThe shape of the whole thing:\n1. \"So this is the third Friday we've moved.\"\n2. \"I think I'm more hurt than annoyed.\"\n3. \"I read the message and my stomach just dropped.\"\n4. \"I'd rather say this now than let it sit for another month.\"\n\nMindset: this is not a confrontation, it is a description. Almost nothing in the four steps is arguable, which is exactly why it works.",
       inputs: [
         {
           bundle: 'pro',
@@ -4093,7 +4093,7 @@ const multiStepCollections = {
       name: "When It Is Rising Now",
       guideFront: "Use the planned strategy when...",
       guideBack: "One way it could sound",
-      description: "The version for when the feeling arrives before the words do. Steps: 1) Regulate Out Loud — buy yourself the time first, 2) Label the Emotion — once you can think, say what it is, 3) Name the Situation — then explain what set it off.\n\nThe order is deliberately reversed. In the full process the situation comes first, but when something is peaking you do not have a spare sentence for context — you need the pause before anything else.\n\nWhy each step is where it is:\n1. Regulate — a sharp reply sent now costs more than the whole conversation is worth.\n2. Label — the word is much easier to find thirty seconds later.\n3. Situation — explaining what set it off only helps once you can say it evenly.\n\nMindset: the goal in this moment is not to handle it well. It is to not handle it badly, and to keep the conversation available for later.",
+      description: "The version for when the feeling arrives before the words do. Steps: 1) Announce the Pause — buy yourself the time first, 2) Label the Emotion — once you can think, say what it is, 3) Name the Situation — then explain what set it off.\n\nThe order is deliberately reversed. In the full process the situation comes first, but when something is peaking you do not have a spare sentence for context — you need the pause before anything else.\n\nWhy each step is where it is:\n1. Regulate — a sharp reply sent now costs more than the whole conversation is worth.\n2. Label — the word is much easier to find thirty seconds later.\n3. Situation — explaining what set it off only helps once you can say it evenly.\n\nMindset: the goal in this moment is not to handle it well. It is to not handle it badly, and to keep the conversation available for later.",
       inputs: [
         {
           bundle: 'pro',
@@ -4153,22 +4153,22 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "Your partner left the front door unlocked overnight. You found it in the morning. It has happened before, and you want to raise it without it becoming a row.",
           steps: [
-            { front: "Step 1 · Say What Happened — the event only, no interpretation.", back: "\"When I came down this morning, the front door was unlocked.\"", guideFront: "Could a camera have recorded it?" },
-            { front: "Step 2 · Name Your Feeling — one accurate word, owned as yours.", back: "\"I felt uneasy about it, and it stayed with me most of the morning.\"", guideFront: "\"I felt\", not \"you made me feel\"." },
-            { front: "Step 3 · Say What You Need — what the feeling points at.", back: "\"Because I need to know the house is shut before I go to sleep.\"", guideFront: "The need, not their fault." },
-            { front: "Step 4 · Make a Request — one small, doable thing.", back: "\"Could you check it on your way up? That's genuinely all I need.\"", guideFront: "Specific, small, and possible tomorrow." },
-            { front: "Step 5 · Ask What They Felt — hand them the floor.", back: "\"How does that land? I know I've mentioned it before.\"", guideFront: "Ask before you have decided what they will say." },
+            { front: "Step 1 · Say What Happened — the event only, no interpretation.", back: "\"When I came down this morning, the front door was unlocked.\"", guideFront: "Describe only what occurred when...", guideBack: "The event, as a camera would see it" },
+            { front: "Step 2 · Name Your Feeling — one accurate word, owned as yours.", back: "\"I felt uneasy about it, and it stayed with me most of the morning.\"", guideFront: "Express how you felt when...", guideBack: "A feeling, owned as yours" },
+            { front: "Step 3 · Say What You Need — what the feeling points at.", back: "\"Because I need to know the house is shut before I go to sleep.\"", guideFront: "Name what the feeling points to when...", guideBack: "The need underneath" },
+            { front: "Step 4 · Make a Request — one small, doable thing.", back: "\"Could you check it on your way up? That's genuinely all I need.\"", guideFront: "Ask for something doable when...", guideBack: "A request they could say yes to" },
+            { front: "Step 5 · Ask What They Felt — hand them the floor.", back: "\"How does that land? I know I've mentioned it before.\"", guideFront: "Invite their side when...", guideBack: "An invitation to tell it their way" },
           ]
         },
         {
           bundle: 'pro',
           situation: "A teammate did not contribute to a group project and you ended up covering it. You have to work with them again next term.",
           steps: [
-            { front: "Step 1 · Say What Happened — the countable fact.", back: "\"The two sections you had ended up being done the night before.\"", guideFront: "One fact. No \"always\"." },
-            { front: "Step 2 · Name Your Feeling — the accurate word, not the biggest one.", back: "\"I was disappointed, and pretty tired by the end of it.\"", guideFront: "Smaller is usually truer." },
-            { front: "Step 3 · Say What You Need — the thing underneath.", back: "\"Because I need to be able to plan around what we've agreed.\"", guideFront: "What would be right, not what went wrong." },
-            { front: "Step 4 · Make a Request — future-facing, so nobody has failed yet.", back: "\"Next time, could you tell me early if it's not going to happen?\"", guideFront: "Something they can actually do." },
-            { front: "Step 5 · Ask What They Felt — genuinely.", back: "\"What was going on for you, though? It's not like you.\"", guideFront: "Ask without the answer prepared." },
+            { front: "Step 1 · Say What Happened — the countable fact.", back: "\"The two sections you had ended up being done the night before.\"", guideFront: "Describe only what occurred when...", guideBack: "The event, as a camera would see it" },
+            { front: "Step 2 · Name Your Feeling — the accurate word, not the biggest one.", back: "\"I was disappointed, and pretty tired by the end of it.\"", guideFront: "Express how you felt when...", guideBack: "A feeling, owned as yours" },
+            { front: "Step 3 · Say What You Need — the thing underneath.", back: "\"Because I need to be able to plan around what we've agreed.\"", guideFront: "Name what the feeling points to when...", guideBack: "The need underneath" },
+            { front: "Step 4 · Make a Request — future-facing, so nobody has failed yet.", back: "\"Next time, could you tell me early if it's not going to happen?\"", guideFront: "Ask for something doable when...", guideBack: "A request they could say yes to" },
+            { front: "Step 5 · Ask What They Felt — genuinely.", back: "\"What was going on for you, though? It's not like you.\"", guideFront: "Invite their side when...", guideBack: "An invitation to tell it their way" },
           ]
         },
       ]
@@ -4183,20 +4183,20 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "You have raised the unlocked door and your partner responds with a grievance of their own.",
           steps: [
-            { front: "Say What Happened — they say, \"You leave the hob on constantly.\"", back: "\"I do, sometimes. This one's about the door.\"", guideFront: "Describe the event with nothing added when...", guideBack: "The bare facts, no reading" },
-            { front: "Name Your Feeling — they say, \"So mine doesn't count?\"", back: "\"It does. I felt uneasy about the door, and I'd like to talk about the hob separately.\"", guideFront: "Say what you felt, in one word when...", guideBack: "One feeling, owned" },
-            { front: "Say What You Need — they say, \"It's always one rule for you.\"", back: "\"I need to be able to raise one thing without it becoming a list.\"", guideFront: "Name what the feeling points at when...", guideBack: "The need underneath" },
-            { front: "Ask What They Felt — they say, \"Fine. Go on then.\"", back: "\"No — say the hob thing. I'd rather hear it than have it stored up.\"", guideFront: "Ask for their side when...", guideBack: "A question about their version" },
+            { front: "Say What Happened — they say, \"You leave the hob on constantly.\"", back: "\"I do, sometimes. This one's about the door.\"", guideFront: "Describe only what occurred when...", guideBack: "The event, as a camera would see it" },
+            { front: "Name Your Feeling — they say, \"So mine doesn't count?\"", back: "\"It does. I felt uneasy about the door, and I'd like to talk about the hob separately.\"", guideFront: "Express how you felt when...", guideBack: "A feeling, owned as yours" },
+            { front: "Say What You Need — they say, \"It's always one rule for you.\"", back: "\"I need to be able to raise one thing without it becoming a list.\"", guideFront: "Name what the feeling points to when...", guideBack: "The need underneath" },
+            { front: "Ask What They Felt — they say, \"Fine. Go on then.\"", back: "\"No — say the hob thing. I'd rather hear it than have it stored up.\"", guideFront: "Invite their side when...", guideBack: "An invitation to tell it their way" },
           ]
         },
         {
           bundle: 'pro',
           situation: "You have said how something made you feel and they think the reaction is out of proportion.",
           steps: [
-            { front: "Name Your Feeling — they say, \"It's not that big a deal.\"", back: "\"Maybe not to you. It's what I felt, though.\"", guideFront: "Say what you felt, in one word when...", guideBack: "One feeling, owned" },
-            { front: "Say What You Need — they say, \"You're making a thing out of nothing.\"", back: "\"It's a small thing that's about a bigger one. I need to feel planned around.\"", guideFront: "Name what the feeling points at when...", guideBack: "The need underneath" },
-            { front: "Make a Request — they say, \"So what do you want me to do?\"", back: "\"Just a message when you know you'll be late. That's it.\"", guideFront: "Say what you would like to happen when...", guideBack: "A request you could act on" },
-            { front: "Ask What They Felt — they say, \"Alright, I can do that.\"", back: "\"And is there something in this from your side? You've seemed stretched.\"", guideFront: "Ask for their side when...", guideBack: "A question about their version" },
+            { front: "Name Your Feeling — they say, \"It's not that big a deal.\"", back: "\"Maybe not to you. It's what I felt, though.\"", guideFront: "Express how you felt when...", guideBack: "A feeling, owned as yours" },
+            { front: "Say What You Need — they say, \"You're making a thing out of nothing.\"", back: "\"It's a small thing that's about a bigger one. I need to feel planned around.\"", guideFront: "Name what the feeling points to when...", guideBack: "The need underneath" },
+            { front: "Make a Request — they say, \"So what do you want me to do?\"", back: "\"Just a message when you know you'll be late. That's it.\"", guideFront: "Ask for something doable when...", guideBack: "A request they could say yes to" },
+            { front: "Ask What They Felt — they say, \"Alright, I can do that.\"", back: "\"And is there something in this from your side? You've seemed stretched.\"", guideFront: "Invite their side when...", guideBack: "An invitation to tell it their way" },
           ]
         },
       ]
@@ -4211,20 +4211,20 @@ const multiStepCollections = {
           bundle: 'pro',
           situation: "A friend tells you they were hurt that you cancelled on them again.",
           steps: [
-            { front: "Ask What They Felt — they say, \"It's the third time you've cancelled.\"", back: "\"Say the rest. What was it like when the message came?\"", guideFront: "Ask for their side when...", guideBack: "A question about their version" },
+            { front: "Ask What They Felt — they say, \"It's the third time you've cancelled.\"", back: "\"Say the rest. What was it like when the message came?\"", guideFront: "Invite their side when...", guideBack: "An invitation to tell it their way" },
             { front: "Say What They Need — they say, \"Like I'm the one who always fits round you.\"", back: "\"So it's about being planned around rather than about Saturday.\"", guideFront: "Name what their feeling points at when...", guideBack: "Their need, said back" },
-            { front: "Name Your Feeling — they say, \"Yes. Exactly that.\"", back: "\"That's fair, and I feel pretty rubbish hearing it, which probably means it's true.\"", guideFront: "Say what you felt, in one word when...", guideBack: "One feeling, owned" },
-            { front: "Make a Request — they say, \"I'm not trying to make you feel bad.\"", back: "\"I know. Can we put something in the diary now, so it's not me proposing and cancelling?\"", guideFront: "Say what you would like to happen when...", guideBack: "A request you could act on" },
+            { front: "Name Your Feeling — they say, \"Yes. Exactly that.\"", back: "\"That's fair, and I feel pretty rubbish hearing it, which probably means it's true.\"", guideFront: "Express how you felt when...", guideBack: "A feeling, owned as yours" },
+            { front: "Make a Request — they say, \"I'm not trying to make you feel bad.\"", back: "\"I know. Can we put something in the diary now, so it's not me proposing and cancelling?\"", guideFront: "Ask for something doable when...", guideBack: "A request they could say yes to" },
           ]
         },
         {
           bundle: 'pro',
           situation: "A colleague says they felt undermined by something you said in a meeting.",
           steps: [
-            { front: "Ask What They Felt — they say, \"That comment in the meeting wasn't great.\"", back: "\"Tell me what it was like from your side.\"", guideFront: "Ask for their side when...", guideBack: "A question about their version" },
+            { front: "Ask What They Felt — they say, \"That comment in the meeting wasn't great.\"", back: "\"Tell me what it was like from your side.\"", guideFront: "Invite their side when...", guideBack: "An invitation to tell it their way" },
             { front: "Say What They Need — they say, \"It made it look like I hadn't checked.\"", back: "\"So it's about how it looked to the room, more than the point itself.\"", guideFront: "Name what their feeling points at when...", guideBack: "Their need, said back" },
-            { front: "Name Your Feeling — they say, \"Yes, mostly.\"", back: "\"That wasn't what I meant, and I can see it did that. I'm annoyed with myself, honestly.\"", guideFront: "Say what you felt, in one word when...", guideBack: "One feeling, owned" },
-            { front: "Make a Request — they say, \"I just didn't want to let it sit.\"", back: "\"I'm glad you didn't. Tell me in the moment next time if you can — I'd rather fix it there.\"", guideFront: "Say what you would like to happen when...", guideBack: "A request you could act on" },
+            { front: "Name Your Feeling — they say, \"Yes, mostly.\"", back: "\"That wasn't what I meant, and I can see it did that. I'm annoyed with myself, honestly.\"", guideFront: "Express how you felt when...", guideBack: "A feeling, owned as yours" },
+            { front: "Make a Request — they say, \"I just didn't want to let it sit.\"", back: "\"I'm glad you didn't. Tell me in the moment next time if you can — I'd rather fix it there.\"", guideFront: "Ask for something doable when...", guideBack: "A request they could say yes to" },
           ]
         },
       ]

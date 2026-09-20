@@ -1573,8 +1573,8 @@ const collections = {
   validation: [
     {
       name: "Reflect the Feeling",
-      guideFront: "They have shared something — show that it makes sense.",
-      guideBack: "One way to say it.",
+      guideFront: "Name the emotion back when...",
+      guideBack: "Their feeling, named as fitting",
       description: "You name the emotion they are expressing, and in naming it you signal that it belongs there.\n\nThis is the fastest of the three, and the one that lowers a guard quickest. Somebody who is upset and unsure whether they are allowed to be gets both answers at once: you heard it, and it is fine.\n\nTypical shapes:\n\n• \"It sounds like you felt really frustrated when that happened.\"\n• \"That must have been genuinely upsetting.\"\n• \"I get why that would sting.\"\n\nThree ways to reflect it:\n1. Name it plainly — \"That sounds frustrating.\"\n2. Name it and size it — \"That's not mild annoyance, that's proper anger.\"\n3. Name it and legitimise it — \"I get why that would upset you. It would upset me.\"\n\nThe third version is the one that does the validating. The first two show you noticed; adding a clause about why it makes sense is what turns noticing into acceptance.\n\nMindset: you are not diagnosing them and you are not agreeing with anyone. You are saying the feeling is a reasonable thing to be having, which costs you nothing at all.",
       inputs: [
         { q: "They say: \"I was so annoyed I couldn't concentrate for the rest of the day.\"", a: "\"That sounds like it properly got under your skin. I'd have been the same.\"", bundle: 'free' },
@@ -1589,8 +1589,8 @@ const collections = {
     },
     {
       name: "Normalise the Reaction",
-      guideFront: "They have shared something — show that it makes sense.",
-      guideBack: "One way to say it.",
+      guideFront: "Say most people would react so when...",
+      guideBack: "Their reaction, called ordinary",
       description: "You say that their response is what most people would have had in the same position — that it is ordinary rather than excessive.\n\nThis is the move that answers the question underneath a lot of upset, which is \"am I overreacting?\" Being told that anyone would have felt that way removes a whole second layer of worry sitting on top of the first.\n\nTypical shapes:\n\n• \"Anyone in your position would probably feel the same way.\"\n• \"It's completely normal to feel that way.\"\n• \"I'd be surprised if you weren't annoyed, honestly.\"\n\nThree ways to normalise:\n1. Point at anyone — \"Anybody would have found that hard.\"\n2. Point at yourself — \"I'd have reacted exactly the same way.\"\n3. Point at the situation — \"Given what happened, that reaction is completely reasonable.\"\n\nNormalise the feeling, not necessarily the action. \"Of course you were furious\" and \"of course you sent that email\" are different sentences, and only the first one is validation. If they did something they regret, the feeling can still be entirely reasonable.\n\nMindset: this is the antidote to \"I'm being ridiculous\". Most reactions are perfectly ordinary from inside the situation that produced them, and saying so out loud is often the whole of what somebody needed.",
       inputs: [
         { q: "They say: \"I'm probably overreacting, but it really got to me.\"", a: "\"You're not. Anyone would have found that annoying.\"", bundle: 'free' },
@@ -1605,8 +1605,8 @@ const collections = {
     },
     {
       name: "Acknowledge the Perspective",
-      guideFront: "They have shared something — show that it makes sense.",
-      guideBack: "One way to say it.",
+      guideFront: "Credit their reasoning when...",
+      guideBack: "Why their choice made sense",
       description: "You recognise their reasoning — why the choice they made, or the view they hold, makes sense from where they are standing.\n\nThis is the one that works even when you think they are wrong. You are not endorsing the conclusion; you are saying the route to it was a sensible route given what they knew, which is almost always true.\n\nTypical shapes:\n\n• \"I see why you approached it that way.\"\n• \"Given your perspective, that reaction seems very reasonable.\"\n• \"That makes sense given what you were dealing with.\"\n\nThree ways to acknowledge it:\n1. Validate the choice — \"I can see why you said yes at the time.\"\n2. Validate the reasoning — \"With that information, that's the obvious conclusion.\"\n3. Validate the priority — \"You were protecting the team. That's a fair thing to put first.\"\n\nThis is the move for when a feeling is not really what is on the table. Somebody defending a decision does not want to be told their feelings are valid; they want to hear that their thinking was not stupid.\n\nMindset: acknowledging a route is not agreeing with the destination. You can say \"that made complete sense at the time\" and still think it was the wrong call, and both halves can be honest.",
       inputs: [
         { q: "They say: \"I know it looks bad now, but I said yes because they needed an answer.\"", a: "\"That makes sense. With a deadline like that, waiting would have cost more.\"", bundle: 'free' },
@@ -1623,8 +1623,8 @@ const collections = {
   supportingconversations: [
     {
       name: "Work Out What They Need",
-      guideFront: "They have shared something. What do they need from you?",
-      guideBack: "One way it could sound.",
+      guideFront: "Find out what kind of help they want when...",
+      guideBack: "A check on what would help",
       description: "Before you respond, work out what kind of response this is. People bring you things for different reasons — to be heard, to be reassured, to be helped, or occasionally to be told the truth — and the same words of yours will land completely differently depending on which one it is.\n\nIt works because almost every failed supportive conversation is a mismatch rather than a lack of care. Advice offered to someone who wanted acknowledgement feels dismissive. Sympathy offered to someone who wanted a solution feels useless. Neither of you did anything unkind; you just answered a different question.\n\nThe signals are readable, and when they are not, you are allowed to ask. Asking is not a failure of intuition — it is faster and more accurate than guessing.\n\nTypical phrases: \"Do you want thoughts, or do you just want to say it out loud?\", \"Are you after advice or sympathy?\", \"What would help right now?\", \"Do you want me to be useful or just listen?\"\n\nFour ways to work it out:\n\n1. Ask directly — the most reliable, and underused. \"Do you want ideas, or do you just want to vent?\"\n\n2. Listen to the verb — \"I don't know what to do\" asks for help; \"I can't believe he said that\" asks for acknowledgement.\n\n3. Notice whether they have stopped — someone still in full flow wants to be heard, not interrupted with a solution.\n\n4. Default to acknowledgement, then check — the safe order when you genuinely cannot tell. Say something that recognises it, then ask.\n\nMindset: answer the question they asked, not the one you find easiest to answer.",
       inputs: [
         { q: "A friend has been describing a bad week for several minutes without pausing.", a: "\"That sounds relentless. Do you want ideas or do you just want to get it out?\"", bundle: 'free' },
@@ -1639,8 +1639,8 @@ const collections = {
     },
     {
       name: "Just Listen",
-      guideFront: "They have shared something. What do they need from you?",
-      guideBack: "One way it could sound.",
+      guideFront: "Let them talk when...",
+      guideBack: "A small sign to go on, or silence",
       description: "Say almost nothing and let them talk. A \"mm\", a nod, a \"go on\", and otherwise silence.\n\nIt works because a great deal of what people bring you is not a problem to be handled — it is something they need to say out loud, in front of someone, in order to know what they think about it. Any response you offer, however good, interrupts that.\n\nThis is the hardest of the five, because silence feels like doing nothing while every instinct says a good friend would say something helpful. In practice, the person who says least in a supportive conversation is often the one who helped most.\n\nTypical phrases: \"Mm.\", \"Go on.\", \"Right.\", \"And then what happened?\" — or nothing at all.\n\nFour ways to just listen:\n\n1. The minimal encourager — enough to show you are there. \"Mm. Right.\"\n\n2. The invitation to continue — moves them along without steering. \"Go on.\"\n\n3. The silence you do not fill — the hardest and most valuable. Say nothing. Wait.\n\n4. The question that only asks for more — no direction, no solution. \"And then what?\"\n\nMindset: your discomfort with the silence is not a sign that they need you to speak. Wait longer than feels natural.",
       inputs: [
         { q: "A friend pauses mid-story and looks at the floor.", a: "(say nothing — wait)", bundle: 'free' },
@@ -1655,8 +1655,8 @@ const collections = {
     },
     {
       name: "Respond With Validation",
-      guideFront: "They have shared something. What do they need from you?",
-      guideBack: "One way it could sound.",
+      guideFront: "Say the feeling makes sense when...",
+      guideBack: "Why the feeling fits",
       description: "Say that the feeling makes sense. \"Of course you're upset — anyone would be.\" \"That would have thrown me completely.\"\n\nIt works because most people are quietly unsure whether their reaction is reasonable, and carry that uncertainty on top of the original problem. Being told the feeling fits the situation removes the second layer, which is often the heavier one.\n\nIt is the correct default when you cannot tell what someone needs. Nobody has ever been made worse by having their reaction taken seriously, whereas advice at the wrong moment does active damage.\n\nTypical phrases: \"Of course you feel like that.\", \"That makes complete sense.\", \"Anyone would be upset by that.\", \"That would have thrown me too.\"\n\nFour ways to validate:\n\n1. Say the feeling fits — the standard. \"Of course you're annoyed.\"\n\n2. Say anyone would — takes it off them personally. \"Anyone would have found that hard.\"\n\n3. Name why it makes sense — the stronger version. \"You'd been preparing for a month. Of course it stings.\"\n\n4. Say it would have got you too — honest and levelling. \"I'd have been furious, for what it's worth.\"\n\nMindset: validating a feeling is not agreeing with a conclusion. You can think they are wrong about the facts and right to feel what they feel.",
       inputs: [
         { q: "A friend is upset about being left out of something.", a: "\"Of course that stings. It would sting anyone.\"", bundle: 'free' },
@@ -1671,8 +1671,8 @@ const collections = {
     },
     {
       name: "Respond With Encouragement",
-      guideFront: "They have shared something. What do they need from you?",
-      guideBack: "One way it could sound.",
+      guideFront: "Point to what they can handle when...",
+      guideBack: "Evidence they can manage it",
       description: "Say what they did well, or that you think they can handle what is coming. \"You dealt with that far better than you're giving yourself credit for.\" \"You'll be fine tomorrow — you always are once you start.\"\n\nIt works when the problem is confidence rather than circumstance. Someone who knows what to do and doubts they can do it does not need a plan; they need a reason to believe the plan will survive contact with them.\n\nThe version that works is specific and true. \"You'll be fine\" is a reflex and everyone knows it. \"You did this exact thing in March and it went well\" is evidence, and evidence is much harder to dismiss.\n\nTypical phrases: \"You handled that better than you think.\", \"You've done harder than this.\", \"It's great that you tried.\", \"You're further along than you were.\"\n\nFour ways to encourage:\n\n1. Point at evidence — the strongest. \"You did the same thing in March and it went fine.\"\n\n2. Praise the attempt regardless of outcome — for things that did not work. \"It didn't come off, and I'm still glad you went for it.\"\n\n3. Show them the progress — where they were, where they are. \"Six months ago you wouldn't have gone at all.\"\n\n4. Express confidence, specifically — not a reflex. \"You'll manage the questions. You always do — it's the beginning you dread.\"\n\nMindset: only say it if it is true. Empty reassurance is heard as not listening, and it makes the next true thing you say worth less.",
       inputs: [
         { q: "A friend is nervous before something they have done before.", a: "\"You did this in March and it went fine. Same room, same people.\"", bundle: 'free' },
@@ -1687,8 +1687,8 @@ const collections = {
     },
     {
       name: "Respond With a Suggestion",
-      guideFront: "They have shared something. What do they need from you?",
-      guideBack: "One way it could sound.",
+      guideFront: "Offer one idea when...",
+      guideBack: "An option, offered lightly",
       description: "Offer an idea about what they could do. \"Could you ask for the deadline to move?\" \"What if you spoke to her before the meeting rather than in it?\"\n\nIt works when someone genuinely does not know what to do and wants help thinking. Used at the right moment it is enormously useful, and withholding it out of caution can be its own kind of unhelpfulness.\n\nTwo conditions make it land. It should come **after** acknowledgement, never instead of it — the same suggestion is heard completely differently before and after the feeling has been recognised. And it works better as a question than an instruction, because it leaves them in charge of their own situation.\n\nTypical phrases: \"Have you thought about…?\", \"What if you…?\", \"One thing that might work is…\", \"Would it help to…?\"\n\nFour ways to suggest:\n\n1. As a question — the default. \"What if you asked for another week?\"\n\n2. Offer it and let go — say it once, do not campaign. \"One option is to speak to her first. Might not suit.\"\n\n3. Ask what they have already tried — respects that they have thought about it. \"What have you tried so far?\"\n\n4. Offer to do something rather than to advise — often the most useful. \"Do you want me to look at it with you?\"\n\nMindset: acknowledge first, suggest second, and say it once. A suggestion repeated is a criticism.",
       inputs: [
         { q: "A colleague does not know how to handle a difficult email.", a: "\"What if you slept on it and sent it in the morning?\"", bundle: 'free' },
@@ -3373,8 +3373,8 @@ const collections = {
   emotionlabellingandregulation: [
     {
       name: "Name the Situation",
-      guideFront: "Something has stirred — put this part of it into words.",
-      guideBack: "One way to say it.",
+      guideFront: "Say plainly what happened when...",
+      guideBack: "The context, before any feeling",
       description: "Start by saying plainly what happened — the context, in a sentence or two, before any feeling word arrives.\n\nIt sounds like the boring step, and it is the one that decides how the rest lands. A feeling with no situation attached asks the other person to guess; a situation stated plainly gives them somewhere to stand.\n\nTypical shapes:\n\n• \"When you cancelled on Friday…\"\n• \"In the meeting this morning, when the plan changed…\"\n• \"This is the third time it's happened…\"\n\nThree ways to frame it:\n1. The bare facts — \"You said you'd call and then didn't.\"\n2. The moment it turned — \"It was fine until the part where the group split up.\"\n3. The pattern — \"This is the third time this month.\"\n\nKeep it describable rather than arguable. \"You cancelled twice\" is a fact; \"you clearly don't care\" is a conclusion, and the conversation will be about that instead.\n\nMindset: describing is not accusing. The plainer the description, the less there is to argue with, and the sooner you get to the part that actually matters.",
       inputs: [
         { q: "A friend has cancelled on you for the third time and you want to say something.", a: "\"So this is the third Friday in a row we've moved.\"", bundle: 'free' },
@@ -3389,8 +3389,8 @@ const collections = {
     },
     {
       name: "Label the Emotion",
-      guideFront: "Something has stirred — put this part of it into words.",
-      guideBack: "One way to say it.",
+      guideFront: "Name and explain the feeling when...",
+      guideBack: "A feeling word, as accurate as you can",
       description: "Choose the word that actually matches what you are feeling — not the nearest polite word, and not a rating out of ten.\n\nNaming a feeling accurately does something odd and useful: it gives you a little distance from it. An unnamed feeling runs the show; a named one becomes something you are having rather than something you are.\n\nTypical shapes:\n\n• \"I felt really frustrated because…\"\n• \"Honestly, I'm more hurt than annoyed.\"\n• \"I'm feeling a bit anxious about this.\"\n\nThree levels of precision:\n1. The plain word — \"I was frustrated.\"\n2. The correction — \"More disappointed than angry, actually.\"\n3. The honest blank — \"I don't have a word for it yet. Something in the region of let down.\"\n\nReach past the default words. Angry, fine and stressed cover almost everything and explain almost nothing — disappointed, embarrassed, left out and relieved do far more work.\n\nMindset: label it honestly and without judging yourself for having it. There is no wrong feeling to have, only inaccurate words for it.",
       inputs: [
         { q: "A friend cancelled again. Your chest tightens and you go quiet.", a: "\"I think I'm more hurt than annoyed about it, honestly.\"", bundle: 'free' },
@@ -3405,8 +3405,8 @@ const collections = {
     },
     {
       name: "Describe the Signals",
-      guideFront: "Something has stirred — put this part of it into words.",
-      guideBack: "One way to say it.",
+      guideFront: "Say what the feeling did to you when...",
+      guideBack: "What happened in your body or head",
       description: "Say what the feeling actually did to you — how your body reacted, where your thoughts went, what you found yourself doing.\n\nThe signals are the evidence. A bare feeling word can be waved away; a heart that was hammering and hands that were shaking cannot. It also makes you far easier to believe, because nobody invents these details.\n\nTypical shapes:\n\n• \"I noticed my heart racing and my hands getting sweaty.\"\n• \"My head just went completely blank.\"\n• \"I went really quiet, which is usually a sign with me.\"\n\nThree kinds of signal to look for:\n1. Physical — \"My chest went tight and I couldn't finish the sentence.\"\n2. Mental — \"I kept replaying it for the rest of the afternoon.\"\n3. Behavioural — \"I went quiet, and then I was short with everyone.\"\n\nThe signals often arrive before the word does. If you cannot name the feeling yet, describing the body is a way in — the word usually turns up once you have described what happened.\n\nMindset: your body notices before you do. Treating the signals as information rather than as something to hide is most of this skill.",
       inputs: [
         { q: "You want to explain how the cancelled plan actually landed.", a: "\"I read the message and just felt my stomach drop.\"", bundle: 'free' },
@@ -3420,10 +3420,10 @@ const collections = {
       ]
     },
     {
-      name: "Regulate Out Loud",
-      guideFront: "Something has stirred — put this part of it into words.",
-      guideBack: "One way to say it.",
-      description: "Do the thing that steadies you — and say that you are doing it, so the other person knows what is happening instead of guessing.\n\nSilently gathering yourself looks identical to sulking. One sentence turns the same pause into something everyone can work with, and it usually buys you the time you actually need.\n\nTypical shapes:\n\n• \"I need a couple of minutes before I answer that.\"\n• \"Let me take a breath, I want to get this right.\"\n• \"Can we come back to it after lunch?\"\n\nThree ways to steady yourself:\n1. Ask for time — \"Give me ten minutes and I'll be much more useful.\"\n2. Slow the body — \"Let me get some water and sit down a second.\"\n3. Shift the view — \"In a week this will be a small thing. It doesn't feel like it right now.\"\n\nThe point is not to stop feeling it. Regulating means keeping enough of yourself to choose what you say next, and the feeling can carry on in the background while you do.\n\nMindset: saying it out loud is what separates regulating from hiding. You are not pretending to be calm, you are telling them you are working on it.",
+      name: "Announce the Pause",
+      guideFront: "Say you need a moment, and take it, when...",
+      guideBack: "The moment you're taking, said out loud",
+      description: "Say out loud that you are taking a moment — and then take it, so the other person knows what is happening instead of guessing.\n\nSilently gathering yourself looks identical to sulking. One sentence turns the same pause into something everyone can work with, and it usually buys you the time you actually need.\n\nTypical shapes:\n\n• \"I need a couple of minutes before I answer that.\"\n• \"Let me take a breath, I want to get this right.\"\n• \"Can we come back to it after lunch?\"\n\nThree ways to take it:\n1. Ask for time — \"Give me ten minutes and I'll be much more useful.\"\n2. Slow the body — \"Let me get some water and sit down a second.\"\n3. Name the return — \"Can I come back to you tomorrow, when I've sat with it?\"\n\nThe point is not to stop feeling it. The pause is for keeping enough of yourself to choose what you say next, and the feeling can carry on in the background while you do.\n\nMindset: saying it out loud is what separates a pause from a sulk. You are not pretending to be calm, you are telling them you are working on it.",
       inputs: [
         { q: "You are getting heated and can feel a sharp reply forming.", a: "\"Let me take a breath — I don't want to say this badly.\"", bundle: 'free' },
         { q: "The feedback has landed hard and you want time.", a: "\"I need to sit with this for a bit. Can I come back to you tomorrow?\"", bundle: 'free' },
@@ -3432,13 +3432,13 @@ const collections = {
         { q: "The conversation is escalating faster than you can think.", a: "\"Can we pause? I want to answer properly rather than quickly.\"", bundle: 'free' },
         { q: "You are about to send a message you might regret.", a: "\"I'm going to leave this until the morning before I reply.\"", bundle: 'pro' },
         { q: "A meeting is going badly and you feel yourself tightening.", a: "\"Give me a second — let me get some water.\"", bundle: 'pro' },
-        { q: "You are spiralling about something small.", a: "\"In a week this'll be nothing. I know that, it just doesn't feel like it yet.\"", bundle: 'pro' },
+        { q: "You are spiralling about something small.", a: "\"Right, I'm going in circles. Give me till after lunch and I'll have a sensible thought about it.\"", bundle: 'pro' },
       ]
     },
     {
       name: "Label Their Emotion",
-      guideFront: "Something has stirred — put this part of it into words.",
-      guideBack: "One way to say it.",
+      guideFront: "Say what it sounds like they felt when...",
+      guideBack: "A tentative name for what they felt",
       description: "Offer the other person a word for what they seem to be feeling — tentatively, and with room for them to correct you.\n\nMost people find their own feelings much easier to recognise than to produce from scratch. Handing over a word to try on is one of the most useful things a listener can do, and it is why \"it sounds like…\" opens more than any question.\n\nTypical shapes:\n\n• \"It sounds like you felt disappointed.\"\n• \"That sounds frustrating — was it?\"\n• \"You seem more upset about it than you're letting on.\"\n\nThree ways to offer the word:\n1. Tentative label — \"It sounds like that was pretty humiliating.\"\n2. Label plus question — \"It sounds like you felt left out. What do you think triggered it?\"\n3. Checking rather than telling — \"I might be reading this wrong — were you hurt by it?\"\n\nBeing slightly wrong is fine, and often useful. \"No, not angry — embarrassed\" is a person getting closer to their own feeling, which is exactly what you were after.\n\nMindset: offer the word, do not impose it. The moment it becomes a diagnosis rather than a guess, they will spend the conversation defending themselves instead of thinking.",
       inputs: [
         { q: "A friend describes being passed over and goes quiet at the end.", a: "\"It sounds like that was disappointing. Was it?\"", bundle: 'free' },
@@ -3455,8 +3455,8 @@ const collections = {
   conflictemotions: [
     {
       name: "Say What Happened",
-      guideFront: "Use this strategy when...",
-      guideBack: "One way it could sound",
+      guideFront: "Describe only what occurred when...",
+      guideBack: "The event, as a camera would see it",
       description: "Describe the event plainly, with no interpretation attached. \"When the door was left unlocked last night…\" — not \"when you were careless again\".\n\nIt works because the facts are the one part nobody can argue with. The moment an interpretation goes in, the conversation becomes about whether that interpretation is fair, and the feeling you were about to express never gets heard.\n\nThe test is the same one that works everywhere: could a camera have recorded it? A camera can record an unlocked door, a late arrival, a message that came at eleven. It cannot record carelessness, thoughtlessness or not caring.\n\nTypical phrases: \"When you…\", \"Last night, when…\", \"The message came at eleven, and…\", \"When the dishes were still there this morning…\"\n\nFour ways to keep it factual:\n\n1. The single event — one occasion, dated. \"When you got in at half seven on Tuesday.\"\n\n2. What you observed — only what you saw or heard. \"The door was unlocked when I came down.\"\n\n3. The pattern with instances — for repeated things, still countable. \"It's been three times this month.\"\n\n4. Cut the adverb — the interpretation usually hides in one word. \"You said it\" rather than \"you snapped it\".\n\nMindset: no \"always\", no \"never\", no character words. Those turn an account into a charge.",
       inputs: [
         { q: "Your partner left the front door unlocked.", a: "\"When I came down this morning the front door was unlocked.\"", bundle: 'free' },
@@ -3471,8 +3471,8 @@ const collections = {
     },
     {
       name: "Name Your Feeling",
-      guideFront: "Use this strategy when...",
-      guideBack: "One way it could sound",
+      guideFront: "Express how you felt when...",
+      guideBack: "A feeling, owned as yours",
       description: "Say what you felt, in one accurate word, owned as yours. \"I felt frustrated.\" \"I was worried.\"\n\nIt works because a named feeling is information the other person did not have. Most conflicts run on guesses about each other's state, and the guesses are usually wrong — people read anger where there was fear, or indifference where there was hurt.\n\nTwo things make it land. Choose a word that is actually accurate rather than the nearest big one, and say \"I felt\" rather than \"you made me feel\" — the second is a description of them, and it will be argued with.\n\nTypical phrases: \"I felt…\", \"I was…\", \"What I felt was…\", \"That left me feeling…\"\n\nFour ways to name it:\n\n1. The plain feeling word — the standard. \"I felt annoyed.\"\n\n2. The more accurate word — often smaller than the first one you reach for. \"Not angry, actually. Disappointed.\"\n\n3. Two feelings at once — common and honest. \"I was worried, and a bit annoyed with myself for worrying.\"\n\n4. The feeling under the obvious one — worth reaching for. \"It came out as irritation. Underneath it I was scared.\"\n\nMindset: \"I felt\" and not \"you made me feel\". One is something you know; the other is a claim about them.",
       inputs: [
         { q: "Your partner left the door unlocked and you found it.", a: "\"I felt uneasy about it all morning.\"", bundle: 'free' },
@@ -3487,8 +3487,8 @@ const collections = {
     },
     {
       name: "Say What You Need",
-      guideFront: "Use this strategy when...",
-      guideBack: "One way it could sound",
+      guideFront: "Name what the feeling points to when...",
+      guideBack: "The need underneath",
       description: "Name the thing the feeling points at. Respect, safety, cooperation, trust, privacy, being kept in the loop. \"…because I need to know the house is locked before I sleep.\"\n\nIt works because a feeling on its own is a report, and a need is something that can be met. It also moves the conversation from what went wrong to what would be right, which is the only direction anything gets solved in.\n\nThis is the piece people leave out, and its absence is why so many conflicts repeat. Both people know there was an argument; neither knows what was actually being asked for.\n\nTypical phrases: \"…because I need…\", \"What matters to me is…\", \"The thing I care about here is…\", \"It's about…\"\n\nFour kinds of need:\n\n1. Safety — the most direct. \"I need to feel the house is secure.\"\n\n2. Respect or consideration — the commonest in small conflicts. \"I need my things looked after.\"\n\n3. Cooperation or reliability — for shared work. \"I need to be able to plan around what we agreed.\"\n\n4. Being included or informed — quiet but frequent. \"I need to know before other people do.\"\n\nMindset: name the need, not the person's fault. \"I need to be kept in the loop\" and \"you shut me out\" point at the same thing and go to completely different places.",
       inputs: [
         { q: "You felt uneasy about the unlocked door.", a: "\"…because I need to know the house is locked before I go to sleep.\"", bundle: 'free' },
@@ -3503,8 +3503,8 @@ const collections = {
     },
     {
       name: "Make a Request",
-      guideFront: "Use this strategy when...",
-      guideBack: "One way it could sound",
+      guideFront: "Ask for something doable when...",
+      guideBack: "A request they could say yes to",
       description: "Say what you would like to happen. \"Could you check the door before you come up?\"\n\nIt works because a feeling and a need together still leave the other person guessing about what to do. Many people, having heard that they upset someone, respond with an apology and no change — not out of indifference, but because nobody said what the change was.\n\nThe request should be **specific, small and doable**. \"Be more considerate\" is not a request; \"text me if you're going to be more than half an hour late\" is something a person can actually do tomorrow.\n\nTypical phrases: \"Could you…?\", \"What I'd like is…\", \"Would you be able to…?\", \"Next time, could we…?\"\n\nFour ways to make it:\n\n1. One concrete action — the standard. \"Could you check it before you come up?\"\n\n2. A request about next time — puts it in the future, where nobody has failed. \"Next time, could you tell me before the meeting rather than in it?\"\n\n3. Ask what would work for them — better when it involves them changing something. \"What would make that easy for you to do?\"\n\n4. A request rather than a rule — leaves them free to answer. \"That's what I'd like. Is that workable?\"\n\nMindset: a request is something they can say no to. If it cannot be declined, it is a demand, and it will be treated as one.",
       inputs: [
         { q: "You have said the door being unlocked left you uneasy.", a: "\"Could you check it before you come up? That's all I'd need.\"", bundle: 'free' },
@@ -3519,8 +3519,8 @@ const collections = {
     },
     {
       name: "Ask What They Felt",
-      guideFront: "Use this strategy when...",
-      guideBack: "One way it could sound",
+      guideFront: "Invite their side when...",
+      guideBack: "An invitation to tell it their way",
       description: "Ask for their side. \"What was it like from where you were standing?\"\n\nIt works because a conflict has two people in it, and a conversation where only one person's experience is described is not a conversation. It is a well-constructed statement of grievance, and the other person will spend it waiting for their turn rather than listening.\n\nAsking also very often changes what you thought had happened. The lateness had a reason, the interruption was not deliberate, the message was sent and did not arrive. None of that removes your feeling — and all of it changes what to do next.\n\nTypical phrases: \"What was going on for you?\", \"How did that look from your side?\", \"What did you make of it?\", \"Was there something I'm missing?\"\n\nFour ways to ask:\n\n1. Ask for their experience — the standard. \"What was it like from your side?\"\n\n2. Ask what was going on — invites the reason rather than a defence. \"Was something else happening that day?\"\n\n3. Ask how your part landed — brave and usually productive. \"How did I come across in that?\"\n\n4. Ask and then be quiet — the silence is the question.\n\nMindset: ask before you have decided what they will say. A question asked with the answer already prepared is not a question.",
       inputs: [
         { q: "You have said your piece and it is their turn.", a: "\"What was it like from where you were?\"", bundle: 'free' },
@@ -9872,12 +9872,12 @@ const collectionsModeData = {
       guideBack: "One way it could sound",
       description: "The first choice: is it the emotion that needs acknowledging, or their worry about having had it?\n\nThese two look similar and answer different questions. Reflecting says \"I can see what you felt\". Normalising says \"and there is nothing wrong with feeling it\". People who are already comfortable with their feelings only need the first; people apologising for theirs need the second.\n\nThe two options:\n1. Reflect the Feeling — they have said what they feel, plainly. \"That sounds like it properly got under your skin.\"\n2. Normalise the Reaction — they are worried they are overdoing it. \"You're not overreacting. Anyone would have.\"\n\nThe tell is in their wording. \"I was furious\" wants reflecting. \"I'm probably overreacting, but I was furious\" wants normalising, because they have asked you a question.\n\nMindset: when somebody pre-apologises for a feeling, answer the apology first. Reflecting a feeling they are ashamed of leaves the shame exactly where it was.",
       inputs: [
-        { q: "They say: \"I was so annoyed I couldn't concentrate afterwards.\"", a: "\"That sounds like it properly got under your skin.\" [Reflect the Feeling]", bundle: 'pro' },
-        { q: "They say: \"I'm probably overreacting, but it really got to me.\"", a: "\"You're not. Anyone would have found that annoying.\" [Normalise the Reaction]", bundle: 'pro' },
-        { q: "They say: \"I felt completely stupid in front of everyone.\"", a: "\"That's a horrible feeling, and with an audience it's twice as bad.\" [Reflect the Feeling]", bundle: 'pro' },
-        { q: "They say: \"I feel a bit pathetic being this nervous.\"", a: "\"It's a big thing. It'd be strange not to be nervous.\" [Normalise the Reaction]", bundle: 'pro' },
-        { q: "They say: \"I keep going over the conversation in my head.\"", a: "\"It sounds like it's still sitting with you.\" [Reflect the Feeling]", bundle: 'pro' },
-        { q: "They say: \"I should be over it by now.\"", a: "\"There's no timetable for that. Most people take longer than they expect.\" [Normalise the Reaction]", bundle: 'pro' },
+        { q: "They say: \"I was so annoyed I couldn't concentrate afterwards.\"", a: "\"That sounds like it properly got under your skin.\" [Reflect the Feeling]", guideBack: "Their feeling, named as fitting", bundle: 'pro' },
+        { q: "They say: \"I'm probably overreacting, but it really got to me.\"", a: "\"You're not. Anyone would have found that annoying.\" [Normalise the Reaction]", guideBack: "Their reaction, called ordinary", bundle: 'pro' },
+        { q: "They say: \"I felt completely stupid in front of everyone.\"", a: "\"That's a horrible feeling, and with an audience it's twice as bad.\" [Reflect the Feeling]", guideBack: "Their feeling, named as fitting", bundle: 'pro' },
+        { q: "They say: \"I feel a bit pathetic being this nervous.\"", a: "\"It's a big thing. It'd be strange not to be nervous.\" [Normalise the Reaction]", guideBack: "Their reaction, called ordinary", bundle: 'pro' },
+        { q: "They say: \"I keep going over the conversation in my head.\"", a: "\"It sounds like it's still sitting with you.\" [Reflect the Feeling]", guideBack: "Their feeling, named as fitting", bundle: 'pro' },
+        { q: "They say: \"I should be over it by now.\"", a: "\"There's no timetable for that. Most people take longer than they expect.\" [Normalise the Reaction]", guideBack: "Their reaction, called ordinary", bundle: 'pro' },
       ]
     },
     {
@@ -9886,12 +9886,12 @@ const collectionsModeData = {
       guideBack: "One way it could sound",
       description: "The second choice: are they upset, or are they defending a decision?\n\nThis is the one people get wrong most often. Somebody explaining why they made a choice does not want their feelings validated — it lands as being handled. They want to hear that their thinking was sound.\n\nThe two options:\n1. Reflect the Feeling — the emotion is what is on the table. \"That must have been genuinely upsetting.\"\n2. Acknowledge the Perspective — a choice or a view is what is on the table. \"I can see why you approached it that way.\"\n\nListen for what the sentence is doing. \"I felt awful about it\" is a feeling. \"I only did it because they needed an answer\" is a case being made, and a case wants a verdict on the reasoning.\n\nMindset: validating a feeling when somebody is defending a decision reads as changing the subject. Answer the thing they actually put in front of you.",
       inputs: [
-        { q: "They say: \"I said yes because they needed an answer that day.\"", a: "\"That makes sense. Waiting would have cost more.\" [Acknowledge the Perspective]", bundle: 'pro' },
-        { q: "They say: \"I was really looking forward to it and now it's off.\"", a: "\"That's genuinely disappointing. You'd built the week round it.\" [Reflect the Feeling]", bundle: 'pro' },
-        { q: "They say: \"I chose the safe option and I'm second-guessing it.\"", a: "\"You had a lot riding on it. Going safe was reasonable.\" [Acknowledge the Perspective]", bundle: 'pro' },
-        { q: "They say: \"I've been dreading this all week.\"", a: "\"A week of that in your head is exhausting.\" [Reflect the Feeling]", bundle: 'pro' },
-        { q: "They say: \"Everyone keeps telling me I handled it badly.\"", a: "\"You were trying to stop it blowing up. That's a legitimate aim.\" [Acknowledge the Perspective]", bundle: 'pro' },
-        { q: "They say: \"I felt like nobody was on my side in there.\"", a: "\"Being the only one holding a position is lonely.\" [Reflect the Feeling]", bundle: 'pro' },
+        { q: "They say: \"I said yes because they needed an answer that day.\"", a: "\"That makes sense. Waiting would have cost more.\" [Acknowledge the Perspective]", guideBack: "Why their choice made sense", bundle: 'pro' },
+        { q: "They say: \"I was really looking forward to it and now it's off.\"", a: "\"That's genuinely disappointing. You'd built the week round it.\" [Reflect the Feeling]", guideBack: "Their feeling, named as fitting", bundle: 'pro' },
+        { q: "They say: \"I chose the safe option and I'm second-guessing it.\"", a: "\"You had a lot riding on it. Going safe was reasonable.\" [Acknowledge the Perspective]", guideBack: "Why their choice made sense", bundle: 'pro' },
+        { q: "They say: \"I've been dreading this all week.\"", a: "\"A week of that in your head is exhausting.\" [Reflect the Feeling]", guideBack: "Their feeling, named as fitting", bundle: 'pro' },
+        { q: "They say: \"Everyone keeps telling me I handled it badly.\"", a: "\"You were trying to stop it blowing up. That's a legitimate aim.\" [Acknowledge the Perspective]", guideBack: "Why their choice made sense", bundle: 'pro' },
+        { q: "They say: \"I felt like nobody was on my side in there.\"", a: "\"Being the only one holding a position is lonely.\" [Reflect the Feeling]", guideBack: "Their feeling, named as fitting", bundle: 'pro' },
       ]
     },
     {
@@ -9900,14 +9900,14 @@ const collectionsModeData = {
       guideBack: "One way it could sound",
       description: "The full choice between the three things you can validate.\n\nThe three moves are not variations of one another — they validate different objects. Getting the right one is mostly a matter of noticing which of the three they have put in front of you.\n\nThe three, with the cue for each:\n1. Reflect the Feeling — they named an emotion. \"That sounds frustrating, and fairly so.\"\n2. Normalise the Reaction — they are worried the emotion is too big. \"Anyone would have felt that.\"\n3. Acknowledge the Perspective — they are defending a choice or a view. \"I see why you did it that way.\"\n\nWhen more than one fits, reflecting is the safest opening and acknowledging the perspective is the one that works when you disagree.\n\nMindset: validation is about acknowledging, not agreeing. All three of these work perfectly well on somebody you think is mistaken.",
       inputs: [
-        { q: "They say: \"I burst into tears, which was embarrassing.\"", a: "\"After a day like that? Completely understandable.\" [Normalise the Reaction]", bundle: 'pro' },
-        { q: "They say: \"I decided not to tell anyone, and people think that was wrong.\"", a: "\"I can see why you didn't. You had no idea how it'd be taken.\" [Acknowledge the Perspective]", bundle: 'pro' },
-        { q: "They say: \"I don't even know why it upset me so much.\"", a: "\"It clearly landed hard. That's reason enough for it to matter.\" [Reflect the Feeling]", bundle: 'pro' },
-        { q: "They say: \"Everyone else seemed fine about the change.\"", a: "\"I doubt that. It came out of nowhere.\" [Normalise the Reaction]", bundle: 'pro' },
-        { q: "They defend a decision you privately think was wrong.", a: "\"I can see how you got there. With what you knew then, it follows.\" [Acknowledge the Perspective]", bundle: 'pro' },
-        { q: "They say: \"It's probably silly to be this bothered.\"", a: "\"It isn't silly. Something about it hit a nerve.\" [Reflect the Feeling]", bundle: 'pro' },
-        { q: "They say: \"My family think I'm making a fuss.\"", a: "\"I'd have made a fuss too. It's a reasonable thing to mind.\" [Normalise the Reaction]", bundle: 'pro' },
-        { q: "They say: \"I put the family first and the job suffered.\"", a: "\"That's a fair thing to put first.\" [Acknowledge the Perspective]", bundle: 'pro' },
+        { q: "They say: \"I burst into tears, which was embarrassing.\"", a: "\"After a day like that? Completely understandable.\" [Normalise the Reaction]", guideBack: "Their reaction, called ordinary", bundle: 'pro' },
+        { q: "They say: \"I decided not to tell anyone, and people think that was wrong.\"", a: "\"I can see why you didn't. You had no idea how it'd be taken.\" [Acknowledge the Perspective]", guideBack: "Why their choice made sense", bundle: 'pro' },
+        { q: "They say: \"I don't even know why it upset me so much.\"", a: "\"It clearly landed hard. That's reason enough for it to matter.\" [Reflect the Feeling]", guideBack: "Their feeling, named as fitting", bundle: 'pro' },
+        { q: "They say: \"Everyone else seemed fine about the change.\"", a: "\"I doubt that. It came out of nowhere.\" [Normalise the Reaction]", guideBack: "Their reaction, called ordinary", bundle: 'pro' },
+        { q: "They defend a decision you privately think was wrong.", a: "\"I can see how you got there. With what you knew then, it follows.\" [Acknowledge the Perspective]", guideBack: "Why their choice made sense", bundle: 'pro' },
+        { q: "They say: \"It's probably silly to be this bothered.\"", a: "\"It isn't silly. Something about it hit a nerve.\" [Reflect the Feeling]", guideBack: "Their feeling, named as fitting", bundle: 'pro' },
+        { q: "They say: \"My family think I'm making a fuss.\"", a: "\"I'd have made a fuss too. It's a reasonable thing to mind.\" [Normalise the Reaction]", guideBack: "Their reaction, called ordinary", bundle: 'pro' },
+        { q: "They say: \"I put the family first and the job suffered.\"", a: "\"That's a fair thing to put first.\" [Acknowledge the Perspective]", guideBack: "Why their choice made sense", bundle: 'pro' },
       ]
     },
   ],
@@ -9918,13 +9918,13 @@ const collectionsModeData = {
       guideBack: "One way it could sound",
       description: "Validation and listening on one side; encouragement and suggestion on the other. The first pair meets someone where they are. The second pair moves them somewhere.\n\nThe mistake is almost always going forward too early. Someone who has not yet felt heard experiences encouragement as dismissal and a suggestion as impatience, however kindly either is meant.\n\nThe order that works nearly always: meet them first, move second. And often the moving is not needed at all.\n\nMindset: meeting them costs you nothing and is never wrong. Moving them too early undoes it.",
       inputs: [
-        { q: "A friend has just started describing something upsetting.", a: "\"That sounds horrible. What happened?\" [Just Listen]", bundle: 'pro' },
-        { q: "They have finished and are waiting for you to say something.", a: "\"Of course you're upset. Anyone would be.\" [Respond With Validation]", bundle: 'pro' },
-        { q: "They say, \"So what do you reckon I should do?\"", a: "\"What if you spoke to her before the meeting rather than in it?\" [Respond With a Suggestion]", bundle: 'pro' },
-        { q: "They know exactly what to do and doubt they can do it.", a: "\"You did this same thing in March. It went fine.\" [Respond With Encouragement]", bundle: 'pro' },
-        { q: "They are mid-flow and you have a solution ready.", a: "\"Mm. Go on.\" [Just Listen]", bundle: 'pro' },
-        { q: "They are berating themselves for a reasonable reaction.", a: "\"That's not an overreaction. It's the third time it's happened.\" [Respond With Validation]", bundle: 'pro' },
-        { q: "They are stuck and have clearly been heard already.", a: "\"Would it help to just do the one thing you're dreading and leave the rest?\" [Respond With a Suggestion]", bundle: 'pro' },
+        { q: "A friend has just started describing something upsetting.", a: "\"That sounds horrible. What happened?\" [Just Listen]", guideBack: "A small sign to go on, or silence", bundle: 'pro' },
+        { q: "They have finished and are waiting for you to say something.", a: "\"Of course you're upset. Anyone would be.\" [Respond With Validation]", guideBack: "Why the feeling fits", bundle: 'pro' },
+        { q: "They say, \"So what do you reckon I should do?\"", a: "\"What if you spoke to her before the meeting rather than in it?\" [Respond With a Suggestion]", guideBack: "An option, offered lightly", bundle: 'pro' },
+        { q: "They know exactly what to do and doubt they can do it.", a: "\"You did this same thing in March. It went fine.\" [Respond With Encouragement]", guideBack: "Evidence they can manage it", bundle: 'pro' },
+        { q: "They are mid-flow and you have a solution ready.", a: "\"Mm. Go on.\" [Just Listen]", guideBack: "A small sign to go on, or silence", bundle: 'pro' },
+        { q: "They are berating themselves for a reasonable reaction.", a: "\"That's not an overreaction. It's the third time it's happened.\" [Respond With Validation]", guideBack: "Why the feeling fits", bundle: 'pro' },
+        { q: "They are stuck and have clearly been heard already.", a: "\"Would it help to just do the one thing you're dreading and leave the rest?\" [Respond With a Suggestion]", guideBack: "An option, offered lightly", bundle: 'pro' },
       ]
     },
     {
@@ -9933,13 +9933,13 @@ const collectionsModeData = {
       guideBack: "One way it could sound",
       description: "Working out what they need, and the option of asking outright. This is the diagnostic half of the pack, and it is where the value is.\n\nThe signals are more readable than people think. \"I don't know what to do\" asks for help. \"I can't believe he said that\" asks for acknowledgement. Someone still in full flow wants to be heard. Someone who has stopped and is looking at you wants a response.\n\nAnd when you cannot tell, asking is faster and more accurate than guessing. It is not a failure of intuition, and almost nobody minds being asked.\n\nMindset: read first, and ask when the reading is unclear.",
       inputs: [
-        { q: "They say, \"I honestly don't know what to do about it.\"", a: "\"Shall we look at the options, then?\" [Respond With a Suggestion]", bundle: 'pro' },
-        { q: "They say, \"I still can't believe he said that in front of everyone.\"", a: "\"That's a horrible thing to have happen in public.\" [Respond With Validation]", bundle: 'pro' },
-        { q: "They are still talking and have not paused for two minutes.", a: "\"Go on.\" [Just Listen]", bundle: 'pro' },
-        { q: "They have stopped and are looking at you expectantly.", a: "\"That's a lot. What would help right now?\" [Work Out What They Need]", bundle: 'pro' },
-        { q: "You genuinely cannot tell what they want.", a: "\"Do you want thoughts, or do you just want to say it out loud?\" [Work Out What They Need]", bundle: 'pro' },
-        { q: "They keep asking what they should do but reject every idea.", a: "\"I don't think you want fixing on this one. Am I right?\" [Work Out What They Need]", bundle: 'pro' },
-        { q: "They say they are dreading something they have done before.", a: "\"You've done this. It went fine last time.\" [Respond With Encouragement]", bundle: 'pro' },
+        { q: "They say, \"I honestly don't know what to do about it.\"", a: "\"Shall we look at the options, then?\" [Respond With a Suggestion]", guideBack: "An option, offered lightly", bundle: 'pro' },
+        { q: "They say, \"I still can't believe he said that in front of everyone.\"", a: "\"That's a horrible thing to have happen in public.\" [Respond With Validation]", guideBack: "Why the feeling fits", bundle: 'pro' },
+        { q: "They are still talking and have not paused for two minutes.", a: "\"Go on.\" [Just Listen]", guideBack: "A small sign to go on, or silence", bundle: 'pro' },
+        { q: "They have stopped and are looking at you expectantly.", a: "\"That's a lot. What would help right now?\" [Work Out What They Need]", guideBack: "A check on what would help", bundle: 'pro' },
+        { q: "You genuinely cannot tell what they want.", a: "\"Do you want thoughts, or do you just want to say it out loud?\" [Work Out What They Need]", guideBack: "A check on what would help", bundle: 'pro' },
+        { q: "They keep asking what they should do but reject every idea.", a: "\"I don't think you want fixing on this one. Am I right?\" [Work Out What They Need]", guideBack: "A check on what would help", bundle: 'pro' },
+        { q: "They say they are dreading something they have done before.", a: "\"You've done this. It went fine last time.\" [Respond With Encouragement]", guideBack: "Evidence they can manage it", bundle: 'pro' },
       ]
     },
     {
@@ -9948,13 +9948,13 @@ const collectionsModeData = {
       guideBack: "One way it could sound",
       description: "The full set. In any real supportive conversation you will move between several of these, and the skill is noticing when what they need has changed.\n\nA rough guide: while they are talking, listen. When they stop, validate. If the problem is confidence, encourage. If the problem is not knowing what to do, suggest. If you cannot tell, ask.\n\nThe one thing that runs through all of it: whatever you choose, do it after they have felt heard rather than instead of it.\n\nMindset: one response, then check what it did. Their reaction tells you whether you read it right.",
       inputs: [
-        { q: "A colleague starts telling you about a difficult meeting.", a: "\"Mm. What happened?\" [Just Listen]", bundle: 'pro' },
-        { q: "They finish and look wrung out.", a: "\"That sounds like a horrible hour.\" [Respond With Validation]", bundle: 'pro' },
-        { q: "They say they should have handled it better.", a: "\"You stayed civil while being talked over. I'd not have managed that.\" [Respond With Encouragement]", bundle: 'pro' },
-        { q: "They ask what they should do about the next one.", a: "\"Would it help to send your points round beforehand?\" [Respond With a Suggestion]", bundle: 'pro' },
-        { q: "A friend is describing something and you cannot tell what they want.", a: "\"Do you want ideas or do you want to vent?\" [Work Out What They Need]", bundle: 'pro' },
-        { q: "They say they just needed to say it out loud.", a: "\"Then say it. I'm not going anywhere.\" [Just Listen]", bundle: 'pro' },
-        { q: "They are nervous about tomorrow and know exactly what to do.", a: "\"You'll be fine once you start. It's the waiting you hate.\" [Respond With Encouragement]", bundle: 'pro' },
+        { q: "A colleague starts telling you about a difficult meeting.", a: "\"Mm. What happened?\" [Just Listen]", guideBack: "A small sign to go on, or silence", bundle: 'pro' },
+        { q: "They finish and look wrung out.", a: "\"That sounds like a horrible hour.\" [Respond With Validation]", guideBack: "Why the feeling fits", bundle: 'pro' },
+        { q: "They say they should have handled it better.", a: "\"You stayed civil while being talked over. I'd not have managed that.\" [Respond With Encouragement]", guideBack: "Evidence they can manage it", bundle: 'pro' },
+        { q: "They ask what they should do about the next one.", a: "\"Would it help to send your points round beforehand?\" [Respond With a Suggestion]", guideBack: "An option, offered lightly", bundle: 'pro' },
+        { q: "A friend is describing something and you cannot tell what they want.", a: "\"Do you want ideas or do you want to vent?\" [Work Out What They Need]", guideBack: "A check on what would help", bundle: 'pro' },
+        { q: "They say they just needed to say it out loud.", a: "\"Then say it. I'm not going anywhere.\" [Just Listen]", guideBack: "A small sign to go on, or silence", bundle: 'pro' },
+        { q: "They are nervous about tomorrow and know exactly what to do.", a: "\"You'll be fine once you start. It's the waiting you hate.\" [Respond With Encouragement]", guideBack: "Evidence they can manage it", bundle: 'pro' },
       ]
     },
   ],
@@ -10848,12 +10848,12 @@ const collectionsModeData = {
       guideBack: "One way it could sound",
       description: "The choice between naming the feeling and describing what it did to you.\n\nWhat decides it is whether the word is available. Sometimes you know exactly what you felt; sometimes there is only a tight chest and a bad afternoon, and hunting for the perfect word just stalls you.\n\nThe two options:\n1. Label the Emotion — you have the word. \"I think I'm more hurt than annoyed.\"\n2. Describe the Signals — you do not. \"I read the message and my stomach just dropped.\"\n\nThey also work in sequence. Describing the signals is the reliable way to find a word you could not reach directly, so start with the body when the word will not come.\n\nMindset: no word is not the same as no feeling. Describing what happened to you is a complete contribution on its own.",
       inputs: [
-        { q: "A friend cancelled again and you know exactly how it landed.", a: "\"I think I'm more hurt than annoyed about it.\" [Label the Emotion]", bundle: 'pro' },
-        { q: "Something is clearly wrong but you cannot name it.", a: "\"I've been replaying it all afternoon, which usually means something.\" [Describe the Signals]", bundle: 'pro' },
-        { q: "You were left out and the word comes easily.", a: "\"I felt properly left out, which surprised me.\" [Label the Emotion]", bundle: 'pro' },
-        { q: "You feel awful and every word you try sounds wrong.", a: "\"My chest is tight and I can't settle to anything. That's all I've got.\" [Describe the Signals]", bundle: 'pro' },
-        { q: "You are stuck on a task and getting nowhere.", a: "\"I'm frustrated — not with you, with the whole thing.\" [Label the Emotion]", bundle: 'pro' },
-        { q: "You want to explain how the joke actually landed.", a: "\"I laughed along, and then thought about it for the rest of the day.\" [Describe the Signals]", bundle: 'pro' },
+        { q: "A friend cancelled again and you know exactly how it landed.", a: "\"I think I'm more hurt than annoyed about it.\" [Label the Emotion]", guideBack: "A feeling word, as accurate as you can", bundle: 'pro' },
+        { q: "Something is clearly wrong but you cannot name it.", a: "\"I've been replaying it all afternoon, which usually means something.\" [Describe the Signals]", guideBack: "What happened in your body or head", bundle: 'pro' },
+        { q: "You were left out and the word comes easily.", a: "\"I felt properly left out, which surprised me.\" [Label the Emotion]", guideBack: "A feeling word, as accurate as you can", bundle: 'pro' },
+        { q: "You feel awful and every word you try sounds wrong.", a: "\"My chest is tight and I can't settle to anything. That's all I've got.\" [Describe the Signals]", guideBack: "What happened in your body or head", bundle: 'pro' },
+        { q: "You are stuck on a task and getting nowhere.", a: "\"I'm frustrated — not with you, with the whole thing.\" [Label the Emotion]", guideBack: "A feeling word, as accurate as you can", bundle: 'pro' },
+        { q: "You want to explain how the joke actually landed.", a: "\"I laughed along, and then thought about it for the rest of the day.\" [Describe the Signals]", guideBack: "What happened in your body or head", bundle: 'pro' },
       ]
     },
     {
@@ -10862,28 +10862,28 @@ const collectionsModeData = {
       guideBack: "One way it could sound",
       description: "The choice about whose feeling gets the words right now.\n\nIt is one of the easiest things to get wrong in a conversation. Someone opens up, and within thirty seconds you are describing your own version of the same thing — which is not listening, it is taking a turn.\n\nThe two options:\n1. Label the Emotion — the feeling in the room is yours. \"I'm feeling anxious about this.\"\n2. Label Their Emotion — it is theirs. \"It sounds like you felt disappointed.\"\n\nThe tell is simply who started. If they brought the situation, the words belong to them until they have finished finding theirs.\n\nMindset: your own experience is not the fastest route to understanding someone else's. Offer them a word before you offer them yours.",
       inputs: [
-        { q: "A friend has just described being passed over for something.", a: "\"It sounds like that was disappointing. Was it?\" [Label Their Emotion]", bundle: 'pro' },
-        { q: "You are the one who needs to raise something that has been bothering you.", a: "\"I've been feeling sidelined the last few weeks.\" [Label the Emotion]", bundle: 'pro' },
-        { q: "Someone is telling you about a difficult week and trailing off.", a: "\"That sounds exhausting more than dramatic. Is that closer?\" [Label Their Emotion]", bundle: 'pro' },
-        { q: "You are nervous and it is starting to affect how you come across.", a: "\"I'm nervous and excited and I can't separate them.\" [Label the Emotion]", bundle: 'pro' },
-        { q: "A colleague describes being corrected in front of everyone.", a: "\"It sounds like you felt embarrassed — what was the worst part?\" [Label Their Emotion]", bundle: 'pro' },
-        { q: "You need to explain why you went quiet earlier.", a: "\"I went quiet because I was more hurt than I wanted to show.\" [Label the Emotion]", bundle: 'pro' },
+        { q: "A friend has just described being passed over for something.", a: "\"It sounds like that was disappointing. Was it?\" [Label Their Emotion]", guideBack: "A tentative name for what they felt", bundle: 'pro' },
+        { q: "You are the one who needs to raise something that has been bothering you.", a: "\"I've been feeling sidelined the last few weeks.\" [Label the Emotion]", guideBack: "A feeling word, as accurate as you can", bundle: 'pro' },
+        { q: "Someone is telling you about a difficult week and trailing off.", a: "\"That sounds exhausting more than dramatic. Is that closer?\" [Label Their Emotion]", guideBack: "A tentative name for what they felt", bundle: 'pro' },
+        { q: "You are nervous and it is starting to affect how you come across.", a: "\"I'm nervous and excited and I can't separate them.\" [Label the Emotion]", guideBack: "A feeling word, as accurate as you can", bundle: 'pro' },
+        { q: "A colleague describes being corrected in front of everyone.", a: "\"It sounds like you felt embarrassed — what was the worst part?\" [Label Their Emotion]", guideBack: "A tentative name for what they felt", bundle: 'pro' },
+        { q: "You need to explain why you went quiet earlier.", a: "\"I went quiet because I was more hurt than I wanted to show.\" [Label the Emotion]", guideBack: "A feeling word, as accurate as you can", bundle: 'pro' },
       ]
     },
     {
       name: "Any Emotion Move",
       guideFront: "Choose a strategy when...",
       guideBack: "One way it could sound",
-      description: "The full choice between all five moves.\n\nMost moments could take several, but one usually fits best. What decides it is where you are: at the start of explaining, in the middle of the feeling, or listening to someone else in theirs.\n\nThe five, with the cue for each:\n1. Name the Situation — nothing has been set up yet. \"So this is the third Friday we've moved.\"\n2. Label the Emotion — the word is there. \"More hurt than annoyed, honestly.\"\n3. Describe the Signals — the word is not there. \"My stomach just dropped.\"\n4. Regulate Out Loud — it is peaking now. \"Let me take a breath before I answer.\"\n5. Label Their Emotion — the feeling is theirs. \"It sounds like that was disappointing.\"\n\nMindset: all five are ways of putting something into words that was going to affect the conversation anyway. The choice is only ever which part to say first.",
+      description: "The full choice between all five moves.\n\nMost moments could take several, but one usually fits best. What decides it is where you are: at the start of explaining, in the middle of the feeling, or listening to someone else in theirs.\n\nThe five, with the cue for each:\n1. Name the Situation — nothing has been set up yet. \"So this is the third Friday we've moved.\"\n2. Label the Emotion — the word is there. \"More hurt than annoyed, honestly.\"\n3. Describe the Signals — the word is not there. \"My stomach just dropped.\"\n4. Announce the Pause — it is peaking now. \"Let me take a breath before I answer.\"\n5. Label Their Emotion — the feeling is theirs. \"It sounds like that was disappointing.\"\n\nMindset: all five are ways of putting something into words that was going to affect the conversation anyway. The choice is only ever which part to say first.",
       inputs: [
-        { q: "You need to open a conversation about something that keeps happening.", a: "\"So this is the third Friday in a row we've moved.\" [Name the Situation]", bundle: 'pro' },
-        { q: "A friend has just described being left out and gone quiet.", a: "\"It sounds like you felt left out. What do you think triggered it?\" [Label Their Emotion]", bundle: 'pro' },
-        { q: "You can feel a sharp reply forming and you do not want to send it.", a: "\"Let me take a breath — I don't want to say this badly.\" [Regulate Out Loud]", bundle: 'pro' },
-        { q: "You know exactly what you felt and want to say it plainly.", a: "\"I felt embarrassed reading it, more than anything.\" [Label the Emotion]", bundle: 'pro' },
-        { q: "Something is clearly wrong but no word fits.", a: "\"My jaw was clenched and I kept starting the same thing over.\" [Describe the Signals]", bundle: 'pro' },
-        { q: "The conversation is escalating faster than you can think.", a: "\"Can we pause? I want to answer properly rather than quickly.\" [Regulate Out Loud]", bundle: 'pro' },
-        { q: "Someone shrugs off something that clearly landed hard.", a: "\"I might be reading it wrong — but that sounded like it stung.\" [Label Their Emotion]", bundle: 'pro' },
-        { q: "You want to set up the context before saying how it felt.", a: "\"In the meeting, when the timeline moved and I hadn't heard about it…\" [Name the Situation]", bundle: 'pro' },
+        { q: "You need to open a conversation about something that keeps happening.", a: "\"So this is the third Friday in a row we've moved.\" [Name the Situation]", guideBack: "The context, before any feeling", bundle: 'pro' },
+        { q: "A friend has just described being left out and gone quiet.", a: "\"It sounds like you felt left out. What do you think triggered it?\" [Label Their Emotion]", guideBack: "A tentative name for what they felt", bundle: 'pro' },
+        { q: "You can feel a sharp reply forming and you do not want to send it.", a: "\"Let me take a breath — I don't want to say this badly.\" [Announce the Pause]", guideBack: "The moment you're taking, said out loud", bundle: 'pro' },
+        { q: "You know exactly what you felt and want to say it plainly.", a: "\"I felt embarrassed reading it, more than anything.\" [Label the Emotion]", guideBack: "A feeling word, as accurate as you can", bundle: 'pro' },
+        { q: "Something is clearly wrong but no word fits.", a: "\"My jaw was clenched and I kept starting the same thing over.\" [Describe the Signals]", guideBack: "What happened in your body or head", bundle: 'pro' },
+        { q: "The conversation is escalating faster than you can think.", a: "\"Can we pause? I want to answer properly rather than quickly.\" [Announce the Pause]", guideBack: "The moment you're taking, said out loud", bundle: 'pro' },
+        { q: "Someone shrugs off something that clearly landed hard.", a: "\"I might be reading it wrong — but that sounded like it stung.\" [Label Their Emotion]", guideBack: "A tentative name for what they felt", bundle: 'pro' },
+        { q: "You want to set up the context before saying how it felt.", a: "\"In the meeting, when the timeline moved and I hadn't heard about it…\" [Name the Situation]", guideBack: "The context, before any feeling", bundle: 'pro' },
       ]
     },
   ],
@@ -10894,13 +10894,13 @@ const collectionsModeData = {
       guideBack: "One way it could sound",
       description: "Saying what happened, naming your feeling and saying what you need — the three that build your account of it.\n\nEach guards against a different failure. The event guards against arguing about interpretation. The feeling guards against the other person guessing your state and guessing wrong. The need guards against the whole thing being a complaint with nothing to solve.\n\nTogether they make one sentence that is honest, specific and impossible to dismiss — which is the point.\n\nMindset: event, feeling, need. Leave one out and the conversation stalls in a predictable way.",
       inputs: [
-        { q: "You are about to say \"you're so careless with the house\".", a: "\"When I came down this morning the front door was unlocked.\" [Say What Happened]", bundle: 'pro' },
-        { q: "You have said what happened and they are waiting.", a: "\"I felt uneasy about it all morning.\" [Name Your Feeling]", bundle: 'pro' },
-        { q: "They ask why it bothered you so much.", a: "\"Because I need to know the house is locked before I sleep.\" [Say What You Need]", bundle: 'pro' },
-        { q: "You are about to say \"you always interrupt me\".", a: "\"When I was halfway through and you started talking.\" [Say What Happened]", bundle: 'pro' },
-        { q: "The first feeling word you reached for is too big.", a: "\"Not furious. Just properly fed up.\" [Name Your Feeling]", bundle: 'pro' },
-        { q: "The conflict keeps recurring and never resolves.", a: "\"It's not about the dishes. It's about us doing what we agreed.\" [Say What You Need]", bundle: 'pro' },
-        { q: "You are about to say \"you made me feel stupid\".", a: "\"I felt stupid, standing there.\" [Name Your Feeling]", bundle: 'pro' },
+        { q: "You are about to say \"you're so careless with the house\".", a: "\"When I came down this morning the front door was unlocked.\" [Say What Happened]", guideBack: "The event, as a camera would see it", bundle: 'pro' },
+        { q: "You have said what happened and they are waiting.", a: "\"I felt uneasy about it all morning.\" [Name Your Feeling]", guideBack: "A feeling, owned as yours", bundle: 'pro' },
+        { q: "They ask why it bothered you so much.", a: "\"Because I need to know the house is locked before I sleep.\" [Say What You Need]", guideBack: "The need underneath", bundle: 'pro' },
+        { q: "You are about to say \"you always interrupt me\".", a: "\"When I was halfway through and you started talking.\" [Say What Happened]", guideBack: "The event, as a camera would see it", bundle: 'pro' },
+        { q: "The first feeling word you reached for is too big.", a: "\"Not furious. Just properly fed up.\" [Name Your Feeling]", guideBack: "A feeling, owned as yours", bundle: 'pro' },
+        { q: "The conflict keeps recurring and never resolves.", a: "\"It's not about the dishes. It's about us doing what we agreed.\" [Say What You Need]", guideBack: "The need underneath", bundle: 'pro' },
+        { q: "You are about to say \"you made me feel stupid\".", a: "\"I felt stupid, standing there.\" [Name Your Feeling]", guideBack: "A feeling, owned as yours", bundle: 'pro' },
       ]
     },
     {
@@ -10909,13 +10909,13 @@ const collectionsModeData = {
       guideBack: "One way it could sound",
       description: "Making a request and asking what they felt — the two that turn an account into an exchange.\n\nThey answer the two ways a well-expressed feeling still fails. Without a request, the other person knows you are unhappy and does not know what to do. Without their side, you have delivered a statement and they have waited it out.\n\nBoth hand something over: the request hands them something to do, and the question hands them the floor.\n\nMindset: say your piece, then give them theirs. It is not finished until they have spoken.",
       inputs: [
-        { q: "You have named the feeling and the need and they look stuck.", a: "\"Could you check it before you come up? That's all I'd need.\" [Make a Request]", bundle: 'pro' },
-        { q: "You have said your piece and they have gone quiet.", a: "\"I've said a lot. What was it like from your side?\" [Ask What They Felt]", bundle: 'pro' },
-        { q: "You are about to ask them to be a different person.", a: "\"Could you text me when you leave? That's the actual thing.\" [Make a Request]", bundle: 'pro' },
-        { q: "You suspect there was something you do not know about.", a: "\"Was something else happening that day?\" [Ask What They Felt]", bundle: 'pro' },
-        { q: "The change would take real effort on their side.", a: "\"What would make that easy to do?\" [Make a Request]", bundle: 'pro' },
-        { q: "You want to know how you came across in it.", a: "\"How did I come across? I'd rather know.\" [Ask What They Felt]", bundle: 'pro' },
-        { q: "They apologised and nothing has changed.", a: "\"I'm not after an apology. Could you just ask me first next time?\" [Make a Request]", bundle: 'pro' },
+        { q: "You have named the feeling and the need and they look stuck.", a: "\"Could you check it before you come up? That's all I'd need.\" [Make a Request]", guideBack: "A request they could say yes to", bundle: 'pro' },
+        { q: "You have said your piece and they have gone quiet.", a: "\"I've said a lot. What was it like from your side?\" [Ask What They Felt]", guideBack: "An invitation to tell it their way", bundle: 'pro' },
+        { q: "You are about to ask them to be a different person.", a: "\"Could you text me when you leave? That's the actual thing.\" [Make a Request]", guideBack: "A request they could say yes to", bundle: 'pro' },
+        { q: "You suspect there was something you do not know about.", a: "\"Was something else happening that day?\" [Ask What They Felt]", guideBack: "An invitation to tell it their way", bundle: 'pro' },
+        { q: "The change would take real effort on their side.", a: "\"What would make that easy to do?\" [Make a Request]", guideBack: "A request they could say yes to", bundle: 'pro' },
+        { q: "You want to know how you came across in it.", a: "\"How did I come across? I'd rather know.\" [Ask What They Felt]", guideBack: "An invitation to tell it their way", bundle: 'pro' },
+        { q: "They apologised and nothing has changed.", a: "\"I'm not after an apology. Could you just ask me first next time?\" [Make a Request]", guideBack: "A request they could say yes to", bundle: 'pro' },
       ]
     },
     {
@@ -10924,13 +10924,13 @@ const collectionsModeData = {
       guideBack: "One way it could sound",
       description: "The full set. A whole exchange uses all of them, roughly in order, though the request often moves depending on how they respond.\n\nA rough shape: what happened, what you felt, what you need, what you would like, and then their side. The last one is not optional — it is what stops the other four being a speech.\n\nThe commonest damage is stopping after the feeling. It is the most exposed moment and the easiest place to run out of nerve, and it leaves the other person holding something they cannot do anything with.\n\nMindset: if you start it, finish it. The need and the request are what make the feeling useful.",
       inputs: [
-        { q: "You want to raise something without it starting a row.", a: "\"When I came down this morning the door was unlocked.\" [Say What Happened]", bundle: 'pro' },
-        { q: "They ask what the problem is.", a: "\"I felt uneasy about it all day, honestly.\" [Name Your Feeling]", bundle: 'pro' },
-        { q: "They say it was only one time.", a: "\"It is. It's about knowing the house is shut before I sleep.\" [Say What You Need]", bundle: 'pro' },
-        { q: "They say they will try to remember.", a: "\"Could you check it on your way up? Then it's not a memory thing.\" [Make a Request]", bundle: 'pro' },
-        { q: "You have finished and it is their turn.", a: "\"What was going on for you, though? You'd had a long day.\" [Ask What They Felt]", bundle: 'pro' },
-        { q: "You are about to say \"you never think about anyone else\".", a: "\"It's happened three times this month.\" [Say What Happened]", bundle: 'pro' },
-        { q: "They ask why you did not just say so at the time.", a: "\"I need to be able to bring things up without it turning into a row.\" [Say What You Need]", bundle: 'pro' },
+        { q: "You want to raise something without it starting a row.", a: "\"When I came down this morning the door was unlocked.\" [Say What Happened]", guideBack: "The event, as a camera would see it", bundle: 'pro' },
+        { q: "They ask what the problem is.", a: "\"I felt uneasy about it all day, honestly.\" [Name Your Feeling]", guideBack: "A feeling, owned as yours", bundle: 'pro' },
+        { q: "They say it was only one time.", a: "\"It is. It's about knowing the house is shut before I sleep.\" [Say What You Need]", guideBack: "The need underneath", bundle: 'pro' },
+        { q: "They say they will try to remember.", a: "\"Could you check it on your way up? Then it's not a memory thing.\" [Make a Request]", guideBack: "A request they could say yes to", bundle: 'pro' },
+        { q: "You have finished and it is their turn.", a: "\"What was going on for you, though? You'd had a long day.\" [Ask What They Felt]", guideBack: "An invitation to tell it their way", bundle: 'pro' },
+        { q: "You are about to say \"you never think about anyone else\".", a: "\"It's happened three times this month.\" [Say What Happened]", guideBack: "The event, as a camera would see it", bundle: 'pro' },
+        { q: "They ask why you did not just say so at the time.", a: "\"I need to be able to bring things up without it turning into a row.\" [Say What You Need]", guideBack: "The need underneath", bundle: 'pro' },
       ]
     },
   ],

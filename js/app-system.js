@@ -3930,6 +3930,15 @@ if (resetFirstRunBtn) resetFirstRunBtn.addEventListener('click', () => {
 // twice; the developer list is simply the unfiltered one.
 const WHATS_NEW = [
   {
+    version: 'v1.28.78', date: 'September 2026', title: 'Names and guides, batch 3 — the four emotion packs', audience: 'dev',
+    items: [
+      'Batch 3: <strong>Conflict Emotions</strong>, <strong>Emotion Labelling and Regulation</strong>, <strong>Validation</strong> and <strong>Supporting Conversations</strong>. All 18 strategies now have their own detailed guide pair, 182 Collections and Challenges cards inherit their strategy\'s back guide, and 46 sequence steps carry theirs.',
+      'One rename: <em>Regulate Out Loud</em> &rarr; <strong>Announce the Pause</strong>. The old name described the mechanism rather than the move, and seven of its eight cards are exactly that &mdash; saying you are taking a moment, and taking it. The eighth was a reframe rather than a pause and has been rewritten, and the description\'s third route now reads <em>Name the return</em>.',
+      '<strong>Validation:</strong> the four cards in <em>They Will Not Accept It</em> that carried <em>(ask what you got wrong)</em> &mdash; a move the pack does not have &mdash; now answer with Reflect the Feeling and Acknowledge the Perspective instead of handing the question back.',
+      'Two near-duplicate pairs across packs were left standing on purpose: <em>Say What Happened</em> / <em>Name the Situation</em> and <em>Name Your Feeling</em> / <em>Label the Emotion</em>. Conflict Emotions aims its steps at the other person mid-conflict; Emotion Labelling is about understanding your own feeling. The guides carry the difference &mdash; <em>Express how you felt</em> against <em>Name and explain the feeling</em>.',
+    ],
+  },
+  {
     version: 'v1.28.77', date: 'September 2026', title: 'Deck-level guide rows cleared across the release scope', audience: 'dev',
     items: [
       'A deck could carry its own guide row between the mode\'s row and the card\'s. In the core that layer was cleared long ago; outside it, <strong>405 decks in 21 packs still had one</strong> — including <em>What has gone wrong with this explanation?</em> (a question, and about difficulty — two things rule 6 forbids) and <strong>264 rows ending in "with the strategy in brackets"</strong>, which the label on the card already says.',

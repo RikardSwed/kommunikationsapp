@@ -3959,7 +3959,7 @@ const memorizeCollections = {
       description: "The concept behind emotion labelling and the full set of moves.",
       cards: [
         { q: "What is the goal of emotion labelling?", a: "Notice what you're feeling, put an honest word on it, and respond in a balanced way rather than a reactive one.", bundle: 'free' },
-        { q: "What are the five moves in this pack?", a: "Name the Situation, Label the Emotion, Describe the Signals, Regulate Out Loud, Label Their Emotion.", bundle: 'free' },
+        { q: "What are the five moves in this pack?", a: "Name the Situation, Label the Emotion, Describe the Signals, Announce the Pause, Label Their Emotion.", bundle: 'free' },
         { q: "What order does the full process go in?", a: "Situation, then the emotion word, then the signals, then regulation.", bundle: 'free' },
         { q: "Why does naming a feeling help?", a: "It gives you distance from it — a named feeling is something you're having, not something you are.", bundle: 'free' },
         { q: "What do you do when you can't find the word?", a: "Describe the physical or mental signals instead. The word usually turns up once you have.", bundle: 'pro' },
@@ -4001,10 +4001,10 @@ const memorizeCollections = {
       ]
     },
     {
-      name: "Regulate Out Loud",
+      name: "Announce the Pause",
       description: "The theory behind steadying yourself in the open.",
       cards: [
-        { q: "What is Regulate Out Loud?", a: "Doing the thing that steadies you, and saying that you're doing it.", bundle: 'free' },
+        { q: "What is Announce the Pause?", a: "Doing the thing that steadies you, and saying that you're doing it.", bundle: 'free' },
         { q: "What does it sound like?", a: "\"I need a couple of minutes before I answer.\" or \"Let me take a breath.\"", bundle: 'free' },
         { q: "What are the three ways to steady yourself?", a: "Ask for time, slow the body, or shift the view.", bundle: 'free' },
         { q: "Why say it out loud rather than just doing it?", a: "A silent pause looks identical to sulking. One sentence turns it into something everyone can work with.", bundle: 'pro' },
